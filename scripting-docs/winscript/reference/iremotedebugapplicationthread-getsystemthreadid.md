@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplicationThread::GetSystemThreadId | Microsoft Docs
+title: 'IRemoteDebugApplicationThread:: GetSystemThreadId | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9d5119db4108ef7fa0783bccc3f747fbd2ed26d0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 35c281047bd3333f8fdc3945ed97ad3f402c53a4
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62788203"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575223"
 ---
 # <a name="iremotedebugapplicationthreadgetsystemthreadid"></a>IRemoteDebugApplicationThread::GetSystemThreadId
-Retorna um identificador de operação-depende do sistema associado ao thread.  
+Retorna um identificador dependente do sistema operacional associado ao thread.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -37,9 +37,9 @@ HRESULT GetSystemThreadId(
   
 #### <a name="parameters"></a>Parâmetros  
  `dwThreadId`  
- [out] Um identificador de operação-depende do sistema associado ao thread.  
+ fora Um identificador dependente do sistema operacional associado ao thread.  
   
-## <a name="return-value"></a>Valor de retorno  
+## <a name="return-value"></a>Valor retornado  
  O método retorna um `HRESULT`. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.  
   
 |Valor|Descrição|  
@@ -47,7 +47,7 @@ HRESULT GetSystemThreadId(
 |`S_OK`|O método foi bem-sucedido.|  
   
 ## <a name="remarks"></a>Comentários  
- O valor de `dwThreadId` não precisa ser exclusivo entre máquinas.  
+ O valor de `dwThreadId` não precisa ser exclusivo entre computadores.  
   
 ## <a name="see-also"></a>Consulte também  
  [Interface IRemoteDebugApplicationThread](../../winscript/reference/iremotedebugapplicationthread-interface.md)

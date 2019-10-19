@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 939d9f36c9838f02e58bc433d1a7bb9bef43c28d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6f656bdf4e3bc85a014ff8d3011708799aa44bcd
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62955402"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572626"
 ---
 # <a name="breakreason-enumeration"></a>Enumeração BREAKREASON
 Indica o que causou a interrupção.  
@@ -46,14 +46,14 @@ typedef enum tagBREAKREASON {
   
 |Membro|Descrição|  
 |------------|-----------------|  
-|BREAKREASON_STEP|O mecanismo de linguagem está no modo passo a passo.|  
+|BREAKREASON_STEP|O mecanismo de idioma está no modo de depuração.|  
 |BREAKREASON_BREAKPOINT|O mecanismo de linguagem encontrou um ponto de interrupção explícito.|  
 |BREAKREASON_DEBUGGER_BLOCK|O mecanismo de linguagem encontrou um bloco de depurador em outro thread.|  
-|BREAKREASON_HOST_INITIATED|O host solicitou uma quebra.|  
-|BREAKREASON_LANGUAGE_INITIATED|O mecanismo de linguagem solicitou uma quebra.|  
-|BREAKREASON_DEBUGGER_HALT|O IDE do depurador solicitou uma quebra.|  
-|BREAKREASON_ERROR|Erro de execução causou a interrupção.|  
-|BREAKREASON_JIT|Causadas pela inicialização de depuração JIT.|  
+|BREAKREASON_HOST_INITIATED|O host solicitou uma interrupção.|  
+|BREAKREASON_LANGUAGE_INITIATED|O mecanismo de idioma solicitou uma interrupção.|  
+|BREAKREASON_DEBUGGER_HALT|O IDE do depurador solicitou uma interrupção.|  
+|BREAKREASON_ERROR|Um erro de execução causou a interrupção.|  
+|BREAKREASON_JIT|Causado pela inicialização da depuração JIT.|  
   
 ## <a name="see-also"></a>Consulte também  
  [Constantes, enumerações e estruturas de depurador do script ativo](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)

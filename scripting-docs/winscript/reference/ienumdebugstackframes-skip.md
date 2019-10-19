@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugStackFrames::Skip | Microsoft Docs
+title: 'IEnumDebugStackFrames:: Skip | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a1548784de8ad2cfc9d6368691da1b68a1bc1e3f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 29e5864d1304aeb4c916e93da8b151336596d979
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62963306"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575533"
 ---
 # <a name="ienumdebugstackframesskip"></a>IEnumDebugStackFrames::Skip
 Ignora um número especificado de segmentos em uma sequência de enumeração.  
@@ -37,9 +37,9 @@ HRESULT Skip(
   
 #### <a name="parameters"></a>Parâmetros  
  `celt`  
- [in] Número de segmentos na sequência de enumeração para ignorar.  
+ no Número de segmentos na sequência de enumeração a serem ignorados.  
   
-## <a name="return-value"></a>Valor de retorno  
+## <a name="return-value"></a>Valor retornado  
  O método retorna um `HRESULT`. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.  
   
 |Valor|Descrição|  
@@ -47,7 +47,7 @@ HRESULT Skip(
 |`S_OK`|O método foi bem-sucedido.|  
   
 ## <a name="remarks"></a>Comentários  
- Este método ignora um número especificado de segmentos em uma sequência de enumeração.  
+ Esse método ignora um número especificado de segmentos em uma sequência de enumeração.  
   
 ## <a name="see-also"></a>Consulte também  
  [Interface IEnumDebugStackFrames](../../winscript/reference/ienumdebugstackframes-interface.md)

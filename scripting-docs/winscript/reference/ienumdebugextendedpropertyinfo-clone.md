@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugExtendedPropertyInfo::Clone | Microsoft Docs
+title: 'IEnumDebugExtendedPropertyInfo:: clone | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ce36c1f419a2cc89a733538444e3468d4c2a5193
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d11aa307342fbb6029f3bc2aed6b652417f4f52d
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62989890"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72568910"
 ---
 # <a name="ienumdebugextendedpropertyinfoclone"></a>IEnumDebugExtendedPropertyInfo::Clone
 Cria um enumerador que contém o mesmo estado de enumeração que o enumerador atual.  
@@ -37,10 +37,10 @@ HRESULT Clone (
   
 #### <a name="parameters"></a>Parâmetros  
  `ppEnum`  
- [out] Retorna o clonado `IEnumDebugExtendedPropertyInfo` interface.  
+ fora Retorna a interface de `IEnumDebugExtendedPropertyInfo` clonada.  
   
-## <a name="return-value"></a>Valor de retorno  
- Retorna um válidas `HRESULT`, normalmente `S_OK`.  
+## <a name="return-value"></a>Valor retornado  
+ Retorna um `HRESULT` válido, geralmente `S_OK`.  
   
 ## <a name="see-also"></a>Consulte também  
  [Interface IEnumDebugExtendedPropertyInfo](../../winscript/reference/ienumdebugextendedpropertyinfo-interface.md)

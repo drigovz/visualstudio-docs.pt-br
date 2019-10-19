@@ -11,15 +11,15 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2e8302737fb4abf96c55d3ae70424cc03579b270
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b4a635a802ae84b8e839159f5e2f1c4c461e05ae
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62963319"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572021"
 ---
 # <a name="ienumjsstackframes-interface"></a>Interface IEnumJsStackFrames
-Implementado pelo depurador para fornecer a pilha de desenrolamento para jscript9diag.dll para JavaScript.  
+Implementado pelo depurador para fornecer desenrolamento de pilha para jscript9diag. dll para JavaScript.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -31,13 +31,13 @@ IEnumJsStackFrames : public IUnknown;
   
 ### <a name="public-methods"></a>Métodos Públicos  
   
-|Nome|Descrição|  
+|Name|Descrição|  
 |----------|-----------------|  
 |[IEnumJsStackFrames::Next Method](../../winscript/reference/ienumjsstackframes-next-method.md)|Obtém o número especificado de quadros.|  
-|[IEnumJsStackFrames::Reset Method](../../winscript/reference/ienumjsstackframes-reset-method.md)|Redefine o quadro de pilha para a posição antes do primeiro elemento.|  
+|[IEnumJsStackFrames::Reset Method](../../winscript/reference/ienumjsstackframes-reset-method.md)|Redefine o quadro de pilhas para a posição anterior ao primeiro elemento.|  
   
 ## <a name="requirements"></a>Requisitos  
- **Cabeçalho:** jscript9diag.h  
+ **Cabeçalho:** jscript9diag. h  
   
 ## <a name="see-also"></a>Consulte também  
  [Referência de interfaces de script do Windows](../../winscript/reference/windows-script-interfaces-reference.md)

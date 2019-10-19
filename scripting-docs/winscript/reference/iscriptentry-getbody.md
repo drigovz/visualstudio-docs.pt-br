@@ -1,5 +1,5 @@
 ---
-title: IScriptEntry::GetBody | Microsoft Docs
+title: 'IScriptEntry:: GetBody | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7f8f1ad24660401d575af2724b788387fd546af8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: aba6019f4729f1b4a31933a4ca93c0eddf6159a2
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62787873"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575482"
 ---
 # <a name="iscriptentrygetbody"></a>IScriptEntry::GetBody
-Retorna o texto que corresponde ao corpo de um `IScriptEntry` bloco de script, o bloco de função ou o scriptlet.  
+Retorna o texto que corresponde ao corpo de um bloco de script `IScriptEntry`, bloco de função ou scriptlet.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -37,15 +37,15 @@ HRESULT GetBody(
   
 #### <a name="parameters"></a>Parâmetros  
  `pbstr`  
- [out] O texto que está no corpo de um dos seguintes:  
+ fora O texto que está no corpo de um dos seguintes:  
   
-- Um `IScriptEntry` bloco de script  
+- Um bloco de script `IScriptEntry`  
   
-- Um `IScriptEntry` função em um bloco de função  
+- Uma função `IScriptEntry` em um bloco de função  
   
-- Um `IScriptEntry` scriptlet manipulador de eventos  
+- Um manipulador de eventos `IScriptEntry` scriptlet  
   
-## <a name="return-value"></a>Valor de retorno  
+## <a name="return-value"></a>Valor retornado  
  Um `HRESULT`. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.  
   
 |Valor|Descrição|  

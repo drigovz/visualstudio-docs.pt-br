@@ -1,5 +1,5 @@
 ---
-title: IDebugApplication::GetCurrentThread | Microsoft Docs
+title: 'IDebugApplication:: GetCurrentThread | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6fc64250732ee36cf12c0fb0203ab22a20991975
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d6d0f95ee5b45e974c1f0fb38ea25edb1175dbbd
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62990884"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574947"
 ---
 # <a name="idebugapplicationgetcurrentthread"></a>IDebugApplication::GetCurrentThread
 Retorna o thread associado ao thread em execução no momento.  
@@ -37,9 +37,9 @@ HRESULT GetCurrentThread(
   
 #### <a name="parameters"></a>Parâmetros  
  `pat`  
- [out] O thread associado ao thread em execução no momento.  
+ fora O thread associado ao thread em execução no momento.  
   
-## <a name="return-value"></a>Valor de retorno  
+## <a name="return-value"></a>Valor retornado  
  O método retorna um `HRESULT`. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.  
   
 |Valor|Descrição|  

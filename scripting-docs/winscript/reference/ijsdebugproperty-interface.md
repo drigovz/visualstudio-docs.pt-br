@@ -11,15 +11,15 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e17bff10e2b876e4db2b9f3b55df29c2e87989ee
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 990ae0b874042501b64f4e2e2b39874c25c9dc9c
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62977784"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574071"
 ---
 # <a name="ijsdebugproperty-interface"></a>Interface IJsDebugProperty
-Representa um navegador de propriedade.  
+Representa um navegador de propriedades.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -31,13 +31,13 @@ IJsDebugProperty : public IUnknown;
   
 ### <a name="public-methods"></a>Métodos Públicos  
   
-|Nome|Descrição|  
+|Name|Descrição|  
 |----------|-----------------|  
-|[Método IJsDebugProperty::GetMembers](../../winscript/reference/ijsdebugproperty-getmembers-method.md)|Obtém os membros desse objeto.|  
+|[Método IJsDebugProperty::GetMembers](../../winscript/reference/ijsdebugproperty-getmembers-method.md)|Obtém os membros deste objeto.|  
 |[Método IJsDebugProperty::GetPropertyInfo](../../winscript/reference/ijsdebugproperty-getpropertyinfo-method.md)|Obtém informações para este objeto.|  
   
 ## <a name="requirements"></a>Requisitos  
- **Cabeçalho:** jscript9diag.h  
+ **Cabeçalho:** jscript9diag. h  
   
 ## <a name="see-also"></a>Consulte também  
  [Referência de interfaces de script do Windows](../../winscript/reference/windows-script-interfaces-reference.md)

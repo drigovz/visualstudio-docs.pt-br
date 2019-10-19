@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d92b4b2e00b25a509d29511008876d781c8a577a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ad9b8598cb027c96f6fb6fad6f3d343e6058cfdb
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62955166"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575859"
 ---
 # <a name="errorresumeaction-enumeration"></a>Enumeração ERRORRESUMEACTION
 Descreve como continuar de um erro de execução.  
@@ -41,9 +41,9 @@ typedef enum tagERRORRESUMEACTION {
   
 |Membro|Descrição|  
 |------------|-----------------|  
-|ERRORRESUMEACTION_ReexecuteErrorStatement|Executa novamente a instrução que gerou o erro.|  
-|ERRORRESUMEACTION_AbortCallAndReturnErrorToCaller|Permite que o mecanismo de linguagem trate o erro.|  
-|ERRORRESUMEACTION_SkipErrorStatement|Retoma a execução do código após a instrução que gerou o erro.|  
+|ERRORRESUMEACTION_ReexecuteErrorStatement|Executa novamente a instrução que produziu o erro.|  
+|ERRORRESUMEACTION_AbortCallAndReturnErrorToCaller|Permite que o mecanismo de linguagem manipule o erro.|  
+|ERRORRESUMEACTION_SkipErrorStatement|Retoma a execução no código após a instrução que produziu o erro.|  
   
 ## <a name="see-also"></a>Consulte também  
  [Constantes, enumerações e estruturas de depurador do script ativo](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)

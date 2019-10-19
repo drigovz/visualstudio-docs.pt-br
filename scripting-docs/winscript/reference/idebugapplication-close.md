@@ -1,5 +1,5 @@
 ---
-title: IDebugApplication::Close | Microsoft Docs
+title: 'IDebugApplication:: fechar | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8d93262e5875d5b51f7cf306409609671e8157cc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0445e9aed990da684efac6675e05183fd939973f
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62991034"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575572"
 ---
 # <a name="idebugapplicationclose"></a>IDebugApplication::Close
-Faz com que esse aplicativo para liberar todas as referências e entrar em um estado inativo.  
+Faz com que este aplicativo libere todas as referências e insira um estado inativo.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -36,7 +36,7 @@ HRESULT Close();
 #### <a name="parameters"></a>Parâmetros  
  Esse método não usa parâmetros.  
   
-## <a name="return-value"></a>Valor de retorno  
+## <a name="return-value"></a>Valor retornado  
  O método retorna um `HRESULT`. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.  
   
 |Valor|Descrição|  
@@ -46,8 +46,8 @@ HRESULT Close();
 ## <a name="remarks"></a>Comentários  
  Normalmente, o proprietário de um aplicativo chama esse método quando o aplicativo é encerrado.  
   
- Esse método faz com que `IApplicationDebugger::onClose` a ser chamado.  
+ Esse método faz com que `IApplicationDebugger::onClose` seja chamado.  
   
 ## <a name="see-also"></a>Consulte também  
- [Interface IDebugApplication](../../winscript/reference/idebugapplication-interface.md)   
+ @No__t_1 de [interface IDebugApplication](../../winscript/reference/idebugapplication-interface.md)  
  [IApplicationDebugger::onClose](../../winscript/reference/iapplicationdebugger-onclose.md)

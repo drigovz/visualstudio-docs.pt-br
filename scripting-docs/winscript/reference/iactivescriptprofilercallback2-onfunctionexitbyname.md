@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptProfilerCallback2::OnFunctionExitByName | Microsoft Docs
+title: 'IActiveScriptProfilerCallback2:: OnFunctionExitByName | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -13,15 +13,15 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 87f0b7e7a3cea4e3e59fb43ef9ddc2d4934552e6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a70bc72dd1070759ad8b78e43926f06a2c56ec15
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62993339"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571623"
 ---
 # <a name="iactivescriptprofilercallback2onfunctionexitbyname"></a>IActiveScriptProfilerCallback2::OnFunctionExitByName
-Notifica o criador de perfil de objeto que o script do mecanismo de concluir a execução de uma chamada de função do modelo de objeto de documento (DOM).  
+Notifica o objeto Profiler de que o mecanismo de script concluiu a execução de uma chamada de função Modelo de Objeto do Documento (DOM).  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -34,17 +34,17 @@ HRESULT OnFunctionExitByName(
   
 #### <a name="parameters"></a>Parâmetros  
  `pwszFunctionName`  
- [in] O nome da função que o mecanismo de script concluído em execução.  
+ no O nome da função que o mecanismo de script concluiu a execução.  
   
  `scriptType`  
- [in] O tipo da função. Para obter descrições dos valores válidos, consulte [enumeração PROFILER_SCRIPT_TYPE](../../winscript/reference/profiler-script-type-enumeration.md).  
+ no O tipo da função. Para obter descrições de valores válidos, consulte [Enumeração PROFILER_SCRIPT_TYPE](../../winscript/reference/profiler-script-type-enumeration.md).  
   
-## <a name="return-value"></a>Valor de retorno  
+## <a name="return-value"></a>Valor retornado  
  O valor de retorno desse método é ignorado pelo mecanismo de script.  
   
 ## <a name="remarks"></a>Comentários  
- Para chamadas de DOM, o mecanismo de script chama esse método em vez de chamar [IActiveScriptProfilerCallback::OnFunctionExit](../../winscript/reference/iactivescriptprofilercallback-onfunctionexit.md). Isso é devido ao grande número de métodos exclusivos e propriedades no DOM.  
+ Para chamadas DOM, o mecanismo de script chama esse método em vez de chamar [IActiveScriptProfilerCallback:: OnFunctionExit](../../winscript/reference/iactivescriptprofilercallback-onfunctionexit.md). Isso ocorre devido ao grande número de métodos e propriedades exclusivos no DOM.  
   
 ## <a name="see-also"></a>Consulte também  
- [IActiveScriptProfilerCallback2::OnFunctionEnterByName](../../winscript/reference/iactivescriptprofilercallback2-onfunctionenterbyname.md)   
+ [IActiveScriptProfilerCallback2:: OnFunctionEnterByName](../../winscript/reference/iactivescriptprofilercallback2-onfunctionenterbyname.md)    
  [Interface IActiveScriptProfilerCallback2](../../winscript/reference/iactivescriptprofilercallback2-interface.md)

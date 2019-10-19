@@ -13,21 +13,21 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 62b0d49ea4ebccfe70955c2f5315918807121447
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5b68c777652ec411addfb64643ec0c8db67c29a1
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62992784"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571242"
 ---
 # <a name="iactivescriptproperty"></a>IActiveScriptProperty
-O `IActiveScriptProperty` interface é usada para obter e definir propriedades de configuração.  
+A interface `IActiveScriptProperty` é usada para obter e definir as propriedades de configuração.  
   
-## <a name="methods-in-vtable-order"></a>Métodos na ordem de Vtable  
+## <a name="methods-in-vtable-order"></a>Métodos em ordem vtable  
   
 |Método|Descrição|  
 |------------|-----------------|  
-|[GetProperty](../../winscript/reference/iactivescriptproperty-getproperty.md)|Obtém a propriedade que é especificada pelo parâmetro.|  
+|[GetProperty](../../winscript/reference/iactivescriptproperty-getproperty.md)|Obtém a propriedade especificada pelo parâmetro.|  
 |[SetProperty](../../winscript/reference/iactivescriptproperty-setproperty.md)|Define a propriedade que é especificada pelo parâmetro.|  
   
 ## <a name="see-also"></a>Consulte também  

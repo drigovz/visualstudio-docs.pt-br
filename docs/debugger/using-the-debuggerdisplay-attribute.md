@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 866ad705f16e9eabb097e9c0c9064d2c379ebf9f
-ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
+ms.openlocfilehash: f16040408def290536ac5dadfec77ade9577c821
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72349630"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72568913"
 ---
 # <a name="tell-the-debugger-what-to-show-using-the-debuggerdisplay-attribute-c-visual-basic-f-ccli"></a>Diga ao depurador o que mostrar usando o atributo DebuggerDisplay (C#, Visual Basic, F#, C++/CLI)
 
@@ -25,7 +25,7 @@ O <xref:System.Diagnostics.DebuggerDisplayAttribute> controla como um objeto, pr
 
 O atributo `DebuggerDisplay` tem um único argumento, que é uma cadeia de caracteres a ser exibida na coluna de valor para instâncias do tipo. Essa cadeia de caracteres pode conter chaves (`{` e `}`). O texto dentro de um par de chaves é avaliado como um campo, propriedade ou método.
 
-Se uma classe tiver um método `ToString()` substituído, o depurador usará o método substituído em vez do @no__t padrão-1. Portanto, se você tiver substituído o método `ToString()`, o depurador usará o método substituído em vez do @ no__t-1 padrão, e você não precisará usar `DebuggerDisplay`. Se você usar ambos, o atributo `DebuggerDisplay` terá precedência sobre o método substituído `ToString()`. O atributo `DebuggerDisplay` também tem precedência sobre o método substituído `ToString()` em uma subclasse.
+Se uma classe tiver um método `ToString()` substituído, o depurador usará o método substituído em vez do `{<typeName>}` padrão. Portanto, se você tiver substituído o método `ToString()`, o depurador usará o método substituído em vez do `{<typeName>}` padrão, e você não precisará usar `DebuggerDisplay`. Se você usar ambos, o atributo `DebuggerDisplay` terá precedência sobre o método substituído `ToString()`. O atributo `DebuggerDisplay` também tem precedência sobre o método substituído `ToString()` em uma subclasse.
 
 Se o depurador avalia essa chamada implícita `ToString()` depende de uma configuração de usuário na caixa de diálogo **ferramentas/opções/depuração** . O Visual Basic não implementa esta avaliação de `ToString()` implícita.
 
@@ -182,6 +182,6 @@ class MyHashtable
 ## <a name="see-also"></a>Consulte também
 
 - [Usando o atributo DebuggerTypeProxy](../debugger/using-debuggertypeproxy-attribute.md)
-- [Criar exibições personalizadas de objetos gerenciados](../debugger/create-custom-views-of-dot-managed-objects.md)
+- [Criar exibições personalizadas de objetos gerenciados](../debugger/create-custom-views-of-managed-objects.md)
 - [Especificadores de formato em C#](../debugger/format-specifiers-in-csharp.md)
 - [Aprimorando a depuração com os atributos de exibição do depurador](/dotnet/framework/debug-trace-profile/enhancing-debugging-with-the-debugger-display-attributes)

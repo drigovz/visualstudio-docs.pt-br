@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugExtendedPropertyInfo::Next | Microsoft Docs
+title: 'IEnumDebugExtendedPropertyInfo:: Next | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 65e734d1cf57fe9387407a80c9d3e76d7f53ada8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 23ebc3e3fd1f7802f4630be42a594d73f8657e43
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62963464"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574268"
 ---
 # <a name="ienumdebugextendedpropertyinfonext"></a>IEnumDebugExtendedPropertyInfo::Next
-Recupera um número especificado de`ExtendedDebugPropertyInfo` estruturas em uma sequência de enumeração.  
+Recupera um número especificado de estruturas de `ExtendedDebugPropertyInfo` em uma sequência de enumeração.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -39,17 +39,17 @@ HRESULT Next (
   
 #### <a name="parameters"></a>Parâmetros  
  `celt`  
- [in] O número de `ExtendedDebugPropertyInfo`estruturas a serem recuperados.  
+ no O número de `ExtendedDebugPropertyInfo`structures a serem recuperadas.  
   
  `rgelt`  
- [out] Uma matriz de `ExtendedDebugPropertyInfo` recuperadas de estruturas.  
+ fora Uma matriz de estruturas de `ExtendedDebugPropertyInfo` recuperadas.  
   
  `pceltFetched`  
- [out] O número de `ExtendedDebugPropertyInfo` realmente recuperadas de estruturas.  
+ fora O número de estruturas de `ExtendedDebugPropertyInfo` realmente recuperadas.  
   
-## <a name="return-value"></a>Valor de retorno  
- Retorna um válidas `HRESULT`, normalmente `S_OK`.  
+## <a name="return-value"></a>Valor retornado  
+ Retorna um `HRESULT` válido, geralmente `S_OK`.  
   
 ## <a name="see-also"></a>Consulte também  
- [Interface IEnumDebugExtendedPropertyInfo](../../winscript/reference/ienumdebugextendedpropertyinfo-interface.md)   
+ @No__t_1 de [interface IEnumDebugExtendedPropertyInfo](../../winscript/reference/ienumdebugextendedpropertyinfo-interface.md)  
  [Estrutura ExtendedDebugPropertyInfo](../../winscript/reference/extendeddebugpropertyinfo-structure.md)

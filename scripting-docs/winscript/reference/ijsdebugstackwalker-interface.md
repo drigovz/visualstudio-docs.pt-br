@@ -11,15 +11,15 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d06af2c509339d9499f66e1f267c54c69951e225
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3b06b8c1f9282c42599c798030440c30450ef6dd
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62977806"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574013"
 ---
 # <a name="ijsdebugstackwalker-interface"></a>Interface IJsDebugStackWalker
-Representa um caminhador de pilha para um thread especificado.  
+Representa um Stack Walker para um thread especificado.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -31,15 +31,15 @@ IJsDebugStackWalker : public IUnknown;
   
 ### <a name="public-methods"></a>Métodos Públicos  
   
-|Nome|Descrição|  
+|Name|Descrição|  
 |----------|-----------------|  
 |[Método IJsDebugStackWalker::GetNext](../../winscript/reference/ijsdebugstackwalker-getnext-method.md)|Obtém o próximo quadro.|  
   
 ## <a name="remarks"></a>Comentários  
- Os walkers de pilha só podem ser criados enquanto o destino for interrompido e serão inválido quando o processo de destino foi continuado novamente.  
+ Os analisadores de pilha só podem ser criados enquanto o destino é parado e são inválidos quando o processo de destino continua novamente.  
   
 ## <a name="requirements"></a>Requisitos  
- **Cabeçalho:** jscript9diag.h  
+ **Cabeçalho:** jscript9diag. h  
   
 ## <a name="see-also"></a>Consulte também  
  [Referência de interfaces de script do Windows](../../winscript/reference/windows-script-interfaces-reference.md)

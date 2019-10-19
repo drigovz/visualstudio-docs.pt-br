@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eed7a2796f08e85441c174e882c00fa406cb2379
-ms.sourcegitcommit: a5a54b147e772dc39e519da74ec41a0c25d99628
-ms.translationtype: MT
+ms.openlocfilehash: d53740d0970aba2c5b0442ded722c648f759f724
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2019
-ms.locfileid: "72289668"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575130"
 ---
 # <a name="step-8-add-a-method-to-verify-whether-the-player-won"></a>Etapa 8: Adicionar um método para verificar se o jogador ganhou
 Você criou um jogo divertido, mas ele precisa de um item adicional para ser finalizado. O jogo deve terminar quando os jogadores ganham, de modo que você precisa adicionar um método `CheckForWinner()` para verificar se o jogador ganhou.
@@ -31,9 +31,9 @@ Você criou um jogo divertido, mas ele precisa de um item adicional para ser fin
      [!code-vb[VbExpressTutorial4Step8#10](../ide/codesnippet/VisualBasic/step-8-add-a-method-to-verify-whether-the-player-won_1.vb)]
 
       > [!IMPORTANT]
-      > Use o controle linguagem de programação no canto superior direito desta página para exibir o trecho C# de código ou o trecho de código de Visual Basic.<br><br>controle de linguagem ![Programming para docs. Microsoft. com @ no__t-1     
+      > Use o controle linguagem de programação no canto superior direito desta página para exibir o trecho C# de código ou o trecho de código de Visual Basic.<br><br>controle de linguagem ![Programming para Docs.Microsoft.com ](../ide/media/docs-programming-language-control.png)     
 
-     O método usa outro loop `foreach` no Visual C# ou o loop `For Each` no Visual Basic para passar em cada rótulo no <xref:System.Windows.Forms.TableLayoutPanel>. Ele usa o operador de igualdade (`==` no Visual C# e `=` no Visual Basic) para examinar a cor do ícone de cada rótulo e verificar se ela corresponde ao plano de fundo. Se as cores corresponderem, o ícone permanecerá invisível e o jogador não combinou todos os ícones restantes. Nesse caso, o programa usa uma instrução `return` para ignorar o restante do método. Se o loop passar por todos os rótulos sem executar a instrução `return`, isso significa que todos os ícones no formulário foram combinados. O programa mostra uma MessageBox para parabenizar o jogador ganhador e, em seguida, chama o método `Close()` do formulário para encerrar o jogo.
+     O método usa outro loop de `foreach` C# no loop ou `For Each` no Visual Basic para passar por cada rótulo na <xref:System.Windows.Forms.TableLayoutPanel>. Ele usa o operador de igualdade (`==` C# no e `=` em Visual Basic) para verificar a cor do ícone de cada rótulo para verificar se ele corresponde ao plano de fundo. Se as cores corresponderem, o ícone permanecerá invisível e o jogador não combinou todos os ícones restantes. Nesse caso, o programa usa uma instrução `return` para ignorar o restante do método. Se o loop passar por todos os rótulos sem executar a instrução `return`, isso significa que todos os ícones no formulário foram combinados. O programa mostra uma MessageBox para parabenizar o jogador ganhador e, em seguida, chama o método `Close()` do formulário para encerrar o jogo.
 
 2. Em seguida, o manipulador de eventos <xref:System.Windows.Forms.Control.Click> do rótulo chama o novo método `CheckForWinner()`. Verifique se seu programa busca um ganhador imediatamente depois que ele mostra o segundo ícone que o jogador escolhe. Procure a linha onde você define a cor do segundo ícone escolhido e chame o método `CheckForWinner()` logo depois disso, conforme mostrado no código a seguir.
 
@@ -47,6 +47,6 @@ Você criou um jogo divertido, mas ele precisa de um item adicional para ser fin
 
 ## <a name="to-continue-or-review"></a>Para continuar ou revisar
 
-- Para ir para a próxima etapa do tutorial, confira [Etapa 9: Experimentar outros recursos](../ide/step-9-try-other-features.md).
+- Para acessar a próxima etapa do tutorial, veja [Etapa 9: Experimentar outros recursos](../ide/step-9-try-other-features.md).
 
-- Para retornar à etapa anterior do tutorial, confira [Etapa 7: Manter os pares visíveis](../ide/step-7-keep-pairs-visible.md).
+- Para retornar à etapa anterior do tutorial, veja [Etapa 7: Manter os pares visíveis](../ide/step-7-keep-pairs-visible.md).

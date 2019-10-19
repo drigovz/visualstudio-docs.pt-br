@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptSiteDebugEx::OnCanNotJITScriptErrorDebug | Microsoft Docs
+title: 'IActiveScriptSiteDebugEx:: OnCanNotJITScriptErrorDebug | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,17 +17,17 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4c643478da37b5a66c22b201ef8f8248df02e4ec
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7358d2b372f0801b8c45816e1fc36018b37799b2
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62992339"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572185"
 ---
 # <a name="iactivescriptsitedebugexoncannotjitscripterrordebug"></a>IActiveScriptSiteDebugEx::OnCanNotJITScriptErrorDebug
-Informa o host sobre um erro de tempo de execução de script quando o processo de Gerenciador de depuração não encontra um depurador de script Just In Time.  
+Informa o host sobre um erro de tempo de execução de script quando o Gerenciador de depuração de processo não encontra um depurador de script just in time.  
   
- Para implementar um depurador em seu host, você deve tratar [IActiveScriptSiteDebug::OnScriptErrorDebug](../../winscript/reference/iactivescriptsitedebug-onscripterrordebug.md). Com base em uma ação do usuário, o host pode anexar o depurador e retornar ou retornar o início do depurador no OnScriptErrorDebug `pfEnterDebugger` parâmetro. Você também deve implementar essa interface para receber a notificação sobre o erro de tempo de execução, mesmo se não houver nenhum depuradores externas que podem ser interpretadas pelo Gerenciador de processos de depuração.  
+ Para implementar um depurador em seu host, você deve tratar [IActiveScriptSiteDebug:: OnScriptErrorDebug](../../winscript/reference/iactivescriptsitedebug-onscripterrordebug.md). Com base em uma ação do usuário, o host pode anexar o depurador e retornar ou retornar o início do depurador no parâmetro OnScriptErrorDebug `pfEnterDebugger`. Você também deve implementar essa interface para obter a notificação sobre o erro de tempo de execução, mesmo que não haja nenhum depurador externo que possa ser interpretado pelo Gerenciador de depuração de processo.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -40,12 +40,12 @@ HRESULT OnCanNotJITScriptErrorDebug(
   
 #### <a name="parameters"></a>Parâmetros  
  `pErrorDebug`  
- [in] O erro de tempo de execução que ocorreu.  
+ no O erro de tempo de execução que ocorreu.  
   
  `pfCallOnScriptErrorWhenContinuingt`  
- [out] Se a chamada [IActiveScriptSiteDebug::OnScriptErrorDebug](../../winscript/reference/iactivescriptsitedebug-onscripterrordebug.md) se o usuário decidir continuar sem depurar.  
+ fora Se deve chamar [IActiveScriptSiteDebug:: OnScriptErrorDebug](../../winscript/reference/iactivescriptsitedebug-onscripterrordebug.md) se o usuário decidir continuar sem depuração.  
   
-## <a name="return-value"></a>Valor de retorno  
+## <a name="return-value"></a>Valor retornado  
  O método retorna um `HRESULT`. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.  
   
 |Valor|Descrição|  
@@ -53,7 +53,7 @@ HRESULT OnCanNotJITScriptErrorDebug(
 |`S_OK`|O método foi bem-sucedido.|  
   
 ## <a name="remarks"></a>Comentários  
- Você também deve implementar essa interface para receber uma notificação.  
+ Você também deve implementar essa interface para obter uma notificação.  
   
 ## <a name="see-also"></a>Consulte também  
  [IActiveScriptSiteDebugEx Interface](../../winscript/reference/iactivescriptsitedebugex-interface.md)

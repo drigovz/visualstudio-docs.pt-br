@@ -1,5 +1,5 @@
 ---
-title: Não é possível atribuir a 'this' | Microsoft Docs
+title: Não é possível atribuir a ' this ' | Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -14,30 +14,30 @@ ms.assetid: ba2b0a2b-f0f8-4698-b335-a4ab6c166671
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4a4ba5d852a7d131a88930dd66931c026074549b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 73baa77cc63e3a43ac30e70f66081bbc7ade3020
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946583"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572354"
 ---
 # <a name="cannot-assign-to-this"></a>Não é possível designar a "isso"
-Você tentou atribuir um valor para **isso**. **Isso** é um [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] palavra-chave que se refere a qualquer um:
+Você tentou atribuir um valor a **isso**. **essa** é uma palavra-chave [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] que se refere a:
 
-- o objeto de um método em execução atualmente
+- o objeto atualmente executando um método,
 
-- o objeto global, se não há nenhum método atual (ou o método não pertence a nenhum outro objeto).
+- o objeto global se não houver nenhum método atual (ou o método não pertencer a nenhum outro objeto).
 
-Um método é um [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] função que é invocada por meio de um objeto. Dentro de um método, o **isso** palavra-chave é uma referência ao objeto que o método foi invocado por meio (que é o objeto criado, invocando o construtor de classe com o **novos** operador).
+Um método é uma função [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] que é invocada por meio de um objeto. Dentro de um método, a palavra-chave **this** é uma referência ao objeto para o qual o método foi invocado (que, por acaso, é o objeto criado invocando o construtor de classe com o **novo** operador).
 
-Dentro de um método, você pode usar **isso** fazer referência ao objeto atual, mas não é possível atribuir um novo valor para **isso**.
+Dentro de um método, você pode usar **isso** para fazer referência ao objeto atual, mas não pode atribuir um novo valor a **isso**.
 
 ## <a name="to-correct-this-error"></a>Para corrigir este erro
 
-- Não tente atribuir a **isso**. Para acessar uma propriedade ou método de um objeto instanciado, use o operador ponto (por exemplo, **circle.radius**).
+- Não tente atribuir a **isso**. Para acessar uma propriedade ou um método de um objeto instanciado, use o operador ponto (por exemplo, **Circle. RADIUS**).
 
   > [!NOTE]
-  > Você não pode nomear uma variável criada pelo usuário **isso**; ele é um [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] palavra reservada.
+  > Você não pode nomear **uma variável criada**pelo usuário; é um [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] palavra reservada.
 
 ## <a name="see-also"></a>Consulte também
 

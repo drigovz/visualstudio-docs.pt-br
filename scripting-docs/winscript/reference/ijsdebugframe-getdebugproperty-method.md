@@ -1,5 +1,5 @@
 ---
-title: 'Método ijsdebugframe:: Getdebugproperty | Microsoft Docs'
+title: 'Método IJsDebugFrame:: getdebugproperty | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,15 +15,15 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d3ababdae51e95d6a3234c4e55f3e20ffa5fd760
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 780a1559f5ac79dddcc8065034c6f6478995b7dc
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62558197"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72562296"
 ---
 # <a name="ijsdebugframegetdebugproperty-method"></a>Método IJsDebugFrame::GetDebugProperty
-Retorna um navegador de propriedade deste quadro de pilhas.  
+Retorna um navegador de propriedades para este quadro de pilhas.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -35,12 +35,12 @@ HRESULT GetDebugProperty(
   
 #### <a name="parameters"></a>Parâmetros  
  `ppDebugProperty`  
- [out] Objeto que representa o navegador de propriedade.  
+ fora Objeto que representa o navegador de propriedades.  
   
-## <a name="return-value"></a>Valor de retorno  
+## <a name="return-value"></a>Valor retornado  
   
 ## <a name="requirements"></a>Requisitos  
- **Cabeçalho:** jscript9diag.h  
+ **Cabeçalho:** jscript9diag. h  
   
 ## <a name="see-also"></a>Consulte também  
  [Interface IJsDebugFrame](../../winscript/reference/ijsdebugframe-interface.md)

@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplication::ConnectDebugger | Microsoft Docs
+title: 'IRemoteDebugApplication:: ConnectDebugger | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 189f0bcbcb5b45e1da477fa18b131aecc913a4c5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7ed0ddeffd55475e1be4c9fab1e567d61a4b6654
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62944300"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572324"
 ---
 # <a name="iremotedebugapplicationconnectdebugger"></a>IRemoteDebugApplication::ConnectDebugger
-Conecta-se um depurador para este aplicativo.  
+Conecta um depurador a este aplicativo.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -37,19 +37,19 @@ HRESULT ConnectDebugger(
   
 #### <a name="parameters"></a>Parâmetros  
  `pad`  
- [in] O depurador se anexe a esse aplicativo.  
+ no O depurador a ser anexado a este aplicativo.  
   
-## <a name="return-value"></a>Valor de retorno  
+## <a name="return-value"></a>Valor retornado  
  O método retorna um `HRESULT`. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.  
   
 |Valor|Descrição|  
 |-----------|-----------------|  
 |`S_OK`|O método foi bem-sucedido.|  
-|`E_FAIL`|Um depurador já está conectado a esse aplicativo.|  
+|`E_FAIL`|Um depurador já está conectado a este aplicativo.|  
   
 ## <a name="remarks"></a>Comentários  
- Um aplicativo pode ter apenas um depurador conectado por vez. Esse método falhará se um depurador já está conectado.  
+ Um aplicativo pode ter apenas um depurador conectado por vez. Esse método falhará se um depurador já estiver conectado.  
   
 ## <a name="see-also"></a>Consulte também  
- [IRemoteDebugApplication::GetDebugger](../../winscript/reference/iremotedebugapplication-getdebugger.md)   
+ [IRemoteDebugApplication:: getdebugger](../../winscript/reference/iremotedebugapplication-getdebugger.md)    
  [IRemoteDebugApplication Interface](../../winscript/reference/iremotedebugapplication-interface.md)

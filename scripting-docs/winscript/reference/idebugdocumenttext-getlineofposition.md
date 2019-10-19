@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentText::GetLineOfPosition | Microsoft Docs
+title: 'IDebugDocumentText:: GetLineOfPosition | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4d5d33a68b4bc87307281e37ff96f84834257a22
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e8ce32e46c42ee864a88e169a79539efb8b05633
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62970868"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572118"
 ---
 # <a name="idebugdocumenttextgetlineofposition"></a>IDebugDocumentText::GetLineOfPosition
-Retorna o número de linha e, opcionalmente, o deslocamento de caractere dentro da linha que corresponde à posição do caractere especificada.  
+Retorna o número de linha e, opcionalmente, o deslocamento de caractere dentro da linha que corresponde à posição de caractere fornecida.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -39,15 +39,15 @@ HRESULT GetLineOfPosition(
   
 #### <a name="parameters"></a>Parâmetros  
  `cCharacterPosition`  
- [in] Local do intervalo de posição do caractere inicial.  
+ no Local inicial do intervalo de posição de caracteres.  
   
  `pcLineNumber`  
- [out] O número da linha do intervalo.  
+ fora O número de linha do intervalo.  
   
  `pcCharacterOffsetInLine`  
- [no, out] O deslocamento de caractere do intervalo na linha `pcLineNumber`. Se esse parâmetro for `NULL`, o método não retorna um valor.  
+ [entrada, saída] O deslocamento de caractere do intervalo dentro da linha `pcLineNumber`. Se esse parâmetro for `NULL`, o método não retornará um valor.  
   
-## <a name="return-value"></a>Valor de retorno  
+## <a name="return-value"></a>Valor retornado  
  O método retorna um `HRESULT`. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.  
   
 |Valor|Descrição|  
@@ -55,7 +55,7 @@ HRESULT GetLineOfPosition(
 |`S_OK`|O método foi bem-sucedido.|  
   
 ## <a name="remarks"></a>Comentários  
- Esse método retorna o número de linha e, opcionalmente, o deslocamento de caractere dentro da linha que corresponde à posição do caractere especificada.  
+ Esse método retorna o número de linha e, opcionalmente, o deslocamento de caractere dentro da linha que corresponde à posição de caractere especificada.  
   
 ## <a name="see-also"></a>Consulte também  
  [Interface IDebugDocumentText](../../winscript/reference/idebugdocumenttext-interface.md)

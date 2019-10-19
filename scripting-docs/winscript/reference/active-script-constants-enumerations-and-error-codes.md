@@ -1,5 +1,5 @@
 ---
-title: Script ativo constantes, enumerações e códigos de erro | Microsoft Docs
+title: Constantes, enumerações e códigos de erro do script ativo | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -11,15 +11,15 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 090b494e904fbef1c0d3d8b380f7a184a6042788
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e03bef99c2297d517aa5234db49820a2b9600ce7
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62953992"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572715"
 ---
 # <a name="active-script-constants-enumerations-and-error-codes"></a>Constantes, enumerações e códigos de erro do script ativo
-Esta seção descreve as enumerações e códigos de erro usados nos mecanismos de script do Windows.  
+Esta seção descreve as enumerações e os códigos de erro usados nos mecanismos de script do Windows.  
   
 ## <a name="constants"></a>Constantes  
   
@@ -29,7 +29,7 @@ Esta seção descreve as enumerações e códigos de erro usados nos mecanismos 
   
 ## <a name="properties"></a>Propriedades  
   
-|Propriedade|Descrição|  
+|propriedade|Descrição|  
 |--------------|-----------------|  
 |[Propriedade SCRIPTPROP_HOSTKEEPALIVE](../../winscript/reference/scriptprop-hostkeepalive-property.md)|Usado para especificar se o mecanismo de script deve ser mantido totalmente funcional se houver referências pendentes.|  
   
@@ -37,21 +37,21 @@ Esta seção descreve as enumerações e códigos de erro usados nos mecanismos 
   
 |Enumeração|Descrição|  
 |-----------------|-----------------|  
-|[Enumeração SCRIPTGCTYPE](../../winscript/reference/scriptgctype-enumeration.md)|O tipo de coleta de lixo para executar.|  
-|[Enumeração SCRIPTLANGUAGEVERSION](../../winscript/reference/scriptlanguageversion-enumeration.md)|Especifica os possíveis versões de script.|  
+|[Enumeração SCRIPTGCTYPE](../../winscript/reference/scriptgctype-enumeration.md)|O tipo de coleta de lixo a ser executado.|  
+|[Enumeração SCRIPTLANGUAGEVERSION](../../winscript/reference/scriptlanguageversion-enumeration.md)|Especifica as versões de script possíveis.|  
 |[Enumeração SCRIPTSTATE](../../winscript/reference/scriptstate-enumeration.md)|Especifica o estado de um mecanismo de script.|  
 |||  
 |[Enumeração SCRIPTTHREADSTATE](../../winscript/reference/scriptthreadstate-enumeration.md)|Especifica o estado de um thread em um mecanismo de script.|  
-|[Enumeração SCRIPTTRACEINFO](../../winscript/reference/scripttraceinfo-enumeration.md)|Representa o evento de script que está sendo rastreado. Usado na [método iactivescriptsitetraceinfo:: Sendscripttraceinfo](../../winscript/reference/iactivescriptsitetraceinfo-sendscripttraceinfo-method.md).|  
-|[Enumeração SCRIPTUICHANDLING](../../winscript/reference/scriptuichandling-enumeration.md)|Representa a maneira que o controle de interface do usuário deve ser tratado.|  
-|[Enumeração SCRIPTUICITEM](../../winscript/reference/scriptuicitem-enumeration.md)|Representa o tipo de item de interface do usuário. Usado na [método iactivescriptsiteuicontrol:: Getuibehavior](../../winscript/reference/iactivescriptsiteuicontrol-getuibehavior-method.md).|  
+|[Enumeração SCRIPTTRACEINFO](../../winscript/reference/scripttraceinfo-enumeration.md)|Representa o evento de script que está sendo rastreado. Usado no [método IActiveScriptSiteTraceInfo:: SendScriptTraceInfo](../../winscript/reference/iactivescriptsitetraceinfo-sendscripttraceinfo-method.md).|  
+|[Enumeração SCRIPTUICHANDLING](../../winscript/reference/scriptuichandling-enumeration.md)|Representa a maneira como o controle de interface do usuário deve ser manipulado.|  
+|[Enumeração SCRIPTUICITEM](../../winscript/reference/scriptuicitem-enumeration.md)|Representa o tipo de item da interface do usuário. Usado no [método IActiveScriptSiteUIControl:: GetUIBehavior](../../winscript/reference/iactivescriptsiteuicontrol-getuibehavior-method.md).|  
   
 ## <a name="error-codes"></a>Códigos de erro  
   
 |Código do erro|Descrição|  
 |----------------|-----------------|  
 |[Código de erro SCRIPT_E_PROPAGATE](../../winscript/reference/script-e-propagate-error-code.md)|Um erro de script está sendo propagado para o chamador, que pode estar em um thread diferente.|  
-|[Código de erro SCRIPT_E_RECORDED](../../winscript/reference/script-e-recorded-error-code.md)|Um erro foi passado entre o mecanismo de script e o host.|  
+|[Código de erro SCRIPT_E_RECORDED](../../winscript/reference/script-e-recorded-error-code.md)|Foi passado um erro entre o mecanismo de script e o host.|  
 |[Código de erro SCRIPT_E_REPORTED](../../winscript/reference/script-e-reported-error-code.md)|O mecanismo de script relatou uma exceção sem tratamento para o host.|  
   
 ## <a name="see-also"></a>Consulte também  

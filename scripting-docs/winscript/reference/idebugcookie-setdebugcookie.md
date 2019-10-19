@@ -1,5 +1,5 @@
 ---
-title: IDebugCookie::SetDebugCookie | Microsoft Docs
+title: 'IDebugCookie:: SetDebugCookie | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c83c1331a95e48afa02b0b37557ca5bd042261d7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 664939d0b91b8dbbf87dbff2978064811ffee486
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974469"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573179"
 ---
 # <a name="idebugcookiesetdebugcookie"></a>IDebugCookie::SetDebugCookie
-Define o cookie de depuração do aplicativo.  
+Define o cookie do aplicativo de depuração.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -37,9 +37,9 @@ HRESULT SetDebugCookie(
   
 #### <a name="parameters"></a>Parâmetros  
  `dwDebugAppCookie`  
- [in] Um cookie que identifica o aplicativo de depuração.  
+ no Um cookie que identifica o aplicativo de depuração.  
   
-## <a name="return-value"></a>Valor de retorno  
+## <a name="return-value"></a>Valor retornado  
  O método retorna um `HRESULT`. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.  
   
 |Valor|Descrição|  
@@ -47,7 +47,7 @@ HRESULT SetDebugCookie(
 |`S_OK`|O método foi bem-sucedido.|  
   
 ## <a name="remarks"></a>Comentários  
- Esse método define o cookie de depuração do aplicativo, o que permite que mais de um depurador para anexar a um processo.  
+ Esse método define o cookie do aplicativo de depuração, que permite que mais de um depurador se anexe a um processo.  
   
 ## <a name="see-also"></a>Consulte também  
  [Interface IDebugCookie](../../winscript/reference/idebugcookie-interface.md)

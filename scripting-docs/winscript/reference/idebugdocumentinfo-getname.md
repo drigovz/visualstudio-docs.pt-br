@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentInfo::GetName | Microsoft Docs
+title: 'IDebugDocumentInfo:: GetName | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9975563c27b986190fbd2731c3f36b1e32719c0b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bc098da29367a322bd93b4f60ba0e090aee9ee91
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62970959"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72570965"
 ---
 # <a name="idebugdocumentinfogetname"></a>IDebugDocumentInfo::GetName
 Retorna o nome do documento especificado.  
@@ -38,12 +38,12 @@ HRESULT GetName(
   
 #### <a name="parameters"></a>Parâmetros  
  `dnt`  
- [in] O tipo de nome de documento a ser retornado.  
+ no O tipo de nome do documento a ser retornado.  
   
  `pbstrName`  
- [out] Cadeia de caracteres que contém o nome.  
+ fora Cadeia de caracteres que contém o nome.  
   
-## <a name="return-value"></a>Valor de retorno  
+## <a name="return-value"></a>Valor retornado  
  O método retorna um `HRESULT`. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.  
   
 |Valor|Descrição|  
@@ -55,5 +55,5 @@ HRESULT GetName(
  Esse método retorna o nome do documento especificado.  
   
 ## <a name="see-also"></a>Consulte também  
- [Interface IDebugDocumentInfo](../../winscript/reference/idebugdocumentinfo-interface.md)   
+ @No__t_1 de [interface IDebugDocumentInfo](../../winscript/reference/idebugdocumentinfo-interface.md)  
  [DOCUMENTNAMETYPE Enumeration](../../winscript/reference/documentnametype-enumeration.md)

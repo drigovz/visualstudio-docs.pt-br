@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplication::GetDebugger | Microsoft Docs
+title: 'IRemoteDebugApplication:: getdebugger | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ba28af068bae6baa3031dde346fa0157e8e1ce6d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 031e4390941d9b8b025c704ebfcec20224aa1c79
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62944254"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573826"
 ---
 # <a name="iremotedebugapplicationgetdebugger"></a>IRemoteDebugApplication::GetDebugger
 Retorna o depurador atual conectado ao aplicativo.  
@@ -37,9 +37,9 @@ HRESULT GetDebugger(
   
 #### <a name="parameters"></a>Parâmetros  
  `pad`  
- [out] O depurador atual conectado ao aplicativo.  
+ fora O depurador atual conectado ao aplicativo.  
   
-## <a name="return-value"></a>Valor de retorno  
+## <a name="return-value"></a>Valor retornado  
  O método retorna um `HRESULT`. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.  
   
 |Valor|Descrição|  
@@ -50,5 +50,5 @@ HRESULT GetDebugger(
  Esse método retorna o depurador atual conectado ao aplicativo.  
   
 ## <a name="see-also"></a>Consulte também  
- [IRemoteDebugApplication::ConnectDebugger](../../winscript/reference/iremotedebugapplication-connectdebugger.md)   
+ [IRemoteDebugApplication:: ConnectDebugger](../../winscript/reference/iremotedebugapplication-connectdebugger.md)    
  [IRemoteDebugApplication Interface](../../winscript/reference/iremotedebugapplication-interface.md)

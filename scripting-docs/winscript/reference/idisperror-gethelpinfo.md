@@ -1,5 +1,5 @@
 ---
-title: IDispError::GetHelpInfo | Microsoft Docs
+title: 'IDispError:: GetHelpInfo | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fa831ff511ea507e03ca858b93383ff38ead9039
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a84e57e97bb781ad3ea0be1ac6766fd94f6f5c30
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446914"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573126"
 ---
 # <a name="idisperrorgethelpinfo"></a>IDispError::GetHelpInfo
-Retorna o caminho do arquivo de Ajuda e a ID do contexto do tópico que explica o erro, se possível.  
+Retorna o caminho do arquivo de ajuda e a ID de contexto do tópico que explica o erro, se possível.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -38,12 +38,12 @@ HRESULT GetHelpInfo(
   
 #### <a name="parameters"></a>Parâmetros  
  `pbstrFileName`  
- [out] Cadeia de caracteres que contém o caminho totalmente qualificado do arquivo de Ajuda. Se não há nenhum arquivo de Ajuda ou ocorre um erro, o valor retornado é NULL.  
+ fora Cadeia de caracteres que contém o caminho totalmente qualificado do arquivo de ajuda. Se não houver nenhum arquivo de ajuda ou se ocorrer um erro, o valor de retorno será nulo.  
   
  `pdwContext`  
- [out] A ID do contexto de ajuda para o erro. Se não houver nenhum arquivo de Ajuda (se `pbstrFileName` é NULL), esse parâmetro não tem nenhum significado.  
+ fora A ID de contexto da ajuda para o erro. Se não houver nenhum arquivo de ajuda (se `pbstrFileName` for nulo), esse parâmetro não terá significado.  
   
-## <a name="return-value"></a>Valor de retorno  
+## <a name="return-value"></a>Valor retornado  
  O método retorna um `HRESULT`. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.  
   
 |Valor|Descrição|  
@@ -51,10 +51,10 @@ HRESULT GetHelpInfo(
 |`S_OK`|O método foi bem-sucedido.|  
 |`E_FAIL`|Ocorreu um erro específico do provedor.|  
 |`E_INVALIDARG`|`pbstrFileName` ou `pdwContext` era nulo.|  
-|`E_OUTOFMEMORY`|O provedor não pôde alocar memória suficiente no qual retornar o caminho do arquivo de Ajuda.|  
+|`E_OUTOFMEMORY`|O provedor não pôde alocar memória suficiente para retornar o caminho do arquivo de ajuda.|  
   
 ## <a name="remarks"></a>Comentários  
- Esse método retorna o caminho do arquivo de Ajuda e a ID do contexto do tópico que explica o erro, se possível.  
+ Esse método retorna o caminho do arquivo de ajuda e a ID de contexto do tópico que explica o erro, se possível.  
   
 > [!NOTE]
 > Este método não está implementado.  

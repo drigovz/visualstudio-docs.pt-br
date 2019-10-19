@@ -13,12 +13,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a9a5b94a25a838845acab2ce1c49295b0b28d425
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 9b387999d71690deaf5bea30a07439677065d63d
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62976188"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574384"
 ---
 # <a name="implementing-smart-host-helper-interfaces"></a>Interfaces auxiliares do host inteligente de implementação
 A [Interface IDebugDocumentHelper](../winscript/reference/idebugdocumenthelper-interface.md) simplifica a tarefa de criação de um host inteligente para depuração ativa, porque ela fornece implementações de várias interfaces necessárias para hospedagem inteligente.  

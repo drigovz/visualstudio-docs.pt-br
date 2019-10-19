@@ -1,5 +1,5 @@
 ---
-title: IActiveScript::GetScriptState | Microsoft Docs
+title: 'IActiveScript:: getscriptstate | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0f9f3bedee9af9ae3cb145108d801f252267d5d2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d266e713879aafe1c5ca271d46b3030f3275460f
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62935742"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575731"
 ---
 # <a name="iactivescriptgetscriptstate"></a>IActiveScript::GetScriptState
-Recupera o estado atual do mecanismo de script. Esse método pode ser chamado de threads não base sem resultando em um balão não base para objetos de host ou o [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md) interface.  
+Recupera o estado atual do mecanismo de script. Esse método pode ser chamado de threads não base sem resultar em um texto explicativo não base para hospedar objetos ou para a interface [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md) .  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -37,10 +37,10 @@ HRESULT GetScriptState(
   
 #### <a name="parameters"></a>Parâmetros  
  `pss`  
- [out] Endereço de uma variável que recebe um valor definido na [enumeração SCRIPTSTATE](../../winscript/reference/scriptstate-enumeration.md) enumeração. O valor indica o estado atual do mecanismo de script associado com o thread de chamada.  
+ fora Endereço de uma variável que recebe um valor definido na enumeração de [Enumeração scriptstate](../../winscript/reference/scriptstate-enumeration.md) . O valor indica o estado atual do mecanismo de script associado ao thread de chamada.  
   
-## <a name="return-value"></a>Valor de retorno  
- Retorna `S_OK` se for bem-sucedido, ou `E_POINTER` se um ponteiro inválido foi especificado.  
+## <a name="return-value"></a>Valor retornado  
+ Retorna `S_OK` se for bem-sucedido ou `E_POINTER` se um ponteiro inválido tiver sido especificado.  
   
 ## <a name="see-also"></a>Consulte também  
  [IActiveScript](../../winscript/reference/iactivescript.md)

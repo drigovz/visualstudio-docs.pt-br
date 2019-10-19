@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentTextAuthor::ReplaceText | Microsoft Docs
+title: 'IDebugDocumentTextAuthor:: ReplaceText | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 920b6851f5fea42597be7ec5dcc55350024abea9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: beca5d0ce19a38346ef9b03e39169769c90ea008
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946759"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572039"
 ---
 # <a name="idebugdocumenttextauthorreplacetext"></a>IDebugDocumentTextAuthor::ReplaceText
 Substitui o texto no documento.  
@@ -39,15 +39,15 @@ HRESULT ReplaceText(
   
 #### <a name="parameters"></a>Parâmetros  
  `cCharacterPosition`  
- [in] Inicie o local no intervalo de caracteres para substituir.  
+ no Local inicial do intervalo de caracteres a ser substituído.  
   
  `cNumToReplace`  
- [in] Número de caracteres a substituir.  
+ no Número de caracteres a serem substituídos.  
   
  `pcharText[]`  
- [in] Um buffer que contém os novos caracteres para substituir os caracteres antigos.  
+ no Um buffer que contém os novos caracteres para substituir os caracteres antigos.  
   
-## <a name="return-value"></a>Valor de retorno  
+## <a name="return-value"></a>Valor retornado  
  O método retorna um `HRESULT`. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.  
   
 |Valor|Descrição|  

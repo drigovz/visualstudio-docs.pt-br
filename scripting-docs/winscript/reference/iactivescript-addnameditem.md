@@ -1,5 +1,5 @@
 ---
-title: IActiveScript::AddNamedItem | Microsoft Docs
+title: 'IActiveScript:: AddNamedItem | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: db0a97c01d948a0c26850ebd1c3f47c6e3900614
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a343e38b944ca36da221da39832046c19b332230
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62935791"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575821"
 ---
 # <a name="iactivescriptaddnameditem"></a>IActiveScript::AddNamedItem
-Adiciona o nome de um item de nível raiz para o espaço para nome do mecanismo de script. Um item de nível raiz é um objeto com propriedades e métodos, uma origem do evento ou todos os três.  
+Adiciona o nome de um item de nível raiz ao espaço de nome do mecanismo de script. Um item de nível raiz é um objeto com propriedades e métodos, uma fonte de eventos ou todos os três.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -38,24 +38,24 @@ HRESULT AddNamedItem(
   
 #### <a name="parameters"></a>Parâmetros  
  `pstrName`  
- [in] Endereço de um buffer que contém o nome do item, conforme exibido a partir do script. O nome deve ser exclusiva e persistente.  
+ no Endereço de um buffer que contém o nome do item como exibido no script. O nome deve ser exclusivo e persistente.  
   
  `dwFlags`  
- [in] Sinalizadores associados a um item. Pode ser uma combinação desses valores:  
+ no Sinalizadores associados a um item. Pode ser uma combinação desses valores:  
   
 |Valor|Significado|  
 |-----------|-------------|  
-|SCRIPTITEM_CODEONLY|Indica que o item nomeado representa um objeto somente código, e que o host não tem nenhum `IUnknown` a ser associado este objeto somente código. O host tem apenas um nome para este objeto. Em linguagens orientadas a objeto, como o C++, esse sinalizador pode criar uma classe. Nem todas as linguagens dão suporte a esse sinalizador.|  
-|SCRIPTITEM_GLOBALMEMBERS|Indica que o item é uma coleção de propriedades globais e os métodos associados com o script. Normalmente, um mecanismo de script ignorará o nome do objeto (em vez de com a finalidade de usá-lo como um cookie para o [iactivescriptsite:: getItemInfo](../../winscript/reference/iactivescriptsite-getiteminfo.md) método, ou para a resolução de escopo explícito) e expor seus membros como global variáveis e métodos. Isso permite que o host estender a biblioteca (funções de tempo de execução e assim por diante) disponível para o script. Ele é deixado para o mecanismo de script para lidar com o nome entra em conflito (por exemplo, quando dois itens SCRIPTITEM_GLOBALMEMBERS têm métodos de mesmo nome), embora não deve ser retornado um erro devido a essa situação.|  
-|SCRIPTITEM_ISPERSISTENT|Indica que o item deve ser salvo se o mecanismo de script é salvo. Da mesma forma, definir esse sinalizador indica que uma transição de volta ao estado inicializado deve reter informações nome e o tipo do item (o mecanismo de script no entanto, deve, liberar todos os ponteiros para interfaces no objeto real).|  
-|SCRIPTITEM_ISSOURCE|Indica que o item de fontes de eventos que o script pode coletar. Objetos filho (Propriedades do objeto que são eles próprios objetos) também podem obter eventos para o script. Isso não é recursiva, mas ele fornece um mecanismo conveniente para o caso comum, por exemplo, de criar controles de um contêiner e todos os seus membros.|  
-|SCRIPTITEM_ISVISIBLE|Indica que o nome do item está disponível no espaço para nome do script, permitindo o acesso para as propriedades, métodos e eventos do item. Por convenção, as propriedades do item incluem filhos do item; Portanto, todas as propriedades do objeto filho e métodos (e seus filhos, recursivamente) poderão ser acessados.|  
-|SCRIPTITEM_NOCODE|Indica que o item é simplesmente um nome que está sendo adicionado ao espaço para nome do script e não deve ser tratado como um item para o qual código deve ser associado. Por exemplo, sem esse sinalizador definido, VBScript criará um módulo separado para o item nomeado e C++ pode criar uma classe wrapper separado para o item nomeado.|  
+|SCRIPTITEM_CODEONLY|Indica que o item nomeado representa um objeto somente de código e que o host não tem `IUnknown` ser associado a esse objeto somente de código. O host tem apenas um nome para esse objeto. Em linguagens orientadas a objeto C++, como, esse sinalizador criaria uma classe. Nem todos os idiomas dão suporte a esse sinalizador.|  
+|SCRIPTITEM_GLOBALMEMBERS|Indica que o item é uma coleção de propriedades globais e métodos associados ao script. Normalmente, um mecanismo de script ignoraria o nome do objeto (exceto pelo propósito de usá-lo como um cookie para o método [IActiveScriptSite:: GetItemInfo](../../winscript/reference/iactivescriptsite-getiteminfo.md) ou para resolver o escopo explícito) e expor seus membros como variáveis e métodos globais. Isso permite que o host estenda a biblioteca (funções de tempo de execução e assim por diante) disponíveis para o script. Ele é deixado para o mecanismo de script para lidar com conflitos de nome (por exemplo, quando dois itens de SCRIPTITEM_GLOBALMEMBERS têm métodos de mesmo nome), embora não seja possível retornar um erro devido a essa situação.|  
+|SCRIPTITEM_ISPERSISTENT|Indica que o item deve ser salvo se o mecanismo de script for salvo. Da mesma forma, definir esse sinalizador indica que uma transição de volta para o estado inicializado deve manter as informações de nome e tipo do item (o mecanismo de script deve, no entanto, liberar todos os ponteiros para interfaces no objeto real).|  
+|SCRIPTITEM_ISSOURCE|Indica que o item origina os eventos que o script pode coletar. Objetos filho (Propriedades do objeto que estão em objetos próprios) também podem gerar eventos de origem para o script. Isso não é recursivo, mas fornece um mecanismo conveniente para o caso comum, por exemplo, da criação de um contêiner e de todos os seus controles de membros.|  
+|SCRIPTITEM_ISVISIBLE|Indica que o nome do item está disponível no espaço de nome do script, permitindo o acesso às propriedades, aos métodos e aos eventos do item. Por convenção, as propriedades do item incluem os filhos do item; Portanto, todas as propriedades e métodos do objeto filho (e seus filhos, recursivamente) estarão acessíveis.|  
+|SCRIPTITEM_NOCODE|Indica que o item é simplesmente um nome que está sendo adicionado ao espaço de nome do script e não deve ser tratado como um item para o qual o código deve ser associado. Por exemplo, sem esse sinalizador ser definido, o VBScript criará um módulo separado para o item nomeado e C++ poderá criar uma classe wrapper separada para o item nomeado.|  
   
-## <a name="return-value"></a>Valor de retorno  
+## <a name="return-value"></a>Valor retornado  
  Retorna um dos seguintes valores:  
   
-|Valor de retorno|Significado|  
+|Valor retornado|Significado|  
 |------------------|-------------|  
 |`S_OK`|Êxito.|  
 |`E_INVALIDARG`|Um argumento era inválido.|  

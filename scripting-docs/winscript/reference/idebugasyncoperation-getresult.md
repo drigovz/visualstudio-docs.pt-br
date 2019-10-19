@@ -1,5 +1,5 @@
 ---
-title: IDebugAsyncOperation::GetResult | Microsoft Docs
+title: 'IDebugAsyncOperation:: GetResult | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 49cf761c85fce3f8fc2f6705d114ab042e0c2ecd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 55c51649a5bc3094dd306166e013a892ce67e236
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62822039"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573291"
 ---
 # <a name="idebugasyncoperationgetresult"></a>IDebugAsyncOperation::GetResult
-Fornece o valor de retorno e parâmetro de objeto de retorno da operação de depuração síncrona.  
+Fornece o valor de retorno e o parâmetro de objeto de retorno da operação de depuração síncrona.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -38,12 +38,12 @@ HRESULT GetResult(
   
 #### <a name="parameters"></a>Parâmetros  
  `phrResult`  
- [out] Se a operação for concluída, `phrResult` é o valor de retorno `IDebugSyncOperation::Execute`.  
+ fora Se a operação for concluída, `phrResult` será o valor de retorno de `IDebugSyncOperation::Execute`.  
   
  `ppunkResult`  
- [out] Se a operação for concluída, `ppunkResult` é o parâmetro de objeto retornado pela operação.  
+ fora Se a operação for concluída, `ppunkResult` será o parâmetro de objeto retornado pela operação.  
   
-## <a name="return-value"></a>Valor de retorno  
+## <a name="return-value"></a>Valor retornado  
  O método retorna um `HRESULT`. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.  
   
 |Valor|Descrição|  
@@ -52,8 +52,8 @@ HRESULT GetResult(
 |`E_PENDING`|A operação não foi concluída.|  
   
 ## <a name="remarks"></a>Comentários  
- Se a operação for concluída, esse método retorna o `HRESULT` e o parâmetro a partir do objeto `IDebugSyncOperation::Execute`.  
+ Se a operação for concluída, esse método retornará o `HRESULT` e o parâmetro de objeto de `IDebugSyncOperation::Execute`.  
   
 ## <a name="see-also"></a>Consulte também  
- [Interface IDebugAsyncOperation](../../winscript/reference/idebugasyncoperation-interface.md)   
+ @No__t_1 de [interface IDebugAsyncOperation](../../winscript/reference/idebugasyncoperation-interface.md)  
  [IDebugSyncOperation::Execute](../../winscript/reference/idebugsyncoperation-execute.md)

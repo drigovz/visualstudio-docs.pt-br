@@ -11,15 +11,15 @@ caps.latest.revision: 3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0a5de3ea949203ad7a6dca0ea777fdbc9514ba6d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7fce16c756cf06c8cf01937114402832570a0cd3
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62840233"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574387"
 ---
 # <a name="scriptgctype-enumeration"></a>Enumeração SCRIPTGCTYPE
-O tipo de coleta de lixo para executar. Usado na [IActiveScriptGarbageCollector::CollectGarbage](../../winscript/reference/iactivescriptgarbagecollector-collectgarbage.md) método.  
+O tipo de coleta de lixo a ser executado. Usado no método [IActiveScriptGarbageCollector:: CollectGarbage](../../winscript/reference/iactivescriptgarbagecollector-collectgarbage.md) .  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -31,8 +31,8 @@ typedef enum tagSCRIPTGCTYPE {    SCRIPTGCTYPE_NORMAL           = 0,    SCRIPTGC
   
 |||  
 |-|-|  
-|SCRIPTGCTYPE_NORMAL|Fazer a coleta de lixo normal. O valor inteiro é 0.|  
-|SCRIPTGCTYPE_EXHAUSTIVE|Fazer a coleta de lixo completa. O valor inteiro é 1.|  
+|SCRIPTGCTYPE_NORMAL|Faça a coleta de lixo normal. O valor inteiro é 0.|  
+|SCRIPTGCTYPE_EXHAUSTIVE|Faça uma coleta de lixo exaustiva. O valor inteiro é 1.|  
   
 ## <a name="see-also"></a>Consulte também  
  [Constantes, enumerações e códigos de erro do script ativo](../../winscript/reference/active-script-constants-enumerations-and-error-codes.md)

@@ -1,5 +1,5 @@
 ---
-title: IActiveScript::Close | Microsoft Docs
+title: 'IActiveScript:: fechar | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 53b71471ada55751de301391fdcc70387c1bb6c2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f858de42ef2948d218aac6c3194cc6af544da5e9
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62935673"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575788"
 ---
 # <a name="iactivescriptclose"></a>IActiveScript::Close
-Faz com que o mecanismo de script abandonar a qualquer script carregado no momento, perder seu estado e liberar quaisquer ponteiros de interface, que ele tem a outros objetos, portanto, inserindo um estado fechado. Coletores de eventos, o texto do script executado imediatamente e chamadas de macro que já estão em andamento são concluídas antes das alterações de estado (use [IActiveScript:: Interruptscriptthread](../../winscript/reference/iactivescript-interruptscriptthread.md) para cancelar um thread em execução do script). Esse método deve ser chamado pelo host criando antes que a interface seja liberada para evitar problemas de referência circular.  
+Faz com que o mecanismo de script abandone qualquer script carregado atualmente, perca seu estado e libere qualquer ponteiro de interface que tenha para outros objetos, inserindo assim um estado fechado. Coletores de eventos, executados imediatamente em texto de script e invocações de macro que já estão em andamento são concluídos antes das alterações de estado (use [IActiveScript:: InterruptScriptThread](../../winscript/reference/iactivescript-interruptscriptthread.md) para cancelar um thread de script em execução). Esse método deve ser chamado pelo host de criação antes que a interface seja liberada para evitar problemas de referência circular.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -33,14 +33,14 @@ Faz com que o mecanismo de script abandonar a qualquer script carregado no momen
 HRESULT Close(void);  
 ```  
   
-## <a name="return-value"></a>Valor de retorno  
+## <a name="return-value"></a>Valor retornado  
  Retorna um dos seguintes valores:  
   
 |Valor|Significado|  
 |-----------|-------------|  
 |`S_OK`|Êxito.|  
-|`E_UNEXPECTED`|A chamada não era esperada (por exemplo, o mecanismo de script já estava no estado fechado).|  
-|`OLESCRIPT_S_PENDING`|O método foi enfileirado com êxito, mas o estado ainda não foi alterado. Quando as alterações de estado, o site é ser o retorno de chamada a [IActiveScriptSite::OnStateChange](../../winscript/reference/iactivescriptsite-onstatechange.md) método.|  
+|`E_UNEXPECTED`|A chamada não era esperada (por exemplo, o mecanismo de script já estava no estado Closed).|  
+|`OLESCRIPT_S_PENDING`|O método foi enfileirado com êxito, mas o estado ainda não foi alterado. Quando o estado for alterado, o site será chamado de volta no método [IActiveScriptSite:: OnStateChange](../../winscript/reference/iactivescriptsite-onstatechange.md) .|  
 |`S_FALSE`|O método foi bem-sucedido, mas o script já foi fechado.|  
   
 ## <a name="see-also"></a>Consulte também  

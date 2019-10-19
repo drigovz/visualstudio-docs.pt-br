@@ -17,15 +17,15 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 75369df719b0cd140ce621e916215eb18cf30a9e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c58ff83c43a1418e6fb7bd8945afa181af60c68a
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62787613"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573611"
 ---
 # <a name="iscriptnode-createchildentry"></a>IScriptNode:: CreateChildEntry
-Adiciona uma instância filho do `IScriptEntry`.  
+Adiciona uma instância filho de `IScriptEntry`.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -40,30 +40,30 @@ HRESULT CreateChildEntry(
   
 #### <a name="parameters"></a>Parâmetros  
  `isn`  
- [in] O índice do filho no pai.  
+ no O índice do filho no pai.  
   
  `dwCookie`  
- [in] Um valor definido pelo aplicativo usado para associar a entrada de filho com o objeto de host.  
+ no Um valor definido pelo aplicativo usado para associar a entrada filho ao objeto de host.  
   
  `pszDelimiter`  
- [in] O endereço do delimitador de fim do bloco de script. Para analisar, o host normalmente usa um delimitador (como duas aspas simples), para detectar o final do bloco de script.  
+ no O endereço do delimitador de bloco de fim do script. Para análise, o host normalmente usa um delimitador (como duas aspas simples) para detectar o final do bloco de script.  
   
- O delimitador permite que o script de criação de mecanismo para fornecer o pré-processamento. Por exemplo, o mecanismo pode substituir uma aspa simples por duas aspas simples para uso como um delimitador. O mecanismo determina como o delimitador é usado.  
+ O delimitador permite que o mecanismo de criação de scripts forneça pré-processamento. Por exemplo, o mecanismo pode substituir uma aspa simples por duas aspas simples para uso como um delimitador. O mecanismo determina como o delimitador é usado.  
   
- Definido como NULL se um delimitador não marca o final do bloco de script.  
+ Defina como NULL se um delimitador não marcar o final do bloco de script.  
   
  `ppse`  
- [out] O endereço de uma variável que recebe um ponteiro para o `IScriptEntry` interface da instância filho.  
+ fora O endereço de uma variável que recebe um ponteiro para a interface de `IScriptEntry` da instância filho.  
   
- Para `IScriptNode` objetos que representam uma página da Web, este parâmetro retorna um `IScriptEntry` instância que especifica um bloco de script.  
+ Para `IScriptNode` objetos que representam uma página da Web, esse parâmetro retorna uma instância de `IScriptEntry` que especifica um bloco de script.  
   
- Para `IScriptEntry` objetos que representam um bloco de script, esse parâmetro retorna um `IScriptEntry` instância que especifica um objeto de função.  
+ Para `IScriptEntry` objetos que representam um bloco de script, esse parâmetro retorna uma instância de `IScriptEntry` que especifica um objeto de função.  
   
- Para `IScriptEntry` objetos que representam uma função de objeto, esse método falhar.  
+ Para `IScriptEntry` objetos que representam um objeto de função, esse método falha.  
   
- Para `IScriptScriptlet` objetos, esse método falhar.  
+ Para objetos `IScriptScriptlet`, esse método falha.  
   
-## <a name="return-value"></a>Valor de retorno  
+## <a name="return-value"></a>Valor retornado  
  Um `HRESULT`. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.  
   
 |Valor|Descrição|  
@@ -71,8 +71,8 @@ HRESULT CreateChildEntry(
 |`S_OK`|O método foi bem-sucedido.|  
   
 ## <a name="remarks"></a>Comentários  
- O `IScriptNode` interface representa uma página da Web ou seus elementos. O `IScriptEntry` interface (que é derivado de `IScriptNode`) representa um bloco de script ou um objeto de função. O `IScriptScriptlet` interface (que é derivado de `IScriptEntry`) representa um manipulador de eventos.  
+ A interface `IScriptNode` representa uma página da Web ou seus elementos. A interface de `IScriptEntry` (que é derivada de `IScriptNode`) representa um bloco de script ou um objeto de função. A interface `IScriptScriptlet` (que é derivada de `IScriptEntry`) representa um manipulador de eventos.  
   
 ## <a name="see-also"></a>Consulte também  
- [Interface IScriptNode](../../winscript/reference/iscriptnode-interface.md)   
+ @No__t_1 de [interface IScriptNode](../../winscript/reference/iscriptnode-interface.md)  
  [IScriptEntry Interface](../../winscript/reference/iscriptentry-interface.md)

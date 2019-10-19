@@ -1,5 +1,5 @@
 ---
-title: IActiveScript::SetScriptSite | Microsoft Docs
+title: 'IActiveScript:: SetScriptSite | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3fdf5f3ae84d1a991d67170b5f2b02114b91ee05
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 063dcc7b580334bff9780e9c209b621ef7e25656
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62935548"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575326"
 ---
 # <a name="iactivescriptsetscriptsite"></a>IActiveScript::SetScriptSite
-Informa ao mecanismo de script da [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md) site interface fornecida pelo host. Chame esse método antes de qualquer outro [IActiveScript](../../winscript/reference/iactivescript.md) métodos de interface é usada.  
+Informa o mecanismo de script do site de interface [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md) fornecido pelo host. Chame esse método antes que quaisquer outros métodos de interface [IActiveScript](../../winscript/reference/iactivescript.md) sejam usados.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -37,15 +37,15 @@ HRESULT SetScriptSite(
   
 #### <a name="parameters"></a>Parâmetros  
  `pScriptSite`  
- [in] Endereço do site do script fornecido pelo host a ser associado esta instância do mecanismo de script. O site deve ser atribuído exclusivamente a essa instância do mecanismo de script; ele não pode ser compartilhado com outros mecanismos de script.  
+ no Endereço do site de script fornecido pelo host a ser associado a esta instância do mecanismo de script. O site deve ser atribuído exclusivamente a essa instância do mecanismo de script; Ele não pode ser compartilhado com outros mecanismos de script.  
   
-## <a name="return-value"></a>Valor de retorno  
+## <a name="return-value"></a>Valor retornado  
  Retorna um dos seguintes valores:  
   
-|Valor de retorno|Significado|  
+|Valor retornado|Significado|  
 |------------------|-------------|  
 |`S_OK`|Êxito.|  
-|`E_FAIL`|Ocorreu um erro não especificado; o mecanismo de script não pôde concluir a inicializar o site.|  
+|`E_FAIL`|Ocorreu um erro não especificado; o mecanismo de script não pôde concluir a inicialização do site.|  
 |`E_INVALIDARG`|Um argumento era inválido.|  
 |`E_POINTER`|Um ponteiro inválido foi especificado.|  
 |`E_UNEXPECTED`|A chamada não era esperada (por exemplo, um site já foi definido).|  

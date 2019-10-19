@@ -14,26 +14,26 @@ ms.assetid: f2998d7d-13a4-4bbe-b872-3ff3316551e4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5d1fabd8da6f825a266614a4a5c7fabd5c307130
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 467a6ec6ca45f2ea0411e0266163ca23a9e3d594
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63005986"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572513"
 ---
 # <a name="vbarray-expected"></a>VBArray esperado
-Você forneceu um objeto que não era um safeArray de Visual Basic, quando apenas um era esperado.  
+Você forneceu um objeto que não era um Visual Basic safeArray, quando um era esperado.  
   
 ```js
 new VBArray(safeArray);  
 ```  
   
- VBArrays são somente leitura e não pode ser criados diretamente. O argumento de safeArray é um valor de VBArray e deve ter obtido um valor de VBArray antes de ser passado para o `VBArray` construtor. Isso pode ser feito apenas recuperando o valor de um controle ActiveX existente ou em outro objeto.  
+ VBArrays são somente leitura e não podem ser criados diretamente. O argumento safeArray é um valor VBArray e deve ter obtido um valor VBArray antes de ser passado para o Construtor `VBArray`. Isso só pode ser feito recuperando o valor de um ActiveX existente ou outro objeto.  
   
 ### <a name="to-correct-this-error"></a>Para corrigir este erro  
   
-- Verifique se você passar somente **VBArray** objetos para o **VBArray** construtor.  
+- Certifique-se de que você passe somente objetos **VBArray** para o construtor **VBArray** .  
   
 ## <a name="see-also"></a>Consulte também  
- [Objeto VBArray](../../javascript/reference/vbarray-object-javascript.md)   
+ @No__t_1 de [objeto VBArray](../../javascript/reference/vbarray-object-javascript.md)  
  [Usando matrizes](../../javascript/advanced/using-arrays-javascript.md)

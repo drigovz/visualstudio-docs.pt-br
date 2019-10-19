@@ -1,5 +1,5 @@
 ---
-title: IDispError::GetNext | Microsoft Docs
+title: 'IDispError:: GetNext | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4af2d239c26c156fad0be7fb45bc04f601d35c83
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 81186e6eba7983a1210e5de5bca5d83dd77089da
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437284"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573110"
 ---
 # <a name="idisperrorgetnext"></a>IDispError::GetNext
-Recupera o próximo `IDispError` objeto.  
+Recupera o próximo objeto `IDispError`.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -37,9 +37,9 @@ HRESULT GetNext(
   
 #### <a name="parameters"></a>Parâmetros  
  `ppde`  
- [out] Especifica, em seguida `IDispError` objeto.  
+ fora Especifica o próximo `IDispError` objeto.  
   
-## <a name="return-value"></a>Valor de retorno  
+## <a name="return-value"></a>Valor retornado  
  O método retorna um `HRESULT`. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.  
   
 |Valor|Descrição|  
@@ -47,7 +47,7 @@ HRESULT GetNext(
 |`S_OK`|O método foi bem-sucedido.|  
   
 ## <a name="remarks"></a>Comentários  
- Esse método recupera o próximo `IDispError` objeto. Se esse for o último `IDispError` do objeto, esse método retornará nulo.  
+ Esse método recupera o próximo `IDispError` objeto. Se esse for o último objeto `IDispError`, esse método retornará NULL.  
   
 > [!NOTE]
 > Este método não está implementado.  

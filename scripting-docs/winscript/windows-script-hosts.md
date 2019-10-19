@@ -13,12 +13,12 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: eec1824bd3ba1a8acb7e3c540656151cd4b11d1f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 8468f578ee44487acd2575e81e01d65969110437
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62840038"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72568819"
 ---
 # <a name="windows-script-hosts"></a>Windows Script Hosts
 Ao implementar um host do Microsoft Windows Script, você pode supor com segurança que um mecanismo de script só chama a interface [IActiveScriptSite](../winscript/reference/iactivescriptsite.md) no contexto do thread base se o host faz o seguinte:  

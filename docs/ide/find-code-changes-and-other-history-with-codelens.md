@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 62ea3402a053ed57280ddbc946d79d27ab35f944
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7c417e1488dc6d6545af25b09225ddeb0f360892
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62980353"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573319"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>Localizar alterações de código e outro histórico com o CodeLens
 
@@ -23,7 +23,7 @@ O CodeLens permite que você mantenha o foco no trabalho enquanto descobre o que
 ::: moniker range=">=vs-2019"
 
 > [!NOTE]
-> Os indicadores do CodeLens de controle do código-fonte não estão disponíveis na edição do Visual Studio Community.
+> O CodeLens está disponível no Visual Studio Community Edition, no entanto, os indicadores de *controle do código-fonte* não estão disponíveis nesta edição.
 
 ::: moniker-end
 
@@ -93,7 +93,7 @@ Os indicadores no nível do elemento de código permitem que você veja quem alt
 
 Isto é o que você vê ao usar o TFVC (Controle de Versão do Team Foundation) no Team Foundation Server ou no Azure DevOps Services:
 
-![CodeLens: Obter o histórico de alterações do código no TFVC](../ide/media/codelens-code-changes.png)
+![CodeLens: obter o histórico de alterações do código no TFVC](../ide/media/codelens-code-changes.png)
 
 O período de tempo padrão são os últimos 12 meses. Se o código estiver armazenado no Team Foundation Server, você poderá alterar o período executando o [comando TFSConfig](/tfs/server/ref/command-line/tfsconfig-cmd) com o [comando CodeIndex](../ide/codeindex-command.md) e com o sinalizador **/indexHistoryPeriod**.
 
@@ -107,13 +107,13 @@ A janela **Histórico** é exibida:
 
 Quando os arquivos estão em um repositório Git e você escolhe o indicador de alterações no nível do elemento de código, isto é o que você vê:
 
-![CodeLens: Obter o histórico de alterações do código no Git](../ide/media/codelens-code-changes-git.png)
+![CodeLens: obter o histórico de alterações do código no Git](../ide/media/codelens-code-changes-git.png)
 
 ### <a name="file-level-indicators"></a>Indicadores no nível do arquivo
 
 Encontre alterações de um arquivo inteiro nos indicadores no nível do arquivo na parte inferior da janela:
 
-![CodeLens: Obter detalhes do arquivo de código](../ide/media/codelens-file-level.png)
+![CodeLens: obter detalhes do arquivo de código](../ide/media/codelens-file-level.png)
 
 > [!NOTE]
 > Os indicadores no nível do arquivo não estão disponíveis para arquivos C# e Visual Basic.
@@ -122,35 +122,35 @@ Para ver mais detalhes sobre uma alteração, clique com o botão direito do mou
 
 É possível ver quem alterou seu código ao longo do tempo. Isso pode ajudá-lo a encontrar padrões nas alterações da sua equipe e avaliar o impacto delas.
 
-![CodeLens: Ver o histórico de alterações do código como um grafo](../ide/media/codelens.png)
+![CodeLens: ver o histórico de alterações do código como um grafo](../ide/media/codelens.png)
 
 ### <a name="find-changes-in-your-current-branch"></a>Encontre alterações na sua ramificação atual
 
 Sua equipe pode ter vários branches, por exemplo, um branch principal e um branch de desenvolvimento filho, para reduzir o risco de interrupção de código estável.
 
-![CodeLens: Descubra quando o código foi ramificado](../ide/media/codelensfirstbranchconceptual.png)
+![CodeLens: descobrir quando o código foi ramificado](../ide/media/codelensfirstbranchconceptual.png)
 
 Descubra quantas pessoas alteraram seu código e a quantas alterações foram feitas no branch principal pressionando **Alt**+**6**:
 
-![CodeLens: Encontrar quantas alterações foram feitas no branch](../ide/media/codelens-branch-changes.png)
+![CodeLens: encontre quantas alterações foram feitas no branch](../ide/media/codelens-branch-changes.png)
 
 ### <a name="find-when-your-code-was-branched"></a>Descubra quando o código foi ramificado
 
 Para saber quando o código foi ramificado, navegue para o código no branch filho. Em seguida, selecione o indicador **alterações** ou pressione **Alt**+**6**:
 
-![CodeLens: Descubra quando o código foi ramificado](../ide/media/codelens-first-branch.png)
+![CodeLens: descobrir quando o código foi ramificado](../ide/media/codelens-first-branch.png)
 
 ### <a name="find-incoming-changes-from-other-branches"></a>Descubra alterações recebidas de outras ramificações
 
-![CodeLens: Encontrar alterações de código em outros branches](../ide/media/codelensbranchchangecheckinconceptual.png)
+![CodeLens: encontrar alterações de código em outros branches](../ide/media/codelensbranchchangecheckinconceptual.png)
 
 Veja as alterações recebidas. Na seguinte captura de tela, foi feita uma correção de bug no branch "Dev":
 
-![CodeLens: Alterar com check-in em outro branch](../ide/media/codelens-branch-changes-dev.png)
+![CodeLens: alteração com check-in em outro branch](../ide/media/codelens-branch-changes-dev.png)
 
 Examine a alteração sem sair do branch atual ("Main"):
 
-![CodeLens: Ver a alteração recebida de outro branch](../ide/media/codelens-branch-changes-main.png)
+![CodeLens: ver a alteração recebida de outro branch](../ide/media/codelens-branch-changes-main.png)
 
 ### <a name="find-when-changes-got-merged"></a>Descubra onde as alterações foram mescladas
 
@@ -166,7 +166,7 @@ Por exemplo, agora o código no branch Main tem a correção de bug do branch "D
 
 Compare uma alteração recebida com a versão local pressionando **Shift**+**F10** ou clicando duas vezes no conjunto de alterações.
 
-![CodeLens: Comparar a alteração recebida com a versão local](../ide/media/codelens-branch-incoming-change-menu.png)
+![CodeLens: comprar a alteração recebida com a versão local](../ide/media/codelens-branch-incoming-change-menu.png)
 
 ### <a name="branch-icons"></a>Ícones do branch
 
@@ -174,14 +174,14 @@ O ícone na coluna **Branch** indica como o branch está relacionado ao branch n
 
 |**Ícone**|**A alteração foi proveniente de:**|
 |--------------| - |
-|![CodeLens: Ícone alterar do branch atual](../ide/media/codelensbranchcurrenticon.png)|A ramificação atual|
-|![CodeLens: Ícone alterar do branch pai](../ide/media/codelensbranchparenticon.png)|A ramificação pai|
-|![CodeLens: Ícone alterar do branch filho](../ide/media/codelensbranchchildicon.png)|Uma ramificação filha|
-|![CodeLens: Ícone alterar do branch par](../ide/media/codelensbranchpeericon.png)|Uma ramificação par|
-|![CodeLens: Ícone alterar do branch mais distante](../ide/media/codelensbranchfurtherawayicon.png)|Uma ramificação mais distante que uma pai, filha ou par|
-|![CodeLens: Ícone mesclar do pai](../ide/media/codelensbranchmergefromparenticon.png)|Uma mesclagem da ramificação pai para uma ramificação filha|
-|![CodeLens: Ícone mesclar do filho](../ide/media/codelensbranchmergefromchildicon.png)|Uma mesclagem de uma ramificação filha para a ramificação pai|
-|![CodeLens: Ícone mesclar do não relacionado](../ide/media/codelensbranchmergefromunrelatedicon.png)|Uma mesclagem de uma ramificação não relacionada (mesclagem sem base)|
+|![CodeLens: alteração de ícone do branch atual](../ide/media/codelensbranchcurrenticon.png)|A ramificação atual|
+|![CodeLens: alteração de ícone do branch pai](../ide/media/codelensbranchparenticon.png)|A ramificação pai|
+|![CodeLens: alteração de ícone do branch filho](../ide/media/codelensbranchchildicon.png)|Uma ramificação filha|
+|![CodeLens: alteração de ícone do branch par](../ide/media/codelensbranchpeericon.png)|Uma ramificação par|
+|![CodeLens: alteração de ícone do branch mais distante](../ide/media/codelensbranchfurtherawayicon.png)|Uma ramificação mais distante que uma pai, filha ou par|
+|![CodeLens: mesclagem de ícone pai](../ide/media/codelensbranchmergefromparenticon.png)|Uma mesclagem da ramificação pai para uma ramificação filha|
+|![CodeLens: mesclagem de ícone do branch filho](../ide/media/codelensbranchmergefromchildicon.png)|Uma mesclagem de uma ramificação filha para a ramificação pai|
+|![CodeLens: mesclagem de ícone do branch não relacionado](../ide/media/codelensbranchmergefromunrelatedicon.png)|Uma mesclagem de uma ramificação não relacionada (mesclagem sem base)|
 
 ## <a name="linked-work-items"></a>Itens de trabalho vinculados
 
@@ -248,9 +248,9 @@ Para usar o teclado para selecionar indicadores, pressione a tecla **Alt** e man
 
 ## <a name="q--a"></a>Perguntas e respostas
 
-### <a name="q-how-do-i-turn-codelens-off-or-on-or-choose-which-indicators-to-see"></a>P: Como fazer para ativar ou desativar o CodeLens ou escolher quais indicadores exibir?
+### <a name="q-how-do-i-turn-codelens-off-or-on-or-choose-which-indicators-to-see"></a>P: Como fazer ativar ou desativar CodeLens ou escolher quais indicadores ver?
 
-**R:**  É possível ativar ou desativar indicadores, exceto o indicador de referências. Vá para **Ferramentas** > **Opções** > **Editor de Texto** > **Todas as Linguagens** > **CodeLens**.
+**R:** é possível ativar ou desativar indicadores, exceto o indicador de referências. Vá para **Ferramentas** > **Opções** > **Editor de Texto** > **Todas as Linguagens** > **CodeLens**.
 
 Quando os indicadores são ativados, você pode abrir as opções do CodeLens nos indicadores.
 
@@ -262,7 +262,7 @@ Ative e desative os indicadores de nível de arquivo do CodeLens usando os ícon
 
 ### <a name="q-where-is-codelens"></a>P: Em que local o CodeLens se encontra?
 
-**R:** O CodeLens é exibido no código C# e Visual Basic no nível de método, classe, indexador e propriedade. O CodeLens é exibido no nível de arquivo para todos os outros tipos de arquivos.
+**R:** o CodeLens é exibido no código C# e Visual Basic no nível de método, classe, indexador e propriedade. O CodeLens é exibido no nível de arquivo para todos os outros tipos de arquivos.
 
 - Certifique-se que o CodeLens está ativado. Vá para **Ferramentas** > **Opções** > **Editor de Texto** > **Todas as Linguagens** > **CodeLens**.
 
@@ -275,7 +275,7 @@ Ative e desative os indicadores de nível de arquivo do CodeLens usando os ícon
 ::: moniker range=">=vs-2019"
 
 > [!TIP]
-> Os indicadores de controle do código-fonte não estão disponíveis na edição Visual Studio Community.
+> O CodeLens está disponível no Visual Studio Community Edition, no entanto, os indicadores de *controle do código-fonte* não estão disponíveis nesta edição.
 
 ::: moniker-end
 
@@ -304,7 +304,7 @@ Ative e desative os indicadores de nível de arquivo do CodeLens usando os ícon
 
 O CodeLens não dá suporte a diferentes versões do Lync ou do Skype instaladas. Talvez elas não estejam localizadas para todas as versões localizadas do Visual Studio.
 
-### <a name="q-how-do-i-change-the-font-and-color-for-codelens"></a>P: Como posso alterar a fonte e a cor do CodeLens?
+### <a name="q-how-do-i-change-the-font-and-color-for-codelens"></a>P: como posso alterar a fonte e a cor do CodeLens?
 
 **R:** Acesse **Ferramentas** > **Opções** > **Ambiente** > **Fontes e Cores**.
 
@@ -330,23 +330,23 @@ Para usar o teclado:
 
 ### <a name="q-how-do-i-refresh-the-indicators"></a>P: Como posso atualizar os indicadores?
 
-**R:** Isso depende do indicador:
+**R:** isso depende do indicador:
 
-- **Referências**: Este indicador é atualizado automaticamente quando o código é alterado. Se o indicador **referências** estiver encaixado como uma janela separada, atualize o indicador selecionando **Atualizar**:
+- **Referências**: este indicador é atualizado automaticamente quando o código é alterado. Se o indicador **referências** estiver encaixado como uma janela separada, atualize o indicador selecionando **Atualizar**:
 
    ![Botão Atualizar em Referências do CodeLens](../ide/media/codelensviewreferencesdocked.png)
 
-- **Equipe**: Atualize esses indicadores selecionando **Atualizar Indicadores da Equipe CodeLens** no menu de clique com o botão direito do mouse:
+- **Equipe**: atualize esses indicadores selecionando **Atualizar Indicadores da Equipe CodeLens** no menu de clique com o botão direito:
 
    ![Item de menu Atualizar Indicadores da Equipe CodeLens](../ide/media/codelensrefreshindicatorsfromcode.png)
 
-- **Teste**: [Encontre os testes de unidade do código](#associated-unit-tests) para atualizar o indicador **Teste**.
+- **Teste**: [encontre os testes de unidade do código](#associated-unit-tests) para atualizar o indicador **Teste**.
 
-### <a name="q-whats-local-version"></a>P: O que é “versão local”?
+### <a name="q-whats-local-version"></a>P: O que é "Versão Local"?
 
 **R:** A seta **Versão local** aponta para o conjunto de alterações mais recente na versão local de um arquivo. Quando o servidor tem um conjunto de alterações mais recente, elas são exibidas acima ou abaixo da seta **Versão local**, dependendo da ordem usada para classificar os conjuntos de alterações.
 
-### <a name="q-can-i-manage-how-codelens-processes-code-to-show-history-and-linked-items"></a>P: Posso gerenciar a maneira como o CodeLens processa o código para mostrar o histórico e os itens vinculados?
+### <a name="q-can-i-manage-how-codelens-processes-code-to-show-history-and-linked-items"></a>P: posso gerenciar a maneira como o CodeLens processa o código para mostrar o histórico e os itens vinculados?
 
 **R:** Sim. Se o código estiver no TFS, use o [comando CodeIndex](../ide/codeindex-command.md) com o [comando TFS Config](/tfs/server/ref/command-line/tfsconfig-cmd).
 

@@ -1,5 +1,5 @@
 ---
-title: 'Método ijsdebugframe:: Getstackrange | Microsoft Docs'
+title: 'Método IJsDebugFrame:: GetStackRange | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,15 +15,15 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 52dd6114d3ec462f91f8bce5e76f73c5487746ed
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d1ac3cbee9d16296632477f4128ec36370ab0d4a
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62558210"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574037"
 ---
 # <a name="ijsdebugframegetstackrange-method"></a>Método IJsDebugFrame::GetStackRange
-Retorna o intervalo de endereços absoluto do registro de ativação JavaScript lógico.  
+Retorna o intervalo de endereços absoluto do quadro de pilha JavaScript lógico.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -36,18 +36,18 @@ HRESULT GetStackRange(
   
 #### <a name="parameters"></a>Parâmetros  
  `pStart`  
- [out] Baixo, a maioria dos ponteiro de pilha do quadro.  
+ fora Maior parte inferior do ponteiro de pilha do quadro.  
   
  `pEnd`  
- [out] Principais a maioria dos ponteiros do quadro.  
+ fora Maior parte do ponteiro do empilhador do quadro.  
   
-## <a name="return-value"></a>Valor de retorno  
+## <a name="return-value"></a>Valor retornado  
   
 ## <a name="remarks"></a>Comentários  
- Esse método é útil para reunir rastreamentos de pilha intercalados, coletados de vários tempos de execução. O início, fim ponteiros de pilha podem abranger vários registros de ativação de computador físico (para quadros de tempo de execução do JavaScript interpretados). Iniciar > terminar à medida que a pilha cresce de alto para baixo endereço.  
+ Esse método é útil para compondo juntos rastreamentos de pilha intercalados coletados de vários tempos de execução. Os ponteiros de início de pilha final podem abranger vários quadros de pilha de máquina física (para quadros de tempo de execução JavaScript interpretados). Iniciar > terminar à medida que a pilha cresce de alto para baixo endereço.  
   
 ## <a name="requirements"></a>Requisitos  
- **Cabeçalho:** jscript9diag.h  
+ **Cabeçalho:** jscript9diag. h  
   
 ## <a name="see-also"></a>Consulte também  
  [Interface IJsDebugFrame](../../winscript/reference/ijsdebugframe-interface.md)

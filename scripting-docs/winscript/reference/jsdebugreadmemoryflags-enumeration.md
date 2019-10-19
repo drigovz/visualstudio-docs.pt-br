@@ -15,12 +15,12 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c908fdbf17b13b84355dff208b7f3106bfc72087
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a1757678f20a01221ae46e1535d3190cd463d724
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62830456"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571702"
 ---
 # <a name="jsdebugreadmemoryflags-enumeration"></a>Enumeração JsDebugReadMemoryFlags
 Sinaliza para especificar o comportamento ao ler a memória.  
@@ -35,13 +35,13 @@ enum JsDebugReadMemoryFlags{   None = 0,   JsDebugAllowPartialRead= 0x1} JsDebug
   
 ### <a name="values"></a>Valores  
   
-|Nome|Descrição|  
+|Name|Descrição|  
 |----------|-----------------|  
-|`JsDebugAllowPartialRead`|Indica que o chamador deseja que a operação de leitura seja bem-sucedida somente se parte da memória ler com êxito. Se isso estiver definido, um erro E_JsDEBUG_INVALID_MEMORY_ADDRESS só será gerado se 'Endereço' é inválido. Se esse sinalizador estiver desmarcado, um erro E_JsDEBUG_INVALID_MEMORY_ADDRESS será gerado se qualquer parte de memória esteja ilegível.|  
+|`JsDebugAllowPartialRead`|Indica que o chamador deseja que a operação de leitura tenha êxito se apenas parte da leitura da memória for bem-sucedida. Se estiver definido, um erro E_JsDEBUG_INVALID_MEMORY_ADDRESS será gerado somente se ' address ' for inválido. Se esse sinalizador estiver claro, um erro E_JsDEBUG_INVALID_MEMORY_ADDRESS será gerado se qualquer parte da memória solicitada não puder ser lida.|  
 |`None`|Indica que o chamador deseja o comportamento padrão para ReadMemory.|  
   
 ## <a name="requirements"></a>Requisitos  
- **Cabeçalho:** jscript9diag.h  
+ **Cabeçalho:** jscript9diag. h  
   
 ## <a name="see-also"></a>Consulte também  
  [Referência de interfaces de script do Windows](../../winscript/reference/windows-script-interfaces-reference.md)

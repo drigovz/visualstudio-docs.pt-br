@@ -14,22 +14,22 @@ ms.assetid: 8da7485f-7050-4559-97c3-ccfa782cdff3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 10564f34683fec5c38ae069f2fb0c51fb0c8902a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7bb822b6b6224748c51da2220461a232cab6134b
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62935088"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573400"
 ---
 # <a name="expected-constant"></a>Constante esperada
-Você tentou usar uma variável (compilação condicional não) em uma instrução de teste de compilação condicional. Instruções de teste de compilação condicional devem ser avaliada como uma constante.  
+Você tentou usar uma variável (compilação não condicional) em uma instrução de teste de compilação condicional. Instruções de teste de compilação condicional devem ser avaliadas como uma constante.  
   
 ### <a name="to-correct-this-error"></a>Para corrigir este erro  
   
-- Substitua a variável com um literal.  
+- Substitua a variável por um literal.  
   
-- Substitua a variável com uma variável de compilação condicional.  
+- Substitua a variável por uma variável de compilação condicional.  
   
 ## <a name="see-also"></a>Consulte também  
- [Compilação condicional](../../javascript/advanced/conditional-compilation-javascript.md)   
+ @No__t_1 de [compilação condicional](../../javascript/advanced/conditional-compilation-javascript.md)  
  [Variáveis de compilação condicional](../../javascript/advanced/conditional-compilation-variables-javascript.md)
