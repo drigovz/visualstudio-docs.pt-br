@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 978313276865c15672a129db601543a0ca307d5b
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
-ms.translationtype: HT
+ms.openlocfilehash: 47f709ae086a32c0680fca060744898251a76afd
+ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263045"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72589140"
 ---
 # <a name="debug-a-javascript-or-typescript-app-in-visual-studio"></a>Depurar um aplicativo JavaScript ou TypeScript no Visual Studio
 
@@ -90,7 +90,9 @@ Para anexar o depurador por meio do Visual Studio e atingir pontos de interrupç
 
     ![Anexar ao processo](../javascript/media/tutorial-nodejs-react-attach-to-process.png)
 
+    ::: moniker range="vs-2017"
     Você sabe que o depurador foi anexado corretamente quando o Explorador do DOM e o Console do JavaScript são abertos no Visual Studio. Essas ferramentas de depuração são semelhantes às Ferramentas para Desenvolvedores do Chrome e às Ferramentas F12 do Microsoft Edge.
+    ::: moniker-end
 
     > [!NOTE]
     > Se o depurador não for anexado e a mensagem "Não é possível anexar ao processo. Uma operação não é válida no estado atual", use o Gerenciador de Tarefas para fechar todas as instâncias do Chrome antes de iniciar o Chrome no modo de depuração. As extensões do Chrome podem estar em execução e impedindo o modo de depuração completa.
@@ -145,11 +147,11 @@ Se você adicionar um arquivo *tsconfig.json* ao projeto, o Visual Studio tratar
 
 #### <a name="compiler-options-for-tsconfigjson"></a>Opções do compilador para tsconfig.json
 
-* **inlineSourceMap**: Emite um arquivo único com mapas de origem em vez de criar um mapa de origem separado para cada arquivo de origem.
-* **inlineSources**: Emite o código-fonte juntamente com os mapas de origem em um arquivo único; exige a definição de *inlineSourceMap* ou *sourceMap*.
-* **mapRoot**: Especifica a localização em que o depurador deve encontrar arquivos de mapa de origem (*.map*) em vez da localização padrão. Use esse sinalizador se os arquivos *.map* em tempo de execução precisarem estar em uma localização diferente dos arquivos *.js*. A localização especificada é inserida no mapa de origem para direcionar o depurador à localização dos arquivos *.map*.
-* **sourceMap**: Gera um arquivo *.map* correspondente.
-* **sourceRoot**: Especifica a localização em que o depurador deve encontrar arquivos TypeScript em vez das localizações de origem. Use esse sinalizador se as origens em tempo de execução precisarem estar em uma localização diferente da localização em tempo de design. A localização especificada é inserida no mapa de origem para direcionar o depurador ao local em que se encontram os arquivos de origem.
+* **inlineSourceMap**: emitir um único arquivo com mapas de origem em vez de criar um mapa de origem separado para cada arquivo de origem.
+* **inlineSources**: emitir a origem junto com os mapas de origem em um único arquivo; requer a definição de *inlineSourceMap* ou *sourceMap* .
+* **mapRoot**: especifica o local em que o depurador deve localizar arquivos de mapa de origem ( *. map*) em vez do local padrão. Use esse sinalizador se os arquivos *.map* em tempo de execução precisarem estar em uma localização diferente dos arquivos *.js*. A localização especificada é inserida no mapa de origem para direcionar o depurador à localização dos arquivos *.map*.
+* **sourceMap**: gera um arquivo *. map* correspondente.
+* **sourceRoot**: especifica o local em que o depurador deve localizar arquivos TypeScript em vez dos locais de origem. Use esse sinalizador se as origens em tempo de execução precisarem estar em uma localização diferente da localização em tempo de design. A localização especificada é inserida no mapa de origem para direcionar o depurador ao local em que se encontram os arquivos de origem.
 
 Para obter mais detalhes sobre as opções do compilador, confira a página [Opções do compilador](https://www.typescriptlang.org/docs/handbook/compiler-options.html) no Manual do TypeScript.
 
@@ -159,9 +161,9 @@ Defina também as configurações de mapa de origem usando as propriedades do pr
 
 Estas configurações do projeto estão disponíveis.
 
-* **Gerar mapas de origem** (equivalente a **sourceMap** em *tsconfig.json*): Gera o arquivo *.map* correspondente.
-* **Especificar o diretório raiz de mapas de origem** (equivalente a **mapRoot** em *tsconfig.json*): Especifica a localização em que o depurador deve encontrar arquivos de mapa em vez das localizações geradas. Use esse sinalizador se os arquivos *.map* em tempo de execução precisarem estar em uma localização diferente dos arquivos .js. A localização especificada é inserida no mapa de origem para direcionar o depurador ao local em que se encontram os arquivos de mapa.
-* **Especificar o diretório raiz de arquivos TypeScript** (equivalente a **sourceRoot** em *tsconfig.json*): Especifica a localização em que o depurador deve encontrar arquivos TypeScript em vez das localizações de origem. Use esse sinalizador se os arquivos de origem em tempo de execução precisarem estar em uma localização diferente da localização em tempo de design. A localização especificada é inserida no mapa de origem para direcionar o depurador ao local em que se encontram os arquivos de origem.
+* **Gerar mapas de origem** (equivalente **a sourceMap** em *tsconfig. JSON*): gera o arquivo *. map* correspondente.
+* **Especificar o diretório raiz dos mapas de origem** (equivalente a **mapRoot** em *tsconfig. JSON*): especifica o local onde o depurador deve encontrar arquivos de mapa em vez dos locais gerados. Use esse sinalizador se os arquivos *.map* em tempo de execução precisarem estar em uma localização diferente dos arquivos .js. A localização especificada é inserida no mapa de origem para direcionar o depurador ao local em que se encontram os arquivos de mapa.
+* **Especificar o diretório raiz de arquivos TypeScript** (equivalente a **sourceRoot** em *tsconfig. JSON*): especifica o local em que o depurador deve localizar arquivos TypeScript em vez de locais de origem. Use esse sinalizador se os arquivos de origem em tempo de execução precisarem estar em uma localização diferente da localização em tempo de design. A localização especificada é inserida no mapa de origem para direcionar o depurador ao local em que se encontram os arquivos de origem.
 
 ## <a name="debug-javascript-in-dynamic-files-using-razor-aspnet"></a>Depurar JavaScript em arquivos dinâmicos usando o Razor (ASP.NET)
 
@@ -169,13 +171,13 @@ O Visual Studio fornece suporte de depuração somente para o Chrome e o Interne
 
 A depuração de arquivos gerados dinamicamente não é automática. Não é possível atingir automaticamente os pontos de interrupção em arquivos gerados com a sintaxe Razor (cshtml, vbhtml). Há duas abordagens que podem ser usadas para depurar esse tipo de arquivo:
 
-* **Colocar a instrução `debugger;` no local em que você deseja interromper**: Isso interrompe a execução do script dinâmico e inicia sua depuração imediatamente, durante a criação.
-* **Carregar a página e abrir o documento dinâmico no Visual Studio**: Você precisará abrir o arquivo dinâmico durante a depuração, definir o ponto de interrupção e atualizar a página para que esse método funcione. Dependendo se você estiver usando o Chrome ou o Internet Explorer, você encontrará o arquivo usando uma das seguintes estratégias:
+* **Coloque a instrução `debugger;` onde você deseja interromper**: isso faz com que o script dinâmico interrompa a execução e inicie a depuração imediatamente enquanto está sendo criado.
+* **Carregar a página e abrir o documento dinâmico no Visual Studio**: você precisará abrir o arquivo dinâmico durante a depuração, definir seu ponto de interrupção e atualizar a página para que esse método funcione. Dependendo se você estiver usando o Chrome ou o Internet Explorer, você encontrará o arquivo usando uma das seguintes estratégias:
 
    Para o Chrome, acesse **Gerenciador de Soluções > Documentos de Script > NomeDaPágina**.
 
     > [!NOTE]
-    > Ao usar o Chrome, você poderá receber a mensagem **Nenhum código-fonte está disponível entre as marcas \<script>**. Não se preocupe. Basta continuar a depuração.
+    > Ao usar o Chrome, você poderá receber a mensagem **Nenhum código-fonte está disponível entre as marcas \<script>** . Não se preocupe. Basta continuar a depuração.
 
    Para o Internet Explorer, acesse **Gerenciador de Soluções > Documentos de Script > Windows Internet Explorer > NomeDaPágina**.
 

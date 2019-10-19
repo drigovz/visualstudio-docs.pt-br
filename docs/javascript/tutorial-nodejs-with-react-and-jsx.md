@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 048e0409a5af77c512f0ee768d95d61259426fb9
-ms.sourcegitcommit: 9cfd3ef6c65f671a26322320818212a1ed5955fe
-ms.translationtype: HT
+ms.openlocfilehash: 5ec01bdc1f27d2ca7c8b2d20c901a224cbdbf19d
+ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68533377"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72589160"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>Tutorial: Criar um aplicativo Node.js e React no Visual Studio
 
@@ -55,7 +55,7 @@ O JSX é uma extensão da sintaxe de JavaScript, normalmente usada com o React p
 
 O webpack empacota arquivos JavaScript para que eles possam ser executados em um navegador. Ele também pode transformar ou empacotar outros recursos e ativos. Geralmente, é usado para especificar um compilador, como Babel ou TypeScript, para transcompilar código JSX ou TypeScript para JavaScript simples.
 
-## <a name="prerequisites"></a>Pré-requisitos
+## <a name="prerequisites"></a>Prerequisites
 
 * Você precisa ter o Visual Studio instalado e a carga de trabalho de desenvolvimento de Node.js.
 
@@ -90,7 +90,7 @@ Primeiro, crie um projeto de aplicativo Web Node.js.
     ::: moniker range="vs-2017"
     Na barra de menus superior, escolha **Arquivo** > **Novo** > **Projeto**. No painel esquerdo da caixa de diálogo **Novo Projeto**, expanda **JavaScript** e escolha **Node.js**. No painel central, escolha **Aplicativo Web Node.js em Branco**, digite o nome **NodejsWebAppBlank** e escolha **OK**.
     ::: moniker-end
-    Se não vir o modelo de projeto **Aplicativo Web Node.js em Branco**, instale a carga de trabalho de **desenvolvimento de Node.js**. Confira instruções detalhadas nos. [Pré-requisitos](#prerequisites).
+    Se não vir o modelo de projeto **Aplicativo Web Node.js em Branco**, instale a carga de trabalho de **desenvolvimento de Node.js**. Confira instruções detalhadas nos [Pré-requisitos](#prerequisites).
 
     O Visual Studio cria a nova solução e abre seu projeto.
 
@@ -412,7 +412,9 @@ Na seção anterior, você anexou o depurador ao código do Node.js do lado do s
 
     ![Anexar ao processo](../javascript/media/tutorial-nodejs-react-attach-to-process.png)
 
+    ::: moniker range="vs-2017"
     Você sabe que o depurador foi anexado corretamente quando o Explorador do DOM e o Console do JavaScript são abertos no Visual Studio. Essas ferramentas de depuração são semelhantes às Ferramentas para Desenvolvedores do Chrome e às Ferramentas F12 do Microsoft Edge.
+    ::: moniker-end
 
     > [!NOTE]
     > Se o depurador não for anexado e a mensagem "Não é possível anexar ao processo. Uma operação não é válida no estado atual.", use o Gerenciador de Tarefas para fechar todas as instâncias do Chrome antes de iniciar o Chrome no modo de depuração. As extensões do Chrome podem estar em execução e impedindo o modo de depuração completa.

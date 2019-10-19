@@ -1,7 +1,7 @@
 ---
-title: Importar um projeto do XCode | Microsoft Docs
+title: Importar um projeto do Xcode | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/17/2019
 ms.topic: conceptual
 ms.assetid: aa4b8161-d98f-4a1a-9db3-520133bfc82f
 ms.technology: vs-ide-mobile
@@ -10,69 +10,75 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: 2bc5c60b9f93a0eba9cbbf2456803929f1bff3e9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 62161b612d6c4583cd2206c3d18dc6606d2d9f0b
+ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62819809"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72588887"
 ---
-# <a name="import-an-xcode-project"></a>Importar um projeto do XCode
-O Microsoft Visual C++ para Desenvolvimento Móvel Multiplataforma inclui o suporte para mover seus projetos XCode para o Visual Studio, onde você pode criar bibliotecas multiplataforma e compartilhar o código com outros projetos. O assistente Importar do XCode simplifica o processo de importação de projetos e divisão do código C++ nos destinos XCode para serem usados como uma biblioteca estática ou projeto de código compartilhado. Você pode gerenciar seu código específico do iOS no Visual Studio e ainda usar o XCode para fazer storyboards e build. Para obter informações sobre como mover facilmente código entre o Visual Studio e o XCode, consulte Mover as alterações entre o XCode e o Visual Studio.
+# <a name="import-an-xcode-project"></a>Importar um projeto do Xcode
 
-## <a name="use-the-import-from-xcode-wizard"></a>Usar o assistente Importar do Xcode
- Este tópico mostra como mover um projeto do XCode para o Visual Studio para aproveitar as soluções multiplataforma e o compartilhamento de código. Como pré-requisito, você deve emparelhar seu Mac com o Visual Studio para poder importar, exportar e compilar seu projeto. Para obter instruções sobre como configurar o emparelhamento, confira [Instalar e configurar ferramentas de build usando o iOS](../cross-platform/install-and-configure-tools-to-build-using-ios.md). Você também deve compartilhar seu projeto XCode pela rede ou movê-lo para o computador do Visual Studio para usar o assistente Importar do XCode.
+As ferramentas do Visual Studio para desenvolvimento móvel de plataforma cruzada com C++ o incluem suporte para mover seus projetos do Xcode para o Visual Studio, onde você pode criar bibliotecas de plataforma cruzada e compartilhar código com outros projetos. O assistente de importação do Xcode simplifica o processo de importação de projetos e divisão do C++ código em seus destinos do Xcode para uso como uma biblioteca estática ou um projeto de código compartilhado. Você pode gerenciar seu código específico do iOS no Visual Studio e ainda usar o Xcode para fazer storyboards e compilações. Para obter informações sobre como mover facilmente o código para frente e para trás entre o Visual Studio e o Xcode, consulte [sincronizar alterações entre o Xcode e o Visual Studio](sync-changes-between-xcode-and-visual-studio.md).
 
-#### <a name="import-from-xcode"></a>Importar do XCode
+## <a name="use-the-import-from-xcode-wizard"></a>Usar o assistente de importação do Xcode
 
-1. No menu **Arquivo**, escolha **Novo**, **Importar**, **Importar do XCode**. Isso inicia a caixa de diálogo do assistente **Importar do XCode**.
+Este artigo mostra como mover um projeto do Xcode para o Visual Studio, para aproveitar as vantagens do compartilhamento de código e das soluções entre plataformas. Como pré-requisito, você deve emparelhar seu Mac com o Visual Studio para importar, exportar e compilar seu projeto. Para obter instruções sobre como configurar o emparelhamento, confira [Instalar e configurar ferramentas de build usando o iOS](../cross-platform/install-and-configure-tools-to-build-using-ios.md). Você também deve compartilhar seu projeto do Xcode pela rede ou movê-lo para o computador do Visual Studio, para usar o assistente de importação do Xcode.
 
-    ![Escolha o projeto de destino do XCode para importar](../cross-platform/media/cppmdd_u2_importxcode_choose.PNG "CPPMDD_U2_ImportXCode_Choose")
+### <a name="import-from-xcode"></a>Importar do Xcode
 
-2. No painel **Escolher um projeto**, escolha o botão Procurar para selecionar um arquivo *.pbxproj* do Xcode. Navegue até o arquivo de projeto na caixa de diálogo **Selecionar arquivo de projeto do XCode** e escolha **Abrir**.
+1. No menu **arquivo** , escolha **novo**, **importar**, **Importar do Xcode**. Esse comando inicia a caixa de diálogo **Importar do assistente do Xcode** .
 
-    ![Selecione um arquivo de projeto na caixa de diálogo Selecionar arquivo de projeto do XCode](../cross-platform/media/cppmdd_u2_importxcode_browse.PNG "CPPMDD_U2_ImportXCode_Browse")
+   ![Escolha o projeto de destino do Xcode para importar](../cross-platform/media/cppmdd_u2_importxcode_choose.PNG "Escolha o projeto de destino do Xcode para importar")
 
-    No assistente Importar do XCode, escolha **Avançar**.
+1. No painel **escolher um projeto** , escolha o botão procurar para selecionar um arquivo Xcode *. pbxproj* . Navegue até o arquivo de projeto na caixa de diálogo **Selecionar arquivo de projeto do Xcode** e, em seguida, escolha **abrir**.
 
-3. No painel **Destinos**, escolha os destinos do projeto do XCode para importar nos projetos do Visual Studio. Os destinos do XCode são semelhantes aos projetos do Visual Studio, a maioria é uma coleção de códigos e recursos que produzem um binário. O assistente Importar do XCode permite apenas a importação de destinos que produzem um binário, mas não uma biblioteca estática, como destinos. Os destinos de biblioteca estática do XCode são o assunto da próxima etapa.
+   ![Selecione um arquivo de projeto na caixa de diálogo Selecionar arquivo de projeto do Xcode](../cross-platform/media/cppmdd_u2_importxcode_browse.PNG "Selecione um arquivo de projeto na caixa de diálogo Selecionar arquivo de projeto do Xcode")
 
-    ![Painel Destinos do assistente Importar do XCode](../cross-platform/media/cppmdd_u2_importxcode_destination.jpg "CPPMDD_U2_ImportXCode_Destination")
+   No assistente importar do Xcode, escolha **Avançar**.
 
-    Para cada destino selecionado em **Destinos para importar**, o assistente detecta automaticamente os arquivos de código C++ que podem ser divididos em um projeto de biblioteca estática separado e os coloca na seção **Itens de projeto C++**. Outros recursos e código são deixados na seção **Itens do projeto do XCode**. Elas se tornam projetos de aplicativo e biblioteca estática separados no Visual Studio quando o assistente conclui o processo de importação. Por padrão, os destinos de estrutura e unidade de teste não são separados em projetos diferentes no assistente.
+1. No painel **destinos de destino** , escolha os destinos do projeto Xcode para importar para projetos do Visual Studio. Os destinos do Xcode são semelhantes aos projetos do Visual Studio; a maioria é uma coleção de código e recursos que produzem um binário. O assistente de importação do Xcode permite apenas a importação de destinos que produzem um binário, mas não uma biblioteca estática, como destinos de destino. Os destinos da biblioteca estática do Xcode são o assunto da próxima etapa.
 
-    Para alterar quais arquivos estão em cada projeto, use os botões para cima e para baixo. Quando estiver satisfeito com os arquivos em cada projeto, escolha **Avançar** para continuar.
+   ![Painel importar de destinos de destino do assistente do Xcode](../cross-platform/media/cppmdd_u2_importxcode_destination.jpg "Painel importar de destinos de destino do assistente do Xcode")
 
-4. No painel **Destinos da biblioteca**, escolha quais destinos da biblioteca estática do projeto do XCode para importar nos projetos do Visual Studio. Nesse painel, você pode escolher quais arquivos são colocados em um projeto de Código Compartilhado e quais são colocados em um projeto de biblioteca estática. Em cada um dos destinos na lista **Destinos para importar**, você pode controlar quais arquivos são colocados nos **Itens de projeto de Código Compartilhado** e nos **Itens de projeto de Biblioteca Estática** usando os botões para cima e para baixo.
+   Para cada destino selecionado em **Destinos para importar**, o assistente detecta automaticamente os arquivos de código C++ que podem ser divididos em um projeto de biblioteca estática separado e os coloca na seção **Itens de projeto C++** . Outros códigos e recursos são deixados na seção **itens de projeto do Xcode** . Elas se tornam projetos de aplicativo e biblioteca estática separados no Visual Studio quando o assistente conclui o processo de importação. Por padrão, os destinos de teste de unidade e de estrutura não são divididos em projetos separados pelo assistente.
 
-    ![Painel Destinos da Biblioteca de Importar do XCode](../cross-platform/media/cppmdd_u2_importxcode_library.jpg "CPPMDD_U2_ImportXCode_Library")
+   Para alterar quais arquivos estão em cada projeto, use os botões para cima e para baixo. Quando estiver satisfeito com os arquivos em cada projeto, escolha **Avançar** para continuar.
 
-    Um projeto de código compartilhado é uma maneira de compartilhar um conjunto de arquivos de código-fonte entre projetos no Visual Studio. O código é compilado como parte do projeto que o inclui, não como um projeto independente. Como os projetos que incluem o código compartilhado podem ter configurações e arquiteturas diferentes, essa é a melhor maneira de fornecer um único projeto que contém o código que pode ser compilado para muitos tipos de plataforma.
+1. No painel **destinos de biblioteca** , escolha qual biblioteca estática é direcionada do projeto Xcode para importar para projetos do Visual Studio. Nesse painel, você pode escolher quais arquivos incluir em um projeto de código compartilhado e qual deles deve ser colocado em um projeto de biblioteca estática. Em cada um dos destinos na lista **destinos para importar** , você pode controlar os arquivos a serem colocados nos **itens do projeto de código compartilhado** e os **itens do projeto de biblioteca estática** usando os botões para cima e para baixo.
 
-    Quando estiver satisfeito com os arquivos em cada projeto, escolha **Avançar** para continuar.
+   ![Importar do painel destinos da biblioteca do Xcode](../cross-platform/media/cppmdd_u2_importxcode_library.jpg "Importar do painel destinos da biblioteca do Xcode")
 
-5. O painel **Propriedades Globais** pode ser usado para definir um caminho de pesquisa de estrutura e um caminho de pesquisa de cabeçalho de inclusão para todos os projetos de iOS no Visual Studio. O Visual Studio usa esses caminhos para navegação no código-fonte e para o IntelliSense. Esses caminhos globais são úteis quando você cria projetos de iOS que usam um conjunto comum de cabeçalhos e estruturas.
+   Um projeto de código compartilhado é uma maneira de compartilhar um conjunto de arquivos de origem entre projetos no Visual Studio. O código é compilado como parte do projeto que o inclui, não como um projeto independente. Os projetos que incluem o código compartilhado podem ter diferentes arquiteturas e configurações. Um projeto de código compartilhado é a melhor maneira de fornecer um único projeto que contém código que pode ser criado para muitos tipos de plataformas.
 
-    ![Painel Propriedades Globais de Importar do XCode](../cross-platform/media/cppmdd_u2_importxcode_global.jpg "CPPMDD_U2_ImportXCode_Global")
+   Quando estiver satisfeito com os arquivos em cada projeto, escolha **Avançar** para continuar.
 
-    Esses caminhos globais também podem ser definidos no Visual Studio na caixa de diálogo **Opções**. Para encontrá-los, no menu **Ferramentas**, selecione **Opções**. Na caixa de diálogo **Opções**, expanda **Plataforma Cruzada**, **C++**, **iOS**, **Propriedades Globais**.
+1. Use o painel **propriedades globais** para definir um caminho de pesquisa de estrutura e um caminho de pesquisa de cabeçalho de inclusão para todos os projetos do Ios no Visual Studio. O Visual Studio usa esses caminhos para navegação no código-fonte e para o IntelliSense. Esses caminhos globais são úteis quando você cria projetos de iOS que usam um conjunto comum de cabeçalhos e estruturas.
 
-    Escolha **Avançar** para continuar.
+   ![Importar do painel de propriedades globais do Xcode](../cross-platform/media/cppmdd_u2_importxcode_global.jpg "Importar do painel de propriedades globais do Xcode")
 
-6. O painel **Estruturas** é usado para configurar os caminhos usados pelo Visual Studio para navegar e IntelliSense para seu projeto. Os caminhos devem estar acessíveis para o Visual Studio para cada estrutura referenciada pelo seu projeto XCode. O assistente verifica as referências de estrutura nos projetos do XCode e mostra se o Visual Studio pode encontrar a estrutura. Qualquer caminho que você já configurou nas Propriedades Globais deve ser descoberto pelo Visual Studio. As exceções são listadas na lista Estruturas. Para cada estrutura listada com um X, forneça um caminho acessível do computador para o Visual Studio localizar a estrutura. Use o botão Procurar **...** para usar uma caixa de diálogo **Selecionar Pasta** para localizar o caminho. O caminho da estrutura pode ser para uma cópia local ou para um compartilhamento acessível pela rede no Mac.
+   Esses caminhos globais também podem ser definidos no Visual Studio na caixa de diálogo **Opções**. Para encontrá-los, no menu **Ferramentas**, selecione **Opções**. Na caixa de diálogo **Opções** , expanda **várias plataformas**  > **C++**  > **Ios**  > **propriedades globais**.
 
-    ![Painel Estruturas de Importar do XCode](../cross-platform/media/cppmdd_u2_importxcode_frameworks.jpg "CPPMDD_U2_ImportXCode_Frameworks")
+   Escolha **Avançar** para continuar.
 
-    Escolha **Avançar** para continuar.
+1. O painel **Estruturas** é usado para configurar os caminhos usados pelo Visual Studio para navegar e IntelliSense para seu projeto. Os caminhos devem ser acessíveis para o Visual Studio para cada estrutura referenciada por seu projeto do Xcode. O assistente verifica as referências de estrutura nos projetos do Xcode e exibe se o Visual Studio pode encontrar a estrutura. Qualquer caminho que você já configurou nas Propriedades Globais deve ser descoberto pelo Visual Studio. As exceções são listadas na lista Estruturas. Para cada estrutura listada com um X, forneça um caminho acessível do computador para o Visual Studio localizar a estrutura. Use o botão Procurar **...** para usar uma caixa de diálogo **Selecionar Pasta** para localizar o caminho. O caminho da estrutura pode ser para uma cópia local ou para um compartilhamento acessível pela rede no Mac.
 
-7. O painel **Configurações do Projeto** permite que você altere as configurações de caminho de pesquisa de cabeçalho de inclusão e de estrutura para cada projeto que o assistente cria. Use este painel para definir caminhos específicos do projeto que são diferentes das configurações globais.
+   ![Importar do painel do Xcode frameworks](../cross-platform/media/cppmdd_u2_importxcode_frameworks.jpg "Importar do painel do Xcode frameworks")
 
-    Para definir um caminho para um projeto específico, na lista suspensa **Projeto de destino**, selecione o arquivo de projeto e defina os valores nos controles **Caminho de Pesquisa de Estrutura** e **Incluir Caminho de Pesquisa de Cabeçalho**. Use o botão Procurar **...** ao lado de cada controle para usar uma caixa de diálogo **Selecionar Pasta** para localizar o caminho.
+   Escolha **Avançar** para continuar.
 
-    ![Painel Projetos de Importar do XCode](../cross-platform/media/cppmdd_u2_importxcode_projects.jpg "CPPMDD_U2_ImportXCode_Projects")
+1. O painel **Configurações do Projeto** permite que você altere as configurações de caminho de pesquisa de cabeçalho de inclusão e de estrutura para cada projeto que o assistente cria. Use este painel para definir caminhos específicos do projeto que são diferentes das configurações globais.
 
-    Se nenhum Mac remoto tiver sido emparelhado com esse computador no Visual Studio, o link **Configurar um Computador Remoto** será exibido. Para obter instruções sobre como configurar o emparelhamento, confira [Instalar e configurar ferramentas de build usando o iOS](../cross-platform/install-and-configure-tools-to-build-using-ios.md).
+   Para definir um caminho para um projeto específico, na lista suspensa **projeto de destino** , selecione o arquivo de projeto. Em seguida, defina os valores no **caminho de pesquisa do Framework** e inclua controles de **caminho de pesquisa de cabeçalho** . Use o botão Procurar **...** ao lado de cada controle para usar uma caixa de diálogo **Selecionar Pasta** para localizar o caminho.
 
-    Para importar o projeto XCode usando as configurações do assistente, escolha **Importar**.
+   ![Importar do painel de projetos do Xcode](../cross-platform/media/cppmdd_u2_importxcode_projects.jpg "Importar do painel de projetos do Xcode")
 
-   O assistente Importar do XCode cria projetos no Visual Studio que correspondem aos destinos de projeto XCode selecionados. O código que pode ser compartilhado com outros projetos do C++ é dividido em projetos de biblioteca estática e código compartilhado separados. O código restante é colocado em projetos de aplicativo e biblioteca iOS que podem ser compilados remotamente pelo Visual Studio. Para obter mais informações sobre como mover o código entre o Visual Studio e o Xcode, confira [Sincronizar alterações entre o Xcode e o Visual Studio](../cross-platform/sync-changes-between-xcode-and-visual-studio.md).
+   Se nenhum Mac remoto tiver sido emparelhado com esse computador no Visual Studio, o link **Configurar um Computador Remoto** será exibido. Para obter instruções sobre como configurar o emparelhamento, confira [Instalar e configurar ferramentas de build usando o iOS](../cross-platform/install-and-configure-tools-to-build-using-ios.md).
+
+   Para importar o projeto do Xcode usando as configurações do assistente, escolha **importar**.
+
+   O assistente de importação do Xcode cria projetos no Visual Studio que correspondem aos destinos do projeto do Xcode selecionado. O código que pode ser compartilhado com outros projetos do C++ é dividido em projetos de biblioteca estática e código compartilhado separados. O código restante é colocado em projetos de aplicativo e biblioteca iOS que podem ser compilados remotamente pelo Visual Studio. Para obter mais informações sobre como mover o código entre o Visual Studio e o Xcode, consulte [sincronizar alterações entre o Xcode e o Visual Studio](../cross-platform/sync-changes-between-xcode-and-visual-studio.md).
+
+## <a name="see-also"></a>Consulte também
+
+- [Instalar o desenvolvimento móvel de plataforma cruzada com oC++](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md)
