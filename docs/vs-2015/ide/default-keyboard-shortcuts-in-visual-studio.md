@@ -12,15 +12,15 @@ helpviewer_keywords:
 - keyboard shortcuts
 ms.assetid: c2c64648-00f8-4e48-a8a0-96c67cfd968c
 caps.latest.revision: 59
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 129fa00681fcd3a9f3b19370bb553fcd5146e46e
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 9bfd13bda3e3d7ba416772123ac59ff0136a3725
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65701090"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72665817"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Atalhos de teclado padrão no Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -1159,5 +1159,5 @@ Você pode acessar mais facilmente uma variedade de comandos e janelas no Visual
 |XsdDesigner.ShowGraphView|Ctrl+3|
 |XsdDesigner.ShowStartView|Ctrl+1|
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
  [Editor de imagens para ícones](https://msdn.microsoft.com/library/586d2b8b-0348-4883-a85d-1ff0ddbf14dd) [Como usar o IntelliSense](../ide/using-intellisense.md)
