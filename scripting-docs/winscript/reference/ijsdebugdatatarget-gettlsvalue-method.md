@@ -1,5 +1,5 @@
 ---
-title: 'Método ijsdebugdatatarget:: Gettlsvalue | Microsoft Docs'
+title: 'Método IJsDebugDataTarget:: GetTlsValue | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,15 +15,15 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 458aaab05f274983fdaf69c6e702502974665403
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: eecf9acf370656d5310a03d68ed74e10671a0bc2
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62582804"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577601"
 ---
 # <a name="ijsdebugdatatargetgettlsvalue-method"></a>Método IJsDebugDataTarget::GetTlsValue
-Para o thread que está sendo depurado, recupera o valor no slot de armazenamento local (TLS) de thread para o índice TLS especificado.  
+Para o thread que está sendo depurado, o recupera o valor no slot de armazenamento local do thread (TLS) para o índice TLS especificado.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -37,21 +37,21 @@ HRESULT GetTlsValue(
   
 #### <a name="parameters"></a>Parâmetros  
  `threadId`  
- [in] Em execução no processo de destino para ler a partir do thread.  
+ no Thread em execução no processo de destino para ler.  
   
  `tlsIndex`  
- [in] O índice TLS que foi atribuído quando o processo de destino chamou a função TlsAlloc.  
+ no O índice TLS que foi alocado quando o processo de destino chamou a função TlsAlloc.  
   
  `pValue`  
- [out] O valor do ponteiro dimensionado que foi armazenado no encaixe de TLS do thread. Se o thread de destino for de 32 bits, 32-bits superiores desse valor será zero.  
+ fora O valor do tamanho do ponteiro que foi armazenado no slot TLS do thread. Se o thread-alvo for de 32 bits, os 32 superiores desse valor serão zero.  
   
-## <a name="return-value"></a>Valor de retorno  
+## <a name="return-value"></a>Valor retornado  
   
 ## <a name="remarks"></a>Comentários  
  Cada thread de um processo tem seu próprio slot para cada índice TLS.  
   
 ## <a name="requirements"></a>Requisitos  
- **Cabeçalho:** jscript9diag.h  
+ **Cabeçalho:** jscript9diag. h  
   
 ## <a name="see-also"></a>Consulte também  
  [Interface IJsDebugDataTarget](../../winscript/reference/ijsdebugdatatarget-interface.md)

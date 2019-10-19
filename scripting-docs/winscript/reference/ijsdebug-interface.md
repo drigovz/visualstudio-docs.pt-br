@@ -11,15 +11,15 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 20d755250960ad2f5b22cc7b645ad24b91c4875f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 46a09c4bbf5ce97441f9e60c8832854356ad48d4
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62583640"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577755"
 ---
 # <a name="ijsdebug-interface"></a>Interface IJsDebug
-Ponto de entrada para a depuração de JavaScript.  
+Ponto de entrada para depuração de JavaScript.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -31,12 +31,12 @@ IJsDebug : public IUnknown;
   
 ### <a name="public-methods"></a>Métodos Públicos  
   
-|Nome|Descrição|  
+|Name|Descrição|  
 |----------|-----------------|  
 |[Método IJsDebug::OpenVirtualProcess](../../winscript/reference/ijsdebug-openvirtualprocess-method.md)|Método de fábrica usado para criar um novo objeto de processo virtual.|  
   
 ## <a name="requirements"></a>Requisitos  
- **Cabeçalho:** jscript9diag.h  
+ **Cabeçalho:** jscript9diag. h  
   
 ## <a name="see-also"></a>Consulte também  
  [Referência de interfaces de script do Windows](../../winscript/reference/windows-script-interfaces-reference.md)

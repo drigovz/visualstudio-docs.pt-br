@@ -1,5 +1,5 @@
 ---
-title: 'Método ijsdebugbreakpoint:: IsEnabled | Microsoft Docs'
+title: 'Método IJsDebugBreakPoint:: IsEnabled | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,12 +15,12 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b99df17f73896b4dd04481315b04e1672a56285a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 25d66b7f8691a74eac77e9a90ec610fa21ec688e
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62583087"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577665"
 ---
 # <a name="ijsdebugbreakpointisenabled-method"></a>Método IJsDebugBreakPoint::IsEnabled
 Determina se o ponto de interrupção está habilitado.  
@@ -35,15 +35,15 @@ HRESULT IsEnabled(
   
 #### <a name="parameters"></a>Parâmetros  
  `pIsEnabled`  
- [out] Retorna VERDADEIRO se o ponto de interrupção estiver habilitado; Caso contrário, retorna false.  
+ fora Retornará true se o ponto de interrupção estiver habilitado; caso contrário, retornará false.  
   
-## <a name="return-value"></a>Valor de retorno  
+## <a name="return-value"></a>Valor retornado  
   
 ## <a name="remarks"></a>Comentários  
- Retornará E_UNEXPECTED se chamado em um ponto de interrupção excluído.  
+ Retorna E_UNEXPECTED se chamado em um ponto de interrupção excluído.  
   
 ## <a name="requirements"></a>Requisitos  
- **Cabeçalho:** jscript9diag.h  
+ **Cabeçalho:** jscript9diag. h  
   
 ## <a name="see-also"></a>Consulte também  
  [Interface IJsDebugBreakPoint](../../winscript/reference/ijsdebugbreakpoint-interface.md)

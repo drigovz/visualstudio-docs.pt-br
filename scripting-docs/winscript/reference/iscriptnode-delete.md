@@ -1,5 +1,5 @@
 ---
-title: IScriptNode::Delete | Microsoft Docs
+title: IScriptNode::D excluir | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 41bf932b242865b1deac4c61db400f973bd0b00c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3c3522e5543d333443de5b1287c994bf29de51c9
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62787154"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576299"
 ---
 # <a name="iscriptnodedelete"></a>IScriptNode::Delete
-Exclui essa árvore de objeto.  
+Exclui esta árvore de objetos.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -36,7 +36,7 @@ HRESULT Delete();
 #### <a name="parameters"></a>Parâmetros  
  O método não usa parâmetros.  
   
-## <a name="return-value"></a>Valor de retorno  
+## <a name="return-value"></a>Valor retornado  
  Um `HRESULT`. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.  
   
 |Valor|Descrição|  
@@ -44,7 +44,7 @@ HRESULT Delete();
 |`S_OK`|O método foi bem-sucedido.|  
   
 ## <a name="remarks"></a>Comentários  
- Após o `Delete` método é chamado, o [IScriptNode::Alive](../../winscript/reference/iscriptnode-alive.md) método deve indicar esse nó do script não está ativo.  
+ Depois que o método `Delete` for chamado, o método [IScriptNode:: Alive](../../winscript/reference/iscriptnode-alive.md) deverá indicar que o nó de script não está ativo.  
   
 ## <a name="see-also"></a>Consulte também  
  [IScriptNode Interface](../../winscript/reference/iscriptnode-interface.md)

@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugExpressionContexts::Next | Microsoft Docs
+title: 'IEnumDebugExpressionContexts:: Next | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5128ba9ac90fc99cfec81b2c81711547947bfa49
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 95314c7497a9b11be51d1e64df0310323300d281
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62807345"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577144"
 ---
 # <a name="ienumdebugexpressioncontextsnext"></a>IEnumDebugExpressionContexts::Next
 Recupera um número especificado de segmentos na sequência de enumeração.  
@@ -39,15 +39,15 @@ HRESULT Next(
   
 #### <a name="parameters"></a>Parâmetros  
  `celt`  
- [in] O número de segmentos para recuperar.  
+ no O número de segmentos a serem recuperados.  
   
  `ppdec`  
- [out] Retorna uma matriz de `IDebugExpressionContext` interfaces que representa os segmentos que estão sendo recuperados.  
+ fora Retorna uma matriz de interfaces `IDebugExpressionContext` que representa os segmentos que estão sendo recuperados.  
   
  `pceltFetched`  
- [out] O número real de segmentos buscadas pelo enumerador.  
+ fora O número real de segmentos buscados pelo enumerador.  
   
-## <a name="return-value"></a>Valor de retorno  
+## <a name="return-value"></a>Valor retornado  
  O método retorna um `HRESULT`. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.  
   
 |Valor|Descrição|  
