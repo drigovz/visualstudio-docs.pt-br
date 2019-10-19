@@ -7,15 +7,15 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.assetid: ffb580a1-8b5d-48f5-b811-87f8036f50ea
 caps.latest.revision: 12
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 0e1fc8e9bcb6f70a2665303eb6cac353a3f87bd9
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: a71a045661c48fd36733ecd8d2266470667a5c35
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435091"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72670589"
 ---
 # <a name="how-to-unlock-visual-studio"></a>Como desbloquear o Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ Você pode avaliar o Visual Studio gratuitamente por até 30 dias. Ao entrar no 
 
 ## <a name="to-unlock-visual-studio-with-a-product-key"></a>Para desbloquear o Visual Studio com uma chave do produto (Product Key)
 
-1. Selecione **Arquivo > Configurações de Conta** para abrir a caixa de diálogo Configurações de Conta e clique no link "**Licenciar com uma Chave do Produto (Product Key)**".
+1. Selecione **Arquivo > Configurações de Conta** para abrir a caixa de diálogo Configurações de Conta e clique no link "**Licenciar com uma Chave do Produto (Product Key)** ".
 
 2. Insira a chave do produto (Product Key) no espaço fornecido.
 
@@ -50,7 +50,7 @@ Você pode avaliar o Visual Studio gratuitamente por até 30 dias. Ao entrar no 
 ### <a name="updating-stale-licenses"></a>Como atualizar licenças obsoletas
  Talvez você tenha visto a mensagem abaixo indicando que sua licença ficará obsoleta no Visual Studio.
 
- ![Caixa de diálogo de informações de usuário do Visual Studio](../ide/media/vs2013-userinfo.png "VS2013_UserInfo")
+ ![Caixa de diálogo de informações do usuário do Visual Studio](../ide/media/vs2013-userinfo.png "|::ref1::|")
 
  Essa mensagem indica que embora sua assinatura ainda possa ser válida, o token de licença que o Visual Studio usa para manter sua assinatura atualizada ainda não foi atualizado e se tornou obsoleto devido a um dos motivos a seguir:
 
@@ -72,5 +72,5 @@ Você pode avaliar o Visual Studio gratuitamente por até 30 dias. Ao entrar no 
 
 2. Se você tiver outra assinatura associada a uma conta diferente, adicione essa conta à lista Todas as Contas no lado esquerdo da caixa de diálogo Arquivo > Configurações de Conta clicando no link “Adicionar uma conta...” .
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
  [Signing in to Visual Studio](../ide/signing-in-to-visual-studio.md) (Entrando no Visual Studio)
