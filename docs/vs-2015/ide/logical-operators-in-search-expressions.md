@@ -9,31 +9,30 @@ helpviewer_keywords:
 - logical operators in search [Help Viewer 2.0]
 ms.assetid: 0c38ae7d-3e20-4d47-a020-9677cd285916
 caps.latest.revision: 11
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 30a33a434540fded8daab0628d0bd6dd7fb0ff38
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 3d56f2dfc2924008a6be293fe1498f0ffe32abaf
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63412262"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72651436"
 ---
 # <a name="logical-operators-in-search-expressions"></a>Operadores lógicos em expressões de pesquisa
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Usando operadores lógicos, você pode refinar a pesquisa de conteúdo criando expressões de pesquisa mais complicadas desde mais simples. Como mostra a tabela a seguir, os operadores lógicos especificam como vários termos de pesquisa devem ser combinados em uma consulta de pesquisa.  
-  
+Usando operadores lógicos, você pode refinar a pesquisa de conteúdo criando expressões de pesquisa mais complicadas desde mais simples. Como mostra a tabela a seguir, os operadores lógicos especificam como vários termos de pesquisa devem ser combinados em uma consulta de pesquisa.
+
 > [!IMPORTANT]
-> Você deve inserir os operadores lógicos em letras maiúsculas para o mecanismo de pesquisa reconhecê-los.  
-  
-|Para pesquisar|Use|Exemplo|Resultado|  
-|-------------------|---------|-------------|------------|  
-|Ambos os termos no mesmo tópico|AND|dib AND paleta|Tópicos que contêm "dib" e "paleta".|  
-|Um dos dois termos em um tópico|OU|varredura OR vetor|Tópicos que contêm "varredura" ou "vetor".|  
-|Primeiro termo sem um segundo termo no mesmo tópico|NOT|"operating system" NOT DOS|Tópicos que contêm "sistema operacional", mas não "DOS".|  
-|Os dois termos, próximos em um tópico|PRÓXIMO|usuário NEAR kernel|Tópicos que contêm "usuário" bastante próximo de "kernel".|  
-  
-## <a name="see-also"></a>Consulte também  
- [Dicas de pesquisa de texto completo](../ide/full-text-search-tips.md)   
- [Localizar informações](../ide/locate-information.md)
+> Você deve inserir os operadores lógicos em letras maiúsculas para o mecanismo de pesquisa reconhecê-los.
+
+|Para pesquisar|Use|Exemplo|Resultado|
+|-------------------|---------|-------------|------------|
+|Ambos os termos no mesmo tópico|AND|dib AND paleta|Tópicos que contêm "dib" e "paleta".|
+|Um dos dois termos em um tópico|OU|varredura OR vetor|Tópicos que contêm "varredura" ou "vetor".|
+|Primeiro termo sem um segundo termo no mesmo tópico|NOT|"operating system" NOT DOS|Tópicos que contêm "sistema operacional", mas não "DOS".|
+|Os dois termos, próximos em um tópico|PRÓXIMO|usuário NEAR kernel|Tópicos que contêm "usuário" bastante próximo de "kernel".|
+
+## <a name="see-also"></a>Veja também
+ [Dicas de pesquisa de texto completo](../ide/full-text-search-tips.md) [localizar informações](../ide/locate-information.md)
