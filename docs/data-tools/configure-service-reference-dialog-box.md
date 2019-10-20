@@ -9,17 +9,17 @@ helpviewer_keywords:
 - service references [Visual Studio], configuring behavior
 - Configure Service Reference dialog box
 ms.assetid: 25e4c36b-2db6-4e71-9010-b7068255d09d
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 1cf4a809c1353f2fe30383a312f65b6c623083db
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 033663c347a39c63a76bddd10625bdc86cec1f00
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68925679"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72642853"
 ---
 # <a name="configure-service-reference-dialog-box"></a>Caixa de diálogo Configurar Referência de Serviço
 
@@ -33,13 +33,13 @@ Para acessar a caixa de diálogo **Configurar referência de serviço** , clique
 
 - Para alterar o nível de acesso para classes em um cliente WCF, selecione uma palavra-chave de nível de acesso na lista **nível de acesso para classes geradas** .
 
-- Para chamar os métodos de um serviço WCF de forma assíncrona, marque a caixa de seleção **gerar operações** assíncronas.
+- Para chamar os métodos de um serviço WCF de forma assíncrona, marque a caixa de seleção **gerar operações assíncronas** .
 
 - Para gerar tipos de contrato de mensagem em um cliente WCF, marque a caixa de seleção **sempre gerar contratos de mensagem** .
 
 - Para especificar os tipos de coleção de lista ou dicionário para um cliente WCF, selecione os tipos nas listas **tipo de coleção** e tipo de **coleção de dicionário** .
 
-- Para desabilitar o compartilhamento de tipo, desmarque a caixa de seleção reutilizar os **tipos em assemblies referenciados** . Para habilitar o compartilhamento de tipo para um subconjunto de assemblies referenciados, marque a caixa de seleção reutilizar os **tipos em assemblies referenciados** , selecione reutilizar os **tipos em assemblies referenciados especificados**e selecione as referências desejadas na **referência lista de assemblies**.
+- Para desabilitar o compartilhamento de tipo, desmarque a caixa de seleção **reutilizar os tipos em assemblies referenciados** . Para habilitar o compartilhamento de tipo para um subconjunto de assemblies referenciados, marque a caixa de seleção **reutilizar os tipos em assemblies referenciados** , selecione **reutilizar os tipos em assemblies referenciados especificados**e selecione as referências desejadas na **referência lista de assemblies**.
 
 ## <a name="uielement-list"></a>Lista UIElement
 
@@ -55,7 +55,7 @@ Atualiza o endereço Web em que uma referência de serviço procura um serviço.
 Determina o nível de acesso do código para classes de cliente WCF.
 
 > [!NOTE]
-> Para projetos de site, essa opção é sempre definida `Public` como e não pode ser alterada. Para obter mais informações, consulte [Solucionando problemas de referências de serviço](../data-tools/troubleshooting-service-references.md).
+> Para projetos de site, essa opção é sempre definida como `Public` e não pode ser alterada. Para obter mais informações, consulte [Solucionando problemas de referências de serviço](../data-tools/troubleshooting-service-references.md).
 
 **Gerar operações assíncronas**
 
@@ -105,5 +105,5 @@ Exibe a caixa de diálogo **Adicionar referência Web** .
 
 ## <a name="see-also"></a>Consulte também
 
-- [Como: Adicionar uma referência a um serviço Web](how-to-add-update-or-remove-a-wcf-data-service-reference.md)
+- [Como adicionar uma referência a um serviço Web](how-to-add-update-or-remove-a-wcf-data-service-reference.md)
 - [Serviços do Windows Communication Foundation e WCF Data Services](../data-tools/configure-service-reference-dialog-box.md)

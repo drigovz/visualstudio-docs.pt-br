@@ -1,24 +1,24 @@
 ---
-title: 'Como: Copiar elementos do diagrama de classe para um documento do Microsoft Office (Designer de Classe)'
+title: Como copiar elementos de diagrama de classe para um documento do Microsoft Office (Designer de Classe)
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - class diagrams, copying elements to Office documents
 - Office documents [Visual Studio]
 ms.assetid: c43061ad-d258-46b1-be66-f97a312e86d5
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 19fbcc3db88cd020e1a4541f6cfb7f5f3acd18b3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 82228d924b2f475d9a9f7e607ccf902f2b4eaa0e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975485"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72631854"
 ---
-# <a name="how-to-copy-class-diagram-elements-to-a-microsoft-office-document"></a>Como: Copiar elementos do diagrama de classe para um documento do Microsoft Office
+# <a name="how-to-copy-class-diagram-elements-to-a-microsoft-office-document"></a>Como copiar elementos do diagrama de classe para um documento do Microsoft Office
 
 É possível copiar formas de um diagrama de classe do .NET (arquivo *.cd*) para outros documentos. Você receberá uma cópia da forma ou seu código subjacente com base no tipo de documento no qual colá-la. Para copiar formas de diagramas de classes UML em um projeto de modelagem, consulte [Exportar diagramas como imagens](../../modeling/export-diagrams-as-images.md).
 
@@ -42,5 +42,5 @@ Você também pode escolher **Copiar** em vez de **Copiar Imagem**. **Copiar** c
 
 ## <a name="see-also"></a>Consulte também
 
-- [Como: Imprimir diagramas de classe](how-to-print-class-diagrams.md)
-- [Como: Exportar diagramas de classe como imagens](how-to-export-class-diagrams-as-images.md)
+- [Como imprimir diagramas de classe](how-to-print-class-diagrams.md)
+- [Como exportar diagramas de classe como imagens](how-to-export-class-diagrams-as-images.md)

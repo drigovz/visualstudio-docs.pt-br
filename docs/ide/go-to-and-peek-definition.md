@@ -8,17 +8,17 @@ helpviewer_keywords:
 - peek definition
 - type definition [Visual Studio]
 - member definition [Visual Studio]
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c5235bc19c1b06ec2cae26e3fcffb6a7d061c9b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 2d78614966a33421aac707f370f2b18e62e4b3d9
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62549738"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72603541"
 ---
 # <a name="view-type-and-member-definitions"></a>Exibir Definições de Membro e de Tipo
 
@@ -26,7 +26,7 @@ Os desenvolvedores normalmente precisam exibir as definições de código de ori
 
 ## <a name="go-to-definition"></a>Ir para definição
 
-O recurso **Ir para Definição** navega para a fonte de um tipo ou membro e abre o resultado em uma nova guia. Se você estiver usando um teclado, coloque o cursor de texto em algum lugar dentro do nome do símbolo e pressione **F12**. Se você estiver usando um mouse, selecione **Ir para Definição** no menu do clique com o botão direito ou use o recurso **Ctrl+clique** descrito na seção a seguir.
+O recurso **ir para definição** navega até a origem de um tipo ou membro e abre o resultado em uma nova guia. Se você for um usuário de teclado, coloque o cursor de texto em algum lugar dentro do nome do símbolo e pressione **F12**. Se você estiver usando um mouse, selecione **Ir para Definição** no menu do clique com o botão direito ou use o recurso **Ctrl+clique** descrito na seção a seguir.
 
 ### <a name="ctrl-click-go-to-definition"></a>CTRL + clique para Ir para Definição
 
@@ -52,13 +52,13 @@ Em seguida, pressione **Ctrl** (ou qualquer outra tecla modificadora que estiver
 
 Se você espiar outra definição na janela pop-up, iniciará um caminho de navegação estrutural no qual poderá navegar usando as setas e os círculos exibidos acima do pop-up.
 
-Para obter mais informações, confira [Como: Exibir e editar o código usando o comando Inspecionar Definição (Alt + F12)](how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md).
+Para obter mais informações, consulte [Como exibir e editar códigos usando Inspecionar Definição (Alt + F12)](how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md).
 
 ## <a name="view-metadata-as-source-code-c"></a>Exibir metadados como código de origem (C#)
 
 Quando você exibe a definição de tipos ou membros de C# cujo código-fonte não está disponível, seus metadados são exibido no lugar. Você pode ver as declarações de tipos e membros, mas não suas implementações.
 
-Quando você executa o comando **Ir para Definição** ou **Inspecionar Definição** para um item cujo código-fonte está indisponível, um documento com guias que contém uma exibição dos metadados do item, exibidos como código-fonte, ele é exibido no editor de códigos. O nome do tipo, seguido por **[de metadados]**, aparece na guia do documento.
+Quando você executa o comando **Ir para Definição** ou **Inspecionar Definição** para um item cujo código-fonte está indisponível, um documento com guias que contém uma exibição dos metadados do item, exibidos como código-fonte, ele é exibido no editor de códigos. O nome do tipo, seguido por **[de metadados]** , aparece na guia do documento.
 
 Por exemplo, se você executar o comando **Ir para Definição** para o <xref:System.Console>, os metadados para o <xref:System.Console> aparecerão no editor de código como o código-fonte de C#. O código será semelhante a sua declaração, mas não exibirá uma implementação.
 
@@ -69,7 +69,7 @@ Por exemplo, se você executar o comando **Ir para Definição** para o <xref:Sy
 
 ### <a name="view-decompiled-source-definitions-instead-of-metadata-c"></a>Exibir definições de fonte descompilada em vez de metadados (C#)
 
-Defina uma opção para ver o código-fonte descompilado quando exibir a definição de um tipo ou membro C# cujo código-fonte não está disponível. Para ativar esse recurso, escolha **Ferramentas** > **Opções** na barra de menus. Em seguida, expanda **Editor de Texto** > **C#** > **Avançado**e selecione **Habilitar navegação para fontes descompiladas**.
+Defina uma opção para ver o código-fonte descompilado quando exibir a definição de um tipo ou membro C# cujo código-fonte não está disponível. Para ativar esse recurso, escolha **Ferramentas** > **Opções** na barra de menus. Em seguida, expanda **Editor de Texto** > **C#**  > **Avançado**e selecione **Habilitar navegação para fontes descompiladas**.
 
 ![Exibindo uma definição descompilada](media/go-to-definition-decompiled-sources.png)
 
@@ -79,4 +79,4 @@ Defina uma opção para ver o código-fonte descompilado quando exibir a defini�
 ## <a name="see-also"></a>Consulte também
 
 - [Navegar pelo código](../ide/navigating-code.md)
-- [Como: Exibir e editar o código usando o comando Inspecionar Definição (Alt + F12)](how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)
+- [Como exibir e editar códigos usando a janela Inspecionar Definição (Alt+F12)](how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)

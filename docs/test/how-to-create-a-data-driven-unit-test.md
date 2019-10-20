@@ -9,19 +9,19 @@ helpviewer_keywords:
 - unit tests, running
 - unit tests, data-driven
 - data-driven unit tests
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: 5960c84e2cb389580f2d7b0f476da2a456e62585
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
-ms.translationtype: HT
+author: jillre
+ms.openlocfilehash: 0a3162dcbbd041a7d2f540a335bd95854afd87d0
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66745864"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72643475"
 ---
-# <a name="how-to-create-a-data-driven-unit-test"></a>Como: Criar um teste de unidade controlado por dados
+# <a name="how-to-create-a-data-driven-unit-test"></a>Como: criar um teste de unidade controlado por dados
 
 Você pode usar a estrutura de teste de unidade da Microsoft para o código gerenciado para configurar um método de teste de unidade para recuperar valores de uma fonte de dados. O método é executado sucessivamente para cada linha na fonte de dados, o que facilita o teste de uma variedade de entradas usando um único método.
 

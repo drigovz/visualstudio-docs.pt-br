@@ -3,17 +3,17 @@ title: Visão geral da associação de dados do WPF com LINQ to XML
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 3bf80845-891b-41de-a71b-4080b5bd3ea6
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 400686710e09c19a806493232d471a1c946a630d
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
-ms.translationtype: HT
+ms.openlocfilehash: 2d306103ff0e63c852d72275d60c3025074cbf15
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66715075"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72633529"
 ---
 # <a name="wpf-data-binding-with-linq-to-xml-overview"></a>Visão geral da associação de dados do WPF com LINQ to XML
 
@@ -39,7 +39,7 @@ A vinculação de dados do WPF permite que um elemento de interface de usuário 
 |---------------|-----------------|
 |Destino de associação|O elemento de interface do usuário a ser associado com a fonte de dados. Os elementos visuais no WPF são derivados da classe <xref:System.Windows.UIElement>.|
 |Propriedade de destino|A *propriedade de dependência* do destino da associação que reflete o valor da fonte da vinculação de dados. As propriedades de dependência têm suporte direto pela classe <xref:System.Windows.DependencyObject>, da qual <xref:System.Windows.UIElement>.|
-|Fonte de associação|O objeto de origem para um ou mais valores que são fornecidos para o elemento da interface de usuário para apresentação. Automaticamente, o WPF dá suporte aos seguintes tipos como origens da associação: Objetos CLR, objetos de dados ADO.NET, dados XML (de consultas do XPath ou LINQ to XML) ou outro <xref:System.Windows.DependencyObject>.|
+|Fonte de associação|O objeto de origem para um ou mais valores que são fornecidos para o elemento da interface de usuário para apresentação. O WPF oferece suporte automático aos seguintes tipos como fontes de associação: objetos CLR, objetos de dados ADO.NET, dados XML (de consultas XPath ou LINQ to XML) ou outro <xref:System.Windows.DependencyObject>.|
 |Caminho de origem|A propriedade da fonte de associação que resolve para o valor ou conjunto de valores que devem ser associados.|
 
 Uma propriedade de dependência é um conceito específico do WPF que representa uma propriedade dinamicamente computada de um elemento de interface do usuário. Por exemplo, as propriedades de dependência geralmente têm valores padrão ou valores que são fornecidos por um elemento pai. Essas propriedades especiais têm o suporte de instâncias da classe <xref:System.Windows.DependencyProperty> (e não de campos com propriedades padrão). Para obter mais informações, consulte [Visão geral sobre propriedades de dependência](/dotnet/framework/wpf/advanced/dependency-properties-overview).

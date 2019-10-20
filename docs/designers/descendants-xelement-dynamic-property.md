@@ -3,17 +3,17 @@ title: Descendentes (propriedade dinâmica de XElement)
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 9611d00f-23bf-444b-ab0c-f30701bfc13d
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fa3bf24178f1096cd05e8471c18f466fdd8ee17f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: fab6b90489624955ddd567492d12f54d8de2686f
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62897671"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72637342"
 ---
 # <a name="descendants-xelement-dynamic-property"></a>Descendentes (propriedade dinâmica de XElement)
 
@@ -39,5 +39,5 @@ Esta propriedade usa a execução adiada.
 
 ## <a name="see-also"></a>Consulte também
 
-- [Propriedades dinâmicas da classe XElement](../designers/xelement-class-dynamic-properties.md)
+- [Propriedades dinâmicas da classe XElement](../designers/attribute-xelement-dynamic-property.md)
 - [Elementos](../designers/elements-xelement-dynamic-property.md)

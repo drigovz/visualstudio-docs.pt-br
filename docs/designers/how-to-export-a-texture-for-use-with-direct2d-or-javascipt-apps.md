@@ -3,17 +3,17 @@ title: Exportar uma textura para aplicativos Direct2D e JavaScript
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 241c25fe-764e-4e1b-ad32-b1377dcbb605
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 44b6c0cfa1adf8ff1378dd8a426ab531ae90e096
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
-ms.translationtype: HT
+ms.openlocfilehash: 5d163aafa8b00ce1d59b1fc7b597ab5ca535a1ee
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67824620"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72635505"
 ---
 # <a name="how-to-export-a-texture-for-use-with-direct2d-or-javascript-apps"></a>Como: exportar uma textura para uso com aplicativos Direct2D ou JavaScript
 
@@ -35,7 +35,7 @@ Este documento demonstra essas atividades:
 
 Texturas que são usadas no contexto do Direct2D devem estar em conformidade com as seguintes convenções de renderização internas do Direct2D:
 
-- O Direct2D implementa a transparência e a translucência usando alfa pré-multiplicado. Texturas usadas com Direct2D devem conter alfa pré-multiplicado, mesmo se a textura não usar transparência ou translucência. Para obter mais informações sobre alfa pré-multiplicado, confira [Como: Exportar uma textura que tenha o alfa pré-multiplicado](../designers/how-to-export-a-texture-that-has-premultiplied-alpha.md).
+- O Direct2D implementa a transparência e a translucência usando alfa pré-multiplicado. Texturas usadas com Direct2D devem conter alfa pré-multiplicado, mesmo se a textura não usar transparência ou translucência. Para obter mais informações sobre alfa pré-multiplicado, confira [Como exportar uma textura que tem alfa pré-multiplicado](../designers/how-to-export-a-texture-that-has-premultiplied-alpha.md).
 
 - A textura precisa ser fornecida no formato *.dds*, usando um desses formatos de compactação em bloco:
 
@@ -49,7 +49,7 @@ Texturas que são usadas no contexto do Direct2D devem estar em conformidade com
 
 ### <a name="to-create-a-texture-thats-compatible-with-direct2d-rendering-conventions"></a>Para criar uma textura compatível com as convenções de renderização do Direct2D
 
-1. Comece com uma textura básica. Carregue um arquivo de imagem existente ou crie um, conforme descrito em [Como: Criar uma textura básica](../designers/how-to-create-a-basic-texture.md). Para dar suporte à compactação em bloco no formato *.dds*, especifique uma textura que tenha uma largura e altura que sejam múltiplos de quatro em tamanho, por exemplo, 100 x 100, 128 x 128 ou 256 x 192. Como não há suporte para mipmap, a textura não precisa ser quadrada nem ser uma potência de dois de tamanho.
+1. Comece com uma textura básica. Carregue uma imagem existente ou crie uma conforme a descrição em [Como criar uma textura básica](../designers/how-to-create-a-basic-texture.md). Para dar suporte à compactação em bloco no formato *.dds*, especifique uma textura que tenha uma largura e altura que sejam múltiplos de quatro em tamanho, por exemplo, 100 x 100, 128 x 128 ou 256 x 192. Como não há suporte para mipmap, a textura não precisa ser quadrada nem ser uma potência de dois de tamanho.
 
 2. Configure o arquivo de textura para que ele seja processado pelo Pipeline de conteúdo de imagem. No **Gerenciador de Soluções**, abra o menu de atalho do arquivo de textura que acabou de criar e selecione **Propriedades**. Na página **Propriedades de Configuração** > **Geral**, defina a propriedade **Tipo de Item** como **Pipeline de Conteúdo de Imagem**. Verifique se a propriedade **Conteúdo** está definida como **Sim** e se **Excluir do Build** está definido como **Não** e, em seguida, escolha o botão **Aplicar**. A página de propriedades de configuração **Pipeline de Conteúdo de Imagem** é exibida.
 
@@ -62,6 +62,6 @@ Texturas que são usadas no contexto do Direct2D devem estar em conformidade com
 
 5. Configure o pipeline de conteúdo de imagem para não gerar mipmaps. Na página **Propriedades de Configuração** > **Pipeline de Conteúdo de Imagem** > **Geral**, defina a propriedade **Gerar Mips** como **Não**.
 
-6. Escolha o botão **OK**.
+6. Selecione o botão **OK**.
 
    Quando você cria o projeto, o Pipeline de conteúdo de imagem converte a imagem de origem do formato do trabalho para o formato de saída especificado (a conversão inclui a geração de alfa pré-multiplicado) e o resultado é copiado para o diretório de saída do projeto.

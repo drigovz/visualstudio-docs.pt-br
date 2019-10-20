@@ -1,21 +1,21 @@
 ---
-title: 'Como: Modificar o ponto dinâmico de um modelo 3D'
+title: Como modificar o ponto dinâmico de um modelo 3D
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: c20b4ec8-29f5-4ca5-bc39-d4548ca6f573
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b1baa6a42d0874cdefaa8cfb781f66e864d82b2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: a2c49e42009c81f6932f76128f12fb37399a789b
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62897447"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72635474"
 ---
-# <a name="how-to-modify-the-pivot-point-of-a-3d-model"></a>Como: Modificar o ponto dinâmico de um modelo 3D
+# <a name="how-to-modify-the-pivot-point-of-a-3d-model"></a>Como modificar o ponto dinâmico de um modelo 3D
 
 Este artigo demonstra como usar o Editor de Modelo para modificar o *ponto dinâmico* de um modelo 3D. O ponto dinâmico é o ponto no espaço que define o centro matemático do objeto para rotação e colocação em escala.
 
@@ -25,7 +25,7 @@ Você pode redefinir a origem de um modelo 3D ao modificar seu ponto dinâmico.
 
 Verifique se a janela **Propriedades** e a **Caixa de Ferramentas** estão sendo exibidas.
 
-1. Comece com um modelo 3D existente, como aquele descrito em [Como: Criar um modelo 3D básico](../designers/how-to-create-a-basic-3-d-model.md).
+1. Comece com um modelo 3D existente, como aquele descrito em [Como criar um modelo 3D básico](../designers/how-to-create-a-basic-3-d-model.md).
 
 2. Entre no modo dinâmico. Na barra de ferramentas do **Modo do Editor de Modelo**, escolha o **Modo Dinâmico** para ativar o modo dinâmico. Será exibida uma caixa ao redor do botão **Modo Dinâmico** para indicar que o Editor de Modelo agora está em modo dinâmico. No modo dinâmico, operações como a movimentação afetam o ponto dinâmico do objeto em vez da estrutura do objeto no espaço de mundo.
 
@@ -44,5 +44,5 @@ Aqui está um modelo que tem um ponto dinâmico modificado:
 
 ## <a name="see-also"></a>Consulte também
 
-- [Como: Criar um modelo 3D básico](../designers/how-to-create-a-basic-3-d-model.md)
+- [Como criar um modelo 3D básico](../designers/how-to-create-a-basic-3-d-model.md)
 - [Editor de modelos](../designers/model-editor.md)

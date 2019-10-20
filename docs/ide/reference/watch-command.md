@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Watch command
 - Debug.Watch command
 ms.assetid: aa02e647-d9f5-4905-a651-52a8df595795
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ac779dc902a331a45b600113a11db5364293f74
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: ccb87fef9ff91c77c926d5bca40a5e5ec08c3720
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68925942"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72622024"
 ---
 # <a name="watch-command"></a>Comando Inspecionar
 Cria e abre uma instância especificada de uma janela **Inspeção**. Você pode usar uma janela **Inspeção** para calcular os valores de variáveis, expressões e registros, para editar esses valores e para salvar os resultados.
@@ -44,7 +44,7 @@ O `index` deve ser um inteiro. Os valores válidos são 1, 2, 3 ou 4.
 >Debug.Watch1
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Janelas Autos e Locais](../../debugger/autos-and-locals-windows.md)
 - [Definir uma inspeção nas variáveis usando as janelas Inspeção e QuickWatch no Visual Studio](../../debugger/watch-and-quickwatch-windows.md)

@@ -1,38 +1,35 @@
 ---
-title: Aviso. Foram feitas alterações à caixa de diálogo Configurar comportamento que não foram aplicadas | Microsoft Docs
+title: Aviso. Foram feitas alterações na caixa de diálogo Definir comportamento que não foram aplicadas | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-data-tools
 ms.topic: conceptual
 ms.assetid: ce5822dd-4f10-4c86-b707-7766837be216
 caps.latest.revision: 6
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 6fa921af1de537f40d13b20d42e7b2b19c4d40c0
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 0fad308de9d243b23dbe30c319526b44f3a14c52
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65694793"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72602410"
 ---
 # <a name="warning-changes-have-been-made-to-the-configure-behavior-dialog-box-that-have-not-been-applied"></a>Aviso. As alterações foram feitas à caixa de diálogo configurar o comportamento que não foram aplicadas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Aviso. As alterações foram feitas à caixa de diálogo configurar o comportamento que não foram aplicadas. Você deseja aplicar as alterações?  
-  
- O **configurar comportamento** caixa de diálogo permite que você configure o comportamento de Insert, Update e Delete para todas as classes disponíveis. Esta mensagem aparece quando você seleciona uma nova combinação de **Classe** e **Comportamento** e a alteração anterior ainda não foi aplicada.  
-  
-### <a name="to-apply-the-change-and-continue"></a>Para aplicar a alteração e continuar  
-  
-- Clique **Sim** para aplicar a alteração à **Classe** e ao **Comportamento** selecionados.  
-  
-### <a name="to-cancel-the-previous-change-and-continue"></a>Para cancelar a mudança anterior e continuar  
-  
-- Clique **Não** para cancelar a alteração à **Classe** e ao **Comportamento** selecionados.  
-  
-## <a name="see-also"></a>Consulte também  
- [Ferramentas LINQ to SQL no Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   
- [Como: Atribuir procedimentos armazenados para executar atualizações, inserções e exclusões (Designer relacional de objetos)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)   
- [Passo a passo: Criando Classes LINQ to SQL (Object Relational Designer)](https://msdn.microsoft.com/library/35aad4a4-2e8a-46e2-ae09-5fbfd333c233)   
- [LINQ to SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)
+Aviso. As alterações foram feitas à caixa de diálogo configurar o comportamento que não foram aplicadas. Você deseja aplicar as alterações?
+
+ A caixa de diálogo **Configurar comportamento** permite que você configure o comportamento de inserir, atualizar e excluir para todas as classes disponíveis. Esta mensagem aparece quando você seleciona uma nova combinação de **Classe** e **Comportamento** e a alteração anterior ainda não foi aplicada.
+
+### <a name="to-apply-the-change-and-continue"></a>Para aplicar a alteração e continuar
+
+- Clique **Sim** para aplicar a alteração à **Classe** e ao **Comportamento** selecionados.
+
+### <a name="to-cancel-the-previous-change-and-continue"></a>Para cancelar a mudança anterior e continuar
+
+- Clique **Não** para cancelar a alteração à **Classe** e ao **Comportamento** selecionados.
+
+## <a name="see-also"></a>Consulte também
+ [Ferramentas de LINQ to SQL no Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) [como: atribuir procedimentos armazenados para executar atualizações, inserções e exclusões (o/R Designer)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md) [passo a passos: Criando classes de LINQ to SQL (o-R Designer)](https://msdn.microsoft.com/library/35aad4a4-2e8a-46e2-ae09-5fbfd333c233) [LINQ to SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)
