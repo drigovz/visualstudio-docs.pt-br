@@ -30,50 +30,50 @@ helpviewer_keywords:
 - XMLDataDocument class
 ms.assetid: 1fd5de47-2d61-4180-9539-c2c4bf9ab768
 caps.latest.revision: 29
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 906f08c0020eb288c1bcd318327be18dc8d08ca5
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 313cc11978355942bf6671cc040969c255d7e44d
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65695325"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72669346"
 ---
 # <a name="xml-tools-in-visual-studio"></a>Ferramentas XML no (Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Extensible Markup Language (XML) * é uma linguagem de marcação que fornece um formato para descrever dados. Isso facilita declarações mais precisas de conteúdo e mais resultados de pesquisa significativos nas diversas plataformas. Além disso, o XML permite a separação da apresentação dos dados. Por exemplo, em HTML, usam-se marcas para dizer ao navegador para exibir dados como negrito ou itálico; em XML, usam-se marcas somente para descrever dados, como nome da cidade, temperatura e pressão barométrica. Em XML, são usadas folhas de estilo como linguagem XSL e CSS (folhas de estilos em cascata) para apresentar os dados em um navegador. O XML separa os dados da apresentação e do processo. Isso permite exibir e processar os dados como desejar, aplicando diferentes folhas de estilo e aplicações.
+Linguagem XML (XML) * é uma linguagem de marcação que fornece um formato para descrever os dados. Isso facilita declarações mais precisas de conteúdo e mais resultados de pesquisa significativos nas diversas plataformas. Além disso, o XML permite a separação da apresentação dos dados. Por exemplo, em HTML, usam-se marcas para dizer ao navegador para exibir dados como negrito ou itálico; em XML, usam-se marcas somente para descrever dados, como nome da cidade, temperatura e pressão barométrica. Em XML, são usadas folhas de estilo como linguagem XSL e CSS (folhas de estilos em cascata) para apresentar os dados em um navegador. O XML separa os dados da apresentação e do processo. Isso permite exibir e processar os dados como desejar, aplicando diferentes folhas de estilo e aplicações.
 
  O XML é um subconjunto do SGML que é otimizado para entrega na Web. Ele é definido pelo World Wide Web Consortium (W3C). Essa padronização garante que dados estruturados serão uniformes e independentes de aplicativos ou fornecedores.
 
  O XML está no cerne de muitos recursos do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] e do [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]. Os tópicos a seguir indicam os nomes de ferramentas e os recursos relacionados ao XML que são oferecidos no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] e no [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].
 
- Para obter mais informações, consulte o [Developer Center XML](http://go.microsoft.com/fwlink/?LinkID=100176), que fornece a documentação mais recente, informações técnicas, downloads, grupos de notícias e outros recursos para desenvolvedores XML.
+ Para obter mais informações, consulte o [centro de desenvolvedores XML](http://go.microsoft.com/fwlink/?LinkID=100176), que fornece a documentação, informações técnicas, downloads, grupos de notícias e outros recursos mais recentes para desenvolvedores de XML.
 
 ## <a name="in-this-section"></a>Nesta seção
- [Trabalhar com dados XML](../xml-tools/working-with-xml-data.md) aborda a função do XML nos dados de maneira é tratada no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
+ [Trabalhando com dados XML](../xml-tools/working-with-xml-data.md) Discute a função de XML na maneira como os dados são manipulados em [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
 
- [Depuração XSLT](../xml-tools/debugging-xslt.md) fornece links para tópicos sobre como usar o depurador do Visual Studio para depurar o XSLT.
+ [Depuração XSLT](../xml-tools/debugging-xslt.md) Fornece links para tópicos sobre como usar o depurador do Visual Studio para depurar o XSLT.
 
 ## <a name="reference"></a>Referência
- [Microsoft.VisualStudio.XmlEditor](http://go.microsoft.com/fwlink/?LinkID=165699) expõe o [Editor de XML](http://go.microsoft.com/fwlink/?LinkId=228249) árvore por meio de análise [LINQ](http://go.microsoft.com/fwlink/?LinkId=228250) para todos os documentos XML.
+ [Microsoft. VisualStudio. Xmlediter](http://go.microsoft.com/fwlink/?LinkID=165699) expõe a árvore de análise do [Editor de XML](http://go.microsoft.com/fwlink/?LinkId=228249) por meio de [System. xml. Linq](http://go.microsoft.com/fwlink/?LinkId=228250) para qualquer documento XML.
 
- [Referência a padrões XML](https://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401) fornece informações sobre tecnologias XML, incluindo XML, definição de tipo de documento (DTD), linguagem de definição de esquema XML (XSD) e XSLT.
+ [Referência de padrões de XML](https://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401) Fornece informações sobre as tecnologias XML, incluindo XML, definição de tipo de documento (DTD), linguagem de definição de esquema XML (XSD) e XSLT.
 
- <xref:System.Xml?displayProperty=fullName> Descreve as classes e outros elementos que compõem o <xref:System.Xml> namespace e fornece links para informações mais detalhadas sobre cada item.
+ <xref:System.Xml?displayProperty=fullName> descreve as classes e outros elementos que compõem o namespace <xref:System.Xml> e fornece links para informações mais detalhadas sobre cada item.
 
- <xref:System.Xml.Serialization?displayProperty=fullName> Descreve as classes e outros elementos que compõem o <xref:System.Xml.Serialization> namespace e fornece links para informações mais detalhadas sobre cada item.
+ <xref:System.Xml.Serialization?displayProperty=fullName> descreve as classes e outros elementos que compõem o namespace <xref:System.Xml.Serialization> e fornece links para informações mais detalhadas sobre cada item.
 
 ## <a name="related-sections"></a>Seções relacionadas
- [Modelo de objeto de documento (DOM) XML](https://msdn.microsoft.com/library/b5e52844-4820-47c0-a61d-de2da33e9f54) descreve como o <xref:System.Xml.XmlDocument> e suas classes associadas estão em conformidade com as especificações de suporte de namespace de nível 2 e W3C Document Object Model (núcleos) de nível 1.
+ [Modelo de objeto do documento XML (dom)](https://msdn.microsoft.com/library/b5e52844-4820-47c0-a61d-de2da33e9f54) Descreve como o <xref:System.Xml.XmlDocument> e suas classes associadas estão em conformidade com as especificações de suporte de namespace do W3C Modelo de Objeto do Documento (núcleo) nível 1 e nível 2.
 
- [Lendo XML com XmlReader](https://msdn.microsoft.com/3029834c-a27e-4331-b7aa-711924062182) descreve como o <xref:System.Xml.XmlReader> fornece não armazenado em cache, encaminhar somente, somente leitura, acesso a dados XML em um fluxo XML.
+ [Lendo XML com XmlReader](https://msdn.microsoft.com/3029834c-a27e-4331-b7aa-711924062182) Descreve como a <xref:System.Xml.XmlReader> fornece acesso não armazenado em cache, somente encaminhamento e somente leitura a dados XML por meio de um fluxo XML.
 
- [Escrevendo XML com o XmlWriter](https://msdn.microsoft.com/ea41f72c-e1d3-4e0a-ab0f-f0eb1c27ab86) descreve como o <xref:System.Xml.XmlWriter> fornece não armazenado em cache, somente encaminhamento maneira de gerar fluxos XML e ajuda você a criar documentos XML em conformidade com o padrão W3C.
+ [Escrevendo XML com o XmlWriter](https://msdn.microsoft.com/ea41f72c-e1d3-4e0a-ab0f-f0eb1c27ab86) Descreve como a <xref:System.Xml.XmlWriter> fornece o modo não armazenado em cache, somente encaminhamento, a maneira de gerar fluxos XML e ajuda a criar documentos XML que estão em conformidade com o padrão W3C.
 
- [Transformações XSLT](https://msdn.microsoft.com/library/202f8820-224c-494f-b61e-cd127eac6e03) descreve como o <xref:System.Xml.Xsl.XslCompiledTransform> classe implementa a recomendação XSLT 1.0.
+ [Transformações XSLT](https://msdn.microsoft.com/library/202f8820-224c-494f-b61e-cd127eac6e03) Descreve como a classe <xref:System.Xml.Xsl.XslCompiledTransform> implementa a recomendação do XSLT 1,0.
 
- [Processar dados XML usando o modelo de dados XPath](https://msdn.microsoft.com/library/536c6fce-1453-4654-9c72-bca54d47e081) descreve como o <xref:System.Xml.XPath.XPathNavigator> classe pode processar dados XML armazenados em um <xref:System.Xml.XPath.XPathDocument> ou um <xref:System.Xml.XmlDocument> objeto. A classe <xref:System.Xml.XPath.XPathNavigator> é baseada no Modelo de Dados XQuery 1.0 e XPath 2.0 ou pode ser usada para navegar e editar dados XML.
+ [Processar dados XML usando o modelo de dados XPath](https://msdn.microsoft.com/library/536c6fce-1453-4654-9c72-bca54d47e081) Descreve como a classe <xref:System.Xml.XPath.XPathNavigator> pode processar dados XML armazenados em um <xref:System.Xml.XPath.XPathDocument> ou um objeto <xref:System.Xml.XmlDocument>. A classe <xref:System.Xml.XPath.XPathNavigator> é baseada no Modelo de Dados XQuery 1.0 e XPath 2.0 ou pode ser usada para navegar e editar dados XML.
 
- [Modelo de objeto de esquema XML (SOM)](https://msdn.microsoft.com/library/a897a599-ffd1-43f9-8807-e58c8a7194cd) descreve as classes usadas para criar e manipular esquemas XML, fornecendo um <xref:System.Xml.Schema.XmlSchema> classe para carregar e editar um esquema.
+ [Modelo de objeto de esquema XML (som)](https://msdn.microsoft.com/library/a897a599-ffd1-43f9-8807-e58c8a7194cd) Descreve as classes usadas para criar e manipular esquemas XML, fornecendo uma classe <xref:System.Xml.Schema.XmlSchema> para carregar e editar um esquema.

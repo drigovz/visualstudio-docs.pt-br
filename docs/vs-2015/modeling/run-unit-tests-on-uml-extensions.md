@@ -6,15 +6,15 @@ ms.technology: vs-ide-modeling
 ms.topic: conceptual
 ms.assetid: 745d74ae-e48c-4fd9-a755-4354b81b9f8a
 caps.latest.revision: 9
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 5aeeb8bf9ec70a7288316c8b4c6baa337c232621
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 3fdedf3fd9463b25e2c825a0a2d43b069049a2cb
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68871720"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72671229"
 ---
 # <a name="run-unit-tests-on-uml-extensions"></a>Executar testes de unidade em extensões UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,7 +63,7 @@ Para ajudar a manter o código estável ao longo de sucessivas alterações, rec
 
 2. Criar uma solução [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] que contém um projeto de modelagem UML. Você usará esta solução como o estado inicial de seus testes. Ela deve ser à parte da solução na qual você escreve a extensão UML e os testes de unidade dela. Para obter mais informações, consulte [criar diagramas e projetos de modelagem UML](../modeling/create-uml-modeling-projects-and-diagrams.md).
 
-3. **No projeto de extensão UML**, edite o arquivo. csproj como texto e verifique se as linhas a seguir `true`mostram:
+3. **No projeto de extensão UML**, edite o arquivo. csproj como texto e verifique se as linhas a seguir mostram `true`:
 
     ```
     <CopyBuildOutputToOutputDirectory>true</CopyBuildOutputToOutputDirectory>
@@ -82,17 +82,17 @@ Para ajudar a manter o código estável ao longo de sucessivas alterações, rec
 
     - *Seu projeto de extensão UML*
 
-    - **EnvDTE.dll**
+    - **EnvDTE. dll**
 
-    - **Microsoft.VisualStudio.ArchitectureTools.Extensibility.dll**
+    - **Microsoft. VisualStudio. ArchitectureTools. Extensibility. dll**
 
-    - **Microsoft.VisualStudio.ComponentModelHost.dll**
+    - **Microsoft. VisualStudio. ComponentModelHost. dll**
 
-    - **Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll**
+    - **Microsoft. VisualStudio. QualityTools. UnitTestFramework. dll**
 
-    - **Microsoft.VisualStudio.Uml.Interfaces.dll**
+    - **Microsoft. VisualStudio. Uml. interfaces. dll**
 
-    - **Microsoft.VSSDK.TestHostFramework.dll**
+    - **Microsoft. VSSDK. TestHostFramework. dll**
 
 6. Prefixe o atributo `[HostType("VS IDE")]` para cada método de teste, incluindo os métodos de inicialização.
 
@@ -164,7 +164,7 @@ namespace UnitTests
 
 ```
 
- Se uma instância do <xref:EnvDTE.Project?displayProperty=fullName> representar um projeto de modelagem, você poderá convertê-la de e para [IModelingProject](/previous-versions/ee789474(v=vs.140)).
+ Se uma instância do <xref:EnvDTE.Project?displayProperty=fullName> representar um projeto de modelagem, você poderá convertê-lo em e de [IModelingProject](/previous-versions/ee789474(v=vs.140)).
 
 ## <a name="Opening"></a>Abrindo um diagrama de modelo
  Para cada teste ou classe de testes, normalmente você trabalha com um diagrama aberto. O exemplo a seguir usa o atributo `[ClassInitialize]`, que executa esse método antes de outros métodos nessa classe de teste. Lembre-se de que você também precisa do atributo [HostType("VS IDE")] em cada método de teste:
@@ -379,4 +379,4 @@ Assert.AreEqual("hello", testInstance.privateField1_Accessor);
  Definir acessadores usando reflexão essa é a maneira que recomendamos o mínimo. As versões mais antigas do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] forneciam um utilitário que criava automaticamente um método de acesso para cada método particular. Embora seja conveniente, a nossa experiência indica que eles tendem a resultar em testes de unidade que são muito acoplados à estrutura interna do aplicativo que estão testando. Isso acarreta trabalho adicional quando os requisitos ou a arquitetura mudam, pois você precisa alterar os testes com a implementação. Além disso, todas as suposições incorretas no projeto de implementação também são compiladas nos testes, para que os testes não encontrem erros.
 
 ## <a name="see-also"></a>Consulte também
- [Anatomia de um teste de unidade](https://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144) [Definir um comando de menu em um diagrama de modelagem](../modeling/define-a-menu-command-on-a-modeling-diagram.md) [UML – entrada rápida usando texto](http://code.msdn.microsoft.com/UML-Rapid-Entry-using-Text-0813ad8a)
+ [Anatomia de um teste de unidade](https://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144) [define um comando de menu em um diagrama de modelagem](../modeling/define-a-menu-command-on-a-modeling-diagram.md) [UML – entrada rápida usando texto](http://code.msdn.microsoft.com/UML-Rapid-Entry-using-Text-0813ad8a)

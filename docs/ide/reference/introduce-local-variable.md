@@ -3,17 +3,17 @@ title: Introduzir variável local
 description: Gere imediatamente uma variável local para substituir uma expressão existente. Selecione a expressão, clique com o botão direito do mouse e selecione o menu Ações Rápidas e Refatorações, selecione Introduzir local para (todas as ocorrências da) 'expressão'.
 ms.date: 01/26/2018
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 43f54072d495cfdd6607ccb033ffd1a1713ad8bb
-ms.sourcegitcommit: 0f5f7955076238742f2071d286ad8e896f3a6cad
-ms.translationtype: HT
+ms.openlocfilehash: 6407810b4143d5edacecf42990ae5b6d63497be2
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68483691"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72668751"
 ---
 # <a name="introduce-a-local-variable-in-visual-studio"></a>Introduzir uma variável local no Visual Studio
 
@@ -23,11 +23,11 @@ Esta geração de código aplica-se a:
 
 - Visual Basic
 
-**O quê:** Permite gerar imediatamente uma variável local para substituir uma expressão existente.
+**O quê:** permite gerar imediatamente uma variável local para substituir uma expressão existente.
 
-**Quando:** Você tem um código que poderá ser reutilizado com facilidade posteriormente se ele estiver em uma variável local.
+**Quando:** você tiver um código que poderia ser facilmente reutilizado posteriormente se estivesse em uma variável local.
 
-**Por que:** Você pode copiar e colar o código várias vezes para usá-lo em vários locais. No entanto, é melhor executar a operação uma vez, armazenar o resultado em uma variável local e usar a variável local durante todo o processo.
+**Por quê:** você poderia copiar e colar o código várias vezes a fim de usá-lo em vários locais. No entanto, seria melhor executar a operação uma vez, armazenar o resultado em uma variável local e usar a variável local durante todo o processo.
 
 ## <a name="how-to"></a>Como fazer
 

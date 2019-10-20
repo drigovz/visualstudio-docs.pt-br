@@ -2,21 +2,21 @@
 title: Diretiva de inclusão T4
 ms.date: 11/04/2016
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a3ab6aa4cd116c779cac4367d1eeb9a187edaeb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 636260609aa535e3bc45efe0224a517fd782c040
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62964086"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72606387"
 ---
 # <a name="t4-include-directive"></a>Diretiva de inclusão T4
 
-Em um modelo de texto no Visual Studio, você pode incluir texto de outro arquivo usando um `<#@include#>` diretiva. Você pode colocar diretivas `include` em qualquer lugar de um modelo de texto antes do primeiro bloco de recursos da classe `<#+ ... #>`. Os arquivos incluídos também podem conter diretivas `include` e outras diretivas. Isso permite que você compartilhe código de modelo e texto constante entre modelos.
+Em um modelo de texto no Visual Studio, você pode incluir texto de outro arquivo usando uma diretiva `<#@include#>`. Você pode colocar diretivas `include` em qualquer lugar de um modelo de texto antes do primeiro bloco de recursos da classe `<#+ ... #>`. Os arquivos incluídos também podem conter diretivas `include` e outras diretivas. Isso permite que você compartilhe código de modelo e texto constante entre modelos.
 
 ## <a name="using-include-directives"></a>Usando diretivas de inclusão
 
@@ -26,7 +26,7 @@ Em um modelo de texto no Visual Studio, você pode incluir texto de outro arquiv
 
 - `filePath` pode ser absoluto ou relativo ao arquivo de modelo atual.
 
-   Além disso, as extensões específicas do Visual Studio podem especificar seus próprios diretórios para pesquisar arquivos de inclusão. Por exemplo, quando você instalou o SDK de visualização e modelagem (ferramentas DSL), a pasta a seguir é adicionada à lista de inclusão: `Program Files\Microsoft Visual Studio 10.0\Common7\IDE\Extensions\Microsoft\DSL SDK\DSL Designer\11.0\TextTemplates`.
+   Além disso, as extensões específicas do Visual Studio podem especificar seus próprios diretórios para procurar por arquivos de inclusão. Por exemplo, quando você instalou o SDK de visualização e modelagem (ferramentas DSL), a seguinte pasta é adicionada à lista de inclusões: `Program Files\Microsoft Visual Studio 10.0\Common7\IDE\Extensions\Microsoft\DSL SDK\DSL Designer\11.0\TextTemplates`.
 
    Essas pastas de inclusão adicionais podem depender da extensão do arquivo de inclusão. Por exemplo, a pasta de inclusão das Ferramentas DSL só é acessível a arquivos de inclusão com a extensão de arquivo `.tt`
 
@@ -38,15 +38,15 @@ Em um modelo de texto no Visual Studio, você pode incluir texto de outro arquiv
 
 - O nome de um arquivo incluído não precisa usar a extensão `".tt"`.
 
-   Você pode usar outra extensão como `".t4"` para arquivos incluídos. Isso ocorre porque, quando você adiciona uma `.tt` arquivo a um projeto, o Visual Studio define automaticamente seus **Custom Tool** propriedade `TextTemplatingFileGenerator`. Geralmente, você não quer que os arquivos incluídos sejam transformados individualmente.
+   Você pode usar outra extensão como `".t4"` para arquivos incluídos. Isso ocorre porque, quando você adiciona um arquivo de `.tt` a um projeto, o Visual Studio define automaticamente sua propriedade de **ferramenta personalizada** como `TextTemplatingFileGenerator`. Geralmente, você não quer que os arquivos incluídos sejam transformados individualmente.
 
    Por outro lado, você deve estar ciente de que, em alguns casos, a extensão do arquivo afeta as pastas adicionais em que os arquivos de inclusão serão pesquisados. Isso pode ser importante quando você tem um arquivo incluído que contenha outros arquivos.
 
 - O conteúdo incluído é processado quase como se fizesse parte do modelo de texto de inclusão. Entretanto, você pode incluir um arquivo que contenha um bloco de recurso de classe `<#+...#>` mesmo se a diretiva `include` for seguida por blocos de texto comum ou de controle padrão.
 
-- Use `once="true"` para garantir que o modelo é incluído somente uma vez, mesmo se ele é chamado de mais de um arquivo de inclusão.
+- Use `once="true"` para garantir que um modelo seja incluído apenas uma vez, mesmo que ele seja invocado de mais de um outro arquivo de inclusão.
 
-   Isso faz com que recurso fácil criar uma biblioteca de trechos de código T4 reutilizáveis que você pode incluir a será sem se preocupar que algum outro trecho já incluiu-los.  Por exemplo, suponha que você tem uma biblioteca de trechos muito refinados que lidam com processamento de modelo e geração de c#.  Por sua vez, eles são usados por alguns utilitários de tarefas mais específicas, como a geração de exceções, que você pode usar de qualquer modelo de aplicativo mais específico. Se você desenhar o grafo de dependência, verá que alguns snippets poderiam ser incluídos várias vezes. Mas o parâmetro `once` evita as inclusões subsequentes.
+   Esse recurso facilita a criação de uma biblioteca de trechos de código T4 reutilizáveis que você pode incluir em sem se preocupar que algum outro trecho já os incluiu.  Por exemplo, suponha que você tenha uma biblioteca de trechos de código muito refinados que lidam com C# o processamento e a geração de modelos.  Por sua vez, eles são usados por mais utilitários específicos da tarefa, como a geração de exceções, que você pode usar em qualquer outro modelo específico do aplicativo. Se você desenhar o grafo de dependência, verá que alguns snippets poderiam ser incluídos várias vezes. Mas o parâmetro `once` evita as inclusões subsequentes.
 
   **MyTextTemplate.tt:**
 
@@ -61,7 +61,7 @@ Output message 5 (from top template).
 #>
 ```
 
- **TextFile1.t4:**
+ **Textarquivo1. T4:**
 
 ```
    Output Message 2 (from included file).
@@ -77,7 +77,7 @@ void GenerateMessage(int n)
 #>
 ```
 
- **TextFile2.t4:**
+ **Textarquivo2. T4:**
 
 ```
         Output Message 3 (from included file 2).
@@ -91,7 +91,7 @@ void AnotherGenerateMessage(int n)
 #>
 ```
 
- **O arquivo gerado resultante, mytexttemplate. txt:**
+ **O arquivo gerado resultante, MyTextTemplate. txt:**
 
 ```
 Output message 1 (from top template).
@@ -105,8 +105,8 @@ Output message 5 (from top template).
        Output Message 7 (from AnotherGenerateMessage method).
 ```
 
-## <a name="msbuild"></a> Usando propriedades do projeto no MSBuild e Visual Studio
- Embora você possa usar macros do Visual Studio como $ (solutiondir) em uma diretiva de inclusão, eles não funcionam no MSBuild. Se você quiser transformar modelos no computador de compilação, use as propriedades do projeto como alternativa.
+## <a name="msbuild"></a>Usando as propriedades do projeto no MSBuild e no Visual Studio
+ Embora você possa usar macros do Visual Studio como $ (SolutionDir) em uma diretiva include, elas não funcionam no MSBuild. Se você quiser transformar modelos no computador de compilação, use as propriedades do projeto como alternativa.
 
  Edite seu arquivo .csproj ou .vbproj para definir uma propriedade do projeto. Este exemplo define uma propriedade chamada `myIncludeFolder`:
 

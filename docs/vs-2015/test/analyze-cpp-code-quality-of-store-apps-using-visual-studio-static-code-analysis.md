@@ -1,5 +1,5 @@
 ---
-title: C++aplicativos de Store de análise de código estático
+title: C++aplicativos de repositório de análise de código estático
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-test
@@ -9,19 +9,19 @@ f1_keywords:
 ms.assetid: c5355e43-a37c-4686-a969-18e3dfc59a9c
 caps.latest.revision: 15
 author: alexhomer1
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 799e75dff8202ef041399cc6e0fcfb791dc7e868
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: c20fe8bccdf48cf307dda72a085b3c2a72f1d0cf
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65686528"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72672717"
 ---
 # <a name="analyze-c-code-quality-of-store-apps-using-visual-studio-static-code-analysis"></a>Analisar a qualidade do código C++ de aplicativos da Store usando a análise de código estático do Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Aplica-se ao Windows e Windows Phone] (... /Image/windows_and_phone_content.png "windows_and_phone_content")
+Aplica-se ao Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "windows_and_phone_content")
 
  A ferramenta de análise de código no Visual Studio Express Edition examina o código em busca de uma série de problemas e violações comuns das práticas recomendadas de programação. Os avisos da análise de código diferem dos erros e avisos do compilador porque a análise de código procura por padrões de código específicos que são válidos, mas que ainda podem criar problemas para você ou outras pessoas que usam seu código. A análise de código também pode localizar os defeitos no seu código que são difíceis de descobrir com testes. A execução da ferramenta de análise de código a intervalos regulares durante o processo de desenvolvimento pode melhorar a qualidade do seu aplicativo concluído.
 
@@ -41,7 +41,7 @@ Aplica-se ao Windows e Windows Phone] (... /Image/windows_and_phone_content.png 
 
    A solução é compilada e a análise de código é executada. Os resultados aparecem na janela Análise de Código.
 
-   ![Janela Análise de Código](../test/media/ca-cpp-collapsed.png "CA_CPP_Collapsed")
+   ![Janela de análise de código](../test/media/ca-cpp-collapsed.png "CA_CPP_Collapsed")
 
 ## <a name="BKMK_Analyze"></a> Analisando e resolvendo avisos da análise de código
  Para analisar um aviso específico, escolha o título do aviso na janela Análise de Código. O aviso se expande para exibir informações detalhadas sobre o problema. Quando possível, a análise de código exibe o número da linha e a lógica da análise que levou ao aviso.
@@ -50,7 +50,7 @@ Aplica-se ao Windows e Windows Phone] (... /Image/windows_and_phone_content.png 
 
  Quando você expande um aviso, as linhas de código que causaram o aviso são realçadas no editor de códigos do Visual Studio.
 
- ![Código-fonte destacado](../test/media/ca-cpp-sourceline.png "CA_CPP_SourceLine")
+ ![Código-fonte realçado](../test/media/ca-cpp-sourceline.png "CA_CPP_SourceLine")
 
  Depois de entender o problema, você pode resolvê-lo no seu código. Em seguida, torne a executar a análise de código para verificar se o aviso não aparece mais na janela Análise de Código e se a sua correção não gerou novos avisos.
 
@@ -132,7 +132,7 @@ Aplica-se ao Windows e Windows Phone] (... /Image/windows_and_phone_content.png 
 | [C6523](https://msdn.microsoft.com/11397a31-b224-46b0-afb7-d49ca576a3bb)  |                                         Parâmetro de cadeia de caracteres de tamanho inválido                                         |
 |                       [C6525](../code-quality/c6525.md)                        |                                   Local inatingível da cadeia de caracteres inválido                                    |
 | [C6526](https://msdn.microsoft.com/59c590c7-0098-4166-a1ac-87f324596002)  |                                        Tipo de buffer de cadeia de caracteres de tamanho inválido                                        |
-|                       [C6527](../code-quality/c6527.md)                        |              Anotação inválida: Propriedade 'NeedsRelease' não pode ser usada em valores do tipo void               |
+|                       [C6527](../code-quality/c6527.md)                        |              Anotação inválida: A propriedade 'NeedsRelease' não pode ser utilizada em valores de tipo void               |
 |                       [C6530](../code-quality/c6530.md)                        |                                       Estilo de cadeia de caracteres de formato não reconhecido                                        |
 |                       [C6540](../code-quality/c6540.md)                        | O uso de anotações de atributo nesta função irá invalidar todas as anotações __declspec existentes na função  |
 |                       [C6551](../code-quality/c6551.md)                        |                              Especificação de tamanho inválido: expressão não analisável                              |
@@ -203,7 +203,7 @@ Aplica-se ao Windows e Windows Phone] (... /Image/windows_and_phone_content.png 
 |                      [C28286](../code-quality/c28286.md)                       |                                    Para função, erro de sintaxe perto do fim                                    |
 |                      [C28287](../code-quality/c28287.md)                       |                Para função, Erro de sintaxe na anotação \_At\_() (nome de parâmetro não reconhecido)                |
 |                      [C28288](../code-quality/c28288.md)                       |                  Para função, Erro de sintaxe na anotação \_At\_() (nome de parâmetro inválido)                   |
-|                      [C28289](../code-quality/c28289.md)                       |                Para a função: ReadableTo ou WritableTo não tinha uma especificação de limite como um parâmetro                |
+|                      [C28289](../code-quality/c28289.md)                       |                Para função: ReadableTo ou WritableTo não tinha uma especificação de limite como parâmetro                |
 |                      [C28290](../code-quality/c28290.md)                       |           a anotação para função contém mais Externos que o número real de parâmetros            |
 |                      [C28291](../code-quality/c28291.md)                       |                        pós null/notnull em deref nível 0 não tem sentido para a função.                        |
 |                      [C28300](../code-quality/c28300.md)                       |                            Operandos da expressão de tipos incompatíveis para o operador                             |

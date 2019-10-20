@@ -6,20 +6,20 @@ ms.technology: vs-ide-modeling
 ms.topic: conceptual
 ms.assetid: b29ce2a5-0ee3-4ab7-9aa3-13ca9c6b37a2
 caps.latest.revision: 10
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 782d5da27898de7a332824e6fb07842710ab0656
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: c095291cd02d591d9e493601b598a63c1ccb6f5b
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68871835"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72669664"
 ---
 # <a name="export-uml-diagrams-to-image-files"></a>Exportar diagramas UML para arquivos de imagem
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Você pode exportar um documento UML do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para uma imagem que está sob o controle do programa. Por exemplo, talvez você queira fazer isso como parte da geração automática de documentos.
+Você pode exportar um documento UML de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para uma imagem que está sob o controle do programa. Por exemplo, talvez você queira fazer isso como parte da geração automática de documentos.
 
  Se você quiser exportar um documento para uma imagem manualmente, poderá copiar e colar as formas de um diagrama em outros programas, como o Word. Você também pode imprimir documentos no formato XPS. Para obter mais informações, consulte [exportar diagramas como imagens](../modeling/export-diagrams-as-images.md).
 
@@ -142,4 +142,4 @@ namespace SaveToImage
 ```
 
 ## <a name="see-also"></a>Consulte também
- [Exportar diagramas como imagens](../modeling/export-diagrams-as-images.md) [Definir um comando de menu em um diagrama de modelagem](../modeling/define-a-menu-command-on-a-modeling-diagram.md)
+ [Exportar diagramas como imagens](../modeling/export-diagrams-as-images.md) [definir um comando de menu em um diagrama de modelagem](../modeling/define-a-menu-command-on-a-modeling-diagram.md)

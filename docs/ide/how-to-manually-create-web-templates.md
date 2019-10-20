@@ -7,17 +7,17 @@ helpviewer_keywords:
 - templates [Visual Studio], Web
 - Web templates [Visual Studio]
 - project templates [Visual Studio], Web
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 9af528cf92d4909bbe5c7d4ac114aa830e96162c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 7d121d9b970d8012aaf177c0a232cd21f6fe85d9
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946889"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72645822"
 ---
-# <a name="how-to-manually-create-web-templates"></a>Como: Criar modelos da Web manualmente
+# <a name="how-to-manually-create-web-templates"></a>Como criar manualmente modelos da Web
 
 Criar um modelo de Web é diferente de criar outros tipos de modelos. Como modelos de projeto Web aparecem na caixa de diálogo **Adicionar Novo Site** e itens de projetos da Web são categorizados por linguagem de programação, o arquivo *vstemplate* deve especificar o modelo como um modelo de Web e identificar a linguagem de programação.
 
@@ -52,7 +52,7 @@ Criar um modelo de Web é diferente de criar outros tipos de modelos. Como model
      </TemplateData>
      ```
 
-7. Selecione os arquivos em seu modelo (isso inclui o arquivo *vstemplate*), clique com o botão direito do mouse na seleção e escolha **Enviar para** > **Pasta compactada (zipada)**. Os arquivos são compactados em um arquivo *.zip*.
+7. Selecione os arquivos em seu modelo (isso inclui o arquivo *vstemplate*), clique com o botão direito do mouse na seleção e escolha **Enviar para** > **Pasta compactada (zipada)** . Os arquivos são compactados em um arquivo *.zip*.
 
 8. Coloque o arquivo de modelo *.zip* no diretório de modelo de projeto do Visual Studio. Por padrão, esse diretório é *%USERPROFILE%\Documents\Visual Studio \<Versão\>\ProjectTemplates*.
 

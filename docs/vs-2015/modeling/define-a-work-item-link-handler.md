@@ -8,15 +8,15 @@ helpviewer_keywords:
 - UML API
 ms.assetid: d52e0bbf-0166-4bb4-a2e3-cefed6188875
 caps.latest.revision: 21
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 240f143015f22435deb4f1347f74bebcc8b334c3
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 380aaa5bed1e30c549334bc004ea38e3f0bdb762
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68871911"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72669930"
 ---
 # <a name="define-a-work-item-link-handler"></a>Definir um manipulador de link de item de trabalho
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,17 +60,17 @@ Você pode criar uma extensão de integração do Visual Studio que responde qua
 
     3. Na guia **ativos** , escolha um **novo**e, na caixa de diálogo, defina:
 
-         Tipo = de**componente MEF**
+         **Tipo**  = **componente MEF**
 
-         Origem = **de um projeto na solução atual**
+         **Fonte**  = **um projeto na solução atual**
 
-         Projetar = *seu projeto de biblioteca de classes*
+         **Projeto**  = *seu projeto de biblioteca de classes*
 
 ## <a name="defining-the-work-item-link-handler"></a>Definindo o manipulador de link de item de trabalho
  Execute todas as tarefas a seguir no projeto de biblioteca de classes.
 
 ### <a name="project-references"></a>Referências de Projeto
- Adicione os seguintes [!INCLUDE[TLA2#tla_net](../includes/tla2sharptla-net-md.md)] assemblies às referências do projeto:
+ Adicione os seguintes assemblies de [!INCLUDE[TLA2#tla_net](../includes/tla2sharptla-net-md.md)] a suas referências de projeto:
 
  `Microsoft.TeamFoundation.WorkItemTracking.Client.dll`
 
@@ -84,14 +84,14 @@ Você pode criar uma extensão de integração do Visual Studio que responde qua
 
  `System.Drawing`-usado pelo código de exemplo
 
- Se você não encontrar uma dessas referências na guia **.net** da caixa de diálogo **Adicionar referência** , use a guia Procurar para encontrá-la em \Program Files\Microsoft Visual Studio [Version] \Common7\IDE\PrivateAssemblies\\.
+ Se você não encontrar uma dessas referências na guia **.net** da caixa de diálogo **Adicionar referência** , use a guia Procurar para encontrá-la em \Program Files\Microsoft Visual Studio [Version] \Common7\IDE\PrivateAssemblies \\.
 
 ### <a name="import-the-work-item-namespace"></a>Importar o namespace do item de trabalho
- Em suas [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **referências**de projeto, adicione referências aos seguintes assemblies:
+ Em suas **referências**de projeto [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], adicione referências aos seguintes assemblies:
 
-- Microsoft.TeamFoundation.WorkItemTracking.Client.dll
+- Microsoft. TeamFoundation. WorkItemTracking. Client. dll
 
-- Microsoft.VisualStudio.TeamFoundation.WorkItemTracking.dll
+- Microsoft. VisualStudio. TeamFoundation. WorkItemTracking. dll
 
   No código do programa, importe os seguintes namespaces:
 
@@ -160,9 +160,9 @@ namespace WorkItems
 
      Uma instância experimental do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] é iniciada.
 
-     **Solução de problemas**: Se um novo [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] não for iniciado, verifique se o projeto VSIX está definido como o projeto de inicialização da solução.
+     **Solução de problemas**: se um novo [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] não for iniciado, verifique se o projeto VSIX está definido como o projeto de inicialização da solução.
 
-2. Em experimental [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], abra ou crie um projeto de modelagem e abra ou crie um diagrama de modelagem.
+2. No [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] experimental, abra ou crie um projeto de modelagem e abra ou crie um diagrama de modelagem.
 
 3. Crie um elemento de modelo, como classe UML, e defina seu nome.
 
@@ -174,24 +174,24 @@ namespace WorkItems
 
          Um novo formulário de item de trabalho é aberto.
 
-5. Verifique se o título do item de trabalho é o mesmo que o elemento de modelo, se você tiver usado o código de exemplo na seção anterior. Isso demonstra `OnWorkItemCreated()` que funcionou.
+5. Verifique se o título do item de trabalho é o mesmo que o elemento de modelo, se você tiver usado o código de exemplo na seção anterior. Isso demonstra `OnWorkItemCreated()` funcionou.
 
 6. Preencha o formulário, salve e feche o item de trabalho.
 
-7. Verifique se o item de trabalho agora está em vermelho colorido. Isso demonstra `OnWorkItemLinked()` o código de exemplo.
+7. Verifique se o item de trabalho agora está em vermelho colorido. Isso demonstra `OnWorkItemLinked()` no código de exemplo.
 
-     **Solução de problemas**: Se os métodos do manipulador não tiverem sido executados, verifique se:
+     **Solução de problemas**: se os métodos do manipulador não tiverem sido executados, verifique se:
 
     - O projeto de biblioteca de classes é listado como um componente MEF na lista de **conteúdo** em **Source. Extensions. manifest** no projeto VSIX.
 
-    - O atributo `Export` correto é anexado à classe de manipulador e a classe implementa. `ILinkedWorkItemExtension`
+    - O atributo de `Export` correto é anexado à classe de manipulador e a classe implementa `ILinkedWorkItemExtension`.
 
-    - Os parâmetros de todos `Import` os `Export` atributos e são válidos.
+    - Os parâmetros de todos os atributos de `Import` e de `Export` são válidos.
 
 ## <a name="about-the-work-item-handler-code"></a>Sobre o código do manipulador de item de trabalho
 
 ### <a name="listening-for-new-work-items"></a>Ouvindo novos itens de trabalho
- `OnWorkItemCreated`é chamado quando o usuário escolhe criar um novo item de trabalho a ser vinculado aos elementos do modelo. Seu código pode inicializar os campos de item de trabalho. O item de trabalho é apresentado ao usuário, que pode atualizar os campos e salvar o item de trabalho. O link para um elemento de modelo não é criado até que o item de trabalho tenha sido salvo com êxito.
+ `OnWorkItemCreated` é chamado quando o usuário escolhe criar um novo item de trabalho a ser vinculado aos elementos do modelo. Seu código pode inicializar os campos de item de trabalho. O item de trabalho é apresentado ao usuário, que pode atualizar os campos e salvar o item de trabalho. O link para um elemento de modelo não é criado até que o item de trabalho tenha sido salvo com êxito.
 
 ```
 public void OnWorkItemCreated(
@@ -206,7 +206,7 @@ public void OnWorkItemCreated(
 ```
 
 ### <a name="listening-for-link-creation"></a>Ouvindo a criação do link
- `OnWorkItemLinked`é chamado logo após a criação de um link. É chamado se o link é para um novo item de trabalho ou um item existente. Ele é chamado uma vez para cada item de trabalho.
+ `OnWorkItemLinked` é chamado logo após a criação de um link. É chamado se o link é para um novo item de trabalho ou um item existente. Ele é chamado uma vez para cada item de trabalho.
 
 ```
 public void OnWorkItemLinked
@@ -221,10 +221,10 @@ public void OnWorkItemLinked
 ```
 
 > [!NOTE]
-> Para fazer este exemplo funcionar, você deve adicionar uma referência de projeto `System.Drawing.dll`a e importar o namespace `Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation`. No entanto, essas adições não são necessárias para outras `OnWorkItemLinked`implementações do.
+> Para fazer este exemplo funcionar, você deve adicionar uma referência de projeto a `System.Drawing.dll` e importar o namespace `Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation`. No entanto, essas adições não são necessárias para outras implementações de `OnWorkItemLinked`.
 
 ### <a name="listening-for-link-removal"></a>Ouvindo a remoção do link
- `OnWorkItemRemoved`é chamado uma vez antes de cada link de item de trabalho que é excluído. Se um elemento de modelo for excluído, todos os seus links serão removidos.
+ `OnWorkItemRemoved` é chamado uma vez antes de cada link de item de trabalho que é excluído. Se um elemento de modelo for excluído, todos os seus links serão removidos.
 
 ```
 public void OnWorkItemRemoved
@@ -237,9 +237,9 @@ public void OnWorkItemRemoved
 
  Para usar o exemplo a seguir, adicione esses assemblies do .NET às referências do seu projeto:
 
-- Microsoft.TeamFoundation.Client.dll
+- Microsoft. TeamFoundation. Client. dll
 
-- Microsoft.TeamFoundation.WorkItemTracking.Client.dll
+- Microsoft. TeamFoundation. WorkItemTracking. Client. dll
 
 ```
 
@@ -283,9 +283,9 @@ element.AddReference(ReferenceConstants.WorkItem, linkString, true);
 
    `http://tfServer:8080/tfs/projectCollection`
 
-   O caso é importante `projectCollection`no.
+   O caso é importante em `projectCollection`.
 
-- `RepositoryGuid`pode ser obtido de sua conexão do TFS:
+- `RepositoryGuid` pode ser obtida em sua conexão do TFS:
 
   ```csharp
   TfsTeamProjectCollection tpc = TfsTeamProjectCollectionFactory...;

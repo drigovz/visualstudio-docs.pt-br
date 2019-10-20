@@ -7,18 +7,18 @@ dev_langs:
 - VB
 helpviewer_keywords:
 - language code style rules [EditorConfig]
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: e4f49df2c775bc3bb95888d76da133898ab9c76e
-ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
+ms.openlocfilehash: 38d625b774bc828741e2e4f227a45a293c029235
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71186502"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72652802"
 ---
 # <a name="language-conventions"></a>Convenções de linguagem
 
@@ -37,7 +37,7 @@ As regras para convenções de linguagem têm o seguinte formato geral:
 
 `option_name = value:severity`
 
-Para cada convenção de linguagem, você pode especificar um valor que define se ou quando preferir o estilo. Muitas regras aceitam um valor `true` de (prefira esse estilo) `false` ou (não prefiro esse estilo). Outras regras aceitam valores como `when_on_single_line` ou `never`. A segunda parte da regra especifica a [severidade](#severity-levels).
+Para cada convenção de linguagem, você pode especificar um valor que define se ou quando preferir o estilo. Muitas regras aceitam um valor de `true` (prefira esse estilo) ou `false` (não prefira esse estilo). Outras regras aceitam valores como `when_on_single_line` ou `never`. A segunda parte da regra especifica a [severidade](#severity-levels).
 
 ::: moniker range=">=vs-2019"
 
@@ -55,7 +55,7 @@ Severidade | Efeito
 `error` | Quando esta regra de estilo for violada, deverá ser exibido um erro do compilador.
 `warning` | Quando esta regra de estilo for violada, deverá ser exibido um aviso do compilador.
 `suggestion` | Quando esta regra de estilo for violada, deverá ser mostrada ao usuário como uma sugestão. As sugestões são exibidas como três pontos cinza sob os dois primeiros caracteres.
-`silent` | Não mostra nada para o usuário quando esta regra é violada. No entanto, os recursos de geração de código geram código neste estilo. As regras `silent` com severidade participam da limpeza e aparecem no menu **ações rápidas e refatoração** .
+`silent` | Não mostra nada para o usuário quando esta regra é violada. No entanto, os recursos de geração de código geram código neste estilo. As regras com severidade `silent` participam da limpeza e aparecem no menu **ações rápidas e refatoração** .
 `none` | Não mostra nada para o usuário quando esta regra é violada. No entanto, os recursos de geração de código geram código neste estilo. As regras com a severidade `none` nunca são exibidas no menu **Ações Rápidas e Refatorações**. Na maioria dos casos, isso é considerado "desabilitado" ou "ignorado".
 
 ::: moniker range=">=vs-2019"
@@ -66,7 +66,7 @@ A partir do Visual Studio 2019 versão 16,3, você pode configurar regras de est
 
 Para alterar a Convenção do estilo de código:
 
-1. Passe o mouse sobre o rabisco no editor e, em seguida, abra o menu de lâmpada que aparece. Escolha **Configurar ou suprimir problemas** > **Configurar \<ID da regra > estilo do código**.
+1. Passe o mouse sobre o rabisco no editor e, em seguida, abra o menu de lâmpada que aparece. Escolha **Configurar ou suprimir problemas**  > **configurar \<rule ID > estilo de código**.
 
    ![Configurar o estilo de código no menu de lâmpada no Visual Studio](media/vs-2019/configure-code-style.png)
 
@@ -76,7 +76,7 @@ Para alterar a Convenção do estilo de código:
 
    O Visual Studio adiciona ou modifica a definição de configuração no arquivo EditorConfig, conforme mostrado na caixa de visualização.
 
-Para alterar a severidade da violação do estilo de código, siga as mesmas etapas, mas **escolha \<configurar ID da regra > severidade** em vez de **Configurar \<a ID da regra > estilo do código**. Para obter mais informações, consulte [Configurar automaticamente a severidade da regra](../code-quality/use-roslyn-analyzers.md#automatically-configure-rule-severity).
+Para alterar a severidade da violação de estilo de código, siga as mesmas etapas, mas escolha **configurar \<rule id > severidade** em vez de **configurar \<rule ID > estilo de código**. Para obter mais informações, consulte [Configurar automaticamente a severidade da regra](../code-quality/use-roslyn-analyzers.md#automatically-configure-rule-severity).
 
 ::: moniker-end
 

@@ -1,23 +1,23 @@
 ---
-title: Designer de fluxo de trabalho – Designers de atividade de máquina de estado
+title: Designers de atividade de máquina de estado Designer de Fluxo de Trabalho
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 97f0bff5-7e48-4914-8f04-8015a1c6bfae
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: de928ff095c5700506060b9fceb609003f1b9ab1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+author: jillre
+ms.openlocfilehash: b5ea5034f5967b5ba94b57746fd30bf7f1d750e6
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62809515"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72649927"
 ---
 # <a name="state-machine-activity-designers"></a>Designer de atividade do computador de estado
 
-Designer de fluxo de trabalho inclui um número de designers de atividade que você pode usar para construir os fluxos de trabalho. Esta seção contém sistema forneceu os designers de atividade usados para criar e gerenciar fluxos de trabalho do computador de estado. Os tópicos a seguir descrevem esses designers e fornecem orientação sobre como usá-los.
+O Designer de Fluxo de Trabalho inclui vários designers de atividade que você pode usar ao construir seus fluxos de trabalho. Esta seção contém sistema forneceu os designers de atividade usados para criar e gerenciar fluxos de trabalho do computador de estado. Os tópicos a seguir descrevem esses designers e fornecem orientação sobre como usá-los.
 
 ## <a name="reference"></a>Referência
  <xref:System.Activities.Statements.StateMachine>

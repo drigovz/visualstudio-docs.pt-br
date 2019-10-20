@@ -3,17 +3,17 @@ title: Conjunto de regras mínimas nativo
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 2d898bc4-fba5-472e-8f09-b0c6b511c5a3
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: da3b62d8c8426b80eb4cd30055fb64028692c55c
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: bc7888a49f5bc7896f5f3cd568b1062e9b9a0379
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72445626"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72649177"
 ---
 # <a name="native-minimum-rules-rule-set"></a>Conjunto de regras mínimas nativo
 
@@ -92,13 +92,13 @@ Inclua esse conjunto de regras em qualquer conjunto personalizado de regras que 
 |[C28182](../code-quality/c28182.md)|Desreferenciando ponteiro nulo. O ponteiro contém o mesmo valor NULO que outro ponteiro tinha.|
 |[C28202](../code-quality/c28202.md)|Referência inválida para membro não estático|
 |[C28203](../code-quality/c28203.md)|Referência ambígua ao membro de classe.|
-|[C28205](../code-quality/c28205.md)|\_Success @ no__t-1 ou \_On @ no__t-3failure @ no__t-4 usado em um contexto inválido|
+|[C28205](../code-quality/c28205.md)|\_Success \_ ou \_On \_failure \_ usados em um contexto ilegal|
 |[C28206](../code-quality/c28206.md)|O operando da esquerda aponta para um struct, use '->'|
 |[C28207](../code-quality/c28207.md)|O operando da esquerda é um struct, use '.'|
 |[C28210](../code-quality/c28210.md)|Anotações para o contexto __on_failure não devem estar no pré-contexto explícito|
 |[C28211](../code-quality/c28211.md)|Nome esperado do contexto estático para SAL_context|
 |[C28212](../code-quality/c28212.md)|Expressão de ponteiro esperada para anotação|
-|[C28213](../code-quality/c28213.md)|A anotação \_Use @ no__t-1decl @ no__t-2annotations @ no__t-3 deve ser usada para fazer referência, sem modificação, uma declaração anterior.|
+|[C28213](../code-quality/c28213.md)|O \_Use \_decl \_annotations anotação \_ deve ser usado para fazer referência, sem modificação, uma declaração anterior.|
 |[C28214](../code-quality/c28214.md)|Os nomes do parâmetro de atributo devem ser p1...p9|
 |[C28215](../code-quality/c28215.md)|O typefix não pode ser aplicado a um parâmetro que já tem um typefix|
 |[C28216](../code-quality/c28216.md)|A anotação checkReturn se aplica apenas a pós-condições para o parâmetro da função específica.|
@@ -140,7 +140,7 @@ Inclua esse conjunto de regras em qualquer conjunto personalizado de regras que 
 |[C28267](../code-quality/c28267.md)|Foi encontrado um erro de sintaxe nas anotações da função.|
 |[C28272](../code-quality/c28272.md)|A anotação para função, parâmetro quando examinar for inconsistente com a declaração da função|
 |[C28273](../code-quality/c28273.md)|Para função, os indícios são inconsistentes com a declaração da função|
-|[C28275](../code-quality/c28275.md)|O parâmetro para \_Macro @ no__t-1value @ no__t-2 é nulo|
+|[C28275](../code-quality/c28275.md)|O parâmetro para \_Macro \_value \_ é nulo|
 |[C28279](../code-quality/c28279.md)|Para símbolo, um 'início' foi encontrado sem um 'fim' correspondente|
 |[C28280](../code-quality/c28280.md)|Para símbolo, um 'fim' foi encontrado sem um 'início' correspondente|
 |[C28282](../code-quality/c28282.md)|Cadeias de caracteres de formato devem estar em pré-condições|

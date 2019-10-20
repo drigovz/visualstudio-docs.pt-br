@@ -13,17 +13,17 @@ helpviewer_keywords:
 - TableAdapters, searching data
 - queries [Visual Studio], TableAdapters
 ms.assetid: 104d1d19-b5a9-4071-b81e-1b3af08e9c7b
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 33282f65c004643ec29b4c4d3074261ff437662c
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 0926558c4d6e94032e2af2c75189f287da8d4811
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68925648"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72642155"
 ---
 # <a name="create-parameterized-tableadapter-queries"></a>Criar consultas TableAdapter parametrizadas
 
@@ -40,7 +40,7 @@ Você cria consultas de TableAdapter com parâmetros no **Designer de conjunto d
 
 - Crie um novo TableAdapter, adicionando uma cláusula WHERE com os parâmetros desejados à instrução SQL. Para obter mais informações, consulte [criar e configurar TableAdapters](../data-tools/create-and-configure-tableadapters.md).
 
-     - ou -
+     \- ou -
 
 - Acrescente uma consulta a um TableAdapter existente, adicionando uma cláusula WHERE com os parâmetros desejados à instrução SQL.
 
@@ -65,7 +65,7 @@ Você cria consultas de TableAdapter com parâmetros no **Designer de conjunto d
 
 4. Digite um nome na caixa **Nome da nova consulta** ao criar uma nova consulta.
 
-     - ou -
+     \- ou -
 
      Selecione uma consulta na caixa **Nome da consulta existente**.
 
@@ -77,7 +77,7 @@ Você cria consultas de TableAdapter com parâmetros no **Designer de conjunto d
 
 ### <a name="query-for-null-values"></a>Consultar valores nulos
 
-Os parâmetros do TableAdapter podem ser atribuídos a valores nulos quando você deseja consultar registros que não têm valor atual. Por exemplo, considere a seguinte consulta que tem um `ShippedDate` parâmetro em sua `WHERE` cláusula:
+Os parâmetros do TableAdapter podem ser atribuídos a valores nulos quando você deseja consultar registros que não têm valor atual. Por exemplo, considere a seguinte consulta que tem um parâmetro `ShippedDate` em sua cláusula `WHERE`:
 
 ```sql
 SELECT CustomerID, OrderDate, ShippedDate
@@ -96,7 +96,7 @@ Para habilitar uma consulta para aceitar valores nulos:
 
 2. Na janela **Propriedades** , selecione **parâmetros**e clique no botão de reticências ( **...** ) para abrir o **Editor de coleção de parâmetros**.
 
-3. Selecione o parâmetro que permite valores nulos e defina a propriedade AllowDBNull `true`como.
+3. Selecione o parâmetro que permite valores nulos e defina a propriedade **AllowDBNull** como `true`.
 
 ## <a name="see-also"></a>Consulte também
 

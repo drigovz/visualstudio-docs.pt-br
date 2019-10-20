@@ -1,5 +1,5 @@
 ---
-title: Designer de fluxo de trabalho - Designer de atividade do fluxograma
+title: Designer de Fluxo de Trabalho-designer de atividade de fluxograma
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,21 +7,21 @@ f1_keywords:
 - System.Activities.Statements.FlowStep.UI
 - System.Activities.Core.Presentation.FlowStart.UI
 ms.assetid: d5af2276-5215-4138-880a-cf2b90bbf3a0
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ad02dea2dcab30d65aaefecc5a5e54804c9baaff
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5f56c7eac56572d8a3be1f8b478feb0543390481
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62949650"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650453"
 ---
 # <a name="flowchart-activity-designer"></a>Designer de atividade do fluxograma
 
-A atividade de <xref:System.Activities.Statements.Flowchart> é usada para criar fluxos de trabalho que definem e gerencia controles de fluxo complexos. Um <xref:System.Activities.Statements.Flowchart> podem ser criados no código ou usando o Designer de fluxo de trabalho. Este tópico documenta a experiência de Designer de fluxo de trabalho. O designer de atividade de fluxo de trabalho do Designer de fluxo de trabalho permite aos desenvolvedores criar fluxos de trabalho de uma maneira natural.
+A atividade de <xref:System.Activities.Statements.Flowchart> é usada para criar fluxos de trabalho que definem e gerencia controles de fluxo complexos. Um <xref:System.Activities.Statements.Flowchart> pode ser criado no código ou usando Designer de Fluxo de Trabalho. Este tópico documenta a experiência de Designer de Fluxo de Trabalho. O designer de atividade Designer de Fluxo de Trabalho Workflow permite que os desenvolvedores criem fluxos de trabalho de maneira natural.
 
 ## <a name="the-flowchart-activity"></a>A atividade do fluxograma
 
@@ -29,11 +29,11 @@ A atividade de <xref:System.Activities.Statements.Flowchart> é usada para criar
 
 ### <a name="using-the-flowchart-activity-designer"></a>Usando o designer de atividade do fluxograma
 
-O **fluxograma** designer de atividade pode ser encontrado na **fluxograma** categoria dos **caixa de ferramentas**, que é acessado clicando o **caixa de ferramentas**guia no Designer de fluxo de trabalho. Como alternativa, selecione **caixa de ferramentas** da **exibição** menus ou pressione **Ctrl**+**Alt** + **X**.
+O designer de atividades de **fluxograma** pode ser encontrado na categoria **fluxograma** da **caixa de ferramentas**, que é acessada clicando na guia **caixa de ferramentas** na Designer de fluxo de trabalho. Como alternativa, selecione **caixa de ferramentas** no menu **Exibir** ou pressione **Ctrl** +**ALT** +**X**.
 
-O **fluxograma** designer de atividade pode ser arrastado da **caixa de ferramentas** e ignorados sobre a superfície do Designer de fluxo de trabalho onde quer que os designers de atividade são colocados normalmente, como uma atividade raiz ou como o filho de outra atividade de fluxo de controle. Se o **fluxograma** designer de atividade é descartado em uma superfície de Designer de fluxo de trabalho em branco, ele cria um <xref:System.Activities.Statements.Flowchart> atividade, que, por padrão, apresenta-se em uma exibição expandida na qual é o nó inicial que inicia a execução representado como uma bola verde. Se o **fluxograma** designer de atividade é descartado em outra atividade de fluxo de controle, apresenta-se em uma exibição minimizada que pode ser expandida clicando duas vezes o **fluxograma** designer de atividade. Qualquer atividade na **caixa de ferramentas** podem ser arrastados diretamente para o **fluxograma** designer de atividade, incluindo outras atividades de fluxo de controle.
+O designer de atividades de **fluxograma** pode ser arrastado da **caixa de ferramentas** e descartado para a superfície de designer de fluxo de trabalho onde os designers de atividade normalmente são colocados, seja como uma atividade raiz ou como o filho de outra atividade de fluxo de controle. Se o designer de atividades do **fluxograma** for descartado em uma superfície de designer de fluxo de trabalho em branco, ele criará uma atividade de <xref:System.Activities.Statements.Flowchart>, que, por padrão, apresenta em uma exibição expandida na qual o nó inicial que inicia a execução é representado como uma bola verde. Se o designer de atividades de **fluxograma** for descartado em outra atividade de fluxo de controle, ele se apresentará em uma exibição minimizada que pode ser expandida clicando-se duas vezes no designer de atividades do **fluxograma** . Qualquer atividade na **caixa de ferramentas** pode ser arrastada diretamente para o designer de atividades do **fluxograma** , incluindo outras atividades de fluxo de controle.
 
-Após arrastar vários designers de atividade para a tela do Designer de fluxo de trabalho, o <xref:System.Activities.Activity> objetos que representam podem ser vinculados juntos para especificar a ordem de execução. Para criar um link entre uma atividade de origem e uma atividade de destino, o mouse sobre o designer de atividade de origem e quadradas alças aparecem em cada lado deles. Clique em uma das alças de quadradas e arraste-a segurando o botão do mouse na uma das alças que aparece de maneira similar ao redor de atividade de destino para passa sobre ele com o mouse. Liberar o botão do mouse e um link é criado entre essas duas atividades que é representado como uma seta do designer de origem para o designer de destino.
+Depois de arrastar vários designers de atividade para a tela Designer de Fluxo de Trabalho, os objetos <xref:System.Activities.Activity> que eles representam podem ser vinculados juntos para especificar a ordem de execução. Para criar um link entre uma atividade de origem e uma atividade de destino, o mouse sobre o designer de atividade de origem e quadradas alças aparecem em cada lado deles. Clique em uma das alças de quadradas e arraste-a segurando o botão do mouse na uma das alças que aparece de maneira similar ao redor de atividade de destino para passa sobre ele com o mouse. Liberar o botão do mouse e um link é criado entre essas duas atividades que é representado como uma seta do designer de origem para o designer de destino.
 
 ### <a name="flowchart-activity-properties"></a>Propriedades de atividade do fluxograma
 
@@ -41,7 +41,7 @@ A tabela a seguir mostra as propriedades de <xref:System.Activities.Statements.F
 
 |Nome da Propriedade|Necessária|Uso|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|False|Especifica o nome para exibição do designer de atividade no cabeçalho. O valor padrão é fluxograma. O valor pode ser editado na **propriedades** janela ou diretamente no cabeçalho do designer de atividade.<br /><br /> Embora não seja necessário <xref:System.Activities.Activity.DisplayName%2A> restrita, é uma prática recomendada usar um.|
+|<xref:System.Activities.Activity.DisplayName%2A>|False|Especifica o nome para exibição do designer de atividade no cabeçalho. O valor padrão é fluxograma. O valor pode ser editado na janela **Propriedades** ou diretamente no cabeçalho do designer de atividade.<br /><br /> Embora não seja necessário <xref:System.Activities.Activity.DisplayName%2A> restrita, é uma prática recomendada usar um.|
 |<xref:System.Activities.Statements.Flowchart.Variables%2A>|False|A coleção de variáveis que são definidos no escopo deste <xref:System.Activities.Statements.Flowchart> para compartilhar o estado através das atividades filhos.|
 |<xref:System.Activities.Statements.Flowchart.StartNode%2A>|False|<xref:System.Activities.Statements.FlowNode> que é executado quando <xref:System.Activities.Statements.Flowchart> iniciar.|
 |<xref:System.Activities.Statements.Flowchart.Nodes%2A>|False|Contém a coleção de objetos <xref:System.Activities.Statements.FlowNode> em <xref:System.Activities.Statements.Flowchart>.|

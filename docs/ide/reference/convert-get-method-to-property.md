@@ -3,8 +3,8 @@ title: Converter o método Get em propriedade; converter propriedade em um méto
 ms.date: 01/26/2018
 ms.topic: reference
 ms.devlang: csharp
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 f1_keywords:
 - vs.csharp.refactoring.convertmethodtoproperty
@@ -12,12 +12,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 87fc623f781c54267fa70da7c5d2a341823e35ae
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
-ms.translationtype: HT
+ms.openlocfilehash: ac33db013a8cea11b373e4104bf2d58a1b22cef4
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263094"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72654521"
 ---
 # <a name="convert-get-method-to-property--convert-property-to-get-method-refactorings"></a>Refatorações para converter o método Get em propriedade/converter uma propriedade no método Get
 
@@ -27,9 +27,9 @@ Essas refatorações aplicam-se a:
 
 ## <a name="convert-get-method-to-property"></a>Converter o método Get em propriedade
 
-**O quê:** Permite converter um método Get em uma propriedade (e, opcionalmente, no método Set).
+**O quê:** permite converter um método Get em uma propriedade (e opcionalmente seu método Set).
 
-**Quando:** Você tem um método Get que não contêm nenhuma lógica.
+**Quando:** você tem um método Get que não contêm nenhuma lógica.
 
 ### <a name="how-to"></a>Como fazer
 
@@ -68,9 +68,9 @@ public int MyValue
 
 ## <a name="convert-property-to-get-method"></a>Converter propriedade em método Get
 
-**O quê:** Permite converter uma propriedade em um método Get
+**O quê:** permite converter uma propriedade em um método Get
 
-**Quando:** Você tem uma propriedade que envolve mais do que imediatamente configurar e obter um valor
+**Quando:** você tem uma propriedade que envolve mais do que imediatamente configurar e obter um valor
 
 ### <a name="how-to"></a>Como fazer
 

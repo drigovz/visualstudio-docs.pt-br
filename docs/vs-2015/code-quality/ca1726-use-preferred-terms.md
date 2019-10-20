@@ -1,5 +1,5 @@
 ---
-title: 'CA1726: Use termos preferenciais | Microsoft Docs'
+title: 'CA1726: usar os termos preferenciais | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -11,36 +11,36 @@ helpviewer_keywords:
 - UsePreferredTerms
 ms.assetid: 642b2acd-3a33-4d1f-b0a7-67073ae73be2
 caps.latest.revision: 24
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 67dab4c732faa04af44800f740d78c4ce4f9dc80
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f5d184684a6ec30c216b7274313905781843071b
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68143158"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72671575"
 ---
-# <a name="ca1726-use-preferred-terms"></a>CA1726: Usar termos preferenciais
+# <a name="ca1726-use-preferred-terms"></a>CA1726: usar termos preferenciais
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Para a documentação mais recente do Visual Studio, consulte [CA1726: Use termos preferenciais](https://docs.microsoft.com/visualstudio/code-quality/ca1726-use-preferred-terms).  
-  
-|||  
-|-|-|  
-|NomeDoTipo|UsePreferredTerms|  
-|CheckId|CA1726|  
-|Categoria|Microsoft.Naming|  
-|Alteração Significativa|Interrupção - quando acionado em assemblies<br /><br /> Separação de não - quando disparado em parâmetros de tipo|  
-  
-## <a name="cause"></a>Causa  
- O nome de um identificador visível externamente inclui um termo para o qual existe um termo preferido, alternativo. Como alternativa, o nome inclui o termo sinalizador ou sinalizadores.  
-  
-## <a name="rule-description"></a>Descrição da Regra  
- Esta regra analisa um identificador em tokens. Cada token único e cada combinação contígua de token dupla é comparado com os termos que são criados para a regra e na seção preterido de dicionários personalizados. A tabela a seguir mostra os termos que são incorporados a regra e suas alternativas preferenciais.  
-  
-|Termo obsoleto|Termo preferencial|  
-|-------------------|--------------------|  
+Para obter a documentação mais recente sobre o Visual Studio, consulte [CA1726: usar os termos preferenciais](https://docs.microsoft.com/visualstudio/code-quality/ca1726-use-preferred-terms).
+
+|||
+|-|-|
+|NomeDoTipo|UsePreferredTerms|
+|CheckId|CA1726|
+|Categoria|Microsoft. Naming|
+|Alteração Significativa|Quebra-quando acionado em assemblies<br /><br /> Não separável-quando acionado em parâmetros de tipo|
+
+## <a name="cause"></a>Causa
+ O nome de um identificador visível externamente inclui um termo para o qual existe um termo preferido, alternativo. Como alternativa, o nome inclui o sinalizador de termo ou sinalizadores.
+
+## <a name="rule-description"></a>Descrição da Regra
+ Essa regra analisa um identificador em tokens. Cada único token e uma combinação de token duplo contígua é comparada com os termos criados na regra e na seção preterida de quaisquer dicionários personalizados. A tabela a seguir mostra os termos que são criados na regra e suas alternativas preferenciais.
+
+|Termo obsoleto|Termo preferencial|
+|-------------------|--------------------|
 |`Arent`|`AreNot`|
 |`Cancelled`|`Canceled`|
 |`Cant`|`Cannot`|
@@ -65,12 +65,12 @@ Para a documentação mais recente do Visual Studio, consulte [CA1726: Use termo
 |`Wont`|`WillNot`|
 |`Wouldnt`|`WouldNot`|
 |`Writeable`|`Writable`|
-  
-## <a name="how-to-fix-violations"></a>Como Corrigir Violações  
- Para corrigir uma violação dessa regra, substitua o termo com o termo preferencial de alternativo.  
-  
-## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos  
- Suprima um aviso nessa regra somente se o nome do identificador é intencional e se relacionam especificamente a termo original em vez do termo preferencial.  
-  
-## <a name="related-rules"></a>Regras relacionadas  
+
+## <a name="how-to-fix-violations"></a>Como Corrigir Violações
+ Para corrigir uma violação dessa regra, substitua o termo pelo termo alternativo preferido.
+
+## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos
+ Suprimir um aviso dessa regra somente se o nome do identificador for intencional e estiver relacionado especificamente ao termo original em vez do termo preferido.
+
+## <a name="related-rules"></a>Regras relacionadas
  [Avisos de Nomenclatura](../code-quality/naming-warnings.md)

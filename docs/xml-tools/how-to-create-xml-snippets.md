@@ -1,21 +1,21 @@
 ---
-title: 'Como: Criar snippet XML'
+title: 'Como: Crie snippets XML'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: d8556dd7-1382-4af7-ba80-3e873c9416be
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d5ba351c20328829c05168d846fb7bffad7c11d
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: eb511ba6f2eea9c56be4e826c3b689856c22214a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926503"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72645933"
 ---
-# <a name="how-to-create-xml-snippets"></a>Como: Criar snippets XML
+# <a name="how-to-create-xml-snippets"></a>Como: criar trechos XML
 
 O editor de XML pode ser usado para criar novos trechos de código XML. O editor inclui um snippet XML, chamado “Snippets”, que é um snippet de texto constante para criar novos snippets XML.
 
@@ -43,7 +43,7 @@ Para criar um novo trecho de código XML, crie um novo arquivo XML e use o recur
 
 ## <a name="snippet-description"></a>Descrição do trecho
 
-Esta seção descreve alguns dos elementos-chave no snippet de texto constante. Para obter mais informações sobre elementos de esquema usados pelos trechos XML, consulte [referência de esquema](../ide/code-snippets-schema-reference.md)de trechos de código.
+Esta seção descreve alguns dos elementos-chave no snippet de texto constante. Para obter mais informações sobre elementos de esquema usados pelos trechos XML, consulte [referência de esquema de trechos de código](../ide/code-snippets-schema-reference.md).
 
 ### <a name="snippettype-element"></a>Elemento SnippetType
 
@@ -56,7 +56,7 @@ Suporte do editor dois tipos de snippet:
 </SnippetTypes>
 ```
 
-O `Expansion` tipo determina se o trecho de código aparece quando você invoca o comando **Insert Snippet** . O `SurroundsWith` tipo determina se o trecho de código é exibido quando você invoca o comando **Circundar com** .
+O tipo de `Expansion` determina se o trecho de código aparece quando você invoca o comando **Inserir trecho de código** . O tipo de `SurroundsWith` determina se o trecho de código aparece quando você invoca o comando **Circundar com** .
 
 ### <a name="code-element"></a>Elemento de código
 
@@ -104,7 +104,7 @@ O elemento de `Literal` é usado para identificar o texto de substituição que 
 </Literal
 ```
 
-Literais também podem se referir funções. O editor de XML inclui uma função chamada **LookupPrefix**. A função **LookupPrefix** pesquisa o URI de namespace fornecido do local no documento XML para o qual esse trecho é invocado e retorna o prefixo de namespace definido para esse namespace, se houver, e inclui os dois-pontos (:) nesse nome. Veja a seguir um exemplo de um `Literal` elemento que usa a função **LookupPrefix** .
+Literais também podem se referir funções. O editor de XML inclui uma função chamada **LookupPrefix**. A função **LookupPrefix** pesquisa o URI de namespace fornecido do local no documento XML para o qual esse trecho é invocado e retorna o prefixo de namespace definido para esse namespace, se houver, e inclui os dois-pontos (:) nesse nome. Veja a seguir um exemplo de um elemento `Literal` que usa a função **LookupPrefix** .
 
 ```xml
 <Literal Editable="false">
@@ -118,5 +118,5 @@ A variável de $prefix$ pode então ser usado em qualquer lugar no seu snippet X
 ## <a name="see-also"></a>Consulte também
 
 - [Trechos de código XML](../xml-tools/xml-snippets.md)
-- [Como: Usar trechos XML](../xml-tools/how-to-use-xml-snippets.md)
-- [Como: Gerar um trecho XML a partir de um esquema XML](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md)
+- [Como: usar trechos XML](../xml-tools/how-to-use-xml-snippets.md)
+- [Como gerar um trecho XML a partir de um esquema XML](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md)

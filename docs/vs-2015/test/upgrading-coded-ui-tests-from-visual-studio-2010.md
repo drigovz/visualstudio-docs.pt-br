@@ -1,26 +1,26 @@
 ---
-title: Atualizando testes de IU codificado
+title: Atualizando testes de IU codificados
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.assetid: 11232a83-73ea-46bd-bc0c-46f74f6e3a42
 caps.latest.revision: 35
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 4ab38f4fc7e0269c1073e71fae9975b240da33f2
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 1db5e653889f75931916c44de22e545415b53a41
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65695098"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72657259"
 ---
 # <a name="upgrading-coded-ui-tests-from-visual-studio-2010"></a>Atualizando testes de IU codificados a partir do Visual Studio 2010
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Projetos de teste que contêm testes de IU codificados criados no [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] SP1 são reparados silenciosamente quando abertos no Visual Studio 2012. Se os Projetos de teste forem inseridos no controle do código-fonte, os arquivos do projeto serão verificados para realização desse reparo. Após o reparo, esses projetos de teste que contêm testes de IU codificados podem ser usados no [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] SP1 e no [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)].
 
- **Requisitos**
+ **Requirements**
 
 - Visual Studio Enterprise
 
@@ -57,11 +57,11 @@ Projetos de teste que contêm testes de IU codificados criados no [!INCLUDE[vs_d
 
   A atualização também contém correções para os seguintes problemas:
 
-- **Cobertura de código:** Impossibilidade de abrir um arquivo de cobertura de código (. Coverage) criado pelo Visual Studio 2012 no [!INCLUDE[vs2010](../includes/vs2010-md.md)] SP1.
+- **Cobertura de código:** impossibilidade de abrir um arquivo de cobertura de código (.coverage) criado pelo Visual Studio 2012 no [!INCLUDE[vs2010](../includes/vs2010-md.md)] SP1.
 
-- **Artefatos de teste presas:** Sua equipe tem um artefato de teste que é atribuído a um usuário inválido no Team Foundation Server (TFS) 2010. Por exemplo, um usuário saiu da empresa, mas ainda tem um caso de teste atribuído a ele. Atualize o TFS 2010 para TFS 2012. Você usa o [!INCLUDE[TCMext](../includes/tcmext-md.md)] 2010 para se conectar ao servidor TFS atualizado. Não é possível atribuir o artefato de teste a qualquer usuário do TFS usando [!INCLUDE[TCMext](../includes/tcmext-md.md)] 2010.
+- **Artefatos de teste presos:** sua equipe tem um artefato de teste que é atribuído a um usuário inválido no Team Foundation Server (TFS) 2010. Por exemplo, um usuário saiu da empresa, mas ainda tem um caso de teste atribuído a ele. Atualize o TFS 2010 para TFS 2012. Você usa o [!INCLUDE[TCMext](../includes/tcmext-md.md)] 2010 para se conectar ao servidor TFS atualizado. Não é possível atribuir o artefato de teste a qualquer usuário do TFS usando [!INCLUDE[TCMext](../includes/tcmext-md.md)] 2010.
 
-- **Teste de carga:** Quando você executar um teste de carga junto com um tipo de rede que não sejam o perfil de rede local (LAN) em um computador Isso é executando o Windows 8, o driver do emulador de rede faz com que o sistema operacional falhe. Para obter mais detalhes, consulte o [Artigo KB 2736182](http://support.microsoft.com/kb/2736182).
+- **Teste de carga:** quando você executa um teste de carga junto com um tipo de rede que não é o perfil de rede local (LAN) em um computador com o Windows 8, o driver do emulador de rede faz com que o sistema operacional falhe. Para obter mais detalhes, consulte o [Artigo KB 2736182](http://support.microsoft.com/kb/2736182).
 
 ## <a name="see-also"></a>Consulte também
- [Portando, migrando e Atualizando projetos do Visual Studio](../porting/porting-migrating-and-upgrading-visual-studio-projects.md) [atualizando testes de versões anteriores do Visual Studio](https://msdn.microsoft.com/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52) [usar a automação de interface do usuário para testar seu código](../test/use-ui-automation-to-test-your-code.md) [gerando um Teste de uma gravação de ação existente de IU codificado](https://msdn.microsoft.com/library/56736963-9027-493b-b5c4-2d4e86d1d497) [configurações e plataformas com suporte para testes de IU codificados e gravações da ação](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
+ [Portando, migrando e Atualizando projetos do Visual Studio](../porting/porting-migrating-and-upgrading-visual-studio-projects.md) [atualizando testes de versões anteriores do Visual Studio](https://msdn.microsoft.com/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52) [use a automação da interface do usuário para testar seu código](../test/use-ui-automation-to-test-your-code.md) [gerando um teste de interface do usuário codificado de uma gravação](https://msdn.microsoft.com/library/56736963-9027-493b-b5c4-2d4e86d1d497) [de ação existente Configurações e plataformas com suporte para testes de interface do usuário codificados e gravações de ação](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)

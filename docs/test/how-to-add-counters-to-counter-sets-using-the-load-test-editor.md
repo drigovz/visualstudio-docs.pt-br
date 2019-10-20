@@ -7,17 +7,17 @@ helpviewer_keywords:
 - counter sets
 - load tests, counter sets
 ms.assetid: e17d0e71-f982-4fc1-a2df-a1065d37473d
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 004eff423874a07e2b49713eaed16eb1bf8be609
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: e7e547e3dfc863e3459cc0e5c575d394f83582f6
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62979440"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72644352"
 ---
-# <a name="how-to-add-counters-to-counter-sets-using-the-load-test-editor"></a>Como: Adicionar contadores a conjuntos de contadores usando o Editor de Teste de Carga
+# <a name="how-to-add-counters-to-counter-sets-using-the-load-test-editor"></a>Como adicionar contadores a conjuntos de contadores usando o Editor de Teste de Carga
 
 Quando cria um teste de carga com o **Assistente de Teste de Carga**, você adiciona um conjunto inicial de contadores. Isso oferece um conjunto de contadores predefinidos para seu teste de carga. Para saber mais, confira [Especificar os conjuntos de contadores e as regras de limite para computadores em um teste de carga](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md).
 
@@ -57,7 +57,7 @@ Você gerencia os contadores no **Editor de Teste de Carga**. Os conjuntos de co
 
      Selecione o botão de opção **Todos os contadores** para selecionar todos os contadores disponíveis.
 
-7. Escolha **OK**.
+7. Clique em **OK**.
 
     > [!NOTE]
     > Também é possível adicionar contadores como um conjunto de contadores escolhendo um contador ou uma categoria de contador existente, selecionando Copiar e depois colando-o(a) em um nó diferente do conjunto de contadores. Os contadores extras que são copiados, mas não são necessários, podem ser excluídos.

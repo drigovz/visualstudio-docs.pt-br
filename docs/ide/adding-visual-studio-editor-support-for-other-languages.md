@@ -11,17 +11,17 @@ helpviewer_keywords:
 - TextMate language grammar
 - language support
 ms.assetid: d78c43ee-4ef2-42e5-984e-d137de4e7e92
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ae0b2f606b4fe04ad390712f48ac1e06ff9bb86
-ms.sourcegitcommit: 283f2dbce044a18e9f6ac6398f6fc78e074ec1ed
-ms.translationtype: HT
+ms.openlocfilehash: 4e43325a6d749653c063c06f2c1c10c69f708da9
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "65805322"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647792"
 ---
 # <a name="add-visual-studio-editor-support-for-other-languages"></a>Adicionar suporte para outras linguagens ao editor do Visual Studio
 
@@ -91,4 +91,4 @@ Para obter detalhes sobre como criar Gramáticas TextMate, confira [TextMate: in
 
 - [Adicionar uma extensão do Language Server Protocol](../extensibility/adding-an-lsp-extension.md)
 - [Passo a passo: Criar um snippet de código](../ide/walkthrough-creating-a-code-snippet.md)
-- [Passo a passo: Exibir o preenchimento de declaração](../extensibility/walkthrough-displaying-statement-completion.md)
+- [Passo a passo: exibir preenchimento de declaração](../extensibility/walkthrough-displaying-statement-completion.md)

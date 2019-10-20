@@ -3,25 +3,25 @@ title: Executar uma transformação XSLT
 ms.date: 03/05/2019
 ms.topic: conceptual
 ms.assetid: 56a0fe82-5231-487d-8b6e-a08a9b04e0fc
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e84b1c6303da4c0db39da1b3585a7d4548560feb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2fb4aee348ae48a2078f7803a44d4746d3dbacc1
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63001940"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72668803"
 ---
-# <a name="how-to-execute-an-xslt-transformation-from-the-xml-editor"></a>Como: Executar uma transformação XSLT do editor de XML
+# <a name="how-to-execute-an-xslt-transformation-from-the-xml-editor"></a>Como executar uma transformação XSLT do editor de XML
 
-O editor XML permite associar uma folha de estilos XSLT com um documento XML, executar a transformação e exibir a saída. A saída resultante de transformação XSLT são exibidas em uma nova janela do documento.
+O editor de XML permite associar uma folha de estilos XSLT a um documento XML, executar a transformação e exibir a saída. A saída resultante de transformação XSLT são exibidas em uma nova janela do documento.
 
-O **saída** propriedade especifica o nome do arquivo para a saída. Se o **saída** propriedade estiver em branco, um nome de arquivo é gerado no diretório temporário. A extensão de arquivo se baseia a `xsl:output` elemento no seu estilo de estilos e pode ser. *XML*,. *txt* ou. *htm*.
+A propriedade **output** especifica o nome do arquivo para a saída. Se a propriedade de **saída** estiver em branco, um nome de arquivo será gerado no diretório temporário. A extensão de arquivo é baseada no elemento `xsl:output` em sua folha de estilos e pode ser. *XML*,. *txt* ou. *htm*.
 
-Se o **saída** propriedade especifica um nome de arquivo com um. *htm* ou. *HTML* extensão, a saída XSLT é visualizada usando um navegador da web. Todas as outras extensões de arquivo são abertos usando o editor padrão escolhido pelo Visual Studio. Por exemplo, se a extensão de arquivo. *xml*, o Visual Studio usa o editor de XML.
+Se a propriedade de **saída** especificar um nome de arquivo com um. *htm* ou. extensão *HTML* , a saída XSLT é visualizada usando um navegador da Web. Todas as outras extensões de arquivo são abertas usando o editor padrão escolhido pelo Visual Studio. Por exemplo, se a extensão de arquivo for. *XML*, o Visual Studio usa o editor de XML.
 
 ## <a name="execute-an-xslt-transformation-from-an-xml-file"></a>Executar uma transformação XSLT de um arquivo XML
 
@@ -31,13 +31,13 @@ Se o **saída** propriedade especifica um nome de arquivo com um. *htm* ou. *HTM
 
     - Adicione uma instrução de processamento de `xml-stylesheet` para o documento XML. Por exemplo, adicione a seguinte linha ao prólogo do documento: `<?xml-stylesheet type='text/xsl' href='filename.xsl'?>`
 
-       - ou -
+       \- ou -
 
-    - Adicione a folha de estilos XSLT usando a **propriedades** janela. Com o arquivo XML aberto no editor, clique com botão direito em qualquer lugar no editor e escolha **propriedades**. No **propriedades** janela, clique no **folha de estilos** do campo e escolha o botão Procurar (...). Selecione a folha de estilos XSLT e, em seguida, escolha **aberto**.
+    - Adicione a folha de estilos XSLT usando a janela **Propriedades** . Com o arquivo XML aberto no editor, clique com o botão direito do mouse em qualquer lugar no editor e escolha **Propriedades**. Na janela **Propriedades** , clique no campo **folha de estilos** e escolha o botão procurar (...). Selecione a folha de estilos XSLT e, em seguida, escolha **abrir**.
 
-3. Na barra de menus, escolha **XML** > **iniciar sem depuração XSLT**. Ou, pressione **Ctrl**+**Alt**+**F5**.
+3. Na barra de menus, escolha **XML**  > **Iniciar XSLT sem depuração**. Ou pressione **Ctrl** +**ALT** +**F5**.
 
-   A saída de transformação XSLT é exibida em uma nova janela de documento.
+   A saída da transformação XSLT é exibida em uma nova janela de documento.
 
    > [!NOTE]
    > Se não houver nenhuma folha de estilos associada com o documento XML, avisos de uma caixa de diálogo você fornecer a folha de estilos ao uso.
@@ -46,18 +46,18 @@ Se o **saída** propriedade especifica um nome de arquivo com um. *htm* ou. *HTM
 
 1. Abra uma folha de estilos XSLT no editor de XML.
 
-2. Especificar um documento XML na **entrada** campo do documento **propriedades** janela.
+2. Especifique um documento XML no campo de **entrada** da janela **Propriedades** do documento.
 
    > [!NOTE]
-   > O documento XML é o documento de entrada usado para a transformação. Se um documento não for especificado quando a transformação XSLT é iniciada, o **abrir arquivo** caixa de diálogo é exibida e você pode especificar um documento no momento.
+   > O documento XML é o documento de entrada usado para a transformação. Se um documento não for especificado quando a transformação XSLT for iniciada, a caixa de diálogo **Abrir arquivo** será exibida e você poderá especificar um documento nesse momento.
 
-3. Na barra de menus, escolha **XML** > **iniciar sem depuração XSLT**. Ou, pressione **Ctrl**+**Alt**+**F5**.
+3. Na barra de menus, escolha **XML**  > **Iniciar XSLT sem depuração**. Ou pressione **Ctrl** +**ALT** +**F5**.
 
-   A saída de transformação XSLT é exibida em uma nova janela de documento.
+   A saída da transformação XSLT é exibida em uma nova janela de documento.
 
-## <a name="specify-an-output-file-name"></a>Especifique um nome de arquivo de saída
+## <a name="specify-an-output-file-name"></a>Especificar um nome de arquivo de saída
 
-Você pode especificar um nome de arquivo de saída para arquivos XML e XSL. Abra o **propriedades** janela e especifique um nome de arquivo na **saída** campo.
+Você pode especificar um nome de arquivo de saída para arquivos XML e XSL. Abra a janela **Propriedades** e especifique um nome de arquivo no campo **saída** .
 
 ## <a name="see-also"></a>Consulte também
 

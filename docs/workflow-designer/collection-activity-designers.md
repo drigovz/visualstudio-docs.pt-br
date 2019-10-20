@@ -1,20 +1,20 @@
 ---
-title: Designer de fluxo de trabalho – Designers de atividade de coleção
+title: Designers de atividades de coleta de Designer de Fluxo de Trabalho
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 6a07ed95-8319-44a2-8a1d-b4a89f16d0d9
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c1bc98e8f40dda13e6b2b90adade479ed4aeba97
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 397ede1d6b77c687f308204593f60b8e947e0cbf
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62949920"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650680"
 ---
 # <a name="collection-activity-designers"></a>Designer de atividade de coleção
 
-A coleção de designers de atividade são usados para criar e configurar as atividades usadas para gerenciar coleções os tópicos contidos nesta seção e listados na tabela a seguir fornecem orientação sobre como usar os designers Designeractivity de fluxo de trabalho e do modelo.
+Os designers de atividade de coleção são usados para criar e configurar atividades usadas para gerenciar coleções os tópicos contidos nesta seção e listados na tabela a seguir fornecem orientação sobre como usar o Designeractivity de fluxo de trabalho e os designers de modelo.

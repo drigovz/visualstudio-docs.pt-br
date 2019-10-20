@@ -4,17 +4,17 @@ ms.date: 08/31/2017
 ms.topic: conceptual
 helpviewer_keywords:
 - Live Unit Testing
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: bb254dc2d70992c798a95e5e12efcbb72b2a2336
-ms.sourcegitcommit: 1a3c2ca995fd44fc72741b3a100c6e57f4f8702c
+ms.openlocfilehash: a5b136c91873c0af60705ea361a19e53f28e06b0
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "72262347"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653054"
 ---
 # <a name="get-started-with-live-unit-testing"></a>Introdução ao Live Unit Testing
 
@@ -24,7 +24,7 @@ Live Unit Testing pode ser usado para testar soluções direcionadas a .NET Fram
 
 A solução C# completa pode ser baixada do repositório [MicrosoftDocs/visualstudio-docs](https://github.com/MicrosoftDocs/visualstudio-docs/tree/master/docs/test/samples/csharp/UtilityLibraries/) no GitHub.
 
-## <a name="prerequisites"></a>Pré-requisitos
+## <a name="prerequisites"></a>Prerequisites
 
 Este tutorial requer que você tenha instalado o Visual Studio Enterprise Edition com a carga de trabalho de **desenvolvimento de plataforma cruzada do .NET Core** .
 
@@ -48,7 +48,7 @@ A solução é apenas um contêiner para um ou mais projetos. Para criar uma sol
 
 Agora que você criou a solução, criará uma biblioteca de classes chamada StringLibrary que contém vários métodos de extensão para trabalhar com cadeias de caracteres.
 
-1. Em **Gerenciador de soluções**, clique com o botão direito do mouse na solução UtilityLibraries e selecione **Adicionar** > **novo projeto**.
+1. Em **Gerenciador de soluções**, clique com o botão direito do mouse na solução UtilityLibraries e selecione **Adicionar**  > **novo projeto**.
 
 ::: moniker range="vs-2017"
 
@@ -96,7 +96,7 @@ Agora que você criou a solução, criará uma biblioteca de classes chamada Str
 
 A próxima etapa é criar o projeto de teste de unidade para testar a biblioteca StringLibrary. Crie testes de unidade, executando as seguintes etapas:
 
-1. Em **Gerenciador de soluções**, clique com o botão direito do mouse na solução UtilityLibraries e selecione **Adicionar** > **novo projeto**.
+1. Em **Gerenciador de soluções**, clique com o botão direito do mouse na solução UtilityLibraries e selecione **Adicionar**  > **novo projeto**.
 
 ::: moniker range="vs-2017"
 
@@ -196,7 +196,7 @@ Para estender a cobertura de código para o método `StartsWithLower`, faça o s
 
     ![Cobertura de código do método StartsWithLower](media/lut-start/lut-extended-cs.png)
 
-Em alguns casos, os testes com êxito no **Gerenciador de Testes** pode ficar esmaecidos. Isso indica que um teste está em execução no momento ou que o teste não foi executado novamente porque não houve nenhuma alteração no código que pudesse afetá-lo desde sua última execução.
+Em alguns casos, testes bem-sucedidos no **Gerenciador de testes** podem estar esmaecidos. Isso indica que um teste está em execução no momento ou que o teste não foi executado novamente porque não houve alterações de código que afetem o teste desde que ele foi executado pela última vez.
 
 Até agora, todos os nossos testes tiveram êxito. Na próxima seção, vamos examinar como você pode tratar uma falha de teste.
 

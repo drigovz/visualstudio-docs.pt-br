@@ -1,5 +1,5 @@
 ---
-title: Usando o Designer de fluxo de trabalho de máquina de estado herdado | Microsoft Docs
+title: Usando o computador de estado herdado Designer de Fluxo de Trabalho | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-workflow-designer
@@ -15,54 +15,47 @@ helpviewer_keywords:
 - StateInitializationActivity activity
 ms.assetid: 2cd21123-35c2-4eaf-82f6-86fce7a8f04d
 caps.latest.revision: 5
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 54469f2e255ff9ea726ea1b6c13abcb55c33252d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 8c2b1ce1f1b2c6a16b5576880904feadf37a3e7b
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444117"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72606767"
 ---
 # <a name="using-the-legacy-state-machine-workflow-designer"></a>Usando o computador de estado herdado Designer de Fluxo de Trabalho
-Quando você estiver criando um novo projeto de fluxo de trabalho de máquina de estado no [!INCLUDE[vs2010](../includes/vs2010-md.md)] que tem como alvo o [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] ou o [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)], você pode optar por usar o **aplicativo de Console do fluxo de trabalho de máquina de estado** ou o  **Biblioteca de fluxo de trabalho de máquina de estado** modelo de projeto herdados. Se você escolher um desses modelos de projeto do computador de estado, o designer do computador de estado é apresentado como a interface do usuário herdado do designer de fluxo de trabalho. Para obter informações sobre os modelos de projeto de máquina de estado herdado, consulte [como: Criar aplicativos de Console de fluxo de trabalho de máquina de estado (herdado)](../workflow-designer/how-to-create-state-machine-workflow-console-applications-legacy.md) e [como: Criar uma biblioteca de fluxo de trabalho de máquina de estado (herdado)](../workflow-designer/how-to-create-a-state-machine-workflow-library-legacy.md).  
-  
- Um fluxo de trabalho do computador de estado consiste em um conjunto de estados. Um estado denotado é como um estado inicial. Cada estado pode receber um determinado conjunto de eventos. Baseado em um evento, uma transição pode ser feita para outro estado. O fluxo de trabalho do computador de estado pode ter um estado final. Quando uma transição é feita ao estado final, o fluxo de trabalho completa.  
-  
-## <a name="state-machine-designer-views"></a>Modos de exibição do designer do computador de estado  
- O designer do computador de estado é um designer de forma livre, o que significa que as atividades podem ser movidos para o redor livremente na superfície de design. O designer de máquina de estado tem dois modos de exibição: *estado* exibição e *controlado por evento* modo de exibição.  
-  
- Modo de estado mostra as atividades de estado e as atividades corretamente eventos que podem ser contidas dentro de uma atividade de estado. Nesta exibição, as transições de um estado para outro são representadas por linhas que estendem de atividade de baseada em um estado para outro estado. Você também pode criar transições desenhando a linha você mesmo. Para desenhar a transição, selecione a atividade de baseada e em seguida, selecione uma das alças da atividade e arraste-a. Esta ação desenha uma linha. Esta linha é anexada no estado de destino, indicando uma transição entre estados.  
-  
- Para acessar a exibição orientada evento, clique duas vezes em uma atividade de baseada. O designer que aparece é bem como o designer sequencial de fluxo de trabalho. Na parte superior do designer, uma barra de navegação mostra a hierarquia de atividades até a atividade de baseada que é exibida. Você pode navegar de volta para o modo de estado clicando em qualquer elemento na hierarquia exibida. Se você desenhou uma transição de um estado para outro no modo de estado, e se você está exibindo a exibição orientada a eventos da atividade, uma atividade do estado é adicionada à atividade de baseada para você. Se você alterar as propriedades de atividade do estado, é passado refletida no modo de estado.  
-  
-## <a name="state-machine-workflow-activities"></a>Atividades de fluxo de trabalho do computador de estado  
- A tabela a seguir descreve as atividades principais que são usadas em um designer de fluxo de trabalho do computador de estado.  
-  
-|Nome da caixa de ferramentas|Atividade|Descrição|  
-|------------------|--------------|-----------------|  
-|**Estado**|[StateActivity](http://go.microsoft.com/fwlink?LinkID=65042)|Representa um estado em uma máquina de estado. pode conter adicionais **StateActivity** atividades. Para obter mais informações, consulte [usando a atividade de StateActivity](http://go.microsoft.com/fwlink?LinkID=65083).|  
-|**SetState**|[SetStateActivity](http://go.microsoft.com/fwlink?LinkID=65041)|Especifica uma transição para um novo estado. Para obter mais informações, consulte [usando a atividade de SetStateActivity](http://go.microsoft.com/fwlink?LinkID=65082).|  
-|**StateInitialization**|[StateInitializationActivity](http://go.microsoft.com/fwlink?LinkID=65044)|Executa quando um estado estiver conectado; pode conter outras atividades. Para obter mais informações, consulte [usando a atividade de StateInitialization](http://go.microsoft.com/fwlink?LinkID=65006).|  
-|**StateFinalization**|[StateFinalizationActivity](http://go.microsoft.com/fwlink?LinkID=65043)|Executes continha atividades deixando uma [StateActivity](http://go.microsoft.com/fwlink?LinkID=65042) atividade. Para obter mais informações, consulte [usando a atividade de StateFinalizationActivity](http://go.microsoft.com/fwlink?LinkID=65008).|  
-|**EventDriven**|[EventDrivenActivity](http://go.microsoft.com/fwlink?LinkID=65029)|Usado para os estados que contam com um evento externa para iniciar executar. O **EventDrivenActivity** atividade deve ter uma atividade que implementa o [IEventActivity](http://go.microsoft.com/fwlink?LinkID=65032) interface como a primeira atividade filho. Para obter mais informações, consulte [usando a atividade de EventDrivenActivity](http://go.microsoft.com/fwlink?LinkID=65068).|  
-  
- O componente principal em um fluxo de trabalho de máquina de estado é o [StateActivity](http://go.microsoft.com/fwlink?LinkID=65042) atividade. Como os eventos são capturados em vários pontos em um fluxo de trabalho do computador de estado, os estados diferentes estão conectados para manipular as tarefas associadas com eventos. Durante o tempo de vida de fluxo de trabalho, o fluxo de trabalho pode sair e inserir vários estados diferentes. Esses estados conectam entre si usando o [SetStateActivity](http://go.microsoft.com/fwlink?LinkID=65041) atividade.  
-  
- Quando você arrasta uma nova **StateActivity** para a superfície de design de fluxo de trabalho, você pode adicionar [EventDrivenActivity](http://go.microsoft.com/fwlink?LinkID=65029), [StateInitializationActivity](http://go.microsoft.com/fwlink?LinkID=65044), [ StateFinalizationActivity](http://go.microsoft.com/fwlink?LinkID=65043), ou adicionais **StateActivity** atividades como filhos.  
-  
+Ao criar um novo projeto de fluxo de trabalho de máquina de estado em [!INCLUDE[vs2010](../includes/vs2010-md.md)] que tem como alvo o [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] ou o [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)], você pode optar por usar o **aplicativo de estado do console de fluxo de trabalho de máquina** ou a biblioteca de fluxo de trabalho de **máquina** de estado herdada modelo de projeto. Se você escolher um desses modelos de projeto do computador de estado, o designer do computador de estado é apresentado como a interface do usuário herdado do designer de fluxo de trabalho. Para obter informações sobre os modelos de projeto de máquina de estado herdado, consulte [como criar estado aplicativos de console de fluxo de trabalho (Herdado)](../workflow-designer/how-to-create-state-machine-workflow-console-applications-legacy.md) e [como criar uma biblioteca de fluxo de trabalho de estado (herdada)](../workflow-designer/how-to-create-a-state-machine-workflow-library-legacy.md).
+
+ Um fluxo de trabalho do computador de estado consiste em um conjunto de estados. Um estado denotado é como um estado inicial. Cada estado pode receber um determinado conjunto de eventos. Baseado em um evento, uma transição pode ser feita para outro estado. O fluxo de trabalho do computador de estado pode ter um estado final. Quando uma transição é feita ao estado final, o fluxo de trabalho completa.
+
+## <a name="state-machine-designer-views"></a>Modos de exibição do designer do computador de estado
+ O designer do computador de estado é um designer de forma livre, o que significa que as atividades podem ser movidos para o redor livremente na superfície de design. O designer de máquina de estado tem duas exibições: modo de exibição de *estado* e exibição *orientada por evento* .
+
+ Modo de estado mostra as atividades de estado e as atividades corretamente eventos que podem ser contidas dentro de uma atividade de estado. Nesta exibição, as transições de um estado para outro são representadas por linhas que estendem de atividade de baseada em um estado para outro estado. Você também pode criar transições desenhando a linha você mesmo. Para desenhar a transição, selecione a atividade de baseada e em seguida, selecione uma das alças da atividade e arraste-a. Esta ação desenha uma linha. Esta linha é anexada no estado de destino, indicando uma transição entre estados.
+
+ Para acessar a exibição orientada evento, clique duas vezes em uma atividade de baseada. O designer que aparece é bem como o designer sequencial de fluxo de trabalho. Na parte superior do designer, uma barra de navegação mostra a hierarquia de atividades até a atividade de baseada que é exibida. Você pode navegar de volta para o modo de estado clicando em qualquer elemento na hierarquia exibida. Se você desenhou uma transição de um estado para outro no modo de estado, e se você está exibindo a exibição orientada a eventos da atividade, uma atividade do estado é adicionada à atividade de baseada para você. Se você alterar as propriedades de atividade do estado, é passado refletida no modo de estado.
+
+## <a name="state-machine-workflow-activities"></a>Atividades de fluxo de trabalho do computador de estado
+ A tabela a seguir descreve as atividades principais que são usadas em um designer de fluxo de trabalho do computador de estado.
+
+|Nome da caixa de ferramentas|Atividade|Descrição|
+|------------------|--------------|-----------------|
+|**Estado**|[StateActivity](http://go.microsoft.com/fwlink?LinkID=65042)|Representa um estado em uma máquina de estado; pode conter atividades **StateActivity** adicionais. Para obter mais informações, consulte [usando a atividade StateActivity](http://go.microsoft.com/fwlink?LinkID=65083).|
+|**SetState**|[SetStateActivity](http://go.microsoft.com/fwlink?LinkID=65041)|Especifica uma transição para um novo estado. Para obter mais informações, consulte [usando a atividade SetStateActivity](http://go.microsoft.com/fwlink?LinkID=65082).|
+|**StateInitialization**|[StateInitializationActivity](http://go.microsoft.com/fwlink?LinkID=65044)|Executa quando um estado estiver conectado; pode conter outras atividades. Para obter mais informações, consulte [usando a atividade StateInitialization](http://go.microsoft.com/fwlink?LinkID=65006).|
+|**StateFinalization**|[StateFinalizationActivity](http://go.microsoft.com/fwlink?LinkID=65043)|Executa atividades contidas ao sair de uma atividade [StateActivity](http://go.microsoft.com/fwlink?LinkID=65042) . Para obter mais informações, consulte [usando a atividade StateFinalizationActivity](http://go.microsoft.com/fwlink?LinkID=65008).|
+|**EventDriven**|[EventDrivenActivity](http://go.microsoft.com/fwlink?LinkID=65029)|Usado para os estados que contam com um evento externa para iniciar executar. A atividade **EventDrivenActivity** deve ter uma atividade que implemente a interface [IEventActivity](http://go.microsoft.com/fwlink?LinkID=65032) como a primeira atividade filha. Para obter mais informações, consulte [usando a atividade EventDrivenActivity](http://go.microsoft.com/fwlink?LinkID=65068).|
+
+ O componente principal em um fluxo de trabalho de máquina de estado é a atividade [StateActivity](http://go.microsoft.com/fwlink?LinkID=65042) . Como os eventos são capturados em vários pontos em um fluxo de trabalho do computador de estado, os estados diferentes estão conectados para manipular as tarefas associadas com eventos. Durante o tempo de vida de fluxo de trabalho, o fluxo de trabalho pode sair e inserir vários estados diferentes. Esses Estados se conectam entre si usando a atividade [SetStateActivity](http://go.microsoft.com/fwlink?LinkID=65041) .
+
+ Ao arrastar um novo **StateActivity** para a superfície de design do fluxo de trabalho, você pode adicionar as atividades [EventDrivenActivity](http://go.microsoft.com/fwlink?LinkID=65029), [StateInitializationActivity](http://go.microsoft.com/fwlink?LinkID=65044), [StateFinalizationActivity](http://go.microsoft.com/fwlink?LinkID=65043)ou **StateActivity** adicionais como atividades filhas.
+
 > [!CAUTION]
-> Quando você usa o designer de fluxo de trabalho de máquina de estado para criar fluxos de trabalho, você deve monitorar a estrutura do fluxo de trabalho que você está criando com o **Document Outline** janela modo de exibição. O modo de exibição da estrutura do fluxo de trabalho de máquina de estado de na **Document Outline** janela espelha o layout lógico de atividades no arquivo de marcação de fluxo de trabalho do modo de exibição. O layout físico das atividades de fluxo de trabalho como aparecem na superfície de design não pode espelhar o layout lógico de atividades no arquivo de marcação de fluxo de trabalho.  
->   
-> Para abrir o **Document Outline** janela diante a **exibição** , aponte para **Other Windows**e, em seguida, selecione **Document Outline**.  
-  
-## <a name="see-also"></a>Consulte também  
- [Como: Criar aplicativos de Console de fluxo de trabalho de máquina de estado (herdado)](../workflow-designer/how-to-create-state-machine-workflow-console-applications-legacy.md)   
- [Como: Criar uma biblioteca de fluxo de trabalho de máquina de estado (herdado)](../workflow-designer/how-to-create-a-state-machine-workflow-library-legacy.md)   
- [Fluxos de trabalho de máquina de estado](http://go.microsoft.com/fwlink?LinkID=65016)   
- [Usando a atividade de StateActivity](http://go.microsoft.com/fwlink?LinkID=65083)   
- [Usando a atividade de StateInitializationActivity](http://go.microsoft.com/fwlink?LinkID=65006)   
- [Usando a atividade de StateFinalizationActivity](http://go.microsoft.com/fwlink?LinkID=65008)   
- [Usando a atividade de SetStateActivity](http://go.microsoft.com/fwlink?LinkID=65082)   
- [Usando a atividade de EventDrivenActivity](http://go.microsoft.com/fwlink?LinkID=65068)
+> Ao usar o designer de fluxo de trabalho de máquina de estado para criar fluxos de trabalho, você deve monitorar a estrutura do fluxo de trabalho que está criando com a janela de exibição de **estrutura de tópicos do documento** . A exibição da estrutura do fluxo de trabalho da máquina de estado na janela de exibição de **estrutura de tópicos do documento** espelha o layout lógico das atividades no arquivo de marcação do fluxo de trabalho. O layout físico das atividades de fluxo de trabalho como aparecem na superfície de design não pode espelhar o layout lógico de atividades no arquivo de marcação de fluxo de trabalho.
+>
+> Para abrir a janela **estrutura de tópicos do documento** , no menu **Exibir** , aponte para **outras janelas**e selecione **estrutura de tópicos do documento**.
+
+## <a name="see-also"></a>Consulte também
+ [Como: criar aplicativos de estado do console de fluxo de trabalho (Herdado)](../workflow-designer/how-to-create-state-machine-workflow-console-applications-legacy.md) como criar um estado de [fluxos](http://go.microsoft.com/fwlink?LinkID=65016) de trabalho de máquina de estado da [biblioteca de fluxo de trabalho (Herdado)](../workflow-designer/how-to-create-a-state-machine-workflow-library-legacy.md) [usando a atividade StateActivity](http://go.microsoft.com/fwlink?LinkID=65083) [usando o Atividade StateInitializationActivity](http://go.microsoft.com/fwlink?LinkID=65006) [usando a atividade StateFinalizationActivity](http://go.microsoft.com/fwlink?LinkID=65008) [usando a atividade SetStateActivity](http://go.microsoft.com/fwlink?LinkID=65082) [usando a atividade EventDrivenActivity](http://go.microsoft.com/fwlink?LinkID=65068)

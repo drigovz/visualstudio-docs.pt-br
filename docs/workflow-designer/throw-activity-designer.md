@@ -1,25 +1,25 @@
 ---
-title: Designer de fluxo de trabalho - Designer de atividade Throw
+title: Designer de atividade Designer de Fluxo de Trabalho-throw
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.Throw.UI
 ms.assetid: 5e97c947-be39-4a1f-af04-000e2e09528a
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7074ee2a11759983f103024033cb2b96322330cc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fe6a530888c7c28c5c1556114db03a6cd7369fe6
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62434014"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72649856"
 ---
 # <a name="throw-activity-designer"></a>Lance o designer de atividades
 
-O **lançar** designer de atividade é usado para criar e configurar um <xref:System.Activities.Statements.Throw> atividade.
+O designer de atividade de **geração** é usado para criar e configurar uma atividade de <xref:System.Activities.Statements.Throw>.
 
 ## <a name="the-throw-activity"></a>A atividade throw
 
@@ -27,9 +27,9 @@ A atividade de <xref:System.Activities.Statements.Throw> gerencie uma exceção.
 
 ### <a name="using-the-throw-activity-designer"></a>Usando o designer de atividade throw
 
-Acesso a **lançar** designer de atividade na **tratamento de erros** categoria dos **caixa de ferramentas**.
+Acesse o designer de atividade de **geração** na categoria **tratamento de erros** da **caixa de ferramentas**.
 
-O **lançar** designer de atividade pode ser arrastado da **caixa de ferramentas** e ignorados sobre a superfície do Designer de fluxo de trabalho onde quer que as atividades são colocadas em geral, como em um <xref:System.Activities.Statements.Sequence>. Isso cria uma <xref:System.Activities.Statements.Throw> atividade com um padrão **DisplayName** throw. O <xref:System.Activities.Activity.DisplayName%2A> valor pode ser editado no cabeçalho do **lançar** designer de atividade ou nos **DisplayName** caixa da grade de propriedade. A propriedade de <xref:System.Activities.Statements.Throw.Exception%2A> deve ser editada na grade de propriedade.
+O designer de atividade de **throw** pode ser arrastado da **caixa de ferramentas** e descartado para a superfície de designer de fluxo de trabalho sempre que as atividades são geralmente colocadas, como dentro de um <xref:System.Activities.Statements.Sequence>. Isso cria uma atividade de <xref:System.Activities.Statements.Throw> com um **DisplayName** padrão de Throw. O valor <xref:System.Activities.Activity.DisplayName%2A> pode ser editado no cabeçalho do designer de atividade **throw** ou na caixa **DisplayName** da grade de propriedades. A propriedade de <xref:System.Activities.Statements.Throw.Exception%2A> deve ser editada na grade de propriedade.
 
 ### <a name="the-throw-properties"></a>As propriedades throw
 

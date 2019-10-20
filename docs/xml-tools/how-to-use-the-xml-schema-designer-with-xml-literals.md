@@ -1,49 +1,49 @@
 ---
-title: 'Como: Usar o designer de esquema XML com literais XML'
+title: 'Como: Use o designer de esquema XML com literais XML'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: d11803e7-f81a-41a2-a145-ba494a45cc93
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e92cbdca3ac2c5c366ec054ba79f2e7324986c1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ed987a54004004fe8c4fbfba686ae1a35d12bb06
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63001811"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72601848"
 ---
-# <a name="how-to-use-the-xml-schema-designer-with-xml-literals"></a>Como: Usar o designer de esquema XML com literais do XML
+# <a name="how-to-use-the-xml-schema-designer-with-xml-literals"></a>Como: usar o designer de esquema XML com literais XML
 
 Este tópico descreve como exibir um esquema associado com um literal XML em um projeto Visual Basic.
 
-## <a name="create-a-new-visual-basic-project"></a>Criar um novo projeto do Visual Basic
+## <a name="create-a-new-visual-basic-project"></a>Criar um novo projeto de Visual Basic
 
 1. Abra o Visual Studio.
 
-2. Criar um novo Visual Basic **aplicativo de Console** projeto chamado **XMLLiterals**.
+2. Crie um novo projeto de **aplicativo de Console** Visual Basic chamado **xmlliterais**.
 
-     O novo projeto contém um arquivo de origem do Visual Basic, *Module1.vb*.
+     O novo projeto contém um arquivo de origem Visual Basic, *Module1. vb*.
 
 ## <a name="add-an-existing-xsd-file"></a>Adicionar um arquivo XSD existente
 
-1. Abra um novo arquivo de texto no bloco de notas. Copie o código de exemplo de esquema XML do [esquema de ordem de compra](../xml-tools/sample-xsd-file-simple-schema.md) e cole-a para o arquivo.
+1. Abra um novo arquivo de texto no bloco de notas. Copie o código de exemplo do esquema XML do [esquema da ordem de compra](../xml-tools/sample-xsd-file-simple-schema.md) e cole-o no arquivo.
 
-2. Salve o arquivo em algum local com o nome *Purchaseorderschema*.
+2. Salve o arquivo em algum local com o nome *PurchaseOrderSchema. xsd*.
 
-3. Na **Gerenciador de soluções**, o nome do projeto com o botão direito, selecione **Add**e, em seguida, selecione **Item existente**. O **AddExisting Item** caixa de diálogo é exibida. Navegue até a *Purchaseorderschema* do arquivo, selecione-o e, em seguida, clique em **Add**.
+3. Em **Gerenciador de soluções**, clique com o botão direito do mouse no nome do projeto, selecione **Adicionar**e, em seguida, selecione **Item existente**. A caixa de diálogo de **Item Addexisting** é exibida. Navegue até o arquivo *PurchaseOrderSchema. xsd* , selecione-o e clique em **Adicionar**.
 
-     O projeto de XMLLiterals agora contém dois arquivos: *Module1.vb* e *Purchaseorderschema*.
+     O projeto xmlliterais agora contém dois arquivos: *Module1. vb* e *PurchaseOrderSchema. xsd*.
 
-## <a name="add-code"></a>Adicione o código
+## <a name="add-code"></a>Adicionar código
 
-Para adicionar o código do Visual Basic com uma literal XML, com base no arquivo XSD incluído no projeto:
+Para adicionar Visual Basic código com um literal XML, com base no arquivo XSD incluído no projeto:
 
-1. Substitua o código em *Module1.vb* arquivo pelo código a seguir:
+1. Substitua o código no arquivo *Module1. vb* pelo seguinte código:
 
    ```vb
    Imports <xmlns:ns="http://tempuri.org/PurchaseOrderSchema.xsd">
@@ -72,6 +72,6 @@ Para adicionar o código do Visual Basic com uma literal XML, com base no arquiv
    End Module
    ```
 
-2. Qualquer nó XML em um literal XML ou uma importação de namespace XML com o botão direito e selecione **Mostrar no Schema Explorer**.
+2. Clique com o botão direito do mouse em qualquer nó XML em um literal XML ou em uma importação de namespace XML e selecione **Mostrar no Gerenciador de esquema**.
 
-   O **XML Schema Explorer** é exibido lado a lado com um arquivo de Visual Basic que possui o literal XML associado com o conjunto de esquema XML.
+   O **XML Schema Explorer** é exibido lado a lado com um arquivo Visual Basic que tem o literal XML associado ao conjunto de esquema XML.

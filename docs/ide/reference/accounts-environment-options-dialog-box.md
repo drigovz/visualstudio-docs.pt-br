@@ -5,17 +5,17 @@ ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Environment.RoamingSettings
 ms.assetid: 3cfe09d2-1120-46e8-b882-f7056acb778b
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cc3d88fd07ec5d345b3e8697ef69b193ece0fac1
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
-ms.translationtype: HT
+ms.openlocfilehash: 63b5443599e5e84cab1693aca4281c882c082162
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68604901"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72645345"
 ---
 # <a name="accounts-environment-options-dialog-box"></a>Caixa de diálogo Contas, Ambiente, Opções
 
@@ -33,7 +33,7 @@ Quando essa opção é selecionada, o comportamento do Visual Studio é alterado
 
 ## <a name="registered-azure-clouds"></a>Nuvens do Azure registradas
 
-Esta seção mostra as instâncias de nuvem do Azure às quais você tem acesso por meio de uma ou mais contas que você usa para entrar no Visual Studio. Por exemplo, talvez você tenha acesso a uma instância particular do Azure no data center de sua empresa. Ou talvez tenha acesso a uma instância soberana ou governamental do Azure, como o Azure China 21 Vianet ou o Azure US Government. A instância de nuvem global do Azure é exibida por padrão na lista e não pode ser removida.
+Esta seção mostra as instâncias de nuvem do Azure às quais você tem acesso por meio de uma ou mais contas que você usa para entrar no Visual Studio. Por exemplo, talvez você tenha acesso a uma instância particular do Azure no data center de sua empresa. Ou você pode ter acesso a uma instância do soberanas ou governamental do Azure, como o Azure China 21 vianet ou o Azure U.S. governamental. A instância de nuvem global do Azure é exibida por padrão na lista e não pode ser removida.
 
 Registre uma nuvem adicional do Azure escolhendo o botão **Adicionar**. A caixa de diálogo **Adicionar Nova Nuvem do Azure** lista várias instâncias de nuvem do Azure conhecidas às quais você pode se conectar ou você pode inserir a URL para um ponto de extremidade particular do Azure.
 

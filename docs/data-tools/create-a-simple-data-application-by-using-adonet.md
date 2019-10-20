@@ -6,17 +6,17 @@ dev_langs:
 - VB
 - CSharp
 ms.assetid: 2222841f-e443-4a3d-8c70-4506aa905193
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 98185eb44bc598d83eddd2690d4a321f8880f014
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: f895bd909ec9fda496d284c163bff4a5168bd057
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68925700"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72648726"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>Criar um aplicativo de dados simples usando o ADO.NET
 
@@ -27,7 +27,7 @@ Este artigo demonstra uma maneira simples de obter dados de um banco de dado de 
 > [!IMPORTANT]
 > Para manter o código simples, ele não inclui manipulação de exceção pronta para produção.
 
-## <a name="prerequisites"></a>Pré-requisitos
+## <a name="prerequisites"></a>Prerequisites
 
 Para criar o aplicativo, você precisará de:
 
@@ -59,7 +59,7 @@ Crie o banco de dados de exemplo seguindo estas etapas:
 
 7. Cole o script T-SQL no editor de consultas e, em seguida, escolha o botão **executar** .
 
-     Após um curto período, a consulta terminará de ser executada e os objetos de banco de dados serão criados. O banco de dados contém duas tabelas: Cliente e pedidos. Essas tabelas não contêm dados inicialmente, mas você pode adicionar dados ao executar o aplicativo que você criará. O banco de dados também contém quatro procedimentos armazenados simples.
+     Após um curto período, a consulta terminará de ser executada e os objetos de banco de dados serão criados. O banco de dados contém duas tabelas: Customer e Orders. Essas tabelas não contêm dados inicialmente, mas você pode adicionar dados ao executar o aplicativo que você criará. O banco de dados também contém quatro procedimentos armazenados simples.
 
 ## <a name="create-the-forms-and-add-controls"></a>Criar os formulários e adicionar controles
 
@@ -122,7 +122,7 @@ Crie o banco de dados de exemplo seguindo estas etapas:
 ## <a name="store-the-connection-string"></a>Armazenar a cadeia de conexão
 Quando seu aplicativo tenta abrir uma conexão com o banco de dados, seu aplicativo deve ter acesso à cadeia de conexão. Para evitar inserir a cadeia de caracteres manualmente em cada formulário, armazene a cadeia de caracteres no arquivo *app. config* em seu projeto e crie um método que retorne a cadeia de caracteres quando o método for chamado de qualquer formulário em seu aplicativo.
 
-Você pode encontrar a cadeia de conexão clicando com o botão direito do mouse na conexão dados de **vendas** em **Gerenciador de servidores** e escolhendo **Propriedades**. Localize a propriedade **ConnectionString** e, em seguida, use **Ctrl**+**A**, **Ctrl**+**C** para selecionar e copiar a cadeia de caracteres para a área de transferência.
+Você pode encontrar a cadeia de conexão clicando com o botão direito do mouse na conexão dados de **vendas** em **Gerenciador de servidores** e escolhendo **Propriedades**. Localize a propriedade **ConnectionString** e, em seguida, use **Ctrl** +**A**, **Ctrl** +**C** para selecionar e copiar a cadeia de caracteres para a área de transferência.
 
 1. Se você estiver usando C#o, em **Gerenciador de soluções**, expanda o nó **Propriedades** no projeto e, em seguida, abra o arquivo **Settings. Settings** .
     Se você estiver usando Visual Basic, em **Gerenciador de soluções**, clique em **Mostrar todos os arquivos**, expanda o nó **meu projeto** e, em seguida, abra o arquivo **Settings. Settings** .
@@ -136,7 +136,7 @@ Você pode encontrar a cadeia de conexão clicando com o botão direito do mouse
 5. Na coluna **valor** , insira sua cadeia de conexão (sem aspas externas) e, em seguida, salve as alterações.
 
 > [!NOTE]
-> Em um aplicativo real, você deve armazenar a cadeia de conexão com segurança, conforme descrito em cadeias de [conexão e arquivos de configuração](/dotnet/framework/data/adonet/connection-strings-and-configuration-files).
+> Em um aplicativo real, você deve armazenar a cadeia de conexão com segurança, conforme descrito em [cadeias de conexão e arquivos de configuração](/dotnet/framework/data/adonet/connection-strings-and-configuration-files).
 
 ## <a name="write-the-code-for-the-forms"></a>Escreva o código para os formulários
 
@@ -148,7 +148,7 @@ O formulário de navegação é aberto quando você executa o aplicativo. O bot�
 
 #### <a name="make-the-navigation-form-the-startup-form"></a>Tornar o formulário de navegação o formulário de inicialização
 
-Se você estiver usando C#, em **Gerenciador de soluções**, abra **Program.cs**e, em seguida, `Application.Run` altere a linha para:`Application.Run(new Navigation());`
+Se você estiver usando C#o, em **Gerenciador de Soluções**, abra **Program.cs**e altere a linha de `Application.Run` para esta: `Application.Run(new Navigation());`
 
 Se você estiver usando Visual Basic, em **Gerenciador de soluções**, abra a janela **Propriedades** , selecione a guia **aplicativo** e, em seguida, selecione **SimpleDataApp. Navigation** na lista **formulário de inicialização** .
 
@@ -175,7 +175,7 @@ Crie um manipulador de eventos de clique vazio para cada botão no formulário N
 
 Para concluir a lógica do formulário NewCustomer, siga estas etapas.
 
-1. Coloque o `System.Data.SqlClient` namespace no escopo para que você não precise qualificar totalmente os nomes de seus membros.
+1. Traga o namespace `System.Data.SqlClient` para o escopo para que você não precise qualificar totalmente os nomes de seus membros.
 
      ```csharp
      using System.Data.SqlClient;

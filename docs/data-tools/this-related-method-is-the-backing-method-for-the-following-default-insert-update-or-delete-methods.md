@@ -3,23 +3,23 @@ title: Este método relacionado é o método de suporte para a seguir inserção
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 62afa6da-97cf-48b9-8de3-33e4d72a0377
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 11c5c7d3c8078aa420074e9e32bb132489b169c8
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 8a7a422cff33fd361b784fd9cae6d5053fbe84fa
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71252941"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72639659"
 ---
 # <a name="this-related-method-is-the-backing-method-for-the-following-default-insert-update-or-delete-methods"></a>Este método relacionado é o método de suporte para a seguir inserção, atualização, ou métodos padrão de exclusão
 
-Esse método relacionado é o método de backup para os seguintes métodos `Insert`padrão `Update`, ou `Delete` . Se ele for excluído, esses métodos também serão excluídos. Deseja continuar?
+Esse método relacionado é o método de backup para os seguintes `Insert` padrão, `Update` ou métodos de `Delete`. Se ele for excluído, esses métodos também serão excluídos. Deseja continuar?
 
-O método `DataContext` selecionado é usado atualmente como um `Insert`dos métodos, `Update`ou `Delete` para uma das classes de entidade no designer do o **/R**. A exclusão do método selecionado faz com que a classe de entidade que estava usando esse método reverta para o comportamento de tempo de execução padrão para executar INSERT, Update ou Delete durante uma atualização.
+O método de `DataContext` selecionado é usado atualmente como um dos métodos `Insert`, `Update` ou `Delete` para uma das classes de entidade no designer o **/R**. A exclusão do método selecionado faz com que a classe de entidade que estava usando esse método reverta para o comportamento de tempo de execução padrão para executar INSERT, Update ou Delete durante uma atualização.
 
 ## <a name="selected-method-options"></a>Opções do método selecionado
 

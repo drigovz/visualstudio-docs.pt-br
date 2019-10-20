@@ -1,21 +1,21 @@
 ---
-title: 'Como: Criar um sombreador de gradiente com base na geometria'
+title: Como criar um sombreador de gradiente com base na geometria
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 4b204405-ba95-4c5e-bd51-ec033a3ebfb6
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e138f253a734608140533de8019d2e5fb7577a7
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: 3b34d51177e392b46c655c857b7015011818a888
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68924351"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72635637"
 ---
-# <a name="how-to-create-a-geometry-based-gradient-shader"></a>Como: Criar um sombreador de gradiente com base na geometria
+# <a name="how-to-create-a-geometry-based-gradient-shader"></a>Como criar um sombreador de gradiente com base na geometria
 
 Este artigo demonstra como usar o Designer de Sombreador e a Directed Graph Shader Language para criar um sombreador de gradiente com base na geometria. Esse sombreador ajusta a escala de um valor de cor RGB constante pela altura de cada ponto de um objeto no espaço de mundo.
 
@@ -52,17 +52,17 @@ A ilustração a seguir mostra o grafo de sombreador concluído e uma visualiza�
 
 Determinadas formas podem fornecer melhores visualizações para alguns sombreadores. Para saber mais sobre como visualizar sombreadores no Designer de Sombreador, confira **Visualização de sombreadores** em [Designer de Sombreador](../designers/shader-designer.md).
 
-A ilustração a seguir mostra o sombreador que é descrito neste documento, aplicado a uma cena 3D que é demonstrada em [Como: Modelar um terreno 3D](../designers/how-to-model-3-d-terrain.md). A intensidade da cor aumenta com a altura do ponto no mundo.
+A ilustração a seguir mostra o sombreador que é descrito neste documento, aplicado a uma cena 3D que é demonstrada em [Como modelar um terreno 3D](../designers/how-to-model-3-d-terrain.md). A intensidade da cor aumenta com a altura do ponto no mundo.
 
 ![Efeito de gradiente aplicado a um modelo de terreno 3D](../designers/media/digit-gradient-effect-result.png)
 
-Para obter mais informações sobre como aplicar um sombreador a um modelo 3D, confira [Como: Aplicar um sombreador a um modelo 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
+Para obter mais informações de como aplicar um sombreador a um modelo 3D, confira [Como aplicar um sombreador a um modelo 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
 
 ## <a name="see-also"></a>Consulte também
 
-- [Como: Aplicar um sombreador a um modelo 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
-- [Como: Exportar um sombreador](../designers/how-to-export-a-shader.md)
-- [Como: Modelar um terreno 3D](../designers/how-to-model-3-d-terrain.md)
-- [Como: Criar um sombreador de textura em escala de cinza](../designers/how-to-create-a-grayscale-texture-shader.md)
+- [Como aplicar um sombreador a um modelo 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
+- [Como exportar um sombreador](../designers/how-to-export-a-shader.md)
+- [Como modelar um terreno 3D](../designers/how-to-model-3-d-terrain.md)
+- [Como criar um sombreador de textura em escala de cinza](../designers/how-to-create-a-grayscale-texture-shader.md)
 - [Designer de Sombreador](../designers/shader-designer.md)
 - [Nós do Designer de Sombreador](../designers/shader-designer-nodes.md)

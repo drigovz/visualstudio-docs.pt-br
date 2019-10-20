@@ -5,19 +5,19 @@ ms.custom: seodec18, get-started
 ms.date: 11/20/2018
 ms.technology: vs-ide-general
 ms.topic: tutorial
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5bbca5e46ee83764a6a431ae13829a882b1d859f
-ms.sourcegitcommit: 39a04f42d23597b70053686d7e927ba78f38a9a8
+ms.openlocfilehash: f40111e59aa97180c98f0fc12d6b8eeb5d06ecec
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "71975167"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647865"
 ---
 # <a name="learn-to-use-the-code-editor"></a>Saiba como usar o editor de códigos
 
@@ -58,7 +58,7 @@ Comece criando um novo arquivo e adicionando códigos nele.
 
 ::: moniker-end
 
-2. No menu **arquivo** na barra de menus, escolha **novo** **arquivo** >  ou pressione **Ctrl**+**N**.
+2. No menu **arquivo** na barra de menus, escolha **novo**  > **arquivo**ou pressione **Ctrl** +**N**.
 
 3. Na caixa de diálogo **Novo Arquivo**, na categoria **Geral**, escolha **Classe do Visual C#** e, então, selecione **Abrir**.
 
@@ -80,7 +80,7 @@ O Visual Studio fornece *snippets de código* úteis que você pode usar para ge
 
    Você verá que a assinatura do método `static void Main()` será adicionada ao arquivo. O método [Main()](/dotnet/csharp/programming-guide/main-and-command-args/) é o ponto de entrada para aplicativos C#.
 
-Os snippets de código disponíveis variam em linguagens de programação diferentes. Você pode examinar os trechos de código disponíveis para sua linguagem escolhendo **editar** > **IntelliSense** > **inserir trecho** ou pressionar **ctrl**+**K**, **Ctrl**+**X**e, em seguida, escolhendo a pasta de seu idioma. Para o C#, a lista tem este aspecto:
+Os snippets de código disponíveis variam em linguagens de programação diferentes. Você pode examinar os trechos de código disponíveis para sua linguagem escolhendo **editar**  > **IntelliSense**  > **inserir trecho** ou pressionar **Ctrl** +**K**, **Ctrl** +**X**e, em seguida, escolher a pasta de seu idioma. Para o C#, a lista tem este aspecto:
 
 ![Lista de snippet de código de C#](../media/tutorial-code-snippet-list.png)
 
@@ -132,7 +132,7 @@ O bloco de código é recolhido apenas na primeira linha, seguido por um sinal d
 
 ## <a name="view-symbol-definitions"></a>Exibir definições de símbolo
 
-O editor do Visual Studio facilita a inspeção da definição de um tipo, de um método, etc. Uma maneira é navegar para o arquivo que contém a definição, por exemplo, escolhendo **Ir para Definição** ou pressionando **F12** em qualquer lugar em que o símbolo esteja referenciado. Uma maneira ainda mais rápida que não move o foco para fora do arquivo em que você está trabalhando é usar a opção [Inspecionar Definição](../../ide/go-to-and-peek-definition.md#peek-definition). Vamos espiar a definição do tipo `string`.
+O editor do Visual Studio torna mais fácil inspecionar a definição de um tipo, método, etc. Uma maneira é navegar até o arquivo que contém a definição, por exemplo, escolhendo **ir para definição** ou pressionando **F12** em qualquer lugar em que o símbolo é referenciado. Uma maneira ainda mais rápida que não move o foco para fora do arquivo em que você está trabalhando é usar a opção [Inspecionar Definição](../../ide/go-to-and-peek-definition.md#peek-definition). Vamos espiar a definição do tipo `string`.
 
 1. Clique com o botão direito do mouse em qualquer ocorrência de `string` e escolha **Espiar Definição** no menu de conteúdo. Se preferir, pressione **Alt**+**F12**.
 

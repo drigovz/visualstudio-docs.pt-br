@@ -8,12 +8,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 09b63b3d01329a5fe243d100eeea921299061433
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
-ms.translationtype: HT
+ms.openlocfilehash: d9bead01c6440d5232a91a5e8fe2007b3e30340c
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67825081"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72631974"
 ---
 # <a name="command-line-arguments-for-the-help-content-manager"></a>Argumentos da linha de comando para o Gerenciador de Conteúdo da Ajuda
 
@@ -39,6 +39,9 @@ Por exemplo:
 hlpctntmgr.exe /operation install /catalogname VisualStudio15 /locale en-us /sourceuri d:\productDocumentation\HelpContentSetup.msha
 ```
 
+>[!NOTE]
+> O nome do catálogo é VisualStudio15 para o Visual Studio 2017 e o Visual Studio 2019. Isso pode ser inesperado, mas isso ocorre porque o mesmo Visualizador da ajuda é usado para as versões do Visual Studio.
+
 ## <a name="switches-and-arguments"></a>Opções e argumentos
 
 A tabela a seguir define as opções e os argumentos que você pode usar a ferramenta de linha de comando para o Gerenciador de Conteúdo da Ajuda:
@@ -46,7 +49,7 @@ A tabela a seguir define as opções e os argumentos que você pode usar a ferra
 |Alternar|Necessário?|Arguments|
 |------------|---------------|---------------|
 |/operation|Sim|-   **Instalar** – adiciona livros de fonte de instalação especificada ao repositório de conteúdo local.<br />     Esta opção requer o argumento /booklist ou o argumento /sourceURI, ou ambos. Se você não especificar o argumento /sourceURI, o URI do Visual Studio padrão será usado como a origem da instalação. Se você não especificar o argumento /booklist, todos os livros em /sourceUri serão instalados.<br />-   **Desinstalar** – remove os livros especificado do repositório de conteúdo local.<br />     Esta opção requer o argumento /booklist ou o argumento /sourceURI.  Se você especificar o argumento /sourceURI, todos os livros serão removidos e o argumento /booklist será ignorado.<br />-   **Mover** – move o repositório local para o caminho que você especificar. O caminho padrão do repositório local é definido como um diretório em *%ProgramData%*<br />     Esta opção requer os argumentos /locationPath e /catalogName. As mensagens de erro serão registradas no log de eventos se você especificar um caminho que não for válido ou se não houver espaço livre na unidade para manter o conteúdo.<br />-   **Atualizar** – atualiza os tópicos alterados desde que foram instalados ou atualizados mais recentemente.<br />     Esta opção requer o argumento /sourceURI.|
-|/catalogName|Sim|Especifica o nome do catálogo de conteúdo.|
+|/catalogName|Sim|Especifica o nome do catálogo de conteúdo. Para o Visual Studio 2017 e o Visual Studio 2019, isso é VisualStudio15.|
 |/locale|Não|Especifica a localidade do produto que é usada para exibir e gerenciar conteúdo para a instância atual do visualizador da Ajuda. Por exemplo, você especifica para `EN-US` inglês - Estados Unidos.<br /><br /> Se você não especificar uma localidade, a localidade do sistema operacional será usada. Se essa localidade não puder ser determinada, `EN-US` será usada.<br /><br /> Se você especificar uma localidade que não for válida, uma mensagem de erro será registrada no log de eventos.|
 |/e|Não|Promove o Gerenciador de Conteúdo a Ajuda a Privilégios administrativos quando o usuário atual tem credenciais administrativas.|
 |/sourceURI|Não|Especifica a URL da qual o conteúdo é instalado (API de Serviço) ou o caminho para o arquivo de conteúdo de instalação ( *.msha*). O URL pode apontar para o grupo de produtos (nó a nível superior) ou para livros do produto (nó a nível folha) em um ponto de extremidade de estilo do Visual Studio 2010. Não é necessário incluir uma barra (/) no final da URL. Se você incluir uma barra à barra, ela será manipulado apropriadamente.<br /><br /> Uma mensagem de erro será colocada no log de eventos se você especificar um arquivo não localizado, inválido ou inacessível ou se uma conexão com a Internet não estiver disponível ou for interrompida quando o conteúdo estiver sendo gerenciado.|
@@ -56,7 +59,7 @@ A tabela a seguir define as opções e os argumentos que você pode usar a ferra
 |/skuId|Não|Especifica a unidade de manutenção de estoque (SKU) do produto da fonte de instalação, e filtra os livros que a opção de /SourceURI identifica.|
 |/membership|Não|-   **Mínimo** – instala um conjunto mínimo de conteúdo de Ajuda com base na SKU especificada usando a opção /skuId. O mapeamento entre o SKU e o conteúdo é exposto no serviço API.<br />-   **Recomendado** – instala um conjunto recomendado de livros para a SKU especificada usando o argumento /skuId. A origem de instalação é a API de serviço ou *.MSHA*.<br />-   **Completo** – instala todo o conjunto de livros para a SKU que você especifica usando o argumento /skuId. A origem de instalação é a API de serviço ou *.MSHA*.|
 |/locationpath|Não|Especifica a pasta padrão para o conteúdo da Ajuda local. Você deve usar essa opção para instalar ou mover apenas o conteúdo. Se você especificar esta opção, também deverá especificar a opção /silent.|
-|/silent|Não|Instala ou remove conteúdo da Ajuda sem avisar o usuário ou sem exibir qualquer IU, incluindo o ícone na área de notificação de status. A saída é registrada em um arquivo no diretório *%Temp%* . **Importante:**  Para instalar o conteúdo silenciosamente, você deve utilizar arquivos *.cab* assinados digitalmente, e não arquivos *.mshc*.|
+|/silent|Não|Instala ou remove conteúdo da Ajuda sem avisar o usuário ou sem exibir qualquer IU, incluindo o ícone na área de notificação de status. A saída é registrada em um arquivo no diretório *%Temp%* . **Importante:** para instalar o conteúdo silenciosamente, use arquivos *.cab* assinados digitalmente, não arquivos *.mshc*.|
 |/launchingApp|Não|Define o aplicativo e o contexto de catálogo quando o Visualizador da Ajuda é iniciado sem o aplicativo pai. Os argumentos para essa opção são *CompanyName*, *ProductName* e *VersionNumber* (por exemplo, `/launchingApp Microsoft,VisualStudio,16.0`).<br /><br /> Isso é necessário para a instalação do conteúdo com o parâmetro /silent.|
 |/wait *Seconds*|Não|Interrompe operações de instalação, desinstalação e atualização. Se uma operação já está em andamento para o catálogo, o processo esperará até o número determinado de segundos para continuar. Use 0 para aguardar indefinidamente.|
 |/?|Não|Lista as opções e suas descrições para a ferramenta de linha de comando do Gerenciador de Conteúdo da Ajuda.|

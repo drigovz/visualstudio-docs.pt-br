@@ -1,21 +1,21 @@
 ---
-title: 'CA2153: Evitar manipular exceções de estado corrompidas | Microsoft Docs'
+title: 'CA2153: Evite lidar com exceções de estado corrompidas | Microsoft Docs'
 ms.date: 11/15/2016
 ms.technology: vs-ide-code-analysis
 ms.topic: reference
 ms.assetid: 418cc9cb-68ad-47e9-a6c8-a48b9c35db45
 caps.latest.revision: 7
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: f8999c2e4622505526524f2a09a5f33259955974
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9d4ca2668f2d6241e9a3cca88b4722ee5348abc3
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68142576"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72667419"
 ---
-# <a name="ca2153-avoid-handling-corrupted-state-exceptions"></a>CA2153: Evitar tratamento de exceções de estado corrompido
+# <a name="ca2153-avoid-handling-corrupted-state-exceptions"></a>CA2153: evite manipular exceções de estado corrompido
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -23,33 +23,33 @@ ms.locfileid: "68142576"
 |NomeDoTipo|AvoidHandlingCorruptedStateExceptions|
 |CheckId|CA2153|
 |Categoria|Microsoft.Security|
-|Alteração Significativa|Não separável|
+|Alteração Significativa|Sem interrupção|
 
 ## <a name="cause"></a>Causa
- [Corrompido exceções de estado (CSE)](https://msdn.microsoft.com/magazine/dd419661.aspx) indicam que a memória corrupção existe em seu processo. Capturar esses em vez de permitir que o processo falhe pode levar a vulnerabilidades de segurança se um invasor pode colocar uma exploração para a região de memória corrompida.
+ As [exceções de estado corrompidas (CSE)](https://msdn.microsoft.com/magazine/dd419661.aspx) indicam que há corrupção de memória em seu processo. A captura deles, em vez de permitir que o processo falhe, pode levar a vulnerabilidades de segurança se um invasor puder fazer uma exploração na região de memória corrompida.
 
 ## <a name="rule-description"></a>Descrição da Regra
- CSE indica que o estado de um processo foi corrompido e não capturado pelo sistema. No cenário de estado corrompido, um manipulador geral só captura a exceção se você marcar o método com as devidas `HandleProcessCorruptedStateExceptions` atributo. Por padrão, o [Common Language Runtime (CLR)](https://msdn.microsoft.com/library/8bs2ecf4.aspx) não invoca manipuladores catch para CSEs.
+ CSE indica que o estado de um processo foi corrompido e não detectado pelo sistema. No cenário de estado corrompido, um manipulador geral só capturará a exceção se você marcar seu método com o atributo de `HandleProcessCorruptedStateExceptions` apropriado. Por padrão, o [CLR (Common Language Runtime)](https://msdn.microsoft.com/library/8bs2ecf4.aspx) não invocará manipuladores catch para CSEs.
 
- Permitindo que o processo falhe sem capturar esses tipos de exceções é a opção mais segura, como o mesmo código de registro pode permitir que os invasores podem explorar os bugs de corrupção de memória.
+ Permitir que o processo falhe sem capturar esses tipos de exceções é a opção mais segura, pois mesmo o código de registro em log pode permitir que os invasores explorem bugs de corrupção de memória.
 
- Esse aviso dispara quando capturando CSEs com um manipulador geral que captura todas as exceções, como catch (Exception) ou catch (especificação de exceção).
+ Esse aviso dispara ao capturar CSEs com um manipulador geral que captura todas as exceções, como catch (Exception) ou catch (sem especificação de exceção).
 
 ## <a name="how-to-fix-violations"></a>Como Corrigir Violações
- Para resolver este aviso, você deve fazer o seguinte:
+ Para resolver esse aviso, você deve executar um dos seguintes procedimentos:
 
- 1. Remover o `HandleProcessCorruptedStateExceptions` atributo. Isso será revertido para o comportamento de tempo de execução padrão no qual os CSEs não são passados para manipuladores catch.
+ 1. Remova o atributo `HandleProcessCorruptedStateExceptions`. Isso reverte para o comportamento de tempo de execução padrão em que CSEs não são passados para manipuladores catch.
 
- 2. Remova o manipulador catch geral in preference of manipuladores que capturar tipos de exceção específica.  Isso pode incluir CSEs, supondo que o código do manipulador possa tratá-las com segurança (muito raro).
+ 2. Remova o manipulador de catch geral em preferência de manipuladores que capturam tipos de exceção específicos.  Isso pode incluir CSEs supondo que o código do manipulador possa tratá-los com segurança (muito raro).
 
- 3. Gera novamente a CSE no manipulador catch que garante que a exceção é passada para o chamador e resultarão no encerramento do processo em execução.
+ 3. Relançou o CSE no manipulador catch, que garante que a exceção seja passada para o chamador e resultará na finalização do processo em execução.
 
 ## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos
  Não suprima um aviso nessa regra.
 
-## <a name="pseudo-code-example"></a>Exemplo de pseudocódigo
+## <a name="pseudo-code-example"></a>Exemplo de pseudo-código
 
-### <a name="violation"></a>Violação
+### <a name="violation"></a>Infra
  O pseudocódigo a seguir ilustra o padrão detectado por essa regra.
 
 ```
@@ -69,7 +69,7 @@ void TestMethod1()
 ```
 
 ### <a name="solution-1"></a>Solução 1
- Removendo o atributo HandleProcessCorruptedExceptions garante que as exceções não ocorrerão.
+ Remover o atributo HandleProcessCorruptedExceptions garante que as exceções não serão tratadas.
 
 ```
 void TestMethod1()
@@ -90,7 +90,7 @@ void TestMethod1()
 ```
 
 ### <a name="solution-2"></a>Solução 2
- Remover o manipulador catch geral e capturar apenas os tipos de exceção específica.
+ Remova o manipulador de catch geral e Capture apenas tipos de exceção específicos.
 
 ```
 void TestMethod1()
@@ -111,7 +111,7 @@ void TestMethod1()
 ```
 
 ### <a name="solution-3"></a>Solução 3
- Gera novamente a exceção.
+ Relançou a exceção.
 
 ```
 void TestMethod1()

@@ -1,5 +1,5 @@
 ---
-title: 'CA1061: Não ocultar métodos de classe base | Microsoft Docs'
+title: 'CA1061: não ocultar métodos de classe base | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,34 +12,34 @@ helpviewer_keywords:
 - CA1061
 ms.assetid: 0bda9dc8-87b4-4038-ab9d-563298387466
 caps.latest.revision: 11
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: e932b2c948493c4703e8edd5edb37818e80f0253
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 24579e6aa3ba1bf70ed6f195091152b60f3232a3
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68200464"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72604010"
 ---
-# <a name="ca1061-do-not-hide-base-class-methods"></a>CA1061: Não ocultar métodos de classe base
+# <a name="ca1061-do-not-hide-base-class-methods"></a>CA1061: não ocultar métodos de classe base
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |NomeDoTipo|DoNotHideBaseClassMethods|
 |CheckId|CA1061|
-|Categoria|Microsoft.Design|
+|Categoria|Microsoft. Design|
 |Alteração Significativa|Quebra|
 
 ## <a name="cause"></a>Causa
- Um tipo derivado declara um método com o mesmo nome e com o mesmo número de parâmetros como um de seus métodos base; um ou mais dos parâmetros é um tipo base do parâmetro correspondente no método base; e quaisquer parâmetros restantes têm tipos que são idênticos aos parâmetros correspondentes no método base.
+ Um tipo derivado declara um método com o mesmo nome e com o mesmo número de parâmetros que um de seus métodos base; um ou mais dos parâmetros é um tipo base do parâmetro correspondente no método base; e quaisquer parâmetros restantes têm tipos que são idênticos aos parâmetros correspondentes no método base.
 
 ## <a name="rule-description"></a>Descrição da Regra
- Um método em um tipo base permanece oculto por um método nomeado identicamente em um tipo derivado quando a assinatura do parâmetro do método derivado difere somente pelos tipos que são mais fracos derivadas que os tipos correspondentes na assinatura do parâmetro do método base.
+ Um método em um tipo base é ocultado por um método de nome idêntico em um tipo derivado quando a assinatura de parâmetro do método derivado difere somente por tipos que são mais fracamente derivados do que os tipos correspondentes na assinatura de parâmetro do método de base.
 
 ## <a name="how-to-fix-violations"></a>Como Corrigir Violações
- Para corrigir uma violação dessa regra, remover ou renomear o método ou altere a assinatura do parâmetro para que o método não oculta o método base.
+ Para corrigir uma violação dessa regra, remova ou renomeie o método ou altere a assinatura do parâmetro para que o método não oculte o método base.
 
 ## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos
  Não suprima um aviso nessa regra.

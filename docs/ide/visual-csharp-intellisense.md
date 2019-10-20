@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - C#, IntelliSense
 - IntelliSense [C#]
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0a875ea2690a2932a10ff3a16364dd9d362a7642
-ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
-ms.translationtype: HT
+ms.openlocfilehash: 13a3c16adca29128be275495fe8921895aa84250
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "67328837"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647222"
 ---
 # <a name="c-intellisense"></a>C# IntelliSense
 
@@ -58,21 +58,21 @@ Os métodos de extensão usam um ícone diferente dos métodos de instância. Pa
 
 O IntelliSense remove membros desnecessários da lista de preenchimento usando filtros. O C# filtra as listas de preenchimento exibidas para estes itens:
 
-- **Interfaces e classes base**: O IntelliSense remove automaticamente itens das listas de preenchimento de interface e de classe base nas listas de base de declaração de classe e de interface e nas listas de restrição. Por exemplo, enumerações não aparecem na lista de preenchimento nas classes base, pois enumerações não podem ser usadas para as classes base. A lista de preenchimento de classes base contém apenas interfaces e namespaces. Se você selecionar um item na lista e, em seguida, digitar uma vírgula, o IntelliSense removerá as classes base da lista de preenchimento, pois o C# não dá suporte à herança múltipla. O mesmo comportamento também ocorre em cláusulas de restrição.
+- **Interfaces e classes base**: o IntelliSense remove automaticamente itens das listas de conclusão de interface e de classe base, tanto nas listas de interface quanto nas listas de restrição de base de declaração de classe. Por exemplo, enumerações não aparecem na lista de preenchimento nas classes base, pois enumerações não podem ser usadas para as classes base. A lista de preenchimento de classes base contém apenas interfaces e namespaces. Se você selecionar um item na lista e, em seguida, digitar uma vírgula, o IntelliSense removerá as classes base da lista de preenchimento, pois o C# não dá suporte à herança múltipla. O mesmo comportamento também ocorre em cláusulas de restrição.
 
-- **Atributos**: Quando você aplica um atributo a um tipo, a lista de conclusão é filtrada para que tenha somente os tipos que descendem dos namespaces que contêm esses tipos, como <xref:System.Attribute>.
+- **Atributos**: ao aplicar um atributo a um tipo, a lista de conclusão é filtrada para que ela tenha somente os tipos que descendem dos namespaces que contêm esses tipos, como <xref:System.Attribute>.
 
 - **Cláusulas Catch**
 
-- **Inicializadores de objeto**: Somente os membros que podem ser inicializados serão exibidos na lista de conclusão.
+- **Inicializadores de objeto**: somente os membros que podem ser inicializados serão exibidos na lista de conclusão.
 
-- **Palavra-chave new**: Quando você digita `new` e, em seguida, pressiona o **Espaço**, uma lista de conclusão é exibida. Um item é selecionado na lista automaticamente, de acordo com o contexto no código. Por exemplo, os itens são selecionados automaticamente na lista de preenchimento em busca de declarações e instruções de retorno nos métodos.
+- **Palavra-chave new**: ao digitar `new` e, em seguida, pressionar o **Espaço**, uma lista de conclusão é exibida. Um item é selecionado na lista automaticamente, de acordo com o contexto no código. Por exemplo, os itens são selecionados automaticamente na lista de preenchimento em busca de declarações e instruções de retorno nos métodos.
 
-- **Palavra-chave enum**: Quando você pressiona o **Espaço** após um sinal de igual para uma atribuição de enum, uma lista de conclusão é exibida. Um item é selecionado na lista automaticamente, de acordo com o contexto no código. Por exemplo, os itens serão selecionados automaticamente na lista de conclusão depois que você digitar a palavra-chave retorno e quando fizer uma declaração.
+- **Palavra-chave enum**: ao pressionar o **Espaço** após um sinal de igual para uma atribuição de enum, uma lista de conclusão será exibida. Um item é selecionado na lista automaticamente, de acordo com o contexto no código. Por exemplo, os itens serão selecionados automaticamente na lista de conclusão depois que você digitar a palavra-chave retorno e quando fizer uma declaração.
 
-- **Operadores as e is**: Uma lista de conclusão filtrada é exibida automaticamente ao pressionar o **Espaço** depois de digitar a palavra-chave `as` ou `is`.
+- **Operadores as e is**: uma lista de conclusão filtrada é exibida automaticamente ao pressionar o **Espaço** depois de digitar a palavra-chave `as` ou `is`.
 
-- **Eventos**: Quando você digita a palavra-chave `event`, a lista de conclusão contém apenas os tipos de delegados.
+- **Eventos**: ao digitar a palavra-chave `event`, a lista de conclusão conterá apenas os tipos de delegado.
 
 - A **ajuda do parâmetro** classifica automaticamente para a primeira sobrecarga de método que corresponde aos parâmetros, conforme eles são inseridos. Se houver várias sobrecargas de método disponíveis, será possível usar as setas para cima e para baixo para navegar para a próxima sobrecarga possível na lista.
 
@@ -114,7 +114,7 @@ A implementação da interface gera o número mínimo de stubs de método necess
 
 O IntelliSense fornece uma opção para ajudá-lo a implementar membros de uma classe base abstrata automaticamente enquanto estiver trabalhando no editor de códigos. Normalmente, para implementar membros de uma classe base abstrata, é necessário criar uma nova definição de método para cada método da classe base abstrata na classe derivada. Usando o IntelliSense, depois de digitar o nome de uma classe base abstrata em uma declaração de classe, uma lâmpada **Ações Rápidas** é exibida. A lâmpada oferece a opção de implementar os métodos de classe base automaticamente.
 
-Os stubs de método gerados pelo recurso **Implementar Classe Base Abstrata** são modelados pelo trecho de código definido no arquivo *MethodStub.snippet*. Os snippets de código são modificáveis. Para obter mais informações, confira [Passo a passo: Criar um snippet de código](../ide/walkthrough-creating-a-code-snippet.md).
+Os stubs de método gerados pelo recurso **Implementar Classe Base Abstrata** são modelados pelo trecho de código definido no arquivo *MethodStub.snippet*. Os snippets de código são modificáveis. Para obter mais informações, consulte [Passo a passo: Criar um snippet de código](../ide/walkthrough-creating-a-code-snippet.md).
 
 ### <a name="generate-from-usage"></a>Gerar com base no uso
 

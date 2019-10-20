@@ -2,19 +2,19 @@
 title: Inserir comentários da documentação XML
 ms.date: 01/26/2018
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: b258b456aa614c851be138c017b3378cc13984cc
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
-ms.translationtype: HT
+ms.openlocfilehash: e9153677b833a89a236923a971b511548b064142
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66715384"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72668609"
 ---
-# <a name="how-to-insert-xml-comments-for-documentation-generation"></a>Como: Inserir comentários XML para geração de documentação
+# <a name="how-to-insert-xml-comments-for-documentation-generation"></a>Como inserir comentários XML para geração de documentação
 
 O Visual Studio pode ajudá-lo a documentar os elementos de código, como classes e métodos, gerando automaticamente a estrutura padrão de comentários da documentação XML. No tempo de compilação, você pode gerar um arquivo XML contendo os comentários da documentação.
 
@@ -55,7 +55,7 @@ O arquivo XML gerado pelo compilador pode ser distribuído em conjunto com o ass
 
 - [Comentários da documentação XML (Guia de Programação em C#)](/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments)
 - [Documentando seu código com comentários em XML (Guia do C#)](/dotnet/csharp/codedoc)
-- [Como: Criar documentação XML (Visual Basic)](/dotnet/visual-basic/programming-guide/program-structure/how-to-create-xml-documentation)
+- [Como criar documentação XML (Visual Basic)](/dotnet/visual-basic/programming-guide/program-structure/how-to-create-xml-documentation)
 - [Comentários C++](/cpp/cpp/comments-cpp)
 - [Documentação XML (C++)](/cpp/build/reference/xml-documentation-visual-cpp)
 - [Geração de código](../code-generation-in-visual-studio.md)

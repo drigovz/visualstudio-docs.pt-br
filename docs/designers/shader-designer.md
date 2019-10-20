@@ -6,17 +6,17 @@ f1_keywords:
 - vs.graphics.designer.effectdesigner
 - vs.graphics.shaderdesigner
 ms.assetid: 5db09a16-b82c-4ba3-8ec9-630cdc109397
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1377034853907ce0c3585e4672296c1c8747259f
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
-ms.translationtype: HT
+ms.openlocfilehash: fd82a5c8bee50c778b87927f1074d71a38a21e9f
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67823861"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72635049"
 ---
 # <a name="shader-designer"></a>Designer de Sombreador
 
@@ -46,7 +46,7 @@ Esta seção descreve como adicionar um sombreador DGSL ao seu projeto do Visual
 
 1. Verifique se você tem o componente necessário do Visual Studio instalado para trabalhar com gráficos. O componente é chamado de **Editores de imagens e modelos 3D**.
 
-   Para instalá-lo, abra o Instalador do Visual Studio, selecionando **Ferramentas** > **Obter Ferramentas e Recursos** na barra de menus e selecione a guia **Componentes individuais**. Selecione o componente **Editores de imagens e modelos 3D** na categoria **Jogos e Elementos Gráficos**, depois selecione **Modificar**.
+   Para instalá-lo, abra Instalador do Visual Studio selecionando **ferramentas**  > **obter ferramentas e recursos** na barra de menus e, em seguida, selecione a guia **componentes individuais** . Selecione o componente **imagem e editores de modelo 3D** sob a  **Categoria jogos e gráficos** e, em seguida, selecione **Modificar**.
 
    ![Componente Editores de imagens e modelos 3D](media/image-3d-model-editors-component.png)
 
@@ -81,7 +81,7 @@ Aqui está a barra de ferramentas **Modo de Designer de Sombreador**:
 
 Esta tabela descreve os itens na barra de ferramentas **Modo do Designer de Sombreador**, que são listados na ordem em que aparecem, da esquerda para a direita:
 
-|Item da barra de ferramentas|DESCRIÇÃO|
+|Item da barra de ferramentas|Descrição|
 |------------------|-----------------|
 |**Selecionar**|Habilita a interação com nós e bordas no grafo. Nesse modo você pode selecionar nós e movê-los ou excluí-los, além de poder estabelecer bordas ou dividi-las.|
 |**Panorâmica**|Habilita a movimentação de um grafo de sombreador em relação ao quadro de janela. Para deslocar, selecione um ponto na superfície de design e movimente-o ao redor.<br /><br /> No modo **Selecionar**, pressione e segure a tecla **Ctrl** para ativar o modo **Panorâmica** temporariamente.|
@@ -96,7 +96,7 @@ Esta tabela descreve os itens na barra de ferramentas **Modo do Designer de Somb
 |**Visualizar com plano**|Quando habilitado, um modelo de um plano é usado para visualizar o sombreador. Só é possível habilitar uma forma de visualização por vez.|
 |**Caixa de Ferramentas**|De modo alternado, mostra ou oculta a **Caixa de Ferramentas**.|
 |**Propriedades**|De modo alternado, mostra ou oculta a janela **Propriedades**.|
-|**Avançado**|Contém comandos e opções avançados.<br /><br /> **Exportar**: Permite a exportação de um sombreador em vários formatos.<br /><br /> **Exportar Como**: Exporta o sombreador como o código-fonte HLSL ou código de bytes do sombreador compilado. Para obter mais informações sobre como exportar sombreadores, confira [Como: Exportar um sombreador](../designers/how-to-export-a-shader.md).<br /><br /> **Mecanismos Gráficos**: Permite a seleção do renderizador que é usado para exibir a superfície de design.<br /><br /> **Renderizar com o D3D11**: Usa o Direct3D 11 para renderizar a superfície de design do Designer de Sombreador.<br /><br /> **Renderizar com o D3D11WARP**: Usa a WARP (Direct3D 11 Windows Advanced Rasterization Platform) para renderizar a superfície de design do Designer de Sombreador.<br /><br /> **Exibir**: Permite a seleção de informações adicionais sobre o Designer de Sombreador.<br /><br /> **Taxa de Quadros**: Quando habilitada, exibe a taxa de quadros no canto superior direito da superfície de design. A taxa de quadros é o número de quadros desenhados por segundo. Essa opção é útil quando você habilita a opção **Modo de Renderização em Tempo Real**.|
+|**Avançado**|Contém comandos e opções avançados.<br /><br /> **Exportar**: permite a exportação de um sombreador em vários formatos.<br /><br /> **Exportar Como**: exporta o sombreador como o código-fonte HLSL ou código de bytes do sombreador compilado. Para obter mais informações sobre como exportar sombreadores, confira [Como exportar um sombreador](../designers/how-to-export-a-shader.md).<br /><br /> **Mecanismos Gráficos**: permite a seleção do renderizador que é usado para exibir a superfície de design.<br /><br /> **Renderizar com D3D11**: usa o Direct3D 11 para renderizar a superfície de design do Designer de Sombreador.<br /><br /> **Renderizar com D3D11WARP**: usa a WARP (Direct3D 11 Windows Advanced Rasterization Platform) para renderizar a superfície de design do Designer de Sombreador.<br /><br /> **Exibir**: permite a seleção de informações adicionais sobre o Designer de Sombreador.<br /><br /> **Taxa de Quadros**: quando habilitada, exibe a taxa de quadros no canto superior direito da superfície de design. A taxa de quadros é o número de quadros desenhados por segundo. Essa opção é útil quando você habilita a opção **Modo de Renderização em Tempo Real**.|
 
 > [!TIP]
 > Você pode escolher o botão **Avançado** para executar novamente o último comando.
@@ -145,12 +145,12 @@ A tabela a seguir mostra os parâmetros de sombreador que você pode modificar:
 
 |Parâmetro|Propriedades|
 |---------------|----------------|
-|**Textura 1** - **Textura 8**|**Acesso**:                             **Public** para permitir que esta propriedade possa ser configurada pelo Editor de Modelo; caso contrário, **Private**.<br /><br /> **Filename**: O caminho completo do arquivo de textura que está associado com o registro de textura.|
-|**Material Ambiente**|**Acesso**:                             **Public** para permitir que esta propriedade possa ser configurada pelo Editor de Modelo; caso contrário, **Private**.<br /><br /> **Valor**: A cor difusa do pixel atual devido à luz indireta, ou seja, a luz ambiente.|
-|**Material Difuso**|**Acesso**: **Public** para permitir que esta propriedade possa ser configurada pelo Editor de Modelo; caso contrário, **Private**.<br /><br /> **Valor**:  Uma cor que descreve como o pixel atual difunde a iluminação direta.|
-|**Material Emissivo**|**Acesso**:                              **Public** para permitir que esta propriedade possa ser configurada pelo Editor de Modelo; caso contrário, **Private**.<br /><br /> **Valor**: A contribuição de cor do pixel atual é devido à iluminação própria.|
-|**Material Especular**|**Acesso**:                              **Public** para permitir que esta propriedade possa ser configurada pelo Editor de Modelo; caso contrário, **Private**.<br /><br /> **Valor**: Uma cor que descreve como o pixel atual reflete a iluminação direta.|
-|**Material Energia Especular**|**Acesso**:                             **Public** para permitir que esta propriedade possa ser configurada pelo Editor de Modelo; caso contrário, **Private**.<br /><br /> **Valor**: O expoente que define a intensidade dos realces especulares no pixel atual.|
+|**Textura 1** - **Textura 8**|**Access**:                             **Public** para permitir que esta propriedade possa ser configurada pelo Editor de Modelo; caso contrário, **Private**.<br /><br /> **Filename**: o caminho completo do arquivo de textura que está associado com o registro de textura.|
+|**Material Ambiente**|**Access**:                             **Public** para permitir que esta propriedade possa ser configurada pelo Editor de Modelo; caso contrário, **Private**.<br /><br /> **Valor**: a cor difusa do pixel atual devido à luz indireta, ou seja, a luz ambiente.|
+|**Material Difuso**|**Access**: **Public** para permitir que esta propriedade possa ser configurada pelo Editor de Modelo; caso contrário, **Private**.<br /><br /> **Valor**: uma cor que descreve como o pixel atual difunde a iluminação direta.|
+|**Material Emissivo**|**Access**:                              **Public** para permitir que esta propriedade possa ser configurada pelo Editor de Modelo; caso contrário, **Private**.<br /><br /> **Valor**: a contribuição de cor do pixel atual é devido à iluminação própria.|
+|**Material Especular**|**Access**:                              **Public** para permitir que esta propriedade possa ser configurada pelo Editor de Modelo; caso contrário, **Private**.<br /><br /> **Valor**: uma cor que descreve como o pixel atual reflete a iluminação direta.|
+|**Material Energia Especular**|**Access**:                             **Public** para permitir que esta propriedade possa ser configurada pelo Editor de Modelo; caso contrário, **Private**.<br /><br /> **Valor**: o expoente que define a intensidade dos realces especulares no pixel atual.|
 
 #### <a name="time-based-effects"></a>Efeitos de tempo
 
@@ -170,7 +170,7 @@ Antes de usar um sombreador em seu aplicativo, você precisa exportá-lo em um f
 
 Você pode exportar sombreadores como código-fonte HLSL ou código de bytes do sombreador compilado. O código-fonte HLSL é exportado para um arquivo de texto que tem uma extensão de nome de arquivo *.hlsl*. O código de bytes do sombreador pode ser exportado para um arquivo binário bruto que tenha uma extensão de nome de arquivo *.cso* ou para um arquivo de cabeçalho ( *.h*) C++ que codifique o código de bytes do sombreador em uma matriz.
 
-Para obter mais informações sobre como exportar sombreadores, confira [Como: Exportar um sombreador](../designers/how-to-export-a-shader.md).
+Para obter mais informações sobre como exportar sombreadores, confira [Como exportar um sombreador](../designers/how-to-export-a-shader.md).
 
 ## <a name="keyboard-shortcuts"></a>Atalhos de teclado
 
@@ -199,7 +199,7 @@ Para obter mais informações sobre como exportar sombreadores, confira [Como: E
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
-|Título|DESCRIÇÃO|
+|Título|Descrição|
 |-----------|-----------------|
 |[Trabalhando com ativos 3D para jogos e aplicativos](../designers/working-with-3-d-assets-for-games-and-apps.md)|Fornece uma visão geral das ferramentas do Visual Studio que você pode usar para trabalhar com texturas e imagens, modelos 3D e efeitos de sombreamento.|
 |[Editor de Imagens](../designers/image-editor.md)|Descreve como usar o Editor de Imagens do Visual Studio para trabalhar com texturas e imagens.|

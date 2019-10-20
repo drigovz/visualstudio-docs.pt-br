@@ -5,17 +5,17 @@ ms.date: 07/29/2019
 ms.topic: conceptual
 f1_keywords:
 - vs.unittesting.testexplorer.overview
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 27ca8a39d39fcc8b4e5ddca2cbedf72e44c6cc81
-ms.sourcegitcommit: 689ba54ea14257d13031de881f5d4fe937a36f56
+ms.openlocfilehash: 65c5d872462b4397078231eed2a9bec56131dec0
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "71342458"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72646637"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Executar testes de unidade com o Gerenciador de Testes
 
@@ -125,7 +125,7 @@ Se o teste falhar, o painel de detalhes também exibe:
 
 ### <a name="view-the-source-code-of-a-test-method"></a>Exibir o código-fonte de um método de teste
 
-Para exibir o código-fonte de um método de teste no editor do Visual Studio, selecione o teste e, em seguida, escolha **Abrir Teste** no menu do clique com o botão direito (teclado: **F12**).
+Para exibir o código-fonte de um método de teste no editor do Visual Studio, selecione o teste e, em seguida, escolha **abrir teste** no menu do botão direito do mouse (teclado: **F12**).
 
 ## <a name="group-and-filter-the-test-list"></a>Agrupar e filtrar a lista de testes
 
@@ -153,16 +153,16 @@ Você pode definir seus próprios níveis de hierarquia e de grupo por **Estado*
 ::: moniker range="vs-2017"
 |Grupo|Descrição|
 |-|-----------------|
-|**Duração**|Agrupa testes pelo tempo de execução: **Rápido**, **Médio** e **Lento**.|
-|**Resultado**|Agrupa testes pelos resultados da execução: **Testes com Falha**, **Testes Ignorados** e **Testes Aprovados**.|
+|**Duração**|Agrupa teste pelo tempo de execução: **rápido**, **médio** e **lento**.|
+|**Resultado**|Agrupa testes por resultados da execução: **testes com falha**, **testes ignorados**, **testes aprovados**.|
 |**Características**|Agrupa teste por pares de categoria/valor que você define. A sintaxe para especificar valores e categorias de característica é definida pela estrutura de teste de unidade.|
 |**Projeto**|Agrupa teste por nome dos projetos.|
 ::: moniker-end
 ::: moniker range=">=vs-2019"
 |Grupo|Descrição|
 |-|-----------------|
-|**Duração**|Agrupa testes pelo tempo de execução: **Rápido**, **Médio** e **Lento**.|
-|**Estado**|Agrupa testes pelos resultados da execução: **Testes com Falha**, **Testes Ignorados**, **Testes Aprovados**, **Não Executado**|
+|**Duração**|Agrupa testes por tempo de execução: **rápido**, **médio**e **lento**.|
+|**Estado**|Agrupa testes por resultados de execução: **testes com falha**, **testes ignorados**, **testes aprovados**, **não executados**|
 |**Estrutura de destino** | Agrupa testes pela estrutura de seus projetos de destino |
 |**Namespace**|Agrupa testes pelo namespace contido.|
 |**Projeto**|Agrupa testes pelo projeto contido.|
@@ -205,13 +205,13 @@ Consulte [Como usar o Microsoft Unit Testing Framework para C++](how-to-use-micr
 Se os testes individuais não tiverem dependências que os impeçam de serem executados em qualquer ordem, ative a execução de teste em paralelo com o ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) botão de alternância na barra de ferramentas. Isso pode reduzir consideravelmente o tempo necessário para executar todos os testes.
 ::: moniker-end
 ::: moniker range=">=vs-2019"
-É possível criar e salvar uma lista de teste que você deseje executar ou exibir como um grupo. Quando você seleciona uma playlist, os testes da lista são exibidos em uma nova guia do Gerenciador de Testes. Você pode adicionar um teste em mais de uma playlist.
+É possível criar e salvar uma lista de teste que você deseje executar ou exibir como um grupo. Quando você seleciona uma playlist, os testes na lista são exibidos em uma nova guia do Gerenciador de testes. Você pode adicionar um teste a mais de uma lista de reprodução.
 
 **Para criar uma lista de reprodução**, escolha um ou mais testes no Gerenciador de Testes. No menu de clique com o botão direito, escolha **Adicionar à Playlist** > **Nova Playlist**.
 
 ![Criar uma playlist](../test/media/vs-2019/test-explorer-playlist-16-2.png)
 
-A playlist é aberta em uma nova guia do Gerenciador de Testes. Você pode usar essa playlist uma vez e descartá-la ou pode clicar no botão **Salvar** na barra de ferramentas da janela de playlist e selecionar um nome e local para salvar a playlist.
+A lista de reprodução é aberta em uma nova guia do Gerenciador de testes. Você pode usar essa playlist uma vez e descartá-la, ou pode clicar no botão **salvar** na barra de ferramentas da janela da lista de reprodução e, em seguida, selecionar um nome e um local para salvar a lista de reprodução.
 
 ![A playlist é aberta em uma guia separada do Gerenciador de Testes](../test/media/vs-2019/test-explorer-playlist-tab-16-2.png)
 
@@ -274,16 +274,16 @@ Para filtrar por um critério diferente:
 |**Caminho do arquivo**|Procura o nome de arquivo totalmente qualificado dos arquivos de origem do teste para encontrar correspondências.|
 |**Nome Totalmente Qualificado**|Pesquisa o nome totalmente qualificado de namespaces de teste, classes e métodos para encontrar correspondências.|
 |**Saída**|Procura as mensagens de erro definidas pelo usuário que são gravadas para a saída padrão (stdout) ou erro padrão (stderr). A sintaxe para especificar mensagens de saúde é definida pela estrutura de teste de unidade.|
-|**Resultado**|Pesquisa os nomes de categoria do Gerenciador de Testes em busca de correspondências: **Testes com Falha**, **Testes Ignorados** e **Testes Aprovados**.|
+|**Resultado**|Procura os nomes de categoria do Gerenciador de Testes para encontrar correspondências: **testes com falha**, **testes ignorados**, **testes aprovados**.|
 ::: moniker-end
 ::: moniker range=">=vs-2019"
 |Qualificador|Descrição|
 |-|-----------------|
-|**Estado**|Pesquisa os nomes de categoria do Gerenciador de Testes em busca de correspondências: **Testes com Falha**, **Testes Ignorados** e **Testes Aprovados**.|
+|**Estado**|Procura os nomes de categoria do Gerenciador de Testes para encontrar correspondências: **testes com falha**, **testes ignorados**, **testes aprovados**.|
 |**Características**|Procura categoria de característica e valor para correspondência. A sintaxe para especificar valores e categorias de característica é definida pela estrutura de teste de unidade.|
 |**Nome Totalmente Qualificado**|Pesquisa o nome totalmente qualificado de namespaces de teste, classes e métodos para encontrar correspondências.|
 |**Projeto**|Procura os nomes de projeto de teste para correspondências.|
-|**Estrutura de destino**|Pesquisa os nomes de categoria do Gerenciador de Testes em busca de correspondências: **Testes com Falha**, **Testes Ignorados** e **Testes Aprovados**.|
+|**Estrutura de destino**|Procura os nomes de categoria do Gerenciador de Testes para encontrar correspondências: **testes com falha**, **testes ignorados**, **testes aprovados**.|
 |**Namespace**|Pesquisa os namespaces de teste para encontrar correspondências.|
 |**Class**|Pesquisa os nomes de classes de teste para encontrar correspondências.|
 ::: moniker-end

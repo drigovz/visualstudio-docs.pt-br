@@ -2,21 +2,21 @@
 title: Diretiva de modelo T4
 ms.date: 11/04/2016
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e8d00bf3055d1706b459baaf48d1b8e5dca3f282
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 4932a20fbcaee4d5aef6aac03252ee6062fbd035
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68870495"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72606202"
 ---
 # <a name="t4-template-directive"></a>Diretiva de modelo T4
 
-Um modelo de texto T4 do Visual Studio geralmente começa `template` com uma diretiva, que especifica como o modelo deve ser processado. Não deve haver mais de uma diretiva de modelo em um modelo de texto e nos arquivos que ele contenha.
+Um modelo de texto T4 do Visual Studio geralmente começa com uma diretiva `template`, que especifica como o modelo deve ser processado. Não deve haver mais de uma diretiva de modelo em um modelo de texto e nos arquivos que ele contenha.
 
 Para obter uma visão geral de como escrever modelos de texto, consulte [escrevendo um modelo de texto T4](../modeling/writing-a-t4-text-template.md).
 
@@ -96,7 +96,7 @@ Se você definir o valor desse atributo como `true`, uma propriedade chamada `Ho
 
 Como o tipo dessa propriedade depende do tipo de host, ele só é útil se você estiver gravando um modelo de texto que funciona somente com um host específico. Ele é aplicável a [modelos de tempo de design](../modeling/design-time-code-generation-by-using-t4-text-templates.md), mas não [a modelos de tempo de execução](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
-Quando `hostspecific` `this.Host` é `true` e você está usando o Visual Studio, você pode converter em IServiceProvider para acessar os recursos do Visual Studio. Você também pode usar `Host.ResolvePath(filename)` para obter o caminho absoluto de um arquivo no projeto. Por exemplo:
+Quando `hostspecific` é `true` e você está usando o Visual Studio, você pode converter `this.Host` para IServiceProvider para acessar recursos do Visual Studio. Você também pode usar `Host.ResolvePath(filename)` para obter o caminho absoluto de um arquivo no projeto. Por exemplo:
 
 ```csharp
 <#@ template debug="false" hostspecific="true" language="C#" #>
@@ -132,7 +132,7 @@ Valores válidos:
 
 `VB`
 
-O `language` atributo especifica o idioma ([!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] ou [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]) a ser usado para o código-fonte nos blocos de instrução e de expressão. O arquivo de código intermediário do qual o resultado é gerado usará essa linguagem. Essa linguagem não está relacionada à linguagem que seu modelo gera, que pode ser qualquer tipo de texto.
+O atributo `language` especifica a linguagem ([!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] ou [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]) a ser usada para o código-fonte nos blocos de instrução e de expressão. O arquivo de código intermediário do qual o resultado é gerado usará essa linguagem. Essa linguagem não está relacionada à linguagem que seu modelo gera, que pode ser qualquer tipo de texto.
 
 Por exemplo:
 

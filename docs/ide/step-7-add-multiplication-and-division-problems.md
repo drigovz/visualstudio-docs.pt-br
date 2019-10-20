@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 342a27571c9ad7b6ed1586fc762b2952ba86c3db
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
-ms.translationtype: HT
+ms.openlocfilehash: 64edeb6d6180907e6b1aa07fd5d443e8523c10b1
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72575157"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647469"
 ---
 # <a name="step-7-add-multiplication-and-division-problems"></a>Etapa 7: Adicionar problemas de multiplicação e divisão
 
@@ -64,6 +64,6 @@ Na sétima parte deste tutorial, você adicionará problemas de multiplicação 
 
 ## <a name="to-continue-or-review"></a>Para continuar ou revisar
 
-- Para ir para a próxima etapa do tutorial, consulte **[etapa 8: personalizar o teste](../ide/step-8-customize-the-quiz.md)** S.
+- Para ir para a próxima etapa do tutorial, consulte **[Step 8: Customize The Quiz](../ide/step-8-customize-the-quiz.md)** .
 
 - Para retornar à etapa anterior do tutorial, veja [Etapa 6: Adicionar um problema de subtração](../ide/step-6-add-a-subtraction-problem.md).

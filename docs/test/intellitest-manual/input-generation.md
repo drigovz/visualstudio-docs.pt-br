@@ -4,17 +4,17 @@ ms.date: 05/02/2017
 ms.topic: conceptual
 helpviewer_keywords:
 - IntelliTest, Dynamic symbolic execution
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: fe0215b3474e72316d848c89f2284ab4e39f213b
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
-ms.translationtype: HT
+author: jillre
+ms.openlocfilehash: 26befe6612c874c2565e44459cc90fe980296137
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66746302"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653182"
 ---
 # <a name="input-generation-using-dynamic-symbolic-execution"></a>Geração de entrada usando a execução simbólica dinâmica
 
@@ -36,7 +36,7 @@ O [solver de restrição](#constraint-solver) do IntelliTest pode lidar com valo
 
 * [Inteiros](#integers-and-floats) e [Floats](#integers-and-floats)
 * [Objetos](#objects)
-* [Estruturas](#structs)
+* [Structs](#structs)
 * [Matrizes](#arrays-and-strings) e [Cadeias de Caracteres](#arrays-and-strings)
 
 O IntelliTest filtra entradas que violam as suposições indicadas.

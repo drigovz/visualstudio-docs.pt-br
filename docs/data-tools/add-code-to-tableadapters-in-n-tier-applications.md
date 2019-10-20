@@ -9,46 +9,46 @@ helpviewer_keywords:
 - TableAdapters, n-tier applications
 - n-tier applications, extending TableAdapters
 ms.assetid: dafac00e-df9d-4d4a-95a6-e34b4d099425
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: e61b9e35464c4200581f6859b2f394911d266d44
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 246ba595cf1da7e4713e0ddc03ea015eeb61eb64
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63402914"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72648929"
 ---
 # <a name="add-code-to-tableadapters-in-n-tier-applications"></a>Adicionar código a TableAdapters em aplicativos de n camadas
-Você pode estender a funcionalidade de um TableAdapter, criando um arquivo de classe parcial para o TableAdapter e adicionando código a ele (em vez de adicionar código para o *DatasetName.DataSet.Designer* arquivo). Classes parciais permitem codificar uma classe específica a ser dividido entre vários arquivos físicos. Para obter mais informações, consulte [parcial](/dotnet/visual-basic/language-reference/modifiers/partial) ou [partial (tipo)](/dotnet/csharp/language-reference/keywords/partial-type).
+Você pode estender a funcionalidade de um TableAdapter criando um arquivo de classe parcial para o TableAdapter e adicionando código a ele (em vez de adicionar código ao arquivo *DataSetName. DataSet. designer* ). As classes parciais permitem que o código de uma classe específica seja dividido entre vários arquivos físicos. Para obter mais informações, consulte [parcial](/dotnet/visual-basic/language-reference/modifiers/partial) ou [parcial (tipo)](/dotnet/csharp/language-reference/keywords/partial-type).
 
-O código que define um TableAdapter é gerado sempre que forem feitas alterações no TableAdapter no conjunto de dados. Esse código também é gerado quando as alterações são feitas durante a execução de qualquer assistente que modifica a configuração do TableAdapter. Para impedir que seu código seja excluído durante a regeneração de um TableAdapter, adicione código ao arquivo de classe parcial do TableAdapter.
+O código que define um TableAdapter é gerado sempre que são feitas alterações no TableAdapter no conjunto de data. Esse código também é gerado quando são feitas alterações durante a execução de qualquer assistente que modifica a configuração do TableAdapter. Para impedir que seu código seja excluído durante a regeneração de um TableAdapter, adicione o código ao arquivo de classe parcial do TableAdapter.
 
-Por padrão, após você separar o conjunto de dados e o código TableAdapter, o resultado é um arquivo de classe distintas em cada projeto. O projeto original tem um arquivo chamado *DatasetName.Designer.vb* (ou *DatasetName.Designer.cs*) que contém o código do TableAdapter. O projeto que é designado na **projeto Dataset** propriedade tem um arquivo chamado *DatasetName.DataSet.Designer.vb* (ou *DatasetName.DataSet.Designer.cs*) que contém o código do conjunto de dados.
-
-> [!NOTE]
-> Quando você separa os conjuntos de dados e os TableAdapters (configurando a propriedade **Projeto de Conjunto de Dados**), as classes dos conjuntos de dados parciais existentes no projeto não são movidas automaticamente. As classes parciais do conjunto de dados existentes devem ser movidas manualmente para o projeto de conjunto de dados.
+Por padrão, depois de separar o DataSet e o código do TableAdapter, o resultado é um arquivo de classe discreto em cada projeto. O projeto original tem um arquivo chamado *DataSetName. designer. vb* (ou *DataSetName.designer.cs*) que contém o código do TableAdapter. O projeto designado na Propriedade Project do **conjunto** de conteúdo tem um arquivo chamado *DataSetName. DataSet. designer. vb* (ou *DataSetName.DataSet.designer.cs*) que contém o código do conjunto de conteúdo.
 
 > [!NOTE]
-> O conjunto de dados fornece funcionalidade para gerar <xref:System.Data.DataTable.ColumnChanging> e <xref:System.Data.DataTable.RowChanging> manipuladores de eventos quando a validação é necessária. Para obter mais informações, consulte [adicionar validação a um conjunto de dados de n camadas](../data-tools/add-validation-to-an-n-tier-dataset.md).
+> Quando você separa os conjuntos de dados e os TableAdapters (configurando a propriedade **Projeto de Conjunto de Dados**), as classes dos conjuntos de dados parciais existentes no projeto não são movidas automaticamente. As classes parciais de DataSet existentes devem ser movidas manualmente para o projeto DataSet.
+
+> [!NOTE]
+> O conjunto de recursos fornece a funcionalidade para gerar <xref:System.Data.DataTable.ColumnChanging> e <xref:System.Data.DataTable.RowChanging> manipuladores de eventos quando a validação é necessária. Para obter mais informações, consulte [Adicionar validação a um conjunto](../data-tools/add-validation-to-an-n-tier-dataset.md)de dados de n camadas.
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
-## <a name="to-add-user-code-to-a-tableadapter-in-an-n-tier-application"></a>Para adicionar o código do usuário a um TableAdapter em um aplicativo de n camadas
+## <a name="to-add-user-code-to-a-tableadapter-in-an-n-tier-application"></a>Para adicionar código de usuário a um TableAdapter em um aplicativo de n camadas
 
-1. Localize o projeto que contém o *. xsd* arquivo.
+1. Localize o projeto que contém o arquivo *. xsd* .
 
-2. Clique duas vezes o *. xsd* arquivo para abrir o **Dataset Designer**.
+2. Clique duas vezes no arquivo *. xsd* para abrir o **Designer de conjunto de dados**.
 
-3. Clique com botão direito no TableAdapter que você deseja adicionar código para e, em seguida, selecione **Exibir código**.
+3. Clique com o botão direito do mouse no TableAdapter ao qual você deseja adicionar o código e selecione **Exibir código**.
 
-     Uma classe parcial é criada e é aberto no Editor de códigos.
+     Uma classe parcial é criada e aberta no editor de código.
 
 4. Adicione o código dentro da declaração de classe parcial.
 
-5. O exemplo a seguir mostra onde adicionar código para o `CustomersTableAdapter` no `NorthwindDataSet`:
+5. O exemplo a seguir mostra onde adicionar código ao `CustomersTableAdapter` no `NorthwindDataSet`:
 
     ```vb
     Partial Public Class CustomersTableAdapter

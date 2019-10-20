@@ -2,17 +2,17 @@
 title: Invocando transformação de texto em uma extensão VS
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7bf32a1722ec8029840566b7602ba78f84adb7ec
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 8729a96d236fd565f31c827ebff6911dbc0b81d6
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68870512"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72667760"
 ---
 # <a name="invoke-text-transformation-in-a-visual-studio-extension"></a>Invocar a transformação de texto em uma extensão do Visual Studio
 
@@ -138,8 +138,8 @@ Você pode passar valores fora de um modelo de texto usando uma classe de parâm
 
 ## <a name="related-articles"></a>Artigos relacionados
 
-Para gerar o texto a partir de um modelo de texto pré-processado: Chame o método `TransformText()` da classe gerada. Para obter mais informações, consulte [geração de texto em tempo de execução com modelos de texto T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
+Para gerar texto de um modelo de texto pré-processado: chame o método `TransformText()` da classe gerada. Para obter mais informações, consulte [geração de texto em tempo de execução com modelos de texto T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
-Para gerar texto fora de uma extensão do Visual Studio: Defina um host personalizado. Para obter mais informações, consulte [modelos de processamento de texto usando um Host personalizado](../modeling/processing-text-templates-by-using-a-custom-host.md).
+Para gerar texto fora de uma extensão do Visual Studio: defina um host personalizado. Para obter mais informações, consulte [processando modelos de texto usando um host personalizado](../modeling/processing-text-templates-by-using-a-custom-host.md).
 
-Para gerar um código-fonte que possa ser compilado e executado posteriormente: Chame o método [pré-processado](/previous-versions/visualstudio/visual-studio-2012/ee844321(v=vs.110)) do [ITextTemplating](/previous-versions/visualstudio/visual-studio-2012/bb932392(v=vs.110)).
+Para gerar o código-fonte que posteriormente pode ser compilado e executado: chame o método [PreprocessTemplate](/previous-versions/visualstudio/visual-studio-2012/ee844321(v=vs.110)) de [ITextTemplating](/previous-versions/visualstudio/visual-studio-2012/bb932392(v=vs.110)).

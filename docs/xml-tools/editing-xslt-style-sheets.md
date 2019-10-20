@@ -3,45 +3,45 @@ title: Folhas de estilos XSLT de edição
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 080bed0f-0ca9-4be7-aecd-6bdaebc04007
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dab4013bf3921a2af4f69d464c10d1e70f9407b3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7fc987f8362d5daf435b7e9de860cc13f16a1aaf
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62996987"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72646066"
 ---
-# <a name="edit-xslt-style-sheets"></a>Editar folhas de estilos XSLT
+# <a name="edit-xslt-style-sheets"></a>Editar folhas de estilo XSLT
 
-O editor XML também pode ser usado para editar folhas de estilos XSLT. Você pode tirar proveito dos recursos do editor padrão como o IntelliSense, estruturação, snippets XML, e assim por diante. Além disso, há também os novos recursos que tornam ficar em XSLT.
+O editor de XML também pode ser usado para editar folhas de estilo XSLT. Você pode tirar proveito dos recursos do editor padrão como o IntelliSense, estruturação, snippets XML, e assim por diante. Além disso, há também os novos recursos que tornam ficar em XSLT.
 
 ## <a name="xslt-features"></a>Recursos de fonte
 
 A tabela a seguir descreve os recursos específicos para trabalhar com folhas de estilos XSLT.
 
-**Coloração de sintaxe**
+**Cor da sintaxe**
 
-Palavras-chave XSLT, tais como `template` e `match`, são exibidos na cor da palavra-chave XSLT especificada pela **fontes e cores** configurações.
+As palavras-chave XSLT, como `template` e `match`, são exibidas na cor da palavra-chave XSLT especificada pelas configurações de **fontes e cores** .
 
 **Sublinhados ondulados**
 
-O editor XML usa a instalada *XSLT* arquivo para validar folhas de estilos XSLT. Os erros de validação são mostrados como sublinhados ondulados azuis. O editor XML também compila a folha de estilos no plano de fundo e relata os erros de compilador ou avisos com traços ondulados apropriadas.
+O editor de XML usa o arquivo *XSLT. xsd* instalado para validar as folhas de estilo XSLT. Os erros de validação são mostrados como sublinhados ondulados azuis. O editor de XML também compila a folha de estilos em segundo plano e relata erros ou avisos do compilador com sublinhados ondulados apropriados.
 
 **Suporte para blocos de script**
 
 O código nos blocos de script é suportado pelo depurador XSLT para que você pode definir pontos de interrupção e percorrer o código de bloco de script.
 
-**Saída XSLT de exibição**
+**Exibir saída XSLT**
 
-Você pode executar uma transformação XSL e exibir a saída do editor XML. Para obter mais informações, confira [Como: Executar uma transformação XSLT do editor XML](../xml-tools/how-to-execute-an-xslt-transformation-from-the-xml-editor.md).
+Você pode executar uma transformação XSL e exibir a saída do editor de XML. Para obter mais informações, consulte [como executar uma transformação XSLT no editor de XML](../xml-tools/how-to-execute-an-xslt-transformation-from-the-xml-editor.md).
 
-**Debug XSLT**
+**Depurar XSLT**
 
-Você pode iniciar o depurador XSLT de um arquivo XSLT no editor de XML. O depurador oferece suporte pontos de interrupção no arquivo XSLT, estado de configuração de execução XSLT de exibição, e assim por diante. Passa sobre uma variável XSLT traz anterior um ToolTip com o valor da variável. O depurador pode ser usado para depurar uma folha de estilos, ou depurar uma transformação XSL compilado chamada de outro aplicativo. Para obter mais informações, consulte [depuração XSLT](../xml-tools/debugging-xslt.md).
+Você pode iniciar o depurador XSLT de um arquivo XSLT no editor de XML. O depurador oferece suporte pontos de interrupção no arquivo XSLT, estado de configuração de execução XSLT de exibição, e assim por diante. Passa sobre uma variável XSLT traz anterior um ToolTip com o valor da variável. O depurador pode ser usado para depurar uma folha de estilos, ou depurar uma transformação XSL compilado chamada de outro aplicativo. Para obter mais informações, consulte [DEBUGGING XSLT](../xml-tools/debugging-xslt.md).
 
 ## <a name="see-also"></a>Consulte também
 

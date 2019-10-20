@@ -9,17 +9,17 @@ helpviewer_keywords:
 - list threads command
 - Debug.ListThreads command
 ms.assetid: 34b665c0-d46f-4c1a-a066-b678eba5ac54
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b3ad3b30329d574145ce7de839a3e6c164df2d5
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: c437b91fea5e3087de8b22cb72a2f20ad421bead
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68919088"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72610479"
 ---
 # <a name="list-threads-command"></a>Comando Listar Threads
 Exibe uma lista dos threads no programa atual.
@@ -44,7 +44,7 @@ Quando especificado, o argumento `index` marca o thread indicado como o thread a
 >Debug.ListThreads
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Comando List Call Stack](../../ide/reference/list-call-stack-command.md)
 - [Comando List Disassembly](../../ide/reference/list-disassembly-command.md)

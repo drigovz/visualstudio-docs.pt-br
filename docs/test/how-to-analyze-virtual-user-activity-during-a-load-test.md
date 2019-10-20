@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - virtual user activity chart, viewing
 ms.assetid: 8bda19b3-91c1-4daf-b6c7-09108bddadff
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: dadc35d09ad70986f728104396502f13a06c0995
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 97abfe3740ea9209768e82eca1b269cd0a381233
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62979413"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72644165"
 ---
-# <a name="how-to-analyze-what-virtual-users-are-doing-during-a-load-test-using-the-virtual-user-activity-chart"></a>Como: Analisar o que usuários virtuais fazem durante um teste de carga usando o gráfico de atividade de usuário virtual
+# <a name="how-to-analyze-what-virtual-users-are-doing-during-a-load-test-using-the-virtual-user-activity-chart"></a>Como analisar o que usuários virtuais estão fazendo durante um teste de carga usando o gráfico de atividade de usuário virtual
 
 Veja a atividade do usuário virtual associado ao seu teste de carga usando o **Gráfico de atividade de usuário virtual**. Cada linha do gráfico representa um usuário virtual individual. O **Gráfico de Atividade de Usuário Virtual** mostra exatamente o que cada usuário virtual executou durante o teste. É possível ver padrões de atividade de usuário, padrões de carga, correlacionar testes reprovados ou lentos e ver solicitações com outra atividade de usuário virtual. O **Gráfico de Atividade de Usuário Virtual** está disponível apenas depois da conclusão da execução do teste de carga.
 
@@ -29,7 +29,7 @@ Os procedimentos a seguir demonstram como exibir o **Gráfico de atividade do us
 
 2. Após a execução do teste de carga, a página de resumo dos resultados do teste é exibida. Escolha o botão **Detalhes do Usuário** na barra de ferramentas.
 
-     - ou -
+     \- ou -
 
      Abra a exibição Gráficos escolhendo o botão **Gráficos** na barra de ferramentas. Clique com o botão direito do mouse em um gráfico e selecione **Ir para detalhe do usuário**.
 
@@ -84,7 +84,7 @@ Os procedimentos a seguir demonstram como exibir o **Gráfico de atividade do us
 
     O **Gráfico de Atividade de Usuário Virtual** fornece a capacidade de filtrar testes, páginas e transações com base em diferentes critérios. Você pode remover alguns testes da exibição, remover todos os testes com êxito ou remover os testes reprovados com certas falhas. Também é possível remover todos os testes que não possuem logs.
 
-    Por exemplo, é possível selecionar a opção **(Realçar erros)**, que exibe todos os erros no carrinho colorido em vermelho. Também é possível selecionar a opção **(Realçar resultados com registros)**, que exibe todos os resultados do teste que têm os logs coloridos em verde no gráfico.
+    Por exemplo, é possível selecionar a opção **(Realçar erros)** , que exibe todos os erros no carrinho colorido em vermelho. Também é possível selecionar a opção **(Realçar resultados com registros)** , que exibe todos os resultados do teste que têm os logs coloridos em verde no gráfico.
 
     **Painel Filtrar resultados**
 
@@ -106,4 +106,4 @@ Os procedimentos a seguir demonstram como exibir o **Gráfico de atividade do us
 ## <a name="see-also"></a>Consulte também
 
 - [Analisando a atividade do usuário virtual na exibição Detalhes](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md)
-- [Passo a passo: Usando o gráfico de atividade de usuário virtual para isolar problemas](../test/walkthrough-use-the-virtual-user-activity-chart-to-isolate-issues.md)
+- [Passo a passo: Usando o gráfico de atividade do usuário virtual para isolar problemas](../test/walkthrough-use-the-virtual-user-activity-chart-to-isolate-issues.md)

@@ -4,16 +4,16 @@ ms.date: 03/07/2017
 ms.topic: conceptual
 helpviewer_keywords:
 - Live Unit Testing
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 646a8680211d7d79ea24a1b5b62d78eb6955b5f7
-ms.sourcegitcommit: 1a3c2ca995fd44fc72741b3a100c6e57f4f8702c
+ms.openlocfilehash: b5974819e9dca064655cf04eec3dd371f09ee15c
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "72262333"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72652997"
 ---
 # <a name="how-to-configure-and-use-live-unit-testing"></a>Como configurar e usar Live Unit Testing
 
@@ -36,14 +36,14 @@ O Live Unit Testing funciona com as três estruturas de teste de unidade popular
 
 Se você tiver projetos de teste com base em MSTest mais antigos que referenciem Microsoft. VisualStudio. QualityTools. UnitTestFramework e não quiser migrar para os pacotes do NuGet do MSTest mais recentes, atualize para o Visual Studio 2019 ou Visual Studio 2017.
 
-Em alguns casos, talvez seja necessário restaurar explicitamente os pacotes NuGet referenciados por um projeto para que Live Unit Testing funcionem. Você pode fazer isso fazendo uma compilação explícita da solução (selecione **compilar** > **Recompilar solução** no menu do Visual Studio de nível superior) ou restaurando pacotes na solução (clique com o botão direito do mouse na solução e selecione **restaurar NuGet Pacotes**).
+Em alguns casos, talvez seja necessário restaurar explicitamente os pacotes NuGet referenciados por um projeto para que Live Unit Testing funcionem. Você pode fazer isso fazendo uma compilação explícita da solução (selecione **criar**  > **solução de recompilação** no menu de nível superior do Visual Studio) ou restaurando pacotes na solução (clique com o botão direito do mouse na solução e selecione **restaurar NuGet Pacotes**).
 
 ## <a name="configure"></a>Configurar
 
-Configure Live Unit Testing selecionando **ferramentas** >  na barra de menus do Visual**Studio de nível** superior e, em seguida, selecionando **Live Unit Testing** no painel esquerdo da caixa de diálogo **Opções** .
+Configure Live Unit Testing selecionando **ferramentas**  > **Opções** na barra de menus do Visual Studio de nível superior e, em seguida, selecionando **Live Unit Testing** no painel esquerdo da caixa de diálogo **Opções** .
 
 > [!TIP]
-> Após a habilitação da Live Unit Testing (consulte a próxima seção, [Iniciar, pausar e parar Live Unit Testing](#start-pause-and-stop)), você também pode abrir a caixa de diálogo **Opções** selecionando **testar** > **Live Unit Testing** **Opções** > .
+> Após a habilitação da Live Unit Testing (consulte a próxima seção, [Iniciar, pausar e parar Live Unit Testing](#start-pause-and-stop)), você também pode abrir a caixa de diálogo **Opções** selecionando **testar**  > **Live Unit Testing** **Opções**de  > .
 
 A imagem a seguir mostra as opções de configuração de Live Unit Testing disponíveis na caixa de diálogo:
 
@@ -79,7 +79,7 @@ As opções configuráveis incluem:
 
 ## <a name="start-pause-and-stop"></a>Iniciar, pausar e parar
 
-Para habilitar Live Unit Testing, selecione **testar** > **Live Unit Testing** > **Iniciar** no menu de nível superior do Visual Studio. Quando Live Unit Testing estiver habilitada, as opções disponíveis no menu **Live Unit Testing** serão alteradas de um único item, **Iniciar**, para **Pausar**, **parar**e **Redefinir limpar**:
+Para habilitar Live Unit Testing, selecione  >  de **teste** **Live Unit Testing**  > **Iniciar** no menu de nível superior do Visual Studio. Quando Live Unit Testing estiver habilitada, as opções disponíveis no menu **Live Unit Testing** serão alteradas de um único item, **Iniciar**, para **Pausar**, **parar**e **Redefinir limpar**:
 
 - **Pausa** temporariamente suspende Live unit testing.
 
@@ -110,7 +110,7 @@ Ao focalizar o símbolo de êxito ou de falha na janela de código, é possível
 
 ![Status do teste para um símbolo no Visual Studio](./media/lut-failedinfo.png)
 
-Além de fornecer os nomes e o resultado dos testes, a dica de ferramenta permite que você execute novamente ou depure o conjunto de testes. Se você selecionar um ou mais dos testes na dica de ferramenta, é possível executar ou depurar apenas esses testes. Isso permite depurar seus testes sem ter que sair da janela de código. Ao depurar, além de observar quaisquer pontos de interrupção que você já tenha definido, a execução do programa pausa quando o depurador executa um método <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert> que retorna um resultado inesperado.
+Além de fornecer os nomes e o resultado dos testes, a dica de ferramenta permite que você execute novamente ou depure o conjunto de testes. Se você selecionar um ou mais dos testes na dica de ferramenta, é possível executar ou depurar apenas esses testes. Isso permite depurar seus testes sem ter que sair da janela de código. Durante a depuração, além de observar qualquer ponto de interrupção que você já tenha definido, a execução do programa pausa quando o depurador executa um método de <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert> que retorna um resultado inesperado.
 
 Ao focalizar um teste com falha na dica de ferramenta, ele é expandido para fornecer informações adicionais sobre a falha, conforme mostrado na imagem a seguir. Para navegar diretamente para um teste com falha, clique duas vezes nele na dica de ferramenta.
 
@@ -137,9 +137,9 @@ Por exemplo, a falha de teste mostrada na imagem anterior foi causada por uma pr
 O **Gerenciador de testes** fornece uma interface que permite executar e depurar testes e analisar os resultados do teste. O Live Unit Testing é integrado ao **Gerenciador de Testes**. Quando o Live Unit Testing não está habilitado ou está parado, o **Gerenciador de Testes** exibe o status dos testes de unidade na última vez que um teste foi executado. Alterações no código-fonte exigem uma nova execução dos testes. Por outro lado, quando o Live Unit Testing está habilitado, o status dos testes de unidade no **Gerenciador de Testes** é atualizado imediatamente. Você não precisa executar os testes de unidade explicitamente.
 
 > [!TIP]
-> Abra o **Gerenciador de testes** selecionando **testar** > **Windows** > **Gerenciador de teste** no menu de nível superior do Visual Studio.
+> Abra o **Gerenciador de testes** selecionando **testar**  >  o**Windows**  > **Test Explorer** no menu de nível superior do Visual Studio.
 
-Você pode observar na janela do **Explorador de Testes** que alguns testes estão esmaecidos. Por exemplo, quando você habilita Live Unit Testing depois de abrir um projeto salvo anteriormente, a janela **Gerenciador de testes** desbotau tudo, exceto o teste com falha, como mostra a imagem a seguir. Nesse caso, Live Unit Testing executou novamente o teste com falha, mas ele não executa novamente os testes bem-sucedidos. Isso ocorre porque os dados persistentes do Live Unit Testing indicam que não houve alterações desde que os testes foram executados pela última vez com êxito.
+Você pode observar na janela **Test Explorer** que alguns testes estão desbotados. Por exemplo, quando você habilita Live Unit Testing depois de abrir um projeto salvo anteriormente, a janela **Gerenciador de testes** desbotau tudo, exceto o teste com falha, como mostra a imagem a seguir. Nesse caso, Live Unit Testing executou novamente o teste com falha, mas ele não executa novamente os testes bem-sucedidos. Isso ocorre porque os dados persistentes do Live Unit Testing indicam que não houve alterações desde que os testes foram executados pela última vez com êxito.
 
 ![Falha no teste no Gerenciador de testes](media/lut-test-explorer.png)
 
@@ -156,7 +156,7 @@ Há algumas diferenças entre a execução e atualização automáticas dos resu
 Se sua solução tiver 10 ou mais projetos, o Visual Studio exibirá a caixa de diálogo a seguir quando você:
 
 - Iniciar Live Unit Testing e não há dados persistentes
-- Selecione @no__t de **teste**-1**Live Unit Testing** **reinicialização** de  > 
+- selecionar  >  de **teste** **Live Unit Testing**  > **Redefinir limpeza**
 
 ![Caixa de diálogo do Live Unit Testing para projetos grandes](media/lut-large-project.png)
 
@@ -177,9 +177,9 @@ Para selecionar os projetos individuais em testes de unidade, faça o seguinte a
 
 É possível usar a janela do editor de código para incluir ou excluir métodos de teste individuais. Clique com o botão direito do mouse na assinatura do método de teste na janela Editor de código e selecione uma das seguintes opções:
 
-- Os **testes ao vivo** > **incluem o método \<selected >**
-- Os **testes ao vivo** > **excluem o método \<selected >**
-- **Testes ao vivo** > **exclua todos, exceto o método \<selected >**
+- Os **testes ao vivo**  > **incluem \<selected método >**
+- Os **testes ao vivo**  > **excluir \<selected método >**
+- **Testes ao vivo**  > **excluir tudo, mas \<selected método >**
 
 ### <a name="exclude-tests-programmatically"></a>Excluir testes programaticamente
 
