@@ -4,17 +4,17 @@ ms.date: 03/23/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - full solution analysis
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 26cd267f80f8c7c220771a5c2220d22b66929051
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: 3f7837b1e5ea5b84e1ee1197bf6f8c40d0863c3e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72448929"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72649454"
 ---
 # <a name="how-to-enable-and-disable-full-solution-analysis-for-managed-code"></a>Como habilitar e desabilitar a análise completa da solução para código gerenciado
 
@@ -34,7 +34,7 @@ A imagem a seguir mostra os resultados da mesma solução depois de desabilitar 
 
 1. Para abrir a caixa de diálogo **Opções** , na barra de menus do Visual Studio, escolha **ferramentas** > **Opções**.
 
-1. Na caixa de diálogo **Opções** , escolha **Editor de texto**@no__t-**C#** 2 ou **Basic** > **avançado**.
+1. Na caixa de diálogo **Opções** , escolha **o Editor** de**C#** texto  >  ou **Basic**  > **avançado**.
 
 1. Marque a caixa de seleção **Habilitar análise de solução completa** para habilitar a análise completa da solução ou desmarque a caixa para desabilitá-la. Escolha **OK** quando terminar.
 

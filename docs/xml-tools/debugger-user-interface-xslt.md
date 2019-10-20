@@ -3,23 +3,23 @@ title: Janelas do depurador XSLT
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 846fdabd-e5c3-4688-9b0d-a93fbeea1b96
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b25c47e6db79fe4b860b6e7c209f0fc8403d0fcd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ae37db21072e81a5940f09f085bf261839686a69
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62838487"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72646085"
 ---
-# <a name="debugger-user-interface-xslt"></a>Interface de usuário do depurador (XSLT)
+# <a name="debugger-user-interface-xslt"></a>XSLT (interface do usuário do depurador)
 
-Este artigo descreve as caixas de diálogo e janelas do depurador. Ele aborda apenas partes da interface do usuário que têm o comportamento de depuração de XSLT-específico.
+Este artigo descreve as janelas do depurador e as caixas de diálogo. Ele aborda apenas as partes da interface do usuário que têm comportamento de depuração específico ao XSLT.
 
-Para obter mais informações, consulte o [referência de interface do usuário de depuração](../debugger/debugging-user-interface-reference.md).
+Para obter mais informações, consulte a [referência da interface do usuário de depuração](../debugger/debugging-user-interface-reference.md).
 
 ## <a name="locals-window"></a>Janela Locais
 
@@ -27,19 +27,19 @@ A janela locais exibe informações sobre todas as variáveis definidos na folha
 
 **Nome**
 
-Esta coluna contém os nomes de todos as variáveis locais no escopo atual. Conjuntos de nó têm um controle de árvore que você pode fazer drill down para ver suas subpastas.
+Esta coluna contém os nomes de todos as variáveis locais no escopo atual. Os conjuntos de nós têm um controle de árvore que você pode fazer uma busca detalhada para ver suas subpastas.
 
-**Valor**
+**Value**
 
 Esta coluna mostra o valor contido por cada variável. O atributo, a instrução de processamento, o comentário, texto, e os nós CDATA exibem o valor de texto do nó. Os nós de namespace exibem URI de namespace.
 
 **Tipo**
 
-Essa coluna identifica o tipo de dados de cada variável listado na **nome** coluna.
+Esta coluna identifica o tipo de dados de cada variável listada na coluna **nome** .
 
 A janela locais também exibe as variáveis predefinidos de contexto que acompanham o contexto de transformação XSLT. A tabela a seguir descreve as variáveis predefinidos de contexto usados pelo depurador XSLT.
 
-|Nome|Descrição|
+|Name|Descrição|
 |-|-----------------|
 |`last()`|O tamanho do contexto.|
 |`position()`|A posição, ou número de índice, o nó de contexto, relativo ao tamanho do contexto.|
@@ -56,7 +56,7 @@ O **lista de tarefas** lista todos os erros de compilação na folha de estilos.
 O **lista de tarefas** inclui todos os erros que ocorrem nos blocos de script no arquivo XSLT.
 
 > [!NOTE]
-> O depurador XSLT não tem nenhum aviso, portanto, eles nunca aparecerão na **lista de tarefas**.
+> O depurador XSLT não tem avisos, então eles nunca aparecem na **lista de tarefas**.
 
 ## <a name="breakpoints-window"></a>Janela Pontos de Interrupção
 
@@ -72,9 +72,9 @@ Variáveis exibidos na janela de observação são para o contexto atual (o item
 
 ## <a name="call-stack-window"></a>janela de Pilha de Chamadas
 
-O **pilha de chamadas** janela é usada para exibir os nomes das funções na pilha de chamadas, tipos de parâmetro e valores de parâmetro. Informações de pilha de chamadas é mostrada somente quando o programa que está sendo depurado está em um estado de interrupção.
+A janela **pilha de chamadas** é usada para exibir os nomes das funções na pilha de chamadas, os tipos de parâmetro e os valores de parâmetro. Informações de pilha de chamadas é mostrada somente quando o programa que está sendo depurado está em um estado de interrupção.
 
-A pilha de chamadas representa os vários contextos que a execução de fonte está atravessando. Por exemplo, se houver uma chamada de modelo "a" modelo "b", o modelo "a" e o modelo "b" aparecem na **pilha de chamadas** janela com o contexto atual na parte superior da lista. O usuário pode ver a consulta que está em execução atualmente.
+A pilha de chamadas representa os vários contextos que a execução de fonte está atravessando. Por exemplo, se houver uma chamada do modelo "a" para o modelo "b", o modelo "a" e o modelo "b" aparecerão na janela **pilha de chamadas** com o contexto atual na parte superior da lista. O usuário pode ver a consulta que está em execução atualmente.
 
 Se os modelos não têm um nome para o arquivo XSLT, os nomes gerados pelo processador XSLT são usados.
 
@@ -82,26 +82,26 @@ Clique em um item diferente de aquele na parte superior da lista indica ao visua
 
 ## <a name="quickwatch-dialog-box"></a>QuickWatch (caixa de diálogo)
 
-O **QuickWatch** caixa de diálogo é usada para avaliar expressões XPath 1.0. O nó de contexto (o nó de `self::node()` da janela locais) fornece o contexto para a execução da expressão XPath. O resultado de executar a expressão XPath é exibido na janela de observação.
+A caixa de diálogo **QuickWatch** é usada para avaliar as expressões XPath 1,0. O nó de contexto (o nó de `self::node()` da janela locais) fornece o contexto para a execução da expressão XPath. O resultado de executar a expressão XPath é exibido na janela de observação.
 
-A lista a seguir descreve as restrições na avaliação da expressão XPath:
+A lista a seguir descreve as restrições sobre a avaliação da expressão XPath:
 
 - Somente as funções internas XPath são permitidas.
 
-- XSLT interno funciona como `document()` e `key()` não são permitidas.
+- Funções XSLT internas, como `document()` e `key()`, não são permitidas.
 
 - As funções definidas pelo usuário não são permitidas.
 
-Para obter mais informações, confira [Como: Avaliar uma expressão XPath](../xml-tools/how-to-evaluate-an-xpath-expression.md).
+Para obter mais informações, consulte [como: avaliar uma expressão XPath](../xml-tools/how-to-evaluate-an-xpath-expression.md).
 
 ## <a name="disassembly-window"></a>janela de Desmontagem
 
 A janela de desmontagem mostra o código do assembly que é gerado pelo compilador XSLT. Esta janela pode ser usada da mesma forma como quaisquer outras janelas de desmontagem do Visual Studio.
 
-Para obter mais informações, [como: Use a janela de desmontagem](../debugger/how-to-use-the-disassembly-window.md).
+Para obter mais informações, [como: usar a janela de desmontagem](../debugger/how-to-use-the-disassembly-window.md).
 
 ## <a name="see-also"></a>Consulte também
 
 - [Depuração de XSLT](../xml-tools/debugging-xslt.md)
 - [Introdução ao depurador](../debugger/debugger-feature-tour.md)
-- [Inspecionar variáveis nas janelas autos e locais no Visual Studio](../debugger/autos-and-locals-windows.md)
+- [Inspecionar variáveis nas janelas automáticas e locais no Visual Studio](../debugger/autos-and-locals-windows.md)

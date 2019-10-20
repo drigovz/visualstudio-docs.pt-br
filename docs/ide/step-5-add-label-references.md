@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4fbe9b0005ce190eda6a88dea2f6b5f80890743c
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
-ms.translationtype: HT
+ms.openlocfilehash: 9a1fe8f4e8003da2db0e8a599c3eca504945f3e4
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72562935"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647514"
 ---
 # <a name="step-5-add-label-references"></a>Etapa 5: Adicionar referências de rótulo
 O programa precisa rastrear quais controles de rótulo o jogador escolhe. Atualmente, o programa mostra todos os rótulos escolhidos pelo jogador. Mas isso será alterado. Depois que o primeiro rótulo é escolhido, o programa deve mostrar o ícone do rótulo. Depois que o segundo rótulo é escolhido, o programa deve exibir ambos os ícones por um breve momento e depois ocultá-los novamente. Agora seu programa rastreará qual controle de rótulo será escolhido primeiro e qual será escolhido em segundo usando *variáveis de referência*.
@@ -44,15 +44,15 @@ O programa precisa rastrear quais controles de rótulo o jogador escolhe. Atualm
 
 3. Salve e execute seu programa. Escolha um dos controles de rótulo e seu ícone é exibido.
 
-4. Escolha o próximo controle de rótulo e observe que nada acontece. O programa já está acompanhando o primeiro rótulo que o jogador escolheu, portanto `firstClicked` não é igual a `null` no C# ou `Nothing` em Visual Basic. Quando sua instrução `if` verifica `firstClicked` para determinar se ele é igual a `null` ou `Nothing`, ela descobre que não é e não executa as instruções na instrução `if`. Desse modo, somente o primeiro ícone que é escolhido torna-se preto e os outros ícones ficam invisíveis, conforme mostrado na imagem a seguir.
+4. Escolha o próximo controle de rótulo e observe que nada acontece. O programa já está acompanhando o primeiro rótulo que o jogador escolheu, portanto `firstClicked` não é igual a `null` no C# ou `Nothing` em Visual Basic. Quando sua instrução `if` verifica `firstClicked` para determinar se ele é igual a `null` ou `Nothing`, ela descobre que não é e não executa as instruções na instrução `if`. Portanto, somente o primeiro ícone escolhido fica preto e os outros ícones são invisíveis, conforme mostrado na imagem a seguir.
 
      ![Jogo da memória mostrando um ícone](../ide/media/express_tut4step5.png)<br/>
-**Jogo da memória** mostrando um ícone
+***Jogo de correspondência*** *mostrando um ícone*
 
      Essa situação será corrigida na primeira etapa do tutorial adicionando um controle **Temporizador**.
 
 ## <a name="to-continue-or-review"></a>Para continuar ou revisar
 
-- Para acessar a próxima etapa do tutorial, veja [Etapa 6: Adicionar um temporizador](../ide/step-6-add-a-timer.md).
+- Para ir para a próxima etapa do tutorial, consulte **[etapa 6: adicionar um temporizador](../ide/step-6-add-a-timer.md)** .
 
 - Para retornar à etapa anterior do tutorial, veja [Etapa 4: Adicionar um manipulador de eventos Click a cada rótulo](../ide/step-4-add-a-click-event-handler-to-each-label.md).

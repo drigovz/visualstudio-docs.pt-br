@@ -1,5 +1,5 @@
 ---
-title: 'CA2116: Os métodos APTCA só devem chamar métodos APTCA | Microsoft Docs'
+title: 'CA2116: os métodos APTCA devem chamar apenas os métodos APTCA | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,17 +12,17 @@ helpviewer_keywords:
 - CA2116
 ms.assetid: 8b91637e-891f-4dde-857b-bf8012270ec4
 caps.latest.revision: 20
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: ac5877ecf22ca8d0d8cc15095d354973ece29eaa
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: c9de5178b585275ef410ad3179ba320b663536bf
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65687351"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72658689"
 ---
-# <a name="ca2116-aptca-methods-should-only-call-aptca-methods"></a>CA2116: Métodos APTCA devem chamar somente métodos APTCA
+# <a name="ca2116-aptca-methods-should-only-call-aptca-methods"></a>CA2116: os métodos APTCA só devem chamar métodos APTCA
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -33,48 +33,48 @@ ms.locfileid: "65687351"
 |Alteração Significativa|Quebra|
 
 ## <a name="cause"></a>Causa
- Um método em um assembly com o <xref:System.Security.AllowPartiallyTrustedCallersAttribute?displayProperty=fullName> atributo chama um método em um assembly que não tem o atributo.
+ Um método em um assembly com o atributo <xref:System.Security.AllowPartiallyTrustedCallersAttribute?displayProperty=fullName> chama um método em um assembly que não tem o atributo.
 
 ## <a name="rule-description"></a>Descrição da Regra
- Por padrão, os métodos públicos ou protegidos em assemblies com nomes fortes implicitamente são protegidos por um [demandas de Link](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) para confiança total; apenas totalmente confiável os chamadores podem acessar um assembly de nome forte. Assemblies de nome forte é marcado com o <xref:System.Security.AllowPartiallyTrustedCallersAttribute> atributo (APTCA) não tem essa proteção. O atributo desabilita a demanda de link, fazendo com que o assembly acessível aos chamadores que não têm confiança total, como o código em execução de uma intranet ou da Internet.
+ Por padrão, os métodos públicos ou protegidos em assemblies com nomes fortes são implicitamente protegidos por uma [demanda de link](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) para confiança total; somente chamadores totalmente confiáveis podem acessar um assembly de nome forte. Os assemblies com nome forte marcados com o atributo <xref:System.Security.AllowPartiallyTrustedCallersAttribute> (APTCA) não têm essa proteção. O atributo desabilita a demanda de link, tornando o assembly acessível a chamadores que não têm confiança total, como a execução de código de uma intranet ou da Internet.
 
- Quando o atributo APTCA estiver presente em um assembly totalmente confiável e o assembly executar código em outro assembly que não permita chamadores parcialmente confiáveis, será possível uma exploração de segurança. Se dois métodos `M1` e `M2` atendem às condições a seguir, chamadores mal-intencionados podem usar o método `M1` para ignorar a demanda de link de confiança total implícito que protege `M2`:
+ Quando o atributo APTCA está presente em um assembly totalmente confiável e o assembly executa o código em outro assembly que não permite chamadores parcialmente confiáveis, uma exploração de segurança é possível. Se dois métodos `M1` e `M2` atenderem às seguintes condições, os chamadores mal-intencionados poderão usar o método `M1` para ignorar a demanda de link de confiança total implícita que protege o `M2`:
 
-- `M1` um método público é declarado em um assembly totalmente confiável que tem o atributo APTCA.
+- `M1` é um método público declarado em um assembly totalmente confiável que tem o atributo APTCA.
 
-- `M1` chama um método `M2` fora `M1`do assembly.
+- `M1` chama um método `M2` fora do assembly `M1`.
 
-- `M2`do assembly não tem o atributo APTCA e, portanto, não devem ser executado por, ou em nome dos chamadores parcialmente confiáveis.
+- o assembly de `M2` não tem o atributo APTCA e, portanto, não deve ser executado por ou em nome de chamadores que são parcialmente confiáveis.
 
-  Um chamador parcialmente confiável `X` pode chamar o método `M1`, causando `M1` chamar `M2`. Porque `M2` não tem o atributo APTCA, seu chamador imediato (`M1`) deve atender uma demanda de link para confiança total; `M1` tem confiança total e, portanto, satisfaz essa verificação. O risco de segurança é porque `X` não participa de satisfazer a demanda de link que protege `M2` de chamadores não confiáveis. Portanto, os métodos com o atributo APTCA não devem chamar métodos que não têm o atributo.
+  Um chamador parcialmente confiável `X` pode chamar o método `M1`, fazendo com que `M1` chame `M2`. Como `M2` não tem o atributo APTCA, seu chamador imediato (`M1`) deve atender a uma demanda de link para confiança total; o `M1` tem confiança total e, portanto, satisfaz essa verificação. O risco de segurança é porque `X` não participa da demanda de link que protege `M2` de chamadores não confiáveis. Portanto, os métodos com o atributo APTCA não devem chamar métodos que não tenham o atributo.
 
 ## <a name="how-to-fix-violations"></a>Como Corrigir Violações
- Se o atributo APCTA for necessário, use uma demanda para proteger o método que chama o assembly de confiança total. As permissões exatas que você demanda dependerá a funcionalidade exposta pelo seu método. Se for possível, proteja o método com uma demanda de confiança total garantir que a funcionalidade subjacente não é exposta a chamadores parcialmente confiáveis. Se isso não for possível, selecione um conjunto de permissões que efetivamente protege a funcionalidade exposta. Para obter mais informações sobre as demandas, consulte [demandas](https://msdn.microsoft.com/e5283e28-2366-4519-b27d-ef5c1ddc1f48).
+ Se o atributo APCTA for necessário, use uma demanda para proteger o método que chama o assembly de confiança total. As permissões exatas que você exige dependerão da funcionalidade exposta pelo método. Se possível, proteja o método com uma demanda de confiança total para garantir que a funcionalidade subjacente não seja exposta a chamadores parcialmente confiáveis. Se isso não for possível, selecione um conjunto de permissões que proteja efetivamente a funcionalidade exposta. Para obter mais informações sobre as demandas, consulte [demandas](https://msdn.microsoft.com/e5283e28-2366-4519-b27d-ef5c1ddc1f48).
 
 ## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos
- Para suprimir com segurança um aviso nessa regra, você deve garantir que a funcionalidade exposta pelo seu método não direta ou indiretamente permite chamadores acessem informações confidenciais, operações ou recursos que podem ser usados de forma destrutivas.
+ Para suprimir um aviso dessa regra com segurança, você deve garantir que a funcionalidade exposta por seu método não direta ou indiretamente permita que os chamadores acessem informações confidenciais, operações ou recursos que podem ser usados de maneira destrutiva.
 
 ## <a name="example"></a>Exemplo
- O exemplo a seguir usa dois assemblies e um aplicativo de teste para ilustrar a vulnerabilidade de segurança detectada por essa regra. O primeiro conjunto não tem o atributo APTCA e não deve ser acessível a chamadores parcialmente confiáveis (representado por `M2` na discussão anterior).
+ O exemplo a seguir usa dois assemblies e um aplicativo de teste para ilustrar a vulnerabilidade de segurança detectada por essa regra. O primeiro assembly não tem o atributo APTCA e não deve ser acessível a chamadores parcialmente confiáveis (representados por `M2` na discussão anterior).
 
  [!code-csharp[FxCop.Security.NoAptca#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Security.NoAptca/cs/FxCop.Security.NoAptca.cs#1)]
 
 ## <a name="example"></a>Exemplo
- O segundo conjunto é totalmente confiável e permite que os chamadores parcialmente confiáveis (representado por `M1` na discussão anterior).
+ O segundo assembly é totalmente confiável e permite que chamadores parcialmente confiáveis (representados por `M1` na discussão anterior).
 
  [!code-csharp[FxCop.Security.YesAptca#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Security.YesAptca/cs/FxCop.Security.YesAptca.cs#1)]
 
 ## <a name="example"></a>Exemplo
- O aplicativo de teste (representado por `X` na discussão anterior) é parcialmente confiável.
+ O aplicativo de teste (representado pelo `X` na discussão anterior) é parcialmente confiável.
 
  [!code-csharp[FxCop.Security.TestAptcaMethods#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Security.TestAptcaMethods/cs/FxCop.Security.TestAptcaMethods.cs#1)]
 
  Este exemplo gerencia a seguinte saída.
 
- **Falha na demanda de confiança: solicitação completa.** 
-**ClassRequiringFullTrust.DoWork foi chamado.**
+ **Demanda de confiança total: falha na solicitação.** 
+**ClassRequiringFullTrust. DoWork foi chamado.**
 ## <a name="related-rules"></a>Regras relacionadas
- [CA2117: Os tipos APTCA só devem estender tipos base APTCA](../code-quality/ca2117-aptca-types-should-only-extend-aptca-base-types.md)
+ [CA2117: os tipos APTCA só devem estender tipos base APTCA](../code-quality/ca2117-aptca-types-should-only-extend-aptca-base-types.md)
 
 ## <a name="see-also"></a>Consulte também
- [Diretrizes de codificação segura](https://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177) [Assemblies do .NET Framework pode ser chamados por código parcialmente confiável](https://msdn.microsoft.com/a417fcd4-d3ca-4884-a308-3a1a080eac8d) [usando bibliotecas de parcialmente confiável código](https://msdn.microsoft.com/library/dd66cd4c-b087-415f-9c3e-94e3a1835f74) [demandas](https://msdn.microsoft.com/e5283e28-2366-4519-b27d-ef5c1ddc1f48) [Demandas de link](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) [dados e modelagem](https://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6)
+ [Diretrizes de codificação seguras](https://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177) [.NET Framework assemblies que podem ser chamados por código parcialmente confiável](https://msdn.microsoft.com/a417fcd4-d3ca-4884-a308-3a1a080eac8d) [usando bibliotecas de códigos parcialmente confiáveis](https://msdn.microsoft.com/library/dd66cd4c-b087-415f-9c3e-94e3a1835f74) [demandam](https://msdn.microsoft.com/e5283e28-2366-4519-b27d-ef5c1ddc1f48) [dados e modelagem](https://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6) de [demandas de link](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d)

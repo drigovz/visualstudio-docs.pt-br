@@ -8,15 +8,15 @@ dev_langs:
 - CSharp
 - VB
 - CPP
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 1962a977cb282613405342f225d63140f1854453
-ms.sourcegitcommit: 689ba54ea14257d13031de881f5d4fe937a36f56
+ms.openlocfilehash: dc3c11610d95756b265d5ba01a6f8365f115548a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "71342420"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72659799"
 ---
 # <a name="use-code-coverage-to-determine-how-much-code-is-being-tested"></a>Usar a cobertura de código para determinar quanto do código está sendo testado
 
@@ -54,10 +54,10 @@ O recurso de cobertura de código está disponível apenas no Visual Studio Ente
 
 ::: moniker-end
 
-2. Após a execução dos testes, para ver quais linhas ![foram executadas, escolha Mostrar o ícone](../test/media/codecoverage-showcoloringicon.png) de colorização de cobertura de código **Mostrar cores de cobertura de código** na janela resultados da cobertura de **código** . Por padrão, o código coberto por testes é realçado em azul claro.
+2. Após a execução dos testes, para ver quais linhas foram executadas, escolha ![Show ícone de colorização de cobertura de código ](../test/media/codecoverage-showcoloringicon.png) **Mostrar cores de cobertura de código** na janela **resultados da cobertura de código** . Por padrão, o código coberto por testes é realçado em azul claro.
 
    > [!TIP]
-   > Para alterar as cores ou usar a face em negrito, escolha **ferramentas** > **Opções** > **fontes e cores** > **do ambiente** > **Mostrar configurações para: Editor de Texto**. Em **Exibir itens**, ajuste as configurações para os itens de "cobertura", por exemplo, **área de cobertura não**coberta.
+   > Para alterar as cores ou usar a face em negrito, escolha **ferramentas**  > **opções**  > **ambiente**  > **fontes e cores**  > **Mostrar configurações para: editor de texto**. Em **Exibir itens**, ajuste as configurações para os itens de "cobertura", por exemplo, **área de cobertura não**coberta.
    >
    > ![Fontes e cores de cobertura de código](media/vs-2019/coverage-fonts-and-colors.png)
 
@@ -300,7 +300,7 @@ Para executar testes na linha de comando, use *vstest.console.exe*. A cobertura 
 
 Para obter mais informações, consulte [Opções de linha de comando de VSTest.Console.exe](vstest-console-options.md).
 
-## <a name="troubleshoot"></a>Solucionar problemas
+## <a name="troubleshoot"></a>Solução de problemas
 
 Se os resultados da cobertura de código não forem exibidos, o artigo [Solução de problemas de cobertura de código](../test/troubleshooting-code-coverage.md) poderá ajudá-lo.
 

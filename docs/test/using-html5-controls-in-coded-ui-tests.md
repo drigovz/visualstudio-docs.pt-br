@@ -2,17 +2,17 @@
 title: Usando controles HTML5 em testes de IU codificados
 ms.date: 11/04/2016
 ms.topic: conceptual
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: c7087f08743e58426663734295339d9ca6550a0d
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+author: jillre
+ms.openlocfilehash: e9118dc94019f40289730be78c28777fb86d89db
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926579"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72659776"
 ---
 # <a name="using-html5-controls-in-coded-ui-tests"></a>Usando controles HTML5 em testes de IU codificados
 
@@ -20,7 +20,7 @@ Os teste de IU codificados incluem suporte a alguns dos controles HTML5 incluíd
 
 [!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
-**Requisitos**
+**Requirements**
 
 - Visual Studio Enterprise
 
@@ -32,7 +32,7 @@ Os teste de IU codificados incluem suporte a alguns dos controles HTML5 incluíd
 
 ## <a name="audio-control"></a>Controle de áudio
 
-**Controle de áudio:** Ações no controle do HTML5 áudio são registradas e reproduzidas corretamente.
+**Controle de áudio:** ações no controle do HTML5 áudio são registradas e reproduzidas corretamente.
 
 ![Controle do HTML5 áudio](../test/media/codedui_html5_audio.png)
 
@@ -47,15 +47,15 @@ Os teste de IU codificados incluem suporte a alguns dos controles HTML5 incluíd
 
 Confira [HTMLAudioElement](https://developer.mozilla.org/docs/Web/API/HTMLAudioElement) para obter uma lista de propriedades às quais você pode adicionar uma declaração.
 
-**Propriedades de pesquisa:** As propriedades de pesquisa para `HtmlAudio` são `Id`, `Name` e `Title`.
+**Propriedades de pesquisa:** as propriedades de pesquisa para `HtmlAudio` são `Id`, `Name` e `Title`.
 
-**Propriedades do filtro:** As propriedades do filtro para `HtmlAudio` são `Src`, `Class`, `ControlDefinition` e `TagInstance`.
+**Propriedades de filtro:** as propriedades de filtro para `HtmlAudio` são `Src`, `Class`, `ControlDefinition` e `TagInstance`.
 
 > [!NOTE]
 > O tempo de busca de Seek e Pause pode ser significativo. Durante a reprodução, o teste de IU codificado aguardará até que o tempo especificado em `(TimeSpan)` antes da pausa do áudio. Se por alguma circunstância especial, o tempo especificado tiver passado antes de atingir o comando Pause, uma exceção será lançada.
 
 ## <a name="video-control"></a>Controle de vídeo
-**Controle de vídeo:** Ações no controle de vídeo do HTML5 são registradas e reproduzidas corretamente.
+**Controle de vídeo:** ações no controle de vídeo HTML5 são registradas e reproduzidas corretamente.
 
 ![Controle do HTML5 vídeo](../test/media/codedui_html5_video.png)
 
@@ -70,15 +70,15 @@ Confira [HTMLAudioElement](https://developer.mozilla.org/docs/Web/API/HTMLAudioE
 
 Confira [HTMLVideoElement](https://developer.mozilla.org/docs/Web/HTML/Element/video) para obter uma lista de propriedades às quais você pode adicionar uma declaração.
 
-**Propriedades de pesquisa:** As propriedades de pesquisa para `HtmlVideo` são `Id`, `Name` e `Title`.
+**Propriedades de pesquisa:** as propriedades de pesquisa para `HtmlVideo` são `Id`, `Name` e `Title`.
 
-**Propriedades do filtro:** As propriedades de pesquisa para `HtmlVideo` são `Src`, `Poster`, `Class`, `ControlDefinition` e `TagInstance`.
+**Propriedades de filtro:** as propriedades de filtro para `HtmlVideo` são `Src`, `Poster`, `Class`, `ControlDefinition` e `TagInstance`.
 
 > [!NOTE]
 > Se você Avançar ou retroceder rapidamente o vídeo usando rótulos-30s ou +30s, isso será agregado para buscar o momento apropriado.
 
 ## <a name="progressbar"></a>ProgressBar
-**Controle ProgressBar:** A ProgressBar é um controle não interagível. Você pode adicionar asserções nas propriedades `Value` e `Max` desse controle. Para obter mais informações, confira [HTMLProgressElement](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/progress).
+**Controle de ProgressBar:** a ProgressBar é um controle não interagível. Você pode adicionar asserções nas propriedades `Value` e `Max` desse controle. Para obter mais informações, confira [HTMLProgressElement](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/progress).
 
 ![Controle ProgressBar do HTML5](../test/media/codedui_html5_progressbar.png)
 

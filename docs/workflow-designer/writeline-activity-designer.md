@@ -1,25 +1,25 @@
 ---
-title: Designer de fluxo de trabalho - Designer de atividade WriteLine
+title: Designer de atividade Designer de Fluxo de Trabalho-WriteLine
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.WriteLine.UI
 ms.assetid: 1b5f29a8-b7fd-477e-949e-2f689cae3c96
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 17dd6e3c617749d82533d8bccb7f0caaa073ac26
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 475755fed96f8341c45b8260b414658967b3284c
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62838614"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72649747"
 ---
 # <a name="writeline-activity-designer"></a>Designer de atividade WriteLine
 
-O **WriteLine** designer de atividade é usado para criar e configurar um <xref:System.Activities.Statements.WriteLine> atividade.
+O designer de atividade **WriteLine** é usado para criar e configurar uma atividade de <xref:System.Activities.Statements.WriteLine>.
 
 ## <a name="the-writeline-activity"></a>A atividade WriteLine
 
@@ -27,16 +27,16 @@ Grava de atividade de <xref:System.Activities.Statements.WriteLine> texto a <xre
 
 ### <a name="using-the-writeline-activity-designer"></a>Usando o designer de atividade WriteLine
 
-Acesso a **WriteLine** designer de atividade na **primitivos** categoria dos **caixa de ferramentas**. O **WriteLine** designer de atividade pode ser arrastado da **caixa de ferramentas** e ignorados sobre a superfície do Designer de fluxo de trabalho onde quer que as atividades são colocadas em geral, como em um <xref:System.Activities.Statements.Sequence>. Isso cria uma atividade de <xref:System.Activities.Statements.WriteLine> com <xref:System.Activities.Activity.DisplayName%2A> padrão WriteLine. O <xref:System.Activities.Activity.DisplayName%2A> pode ser editado no cabeçalho do **WriteLine** designer de atividade ou nos **DisplayName** caixa da grade de propriedade.
+Acesse o designer de atividade **WriteLine** na categoria **primitivos** da **caixa de ferramentas**. O designer de atividade **WriteLine** pode ser arrastado da **caixa de ferramentas** e descartado para a superfície de designer de fluxo de trabalho sempre que as atividades são geralmente colocadas, como dentro de um <xref:System.Activities.Statements.Sequence>. Isso cria uma atividade de <xref:System.Activities.Statements.WriteLine> com <xref:System.Activities.Activity.DisplayName%2A> padrão WriteLine. O <xref:System.Activities.Activity.DisplayName%2A> pode ser editado no cabeçalho do designer de atividade **WriteLine** ou na caixa **DisplayName** da grade de propriedades.
 
 ### <a name="the-writeline-properties"></a>As propriedades WriteLine
 
-A tabela a seguir mostra as propriedades de <xref:System.Activities.Statements.WriteLine> e descreve como elas são usadas no designer. Essas propriedades podem ser editadas na grade de propriedade e alguns deles podem ser editados na superfície do Designer de fluxo de trabalho.
+A tabela a seguir mostra as propriedades de <xref:System.Activities.Statements.WriteLine> e descreve como elas são usadas no designer. Essas propriedades podem ser editadas na grade de propriedades e algumas delas podem ser editadas na superfície Designer de Fluxo de Trabalho.
 
 |Nome da Propriedade|Necessária|Uso|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|O nome amigável de atividade de <xref:System.Activities.Statements.WriteLine> . O padrão é WriteLine. Embora não seja necessário <xref:System.Activities.Activity.DisplayName%2A> restrita, é prática recomendada usar esse.|
-|<xref:System.Activities.Statements.WriteLine.Text%2A>|False|O texto a gravação. Para definir a propriedade, digite uma expressão do Visual Basic na **texto** caixa sobre o **WriteLine** atividade designer ou na grade de propriedade.|
+|<xref:System.Activities.Statements.WriteLine.Text%2A>|False|O texto a gravação. Para definir a propriedade, digite uma expressão de Visual Basic na caixa de **texto** no designer de atividade **WriteLine** ou na grade de propriedades.|
 |<xref:System.Activities.Statements.WriteLine.TextWriter%2A>|False|<xref:System.IO.TextWriter> a <xref:System.Activities.Statements.WriteLine> que grava <xref:System.Activities.Statements.WriteLine.Text%2A>. O padrão é o console.|
 
 ## <a name="see-also"></a>Consulte também

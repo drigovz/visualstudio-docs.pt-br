@@ -5,15 +5,15 @@ ms.topic: conceptual
 helpviewer_keywords:
 - code analysis, disable
 - disable code analysis
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 77c189e4a15f2ae4049c45d2c8463079895f5be2
-ms.sourcegitcommit: 39a04f42d23597b70053686d7e927ba78f38a9a8
+ms.openlocfilehash: cb1a41642e405046459f6196a98cd6290a217223
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "71975156"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72649659"
 ---
 # <a name="how-to-disable-source-code-analysis-for-managed-code"></a>Como desabilitar a análise de código-fonte para código gerenciado
 
@@ -27,11 +27,11 @@ Esta página ajuda a desabilitar a análise de código no Visual Studio. Há lim
 
 - Pacote do NuGet Analyzer versus VSIX ou analisadores internos
 
-  No momento, não é possível desabilitar a análise de código ao vivo para os analisadores internos, por exemplo, ID de regra IDE0067. Da mesma forma, você não pode desabilitar a análise de código ao vivo para analisadores que foram instalados como parte de uma extensão do Visual Studio (VSIX). Para suprimir erros e avisos de analisadores internos e baseados em VSIX, escolha **analisar** > **Compilar e suprimir problemas ativos** na barra de menus. Você *pode* desabilitar a análise dinâmica e em tempo real para analisadores instalados como parte de um pacote NuGet.
+  No momento, não é possível desabilitar a análise de código ao vivo para os analisadores internos, por exemplo, ID de regra IDE0067. Da mesma forma, você não pode desabilitar a análise de código ao vivo para analisadores que foram instalados como parte de uma extensão do Visual Studio (VSIX). Para suprimir erros e avisos de analisadores internos e baseados em VSIX, escolha **analisar**  > **criar e suprimir problemas ativos** na barra de menus. Você *pode* desabilitar a análise dinâmica e em tempo real para analisadores instalados como parte de um pacote NuGet.
 
 - Análise de origem versus análise herdada
 
-  Este tópico se aplica à análise de código-fonte e não à análise herdada (binário). Para obter informações sobre como desabilitar a análise herdada, consulte [How para: Habilitar e desabilitar a análise de código herdado @ no__t-0.
+  Este tópico se aplica à análise de código-fonte e não à análise herdada (binário). Para obter informações sobre como desabilitar a análise herdada, consulte [como habilitar e desabilitar a análise de código herdado](how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md).
 
 ## <a name="net-core-and-net-standard-projects"></a>Projetos do .NET Core e do .NET Standard
 
@@ -45,7 +45,7 @@ Para abrir essa página, clique com o botão direito do mouse no nó do projeto 
 - Para desabilitar a análise de origem ao vivo, desmarque a opção **executar na análise dinâmica** .
 
 > [!NOTE]
-> Os analisadores internos e baseados em VSIX continuarão a fornecer análise dinâmica do seu código, mesmo que a **execução na análise ao vivo** esteja desmarcada. Se você quiser suprimir erros e avisos desses analisadores, escolha **analisar** > **Compilar e suprimir problemas ativos** na barra de menus.
+> Os analisadores internos e baseados em VSIX continuarão a fornecer análise dinâmica do seu código, mesmo que a **execução na análise ao vivo** esteja desmarcada. Se você quiser suprimir erros e avisos desses analisadores, escolha **analisar**  > **criar e suprimir problemas ativos** na barra de menus.
 
 ## <a name="net-framework-projects"></a>Projetos de .NET Framework
 
@@ -71,17 +71,17 @@ Exemplos:
 
 ## <a name="source-analysis"></a>Análise de código-fonte
 
-Não é possível desativar a [análise de origem](roslyn-analyzers-overview.md) no Visual Studio 2017. Se você quiser limpar erros do analisador do Lista de Erros, poderá suprimir todas as violações atuais escolhendo **analisar** > **executar análise de código e suprimir problemas ativos** na barra de menus. Para obter mais informações, consulte [suprimir violações](use-roslyn-analyzers.md#suppress-violations).
+Não é possível desativar a [análise de origem](roslyn-analyzers-overview.md) no Visual Studio 2017. Se você quiser limpar erros do analisador do Lista de Erros, poderá suprimir todas as violações atuais escolhendo **analisar**  > **executar análise de código e suprimir problemas ativos** na barra de menus. Para obter mais informações, consulte [suprimir violações](use-roslyn-analyzers.md#suppress-violations).
 
 A partir do Visual Studio 2019 versão 16,3, você pode desativar a análise de código-fonte baseada em NuGet. Considere atualizar para o Visual Studio 2019.
 
 ## <a name="legacy-analysis"></a>Análise herdada
 
-Você pode desabilitar a análise herdada e em tempo de compilação na página de propriedades de **análise de código** . Para obter mais informações, confira [Como: Habilitar e desabilitar a análise de código herdado @ no__t-0.
+Você pode desabilitar a análise herdada e em tempo de compilação na página de propriedades de **análise de código** . Para obter mais informações, consulte [como habilitar e desabilitar a análise de código herdado](how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md).
 
 ::: moniker-end
 
 ## <a name="see-also"></a>Consulte também
 
 - [Suprimir violações](use-roslyn-analyzers.md#suppress-violations)
-- [Como: Habilitar e desabilitar a análise de código herdado @ no__t-0
+- [Como habilitar e desabilitar a análise de código herdado](how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)

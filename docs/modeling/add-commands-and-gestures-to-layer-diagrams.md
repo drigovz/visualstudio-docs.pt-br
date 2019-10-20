@@ -5,112 +5,112 @@ ms.topic: conceptual
 helpviewer_keywords:
 - dependency diagrams, adding custom commands
 - dependency diagrams, adding custom gestures
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ea106d98dbd18f224e7f2a9d95734eff591dfc2b
-ms.sourcegitcommit: 6a19c5ece38a70731496a38f2ef20676ff18f8a4
+ms.openlocfilehash: 7392d6f131cc1658a04769e7e2a5fc58c76f522e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65476652"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72652356"
 ---
 # <a name="add-commands-and-gestures-to-dependency-diagrams"></a>Adicionar comandos e gestos a diagramas de dependência
 
-Você pode definir comandos de menu de atalho e manipuladores do gesto em diagramas de dependência no Visual Studio. Você pode empacotar essas extensões em um Visual Studio Integration extensão (VSIX) que você pode distribuir a outros usuários do Visual Studio.
+Você pode definir comandos de menu de clique com o botão direito do mouse e manipuladores de gestos em diagramas de dependência no Visual Studio. Você pode empacotar essas extensões em uma extensão de integração do Visual Studio (VSIX) que pode ser distribuída para outros usuários do Visual Studio.
 
-Você pode definir vários manipuladores de comando e de gesto no mesmo projeto do Visual Studio se você quiser. Você também pode combinar vários desses projetos em um VSIX. Por exemplo, você pode definir um único VSIX que inclui comandos de camada e uma linguagem específica de domínio.
+Você pode definir vários manipuladores de comando e de gesto no mesmo projeto do Visual Studio, se desejar. Você também pode combinar vários desses projetos em um VSIX. Por exemplo, você pode definir um único VSIX que inclui comandos de camada e uma linguagem específica de domínio.
 
 > [!NOTE]
-> Você também pode personalizar a validação da arquitetura, na origem dos quais usuários o código é comparado com diagramas de dependência. Você deve definir a validação de arquitetura em um projeto separado do Visual Studio. Você pode adicioná-lo ao mesmo VSIX que outras extensões. Para obter mais informações, consulte [adicionar validação de arquitetura personalizada a diagramas de dependência](../modeling/add-custom-architecture-validation-to-layer-diagrams.md).
+> Você também pode personalizar a validação de arquitetura, na qual o código-fonte dos usuários é comparado com diagramas de dependência. Você deve definir a validação de arquitetura em um projeto do Visual Studio separado. Você pode adicioná-lo ao mesmo VSIX que outras extensões. Para obter mais informações, consulte [Adicionar validação de arquitetura personalizada a diagramas de dependência](../modeling/add-custom-architecture-validation-to-layer-diagrams.md).
 
 ## <a name="requirements"></a>Requisitos
 
-Ver [requisitos de](../modeling/extend-layer-diagrams.md#requirements).
+Consulte [requisitos](../modeling/extend-layer-diagrams.md#requirements).
 
 ## <a name="define-a-command-or-gesture-in-a-new-vsix"></a>Definir um comando ou gesto em um novo VSIX
 
-O método mais rápido de criação de uma extensão é usar o modelo de projeto. Isso coloca o código e o manifesto do VSIX no mesmo projeto.
+O método mais rápido de criar uma extensão é usar o modelo de projeto. Isso coloca o código e o manifesto do VSIX no mesmo projeto.
 
-1. Criar um novo **extensão de comando do Designer de camada** ou **extensão de gesto do Designer de camada** projeto.
+1. Crie uma nova **extensão de comando de designer de camada** ou projeto de **extensão de gesto de designer de camada** .
 
    O modelo cria um projeto que contém um pequeno exemplo de trabalho.
 
-2. Para testar a extensão, pressione **Ctrl**+**F5** ou **F5**.
+2. Para testar a extensão, pressione **Ctrl** +**F5** ou **F5**.
 
-    Inicia uma instância experimental do Visual Studio. Nesse caso, crie um diagrama de dependência. Sua extensão de comando ou gesto deve trabalhar neste diagrama.
+    Uma instância experimental do Visual Studio é iniciada. Nesta instância, crie um diagrama de dependência. O comando ou a extensão do gesto deve funcionar neste diagrama.
 
 3. Feche a instância experimental e modifique o código de exemplo.
 
-4. Você pode adicionar mais manipuladores de comando ou gesto no mesmo projeto. Para obter mais informações, consulte uma das seções a seguir:
+4. Você pode adicionar mais manipuladores de comando ou de gesto ao mesmo projeto. Para obter mais informações, consulte uma das seguintes seções:
 
-    [Definindo um comando de Menu](#command)
+    [Definindo um comando de menu](#command)
 
-    [Definindo um manipulador de gesto](#gesture)
+    [Definindo um manipulador de gestos](#gesture)
 
 ::: moniker range="vs-2017"
 
-5. Para instalar a extensão na instância principal do Visual Studio ou em outro computador, localize o *. VSIX* arquivo na *bin* directory. Copie-o para o computador no qual você deseja instalá-lo e, em seguida, clique duas vezes nele. Para desinstalá-lo, escolha **extensões e atualizações** sobre o **ferramentas** menu.
+5. Para instalar a extensão na instância principal do Visual Studio ou em outro computador, localize o arquivo *. vsix* no diretório *bin* . Copie-o para o computador em que você deseja instalá-lo e clique duas vezes nele. Para desinstalá-lo, escolha **extensões e atualizações** no menu **ferramentas** .
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-5. Para instalar a extensão na instância principal do Visual Studio ou em outro computador, localize o *. VSIX* arquivo na *bin* directory. Copie-o para o computador no qual você deseja instalá-lo e, em seguida, clique duas vezes nele. Para desinstalá-lo, escolha **gerenciar extensões** sobre o **extensões** menu.
+5. Para instalar a extensão na instância principal do Visual Studio ou em outro computador, localize o arquivo *. vsix* no diretório *bin* . Copie-o para o computador em que você deseja instalá-lo e clique duas vezes nele. Para desinstalá-lo, escolha **gerenciar extensões** no menu **extensões** .
 
 ::: moniker-end
 
-## <a name="add-a-command-or-gesture-to-a-separate-vsix"></a>Adicionar um comando ou gesto a um VSIX separado
+## <a name="add-a-command-or-gesture-to-a-separate-vsix"></a>Adicionar um comando ou gesto para um VSIX separado
 
-Se você quiser criar um VSIX que contém comandos, validadores de camada e outras extensões, é recomendável que você crie um projeto para definir o VSIX e projetos separados para os manipuladores.
+Se você quiser criar um VSIX que contém comandos, validadores de camada e outras extensões, recomendamos que você crie um projeto para definir o VSIX e separe projetos para os manipuladores.
 
-1. Crie um projeto de **Biblioteca de Classes**. Este projeto irá conter comando ou classes de manipulador de gesto.
+1. Crie um projeto de **Biblioteca de Classes**. Este projeto conterá classes de manipulador de comando ou de gesto.
 
    > [!NOTE]
-   > Você pode definir mais de uma classe de manipulador de gesto ou comando em uma biblioteca de classes, mas você deve definir classes de validação de camada em uma biblioteca de classes separado.
+   > Você pode definir mais de uma classe de manipulador de comando ou de gesto em uma biblioteca de classes, mas deve definir classes de validação de camada em uma biblioteca de classes separada.
 
-2. Adicione ou crie um projeto de VSIX em sua solução. Um projeto do VSIX contém um arquivo chamado **vsixmanifest**.
+2. Adicione ou crie um projeto VSIX em sua solução. Um projeto VSIX contém um arquivo chamado **Source. Extension. vsixmanifest**.
 
-3. Na **Gerenciador de soluções**, clique com botão direito do projeto VSIX e escolha **definir como projeto de inicialização**.
+3. Em **Gerenciador de soluções**, clique com o botão direito do mouse no projeto VSIX e escolha **definir como projeto de inicialização**.
 
-4. Na **vsixmanifest**, em **ativos**, adicione o comando ou gesto de projeto do manipulador como um componente MEF.
+4. Em **Source. Extension. vsixmanifest**, em **ativos**, adicione o comando ou o projeto de manipulador de gestos como um componente MEF.
 
-    1. No **ativos**. TAB, escolha **New**.
+    1. Na guia **ativos**., escolha **novo**.
 
-    2. No **tipo**, selecione **mefcomponent**.
+    2. Em **tipo**, selecione **Microsoft. VisualStudio. MefComponent**.
 
-    3. No **fonte**, selecione **projeto na solução atual** e selecione o nome do seu projeto do manipulador de gesto ou comando.
+    3. Na **origem**, selecione **projeto na solução atual** e selecione o nome do seu projeto de manipulador de comando ou de gesto.
 
     4. Salve o arquivo.
 
-5. Volte para o projeto do manipulador de gesto ou comando e adicione as seguintes referências de projeto:
+5. Retorne ao projeto de manipulador de comando ou gesto e adicione as seguintes referências de projeto:
 
    |**Referência**|**O que isso permite que você faça**|
    |-|-|
-   |Programar \Common7\IDE\Extensions\Microsoft\Architecture Tools\ExtensibilityRuntime\Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.dll Files\Microsoft Visual Studio [versão]|Criar e editar camadas|
-   |Microsoft.VisualStudio.Uml.Interfaces|Criar e editar camadas|
-   |Microsoft.VisualStudio.ArchitectureTools.Extensibility|Modificar formas em diagramas|
-   |System.ComponentModel.Composition|Definir componentes usando Managed Extensibility Framework (MEF)|
-   |Microsoft.VisualStudio.Modeling.Sdk.[version]|Definir as extensões de modelagem|
-   |Microsoft.VisualStudio.Modeling.Sdk.Diagrams.[version]|Atualizar formas e diagramas|
+   |Arquivos de Programas\microsoft Visual Studio [versão] \Common7\IDE\Extensions\Microsoft\Architecture Tools\ExtensibilityRuntime\Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.dll|Criar e editar camadas|
+   |Microsoft. VisualStudio. Uml. interfaces|Criar e editar camadas|
+   |Microsoft. VisualStudio. ArchitectureTools. Extensibility|Modificar formas em diagramas|
+   |System. ComponentModel. composição|Definir componentes usando Managed Extensibility Framework (MEF)|
+   |Microsoft. VisualStudio. Modeling. Sdk. versão|Definir extensões de modelagem|
+   |Microsoft. VisualStudio. Modeling. Sdk. Diagrams. versão|Atualizar formas e diagramas|
 
-6. Edite o arquivo de classe na classe biblioteca projeto c# para conter o código para a sua extensão. Para obter mais informações, consulte uma das seções a seguir:
+6. Edite o arquivo de classe C# no projeto de biblioteca de classes para conter o código para sua extensão. Para obter mais informações, consulte uma das seguintes seções:
 
-     [Definindo um comando de Menu](#command)
+     [Definindo um comando de menu](#command)
 
-     [Definindo um manipulador de gesto](#gesture)
+     [Definindo um manipulador de gestos](#gesture)
 
-7. Para testar o recurso, pressione **Ctrl**+**F5** ou **F5**.
+7. Para testar o recurso, pressione **Ctrl** +**F5** ou **F5**.
 
-   Uma instância experimental do Visual Studio é aberto. Nesse caso, crie ou abra um diagrama de dependência.
+   Uma instância experimental do Visual Studio é aberta. Nesta instância, crie ou abra um diagrama de dependência.
 
-8. Para instalar o VSIX na instância principal do Visual Studio ou em outro computador, localize o **. VSIX** arquivo na **bin** diretório do projeto VSIX. Copie-o no computador em que você deseja instalar o VSIX. Clique duas vezes no arquivo VSIX no Explorador de arquivos.
+8. Para instalar o VSIX na instância principal do Visual Studio ou em outro computador, localize o arquivo **. vsix** no diretório **bin** do projeto VSIX. Copie-o para o computador em que você deseja instalar o VSIX. Clique duas vezes no arquivo VSIX no explorador de arquivos.
 
-## <a name="command"></a> Definindo um comando de Menu
+## <a name="command"></a>Definindo um comando de menu
 
-Você pode adicionar mais definições de comando de menu a um projeto de comando ou gesto existente. Cada comando é definido por uma classe que tem as seguintes características:
+Você pode adicionar mais definições de comando de menu a um gesto ou projeto de comando existente. Cada comando é definido por uma classe que tem as seguintes características:
 
 - A classe é declarada da seguinte maneira:
 
@@ -118,17 +118,17 @@ Você pode adicionar mais definições de comando de menu a um projeto de comand
 
    `[Export(typeof(ICommandExtension))]`
 
-   `public class`  *MyLayerCommand*  `: ICommandExtension { ... }`
+   `public class`*MyLayerCommand* `: ICommandExtension { ... }`
 
 - O namespace e o nome da classe não são importantes.
 
-- Os métodos que implementam `ICommandExtension` são da seguinte maneira:
+- Os métodos que implementam `ICommandExtension` são os seguintes:
 
-  - `string Text {get;}` -O rótulo que aparece no menu.
+  - `string Text {get;}`-o rótulo que aparece no menu.
 
-  - `void QueryStatus(IMenuCommand command)` -chamado quando o usuário clica o diagrama e determina se o comando deve ser visível e habilitado para a seleção do usuário atual.
+  - `void QueryStatus(IMenuCommand command)`-chamado quando o usuário clica com o botão direito do mouse no diagrama e determina se o comando deve ser visível e habilitado para a seleção atual do usuário.
 
-  - `void Execute(IMenuCommand command)` -chamado quando o usuário seleciona o comando.
+  - `void Execute(IMenuCommand command)`-chamado quando o usuário seleciona o comando.
 
 - Para determinar a seleção atual, você pode importar `IDiagramContext`:
 
@@ -140,7 +140,7 @@ Você pode adicionar mais definições de comando de menu a um projeto de comand
 
    `DiagramContext.CurrentDiagram.SelectedShapes.Count()...`
 
-Para adicionar um novo comando, crie um novo arquivo de código que contém o exemplo a seguir. Em seguida, teste e editá-lo.
+Para adicionar um novo comando, crie um novo arquivo de código que contenha o exemplo a seguir. Em seguida, teste e edite-o.
 
 ```csharp
 using Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer;
@@ -212,11 +212,11 @@ namespace MyLayerExtension // Change to your preference.
 }
 ```
 
-## <a name="gesture"></a> Definindo um manipulador de gesto
+## <a name="gesture"></a>Definindo um manipulador de gestos
 
-Um manipulador de gesto responde quando o usuário arrasta itens para o diagrama de dependência e quando o usuário clica duas vezes em qualquer lugar no diagrama.
+Um manipulador de gestos responde quando o usuário arrasta itens para o diagrama de dependência e quando o usuário clica duas vezes em qualquer lugar no diagrama.
 
-Para o seu comando existente ou um projeto VSIX do manipulador de gesto, você pode adicionar um arquivo de código que define um manipulador de gesto:
+Para o projeto VSIX do manipulador de gestos ou comando existente, você pode adicionar um arquivo de código que define um manipulador de gestos:
 
 ```csharp
 using Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer;
@@ -236,17 +236,17 @@ namespace MyLayerExtensions // change to your preference
 }
 ```
 
-Observe os seguintes pontos sobre manipuladores de gesto:
+Observe os seguintes pontos sobre manipuladores de gestos:
 
-- Os membros de `IGestureExtension` são da seguinte maneira:
+- Os membros de `IGestureExtension` são os seguintes:
 
-     **OnDoubleClick** -chamado quando o usuário clica duas vezes em qualquer lugar no diagrama.
+     **OnDoubleClick** – chamado quando o usuário clica duas vezes em qualquer lugar do diagrama.
 
-     **CanDragDrop** - chamado repetidamente conforme o usuário move o mouse ao arrastar um item no diagrama. Ele deve trabalhar rapidamente.
+     **CanDragDrop** -chamado repetidamente à medida que o usuário move o mouse enquanto arrasta um item para o diagrama. Ele deve funcionar rapidamente.
 
-     **OnDragDrop** -chamado quando o usuário solta um item no diagrama.
+     **OnDragDrop** – chamado quando o usuário remove um item no diagrama.
 
-- O primeiro argumento para cada método é um `IShape`, do qual você pode obter o elemento de camada. Por exemplo:
+- O primeiro argumento para cada método é um `IShape`, a partir do qual você pode obter o elemento de camada. Por exemplo:
 
     ```csharp
     public void OnDragDrop(IShape target, IDataObject data)
@@ -259,7 +259,7 @@ Observe os seguintes pontos sobre manipuladores de gesto:
     }
     ```
 
-- Manipuladores para alguns tipos de item arrastado já estão definidos. Por exemplo, o usuário pode arrastar itens do Gerenciador de soluções para um diagrama de dependência. Você não pode definir um manipulador de arraste para esses tipos de item. Nesses casos, seu `DragDrop` métodos não serão chamados.
+- Os manipuladores para alguns tipos de itens arrastados já estão definidos. Por exemplo, o usuário pode arrastar itens do Gerenciador de Soluções para um diagrama de dependência. Você não pode definir um manipulador de arrastar para esses tipos de item. Nesses casos, seus métodos de `DragDrop` não serão invocados.
 
 ## <a name="see-also"></a>Consulte também
 

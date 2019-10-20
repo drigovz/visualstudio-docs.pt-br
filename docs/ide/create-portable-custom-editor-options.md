@@ -4,15 +4,15 @@ ms.date: 08/01/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - editorconfig [Visual Studio]
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 6b8602dfb37b1cdad046b012d62f888e77ca5343
-ms.sourcegitcommit: a2df993dc5e11c5131dbfcba686f0028a589068f
+ms.openlocfilehash: cab93bcf60c5a4fb5034bfdfd7601e4f846996d0
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "71150167"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72652625"
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>Criar configurações do editor portátil e personalizado com o EditorConfig
 
@@ -24,15 +24,15 @@ As configurações do EditorConfig são compatíveis com vários editores de có
 
 Quando você adiciona um arquivo EditorConfig ao seu projeto no Visual Studio, novas linhas de código são formatadas de acordo com as configurações do EditorConfig. A formatação do código existente não será alterada, a menos que você execute um dos seguintes comandos:
 
- - [Limpeza de código](../ide/code-styles-and-code-cleanup.md) (**Ctrl**+**K**,Ctrl+**e**), que aplica quaisquer configurações de espaço em branco, como estilo de recuo e configurações de estilo de código selecionadas, como instruções `using` de classificação.
- - **Editar** > **Documento de formato** **avançado** ( **ou CTRL** **K,** Ctrl+D no perfil padrão), que aplica apenas as configurações de espaço em branco, como recuo+ > estilo.
- 
+ - [Limpeza de código](../ide/code-styles-and-code-cleanup.md) (**Ctrl** +**K**, **Ctrl** +**e**), que aplica quaisquer configurações de espaço em branco, como estilo de recuo e configurações de estilo de código selecionadas, como classificar diretivas de `using`.
+ - **Edite** > **documento de formato** de > **avançado** (ou **Ctrl** +**K**, **Ctrl** +**D** no perfil padrão), que aplica apenas as configurações de espaço em branco, como estilo de recuo.
+
  ::: moniker-end
- 
+
 ::: moniker range="=vs-2017"
 
-Quando você adiciona um arquivo EditorConfig ao seu projeto no Visual Studio, novas linhas de código são formatadas de acordo com as configurações do EditorConfig. A formatação do código existente não é alterada a menos que você execute a menos que você formate o documento (**edite** > o**documento de formato** **avançado** > ou **Ctrl**+**K**, **Ctrl** + **D** no perfil padrão). A formatação do documento afeta apenas as configurações de espaço em branco, como o estilo de recuo, a menos que você tenha configurado o documento de formato para [executar a limpeza de código adicional](../ide/code-styles-and-code-cleanup.md#apply-code-styles).
- 
+Quando você adiciona um arquivo EditorConfig ao seu projeto no Visual Studio, novas linhas de código são formatadas de acordo com as configurações do EditorConfig. A formatação de código existente não é alterada, a menos que você execute a menos que você formate o documento (**edite**  >   > **formato** **avançado** ou **Ctrl** +**K**, **Ctrl** +**D** no perfil padrão). A formatação do documento afeta apenas as configurações de espaço em branco, como o estilo de recuo, a menos que você tenha configurado o documento de formato para [executar a limpeza de código adicional](../ide/code-styles-and-code-cleanup.md#apply-code-styles).
+
  ::: moniker-end
 
 ::: moniker range="vs-2017"
@@ -72,7 +72,7 @@ Há suporte para as configurações de editor do EditorConfig em todas as lingua
 
 ## <a name="add-and-remove-editorconfig-files"></a>Adicionar e remover arquivos EditorConfig
 
-Quando você adiciona um arquivo EditorConfig ao seu projeto ou base de código, as novas linhas de código que você escreve são formatadas de acordo com o arquivo EditorConfig. No entanto, a adição de um arquivo EditorConfig não converte os estilos existentes para os novos até que você formate o documento ou execute a [limpeza de código](../ide/code-styles-and-code-cleanup.md). Por exemplo, se você tiver recuos em seu arquivo formatados com tabulações e adicionar um arquivo EditorConfig com recuos com espaços, os caracteres de recuo não serão convertidos automaticamente em espaços. Ao Formatar o documento (**Editar** > o**documento de formato** **avançado** > ou **Ctrl**+**K**, **Ctrl**+**D**), as configurações de espaço em branco no O arquivo EditorConfig é aplicado a linhas de código existentes.
+Quando você adiciona um arquivo EditorConfig ao seu projeto ou base de código, as novas linhas de código que você escreve são formatadas de acordo com o arquivo EditorConfig. No entanto, a adição de um arquivo EditorConfig não converte os estilos existentes para os novos até que você formate o documento ou execute a [limpeza de código](../ide/code-styles-and-code-cleanup.md). Por exemplo, se você tiver recuos em seu arquivo formatados com tabulações e adicionar um arquivo EditorConfig com recuos com espaços, os caracteres de recuo não serão convertidos automaticamente em espaços. Ao Formatar o documento (**editar**  > **documento de formato** de  > **avançado** ou **Ctrl** +**K**, **Ctrl** +**D**), as configurações de espaço em branco no arquivo EditorConfig são aplicadas a existentes linhas de código.
 
 Se você remover um arquivo EditorConfig de seu projeto ou base de códigos e desejar que as novas linhas sejam formatadas de acordo com as configurações globais do editor, é preciso fechar e reabrir os arquivos de código abertos.
 

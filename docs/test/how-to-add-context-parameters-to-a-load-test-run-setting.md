@@ -6,17 +6,17 @@ helpviewer_keywords:
 - load tests, run settings, context parameters
 - load tests, context parameters
 ms.assetid: a8a0b97e-8040-4711-85ab-36548b130ed2
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: b979da03c0ea5378684ff12bc86d4fb59eef9180
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: e630bfccb1741e3b194b6be4c6f8cdb065d8b942
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62979439"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72664856"
 ---
-# <a name="how-to-add-context-parameters-to-a-load-test-run-setting"></a>Como: Adicionar parâmetros de contexto a uma configuração de execução de teste de carga
+# <a name="how-to-add-context-parameters-to-a-load-test-run-setting"></a>Como adicionar parâmetros de contexto a uma configuração de execução de teste de carga
 
 Depois de criar seu teste de carga usando o **Novo Assistente de Teste de Carga**, você poderá usar o **Editor de Teste de Carga** para alterar as propriedades de cenários para que eles atendam às suas metas e necessidades de teste.
 
@@ -36,9 +36,9 @@ Se atribuir o valor do parâmetro de contexto Webserver1 como `http://CorporateS
 
 Além disso, atribuindo valores diferentes a um parâmetro de contexto usando o mesmo nome em diferentes configurações de execução de teste de carga, você pode executar o teste de carga usando diferentes ambientes:
 
-- Configuração de execução do Servidor Web de Preparo Corporativo: O parâmetro de contexto chamado `WebServer1=http://CorporateStagingWebServer`
+- Configuração de execução do servidor Web de preparo empresarial: o parâmetro de contexto chamado `WebServer1=http://CorporateStagingWebServer`
 
-- Configuração de execução do Servidor Web de Produção Corporativo: O parâmetro de Contexto chamado `WebServer1=http://CorporateProductionWebServer`
+- Configuração de execução do servidor Web de produção empresarial: o parâmetro de contexto chamado `WebServer1=http://CorporateProductionWebServer`
 
   **Alterando a configuração de execução na linha de comando**
 
@@ -60,7 +60,7 @@ Além disso, atribuindo valores diferentes a um parâmetro de contexto usando o 
 
      Um novo parâmetro de contexto é adicionado à pasta **Parâmetros de contexto** na pasta **Configurações de execução** na árvore de teste de carga.
 
-     - ou -
+     \- ou -
 
      Se a configuração de execução já contém uma pasta **Parâmetros de contexto**, você pode clicar com o botão direito do mouse nela e escolher **Adicionar parâmetro de contexto**.
 

@@ -2,17 +2,17 @@
 title: Gerar campo, propriedade, variável local
 ms.date: 01/26/2018
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a8373339f921c032e52c00b5c8a54e910e5a1c54
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 626138341e398e67ff41ea116729dd349a1bb044
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62790323"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72660019"
 ---
 # <a name="generate-a-field-property-or-local-variable-in-visual-studio"></a>Gerar um campo, uma propriedade ou uma variável local no Visual Studio
 
@@ -22,11 +22,11 @@ Esta geração de código aplica-se a:
 
 - Visual Basic
 
-**O quê:** Permite gerar imediatamente o código para um campo, uma propriedade ou um local não declarado anteriormente.
+**O quê:** permite gerar imediatamente o código para um campo, propriedade ou local não declarada anteriormente.
 
-**Quando:** Você introduz um novo campo, uma propriedade ou um local durante a digitação e deseja declará-lo correta e automaticamente.
+**Quando:** você introduz um novo campo, propriedade ou local durante a digitação e quer declará-la correta e automaticamente.
 
-**Por que:** Você pode declarar o campo, a propriedade ou o local antes de usá-lo; no entanto, essa funcionalidade gerará a declaração ou o tipo automaticamente.
+**Por quê:** você poderia declarar o campo, propriedade ou local antes de usá-lo; no entanto, esse recurso gerará a declaração ou o tipo automaticamente.
 
 ## <a name="how-to"></a>Como fazer
 
@@ -43,7 +43,7 @@ Esta geração de código aplica-se a:
 2. Depois, siga um destes procedimentos:
 
    - **Teclado**
-      - Pressione **Ctrl**+**.** para acionar o menu **Ações e Refatorações Rápidas**.
+      - Pressione **Ctrl**+ **.** para acionar o menu **Ações e Refatorações Rápidas**.
    - **Mouse**
       - Clique com o botão direito do mouse e selecione o menu **Ações Rápidas e Refatorações**.
       - Passe o mouse sobre o rabisco vermelho e clique no ícone de ![lâmpada de erro](media/error-bulb.png) ícone que aparece.

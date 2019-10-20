@@ -2,17 +2,17 @@
 title: Criar um teste de IU codificado
 ms.date: 11/04/2016
 ms.topic: conceptual
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: 54ebc36f9dd18010e07403c3b9692b62b2380d99
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+author: jillre
+ms.openlocfilehash: 268d170926e3a60ba0aa5131795f22bb31cd2ba9
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62976303"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72659642"
 ---
 # <a name="walkthrough-create-edit-and-maintain-a-coded-ui-test"></a>Passo a passo: Criar, editar e manter um teste de IU codificado
 
@@ -166,7 +166,7 @@ Neste passo a passo, você saberá como criar, editar e manter um teste de IU co
 
 ## <a name="edit-and-rerun-the-coded-ui-test"></a>Editar e executar novamente o teste de IU codificado
 
-1. Na janela **Gerenciador de Testes**, selecione o teste com falha e, na seção **StackTrace**, escolha o primeiro link para **UIMap.SimpleAppTest()**.
+1. Na janela **Gerenciador de Testes**, selecione o teste com falha e, na seção **StackTrace**, escolha o primeiro link para **UIMap.SimpleAppTest()** .
 
 2. O arquivo *UIMap.Designer.cs* é aberto com o ponto de erro realçado no código:
 
@@ -178,7 +178,7 @@ Neste passo a passo, você saberá como criar, editar e manter um teste de IU co
 3. Para corrigir esse problema, você pode fazer o teste de IU codificado esperar o controle CheckBox ser habilitado antes de continuar nessa linha usando o método `WaitForControlEnabled()`.
 
     > [!WARNING]
-    > Não modifique o arquivo *UIMap.Designer.cs*. Quaisquer alterações que você fizer no código serão substituídas sempre que você gerar código usando o **UIMap – Construtor de Teste de IU Codificado**. Se precisar modificar um método registrado, copie-o para o arquivo *UIMap.cs* e renomeie-o. O arquivo *UIMap.cs* pode ser usado para substituir métodos e propriedades no arquivo *UIMapDesigner.cs*. É necessário remover a referência ao método original no arquivo *CodedUITest.cs* e substituí-la pelo nome do método renomeado.
+    > Não modifique o arquivo *UIMap.Designer.cs*. Quaisquer alterações que você fizer no código serão substituídas sempre que você gerar código usando o **UIMap – Construtor de Teste de IU Codificado**. Se você precisar modificar um método registrado, copie-o para o arquivo *UIMap.cs* e renomeie-o. O arquivo *UIMap.cs* pode ser usado para substituir métodos e propriedades no arquivo *UIMapDesigner.cs*. É necessário remover a referência ao método original no arquivo *CodedUITest.cs* e substituí-la pelo nome do método renomeado.
 
 4. No **Gerenciador de Soluções**, localize *UIMap.uitest* em seu projeto de teste de IU codificado.
 
@@ -249,7 +249,7 @@ Neste passo a passo, você saberá como criar, editar e manter um teste de IU co
 
      O teste falha porque o teste de IU codificado não consegue localizar o controle button mapeado originalmente no UIMap como button1. A refatoração pode afetar os teste de IU codificados dessa forma.
 
-5. No **Gerenciador de Testes**, na seção **StackTrace**, escolha o primeiro link ao lado de **UIMpa.ModifiedSimpleAppTest()**.
+5. No **Gerenciador de Testes**, na seção **StackTrace**, escolha o primeiro link ao lado de **UIMpa.ModifiedSimpleAppTest()** .
 
      O arquivo *UIMap.cs* é aberto. O ponto de erro é realçado no código:
 
@@ -264,7 +264,7 @@ Neste passo a passo, você saberá como criar, editar e manter um teste de IU co
 
 ## <a name="map-refactored-control-rerun-the-test"></a>Mapear controle refatorado executar o teste novamente
 
-1. No arquivo *CodedUITest1.cs*, no método **CodedUITestMethod1()**, clique com o botão direito do mouse, selecione **Gerar Código para Teste de IU Codificado** e, em seguida, escolha **Usar Construtor de Teste de IU Codificado**.
+1. No arquivo *CodedUITest1.cs*, no método **CodedUITestMethod1()** , clique com o botão direito do mouse, selecione **Gerar Código para Teste de IU Codificado** e, em seguida, escolha **Usar Construtor de Teste de IU Codificado**.
 
      O **UIMap – Construtor de Teste de IU Codificado** é exibido.
 
@@ -333,7 +333,7 @@ Neste passo a passo, você saberá como criar, editar e manter um teste de IU co
 
 ![link para vídeo](../data-tools/media/playvideo.gif) [Introdução aos testes de IU codificados](https://onedrive.live.com/?id=2DB0E1EFE1C1D3B8%21110&cid=2DB0E1EFE1C1D3B8)
 
-## <a name="faq"></a>Perguntas frequentes
+## <a name="faq"></a>Perguntas Frequentes
 
 [Perguntas frequentes sobre testes de IU codificados](https://social.msdn.microsoft.com/Forums/vsautotest/3a74dd2c-cef8-4923-abbf-7a91f489e6c4/faqs)
 

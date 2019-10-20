@@ -6,17 +6,17 @@ f1_keywords:
 - vs.codeanalysis.addremoverulesets
 helpviewer_keywords:
 - rule sets
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 33d8d97a5d036a2bd931bfa951fea2715569830a
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: 6b904fd484135943228b2d8ac21e2df0d1c02e34
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72448991"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72649505"
 ---
 # <a name="customize-a-rule-set"></a>Personalizar um conjunto de regras
 
@@ -24,7 +24,7 @@ Você pode criar um conjunto de regras personalizadas para atender às necessida
 
 ## <a name="create-a-custom-rule-set-from-an-existing-rule-set"></a>Criar um conjunto de regras personalizado a partir de um conjunto de regras existente
 
-Para criar um conjunto de regras personalizado, você pode abrir um conjunto de regras internas no **Editor de conjunto de regras**. A partir daí, você pode adicionar ou remover regras específicas e pode alterar a ação que ocorre quando uma regra é violada @ no__t-0for exemplo, mostrar um aviso ou um erro.
+Para criar um conjunto de regras personalizado, você pode abrir um conjunto de regras internas no **Editor de conjunto de regras**. A partir daí, você pode adicionar ou remover regras específicas e pode alterar a ação que ocorre quando uma regra é violada &mdash;for exemplo, mostrar um aviso ou um erro.
 
 1. Em **Gerenciador de soluções**, clique com o botão direito do mouse no projeto e selecione **Propriedades**.
 
@@ -136,7 +136,7 @@ Você pode criar um novo arquivo de conjunto de regras a partir da caixa de diá
 
 ## <a name="name-and-description"></a>Nome e descrição
 
-Para alterar o nome de exibição de um conjunto de regras que está aberto no editor, abra a janela **Propriedades** selecionando a**janela Propriedades** **de @no__t-** 2 na barra de menus. Insira o nome de exibição na caixa **nome** . Você também pode inserir uma descrição para o conjunto de regras.
+Para alterar o nome de exibição de um conjunto de regras que está aberto no editor, abra a janela **Propriedades** selecionando **Exibir**  > **janela Propriedades** na barra de menus. Insira o nome de exibição na caixa **nome** . Você também pode inserir uma descrição para o conjunto de regras.
 
 ## <a name="next-steps"></a>Próximas etapas
 

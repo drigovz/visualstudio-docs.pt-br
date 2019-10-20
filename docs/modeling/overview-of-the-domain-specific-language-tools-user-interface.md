@@ -6,22 +6,22 @@ f1_keywords:
 - vs.dsltools.dsldesigner.editor
 helpviewer_keywords:
 - Domain-Specific Language Tools, user interface
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3bcc16b5287e4980d94a7cbcc4dff4d1f5f63d00
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e9a99eef692eb776908c6b8c4a32eb361092855a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62808311"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72658300"
 ---
 # <a name="overview-of-the-domain-specific-language-tools-user-interface"></a>Visão geral da interface de usuário das Ferramentas de Linguagem Específica do Domínio
-Quando você abre uma solução de ferramentas de linguagem específica do domínio (ferramentas DSL) no Visual Studio, a interface do usuário será semelhante a figura a seguir.
+Quando você abre uma solução de Ferramentas de Linguagem Específica de Domínio (ferramentas DSL) pela primeira vez no Visual Studio, a interface do usuário será semelhante à imagem a seguir.
 
- ![designer de DSL](../modeling/media/dsl_designer.png)
+ ![Designer de DSL](../modeling/media/dsl_designer.png)
 
  A tabela a seguir explica como as partes da interface do usuário são usadas.
 
@@ -35,7 +35,7 @@ Quando você abre uma solução de ferramentas de linguagem específica do domí
 ## <a name="the-domain-model-diagram"></a>O diagrama de modelo de domínio
  O diagrama de modelo de domínio é dividido em duas partes. Um dos lados do diagrama mostra os elementos e os relacionamentos no modelo. O outro lado mostra como o modelo deve ser exibido e inclui as formas que serão usadas para exibir os elementos e as propriedades do diagrama de modelo. A imagem a seguir mostra os elementos do diagrama.
 
- ![designer de DSL com raias](../modeling/media/dsl_desinger.png)
+ ![Designer de DSL com raia](../modeling/media/dsl_desinger.png)
 
  A tabela a seguir explica alguns dos elementos do diagrama de modelo de domínio.
 

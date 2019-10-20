@@ -11,37 +11,37 @@ helpviewer_keywords:
 - Visual Studio Workflow Designer [WFD]
 - Workflow Designer [WFD], overview
 ms.assetid: 4cd062b1-b496-4668-bbc1-ee85545e066d
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 45c687be4efc5a83827836cd1ac89bbc38ad4cb1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b689628983c50fc891c5a3ebe6a0df5c952468d8
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62949768"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650539"
 ---
 # <a name="develop-apps-with-the-workflow-designer"></a>Desenvolver aplicativos com o Designer de Fluxo de Trabalho
 
-O Designer de fluxo de trabalho é um designer visual e o depurador para a construção do gráfica e a depuração de [Windows Workflow Foundation](/dotnet/framework/windows-workflow-foundation/index) aplicativos (WF) no Visual Studio. Ele permite compor um aplicativo de fluxo de trabalho composto, biblioteca de atividades ou serviço do Windows Communication Foundation (WCF) com o uso de modelos e designers de atividade.
+O Designer de Fluxo de Trabalho é um designer visual e depurador para a construção gráfica e a depuração de aplicativos [Windows Workflow Foundation](/dotnet/framework/windows-workflow-foundation/index) (WF) no Visual Studio. Ele permite compor um aplicativo de fluxo de trabalho composto, uma biblioteca de atividades ou um serviço Windows Communication Foundation (WCF) por meio do uso de modelos e designers de atividade.
 
-## <a name="install-windows-workflow-foundation"></a>Instalar o Windows Workflow Foundation
+## <a name="install-windows-workflow-foundation"></a>Instalar Windows Workflow Foundation
 
-Para usar os modelos de projeto de fluxo de trabalho no Visual Studio, primeiro instale o **Windows Workflow Foundation** componente.
+Para usar modelos de projeto de fluxo de trabalho no Visual Studio, primeiro instale o componente **Windows Workflow Foundation** .
 
-1. Abra o instalador do Visual Studio. Uma maneira rápida para abri-lo é selecionando **ferramentas** > **obter ferramentas e recursos** no Visual Studio.
+1. Abra Instalador do Visual Studio. Uma maneira rápida de abri-lo é selecionando **ferramentas**  > **obter ferramentas e recursos** no Visual Studio.
 
-1. No instalador do Visual Studio, selecione o **componentes individuais** guia.
+1. Em Instalador do Visual Studio, selecione a guia **componentes individuais** .
 
-1. Role para baixo até a **atividades de desenvolvimento** categoria e, em seguida, selecione o **Windows Workflow Foundation** componente.
+1. Role para baixo até a categoria **atividades de desenvolvimento** e selecione o componente **Windows Workflow Foundation** .
 
    ![Componente do Windows Workflow Foundation para o Visual Studio](media/windows-workflow-foundation-component.png)
 
 1. Selecione **Modificar**.
 
-   O Visual Studio instala o **Windows Workflow Foundation** componente.
+   O Visual Studio instala o componente **Windows Workflow Foundation** .
 
 ## <a name="see-also"></a>Consulte também
 

@@ -2,17 +2,17 @@
 title: Configurar testes de unidade com um arquivo .runsettings
 ms.date: 06/14/2019
 ms.topic: conceptual
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: 4194a392eee1d5c9beaa0640f4006d1f01ebbace
-ms.sourcegitcommit: 1a3c2ca995fd44fc72741b3a100c6e57f4f8702c
+author: jillre
+ms.openlocfilehash: 22fe1de176819807c5cd60d746f381e325601799
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "72262320"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72665149"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Configurar testes de unidade usando um *.runsettings*
 
@@ -38,7 +38,7 @@ O arquivo será exibido no menu de Configurações do Teste e você poderá marc
 
 ::: moniker range=">=vs-2019"
 
-Para especificar um arquivo de configurações de execução no IDE, selecione **testar** > **Selecione arquivo de configurações**. Navegue até o arquivo *.runsettings* e selecione-o.
+Para especificar um arquivo de configurações de execução no IDE, selecione **testar**  > **Selecione o arquivo de configurações**. Navegue até o arquivo *.runsettings* e selecione-o.
 
 ![Selecionar o menu do arquivo de configurações do teste no Visual Studio 2019](media/vs-2019/select-settings-file.png)
 
@@ -97,7 +97,7 @@ Para personalizar os testes usando um arquivo *.runsettings*, siga estas etapas:
 
 ::: moniker range=">=vs-2019"
 
-3. Para selecionar o arquivo de configurações de execução, escolha **testar** > **Selecionar arquivo de configurações**. Procure o arquivo *.runsettings* que você criou e, em seguida, selecione **OK**.
+3. Para selecionar o arquivo de configurações de execução, escolha **testar**  > **Selecionar arquivo de configurações**. Procure o arquivo *.runsettings* que você criou e, em seguida, selecione **OK**.
 
 ::: moniker-end
 
@@ -149,7 +149,7 @@ O XML a seguir mostra o conteúdo de um arquivo *.runsettings* típico. Cada ele
             <AllowLowIntegrityProcesses>True</AllowLowIntegrityProcesses>
             <CollectFromChildProcesses>True</CollectFromChildProcesses>
             <CollectAspDotNet>False</CollectAspDotNet>
-            
+
           </CodeCoverage>
         </Configuration>
       </DataCollector>

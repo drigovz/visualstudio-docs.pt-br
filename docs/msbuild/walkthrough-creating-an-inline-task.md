@@ -1,5 +1,5 @@
 ---
-title: 'Passo a passo: Criando uma tarefa embutida | Microsoft Docs'
+title: 'Passo a passo: criando uma tarefa embutida | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 322c8d4b766619a6404a315fb83298bf5416fba4
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: cbeba8418b3364d4e3762643a78465158f80e6fc
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445329"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72655441"
 ---
 # <a name="walkthrough-create-an-inline-task"></a>Passo a passo: Criar uma tarefa embutida
 As tarefas do MSBuild normalmente são criadas ao compilar uma classe que implementa a interface <xref:Microsoft.Build.Framework.ITask>. A partir do .NET Framework versão 4, você pode criar tarefas embutidas no arquivo de projeto. Você não precisa criar um assembly separado para hospedar a tarefa. Para saber mais, confira [Tarefas embutidas](../msbuild/msbuild-inline-tasks.md).
@@ -46,7 +46,7 @@ Para criar e executar as tarefas, use o Visual Studio e a **janela de prompt de 
 
 1. No Visual Studio, no menu **Arquivo**, aponte para **Novo** e clique em **Projeto**.
 
-2. Na caixa de diálogo **Novo Projeto**, selecione o tipo de projeto do **Visual C#** e o modelo do **Aplicativo do Windows Forms**. Na caixa **Nome**, digite `InlineTasks`. Digite um **Local** para a solução, por exemplo, *D:\\*. Certifique-se de que **Criar diretório para a solução** está selecionado, **Adicionar ao Controle do Código-Fonte** não está marcado e que **Nome da Solução** é **InlineTasks**.
+2. Na caixa de diálogo **Novo Projeto**, selecione o tipo de projeto do **Visual C#** e o modelo do **Aplicativo do Windows Forms**. Na caixa **Nome**, digite `InlineTasks`. Digite um **Local** para a solução, por exemplo, *D:\\* . Certifique-se de que **Criar diretório para a solução** está selecionado, **Adicionar ao Controle do Código-Fonte** não está marcado e que **Nome da Solução** é **InlineTasks**.
 
 3. Clique em **OK** para criar o arquivo de projeto.
 
@@ -85,7 +85,7 @@ Para criar e executar as tarefas, use o Visual Studio e a **janela de prompt de 
 
 3. Salve o arquivo de projeto.
 
-   Esse código cria uma tarefa embutida chamada Olá e não tem parâmetros, referências ou instruções `Using`. A tarefa Olá contém apenas uma linha de código, que exibe uma mensagem de saudação do dispositivo de registro em log padrão, normalmente a janela do console.
+   Esse código cria uma tarefa embutida chamada Hello e não tem parâmetros, referências nem diretivas de `Using`. A tarefa Olá contém apenas uma linha de código, que exibe uma mensagem de saudação do dispositivo de registro em log padrão, normalmente a janela do console.
 
 ### <a name="run-the-hello-task"></a>Executar a tarefa Hello
  Execute o MSBuild com a **janela Prompt de comando** para construir a tarefa Olá e processar o destino TestBuild que a invoca.
@@ -94,7 +94,7 @@ Para criar e executar as tarefas, use o Visual Studio e a **janela de prompt de 
 
 1. Clique em **Iniciar**, clique em **Todos os Programas** e, em seguida, localize a pasta **Ferramentas do Visual Studio** e clique em **Prompt de Comando do Visual Studio**.
 
-2. Na **janela Prompt de Comando**, localize a pasta que contém o arquivo de projeto, nesse caso, *D:\InlineTasks\InlineTasks\\*.
+2. Na **janela Prompt de Comando**, localize a pasta que contém o arquivo de projeto, nesse caso, *D:\InlineTasks\InlineTasks\\* .
 
 3. Digite **msbuild**, sem opções de comando e pressione **Enter**. Por padrão, isso cria o arquivo *InlineTasks.csproj* e processa o TestBuild de destino padrão, que chama a tarefa Hello.
 

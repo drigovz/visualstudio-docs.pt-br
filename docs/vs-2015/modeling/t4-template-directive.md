@@ -6,15 +6,15 @@ ms.technology: vs-ide-modeling
 ms.topic: conceptual
 ms.assetid: 2b0a8e04-6fee-4c6c-b086-e49fc728a3ed
 caps.latest.revision: 12
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 7eeae6a14c846de83aaffa6568c6c30b82d9d81b
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: d4c6176caee5551b860029ac98b19d52fcb7b51f
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68871738"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72658549"
 ---
 # <a name="t4-template-directive"></a>Diretiva de modelo T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Um modelo de texto T4 do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] normalment
 ## <a name="compileroptions-attribute"></a>Atributo compilerOptions
  Exemplo: `compilerOptions="optimize+"`
 
- Valores válidos: Algumas opções válidas do compilador. Para obter mais informações, consulte [ C# opções de compilador listadas por categoria](https://msdn.microsoft.com/library/96437ecc-6502-4cd3-b070-e9386a298e83) e [Visual Basic opções de compilador listadas por categoria](https://msdn.microsoft.com/library/fbe36f7a-7cfa-4f77-a8d4-2be5958568e3).
+ Valores válidos: quaisquer opções de compilador válidas. Para obter mais informações, consulte [ C# opções de compilador listadas por categoria](https://msdn.microsoft.com/library/96437ecc-6502-4cd3-b070-e9386a298e83) e [Visual Basic opções de compilador listadas por categoria](https://msdn.microsoft.com/library/fbe36f7a-7cfa-4f77-a8d4-2be5958568e3).
 
  Ignorada para modelos de tempo de execução (pré-processados).
 

@@ -11,17 +11,17 @@ helpviewer_keywords:
 - Output window
 - Toolbox, removing controls
 ms.assetid: d8931d88-250e-4db4-963f-2c5b3e99b45f
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4503066cab8e7ca324e7c81317999b737c750dd6
-ms.sourcegitcommit: d4920babfc3d24a3fe1d4bf446ed3fe73b344467
-ms.translationtype: HT
+ms.openlocfilehash: 442cac32e0a7103dc573cad707b53ced936c9907
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "67159947"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72655765"
 ---
 # <a name="output-window"></a>janela Saída
 
@@ -76,7 +76,7 @@ Se você usar a rolagem automática na Janela de **Saída** e, em seguida, naveg
 ## <a name="see-also"></a>Consulte também
 
 - [Mensagens de diagnóstico na Janela de Saída](../../debugger/diagnostic-messages-in-the-output-window.md)
-- [Como: Controlar a Janela de Saída](https://msdn.microsoft.com/Library/91aebd15-8854-4a7a-9f7d-57376fb4e858)
+- [Como controlar a Janela de Saída](https://msdn.microsoft.com/Library/91aebd15-8854-4a7a-9f7d-57376fb4e858)
 - [Compilação e build](../../ide/compiling-and-building-in-visual-studio.md)
 - [Compreender configurações de build](../../ide/understanding-build-configurations.md)
 - [Visão geral da biblioteca de classes](/dotnet/standard/class-library-overview)

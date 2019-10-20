@@ -11,15 +11,15 @@ f1_keywords:
 - VS.DocumentOutline
 ms.assetid: c54969a7-d75a-4a35-9b37-af7a596a7c24
 caps.latest.revision: 31
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 039e6d5ae21059692aecc05de51bc2b311436334
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 1c5d0770115fffd8c81078fd0e3d187ec5d3c5ae
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65695638"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72657943"
 ---
 # <a name="creating-a-ui-by-using-xaml-designer-in-visual-studio"></a>Criando uma interface de usuário usando o XAML Designer no Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ O Designer XAML no Visual Studio fornece uma interface visual para ajudá-lo a c
 
  No modo de exibição de Design, a janela que contém a *prancheta* é a janela ativa e você pode usá-la como superfície de trabalho primária. Você pode usá-la para criar visualmente uma página em seu aplicativo adicionando ou desenhando elementos e depois modificando-os. Para obter mais informações, consulte [Trabalhando com elementos no Designer XAML](../designers/working-with-elements-in-xaml-designer.md). Esta ilustração mostra o artboard no modo Design.
 
- ![Modo de Exibição de Design do Designer XAML](../designers/media/xaml-editor-design-view.png "xaml_editor_design_view")
+ ![modo de exibição de Design de Designer XAML](../designers/media/xaml-editor-design-view.png "xaml_editor_design_view")
 
  Estas funcionalidades estão disponíveis no artboard:
 
@@ -58,7 +58,7 @@ O Designer XAML no Visual Studio fornece uma interface visual para ajudá-lo a c
 
  No modo Design, os comandos adicionais do artboard estão disponíveis na área esquerda inferior da tela, como mostrado aqui:
 
- ![Comandos do modo de exibição de Design](../designers/media/xaml-editor-design-controls.png "xaml_editor_design_controls")
+ ![Comandos de modo de exibição de Design](../designers/media/xaml-editor-design-controls.png "xaml_editor_design_controls")
 
  Estes comandos estão disponíveis na barra de ferramentas:
 
@@ -81,7 +81,7 @@ O Designer XAML no Visual Studio fornece uma interface visual para ajudá-lo a c
 ## <a name="device-window"></a>Janela Dispositivo
  A janela Dispositivo no Designer XAML permite simular em tempo de design vários modos de exibição, vídeos e opções de exibição para seu projeto da Windows Store ou do Windows Phone. A janela Dispositivo está disponível no menu **Design** quando você estiver trabalhando no Designer XAML. Veja como ela se parece:
 
- ![Janela Dispositivo](../designers/media/xaml-editor-device-panel.png "xaml_editor_device_panel")
+ ![Janela do dispositivo](../designers/media/xaml-editor-device-panel.png "xaml_editor_device_panel")
 
  Estas são as opções disponíveis na janela Dispositivo:
 
@@ -89,7 +89,7 @@ O Designer XAML no Visual Studio fornece uma interface visual para ajudá-lo a c
 
  **Orientação** Especifica diferentes orientações para o aplicativo: **Paisagem** ou **Retrato**.
 
- **Borda** Especifica diferentes alinhamentos de borda para seu aplicativo: **Ambos**, **Esquerda**, **Direita** ou **Nenhum**.
+ **Borda** Especifica diferentes alinhamentos de borda para o aplicativo: **Ambos**, **Esquerda**, **Direita** ou **Nenhum**.
 
  **Alto Contraste** Visualize o aplicativo com base na configuração de contraste selecionada. Essa configuração, quando definida como um valor diferente do valor **Padrão**, substituirá a propriedade `RequestedTheme` definida no arquivo App.xaml.
 
@@ -116,7 +116,7 @@ O Designer XAML no Visual Studio fornece uma interface visual para ajudá-lo a c
 
   Para exibir a janela de Estrutura de tópicos do documento na barra de menus, escolha **Exibição**, **Outras Janelas**, **Estrutura de Tópicos do Documento**.
 
-  ![Janela de Estrutura de tópicos do documento](../designers/media/xaml-editor-doc-outline.png "xaml_editor_doc_outline")
+  ![Janela estrutura de tópicos do documento](../designers/media/xaml-editor-doc-outline.png "xaml_editor_doc_outline")
 
   Estas são as opções disponíveis na janela Estrutura de Tópicos de Documento:
 
@@ -138,4 +138,4 @@ O Designer XAML no Visual Studio fornece uma interface visual para ajudá-lo a c
  À direita de cada valor da propriedade, está um *marcador de propriedade* que é exibido como símbolo de caixa. A aparência do marcador da propriedade indica se existe uma associação de dados ou um recurso aplicado à propriedade. Por exemplo, um símbolo de caixa branca indica um valor padrão, um símbolo de caixa preta normalmente indica que um recurso local foi aplicado, e uma caixa laranja geralmente indica que uma associação de dados foi aplicada. Quando você clica no marcador da propriedade, pode navegar para a definição de um estilo, abrir o construtor da associação de dados ou abrir o selecionador de recurso.
 
 ## <a name="see-also"></a>Consulte também
- [Trabalhando com elementos no Designer XAML](../designers/working-with-elements-in-xaml-designer.md) [como criar e aplicar um recurso](../designers/how-to-create-and-apply-a-resource.md) [passo a passo: Associando a dados no Designer XAML](../designers/walkthrough-binding-to-data-in-xaml-designer.md)
+ Como [trabalhar com elementos no designer XAML](../designers/working-with-elements-in-xaml-designer.md) [como criar e aplicar um recurso](../designers/how-to-create-and-apply-a-resource.md) [: associação a dados em designer XAML](../designers/walkthrough-binding-to-data-in-xaml-designer.md)

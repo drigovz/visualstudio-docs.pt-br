@@ -8,15 +8,15 @@ f1_keywords:
 - Blend.Start.Dev12
 ms.assetid: efd12263-cc2d-4081-a2bb-9a2cc17c442c
 caps.latest.revision: 33
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 7cd7f14158b7dee83767ee9295c8917cadd30fa5
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 36a0772730718047f2b9d6fc6bc36c30a211a2af
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65695930"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72658000"
 ---
 # <a name="creating-a-ui-by-using-blend-for-visual-studio"></a>Criando uma interface de usuário usando o Blend para Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ O Blend for Visual Studio ajuda a criar aplicativos da área de trabalho do Wind
 ## <a name="Tools"></a> Tour pelo painel Ferramentas
  É possível usar o painel **Ferramentas** no Blend for Visual Studio para criar e modificar objetos no aplicativo. Você cria os objetos selecionando uma ferramenta e desenhando na prancheta com o mouse.
 
- ![Painel Ferramentas](../designers/media/blend5toolspanel.png "Blend5Toolspanel")
+ ![Painel de ferramentas](../designers/media/blend5toolspanel.png "Blend5Toolspanel")
 
 |||||
 |-|-|-|-|
@@ -52,14 +52,14 @@ O Blend for Visual Studio ajuda a criar aplicativos da área de trabalho do Wind
 |![](../designers/media/b1-3.png "B1_3")|**Ferramentas pincel** Trabalhe com os atributos visuais de um objeto, como transformar um pincel, pintar um objeto ou selecionar os atributos de um objeto para aplicação em outro objeto.|![Texto explicativo C](../designers/media/b5-label-c.png "b5_label_C")|**Ferramentas Forma**|
 |![](../designers/media/b1-4.png "B1_4")|**Ferramentas de objeto** Desenhe os objetos mais comuns na prancheta, como demarcadores, formas, painéis de layout, texto e controles.|![Texto explicativo D](../designers/media/b5-label-d.png "b5_label_D")|**Painéis de layout**|
 |![](../designers/media/b1-5.png "B1_5")|**Ferramentas de ativos** Acesse o painel **Ativos** e mostre o ativo usado mais recentemente na biblioteca.|![Texto explicativo E](../designers/media/b5-label-e.png "b5_label_E")|**Controles de texto**|
-|||![Texto explicativo F](../designers/media/b5-label-f.png "b5_label_F")|**Controles comuns**|
+|||![Balão F](../designers/media/b5-label-f.png "b5_label_F")|**Controles comuns**|
 
- **Assista a um breve vídeo:** ![Configurar recursos instalados](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [a barra de ferramentas](https://www.youtube.com/watch?v=VkdUJcvoo54&list=PLBDF977B2F1DAB358&index=4).
+ **Assista a um vídeo curto:** ![Configurar funcionalidades instaladas](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [A barra de ferramentas](https://www.youtube.com/watch?v=VkdUJcvoo54&list=PLBDF977B2F1DAB358&index=4).
 
 ## <a name="Assets"></a> Tour pelo painel Ativos
  É possível encontrar todos os controles no painel **Ativos**, semelhante à **Caixa de ferramentas** no Visual Studio. Além dos controles, você encontrará tudo o que pode adicionar à sua prancheta no painel **Ativos**, incluindo estilos, mídia, comportamentos e efeitos.
 
- ![Painel Ativos](../designers/media/blend5-assets-panel.png "Blend5_Assets_panel")
+ ![Painel ativos](../designers/media/blend5-assets-panel.png "Blend5_Assets_panel")
 
 |||
 |-|-|
@@ -72,7 +72,7 @@ O Blend for Visual Studio ajuda a criar aplicativos da área de trabalho do Wind
 ## <a name="Objects"></a> Tour pelo painel Objetos e Linha do Tempo
  Use esse painel para organizar os objetos na prancheta e, se quiser, para animá-los.
 
- ![Painel Objetos e Linha do Tempo no modo de animação](../designers/media/b5-object-timeline-animation.png "b5_object_timeline_animation")
+ ![Painel de objeto e linha do tempo no modo de animação](../designers/media/b5-object-timeline-animation.png "b5_object_timeline_animation")
 
 |||
 |-|-|
@@ -91,14 +91,14 @@ O Blend for Visual Studio ajuda a criar aplicativos da área de trabalho do Wind
 |![](../designers/media/b1-13.png "B1_13")|**Quadros chave definidos em linhas do tempo** Altere um valor da propriedade em um ponto no tempo específico.|
 |![](../designers/media/d839d12c-07a1-4127-a830-4a8e7069f4fe.png "d839d12c-07a1-4127-a830-4a8e7069f4fe")|**Alterar a ordem dos objetos** Defina a ordem de exibição dos objetos. Clique neste botão para organizar os objetos na exibição de estrutura pela ordem Z (de frente para trás) ou pela ordem de marcação (a ordem na qual eles aparecem na exibição **XAML**).|
 |![](../designers/media/b1-15.png "B1_15")|**Zoom da linha do tempo** Defina a resolução de zoom da linha do tempo. Aumentar o zoom permite editar uma animação com mais detalhes e diminuir o zoom mostra mais uma visão geral do que está acontecendo no decorrer de períodos de tempo mais longos. Se você aumentar o zoom, mas não conseguir definir um quadro chave na posição de tempo desejada, verifique se a resolução de ajuste está definida com um valor suficientemente alto.|
-|![Texto explicativo 16](../designers/media/b5-label-16.png "b5_label_16")|**Área de composição da linha do tempo** Exiba a linha do tempo e mova quadros chave arrastando-os ou usando os menus de atalho.|
+|![Balão 16](../designers/media/b5-label-16.png "b5_label_16")|**Área de composição da linha do tempo** Exiba a linha do tempo e mova quadros chave arrastando-os ou usando os menus de atalho.|
 
 ## <a name="Properties"></a> Tour pelo painel Propriedades
  Use esse painel para exibir e modificar as propriedades de um objeto. Você também pode defini-las diretamente na prancheta. Nesse caso, as alterações na propriedade serão refletidas no painel **Propriedades**.
 
- ![Painel Propriedades](../designers/media/blend5-properties-panel.png "Blend5_properties_panel")
+ ![Painel de propriedades](../designers/media/blend5-properties-panel.png "Blend5_properties_panel")
 
- **Categorias** Expanda e recolha categorias de propriedades. Clique em **Expandir** ![](../designers/media/6375953d-074c-421a-bbb3-6f5055b67b64.png "6375953d-074c-421a-bbb3-6f5055b67b64") e **Recolher** ![Recolher](../designers/media/b5-collapse-button.png "b5_collapse_button") para mostrar ou ocultar detalhes da categoria.
+ **Categorias** Expanda e recolha categorias de propriedades. Clique em **expandir** ![](../designers/media/6375953d-074c-421a-bbb3-6f5055b67b64.png "6375953d-074c-421a-bbb3-6f5055b67b64") e **recolher** ![recolher](../designers/media/b5-collapse-button.png "b5_collapse_button") para mostrar ou ocultar detalhes da categoria.
 
 |                                                                                                         |                                                                                                                                                                                                                                  |
 |---------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -117,10 +117,10 @@ O Blend for Visual Studio ajuda a criar aplicativos da área de trabalho do Wind
 |                                ![](../designers/media/b1-13.png "B1_13")                                |                                                                        **Canal alfa** Modifique o valor Alfa usando o editor de número ao lado de **A**.                                                                        |
 | ![](../designers/media/d839d12c-07a1-4127-a830-4a8e7069f4fe.png "d839d12c-07a1-4127-a830-4a8e7069f4fe") |                                       **Converter cor em recurso** Converta a cor selecionada em um recurso de cor. Os recursos de cor ficam disponíveis ao clicar na guia Recursos de cor.                                        |
 |                                ![](../designers/media/b1-15.png "B1_15")                                |                                                                                 **Valor hexadecimal** Exibe o valor hexadecimal da cor exibida.                                                                                 |
-|                     ![Texto explicativo 16](../designers/media/b5-label-16.png "b5_label_16")                     |                                                                                **Controle deslizante de gradiente** É exibido somente se um pincel de gradiente é selecionado.                                                                                 |
+|                     ![Balão 16](../designers/media/b5-label-16.png "b5_label_16")                     |                                                                                **Controle deslizante de gradiente** É exibido somente se um pincel de gradiente é selecionado.                                                                                 |
 | ![](../designers/media/d50027a1-6824-4ad8-8b4e-558b0756dcf8.png "d50027a1-6824-4ad8-8b4e-558b0756dcf8") |                                                                     **Mostrar propriedades avançadas** Exiba categorias das propriedades menos usadas.                                                                      |
 
- **Assista a um breve vídeo:** ![Configurar recursos instalados](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [painel de propriedades](https://www.youtube.com/watch?v=HCqQfiobdag&list=PLBDF977B2F1DAB358&index=7).
+ **Assista a um vídeo curto:** ![Configurar funcionalidades instaladas](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Painel Propriedades](https://www.youtube.com/watch?v=HCqQfiobdag&list=PLBDF977B2F1DAB358&index=7).
 
 ## <a name="see-also"></a>Consulte também
- [Inserir controles e modificar seu comportamento](../designers/insert-controls-and-modify-their-behavior-in-xaml-designer.md) [animar objetos](../designers/animate-objects-in-xaml-designer.md) [desenhar formas e demarcadores](../designers/draw-shapes-and-paths.md) [projetar XAML no Visual Studio e no Blend para Visual Studio](../designers/designing-xaml-in-visual-studio.md)
+ [Inserir controles e modificar seus comportamentos](../designers/insert-controls-and-modify-their-behavior-in-xaml-designer.md) [animar objetos](../designers/animate-objects-in-xaml-designer.md) [desenhar formas e caminhos](../designers/draw-shapes-and-paths.md) que [projetam XAML no Visual Studio e Blend para Visual Studio](../designers/designing-xaml-in-visual-studio.md)

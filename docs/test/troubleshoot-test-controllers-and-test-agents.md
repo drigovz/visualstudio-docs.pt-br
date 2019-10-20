@@ -8,15 +8,15 @@ helpviewer_keywords:
 - load tests, test agents
 - troubleshooting, test controllers and agents in load tests
 ms.assetid: 77329348-3a5d-43de-b6cb-90f93296a081
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 3ca2a69fc0f5777c34857f6f3da0c7faabcd81ce
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 716bc28626e6b408fd618a8ed6c623c5118d7782
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62990544"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72659916"
 ---
 # <a name="strategies-for-troubleshooting-test-controllers-and-test-agents-in-load-tests"></a>Estratégias para solução de problemas em controladores e agentes de teste em testes de carga
 
@@ -41,7 +41,7 @@ Você pode controlar o nível de registro em log em um computador do controlador
 
 1. Interrompa o serviço do controlador de teste. Em um prompt de comando, digite `net stop vsttcontroller`.
 
-2. Abra o arquivo *QTController.exe.config*. Esse arquivo está localizado no diretório de instalação do controlador.
+2. Abra o arquivo *QTController. exe. config*. Esse arquivo está localizado no diretório de instalação do controlador.
 
 3. Edite a entrada da opção `EqtTraceLevel` na seção de diagnóstico do sistema do arquivo. Seu código deve se parecer com este:
 
@@ -86,7 +86,7 @@ Isso se aplica ao controlador de teste, ao serviço do agente de teste e ao proc
 
 Quando tentar configurar um agente de teste, você pode receber o seguinte erro:
 
-**Erro 8110. Não é possível se conectar ao computador do controlador especificado nem acessar o objeto do controlador.**
+**Erro 8110. Não é possível conectar-se ao computador do controlador especificado ou acessar o objeto do controlador.**
 
 Esse erro pode ser causado pela instalação do controlador de teste em um computador que tenha mais de um adaptador de rede.
 
@@ -105,7 +105,7 @@ Para corrigir este erro, você deve associar o controlador de teste a um dos ada
 
      Um prompt de comando é aberto.
 
-3. Digite `ipconfig /all` no terminal integrado.
+3. Digite `ipconfig /all`.
 
      Os endereços IP de seus adaptadores de rede são exibidos. Registre o endereço IP do adaptador de rede ao qual você deseja associar o controlador.
 
@@ -113,7 +113,7 @@ Para corrigir este erro, você deve associar o controlador de teste a um dos ada
 
 1. Interrompa o serviço do controlador de teste. Em um prompt de comando, digite `net stop vsttcontroller`.
 
-2. Abra o arquivo *QTController.exe.config*. Esse arquivo está localizado em *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE*.
+2. Abra o arquivo *QTController. exe. config*. Este arquivo está localizado em *% ProgramFiles (x86)% \ Microsoft Visual Studio\2017\Enterprise\Common7\IDE*.
 
 3. Adicione uma entrada para a propriedade `BindTo` nas configurações do aplicativo. Especifique o endereço IP do adaptador de rede ao qual deseja associar o controlador. Seu código deve se parecer com este:
 

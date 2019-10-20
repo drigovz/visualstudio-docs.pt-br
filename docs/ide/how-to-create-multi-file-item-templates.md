@@ -6,17 +6,17 @@ helpviewer_keywords:
 - Visual Studio templates, creating multi-file item templates
 - multi-file item templates
 - item templates, creating multi-file item templates
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 745f371fa0461c2dc0dcedac0e06d160bbf7e209
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 82047b4a49db4edbea4ce965d1987f87a799a9f7
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62428983"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72655937"
 ---
-# <a name="how-to-create-multi-file-item-templates"></a>Como: Criar modelos de item de multiarquivo
+# <a name="how-to-create-multi-file-item-templates"></a>Como criar modelos de item multiarquivos
 
 Os modelos de item podem especificar apenas um item, mas, algumas vezes, o item é composto por vários arquivos. Por exemplo, um modelo de item do Windows Forms requer os três arquivos a seguir:
 
@@ -30,7 +30,7 @@ Os modelos de item multiarquivos exigem parâmetros para garantir que as extens�
 
 ## <a name="use-the-export-template-wizard"></a>Use o Assistente para Exportar Modelo
 
-Você pode criar um modelo de item multiarquivos da mesma maneira que se cria um modelo de item de arquivo único. Confira [Como: Criar modelos de item](../ide/how-to-create-item-templates.md). Na página **Selecionar Item para Exportar** do assistente, selecione o arquivo que contém os arquivos dependentes (por exemplo, um arquivo de formato do Windows Forms). O assistente inclui automaticamente todos os arquivos dependentes, como arquivos de recursos e do designer, no modelo.
+Você pode criar um modelo de item multiarquivos da mesma maneira que se cria um modelo de item de arquivo único. Consulte [Como criar modelos de item](../ide/how-to-create-item-templates.md). Na página **Selecionar Item para Exportar** do assistente, selecione o arquivo que contém os arquivos dependentes (por exemplo, um arquivo de formato do Windows Forms). O assistente inclui automaticamente todos os arquivos dependentes, como arquivos de recursos e do designer, no modelo.
 
 ## <a name="manually-create-a-multi-file-item-template"></a>Criar manualmente um modelo de item de vários arquivos
 
@@ -53,11 +53,11 @@ Você pode criar um modelo de item multiarquivos da mesma maneira que se cria um
      > [!NOTE]
      > Quando um item derivado deste modelo for adicionado a um projeto, os nomes de arquivo serão derivados do nome que o usuário inserir na caixa de diálogo **Adicionar Novo Item**.
 
-1. Selecione os arquivos a serem incluídos em seu modelo, clique com o botão direito do mouse na seleção e escolha **Enviar para** > **Pasta compactada (zipada)**.
+1. Selecione os arquivos a serem incluídos em seu modelo, clique com o botão direito do mouse na seleção e escolha **Enviar para** > **Pasta compactada (zipada)** .
 
    Os arquivos selecionados são compactados em um arquivo *.zip*.
 
-1. Copie o arquivo *.zip* para o local do modelo de item do usuário. Por padrão, o diretório é *%USERPROFILE%\Documents\Visual Studio \<Versão\>\Templates\ItemTemplates*. Para obter mais informações, confira [Como: Localizar e organizar modelos](../ide/how-to-locate-and-organize-project-and-item-templates.md).
+1. Copie o arquivo *.zip* para o local do modelo de item do usuário. Por padrão, o diretório é *%USERPROFILE%\Documents\Visual Studio \<Versão\>\Templates\ItemTemplates*. Para obter mais informações, consulte [Como localizar e organizar modelos](../ide/how-to-locate-and-organize-project-and-item-templates.md).
 
 1. Feche o Visual Studio e, em seguida, o reabra.
 
@@ -95,6 +95,6 @@ O exemplo a seguir mostra um modelo do Windows Forms. Quando um item é criado c
 ## <a name="see-also"></a>Consulte também
 
 - [Criar modelos de projeto e de item](../ide/creating-project-and-item-templates.md)
-- [Como: Criar modelos de item](../ide/how-to-create-item-templates.md)
+- [Como criar modelos de item](../ide/how-to-create-item-templates.md)
 - [Parâmetros de modelo](../ide/template-parameters.md)
-- [Como: Substituir parâmetros em um modelo](../ide/how-to-substitute-parameters-in-a-template.md)
+- [Como substituir parâmetros em um modelo](../ide/how-to-substitute-parameters-in-a-template.md)

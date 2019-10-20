@@ -1,5 +1,5 @@
 ---
-title: Modos de exibição de atividade (herdado) | Microsoft Docs
+title: Exibições de atividade (herdadas) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-workflow-designer
@@ -10,33 +10,32 @@ helpviewer_keywords:
 - activity views
 ms.assetid: 83dc68cd-2cb2-45c2-9a6e-10d82053171a
 caps.latest.revision: 5
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 62b3c9185226512ff28c8d028cd0ba7d33b0f12f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c7d8a13890814b56865200acf95c8e0565b52b5a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62977450"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72655218"
 ---
 # <a name="activity-views-legacy"></a>Visualizações de atividade (legados)
-Muitas das atividades fornecidas por [!INCLUDE[wf](../includes/wf-md.md)], que fluxos de trabalho são compostos, têm várias exibições de design disponíveis em [!INCLUDE[wfd1](../includes/wfd1-md.md)]herdado. Quando você arrasta um designer de atividade do **caixa de ferramentas** na superfície de design e, assim, sempre que você selecione a atividade, você pode alternar entre os modos de exibição de design diferentes usando o **fluxo de trabalho**menus ou clicando-se a atividade selecionada. Além disso, quando você move o ponteiro sobre o nome de uma atividade selecionada, um conjunto lista suspensa de guias que aparece você pode usar para alternar entre modos de exibição diferentes.  
-  
- Cada atividade tem pelo menos uma exibição; Esta é a exibição padrão exibida quando você arrasta um designer de atividade do **caixa de ferramentas** na superfície de design. Esta exibição de atividade está disponível como a **exibir [tipo de atividade]** opção na guia, por exemplo e menus **exibição paralela**. A maioria das atividades têm modos de exibição adicionais e as atividades diferentes podem ter diferentes modos de exibição. Por exemplo, o [TransactionScopeActivity](http://go.microsoft.com/fwlink?LinkID=65093) atividade tem o modo de exibição e o [EventHandlingScopeActivity](http://go.microsoft.com/fwlink?LinkID=65030) atividade tem eventos de um modo de exibição. Muitas das atividades que vêm com o Windows Workflow Foundation têm **exibir manipulador de cancelamento** e **View Faults** modos de exibição para o modo de exibição de design do [CancellationHandlerActivity](http://go.microsoft.com/fwlink?LinkID=65050) e um [FaultHandlersActivity](http://go.microsoft.com/fwlink?LinkID=65055) associados a eles.  
-  
- A tabela a seguir lista o nome e a descrição de cada uma.  
-  
-|Opção de menu/guia|Descrição|  
-|----------------------|-----------------|  
-|**Exibição [tipo de atividade]**|Selecione este menu catalogue ou a opção para exibir a representação gráfica padrão de atividade selecionada.|  
-|**Exibir manipulador de cancelamento**|Selecione esta opção de menu ou catalogue modo de exibição para exibir o [CancellationHandlerActivity](http://go.microsoft.com/fwlink?LinkID=65050) associada à atividade selecionada.|  
-|**Exibir manipulador de falha**|Selecione esta opção de menu ou catalogue modo de exibição para exibir o [FaultHandlersActivity](http://go.microsoft.com/fwlink?LinkID=65055) associada à atividade selecionada.|  
-|**Exibir manipulador de compensação**|Selecione esta opção de menu ou catalogue modo de exibição para exibir o [CompensationHandlerActivity](http://go.microsoft.com/fwlink?LinkID=65053) associado com selecionado [TransactionScopeActivity](http://go.microsoft.com/fwlink?LinkID=65093).|  
-|**Exibir manipulador de eventos**|Selecione esta opção de menu ou catalogue modo de exibição para exibir o [EventHandlersActivity](http://go.microsoft.com/fwlink?LinkID=65018) associado com selecionado a [EventHandlingScopeActivity](http://go.microsoft.com/fwlink?LinkID=65030).|  
-  
- Para obter informações sobre modos semelhantes, consulte [exibições de fluxo de trabalho sequencial (herdado)](../workflow-designer/sequential-workflow-views-legacy.md).  
-  
-## <a name="see-also"></a>Consulte também  
- [Atividades de fluxo de trabalho herdado](../workflow-designer/legacy-workflow-activities.md)   
- [Exibições de fluxo de trabalho sequencial (herdado)](../workflow-designer/sequential-workflow-views-legacy.md)
+Muitas das atividades fornecidas por [!INCLUDE[wf](../includes/wf-md.md)], que fluxos de trabalho são compostos, têm várias exibições de design disponíveis em [!INCLUDE[wfd1](../includes/wfd1-md.md)]herdado. Quando você arrasta um designer de atividade da **caixa de ferramentas** para a superfície de design e, depois, sempre que seleciona a atividade, você pode alternar entre os diferentes modos de exibição de design usando o menu de **fluxo de trabalho** ou clicando com o botão direito do mouse no selecionado actividade. Além disso, quando você move o ponteiro sobre o nome de uma atividade selecionada, um conjunto lista suspensa de guias que aparece você pode usar para alternar entre modos de exibição diferentes.
+
+ Cada atividade tem pelo menos uma exibição; Essa é a exibição padrão mostrada quando você arrasta um designer de atividade da **caixa de ferramentas** para a superfície de design. Essa exibição padrão de atividade está disponível como a opção de **exibição [tipo de atividade]** nos menus e na guia, por exemplo, **Exibir paralelo**. A maioria das atividades têm modos de exibição adicionais e as atividades diferentes podem ter diferentes modos de exibição. Por exemplo, a atividade [TransactionScopeActivity](http://go.microsoft.com/fwlink?LinkID=65093) tem a exibição de compensação e a atividade [EventHandlingScopeActivity](http://go.microsoft.com/fwlink?LinkID=65030) tem uma exibição de eventos. Muitas das atividades fornecidas com Windows Workflow Foundation têm o **manipulador de exibição cancelar** e exibem exibições de design de **falhas** para exibir o [CancellationHandlerActivity](http://go.microsoft.com/fwlink?LinkID=65050) e um [FaultHandlersActivity](http://go.microsoft.com/fwlink?LinkID=65055) associado a eles.
+
+ A tabela a seguir lista o nome e a descrição de cada uma.
+
+|Opção de menu/guia|Descrição|
+|----------------------|-----------------|
+|**View [tipo de atividade]**|Selecione este menu catalogue ou a opção para exibir a representação gráfica padrão de atividade selecionada.|
+|**Exibir manipulador de cancelamento**|Selecione esta exibição de opção de menu ou guia para exibir o [CancellationHandlerActivity](http://go.microsoft.com/fwlink?LinkID=65050) associado à atividade selecionada.|
+|**Exibir manipulador de falhas**|Selecione esta exibição de opção de menu ou guia para exibir o [FaultHandlersActivity](http://go.microsoft.com/fwlink?LinkID=65055) associado à atividade selecionada.|
+|**Exibir manipulador de compensação**|Selecione esta exibição de opção de menu ou guia para exibir o [CompensationHandlerActivity](http://go.microsoft.com/fwlink?LinkID=65053) associado à [TransactionScopeActivity](http://go.microsoft.com/fwlink?LinkID=65093)selecionada.|
+|**Exibir manipulador de eventos**|Selecione esta exibição de opção de menu ou guia para exibir o [EventHandlersActivity](http://go.microsoft.com/fwlink?LinkID=65018) associado ao [EventHandlingScopeActivity](http://go.microsoft.com/fwlink?LinkID=65030)selecionado.|
+
+ Para obter informações sobre modos de exibição semelhantes, consulte [exibições de fluxo de trabalho Sequencial (Herdado)](../workflow-designer/sequential-workflow-views-legacy.md).
+
+## <a name="see-also"></a>Consulte também
+ [Exibições de fluxo de trabalho sequenciais de atividades de fluxo de](../workflow-designer/sequential-workflow-views-legacy.md) [trabalho herdadas](../workflow-designer/legacy-workflow-activities.md)

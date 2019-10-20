@@ -1,35 +1,35 @@
 ---
-title: Mapas de código estão lentos
+title: Os mapas de código estão lentos
 ms.date: 05/16/2018
 ms.topic: conceptual
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 12ba03ab97da3295a93b54dfc012d10fc012fd30
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c8b3f889661cf0d1c775cd80dad61a92c3f5b60a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62423916"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72654170"
 ---
-# <a name="improve-performance-for-code-maps"></a>Melhorar o desempenho de mapas de código
+# <a name="improve-performance-for-code-maps"></a>Melhorar o desempenho para mapas de código
 
-Quando você gera um mapa pela primeira vez, o Visual Studio indexa todas as dependências que encontra. Esse processo pode levar algum tempo, especialmente para grandes soluções, mas melhora o desempenho posterior. Se o código for alterado, o Visual Studio só reindexará o código atualizado. Para minimizar o tempo necessário para o mapa concluir a renderização, considere as seguintes sugestões:
+Quando você gera um mapa pela primeira vez, o Visual Studio indexa todas as dependências que ele encontra. Esse processo pode levar algum tempo, especialmente para soluções grandes, mas melhora o desempenho posterior. Se o código for alterado, o Visual Studio só reindexará o código atualizado. Para minimizar o tempo necessário para o mapa concluir a renderização, considere as seguintes sugestões:
 
-- Mapear as dependências que lhe interessam.
+- Mapeie somente as dependências que lhe interessam.
 
 - Antes de gerar o mapa para uma solução inteira, reduza o escopo da solução.
 
-- Desativar a compilação automática para a solução selecionando **Skip Build** na barra de ferramentas de mapa de código.
+- Desative a compilação automática para a solução selecionando **ignorar compilação** na barra de ferramentas do mapa de códigos.
 
-- Desativar a adição automática de itens de pai, selecionando **pais incluem** na barra de ferramentas de mapa de código.
+- Desative a adição automática de itens pai selecionando **incluir pais** na barra de ferramentas do mapa de códigos.
 
-   ![Ignorar o Build e pais incluem botões](../modeling/media/codemapsfilterskipbuildicons.png)
+   ![Ignorar os botões criar e incluir pais](../modeling/media/codemapsfilterskipbuildicons.png)
 
-- Edite o arquivo de mapa de código diretamente para remover os nós e links que você não precisa. Alterar o mapeamento não afeta o código subjacente. Consulte [Personalizar mapa de códigos editando os arquivos DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md).
+- Edite o arquivo de mapa de código diretamente para remover nós e links desnecessários. A alteração do mapa não afeta o código subjacente. Consulte [Personalizar mapas de código editando os arquivos DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md).
 
-Pode levar mais tempo para criar mapas ou adicionar itens a um mapa de **Gerenciador de soluções** quando um item de projeto **Copy to Output Directory** estiver definida como **copiar sempre**. Para aumentar o desempenho, altere essa propriedade para **copiar se mais recente** ou `PreserveNewest`. Ver [compilações incrementais](../msbuild/incremental-builds.md).
+Pode levar mais tempo para criar mapas ou adicionar itens a um mapa de **Gerenciador de soluções** quando a propriedade **copiar para o diretório de saída** de um item de projeto é definida como **copiar sempre**. Para aumentar o desempenho, altere essa propriedade para **copiar se for mais recente** ou `PreserveNewest`. Consulte [Builds incrementais](../msbuild/incremental-builds.md).
 
-O mapa concluído mostra dependências apenas para código compilado com êxito. Se ocorrerem erros de compilação para determinados componentes, esses erros são exibidos no mapa. Certifique-se de que um componente é efetivamente compilado e tem dependências nele antes de tomar decisões arquitetônicas com base no mapa.
+O mapa concluído mostra dependências somente para o código criado com êxito. Se ocorrerem erros de compilação para determinados componentes, esses erros aparecerão no mapa. Certifique-se de que um componente realmente cria e tem dependências nele antes de tomar decisões arquitetônicas com base no mapa.

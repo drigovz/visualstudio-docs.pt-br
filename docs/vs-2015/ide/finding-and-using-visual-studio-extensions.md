@@ -12,20 +12,20 @@ helpviewer_keywords:
 - managing extensions visual studio
 ms.assetid: 4ca92d93-31b9-47ef-8109-4a429d9e2ca3
 caps.latest.revision: 47
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: f4878827ae65a8f42e8225c7daab207a27a0614a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: df6219a66b0f6c85e197b209741706abc7ce3d06
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63426384"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72655872"
 ---
 # <a name="finding-and-using-visual-studio-extensions"></a>Encontrando e usando extensões do Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-As extensões do Visual Studio são pacotes de código executados dentro do Visual Studio e fornecem recursos novos ou aprimorados do Visual Studio. Encontre mais informações sobre as extensões do Visual Studio aqui: [SDK do Visual Studio](../extensibility/visual-studio-sdk.md).
+As extensões do Visual Studio são pacotes de código executados dentro do Visual Studio e fornecem recursos novos ou aprimorados do Visual Studio. É possível encontrar mais informações sobre extensões do Visual Studio aqui: [SDK do Visual Studio](../extensibility/visual-studio-sdk.md).
 
  É possível usar a caixa de diálogo **Extensões e Atualizações** para instalar as extensões e amostras do Visual Studio de sites e outros locais e habilitá-las, desabilitá-las, atualizá-las ou desinstalá-las. (**Ferramentas/Extensões e Atualizações** ou digite ou **Extensões** na janela **Início Rápido**). A caixa de diálogo também mostra atualizações para amostras e extensões instaladas. Também é possível baixar extensões de sites ou obtê-las de outros desenvolvedores.
 
@@ -33,17 +33,17 @@ As extensões do Visual Studio são pacotes de código executados dentro do Visu
 > A partir do Visual Studio 2015, as extensões hospedadas na Galeria do Visual Studio serão atualizadas automaticamente.  É possível alterar essa configuração por meio da caixa de diálogo **Extensões e Atualizações**.  Consulte a seção **Atualizações automáticas de extensões** abaixo para obter detalhes.
 
 ## <a name="finding-visual-studio-extensions"></a>Localizando extensões do Visual Studio
- Você pode instalar as extensões do [Visual Studio Marketplace](https://marketplace.visualstudio.com/) ou o [Galeria de exemplos](https://code.msdn.microsoft.com/vstudio) no site da Microsoft. As extensões podem ser controles, exemplos, modelos, ferramentas ou outros componentes que adicionam funcionalidades ao Visual Studio. O Visual Studio dá suporte a extensões no formato do pacote VSIX, o que inclui modelos de projeto, modelos de item, itens da **Caixa de Ferramentas**, componentes MEF (Managed Extension Framework) e VSPackages. Também é possível baixar e instalar extensões baseadas em MSI, mas a caixa de diálogo **Extensões e Atualizações** não pode habilitá-las nem desabilitá-las. A Galeria do Visual Studio contém extensões VSIX e MSI.
+ Você pode instalar extensões do [Visual Studio Marketplace](https://marketplace.visualstudio.com/) ou da [Galeria de exemplo](https://code.msdn.microsoft.com/vstudio) no site da Microsoft. As extensões podem ser controles, exemplos, modelos, ferramentas ou outros componentes que adicionam funcionalidades ao Visual Studio. O Visual Studio dá suporte a extensões no formato do pacote VSIX, o que inclui modelos de projeto, modelos de item, itens da **Caixa de Ferramentas**, componentes MEF (Managed Extension Framework) e VSPackages. Também é possível baixar e instalar extensões baseadas em MSI, mas a caixa de diálogo **Extensões e Atualizações** não pode habilitá-las nem desabilitá-las. A Galeria do Visual Studio contém extensões VSIX e MSI.
 
 ## <a name="installing-or-uninstalling-visual-studio-extensions"></a>Instalando ou desinstalando extensões do Visual Studio
- Em **Extensões e Atualizações**, localize a extensão que você deseja instalar. (Se você souber o nome ou parte do nome da extensão, será possível pesquisar na janela **Pesquisar na Galeria do Visual Studio**.) Clique em **Baixar**, em seguida, em **Instalar**. É necessário reiniciar o Visual Studio para carregar a extensão.
+ Em **Extensões e Atualizações**, localize a extensão que você deseja instalar. (Se você souber o nome ou parte do nome da extensão, poderá pesquisar na janela **Pesquisar Galeria do Visual Studio** .) Clique em **baixar**e em **instalar**. É necessário reiniciar o Visual Studio para carregar a extensão.
 
  Se você tentar instalar uma extensão que tenha dependências, o instalador verificará se elas já foram instaladas. Se elas não tiverem sido instaladas, a caixa de diálogo **Extensões e Atualizações** listará as dependências que devem ser instaladas para que seja possível instalar a extensão.
 
  Se desejar parar de usar uma extensão, você poderá desabilitá-la ou desinstalá-la. A desabilitação de uma extensão a mantém instalada, mas descarregada. É possível desabilitar somente extensões VSIX; as extensões que foram instaladas usando um MSI só podem ser desinstaladas. Localize a extensão e clique em **Desinstalar** ou **Desabilitar**. É necessário reiniciar o Visual Studio para descarregar uma extensão desabilitada.
 
 ## <a name="per-user-and-administrative-extensions"></a>Extensões administrativas e por usuário
- A maioria das extensões são extensões por usuário e são instaladas na pasta **%LocalAppData%\Microsoft\VisualStudio\\<Visual Studio version\>\Extensions\\** folder. Algumas extensões são extensões administrativas e são instaladas na **\<pasta de instalação do Visual Studio>\Common7\IDE\Extensions\\**.
+ A maioria das extensões são extensões por usuário e são instaladas na pasta **%LocalAppData%\Microsoft\VisualStudio\\<Visual Studio version\>\Extensions\\** folder. Algumas extensões são extensões administrativas e são instaladas na **\<pasta de instalação do Visual Studio>\Common7\IDE\Extensions\\** .
 
  Para proteger seu sistema contra extensões que possam conter erros ou código mal-intencionado, é possível restringir que as extensões por usuário sejam carregadas somente quando o Visual Studio estiver em execução com permissões de usuário normal. Isso significa que as extensões por usuário são desabilitadas quando o Visual Studio é executado com permissões de usuário administrativo. Para fazer isso, vá para a página de opções **Extensões e Atualizações** (**Ferramentas/Opções**, **Ambiente**, **Extensões e Atualizações** ou simplesmente digite **Extensão** na janela **Início Rápido**). Desmarque a caixa de seleção **Carregar extensões por usuário ao executar como administrador** e reinicie o Visual Studio.
 

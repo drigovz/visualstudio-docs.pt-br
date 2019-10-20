@@ -2,23 +2,23 @@
 title: Solução de problemas de cobertura de código
 ms.date: 11/04/2016
 ms.topic: troubleshooting
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: 6416045f040e9825bab6eeb33dd4b75478166ee3
-ms.sourcegitcommit: 689ba54ea14257d13031de881f5d4fe937a36f56
+author: jillre
+ms.openlocfilehash: 9a7e90310df3e9e2e73b653fdc651ba266e679ae
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "71342482"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72659874"
 ---
 # <a name="troubleshoot-code-coverage"></a>Solução de problemas de cobertura de código
 
-A ferramenta de análise da cobertura de código no Visual Studio coleta dados para assemblies nativos e gerenciados (arquivos *.dll* ou *.exe*). No entanto, em alguns casos, a janela **Resultados da Cobertura de Código** exibe um erro semelhante a "Resultados vazios gerados: ..." Há várias razões pelas quais você pode obter resultados vazios. Este artigo ajuda você a resolver esses problemas.
+A ferramenta de análise da cobertura de código no Visual Studio coleta dados para assemblies nativos e gerenciados (arquivos *.dll* ou *.exe*). No entanto, em alguns casos, a janela **resultados da cobertura de código** exibe um erro semelhante a "resultados vazios gerados:...." Há várias razões pelas quais você pode obter resultados vazios. Este artigo ajuda você a resolver esses problemas.
 
-## <a name="what-you-should-see"></a>O que você deverá ver
+## <a name="what-you-should-see"></a>O que você deve ver
 
 Se você escolher um comando **Analisar Cobertura de Código** no menu **Teste** e se o build e os testes forem executados com êxito, você deverá ver uma lista de resultados na janela **Cobertura de Código**. Você talvez tenha que expandir os itens para ver os detalhes.
 
@@ -58,7 +58,7 @@ O arquivo *.pdb* precisa ser gerado do mesmo build dos arquivos *.dll* ou *.exe*
 
 Resolução – Garanta que as configurações de build gerem o arquivo *.pdb*. Se os arquivos *.pdb* não forem atualizados quando o projeto for compilado, abra as propriedades do projeto, selecione a página **Build**, escolha **Avançado** e inspecione **Informações de Depuração**.
 
-Para C++ projetos, verifique se os arquivos. pdb gerados têm informações de depuração completas. Abra as propriedades do projeto e verifique se a**depuração** > do **vinculador** > de**geração de informações** de depuração está definida para **gerar informações de depuração otimizadas para compartilhamento e publicação (/debug: Full)** .
+Para C++ projetos, verifique se os arquivos. pdb gerados têm informações de depuração completas. Abra as propriedades do projeto e verifique se o **vinculador**  > **depuração**  > **gerar informações de depuração** está definido para **gerar informações de depuração otimizadas para compartilhamento e publicação (/debug: Full)** .
 
 Se os arquivos *.pdb* e *.dll* ou *.exe* estiverem em locais diferentes, copie o arquivo *.pdb* para o mesmo diretório. Também é possível configurar o mecanismo de cobertura de código para pesquisar arquivos *.pdb* em outro local. Para obter mais informações, confira [Personalizar a análise de cobertura de código](../test/customizing-code-coverage-analysis.md).
 

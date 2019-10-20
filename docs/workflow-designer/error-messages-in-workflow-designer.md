@@ -7,17 +7,17 @@ f1_keywords:
 - System.Activities.Presentation.ErrorActivity.UI
 - System.Activities.Presentation.View.ErrorView.UI
 ms.assetid: 4d8bbc2e-34fc-477f-9140-4adfd70c34a0
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a3f2d4d86f80bc7c2966d5156267352154b1279f
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 1406802f85c755d4dab25e000843a995be252d0a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71254806"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650493"
 ---
 # <a name="error-messages-in-workflow-designer"></a>Mensagens de erro em Designer de Fluxo de Trabalho
 
@@ -35,7 +35,7 @@ Erros em Designer de Fluxo de Trabalho ocorrem nas seguintes situações:
 
 4. Há erros no arquivo XAML que fazem com que o fluxo de trabalho a falha carregue.
 
-As expressões inválidos e restrições insatisfeitas de validação não fazem com que o fluxo de trabalho a falha compile. A criação do fluxo de trabalho é realizada <xref:System.Activities.InvalidWorkflowException> com sucesso, mas um é lançado em tempo de execução. Se há erros no arquivo XAML, a compilação falhará.
+As expressões inválidos e restrições insatisfeitas de validação não fazem com que o fluxo de trabalho a falha compile. A criação do fluxo de trabalho é realizada com sucesso, mas um <xref:System.Activities.InvalidWorkflowException> é lançado em tempo de execução. Se há erros no arquivo XAML, a compilação falhará.
 
 Dentro do Visual Studio, quando um fluxo de trabalho é carregado, seus erros são exibidos no **lista de erros**. Para navegar até a atividade que é a origem do erro, clique duas vezes no erro na **lista de erros**.
 

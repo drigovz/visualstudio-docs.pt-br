@@ -7,15 +7,15 @@ ms.technology: vs-ide-modeling
 ms.topic: conceptual
 ms.assetid: a68886da-7416-4785-8145-3796bb382cba
 caps.latest.revision: 7
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 053e8b09fd2b52683238f1ffe008e5e7d38b3962
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 0e8cedc66d6b52f80239364a3e51b73e93a69aa4
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68872013"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72655333"
 ---
 # <a name="accessing-visual-studio-or-other-hosts-from-a-text-template"></a>Acessando o Visual Studio ou outros hosts a partir de um modelo de texto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ Em um modelo de texto, você pode usar métodos e propriedades expostos pelo hos
 
 ## <a name="obtaining-access-to-the-host"></a>Obtendo acesso ao host
 
-`hostspecific="true"` Defina`template` na diretiva. Isso permite que você `this.Host`use, que tem o tipo [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110)). Esse tipo tem membros que você pode usar, por exemplo, para resolver nomes de arquivo e registrar erros.
+Defina `hostspecific="true"` na diretiva `template`. Isso permite que você use `this.Host`, que tem o tipo [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110)). Esse tipo tem membros que você pode usar, por exemplo, para resolver nomes de arquivo e registrar erros.
 
 ### <a name="resolving-file-names"></a>Resolvendo nomes de arquivo
  Para localizar o caminho completo de um arquivo relativo ao modelo de texto, use-o. Host. ResolvePath ().
@@ -45,7 +45,7 @@ Content of myFile is:
 ```
 
 ### <a name="displaying-error-messages"></a>Exibindo mensagens de erro
- Este exemplo registra mensagens quando você transformar o modelo. Se o host for [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], eles serão adicionados à janela de erro.
+ Este exemplo registra mensagens quando você transforma o modelo. Se o host for [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], eles serão adicionados à janela de erro.
 
 ```csharp
 <#@ template hostspecific="true" language="C#" #>
@@ -63,11 +63,11 @@ Content of myFile is:
 ```
 
 ## <a name="using-the-visual-studio-api"></a>Usando a API do Visual Studio
- Se você estiver executando um modelo de texto [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]no, poderá usar `this.Host` o para acessar os serviços [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] fornecidos pelo e quaisquer pacotes ou extensões que estejam carregados.
+ Se você estiver executando um modelo de texto no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], poderá usar `this.Host` para acessar os serviços fornecidos pelo [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] e quaisquer pacotes ou extensões que estejam carregados.
 
- Definir hostspecific = "true" e converta `this.Host` para <xref:System.IServiceProvider>.
+ Defina hostspecific = "true" e converta `this.Host` para <xref:System.IServiceProvider>.
 
- Este exemplo obtém a [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] API, <xref:EnvDTE.DTE>como um serviço:
+ Este exemplo obtém a API [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], <xref:EnvDTE.DTE>, como um serviço:
 
 ```csharp
 <#@ template hostspecific="true" language="C#" #>
@@ -83,4 +83,4 @@ Number of projects in this solution: <#=  dte.Solution.Projects.Count #>
 ```
 
 ## <a name="using-hostspecific-with-template-inheritance"></a>Usando hostSpecific com herança de modelo
- Especificar `hostspecific="trueFromBase"` se você também usar o `inherits` atributo, e se você herda de um modelo que especifica `hostspecific="true"`. Isso evita um aviso do compilador para o efeito de que a `Host` Propriedade foi declarada duas vezes.
+ Especifique `hostspecific="trueFromBase"` se você também usar o atributo `inherits` e se herdar de um modelo que especifica `hostspecific="true"`. Isso evita um aviso do compilador para o efeito de que a propriedade `Host` foi declarada duas vezes.

@@ -10,17 +10,17 @@ helpviewer_keywords:
 - Options dialog box
 - Editing Experience, selecting
 ms.assetid: 05298fc5-fc4e-4bb2-b942-1f7d2dcdff0f
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 13c79a4cae482990369fc8218bf0b7226ab05942
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: b023ad4b14d6c890c14726f645a2ebf3c99f6f7d
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68919052"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666258"
 ---
 # <a name="options-text-editor-file-extension"></a>Opções, Editor de Texto, Extensão de Arquivo
 
@@ -60,4 +60,4 @@ Fornece a mesma lista que o **Editor**. Selecione o editor ou o designer do IDE 
 
 ## <a name="see-also"></a>Consulte também
 
-- [Como: Gerenciar modos do editor](../../ide/how-to-manage-editor-modes.md)
+- [Como gerenciar modos do editor](../../ide/how-to-manage-editor-modes.md)

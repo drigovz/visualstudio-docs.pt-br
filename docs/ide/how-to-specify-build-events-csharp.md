@@ -1,5 +1,5 @@
 ---
-title: 'Como: Especificar eventos de build (C#)'
+title: Como especificar eventos de build (C#)
 ms.date: 03/21/2019
 ms.technology: vs-ide-compile
 ms.topic: conceptual
@@ -15,14 +15,14 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9484d6977c6896253197215ce185579518448da8
-ms.sourcegitcommit: 0f5f7955076238742f2071d286ad8e896f3a6cad
-ms.translationtype: HT
+ms.openlocfilehash: a28f491ea5af53546f66e066bf8f78575708bc57
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68483702"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72656594"
 ---
-# <a name="how-to-specify-build-events-c"></a>Como: Especificar eventos de build (C#)
+# <a name="how-to-specify-build-events-c"></a>Como especificar eventos de build (C#)
 
 Use eventos de build para especificar comandos que são executados antes do início do build ou após sua conclusão. Eventos de build serão executados somente se o build atingir com êxito esses pontos no processo de build.
 
@@ -72,7 +72,7 @@ O procedimento a seguir mostra como definir a versão mínima do sistema operaci
 
 1. Crie um projeto de **Aplicativo de Console** para o comando. Dê ao projeto o nome **ChangeOSVersionCS**.
 
-2. Em *Program.cs*, adicione a seguinte linha às outras instruções `using` na parte superior do arquivo:
+2. No *Program.cs*, adicione a seguinte linha às outras diretivas de `using` na parte superior do arquivo:
 
    ```csharp
    using System.Xml;
@@ -178,5 +178,5 @@ Em seguida, invoque este comando em um evento de pós-build para modificar o man
 
 - [Página Eventos de Build, Designer de Projeto (C#)](../ide/reference/build-events-page-project-designer-csharp.md)
 - [Caixa de diálogo da linha de comando do evento de pré-build/evento de pós-build](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)
-- [Como: Especificar eventos de build (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md)
+- [Como especificar eventos de build (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md)
 - [Compilação e build](../ide/compiling-and-building-in-visual-studio.md)

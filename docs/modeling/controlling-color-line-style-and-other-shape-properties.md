@@ -2,31 +2,31 @@
 title: Controlando cor, estilo de linha e outras propriedades de formas
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d1783ecf3b30207838d93fdb9cda93e3ed7e232c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6bcc7e3a80650edff411506b9e651885b3852383
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62422913"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72654153"
 ---
 # <a name="controlling-color-line-style-and-other-shape-properties"></a>Controlando cor, estilo de linha e outras propriedades de formas
 
-Algumas propriedades da forma como a cor podem ser 'expostas'. Ou seja, as propriedades podem ser vinculadas a uma propriedade de domínio da forma. Outros têm a ser controlada diretamente.
+Algumas propriedades de forma, como Color, podem ser ' expostas '. Ou seja, as propriedades podem ser vinculadas a uma propriedade de domínio da forma. Outras pessoas precisam ser controladas diretamente.
 
-## <a name="exposing-a-property"></a>Expor uma propriedade
- Algumas propriedades da forma como a cor podem ser vinculadas ao valor de uma propriedade de domínio.
+## <a name="exposing-a-property"></a>Expondo uma propriedade
+ Algumas propriedades de forma, como Color, podem ser vinculadas ao valor de uma propriedade de domínio.
 
- Na definição de DSL, selecione uma forma, conector ou classe de diagrama. No menu de atalho, escolha **adicionar exposto**e, em seguida, escolha a propriedade desejada, como cor de preenchimento.
+ Na definição de DSL, selecione uma forma, um conector ou uma classe de diagrama. No menu do clique com o botão direito do mouse, escolha **Adicionar exposto**e escolha a propriedade desejada, como cor de preenchimento.
 
- A forma agora tem uma propriedade de domínio que você pode definir no código do programa ou como um usuário.
+ A forma agora tem uma propriedade Domain que pode ser definida no código do programa ou como um usuário.
 
-## <a name="dynamically-updating-an-exposed-property"></a>Atualização dinâmica de uma propriedade exposta
- Normalmente você deseja tornar a propriedade exposta dependente de outra propriedade. Por exemplo, convém uma forma para ativar vermelho sempre que uma propriedade de domínio específico é menor que zero. Para tornar essa dependência, crie uma [regra](../modeling/rules-propagate-changes-within-the-model.md). Por exemplo:
+## <a name="dynamically-updating-an-exposed-property"></a>Atualizando dinamicamente uma propriedade exposta
+ Normalmente, você deseja tornar a propriedade exposta dependente de outra propriedade. Por exemplo, talvez você queira que uma forma fique vermelha sempre que uma propriedade de domínio específica for menor que zero. Para fazer essa dependência, crie uma [regra](../modeling/rules-propagate-changes-within-the-model.md). Por exemplo:
 
 ```csharp
 using System;

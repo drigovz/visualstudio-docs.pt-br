@@ -1,5 +1,5 @@
 ---
-title: Suporte para edições do Visual Studio para visualização e o SDK de modelagem | Microsoft Docs
+title: Edições do Visual Studio com suporte para visualização e SDK de modelagem | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -8,20 +8,20 @@ helpviewer_keywords:
 - Domain-Specific Language Tools, supported Visual Studio editions
 ms.assetid: 7c313ba0-031d-45b8-8220-eead61754747
 caps.latest.revision: 29
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: a8104eb9aa2d340545fb4cbfbd2e46286d953375
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 89d65aab64ba82f152e2fe888ab10b88b73a7c42
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65696873"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72672370"
 ---
-# <a name="supported-visual-studio-editions-for-visualization-amp-modeling-sdk"></a>Suporte para edições do Visual Studio para visualização &amp; SDK de modelagem
+# <a name="supported-visual-studio-editions-for-visualization-amp-modeling-sdk"></a>SDK das edições do Visual Studio para visualização &amp; modelagem com suporte
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Seguem listas das edições do Visual Studio que têm suporte com [!INCLUDE[dsl](../includes/dsl-md.md)] nos ambientes de criação e implantação. Para obter mais informações sobre essas edições, consulte o Microsoft [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] [Developer Center](http://go.microsoft.com/fwlink/?LinkId=75628).
+A seguir estão as listas das edições do Visual Studio com suporte com [!INCLUDE[dsl](../includes/dsl-md.md)] nos ambientes de criação e implantação. Para obter mais informações sobre essas edições, consulte o [centro de desenvolvedores](http://go.microsoft.com/fwlink/?LinkId=75628)do Microsoft [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
 
 ## <a name="authoring-edition"></a>Edição de Criação
  Para definir uma DSL, é necessário ter instalados os seguintes componentes:
@@ -39,12 +39,12 @@ Seguem listas das edições do Visual Studio que têm suporte com [!INCLUDE[dsl]
 
 - Visual Studio Professional
 
-- Pacote redistribuível do Visual Studio Shell (modo integrado) pacote redistribuível
+- Pacote redistribuível do pacote redistribuível do shell do Visual Studio (modo integrado)
 
 - Pacote redistribuível Visual Studio Shell (modo isolado) pacote redistribuível
 
 > [!NOTE]
-> Para tornar uma DSL capaz de executar em um produto Shell, você deve definir a **suporte para a edição do VS** campo no manifesto de extensão. Para obter mais informações, confira [Implantando soluções de linguagem específica de domínio](../modeling/deploying-domain-specific-language-solutions.md).
+> Para tornar uma DSL capaz de executar em um produto de Shell, você deve definir o campo **com suporte do vs Edition** no manifesto de extensão. Para obter mais informações, confira [Implantando soluções de linguagem específica de domínio](../modeling/deploying-domain-specific-language-solutions.md).
 
 ## <a name="see-also"></a>Consulte também
  [Glossário das Ferramentas de Linguagem Específica de Domínio](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

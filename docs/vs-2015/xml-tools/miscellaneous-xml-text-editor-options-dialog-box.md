@@ -1,66 +1,58 @@
 ---
-title: Diversos, XML, Editor de texto, opções de caixa de diálogo | Microsoft Docs
+title: Miscelânea, XML, editor de texto, caixa de diálogo opções | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: fd3fff31-cddc-422d-a2f0-a5a1ef492afd
 caps.latest.revision: 9
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: edf638420ac41d6ad6f7ebf5e20ab5d78d1c7b3d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d30564c11951d6ffec420c6a2ea95c41695de3dd
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435367"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72656244"
 ---
 # <a name="miscellaneous-xml-text-editor-options-dialog-box"></a>Caixa de diálogo Diversos, XML, Editor de Texto, Opções
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Esta caixa de diálogo permite que você altere a automático e as configurações de esquema para o editor XML. Você pode acessar o **opções** caixa de diálogo do **ferramentas** menu.  
-  
+Esta caixa de diálogo permite que você altere a automático e as configurações de esquema para o editor XML. Você pode acessar a caixa de diálogo **Opções** no menu **ferramentas** .
+
 > [!NOTE]
-> Essas configurações estão disponíveis quando você seleciona os **Editor de texto** pasta, o **XML** pasta e, em seguida, o **diversos** opção o **opções** caixa de diálogo.  
-  
-## <a name="auto-insert"></a>AutoInserção  
- **Marcas de fechamento**  
- Se a configuração de AutoCompletar é verificada, o editor adiciona automaticamente uma marca de fim quando você digita um colchete angular direito (>) para fechar uma tag de início, se a marca não já está fechada. Este é o comportamento padrão.  
-  
- A conclusão de um elemento vazio não depende da configuração de autocompletar. Você sempre pode autocomplete um elemento vazio digitando uma barra invertida (/).  
-  
- **Aspas de atributo**  
- Ao criar atributos XML, o editor insere o caracteres de `=" "` e posiciona o acento circunflexo (^) dentro de aspas duplas.  
-  
- Selecionado por padrão.  
-  
- **Declarações de namespace**  
- O editor inserir automaticamente declarações namespace onde quer que são necessárias.  
-  
- Selecionado por padrão.  
-  
- **Outra marcação (Comentários, CDATA)**  
- Comentários, CDATA, DOCTYPE, as instruções de processamento, e a outra marcação automática são concluídos.  
-  
- Selecionado por padrão.  
-  
-## <a name="network"></a>Rede  
- **Baixar automaticamente DTDs e esquemas**  
- Os esquemas e as definições de tipo (DTDs) de documentos são baixados automaticamente locais HTTP. Este recurso usa System.Net com a detecção automática do servidor de proxy ativada.  
-  
- Selecionado por padrão.  
-  
-## <a name="outlining"></a>Estrutura de tópicos  
- **Entrar no modo de estrutura de tópicos na abertura dos arquivos**  
- Ativa o recurso de estruturação quando um arquivo é aberto.  
-  
- Selecionado por padrão.  
-  
-## <a name="caching"></a>Cache  
- **Esquemas**  
- Especifica o local do cache de esquema. O botão Procurar (**...** ) abre o **Procurar diretório** caixa de diálogo no local de cache de esquema atual. Você pode selecionar um diretório diferente, ou você pode selecionar uma pasta na caixa de diálogo, clique com botão direito e escolha **abrir** para ver o que está no diretório.  
-  
-## <a name="see-also"></a>Consulte também  
- [Propriedades de documento XML, janela Propriedades](../xml-tools/xml-document-properties-properties-window.md)   
- [Componentes do editor de XML](../xml-tools/xml-editor-components.md)
+> Essas configurações estão disponíveis quando você seleciona a pasta **Editor de texto** , a pasta **XML** e a opção **diversos** da caixa de diálogo **Opções** .
+
+## <a name="auto-insert"></a>AutoInserção
+ **Marcas de fechamento** Se a configuração de conclusão automática estiver marcada, o editor adicionará automaticamente uma marca de fim quando você digitar um colchete angular direito (>) para fechar uma marca de início, se a marca ainda não estiver fechada. Este é o comportamento padrão.
+
+ A conclusão de um elemento vazio não depende da configuração de autocompletar. Você sempre pode autocomplete um elemento vazio digitando uma barra invertida (/).
+
+ **Aspas de atributo** Ao criar atributos XML, o editor insere o `=" "` caracteres e posiciona o circunflexo (^) dentro das aspas duplas.
+
+ Selecionado por padrão.
+
+ **Declarações de namespace** O editor insere automaticamente declarações de namespace onde quer que sejam necessárias.
+
+ Selecionado por padrão.
+
+ **Outra marcação (comentários, CDATA)** Comentários, CDATA, DOCTYPE, instruções de processamento e outras marcações são concluídas automaticamente.
+
+ Selecionado por padrão.
+
+## <a name="network"></a>Rede
+ **Baixar automaticamente DTDs e esquemas** Esquemas e definições de tipo de documento (DTDs) são baixados automaticamente de locais HTTP. Este recurso usa System.Net com a detecção automática do servidor de proxy ativada.
+
+ Selecionado por padrão.
+
+## <a name="outlining"></a>Estrutura de tópicos
+ **Entrar no modo de estrutura de tópicos quando os arquivos forem abertos** Ativa o recurso de estrutura de tópicos quando um arquivo é aberto.
+
+ Selecionado por padrão.
+
+## <a name="caching"></a>Cache
+ **Esquemas** Especifica o local do cache de esquema. O botão procurar ( **...** ) abre a caixa de diálogo **pesquisa de diretório** no local do cache de esquema atual. Você pode selecionar um diretório diferente, ou pode selecionar uma pasta na caixa de diálogo, clicar com o botão direito do mouse e escolher **abrir** para ver o que está no diretório.
+
+## <a name="see-also"></a>Consulte também
+ [Propriedades de documento XML, janela Propriedades](../xml-tools/xml-document-properties-properties-window.md) [componentes do editor XML](../xml-tools/xml-editor-components.md)

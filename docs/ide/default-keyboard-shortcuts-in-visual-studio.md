@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Help [Visual Studio], shortcut keys
 - keyboard shortcuts [Visual Studio], keyboard binding schemes
 - keyboard shortcuts
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 106a2be4797bc3c442006f74bce98e4f1e8c9a5c
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: cda0e5895f7846a5c2aff6abef816548dd0a74a0
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71238209"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72652493"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Atalhos de teclado padrão no Visual Studio
 
@@ -30,7 +30,7 @@ Para obter uma lista dos atalhos de teclado comuns e outras informações sobre 
 - [Dicas de teclado](../ide/productivity-shortcuts.md)
 - [Dicas de produtividade](../ide/productivity-features.md).
 
-Para saber mais sobre acessibilidade no Visual Studio, confira [Dicas e truques de acessibilidade](../ide/reference/accessibility-tips-and-tricks.md) e [Como Usar exclusivamente o teclado](../ide/reference/how-to-use-the-keyboard-exclusively.md).
+Para obter mais informações sobre acessibilidade no Visual Studio, consulte [dicas e truques de acessibilidade](../ide/reference/accessibility-tips-and-tricks.md) e [como: usar o teclado exclusivamente](../ide/reference/how-to-use-the-keyboard-exclusively.md).
 
 |||||
 |-|-|-|-|
@@ -38,7 +38,7 @@ Para saber mais sobre acessibilidade no Visual Studio, confira [Dicas e truques 
 |[Arquitetura](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_architecture)|[Menus de Contexto do Editor](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_editorContext)|[Menus de Contexto de Projeto e Solução](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_projectContext)|[Gerenciador de Testes](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_testexplorerGLOBAL)|
 |[Build](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_build)|[Arquivo](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_file)|[Refatoração](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_refactor)|[Ferramentas](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_tools)|
 |[Menus de Contexto do Modo de Exibição de Classe](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_classview)|[Ajuda](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_help)|[Gerenciador de Soluções](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_solutionexplorerGLOBAL)|[Exibir](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_view)|
-|[Depurar](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_debug)|[Teste de Carga](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_loadtest)|[Equipe](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_team)|[Janela](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_window)|
+|[Depuração](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_debug)|[Teste de Carga](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_loadtest)|[Equipe](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_team)|[Janela](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_window)|
 |[Menus de Contexto do Depurador](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_debugger)|[Outros Menus de Contexto](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_otherContext)|[Menus de Contexto do Team Foundation](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_TFcontext)|[Azure](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_windowsazure)|
 |[Hub de Diagnóstico](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_diagnostics)||||
 
@@ -130,8 +130,8 @@ Esses atalhos de teclado são *globais*, o que significa que você pode usá-los
 |Debug.StepIntoSpecific|**Shift+Alt+F11**|
 |Debug.StepOut|**Shift+F11**|
 |Debug.StepOutCurrentProcess|**Ctrl+Shift+Alt+F11**|
-|Debug.StepOver|**F10** (durante a depuração: executa uma etapa na ação)|
-|Debug.StepOver|**F10** (quando não estiver depurando: inicia a depuração e para na primeira linha do código do usuário)|
+|Debug.StepOver|**F10** (ao depurar: executa uma etapa sobre a ação)|
+|Debug.StepOver|**F10** (quando não estiver Depurando: inicia a depuração e pára na primeira linha do código do usuário)|
 |Debug.StepOverCurrentProcess|**Ctrl+Alt+F10**|
 |Debug.StopDebugging|**Shift+F5**|
 |Debug.StopPerformanceAnalysis|**Shift+Alt+F2**|

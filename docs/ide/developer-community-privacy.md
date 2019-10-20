@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - developer community privacy
 - privacy, developer community
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a40cbc30850edc96b569bd8d716b14b5d2035089
-ms.sourcegitcommit: 528178a304e66c0cb7ab98b493fe3c409f87493a
+ms.openlocfilehash: d1856d6421dc61ada2f3040e4fdeed880a6ab201
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71273404"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72652482"
 ---
 # <a name="developer-community-data-privacy"></a>Privacidade de dados da Comunidade de Desenvolvedores
 
@@ -71,7 +71,7 @@ Quando a ação **Relatar um problema** é iniciada com o Visual Studio, nós co
 - Windows Forms logs, se existirem
 
 - Uma captura de tela, caso você escolha incluí-la
-  
+
 - Dados de gravação, caso você escolha incluir gravações, como:
 
   - Etapas para reproduzir o problema
@@ -81,9 +81,9 @@ Quando a ação **Relatar um problema** é iniciada com o Visual Studio, nós co
   - Arquivo de despejo
 
 > [!NOTE]
-> Arquivos de log, capturas de tela e dados de gravação são enviados à Microsoft somente quando você fornece permissão enviando o relatório de problema com o qual eles são incluídos. Você pode ver quais arquivos estão incluídos na etapa ' Resumo ' da janela ' relatar um problema ' (consulte a captura de tela incluída nesta nota). Os logs coletados e os arquivos são armazenados na pasta% Temp% e são limpos regularmente e após cada carregamento. Se você não quiser incluir um log em seu relatório de problema, exclua o arquivo da pasta% Temp% antes de enviar o relatório.  
-  > ![Relatar um problema-Resumo dos logs coletados](media/report-a-problem-logs-collected.png)
- 
+> Arquivos de log, capturas de tela e dados de gravação são enviados à Microsoft somente quando você fornece permissão enviando o relatório de problema com o qual eles são incluídos. Você pode ver quais arquivos estão incluídos na etapa ' Resumo ' da janela ' relatar um problema ' (consulte a captura de tela incluída nesta nota). Os logs coletados e os arquivos são armazenados na pasta% Temp% e são limpos regularmente e após cada carregamento. Se você não quiser incluir um log em seu relatório de problema, exclua o arquivo da pasta% Temp% antes de enviar o relatório.
+  > ![Report um problema-Resumo dos logs coletados ](media/report-a-problem-logs-collected.png)
+
 
 ## <a name="see-also"></a>Consulte também
 

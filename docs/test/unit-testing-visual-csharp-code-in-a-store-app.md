@@ -2,17 +2,17 @@
 title: Testes de unidade de código do Visual C#
 ms.date: 09/27/2019
 ms.topic: conceptual
-ms.author: gewarren
-author: gewarren
+ms.author: jillfra
+author: jillre
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 0a724ab273401994faeb88ae197966ef538e842a
-ms.sourcegitcommit: 13decf878b33fc0c5d665a88067170c2861b261b
+ms.openlocfilehash: 309cf408167cc463db8cde9e39d5c0fe4dbe26d6
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "71681592"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72659840"
 ---
 # <a name="unit-test-c-code"></a>Executar o teste de unidade de um código C#
 
@@ -30,7 +30,7 @@ Este artigo demonstra o *desenvolvimento controlado por testes*. Nessa abordagem
 
 3. Nomeie as **matemáticas**do projeto.
 
-4. Em **Gerenciador de soluções**, clique com o botão direito do mouse na solução e escolha **Adicionar** > **novo projeto**.
+4. Em **Gerenciador de soluções**, clique com o botão direito do mouse na solução e escolha **Adicionar**  > **novo projeto**.
 
 5. Pesquise o modelo de projeto **Aplicativo de Teste de Unidade (Universal do Windows)** e selecione-o.
 
@@ -66,7 +66,7 @@ Este artigo demonstra o *desenvolvimento controlado por testes*. Nessa abordagem
 
 ## <a name="add-the-rooter-class-to-the-maths-project"></a>Adicionar a classe Rooter ao projeto Matemática
 
-1. Em **Gerenciador de soluções**, clique com o botão direito do mouse no projeto de **matemáticas** e escolha **Adicionar** **classe** > .
+1. Em **Gerenciador de soluções**, clique com o botão direito do mouse no projeto de **matemáticas** e escolha **Adicionar**  > **classe**.
 
 2. Dê ao arquivo da classe o nome *Rooter.cs*.
 
@@ -86,7 +86,7 @@ Este artigo demonstra o *desenvolvimento controlado por testes*. Nessa abordagem
 
    A classe **rootr** declara um construtor e o método estimador **SquareRoot** . O método **SquareRoot** é apenas uma implementação mínima, apenas o suficiente para testar a estrutura básica da configuração de teste.
 
-4. Adicione a palavra-chave `public` à declaração de classe de **raiz** , para que o código de teste possa acessá-la.
+4. Adicione a palavra-chave `public` à declaração de classe **raiz** , para que o código de teste possa acessá-la.
 
    ```csharp
    public class Rooter
@@ -96,7 +96,7 @@ Este artigo demonstra o *desenvolvimento controlado por testes*. Nessa abordagem
 
 1. Adicione uma referência do projeto RooterTests ao aplicativo Maths.
 
-    1. Em **Gerenciador de soluções**, clique com o botão direito do mouse no projeto **RooterTests** e escolha **Adicionar** **referência**de  > .
+    1. Em **Gerenciador de soluções**, clique com o botão direito do mouse no projeto **RooterTests** e escolha Adicionar**referência**de  > .
 
     2. Na caixa de diálogo **Adicionar Referência - RooterTests**, expanda **Solução** e escolha **Projetos**. Selecione o projeto de **matemáticas** .
 
@@ -238,7 +238,7 @@ Nesta seção, você refatoria o aplicativo e o código de teste e executa novam
 
 ### <a name="eliminate-duplicated-code"></a>Eliminar código duplicado
 
-O método **RangeTest** codifica o denominador da variável de *tolerância* que é passada para o método <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert>. Se você planeja adicionar testes adicionais que usam o mesmo cálculo de tolerância, o uso de um valor embutido em código em vários locais torna o código mais difícil de manter.
+O método **RangeTest** codifica o denominador da variável de *tolerância* que é passado para o método <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert>. Se você planeja adicionar testes adicionais que usam o mesmo cálculo de tolerância, o uso de um valor embutido em código em vários locais torna o código mais difícil de manter.
 
 1. Adicione um método auxiliar privado à classe **UnitTest1** para calcular o valor de tolerância e, em seguida, chame esse método de **RangeTest**.
 
@@ -270,4 +270,4 @@ O método **RangeTest** codifica o denominador da variável de *tolerância* que
 
 ## <a name="see-also"></a>Consulte também
 
-- [Passo a passo: Desenvolvimento controlado por testes usando o Test Explorer @ no__t-0
+- [Walkthrough: desenvolvimento orientado por testes usando o Gerenciador de testes](quick-start-test-driven-development-with-test-explorer.md)

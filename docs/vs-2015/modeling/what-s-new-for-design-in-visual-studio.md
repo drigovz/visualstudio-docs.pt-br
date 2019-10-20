@@ -1,5 +1,5 @@
 ---
-title: O que&#39;s novos para o design
+title: Novidades&#39;para o design
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -10,33 +10,33 @@ helpviewer_keywords:
 - modeling software [Visual Studio], What's New
 ms.assetid: 36ab5c17-6dc0-4075-a28e-a0fa49b11260
 caps.latest.revision: 34
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 148da7602d8198a4c85e2a7fbee2107b4e9662d1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6c68db12f8ecea523327250fec1f600639a2f267
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68187116"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72659239"
 ---
-# <a name="whats-new-for-design-in-visual-studio-in-visual-studio-2015"></a>O que há de novo no design no Visual Studio no Visual Studio 2015
+# <a name="whats-new-for-design-in-visual-studio-in-visual-studio-2015"></a>O que há de novo para o design no Visual Studio no Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-Esta versão do Visual Studio inclui os seguintes aprimoramentos para ajudá-lo a entender melhor e criar o código.
+Esta versão do Visual Studio inclui os seguintes aprimoramentos para ajudá-lo a entender melhor e criar código.
 
  **Mapas de código e gráficos de dependência**
 
- No Visual Studio Enterprise, quando você quiser entender dependências específicas em seu código, exiba-os Criando mapas de código. Assim, você pode navegar entre essas relações usando o mapa que aparece ao lado do código. Os mapas de código também podem ajudar a saber em que parte do código você está enquanto trabalha ou depura código, para que seja necessário ler menos código enquanto examina o design do código.
+ Em Visual Studio Enterprise, quando você quiser entender dependências específicas em seu código, visualize-as criando mapas de código. Assim, você pode navegar entre essas relações usando o mapa que aparece ao lado do código. Os mapas de código também podem ajudar a saber em que parte do código você está enquanto trabalha ou depura código, para que seja necessário ler menos código enquanto examina o design do código.
 
- Na versão final (RTM), fizemos os menus de atalho para elementos de código e links muito mais fácil de usar, agrupando comandos em seções relacionadas ao selecionar, edição, gerenciamento de grupos e alterando o layout do conteúdo do grupo. Observe também que os projetos de teste são exibidos em um estilo diferente de outros projetos e que atualizamos os ícones de elementos no mapa para versões mais adequadas.
+ Na versão final (RTM), fizemos os menus de atalho para elementos de código e links muito mais fáceis de usar agrupando comandos em seções relacionadas à seleção, edição, gerenciamento de grupos e alteração do layout do conteúdo do grupo. Observe também que os projetos de teste são exibidos em um estilo diferente de outros projetos e que atualizamos os ícones de elementos no mapa para versões mais adequadas.
 
- ![Mostrar itens selecionados em um novo mapa de códigos](../ide/media/codemapsshowonnewmap.png "CodeMapsShowOnNewMap")
+ ![Mostrar itens selecionados em um novo mapa de código](../ide/media/codemapsshowonnewmap.png "CodeMapsShowOnNewMap")
 
  Outros aprimoramentos incluem:
 
 - **Diagramas de cima para baixo melhorados**. Para soluções médias a grandes do Visual Studio, agora você pode usar um menu de arquitetura simplificado para obter mapas de códigos mais eficientes para sua solução. Os assemblies da solução são agrupados pelas pastas da solução para que você possa vê-los no contexto e usufruir do esforço que empregou para estruturar a solução. Você verá imediatamente referências de projeto e assembly e, em seguida, aparecerão os tipos de link. Além disso, os assemblies que estiverem externos à solução serão agrupados de uma maneira mais compacta.
 
-- **Os projetos de teste têm estilo diferente e podem ser filtrados**. Você pode agora mais fácil e rapidamente identificar os projetos de teste no mapa porque eles têm estilos diferentes. Eles também podem ser filtrados para que você possa se concentrar no código de trabalho do aplicativo.
+- **Os projetos de teste têm estilo diferente e podem ser filtrados**. Agora você pode identificar projetos de teste com mais facilidade e rapidez no MAP, pois eles têm um estilo diferente. Eles também podem ser filtrados para que você possa se concentrar no código de trabalho do aplicativo.
 
 - **Links de dependência externa simplificados**. Os links de dependência não representam mais a herança de System.Object, System.ValueType, System.Enum e System.Delegate, o que facilita a visualização das dependências externas no mapa de códigos.
 
@@ -46,7 +46,7 @@ Esta versão do Visual Studio inclui os seguintes aprimoramentos para ajudá-lo 
 
 - **Obtenha mapas de código reativos mais rapidamente**. As operações de arrastar e soltar produzem um resultado imediato, e os links entre os nós são criados com muito mais rapidez, sem afetar as operações posteriores iniciadas pelo usuário, como expandir um nó ou solicitar mais nós. Quando você cria mapas de código sem compilar a solução, todos os casos de canto, como quando os assemblies não são compilados, são agora compilados.
 
-- **Ignorar a recompilação de sua solução.** Fornece um melhor desempenho durante a criação e edição de diagramas.
+- **Ignorar a recriação da sua solução.** Fornece melhor desempenho ao criar e editar diagramas.
 
 - **Filtrar nós e grupos de elemento de código**. Você pode organizar rapidamente seus mapas ao exibir ou ocultar elementos de código com base na categoria e ao agrupar elementos de código por pastas de solução, assemblies, namespaces, pastas de projeto e tipos.
 
@@ -54,28 +54,28 @@ Esta versão do Visual Studio inclui os seguintes aprimoramentos para ajudá-lo 
 
 - **Criar diagramas do Modo de Exibição de Classe e do Pesquisador de Objetos**. Arraste e solte arquivos e assemblies em um mapa novo ou existente nas janelas Modo de Exibição de Classe e Pesquisador de Objetos.
 
-  Ver [mapear as dependências nas soluções](../modeling/map-dependencies-across-your-solutions.md).
+  Consulte [mapear dependências em suas soluções](../modeling/map-dependencies-across-your-solutions.md).
 
   **Outras alterações de design e modelagem nesta versão:**
 
-- **Diagramas de camada**. Atualize esses diagramas usando o modo de exibição de classe e Pesquisador de objetos. Para atender aos requisitos de design de software, use diagramas de camada para descrever as dependências desejadas para seu software. Mantenha o código consistente com esse design, localizando o código que não atende a essas restrições e validando códigos futuros com essa linha de base.
+- **Diagramas de camada**. Atualize esses diagramas usando Modo de Exibição de Classe e pesquisador de objetos. Para atender aos requisitos de design de software, use diagramas de camada para descrever as dependências desejadas para seu software. Mantenha o código consistente com esse design encontrando um código que não atenda a essas restrições e validando código futuro com essa linha de base.
 
 - **Diagramas de UML**. Não é mais possível criar diagramas de classe UML e diagramas de sequência por meio do código. Mas ainda é possível criar esses diagramas usando novos elementos UML.
 
 - **Architecture Explorer**. Não é mais possível usar o Architecture Explorer para criar diagramas. Mas ainda é possível usar o Gerenciador de Soluções.
 
-## <a name="VersionSupport"></a> Suporte de edição para a arquitetura e ferramentas de modelagem
+## <a name="VersionSupport"></a>Suporte de edição para ferramentas de arquitetura e modelagem
 
-Visual Studio 2015 está disponível em várias edições. Nem todos eles oferecem suporte para a arquitetura e ferramentas de modelagem. A tabela a seguir mostra a disponibilidade de cada ferramenta.
+O Visual Studio 2015 está disponível em várias edições. Nem todos eles oferecem suporte para as ferramentas de arquitetura e modelagem. A tabela a seguir mostra a disponibilidade de cada ferramenta.
 
 |**Recurso**|**Enterprise**|**Professional**|**Comunidade**|**Express**|
 |-----------------|--------------------|----------------------|-------------------|-----------------|
-|**Mapas de código**|Sim|Só dá suporte à leitura e filtragem de mapas de código, adicionar novos nós genéricos e criando um novo gráfico direcionado a partir de uma seleção.|-|-|
+|**Mapas de código**|Sim|Dá suporte apenas à leitura e filtragem de mapas de código, à adição de novos nós genéricos e à criação de um novo grafo direcionado a partir de uma seleção.|-|-|
 |**Diagramas de classe UML**|Sim|-|-|-|
 |**Diagramas de sequência UML**|Sim|-|-|-|
 |**Diagramas de caso de uso UML**|Sim|-|-|-|
 |**Diagramas de atividade UML**|Sim|-|-|-|
-|**Diagramas de componente UML**|Sim|-|-|-|
+|**Diagramas de componentes UML**|Sim|-|-|-|
 |**Diagramas de camada**|Sim|-|-|-|
-|**Gráficos direcionados** (diagramas DGML)|Sim|Sim|-|-|
+|**Grafos direcionados** (diagramas dgml)|Sim|Sim|-|-|
 |**Clone de código**|Sim|-|-|-|

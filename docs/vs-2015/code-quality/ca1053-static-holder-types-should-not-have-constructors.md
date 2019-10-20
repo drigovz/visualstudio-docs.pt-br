@@ -1,5 +1,5 @@
 ---
-title: 'CA1053: Tipos de espaços reservados estáticos não devem ter construtores | Microsoft Docs'
+title: 'CA1053: tipos de detentor estáticos não devem ter construtores | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,42 +12,42 @@ helpviewer_keywords:
 - StaticHolderTypesShouldNotHaveConstructors
 ms.assetid: 10302b9a-fa5e-4935-a06a-513d9600f613
 caps.latest.revision: 17
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 83000143674e7cc3bc412c0ca8a579660160514c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 7de098d264dbdd6d7d9daea385de2e03d4e1ba35
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444559"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653816"
 ---
-# <a name="ca1053-static-holder-types-should-not-have-constructors"></a>CA1053: Tipos de suporte estático não devem ter construtores
+# <a name="ca1053-static-holder-types-should-not-have-constructors"></a>CA1053: os tipos de suporte estático não devem ter construtores
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |NomeDoTipo|StaticHolderTypesShouldNotHaveConstructors|
 |CheckId|CA1053|
-|Categoria|Microsoft.Design|
+|Categoria|Microsoft. Design|
 |Alteração Significativa|Quebra|
 
 ## <a name="cause"></a>Causa
  Um tipo público ou público aninhado declara apenas membros estáticos e tem um construtor padrão público ou protegido.
 
 ## <a name="rule-description"></a>Descrição da Regra
- O construtor é desnecessário porque chamar membros estáticos não exige uma instância do tipo. Além disso, porque o tipo não tem membros não estáticos, criando uma instância não fornece acesso a qualquer um dos membros do tipo.
+ O construtor é desnecessário porque chamar membros estáticos não exige uma instância do tipo. Além disso, como o tipo não tem membros não estáticos, a criação de uma instância não fornece acesso a nenhum dos membros do tipo.
 
 ## <a name="how-to-fix-violations"></a>Como Corrigir Violações
- Para corrigir uma violação dessa regra, remova o construtor padrão ou torná-la particular.
+ Para corrigir uma violação dessa regra, remova o construtor padrão ou torne-o privado.
 
 > [!NOTE]
-> Alguns compiladores criar automaticamente um construtor padrão público se o tipo de não definir nenhum construtor. Se esse for o caso com seu tipo, adicione um construtor padrão particular para eliminar a violação.
+> Alguns compiladores criam automaticamente um construtor padrão público se o tipo não define nenhum construtor. Se esse for o caso com o tipo, adicione um construtor padrão privado para eliminar a violação.
 
 ## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos
- Não suprima um aviso nessa regra. A presença do construtor sugere que o tipo não é um tipo estático.
+ Não suprima um aviso nessa regra. A presença do Construtor sugere que o tipo não é um tipo estático.
 
 ## <a name="example"></a>Exemplo
- O exemplo a seguir mostra um tipo que viola essa regra. Observe que não há nenhum construtor padrão no código-fonte. Quando esse código é compilado em um assembly, o compilador c# irá inserir um construtor padrão, que irá violar essa regra. Para corrigir isso, declare um construtor particular.
+ O exemplo a seguir mostra um tipo que viola essa regra. Observe que não há nenhum construtor padrão no código-fonte. Quando esse código é compilado em um assembly, o C# compilador insere um construtor padrão, que violará essa regra. Para corrigir isso, declare um Construtor privado.
 
  [!code-csharp[FxCop.Design.StaticTypes#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.StaticTypes/cs/FxCop.Design.StaticTypes.cs#1)]

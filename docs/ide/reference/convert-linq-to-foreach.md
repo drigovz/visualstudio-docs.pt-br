@@ -3,19 +3,19 @@ title: Refatorar código para converter uma consulta LINQ em uma instrução for
 description: Converta qualquer consulta LINQ escrita em sintaxe de consulta em uma instrução foreach.
 ms.date: 05/15/2018
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 446d0f3a4988552e8e1fbbac32ca150491975d94
-ms.sourcegitcommit: 0f5f7955076238742f2071d286ad8e896f3a6cad
-ms.translationtype: HT
+ms.openlocfilehash: a618285e1981171eb8f5f2f435fb23d412296b5b
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68483682"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72654542"
 ---
 # <a name="refactoring-to-convert-linq-to-a-foreach-statement"></a>Refatorar para converter LINQ em uma instrução foreach
 

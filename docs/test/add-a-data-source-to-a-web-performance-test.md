@@ -6,15 +6,15 @@ helpviewer_keywords:
 - Web performance tests, walkthroughs
 - Web performance tests, data binding (database)
 ms.assetid: 2ada376d-f168-455d-9643-6acb535360c1
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: e6fad5424e74c8a65ea8ce889412b834cda6a790
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
-ms.translationtype: HT
+ms.openlocfilehash: 8c17a1ce7b2bf775933be6e9bea3dd299d9fe717
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70180150"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72665428"
 ---
 # <a name="add-a-data-source-to-a-web-performance-test"></a>Adicionar uma fonte de dados a um teste de desempenho para Web
 
@@ -172,7 +172,7 @@ Sua solução também deve incluir um teste de desempenho Web que navegará pela
 
 - Oracle 7.3, 8i, 9i ou 10g.
 
-### <a name="q-how-do-i-use-a-comma-separated-value-csv-text-file-as-a-data-source"></a>P: Como fazer para usar um arquivo de texto CSV (valores separados por vírgula) como uma fonte de dados?
+### <a name="q-how-do-i-use-a-comma-separated-value-csv-text-file-as-a-data-source"></a>P: Como uso um arquivo de valores separados por vírgula (CSV) de texto como uma fonte de dados?
 
 **R:** Veja como:
 
@@ -196,9 +196,9 @@ Sua solução também deve incluir um teste de desempenho Web que navegará pela
 
      ![Inserir um nome e escolher um arquivo CSV](../test/media/web_test_databinding_adddatasourcedialog.png)
 
-### <a name="q-what-if-my-existing-csv-file-does-not-contain-column-headers"></a>P: E se meu arquivo CSV não contiver cabeçalhos de coluna?
+### <a name="q-what-if-my-existing-csv-file-does-not-contain-column-headers"></a>P: E se meu arquivo CSV existente não contiver cabeçalhos de coluna?
 
-**R:** Caso não consiga adicionar cabeçalhos de coluna, use um arquivo de descrição do esquema para tratar o arquivo CSV como um banco de dados.
+**R:** Se não conseguir adicionar cabeçalhos de coluna, você poderá usar um arquivo de descrição do esquema para manipular o arquivo CSV como um banco de dados.
 
 1. Adicione um novo arquivo de texto chamado *schema.ini*.
 
@@ -247,7 +247,7 @@ Sua solução também deve incluir um teste de desempenho Web que navegará pela
 
      ![Fonte de dados adicionada ao teste](../test/media/web_test_databinding_adddatasourcecolortext7.png)
 
-### <a name="q-how-do-i-use-an-xml-file-as-a-data-source"></a>P: Como fazer para usar um arquivo XML como uma fonte de dados?
+### <a name="q-how-do-i-use-an-xml-file-as-a-data-source"></a>P: Como uso um arquivo XML como uma fonte de dados?
 
 **R:** Sim.
 
@@ -279,9 +279,9 @@ Sua solução também deve incluir um teste de desempenho Web que navegará pela
 
      ![Inserir um nome e escolher um arquivo XML](../test/media/web_test_databinding_adddatasourcedialogxml.png)
 
-### <a name="q-can-i-add-data-binding-to-a-web-service-request-that-uses-soap"></a>P: Posso adicionar a associação de dados a uma solicitação de serviço Web que usa o SOAP?
+### <a name="q-can-i-add-data-binding-to-a-web-service-request-that-uses-soap"></a>P: Posso adicionar associação de dados a uma solicitação de serviço Web que usa SOAP?
 
-**R:** Sim, é necessário alterar o XML SOAP manualmente.
+**R:** Sim, você deve alterar o XML SOAP manualmente.
 
 1. Escolha a solicitação de serviço da Web na árvore de solicitação e, na janela Propriedades, clique nas reticências (…) na propriedade Corpo da Cadeia de Caracteres.
 

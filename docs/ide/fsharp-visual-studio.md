@@ -5,17 +5,17 @@ ms.date: 07/11/2018
 ms.topic: reference
 helpviewer_keywords:
 - F# features [Visual Studio]
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: fef50748942aaa800cf1181e4c8f8b8a030f99ee
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: 176504ceb7c80a36028e7d5f1806aa598cdf708e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71211308"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72645362"
 ---
 # <a name="develop-with-visual-f-in-visual-studio"></a>Desenvolver com o Visual F# no Visual Studio
 
@@ -41,7 +41,7 @@ Para obter mais informações sobre os modelos de item para acesso a dados, conf
 
 A seguinte tabela resume os recursos nas propriedades do projeto para o F#:
 
-|Configuração do projeto|Compatível com o F#?|Observações|
+|Configuração do projeto|Compatível com o F#?|Anotações|
 |---------------|----------------|-----|
 |Arquivos de recurso|Sim||
 |Configurações de build, depuração e referência|Sim||
@@ -64,9 +64,9 @@ O **Designer de Projeto** consiste no agrupamento de várias páginas de proprie
 |Build|[Página de build, Designer de Projeto](reference/build-page-project-designer-csharp.md)|Permite que você controle como o código é compilado.|
 |Compilar Eventos|[Página Eventos de Build, Designer de Projeto](reference/build-events-page-project-designer-csharp.md)|Permite que você especifique os comandos a serem executados antes ou depois de uma compilação.|
 |Depurar|[Página de Depuração, Designer de Projeto](reference/debug-page-project-designer.md)|Permite que você controle como o aplicativo é executado durante a depuração. Isso inclui os comandos a serem usados e o diretório inicial do aplicativo, bem como os modos de depuração especiais que você deseja habilitar, como o código nativo e o SQL.|
-|Pacote (somente SDK do .NET)|N/D|Permite que você defina metadados do Pacote NuGet durante a publicação como um pacote NuGet.|
+|Pacote (somente SDK do .NET)|N/A|Permite que você defina metadados do Pacote NuGet durante a publicação como um pacote NuGet.|
 |Caminhos de referência|[Gerenciar referências em um projeto](managing-references-in-a-project.md)|Permite que você especifique o local em que pesquisar assemblies dos quais o código depende.|
-|Recursos (somente SDK do .NET)|N/D|Permite que você gere e gerencie um arquivo de recurso padrão.|
+|Recursos (somente SDK do .NET)|N/A|Permite que você gere e gerencie um arquivo de recurso padrão.|
 
 ### <a name="f-specific-settings"></a>Configurações específicas do F#
 

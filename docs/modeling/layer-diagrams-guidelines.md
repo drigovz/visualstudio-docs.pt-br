@@ -1,5 +1,5 @@
 ---
-title: 'Diagramas de Dependência: Diretrizes'
+title: 'Diagramas de dependência: diretrizes'
 ms.date: 09/28/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,21 +7,21 @@ helpviewer_keywords:
 - dependency diagrams
 - diagrams - modeling, layer
 - constraints, architectural
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6241a92d8f40a75ba98f09b7e1e0f113e45d4be8
-ms.sourcegitcommit: 0f44ec8ba0263056ad04d2d0dc904ad4206ce8fc
+ms.openlocfilehash: 39da24dd0d8b7372c63609124ee0b9427fccb03d
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70766507"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661500"
 ---
 # <a name="dependency-diagrams-guidelines"></a>Diagramas de dependência: diretrizes
 
-Descreva a arquitetura do aplicativo em um alto nível criando *diagramas de dependência* no Visual Studio. Certifique-se de que seu código permaneça consistente com esse design validando seu código com um diagrama de dependência. Você também pode incluir a validação de camada em seu processo de compilação. Consulte [vídeo do Channel 9: Projete e valide sua arquitetura usando diagramas](http://go.microsoft.com/fwlink/?LinkID=252073)de dependência.
+Descreva a arquitetura do aplicativo em um alto nível criando *diagramas de dependência* no Visual Studio. Certifique-se de que seu código permaneça consistente com esse design validando seu código com um diagrama de dependência. Você também pode incluir a validação de camada em seu processo de compilação. Veja [vídeo do Channel 9: projete e valide sua arquitetura usando diagramas de dependência](http://go.microsoft.com/fwlink/?LinkID=252073).
 
 Para ver quais edições do Visual Studio oferecem suporte a esse recurso, consulte [suporte de edição para ferramentas de arquitetura e modelagem](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
@@ -30,7 +30,7 @@ Para ver quais edições do Visual Studio oferecem suporte a esse recurso, consu
 
 ## <a name="what-is-a-dependency-diagram"></a>O que é um diagrama de dependência?
 
-Como um diagrama de arquitetura tradicional, um diagrama de dependência identifica os principais componentes ou unidades funcionais do design e suas interdependências. Cada nó no diagrama, chamado de *camada*, representa um grupo lógico de namespaces, projetos ou outros artefatos. Você pode desenhar as dependências que devem existir em seu design. Ao contrário de um diagrama de arquitetura tradicional, você pode verificar se as dependências reais no código-fonte estão em conformidade com as dependências pretendidas que você especificou. Ao fazer a validação de parte de uma compilação [!INCLUDE[esprtfs](../code-quality/includes/esprtfs_md.md)]regular no, você pode garantir que o código do programa continue a aderir à arquitetura do sistema por meio de alterações futuras. Consulte [diagramas de dependência: Referência](../modeling/layer-diagrams-reference.md).
+Como um diagrama de arquitetura tradicional, um diagrama de dependência identifica os principais componentes ou unidades funcionais do design e suas interdependências. Cada nó no diagrama, chamado de *camada*, representa um grupo lógico de namespaces, projetos ou outros artefatos. Você pode desenhar as dependências que devem existir em seu design. Ao contrário de um diagrama de arquitetura tradicional, você pode verificar se as dependências reais no código-fonte estão em conformidade com as dependências pretendidas que você especificou. Ao tornar a validação parte de uma compilação regular em [!INCLUDE[esprtfs](../code-quality/includes/esprtfs_md.md)], você pode garantir que o código do programa continue a aderir à arquitetura do sistema por meio de alterações futuras. Consulte [diagramas de dependência: referência](../modeling/layer-diagrams-reference.md).
 
 ## <a name="how-to-design-or-update-your-app-with-dependency-diagrams"></a>Como criar ou atualizar seu aplicativo com diagramas de dependência
 
@@ -70,7 +70,7 @@ Confira [criar diagramas de dependência do seu código](../modeling/create-laye
 
 Camadas representam grupos lógicos de *artefatos*, como projetos, arquivos de código, namespaces, classes e métodos. Você pode criar camadas de artefatos de C# projetos Visual e Visual Basic, ou pode anexar especificações ou planos a uma camada vinculando documentos, como arquivos do Word ou apresentações do PowerPoint. Cada camada aparece como um retângulo no diagrama e mostra o número de artefatos vinculados a ele. Uma camada pode conter camadas aninhadas que descrevem tarefas mais específicas.
 
-Como uma diretriz geral, as camadas de nome de acordo com sua função, por exemplo, "apresentação" ou "serviços". Se os artefatos estiverem fortemente interdependentes, coloque-os na mesma camada. Se os artefatos puderem ser atualizados separadamente ou usados em aplicativos separados, coloque-os em camadas diferentes. Para saber mais sobre padrões de camadas, visite o site Patterns & [http://go.microsoft.com/fwlink/?LinkId=145794](http://go.microsoft.com/fwlink/?LinkId=145794)Practices em.
+Como uma diretriz geral, as camadas de nome de acordo com sua função, por exemplo, "apresentação" ou "serviços". Se os artefatos estiverem fortemente interdependentes, coloque-os na mesma camada. Se os artefatos puderem ser atualizados separadamente ou usados em aplicativos separados, coloque-os em camadas diferentes. Para saber mais sobre padrões de camadas, visite o site Patterns & Practices em [http://go.microsoft.com/fwlink/?LinkId=145794](http://go.microsoft.com/fwlink/?LinkId=145794).
 
 > [!TIP]
 > Há certos tipos de artefatos que você pode vincular a camadas, mas que não dão suporte à validação em relação ao diagrama de dependência. Para ver se o artefato dá suporte à validação, abra o **Gerenciador de camadas** para examinar a propriedade de **validação de suporte** do link do artefato. Consulte [descobrir dependências existentes entre camadas](#Generate).
@@ -123,7 +123,7 @@ Se esse não for o caso, o código será mais difícil de ser alterado durante s
 
 Ao iniciar o desenvolvimento de um novo projeto ou uma nova área em um novo projeto, você pode desenhar camadas e dependências para ajudar a identificar os principais componentes antes de começar a desenvolver o código.
 
-- **Mostrar padrões arquitetônicos identificáveis** em seus diagramas de dependência, se possível. Por exemplo, um diagrama de dependência que descreve um aplicativo de área de trabalho pode incluir camadas como apresentação, lógica de domínio e armazenamento de dados. Um diagrama de dependência que abrange um único recurso dentro de um aplicativo pode ter camadas como modelo, exibição e controlador. Para obter mais informações sobre tais padrões, [consulte Patterns & Practices: Arquitetura](http://go.microsoft.com/fwlink/?LinkId=145794)do aplicativo.
+- **Mostrar padrões arquitetônicos identificáveis** em seus diagramas de dependência, se possível. Por exemplo, um diagrama de dependência que descreve um aplicativo de área de trabalho pode incluir camadas como apresentação, lógica de domínio e armazenamento de dados. Um diagrama de dependência que abrange um único recurso dentro de um aplicativo pode ter camadas como modelo, exibição e controlador. Para obter mais informações sobre esses padrões, consulte [padrões & práticas: arquitetura do aplicativo](http://go.microsoft.com/fwlink/?LinkId=145794).
 
 - **Crie um artefato de código para cada camada** , como um namespace, uma classe ou um componente. Isso torna mais fácil seguir o código e vincular os artefatos de código a camadas. Assim que você criar cada artefato, vincule-o à camada apropriada.
 

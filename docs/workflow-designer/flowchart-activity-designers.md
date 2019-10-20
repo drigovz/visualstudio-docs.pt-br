@@ -1,23 +1,23 @@
 ---
-title: Designer de fluxo de trabalho – Designers de atividade do fluxograma
+title: Designer de Fluxo de Trabalho-designers de atividade de fluxograma
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 8b7b4aa6-d27d-45c8-87c2-641440d38afc
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f3b816c0e486eeaad49bac0b0054d7d3c2bff9b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c7426ea21e1928eb46a2b733df7eb24c9de6e147
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62949637"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650448"
 ---
 # <a name="flowchart-activity-designers"></a>Designer de atividade do fluxograma
 
-Designer de fluxo de trabalho inclui um número de sistema forneceu atividades que você pode usar ao construir os fluxos de trabalho. Esta seção contém sistema forneceu as atividades usadas para gerenciar fluxogramas em um fluxo de trabalho. Os tópicos a seguir descrevem essas atividades e fornecem orientação sobre como usá-los.
+O Designer de Fluxo de Trabalho inclui várias atividades fornecidas pelo sistema que você pode usar ao construir seus fluxos de trabalho. Esta seção contém sistema forneceu as atividades usadas para gerenciar fluxogramas em um fluxo de trabalho. Os tópicos a seguir descrevem essas atividades e fornecem orientação sobre como usá-los.
 
 ## <a name="reference"></a>Referência
  <xref:System.Activities.Activity>

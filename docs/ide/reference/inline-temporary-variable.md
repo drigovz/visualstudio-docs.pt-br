@@ -2,20 +2,20 @@
 title: Substituir uma variável temporária por seu valor
 ms.date: 01/26/2018
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: a7c691efcc507212aa0649b6c4b4179fb8288f06
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 8b758407dc5500630157050c10f881a6515e1216
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62423146"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661006"
 ---
 # <a name="inline-a-temporary-variable-refactoring"></a>Refatoração Embutir uma variável temporária
 
@@ -25,11 +25,11 @@ Esta refatoração aplica-se a:
 
 - Visual Basic
 
-**O quê:** Permite remover uma variável temporária e substitua-a por seu valor.
+**O quê:** permite que você remova uma variável temporária e substitua-a pelo seu valor.
 
-**Quando:** O uso da variável temporária dificulta o entendimento do código.
+**Quando:** o uso da variável temporária dificulta o entendimento do código.
 
-**Por que:** A remoção de uma variável temporária pode facilitar a leitura do código.
+**Por quê:** remover uma variável temporária pode facilitar a leitura do código.
 
 ## <a name="how-to"></a>Como fazer
 
@@ -46,7 +46,7 @@ Esta refatoração aplica-se a:
 2. Depois, siga um destes procedimentos:
 
    - **Teclado**
-      - Pressione **Ctrl**+**.** para acionar o menu **Ações e Refatorações Rápidas**.
+      - Pressione **Ctrl**+ **.** para acionar o menu **Ações e Refatorações Rápidas**.
    - **Mouse**
       - Clique com o botão direito do mouse no código e selecione o menu **Ações e Refatorações Rápidas**.
 

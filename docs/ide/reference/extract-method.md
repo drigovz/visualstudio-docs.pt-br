@@ -3,8 +3,8 @@ title: Extrair um método
 description: Transforme um fragmento de código em seu próprio método selecionando o código e digitando Ctrl + R, Ctrl + M.
 ms.date: 01/26/2018
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 f1_keywords:
 - vs.csharp.refactoring.extractmethod
@@ -13,12 +13,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: a764fd0d95696866e914ec76a560a49d641acb47
-ms.sourcegitcommit: 0f5f7955076238742f2071d286ad8e896f3a6cad
-ms.translationtype: HT
+ms.openlocfilehash: a1ec6ca273f873c82a1bb2c730a9288b5e2ae4ed
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68483667"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72654391"
 ---
 # <a name="extract-a-method-refactoring"></a>Refatoração Extrair um método
 
@@ -28,11 +28,11 @@ Esta refatoração aplica-se a:
 
 - Visual Basic
 
-**O quê:** Permite transformar um fragmento de código em seu próprio método.
+**O quê:** permite transformar um fragmento de código em seu próprio método.
 
-**Quando:** Você tem um fragmento de código existente em algum método que precisa ser chamado de outro método.
+**Quando:** você tem um fragmento de código existente em algum método que precisa ser chamado desde outro método.
 
-**Por que:** Você pode copiar/colar esse código, mas isso pode levar à duplicação. A melhor solução é refatorar esse fragmento em seu próprio método, o que pode ser chamado livremente por qualquer outro método.
+**Por quê:** você poderia copiar/colar esse código, mas que poderia levar à eliminação de duplicação. A melhor solução é refatorar esse fragmento em seu próprio método, o que pode ser chamado livremente por qualquer outro método.
 
 ## <a name="how-to"></a>Como fazer
 

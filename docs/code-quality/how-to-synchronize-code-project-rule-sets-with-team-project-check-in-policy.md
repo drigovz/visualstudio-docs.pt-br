@@ -5,19 +5,19 @@ ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.selecttfsruleset
 ms.assetid: 9b02f934-2db6-41ec-aaff-9c31ceec2f04
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a35ba1b9d54507883882fbe62c0533805882560
-ms.sourcegitcommit: 39a04f42d23597b70053686d7e927ba78f38a9a8
+ms.openlocfilehash: fe6e9e49998c3e98335cd7e873d53531c8bfa99a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "71975053"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72649380"
 ---
-# <a name="how-to-synchronize-code-project-rule-sets-with-an-azure-devops-project-check-in-policy"></a>Como: Sincronizar conjuntos de regras do projeto de código com uma política de check-in do projeto DevOps do Azure
+# <a name="how-to-synchronize-code-project-rule-sets-with-an-azure-devops-project-check-in-policy"></a>Como: sincronizar conjuntos de regras de projeto de código com uma política de check-in do projeto DevOps do Azure
 
 Sincronize as configurações de análise de código para projetos de código para a política de check-in do projeto DevOps do Azure especificando um conjunto de regras que contenha pelo menos as regras especificadas no conjunto de regras para a política de check-in. O líder do desenvolvedor pode informá-lo sobre o nome e o local do conjunto de regras para a política de check-in. Você pode usar uma das seguintes opções para garantir que a análise de código para o projeto Use o conjunto correto de regras:
 
@@ -31,7 +31,7 @@ Sincronize as configurações de análise de código para projetos de código pa
 
 ## <a name="to-specify-a-microsoft-standard-rule-set"></a>Para especificar um conjunto de regras padrão da Microsoft
 
-1. Na **Gerenciador de soluções**, clique com botão direito no projeto de código e, em seguida, clique em **propriedades**.
+1. Em **Gerenciador de soluções**, clique com o botão direito do mouse no projeto de código e clique em **Propriedades**.
 
 2. Clique em **análise de código**.
 
@@ -51,7 +51,7 @@ Sincronize as configurações de análise de código para projetos de código pa
 
 1. Se necessário, execute uma operação get no arquivo de conjunto de regras que especifica a política de check-in.
 
-2. Na **Gerenciador de soluções**, clique com botão direito no projeto de código e, em seguida, clique em **propriedades**.
+2. Em **Gerenciador de soluções**, clique com o botão direito do mouse no projeto de código e clique em **Propriedades**.
 
 3. Clique em **análise de código**.
 

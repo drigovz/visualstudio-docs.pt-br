@@ -5,17 +5,17 @@ ms.topic: reference
 helpviewer_keywords:
 - naming conventions [EditorConfig]
 - EditorConfig naming conventions
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 13da6cd34df3996fe837aee89ce4f379027dd409
-ms.sourcegitcommit: 7825d4163e52d724e59f6c0da209af5fbef673f7
+ms.openlocfilehash: 8ff6c9885bd01a94cc36046faf71067e1fe9c17b
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72000165"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650909"
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>Convenções de nomenclatura do .NET para EditorConfig
 
@@ -155,7 +155,7 @@ Os valores permitidos para essa propriedade são:
 > [!NOTE]
 > É necessário especificar um estilo de uso de maiúsculas como parte do seu estilo de nomenclatura; caso contrário, o estilo de nomenclatura poderá ser ignorado.
 
-## <a name="severity"></a>severity
+## <a name="severity"></a>Severidade
 
 Para descrever a gravidade de uma violação da sua regra de nomenclatura, especifique uma propriedade no seguinte formato:
 
@@ -163,13 +163,13 @@ Para descrever a gravidade de uma violação da sua regra de nomenclatura, espec
 
 A tabela a seguir mostra os valores de gravidade permitidos e o que eles significam:
 
-severity | Efeito
+Severidade | Efeito
 ------------ | -------------
 nenhum | A regra foi completamente suprimida.
 refatoração ou silencioso | Quando este estilo não estiver sendo seguido, não mostre nada para o usuário; no entanto, o código gerado automaticamente seguirá esse estilo.
 sugestão | Quando esse estilo não estiver sendo seguido, mostre-o para o usuário como uma sugestão, como pontos subjacentes nos dois primeiros caracteres. Isso não terá nenhum efeito em tempo de compilação.
 warning | Quando esse estilo não estiver sendo seguido, mostre um aviso do compilador na **Lista de Erros**.
-error | Quando esse estilo não estiver sendo seguido, mostre um erro do compilador na **Lista de Erros**.
+erro | Quando esse estilo não estiver sendo seguido, mostre um erro do compilador na **Lista de Erros**.
 
 > [!NOTE]
 > Não é necessário criar seu projeto para ver as violações de regras de nomenclatura. Elas são exibidas à medida que o código é editado, na **Lista de Erros** ou como uma sugestão.

@@ -8,15 +8,15 @@ helpviewer_keywords:
 - virtual user activity chart
 - load test, virtual user activity chart
 ms.assetid: 63f4bd42-3cfb-4eee-af68-e8334976539e
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: a03096e92f2a5da98da2d1850f505c65eb5b6e27
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: bba807eae2a7767b9b4271d0df48e962a2113285
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68918615"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72665366"
 ---
 # <a name="analyzing-load-test-virtual-user-activity-in-the-details-view-of-the-load-test-analyzer"></a>Analisando a atividade do usuário virtual do teste de carga na exibição Detalhes do Analisador de Teste de Carga
 
@@ -55,11 +55,11 @@ O painel Resultados do filtro está visível no **Gráfico de Atividade do Usuá
 
 |Tarefas|Tópicos associados|
 |-|-|
-|**Executar o teste de carga:** Depois de criar um teste de carga e configurá-lo para habilitar a coleta dos dados da atividade de usuário virtual, você deverá executar o teste até sua conclusão para exibir o **Gráfico de Atividade de Usuário Virtual**.||
-|**Exiba os resultados do teste de carga que contêm os dados da atividade de usuário virtual:** Depois que o teste de carga for criado e configurado e sua execução for concluída, você poderá exibir os dados da atividade de usuário virtual usando o **Gráfico de Atividade de Usuário Virtual**.|-   [Analisar resultados do teste de carga](../test/analyze-load-test-results-using-the-load-test-analyzer.md)<br />-   [Como: Analisar o que os usuários virtuais fazem durante um teste de carga](../test/how-to-analyze-virtual-user-activity-during-a-load-test.md)|
-|**Isole problemas de desempenho em testes de carga:** Use o **Gráfico de Atividade de Usuário Virtual** para ajudar a isolar problemas de desempenho no teste de carga.|-   [Passo a passo: Usando o gráfico de atividade de usuário virtual para isolar problemas](../test/walkthrough-use-the-virtual-user-activity-chart-to-isolate-issues.md)|
+|**Executar o teste de carga:** depois de criar um teste de carga e configurá-lo para permitir a coleta dos dados de atividade do usuário virtual, será necessário executar o teste até sua conclusão para exibir o **Gráfico de Atividade do Usuário Virtual**.||
+|**Exibir os resultados dos testes de carga que contêm os dados de atividade do usuário virtual:** depois que o teste de carga tiver sido criado e configurado e sua execução estiver concluída, você poderá exibir os dados de atividade do usuário virtual usando o **Gráfico de Atividade do Usuário Virtual**.|-   [Analisar resultados do teste de carga](../test/analyze-load-test-results-using-the-load-test-analyzer.md)<br />-   [Como analisar o que os usuários virtuais fazem durante um teste de carga](../test/how-to-analyze-virtual-user-activity-during-a-load-test.md)|
+|**Isolar problemas de desempenho em testes de carga:** você pode usar o **Gráfico de Atividade do Usuário Virtual** para ajudar a isolar problemas de desempenho em seu teste de carga.|-   [Passo a passo: usando o gráfico de atividade do usuário virtual para isolar problemas](../test/walkthrough-use-the-virtual-user-activity-chart-to-isolate-issues.md)|
 
 ## <a name="see-also"></a>Consulte também
 
-- [Analisar resultados do teste de carga](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
+- [Analisar resultados de teste de carga](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
 - [Analisar resultados do teste de carga e erros na exibição Tabelas](../test/analyze-load-test-results-and-errors-in-the-tables-view.md)

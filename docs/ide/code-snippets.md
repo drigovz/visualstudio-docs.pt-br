@@ -8,8 +8,8 @@ f1_keywords:
 helpviewer_keywords:
 - surround with
 - code snippets
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 dev_langs:
 - CSharp
@@ -17,12 +17,12 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 89de993337ecd214c7771faf17b24f90fa5e0110
-ms.sourcegitcommit: 0f44ec8ba0263056ad04d2d0dc904ad4206ce8fc
+ms.openlocfilehash: fa42d9c404aaf75fda03731183abf3d585869b07
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70766249"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647559"
 ---
 # <a name="code-snippets"></a>Snippets de código
 
@@ -31,7 +31,7 @@ Snippets de código são pequenos blocos de código reutilizável que podem ser 
 > [!NOTE]
 > Este tópico aplica-se ao Visual Studio no Windows. Para o Visual Studio para Mac, confira [Snippet de código (Visual Studio para Mac)](/visualstudio/mac/snippets).
 
-Os snippets de código estão disponíveis para uma variedade de linguagens, incluindo C#, C++, Visual Basic, XML e T-SQL, entre outras. Para exibir todos os trechos de código instalados disponíveis para um idioma, abra o **Gerenciador de trechos de códigos** no menu **ferramentas** (ou pressione **Ctrl**+**K**, **Ctrl**+**B**) e escolha o idioma do menu suspenso na parte superior.
+Os snippets de código estão disponíveis para uma variedade de linguagens, incluindo C#, C++, Visual Basic, XML e T-SQL, entre outras. Para exibir todos os trechos de código instalados disponíveis para um idioma, abra o **Gerenciador de trechos de códigos** no menu **ferramentas** (ou pressione **Ctrl** +**K**, **Ctrl** +**B**) e escolha o idioma no menu suspenso na parte superior.
 
 ![Caixa de diálogo Gerenciador de Snippets de Código](media/code-snippets-manager.png)
 
@@ -41,7 +41,7 @@ Em geral, os snippets de código podem ser acessados das seguintes maneiras:
 
 - No menu de contexto ou clicando com o botão direito do mouse no editor de códigos, escolha **Trecho** > **Inserir Snippet de Código**
 
-- No teclado, pressione **Ctrl**+**K**,**Ctrl**+**X**
+- No teclado, pressione **ctrl** +**K**,**Ctrl** +**X**
 
 ## <a name="expansion-snippets-and-surround-with-snippets"></a>Snippets de expansão e snippets de “envolver com”
 
@@ -60,7 +60,7 @@ finally
 }
 ```
 
-Para inserir esse snippet, clique em **Inserir Snippet** no menu do clique com o botão direito (menu de contexto) da janela de código; depois, em **Visual C#** , digite `tryf` e, por fim, pressione **Tab**. Ou, você pode digitar `tryf` e pressionar **Tab** duas vezes.
+Você pode inserir esse trecho clicando em **Inserir trecho** no menu do botão direito do mouse (menu de contexto) da janela de código, em seguida, em **Visual C#** , em seguida, digite `tryf` e pressione **Tab**. Ou, você pode digitar `tryf` e pressionar **Tab** duas vezes.
 
 Um exemplo de um snippet “envolver com”: em C++, o atalho `if` pode ser usado como um snippet de inserção ou um snippet “envolver com”. Se você selecionar uma linha de código (por exemplo `return FALSE;`) e, em seguida, escolher **Envolver Com** > **if**, o snippet de código será expandido na linha:
 
@@ -97,8 +97,8 @@ Se você alterar `newPropertyValue` para `m_property`, cada instância de `newPr
 
 ## <a name="see-also"></a>Consulte também
 
-- [Passo a passo: Criando um snippet de código](../ide/walkthrough-creating-a-code-snippet.md)
-- [Como: Distribuir snippets de código](../ide/how-to-distribute-code-snippets.md)
+- [Instruções passo a passo: criando um snippet de código](../ide/walkthrough-creating-a-code-snippet.md)
+- [Como distribuir snippets de código](../ide/how-to-distribute-code-snippets.md)
 - [Melhores práticas para usar snippets de código](../ide/best-practices-for-using-code-snippets.md)
 - [Solução de problemas de snippets](../ide/troubleshooting-snippets.md)
 - [Snippets de código C#](../ide/visual-csharp-code-snippets.md)

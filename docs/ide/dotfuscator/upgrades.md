@@ -22,14 +22,14 @@ helpviewer_keywords:
 description: Saiba como atualizar a cópia gratuita do Dotfuscator Community, incluída no Visual Studio.
 ms.assetid: c7c60904-27f9-4f1f-b79b-ddf65041b810
 author: Joe-Sewell-PreEmptive
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: cee876a3904d5c47b43b58793087c901e8444dd3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 78a26da7734e4fa74a9b312b41786caca4b7cc67
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62557236"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72652821"
 ---
 # <a name="upgrade-dotfuscator-community"></a>Atualizar o Dotfuscator Community
 
@@ -38,10 +38,10 @@ No entanto, há mais recursos disponíveis aos usuários que atualizam a versão
 
 ## <a name="registering-dotfuscator-community"></a>Registrando o Dotfuscator Community
 
-Os usuários registrados do Dotfuscator Community obtêm acesso a recursos adicionais, como [suporte a linha de comando][cli], o que facilita a integração do Dotfuscator Community ao processo de build automatizado. Além disso, o registro concede acesso à ferramenta incorporada, usada para [decodificar rastreamentos de pilha ocultados][decode-obfuscated].
+Usuários registrados da Comunidade Dotfuscator obtêm acesso a recursos adicionais, como [suporte de linha de comando][cli], o que torna mais fácil integrar a Comunidade Dotfuscator ao seu processo de compilação automatizado. O registro também concede acesso a uma ferramenta interna usada para [decodificar rastreamentos de pilha ofuscados][decode-obfuscated].
 
 O registro é rápido, simples e gratuito.
-Para registrar o Dotfuscator Community, confira [as instruções no Guia completo do usuário do Dotfuscator Community][register-ce].
+Para registrar a Comunidade do Dotfuscator, consulte [as instruções no guia completo do usuário da Comunidade Dotfuscator][register-ce].
 
 ## <a name="dotfuscator-professional"></a>Dotfuscator Professional
 
@@ -49,25 +49,25 @@ Embora o Dotfuscator Community forneça um nível básico de proteção, o ***Pr
 
 * *Proteção de propriedade intelectual*
   * Opções de renomeação avançadas, incluindo Enhanced Overload Induction™ e seleção de identificador aleatória.
-  * Acesso a transformações de ofuscação de nível empresarial, incluindo [transformações destinadas a acabar com a descompilação automatizada de código][control-flow].
-  * A capacidade de [obscurecer cadeias de caracteres confidenciais][string-encryption], impossibilitando uma pesquisa simples do código descompilado.
-  * A capacidade de [inserir discretamente cadeias de caracteres de propriedade e de distribuição nos assemblies][watermarking], permitindo determinar a origem de perdas de software não autorizadas.
-  * A capacidade de [combinar vários assemblies em um][linking], tornando ainda mais difícil para invasores determinar as funções de elementos de código, pois a separação de preocupações foi eliminada.
-  * A capacidade de [remover automaticamente o código não utilizado do aplicativo][pruning], reduzindo a quantidade de código confidencial fornecido.
+  * Acesso a transformações de ofuscação de nível empresarial, incluindo [transformações destinadas a anular a descompilação de código automatizado][control-flow].
+  * A capacidade de [obscurecer cadeias de caracteres confidenciais][string-encryption], tornando impossível uma pesquisa simples do código descompilado.
+  * A capacidade de [Inserir discretamente a propriedade e as cadeias de caracteres de distribuição em seus assemblies][watermarking], permitindo que você determine a origem de vazamentos de software não autorizados.
+  * A capacidade de [combinar vários assemblies em um][linking], tornando ainda mais difícil para os invasores determinarem as funções dos elementos de código, uma vez que a separação de preocupações foi eliminada.
+  * A capacidade de [remover automaticamente o código não utilizado de seu aplicativo][pruning], reduzindo a quantidade de código confidencial enviado.
 * *Proteção de integridade do aplicativo*
-  * [Comportamentos de defesa do aplicativo][check-actions] adicionais.
+  * Comportamentos adicionais de [defesa do aplicativo][check-actions].
   * A capacidade de fornecer um período de aviso antes da data limite do fim da vida útil do aplicativo.
   * A capacidade de notificar o código do aplicativo durante um período de aviso do fim da vida útil ou após a data limite.
 
-O Dotfuscator Professional é o [.NET Obfuscator][net-obfuscator] padrão do setor e é adequado para desenvolvedores empresariais que precisam de atualizações de produto, manutenção e suporte contínuos.
+O Dotfuscator Professional é o [ofuscador .net][net-obfuscator] padrão da indústria e é adequado para os desenvolvedores corporativos que precisam de suporte contínuo, manutenção e atualizações de produtos.
 Além disso, o Dotfuscator Professional oferece maior integração com o Visual Studio e é licenciado para uso comercial.
 
-Para obter mais informações sobre os recursos avançados de proteção para o aplicativo do Dotfuscator Professional, visite a [página da Visão geral do Dotfuscator][product-about] da PreEmptive Solutions e [faça uma comparação com o Dotfuscator Community][product-compare].
-[Avaliações com suporte completo estão disponíveis em preemptive.com][eval].
+Para obter mais informações sobre os recursos avançados de proteção de aplicativo do Dotfuscator Professional, visite a [página de visão geral do Dotfuscator][product-about] da PreEmptive Solutions e [Compare-o à comunidade do Dotfuscator][product-compare].
+As [avaliações com suporte total estão disponíveis em Preemptive.com][eval].
 
 ## <a name="see-also"></a>Consulte também
 
-[Este artigo no Guia completo do usuário do Dotfuscator Community][full]
+[Este artigo no guia do usuário completo da Comunidade Dotfuscator][full]
 
 <!-- Copyright © 2019 PreEmptive Solutions, LLC -->
 

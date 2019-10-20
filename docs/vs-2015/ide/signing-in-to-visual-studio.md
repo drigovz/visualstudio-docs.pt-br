@@ -7,15 +7,15 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.assetid: b9531c25-e4cf-43ae-b331-a9f31a8cd171
 caps.latest.revision: 34
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 96676ee8021e09a5e7d0a9808cea1e615f58717a
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 9c732f4011c4194ce95621cf49022c2b6a9fabf3
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65679826"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661213"
 ---
 # <a name="signing-in-to-visual-studio"></a>Fazendo login no Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ Será possível personalizar e otimizar sua experiência de desenvolvimento do V
 
  Depois de fornecer as configurações, o Visual Studio é iniciado, e você está conectado e pronto para começar. Para verificar se você entrou, procure seu nome de perfil no canto superior direito do ambiente do Visual Studio.
 
- ![Usuário atualmente conectado](../ide/media/vs2015-username.png "VS2015_UserName")
+ ![Currentlly usuário conectado](../ide/media/vs2015-username.png "VS2015_UserName")
 
  A menos que você se desconecte, você será conectado automaticamente ao Visual Studio sempre que o iniciar e todas as alterações nas configurações sincronizadas são aplicadas automaticamente. Para se desconectar, escolha a seta para baixo próxima do seu nome de perfil no ambiente do Visual Studio, escolha o comando **Configurações da conta** e escolha o link **Sair**. Para entrar novamente, escolha o comando **Entrar** no canto superior direito do ambiente do Visual Studio.
 

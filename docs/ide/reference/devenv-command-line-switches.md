@@ -8,17 +8,17 @@ helpviewer_keywords:
 - command line [Visual Studio], switches
 - Devenv
 ms.assetid: e12bc6ed-74fd-4bea-8d7c-89b99c20bad8
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: db9aaeb48095b058abb0deefa342598eefeed1b9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: cf7ebda1e661801995c17a81e658b4f638c2f8a1
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62970210"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661643"
 ---
 # <a name="devenv-command-line-switches"></a>Opções de linha de comando do Devenv
 
@@ -75,7 +75,7 @@ As seguintes opções de linha de comando apresentam o IDE e realizam a tarefa d
 |[/Run ou /R](run-devenv-exe.md)|Compila e executa a solução especificada.<br /><br /> `devenv /run mysln.sln`|
 |[/RunExit](runexit-devenv-exe.md)|Compila e executa a solução especificada, minimiza o IDE quando a solução é executada e fecha o IDE depois que a solução termina a execução.<br /><br /> `devenv /runexit mysln.sln`|
 |[/SafeMode](safemode-devenv-exe.md)|Inicia o Visual Studio no modo de segurança. Esta opção carrega somente o ambiente padrão, os serviços padrão e as versões enviadas de pacotes de terceiros.<br /><br /> Esta opção não aceita nenhum argumento.|
-|[/UseEnv](useenv-devenv-exe.md)|Faz com que o IDE use variáveis de ambiente PATH, INCLUDE, LIBPATH e LIB para a compilação C++. Essa opção é instalada com a carga de trabalho de **Desenvolvimento para desktop com C++**. Para obter mais informações, consulte [Configurando o caminho e variáveis de ambiente para Builds de linha de comando](/cpp/build/setting-the-path-and-environment-variables-for-command-line-builds).|
+|[/UseEnv](useenv-devenv-exe.md)|Faz com que o IDE use variáveis de ambiente PATH, INCLUDE, LIBPATH e LIB para a compilação C++. Essa opção é instalada com a carga de trabalho de **Desenvolvimento para desktop com C++** . Para obter mais informações, consulte [Configurando o caminho e variáveis de ambiente para Builds de linha de comando](/cpp/build/setting-the-path-and-environment-variables-for-command-line-builds).|
 
 As opções de linha de comando a seguir não exibem o IDE.
 
