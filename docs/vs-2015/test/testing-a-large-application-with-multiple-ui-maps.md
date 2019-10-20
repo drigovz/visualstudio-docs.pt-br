@@ -9,25 +9,25 @@ helpviewer_keywords:
 - coded UI tests, for large applications
 ms.assetid: 6e1ae9ec-e9b1-458a-bd96-0eb15e46f1d5
 caps.latest.revision: 24
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 016417ec05149da52af78e2b41e0fff4af6c3e5b
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 2f6936811ea753d66d212facdda627930fb1ab10
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68871581"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72672134"
 ---
 # <a name="testing-a-large-application-with-multiple-ui-maps"></a>Testando um aplicativo grande com vários mapas de interface do usuário
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Este tópico fala sobre como usar testes de IU codificados quando você estiver testando um aplicativo grande usando diversos mapas de interface do usuário.
 
- **Requisitos**
+ **Requirements**
 
 - Visual Studio Enterprise
 
-  Quando você cria um novo teste de interface do usuário codificado [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , a estrutura de teste gera código para o teste por padrão em uma classe [UIMap](/previous-versions/dd580454(v=vs.140)) . Para obter mais informações sobre como gravar testes de IU codificados, consulte [Criando testes de UI codificados](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate) e [Anatomia de um teste de IU codificado](../test/anatomy-of-a-coded-ui-test.md).
+  Quando você cria um novo teste de interface do usuário codificado, o [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Framework de teste gera código para o teste por padrão em uma classe [UIMap](/previous-versions/dd580454(v=vs.140)) . Para obter mais informações sobre como gravar testes de IU codificados, consulte [Criando testes de UI codificados](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate) e [Anatomia de um teste de IU codificado](../test/anatomy-of-a-coded-ui-test.md).
 
   O código gerado para o mapa de interface do usuário contém uma classe para cada objeto com o qual há interação. Para cada método gerado, é gerada uma classe complementar aos parâmetros de método especificamente para o método em questão. Se houver uma grande quantidade de objetos, páginas, formulários e controles em seu aplicativo, o mapa de interface do usuário pode ficar muito grande. Além disso, se houver diversas pessoas trabalhando nos testes, o aplicativo fica pesado com um único arquivo grande de mapa de interface do usuário.
 

@@ -1,28 +1,28 @@
 ---
-title: 'Como: Suprimir Avisos do compilador | Microsoft Docs'
+title: Como suprimir avisos do compilador | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.assetid: 31827b17-f933-413d-b28a-b19f903b64ca
 caps.latest.revision: 7
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 994b29fb4592d55a04389896ee9db8848dceda67
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: aeb404c479edec5dec89f28e80584d435f5c370a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65695388"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72670651"
 ---
-# <a name="how-to-suppress-compiler-warnings"></a>Como: Suprimir avisos do compilador
+# <a name="how-to-suppress-compiler-warnings"></a>Como suprimir avisos do compilador
 
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Você pode melhorar a organização de um log de build especificando um ou mais tipos de avisos do compilador que você não deseja que ele contenha. Por exemplo, você pode usar essa técnica para examinar algumas, mas não todas as informações que são geradas automaticamente ao definir o detalhamento do log de build como Normal, Detalhado ou Diagnóstico. Para obter mais informações sobre os detalhes, confira [Como: Exibir, salvar e configurar arquivos de Log de compilação](../ide/how-to-view-save-and-configure-build-log-files.md).
+Você pode melhorar a organização de um log de build especificando um ou mais tipos de avisos do compilador que você não deseja que ele contenha. Por exemplo, você pode usar essa técnica para examinar algumas, mas não todas as informações que são geradas automaticamente ao definir o detalhamento do log de build como Normal, Detalhado ou Diagnóstico. Para obter mais informações sobre detalhamento, consulte [How to: View, Save, and Configure Build Log Files](../ide/how-to-view-save-and-configure-build-log-files.md) (Como exibir, salvar e configurar arquivos de log de build).
 
-### <a name="to-suppress-specific-warnings-for-visual-c-or-f"></a>Para suprimir avisos específicos para o Visual C# ou F\#
+### <a name="to-suppress-specific-warnings-for-visual-c-or-f"></a>Para suprimir avisos específicos para C# Visual ou F \#
 
 1. No **Gerenciador de Soluções**, escolha o projeto no qual você deseja suprimir avisos.
 
@@ -58,7 +58,7 @@ Você pode ocultar avisos de compilador específicos para Visual Basic editando 
 
 2. Na barra de menus, escolha **Projeto**, **Descarregar Projeto**.
 
-3. No **Gerenciador de Soluções**, abra o menu de atalho do projeto Proxies e escolha **Editar**_ProjectName_**.vbproj**.
+3. No **Gerenciador de Soluções**, abra o menu de atalho do projeto Proxies e escolha **Editar**_ProjectName_ **.vbproj**.
 
     O arquivo de projeto é aberto no editor de códigos.
 
@@ -110,6 +110,6 @@ Você pode ocultar avisos de compilador específicos para Visual Basic editando 
 
 ## <a name="see-also"></a>Consulte também
 
-- [Passo a passo: Criando um aplicativo](../ide/walkthrough-building-an-application.md)
-- [Como: exibir, salvar e configurar arquivos de log de build](../ide/how-to-view-save-and-configure-build-log-files.md)
+- [Passo a passo: criando um aplicativo](../ide/walkthrough-building-an-application.md)
+- [Como exibir, salvar e configurar arquivos de log de build](../ide/how-to-view-save-and-configure-build-log-files.md)
 - [Compilando e criando](../ide/compiling-and-building-in-visual-studio.md)

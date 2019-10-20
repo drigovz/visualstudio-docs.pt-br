@@ -1,24 +1,24 @@
 ---
-title: 'Extensão do Excel de exemplo: Classe ActionFilter | Microsoft Docs'
+title: 'Extensão de amostra do Excel: classe ActionFilter | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.assetid: c69fe3c7-f797-4e90-b21c-f2cc4dddf152
 caps.latest.revision: 13
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 26eb001de3a8fed7c6bb1d9d1a547aa618e745e8
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 4c286f25159f3ee1934a27d2242e97482f7ec424
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68871611"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72672178"
 ---
-# <a name="sample-excel-extension-actionfilter-class"></a>Extensão do Excel de exemplo: Classe ActionFilter
+# <a name="sample-excel-extension-actionfilter-class"></a>Extensão de exemplo do Excel: classe ActionFilter
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Essa classe interna estende a classe [UITestActionFilter](/previous-versions/visualstudio/visual-studio-2012/dd985757(v=vs.110)) e representa um filtro para ações de teste em [!INCLUDE[ofprexcel](../includes/ofprexcel-md.md)] um elemento.
+Essa classe interna estende a classe [UITestActionFilter](/previous-versions/visualstudio/visual-studio-2012/dd985757(v=vs.110)) e representa um filtro para ações de teste em um elemento [!INCLUDE[ofprexcel](../includes/ofprexcel-md.md)].
 
 ## <a name="simple-properties"></a>Propriedades Simples
  Essas propriedades somente leitura permitem ao desenvolvedor especificar como esse filtro de ação de teste deve ser executado pelo framework de teste de IU codificado. Por exemplo, a propriedade `UITestActionFilter.Name` fornece o nome do filtro de ação. Outras propriedades obtém a `UITestActionFilter.Category` do filtro de ação, o `UITestActionFilter.FilterType`, o nome do `UITestActionFilter.Group` das ações de teste que são filtradas por esse filtro de ação de teste. Outras indicam se deseja `UITestActionFilter.ApplyTimeout` e também se a ação de teste é `UITestActionFilter.Enabled`.

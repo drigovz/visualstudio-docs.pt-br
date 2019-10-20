@@ -20,17 +20,17 @@ helpviewer_keywords:
 - defaults, colors
 - printers, customizing
 ms.assetid: c767d302-51ed-47a8-a527-c07bce2aa485
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b05d6651f865a300a0c065c5e0a275cb29fd309
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
-ms.translationtype: HT
+ms.openlocfilehash: 527c01629fbff856748a50d393ca5df2a413d056
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68605423"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72667029"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>Caixa de diálogo Fontes e Cores, Ambiente, Opções
 
@@ -99,7 +99,7 @@ Lista os itens cuja cor de primeiro plano e a cor da tela de fundo você pode mo
 
 Alguns dos itens de exibição incluem:
 
-|Item de exibição|DESCRIÇÃO|
+|Item de exibição|Descrição|
 |------------------|-----------------|
 |**Texto sem Formatação**|Texto no editor.|
 |**Texto Selecionado**|Texto incluído na seleção atual quando o editor está em foco.|
@@ -254,4 +254,4 @@ Exibe uma amostra do esquema de cores, tamanho e estilo da fonte de **Mostrar co
 ## <a name="see-also"></a>Consulte também
 
 - [Caixa de diálogo Opções](../../ide/reference/options-dialog-box-visual-studio.md)
-- [Como: Alterar fontes e cores](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
+- [Como alterar fontes e cores](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
