@@ -5,17 +5,17 @@ ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.HTML.Format
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 69a8d3f1b84bd59cec9e13bf50eb8eaa46795cdf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 3d1e5f07a2b68d86051452a16ac0f42fc9b9acf0
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62779013"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666202"
 ---
 # <a name="options-text-editor-html-web-forms-formatting"></a>Opções, Editor de Texto, HTML (Web Forms), Formatação
 
@@ -62,21 +62,21 @@ Essas opções fazem com que o Editor de exibição do código-fonte adicione ou
 
 - **Inserir aspas ao valor do atributo ao digitar**
 
-   Quando esta opção está selecionada, o editor coloca automaticamente aspas nos atributos enquanto você digita (por exemplo, ID="Select1"). Desmarque esta opção se você preferir manualmente inserir aspas na marcação.
+   Quando essa opção é selecionada, o editor coloca automaticamente os atributos entre aspas à medida que você está digitando (por exemplo: ID = "Select1"). Desmarque esta opção se você preferir manualmente inserir aspas na marcação.
 
    > [!NOTE]
    > Se esta opção está selecionada, qualquer aspas existente - as marcas na marcação são retidas; aspas são removidas nunca.
 
 - **Inserir aspas ao valor do atributo ao formatar**
 
-   Quando essa opção está selecionada, a formatação automática adiciona aspas aos valores de atributo (por exemplo, ID="Select1").
+   Quando essa opção é selecionada, a formatação automática adiciona aspas ao contrário dos valores de atributo (por exemplo: ID = "Select1").
 
    > [!NOTE]
    > Se esta opção está selecionada, qualquer aspas existente - as marcas na marcação são retidas.
 
 - **Inserir automaticamente a marca de fechamento**
 
-   Quando esta opção é selecionada, o editor cria automaticamente uma marca de fechamento (por exemplo, **\</b>**) quando você fecha a marca de abertura.
+   Quando esta opção é selecionada, o editor cria automaticamente uma marca de fechamento (por exemplo, **\</b>** ) quando você fecha a marca de abertura.
 
 ## <a name="tag-wrapping"></a>Quebra automática de marca
 

@@ -9,15 +9,15 @@ helpviewer_keywords:
 - test controller, walkthrough
 - walkthroughs, test controller and test agents
 ms.assetid: 57ed43ae-4e67-4139-8aec-3e9fceb0a745
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 6a5fcb489e403ff4297b4e8520346d0cc7be8361
-ms.sourcegitcommit: 689ba54ea14257d13031de881f5d4fe937a36f56
+ms.openlocfilehash: 9ae46db2d99024b598ff655452ca748298b528a0
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "71342335"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72665300"
 ---
 # <a name="assign-roles-to-a-test-controller-and-test-agent"></a>Atribuir funções a um controlador de teste e a um agente de teste
 
@@ -25,7 +25,7 @@ Este artigo demonstra como criar e definir uma configuração de teste que usa u
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
-## <a name="prerequisites"></a>Pré-requisitos
+## <a name="prerequisites"></a>Prerequisites
 
 - Crie testes de unidade ou testes de IU codificados para executar com a configuração de teste.
 

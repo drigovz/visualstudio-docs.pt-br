@@ -9,18 +9,18 @@ helpviewer_keywords:
 - searching IDE
 - IDE, searching
 ms.assetid: 4200f297-d065-4723-9a30-d91ff2e26c9d
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: 1f5026a014b5adc96f0729d130c4398474d6d413
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
-ms.translationtype: HT
+ms.openlocfilehash: f0cc6bcb59bf98a7416221115dbeeef8f24a5e74
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68605899"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72655664"
 ---
 # <a name="quick-launch-environment-options-dialog-box"></a>Caixa de diálogo de início rápido, ambiente, opções
 
@@ -30,7 +30,7 @@ O **Início Rápido** é habilitado por padrão quando você instala o Visual St
 
 ## <a name="category-list"></a>Lista de Categorias
 
-Os resultados da pesquisa do Início Rápido são exibidos em quatro categorias: **Usados Recentemente**, **Menus**, **Opções** e **Documentos Abertos**, juntamente com o número de itens na categoria. Para percorrer os resultados da pesquisa por categoria, escolha as teclas **Ctrl**+**Q** para exibir todos os resultados da categoria seguinte. Depois que a última categoria aparecer, pressionar **Ctrl**+**Q** exibirá alguns resultados de cada categoria. Pressione **Ctrl**+**Shift**+**Q** para navegar pelas categorias na ordem oposta. Para exibir todos os resultados da pesquisa em uma categoria, escolha o nome da categoria.
+Os resultados da pesquisa do Início Rápido aparecem em quatro categorias: **Usados Recentemente**, **Menus**, **Opções** e **Documentos Abertos**, em conjunto com o número de itens na categoria. Para percorrer os resultados da pesquisa por categoria, escolha as teclas **Ctrl**+**Q** para exibir todos os resultados da categoria seguinte. Depois que a última categoria aparecer, pressionar **Ctrl**+**Q** exibirá alguns resultados de cada categoria. Pressione **Ctrl**+**Shift**+**Q** para navegar pelas categorias na ordem oposta. Para exibir todos os resultados da pesquisa em uma categoria, escolha o nome da categoria.
 
 É possível usar os seguintes atalhos para limitar a pesquisa a categorias específicas.
 

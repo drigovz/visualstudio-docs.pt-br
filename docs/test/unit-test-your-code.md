@@ -6,17 +6,17 @@ helpviewer_keywords:
 - Visual Studio, unit tests
 - unit tests, verifying code with
 - testing code, automated tests
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: 5682d752ba2c1430d8ab708e3dadda754a1ba757
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
-ms.translationtype: HT
+author: jillre
+ms.openlocfilehash: fd6d6dca2680dcfcaa42912333b080c428ba78d2
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65461390"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72659859"
 ---
 # <a name="unit-test-your-code"></a>Efetue testes de unidade em seu código
 
@@ -28,7 +28,7 @@ As ferramentas de testes de unidade incluem:
 
 * **Estrutura de teste de unidade da Microsoft para código gerenciado**&mdash;A estrutura de teste de unidade da Microsoft para código gerenciado é instalada com o Visual Studio e fornece uma estrutura para testar código .NET.
 
-* **Estrutura de teste de unidade da Microsoft para C++**&mdash;A estrutura de teste de unidade da Microsoft para C++ é instalada como parte da carga de trabalho **Desenvolvimento para área de trabalho com C++**. Ela fornece uma estrutura para testar o código nativo. As estruturas do Google Test, Boost.Test e CTest também estão incluídas e adaptadores de terceiros estão disponíveis para estruturas de teste adicionais. Para obter mais informações, confira [Escrever testes de unidade para C/C++](../test/writing-unit-tests-for-c-cpp.md).
+* **Estrutura de teste de unidade da Microsoft para C++** &mdash;A estrutura de teste de unidade da Microsoft para C++ é instalada como parte da carga de trabalho **Desenvolvimento para área de trabalho com C++** . Ela fornece uma estrutura para testar o código nativo. As estruturas do Google Test, Boost.Test e CTest também estão incluídas e adaptadores de terceiros estão disponíveis para estruturas de teste adicionais. Para obter mais informações, confira [Escrever testes de unidade para C/C++](../test/writing-unit-tests-for-c-cpp.md).
 
 * **Ferramentas de cobertura de código**&mdash;É possível determinar a quantidade de código do produto que seus testes de unidade utilizam com um comando no Gerenciador de Testes.
 
@@ -42,13 +42,13 @@ Use os artigos a seguir para ajudar com o entendimento e a criação dos testes 
 
 |Tarefas|Tópicos associados|
 |-|-----------------------|
-|**Inícios Rápidos e passo a passo:** Saiba mais sobre o teste de unidade no Visual Studio com exemplos de código.|- [Passo a passo: Criar e executar testes de unidade para código gerenciado](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)<br />- [Início rápido: Desenvolvimento orientado por testes com o Gerenciador de Testes](../test/quick-start-test-driven-development-with-test-explorer.md)<br />- [Como: adicionar testes de unidade a aplicativos C++](../test/how-to-use-microsoft-test-framework-for-cpp.md)|
-|**Teste de unidade com o Gerenciador de Testes:** Saiba como o Gerenciador de Testes pode ajudar a criar testes de unidade mais produtivos e eficientes.|- [Noções básicas de teste de unidade](../test/unit-test-basics.md)<br />- [Criação de um projeto de teste de unidade](../test/create-a-unit-test-project.md)<br />- [Execução de testes de unidade com o gerenciador de testes](../test/run-unit-tests-with-test-explorer.md)<br />- [Instalação de frameworks de teste de unidade de terceiros](../test/install-third-party-unit-test-frameworks.md)|
+|**Guias de início rápido e orientações:** Saiba mais sobre os testes de unidade no Visual Studio nos exemplos de código.|[instruções passo a - : criar e executar testes de unidade para código gerenciado](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)<br />- [Início Rápido: desenvolvimento orientado por testes com o Gerenciador de Testes](../test/quick-start-test-driven-development-with-test-explorer.md)<br />- [como: Adicionar testes de unidade a C++ aplicativos](../test/how-to-use-microsoft-test-framework-for-cpp.md)|
+|**Teste de unidade com o gerenciador de testes:** saiba como o gerenciador de testes pode ajudar a criar testes de unidade mais produtivos e eficientes.|- [Noções básicas de teste de unidade](../test/unit-test-basics.md)<br />- [Criação de um projeto de teste de unidade](../test/create-a-unit-test-project.md)<br />- [Execução de testes de unidade com o gerenciador de testes](../test/run-unit-tests-with-test-explorer.md)<br />- [Instalação de frameworks de teste de unidade de terceiros](../test/install-third-party-unit-test-frameworks.md)|
 |**Código C++ do teste de unidade**|- [Escrever testes de unidade para C/C++](../test/writing-unit-tests-for-c-cpp.md)|
 |**Isolamento de testes de unidade**|- [Isolar o código em teste com o Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md)|
-|**Usar a cobertura de código para identificar quais proporções do código do projeto são testadas:** Saiba mais sobre a funcionalidade de cobertura de código das ferramentas de teste do Visual Studio.|- [Usar a cobertura de código para determinar quanto do código está sendo testado](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)|
-|**Executar a análise de desempenho e de estresse usando testes de carga:** Saiba como criar testes de carga para ajudar a isolar problemas de estresse e desempenho em seu aplicativo.|- [Início rápido: criar um projeto de teste de carga](../test/quickstart-create-a-load-test-project.md)<br />- [Teste de carga (Azure Test Plans e TFS)](/azure/devops/test/load-test/index?view=vsts)|
-|**Definir restrições de qualidade:** Saiba como criar restrições de qualidade para garantir que os testes sejam executados antes de o código ser verificado ou mesclado.|- [Políticas de check-in (TFVC do Azure Repos)](/azure/devops/repos/tfvc/add-check-policies?view=vsts)|
+|**Uso da cobertura de código para identificar qual proporção do código do projeto é testada:** saiba mais sobre o recurso de cobertura de código das ferramentas de teste do Visual Studio.|- [Usar a cobertura de código para determinar quanto do código está sendo testado](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)|
+|**Executar análise de estresse e desempenho usando testes de carga:** Saiba como criar testes de carga para ajudar a isolar problemas de desempenho e estresse em seu aplicativo.|guia[de início rápido - : criar um projeto de teste de carga](../test/quickstart-create-a-load-test-project.md)<br />- [Teste de carga (Azure Test Plans e TFS)](/azure/devops/test/load-test/index?view=vsts)|
+|**Definir Gates de qualidade:** Saiba como criar Gates de qualidade para impor que os testes sejam executados antes do check-in ou mesclagem do código.|- [Políticas de check-in (TFVC do Azure Repos)](/azure/devops/repos/tfvc/add-check-policies?view=vsts)|
 |**Definir opções de teste:** Saiba como configurar opções de teste, por exemplo, onde os resultados de teste são armazenados.|[Configurar testes de unidade usando um arquivo .runsettings](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md)|
 
 ## <a name="api-reference-documentation"></a>Documentação de referência da API

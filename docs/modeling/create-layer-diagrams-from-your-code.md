@@ -7,17 +7,17 @@ helpviewer_keywords:
 - dependency diagrams
 - diagrams - modeling, layer
 - constraints, architectural
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d4a4d2c1600558e4c31c6dd12b85f931a83e7ba7
-ms.sourcegitcommit: 0f44ec8ba0263056ad04d2d0dc904ad4206ce8fc
+ms.openlocfilehash: 573d03761bc4d8ccddf666dbc39cb8301d7c9afa
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70766224"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72654131"
 ---
 # <a name="create-dependency-diagrams-from-your-code"></a>Criar diagramas de dependência do código
 
@@ -27,7 +27,7 @@ Para visualizar a arquitetura lógica de alto nível do sistema de software, cri
 
 Um diagrama de dependência permite organizar itens da solução do Visual Studio em grupos lógicos e abstratos chamados *camadas*. É possível usar camadas para descrever as tarefas principais realizadas por esses artefatos ou os componentes principais do sistema. Cada camada pode conter outras camadas que descrevem tarefas mais detalhadas. Você também pode especificar as *dependências* pretendidas ou existentes entre camadas. Essas dependências, representadas como setas, mostram quais camadas podem usar ou atualmente usam a funcionalidade representada por outras camadas. Para manter controle arquitetônico do código, mostre as dependências desejadas no diagrama e, em seguida, valide o código no diagrama.
 
-[Vídeo: Valide suas dependências de arquitetura em tempo real](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)
+[Vídeo: valide suas dependências de arquitetura em tempo real](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)
 
 ## <a name="CreateDiagram"></a>Criar um diagrama de dependência
 
@@ -51,7 +51,7 @@ Antes de criar um diagrama de dependência, verifique se sua solução tem um pr
 
 4. Em **Adicionar ao projeto de modelagem**, navegue até e selecione um projeto de modelagem existente em sua solução.
 
-     -ou-
+     \- ou -
 
      Escolha **criar um novo projeto de modelagem** para adicionar um novo projeto de modelagem à solução.
 
@@ -70,7 +70,7 @@ Antes de criar um diagrama de dependência, verifique se sua solução tem um pr
 
 4. Criar um novo diagrama de dependência para a solução usando o menu **arquitetura**
 
-5. Selecione todos os nós no mapa de códigos (use _Ctrl_ + _a_ou use a seleção de banda de borracha pressionando a tecla _Shift_ antes de clicar, arrastar e liberar.
+5. Selecione todos os nós no mapa de códigos (use _Ctrl_  + _A_ou use a seleção de banda de borracha pressionando a tecla _Shift_ antes de clicar, arrastar e liberar.
 
 6. Arrastar e soltar, ou copiar e colar, os elementos selecionados para o novo diagrama de validação de dependência.
 
@@ -118,8 +118,8 @@ Antes de criar um diagrama de dependência, verifique se sua solução tem um pr
 |**To**|**No Gerenciador de camadas**|
 |-|-|
 |Excluir o links entre a camada e um artefato|Abra o menu de atalho para o link do artefato e escolha **excluir**.|
-|Mover o link de uma camada para outra|Arraste o link de artefato para uma camada existente no diagrama.<br /><br /> - ou -<br /><br /> 1.  Abra o menu de atalho para o link do artefato e, em seguida, escolha **recortar**.<br />2.  No diagrama de dependência, abra o menu de atalho da camada e escolha **colar**.|
-|Copiar o link de uma camada para outra|1.  Abra o menu de atalho para o link do artefato e, em seguida, escolha **copiar**.<br />2.  No diagrama de dependência, abra o menu de atalho da camada e escolha **colar**.|
+|Mover o link de uma camada para outra|Arraste o link de artefato para uma camada existente no diagrama.<br /><br /> - ou -<br /><br /> 1. Abra o menu de atalho para o link do artefato e, em seguida, escolha **recortar**.<br />2. no diagrama de dependência, abra o menu de atalho da camada e escolha **colar**.|
+|Copiar o link de uma camada para outra|1. Abra o menu de atalho para o link do artefato e, em seguida, escolha **copiar**.<br />2. no diagrama de dependência, abra o menu de atalho da camada e escolha **colar**.|
 |Criar uma nova camada com base em um link de artefato existente|Arraste o link de artefato para uma área em branco no diagrama.|
 |Verifique se um artefato vinculado dá suporte à validação em relação ao diagrama de dependência.|Examine a coluna de **validação de suporte** para o link do artefato.|
 
@@ -159,7 +159,7 @@ Antes de criar um diagrama de dependência, verifique se sua solução tem um pr
 ## <a name="see-also"></a>Consulte também
 
 - [Suporte de edição para ferramentas de arquitetura e modelagem](../modeling/what-s-new-for-design-in-visual-studio.md#edition-support-for-architecture-and-modeling-tools)
-- [Vídeo: Valide suas dependências de arquitetura em tempo real](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)
+- [Vídeo: valide suas dependências de arquitetura em tempo real](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)
 - [Diagramas de dependência: referência](../modeling/layer-diagrams-reference.md)
 - [Diagramas de dependência: diretrizes](../modeling/layer-diagrams-guidelines.md)
 - [Validar código com diagramas de dependência](../modeling/validate-code-with-layer-diagrams.md)

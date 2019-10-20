@@ -1,5 +1,5 @@
 ---
-title: 'CA1030: Usar eventos quando apropriado | Microsoft Docs'
+title: 'CA1030: usar eventos quando apropriado | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,44 +12,44 @@ helpviewer_keywords:
 - UseEventsWhereAppropriate
 ms.assetid: ea051367-deeb-40f9-9b65-eb818f1e133a
 caps.latest.revision: 18
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 9d00db6f9a00a273198cc50704d65ed6d2e4bb33
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7ab3a576b5014799e470260567a4942b5c3ef9de
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68157696"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661917"
 ---
-# <a name="ca1030-use-events-where-appropriate"></a>CA1030: Usar eventos quando apropriado
+# <a name="ca1030-use-events-where-appropriate"></a>CA1030: usar eventos quando apropriado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |NomeDoTipo|UseEventsWhereAppropriate|
 |CheckId|CA1030|
-|Categoria|Microsoft.Design|
-|Alteração Significativa|Não são significativas|
+|Categoria|Microsoft. Design|
+|Alteração Significativa|Sem interrupção|
 
 ## <a name="cause"></a>Causa
- Um nome de método público, protegido ou particular começa com um dos seguintes:
+ Um nome de método público, protegido ou privado começa com um dos seguintes:
 
-- AddOn
+- Complemento
 
 - RemoveOn
 
-- Fogo
+- Ativar
 
-- Gerar
+- Gera
 
 ## <a name="rule-description"></a>Descrição da Regra
- Essa regra detecta métodos que têm nomes que seriam usados normalmente em eventos. Os eventos seguem o padrão de design do observador ou publicar-assinar; eles são usados quando uma alteração de estado em um objeto deve ser comunicada aos outros objetos. Se um método é chamado em resposta a uma alteração de estado claramente definida, o método deve ser invocado por um manipulador de eventos. Os objetos que chamam o método devem acionar eventos, em vez de chamar o método diretamente.
+ Essa regra detecta métodos que têm nomes que seriam usados normalmente em eventos. Eventos seguem o observador ou o padrão de design de publicação/assinatura; Eles são usados quando uma alteração de estado em um objeto deve ser comunicada a outros objetos. Se um método é chamado em resposta a uma alteração de estado claramente definida, o método deve ser invocado por um manipulador de eventos. Os objetos que chamam o método devem acionar eventos, em vez de chamar o método diretamente.
 
- Alguns exemplos comuns de eventos são encontrados em aplicativos de interface do usuário em que uma ação do usuário, como clicar em um botão faz com que um segmento de código a ser executado. O [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] modelo de evento não é limitado a interfaces do usuário; ele deve ser usado em qualquer lugar, você deve comunicar o estado muda para um ou mais objetos.
+ Alguns exemplos comuns de eventos são encontrados em aplicativos de interface do usuário em que uma ação do usuário, como clicar em um botão, faz com que um segmento de código seja executado. O modelo de evento [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] não está limitado às interfaces do usuário; Ele deve ser usado em qualquer lugar em que você deve comunicar alterações de estado em um ou mais objetos.
 
 ## <a name="how-to-fix-violations"></a>Como Corrigir Violações
- Se o método é chamado quando o estado de um objeto é alterado, considere alterar o design para usar o [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] modelo de evento.
+ Se o método for chamado quando o estado de um objeto for alterado, considere alterar o design para usar o modelo de evento [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].
 
 ## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos
- Suprimir um aviso nessa regra, se o método não funciona com o [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] modelo de evento.
+ Suprimir um aviso dessa regra se o método não funcionar com o modelo de evento [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].

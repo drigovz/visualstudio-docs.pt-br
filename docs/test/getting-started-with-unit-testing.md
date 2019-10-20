@@ -4,17 +4,17 @@ ms.date: 04/01/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - unit testing, create unit test plans
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 30c67bb85a7cf72090ea37680daa12933c44b0cb
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
-ms.translationtype: HT
+ms.openlocfilehash: 5ecddad721547fdb5689a26a192cf0580ddb44cb
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68870162"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72664909"
 ---
 # <a name="get-started-with-unit-testing"></a>Introdução ao teste de unidade
 
@@ -176,7 +176,7 @@ Para criar testes de unidade que usam [NUnit](https://nunit.org/):
 
 ## <a name="see-also"></a>Consulte também
 
-* [Passo a passo: Criar e executar testes de unidade para código gerenciado](walkthrough-creating-and-running-unit-tests-for-managed-code.md)
+* [Passo a passo: criar e executar testes de unidade para código gerenciado](walkthrough-creating-and-running-unit-tests-for-managed-code.md)
 * [Criar comando de Testes de Unidade](create-unit-tests-menu.md)
 * [Gerar testes com IntelliTest](generate-unit-tests-for-your-code-with-intellitest.md)
 * [Executar testes com o Gerenciador de Testes](run-unit-tests-with-test-explorer.md)

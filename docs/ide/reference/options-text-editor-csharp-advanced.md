@@ -5,21 +5,21 @@ ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Outlining
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Advanced
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 010f2a2e6dc163f24a29e8e352b21d8ef8d72b48
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: d1d540f3a49eda22973b25a6b9a91691907efe93
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62811817"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666286"
 ---
 # <a name="options-text-editor-c-advanced"></a>Opções, Editor de Texto, C#, Avançado
 
-Use a página de opções **Avançado** para modificar as configurações de formatação do editor, de refatoração de código e de comentários da documentação XML para C#. Para acessar essa página de opções, escolha **Ferramentas** > **Opções** e, em seguida, **Editor de Texto** > **C#** > **Avançado**.
+Use a página de opções **Avançado** para modificar as configurações de formatação do editor, de refatoração de código e de comentários da documentação XML para C#. Para acessar essa página de opções, escolha **Ferramentas** > **Opções** e, em seguida, **Editor de Texto** > **C#**  > **Avançado**.
 
 > [!NOTE]
 > É possível que nem todas as opções estejam listadas aqui.
@@ -118,7 +118,7 @@ Use a página de opções **Avançado** para modificar as configurações de for
 
 ## <a name="block-structure-guides"></a>Guias de estrutura de bloco
 
-Marque essas caixas de seleção para exibir linhas verticais pontilhadas entre chaves (**{}**) em seu código. Isso permite que você veja facilmente blocos individuais de código para o seu nível de declaração e construções no nível do código.
+Marque essas caixas de seleção para exibir linhas verticais pontilhadas entre chaves ( **{}** ) em seu código. Isso permite que você veja facilmente blocos individuais de código para o seu nível de declaração e construções no nível do código.
 
 ## <a name="editor-help"></a>Ajuda do Editor
 
@@ -128,7 +128,7 @@ Marque essas caixas de seleção para exibir linhas verticais pontilhadas entre 
 
 ## <a name="see-also"></a>Consulte também
 
-- [Como: Inserir comentários XML para geração de documentação](../../ide/reference/generate-xml-documentation-comments.md)
+- [Como inserir comentários XML para geração de documentação](../../ide/reference/generate-xml-documentation-comments.md)
 - [Comentários de documentação XML (Guia de Programação em C#)](/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments)
 - [Documentar o código com comentários XML (guia do C#)](/dotnet/csharp/codedoc)
 - [Definir opções de editor específicas a um idioma](../../ide/reference/setting-language-specific-editor-options.md)

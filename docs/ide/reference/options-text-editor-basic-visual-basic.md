@@ -13,17 +13,17 @@ f1_keywords:
 helpviewer_keywords:
 - Basic Text Editor Options dialog box
 ms.assetid: 5a8cafca-f7b4-4a2d-92ce-6894a7673d00
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aa331fea595c2143dd3ab47aa562fbd61277f81f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: a07645597846bd85f3152da866a253b079bc3963
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62817782"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666338"
 ---
 # <a name="options-text-editor-basic-visual-basic-advanced"></a>Opções, Editor de Texto, Basic (Visual Basic), Avançado
 A página de propriedades **Específico do VB**, na pasta **Básico** da pasta **Editor de Texto** da caixa de diálogo **Opções** (menu **Ferramentas**) inclui as seguintes propriedades:

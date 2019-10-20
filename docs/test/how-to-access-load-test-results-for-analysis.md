@@ -11,17 +11,17 @@ helpviewer_keywords:
 - load tests, results
 - Load Test Viewer, viewing
 ms.assetid: b0a3e694-2894-479b-b270-7e61e9fafacd
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: e4b14be6df351a6975fb8a7cf6fa506a5d4f6041
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 6be8649ab611a44cb9d2791ae1f4a0e61e930d5b
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62979426"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72664889"
 ---
-# <a name="how-to-access-load-test-results-for-analysis"></a>Como: Acessar os resultados do teste de carga para análise
+# <a name="how-to-access-load-test-results-for-analysis"></a>Como acessar os resultados do teste de carga para análise
 
 Quando você executar um teste de carga do Editor de Teste de Carga, os resultados de testes de carga serão abertos automaticamente e o teste de carga em execução será exibido no **Analisador de Teste de Carga**. Ao executar um teste de carga da linha de comando, você deverá acessar os resultados de testes de carga manualmente.
 
@@ -54,4 +54,4 @@ O resultado de teste de carga para o teste de carga concluído contém exemplos 
 
 ## <a name="see-also"></a>Consulte também
 
-- [Analisar resultados do teste de carga](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
+- [Analisar resultados de teste de carga](../test/analyze-load-test-results-using-the-load-test-analyzer.md)

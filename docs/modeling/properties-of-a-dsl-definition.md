@@ -4,43 +4,43 @@ ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - Domain-Specific Language, definition file
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e63a5ab794261a395fb091016f177ffca9d35692
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6c7ff2be87a91e6c01ec275bcff1d77aa6481df1
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62964294"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72658285"
 ---
 # <a name="properties-of-a-dsl-definition"></a>Propriedades de uma definição de DSL
-Definem propriedades de DslDefinition *linguagem específica do domínio* propriedades de definição, como numeração de versão. As propriedades de DslDefinition aparecem na **propriedades** janela quando você clica em uma área aberta do diagrama na *Designer de linguagem específica do domínio*.
+As propriedades DslDefinition definem propriedades *de definição de linguagem específicas de domínio* , como numeração de versão. As propriedades DslDefinition aparecem na janela **Propriedades** quando você clica em uma área aberta do diagrama na *Designer de linguagem específica de domínio*.
 
- Para obter mais informações, consulte [como definir uma linguagem específica do domínio](../modeling/how-to-define-a-domain-specific-language.md). Para obter mais informações sobre como usar essas propriedades, consulte [personalizando e estendendo uma linguagem específica do domínio](../modeling/customizing-and-extending-a-domain-specific-language.md).
+ Para obter mais informações, consulte [como definir uma linguagem específica de domínio](../modeling/how-to-define-a-domain-specific-language.md). Para obter mais informações sobre como usar essas propriedades, consulte [Personalizando e estendendo uma linguagem específica de domínio](../modeling/customizing-and-extending-a-domain-specific-language.md).
 
  DslDefinition tem as propriedades na tabela a seguir:
 
-|Propriedade|Descrição|Padrão|
+|propriedade|Descrição|Padrão|
 |-|-|-|
 |Modificador de acesso|Determina se o modificador de acesso para a classe de domínio é público ou interno.|públicos|
-|Atributos personalizados|Personalizadas definidas atributos para a classe de domínio.<br /><br /> **Observação** Use o botão Procurar para adicionar um atributo.|\<nenhum>|
-|Nome da empresa|O nome do nome da empresa no registro do sistema.|Nome da empresa atual|
-|Nome|O nome dessa classe de domínio.|Nome atual|
-|Namespace|O namespace afiliado a essa classe de domínio.|Namespace atual|
-|Guid do pacote|O guid do pacote do Visual Studio gerado para esta DSL.|\<nenhum>|
-|Namespace do pacote|O namespace para o pacote do Visual Studio gerado para esta DSL.|\<nenhum>|
-|Nome do produto|O nome do produto que será registrado para o pacote do Visual Studio gerado para esta DSL.|\<nenhum>|
-|Observações|Anotações associadas a essa classe de domínio.|\<nenhum>|
-|Descrição|Descrição para essa classe de domínio.|\<nenhum>|
+|Atributos personalizados|Atributos definidos personalizados para a classe de domínio.<br /><br /> **Observação** Use o botão procurar para adicionar um atributo.|\<nenhum>|
+|Nome da empresa|O nome do nome da empresa atual no registro do sistema.|Nome da empresa atual|
+|Name|O nome desta classe de domínio.|Nome atual|
+|espaço de nome|O namespace afiliado a esta classe de domínio.|Namespace atual|
+|GUID do pacote|O GUID do pacote do Visual Studio gerado para esta DSL.|\<nenhum>|
+|Namespace do pacote|O namespace do pacote do Visual Studio gerado para esta DSL.|\<nenhum>|
+|Nome do produto|O nome do produto que será registrado para o pacote do Visual Studio gerado para essa DSL.|\<nenhum>|
+|Anotações|Observações associadas a esta classe de domínio.|\<nenhum>|
+|Descrição|Descrição para esta classe de domínio.|\<nenhum>|
 |Nome de Exibição|O nome que será exibido no designer gerado para essa classe de domínio.|\<nenhum>|
-|Palavra-chave de ajuda|A palavra-chave ajuda associada a essa classe de domínio.|\<nenhum>|
-|Build|O número de build incremental para essa definição de linguagem específica do domínio.|0|
-|Versão principal|O número de compilação principal incrementais para esta definição de linguagem específica do domínio.|1|
-|Versão secundária|O número de compilação secundária incrementais para esta definição de linguagem específica do domínio.|0|
-|Revisão|A versão incremental build número para essa definição de linguagem específica do domínio.|0|
+|Palavra-chave de ajuda|A palavra-chave Help associada a essa classe de domínio.|\<nenhum>|
+|Build|O número de Build incremental para esta definição de linguagem específica de domínio.|0|
+|Versão principal|O número de Build principal incremental para essa definição de linguagem específica de domínio.|1|
+|Versão secundária|O número de Build secundário incremental para essa definição de linguagem específica de domínio.|0|
+|Revisão|O número da versão da revisão incremental para essa definição de linguagem específica de domínio.|0|
 
 ## <a name="see-also"></a>Consulte também
 

@@ -6,17 +6,17 @@ helpviewer_keywords:
 - load tests, run settings, adding
 - load tests, run settings
 ms.assetid: 257d2a24-d582-4cfe-8b2b-51f51ba9cc84
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: c1d7f9d0c9ad07223d0b59d7aeca585b53432280
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 7d4b22b0a1127af423e97e2dc88ebbea5bf1748e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63002248"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72664877"
 ---
-# <a name="how-to-add-additional-run-settings-to-a-load-test"></a>Como: Adicionar outras configurações de execução a um teste de carga
+# <a name="how-to-add-additional-run-settings-to-a-load-test"></a>Como adicionar configurações de execução adicionais a um teste de carga
 
 As configurações de execução de um teste de carga determinam várias outras configurações. Entre elas estão a duração do teste, o nível de detalhes da coleção de resultados e os conjuntos de contadores coletados quando o teste é executado. Você pode criar e armazenar várias configurações de execução para cada teste de carga e selecionar uma configuração específica a ser usada quando executar o teste. Uma configuração inicial de execução é adicionada ao teste de carga quando você cria o teste de carga usando o **Novo Assistente de Teste de Carga**.
 
@@ -38,14 +38,14 @@ Você pode adicionar mais configurações de execução ao teste de carga com co
 
      A Janela **Propriedades** é exibida com as propriedades da configuração de execução selecionada.
 
-5. Na janela **Propriedades**, use a caixa de texto da propriedade **Nome** para dar à nova configuração de execução um nome que descreva a intenção da configuração de execução (por exemplo, **Configuração da Execução: Execução de cinco minutos**).
+5. Na janela **Propriedades**, use a caixa de texto da propriedade **Nome** para dar à nova configuração de execução um nome que descreva a intenção da configuração de execução (por exemplo, **Configuração da Execução: execução de cinco minutos**).
 
 6. Use a janela **Propriedades** para alterar as configurações de execução. Por exemplo, altere a duração da execução para **00:05:00** a fim de executar o teste por cinco minutos.
 
     > [!NOTE]
     > Para obter uma lista completa das propriedades das configurações de execução e suas descrições, confira [Propriedades de configurações de execução de teste de carga](../test/load-test-run-settings-properties.md).
 
-     Agora você pode especificar que deseja usar a configuração de execução adicionada definindo-a como ativa. Para obter mais informações, confira [Como: Selecionar a configuração de execução ativa para um teste de carga](../test/how-to-select-the-active-run-setting-for-a-load-test.md).
+     Agora você pode especificar que deseja usar a configuração de execução adicionada definindo-a como ativa. Para saber mais, consulte [Como selecionar a configuração de execução ativa para um teste de carga](../test/how-to-select-the-active-run-setting-for-a-load-test.md).
 
 ## <a name="see-also"></a>Consulte também
 
