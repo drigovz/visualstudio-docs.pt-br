@@ -23,17 +23,17 @@ helpviewer_keywords:
 - WPF Designer, XAML formatting
 - XAML view settings, attribute spacing
 ms.assetid: 2a420e58-a408-4e8d-9220-44eeb4f67801
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 9b124b86b98f86c775165d8fe33164a352d8e20a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 242daf82d405af4b3a1e529633fb82651aa6bdc9
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62969235"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666631"
 ---
 # <a name="options-text-editor-xaml-miscellaneous"></a>Opções, Editor de texto, XAML, Diversos
 
@@ -47,7 +47,7 @@ Use essa configuração para controlar quando marcas e aspas são geradas automa
 |-|-|
 |**Marcas de fechamento**|Especifica se a marcação de fechamento de um elemento é gerada automaticamente ao você fechar a marcação de abertura com o caractere de maior que (>).|
 |**Aspas de atributo**|Especifica se as aspas de fechamento são geradas quando um valor de atributo é selecionado na lista suspensa de preenchimento de declaração.|
-|**Chaves de fechamento para MarkupExtensions**|Especifica se uma chave de fechamento (**}**) de uma extensão de marcação é gerada automaticamente ao digitar o caractere de chave de abertura (**{**).|
+|**Chaves de fechamento para MarkupExtensions**|Especifica se uma chave de fechamento ( **}** ) de uma extensão de marcação é gerada automaticamente ao digitar o caractere de chave de abertura ( **{** ).|
 |**Vírgulas para separar parâmetros MarkupExtension**|Especifica se vírgulas são geradas quando você digita mais de um parâmetro em uma extensão de marcação.|
 
 ## <a name="errors-and-warnings"></a>Erros e Avisos

@@ -8,17 +8,17 @@ helpviewer_keywords:
 - load test, results graph
 - load test results, graphs
 ms.assetid: 81536233-1962-40d9-9511-0b4633814d90
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 692ea254719f5ae14491ae81e2e6ab0f5740fc05
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: b589e45fe32aff1ce0eea338675d42c3e3ea944a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63002259"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72644369"
 ---
-# <a name="how-to-add-and-delete-counters-on-graphs-in-load-test-results"></a>Como: Adicionar e excluir contadores em grafos nos resultados do teste de carga
+# <a name="how-to-add-and-delete-counters-on-graphs-in-load-test-results"></a>Como adicionar e excluir contadores em gráficos em resultados de teste de carga
 
 Você pode usar o painel **Contadores** para adicionar contadores de desempenho a um grafo.
 
@@ -28,7 +28,7 @@ Você pode usar o painel **Contadores** para adicionar contadores de desempenho 
 
 **Considerações sobre o intervalo de amostragem do contador de desempenho**
 
-Escolha um valor para a propriedade **Taxa de Amostragem** nas configurações de execução de teste de carga com base na duração do seu teste de carga. Uma taxa de amostragem menor, como o valor padrão de cinco segundos, requer mais espaço no banco de dados dos resultados de testes de carga. Para testes de carga mais longos, aumentar a taxa de amostragem reduzirá a quantidade de dados coletados. Para obter mais informações, confira [Como: Especificar a taxa de amostragem](../test/how-to-specify-the-sample-rate-for-a-load-test.md).
+Escolha um valor para a propriedade **Taxa de Amostragem** nas configurações de execução de teste de carga com base na duração do seu teste de carga. Uma taxa de amostragem menor, como o valor padrão de cinco segundos, requer mais espaço no banco de dados dos resultados de testes de carga. Para testes de carga mais longos, aumentar a taxa de amostragem reduzirá a quantidade de dados coletados. Para saber mais, confira [Como especificar a taxa de amostragem](../test/how-to-specify-the-sample-rate-for-a-load-test.md).
 
 Veja algumas diretrizes para taxas de amostragem:
 
@@ -47,7 +47,7 @@ Há duas opções para habilitar a propriedade **Armazenamento de detalhes de me
 
 A quantidade de espaço necessária no repositório de resultados de testes de carga para armazenar os dados detalhados de medição de tempo pode ser muito grande, especialmente para testes de carga mais longos. Além disso, o tempo para armazenar esses dados no repositório de resultados de testes de carga no final do teste de carga é mais longo, pois esses dados são armazenados nos agentes de teste de carga até que o teste de carga seja concluído. Quando o teste de carga é concluído, os dados são armazenados no repositório. Por padrão, a propriedade **Armazenamento de detalhes de medição de tempo** fica habilitada. Se isso for um problema para o seu ambiente de teste, talvez seja conveniente definir o **Armazenamento de detalhes de medição de tempo** como **Nenhum**.
 
-Para obter mais informações, confira [Como: Especificar a propriedade de armazenamento de detalhes de tempo](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md).
+Para saber mais, confira [Como especificar a propriedade de armazenamento dos detalhes de medição de tempo](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md).
 
 ## <a name="to-display-a-particular-performance-counter-on-a-load-test-graph"></a>Para exibir um contador de desempenho específico em um gráfico de teste de carga
 
@@ -85,4 +85,4 @@ Para obter mais informações, confira [Como: Especificar a propriedade de armaz
 ## <a name="see-also"></a>Consulte também
 
 - [Analisar resultados do teste de carga na exibição Grafos](../test/analyze-load-test-results-in-the-graphs-view.md)
-- [Como: Criar grafos personalizados](../test/how-to-create-custom-graphs-in-load-test-results.md)
+- [Como criar gráficos personalizados](../test/how-to-create-custom-graphs-in-load-test-results.md)

@@ -8,19 +8,19 @@ helpviewer_keywords:
 - Projects and Solutions Options dialog box
 - Options dialog box, Projects and Solutions
 ms.assetid: 2801f24e-a138-488a-ae3c-e1f99a678ac0
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 31d829a668a2c9690333315c30904623187fe51d
-ms.sourcegitcommit: f42b5318c5c93e2b5ecff44f408fab8bcdfb193d
-ms.translationtype: HT
+ms.openlocfilehash: 783cdf5cef127a39958f14a2dc5ece9a45fcee62
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "69976752"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72655717"
 ---
-# <a name="options-dialog-box-projects-and-solutions--general"></a>Caixa de diálogo Opções: Projetos e Soluções \> Geral
+# <a name="options-dialog-box-projects-and-solutions--general"></a>Caixa de diálogo opções: projetos e soluções \> geral
 
 Use esta página para definir o comportamento do Visual Studio relacionado a projetos e soluções. Para acessar essas opções, selecione **Ferramentas** > **Opções**, expanda **Projetos e Soluções** e, em seguida, selecione **Geral**.
 
@@ -98,6 +98,6 @@ Se você não tiver essa opção selecionada e desejar editar um arquivo de proj
 
 ## <a name="see-also"></a>Consulte também
 
-- [Caixa de diálogo Opções: Projetos e Soluções \> Locais](projects-solutions-locations-options.md)
+- [Caixa de diálogo opções: projetos e soluções \> locais](projects-solutions-locations-options.md)
 - [Caixa de diálogo Opções, Projetos e Soluções, Compilar e Executar](../../ide/reference/options-dialog-box-projects-and-solutions-build-and-run.md)
 - [Caixa de diálogo Opções, Projetos e Soluções, Projetos Web](../../ide/reference/options-dialog-box-projects-and-solutions-web-projects.md)

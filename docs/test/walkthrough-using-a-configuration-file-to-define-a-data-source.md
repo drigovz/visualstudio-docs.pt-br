@@ -6,17 +6,17 @@ helpviewer_keywords:
 - configuration files [Visual Studio ALM], defining data sources
 - unit tests, walkthrough
 - data sources, defining with configuration files
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d6bfb122649f688ece90e981c419325564776215
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
-ms.translationtype: HT
+ms.openlocfilehash: 7ba7ee908a96675a77997902fc96cea72309b747
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66746758"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72659593"
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>Passo a passo: Usando um arquivo de configuração para definir uma fonte de dados
 
@@ -32,7 +32,7 @@ Este passo a passo ilustra como usar uma fonte de dados definida em um arquivo *
 
 - Acessando as fontes de dados usando a classe <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute>.
 
-## <a name="prerequisites"></a>Pré-requisitos
+## <a name="prerequisites"></a>Prerequisites
 
 Para concluir esta explicação passo a passo, será necessário:
 
@@ -196,7 +196,7 @@ Agora que um arquivo *app.config* foi definido, você criará um teste de unidad
 
 3. Crie dois campos em `MyDataTable` chamados `Arg1` e `Arg2` usando o tipo de dados `Number`.
 
-4. Adicione cinco entidades a `MyDataTable` com os seguintes valores para `Arg1` e `Arg2`, respectivamente: (10,50), (3,2), (6,0), (0,8) e (12312,1000).
+4. Adicione cinco entidades em `MyDataTable` com os seguintes valores para `Arg1` e `Arg2`, respectivamente: (10,50), (3,2), (6,0), (0,8) e (12312,1000).
 
 5. Salve e feche o banco de dados.
 
@@ -210,7 +210,7 @@ Agora que um arquivo *app.config* foi definido, você criará um teste de unidad
 
 3. Crie dois cabeçalhos de coluna e nomeie-os como `Val1` e `Val2` em `Sheet1`.
 
-4. Adicione cinco entidades a `Sheet1` com os seguintes valores para `Val1` e `Val2`, respectivamente: (1,1), (2,2), (3,3), (4,4) e (5,0).
+4. Adicione cinco entidades em `Sheet1` com os seguintes valores para `Val1` e `Val2`, respectivamente: (1,1), (2,2), (3,3), (4,4) e (5,0).
 
 5. Salve e feche a planilha.
 
@@ -270,4 +270,4 @@ Agora que um arquivo *app.config* foi definido, você criará um teste de unidad
 ## <a name="see-also"></a>Consulte também
 
 - [Efetuar teste de unidade em seu código](../test/unit-test-your-code.md)
-- [Como: Criar um teste de unidade controlado por dados](../test/how-to-create-a-data-driven-unit-test.md)
+- [Como criar um teste de unidade controlado por dados](../test/how-to-create-a-data-driven-unit-test.md)

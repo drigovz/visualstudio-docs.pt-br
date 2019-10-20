@@ -8,17 +8,17 @@ helpviewer_keywords:
 - load tests, analyzing
 - thresholds in load tests
 ms.assetid: 3d8fac8f-426f-4155-9ced-f7cd4c79792c
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 2a5865eba5ec6971a35104af3ccd090ee6b06410
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 4ecec4826966205d849c07169da954198d687696
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63002300"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72644436"
 ---
-# <a name="how-to-add-a-threshold-rule-using-the-load-test-editor"></a>Como: Adicionar uma regra de limite usando o Editor de Teste de Carga
+# <a name="how-to-add-a-threshold-rule-using-the-load-test-editor"></a>Como adicionar uma regra de limite usando o Editor de Teste de Carga
 
 As regras de limite nos testes de carga comparam um valor de contador de desempenho ou com um valor constante, ou outro valor de contador de desempenho.
 
@@ -36,7 +36,7 @@ As regras de limite nos testes de carga comparam um valor de contador de desempe
 
      A caixa de diálogo **Adicionar regra de limite** é exibida.
 
-5. Escolha um dos dois tipos de regras: **Comparar Constante** e **Comparar Contador**. Selecione o tipo apropriado e defina os valores.
+5. Você pode escolher entre dois tipos de regra: **Comparar Constante** e **Comparar Contador**. Selecione o tipo apropriado e defina os valores.
 
     > [!NOTE]
     > Defina a propriedade **Alertar caso seja superado** como **Verdadeiro** para indicar que ultrapassar um limite é um problema ou como **Falso** para indicar que ficar abaixo do limite é um problema.
@@ -45,4 +45,4 @@ As regras de limite nos testes de carga comparam um valor de contador de desempe
 
 - [Analisar violações de regra de limite](../test/analyze-threshold-rule-violations-in-load-tests.md)
 - [Especificar os conjuntos de contadores e as regras de limite para computadores em um teste de carga](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)
-- [Analisar resultados do teste de carga](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
+- [Analisar resultados de teste de carga](../test/analyze-load-test-results-using-the-load-test-analyzer.md)

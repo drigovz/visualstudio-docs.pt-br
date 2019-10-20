@@ -3,17 +3,17 @@ title: Nós de utilitário
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: ff732221-b731-424c-ad5b-82ef5f21dff5
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f136327716d07ea76771b49d95e6d79f8ac3d1a8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: be9c4c82d74c3878dd9937f81a83510e12f34a82
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62844144"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72634572"
 ---
 # <a name="utility-nodes"></a>Nós de utilitário
 

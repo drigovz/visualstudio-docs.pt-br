@@ -6,17 +6,17 @@ apiname:
 - XAttribute.Value
 apitype: Assembly
 ms.assetid: 019733d2-e050-4120-b537-831cd3fc008e
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fe9127d4a7c691c34f15d399bd32f5e48cc6f0ed
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: fefa3d13f1a38b5d1c329fa9df9220e13e769b1c
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62892814"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72634524"
 ---
 # <a name="value-xattribute-dynamic-property"></a>Valor (propriedade dinâmica de XAttribute)
 
@@ -45,5 +45,5 @@ Esta propriedade é equivalente à propriedade de <xref:System.Xml.Linq.XAttribu
 ## <a name="see-also"></a>Consulte também
 
 - <xref:System.Xml.Linq.XAttribute.Value%2A?displayProperty=fullName>
-- [Propriedades dinâmicas da classe XAttribute](../designers/xattribute-class-dynamic-properties.md)
+- [Propriedades dinâmicas da classe XAttribute](../designers/value-xattribute-dynamic-property.md)
 - [Atributo](../designers/attribute-xelement-dynamic-property.md)

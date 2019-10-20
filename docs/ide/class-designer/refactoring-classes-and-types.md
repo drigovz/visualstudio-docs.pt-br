@@ -14,17 +14,17 @@ helpviewer_keywords:
 - Class Designer [Visual Studio], refactoring classes
 - refactoring, classes
 ms.assetid: dcf07bb4-fa3b-4224-9dec-566fd924a8ce
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d99fc68f6b42b442a87ead02aba888063b1b42a1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 9b82bebb8e7eedcf6bdff7b12048f8c98cabdeb5
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975080"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72631180"
 ---
 # <a name="refactor-classes-and-types-in-class-designer"></a>Refatorar classes e tipos no Designer de Classe
 
@@ -37,9 +37,9 @@ Quando você refatora o código, ele fica mais fácil de entender, manter e mais
 
 |Tarefa|Conteúdo de suporte|
 |----------| - |
-|**Refatorando classes:** Use operações de refatoração para dividir uma classe em classes parciais ou para implementar uma classe base abstrata.|-   [Como: Dividir uma classe em classes parciais](how-to-split-a-class-into-partial-classes.md)|
-|**Trabalhando com interfaces:** No Designer de Classe, você pode implementar uma interface no diagrama de classe conectando-a a uma classe que fornece código para os métodos de interface.|-   [Como: Implementar uma interface](how-to-implement-an-interface.md)|
-|**Refatorando tipos, membros de tipo e parâmetros:** Usando o Designer de Classe, você pode renomear tipos, substituir membros de tipo ou mudá-los de um tipo para outro. Você também pode criar tipos que permitem valor nulo.|-   [Renomear tipos e membros de tipo](#rename-types-and-type-members)<br />-   [Mover membros de tipo de um tipo para outro](#move-type-members-from-one-type-to-another)<br />-   [Como: Criar um tipo que permite valor nulo](how-to-create-a-nullable-type.md)|
+|**Classes de refatoração:** você pode usar as operações de refatoração para dividir uma classe em classes parciais ou para implementar uma classe base abstrata.|-   [Como dividir uma classe em classes parciais](how-to-split-a-class-into-partial-classes.md)|
+|**Trabalho com interfaces:** no Designer de Classe, você pode implementar uma interface no diagrama de classe se ela for conectada a uma classe que fornece o código para os métodos de interface.|-   [Como implementar uma interface](how-to-implement-an-interface.md)|
+|**Refatoração de tipos, membros de tipo e parâmetros:** usando o Designer de Classe, você pode renomear tipos, substituir membros de tipo ou movê-los de um tipo para outro. Você também pode criar tipos que permitem valor nulo.|-   [Renomear tipos e membros de tipo](#rename-types-and-type-members)<br />-   [Mover membros de tipo de um tipo para outro](#move-type-members-from-one-type-to-another)<br />-   [Como criar um tipo que permite valor nulo](how-to-create-a-nullable-type.md)|
 
 ## <a name="rename-types-and-type-members"></a>Renomear tipos e membros de tipo
 

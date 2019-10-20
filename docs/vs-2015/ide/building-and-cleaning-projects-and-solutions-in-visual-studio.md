@@ -1,5 +1,5 @@
 ---
-title: Crie soluções de limpar projetos
+title: Criar soluções de projetos limpos
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -20,20 +20,20 @@ helpviewer_keywords:
 - builds [Visual Studio], preparing
 ms.assetid: 710891fd-379e-42c2-a84b-44a7af694ca0
 caps.latest.revision: 37
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d447d82815046aba6383c2467c2b44c5b7d0d0f0
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 15f2817b6fd0aee312ff41af218d01ad80bc785e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65685712"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72620565"
 ---
 # <a name="building-and-cleaning-projects-and-solutions-in-visual-studio"></a>Compilando e limpando projetos e soluções no Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Usando os procedimentos neste tópico, é possível criar, recriar ou limpar todos ou alguns projetos ou itens de projeto em uma solução. Para obter um tutorial passo a passo, confira [Passo a passo: Criando um aplicativo](../ide/walkthrough-building-an-application.md).
+Usando os procedimentos neste tópico, é possível criar, recriar ou limpar todos ou alguns projetos ou itens de projeto em uma solução. Para ver um tutorial passo a passo, consulte [Instruções passo a passo: criando um aplicativo](../ide/walkthrough-building-an-application.md).
 
 > [!NOTE]
 > A interface do usuário na sua edição do Visual Studio pode ser diferente do que este tópico descreve, dependendo das suas configurações ativas. Para alterar as configurações, abra o menu **Ferramentas** e escolha **Importar e Exportar Configurações**. Para obter mais informações, consulte [Personalizando configurações de desenvolvimento no Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
@@ -75,9 +75,9 @@ Usando os procedimentos neste tópico, é possível criar, recriar ou limpar tod
 
     Quando essa caixa de seleção estiver marcada, somente o projeto de inicialização atual e suas dependências serão compilados quando você executar qualquer uma das seguintes etapas:
 
-   - Na barra de menus, escolha **Debug** > **iniciar depuração** (F5).
+   - Na barra de menus, escolha **depurar**  > **Iniciar Depuração** (F5).
 
-   - Na barra de menus, escolha **construir** > **compilar solução** (CTRL + SHIFT + B).
+   - Na barra de menus, escolha **compilar**  > **Compilar solução** (Ctrl + Shift + B).
 
      Quando essa caixa de seleção estiver desmarcada, todos os projetos, suas dependências e os arquivos de solução serão compilados quando você executar um dos comandos anteriores. Por padrão, essa caixa de seleção está desmarcada.
 
@@ -110,4 +110,4 @@ Usando os procedimentos neste tópico, é possível criar, recriar ou limpar tod
     - Escolha as teclas Ctrl + Break.
 
 ## <a name="see-also"></a>Consulte também
- [Como: Exibir, salvar e configurar arquivos de Log de Build](../ide/how-to-view-save-and-configure-build-log-files.md) [obtendo Logs de Build](../msbuild/obtaining-build-logs-with-msbuild.md) [compilando e criando](../ide/compiling-and-building-in-visual-studio.md) [Noções básicas sobre configurações de Build](../ide/understanding-build-configurations.md) [De depuração e versão de configurações de projeto](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e) [C /C++ referência de criação](https://msdn.microsoft.com/library/100b4ccf-572c-4d1f-970c-fa0bc0cc0d2d) [opções de linha de comando Devenv](../ide/reference/devenv-command-line-switches.md) [soluções e projetos](../ide/solutions-and-projects-in-visual-studio.md)
+ [Como exibir, salvar e configurar arquivos de log de compilação](../ide/how-to-view-save-and-configure-build-log-files.md) [obtendo logs de compilação](../msbuild/obtaining-build-logs-with-msbuild.md) [compilando e criando](../ide/compiling-and-building-in-visual-studio.md) [noções básicas sobre configurações de compilação](../ide/understanding-build-configurations.md) [depurar e liberar configurações do projeto](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e) [referência C/C++ Build ](https://msdn.microsoft.com/library/100b4ccf-572c-4d1f-970c-fa0bc0cc0d2d) [Opções de linha de comando do devenv](../ide/reference/devenv-command-line-switches.md) [soluções e projetos](../ide/solutions-and-projects-in-visual-studio.md)

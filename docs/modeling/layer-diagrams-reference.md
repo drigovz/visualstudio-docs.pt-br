@@ -15,17 +15,17 @@ helpviewer_keywords:
 - dependency diagrams
 - diagrams - modeling, layer
 - constraints, architectural
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0de634ee62387e50fed89e4465842b2801748f45
-ms.sourcegitcommit: 0f44ec8ba0263056ad04d2d0dc904ad4206ce8fc
+ms.openlocfilehash: 7711d0b0f369f43cc7becf92cbdcfc986cd3a6a8
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70766150"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661491"
 ---
 # <a name="dependency-diagrams-reference"></a>Diagramas de dependência: referência
 
@@ -48,7 +48,7 @@ Use um diagrama de dependência para ajudá-lo a executar as seguintes tarefas:
 
 - Reforce a arquitetura pretendida durante o desenvolvimento e a manutenção do seu código, incluindo a validação com o check-in e as operações de compilação.
 
-Este tópico descreve os elementos que você pode usar em um diagrama de dependência. Para obter informações mais detalhadas sobre como criar e desenhar diagramas de dependência [, consulte Diagramas de dependência: Diretrizes](../modeling/layer-diagrams-guidelines.md). Para obter mais informações sobre padrões de camadas, visite o [site patterns & Practices](http://go.microsoft.com/fwlink/?LinkId=145794).
+Este tópico descreve os elementos que você pode usar em um diagrama de dependência. Para obter informações mais detalhadas sobre como criar e desenhar diagramas de dependência, consulte [diagramas de dependência: diretrizes](../modeling/layer-diagrams-guidelines.md). Para obter mais informações sobre padrões de camadas, visite o [site patterns & Practices](http://go.microsoft.com/fwlink/?LinkId=145794).
 
 ## <a name="reading-dependency-diagrams"></a>Lendo diagramas de dependência
 
@@ -58,9 +58,9 @@ A tabela a seguir descreve os elementos que você pode usar em um diagrama de de
 
 |**La**|**Elemento**|**Descrição**|
 |-|-|-|
-|1|**Camada**|Um grupo lógico de artefatos físicos em seu sistema. Esses artefatos podem ser namespaces, projetos, classes, métodos e assim por diante.<br /><br /> Para ver os artefatos que estão vinculados a uma camada, abra o menu de atalho da camada e escolha **exibir links** para abrir o **Gerenciador de camadas**.<br /><br /> Para obter mais informações, consulte [Gerenciador de camadas](#Explorer).<br /><br /> -   **Dependências de namespace proibidos** – especifica que os artefatos associados a essa camada não podem depender dos namespaces especificados.<br />-   **Namespaces proibidos** – especifica que os artefatos associados a essa camada não devem pertencer aos namespaces especificados.<br />-   **Namespaces necessários** -especifica que os artefatos associados a essa camada devem pertencer a um dos namespaces especificados.|
-|2|**Estados**|Indica que uma camada pode usar a funcionalidade em outra camada, mas não vice-versa.<br /><br /> -   **Direction** -especifica a direção da dependência.|
-|3|**Dependência bidirecional**|Indica que uma camada pode usar a funcionalidade em outra camada e vice-versa.<br /><br /> -   **Direction** -especifica a direção da dependência.|
+|1|**Camada**|Um grupo lógico de artefatos físicos em seu sistema. Esses artefatos podem ser namespaces, projetos, classes, métodos e assim por diante.<br /><br /> Para ver os artefatos que estão vinculados a uma camada, abra o menu de atalho da camada e escolha **exibir links** para abrir o **Gerenciador de camadas**.<br /><br /> Para obter mais informações, consulte [Gerenciador de camadas](#Explorer).<br /><br /> **dependências de namespace proibidas** -   -especifica que os artefatos associados a essa camada não podem depender dos namespaces especificados.<br />-    de**namespaces proibidos** – especifica que os artefatos associados a essa camada não devem pertencer aos namespaces especificados.<br />-   **namespaces necessários** -especifica que os artefatos associados a essa camada devem pertencer a um dos namespaces especificados.|
+|2|**Estados**|Indica que uma camada pode usar a funcionalidade em outra camada, mas não vice-versa.<br /><br /> **direção** de -   -especifica a direção da dependência.|
+|3|**Dependência bidirecional**|Indica que uma camada pode usar a funcionalidade em outra camada e vice-versa.<br /><br /> **direção** de -   -especifica a direção da dependência.|
 |4|**Comentário**|Use para adicionar notas gerais ao diagrama ou aos elementos no diagrama.|
 |5|**Link de comentário**|Use para vincular comentários a elementos no diagrama.|
 
@@ -93,7 +93,7 @@ O **Gerenciador de camadas** é aberto e mostra os artefatos que estão vinculad
 |-|-|
 |**Às**|O tipo de artefato, como uma classe, um namespace, um arquivo de origem e assim por diante|
 |**Camada**|A camada que vincula ao artefato|
-|**Dá suporte à validação**|Se **for true**, o processo de validação de camada poderá verificar se o projeto está de acordo com as dependências de ou para esse elemento.<br /><br /> Se **for false**, o link não participará do processo de validação de camada.<br /><br /> Para obter mais informações, [consulte Diagramas de dependência: Diretrizes](../modeling/layer-diagrams-guidelines.md).|
+|**Dá suporte à validação**|Se **for true**, o processo de validação de camada poderá verificar se o projeto está de acordo com as dependências de ou para esse elemento.<br /><br /> Se **for false**, o link não participará do processo de validação de camada.<br /><br /> Para obter mais informações, consulte [diagramas de dependência: diretrizes](../modeling/layer-diagrams-guidelines.md).|
 |**Identificador**|A referência ao artefato vinculado|
 
 ## <a name="see-also"></a>Consulte também

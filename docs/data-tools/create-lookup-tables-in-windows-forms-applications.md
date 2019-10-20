@@ -6,56 +6,56 @@ helpviewer_keywords:
 - lookup tables
 - lookup tables, creating
 ms.assetid: 0edd5385-c381-4b17-9096-74e2778db9d5
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 782f5b422058d1564bde04251a92d95145f6edf3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f7660eba181c0a08ea3736c36e84bc7c9a574e10
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62567270"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72642252"
 ---
 # <a name="create-lookup-tables-in-windows-forms-applications"></a>Criar tabelas de pesquisa em aplicativos do Windows Forms
 
-O termo *tabela de pesquisa* descreve controles que estão associados às tabelas de dois dados relacionados. Esses controles de pesquisa exibem dados da primeira tabela com base em um valor selecionado na segunda tabela.
+A *tabela de pesquisa* de termos descreve os controles associados a duas tabelas de dados relacionadas. Esses controles de pesquisa exibem dados da primeira tabela com base em um valor selecionado na segunda tabela.
 
-Você pode criar tabelas de pesquisa, arrastando o nó principal de uma tabela pai (da [janela Data Sources](add-new-data-sources.md#data-sources-window)) para um controle em seu formulário que já está associado à coluna na tabela filho relacionada.
+Você pode criar tabelas de pesquisa arrastando o nó principal de uma tabela pai (da [janela fontes de dados](add-new-data-sources.md#data-sources-window)) para um controle no formulário que já esteja associado à coluna na tabela filho relacionada.
 
-Por exemplo, considere uma tabela de `Orders` em um banco de dados de vendas. Cada registro a `Orders` tabela inclui um `CustomerID`, indicando qual cliente fez o pedido. O `CustomerID` é uma chave estrangeira apontando para um registro de cliente no `Customers` tabela. Nesse cenário, você expandirá a `Orders` na tabela o **fontes de dados** janela e defina o nó principal como **detalhes**. Em seguida, defina a `CustomerID` coluna para usar um <xref:System.Windows.Forms.ComboBox> (ou qualquer outro controle que dá suporte à vinculação de pesquisa) e arraste o `Orders` nó para seu formulário. Por fim, arraste o `Customers` nó para o controle que está associado à coluna relacionada — nesse caso, o <xref:System.Windows.Forms.ComboBox> associado para o `CustomerID` coluna.
+Por exemplo, considere uma tabela de `Orders` em um banco de dados de vendas. Cada registro na tabela de `Orders` inclui um `CustomerID`, indicando qual cliente fez o pedido. O `CustomerID` é uma chave estrangeira que aponta para um registro de cliente na tabela `Customers`. Nesse cenário, você expande a tabela `Orders` na janela **fontes de dados** e define o nó principal como **detalhes**. Em seguida, defina a coluna `CustomerID` para usar uma <xref:System.Windows.Forms.ComboBox> (ou qualquer outro controle que dê suporte à associação de pesquisa) e arraste o nó `Orders` para o formulário. Por fim, arraste o nó `Customers` para o controle que está associado à coluna relacionada — nesse caso, o <xref:System.Windows.Forms.ComboBox> associado à coluna `CustomerID`.
 
-## <a name="to-databind-a-lookup-control"></a>Vincular dados de um controle de pesquisa
+## <a name="to-databind-a-lookup-control"></a>Para associar um controle de pesquisa
 
-1. Com o projeto aberto, abra o **fontes de dados** janela escolhendo **exibição** > **Other Windows** > **defontesdedados**.
+1. Com o projeto aberto, abra a janela **fontes de dados** escolhendo **Exibir**  > **outras** fontes de**dados**do Windows  > .
 
     > [!NOTE]
-    > Tabelas de pesquisa requerem que as duas tabelas relacionadas ou objetos estejam disponíveis na **fontes de dados** janela. Para obter mais informações, consulte [relacionamentos em conjuntos de dados](relationships-in-datasets.md).
+    > As tabelas de pesquisa exigem que duas tabelas ou objetos relacionados estejam disponíveis na janela **fontes de dados** . Para obter mais informações, consulte [relações em conjuntos de](relationships-in-datasets.md)dados.
 
-2. Expanda os nós na **fontes de dados** janela até que você possa ver a tabela pai e todas as suas colunas e a tabela filho relacionada e todas as suas colunas.
+2. Expanda os nós na janela **Data Sources** até que você possa ver a tabela pai e todas as suas colunas e a tabela filho relacionada e todas as suas colunas.
 
     > [!NOTE]
     > O nó da tabela filho é o nó que aparece como um nó filho expansível na tabela pai.
 
-3. Altere o tipo subjacente da tabela filho para **detalhes** selecionando **detalhes** na lista de controle no nó da tabela filho. Para obter mais informações, consulte [definir o controle a ser criado quando arrastado da janela fontes de dados](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
+3. Altere o tipo de descarte da tabela filho para **detalhes** selecionando **detalhes** na lista de controle no nó da tabela filho. Para obter mais informações, consulte [definir o controle a ser criado ao arrastar da janela fontes de dados](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
 
-4. Localize o nó que relaciona as duas tabelas (o `CustomerID` nó no exemplo anterior). Altere seu tipo subjacente para um <xref:System.Windows.Forms.ComboBox> , selecionando **ComboBox** na lista de controle.
+4. Localize o nó que relaciona as duas tabelas (o `CustomerID` nó no exemplo anterior). Altere seu tipo de descarte para um <xref:System.Windows.Forms.ComboBox> selecionando **ComboBox** na lista de controles.
 
-5. Arraste o nó da tabela filho principal dos **fontes de dados** window para seu formulário.
+5. Arraste o nó da tabela filho principal da janela **fontes de dados** para o formulário.
 
-     Controles de ligação de dados (com rótulos descritivos) e uma ferramenta da faixa (<xref:System.Windows.Forms.BindingNavigator>) aparecem no formulário. Um [DataSet](../data-tools/dataset-tools-in-visual-studio.md), [TableAdapter](../data-tools/create-and-configure-tableadapters.md), <xref:System.Windows.Forms.BindingSource>, e <xref:System.Windows.Forms.BindingNavigator> aparecem na bandeja de componentes.
+     Os controles de ligação de ligações (com rótulos descritivos) e uma faixa de ferramentas (<xref:System.Windows.Forms.BindingNavigator>) aparecem no formulário. Um [DataSet](../data-tools/dataset-tools-in-visual-studio.md), [TableAdapter](../data-tools/create-and-configure-tableadapters.md), <xref:System.Windows.Forms.BindingSource> e <xref:System.Windows.Forms.BindingNavigator> aparecem na bandeja de componentes.
 
-6. Agora, arraste o nó da tabela pai principal do **fontes de dados** janela diretamente para o controle de pesquisa (o <xref:System.Windows.Forms.ComboBox>).
+6. Agora, arraste o nó da tabela pai principal da janela **fontes de dados** diretamente para o controle de pesquisa (o <xref:System.Windows.Forms.ComboBox>).
 
-     As associações de pesquisa agora são estabelecidas. Consulte a tabela a seguir para as propriedades específicas que foram definidas no controle.
+     As associações de pesquisa agora são estabelecidas. Consulte a tabela a seguir para obter as propriedades específicas que foram definidas no controle.
 
-    |Propriedade|Explicação da configuração|
+    |propriedade|Explicação da configuração|
     |--------------| - |
-    |**DataSource**|O Visual Studio define esta propriedade para o <xref:System.Windows.Forms.BindingSource> criado para a tabela que você arrasta para o controle (em oposição ao <xref:System.Windows.Forms.BindingSource> criado quando o controle foi criado).<br /><br /> Se você precisar fazer um ajuste, defina isso como o <xref:System.Windows.Forms.BindingSource> da tabela com a coluna que você deseja exibir.|
-    |**DisplayMember**|O Visual Studio define essa propriedade para a primeira coluna após a chave primária que tem um tipo de dado de cadeia da tabela que você arrasta para o controle.<br /><br /> Se você precisar fazer um ajuste, defina isso para o nome da coluna que deseja exibir.|
-    |**ValueMember**|O Visual Studio define essa propriedade para a primeira coluna participante da chave primária, ou a primeira coluna na tabela, se nenhuma chave for definida.<br /><br /> Se você precisar fazer um ajuste, defina isso para a chave primária na tabela com a coluna que você deseja exibir.|
-    |**SelectedValue**|Visual Studio define essa propriedade como a coluna original descartada dos **fontes de dados** janela.<br /><br /> Se você precisar fazer um ajuste, defina isso para a coluna de chave estrangeira na tabela relacionada.|
+    |**DataSource**|O Visual Studio define esta propriedade para o <xref:System.Windows.Forms.BindingSource> criado para a tabela que você arrasta para o controle (em oposição ao <xref:System.Windows.Forms.BindingSource> criado quando o controle foi criado).<br /><br /> Se você precisar fazer um ajuste, defina isso para a <xref:System.Windows.Forms.BindingSource> da tabela com a coluna que você deseja exibir.|
+    |**DisplayMember**|O Visual Studio define essa propriedade para a primeira coluna após a chave primária que tem um tipo de dado de cadeia da tabela que você arrasta para o controle.<br /><br /> Se você precisar fazer um ajuste, defina-o como o nome da coluna que você deseja exibir.|
+    |**ValueMember**|O Visual Studio define essa propriedade para a primeira coluna participante da chave primária, ou a primeira coluna na tabela, se nenhuma chave for definida.<br /><br /> Se você precisar fazer um ajuste, defina-o como a chave primária na tabela com a coluna que você deseja exibir.|
+    |**SelectedValue**|O Visual Studio define essa propriedade como a coluna original descartada da janela **fontes de dados** .<br /><br /> Se você precisar fazer um ajuste, defina isso para a coluna de chave estrangeira na tabela relacionada.|
 
 ## <a name="see-also"></a>Consulte também
 

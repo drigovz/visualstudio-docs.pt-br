@@ -3,20 +3,20 @@ title: Introdução ao WPF
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: b8d7cf43-d1f2-4f3d-adb0-4f3a6428edc0
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 dev_langs:
 - csharp
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: bb88c5b718c0f949825a2542b5a084d4e8ca15b9
-ms.sourcegitcommit: dc12a7cb66124596089f01d3e939027ae562ede9
+ms.openlocfilehash: 5fe70c531a109294b49a1f6104f535cf8aca5a45
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71962957"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72635439"
 ---
 # <a name="wpf-overview"></a>Visão geral do WPF
 
@@ -139,7 +139,7 @@ Namespace SDKSample
 End Namespace
 ```
 
-Neste exemplo, o code-behind implementa uma classe derivada da classe <xref:System.Windows.Window>. O atributo `x:Class` é usado para associar a marcação com a classe code-behind. `InitializeComponent` é chamado de construtor da classe code-behind para mesclar a interface do usuário que é definida na marcação com a classe code-behind. (`InitializeComponent` é gerado para você quando seu aplicativo é criado, motivo pelo qual você não precisa implementá-lo manualmente.) A combinação de `x:Class` e `InitializeComponent` assegura que sua implementação será inicializada corretamente sempre que ela for criada. A classe code-behind também implementa um manipulador de eventos para o evento <xref:System.Windows.Controls.Primitives.ButtonBase.Click> do botão. Quando o botão é clicado, o manipulador de eventos mostra uma caixa de mensagem ao chamar o método <xref:System.Windows.MessageBox.Show%2A?displayProperty=fullName>.
+Neste exemplo, o code-behind implementa uma classe derivada da classe <xref:System.Windows.Window>. O atributo `x:Class` é usado para associar a marcação com a classe code-behind. `InitializeComponent` é chamado de construtor da classe code-behind para mesclar a interface do usuário que é definida na marcação com a classe code-behind. (`InitializeComponent` é gerado para você quando seu aplicativo é criado, motivo pelo qual você não precisa implementá-lo manualmente.) A combinação de `x:Class` e `InitializeComponent` garantir que sua implementação seja inicializada corretamente sempre que for criada. A classe code-behind também implementa um manipulador de eventos para o evento <xref:System.Windows.Controls.Primitives.ButtonBase.Click> do botão. Quando o botão é clicado, o manipulador de eventos mostra uma caixa de mensagem ao chamar o método <xref:System.Windows.MessageBox.Show%2A?displayProperty=fullName>.
 
 A figura a seguir mostra o resultado quando o botão é clicado.
 
@@ -195,17 +195,17 @@ A base do sistema de layout é o posicionamento relativo, que aumenta a capacida
 
 O sistema de layout é exposto aos controles filho por meio de classes base do WPF. Para layouts comuns, como grades, empilhamento e encaixe, o WPF inclui vários controles de layout:
 
-- <xref:System.Windows.Controls.Canvas>: Os controles filho fornecem seus próprios layouts.
+- <xref:System.Windows.Controls.Canvas>: os controles filho fornecem seus próprios layouts.
 
-- <xref:System.Windows.Controls.DockPanel>: Os controles filho são alinhados com as bordas do painel.
+- <xref:System.Windows.Controls.DockPanel>: os controles filho são alinhados com as bordas do painel.
 
-- <xref:System.Windows.Controls.Grid>: Os controles filho são posicionados por linhas e colunas.
+- <xref:System.Windows.Controls.Grid>: os controles filho são posicionados por linhas e colunas.
 
-- <xref:System.Windows.Controls.StackPanel>: Os controles filho são empilhados verticalmente ou horizontalmente.
+- <xref:System.Windows.Controls.StackPanel>: os controles filho são empilhados verticalmente ou horizontalmente.
 
-- <xref:System.Windows.Controls.VirtualizingStackPanel>: Os controles filho são virtualizados e organizados em uma única linha, que é orientada horizontal ou verticalmente.
+- <xref:System.Windows.Controls.VirtualizingStackPanel>: os controles filho são virtualizados e organizados em uma única linha, que é orientada horizontal ou verticalmente.
 
-- <xref:System.Windows.Controls.WrapPanel>: Os controles filho são posicionados na ordem da esquerda para a direita e, quando há mais controles na linha atual do que o espaço permite, sofrem quebra automática para a próxima linha.
+- <xref:System.Windows.Controls.WrapPanel>: os controles filho são posicionados na ordem da esquerda para a direita e, quando há mais controles na linha atual do que o espaço permite, sofrem quebra automática para a próxima linha.
 
 O exemplo a seguir usa <xref:System.Windows.Controls.DockPanel> para o layout de vários controles <xref:System.Windows.Controls.TextBox>.
 
@@ -666,7 +666,7 @@ Assim como com qualquer plataforma de desenvolvimento, o WPF pode ser usado de v
 Analisamos os principais recursos do WPF. Agora, é hora de criar seu primeiro aplicativo do WPF.
 
 > [!div class="nextstepaction"]
-> [Passo a passo: Meu primeiro aplicativo da área de trabalho do WPF](/dotnet/framework/wpf/getting-started/walkthrough-my-first-wpf-desktop-application)
+> [Passo a passo: meu primeiro aplicativo da área de trabalho do WPF](/dotnet/framework/wpf/getting-started/walkthrough-my-first-wpf-desktop-application)
 
 ## <a name="see-also"></a>Consulte também
 

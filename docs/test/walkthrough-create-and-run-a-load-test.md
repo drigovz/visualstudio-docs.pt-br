@@ -7,15 +7,15 @@ helpviewer_keywords:
 - unit tests, load test walkthrough
 - load tests, walkthrough
 ms.assetid: bbf075a5-96d5-48ed-a03c-330f0fc04748
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: a319181348f86ab8f16b2cc2b7e9a6e6f3a16c13
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 78bce7f8a05032fa8654021d89598ede67fa08c0
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62976272"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72659684"
 ---
 # <a name="walkthrough-create-and-run-a-load-test-that-contains-unit-tests"></a>Passo a passo: Criar e executar um teste de carga que contém testes de unidade
 
@@ -35,19 +35,19 @@ Nesta explicação passo a passo, você concluirá as seguintes tarefas:
 
 - Executar um teste de carga.
 
-- Execute as etapas descritas em [Passo a passo: Criando e executando testes de unidade para código gerenciado](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md) para criar uma biblioteca de classes C# simples que contém um projeto de desempenho Web e de teste de carga com alguns testes de unidade.
+- Execute as etapas de [Passo a passo: Criando e executando testes de unidade para código gerenciado](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md) para criar uma biblioteca de classes C# simples que contém um projeto de desempenho Web e de teste de carga com alguns testes de unidade.
 
 ## <a name="create-a-load-test-containing-unit-tests-using-the-new-load-test-wizard"></a>Criar um teste de carga que contém testes de unidade usando o Novo Assistente de Teste de Carga
 
 ### <a name="to-start-the-new-load-test-wizard"></a>Para iniciar o Novo assistente de teste de carga
 
-1. Abra a solução Banco criada em [Passo a passo: Criando e executando testes de unidade para código gerenciado](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md).
+1. Abra a solução Bank criada em [Passo a passo: Criando e executando testes de unidade para código gerenciado](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md).
 
 2. No **Gerenciador de Soluções**, abra o menu de atalho do nó da solução de Banco, escolha **Adicionar** e **Novo Projeto**.
 
      A caixa de diálogo **Adicionar Novo Projeto** é exibida.
 
-3. Na caixa de diálogo **Adicionar Novo Projeto**, expanda **Visual C#** e escolha **Teste**. Na lista de modelos, escolha **Projeto de teste de carga e desempenho da Web** e, no campo **Nome**, digite `BankLoadTest`. Escolha **OK**.
+3. Na caixa de diálogo **Adicionar Novo Projeto**, expanda **Visual C#** e escolha **Teste**. Na lista de modelos, escolha **Projeto de teste de carga e desempenho da Web** e, no campo **Nome**, digite `BankLoadTest`. Clique em **OK**.
 
      O projeto de teste de desempenho na Web e de carga BankLoadTest é adicionado à solução.
 
@@ -88,7 +88,7 @@ Nesta explicação passo a passo, você concluirá as seguintes tarefas:
 
 ### <a name="to-select-test-mix-model-for-the-scenario"></a>Para selecionar o modelo de combinação de testes para o cenário
 
-1. Em **Como a combinação de testes deve ser modelada?**, selecione **Baseado no número total de testes**.
+1. Em **Como a combinação de testes deve ser modelada?** , selecione **Baseado no número total de testes**.
 
 2. Escolha **Avançar**.
 

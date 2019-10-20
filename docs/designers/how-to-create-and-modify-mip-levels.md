@@ -1,21 +1,21 @@
 ---
-title: 'Como: Criar e modificar os níveis de MIP'
+title: Como criar e modificar níveis MIP
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: f64d4369-2307-4175-a39a-2e45506f7fa1
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 026916a86609f665fdb8329b9c9eacf147be51e3
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: 56fa2875b8a0893e55f7fc373b933b85b4fa8207
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68924264"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72635520"
 ---
-# <a name="how-to-create-and-modify-mip-levels"></a>Como: Criar e modificar os níveis de MIP
+# <a name="how-to-create-and-modify-mip-levels"></a>Como criar e modificar níveis de MIP
 Este documento demonstra como usar o **Editor de Imagens** para gerar e modificar *níveis de MIP* para um nível de detalhe (LoD) de espaço de textura.
 
 ## <a name="generating-mip-levels"></a>Gerando níveis MIP
@@ -23,7 +23,7 @@ Este documento demonstra como usar o **Editor de Imagens** para gerar e modifica
 
 #### <a name="to-generate-mip-levels"></a>Para gerar os níveis de MIP
 
-1. Comece com uma textura básica, conforme descrito em [Como: Criar uma textura básica](../designers/how-to-create-a-basic-texture.md). Para obter melhores resultados, especifique uma textura com largura e altura que sejam uma potência de dois em tamanho, por exemplo, 256, 512, 1024 e assim por diante.
+1. Comece com uma textura básica, conforme descrito em [Como criar uma textura básica](../designers/how-to-create-a-basic-texture.md). Para obter melhores resultados, especifique uma textura com largura e altura que sejam uma potência de dois em tamanho, por exemplo, 256, 512, 1024 e assim por diante.
 
 2. Gere os níveis de MIP. Na barra de ferramentas **Modo do Editor de Imagens**, escolha **Avançado** > **Ferramentas** > **Gerar Mips**.
 
@@ -39,8 +39,8 @@ Para obter efeitos especiais ou aumentar a qualidade da imagem em níveis espec�
 2. Depois de selecionar o nível de MIP que você deseja modificar, você pode usar as ferramentas de desenho para modificá-la sem alterar o conteúdo de outros níveis de MIP. As ferramentas de desenho estão disponíveis na barra de ferramentas **Editor de Imagens**. Depois de selecionar uma ferramenta, você pode alterar suas propriedades na janela **Propriedades**. Para obter informações sobre as ferramentas de desenho e suas propriedades, consulte [Editor de Imagens](../designers/image-editor.md).
 
 > [!NOTE]
-> Se você não precisar modificar o conteúdo dos níveis de MIP individuais – como você poderia fazer para obter certos efeitos – é recomendável que você gere mipmaps com base na textura de origem no momento do build. Isso ajuda a assegurar que os níveis de MIP fiquem em sincronia com a textura de origem porque modificações em um nível de MIP não são propagadas automaticamente para outros níveis. Para obter mais informações de como gerar mipmaps no tempo de build, confira [Como: Exportar uma textura que contém mipmaps](../designers/how-to-export-a-texture-that-contains-mipmaps.md).
+> Se você não precisar modificar o conteúdo dos níveis de MIP individuais – como você poderia fazer para obter certos efeitos – é recomendável que você gere mipmaps com base na textura de origem no momento do build. Isso ajuda a assegurar que os níveis de MIP fiquem em sincronia com a textura de origem porque modificações em um nível de MIP não são propagadas automaticamente para outros níveis. Para obter mais informações de como gerar mipmaps no tempo de build, confira [Como exportar uma textura que contém mipmaps](../designers/how-to-export-a-texture-that-contains-mipmaps.md).
 
 ## <a name="see-also"></a>Consulte também
 
-- [Como: Criar uma textura básica](../designers/how-to-create-a-basic-texture.md)
+- [Como criar uma textura básica](../designers/how-to-create-a-basic-texture.md)

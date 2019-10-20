@@ -15,17 +15,17 @@ f1_keywords:
 helpviewer_keywords:
 - solutions [Visual Studio]
 - projects [Visual Studio]
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c63bc4b52e47c52096d0aa2d339b3c6dc96d7fe9
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 7ca611d7ae1faa86ae7878b2f824ce27b9872713
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71251892"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72621584"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Soluções e projetos no Visual Studio
 
@@ -42,7 +42,7 @@ Ao criar um aplicativo ou site no Visual Studio, você começa com um *projeto*d
 
 O Visual Studio usa o [MSBuild](../msbuild/msbuild.md) para compilar cada projeto em uma solução, e cada projeto contém um arquivo de projeto do MSBuild. A extensão de arquivo reflete o tipo de projeto, por exemplo, C# um projeto (. csproj), um projeto Visual Basic (. vbproj) ou um projeto de banco de dados (. dbproj). O arquivo de projeto é um documento XML que contém todas as informações e instruções de que o MSBuild precisa para criar seu projeto, incluindo conteúdo, requisitos de plataforma, informações de controle de versão, servidor Web ou configurações de servidor de banco de dados e tarefas para executar.
 
-Os arquivos de projeto são baseados no [esquema XML do MSBuild](../msbuild/msbuild-project-file-schema-reference.md). Para examinar o conteúdo dos arquivos de projeto mais recentes do [estilo SDK](../msbuild/how-to-use-project-sdk.md) no Visual Studio, clique com o botão direito do mouse no nó do projeto em **Gerenciador de soluções** e selecione **Editar \<ProjectName\>** . Para examinar o conteúdo de .NET Framework e outros projetos desse estilo, primeiro descarregue o projeto (clique com o botão direito do mouse no nó do projeto em **Gerenciador de soluções** e selecione **descarregar projeto**). Em seguida, clique com o botão direito do mouse no projeto e escolha **Editar \<ProjectName\>** .
+Os arquivos de projeto são baseados no [esquema XML do MSBuild](../msbuild/msbuild-project-file-schema-reference.md). Para examinar o conteúdo de [arquivos de projeto do estilo SDK](../msbuild/how-to-use-project-sdk.md) mais recentes no Visual Studio, clique com o botão direito do mouse no nó do projeto em **Gerenciador de soluções** e selecione **Editar \<projectname \>** . Para examinar o conteúdo de .NET Framework e outros projetos desse estilo, primeiro descarregue o projeto (clique com o botão direito do mouse no nó do projeto em **Gerenciador de soluções** e selecione **descarregar projeto**). Em seguida, clique com o botão direito do mouse no projeto e escolha **editar \<projectname \>** .
 
 > [!NOTE]
 > Você não precisa usar soluções ou projetos no Visual Studio para editar, compilar e depurar código. Você pode simplesmente abrir a pasta que contém os arquivos de origem no Visual Studio e começar a editá-los. Para obter mais informações, consulte [Desenvolver código no Visual Studio sem projetos nem soluções](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md).
@@ -53,7 +53,7 @@ Um projeto está contido dentro de uma *solução*. Apesar do nome, uma soluçã
 
 O Visual Studio usa dois tipos de arquivos ( *.sln* e *.suo*) para armazenar configurações de soluções:
 
-|Extensão|Nome|Descrição|
+|Extensão|Name|Descrição|
 |---------------|----------|-----------------|
 |.sln|Solução do Visual Studio|Organiza projetos, itens de projeto e itens de solução na solução.|
 |.suo|Opções do usuário da solução|Armazena configurações e personalizações no nível do usuário, como pontos de interrupção.|

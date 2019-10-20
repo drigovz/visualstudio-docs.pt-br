@@ -3,17 +3,17 @@ title: XML Schema Explorer-Pesquisar o conjunto de esquema
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: ec1395e0-d03c-4130-810d-f2db656937bd
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 898b79e53773c09d60e32a3ef262346b0371d2af
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: ff7684c56a22ef760655563d1d9f58e2ff01b0c9
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926811"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72604648"
 ---
 # <a name="search-the-schema-set"></a>Pesquisar o conjunto de esquemas
 
@@ -43,7 +43,7 @@ O **XML Schema Explorer** também inclui pesquisas internas que você pode acess
 
 ## <a name="display-and-navigate-search-results"></a>Exibir e navegar pelos resultados da pesquisa
 
-Depois que a pesquisa é concluída, o painel de resultados de resumo é adicionado à barra de ferramentas com os resultados da pesquisa. Os resultados da pesquisa também são realçados no **XML Schema Explorer** e marcados por tiques na barra de rolagem vertical. Você pode navegar pelos resultados da pesquisa usando o botão **ir para o próximo resultado da pesquisa** e ir para os botões de **resultado da pesquisa anterior** no painel resultados do resumo da barra de ferramentas do **Gerenciador de esquema XML** ; usando as teclas de teclado **F3** e **Shift**+**F3**; ou clicando nas marcas de escala na barra de rolagem.
+Depois que a pesquisa é concluída, o painel de resultados de resumo é adicionado à barra de ferramentas com os resultados da pesquisa. Os resultados da pesquisa também são realçados no **XML Schema Explorer** e marcados por tiques na barra de rolagem vertical. Você pode navegar pelos resultados da pesquisa usando o botão **ir para o próximo resultado da pesquisa** e ir para os botões de **resultado da pesquisa anterior** no painel resultados do resumo da barra de ferramentas do **Gerenciador de esquema XML** ; usando as teclas de teclado **F3** e **Shift** +**F3**; ou clicando nas marcas de escala na barra de rolagem.
 
 Você pode adicionar os resultados da pesquisa ao espaço de trabalho clicando no botão **adicionar nós realçados ao espaço de trabalho** no painel resultados do resumo.
 
