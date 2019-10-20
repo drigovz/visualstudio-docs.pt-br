@@ -28,15 +28,15 @@ helpviewer_keywords:
 - XAML view settings, attribute spacing
 ms.assetid: ad3820b1-0d94-4807-a74c-c3467ed973a2
 caps.latest.revision: 20
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 8f820ac16667a9550db17bc252c547f16b81e70b
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 319e09d2438b23c217f7820fe4288758a595be56
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65696014"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72662215"
 ---
 # <a name="options-text-editor-xaml-formatting"></a>Opções, Editor de Texto, XAML, Formatação
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -117,16 +117,16 @@ Use essa configuração para controlar se o modo de exibição de Design aparece
 
 |||
 |-|-|
-|**Sempre abrir documentos em modo de exibição XAML completo**|Especifica se os documentos XAML aparecem apenas no modo de exibição XAML, sem a exibição de Design. É útil para carregar documentos grandes.|
+|**Sempre abrir documentos na exibição XAML completa**|Especifica se os documentos XAML aparecem apenas no modo de exibição XAML, sem modo de exibição de Design. Útil para carregar documentos grandes.|
 
 ## <a name="toolbox"></a>Caixa de Ferramentas
-Use essa configuração para especificar se os controles de usuário e controles personalizados são mostrados na caixa de ferramentas.
+Use essa configuração para especificar se controles de usuário e controles personalizados são mostrados na caixa de ferramentas.
 
 |||
 |-|-|
 |**Popular automaticamente os itens da caixa de ferramentas**|Especifica se os controles de usuário e os controles personalizados na solução atual são mostrados automaticamente na caixa de ferramentas.|
 
 ## <a name="see-also"></a>Consulte também
-[XAML no WPF](https://msdn.microsoft.com/library/5d858575-a83b-42df-ad3f-047ed2d6e3c8)  
-[Como: Alterar as configurações do modo de exibição XAML](https://msdn.microsoft.com/aee87c79-ca01-4f84-8fb7-a9e47048ee47)  
-[Passo a passo do Code e XAML](https://msdn.microsoft.com/b3ff41a0-a2a3-4f61-b698-ac88ec8f799c)
+[XAML no WPF](https://msdn.microsoft.com/library/5d858575-a83b-42df-ad3f-047ed2d6e3c8) 
+[como: alterar as configurações de exibição XAML](https://msdn.microsoft.com/aee87c79-ca01-4f84-8fb7-a9e47048ee47) 
+[instruções XAML e código](https://msdn.microsoft.com/b3ff41a0-a2a3-4f61-b698-ac88ec8f799c)

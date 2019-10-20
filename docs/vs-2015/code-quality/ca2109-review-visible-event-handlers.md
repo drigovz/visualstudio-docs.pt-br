@@ -1,5 +1,5 @@
 ---
-title: 'CA2109: Revisar manipuladores de eventos visíveis | Microsoft Docs'
+title: 'CA2109: examinar os manipuladores de eventos visíveis | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,17 +12,17 @@ helpviewer_keywords:
 - CA2109
 ms.assetid: 8f8fa0ee-e94e-400e-b516-24d8727725d7
 caps.latest.revision: 20
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 9cdf4777aa9ec0222656ac02376c5343d2138c0d
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 38a1b7c00c79c7a2e89ef64598b8c409709561ef
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65687378"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72658715"
 ---
-# <a name="ca2109-review-visible-event-handlers"></a>CA2109: Examinar manipuladores de eventos visíveis
+# <a name="ca2109-review-visible-event-handlers"></a>CA2109: revisar manipuladores de eventos visíveis
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -36,30 +36,30 @@ ms.locfileid: "65687378"
  Um método público ou protegido de tratamento de eventos foi detectado.
 
 ## <a name="rule-description"></a>Descrição da Regra
- Um método de manipulação de eventos visível externamente apresenta um problema de segurança que exige a revisão.
+ Um método de manipulação de eventos visível externamente apresenta um problema de segurança que requer revisão.
 
- Os métodos de tratamento de eventos não devem ser expostos, a menos que seja absolutamente necessário. Um manipulador de eventos, um tipo de delegado que invoca o método exposto pode ser adicionado a qualquer evento, desde que as assinaturas de evento e o manipulador coincidam. Eventos potencialmente podem ser gerados por qualquer código e com frequência são gerados pelo código de sistema altamente confiável em resposta às ações do usuário, como clicar em um botão. Adicionar uma verificação de segurança para um método de manipulação de eventos não impedir que um código ao registrar um manipulador de eventos que chama o método.
+ Os métodos de tratamento de eventos não devem ser expostos, a menos que seja absolutamente necessário. Um manipulador de eventos, um tipo delegado, que invoca o método exposto, pode ser adicionado a qualquer evento, desde que o manipulador e as assinaturas de eventos correspondam. Os eventos podem potencialmente ser gerados por qualquer código e são gerados com frequência por código de sistema altamente confiável em resposta a ações do usuário, como clicar em um botão. Adicionar uma verificação de segurança a um método de manipulação de eventos não impede que o código registre um manipulador de eventos que invoque o método.
 
- Uma demanda de forma confiável não pode proteger um método invocado por um manipulador de eventos. Demandas de segurança ajuda proteger o código, examinando os chamadores na pilha de chamadas de chamadores não confiáveis. Código que adiciona um manipulador de eventos a um evento não é necessariamente presente na pilha de chamadas quando executar métodos do manipulador de eventos. Portanto, a pilha de chamadas pode ter apenas altamente confiável os chamadores quando o método de manipulador de eventos é invocado. Isso faz com que as demandas feitas pelo método de manipulador de eventos seja bem-sucedida. Além disso, a permissão exigida pode ser confirmada quando o método é invocado. Por esses motivos, o risco de não corrigir uma violação dessa regra pode ser avaliado somente depois de examinar o método de manipulação de eventos. Ao examinar seu código, considere as seguintes questões:
+ Uma demanda não pode proteger de maneira confiável um método invocado por um manipulador de eventos. As demandas de segurança ajudam a proteger o código de chamadores não confiáveis examinando os chamadores na pilha de chamadas. O código que adiciona um manipulador de eventos a um evento não está necessariamente presente na pilha de chamadas quando os métodos do manipulador de eventos são executados. Portanto, a pilha de chamadas pode ter apenas chamadores altamente confiáveis quando o método do manipulador de eventos é invocado. Isso faz com que as demandas feitas pelo método manipulador de eventos tenham sucesso. Além disso, a permissão exigida pode ser declarada quando o método é invocado. Por esses motivos, o risco de não corrigir uma violação dessa regra só pode ser avaliado após a revisão do método de manipulação de eventos. Ao examinar seu código, considere os seguintes problemas:
 
-- O seu manipulador de eventos executa todas as operações que são perigosas ou podem ser exploradas como declarar permissões ou suprimir a permissão de código não gerenciado?
+- O manipulador de eventos executa qualquer operação que seja perigosa ou explorável, como a declaração de permissões ou a supressão de permissão de código não gerenciado?
 
-- Quais são as ameaças de segurança para e do seu código, porque ele pode ser executado a qualquer momento com apenas altamente confiáveis que os chamadores na pilha?
+- Quais são as ameaças de segurança de e para seu código, pois podem ser executadas a qualquer momento com chamadores altamente confiáveis na pilha?
 
 ## <a name="how-to-fix-violations"></a>Como Corrigir Violações
- Para corrigir uma violação dessa regra, examine o método e avaliar o seguinte:
+ Para corrigir uma violação dessa regra, examine o método e avalie o seguinte:
 
 - Você pode tornar o método de manipulação de eventos não público?
 
-- Você pode mover toda a funcionalidade perigosa fora do manipulador de eventos?
+- Você pode mover toda a funcionalidade perigosa do manipulador de eventos?
 
-- Se uma exigência de segurança é imposta, isso pode ser feito de alguma outra maneira?
+- Se uma demanda de segurança for imposta, isso poderá ser feito de alguma outra maneira?
 
 ## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos
- Suprima um aviso nessa regra somente após uma análise atenta da segurança para certificar-se de que seu código não representem uma ameaça de segurança.
+ Suprimir um aviso desta regra somente após uma revisão de segurança cuidadosa para certificar-se de que seu código não representa uma ameaça de segurança.
 
 ## <a name="example"></a>Exemplo
- O código a seguir mostra um método de manipulação de eventos que pode ser usado indevidamente por códigos mal-intencionados.
+ O código a seguir mostra um método de manipulação de eventos que pode ser usado por código mal-intencionado.
 
  [!code-csharp[FxCop.Security.EventSecLib#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Security.EventSecLib/cs/FxCop.Security.EventSecLib.cs#1)]
 

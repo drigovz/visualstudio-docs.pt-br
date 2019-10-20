@@ -6,17 +6,17 @@ helpviewer_keywords:
 - targeting .NET Framework [Visual Studio]
 - framework targeting [Visual Studio]
 - .NET framework targeting [Visual Studio]
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: b652c603cd98f9c9ec9366a225971485def187b6
-ms.sourcegitcommit: d4920babfc3d24a3fe1d4bf446ed3fe73b344467
-ms.translationtype: HT
+ms.openlocfilehash: f393061b249fc2eb10a348bb0d2da68f4a30c4f3
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "67160153"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647180"
 ---
 # <a name="framework-targeting-overview"></a>Visão geral do direcionamento de estrutura
 
@@ -112,7 +112,7 @@ Em um projeto existente do Visual Basic, C# ou F#, você altera a versão do .NE
 
 Para definir uma versão do .NET como destino, é necessário primeiro instalar as referências de assembly apropriadas. Baixe pacotes de desenvolvedor para diferentes versões do .NET na página de [downloads do .NET](https://www.microsoft.com/net/download/windows).
 
-Para projetos .NET Framework, a caixa de diálogo **Adicionar Referência** desabilita os assemblies do sistema que não pertencem à versão do .NET Framework de destino, de modo que eles não possam ser adicionados a um projeto acidentalmente. (Assemblies do sistema são arquivos *.dll* incluídos em uma versão do .NET Framework.) As referências que pertencem a uma versão de estrutura posterior à versão de destino não serão resolvidas e os controles que dependem dessa referência não poderão ser adicionados. Se você desejar habilitar essa referência, redefina o destino do .NET Framework do projeto para um que inclua a referência.
+Para projetos .NET Framework, a caixa de diálogo **Adicionar Referência** desabilita os assemblies do sistema que não pertencem à versão do .NET Framework de destino, de modo que eles não possam ser adicionados a um projeto acidentalmente. (Os assemblies do sistema são arquivos *. dll* incluídos em uma versão do .NET Framework.) As referências que pertencem a uma versão de estrutura superior à versão de destino não serão resolvidas e os controles que dependem dessa referência não poderão ser adicionados. Se você desejar habilitar essa referência, redefina o destino do .NET Framework do projeto para um que inclua a referência.
 
 Para obter mais informações sobre referências de assembly, consulte [Resolver assemblies em tempo de design](../msbuild/resolving-assemblies-at-design-time.md).
 
@@ -124,4 +124,4 @@ Ao direcionar ao .NET Framework 3.5 ou posterior, uma referência ao **System.Co
 
 - [Estruturas de destino](/dotnet/standard/frameworks)
 - [Multiplataforma (MSBuild)](../msbuild/msbuild-multitargeting-overview.md)
-- [Como: Modificar a estrutura de destino e o conjunto de ferramentas da plataforma (C++)](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset)
+- [Como modificar a estrutura de destino e o conjunto de ferramentas da plataforma (C++)](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset)

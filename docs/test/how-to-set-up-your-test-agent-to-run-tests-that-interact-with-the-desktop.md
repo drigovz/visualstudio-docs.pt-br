@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - agents, configuring for interaction with desktop
 ms.assetid: 3a94dd07-6d17-402c-ae8f-7947143755c9
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 04b1a894fbeb20059b79e65327ed8a7d18730e01
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 55cf32d138d2644e2d2a7a08406eb575a2895400
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62785984"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653436"
 ---
-# <a name="how-to-set-up-your-test-agent-to-run-tests-that-interact-with-the-desktop"></a>Como: Configurar o agente de teste para executar testes que interagem com a área de trabalho
+# <a name="how-to-set-up-your-test-agent-to-run-tests-that-interact-with-the-desktop"></a>Como configurar o agente de teste para executar testes que interagem com a área de trabalho
 
 Se desejar executar testes automatizados que interajam com a área de trabalho, configure o agente para ser executado como um processo em vez de um serviço. Por exemplo, se você desejar executar um teste de IU codificado remotamente usando um controlador de teste e um agente de teste ou se desejar executar um teste e capturar uma gravação de vídeo ao executá-lo, será preciso configurar o agente para ser executado como um processo. Quando você atribui agentes a funções nas configurações de teste usando o Visual Studio ou atribui agentes a funções no seu ambiente usando o Microsoft Test Manager, é preciso alterar a configuração para todos os agentes atribuídos às funções que têm que interagir com a área de trabalho.
 

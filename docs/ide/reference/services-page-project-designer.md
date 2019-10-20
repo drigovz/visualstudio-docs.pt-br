@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - Services page in Project Designer
 - Project Designer, Services page
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 406e8fbb16d3cac4b755b0532f3916fed486e466
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: dd374482d0432a54ed66442610aac1f60ca1828f
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68919009"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72655483"
 ---
 # <a name="services-page-project-designer"></a>Página Serviços, Designer de Projeto
 
@@ -29,7 +29,7 @@ Para acessar a página **Serviços**, selecione um nó do projeto no **Gerenciad
 
 ## <a name="task-list"></a>Lista de Tarefas
 
-[Como: Configurar os serviços do aplicativo cliente](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services)
+[Como configurar serviços de aplicativo cliente](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services)
 
 ## <a name="uielement-list"></a>Lista UIElement
 
@@ -51,13 +51,13 @@ Indica que o provedor de autenticação usará a autenticação baseada em Windo
 
  **Usar autenticação de Formulários**
 
-Indica que o provedor de autenticação usará a autenticação de formulários. Isso significa que seu aplicativo deve fornecer uma interface do usuário para logon. Para obter mais informações, confira [Como: Implementar logon de usuário com serviços de aplicativos cliente](/dotnet/framework/common-client-technologies/how-to-implement-user-login-with-client-application-services).
+Indica que o provedor de autenticação usará a autenticação de formulários. Isso significa que seu aplicativo deve fornecer uma interface do usuário para logon. Para obter mais informações, consulte [Como implementar o logon do usuário com os serviços de aplicativo cliente](/dotnet/framework/common-client-technologies/how-to-implement-user-login-with-client-application-services).
 
  **Local do serviço de autenticação**
 
 Utilizado somente com autenticação de formulários. Especifica o local do serviço de autenticação.
 
- **Opcional: Provedor de credenciais**
+ **Opcional: provedor de credenciais**
 
 Utilizado somente com autenticação de formulários. Indica a implementação <xref:System.Web.ClientServices.Providers.IClientFormsAuthenticationCredentialsProvider> que o serviço de autenticação usará para exibir uma caixa de diálogo de logon quando o aplicativo chamar o método `static`<xref:System.Web.Security.Membership.ValidateUser%2A?displayProperty=fullName> e passar cadeias de caracteres vazias ou `null` para os parâmetros. Se deixar essa caixa em branco, você deverá passar um nome de usuário válido e uma senha para o método <xref:System.Web.Security.Membership.ValidateUser%2A?displayProperty=fullName>. Você deve especificar o provedor de credenciais como um nome de tipo qualificado pelo assembly. Para obter mais informações, consulte <xref:System.Type.AssemblyQualifiedName%2A?displayProperty=fullName> e [Assembly Names](/dotnet/framework/app-domains/assembly-names) (Nomes de assembly). Em sua forma mais simples, um nome de tipo qualificado pelo assembly é semelhante ao exemplo a seguir: `MyNamespace.MyLoginClass, MyAssembly`
 
@@ -77,6 +77,6 @@ Abre [Configurações Avançadas para a Caixa de Diálogo Serviços](../../ide/r
 
 - [Serviços de aplicativos cliente](/dotnet/framework/common-client-technologies/client-application-services)
 - [Caixa de diálogo Configurações Avançadas para Serviços](../../ide/reference/advanced-settings-for-services-dialog-box.md)
-- [Como: Configurar os serviços do aplicativo cliente](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services)
+- [Como configurar serviços de aplicativo cliente](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services)
 - [Página de Compilação, Designer de Projeto (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md)
 - [Página de Build, Designer de Projeto (C#)](../../ide/reference/build-page-project-designer-csharp.md)

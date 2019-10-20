@@ -7,15 +7,15 @@ helpviewer_keywords:
 - load tests, scenarios
 - load tests, virtual users
 ms.assetid: 0ba0363b-7f50-4bde-a919-0e3bce7bc115
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 5459f1b82dd83905f2672d198f503a741778287b
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: 8651b3a11b9db82d4c52ff600706b51855881f02
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926528"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72665049"
 ---
 # <a name="edit-load-patterns-to-model-virtual-user-activities"></a>Editar padrões de carga para modelar atividades de usuário virtual
 
@@ -57,15 +57,15 @@ O padrão de carga em pode ser usado para aumentar a carga no servidor ou nos se
 
 - **Contagem inicial de usuários**: 100
 
-- **Contagem máxima de usuários**: 2,000
+- **Contagem máxima de usuários**: 2.000
 
 - **Duração da etapa (segundos)** : 1.800
 
 - **Tempo de rampa de etapa (segundos)** : 20
 
-- **Contagem de usuários em etapas**: 100
+- **Contagem de usuário em etapas**: 100
 
-  Essas configurações executam o teste de carga durante 30 minutos (1.800 segundos) em cargas de 100, 200, 300 e até 2.000 usuários. A propriedade **Tempo de rampa de etapa** deve ser mencionada, porque é única dessas propriedades não disponível para seleção no **Novo Assistente de Teste de Carga**. Essa propriedade permite que o aumento de uma etapa para a seguinte (por exemplo, de 100 para 200 usuários) ocorra gradualmente, e não de imediato. No exemplo, a carga de usuário seria aumentada de 100 para 200 usuários durante um período de 20 segundos (um aumento de cinco usuários por segundo). Para obter mais informações, confira [Como: Especificar a propriedade de tempo de rampa de etapa para um padrão de carga de etapa](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md).
+  Essas configurações executam o teste de carga durante 30 minutos (1.800 segundos) em cargas de 100, 200, 300 e até 2.000 usuários. A propriedade **Tempo de rampa de etapa** deve ser mencionada, porque é única dessas propriedades não disponível para seleção no **Novo Assistente de Teste de Carga**. Essa propriedade permite que o aumento de uma etapa para a seguinte (por exemplo, de 100 para 200 usuários) ocorra gradualmente, e não de imediato. No exemplo, a carga de usuário seria aumentada de 100 para 200 usuários durante um período de 20 segundos (um aumento de cinco usuários por segundo). Para saber mais, confira [Como especificar a propriedade de tempo de rampa de etapa para um padrão de carga de etapa](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md).
 
 ### <a name="goal-based"></a>Baseado em metas
 
@@ -79,7 +79,7 @@ Um padrão de carga baseado em metas se assemelha ao padrão em etapa, mas ajust
 
   Na tabela a seguir, um exemplo mostra um padrão baseado em meta com as seguintes configurações de propriedades:
 
-|Grupo de propriedades|Propriedade|Valor|
+|Grupo de propriedades|propriedade|Valor|
 |-|--------------|-|
 |Contador de desempenho|Categoria|Processador|
 |Contador de desempenho|Computador|ContosoServer1|
@@ -109,10 +109,10 @@ Algo a ser observado é se algum outro recurso está limitando a produtividade d
 
 |Tarefas|Tópicos associados|
 |-|-----------------------|
-|**Especificando o padrão de carga inicial para o teste de carga:** Quando cria um teste de carga com o **Novo Assistente de Teste de Carga**, você seleciona um padrão de carga.|-   [Alterar o padrão de carga](../test/edit-load-patterns-to-model-virtual-user-activities.md#change-the-load-pattern)|
-|**Editando o padrão de carga inicial para o teste de carga:** Depois de criar o teste de carga, você poderá editar o padrão de carga no **Editor de Teste de Carga**.|-   [Como: Especificar a propriedade de tempo de rampa de etapa para um padrão de carga de etapa](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md)|
-|**Especifica se os usuários virtuais em seu cenário de teste de carga devem incluir dados de cache da Web:** Você pode alterar a propriedade **Percentual de novos usuários** para afetar a maneira como o teste de carga simula o armazenamento em cache da Web que seria executado por um navegador da Web para os usuários virtuais.|-   [Como: Especificar o percentual de usuários virtuais que usam dados de cache da Web](../test/how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data.md)|
-|**Especificando o tempo de rampa de etapa para um padrão de carga de etapa:** A propriedade **Tempo de Rampa de Etapa** permite que o aumento de uma etapa para a seguinte (por exemplo, de 100 para 200 usuários) ocorra gradualmente, e não de imediato.|-   [Como: Especificar a propriedade de tempo de rampa de etapa para um padrão de carga de etapa](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md)|
+|**Especificando o padrão de carga inicial para o teste de carga:** ao criar um teste de carga usando o **Novo Assistente de Teste de Carga**, você seleciona um padrão de carga.|-   [Alterar o padrão de carga](../test/edit-load-patterns-to-model-virtual-user-activities.md#change-the-load-pattern)|
+|**Editando o padrão de carga para o teste de carga:** depois de criar o teste de carga, você poderá editar o padrão de carga no **Editor de Teste de Carga**.|-   [Como especificar a propriedade de tempo de rampa de etapa para um padrão de carga de etapa](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md)|
+|**Especificando se os usuários virtuais no cenário do teste de carga devem incluir dados de cache na Web:** você pode alterar a propriedade **Percentual de novos usuários** para afetar a maneira como o teste de carga simula o armazenamento em cache na Web que seria executado por um navegador da Web para os usuários virtuais.|-   [Como especificar o percentual de usuários virtuais que usam dados de cache da Web](../test/how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data.md)|
+|**Especificando o tempo de rampa de etapa para um padrão de carga em etapa:** a propriedade **Tempo de rampa de etapa** permite que o aumento de uma etapa para a próxima (por exemplo, de 100 para 200 usuários) ocorra gradativamente e não de imediato.|-   [Como especificar a propriedade de tempo de rampa de etapa para um padrão de carga de etapa](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md)|
 
 ## <a name="change-the-load-pattern"></a>Alterar o padrão de carga
 
@@ -124,7 +124,7 @@ Depois de criar seu teste de carga com o **Novo Assistente de Teste de Carga**, 
 Um padrão de carga especifica o número de usuários virtuais ativos durante um teste de carga e a taxa em que os novos usuários são adicionados. Você pode escolher um dos três padrões disponíveis: padrão em etapa, constante e baseado em meta. Para saber mais, confira [Especificar o número de usuários virtuais com padrões de carga em um cenário de teste de carga](../test/edit-load-patterns-to-model-virtual-user-activities.md).
 
 > [!NOTE]
-> Você também pode alterar as propriedades de carga programaticamente usando um plug-in de teste de carga. Para obter mais informações, confira [Como: Criar um plug-in de teste de carga](../test/how-to-create-a-load-test-plug-in.md).
+> Você também pode alterar as propriedades de carga programaticamente usando um plug-in de teste de carga. Para saber mais, confira [Como criar um plug-in de teste de carga](../test/how-to-create-a-load-test-plug-in.md).
 
 ### <a name="to-change-the-load-pattern"></a>Para alterar o padrão de carga
 
@@ -153,5 +153,5 @@ Um padrão de carga especifica o número de usuários virtuais ativos durante um
 ## <a name="see-also"></a>Consulte também
 
 - [Editar cenários de teste de carga](../test/edit-load-test-scenarios.md)
-- [Como: Especificar o percentual de usuários virtuais que usam dados de cache da Web](../test/how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data.md)
-- [Como: Especificar a propriedade de tempo de rampa de etapa para um padrão de carga de etapa](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md)
+- [Como especificar o percentual de usuários virtuais que usam dados de cache da Web](../test/how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data.md)
+- [Como especificar a propriedade de tempo de rampa de etapa para um padrão de carga de etapa](../test/how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern.md)

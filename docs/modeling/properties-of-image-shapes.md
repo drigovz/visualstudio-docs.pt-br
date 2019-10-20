@@ -7,69 +7,69 @@ f1_keywords:
 - vs.dsltools.dsldesigner.imageshape
 helpviewer_keywords:
 - Domain-Specific Language, image shape
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e58467d9a1600b96069bcd5dd271980faaf9ee7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a89d7e5710f7a80c4e1f134ce2dfe2bd35ed5337
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62823988"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72658156"
 ---
 # <a name="properties-of-image-shapes"></a>Propriedades de formas de imagem
 
-Você pode usar formas de imagem para especificar como as classes de domínio são exibidos em um designer gerado. Definir uma forma de imagem, definindo o `Image` propriedade da classe para um arquivo de imagem predefinidos. Há suporte para os seguintes formatos:
+Você pode usar formas de imagem para especificar como as classes de domínio aparecem em um designer gerado. Defina uma forma de imagem definindo a propriedade `Image` da classe como um arquivo de imagem predefinido. Há suporte para os seguintes formatos:
 
 - .gif
 
 - .jpg
 
-- .jpeg
+- . jpeg
 
 - .bmp
 
 - .wmf
 
-- .emf
+- . EMF
 
 - .png
 
-Por padrão, os arquivos de recurso de designer, como arquivos de imagem, estão localizados na **recursos** pasta o **Dsl** projeto.
+Por padrão, os arquivos de recursos do designer, como arquivos de imagem, estão localizados na pasta **recursos** no projeto **DSL** .
 
-Para obter mais informações, consulte [como definir uma linguagem específica do domínio](../modeling/how-to-define-a-domain-specific-language.md). Para obter mais informações sobre como usar essas propriedades, consulte [personalizando e estendendo uma linguagem específica do domínio](../modeling/customizing-and-extending-a-domain-specific-language.md).
+Para obter mais informações, consulte [como definir uma linguagem específica de domínio](../modeling/how-to-define-a-domain-specific-language.md). Para obter mais informações sobre como usar essas propriedades, consulte [Personalizando e estendendo uma linguagem específica de domínio](../modeling/customizing-and-extending-a-domain-specific-language.md).
 
-Formas de imagem têm as propriedades que são listadas na tabela a seguir.
+As formas de imagem têm as propriedades listadas na tabela a seguir.
 
-|Propriedade|Descrição|Padrão|
+|propriedade|Descrição|Padrão|
 |-|-|-|
 |Cor de preenchimento|A cor de preenchimento desta forma.|Branco|
-|Modo de gradiente de preenchimento|O modo gradiente de preenchimento desta forma.|Horizontal|
-|Tem pontos de Conexão padrão|Se `True`, a forma usará superior, inferior, esquerda e pontos de conexão certa no designer gerado.|False|
-|Cor do contorno|A cor do contorno desta forma.|Preto|
-|Estilo de contorno tracejado|O estilo de contorno tracejado desta forma (sólido, traço, Dot, Traçoponto, Traçopontoponto ou personalizado).|Sólido|
-|Espessura do contorno|A espessura do contorno desta forma.|0.03125|
-|Cor do texto|A cor que é usada para os decoradores de texto que estão associados esta forma.|Preto|
-|Modificador de acesso|O modificador de acesso da forma geométrica (público ou interno).|Público|
-|Atributos personalizados|Usado para adicionar atributos à classe de código de origem que é gerado a partir desta forma.|\<nenhum>|
-|Gera dupla derivado|Se `True`, serão geradas uma classe base e uma classe parcial (para dar suporte à personalização por meio de substituições). Para obter mais informações, consulte [substituindo e estendendo as Classes geradas](../modeling/overriding-and-extending-the-generated-classes.md).|False|
-|Tem um construtor personalizado|Se `True`, um construtor personalizado será fornecido no código-fonte. Para obter mais informações, consulte [substituindo e estendendo as Classes geradas](../modeling/overriding-and-extending-the-generated-classes.md).|False|
-|Modificador de herança|Descreve o tipo de herança da classe de código fonte que é gerado a partir a forma de imagem (`none`, `abstract` ou `sealed`).|nenhum|
+|Preencher modo de gradiente|O modo de gradiente de preenchimento desta forma.|Horizontal|
+|Tem pontos de conexão padrão|Se `True`, a forma usará os pontos de conexão superior, inferior, esquerdo e direito no designer gerado.|False|
+|Cor do contorno|A cor da estrutura de tópicos desta forma.|Afasta|
+|Estilo do contorno tracejado|O estilo de contorno tracejado dessa forma (sólido, traço, ponto, travessão ponto, travessão ponto ponto ou personalizado).|Sólido|
+|Espessura do contorno|A espessura da estrutura de tópicos desta forma.|0, 3125|
+|Cor do texto|A cor que é usada para decoradores de texto associados a essa forma.|Afasta|
+|Modificador de acesso|O modificador de acesso da forma Geometry (público ou interno).|Público|
+|Atributos personalizados|Usado para adicionar atributos à classe de código-fonte gerada com base nessa forma.|\<nenhum>|
+|Gera derivação dupla|Se `True`, uma classe base e uma classe parcial (para dar suporte à personalização por meio de substituições) serão geradas. Para obter mais informações, consulte [substituindo e estendendo as classes geradas](../modeling/overriding-and-extending-the-generated-classes.md).|False|
+|Tem Construtor personalizado|Se `True`, um construtor personalizado será fornecido no código-fonte. Para obter mais informações, consulte [substituindo e estendendo as classes geradas](../modeling/overriding-and-extending-the-generated-classes.md).|False|
+|Modificador de herança|Descreve o tipo de herança da classe de código-fonte gerada a partir da forma de imagem (`none`, `abstract` ou `sealed`).|nenhum|
 |Forma da imagem base|A classe base dessa forma.|(nenhum)|
-|Nome|O nome desta forma.|Nome atual|
-|Namespace|O namespace que é afiliado desta forma.|Namespace atual|
-|Tipo de dica de ferramenta|O local onde a dica de ferramenta é definida (fixo, variável ou nenhum). Se fixo, em seguida, o valor da `Fixed Tooltip Text` propriedade é usada como a dica de ferramenta; se a variável, em seguida, a dica de ferramenta é definida no código personalizado.|nenhum|
-|Observações|Observações informais associadas esta forma.|\<nenhum>|
-|Altura inicial|A altura inicial desta forma em polegadas.|1|
-|Largura inicial|A largura inicial desta forma em polegadas.|1.5|
-|Cor de preenchimento expostos como propriedade<br /><br /> Modo de gradiente de preenchimento exposto<br /><br /> Exposto a cor do contorno como propriedade<br /><br /> Exposto o estilo de contorno tracejado como propriedade<br /><br /> Exposto como propriedade de espessura do contorno<br /><br /> Expõe a cor do texto|Se `True`, o usuário pode definir a propriedade indicada de uma forma. Para configurar isso, a definição de forma com o botão direito e clique em **adicionar exposto**.|False|
+|Name|O nome desta forma.|Nome atual|
+|espaço de nome|O namespace que é afiliado a esta forma.|Namespace atual|
+|Tipo de dica de ferramenta|O local em que a dica de ferramenta é definida (fixa, variável ou nenhuma). Se for corrigido, o valor da propriedade `Fixed Tooltip Text` será usado como dica de ferramenta; Se for variável, a dica de ferramenta será definida no código personalizado.|nenhum|
+|Anotações|Observações informais associadas a esta forma.|\<nenhum>|
+|Altura inicial|A altura inicial dessa forma, em polegadas.|1|
+|Largura inicial|A largura inicial dessa forma, em polegadas.|1.5|
+|Cor de preenchimento exposta como Propriedade<br /><br /> Modo de gradiente de preenchimento exposto<br /><br /> Cor da estrutura de tópicos exposta como Propriedade<br /><br /> Contorno exposto traço estilo como Propriedade<br /><br /> Espessura da estrutura de tópicos exposta como Propriedade<br /><br /> Expõe a cor do texto|Se `True`, o usuário poderá definir a propriedade declarada de uma forma. Para definir isso, clique com o botão direito do mouse na definição de forma e clique em **Adicionar exposto**.|False|
 |Descrição|Usado para documentar o designer gerado.|\<nenhum>|
-|Nome de Exibição|O nome que será exibido no designer gerado para esta forma.|\<nenhum>|
-|Texto de dica de ferramenta fixa|O texto que é usado para uma dica de ferramenta fixa.|\<nenhum>|
-|Palavra-chave de ajuda|A palavra-chave que é usada para indexar a Ajuda de F1 para este elemento.|\<nenhum>|
-|Image|O caminho para o arquivo de imagem que é usado para esta forma.|\<nenhum>|
+|Nome de Exibição|O nome que será exibido no designer gerado para essa forma.|\<nenhum>|
+|Texto de dica de ferramenta fixo|O texto que é usado para uma dica de ferramenta fixa.|\<nenhum>|
+|Palavra-chave de ajuda|A palavra-chave usada para indexar a ajuda F1 para este elemento.|\<nenhum>|
+|Image|O caminho para o arquivo de imagem usado para esta forma.|\<nenhum>|
 
 ## <a name="see-also"></a>Consulte também
 

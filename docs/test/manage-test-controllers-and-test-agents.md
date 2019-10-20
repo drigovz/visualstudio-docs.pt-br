@@ -2,17 +2,17 @@
 title: Gerenciar controladores e agentes de teste
 ms.date: 09/18/2018
 ms.topic: conceptual
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 41e15982734731defabd79416c73eef4538f0c04
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
-ms.translationtype: HT
+ms.openlocfilehash: 530a3d7ac205988639ed1346f823d889f56adffb
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67824239"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72652920"
 ---
 # <a name="manage-test-controllers-and-test-agents"></a>Gerenciar controladores e agentes de teste
 
@@ -43,7 +43,7 @@ Você talvez queira adicionar um agente de teste a um controlador de teste difer
 
 2. São apresentadas duas opções para executar o agente de teste:
 
-   - **Serviço**: Se você não precisar executar testes automatizados que interajam com a área de trabalho, como testes de IU codificados ou a criação de uma gravação de vídeo durante as execuções de teste, em **Executar o agente de teste como**, selecione **Serviço**. O agente de teste será iniciado como um serviço. Escolha **Avançar**.
+   - **Serviço**: se você não precisar executar testes automatizados que interajam com a área de trabalho, como testes de IU codificados ou a criação de uma gravação de vídeo quando o teste for executado, em **Executar o agente de teste como**, selecione **Serviço**. O agente de teste será iniciado como um serviço. Escolha **Avançar**.
 
       Agora você pode inserir os detalhes sobre o usuário quando inicia o agente de teste como um serviço.
 
@@ -58,7 +58,7 @@ Você talvez queira adicionar um agente de teste a um controlador de teste difer
         |– Se o nome de usuário do agente não estiver no serviço de agente, ele tentará adicioná-lo, o que requer permissões no controlador de teste.|
         |– O usuário que está tentando usar o controlador de teste deve estar na conta Usuários do controlador de teste ou não poderá executar os testes no controlador.|
 
-   - **Processo Interativo**: Se você desejar executar testes automatizados que precisem interagir com a área de trabalho, como testes de IU codificados ou a criação de uma gravação de vídeo durante as execuções de teste, selecione **Processo Interativo**. O agente de teste será iniciado como um processo interativo, em vez de um serviço.
+   - **Processo interativo**: se você desejar executar testes automatizados que precisem interagir com a área de trabalho, como testes de IU codificados ou a criação de uma gravação de vídeo durante as execuções de teste, selecione **Processo Interativo**. O agente de teste será iniciado como um processo interativo, em vez de um serviço.
 
       Na página seguinte, insira os detalhes sobre o usuário quando o agente de teste iniciar como um processo e outras opções.
 
@@ -114,7 +114,7 @@ Um agente de teste deve ser definido para o estado offline antes de ser removido
 
 O status do agente de teste pode ser qualquer um dos seguintes valores:
 
-|Status|DESCRIÇÃO|
+|Status|Descrição|
 |-|-----------------|
 |Executando teste|Executando testes|
 |Pronto|Disponível para executar testes ou coletar dados e diagnóstico|
@@ -140,11 +140,11 @@ Você pode alterar o status e outras configurações para um agente de teste que
 
 1. Altere as seguintes propriedades do agente de teste conforme necessário:
 
-|Propriedade do agente de teste|DESCRIÇÃO|
+|Propriedade do agente de teste|Descrição|
 |-|-----------------|
 |**Importância**|Usado para distribuir a carga quando você usa agentes de teste com níveis de desempenho diferentes. Por exemplo, um agente de teste com uma importância de 100 recebe duas vezes a carga como um agente de teste com uma importância de 50.|
-|**Troca de IPs**|Usado para configurar a troca de IP. A troca de IP permite que um agente de teste envie solicitações para um servidor usando um intervalo de endereços IP. Isso simula chamadas que venham de computadores cliente diferentes.<br /><br /> A troca de IP será importante se seu teste de carga estiver acessando um Web farm. A maioria de balanceadores de carga estabelece afinidade entre um cliente e um servidor Web específico usando o endereço IP do cliente. Se todas as solicitações estiverem vindo aparentemente de um único cliente, o balanceador de carga não balanceará a carga. Para obter um bom balanceamento de carga no Web farm, verifique se as solicitações vêm de um intervalo de endereços IP. **Observação:**  Você pode especificar um adaptador de rede ou usar **(Todos sem assinatura)** para selecionar automaticamente um que não esteja sendo usado atualmente. <br /><br /> Para usar o recurso de troca de IP, o serviço Visual Studio Test Agent deve ser executado como um usuário do grupo Administradores do computador do agente. Esse usuário é selecionado durante a configuração do agente, mas pode ser alterado modificando-se as propriedades do serviço e reiniciando-o.<br /><br /> Para verificar se a troca de IP está funcionando corretamente, habilite o registro em log IIS no servidor Web, use a funcionalidade de registro em log IIS para verificar se as solicitações vêm dos endereços IP que configurados por você.|
-|**Atributos**|Conjunto de pares de nome/valor que podem ser usados na seleção do agente de teste. Por exemplo, um teste pode exigir um sistema operacional específico. Você pode adicionar atributos na guia **Funções** do seu arquivo de configurações de teste e eles podem ser usados para selecionar um agente de teste que tenha atributos compatíveis. Se quiser executar um teste em vários computadores, crie um atributo na função de configurações de teste definida para executar seus testes e configure um atributo correspondente em cada agente de teste que você queira usar nessa função. **Observação:**  Essa configuração está disponível apenas para agentes de teste registrados em um controlador de teste que não esteja registrado em um projeto, pois esses atributos são usados somente nas configurações de teste do Visual Studio.|
+|**Troca de IPs**|Usado para configurar a troca de IP. A troca de IP permite que um agente de teste envie solicitações para um servidor usando um intervalo de endereços IP. Isso simula chamadas que venham de computadores cliente diferentes.<br /><br /> A troca de IP será importante se seu teste de carga estiver acessando um Web farm. A maioria de balanceadores de carga estabelece afinidade entre um cliente e um servidor Web específico usando o endereço IP do cliente. Se todas as solicitações estiverem vindo aparentemente de um único cliente, o balanceador de carga não balanceará a carga. Para obter um bom balanceamento de carga no Web farm, verifique se as solicitações vêm de um intervalo de endereços IP. **Observação:** você pode especificar um adaptador de rede ou usar **(Todos sem não atribuídos)** para selecionar automaticamente um que não esteja sendo usado atualmente. <br /><br /> Para usar o recurso de troca de IP, o serviço Visual Studio Test Agent deve ser executado como um usuário do grupo Administradores do computador do agente. Esse usuário é selecionado durante a configuração do agente, mas pode ser alterado modificando-se as propriedades do serviço e reiniciando-o.<br /><br /> Para verificar se a troca de IP está funcionando corretamente, habilite o registro em log IIS no servidor Web, use a funcionalidade de registro em log IIS para verificar se as solicitações vêm dos endereços IP que configurados por você.|
+|**Atributos**|Conjunto de pares de nome/valor que podem ser usados na seleção do agente de teste. Por exemplo, um teste pode exigir um sistema operacional específico. Você pode adicionar atributos na guia **Funções** do seu arquivo de configurações de teste e eles podem ser usados para selecionar um agente de teste que tenha atributos compatíveis. Se quiser executar um teste em vários computadores, crie um atributo na função de configurações de teste definida para executar seus testes e configure um atributo correspondente em cada agente de teste que você queira usar nessa função. **Observação:** essa configuração está disponível apenas para agentes de teste registrados em um controlador de teste que não está registrado em um projeto, pois esses atributos são usados somente nas configurações de teste do Visual Studio.|
 
 As alterações de atributo e importância do agente de teste entram em vigor imediatamente, mas não afetam os testes que estão em execução. O Intervalo de Endereços IP entra em vigor depois que o controlador de teste é reiniciado.
 

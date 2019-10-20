@@ -1,5 +1,5 @@
 ---
-title: Caixa de diálogo de definição de CorrelatesOn | Microsoft Docs
+title: Caixa de diálogo Definição de CorrelatesOn | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-workflow-designer
@@ -8,32 +8,30 @@ f1_keywords:
 - CorrelatesOnDefinition.UI
 ms.assetid: 8b2b627a-f236-4479-aa09-525df65e3413
 caps.latest.revision: 6
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: fd03e1a8615e75d3f00f79eb10b7a7ff97f0eb33
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e2a9a6f7ec6b8bf246ebfc03c166780b229e1aee
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62977368"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72656945"
 ---
 # <a name="correlateson-definition-dialog-box"></a>Caixa de diálogo definição de CorrelatesOn
-O **CorrelatesOn** caixa de diálogo é usada em [!INCLUDE[wfd1](../includes/wfd1-md.md)] para editar o <xref:System.ServiceModel.Activities.Receive.CorrelatesOn%2A> propriedade de um <xref:System.ServiceModel.Activities.Receive> atividade. [!INCLUDE[crdefault](../includes/crdefault-md.md)] o [Receive](../workflow-designer/receive-activity-designer.md) tópico.  
-  
- Correlação entre atividades de <xref:System.ServiceModel.Activities.Receive> especifica como as operações de serviço diferentes conectam entre si em um fluxo de trabalho.  
-  
- A tabela a seguir descreve os elementos de (UI) de interface do usuário para o **CorrelatesOn** caixa de diálogo.  
-  
-|Elemento da Interface do Usuário|Descrição|  
-|----------------|-----------------|  
-|**CorrelatesWith**|<xref:System.ServiceModel.Activities.CorrelationHandle> que é usado para rotear a mensagem à instância apropriado de fluxo de trabalho.|  
-|**Consultas XPath**|Um par chave/valor que contém as consultas usadas para extrair dados de correlação das mensagens de entrada. Isso corresponde à propriedade de <xref:System.ServiceModel.Activities.Receive.CorrelatesOn%2A> . Consultas XPath estão contidas em um objeto de <xref:System.ServiceModel.MessageQuerySet> .|  
-  
-## <a name="to-launch-the-correlateson-dialog-box"></a>Para iniciar a caixa de diálogo CorrelatesOn  
- O **Receive** designer de atividade pode ser arrastado da **caixa de ferramentas** e ser solto sobre a [!INCLUDE[wfd2](../includes/wfd2-md.md)] superfície onde quer que as atividades são colocadas em geral. Isso cria uma atividade de <xref:System.ServiceModel.Activities.Receive> com <xref:System.Activities.Activity.DisplayName%2A> padrão Receive. Selecione o **Receive** designer de atividade e clique no botão de reticências ao lado do texto (coleção) para o **CorrelatesOn** propriedade na grade de propriedade para o **definição de CorrelatesOn**  caixa de diálogo.  
-  
-## <a name="see-also"></a>Consulte também  
- <xref:System.ServiceModel.Activities.Receive>   
- [Adicionar caixa de diálogo CorrelationInitializers](../workflow-designer/add-correlationinitializers-dialog-box.md)   
- [Caixa de diálogo Inicializar Correlação](../workflow-designer/initialize-correlation-dialog-box.md)
+A caixa de diálogo **CorrelatesOn** é usada em [!INCLUDE[wfd1](../includes/wfd1-md.md)] para editar a propriedade <xref:System.ServiceModel.Activities.Receive.CorrelatesOn%2A> de uma atividade de <xref:System.ServiceModel.Activities.Receive>. [!INCLUDE[crdefault](../includes/crdefault-md.md)] o tópico de [recebimento](../workflow-designer/receive-activity-designer.md) .
+
+ Correlação entre atividades de <xref:System.ServiceModel.Activities.Receive> especifica como as operações de serviço diferentes conectam entre si em um fluxo de trabalho.
+
+ A tabela a seguir descreve os elementos da interface do usuário da caixa de diálogo **CorrelatesOn** .
+
+|Elemento da Interface do Usuário|Descrição|
+|----------------|-----------------|
+|**CorrelatesWith**|<xref:System.ServiceModel.Activities.CorrelationHandle> que é usado para rotear a mensagem à instância apropriado de fluxo de trabalho.|
+|**Consultas XPath**|Um par chave/valor que contém as consultas usadas para extrair dados de correlação das mensagens de entrada. Isso corresponde à propriedade de <xref:System.ServiceModel.Activities.Receive.CorrelatesOn%2A> . Consultas XPath estão contidas em um objeto de <xref:System.ServiceModel.MessageQuerySet> .|
+
+## <a name="to-launch-the-correlateson-dialog-box"></a>Para iniciar a caixa de diálogo CorrelatesOn
+ O designer de atividade **Receive** pode ser arrastado da **caixa de ferramentas** e descartado para a superfície de [!INCLUDE[wfd2](../includes/wfd2-md.md)] sempre que as atividades são geralmente colocadas. Isso cria uma atividade de <xref:System.ServiceModel.Activities.Receive> com <xref:System.Activities.Activity.DisplayName%2A> padrão Receive. Selecione o designer de atividade de **recebimento** e clique no botão de reticências ao lado do texto (coleção) da propriedade **CorrelatesOn** na grade de propriedades para que a caixa de diálogo de **definição CorrelatesOn** seja exibida.
+
+## <a name="see-also"></a>Consulte também
+ caixa de diálogo <xref:System.ServiceModel.Activities.Receive> [Adicionar CorrelationInitializers caixa](../workflow-designer/add-correlationinitializers-dialog-box.md) de diálogo [inicializar correlação](../workflow-designer/initialize-correlation-dialog-box.md)

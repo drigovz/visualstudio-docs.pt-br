@@ -1,29 +1,29 @@
 ---
-title: Designer de fluxo de trabalho - caixa de diálogo Editor de coleção de tipo
+title: Caixa de diálogo Editor de coleção de tipo Designer de Fluxo de Trabalho
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - TypeCollectionEditor.UI
 ms.assetid: 63cdea6b-bca2-4c06-b8b4-c8faabd40726
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 191635364c445bc3959ee2f5f63c7c72c71f171d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a0a9bf604749524d76b8046d60de75d4b5844cc4
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62433923"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72649789"
 ---
 # <a name="type-collection-editor-dialog-box"></a>Digite a caixa de diálogo Editor de Coleção
 
-O **Editor de coleção do tipo** caixa de diálogo é usada para adicionar tipos conhecidos para o **enviar** e **Receive** atividades. Essa caixa de diálogo também é usada para adicionar argumentos de tipo genérico para o **InvokeMethod** atividade. Quando usado para o **envie** e **Receive** atividades para adicionar tipos conhecidos, o **Editor de coleção do tipo** caixa de diálogo requer as adições do tipo ser exclusivos. Se um tipo duplicado é adicionado e a alteração é confirmada clicando **Okey**, uma mensagem de erro é retornada. Quando usado para o **InvokeMethod** atividade para adicionar argumentos de tipo genérico, o **Editor de coleção do tipo** caixa de diálogo permite a adição de tipos duplicados.
+A caixa de diálogo **Editor de coleção de tipos** é usada para adicionar tipos conhecidos às atividades **Enviar** e **receber** . Essa caixa de diálogo também é usada para adicionar argumentos de tipo genérico à atividade **InvokeMethod** . Quando usado para as atividades **Enviar** e **receber** para adicionar tipos conhecidos, a caixa de diálogo Editor de **coleção de tipos** exige que as adições de tipo sejam exclusivas. Se um tipo duplicado for adicionado e a alteração for confirmada clicando em **OK**, uma mensagem de erro será retornada. Quando usado para a atividade **InvokeMethod** adicionar argumentos de tipo genérico, a caixa de diálogo **Editor de coleção de tipos** permite a adição de tipos duplicados.
 
 Para obter mais informações, consulte [tipos conhecidos de contrato de dados](/dotnet/framework/wcf/feature-details/data-contract-known-types).
 
-A tabela a seguir descreve os elementos de (UI) de interface do usuário para o **tipo de coleção** caixa de diálogo.
+A tabela a seguir descreve os elementos da interface do usuário da caixa de diálogo de **coleção de tipos** .
 
 |Elemento da Interface do Usuário|Descrição|
 |-|-----------------|
@@ -31,16 +31,16 @@ A tabela a seguir descreve os elementos de (UI) de interface do usuário para o 
 
 ## <a name="to-bring-up-the-type-collection-editor-for-the-send-and-receive-activities"></a>Para transferir anterior o Editor de Coleção do tipo para o enviar e receber atividades
 
-1. Selecione o **envie** ou **Receive** atividade na exibição design.
+1. Selecione a atividade **Enviar** ou **receber** no modo de exibição de design.
 
-2. Pressione **F4** para abrir o **propriedades** janela.
+2. Pressione **F4** para exibir a janela **Propriedades** .
 
-3. No **propriedades** , clique no botão de reticências ao lado de **KnownTypes** propriedade.
+3. Na janela **Propriedades** , clique no botão de reticências ao lado da propriedade **KnownTypes** .
 
 ## <a name="to-bring-up-the-type-collection-editor-for-the-invokemethod-activity"></a>Para transferir anterior o Editor de Coleção do tipo para atividades de InvokeMethod
 
-1. Selecione o **InvokeMethod** atividade na exibição design.
+1. Selecione a atividade **InvokeMethod** no modo de exibição de design.
 
-2. Pressione **F4** para abrir o **propriedades** janela.
+2. Pressione **F4** para exibir a janela **Propriedades** .
 
-3. No **propriedades** , clique no botão de reticências ao lado de **GenericTypeArguments** propriedade.
+3. Na janela **Propriedades** , clique no botão de reticências ao lado da propriedade **genericTypeArguments** .

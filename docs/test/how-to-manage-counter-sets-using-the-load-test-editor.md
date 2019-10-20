@@ -10,17 +10,17 @@ helpviewer_keywords:
 - counter sets
 - load tests, counter sets
 ms.assetid: 64315c2f-a0b2-4378-be16-0774b99beef5
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 4ca910038e35ee65e6d97999f08013f398eaec9e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: f781580f28c3b829483180d559851bc9730fa18e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62950087"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653492"
 ---
-# <a name="how-to-manage-counter-sets-using-the-load-test-editor"></a>Como: Gerenciar conjuntos de contadores usando o Editor de Teste de Carga
+# <a name="how-to-manage-counter-sets-using-the-load-test-editor"></a>Como gerenciar conjuntos de contadores usando o Editor de Teste de Carga
 
 Quando cria um teste de carga com o **Novo Assistente de Teste de Carga**, você adiciona um conjunto de contadores inicial. Isso oferece um conjunto de contadores predefinidos para seu teste de carga.
 
@@ -58,7 +58,7 @@ Gerenciar conjuntos de contadores envolve escolher o conjunto de computadores do
 
      As marcações são exibidas no nó **Mapeamentos de conjuntos de contadores** da árvore no Editor de Teste de Carga. O mais importante é que os marcadores são exibidos em relatórios do Excel, o que ajuda os participantes a identificar qual função o computador tem no teste de carga. Por exemplo, "Web Server1 em lab2" ou "SQL Server2 em Phoenix office". Para saber mais, confira [Relatar resultados do teste de carga para comparações de testes ou análise de tendências](../test/compare-load-test-results.md).
 
-6. Escolha **OK**.
+6. Clique em **OK**.
 
 ## <a name="see-also"></a>Consulte também
 

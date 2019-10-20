@@ -2,17 +2,17 @@
 title: Personalizar o IDE
 ms.date: 11/20/2017
 ms.topic: conceptual
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2961730594abd268ae130cf2c3d2b93df5322c14
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
-ms.translationtype: HT
+ms.openlocfilehash: e6bf00573febda06aba4d12184a416341879bac7
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68606085"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666812"
 ---
 # <a name="personalize-the-visual-studio-ide"></a>Personalizar o IDE do Visual Studio
 
@@ -40,7 +40,7 @@ Muitas opções de personalização são expostas pela caixa de diálogo [Opçõ
 
 Para alterar o tema de cores entre claro, escuro e azul, digite **ambiente** na caixa de pesquisa e, em seguida, escolha **Ambiente > Geral**. Na caixa de diálogo **Opções**, altere a opção **Tema de cores**.
 
-Para alterar as opções de colorização no editor, digite **ambiente** na caixa de pesquisa e, em seguida, escolha **Ambiente > Fontes e Cores**. Confira [Como Alterar fontes e cores](../ide/how-to-change-fonts-and-colors-in-visual-studio.md).
+Para alterar as opções de colorização no editor, digite **ambiente** na caixa de pesquisa e, em seguida, escolha **Ambiente > Fontes e Cores**. Consulte [How to: Change fonts and colors](../ide/how-to-change-fonts-and-colors-in-visual-studio.md) (Como alterar fontes e cores).
 
 ### <a name="main-menu-casing"></a>Maiúsculas e minúsculas do menu principal
 
@@ -48,7 +48,7 @@ Para alterar as opções de colorização no editor, digite **ambiente** na caix
 
 ### <a name="customize-menus-and-toolbars"></a>Personalizar menus e barras de ferramentas
 
-Para adicionar ou remover itens do menu ou da barra de ferramentas, confira [Como: Personalizar menus e barras de ferramentas](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md).
+Para adicionar ou remover itens de menu ou de barra de ferramentas, consulte [Como personalizar menus e barras de ferramentas](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md).
 
 ::: moniker range="vs-2017"
 
@@ -70,5 +70,5 @@ Você pode definir e salvar vários layouts de janela e mudar entre eles. Por ex
 
 - [Configurações do ambiente](environment-settings.md)
 - [Visão geral do IDE do Visual Studio](../get-started/visual-studio-ide.md)
-- [Início Rápido: Introdução ao IDE do Visual Studio](../ide/quickstart-ide-orientation.md)
+- [Início rápido: Introdução ao IDE do Visual Studio](../ide/quickstart-ide-orientation.md)
 - [Personalizar o IDE do Visual Studio para Mac](/visualstudio/mac/customizing-the-ide)

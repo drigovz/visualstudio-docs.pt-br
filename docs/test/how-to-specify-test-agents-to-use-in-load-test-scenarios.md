@@ -9,17 +9,17 @@ helpviewer_keywords:
 - tests agents, load tests, specifying
 - load tests, test agents
 ms.assetid: e86806dd-5897-4e4c-bfd4-8d687fb72a6e
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 6045466d93a0017b648ca4327e80c801517c1359
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 207adc18d3a992f3079b929c46005ea29304074b
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62786426"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653402"
 ---
-# <a name="how-to-specify-test-agents-to-use-in-load-test-scenarios"></a>Como: Especificar os agentes de teste a serem usados em cenários de teste de carga
+# <a name="how-to-specify-test-agents-to-use-in-load-test-scenarios"></a>Como especificar agentes de teste a serem usados em cenários de teste de carga
 
 Depois de criar seu teste de carga usando o **Novo Assistente de Teste de Carga**, você poderá usar o **Editor de Teste de Carga** para alterar as propriedades de cenários para que eles atendam às suas metas e necessidades de teste.
 
@@ -67,6 +67,6 @@ Se um computador de agente de teste tiver mais de 75% de utilização de CPU ou 
 ## <a name="see-also"></a>Consulte também
 
 - [Editar cenários de teste de carga](../test/edit-load-test-scenarios.md)
-- [Passo a passo: Criar e executar um teste de carga](../test/walkthrough-create-and-run-a-load-test.md)
+- [Passo a passo: criar e executar um teste de carga](../test/walkthrough-create-and-run-a-load-test.md)
 - [Controladores e agentes de teste](configure-test-agents-and-controllers-for-load-tests.md)
 - [Propriedades do cenário de teste de carga](../test/load-test-scenario-properties.md)

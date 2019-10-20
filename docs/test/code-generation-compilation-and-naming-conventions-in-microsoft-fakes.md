@@ -1,24 +1,24 @@
 ---
-title: 'Microsoft Fakes: gerar e compilar código; convenções de nomenclatura'
+title: 'Falsificações da Microsoft: gerar & código de compilação; convenções de nomenclatura'
 ms.date: 11/04/2016
 ms.topic: conceptual
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: d9d60db348be719c4fa45243d22ca6b617b72407
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+author: jillre
+ms.openlocfilehash: e29b0b05b836dd4072b704bfd48cfb85cde50927
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68918459"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72665247"
 ---
 # <a name="code-generation-compilation-and-naming-conventions-in-microsoft-fakes"></a>Geração de código, compilação e convenções de nomenclatura no Microsoft Fakes
 
 Este artigo discute problemas e opções na compilação e geração de código do Fakes e descreve as convenções de nomenclatura para tipos, membros e parâmetros gerados pelo Fakes.
 
-**Requisitos**
+**Requirements**
 
 - Visual Studio Enterprise
 - Um projeto do .NET Framework

@@ -7,17 +7,17 @@ helpviewer_keywords:
 - Visual Studio templates, updating
 - project templates, updating
 - updating templates [Visual Studio]
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 57e457224d47e278df169b931c6e9cf6b8ae25e1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: ee0118ce4181a12ca4c199b8174a28fb4b431063
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974690"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72656537"
 ---
-# <a name="how-to-update-existing-templates"></a>Como: Atualizar modelos existentes
+# <a name="how-to-update-existing-templates"></a>Como atualizar modelos existentes
 
 Depois de criar um modelo e compactar os arquivos em um arquivo *.zip*, modifique o modelo. É possível fazer isso alterando manualmente os arquivos no modelo ou exportando um novo modelo de um projeto com base no modelo.
 
@@ -57,7 +57,7 @@ Você pode atualizar um modelo existente sem usar o **Assistente de Exportação
 
     Para obter mais informações sobre o esquema *.vstemplate*, consulte [Referência de esquema de modelo do Visual Studio (extensibilidade)](../extensibility/visual-studio-template-schema-reference.md). Para obter mais informações sobre o que você pode parametrizar nos arquivos de origem, consulte [Parâmetros do modelo](../ide/template-parameters.md).
 
-1. Selecione os arquivos em seu modelo, clique no menu de contexto ou no menu acionado com o botão direito do mouse e escolha **Enviar para** > **Pasta compactada (zipada)**.
+1. Selecione os arquivos em seu modelo, clique no menu de contexto ou no menu acionado com o botão direito do mouse e escolha **Enviar para** > **Pasta compactada (zipada)** .
 
     Os arquivos selecionados são compactados em um arquivo *.zip*.
 

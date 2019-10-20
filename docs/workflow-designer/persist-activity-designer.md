@@ -5,31 +5,31 @@ ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.Persist.UI
 ms.assetid: be8648dd-3eb9-4a50-8ec1-57a8be804692
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7be70d18b1fc8ff12e2d1fb177b41775954334ed
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 882a68e006ac139d717320b0b8b7ce4d75aceb38
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71254841"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650112"
 ---
 # <a name="persist-activity-designer"></a>Persistir o designer de atividades
 
-O designer de atividade de **persistência** é usado para criar e <xref:System.Activities.Statements.Persist> configurar uma atividade.
+O designer de atividade de **persistência** é usado para criar e configurar uma atividade de <xref:System.Activities.Statements.Persist>.
 
 ## <a name="the-persist-activity"></a>A atividade persistir
 
-A atividade de <xref:System.Activities.Statements.Persist> salva um fluxo de trabalho em disco, se possível. A atividade de <xref:System.Activities.Statements.Persist> não pode ser executada em uma zona de não persistência como, por exemplo, em uma atividade de <xref:System.Activities.Statements.TransactionScope> . Se você usar uma <xref:System.Activities.Statements.Persist> atividade em um escopo sem persistência, uma exceção será lançada em tempo de execução.
+A atividade de <xref:System.Activities.Statements.Persist> salva um fluxo de trabalho em disco, se possível. A atividade de <xref:System.Activities.Statements.Persist> não pode ser executada em uma zona de não persistência como, por exemplo, em uma atividade de <xref:System.Activities.Statements.TransactionScope> . Se você usar uma atividade de <xref:System.Activities.Statements.Persist> em um escopo sem persistência, uma exceção será lançada em tempo de execução.
 
 ### <a name="using-the-persist-activity-designer"></a>Usando o designer de atividade de persistir
 
 O designer de atividade de **persistência** pode ser encontrado na categoria **tempo de execução** da **caixa de ferramentas**, que é acessada clicando na guia caixa de **ferramentas** (como alternativa, selecione **caixa de ferramentas** no menu **Exibir** ou CTRL + ALT + X).
 
-O designer de atividade de **persistência** pode ser arrastado da **caixa de ferramentas** e colocado na superfície de designer de fluxo de trabalho sempre que as atividades são geralmente colocadas <xref:System.Activities.Statements.Sequence>, como dentro de um. Isso cria uma <xref:System.Activities.Statements.Persist> atividade com um **DisplayName** padrão de persist. O <xref:System.Activities.Activity.DisplayName%2A> pode ser editado no cabeçalho do designer de atividade de **persistência** ou na caixa **DisplayName** da grade de propriedades.
+O designer de atividade de **persistência** pode ser arrastado da **caixa de ferramentas** e colocado na superfície de designer de fluxo de trabalho sempre que as atividades são geralmente colocadas, como dentro de um <xref:System.Activities.Statements.Sequence>. Isso cria uma atividade de <xref:System.Activities.Statements.Persist> com um **DisplayName** padrão de persistir. O <xref:System.Activities.Activity.DisplayName%2A> pode ser editado no cabeçalho do designer de atividade de **persistência** ou na caixa **DisplayName** da grade de propriedades.
 
 ### <a name="the-persist-properties"></a>As propriedades persistir
 

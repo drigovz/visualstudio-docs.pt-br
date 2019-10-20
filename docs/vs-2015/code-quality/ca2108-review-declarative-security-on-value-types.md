@@ -1,5 +1,5 @@
 ---
-title: 'CA2108: Revisar segurança declarativa em tipos de valor | Microsoft Docs'
+title: 'CA2108: examinar a segurança declarativa em tipos de valor | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,17 +12,17 @@ helpviewer_keywords:
 - CA2108
 ms.assetid: d62bffdd-3826-4d52-a708-1c646c5d48c2
 caps.latest.revision: 18
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: f6a17bf57f00923cfd31bd477f211ba66169672a
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: a05b7098d75d368f893b2504f7663675611bc0ce
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65687364"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72658716"
 ---
-# <a name="ca2108-review-declarative-security-on-value-types"></a>CA2108: Examinar a segurança declarativa em tipos de valor
+# <a name="ca2108-review-declarative-security-on-value-types"></a>CA2108: revisar segurança declarativa em tipos de valor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -30,34 +30,34 @@ ms.locfileid: "65687364"
 |NomeDoTipo|ReviewDeclarativeSecurityOnValueTypes|
 |CheckId|CA2108|
 |Categoria|Microsoft.Security|
-|Alteração Significativa|Não separável|
+|Alteração Significativa|Sem interrupção|
 
 ## <a name="cause"></a>Causa
- Um tipo de valor público ou protegido é protegido por um [dados e modelagem](https://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6) ou [demandas de Link](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d).
+ Um tipo de valor público ou protegido é protegido por um [dados e modelagem](https://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6) ou [demandas de link](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d).
 
 ## <a name="rule-description"></a>Descrição da Regra
- Tipos de valor são alocados e inicializados por seus construtores padrão antes de executar outros construtores. Se um tipo de valor é protegido por um Demand ou LinkDemand e o chamador não tem permissões que satisfazem a verificação de segurança, qualquer construtor diferente do padrão falhará e será gerada uma exceção de segurança. O tipo de valor não é desalocado; ele é deixado no estado definido pelo seu construtor padrão. Não presuma que um chamador que passa uma instância do tipo de valor tem permissão para criar ou acessar a instância.
+ Os tipos de valor são alocados e inicializados por seus construtores padrão antes da execução de outros construtores. Se um tipo de valor for protegido por uma demanda ou LinkDemand e o chamador não tiver permissões que atendam à verificação de segurança, qualquer Construtor diferente do padrão falhará e uma exceção de segurança será lançada. O tipo de valor não é desalocado; Ele é deixado no estado definido por seu construtor padrão. Não assuma que um chamador que passa uma instância do tipo de valor tenha permissão para criar ou acessar a instância.
 
 ## <a name="how-to-fix-violations"></a>Como Corrigir Violações
- Você não pode corrigir uma violação dessa regra, a menos que você remover a verificação de segurança do tipo e verificações de segurança de nível de método de uso em seu lugar. Observe que corrigir a violação dessa maneira não impedirá que os chamadores com permissões inadequadas obtenham as instâncias do tipo de valor. Você deve garantir que uma instância do tipo de valor, em seu estado padrão, não expõe informações confidenciais e não pode ser usada de modo prejudicial.
+ Não é possível corrigir uma violação dessa regra, a menos que você remova a verificação de segurança do tipo e use verificações de segurança em nível de método em seu lugar. Observe que corrigir a violação dessa maneira não impedirá que os chamadores com permissões inadequadas obtenham instâncias do tipo de valor. Você deve garantir que uma instância do tipo Value, em seu estado padrão, não exponha informações confidenciais e não possa ser usada de forma prejudicial.
 
 ## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos
- Você pode suprimir um aviso nessa regra, se qualquer chamador pode obter as instâncias do tipo do valor em seu estado padrão sem apresentando uma ameaça à segurança.
+ Você pode suprimir um aviso dessa regra se qualquer chamador puder obter instâncias do tipo de valor em seu estado padrão sem passar uma ameaça à segurança.
 
 ## <a name="example"></a>Exemplo
- O exemplo a seguir mostra uma biblioteca que contém um tipo de valor que viola essa regra. Observe que o `StructureManager` tipo pressupõe que um chamador que passa uma instância do tipo de valor tem permissão para criar ou acessar a instância.
+ O exemplo a seguir mostra uma biblioteca que contém um tipo de valor que viola essa regra. Observe que o tipo de `StructureManager` pressupõe que um chamador que passa uma instância do tipo de valor tem permissão para criar ou acessar a instância.
 
  [!code-csharp[FxCop.Security.DemandOnValueType#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Security.DemandOnValueType/cs/FxCop.Security.DemandOnValueType.cs#1)]
 
 ## <a name="example"></a>Exemplo
- O aplicativo a seguir demonstra a desvantagem da biblioteca.
+ O aplicativo a seguir demonstra o ponto fraco da biblioteca.
 
  [!code-csharp[FxCop.Security.TestDemandOnValueType#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Security.TestDemandOnValueType/cs/FxCop.Security.TestDemandOnValueType.cs#1)]
 
  Este exemplo gerencia a seguinte saída.
 
- **Construtor personalizado da estrutura: Falha na solicitação.** 
-**Novos valores SecuredTypeStructure 100 100**
-**SecuredTypeStructure 200 200 de novos valores**
+ **Construtor personalizado de estrutura: falha na solicitação.** 
+**novos valores SecuredTypeStructure 100 100** 
+**novos valores SecuredTypeStructure 200 200**
 ## <a name="see-also"></a>Consulte também
- [Demandas de link](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) [dados e modelagem](https://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6)
+ [Dados e modelagem de](https://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6) [demandas de link](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d)

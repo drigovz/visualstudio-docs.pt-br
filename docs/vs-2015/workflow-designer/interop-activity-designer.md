@@ -8,42 +8,42 @@ f1_keywords:
 - System.Activities.Statements.Interop.UI
 ms.assetid: 800a3403-ba86-41c4-8de1-c4fee9703eb1
 caps.latest.revision: 6
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 55829e85b17bcdc70e419a8496d4756d0acb4a56
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 994d7776ff7c32f8dd309e667597550637ef2b5a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62952042"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72659032"
 ---
 # <a name="interop-activity-designer"></a>Designer de atividade de Interoperabilidade
-O **Interop** designer de atividade é usado para criar e configurar um <xref:System.Activities.Statements.Interop> atividade.  
-  
-## <a name="the-interop-activity"></a>A atividade de Interoperabilidade  
- A atividade de <xref:System.Activities.Statements.Interop> gerencia a execução de tipos que derivam de <xref:System.Workflow.ComponentModel.Activity?displayProperty=fullName> em um fluxo de trabalho.  
-  
-### <a name="using-the-interop-activity-designer"></a>Usando o designer de atividade de Interoperabilidade  
- O **Interop** designer de atividade pode ser encontrado na **migração** categoria da **caixa de ferramentas**, que é acessado clicando o **caixa de ferramentas**guia (como alternativa, selecione **caixa de ferramentas** do **exibição** menu ou CTRL + ALT + X.)  
-  
- O [migração](../workflow-designer/migration-activity-designers.md) categoria que contém o <xref:System.Activities.Statements.Interop> atividade aparece apenas no **caixa de ferramentas** se seu projeto está direcionando o completo [!INCLUDE[netfx40_long](../includes/netfx40-long-md.md)].  
-  
- Para projetos c#, você pode redirecionar o projeto para usar toda a [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] clicando com o projeto na **Gerenciador de soluções** e selecionando **propriedades**. Sobre o **aplicativo** guia, selecione o **NET Framework 4** opção no **estrutura de destino**. Selecione o **Yes** botão na **modificação do Framework de destino** caixa de diálogo que exibe solicitar que você confirme essa alteração.  
-  
- Para projetos do VB, você pode redirecionar o projeto para usar toda a [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] clicando com o projeto na **Gerenciador de soluções** e selecionando **propriedades**. Sobre o **Compile** , clique no **opções avançadas de compilação** botão. Selecione **.Net Framework 4** da **lista do framework de destino** e, em seguida, clique em **Okey**. Clique o **Sim** botão na **modificação do Framework de destino** caixa de diálogo que exibe solicitar que você confirme essa alteração.  
-  
- O **Interop** designer de atividade pode ser arrastado da **caixa de ferramentas** e ser solto sobre a [!INCLUDE[wfd2](../includes/wfd2-md.md)] superfície onde quer que as atividades são colocadas em geral, como em um <xref:System.Activities.Statements.Sequence>. Isso cria uma <xref:System.Activities.Statements.Interop> atividade com um padrão **DisplayName** de interoperabilidade. O <xref:System.Activities.Activity.DisplayName%2A> pode ser editado no cabeçalho do **interoperabilidade** designer de atividade ou nos **DisplayName** caixa da grade de propriedade.  
-  
- Clique o **clique para procurar...** texto na **ActivityType** caixa, no **interoperabilidade** atividade do designer ou na grade de propriedade para abrir o **procurar e selecione um .net tipo** caixa de diálogo. Somente tipos para os trabalhos 3,0 ou o trabalho 3,5 atividades são mostrados (isto é, somente os tipos derivados de <xref:System.Workflow.ComponentModel.Activity>). [!INCLUDE[crabout](../includes/crabout-md.md)] usando esta caixa para especificar um tipo, consulte o [navegue e selecione uma caixa de diálogo do tipo .NET](../workflow-designer/browse-and-select-a-dotnet-type-dialog-box.md) tópico.  
-  
-### <a name="the-interop-properties"></a>As propriedades de Interoperabilidade  
- A tabela a seguir mostra as propriedades de <xref:System.Activities.Statements.Interop> e descreve como elas são usadas no designer. Essas propriedades podem ser editadas na grade de propriedade ou na superfície de [!INCLUDE[wfd2](../includes/wfd2-md.md)] .  
-  
-|Nome da Propriedade|Necessária|Uso|  
-|-------------------|--------------|-----------|  
-|<xref:System.Activities.Activity.DisplayName%2A>|False|O nome amigável de atividade de <xref:System.Activities.Statements.Interop> . O padrão é Interoperabilidade. Embora o nome para exibição não é necessário restrita, é uma prática recomendada usar um nome para exibição.|  
-|<xref:System.Activities.Statements.Interop.ActivityType%2A>|verdadeiro|Especifica o tipo de atividade contida pela atividade de <xref:System.Activities.Statements.Interop> . Este tipo especificado deve derivar de <xref:System.Workflow.ComponentModel.Activity>.|  
-  
-## <a name="see-also"></a>Consulte também  
+O **Interop** Activity Designer é usado para criar e configurar uma atividade de <xref:System.Activities.Statements.Interop>.
+
+## <a name="the-interop-activity"></a>A atividade de Interoperabilidade
+ A atividade de <xref:System.Activities.Statements.Interop> gerencia a execução de tipos que derivam de <xref:System.Workflow.ComponentModel.Activity?displayProperty=fullName> em um fluxo de trabalho.
+
+### <a name="using-the-interop-activity-designer"></a>Usando o designer de atividade de Interoperabilidade
+ O **Interop** Activity Designer pode ser encontrado na categoria **migração** da caixa de **ferramentas**, que é acessada clicando na guia **caixa de ferramentas** (como alternativa, selecione **caixa de ferramentas** no menu **Exibir** ou CTRL + ALT + X.)
+
+ A categoria de [migração](../workflow-designer/migration-activity-designers.md) que contém a <xref:System.Activities.Statements.Interop> atividade só aparecerá na **caixa de ferramentas** se o seu projeto estiver direcionando o [!INCLUDE[netfx40_long](../includes/netfx40-long-md.md)] completo.
+
+ Para C# projetos, você pode redirecionar o projeto para usar o [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] completo clicando com o botão direito do mouse no projeto na **Gerenciador de soluções** e selecionando **Propriedades**. Na guia **aplicativo** , selecione a opção **NET Framework 4** na estrutura de **destino**. Selecione o botão **Sim** na caixa de diálogo de **alteração da estrutura de destino** que é exibida solicitando que você confirme essa alteração.
+
+ Para projetos do VB, você pode redirecionar o projeto para usar o [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] completo clicando com o botão direito do mouse no projeto na **Gerenciador de soluções** e selecionando **Propriedades**. Na guia **Compilar** , clique no botão **Opções avançadas de compilação** . Selecione **.NET Framework 4** na **lista estrutura de destino** e clique em **OK**. Clique no botão **Sim** na caixa de diálogo de **alteração da estrutura de destino** que é exibida solicitando que você confirme essa alteração.
+
+ O **Interop** Activity Designer pode ser arrastado da **caixa de ferramentas** e retirado para a superfície de [!INCLUDE[wfd2](../includes/wfd2-md.md)] sempre que as atividades são geralmente colocadas, como dentro de um <xref:System.Activities.Statements.Sequence>. Isso cria uma atividade de <xref:System.Activities.Statements.Interop> com um **DisplayName** padrão de Interop. O <xref:System.Activities.Activity.DisplayName%2A> pode ser editado no cabeçalho do designer de atividade de **interoperabilidade** ou na caixa **DisplayName** da grade de propriedades.
+
+ Clique no **clique para procurar...** texto na caixa **ActivityType** , seja no designer de atividade de **interoperabilidade** ou na grade de propriedades, para exibir a caixa de diálogo **procurar e selecionar um tipo .net** . Somente tipos para os trabalhos 3,0 ou o trabalho 3,5 atividades são mostrados (isto é, somente os tipos derivados de <xref:System.Workflow.ComponentModel.Activity>). [!INCLUDE[crabout](../includes/crabout-md.md)] usando essa caixa para especificar um tipo, consulte a [caixa de diálogo Procurar e selecionar um tipo .net](../workflow-designer/browse-and-select-a-dotnet-type-dialog-box.md) .
+
+### <a name="the-interop-properties"></a>As propriedades de Interoperabilidade
+ A tabela a seguir mostra as propriedades de <xref:System.Activities.Statements.Interop> e descreve como elas são usadas no designer. Essas propriedades podem ser editadas na grade de propriedade ou na superfície de [!INCLUDE[wfd2](../includes/wfd2-md.md)] .
+
+|Nome da Propriedade|Necessária|Uso|
+|-------------------|--------------|-----------|
+|<xref:System.Activities.Activity.DisplayName%2A>|False|O nome amigável de atividade de <xref:System.Activities.Statements.Interop> . O padrão é Interoperabilidade. Embora o nome para exibição não é necessário restrita, é uma prática recomendada usar um nome para exibição.|
+|<xref:System.Activities.Statements.Interop.ActivityType%2A>|verdadeiro|Especifica o tipo de atividade contida pela atividade de <xref:System.Activities.Statements.Interop> . Este tipo especificado deve derivar de <xref:System.Workflow.ComponentModel.Activity>.|
+
+## <a name="see-also"></a>Consulte também
  [Migração](../workflow-designer/migration-activity-designers.md)

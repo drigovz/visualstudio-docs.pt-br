@@ -6,20 +6,20 @@ dev_langs:
 - VB
 - CSharp
 ms.assetid: 63bc6328-e0df-4655-9ce3-5ff74dbf69a4
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 157309d49fd46c4ecdd92236188a6739a3e9c2ad
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 7ab33c2e77de183b5c916fbcfe60843c47c4f83f
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68925397"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72648049"
 ---
-# <a name="walkthrough-create-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>Passo a passo: Criar LINQ to SQL classes usando herança de tabela única (O/R Designer)
-As [ferramentas de LINQ to SQL no Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) oferecem suporte à herança de tabela única, pois normalmente são implementadas em sistemas relacionais. Este passo a passos se expande sobre as etapas genéricas [fornecidas no How to: Configure a herança usando o tópico o/R](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md) designer e forneça alguns dados reais para demonstrar o uso de herança [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)]no.
+# <a name="walkthrough-create-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>Walkthrough: criar classes de LINQ to SQL usando herança de tabela única (O/R Designer)
+As [ferramentas de LINQ to SQL no Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) oferecem suporte à herança de tabela única, pois normalmente são implementadas em sistemas relacionais. Este tutorial se expande sobre as etapas genéricas fornecidas em [como configurar a herança usando o tópico o/R Designer](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md) e fornece alguns dados reais para demonstrar o uso de herança no [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)].
 
 Durante este passo a passos, você executa as seguintes tarefas:
 
@@ -38,7 +38,7 @@ Durante este passo a passos, você executa as seguintes tarefas:
 - Exibir os dados em um Windows Form.
 
 ## <a name="create-a-table-to-inherit-from"></a>Criar uma tabela da qual herdar
-Para ver como a herança funciona, crie uma pequena `Person` tabela, use-a como uma classe base e, em seguida `Employee` , crie um objeto que herde dela.
+Para ver como a herança funciona, crie uma pequena tabela de `Person`, use-a como uma classe base e, em seguida, crie um objeto de `Employee` que herde dela.
 
 ### <a name="to-create-a-base-table-to-demonstrate-inheritance"></a>Para criar uma tabela base para demonstrar a herança
 
@@ -91,7 +91,7 @@ Agora que você criou a tabela, crie um novo projeto demonstrar a configuração
 
 ### <a name="to-create-the-new-windows-forms-application"></a>Para criar o novo aplicativo Windows Forms
 
-1. No Visual Studio, no menu **arquivo** , selecione **novo** > **projeto**.
+1. No Visual Studio, no menu **arquivo** , selecione **novo** **projeto**de  > .
 
 2. Expanda **o C# Visual** ou **Visual Basic** no painel esquerdo e, em seguida, selecione **área de trabalho do Windows**.
 
@@ -188,7 +188,7 @@ Execute o aplicativo e verifique se os registros exibidos na caixa de listagem s
 ## <a name="see-also"></a>Consulte também
 
 - [Ferramentas do LINQ to SQL no Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
-- [Passo a passo: Criando classes de LINQ to SQL (O-R Designer)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)
-- [Como: Atribuir procedimentos armazenados para executar atualizações, inserções e exclusões (Designer Relacional de Objetos)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)
+- [Passo a passo: criando classes LINQ to SQL (Designer Relacional de Objetos)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)
+- [Como atribuir procedimentos armazenados para executar atualizações, inserções e exclusões (Designer Relacional de Objetos)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)
 - [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)
-- [Como: Gerar o modelo de objeto no Visual Basic ouC#](/dotnet/framework/data/adonet/sql/linq/how-to-generate-the-object-model-in-visual-basic-or-csharp)
+- [Como gerar o modelo de objeto em Visual Basic ou C#](/dotnet/framework/data/adonet/sql/linq/how-to-generate-the-object-model-in-visual-basic-or-csharp)

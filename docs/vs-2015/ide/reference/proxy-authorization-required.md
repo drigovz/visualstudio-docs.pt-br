@@ -6,26 +6,26 @@ ms.technology: vs-ide-general
 ms.topic: troubleshooting
 ms.assetid: c2d24ae1-9902-460e-b72a-0299eed9ee82
 caps.latest.revision: 9
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: f2de40c520bca0ea04f50ec782fec2dda531172e
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 7456e60b42b18ad706b951ee58ca5c33f05cabc1
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67822062"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72665712"
 ---
 # <a name="proxy-authorization-required"></a>Autorização de proxy necessária
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-O **autorização de Proxy necessária** erro geralmente ocorre quando os usuários estão conectados aos recursos do Visual Studio online por meio de um servidor proxy e o servidor proxy bloqueia as chamadas.
+O erro de **autorização de proxy necessário** geralmente ocorre quando os usuários estão conectados aos recursos do Visual Studio online por meio de um servidor proxy e o servidor proxy bloqueia as chamadas.
 
 Para corrigir esse erro, tente uma ou mais das seguintes etapas:
 
 - Reinicie o Visual Studio. Uma caixa de diálogo de autenticação de proxy deverá aparecer. Insira suas credenciais na caixa de diálogo.
 
-- Se a etapa acima não resolver o problema, pode ser porque o servidor proxy não solicita credenciais para endereços http://go.microsoft.com, mas sim para endereços *.visualStudio.com. Para esses servidores, você precisará adicionar as seguintes URLs à lista de permissões para desbloquear todos os cenários de entrar no Visual Studio:
+- Se a etapa acima não resolver o problema, pode ser porque o servidor proxy não solicita credenciais para endereços http://go.microsoft.com, mas sim para endereços *.visualStudio.com. Para esses servidores, você precisa adicionar as seguintes URLs à lista de permissões para desbloquear todos os cenários de entrada no Visual Studio:
 
   - *.windows.net
 
@@ -37,7 +37,7 @@ Para corrigir esse erro, tente uma ou mais das seguintes etapas:
 
   - *.live.com
 
-- Você pode remover o http://go.microsoft.com de endereços da lista de permissões para que a caixa de diálogo de autenticação de proxy apareça para ambos o http://go.microsoft.com endereço e os pontos de extremidade do servidor quando o Visual Studio for reiniciado.
+- Você pode remover o endereço http://go.microsoft.com da lista de permissões para que a caixa de diálogo autenticação de proxy apareça para o endereço http://go.microsoft.com e os pontos de extremidade do servidor quando o Visual Studio for reiniciado.
 
 - Se você quiser usar suas credenciais padrão com o proxy, faça o seguinte:
 
@@ -51,6 +51,6 @@ Para corrigir esse erro, tente uma ou mais das seguintes etapas:
       </defaultProxy>
       ```
 
-      Insira o endereço de proxy correto para sua rede na `proxyaddress="<http://<yourproxy:port#>`.
+      Insira o endereço de proxy correto para sua rede em `proxyaddress="<http://<yourproxy:port#>`.
 
-- Siga as instruções em [esta postagem de blog](http://blogs.msdn.com/b/rido/archive/2010/05/06/how-to-connect-to-tfs-through-authenticated-web-proxy.aspx) adicionar código que permite que você use o proxy.
+- Siga as instruções nesta [postagem de blog](http://blogs.msdn.com/b/rido/archive/2010/05/06/how-to-connect-to-tfs-through-authenticated-web-proxy.aspx) para adicionar código que permite que você use o proxy.

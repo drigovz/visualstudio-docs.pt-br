@@ -1,5 +1,5 @@
 ---
-title: 'CA1024: Usar propriedades quando apropriado | Microsoft Docs'
+title: 'CA1024: usar propriedades quando apropriado | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,62 +12,62 @@ helpviewer_keywords:
 - UsePropertiesWhereAppropriate
 ms.assetid: 3a04f765-af7c-4872-87ad-9cc29e8e657f
 caps.latest.revision: 23
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 43487aa97afcd41a5375bacc26efba705cbaa76c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b190e007cfdb016e54148cf0295c68baf68c5033
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68144817"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661957"
 ---
-# <a name="ca1024-use-properties-where-appropriate"></a>CA1024: Usar propriedades quando apropriado
+# <a name="ca1024-use-properties-where-appropriate"></a>CA1024: usar propriedades quando apropriado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |NomeDoTipo|UsePropertiesWhereAppropriate|
 |CheckId|CA1024|
-|Categoria|Microsoft.Design|
+|Categoria|Microsoft. Design|
 |Alteração Significativa|Quebra|
 
 ## <a name="cause"></a>Causa
- Um método público ou protegido tem um nome que começa com `Get`, não usa nenhum parâmetro e retorna um valor que não é uma matriz.
+ Um método público ou protegido tem um nome que começa com `Get`, não usa parâmetros e retorna um valor que não é uma matriz.
 
 ## <a name="rule-description"></a>Descrição da Regra
- Na maioria dos casos, as propriedades representam dados e os métodos executam ações. As propriedades são acessadas como campos, o que os torna mais fácil de usar. Um método é um bom candidato para se tornar uma propriedade, se houver uma das seguintes condições:
+ Na maioria dos casos, as propriedades representam dados e métodos executam ações. As propriedades são acessadas como campos, o que as torna mais fáceis de usar. Um método é um bom candidato a se tornar uma propriedade se uma dessas condições estiver presente:
 
-- Não usa nenhum argumento e retorna as informações de estado de um objeto.
+- Não usa argumentos e retorna as informações de estado de um objeto.
 
 - Aceita um único argumento para definir alguma parte do estado de um objeto.
 
-  Propriedades devem se comportar como se fossem campos; Se o método não for possível, ele não deve ser alterado para uma propriedade. Métodos são melhores do que as propriedades nas seguintes situações:
+  As propriedades devem se comportar como se fossem campos; Se o método não puder, ele não deverá ser alterado para uma propriedade. Os métodos são melhores do que as propriedades nas seguintes situações:
 
-- O método executa uma operação demorada. O método é perceivably mais lento do que o tempo necessário para definir ou obter o valor de um campo.
+- O método executa uma operação demorada. O método é muito mais lento do que o tempo necessário para definir ou obter o valor de um campo.
 
-- O método executa uma conversão. Acesso a um campo não retorna uma versão convertida dos dados que ele armazena.
+- O método executa uma conversão. O acesso a um campo não retorna uma versão convertida dos dados que ele armazena.
 
-- O método Get tem um efeito colateral observável. Recuperando o valor de um campo não produz nenhum efeito colateral.
+- O método Get tem um efeito colateral observável. A recuperação do valor de um campo não produz nenhum efeito colateral.
 
-- A ordem de execução é importante. Definindo o valor de um campo não se baseia na ocorrência de outras operações.
+- A ordem de execução é importante. Definir o valor de um campo não depende da ocorrência de outras operações.
 
-- Chamar o método duas vezes em sucessão gera resultados diferentes.
+- Chamar o método duas vezes em sucessão cria resultados diferentes.
 
-- O método é estático, mas retorna um objeto que pode ser alterado pelo chamador. Recuperando o valor de um campo não permite que o chamador alterar os dados armazenados pelo campo.
+- O método é estático, mas retorna um objeto que pode ser alterado pelo chamador. A recuperação do valor de um campo não permite que o chamador altere os dados armazenados pelo campo.
 
 - O método retorna uma matriz.
 
 ## <a name="how-to-fix-violations"></a>Como Corrigir Violações
- Para corrigir uma violação dessa regra, altere o método a uma propriedade.
+ Para corrigir uma violação dessa regra, altere o método para uma propriedade.
 
 ## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos
- Suprima um aviso nessa regra, se o método de atender a pelo menos um dos critérios listados anteriormente.
+ Suprimir um aviso dessa regra se o método atender a pelo menos um dos critérios listados anteriormente.
 
-## <a name="controlling-property-expansion-in-the-debugger"></a>Controlando a expansão de propriedade no depurador
- Um motivo que os programadores evitar o uso de uma propriedade é porque não querem o depurador para expandir automaticamente. Por exemplo, a propriedade pode envolver a alocação de um objeto grande ou chamar um P/Invoke, mas ele realmente não pode ter nenhum efeito colateral observável.
+## <a name="controlling-property-expansion-in-the-debugger"></a>Controlando a expansão da propriedade no depurador
+ Um motivo pelo qual os programadores evitam o uso de uma propriedade é porque não querem que o depurador a expanda automaticamente. Por exemplo, a propriedade pode envolver a alocação de um objeto grande ou a chamada de P/Invoke, mas pode não ter realmente nenhum efeito colateral observável.
 
- Você pode impedir que o depurador expansão automática propriedades por meio da aplicação <xref:System.Diagnostics.DebuggerBrowsableAttribute?displayProperty=fullName>. O exemplo a seguir mostra esse atributo está sendo aplicado a uma propriedade de instância.
+ Você pode impedir que o depurador expanda Propriedades automaticamente aplicando <xref:System.Diagnostics.DebuggerBrowsableAttribute?displayProperty=fullName>. O exemplo a seguir mostra esse atributo sendo aplicado a uma propriedade de instância.
 
 ```vb
 Imports System
@@ -117,6 +117,6 @@ namespace Microsoft.Samples
 ```
 
 ## <a name="example"></a>Exemplo
- O exemplo a seguir contém vários métodos que devem ser convertidas em propriedades e vários que devem não porque eles não se comportam como campos.
+ O exemplo a seguir contém vários métodos que devem ser convertidos em Propriedades e vários que não deveriam porque eles não se comportam como campos.
 
  [!code-csharp[FxCop.Design.MethodsProperties#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.MethodsProperties/cs/FxCop.Design.MethodsProperties.cs#1)]

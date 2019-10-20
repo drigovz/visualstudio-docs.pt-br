@@ -1,21 +1,21 @@
 ---
-title: 'Como: Editar arquivos XML'
+title: Como editar arquivos XML
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 07fa3ecf-6345-4d30-9d85-d5ef5b083319
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1bcc560c1e0cabd222da68e98de18d7b8bef6ec6
-ms.sourcegitcommit: 0f5f7955076238742f2071d286ad8e896f3a6cad
+ms.openlocfilehash: fd8671bf45230ec24a37d5006a2d32e5aabe8f28
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68483405"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72645917"
 ---
-# <a name="how-to-edit-xml-files"></a>Como: Editar arquivos XML
+# <a name="how-to-edit-xml-files"></a>Como: editar arquivos XML
 
 O editor de XML é o novo editor de arquivos XML. Ele pode ser usado em um arquivo XML independente, ou em um arquivo associado a um projeto o Visual Studio. O editor de XML está associado às seguintes extensões de arquivo: *. config*, *. DTD*, *. xml*, *. xsd*, *. XDR*, *. xsl*, *. XSLT*e *. vssettings*. O editor de XML também está associado a qualquer outro tipo de arquivo que não tenha um editor específico registrado e que contenha conteúdo XML ou DTD.
 
@@ -56,7 +56,7 @@ Para editar um arquivo XML, clique duas vezes no arquivo que você deseja editar
 
 ::: moniker range="vs-2017"
 
-1. No menu **arquivo** , selecione **novo** > **projeto**.
+1. No menu **Arquivo**, selecione **Novo** > **Projeto**.
 
    A caixa de diálogo **Novo Projeto** é exibida.
 
@@ -68,7 +68,7 @@ Para editar um arquivo XML, clique duas vezes no arquivo que você deseja editar
 
 ::: moniker range=">=vs-2019"
 
-1. No menu **arquivo** , selecione **novo** > **projeto**.
+1. No menu **Arquivo**, selecione **Novo** > **Projeto**.
 
 2. Insira **projeto vazio** na caixa de pesquisa de modelo, selecione o modelo de **projeto vazio (.NET Framework)** e clique em **Avançar**.
 
@@ -84,4 +84,4 @@ Para editar um arquivo XML, clique duas vezes no arquivo que você deseja editar
 
 - [Editor de XML](../xml-tools/xml-editor.md)
 - [Propriedades do documento XML, janela Propriedades](../xml-tools/xml-document-properties-properties-window.md)
-- [Como: Criar um esquema XML a partir de um documento XML](../xml-tools/how-to-create-an-xml-schema-from-an-xml-document.md)
+- [Como: criar um esquema XML a partir de um documento XML](../xml-tools/how-to-create-an-xml-schema-from-an-xml-document.md)

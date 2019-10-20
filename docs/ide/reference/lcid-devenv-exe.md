@@ -13,17 +13,17 @@ helpviewer_keywords:
 - LCID devenv switch
 - /LCID Devenv switch
 ms.assetid: 3a3f4e70-ea66-4351-9d62-acb1dec30e8e
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: deb2ce5eba108127dce82bab77fe7ed4fb78fb14
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 991886289ac2c2ee06e37476169dff6d2354a52e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62970121"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72659989"
 ---
 # <a name="lcid-devenvexe"></a>/LCID (devenv.exe)
 
@@ -49,7 +49,7 @@ Se o idioma especificado não estiver disponível em seu sistema, a opção `/LC
 
 A tabela a seguir lista os LCIDs dos idiomas para os quais o Visual Studio oferece suporte.
 
-|Idioma|LCID|
+|Linguagem|LCID|
 |--------------|----------|
 |Chinês (simplificado)|2052|
 |Chinês (tradicional)|1028|

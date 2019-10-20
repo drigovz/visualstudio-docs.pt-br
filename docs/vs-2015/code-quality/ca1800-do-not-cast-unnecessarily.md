@@ -1,5 +1,5 @@
 ---
-title: 'CA1800: Não converter desnecessariamente | Microsoft Docs'
+title: 'CA1800: não converter desnecessariamente | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,50 +12,50 @@ helpviewer_keywords:
 - CA1800
 ms.assetid: b79a010a-6627-421e-8955-6007e32fa808
 caps.latest.revision: 19
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 49ffc66b1b7047c7b88664ac0c5198fbd51c51c6
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 466309cef8905faa9b659e2d3652975d815767fb
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65682069"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72663101"
 ---
-# <a name="ca1800-do-not-cast-unnecessarily"></a>CA1800: Não converta sem necessidade
+# <a name="ca1800-do-not-cast-unnecessarily"></a>CA1800: não converter desnecessariamente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |NomeDoTipo|DoNotCastUnnecessarily|
 |CheckId|CA1800|
-|Categoria|Microsoft.Performance|
-|Alteração Significativa|Não são significativas|
+|Categoria|Microsoft. performance|
+|Alteração Significativa|Sem interrupção|
 
 ## <a name="cause"></a>Causa
- Um método realiza conversões duplicadas em um dos seus argumentos ou variáveis locais. Para concluir a análise por essa regra, o assembly testado deve ser criado usando as informações de depuração e o arquivo de banco de dados (. PDB) do programa associado deve estar disponível.
+ Um método executa conversões duplicadas em um de seus argumentos ou variáveis locais. Para uma análise completa por essa regra, o assembly testado deve ser criado usando informações de depuração e o arquivo de banco de dados do programa (. pdb) associado deve estar disponível.
 
 ## <a name="rule-description"></a>Descrição da Regra
- As conversões duplicadas diminui o desempenho, especialmente quando as conversões são realizadas em instruções de iteração compactas. Para operações de conversão explícita de duplicados, armazenar o resultado da conversão em uma variável local e usa a variável local em vez de operações de conversão duplicados.
+ As conversões duplicadas diminui o desempenho, especialmente quando as conversões são realizadas em instruções de iteração compactas. Para operações de conversão duplicadas explícitas, armazene o resultado da conversão em uma variável local e use a variável local em vez das operações de conversão duplicadas.
 
- Se a linguagem c# `is` operador é usado para testar se a conversão for bem-sucedida antes que a conversão real é executada, Experimente testar o resultado do `as` operador em vez disso. Isso fornece a mesma funcionalidade sem a operação de conversão implícita é executada pelo `is` operador.
+ Se o C# operador `is` for usado para testar se a conversão terá sucesso antes da execução da conversão real, considere testar o resultado do operador `as` em vez disso. Isso fornece a mesma funcionalidade sem a operação de conversão implícita que é executada pelo operador `is`.
 
 ## <a name="how-to-fix-violations"></a>Como Corrigir Violações
- Para corrigir uma violação dessa regra, modificar a implementação do método para minimizar o número de operações de conversão.
+ Para corrigir uma violação dessa regra, modifique a implementação do método para minimizar o número de operações de conversão.
 
 ## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos
- É seguro para suprimir um aviso nessa regra, ou ignorar a regra completamente, se o desempenho não for uma preocupação.
+ É seguro suprimir um aviso dessa regra ou ignorar completamente a regra, se o desempenho não for uma preocupação.
 
 ## <a name="example"></a>Exemplo
- O exemplo a seguir mostra um método que viola a regra usando o c# `is` operador. Um segundo método satisfaz a regra, substituindo o `is` operador com um teste com o resultado do `as` operador, que diminui o número de operações de conversão por iteração de dois para um.
+ O exemplo a seguir mostra um método que viola a regra usando o C# operador `is`. Um segundo método satisfaz a regra substituindo o operador `is` por um teste em relação ao resultado do operador `as`, o que diminui o número de operações de conversão por iteração de duas para uma.
 
  [!code-csharp[FxCop.Performance.UnnecessaryCastsAsIs#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Performance.UnnecessaryCastsAsIs/cs/FxCop.Performance.UnnecessaryCastsAsIs.cs#1)]
 
 ## <a name="example"></a>Exemplo
- O exemplo a seguir mostra um método `start_Click`, que tem várias conversões explícitas duplicados que viola a regra e um método, `reset_Click`, que satisfaz a regra, armazenando a conversão em uma variável local.
+ O exemplo a seguir mostra um método, `start_Click`, que tem várias conversões explícitas duplicadas, que violam a regra e um método, `reset_Click`, que satisfaz a regra armazenando a conversão em uma variável local.
 
  [!code-csharp[FxCop.Performance.UnnecessaryCasts#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Performance.UnnecessaryCasts/cs/FxCop.Performance.UnnecessaryCasts.cs#1)]
  [!code-vb[FxCop.Performance.UnnecessaryCasts#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Performance.UnnecessaryCasts/vb/FxCop.Performance.UnnecessaryCasts.vb#1)]
 
 ## <a name="see-also"></a>Consulte também
- [as](https://msdn.microsoft.com/library/a9be126b-cbf4-4990-a70d-d0e1983cad0e) [is](https://msdn.microsoft.com/library/bc62316a-d41f-4f90-8300-c6f4f0556e43)
+ [como](https://msdn.microsoft.com/library/a9be126b-cbf4-4990-a70d-d0e1983cad0e) [está](https://msdn.microsoft.com/library/bc62316a-d41f-4f90-8300-c6f4f0556e43)

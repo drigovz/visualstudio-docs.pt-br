@@ -9,17 +9,17 @@ helpviewer_keywords:
 - install packages
 - managing extensions visual studio
 ms.assetid: 4ca92d93-31b9-47ef-8109-4a429d9e2ca3
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f86aa6cf99ae910c9b10bc6e93c408ca2c85265
-ms.sourcegitcommit: a2df993dc5e11c5131dbfcba686f0028a589068f
+ms.openlocfilehash: 92fe7d47a74112fb804770cca356084fa79fe1e4
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "71150097"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72654209"
 ---
 # <a name="manage-extensions-for-visual-studio"></a>Gerenciar extensões para o Visual Studio
 
@@ -65,7 +65,7 @@ Se você tentar instalar uma extensão que tenha dependências, o instalador ver
 
 ### <a name="install-without-using-the-extensions-and-updates-dialog-box"></a>Instalar sem usar a caixa de diálogo Extensões e Atualizações
 
-As extensões que foram empacotadas em arquivos *.vsix* podem estar disponíveis em outros locais e não no Visual Studio Marketplace. A caixa de diálogo**extensões e atualizações** de **ferramentas** > não pode detectar esses arquivos, mas você pode instalar um arquivo *. vsix* clicando duas vezes no arquivo ou selecionando o arquivo e pressionando **Enter**. Depois disso, basta seguir as instruções. Depois que a extensão for instalada, será possível usar a caixa de diálogo **Extensões e Atualizações** para habilitá-la, desabilitá-la ou desinstalá-la.
+As extensões que foram empacotadas em arquivos *.vsix* podem estar disponíveis em outros locais e não no Visual Studio Marketplace. A caixa de diálogo **ferramentas**  > **extensões e atualizações** não pode detectar esses arquivos, mas você pode instalar um arquivo *. vsix* clicando duas vezes no arquivo ou selecionando o arquivo e pressionando **Enter**. Depois disso, basta seguir as instruções. Depois que a extensão for instalada, será possível usar a caixa de diálogo **Extensões e Atualizações** para habilitá-la, desabilitá-la ou desinstalá-la.
 
 > [!NOTE]
 > - O Visual Studio Marketplace contém extensões VSIX e MSI. A caixa de diálogo extensões e atualizações não pode habilitar ou desabilitar extensões baseadas em MSI.
@@ -89,7 +89,7 @@ Se você tentar instalar uma extensão que tenha dependências, o instalador ver
 
 ### <a name="install-without-using-the-manage-extensions-dialog-box"></a>Instalar sem usar a caixa de diálogo Gerenciar Extensões
 
-As extensões que foram empacotadas em arquivos *.vsix* podem estar disponíveis em outros locais e não no Visual Studio Marketplace. A caixa de diálogo **extensões** > **gerenciar extensões** não pode detectar esses arquivos, mas você pode instalar um arquivo *. vsix* clicando duas vezes no arquivo ou selecionando o arquivo e pressionando **Enter**. Depois disso, basta seguir as instruções. Depois que a extensão for instalada, será possível usar a caixa de diálogo **Gerenciar Extensões** para habilitá-la, desabilitá-la ou desinstalá-la.
+As extensões que foram empacotadas em arquivos *.vsix* podem estar disponíveis em outros locais e não no Visual Studio Marketplace. A caixa de diálogo **extensões**  > **gerenciar extensões** não pode detectar esses arquivos, mas você pode instalar um arquivo *. vsix* clicando duas vezes no arquivo ou selecionando o arquivo e pressionando **Enter**. Depois disso, basta seguir as instruções. Depois que a extensão for instalada, será possível usar a caixa de diálogo **Gerenciar Extensões** para habilitá-la, desabilitá-la ou desinstalá-la.
 
 > [!NOTE]
 > - O Visual Studio Marketplace contém extensões VSIX e MSI. A caixa de diálogo Gerenciar extensões não pode habilitar ou desabilitar extensões baseadas em MSI.
@@ -106,13 +106,13 @@ Se desejar parar de usar uma extensão, você poderá desabilitá-la ou desinsta
 
 ## <a name="per-user-and-administrative-extensions"></a>Extensões administrativas e por usuário
 
-A maioria das extensões é por usuário e é instalada na *pasta\\%LocalAppData%\Microsoft\VisualStudio < Visual Studio\>Version\\ \Extensions* . Algumas extensões são extensões administrativas e são instaladas na *\<pasta de instalação do Visual Studio>\Common7\IDE\Extensions\\* .
+A maioria das extensões é por usuário e é instalada no *%LocalAppData%\Microsoft\VisualStudio \\ < o Visual Studio versão \> pasta de \\ \Extensions* . Algumas extensões são extensões administrativas e são instaladas na *\<pasta de instalação do Visual Studio>\Common7\IDE\Extensions\\* .
 
 Para proteger seu sistema contra extensões que possam conter erros ou código mal-intencionado, é possível restringir que as extensões por usuário sejam carregadas somente quando o Visual Studio estiver em execução com permissões de usuário normal. Isso significa que as extensões por usuário são desabilitadas quando o Visual Studio é executado com permissões elevadas.
 
 Para restringir quando as extensões por usuário são carregadas:
 
-1. Abra a página opções de extensões (**ferramentas** > **Opções** > **extensões**de**ambiente** > ).
+1. Abra a página opções de extensões (**ferramentas**  > **opções**  > **ambiente**  > **extensões**).
 
 2. Desmarque a caixa de seleção **carregar extensões por usuário ao executar como administrador** .
 

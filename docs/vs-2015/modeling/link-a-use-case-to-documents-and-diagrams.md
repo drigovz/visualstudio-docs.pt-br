@@ -11,80 +11,77 @@ helpviewer_keywords:
 - use case diagrams
 ms.assetid: 4c9ed205-9197-4ed5-b39d-ddfa24a0a421
 caps.latest.revision: 12
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: ee7657b12741cf65583317ba87bd465e15eb02bb
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: c713759a8ea75eed3048469327f962668efa4f70
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440975"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72657649"
 ---
 # <a name="link-a-use-case-to-documents-and-diagrams"></a>Vincular um caso de uso a documentos e diagramas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Você pode vincular um caso de uso em um diagrama de caso de uso para outro diagrama ou documento. Por exemplo, você pode vincular o caso de uso para os documentos e diagramas a seguir:  
-  
-- Um diagrama de sequência que mostra como os objetivos do caso de uso são obtidos com as interações entre usuários e o sistema ou seus componentes principais.  
-  
-- Um diagrama de atividade que mostra as ações detalhadas do sistema e os usuários ou de seus componentes principais, conforme realizam o caso de uso.  
-  
-- Uma página do OneNote ou um parágrafo que descreve o caso de uso em detalhes.  
-  
-- Um documento do Word ou apresentação do PowerPoint que descreve o caso de uso em detalhes. Você pode manter tais documentos na solução ou em um local acessível para sua equipe, como um site do SharePoint.  
-  
-  Para vincular um caso de uso a um documento, você cria um artefato no diagrama de caso e conecte-se o caso de uso para o artefato. Nas propriedades do artefato, você deve definir o caminho do arquivo de outro diagrama ou documento. Quando você clica duas vezes o artefato, o outro diagrama ou o documento é aberto.  
-  
-  Você pode se conectar como muitos artefatos para cada caso de uso conforme desejado. Você também pode vincular os artefatos para outros tipos de elemento em um diagrama de caso de uso.  
-  
-### <a name="to-open-a-document-associated-with-an-artifact"></a>Para abrir um documento associado a um artefato  
-  
-- No diagrama de caso de uso, clique duas vezes na forma de artefato.  
-  
-     O documento associado é aberto.  
-  
-### <a name="to-link-a-use-case-to-a-diagram-or-file-in-the-same-solution"></a>Para vincular um caso de uso em um diagrama ou um arquivo na mesma solução  
-  
-1. Desenhe um diagrama como um diagrama de sequência ou um diagrama de atividade para ilustrar um cenário de caso de uso.  
-  
-2. Volte para o diagrama de caso de uso.  
-  
-3. Arraste o arquivo ou o diagrama no Gerenciador de soluções em uma parte em branco do diagrama de caso.  
-  
-4. Conectar-se de que o artefato para o caso de uso usando um **dependência**.  
-  
-### <a name="to-link-to-a-solution-file-such-as-a-word-document-or-powerpoint-presentation"></a>Para vincular a um arquivo de solução como um documento do Word ou apresentação do PowerPoint  
-  
-1. Adicione o documento à solução.  
-  
-    1. Mova o documento do Word na mesma pasta do Windows como a solução.  
-  
-    2. No Gerenciador de soluções, clique com botão direito a solução, aponte para **Add**e, em seguida, clique em **Item existente**.  
-  
-    3. Navegue até o documento do Word e clique em **adicionar**.  
-  
-         O documento do Word é exibido em uma pasta de solução no Gerenciador de soluções.  
-  
-2. Arraste o documento do Word no Gerenciador de soluções em uma parte em branco do diagrama de caso.  
-  
-     Um novo artefato é exibida.  
-  
-3. Conectar-se de que o artefato para o caso de uso usando um **dependência**.  
-  
-### <a name="to-link-to-a-shared-document-onenote-element-or-web-page"></a>Para vincular a um documento compartilhado, o OneNote elemento ou página da web  
-  
-1. Obter a URL do elemento de dados compartilhado. Isso pode ser, por exemplo, um início de caminho do arquivo de rede '\\\\', ou uma página da web ou URL do Sharepoint início 'http://' ou um link para uma seção do OneNote, página ou início de parágrafo ' onenote:'.  
-  
-2. Na caixa de ferramentas, clique em **artefato** e, em seguida, clique no diagrama de caso.  
-  
-3. Com o novo artefato selecionado, digite ou cole a URL para o **hiperlink** propriedade.  
-  
+Você pode vincular um caso de uso em um diagrama de caso de uso a outro diagrama ou documento. Por exemplo, você pode vincular o caso de uso aos diagramas e documentos a seguir:
+
+- Um diagrama de sequência que mostra como as metas do caso de uso são realizadas por interações entre usuários e o sistema ou seus principais componentes.
+
+- Um diagrama de atividade que mostra as ações detalhadas dos usuários e do sistema ou de seus principais componentes à medida que executam o caso de uso.
+
+- Uma página ou um parágrafo do OneNote que descreve o caso de uso em detalhes.
+
+- Um documento do Word ou uma apresentação do PowerPoint que descreve o caso de uso em detalhes. Você pode manter esses documentos na solução ou em um local acessível à sua equipe, como um site do SharePoint.
+
+  Para vincular um caso de uso a um documento, você cria um artefato no diagrama de caso de uso e conecta o caso de uso ao artefato. Nas propriedades do artefato, você define o caminho do arquivo do outro diagrama ou documento. Quando você clica duas vezes no artefato, o outro diagrama ou documento é aberto.
+
+  Você pode conectar o máximo de artefatos a cada caso de uso como desejar. Você também pode vincular artefatos a outros tipos de elemento em um diagrama de caso de uso.
+
+### <a name="to-open-a-document-associated-with-an-artifact"></a>Para abrir um documento associado a um artefato
+
+- No diagrama de caso de uso, clique duas vezes na forma de artefato.
+
+     O documento associado é aberto.
+
+### <a name="to-link-a-use-case-to-a-diagram-or-file-in-the-same-solution"></a>Para vincular um caso de uso a um diagrama ou arquivo na mesma solução
+
+1. Desenhe um diagrama, como um diagrama de sequência ou um diagrama de atividade, para ilustrar um cenário do caso de uso.
+
+2. Volte para o diagrama de caso de uso.
+
+3. Arraste o diagrama ou o arquivo de Gerenciador de Soluções para uma parte em branco do diagrama de caso de uso.
+
+4. Conecte-se do artefato ao caso de uso usando uma **dependência**.
+
+### <a name="to-link-to-a-solution-file-such-as-a-word-document-or-powerpoint-presentation"></a>Para vincular a um arquivo de solução, como um documento do Word ou apresentação do PowerPoint
+
+1. Adicione o documento à solução.
+
+    1. Mova o documento do Word para a mesma pasta do Windows que a solução.
+
+    2. Em Gerenciador de Soluções, clique com o botão direito do mouse na solução, aponte para **Adicionar**e clique em **Item existente**.
+
+    3. Navegue até o documento do Word e clique em **Adicionar**.
+
+         O documento do Word aparece em uma pasta de solução no Gerenciador de Soluções.
+
+2. Arraste o documento do Word de Gerenciador de Soluções para uma parte em branco do diagrama de caso de uso.
+
+     Um novo artefato é exibido.
+
+3. Conecte-se do artefato ao caso de uso usando uma **dependência**.
+
+### <a name="to-link-to-a-shared-document-onenote-element-or-web-page"></a>Para vincular a um documento compartilhado, elemento do OneNote ou página da Web
+
+1. Obtenha a URL do elemento compartilhado. Isso pode ser, por exemplo, um caminho de arquivo de rede que começa com ' \\ \\ ' ou uma página da Web ou URL do SharePoint começando com ' http://' ou um link para uma seção, página ou parágrafo do OneNote que comece ' OneNote: '.
+
+2. Na caixa de ferramentas, clique em **artefato** e, em seguida, clique no diagrama de caso de uso.
+
+3. Com o novo artefato selecionado, digite ou cole a URL na propriedade **Hyperlink** .
+
     > [!NOTE]
-    > Se você quiser fornecer um caminho de arquivo, é melhor escolher um arquivo em um espaço de trabalho comuns (começando com '\\\\'), ou um arquivo em sua solução do Visual Studio. Isso garante que o caminho do arquivo permanecerá válido no computador de outro membro da equipe, ou se a solução é movida. Para adicionar um documento como um documento do Word à sua solução, clique com botão direito na solução no Gerenciador de soluções, aponte para **Add** e, em seguida, clique em **Item existente**.  
-  
-## <a name="see-also"></a>Consulte também  
- [Diagrama de casos de uso UML: Referência](../modeling/uml-use-case-diagrams-reference.md)   
- [Diagrama de casos de uso UML: Diretrizes](../modeling/uml-use-case-diagrams-guidelines.md)   
- [Editar modelos e diagramas UML](../modeling/edit-uml-models-and-diagrams.md)   
- [Criar modelos para o aplicativo](../modeling/create-models-for-your-app.md)
+    > Se você quiser fornecer um caminho de arquivo, é melhor escolher um arquivo em um espaço de trabalho comum (começando com ' \\ \\ ') ou um arquivo em sua solução do Visual Studio. Isso garante que o caminho do arquivo permanecerá válido no computador de outro membro da equipe, ou se a solução for movida. Para adicionar um documento como um documento do Word à sua solução, clique com o botão direito do mouse na solução em Gerenciador de Soluções, aponte para **Adicionar** e clique em **Item existente**.
+
+## <a name="see-also"></a>Consulte também
+ [Diagramas de caso de uso UML: referenciar](../modeling/uml-use-case-diagrams-reference.md) [diagramas de caso de uso UML: diretrizes](../modeling/uml-use-case-diagrams-guidelines.md) [editar modelos UML e diagramas](../modeling/edit-uml-models-and-diagrams.md) [criar modelos para seu aplicativo](../modeling/create-models-for-your-app.md)

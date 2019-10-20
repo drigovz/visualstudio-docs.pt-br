@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Edit.Replace command
 - Replace command
 ms.assetid: a15767f1-5a3d-44f5-8c77-7b0f1157f340
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: edcff51428451b50dc149b7b55cee11cb9ede853
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: efd6398e475f08d07b8c2fd2eadb3d580aa4255d
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68919042"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72655593"
 ---
 # <a name="replace-command"></a>Comando Substituir
 Substitui texto em arquivos usando um subconjunto das opções disponíveis na guia **Substituir nos Arquivos** da janela **Localizar e Substituir**.
@@ -100,7 +100,7 @@ Este exemplo substitui `btnSend` por `btnSubmit` em todos os documentos abertos.
 >Edit.Replace btnSend btnSubmit /open
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Localizando e substituindo texto](../../ide/finding-and-replacing-text.md)
 - [Janela Comando](../../ide/reference/command-window.md)

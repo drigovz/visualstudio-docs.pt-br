@@ -1,47 +1,47 @@
 ---
-title: Designer de fluxo de trabalho - Designer de atividade de interoperabilidade
+title: Designer de atividade de interoperabilidade Designer de Fluxo de Trabalho
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.Interop.UI
 ms.assetid: 800a3403-ba86-41c4-8de1-c4fee9703eb1
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 688ef92fae5bd0cbaa5ddc653bbaab5692f4827f
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 8047df3787c0871e369b6079e4f0cc80f6d93949
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66747134"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650203"
 ---
 # <a name="interop-activity-designer"></a>Designer de atividade de Interoperabilidade
 
-O **Interop** designer de atividade é usado para criar e configurar um <xref:System.Activities.Statements.Interop> atividade.
+O **Interop** Activity Designer é usado para criar e configurar uma atividade de <xref:System.Activities.Statements.Interop>.
 
 ## <a name="the-interop-activity"></a>A atividade de Interoperabilidade
 
 A atividade de <xref:System.Activities.Statements.Interop> gerencia a execução de tipos que derivam de <xref:System.Workflow.ComponentModel.Activity?displayProperty=fullName> em um fluxo de trabalho.
 
-### <a name="use-the-interop-activity-designer"></a>Use o Designer de atividade de interoperabilidade
+### <a name="use-the-interop-activity-designer"></a>Usar o Interop Activity Designer
 
-O **Interop** designer de atividade pode ser encontrado na **migração** categoria da **caixa de ferramentas**, que é acessado clicando o **caixa de ferramentas**guia. Como alternativa, selecione **caixa de ferramentas** da **exibição** menus ou pressione **Ctrl**+**Alt** + **X**.
+O **Interop** Activity Designer pode ser encontrado na categoria **migração** da caixa de **ferramentas**, que é acessada clicando na guia **caixa de ferramentas** . como alternativa, selecione **caixa de ferramentas** no menu **Exibir** ou pressione **Ctrl** +**ALT** +**X**.
 
-O [migração](../workflow-designer/migration-activity-designers.md) categoria que contém o <xref:System.Activities.Statements.Interop> atividade aparece apenas na **caixa de ferramentas** se seu projeto for destinado ao .NET Framework 4 (completo) ou posterior. Se necessário, você pode alterar a versão do framework que o destino do seu projeto.
+A categoria de [migração](../workflow-designer/migration-activity-designers.md) que contém a atividade de <xref:System.Activities.Statements.Interop> só aparecerá na **caixa de ferramentas** se seu projeto tiver como alvo .NET Framework 4 (completo) ou posterior. Se necessário, você pode alterar a versão do Framework que seu projeto tem como destino.
 
-O **Interop** designer de atividade pode ser arrastado de **caixa de ferramentas** e solto sobre a superfície do Designer de fluxo de trabalho onde quer que as atividades são colocadas em geral, como em um <xref:System.Activities.Statements.Sequence>. Descartando o **Interop** designer de atividade cria uma <xref:System.Activities.Statements.Interop> atividade com um padrão **DisplayName** de interoperabilidade. Você pode editar a <xref:System.Activities.Activity.DisplayName%2A> no cabeçalho do **interoperabilidade** designer de atividade, ou nos **DisplayName** caixa da grade de propriedade.
+O **Interop** Activity Designer pode ser arrastado da **caixa de ferramentas** e descartado na superfície de designer de fluxo de trabalho sempre que as atividades são geralmente colocadas, como dentro de um <xref:System.Activities.Statements.Sequence>. Descartar o **Interop** Activity Designer cria uma atividade de <xref:System.Activities.Statements.Interop> com um **DisplayName** padrão de Interop. Você pode editar o <xref:System.Activities.Activity.DisplayName%2A> no cabeçalho do designer de atividade de **interoperabilidade** ou na caixa **DisplayName** da grade de propriedades.
 
-Clique o **clique para procurar** texto na **ActivityType** caixa, no **interoperabilidade** atividade designer ou na grade de propriedade para abrir o **procurar e Selecione um .net tipo** caixa de diálogo. Somente tipos para os trabalhos 3,0 ou o trabalho 3,5 atividades são mostrados. Ou seja, somente os tipos derivados de <xref:System.Workflow.ComponentModel.Activity> são mostrados. Para obter mais informações sobre como usar essa caixa para especificar um tipo, consulte [navegue e selecione uma caixa de diálogo do tipo .NET](../workflow-designer/browse-and-select-a-dotnet-type-dialog-box.md).
+Clique no **clique para procurar** o texto na caixa **ActivityType** , seja no designer de atividade de **interoperabilidade** ou na grade de propriedades, para abrir a caixa de diálogo **procurar e selecionar um tipo .net** . Somente os tipos de fluxo de trabalho 3,0 ou atividades do fluxo de trabalho 3,5 são mostrados. Ou seja, somente os tipos derivados de <xref:System.Workflow.ComponentModel.Activity> são mostrados. Para obter mais informações sobre como usar essa caixa para especificar um tipo, consulte [procurar e selecionar uma caixa de diálogo de tipo .net](../workflow-designer/browse-and-select-a-dotnet-type-dialog-box.md).
 
 ### <a name="the-interop-properties"></a>As propriedades de Interoperabilidade
 
-A tabela a seguir mostra o <xref:System.Activities.Statements.Interop> propriedades e descreve como elas são usadas no designer. Essas propriedades podem ser editadas na grade de propriedade ou na superfície de Designer de fluxo de trabalho.
+A tabela a seguir mostra as propriedades de <xref:System.Activities.Statements.Interop> e descreve como elas são usadas no designer. Essas propriedades podem ser editadas na grade de propriedades ou na superfície de Designer de Fluxo de Trabalho.
 
 |Nome da Propriedade|Necessária|Uso|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|False|O nome amigável de atividade de <xref:System.Activities.Statements.Interop> . O valor padrão é **interoperabilidade**. Embora o nome de exibição não é necessário, é recomendável fornecer um.|
+|<xref:System.Activities.Activity.DisplayName%2A>|False|O nome amigável de atividade de <xref:System.Activities.Statements.Interop> . O valor padrão é **Interop**. Embora o nome de exibição não seja necessário, é recomendável fornecer um.|
 |<xref:System.Activities.Statements.Interop.ActivityType%2A>|verdadeiro|Especifica o tipo de atividade contida pela atividade de <xref:System.Activities.Statements.Interop> . Este tipo especificado deve derivar de <xref:System.Workflow.ComponentModel.Activity>.|
 
 ## <a name="see-also"></a>Consulte também

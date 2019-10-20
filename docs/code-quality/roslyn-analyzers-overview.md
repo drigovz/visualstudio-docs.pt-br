@@ -7,17 +7,17 @@ helpviewer_keywords:
 - analyzers
 - Roslyn analyzers
 - code analyzers
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 844b9475ea59ba15ac96d3cbe19523f5cba63c72
-ms.sourcegitcommit: 7825d4163e52d724e59f6c0da209af5fbef673f7
+ms.openlocfilehash: 388667485f27b59e46a1c39d95b37ddc413240ee
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71999986"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72649147"
 ---
 # <a name="overview-of-source-code-analyzers"></a>Visão geral dos analisadores de código-fonte
 
@@ -40,7 +40,7 @@ Muitas regras do analisador ou *diagnósticos* têm uma ou mais *correções de 
 
 A análise de origem por analisadores Roslyn substitui a [análise herdada](../code-quality/code-analysis-for-managed-code-overview.md) para código gerenciado. Muitas das regras de análise herdadas já foram reescritas como analisadores de código Roslyn. Para modelos de projeto mais recentes, como projetos .NET Core e .NET Standard, a análise herdada ainda não está disponível.
 
-Como violações de regras de análise herdadas, as violações de análise de código-fonte aparecem na janela Lista de Erros no Visual Studio. Além disso, as violações de análise de código-fonte também aparecem no editor de códigos como *ondulado* no código incorreto. A cor da linha ondulada depende da [configuração de gravidade](../code-quality/use-roslyn-analyzers.md#rule-severity) da regra. A imagem a seguir mostra três violações @ no__t-0one vermelho, um verde e um cinza:
+Como violações de regras de análise herdadas, as violações de análise de código-fonte aparecem na janela Lista de Erros no Visual Studio. Além disso, as violações de análise de código-fonte também aparecem no editor de códigos como *ondulado* no código incorreto. A cor da linha ondulada depende da [configuração de gravidade](../code-quality/use-roslyn-analyzers.md#rule-severity) da regra. A imagem a seguir mostra três violações &mdash;one vermelho, um verde e um cinza:
 
 ![Rabiscos no editor de códigos do Visual Studio](media/diagnostics-severity-colors.png)
 
@@ -52,7 +52,7 @@ Os analisadores de código inspecionam o código no momento da compilação, com
 Não apenas os analisadores de código Roslyn relatam os mesmos tipos de problemas que a análise herdada faz, mas eles facilitam a correção de uma ou de todas as ocorrências da violação em seu arquivo ou projeto. Essas ações são denominadas *correções de código*. As correções de código são específicas do IDE; no Visual Studio, eles são implementados como [ações rápidas](../ide/quick-actions.md). Nem todos os diagnósticos do analisador têm uma correção de código associada.
 
 > [!NOTE]
-> A opção de menu **analisar** > **executar análise de código** aplica-se somente à análise herdada.
+> A opção de menu **analisar**  > **executar análise de código** aplica-se somente à análise herdada.
 
 Para diferenciar as violações dos analisadores de código e da análise herdada no Lista de Erros, examine a coluna de **ferramentas** . Se o valor da Ferramenta corresponder a um dos assemblies do analisador no **Gerenciador de Soluções** – por exemplo, **Microsoft.CodeQuality.Analyzers** – a violação será proveniente de um analisador de código. Caso contrário, a violação será proveniente da análise herdada.
 

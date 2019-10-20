@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d53740d0970aba2c5b0442ded722c648f759f724
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
-ms.translationtype: HT
+ms.openlocfilehash: 0c451b2da08fdb0b38487438a47c6285b0380627
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72575130"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647453"
 ---
 # <a name="step-8-add-a-method-to-verify-whether-the-player-won"></a>Etapa 8: Adicionar um método para verificar se o jogador ganhou
 Você criou um jogo divertido, mas ele precisa de um item adicional para ser finalizado. O jogo deve terminar quando os jogadores ganham, de modo que você precisa adicionar um método `CheckForWinner()` para verificar se o jogador ganhou.
@@ -40,13 +40,13 @@ Você criou um jogo divertido, mas ele precisa de um item adicional para ser fin
      [!code-csharp[VbExpressTutorial4Step8#11](../ide/codesnippet/CSharp/step-8-add-a-method-to-verify-whether-the-player-won_2.cs)]
      [!code-vb[VbExpressTutorial4Step8#11](../ide/codesnippet/VisualBasic/step-8-add-a-method-to-verify-whether-the-player-won_2.vb)]
 
-3. Salve e execute o programa. Jogue o jogo e combine todos os ícones. Quando você ganha, o programa exibe uma **MessageBox** de congratulação (conforme mostrado na imagem a seguir) e fecha a caixa.
+3. Salve e execute o programa. Jogue o jogo e combine todos os ícones. Quando você ganhar, o programa exibirá uma congratulary **MessageBox** (conforme mostrado na captura de tela a seguir) e, em seguida, fechará a caixa.
 
      ![Jogo da memória com MessageBox](../ide/media/express_tut4step8.png)<br/>
-**Jogo da memória** com **MessageBox**
+***Jogo de correspondência*** *com* ***MessageBox***
 
 ## <a name="to-continue-or-review"></a>Para continuar ou revisar
 
-- Para acessar a próxima etapa do tutorial, veja [Etapa 9: Experimentar outros recursos](../ide/step-9-try-other-features.md).
+- Para ir para a próxima etapa do tutorial, consulte **[etapa 9: Experimente outros recursos](../ide/step-9-try-other-features.md)** .
 
 - Para retornar à etapa anterior do tutorial, veja [Etapa 7: Manter os pares visíveis](../ide/step-7-keep-pairs-visible.md).

@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - load tests, run settings, active
 ms.assetid: ed6ff546-acfa-4dd8-b3a2-6e7455930ca4
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 12582aa4c1aa41aa0a38f652cf4841ba1f9953e1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 7a356c69eaa30141ceeb94dd2106b0eb477f35a5
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62949936"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653445"
 ---
-# <a name="how-to-select-the-active-run-setting-for-a-load-test"></a>Como: Selecionar a configuração de execução ativa para um teste de carga
+# <a name="how-to-select-the-active-run-setting-for-a-load-test"></a>Como selecionar a configuração de execução ativa para um teste de carga
 
 Depois de criar seu teste de carga com o **Novo Assistente de Teste de Carga**, você poderá usar o **Editor de Teste de Carga** para alterar as propriedades de cenários para que eles atendam às suas metas e necessidades de teste.
 
@@ -26,7 +26,7 @@ Um teste de carga pode conter uma ou mais *configurações de execução*, que s
 > [!NOTE]
 > Para obter uma lista completa das propriedades de configurações de execução e suas descrições, confira [Propriedades de configurações de execução de teste de carga](../test/load-test-run-settings-properties.md).
 
-Se o teste de carga contiver apenas um nó de configuração de execução na pasta **Configurações de Execução**, esse nó sempre será o nó ativo. Se o teste de carga contiver vários nós de configurações de execução, você poderá selecionar um para usar ao executar um teste de carga. Confira [Como: Adicionar outras configurações de execução a um teste de carga](../test/how-to-add-additional-run-settings-to-a-load-test.md).
+Se o teste de carga contiver apenas um nó de configuração de execução na pasta **Configurações de Execução**, esse nó sempre será o nó ativo. Se o teste de carga contiver vários nós de configurações de execução, você poderá selecionar um para usar ao executar um teste de carga. Consulte [Como adicionar configurações de execução adicionais a um teste de carga](../test/how-to-add-additional-run-settings-to-a-load-test.md).
 
 No **Editor de Teste de Carga**, a configuração de execução ativa é identificada pelo sufixo "[Active]".
 
@@ -59,4 +59,4 @@ E para executar o teste:
 
 - [Definir configurações de execução de teste de carga](../test/configure-load-test-run-settings.md)
 - [Especificar os conjuntos de contadores e as regras de limite para computadores em um teste de carga](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)
-- [Como: Adicionar outras configurações de execução a um teste de carga](../test/how-to-add-additional-run-settings-to-a-load-test.md)
+- [Como adicionar mais configurações de execução a um teste de carga](../test/how-to-add-additional-run-settings-to-a-load-test.md)

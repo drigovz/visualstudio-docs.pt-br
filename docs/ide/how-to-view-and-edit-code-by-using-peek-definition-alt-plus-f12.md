@@ -2,19 +2,19 @@
 title: Usando o comando Inspecionar Definição
 ms.date: 01/10/2018
 ms.topic: conceptual
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 79bebcdaaf2d970f019da12141275358120ac70e
-ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
-ms.translationtype: HT
+ms.openlocfilehash: 39d4d9dd4fb7364ddadd5e7568a2f34255c393ae
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67043406"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72656525"
 ---
-# <a name="how-to-view-and-edit-code-by-using-peek-definition-altf12"></a>Como: Exibir e editar o código usando o comando Inspecionar Definição (Alt + F12)
+# <a name="how-to-view-and-edit-code-by-using-peek-definition-altf12"></a>Como visualizar e editar códigos usando a janela Inspecionar Definição (Alt+F12)
 
 Você pode usar o comando **Inspecionar Definição** para exibir e editar código sem abandonar o código que está escrevendo. **Inspecionar Definição** e **Ir Para Definição** mostram as mesmas informações, mas **Inspecionar Definição** faz a exibição em uma janela pop-up e **Ir Para Definição** mostra o código em uma janela de código separada. **Ir Para Definição** faz com que seu contexto (ou seja, a janela de código ativo, a linha atual e a posição do cursor) mude para a janela de código de definição. Usando **Espiar Definição**, você pode exibir e editar a definição e percorrer o arquivo de definição enquanto mantém seu local no arquivo original do código.
 

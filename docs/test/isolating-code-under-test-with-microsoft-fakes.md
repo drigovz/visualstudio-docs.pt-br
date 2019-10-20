@@ -2,20 +2,20 @@
 title: Isolando código em teste com falsificação da Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-author: gewarren
+author: jillre
 dev_langs:
 - VB
 - CSharp
-ms.openlocfilehash: c2f3ec4accc9353923e80017774f5a2b15fe095d
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: bf00c35868ac5b4df34f2453f046232a91387085
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926632"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653109"
 ---
 # <a name="isolate-code-under-test-with-microsoft-fakes"></a>Isolar o código em teste com elementos fictícios da Microsoft
 
@@ -29,7 +29,7 @@ O Fakes vem em duas versões:
 
 ![As falsificações substituem outros componentes](../test/media/fakes-2.png)
 
-**Requisitos**
+**Requirements**
 
 - Visual Studio Enterprise
 - Um projeto do .NET Framework

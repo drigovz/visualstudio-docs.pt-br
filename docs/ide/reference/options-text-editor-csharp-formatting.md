@@ -13,19 +13,19 @@ f1_keywords:
 helpviewer_keywords:
 - formatting options [C#]
 - Text editor Options dialog box, formatting
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: b555ede6ecf406f98c2e1ae9384b61664e8226cf
-ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
-ms.translationtype: HT
+ms.openlocfilehash: 8947f6e2fee2b8615c750b770ac3b0dea85bb991
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67260416"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666297"
 ---
-# <a name="options-dialog-box-text-editor--c--code-style--formatting"></a>Caixa de diálogo Opções: Editor de texto \> C# \> Code Style \> Formatação
+# <a name="options-dialog-box-text-editor--c--code-style--formatting"></a>Caixa de diálogo opções: editor de C# texto \> \> estilo de código \> formatação
 
 Use a página de opções de **Formatação** e suas subpáginas ([**Recuo**](#indentation-page), **Novas Linhas**, **Espaçamento** e **Encapsulamento**) para definir opções de formatação de código no editor de código.
 
@@ -40,7 +40,7 @@ Para acessar essa página de opções, escolha **Ferramentas** > **Opções** na
 
 Essas configurações afetam *quando* o editor de códigos aplica opções de formatação ao código.
 
-|Rotular|DESCRIÇÃO|
+|Rotular|Descrição|
 |-----------|-----------------|
 |**Formatar automaticamente ao digitar**|Quando estiver desmarcada, as opções **formatar instrução em ;** e **formatar bloco em }** estarão desabilitadas.|
 |**Formatar instrução automaticamente em ;**|Quando selecionada, formata as instruções na conclusão de acordo com as opções de formatação selecionadas para o editor.|
@@ -60,11 +60,11 @@ Se você aplicou as configurações de estilo de código para arquivos C# usando
 
 Essas configurações definem o comando **Formatar Documento** para executar a limpeza de código adicional em um arquivo. Para obter mais informações sobre como essas configurações são aplicadas, confira [Comando Formatar Documento](../code-styles-and-code-cleanup.md#apply-code-styles).
 
-|Rotular|DESCRIÇÃO|EditorConfig e ferramentas correspondentes > Regras de opções|
+|Rotular|Descrição|EditorConfig e ferramentas correspondentes > Regras de opções|
 |-----------|-----------------|-----------------|-----------------|
 |**Aplicar todas as regras de formatação de C# (recuo, quebra automática, espaçamento)**|O comando **Formatar Documento** sempre corrige os problemas de formatação. Essa configuração não pode ser alterada.| [Principais opções do EditorConfig](../../ide/create-portable-custom-editor-options.md)<br/>[Opções de formatação do EditorConfig do .NET](../../ide/editorconfig-formatting-conventions.md)<br/><br/>**Ferramentas** > **Opções** > **Editor de Texto** > **C#**  > **Formatação** > [**Recuo** ou **Novas Linhas** ou **Espaçamento** ou **Quebra automática**]|
-|**Executar limpeza de código de adição durante a formatação**|Quando selecionada, aplica correções para as regras especificadas abaixo no comando **Edit.FormatDocument**.| N/D |
-|**Remover usings desnecessárias**|Quando selecionada, remove as diretivas `using` desnecessários quando **Edit.FormatDocument** é disparado.| N/D |
+|**Executar limpeza de código de adição durante a formatação**|Quando selecionada, aplica correções para as regras especificadas abaixo no comando **Edit.FormatDocument**.| N/A |
+|**Remover usings desnecessárias**|Quando selecionada, remove as diretivas `using` desnecessários quando **Edit.FormatDocument** é disparado.| N/A |
 |**Classificar usings**|Quando selecionada, classifica as diretivas `using` quando **Edit.FormatDocument** é disparado.| dotnet_sort_system_directives_first<br/><br/>**Ferramentas** > **Opções** > **Editor de Texto** > **C#**  > **Avançado** > **Colocar as diretivas 'System' primeiro ao classificar usings** |
 |**Adicionar/remover chaves de instruções de controle de única linha**|Quando selecionado, adiciona ou remove as chaves das instruções de controle de única linha quando **Edit.FormatDocument** é disparado.| csharp_prefer_braces<br/><br/>**Ferramentas** > **Opções** > **Editor de Texto** > **C#**  > **Estilo de Código** > **Preferências do bloco de código** > **Preferir chaves** |
 |**Adicionar modificadores de acessibilidade**|Quando selecionada, adiciona os modificadores de acessibilidade ausentes quando **Edit.FormatDocument** é disparado.| dotnet_style_require_accessibility_modifiers |
@@ -76,8 +76,8 @@ Essas configurações definem o comando **Formatar Documento** para executar a l
 |**Aplicar preferências de inicialização de objeto/coleção**|Quando selecionada, usa os inicializadores de objeto e de coleção sempre que possível quando **Edit.FormatDocument** é disparado.| dotnet_style_object_initializer<br/>dotnet_style_collection_initializer<br/><br/>**Ferramentas** > **Opções** > **Editor de Texto** > **C#**  > **Estilo de Código** > **Preferências de expressão** > **Preferir inicializador de objeto** ou **Preferir inicializador de coleção** |
 |**Aplicar preferências de qualificação 'this.'**|Quando marcada, aplica as preferências de `this.` quando **Edit.FormatDocument** é disparado.| [Opções do EditorConfig para a qualificação this.](../../ide/editorconfig-language-conventions.md#this-and-me)<br/><br/>**Ferramentas** > **Opções** > **Editor de Texto** > **C#**  > **Estilo de Código** > **Preferências de 'this.'** |
 |**Tornar campos particulares readonly quando possível**|Quando selecionada, torna os campos particulares `readonly` sempre que possível quando **Edit.FormatDocument** é disparado.| dotnet_style_readonly_field<br/><br/>**Ferramentas** > **Opções** > **Editor de Texto** > **C#**  > **Estilo de Código** > **Preferências de campo** > **Preferir readonly** |
-|**Remover conversões desnecessárias**|Quando selecionada, remove as conversões desnecessárias sempre que possível quando **Edit.FormatDocument** é disparado.| N/D |
-|**Remover variáveis não usadas**|Quando selecionada, remove as variáveis que não são usadas quando **Edit.FormatDocument** é disparado.| N/D |
+|**Remover conversões desnecessárias**|Quando selecionada, remove as conversões desnecessárias sempre que possível quando **Edit.FormatDocument** é disparado.| N/A |
+|**Remover variáveis não usadas**|Quando selecionada, remove as variáveis que não são usadas quando **Edit.FormatDocument** é disparado.| N/A |
 
 ![Configurações de limpeza de código para C# no Visual Studio](media/format-document-settings.png)
 

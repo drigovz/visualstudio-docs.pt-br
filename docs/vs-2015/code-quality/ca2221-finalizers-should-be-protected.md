@@ -1,5 +1,5 @@
 ---
-title: 'CA2221: Os finalizadores devem ser protegidos | Microsoft Docs'
+title: 'CA2221: os finalizadores devem ser protegidos | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,40 +12,40 @@ helpviewer_keywords:
 - CA2221
 ms.assetid: bda03aee-4cce-45d3-907d-17f4ee030acc
 caps.latest.revision: 16
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 9e8deec8687e3ddb2b3d961aa9fc1e97a45c961d
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 3e98c2ea598bcf73b919ba10ef1ea0b53c2a40f3
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65685126"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72651967"
 ---
-# <a name="ca2221-finalizers-should-be-protected"></a>CA2221: Os finalizadores devem ser protegidos
+# <a name="ca2221-finalizers-should-be-protected"></a>CA2221: os finalizadores devem ser protegidos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |NomeDoTipo|FinalizersShouldBeProtected|
 |CheckId|CA2221|
-|Categoria|Microsoft.Usage|
-|Alteração Significativa|Não separável|
+|Categoria|Microsoft. Usage|
+|Alteração Significativa|Sem interrupção|
 
 ## <a name="cause"></a>Causa
- Um tipo público implementa um finalizador que não especificam o acesso da família (protegido).
+ Um tipo público implementa um finalizador que não especifica acesso de família (protegido).
 
 ## <a name="rule-description"></a>Descrição da Regra
- Os finalizadores deve usar o modificador de acesso da família. Essa regra é imposta pelos compiladores c#, Visual Basic e Visual C++.
+ Os finalizadores deve usar o modificador de acesso da família. Essa regra é imposta pelos compiladores C#, Visual Basic e Visual. C++
 
 ## <a name="how-to-fix-violations"></a>Como Corrigir Violações
- Para corrigir uma violação dessa regra, altere o finalizador para ser acessível de família.
+ Para corrigir uma violação dessa regra, altere o finalizador para ser acessível por família.
 
 ## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos
  Não suprima um aviso nessa regra.
 
 ## <a name="example"></a>Exemplo
- Essa regra não pode ser violada em qualquer linguagem .NET de alto nível; ele pode ser violado se você estiver escrevendo Microsoft Intermediate Language.
+ Esta regra não pode ser violada em nenhuma linguagem .NET de alto nível; Ele poderá ser violado se você estiver escrevendo uma linguagem intermediária da Microsoft.
 
 ```
 // =============== CLASS MEMBERS DECLARATION ===================

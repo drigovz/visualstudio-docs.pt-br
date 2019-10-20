@@ -6,17 +6,17 @@ f1_keywords:
 - msvse_settingsdesigner.err.nameblank
 helpviewer_keywords:
 - application settings [Visual Studio]
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0627a96bf100232987ace5a42430310912f97b8c
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: ae4215987ee0a61935efe27ab927d826cc1c6ff9
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71252085"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72654627"
 ---
 # <a name="manage-application-settings-net"></a>Gerenciar configurações de aplicativo (.NET)
 
@@ -72,7 +72,7 @@ Você pode adicionar arquivos de configurações personalizadas ao seu projeto p
 
 Por exemplo, você pode adicionar um arquivo, como *SpecialSettings.settings* ao seu projeto. Embora a classe `SpecialSettings` não seja exposta no namespace `My`, **Exibir Código** pode ler o arquivo de configurações personalizadas que contém `Partial Class SpecialSettings`.
 
-O **Designer de Configurações** primeiro pesquisa o arquivo *Settings.settings* que o sistema do projeto cria. Esse é o arquivo padrão que o **Designer de Projeto** exibe na guia **Configurações**. *Settings.settings* está localizado na pasta *Meu Projeto* para projetos do [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] e na pasta *Propriedades* para projetos do [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]. Em seguida, o **Designer de Projeto** pesquisa outros arquivos de configurações na pasta raiz do projeto. Portanto, você deve colocar o arquivo de configurações personalizado lá. Se você adicionar um arquivo *.settings* em outro lugar no projeto, o **Designer de Projeto** não o conseguirá localizar.
+O **Designer de configurações** primeiro procura o arquivo *Settings. Settings* que o sistema de projeto cria; Esse é o arquivo padrão que o **Designer de projeto** exibe na guia **configurações** . *Settings. Settings* está localizado na pasta *meu projeto* para projetos de [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] e na pasta *Propriedades* de projetos [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]. Em seguida, o **Designer de Projeto** pesquisa outros arquivos de configurações na pasta raiz do projeto. Portanto, você deve colocar o arquivo de configurações personalizado lá. Se você adicionar um arquivo *.settings* em outro lugar no projeto, o **Designer de Projeto** não o conseguirá localizar.
 
 ## <a name="access-or-change-application-settings-at-run-time-in-visual-basic"></a>Acessar ou alterar as configurações de aplicativo no tempo de execução em Visual Basic
 

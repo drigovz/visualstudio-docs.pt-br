@@ -3,20 +3,20 @@ title: Ações Rápidas comuns
 description: As ações rápidas mais populares C# para e Visual Basic incluindo a correção de palavras-chave ou símbolos incorretos, a resolução de conflitos de mesclagem, a remoção de importações necessárias, a geração de tipos, a introdução de variáveis locais, etc.
 ms.date: 03/28/2018
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 600fb1b4abea2103c28e3a5067d640228d68b755
-ms.sourcegitcommit: 7825d4163e52d724e59f6c0da209af5fbef673f7
+ms.openlocfilehash: bad97ac5574afd65103263b2ce51a4dfba02741c
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72000146"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72652243"
 ---
 # <a name="common-quick-actions"></a>Ações Rápidas comuns
 
@@ -30,7 +30,7 @@ Nesta seção, as Ações Rápidas corrigem erros no código que podem fazer com
 
 ### <a name="correct-misspelled-symbol-or-keyword"></a>Corrigir o símbolo ou a palavra-chave incorreta
 
-Se você digitar incorretamente um tipo ou uma palavra-chave no Visual Studio acidentalmente, essa Ação Rápida corrigirá esse erro de forma automática. Você verá esses itens no menu de lâmpada como **"Change ' \<misspelled word > ' to ' \<correct word > '"** . Por exemplo:
+Se você digitar incorretamente um tipo ou uma palavra-chave no Visual Studio acidentalmente, essa Ação Rápida corrigirá esse erro de forma automática. Você verá esses itens no menu de lâmpada como **"alterar" \<misspelled palavra > ' em ' \<correct palavra > ' "** . Por exemplo:
 
 ```csharp
 // Before
@@ -96,7 +96,7 @@ private void MyMethod()
 
 ### <a name="remove-unnecessary-usingsimports"></a>Remover usos/importações desnecessários
 
-A Ação Rápida **Remover Usos/Importações Desnecessários** remove todas as instruções `using` e `Import` não utilizadas do arquivo atual. Ao selecionar esse item, as importações de namespace não utilizadas são removidas.
+A ação rápida **remover utilizações/importações desnecessárias** remove qualquer `using` não utilizada e `Import` diretivas para o arquivo atual. Ao selecionar esse item, as importações de namespace não utilizadas são removidas.
 
 | Linguagens Aplicáveis | Versão compatível |
 | - | - |
@@ -184,7 +184,7 @@ O uso dos tipos localizados em outros projetos da solução exibirá a Ação R�
 - Sugerir usos/importações para tipos em assemblies de referência
 - Sugerir usos/importações para tipos em pacotes NuGet
 
-Quando essa opção estiver habilitada, se você usar um tipo em um namespace que não foi importado, mas que existe em um assembly de referência ou pacote NuGet, a instrução de uso/importação será criada.
+Quando habilitado, se você usar um tipo em um namespace que não seja importado no momento, mas existir em um assembly de referência ou em um pacote NuGet, a diretiva using ou Import será criada.
 
 ```csharp
 // Before
@@ -204,7 +204,7 @@ Debug.WriteLine("Hello")
 
 ' Imports System.Diagnostics
 
-// After
+' After
 Imports System.Diagnostics
 
 Debug.WriteLine("Hello")

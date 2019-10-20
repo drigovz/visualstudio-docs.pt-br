@@ -12,15 +12,15 @@ helpviewer_keywords:
 - load test results, analyzing threshold violations
 - thresholds in load tests
 ms.assetid: 969ed346-cf2e-4d48-82b3-edb3e075e1c0
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 011b010eaad5def8943fd18a84da9fefdb01eff5
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: 7ffff5818c5d3c7085ef3bebcc29c31a363a09b9
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68918631"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72665337"
 ---
 # <a name="analyzing-threshold-rule-violations-in-load-tests-using-the-load-test-analyzer"></a>Analisando violações de regra de limite em testes de carga usando o Analisador de Teste de Carga
 
@@ -34,10 +34,10 @@ Se ocorrer qualquer violação, um hiperlink de **violações de limite** aparec
 
 A tabela de violações de limite exibe as primeiras 1.000 violações. A tabela a seguir contém estas colunas:
 
-|Column|DESCRIÇÃO|Visível por padrão|
+|Column|Descrição|Visível por padrão|
 |-|-|-|
 |Hora|O tempo durante o teste de carga em que a violação ocorreu.|Sim|
-|Computador|O nome do computador em teste em que a violação ocorreu. **Observação:**  Isso é importante quando você executa testes de carga em equipamentos.|Sim|
+|Computador|O nome do computador em teste em que a violação ocorreu. **Observação:** isso é importante quando você executa testes de carga em equipamentos.|Sim|
 |Categoria|A categoria do contador de desempenho em que a violação ocorreu.|Sim|
 |Contador|O nome do contador de desempenho em que a violação ocorreu.|Sim|
 |Instância|A instância do contador de desempenho em que a violação ocorreu.|Sim|
@@ -77,5 +77,5 @@ Para obter mais informações, confira [Analisar os resultados do teste de carga
 ## <a name="see-also"></a>Consulte também
 
 - [Especificando os conjuntos de contadores e as regras de limite para computadores em um teste de carga](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)
-- [Analisar resultados do teste de carga](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
+- [Analisar resultados de teste de carga](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
 - [Analisar resultados do teste de carga e erros na exibição Tabelas](../test/analyze-load-test-results-and-errors-in-the-tables-view.md)

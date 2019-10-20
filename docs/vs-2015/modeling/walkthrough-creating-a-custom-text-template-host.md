@@ -1,5 +1,5 @@
 ---
-title: 'Passo a passo: Criando um host de modelo de texto personalizado | Microsoft Docs'
+title: 'Walkthrough: Criando um host de modelo de texto personalizado | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -9,22 +9,22 @@ helpviewer_keywords:
 - text templates, custom host walkthrough
 ms.assetid: d00bc366-65ed-4229-885a-196ef9625f05
 caps.latest.revision: 53
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: b02b3ce1dcfd91c906ed050eed770dab7a8dc0e1
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 23a2f7f59ed3565a23d878858c55da4c4a7e4d85
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68871694"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72659280"
 ---
-# <a name="walkthrough-creating-a-custom-text-template-host"></a>Passo a passo: Criando um host de modelo de texto personalizado
+# <a name="walkthrough-creating-a-custom-text-template-host"></a>Instruções passo a passo: criando um host de modelo de texto personalizado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Um<em>host</em> de modelo de texto fornece um ambiente que permite que o *mecanismo de transformação de modelo de texto* seja executado. O host é responsável por gerenciar a interação do mecanismo com o sistema de arquivos. O mecanismo ou *processador de diretiva* que precisa de um arquivo ou assembly pode solicitar um recurso do host. O host pode pesquisar em diretórios e no cache de assembly global para localizar o recurso solicitado. Para obter mais informações, consulte [o processo de transformação do modelo de texto](../modeling/the-text-template-transformation-process.md).
 
- Você pode escrever um host personalizado se quiser usar a funcionalidade de *transformação de modelo de texto* de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] fora ou se desejar integrar essa funcionalidade em ferramentas personalizadas. Para criar um host personalizado, você deve criar uma classe que herde de [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110)). Para obter a documentação dos métodos individuais, consulte [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110)).
+ Você pode gravar um host personalizado se quiser usar a funcionalidade de *transformação de modelo de texto* de fora [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ou se desejar integrar essa funcionalidade em ferramentas personalizadas. Para criar um host personalizado, você deve criar uma classe que herde de [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110)). Para obter a documentação dos métodos individuais, consulte [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110)).
 
 > [!WARNING]
 > Se você estiver escrevendo uma extensão ou um pacote do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], considere usar o serviço de modelagem de texto em vez de criar seu próprio host. Para obter mais informações, consulte [invocando a transformação de texto em uma extensão do vs](../modeling/invoking-text-transformation-in-a-vs-extension.md).
@@ -35,7 +35,7 @@ Um<em>host</em> de modelo de texto fornece um ambiente que permite que o *mecani
 
 - Testar o host personalizado.
 
-## <a name="prerequisites"></a>Pré-requisitos
+## <a name="prerequisites"></a>Prerequisites
  Para concluir esta explicação passo a passo, você precisará do seguinte:
 
 - Visual Studio 2010 ou posterior
@@ -51,7 +51,7 @@ Um<em>host</em> de modelo de texto fornece um ambiente que permite que o *mecani
 
 2. Adicione referências aos assemblies a seguir:
 
-    - **Microsoft.VisualStudio.TextTemplating.\*.0**
+    - **Microsoft. VisualStudio. TextTemplating. \*.0**
 
     - **Microsoft. VisualStudio. TextTemplating. interfaces. 10.0 e versões posteriores**
 
@@ -714,7 +714,7 @@ Um<em>host</em> de modelo de texto fornece um ambiente que permite que o *mecani
     End Namespace
     ```
 
-4. Somente [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] para o, abra o menu **projeto** e clique em **Propriedades de CustomHost**. Na lista **objeto de inicialização** , clique em **CustomHost. Program**.
+4. Somente para [!INCLUDE[vbprvb](../includes/vbprvb-md.md)], abra o menu **projeto** e clique em **Propriedades de CustomHost**. Na lista **objeto de inicialização** , clique em **CustomHost. Program**.
 
 5. No menu **Arquivo**, clique em **Salvar tudo**.
 
@@ -725,7 +725,7 @@ Um<em>host</em> de modelo de texto fornece um ambiente que permite que o *mecani
 
 #### <a name="to-create-a-text-template-to-test-the-custom-host"></a>Para criar um modelo de texto para testar o host personalizado
 
-1. Crie um arquivo de texto e nomeie- `TestTemplate.tt`o.
+1. Crie um arquivo de texto e nomeie-o `TestTemplate.tt`.
 
      Você pode usar qualquer editor de texto (por exemplo, o Bloco de Notas) para criar o arquivo.
 
@@ -817,7 +817,7 @@ Um<em>host</em> de modelo de texto fornece um ambiente que permite que o *mecani
     ```
 
 ## <a name="next-steps"></a>Próximas etapas
- Neste passo a passo, você criou um host de transformação de modelo de texto que oferece suporte à funcionalidade de transformação básica. Você pode expandir o host para oferecer suporte a modelos de texto que chamam processadores de diretriz personalizados ou gerados. Para obter mais informações, confira [Passo a passo: Conexão de um host a um processador](../modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor.md)de diretiva gerado.
+ Neste passo a passo, você criou um host de transformação de modelo de texto que oferece suporte à funcionalidade de transformação básica. Você pode expandir o host para oferecer suporte a modelos de texto que chamam processadores de diretriz personalizados ou gerados. Para obter mais informações, consulte [Walkthrough: conectando um host a um processador de diretiva gerado](../modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor.md).
 
 ## <a name="see-also"></a>Consulte também
 

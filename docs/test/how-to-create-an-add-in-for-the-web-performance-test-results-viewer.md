@@ -6,17 +6,17 @@ helpviewer_keywords:
 - Web performance tests, Visual Studio Add-in
 - Visual Studio Add-in, Web performance tests
 ms.assetid: 1118c604-4b1b-4b21-a04e-45995b676fa8
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: e2330f5d1c47c9fc3cc578f286be005710b08f59
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: ba6ef865b326bd8bc5eea89a9e270b793111e539
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68918195"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653593"
 ---
-# <a name="how-to-create-an-add-in-for-the-web-performance-test-results-viewer"></a>Como: Criar um suplemento para o Visualizador de Resultados de Teste de Desempenho Web
+# <a name="how-to-create-an-add-in-for-the-web-performance-test-results-viewer"></a>Como: criar um suplemento para o Visualizador de Resultados de Teste de desempenho da Web
 
 Você pode estender a interface do usuário para o **Visualizador de Testes de Desempenho Web** usando os seguintes namespaces:
 
@@ -37,7 +37,7 @@ Para estender a interface do usuário do **Visualizador de Testes de Desempenho 
 Crie ou abra uma solução de não produção com a qual você poderá fazer experiências e que contenha um aplicativo Web do ASP.NET e um projeto de desempenho na Web, além de carregar o projeto de teste com um ou mais testes de desempenho na Web para o aplicativo Web do ASP.NET.
 
 > [!NOTE]
-> Crie um aplicativo Web ASP.NET e um projeto de teste de carga e de desempenho Web que contém testes de desempenho Web seguindo os procedimentos descritos em [Como: Criar um teste de serviço Web](../test/how-to-create-a-web-service-test.md) e [Gerar e executar um teste de desempenho Web codificado](../test/generate-and-run-a-coded-web-performance-test.md).
+> Você pode criar um aplicativo Web ASP.NET e um projeto de teste de carga e de desempenho Web que contém testes de desempenho Web seguindo os procedimentos de [Como criar um teste de serviço Web](../test/how-to-create-a-web-service-test.md) e [Gerar e executar um teste de desempenho Web codificado](../test/generate-and-run-a-coded-web-performance-test.md).
 
 ## <a name="create-a-visual-studio-add-in"></a>Criar um suplemento do Visual Studio
 
@@ -164,7 +164,7 @@ O suplemento do Visual Studio criado no procedimento anterior referencia um proj
 
 3. Role para baixo e selecione **Microsoft.VisualStudio.QualityTools.WebTestFramework** e **System.Windows.Forms**.
 
-4. Escolha **OK**.
+4. Clique em **OK**.
 
 5. Clique com o botão direito do mouse no nó **Referências** novamente e selecione **Adicionar Referência**.
 
@@ -172,7 +172,7 @@ O suplemento do Visual Studio criado no procedimento anterior referencia um proj
 
 7. Escolha a lista suspensa de **Examinar**, navegue para *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PrivateAssemblies* e selecione o arquivo *Microsoft.VisualStudio.QualityTools.LoadTestPackage.dll*.
 
-8. Escolha **OK**.
+8. Clique em **OK**.
 
 9. Clique com o botão direito do mouse no nó do projeto WebPerfTestResultsViewerAddin e selecione **Adicionar Referência**.
 
@@ -266,7 +266,7 @@ O suplemento do Visual Studio criado no procedimento anterior referencia um proj
 
 5. Role para baixo e selecione **Microsoft.VisualStudio.QualityTools.WebTestFramework**.
 
-6. Escolha **OK**.
+6. Clique em **OK**.
 
 7. No arquivo *UserControl1.cs*, adicione as seguintes instruções Using:
 
@@ -312,7 +312,7 @@ O suplemento do Visual Studio criado no procedimento anterior referencia um proj
 
 3. Marque a caixa de seleção do suplemento WebPerfTestResultsViewerAddin na coluna **Suplementos Disponíveis** e desmarque as caixas de seleção sob as colunas **Inicialização** e **Linha de Comando**.
 
-4. Escolha **OK**.
+4. Clique em **OK**.
 
 ## <a name="run-the-web-performance-test-using-the-web-test-results-viewer"></a>Executar o teste de desempenho Web usando o Visualizador de Resultados de Teste na Web
 

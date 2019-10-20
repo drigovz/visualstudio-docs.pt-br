@@ -10,17 +10,17 @@ helpviewer_keywords:
 - References page in Project Designer
 - Project Designer, References page
 ms.assetid: 5a47c595-e084-401c-86e1-74e0bf74fd86
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bbc53a1582a2a4f76de2ea402544137405f5d9f3
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: 9a92523f182300c17a3e6b08ad04ba2b6049be6c
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926142"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72655647"
 ---
 # <a name="references-page-project-designer-visual-basic"></a>Página Referências, Designer de Projeto (Visual Basic)
 
@@ -88,8 +88,8 @@ Selecione um namespace especificado pelo usuário na lista de namespaces, digite
 
 - Namespaces XML, como `<xmlns:xsl="http://www.w3.org/1999/XSL/Transform">`.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Gerenciando referências em um projeto](../../ide/managing-references-in-a-project.md)
-- [Como: Adicionar ou remover namespaces importados (Visual Basic)](../../ide/how-to-add-or-remove-imported-namespaces-visual-basic.md)
+- [Como adicionar ou remover namespaces importados (Visual Basic)](../../ide/how-to-add-or-remove-imported-namespaces-visual-basic.md)
 - [Instrução Imports (Namespace de XML)](/dotnet/visual-basic/language-reference/statements/imports-statement-xml-namespace)

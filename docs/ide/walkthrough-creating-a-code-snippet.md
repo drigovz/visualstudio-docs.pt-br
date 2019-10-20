@@ -1,5 +1,5 @@
 ---
-title: 'Passo a passo: Para criar um snippet de código'
+title: 'Passo a passo: Criar um snippet de código'
 ms.date: 06/10/2019
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,21 +10,21 @@ helpviewer_keywords:
 - code snippets, references
 - code snippets, imports
 ms.assetid: 0dcaae11-39cf-4463-9c90-2494321251c2
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 130f4a5d39c756587dcf479abe4461f64e9461cb
-ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
-ms.translationtype: HT
+ms.openlocfilehash: fb76fd61cb06b2877ebe0cd1714610b25845ebc0
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67259817"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647113"
 ---
-# <a name="walkthrough-create-a-code-snippet"></a>Passo a passo: Para criar um snippet de código
+# <a name="walkthrough-create-a-code-snippet"></a>Passo a passo: Criar um snippet de código
 
 Você pode criar um snippet de código com apenas algumas etapas. Tudo o que você precisa fazer é criar um arquivo XML, preencher os elementos apropriados e adicionar seu código. Opcionalmente, você pode fazer uso de parâmetros de substituição e referências de projeto. Importe o snippet à instalação do Visual Studio usando o botão **Importar** no **Gerenciador de Snippets de Código** (**Ferramentas** > **Gerenciador de Snippets de Código**).
 
@@ -76,9 +76,9 @@ O seguinte XML é o modelo básico de snippet:
        <![CDATA[Dim root = Math.Sqrt(16)]]>
    </Code>
    ```
-   
+
    > [!NOTE]
-   > Não é possível especificar como as linhas de código na seção **CDATA** de um snippet de código devem ser recuadas ou formatadas. Após a inserção, o serviço de linguagem formata automaticamente o código inserido. 
+   > Não é possível especificar como as linhas de código na seção **CDATA** de um snippet de código devem ser recuadas ou formatadas. Após a inserção, o serviço de linguagem formata automaticamente o código inserido.
 
 5. Salve o snippet como *SquareRoot.snippet* (salve-o em qualquer lugar).
 

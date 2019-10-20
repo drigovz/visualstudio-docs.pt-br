@@ -12,17 +12,17 @@ helpviewer_keywords:
 - resources [Visual Studio]
 - Resources page in Project Designer
 - application resources [Visual Studio]
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1681484500c382b296a03e78661b808825768a5b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 29e4fbbd8d50001807f3d90a82d18e40a3674d01
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62538103"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72654244"
 ---
 # <a name="manage-application-resources-net"></a>Gerenciar recursos do aplicativo (.NET)
 
@@ -41,14 +41,14 @@ Em um projeto de código gerenciado, abra a janela de propriedades do projeto. V
 - Digitando **propriedades do projeto** na caixa de pesquisa **Ctrl**+**Q**
 - Escolhendo **Alt**+**Enter** no **Gerenciador de Soluções**
 
-Selecione a guia **Recursos**. Você poderá adicionar um arquivo *.resx* se o projeto ainda não contiver um, adicionar e excluir diferentes tipos de recursos e modificar os recursos existentes.
+Selecione a guia **recursos** . Você pode adicionar um arquivo *. resx* se seu projeto não contiver um, adicionar e excluir diferentes tipos de recursos e modificar os recursos existentes.
 
 ## <a name="resources-in-other-project-types"></a>Recursos em outros tipos de projeto
 
 Recursos são gerenciados de forma diferente em projetos do .NET que em outros tipos de projeto. Para obter mais informações sobre os recursos em:
 
 - Aplicativos UWP (Plataforma Universal do Windows), consulte [Recursos do aplicativo e o Sistema de Gerenciamento de Recursos](/windows/uwp/app-resources/)
-- Projetos C++, confira [trabalhar com arquivos de recurso](/cpp/windows/working-with-resource-files) e [Como: Criar um recurso](/cpp/windows/how-to-create-a-resource)
+- Projetos C++, confira [trabalhar com arquivos de recurso](/cpp/windows/working-with-resource-files) e [Como criar um recurso](/cpp/windows/how-to-create-a-resource)
 
 ## <a name="see-also"></a>Consulte também
 

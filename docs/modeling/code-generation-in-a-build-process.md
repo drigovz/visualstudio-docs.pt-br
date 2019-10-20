@@ -5,20 +5,20 @@ ms.topic: conceptual
 helpviewer_keywords:
 - text templates, build tasks
 - text templates, transforming by using msbuild
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d26c0b464341bee7bce0b46bfdbcc89e0248a81
-ms.sourcegitcommit: e95dd8cedcd180e0bce6a75c86cf861757918290
+ms.openlocfilehash: 9c9cc0d8a40970e2ec36030ab3121d6fc02748e2
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "72163127"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72654194"
 ---
 # <a name="invoke-text-transformation-in-the-build-process"></a>Invocar a transformação de texto no processo de compilação
 
@@ -49,7 +49,7 @@ Se [o servidor de compilação](/azure/devops/pipelines/agents/agents) for execu
 - % ProgramFiles (x86)% \ Microsoft Visual Studio\2019\Community\Common7\IDE\PublicAssemblies
 
   - Microsoft. VisualStudio. TextTemplating. Modeling. 15.0. dll
-  
+
 > [!TIP]
 > Se você receber um `MissingMethodException` para um método Microsoft. CodeAnalysis ao executar destinos de compilação TextTemplating em um servidor de compilação, verifique se os assemblies Roslyn estão em um diretório chamado *Roslyn* que está no mesmo diretório que o executável de compilação (por exemplo,  *MSBuild. exe*).
 
@@ -116,11 +116,11 @@ Há algumas propriedades que podem ser inseridas em seu arquivo de projeto para 
     ```
 
      Por padrão, a tarefa T4 MSBuild regenera um arquivo de saída se ele for mais antigo que:
-     
+
      - seu arquivo de modelo
      - todos os arquivos incluídos
      - todos os arquivos que foram lidos anteriormente pelo modelo ou por um processador de diretiva que ele usa
-     
+
      Esse é um teste de dependência mais potente do que é usado pelo comando **transformar todos os modelos** no Visual Studio, que só compara as datas do modelo e do arquivo de saída.
 
 Para executar apenas as transformações de texto em seu projeto, invoque a tarefa TransformAll:
@@ -164,7 +164,7 @@ A transformação de texto ocorre antes de outras tarefas no processo de compila
 
 Em `AfterTransform`, você pode referenciar listas de arquivos:
 
-- GeneratedFiles – uma lista de arquivos gravados pelo processo. Para os arquivos que substituiram arquivos somente leitura existentes, `%(GeneratedFiles.ReadOnlyFileOverwritten)` será true. Esses arquivos podem passar por check-out do controle do código-fonte.
+- GeneratedFiles – uma lista de arquivos gravados pelo processo. Para os arquivos que substituiram os arquivos somente leitura existentes, `%(GeneratedFiles.ReadOnlyFileOverwritten)` será true. Esses arquivos podem passar por check-out do controle do código-fonte.
 
 - NonGeneratedFiles – uma lista de arquivos somente leitura que não foram substituídos.
 
@@ -285,7 +285,7 @@ Essas diretivas obtêm valores de T4parameterValues nos hosts do MSBuild e do Vi
 
 ## <a name="q--a"></a>Perguntas e respostas
 
-**Why deseja transformar os modelos no servidor de compilação? Já transformamos modelos no Visual Studio antes de fazer check-in do meu código.**
+**Por que desejo transformar modelos no servidor de compilação? Já transformamos modelos no Visual Studio antes de fazer check-in do meu código.**
 
 Se você atualizar um arquivo incluído ou outro arquivo lido pelo modelo, o Visual Studio não transforma o arquivo automaticamente. A transformação de modelos como parte da compilação garante que tudo esteja atualizado.
 

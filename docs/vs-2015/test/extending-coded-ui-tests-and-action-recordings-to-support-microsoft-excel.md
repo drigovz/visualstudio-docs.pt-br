@@ -6,21 +6,21 @@ ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.assetid: 6b0f72a4-70ca-4e55-b236-2ea1034fd8a7
 caps.latest.revision: 32
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 6eb44970cc29198ad9044281e566727a64b893c8
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: a48c01203d2e951e917482de3c0d9c2bec29ae01
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68871570"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72660565"
 ---
 # <a name="extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel"></a>Estendendo testes de IU codificado e gravações da ação para dar suporte ao Microsoft Excel
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 A estrutura de teste para testes de IU codificados e gravações da ação não dá suporte a todas as interfaces do usuário possíveis. Ele pode não dar suporte à interface do usuário específica que você deseja testar. Por exemplo, você não pode criar imediatamente um teste de IU codificado ou uma gravação da ação para uma planilha [!INCLUDE[ofprexcel](../includes/ofprexcel-md.md)]. No entanto, você pode criar sua própria extensão para a estrutura de teste de IU codificado que dará suporte a interface do usuário específica, tirando proveito da extensibilidade da estrutura de teste de IU codificado. O tópico a seguir fornece um exemplo de como estender a estrutura para dar suporte à criação de testes de UI codificados e gravações da ação para [!INCLUDE[ofprexcel](../includes/ofprexcel-md.md)]. Para obter mais informações sobre as plataformas que têm suporte, consulte [Configurações e Plataformas com Suporte para Testes de IU Codificados e Gravações da Ação](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md).
 
- **Requisitos**
+ **Requirements**
 
 - Visual Studio Enterprise
 
@@ -50,12 +50,12 @@ A estrutura de teste para testes de IU codificados e gravações da ação não 
 ### <a name="microsoft-excel-add-in-excelcodeduiaddinhelper"></a>Suplemento do Microsoft Excel: ExcelCodedUIAddinHelper
  Este projeto inclui um suplemento que é executado no processo do Excel. Consulte [Suplemento de exemplo do Excel para testes de IU codificados](../test/sample-excel-add-in-for-coded-ui-testing.md) para obter uma visão geral sobre o projeto de suplemento.
 
- Para obter mais informações, confira [Passo a passo: Criando seu primeiro suplemento do VSTO para Excel](https://msdn.microsoft.com/library/a855e2be-3ecf-4112-a7f5-ec0f7fad3b5f).
+ Para obter mais informações, consulte [Passo a passo: criando o primeiro suplemento do VSTO para Excel](https://msdn.microsoft.com/library/a855e2be-3ecf-4112-a7f5-ec0f7fad3b5f).
 
-### <a name="excel-ui-communication-exceluicommunicationhelper"></a>Comunicação da interface do usuário do Excel: ExcelUIcommunicationHelper
+### <a name="excel-ui-communication-exceluicommunicationhelper"></a>Comunicação de interface do usuário do Excel: ExcelUIcommunicationHelper
  Esse projeto inclui a interface `IExcelUICommunication` e as classes de informações que são usadas para passar dados entre o Excel e estrutura de testes de IU codificados. Para obter mais informações, consulte [Interface de comunicador do Excel de amostra](../test/sample-excel-communicator-interface.md).
 
-### <a name="coded-ui-test-extension-codeduiexentsibilitysample"></a>Extensão de teste de interface do usuário codificada: CodedUIExentsibilitySample
+### <a name="coded-ui-test-extension-codeduiexentsibilitysample"></a>Extensão de teste de IU codificado: CodedUIExentsibilitySample
  Esse projeto inclui as classes personalizadas que são usadas em testes de uma planilha do Excel. O código para cada uma dessas classes é bastante autoexplicativo. No entanto, fornecemos uma breve descrição de cada classe personalizada. Para obter mais informações, consulte [Extensão de teste de IU codificado de exemplo para Excel](../test/sample-coded-ui-test-extension-for-excel.md).
 
 ### <a name="deploying-your-add-in-and-extension"></a>Implantando o suplemento e a extensão

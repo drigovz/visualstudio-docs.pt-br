@@ -8,12 +8,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8964fc81b8323b6720d7c6d960449c7a9134658b
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
-ms.translationtype: HT
+ms.openlocfilehash: 0f94cc62cdadb2df3806f5b188278f49e4041235
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416892"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647168"
 ---
 # <a name="walkthrough-build-an-application"></a>Passo a passo: Criar um aplicativo
 
@@ -25,7 +25,7 @@ Baixe a amostra [Introdução à criação de aplicativos WPF](https://code.msdn
 
 ## <a name="create-a-custom-build-configuration"></a>Criar uma configuração de build personalizada
 
-Ao criar uma solução, as configurações de build de depuração e versão e seus destinos de plataforma padrão são definidos para a solução automaticamente. Depois, é possível personalizar essas configurações ou criar suas próprias. As configurações de build especificam o tipo de build. As plataformas de build especificam o sistema operacional que um aplicativo tem como destino para a configuração. Para obter mais informações, confira [Entender as configurações de build](../ide/understanding-build-configurations.md), [Entender as plataformas de build](../ide/understanding-build-platforms.md) e [Como Definir as configurações de depuração e de versão](../debugger/how-to-set-debug-and-release-configurations.md).
+Ao criar uma solução, as configurações de build de depuração e versão e seus destinos de plataforma padrão são definidos para a solução automaticamente. Depois, é possível personalizar essas configurações ou criar suas próprias. As configurações de build especificam o tipo de build. As plataformas de build especificam o sistema operacional que um aplicativo tem como destino para a configuração. Para obter mais informações, consulte [Noções básicas sobre configurações de build](../ide/understanding-build-configurations.md), [Noções básicas sobre plataformas de build](../ide/understanding-build-platforms.md) e [Como definir as configurações de depuração e versão](../debugger/how-to-set-debug-and-release-configurations.md).
 
 É possível alterar ou criar configurações e configurações de plataforma por meio da caixa de diálogo **Configuration Manager**. Neste procedimento, você criará uma configuração de build para testes.
 
@@ -47,7 +47,7 @@ Ao criar uma solução, as configurações de build de depuração e versão e s
 
    ![Caixa de diálogo Nova Plataforma da Solução](../ide/media/buildwalk_newsolutionplatform.png)
 
-1. Escolha o botão **OK**.
+1. Selecione o botão **OK**.
 
    A configuração da solução ativa foi alterada para **Teste** com a plataforma da solução ativa definida como x64.
 
@@ -65,7 +65,7 @@ Em seguida, você compilará a solução com a configuração de build personali
 
 ### <a name="build-the-solution"></a>Criar a solução
 
-- Na barra de menus, escolha **Compilar** > **Compilar Solução**.
+- Na barra de menus, escolha **criar**  > **criar solução**ou pressione **Ctrl** +**Shift** +**B**.
 
     A Janela de **Saída** exibe os resultados do build. O build foi bem-sucedido.
 
@@ -129,7 +129,7 @@ Temporariamente, é possível ocultar determinadas mensagens de aviso durante um
 
    ![Janela de Saída, Avisos de build do Visual Basic](../ide/media/buildwalk_visualbasicbuildwarnings.png)
 
-   Para obter mais informações, confira [Como: suprimir avisos do compilador](../ide/how-to-suppress-compiler-warnings.md).
+   Para obter mais informações, consulte [Como suprimir avisos do compilador](../ide/how-to-suppress-compiler-warnings.md).
 
 ## <a name="display-additional-build-details-in-the-output-window"></a>Exibir detalhes de build adicionais na janela Saída
 
@@ -161,13 +161,13 @@ Temporariamente, é possível ocultar determinadas mensagens de aviso durante um
     > [!TIP]
     > Pesquise o conteúdo da janela **Saída** se você exibir a caixa de diálogo **Localizar** escolhendo as teclas **Ctrl**+**F**.
 
-Para obter mais informações, confira [Como: Exibir, salvar e configurar arquivos de log de build](../ide/how-to-view-save-and-configure-build-log-files.md).
+Para obter mais informações, consulte [Como exibir, salvar e configurar arquivos de log de build](../ide/how-to-view-save-and-configure-build-log-files.md).
 
 ## <a name="create-a-release-build"></a>Criar um build da versão
 
 É possível compilar uma versão do aplicativo de exemplo que é otimizada para enviá-lo. Para o build de versão, você especificará que o arquivo executável é copiado para um compartilhamento de rede antes do início do build.
 
-Para obter mais informações, confira [Como: alterar o diretório de saída do build](../ide/how-to-change-the-build-output-directory.md) e [Compilar e limpar projetos e soluções no Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md).
+Para obter mais informações, consulte [Como alterar o diretório de saída do build](../ide/how-to-change-the-build-output-directory.md) e [Compilar e limpar projetos e soluções no Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md).
 
 ### <a name="specify-a-release-build-for-visual-basic"></a>Especificar um build de versão para o Visual Basic
 
@@ -223,6 +223,6 @@ Parabéns! Você concluiu este passo a passo com êxito.
 
 ## <a name="see-also"></a>Consulte também
 
-- [Passo a passo: compilar um projeto (C++)](/cpp/ide/walkthrough-building-a-project-cpp)
+- [Passo a passo: Criar um projeto (C++)](/cpp/ide/walkthrough-building-a-project-cpp)
 - [Visão geral da pré-compilação de projeto de aplicativo Web ASP.NET](/previous-versions/aspnet/aa983464\(v\=vs.110\))
-- [Passo a passo: usar o MSBuild](../msbuild/walkthrough-using-msbuild.md)
+- [Passo a passo: Usar o MSBuild](../msbuild/walkthrough-using-msbuild.md)

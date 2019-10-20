@@ -2,57 +2,57 @@
 title: Adicionar novas conexões
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: b01af2aa269cbaddbd84d24827b1a77e97d52d8a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0abce148194b2d88a39f6c651e6f32d0ae7b6642
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62818448"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72648907"
 ---
 # <a name="add-new-connections"></a>Adicionar novas conexões
 
-Você pode testar sua conexão a um banco de dados ou serviço e explorar o conteúdo do banco de dados e esquemas, usando **Gerenciador de servidores**, **Cloud Explorer**, ou **Pesquisador de objetos do SQL Server**. A funcionalidade dessas janelas se sobrepõe até certo ponto. As diferenças básicas são:
+Você pode testar a conexão com um banco de dados ou serviço e explorar o conteúdo e os esquemas do banco de dados, usando **Gerenciador de servidores**, **Cloud Explorer**ou **pesquisador de objetos do SQL Server**. A funcionalidade dessas janelas se sobrepõe a alguma extensão. As diferenças básicas são:
 
 - conexões de servidor
 
-   Instalado por padrão no Visual Studio. Pode ser usado para testar as conexões e exibir bancos de dados do SQL Server, outros bancos de dados que têm um provedor ADO.NET instalados e alguns serviços do Azure. Também mostra objetos de baixo nível, como contadores de desempenho do sistema, logs de eventos e filas de mensagens. Se uma fonte de dados não tem nenhum provedor do ADO.NET, ele não aparecerá aqui, mas você pode ainda usá-lo do Visual Studio conectando-se por meio de programação.
+   Instalado por padrão no Visual Studio. Pode ser usado para testar conexões e exibir SQL Server bancos de dados, qualquer outro banco de dados que tenha um provedor ADO.NET instalado e alguns serviços do Azure. Também mostra objetos de baixo nível, como contadores de desempenho do sistema, logs de eventos e filas de mensagens. Se uma fonte de dados não tiver um provedor ADO.NET, ela não aparecerá aqui, mas você ainda poderá usá-la no Visual Studio conectando-se programaticamente.
 
 - Cloud Explorer
 
-   Instale essa janela manualmente, como uma extensão do Visual Studio de [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.CloudExplorerForVS). Fornece funcionalidades especializadas para explorar e conectar-se aos serviços do Azure.
+   Instale essa janela manualmente como uma extensão do Visual Studio de [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.CloudExplorerForVS). Fornece uma funcionalidade especializada para explorar e se conectar aos serviços do Azure.
 
 - Pesquisador de Objetos do SQL Server
 
-   Instalado com o SQL Server Data Tools e visível sob o **exibição** menu. Se você não vi-lo existe, vá para **programas e recursos** no painel de controle, encontrar o Visual Studio e, em seguida, selecione **alteração** para executar novamente o instalador depois de selecionar a caixa de seleção para o SQL Server Data Tools. Use **Pesquisador de objetos do SQL Server** exibir bancos de dados SQL (se eles têm um provedor ADO.NET), criar novos bancos de dados, modificar esquemas, procedimentos armazenados de criar, recuperar cadeias de caracteres de conexão, exibir os dados e muito mais. Bancos de dados SQL que não tem nenhum provedor ADO.NET instalado não será mostrada aqui, mas você ainda pode se conectar a eles por meio de programação.
+   Instalado com SQL Server Data Tools e visível no menu **Exibir** . Se você não o vir lá, vá para **programas e recursos** no painel de controle, encontre o Visual Studio e, em seguida, selecione **alterar** para executar novamente o instalador depois de marcar a caixa de seleção para SQL Server Data Tools. Use **pesquisador de objetos do SQL Server** para exibir bancos de dados SQL (se eles tiverem um provedor de ADO.net), criar novos bancos de dados, modificar esquemas, criar procedimentos armazenados, recuperar cadeias de conexão, exibir e muito mais. Os bancos de dados SQL que não têm nenhum provedor ADO.NET instalado não aparecerão aqui, mas você ainda poderá se conectar a eles de forma programática.
 
-## <a name="add-a-connection-in-server-explorer"></a>Adicionar uma conexão no Gerenciador de servidores
+## <a name="add-a-connection-in-server-explorer"></a>Adicionar uma conexão no Gerenciador de Servidores
 
-Para criar uma conexão ao banco de dados, clique o **Adicionar Conexão** ícone na **Gerenciador de servidores**, ou clique com botão direito no **Gerenciador de servidores** no **dados Conexões** nó e selecione **Adicionar Conexão**. A partir daqui, você também pode se conectar a um banco de dados em outro servidor, um serviço do SharePoint ou um serviço do Azure.
+Para criar uma conexão com o banco de dados, clique no ícone **Adicionar conexão** no **Gerenciador de servidores**ou clique com o botão direito do mouse em **Gerenciador de servidores** no nó **conexões de dados** e selecione **Adicionar conexão**. A partir daqui, você também pode se conectar a um banco de dados em outro servidor, um serviço do SharePoint ou um serviço do Azure.
 
-![Ícone de Conexão de novo Gerenciador do servidor](../data-tools/media/raddata-server-explorer-new-connection-icon.png)
+![Ícone de nova conexão Gerenciador de Servidores](../data-tools/media/raddata-server-explorer-new-connection-icon.png)
 
-Isso abre o **Adicionar Conexão** caixa de diálogo. Aqui, inserimos o nome da instância LocalDB do SQL Server.
+Isso abre a caixa de diálogo **Adicionar conexão** . Aqui, inserimos o nome da instância do SQL Server LocalDB.
 
 ![Adicionar Nova Conexão](../data-tools/media/raddata-add-new-connection-dialog.png)
 
 ## <a name="change-the-provider"></a>Alterar o provedor
 
-Se a fonte de dados não é o desejado, clique o **alteração** botão para escolher uma nova fonte de dados e/ou em um novo provedor de dados do ADO.NET. O novo provedor pode solicitar suas credenciais, dependendo de como você configurou.
+Se a fonte de dados não for o que você deseja, clique no botão **alterar** para escolher uma nova fonte de dados e/ou um novo provedor de dados ADO.net. O novo provedor pode solicitar suas credenciais, dependendo de como você a configurou.
 
-![Provedor de dados AD0.NET de alteração](../data-tools/media/raddata-change-ad0.net-data-provider.png)
+![Alterar AD0.NET Provedor de Dados](../data-tools/media/raddata-change-ad0.net-data-provider.png)
 
 ## <a name="test-the-connection"></a>Testar a conexão
 
-Depois de escolher a fonte de dados, clique em **Conexão de teste**. Se não tiver êxito, você precisará solucionar problemas com base na documentação do fornecedor.
+Depois de escolher a fonte de dados, clique em **testar conexão**. Se não tiver sucesso, será necessário solucionar problemas com base na documentação do fornecedor.
 
 ![Testar Conexão](../data-tools/media/raddata-test-connection.png)
 
-Se o teste for bem-sucedido, você está pronto para criar uma *fonte de dados*, que é um termo do Visual Studio que realmente significa uma *modelo de dados* baseado em um banco de dados ou serviço subjacente.
+Se o teste for bem sucedido, você estará pronto para criar uma *fonte de dados*, que é um termo do Visual Studio que significa realmente um *modelo de dados* com base no serviço ou banco subjacente.
 
 ## <a name="see-also"></a>Consulte também
 

@@ -2,17 +2,17 @@
 title: Implementar uma classe abstrata
 ms.date: 01/26/2018
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1e5e1d05e0142a0185909ff590ff507fb53c7dc0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 3f8d61e6e2632d62d7244ec0918e56816c3a028e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62823141"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72662479"
 ---
 # <a name="implement-an-abstract-class-in-visual-studio"></a>Implementar uma classe abstrata no Visual Studio
 
@@ -22,11 +22,11 @@ Esta geração de código aplica-se a:
 
 - Visual Basic
 
-**O quê:** Permite gerar imediatamente o código necessário para implementar uma classe abstrata.
+**O quê:** permite gerar imediatamente o código necessário para implementar uma classe abstrata.
 
-**Quando:** Você deseja herdar de uma classe abstrata.
+**Quando:** você deseja herdar de uma classe abstrata.
 
-**Por que:** Você pode implementar manualmente todos os membros abstratos um por um; no entanto, essa funcionalidade gerará todas as assinaturas de método automaticamente.
+**Por quê:** você pode implementar manualmente todos os membros abstratos um por um; no entanto, esse recurso gerará automaticamente todas as assinaturas de método.
 
 ## <a name="how-to"></a>Como fazer
 
@@ -43,7 +43,7 @@ Esta geração de código aplica-se a:
 2. Depois, siga um destes procedimentos:
 
    - **Teclado**
-      - Pressione **Ctrl**+**.** para acionar o menu **Ações e Refatorações Rápidas**.
+      - Pressione **Ctrl**+ **.** para acionar o menu **Ações e Refatorações Rápidas**.
    - **Mouse**
       - Clique com o botão direito do mouse e selecione o menu **Ações Rápidas e Refatorações**.
       - Passe o mouse sobre o rabisco vermelho e clique no ícone de ![lâmpada de erro](media/error-bulb.png) ícone que aparece.

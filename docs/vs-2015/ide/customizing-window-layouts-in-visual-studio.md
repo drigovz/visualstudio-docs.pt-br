@@ -21,15 +21,15 @@ helpviewer_keywords:
 - custom layouts
 ms.assetid: 7517ff13-76de-4ecf-9c1b-eb9b7ff4d718
 caps.latest.revision: 30
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 84967c8aeb5319d748ff42d051f0f63dad1d9b12
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 509ec978815ae57e548188941a8de24c5f36d77e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65701260"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72665832"
 ---
 # <a name="customizing-window-layouts-in-visual-studio"></a>Personalização de layouts de janela no Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ No Visual Studio, é possível personalizar a posição, tamanho e comportamento
 ## <a name="kinds-of-windows"></a>Tipos de janelas
 
 ### <a name="tool-and-document-windows"></a>Janelas de ferramentas e do documento
- O IDE tem dois tipos básicos de janela, *janelas de ferramentas* e *janelas do documento*. As janelas de ferramentas incluem o Gerenciador de Soluções, Gerenciador de Servidores, Janela de Saída, Lista de Erros, os designers, as janelas do depurador e assim por diante. As janelas do documento contêm arquivos de código-fonte, arquivos de texto arbitrário, arquivos de configuração e assim por diante. As janelas de ferramentas podem ser redimensionadas e arrastadas por sua barra de título. As janelas do documento podem ser arrastadas por sua guia. Clique com o botão direito do mouse na guia ou barra de título para definir outras opções na janela.
+ O IDE tem dois tipos básicos de janela, *janelas de ferramentas* e *janelas do documento*. As janelas de ferramentas incluem o Gerenciador de Soluções, Gerenciador de Servidores, Janela de Saída, Lista de Erros, os designers, as janelas do depurador e assim por diante. As janelas do documento contêm arquivos de código-fonte, arquivos de texto arbitrário, arquivos de configuração e assim por diante. As janelas de ferramentas podem ser redimensionadas e arrastadas por sua barra de título. As janelas de documentos podem ser arrastadas pela guia. Clique com o botão direito do mouse na guia ou na barra de título para definir outras opções na janela.
 
  O menu **Janela** mostra opções para encaixar, flutuar e ocultar janelas no IDE. Clique com o botão direito do mouse na guia de janela ou na barra de título para ver outras opções para essa janela específica. É possível exibir mais de uma instância de determinadas janelas de ferramentas por vez. Por exemplo, é possível exibir mais de uma janela do navegador da Web e é possível criar outras instâncias de algumas janelas de ferramentas escolhendo **Nova Janela** no menu **Janela**.
 
@@ -53,9 +53,9 @@ No Visual Studio, é possível personalizar a posição, tamanho e comportamento
  Quando é necessário exibir ou editar dois locais ao mesmo tempo em um documento, é possível dividir as janelas. Para dividir seu documento em duas seções de rolagem independente, clique em **Dividir** no menu **Janela**. Clique em **Remover Divisão** no menu **Janela** para restaurar o modo de exibição único.
 
 ### <a name="toolbars"></a>Barras de ferramentas
- As barras de ferramentas podem ser organizadas arrastando ou usando a caixa de diálogo **Personalizar**. Para obter mais informações sobre como posicionar e personalizar barras de ferramentas, veja [Como: Personalizar menus e barras de ferramentas](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md).
+ As barras de ferramentas podem ser organizadas arrastando ou usando a caixa de diálogo **Personalizar**. Para obter mais informações sobre como posicionar e personalizar barras de ferramentas, consulte [How to: Customize Menus and Toolbars (Como: personalizar menus e barras de ferramentas)](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md).
 
-## <a name="arranging-and-docking-windows"></a>Organizando e encaixe Windows
+## <a name="arranging-and-docking-windows"></a>Organizando e encaixando janelas
  As duas janelas do documento e de ferramentas podem ser *encaixadas* para que elas tenham uma posição e um tamanho dentro do quadro de janela do IDE ou flutuando como uma janela separada independente do IDE. As janelas de ferramentas podem ser encaixadas em qualquer lugar dentro do quadro do IDE; algumas janelas de ferramentas podem ser encaixadas como janelas com guias no quadro do editor. As janelas do documento podem ser encaixadas dentro do quadro do editor e podem ser fixadas em sua posição atual na ordem de tabulação. É possível encaixar várias janelas para que elas flutuem juntas em um “raft” no IDE ou fora dele. As janelas de ferramentas também podem ser ocultadas ou minimizadas.
 
  É possível organizar janelas das seguintes maneiras:
@@ -88,19 +88,19 @@ No Visual Studio, é possível personalizar a posição, tamanho e comportamento
 
  A ilustração a seguir mostra o losango do guia para janelas de documentos, que só podem ser encaixadas dentro do quadro de edição:
 
- ![Losango do guia da janela do documento](../ide/media/documentwindowguidediamonds.png "Documentwindowguidediamonds")
+ ![Losango do guia de janela do documento](../ide/media/documentwindowguidediamonds.png "Documentwindowguidediamonds")
 
  As janelas de ferramentas podem ser fixadas em um lado de um quadro no IDE ou dentro do quadro de edição. Um guia do losango será exibido quando você arrastar uma janela de ferramentas para outro lugar para ajudá-lo a reencaixar a janela facilmente.
 
  Losango do guia para janelas de ferramentas
 
- ![Losangos do guia da janela de ferramentas](../ide/media/vs10guidediamond.png "VS10GuideDiamond")
+ ![Ouros guia da janela de ferramentas](../ide/media/vs10guidediamond.png "VS10GuideDiamond")
 
  A ilustração a seguir mostra o Gerenciador de Soluções que está sendo encaixado em um novo local, mostrado pela área sombreada azul:
 
- ![Gerenciador de soluções em uma nova posição de encaixe](../ide/media/vs2015-dock-diamond.png "VS2015_Dock_diamond")
+ ![Encaixando Gerenciador de Soluções em uma nova posição](../ide/media/vs2015-dock-diamond.png "VS2015_Dock_diamond")
 
-### <a name="closing-and-auto-hiding-tool-windows"></a>Fechando e ocultar automaticamente janelas de ferramentas
+### <a name="closing-and-auto-hiding-tool-windows"></a>Janelas de ferramentas de fechamento e ocultação automática
  É possível fechar uma janela de ferramentas clicando no X na parte superior da barra de título; para reabrir a janela, use seu atalho de teclado ou o comando de menu. As janelas de ferramentas dão suporte a um recurso denominado Ocultar Automaticamente, o que faz com que uma janela saia da frente quando você usa uma janela diferente. Quando uma janela é ocultada automaticamente, o nome dela é exibido em uma guia na borda do IDE. Para usar a janela novamente, aponte para a guia para que a janela volte a ser exibida.
 
  ![Ocultar automaticamente](../ide/media/vs2015-auto-hide.png "vs2015_auto_hide")
@@ -111,7 +111,7 @@ No Visual Studio, é possível personalizar a posição, tamanho e comportamento
 > [!NOTE]
 > As janelas de ferramentas que têm Ocultar Automaticamente habilitado poderão ser exibidas temporariamente quando a janela estiver em foco. Para ocultar a janela novamente, selecione um item fora da janela atual. Quando a janela perde o foco, ela não é mais exibida.
 
-### <a name="specifying-a-monitor"></a>Especificando um Monitor
+### <a name="specifying-a-monitor"></a>Especificando um monitor
  Se você tiver um segundo monitor e seu sistema operacional der suporte a ele, será possível escolher qual monitor exibirá uma janela. É possível até mesmo agrupar várias janelas em “rafts” em outros monitores.
 
 > [!TIP]
@@ -127,7 +127,7 @@ No Visual Studio, é possível personalizar a posição, tamanho e comportamento
 - As janelas abertas no layout de janela padrão serão abertas.
 
 ### <a name="create-and-save-custom-layouts"></a>Criar e salvar layouts personalizados
- Visual Studio 2015 permite que você salvar até 10 layouts de janela personalizados e alternar rapidamente entre elas. As etapas a seguir mostram como criar, salvar, invocar e gerenciar layouts personalizados que usam vários monitores com janelas de ferramentas encaixadas e flutuantes.
+ O Visual Studio 2015 permite que você economize até 10 layouts de janela personalizados e alterne rapidamente entre eles. As etapas a seguir mostram como criar, salvar, invocar e gerenciar layouts personalizados que usam vários monitores com janelas de ferramentas encaixadas e flutuantes.
 
  Primeiro, crie uma solução de teste que tem dois projetos, cada um com um layout ideal diferente.
 
@@ -157,13 +157,13 @@ No Visual Studio, é possível personalizar a posição, tamanho e comportamento
 
 1. Para mudar entre layouts, use os atalhos de teclado ou, no menu principal, escolha **Janela > Aplicar Layout de Janela**.
 
-     ![Aplicar menu de layout de janela](../ide/media/vs2015-applywindowlayout.png "VS2015_ApplyWindowLayout")
+     ![Menu aplicar layout da janela](../ide/media/vs2015-applywindowlayout.png "VS2015_ApplyWindowLayout")
 
      Depois de aplicar o layout da interface do usuário, observe como ele é preservado tanto no modo de edição quanto no modo de depuração.
 
      Se você tiver vários monitores no trabalho e um laptop de um só monitor em casa, será possível criar layouts otimizados para cada computador.
 
-     Observação: Se você aplicar um layout de vários monitor em um sistema de monitor único, as janelas flutuantes inseridas no segundo monitor ficarão ocultas agora atrás da janela do Visual Studio. É possível trazer essas janelas para frente pressionando Alt + Tab. Se você abrir o Visual Studio posteriormente com vários monitores, será possível restaurar as janelas para suas posições especificadas reaplicando o layout.
+     Observação: se você aplicar um layout de vários monitor em um sistema de monitor único, as janelas flutuantes inseridas no segundo monitor ficarão ocultas agora atrás da janela do Visual Studio. Você pode trazer essas janelas para a frente pressionando Alt + Tab. Se, mais tarde, você abrir o Visual Studio com vários monitores, poderá restaurar as janelas para suas posições especificadas reaplicando o layout.
 
 ##### <a name="manage-and-roam-your-layouts"></a>Gerenciar e usar perfil móvel nos seus layouts
 
@@ -180,6 +180,6 @@ No Visual Studio, é possível personalizar a posição, tamanho e comportamento
 |Título|Descrição|
 |-----------|-----------------|
 |[Tipos de Janelas](../misc/kinds-of-windows.md)|Aborda as diferenças entre janelas de ferramenta e janelas de documento no IDE.|
-|[Como: Organizar e encaixar janelas](../misc/how-to-arrange-and-dock-windows.md)|Descreve como encaixar, ocultar automaticamente e colocar lado a lado as janelas, além de como redefinir o layout da janela.|
-|[Como: Mover-se no IDE](../ide/how-to-move-around-in-the-visual-studio-ide.md)|Descreve como você pode alternar entre as janelas abertas no IDE, por ordem de uso. Também descreve como é possível pular para documentos específicos.|
+|[Como organizar e encaixar janelas](../misc/how-to-arrange-and-dock-windows.md)|Descreve como encaixar, ocultar automaticamente e colocar lado a lado as janelas, além de como redefinir o layout da janela.|
+|[How to: Move Around in the IDE (Como mover-se no IDE)](../ide/how-to-move-around-in-the-visual-studio-ide.md)|Descreve como você pode alternar entre as janelas abertas no IDE, por ordem de uso. Também descreve como é possível pular para documentos específicos.|
 |[Personalizando configurações de desenvolvimento no Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)|Contém informações sobre combinações de configurações e como as configurações afetam os layouts da janela, os atalhos do teclado e outros elementos no IDE.|

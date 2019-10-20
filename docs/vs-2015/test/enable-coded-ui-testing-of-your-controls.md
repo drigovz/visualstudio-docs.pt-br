@@ -6,14 +6,14 @@ ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.assetid: 5ef1188f-89dc-413d-801d-0efdaf9b0427
 caps.latest.revision: 24
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: c97ee2d05609ee6802da3503e9f514fdc07a4b85
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 920dea4e81ca2ce0c562bb6d77582fd5e3753663
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68871656"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72660577"
 ---
 # <a name="enable-coded-ui-testing-of-your-controls"></a>Habilitar testes de IU codificado dos controles
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "68871656"
 
 4. [Suporte a ações com reconhecimento de intenção com a implementação de um filtro de ação](../test/enable-coded-ui-testing-of-your-controls.md#intentawareactions)
 
-   ![CUIT&#95;Full](../test/media/cuit-full.png "CUIT_Full")
+   ![CUIT&#95;completo](../test/media/cuit-full.png "CUIT_Full")
 
 ## <a name="recordandplayback"></a> Suporte ao registro, reprodução e validação de propriedade com a implementação de acessibilidade
  O construtor de teste de IU codificado captura informações sobre os controles que ele encontra durante uma gravação e, em seguida, gera código para repetir essa sessão. Se o controle não der suporte à acessibilidade, o teste de IU codificado capturará ações (como cliques do mouse) usando coordenadas da tela. Quando o teste é executado, o código gerado emitirá os cliques do mouse nas mesmas coordenadas de tela. Se o controle for exibido em um local diferente na tela quando o teste for reproduzido, o código gerado falhará ao executar essa ação em seu controle. Isso poderá resultar em falhas se o teste for reproduzido em diferentes configurações de tela, em diferentes ambientes ou após alterações no layout da interface do usuário.
@@ -39,12 +39,12 @@ ms.locfileid: "68871656"
 
  No entanto, se você implementar acessibilidade, o construtor de teste de IU codificado usará isso para capturar as informações sobre o controle quando ele registrar um teste e gerar o código. Em seguida, quando você executar o teste, o código gerado reproduzirá esses eventos em relação ao seu controle, mesmo que ele esteja em outro lugar na interface do usuário. Os autores do teste também serão capazes de criar asserções usando as propriedades básicas do controle.
 
- ![CUIT&#95;Record](../test/media/cuit-record.png "CUIT_Record")
+ ![Registro&#95;de CUIT](../test/media/cuit-record.png "CUIT_Record")
 
 ### <a name="to-support-record-and-playback-property-validation-and-navigation-for-a-windows-forms-control"></a>Para dar suporte à gravação e reprodução, validação de propriedade e navegação para controle do Windows Forms
  Implemente a acessibilidade para seu controle conforme descrito no procedimento a seguir e explicado em detalhes em <xref:System.Windows.Forms.AccessibleObject>.
 
- ![CUIT&#95;Accessible](../test/media/cuit-accessible.png "CUIT_Accessible")
+ ![CUIT&#95;acessível](../test/media/cuit-accessible.png "CUIT_Accessible")
 
 1. Implemente uma classe que seja derivada de <xref:System.Windows.Forms.Control.ControlAccessibleObject> e substitua a propriedade <xref:System.Windows.Forms.Control.AccessibilityObject%2A> para retornar um objeto da sua classe.
 
@@ -86,7 +86,7 @@ ms.locfileid: "68871656"
  ![CUIT&#95;CustomProps](../test/media/cuit-customprops.png "CUIT_CustomProps")
 
 ### <a name="to-support-custom-property-validation"></a>Para dar suporte à validação de propriedade personalizada
- ![CUIT&#95;Props](../test/media/cuit-props.png "CUIT_Props")
+ ![CUIT&#95;props](../test/media/cuit-props.png "CUIT_Props")
 
 1. Substitua a propriedade <xref:System.Windows.Forms.AccessibleObject.Description%2A> do objeto acessível da legenda de curva para passar valores avançados de propriedade na cadeia de caracteres de descrição, separados da descrição principal (e uns dos outros, caso esteja implementando várias propriedades) por ponto-e-vírgula (;).
 
@@ -410,7 +410,7 @@ Assert.AreEqual(this.AssertMethod3ExpectedValues.UIATextState, uIAText.State);
  Quando o Visual Studio registra um teste, ele captura cada evento do mouse e do teclado. No entanto, em alguns casos, a intenção da ação pode ser perdida na série de eventos de mouse e de teclado. Por exemplo, se o controle dá suporte ao preenchimento automático, o mesmo conjunto de eventos de mouse e teclado podem resultar em um valor diferente quando o teste é reproduzido em um ambiente diferente. Você pode adicionar um plug-in de filtro de ação que substitui a série de eventos de teclado e mouse por uma única ação. Dessa forma, você pode substituir a série de eventos de mouse e de teclado, resultando na seleção de um valor com uma única ação que define o valor. Isso protege os testes de UI codificados contra as diferenças no preenchimento automático de um ambiente para outro.
 
 ### <a name="to-support-intent-aware-actions"></a>Para dar suporte a ações com reconhecimento de intenção
- ![CUIT&#95;Actions](../test/media/cuit-actions.png "CUIT_Actions")
+ ![Ações&#95;de CUIT](../test/media/cuit-actions.png "CUIT_Actions")
 
 1. Implemente uma classe de filtro de ação derivada de [UITestActionFilter](/previous-versions/visualstudio/visual-studio-2012/dd985757(v=vs.110)), substituindo as propriedades [ApplyTimeout](/previous-versions/visualstudio/visual-studio-2012/dd984649%28v%3dvs.110%29), [Category](/previous-versions/visualstudio/visual-studio-2012/dd986905(v=vs.110)), [habilitado](/previous-versions/visualstudio/visual-studio-2012/dd985633(v=vs.110)), [FilterType](/previous-versions/visualstudio/visual-studio-2012/dd778726(v=vs.110)), [Group](/previous-versions/visualstudio/visual-studio-2012/dd779219(v=vs.110)) e [Name](/previous-versions/visualstudio/visual-studio-2012/dd998334(v=vs.110)).
 
@@ -536,7 +536,7 @@ Assert.AreEqual(this.AssertMethod3ExpectedValues.UIATextState, uIAText.State);
 ## <a name="external-resources"></a>Recursos externos
 
 ### <a name="guidance"></a>Diretrizes
- [Teste para entrega contínua com o Visual Studio 2012 – capítulo 2: Testes da unidade: Testando o interior](http://go.microsoft.com/fwlink/?LinkID=255188)
+ [Testes de Entrega Contínua com o Visual Studio 2012 – Capítulo 2: Teste de Unidade: Testando o Interior](http://go.microsoft.com/fwlink/?LinkID=255188)
 
 ## <a name="see-also"></a>Consulte também
 

@@ -1,25 +1,25 @@
 ---
-title: Regras nativas do mínimo de conjunto de regras | Microsoft Docs
+title: Conjunto de regras de regras mínimas nativas | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 ms.assetid: 2d898bc4-fba5-472e-8f09-b0c6b511c5a3
 caps.latest.revision: 5
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 95e768fb4edbc4741f07ba497faac43ac512b8e5
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 8e7f45122bab952eb60182423281e018705e33a5
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65692604"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661071"
 ---
 # <a name="native-minimum-rules-rule-set"></a>Conjunto de regras mínimas nativo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-O Microsoft Native mínimo regras enfocam os problemas mais críticos do código nativo, inclusive falhas potenciais de segurança e falhas do aplicativo. Você deve incluir este conjunto de regras em qualquer conjunto personalizado que criar para seus projetos nativos.  
+As regras mínimas nativas da Microsoft concentram-se nos problemas mais críticos em seu código nativo, incluindo falhas potenciais de segurança e aplicativos. Você deve incluir esse conjunto de regras em qualquer conjunto personalizado de regras que você criar para seus projetos nativos.
 
 |                                      Regra                                      |                                                  Descrição                                                  |
 |--------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|
@@ -75,7 +75,7 @@ O Microsoft Native mínimo regras enfocam os problemas mais críticos do código
 | [C6523](https://msdn.microsoft.com/11397a31-b224-46b0-afb7-d49ca576a3bb)  |                                         Parâmetro de cadeia de caracteres de tamanho inválido                                         |
 |                       [C6525](../code-quality/c6525.md)                        |                                   Local inatingível da cadeia de caracteres inválido                                    |
 | [C6526](https://msdn.microsoft.com/59c590c7-0098-4166-a1ac-87f324596002)  |                                        Tipo de buffer de cadeia de caracteres de tamanho inválido                                        |
-|                       [C6527](../code-quality/c6527.md)                        |              Anotação inválida: Propriedade 'NeedsRelease' não pode ser usada em valores do tipo void               |
+|                       [C6527](../code-quality/c6527.md)                        |              Anotação inválida: A propriedade 'NeedsRelease' não pode ser utilizada em valores de tipo void               |
 |                       [C6530](../code-quality/c6530.md)                        |                                       Estilo de cadeia de caracteres de formato não reconhecido                                        |
 |                       [C6540](../code-quality/c6540.md)                        | O uso de anotações de atributo nesta função irá invalidar todas as anotações __declspec existentes na função  |
 |                       [C6551](../code-quality/c6551.md)                        |                              Especificação de tamanho inválido: expressão não analisável                              |
@@ -146,7 +146,7 @@ O Microsoft Native mínimo regras enfocam os problemas mais críticos do código
 |                      [C28286](../code-quality/c28286.md)                       |                                    Para função, erro de sintaxe perto do fim                                    |
 |                      [C28287](../code-quality/c28287.md)                       |                Para função, Erro de sintaxe na anotação \_At\_() (nome de parâmetro não reconhecido)                |
 |                      [C28288](../code-quality/c28288.md)                       |                  Para função, Erro de sintaxe na anotação \_At\_() (nome de parâmetro inválido)                   |
-|                      [C28289](../code-quality/c28289.md)                       |                Para a função: ReadableTo ou WritableTo não tinha uma especificação de limite como um parâmetro                |
+|                      [C28289](../code-quality/c28289.md)                       |                Para função: ReadableTo ou WritableTo não tinha uma especificação de limite como parâmetro                |
 |                      [C28290](../code-quality/c28290.md)                       |           a anotação para função contém mais Externos que o número real de parâmetros            |
 |                      [C28291](../code-quality/c28291.md)                       |                        pós null/notnull em deref nível 0 não tem sentido para a função.                        |
 |                      [C28300](../code-quality/c28300.md)                       |                            Operandos da expressão de tipos incompatíveis para o operador                             |

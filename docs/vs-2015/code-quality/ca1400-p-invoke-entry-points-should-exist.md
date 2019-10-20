@@ -1,5 +1,5 @@
 ---
-title: 'CA1400: Pontos de entrada P-Invoke devem existir | Microsoft Docs'
+title: 'CA1400: P-invocar pontos de entrada deve existir | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,40 +12,40 @@ helpviewer_keywords:
 - CA1400
 ms.assetid: 1d64e470-7b2f-4cca-8fb0-ac92829e6332
 caps.latest.revision: 21
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 0e5696689d0aa40f4af2e11970c81b47737a3d80
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d1083f7bbdf3b3af78b83aed293b31d898ae7522
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68200381"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661372"
 ---
-# <a name="ca1400-pinvoke-entry-points-should-exist"></a>CA1400: Deve haver pontos de entrada P/Invoke
+# <a name="ca1400-pinvoke-entry-points-should-exist"></a>CA1400: os pontos de entrada P/Invoke devem existir
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |NomeDoTipo|PInvokeEntryPointsShouldExist|
 |CheckId|CA1400|
-|Categoria|Microsoft.Interoperability|
-|Alteração Significativa|Não são significativas|
+|Categoria|Microsoft. Interoperability|
+|Alteração Significativa|Sem interrupção|
 
 ## <a name="cause"></a>Causa
- Um método público ou protegido é marcado com o <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName>. Não foi possível localizar a biblioteca não gerenciada ou não foi possível comparar o método a uma função na biblioteca. Se a regra não é possível localizar o nome do método exatamente como ele é especificado, ele procura por ANSI ou versões de caractere largo do método acrescentando o nome do método com 'A' ou 'W'. Se nenhuma correspondência for encontrada, a regra tenta localizar uma função usando o formato de nome de stdcall (_MyMethod@12, onde 12 representa o comprimento dos argumentos). Se nenhuma correspondência for encontrada e o nome do método começa com '#', a regra de pesquisa para a função como uma referência ordinal, em vez de uma referência de nome.
+ Um método público ou protegido é marcado com o <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName>. Não foi possível localizar a biblioteca não gerenciada ou não foi possível comparar o método a uma função na biblioteca. Se a regra não puder localizar o nome do método exatamente como foi especificado, ele procurará as versões ANSI ou de caracteres largos do método, sufixando o nome do método com ' A ' ou ' W '. Se nenhuma correspondência for encontrada, a regra tentará localizar uma função usando o formato de nome __stdcall (_MyMethod@12, em que 12 representa o comprimento dos argumentos). Se nenhuma correspondência for encontrada e o nome do método começar com ' # ', a regra pesquisará a função como uma referência ordinal em vez de uma referência de nome.
 
 ## <a name="rule-description"></a>Descrição da Regra
- Nenhuma verificação de tempo de compilação está disponível para certificar-se de que os métodos são marcados com <xref:System.Runtime.InteropServices.DllImportAttribute> estão localizados na DLL não gerenciada referenciada. Se nenhuma função que tem o nome especificado está na biblioteca, ou os argumentos para o método não coincidem com os argumentos da função, o common language runtime lançará uma exceção.
+ Nenhuma verificação de tempo de compilação está disponível para garantir que os métodos marcados com <xref:System.Runtime.InteropServices.DllImportAttribute> estejam localizados na DLL não gerenciada referenciada. Se nenhuma função com o nome especificado estiver na biblioteca ou os argumentos para o método não corresponderem aos argumentos da função, o Common Language Runtime gerará uma exceção.
 
 ## <a name="how-to-fix-violations"></a>Como Corrigir Violações
- Para corrigir uma violação dessa regra, corrija o método que tem o <xref:System.Runtime.InteropServices.DllImportAttribute> atributo. Certifique-se de que a biblioteca não gerenciada existe e está no mesmo diretório que o assembly que contém o método. Se a biblioteca estiver presente e referenciado corretamente, verifique se o nome do método, o tipo de retorno e a assinatura de argumento correspondem a função de biblioteca.
+ Para corrigir uma violação dessa regra, corrija o método que tem o atributo <xref:System.Runtime.InteropServices.DllImportAttribute>. Verifique se a biblioteca não gerenciada existe e se está no mesmo diretório que o assembly que contém o método. Se a biblioteca estiver presente e corretamente referenciada, verifique se o nome do método, o tipo de retorno e a assinatura do argumento correspondem à função da biblioteca.
 
 ## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos
- Não suprima um aviso nessa regra quando a biblioteca não gerenciada está no mesmo diretório que o assembly gerenciado que faz referência a ele. Talvez seja seguro suprimir um aviso nessa regra no caso em que a biblioteca não gerenciada não pôde ser localizada.
+ Não suprimir um aviso dessa regra quando a biblioteca não gerenciada estiver no mesmo diretório que o assembly gerenciado que faz referência a ela. Pode ser seguro suprimir um aviso dessa regra no caso em que a biblioteca não gerenciada não pôde ser localizada.
 
 ## <a name="example"></a>Exemplo
- O exemplo a seguir mostra um tipo que viola a regra. Nenhuma função chamada `DoSomethingUnmanaged` ocorre em kernel32.dll.
+ O exemplo a seguir mostra um tipo que viola a regra. Nenhuma função chamada `DoSomethingUnmanaged` ocorre em Kernel32. dll.
 
  [!code-csharp[FxCop.Interoperability.DLLExists#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Interoperability.DLLExists/cs/FxCop.Interoperability.DLLExists.cs#1)]
 

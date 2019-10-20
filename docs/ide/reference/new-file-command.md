@@ -8,17 +8,17 @@ helpviewer_keywords:
 - File.NewFile command
 - New File command
 ms.assetid: 767868d6-a525-425b-a43b-2198f636ab6b
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d7a71a6d313ce12a40cd5c30470f53b1e2a1b69e
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: 65ea2f4bc06ee1db5042219d1dd3b4bb38f0a80e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68919122"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666468"
 ---
 # <a name="new-file-command"></a>Comando Novo Arquivo
 Cria um novo arquivo e abre-o. O arquivo aparece na pasta Arquivos Diversos.
@@ -66,7 +66,7 @@ Este exemplo cria uma nova página da Web "test1.htm" e abre-a no editor de cód
 >File.NewFile test1 /t:"General\HTML Page" /e:"Source Code (text) Editor"
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Comandos do Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Janela Comando](../../ide/reference/command-window.md)

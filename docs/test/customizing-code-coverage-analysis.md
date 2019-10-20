@@ -2,17 +2,17 @@
 title: Personalizando análise de cobertura de código
 ms.date: 08/21/2019
 ms.topic: conceptual
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: 517f3f5911df6c7de1f59232a4e836bcdc84c448
-ms.sourcegitcommit: 689ba54ea14257d13031de881f5d4fe937a36f56
+author: jillre
+ms.openlocfilehash: 7392397748d26224a0fba0d5510fccb6655d7642
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "71342363"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72665072"
 ---
 # <a name="customize-code-coverage-analysis"></a>Personalizar a análise de cobertura de código
 
@@ -112,7 +112,7 @@ A tabela a seguir mostra as várias maneiras pelas quais os assemblies e membros
 | PublicKeyToken | Faz a correspondência de assemblies assinados pelo token de chave pública. |
 | Origem | Faz a correspondência de elementos pelo nome do caminho do arquivo de origem no qual eles são definidos. |
 | Atributo | Corresponde aos elementos que têm o atributo especificado. Especifique o nome completo do atributo, por exemplo, `<Attribute>^System\.Diagnostics\.DebuggerHiddenAttribute$</Attribute>`.<br/><br/>Se você excluir o atributo <xref:System.Runtime.CompilerServices.CompilerGeneratedAttribute>, o código que usa recursos de linguagem, como `async`, `await`, `yield return` e as propriedades implementadas automaticamente serão excluídas da análise de cobertura de código. Para excluir o código verdadeiramente gerado, exclua apenas o atributo <xref:System.CodeDom.Compiler.GeneratedCodeAttribute>. |
-| Função | Faz a correspondência de procedimentos, funções ou métodos por nome totalmente qualificado, incluindo a lista de parâmetros. Você também pode corresponder a parte do nome usando uma [expressão regular](#regular-expressions).<br/><br/>Exemplos:<br/><br/>`Fabrikam.Math.LocalMath.SquareRoot(double);` (C#)<br/><br/>`Fabrikam::Math::LocalMath::SquareRoot(double)`(C++) |
+| Função | Faz a correspondência de procedimentos, funções ou métodos por nome totalmente qualificado, incluindo a lista de parâmetros. Você também pode corresponder a parte do nome usando uma [expressão regular](#regular-expressions).<br/><br/>Exemplos:<br/><br/>`Fabrikam.Math.LocalMath.SquareRoot(double);` (C#)<br/><br/>`Fabrikam::Math::LocalMath::SquareRoot(double)` (C++) |
 
 ### <a name="regular-expressions"></a>Expressões regulares
 

@@ -1,24 +1,24 @@
 ---
-title: 'Como: Adicionar validação a classes de entidade'
+title: Como adicionar validação a classes de entidade
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
 ms.assetid: 61107da9-7fa3-4dba-b101-ae46536f52c4
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 139833cc427349cb0fd820877c8cad101a647c81
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 83c6addb7aa6cf0b54398db351bee5825bc2d6f2
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68925608"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72648405"
 ---
-# <a name="how-to-add-validation-to-entity-classes"></a>Como: Adicionar validação a classes de entidade
+# <a name="how-to-add-validation-to-entity-classes"></a>Como adicionar validação a classes de entidade
 *Validar* classes de entidade é o processo que confirma que os valores inseridos em objetos de dados estão de acordo com as restrições do esquema de um objeto e também as regras estabelecidas para o aplicativo. Validar dados antes de enviar atualizações para o base de dados subjacente é uma boa prática que reduz erros. Também reduz o número potencial de processamentos entre um aplicativo e o base de dados.
 
 As [ferramentas de LINQ to SQL no Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) fornecem métodos parciais que permitem aos usuários estender o código gerado pelo designer que é executado durante inserções, atualizações e exclusões de entidades completas e também durante e após alterações de coluna individuais.
@@ -106,7 +106,7 @@ Além de verificar valores alterações pendentes, você também pode validar da
 
     Para projetos C#:
 
-    Como C# os projetos não geram automaticamente manipuladores de eventos, você pode usar o IntelliSense para `UpdateCLASSNAME` criar o método parcial. Tipo `partial` e um espaço para acessar a lista de métodos parciais disponíveis. Clique no método Update para a classe na qual você deseja adicionar a validação. O código a seguir é semelhante ao código que é gerado quando você seleciona `UpdateCLASSNAME` um método parcial:
+    Como C# os projetos não geram automaticamente manipuladores de eventos, você pode usar o IntelliSense para criar o método de `UpdateCLASSNAME` parcial. Tipo `partial` e um espaço para acessar a lista de métodos parciais disponíveis. Clique no método Update para a classe na qual você deseja adicionar a validação. O código a seguir é semelhante ao código que é gerado quando você seleciona um `UpdateCLASSNAME` método parcial:
 
     ```csharp
     partial void UpdateCLASSNAME(CLASSNAME instance)

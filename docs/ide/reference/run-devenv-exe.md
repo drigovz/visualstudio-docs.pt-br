@@ -10,17 +10,17 @@ helpviewer_keywords:
 - Devenv, /Run switch
 - R Devenv switch (/R)
 ms.assetid: b1f22f9d-39a5-4918-8a2a-4b5c1e872665
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 22c56e3dc4272fd927cc060f5a5a9972e5b8e6ca
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 1797a9731db63999188f05c603cbd83ed0079ac1
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62945510"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72655535"
 ---
 # <a name="run-devenvexe"></a>/Run (devenv.exe)
 

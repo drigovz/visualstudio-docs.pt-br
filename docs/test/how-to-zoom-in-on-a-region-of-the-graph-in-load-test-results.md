@@ -8,17 +8,17 @@ helpviewer_keywords:
 - graphs, analyzing load tests
 - load tests, zooming with graphs
 ms.assetid: 729b4c30-4bc3-4698-91b3-17a676897443
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: f570e2085bf9d0707bb5a8bfe33576466a6d7b41
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: f8e37d7ce5f4f52074904aa353ad6d02d65f5ca6
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62821192"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653257"
 ---
-# <a name="how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results"></a>Como: Ampliar uma região do grafo nos resultados do teste de carga
+# <a name="how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results"></a>Como ampliar uma região do grafo nos resultados do teste de carga
 
 Após a conclusão de um teste de carga, você poderá usar as barras de zoom para ampliar e rolar para uma região do gráfico. Ao ampliar, você pode examinar detalhadamente os dados que foram gerados durante uma execução de teste de carga.
 
@@ -57,7 +57,7 @@ Para exibir gráficos:
 
      \- ou -
 
-     Exiba os detalhes de um teste de carga executado anteriormente. Para obter mais informações, confira [Como: Acessar os resultados do teste de carga para análise](../test/how-to-access-load-test-results-for-analysis.md).
+     Exiba os detalhes de um teste de carga executado anteriormente. Para saber mais, confira [Como acessar resultados do teste de carga para análise](../test/how-to-access-load-test-results-for-analysis.md).
 
 3. Escolha **Gráficos** se os gráficos não forem exibidos.
 
@@ -116,5 +116,5 @@ Quando vários gráficos forem exibidos, você poderá mantê-los sincronizados 
 ## <a name="see-also"></a>Consulte também
 
 - [Analisar resultados do teste de carga na exibição Grafos](../test/analyze-load-test-results-in-the-graphs-view.md)
-- [Analisar resultados do teste de carga](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
-- [Como: Adicionar e excluir contadores em grafos](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md)
+- [Analisar resultados de teste de carga](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
+- [Como adicionar e excluir contadores em grafos](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md)

@@ -8,17 +8,17 @@ helpviewer_keywords:
 - controllers, configuring
 - controllers, timeouts
 ms.assetid: 777d0db5-0073-458a-a2a3-58b1c1f24c60
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 5e703ca3e1770d92a2dc01402acaaba0b4988e92
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 2f4e82261b9b36ced471dfa3e93be085e22c4d64
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62970624"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653333"
 ---
-# <a name="how-to-specify-timeout-periods-for-test-controllers-and-test-agents"></a>Como: Especificar períodos de tempo limite para controladores e agentes de teste
+# <a name="how-to-specify-timeout-periods-for-test-controllers-and-test-agents"></a>Como especificar períodos de tempo limite para controladores e agentes de teste
 
 O controlador de teste e o agente de teste têm várias configurações de tempo limite que especificam quanto tempo devem aguardar por respostas um do outro, ou de uma fonte de dados antes de falhar com um erro. Em determinadas circunstâncias, pode ser necessário editar valores de tempo limite para atender às necessidades de sua topologia ou outros problemas de ambiente. Para editar os valores de tempo limite, edite o arquivo de configuração XML que está associado ao controlador de teste ou com o agente de teste, conforme abordado nos procedimentos a seguir.
 
@@ -35,7 +35,7 @@ Para editar várias configurações de tempo limite de um controlador de teste o
     |AgentInitializeTimeout|Número de segundos da espera pela inicialização de todos os agentes e seus coletores de dados no início de uma execução de teste, antes de cancelar a execução. Esse valor deverá ser bastante grande se forem usados coletores de dados.|"n" segundos. Padrão: "120" (dois minutos).|
     |AgentCleanupTimeout|Número de segundos da espera pela limpeza de todos os agentes e seus coletores de dados, antes de concluir a execução do teste. Esse valor deverá ser bastante grande se forem usados coletores de dados.|"n" segundos. Padrão: "120" (dois minutos).|
 
-- Agente de Teste: *QTAgentService.exe.config*
+- Test Agent: *QTAgentService.exe.config*
 
     |Nome da chave|Descrição|Valor|
     |-|-----------------|-|
@@ -68,7 +68,7 @@ Para editar várias configurações de tempo limite de um controlador de teste o
     <add key="AgentConnectionTimeoutInSeconds" value="180"/>
     ```
 
-    - ou -
+    \- ou -
 
     Adicione uma chave extra e especifique um valor de tempo limite. Por exemplo, você pode adicionar a chave `AgentInitializeTimeout` na seção `<appSettings>` e especificar um valor de cinco minutos:
 
@@ -102,7 +102,7 @@ Para editar várias configurações de tempo limite de um controlador de teste o
     <add key="ControllerConnectionPeriodInSeconds" value="60"/>
     ```
 
-    - ou -
+    \- ou -
 
     Adicione uma chave extra e especifique um valor de tempo limite. Por exemplo, você pode adicionar a chave `RemotingTimeoutSeconds` na seção `<appSettings>` e especificar um valor de quinze minutos:
 
@@ -117,4 +117,4 @@ Para editar várias configurações de tempo limite de um controlador de teste o
 - [Instalar e configurar agentes de teste](../test/lab-management/install-configure-test-agents.md)
 - [Modificar configurações de registro em log de testes de carga](../test/modify-load-test-logging-settings.md)
 - [Configurar portas para controladores e agentes de teste](../test/configure-ports-for-test-controllers-and-test-agents.md)
-- [Como: Associar um controlador de teste ou um agente de teste a um adaptador de rede](../test/how-to-bind-a-test-controller-or-test-agent-to-a-network-adapter.md)
+- [Como associar um controlador de teste ou um agente de teste a um adaptador de rede](../test/how-to-bind-a-test-controller-or-test-agent-to-a-network-adapter.md)

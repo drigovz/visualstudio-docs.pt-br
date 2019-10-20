@@ -1,5 +1,5 @@
 ---
-title: 'CA1900: Campos de tipo de valor devem ser portáteis | Microsoft Docs'
+title: 'CA1900: os campos de tipo de valor devem ser portáteis | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,36 +12,36 @@ helpviewer_keywords:
 - CA1900
 ms.assetid: 1787d371-389f-4d39-b305-12b53bc0dfb9
 caps.latest.revision: 19
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 97a83bf4ba71d0adc71fdb96d4e1c865358c08e2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ff56c89a56af54288284d9cc62c71d0c9b2179b4
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68203101"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661098"
 ---
-# <a name="ca1900-value-type-fields-should-be-portable"></a>CA1900: Campos de tipo de valor devem ser portáteis
+# <a name="ca1900-value-type-fields-should-be-portable"></a>CA1900: os campos de tipo de valor devem ser móveis
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Para a documentação mais recente do Visual Studio, consulte [CA1900: Campos de tipo de valor devem ser portáteis](https://docs.microsoft.com/visualstudio/code-quality/ca1900-value-type-fields-should-be-portable).  
-  
-|||  
-|-|-|  
-|NomeDoTipo|ValueTypeFieldsShouldBePortable|  
-|CheckId|CA1900|  
-|Categoria|Microsoft.Portability|  
-|Alteração Significativa|Quebrando - se o campo pode ser visto de fora do assembly.<br /><br /> Sem quebra - se o campo não está visível fora do assembly.|  
-  
-## <a name="cause"></a>Causa  
- Esta regra verifica que estruturas que são declaradas com layout explícito serão corretamente alinhados quando passa por marshaling para código não gerenciado em sistemas operacionais de 64 bits. IA-64 não permite que os acessos à memória desalinhada e o processo falhará se essa violação não for corrigida.  
-  
-## <a name="rule-description"></a>Descrição da Regra  
- Estruturas com layout explícito contendo campos desalinhados podem causar quedas em sistemas operacionais de 64 bits.  
-  
-## <a name="how-to-fix-violations"></a>Como Corrigir Violações  
- Todos os campos que são menores do que 8 bytes devem ter os deslocamentos são um múltiplo de seu tamanho e os campos que são 8 bytes ou mais devem ter os deslocamentos são um múltiplo de 8. Outra solução é usar `LayoutKind.Sequential` em vez de `LayoutKind.Explicit`, se razoável.  
-  
-## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos  
- Esse aviso deve ser suprimido somente se ele ocorrer no erro.
+Para obter a documentação mais recente sobre o Visual Studio, consulte [CA1900: os campos de tipo de valor devem ser portáteis](https://docs.microsoft.com/visualstudio/code-quality/ca1900-value-type-fields-should-be-portable).
+
+|||
+|-|-|
+|NomeDoTipo|ValueTypeFieldsShouldBePortable|
+|CheckId|CA1900|
+|Categoria|Microsoft. portabilidade|
+|Alteração Significativa|Quebra-se o campo pode ser visto fora do assembly.<br /><br /> Não separável – se o campo não estiver visível fora do assembly.|
+
+## <a name="cause"></a>Causa
+ Essa regra verifica se as estruturas declaradas com layout explícito serão alinhadas corretamente quando marshaled para código não gerenciado em sistemas operacionais de 64 bits. IA-64 não permite acessos de memória não alinhados e o processo falhará se essa violação não for corrigida.
+
+## <a name="rule-description"></a>Descrição da Regra
+ Estruturas com layout explícito que contém campos desalinhados causam falhas em sistemas operacionais de 64 bits.
+
+## <a name="how-to-fix-violations"></a>Como Corrigir Violações
+ Todos os campos menores que 8 bytes devem ter deslocamentos que são múltiplos de seu tamanho e os campos que têm 8 bytes ou mais devem ter deslocamentos que sejam múltiplos de 8. Outra solução é usar `LayoutKind.Sequential` em vez de `LayoutKind.Explicit`, se for razoável.
+
+## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos
+ Esse aviso deve ser suprimido somente se ocorrer um erro.

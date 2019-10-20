@@ -7,17 +7,17 @@ helpviewer_keywords:
 - code snippets [C#]
 - Code Snippet Inserter [C#]
 - C#, code snippets
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7a785623ea36fe25833f24f760c29f49ca40b459
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: e06e825779476489414ff200aba9cd43fce96e2f
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68918663"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647259"
 ---
 # <a name="c-code-snippets"></a>Snippets de código C#
 
@@ -31,7 +31,7 @@ A **Unidade de Inserção de Snippet de Código** exibe o nome do snippet de có
 
 Por padrão, os snippets de código a seguir são incluídos no Visual Studio para C#.
 
-|Nome (ou atalho)|DESCRIÇÃO|Locais válidos para inserir o snippet|
+|Nome (ou atalho)|Descrição|Locais válidos para inserir o snippet|
 | - |-----------------| - |
 |#if|Cria uma diretiva [#if](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-if) e uma diretiva [#endif](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-endif).|Em qualquer lugar.|
 |#region|Cria uma diretiva [#region](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-region) e uma diretiva [#endregion](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-endregion).|Em qualquer lugar.|
@@ -77,4 +77,4 @@ Por padrão, os snippets de código a seguir são incluídos no Visual Studio pa
 - [Funções de snippet de código](../ide/code-snippet-functions.md)
 - [Snippets de código](../ide/code-snippets.md)
 - [Parâmetros de modelo](../ide/template-parameters.md)
-- [Como: Usar snippets de código surround-with](../ide/how-to-use-surround-with-code-snippets.md)
+- [Como usar snippets de código surround-with](../ide/how-to-use-surround-with-code-snippets.md)

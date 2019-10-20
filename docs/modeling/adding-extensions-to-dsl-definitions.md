@@ -2,38 +2,38 @@
 title: Adicionando extensões a definições de DSL
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fa5c02fc28e7ffec4765d94758c838ab149e7ac3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 767973705d004a46644a51ba20ad9292ab80cb39
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62960479"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72654364"
 ---
 # <a name="add-extensions-to-dsl-definitions"></a>Adicionar extensões a definições de DSL
 
-Extensão de definição de DSL permite que você crie um pacote de extensões para uma linguagem específica de domínio (DSL). A extensão DSL, que está contida em um Visual Studio Integration VSIX (extensão), pode ser instalada no computador do usuário da mesma maneira como uma DSL. Os recursos adicionais podem ser habilitados e desabilitados em tempo de execução dinamicamente. DSLs não precisam ser explicitamente criado para a extensão e as extensões podem ser projetadas mais tarde, ou por terceiros, sem alterar a DSL estendida.
+A extensão de definição de DSL permite que você crie um pacote de extensões para uma DSL (linguagem específica de domínio). A extensão de DSL, que está contida em uma extensão de integração do Visual Studio (VSIX), pode ser instalada no computador de um usuário da mesma maneira que uma DSL. Os recursos adicionais podem ser habilitados e desabilitados dinamicamente em tempo de execução. As DSLs não precisam ser explicitamente projetadas para extensão, e as extensões podem ser criadas posteriormente, ou por terceiros, sem alterar a DSL estendida.
 
-Extensões DSL podem incluir os seguintes recursos:
+As extensões de DSL podem incluir os seguintes recursos:
 
-- Propriedades de elementos de modelo e apresentação
+- Propriedades para elementos de modelo e apresentação
 
-- Decoradores de formas e conectores
+- Decoradores para formas e conectores
 
 - Classes, relações, formas e conectores
 
 - Restrições de validação
 
-- Guias e itens de caixa de ferramentas
+- Itens e guias da caixa de ferramentas
 
-Um usuário de uma DSL estendido pode criar e salvar um modelo que contém as instâncias dos recursos adicionais. O modelo pode ser lido por outros usuários que tenham instalado a extensão apropriada. Os usuários que não tem instalado a extensão não é possível usar os recursos adicionais, mas eles podem atualizar e salvar um modelo sem perder os recursos adicionais.
+Um usuário de uma DSL estendida pode criar e salvar um modelo que contém instâncias dos recursos adicionais. O modelo pode ser lido por outros usuários que instalaram a extensão apropriada. Os usuários que não instalaram a extensão não podem usar os recursos adicionais, mas eles podem atualizar e salvar um modelo sem perder os recursos adicionais.
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
 ## <a name="see-also"></a>Consulte também
 
-- [Postagens de blogs relacionadas](https://devblogs.microsoft.com/devops/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/)
+- [Postagens de blog relacionadas](https://devblogs.microsoft.com/devops/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/)

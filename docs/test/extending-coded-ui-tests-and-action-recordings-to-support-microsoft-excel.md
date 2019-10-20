@@ -2,17 +2,17 @@
 title: Estender testes de IU codificados e gravações da ação
 ms.date: 11/04/2016
 ms.topic: conceptual
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: e43706462cadce7f27efc9509ccb2c02677d43b1
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
-ms.translationtype: HT
+author: jillre
+ms.openlocfilehash: 3060014002b2e34443741dc654cf29df53278fe2
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68870080"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72664921"
 ---
 # <a name="extend-coded-ui-tests-and-action-recordings"></a>Estender testes de IU codificados e gravações da ação
 

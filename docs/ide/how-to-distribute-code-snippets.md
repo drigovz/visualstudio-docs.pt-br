@@ -5,25 +5,25 @@ ms.topic: conceptual
 helpviewer_keywords:
 - code snippets, distributing
 ms.assetid: 5f717abd-e167-47ae-818c-6b0bae100ceb
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f0b3211352dc16e51b64196e13f7378bf2a423c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 3b5ae4053e97e823952118abda11f334c5ac1083
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62429530"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72656076"
 ---
-# <a name="how-to-distribute-code-snippets"></a>Como: Distribuir snippets de código
+# <a name="how-to-distribute-code-snippets"></a>Como distribuir snippets de código
 
 Você pode fornecer os snippets de código a seus amigos e solicitar a eles que instalem os snippets em seus próprios computadores usando o **Gerenciador de Snippets de Código**. No entanto, se tiver vários snippets para distribuir ou desejar distribuí-los mais amplamente, você poderá incluir os arquivos de snippet em uma extensão do Visual Studio. Em seguida, os usuários do Visual Studio podem instalar a extensão para obter os snippets.
 
-## <a name="prerequisites"></a>Pré-requisitos
+## <a name="prerequisites"></a>Prerequisites
 
 Instale a carga de trabalho do **desenvolvimento de extensões do Visual Studio** para obter acesso aos modelos do **Projeto do VSIX**.
 
@@ -31,7 +31,7 @@ Instale a carga de trabalho do **desenvolvimento de extensões do Visual Studio*
 
 ## <a name="set-up-the-extension"></a>Configurar a extensão
 
-Neste procedimento, você usará o mesmo snippet de código Olá, Mundo criado no [Passo a passo: Criar um snippet de código](../ide/walkthrough-creating-a-code-snippet.md). Este artigo fornece o snippet XML, portanto, você não precisa voltar e criar um snippet.
+Neste procedimento, você usará o mesmo trecho de código de Olá, Mundo que é criado em [Walkthrough: criar um trecho de código](../ide/walkthrough-creating-a-code-snippet.md). Este artigo fornece o snippet XML, portanto, você não precisa voltar e criar um snippet.
 
 1. Crie um projeto por meio do modelo **Projeto Vazio do VSIX** e dê a ele o nome **TestSnippet**.
 
@@ -115,7 +115,7 @@ Neste procedimento, você usará o mesmo snippet de código Olá, Mundo criado n
 
 4. Teste o snippet. Na instância experimental, abra um projeto do Visual Basic e abra um dos arquivos de código. Coloque o cursor em algum lugar no código, clique com o botão direito do mouse e, no menu de contexto, selecione **Inserir Snippet**.
 
-5. Você deve ver *HelloWorldVB* como uma das pastas. Clique duas vezes nesse item. Você deve ver um pop-up **Inserir snippet: HelloWorldVB >** que tem uma lista suspensa **HelloWorldVB**. Clique na lista suspensa **HelloWorldVB**.
+5. Você deve ver *HelloWorldVB* como uma das pastas. Clique duas vezes nesse item. Você deve ver um pop-up **Inserir snippet: HelloWorldVB &gt;** que tem uma lista suspensa **HelloWorldVB**. Clique na lista suspensa **HelloWorldVB**.
 
    A seguinte linha é adicionada ao arquivo de código:
 

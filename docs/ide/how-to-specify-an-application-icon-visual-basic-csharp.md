@@ -1,26 +1,26 @@
 ---
-title: 'Como: Especificar um ícone do aplicativo (Visual Basic, C#)'
+title: Como especificar um ícone do aplicativo (Visual Basic, C#)
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - icons [Visual Studio], application
 - application properties [Visual Studio], icons
 - application icons [Visual Studio]
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: f2903821c0e0843de43f68d67cc64c344ab95e02
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 1e137eda77f1807b80409872d9fe0c2966df2a41
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62547774"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72656599"
 ---
-# <a name="how-to-specify-an-application-icon-visual-basic-c"></a>Como: Especificar um ícone do aplicativo (Visual Basic, C#)
+# <a name="how-to-specify-an-application-icon-visual-basic-c"></a>Como especificar um ícone do aplicativo (Visual Basic, C#)
 
-A propriedade `Icon` de um projeto especifica o arquivo do ícone (*.ico*) que será exibido para o aplicativo compilado no **Explorador de Arquivos** e na barra de tarefas do Windows.
+A propriedade `Icon` de um projeto especifica o arquivo do ícone ( *.ico*) que será exibido para o aplicativo compilado no **Explorador de Arquivos** e na barra de tarefas do Windows.
 
 A propriedade `Icon` pode ser acessada no painel **Aplicativo** do **Designer de Projeto**, ele contém uma lista de ícones que foram adicionados a um projeto como recursos ou arquivos de conteúdo.
 
@@ -35,9 +35,9 @@ A propriedade `Icon` pode ser acessada no painel **Aplicativo** do **Designer de
 
 1. Quando o **Designer de Projeto** for exibido, escolha a guia **Aplicativo**.
 
-1. **(Visual Basic)** &mdash;Na lista **Ícone**, escolha um arquivo de ícone (*.ico*).
+1. **(Visual Basic)** &mdash;Na lista **Ícone**, escolha um arquivo de ícone ( *.ico*).
 
-    **C#**&mdash; Próximo à lista **Ícone**, escolha o botão **\<Procurar...>** e navegue até o local do ícone de arquivo desejado.
+    **C#** &mdash; Próximo à lista **Ícone**, escolha o botão **\<Procurar...>** e navegue até o local do ícone de arquivo desejado.
 
 ## <a name="see-also"></a>Consulte também
 

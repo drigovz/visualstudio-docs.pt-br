@@ -16,19 +16,19 @@ helpviewer_keywords:
 - referencing components, removing references
 - references [Visual Studio], removing
 - referencing components, assemblies not listed
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 584c807670e5e5ba0bc4fa1b381dca30474212e7
-ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
-ms.translationtype: HT
+ms.openlocfilehash: e302b5c4df73f8fcdadf766a1fe1d8dc0731c261
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68787886"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72654822"
 ---
-# <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Como: Adicionar ou remover referências usando o Gerenciador de Referências
+# <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Como adicionar ou remover referências usando o Gerenciador de Referências
 
 É possível usar a caixa de diálogo Gerenciador de Referências para adicionar e gerenciar referências aos componentes que você, a Microsoft ou outra empresa desenvolveram. Se você estiver desenvolvendo um aplicativo Universal do Windows, o projeto referenciará automaticamente todas as DLLs corretas do SDK do Windows. Se você estiver desenvolvendo um aplicativo .NET, o projeto referenciará *mscorlib.dll* automaticamente. Algumas APIs do .NET são expostas em componentes que precisam ser adicionados manualmente. As referências a componentes COM ou a componentes personalizados devem ser adicionadas manualmente.
 
@@ -72,7 +72,7 @@ A guia **Assemblies** consiste em duas subguias:
 
    Para projetos não direcionados ao .NET Core ou à Plataforma Universal do Windows, a guia **Estrutura** enumera os assemblies da estrutura de destino. O usuário precisa adicionar todas as referências exigidas pelo aplicativo.
 
-   Por padrão, os projetos Universais do Windows contêm referências a todos os assemblies da estrutura de destino. Em projetos gerenciados, um nó somente leitura na pasta **Referências** no **Gerenciador de Soluções** indica a referência a todo a estrutura. Consequentemente, a guia **Framework** não enumera nenhum dos assemblies da estrutura e exibe a seguinte mensagem: "Todos os assemblies do Framework já estão referenciados. Use o Pesquisador de Objetos para explorar as referências no Framework".
+   Por padrão, os projetos Universais do Windows contêm referências a todos os assemblies da estrutura de destino. Em projetos gerenciados, um nó somente leitura na pasta **Referências** no **Gerenciador de Soluções** indica a referência a todo a estrutura. Da mesma forma, a guia **estrutura** não enumera nenhum dos assemblies da estrutura e, em vez disso, exibe a seguinte mensagem: "todos os assemblies de estrutura já estão referenciados. Use o Pesquisador de Objetos para explorar as referências no Framework".
 
 2. **Extensões** lista todos os assemblies que os fornecedores externos de componentes e controles desenvolveram para estender a estrutura de destino. Dependendo da finalidade do aplicativo do usuário, esses assemblies podem ser necessários.
 
@@ -133,7 +133,7 @@ Você deve evitar adicionar referências de arquivo às saídas de outro projeto
 
   A criação da chave do Registro sob o nó `HKEY_LOCAL_MACHINE` permite que todos os usuários vejam os assemblies no local especificado na caixa de diálogo **Adicionar Referência**. A criação da chave do Registro sob o nó `HKEY_CURRENT_USER` afeta somente a configuração do usuário atual.
 
-  Abra a caixa de diálogo **Adicionar Referência** novamente. Os assemblies devem ser exibidos na guia **.NET**. Caso contrário, verifique se os assemblies estão localizados no diretório *AssemblyLocation* especificado, reinicie o Visual Studio e tente novamente.
+  Abra a caixa de diálogo **Adicionar Referência** novamente. Os assemblies devem aparecer na guia **.net** . Se não tiverem, certifique-se de que os assemblies estejam localizados no diretório *AssemblyLocation* especificado, reinicie o Visual Studio e tente novamente.
 
 ## <a name="projects-tab"></a>Guia Projetos
 
@@ -151,7 +151,7 @@ Adicione uma referência a um projeto compartilhado na guia **Projetos Compartil
 ## <a name="universal-windows-tab"></a>Guia Windows Universal
 
 A guia **Windows Universal** lista todos os SDKs específicos às plataformas na qual sistemas operacionais Windows estão em execução.
-Esta guia tem dois subgrupos: **Núcleo** e **Extensões**.
+Esta guia tem dois subgrupos: **núcleo** e **extensões**.
 
 ### <a name="core-subgroup"></a>Subgrupo Núcleo
 

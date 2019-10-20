@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Find command
 - Edit.Find command
 ms.assetid: f0c705dc-2b97-423d-abbf-5584d4827208
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e94f8aa823fc7665144f1d774339d1c41f37edc
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: 813b9ea0c51b4812c1d8bab4f1fb8be624893016
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926247"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72654349"
 ---
 # <a name="find-command"></a>Comando Localizar
 Pesquisa arquivos usando um subconjunto das opções disponíveis na guia **Localizar nos Arquivos** da janela **Localizar e Substituir**.
@@ -77,7 +77,7 @@ Este exemplo realiza uma pesquisa que diferencia maiúsculas de minúsculas para
 >Edit.Find somestring /sel /case
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Janela Comando](../../ide/reference/command-window.md)
 - [Caixa Localizar/Comando](../../ide/find-command-box.md)

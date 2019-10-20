@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - Web performance tests, recorder plug-in
 ms.assetid: 6fe13be1-aeb5-4927-9bff-35950e194da9
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: e49fbb3411aee98fce5899c522b9743b3f2afa33
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: c8c1c2d5dd2b3ec656a774c10f8bb50ca556a39f
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62950248"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653634"
 ---
-# <a name="how-to-create-a-recorder-plug-in"></a>Como: Criar um plug-in do gravador
+# <a name="how-to-create-a-recorder-plug-in"></a>Como criar um plug-in de gravação
 
 O <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin> permite que você modifique um teste de desempenho na Web gravado. A modificação ocorre depois que você escolhe **Parar** na barra de ferramentas do **Gravador de Teste de Desempenho Web**, mas antes de o teste ser salvo e apresentado no Editor de Testes de Desempenho Web.
 
@@ -71,7 +71,7 @@ Os procedimentos a seguir descrevem como criar o código rudimentar para um plug
 
 8. Adicione mais código de acordo com o que você deseja que o plug-in de gravação execute depois da gravação da Web. Por exemplo, você pode adicionar código para manipular a correlação personalizada, conforme mostrado no exemplo abaixo. Também é possível criar um plug-in de gravação para tarefas como converter comentários em transações ou adicionar regras de validação ao teste de desempenho na Web.
 
-9. No menu **Build**, escolha **Compilar \<nome do projeto de biblioteca de classes>**.
+9. No menu **Build**, escolha **Compilar \<nome do projeto de biblioteca de classes>** .
 
 Em seguida, implante o plug-in de gravador para que ele seja registrado com o Visual Studio.
 
@@ -99,9 +99,9 @@ Depois de compilar o plug-in de gravação, coloque a DLL resultante em um dos d
     > [!WARNING]
     > Você talvez receba um erro semelhante ao seguinte quando executar um teste de desempenho na Web ou um teste de carga usando seu plug-in:
     >
-    > **Falha na solicitação: Exceção no evento \<plug-in>: Não foi possível carregar o arquivo ou o assembly '\<Arquivo "Nome do plug-in".dll>, Version=\<n.n.n.n>, Culture=neutral, PublicKeyToken=null' ou uma de suas dependências. O sistema não pode localizar o arquivo especificado.**
+    > **Falha na solicitação: exceção no evento de > \<plug: não foi possível carregar o arquivo ou o assembly ' \< "nome do plug-in". dll arquivo >, versão = \<n. n. n >, Culture = neutral, PublicKeyToken = null ' ou uma de suas dependências. O sistema não pode localizar o arquivo especificado.**
     >
-    > Isso acontecerá se você fizer alterações no código de qualquer um de seus plug-ins e criar uma nova versão de DLL **(versão=0.0.0.0)**, mas o plug-in ainda estiver referenciando a versão original do plug-in. Para corrigir esse problema, siga estas etapas:
+    > Isso acontecerá se você fizer alterações no código de qualquer um de seus plug-ins e criar uma nova versão de DLL **(versão=0.0.0.0)** , mas o plug-in ainda estiver referenciando a versão original do plug-in. Para corrigir esse problema, siga estas etapas:
     >
     > 1. Em seu projeto de teste de carga e desempenho na Web, você verá um aviso em referências. Remova e adicione novamente a referência à DLL do plug-in.
     > 2. Remova o plug-in do teste ou do local apropriado e adicione-o de volta.

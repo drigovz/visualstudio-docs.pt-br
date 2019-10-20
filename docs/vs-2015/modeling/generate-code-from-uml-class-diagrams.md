@@ -13,15 +13,15 @@ helpviewer_keywords:
 - UML diagrams, generating code
 ms.assetid: 2790e64d-7728-4c2e-a4dd-4131e795f730
 caps.latest.revision: 53
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 23cefa3d072c2e582237152bff77a2271046053d
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 75120b2f09c2eba3254a1b94e78875d8130c5225
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68871822"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666126"
 ---
 # <a name="generate-code-from-uml-class-diagrams"></a>Gerar código por meio de diagramas de classes UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ Para gerar o C# código do Visual .net de diagramas de classe UML no Visual Stud
 
 1. Crie um modelo UML que contenha classes. Você talvez queira aplicar estereótipos aos elementos de modelo.
 
-    Para obter mais informações, consulte transformações de [geração de código padrão](#default).
+    Para obter mais informações, consulte [transformações de geração de código padrão](#default).
 
 2. Em um diagrama de classe ou no **Gerenciador de modelos UML**, selecione os elementos dos quais você deseja gerar o código. É possível selecionar um dos seguintes:
 
@@ -88,27 +88,27 @@ Para gerar o C# código do Visual .net de diagramas de classe UML no Visual Stud
 
 |**Para criar esse C# tipo**|**Desenhar este tipo de UML**|**Aplicar este estereótipo**|
 |---------------------------------|----------------------------|-------------------------------|
-|Classe|Classe|\<nenhum > ou<br /><br /> Classe do C#|
-|Interface|Interface|\<nenhum > ou<br /><br /> Interface do C#|
-|Enumeração|Enumeração|\<nenhum > ou<br /><br /> Enum do C#|
-|delegado|Classe|Representante do C#|
-|Estrutura|Classe|Struct do C#|
+|Class|Class|\<none > ou<br /><br /> Classe do C#|
+|Interface|Interface|\<none > ou<br /><br /> Interface do C#|
+|Enumeração|Enumeração|\<none > ou<br /><br /> Enum do C#|
+|delegado|Class|Representante do C#|
+|Estrutura|Class|Struct do C#|
 
 #### <a name="to-set-a-stereotype-on-a-type-or-other-element"></a>Para definir um estereótipo em um tipo ou outro elemento
 
 1. Abra o menu de atalho do elemento em um diagrama ou no **Gerenciador de modelos UML**e escolha **Propriedades**.
 
-2. Na janela **Propriedades** , escolha a seta suspensa na propriedade estereótipos e marque a caixa de seleção para o estereótipo que você deseja aplicar.
+2. Na janela **Propriedades** , escolha a seta suspensa na propriedade **estereótipos** e marque a caixa de seleção para o estereótipo que você deseja aplicar.
 
    > [!TIP]
    > Se os estereótipos do C# não forem exibidos, habilite o Perfil do C# para o modelo ou para um pacote que contém os elementos de modelo nos quais você tem interesse. Selecione o pacote ou a raiz do modelo no **Gerenciador de modelos UML**. Em seguida, na janela **Propriedades** , escolha **perfil**e habilite o C# perfil.
 
-3. Expanda a propriedade estereótipos para ver as propriedades adicionais que podem ser definidas.
+3. Expanda a propriedade **estereótipos** para ver as propriedades adicionais que podem ser definidas.
 
-   As propriedades de **Descrição** de tipos, atributos, operações e associações são gravadas `<summary>` em comentários no código gerado. Os elementos de comentário vinculados a tipos são gravados em comentários `<remarks>`.
+   As propriedades de **Descrição** de tipos, atributos, operações e associações são gravadas em `<summary>` comentários no código gerado. Os elementos de comentário vinculados a tipos são gravados em comentários `<remarks>`.
 
 ## <a name="varying-the-generated-code"></a>Variando o código gerado
- O código gerado varia de acordo com as propriedades de cada tipo, atributo ou operação. Por exemplo, se você definir a propriedade **abstract** de uma classe como true, a `abstract` palavra-chave será exibida na classe gerada. Se você definir a **multiplicidade** de um atributo como **0..\*** , a propriedade gerada terá um `IEnumerable<>` tipo.
+ O código gerado varia de acordo com as propriedades de cada tipo, atributo ou operação. Por exemplo, se você definir a propriedade **abstract** de uma classe como true, a palavra-chave `abstract` aparecerá na classe gerada. Se você definir a **multiplicidade** de um atributo como **0.. \*** , a propriedade gerada terá um tipo de `IEnumerable<>`.
 
  Além disso, cada estereótipo oferece várias propriedades adicionais que é possível definir. Esses valores são convertidos em palavras-chave no código do C#. Por exemplo, se você definir a propriedade `Is Static` em uma classe, a classe do C# será `static`.
 
@@ -166,11 +166,11 @@ Para gerar o C# código do Visual .net de diagramas de classe UML no Visual Stud
 
    |    **Property**    |                                                                                                                                                                                                                                                                                                                    **Descrição**                                                                                                                                                                                                                                                                                                                    |
    |--------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-   |        Nome        |                                                                                                                                                                                                                                                  Um nome da associação. Para substituir uma associação herdada de um pacote ou de um modelo de conteúdo, use o mesmo nome da associação que você deseja substituir.                                                                                                                                                                                                                                                  |
+   |        Name        |                                                                                                                                                                                                                                                  Um nome da associação. Para substituir uma associação herdada de um pacote ou de um modelo de conteúdo, use o mesmo nome da associação que você deseja substituir.                                                                                                                                                                                                                                                  |
    |     Substituir      |                                                                                                                                                                                                                                                                                                      Se for verdadeiro, todo o código existente será substituído.                                                                                                                                                                                                                                                                                                       |
-   |    Nome de Destino     | O nome do arquivo gerado.<br /><br /> Você pode inserir expressões nessa cadeia de caracteres, `{Name}` como `{Owner.Name}`ou. Por exemplo, você poderia escrever: `{Owner.Name}_{Name}`. A expressão é avaliada no elemento de modelo. Ela pode usar propriedades de elementos, mas não métodos. Para localizar quais propriedades podem ser usadas, examine as propriedades de tipos em **Microsoft. VisualStudio.\*UML.** . \*\*Importante:\* \* ou`{Owner.Name}`pode ser usado somente na propriedade **nome de destino.** `{Name}` Para alterar o nome da classe gerado, você precisa modificar o modelo. Para obter mais informações, consulte [escrevendo um modelo de texto](#writing). |
+   |    Nome de Destino     | O nome do arquivo gerado.<br /><br /> Você pode inserir expressões nessa cadeia de caracteres, como `{Name}` ou `{Owner.Name}`. Por exemplo, você pode escrever: `{Owner.Name}_{Name}`. A expressão é avaliada no elemento de modelo. Ela pode usar propriedades de elementos, mas não métodos. Para localizar quais propriedades podem ser usadas, examine as propriedades de tipos em **Microsoft. VisualStudio. Uml. \*** . \* \*Important: \* \* `{Name}` ou `{Owner.Name}` só podem ser usados na propriedade **nome de destino** . Para alterar o nome da classe gerado, você precisa modificar o modelo. Para obter mais informações, consulte [escrevendo um modelo de texto](#writing). |
    |    Caminho do Projeto    |                                                                      Especifica o caminho para o projeto do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] que conterá os arquivos de saída da transformação. Use valores digitados para criar um novo projeto. Escolha o botão de reticências ( **[...]** ) para selecionar um projeto existente.<br /><br /> Se não existir, um novo projeto será criado. Ele será um projeto de biblioteca de classes do C#.<br /><br /> Para isso, você deve digitar o projeto diretamente. É possível incluir macros da variável de ambiente como %ProgramFiles% ou %LocalAppData%.                                                                       |
-   |  Diretório de Destino  |                                                                                          A pasta na qual o arquivo de destino é gerado. O caminho se refere à pasta do projeto.<br /><br /> É possível usar a expressão `{PackageStructure}` para inserir um caminho correspondente aos nomes dos pacotes de contenção. O valor padrão é `\GeneratedCode\{PackageStructure}`. Também é possível incluir variáveis de ambiente como %TEMP% ou %HomePath%. **Importante:** `{PackageStructure}` pode ser usado somente na propriedade **diretório de destino** .                                                                                          |
+   |  Diretório de Destino  |                                                                                          A pasta na qual o arquivo de destino é gerado. O caminho se refere à pasta do projeto.<br /><br /> É possível usar a expressão `{PackageStructure}` para inserir um caminho correspondente aos nomes dos pacotes de contenção. O valor padrão é `\GeneratedCode\{PackageStructure}`. Também é possível incluir variáveis de ambiente como %TEMP% ou %HomePath%. **Importante:** `{PackageStructure}` pode ser usada somente na Propriedade do **diretório de destino** .                                                                                          |
    | Caminho do Arquivo de Modelo |                                                                                                                                                           O modelo que realizará a transformação.<br /><br /> É possível usar os modelos fornecidos ou criar os próprios. É possível encontrar os modelos fornecidos no seguinte local:<br /><br /> …\Program Files\Microsoft Visual Studio 12.0\Common7\IDE\Extensions\Microsoft\Architecture Tools\Extensibility\Templates\Text\                                                                                                                                                           |
 
 5. É possível anexar quantas associações a um elemento você quiser.
@@ -196,7 +196,7 @@ Para gerar o C# código do Visual .net de diagramas de classe UML no Visual Stud
 
   No modelo, `this` pertence a uma classe temporária com as seguintes propriedades:
 
-- `Element`= o [IELEMENTO](/previous-versions/dd516035(v=vs.140)) UML ao qual o modelo está sendo aplicado.
+- `Element` = o [IELEMENTO](/previous-versions/dd516035(v=vs.140)) UML ao qual o modelo está sendo aplicado.
 
 - `Errors`: <xref:System.CodeDom.Compiler.CompilerErrorCollection>
 
@@ -235,4 +235,4 @@ Para gerar o C# código do Visual .net de diagramas de classe UML no Visual Stud
 - `<#= Expressions #>` são avaliados e convertidos em cadeias de caracteres.
 
 ## <a name="see-also"></a>Consulte também
- [Diagramas de classe UML: Diagramas de classe UML de referência](../modeling/uml-class-diagrams-reference.md): [ Diretrizes](../modeling/uml-class-diagrams-guidelines.md) [geram arquivos de um modelo UML](../modeling/generate-files-from-a-uml-model.md)
+ [Diagramas de classe UML: referenciar](../modeling/uml-class-diagrams-reference.md) [diagramas de classe UML: diretrizes](../modeling/uml-class-diagrams-guidelines.md) [geram arquivos de um modelo UML](../modeling/generate-files-from-a-uml-model.md)

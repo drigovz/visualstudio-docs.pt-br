@@ -4,19 +4,19 @@ ms.date: 10/05/2015
 ms.topic: conceptual
 f1_keywords:
 - vs.UnitTest.CreateIntelliTest
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: 1d3a86d9ef5823b5935ad99facd6a82bf3af9789
-ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
+author: jillre
+ms.openlocfilehash: cd808e23fbb94259df0805125e7d6f3e27dbaeac
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72018932"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72664896"
 ---
-# <a name="how-to-generate-unit-tests-by-using-intellitest"></a>Como: gerar testes de unidade usando o IntelliTest
+# <a name="how-to-generate-unit-tests-by-using-intellitest"></a>Como gerar testes de unidade usando IntelliTest
 
 O IntelliTest explora seu código .NET para gerar dados de teste e um pacote de testes de unidade. Para cada instrução no código, é gerada uma entrada de teste para executar essa instrução. Uma análise de caso é realizada para cada branch condicional do código. Por exemplo, instruções `if`, declarações e todas as operações que podem gerar exceções são analisadas. Essa análise é usada para gerar dados de teste para um teste de unidade parametrizado de todos os métodos, criando testes de unidade com alta cobertura de código.
 
@@ -34,7 +34,7 @@ Os comandos de menu **Criar IntelliTest** e **Executar IntelliTest**:
 
 * Não dão suporte à configuração x64.
 
-## <a name="explore-use-intellitest-to-explore-your-code-and-generate-unit-tests"></a>Explorar: Use o IntelliTest para explorar o código e gerar testes de unidade
+## <a name="explore-use-intellitest-to-explore-your-code-and-generate-unit-tests"></a>Explorar: use o IntelliTest para explorar seu código e gerar testes de unidade
 
 Para gerar testes de unidade, seus tipos devem ser públicos.
 
@@ -54,7 +54,7 @@ Para gerar testes de unidade para todos os métodos públicos em uma classe, sim
 
 Para testes que forem aprovados, verifique se os resultados relatados na coluna de resultados correspondem às suas expectativas com relação ao código. Para testes que falharem, corrija o código conforme necessário. Depois, execute novamente o IntelliTest para validar as correções.
 
-## <a name="persist-save-the-unit-tests-as-a-regression-suite"></a>Persistir: Salve os testes de unidade como um pacote de regressão
+## <a name="persist-save-the-unit-tests-as-a-regression-suite"></a>Persistir: salve os testes de unidade como um pacote de regressão
 
 1. Selecione as linhas de dados que deseja salvar com o teste de unidade parametrizado em um projeto de teste.
 
@@ -68,7 +68,7 @@ Para testes que forem aprovados, verifique se os resultados relatados na coluna 
 
      Se o código do método for alterado, execute novamente o IntelliTest para manter os testes de unidade em sincronia com as alterações.
 
-## <a name="assist-use-intellitest-to-focus-code-exploration"></a>Ajudar: Use o IntelliTest para ter como foco a exploração de código
+## <a name="assist-use-intellitest-to-focus-code-exploration"></a>Assistência: use o IntelliTest para focar a exploração de código
 
 1. Se você tiver um código mais complexo, o IntelliTest lhe auxilia a ficar a exploração do código. Por exemplo, se você tiver um método que tem uma interface como parâmetro e houver mais de uma classe que implementa essa interface, o IntelliTest detectará essas classes e gerará um aviso.
 
@@ -88,7 +88,7 @@ Para testes que forem aprovados, verifique se os resultados relatados na coluna 
 
      ![Executar novamente o IntelliTest para gerar os dados de teste](../test/media/pexwarningsfixed.png)
 
-## <a name="specify-use-intellitest-to-validate-correctness-properties-that-you-specify-in-code"></a>Especificar: Use o IntelliTest para validar as propriedades de correção especificadas no código
+## <a name="specify-use-intellitest-to-validate-correctness-properties-that-you-specify-in-code"></a>Especificar: use o IntelliTest para validar as propriedades de correção especificadas no código
 
 Especifique a relação geral entre as entradas e saídas que você deseja que os testes de unidade gerados validem. Essa especificação é encapsulada em um método que se parece com um método de teste, mas é quantificada universalmente. Esse é o método de teste de unidade parametrizado e qualquer asserção que você fizer deve conter todos os valores de entrada possíveis que o IntelliTest pode gerar.
 
@@ -98,9 +98,9 @@ Especifique a relação geral entre as entradas e saídas que você deseja que o
 
 **R:** Não, o IntelliTest funciona somente com código gerenciado.
 
-### <a name="q-when-does-a-generated-test-pass-or-fail"></a>P: Quando um teste gerado é ou não aprovado?
+### <a name="q-when-does-a-generated-test-pass-or-fail"></a>P: Quando um teste gerado é aprovado ou falha?
 
-**R:** Ele é aprovado como qualquer outro teste de unidade se não ocorre nenhuma exceção. Ele falhará se qualquer asserção falhar ou se o código que está sendo testado gerar uma exceção sem tratamento.
+**A:** Ele é aprovado como qualquer outro teste de unidade se não ocorrer nenhuma exceção. Ele falhará se qualquer asserção falhar ou se o código que está sendo testado gerar uma exceção sem tratamento.
 
 Se tiver um teste que pode ser aprovado se determinadas exceções forem geradas, você pode definir um dos atributos a seguir com base em suas necessidades, no nível do método de teste, da classe de teste ou do assembly:
 
@@ -114,23 +114,23 @@ Se tiver um teste que pode ser aprovado se determinadas exceções forem geradas
 
 ### <a name="q-can-i-add-assumptions-to-the-parameterized-unit-test"></a>P: Posso adicionar pressuposições ao teste de unidade parametrizado?
 
-**R:** Sim, use pressuposições para especificar quais dados de teste não são necessários para o teste de unidade de um método específico. Use a classe <xref:Microsoft.Pex.Framework.PexAssume> para adicionar suposições. Por exemplo, você pode adicionar uma pressuposição de que a variável `lengths` não é nula, como a seguir:
+**R:** Sim, use pressuposições para especificar quais dados de teste não são necessários para o teste de unidade para um método específico. Use a classe <xref:Microsoft.Pex.Framework.PexAssume> para adicionar suposições. Por exemplo, você pode adicionar uma pressuposição de que a variável `lengths` não é nula, como a seguir:
 
 `PexAssume.IsNotNull(lengths);`
 
 Se você adicionar uma pressuposição e executar novamente o IntelliTest, os dados de teste que não forem mais relevantes serão removidos.
 
-### <a name="q-can-i-add-assertions-to-the-parameterized-unit-test"></a>P: Posso adicionar declarações ao teste de unidade parametrizado?
+### <a name="q-can-i-add-assertions-to-the-parameterized-unit-test"></a>P: Posso adicionar asserções ao teste de unidade parametrizado?
 
-**R:** Sim, o IntelliTest verificará se o que você está declarando na instrução está, de fato, correto ao executar os testes de unidade. Use a classe <xref:Microsoft.Pex.Framework.PexAssert> ou a API de asserção que vem com a estrutura de teste para adicionar asserções. Por exemplo, é possível adicionar uma asserção de que duas variáveis são iguais.
+**R:** Sim, o IntelliTest verificará se o que você está declarando na instrução de fato está correto ao executar os testes de unidade. Use a classe <xref:Microsoft.Pex.Framework.PexAssert> ou a API de asserção que vem com a estrutura de teste para adicionar asserções. Por exemplo, é possível adicionar uma asserção de que duas variáveis são iguais.
 
 `PexAssert.AreEqual(a, b);`
 
 Se você adicionar uma declaração e executar novamente o IntelliTest, ele verificará se a declaração é válida e o teste falhará se não for.
 
-### <a name="NoRun"></a> P: Posso gerar testes de unidade parametrizados sem executar o IntelliTest primeiro?
+### <a name="NoRun"></a> P: Posso gerar testes de unidade parametrizados sem executar IntelliTest primeiro?
 
-**R:** Sim, clique com o botão direito do mouse na classe ou no método e, em seguida, escolha **Criar IntelliTest**.
+**R:** Sim, clique com o botão direito do mouse na classe ou no método e escolha **Criar IntelliTest**.
 
 ![Clicar com o botão direito do mouse no editor, escolher Criar IntelliTest](../test/media/pexcreateintellitest.png)
 
@@ -152,4 +152,4 @@ Em seguida, execute novamente o IntelliTest para gerar testes de unidade individ
 
 ### <a name="q-can-i-learn-more-about-how-the-tests-are-generated"></a>P: Posso saber mais sobre como os testes são gerados?
 
-**R:** Sim, para obter uma visão geral de alto nível, leia esta [postagem no blog](https://devblogs.microsoft.com/devops/intellitest-one-test-to-rule-them-all/).
+**R:** Sim, para obter uma visão geral, leia esta [postagem de blog](https://devblogs.microsoft.com/devops/intellitest-one-test-to-rule-them-all/).
