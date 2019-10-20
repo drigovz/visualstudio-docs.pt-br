@@ -5,17 +5,17 @@ ms.date: 09/11/2017
 ms.topic: conceptual
 helpviewer_keywords:
 - Live Unit Testing
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 87242c99fe2692b799ff6a5d965249ad5d944cf9
-ms.sourcegitcommit: 1a3c2ca995fd44fc72741b3a100c6e57f4f8702c
+ms.openlocfilehash: a3bcc86f8d423422eafeb3101bf8512e7341d3b7
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "72262308"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653023"
 ---
 # <a name="live-unit-testing-overview"></a>Visão geral de Live Unit Testing
 
@@ -23,14 +23,14 @@ Live Unit Testing executa seus testes de unidade automaticamente e em tempo real
 
 Live Unit Testing indica se seus testes de unidade abrangem adequadamente seu código. Ele descreve graficamente a cobertura de código em tempo real. Você pode ver rapidamente quantos testes abrangem cada linha de código e quais linhas não são cobertas por nenhum teste de unidade.
 
-Se você tiver uma solução que inclui um ou mais projetos de teste de unidade, poderá habilitar Live Unit Testing selecionando **testar** > **Live Unit Testing** > **Iniciar** na barra de menus de nível superior no Visual Studio.
+Se você tiver uma solução que inclui um ou mais projetos de teste de unidade, poderá habilitar Live Unit Testing selecionando  >  de **teste** **Live Unit Testing**  > **Iniciar** na barra de menus de nível superior no Visual Studio.
 
 > [!NOTE]
 > Live Unit Testing só está disponível na edição Visual Studio Enterprise.
 
 Para saber mais sobre o Live Unit Testing:
 
-- Experimente um tutorial introdutório: [Introdução ao Live Unit Testing](live-unit-testing-start.md).
+- Experimente um tutorial introdutório: [introdução ao Live Unit Testing](live-unit-testing-start.md).
 
 - Leia a documentação detalhada: [Use Live Unit Testing com Visual Studio Enterprise Edition](live-unit-testing.md).
 

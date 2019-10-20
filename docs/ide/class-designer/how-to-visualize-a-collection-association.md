@@ -1,5 +1,5 @@
 ---
-title: 'Como: Visualizar uma associação de coleção (Designer de Classe)'
+title: Como visualizar uma associação de coleção (Designer de Classe)
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,19 +10,19 @@ helpviewer_keywords:
 - collections, collection associations
 - Class Designer [Visual Studio], collection associations
 ms.assetid: 54e39838-2fc9-4dc2-85b6-7e88a743108e
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 09c23b59711a95f0729555acfd0203160bd9995d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: e074eee5972bcf952108a36f52c0915057c470a3
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975067"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72631319"
 ---
-# <a name="how-to-visualize-a-collection-association-in-class-designer"></a>Como: Visualizar uma associação de coleção no Designer de Classe
+# <a name="how-to-visualize-a-collection-association-in-class-designer"></a>Como visualizar uma associação de coleção no Designer de Classe
 
 Propriedades e campos que são coleções de outros tipos podem ser exibidos no diagrama de classe como uma associação de coleção. Diferentemente de uma associação regular, que exibe um campo ou uma propriedade como uma linha que vincula a classe proprietária ao tipo do campo, uma associação de coleção é exibida como uma linha que vincula a classe proprietária ao tipo coletado.
 
@@ -38,5 +38,5 @@ A propriedade ou o campo é mostrado como uma linha de associação vinculando a
 
 ## <a name="see-also"></a>Consulte também
 
-- [Como: Criar associações entre tipos](how-to-create-associations-between-types.md)
+- [Como criar associações entre tipos](how-to-create-associations-between-types.md)
 - [Projetando classes e tipos](designing-and-viewing-classes-and-types.md)

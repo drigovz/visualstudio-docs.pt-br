@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - policy errors, code analysis
 ms.assetid: d1f221cd-68c0-4277-9397-b76ad0dbae77
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 661f029b617c430f7205552080a94affc5bd543b
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: d3c1f6761c6cef968c965a7f0d766d3b7da6183e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72445881"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72622614"
 ---
 # <a name="code-analysis-policy-errors"></a>Erros da política de análise do código
 
@@ -47,11 +47,11 @@ A política de análise de código requer que todos os arquivos que estão sendo
 
 **A versão de ' {0} ' não está correta. O nome forte especificado na política é ' {1} '.**
 
-Este erro se aplica a projetos .NET. Uma Rule. dll exigida pela política de análise de código existe no computador local, mas a versão/chave pública não corresponde. Para corrigir esse erro, o criador da política deve atualizar o. DLLs no diretório *C:\Program Files\Microsoft Visual Studio 8 \ Team Tools\Static Analysis Tools\FxCop\Rules @ no__t-1* em seu computador.
+Este erro se aplica a projetos .NET. Uma Rule. dll exigida pela política de análise de código existe no computador local, mas a versão/chave pública não corresponde. Para corrigir esse erro, o criador da política deve atualizar o. DLLs em *C:\Program Files\Microsoft Visual Studio 8 \ Team Tools\Static Analysis Tools\FxCop\Rules \\* Directory em seu computador.
 
 **o assembly ' {0} ' especificado na política não existe.**
 
-Este erro se aplica a projetos .NET. Uma regra exigida pela política de análise de código não tem a dll correspondente instalada no computador cliente. Para corrigir esse erro, o criador de política deve atualizar a dll em *C:\Program Files\Microsoft Visual Studio 8 \ Team Tools\Static Analysis Tools\FxCop\Rules @ no__t-1* Directory em seu computador.
+Este erro se aplica a projetos .NET. Uma regra exigida pela política de análise de código não tem a dll correspondente instalada no computador cliente. Para corrigir esse erro, o criador de política deve atualizar a dll em *C:\Program Files\Microsoft Visual Studio 8 \ Team Tools\Static Analysis Tools\FxCop\Rules \\* Directory em seu computador.
 
 **As configurações de regra do Project {0} não estão em conformidade com a política de análise de código.**
 
@@ -67,7 +67,7 @@ Esse erro se aplica a aplicativos [!INCLUDE[vcprvc](../code-quality/includes/vcp
 
 **Você deve habilitar a análise de código nas propriedades do projeto {0} e compilar antes de fazer check-in.**
 
-Esse erro é aplicado a projetos [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] e projetos Web. A política requer que a análise de código gerenciado seja executada, mas não está habilitada no projeto atual no cliente.
+Esse erro é aplicado a projetos de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] e projetos Web. A política requer que a análise de código gerenciado seja executada, mas não está habilitada no projeto atual no cliente.
 
 **Você deve habilitar a análiseC++ de C/Code nas propriedades do projeto {0} e compilar antes de fazer check-in.**
 

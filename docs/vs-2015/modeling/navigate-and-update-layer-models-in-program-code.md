@@ -9,22 +9,22 @@ helpviewer_keywords:
 - layer models, updating in program code
 ms.assetid: c60edc87-33ee-4964-a954-40069f9febf3
 caps.latest.revision: 22
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: eb0c600830c114ca24f9cdc0619fd84c6e18d232
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 88ab52f1b06e6a2da94d17225bdb26ecec358a6c
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68871820"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72668565"
 ---
 # <a name="navigate-and-update-layer-models-in-program-code"></a>Navegar e atualizar modelos de camada no código do programa
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Este tópico descreve os elementos e as relações em modelos de camada, que você pode navegar e atualizar usando o código do programa. Para obter mais informações sobre diagramas de camada do ponto de vista do usuário [, consulte Diagramas de camada: Diagramas [de referência](../modeling/layer-diagrams-reference.md) e de camada: Diretrizes](../modeling/layer-diagrams-guidelines.md).
+Este tópico descreve os elementos e as relações em modelos de camada, que você pode navegar e atualizar usando o código do programa. Para obter mais informações sobre diagramas de camada do ponto de vista do usuário, consulte [diagramas de camada: referência](../modeling/layer-diagrams-reference.md) e [diagramas de camada: diretrizes](../modeling/layer-diagrams-guidelines.md).
 
- O modelo `Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer` descrito neste tópico é uma fachada em um modelo <xref:Microsoft.VisualStudio.GraphModel> mais geral. Se você estiver escrevendo um [comando de menu ou uma extensão](../modeling/add-commands-and-gestures-to-layer-diagrams.md)de gesto `Layer` , use o modelo. Se você estiver escrevendo uma [extensão de validação de camada](../modeling/add-custom-architecture-validation-to-layer-diagrams.md), será mais fácil usar `GraphModel`o.
+ O modelo `Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer` descrito neste tópico é uma fachada em um modelo <xref:Microsoft.VisualStudio.GraphModel> mais geral. Se você estiver escrevendo um [comando de menu ou uma extensão de gesto](../modeling/add-commands-and-gestures-to-layer-diagrams.md), use o modelo de `Layer`. Se você estiver escrevendo uma [extensão de validação de camada](../modeling/add-custom-architecture-validation-to-layer-diagrams.md), será mais fácil usar a `GraphModel`.
 
 ## <a name="transactions"></a>Transações
  Ao atualizar um modelo, considere incluir as alterações em uma `ILinkedUndoTransaction`. Esse procedimento agrupará as alterações em uma transação. Se qualquer uma das alterações falhar, toda a transação será revertida. Se o usuário desfizer uma alteração, todas as alterações serão desfeitas em conjunto.
@@ -83,7 +83,7 @@ IEnumerable<ILayerComment> comments =
 ## <a name="layer-elements"></a>Elementos de camada
  Todos os tipos de elementos que podem estar contidos em um modelo são elementos de camada:
 
- O ![conteúdo do diagrama de camadas é ILayerElements.](../modeling/media/layerapi-layerelements.png "LayerApi_LayerElements")
+ ![O conteúdo do diagrama de camadas é ILayerElements.](../modeling/media/layerapi-layerelements.png "LayerApi_LayerElements")
 
 ## <a name="properties"></a>Propriedades
  Cada `ILayerElement` tem um dicionário de cadeia chamado `Properties`. Você pode usar este dicionário para anexar informações arbitrárias a qualquer elemento da camada.
@@ -97,12 +97,12 @@ IEnumerable<ILayerComment> comments =
 
  [ILayerArtifactReference](/previous-versions/ff644536(v=vs.140)). A propriedade Categorias indica que tipo de artefato é referenciado, tal como uma classe, arquivo executável ou assembly. As categorias determinam como o Identificador identifica o artefato de destino.
 
- [ArtifactReferenceExtensions. CreateArtifactReferenceAsync](/previous-versions/ff695840(v=vs.140)) cria uma referência de artefato de <xref:EnvDTE.Project> um <xref:EnvDTE.ProjectItem>ou. Esta é uma operação assíncrona. Portanto, você geralmente fornece um retorno de chamada realizado quando a criação é concluída.
+ [ArtifactReferenceExtensions. CreateArtifactReferenceAsync](/previous-versions/ff695840(v=vs.140)) cria uma referência de artefato de um <xref:EnvDTE.Project> ou <xref:EnvDTE.ProjectItem>. Esta é uma operação assíncrona. Portanto, você geralmente fornece um retorno de chamada realizado quando a criação é concluída.
 
  As referências de artefato de camada não devem ser confundidas com artefatos em diagramas de casos de uso.
 
 ## <a name="shapes-and-diagrams"></a>Formas e diagramas
- Dois objetos são usados para representar cada elemento em um modelo de camada: `ILayerElement`um e um [IShape](/previous-versions/ee806673(v=vs.140)). O `IShape` representa a posição e o tamanho da forma no diagrama. Nos modelos de camadas, cada `ILayerElement` tem um `IShape` e cada `IShape` em um diagrama de camada tem um `ILayerElement`. `IShape` também é usado para modelos UML. Portanto, nem todo `IShape` tem um elemento de camada.
+ Dois objetos são usados para representar cada elemento em um modelo de camada: um `ILayerElement` e um [IShape](/previous-versions/ee806673(v=vs.140)). O `IShape` representa a posição e o tamanho da forma no diagrama. Nos modelos de camadas, cada `ILayerElement` tem um `IShape` e cada `IShape` em um diagrama de camada tem um `ILayerElement`. `IShape` também é usado para modelos UML. Portanto, nem todo `IShape` tem um elemento de camada.
 
  Da mesma maneira, o `ILayerModel` é exibido em um [IDiagram](/previous-versions/ee789658(v=vs.140)).
 

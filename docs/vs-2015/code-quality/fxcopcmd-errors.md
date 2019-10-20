@@ -6,33 +6,33 @@ ms.technology: vs-ide-code-analysis
 ms.topic: reference
 helpviewer_keywords:
 - FxCopCmd errors
-ms.author: gewarren
-author: gewarren
+ms.author: jillfra
+author: jillre
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d723065e224058b7e269299aad2900f97a1425d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 85441e90bfecc89688ce0ba6ec0ae10082562f0e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62936641"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72667593"
 ---
-# <a name="fxcopcmd-tool-errors"></a>Erros de ferramenta de FxCopCmd
+# <a name="fxcopcmd-tool-errors"></a>Erros da ferramenta FxCopCmd
 
-FxCopCmd não considera todos os erros fatais. Se o FxCopCmd tem informações suficientes para executar uma análise parcial, ele executa as análise e relatórios de erros que ocorreram. O código de erro, que é um inteiro de 32 bits, contém uma combinação bit a bit de valores numéricos que correspondem aos erros.
+FxCopCmd não considera que todos os erros sejam fatais. Se FxCopCmd tiver informações suficientes para executar uma análise parcial, ele executará os erros de análise e relatórios que ocorreram. O código de erro, que é um número inteiro de 32 bits, contém uma combinação bit a bit de valores numéricos que correspondem a erros.
 
-A tabela a seguir descreve os códigos de erro retornados pelo FxCopCmd:
+A tabela a seguir descreve os códigos de erro retornados por FxCopCmd:
 
 |Erro|Valor numérico|
 |-----------|-------------------|
 |Nenhum erro|0x0|
 |Erro de análise|0x1|
 |Exceções de regra|0x2|
-|Erro ao carregar projeto|0x4|
-|Erro de carregamento de assembly|0x8|
-|Erro ao carregar biblioteca regra|0x10|
-|Erro de importação de carga de relatório|0x20|
+|Erro de carregamento do projeto|0x4|
+|Erro de carregamento do assembly|0x8|
+|Erro de carregamento da biblioteca de regras|0x10|
+|Erro ao carregar o relatório de importação|0x20|
 |Erro de saída|0x40|
 |Erro de opção de linha de comando|0x80|
 |Erro de inicialização|0x100|
@@ -40,18 +40,18 @@ A tabela a seguir descreve os códigos de erro retornados pelo FxCopCmd:
 |BuildBreakingMessage|0x400|
 |Erro desconhecido|0x1000000|
 
-**Erro de análise** é retornado para erros fatais. Ele indica que a análise não pôde ser concluída. Quando aplicável, o código de erro também contém a causa do erro fatal. As condições a seguir geram erros fatais:
+O **erro de análise** é retornado para erros fatais. Isso indica que a análise não pôde ser concluída. Quando aplicável, o código de erro também contém a causa subjacente do erro fatal. As seguintes condições geram erros fatais:
 
-- A análise não pôde ser executada devido a entrada insuficiente.
+- Não foi possível executar a análise devido à insuficiência de entrada.
 
-- A análise gerou uma exceção não tratada pelo FxCopCmd.
+- A análise gerou uma exceção que não é tratada pelo FxCopCmd.
 
 - O arquivo de projeto especificado não pôde ser encontrado ou está corrompido.
 
-- A opção de saída não foi especificada ou não foi possível gravar o arquivo.
+- A opção de saída não foi especificada ou o arquivo não pôde ser gravado.
 
 > [!NOTE]
-> Código de retorno de FxCopCmd **erro faz referência a Assembly** 0x200 por si só é um aviso em vez de um erro. Esse código de retorno indica que estiverem faltando referências indiretas, mas que FxCopCmd foi capaz de lidar com eles. O aviso significa que há uma possibilidade de que alguns resultados de análise podem ter sido comprometidos. Tratar **erro faz referência a Assembly** como um erro quando ele é combinado com qualquer outro código de retorno.
+> O assembly de código de retorno FxCopCmd **referencia o erro** 0x200 por si só é um aviso em vez de um erro. Esse código de retorno indica que há referências indiretas ausentes, mas que FxCopCmd foi capaz de tratá-las. O aviso significa que há uma possibilidade de que alguns resultados da análise possam ter sido comprometidos. Tratar **erro de referências de assembly** como um erro quando ele é combinado com qualquer outro código de retorno.
 
 ## <a name="see-also"></a>Consulte também
 

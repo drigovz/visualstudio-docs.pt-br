@@ -1,5 +1,5 @@
 ---
-title: 'CA1049: Tipos que possuem recursos nativos devem ser descartáveis | Microsoft Docs'
+title: 'CA1049: tipos que possuem recursos nativos devem ser descartáveis | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,39 +12,39 @@ helpviewer_keywords:
 - CA1049
 ms.assetid: 084e587d-0e45-4092-b767-49eed30d6a35
 caps.latest.revision: 19
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 34a7b8352da8e8e8a3b92f36fe1d636633e3a8c9
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: aaaf95346c51e2cb5cadb01a39e482bb508bc764
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65686122"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72668900"
 ---
-# <a name="ca1049-types-that-own-native-resources-should-be-disposable"></a>CA1049: Tipos com recursos nativos devem ser descartáveis
+# <a name="ca1049-types-that-own-native-resources-should-be-disposable"></a>CA1049: tipos que tenham recursos nativos devem ser descartáveis
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |NomeDoTipo|TypesThatOwnNativeResourcesShouldBeDisposable|
 |CheckId|CA1049|
-|Categoria|Microsoft.Design|
-|Alteração Significativa|Não são significativas|
+|Categoria|Microsoft. Design|
+|Alteração Significativa|Sem interrupção|
 
 ## <a name="cause"></a>Causa
- Faz referência a um tipo de um <xref:System.IntPtr?displayProperty=fullName> campo, uma <xref:System.UIntPtr?displayProperty=fullName> campo, ou um <xref:System.Runtime.InteropServices.HandleRef?displayProperty=fullName> campo, mas não implementa <xref:System.IDisposable?displayProperty=fullName>.
+ Um tipo faz referência a um campo <xref:System.IntPtr?displayProperty=fullName>, um campo <xref:System.UIntPtr?displayProperty=fullName> ou um campo <xref:System.Runtime.InteropServices.HandleRef?displayProperty=fullName>, mas não implementa <xref:System.IDisposable?displayProperty=fullName>.
 
 ## <a name="rule-description"></a>Descrição da Regra
- Esta regra pressupõe que <xref:System.IntPtr>, <xref:System.UIntPtr>, e <xref:System.Runtime.InteropServices.HandleRef> campos armazenam ponteiros para recursos não gerenciados. Os tipos que alocam recursos não gerenciados devem implementar <xref:System.IDisposable> para permitir que os chamadores liberem esses recursos sob demanda e reduzir os tempos de vida dos objetos que contêm os recursos.
+ Essa regra pressupõe que os campos <xref:System.IntPtr>, <xref:System.UIntPtr> e <xref:System.Runtime.InteropServices.HandleRef> armazenem ponteiros para recursos não gerenciados. Os tipos que alocam recursos não gerenciados devem implementar <xref:System.IDisposable> para permitir que os chamadores liberem esses recursos sob demanda e reduzam os tempos de vida dos objetos que contêm os recursos.
 
- O padrão de design recomendado para limpar recursos não gerenciados é fornecer implícito e um meio explícito para liberar esses recursos usando o <xref:System.Object.Finalize%2A?displayProperty=fullName> método e o <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> método, respectivamente. O coletor de lixo chama o <xref:System.Object.Finalize%2A> método de um objeto em algum momento indeterminado depois que o objeto é determinado como não é mais acessível. Depois de <xref:System.Object.Finalize%2A> é chamado, mais a coleta de lixo é necessário para liberar o objeto. O <xref:System.IDisposable.Dispose%2A> método permite que o chamador liberar recursos sob demanda, mais cedo do que os recursos seriam liberados se deixada para o coletor de lixo explicitamente. Depois que os recursos não gerenciados, ele limpa <xref:System.IDisposable.Dispose%2A> deve chamar o <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName> método para permitir que o coletor de lixo Saiba que <xref:System.Object.Finalize%2A> não tem mais a ser chamado; isso elimina a necessidade para a coleta de lixo adicionais e reduz o tempo de vida do objeto.
+ O padrão de design recomendado para limpar recursos não gerenciados é fornecer um meio implícito e explícito para liberar esses recursos usando o método <xref:System.Object.Finalize%2A?displayProperty=fullName> e o método <xref:System.IDisposable.Dispose%2A?displayProperty=fullName>, respectivamente. O coletor de lixo chama o método <xref:System.Object.Finalize%2A> de um objeto em algum momento indeterminado depois que o objeto não é mais acessível. Depois que <xref:System.Object.Finalize%2A> é chamado, uma coleta de lixo adicional é necessária para liberar o objeto. O método <xref:System.IDisposable.Dispose%2A> permite que o chamador libere explicitamente os recursos sob demanda, antes dos recursos que seriam liberados se deixassem para o coletor de lixo. Depois de limpar os recursos não gerenciados, <xref:System.IDisposable.Dispose%2A> deve chamar o método <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName> para permitir que o coletor de lixo saiba que <xref:System.Object.Finalize%2A> não precisa mais ser chamado; Isso elimina a necessidade de coleta de lixo adicional e reduz o tempo de vida do objeto.
 
 ## <a name="how-to-fix-violations"></a>Como Corrigir Violações
- Para corrigir uma violação dessa regra, implementar <xref:System.IDisposable>.
+ Para corrigir uma violação dessa regra, implemente <xref:System.IDisposable>.
 
 ## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos
- É seguro suprimir um aviso nessa regra, se o tipo não faz referência a um recurso não gerenciado. Caso contrário, não suprima um aviso nessa regra porque falhar ao implementar <xref:System.IDisposable> pode fazer com que os recursos não gerenciados para se tornar indisponível ou subutilizados.
+ É seguro suprimir um aviso dessa regra se o tipo não fizer referência a um recurso não gerenciado. Caso contrário, não omita um aviso dessa regra porque a falha na implementação de <xref:System.IDisposable> pode fazer com que os recursos não gerenciados se tornem indisponíveis ou subutilizados.
 
 ## <a name="example"></a>Exemplo
  O exemplo a seguir mostra um tipo que implementa <xref:System.IDisposable> para limpar um recurso não gerenciado.
@@ -53,13 +53,13 @@ ms.locfileid: "65686122"
  [!code-vb[FxCop.Design.UnmanagedResources#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Design.UnmanagedResources/vb/FxCop.Design.UnmanagedResources.vb#1)]
 
 ## <a name="related-rules"></a>Regras relacionadas
- [CA2115: Chame GC. KeepAlive ao usar recursos nativos](../code-quality/ca2115-call-gc-keepalive-when-using-native-resources.md)
+ [CA2115: chamar GC.KeepAlive durante o uso de recursos nativos](../code-quality/ca2115-call-gc-keepalive-when-using-native-resources.md)
 
- [CA1816: Chame GC. SuppressFinalize corretamente](../code-quality/ca1816-call-gc-suppressfinalize-correctly.md)
+ [CA1816: chamar GC.SuppressFinalize corretamente](../code-quality/ca1816-call-gc-suppressfinalize-correctly.md)
 
- [CA2216: Os tipos descartáveis devem declarar o finalizador](../code-quality/ca2216-disposable-types-should-declare-finalizer.md)
+ [CA2216: os tipos descartáveis devem declarar o finalizador](../code-quality/ca2216-disposable-types-should-declare-finalizer.md)
 
- [CA1001: os tipos com campos descartáveis devem ser descartáveis](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)
+ [CA1001: tipos que têm campos descartáveis devem ser descartáveis](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)
 
 ## <a name="see-also"></a>Consulte também
   [Padrão de descarte](https://msdn.microsoft.com/library/31a6c13b-d6a2-492b-9a9f-e5238c983bcb)

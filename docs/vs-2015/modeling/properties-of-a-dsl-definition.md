@@ -8,43 +8,43 @@ helpviewer_keywords:
 - Domain-Specific Language, definition file
 ms.assetid: 38debcfe-e1a6-4a3f-9d69-3ab07520f2b6
 caps.latest.revision: 15
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 77f0a384797217440600d1ba5db0f190f4bdafa3
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 8755b1b70051c54157fa87ee0b66dbc9340b5024
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65685361"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72668463"
 ---
 # <a name="properties-of-a-dsl-definition"></a>Propriedades de uma definição de DSL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Definem propriedades de DslDefinition *linguagem específica do domínio* propriedades de definição, como numeração de versão. As propriedades de DslDefinition aparecem na **propriedades** janela quando você clica em uma área aberta do diagrama na *Designer de linguagem específica do domínio*.  
-  
- Para obter mais informações, consulte [como definir uma linguagem específica do domínio](../modeling/how-to-define-a-domain-specific-language.md). Para obter mais informações sobre como usar essas propriedades, consulte [personalizando e estendendo uma linguagem específica do domínio](../modeling/customizing-and-extending-a-domain-specific-language.md).  
-  
- DslDefinition tem as propriedades na tabela a seguir:  
-  
-|Propriedade|Descrição|Padrão|  
-|--------------|-----------------|-------------|  
-|Modificador de acesso|Determina se o modificador de acesso para a classe de domínio é público ou interno.|públicos|  
-|Atributos personalizados|Personalizadas definidas atributos para a classe de domínio.<br /><br /> **Observação** Use o botão Procurar para adicionar um atributo.|\<nenhum>|  
-|Nome da empresa|O nome do nome da empresa no registro do sistema.|Nome da empresa atual|  
-|Nome|O nome dessa classe de domínio.|Nome atual|  
-|Namespace|O namespace afiliado a essa classe de domínio.|Namespace atual|  
-|Guid do pacote|O guid para o [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] pacote gerado para esta DSL.|\<nenhum>|  
-|Namespace do pacote|O namespace para o [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] pacote gerado para esta DSL.|\<nenhum>|  
-|Nome do produto|O nome do produto que será registrado para o [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] pacote gerado para esta DSL.|\<nenhum>|  
-|Observações|Anotações associadas a essa classe de domínio.|\<nenhum>|  
-|Descrição|Descrição para essa classe de domínio.|\<nenhum>|  
-|Nome de Exibição|O nome que será exibido no designer gerado para essa classe de domínio.|\<nenhum>|  
-|Palavra-chave de ajuda|A palavra-chave ajuda associada a essa classe de domínio.|\<nenhum>|  
-|Build|O número de build incremental para essa definição de linguagem específica do domínio.|0|  
-|Versão principal|O número de compilação principal incrementais para esta definição de linguagem específica do domínio.|1|  
-|Versão secundária|O número de compilação secundária incrementais para esta definição de linguagem específica do domínio.|0|  
-|Revisão|A versão incremental build número para essa definição de linguagem específica do domínio.|0|  
-  
-## <a name="see-also"></a>Consulte também  
+As propriedades DslDefinition definem propriedades *de definição de linguagem específicas de domínio* , como numeração de versão. As propriedades DslDefinition aparecem na janela **Propriedades** quando você clica em uma área aberta do diagrama na *Designer de linguagem específica de domínio*.
+
+ Para obter mais informações, consulte [como definir uma linguagem específica de domínio](../modeling/how-to-define-a-domain-specific-language.md). Para obter mais informações sobre como usar essas propriedades, consulte [Personalizando e estendendo uma linguagem específica de domínio](../modeling/customizing-and-extending-a-domain-specific-language.md).
+
+ DslDefinition tem as propriedades na tabela a seguir:
+
+|propriedade|Descrição|Padrão|
+|--------------|-----------------|-------------|
+|Modificador de acesso|Determina se o modificador de acesso para a classe de domínio é público ou interno.|públicos|
+|Atributos personalizados|Atributos definidos personalizados para a classe de domínio.<br /><br /> **Observação** Use o botão procurar para adicionar um atributo.|\<nenhum>|
+|Nome da empresa|O nome do nome da empresa atual no registro do sistema.|Nome da empresa atual|
+|Name|O nome desta classe de domínio.|Nome atual|
+|espaço de nome|O namespace afiliado a esta classe de domínio.|Namespace atual|
+|GUID do pacote|O GUID para o pacote de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] gerado para essa DSL.|\<nenhum>|
+|Namespace do pacote|O namespace para o pacote de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] gerado para essa DSL.|\<nenhum>|
+|Nome do produto|O nome do produto que será registrado para o pacote de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] gerado para essa DSL.|\<nenhum>|
+|Anotações|Observações associadas a esta classe de domínio.|\<nenhum>|
+|Descrição|Descrição para esta classe de domínio.|\<nenhum>|
+|Nome de Exibição|O nome que será exibido no designer gerado para essa classe de domínio.|\<nenhum>|
+|Palavra-chave de ajuda|A palavra-chave Help associada a essa classe de domínio.|\<nenhum>|
+|Build|O número de Build incremental para esta definição de linguagem específica de domínio.|0|
+|Versão principal|O número de Build principal incremental para essa definição de linguagem específica de domínio.|1|
+|Versão secundária|O número de Build secundário incremental para essa definição de linguagem específica de domínio.|0|
+|Revisão|O número da versão da revisão incremental para essa definição de linguagem específica de domínio.|0|
+
+## <a name="see-also"></a>Consulte também
  [Glossário das Ferramentas de Linguagem Específica de Domínio](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

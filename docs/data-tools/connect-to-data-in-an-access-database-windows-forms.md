@@ -7,23 +7,23 @@ helpviewer_keywords:
 - connecting to data, Access databases
 - Access databases, connecting
 ms.assetid: 4159e815-d430-4ad0-a234-e4125fcbef18
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 2a068414fb157ab71733d6c726b6ec71532629d4
-ms.sourcegitcommit: 8562a337cc9f674c756a4a0b2c7e288ebd61b51e
+ms.openlocfilehash: d24fc2fa1ee34567e0c32859eeccf6af62813a20
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68345420"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72648716"
 ---
 # <a name="connect-to-data-in-an-access-database"></a>Conectar-se a dados em um banco de dados
 
 Você pode se conectar a um banco de dados do Access (um arquivo *. mdb* ou *. accdb* ) usando o Visual Studio. Depois de definir a conexão, os dados são exibidos na janela **Fontes de Dados**. A partir daí, você pode arrastar tabelas ou exibições para a superfície de design.
 
-## <a name="prerequisites"></a>Pré-requisitos
+## <a name="prerequisites"></a>Prerequisites
 
 Para usar esses procedimentos, você precisa de um projeto Windows Forms ou WPF e um banco de dados do Access (arquivo *. accdb* ) ou um banco de dados do Access 2000-2003 (arquivo *. mdb* ). Siga o procedimento correspondente ao tipo de arquivo.
 
@@ -33,7 +33,7 @@ Conecte-se a bancos de dados criados com o Office 365, o Access 2013, o Access 2
 
 1. Abra um projeto de aplicativo Windows Forms ou WPF no Visual Studio.
 
-2. Para abrir a **janela fontes de dados** , no menu **Exibir** , selecione **outras** > **fontes de dados**do Windows.
+2. Para abrir a janela **fontes de dados** , no menu **Exibir** , selecione **outras** fontes de**dados**do Windows  > .
 
    ![Exibir outras fontes de dados do Windows](../data-tools/media/viewdatasources.png)
 
@@ -75,7 +75,7 @@ Conecte-se a bancos de dados criados com o Access 2000-2003 usando o procediment
 
 1. Abra um projeto de aplicativo Windows Forms ou WPF no Visual Studio.
 
-2. No menu **Exibir** , selecione outras**fontes de dados**do **Windows** > .
+2. No menu **Exibir** , selecione outras**fontes de dados**do **Windows**  > .
 
    ![Exibir outras fontes de dados do Windows](../data-tools/media/viewdatasources.png)
 
@@ -113,7 +113,7 @@ O conjunto de dados que você acabou de criar está disponível na janela **Data
 
 - Abra a fonte de dados no **Designer de Conjunto de Dados** para adicionar ou editar os objetos que constituem o conjunto de dados.
 
-- Adicione a lógica de validação <xref:System.Data.DataTable.ColumnChanging> para <xref:System.Data.DataTable.RowChanging> o evento ou das tabelas de dados no DataSet (consulte [Validate data in](../data-tools/validate-data-in-datasets.md)DataSets).
+- Adicione a lógica de validação ao evento de <xref:System.Data.DataTable.ColumnChanging> ou <xref:System.Data.DataTable.RowChanging> das tabelas de dados no DataSet (consulte [validar dados em conjuntos](../data-tools/validate-data-in-datasets.md)de dados).
 
 ## <a name="see-also"></a>Consulte também
 

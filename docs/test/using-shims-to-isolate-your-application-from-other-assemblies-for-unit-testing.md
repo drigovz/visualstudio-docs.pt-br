@@ -2,18 +2,18 @@
 title: Usando shims para isolar seu aplicativo para teste de unidade
 ms.date: 11/04/2016
 ms.topic: conceptual
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
-author: gewarren
+author: jillre
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 90a9a0abb43f8185219cb9ca8e4b41d2ed113838
-ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
+ms.openlocfilehash: 5a6ae8bf090f1e3a06dc83cf619f691e8d51f4c0
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72018922"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72659747"
 ---
 # <a name="use-shims-to-isolate-your-app-for-unit-testing"></a>Usar shims para isolar seu aplicativo para teste de unidade
 
@@ -23,7 +23,7 @@ Use *shims* para isolar seu código de assemblies que não fazem parte de sua so
 
 Para obter uma visão geral e orientação sobre "início rápido", consulte [isolar código sob teste com falsificações da Microsoft](../test/isolating-code-under-test-with-microsoft-fakes.md).
 
-**Requisitos**
+**Requirements**
 
 - Visual Studio Enterprise
 - Um projeto do .NET Framework
@@ -31,7 +31,7 @@ Para obter uma visão geral e orientação sobre "início rápido", consulte [is
 > [!NOTE]
 > Projetos do .NET Standard não têm suporte.
 
-## <a name="example-the-y2k-bug"></a>Exemplo: O bug do milênio
+## <a name="example-the-y2k-bug"></a>Exemplo: o bug Y2K
 
 Considere um método que lança uma exceção em 1º de janeiro de 2000:
 
@@ -88,7 +88,7 @@ public void Y2kCheckerTest() {
 }
 ```
 
-É fundamental dispor cada contexto de shim adequadamente. Como regra prática, chame o `ShimsContext.Create` dentro de uma instrução `using` para garantir a limpeza correta dos shims registrados. Por exemplo, você pode registrar um shim para um método de teste que substitui o método `DateTime.Now` por um representante que sempre retorna 1º de janeiro de 2000. Se você se esquecer de limpar o Shim registrado no método de teste, o restante da execução de teste sempre retornaria o primeiro de janeiro de 2000 como o valor `DateTime.Now`. Isso pode ser surpreendente e pode causar confusão.
+É fundamental dispor cada contexto de shim adequadamente. Como regra prática, chame o `ShimsContext.Create` dentro de uma instrução `using` para garantir a limpeza correta dos shims registrados. Por exemplo, você pode registrar um shim para um método de teste que substitui o método `DateTime.Now` por um representante que sempre retorna 1º de janeiro de 2000. Se você se esquecer de limpar o Shim registrado no método de teste, o restante da execução de teste sempre retornaria o primeiro de janeiro de 2000 como o valor de `DateTime.Now`. Isso pode ser surpreendente e pode causar confusão.
 
 ### <a name="write-a-test-with-shims"></a>Escrever um teste com shims
 
@@ -503,7 +503,7 @@ ShimFile.WriteAllTextStringString = shim;
 
 ## <a name="systemenvironment"></a>Sistema. ambiente
 
-Para Shim <xref:System.Environment?displayProperty=fullName>, adicione o seguinte conteúdo ao arquivo Mscorlib. falsificações após o elemento **assembly** :
+Para corrigir <xref:System.Environment?displayProperty=fullName>, adicione o seguinte conteúdo ao arquivo Mscorlib. falsificates após o elemento **assembly** :
 
 ```xml
 <ShimGeneration>
@@ -511,7 +511,7 @@ Para Shim <xref:System.Environment?displayProperty=fullName>, adicione o seguint
 </ShimGeneration>
 ```
 
-Depois de recriar a solução, os métodos e as propriedades na classe <xref:System.Environment?displayProperty=fullName> estarão disponíveis para serem corrigido, por exemplo:
+Depois de recriar a solução, os métodos e as propriedades na classe <xref:System.Environment?displayProperty=fullName> estão disponíveis para serem corrigido, por exemplo:
 
 ```csharp
 System.Fakes.ShimEnvironment.GetCommandLineArgsGet = ...
@@ -524,5 +524,5 @@ Os shims não podem ser usados em todos os tipos da biblioteca de classes base d
 ## <a name="see-also"></a>Consulte também
 
 - [Isolar o código em teste com o Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md)
-- [Blog de Peter Provost: Shims do Visual Studio 2012](http://www.peterprovost.org/blog/2012/04/25/visual-studio-11-fakes-part-2)
-- [Vídeo (1h16): Testando códigos que não podem ser testados com elementos fictícios no Visual Studio 2012](http://go.microsoft.com/fwlink/?LinkId=261837)
+- [Blog de Peter Provost: Visual Studio 2012 shims](http://www.peterprovost.org/blog/2012/04/25/visual-studio-11-fakes-part-2) (Shims do Visual Studio 2012)
+- [Vídeo (1h16): testando códigos que não podem ser testados com elementos fictícios no Visual Studio 2012](http://go.microsoft.com/fwlink/?LinkId=261837)

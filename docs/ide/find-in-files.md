@@ -14,17 +14,17 @@ helpviewer_keywords:
 - documents, searching
 - files, searching
 - Find in Files tab, Find and Replace window
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1247bae6193294667953376f7e86c42cf5b8f8a8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 4bc3b0d72f29e3a9c67ef9905667a0dd66f5f889
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62977598"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72652238"
 ---
 # <a name="find-in-files"></a>Localizar em Arquivos
 
@@ -80,7 +80,7 @@ Quando selecionadas, as janelas **Localizar Resultados** retornarão apenas corr
 
 Se essa caixa de seleção estiver marcada, será possível usar notações especiais para definir padrões de texto a serem correspondidos nas caixas de texto **Localizar** ou **Substituir por**. Para obter uma lista dessas notações, consulte [Usando expressões regulares no Visual Studio](../ide/using-regular-expressions-in-visual-studio.md).
 
-**Pesquisar nestes tipos de arquivo**
+**Procurar nestes tipos de arquivos**
 
 Essa lista indica os tipos de arquivos a serem pesquisados nos diretórios **Examinar**. Se esse campo estiver em branco, todos os arquivos nos diretórios **Examinar** serão pesquisados.
 
@@ -98,7 +98,7 @@ Quando selecionada, os resultados da pesquisa atual substituirão o conteúdo da
 
 Quando selecionada, os resultados da pesquisa atual substituirão o conteúdo da janela **Localizar Resultados 2**. Esta janela é aberta automaticamente para exibir os resultados da pesquisa. Para abrir essa janela manualmente, selecione **Outras Janelas** no menu **Exibir** e escolha **Localizar Resultados 2**.
 
-**Exibir somente nomes de arquivo**
+**Exibir apenas nomes de arquivos**
 
 Exibe uma lista de arquivos que contém correspondências de pesquisa em vez de exibir as próprias correspondências de pesquisa.
 

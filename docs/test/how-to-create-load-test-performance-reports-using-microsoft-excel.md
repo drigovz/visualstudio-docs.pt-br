@@ -6,17 +6,17 @@ helpviewer_keywords:
 - load tests, creating Excel reports
 - load tests, reporting
 ms.assetid: b87fb196-9973-4512-a924-088788def4ea
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 6bd73c643cdc01be07d56857f65d3fb34c6346e0
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
-ms.translationtype: HT
+ms.openlocfilehash: af0afc61fcf7cb251836414ca474eb63da3bf2e9
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66747575"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653558"
 ---
-# <a name="how-to-create-load-test-performance-reports-using-microsoft-excel"></a>Como: Criar relatórios de desempenho de teste de carga usando o Microsoft Excel
+# <a name="how-to-create-load-test-performance-reports-using-microsoft-excel"></a>Como criar relatórios de desempenho de teste de carga usando o Microsoft Excel
 
 Você pode gerar relatórios de teste de carga do Microsoft Excel baseados em dois ou mais resultados de teste.
 
@@ -29,7 +29,7 @@ Dois tipos de relatórios de teste de carga estão disponíveis:
 - **Tendência** Você pode gerar a análise de tendência em dois ou mais resultados de testes de carga. Os resultados são exibidos usando gráficos de linhas, mas os dados estão disponíveis em tabelas dinâmicas.
 
 > [!TIP]
-> Você também pode criar manualmente relatórios do Microsoft Word, copiando e colando dados da exibição de resumo, gráficos e tabelas. Confira [Como: Criar manualmente um relatório de desempenho de teste de carga usando o Microsoft Word](../test/how-to-manually-create-a-load-test-performance-report-using-microsoft-word.md).
+> Você também pode criar manualmente relatórios do Microsoft Word, copiando e colando dados da exibição de resumo, gráficos e tabelas. Confira [Como criar manualmente um relatório de desempenho de teste de carga usando o Microsoft Word](../test/how-to-manually-create-a-load-test-performance-report-using-microsoft-word.md).
 
 Qualquer relatório pode ser usado para compartilhar dados de desempenho com participantes e informar se o desempenho e a integridade gerais do sistema estão melhorando ou piorando.
 

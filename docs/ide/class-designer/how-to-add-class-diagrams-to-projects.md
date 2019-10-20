@@ -1,24 +1,24 @@
 ---
-title: 'Como: Adicionar diagramas de classe a projetos (Designer de Classe)'
+title: Como adicionar diagramas de classe a projetos (Designer de Classe)
 ms.date: 05/08/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - class diagrams, creating
 - Class Designer [Visual Studio], opening
 ms.assetid: 0eac1b54-2711-4e4b-9654-a0c429c08c8f
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 06432ac0e882df506e4379a2f2cbffcf52c79f42
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
-ms.translationtype: HT
+ms.openlocfilehash: 3cd898f2c4d7a84c9526ca9f56ce65a9b706f11d
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66332760"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647776"
 ---
-# <a name="how-to-add-class-diagrams-to-projects"></a>Como: Adicionar diagramas de classe a projetos
+# <a name="how-to-add-class-diagrams-to-projects"></a>Como adicionar diagramas de classe a projetos
 
 Para criar, editar e refatorar classes e outros tipos, adicione um diagrama de classe ao projeto em C#, Visual Basic ou C++. Para visualizar diferentes partes do código em um projeto, adicione vários diagramas de classes ao projeto.
 
@@ -59,7 +59,7 @@ Para adicionar vários diagramas de classes, repita as etapas deste procedimento
 
 No **Gerenciador de Soluções**, abra o menu de contexto de um arquivo de classe (clique com o botão direito do mouse) e escolha **Exibir em Diagrama de Classe**.
 
-- ou -
+\- ou -
 
 No **Modo de Exibição de Classe**, abra o namespace ou o menu de contexto de tipo e escolha **Exibir Diagrama de Classe**.
 
@@ -77,6 +77,6 @@ Um diagrama de classe populado automaticamente é criado.
 
 ## <a name="see-also"></a>Consulte também
 
-- [Como: Criar tipos usando o Designer de Classe](how-to-create-types.md)
-- [Como: Exibir tipos existentes](how-to-view-existing-types.md)
+- [Como criar tipos usando o Designer de Classe](how-to-create-types.md)
+- [Como exibir tipos existentes](how-to-view-existing-types.md)
 - [Projetar e exibir classes e tipos](designing-and-viewing-classes-and-types.md)

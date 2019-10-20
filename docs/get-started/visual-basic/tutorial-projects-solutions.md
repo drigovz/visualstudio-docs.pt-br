@@ -4,19 +4,19 @@ ms.date: 12/12/2018
 ms.technology: vs-ide-general
 ms.custom: get-started
 ms.topic: tutorial
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 37faf8dc0598a4e59c74e36da22df16119d5a001
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
-ms.translationtype: HT
+ms.openlocfilehash: 22c48086fb98cc4ae25098cb70c642f77f621209
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70180165"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72632567"
 ---
 # <a name="learn-about-projects-and-solutions-using-visual-basic"></a>Saiba mais sobre projetos e soluções usando Visual Basic
 
@@ -229,7 +229,7 @@ A linha no arquivo *Calendar.vb* que contém o atributo <xref:System.Runtime.Com
 
 1. No **Gerenciador de Soluções**, selecione o projeto **QuickTest**. Ao clicar com o botão direito do mouse ou no menu de contexto, selecione **Propriedades** ou pressione **Alt**+**Enter**. (Você também pode clicar duas vezes em **Meu Projeto** no **Gerenciador de Soluções**.)
 
-   As *páginas de propriedades* do projeto são abertas na guia **Aplicativo**. As páginas de propriedades contêm várias configurações para o projeto. Observe que o nome do assembly do projeto **QuickTest** é, de fato, “QuickTest”. Caso deseje alterá-lo, este é o local em que você poderá fazer isso. Assim, quando você compilar o projeto de teste, o nome do arquivo binário resultante será alterado de *QuickTest.dll* para o que você escolher.
+   As *páginas de propriedades* do projeto abertas na guia **aplicativo** . As páginas de propriedades contêm várias configurações para o projeto. Observe que o nome do assembly do projeto **QuickTest** é realmente "QuickTest". Caso deseje alterá-lo, este é o local em que você poderá fazer isso. Assim, quando você compilar o projeto de teste, o nome do arquivo binário resultante será alterado de *QuickTest.dll* para o que você escolher.
 
    ![Propriedades de projeto](../media/tutorial-projects-properties.png)
 
@@ -251,7 +251,7 @@ Caso deseje explorar ainda mais o Visual Studio, considere a possibilidade de cr
 ## <a name="see-also"></a>Consulte também
 
 - [Criar projetos e soluções](../../ide/creating-solutions-and-projects.md)
-- [Gerenciar propriedades do projeto e da solução](../../ide/managing-project-and-solution-properties.md)
+- [Gerenciar propriedades de solução e de projeto](../../ide/managing-project-and-solution-properties.md)
 - [Gerenciar referências em um projeto](../../ide/managing-references-in-a-project.md)
 - [Desenvolver código no Visual Studio sem projetos ou soluções](../../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)
 - [Visão geral do IDE do Visual Studio](../../get-started/visual-studio-ide.md)

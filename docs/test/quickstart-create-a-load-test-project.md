@@ -4,17 +4,17 @@ ms.date: 03/14/2018
 ms.topic: quickstart
 helpviewer_keywords:
 - load testing, quickstart
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: c6703221f9db06ca8edba68a2f2bcc9b79a5d531
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 8d74072c506c4ce48ee93b759ba24aff23aa9419
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62784669"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72646679"
 ---
-# <a name="quickstart-create-a-load-test-project"></a>Início Rápido: Criar um projeto de teste de carga
+# <a name="quickstart-create-a-load-test-project"></a>Início rápido: criar um projeto de teste de carga
 
 Neste guia de início rápido de 10 minutos, você aprenderá a criar e executar um projeto de teste de carga e de desempenho Web no Visual Studio. Testes de carga executam testes de desempenho Web ou testes de unidade para simular muitos usuários acessando um servidor ao mesmo tempo.
 
@@ -86,7 +86,7 @@ Nesta seção, criaremos um projeto de teste de carga em C#. Você também pode 
 
    A caixa de diálogo **Adicionar testes** é aberta.
 
-1. Em **Testes disponíveis**, selecione **WebTest1** e clique na seta à direita para movê-lo para a caixa **Testes selecionados**. Escolha o botão **OK**.
+1. Em **Testes disponíveis**, selecione **WebTest1** e clique na seta à direita para movê-lo para a caixa **Testes selecionados**. Selecione o botão **OK**.
 
    ![Caixa de diálogo Adicionar testes](media/add-tests-dialog-box.png)
 

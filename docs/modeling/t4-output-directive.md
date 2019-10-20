@@ -2,29 +2,29 @@
 title: T4 Diretiva de saída
 ms.date: 11/04/2016
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dfbe77f5b6e2bbda6a51d392c4dd16b079100e81
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1da8ec010e878ff80a9f46748993705b87193d99
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62856253"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72606222"
 ---
 # <a name="t4-output-directive"></a>T4 Diretiva de saída
 
-Em modelos de texto do Visual Studio, o `output` diretiva é usada para definir a extensão de nome de arquivo e a codificação do arquivo transformado.
+Nos modelos de texto do Visual Studio, a diretiva `output` é usada para definir a extensão de nome de arquivo e a codificação do arquivo transformado.
 
- Por exemplo, se seu projeto do Visual Studio inclui um arquivo de modelo chamado **MyTemplate.tt** que contém a seguinte diretiva:
+ Por exemplo, se o seu projeto do Visual Studio inclui um arquivo de modelo chamado **MyTemplate.tt** que contém a seguinte diretiva:
 
  `<#@output extension=".cs"#>`
 
- em seguida, o Visual Studio gerará um arquivo chamado **MyTemplate.cs**
+ em seguida, o Visual Studio irá gerar um arquivo chamado **MyTemplate.cs**
 
- A diretiva de `output` não é necessária em um modelo de texto de tempo de execução (pré-processado). Ao invés disso, o aplicativo obtém a cadeia de caracteres gerada ao chamar `TextTransform()`. Para obter mais informações, consulte [geração de texto de tempo de execução com modelos de texto T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
+ A diretiva de `output` não é necessária em um modelo de texto de tempo de execução (pré-processado). Ao invés disso, o aplicativo obtém a cadeia de caracteres gerada ao chamar `TextTransform()`. Para obter mais informações, consulte [geração de texto em tempo de execução com modelos de texto T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
 ## <a name="using-the-output-directive"></a>Usando a Diretiva de Saída
 
@@ -47,7 +47,7 @@ Em modelos de texto do Visual Studio, o `output` diretiva é usada para definir 
 
  `<#@ output extension=".vb" #>`
 
- Valores aceitáveis: Qualquer extensão de nome de arquivo válida.
+ Valores aceitáveis: qualquer extensão de nome de arquivo válida.
 
 ## <a name="encoding-attribute"></a>atributo de codificação
  Especifica a codificação usada ao gerar o arquivo de saída. Por exemplo:

@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - Class Designer [Visual Studio], classes
 ms.assetid: 75e56f8c-11ef-42a3-b7ec-3d2cf25c581b
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b8312e0db76dd3ce064172116aecd82daab56e90
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 596d7a41b9f63179a0469840d948430ed0294b56
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975041"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647643"
 ---
 # <a name="visual-c-classes-in-class-designer"></a>Classes do Visual C++ no Designer de Classe
 
@@ -35,7 +35,7 @@ class A {};
 class B : A {};
 ```
 
-Você também pode arrastar apenas a classe B para o diagrama de classe, clicar com o botão direito do mouse na forma de classe de B e, em seguida, clicar em **Mostrar Classes Base**. Isso exibe sua classe base: R.
+Você também pode arrastar apenas a classe B para o diagrama de classe, clicar com o botão direito do mouse na forma de classe de B e, em seguida, clicar em **Mostrar Classes Base**. Isso exibe sua classe base: A.
 
 ## <a name="multiple-inheritance"></a>Herança múltipla
 
@@ -149,7 +149,7 @@ A tabela a seguir mostra alguns exemplos de herança na especialização parcial
 
 |Elemento de código|Modo de exibição do Designer de Classe|
 |------------------| - |
-|`template <class T, class U>`<br /><br /> `class A {};`<br /><br /> `template <class TC>`<br /><br /> `class A<T, int> {};`<br /><br /> `class B : A<int, float>`<br /><br /> `{};`<br /><br /> `class C : A<int, int>`<br /><br /> `{};`|`A<T, U>`<br /><br /> Classe de modelo<br /><br /> `B`<br /><br /> Classe<br /><br /> (aponta para a Classe A)<br /><br /> `C`<br /><br /> Classe<br /><br /> (aponta para a Classe A)|
+|`template <class T, class U>`<br /><br /> `class A {};`<br /><br /> `template <class TC>`<br /><br /> `class A<T, int> {};`<br /><br /> `class B : A<int, float>`<br /><br /> `{};`<br /><br /> `class C : A<int, int>`<br /><br /> `{};`|`A<T, U>`<br /><br /> Classe de modelo<br /><br /> `B`<br /><br /> Class<br /><br /> (aponta para a Classe A)<br /><br /> `C`<br /><br /> Class<br /><br /> (aponta para a Classe A)|
 
 A tabela a seguir mostra alguns exemplos de funções de modelo de especialização parcial.
 
@@ -157,19 +157,19 @@ A tabela a seguir mostra alguns exemplos de funções de modelo de especializaç
 |------------------| - |
 |`class A`<br /><br /> `{`<br /><br /> `template <class T, class U>`<br /><br /> `void func(T a, U b);`<br /><br /> `template <class T>`<br /><br /> `void func(T a, int b);`<br /><br /> `};`|`A`<br /><br /> func\<T, U> (+ 1 de sobrecarga)|
 |`template <class T1>`<br /><br /> `class A {`<br /><br /> `template <class T2>`<br /><br /> `class B {};`<br /><br /> `};`<br /><br /> `template<> template<>`<br /><br /> `class A<type>::B<type> {};`|`A<T1>`<br /><br /> Classe de modelo<br /><br /> `B<T2>`<br /><br /> Classe de modelo<br /><br /> (B está contido na classe A em **Tipos Aninhados**)|
-|`template <class T>`<br /><br /> `class C {};`<br /><br /> `class A : C<int> {};`|`A`<br /><br /> Classe<br /><br /> -> C\<int><br /><br /> `C<T>`<br /><br /> Classe de modelo|
+|`template <class T>`<br /><br /> `class C {};`<br /><br /> `class A : C<int> {};`|`A`<br /><br /> Class<br /><br /> -> C\<int><br /><br /> `C<T>`<br /><br /> Classe de modelo|
 
 A tabela a seguir mostra alguns exemplos de herança de modelo.
 
 |Elemento de código|Modo de exibição do Designer de Classe|
 |------------------| - |
-|`template <class T>`<br /><br /> `class C {};`<br /><br /> `template<>`<br /><br /> `class C<int> {`<br /><br /> `class B {};`<br /><br /> `}`<br /><br /> `class A : C<int>::B {};`|`A`<br /><br /> Classe<br /><br /> ->B<br /><br /> `C<int>`<br /><br /> Classe<br /><br /> (B está contido na classe C em **Tipos Aninhados**)<br /><br /> `C<T>`<br /><br /> Classe de modelo|
+|`template <class T>`<br /><br /> `class C {};`<br /><br /> `template<>`<br /><br /> `class C<int> {`<br /><br /> `class B {};`<br /><br /> `}`<br /><br /> `class A : C<int>::B {};`|`A`<br /><br /> Class<br /><br /> ->B<br /><br /> `C<int>`<br /><br /> Class<br /><br /> (B está contido na classe C em **Tipos Aninhados**)<br /><br /> `C<T>`<br /><br /> Classe de modelo|
 
 A tabela a seguir mostra alguns exemplos de conexões de classe especializada canônicas.
 
 |Elemento de código|Modo de exibição do Designer de Classe|
 |------------------| - |
-|`template <class T>`<br /><br /> `class C {};`<br /><br /> `template<>`<br /><br /> `class C<int> {};`<br /><br /> `class A : C<int> {};`<br /><br /> `class D : C<float> {};`|`A`<br /><br /> Classe<br /><br /> ->C\<int><br /><br /> `C<int>`<br /><br /> Classe<br /><br /> `C<T>`<br /><br /> Classe de modelo<br /><br /> `D`<br /><br /> Classe<br /><br /> ->C\<float>|
+|`template <class T>`<br /><br /> `class C {};`<br /><br /> `template<>`<br /><br /> `class C<int> {};`<br /><br /> `class A : C<int> {};`<br /><br /> `class D : C<float> {};`|`A`<br /><br /> Class<br /><br /> ->C\<int><br /><br /> `C<int>`<br /><br /> Class<br /><br /> `C<T>`<br /><br /> Classe de modelo<br /><br /> `D`<br /><br /> Class<br /><br /> ->C\<float>|
 |`class B {`<br /><br /> `template <class T>`<br /><br /> `T min (const T &a, const T &b);`<br /><br /> `};`|`B`<br /><br /> min \<T>|
 
 ## <a name="see-also"></a>Consulte também

@@ -5,15 +5,15 @@ ms.topic: conceptual
 helpviewer_keywords:
 - load tests, logging, modifying
 ms.assetid: 9649226a-857d-41ef-8ec7-047b6e498033
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 9751ce3b08a0ac963cccdf091ccb99001c6f2c9f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 64e65a08910757d564e1fca0d3280770a1a60af9
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62785767"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72646661"
 ---
 # <a name="modify-load-test-logging-settings"></a>Modificar configurações de registro em log de testes de carga
 
@@ -25,8 +25,8 @@ O *controlador de teste* armazena em spool todos os dados de exemplo do teste de
 
 |Tarefa|Tópicos associados|
 |-|-----------------------|
-|**Salvar os logs se um teste de carga falhar:** Você poderá especificar se deseja salvar o log de teste sempre que um teste de carga falhar.|-   [Como: Especificar se as falhas de teste são salvas em logs de teste](../test/how-to-specify-if-test-failures-are-saved-to-test-logs.md)|
-|**Definir o tamanho máximo de arquivo para o arquivo de log:** Você pode editar o arquivo de configuração XML associado ao serviço do controlador de teste para especificar o tamanho máximo de arquivo que você deseja usar para o arquivo de log.|Modifique `<add key="LogSizeLimitInMegs" value="20"/>` no arquivo de configuração XML *QTCcontroller.exe.config*.|
+|**Salvar logs se um teste de carga falhar:** você pode especificar se quer salvar o log de teste sempre que um teste de carga falhar.|-   [Como especificar se as falhas no teste são salvas em logs de teste](../test/how-to-specify-if-test-failures-are-saved-to-test-logs.md)|
+|**Definir o tamanho máximo de arquivo para o arquivo de log:** você pode editar o arquivo de configuração XML associado ao serviço do controlador de teste para especificar o tamanho de arquivo máximo que deseja usar para o arquivo de log.|Modifique `<add key="LogSizeLimitInMegs" value="20"/>` no arquivo de configuração XML *QTCcontroller.exe.config*.|
 
 ## <a name="see-also"></a>Consulte também
 

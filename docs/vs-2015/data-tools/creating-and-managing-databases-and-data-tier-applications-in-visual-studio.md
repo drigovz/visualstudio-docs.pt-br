@@ -1,5 +1,5 @@
 ---
-title: Criar e gerenciar bancos de dados e aplicativos da camada de dados
+title: Criando e gerenciando bancos de dados e aplicativos da camada de dados
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-data-tools
@@ -11,33 +11,33 @@ helpviewer_keywords:
 - managing change, database servers
 ms.assetid: 40b51f5a-d52c-44ac-8f84-037a0917af33
 caps.latest.revision: 40
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d6cb4a3beb12d2b33b8b13441df66116fe449d09
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 2d6ed13f2e21ea6b9da82eb47afefdd16088e71d
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431152"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72672485"
 ---
-# <a name="creating-and-managing-databases-and-data-tier-applications-in-visual-studio"></a>Criar e gerenciar bancos de dados e aplicativos da camada de dados no Visual Studio
+# <a name="creating-and-managing-databases-and-data-tier-applications-in-visual-studio"></a>Criar e gerenciar aplicativos da camada de dados e de bancos de dados no Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 [IMPORTANTE]
-> Os projetos de banco de dados que foram incluídos em versões anteriores do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] agora são fornecidos em [!INCLUDE[sql_Denali_long](../includes/sql-denali-long-md.md)] ferramentas. Para obter mais informações, consulte [SQL Server Developer Tools](http://go.microsoft.com/fwlink/?LinkId=228126).
+> Os projetos de banco de dados que foram incluídos em versões anteriores do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] agora são fornecidos em ferramentas de [!INCLUDE[sql_Denali_long](../includes/sql-denali-long-md.md)]. Para obter mais informações, consulte [ferramentas de SQL Server Developer](http://go.microsoft.com/fwlink/?LinkId=228126).
 
- Você pode usar os projetos de banco de dados para criar novos bancos de dados, novos aplicativos de camada de dados (DACs) e atualizar bancos de dados existentes e aplicativos da camada de dados. Projetos de banco de dados e projetos de DAC permitem aplicar técnicas de gerenciamento de projeto e controle de versão para seus esforços de desenvolvimento de banco de dados da mesma forma que você aplica essas técnicas para código gerenciado ou nativo. Você pode ajudar sua equipe de desenvolvimento a gerenciar as alterações de bancos de dados e servidores de banco de dados com a criação de um *projeto de DAC*, *projeto de banco de dados*, ou uma *projeto do servidor* e colocá-lo sob o controle de versão. Membros de sua equipe podem, em seguida, check-out de arquivos para fazer, compilar e testar as alterações em um *ambiente de desenvolvimento isolado*, ou de área restrita, antes de compartilhá-los com a equipe. Para ajudar a garantir a qualidade do código, sua equipe pode concluir e testar todas as alterações para uma versão específica do banco de dados em um ambiente de preparo antes de implantar as alterações em produção.
+ Você pode usar projetos de banco de dados para criar novos bancos de dado, novos aplicativos da camada de DACs (data-tier) e para atualizar bancos de dados existentes e aplicativos da camada de dado. Os projetos de banco de dados e o DAC permitem que você aplique as técnicas de controle de versão e gerenciamento de projeto aos seus esforços de desenvolvimento de banco de dados da mesma forma que aplica essas técnicas ao código gerenciado ou nativo. Você pode ajudar sua equipe de desenvolvimento a gerenciar alterações em bancos de dados e servidores de banco de dados criando um projeto de *DAC*, um *projeto de banco de dados*ou um projeto de *servidor* e colocando-o sob controle de versão. Os membros da sua equipe podem fazer check-out de arquivos para fazer, compilar e testar alterações em um *ambiente de desenvolvimento isolado*, ou na área restrita, antes de compartilhá-los com a equipe. Para ajudar a garantir a qualidade do código, sua equipe pode concluir e testar todas as alterações de uma versão específica do banco de dados em um ambiente de preparo antes de implantar as alterações na produção.
 
- Para obter uma lista dos recursos de banco de dados que são compatíveis com aplicativos da camada de dados, consulte [recursos com suporte em aplicativos de camada de dados](http://go.microsoft.com/fwlink/?LinkId=164239) no site da Microsoft. Se você usar recursos do seu banco de dados que não são compatíveis com aplicativos da camada de dados, você deve usar um projeto de banco de dados para gerenciar as alterações ao banco de dados.
+ Para obter uma lista dos recursos de banco de dados com suporte dos aplicativos da camada de dado, consulte [recursos com suporte em aplicativos da camada de dados](http://go.microsoft.com/fwlink/?LinkId=164239) no site da Microsoft. Se você usar recursos em seu banco de dados que não têm suporte de aplicativos da camada de dado, você deve usar um projeto de banco de dados para gerenciar alterações no banco de dados.
 
 ## <a name="common-high-level-tasks"></a>Tarefas comuns de alto nível
 
-|Tarefas de alto nível|Conteúdo de suporte|
+|Tarefa de alto nível|Conteúdo de suporte|
 |----------------------|------------------------|
-|**Inicie o desenvolvimento de um aplicativo da camada de dados:** Um DAC é um novo conceito introduzido com o [!INCLUDE[sskatmai_r2](../includes/sskatmai-r2-md.md)] que contém a definição para um [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] objetos que são usados por um aplicativo de 3 camadas ou cliente-servidor de instância de banco de dados e que o suporte. Um DAC inclui objetos de banco de dados, como tabelas e exibições, junto com as entidades de instância, como logons. Você pode usar [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para criar um projeto de DAC, crie um arquivo de pacote DAC e enviar esse arquivo de pacote DAC para um administrador de banco de dados para a implantação em uma instância do [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] mecanismo de banco de dados.|-   [Criando e gerenciando aplicativos da camada de dados](http://go.microsoft.com/fwlink/?LinkId=160741) (Microsoft web site)<br />-   [SQL Server Management Studio](http://go.microsoft.com/fwlink/?LinkId=227328)|
-|**Realizar o desenvolvimento iterativo do banco de dados:** Se você for um desenvolvedor ou testador, você pode fazer check-out de partes do projeto e, em seguida, atualizá-los em um ambiente de desenvolvimento isolado. Ao usar esse tipo de ambiente, você pode testar suas alterações sem afetar outros membros da equipe. Depois que as alterações forem concluídas, você verificar os arquivos de volta para o controle de versão, onde outros membros da equipe podem obter as alterações e compilar e implantá-los em um servidor de teste.|-   [Consulta e editores de texto (SQL Server Management Studio)](http://go.microsoft.com/fwlink/?LinkId=227327) (Microsoft web site)<br />-   [Depurador Transact-SQL](http://go.microsoft.com/fwlink/?LinkId=227324) (Microsoft web site)|
-|**Criação de protótipos, verificando resultados de teste e modificar os scripts de banco de dados e objetos:** Você pode usar o [!INCLUDE[tsql](../includes/tsql-md.md)] editor para realizar qualquer uma dessas tarefas comuns.|-   [Consulta e editores de texto (SQL Server Management Studio)](http://go.microsoft.com/fwlink/?LinkId=227327) (Microsoft web site)|
+|**Iniciar o desenvolvimento de um aplicativo da camada de dados:** Um DAC é um novo conceito introduzido com [!INCLUDE[sskatmai_r2](../includes/sskatmai-r2-md.md)] que contém a definição de um banco de dados [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] e os objetos de instância de suporte que são usados por um aplicativo cliente-servidor ou de três camadas. Um DAC inclui objetos de banco de dados, como tabelas e exibições, juntamente com entidades de instância, como logons. Você pode usar [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para criar um projeto de DAC, criar um arquivo de pacote de DAC e enviar esse arquivo de pacote de DAC para um administrador de banco de dados para implantação em uma instância do mecanismo de banco de dados [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)].|-   [criar e gerenciar aplicativos da camada de dados](http://go.microsoft.com/fwlink/?LinkId=160741) (site da Microsoft)<br />-   [SQL Server Management Studio](http://go.microsoft.com/fwlink/?LinkId=227328)|
+|**Executando o desenvolvimento de banco de dados iterativo:** Se você for um desenvolvedor ou um testador, você faz check-out de partes do projeto e os atualiza em um ambiente de desenvolvimento isolado. Usando esse tipo de ambiente, você pode testar suas alterações sem afetar outros membros da equipe. Depois que as alterações forem concluídas, você verificará os arquivos de volta para o controle de versão, onde outros membros da equipe podem obter suas alterações e compilá-las e implantá-las em um servidor de teste.|-   [editores de consulta e texto (SQL Server Management Studio)](http://go.microsoft.com/fwlink/?LinkId=227327) (site da Microsoft)<br />[depurador do Transact-SQL](http://go.microsoft.com/fwlink/?LinkId=227324) -    (site da Microsoft)|
+|**Criando protótipos, verificando resultados de teste e modificando scripts e objetos de banco de dados:** Você pode usar o editor de [!INCLUDE[tsql](../includes/tsql-md.md)] para executar qualquer uma dessas tarefas comuns.|-   [editores de consulta e texto (SQL Server Management Studio)](http://go.microsoft.com/fwlink/?LinkId=227327) (site da Microsoft)|
 
 ## <a name="see-also"></a>Consulte também
  [Ferramentas de dados do Visual Studio para .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)

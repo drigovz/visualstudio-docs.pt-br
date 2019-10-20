@@ -1,58 +1,47 @@
 ---
-title: Depuração XSLT | Microsoft Docs
+title: Depurando XSLT | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: 344940bd-c41e-4ed9-8458-3e3aa8e6bb37
 caps.latest.revision: 7
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 4ba095b9af87a36a1957ec94496f4445f0ed2bb7
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 25f90577cecbd3bd681d0c7f3e18355fede9faa5
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65697033"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72670997"
 ---
 # <a name="debug-xslt"></a>Depuração XSLT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Você pode usar o depurador do Visual Studio para depurar XSLT. O depurador oferece suporte pontos de interrupção, estados de execução XSLT de exibição, e assim por diante. Depuração XSLT está disponível no Visual Studio Professional edition.  
-  
+Você pode usar o depurador do Visual Studio para depurar XSLT. O depurador oferece suporte pontos de interrupção, estados de execução XSLT de exibição, e assim por diante. A depuração XSLT está disponível na edição Visual Studio Professional.
+
 ## <a name="in-this-section"></a>Nesta seção
-  
- [Como: iniciar a depuração de XSLT](../xml-tools/how-to-start-debugging-xslt.md)  
- Descreve como iniciar o depurador XSLT.  
-  
- [Como: usar pontos de interrupção com XSLT](../xml-tools/how-to-use-breakpoints-with-xslt.md)  
- Descreve como usar pontos de interrupção em uma folha de estilos.  
-  
- [Como: avaliar uma expressão XPath](../xml-tools/how-to-evaluate-an-xpath-expression.md)  
- Descreve como avaliar uma expressão XPath usando os **QuickWatch** caixa de diálogo.  
-  
- [Passo a passo: depurar uma folha de estilos XSLT](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md)  
- Demonstra como depurar uma folha de estilos XSLT.  
-  
- [Modelos padrão XSLT](../xml-tools/xslt-default-templates.md)  
- Descreve como o depurador XSLT padronizam modelos.  
-  
- [Interface do usuário do depurador (XSLT)](../xml-tools/debugger-user-interface-xslt.md)  
- Descreve as janelas e caixas de diálogo de depuração XSLT.  
-  
- [Criador de Perfil XSLT](../xml-tools/xslt-profiler.md)  
- Descreve como acessar o profiler XSLT.  
-  
-## <a name="related-sections"></a>Seções relacionadas  
- [Editando Folhas de estilos XSLT](../xml-tools/editing-xslt-style-sheets.md)  
- Discute usando o editor XML para editar folhas de estilos.  
-  
- [Considerações de segurança ao trabalhar com os dados XML](../xml-tools/security-considerations-when-working-with-xml-data.md)  
- Aborda problemas de segurança que você precisa saber sobre ao trabalhar o editor XML ou o depurador XSLT.  
-  
- [Depurando no Visual Studio](../debugger/debugging-in-visual-studio.md)  
- Apresenta o depurador do Visual Studio.  
-  
- [Referência a XSLT](https://msdn.microsoft.com/678bcd68-cbbb-4be5-9dd2-40f94488a1cf)  
- Fornece o material de referência para os elementos e as funções XSLT.
+
+ [Como iniciar a depuração XSLT](../xml-tools/how-to-start-debugging-xslt.md) Descreve como iniciar o depurador XSLT.
+
+ [Como: usar pontos de interrupção com XSLT](../xml-tools/how-to-use-breakpoints-with-xslt.md) Descreve como usar pontos de interrupção em uma folha de estilos.
+
+ [Como avaliar uma expressão XPath](../xml-tools/how-to-evaluate-an-xpath-expression.md) Descreve como avaliar uma expressão XPath usando a caixa de diálogo **QuickWatch** .
+
+ [Walkthrough: Depurar uma folha de estilos XSLT](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md) Demonstra como depurar uma folha de estilos XSLT.
+
+ [Modelos padrão XSLT](../xml-tools/xslt-default-templates.md) Descreve como o depurador XSLT manipula modelos padrão.
+
+ [XSLT (interface do usuário do depurador)](../xml-tools/debugger-user-interface-xslt.md) Descreve as janelas do depurador XSLT e as caixas de diálogo.
+
+ [Criador de perfil XSLT](../xml-tools/xslt-profiler.md) Descreve como acessar o criador de perfil XSLT.
+
+## <a name="related-sections"></a>Seções relacionadas
+ [Editando folhas de estilo XSLT](../xml-tools/editing-xslt-style-sheets.md) Discute o uso do editor de XML para editar folhas de estilo.
+
+ [Considerações de segurança ao trabalhar com dados XML](../xml-tools/security-considerations-when-working-with-xml-data.md) Discute os problemas de segurança que você precisa saber ao trabalhar com o editor de XML ou o depurador XSLT.
+
+ [Depuração no Visual Studio](../debugger/debugging-in-visual-studio.md) Apresenta o depurador do Visual Studio.
+
+ [Referência de XSLT](https://msdn.microsoft.com/678bcd68-cbbb-4be5-9dd2-40f94488a1cf) Fornece material de referência para elementos e funções XSLT.

@@ -3,15 +3,15 @@ title: Trabalhando com elementos no Designer XAML
 ms.date: 05/14/2018
 ms.topic: conceptual
 ms.assetid: a29690bf-f212-4ac6-a77a-adc53d14102e
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: c1ab50fd08b3dd455e6fb9adc9f5aa3a22b77352
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: bae8f676a009ef9e5b3560feff15b74410cc52ac
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72451027"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72668619"
 ---
 # <a name="work-with-elements-in-xaml-designer"></a>Trabalhar com elementos no Designer XAML
 

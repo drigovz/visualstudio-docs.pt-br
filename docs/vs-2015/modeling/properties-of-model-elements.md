@@ -6,26 +6,26 @@ ms.technology: vs-ide-modeling
 ms.topic: reference
 ms.assetid: 884d66aa-cb2d-4be0-ae45-8360a01f1c7d
 caps.latest.revision: 8
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 34e9c1cb4457210f95ede0d574530d2fb5ebcdeb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 22f7da98d349da2d80019750b18c0ed5a1bbb3bc
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68154847"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72671370"
 ---
 # <a name="properties-of-model-elements"></a>Propriedades de elementos de modelo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Esta seção lista as propriedades que você vê na janela Propriedades quando você seleciona um elemento no diagrama de definição de DSL ou no Gerenciador de DSL.  
-  
- Em alguns casos, as propriedades adicionais podem ser encontradas na janela de detalhes de DSL.  
-  
-## <a name="related-sections"></a>Seções relacionadas  
- [Personalizando e estendendo uma linguagem específica de domínio](../modeling/customizing-and-extending-a-domain-specific-language.md)  
-  
- [Substituindo e estendendo as classes geradas](../modeling/overriding-and-extending-the-generated-classes.md)  
-  
+Esta seção lista as propriedades que você vê no janela Propriedades quando você seleciona um elemento no diagrama de definição de DSL ou no Gerenciador de DSL.
+
+ Em alguns casos, propriedades adicionais podem ser encontradas na janela detalhes de DSL.
+
+## <a name="related-sections"></a>Seções relacionadas
+ [Personalizando e estendendo uma linguagem específica de domínio](../modeling/customizing-and-extending-a-domain-specific-language.md)
+
+ [Substituindo e estendendo as classes geradas](../modeling/overriding-and-extending-the-generated-classes.md)
+
  [Como definir uma linguagem específica de domínio](../modeling/how-to-define-a-domain-specific-language.md)

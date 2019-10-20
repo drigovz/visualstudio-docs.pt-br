@@ -13,17 +13,17 @@ helpviewer_keywords:
 - C++, class diagrams
 - C++, Class Designer
 ms.assetid: f5b40921-2ef7-4de0-b595-45b44c79ffa6
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 16dbcbecece0e8ec38e3f38391ca5063e2e3d36c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: b2252b5e6d8da9f81fbcca9b856222a3230cd080
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974999"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647566"
 ---
 # <a name="work-with-visual-c-code-in-class-designer"></a>Trabalhar com código do Visual C++ no Designer de Classe
 
@@ -46,7 +46,7 @@ O **Designer de Classe** é compatível com os seguintes elementos de código C+
 - DefTipo
 
 > [!NOTE]
-> Isso não é o mesmo que o diagrama de classe UML, que pode ser criado em um Projeto de Modelagem. Para obter mais informações, confira [Diagramas de classe UML: Referência](../../modeling/create-uml-modeling-projects-and-diagrams.md).
+> Isso não é o mesmo que o diagrama de classe UML, que pode ser criado em um Projeto de Modelagem. Para obter mais informações, consulte [Diagramas de classe UML: Referência](../../modeling/create-uml-modeling-projects-and-diagrams.md).
 
 ## <a name="troubleshoot-type-resolution-and-display-issues"></a>Solucionar problemas de exibição e resolução de tipo
 
@@ -74,7 +74,7 @@ O **Designer de Classe** pode não conseguir resolver tipos pelos seguintes moti
 
 - Verifique se o **Designer de Classe** é compatível com o tipo inserido. Consulte [Limitações de elementos de código C++](#limitations-for-c-code-elements).
 
-O erro que provavelmente você receberá para um problema de resolução de tipo é **O código não pôde ser encontrado em uma ou mais formas no diagrama de classe '\<element>'**. Essa mensagem de erro não indica necessariamente que o código tem um erro. Ela indica apenas que o designer de classe não pôde exibir o código. Tente as seguintes medidas:
+O erro que provavelmente você receberá para um problema de resolução de tipo é **O código não pôde ser encontrado em uma ou mais formas no diagrama de classe '\<element>'** . Essa mensagem de erro não indica necessariamente que o código tem um erro. Ela indica apenas que o designer de classe não pôde exibir o código. Tente as seguintes medidas:
 
 - Verifique se o tipo existe. Verifique se você não comentou nem excluiu o código-fonte acidentalmente.
 

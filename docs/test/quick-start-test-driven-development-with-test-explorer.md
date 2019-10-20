@@ -2,19 +2,19 @@
 title: Passo a passo de desenvolvimento controlado por teste
 ms.date: 07/24/2019
 ms.topic: conceptual
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: 17ee82630e75e0b0ea8b4a069249c2dccad9010e
-ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
-ms.translationtype: HT
+author: jillre
+ms.openlocfilehash: d62989ffe5444f94cf3b062cde16399c08322b16
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68493200"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72646664"
 ---
-# <a name="walkthrough-test-driven-development-using-test-explorer"></a>Passo a passo: desenvolvimento controlado por teste usando o Gerenciador de Testes
+# <a name="walkthrough-test-driven-development-using-test-explorer"></a>Walkthrough: desenvolvimento orientado por testes usando o Gerenciador de testes
 
 Crie testes de unidade para ajudar a manter seu código funcionando corretamente por meio de alterações de código incrementais. Há várias estruturas que você pode usar para escrever testes de unidade, incluindo alguns desenvolvidos por terceiros. Algumas estruturas de teste são especializadas para testes em diferentes idiomas ou plataformas. O Gerenciador de Testes fornece uma interface única para testes de unidade em qualquer uma dessas estruturas. Para saber mais sobre como usar o **Gerenciador de Testes**, confira [Executar testes de unidade com o Gerenciador de Testes](run-unit-tests-with-test-explorer.md) e [Perguntas Frequentes do Gerenciador de Testes](test-explorer-faq.md).
 

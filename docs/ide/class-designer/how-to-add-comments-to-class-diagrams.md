@@ -1,5 +1,5 @@
 ---
-title: 'Como: Adicionar comentários a diagramas de classe (Designer de Classe)'
+title: Como adicionar comentários a diagramas de classe (Designer de Classe)
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,19 +9,19 @@ helpviewer_keywords:
 - class diagrams, adding comment shapes
 - comment shapes
 ms.assetid: d54005d5-a29d-4c4e-b153-feb6e84dd44f
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ad54dc716e02eabcc064d87213d01491f43eae82
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: cc778700873b79eb9fc2ec4fa1dd90d631993622
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975524"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72631878"
 ---
-# <a name="how-to-add-comments-to-class-diagrams"></a>Como: Adicionar comentários a diagramas de classe
+# <a name="how-to-add-comments-to-class-diagrams"></a>Como adicionar comentários a diagramas de classe
 
 Você pode usar formas de comentário para anotar os diagramas de classe. Uma forma de comentário tem uma propriedade, **Texto**, na qual você pode digitar texto. Formas de comentário existem apenas na superfície do diagrama, e não no código.
 
@@ -38,4 +38,4 @@ Você pode redimensionar uma forma de comentário, mas não pode alterar outros 
 ## <a name="see-also"></a>Consulte também
 
 - [Trabalhar com diagramas de classe](designing-and-viewing-classes-and-types.md)
-- [Como: Personalizar diagramas de classe](how-to-customize-class-diagrams.md)
+- [Como personalizar diagramas de classe](how-to-customize-class-diagrams.md)

@@ -3,21 +3,21 @@ title: XML Schema Explorer
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 2fc39e98-b194-456b-a452-cfafb0a52d66
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 717a5d85a9d3a3251739b62728be572bee1487f6
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 9350e4ca41661e6bc9613d036ad4dd2a978a706d
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926778"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72608092"
 ---
 # <a name="xml-schema-explorer"></a>XML Schema Explorer
 
-O **XML Schema Explorer** é integrado com Microsoft Visual Studio e o editor de XML para permitir que você trabalhe com esquemas XSD (linguagem de definição de esquema XML). Quando você abre um arquivo de esquema XML, o nó de **conjunto de esquema** aparece no **XML Schema Explorer**. Todos os esquemas incluídos, importados ou redefinidos para seu arquivo de destino, bem como todos os arquivos que são referenciados `import` por meio de uma `include` instrução ou, também aparecem no **XML Schema Explorer**.
+O **XML Schema Explorer** é integrado com Microsoft Visual Studio e o editor de XML para permitir que você trabalhe com esquemas XSD (linguagem de definição de esquema XML). Quando você abre um arquivo de esquema XML, o nó de **conjunto de esquema** aparece no **XML Schema Explorer**. Todos os esquemas incluídos, importados ou redefinidos para seu arquivo de destino, bem como todos os arquivos que são referenciados por meio de uma instrução `include` ou `import`, também aparecem no **XML Schema Explorer**.
 
 O **XML Schema Explorer** permite que você faça o seguinte:
 
@@ -80,4 +80,4 @@ O descarte de arquivos na exibição adicionará todos os nós globais no arquiv
 
 ## <a name="see-also"></a>Consulte também
 
-- [Como: Adicionar nós ao espaço de trabalho do XML Schema Explorer](../xml-tools/how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer.md)
+- [Como adicionar nós ao espaço de trabalho do XML Schema Explorer](../xml-tools/how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer.md)

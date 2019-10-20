@@ -1,5 +1,5 @@
 ---
-title: 'CA2134: Os métodos devem manter uma transparência consistente durante a substituição de métodos de base | Microsoft Docs'
+title: 'CA2134: os métodos devem manter a transparência consistente ao substituir os métodos base | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -8,17 +8,17 @@ f1_keywords:
 - CA2134
 ms.assetid: 3b17e487-0326-442e-90e1-dc0ba9cdd3f2
 caps.latest.revision: 11
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 2ccfe43fc110622c70802d2108b6ba5ff7ecb1b3
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 96910ffc53e6c48f930232c83d87570f1bc71e00
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65700375"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72608931"
 ---
-# <a name="ca2134-methods-must-keep-consistent-transparency-when-overriding-base-methods"></a>CA2134: Os métodos devem manter uma transparência consistente durante a substituição dos métodos base
+# <a name="ca2134-methods-must-keep-consistent-transparency-when-overriding-base-methods"></a>CA2134: os métodos devem manter uma transparência consistente durante a substituição dos métodos base
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -29,20 +29,20 @@ ms.locfileid: "65700375"
 |Alteração Significativa|Quebra|
 
 ## <a name="cause"></a>Causa
- Essa regra é acionada quando um método marcado com o <xref:System.Security.SecurityCriticalAttribute> substitui um método transparente ou marcado com o <xref:System.Security.SecuritySafeCriticalAttribute>. A regra também é acionado quando um método transparente ou marcado com o <xref:System.Security.SecuritySafeCriticalAttribute> substitui um método marcado com um <xref:System.Security.SecurityCriticalAttribute>.
+ Essa regra é acionada quando um método marcado com o <xref:System.Security.SecurityCriticalAttribute> substitui um método que é transparente ou marcado com o <xref:System.Security.SecuritySafeCriticalAttribute>. A regra também é acionada quando um método que é transparente ou marcado com o <xref:System.Security.SecuritySafeCriticalAttribute> substitui um método que é marcado com um <xref:System.Security.SecurityCriticalAttribute>.
 
  A regra é aplicada durante a substituição de um método virtual ou a implementação de uma interface.
 
 ## <a name="rule-description"></a>Descrição da Regra
- Essa regra é acionada em tentativas de alterar a acessibilidade de segurança de um método na cadeia de herança. Por exemplo, se um método virtual em uma classe base é transparente ou de segurança crítica, em seguida, a classe derivada deve substitui-lo com um método transparente ou de segurança crítica. Por outro lado, se o virtual é crítico para segurança, a classe derivada deve substituí-la com um método crítico de segurança. A mesma regra se aplica para implementar métodos de interface.
+ Essa regra é acionada em tentativas de alterar a acessibilidade de segurança de um método além da cadeia de herança. Por exemplo, se um método virtual em uma classe base for transparente ou de segurança crítica, a classe derivada deverá substituí-la por um método transparente ou de segurança crítica. Por outro lado, se a segurança da máquina virtual for crítica, a classe derivada deverá substituí-la por um método crítico de segurança. A mesma regra se aplica à implementação de métodos de interface.
 
- Regras de transparência são aplicadas quando o código é o JIT compilado em vez de no tempo de execução para que o cálculo de transparência não tem informações de tipo dinâmico. Portanto, o resultado do cálculo de transparência deve ser capaz de ser determinada exclusivamente dos tipos estáticos que está sendo compilado por JIT, independentemente do tipo dinâmico.
+ As regras de transparência são impostas quando o código é compilado JIT em vez de em tempo de execução, para que o cálculo de transparência não tenha informações de tipo dinâmico. Portanto, o resultado do cálculo de transparência deve ser capaz de ser determinado exclusivamente dos tipos estáticos que estão sendo compilados em JIT, independentemente do tipo dinâmico.
 
 ## <a name="how-to-fix-violations"></a>Como Corrigir Violações
- Para corrigir uma violação dessa regra, altere a transparência do método que está substituindo um método virtual ou implementar uma interface para coincidir com a transparência da virtual ou o método de interface.
+ Para corrigir uma violação dessa regra, altere a transparência do método que está substituindo um método virtual ou implementando uma interface para corresponder à transparência do método virtual ou da interface.
 
 ## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos
- Não suprima avisos dessa regra. As violações dessa regra resultará em um tempo de execução <xref:System.TypeLoadException> para assemblies que usam a transparência de nível 2.
+ Não suprimir avisos desta regra. As violações dessa regra resultarão em um <xref:System.TypeLoadException> de tempo de execução para assemblies que usam transparência de nível 2.
 
 ## <a name="examples"></a>Exemplos
 
@@ -50,4 +50,4 @@ ms.locfileid: "65700375"
  [!code-csharp[FxCop.Security.CA2134.MethodsMustOverrideWithConsistentTransparency#1](../snippets/csharp/VS_Snippets_CodeAnalysis/fxcop.security.ca2134.methodsmustoverridewithconsistenttransparency/cs/ca2134 - methodsmustoverridewithconsistenttransparency.cs#1)]
 
 ## <a name="see-also"></a>Consulte também
- [Código transparente de segurança, nível 2](https://msdn.microsoft.com/library/4d05610a-0da6-4f08-acea-d54c9d6143c0)
+ [Segurança-código Transparent, nível 2](https://msdn.microsoft.com/library/4d05610a-0da6-4f08-acea-d54c9d6143c0)

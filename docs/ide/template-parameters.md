@@ -7,17 +7,17 @@ helpviewer_keywords:
 - template parameters [Visual Studio]
 - project templates, parameters
 - item templates, parameters
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 2fbc9d95a6e334c3dcd788c4b686a222c417b0df
-ms.sourcegitcommit: 0f44ec8ba0263056ad04d2d0dc904ad4206ce8fc
+ms.openlocfilehash: 445a4fa7847ea5c9a5cb64da09cf54c763e86d16
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70766106"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647396"
 ---
-# <a name="template-parameters"></a>Parâmetros do modelo
+# <a name="template-parameters"></a>Parâmetros de modelo
 
 Você poderá substituir os valores do modelo quando for criada uma instância dele. Para configurar essa funcionalidade, use *parâmetros de modelo*. Os parâmetros de modelo podem ser usados para substituir valores, como nomes de classes e namespaces, no modelo. O assistente de modelo que é executado em segundo plano quando um usuário adiciona um novo item ou projeto substitui esses parâmetros.
 
@@ -74,7 +74,7 @@ A tabela a seguir lista os parâmetros de modelo reservados que podem ser usados
 
 Você pode especificar seus próprios valores e parâmetros de modelo, além dos parâmetros de modelo reservados padrão, que são usados durante a substituição de parâmetros. Para obter mais informações, consulte [Elemento CustomParameters (modelos do Visual Studio)](../extensibility/customparameters-element-visual-studio-templates.md).
 
-## <a name="example-use-the-project-name-for-a-file-name"></a>Exemplo: Usar o nome do projeto para um nome de arquivo
+## <a name="example-use-the-project-name-for-a-file-name"></a>Exemplo: usar o nome do projeto para um nome de arquivo
 
 Você pode especificar nomes de arquivo variáveis para itens de projeto usando um parâmetro no atributo `TargetFileName`.
 
@@ -91,7 +91,7 @@ O exemplo a seguir especifica que o nome de um arquivo executável usa o nome do
 </TemplateContent>
 ```
 
-## <a name="example-use-the-safe-project-name-for-the-namespace-name"></a>Exemplo: Usar o nome seguro do projeto para o nome do namespace
+## <a name="example-use-the-safe-project-name-for-the-namespace-name"></a>Exemplo: usar o nome seguro do projeto para o nome do namespace
 
 Para usar o nome seguro do projeto para o namespace em um arquivo de classe C#, use a seguinte sintaxe:
 
@@ -119,7 +119,7 @@ No arquivo *.vstemplate* do modelo de projeto, inclua o atributo `ReplaceParamet
 
 ## <a name="see-also"></a>Consulte também
 
-- [Como: Substituir parâmetros em um modelo](how-to-substitute-parameters-in-a-template.md)
+- [Como substituir parâmetros em um modelo](how-to-substitute-parameters-in-a-template.md)
 - [Personalizar modelos](../ide/customizing-project-and-item-templates.md)
-- [Como: Criar modelos de projeto](../ide/how-to-create-project-templates.md)
+- [Como criar modelos de projeto](../ide/how-to-create-project-templates.md)
 - [Referência de esquema de modelo](../extensibility/visual-studio-template-schema-reference.md)

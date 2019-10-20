@@ -11,17 +11,17 @@ helpviewer_keywords:
 - Command mode in Command window
 - IDE Command window
 ms.assetid: 48711628-1909-4713-a73e-d7b714c77f8a
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4fe707d82354a8c947dfa89a7323b41a489d0fa8
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: 4d89b06c406d0495a5699f707c85b4e9e9b3a804
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68919301"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72654585"
 ---
 # <a name="command-window"></a>Janela Comando
 A janela **Comando** é usada para executar comandos ou aliases diretamente no IDE (ambiente de desenvolvimento integrado) do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Você pode executar tanto comandos de menu quanto comandos que não aparecem em nenhum menu. Para exibir a janela **Comando**, escolha **Outras Janelas** no menu **Exibir** e selecione **Janela Comando**.
@@ -109,7 +109,7 @@ Um acento circunflexo funciona da mesma forma tanto dentro quanto fora das aspas
 ## <a name="use-quotes-for-path-names-with-spaces"></a>Usar aspas para nomes de caminho com espaços
 Se, por exemplo, você quiser abrir um arquivo com um caminho que contenha espaços, deverá colocar aspas duplas ao redor do caminho ou segmento do caminho que contém espaços: **C:\\"Arquivos de Programas"** ou **"C:\Arquivos de Programas"** .
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Aliases de comando do Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
 - [Comandos do Visual Studio](../../ide/reference/visual-studio-commands.md)

@@ -2,7 +2,7 @@
 title: Aumentar a produtividade de desenvolvimento do .NET
 description: Uma visão geral da navegação, da análise de código, do teste de unidade e de outros recursos para ajudá-lo a escrever um código .NET melhor mais rápido.
 author: kuhlenh
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.date: 04/25/2019
 ms.topic: conceptual
@@ -10,12 +10,12 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: bd36b75f3df640df0e1910fb3a7a52d17c37d30f
-ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
-ms.translationtype: HT
+ms.openlocfilehash: 69dd92c2dae1a042e37601917bcdef628400d8bf
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "67328771"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72652587"
 ---
 # <a name="visual-studio-productivity-guide-for-c-developers"></a>Guia de produtividade do Visual Studio para desenvolvedores de C#
 
@@ -41,7 +41,7 @@ Algumas extensões também oferecem esquemas de teclado:
 
 Estes são os atalhos populares do Visual Studio:
 
-| Atalho (todos os perfis) | Comando | DESCRIÇÃO |
+| Atalho (todos os perfis) | Comando | Descrição |
 |-|-|-|
 | **Ctrl**+**T** | Ir para Todos | Navegar diretamente para qualquer declaração de símbolo, arquivo, tipo ou membro |
 | **F12** (também **Ctrl**+**Clique**) | Ir para definição | Vá até onde um símbolo estiver definido |
@@ -156,7 +156,7 @@ O Visual Studio tem muitos recursos para ajudar você a pesquisar e [navegar em 
 | Ir para definição | **F12** ou **Ctrl**+**Clique**| Pressione **Ctrl** enquanto clica para navegar até a definição |
 | Inspecionar Definição | **Alt**+**F12** | Exibição embutida de uma definição |
 | Visualizador de Estrutura | Linhas cinzas pontilhadas entre chaves | Passe o mouse para ver a estrutura do código |
-| Navegação para assemblies descompilados | **F12** ou **Ctrl**+**Clique** | Navegue para a fonte externa (descompilada com ILSpy) habilitando a funcionalidade: **Ferramentas** > **Opções** > **Editor de Texto** > **C#**  > **Avançado** > **Habilitar navegação para fontes descompiladas**. |
+| Navegação para assemblies descompilados | **F12** ou **Ctrl**+**Clique** | Navegue para a fonte externa (descompilada com o ILSpy) habilitando o recurso: **Ferramentas** > **Opções** > **Editor de Texto** > **C#**  > **Avançado** > **Habilitar a navegação para fontes descompiladas**. |
 
 ![Ir para Todos e Localizar Todas as Referências](../ide/media/VSIDE_Productivity_Navigation.png)
 

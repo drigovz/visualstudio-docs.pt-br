@@ -1,25 +1,25 @@
 ---
-title: Designer de atividade do Designer de fluxo de trabalho - Confirm
+title: Designer de Fluxo de Trabalho-confirmar designer de atividade
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.Confirm.UI
 ms.assetid: c753b67b-b0e7-462a-bb4e-ba8db04a078d
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8418faf7fb4eb55a0b20a33aaaa2909e07ff7a78
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cd17f71ff9e408c48493dc862dfe94f8d7037903
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62949849"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650644"
 ---
 # <a name="confirm-activity-designer"></a>Confirme que o designer de atividades
 
-O **Confirm** designer de atividade é usado para criar e configurar um <xref:System.Activities.Statements.Confirm> atividade.
+O designer de atividade de **confirmação** é usado para criar e configurar uma atividade de <xref:System.Activities.Statements.Confirm>.
 
 ## <a name="the-confirm-activity"></a>A atividade de confirmação
  A atividade de <xref:System.Activities.Statements.Confirm> chama explicitamente <xref:System.Activities.Statements.CompensableActivity.ConfirmationHandler%2A> para uma atividade contida em <xref:System.Activities.Statements.CompensableActivity>. Se a atividade de <xref:System.Activities.Statements.Confirm> não é usada dentro de <xref:System.Activities.Statements.CompensableActivity.CancellationHandler%2A>, <xref:System.Activities.Statements.CompensableActivity.CompensationHandler%2A>, ou <xref:System.Activities.Statements.CompensableActivity.ConfirmationHandler%2A> de <xref:System.Activities.Statements.CompensableActivity>, então você deve especificar a propriedade de <xref:System.Activities.Statements.Confirm.Target%2A> .
@@ -27,12 +27,12 @@ O **Confirm** designer de atividade é usado para criar e configurar um <xref:Sy
  <xref:System.Activities.Statements.CompensationToken> especificado por <xref:System.Activities.Statements.Compensate.Target%2A> fornece um meio para confirmar ou compensar explicitamente <xref:System.Activities.Statements.CompensableActivity> uma vez que <xref:System.Activities.Statements.CompensableActivity.Body%2A> de <xref:System.Activities.Statements.CompensableActivity> terminou com êxito.
 
 ### <a name="using-the-confirm-activity-designer"></a>Usando o designer de atividade de confirmação
- O **Confirm** designer de atividade pode ser encontrado no **transação** categoria do **caixa de ferramentas**, que é acessado clicando o **caixa de ferramentas**guia no lado esquerdo do Designer de fluxo de trabalho. Como alternativa, selecione **caixa de ferramentas** da **exibição** menus ou pressione **Ctrl**+**Alt** + **X**.
+ O designer de atividade de **confirmação** pode ser encontrado na categoria **transação** da **caixa de ferramentas**, que é acessada clicando na guia **caixa de ferramentas** no lado esquerdo da designer de fluxo de trabalho. Como alternativa, selecione **caixa de ferramentas** no menu **Exibir** ou pressione **Ctrl** +**ALT** +**X**.
 
- O **Confirm** designer de atividade pode ser arrastado da **caixa de ferramentas** e ignorados sobre a superfície do Designer de fluxo de trabalho onde quer que as atividades são colocadas em geral, como em um <xref:System.Activities.Statements.Sequence>. Isso cria uma atividade de <xref:System.Activities.Statements.Confirm> com <xref:System.Activities.Activity.DisplayName%2A> padrão Confirmar. O <xref:System.Activities.Activity.DisplayName%2A> valor pode ser editado no cabeçalho do **confirmar** designer de atividade ou nos **DisplayName** caixa da grade de propriedade.
+ O designer de atividade de **confirmação** pode ser arrastado da **caixa de ferramentas** e descartado para a superfície de designer de fluxo de trabalho sempre que as atividades são geralmente colocadas, como dentro de um <xref:System.Activities.Statements.Sequence>. Isso cria uma atividade de <xref:System.Activities.Statements.Confirm> com <xref:System.Activities.Activity.DisplayName%2A> padrão Confirmar. O valor de <xref:System.Activities.Activity.DisplayName%2A> pode ser editado no cabeçalho do designer de atividade de **confirmação** ou na caixa **DisplayName** da grade de propriedades.
 
 ### <a name="the-confirm-properties"></a>As propriedades de confirmação
- A tabela a seguir mostra as propriedades de <xref:System.Activities.Statements.Confirm> e descreve como elas são usadas no designer. O <xref:System.Activities.Activity.DisplayName%2A> propriedade pode ser editada na grade de propriedade ou na superfície do Designer de fluxo de trabalho, mas o <xref:System.Activities.Statements.Confirm.Target%2A> propriedade deve ser editada na grade de propriedade.
+ A tabela a seguir mostra as propriedades de <xref:System.Activities.Statements.Confirm> e descreve como elas são usadas no designer. A propriedade <xref:System.Activities.Activity.DisplayName%2A> pode ser editada na grade de propriedades ou na superfície de Designer de Fluxo de Trabalho, mas a propriedade <xref:System.Activities.Statements.Confirm.Target%2A> deve ser editada na grade de propriedades.
 
 |Nome da Propriedade|Necessária|Uso|
 |-|--------------|-|

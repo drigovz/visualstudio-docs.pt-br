@@ -6,17 +6,17 @@ helpviewer_keywords:
 - Web performance tests, using the API
 - APIs, Web performance tests
 ms.assetid: 93a6a1dd-663b-4ab5-8760-7d6b081561d3
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: ab103b11659ee1e73537f6f41ff1fe0e6ed32076
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: d22c1962727d22af965c879de3ae5fea6d4e54af
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62978556"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653307"
 ---
-# <a name="how-to-use-the-web-performance-test-api"></a>Como: Usar a API de teste de desempenho Web
+# <a name="how-to-use-the-web-performance-test-api"></a>Como usar a API de teste de desempenho Web
 
 Você pode escrever o código para os testes de desempenho na Web. A API de teste de desempenho na Web é usada para criar testes de desempenho na Web codificados, plug-ins de teste de desempenho na Web, plug-ins de solicitação, solicitações, regras de extração e regras de validação. As classes que compõem esses tipos são as classes principais nessa API. Os outros tipos nessa API são usados para oferecer suporte à criação de objetos <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTest>, <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestPlugin>, <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequestPlugin>, <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequest>, <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule> e <xref:Microsoft.VisualStudio.TestTools.WebTesting.ValidationRule>. Você usa o namespace <xref:Microsoft.VisualStudio.TestTools.WebTesting> para criar testes de desempenho na Web personalizados.
 
@@ -27,7 +27,7 @@ Você também pode usar a API de teste de desempenho na Web para criar e salvar 
 > [!TIP]
 > Use o pesquisador de objetos para examinar o namespace <xref:Microsoft.VisualStudio.TestTools.WebTesting>. Os editores do Visual C# e do Visual Basic oferecem suporte do IntelliSense para codificação com as classes no namespace.
 
-Você também pode criar plug-ins para teste de carga. Para obter mais informações, confira [Como: Usar a API de teste de carga](../test/how-to-use-the-load-test-api.md) e [Como: Criar um plug-in de teste de carga](../test/how-to-create-a-load-test-plug-in.md).
+Você também pode criar plug-ins para teste de carga. Para obter mais informações, confira [Como usar a API de teste de carga](../test/how-to-use-the-load-test-api.md) e [Como criar um plug-in de teste de carga](../test/how-to-create-a-load-test-plug-in.md).
 
 ## <a name="to-use-the-webtesting-namespace"></a>Para usar o namespace WebTesting
 
@@ -58,15 +58,15 @@ Você também pode criar plug-ins para teste de carga. Para obter mais informaç
         > [!NOTE]
         > Você pode expor quantas propriedades quiser de seus plug-ins; apenas torne-os públicos, definíveis e de um tipo de base como Inteiro, Booliano ou Cadeia de Caracteres. Você também pode editar as propriedades de plug-in de teste de desempenho na Web mais tarde usando a janela Propriedades.
 
-    4. Escolha **OK**.
+    4. Clique em **OK**.
 
 9. Execute o teste de desempenho na Web.
 
-     Para obter um exemplo de implementação de <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestPlugin>, confira [Como: Criar um plug-in de teste de desempenho Web](../test/how-to-create-a-web-performance-test-plug-in.md).
+     Para obter um exemplo de implementação de <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestPlugin>, confira [Como criar um plug-in de teste de desempenho Web](../test/how-to-create-a-web-performance-test-plug-in.md).
 
 ## <a name="see-also"></a>Consulte também
 
 - <xref:Microsoft.VisualStudio.TestTools.WebTesting>
 - [Criar código personalizado e plug-ins para testes de carga](../test/create-custom-code-and-plug-ins-for-load-tests.md)
-- [Como: Usar a API de teste de carga](../test/how-to-use-the-load-test-api.md)
-- [Como: Criar um plug-in de teste de desempenho Web](../test/how-to-create-a-web-performance-test-plug-in.md)
+- [Como usar a API de teste de carga](../test/how-to-use-the-load-test-api.md)
+- [Como criar um plug-in de teste de desempenho Web](../test/how-to-create-a-web-performance-test-plug-in.md)

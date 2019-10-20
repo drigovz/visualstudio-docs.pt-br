@@ -1,5 +1,5 @@
 ---
-title: 'CA1009: Declarar manipuladores de eventos corretamente | Microsoft Docs'
+title: 'CA1009: declarar manipuladores de eventos corretamente | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,50 +12,50 @@ helpviewer_keywords:
 - DeclareEventHandlersCorrectly
 ms.assetid: ab65c471-1449-49d2-9896-7b9af74284b4
 caps.latest.revision: 21
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 51b04b4c081bd7961ef26657dd3cb526652df568
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 261013ed844b6c5ba37c544c7745a77378c0c722
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65704250"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72668918"
 ---
-# <a name="ca1009-declare-event-handlers-correctly"></a>CA1009: Declarar manipuladores de eventos corretamente
+# <a name="ca1009-declare-event-handlers-correctly"></a>CA1009: declarar manipuladores de eventos corretamente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |NomeDoTipo|DeclareEventHandlersCorrectly|
 |CheckId|CA1009|
-|Categoria|Microsoft.Design|
+|Categoria|Microsoft. Design|
 |Alteração Significativa|Quebra|
 
 ## <a name="cause"></a>Causa
- Um delegado que manipula um evento público ou protegido não tem a assinatura correta, tipo de retorno, ou nomes de parâmetro.
+ Um delegado que manipula um evento público ou protegido não tem a assinatura, o tipo de retorno ou os nomes de parâmetro corretos.
 
 ## <a name="rule-description"></a>Descrição da Regra
- Os métodos de manipulador de eventos utilizam dois parâmetros. A primeira é do tipo <xref:System.Object?displayProperty=fullName> e é denominado 'remetente'. Este é o objeto que acionou o evento. O segundo parâmetro é do tipo <xref:System.EventArgs?displayProperty=fullName> e é chamado 'e'. Esses são os dados associados ao evento. Por exemplo, se o evento é gerado sempre que um arquivo é aberto, os dados de evento normalmente contém o nome do arquivo.
+ Os métodos de manipulador de eventos utilizam dois parâmetros. O primeiro é do tipo <xref:System.Object?displayProperty=fullName> e é chamado de ' Remetente '. Este é o objeto que acionou o evento. O segundo parâmetro é do tipo <xref:System.EventArgs?displayProperty=fullName> e é denominado ' e '. Esses são os dados associados ao evento. Por exemplo, se o evento for gerado sempre que um arquivo for aberto, os dados do evento normalmente conterá o nome do arquivo.
 
- Métodos do manipulador de eventos não devem retornar um valor. No c# linguagem de programação, isso é indicado pelo tipo de retorno `void`. Um manipulador de eventos pode chamar vários métodos em vários objetos. Se os métodos eram permitidos para retornar um valor, vários valores de retorno ocorreria para cada evento, e apenas o valor do último método que foi invocado estaria disponível.
+ Os métodos do manipulador de eventos não devem retornar um valor. Na linguagem C# de programação, isso é indicado pelo tipo de retorno `void`. Um manipulador de eventos pode invocar vários métodos em vários objetos. Se os métodos tivessem permissão para retornar um valor, vários valores de retorno ocorreriam para cada evento, e somente o valor do último método que foi invocado estaria disponível.
 
 ## <a name="how-to-fix-violations"></a>Como Corrigir Violações
- Para corrigir uma violação dessa regra, corrija a assinatura, tipo de retorno ou nomes de parâmetro do delegado. Para obter detalhes, consulte o exemplo a seguir.
+ Para corrigir uma violação dessa regra, corrija a assinatura, o tipo de retorno ou os nomes de parâmetro do delegado. Para obter detalhes, consulte o exemplo a seguir.
 
 ## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos
  Não suprima um aviso nessa regra.
 
 ## <a name="example"></a>Exemplo
- O exemplo a seguir mostra um delegado que é adequado para manipulação de eventos. Os métodos que podem ser invocados por este manipulador de eventos está em conformidade com a assinatura que é especificada nas diretrizes de Design. `AlarmEventHandler` é o nome do tipo do delegado. `AlarmEventArgs` deriva da classe base para os dados de evento, <xref:System.EventArgs>, e mantém dados de evento do alarme.
+ O exemplo a seguir mostra um delegado que é adequado para manipular eventos. Os métodos que podem ser invocados por esse manipulador de eventos estão em conformidade com a assinatura especificada nas diretrizes de design. `AlarmEventHandler` é o nome do tipo do delegado. `AlarmEventArgs` deriva da classe base para dados de evento, <xref:System.EventArgs> e mantém os dados do evento de alarme.
 
  [!code-cpp[FxCop.Design.EventsTwoParams#1](../snippets/cpp/VS_Snippets_CodeAnalysis/FxCop.Design.EventsTwoParams/cpp/FxCop.Design.EventsTwoParams.cpp#1)]
  [!code-csharp[FxCop.Design.EventsTwoParams#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.EventsTwoParams/cs/FxCop.Design.EventsTwoParams.cs#1)]
  [!code-vb[FxCop.Design.EventsTwoParams#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Design.EventsTwoParams/vb/FxCop.Design.EventsTwoParams.vb#1)]
 
 ## <a name="related-rules"></a>Regras relacionadas
- [CA2109: Revisar manipuladores de eventos visíveis](../code-quality/ca2109-review-visible-event-handlers.md)
+ [CA2109: examinar manipuladores de eventos visíveis](../code-quality/ca2109-review-visible-event-handlers.md)
 
 ## <a name="see-also"></a>Consulte também
  <xref:System.EventArgs?displayProperty=fullName> <xref:System.Object?displayProperty=fullName>
- [NIB: Delegados e eventos](https://msdn.microsoft.com/d98fd58b-fa4f-4598-8378-addf4355a115)
+ [NIB: eventos e delegados](https://msdn.microsoft.com/d98fd58b-fa4f-4598-8378-addf4355a115)

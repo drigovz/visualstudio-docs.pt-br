@@ -9,17 +9,17 @@ helpviewer_keywords:
 - Build options [C#]
 - Project Designer, Build page
 ms.assetid: 77ff1bfc-d633-4634-ba29-9afdb6d7e362
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9f121c4a95d719074e3004ee21e0d49d71e4c243
-ms.sourcegitcommit: 7825d4163e52d724e59f6c0da209af5fbef673f7
+ms.openlocfilehash: ab60524f854b3974d383cb7d8ab37470195fc85e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72000215"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72668219"
 ---
 # <a name="build-page-project-designer-c"></a>Página de Build, Designer de Projeto (C#)
 
@@ -34,7 +34,7 @@ Para acessar a página **Build**, escolha um nó do projeto (não o nó **Soluç
 As opções a seguir permitem selecionar a configuração e a plataforma a ser exibida ou modificada.
 
 > [!NOTE]
-> Com configurações de build simplificadas, o sistema do projeto determina se é necessário compilar uma versão de depuração ou de liberação. Portanto, essas opções não são exibidas. Para obter mais informações, confira [Como: Definir as configurações de depuração e de versão](../../debugger/how-to-set-debug-and-release-configurations.md).
+> Com configurações de build simplificadas, o sistema do projeto determina se é necessário compilar uma versão de depuração ou de liberação. Portanto, essas opções não são exibidas. Para saber mais, consulte [Como definir configurações de depuração e versão](../../debugger/how-to-set-debug-and-release-configurations.md).
 
 **Configuração**
 
@@ -42,7 +42,7 @@ Especifica quais definições de configuração exibir ou modificar. As configur
 
 **Plataforma**
 
-Especifica quais configurações de plataforma exibir ou modificar. A configuração padrão é **Ativo (Qualquer CPU)** . É possível alterar a plataforma ativa usando o **Configuration Manager**. Para obter mais informações, confira [Como: Criar e editar configurações](../../ide/how-to-create-and-edit-configurations.md).
+Especifica quais configurações de plataforma exibir ou modificar. A configuração padrão é **Ativo (Qualquer CPU)** . É possível alterar a plataforma ativa usando o **Configuration Manager**. Para obter mais informações, consulte [Como criar e editar configurações](../../ide/how-to-create-and-edit-configurations.md).
 
 ## <a name="general"></a>Geral
 
@@ -133,7 +133,7 @@ Indica que o aplicativo gerenciado exporá um objeto COM (um COM Callable Wrappe
 
 **Gerar assembly de serialização**
 
-Especifica se o compilador usará a ferramenta Gerador de Serializador XML (Sgen.exe) para criar assemblies de serialização XML. Os assemblies de serialização poderão melhorar o desempenho da inicialização de <xref:System.Xml.Serialization.XmlSerializer> se você tiver usado essa classe para serializar os tipos no código. Por padrão, essa opção é definida como **Automático**, que especifica que os assemblies de serialização serão gerados apenas se você tiver usado <xref:System.Xml.Serialization.XmlSerializer> para codificar tipos no código em XML. **Desativado** especifica que os assemblies de serialização nunca devem ser gerados, independentemente de o código usar <xref:System.Xml.Serialization.XmlSerializer>. **Ativado** especifica que os assemblies de serialização sempre devem ser gerados. Os assemblies de serialização são chamados `TypeName`.XmlSerializers.dll. Para obter mais informações, consulte [Ferramenta Gerador de Serializador XML (Sgen.exe)](/dotnet/framework/serialization/xml-serializer-generator-tool-sgen-exe).
+Especifica se o compilador usará a ferramenta Gerador de Serializador XML (Sgen.exe) para criar assemblies de serialização XML. Os assemblies de serialização poderão melhorar o desempenho da inicialização de <xref:System.Xml.Serialization.XmlSerializer> se você tiver usado essa classe para serializar os tipos no código. Por padrão, essa opção é definida como **Automático**, que especifica que os assemblies de serialização serão gerados apenas se você tiver usado <xref:System.Xml.Serialization.XmlSerializer> para codificar tipos no código em XML. **Desativado** especifica que os assemblies de serialização nunca devem ser gerados, independentemente de o código usar <xref:System.Xml.Serialization.XmlSerializer>. **Ativado** especifica que os assemblies de serialização sempre devem ser gerados. Os assemblies de serialização são chamados `TypeName`.XmlSerializers.dll. Para obter mais informações, consulte [Ferramenta Geradora de Serializador XML (Sgen.exe)](/dotnet/framework/serialization/xml-serializer-generator-tool-sgen-exe).
 
 **Avançado**
 

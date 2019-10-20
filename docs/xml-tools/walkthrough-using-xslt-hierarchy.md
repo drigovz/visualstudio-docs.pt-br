@@ -2,17 +2,17 @@
 title: 'Passo a passo: Usando a hierarquia XSLT'
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 3cf836ed59dadba71314aa38cd4d2907bee384a6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9f3fe246189313dcc04176e2971ad448a1b2cff8
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62808152"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72604439"
 ---
-# <a name="walkthrough-use-xslt-hierarchy"></a>Passo a passo: Use a hierarquia XSLT
+# <a name="walkthrough-use-xslt-hierarchy"></a>Walkthrough: usar a hierarquia XSLT
 
 A ferramenta da hierarquia XSLT simplifica muitas tarefas de desenvolvimento XML. Uma folha de estilos XSLT frequentemente usa `includes` e instruções de `imports` . A compilação parte da folha de estilos principal, mas quando você verá um erro no resultado de criar uma folha de estilos XSLT, o erro pode vir de uma fonte diferente da folha de estilos principal. Corrigir o erro ou editar a folha de estilos podem exigir acesso incluiu ou importaram folhas de estilos. Percorrer de folha de estilo no depurador pode abrir folhas de estilo embutidas e importados, e você pode querer adicionar um ponto de interrupção em algum ponto de uma ou mais das folhas de estilo embutidas.
 
@@ -69,7 +69,7 @@ O exemplo neste tópico demonstra a depuração em uma folha de estilos referenc
     </xsl:stylesheet>
     ```
 
-3. Adicione o seguinte *xslinclude. xsl* arquivo:
+3. Adicione o seguinte arquivo *xslinclude. xsl* :
 
     ```xml
     <?xml version='1.0'?>
@@ -103,11 +103,11 @@ O exemplo neste tópico demonstra a depuração em uma folha de estilos referenc
     </xsl:stylesheet>
     ```
 
-4. Adicionar um ponto de interrupção na instrução `<xsl:include href="xslincludefile.xsl" />`.
+4. Adicione um ponto de interrupção no `<xsl:include href="xslincludefile.xsl" />` de instruções.
 
 5. Inicie a depuração.
 
-6. Quando o depurador para a instrução `<xsl:include href="xslincludefile.xsl" />`, pressione a **intervir** botão. A depuração pode ser continuada na folha de estilos referenciada. A hierarquia é visível e o designer o caminho correto.
+6. Quando o depurador for interrompido no `<xsl:include href="xslincludefile.xsl" />` de instruções, pressione o botão **Step Into** . A depuração pode continuar na folha de estilos referenciada. A hierarquia é visível e o designer o caminho correto.
 
 ## <a name="see-also"></a>Consulte também
 

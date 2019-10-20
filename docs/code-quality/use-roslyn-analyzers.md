@@ -6,17 +6,17 @@ helpviewer_keywords:
 - code analysis, managed code
 - analyzers
 - Roslyn analyzers
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 81c1c200ba9ab0a50381192b34bad5e9b221fb29
-ms.sourcegitcommit: 034c503ae04e22cf840ccb9770bffd012e40fb2d
+ms.openlocfilehash: 6cd4d5517dae889387ec632df57c90485bd366b0
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "72305674"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72649049"
 ---
 # <a name="use-code-analyzers"></a>Usar analisadores de código
 
@@ -28,7 +28,7 @@ Você pode fazer grande parte da personalização do diagnóstico do Analyzer do
 
 ![Nó de analisadores no Gerenciador de Soluções](media/analyzers-expanded-in-solution-explorer.png)
 
-Você pode exibir as propriedades de um diagnóstico, incluindo sua descrição e severidade padrão, na janela **Propriedades** . Para exibir as propriedades, clique com o botão direito do mouse na regra e selecione **Propriedades**, ou selecione a regra e pressione **ALT**+**Enter**.
+Você pode exibir as propriedades de um diagnóstico, incluindo sua descrição e severidade padrão, na janela **Propriedades** . Para exibir as propriedades, clique com o botão direito do mouse na regra e selecione **Propriedades**, ou selecione a regra e pressione **ALT** +**Enter**.
 
 ![Propriedades de diagnóstico no janela Propriedades](media/analyzer-diagnostic-properties.png)
 
@@ -93,7 +93,7 @@ Definir a severidade de uma regra em um arquivo EditorConfig tem precedência so
 
 1. Se você ainda não tiver um arquivo EditorConfig para seu projeto, [adicione um](../ide/create-portable-custom-editor-options.md#add-an-editorconfig-file-to-a-project).
 
-2. Adicione uma entrada para cada regra que você deseja configurar na extensão de arquivo correspondente. Por exemplo, para definir a severidade de [CA1822](ca1822.md) como `error` para C# arquivos, a entrada tem a seguinte aparência:
+2. Adicione uma entrada para cada regra que você deseja configurar na extensão de arquivo correspondente. Por exemplo, para definir a severidade de [CA1822](ca1822.md) como `error` para C# arquivos, a entrada terá a seguinte aparência:
 
    ```ini
    [*.cs]
@@ -107,9 +107,9 @@ Definir a severidade de uma regra em um arquivo EditorConfig tem precedência so
 
 O Visual Studio fornece uma maneira conveniente de configurar a severidade de uma regra no menu de lâmpada de [ações rápidas](../ide/quick-actions.md) .
 
-1. Após a ocorrência de uma violação, focalize o rabisco da violação no editor e abra o menu de lâmpada. Ou coloque o cursor na linha e pressione **Ctrl**+ **.** (ponto).
+1. Após a ocorrência de uma violação, focalize o rabisco da violação no editor e abra o menu de lâmpada. Ou coloque o cursor na linha e pressione **Ctrl** + **.** (ponto).
 
-2. No menu de lâmpada, selecione **Configurar ou suprimir problemas** > **Configurar \<rule ID de > severidade**.
+2. No menu de lâmpada, selecione **Configurar ou suprimir problemas** > **configurar \<rule ID > severidade**.
 
    ![Configurar a severidade da regra no menu de lâmpada no Visual Studio](media/configure-rule-severity.png)
 
@@ -126,7 +126,7 @@ O Visual Studio fornece uma maneira conveniente de configurar a severidade de um
 
 ### <a name="set-rule-severity-from-solution-explorer"></a>Definir a severidade da regra de Gerenciador de Soluções
 
-1. Em **Gerenciador de soluções**, expanda **referências** > **analisadores** (ou **dependências** > **analisadores** para projetos do .NET Core).
+1. Em **Gerenciador de soluções**, expanda **referências**  > **analisadores** (ou **dependências**  > **analisadores** para projetos do .NET Core).
 
 1. Expanda o assembly que contém a regra para a qual você deseja definir a severidade.
 
@@ -138,7 +138,7 @@ O Visual Studio fornece uma maneira conveniente de configurar a severidade de um
 
 ![Arquivo de conjunto de regras no Gerenciador de Soluções](media/ruleset-in-solution-explorer.png)
 
-1. Abra o arquivo do conjunto de regras ativo clicando duas vezes nele em **Gerenciador de soluções**, selecionando **abrir conjunto de regras ativas** no menu do botão direito do mouse do nó **referências** > **analisadores** ou selecionando **abrir** no **código** Página de propriedades de análise do projeto.
+1. Abra o arquivo do conjunto de regras ativo clicando duas vezes nele em **Gerenciador de soluções**, selecionando **abrir conjunto de regras ativas** no menu do botão direito do mouse no nó **referências**  > **analisadores** ou selecionando **abrir** no **código** Página de propriedades de análise do projeto.
 
    Se esta for a primeira vez que você está editando o conjunto de regras, o Visual Studio fará uma cópia do arquivo de conjunto de regras padrão, nomeá-lo *\<projectname >. RuleSet*e o adicionará ao seu projeto. Esse conjunto de regras personalizadas também se torna o conjunto de regras ativo para seu projeto.
 
@@ -163,7 +163,7 @@ Há várias maneiras de suprimir violações de regra:
 
 - No menu **analisar**
 
-  Selecione **analisar** > **Compilar e suprimir problemas ativos** na barra de menus para suprimir todas as violações atuais. Isso às vezes é chamado de "linha de base".
+  Selecione **analisar**  > **Compilar e suprimir problemas ativos** na barra de menus para suprimir todas as violações atuais. Isso às vezes é chamado de "linha de base".
 
 ::: moniker-end
 
@@ -171,7 +171,7 @@ Há várias maneiras de suprimir violações de regra:
 
 - No menu **analisar**
 
-  Selecione **analisar** > **executar análise de código e suprimir problemas ativos** na barra de menus para suprimir todas as violações atuais. Isso às vezes é chamado de "linha de base".
+  Selecione **analisar**  > **executar análise de código e suprimir problemas ativos** na barra de menus para suprimir todas as violações atuais. Isso às vezes é chamado de "linha de base".
 
 ::: moniker-end
 
@@ -185,13 +185,13 @@ Há várias maneiras de suprimir violações de regra:
 
 - No **Editor de código**
 
-  Coloque o cursor na linha de código com a violação e pressione **Ctrl**+**período (.)** para abrir o menu **ações rápidas** . Selecione **suprimir CAXXXX** > **na origem/no arquivo de supressão**.
+  Coloque o cursor na linha de código com a violação e pressione **Ctrl** +**period (.)** para abrir o menu **ações rápidas** . Selecione **suprimir CAXXXX**  > **na origem/no arquivo de supressão**.
 
   ![Suprimir diagnóstico do menu de ações rápidas](media/suppress-diagnostic-from-editor.png)
 
 - Da **lista de erros**
 
-  Selecione as regras que você deseja suprimir e clique com o botão direito do mouse e selecione **suprimir** > **na origem/no arquivo de supressão**.
+  Selecione as regras que você deseja suprimir e clique com o botão direito do mouse e selecione **suprimir**  > **na origem/no arquivo de supressão**.
 
   - Se você suprimir **na origem**, a caixa de diálogo **Visualizar alterações** será aberta e mostrará uma visualização do C# [aviso de #pragma](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-pragma-warning) ou Visual Basic diretiva de [aviso de #Disable](/dotnet/visual-basic/language-reference/directives/directives) que é adicionada ao código-fonte.
 

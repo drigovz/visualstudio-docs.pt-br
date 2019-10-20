@@ -1,5 +1,5 @@
 ---
-title: 'CA2144: O código transparente não deve carregar assemblies de matrizes de bytes | Microsoft Docs'
+title: 'CA2144: o código transparent não deve carregar assemblies de matrizes de bytes | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -8,17 +8,17 @@ f1_keywords:
 - CA2144
 ms.assetid: 777b1310-6e16-4413-b4ee-5f3136304f82
 caps.latest.revision: 14
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: b54e74297ca44662f49b5842aae8e334a8f4045a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 36b27880b5574e9e47067c240bc162cc15e8d3b6
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68142650"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72610312"
 ---
-# <a name="ca2144-transparent-code-should-not-load-assemblies-from-byte-arrays"></a>CA2144: O código transparente não deve carregar assemblies de matrizes de bytes
+# <a name="ca2144-transparent-code-should-not-load-assemblies-from-byte-arrays"></a>CA2144: o código transparente não deve carregar assemblies a partir de matrizes de bytes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -38,10 +38,10 @@ ms.locfileid: "68142650"
 - <xref:System.Reflection.Assembly.Load%2A>
 
 ## <a name="rule-description"></a>Descrição da Regra
- A revisão de segurança para o código transparente não é tão completo quanto a revisão de segurança para o código crítico porque o código transparente não pode realizar ações confidenciais de segurança. Os assemblies carregados a partir de uma matriz de bytes podem não ser observados no código transparente e essa matriz de bytes pode conter código crítico ou código crítico de segurança mais importante, que precisa ser auditado. Portanto, o código transparente não deve carregar assemblies de uma matriz de bytes.
+ A revisão de segurança para o código transparente não é tão completo quanto a revisão de segurança para o código crítico porque o código transparente não pode realizar ações confidenciais de segurança. Os assemblies carregados a partir de uma matriz de bytes podem não ser observados no código transparente e essa matriz de bytes pode conter código crítico ou código crítico de segurança mais importante, que precisa ser auditado. Portanto, o código transparent não deve carregar assemblies de uma matriz de bytes.
 
 ## <a name="how-to-fix-violations"></a>Como Corrigir Violações
- Para corrigir uma violação dessa regra, marque o método que está carregando o assembly com o <xref:System.Security.SecurityCriticalAttribute> ou o <xref:System.Security.SecuritySafeCriticalAttribute> atributo.
+ Para corrigir uma violação dessa regra, marque o método que está carregando o assembly com o <xref:System.Security.SecurityCriticalAttribute> ou o atributo <xref:System.Security.SecuritySafeCriticalAttribute>.
 
 ## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos
  Não suprima um aviso nessa regra.

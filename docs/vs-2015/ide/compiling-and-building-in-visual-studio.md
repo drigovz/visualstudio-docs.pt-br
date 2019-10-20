@@ -9,22 +9,22 @@ helpviewer_keywords:
 - custom build steps, types of builds
 ms.assetid: c7958821-285f-4e28-9e7a-b5d8b40336a1
 caps.latest.revision: 30
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: b534e46f4cdef87641207ec13419d4c59d04ed3f
-ms.sourcegitcommit: b56dc6fadc6c924beed36bb4c2ccc16cf6bcfa1c
+ms.openlocfilehash: 71bddf0f833bbaf717f7a2dbdf4a734efa295afb
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "68740071"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72619438"
 ---
 # <a name="compiling-and-building-in-visual-studio"></a>Compilando e criando no Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 É possível usar o Visual Studio para compilar aplicativos e criar assemblies e programas executáveis em intervalos frequentes durante um ciclo de desenvolvimento. Compilando seu código com frequência, é possível identificar erros em tempo de build, como sintaxe incorreta, palavras-chave com erros de ortografia e erros de digitação mais precocemente. Também é possível detectar e corrigir erros em tempo de execução, como erros lógicos e semânticos ao compilar e executar frequentemente versões de depuração do código.
 
- Quando você tiver desenvolvido completamente e depurado suficientemente um projeto ou solução, será possível compilar seus componentes em um build de versão. Por padrão, um build de versão é otimizada e projetada para ser menor e para ser executada mais rapidamente do que uma versão de depuração. Para obter mais informações, confira [Passo a passo: Criando um aplicativo](../ide/walkthrough-building-an-application.md).
+ Quando você tiver desenvolvido completamente e depurado suficientemente um projeto ou solução, será possível compilar seus componentes em um build de versão. Por padrão, um build de versão é otimizada e projetada para ser menor e para ser executada mais rapidamente do que uma versão de depuração. Para obter mais informações, consulte [Instruções passo a passo: criando um aplicativo](../ide/walkthrough-building-an-application.md).
 
 ## <a name="choosing-a-build-method"></a>Escolhendo um método de build
  É possível criar um aplicativo usando as opções de build padrão no IDE, em um prompt de comando, ou usando o Build do Team Foundation. Cada uma dessas opções usam o MSBuild como a tecnologia subjacente e cada abordagem tem benefícios específicos, como mostra a tabela a seguir.
@@ -36,7 +36,7 @@ ms.locfileid: "68740071"
 |Usando o Build do Team Foundation|–   É possível automatizar seu processo de build. Por exemplo, será possível criar um ou mais projetos à noite ou sempre que o check-in do código for feito. Também é possível criar projetos em servidores de build compartilhados em vez de no seu computador de desenvolvimento.<br />– É possível especificar rapidamente o código que você deseja compilar, os testes que você deseja executar e outras opções comuns.<br />– É possível modificar o fluxo de trabalho do build e, conforme necessário, criar atividades de build para realizar tarefas profundamente personalizadas.|[Compilar o aplicativo](/azure/devops/pipelines/index)|
 
 ## <a name="building-from-the-ide"></a>Compilando no IDE
- Ao criar um projeto, as configurações de build padrão são definidas para ele e uma configuração de build da solução é atribuída a ele para fornecer contexto para compilações. As configurações da solução definem a maneira como os projetos na solução são criados e implantados. As configurações do projeto são um conjunto de propriedades do projeto exclusivas para um tipo de plataforma e de build (por exemplo, versão Win32). É possível editar essas configurações padrão e é possível criar suas próprias configurações. Para obter mais informações, consulte [introdução ao designer de projeto](https://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7) e [NIB como: Modifique as propriedades do projeto e](https://msdn.microsoft.com/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)as definições de configuração.
+ Ao criar um projeto, as configurações de build padrão são definidas para ele e uma configuração de build da solução é atribuída a ele para fornecer contexto para compilações. As configurações da solução definem a maneira como os projetos na solução são criados e implantados. As configurações do projeto são um conjunto de propriedades do projeto exclusivas para um tipo de plataforma e de build (por exemplo, versão Win32). É possível editar essas configurações padrão e é possível criar suas próprias configurações. Para obter mais informações, consulte [Introduction to the Project Designer (Introdução ao Designer de Projeto)](https://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7) e [NIB Como modificar as propriedades do projeto e as definições de configuração](https://msdn.microsoft.com/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67).
 
  Dentro do IDE, é possível realizar as seguintes tarefas adicionais:
 
@@ -53,4 +53,4 @@ ms.locfileid: "68740071"
 - Melhorar o desempenho do build usando builds paralelas. Para obter mais informações, consulte [Building Multiple Projects in Parallel (Criando vários projetos paralelamente)](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md) ou a postagem do blog [Tuning C++ build parallelism (Ajustando o paralelismo de build do C++)](http://blogs.msdn.com/b/msbuild/archive/2010/03/08/tuning-c-build-parallelism-in-vs2010.aspx).
 
 ## <a name="see-also"></a>Consulte também
- [Passo a passo: Criando um aplicativo](../ide/walkthrough-building-an-application.md) [entendendo as configurações de Build](../ide/understanding-build-configurations.md) [entendendo as plataformas de Build](../ide/understanding-build-platforms.md) que [criam (compilando) projetos](https://msdn.microsoft.com/library/a9cbb88c-8fff-4c67-848b-98fbfd823193) [de site como: criar e remover dependências de projeto](../ide/how-to-create-and-remove-project-dependencies.md)
+ [Passo a passo: Criando um aplicativo](../ide/walkthrough-building-an-application.md) [Noções básicas sobre configurações de Build](../ide/understanding-build-configurations.md) [Noções básicas sobre plataformas de Build](../ide/understanding-build-platforms.md) [criando (compilando) projetos de Site](https://msdn.microsoft.com/library/a9cbb88c-8fff-4c67-848b-98fbfd823193) [ Como: Criar e remover dependências de projeto](../ide/how-to-create-and-remove-project-dependencies.md)

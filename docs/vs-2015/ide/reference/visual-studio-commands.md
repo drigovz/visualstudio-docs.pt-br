@@ -10,15 +10,15 @@ helpviewer_keywords:
 - command syntax
 ms.assetid: 76ffa394-ee89-4629-aba9-1a62b72e6cc1
 caps.latest.revision: 23
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 10ce4bd59567d7d055dd107dd05358d994d22c36
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b6ad913e418f2f13bd196925b3c085b9d5c7efca
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68160875"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72667456"
 ---
 # <a name="visual-studio-commands"></a>Comandos do Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -78,4 +78,4 @@ Os comandos do Visual Studio permitem invocar um comando na janela **Comando**, 
 |[Comando Watch](../../ide/reference/watch-command.md)|Cria e abre uma instância especificada de uma janela **Inspeção**.|
 
 ## <a name="see-also"></a>Consulte também
- [Janela de comando](../../ide/reference/command-window.md) [caixa Localizar/comando](../../ide/find-command-box.md) [Aliases de comando do Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
+ [Janela de comando](../../ide/reference/command-window.md) [localização/comando](../../ide/find-command-box.md) de [aliases de comando do Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

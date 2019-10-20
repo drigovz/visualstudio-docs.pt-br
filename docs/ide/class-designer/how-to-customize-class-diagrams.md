@@ -1,5 +1,5 @@
 ---
-title: 'Como: Personalizar diagramas de classe (Designer de Classe)'
+title: Como personalizar diagramas de classe (Designer de Classe)
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,19 +8,19 @@ helpviewer_keywords:
 - type shapes, removing from class diagrams
 - class diagrams, removing type shapes
 ms.assetid: e9030aea-c77d-4cc1-b8f6-b6ca469b692d
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c23e24c9e087ff8ca64f90db1714ca2569bf02c0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: eb2901d756e332a719fc56732a951257760ca03f
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975210"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647808"
 ---
-# <a name="how-to-customize-class-diagrams"></a>Como: Personalizar diagramas de classe
+# <a name="how-to-customize-class-diagrams"></a>Como personalizar diagramas de classe
 
 É possível alterar como os diagramas de classes exibem informações. Você pode personalizar o diagrama inteiro ou os tipos individuais na superfície de design.
 
@@ -127,6 +127,6 @@ Você pode remover uma forma de tipo do diagrama de classes sem afetar o código
 
 ## <a name="see-also"></a>Consulte também
 
-- [Como: Alterar entre notação de membro e notação de associação](how-to-change-between-member-notation-and-association-notation.md)
-- [Como: Exibir tipos existentes](how-to-view-existing-types.md)
+- [Como alternar entre notação de membro e de associação](how-to-change-between-member-notation-and-association-notation.md)
+- [Como exibir tipos existentes](how-to-view-existing-types.md)
 - [Exibindo tipos e relações](designing-and-viewing-classes-and-types.md)

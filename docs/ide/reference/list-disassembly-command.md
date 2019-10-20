@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Debug.ListDisassembly command
 - list disassembly command
 ms.assetid: eb363e35-e86a-4121-966f-991210c27e2a
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6dc4bddefe0240a8e53babeec1fdce4f83ce5ef1
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: e2e9177ee7048f626c61fee087468f991e4ed548
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926217"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72610727"
 ---
 # <a name="list-disassembly-command"></a>Comando Listar Desmontagem
 Inicia o processo de depuração e permite que você especifique como os erros são tratados.
@@ -64,7 +64,7 @@ Opcional. Habilita a exibição de números de linha associados ao código-fonte
 >Debug.ListDisassembly
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Comando List Call Stack](../../ide/reference/list-call-stack-command.md)
 - [Comando List Threads](../../ide/reference/list-threads-command.md)

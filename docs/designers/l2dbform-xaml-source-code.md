@@ -3,17 +3,17 @@ title: Código de L2DBForm.xaml
 ms.date: 11/04/2016
 ms.topic: sample
 ms.assetid: 624e96d4-6d27-4195-8ac2-2f3835f6c57e
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b650c65eb81fb087b7783b41065445e1bbea20a0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 41796664d5456876edff81662cbab44edf7a82f2
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62844249"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72635294"
 ---
 # <a name="l2dbformxaml-source-code"></a>Código-fonte de L2DBForm.xaml
 
@@ -244,5 +244,5 @@ Para obter o código-fonte C# dos manipuladores de eventos associados aos elemen
 
 ## <a name="see-also"></a>Consulte também
 
-- [Passo a passo: Exemplo de LinqToXmlDataBinding](../designers/walkthrough-linqtoxmldatabinding-example.md)
+- [Passo a passo: exemplo de LinqToXmlDataBinding](../designers/walkthrough-linqtoxmldatabinding-example.md)
 - [Código-fonte de L2DBForm.xaml.cs](../designers/l2dbform-xaml-cs-source-code.md)

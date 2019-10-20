@@ -8,17 +8,17 @@ helpviewer_keywords:
 - list call stack command
 - Debug.ListCallStack command
 ms.assetid: a8b20bf2-81d2-4069-aea8-23e6b15b4347
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a122b9fbc97816b114ba2ff6274756f9e2093eef
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: 3395e0c3c2eb47e1e8c1a0c393b822f70de0c7ed
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68919157"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72610913"
 ---
 # <a name="list-call-stack-command"></a>Comando Listar Pilha de Chamadas
 Exibe a pilha de chamadas atual.
@@ -108,7 +108,7 @@ para definir o registro de ativação atual para o segundo quadro.
 >Debug.CallStack /Count:4 /ShowTypes:yes
 ```
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Comando List Disassembly](../../ide/reference/list-disassembly-command.md)
 - [Comando List Threads](../../ide/reference/list-threads-command.md)

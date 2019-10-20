@@ -1,5 +1,5 @@
 ---
-title: Modelando o SDK - linguagens específicas do domínio | Microsoft Docs
+title: SDK de modelagem-linguagens específicas de domínio | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -9,20 +9,20 @@ helpviewer_keywords:
 - Domain-Specific Language
 ms.assetid: 17a531e2-1964-4a9d-84fd-6fb1b4aee662
 caps.latest.revision: 79
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 7bcfe986877305c55f6b459b8c519e4f12f5a503
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b67f74397b8f3c3e410c4282d8a74b7309bc1bc9
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68159026"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72668630"
 ---
 # <a name="modeling-sdk-for-visual-studio---domain-specific-languages"></a>SDK de Modelagem para Visual Studio - linguagens específicas ao domínio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Usando o SDK de modelagem para [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] (MSDK), você pode criar ferramentas de desenvolvimento baseado em modelo avançadas que você pode integrar [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Como exemplo, as ferramentas UML são criadas usando MSDK. Da mesma forma, você pode criar uma ou mais definições de modelo e integrá-las em um conjunto de ferramentas.
+Usando o SDK de modelagem para [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] (MSDK), você pode criar poderosas ferramentas de desenvolvimento baseadas em modelo que podem ser integradas ao [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Como exemplo, as ferramentas UML são criadas usando MSDK. Da mesma forma, você pode criar uma ou mais definições de modelo e integrá-las em um conjunto de ferramentas.
 
  No centro do MSDK está a definição de um modelo que você cria para representar conceitos em sua área de negócios. Você pode cercar o modelo com várias ferramentas, como uma exibição diagramática, a capacidade de gerar código e outros artefatos, comandos para transformar o modelo, e a capacidade de interagir com código e os outros objetos em [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. À medida que o modelo é desenvolvido, você pode combiná-lo com outros modelos e ferramentas para formar um conjunto de ferramentas avançadas centradas em seu desenvolvimento.
 
@@ -41,11 +41,11 @@ Usando o SDK de modelagem para [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] (MSD
   Você pode personalizar e estender todos esses recursos. Suas extensões são integradas de tal forma que você ainda pode atualizar a definição de DSL e gerar novamente os recursos sem perder suas extensões.
 
 ## <a name="samples-and-the-latest-information"></a>Exemplos e as informações mais recentes
- [Baixe a modelagem do SDK para Visual Studio 2015](http://www.microsoft.com/download/details.aspx?id=48148)
+ [Baixe o SDK de modelagem para o Visual Studio 2015](http://www.microsoft.com/download/details.aspx?id=48148)
 
- [Exemplos de](http://go.microsoft.com/fwlink/?LinkId=186128) para o SDK de modelagem para Visual Studio.
+ [Exemplos](http://go.microsoft.com/fwlink/?LinkId=186128) do SDK de modelagem do Visual Studio.
 
- Para obter orientação sobre técnicas avançadas e solução de problemas, visite [Fórum de extensibilidade de ferramentas de modelagem & de DSL do Visual Studio](http://go.microsoft.com/fwlink/?LinkID=186074).
+ Para obter orientação sobre técnicas avançadas e solução de problemas, visite o [Fórum de extensibilidade das ferramentas de modelagem de & de DSL do Visual Studio](http://go.microsoft.com/fwlink/?LinkID=186074).
 
 ## <a name="in-this-section"></a>Nesta seção
  [Introdução às linguagens específicas de domínio](../modeling/getting-started-with-domain-specific-languages.md)
@@ -72,10 +72,10 @@ Usando o SDK de modelagem para [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] (MSD
 
  [Criando uma linguagem específica de domínio baseada no WPF](../modeling/creating-a-wpf-based-domain-specific-language.md)
 
- [Como: Estender o Designer de Linguagem Específica de Domínio](../modeling/how-to-extend-the-domain-specific-language-designer.md)
+ [Como estender o designer de linguagem específica de domínio](../modeling/how-to-extend-the-domain-specific-language-designer.md)
 
  [Edições do Visual Studio com suporte pelo SDK de Visualização e Modelagem](../modeling/supported-visual-studio-editions-for-visualization-amp-modeling-sdk.md)
 
- [Como: Migrar uma linguagem específica de domínio para uma nova versão](../modeling/how-to-migrate-a-domain-specific-language-to-a-new-version.md)
+ [Como migrar uma linguagem específica de domínio para uma nova versão](../modeling/how-to-migrate-a-domain-specific-language-to-a-new-version.md)
 
  [Referência de API do SDK de Modelagem para Visual Studio](../modeling/api-reference-for-modeling-sdk-for-visual-studio.md)

@@ -1,21 +1,21 @@
 ---
-title: 'Como: Gerar um snippet de XML de um esquema XML'
+title: 'Como: Gerencia um snippet de um esquema XML'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 2c128d2a-aaa6-4814-aa95-e07056afe338
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cb5b10e142c1dd62625a48c39c3860d49e8942cb
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: ae55428b61053fbd255446833cb20aec3da79b6e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926813"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72645376"
 ---
-# <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>Como: Gerar um trecho XML a partir de um esquema XML
+# <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>Como gerar um trecho XML a partir de um esquema XML
 
 O editor de XML tem a capacidade de gerar trechos de código XML a partir de um esquema XSD (linguagem de definição de esquema XML). Por exemplo, como você está criando um arquivo XML, enquanto posicionado ao lado do nome do elemento, você pode pressionar **Tab** para preencher o elemento com os dados XML gerados com base nas informações de esquema para esse elemento.
 
@@ -60,7 +60,7 @@ As etapas nesta seção mostram como usar o recurso de trecho XML gerado pelo es
 
      A caixa de diálogo **esquemas XSD** é exibida.
 
-4. Clique em **Adicionar** .
+4. Clique em **Adicionar**.
 
      A caixa de diálogo **abrir esquema XSD** é exibida.
 
@@ -88,7 +88,7 @@ As etapas nesta seção mostram como usar o recurso de trecho XML gerado pelo es
 
      O editor adiciona a tag de início `<Contact` e posicionar o cursor após o nome do elemento.
 
-4. Pressione **Tab** para gerar dados XML para o `Contact` elemento com base em suas informações de esquema.
+4. Pressione **Tab** para gerar dados XML para o elemento `Contact` com base em suas informações de esquema.
 
 ## <a name="input"></a>Entrada
 
@@ -141,7 +141,7 @@ O seguinte arquivo de esquema é usado por passo a passo.
 
 ### <a name="output"></a>Saída
 
-A seguir estão os dados XML que são gerados com base nas informações de esquema associada com o elemento de `Contact` . Itens marcados como `bold` designar campos editáveis no trecho XML.
+A seguir estão os dados XML que são gerados com base nas informações de esquema associada com o elemento de `Contact` . Os itens marcados como `bold` designam campos editáveis no trecho XML.
 
 ```xml
 <Contact>
@@ -157,4 +157,4 @@ A seguir estão os dados XML que são gerados com base nas informações de esqu
 ## <a name="see-also"></a>Consulte também
 
 - [Trechos de código XML](../xml-tools/xml-snippets.md)
-- [Como: Usar trechos XML](../xml-tools/how-to-use-xml-snippets.md)
+- [Como: usar trechos XML](../xml-tools/how-to-use-xml-snippets.md)

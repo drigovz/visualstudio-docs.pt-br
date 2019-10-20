@@ -4,16 +4,16 @@ ms.date: 10/03/2017
 ms.topic: conceptual
 helpviewer_keywords:
 - Live Unit Testing FAQ
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 545c8974e3d0dea196a6168db03586a37d15ed72
-ms.sourcegitcommit: 1a3c2ca995fd44fc72741b3a100c6e57f4f8702c
+ms.openlocfilehash: 8db8264268eb04edc3140d0e2a6ece5896692e38
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "72262296"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653045"
 ---
 # <a name="live-unit-testing-frequently-asked-questions"></a>Perguntas frequentes sobre o Live Unit Testing
 
@@ -29,9 +29,9 @@ O Live Unit Testing funciona com as três estruturas de teste de unidade popular
 |NUnit |NUnit3TestAdapter versão 3.7.0 |NUnit versão 3.5.0 |
 |MSTest |MSTest.TestAdapter 1.1.4-preview |MSTest.TestFramework 1.0.5-preview |
 
-Se você tiver projetos de teste com base em MSTest mais antigos que referenciem `Microsoft.VisualStudio.QualityTools.UnitTestFramework` e não quiser migrar para os pacotes mais recentes do MSTest NuGet, atualize para o Visual Studio 2019 ou Visual Studio 2017.
+Se você tiver projetos de teste com base em MSTest mais antigos que referenciem `Microsoft.VisualStudio.QualityTools.UnitTestFramework` e não quiser migrar para os pacotes do NuGet do MSTest mais recentes, atualize para o Visual Studio 2019 ou Visual Studio 2017.
 
-Em alguns casos, talvez seja necessário restaurar explicitamente os pacotes NuGet referenciados pelos projetos na solução para que o Live Unit Testing funcione. Você pode restaurar os pacotes fazendo uma compilação explícita da solução (selecione **compilar** > **Recompilar solução** no menu do Visual Studio de nível superior) ou clicando com o botão direito do mouse na solução e selecionando **restaurar pacotes NuGet** antes de habilitar o teste de unidade de vida.
+Em alguns casos, talvez seja necessário restaurar explicitamente os pacotes NuGet referenciados pelos projetos na solução para que o Live Unit Testing funcione. Você pode restaurar os pacotes fazendo uma compilação explícita da solução (selecione **criar**  > **solução de recompilação** no menu do Visual Studio de nível superior) ou clicando com o botão direito do mouse na solução e selecionando **restaurar pacotes NuGet** antes de habilitar o teste de unidade de vida.
 
 ## <a name="net-core-support"></a>Suporte do .NET Core
 
@@ -87,7 +87,7 @@ Por exemplo, pode haver um destino que produz pacotes NuGet durante um build nor
 
 ## <a name="error-messages-with-outputpath-or-outdir"></a>Mensagens de erro com \<OutputPath > ou \<OutDir >
 
-**Por que recebo este erro quando o Live Unit Testing tenta criar minha solução: “... parece definir `<OutputPath>` ou `<OutDir>` incondicionalmente. O Live Unit Testing não executará testes do assembly de saída”?**
+**Por que obtenho o seguinte erro quando o Live Unit Testing tenta criar minha solução: "... aparece para definir incondicionalmente `<OutputPath>` ou `<OutDir>`. Live Unit Testing não executará testes do assembly de saída "?**
 
 Você pode receber esse erro se o processo de build da solução substitui `<OutputPath>` ou `<OutDir>` incondicionalmente e, portanto, ele não é um subdiretório de `<BaseOutputPath>`. Nesses casos, o Live Unit Testing não funcionará, pois ele também substitui esses valores, a fim de garantir que os artefatos de build sejam soltos em uma pasta em `<BaseOutputPath>`. Se precisar substituir a localização em que você deseja que os artefatos de build sejam soltos em um build normal, substitua o `<OutputPath>` condicionalmente com base em `<BaseOutputPath>`.
 
@@ -118,7 +118,7 @@ Não substitua `<OutDir>` diretamente no processo de build; em vez disso, substi
 
 ## <a name="build-artifact-location"></a>Localização do artefato de compilação
 
-**Quero que os artefatos de um build do Live Unit Testing sejam encaminhados para uma localização específica em vez da localização padrão na pasta *.vs*. Como fazer para alterar isso?**
+**Quero que os artefatos de um Live Unit Testing Build vá para um local específico em vez do local padrão na pasta *. vs* . Como posso alterar isso?**
 
 Defina a variável de ambiente em nível de usuário `LiveUnitTesting_BuildRoot` com o caminho no qual você deseja que os artefatos de build do Live Unit Testing sejam soltos. 
 

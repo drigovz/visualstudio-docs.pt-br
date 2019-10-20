@@ -2,26 +2,26 @@
 title: Diretiva de assembly T4
 ms.date: 11/04/2016
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e5dfb9a6489fed2c21d05799e9196c813a224571
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 2c08518d3bcff8d91cc8fabebe7b858c5880ce5b
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63422950"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72671042"
 ---
 # <a name="t4-assembly-directive"></a>Diretiva de assembly T4
 
-Em um modelo de texto de tempo de design do Visual Studio, o `assembly` diretiva carrega um assembly para que o código de modelo possa usar seus tipos. O efeito é semelhante a adicionar uma referência de assembly em um projeto do Visual Studio.
+Em um modelo de texto de tempo de design do Visual Studio, a diretiva `assembly` carrega um assembly para que seu código de modelo possa usar seus tipos. O efeito é semelhante à adição de uma referência de assembly em um projeto do Visual Studio.
 
- Para obter uma visão geral da gravação de modelos de texto, consulte [gravando um modelo de texto T4](../modeling/writing-a-t4-text-template.md).
+ Para obter uma visão geral de como escrever modelos de texto, consulte [escrevendo um modelo de texto T4](../modeling/writing-a-t4-text-template.md).
 
 > [!NOTE]
-> Você não precisa da diretiva `assembly` em um modelo de texto de tempo de execução (pré-processado). Em vez disso, adicione os assemblies necessários para o **referências** do projeto do Visual Studio.
+> Você não precisa da diretiva `assembly` em um modelo de texto de tempo de execução (pré-processado). Em vez disso, adicione os assemblies necessários às **referências** do seu projeto do Visual Studio.
 
 ## <a name="using-the-assembly-directive"></a>Usando a diretiva de assembly
  A sintaxe da diretiva é a seguinte:
@@ -36,13 +36,13 @@ Em um modelo de texto de tempo de design do Visual Studio, o `assembly` diretiva
 
 - O caminho absoluto do assembly
 
-  Você pode usar o `$(variableName)` sintaxe para fazer referência a variáveis do Visual Studio, como `$(SolutionDir)`, e `%VariableName%` para referenciar variáveis de ambiente. Por exemplo:
+  Você pode usar a sintaxe `$(variableName)` para referenciar variáveis do Visual Studio, como `$(SolutionDir)`, e `%VariableName%` para referenciar variáveis de ambiente. Por exemplo:
 
 ```
 <#@ assembly name="$(SolutionDir)\MyProject\bin\Debug\SomeLibrary.Dll" #>
 ```
 
- A diretiva de assembly não tem nenhum efeito em um modelo de texto pré-processado. Em vez disso, inclui as referências necessárias na **referências** seção de seu projeto do Visual Studio. Para obter mais informações, consulte [geração de texto de tempo de execução com modelos de texto T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
+ A diretiva de assembly não tem nenhum efeito em um modelo de texto pré-processado. Em vez disso, inclua as referências necessárias na seção de **referências** do seu projeto do Visual Studio. Para obter mais informações, consulte [geração de texto em tempo de execução com modelos de texto T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
 ## <a name="standard-assemblies"></a>Assemblies padrão
  Os seguintes assemblies são carregados automaticamente, de modo que não seja necessário gravar diretivas de assembly para eles:
@@ -63,8 +63,8 @@ Em um modelo de texto de tempo de design do Visual Studio, o `assembly` diretiva
 
 - O assembly que contém seu DSL.
 
-## <a name="msbuild"></a> Usando propriedades do projeto no MSBuild e o Visual Studio
- Macros do Visual Studio como $ (solutiondir) não funcionam no MSBuild. Se você quiser transformar modelos no computador de compilação, use as propriedades do projeto como alternativa.
+## <a name="msbuild"></a>Usando propriedades de projeto no MSBuild e no Visual Studio
+ Macros do Visual Studio como $ (SolutionDir) não funcionam no MSBuild. Se você quiser transformar modelos no computador de compilação, use as propriedades do projeto como alternativa.
 
  Edite seu arquivo .csproj ou .vbproj para definir uma propriedade do projeto. Este exemplo define uma propriedade chamada `myLibFolder`:
 

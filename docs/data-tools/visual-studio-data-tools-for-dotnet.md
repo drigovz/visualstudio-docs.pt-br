@@ -1,28 +1,28 @@
 ---
-title: Ferramentas de dados para o .NET
+title: Ferramentas de dados para .NET
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: c3175080-1dfb-4ab8-a460-92dadbb844b4
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
 - dotnet
-ms.openlocfilehash: a4a62f629244d44680b3d5ac3233bd45b975302e
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: 224fef3a02a2441553728a9a75fc5f9c456081a1
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66745306"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72648098"
 ---
 # <a name="visual-studio-data-tools-for-net"></a>Ferramentas de dados do Visual Studio para .NET
 
-O Visual Studio e .NET juntos fornecem amplo API e suporte a ferramentas para conectar-se aos bancos de dados, modelagem de dados na memória e exibir os dados na interface do usuário. As classes do .NET que fornecem funcionalidade de acesso a dados são conhecidas como [ADO.NET](/dotnet/framework/data/adonet/index). ADO.NET, juntamente com os dados de ferramentas no Visual Studio, foi projetado principalmente para dar suporte a bancos de dados relacionais e XML. Hoje em dia, muitos fornecedores de banco de dados NoSQL, ou por terceiros, oferecem provedores ADO.NET.
+O Visual Studio e o .NET juntos fornecem amplo suporte de API e ferramentas para conectar-se a bancos de dados, modelar os dados na memória e exibir os dados na interface do usuário. As classes .NET que fornecem a funcionalidade de acesso a dados são conhecidas como [ADO.net](/dotnet/framework/data/adonet/index). O ADO.NET, juntamente com as ferramentas de dados no Visual Studio, foi projetado principalmente para dar suporte a bancos de dados relacionais e XML. Atualmente, muitos fornecedores de banco de dados NoSQL ou terceiros oferecem provedores de ADO.NET.
 
-[.NET core](/dotnet/core/) dá suporte ao ADO.NET, exceto para conjuntos de dados e seus tipos relacionados. Se você estiver direcionando ao .NET Core e exige uma camada de mapeamento relacional de objeto (ORM), use [Entity Framework Core](/ef/core/).
+O [.NET Core](/dotnet/core/) dá suporte a ADO.net, exceto para conjuntos de valores e seus tipos relacionados. Se você estiver direcionando o .NET Core e exigir uma camada de ORM (mapeamento relacional de objeto), use [Entity Framework Core](/ef/core/).
 
-O diagrama a seguir mostra uma exibição simplificada da arquitetura básica:
+O diagrama a seguir mostra uma visão simplificada da arquitetura básica:
 
 ![Arquitetura do ADO.NET](../data-tools/media/raddata-ado-net-architecture-diagram.png)
 
@@ -30,17 +30,17 @@ O diagrama a seguir mostra uma exibição simplificada da arquitetura básica:
 
 O fluxo de trabalho típico é o seguinte:
 
-1. Instale um desenvolvimento ou teste de banco de dados em seu computador local. Ver [instalando sistemas de banco de dados, ferramentas e exemplos](../data-tools/installing-database-systems-tools-and-samples.md). Se você estiver usando um serviço de dados do Azure, essa etapa não é necessária.
+1. Instale um banco de dados de desenvolvimento ou de teste no computador local. Consulte [instalando sistemas de banco de dados, ferramentas e exemplos](../data-tools/installing-database-systems-tools-and-samples.md). Se você estiver usando um serviço de dados do Azure, essa etapa não será necessária.
 
-2. Teste a conexão ao banco de dados (ou serviço ou arquivo local) no Visual Studio. Ver [adicionar novas conexões](../data-tools/add-new-connections.md).
+2. Teste a conexão com o banco de dados (ou o serviço ou arquivo local) no Visual Studio. Consulte [adicionar novas conexões](../data-tools/add-new-connections.md).
 
-3. (Opcional) Use as ferramentas para gerar e configurar um novo modelo. Modelos com base no Entity Framework são a recomendação padrão para novos aplicativos. O modelo, seja qual for o que você utiliza, é a fonte de dados com o qual o aplicativo interage. O modelo logicamente fica entre o banco de dados ou serviço e o aplicativo. Ver [adicionar novas fontes de dados](../data-tools/add-new-data-sources.md).
+3. Adicional Use as ferramentas para gerar e configurar um novo modelo. Modelos baseados em Entity Framework são a recomendação padrão para novos aplicativos. O modelo, seja qual for o que você usa, é a fonte de dados com a qual o aplicativo interage. O modelo fica logicamente entre o banco de dados ou o serviço e o aplicativo. Consulte [adicionar novas fontes de dados](../data-tools/add-new-data-sources.md).
 
-4. Arraste a fonte de dados do **fontes de dados** janela na superfície de design do Windows Forms, ASP.NET ou Windows Presentation Foundation para gerar o código de associação de dados que exibirá os dados para o usuário da maneira que você especificar. Ver [associar controles a dados no Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md).
+4. Arraste a fonte de dados da janela **fontes de dados** para um Windows Forms, ASP.NET ou Windows Presentation Foundation superfície de design para gerar o código de vinculação de dados que exibirá os dados para o usuário da maneira que você especificar. Consulte [ligar controles a dados no Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md).
 
-5. Adicione código personalizado para coisas como as regras de negócio, pesquisa e validação de dados, ou para tirar proveito da funcionalidade personalizada que expõe o banco de dados subjacente.
+5. Adicione código personalizado para coisas como regras de negócio, pesquisa e validação de dados, ou para aproveitar a funcionalidade personalizada que o Database subjacente expõe.
 
-Você pode ignorar a etapa 3 e programar um aplicativo .NET para emitir comandos diretamente para um banco de dados, em vez de usar um modelo. Nesse caso, você encontrará a documentação relevante aqui: [ADO.NET](/dotnet/framework/data/adonet/index). Observe que você ainda pode usar o **Data Source Configuration Wizard** e designers para gerar o código de associação de dados ao popular seus próprios objetos na memória e, em seguida, vincular dados em controles de interface do usuário a esses objetos.
+Você pode ignorar a etapa 3 e programar um aplicativo .NET para emitir comandos diretamente para um banco de dados, em vez de usar um modelo. Nesse caso, você encontrará a documentação relevante aqui: [ADO.NET](/dotnet/framework/data/adonet/index). Observe que você ainda pode usar o **Assistente de configuração da fonte de dados** e designers para gerar código de vinculação de dados quando você preenche seus próprios objetos na memória e os controles de interface do usuário de ligação de dados com esses objetos.
 
 ## <a name="see-also"></a>Consulte também
 

@@ -12,32 +12,32 @@ helpviewer_keywords:
 - forms, passing data between
 - Windows Forms, walkthroughs
 ms.assetid: 78bf038b-9296-4fbf-b0e8-d881d1aff0df
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: dc08b0667d4bcde4a2b0eaf95f966806b4a8931e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: eb4b1c0af617bfd8e1771e500b4f12699e3f0ec4
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62566274"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72641445"
 ---
 # <a name="pass-data-between-forms"></a>Passar dados entre formulários
 
-Este passo a passo fornece instruções detalhadas de como passar os dados de um formulário para outro. Usando as tabelas customers e orders do Northwind, um formulário que os usuários selecionem um cliente e um segundo formulário exibe os pedidos do cliente selecionado. Este passo a passo mostra como criar um método no segundo formulário que recebe dados do primeiro formulário.
+Este passo a passo fornece instruções detalhadas de como passar os dados de um formulário para outro. Usando as tabelas Customers e Orders da Northwind, um formulário permite que os usuários selecionem um cliente e um segundo formulário exibe os pedidos do cliente selecionado. Este tutorial mostra como criar um método no segundo formulário que recebe dados do primeiro formulário.
 
 > [!NOTE]
-> Este passo a passo demonstra apenas uma maneira de passar dados entre formulários. Há outras opções para passar dados para um formulário, incluindo a criação de um segundo construtor para receber dados, ou criando uma propriedade pública que pode ser definida com os dados do primeiro formulário.
+> Este passo a passo demonstra apenas uma maneira de passar dados entre formulários. Há outras opções para passar dados para um formulário, incluindo a criação de um segundo construtor para receber dados ou a criação de uma propriedade pública que pode ser definida com dados do primeiro formulário.
 
 As tarefas ilustradas neste passo a passo incluem:
 
-- Criando um novo **aplicativo do Windows Forms** projeto.
+- Criando um novo projeto de **aplicativo Windows Forms** .
 
-- Criando e configurando um conjunto de dados com o [Data Source Configuration Wizard](../data-tools/media/data-source-configuration-wizard.png).
+- Criando e configurando um conjunto de dados com o [Assistente de configuração de fonte de dados](../data-tools/media/data-source-configuration-wizard.png).
 
-- Selecionando o controle a ser criado no formulário ao arrastar itens da janela **Fontes de Dados**. Para obter mais informações, consulte [definir o controle a ser criado quando arrastado da janela fontes de dados](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
+- Selecionando o controle a ser criado no formulário ao arrastar itens da janela **Fontes de Dados**. Para obter mais informações, consulte [definir o controle a ser criado ao arrastar da janela fontes de dados](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
 
 - Criar controles associados a dados arrastando itens da janela **Fontes de Dados** para um formulário.
 
@@ -47,39 +47,39 @@ As tarefas ilustradas neste passo a passo incluem:
 
 - Passar dados entre formulários.
 
-## <a name="prerequisites"></a>Pré-requisitos
+## <a name="prerequisites"></a>Prerequisites
 
-Este passo a passo usa o SQL Server Express LocalDB e o banco de dados de exemplo Northwind.
+Este passo a passos usa SQL Server Express LocalDB e o banco de dados de exemplo Northwind.
 
-1. Se você não tiver o SQL Server Express LocalDB, instalá-lo a partir de [página de download do SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express), ou por meio de **instalador do Visual Studio**. No instalador do Visual Studio, o SQL Server Express LocalDB pode ser instalado como parte dos **armazenamento de dados e processamento** carga de trabalho, ou como um componente individual.
+1. Se você não tiver SQL Server Express LocalDB, instale-o na [SQL Server Express página de download](https://www.microsoft.com/sql-server/sql-server-editions-express)ou por meio do **instalador do Visual Studio**. No Instalador do Visual Studio, o SQL Server Express LocalDB pode ser instalado como parte da carga de trabalho de **armazenamento e processamento de dados** ou como um componente individual.
 
-2. Instale o banco de dados de exemplo Northwind, seguindo estas etapas:
+2. Instale o banco de dados de exemplo Northwind seguindo estas etapas:
 
-    1. No Visual Studio, abra o **SQL Server Object Explorer** janela. (Pesquisador de objetos do SQL Server é instalado como parte dos **armazenamento de dados e processamento** carga de trabalho no instalador do Visual Studio.) Expanda o **SQL Server** nó. Clique com botão direito na instância do LocalDB e selecione **nova consulta**.
+    1. No Visual Studio, abra a janela **pesquisador de objetos do SQL Server** . (O Pesquisador de Objetos do SQL Server é instalado como parte da carga de trabalho de **armazenamento e processamento de dados** no instalador do Visual Studio.) Expanda o nó **SQL Server** . Clique com o botão direito do mouse na instância do LocalDB e selecione **nova consulta**.
 
-       Abre uma janela do editor de consulta.
+       Uma janela do editor de consultas é aberta.
 
-    2. Cópia de [script Transact-SQL Northwind](https://github.com/MicrosoftDocs/visualstudio-docs/blob/master/docs/data-tools/samples/northwind.sql?raw=true) na área de transferência. Este script T-SQL cria o banco de dados Northwind do zero e a preenche com dados.
+    2. Copie o [script do Transact-SQL Northwind](https://github.com/MicrosoftDocs/visualstudio-docs/blob/master/docs/data-tools/samples/northwind.sql?raw=true) para a área de transferência. Esse script T-SQL cria o banco de dados Northwind a partir do zero e o preenche com os mesmos.
 
-    3. Cole o script T-SQL no editor de consultas e, em seguida, escolha o **Execute** botão.
+    3. Cole o script T-SQL no editor de consultas e, em seguida, escolha o botão **executar** .
 
-       Após alguns instantes, a consulta termina a execução e o banco de dados Northwind é criado.
+       Após um curto período, a consulta terminará de ser executada e o banco de dados Northwind será criado.
 
-## <a name="create-the-windows-forms-app-project"></a>Criar o projeto de aplicativo do Windows Forms
+## <a name="create-the-windows-forms-app-project"></a>Criar o projeto de aplicativo Windows Forms
 
-1. No Visual Studio, sobre o **arquivo** menu, selecione **New** > **projeto**.
+1. No Visual Studio, no menu **arquivo** , selecione **novo** **projeto**de  > .
 
-2. Expanda o **Visual c#** ou **Visual Basic** no painel esquerdo, em seguida, selecione **área de trabalho do Windows**.
+2. Expanda **o C# Visual** ou **Visual Basic** no painel esquerdo e, em seguida, selecione **área de trabalho do Windows**.
 
-3. No painel central, selecione a **aplicativo do Windows Forms** tipo de projeto.
+3. No painel central, selecione o tipo de projeto **Windows Forms aplicativo** .
 
-4. Nomeie o projeto **PassingDataBetweenForms**e, em seguida, escolha **Okey**.
+4. Nomeie o projeto **PassingDataBetweenForms**e escolha **OK**.
 
      O projeto **PassingDataBetweenForms** é criado e adicionado ao **Gerenciador de Soluções**.
 
 ## <a name="create-the-data-source"></a>Criar a fonte de dados
 
-1. Para abrir o **fontes de dados** janela diante de **dados** menu, clique em **Mostrar fontes de dados**.
+1. Para abrir a janela **fontes de dados** , no menu **dados** , clique em **mostrar fontes de dados**.
 
 2. Na janela **Fontes de Dados**, selecione **Adicionar Nova Fonte de Dados** para iniciar o assistente de **Configuração de Fonte de Dados**.
 
@@ -95,9 +95,9 @@ Este passo a passo usa o SQL Server Express LocalDB e o banco de dados de exempl
 
 6. Se o banco de dados exigir uma senha e a opção para incluir dados confidenciais estiver habilitada, clique em **Avançar**.
 
-7. Sobre o **salvar a cadeia de caracteres de conexão para o arquivo de configuração de aplicativo** , clique em **próxima**.
+7. Na página **salvar cadeia de conexão no arquivo de configuração do aplicativo** , clique em **Avançar**.
 
-8. Sobre o **Choose your Database Objects** página, expanda o **tabelas** nó.
+8. Na página **escolher seus objetos de banco de dados** , expanda o nó **tabelas** .
 
 9. Selecione as tabelas **Customers** e **Orders** e, em seguida, clique em **Finalizar**.
 
@@ -115,7 +115,7 @@ Você pode criar uma grade de associação de dados (um controle <xref:System.Wi
 
 ## <a name="create-the-second-form"></a>Criar o segundo formulário
 
-Crie um segundo formulário para passar dados.
+Crie um segundo formulário para o qual passar dados.
 
 1. No menu **Projeto**, escolha **Adicionar Formulário do Windows**.
 
@@ -131,7 +131,7 @@ Crie um segundo formulário para passar dados.
 
 ## <a name="add-a-tableadapter-query"></a>Adicionar uma consulta do TableAdapter
 
-Adicione uma consulta TableAdapter ao Form2 para carregar pedidos do cliente selecionado no Form1.
+Adicione uma consulta do TableAdapter ao Form2 para carregar pedidos para o cliente selecionado no Form1.
 
 1. Clique duas vezes no arquivo **NorthwindDataSet.xsd** no **Gerenciador de Soluções**.
 
@@ -154,7 +154,7 @@ Adicione uma consulta TableAdapter ao Form2 para carregar pedidos do cliente sel
 
 6. Clique em **Avançar**.
 
-7. Para o **preencha um nome de DataTableMethod**, tipo `FillByCustomerID`.
+7. Para obter **um nome de DataTableMethod de preenchimento**, digite `FillByCustomerID`.
 
 8. Desmarque a opção **Retornar uma DataTable** e clique em **Avançar**.
 
@@ -196,7 +196,7 @@ Dependendo dos requisitos de aplicativo, existem várias etapas que você talvez
 
 - Editando o conjunto de dados para adicionar ou remover objetos de banco de dados. Para obter mais informações, consulte [Create and configure datasets (Criar e configurar conjuntos de dados)](../data-tools/create-and-configure-datasets-in-visual-studio.md).
 
-- Adicionar funcionalidade para salvar dados de volta no banco de dados. Para obter mais informações, consulte [salvar dados no banco de dados](../data-tools/save-data-back-to-the-database.md).
+- Adicionar funcionalidade para salvar dados de volta no banco de dados. Para obter mais informações, consulte [salvar dados de volta no banco de dado](../data-tools/save-data-back-to-the-database.md).
 
 ## <a name="see-also"></a>Consulte também
 
