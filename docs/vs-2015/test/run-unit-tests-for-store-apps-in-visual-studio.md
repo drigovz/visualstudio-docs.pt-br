@@ -1,5 +1,5 @@
 ---
-title: Executar testes de unidade para aplicativos da Store
+title: Executar testes de unidade para aplicativos da loja
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-test
@@ -7,14 +7,14 @@ ms.topic: conceptual
 ms.assetid: 5a6f5b32-bfce-4a63-81e9-02d54c592539
 caps.latest.revision: 14
 author: alexhomer1
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: bfcdb3906f405b9f7ba4650be13f4522ab559ee8
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 5bdcd9a5d3565bf4b7a92d658a5a270bbff6483c
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446203"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72672244"
 ---
 # <a name="run-unit-tests-for-store-apps-in-visual-studio"></a>Executar testes de unidade de aplicativos da Store no Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,7 +62,7 @@ Este tópico descreve como executar testes de unidade usando o Gerenciador de Te
 
  Você pode executar a maior parte do trabalho de encontrar, organizar e executar testes usando a barra de ferramentas do Gerenciador de Testes.
 
- ![Executar testes na barra de ferramentas do Gerenciador de Testes](../test/media/ute-toolbar.png "UTE_ToolBar")
+ ![Executar testes da barra de ferramentas do Test Explorer](../test/media/ute-toolbar.png "UTE_ToolBar")
 
 ### <a name="BKMK_Running_tests"></a> Executando testes
  Você pode executar todos os testes na solução, todos os testes em um grupo ou um conjunto de testes que você selecionar. Realize um dos seguintes procedimentos:
@@ -96,7 +96,7 @@ Este tópico descreve como executar testes de unidade usando o Gerenciador de Te
 - O rastreamento de pilha no momento em que o teste falhou.
 
 ### <a name="BKMK_Viewing_the_source_code_of_a_test_method"></a> Exibindo o código-fonte de um método de teste
- Para exibir o código-fonte de um método de teste no editor do Visual Studio, selecione o teste e, em seguida, escolha **Abrir Teste** no menu de atalho (teclado: F12).
+ Para exibir o código-fonte para um método de teste no editor do Visual Studio, selecione o teste e, em seguida, escolha **Abrir teste** no menu de atalho (teclado: F12).
 
 ## <a name="BKMK_Organizing_the_test_list"></a> Organizando a lista de testes
 
@@ -105,7 +105,7 @@ Este tópico descreve como executar testes de unidade usando o Gerenciador de Te
 
 |||
 |-|-|
-|![Botão do grupo do Gerenciador de Testes](../test/media/ute-groupby-btn.png "UTE_GroupBy_btn")|Para agrupar os testes pelo tempo necessário para executá-los, abra a lista **Agrupar por** e escolha **Duração**. Escolha **Resultado do Teste** para mudar para o agrupamento original.|
+|![Botão de grupo do Gerenciador de teste](../test/media/ute-groupby-btn.png "UTE_GroupBy_btn")|Para agrupar os testes pelo tempo necessário para executá-los, abra a lista **Agrupar por** e escolha **Duração**. Escolha **Resultado do Teste** para mudar para o agrupamento original.|
 
 ### <a name="BKMK_Searching_and_filtering_the_test_list"></a> Pesquisando e filtrando a lista de testes
  Quando você tiver um grande número de testes, poderá digitar na caixa de pesquisa do Gerenciador de Testes para filtrar a lista por cadeia de caracteres especificada. Você pode restringir o filtro a tipos específicos de cadeias de caracteres escolhendo na lista de filtros antes de inserir a cadeia de caracteres de pesquisa.

@@ -1,5 +1,5 @@
 ---
-title: Usando o ambiente de desenvolvimento para C# | Microsoft Docs
+title: Usando o ambiente de desenvolvimento C# para | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -14,27 +14,27 @@ helpviewer_keywords:
 - Visual C#, development environment
 ms.assetid: e10e2cba-641f-47a3-88a3-6748965254d7
 caps.latest.revision: 29
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 6e5b52e74eac3e9301ebb10d91c560929b1ef313
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 0cd8d8f2be0a653189130de6b38c8586957948d9
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65688025"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72673153"
 ---
-# <a name="using-the-visual-studio-development-environment-for-c"></a>Usando o ambiente de desenvolvimento do Visual Studio para C\#
+# <a name="using-the-visual-studio-development-environment-for-c"></a>Usando o ambiente de desenvolvimento do Visual Studio para C \#
 
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-O ambiente de desenvolvimento integrado (IDE) do Visual Studio é uma coleção de ferramentas de desenvolvimento expostas por meio de uma interface de usuário comum. Algumas ferramentas são compartilhados com outras linguagens [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] e outras, como o compilador C#, são exclusivas do Visual C#. Este tópico fornece links para as ferramentas do Visual C# mais importantes.
+O IDE (ambiente de desenvolvimento integrado) do Visual Studio é uma coleção de ferramentas de desenvolvimento expostas por meio de uma interface do usuário comum. Algumas ferramentas são compartilhados com outras linguagens [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] e outras, como o compilador C#, são exclusivas do Visual C#. Este tópico fornece links para as ferramentas do Visual C# mais importantes.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 |Título|Descrição|
 |-----------|-----------------|
-|[Passo a passo: Criar um aplicativo simples](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)|Fornece uma visão geral de vários recursos e ferramentas incluídos no Visual Studio para o desenvolvimento de aplicativos.|
+|[Passo a passo: criar um aplicativo simples](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)|Fornece uma visão geral de vários recursos e ferramentas incluídos no Visual Studio para o desenvolvimento de aplicativos.|
 |[Criando soluções e projetos](../ide/creating-solutions-and-projects.md)|Descreve como criar um projeto que contém todos os arquivos de código-fonte, arquivos de recursos como ícones, referências a arquivos externos e dados de configuração como configurações do compilador.|
 |[Introdução ao Designer de Projeto](https://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7)|Fornece uma visão geral do Designer de Projeto que oferece um local central para gerenciamento de propriedades, configurações e recursos de projetos.|
 |[Escrevendo código](../ide/writing-code-in-the-code-and-text-editor.md)|Descreve as ferramentas do Visual Studio que ajudam a modificar e manipular texto, código e marcação, inserir e configurar controles e outros objetos e namespaces, além de adicionar referências a componentes e recursos externos.|
@@ -42,7 +42,7 @@ O ambiente de desenvolvimento integrado (IDE) do Visual Studio é uma coleção 
 |[Snippets de código do Visual C#](../ide/visual-csharp-code-snippets.md)|Fornece uma visão geral do uso de snippets de código no Visual C# para adicionar automaticamente construções de código comuns ao seu aplicativo|
 |[Escrevendo código](../ide/writing-code-in-the-code-and-text-editor.md)|Fornece links para procedimentos sobre como usar a janela Localizar e Substituir, Indicadores, Lista de Tarefas e Lista de Erros para localizar linhas de código.|
 |[Exibindo a estrutura do código](../ide/viewing-the-structure-of-code.md)|Explica como procurar hierarquias de classes, membros de classes e recursos.|
-|[Como: adicionar um arquivo de configuração de aplicativo a um projeto C#](../csharp-ide/how-to-add-an-application-configuration-file-to-a-csharp-project.md)|Descreve como adicionar um arquivo de configuração (app.config) a um projeto C#.|
+|[Como adicionar um arquivo de configuração do aplicativo a um projeto C#](../csharp-ide/how-to-add-an-application-configuration-file-to-a-csharp-project.md)|Descreve como adicionar um arquivo de configuração (app.config) a um projeto C#.|
 |[Metadados como origem](../csharp-ide/metadata-as-source.md)|Descreve como o IDE permite exibir metadados como códigos-fonte.|
 |[Refatoração (C#)](../csharp-ide/refactoring-csharp.md)|Lista as operações de refatoração que ajudam a modificar seu código sem mudar o comportamento do aplicativo.|
 |[Compilando e criando](../ide/compiling-and-building-in-visual-studio.md)|Explica como configurar depuração, versão e compilações especiais de sua solução do Visual Studio.|

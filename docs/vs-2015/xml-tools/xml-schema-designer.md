@@ -6,38 +6,34 @@ ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: ffdf63ee-faa6-45b7-bbf9-a5644dc8aca2
 caps.latest.revision: 12
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 72d5defa8a9cef04a4564d8974859de024c97dea
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9c2b72683f37e454ed157fdc26b40da499b91697
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68158526"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72669413"
 ---
 # <a name="xml-schema-designer"></a>Designer de Esquema XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-O Designer de Esquema XML (Designer XSD) é uma ferramenta gráfica por meio da qual é possível visualizar um esquema definido em níveis distintos de abstração. Estes são os principais componentes do Designer XSD:    
-  
-- [XML Schema Explorer](../xml-tools/xml-schema-explorer.md) lhe permite procurar e navegar na árvore de esquema XML e executar pesquisas.  
-  
-- O [exibição inicial](../xml-tools/start-view.md) é o ponto de partida para o Designer XSD; a partir da exibição inicial, você pode navegar para outros modos de exibição do Designer XSD e ver os detalhes de seu conjunto de esquema.  
-  
-- O [modo de exibição gráfico](../xml-tools/graph-view.md) permite que você veja uma visão geral de um conjunto de esquema e as relações entre os nós do esquema.  
-  
-- O [modo de exibição do modelo de conteúdo](../xml-tools/content-model-view.md) fornece uma representação gráfica dos detalhes de nós de esquema local e global, incluindo tipos complexos e simples, elementos, grupos, atributos e grupos de atributos.  
-  
-## <a name="in-this-section"></a>Nesta seção  
- [XML Schema Explorer](../xml-tools/xml-schema-explorer.md)  
- Permite que você tenha uma visão geral do XML Schema Explorer e entenda como utilizá-lo para trabalhar com os esquemas (XSD) de linguagem de definição de esquema XML.  
-  
- [O workspace do designer de esquema XML](../xml-tools/xml-schema-designer-workspace.md)  
- Oferece uma visão geral do workspace do Designer de Esquema XSD.  
-  
- [Integração com editor de XML](../xml-tools/integration-with-xml-editor.md)  
- Descreve o modo como o Designer de Esquema XML está integrado ao Editor XML.  
-  
- [Tarefas do Designer de Esquema XML](../xml-tools/xml-schema-designer-tasks.md)  
- Descreve como concluir tarefas comuns com as ferramentas do Designer de Esquema XML.
+O Designer de Esquema XML (Designer XSD) é uma ferramenta gráfica por meio da qual é possível visualizar um esquema definido em níveis distintos de abstração. Estes são os principais componentes do Designer XSD:
+
+- O [XML Schema Explorer](../xml-tools/xml-schema-explorer.md) permite procurar e navegar na árvore de esquema XML e realizar pesquisas.
+
+- A [exibição inicial](../xml-tools/start-view.md) é o ponto de partida para o designer XSD; na exibição iniciar, você pode navegar para outras exibições do designer XSD e ver os detalhes do conjunto de esquema.
+
+- A [exibição de gráfico](../xml-tools/graph-view.md) permite que você veja uma visão geral de um conjunto de esquema e as relações entre os nós de esquema.
+
+- A [exibição de modelo de conteúdo](../xml-tools/content-model-view.md) fornece uma representação gráfica dos detalhes de nós de esquema locais e globais, incluindo tipos simples e complexos, elementos, grupos, atributos e grupos de atributos.
+
+## <a name="in-this-section"></a>Nesta seção
+ [Gerenciador de esquema XML](../xml-tools/xml-schema-explorer.md) Fornece uma visão geral do XML Schema Explorer e como ele permite que você trabalhe com esquemas XSD (linguagem de definição de esquema XML).
+
+ [Espaço de trabalho do designer de esquema XML](../xml-tools/xml-schema-designer-workspace.md) Fornece uma visão geral do espaço de trabalho do designer de esquema XSD.
+
+ [Integração com o editor de XML](../xml-tools/integration-with-xml-editor.md) Descreve como o designer de esquema XML é integrado ao editor de XML.
+
+ [Tarefas do designer de esquema XML](../xml-tools/xml-schema-designer-tasks.md) Descreve como concluir tarefas comuns com as ferramentas de designer de esquema XML.

@@ -1,46 +1,46 @@
 ---
-title: 'Como: Examinar o modelo de conteúdo de nós usando o modo de exibição do modelo de conteúdo | Microsoft Docs'
+title: Como examinar o modelo de conteúdo de nós usando a exibição de modelo de conteúdo | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: c42ddac8-b0e3-48d6-9832-112a19d6c104
 caps.latest.revision: 10
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 24ceb80c0ffd03e7c796b7a5d5abdc93f4c1c78d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ddadcb0fbd772a5638bf6023b8cf6c18fbd270d7
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68179542"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72670852"
 ---
-# <a name="how-to-examine-the-content-model-of-nodes-using-the-content-model-view"></a>Como: Examinar o modelo de conteúdo dos nós usando o modo de exibição de modelo de conteúdo
+# <a name="how-to-examine-the-content-model-of-nodes-using-the-content-model-view"></a>Como: Examine o modelo de conteúdo de nós usando a exibição do modelo de conteúdo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Este tópico descreve como explorar os nós usando o [modo de exibição do modelo de conteúdo](../xml-tools/content-model-view.md).  
-  
-### <a name="to-create-a-new-xsd-file-and-display-the-root-element-in-the-content-model-view"></a>Para criar um novo arquivo XSD e exibir o elemento raiz no modo do modelo de conteúdo  
-  
-1. Crie um novo arquivo de esquema XML.  
-  
-2. Clique em **Use o Editor de XML para exibir e editar o arquivo de esquema XML subjacente** no modo de início.  
-  
-3. Copie o código de exemplo de esquema XML do [esquema XML de exemplo: Esquema de ordem de compra](../xml-tools/sample-xsd-file-purchase-order-schema.md) e cole-o para substituir o código que foi adicionado ao novo arquivo XSD por padrão.  
-  
-4. Selecione o `purchaseOrder` elemento no esquema Explorer clicando com o `purchaseOrder` no Editor de XML do elemento e selecionando **Mostrar em XML Explorer**.  
-  
-5. Clique com botão direito do `purchaseOrder` no XML Explorer e selecione **Mostrar na exibição do modelo de conteúdo**.  
-  
-     A exibição do modelo de conteúdo exibe o elemento de `purchaseOrder` na superfície de design.  
-  
-6. Expanda `shipTo`, `billTo`, e nós de `items` clicando duas vezes em cada nó ou double clicando na seta à direita de cada nó.  
-  
-     Os nós de elemento de `purchaseOrder` são expandidos e agora você pode ver o modelo de conteúdo do elemento.  
-  
-7. Clique em qualquer nó no elemento de `purchaseOrder` e examine a barra de rastreamento para ver onde o esquema define o nó selecionado for encontrado.  
-  
-8. Clique o **mostrar a documentação** botão na barra de ferramentas XSD para ativar /desativar o documenation. Você também pode clicar com o botão direito do mouse na superfície de design para ativar /desativar a documentação.  
-  
-9. Rick-clique a `purchaseOrder` nó e selecione **gerar XML de exemplo** para ver o documento de instância XML.
+Este tópico descreve como explorar seus nós usando a [exibição de modelo de conteúdo](../xml-tools/content-model-view.md).
+
+### <a name="to-create-a-new-xsd-file-and-display-the-root-element-in-the-content-model-view"></a>Para criar um novo arquivo XSD e exibir o elemento raiz no modo do modelo de conteúdo
+
+1. Crie um novo arquivo de esquema XML.
+
+2. Clique em **usar editor de XML para exibir e editar o arquivo de esquema XML subjacente** na exibição iniciar.
+
+3. Copie o código de exemplo do esquema XML do [esquema XML de exemplo: ordem de compra esquema](../xml-tools/sample-xsd-file-purchase-order-schema.md) e cole-o para substituir o código que foi adicionado ao novo arquivo XSD por padrão.
+
+4. Selecione o elemento `purchaseOrder` no Gerenciador de esquema clicando com o botão direito do mouse no elemento `purchaseOrder` no editor de XML e selecionando **Mostrar no Gerenciador de XML**.
+
+5. Clique com o botão direito do mouse na `purchaseOrder` no Gerenciador de XML e selecione **Mostrar na exibição de modelo de conteúdo**.
+
+     A exibição do modelo de conteúdo exibe o elemento de `purchaseOrder` na superfície de design.
+
+6. Expanda `shipTo`, `billTo`, e nós de `items` clicando duas vezes em cada nó ou double clicando na seta à direita de cada nó.
+
+     Os nós de elemento de `purchaseOrder` são expandidos e agora você pode ver o modelo de conteúdo do elemento.
+
+7. Clique em qualquer nó no elemento de `purchaseOrder` e examine a barra de rastreamento para ver onde o esquema define o nó selecionado for encontrado.
+
+8. Clique no botão **Mostrar documentação** na barra de ferramentas XSD para alternar documentação. Você também pode clicar com o botão direito do mouse na superfície de design para ativar /desativar a documentação.
+
+9. Rick-clique no nó `purchaseOrder` e selecione **gerar XML de exemplo** para ver o documento de instância XML.
