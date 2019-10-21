@@ -9,17 +9,17 @@ helpviewer_keywords:
 - Option Compare statement, setting in the IDE
 - Option Strict statement, setting in the IDE
 ms.assetid: 2465cd9d-18b6-4c4a-b1ea-86dbab23fc79
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7322ee72509a199e3b4168a0b24083fe463e2457
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: 64641ebf47e5a5c91b7e20f1ddafe9490649ec9a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68925954"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72622394"
 ---
 # <a name="visual-basic-defaults-projects-options-dialog-box"></a>Caixa de diálogo Padrões do Visual Basic, Projetos, Opções
 Especifica as configurações padrão para opções de projeto do Visual Basic. Quando um novo projeto é criado, as instruções da opção especificada serão adicionadas ao cabeçalho do projeto no Editor de Códigos. As opções se aplicam a todos os projetos do Visual Basic.
@@ -36,12 +36,12 @@ Define o padrão do compilador para que as conversões de estreitamento explíci
 
  **Opção Comparar**
 
-Define o padrão do compilador para comparações de cadeia de caracteres: binário (diferencia maiúsculas de minúsculas) ou texto (não diferencia maiúsculas de minúsculas). Por padrão, **Opção Compare** fica definido como **Binário**. Para obter mais informações, consulte [/optioncompare](/dotnet/visual-basic/reference/command-line-compiler/optioncompare).
+Define o padrão do compilador para comparações de cadeias de caracteres: Binary (diferencia maiúsculas de minúsculas) ou texto (não diferencia maiúsculas de minúsculas.) Por padrão, a **opção Compare** é definida como **Binary**. Para obter mais informações, consulte [/optioncompare](/dotnet/visual-basic/reference/command-line-compiler/optioncompare).
 
  **Opção Inferir**
 
 Define o padrão do compilador para inferência de tipo de variável local. Por padrão, **Opção Infer** é definido como **Ativado** para projetos criados recentemente e como **Desativado** para projetos migrados criados em versões anteriores do Visual Basic. Para obter mais informações, consulte [/optioninfer](/dotnet/visual-basic/reference/command-line-compiler/optioninfer).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Soluções e projetos](../../ide/solutions-and-projects-in-visual-studio.md)
