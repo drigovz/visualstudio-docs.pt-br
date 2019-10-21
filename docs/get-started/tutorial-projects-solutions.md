@@ -4,17 +4,17 @@ ms.date: 07/22/2019
 ms.technology: vs-ide-general
 ms.custom: get-started
 ms.topic: tutorial
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dfa9c2871a414d5ce6be6c0b64f10b3f57ca7305
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
-ms.translationtype: HT
+ms.openlocfilehash: caa8fde228d83cbb14b911965573e78648133b81
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70180179"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647814"
 ---
 # <a name="learn-about-projects-and-solutions"></a>Saiba mais sobre projetos e soluções
 
@@ -245,7 +245,7 @@ A linha no arquivo *Calendar.cs* que contém o atributo <xref:System.Runtime.Com
 
 1. No **Gerenciador de Soluções**, selecione o projeto **QuickTest**. Ao clicar com o botão direito do mouse ou no menu de contexto, selecione **Propriedades** ou pressione **Alt**+**Enter**.
 
-   As *páginas de propriedades* do projeto são abertas na guia **Aplicativo**. As páginas de propriedades contêm várias configurações para o projeto. Observe que o nome do assembly do projeto **QuickTest** é, de fato, “QuickTest”. Caso deseje alterá-lo, este é o local em que você poderá fazer isso. Assim, quando você compilar o projeto de teste, o nome do arquivo binário resultante será alterado de *QuickTest.dll* para o que você escolher.
+   As *páginas de propriedades* do projeto abertas na guia **aplicativo** . As páginas de propriedades contêm várias configurações para o projeto. Observe que o nome do assembly do projeto **QuickTest** é realmente "QuickTest". Caso deseje alterá-lo, este é o local em que você poderá fazer isso. Assim, quando você compilar o projeto de teste, o nome do arquivo binário resultante será alterado de *QuickTest.dll* para o que você escolher.
 
    ![Propriedades de projeto](media/tutorial-projects-netcore-properties.png)
 
@@ -263,7 +263,7 @@ Se você quiser verificar se seu teste de unidade está funcionando, selecione *
 ## <a name="see-also"></a>Consulte também
 
 - [Criar projetos e soluções](../ide/creating-solutions-and-projects.md)
-- [Gerenciar propriedades do projeto e da solução](../ide/managing-project-and-solution-properties.md)
+- [Gerenciar propriedades de solução e de projeto](../ide/managing-project-and-solution-properties.md)
 - [Gerenciar referências em um projeto](../ide/managing-references-in-a-project.md)
 - [Desenvolver código no Visual Studio sem projetos ou soluções](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)
 - [Visão geral do IDE do Visual Studio](../get-started/visual-studio-ide.md)

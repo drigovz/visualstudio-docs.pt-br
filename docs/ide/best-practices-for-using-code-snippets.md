@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - code snippets, best practices
 - code snippets, security
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 42a6eec4b6478f9a789c81311fdfdec4e664cb8a
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
-ms.translationtype: HT
+ms.openlocfilehash: 8afb10d2fb5dcf99c63fb12ac624b904353d95b9
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67825953"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647760"
 ---
 # <a name="best-practices-for-using-code-snippets"></a>Práticas recomendadas para usar snippets de código
 
@@ -23,7 +23,7 @@ O código em um snippet de código mostra somente a maneira mais simples de faze
 
 ## <a name="handling-exceptions"></a>Tratando exceções
 
-Normalmente, o snippet de código Try...Catch bloqueia a captura e gera todas as exceções novamente. Essa pode não ser a escolha certa para seu projeto. Para cada exceção, existem várias maneiras de responder. Para ver mais exemplos, veja [Como: Tratar uma exceção usando try/catch (C#)](/dotnet/csharp/programming-guide/exceptions/how-to-handle-an-exception-using-try-catch) e [Instrução Try...Catch...Finally (Visual Basic)](/dotnet/visual-basic/language-reference/statements/try-catch-finally-statement).
+Normalmente, o snippet de código Try...Catch bloqueia a captura e gera todas as exceções novamente. Essa pode não ser a escolha certa para seu projeto. Para cada exceção, existem várias maneiras de responder. Para obter exemplos, confira [Como manipular uma exceção usando try/catch (C#)](/dotnet/csharp/programming-guide/exceptions/how-to-handle-an-exception-using-try-catch) e [Instrução Try...Catch...Finally (Visual Basic)](/dotnet/visual-basic/language-reference/statements/try-catch-finally-statement).
 
 ## <a name="file-locations"></a>Locais de arquivo
 

@@ -6,17 +6,17 @@ helpviewer_keywords:
 - project templates [Visual Studio], locations
 - item templates [Visual Studio], locations
 - template locations [Visual Studio]
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: db74d23cf42e371f00bf25c7edcd8c480f7649d4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: f9035e63fd172727f3bfae44e18a0727599d4edc
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62430270"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72645888"
 ---
-# <a name="how-to-locate-and-organize-project-and-item-templates"></a>Como: Localizar e organizar modelos de projeto de e item
+# <a name="how-to-locate-and-organize-project-and-item-templates"></a>Como localizar e organizar modelos de projeto e de item
 
 Arquivos de modelo precisam ser colocados em um local conhecido para que eles sejam mostrados no novo projeto e em caixas de diálogo do novo item.
 
@@ -60,7 +60,7 @@ Por exemplo, o diretório a seguir contém os modelos de item do Visual Basic pa
 
 ### <a name="user-templates"></a>Modelos do usuário
 
-Se você adicionar um arquivo compactado (*.zip*) que inclua um arquivo *.vstemplate* no diretório de modelos do usuário, o modelo aparecerá nas caixas de diálogo Novo Projeto e Adicionar Novo Item. Por padrão, os modelos do usuário estão localizados em:
+Se você adicionar um arquivo compactado ( *.zip*) que inclua um arquivo *.vstemplate* no diretório de modelos do usuário, o modelo aparecerá nas caixas de diálogo Novo Projeto e Adicionar Novo Item. Por padrão, os modelos do usuário estão localizados em:
 
 ::: moniker range="vs-2017"
 
@@ -108,7 +108,7 @@ As categorias nas caixas de diálogo **Novo Projeto** e **Adicionar Novo Item** 
 
 1. No menu **Arquivo**, escolha **Novo** > **Projeto**.
 
-   A categoria **HelloWorld** aparece na caixa de diálogo **Novo Projeto** em **Instalado** > **Visual C#**.
+   A categoria **HelloWorld** aparece na caixa de diálogo **Novo Projeto** em **Instalado** > **Visual C#** .
 
 ### <a name="create-new-user-item-template-categories"></a>Criar categorias de modelo de item do usuário
 
@@ -120,7 +120,7 @@ As categorias nas caixas de diálogo **Novo Projeto** e **Adicionar Novo Item** 
 
 1. Crie um projeto ou abra um projeto existente. Em seguida, no menu **Projeto**, escolha **Adicionar Novo Item**.
 
-   A categoria **HelloWorld** aparece na caixa de diálogo **Adicionar Novo Item** em **Instalado** > **Itens do Visual C#**.
+   A categoria **HelloWorld** aparece na caixa de diálogo **Adicionar Novo Item** em **Instalado** > **Itens do Visual C#** .
 
 ### <a name="display-templates-in-parent-categories"></a>Exibir modelos em categorias pai
 
@@ -146,7 +146,7 @@ Você pode habilitar modelos em subcategorias a serem exibidos em suas categoria
 
 1. Salve e feche o arquivo *.vstemplate*.
 
-1. Selecione os arquivos em seu modelo, clique com o botão direito do mouse na seleção e escolha **Enviar para** > **Pasta compactada (zipada)**.
+1. Selecione os arquivos em seu modelo, clique com o botão direito do mouse na seleção e escolha **Enviar para** > **Pasta compactada (zipada)** .
 
    Os arquivos são compactados em um arquivo *.zip*.
 
@@ -161,5 +161,5 @@ Você pode habilitar modelos em subcategorias a serem exibidos em suas categoria
 - [Personalizar modelos](../ide/customizing-project-and-item-templates.md)
 - [Referência de esquema de modelo do Visual Studio (extensibilidade)](../extensibility/visual-studio-template-schema-reference.md)
 - [NumberOfParentCategoriesToRollUp (modelos do Visual Studio)](../extensibility/numberofparentcategoriestorollup-visual-studio-templates.md)
-- [Como: Criar modelos de projeto](../ide/how-to-create-project-templates.md)
-- [Como: Criar modelos de item](../ide/how-to-create-item-templates.md)
+- [Como criar modelos de projeto](../ide/how-to-create-project-templates.md)
+- [Como criar modelos de item](../ide/how-to-create-item-templates.md)
