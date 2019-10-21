@@ -155,7 +155,7 @@
         - name: Criar exibições personalizadas de objetos gerenciados
           items:
             - name: Criar exibições personalizadas de objetos gerenciados
-              href: create-custom-views-of-dot-managed-objects.md
+              href: create-custom-views-of-managed-objects.md
             - name: Usando o atributo DebuggerTypeProxy
               href: using-debuggertypeproxy-attribute.md
             - name: Usando o atributo DebuggerDisplay
@@ -682,9 +682,9 @@
                       href: how-to-enable-debugging-for-aspnet-applications.md
                     - name: Executar o processo de trabalho em uma conta de usuário
                       href: how-to-run-the-worker-process-under-a-user-account.md
-                - name: Pré-requisitos para aplicativos Web de depuração remota
+                - name: Pré-requisitos para depuração remota de aplicativos Web
                   items:
-                    - name: Pré-requisitos para aplicativos Web de depuração remota
+                    - name: Pré-requisitos para depuração remota de aplicativos Web
                       href: prerequistes-for-remote-debugging-web-applications.md
                     - name: Localizar o nome do processo do ASP.NET
                       href: how-to-find-the-name-of-the-aspnet-process.md
