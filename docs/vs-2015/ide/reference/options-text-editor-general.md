@@ -45,61 +45,47 @@ helpviewer_keywords:
 - editors, global settings
 ms.assetid: 4ac21e48-3243-4141-9058-7eaf12b3cde7
 caps.latest.revision: 34
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 423c79bc2fc6640180b0dfa9f6e9d59ef1d37dcc
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: fa81b08d6e375da4ad67b2e6eec32f244a779408
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65695872"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72662258"
 ---
 # <a name="options-text-editor-general"></a>Opções, Editor de Texto, Geral
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Essa caixa de diálogo permite alterar as configurações globais para o Editor de Texto e Código do [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Para exibir essa caixa de diálogo, clique em **Opções** no menu **Ferramentas**, expanda a pasta **Editor de Texto** e clique em **Geral**.  
-  
+Essa caixa de diálogo permite alterar as configurações globais para o Editor de Texto e Código do [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Para exibir essa caixa de diálogo, clique em **Opções** no menu **Ferramentas**, expanda a pasta **Editor de Texto** e clique em **Geral**.
+
 > [!NOTE]
-> As caixas de diálogo e os comandos de menu que você vê podem ser diferentes dos descritos na Ajuda, dependendo da sua edição ou das configurações ativas. Para alterar as configurações, escolha **Importar e Exportar Configurações** no menu **Ferramentas**. Para obter mais informações, consulte [Personalizando configurações de desenvolvimento no Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
-  
-## <a name="settings"></a>Configurações  
- Recurso de edição arrastar-e-soltar  
- Quando selecionado, permite mover texto selecionando-o e arrastando-o com o mouse para outro local no documento atual ou em qualquer outro documento aberto.  
-  
- Realce automático de delimitadores  
- Quando selecionado, os caracteres delimitadores que separam parâmetros ou pares de valor do item, bem como as chaves correspondentes, são realçados.  
-  
- Controlar alterações  
- Quando o editor de códigos é selecionado, uma linha amarela vertical aparece na margem de seleção para marcar o código que foi alterado desde que o arquivo foi salvo mais recentemente. Quando você salva as alterações, as linhas verticais ficam verdes.  
-  
- Detecção automática de codificação UTF-8 sem assinatura  
- Por padrão, o editor detecta a codificação procurando por marcas de ordem de byte ou marcas de conjunto de caracteres. Se nenhum deles for encontrado no documento atual, o editor de códigos tenta detectar automaticamente a codificação UTF-8 examinando sequências de bytes. Para desabilitar a detecção automática da codificação, desmarque essa opção.  
-  
-## <a name="display"></a>Monitor  
- Margem de seleção  
- Quando selecionado, exibe uma margem vertical ao longo da borda esquerda da área de texto do editor. Você pode clicar nessa margem para selecionar uma linha de texto inteira ou clicar e arrastar para selecionar linhas consecutivas de texto.  
-  
-|Margem de seleção ativada|Margem de seleção desativada|  
-|-------------------------|--------------------------|  
-|![HTMLpageSelectionMarginOn screenshot](../../ide/reference/media/vxselmaron.gif "vxSelmaron")|![HTMLpageSelectionMarginOff screenshot](../../ide/reference/media/vxselmaroff.gif "vxSelmaroff")|  
-  
- Margem de indicadores  
- Quando selecionado, exibe uma margem vertical fora da borda esquerda da área de texto do editor. Quando você clica nesta margem, um ícone e uma dica de ferramenta relacionados ao texto aparecem. Por exemplo, atalhos da lista de tarefas ou de pontos de interrupção aparecem na margem de indicadores. Informações da margem de indicadores não são impressas.  
-  
- Barra de rolagem vertical  
- Quando selecionado, exibe uma barra de rolagem vertical que permite rolar para cima e para baixo para exibir elementos que estão fora da área de exibição do Editor. Se barras de rolagem verticais não estiverem disponíveis, você poderá usar Page Up, Page Down e teclas do cursor para rolar.  
-  
- Barra de rolagem horizontal  
- Quando selecionado, exibe uma barra de rolagem horizontal que permite rolar lateralmente para exibir elementos que estão fora da área de exibição do Editor. Se barras de rolagem horizontais não estiverem disponíveis, você poderá usar as teclas de cursor para rolar.  
-  
- Realçar linha atual  
- Quando selecionado, exibe uma caixa cinza ao redor da linha de código na qual o cursor está localizado.  
-  
-## <a name="see-also"></a>Consulte também  
- [Opções, Editor de Texto, Todas as Linguagens](../../ide/reference/options-text-editor-all-languages.md)   
- [Opções, Editor de Texto, Todas as Linguagens, Guias](../../ide/reference/options-text-editor-all-languages-tabs.md)   
- [Opções, Editor de Texto, Extensão de Arquivo](../../ide/reference/options-text-editor-file-extension.md)   
- [Identificando e personalizando atalhos de teclado](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)   
- [Personalizando o editor](../../ide/customizing-the-editor.md)   
- [Usando o IntelliSense](../../ide/using-intellisense.md)
+> As caixas de diálogo e os comandos de menu que você vê podem ser diferentes dos descritos na Ajuda, dependendo da sua edição ou das configurações ativas. Para alterar as configurações, escolha **Importar e Exportar Configurações** no menu **Ferramentas**. Para obter mais informações, consulte [Personalizando configurações de desenvolvimento no Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+
+## <a name="settings"></a>Configurações
+ Arrastar e soltar edição de texto quando selecionado, permite que você mova o texto selecionando-o e arrastando-o com o mouse para outro local dentro do documento atual ou qualquer outro documento aberto.
+
+ Realce de delimitador automático quando selecionado, os caracteres delimitadores que separam parâmetros ou pares item-valor, bem como chaves correspondentes, são realçados.
+
+ Controlar alterações quando o editor de código é selecionado, uma linha amarela vertical aparece na margem de seleção para marcar o código que foi alterado desde que o arquivo foi salvo mais recentemente. Quando você salva as alterações, as linhas verticais ficam verdes.
+
+ Detecção automática de codificação UTF-8 sem assinatura por padrão, o editor detecta a codificação pesquisando marcas de ordem de byte ou marcas de charset. Se nenhum deles for encontrado no documento atual, o editor de códigos tenta detectar automaticamente a codificação UTF-8 examinando sequências de bytes. Para desabilitar a detecção automática da codificação, desmarque essa opção.
+
+## <a name="display"></a>Monitor
+ Margem de seleção quando selecionada, exibe uma margem vertical ao longo da borda esquerda da área de texto do editor. Você pode clicar nessa margem para selecionar uma linha de texto inteira ou clicar e arrastar para selecionar linhas consecutivas de texto.
+
+|Margem de seleção ativada|Margem de seleção desativada|
+|-------------------------|--------------------------|
+|![Captura de tela de HTMLpageSelectionMarginOn](../../ide/reference/media/vxselmaron.gif "|::ref1::|")|![Captura de tela de HTMLpageSelectionMarginOff](../../ide/reference/media/vxselmaroff.gif "|::ref2::|")|
+
+ Margem do indicador quando selecionado, exibe uma margem vertical fora da borda esquerda da área de texto do editor. Quando você clica nesta margem, um ícone e uma dica de ferramenta relacionados ao texto aparecem. Por exemplo, atalhos da lista de tarefas ou de pontos de interrupção aparecem na margem de indicadores. Informações da margem de indicadores não são impressas.
+
+ Barra de rolagem vertical quando selecionada, exibe um ScrollBar vertical que permite rolar para cima e para baixo para exibir os elementos que ficam fora da área de exibição do editor. Se barras de rolagem verticais não estiverem disponíveis, você poderá usar Page Up, Page Down e teclas do cursor para rolar.
+
+ Barra de rolagem horizontal quando selecionada, exibe um ScrollBar horizontal que permite rolar de lado a lado para exibir elementos que ficam fora da área de exibição do editor. Se barras de rolagem horizontais não estiverem disponíveis, você poderá usar as teclas de cursor para rolar.
+
+ Realçar a linha atual quando selecionada, exibe uma caixa cinza ao lado da linha de código na qual o cursor está localizado.
+
+## <a name="see-also"></a>Veja também
+ [Opções, editor de texto, todas as](../../ide/reference/options-text-editor-all-languages.md) [Opções de idiomas, editor de texto, todas as linguagens,](../../ide/reference/options-text-editor-all-languages-tabs.md) [Opções de guias, editor de texto, extensão de arquivo](../../ide/reference/options-text-editor-file-extension.md) [identificando e personalizando atalhos de teclado](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md) [Personalizando o editor](../../ide/customizing-the-editor.md) [usando IntelliSense](../../ide/using-intellisense.md)

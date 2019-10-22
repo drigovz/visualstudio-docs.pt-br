@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDE navigator
 ms.assetid: 6c36b6eb-c93f-496b-af08-4199f7afd8bd
 caps.latest.revision: 33
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 93200995c3afa59b0a4a27aaa9c674fa17b5ee3f
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 89c4447eb6bbc4b2ae9f7667672626d5119c61d6
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65685594"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72651793"
 ---
 # <a name="how-to-move-around-in-the-visual-studio-ide"></a>Como mover-se no Visual Studio IDE
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ O IDE (ambiente de desenvolvimento integrado) foi projetado para que você possa
 
   O **Navegador de IDE** funciona de modo muito semelhante ao gerenciador de aplicativos do Windows. Ele não está disponível nos menus e pode ser acessado somente usando teclas de atalho. Você pode usar qualquer um dos dois comandos para acessar o **Navegador de IDE** (mostrado abaixo) para percorrer os arquivos, dependendo da ordem na qual deseja percorrê-los.
 
-  ![Navegador de IDE do Visual Studio](../ide/media/vs2015-ide-navigator.png "VS2015_IDE_Navigator")
+  ![Navegador na IDE do Visual Studio](../ide/media/vs2015-ide-navigator.png "|::ref1::|")
 
   O `Window.PreviousDocumentWindowNav` permite ir para o arquivo acessado mais recentemente e `Window.NextDocumentWindowNav` permite mover-se na ordem inversa. Configurações Gerais de Desenvolvimento atribuem CTRL + SHIFT + TAB a `Window.PreviousDocumentWindowNav` e CTRL + TAB a `Window.NextDocumentWindowNav`.
 
@@ -91,5 +91,5 @@ O IDE (ambiente de desenvolvimento integrado) foi projetado para que você possa
     > [!TIP]
     > Para inverter a ordem em que você percorre a lista **Janelas de Ferramentas Ativas**, mantenha pressionada as teclas ALT + SHIFT e pressione F7.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
  [Como personalizar layouts de janela](../ide/customizing-window-layouts-in-visual-studio.md) [Atalhos de teclado padrão](../ide/default-keyboard-shortcuts-in-visual-studio.md)

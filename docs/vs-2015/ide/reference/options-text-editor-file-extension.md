@@ -13,47 +13,40 @@ helpviewer_keywords:
 - Editing Experience, selecting
 ms.assetid: 05298fc5-fc4e-4bb2-b942-1f7d2dcdff0f
 caps.latest.revision: 16
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: bd49b08e8bd48393a980fe775db66c96c0edc1fd
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 26c53633bc55efcf95ffbc579e24d2d61e4a0932
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65695823"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72662271"
 ---
 # <a name="options-text-editor-file-extension"></a>Opções, Editor de Texto, Extensão de Arquivo
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-A caixa de diálogo Opções permite especificar como todos os arquivos com determinadas extensões de arquivo serão manipulados pelo IDE (ambiente de desenvolvimento integrado) do Visual Studio. Para cada **Extensão** que inserir, você pode selecionar uma Experiência de Edição. Isso permite escolher o editor ou o designer do IDE no qual os documentos de um determinado tipo serão abertos. Para exibir essas opções, escolha **Opções** no menu **Ferramentas**, expanda o nó **Editor de Texto** e selecione **Extensão de Arquivo**.  
-  
- Quando você selecionar uma opção "com codificação", uma caixa de diálogo será exibida sempre que você abrir um documento do tipo em questão que permitir selecionar um esquema de codificação para o documento. Isso pode ser útil se você estiver preparando versões dos documentos do projeto para uso em diferentes plataformas ou em diferentes linguagens de destino.  
-  
+A caixa de diálogo Opções permite especificar como todos os arquivos com determinadas extensões de arquivo serão manipulados pelo IDE (ambiente de desenvolvimento integrado) do Visual Studio. Para cada **Extensão** que inserir, você pode selecionar uma Experiência de Edição. Isso permite escolher o editor ou o designer do IDE no qual os documentos de um determinado tipo serão abertos. Para exibir essas opções, escolha **Opções** no menu **Ferramentas**, expanda o nó **Editor de Texto** e selecione **Extensão de Arquivo**.
+
+ Quando você selecionar uma opção "com codificação", uma caixa de diálogo será exibida sempre que você abrir um documento do tipo em questão que permitir selecionar um esquema de codificação para o documento. Isso pode ser útil se você estiver preparando versões dos documentos do projeto para uso em diferentes plataformas ou em diferentes linguagens de destino.
+
 > [!NOTE]
-> As caixas de diálogo e os comandos de menu que você vê podem ser diferentes dos descritos na Ajuda, dependendo da sua edição ou das configurações ativas. Para alterar as configurações, escolha **Importar e Exportar Configurações** no menu **Ferramentas**. Para obter mais informações, consulte [Personalizando configurações de desenvolvimento no Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
-  
-## <a name="uielement-list"></a>Lista UIElement  
- **Extensão**  
- Digite a extensão de arquivo cuja Experiência de Edição no IDE você deseja definir.  
-  
- **Editor**  
- Selecione o editor ou o designer do IDE em que documentos com essa extensão de arquivo serão abertos. Quando você selecionar uma opção "com codificação", uma caixa de diálogo será exibida sempre que você abrir um documento do tipo em questão que permitir selecionar um esquema de codificação.  
-  
- **Adicionar**  
- Adiciona uma entrada que inclui a **Extensão** e a **Experiência de Edição** especificadas à Lista de extensões.  
-  
- **Removerr**  
- Exclui a entrada selecionada da Lista de Extensões.  
-  
- Lista de extensões  
- Lista todas as extensões para as quais uma Experiência de Edição foi especificada.  
-  
- **Mapear arquivos sem extensão para**  
- Selecione esta opção se você quiser especificar como arquivos sem extensão serão tratados pelo IDE.  
-  
- **Opções de arquivos sem extensão**  
- Fornece a mesma lista que o **Editor**. Selecione o editor ou o designer do IDE em que documentos sem extensão de arquivo serão abertos.  
-  
-## <a name="see-also"></a>Consulte também  
+> As caixas de diálogo e os comandos de menu que você vê podem ser diferentes dos descritos na Ajuda, dependendo da sua edição ou das configurações ativas. Para alterar as configurações, escolha **Importar e Exportar Configurações** no menu **Ferramentas**. Para obter mais informações, consulte [Personalizando configurações de desenvolvimento no Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+
+## <a name="uielement-list"></a>Lista UIElement
+ **Extensão** do Digite a extensão de arquivo cuja experiência de edição no IDE você deseja definir.
+
+ **Editor** do Selecione o editor de IDE ou o designer no qual os documentos com essa extensão de arquivo serão abertos. Quando você selecionar uma opção "com codificação", uma caixa de diálogo será exibida sempre que você abrir um documento do tipo em questão que permitir selecionar um esquema de codificação.
+
+ **Adicionar** Adiciona uma entrada que inclui **Extensão** e **Experiência de Edição** especificados à Lista de Extensão.
+
+ **Remover** Exclui a entrada selecionada da lista de extensões.
+
+ Lista de extensões lista todas as extensões para as quais uma experiência de edição foi especificada.
+
+ **Mapear arquivos com extensão para** Selecione esta opção se desejar especificar como os arquivos sem uma extensão serão manipulados pelo IDE.
+
+ **Opções de arquivo com extensão** Fornece a mesma lista que o **Editor**. Selecione o editor ou o designer do IDE em que documentos sem extensão de arquivo serão abertos.
+
+## <a name="see-also"></a>Veja também
  [Como gerenciar modos do editor](../../ide/how-to-manage-editor-modes.md)

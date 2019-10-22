@@ -47,15 +47,15 @@ helpviewer_keywords:
 - miscellaneous files
 ms.assetid: aeaf56cb-c2dd-47f6-b012-23b84b7a7254
 caps.latest.revision: 41
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 340fe819086d3cc18cb9c2dd6a4ca14129c6d8ad
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 0b1783adadd1bfab32bfbbdcfb5ae28df7c0aae4
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65679859"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661192"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Soluções e projetos no Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -70,7 +70,7 @@ Quando você cria um app, aplicativo, site da Web, aplicativo Web, script, plug-
 
  O diagrama a seguir mostra a relação entre projetos e soluções e os itens que eles contêm logicamente.
 
- ![Soluções e projetos do Visual Studio](../ide/media/vs2015-project-diagram.png "vs2015_project_diagram")
+ ![Projetos e soluções do Visual Studio](../ide/media/vs2015-project-diagram.png "|::ref1::|")
 
  Também é possível criar modelos de item e de projeto personalizados. Para obter mais informações, consulte [Criando modelos de item e de projeto](../ide/creating-project-and-item-templates.md).
 
@@ -80,7 +80,7 @@ Quando você cria um app, aplicativo, site da Web, aplicativo Web, script, plug-
 ## <a name="managing-projects-in-solution-explorer"></a>Gerenciamento de projetos no Gerenciador de Soluções
  Depois de criar um novo projeto, você usa o **Gerenciador de Soluções** para exibir e gerenciar projetos e soluções e seus itens associados. A ilustração a seguir mostra o Gerenciador de Servidores com uma solução em C# que contém dois projetos.
 
- ![Gerenciador de Soluções](../ide/media/vs2015-solution-explorer.png "vs2015_solution_explorer")
+ ![Gerenciador de Soluções](../ide/media/vs2015-solution-explorer.png "|::ref2::|")
 
 ## <a name="in-this-section"></a>Nesta seção
 
@@ -102,5 +102,5 @@ Quando você cria um app, aplicativo, site da Web, aplicativo Web, script, plug-
 
 - [Criando modelos de projeto e de item](../ide/creating-project-and-item-templates.md)
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
  [Visual Studio IDE](../ide/visual-studio-ide.md)
