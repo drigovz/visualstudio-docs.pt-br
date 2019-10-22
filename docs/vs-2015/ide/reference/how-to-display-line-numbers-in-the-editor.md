@@ -11,37 +11,35 @@ helpviewer_keywords:
 - code, line number displaying
 ms.assetid: 40b38559-b8de-4041-91f2-68986767c976
 caps.latest.revision: 23
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: a2d6d3bd1d0a27a12194005422910236ea0fd02c
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 0f093cf93c2f67c91fa9eee0085a566a15289684
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65704407"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72602347"
 ---
 # <a name="how-to-display-line-numbers-in-the-editor"></a>Como exibir números de linha no Editor
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Você pode exibir ou ocultar a numeração de linhas em seu código.  
-  
+Você pode exibir ou ocultar a numeração de linhas em seu código.
+
 > [!NOTE]
-> Dependendo das configurações ativas, as caixas de diálogos e os comandos de menu exibidos podem ser diferentes dos descritos aqui. Para alterar as configurações, abra **Ferramentas / Importar e Exportar Configurações**. Para obter mais informações, consulte [Personalizando configurações de desenvolvimento no Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
-  
-## <a name="display-line-numbers-in-code"></a>Exibir números de linhas no código  
- Os números de linha não são adicionados ao seu código, eles são apenas para referência. Se desejar que os números de linha sejam impressos, na caixa de diálogo **Imprimir**, marque a caixa de seleção **Incluir números de linha**.  
-  
-#### <a name="to-display-line-numbers-in-code"></a>Para exibir números de linhas no código  
-  
-1. Na barra de menus, escolha **Ferramentas**, **Opções**. Expanda o nó **Editor de Texto** e selecione o nó do idioma que você está usando ou **Todos os Idiomas** para ativar os números de linha em todos os idiomas. Ou você pode digitar **número de linha** na caixa **Início Rápido**.  
-  
-2. ![Opções para exibir números de linha no editor](../../ide/reference/media/vs-displaylinenumbers.png "VS_DisplayLineNumbers")  
-  
+> Dependendo das configurações ativas, as caixas de diálogos e os comandos de menu exibidos podem ser diferentes dos descritos aqui. Para alterar as configurações, abra **Ferramentas / Importar e Exportar Configurações**. Para obter mais informações, consulte [Personalizando configurações de desenvolvimento no Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+
+## <a name="display-line-numbers-in-code"></a>Exibir números de linhas no código
+ Os números de linha não são adicionados ao seu código, eles são apenas para referência. Se desejar que os números de linha sejam impressos, na caixa de diálogo **Imprimir**, marque a caixa de seleção **Incluir números de linha**.
+
+#### <a name="to-display-line-numbers-in-code"></a>Para exibir números de linhas no código
+
+1. Na barra de menus, escolha **Ferramentas**, **Opções**. Expanda o nó **Editor de Texto** e selecione o nó do idioma que você está usando ou **Todos os Idiomas** para ativar os números de linha em todos os idiomas. Ou você pode digitar **número de linha** na caixa **Início Rápido**.
+
+2. ![Opções para exibir números de linha no editor](../../ide/reference/media/vs-displaylinenumbers.png "|::ref1::|")
+
 > [!NOTE]
-> Dependendo do seu idioma ou configurações, você pode precisar marcar a caixa de seleção **Mostrar todas as configurações** na caixa de diálogo **Opções** para revelar o subnó **Todos os Idiomas**.  
-  
-## <a name="see-also"></a>Consulte também  
- [Personalizando o editor](../../ide/customizing-the-editor.md)   
- [Caixa de diálogo Opções do Editor de Texto](../../ide/reference/text-editor-options-dialog-box.md)   
- [Escrevendo código](../../ide/writing-code-in-the-code-and-text-editor.md)
+> Dependendo do seu idioma ou configurações, você pode precisar marcar a caixa de seleção **Mostrar todas as configurações** na caixa de diálogo **Opções** para revelar o subnó **Todos os Idiomas**.
+
+## <a name="see-also"></a>Veja também
+ [Personalizando a caixa de](../../ide/customizing-the-editor.md) [diálogo opções do editor de texto](../../ide/reference/text-editor-options-dialog-box.md) de editor [escrevendo código](../../ide/writing-code-in-the-code-and-text-editor.md)
