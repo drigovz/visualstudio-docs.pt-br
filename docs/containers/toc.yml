@@ -11,6 +11,8 @@
           href: container-tools.md
         - name: Aplicativo de página única do React.js em um contêiner
           href: container-tools-react.md
+        - name: Desenvolvimento no Kubernetes com o Azure Dev Spaces >>
+          href: /azure/dev-spaces/quickstart-netcore-visualstudio
     - name: Tutoriais
       expanded: true
       items:
