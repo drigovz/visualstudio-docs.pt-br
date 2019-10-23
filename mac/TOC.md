@@ -105,6 +105,10 @@
 ### [Como usar a navegação do teclado](accessibility-keyboard.md)
 ### [Como usar o VoiceOver](accessibility-voiceover.md)
 
+# Tutoriais em vídeo
+## [Introdução ao ASP.NET Core no Visual Studio para Mac](tutorial-aspnet-core-vsmac-getting-started.md)
+## [Estender um aplicativo Web ASP.NET Core existente](tutorial-aspnet-core-vsmac-extending.md)
+
 # [Visual Studio para Mac para usuários do Windows](vsmac-for-windows-users.md)
 
 # Solução de problemas
