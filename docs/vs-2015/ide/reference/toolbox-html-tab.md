@@ -159,7 +159,7 @@ A guia **HTML** da Caixa de ferramentas fornece componentes que são úteis em p
 
  Para saber mais, confira [Controles de entrada HTML](https://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [Sintaxe declarativa do controle de servidor HtmlInputHidden](https://msdn.microsoft.com/4194e44d-1d74-4bfc-9cc7-743a2e1ea5f9) e <xref:System.Web.UI.HtmlControls.HtmlInputHidden>.
 
- **** ![Área de texto da barra de ferramentas HtmlPage](../../ide/reference/media/vxtextarea.gif "|::ref11::|") TextArea
+ ![Área de texto da barra de ferramentas HtmlPage](../../ide/reference/media/vxtextarea.gif "|::ref11::|") **TextArea**
 
  Insere um elemento `textarea`. É possível redimensionar a área de texto ou usar as barras de rolagem para exibir o texto que se estende além da área de exibição. Para alterar o texto padrão exibido, edite o atributo `value`. Por padrão, `id="textarea1"` é inserido para a primeira área de texto, `id=" textarea 2"` para a segunda e assim por diante.
 
@@ -186,7 +186,7 @@ A guia **HTML** da Caixa de ferramentas fornece componentes que são úteis em p
 
  Para saber mais, confira [Sintaxe declarativa do controle de servidor HtmlTable](https://msdn.microsoft.com/625b06d8-0f69-4112-a1d4-8ef2a9fbcda9), [Visão geral dos controles de servidor Web Table, TableRow e TableCell](https://msdn.microsoft.com/library/2fbd0582-cf69-4c8d-9e35-21f35e2cee1a), <xref:System.Web.UI.HtmlControls.HtmlTable> e <xref:System.Web.UI.WebControls.Table>.
 
- **** ![Item de imagem da página HTML da](../../ide/reference/media/vximage.gif "|::ref13::|") imagem
+ ![Item de imagem da página HTML da](../../ide/reference/media/vximage.gif "|::ref13::|") **imagem**
 
  Insere um elemento `img`. Edite esse elemento para especificar seu `src` e seu texto `alt`.
 
@@ -224,7 +224,7 @@ A guia **HTML** da Caixa de ferramentas fornece componentes que são úteis em p
 
  Para obter mais informações, consulte [Controle HTML Regra Horizontal](https://msdn.microsoft.com/library/bf6df0a8-9844-404d-8a9a-3455b0180f2f).
 
- **** ![Rótulo de página HTML](../../ide/reference/media/vxlabel.gif "|::ref16::|") de div
+ ![Rótulo de página HTML](../../ide/reference/media/vxlabel.gif "|::ref16::|") de **div**
 
  Insere um elemento `div` inclui um atributo `ms_positioning="FlowLayout"`. Com exceção da largura e da altura, esse item é idêntico a um Painel de Layout de Fluxo. Para formatar o texto contido em um elemento `div`, adicione um atributo `class="stylename"` à marcação de abertura.
 

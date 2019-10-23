@@ -51,4 +51,4 @@ A caixa de diálogo **Informações do Assembly** é usada para especificar os v
  **Tornar assembly visível para o COM** Especifica se os tipos no assembly estarão disponíveis para o COM. Corresponde ao <xref:System.Runtime.InteropServices.ComVisibleAttribute>.
 
 ## <a name="see-also"></a>Veja também
- [Página de aplicativo, atributos do designer de projeto (Visual Basic)](../../ide/reference/application-page-project-designer-visual-basic.md) [](https://msdn.microsoft.com/library/ae334cee-d96c-4243-a5e3-06dd7fcaf205)
+ [Página de aplicativo, designer de projeto (Visual Basic) ](../../ide/reference/application-page-project-designer-visual-basic.md) [Attributes](https://msdn.microsoft.com/library/ae334cee-d96c-4243-a5e3-06dd7fcaf205)

@@ -45,4 +45,4 @@ Devenv.exe /ResetAddin MyAddin.Connect.MyAddin
 ```
 
 ## <a name="see-also"></a>Veja também
- [Personalizando as configurações de desenvolvimento nas opções de linha de comando do devenv do Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3) [](../../ide/reference/devenv-command-line-switches.md)
+ [Personalizando as configurações de desenvolvimento no Visual Studio ](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3) [Devenv opções de linha de comando](../../ide/reference/devenv-command-line-switches.md)
