@@ -74,4 +74,4 @@ Edit.Replace findwhat replacewith [/all] [/case]
 ```
 
 ## <a name="see-also"></a>Veja também
- [Localizando e substituindo a janela de comando de texto](../../ide/finding-and-replacing-text.md) [](../../ide/reference/command-window.md) [pesquisa/comando caixa](../../ide/find-command-box.md) de comandos [Visual](../../ide/reference/visual-studio-commands.md) Studio [aliases de comando do Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
+ [Localizando e substituindo o texto ](../../ide/finding-and-replacing-text.md) janela do [Command ](../../ide/reference/command-window.md) [Find Box/Command ](../../ide/find-command-box.md) comandos do [Visual Studio ](../../ide/reference/visual-studio-commands.md) aliases de comando do [Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
