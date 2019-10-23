@@ -54,4 +54,4 @@ Debug.SymbolPath
 ```
 
 ## <a name="see-also"></a>Veja também
- [](../../ide/reference/command-window.md) [Comandos do Visual Studio](../../ide/reference/visual-studio-commands.md) da janela de comando
+ [Janela de comando ](../../ide/reference/command-window.md) comandos do [Visual Studio](../../ide/reference/visual-studio-commands.md)

@@ -45,4 +45,4 @@ Debug.QuickWatchq [text]
 ```
 
 ## <a name="see-also"></a>Veja também
- [Como: usar a caixa de diálogo QuickWatch da janela de comando de](https://msdn.microsoft.com/library/ffaee1dd-e5ce-4ef2-9401-d28329398867) [comandos do Visual Studio](../../ide/reference/visual-studio-commands.md) [](../../ide/reference/command-window.md) comando [Localizar/](../../ide/find-command-box.md) usar a caixa de comando aliases de [comandos do Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
+ [Como: usar a caixa de diálogo QuickWatch ](https://msdn.microsoft.com/library/ffaee1dd-e5ce-4ef2-9401-d28329398867) comandos do [Visual Studio ](../../ide/reference/visual-studio-commands.md) [Command janela ](../../ide/reference/command-window.md) [Find caixa de/Command ](../../ide/find-command-box.md) aliases de comando do [Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
