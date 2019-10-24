@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 29424c2b12884cae7f803a46e15f7183d9690d96
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 526c857acbe1283e16312355c181c56c67e19883
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62829622"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744075"
 ---
 # <a name="idiaenumsourcefilesnext"></a>IDiaEnumSourceFiles::Next
 Recupera um número especificado de arquivos de origem na sequência de enumeração.
@@ -35,18 +35,18 @@ HRESULT Next ( 
 #### <a name="parameters"></a>Parâmetros
  celt
 
-[in] O número de arquivos de origem no enumerador a ser recuperado.
+no O número de arquivos de origem no enumerador a ser recuperado.
 
  rgelt
 
-[out] Uma matriz que deve ser preenchido com o [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md) objetos que representam os arquivos de origem desejado.
+fora Uma matriz que deve ser preenchida com os objetos [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md) que representam os arquivos de origem desejados.
 
  pceltFetched
 
-[out] Retorna o número de arquivos de origem no enumerador buscado.
+fora Retorna o número de arquivos de origem no enumerador obtido.
 
-## <a name="return-value"></a>Valor de retorno
- Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não houver nenhum arquivo de origem mais. Caso contrário, retornará um código de erro.
+## <a name="return-value"></a>Valor retornado
+ Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não houver mais arquivos de origem. Caso contrário, retornará um código de erro.
 
 ## <a name="see-also"></a>Consulte também
 - [IDiaEnumSourceFiles](../../debugger/debug-interface-access/idiaenumsourcefiles.md)

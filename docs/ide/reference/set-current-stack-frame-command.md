@@ -13,12 +13,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a60b6eba07ed5d9594ec11cb6b9297d2a52ffd77
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 088fe9871b54e69b015ffdc9dcdaf23de3d98e0e
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72645330"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747753"
 ---
 # <a name="set-current-stack-frame-command"></a>Comando Definir Quadro de Pilha Atual
 Permite definir um registro de ativação específico.

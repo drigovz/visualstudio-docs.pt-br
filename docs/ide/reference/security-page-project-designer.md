@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f11b14dd116ea95bda2cc7fad7ac8df634435c9
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: 29723f5e253a2ff6d4f6c35e8ad8d3e09e2393f1
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926107"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748654"
 ---
 # <a name="security-page-project-designer"></a>Página Segurança, Designer de Projeto
 
@@ -36,7 +36,7 @@ Determina se as configurações de segurança estão habilitadas no tempo de des
 > [!NOTE]
 > Quando você publica um aplicativo usando o assistente **Publicar**, essa opção fica habilitada automaticamente.
 
-Quando seleciona essa opção, você tem a opção de selecionar um dos dois botões de opção: **Este é um aplicativo de confiança total** ou **Este é um aplicativo de confiança parcial**.
+Quando seleciona a opção, você tem a escolha de selecionar um de dois botões de opção: **Este é um aplicativo de confiança total** ou **Este é um aplicativo de confiança parcial**.
 
 Por padrão, para projetos de Aplicativo de navegador da Web do WPF, essa opção fica selecionada.
 
@@ -72,15 +72,15 @@ Abre o modelo de manifesto do aplicativo (app.manifest) para configurar as permi
 
 Abre o [Caixa de diálogo Configurações de Segurança Avançadas](../../ide/reference/advanced-security-settings-dialog-box.md), que é usada para definir configurações para depurar o aplicativo com permissões restritas. Essas configurações são verificadas durante a depuração, e exceções de permissão indicam que seu aplicativo pode precisar de mais permissões do que as que foram definidas em uma zona.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - <xref:System.Security.Permissions.WebBrowserPermission>
 - <xref:System.Security.Permissions.MediaPermission>
 - [Segurança de acesso do código para aplicativos ClickOnce](../../deployment/code-access-security-for-clickonce-applications.md)
-- [Como: Habilitar configurações de segurança do ClickOnce](../../deployment/how-to-enable-clickonce-security-settings.md)
-- [Como: Definir uma zona de segurança para um aplicativo ClickOnce](../../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)
-- [Como: Definir permissões personalizadas para um aplicativo ClickOnce](../../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)
-- [Como: Depurar um aplicativo ClickOnce com permissões restritas](../../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)
+- [Como habilitar configurações de segurança do ClickOnce](../../deployment/how-to-enable-clickonce-security-settings.md)
+- [Como definir uma zona de segurança para um aplicativo ClickOnce](../../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)
+- [Como definir permissões personalizadas para um aplicativo ClickOnce](../../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)
+- [Como depurar um aplicativo ClickOnce com permissões restritas](../../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)
 - [Segurança e implantação do ClickOnce](../../deployment/clickonce-security-and-deployment.md)
 - [Referência de Propriedades do Projeto](../../ide/reference/project-properties-reference.md)
 - [Caixa de diálogo Configurações de Segurança Avançadas](../../ide/reference/advanced-security-settings-dialog-box.md)

@@ -1,5 +1,5 @@
 ---
-title: 'Erro: Não é possível conectar ao SQL Server na máquina remota | Microsoft Docs'
+title: 'Erro: não é possível conectar-se ao SQL Server no computador remoto | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 f1_keywords:
@@ -15,19 +15,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4038f1f65d688ee8d9bbf9ad01eb1698b811bee5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1ecee2a2dbf7c849549ed6f5e844714cbb88bfda
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62850111"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72736818"
 ---
-# <a name="error-unable-to-connect-to-sql-server-on-remote-machine"></a>Erro: Não é possível se conectar ao SQL Server no computador remoto
-Não é possível conectar ao SQL Server no computador remoto *nome*. Acesso negado. Verifique se você instalou o depurador remoto no computador remoto. Se o computador remoto não estiver em um domínio ou se o Visual Studio for executado em uma conta local, o computador remoto deverá ter uma conta com o mesmo nome de usuário e senha que a conta local.
+# <a name="error-unable-to-connect-to-sql-server-on-remote-machine"></a>Erro: não foi possível se conectar ao SQL Server na máquina remota
+Não é possível conectar-se a SQL Server no *nome*do computador remoto. Acesso negado. Verifique se você instalou o depurador remoto no computador remoto. Se o computador remoto não estiver em um domínio ou se o Visual Studio for executado em uma conta local, o computador remoto deverá ter uma conta com o mesmo nome de usuário e senha que a conta local.
 
 ### <a name="to-correct-this-error"></a>Para corrigir este erro
 
 - Confira [Depuração remota](../debugger/remote-debugging.md).
 
 ## <a name="see-also"></a>Consulte também
-- [Depuração de SQL](/previous-versions/visualstudio/visual-studio-2010/zefbf0t6(v=vs.100))
+- [Depurando SQL](/previous-versions/visualstudio/visual-studio-2010/zefbf0t6(v=vs.100))
