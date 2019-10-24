@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e098f1e2367395f201abf6f44554f1699400b12
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e9114a1d97dc9c25aa9c2bfe84dc96b63051b92d
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62827801"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742435"
 ---
-# <a name="idiasegmentgetaddresssection"></a>IDiaSegment::get_addressSection
-Recupera o número de seção que mapeia para este segmento.
+# <a name="idiasegmentget_addresssection"></a>IDiaSegment::get_addressSection
+Recupera o número da seção que é mapeado para este segmento.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -33,10 +33,10 @@ HRESULT get_addressSection ( 
 #### <a name="parameters"></a>Parâmetros
  `pRetVal`
 
-[out] Retorna o número de seção que mapeia para este segmento.
+fora Retorna o número da seção que mapeia para este segmento.
 
-## <a name="return-value"></a>Valor de retorno
- Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não há suporte para essa propriedade. Caso contrário, retornará um código de erro.
+## <a name="return-value"></a>Valor retornado
+ Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não houver suporte para essa propriedade. Caso contrário, retornará um código de erro.
 
 ## <a name="see-also"></a>Consulte também
 - [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)
