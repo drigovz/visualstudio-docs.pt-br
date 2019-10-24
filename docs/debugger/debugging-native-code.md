@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e51918122834dd6b50952b9cc81a1d24a6477dd0
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: f98b99a31d9215d661879aa7fa52d4b671024496
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72431771"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738161"
 ---
 # <a name="debugging-native-code"></a>Depurando código nativo
 A seção aborda alguns problemas comuns de depuração e técnicas para aplicativos nativos. As técnicas abordadas nesta seção são de alto nível. Para obter a mecânica de uso do depurador do Visual Studio, consulte [primeira olhada no depurador](../debugger/debugger-feature-tour.md)).
@@ -33,7 +33,7 @@ A seção aborda alguns problemas comuns de depuração e técnicas para aplicat
 ## <a name="in-this-section"></a>Nesta seção
  [Como: depurar código otimizado](../debugger/how-to-debug-optimized-code.md) Fornece dicas para depurar código otimizado, especificamente, por que você deve depurar uma versão não otimizada do seu programa, configurações de otimização padrão para configurações de depuração e versão e dicas para localizar bugs que aparecem apenas no código otimizado (ativando otimização em uma configuração de compilação de depuração).
 
- [DebugBreak e __debugbreak](../debugger/debugbreak-and-debugbreak.md) Descreve a função Win32 `DebugBreak` e fornece um link para seu tópico de referência no Platform SDK. Também descreve o `__debugbreak` intrínseco.
+ [DebugBreak e __debugbreak](../debugger/debugbreak-and-debugbreak.md) Descreve a função de `DebugBreak` do Win32 e fornece um link para seu tópico de referência no SDK da plataforma. Também descreve o `__debugbreak` intrínseco.
 
  [C/C++ asserções](../debugger/c-cpp-assertions.md) Discute instruções de asserção, como elas funcionam, os benefícios de usá-las (capturar erros lógicos, verificar os resultados de uma operação e testar condições de erro), sua interação com `_DEBUG` e os tipos de asserções com suporte no [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
 
