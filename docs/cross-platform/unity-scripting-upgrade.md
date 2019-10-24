@@ -8,12 +8,12 @@ ms.assetid: E2C9420F-A5D5-4472-9020-2B63FB27A133
 ms.technology: vs-unity-tools
 ms.workload:
 - unity
-ms.openlocfilehash: 0fb4560a196404687c60ce67f39b9c0754a24769
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: b1f10778c4866e67630fcac7af3b92b3de780aa5
+ms.sourcegitcommit: 57bc1c3887838d707c13feff72a677b3bad3be4b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71253139"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72777752"
 ---
 # <a name="using-net-4x-in-unity"></a>Usar o .NET 4.x no Unity
 
@@ -21,7 +21,7 @@ C# e .NET, as tecnologias subjacentes ao script do Unity, continuam a receber at
 
 Com o lançamento do Unity 2017.1, o Unity introduziu uma versão experimental do seu tempo de execução de script atualizado para uma versão compatível com o .NET 4.6 e o C# 6. No Unity 2018.1, o tempo de execução equivalente ao .NET 4.x não é mais considerado experimental, enquanto o tempo de execução equivalente ao .NET 3.5 mais antigo agora é considerado como a versão herdada. E com o lançamento do Unity 2018.3, o Unity está projetando tornar o tempo de execução de script atualizado a seleção padrão, além de atualizar mais, para o C# 7. Para obter mais informações e as atualizações mais recentes sobre este roteiro, leia a [postagem de blog](https://blogs.unity3d.com/2018/07/11/scripting-runtime-improvements-in-unity-2018-2/) do Unity ou acesse seu [Fórum de visualizações de script experimental](https://forum.unity.com/forums/experimental-scripting-previews.107/). Enquanto isso, confira as seções abaixo para saber mais sobre os novos recursos disponíveis com o tempo de execução de script do .NET 4.x.
 
-## <a name="prerequisites"></a>Pré-requisitos
+## <a name="prerequisites"></a>Prerequisites
 
 * [Unity 2017.1 ou superior](https://unity3d.com/) (2018.2 recomendado)
 * [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)

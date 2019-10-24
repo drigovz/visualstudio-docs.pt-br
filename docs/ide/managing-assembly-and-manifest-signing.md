@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3add6e3e4f38b5ba73cd5154720d7b283189526e
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
-ms.translationtype: HT
+ms.openlocfilehash: 8cf721e9880ce7f0b7c3191f73f16366637f0704
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461494"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748872"
 ---
 # <a name="manage-assembly-and-manifest-signing"></a>Gerenciar assinatura de assembly e de manifesto
 
@@ -29,7 +29,7 @@ Um nome forte consiste na identidade do assembly (nome de texto simples, número
 
 Para obter informações sobre como assinar assemblies em projetos do Visual Basic e do C#, confira [Criar e usar assemblies de nomes fortes](/dotnet/framework/app-domains/create-and-use-strong-named-assemblies).
 
-Para obter informações de como assinar assemblies em projetos Visual C++, confira [Assemblies de nome forte (C++/CLI)](/cpp/dotnet/strong-name-assemblies-assembly-signing-cpp-cli).
+Para obter informações sobre como assinar C++ assemblies em projetos, consulte [assemblies de nomeC++forte (/CLI)](/cpp/dotnet/strong-name-assemblies-assembly-signing-cpp-cli).
 
 > [!NOTE]
 > A assinatura de nome forte não protege contra a engenharia reversa do assembly. Para se proteger contra a engenharia reversa, confira a [Dotfuscator Community](dotfuscator/index.md).
@@ -69,7 +69,7 @@ Você também pode apontar para uma chave já criada. Para obter mais informaç�
 
 Se você só tiver acesso a uma chave pública, use a assinatura com atraso para adiar a atribuição da chave. Habilite a assinatura com atraso selecionando a caixa de seleção **Somente sinal de atraso**. Um projeto assinado com atraso não é executado e não pode ser depurado. No entanto, você pode ignorar a verificação durante o desenvolvimento usando a [ferramenta de nome forte Sn.exe](/dotnet/framework/tools/sn-exe-strong-name-tool) com a opção `-Vr`.
 
-Para obter informações sobre como assinar manifestos, veja [Como: Assinar manifestos de aplicativo e de implantação](../ide/how-to-sign-application-and-deployment-manifests.md).
+Para obter informações sobre como assinar manifestos, confira [Como assinar manifestos de aplicativo e de implantação](../ide/how-to-sign-application-and-deployment-manifests.md).
 
 ## <a name="see-also"></a>Consulte também
 

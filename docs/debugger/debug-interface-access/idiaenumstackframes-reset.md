@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0bdf24fb9926c66b389430208d16f943af41cc11
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d219c7b3310db05e9292e34325c2e904ef899688
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62829433"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743997"
 ---
 # <a name="idiaenumstackframesreset"></a>IDiaEnumStackFrames::Reset
 Redefine a sequência de enumeração para o início.
@@ -28,7 +28,7 @@ Redefine a sequência de enumeração para o início.
 HRESULT Reset();
 ```
 
-## <a name="return-value"></a>Valor de retorno
+## <a name="return-value"></a>Valor retornado
  Retorna `S_OK`.
 
 ## <a name="see-also"></a>Consulte também

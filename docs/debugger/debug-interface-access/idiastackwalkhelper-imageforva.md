@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 56f71364f28bec56c058a52f5a9e79c6bba298b8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 609a9370181937323f2bc3e8ca0a0765cd1f4a12
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62837947"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741382"
 ---
 # <a name="idiastackwalkhelperimageforva"></a>IDiaStackWalkHelper::imageForVA
-Retorna o início da imagem de um executável na memória que recebe um endereço virtual em algum lugar no espaço de memória do executável.
+Retorna o início da imagem de um executável na memória, dado um endereço virtual em algum lugar no espaço de memória do executável.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -34,13 +34,13 @@ HRESULT imageForVA(
 #### <a name="parameters"></a>Parâmetros
  `vaContext`
 
-[in] O endereço virtual que se encontra em algum lugar no espaço do executável.
+no O endereço virtual que está em algum lugar no espaço do executável.
 
  `pvaImageStart`
 
-[out] Retorna o endereço virtual inicial da imagem do executável.
+fora Retorna o endereço virtual inicial da imagem do executável.
 
-## <a name="return-value"></a>Valor de retorno
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
 
 ## <a name="see-also"></a>Consulte também

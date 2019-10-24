@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 530b6c3f6873724f8a8ca06ea4228b017de281f9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 57afd033b2d969a4ed57dc713b2c4266e0ead632
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62831800"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741357"
 ---
 # <a name="idiastackwalkhelperreadmemory"></a>IDiaStackWalkHelper::readMemory
-Lê um bloco de dados de imagem do arquivo executável na memória.
+Lê um bloco de dados da imagem do executável na memória.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -37,25 +37,25 @@ HRESULT readMemory( 
 #### <a name="parameters"></a>Parâmetros
  `type`
 
-[in] Um valor da [enumeração MemoryTypeEnum](../../debugger/debug-interface-access/memorytypeenum.md) enumeração que especifica o tipo de memória a ser lido.
+no Um valor da enumeração de [Enumeração MemoryTypeEnum](../../debugger/debug-interface-access/memorytypeenum.md) especificando o tipo de memória a ser lido.
 
  va
 
-[in] Endereço virtual na imagem a partir do qual será iniciada a leitura.
+no Endereço virtual na imagem a partir da qual começar a ler.
 
  `cbData`
 
-[in] O tamanho do buffer de dados em bytes.
+no O tamanho do buffer de dados em bytes.
 
  `pcbData`
 
-[out] Retorna o número de bytes realmente lidos. Se `pbData` é `NULL`, em seguida, isso é o número total de bytes de dados disponíveis.
+fora Retorna o número de bytes realmente lidos. Se `pbData` for `NULL`, esse será o número total de bytes de dados disponíveis.
 
  `pbData`
 
-[no, out] Um buffer que será preenchido com a memória de leitura.
+[entrada, saída] Um buffer que é preenchido com a leitura de memória.
 
-## <a name="return-value"></a>Valor de retorno
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
 
 ## <a name="see-also"></a>Consulte também

@@ -9,12 +9,12 @@ ms.date: 11/13/2017
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 5694bfe49e88d0ea5911e72abba842e98f54e373
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 3967b637d547ed99ed840761b3b843068afee1af
+ms.sourcegitcommit: 57bc1c3887838d707c13feff72a677b3bad3be4b
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62537980"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72777481"
 ---
 # <a name="create-an-ai-project-from-the-azure-machine-learning-gallery-in-visual-studio"></a>Criar um projeto de IA da galeria do Azure Machine Learning no Visual Studio
 
@@ -39,13 +39,13 @@ Depois de [instalar as Ferramentas do Visual Studio para IA](installation.md), �
 
 4. Para este início rápido, selecione o exemplo "**MNIST usando TensorFlow**" e clique em **Instalar**. Forneça o seguinte:
 
-   - **Grupo de Recursos**: Grupo de recursos do Azure em que os metadados serão armazenados
-   - **Conta**: Conta de experimentação do Azure Machine Learning
+   - **Grupo de Recursos**: grupo de recursos do Azure em que os metadados serão armazenados
+   - **Conta**: conta de experimentação do Azure Machine Learning
    - **Workspace**: Workspace do Azure Machine Learning
-   - **Tipo de Projeto**: A estrutura de aprendizado de máquina. Nesse caso, escolha o **TensorFlow**
+   - **Tipo de Projeto**: a estrutura de aprendizado de máquina. Nesse caso, escolha o **TensorFlow**
    - **Adicionar à Solução**: determina se é necessário adicionar à sua solução do Visual Studio atual ou uma criar e abrir uma nova solução
-   - **Caminho do Projeto**: Localização em que o código será salvo
-   - **Nome do Projeto**: Digite **TensorFlowMNIST**
+   - **Caminho do Projeto**: local em que o código será salvo
+   - **Nome do Projeto**: tipo **TensorFlowMNIST**
 
    ![Projeto resultante ao usar o modelo de aplicativo do Python](media/create-project-gallery/new-AzureSampleProject.png)
 

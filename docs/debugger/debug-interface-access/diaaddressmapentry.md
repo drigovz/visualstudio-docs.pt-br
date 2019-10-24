@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 311762f4eafc8dad63da5854870f2836ee68b3ee
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 54b326116b1e1b677a997b264cf0c168a93febb0
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62554890"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745260"
 ---
 # <a name="diaaddressmapentry"></a>DiaAddressMapEntry
-Descreve uma entrada em um mapa de endereço.
+Descreve uma entrada em um mapa de endereços.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -32,25 +32,25 @@ struct DiaAddressMapEntry {
 ```
 
 ## <a name="elements"></a>Elementos
-`rva` Um endereço virtual relativo (RVA) na imagem A.
+`rva` um endereço virtual relativo (RVA) na imagem A.
 
-`rvaTo` O endereço virtual relativo `rva` é mapeado para imagem B.
+`rvaTo` o endereço virtual relativo `rva` está mapeado para a imagem B.
 
 ## <a name="remarks"></a>Comentários
-Um mapa de endereço fornece uma tradução do layout de uma imagem (A) para outro (B). Uma matriz de `DiaAddressMapEntry` estruturas classificadas por `rva` define um mapa de endereço.
+Um mapa de endereços fornece uma tradução de um layout de imagem (A) para outro (B). Uma matriz de estruturas de `DiaAddressMapEntry` classificadas por `rva` define um mapa de endereços.
 
-Para converter um endereço `addrA`, na imagem de um para um endereço, `addrB`, na imagem B, execute as seguintes etapas:
+Para converter um endereço, `addrA`, na imagem A para um endereço, `addrB`, na imagem B, execute as seguintes etapas:
 
-1. O mapa para a entrada de pesquisa `e`, com o maior `rva` menor ou igual a `addrA`.
+1. Pesquise o mapa para obter a entrada, `e`, com o maior `rva` menor ou igual a `addrA`.
 
 2. Defina `delta = addrA - e.rva`.
 
 3. Defina `addrB = e.rvaTo + delta`.
 
-    Uma matriz de `DiaAddressMapEntry` estruturas é passada para o [idiaaddressmap:: Set_addressmap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md) método.
+    Uma matriz de estruturas de `DiaAddressMapEntry` é passada para o método [IDiaAddressMap:: set_addressMap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md) .
 
 ## <a name="requirements"></a>Requisitos
-Cabeçalho: dia2.h
+Cabeçalho: dia2. h
 
 ## <a name="see-also"></a>Consulte também
 - [Enumerações e estruturas](../../debugger/debug-interface-access/enumerations-and-structures.md)
