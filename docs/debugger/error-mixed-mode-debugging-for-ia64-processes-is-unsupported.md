@@ -1,5 +1,5 @@
 ---
-title: 'Erro: Depuração de modo misto para processos IA64 não há suporte para | Microsoft Docs'
+title: 'Erro: não há suporte para a depuração de modo misto para processos IA64 | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 f1_keywords:
@@ -14,14 +14,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c4414651249aa7622e7f7be59e6150a4925f1b8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0bddbb1572bd0258eae2052eb34dfa3d0d67a134
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62850871"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72737634"
 ---
-# <a name="error-mixed-mode-debugging-for-ia64-processes-is-unsupported"></a>Erro: Não há suporte para a depuração de modo misto para processos IA64
+# <a name="error-mixed-mode-debugging-for-ia64-processes-is-unsupported"></a>Erro: a depuração do modo misto para processos IA64 não é suportada
 O depurador do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] não oferece suporte à depuração de código nativo misto e gerenciado em um processo baseado em Itanium.
 
 ### <a name="to-correct-this-error"></a>Para corrigir este erro

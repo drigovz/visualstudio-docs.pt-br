@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 730793d2b9f2e02d7e5665777f8df4d245b0ddf6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 328589df0e662ca27db634017005344d44491275
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62827676"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742116"
 ---
 # <a name="idiasessionfindlinesbyaddr"></a>IDiaSession::findLinesByAddr
-Recupera as linhas que contêm um endereço especificado em um compiland especificado.
+Recupera as linhas em um compiland especificado que contém um endereço especificado.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -36,21 +36,21 @@ HRESULT findLinesByAddr (
 #### <a name="parameters"></a>Parâmetros
 `seg`
 
-[in] Especifica o componente de seção de endereço específico.
+no Especifica o componente da seção do endereço específico.
 
 `offset`
 
-[in] Especifica o componente de deslocamento de endereço específico.
+no Especifica o componente de deslocamento do endereço específico.
 
 `length`
 
-[in] Especifica o número de bytes do intervalo de endereços para cobrir com essa consulta.
+no Especifica o número de bytes de intervalo de endereços a serem abordados com essa consulta.
 
 `ppResult`
 
-[out] Retorna um [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) objeto que contém uma lista de todas as linha de números que abrangem o intervalo de endereços especificado.
+fora Retorna um objeto [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) que contém uma lista de todos os números de linha que abrangem o intervalo de endereços especificado.
 
-## <a name="return-value"></a>Valor de retorno
+## <a name="return-value"></a>Valor retornado
 Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
 
 ## <a name="example"></a>Exemplo

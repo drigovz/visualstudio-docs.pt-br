@@ -15,12 +15,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 61772ead029dccaff9b1090a469865fcc3742df6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 791663c04d1c1e79eebaed39d339d8d118ffeaae
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666818"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748859"
 ---
 # <a name="outlining"></a>Estrutura de tópicos
 
@@ -48,8 +48,8 @@ Os comandos a seguir podem ser encontrados no submenu **Editar** > **Estrutura d
 |Interromper Estrutura de Tópicos|(**Ctrl**+**M**, **Ctrl**+**P**) – remove todas as informações de estrutura de tópicos do documento inteiro.|
 |Interromper Ocultação Atual|(**Ctrl**+**M**, **Ctrl**+**U**) – remove as informações de estrutura de tópicos da região definida pelo usuário selecionada no momento. Não disponível no Visual Basic.|
 |Recolher para Definições|(**Ctrl**+**M**, **Ctrl**+**O**) – recolhe os membros de todos os tipos.|
-|Recolher bloco:\<limite lógico>|(Visual C++) Recolhe uma região na função que contém o ponto de inserção. Por exemplo, se o ponto de inserção estiver dentro de um loop, o loop será ocultado.|
-|Recolher tudo: \<estruturas lógicas>|(Visual C++) Recolhe todas as estruturas de dentro da função.|
+|Recolher bloco:\<limite lógico>|(C++) Recolhe uma região na função que contém o ponto de inserção. Por exemplo, se o ponto de inserção estiver dentro de um loop, o loop será ocultado.|
+|Recolher tudo: \<estruturas lógicas>|(C++) Recolhe todas as estruturas dentro da função.|
 
 Você também pode usar o SDK do Visual Studio para definir as regiões de texto que deseja expandir ou recolher. Consulte [Instruções passo a passo: estrutura de tópicos](../extensibility/walkthrough-outlining.md).
 

@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6a356eafb2afbd63613c0fe6be6b794822e5f91e
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 3e7cb1ccc2a3b0208bf34ef06a12324f38913c45
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64796530"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739215"
 ---
-# <a name="idiasymbolgettargetoffset"></a>IDiaSymbol::get_targetOffset
-Recupera a seção de deslocamento de um destino da conversão.
+# <a name="idiasymbolget_targetoffset"></a>IDiaSymbol::get_targetOffset
+Recupera a seção de deslocamento de um destino de conversão.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -33,13 +33,13 @@ HRESULT get_targetOffset ( 
 #### <a name="parameters"></a>Parâmetros
  `pRetVal`
 
-[out] Retorna a parte do deslocamento de um endereço de destino da conversão.
+fora Retorna a parte de deslocamento de um endereço de destino de conversão.
 
-## <a name="return-value"></a>Valor de retorno
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE` ou um código de erro.
 
 > [!NOTE]
-> Um valor de retorno `S_FALSE` significa que a propriedade não está disponível para o símbolo.
+> Um valor de retorno de `S_FALSE` significa que a propriedade não está disponível para o símbolo.
 
 ## <a name="see-also"></a>Consulte também
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

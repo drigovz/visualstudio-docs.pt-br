@@ -1,5 +1,5 @@
 ---
-title: Registrando o projeto e modelos de Item | Microsoft Docs
+title: Registrando modelos de projeto e item | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,20 +14,20 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 84beaf97bda8d94872be22c6f5d247a746d1ecd3
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 2e35a476ab8fe8d8de3ce11dd117de4c84a3befa
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66319505"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72724621"
 ---
 # <a name="registering-project-and-item-templates"></a>Registrando modelos de projeto e item
-Tipos de projeto devem registrar os diretórios onde se encontram seus modelos de projeto e item de projeto. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] usa as informações de registro associadas com seus tipos de projeto para determinar o que mostrar nos **adicionar novo projeto** e **Adicionar Novo Item** caixas de diálogo.
+Os tipos de projeto devem registrar os diretórios em que os modelos de projeto e de item de projeto estão localizados. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] usa as informações de registro associadas aos tipos de projeto para determinar o que mostrar nas caixas de diálogo **Adicionar novo projeto** e **Adicionar novo item** .
 
- Para obter mais informações sobre modelos, consulte [adicionando projeto e modelos de Item de projeto](../../extensibility/internals/adding-project-and-project-item-templates.md).
+ Para obter mais informações sobre modelos, consulte [adicionando projeto e modelos de item de projeto](../../extensibility/internals/adding-project-and-project-item-templates.md).
 
-## <a name="registry-entries-for-projects"></a>Entradas do registro para projetos
- Os seguintes exemplos mostram entradas do registro em HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\\<*versão*>. As tabelas que acompanha este artigo explicam os elementos usados nos exemplos.
+## <a name="registry-entries-for-projects"></a>Entradas de registro para projetos
+ Os exemplos a seguir mostram entradas de registro em HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio \\ <*versão*>. As tabelas que as acompanham explicam os elementos usados nos exemplos.
 
 ```
 [Projects\{ProjectGUID}]
@@ -37,14 +37,14 @@ Tipos de projeto devem registrar os diretórios onde se encontram seus modelos d
 "ProjectTemplatesDir"="C:\\MyProduct\\MyProjectTemplates"
 ```
 
-|Nome|Tipo|Descrição|
+|Name|Digite|Descrição|
 |----------|----------|-----------------|
-|@|REG_SZ|Nome padrão de projetos desse tipo.|
-|DisplayName|REG_SZ|ID do recurso de nome a ser recuperado da DLL satélite registrados em pacotes.|
-|Pacote|REG_SZ|ID de classe do pacote registrados em pacotes.|
-|ProjectTemplatesDir|REG_SZ|Caminho padrão dos arquivos de modelo de projeto. Os arquivos de modelo de projeto são exibidos pela **novo projeto** modelo.|
+|@|REG_SZ|Nome padrão dos projetos deste tipo.|
+|DisplayName|REG_SZ|ID de recurso do nome a ser recuperado da DLL satélite registrada em pacotes.|
+|Pacote|REG_SZ|ID de classe do pacote registrado em pacotes.|
+|ProjectTemplatesDir|REG_SZ|Caminho padrão dos arquivos de modelo de projeto. Os arquivos de modelo de projeto são exibidos pelo novo modelo de **projeto** .|
 
-### <a name="registering-item-templates"></a>Modelos de Item do registro
+### <a name="registering-item-templates"></a>Registrando modelos de item
  Você deve registrar o diretório onde você armazena os modelos de item.
 
 ```
@@ -55,21 +55,21 @@ Tipos de projeto devem registrar os diretórios onde se encontram seus modelos d
 "SortPriority"=dword:00000064
 ```
 
-| Nome | Tipo | Descrição |
+| Name | Digite | Descrição |
 |--------------------------|-----------| - |
-| @ | REG_SZ | ID de recurso para modelos de Item de adicionar. |
-| TemplatesDir | REG_SZ | Caminho dos itens de projeto exibido na caixa de diálogo para o **Adicionar Novo Item** assistente. |
-| TemplatesLocalizedSubDir | REG_SZ | ID do recurso de uma cadeia de caracteres que nomeia o subdiretório do TemplatesDir que contém modelos localizados. Porque [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] carrega o recurso de cadeia de caracteres de DLLs satélites se você tivê-los, cada DLL satélite pode conter um nome de subpasta localizada diferentes. |
-| SortPriority | REG_DWORD | Definir SortPriority para controlar a ordem na qual os modelos são exibidos na **Adicionar Novo Item** caixa de diálogo. Valores maiores de SortPriority aparecem anteriormente na lista de modelos. |
+| @ | REG_SZ | ID do recurso para adicionar modelos de item. |
+| TemplatesDir | REG_SZ | Caminho dos itens de projeto exibidos na caixa de diálogo para o assistente **Adicionar novo item** . |
+| TemplatesLocalizedSubDir | REG_SZ | ID de recurso de uma cadeia de caracteres que nomeia o subdiretório de TemplatesDir que contém modelos localizados. Como [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] carrega o recurso de cadeia de caracteres de DLLs satélite, se você os tiver, cada DLL satélite poderá conter um nome de subdiretório localizado diferente. |
+| SortPriority | REG_DWORD | Defina SortPriority para controlar a ordem na qual os modelos são exibidos na caixa de diálogo **Adicionar novo item** . Valores SortPriority maiores aparecem anteriormente na lista de modelos. |
 
-### <a name="registering-file-filters"></a>Filtros de arquivo do registro
- Opcionalmente, você pode registrar os filtros que [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] usa quando ele solicita para nomes de arquivo. Por exemplo, o [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] filtrar para o **abrir arquivo** caixa de diálogo é:
+### <a name="registering-file-filters"></a>Registrando filtros de arquivo
+ Opcionalmente, você pode registrar filtros que [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] usa quando ele solicita nomes de arquivo. Por exemplo, o filtro de [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] para a caixa de diálogo **Abrir arquivo** é:
 
- **Arquivos Visual c# (\*. cs,\*. resx,\*Settings,\*. xsd,\*. WSDL);\*. CS,\*. resx,\*Settings,\*. xsd,\*. WSDL)**
+ **Arquivos C# visuais (\*. cs, \*. resx, \*. settings, \*. xsd, \*. WSDL); \*. cs, \*. resx, \*. Settings, 0. xsd, 1. WSDL)**
 
- Para dar suporte a registro de vários filtros, cada filtro é registrado em sua própria subchave sob HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\\<*versão*> \Projects\\{ \< *ProjectGUID*>} \Filters\\<*subchave*>. O nome da subchave é arbitrário; [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ignora o nome da subchave e usa apenas seus valores.
+ Para dar suporte ao registro de vários filtros, cada filtro é registrado em sua própria subchave em HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio \\ <*versão*> \projects \\ {\<*ProjectGuid*>} \Filters >*subchave*de < \\. O nome da subchave é arbitrário;  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ignora o nome da subchave e usa apenas seus valores.
 
- Você pode controlar os contextos em que um filtro é usado, definindo sinalizadores, mostrados na tabela a seguir. Se um filtro não tem qualquer sinalizador definido, ele será listado após os filtros comuns na **Adicionar Item existente** caixa de diálogo e o **abrir arquivo** caixa de diálogo, mas ele não será usado no **localizar nos arquivos**  caixa de diálogo.
+ Você pode controlar os contextos nos quais um filtro é usado definindo sinalizadores, mostrados na tabela a seguir. Se um filtro não tiver nenhum sinalizador definido, ele será listado após os filtros comuns na caixa de diálogo **Adicionar item existente** e na caixa de diálogo **Abrir arquivo** , mas não será usado na caixa de diálogo **localizar nos arquivos** .
 
 ```
 [Projects\{ProjectGUID}\Filters\MyLanguageFilter]
@@ -82,17 +82,17 @@ Tipos de projeto devem registrar os diretórios onde se encontram seus modelos d
 "SortPriority"=dword:00000064
 ```
 
-|Nome|Tipo|Descrição|
+|Name|Digite|Descrição|
 |----------|----------|-----------------|
-|CommonFindFilesFilter|REG_DWORD|Faz com que o filtro de um dos filtros comuns na **localizar nos arquivos** caixa de diálogo. Filtros comuns são listados na lista de filtros antes dos filtros não marcado tão comuns.|
-|CommonOpenFilesFilter|REG_DWORD|Faz com que o filtro de um dos filtros comuns na **abrir arquivo** caixa de diálogo. Filtros comuns são listados na lista de filtros antes dos filtros não marcado tão comuns.|
-|FindInFilesFilter|REG_DWORD|Lista o filtro após os filtros comuns na **localizar nos arquivos** caixa de diálogo.|
-|NotOpenFileFilter|REG_DWORD|Indica que o filtro não é usado na **abrir arquivo** caixa de diálogo.|
-|NotAddExistingItemFilter|REG_DWORD|Indica que o filtro não é usado na **Add Existing Item** caixa de diálogo.|
-|SortPriority|REG_DWORD|Defina SortPriority para controlar a ordem na qual os filtros são exibidos. Valores maiores de SortPriority aparecem anteriormente na lista de filtros.|
+|CommonFindFilesFilter|REG_DWORD|Torna o filtro um dos filtros comuns na caixa de diálogo **localizar nos arquivos** . Os filtros comuns são listados na lista filtro antes dos filtros não marcados como comuns.|
+|CommonOpenFilesFilter|REG_DWORD|Torna o filtro um dos filtros comuns na caixa de diálogo **Abrir arquivo** . Os filtros comuns são listados na lista filtro antes dos filtros não marcados como comuns.|
+|FindInFilesFilter|REG_DWORD|Lista o filtro após os filtros comuns na caixa de diálogo **localizar nos arquivos** .|
+|NotOpenFileFilter|REG_DWORD|Indica que o filtro não é usado na caixa de diálogo **Abrir arquivo** .|
+|NotAddExistingItemFilter|REG_DWORD|Indica que o filtro não é usado na caixa de diálogo **Adicionar item existente** .|
+|SortPriority|REG_DWORD|Defina SortPriority para controlar a ordem na qual os filtros são exibidos. Valores SortPriority maiores aparecem anteriormente na lista de filtros.|
 
 ## <a name="directory-structure"></a>Estrutura de diretórios
- Os VSPackages pode colocar pastas e arquivos de modelo em qualquer lugar em um disco local ou remoto, desde que o local é registrado por meio do ambiente de desenvolvimento integrado (IDE). No entanto, para facilitar a organização, recomendamos a seguinte estrutura de diretório no caminho de instalação do produto.
+ O VSPackages pode colocar arquivos de modelo e pastas em qualquer lugar em um disco local ou remoto, desde que o local seja registrado por meio do IDE (ambiente de desenvolvimento integrado). No entanto, para facilitar a organização, recomendamos a seguinte estrutura de diretório no caminho de instalação do seu produto.
 
  \Templates
 
@@ -110,7 +110,7 @@ Tipos de projeto devem registrar os diretórios onde se encontram seus modelos d
 
  \Form
 
- \Web página
+ Página \Servidor
 
  \HelperFiles (contém os arquivos usados em itens de projeto de vários arquivos)
 

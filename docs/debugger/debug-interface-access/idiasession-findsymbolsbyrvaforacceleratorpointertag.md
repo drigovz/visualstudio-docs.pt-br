@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5bcf399dcf80cb574b6018dde5ffa44e72a4c988
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: eb1b24d24de35de30b24937a6cfbf59d12f69482
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839206"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742000"
 ---
 # <a name="idiasessionfindsymbolsbyrvaforacceleratorpointertag"></a>IDiaSession::findSymbolsByRVAForAcceleratorPointerTag
-Dado um valor de marca correspondente, esse método retorna uma enumeração de símbolos que estão contidos em uma função de stub do acelerador pai especificado em um endereço virtual relativo de especificado.
+Dado um valor de marca correspondente, esse método retorna uma enumeração de símbolos que estão contidos em uma função de stub de acelerador pai especificada em um endereço virtual relativo especificado.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -34,25 +34,25 @@ HRESULT findSymbolsByRVAForAcceleratorPointerTag ( 
 #### <a name="parameters"></a>Parâmetros
  `parent`
 
-[in] Um `IDiaSymbol` que corresponde à função de stub Acelerador a ser pesquisado.
+no Um `IDiaSymbol` que corresponde à função de stub do acelerador a ser pesquisada.
 
  `tagValue`
 
-[in] O valor de marca do ponteiro.
+no O valor da marca do ponteiro.
 
  `rva`
 
-[in] O endereço virtual relativo.
+no O endereço virtual relativo.
 
  `ppResult`
 
-[out] Um ponteiro para um `IDiaEnumSymbols` ponteiro de interface que é inicializado com o resultado.
+fora Um ponteiro para um ponteiro de interface `IDiaEnumSymbols` que é inicializado com o resultado.
 
-## <a name="return-value"></a>Valor de retorno
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários
- Chame esse método somente em um `IDiaSymbol` interface que corresponde a uma função de stub do acelerador.
+ Chame esse método somente em uma interface `IDiaSymbol` que corresponda a uma função de stub de acelerador.
 
 ## <a name="see-also"></a>Consulte também
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)

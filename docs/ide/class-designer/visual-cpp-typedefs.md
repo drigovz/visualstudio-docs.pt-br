@@ -1,5 +1,5 @@
 ---
-title: Typedefs do Visual C++ no Designer de Classe
+title: C++TYPEDEFs em Designer de Classe
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,14 +13,14 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7bf886aedc27b6e702637b84bbe919971baec9e3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 94dc4a6687a2aaede7fc901884c5d3acc6fbf56f
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647577"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748005"
 ---
-# <a name="visual-c-typedefs-in-class-designer"></a>Typedefs do Visual C++ no Designer de Classe
+# <a name="c-typedefs-in-class-designer"></a>C++TYPEDEFs em Designer de Classe
 
 As instruções [typedef](/cpp/cpp/aliases-and-typedefs-cpp#typedefs) criam uma ou mais camadas de indireção entre um nome e seu tipo subjacente. O **Designer de Classe** é compatível com tipos de typedef do C++ declarados com a palavra-chave `typedef`, por exemplo:
 
@@ -84,5 +84,5 @@ typedef class coord
 
 ## <a name="see-also"></a>Consulte também
 
-- [Trabalhar com o código do Visual C++](working-with-visual-cpp-code.md)
+- [Trabalhar com C++ código](working-with-visual-cpp-code.md)
 - [Typedefs](/cpp/cpp/aliases-and-typedefs-cpp#typedefs)

@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ecb56e35f376dc3c8046255499e9048c3758764
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: edd4fb03715d02d3886bf410fc916896a51eca26
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64858469"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739536"
 ---
-# <a name="idiasymbolgetoverloadedoperator"></a>IDiaSymbol::get_overloadedOperator
+# <a name="idiasymbolget_overloadedoperator"></a>IDiaSymbol::get_overloadedOperator
 Recupera um sinalizador que especifica se o tipo de dados definido pelo usuário tem operadores sobrecarregados.
 
 ## <a name="syntax"></a>Sintaxe
@@ -33,13 +33,13 @@ HRESULT get_overloadedOperator ( 
 #### <a name="parameters"></a>Parâmetros
  `pRetVal`
 
-[out] Retorna `TRUE` se o tipo de dados definido pelo usuário tem sobrecarga dos operadores; caso contrário, retornará `FALSE`.
+fora Retorna `TRUE` se o tipo de dados definido pelo usuário tiver operadores sobrecarregados; caso contrário, retorna `FALSE`.
 
-## <a name="return-value"></a>Valor de retorno
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE` ou um código de erro.
 
 > [!NOTE]
-> Um valor de retorno `S_FALSE` significa que a propriedade não está disponível para o símbolo.
+> Um valor de retorno de `S_FALSE` significa que a propriedade não está disponível para o símbolo.
 
 ## <a name="see-also"></a>Consulte também
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

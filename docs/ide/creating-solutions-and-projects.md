@@ -14,12 +14,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 206f97dcb264f85a15a9293e55a3f2ccc6173aa5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: abe2cbd18e87c7045d44e597e3a5bb93a64a1c35
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652606"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747960"
 ---
 # <a name="create-solutions-and-projects"></a>Criar soluções e projetos
 
@@ -53,7 +53,7 @@ Se você tem uma coleção de arquivos de origem de código, é possível adicio
 1. No assistente, navegue até o local dos arquivos e, em seguida, insira um nome para o novo projeto na caixa **Nome**. Quando terminar, escolha o botão **Concluir**.
 
 > [!NOTE]
-> Essa opção funciona melhor para uma coleção relativamente simples de arquivos. Atualmente, somente os tipos de projeto do Visual C++, Apache Cordova, Visual Basic e C# são compatíveis.
+> Essa opção funciona melhor para uma coleção relativamente simples de arquivos. Atualmente, há C++suporte apenas para os tipos Apache Cordova C# , Visual Basic e Project.
 
 ## <a name="add-files-to-a-solution"></a>Adicionar arquivos a uma solução
 

@@ -1,5 +1,5 @@
 ---
-title: O que&#39;s novos na fonte de versão 1.3 da API plug-in de controle | Microsoft Docs
+title: Quais&#39;s novidades na API de plug-in de controle do código-fonte versão 1,3 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,28 +11,28 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: df93626066441226e7f41963e60e3417e8cc12da
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 2f45eeb3c57d5339b1e9fd66951dcbb60970e108
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66323099"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72721582"
 ---
-# <a name="what39s-new-in-the-source-control-plug-in-api-version-13"></a>O que&#39;s novos na fonte de controlar a versão 1.3 plug-in da API
-A API de plug-in de controle do código-fonte versão 1.3 apresenta novas funções a seguir para fornecer mais avançados do controle.
+# <a name="what39s-new-in-the-source-control-plug-in-api-version-13"></a>Quais&#39;s novidades na API de plug-in de controle do código-fonte versão 1,3
+A API de plug-in de controle do código-fonte versão 1,3 apresenta as novas funções a seguir para fornecer controle mais avançado.
 
 ## <a name="changes"></a>Alterações
- As funções a seguir são novas para a API de plug-in de controle do código-fonte versão 1.3:
+ As seguintes funções são novas na API de plug-in de controle do código-fonte versão 1,3:
 
-|Função|Visão geral|
+|Função|Visão Geral|
 |--------------|--------------|
-|[SccGetExtendedCapabilities](../../extensibility/sccgetextendedcapabilities-function.md)|Permite que os bits de funcionalidade adicional a ser relatado|
-|[SccEnumChangedFiles](../../extensibility/sccenumchangedfiles-function.md)|Permite o exame dos arquivos que têm versões mais recentes no versão controle banco de dados que o disco local|
-|[SccQueryChanges](../../extensibility/sccquerychanges-function.md)|Permite o exame do estado das alterações de nome (renomeações, adições e exclusões) para arquivos especificados|
-|[SccPopulateDirList](../../extensibility/sccpopulatedirlist-function.md)|Permite o exame de diretórios e arquivos no banco de dados de controle de versão|
-|[SccAddFilesFromSCC](../../extensibility/sccaddfilesfromscc-function.md)|Adiciona uma lista especificada de arquivos do banco de dados de controle de versão para o projeto atual|
-|[SccBackgroundGet](../../extensibility/sccbackgroundget-function.md)|Executa um silenciosa "Get" dos arquivos especificados (sem interface do usuário é mostrado)|
-|[SccGetUserOption](../../extensibility/sccgetuseroption-function.md)|Permite o acesso às opções específicas do usuário|
+|[SccGetExtendedCapabilities](../../extensibility/sccgetextendedcapabilities-function.md)|Permite que bits de funcionalidade adicionais sejam relatados|
+|[SccEnumChangedFiles](../../extensibility/sccenumchangedfiles-function.md)|Permite o exame de arquivos que têm versões mais recentes no banco de dados de controle de versão do que no disco local|
+|[SccQueryChanges](../../extensibility/sccquerychanges-function.md)|Permite o exame do estado de alterações de nome (renomeações, adições e exclusões) para arquivos especificados|
+|[SccPopulateDirList](../../extensibility/sccpopulatedirlist-function.md)|Permite o exame de diretórios e arquivos no banco de dados do controle de versão|
+|[SccAddFilesFromSCC](../../extensibility/sccaddfilesfromscc-function.md)|Adiciona uma lista especificada de arquivos do banco de dados de controle de versão ao projeto atual|
+|[SccBackgroundGet](../../extensibility/sccbackgroundget-function.md)|Executa um "Get" silencioso dos arquivos especificados (nenhuma interface do usuário é mostrada)|
+|[SccGetUserOption](../../extensibility/sccgetuseroption-function.md)|Permite o acesso a opções específicas do usuário|
 
 ## <a name="see-also"></a>Consulte também
 - [Introdução](../../extensibility/internals/getting-started-with-source-control-plug-ins.md)

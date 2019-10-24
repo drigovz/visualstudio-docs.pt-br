@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f9b0f0d06ae5303277c296fd56e36e60b9a6f022
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 34062b654cbaccec053c5ac50bfb041d37a0f4e6
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62829635"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744200"
 ---
 # <a name="idiaenumsegmentsnext"></a>IDiaEnumSegments::Next
 Recupera um número especificado de segmentos na sequência de enumeração.
@@ -35,18 +35,18 @@ HRESULT Next ( 
 #### <a name="parameters"></a>Parâmetros
  celt
 
-[in] O número de segmentos no enumerador a ser recuperado.
+no O número de segmentos no enumerador a ser recuperado.
 
  rgelt
 
-[out] Uma matriz que deve ser preenchido com os detalhes desejados [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md) objetos que representam os segmentos.
+fora Uma matriz que deve ser preenchida com os objetos [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md) desejados que representam os segmentos.
 
  pceltFetched
 
-[out] Retorna o número de segmentos no enumerador buscado.
+fora Retorna o número de segmentos no enumerador obtido.
 
-## <a name="return-value"></a>Valor de retorno
- Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não houver nenhum mais segmentos. Caso contrário, retornará um código de erro.
+## <a name="return-value"></a>Valor retornado
+ Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não houver mais segmentos. Caso contrário, retornará um código de erro.
 
 ## <a name="see-also"></a>Consulte também
 - [IDiaEnumSegments](../../debugger/debug-interface-access/idiaenumsegments.md)

@@ -11,16 +11,16 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: 648d00cd59d056e0874c91338a39667088d93e2e
-ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
+ms.openlocfilehash: 071c16267486e1dda1e183cad3c488345974a3cc
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72018437"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745919"
 ---
 # <a name="sample-c-project-for-code-analysis"></a>Projeto de C++ de exemplo para análise de código
 
-Os procedimentos a seguir mostram como criar a amostra para [Passo a passo: Analisar o código C/C++ em busca de defeitos](../code-quality/walkthrough-analyzing-c-cpp-code-for-defects.md). Os procedimentos criam:
+Os procedimentos a seguir mostram como criar o exemplo para o [passo a passo: analisarC++ C/Code quanto a defeitos](../code-quality/walkthrough-analyzing-c-cpp-code-for-defects.md). Os procedimentos criam:
 
 - Uma solução do Visual Studio chamada CppDemo.
 
@@ -34,7 +34,7 @@ Os procedimentos também fornecem o código para o cabeçalho e arquivos *.cpp* 
 
 1. Clique no menu **Arquivo**, aponte para **Novo** e clique em **Novo Projeto**.
 
-2. Na lista de árvore **Tipos de projeto**, se o Visual C++ não for o idioma padrão no VS, expanda **Outros Idiomas**.
+2. Na lista árvore de **tipos de projeto** , C++ se não for o idioma padrão no vs, expanda **outros idiomas**.
 
 3. Expanda **Visual C++** e, em seguida, clique em **Geral**.
 

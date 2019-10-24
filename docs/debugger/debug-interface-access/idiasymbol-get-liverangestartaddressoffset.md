@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0312571b0a96b080949398618888b05c2704d3ca
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: b39bf1e73d8b056c1cfcbfafd41dcbbb464c40ce
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64808948"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739916"
 ---
-# <a name="idiasymbolgetliverangestartaddressoffset"></a>IDiaSymbol::get_liveRangeStartAddressOffset
-Retorna a parte do deslocamento do endereço inicial do intervalo no qual o símbolo local é válido.
+# <a name="idiasymbolget_liverangestartaddressoffset"></a>IDiaSymbol::get_liveRangeStartAddressOffset
+Retorna a parte de deslocamento do endereço inicial do intervalo no qual o símbolo local é válido.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -33,23 +33,23 @@ HRESULT get_liveRangeStartAddressOffset ( 
 #### <a name="parameters"></a>Parâmetros
  `offset`
 
-[out] Retorna a parte do deslocamento do intervalo de endereços inicial.
+fora Retorna a parte de deslocamento do intervalo de endereços inicial.
 
-## <a name="return-value"></a>Valor de retorno
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
 
 > [!NOTE]
-> Um código de erro retornado significa que o símbolo não tem informações de intervalo em tempo real.
+> Um código de erro retornado significa que o símbolo não tem informações de intervalo dinâmico.
 
 ## <a name="remarks"></a>Comentários
  O endereço formado pela seção e deslocamento é o início do intervalo no qual o símbolo é válido.
 
- Para obter a parte da seção do endereço, use [IDiaSymbol::get_liveRangeStartAddressSection](../../debugger/debug-interface-access/idiasymbol-get-liverangestartaddresssection.md).
+ Para obter a seção parte do endereço, use [IDiaSymbol:: get_liveRangeStartAddressSection](../../debugger/debug-interface-access/idiasymbol-get-liverangestartaddresssection.md).
 
 ## <a name="requirements"></a>Requisitos
- Cabeçalho: Dia2.h
+ Cabeçalho: dia2. h
 
- Biblioteca: diaguids.lib
+ Biblioteca: diaguids. lib
 
  DLL: msdia100.dll
 

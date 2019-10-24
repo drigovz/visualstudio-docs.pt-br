@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c90c2148fc5a563fef8946bd39acf4603d7d09f6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cb371d841c10b64895400f66bf73159f27d68ec1
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62833227"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744260"
 ---
 # <a name="idiaenumsectioncontribsskip"></a>IDiaEnumSectionContribs::Skip
 Ignora um número especificado de contribuições de seção em uma sequência de enumeração.
@@ -33,10 +33,10 @@ HRESULT Skip( 
 #### <a name="parameters"></a>Parâmetros
  `celt`
 
-[in] O número de contribuições de seção na sequência de enumeração para ignorar.
+no O número de contribuições de seção na sequência de enumeração a serem ignoradas.
 
-## <a name="return-value"></a>Valor de retorno
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE` se não houver nenhuma contribuição de seção mais ignorar.
+## <a name="return-value"></a>Valor retornado
+ Se for bem-sucedido, retornará `S_OK`; caso contrário, o retornará `S_FALSE` se não houver mais contribuições de seção a serem ignoradas.
 
 ## <a name="see-also"></a>Consulte também
 - [IDiaEnumSectionContribs](../../debugger/debug-interface-access/idiaenumsectioncontribs.md)

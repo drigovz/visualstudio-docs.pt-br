@@ -1,5 +1,5 @@
 ---
-title: 'Erro: Uma verificação de segurança falhou porque o serviço de administração do IIS não respondeu | Microsoft Docs'
+title: 'Erro: falha na verificação de segurança porque o serviço de administração do IIS não respondeu | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 f1_keywords:
@@ -16,27 +16,27 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ae97ae0594b06e9b35ac3bdd61eacf852968889
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f668de3d7c7e9a8bd075beb972199cf849feea65
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62851029"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72737880"
 ---
-# <a name="error-a-security-check-failed-because-the-iis-admin-service-did-not-respond"></a>Erro: Falha em uma verificação de segurança porque o serviço de administração do IIS não respondeu
+# <a name="error-a-security-check-failed-because-the-iis-admin-service-did-not-respond"></a>Erro: falha na verificação de segurança porque o Serviço de Administração do IIS não respondeu
 Esse erro ocorre quando o Serviço de administração do IIS não responde. Isso geralmente indica que há um problema com a instalação do IIS. Primeiro, verifique se o serviço está sendo executado usando a ferramenta **Serviços** de **Ferramentas Administrativas**.
 
 ### <a name="to-correct-this-error"></a>Para corrigir este erro
 
 - Reinstale o IIS, usando o Painel de Controle **Adicionar ou Remover Programas**.
 
-- - ou -
+- \- ou -
 
 - Remova o IIS do computador, usando o painel de controle Adicionar ou Remover Programas. Se você tiver removido o IIS e ainda tiver problemas, verifique no Registro se essa chave já não existe:
 
     `HKEY_CLASSES_ROOT\CLSID\{A9E69610-B80D-11D0-B9B9-00A0C922E750}`
 
-     - ou -
+     \- ou -
 
 - Desabilite o Serviço de administração do IIS, usando o painel de controle Ferramentas Administrativas. Isso desabilitará o IIS no computador.
 

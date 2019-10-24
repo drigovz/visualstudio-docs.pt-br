@@ -1,5 +1,5 @@
 ---
-title: 'Como: Incluir pré-requisitos com um aplicativo ClickOnce | Microsoft Docs'
+title: 'Como: incluir pré-requisitos com um aplicativo ClickOnce | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: c66bf0a5-8c93-4e68-a224-3b29ac36fe4d
@@ -8,18 +8,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 47142e63976a743166e5211631e77a0c0878ad9c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: c6826ae1f957778ac6eea556fdbbe9589ab3390b
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63406960"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72727903"
 ---
-# <a name="how-to-include-prerequisites-with-a-clickonce-application"></a>Como: Incluir pré-requisitos com um aplicativo ClickOnce
+# <a name="how-to-include-prerequisites-with-a-clickonce-application"></a>Como incluir pré-requisitos com um aplicativo ClickOnce
 Antes que possa distribuir o software necessário com um aplicativo [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], primeiro você deverá baixar os pacotes de instalador desses pré-requisitos em seu computador de desenvolvimento. Quando você publicar um aplicativo e escolher **Baixar pré-requisitos da mesma localização que meu aplicativo baixa**, ocorrerá um erro se os pacotes de instalador não estiverem na pasta **Pacotes**.
 
 > [!NOTE]
-> Para adicionar um pacote do instalador para o .NET Framework, consulte [guia de implantação do .NET Framework para desenvolvedores](/dotnet/framework/deployment/deployment-guide-for-developers).
+> Para adicionar um pacote do instalador para o .NET Framework, consulte [.NET Framework guia de implantação para desenvolvedores](/dotnet/framework/deployment/deployment-guide-for-developers).
 
 ## <a name="Package"></a> Para adicionar um pacote de instalador ao usar Package.xml
 
@@ -31,10 +31,10 @@ Antes que possa distribuir o software necessário com um aplicativo [!INCLUDE[nd
 
 3. No Bloco de Notas, abra o arquivo *Package.xml*.
 
-4. Localize o **nome** elemento que contém **http://go.microsoft.com/fwlink** e copie a URL. Inclua a parte **LinkID**.
+4. Localize o elemento **Name** que contém **http://go.microsoft.com/fwlink** e copie a URL. Inclua a parte **LinkID**.
 
    > [!NOTE]
-   > Se nenhum **nome** elemento contém **http://go.microsoft.com/fwlink** , abra o **Product** arquivo na pasta raiz do pré-requisito e localize o **fwlink** cadeia de caracteres.
+   > Se nenhum elemento **Name** contiver **http://go.microsoft.com/fwlink** , abra o arquivo **Product. xml** na pasta raiz para obter o pré-requisito e localize a cadeia de caracteres **fwlink** .
 
    > [!IMPORTANT]
    > Alguns pré-requisitos têm vários pacotes de instalador (por exemplo, para sistemas de 32 bits ou 64 bits). Se vários elementos **Name** contiverem **fwlink**, você deverá repetir as etapas restantes para cada um deles.
@@ -50,4 +50,4 @@ Antes que possa distribuir o software necessário com um aplicativo [!INCLUDE[nd
     Agora você poderá distribuir o pacote de instalador com seu aplicativo.
 
 ## <a name="see-also"></a>Consulte também
-- [Como: Instalar pré-requisitos com um aplicativo ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)
+- [Como instalar pré-requisitos com um aplicativo ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)

@@ -1,5 +1,5 @@
 ---
-title: Decisões de Design do controle de origem | Microsoft Docs
+title: Decisões de design de controle do código-fonte | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,29 +10,29 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bb09884511c8a2070e49e12d38084c12a2907b19
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 3a7c8a902520323f548a7dd77a84b07a56bfc9a0
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66322575"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72723612"
 ---
 # <a name="source-control-design-decisions"></a>Decisões de design de controle do código-fonte
-As seguintes decisões de design devem ser consideradas para projetos ao implementar o controle de origem.
+As decisões de design a seguir devem ser consideradas para projetos ao implementar o controle do código-fonte.
 
-## <a name="will-information-be-shared-or-private"></a>Informações será compartilhado ou particular?
- A decisão de design mais importante, que você pode fazer é quais informações são compartilháveis e o que é privado. Por exemplo, a lista de arquivos para o projeto é compartilhada, mas dentro dessa lista de arquivos, alguns usuários talvez queira ter arquivos particulares. Configurações do compilador são compartilhadas, mas o projeto de inicialização é geralmente particular. As configurações são puramente compartilhados, compartilhados com uma substituição ou puramente privadas. Por design, itens particulares, como opções de usuário de solução (. suo) de arquivos, não são verificadas em [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)]. Certifique-se de armazenar informações particulares em arquivos particulares, como o arquivo. suo ou um arquivo privado específico, você cria, por exemplo, um. arquivo csproj no Visual c# ou. vbproj arquivo para o Visual Basic.
+## <a name="will-information-be-shared-or-private"></a>As informações serão compartilhadas ou privadas?
+ A decisão de design mais importante que você pode fazer é que as informações são compartilháveis e o que é privado. Por exemplo, a lista de arquivos para o projeto é compartilhada, mas dentro dessa lista de arquivos, alguns usuários talvez queiram ter arquivos particulares. As configurações do compilador são compartilhadas, mas o projeto de inicialização geralmente é privado. As configurações são puramente compartilhadas, compartilhadas com uma substituição ou puramente privada. Por design, itens particulares, como arquivos de opções de usuário de solução (. suo), não são verificados em [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)]. Certifique-se de armazenar todas as informações particulares em arquivos particulares, como o arquivo. suo, ou um arquivo particular específico criado por você, por exemplo, um arquivo. csproj. C# User para Visual ou um arquivo. vbproj. user para Visual Basic.
 
- Essa decisão não é abrangente e pode ser feita em uma base de item por item.
+ Essa decisão não é completa e pode ser feita de acordo com cada item.
 
 ## <a name="will-the-project-include-special-files"></a>O projeto incluirá arquivos especiais?
- Outra decisão de design importante é se a estrutura do projeto usa arquivos especiais. Arquivos especiais são arquivos ocultos que sustenta os arquivos que são caixas de diálogo visível no Gerenciador de soluções e no check-in e check-out. Se você usar arquivos especiais, siga estas diretrizes:
+ Outra decisão de design importante é se a estrutura do projeto usa arquivos especiais. Arquivos especiais são arquivos ocultos que se baseiam nos arquivos visíveis no Gerenciador de Soluções e nas caixas de diálogo check-in e check-out. Se você usar arquivos especiais, siga estas diretrizes:
 
-1. Não associe arquivos especiais no nó raiz do projeto — ou seja, com o projeto de arquivos em si. O arquivo de projeto deve ser um único arquivo.
+1. Não associe arquivos especiais ao nó raiz do projeto, ou seja, ao próprio arquivo do projeto. O arquivo de projeto deve ser um único arquivo.
 
-2. Quando os arquivos especiais são adicionados, removidos ou renomeados em um projeto apropriado <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocumentsEvents2> os eventos devem ser disparados com o conjunto de sinalizador que indica que os arquivos são arquivos especiais. Esses eventos são chamados pelo ambiente em resposta ao projeto de chamada apropriada <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2> métodos.
+2. Quando arquivos especiais são adicionados, removidos ou renomeados em um projeto, os eventos de <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocumentsEvents2> apropriados devem ser acionados com o sinalizador definido que indica que os arquivos são arquivos especiais. Esses eventos são chamados pelo ambiente em resposta ao projeto que chama os métodos de <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2> apropriados.
 
-3. Quando o projeto ou o editor chama <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> para um arquivo, arquivos especiais associados a esse arquivo não são automaticamente checked out. Passe os arquivos especiais no junto com o arquivo pai. O ambiente será detecte a relação entre todos os arquivos que são passados e ocultar adequadamente os arquivos especiais no check-out de interface do usuário.
+3. Quando seu projeto ou editor chama <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> de um arquivo, os arquivos especiais associados a esse arquivo não são automaticamente submetidos a check-out. Passe os arquivos especiais junto com o arquivo pai. O ambiente detectará a relação entre todos os arquivos passados e ocultará adequadamente os arquivos especiais na interface do usuário de check-out.
 
 ## <a name="see-also"></a>Consulte também
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A>

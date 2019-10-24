@@ -11,12 +11,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 51173fcf2e8f6785b61bfd348178a59b5fb933dc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 27d8672ea94cf2a1547904f313ac36509f111462
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654014"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748453"
 ---
 # <a name="customize-file-storage-and-xml-serialization"></a>Personalizar o armazenamento de arquivos e a serialização XML
 
@@ -272,7 +272,7 @@ Esses elementos são encontrados no Gerenciador de DSL em **dados de Behavior\Cl
 |Tem Esquema de elemento personalizado|Se for true, indica que a classe de domínio tem um esquema de elemento personalizado|
 |É personalizado|Defina como **true** se você quiser escrever seu próprio código de serialização e desserialização para essa classe de domínio.<br /><br /> Compile a solução e investigue os erros para descobrir instruções detalhadas.|
 |Classe de domínio|Classe de domínio à qual este nó de dados de classe se aplica. Somente leitura.|
-|Nome do elemento|Nome do nó XML para elementos desta classe. O valor padrão é uma versão em minúsculas do nome da classe de domínio.|
+|Nome de elementos|Nome do nó XML para elementos desta classe. O valor padrão é uma versão em minúsculas do nome da classe de domínio.|
 |Nome do atributo do moniker|Nome do atributo usado nos elementos do moniker para conter a referência. Se estiver em branco, o nome da propriedade ou da ID de chave será usado.<br /><br /> Neste exemplo, é "Name": `<personMoniker name="/Mike Nash"/>`|
 |Nome do elemento do moniker|Nome do elemento XML usado para monikers que se referem a elementos dessa classe.<br /><br /> O valor padrão é uma versão em minúsculas do nome de classe sufixos por "moniker". Por exemplo, `personMoniker`.|
 |Nome do tipo de moniker|Nome do tipo XSD gerado para os monikers para elementos desta classe. O XSD está no **código Dsl\Generated \\ \*Schema. xsd**|
