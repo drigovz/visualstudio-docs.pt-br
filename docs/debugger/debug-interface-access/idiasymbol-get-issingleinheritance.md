@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_isSingleInheritance | Microsoft Docs
+title: 'IDiaSymbol:: get_isSingleInheritance | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -8,15 +8,15 @@ ms.assetid: 46cde656-059b-4c20-9476-3ca68ccc9912
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f8b245879a6b574c3f82b12d14b4fab637c2ecd7
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 96a8ce072fc57dc236dd2025b8ea3c9c5a4b9b79
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62836291"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740064"
 ---
-# <a name="idiasymbolgetissingleinheritance"></a>IDiaSymbol::get_isSingleInheritance
-Especifica se o `this` ponteiro aponta para um membro de dados com a herança única.
+# <a name="idiasymbolget_issingleinheritance"></a>IDiaSymbol::get_isSingleInheritance
+Especifica se o ponteiro de `this` aponta para um membro de dados com herança única.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -28,9 +28,9 @@ HRESULT get_isSingleInheritance(
 #### <a name="parameters"></a>Parâmetros
  `pRetVal`
 
-[out] Um ponteiro para um `BOOL` que especifica se o `this` ponteiro aponta para um membro de dados com a herança única.
+fora Um ponteiro para um `BOOL` que especifica se o ponteiro de `this` aponta para um membro de dados com herança única.
 
-## <a name="return-value"></a>Valor de retorno
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE` ou um código de erro.
 
 ## <a name="see-also"></a>Consulte também

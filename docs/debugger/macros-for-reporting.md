@@ -22,15 +22,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c92424275a1dff69863b81fbf8567fbc4b84499
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c2129db98293cef678527fb331992c6c5960d8f9
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62905549"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72731383"
 ---
 # <a name="macros-for-reporting"></a>Macros para relatórios
-Para depuração, você pode usar o **rptn** e **rptfn** macros, definidas em CRTDBG. H, para substituir o uso de `printf` instruções. Você não precisa inclose-los no **#ifdef**s, porque eles desaparecem automaticamente na sua versão de compilação quando **Debug** não está definido.
+Para depuração, você pode usar as macros **_RPTn** e **_RPTFn** , definidas em CRTDBG. H, para substituir o uso de instruções `printf`. Você não precisa infechá-los em **#ifdef**s, pois eles desaparecerão automaticamente em sua compilação de versão quando **_DEBUG** não estiver definido.
 
 |Macro|Descrição|
 |-----------|-----------------|
@@ -54,7 +54,7 @@ Para depuração, você pode usar o **rptn** e **rptfn** macros, definidas em CR
 if (someVar > MAX_SOMEVAR) _RPTF2(_CRT_WARN, "In NameOfThisFunc( ), someVar= %d, otherVar= %d\n", someVar, otherVar );
 ```
 
-Você pode achar que um aplicativo específico precisa depurar relatórios que não forneçam as macros fornecidas com a biblioteca de tempo de execução C. Nesses casos, você pode escrever uma macro criada especificamente para atender às suas próprias necessidades. Em um dos arquivos de cabeçalho, por exemplo, você pode incluir código como o seguinte para definir uma macro chamada **ALERT_IF2**:
+Você pode achar que um aplicativo específico precisa de relatórios de depuração de que as macros fornecidas com a biblioteca de tempo de execução C não fornecem. Nesses casos, você pode escrever uma macro projetada especificamente para atender aos seus próprios requisitos. Em um dos arquivos de cabeçalho, por exemplo, você pode incluir código como o seguinte para definir uma macro chamada **ALERT_IF2**:
 
 ```cpp
 #ifndef _DEBUG                  /* For RELEASE builds */
@@ -70,14 +70,14 @@ Você pode achar que um aplicativo específico precisa depurar relatórios que n
 #endif
 ```
 
- Uma chamada para **ALERT_IF2** poderia fazer todas as funções da **printf** código:
+ Uma chamada para **ALERT_IF2** poderia fazer todas as funções do código **printf** :
 
 ```cpp
 ALERT_IF2(someVar > MAX_SOMEVAR, "OVERFLOW! In NameOfThisFunc( ),
 someVar=%d, otherVar=%d.\n", someVar, otherVar );
 ```
 
- Você pode alterar facilmente uma macro personalizada para relatar informações para diferentes destinos de mais ou menos. Essa abordagem é particularmente útil conforme suas necessidades de depuração evoluem.
+ Você pode alterar facilmente uma macro personalizada para relatar mais ou menos informações para destinos diferentes. Essa abordagem é particularmente útil à medida que os requisitos de depuração evoluem.
 
 ## <a name="see-also"></a>Consulte também
 - [Técnicas de depuração CRT](../debugger/crt-debugging-techniques.md)

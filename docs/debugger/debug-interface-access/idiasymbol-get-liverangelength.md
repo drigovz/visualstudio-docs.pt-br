@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c85288902d1a8c75b067bec0c77242e9a246561
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: b663ef54959544764016fe59e4b0fb41607854b1
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64808239"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739929"
 ---
-# <a name="idiasymbolgetliverangelength"></a>IDiaSymbol::get_liveRangeLength
+# <a name="idiasymbolget_liverangelength"></a>IDiaSymbol::get_liveRangeLength
 Retorna o comprimento do intervalo de endereços no qual o símbolo local é válido.
 
 ## <a name="syntax"></a>Sintaxe
@@ -33,20 +33,20 @@ HRESULT get_liveRangeLength ( 
 #### <a name="parameters"></a>Parâmetros
  `length`
 
-[out] Retorna o comprimento do intervalo de endereços.
+fora Retorna o comprimento do intervalo de endereços.
 
-## <a name="return-value"></a>Valor de retorno
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
 
 > [!NOTE]
-> Um código de erro retornado significa que o símbolo não tem informações de intervalo em tempo real.
+> Um código de erro retornado significa que o símbolo não tem informações de intervalo dinâmico.
 
 ## <a name="remarks"></a>Comentários
 
 ## <a name="requirements"></a>Requisitos
- Cabeçalho: Dia2.h
+ Cabeçalho: dia2. h
 
- Biblioteca: diaguids.lib
+ Biblioteca: diaguids. lib
 
  DLL: msdia100.dll
 

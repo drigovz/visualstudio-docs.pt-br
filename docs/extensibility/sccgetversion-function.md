@@ -12,15 +12,15 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1ad37e30cfcf913477044e67baaa65dc3af5b9d3
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 69078200743f30c4ecfedce8e9be05ef9e7ce20b
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66353630"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72721479"
 ---
 # <a name="sccgetversion-function"></a>Função SccGetVersion
-Essa função obtém o número de versão de API de plug-in de controle de origem compatível com o plug-in de controle de origem.
+Essa função obtém o número de versão da API de plug-in de controle do código-fonte com suporte pelo plug-in de controle do código-fonte.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -31,8 +31,8 @@ LONG SccGetVersion(void);
 #### <a name="parameters"></a>Parâmetros
  nenhuma.
 
-## <a name="return-value"></a>Valor de retorno
- Um `LONG` tipo de dados que contém o número de versão de API de plug-in de controle de origem com suporte:
+## <a name="return-value"></a>Valor retornado
+ Um tipo de dados `LONG` que contém o número de versão da API de plug-in de controle do código-fonte com suporte:
 
 |WORD|Descrição|
 |----------|-----------------|
@@ -40,7 +40,7 @@ LONG SccGetVersion(void);
 |LOWORD|Versão secundária|
 
 ## <a name="remarks"></a>Comentários
- Por exemplo, se um plug-in de controle de origem dá suporte à versão 1.3 da API de plug-in de controle de origem, essa função retornará 0x0103.
+ Por exemplo, se um plug-in de controle do código-fonte der suporte à versão 1,3 da API de plug-in de controle do código-fonte, essa função retornará 0x0103.
 
 ## <a name="see-also"></a>Consulte também
 - [Funções de API do plug-in de controle do código-fonte](../extensibility/source-control-plug-in-api-functions.md)

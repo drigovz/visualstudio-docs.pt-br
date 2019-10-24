@@ -1,5 +1,5 @@
 ---
-title: Exibindo Threads da GPU no depurador | Microsoft Docs
+title: Exibindo threads de GPU no depurador | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -18,21 +18,21 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 59229b1ca2b055fc8242bf6446541a395eceaa56
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 972b21c4535df37dd81da6aceaa062b39176469c
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62846837"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72732095"
 ---
-# <a name="how-to-use-the-gpu-threads-window-c"></a>Como: Usar a janela de Threads GPU (C++)
-Na janela Threads da GPU, você pode examinar e trabalhar com threads que estão sendo executadas no GPU no aplicativo que você está depurando. Para obter mais informações sobre aplicativos que são executados na GPU, consulte [visão geral do C++ AMP](/cpp/parallel/amp/cpp-amp-overview).
+# <a name="how-to-use-the-gpu-threads-window-c"></a>Como: usar a janela threads de GPUC++()
+Na janela Threads da GPU, você pode examinar e trabalhar com threads que estão sendo executadas no GPU no aplicativo que você está depurando. Para obter mais informações sobre aplicativos executados na GPU, consulte [ C++ amp Overview](/cpp/parallel/amp/cpp-amp-overview).
 
  A janela de Threads da GPU contém uma tabela na qual cada linha representa um conjunto de threads de GPU que têm os mesmos valores em todas as colunas. Você pode classificar, reorganizar, remover e agrupar os itens que estão nas colunas. Você pode sinalizar, remover sinalização, congelar (suspender) e descongelar (retomar) threads da janela de Threads da GPU. As colunas a seguir são exibidas na janela Threads da GPU:
 
 - A coluna do sinalizador, na qual você pode marcar um thread ao qual deseja prestar atenção especial.
 
-- A coluna de thread atual, no qual uma seta amarela indica que o thread atual.
+- A coluna de thread atual, na qual uma seta amarela indica o thread atual.
 
 - A coluna **Contagem de Threads**, que exibe o número de segmentos na mesma localização.
 
@@ -58,7 +58,7 @@ Na janela Threads da GPU, você pode examinar e trabalhar com threads que estão
 
 3. Na lista **Depurador a iniciar**, selecione **Depurador Local do Windows**. Na lista **Tipo de Depurador**, selecione **Somente GPU**. Você deve escolher este depurador para parar em pontos de interrupção no código executado no GPU.
 
-4. Escolha o botão **OK**.
+4. Selecione o botão **OK**.
 
 5. Defina um ponto de interrupção no código do GPU.
 
@@ -68,7 +68,7 @@ Na janela Threads da GPU, você pode examinar e trabalhar com threads que estão
 
 ### <a name="to-switch-to-a-different-thread"></a>Para alternar para um thread diferente
 
-- Clique duas vezes na coluna. (Teclado: Selecione a linha e escolha Enter.)
+- Clique duas vezes na coluna. (Teclado: selecione a linha e escolha Enter.)
 
 ### <a name="to-display-a-particular-tile-and-thread"></a>Para exibir um determinado bloco e o thread
 
@@ -104,5 +104,5 @@ Na janela Threads da GPU, você pode examinar e trabalhar com threads que estão
 
 ## <a name="see-also"></a>Consulte também
 - [Depurar aplicativos multi-threaded](../debugger/debug-multithreaded-applications-in-visual-studio.md)
-- [Como: Usar a janela Inspeção Paralela](../debugger/how-to-use-the-parallel-watch-window.md)
-- [Passo a passo: depurar um aplicativo C++ AMP](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application)
+- [Como usar a janela Inspeção Paralela](../debugger/how-to-use-the-parallel-watch-window.md)
+- [Passo a passo: depurando um aplicativo C++ AMP](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application)

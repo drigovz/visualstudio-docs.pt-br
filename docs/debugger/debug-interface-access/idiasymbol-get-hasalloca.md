@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 457f446af4a91141962fbbd3055d9ce4980c719a
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: b4d476d5b2ecf9edf29aea1bbbc68e7890b59b13
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64808792"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740594"
 ---
-# <a name="idiasymbolgethasalloca"></a>IDiaSymbol::get_hasAlloca
-Recupera um sinalizador que especifica se a função contém uma chamada para `alloca` (que é usado para alocar memória na pilha).
+# <a name="idiasymbolget_hasalloca"></a>IDiaSymbol::get_hasAlloca
+Recupera um sinalizador que especifica se a função contém uma chamada para `alloca` (que é usada para alocar memória na pilha).
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -31,20 +31,20 @@ HRESULT get_hasAlloca(   BOOL *pFlag);
 #### <a name="parameters"></a>Parâmetros
  `pFlag`
 
-[out] Retorna `TRUE` se a função contém uma chamada para `alloca`; caso contrário, retorna `FALSE`.
+fora Retornará `TRUE` se a função contiver uma chamada para `alloca`; caso contrário, retorna `FALSE`.
 
-## <a name="return-value"></a>Valor de retorno
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE` ou um código de erro.
 
 > [!NOTE]
-> Um valor de retorno `S_FALSE` significa que a propriedade não está disponível para o símbolo.
+> Um valor de retorno de `S_FALSE` significa que a propriedade não está disponível para o símbolo.
 
 ## <a name="requirements"></a>Requisitos
 
 |Requisito|Descrição|
 |-----------------|-----------------|
 |Cabeçalho:|dia2.h|
-|Versão:|V DIA SDK 8.0|
+|Versão:|DIA SDK v 8.0|
 
 ## <a name="see-also"></a>Consulte também
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

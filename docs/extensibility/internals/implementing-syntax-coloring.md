@@ -1,5 +1,5 @@
 ---
-title: Implementando a coloração de sintaxe | Microsoft Docs
+title: Implementando a cor da sintaxe | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,58 +12,58 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3f577f4cf21110a1b40680059b385d413c9c6902
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: cab338e253cca8c7f8457752980e7f3624317d9c
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66324229"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72727031"
 ---
 # <a name="implementing-syntax-coloring"></a>Implementando a coloração de sintaxe
-Quando o serviço de linguagem fornece colorização de sintaxe, o analisador converte uma linha de texto em uma matriz de itens de coloração e retorna os tipos de token correspondente a esse itens de coloração. O analisador deve retornar tipos de token que pertencem a uma lista de itens de coloração. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Exibe cada item que pode ser colorido na janela de código de acordo com os atributos atribuídos pelo objeto colorizador para o tipo de token apropriado.
+Quando o serviço de linguagem fornece a colorização de sintaxe, o analisador converte uma linha de texto em uma matriz de itens coloráveis e retorna tipos de token correspondentes a esses itens coloráveis. O analisador deve retornar tipos de token que pertençam a uma lista de itens coloráveis. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] exibe cada item com cores na janela de código de acordo com os atributos atribuídos pelo objeto Colorizer ao tipo de token apropriado.
 
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] não especifica uma interface de analisador, e a implementação do analisador cabe completamente a você. No entanto, uma implementação de analisador padrão é fornecida no projeto do pacote de idiomas do Visual Studio. Para código gerenciado, a estrutura de pacote gerenciado (MPF) fornece suporte completo para colorir texto.
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] não especifica uma interface do analisador, e a implementação do analisador é completamente ativada para você. No entanto, uma implementação de analisador padrão é fornecida no projeto de pacote de linguagem do Visual Studio. Para código gerenciado, a MPF (estrutura de pacote gerenciada) fornece suporte completo para colorir o texto.
 
- Serviços de linguagem herdado são implementados como parte de um VSPackage, mas a maneira mais recente para implementar recursos de serviço de linguagem é usar extensões MEF. Para obter mais informações sobre a nova maneira de implementar a coloração de sintaxe, consulte [passo a passo: Realçar o texto](../../extensibility/walkthrough-highlighting-text.md).
+ Os serviços de idioma herdados são implementados como parte de um VSPackage, mas a maneira mais recente de implementar recursos de serviço de linguagem é usar extensões de MEF. Para saber mais sobre a nova maneira de implementar a coloração de sintaxe, consulte [Walkthrough: realce Text](../../extensibility/walkthrough-highlighting-text.md).
 
 > [!NOTE]
-> É recomendável que você comece a usar o novo editor de API mais rápido possível. Isso melhorará o desempenho do seu serviço de linguagem e permitem que você tirar proveito dos novos recursos do editor.
+> Recomendamos que você comece a usar a nova API do editor o mais rápido possível. Isso melhorará o desempenho do seu serviço de linguagem e permitirá que você aproveite os novos recursos do editor.
 
-## <a name="steps-followed-by-an-editor-to-colorize-text"></a>Etapas seguidas por um Editor para colorir o texto
+## <a name="steps-followed-by-an-editor-to-colorize-text"></a>Etapas seguidas por um editor para colorir o texto
 
-1. O editor obtém o colorizador chamando o <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetColorizer%2A> método no <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> objeto.
+1. O editor Obtém o Colorizer chamando o método <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetColorizer%2A> no objeto <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo>.
 
-2. As chamadas do editor o <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.GetStateMaintenanceFlag%2A> método para determinar se o colorizador precisa o estado de cada linha a ser mantida fora o colorizador.
+2. O editor chama o método <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.GetStateMaintenanceFlag%2A> para determinar se o Colorizer precisa que o estado de cada linha seja mantido fora do Colorizer.
 
-3. Se o colorizador requer que o estado seja mantido fora o colorizador, o editor chama o <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.GetStartState%2A> método para obter o estado da primeira linha.
+3. Se o Colorizer exigir que o estado seja mantido fora do Colorizer, o editor chamará o método <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.GetStartState%2A> para obter o estado da primeira linha.
 
-4. Para cada linha no buffer, o editor chama o <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A> método, que executa as seguintes etapas:
+4. Para cada linha no buffer, o editor chama o método <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A>, que executa as seguintes etapas:
 
-    1. A linha de texto é passada para um scanner para converter o texto em tokens. Cada token Especifica o texto do token e o tipo de token.
+    1. A linha de texto é passada para um scanner para converter o texto em tokens. Cada token especifica o texto do token e o tipo de token.
 
-    2. O tipo de token é convertido em um índice em uma lista de itens de coloração.
+    2. O tipo de token é convertido em um índice em uma lista de itens colorable.
 
-    3. As informações de token são usadas para preencher uma matriz, de modo que cada elemento da matriz corresponde a um caractere na linha. Os valores armazenados na matriz são os índices para a lista de itens de coloração.
+    3. As informações de token são usadas para preencher uma matriz de modo que cada elemento da matriz corresponda a um caractere na linha. Os valores armazenados na matriz são os índices na lista de itens colorable.
 
     4. O estado no final da linha é retornado para cada linha.
 
-5. Se o colorizador requer que o estado seja mantido, o editor armazena em cache o estado para essa linha.
+5. Se o Colorizer exigir que o estado seja mantido, o editor armazenará em cache o estado dessa linha.
 
-6. O editor processa a linha de texto usando as informações retornadas a <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A> método. Isso exige as seguintes etapas:
+6. O editor renderiza a linha de texto usando as informações retornadas do método <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A>. Isso exige as seguintes etapas:
 
-    1. Para cada caractere na linha, obter o índice do item que pode ser colorido.
+    1. Para cada caractere na linha, obtenha o índice de item com cores.
 
-    2. Se usando os itens de coloração padrão, acesse a lista de itens de coloração do editor.
+    2. Se você estiver usando os itens colorable padrão, acesse a lista de itens coloráveis do editor.
 
-    3. Caso contrário, chame o serviço de linguagem <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetColorableItem%2A> método para obter um item que pode ser colorido.
+    3. Caso contrário, chame o método de <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetColorableItem%2A> do serviço de linguagem para obter um item com cores.
 
-    4. Use as informações no item que pode ser colorido para renderizar o texto para a exibição.
+    4. Use as informações no item Colorable para renderizar o texto na exibição.
 
-## <a name="managed-package-framework-colorizer"></a>Colorizador de estrutura de pacote gerenciado
- A estrutura de pacote gerenciado (MPF) fornece todas as classes que são necessários para implementar um colorizador. Sua classe de serviço de linguagem deve herdar o <xref:Microsoft.VisualStudio.Package.LanguageService> de classe e implementar os métodos necessários. Você deve fornecer um analisador e scanner, Implementando a <xref:Microsoft.VisualStudio.Package.IScanner> interface e retornar uma instância dessa interface do <xref:Microsoft.VisualStudio.Package.LanguageService.GetScanner%2A> método (um dos métodos que devem ser implementados no <xref:Microsoft.VisualStudio.Package.LanguageService> classe). Para obter mais informações, consulte [coloração de sintaxe em um serviço de linguagem herdado](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md).
+## <a name="managed-package-framework-colorizer"></a>Estrutura de pacote gerenciado Colorizer
+ A MPF (estrutura de pacote gerenciada) fornece todas as classes necessárias para implementar um Colorizer. Sua classe de serviço de linguagem deve herdar a classe <xref:Microsoft.VisualStudio.Package.LanguageService> e implementar os métodos necessários. Você deve fornecer um scanner e um analisador implementando a interface <xref:Microsoft.VisualStudio.Package.IScanner> e retornar uma instância dessa interface do método <xref:Microsoft.VisualStudio.Package.LanguageService.GetScanner%2A> (um dos métodos que devem ser implementados na classe <xref:Microsoft.VisualStudio.Package.LanguageService>). Para obter mais informações, consulte [colorir sintaxe em um serviço de linguagem herdado](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md).
 
 ## <a name="see-also"></a>Consulte também
-- [Como: usar itens de coloração internos](../../extensibility/internals/how-to-use-built-in-colorable-items.md)
+- [Como usar itens de coloração internos](../../extensibility/internals/how-to-use-built-in-colorable-items.md)
 - [Itens de coloração personalizados](../../extensibility/internals/custom-colorable-items.md)
 - [Desenvolver um serviço de linguagem herdado](../../extensibility/internals/developing-a-legacy-language-service.md)
 - [Coloração de sintaxe em um serviço de linguagem herdado](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md)

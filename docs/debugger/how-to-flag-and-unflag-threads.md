@@ -1,5 +1,5 @@
 ---
-title: 'Como: Sinalizar e remover sinalização de Threads | Microsoft Docs'
+title: 'Como: sinalizar e remover o sinalizador de threads | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -15,32 +15,32 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e63f081ff54a18bb4b5ca5c1cbdf947670f10a7e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 68a2ce8b6ec429b3f7f5cd782c3dac52602eff16
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62906719"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72733231"
 ---
-# <a name="how-to-flag-and-unflag-threads-c-visual-basic-c"></a>Como: Sinalizar e remover sinalização de Threads (C#, Visual Basic, C++)
+# <a name="how-to-flag-and-unflag-threads-c-visual-basic-c"></a>Como sinalizar e remover o sinalizador de threads (C#, C++Visual Basic,)
 
-Você pode sinalizar um thread que você deseja dar atenção especial marcando-o com um ícone na **Threads**, **pilhas paralelas** (exibição de thread), **inspeção paralela**e  **Threads da GPU** windows. Esse ícone pode ajudá-lo e a outros a distinguir threads sinalizados de outros threads.
+Você pode sinalizar um thread que deseja dar atenção especial marcando-o com um ícone nas janelas **threads**, **pilhas paralelas** (exibição de thread), **inspeção paralela**e **threads de GPU** . Esse ícone pode ajudá-lo e a outros a distinguir threads sinalizados de outros threads.
 
-Threads sinalizados também recebem tratamento especial na **Thread** lista o **local de depuração** barra de ferramentas e as outras janelas de depuração multithread. Você pode mostrar todos os threads ou apenas os threads sinalizados na **Thread** lista ou nas outras janelas.
+Threads sinalizados também recebem tratamento especial na lista de **threads** na barra de ferramentas do **local de depuração** e nas outras janelas de depuração multithread. Você pode mostrar todos os threads ou somente threads sinalizados na lista de **threads** ou nas outras janelas.
 
 ### <a name="to-flag-or-unflag-a-thread"></a>Para sinalizar ou remover sinalização de um thread
 
-- No **Threads** ou **inspeção paralela** janela, localize o thread que você está interessado e clique no ícone de sinalizador para marcar ou desmarcar o sinalizador.
-- No **pilhas paralelas** janela, o botão direito do mouse em um thread ou o grupo de threads e selecione **sinalizador / \<thread >** ou **Remover sinalização / \<thread >**.
+- Na janela **threads** ou de **inspeção paralela** , localize o thread em que você está interessado e clique no ícone de sinalizador para selecionar ou limpar o sinalizador.
+- Na janela **pilhas paralelas** , clique com o botão direito do mouse em um thread ou grupo de threads e selecione **sinalizar/\<thread >** ou **desmarcar/\<thread >** .
 
 ### <a name="to-unflag-all-threads"></a>Para remover a sinalização de todos os threads
 
 - Na janela **Threads**, clique com o botão direito do mouse em qualquer thread e clique em **Remover Sinalização de Todos os Threads**.
-- No **inspeção paralela** janela, selecione todos os threads sinalizados e, em seguida, clique com botão direito e selecione **Remover sinalização**.
+- Na janela de **inspeção paralela** , selecione todos os threads sinalizados, clique com o botão direito do mouse e selecione **remover sinalizador**.
 
 ### <a name="to-display-only-flagged-threads"></a>Para exibir somente threads sinalizados
 
-- Escolha o **Mostrar somente Threads sinalizados** botão em uma das janelas de depuração multithread.
+- Escolha o botão **Mostrar threads sinalizados apenas** em uma das janelas de depuração multi-threaded.
 
 ### <a name="to-flag-just-my-code"></a>Para sinalizar apenas meu código
 
@@ -63,4 +63,4 @@ Threads sinalizados também recebem tratamento especial na **Thread** lista o **
 ## <a name="see-also"></a>Consulte também
 - [Depurar aplicativos multi-threaded](../debugger/debug-multithreaded-applications-in-visual-studio.md)
 - [Introdução à depuração de aplicativos multi-threaded](../debugger/get-started-debugging-multithreaded-apps.md)
-- [Passo a passo: Depurar aplicativos multithread usando a janela Threads](../debugger/how-to-use-the-threads-window.md)
+- [Walkthrough: depurar aplicativos multithread usando a janela threads](../debugger/how-to-use-the-threads-window.md)

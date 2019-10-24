@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 34954cd32b350a7c5f9c176deffd9943f8e05100
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 48595dda70560f555533a1857f73db4d7bd20a86
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62554190"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744968"
 ---
-# <a name="idiadatasourcegetlasterror"></a>IDiaDataSource::get_lastError
+# <a name="idiadatasourceget_lasterror"></a>IDiaDataSource::get_lastError
 Recupera o nome do arquivo para o último erro de carregamento.
 
 ## <a name="syntax"></a>Sintaxe
@@ -33,10 +33,10 @@ HRESULT get_lastError (
 #### <a name="parameters"></a>Parâmetros
  pRetVal
 
-[out] Retorna uma cadeia de caracteres que contém o nome do arquivo. PDB associado com o último erro de carregamento.
+fora Retorna uma cadeia de caracteres que contém o nome do arquivo. PDB associado ao último erro de carregamento.
 
-## <a name="return-value"></a>Valor de retorno
- Retorna o último código de erro causado por uma operação de carregamento. Retorna `E_INVALIDARG` se o `pRetVal` parâmetro é `NULL`.
+## <a name="return-value"></a>Valor retornado
+ Retorna o último código de erro causado por uma operação de carregamento. Retorna `E_INVALIDARG` se o parâmetro `pRetVal` é `NULL`.
 
 ## <a name="example"></a>Exemplo
 

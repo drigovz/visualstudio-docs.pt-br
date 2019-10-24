@@ -10,14 +10,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f714e5637776d6a0606246d339d3f9d2ccd9f19a
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: e849bea3bd5480f480001c091e5988fa5e6b5444
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62835533"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739431"
 ---
-# <a name="idiasymbolgetregistertype"></a>IDiaSymbol::get_registerType
+# <a name="idiasymbolget_registertype"></a>IDiaSymbol::get_registerType
 Recupera o tipo de registro.
 
 ## <a name="syntax"></a>Sintaxe
@@ -30,9 +30,9 @@ HRESULT get_registerType(
 #### <a name="parameters"></a>Parâmetros
  `pRetVal`
 
-[out] Um ponteiro para um `DWORD` que contém o tipo de registro.
+fora Um ponteiro para um `DWORD` que contém o tipo de registro.
 
-## <a name="return-value"></a>Valor de retorno
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE` ou um código de erro.
 
 ## <a name="see-also"></a>Consulte também

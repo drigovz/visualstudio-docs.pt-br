@@ -20,29 +20,29 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 75d1c9f9c23df04ca19f68dada718fba12dc51f3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ffc9cae027a078a62b1ef7bab16994a418d76763
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62564685"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745835"
 ---
 # <a name="a-dcom-error-occurred-trying-to-contact-the-remote-computer-access-is-denied"></a>Ocorreu um erro de DCOM durante a tentativa de contatar o computador remoto. O acesso foi negado.
-Depuração remota usa DCOM para se comunicar entre os computadores locais e remotos nas seguintes situações:
+A depuração remota usa DCOM para se comunicar entre os computadores locais e remotos nas seguintes situações:
 
-- O depurador está definido como **modo de compatibilidade nativa** ou **modo de compatibilidade gerenciado** check-in a **Ferramentas > Opções > depuração** página
+- O depurador é definido como **modo de compatibilidade nativo** ou o **modo de compatibilidade gerenciado** é verificado na página **Ferramentas > Opções > depuração**
 
-- Você está depurando gerenciado C++ (C++/CLI) código.
+- Você está depurando o código gerenciado C++ (C++/CLI).
 
-- No Visual Studio 2013, quando **habilitar nativo editar e continuar** check-in a **Ferramentas > Opções > depuração** página
+- No Visual Studio 2013, quando **habilitar a opção Editar e continuar nativo** é verificado na página **ferramentas > opções > depuração**
 
 - Alguns cenários de depuração de terceiros
 
   Esse erro ocorre quando o processo do Visual Studio não puder se autenticar (ou as credenciais fornecidas forem julgadas insuficientes) para o processo remoto do depurador sobre DCOM. Uma ou mais das seguintes alternativas podem resolver o problema:
 
-- Desative **modo de compatibilidade nativa** e **modo de compatibilidade gerenciado**.
+- Desative o modo de **compatibilidade nativa** e o **modo de compatibilidade gerenciado**.
 
-- No Visual Studio 2013, desative **habilitar nativo editar e continuar**.
+- Em Visual Studio 2013, desative **Habilitar edição e continuar nativo**.
 
 - Reinicializar ambos os computadores.
 

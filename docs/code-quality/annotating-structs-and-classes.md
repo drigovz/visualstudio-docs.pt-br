@@ -24,12 +24,12 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: ac3d6225bc765ec404784589d2faa06f155265ab
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: 93c6826f2903f30fbbdcb9c40ec5f695df32ac05
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72446287"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747059"
 ---
 # <a name="annotating-structs-and-classes"></a>Anotando estruturas e classes
 
@@ -45,7 +45,7 @@ Você pode anotar os membros de struct e de classe usando anotações que agem c
 
      Um campo que tem um tamanho gravável em elementos (ou bytes) conforme especificado por `size`.
 
-- `_Field_size_part_(size, count)`, `_Field_size_part_opt_(size, count)`, `_Field_size_bytes_part_(size, count)`, `_Field_size_bytes_part_opt_(size, count)`
+- `_Field_size_part_(size, count)`, `_Field_size_part_opt_(size, count)`, `_Field_size_bytes_part_(size, count)` `_Field_size_bytes_part_opt_(size, count)`
 
      Um campo que tem um tamanho gravável em elementos (ou bytes) conforme especificado por `size` e o `count` desses elementos (bytes) que são legíveis.
 
@@ -108,7 +108,7 @@ Observações para este exemplo:
 
 - `_Field_z_` equivale a `_Null_terminated_`.  `_Field_z_` para o campo nome especifica que o campo nome é uma cadeia de caracteres terminada em nulo.
 - `_Field_range_` para `bufferSize` especifica que o valor de `bufferSize` deve estar entre 1 e `MaxBufferSize` (ambos incluídos).
-- Os resultados finais das anotações `_Struct_size_bytes_` e `_Field_size_` são equivalentes. Para estruturas ou classes que têm um layout semelhante, `_Field_size_` é mais fácil de ler e manter, pois ela tem menos referências e cálculos do que a anotação `_Struct_size_bytes_` equivalente. `_Field_size_` não requer conversão para o tamanho do byte. Se o tamanho do byte for a única opção, por exemplo, para um campo de ponteiro void, `_Field_size_bytes_` poderá ser usado. Se `_Struct_size_bytes_` e `_Field_size_` existirem, ambos estarão disponíveis para ferramentas. Cabe à ferramenta o que fazer se as duas anotações discordarem.
+- Os resultados finais das anotações de `_Struct_size_bytes_` e `_Field_size_` são equivalentes. Para estruturas ou classes que têm um layout semelhante, `_Field_size_` é mais fácil de ler e manter, pois ela tem menos referências e cálculos do que a anotação de `_Struct_size_bytes_` equivalente. `_Field_size_` não requer conversão para o tamanho do byte. Se o tamanho do byte for a única opção, por exemplo, para um campo de ponteiro void, `_Field_size_bytes_` poderá ser usado. Se ambos os `_Struct_size_bytes_` e `_Field_size_` existirem, ambos estarão disponíveis para ferramentas. Cabe à ferramenta o que fazer se as duas anotações discordarem.
 
 ## <a name="see-also"></a>Consulte também
 

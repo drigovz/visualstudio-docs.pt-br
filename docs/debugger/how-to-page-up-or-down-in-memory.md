@@ -1,5 +1,5 @@
 ---
-title: 'Como: Page Up ou para baixo na memória | Microsoft Docs'
+title: 'Como: Page Up ou down na memória | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -19,14 +19,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b8452100eb744d019c0f4c8d5e62566ac761210
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c9f93b24c9349a28176164d667c96133668cf3f4
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62894015"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72733032"
 ---
-# <a name="how-to-page-up-or-down-in-memory"></a>Como: Mover para cima ou para baixo na memória
+# <a name="how-to-page-up-or-down-in-memory"></a>Como subir ou descer a página na memória
 
 Quando exibe conteúdos de memória na janela de **Memória** ou na janela de **Desmontagem**, você pode usar a barra de rolagem vertical para mover para cima ou para baixo no espaço de memória.
 
@@ -48,5 +48,5 @@ Quando exibe conteúdos de memória na janela de **Memória** ou na janela de **
 
 ## <a name="see-also"></a>Consulte também
 - [Janelas de Memória](../debugger/memory-windows.md)
-- [Como: Usar a janela Desmontagem](../debugger/how-to-use-the-disassembly-window.md)
+- [Como usar a Janela de Desmontagem](../debugger/how-to-use-the-disassembly-window.md)
 - [Exibindo dados no depurador](../debugger/viewing-data-in-the-debugger.md)

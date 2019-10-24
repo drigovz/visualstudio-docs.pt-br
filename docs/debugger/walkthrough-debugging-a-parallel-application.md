@@ -22,14 +22,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dcc63eef048dd1e4ae205214ac62f8aa04d8a824
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: b2213da69561e8868c158a3b2cbcaa8efc6adfaf
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71252515"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72728592"
 ---
-# <a name="walkthrough-debugging-a-parallel-application-in-visual-studio-c-visual-basic-c"></a>Passo a passo: Depurando um aplicativo paralelo no VisualC#Studio (, C++Visual Basic,)
+# <a name="walkthrough-debugging-a-parallel-application-in-visual-studio-c-visual-basic-c"></a>Walkthrough: Depurando um aplicativo paralelo no VisualC#Studio (, C++Visual Basic,)
 
 Este passo a passo descreve como usar as janelas **Tarefas Paralelas** e **Pilhas Paralelas** para depurar um aplicativo paralelo. Essas janelas ajudam você a entender e verificar o comportamento de tempo de execução do código que usa a [TPL (biblioteca paralela de tarefas)](/dotnet/standard/parallel-programming/task-parallel-library-tpl) ou a [tempo de execução de simultaneidade](/cpp/parallel/concrt/concurrency-runtime). Este passo a passo fornece código de exemplo que tem pontos de interrupção internos. Após a interrupção do código, este passo a passo mostra como usar as janelas **Tarefas Paralelas** e **Pilhas Paralelas** para examiná-lo.
 
@@ -45,7 +45,7 @@ Este passo a passo descreve como usar as janelas **Tarefas Paralelas** e **Pilha
 
 - Como as janelas lidam com a escala por agrupamento, zoom e outros recursos relacionados.
 
-## <a name="prerequisites"></a>Pré-requisitos
+## <a name="prerequisites"></a>Prerequisites
  Este tutorial pressupõe que **apenas meu código** esteja habilitado (ele é habilitado por padrão em versões mais recentes do Visual Studio). No menu **Ferramentas**, clique em **Opções**, expanda o nó **Depuração**, selecione **Geral** e **Habilitar Apenas Meu Código (somente Gerenciado)** . Se você não definir esse recurso, ainda poderá usar este passo a passo, mas os resultados poderão ser diferentes das ilustrações.
 
 ## <a name="c-sample"></a>Exemplo do C#
@@ -98,7 +98,7 @@ Este passo a passo descreve como usar as janelas **Tarefas Paralelas** e **Pilha
 
     Observe que há quatro chamadas a `Debugger.Break` (`DebugBreak` no exemplo do C++). Em virtude disso, você não precisa inserir pontos de interrupção; a execução do aplicativo causará sua interrupção no depurador até quatro vezes.
 
-## <a name="using-the-parallel-stacks-window-threads-view"></a>Usando a janela Pilhas Paralelas: Modo de Exibição de Threads
+## <a name="using-the-parallel-stacks-window-threads-view"></a>Usando a janela Pilhas Paralelas: exibição de Threads
  No menu **Depuração**, clique em **Iniciar Depuração**. Aguarde até que o primeiro ponto de interrupção seja atingido.
 
 #### <a name="to-view-the-call-stack-of-a-single-thread"></a>Para exibir a pilha de chamadas de um único thread
@@ -244,7 +244,7 @@ Este passo a passo descreve como usar as janelas **Tarefas Paralelas** e **Pilha
 
      ![Duas tarefas em espera na janela tarefas](../debugger/media/pdb_walkthrough_7.png "PDB_Walkthrough_7")
 
-     A tarefa 4, por sua vez, está aguardando um monitor de propriedade do thread atribuído à tarefa 2. (Clique com o botão direito do mouse na linha de cabeçalho e escolha **colunas** > **atribuição de thread** para exibir o valor de atribuição de thread para a tarefa 2).
+     A tarefa 4, por sua vez, está aguardando um monitor de propriedade do thread atribuído à tarefa 2. (Clique com o botão direito do mouse na linha de cabeçalho e escolha **colunas**  > **atribuição de thread** para exibir o valor de atribuição de thread para a tarefa 2).
 
      ![Tarefa de espera e dica de ferramenta na janela tarefas](../debugger/media/pdb_walkthrough_7a.png "PDB_Walkthrough_7A")
 

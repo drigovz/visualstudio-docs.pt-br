@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 35886ea0456426c30c44d5fd8e90399d4a2143ef
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f6de78b5553719def2fd7ef9c6adb55e823aac34
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62837934"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741525"
 ---
 # <a name="idiastackwalkergetenumframes2"></a>IDiaStackWalker::getEnumFrames2
-Recupera um enumerador de quadro de pilha para um tipo de plataforma específica.
+Recupera um enumerador de quadro de pilha para um tipo de plataforma específico.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -36,21 +36,21 @@ Recupera um enumerador de quadro de pilha para um tipo de plataforma específica
 #### <a name="parameters"></a>Parâmetros
  `cpuid`
 
-[in] Um valor a partir de [enumeração CV_CPU_TYPE_e](../../debugger/debug-interface-access/cv-cpu-type-e.md) enumeração, especificando o tipo de plataforma.
+no Um valor da enumeração de [Enumeração CV_CPU_TYPE_e](../../debugger/debug-interface-access/cv-cpu-type-e.md) , especificando o tipo de plataforma.
 
  `pHelper`
 
-[in] O auxiliar [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md) objeto.
+no O objeto auxiliar [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md) .
 
  `ppEnum`
 
-[out] Retorna um [IDiaEnumStackFrames](../../debugger/debug-interface-access/idiaenumstackframes.md) objeto que contém uma lista de [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md) objetos.
+fora Retorna um objeto [IDiaEnumStackFrames](../../debugger/debug-interface-access/idiaenumstackframes.md) que contém uma lista de objetos [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md) .
 
-## <a name="return-value"></a>Valor de retorno
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários
- Para obter uma lista de quadro de pilha para apenas o x86 de plataforma, a chamada a [IDiaStackWalker::getEnumFrames](../../debugger/debug-interface-access/idiastackwalker-getenumframes.md) método.
+ Para obter uma lista de quadros de pilha para apenas a plataforma x86, chame o método [IDiaStackWalker:: getEnumFrames](../../debugger/debug-interface-access/idiastackwalker-getenumframes.md) .
 
 ## <a name="see-also"></a>Consulte também
 - [IDiaStackWalker](../../debugger/debug-interface-access/idiastackwalker.md)

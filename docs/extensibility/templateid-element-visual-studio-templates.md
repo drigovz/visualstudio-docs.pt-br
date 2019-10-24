@@ -14,17 +14,17 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e8207b72d7bb818a5d153abdd56914fd6b2a3f08
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: c0e404921d1ed74db2a1f23117242f49a07206c2
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66316546"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72718733"
 ---
 # <a name="templateid-element-visual-studio-templates"></a>Elemento TemplateID (modelos do Visual Studio)
-Especifica um identificador para um modelo de item é categorizado em um grupo de modelos de item, o [TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md) elemento.
+Especifica um identificador para um modelo de item que é categorizado em um grupo de modelos de item pelo elemento [TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md) .
 
- \<VSTemplate> \<TemplateData> \<TemplateID>
+ \<VSTemplate > \<TemplateData > \<TemplateID >
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -45,17 +45,17 @@ Especifica um identificador para um modelo de item é categorizado em um grupo d
 
 |Elemento|Descrição|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Elemento obrigatório.<br /><br /> Categoriza o modelo e define como ele é exibido em qualquer um de **novo projeto** ou o **Adicionar Novo Item** caixa de diálogo.|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Elemento obrigatório.<br /><br /> Categoriza o modelo e define como ele é exibido no **novo projeto** ou na caixa de diálogo **Adicionar novo item** .|
 
 ## <a name="text-value"></a>Valor de texto
- Um `string` que representa um identificador para um modelo de item é categorizado em um grupo de modelos de item pelo `TemplateGroupID` elemento.
+ Um `string` que representa um identificador para um modelo de item que é categorizado em um grupo de modelos de item pelo elemento `TemplateGroupID`.
 
 ## <a name="remarks"></a>Comentários
  `TemplateID` é um elemento opcional.
 
- Se um arquivo. vstemplate omite a `TemplateID` elemento, em seguida, a [nome](../extensibility/name-element-visual-studio-templates.md) elemento é usado como o identificador para o modelo.
+ Se um arquivo. vstemplate omitir o elemento `TemplateID`, o elemento [Name](../extensibility/name-element-visual-studio-templates.md) será usado como o identificador para o modelo.
 
- O valor da `TemplateID` elemento é usado junto com o registro do sistema de projeto (HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\11.0\Projects\\) para modelos de filtro que aparecem na **Adicionar Novo Item** caixa de diálogo.
+ O valor do elemento `TemplateID` é usado junto com o registro do sistema de projeto (HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\11.0\Projects \\) para filtrar os modelos que aparecem na caixa de diálogo **Adicionar novo item** .
 
 ## <a name="see-also"></a>Consulte também
 - [Referência de esquema do modelo do Visual Studio](../extensibility/visual-studio-template-schema-reference.md)

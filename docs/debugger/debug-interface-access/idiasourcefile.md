@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 37b887e21da73acffde6f5ae21adf766e64e55fc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 08334c59ea061cee1618c76aa61ec6aa6fb8d7d4
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62838126"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741771"
 ---
 # <a name="idiasourcefile"></a>IDiaSourceFile
 Representa um arquivo de origem.
@@ -28,7 +28,7 @@ Representa um arquivo de origem.
 IDiaSourceFile : IUnknown
 ```
 
-## <a name="methods-in-vtable-order"></a>Métodos na ordem de Vtable
+## <a name="methods-in-vtable-order"></a>Métodos em ordem vtable
 A tabela a seguir mostra os métodos de `IDiaSourceFile`.
 
 |Método|Descrição|
@@ -36,16 +36,16 @@ A tabela a seguir mostra os métodos de `IDiaSourceFile`.
 |[IDiaSourceFile::get_uniqueId](../../debugger/debug-interface-access/idiasourcefile-get-uniqueid.md)|Recupera um valor de chave de inteiro simples que é exclusivo para esta imagem.|
 |[IDiaSourceFile::get_fileName](../../debugger/debug-interface-access/idiasourcefile-get-filename.md)|Recupera o nome do arquivo de origem.|
 |[IDiaSourceFile::get_checksumType](../../debugger/debug-interface-access/idiasourcefile-get-checksumtype.md)|Recupera o tipo de soma de verificação.|
-|[IDiaSourceFile::get_compilands](../../debugger/debug-interface-access/idiasourcefile-get-compilands.md)|Recupera um enumerador dos compilandos com números de linha, fazendo referência a esse arquivo.|
-|[IDiaSourceFile::get_checksum](../../debugger/debug-interface-access/idiasourcefile-get-checksum.md)|Recupera os bytes da soma de verificação.|
+|[IDiaSourceFile::get_compilands](../../debugger/debug-interface-access/idiasourcefile-get-compilands.md)|Recupera um enumerador do compilandos com números de linha referenciando este arquivo.|
+|[IDiaSourceFile::get_checksum](../../debugger/debug-interface-access/idiasourcefile-get-checksum.md)|Recupera os bytes de soma de verificação.|
 
 ## <a name="remarks"></a>Comentários
 
 ## <a name="notes-for-callers"></a>Observações para chamadores
-Obtenha essa interface por meio da chamada a [idiaenumsourcefiles:: item](../../debugger/debug-interface-access/idiaenumsourcefiles-item.md) ou [idiaenumsourcefiles:: Next](../../debugger/debug-interface-access/idiaenumsourcefiles-next.md) métodos. Consulte o exemplo para obter detalhes.
+Obtenha essa interface chamando os métodos [IDiaEnumSourceFiles:: item](../../debugger/debug-interface-access/idiaenumsourcefiles-item.md) ou [IDiaEnumSourceFiles:: Next](../../debugger/debug-interface-access/idiaenumsourcefiles-next.md) . Consulte o exemplo para obter detalhes.
 
 ## <a name="example"></a>Exemplo
-Esta função exibe os nomes de todos os arquivos de origem que contribuem para a tabela especificada.
+Essa função exibe os nomes de todos os arquivos de origem que contribuem para a tabela especificada.
 
 ```C++
 void ShowSourceFiles(IDiaTable *pTable)
@@ -73,9 +73,9 @@ void ShowSourceFiles(IDiaTable *pTable)
 ```
 
 ## <a name="requirements"></a>Requisitos
-Cabeçalho: Dia2.h
+Cabeçalho: dia2. h
 
-Biblioteca: diaguids.lib
+Biblioteca: diaguids. lib
 
 DLL: msdia80.dll
 

@@ -1,5 +1,5 @@
 ---
-title: 'Área de teste 7: Compartilhamento | Microsoft Docs'
+title: 'Área de teste 7: compartilhar | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,52 +11,52 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7b117bcf78d4644533f8931296e6f726281fe14e
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: c7b698f3802425a16476931513b6e4fe314d9954
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66327852"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72722376"
 ---
-# <a name="test-area-7-share"></a>Área de teste 7: Compartilhar
-Essa área de teste aborda itens de compartilhamento entre locais por meio de **compartilhamento** comando.
+# <a name="test-area-7-share"></a>Testar área 7: compartilhar
+Essa área de teste aborda o compartilhamento de itens entre locais por meio do comando **compartilhar** .
 
- Uma operação de hhare é a eliminação de duplicação aparente de arquivos e itens de pasta entre dois ou mais locais dentro de uma hierarquia de arquivo de controle do código-fonte. Eliminação de duplicação não realmente ocorre no servidor, mas o usuário verá o mesmo arquivo em dois ou mais locais especificados. Sempre que forem feitas alterações para qualquer um dos itens compartilhados, essas alterações aparecem em todos os outros locais compartilhados.
+ Uma operação hhare é a duplicação aparente de arquivos e itens de pasta entre dois ou mais locais dentro de uma hierarquia de arquivos de controle do código-fonte. Na verdade, a duplicação não ocorre no servidor, mas o usuário vê o mesmo arquivo em dois ou mais locais especificados. Sempre que forem feitas alterações em qualquer um dos itens compartilhados, essas alterações aparecerão em todos os outros locais compartilhados.
 
- Em pastas de compartilhamento funciona se você selecionar uma pasta pelo menos um arquivo sob controle do código-fonte nela. O comando de compartilhamento é desabilitado nas seguintes condições:
+ O compartilhamento em pastas funciona se você selecionar uma pasta com pelo menos um arquivo sob controle do código-fonte. O comando compartilhar é desabilitado sob as seguintes condições:
 
-- Se a pasta selecionada é uma pasta vazia.
+- Se a pasta selecionada for uma pasta vazia.
 
-- Se há uma pasta real, mas não contém nenhum arquivo de controle de origem.
+- Se houver uma pasta real, mas não contiver nenhum arquivo de controle do código-fonte.
 
-- Se houver uma pasta virtual, sejam arquivos sob controle do código-fonte nela ou não.
+- Se houver uma pasta virtual, se os arquivos sob controle do código-fonte estão ou não.
 
-- Se houver um projeto Web do Site remoto.
+- Se houver um projeto Web de site remoto.
 
-## <a name="command-menu-access"></a>Acesso ao Menu de comando
- O seguinte [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] caminhos de menu de ambiente de desenvolvimento integrado são usados nos casos de teste.
+## <a name="command-menu-access"></a>Acesso ao menu de comando
+ Os seguintes [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] caminhos de menu do ambiente de desenvolvimento integrado são usados nos casos de teste.
 
- Compartilhe: **Arquivo**->**controle de fonte**->**compartilhamento**.
+ Compartilhamento: **arquivo** ->**controle do código-fonte** ->**compartilhamento**.
 
 ## <a name="expected-behavior"></a>Comportamento esperado
 
-- Arquivo compartilhado é exibido em um local compartilhado.
+- O arquivo compartilhado aparece no local compartilhado.
 
-- Exibindo o código-fonte controle versão store histórico mostra que os arquivos são compartilhados.
+- A exibição do histórico do repositório de versão do controle do código-fonte mostra que os arquivos são compartilhados.
 
-- Editar um arquivo compartilhado edita os locais do arquivo.
+- Editar um arquivo compartilhado edita os dois locais do arquivo.
 
 ## <a name="test-cases"></a>Casos de teste
- Estes são os casos de teste específicos para a área de teste do compartilhamento.
+ Veja a seguir os casos de teste específicos para a área de teste de compartilhamento.
 
 |Ação|Etapas de teste|Resultados esperados para verificar|
 |------------|----------------|--------------------------------|
-|Compartilhar um arquivo de um projeto carregado no controle de origem para outro projeto carregado|1.  Crie um novo projeto.<br />2.  Adicione um segundo projeto à solução.<br />3.  Crie um arquivo no segundo projeto com um nome que não está no primeiro projeto.<br />4.  Adicione a solução ao controle de origem.<br />5.  Selecione o projeto primeiro.<br />6.  Abra **compartilhamento** caixa de diálogo (**arquivo** -> **controle de origem** -> **compartilhamento**).<br />7.  Compartilhe o arquivo de projeto de segundo para o primeiro projeto.<br />8.  Aceite **Check-Out** se solicitado.|Comportamento esperado comuns.|
-|Compartilhar um arquivo de um projeto para outro|1.  Crie um novo projeto.<br />2.  Adicioná-lo ao controle de origem.<br />3.  Feche a solução.<br />4.  Criar um segundo projeto (nova solução).<br />5.  Adicione a solução ao controle de origem.<br />6.  Selecione o projeto.<br />7.  Abra o **compartilhamento** caixa de diálogo (**arquivo** -> **controle de origem** -> **compartilhamento**).<br />8.  Compartilhe um arquivo de projeto adicionado anteriormente para o projeto aberto.<br />9. Aceite **Check-Out** se solicitado.|Comportamento esperado comuns.|
-|Compartilhar um arquivo não faz parte do projeto do controle de origem para o projeto carregado no momento|1.  Crie um novo projeto.<br />2.  Adicione a solução ao controle de origem.<br />3.  Adicione um arquivo ao controle do código-fonte que não faz parte do projeto ou solução.<br />4.  Selecione o projeto e abra o **compartilhamento** caixa de diálogo (**arquivo** -> **controle de origem** -> **compartilhamento**).<br />5.  Selecione um arquivo dentro de **compartilhar** caixa de diálogo que não existe dentro do projeto atual ou da solução e compartilhá-lo.<br />6.  Aceite **Check-Out** se solicitado.|O repositório de controle do código-fonte executou um Get, portanto, o arquivo agora é o local do projeto.|
-|Compartilhamento de arquivos dentro do mesmo projeto para uma pasta diferente|1.  Selecione **Check-out automaticamente** na **ferramentas** -> **opções** -> **controle do código-fonte**.<br />2.  Criar um novo projeto e adicioná-lo ao controle do código-fonte.<br />3.  Adicione uma pasta ao projeto.<br />4.  Adicione um arquivo para a pasta e fazer check-in na pasta.<br />5.  Selecione a pasta.<br />6.  Abra **compartilhamento** caixa de diálogo (**arquivo** -> **controle de origem** -> **compartilhamento**).<br />7.  Compartilhar o arquivo na pasta selecionada.|Comportamento esperado comuns.<br /><br /> Pasta deve ser marcada com um arquivo nela antes que ele pode ser usado para compartilhamento.|
-|Compartilhar uma pasta para o projeto carregado — recursiva|1.  Crie um novo projeto.<br />2.  Adicione a solução ao controle de origem.<br />3.  Selecione o projeto.<br />4.  Abra o **compartilhamento** caixa de diálogo (**arquivo** -> **controle de origem** -> **compartilhamento**).<br />5.  Selecione uma pasta.<br />6.  Compartilhe pasta recursivamente no projeto.|Comportamento esperado comuns.|
-|Compartilhar vários arquivos de um projeto para outro|1.  Crie um novo projeto com vários arquivos.<br />2.  Adicione a solução ao controle de origem.<br />3.  Feche a solução.<br />4.  Crie um novo projeto em uma nova solução.<br />5.  Adicione a solução ao controle de origem.<br />6.  Selecione o projeto.<br />7.  Abra o **compartilhamento** caixa de diálogo (**arquivo** -> **controle de origem** -> **compartilhamento**).<br />8.  Compartilhe vários arquivos do projeto criado anteriormente para o projeto aberto no momento.|Comportamento esperado comuns.|
+|Compartilhar um arquivo de um projeto carregado no controle do código-fonte para outro projeto carregado|1. Crie um novo projeto.<br />2. Adicione um segundo projeto à solução.<br />3. Crie um arquivo no segundo projeto com um nome que não esteja no primeiro projeto.<br />4. Adicione a solução ao controle do código-fonte.<br />5. Selecione o primeiro projeto.<br />6. caixa de diálogo abrir **compartilhamento** (**arquivo**  -> **controle do código-fonte**  -> **compartilhamento**).<br />7. Compartilhe o arquivo do segundo projeto para o primeiro projeto.<br />8. aceitar **check-out** se solicitado.|Comportamento esperado comum.|
+|Compartilhar um arquivo de um projeto para outro|1. Crie um novo projeto.<br />2. Adicione-o ao controle do código-fonte.<br />3. Feche a solução.<br />4. criar um segundo projeto (nova solução).<br />5. Adicione a solução ao controle do código-fonte.<br />6. Selecione o projeto.<br />7. Abra a caixa de diálogo **compartilhar** (**arquivo**  -> **controle do código-fonte**  -> **compartilhamento**).<br />8. Compartilhe um arquivo do projeto adicionado anteriormente para o projeto aberto.<br />9. aceitar **check-out** se solicitado.|Comportamento esperado comum.|
+|Compartilhar um arquivo que não faz parte do projeto do controle do código-fonte para o projeto atualmente carregado|1. Crie um novo projeto.<br />2. Adicione a solução ao controle do código-fonte.<br />3. adicionar um arquivo ao controle do código-fonte que não faz parte do projeto ou da solução.<br />4. Selecione o projeto e abra a caixa de diálogo **compartilhar** (**arquivo**  -> **controle do código-fonte**  -> **compartilhamento**).<br />5. Selecione um arquivo na caixa de diálogo de **compartilhamento** que não exista no projeto ou solução atual e compartilhe-o.<br />6. aceitar **check-out** se solicitado.|O armazenamento de controle do código-fonte realizou um get, portanto, o arquivo agora está no local local do projeto.|
+|Compartilhar arquivos dentro do mesmo projeto para uma pasta diferente|1. Selecione **fazer check-out automaticamente** em **ferramentas**  -> **Opções**  -> **controle do código-fonte**.<br />2. Crie um novo projeto e adicione-o ao controle do código-fonte.<br />3. Adicione uma pasta ao projeto.<br />4. Adicione um arquivo à pasta e faça check-in da pasta.<br />5. Selecione a pasta.<br />6. caixa de diálogo abrir **compartilhamento** (**arquivo**  -> **controle do código-fonte**  -> **compartilhamento**).<br />7. Compartilhe o arquivo na pasta selecionada.|Comportamento esperado comum.<br /><br /> É necessário fazer check-in de uma pasta com um arquivo antes que ela possa ser usada para compartilhamento.|
+|Compartilhar uma pasta no projeto carregado — recursivo|1. Crie um novo projeto.<br />2. Adicione a solução ao controle do código-fonte.<br />3. Selecione o projeto.<br />4. Abra a caixa de diálogo **compartilhar** (**arquivo**  -> **controle do código-fonte**  -> **compartilhamento**).<br />5. Selecione uma pasta.<br />6. compartilhe a pasta recursivamente no projeto.|Comportamento esperado comum.|
+|Compartilhar vários arquivos de um projeto para outro|1. Crie um novo projeto com vários arquivos.<br />2. Adicione a solução ao controle do código-fonte.<br />3. Feche a solução.<br />4. Crie um novo projeto em uma nova solução.<br />5. Adicione a solução ao controle do código-fonte.<br />6. Selecione o projeto.<br />7. Abra a caixa de diálogo **compartilhar** (**arquivo**  -> **controle do código-fonte**  -> **compartilhamento**).<br />8. Compartilhe vários arquivos do projeto criado anteriormente para o projeto aberto no momento.|Comportamento esperado comum.|
 
 ## <a name="see-also"></a>Consulte também
 - [Guia de teste para plug-ins de controle do código-fonte](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)

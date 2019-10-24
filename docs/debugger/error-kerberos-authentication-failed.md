@@ -1,5 +1,5 @@
 ---
-title: 'Erro: Falha na autenticação Kerberos | Microsoft Docs'
+title: 'Erro: falha na autenticação Kerberos | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 f1_keywords:
@@ -14,14 +14,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 76a62a821a9b110be2ffd8e25cbdf6721f12bc08
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fbe13fd3d0dc7e29fc12d369ec0865bcbc97b1a4
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62850743"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72737663"
 ---
-# <a name="error-kerberos-authentication-failed"></a>Erro: Falha na autenticação Kerberos
+# <a name="error-kerberos-authentication-failed"></a>Erro: falha na autenticação Kerberos
 Ao tentar fazer a depuração remota, você poderá receber a seguinte mensagem de erro:
 
 ```cmd
@@ -38,7 +38,7 @@ Error: The Visual Studio Remote Debugger on the target computer cannot connect b
 
 - Kerberos foi desabilitado no controlador de domínio.
 
-  Se a autenticação Kerberos não estiver disponível, alterar a conta usada para executar o Monitor de Depuração Remota do Visual Studio. Para o procedimento, consulte [erro: O serviço de depurador remoto do Visual Studio no computador de destino não pode se conectar novamente a esse computador](../debugger/error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer.md).
+  Se a autenticação Kerberos não estiver disponível, alterar a conta usada para executar o Monitor de Depuração Remota do Visual Studio. Para o procedimento, consulte [erro: o serviço de depurador remoto do Visual Studio no computador de destino não pode se conectar de volta a este computador](../debugger/error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer.md).
 
   Se ambos os computadores estiverem conectados ao mesmo domínio e você ainda receber essa mensagem, verifique se o DNS no computador de destino está resolvendo corretamente o nome do computador host do depurador. Consulte o procedimento a seguir.
 

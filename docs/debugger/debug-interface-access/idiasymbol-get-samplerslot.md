@@ -10,14 +10,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fe41982faadeec8ac44a0f178045b3c4dfa69b24
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 3a311b7139ba9b6d93eac1d50308db2e951c5c4d
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62835435"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739381"
 ---
-# <a name="idiasymbolgetsamplerslot"></a>IDiaSymbol::get_samplerSlot
+# <a name="idiasymbolget_samplerslot"></a>IDiaSymbol::get_samplerSlot
 Recupera o slot de amostra.
 
 ## <a name="syntax"></a>Sintaxe
@@ -30,9 +30,9 @@ HRESULT get_samplerSlot(
 #### <a name="parameters"></a>Parâmetros
  `pRetVal`
 
-[out] Um ponteiro para um `DWORD` que mantém o slot de amostra.
+fora Um ponteiro para um `DWORD` que contém o slot de amostra.
 
-## <a name="return-value"></a>Valor de retorno
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE` ou um código de erro.
 
 ## <a name="see-also"></a>Consulte também

@@ -10,12 +10,12 @@ ms.topic: quickstart
 ms.devlang: python
 ms.workload:
 - multiple
-ms.openlocfilehash: 26668247bf993da3eb3f2803abaf9288e566ffee
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 43ce126baeb96efcaab3c40bac912274ee1cd8c7
+ms.sourcegitcommit: 57bc1c3887838d707c13feff72a677b3bad3be4b
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62555447"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72777440"
 ---
 # <a name="train-a-tensorflow-model-locally"></a>Treinar um modelo do TensorFlow no local
 
@@ -23,7 +23,7 @@ Neste guia de início rápido, treinaremos um modelo do TensorFlow com o conjunt
 
 O banco de dados MNIST tem um conjunto de treinamento de 60 mil exemplos e um conjunto de testes de 10 mil exemplos de dígitos manuscritos.
 
-## <a name="prerequisites"></a>Pré-requisitos
+## <a name="prerequisites"></a>Prerequisites
 
 Antes de começar, confira se os itens a seguir estão instalados:
 

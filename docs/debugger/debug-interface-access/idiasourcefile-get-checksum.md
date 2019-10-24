@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2dc866cf392d2464756fc4e5cb19bfd02fcdea58
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8f4367a7862dabe248dfbe08e64c45598abe3679
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62838061"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741842"
 ---
-# <a name="idiasourcefilegetchecksum"></a>IDiaSourceFile::get_checksum
-Recupera os bytes da soma de verificação.
+# <a name="idiasourcefileget_checksum"></a>IDiaSourceFile::get_checksum
+Recupera os bytes de soma de verificação.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -35,25 +35,25 @@ HRESULT get_checksum ( 
 #### <a name="parameters"></a>Parâmetros
  `cbData`
 
-[in] Tamanho do buffer de dados, em bytes.
+no Tamanho do buffer de dados, em bytes.
 
  `pcbData`
 
-[out] Retorna o número de bytes da soma de verificação. O parâmetro não pode ser `NULL`.
+fora Retorna o número de bytes de soma de verificação. O parâmetro não pode ser `NULL`.
 
  `data`
 
-[no, out] Um buffer é preenchido com os bytes de soma de verificação. Se esse parâmetro for `NULL`, em seguida, `pcbData` retorna o número de bytes necessários.
+[entrada, saída] Um buffer que é preenchido com os bytes de soma de verificação. Se esse parâmetro for `NULL`, `pcbData` retornará o número de bytes necessários.
 
-## <a name="return-value"></a>Valor de retorno
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários
- Para determinar o tipo de algoritmo de soma de verificação que foi usado para gerar os bytes da soma de verificação, chame o [idiasourcefile:: Get_checksumtype](../../debugger/debug-interface-access/idiasourcefile-get-checksumtype.md) método.
+ Para determinar o tipo de algoritmo de soma de verificação que foi usado para gerar os bytes de soma de verificação, chame o método [IDiaSourceFile:: get_checksumType](../../debugger/debug-interface-access/idiasourcefile-get-checksumtype.md) .
 
- A soma de verificação normalmente é gerada da imagem do arquivo de origem para que as alterações no arquivo de origem são refletidas em alterações nos bytes de soma de verificação. Se os bytes da soma de verificação não coincidem com uma soma de verificação gerada da imagem carregada do arquivo, em seguida, o arquivo deve ser considerado danificado ou violado.
+ A soma de verificação normalmente é gerada a partir da imagem do arquivo de origem para que as alterações no arquivo de origem sejam refletidas nas alterações nos bytes de soma de verificação. Se os bytes de soma de verificação não corresponderem a uma soma de verificação gerada a partir da imagem carregada do arquivo, o arquivo deverá ser considerado danificado ou adulterado.
 
- As somas de verificação típicas nunca são mais de 32 bytes de tamanho, mas não supõem que seja o tamanho máximo de uma soma de verificação. Defina as `data` parâmetro para `NULL` para obter o número de bytes necessários para recuperar a soma de verificação. Em seguida, aloque um buffer de tamanho apropriado e chamar esse método mais uma vez com o novo buffer.
+ As somas de verificação típicas nunca têm mais de 32 bytes, mas não pressupõem que seja o tamanho máximo de uma soma de verificação. Defina o parâmetro `data` como `NULL` para obter o número de bytes necessários para recuperar a soma de verificação. Em seguida, aloque um buffer do tamanho apropriado e chame esse método mais uma vez com o novo buffer.
 
 ## <a name="see-also"></a>Consulte também
 - [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)
