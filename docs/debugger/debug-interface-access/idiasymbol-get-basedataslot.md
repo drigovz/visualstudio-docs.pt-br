@@ -10,14 +10,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 35612c8b4ab4e4ee64673d6058143788f56339fb
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 12aa68a549f47b27fd2b750d41631f4fabd546ba
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62837693"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740956"
 ---
-# <a name="idiasymbolgetbasedataslot"></a>IDiaSymbol::get_baseDataSlot
+# <a name="idiasymbolget_basedataslot"></a>IDiaSymbol::get_baseDataSlot
 Recupera o slot de dados base.
 
 ## <a name="syntax"></a>Sintaxe
@@ -30,9 +30,9 @@ HRESULT get_baseDataSlot(
 #### <a name="parameters"></a>Parâmetros
  `pRetVal`
 
-[out] Um ponteiro para um `DWORD` que mantém o slot de dados base.
+fora Um ponteiro para um `DWORD` que contém o slot de dados base.
 
-## <a name="return-value"></a>Valor de retorno
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE` ou um código de erro.
 
 ## <a name="see-also"></a>Consulte também

@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c7b32ab5b1965ea7a641cfac470addd2aae0ede0
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 4db7c1d7e3ed19268d94b28a7f0500788f7d21f5
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64791769"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739067"
 ---
-# <a name="idiasymbolgettypeids"></a>IDiaSymbol::get_typeIds
-Recupera uma matriz de valores de identificador de tipo de compilador específicos para esse símbolo.
+# <a name="idiasymbolget_typeids"></a>IDiaSymbol::get_typeIds
+Recupera uma matriz de valores de identificador de tipo específicos do compilador para este símbolo.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -35,21 +35,21 @@ HRESULT get_typeIds ( 
 #### <a name="parameters"></a>Parâmetros
  `cTypeIds`
 
-[in] Tamanho do buffer para manter os dados.
+no Tamanho do buffer para armazenar os dados.
 
  `pcTypeIds`
 
-[out] Retorna o número de `typeIds` escrita, ou, se `typeIds` é `NULL`, em seguida, o número total de identificadores de tipo disponíveis.
+fora Retorna o número de `typeIds` gravados ou, se `typeIds` for `NULL`, o número total de identificadores de tipo disponíveis.
 
  `typeIds[]`
 
-[out] Uma matriz que deve ser preenchida com os identificadores de tipo.
+fora Uma matriz que deve ser preenchida com os identificadores de tipo.
 
-## <a name="return-value"></a>Valor de retorno
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE` ou um código de erro.
 
 > [!NOTE]
-> Um valor de retorno `S_FALSE` significa que a propriedade não está disponível para o símbolo.
+> Um valor de retorno de `S_FALSE` significa que a propriedade não está disponível para o símbolo.
 
 ## <a name="see-also"></a>Consulte também
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

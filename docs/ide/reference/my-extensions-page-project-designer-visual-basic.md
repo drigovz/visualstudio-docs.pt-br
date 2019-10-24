@@ -13,12 +13,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 229ee7f4384c5ab93a329104ecbe165e0e1136a4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 894d425d934043b7ed06b29bc3d6fa19115ccf17
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666452"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748678"
 ---
 # <a name="my-extensions-page-project-designer-visual-basic"></a>Página Minhas Extensões, Designer de Projeto (Visual Basic)
 Use a página **Minhas Extensões** do **Designer de Projeto** para gerenciar `My` extensões do namespace em seu projeto. Extensões do namespace `My` permitem personalizar o namespace `My` para adicionar seus próprios membros personalizados. Para obter informações sobre a criação de extensões personalizadas do namespace `My`, consulte [Estendendo Meu Namespace no Visual Basic](/dotnet/visual-basic/developing-apps/customizing-extending-my/extending-the-my-namespace).

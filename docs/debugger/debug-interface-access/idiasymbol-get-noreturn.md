@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0857939289091d22aaafb5dc5bb009d4af0e00bb
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 68a1be922df32de2100c22a15b1656b451a603ef
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64830288"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739732"
 ---
-# <a name="idiasymbolgetnoreturn"></a>IDiaSymbol::get_noReturn
-Recupera um sinalizador que especifica se a função foi marcada como de retorno nunca com o [noreturn](/cpp/cpp/noreturn) atributo.
+# <a name="idiasymbolget_noreturn"></a>IDiaSymbol::get_noReturn
+Recupera um sinalizador que especifica se a função foi marcada como nunca retornando com o atributo [noreturn](/cpp/cpp/noreturn) .
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -33,20 +33,20 @@ HRESULT get_noReturn(
 #### <a name="parameters"></a>Parâmetros
  pFlag
 
-[out] Retorna `TRUE` se a função foi declarada como de retorno nunca com o `noreturn` atributo; caso contrário, retornará `FALSE`.
+fora Retorna `TRUE` se a função foi declarada como nunca retornando com o atributo `noreturn`; caso contrário, retorna `FALSE`.
 
-## <a name="return-value"></a>Valor de retorno
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE` ou um código de erro.
 
 > [!NOTE]
-> Um valor de retorno `S_FALSE` significa que a propriedade não está disponível para o símbolo.
+> Um valor de retorno de `S_FALSE` significa que a propriedade não está disponível para o símbolo.
 
 ## <a name="requirements"></a>Requisitos
 
 |Requisito|Descrição|
 |-----------------|-----------------|
 |Cabeçalho:|dia2.h|
-|Versão:|V DIA SDK 8.0|
+|Versão:|DIA SDK v 8.0|
 
 ## <a name="see-also"></a>Consulte também
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

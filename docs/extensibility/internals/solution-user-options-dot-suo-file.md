@@ -1,5 +1,5 @@
 ---
-title: Opções de usuário da solução (. Arquivo suo) | Microsoft Docs
+title: Opções de usuário da solução (. Suo) arquivo | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,27 +14,27 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0e54f89b9f231e4ae18e200718a5cc25cb3f3ceb
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 6f21e4a4a6530692709247e64b0d84aa7b06eb3a
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66322621"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72723807"
 ---
 # <a name="solution-user-options-suo-file"></a>Arquivo .Suo (Solution User Options)
-O arquivo de opções (. suo) do usuário de solução contém opções de solução por usuário. Esse arquivo não deve ser verificado controle do código fonte.
+O arquivo de opções de usuário da solução (. suo) contém opções de solução por usuário. Esse arquivo não deve ser verificado no controle do código-fonte.
 
- O arquivo de opções (. suo) do usuário de solução é um armazenamento estruturado ou composto, um arquivo armazenado em um formato binário. Você pode salvar informações do usuário em fluxos com o nome do fluxo que está sendo a chave que será usada para identificar as informações no arquivo. suo. O arquivo de opções de usuário da solução é usado para armazenar as configurações de preferência do usuário e é criado automaticamente quando o Visual Studio salva uma solução.
+ O arquivo de opções de usuário da solução (. suo) é um arquivo de armazenamento estruturado ou composto, armazenado em um formato binário. Você salva as informações do usuário em fluxos com o nome do fluxo sendo a chave que será usada para identificar as informações no arquivo. suo. O arquivo de opções de usuário da solução é usado para armazenar as configurações de preferência do usuário e é criado automaticamente quando o Visual Studio salva uma solução.
 
- Quando o ambiente de abre um arquivo. suo, ele enumera todos os VSPackages atualmente carregados. Se um VSPackage implementa o <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts> interface e, em seguida, as chamadas de ambiente a <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts.LoadUserOptions%2A> método em um VSPackage solicitando que ele carregar todos os seus dados do arquivo. suo.
+ Quando o ambiente abre um arquivo. suo, ele enumera todos os VSPackages carregados no momento. Se um VSPackage implementar a interface <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts>, o ambiente chamará o método <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts.LoadUserOptions%2A> no VSPackage solicitando que ele carregue todos os seus dados do arquivo. suo.
 
- É responsabilidade do VSPackage saber o que ele transmite talvez tenha gravado no arquivo. suo. Para cada fluxo que ele escreveu, o VSPackage chama de volta para o ambiente por meio de <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence.LoadPackageUserOpts%2A> para carregar um fluxo específico que é identificado pela chave, que é o nome do fluxo. O ambiente, em seguida, chama de volta para o VSPackage ler esse fluxo específico passando o nome do fluxo e um `IStream` ponteiro para o <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence.LoadPackageUserOpts%2A> método.
+ É responsabilidade do VSPackage saber quais fluxos podem ter sido gravados no arquivo. suo. Para cada fluxo que ele escreveu, o VSPackage chama de volta para o ambiente por meio de <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence.LoadPackageUserOpts%2A> carregar um fluxo específico que é identificado pela chave, que é o nome do fluxo. Em seguida, o ambiente chama de volta para o VSPackage para ler esse fluxo específico passando o nome do fluxo e um ponteiro de `IStream` para o método <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence.LoadPackageUserOpts%2A>.
 
- Nesse ponto, outra chamada é feita para `LoadUserOptions` para ver se há outra seção do arquivo. suo que deve ser lidos. Esse processo continua até que todos os fluxos de dados no arquivo. suo são lidos e processados pelo ambiente.
+ Nesse ponto, outra chamada é feita para `LoadUserOptions` para ver se há outra seção do arquivo. suo que deve ser lida. Esse processo continua até que todos os fluxos de dados no arquivo. suo tenham sido lidos e processados pelo ambiente.
 
- Quando a solução é salvo ou fechada, o ambiente chama o <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence.SavePackageSolutionProps%2A> método com um ponteiro para o <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts.SaveUserOptions%2A> método. Uma `IStream` que contém as informações de binárias a ser salvo é passado para o <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts.WriteUserOptions%2A> método, que, em seguida, grava as informações de arquivo. suo e chama o `SaveUserOptions` método novamente para ver se há outro fluxo de informações para gravar a. suo arquivo.
+ Quando a solução é salva ou fechada, o ambiente chama o método <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence.SavePackageSolutionProps%2A> com um ponteiro para o método <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts.SaveUserOptions%2A>. Um `IStream` que contém as informações binárias a serem salvas é passado para o método <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts.WriteUserOptions%2A>, que, em seguida, grava as informações no arquivo. suo e chama o método `SaveUserOptions` novamente para ver se há outro fluxo de informações a ser gravado no arquivo. suo.
 
- Esses dois métodos, `SaveUserOptions` e `WriteUserOptions`, são chamados recursivamente para cada fluxo de informações a serem salvas no arquivo. suo, passando o ponteiro para `IVsSolutionPersistence`. Eles são chamados de forma recursiva para permitir a gravação de vários fluxos para o arquivo. suo. Dessa forma, as informações do usuário são mantidas com a solução e é garantido que seja lá na próxima vez em que a solução for aberta.
+ Esses dois métodos, `SaveUserOptions` e `WriteUserOptions`, são chamados recursivamente para cada fluxo de informações a ser salvo no arquivo. suo, passando o ponteiro para `IVsSolutionPersistence`. Eles são chamados recursivamente para permitir a gravação de vários fluxos no arquivo. suo. Dessa forma, as informações do usuário são mantidas com a solução e há garantia de que estejam lá na próxima vez em que a solução for aberta.
 
 ## <a name="see-also"></a>Consulte também
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts>

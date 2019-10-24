@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 15a9ebbd3a3993568e4b6496e04661a63290399e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 688652fe3915e1974d5d0e1d04fb1ac075863d8c
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62832717"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743736"
 ---
 # <a name="idiaenumtablesnext"></a>IDiaEnumTables::Next
 Recupera um número especificado de tabelas na sequência de enumeração.
@@ -35,18 +35,18 @@ HRESULT Next ( 
 #### <a name="parameters"></a>Parâmetros
  `celt`
 
-[in] O número de tabelas no enumerador a ser recuperado.
+no O número de tabelas no enumerador a ser recuperado.
 
  `rgelt`
 
-[out] Uma matriz que deve ser preenchido com o [IDiaTable](../../debugger/debug-interface-access/idiatable.md) objetos que representam as tabelas desejadas.
+fora Uma matriz que deve ser preenchida com os objetos [IDiaTable](../../debugger/debug-interface-access/idiatable.md) que representam as tabelas desejadas.
 
  `pceltFetched`
 
-[out] Retorna o número de tabelas no enumerador buscado.
+fora Retorna o número de tabelas no enumerador obtido.
 
-## <a name="return-value"></a>Valor de retorno
- Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não existem mais tabelas. Caso contrário, retornará um código de erro.
+## <a name="return-value"></a>Valor retornado
+ Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não houver mais tabelas. Caso contrário, retornará um código de erro.
 
 ## <a name="see-also"></a>Consulte também
 - [IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md)

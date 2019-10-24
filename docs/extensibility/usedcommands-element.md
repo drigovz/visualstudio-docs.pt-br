@@ -13,17 +13,17 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e43834517855f72dd32c024c222089cf42c7c3ac
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 66361ad58c15e8539fcda6d0ec4468dd8b68289b
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66316278"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72718619"
 ---
 # <a name="usedcommands-element"></a>Elemento UsedCommands
-O elemento UsedCommands agrupa elementos UsedCommand e outros agrupamentos UsedCommands.
+O elemento UsedCommands agrupa elementos UsedCommand e outros agrupamentos do UsedCommands.
 
- O elemento UsedCommands é opcional. Se você não chamar comandos definidos fora do seu pacote, você não precisará incluí-la em seu arquivo. VSCT.
+ O elemento UsedCommands é opcional. Se você não chamar comandos definidos fora do pacote, não precisará incluir esta seção no arquivo. vsct.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -40,7 +40,7 @@ O elemento UsedCommands agrupa elementos UsedCommand e outros agrupamentos UsedC
 
 |Atributo|Descrição|
 |---------------|-----------------|
-|Condição|Opcional. Ver [atributos condicionais](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|Condição|Opcional. Consulte [atributos condicionais](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Elementos filho
 
@@ -52,7 +52,7 @@ O elemento UsedCommands agrupa elementos UsedCommand e outros agrupamentos UsedC
 
 |Elemento|Descrição|
 |-------------|-----------------|
-|[Elemento CommandTable](../extensibility/commandtable-element.md)|Define todos os elementos que representam os comandos (por exemplo, itens de menu, menus, barras de ferramentas e caixas de combinação) que fornece um VSPackage para o ambiente de desenvolvimento integrado (IDE).|
+|[Elemento CommandTable](../extensibility/commandtable-element.md)|Define todos os elementos que representam comandos (por exemplo, itens de menu, menus, barras de ferramentas e caixas de combinação) que um VSPackage fornece ao IDE (ambiente de desenvolvimento integrado).|
 
 ## <a name="example"></a>Exemplo
 

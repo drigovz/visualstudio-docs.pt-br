@@ -1,5 +1,5 @@
 ---
-title: Símbolos e marcações de símbolos | Microsoft Docs
+title: Símbolos e marcas de símbolo | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,33 +12,33 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6affc24a84ef4d008ece5f95e45a11eb70f33b4e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5d2281a82926dabfde88b8d4bb9096f0e9624211
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62854714"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738525"
 ---
 # <a name="symbols-and-symbol-tags"></a>Símbolos e marcas de símbolos
-Informações de depuração sobre um programa compilado são armazenadas no arquivo de banco de dados (. PDB) de programa como símbolos que podem ser acessados usando as APIs do SDK de acesso de Interface de depuração (DIA). Todos os símbolos têm uma [idiasymbol:: Get_symtag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md) e uma [idiasymbol:: Get_symindexid](../../debugger/debug-interface-access/idiasymbol-get-symindexid.md) propriedade. O `symTag` propriedade indica o tipo de símbolo, conforme definido pelo [enumeração SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) enumeração. O `symIndexId` propriedade é um `DWORD` valor que contém o identificador exclusivo para cada instância de um símbolo.
+As informações de depuração sobre um programa compilado são armazenadas no arquivo do banco de dados do programa (. pdb) como símbolos que são acessíveis usando as APIs do SDK de acesso à interface de depuração (DIA). Todos os símbolos têm uma propriedade [IDiaSymbol:: get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md) e [IDiaSymbol:: get_symIndexId](../../debugger/debug-interface-access/idiasymbol-get-symindexid.md) . A propriedade `symTag` indica o tipo de símbolo conforme definido pela enumeração de [Enumeração SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) . A propriedade `symIndexId` é um valor de `DWORD` que contém o identificador exclusivo para cada instância de um símbolo.
 
- Símbolos também têm propriedades que podem especificar informações adicionais sobre o símbolo, bem como referências a outros símbolos, geralmente um [idiasymbol:: Get_lexicalparent](../../debugger/debug-interface-access/idiasymbol-get-lexicalparent.md) ou [idiasymbol:: Get_classparent](../../debugger/debug-interface-access/idiasymbol-get-classparent.md). Quando você consulta uma propriedade que contém uma referência, a referência é retornada como um [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) objeto. Essas propriedades são sempre emparelhadas com outra propriedade com o mesmo nome, mas o sufixo com "Id", por exemplo, [idiasymbol:: Get_lexicalparentid](../../debugger/debug-interface-access/idiasymbol-get-lexicalparentid.md) e [idiasymbol:: Get_classparentid](../../debugger/debug-interface-access/idiasymbol-get-classparentid.md). As tabelas no [locais de símbolos](../../debugger/debug-interface-access/symbol-locations.md), [hierarquia Lexical de tipos de símbolo](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md), e [hierarquia de classe de tipos de símbolo](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md) descrever as propriedades para cada um dos diferentes tipos de símbolos. Essas propriedades podem ter informações relevantes sobre ou referências a outros símbolos. Porque o `*Id` propriedades são identificadores de ordinal simplesmente numéricos de suas propriedades relacionadas, eles são omitidos de discussões ainda mais. Eles são chamados somente quando for necessário para fins de esclarecimento de parâmetro.
+ Os símbolos também têm propriedades que podem especificar informações adicionais sobre o símbolo, bem como referências a outros símbolos, geralmente um [IDiaSymbol:: get_lexicalParent](../../debugger/debug-interface-access/idiasymbol-get-lexicalparent.md) ou [IDiaSymbol:: get_classParent](../../debugger/debug-interface-access/idiasymbol-get-classparent.md). Quando você consulta uma propriedade que contém uma referência, a referência é retornada como um objeto [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) . Essas propriedades são sempre emparelhadas com outra propriedade com o mesmo nome, mas com sufixo "ID", por exemplo, [IDiaSymbol:: get_lexicalParentId](../../debugger/debug-interface-access/idiasymbol-get-lexicalparentid.md) e [IDiaSymbol:: get_classParentId](../../debugger/debug-interface-access/idiasymbol-get-classparentid.md). As tabelas em [locais de símbolo](../../debugger/debug-interface-access/symbol-locations.md), [hierarquia lexical de tipos de símbolo](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)e [hierarquia de classes de tipos de símbolo](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md) descrevem as propriedades de cada um dos diferentes tipos de símbolos. Essas propriedades podem ter informações relevantes sobre ou referências a outros símbolos. Como as propriedades de `*Id` são simplesmente identificadores ordinais numéricos de suas propriedades relacionadas, elas são omitidas de outras discussões. Eles são referidos apenas onde necessário para o esclarecimento do parâmetro.
 
- Ao tentar acessar a propriedade, se nenhum erro ocorrer e a propriedade de símbolo foi atribuída um valor, a propriedade "get" retorno do método `S_OK`. Um valor de retorno `S_FALSE` indica que a propriedade não é válida para o símbolo atual.
+ Ao tentar acessar a propriedade, se nenhum erro ocorrer e a propriedade Symbol tiver sido atribuído um valor, o método "Get" da propriedade retornará `S_OK`. Um valor de retorno de `S_FALSE` indica que a propriedade não é válida para o símbolo atual.
 
 ## <a name="in-this-section"></a>Nesta seção
 
 [Locais de símbolos](../../debugger/debug-interface-access/symbol-locations.md)
 
-Descreve os diferentes tipos de locais de que um símbolo pode ter.
+Descreve os diferentes tipos de locais que um símbolo pode ter.
 
 [Hierarquia lexical de tipos de símbolo](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)
 
-Descreve os tipos de símbolo que formam hierarquias lexicais como arquivos, módulos e funções.
+Descreve os tipos de símbolo que formam hierarquias léxicas, como arquivos, módulos e funções.
 
 [Hierarquia de classes de tipos de símbolo](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md)
 
-Descreve os tipos de símbolo que correspondem aos elementos de linguagem diferentes, como classes, matrizes e a função retornam tipos.
+Descreve os tipos de símbolo que correspondem a elementos de linguagem diferentes, como classes, matrizes e tipos de retorno de função.
 
 ## <a name="see-also"></a>Consulte também
 

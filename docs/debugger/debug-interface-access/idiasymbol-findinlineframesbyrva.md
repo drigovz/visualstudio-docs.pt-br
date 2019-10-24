@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d43863f44ec80dce283b1746be12f7a6f47cfe4f
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 3e174db264a7d8c3576054fcccf8da333d3e1e76
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62838978"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741164"
 ---
 # <a name="idiasymbolfindinlineframesbyrva"></a>IDiaSymbol::findInlineFramesByRVA
-Recupera uma enumeração que permite que um cliente iterar em todos os quadros embutidos em um endereço relativo virtual (RVA) especificado.
+Recupera uma enumeração que permite que um cliente Itere em todos os quadros embutidos em um endereço virtual relativo (RVA) específico.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -31,13 +31,13 @@ HRESULT findInlineFramesByRVA (    DWORD             rva,
 #### <a name="parameters"></a>Parâmetros
  `rva`
 
-[in] Especifica o endereço como um RVA.
+no Especifica o endereço como um RVA.
 
  `ppResult`
 
-[out] Mantém um `IDiaEnumSymbols` objeto que contém a lista de quadros que são recuperados.
+fora Mantém um objeto `IDiaEnumSymbols` que contém a lista de quadros recuperados.
 
-## <a name="return-value"></a>Valor de retorno
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
 
 ## <a name="see-also"></a>Consulte também

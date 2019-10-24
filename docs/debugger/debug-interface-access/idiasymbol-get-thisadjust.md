@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2dfdfb07f0ea20cf13a56eed7f380e3ec195fe52
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: e92a18ce7b9b7206121d1ad514217f79d2f8628a
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64800790"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739153"
 ---
-# <a name="idiasymbolgetthisadjust"></a>IDiaSymbol::get_thisAdjust
-Recupera a lógica `this` adjustor para o método.
+# <a name="idiasymbolget_thisadjust"></a>IDiaSymbol::get_thisAdjust
+Recupera o ajustador de `this` lógico para o método.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -33,16 +33,16 @@ HRESULT get_thisAdjust ( 
 #### <a name="parameters"></a>Parâmetros
  `pRetVal`
 
-[out] Retorna a lógica `this` adjustor para o método.
+fora Retorna o ajustador de `this` lógico para o método.
 
-## <a name="return-value"></a>Valor de retorno
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE` ou um código de erro.
 
 > [!NOTE]
-> Um valor de retorno `S_FALSE` significa que a propriedade não está disponível para o símbolo.
+> Um valor de retorno de `S_FALSE` significa que a propriedade não está disponível para o símbolo.
 
 ## <a name="remarks"></a>Comentários
- Em alguns casos de herança de várias o próprio método deve calcular uma verdadeira `this` valor com a adição de um deslocamento para `this`.
+ Em alguns casos de herança múltipla, o próprio método deve calcular um valor true `this` adicionando um deslocamento a `this`.
 
 ## <a name="see-also"></a>Consulte também
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

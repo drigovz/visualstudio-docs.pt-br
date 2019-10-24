@@ -1,5 +1,5 @@
 ---
-title: Interface de assistente (IDTWizard) | Microsoft Docs
+title: Interface do assistente (IDTWizard) | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,17 +11,17 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7bd4e9a650bee4f5f13f1aeab39a59a1c04a253c
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f571fbd0a68ddbf56b637071ac250159461f61d1
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66330908"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72721538"
 ---
 # <a name="wizard-interface-idtwizard"></a>Interface do assistente (IDTWizard)
-O ambiente de desenvolvimento integrado (IDE) usa o <xref:EnvDTE.IDTWizard> interface para se comunicar com os assistentes. Assistentes devem implementar essa interface para ser instalado no IDE.
+O IDE (ambiente de desenvolvimento integrado) usa a interface <xref:EnvDTE.IDTWizard> para se comunicar com os assistentes. Os assistentes devem implementar essa interface para serem instalados no IDE.
 
- O <xref:EnvDTE.IDTWizard.Execute%2A> é o único método associado com o <xref:EnvDTE.IDTWizard> interface. Assistentes implementam esse método e o IDE chama o método na interface. O exemplo a seguir mostra a assinatura do método.
+ O método <xref:EnvDTE.IDTWizard.Execute%2A> é o único método associado à interface <xref:EnvDTE.IDTWizard>. Os assistentes implementam esse método e o IDE chama o método na interface. O exemplo a seguir mostra a assinatura do método.
 
 ```
 /* IDTWizard Method */
@@ -34,27 +34,27 @@ STDMETHOD(Execute)(THIS_
    );
 ```
 
- O mecanismo de início é semelhante para ambos os **novo projeto** e **Adicionar Novo Item** assistentes. Para começar, você deve chamar o <xref:EnvDTE.IDTWizard> interface definida na Dteinternal.h. A única diferença é o conjunto de contexto e os parâmetros personalizados que são passados para a interface quando a interface é chamada.
+ O mecanismo de início é semelhante para os assistentes **novo projeto** e **Adicionar novo item** . Para iniciar o, você chama a interface <xref:EnvDTE.IDTWizard> definida em Dteinternal. h. A única diferença é o conjunto de contexto e parâmetros personalizados que são passados para a interface quando a interface é chamada.
 
- As informações a seguir descrevem o <xref:EnvDTE.IDTWizard> interface assistentes devem implementar para funcionar no [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE. As chamadas IDE a <xref:EnvDTE.IDTWizard.Execute%2A> método no assistente, passando a ele o seguinte:
+ As informações a seguir descrevem a interface <xref:EnvDTE.IDTWizard> que os assistentes devem implementar para funcionar no IDE do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. O IDE chama o método <xref:EnvDTE.IDTWizard.Execute%2A> no assistente, passando o seguinte:
 
 - O objeto DTE
 
      O objeto DTE é a raiz do modelo de automação.
 
-- O identificador para a caixa de diálogo janela, conforme mostrado no segmento de código, `hwndOwner ([in] long)`.
+- O identificador para a caixa de diálogo de janela, conforme mostrado no segmento de código, `hwndOwner ([in] long)`.
 
-     O assistente usa esse `hwndOwner` como pai para a caixa de diálogo do assistente.
+     O assistente usa esse `hwndOwner` como o pai da caixa de diálogo do assistente.
 
-- Parâmetros de contexto passado para a interface como variante para SAFEARRAY conforme mostrado no segmento de código, `[in] SAFEARRAY (VARIANT)* ContextParams`.
+- Parâmetros de contexto passados para a interface como Variant para SAFEARRAY, conforme mostrado no segmento de código, `[in] SAFEARRAY (VARIANT)* ContextParams`.
 
-     Parâmetros de contexto contém uma matriz de valores que são específicos para o tipo de assistente que está sendo iniciado e o estado atual do projeto. O IDE passa os parâmetros de contexto para o assistente. Para obter mais informações, consulte [parâmetros de contexto](../../extensibility/internals/context-parameters.md).
+     Os parâmetros de contexto contêm uma matriz de valores que são específicos do tipo de assistente que está sendo iniciado e do estado atual do projeto. O IDE passa os parâmetros de contexto para o assistente. Para obter mais informações, consulte [parâmetros de contexto](../../extensibility/internals/context-parameters.md).
 
-- Parâmetros personalizados passado para a interface como uma variante para SAFEARRAY conforme mostrado no segmento de código, `[in] SAFEARRAY (VARIANT)* CustomParams`.
+- Parâmetros personalizados passados para a interface como uma variante para SAFEARRAY, conforme mostrado no segmento de código, `[in] SAFEARRAY (VARIANT)* CustomParams`.
 
-     Parâmetros personalizados contêm uma matriz de parâmetros definidos pelo usuário. Um arquivo. vsz passa parâmetros personalizados para o IDE. Os valores são determinados pelo `Param=` instruções. Para obter mais informações, consulte [parâmetros personalizados](../../extensibility/internals/custom-parameters.md).
+     Parâmetros personalizados contêm uma matriz de parâmetros definidos pelo usuário. Um arquivo. vsz passa parâmetros personalizados para o IDE. Os valores são determinados pelas instruções `Param=`. Para obter mais informações, consulte [Custom Parameters](../../extensibility/internals/custom-parameters.md).
 
-- São valores de retorno para a interface
+- Os valores de retorno para a interface são
 
     ```
     wizardResultSuccess = -1,

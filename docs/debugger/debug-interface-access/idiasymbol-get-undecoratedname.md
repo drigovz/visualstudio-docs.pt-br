@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d9650c2ea67d847f225f047d62dd7d1867a61d4d
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 533fc28da8cdd500234e07d2294a9d503476568e
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64809178"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739007"
 ---
-# <a name="idiasymbolgetundecoratedname"></a>IDiaSymbol::get_undecoratedName
-Recupera o nome não decorado de um decorado, C++ ou ligação, um nome.
+# <a name="idiasymbolget_undecoratedname"></a>IDiaSymbol::get_undecoratedName
+Recupera o nome não decorado para C++ um nome decorado ou de vinculação.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -33,13 +33,13 @@ HRESULT get_undecoratedName ( 
 #### <a name="parameters"></a>Parâmetros
  `pRetVal`
 
-[out] Retorna o nome não decorado de um C++ nome decorado.
+fora Retorna o nome não decorado para C++ um nome decorado.
 
-## <a name="return-value"></a>Valor de retorno
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE` ou um código de erro.
 
 > [!NOTE]
-> Um valor de retorno `S_FALSE` significa que a propriedade não está disponível para o símbolo.
+> Um valor de retorno de `S_FALSE` significa que a propriedade não está disponível para o símbolo.
 
 ## <a name="see-also"></a>Consulte também
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

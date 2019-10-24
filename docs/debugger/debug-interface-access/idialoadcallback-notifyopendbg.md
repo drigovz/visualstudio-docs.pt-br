@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 97ca8b06a480d2fddb2002a0b9a19f878caa58f5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 70607af90469594491223afa5f316dc63bf935b3
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62828611"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743076"
 ---
 # <a name="idialoadcallbacknotifyopendbg"></a>IDiaLoadCallback::NotifyOpenDBG
-Chamado quando um arquivo do candidato. dbg foi aberto.
+Chamado quando um arquivo Candidate. dbg é aberto.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -34,14 +34,14 @@ HRESULT NotifyOpenDBG ( 
 #### <a name="parameters"></a>Parâmetros
  `dbgPath`
 
-[in] O caminho completo do arquivo. dbg.
+no O caminho completo do arquivo. dbg.
 
  `resultCode`
 
-[in] Código que indica o êxito (`S_OK`) ou a falha da carga conforme aplicado a esse arquivo.
+no Código que indica o êxito (`S_OK`) ou a falha da carga, conforme aplicado a esse arquivo.
 
-## <a name="return-value"></a>Valor de retorno
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro. O código de retorno normalmente é ignorado.
+## <a name="return-value"></a>Valor retornado
+ Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro. O código de retorno é normalmente ignorado.
 
 ## <a name="see-also"></a>Consulte também
 - [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)

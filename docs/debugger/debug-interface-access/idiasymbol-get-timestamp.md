@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 91f75ab56c8c34e2c58e0f0560422021299c9540
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: de05b30147e91ed9d82dce03f7a72d34250598de
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64793700"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739107"
 ---
-# <a name="idiasymbolgettimestamp"></a>IDiaSymbol::get_timeStamp
-Recupera o carimbo de hora do arquivo executável subjacente.
+# <a name="idiasymbolget_timestamp"></a>IDiaSymbol::get_timeStamp
+Recupera o carimbo de data/hora do arquivo executável subjacente.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -33,13 +33,13 @@ HRESULT get_timeStamp ( 
 #### <a name="parameters"></a>Parâmetros
  `pRetVal`
 
-[out] Retorna o carimbo de hora do arquivo executável subjacente.
+fora Retorna o carimbo de data/hora do arquivo executável subjacente.
 
-## <a name="return-value"></a>Valor de retorno
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE` ou um código de erro.
 
 > [!NOTE]
-> Um valor de retorno `S_FALSE` significa que a propriedade não está disponível para o símbolo.
+> Um valor de retorno de `S_FALSE` significa que a propriedade não está disponível para o símbolo.
 
 ## <a name="see-also"></a>Consulte também
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

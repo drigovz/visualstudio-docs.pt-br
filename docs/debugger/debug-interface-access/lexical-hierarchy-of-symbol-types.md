@@ -12,38 +12,38 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f4b2e6fc0b24cc96f617e7b78c6bdcc59ddc5c0d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: ad782ddb9a88b492d03e2338f17d95fb7bfa4f79
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63399367"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738664"
 ---
 # <a name="lexical-hierarchy-of-symbol-types"></a>Hierarquia lexical de tipos de símbolos
-A tabela a seguir mostra os tipos de símbolo na hierarquia de léxico.
+A tabela a seguir mostra os tipos de símbolo na hierarquia lexical.
 
 ## <a name="symbol-types"></a>Tipos de símbolo
 
 |Tipo de símbolo|Descrição|
 |-----------------|-----------------|
 |[Anotação](../../debugger/debug-interface-access/annotation.md)|Especifica um local anotado no código do programa.|
-|[Bloco](../../debugger/debug-interface-access/block.md)|Especifica os escopos aninhados em funções.|
-|`Compiland`|Especifica um `compiland` vinculado ao arquivo .exe.|
-|[CompilandDetails](../../debugger/debug-interface-access/compilanddetails.md)|Especifica os dados de compiland que podem exigir Carregando detalhes compiland adicionais e, portanto, incorre em tempo de execução sobrecarga para recuperar.|
-|[CompilandEnv](../../debugger/debug-interface-access/compilandenv.md)|Especifica as variáveis de ambiente adicionais significativas para a compilação de compiland.|
+|[Bloco](../../debugger/debug-interface-access/block.md)|Especifica escopos aninhados em funções.|
+|`Compiland`|Especifica um `compiland` vinculado ao arquivo. exe.|
+|[CompilandDetails](../../debugger/debug-interface-access/compilanddetails.md)|Especifica dados de compiland que podem exigir o carregamento de detalhes de compiland adicionais e, portanto, incorrem na sobrecarga de tempo de execução para recuperar.|
+|[CompilandEnv](../../debugger/debug-interface-access/compilandenv.md)|Especifica quaisquer variáveis de ambiente adicionais significativas para a compilação do compiland.|
 |[Custom (SDK de Acesso à Interface de Depuração)](../../debugger/debug-interface-access/custom-debug-interface-access-sdk.md)|Especifica um símbolo definido pelo usuário.|
 |[Dados (SDK de Acesso à Interface de Depuração)](../../debugger/debug-interface-access/data-debug-interface-access-sdk.md)|Especifica essas variáveis como parâmetros, variáveis locais, variáveis globais e membros de classe.|
-|[Exe](../../debugger/debug-interface-access/exe.md)|Especifica o escopo global dos dados. corresponde a um arquivo inteiro .exe ou. dll.|
-|[FuncDebugEnd](../../debugger/debug-interface-access/funcdebugend.md)|Especifica uma função que tem um ponto definido no qual a depuração é ao fim.|
-|[FuncDebugStart](../../debugger/debug-interface-access/funcdebugstart.md)|Especifica uma função que tem um ponto definido no qual a depuração deve iniciar.|
+|[Exe](../../debugger/debug-interface-access/exe.md)|Especifica o escopo global dos dados; corresponde a um arquivo. exe ou. dll inteiro.|
+|[FuncDebugEnd](../../debugger/debug-interface-access/funcdebugend.md)|Especifica uma função que tem um ponto definido no qual a depuração deve terminar.|
+|[FuncDebugStart](../../debugger/debug-interface-access/funcdebugstart.md)|Especifica uma função que tem um ponto definido no qual a depuração deve começar.|
 |[Função (SDK de Acesso à Interface de Depuração)](../../debugger/debug-interface-access/function-debug-interface-access-sdk.md)|Especifica uma função.|
 |[Rótulo (SDK de Acesso à Interface de Depuração)](../../debugger/debug-interface-access/label-debug-interface-access-sdk.md)|Especifica um local no código do programa.|
-|[PublicSymbol](../../debugger/debug-interface-access/publicsymbol.md)|Especifica um símbolo externo que aparece ao compilar o programa executável.|
+|[PublicSymbol](../../debugger/debug-interface-access/publicsymbol.md)|Especifica um símbolo externo que aparece ao criar o programa executável.|
 |[Conversão](../../debugger/debug-interface-access/thunk.md)|Especifica um `thunk`.|
-|[UsingNameSpace](../../debugger/debug-interface-access/usingnamespace.md)|Especifica um `namespace`identificador.|
+|[UsingNameSpace](../../debugger/debug-interface-access/usingnamespace.md)|Especifica um `namespace`identifier.|
 
 > [!NOTE]
-> Propriedades de símbolo adicionais podem estar disponíveis, dependendo do tipo de símbolo. Essas propriedades são listadas nos tópicos individuais de símbolo.
+> As propriedades de símbolo adicionais podem estar disponíveis dependendo do tipo de símbolo. Essas propriedades são listadas nos tópicos de símbolos individuais.
 
 ## <a name="see-also"></a>Consulte também
 - [Hierarquia de classes de tipos de símbolo](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md)

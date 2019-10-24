@@ -9,12 +9,12 @@ ms.date: 11/13/2017
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: a81c1869bf7587aa30dbc02f0e9aec4c97776e5f
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: fb296346d54b0774bdd9a738581ee28fe99b1de0
+ms.sourcegitcommit: 57bc1c3887838d707c13feff72a677b3bad3be4b
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68918038"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72777477"
 ---
 # <a name="installation"></a>Instalação
 
@@ -44,7 +44,7 @@ Antes de começar a treinar os modelos de aprendizagem profunda em seu computado
 
 ### <a name="nvidia-gpu-driver"></a>Driver da GPU NVIDIA
 
-As estruturas de aprendizagem profunda aproveitam-se da GPU NVIDIA para permitir que computadores aprendam com velocidade, precisão e escala, em direção à verdadeira inteligência artificial. Se o computador tem placas GPU da NVIDIA, confira [Downloads de drivers NVIDIA](http://www.nvidia.com/Download/index.aspx) ou tente uma atualização do sistema operacional para instalar o driver mais recente.
+As estruturas de aprendizagem profunda aproveitam-se da GPU NVIDIA para permitir que computadores aprendam com velocidade, precisão e escala, em direção à verdadeira inteligência artificial. Se o computador tem placas GPU da NVIDIA, confira [Downloads de drivers NVIDIA](https://www.nvidia.com/Download/index.aspx) ou tente uma atualização do sistema operacional para instalar o driver mais recente.
 
 ### <a name="cuda"></a>CUDA
 
@@ -194,7 +194,7 @@ pip3.5 install Theano==0.9.0
 
 ### <a name="pytorch"></a>PyTorch
 
-O [PyTorch](http://pytorch.org/) é um pacote em Python que oferece dois recursos de alto nível:
+O [PyTorch](https://pytorch.org/) é um pacote em Python que oferece dois recursos de alto nível:
 
 - Computação por tensores (como o NumPy) com forte aceleração de GPU
 - Redes Neurais Profundas criadas em um sistema autograd baseado em fita

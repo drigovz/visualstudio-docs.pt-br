@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: de8c333391530cd86c6fc66a8e6c36ce8cfecd5f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7887fea30b04f4ebb6605169c58551122eccf73d
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62829064"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743443"
 ---
-# <a name="idiaimagedatagetimagebase"></a>IDiaImageData::get_imageBase
+# <a name="idiaimagedataget_imagebase"></a>IDiaImageData::get_imageBase
 Recupera o local da memória onde a imagem deve ser baseada.
 
 ## <a name="syntax"></a>Sintaxe
@@ -33,13 +33,13 @@ HRESULT get_imageBase ( 
 #### <a name="parameters"></a>Parâmetros
  `pRetVal`
 
-[out] Retorna o valor de base de imagem sugerida.
+fora Retorna o valor base da imagem sugerida.
 
-## <a name="return-value"></a>Valor de retorno
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários
- Devido a conflitos de base de imagem, uma imagem pode ser base alterada automaticamente para um local de memória não utilizada quando ele for carregado. Esse método retorna a dica de base (local de memória sugerido) que foi armazenada no módulo em tempo de compilação.
+ Devido a conflitos na base da imagem, uma imagem pode ser reutilizada automaticamente para um local de memória não utilizado quando ela é carregada. Esse método retorna a dica de base (local da memória sugerida) que foi armazenada no módulo no momento da compilação.
 
 ## <a name="see-also"></a>Consulte também
 - [IDiaImageData](../../debugger/debug-interface-access/idiaimagedata.md)

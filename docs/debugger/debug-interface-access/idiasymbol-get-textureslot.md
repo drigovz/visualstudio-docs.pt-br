@@ -10,14 +10,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b480cfee85af750addddbbc195881adab002e07c
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 92aa950447d46f2342fdbaa0114e2bec956cd5a5
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62841536"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739160"
 ---
-# <a name="idiasymbolgettextureslot"></a>IDiaSymbol::get_textureSlot
+# <a name="idiasymbolget_textureslot"></a>IDiaSymbol::get_textureSlot
 Recupera o slot de textura.
 
 ## <a name="syntax"></a>Sintaxe
@@ -30,9 +30,9 @@ HRESULT get_textureSlot(
 #### <a name="parameters"></a>Parâmetros
  `pRetVal`
 
-[out] Um ponteiro para um `DWORD` que mantém o slot de textura.
+fora Um ponteiro para um `DWORD` que contém o slot de textura.
 
-## <a name="return-value"></a>Valor de retorno
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE` ou um código de erro.
 
 ## <a name="see-also"></a>Consulte também

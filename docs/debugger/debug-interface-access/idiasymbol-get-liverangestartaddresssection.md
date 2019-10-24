@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c99b5a14a321a28bdbe7337dcc7cdfa5febdad5d
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: a23f0661d8af6417d754fd7a71c66c5dd3ef1135
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64786523"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739902"
 ---
-# <a name="idiasymbolgetliverangestartaddresssection"></a>IDiaSymbol::get_liveRangeStartAddressSection
+# <a name="idiasymbolget_liverangestartaddresssection"></a>IDiaSymbol::get_liveRangeStartAddressSection
 Retorna a parte da seção do endereço inicial do intervalo no qual o símbolo local é válido.
 
 ## <a name="syntax"></a>Sintaxe
@@ -33,23 +33,23 @@ HRESULT get_liveRangeStartAddressSection ( 
 #### <a name="parameters"></a>Parâmetros
  `section`
 
-[out] Retorna a parte da seção do intervalo de endereços inicial.
+fora Retorna a parte da seção do intervalo de endereços inicial.
 
-## <a name="return-value"></a>Valor de retorno
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
 
 > [!NOTE]
-> Um código de erro retornado significa que o símbolo não tem informações de intervalo em tempo real.
+> Um código de erro retornado significa que o símbolo não tem informações de intervalo dinâmico.
 
 ## <a name="remarks"></a>Comentários
  O endereço formado pela seção e deslocamento é o início do intervalo no qual o símbolo é válido.
 
- Para obter a parte do deslocamento do endereço, use [IDiaSymbol::get_liveRangeStartAddressOffset](../../debugger/debug-interface-access/idiasymbol-get-liverangestartaddressoffset.md).
+ Para obter a parte de deslocamento do endereço, use [IDiaSymbol:: get_liveRangeStartAddressOffset](../../debugger/debug-interface-access/idiasymbol-get-liverangestartaddressoffset.md).
 
 ## <a name="requirements"></a>Requisitos
- Cabeçalho: Dia2.h
+ Cabeçalho: dia2. h
 
- Biblioteca: diaguids.lib
+ Biblioteca: diaguids. lib
 
  DLL: msdia100.dll
 

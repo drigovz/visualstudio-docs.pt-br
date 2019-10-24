@@ -1,5 +1,5 @@
 ---
-title: 'Área de teste 6: Delete | Microsoft Docs'
+title: 'Área de teste 6: excluir | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,17 +11,17 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 935c735009d83274cc1a8ae126d46f8ee9dbe1ae
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 1d75721a09615026cd10a42e4b6d8d8520b41239
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66327984"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72722437"
 ---
-# <a name="test-area-6-delete"></a>Área de teste 6: Excluir
-Essa área de plug-in de teste de controle de origem aborda as ações de exclusão.
+# <a name="test-area-6-delete"></a>Área de teste 6: excluir
+Esta área de teste de plug-in de controle de origem abrange ações de exclusão.
 
- Controle de origem responde para excluir ações na **Gerenciador de soluções**.
+ O controle do código-fonte responde às ações de exclusão no **Gerenciador de soluções**.
 
  A seguir está uma lista de itens que podem ser excluídos:
 
@@ -31,26 +31,26 @@ Essa área de plug-in de teste de controle de origem aborda as ações de exclus
 
 - Projeto
 
-  Dependendo do tipo de projeto, você terá a opção de **remova** o projeto (deixa os arquivos no disco) ou **excluir** o projeto (remove os arquivos no disco). Qualquer ação remove o projeto ou item de **Gerenciador de soluções**.
+  Dependendo do tipo de projeto, você pode ter a opção de **remover** o projeto (deixa os arquivos em disco) ou **excluir** o projeto (remove os arquivos em disco). Qualquer ação remove o projeto ou item de **Gerenciador de soluções**.
 
 ## <a name="expected-behavior"></a>Comportamento esperado
- O comportamento esperado para os casos de teste na área de teste delete é:
+ O comportamento esperado para os casos de teste na área de teste de exclusão é:
 
-- Item excluído não está mais visível dentro **Gerenciador de soluções**.
+- O item excluído não está mais visível no **Gerenciador de soluções**.
 
-- O pai do item ou projeto excluído foi extraído, conforme necessário (possivelmente com um prompt.)
+- O check-out do projeto ou item excluído é feito conforme necessário (possivelmente com um prompt).
 
-- Depois de excluir um check-out ou foi adicionado um item, ele não aparece na **check-ins pendentes** janela.
+- Depois que você exclui um item com check-out ou adicionado, ele não aparece na janela **check-ins pendentes** .
 
-- O item ainda existe dentro do armazenamento de controle de origem, mesmo após a exclusão e deve ser removido manualmente.
+- O item ainda existe no armazenamento de controle do código-fonte, mesmo após a exclusão, e deve ser limpo manualmente.
 
 |Ação|Etapas de teste|Resultados esperados para verificar|
 |------------|----------------|--------------------------------|
-|Excluir um projeto de cliente|1.  Crie um projeto de cliente.<br />2.  Adicione a solução ao controle de origem.<br />3.  Remova todo o projeto de solução|Comportamento esperado comuns.|
-|Excluir um arquivo vazio|1.  Crie um projeto de cliente.<br />2.  Adicione um arquivo de zero byte ao projeto.<br />3.  Adicione a solução ao controle de origem.<br />4.  Selecione o arquivo, excluí-lo.|Comportamento esperado comuns.|
-|Excluir uma pasta com um arquivo|1.  Crie a solução de projeto único.<br />2.  Adicione uma pasta.<br />3.  Adicione um arquivo para a pasta.<br />4.  Adicione a solução ao controle de origem.<br />5.  Check-out do projeto para evitar prompts.<br />6.  Exclua a pasta.|Comportamento esperado comuns.|
-|Excluir um projeto Web do sistema de arquivos|1.  Crie um projeto Web do sistema de arquivos (use o botão Procurar para especificar um caminho UNC).<br />2.  Adicione a solução ao controle de origem.<br />3.  Remova todo o projeto da solução.<br />4.  Repita as etapas 1 a 3 para um projeto da Web local (exercita caminhos diferentes por meio do código, mas tem a mesma interface externa e o comportamento).|Comportamento esperado comuns.|
-|Excluir um arquivo de um projeto Web do sistema de arquivos|1.  Crie um projeto Web do sistema de arquivos.<br />2.  Adicione a solução ao controle de origem.<br />3.  Exclua um arquivo de projeto.<br />4.  Repita as etapas 1 a 3 para um projeto da Web local (exercita caminhos diferentes por meio do código, mas tem a mesma interface externa e o comportamento).|Comportamento esperado comuns.|
+|Excluir um projeto de cliente|1. criar um projeto de cliente.<br />2. Adicione a solução ao controle do código-fonte.<br />3. remover o projeto inteiro da solução|Comportamento esperado comum.|
+|Excluir um arquivo vazio|1. criar um projeto de cliente.<br />2. Adicione um arquivo de byte zero ao projeto.<br />3. Adicione a solução ao controle do código-fonte.<br />4. Selecione o arquivo, exclua-o.|Comportamento esperado comum.|
+|Excluir uma pasta com um arquivo|1. criar solução de projeto único.<br />2. Adicione uma pasta.<br />3. Adicione um arquivo à pasta.<br />4. Adicione a solução ao controle do código-fonte.<br />5. Confira o projeto para evitar prompts.<br />6. exclua a pasta.|Comportamento esperado comum.|
+|Excluir um projeto Web do sistema de arquivos|1. Crie um projeto Web do sistema de arquivos (use o botão procurar para especificar um caminho UNC).<br />2. Adicione a solução ao controle do código-fonte.<br />3. Remova todo o projeto da solução.<br />4. Repita as etapas de 1 a 3 para um projeto Web local (exercita caminhos diferentes por meio do código, mas tem a mesma interface e comportamento externos).|Comportamento esperado comum.|
+|Excluir um arquivo de um projeto Web do sistema de arquivos|1. criar um projeto Web do sistema de arquivos.<br />2. Adicione a solução ao controle do código-fonte.<br />3. exclua um arquivo do projeto.<br />4. Repita as etapas de 1 a 3 para um projeto Web local (exercita caminhos diferentes por meio do código, mas tem a mesma interface e comportamento externos).|Comportamento esperado comum.|
 
 ## <a name="see-also"></a>Consulte também
 - [Guia de teste para plug-ins de controle do código-fonte](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)

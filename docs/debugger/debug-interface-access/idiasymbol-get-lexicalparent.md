@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e8927785ba6ca0dbe3daf6c402be776e8c9d8288
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 87d44f2c8dfb723f9f2653d6f9d89a2c1c71ef5f
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64813737"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739968"
 ---
-# <a name="idiasymbolgetlexicalparent"></a>IDiaSymbol::get_lexicalParent
-Recupera uma referência ao léxico pai do símbolo.
+# <a name="idiasymbolget_lexicalparent"></a>IDiaSymbol::get_lexicalParent
+Recupera uma referência ao pai léxico do símbolo.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -33,18 +33,18 @@ HRESULT get_lexicalParent ( 
 #### <a name="parameters"></a>Parâmetros
  `pRetVal`
 
-[out] Retorna um [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) objeto que representa o pai de léxico do símbolo.
+fora Retorna um objeto [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) que representa o pai léxico do símbolo.
 
-## <a name="return-value"></a>Valor de retorno
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE` ou código de erro.
 
 > [!NOTE]
-> Um valor de retorno `S_FALSE` significa que a propriedade não está disponível para o símbolo.
+> Um valor de retorno de `S_FALSE` significa que a propriedade não está disponível para o símbolo.
 
 ## <a name="remarks"></a>Comentários
- O léxico pai de um símbolo é a função ou módulo de delimitador. Por exemplo, o léxico pai de um parâmetro de função ou variável local é a própria função enquanto o léxico pai da função é o módulo que é definido no.
+ O pai léxico de um símbolo é a função ou o módulo delimitador. Por exemplo, o pai léxico de um parâmetro de função ou variável local é a própria função enquanto o pai léxico da função é o módulo em que ele está definido.
 
- Os símbolos possíveis que podem aparecer como pais léxicos estão documentados em [hierarquia Lexical de tipos de símbolo](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md).
+ Os possíveis símbolos que podem aparecer como pais léxicos são documentados na [hierarquia lexical dos tipos de símbolo](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md).
 
 ## <a name="see-also"></a>Consulte também
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
