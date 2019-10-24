@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c60c4eac676936147760359e2b707814702846f
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 64be123de60608aa82e2e271b1f14d0de7be2cb4
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64798853"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740283"
 ---
-# <a name="idiasymbolgetisctypes"></a>IDiaSymbol::get_isCTypes
+# <a name="idiasymbolget_isctypes"></a>IDiaSymbol::get_isCTypes
 Recupera um sinalizador que indica se o arquivo de símbolo contém tipos C.
 
 ## <a name="syntax"></a>Sintaxe
@@ -33,23 +33,23 @@ HRESULT get_isCTypes(
 #### <a name="parameters"></a>Parâmetros
  `pFlag`
 
-[out] Retorna `TRUE` se o arquivo de símbolo contém tipos C; caso contrário, retornará `FALSE`.
+fora Retorna `TRUE` se o arquivo de símbolo contiver tipos C; caso contrário, retorna `FALSE`.
 
-## <a name="return-value"></a>Valor de retorno
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE` ou um código de erro.
 
 > [!NOTE]
-> Um valor de retorno `S_FALSE` significa que a propriedade não está disponível para o símbolo.
+> Um valor de retorno de `S_FALSE` significa que a propriedade não está disponível para o símbolo.
 
 ## <a name="remarks"></a>Comentários
- Essa propriedade está disponível do `SymTagExe` tipo de símbolo (consulte [Exe](../../debugger/debug-interface-access/exe.md)).
+ Essa propriedade está disponível no tipo de símbolo de `SymTagExe` (consulte [exe](../../debugger/debug-interface-access/exe.md)).
 
 ## <a name="requirements"></a>Requisitos
 
 |Requisito|Descrição|
 |-----------------|-----------------|
 |Cabeçalho:|dia2.h|
-|Versão:|V DIA SDK 8.0|
+|Versão:|DIA SDK v 8.0|
 
 ## <a name="see-also"></a>Consulte também
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

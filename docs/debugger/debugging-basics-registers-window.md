@@ -1,5 +1,5 @@
 ---
-title: Sobre a janela registros | Microsoft Docs
+title: Sobre a janela de registros | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,14 +17,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: df01776b5a7f2437c704c2b389c7d0929be5901c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4deaf03013b6e28ea02e6ec7412bd23a05f1b87e
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62852274"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738257"
 ---
-# <a name="about-the-registers-window-in-visual-studio-c-c-visual-basic-f"></a>Sobre a janela de registros no Visual Studio (C#, C++, Visual Basic, F#)
+# <a name="about-the-registers-window-in-visual-studio-c-c-visual-basic-f"></a>Sobre a janela de registros no Visual StudioC#( C++,, Visual Basic F#,)
 
 A janela **Registros** só ficará disponível se a depuração do nível de endereços estiver habilitada na caixa de diálogo **Opções**, nó **Depuração**.
 
@@ -40,31 +40,31 @@ A janela **Registros** só ficará disponível se a depuração do nível de end
 
  Para saber mais sobre como exibir a janela **Registros**, confira [Como usar a janela Registros](../debugger/how-to-use-the-registers-window.md).
 
- Quando você observa a **registra** janela, você verá entradas como `EAX = 003110D8`.
+ Quando você examinar a janela de **registros** , verá entradas como `EAX = 003110D8`.
 
- O símbolo à esquerda do `=` sinal é o nome do registro, `EAX`, nesse caso. O número à direita do sinal `=` representa o conteúdo do registro.
+ O símbolo à esquerda do sinal de `=` é o nome do registro, `EAX`, nesse caso. O número à direita do sinal `=` representa o conteúdo do registro.
 
  A janela **Registros** permite fazer mais do que apenas exibir o conteúdo de um registro. Quando você está no modo de interrupção em código nativo, pode clicar no conteúdo de um registro e editar o valor. Isso não é algo que você deve fazer aleatoriamente. A menos que você compreenda o registro que está editando, e os dados que ele contém, o resultado de uma edição descuidada provavelmente será uma falha de programa ou alguma outra consequência indesejada. Infelizmente, uma explicação detalhada dos conjuntos de registro dos vários processadores Intel e compatíveis com Intel vai além do escopo dessa breve introdução.
 
-## <a name="register-groups"></a>Grupos de registros
+## <a name="register-groups"></a>Registrar grupos
 
 Para reduzir a confusão, a janela **Registros** organiza os registros em grupos. Se você clicar com o botão direito na janela **Registros**, verá um menu de atalho contendo uma lista de grupos que você pode exibir ou ocultar como achar melhor.
 
-## <a name="register-flags"></a>Sinalizadores de registro
+## <a name="register-flags"></a>Registrar sinalizadores
 
-Para os processadores Intel x86, você poderá ver os seguintes sinalizadores na **registra** janela. Durante uma sessão de depuração, você também pode editar esses sinalizadores.
+Para processadores Intel x86, você pode ver os seguintes sinalizadores na janela de **registros** . Durante uma sessão de depuração, você também pode editar esses sinalizadores.
 
-|Sinalizador|Definir o valor|
+|Sinalizador|Definir valor|
 |-|-|
 |Estouro|OV = 1|
-|Direção|UP = 1|
-|Interrupção|EI = 1|
-|logon|PL = 1|
+|Direção|PARA CIMA = 1|
+|Atividades|EI = 1|
+|Assine|PL = 1|
 |Zero|ZR = 1|
-|Carry auxiliar|AC = 1|
+|Transporte auxiliar|AC = 1|
 |Paridade|PE = 1|
-|Executar|CY = 1|
+|Levam|CY = 1|
 
 ## <a name="see-also"></a>Consulte também
-- [Como: Usar a janela Registros](../debugger/how-to-use-the-registers-window.md)
+- [Como usar a janela Registros](../debugger/how-to-use-the-registers-window.md)
 - [Introdução ao depurador](../debugger/debugger-feature-tour.md)

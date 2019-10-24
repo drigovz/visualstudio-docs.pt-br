@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c5df2098c4859205ef07648c214f43b74e53673d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 414e065cd9e772e74c573b51bf52f11bcb987b6d
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62828510"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743420"
 ---
-# <a name="idiaimagedatagetvirtualaddress"></a>IDiaImageData::get_virtualAddress
+# <a name="idiaimagedataget_virtualaddress"></a>IDiaImageData::get_virtualAddress
 Recupera o local na memória virtual da imagem.
 
 ## <a name="syntax"></a>Sintaxe
@@ -33,9 +33,9 @@ HRESULT get_virtualAddress ( 
 #### <a name="parameters"></a>Parâmetros
  `pRetVal`
 
-[out] Retorna o endereço virtual da imagem.
+fora Retorna o endereço virtual da imagem.
 
-## <a name="return-value"></a>Valor de retorno
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
 
 ## <a name="see-also"></a>Consulte também

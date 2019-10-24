@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_acceleratorPointerTags | Microsoft Docs
+title: 'IDiaSymbol:: get_acceleratorPointerTags | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c1724ee3e81ac00ed048f323105842361ec22bc7
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: f36b4bf9fdd362f4941e33745d59d481a473c607
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62827288"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741111"
 ---
-# <a name="idiasymbolgetacceleratorpointertags"></a>IDiaSymbol::get_acceleratorPointerTags
-Retorna todos os valores de marca de ponteiro de acelerador que correspondem a uma função de stub do acelerador de C++ AMP.
+# <a name="idiasymbolget_acceleratorpointertags"></a>IDiaSymbol::get_acceleratorPointerTags
+Retorna todos os valores de marca do ponteiro de aceleração que correspondem a uma função de C++ stub do amp Accelerator.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -32,21 +32,21 @@ HRESULT get_acceleratorPointerTags(
 #### <a name="parameters"></a>Parâmetros
  `cnt`
 
-[in] O tamanho da matriz de saída `pPointerTags`.
+no O tamanho da matriz de saída `pPointerTags`.
 
  `pcnt`
 
-[out] A contagem de marcas de ponteiro de acelerador no C++ função de stub do acelerador de AMP.
+fora A contagem de marcas do ponteiro do acelerador na função de stub do C++ acelerador de amp.
 
  `pPointerTags`
 
-[out] Um `DWORD` ponteiro de matriz é preenchido com os valores de marca de ponteiro acelerador no C++ função de stub do acelerador de AMP.
+fora Um ponteiro de matriz `DWORD` que é preenchido com os valores de marca do ponteiro C++ de acelerador na função de stub do acelerador de amp.
 
-## <a name="return-value"></a>Valor de retorno
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE` ou um código de erro.
 
 ## <a name="remarks"></a>Comentários
- Esse método é chamado em um `IDiaSymbol` interface que corresponde a uma função de stub do acelerador de C++ AMP.
+ Esse método é chamado em uma interface `IDiaSymbol` que corresponde a uma C++ função de stub do amp Accelerator.
 
 ## <a name="see-also"></a>Consulte também
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

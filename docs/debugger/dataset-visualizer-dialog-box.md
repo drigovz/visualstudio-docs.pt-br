@@ -1,5 +1,5 @@
 ---
-title: Caixa de diálogo Visualizador de conjunto de dados | Microsoft Docs
+title: Caixa de diálogo Visualizador de conjuntos de conjunto | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e4086c473270befcf2213f003e516128b45c4227
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1e215d4a52965b4e89bc3a01b15da57fc8919437
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62563540"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745595"
 ---
 # <a name="dataset-visualizer-dialog-box"></a>Caixa de diálogo Visualizador do Conjunto de Dados
 O Visualizador de DataSet permite que você exiba o conteúdo de um objeto de DataSet, DataTable, DataView ou DataViewManager. Você pode acessar esse visualizador clicando no ícone de lupa que aparece ao lado do valor para um desses objetos em uma janela de variáveis do depurador ou em um DataTip.
@@ -32,7 +32,7 @@ O Visualizador de DataSet permite que você exiba o conteúdo de um objeto de Da
  Você pode fazer alterações nos objetos neste visualizador. As alterações serão salvas assim que você confirmar uma linha.
 
 ## <a name="uielement-list"></a>Lista UIElement
- Tabela Use essa caixa de listagem suspensa para selecionar uma tabela no conjunto de dados que você deseja visualizar.
+ Tabela Use esta caixa de listagem suspensa para selecionar uma tabela dentro do conjunto de um que você deseja visualizar.
 
 ## <a name="see-also"></a>Consulte também
 

@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: d15a176fb378159407589af0b720d8310de8e29c
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: d12c9848409f57b16c733b587edff193311bcfdd
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72450407"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72732272"
 ---
 # <a name="how-to-trigger-suspend-resume-and-background-events-while-debugging-uwp-apps-in-visual-studio"></a>Como disparar eventos de suspensão, retomada e segundo plano durante a depuração de aplicativos UWP no Visual Studio
 
@@ -105,7 +105,7 @@ Para obter mais informações sobre o gerenciamento de tempo de vida de processo
 
 2. No painel **Ações**, escolha **Exibir** e verifique se **Mostrar logs analíticos e de depuração** está marcado.
 
-3. Na árvore **Visualizador de eventos (local)** , expanda os nós **aplicativos e Logs de serviços**@no__t-**2 Microsoft** > **Windows** > **BackgroundTasksInfrastructure**.
+3. Na árvore **Visualizador de eventos (local)** , expanda os **logs aplicativos e serviços**  > **Microsoft**  > **Windows**  > **BackgroundTasksInfrastructure**.
 
 4. Escolha o log **Diagnóstico**.
 

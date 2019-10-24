@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 353e7dcbe1bcc44b9e8b7e9c7c417913ef07be35
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0ca58a206fec15bb8a9ae7f68a278a4530be47d8
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62828419"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743035"
 ---
 # <a name="idialoadcallback"></a>IDiaLoadCallback
-Receber retornos de chamada do símbolo de DIA de localizar o procedimento, permitindo que uma interface do usuário relatar o progresso da tentativa de local.
+Recebe retornos de chamada do procedimento de localização de símbolo de DIA, permitindo assim que uma interface do usuário relate o progresso da tentativa de localização.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -28,26 +28,26 @@ Receber retornos de chamada do símbolo de DIA de localizar o procedimento, perm
 IDiaLoadCallback : IUnknown
 ```
 
-## <a name="methods-in-vtable-order"></a>Métodos na ordem de Vtable
- Os métodos a seguir são expostos por esta interface:
+## <a name="methods-in-vtable-order"></a>Métodos em ordem vtable
+ Os métodos a seguir são expostos por essa interface:
 
 |Método|Descrição|
 |------------|-----------------|
-|[IDiaLoadCallback::NotifyDebugDir](../../debugger/debug-interface-access/idialoadcallback-notifydebugdir.md)|Chamado quando um diretório de depuração foi encontrado no arquivo .exe.|
-|[IDiaLoadCallback::NotifyOpenDBG](../../debugger/debug-interface-access/idialoadcallback-notifyopendbg.md)|Chamado quando um arquivo do candidato. dbg foi aberto.|
-|[IDiaLoadCallback::NotifyOpenPDB](../../debugger/debug-interface-access/idialoadcallback-notifyopenpdb.md)|Chamado quando um arquivo. PDB do candidato é aberto.|
-|[IDiaLoadCallback::RestrictRegistryAccess](../../debugger/debug-interface-access/idialoadcallback-restrictregistryaccess.md)|Determina se as consultas de registro podem ser usadas para localizar caminhos de pesquisa do símbolo.|
+|[IDiaLoadCallback::NotifyDebugDir](../../debugger/debug-interface-access/idialoadcallback-notifydebugdir.md)|Chamado quando um diretório de depuração foi encontrado no arquivo. exe.|
+|[IDiaLoadCallback::NotifyOpenDBG](../../debugger/debug-interface-access/idialoadcallback-notifyopendbg.md)|Chamado quando um arquivo Candidate. dbg é aberto.|
+|[IDiaLoadCallback::NotifyOpenPDB](../../debugger/debug-interface-access/idialoadcallback-notifyopenpdb.md)|Chamado quando um arquivo Candidate. pdb é aberto.|
+|[IDiaLoadCallback::RestrictRegistryAccess](../../debugger/debug-interface-access/idialoadcallback-restrictregistryaccess.md)|Determina se as consultas do registro podem ser usadas para localizar caminhos de pesquisa de símbolos.|
 |[IDiaLoadCallback::RestrictSymbolServerAccess](../../debugger/debug-interface-access/idialoadcallback-restrictsymbolserveraccess.md)|Determina se o acesso é permitido para um servidor de símbolos para resolver símbolos.|
 
 ## <a name="remarks"></a>Comentários
- O aplicativo cliente implementa essa interface e fornece uma referência a ele na chamada para o [idiadatasource:: Loaddataforexe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) método.
+ O aplicativo cliente implementa essa interface e fornece uma referência a ela na chamada para o método [IDiaDataSource:: loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) .
 
- Para obter restrições adicionais que podem ser impostas em um processo de carregamento, consulte o [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md) interface.
+ Para obter restrições adicionais que podem ser impostas em um processo de carregamento, consulte a interface [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md) .
 
 ## <a name="requirements"></a>Requisitos
- Cabeçalho: Dia2.h
+ Cabeçalho: dia2. h
 
- Biblioteca: diaguids.lib
+ Biblioteca: diaguids. lib
 
  DLL: msdia80.dll
 

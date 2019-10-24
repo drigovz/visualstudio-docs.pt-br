@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c8bf20f43fcc8da48a6e1ec1dfd0f65b14f8ad86
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: bd5a24a136bb9c04366449a91d825ddbecff2957
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62836896"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740319"
 ---
-# <a name="idiasymbolgetisacceleratorpointertagliverange"></a>IDiaSymbol::get_isAcceleratorPointerTagLiveRange
-Recupera um sinalizador que indica se o símbolo corresponde para o *símbolo de intervalo de definição* para o componente de marca de uma variável de ponteiro no código compilado para um acelerador do C++ AMP. O símbolo de intervalo de definição é o local de uma variável para um intervalo de endereços.
+# <a name="idiasymbolget_isacceleratorpointertagliverange"></a>IDiaSymbol::get_isAcceleratorPointerTagLiveRange
+Recupera um sinalizador que indica se o símbolo corresponde ao *símbolo de intervalo de definição* para o componente de marca de uma variável de ponteiro no código C++ compilado para um acelerador de amp. O símbolo de intervalo de definição é o local de uma variável para um intervalo de endereços.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -30,9 +30,9 @@ HRESULT get_isAcceleratorPointerTagLiveRange(
 #### <a name="parameters"></a>Parâmetros
  `pFlag`
 
-[out] Um ponteiro para um `BOOL` que indica se o símbolo corresponde para o símbolo de intervalo de definição.
+fora Um ponteiro para um `BOOL` que indica se o símbolo corresponde ao símbolo de intervalo de definição.
 
-## <a name="return-value"></a>Valor de retorno
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE` ou um código de erro.
 
 ## <a name="see-also"></a>Consulte também

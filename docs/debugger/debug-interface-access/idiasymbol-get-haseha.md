@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 95df7b4a5783ce858a4c3c13352ae9140f40f201
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 6f010fee3243a9ce202451fc9cc5cff1ed908118
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64826905"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740525"
 ---
-# <a name="idiasymbolgethaseha"></a>IDiaSymbol::get_hasEHa
-Recupera um sinalizador que especifica se a função contém o tratamento de exceções assíncronas de (estruturada).
+# <a name="idiasymbolget_haseha"></a>IDiaSymbol::get_hasEHa
+Recupera um sinalizador que especifica se a função contém manipulação de exceção assíncrona (estruturada).
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -33,23 +33,23 @@ HRESULT get_hasEHa(
 #### <a name="parameters"></a>Parâmetros
  `pFlag`
 
-[out] Retorna `TRUE` se a função tiver qualquer manipulação de exceção assíncrona; caso contrário, retornará `FALSE`.
+fora Retorna `TRUE` se a função tiver qualquer manipulação de exceção assíncrona; caso contrário, retorna `FALSE`.
 
-## <a name="return-value"></a>Valor de retorno
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE` ou um código de erro.
 
 > [!NOTE]
-> Um valor de retorno `S_FALSE` significa que a propriedade não está disponível para o símbolo.
+> Um valor de retorno de `S_FALSE` significa que a propriedade não está disponível para o símbolo.
 
 ## <a name="remarks"></a>Comentários
- É possível misturar assíncrona ou não estruturadas tratamento de exceções com manipulação de exceção de estilo C++, mas ela requer uma opção de compilador específica, /EHa, para habilitá-lo.
+ É possível misturar a manipulação de exceção assíncrona ou estruturada com C++manipulação de exceção de estilo, mas requer uma opção de compilador específica,/EHA, para habilitá-la.
 
 ## <a name="requirements"></a>Requisitos
 
 |Requisito|Descrição|
 |-----------------|-----------------|
 |Cabeçalho:|dia2.h|
-|Versão:|V DIA SDK 8.0|
+|Versão:|DIA SDK v 8.0|
 
 ## <a name="see-also"></a>Consulte também
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

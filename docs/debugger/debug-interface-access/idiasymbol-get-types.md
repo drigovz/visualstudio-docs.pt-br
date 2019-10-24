@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 19642e6875e81220cb20109ce45e8dca40777a63
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 6d23ea3c4d885b3f7575c998999814d0808d03bc
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64786565"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739063"
 ---
-# <a name="idiasymbolgettypes"></a>IDiaSymbol::get_types
-Recupera uma matriz de tipos específicos do compilador para esse símbolo.
+# <a name="idiasymbolget_types"></a>IDiaSymbol::get_types
+Recupera uma matriz de tipos específicos do compilador para este símbolo.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -35,21 +35,21 @@ HRESULT get_types ( 
 #### <a name="parameters"></a>Parâmetros
  `cTypes`
 
-[in] Tamanho do buffer para manter os dados.
+no Tamanho do buffer para armazenar os dados.
 
  `pcTypes`
 
-[out] Retorna o número de tipos escritos, ou, se o `types` parâmetro é `NULL`, em seguida, o número total de tipos disponíveis.
+fora Retorna o número de tipos gravados ou, se o parâmetro `types` for `NULL`, o número total de tipos disponíveis.
 
  `types[]`
 
-[out] Uma matriz que deve ser preenchido com o [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) objetos que representam todos os tipos para esse símbolo.
+fora Uma matriz que deve ser preenchida com os objetos [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) que representam todos os tipos desse símbolo.
 
-## <a name="return-value"></a>Valor de retorno
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE` ou um código de erro.
 
 > [!NOTE]
-> Um valor de retorno `S_FALSE` significa que a propriedade não está disponível para o símbolo.
+> Um valor de retorno de `S_FALSE` significa que a propriedade não está disponível para o símbolo.
 
 ## <a name="see-also"></a>Consulte também
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

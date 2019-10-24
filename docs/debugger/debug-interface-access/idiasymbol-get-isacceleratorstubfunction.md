@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bbcfbfcd1e95a45388d0b7c0626f1cd529607ce4
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: baf71d3be8916c18b16e4022a2af884617b5fd70
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62836623"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740311"
 ---
-# <a name="idiasymbolgetisacceleratorstubfunction"></a>IDiaSymbol::get_isAcceleratorStubFunction
-Indica se o símbolo corresponde a um símbolo de função de nível superior para um sombreador compilado em um acelerador que corresponde a um `parallel_for_each` chamar.
+# <a name="idiasymbolget_isacceleratorstubfunction"></a>IDiaSymbol::get_isAcceleratorStubFunction
+Indica se o símbolo corresponde a um símbolo de função de nível superior para um sombreador compilado para um acelerador que corresponde a uma chamada de `parallel_for_each`.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -30,9 +30,9 @@ HRESULT get_isAcceleratorStubFunction(
 #### <a name="parameters"></a>Parâmetros
  `pFlag`
 
-[out] Um ponteiro para um `BOOL` que indica se o símbolo corresponde a um símbolo de função de nível superior para um sombreador compilado em um acelerador que corresponde a um `parallel_for_each` chamar.
+fora Um ponteiro para um `BOOL` que indica se o símbolo corresponde a um símbolo de função de nível superior para um sombreador compilado para um acelerador que corresponde a uma chamada de `parallel_for_each`.
 
-## <a name="return-value"></a>Valor de retorno
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE` ou um código de erro.
 
 ## <a name="see-also"></a>Consulte também

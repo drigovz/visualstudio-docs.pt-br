@@ -10,14 +10,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b0fa2172d1a56fb7b4730a51959c0b73bdfc9461
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: a87f6e6ea3118aa7c278bc83a69a290176b267c9
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62835899"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739326"
 ---
-# <a name="idiasymbolgetsizeinudt"></a>IDiaSymbol::get_sizeInUdt
+# <a name="idiasymbolget_sizeinudt"></a>IDiaSymbol::get_sizeInUdt
 Recupera o tamanho de um membro de um tipo definido pelo usuário.
 
 ## <a name="syntax"></a>Sintaxe
@@ -30,9 +30,9 @@ HRESULT get_sizeInUdt(
 #### <a name="parameters"></a>Parâmetros
  `pRetVal`
 
-[out] Um ponteiro para um `DWORD` que especifica o tamanho do membro.
+fora Um ponteiro para um `DWORD` que especifica o tamanho do membro.
 
-## <a name="return-value"></a>Valor de retorno
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE` ou um código de erro.
 
 ## <a name="see-also"></a>Consulte também

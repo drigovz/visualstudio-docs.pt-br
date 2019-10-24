@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c42cdfc5c3f3c0267fdcbdfca8ddc4bb30663384
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 872f7c594344af2c59ebe7f8d1fbd1a640dd2190
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68924533"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72728823"
 ---
 # <a name="unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor"></a>Não foi possível se conectar ao Monitor de Depuração Remota do Microsoft Visual Studio
 Essa mensagem pode ocorrer porque o monitor de depuração remota não está configurado corretamente no computador remoto ou o computador remoto está inacessível devido a problemas de rede ou à presença de um firewall.
@@ -111,7 +111,7 @@ Isso pode ser um problema herdado específico do Windows XP e do Windows 7. Cons
 
 ### <a name="dns"></a>O computador remoto não está acessível
 
-Se você não puder se conectar usando o nome do computador remoto, tente usar o endereço IP em vez disso. Você pode usar `ipconfig` o em uma linha de comando no computador remoto para obter o endereço IPv4. Se você estiver usando um arquivo de HOSTs, verifique se ele está configurado corretamente.
+Se você não puder se conectar usando o nome do computador remoto, tente usar o endereço IP em vez disso. Você pode usar `ipconfig` em uma linha de comando no computador remoto para obter o endereço IPv4. Se você estiver usando um arquivo de HOSTs, verifique se ele está configurado corretamente.
 
 Se isso falhar, verifique se o computador remoto está acessível na rede ([execute ping](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee624059(v=ws.10)) no computador remoto). Não há suporte para a depuração remota pela Internet, exceto em alguns cenários de Microsoft Azure.
 
@@ -137,12 +137,12 @@ Você pode resolver isso de uma das seguintes maneiras:
     > [!NOTE]
     > Se você estiver executando o depurador remoto em um servidor remoto, clique com o botão direito do mouse no aplicativo do depurador remoto e escolha **Executar como administrador** (ou, você pode executar o depurador remoto como um serviço). Se você não o estiver executando em um servidor remoto, basta iniciá-lo normalmente.
 
-- Você pode iniciar o depurador remoto a partir da linha de comando com o parâmetro de nome `msvsmon /allow <username@computer>`de  **\<usuário/Allow >** :.
+- Você pode iniciar o depurador remoto a partir da linha de comando com o parâmetro **/allow \<username >** : `msvsmon /allow <username@computer>`.
 
 - Como alternativa, você pode permitir que qualquer usuário faça a depuração remota. Na janela depurador remoto, vá para a caixa de diálogo **ferramentas > opções** . Quando você **não seleciona nenhuma autenticação**, pode então verificar **permitir que qualquer usuário depure**. No entanto, você deve tentar esta opção somente se as outras opções falharem ou se você estiver em uma rede privada.
 
 ### <a name="firewall"></a>O firewall no computador remoto não permite conexões de entrada para o depurador remoto
- O firewall no computador do Visual Studio e o firewall no computador remoto devem ser configurados para permitir a comunicação entre o Visual Studio e o depurador remoto. Para obter informações sobre as portas que o depurador remoto está usando, consulte atribuições de [porta do depurador remoto](../debugger/remote-debugger-port-assignments.md). Para obter informações sobre como configurar o Firewall do Windows, consulte [Configurar o Firewall do Windows para depuração remota](../debugger/configure-the-windows-firewall-for-remote-debugging.md).
+ O firewall no computador do Visual Studio e o firewall no computador remoto devem ser configurados para permitir a comunicação entre o Visual Studio e o depurador remoto. Para obter informações sobre as portas que o depurador remoto está usando, consulte [atribuições de porta do depurador remoto](../debugger/remote-debugger-port-assignments.md). Para obter informações sobre como configurar o Firewall do Windows, consulte [Configurar o Firewall do Windows para depuração remota](../debugger/configure-the-windows-firewall-for-remote-debugging.md).
 
 ### <a name="the-version-of-the-remote-debugger-doesnt-match-the-version-of-visual-studio"></a>A versão do depurador remoto não corresponde à versão do Visual Studio
  A versão do Visual Studio que você está executando localmente precisa corresponder à versão do monitor de depuração remota em execução no computador remoto. Para corrigir isso, baixe e instale a versão correspondente do monitor de depuração remota. Para obter a versão correta do depurador remoto, consulte [depuração remota](../debugger/remote-debugging.md).

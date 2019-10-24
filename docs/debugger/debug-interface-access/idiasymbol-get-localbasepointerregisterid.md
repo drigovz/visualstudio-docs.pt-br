@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f2c556d67ca8823ce54da19de51c934181465807
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 5f9ad47a37c2d9306cc4f087719bfef7a52be308
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64803580"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739880"
 ---
-# <a name="idiasymbolgetlocalbasepointerregisterid"></a>IDiaSymbol::get_localBasePointerRegisterId
-Recupera a ID do registro que contém um ponteiro de base para as variáveis locais na pilha. Usado quando o [enumeração SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) é definido como `SymTagFunction`.
+# <a name="idiasymbolget_localbasepointerregisterid"></a>IDiaSymbol::get_localBasePointerRegisterId
+Recupera a ID do registro que contém um ponteiro de base para variáveis locais na pilha. Use quando a [Enumeração SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) for definida como `SymTagFunction`.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -33,20 +33,20 @@ HRESULT get_localBasePointerRegisterId ( 
 #### <a name="parameters"></a>Parâmetros
  `pRetVal`
 
-[out] Retorna a ID do registro que contém um ponteiro de base para as variáveis locais na pilha.
+fora Retorna a ID do registro que contém um ponteiro de base para variáveis locais na pilha.
 
-## <a name="return-value"></a>Valor de retorno
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE` ou um código de erro.
 
 > [!NOTE]
-> Um valor de retorno `S_FALSE` significa que a propriedade não está disponível para o símbolo.
+> Um valor de retorno de `S_FALSE` significa que a propriedade não está disponível para o símbolo.
 
 ## <a name="remarks"></a>Comentários
 
 ## <a name="requirements"></a>Requisitos
- Cabeçalho: Dia2.h
+ Cabeçalho: dia2. h
 
- Biblioteca: diaguids.lib
+ Biblioteca: diaguids. lib
 
  DLL: msdia100.dll
 

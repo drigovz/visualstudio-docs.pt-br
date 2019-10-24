@@ -9,12 +9,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ccb6e8d938bbb807211d0d555294c94948705240
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 70e58883e671dea242e0c69aee0ce6cf8b911371
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653870"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747592"
 ---
 # <a name="develop-tests-from-a-model"></a>Desenvolver testes por meio de um modelo
 Você pode usar requisitos e modelos arquitetônicos para ajudá-lo a organizar os testes do seu sistema e seus componentes. Essa prática ajuda a garantir que você teste os requisitos que são importantes para os usuários e outros participantes e ajuda a atualizar os testes rapidamente quando os requisitos mudam. Se você usar [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)], também poderá manter links entre os modelos e os testes.

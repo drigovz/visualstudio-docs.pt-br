@@ -8,15 +8,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8165b2e1993a6ea52127536a058f662e1a3d92cc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ef809b646a0af58e46b8c68dc5a8cf7633692bcc
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62848725"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72734815"
 ---
 # <a name="uninit"></a>UnInit
-Finaliza o arquivo de log de gráficos, fecha e libera os recursos que foram usados enquanto o aplicativo ativamente estava gravando informações de gráficos.
+Finaliza o arquivo de log de gráficos, fecha-o e libera os recursos que foram usados enquanto o aplicativo gravava informações gráficas ativamente.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -25,9 +25,9 @@ void UnInit();
 ```
 
 ## <a name="remarks"></a>Comentários
- `UnInit` é chamado automaticamente quando uma instância da `VsgDbg` classe seja destruída. Se o `VsgDbg` instância não estava gravando ativamente informações de gráficos, isso não tem nenhum efeito.
+ `UnInit` é chamado automaticamente quando uma instância da classe `VsgDbg` é destruída. Se a instância de `VsgDbg` não estiver gravando ativamente as informações gráficas, isso não terá efeito.
 
- Após `UnInit` foi chamado em uma instância da `VsgDbg` classe, uma gráfico novo arquivo de log pode ser criado chamando `Init` e finalização, chamando `UnInit`. Você pode repetir isso quantas vezes você deseja usar o mesmo `VsgDbg` instância para criar gráficos independentes de vários arquivos de log.
+ Depois que `UnInit` tiver sido chamado em uma instância da classe `VsgDbg`, um novo arquivo de log de gráficos poderá ser criado chamando `Init` e finalizado chamando `UnInit`. Você pode repetir isso quantas vezes quiser usar a mesma instância de `VsgDbg` para criar vários arquivos de log de gráficos independentes.
 
 ## <a name="see-also"></a>Consulte também
 - [Init](init.md)

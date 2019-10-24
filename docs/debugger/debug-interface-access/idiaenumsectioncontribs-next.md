@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e8fd088ff6be619de56f27f91b198aed18e428c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 61d99b0c881abdb8974e94352911ae3234c440c1
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62829778"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744270"
 ---
 # <a name="idiaenumsectioncontribsnext"></a>IDiaEnumSectionContribs::Next
 Recupera um número especificado de contribuições de seção na sequência de enumeração.
@@ -35,18 +35,18 @@ HRESULT Next( 
 #### <a name="parameters"></a>Parâmetros
  celt
 
-[in] O número de contribuições de seção do enumerador a ser recuperado.
+no O número de contribuições de seção no enumerador a ser recuperado.
 
  rgelt
 
-[out] Uma matriz que deve ser preenchido com o [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md) objetos que representam as contribuições de seção desejado.
+fora Uma matriz que deve ser preenchida com os objetos [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md) que representam as contribuições de seção desejadas.
 
  pceltFetched
 
-[out] Retorna o número de contribuições de seção do enumerador buscada.
+fora Retorna o número de contribuições de seção no enumerador buscado.
 
-## <a name="return-value"></a>Valor de retorno
- Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não houver nenhum mais contribuições de seção. Caso contrário, retornará um código de erro.
+## <a name="return-value"></a>Valor retornado
+ Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não houver mais contribuições de seção. Caso contrário, retornará um código de erro.
 
 ## <a name="see-also"></a>Consulte também
 - [IDiaEnumSectionContribs](../../debugger/debug-interface-access/idiaenumsectioncontribs.md)

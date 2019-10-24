@@ -10,18 +10,18 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: be793e5cc4db30fa410e0218a7f780b6c2826838
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 4f1e1479232a684758359de7527f0c2fc9990cc7
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66324591"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72722092"
 ---
 # <a name="using-the-automation-model"></a>Usando o modelo de automação
-Depois que você conectou o VSPackage automação, você pode obter as propriedades e métodos chamando o <xref:EnvDTE.DTEClass.GetObject%2A> método no <xref:EnvDTE._DTE> objeto, passando uma cadeia de caracteres que representa o objeto que você deseja recuperar.
+Depois de conectar o VSPackage à automação, você pode obter as propriedades e os métodos chamando o método <xref:EnvDTE.DTEClass.GetObject%2A> no objeto <xref:EnvDTE._DTE>, passando uma cadeia de caracteres que representa o objeto que você deseja recuperar.
 
 ## <a name="obtaining-project-objects"></a>Obtendo objetos do projeto
- A seguir estão dois exemplos de código que mostram como um consumidor de automação obtém o projeto de objetos de automação. Para obter informações sobre como obter o objeto DTE, consulte [como: Obter referências para os objetos DTE e DTE2](https://msdn.microsoft.com/Library/c92e3c8e-82e6-4a67-85da-e43c50ffd8e4).
+ A seguir estão dois exemplos de código que mostram como um consumidor de automação Obtém os objetos de automação do projeto. Para obter informações sobre como obter o objeto DTE, consulte [como: obter referências aos objetos DTE e DTE2](https://msdn.microsoft.com/Library/c92e3c8e-82e6-4a67-85da-e43c50ffd8e4).
 
 ```vb
 Sub DoAutomation()
@@ -58,7 +58,7 @@ objMyObject = MyPrj.Object 'You call .Object to get to special Project
 objMyObject.MySpecialMethodOrProperty
 ```
 
- O código a seguir lista os nomes de todas as propriedades na [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ambiente **gerais** opção o **ferramentas** menu:
+ O código a seguir lista os nomes de todas as propriedades na opção [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ambiente **geral** no menu **ferramentas** :
 
 ```vb
 dim objDTE

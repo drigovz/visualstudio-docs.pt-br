@@ -1,5 +1,5 @@
 ---
-title: 'Aviso: Depuração de script desabilitada | Microsoft Docs'
+title: 'Aviso: depuração de script desabilitada | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -15,14 +15,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 50fe457e2b66a4c1ddafc9fc24658f58f6f753d2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 91875a370f6d072cf2dd69807f516b8f1a808461
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62901017"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72728208"
 ---
-# <a name="warning-script-debugging-disabled"></a>Aviso: Depuração de script desabilitada
+# <a name="warning-script-debugging-disabled"></a>Aviso: depuração de script desabilitada
 A depuração de scripts está atualmente desabilitada no Internet Explorer
 
  Esse aviso ocorre quando você tenta depurar o script sem habilitar a depuração de scripts no Internet Explorer. Por razões de segurança, o Internet Explorer desabilita a depuração de scripts por padrão.
@@ -35,7 +35,7 @@ A depuração de scripts está atualmente desabilitada no Internet Explorer
 
 3. Na guia **Avançado**, examine a caixa **Configurações**, categoria **Navegação**.
 
-4. Limpe **Desabilitar depuração de scripts (Internet Explorer)**.
+4. Limpe **Desabilitar depuração de scripts (Internet Explorer)** .
 
 5. Clique em **OK**.
 
@@ -44,4 +44,4 @@ A depuração de scripts está atualmente desabilitada no Internet Explorer
      As novas configurações serão aplicadas.
 
 ## <a name="see-also"></a>Consulte também
-- [Como: Anexar ao script](../debugger/how-to-attach-to-script.md)
+- [Como anexar ao script](../debugger/how-to-attach-to-script.md)

@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cb62d8588fdbf439508eed3e5b2cc81a840b9f3d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c43c1d4b3b6a59f6601684fe20e238782448decb
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62828684"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743165"
 ---
-# <a name="idialinenumbergetlinenumberend"></a>IDiaLineNumber::get_lineNumberEnd
-Recupera o número de linha de código-fonte baseado em um em que a instrução ou expressão termina.
+# <a name="idialinenumberget_linenumberend"></a>IDiaLineNumber::get_lineNumberEnd
+Recupera o número de linha de origem baseado em um onde a instrução ou expressão termina.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -33,10 +33,10 @@ HRESULT get_lineNumberEnd ( 
 #### <a name="parameters"></a>Parâmetros
  `pRetVal`
 
-[out] Retorna o número de linha em que a instrução ou expressão termina. Se o valor for zero, as informações de término não estão presentes.
+fora Retorna o número de linha onde a instrução ou a expressão termina. Se o valor for zero, as informações finais não estão presentes.
 
-## <a name="return-value"></a>Valor de retorno
- Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não há suporte para essa propriedade. Caso contrário, retornará um código de erro.
+## <a name="return-value"></a>Valor retornado
+ Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não houver suporte para essa propriedade. Caso contrário, retornará um código de erro.
 
 ## <a name="see-also"></a>Consulte também
 - [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

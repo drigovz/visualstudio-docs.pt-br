@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c6419153777b5af071b59b6b7888c4f18f228b1
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 36dfed97fb8abd30f97c4068da94148715cae5c7
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64830577"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740850"
 ---
-# <a name="idiasymbolgetclassparent"></a>IDiaSymbol::get_classParent
-Recupera uma referência para o pai da classe do símbolo.
+# <a name="idiasymbolget_classparent"></a>IDiaSymbol::get_classParent
+Recupera uma referência para a classe pai do símbolo.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -33,23 +33,23 @@ HRESULT get_classParent ( 
 #### <a name="parameters"></a>Parâmetros
  `pRetVal`
 
-[out] Retorna um [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) objeto que representa o pai da classe do símbolo.
+fora Retorna um objeto [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) que representa a classe pai do símbolo.
 
-## <a name="return-value"></a>Valor de retorno
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE` ou um código de erro.
 
 > [!NOTE]
-> Um valor de retorno `S_FALSE` significa que a propriedade não está disponível para o símbolo.
+> Um valor de retorno de `S_FALSE` significa que a propriedade não está disponível para o símbolo.
 
 ## <a name="requirements"></a>Requisitos
 
 |Requisito|Descrição|
 |-----------------|-----------------|
 |Cabeçalho:|dia2.h|
-|Versão:|DIA SDK v7.0|
+|Versão:|DIA SDK v 7.0|
 
 ## <a name="remarks"></a>Comentários
- Os tipos de símbolos que podem ser os pais de classe estão documentados em [hierarquia de classe de tipos de símbolo](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md).
+ Os tipos de símbolos que podem ser pais de classe são documentados na [hierarquia de classes de tipos de símbolo](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md).
 
 ## <a name="see-also"></a>Consulte também
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

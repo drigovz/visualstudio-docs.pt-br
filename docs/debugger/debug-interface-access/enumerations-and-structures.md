@@ -15,16 +15,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b8a38138b5688d0c6573b18f3b0d875abcf627c2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6769af8a417c111de6c8dfc68cd7cda548eaa24c
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62554929"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745218"
 ---
 # <a name="enumerations-and-structures"></a>Enumerações e estruturas
 
-Essas são as enumerações e estruturas usadas pelo SDK do DIA.
+Essas são as enumerações e estruturas usadas pelo DIA SDK.
 
 ## <a name="in-this-section"></a>Nesta seção
 
@@ -36,15 +36,15 @@ Essas são as enumerações e estruturas usadas pelo SDK do DIA.
 
 - [Enumeração CV_access_e](../../debugger/debug-interface-access/cv-access-e.md)
 
- Especifica o escopo de visibilidade (nível de acesso) de funções de membro e variáveis.
+ Especifica o escopo de visibilidade (nível de acesso) de funções e variáveis de membro.
 
 - [Enumeração CV_call_e](../../debugger/debug-interface-access/cv-call-e.md)
 
- Especifica a convenção de chamada para uma função.
+ Especifica a Convenção de chamada para uma função.
 
 - [Enumeração CV_CFL_LANG](../../debugger/debug-interface-access/cv-cfl-lang.md)
 
- Especifica a linguagem de código fonte do aplicativo ou módulo vinculado.
+ Especifica o idioma do código-fonte do aplicativo ou módulo vinculado.
 
 - [Enumeração CV_CPU_TYPE_e](../../debugger/debug-interface-access/cv-cpu-type-e.md)
 
@@ -60,15 +60,15 @@ Essas são as enumerações e estruturas usadas pelo SDK do DIA.
 
 - [Enumeração LocationType](../../debugger/debug-interface-access/locationtype.md)
 
- Indica o tipo de informações de localização contidas em um símbolo.
+ Indica o tipo de informações de local contidas em um símbolo.
 
 - [Enumeração MemoryTypeEnum](../../debugger/debug-interface-access/memorytypeenum.md)
 
- Especifica o tipo de memória para acessar.
+ Especifica o tipo de memória a ser acessado.
 
 - [Enumeração NameSearchOptions](../../debugger/debug-interface-access/namesearchoptions.md)
 
- Especifica as opções de pesquisa para nomes de arquivo e símbolos.
+ Especifica as opções de pesquisa para nomes de arquivo e símbolo.
 
 - [Enumeração StackFrameTypeEnum](../../debugger/debug-interface-access/stackframetypeenum.md)
 
@@ -76,31 +76,31 @@ Essas são as enumerações e estruturas usadas pelo SDK do DIA.
 
 - [Enumeração SymTagEnum](../../debugger/debug-interface-access/symtagenum.md)
 
- Especifica o tipo do símbolo.
+ Especifica o tipo de símbolo.
 
 - [Enumeração THUNK_ORDINAL](../../debugger/debug-interface-access/thunk-ordinal.md)
 
- Designa os tipos de conversão.
+ Designa tipos de conversão.
 
 - [Enumeração UdtKind](../../debugger/debug-interface-access/udtkind.md)
 
- Descreve a variedade de tipo definido pelo usuário (UDT).
+ Descreve a variedade de UDT (tipo definido pelo usuário).
 
 ### <a name="structures"></a>Estruturas
 
 [Estrutura DiaAddressMapEntry](../../debugger/debug-interface-access/diaaddressmapentry.md)
 
-Descreve uma entrada em um mapa de endereço.
+Descreve uma entrada em um mapa de endereços.
 
 ### <a name="related-sections"></a>Seções relacionadas
 
 [Interfaces (SDK de Acesso à Interface de Depuração)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
 
-Especifica as interfaces fornecidas pelo SDK do DIA.
+Especifica as interfaces fornecidas pelo DIA SDK.
 
 [Constantes (SDK de Acesso à Interface de Depuração)](../../debugger/debug-interface-access/constants-debug-interface-access-sdk.md)
 
-Especifica as constantes que estão disponíveis no SDK do DIA.
+Especifica as constantes que estão disponíveis no DIA SDK.
 
 ## <a name="see-also"></a>Consulte também
 

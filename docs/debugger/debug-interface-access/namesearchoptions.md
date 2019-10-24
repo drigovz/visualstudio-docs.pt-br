@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f9c2b06e8d89405b38afe2b740ce860a78bc46cc
-ms.sourcegitcommit: 044bb54cb4552c8f4651feb11d62e52726117e75
+ms.openlocfilehash: 61905c0c6c40d893cc8723b711d67690133a7155
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68661829"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738621"
 ---
 # <a name="namesearchoptions"></a>NameSearchOptions
 Especifica as opções de pesquisa para nomes de arquivo e símbolo.
@@ -45,15 +45,15 @@ enum NameSearchOptions {
 ## <a name="elements"></a>Elementos
 `nsNone` Nenhuma opção foi especificada.
 
-`nsfCaseSensitive`Aplica uma correspondência de nome que diferencia maiúsculas de minúsculas.
+`nsfCaseSensitive` aplica uma correspondência de nome que diferencia maiúsculas de minúsculas.
 
-`nsfCaseInsensitive`Aplica uma correspondência de nome que não diferencia maiúsculas de minúsculas.
+`nsfCaseInsensitive` aplica uma correspondência de nome que não diferencia maiúsculas de minúsculas.
 
-`nsfFNameExt`Trata os nomes como caminhos e aplica uma correspondência de nome filename. ext.
+`nsfFNameExt` trata nomes como caminhos e aplica uma correspondência de nome filename. ext.
 
-`nsfRegularExpression`Aplica uma correspondência de nome que diferencia maiúsculas de minúsculas usando asteriscos (*) e pontos de interrogação (?) como curingas. (Não há suporte para outros caracteres comuns de expressão regular.)
+`nsfRegularExpression` aplica uma correspondência de nome que diferencia maiúsculas de minúsculas usando asteriscos (*) e pontos de interrogação (?) como curingas. (Não há suporte para outros caracteres comuns de expressão regular.)
 
-`nsfUndecoratedName`Aplica-se somente a símbolos que têm nomes não decorados e decorados.
+`nsfUndecoratedName` aplica-se somente a símbolos que têm nomes não decorados e decorados.
 
 ## <a name="remarks"></a>Comentários
 Os valores dessa enumeração são passados para os seguintes métodos:

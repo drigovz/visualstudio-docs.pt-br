@@ -1,5 +1,5 @@
 ---
-title: Visão geral do serviço de linguagem herdado | Microsoft Docs
+title: Visão geral do serviço de linguagem herdada | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,52 +10,52 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dcc7fa218d5ee4ba92af5ad8316f95ceb268bdf6
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 8dfec9cc8b57dfb12b3977cc04e2e62ecc0dea96
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66344897"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72726859"
 ---
 # <a name="legacy-language-service-overview"></a>Visão geral do serviço de linguagem herdado
-Um serviço de linguagem fornece suporte de editor que permite que você implemente certos [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] recursos. As classes de serviço de linguagem da estrutura de pacote gerenciado (MPF) oferecem suporte completo para recursos usados com frequência e suporte parcial para outros recursos.
+Um serviço de linguagem fornece suporte ao editor que permite implementar determinados recursos de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. As classes de serviço de linguagem MPF (Managed Package Framework) fornecem suporte completo para recursos usados com frequência e suporte parcial para outros recursos.
 
-## <a name="fully-supported-features-in-the-mpf"></a>Recursos com suporte total no MPF
- As classes de serviço de linguagem MPF suportam os seguintes recursos:
+## <a name="fully-supported-features-in-the-mpf"></a>Recursos totalmente suportados no MPF
+ As classes de serviço de linguagem MPF oferecem suporte aos seguintes recursos:
 
 - Realce de sintaxe
 
 - Estrutura de tópicos
 
-- Comentar blocos de código
+- Comentando blocos de código
 
 - Correspondência de chaves
 
 - Snippets de código
 
-- Propriedades de documento personalizadas
+- Propriedades do documento personalizado
 
 - Informações de parâmetro do IntelliSense
 
 - Informações rápidas do IntelliSense
 
-- Preenchimento de membro IntelliSense
+- Conclusão de membro do IntelliSense
 
 - Preenchimento de palavra do IntelliSense
 
-## <a name="partially-supported-features-in-the-mpf"></a>Recursos parcialmente suportados no MPF
- MPF fornece suporte parcial somente para os recursos a seguir. Isso significa que você deve implementar os métodos que são chamados pelo MPF.
+## <a name="partially-supported-features-in-the-mpf"></a>Recursos com suporte parcial no MPF
+ O MPF fornece apenas suporte parcial para os recursos a seguir. Isso significa que você deve implementar os métodos que são chamados pelo MPF.
 
-- Reformatar o código. Você fornecer o código que implementa a reformatação.
+- Reformatando código. Você fornece o código que implementa a reformatação.
 
-- Abrange a validar os pontos de interrupção, identificando um código válido. Você fornece o código que identifica os intervalos de código.
+- Validando pontos de interrupção identificando trechos de código válidos. Você fornece o código que identifica os trechos de código.
 
-- Suporte a depurador **automóveis** janela para exibir as variáveis. Você fornece o código que determina o que são exibidas na janela.
+- Suporte à janela de **auto** -depurador para exibição de variáveis. Você fornece o código que determina o que mostrar na janela.
 
-- Suporte a **barra de navegação** para navegação rápida entre os tipos e membros. Você implementa e retorna uma classe auxiliar que preenche as listas a **barra de navegação** caixas de combinação.
+- Suporte à **barra de navegação** para navegação rápida entre tipos e membros. Você implementa e retorna uma classe auxiliar que popula as listas nas caixas de combinação da **barra de navegação** .
 
 ## <a name="implementation"></a>Implementação
- Você deve concluir várias etapas para implementar o serviço de linguagem e os recursos de serviço de linguagem que você deseja dar suporte para o seu idioma. Essas etapas são discutidas nos tópicos a seguir:
+ Você deve concluir várias etapas para implementar o próprio serviço de linguagem e os recursos de serviço de idioma para os quais você deseja dar suporte para seu idioma. Essas etapas são discutidas nos seguintes tópicos:
 
 - [Implementando um serviço de linguagem herdado](../../extensibility/internals/implementing-a-legacy-language-service2.md)
 

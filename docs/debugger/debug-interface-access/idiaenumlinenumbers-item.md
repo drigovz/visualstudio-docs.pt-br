@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b25825d4a0c7e3253e1461a163c8211c3e3bdcda
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9bba71efce68864b8737011ab7dda5cb8da3267c
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62829739"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744408"
 ---
 # <a name="idiaenumlinenumbersitem"></a>IDiaEnumLineNumbers::Item
 Recupera um número de linha por meio de um índice.
@@ -34,13 +34,13 @@ HRESULT Item ( 
 #### <a name="parameters"></a>Parâmetros
  índice
 
-[in] Índice do [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md) objeto a ser recuperado. O índice está no intervalo de 0 a `count`-1, onde `count` é retornado pelo [idiaenumlinenumbers:: Get_count](../../debugger/debug-interface-access/idiaenumlinenumbers-get-count.md) método.
+no Índice do objeto [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md) a ser recuperado. O índice está no intervalo de 0 a `count`-1, em que `count` é retornado pelo método [IDiaEnumLineNumbers:: get_Count](../../debugger/debug-interface-access/idiaenumlinenumbers-get-count.md) .
 
  lineNumber
 
-[out] Retorna um [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md) objeto que representa o número de linha desejado.
+fora Retorna um objeto [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md) que representa o número de linha desejado.
 
-## <a name="return-value"></a>Valor de retorno
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
 
 ## <a name="see-also"></a>Consulte também

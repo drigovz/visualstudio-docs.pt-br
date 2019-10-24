@@ -11,18 +11,18 @@ dev_langs:
 - jsharp
 - C++
 helpviewer_keywords:
-- MSBuild (Visual C++), GetOutOfDateItems task
-- GetOutOfDateItems task (MSBuild (Visual C++))
+- MSBuild (C++), GetOutOfDateItems task
+- GetOutOfDateItems task (MSBuild (C++))
 author: mikeblome
 ms.author: mblome
 ms.workload:
 - multiple
-ms.openlocfilehash: e3393dd7e81fa98c49dd09a32457171286f88f18
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: d3dc343c595606faf5bd31d7f087f7ba8d95f69e
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62977484"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747314"
 ---
 # <a name="getoutofdateitems-task"></a>Tarefa GetOutOfDateItems
 
@@ -35,12 +35,12 @@ A tabela a seguir descreve os parâmetros da tarefa **GetOutOfDateItems**.
 |Parâmetro|Descrição|
 |---------------|-----------------|
 |**CheckForInterdependencies**|Parâmetro opcional **bool**.|
-|**CommandMetadataName**|Parâmetro opcional **string**.|
-|**DependenciesMetadataName**|Parâmetro opcional **string**.|
+|**CommandMetadataName**|Parâmetro **string** opcional.|
+|**DependenciesMetadataName**|Parâmetro **string** opcional.|
 |**HasInterdependencies**|Parâmetro de saída **bool** opcional.|
-|**OutOfDateSources**|Parâmetro de saída opcional **ITaskItem[]**.|
+|**OutOfDateSources**|Parâmetro de saída opcional **ITaskItem[]** .|
 |**OutputsMetadataName**|Parâmetro obrigatório **string**.|
-|**Sources**|Parâmetro opcional **ITaskItem[]**.|
+|**Sources**|Parâmetro opcional **ITaskItem[]** .|
 |**TLogDirectory**|Parâmetro obrigatório **string**.|
 |**TLogNamePrefix**|Parâmetro obrigatório **string**.|
 

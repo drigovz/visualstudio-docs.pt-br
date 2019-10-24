@@ -14,15 +14,15 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: edab3547a16f32f3a8177b3efa7a342c4aae5955
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 2875bcb4583c1d2ec47a935d1a8bb4f0de109a92
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66331852"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72719921"
 ---
 # <a name="sortorder-element-visual-studio-templates"></a>Elemento SortOrder (modelos do Visual Studio)
-Especifica um valor que é usado para organizar o modelo, entre outros modelos na mesma categoria, como ele aparece em ambos os **novo projeto** ou **Adicionar Novo Item** caixa de diálogo.
+Especifica um valor que é usado para organizar o modelo, entre outros modelos na mesma categoria, como aparece na caixa de diálogo **novo projeto** ou **Adicionar novo item** .
 
  \<VSTemplate > \<TemplateData > \<SortOrder >
 
@@ -45,22 +45,22 @@ Especifica um valor que é usado para organizar o modelo, entre outros modelos n
 
 |Elemento|Descrição|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Elemento obrigatório.<br /><br /> Categoriza o modelo e define como ele é exibido em qualquer um de **novo projeto** ou o **Adicionar Novo Item** caixa de diálogo.|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Elemento obrigatório.<br /><br /> Categoriza o modelo e define como ele é exibido no **novo projeto** ou na caixa de diálogo **Adicionar novo item** .|
 
 ## <a name="text-value"></a>Valor de texto
  Um valor de texto é obrigatório.
 
- Um `integer` que representa o valor de ordem de classificação.
+ Um `integer` que representa o valor da ordem de classificação.
 
 ## <a name="remarks"></a>Comentários
  `SortOrder` é um elemento opcional. O valor padrão é 100 e todos os valores devem ser múltiplos de 10.
 
- O `SortOrder` elemento é ignorado para modelos criados pelo usuário. Todos os modelos criados pelo usuário são classificados em ordem alfabética.
+ O elemento `SortOrder` é ignorado para modelos criados pelo usuário. Todos os modelos criados pelo usuário são classificados alfabeticamente.
 
- Modelos que têm valores de ordem de classificação baixa aparecem em qualquer uma de **novo projeto** ou **Novo Item adicionar** caixa de diálogo antes de modelos que têm valores de ordem de classificação alta.
+ Os modelos que têm valores de ordem de classificação baixa aparecem na caixa de diálogo **novo projeto** ou **novo item de adição** , antes dos modelos que têm valores de ordem de classificação alta.
 
 ## <a name="example"></a>Exemplo
- O exemplo a seguir ilustra os metadados para um padrão [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] modelo de classe.
+ O exemplo a seguir ilustra os metadados de um modelo de classe de [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] padrão.
 
 ```
 <VSTemplate Type="Item" Version="3.0.0"
@@ -79,7 +79,7 @@ Especifica um valor que é usado para organizar o modelo, entre outros modelos n
 </VSTemplate>
 ```
 
- Neste exemplo, o `SortOrder` elemento é relativamente alto. É provável que outros [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] modelos de item terá uma `SortOrder` valor menor que `290` e será exibido antes que esse modelo no **Novo Item** caixa de diálogo.
+ Neste exemplo, o elemento `SortOrder` é relativamente alto. É provável que outros modelos de item de [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] tenham um valor de `SortOrder` inferior a `290` e aparecerão antes desse modelo na caixa de diálogo **novo item** .
 
 ## <a name="see-also"></a>Consulte também
 - [Referência de esquema do modelo do Visual Studio](../extensibility/visual-studio-template-schema-reference.md)

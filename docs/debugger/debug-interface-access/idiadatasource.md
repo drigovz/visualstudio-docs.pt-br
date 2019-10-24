@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b8618cc3484584430bbe3ae3fde59b6e5d5fc78
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 453be1d77f1d2b1759e3de4433225cf97d026054
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62838513"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744915"
 ---
 # <a name="idiadatasource"></a>IDiaDataSource
 Inicia o acesso a uma fonte de símbolos de depuração.
@@ -28,23 +28,23 @@ Inicia o acesso a uma fonte de símbolos de depuração.
 IDiaDataSource : IUnknown
 ```
 
-## <a name="methods-in-vtable-order"></a>Métodos na ordem de Vtable
+## <a name="methods-in-vtable-order"></a>Métodos em ordem vtable
 A tabela a seguir mostra os métodos de `IDiaDataSource`.
 
 |Método|Descrição|
 |------------|-----------------|
 |[IDiaDataSource::get_lastError](../../debugger/debug-interface-access/idiadatasource-get-lasterror.md)|Recupera o nome do arquivo para o último erro de carregamento.|
-|[IDiaDataSource::loadDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loaddatafrompdb.md)|Abre e prepara um arquivo de banco de dados (. PDB) do programa como uma fonte de dados de depuração.|
-|[IDiaDataSource::loadAndValidateDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loadandvalidatedatafrompdb.md)|Abre e verifica se o arquivo de banco de dados (. PDB) de programa corresponde as informações de assinatura fornecidas; prepara o arquivo. PDB como uma fonte de dados de depuração.|
-|[IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)|Abre e prepara os dados de depuração associados ao arquivo.exe/.dll.|
-|[IDiaDataSource::loadDataFromIStream](../../debugger/debug-interface-access/idiadatasource-loaddatafromistream.md)|Prepara os dados de depuração armazenados em um arquivo de banco de dados (. PDB) do programa acessado por meio de um fluxo de dados na memória.|
-|[IDiaDataSource::openSession](../../debugger/debug-interface-access/idiadatasource-opensession.md)|Abre uma sessão para consultar os símbolos.|
+|[IDiaDataSource::loadDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loaddatafrompdb.md)|Abre e prepara um arquivo de banco de dados do programa (. pdb) como uma fonte de dado de depuração.|
+|[IDiaDataSource::loadAndValidateDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loadandvalidatedatafrompdb.md)|Abre e verifica se o arquivo de banco de dados do programa (. pdb) corresponde às informações de assinatura fornecidas; Prepara o arquivo. pdb como uma fonte de dados de depuração.|
+|[IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)|Abre e prepara os dados de depuração associados ao arquivo. exe/. dll.|
+|[IDiaDataSource::loadDataFromIStream](../../debugger/debug-interface-access/idiadatasource-loaddatafromistream.md)|Prepara os dados de depuração armazenados em um arquivo de banco de dados do programa (. pdb) acessado por meio de um fluxo de dados na memória.|
+|[IDiaDataSource::openSession](../../debugger/debug-interface-access/idiadatasource-opensession.md)|Abre uma sessão para consultar símbolos.|
 
 ## <a name="remarks"></a>Comentários
-Uma chamada para um dos métodos de carga a `IDiaDataSource` interface abrirá a fonte de símbolo. Uma chamada bem-sucedida para o [idiadatasource:: Opensession](../../debugger/debug-interface-access/idiadatasource-opensession.md) método retorna um [IDiaSession](../../debugger/debug-interface-access/idiasession.md) interface que dá suporte à consulta de fonte de dados. Se o método load retorna um erro relacionado ao arquivo o [idiadatasource:: Get_lasterror](../../debugger/debug-interface-access/idiadatasource-get-lasterror.md) valor contém o nome do arquivo associado ao erro de retorno do método.
+Uma chamada para um dos métodos Load da interface `IDiaDataSource` abre a origem do símbolo. Uma chamada bem-sucedida para o método [IDiaDataSource:: openSession](../../debugger/debug-interface-access/idiadatasource-opensession.md) retorna uma interface [IDiaSession](../../debugger/debug-interface-access/idiasession.md) que dá suporte à consulta à fonte de dados. Se o método Load retornar um erro relacionado ao arquivo, o valor de retorno do método [IDiaDataSource:: get_lastError](../../debugger/debug-interface-access/idiadatasource-get-lasterror.md) conterá o nome do arquivo associado ao erro.
 
 ## <a name="notes-for-callers"></a>Observações para chamadores
-Essa interface é obtida chamando o `CoCreateInstance` função com o identificador de classe `CLSID_DiaSource` e a ID de interface do `IID_IDiaDataSource`. O exemplo mostra como essa interface é obtida.
+Essa interface é obtida chamando a função `CoCreateInstance` com o identificador de classe `CLSID_DiaSource` e a ID de interface de `IID_IDiaDataSource`. O exemplo mostra como essa interface é obtida.
 
 ## <a name="example"></a>Exemplo
 
@@ -63,9 +63,9 @@ if (FAILED(hr))
 ```
 
 ## <a name="requirements"></a>Requisitos
-Cabeçalho: Dia2.h
+Cabeçalho: dia2. h
 
-Biblioteca: diaguids.lib
+Biblioteca: diaguids. lib
 
 DLL: msdia80.dll
 

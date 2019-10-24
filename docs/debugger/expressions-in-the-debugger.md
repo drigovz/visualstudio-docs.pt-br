@@ -19,28 +19,28 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1134ac538487487834b754407a3cc1a90175c56b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6040988961e918c66ed08e7620607d100b2e07fe
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62849939"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72736211"
 ---
 # <a name="expressions-in-the-visual-studio-debugger"></a>Expressões no depurador do Visual Studio
 O depurador do Visual Studio inclui os avaliadores de expressão que funcionam quando você insere uma expressão na caixa de diálogo **QuickWatch**, na janela **Inspeção** ou na janela **Imediato**. Os avaliadores de expressão também estão no trabalho na janela **Pontos de interrupção** e em muitos outros locais no depurador.
 
-As seções a seguir descreve as limitações da avaliação de expressão para idiomas com suporte pelo Visual Studio.
+As seções a seguir descrevem as limitações de avaliação de expressão para idiomas com suporte no Visual Studio.
 
 ## <a name="f-expressions-are-not-supported"></a>F#Não há suporte para expressões
-F#expressões não são reconhecidas. Se você estiver depurando F# código, você precisa converter as expressões na C# sintaxe antes de inserir expressões em uma caixa de diálogo ou janela do depurador. Quando você converter expressões de F# em C#, certifique-se de que C# usa o operador `==` para testar a igualdade, enquanto F# usa o `=` único.
+F#as expressões não são reconhecidas. Se você estiver Depurando F# código, precisará converter suas expressões C# em sintaxe antes de inserir as expressões em uma janela ou caixa de diálogo do depurador. Quando você converter expressões de F# em C#, certifique-se de que C# usa o operador `==` para testar a igualdade, enquanto F# usa o `=` único.
 
-## <a name="c-expressions"></a>Expressões C++
-Para obter informações sobre como usar operadores de contexto com expressões em C++, consulte [operador de contexto (C++)](../debugger/context-operator-cpp.md).
+## <a name="c-expressions"></a>C++Expressões
+Para obter informações sobre como usar operadores de contexto C++com expressões no, consulte [Context Operator (C++)](../debugger/context-operator-cpp.md).
 
-### <a name="unsupported-expressions-in-c"></a>Não há suporte para expressões em C++
+### <a name="unsupported-expressions-in-c"></a>Expressões sem suporte noC++
 
 #### <a name="constructors-destructors-and-conversions"></a>Construtores, destruidores e conversões
-Você não pode chamar um construtor ou destruidor para um objeto, explicitamente ou implicitamente. Por exemplo, a expressão a seguir chama explicitamente um construtor e resulta em uma mensagem de erro:
+Você não pode chamar um construtor ou destruidor para um objeto, explícita ou implicitamente. Por exemplo, a expressão a seguir chama explicitamente um construtor e resulta em uma mensagem de erro:
 
 ```C++
 my_date( 2, 3, 1985 )
@@ -52,20 +52,20 @@ Você não pode chamar uma função de conversão se o destino da conversão for
 (FixedPoint)myFraction
 ```
 
-Você não pode chamar o novo ou excluir operadores. Por exemplo, não há suporte para a expressão a seguir:
+Você não pode chamar os operadores New ou Delete. Por exemplo, não há suporte para a seguinte expressão:
 
 ```C++
 new Date(2,3,1985)
 ```
 
 #### <a name="preprocessor-macros"></a>Macros de pré-processador
-Não há suporte para macros de pré-processador no depurador. Por exemplo, se uma constante `VALUE` é declarado como: `#define VALUE 3`, você não pode usar `VALUE` no **inspeção** janela. Para evitar essa limitação, você deve substituir `#define`com enums e funções sempre que possível.
+Não há suporte para macros de pré-processador no depurador. Por exemplo, se uma constante `VALUE` for declarada como: `#define VALUE 3`, você não poderá usar `VALUE` na janela de **Observação** . Para evitar essa limitação, você deve substituir `#define` com enums e funções sempre que possível.
 
 ### <a name="using-namespace-declarations"></a>usando declarações de namespace
-Não é possível usar `using namespace` declarações.  Para acessar um nome de tipo ou variável fora do namespace atual, você deve usar o nome totalmente qualificado.
+Você não pode usar declarações de `using namespace`.  Para acessar um nome de tipo ou variável fora do namespace atual, você deve usar o nome totalmente qualificado.
 
 ### <a name="anonymous-namespaces"></a>Namespaces anônimos
-Não há suporte para namespaces anônimos. Se você tiver o código a seguir, você não pode adicionar `test` à janela Inspeção:
+Não há suporte para namespaces anônimos. Se você tiver o código a seguir, não poderá adicionar `test` à janela de observação:
 
 ```C++
 namespace mars
@@ -84,7 +84,7 @@ int main()
 
 ```
 
-### <a name="BKMK_Using_debugger_intrinisic_functions_to_maintain_state"></a> Usando funções intrínsecas do depurador para manter o estado
+### <a name="BKMK_Using_debugger_intrinisic_functions_to_maintain_state"></a>Usando funções intrínsecas do depurador para manter o estado
 As funções intrínsecas do depurador oferecem uma maneira de chamar determinadas funções C/C++ em expressões sem alterar o estado do aplicativo.
 
 Funções intrínsecas do depurador:
@@ -95,7 +95,7 @@ Funções intrínsecas do depurador:
 
 - Trabalham em cenários onde as chamadas de funções normais não são possíveis, por exemplo, depurar um minidespejo.
 
-  As funções intrínsecas do depurador também podem tornar mais convenientes as expressões de avaliação. Por exemplo, `strncmp(str, "asd")` é muito mais fácil escrever em uma condição de ponto de interrupção que `str[0] == 'a' && str[1] == 's' && str[2] == 'd'`. )
+  As funções intrínsecas do depurador também podem tornar mais convenientes as expressões de avaliação. Por exemplo, `strncmp(str, "asd")` é muito mais fácil de escrever em uma condição de ponto de interrupção do que `str[0] == 'a' && str[1] == 's' && str[2] == 'd'`. )
 
 |Área|Funções intrínsecas|
 |----------|-------------------------|
@@ -106,26 +106,26 @@ Funções intrínsecas do depurador:
 |**Windows 8**|WindowsGetStringLen(), WindowsGetStringRawBuffer()<br /><br /> Essas funções exigem que o processo que está sendo depurado seja executado no Windows 8. Depurar os arquivos de despejo gerados a partir de um dispositivo do Windows 8 também exige que o computador do Visual Studio esteja executando o Windows 8. No entanto, se você estiver depurando um dispositivo do Windows 8 remotamente, o computador do Visual Studio poderá executar o Windows 7.|
 |**Diversos**|__log2<br /><br /> Retorna a base 2 de log de um inteiro especificado, arredondada para o menor inteiro próximo.|
 
-## <a name="ccli---unsupported-expressions"></a>C++/ CLI - expressões sem suporte
+## <a name="ccli---unsupported-expressions"></a>C++/CLI-expressões sem suporte
 
-- Conversões que envolvem ponteiros ou conversões definidas pelo usuário, não têm suporte.
+- Não há suporte para conversões que envolvem ponteiros ou conversões definidas pelo usuário.
 
-- Não há suporte para a atribuição e comparação de objeto.
+- Não há suporte para comparação de objetos e atribuição.
 
 - Não há suporte para operadores sobrecarregados e funções sobrecarregadas.
 
-- Não há suporte para conversões boxing e unboxing.
+- Não há suporte para boxing e unboxing.
 
-- `Sizeof` Não há suporte para o operador.
+- Não há suporte para o operador de `Sizeof`.
 
-## <a name="c---unsupported-expressions"></a>C# - expressões sem suporte
+## <a name="c---unsupported-expressions"></a>C#-Expressões sem suporte
 
 ### <a name="dynamic-objects"></a>Objetos dinâmicos
-Você pode usar variáveis em expressões de depurador que são estaticamente tipadas como dinâmicas. Quando os objetos que implementam <xref:System.Dynamic.IDynamicMetaObjectProvider> são avaliados na janela de inspeção, uma exibição dinâmica de nó é adicionado. O nó do Modo de Exibição Dinâmico exibe membros do objeto, mas não permite editar os valores dos membros.
+Você pode usar variáveis em expressões de depurador que são digitadas estaticamente como dinâmicas. Quando os objetos que implementam <xref:System.Dynamic.IDynamicMetaObjectProvider> são avaliados no janela Inspeção, um nó de exibição dinâmica é adicionado. O nó do Modo de Exibição Dinâmico exibe membros do objeto, mas não permite editar os valores dos membros.
 
 Os seguintes recursos de objetos dinâmicos não têm suporte:
 
-- Os operadores compostos `+=`, `-=`, `%=`, `/=`, e `*=`
+- Os operadores compostos `+=`, `-=`, `%=`, `/=` e `*=`
 
 - Várias conversões, inclusive conversões numéricas e conversões de tipo de argumento
 
@@ -142,14 +142,14 @@ Os seguintes recursos de objetos dinâmicos não têm suporte:
 ### <a name="anonymous-methods"></a>Métodos anônimos
 Não há suporte para a criação de novos métodos anônimos.
 
-## <a name="visual-basic---unsupported-expressions"></a>Visual Basic – expressões sem suporte
+## <a name="visual-basic---unsupported-expressions"></a>Visual Basic-expressões sem suporte
 
 ### <a name="dynamic-objects"></a>Objetos dinâmicos
-Você pode usar variáveis em expressões de depurador que são estaticamente tipadas como dinâmicas. Quando os objetos que implementam o <xref:System.Dynamic.IDynamicMetaObjectProvider> são avaliados na janela de inspeção, uma exibição dinâmica de nó é adicionado. O nó do Modo de Exibição Dinâmico exibe membros do objeto, mas não permite editar os valores dos membros.
+Você pode usar variáveis em expressões de depurador que são digitadas estaticamente como dinâmicas. Quando os objetos que implementam os <xref:System.Dynamic.IDynamicMetaObjectProvider> são avaliados no janela Inspeção, um nó de exibição dinâmica é adicionado. O nó do Modo de Exibição Dinâmico exibe membros do objeto, mas não permite editar os valores dos membros.
 
 Os seguintes recursos de objetos dinâmicos não têm suporte:
 
-- Os operadores compostos `+=`, `-=`, `%=`, `/=`, e `*=`
+- Os operadores compostos `+=`, `-=`, `%=`, `/=` e `*=`
 
 - Várias conversões, inclusive conversões numéricas e conversões de tipo de argumento
 
@@ -170,7 +170,7 @@ As constantes locais não têm suporte.
 Não há suporte para aliases de importação.
 
 ### <a name="variable-declarations"></a>Declarações de variável
-Você não pode declarar novas variáveis explícitas nas janelas do depurador. No entanto, você pode atribuir novas variáveis implícitas dentro de **imediato** janela. Essas variáveis implícitas têm escopo para a sessão de depuração e não estão acessíveis fora do depurador. Por exemplo, a instrução `o = 5` implicitamente cria uma nova variável `o` e atribua o valor 5 a ele. Essas variáveis implícitas são do tipo **objeto** , a menos que o tipo pode ser inferido pelo depurador.
+Você não pode declarar novas variáveis explícitas nas janelas do depurador. No entanto, você pode atribuir novas variáveis implícitas dentro da janela **imediata** . Essas variáveis implícitas têm como escopo a sessão de depuração e não podem ser acessadas fora do depurador. Por exemplo, a instrução `o = 5` Cria implicitamente uma nova variável `o` e atribui o valor 5 a ela. Essas variáveis implícitas são do tipo **Object** , a menos que o tipo possa ser inferido pelo depurador.
 
 ### <a name="unsupported-keywords"></a>Palavras-chave sem suporte
 
@@ -202,7 +202,7 @@ Você não pode declarar novas variáveis explícitas nas janelas do depurador. 
 
 - `With`
 
-- Namespace ou módulo nível palavras-chave, como `End Sub` ou `Module`.
+- Palavras-chave de namespace ou nível de módulo, como `End Sub` ou `Module`.
 
 ## <a name="see-also"></a>Consulte também
 - [Especificadores de formato em C++](../debugger/format-specifiers-in-cpp.md)

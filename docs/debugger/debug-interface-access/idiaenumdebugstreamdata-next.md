@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf641fde4c03053496c732aa7904ddcad671af20
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: acdab0a565613194c67aa85484316a235c91dbf6
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62838601"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744792"
 ---
 # <a name="idiaenumdebugstreamdatanext"></a>IDiaEnumDebugStreamData::Next
-Recupera um número especificado de registros na sequência enumerado.
+Recupera um número especificado de registros na sequência enumerada.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -37,26 +37,26 @@ HRESULT Next ( 
 #### <a name="parameters"></a>Parâmetros
  celt
 
-[in] O número de registros a serem recuperados.
+no O número de registros a serem recuperados.
 
  cbData
 
-[in] Tamanho do buffer de dados, em bytes.
+no Tamanho do buffer de dados, em bytes.
 
  pcbData
 
-[out] Retorna o número de bytes retornados. Se `data` for NULL, em seguida, `pcbData` contém o número total de bytes de dados disponíveis para todos os registros de solicitado.
+fora Retorna o número de bytes retornados. Se `data` for NULL, `pcbData` conterá o número total de bytes de dados disponíveis para todos os registros solicitados.
 
  data[]
 
-[out] Um buffer que deve ser preenchido com os dados de registro de fluxo de depuração.
+fora Um buffer que deve ser preenchido com os dados de registro do fluxo de depuração.
 
  pceltFetched
 
-[no, out] Retorna o número de registros em `data`.
+[entrada, saída] Retorna o número de registros no `data`.
 
-## <a name="return-value"></a>Valor de retorno
- Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não há mais registros. Caso contrário, retornará um código de erro.
+## <a name="return-value"></a>Valor retornado
+ Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não houver mais registros. Caso contrário, retornará um código de erro.
 
 ## <a name="see-also"></a>Consulte também
 - [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)

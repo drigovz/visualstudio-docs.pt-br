@@ -1,5 +1,5 @@
 ---
-title: IDiaPropertyStorage::Enum | Microsoft Docs
+title: 'IDiaPropertyStorage:: enum | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e39693f63ea706ecdfa30a9ce0202444f51d4f57
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 00bd1ea5e20d30fa1d2c32101b56f55d169f1ce2
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839674"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742952"
 ---
 # <a name="idiapropertystorageenum"></a>IDiaPropertyStorage::Enum
-Obtém um enumerador para as propriedades nesse conjunto.
+Obtém um enumerador para propriedades dentro deste conjunto.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -33,10 +33,10 @@ HRESULT Enum ( 
 #### <a name="parameters"></a>Parâmetros
  `ppenum`
 
-[out] Retorna um `IEnumSTATPROPSTG` objeto (no namespace Microsoft.VisualStudio.OLE.Interop) que representa uma enumeração de propriedades.
+fora Retorna um objeto `IEnumSTATPROPSTG` (no namespace Microsoft. VisualStudio. OLE. Interop) que representa uma enumeração de propriedades.
 
-## <a name="return-value"></a>Valor de retorno
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retornará um código de erro.
+## <a name="return-value"></a>Valor retornado
+ Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
 
 ## <a name="see-also"></a>Consulte também
 - [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)

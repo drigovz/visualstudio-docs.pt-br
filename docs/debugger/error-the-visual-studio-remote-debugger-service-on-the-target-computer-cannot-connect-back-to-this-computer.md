@@ -1,5 +1,5 @@
 ---
-title: 'Erro: O serviço do Depurador Remoto do Visual Studio no computador de destino não pode se conectar novamente a esse computador'
+title: 'Erro: o serviço Depurador Remoto do Visual Studio no computador de destino não pode se reconectar a este computador'
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 11/04/2016
@@ -16,15 +16,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c07557fa64f86349a3baf8956d99b937ceab9f5a
-ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
+ms.openlocfilehash: 695c4c9e84ce9eb851a551dc9821bff00123a35c
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67043429"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72737404"
 ---
-# <a name="error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer"></a>Erro: O serviço do Depurador Remoto do Visual Studio no computador de destino não pode se conectar novamente a esse computador
-Esse erro significa que o serviço depurador remoto está em execução em uma conta de usuário não pode autenticar quando ele tenta se conectar ao computador que você está depurando. Esse erro pode ocorrer quando a depuração remota usando o mecanismo de depuração herdado e o depurador remoto está em execução como um serviço.
+# <a name="error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer"></a>Erro: o serviço Depurador Remoto do Visual Studio no computador de destino não pode se reconectar a este computador
+Esse erro significa que o serviço de depurador remoto está sendo executado sob uma conta de usuário que não pode se autenticar quando tenta se conectar ao computador do qual você está depurando. Esse erro pode ocorrer quando a depuração remota está usando o mecanismo de depuração herdado e o depurador remoto está sendo executado como um serviço.
 
  A tabela a seguir mostra quais contas podem acessar o computador:
 

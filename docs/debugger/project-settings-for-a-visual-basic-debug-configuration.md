@@ -1,5 +1,5 @@
 ---
-title: Configuração de depuração de configurações do projeto para um VB | Microsoft Docs
+title: Configurações do projeto para uma configuração de depuração do VB | Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/04/2016
 ms.topic: reference
@@ -23,28 +23,28 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f6d948595dcf34bba32708f04e4bdf2f16ba1166
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: bcac88c2faf1af7378ce25597789700df61648a9
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63408661"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72730612"
 ---
 # <a name="project-settings-for-a-visual-basic-debug-configuration"></a>Definições do projeto para uma configuração de depuração do Visual Basic
 Você pode alterar as configurações do projeto para uma configuração de depuração do [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] na janela **Páginas de Propriedades**, conforme discutido em [Configurações de depuração e versão](../debugger/how-to-set-debug-and-release-configurations.md). As tabelas a seguir mostram onde localizar as configurações relacionadas ao depurador na janela **Páginas de Propriedades**.
 
 > [!WARNING]
-> Este tópico não se aplica a aplicativos UWP. Consulte [iniciar uma sessão de depuração (VB, c#, C++ e XAML)](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)
+> Este tópico não se aplica a aplicativos UWP. Consulte [iniciar uma sessão de depuração (VB C#, C++ e XAML)](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)
 
 ### <a name="debug-tab"></a>Guia Depurar
 
 | Configuração | Descrição |
 |------------------------------| - |
-| **Configuração** | Define o modo para compilar o aplicativo. Escolha entre **Ativo (depuração)**, **Depuração**, **Versão**, **Todas as Configurações**. |
+| **Configuração** | Define o modo para compilar o aplicativo. Escolha entre **Ativo (depuração)** , **Depuração**, **Versão**, **Todas as Configurações**. |
 | **Iniciar ação** | Esse grupo de controles especifica a ação que ocorrerá quando você escolhe Iniciar do menu Depurar.<br /><br /> -   **Iniciar projeto** é o padrão e inicia o projeto de inicialização da depuração. <br />-   **Iniciar programa externo** permite que você inicie e anexe a um programa que não faz parte de um projeto [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Para obter mais informações, consulte [anexar a processos em execução](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).<br />-   **Iniciar navegador na URL** permite que você depure um aplicativo Web. |
 | **Argumentos de linha de comando** | Especifica argumentos de linha de comando para o programa ser depurado. O nome do comando é o nome do programa especificado em Iniciar programa externo. Se Iniciar Ação for definida para iniciar URL, os argumentos de linha de comando serão ignorados. |
 | **Diretório de Trabalho** | Especifica o diretório de trabalho do programa que está sendo depurado. No [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], o diretório de trabalho é o diretório a partir do qual o aplicativo é iniciado. O diretório de trabalho padrão é \bin\Debug ou \bin\Release, dependendo da configuração atual. |
-| **Usar computador remoto** | Quando a caixa de seleção está marcada, a depuração remota é habilitada. Na caixa de texto, digite o nome de um computador remoto no qual o aplicativo será executado para fins de depuração ou um [Nome do servidor Msvsmon](../debugger/remote-debugging.md). O local do EXE no computador remoto é especificado pela propriedade Caminho da Saída na guia Build. O local deve ser um diretório compartilhável no computador remoto. |
+| **Usar computador remoto** | Quando a caixa de seleção está marcada, a depuração remota é habilitada. Na caixa de texto, digite o nome de um computador remoto no qual o aplicativo será executado para fins de depuração ou um [Nome do servidor Msvsmon](../debugger/remote-debugging.md). O local do EXE no computador remoto é especificado pela propriedade caminho de saída na guia compilar. O local deve ser um diretório compartilhável no computador remoto. |
 | **Depuração de código não gerenciado** | Permite depurar chamadas para código Win32 nativo (não gerenciado) a partir do seu aplicativo gerenciado. Isso tem o mesmo efeito que selecionar Misto como Tipo de Depurador em um projeto do [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]. |
 | **Depuração do SQL Server** | Permite depuração de objetos de banco de dados do SQL Server. |
 

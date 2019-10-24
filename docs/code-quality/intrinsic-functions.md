@@ -15,12 +15,12 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: b9236a5135d1339f46aeb6f2dd1a11658adf01c2
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: 4824cba4de67ad199974f5844c7f220a6fd6accc
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72445712"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745910"
 ---
 # <a name="intrinsic-functions"></a>Funções intrínsecas
 Uma expressão em SAL pode ser uma expressão CC++ /, desde que ela seja uma expressão que não tenha efeitos colaterais, por exemplo, + +,--, e chamadas de função tenham efeitos colaterais nesse contexto.  No entanto, o SAL fornece alguns objetos do tipo função e alguns símbolos reservados que podem ser usados em expressões SAL. Eles são chamados de *funções intrínsecas*.
@@ -30,7 +30,7 @@ As anotações de função instrinsic a seguir fornecem um utilitário geral par
 
 |Anotação|Descrição|
 |----------------|-----------------|
-|`_Curr_`|Um sinônimo para o objeto que está sendo anotado no momento.  Quando a anotação `_At_` estiver em uso, `_Curr_` será o mesmo que o primeiro parâmetro para `_At_`.  Caso contrário, é o parâmetro ou o valor de função/retorno inteiro com o qual a anotação está associada lexicalmente.|
+|`_Curr_`|Um sinônimo para o objeto que está sendo anotado no momento.  Quando a anotação de `_At_` estiver em uso, `_Curr_` será o mesmo que o primeiro parâmetro para `_At_`.  Caso contrário, é o parâmetro ou o valor de função/retorno inteiro com o qual a anotação está associada lexicalmente.|
 |`_Inexpressible_(expr)`|Expressa uma situação em que o tamanho de um buffer é muito complexo para representar usando uma expressão de anotação — por exemplo, quando é computado examinando um conjunto de dados de entrada e, em seguida, contando os membros selecionados.|
 |`_Nullterm_length_(param)`|`param` é o número de elementos no buffer, mas não incluindo um terminador nulo. Ele pode ser aplicado a qualquer buffer de tipo não agregado e não nulo.|
 |`_Old_(expr)`|Quando é avaliado em pré-condição, `_Old_` retorna o valor de entrada `expr`.  Quando é avaliado em post-Condition, ele retorna o valor `expr`, pois ele teria sido avaliado na pré-condição.|

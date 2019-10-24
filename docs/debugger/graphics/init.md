@@ -8,15 +8,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a2bd17b91f7a18adce1153634cb9fc55902720b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0b2ed132e072d9ca8a0b9c98bfc5be6e25931805
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62848481"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72734998"
 ---
 # <a name="init"></a>Init
-Prepara o componente no aplicativo de diagnóstico de gráficos para capturar e registrar informações de gráficos em um arquivo de log de gráficos ativamente.
+Prepara o componente no aplicativo do diagnóstico de gráficos para capturar e gravar ativamente informações de gráficos em um arquivo de log de gráficos.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -27,12 +27,12 @@ void Init(
 ```
 
 #### <a name="parameters"></a>Parâmetros
- `vsgLogGetter` Uma entidade que pode ser chamada — como uma função, ponteiro de função, lambda ou objeto de função — que usa como parâmetros o comprimento de um buffer composto `wchar_t` e um ponteiro para esse buffer e retorna `void`. Quando invocada, a entidade que pode ser chamada determina o nome do arquivo que será usado para registrar informações de gráficos e grava-o buffer especificado antes de retornar.
+ `vsgLogGetter` uma entidade que possa ser chamada, como uma função, um ponteiro de função, lambda ou um objeto de função — que usa como parâmetros o comprimento de um buffer composto por `wchar_t` e um ponteiro para esse buffer e retorna `void`. Quando invocado, a entidade callable determina o nome do arquivo que será usado para registrar informações gráficas e grava-o no buffer especificado antes de retornar.
 
 ## <a name="remarks"></a>Comentários
- O `Init` função é chamada automaticamente quando uma instância das `VsgDbg` classe for construída, especificando o `bDefaultInit` parâmetro de seu construtor como `true`; caso contrário, `Init` deve ser chamado explicitamente antes de você pode capturar ativamente e registre informações de gráficos.
+ A função `Init` é chamada automaticamente quando uma instância da classe `VsgDbg` é construída especificando o parâmetro `bDefaultInit` de seu construtor como `true`; caso contrário, `Init` deve ser chamado explicitamente antes que você possa capturar e registrar informações de gráficos ativamente.
 
- Você pode finalizar a fechar os elementos gráficos ativos arquivo de log e chamando `UnInit`e, em seguida, capturar e registrar informações de gráficos mais para um novo arquivo de log de elementos gráficos chamando `Init` novamente. Você pode repetir isso quantas vezes você deseja criar gráficos independentes de vários arquivos de log usando o mesmo `VsgDbg` instância.
+ Você pode finalizar e fechar o arquivo de log de gráficos ativo chamando `UnInit` e, em seguida, capturar e registrar mais informações sobre gráficos em um novo arquivo de log de gráficos chamando `Init` novamente. Você pode repetir isso quantas vezes desejar para criar vários arquivos de log de gráficos independentes usando a mesma instância de `VsgDbg`.
 
 ## <a name="see-also"></a>Consulte também
 - [UnInit](init.md)

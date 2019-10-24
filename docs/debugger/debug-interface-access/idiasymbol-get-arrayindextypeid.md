@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f7d04a8c1e498200db66a37a5af56624eb2d0ae
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 8363475a80748cb35472dfaaac043bff83a4fae5
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64833098"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741019"
 ---
-# <a name="idiasymbolgetarrayindextypeid"></a>IDiaSymbol::get_arrayIndexTypeId
-Recupera o identificador de tipo de índice de matriz do símbolo.
+# <a name="idiasymbolget_arrayindextypeid"></a>IDiaSymbol::get_arrayIndexTypeId
+Recupera o identificador do tipo de índice de matriz do símbolo.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -33,23 +33,23 @@ HRESULT get_arrayIndexTypeId ( 
 #### <a name="parameters"></a>Parâmetros
  `pRetVal`
 
-[out] Retorna a ID de tipo de índice de matriz do símbolo.
+fora Retorna a ID do tipo de índice de matriz do símbolo.
 
-## <a name="return-value"></a>Valor de retorno
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE` ou um código de erro.
 
 > [!NOTE]
-> Um valor de retorno `S_FALSE` significa que a propriedade não está disponível para o símbolo.
+> Um valor de retorno de `S_FALSE` significa que a propriedade não está disponível para o símbolo.
 
 ## <a name="remarks"></a>Comentários
- O identificador é um valor exclusivo criado pelo SDK do DIA para marcar todos os símbolos como exclusivo.
+ O identificador é um valor exclusivo criado pelo DIA SDK para marcar todos os símbolos como exclusivos.
 
 ## <a name="requirements"></a>Requisitos
 
 |Requisito|Descrição|
 |-----------------|-----------------|
 |Cabeçalho:|dia2.h|
-|Versão:|DIA SDK v7.0|
+|Versão:|DIA SDK v 7.0|
 
 ## <a name="see-also"></a>Consulte também
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

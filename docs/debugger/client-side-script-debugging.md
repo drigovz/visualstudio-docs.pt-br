@@ -1,5 +1,5 @@
 ---
-title: Depuração de Script do lado do cliente | Microsoft Docs
+title: Depuração de script do lado do cliente | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,18 +16,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1501cd0243d6dc17cc627715eda85e755aec4502
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f9f66d757f5f46530619be1424eb0810ce546ff5
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62564080"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745708"
 ---
 # <a name="client-side-script-debugging"></a>Depuração de script do lado do cliente
-O depurador do Visual Studio fornece um ambiente de depuração abrangente para localizar e corrigir erros em scripts do lado do cliente em páginas ASP.NET.
+O depurador do Visual Studio fornece um ambiente de depuração abrangente para localizar e corrigir erros em scripts do lado do cliente em páginas do ASP.NET.
 
 ## <a name="opening-script-documents"></a>Abrindo Documentos de Script
-Você pode ver a lista de documentos de script do lado do servidor e cliente na **Gerenciador de soluções** para exibir. Você pode abrir qualquer documento de script do **Gerenciador de Soluções**. Para obter mais informações, confira [Como: Exibir documentos de script](../debugger/how-to-view-script-documents.md).
+Você pode ver listas de documentos de script do lado do servidor e do lado do cliente no **Gerenciador de soluções** para exibir. Você pode abrir qualquer documento de script do **Gerenciador de Soluções**. Para obter mais informações, consulte [How to: View script Documents](../debugger/how-to-view-script-documents.md).
 
 ## <a name="breakpoint-mapping"></a>Mapeamento de ponto de interrupção
  No Visual Studio, você não pode depurar diretamente o código do lado do servidor, mas pode definir um ponto de interrupção em um arquivo do lado do servidor. O Visual Studio automaticamente mapeia o ponto de interrupção em um local correspondente no arquivo do cliente e cria um ponto de interrupção mapeado no código do cliente.
@@ -35,7 +35,7 @@ Você pode ver a lista de documentos de script do lado do servidor e cliente na 
 ## <a name="manually-or-automatically-attaching-to-script"></a>Anexar a script manual ou automaticamente
  Para iniciar a depuração de script no [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], o depurador deve anexar o script que você deseja depurar. Isso pode acontecer manualmente ou automaticamente.
 
- Você pode anexar manualmente usando a interface do depurador de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para escolher um processo em execução do script ao qual você deseja anexar. Para obter mais informações, confira [Como: Anexar ao script](../debugger/how-to-attach-to-script.md).
+ Você pode anexar manualmente usando a interface do depurador de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para escolher um processo em execução do script ao qual você deseja anexar. Para obter mais informações, consulte [como: anexar ao script](../debugger/how-to-attach-to-script.md).
 
  O depurador é anexado automaticamente ao script quando uma das situações ocorrer:
 
@@ -52,12 +52,12 @@ Você pode ver a lista de documentos de script do lado do servidor e cliente na 
   Nesse ponto, você pode usar recursos normais do depurador para iniciar a depuração. Por exemplo, é possível usar comandos de **Etapa** para continuar a execução de seu código linha por linha. Você pode usar a janela **Pilha de Chamadas** para exibir e controlar o fluxo de script. Você pode usar as janelas variáveis ou a janela **Imediato** para exibir ou alterar as variáveis e propriedades.
 
 ## <a name="enhanced-error-messages-for-script-debugging"></a>Mensagens de erro aprimoradas para depuração de scripts
- Visual Studio fornece mensagens de erro aprimoradas para problemas de depuração de script comuns. Essas mensagens não aparecem a menos que você anexe ao Internet Explorer manualmente. Se você encontrar uma condição de erro quando o Internet Explorer for aberto automaticamente, tente anexar de forma manual para poder ver as mensagens de erro.
+ O Visual Studio fornece mensagens de erro aprimoradas para problemas comuns de depuração de script. Essas mensagens não aparecem a menos que você anexe ao Internet Explorer manualmente. Se você encontrar uma condição de erro quando o Internet Explorer for aberto automaticamente, tente anexar de forma manual para poder ver as mensagens de erro.
 
 ## <a name="debugging-ajax-script-applications"></a>Depurando aplicativos de script AJAX
  Os aplicativos da Web com AJAX ativado fazem uso intenso de códigos de script e desafios especiais de depuração de representação. Para obter mais informações sobre técnicas de depuração AJAX, consulte
 
- [Visão geral de aplicativos Ajax de rastreamento e depuração](https://msdn.microsoft.com/Library/92684ea0-7bb4-4a34-9203-3aa6394ce375).
+ [Visão geral de depuração e rastreamento de aplicativos AJAX](https://msdn.microsoft.com/Library/92684ea0-7bb4-4a34-9203-3aa6394ce375).
 
 ## <a name="see-also"></a>Consulte também
 
@@ -65,4 +65,4 @@ Você pode ver a lista de documentos de script do lado do servidor e cliente na 
 - [Limitações na depuração de script](../debugger/limitations-on-script-debugging.md)
 - [Janelas de Variáveis](../debugger/debugger-windows.md)
 - [Janela Imediata](../ide/reference/immediate-window.md)
-- [Visão geral de aplicativos Ajax de rastreamento e depuração](https://msdn.microsoft.com/Library/92684ea0-7bb4-4a34-9203-3aa6394ce375)
+- [Visão geral de depuração e rastreamento de aplicativos AJAX](https://msdn.microsoft.com/Library/92684ea0-7bb4-4a34-9203-3aa6394ce375)

@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 91e99da7832bb2a0e067de6eb3c09f90255eaf32
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 420ba5b56342b4b1d5b8e4c2756aa828e5fe53b4
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64785837"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739531"
 ---
-# <a name="idiasymbolgetpacked"></a>IDiaSymbol::get_packed
-Recupera um sinalizador que especifica se o tipo de dados definido pelo usuário (UDT) é empacotado.
+# <a name="idiasymbolget_packed"></a>IDiaSymbol::get_packed
+Recupera um sinalizador que especifica se o tipo de dados definido pelo usuário (UDT) está embalado.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -33,16 +33,16 @@ HRESULT get_packed ( 
 #### <a name="parameters"></a>Parâmetros
  `pRetVal`
 
-[out] Retorna `TRUE` se o UDT é fornecido; caso contrário, retornará `FALSE`.
+fora Retorna `TRUE` se o UDT for embalado; caso contrário, retorna `FALSE`.
 
-## <a name="return-value"></a>Valor de retorno
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE` ou um código de erro.
 
 > [!NOTE]
-> Um valor de retorno `S_FALSE` significa que a propriedade não está disponível para o símbolo.
+> Um valor de retorno de `S_FALSE` significa que a propriedade não está disponível para o símbolo.
 
 ## <a name="remarks"></a>Comentários
- Empacotado significa que todos os membros da UDT são posicionados tão próximas quanto possível, sem nenhum preenchimento intermediário para alinhar aos limites de memória.
+ Embalado significa que todos os membros do UDT estão posicionados o mais próximo possível, sem nenhum preenchimento intermediário para alinhar aos limites de memória.
 
 ## <a name="see-also"></a>Consulte também
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
