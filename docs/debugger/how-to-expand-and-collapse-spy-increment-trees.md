@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 68ebfcc4b95b50988673e5ce229d27c5c12d0783
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: 6deedaf8b3d6ca9aee3029934dd87ae01b94f355
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72450371"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72733308"
 ---
 # <a name="how-to-expand-and-collapse-spy-trees"></a>Como expandir e recolher árvores de Spy++
 Você pode expandir e recolher as exibições do Windows, processos e threads usando dois métodos: clicando nos ícones na janela ou usando o menu de **árvore** . Os ícones + e-na árvore agem como fazem na janela do C++ projeto.

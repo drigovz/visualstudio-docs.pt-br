@@ -1,5 +1,5 @@
 ---
-title: Configurar o Firewall para a caixa de diálogo de depuração remota | Microsoft Docs
+title: Caixa de diálogo Configurar firewall para depuração remota | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -20,25 +20,25 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 75342630e347eaabe6854498c43294599afae5a5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8a2511fc2adfa63ff28f8459f48cbdf4b4623ff5
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62563728"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745659"
 ---
 # <a name="configure-firewall-for-remote-debugging-dialog-box"></a>Caixa de diálogo Configurar Firewall para Depuração Remota
 Essa caixa de diálogo aparece quando o Firewall do Windows bloqueia o depurador de receber informações sobre a rede. Para continuar a depuração remota, você deverá abrir um buraco no firewall para que o depurador possa receber informações.
 
 > [!CAUTION]
-> Abrir um buraco no firewall pode expor o computador a ameaças de segurança que o firewall é criado para bloquear. Abrir um buraco para depuração remota desbloqueia as portas 4020 e 4021 no Visual Studio 2015. Em outras versões do Visual Studio, outros números de porta são usados. Para obter mais informações, consulte [as atribuições de porta do depurador remoto](../debugger/remote-debugger-port-assignments.md). Além disso, isso permite que o depurador abra portas adicionais. Para obter mais informações, consulte [configurar o Firewall do Windows para depuração remota](../debugger/configure-the-windows-firewall-for-remote-debugging.md).
+> Abrir um buraco no firewall pode expor o computador a ameaças de segurança que o firewall é criado para bloquear. Abrir um buraco para depuração remota desbloqueia as portas 4020 e 4021 no Visual Studio 2015. Em outras versões do Visual Studio, outros números de porta são usados. Para obter mais informações, consulte [atribuições de porta do depurador remoto](../debugger/remote-debugger-port-assignments.md). Além disso, isso permite que o depurador abra portas adicionais. Para obter mais informações, consulte [Configurar o Firewall do Windows para depuração remota](../debugger/configure-the-windows-firewall-for-remote-debugging.md).
 
 ## <a name="uielement-list"></a>Lista UIElement
- **Cancelar a depuração remota** cancela a tentativa de depuração remota. As configurações de segurança de seu computador permanecem intactas.
+ **Cancelar depuração remota** Cancela a tentativa de depuração remota. As configurações de segurança de seu computador permanecem intactas.
 
- **Desbloquear a depuração remota de computadores na rede local (sub-rede)** habilita a depuração remota de computadores em sua sub-rede local. Isso pode abrir vulnerabilidades em computadores em sua subrede local, mas o firewall continua a bloquear informações que vêm de fora da subrede.
+ **Desbloquear a depuração remota de computadores na rede local (sub-rede)** Habilita a depuração remota de computadores em sua sub-rede local. Isso pode abrir vulnerabilidades em computadores em sua subrede local, mas o firewall continua a bloquear informações que vêm de fora da subrede.
 
- **Desbloquear a depuração remota de qualquer computador** habilita a depuração remota de computadores em qualquer lugar na rede. Essa configuração é a menos segura.
+ **Desbloquear a depuração remota de qualquer computador** Habilita a depuração remota de máquinas em qualquer lugar na rede. Essa configuração é a menos segura.
 
 ## <a name="see-also"></a>Consulte também
 

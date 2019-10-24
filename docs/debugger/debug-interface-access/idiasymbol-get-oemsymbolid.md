@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f0a08b29c3d1dae8b79650f450faaf8b9e1d452a
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 60d1486ba654ddba9fdd1dae6439cafbb1f81f29
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64830770"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739589"
 ---
-# <a name="idiasymbolgetoemsymbolid"></a>IDiaSymbol::get_oemSymbolId
-Recupera o valor da ID do símbolo do fabricante original do equipamento (OEM).
+# <a name="idiasymbolget_oemsymbolid"></a>IDiaSymbol::get_oemSymbolId
+Recupera o valor da ID do símbolo do OEM (fabricante original do equipamento).
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -33,18 +33,18 @@ HRESULT get_oemSymbolId ( 
 #### <a name="parameters"></a>Parâmetros
  `pRetVal`
 
-[out] Retorna que um OEM atribuído internamente símbolo ID.
+fora Retorna a ID de símbolo atribuída internamente de um OEM.
 
-## <a name="return-value"></a>Valor de retorno
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE` ou um código de erro.
 
 > [!NOTE]
-> Um valor de retorno `S_FALSE` significa que a propriedade não está disponível para o símbolo.
+> Um valor de retorno de `S_FALSE` significa que a propriedade não está disponível para o símbolo.
 
 ## <a name="remarks"></a>Comentários
- O identificador é um valor exclusivo criado pelo SDK do DIA para marcar todos os símbolos como exclusivo.
+ O identificador é um valor exclusivo criado pelo DIA SDK para marcar todos os símbolos como exclusivos.
 
- Essa propriedade se aplica apenas aos símbolos com um [enumeração SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) tipo de `SymTagCustomType`.
+ Essa propriedade só se aplica a símbolos com um tipo de [Enumeração SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) de `SymTagCustomType`.
 
 ## <a name="see-also"></a>Consulte também
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

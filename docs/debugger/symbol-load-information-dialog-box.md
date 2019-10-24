@@ -1,5 +1,5 @@
 ---
-title: Caixa de diálogo carregar informações de símbolo | Microsoft Docs
+title: Caixa de diálogo informações de carregamento de símbolo | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,20 +15,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5606101d4c4a790db57f2a5b051bc128ea50c684
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c6bc7a795d45caf712b837f7d59e3ce6a0f9c8aa
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62901922"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72729004"
 ---
 # <a name="symbol-load-information-dialog-box"></a>Caixa de diálogo Informações de Carga de Símbolo
 A caixa de diálogo **Informações de Carregamento de Símbolos** é aberta quando você clica com o botão direito do mouse na janela **Módulos** e escolhe **Informações de Carregamento de Símbolos**.
 
 ## <a name="uielement-list"></a>Lista UIElement
- **Informações** exibe os diretórios pesquisados para arquivos de símbolo (arquivos PDB) com base no Visual Studio, instale as configurações e as alterações feitas nas configurações de símbolo a **opções** caixa de diálogo.
+ **Informações** do Mostra os diretórios pesquisados para arquivos de símbolo (arquivos PDB) com base nas configurações de instalação do Visual Studio e nas alterações feitas nas configurações de símbolo na caixa de diálogo **Opções** .
 
- **Configurações de símbolo** clique neste botão para alterar as configurações de símbolo na **opções** caixa de diálogo (**depuração** categoria **símbolos** página). Nessa página, você pode adicionar ou remover locais de símbolos, especificar uma localização de cache local se estiver usando um servidor de símbolos e controlar quando locais de símbolos forem pesquisados.
+ **Configurações de símbolo** Clique neste botão para alterar as configurações de símbolo na caixa de diálogo **Opções** (categoria**depuração** , página **símbolos** ). Nessa página, você pode adicionar ou remover locais de símbolos, especificar uma localização de cache local se estiver usando um servidor de símbolos e controlar quando locais de símbolos forem pesquisados.
 
 ## <a name="see-also"></a>Consulte também
 - [Especificar arquivos de símbolo (.pdb) e de origem](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)

@@ -1,5 +1,5 @@
 ---
-title: Quando o ponto de interrupção é a caixa de diálogo ocorrências | Microsoft Docs
+title: Caixa de diálogo quando o ponto de interrupção é atingido | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,22 +17,22 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d4cc3c2366ca20328f591b0661e8c2b3e5af1e45
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 53b19f4dd0d4b0cb97bb33e4895f36c4dc8f670c
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62929198"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72728142"
 ---
 # <a name="when-breakpoint-is-hit-dialog-box"></a>Caixa de diálogo Ponto de Interrupção Quando Visitado
 Com essa caixa de diálogo, você pode personalizar a ação que ocorre quando um ponto de interrupção é atingido.
 
 ## <a name="uielement-list"></a>Lista UIElement
- **Imprimir uma mensagem** imprime uma mensagem, usando a sintaxe do DebuggerDisplay. Para obter mais informações, consulte [usando o atributo DebuggerDisplay](../debugger/using-the-debuggerdisplay-attribute.md).
+ **Imprimir uma mensagem** Imprime uma mensagem usando a sintaxe DebuggerDisplay. Para obter mais informações, consulte [usando o atributo DebuggerDisplay](../debugger/using-the-debuggerdisplay-attribute.md).
 
  Essa caixa de texto também oferece suporte à palavras-chave especiais (como $ADDRESS) que podem ser usadas por si mesmas ou nas chaves de uma expressão do DebuggerDisplay. As palavras-chave disponíveis são listadas na caixa de diálogo.
 
- **Continuar execução** esse controle é habilitado apenas quando **imprimir uma mensagem** está selecionado. Com esse controle selecionado, você pode usar um ponto de interrupção como um tracepoint para rastrear a execução do programa, em vez de interrompê-lo quando o local for atingido.
+ **Continuar execução** Esse controle é habilitado somente quando **a impressão de uma mensagem** é selecionada. Com esse controle selecionado, você pode usar um ponto de interrupção como um tracepoint para rastrear a execução do programa, em vez de interrompê-lo quando o local for atingido.
 
 ## <a name="see-also"></a>Consulte também
 - [Usando pontos de interrupção](../debugger/using-breakpoints.md)

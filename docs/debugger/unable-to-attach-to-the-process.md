@@ -14,27 +14,27 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ee917e10809f07ac7c93f924711b0ed42c28135b
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 22d798d30d09cb509f53d093ae61bb1a02b414ec
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64799878"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72728882"
 ---
 # <a name="unable-to-attach-to-the-process"></a>Não é possível anexar ao processo
 Não é possível anexar ao processo. O componente do depurador no servidor recebeu acesso negado ao se conectar a esse computador.
 
  Há dois cenários comuns que causam esse erro:
 
- **Cenário 1:** A máquina está executando o Windows XP. O computador B executa o Windows Server 2003. O registro no computador B contém o seguinte valor DWORD:
+ **Cenário 1:** o computador A executa o Windows XP. O computador B executa o Windows Server 2003. O registro no computador B contém o seguinte valor DWORD:
 
  `HKLM\Software\Microsoft\MachineDebugManager\AllowLaunchAsOtherUser=1`
 
  O usuário 1 inicia uma sessão do Terminal Server (sessão 1) no computador B e inicia um aplicativo gerenciado a partir dessa sessão.
 
- Usuário 2, que é o administrador em ambos os computadores, é registrado no computador A. A partir daí, ele tenta se anexar a um aplicativo em execução na sessão 1 no computador B.
+ O usuário 2, que é o administrador em ambos os computadores, está conectado no computador A. A partir daí, ele tentará anexar a um aplicativo em execução na sessão 1 no computador B.
 
- **Cenário 2:** Um usuário estiver conectado em dois computadores, A e B, no mesmo grupo de trabalho, usando a mesma senha em ambos os computadores. O depurador está em execução na máquina e tentando se conectar a um aplicativo gerenciado em execução no computador do computador B. A tem **acesso à rede: Modelo de compartilhamento e segurança para contas locais** definido como **convidado**.
+ **Cenário 2:** um usuário fez o logon em dois computadores, A e B, do mesmo grupo de trabalho, usando a mesma senha em ambos os computadores. O depurador está em execução no computador A e tentando se conectar a um aplicativo gerenciado em execução no computador B. A máquina A tem **acesso à rede: modelo de compartilhamento e segurança para contas locais** definidas como **convidado**.
 
 ### <a name="to-solve-scenario-1"></a>Para solucionar o cenário 1
 
@@ -50,12 +50,12 @@ Não é possível anexar ao processo. O componente do depurador no servidor rece
 
 4. Na janela Política de Segurança Local, selecione **Políticas Locais**.
 
-5. No **diretivas** coluna, clique duas vezes em **acesso à rede: Modelo de compartilhamento e segurança para contas locais**.
+5. Na coluna **Políticas**, clique duas vezes em **Acesso à rede: modelo de compartilhamento e segurança para contas locais**.
 
-6. No **acesso à rede: Modelo de compartilhamento e segurança para contas locais** caixa de diálogo, altere a configuração de segurança local para **clássico**e clique em **Okey**.
+6. Na caixa de diálogo **Acesso à rede: modelo de compartilhamento e segurança para contas locais**, altere a configuração de segurança local para **Clássico** e clique em **OK**.
 
     > [!CAUTION]
-    > A alteração do modelo de segurança para Clássico pode resultar em acesso inesperado a arquivos e componentes DCOM compartilhados. Se você fizer essa alteração, um usuário remoto poderá ser autenticado com sua conta de usuário local em vez como Convidado. Se um usuário remoto corresponder ao seu nome de usuário e sua senha, esse usuário terá acesso a qualquer pasta ou objeto DCOM você compartilhar. Se você usar esse modelo de segurança, verifique se todas as contas de usuário no computador têm senhas fortes ou configure uma ilha isolada de rede para os computadores de depuração e depurados para impedir o acesso não autorizado.
+    > A alteração do modelo de segurança para Clássico pode resultar em acesso inesperado a arquivos e componentes DCOM compartilhados. Se você fizer essa alteração, um usuário remoto poderá ser autenticado com sua conta de usuário local em vez como Convidado. Se um usuário remoto corresponder ao seu nome de usuário e senha, esse usuário poderá acessar qualquer pasta ou objeto DCOM que você compartilhou. Se você usar esse modelo de segurança, certifique-se de que todas as contas de usuário no computador tenham senhas fortes ou configurem uma ilha de rede isolada para a depuração e computadores depurados para impedir o acesso não autorizado.
 
 7. Feche todas as janelas.
 

@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 209ce1189963a3943a691b71c840474c3da1a07c
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 7185498f351b8f69c926b7247ea348d5674ce6a2
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64808826"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740680"
 ---
-# <a name="idiasymbolgetfarreturn"></a>IDiaSymbol::get_farReturn
-Recupera um sinalizador que especifica se a função contém um retorno.
+# <a name="idiasymbolget_farreturn"></a>IDiaSymbol::get_farReturn
+Recupera um sinalizador que especifica se a função contém um retorno distante.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -33,20 +33,20 @@ HRESULT get_farReturn(
 #### <a name="parameters"></a>Parâmetros
  `pFlag`
 
-[in] Retorna `TRUE` se a função usa um retorno, caso contrário, retornará `FALSE`.
+no Retorna `TRUE` se a função usa um retorno distante, caso contrário, retorna `FALSE`.
 
-## <a name="return-value"></a>Valor de retorno
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE` ou um código de erro.
 
 > [!NOTE]
-> Um valor de retorno `S_FALSE` significa que a propriedade não está disponível para o símbolo.
+> Um valor de retorno de `S_FALSE` significa que a propriedade não está disponível para o símbolo.
 
 ## <a name="requirements"></a>Requisitos
 
 |Requisito|Descrição|
 |-----------------|-----------------|
 |Cabeçalho:|dia2.h|
-|Versão:|V DIA SDK 8.0|
+|Versão:|DIA SDK v 8.0|
 
 ## <a name="see-also"></a>Consulte também
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

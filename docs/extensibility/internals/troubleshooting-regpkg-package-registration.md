@@ -1,5 +1,5 @@
 ---
-title: Solução de problemas de registro de pacote RegPkg | Microsoft Docs
+title: Solucionando problemas de registro do pacote RegPkg | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,31 +10,31 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 219a21eac296daa442fc2f705eb2758790777333
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 386a1a17c036207d122e4b3c7cb142a628dcfe38
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66344749"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72722271"
 ---
 # <a name="troubleshooting-regpkg-package-registration"></a>Solucionando problemas de registro de pacote RegPkg
 > [!NOTE]
-> É a maneira preferencial para registrar os pacotes no Visual Studio por meio de arquivos. pkgdef. Isso permite a implantação de extensão sem a necessidade de acessar o registro do sistema. Pkgdef arquivos são criados usando o [utilitário CreatePkgDef](../../extensibility/internals/createpkgdef-utility.md).
+> A maneira preferida de registrar pacotes no Visual Studio é usando arquivos. pkgdef. Isso permite a implantação da extensão sem a necessidade de acessar o registro do sistema. Os arquivos pkgdef são criados usando o [utilitário CreatePkgDef](../../extensibility/internals/createpkgdef-utility.md).
 
- Para registrar um pacote usando o RegPkg no [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], você deve usar a versão do RegPkg é apropriado para seu pacote.
+ Para registrar um pacote usando o RegPkg no [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], você deve usar a versão do RegPkg apropriada para seu pacote.
 
-## <a name="regpkg-versions-related-to-package-versions"></a>Versões RegPkg relacionadas a versões de pacote
- Há duas versões do RegPkg. Uma versão está incluída no [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Use esta versão para registrar os pacotes que foram criados usando um dos seguintes assemblies:
+## <a name="regpkg-versions-related-to-package-versions"></a>Versões do RegPkg relacionadas a versões do pacote
+ Há duas versões do RegPkg. Uma versão está incluída no [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Use esta versão para registrar pacotes que foram criados usando um dos seguintes assemblies:
 
-1. Microsoft.VisualStudioShell.9.0.dll
+1. Microsoft. VisualStudioShell. 9.0. dll
 
-2. Microsoft.VisualStudioShell.10.0.dll
+2. Microsoft. VisualStudioShell. 10.0. dll
 
-3. Microsoft.VisualStudioShell.11.0.dll
+3. Microsoft. VisualStudioShell. 11.0. dll
 
-   Ele não pode registrar os pacotes que foram criados usando o assembly Microsoft.VisualStudio.Shell.dll anterior.
+   Ele não pode registrar pacotes que foram criados usando o assembly Microsoft. VisualStudio. Shell. dll anterior.
 
-   A versão anterior do RegPkg pode registrar os pacotes que foram criados usando o assembly Microsoft.VisualStudio.Shell.dll. No entanto, ele não pode registrar os pacotes criados usando versões mais recentes do assembly.
+   A versão anterior do RegPkg pode registrar pacotes que foram criados usando o assembly Microsoft. VisualStudio. Shell. dll. No entanto, ele não pode registrar pacotes criados usando versões posteriores desse assembly.
 
 ## <a name="see-also"></a>Consulte também
 - [VSPackages](../../extensibility/internals/vspackages.md)

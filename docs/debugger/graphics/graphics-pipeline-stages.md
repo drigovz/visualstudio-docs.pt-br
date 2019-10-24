@@ -1,5 +1,5 @@
 ---
-title: Estágios de Pipeline gráficos | Microsoft Docs
+title: Estágios de pipeline de gráficos | Microsoft Docs
 ms.date: 02/09/2017
 ms.topic: conceptual
 f1_keywords:
@@ -10,109 +10,109 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 042eebc6d672000aa43425a30e96a8ac41bcd8af
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 1d697313289bbf00234764cc04603b7bc256f174
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63388533"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72735476"
 ---
 # <a name="graphics-pipeline-stages"></a>Estágios de Pipeline Gráficos
-A janela estágios de Pipeline gráficos ajuda a entender como uma chamada de desenho individuais é transformada por cada estágio do pipeline de gráficos do Direct3D.
+A janela estágios de pipeline de gráficos ajuda você a entender como uma chamada de desenho individual é transformada por cada estágio do pipeline de gráficos do Direct3D.
 
- Esta é a janela de estágios de Pipeline:
+ Esta é a janela estágios de pipeline:
 
- ![Um objeto 3D percorre os estágios de pipeline.](media/gfx_diag_demo_pipeline_stages_orientation.png)
+ ![Um objeto 3D passa pelos estágios de pipeline.](media/gfx_diag_demo_pipeline_stages_orientation.png)
 
 ## <a name="understanding-the-graphics-pipeline-stages-window"></a>Noções básicas sobre a janela Estágios de Pipeline Gráficos
- A janela estágios de Pipeline visualiza o resultado de cada estágio de pipeline gráficos separadamente, para cada chamada de desenho. Normalmente, os resultados dos estágios no meio do pipeline estiverem ocultas, tornando difícil determinar onde um problema de renderização é iniciado. Visualizando separadamente cada estágio, a janela estágios de Pipeline torna mais fácil ver onde o problema começa — por exemplo, você pode ver facilmente quando o estágio de sombreador de vértice inesperadamente faz com que um objeto a ser desenhado fora da tela.
+ A janela estágios de pipeline visualiza o resultado de cada estágio do pipeline gráfico separadamente, para cada chamada de desenho. Normalmente, os resultados de estágios no meio do pipeline estão ocultos, dificultando a localização de um problema de processamento iniciado. Ao visualizar cada estágio separadamente, a janela estágios de pipeline facilita a visualização de onde o problema começa — por exemplo, você pode ver facilmente quando o estágio do sombreador de vértice causa inesperadamente que um objeto seja desenhado fora da tela.
 
- Depois de identificar o estágio em que o problema ocorre, você pode usar outras ferramentas do analisador de gráficos para examinar como os dados foram interpretados ou transformados. Problemas de renderização que aparecem nos estágios de pipeline geralmente são descritores de formato de vértice relacionados a incorreto, programas de sombreador com bugs ou estado configurado incorretamente.
+ Depois de identificar o estágio em que o problema ocorre, você pode usar as outras ferramentas do analisador de gráficos para examinar como os dados foram interpretados ou transformados. Os problemas de renderização que aparecem nos estágios de pipeline geralmente estão relacionados a descritores incorretos de formato de vértice, programas de sombreador de bugs ou estado configurado incorretamente.
 
-### <a name="links-to-related-graphics-objects"></a>Links para os objetos gráficos relacionados
- Contexto adicional, às vezes, é necessário para determinar por que uma chamada de desenho interage de uma maneira específica com o pipeline de gráficos. Para facilitar a localização deste contexto adicional, os links de janela estágios de Pipeline gráficos a um ou mais objetos que fornecem contexto adicional relacionado ao que está acontecendo no pipeline gráfica.
+### <a name="links-to-related-graphics-objects"></a>Links para objetos gráficos relacionados
+ Às vezes, é necessário contexto adicional para determinar por que uma chamada de desenho interage de forma específica com o pipeline de gráficos. Para tornar esse contexto adicional mais fácil de localizar, o pipeline de gráficos estágios da janela leva a um ou mais objetos que fornecem contexto adicional relacionado ao que está acontecendo no pipeline de gráficos.
 
-- No Direct3D 12 esse objeto é geralmente uma lista de comandos.
+- No Direct3D 12, esse objeto é geralmente uma lista de comandos.
 
-- No Direct3D 11 esse objeto é geralmente um contexto de dispositivo de gráficos.
+- No Direct3D 11, esse objeto é geralmente um contexto de dispositivo de gráficos.
 
-  Esses links são parte da assinatura do evento atual do elementos gráficos que está localizada no canto superior esquerdo da janela estágios de Pipeline gráficos. Depois de qualquer um desses links para examinar os detalhes adicionais sobre o objeto.
+  Esses links fazem parte da assinatura de evento de gráficos atual localizada no canto superior esquerdo da janela de estágios de pipeline de gráficos. Siga qualquer um desses links para examinar detalhes adicionais sobre o objeto.
 
 ### <a name="viewing-and-debugging-shader-code"></a>Exibição e depuração do código do sombreador
- Você pode examinar e depurar o código para o vértice, hull, domínio, geometria e pixel shaders usando os controles na parte inferior de seus respectivos estágios na janela estágios de Pipeline.
+ Você pode examinar e depurar o código para os sombreadores de vértice, envoltória, domínio, geometria e pixel usando os controles na parte inferior de seus respectivos estágios na janela estágios de pipeline.
 
 #### <a name="to-view-a-shaders-source-code"></a>Para exibir o código-fonte do sombreador
 
-- No **estágios de Pipeline gráficos** janela, localize o estágio de sombreador que corresponde ao sombreador que deseja examinar. Em seguida, abaixo da imagem de visualização, siga o link de título do estágio de sombreador — por exemplo, siga o link **obj:30 do sombreador de vértices** para exibir o código de origem do sombreador de vértice.
+- Na janela **estágios de pipeline de gráficos** , localize o estágio do sombreador que corresponde ao sombreador que você deseja examinar. Em seguida, abaixo da imagem de visualização, siga o link de título de estágio do sombreador – por exemplo, siga o link **vértice do sombreador obj: 30** para exibir o código-fonte do sombreador do vértice.
 
     > [!TIP]
-    > O número de objeto **obj:30**, identifica esse sombreador em toda a interface de analisador de gráficos como a janela de histórico de pixel e de tabela do objeto.
+    > O número do objeto, **obj: 30**, identifica esse sombreador em toda a interface do analisador de gráficos, como na janela de objeto e no histórico de pixels.
 
 #### <a name="to-debug-a-shader"></a>Para depurar um sombreador
 
-- No **estágios de Pipeline gráficos** janela, localize o estágio de sombreador que corresponde ao sombreador que deseja depurar. Em seguida, abaixo da imagem de visualização, escolha **iniciar depuração**. Esse ponto de entrada para os padrões de depurador HLSL para a primeira invocação do sombreador para o estágio correspondente — ou seja, o primeiro pixel, vértice ou primitivo que é processado pelo sombreador durante esta chamada de desenho. Invocações deste sombreador para um vértice ou pixel específico podem ser acessadas por meio de **histórico de Pixel de gráficos**.
+- Na janela **estágios de pipeline de gráficos** , localize o estágio do sombreador que corresponde ao sombreador que você deseja depurar. Em seguida, abaixo da imagem de visualização, escolha **Iniciar Depuração**. Esse ponto de entrada no depurador HLSL usa como padrão a primeira invocação do sombreador para o estágio correspondente, ou seja, o primeiro pixel, vértice ou primitiva que é processado pelo sombreador durante essa chamada de desenho. As invocações deste sombreador para um pixel ou vértice específico podem ser acessadas por meio do **histórico de pixels de gráficos**.
 
 ### <a name="the-pipeline-stages"></a>Os estágios de pipeline
- A janela estágios de Pipeline visualiza apenas os estágios do pipeline que estavam ativos durante a chamada de desenho. Cada estágio do pipeline gráfica transforma uma entrada de estágio anterior e passa o resultado para o próximo estágio. O primeiro estágio, o Assembler de entrada — extrai dados de índice e vértice de seu aplicativo como sua entrada; o último estágio — a fusão de saída — combina recentemente renderizado pixels junto com o conteúdo atual do framebuffer ou destino de renderização como sua saída para produzir a imagem final, você vê na tela.
+ A janela estágios de pipeline visualiza apenas os estágios do pipeline que estavam ativos durante a chamada de desenho. Cada estágio do pipeline gráfico transforma a entrada do estágio anterior e passa o resultado para o próximo estágio. O primeiro estágio — o Assembler de entrada — usa dados de índice e vértice do seu aplicativo como sua entrada; o último estágio — a mesclagem de saída — combina pixels recém renderizados junto com o conteúdo atual do framebuffer ou destino de renderização como sua saída para produzir a imagem final que você vê na tela.
 
 > [!NOTE]
 > Os sombreadores de computação não têm suporte na janela **Estágios de Pipeline Gráficos**.
 
- **Entrada do Assembler** o Assembler de entrada lê os dados de índice e vértice especificados pelo seu aplicativo e monta no hardware de gráficos.
+ **Montador de entrada** O Assembler de entrada lê os dados de índice e vértice especificados pelo seu aplicativo e o monta para o hardware de gráficos.
 
- Na janela estágios de Pipeline, a saída do Assembler de entrada é visualizada como um modelo de wireframe. Para tirar a examinar mais detalhadamente os resultados, selecione **Assembler de entrada** na **estágios de Pipeline gráficos** janela para exibir os vértices montados em 3D completo usando o Editor de modelo.
+ Na janela estágios de pipeline, a saída do montador de entrada é visualizada como um modelo de wireframe. Para obter uma análise mais detalhada do resultado, selecione **Assembler de entrada** na janela **estágios de pipeline de gráficos** para exibir os vértices montados em 3D completo usando o editor de modelo.
 
 > [!NOTE]
 > Se a semântica `POSITION` não estiver presente na saída do assembler de entrada, nada é exibido no estágio **Entrada do Assembler**.
 
- **Sombreador de vértices** o estágio de sombreador de vértice processa vértices, normalmente executando operações como a transformação, colocação de capa e iluminação. Sombreadores de vértices produzem o mesmo número de vértices que eles utiliza como entrada.
+ **Sombreador de vértice** O estágio do sombreador de vértice processa vértices, normalmente executando operações como transformação, aparência e iluminação. Os sombreadores de vértice produzem o mesmo número de vértices que eles adotam como entrada.
 
- Na janela estágios de Pipeline, a saída do sombreador de vértice é visualizada como uma imagem de varredura de wireframe. Para tirar a examinar mais detalhadamente os resultados, selecione **sombreador de vértice** na **estágios de Pipeline gráficos** windows para exibir os vértices processados no Editor de imagens.
+ Na janela estágios de pipeline, a saída do sombreador de vértice é visualizada como uma imagem rasterizada de wireframe. Para obter uma análise mais detalhada do resultado, selecione o **sombreador de vértice** no **pipeline de gráficos estágios** janelas para exibir os vértices processados no editor de imagens.
 
 > [!NOTE]
 > Se a semântica `POSITION` ou `SV_POSITION` não estiver presente na saída do sombreador de vértice, nada é exibido no estágio **Sombreador de Vértice**.
 
- **Sombreador Hull** (Direct3D 11 e Direct3D 12 somente) o estágio de sombreador hull processa os pontos de controle que definem uma superfície de ordem inferior, como uma linha, triângulo ou quad. Como saída, ele produz um patch de geometria de ordem superior e constantes do patch que são passados para o estágio de mosaico de função fixa.
+ **Sombreador envoltória** (somente Direct3D 11 e Direct3D 12) o estágio do sombreador envoltória processa pontos de controle que definem uma superfície de ordem inferior, como uma linha, um triângulo ou um quatro. Como saída, ele produz um patch de geometria de ordem superior e constantes de patch que são transmitidas para o estágio de mosaico de função fixa.
 
- O estágio de sombreador hull não é visualizado na janela estágios de Pipeline.
+ O estágio do sombreador envoltória não é visualizado na janela estágios de pipeline.
 
- **Estágio de tessellator** (Direct3D 11 e Direct3D 12 somente) o estágio de tessellator é uma unidade de hardware de função fixa (não programável) que pré-processa o domínio representado pela saída do sombreador hull. Como saída, ele cria um padrão de amostragem do domínio e um conjunto de primitivos menores — pontos, linhas ou triângulos — que se conectam a esses exemplos.
+ **Estágio Tessellator** (somente Direct3D 11 e Direct3D 12) o estágio Tessellator é uma unidade de hardware de função fixa (não programável) que processa o domínio representado pela saída do sombreador envoltória. Como saída, ele cria um padrão de amostragem do domínio e um conjunto de primitivos menores — pontos, linhas, triângulos — que conectam esses exemplos.
 
- O estágio de tessellator não é visualizado na janela estágios de Pipeline.
+ O estágio Tessellator não é visualizado na janela estágios de pipeline.
 
- **Sombreador de domínio** (Direct3D 11 e Direct3D 12 somente) o estágio de sombreador de domínio processa os patches de geometria de ordem superior do sombreador Hull, fatores de subdivisão juntos do estágio de mosaico. O mosaico fatores podem ser incluem os fatores de entrada tessellator, bem como fatores de saída. Como saída, ele calcula a posição de vértice de um ponto em que o patch de saída de acordo com os fatores de tessellator.
+ **Sombreador de domínio** (somente Direct3D 11 e Direct3D 12) o estágio de sombreador de domínio processa patches de geometria de ordem superior do sombreador envoltória, juntos fatores de mosaico do estágio de mosaico. Os fatores de mosaico podem incluir fatores de entrada Tessellator, bem como fatores de saída. Como saída, ele calcula a posição de vértice de um ponto no patch de saída de acordo com os fatores de Tessellator.
 
- O estágio de sombreador de domínio não é visualizado na janela estágios de Pipeline.
+ O estágio do sombreador de domínio não é visualizado na janela estágios de pipeline.
 
- **Sombreador de geometria** o estágio de sombreador de geometria processa primitivos inteiros — triângulos, linhas ou pontos — junto com os dados de vértice opcionais para primitivos adjacentes de borda. Ao contrário de sombreadores de vértices, sombreadores de geometria podem produzir mais ou menos primitivos que eles usam como de entrada.
+ **Sombreador de geometria** O estágio Geometry Shader processa primitivos inteiros, pontos, linhas ou triângulos, juntamente com dados de vértice opcionais para primitivos adjacentes de borda. Ao contrário dos sombreadores de vértice, os sombreadores de geometria podem produzir mais ou menos primitivos do que eles utilizam como entrada.
 
- Na janela estágios de Pipeline, a saída do sombreador de geometria é visualizada como uma imagem de varredura de wireframe. Para tirar a examinar mais detalhadamente os resultados, selecione **sombreador de geometria** na **estágios de Pipeline gráficos** janela para exibir os primitivos processados no Editor de imagens.
+ Na janela estágios de pipeline, a saída do sombreador de geometria é visualizada como uma imagem rasterizada de wireframe. Para obter uma análise mais detalhada do resultado, selecione **sombreador de geometria** na janela **estágios de pipeline de gráficos** para exibir os primitivos processados no editor de imagens.
 
- **Estágio de saída de Stream** o estágio de output stream pode interceptar primitivos transformados antes da rasterização e gravá-las em memória; a partir daí, os dados podem ser recirculated como entrada para anteriores estágios de pipeline gráficos ou ser lidos novamente pela CPU.
+ **Estágio de saída do fluxo** O estágio de saída de fluxo pode interceptar primitivos transformados antes da rasterização e gravá-los na memória; a partir daí, os dados podem ser recirculados como entrada para os estágios anteriores do pipeline de gráficos ou ser lidos de volta pela CPU.
 
- O estágio de output stream não é visualizado na janela estágios de Pipeline.
+ O estágio de saída do fluxo não é visualizado na janela estágios de pipeline.
 
- **Rasterizer Stage** rasterizer stage é uma unidade de hardware (não programável) de função fixa que converte os primitivos de vetor — pontos, linhas ou triângulos — em uma imagem de varredura, executando a conversão de linha de varredura. Durante a rasterização vértices são transformados no espaço do clipe homogêneo e recortados. Como saída, sombreadores de pixel são mapeados e os atributos por vértice são interpolados entre o primitivo e preparados para o sombreador de pixel.
+ **Estágio do rasterizador** O estágio rasterizador é uma unidade de hardware de função fixa (não programável) que converte primitivos de vetor – pontos, linhas, triângulos — em uma imagem rasterizada executando a conversão de linha de verificação. Durante os vértices de rasterização são transformados no clipe homogêneo e recortados. Como saída, os sombreadores de pixel são mapeados e os atributos por vértice são interpolados na primitiva e ficam prontos para o sombreador de pixel.
 
- Rasterizer stage não é visualizado na janela estágios de Pipeline.
+ O estágio rasterizador não é visualizado na janela estágios de pipeline.
 
- **Sombreador de pixel** o estágio de sombreador de pixel processa primitivos de varredura junto com os dados de vértice interpolados para gerar os valores por pixel, como cor e a profundidade.
+ **Sombreador de pixel** O estágio de sombreador de pixel processa primitivos rasterizados junto com dados de vértice interpolados para gerar valores por pixel, como cor e profundidade.
 
- Na janela estágios de Pipeline, a saída do sombreador de pixel é visualizada como uma imagem de varredura de quatro cores. Para tirar a examinar mais detalhadamente os resultados, selecione **sombreador de Pixel** na **estágios de Pipeline gráficos** janela para exibir os primitivos processados no Editor de imagens.
+ Na janela estágios de pipeline, a saída do sombreador de pixel é visualizada como uma imagem rasterizada de cor completa. Para ver mais de perto o resultado, selecione **sombreador de pixel** na janela **estágios de pipeline de gráficos** para exibir os primitivos processados no editor de imagens.
 
- **Fusão de saída** o estágio de fusão de saída combina o efeito de pixels renderizados recentemente junto com o conteúdo existente de seus buffers correspondentes — cor, profundidade e estêncil — para produzir novos valores nesses buffers.
+ **Fusão de saída** O estágio de fusão de saída combina o efeito de pixels recém renderizados junto com o conteúdo existente de seus buffers correspondentes — Color, Depth e stencil — para produzir novos valores nesses buffers.
 
- Na janela estágios de Pipeline, a saída de fusão de saída é visualizada como uma imagem de varredura de quatro cores. Para aproveitar a examinar mais detalhadamente os resultados, selecione **fusão de saída** na **estágios de Pipeline gráficos** janela para exibir o framebuffer mesclada.
+ Na janela estágios de pipeline, a saída da mesclagem de saída é visualizada como uma imagem rasterizada de cor completa. Para examinar os resultados mais detalhadamente, selecione **fusão de saída** na janela estágios de **pipeline de gráficos** para exibir o framebuffer mesclado.
 
-### <a name="vertex-and-geometry-shader-preview"></a>Vértices e visualização do sombreador de geometria
- Quando você seleciona o estágio de sombreador de geometria ou de vértice na **estágios de Pipeline** janela, você pode exibir as entradas e saídas de sombreador no painel abaixo.  Aqui, você encontrará detalhes sobre a lista de vértices fornecido para os sombreadores depois que eles foram reunidos pelo estágio do assembler de entrada.
+### <a name="vertex-and-geometry-shader-preview"></a>Visualização de vértice e do sombreador de geometria
+ Quando você seleciona o ponto de vértice ou o estágio do sombreador de geometria na janela **estágios de pipeline** , você pode exibir as entradas e saídas do sombreador no painel abaixo.  Aqui, você encontrará detalhes sobre a lista de vértices fornecidos aos sombreadores depois que eles tiverem sido montados pelo estágio de Assembler de entrada.
 
- ![O Visualizador de buffer de entrada do estágio de sombreador de vértice](media/gfx_diag_vertex_shader_inbuffers.png)
+ ![Visualizador do buffer de entrada do estágio do sombreador de vértice](media/gfx_diag_vertex_shader_inbuffers.png)
 
- Para exibir o resultado do estágio de sombreador de vértice, escolha a miniatura do estágio de sombreador de vértice para exibir um wireframe de varredura em tamanho normal, da malha após seu foram transformados pelo sombreador de vértice.
+ Para exibir o resultado do estágio do sombreador de vértice, escolha a miniatura do estágio do sombreador de vértice para exibir um wireframe de tamanho completo e rasterizado da malha após sua transformação pelo sombreador de vértice.
 
- ![A visualização de resultado de estágio de sombreador de vértice](media/gfx_diag_vertex_shader_preview.png)
+ ![A visualização do resultado do estágio do sombreador de vértice](media/gfx_diag_vertex_shader_preview.png)
 
 ## <a name="see-also"></a>Consulte também
-- [Passo a passo: Objetos ausentes devido ao sombreamento de vértice](walkthrough-missing-objects-due-to-vertex-shading.md)
-- [Passo a passo: Como depurar erros de renderização devido ao sombreamento](walkthrough-debugging-rendering-errors-due-to-shading.md)
+- [Passo a passo: objetos ausentes devido ao sombreamento de vértice](walkthrough-missing-objects-due-to-vertex-shading.md)
+- [Passo a passo: depurando erros de renderização devido ao sombreamento](walkthrough-debugging-rendering-errors-due-to-shading.md)

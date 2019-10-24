@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 66abd987e3da4fadaac9d5b2de6664c4ae9e24ac
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 07402ef7028ecfb7bb5b2c6e33ae06bc98ffe709
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62829752"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744386"
 ---
 # <a name="idiaenumlinenumbersnext"></a>IDiaEnumLineNumbers::Next
 Recupera um número especificado de números de linha na sequência de enumeração.
@@ -35,18 +35,18 @@ HRESULT Next ( 
 #### <a name="parameters"></a>Parâmetros
  celt
 
-[in] O número de números de linha no enumerador a ser recuperado.
+no O número de números de linha no enumerador a ser recuperado.
 
  rgelt
 
-[out] Retorna uma matriz de [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md) objetos que representam os números de linha desejado.
+fora Retorna uma matriz de objetos [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md) que representam os números de linha desejados.
 
  pceltFetched
 
-[out] Retorna o número de números de linha no enumerador buscado.
+fora Retorna o número de números de linha no enumerador obtido.
 
-## <a name="return-value"></a>Valor de retorno
- Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não houver nenhum mais números de linha. Caso contrário, retornará um código de erro.
+## <a name="return-value"></a>Valor retornado
+ Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não houver mais números de linha. Caso contrário, retornará um código de erro.
 
 ## <a name="see-also"></a>Consulte também
 - [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)

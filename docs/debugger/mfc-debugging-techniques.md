@@ -25,12 +25,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1380cf2cfd4d1ffe729fdd4a6ce9cfb2ba7d9ab6
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: dd4a481a8d4f283204b99cfef4a07106d3e479cb
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72435650"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72731290"
 ---
 # <a name="mfc-debugging-techniques"></a>Técnicas de depuração MFC
 Se você estiver depurando um programa MFC, essas técnicas de depuração poderão ser úteis.
@@ -97,7 +97,7 @@ TRACE( "x = %d and y = %d\n", x, y );
 TRACE( "x = %d and y = %x and z = %f\n", x, y, z );
 ```
 
-A macro de rastreamento apropriadamente manipula os parâmetros char @ no__t-0 e wchar_t @ no__t-1. Os exemplos a seguir demonstram o uso da macro TRACE junto com os diferentes tipos de parâmetros de cadeia de caracteres.
+A macro de rastreamento apropriadamente manipula os parâmetros char \* e wchar_t \*. Os exemplos a seguir demonstram o uso da macro TRACE junto com os diferentes tipos de parâmetros de cadeia de caracteres.
 
 ```cpp
 TRACE( "This is a test of the TRACE macro that uses an ANSI string: %s %d\n", "The number is:", 2);
@@ -160,7 +160,7 @@ Para que você possa usar os recursos de diagnóstico de memória, deverá habil
 
 2. Depois que seu programa executar as operações de alocação e desalocação de memória, crie outro objeto `CMemoryState` e chame `Checkpoint` para esse objeto. Isso obtém um segundo instantâneo do uso da memória.
 
-3. Crie um terceiro objeto `CMemoryState` e chame sua função de membro [CMemoryState::D ifference](/cpp/mfc/reference/cmemorystate-structure#difference) , fornecendo como argumentos os dois objetos anteriores do @no__t 2. Se houver uma diferença entre os dois estados da memória, a função `Difference` retornará um valor diferente de zero. Isso indica que alguns blocos de memória não foram desalocados.
+3. Crie um terceiro objeto de `CMemoryState` e chame sua função de membro [CMemoryState::D ifference](/cpp/mfc/reference/cmemorystate-structure#difference) , fornecendo como argumentos os dois objetos de `CMemoryState` anteriores. Se houver uma diferença entre os dois estados da memória, a função `Difference` retornará um valor diferente de zero. Isso indica que alguns blocos de memória não foram desalocados.
 
     Esse exemplo mostra a aparência deste código:
 

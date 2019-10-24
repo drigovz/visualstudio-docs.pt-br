@@ -16,41 +16,41 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c5326ef7aa66de124f3be5db96cf156b57cb339d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 849862f98fb90cdd742e1794ecb57c35a9aaca73
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62563644"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745589"
 ---
 # <a name="debug-64-bit-applications"></a>Depurar aplicativos de 64 bits
 Você pode depurar um aplicativo de 64 bits que está sendo executado no computador local ou em um computador remoto.
 
- Para depurar um aplicativo de 64 bits que está em execução em um computador remoto, consulte [depuração remota](../debugger/remote-debugging.md).
+ Para depurar um aplicativo de 64 bits que está sendo executado em um computador remoto, consulte [depuração remota](../debugger/remote-debugging.md).
 
- Para depurar aplicativos de 64 bits localmente, Visual Studio usa um processo de trabalho de 64 bits (msvsmon.exe) para executar as operações de nível inferior não podem ser feitas dentro do processo do Visual Studio de 32 bits.
+ Para depurar aplicativos de 64 bits localmente, o Visual Studio usa um processo de trabalho de 64 bits (msvsmon. exe) para executar as operações de nível baixo que não podem ser feitas dentro do processo do Visual Studio de 32 bits.
 
- Não há suporte para a depuração de modo misto para processos de 64 bits que usam o .NET Framework versão 3.5 ou anterior.
+ Não há suporte para a depuração de modo misto em processos de 64 bits que usam .NET Framework versão 3,5 ou anterior.
 
 ## <a name="debug-a-64-bit-application"></a>Depurar um aplicativo de 64 bits
  Para tentar depurar um aplicativo de 64 bits:
 
-1. Crie uma solução do Visual Studio, por exemplo um console aplicativo c#.
+1. Crie uma solução do Visual Studio, por exemplo C# , um aplicativo de console.
 
-2. Defina a configuração para 64 bits usando o Configuration Manager. Para obter mais informações, confira [Como: Configurar projetos para plataformas de destino](../ide/how-to-configure-projects-to-target-platforms.md).
+2. Defina a configuração como 64 bits usando o Configuration Manager. Para obter mais informações, consulte [como: configurar projetos para plataformas de destino](../ide/how-to-configure-projects-to-target-platforms.md).
 
-3. Neste ponto, a versão de 64 bits do depurador remoto (msvsmon.exe) inicia. Ele é executado, desde que a solução com a configuração de 64 bits está aberta.
+3. Neste ponto, a versão de 64 bits do depurador remoto (msvsmon. exe) é iniciada. Ele é executado contanto que a solução com a configuração de 64 bits esteja aberta.
 
-4. Inicie a depuração. Você deve ter a mesma experiência assim como acontece com uma configuração de 32 bits. Se você obtiver erros, consulte a seção de solução de problemas abaixo.
+4. Inicie a depuração. Você deve ter a mesma experiência que com uma configuração de 32 bits. Se você receber erros, consulte a seção solução de problemas abaixo.
 
-## <a name="troubleshooting-64-bit-debugging"></a>Solucionando problemas de depuração de 64 bits
- Você verá um erro: "Uma operação de depuração de 64 bits está demorando mais do que o esperado." Nesse caso, o Visual Studio enviou uma solicitação para a versão de 64 bits do msvsmon.exe e levou muito tempo para o resultado da solicitação antes de voltar.
+## <a name="troubleshooting-64-bit-debugging"></a>Solução de problemas de depuração de 64 bits
+ Você pode ver um erro: "uma operação de depuração de 64 bits está demorando mais do que o esperado". Nesse caso, o Visual Studio enviou uma solicitação para a versão de 64 bits do msvsmon. exe e levou muito tempo para que o resultado dessa solicitação volte.
 
- Há duas causas principais para este erro:
+ Há duas causas principais para esse erro:
 
-- Você tem o software de segurança de rede instalado no computador que fez a pilha de rede seja pouco confiável e ele descartado pacotes ultrapassou o localhost. Tente desabilitar todos os softwares de segurança de rede e veja se isso resolve. Nesse caso, de relatório para o seu fornecedor de software de segurança de rede que o software está interferindo com o tráfego de localhost.
+- Você tem um software de segurança de rede instalado no seu computador que fez com que a pilha de rede não seja confiável e tenha descartado pacotes passando por localhost. Tente desabilitar todos os softwares de segurança de rede e ver se isso o resolve. Nesse caso, relate ao fornecedor do software de segurança de rede que o software está interferindo com o tráfego de localhost.
 
-- Você está executando em um problema de suspensão ou de desempenho com o Visual Studio. Se o problema ocorrer regularmente, você pode coletar despejos de memória do Visual Studio (devenv.exe) e o processo de trabalho (msvsmon.exe) e enviá-los à Microsoft. Para obter informações sobre como relatar um problema, consulte [como relatar um problema com o Visual Studio](../ide/how-to-report-a-problem-with-visual-studio.md).
+- Você está ficando com um problema de interrupção ou desempenho com o Visual Studio. Se o problema ocorrer regularmente, você poderá coletar despejos do Visual Studio (devenv. exe) e do processo de trabalho (msvsmon. exe) e enviá-los à Microsoft. Para obter informações sobre como relatar um problema, consulte [como relatar um problema com o Visual Studio](../ide/how-to-report-a-problem-with-visual-studio.md).
 
 ## <a name="see-also"></a>Consulte também
 

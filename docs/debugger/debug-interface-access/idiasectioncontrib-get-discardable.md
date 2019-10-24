@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ca50a9fa82f8db33fd12b5a94ee1fc9df7396124
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6048f83b2f5e01790f771ae61e7a9a0fc8f329a4
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839544"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742670"
 ---
-# <a name="idiasectioncontribgetdiscardable"></a>IDiaSectionContrib::get_discardable
+# <a name="idiasectioncontribget_discardable"></a>IDiaSectionContrib::get_discardable
 Recupera um sinalizador que indica se a seção pode ser descartada.
 
 ## <a name="syntax"></a>Sintaxe
@@ -33,10 +33,10 @@ HRESULT get_discardable ( 
 #### <a name="parameters"></a>Parâmetros
  `pRetVal`
 
-[out] Retorna `TRUE` se a seção pode ser descartada da memória conforme necessário; caso contrário, retornará `FALSE`.
+fora Retornará `TRUE` se a seção puder ser descartada da memória conforme necessário; caso contrário, retorna `FALSE`.
 
-## <a name="return-value"></a>Valor de retorno
- Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não há suporte para essa propriedade. Caso contrário, retornará um código de erro.
+## <a name="return-value"></a>Valor retornado
+ Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não houver suporte para essa propriedade. Caso contrário, retornará um código de erro.
 
 ## <a name="see-also"></a>Consulte também
 - [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

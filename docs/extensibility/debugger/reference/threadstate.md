@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 50f487b3d44fc1b871b00348ec28693b36c49685
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: d86baeeab046a7e605979d3af2d6329998f796ba
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66316136"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72727506"
 ---
 # <a name="threadstate"></a>THREADSTATE
 Especifica o estado do thread.
@@ -53,10 +53,10 @@ public enum enum_THREADSTATE { 
  Indica que o thread está em execução.
 
  `THREADSTATE_STOPPED`\
- Indica que o thread é interrompido devido a um ponto de interrupção.
+ Indica que o thread foi interrompido devido a um ponto de interrupção.
 
  `THREADSTATE_FRESH`\
- Indica que o thread foi criado, mas ainda não está executando o código.
+ Indica que o thread foi criado, mas que ainda não está executando o código.
 
  `THREADSTATE_DEAD`\
  Indica que o thread está inativo.
@@ -65,14 +65,14 @@ public enum enum_THREADSTATE { 
  Indica que o thread está congelado (nenhuma execução pode ser executada).
 
 ## <a name="remarks"></a>Comentários
- Usado para o `dwThreadState` campo do [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md) estrutura.
+ Usado para o campo `dwThreadState` da estrutura [threadproperties](../../../extensibility/debugger/reference/threadproperties.md) .
 
 ## <a name="requirements"></a>Requisitos
- Header: msdbg.h
+ Cabeçalho: msdbg. h
 
- Namespace: Microsoft.VisualStudio.Debugger.Interop
+ Namespace: Microsoft. VisualStudio. Debugger. Interop
 
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll
+ Assembly: Microsoft. VisualStudio. Debugger. Interop. dll
 
 ## <a name="see-also"></a>Consulte também
 - [Enumerações](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

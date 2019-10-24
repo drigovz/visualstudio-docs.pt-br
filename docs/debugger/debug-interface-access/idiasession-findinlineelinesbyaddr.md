@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a40cc8afdb60ad8ad76a0d6ee8e502a6a0b720b7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 496f6b569b3ac02c625ddf18406b78fdb1687be2
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62832533"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742228"
 ---
 # <a name="idiasessionfindinlineelinesbyaddr"></a>IDiaSession::findInlineeLinesByAddr
-Recupera uma enumeração que permite que um cliente iterar por meio das informações de número de linha de todas as funções que são embutidas, diretamente ou indiretamente, pelo símbolo pai especificado e está contida dentro do intervalo de endereço especificado.
+Recupera uma enumeração que permite que um cliente itere pelas informações de número de linha de todas as funções que são embutidas, direta ou indiretamente, pelo símbolo pai especificado e estão contidas no intervalo de endereços especificado.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -32,25 +32,25 @@ HRESULT findInlineeLinesByAddr ( 
 #### <a name="parameters"></a>Parâmetros
  `parent`
 
-[in] Um `IDiaSymbol` que representa o pai do objeto.
+no Um objeto `IDiaSymbol` que representa o pai.
 
  `isect`
 
-[in] Especifica o componente de seção do endereço.
+no Especifica o componente da seção do endereço.
 
  `offset`
 
-[in] Especifica o componente de deslocamento do endereço.
+no Especifica o componente de deslocamento do endereço.
 
  `length`
 
-[in] Especifica o intervalo de endereços, no número de bytes, para cobrir com essa consulta.
+no Especifica o intervalo de endereços, em número de bytes, a ser abordado com essa consulta.
 
  `ppResult`
 
-[out] Mantém um `IDiaEnumLineNumbers` objeto que contém a lista de números de linha são recuperadas.
+fora Mantém um objeto `IDiaEnumLineNumbers` que contém a lista de números de linha recuperados.
 
-## <a name="return-value"></a>Valor de retorno
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
 
 ## <a name="see-also"></a>Consulte também

@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 29f3f714cdcbe529dac98948f6568934a6f508af
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2513825fd2b6f4e6035f9f23295f0c9f00385d0a
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62832400"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742070"
 ---
 # <a name="idiasessionfindlinesbyva"></a>IDiaSession::findLinesByVA
-Recupera as informações de número de linha para linhas contidas em um intervalo de endereço virtual especificado (VA).
+Recupera as informações de número de linha para as linhas contidas em um intervalo de endereço virtual (VA) especificado.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -35,18 +35,18 @@ HRESULT findLinesByVA (
 #### <a name="parameters"></a>Parâmetros
 `va`
 
-[in] Especifica o endereço como um VA.
+no Especifica o endereço como um VA.
 
 `length`
 
-[in] Especifica o número de bytes do intervalo de endereços para cobrir com essa consulta.
+no Especifica o número de bytes de intervalo de endereços a serem abordados com essa consulta.
 
 `ppResult`
 
-[out] Retorna um [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) objeto que contém uma lista de todas as linha de números que abrangem o intervalo de endereços especificado.
+fora Retorna um objeto [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) que contém uma lista de todos os números de linha que abrangem o intervalo de endereços especificado.
 
 ## <a name="example"></a>Exemplo
-Este exemplo mostra uma função que obtém todos os números de linha contidos em uma função usando o endereço da função virtual e o comprimento.
+Este exemplo mostra uma função que obtém todos os números de linha contidos em uma função usando o comprimento e o endereço virtual da função.
 
 ```C++
 IDiaEnumLineNumbers *GetLineNumbersByVA(IDiaSymbol *pFunc, IDiaSession *pSession)

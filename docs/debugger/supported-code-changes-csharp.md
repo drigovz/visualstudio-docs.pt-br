@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: c5f54a2b50447125b0abffd8cc62ba9c2a1d2b37
-ms.sourcegitcommit: 4dfe098ac0df294aad63e6b384d6575980798ca3
+ms.openlocfilehash: 44881035da14483c3ddf1f4c48cb3957a1ce8b50
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70887778"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72729082"
 ---
 # <a name="supported-code-changes-c-and-visual-basic"></a>Alterações de código comC# suporte (e Visual Basic)
 Editar e Continuar trata a maioria dos tipos de alterações de código dentro dos corpos do método. A maioria das alterações fora dos corpos do método e algumas alterações dentro dos corpos do método, no entanto, não podem ser aplicadas durante a depuração. Para aplicar essas alterações sem suporte, você deverá parar a depuração e reinicializar com uma versão atualizada do código.
@@ -79,7 +79,7 @@ A tabela a seguir mostra as alterações que podem ser feitas C# e Visual Basic 
 |Iterators|Modificar um iterador em um projeto direcionado .NET Framework 4 e inferior (consulte os [detalhes](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits))|
 
 ## <a name="unsafe-code"></a>Código não seguro
- As alterações no código não seguro têm as mesmas restrições que as alterações no código seguro, com uma restrição adicional: Editar e continuar não oferece suporte a alterações no código não seguro que sai dentro de um método que contém `stackalloc` o operador.
+ As alterações no código não seguro têm as mesmas limitações que as alterações no código seguro, com uma restrição adicional: editar e continuar não oferece suporte a alterações em código não seguro que sai dentro de um método que contém o operador de `stackalloc`.
 
 ## <a name="unsupported-app-scenarios"></a>Cenários de aplicativo sem suporte
 
@@ -95,7 +95,7 @@ Aplicativos e plataformas sem suporte incluem ASP.NET 5, Silverlight 5 e Windows
 
 - Depuração de SQL.
 
-- Depurando um despejo do Dr. Watson.
+- Depurando um despejo de Dr. Watson.
 
 - Depurando um aplicativo inserido de tempo de execução.
 
@@ -107,4 +107,4 @@ Aplicativos e plataformas sem suporte incluem ASP.NET 5, Silverlight 5 e Windows
 
 ## <a name="see-also"></a>Consulte também
 - [Editar e continuar (Visual C#)](../debugger/edit-and-continue-visual-csharp.md)
-- [Como: Usar Editar e Continuar (C#)](../debugger/how-to-use-edit-and-continue-csharp.md)
+- [Como usar Editar e Continuar (C#)](../debugger/how-to-use-edit-and-continue-csharp.md)

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 46392d87b918a2359d7bf4d9eee14c61b4464006
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ad6a561308999092344fe4c20038ec2cb78a86f4
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62554042"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744320"
 ---
 # <a name="idiaenumsectioncontribsclone"></a>IDiaEnumSectionContribs::Clone
 Cria um enumerador que contém o mesmo estado de enumeração que o enumerador atual.
@@ -33,9 +33,9 @@ HRESULT Clone( 
 #### <a name="parameters"></a>Parâmetros
  ppenum
 
-[out] Retorna um [IDiaEnumSectionContribs](../../debugger/debug-interface-access/idiaenumsectioncontribs.md) objeto que contém uma duplicata do enumerador. A seção de contribuições não são duplicados, apenas o enumerador.
+fora Retorna um objeto [IDiaEnumSectionContribs](../../debugger/debug-interface-access/idiaenumsectioncontribs.md) que contém uma duplicata do enumerador. As contribuições da seção não são duplicadas, somente o enumerador.
 
-## <a name="return-value"></a>Valor de retorno
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
 
 ## <a name="see-also"></a>Consulte também

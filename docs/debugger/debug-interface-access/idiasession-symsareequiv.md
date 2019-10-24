@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0253104cf29e86825fadc8c8bd18133e0d3cf593
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 61cfc582f11670af8c956c3334681284ce5172a6
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839069"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741864"
 ---
 # <a name="idiasessionsymsareequiv"></a>IDiaSession::symsAreEquiv
 Verifica se dois símbolos são equivalentes.
@@ -34,14 +34,14 @@ HRESULT symsAreEquiv ( 
 #### <a name="parameters"></a>Parâmetros
  `symbolA`
 
-[in] A primeira [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) usado na comparação de objeto.
+no O primeiro objeto [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) usado na comparação.
 
  `symbolB`
 
-[in] O segundo `IDiaSymbol` usado na comparação de objeto.
+no O segundo objeto `IDiaSymbol` usado na comparação.
 
-## <a name="return-value"></a>Valor de retorno
- Se os símbolos são equivalentes, retornará `S_OK`; caso contrário, retorna `S_FALSE`, os símbolos não são equivalentes. Caso contrário, retorna um código de erro.
+## <a name="return-value"></a>Valor retornado
+ Se os símbolos forem equivalentes, retornará `S_OK`; caso contrário, retorna `S_FALSE`, os símbolos não são equivalentes. Caso contrário, retorne um código de erro.
 
 ## <a name="see-also"></a>Consulte também
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)

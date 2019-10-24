@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7492e0eee0523fd102ecd057d075f2672bf3b25b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f554485ae56a9d5f190c749879545165d299531c
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839570"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742864"
 ---
 # <a name="idiapropertystoragereadpropertynames"></a>IDiaPropertyStorage::ReadPropertyNames
-Recupera correspondente de nomes de cadeia de caracteres para receber identificadores de propriedade.
+Recupera os nomes de cadeia de caracteres correspondentes para determinados identificadores de propriedade.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -35,21 +35,21 @@ HRESULT ReadPropertyNames (
 #### <a name="parameters"></a>Parâmetros
  `cpropid`
 
-[in] Número de ids de propriedade no `rgpropid`.
+no Número de IDs de propriedade no `rgpropid`.
 
  `rgpropid`
 
-[in] Matriz de ids de propriedade para o qual obter os nomes (`PROPID` é definido em wtypes. H como um `ULONG`).
+no Matriz de IDs de propriedade para as quais obter os nomes (`PROPID` é definido em WTypes. h como um `ULONG`).
 
  `rglpwstrName`
 
-[no, out] Matriz de nomes de propriedade para as ids de propriedade especificada. A matriz deve ser pré-alocada para suportar o número solicitado de nomes de propriedade e deve ser capaz de armazenar pelo menos `cpropid``BSTR` cadeias de caracteres.
+[entrada, saída] Matriz de nomes de propriedade para as IDs de propriedade especificadas. A matriz deve ser pré-configurada para conter o número solicitado de nomes de propriedade e deve ser capaz de armazenar pelo menos `cpropid``BSTR` cadeias de caracteres.
 
-## <a name="return-value"></a>Valor de retorno
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retornará um código de erro.
+## <a name="return-value"></a>Valor retornado
+ Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários
- Os nomes de propriedade retornada devem ser liberados (chamando o `SysFreeString` função) quando eles não são mais necessários.
+ Os nomes de propriedade retornados devem ser liberados (chamando a função `SysFreeString`) quando não forem mais necessários.
 
 ## <a name="see-also"></a>Consulte também
 - [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)

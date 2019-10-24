@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b127cbc5c9ddc5a2aa2d293d1371bab18d191fdb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d6082bfe8a3eee00d425441ff44a6eadd1c36e27
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839284"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742133"
 ---
 # <a name="idiasessionfindlines"></a>IDiaSession::findLines
-Recupera os números de linha dentro de compiland especificado e identificadores de arquivo de origem.
+Recupera números de linha dentro de compiland e identificadores de arquivo de origem especificados.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -35,17 +35,17 @@ HRESULT findLines ( 
 #### <a name="parameters"></a>Parâmetros
  `compiland`
 
-[in] Uma [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) objeto que representa o compiland. Use esta interface como um contexto no qual pesquisar os números de linha.
+no Um objeto [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) que representa o compiland. Use essa interface como um contexto no qual Pesquisar os números de linha.
 
  `file`
 
-[in] Uma [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md) objeto que representa o arquivo de origem no qual pesquisar os números de linha.
+no Um objeto [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md) que representa o arquivo de origem no qual Pesquisar os números de linha.
 
  `ppResult`
 
-[out] Retorna um [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) recuperado do objeto que contém uma lista dos números de linha.
+fora Retorna um objeto [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) que contém uma lista dos números de linha recuperados.
 
-## <a name="return-value"></a>Valor de retorno
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
 
 ## <a name="see-also"></a>Consulte também

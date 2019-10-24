@@ -1,5 +1,5 @@
 ---
-title: IDiaStackFrame::get_allocatesBasePointer | Microsoft Docs
+title: 'IDiaStackFrame:: get_allocatesBasePointer | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 60f39b55ffc14d423d4197765ef89784940f137b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6710a20bb5a01d3d342c31b48f1f96e7e2a2062a
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62832228"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741758"
 ---
-# <a name="idiastackframegetallocatesbasepointer"></a>IDiaStackFrame::get_allocatesBasePointer
-Recupera um sinalizador que indica se o ponteiro de base está alocado para o código nesse intervalo de endereço.
+# <a name="idiastackframeget_allocatesbasepointer"></a>IDiaStackFrame::get_allocatesBasePointer
+Recupera um sinalizador que indica se o ponteiro base é alocado para o código neste intervalo de endereços.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -33,10 +33,10 @@ HRESULT get_allocatesBasePointer ( 
 #### <a name="parameters"></a>Parâmetros
  `pRetVal`
 
-[out] Retorna `TRUE` se um ponteiro de base é alocado para o código neste quadro; caso contrário, retornará `FALSE`.
+fora Retorna `TRUE` se um ponteiro base for alocado para o código neste quadro; caso contrário, retorna `FALSE`.
 
-## <a name="return-value"></a>Valor de retorno
- Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não há suporte para a propriedade. Caso contrário, retornará um código de erro.
+## <a name="return-value"></a>Valor retornado
+ Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se a propriedade não tiver suporte. Caso contrário, retornará um código de erro.
 
 ## <a name="see-also"></a>Consulte também
 - [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)

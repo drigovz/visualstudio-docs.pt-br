@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 275941aaf3a1eb2cab6554b18c6d9aa66605121a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bfb3e219012effe47a2352f7c22c6cf51b4617f9
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62831826"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741412"
 ---
-# <a name="idiastackwalkhelpergetregistervalue"></a>IDiaStackWalkHelper::get_registerValue
+# <a name="idiastackwalkhelperget_registervalue"></a>IDiaStackWalkHelper::get_registerValue
 Recupera o valor de um registro.
 
 ## <a name="syntax"></a>Sintaxe
@@ -34,17 +34,17 @@ HRESULT get_registerValue ( 
 #### <a name="parameters"></a>Parâmetros
  `index`
 
-[in] Um valor da [enumeração CV_HREG_e](../../debugger/debug-interface-access/cv-hreg-e.md) enumeração que especifica qual registrar para obter o valor.
+no Um valor da enumeração de [Enumeração CV_HREG_e](../../debugger/debug-interface-access/cv-hreg-e.md) especificando para qual registro obter o valor.
 
  `pRetVal`
 
-[out] Retorna o valor atual do registro.
+fora Retorna o valor atual do registro.
 
-## <a name="return-value"></a>Valor de retorno
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários
- Apesar do tamanho do `pRetVal` parâmetro, uma implementação deve armazenar só o que o registro normalmente mantém. Por exemplo, um registro de 8 bits contém apenas o mais baixo 8 bits do valor fornecido. Esse valor de 8 bits é expandido para 64-bits quando retornado deste método.
+ Apesar do tamanho do parâmetro `pRetVal`, uma implementação deve armazenar apenas o que o registro normalmente mantém. Por exemplo, um registro de 8 bits mantém apenas os 8 bits mais baixos do valor especificado. Esse valor de 8 bits é expandido para 64 bits quando retornado desse método.
 
 ## <a name="see-also"></a>Consulte também
 - [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)

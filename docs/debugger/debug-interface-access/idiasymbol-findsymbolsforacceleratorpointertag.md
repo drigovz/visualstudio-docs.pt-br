@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7bf55f372b9beb0a4cb0feda0dc5869ee9eb7c5f
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 1544471bd4ff9166d4c8f4c10f48840db6f576f3
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62827735"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741124"
 ---
 # <a name="idiasymbolfindsymbolsforacceleratorpointertag"></a>IDiaSymbol::findSymbolsForAcceleratorPointerTag
-Retorna o número de marcas de ponteiro de acelerador em uma função de stub do C++ AMP.
+Retorna o número de marcas do ponteiro do acelerador em uma C++ função de stub de amp.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -31,13 +31,13 @@ HRESULT findSymbolsForAccleratorPointerTag (
 #### <a name="parameters"></a>Parâmetros
  `tagValue`
 
-[in] O valor de marca de ponteiro para o qual os registros de símbolo pointee são encontrados.
+no O valor da marca do ponteiro para o qual os registros de símbolo do ponto são encontrados.
 
  `ppResult`
 
-[out] Um ponteiro para um `IDiaEnumSymbols` ponteiro de interface que é inicializado com o resultado.
+fora Um ponteiro para um ponteiro de interface `IDiaEnumSymbols` que é inicializado com o resultado.
 
-## <a name="return-value"></a>Valor de retorno
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE` ou um código de erro.
 
 ## <a name="see-also"></a>Consulte também

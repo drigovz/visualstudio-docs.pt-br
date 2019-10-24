@@ -13,12 +13,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 35dead5c71c1309cf01426541b7212eadad83d9e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 89910a9504f587f97b0555f7f0d5ef7257ab4ae4
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658823"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748836"
 ---
 # <a name="add-existing-item-command"></a>Comando Adicionar Item Existente
 Adiciona um arquivo existente à solução atual e abre-o.

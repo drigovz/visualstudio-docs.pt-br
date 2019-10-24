@@ -1,5 +1,5 @@
 ---
-title: Friend (depuração acesso à Interface SDK) | Microsoft Docs
+title: Friend (debug interface Access SDK) | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -14,27 +14,27 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 118a6b6caf6a208898bba3894d532e5dc6e4a14a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5df3c9c18e47adf5a84914e669e3646fc1cebf42
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62554685"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745144"
 ---
 # <a name="friend-debug-interface-access-sdk"></a>Friend (SDK de Acesso à Interface de Depuração)
-Funções de amigo e classes Friend são identificadas por `SymTagFriend` símbolos. Eles são filhos do pai tipos definidos pelo usuário (UDTs) e têm uma [idiasymbol:: Get_classparent](../../debugger/debug-interface-access/idiasymbol-get-classparent.md) propriedade.
+As classes Friend e as funções Friend são identificadas por `SymTagFriend` símbolos. Eles são filhos de UDTs (tipos definidos pelo usuário) pai e têm uma propriedade [IDiaSymbol:: get_classParent](../../debugger/debug-interface-access/idiasymbol-get-classparent.md) .
 
 ## <a name="properties"></a>Propriedades
- A tabela a seguir mostra as propriedades adicionais de válido para esse tipo de símbolo.
+ A tabela a seguir mostra as propriedades válidas adicionais para esse tipo de símbolo.
 
-|Propriedade|Tipo de dados|Descrição|
+|propriedade|Tipo de dados|Descrição|
 |--------------|---------------|-----------------|
-|[IDiaSymbol::get_classParent](../../debugger/debug-interface-access/idiasymbol-get-classparent.md)|`IDiaSymbol*`|Símbolo para o pai do UDT.|
-|[IDiaSymbol::get_classParentId](../../debugger/debug-interface-access/idiasymbol-get-classparentid.md)|`DWORD`|ID do símbolo classe pai.|
+|[IDiaSymbol::get_classParent](../../debugger/debug-interface-access/idiasymbol-get-classparent.md)|`IDiaSymbol*`|Símbolo para o pai UDT.|
+|[IDiaSymbol::get_classParentId](../../debugger/debug-interface-access/idiasymbol-get-classparentid.md)|`DWORD`|ID do símbolo pai da classe.|
 |[IDiaSymbol::get_name](../../debugger/debug-interface-access/idiasymbol-get-name.md)|`BSTR`|Nome da classe ou função.|
-|[IDiaSymbol::get_symIndexId](../../debugger/debug-interface-access/idiasymbol-get-symindexid.md)|`DWORD`|ID de índice de símbolo.|
-|[IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)|`DWORD`|Retorna `SymTagFriend` (um dos [enumeração SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) valores).|
-|[IDiaSymbol::get_type](../../debugger/debug-interface-access/idiasymbol-get-type.md)|`IDiaSymbol*`|Símbolo de classe ou função.|
+|[IDiaSymbol::get_symIndexId](../../debugger/debug-interface-access/idiasymbol-get-symindexid.md)|`DWORD`|ID do índice do símbolo.|
+|[IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)|`DWORD`|Retorna `SymTagFriend` (um dos valores de [Enumeração SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) ).|
+|[IDiaSymbol::get_type](../../debugger/debug-interface-access/idiasymbol-get-type.md)|`IDiaSymbol*`|Símbolo da classe ou função.|
 |[IDiaSymbol::get_typeId](../../debugger/debug-interface-access/idiasymbol-get-typeid.md)|`DWORD`|ID do símbolo de tipo.|
 
 ## <a name="see-also"></a>Consulte também

@@ -1,5 +1,5 @@
 ---
-title: As configurações de propriedade para projetos Web | Microsoft Docs
+title: Configurações de propriedade para projetos Web | Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/04/2016
 ms.topic: reference
@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a9ab4300484e81e70abd36dbdba28521f91cd62
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b7daa58004b118d46a8248428e9a9d242dfccef8
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62903935"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72730592"
 ---
 # <a name="property-pages-settings-for-web-projects"></a>Configurações das páginas de propriedade para projetos Web
 Você pode alterar as configurações de propriedade de uma configuração de depuração do site na caixa de diálogo **Páginas de Propriedades**, conforme discutido em [Configurações de depuração e versão](../debugger/how-to-set-debug-and-release-configurations.md). As tabelas a seguir mostram como localizar configurações relacionadas ao depurador na caixa de diálogo **Páginas de Propriedades**.
@@ -42,7 +42,7 @@ Você pode alterar as configurações de propriedade de uma configuração de de
 | **Argumentos de linha de comando:** | Especifica argumentos para o comando especificado acima. |
 | **Diretório de trabalho:** | Especifica o diretório de trabalho do programa que está sendo depurado. No [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)], o diretório de trabalho é o diretório a partir do qual o aplicativo é iniciado de \bin\debug por padrão. |
 | **URL inicial** | Especifica o local do aplicativo Web que você deseja depurar. |
-| **Não abra uma página. Aguardar solicitação de um aplicativo externo** | Diz para aguardar solicitação de um aplicativo externo. Essa opção não inicia o Internet Explorer ou outro aplicativo. Ela apenas prepara para depuração quando for chamada por um aplicativo. |
+| **Não abra uma página. Aguardar uma solicitação de um aplicativo externo** | Diz para aguardar solicitação de um aplicativo externo. Essa opção não inicia o Internet Explorer ou outro aplicativo. Ela apenas prepara para depuração quando for chamada por um aplicativo. |
 | **Servidor** | Cabeçalho que agrupa as opções relacionadas ao servidor a ser usado. |
 | **Usar servidor Web padrão** | Informa para usar o servidor Web padrão. |
 | **Usar servidor personalizado** | Permite inserir uma URL base para usar como o servidor. |

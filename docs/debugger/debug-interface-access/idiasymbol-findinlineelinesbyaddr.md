@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ede156a5416ca065a5271ae87abfcfd621f02b26
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 1709120dfa8e115f4b14a4ee4e2d1c7ffb293329
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62837986"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741214"
 ---
 # <a name="idiasymbolfindinlineelinesbyaddr"></a>IDiaSymbol::findInlineeLinesByAddr
-Recupera uma enumeração que permite que um cliente iterar por meio das informações de número de linha de todas as funções que são embutidas, diretamente ou indiretamente, nesse símbolo dentro do intervalo de endereço especificado.
+Recupera uma enumeração que permite que um cliente itere pelas informações de número de linha de todas as funções que são embutidas, direta ou indiretamente, neste símbolo dentro do intervalo de endereços especificado.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -34,21 +34,21 @@ HRESULT findInlineeLinesByAddr ( 
 #### <a name="parameters"></a>Parâmetros
  `isect`
 
-[in] Especifica o componente de seção do endereço.
+no Especifica o componente da seção do endereço.
 
  `offset`
 
-[in] Especifica o componente de deslocamento do endereço.
+no Especifica o componente de deslocamento do endereço.
 
  `length`
 
-[in] Especifica o intervalo de endereços, no número de bytes, para cobrir com essa consulta.
+no Especifica o intervalo de endereços, em número de bytes, a ser abordado com essa consulta.
 
  `ppResult`
 
-[out] Mantém um `IDiaEnumLineNumbers` objeto que contém a lista de números de linha são recuperadas.
+fora Mantém um objeto `IDiaEnumLineNumbers` que contém a lista de números de linha recuperados.
 
-## <a name="return-value"></a>Valor de retorno
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
 
 ## <a name="see-also"></a>Consulte também

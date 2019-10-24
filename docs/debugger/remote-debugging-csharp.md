@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3490cab7c902dcdf1a7d0095eb69dd44de47a727
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: 5f147acae956ad380c6e85984de29d5316394c0a
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71211118"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72730253"
 ---
 # <a name="remote-debugging-a-c-or-visual-basic-project-in-visual-studio"></a>Depuração remota de C# um ou Visual Basic projeto no Visual Studio
 Para depurar um aplicativo do Visual Studio que foi implantado em um computador diferente, instale e execute as ferramentas remotas no computador em que você implantou seu aplicativo, configure seu projeto para se conectar ao computador remoto do Visual Studio e, em seguida, execute o aplicativo.
@@ -85,7 +85,7 @@ O depurador não pode implantar C# aplicativos de área de trabalho Visual ou Vi
 
 8. Compile o projeto.
 
-9. Crie uma pasta no computador remoto que seja do mesmo caminho que a pasta de **depuração** no computador do Visual Studio:  **\<caminho de origem > \MyWPF\MyWPF\bin\Debug**.
+9. Crie uma pasta no computador remoto que seja do mesmo caminho que a pasta de **depuração** no computador do Visual Studio: **\<source caminho > \MyWPF\MyWPF\bin\Debug**.
 
 10. Copie o executável que você acabou de criar do computador do Visual Studio para a pasta recém-criada no computador remoto.
 
@@ -102,7 +102,7 @@ O depurador não pode implantar C# aplicativos de área de trabalho Visual ou Vi
 
 13. Se solicitado, insira as credenciais de rede para se conectar ao computador remoto.
 
-     As credenciais necessárias variam de acordo com a configuração de segurança da rede. Por exemplo, em um computador de domínio, você pode inserir seu nome de domínio e senha. Em um computador que não seja de domínio, você pode inserir o nome do computador e um nome de conta <strong>MJO-DL\name@something.com</strong>de usuário válido, como, junto com a senha correta.
+     As credenciais necessárias variam de acordo com a configuração de segurança da rede. Por exemplo, em um computador de domínio, você pode inserir seu nome de domínio e senha. Em um computador que não seja de domínio, você pode inserir o nome do computador e um nome de conta de usuário válido, como <strong>MJO-DL\name@something.com</strong>, juntamente com a senha correta.
 
      Você deve ver que a janela principal do aplicativo WPF está aberta no computador remoto.
 

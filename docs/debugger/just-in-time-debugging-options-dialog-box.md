@@ -1,5 +1,5 @@
 ---
-title: Caixa de diálogo de Just-In-Time, depuração, opções | Microsoft Docs
+title: Caixa de diálogo depuração, opções just-in-time | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 23a285cf0ce017130a5fe76171c50082362e4856
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c27ec66c8165995c6877b9a9e65802813140c7f2
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62905929"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72731605"
 ---
 # <a name="just-in-time-debugging-options-dialog-box"></a>Caixa de diálogo Just-In-Time, Depuração, Opções
 Para acessar a página **Just-In-Time**, vá até o menu **Ferramentas** e clique em **Opções**. Na caixa de diálogo **Opções**, expanda o nó **Depuração** e selecione **Just-In-Time**. Essa página permite habilitar a depuração Just-In-Time para o código gerenciado, o código nativo e o script. Para obter mais informações, confira [Depuração Just-In-Time](../debugger/just-in-time-debugging-in-visual-studio.md).
@@ -43,18 +43,18 @@ Para acessar a página **Just-In-Time**, vá até o menu **Ferramentas** e cliqu
 ## <a name="associated-warnings"></a>Avisos associados
  Quando você visita esta página da caixa de diálogo **Opções**, poderá ver uma mensagem de aviso assim:
 
- **Outro depurador se registrou como depurador Just-In-Time. Para reparar, habilite a depuração Just-In-Time ou execute o reparo do Visual Studio.**
+ **Outro depurador se registrou como depurador just-in-time. Para reparar, habilite a depuração Just-in-time ou execute o reparo do Visual Studio.**
 
  Essa mensagem ocorrerá se você tiver outro depurador, possivelmente uma versão anterior do depurador do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], definida como o depurador Just-In-Time.
 
  Outra mensagem que você pode ver é o seguinte:
 
- **Erros do registro de depuração Just-In-Time detectados. Para reparar, habilite a depuração Just-In-Time ou execute o reparo do Visual Studio.**
+ **Erros de registro de depuração Just-in-time detectados. Para reparar, habilite a depuração Just-in-time ou execute o reparo do Visual Studio.**
 
  Se você vir qualquer um desses avisos, a depuração Just-In-Time com o [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] exigirá privilégios de administrador até você solucionar o problema. Se você tentar habilitar como um não administrador nessas condições, verá a seguinte mensagem de erro:
 
- **Acesso negado. Faça um administrador habilitar a depuração Just-In-Time ou reparar a instalação do Visual Studio.**
+ **Acesso negado. Fazer com que um administrador habilite a depuração Just-in-time ou repare a instalação do Visual Studio.**
 
 ## <a name="see-also"></a>Consulte também
 - [Caixa de diálogo Depuração, Opções](../debugger/debugging-options-dialog-box.md)
-- [Como: Especificar as configurações do depurador](../debugger/how-to-specify-debugger-settings.md)
+- [Como especificar configurações do depurador](../debugger/how-to-specify-debugger-settings.md)

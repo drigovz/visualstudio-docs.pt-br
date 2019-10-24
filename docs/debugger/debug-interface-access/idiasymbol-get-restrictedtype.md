@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f8929414c0e36983d378ea2a801803321f3aa88c
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: eac7e512d2fbfb5367725b3878d292444961b6de
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62835520"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739401"
 ---
-# <a name="idiasymbolgetrestrictedtype"></a>IDiaSymbol::get_restrictedType
-Especifica se o `this` ponteiro é sinalizado como restrito.
+# <a name="idiasymbolget_restrictedtype"></a>IDiaSymbol::get_restrictedType
+Especifica se o ponteiro de `this` é sinalizado como restrito.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -30,9 +30,9 @@ HRESULT get_restrictedType(
 #### <a name="parameters"></a>Parâmetros
  `pRetVal`
 
-[out] Um ponteiro para um `BOOL` que especifica se o `this` ponteiro é sinalizado como restrito.
+fora Um ponteiro para um `BOOL` que especifica se o ponteiro de `this` está sinalizado como restrito.
 
-## <a name="return-value"></a>Valor de retorno
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE` ou um código de erro.
 
 ## <a name="see-also"></a>Consulte também

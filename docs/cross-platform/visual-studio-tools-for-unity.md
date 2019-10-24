@@ -10,12 +10,12 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: fa0884f024c51c76c6ed5e5d748c65e767b70d9d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: d04f197b9114f87c0ebdfa54088d41a958d4584a
+ms.sourcegitcommit: 57bc1c3887838d707c13feff72a677b3bad3be4b
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62815505"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72777690"
 ---
 # <a name="visual-studio-tools-for-unity"></a>Ferramentas do Visual Studio para Unity
 
@@ -27,7 +27,7 @@ Embora o editor do Unity seja ótimo para consolidar o mundo do jogo, não é po
 
 Contudo, as Ferramentas do Visual Studio para Unity são muito mais do que isso; elas também trazem uma profunda integração com o Unity editor para que você gaste menos tempo alternando as ferramentas para realizar tarefas simples, proporciona melhorias de produtividade específicas do Unity e coloca a documentação do Unity em suas mãos.
 
-## <a name="overview"></a>Visão geral
+## <a name="overview"></a>Visão Geral
 
 Visite a página [Compilar Jogos do Unity com o Visual Studio](https://visualstudio.microsoft.com/vs/unity-tools/) para ter uma visão geral das vantagens de usar o Visual Studio para desenvolvimento no Unity, ou continue abaixo para obter detalhes sobre os principais recursos das Ferramentas do Visual Studio para Unity:
 

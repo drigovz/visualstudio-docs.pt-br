@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8da7e672ba447d1453d451da0040aef44ecaa799
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1ed8e0ca64e7e15fe38d706a1a7e0ed9f45cdcd3
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62833506"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744530"
 ---
-# <a name="idiaenuminjectedsourcesgetcount"></a>IDiaEnumInjectedSources::get_Count
-Recupera o número de fontes injetados.
+# <a name="idiaenuminjectedsourcesget_count"></a>IDiaEnumInjectedSources::get_Count
+Recupera o número de fontes injetadas.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -33,9 +33,9 @@ HRESULT get_Count ( 
 #### <a name="parameters"></a>Parâmetros
  pRetVal
 
-[out] Retorna o número de fontes injetados.
+fora Retorna o número de fontes injetadas.
 
-## <a name="return-value"></a>Valor de retorno
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
 
 ## <a name="see-also"></a>Consulte também

@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5840bbcc012fdcb209fbfb19c0119ad94f3073f2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 21697d53f0b221d3d5f94f85e3fb18a0a2c2692e
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62838435"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744765"
 ---
-# <a name="idiaenumdebugstreamsgetcount"></a>IDiaEnumDebugStreams::get_Count
+# <a name="idiaenumdebugstreamsget_count"></a>IDiaEnumDebugStreams::get_Count
 Recupera o número de fluxos de depuração.
 
 ## <a name="syntax"></a>Sintaxe
@@ -33,9 +33,9 @@ HRESULT get_Count( 
 #### <a name="parameters"></a>Parâmetros
  `pRetVal`
 
-[out] Retorna o número de fluxos de depuração disponíveis deste enumerador.
+fora Retorna o número de fluxos de depuração disponíveis neste enumerador.
 
-## <a name="return-value"></a>Valor de retorno
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
 
 ## <a name="see-also"></a>Consulte também
