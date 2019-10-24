@@ -25,7 +25,7 @@
 ### [Entre em contato com o administrador das suas assinaturas](contact-my-admin.md)
 ### Benefícios
 #### Ferramentas
-##### [Crédito Azure](vs-azure.md)
+##### [Crédito individual do Azure DevTest](vs-azure.md)
 ##### [Azure DevOps](vs-azure-devops.md)
 ##### [Azure Pay-As-You-Go](vs-azure-payg.md)
 ##### [CAST Highlight](vs-cast.md)
