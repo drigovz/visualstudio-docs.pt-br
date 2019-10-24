@@ -1,5 +1,5 @@
 ---
-title: Classes do Visual C++ no Designer de Classe
+title: C++Classes no Designer de Classe
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,14 +12,14 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 596d7a41b9f63179a0469840d948430ed0294b56
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 84fc10a3f62ea4bef82a466b2d76c46e73eb7e6e
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647643"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748921"
 ---
-# <a name="visual-c-classes-in-class-designer"></a>Classes do Visual C++ no Designer de Classe
+# <a name="c-classes-in-class-designer"></a>C++classes no Designer de Classe
 
 O **Designer de Classe** é compatível com classes do C++ e visualiza classes nativas do C++ da mesma maneira que as formas de classe do Visual Basic e do C#, exceto que as classes do C++ podem ter várias relações de herança. É possível expandir a forma de classe para exibir mais campos e métodos na classe ou recolhê-la para economizar espaço.
 
@@ -174,7 +174,7 @@ A tabela a seguir mostra alguns exemplos de conexões de classe especializada ca
 
 ## <a name="see-also"></a>Consulte também
 
-- [Trabalhando com código do Visual C++](working-with-visual-cpp-code.md)
+- [Trabalhando com C++ código](working-with-visual-cpp-code.md)
 - [Classes e Structs](/cpp/cpp/classes-and-structs-cpp)
 - [Tipos de classe anônima](/cpp/cpp/anonymous-class-types)
 - [Herança múltipla](https://msdn.microsoft.com/library/6td5yws2.aspx)

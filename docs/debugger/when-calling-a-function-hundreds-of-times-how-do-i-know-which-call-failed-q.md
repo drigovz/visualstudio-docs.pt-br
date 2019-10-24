@@ -1,5 +1,5 @@
 ---
-title: Localizar qual chamada falhou ao chamar uma função muitas vezes | Microsoft Docs
+title: Descobrir qual chamada falhou ao chamar uma função muitas vezes | Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -28,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fa6fb9613df5f5bffb50c9a161eaa0a0254f26dd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4d054c60c45980b3d08b09987229febb99593090
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62900995"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72728044"
 ---
 # <a name="when-calling-a-function-hundreds-of-times-how-do-i-know-which-call-failed"></a>Durante a chamada de uma função centenas de vezes, como sei qual chamada falhou?
 ## <a name="problem-description"></a>Descrição do problema

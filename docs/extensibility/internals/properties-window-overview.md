@@ -1,5 +1,5 @@
 ---
-title: Visão geral da janela de propriedades | Microsoft Docs
+title: Visão geral da janela Propriedades | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,41 +10,41 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 05c772365c42037bfd97a2a31b80efc2f5f1a48b
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 61887844e06a88cab9eaa8ca8be7a89c124e2340
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66347810"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72725081"
 ---
 # <a name="properties-window-overview"></a>Visão geral da janela Propriedades
-O **propriedades** janela é usada para exibir as propriedades de objetos selecionados os dois tipos principais do windows disponíveis no [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] o ambiente de desenvolvimento integrado (IDE). Esses dois tipos de janelas são:
+A janela **Propriedades** é usada para exibir propriedades de objetos selecionados nos dois tipos principais de Windows disponíveis no ambiente de desenvolvimento integrado (IDE) do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Esses dois tipos de janelas são:
 
-- Janelas de ferramentas como o Gerenciador de soluções, o modo de exibição de classe e o objeto de navegador
+- Janelas de ferramentas, como Gerenciador de Soluções, Modo de Exibição de Classe e pesquisador de objetos
 
-- Janelas de documento que contém tais editores e designers como o designer de formulários, o editor de XML e o editor de HTML
+- Documente as janelas que contêm tais editores e designers como designer de formulários, editor de XML e editor de HTML
 
 ## <a name="using-the-properties-window"></a>Usando a janela Propriedades
- O **propriedades** janela exibe as propriedades de um único ou vários itens selecionados. Se forem selecionados vários itens, a interseção de todas as propriedades de todos os objetos selecionados é exibida.
+ A janela **Propriedades** exibe as propriedades de um ou vários itens selecionados. Se vários itens forem selecionados, a interseção de todas as propriedades de todos os objetos selecionados será exibida.
 
- Eventos relacionados a um objeto selecionado dentro de uma janela de design do formulário ou o editor de HTML usando metadados de COM+ são exibidos na **propriedades** janela. Por exemplo, você pode selecionar um botão e exibir os eventos associados, como um `OnClick` evento, que pode ser vinculado a esse botão.
+ Eventos relacionados a um objeto selecionado em uma janela de design de formulário ou em um editor de HTML usando metadados COM+ são exibidos na janela **Propriedades** . Por exemplo, você pode selecionar um botão e exibir seus eventos associados, como um `OnClick` evento, que pode ser vinculado a esse botão.
 
- Os eventos exibidos na **propriedades** janela são usados principalmente com objetos que estão vinculados ao código. Se você estiver editando um formato de arquivo que não tem nada a ver com o código, você não pretende ter todos os eventos. Eventos são exibidos apenas na **propriedades** janela quando há uma associação entre a execução de código e alguns eventos associados a objetos específicos. Um exemplo disso seria o código por trás de um objeto selecionado que é executado quando esse objeto é ativado.
+ Os eventos exibidos na janela **Propriedades** são usados principalmente com objetos associados ao código. Se você estiver editando um formato de arquivo que não tem nada a ver com o código, não haverá nenhum evento. Os eventos são exibidos apenas na janela **Propriedades** quando há uma associação entre o código em execução e determinados eventos associados a objetos específicos. Um exemplo disso seria o código por trás de um objeto selecionado que é executado quando esse objeto é ativado.
 
- A tabela a seguir lista as interfaces principais usadas pelos **propriedades** janela.
+ A tabela a seguir lista as interfaces primárias usadas pela janela **Propriedades** .
 
 |Nome da interface|Descrição|
 |--------------------|-----------------|
-|<xref:Microsoft.VisualStudio.Shell.Interop.ICategorizeProperties>|Fornece uma lista de categorias para o **propriedades** janela e mapeia cada propriedade para uma categoria.|
-|[Interface IDispatch](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-idispatch)|Expõe métodos e propriedades para ferramentas e outros aplicativos que oferecem suporte à automação de programação de um objeto.|
-|<xref:Microsoft.VisualStudio.Shell.Interop.IProvidePropertyBuilder>|Fornece botões de reticências (...) chamados *construtores* que abrir janelas de caixa de diálogo modal implementadas pelo objeto em si. Usado quando um valor não é facilmente digitado pelo usuário em um campo de texto. Por exemplo, ele pode ser usado para abrir um seletor de cores que determina o valor RGB para você.|
-|<xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>|Fornece acesso a objetos usados para atualizar as informações exibidas na **propriedades** janela. <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> é implementado por VSPackages para cada janela que contém objetos selecionáveis com propriedades relacionadas a ser exibido.|
-|<xref:Microsoft.VisualStudio.OLE.Interop.ITypeInfo>|Fornece informações sobre o tipo de um objeto como métodos de uma interface e campos de uma estrutura.|
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection>|Permite que os VSPackages para receber notificações de eventos de seleção e recuperar informações sobre a hierarquia de projeto atual, item, valor do elemento e o contexto de interface do usuário do comando.|
+|<xref:Microsoft.VisualStudio.Shell.Interop.ICategorizeProperties>|Fornece uma lista de categorias para a janela **Propriedades** e mapeia cada propriedade para uma categoria.|
+|[Interface IDispatch](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-idispatch)|Expõe os métodos e as propriedades de um objeto para ferramentas de programação e outros aplicativos que dão suporte à automação.|
+|<xref:Microsoft.VisualStudio.Shell.Interop.IProvidePropertyBuilder>|Fornece botões de reticências (...) chamados *construtores* que abrem janelas de caixas de diálogo modais implementadas pelo próprio objeto. Usado quando um valor não é facilmente digitado pelo usuário em um campo de texto. Por exemplo, ele pode ser usado para abrir um seletor de cores que determina o valor RGB para você.|
+|<xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>|Fornece acesso a objetos usados para atualizar as informações exibidas na janela **Propriedades** . <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> é implementado por VSPackages para cada janela que contém objetos selecionáveis com propriedades relacionadas a serem exibidas.|
+|<xref:Microsoft.VisualStudio.OLE.Interop.ITypeInfo>|Fornece informações sobre o tipo de um objeto, como métodos de uma interface e os campos de uma estrutura.|
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection>|Permite que o VSPackages receba notificações de eventos de seleção e recupere informações sobre a hierarquia de projeto atual, o item, o valor do elemento e o contexto da interface do usuário do comando.|
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsMultiItemSelect>|Fornece o ambiente com acesso a várias seleções.|
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing>|Usado para fornecer nomes localizados em algumas propriedades exibidas na **propriedades** janela.|
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsSelectionEvents>|Notifica os VSPackages registrados de alterações para a seleção atual, o valor do elemento ou o contexto de interface do usuário do comando.|
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackSelectionEx>|Notifica o ambiente de uma alteração na seleção atual e fornece acesso às informações de hierarquia e de item relacionado à nova seleção.|
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing>|Usado para fornecer nomes localizados em algumas propriedades exibidas na janela **Propriedades** .|
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsSelectionEvents>|Notifica o VSPackages registrado sobre alterações na seleção atual, no valor do elemento ou no contexto da interface do usuário do comando.|
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackSelectionEx>|Notifica o ambiente de uma alteração na seleção atual e fornece acesso às informações de hierarquia e de item relacionadas à nova seleção.|
 
  Para obter mais informações sobre `IDispatch`, consulte a biblioteca MSDN.
 

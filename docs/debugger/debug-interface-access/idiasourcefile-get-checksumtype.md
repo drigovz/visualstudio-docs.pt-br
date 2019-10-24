@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 35e5719d285e9e99e5f7429685fa04a2c6d7f3ab
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c85c6ce8f03534c3ed810e530dbd12d8c6d115be
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62832271"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741825"
 ---
-# <a name="idiasourcefilegetchecksumtype"></a>IDiaSourceFile::get_checksumType
+# <a name="idiasourcefileget_checksumtype"></a>IDiaSourceFile::get_checksumType
 Recupera o tipo de soma de verificação.
 
 ## <a name="syntax"></a>Sintaxe
@@ -33,9 +33,9 @@ HRESULT get_checksumType ( 
 #### <a name="parameters"></a>Parâmetros
  `pRetVal`
 
-[out] Retorna o tipo de soma de verificação.
+fora Retorna o tipo de soma de verificação.
 
-## <a name="return-value"></a>Valor de retorno
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários
@@ -43,13 +43,13 @@ HRESULT get_checksumType ( 
 
 |Tipo de soma de verificação|Rótulo de CryptoAPI|Descrição|
 |-------------------|---------------------|-----------------|
-|0|\<nenhum>|Soma de verificação não presente.|
+|0|\<nenhum>|Nenhuma soma de verificação presente.|
 |1|`CALG_MD5`|soma de verificação gerada com o algoritmo de hash MD5.|
 |2|`CALG_SHA1`|soma de verificação gerada com o algoritmo de hash SHA1.|
 
- O `CryptoAPI` rótulos são do `ALG_ID` enumeração. Para obter mais informações sobre algoritmos de hash, consulte o `CryptoAPI` seção do Microsoft [!INCLUDE[winsdkshort](../../debugger/debug-interface-access/includes/winsdkshort_md.md)].
+ Os rótulos de `CryptoAPI` são da enumeração `ALG_ID`. Para obter mais informações sobre algoritmos de hash, consulte a seção `CryptoAPI` do Microsoft [!INCLUDE[winsdkshort](../../debugger/debug-interface-access/includes/winsdkshort_md.md)].
 
- Para obter os bytes da soma de verificação atual para o arquivo de origem, chame o [idiasourcefile:: Get_checksum](../../debugger/debug-interface-access/idiasourcefile-get-checksum.md) método.
+ Para obter os bytes de soma de verificação reais para o arquivo de origem, chame o método [IDiaSourceFile:: get_checksum](../../debugger/debug-interface-access/idiasourcefile-get-checksum.md) .
 
 ## <a name="see-also"></a>Consulte também
 - [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)

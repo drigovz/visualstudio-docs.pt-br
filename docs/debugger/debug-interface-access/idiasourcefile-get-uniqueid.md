@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c4a204e04c1c99dcbe8c6ba6d5e3457ca875dde4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 30a210c12384cbde55dafe6f3410b8fc840e8507
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62832247"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741789"
 ---
-# <a name="idiasourcefilegetuniqueid"></a>IDiaSourceFile::get_uniqueId
+# <a name="idiasourcefileget_uniqueid"></a>IDiaSourceFile::get_uniqueId
 Recupera um valor de chave de inteiro simples que é exclusivo para esta imagem.
 
 ## <a name="syntax"></a>Sintaxe
@@ -33,13 +33,13 @@ HRESULT get_uniqueId ( 
 #### <a name="parameters"></a>Parâmetros
  `pRetVal`
 
-[out] Retorna um valor de chave de inteiro simples que é exclusivo para esta imagem.
+fora Retorna um valor de chave de inteiro simples que é exclusivo para esta imagem.
 
-## <a name="return-value"></a>Valor de retorno
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários
- Comparação de chaves em vez de cadeias de caracteres podem acelerar o processamento de números de linha.
+ Comparar chaves em vez de cadeias de caracteres pode acelerar o processamento de números de linha.
 
 ## <a name="see-also"></a>Consulte também
 - [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)

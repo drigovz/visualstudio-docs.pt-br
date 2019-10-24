@@ -1,5 +1,5 @@
 ---
-title: 'Como: Usar a ferramenta localizador | Microsoft Docs'
+title: 'Como: usar a ferramenta Finder | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,44 +10,44 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5bf3fcf00486ebb8ec54f2d692d483a7f9cf18d7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: f96fe87137c6b14e32fb2648e93c54a1c5b094a0
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63387661"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72732174"
 ---
-# <a name="how-to-use-the-finder-tool"></a>Como: Usar a ferramenta Localizador
-Você pode usar a ferramenta de localização na **localizar janela** caixa de diálogo para exibir propriedades da janela ou mensagens. A ferramenta localizador também poderá localizar janelas filho desabilitadas e distinguir qual janela para realçar se desabilitada a janelas filho se sobrepuserem.
+# <a name="how-to-use-the-finder-tool"></a>Como usar a ferramenta Localizador
+Você pode usar a ferramenta Finder na caixa de diálogo **localizar janela** para exibir as propriedades ou as mensagens da janela. A ferramenta de localizador também pode localizar janelas filhas desabilitadas e discernir qual janela destacar se a sobreposição de janelas filho desabilitada.
 
- ![Spy&#43; &#43; caixa de diálogo Localizar janela](../debugger/media/icon_spy--_find.png "Icon_Spy + + Find") ferramenta Descobridora na caixa de diálogo Localizar janela
+ ![Caixa&#43; &#43; de diálogo janela de localização do Spy](../debugger/media/icon_spy--_find.png "Icon_Spy + + _Find") Ferramenta de localizador na caixa de diálogo localizar janela
 
- A figura acima mostra a caixa de diálogo Localizar janela após a etapa 3 abaixo.
+ A figura acima mostra a caixa de diálogo localizar janela após a etapa 3 abaixo.
 
-### <a name="to-display-window-properties-or-messages"></a>Para exibir propriedades da janela ou mensagens
+### <a name="to-display-window-properties-or-messages"></a>Para exibir propriedades ou mensagens da janela
 
-1. Organize as janelas para que o Spy + + e a janela de destino estão visíveis.
+1. Organize suas janelas para que o Spy + + e a janela de destino fiquem visíveis.
 
-2. Dos **Spy** menu, escolha **localizar janela**.
+2. No menu do **Spy** , escolha **localizar janela**.
 
-    O [caixa de diálogo Localizar janela](../debugger/find-window-dialog-box.md) é aberta.
+    A [caixa de diálogo localizar janela](../debugger/find-window-dialog-box.md) é aberta.
 
-3. Arraste o **ferramenta Descobridora** sobre a janela de destino.
+3. Arraste a **ferramenta localizador** sobre a janela de destino.
 
-    À medida que você arrasta a ferramenta, o **localizar janela** caixa de diálogo exibe detalhes sobre a janela selecionada.
+    À medida que você arrasta a ferramenta, a caixa de diálogo **localizar janela** exibe detalhes na janela selecionada.
 
    - ou –
 
-     Se você tiver o identificador da janela que você deseja examinar (por exemplo, copiado do depurador), digite-o para o **manipular** caixa de texto.
+     Se você tiver o identificador da janela que deseja examinar (por exemplo, copiado do depurador), digite-o na caixa de texto **identificador** .
 
    > [!TIP]
-   > Para reduzir a desordem na tela, selecione a **Spy ocultar** opção. Esta opção oculta a janela principal do Spy + +, deixando apenas o **localizar janela** caixa de diálogo visível na parte superior de seus outros aplicativos. A janela principal do Spy + + é restaurada quando você clica **Okey** ou **Cancelar**, ou quando você desmarca a **ocultar Spy + +** opção.
+   > Para reduzir a desordem na tela, selecione a opção **ocultar Spy** . Essa opção oculta a janela principal do Spy + +, deixando apenas a caixa de diálogo **localizar janela** visível sobre seus outros aplicativos. A janela principal Spy + + é restaurada quando você clica em **OK** ou em **Cancelar**, ou quando você desmarca a opção **ocultar Spy + +** .
 
-4. Sob **mostram**, selecione **Properties** ou **mensagens**.
+4. Em **Mostrar**, selecione **Propriedades** ou **mensagens**.
 
 5. Pressione **OK**.
 
-    Se você selecionou **propriedades**, o [caixa de diálogo de propriedades de janela](../debugger/window-properties-dialog-box.md) é aberta. Se você selecionou **mensagens**, um [exibição de mensagens](../debugger/messages-view.md) janela é aberta.
+    Se você selecionou **Propriedades**, a [caixa de diálogo Propriedades da janela](../debugger/window-properties-dialog-box.md) será aberta. Se você selecionou **mensagens**, uma janela [exibição de mensagens](../debugger/messages-view.md) será aberta.
 
 ## <a name="see-also"></a>Consulte também
 - [Exibições do Spy++](../debugger/spy-increment-views.md)

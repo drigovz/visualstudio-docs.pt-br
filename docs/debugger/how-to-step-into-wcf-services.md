@@ -1,5 +1,5 @@
 ---
-title: 'Como: Intervir em serviços WCF | Microsoft Docs'
+title: 'Como: entrar em serviços WCF | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,17 +16,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0fe025ed3050f25ec53175c543adfaf7cb48c506
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c405b4fcca91f8deddce4d65c8a4155b90af49e0
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62906436"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72732594"
 ---
-# <a name="how-to-step-into-wcf-services"></a>Como: Intervir nos serviços WCF
+# <a name="how-to-step-into-wcf-services"></a>Como intervir em serviços WCF
 No [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)], você pode entrar em um serviço WCF. Se o serviço WCF estiver na mesma solução do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] que o cliente, você poderá usar pontos de interrupção no serviço WCF.
 
- Para que a depuração funcione, você deve ter a depuração habilitada no arquivo app.config ou Web.config. Para obter informações sobre como habilitar a depuração e limitações para entrar em serviços WCF, consulte [limitações na depuração de WCF](../debugger/limitations-on-wcf-debugging.md).
+ Para que a depuração funcione, você deve ter a depuração habilitada no arquivo app.config ou Web.config. Para obter informações sobre como habilitar a depuração e limitações sobre a depuração nos serviços WCF, consulte [limitações na depuração do WCF](../debugger/limitations-on-wcf-debugging.md).
 
 ### <a name="to-step-into-a-wcf-service"></a>Para entrar em um serviço WCF
 
@@ -34,7 +34,7 @@ No [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)], você 
 
 2. No Gerenciador de Soluções, clique com o botão direito do mouse no projeto Cliente WCF e clique em **Definir como projeto de inicialização**.
 
-3. Habilite a depuração no arquivo app.config ou web.config. Para obter mais informações, consulte [limitações na depuração de WCF](../debugger/limitations-on-wcf-debugging.md).
+3. Habilite a depuração no arquivo app.config ou web.config. Para obter mais informações, consulte [limitações na depuração do WCF](../debugger/limitations-on-wcf-debugging.md).
 
 4. Defina um ponto de interrupção no local no projeto de cliente onde você deseja iniciar a entrada. Normalmente, isso será imediatamente antes da chamada de WCF.
 
@@ -43,4 +43,4 @@ No [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)], você 
 ## <a name="see-also"></a>Consulte também
 - [Depurando serviços WCF](../debugger/debugging-wcf-services.md)
 - [Limitações da depuração de WCF](../debugger/limitations-on-wcf-debugging.md)
-- [Como: Depurar um serviço WCF auto-hospedado](../debugger/how-to-debug-a-self-hosted-wcf-service.md)
+- [Como depurar um serviço WCF auto-hospedado](../debugger/how-to-debug-a-self-hosted-wcf-service.md)

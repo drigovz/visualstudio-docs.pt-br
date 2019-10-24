@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c652460e401396a8f7316b5ef300b3c2915f2e4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8287202efaf1f60743969007b432829940441a22
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62828251"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742685"
 ---
-# <a name="idiasectioncontribgetdatacrc"></a>IDiaSectionContrib::get_dataCrc
-Recupera a verificação de redundância cíclica (CRC) dos dados na seção.
+# <a name="idiasectioncontribget_datacrc"></a>IDiaSectionContrib::get_dataCrc
+Recupera a CRC (verificação de redundância cíclica) dos dados na seção.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -33,10 +33,10 @@ HRESULT get_dataCrc ( 
 #### <a name="parameters"></a>Parâmetros
  `pRetVal`
 
-[out] Retorna o CRC dos dados na seção.
+fora Retorna o CRC dos dados na seção.
 
-## <a name="return-value"></a>Valor de retorno
- Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não há suporte para essa propriedade. Caso contrário, retornará um código de erro.
+## <a name="return-value"></a>Valor retornado
+ Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não houver suporte para essa propriedade. Caso contrário, retornará um código de erro.
 
 ## <a name="see-also"></a>Consulte também
 - [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c38962ab5915a4235201e76e1828f84a56af1333
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: c5cff86464a4034ad869cdfe231a88ad128dbf52
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64830791"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739485"
 ---
-# <a name="idiasymbolgetrank"></a>IDiaSymbol::get_rank
-Recupera a classificação (número de dimensões) de uma matriz multidimensional do FORTRAN.
+# <a name="idiasymbolget_rank"></a>IDiaSymbol::get_rank
+Recupera a classificação (número de dimensões) de uma matriz multidimensional FORTRAN.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -33,16 +33,16 @@ HRESULT get_rank ( 
 #### <a name="parameters"></a>Parâmetros
  `pRetVal`
 
-[out] Retorna o número de dimensões em uma matriz multidimensional do FORTRAN.
+fora Retorna o número de dimensões em uma matriz multidimensional FORTRAN.
 
-## <a name="return-value"></a>Valor de retorno
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE` ou um código de erro.
 
 > [!NOTE]
-> Um valor de retorno `S_FALSE` significa que a propriedade não está disponível para o símbolo.
+> Um valor de retorno de `S_FALSE` significa que a propriedade não está disponível para o símbolo.
 
 ## <a name="remarks"></a>Comentários
- Classificação se refere ao número de dimensões em uma matriz em que a matriz é declarada como `myarray[1,2,3]`. Este exemplo tem uma classificação 3 e 3 dimensões. Classificação não se aplica ao C++ que usa o conceito de uma matriz de matrizes para cada dimensão (ou seja, `myarray[1][2][3]`).
+ Rank refere-se ao número de dimensões em uma matriz em que a matriz é declarada como `myarray[1,2,3]`. Este exemplo tem uma classificação de 3 e 3 dimensões. A classificação não se aplica C++ ao que usa o conceito de uma matriz de matrizes para cada dimensão (ou seja, `myarray[1][2][3]`).
 
 ## <a name="see-also"></a>Consulte também
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

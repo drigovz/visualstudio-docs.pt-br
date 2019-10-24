@@ -18,16 +18,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f8f9dafe8ada8914591426dea9abc867de2236f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 97f057edefefd590c37b49d709ecf8a6e029b905
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62564145"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745735"
 ---
 # <a name="cannot-change-value-dialog-box"></a>Caixa de diálogo Não é Possível Alterar o Valor
 ## <a name="error"></a>Erro
- `The value of this variable cannot be changed` &#124;`The name` *nome* `does not exist in the current context` &#124; *várias outras mensagens*
+ `The value of this variable cannot be changed` &#124; *nome* de `The name` &#124; `does not exist in the current context` *várias outras mensagens*
 
  Essa caixa de mensagem aparece quando você tenta alterar o conteúdo de uma variável para um valor inválido em uma janela do depurador (janelas Autos, Inspeção ou Locais) ou na caixa de diálogo QuickWatch. Por exemplo, se você tentar definir o valor de uma variável de inteiro como uma cadeia de caracteres, essa caixa de mensagem é exibida.
 

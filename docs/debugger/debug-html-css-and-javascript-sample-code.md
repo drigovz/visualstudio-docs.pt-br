@@ -1,5 +1,5 @@
 ---
-title: Depurar o código de exemplo HTML e CSS | Microsoft Docs
+title: Depurar HTML e código de exemplo CSS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -14,16 +14,16 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 10fda5038ab1c69a27e79406167c69adcc560658
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 460419d976211747c44f156a5821b88b75aa2e6b
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62563468"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745541"
 ---
 # <a name="debug-html-and-css-sample-code"></a>Depurar o código de exemplo HTML e CSS
 
-O código neste tópico é o arquivo de exemplo para [guia de início rápido: Depurar HTML e CSS](../debugger/quickstart-debug-html-and-css.md). Os erros presentes por design no Início Rápido são corrigidos nesta versão do código.
+O código neste tópico é o arquivo de exemplo para [início rápido: debug HTML e CSS](../debugger/quickstart-debug-html-and-css.md). Os erros presentes por design no Início Rápido são corrigidos nesta versão do código.
 
 ## <a name="sample-code"></a>Código de exemplo
 O código HTML a seguir é usado na tag \<body> no Início Rápido.
@@ -102,4 +102,4 @@ O exemplo de código a seguir mostra o código JavaScript completo no default.js
 ```
 
 ## <a name="see-also"></a>Consulte também
-- [Início Rápido: depurar HTML e CSS](../debugger/quickstart-debug-html-and-css.md)
+- [Guia de início rápido: depurar HTML e CSS](../debugger/quickstart-debug-html-and-css.md)

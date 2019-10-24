@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9865d917e24abf58bdcf63e8abb21370f223aad2
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: b1b0581e7a49ac8c8681077a7f40133498a48789
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64807001"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740882"
 ---
-# <a name="idiasymbolgetcallingconvention"></a>IDiaSymbol::get_callingConvention
-Retorna um indicador de uma convenção de chamada de métodos.
+# <a name="idiasymbolget_callingconvention"></a>IDiaSymbol::get_callingConvention
+Retorna um indicador de uma Convenção de chamada de métodos.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -33,20 +33,20 @@ HRESULT get_callingConvention ( 
 #### <a name="parameters"></a>Parâmetros
  `pRetVal`
 
-[out] Retorna um valor da [enumeração CV_call_e](../../debugger/debug-interface-access/cv-call-e.md) convenção de chamada de enumeração que especifica um método.
+fora Retorna um valor da enumeração de [Enumeração CV_call_e](../../debugger/debug-interface-access/cv-call-e.md) que especifica a Convenção de chamada de um método.
 
-## <a name="return-value"></a>Valor de retorno
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE` ou um código de erro.
 
 > [!NOTE]
-> Um valor de retorno `S_FALSE` significa que a propriedade não está disponível para o símbolo.
+> Um valor de retorno de `S_FALSE` significa que a propriedade não está disponível para o símbolo.
 
 ## <a name="requirements"></a>Requisitos
 
 |Requisito|Descrição|
 |-----------------|-----------------|
 |Cabeçalho:|dia2.h|
-|Versão:|DIA SDK v7.0|
+|Versão:|DIA SDK v 7.0|
 
 ## <a name="see-also"></a>Consulte também
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

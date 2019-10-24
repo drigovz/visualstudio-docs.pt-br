@@ -1,5 +1,5 @@
 ---
-title: 'Erro: Processo de trabalho do site da Web foi encerrado pelo IIS | Microsoft Docs'
+title: 'Erro: o processo de trabalho do site foi encerrado pelo IIS | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 f1_keywords:
@@ -14,14 +14,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2d89eabec0c199b1b8df7eeb78d0e629d4a70b2e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3231c8ba2835fb535d538e29ef7df7ea3d1c4a8a
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62849992"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72736350"
 ---
-# <a name="error-web-site-worker-process-has-been-terminated-by-iis"></a>Erro: O processo de trabalho do site foi terminado pelo IIS
+# <a name="error-web-site-worker-process-has-been-terminated-by-iis"></a>Erro: o processo de trabalho do site foi encerrado pelo IIS
 O depurador interrompeu a execução de código no site. Isso fez o IIS (Serviços de Informações da Internet) supor que o processo de trabalho parou de responder. Consequentemente, o IIS terminou o processo de trabalho.
 
  Para retomar a depuração, será necessário configurar o IIS para permitir que o processo de trabalho continue. Essa mensagem de erro não aparece em versões do IIS que são anteriores ao IIS 7.
@@ -34,7 +34,7 @@ O depurador interrompeu a execução de código no site. Isso fez o IIS (Serviç
 
    2. No **Painel de Controle**, escolha **Alternar para o Modo de Exibição Clássico** se necessário e clique duas vezes em **Ferramentas Administrativas**.
 
-2. Na janela **Ferramentas Administrativas**, clique duas vezes em **Serviços de Informações da Internet (IIS)**.
+2. Na janela **Ferramentas Administrativas**, clique duas vezes em **Serviços de Informações da Internet (IIS)** .
 
     O Gerenciador do IIS é aberto.
 

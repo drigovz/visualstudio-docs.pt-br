@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: b2fa0bd62b88602ee5a4d5091821e2c2a18f6374
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: d902403b111e92f302ff907a29eaaa99ee181058
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72430766"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72737997"
 ---
 # <a name="deploy-uwp-apps-from-visual-studio"></a>Implantar aplicativos UWP usando o Visual Studio
 
@@ -98,7 +98,7 @@ Você pode definir as opções de implantação a seguir na página de proprieda
 
 **Permitir loopback de rede**
 
-Por motivos de segurança, um aplicativo UWP ou [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] que é instalado da maneira padrão não é permitido para fazer chamadas de rede para o dispositivo em que ele está instalado. Por padrão, a implantação do Visual Studio cria uma isenção dessa regra para o aplicativo implantado. Essa isenção permite que você teste procedimentos de comunicação em um único computador. Antes de enviar seu aplicativo para [!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)], você deve testá-lo sem a isenção.
+Por motivos de segurança, um aplicativo UWP ou [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] que é instalado da maneira padrão não é permitido para fazer chamadas de rede para o dispositivo no qual ele está instalado. Por padrão, a implantação do Visual Studio cria uma isenção dessa regra para o aplicativo implantado. Essa isenção permite que você teste procedimentos de comunicação em um único computador. Antes de enviar seu aplicativo para [!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)], você deve testá-lo sem a isenção.
 
 Para remover a isenção de loopback de rede do aplicativo:
 

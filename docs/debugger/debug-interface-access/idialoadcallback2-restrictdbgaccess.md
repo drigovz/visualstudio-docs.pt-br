@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 24317ff7a79815e5af2306b09cc8d2aa3bfdde0d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 79756c2f9ab9e69fa45041e2ddaa2ff2119c27c5
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62832643"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743011"
 ---
 # <a name="idialoadcallback2restrictdbgaccess"></a>IDiaLoadCallback2::RestrictDBGAccess
-Determina se procurando por informações de depuração é permitido de arquivos. dbg.
+Determina se procurar informações de depuração é permitida a partir de arquivos. dbg.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -28,11 +28,11 @@ Determina se procurando por informações de depuração é permitido de arquivo
 HRESULT RestrictDBGAccess();
 ```
 
-## <a name="return-value"></a>Valor de retorno
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários
- Qualquer valor de retorno diferente de `S_OK` para evitar procurando por informações de depuração de arquivos. dbg.
+ Qualquer valor de retorno diferente de `S_OK` para evitar a procura de informações de depuração de arquivos. dbg.
 
 ## <a name="see-also"></a>Consulte também
 - [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)

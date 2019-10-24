@@ -1,5 +1,5 @@
 ---
-title: 'Como: Localizar em qual DLL o programa falhado | Microsoft Docs'
+title: 'Como: descobrir qual DLL seu programa falhou | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -22,14 +22,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b7a9421af9e0caf085feb1afb27b53befe837668
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bff4f164e16a65efe4ec3d1f057025168eab8cd2
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62894041"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72733277"
 ---
-# <a name="how-to-find-which-dll-your-program-crashed-in-c-c-visual-basic-f"></a>Como: Localizar em qual DLL o programa falhado (C#, C++, Visual Basic, F#)
+# <a name="how-to-find-which-dll-your-program-crashed-in-c-c-visual-basic-f"></a>Como: descobrir qual DLL seu programa falhou (C#, C++, Visual Basic,) F#
 
  Se houver falhas no aplicativo durante uma chamada a uma DLL do sistema ou o código de outra pessoa, você precisará descobrir qual DLL estava ativa quando a falha ocorreu. Se você tiver uma falha em uma DLL fora de seu próprio programa, poderá identificar a localização usando a janela **Módulos**.
 
@@ -37,7 +37,7 @@ ms.locfileid: "62894041"
 
 1. Observe o endereço onde a falha ocorreu.
 
-    Se o endereço não é exibido na mensagem de erro, você precisa usar métodos alternativos para identificar a DLL. Se você suspeitar de uma DLL do sistema, você poderá [carregar símbolos](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md) de servidores de símbolo da Microsoft durante a depuração. Caso contrário, talvez você precise [criar um arquivo de despejo](../debugger/using-dump-files.md) com heap informações em vez disso. Vários [ferramentas](https://blogs.msdn.microsoft.com/andrehal/2009/12/31/what-is-a-dump-and-how-do-i-create-one/) estão disponíveis para criar arquivos de despejo.
+    Se o endereço não for mostrado na mensagem de erro, talvez seja necessário usar métodos alternativos para identificar a DLL. Se você suspeitar de uma DLL do sistema, poderá [carregar símbolos](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md) dos servidores de símbolo da Microsoft durante a depuração. Caso contrário, talvez seja necessário [criar um arquivo de despejo](../debugger/using-dump-files.md) com informações de heap. Várias [ferramentas](https://blogs.msdn.microsoft.com/andrehal/2009/12/31/what-is-a-dump-and-how-do-i-create-one/) estão disponíveis para criar arquivos de despejo.
 
 2. No menu **Depurar**, escolha **Janelas** e clique em **Módulos**.
 
@@ -51,4 +51,4 @@ ms.locfileid: "62894041"
 
 ## <a name="see-also"></a>Consulte também
 - [Depurando projetos de DLL](../debugger/debugging-dll-projects.md)
-- [Como: Usar a janela Módulos](../debugger/how-to-use-the-modules-window.md)
+- [Como usar a janela Módulos](../debugger/how-to-use-the-modules-window.md)

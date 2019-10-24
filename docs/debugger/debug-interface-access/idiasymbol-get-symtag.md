@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4bdd4ed102718a1c81be55c848a2d3c891c0ba99
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 99f24e47ff04c6a7d37633c4f04bbd058b861cd6
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64830611"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739224"
 ---
-# <a name="idiasymbolgetsymtag"></a>IDiaSymbol::get_symTag
+# <a name="idiasymbolget_symtag"></a>IDiaSymbol::get_symTag
 Recupera o classificador de tipo de símbolo.
 
 ## <a name="syntax"></a>Sintaxe
@@ -33,13 +33,13 @@ HRESULT get_symTag ( 
 #### <a name="parameters"></a>Parâmetros
  `pRetVal`
 
-[out] Retorna um valor da [enumeração SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) enumeração que especifica o classificador de tipo de símbolo.
+fora Retorna um valor da enumeração de [Enumeração SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) que especifica o classificador de tipo de símbolo.
 
-## <a name="return-value"></a>Valor de retorno
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE` ou um código de erro.
 
 > [!NOTE]
-> Um valor de retorno `S_FALSE` significa que a propriedade não está disponível para o símbolo.
+> Um valor de retorno de `S_FALSE` significa que a propriedade não está disponível para o símbolo.
 
 ## <a name="example"></a>Exemplo
 

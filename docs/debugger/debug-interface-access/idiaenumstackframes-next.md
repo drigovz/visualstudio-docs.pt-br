@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f9cf220c65cf11836e64a7e1f4c0142c89669f4b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ffde40e221823d9656c4b6414b14067ac9d0537a
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62833292"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744036"
 ---
 # <a name="idiaenumstackframesnext"></a>IDiaEnumStackFrames::Next
 Recupera um número especificado de elementos de quadro de pilha da sequência de enumeração.
@@ -35,18 +35,18 @@ HRESULT Next( 
 #### <a name="parameters"></a>Parâmetros
  celt
 
-[in] O número de elementos de stackframe no enumerador a ser recuperado.
+no O número de elementos StackFrame no enumerador a ser recuperado.
 
  rgelt
 
-[out] Uma matriz que deve ser preenchido com os solicitados [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md) objetos.
+fora Uma matriz que deve ser preenchida com os objetos [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md) solicitados.
 
  pceltFetched
 
-[out] Retorna o número da pilha de elementos de quadro no enumerador buscado.
+fora Retorna o número de elementos de quadro de pilha no enumerador obtido.
 
-## <a name="return-value"></a>Valor de retorno
- Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não houver nenhum mais quadros de pilha. Caso contrário, retornará um código de erro.
+## <a name="return-value"></a>Valor retornado
+ Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não houver mais quadros de pilha. Caso contrário, retornará um código de erro.
 
 ## <a name="see-also"></a>Consulte também
 - [IDiaEnumStackFrames](../../debugger/debug-interface-access/idiaenumstackframes.md)

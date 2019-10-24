@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 22ae91323300cd148cf13c4c4aef293709ef73f2
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 79c14427e967736b0dbe1ddb235f9e90b3ecc10f
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64786545"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740722"
 ---
-# <a name="idiasymbolgetdatabytes"></a>IDiaSymbol::get_dataBytes
-Recupera os bytes de dados de um símbolo de OEM.
+# <a name="idiasymbolget_databytes"></a>IDiaSymbol::get_dataBytes
+Recupera os bytes de dados de um símbolo OEM.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -35,27 +35,27 @@ HRESULT get_dataBytes ( 
 #### <a name="parameters"></a>Parâmetros
  `cbData`
 
-[in] Tamanho do buffer para manter os dados.
+no Tamanho do buffer para armazenar os dados.
 
  `pcbData`
 
-[out] Retorna o número de bytes gravados, ou, se o `data` parâmetro é `NULL`, retorna o número de bytes disponíveis.
+fora Retorna o número de bytes gravados ou, se o parâmetro `data` for `NULL`, retornará o número de bytes disponíveis.
 
  `data[]`
-- [out] Um buffer que será preenchido com os bytes de dados.
+- [fora,] Um buffer que é preenchido com os bytes de dados.
 
-## <a name="return-value"></a>Valor de retorno
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE` ou um código de erro.
 
 > [!NOTE]
-> Um valor de retorno `S_FALSE` significa que a propriedade não está disponível para o símbolo.
+> Um valor de retorno de `S_FALSE` significa que a propriedade não está disponível para o símbolo.
 
 ## <a name="requirements"></a>Requisitos
 
 |Requisito|Descrição|
 |-----------------|-----------------|
 |Cabeçalho:|dia2.h|
-|Versão:|DIA SDK v7.0|
+|Versão:|DIA SDK v 7.0|
 
 ## <a name="see-also"></a>Consulte também
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 40437dfe6d7b8d46a3850f55f181ecd0c3745b70
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f1060d5ffce3abc8596b896ef227f72993219f57
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62831948"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741459"
 ---
 # <a name="idiastackwalkframesearchforreturnaddress"></a>IDiaStackWalkFrame::searchForReturnAddress
-Pesquisa o quadro de pilha especificada para o endereço de retorno de função mais próximo.
+Pesquisa o quadro de pilha especificado para o endereço de retorno de função mais próximo.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -34,13 +34,13 @@ HRESULT searchForReturnAddress ( 
 #### <a name="parameters"></a>Parâmetros
  `frame`
 
-[in] Uma [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) objeto que representa o quadro de pilhas atual.
+no Um objeto [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) que representa o quadro de pilhas atual.
 
  `returnAddress`
 
-[out] Retorna o endereço de retorno de função mais próximo.
+fora Retorna o endereço de retorno de função mais próximo.
 
-## <a name="return-value"></a>Valor de retorno
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
 
 ## <a name="see-also"></a>Consulte também

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fb1ed8a531e7302bd184490b8017679712ef131a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d13040c3a35b1a41d3d03641194e563abc80e6de
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62833528"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744380"
 ---
 # <a name="idiaenumlinenumbersreset"></a>IDiaEnumLineNumbers::Reset
 Redefine uma sequência de enumeração para o início.
@@ -28,7 +28,7 @@ Redefine uma sequência de enumeração para o início.
 HRESULT Reset();
 ```
 
-## <a name="return-value"></a>Valor de retorno
+## <a name="return-value"></a>Valor retornado
  Retorna `S_OK`.
 
 ## <a name="see-also"></a>Consulte também

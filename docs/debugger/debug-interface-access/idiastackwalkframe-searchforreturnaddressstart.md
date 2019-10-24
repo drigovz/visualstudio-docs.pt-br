@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bf7de77016f5ccc15f2cea8bf3172321dd824096
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7ad1c42a39b9c35cc1436488e19481f2b286b6f5
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62838048"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741454"
 ---
 # <a name="idiastackwalkframesearchforreturnaddressstart"></a>IDiaStackWalkFrame::searchForReturnAddressStart
-Pesquisa o quadro de pilha especificada para um endereço de retorno em ou próximo o endereço especificado.
+Pesquisa o quadro de ativação especificado em busca de um endereço de retorno no endereço especificado ou próximo dele.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -35,17 +35,17 @@ HRESULT searchForReturnAddressStart ( 
 #### <a name="parameters"></a>Parâmetros
  `frame`
 
-[in] Uma [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) objeto que representa o quadro de pilhas atual.
+no Um objeto [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) que representa o quadro de pilhas atual.
 
  `startAddress`
 
-[in] Um endereço de memória virtual da qual iniciar a pesquisa.
+no Um endereço de memória virtual do qual começar a Pesquisar.
 
  `returnAddress`
 
-[out] Retorna a função mais próxima endereço do remetente a `startAddress`.
+fora Retorna o endereço de retorno de função mais próximo para `startAddress`.
 
-## <a name="return-value"></a>Valor de retorno
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
 
 ## <a name="see-also"></a>Consulte também

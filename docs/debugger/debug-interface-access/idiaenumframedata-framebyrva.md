@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cbdb525034016981c1f9030e6bce1f9590c45591
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f0a6636b692a3017adb6d8b9242dca62f397bf40
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62838318"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744680"
 ---
 # <a name="idiaenumframedataframebyrva"></a>IDiaEnumFrameData::frameByRVA
-Retorna um quadro por endereço virtual relativo (RVA).
+Retorna um quadro pelo endereço virtual relativo (RVA).
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -34,14 +34,14 @@ HRESULT frameByRVA( 
 #### <a name="parameters"></a>Parâmetros
  relativeVirtualAddress
 
-[in] RVA do quadro de interesse.
+no RVA do quadro de interesse.
 
  moldura
 
-[out] Retorna um [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) objeto representando o quadro que contém o endereço fornecido.
+fora Retorna um objeto [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) que representa o quadro que contém o endereço fornecido.
 
-## <a name="return-value"></a>Valor de retorno
- Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se o endereço especificado não corresponde a nenhum dado de quadro. Caso contrário, retornará um código de erro.
+## <a name="return-value"></a>Valor retornado
+ Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se nenhum dado de quadro corresponder ao endereço especificado. Caso contrário, retornará um código de erro.
 
 ## <a name="see-also"></a>Consulte também
 - [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)

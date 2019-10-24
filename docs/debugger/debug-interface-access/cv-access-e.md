@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 90230bd95e1dbcd3e4c186257c6c36faad6ba1f7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bbe338ba9d3aa6cbc795606c3fa285526afdfd36
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62555124"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745366"
 ---
-# <a name="cvaccesse"></a>CV_access_e
-Especifica o escopo de visibilidade (nível de acesso) de funções de membro e variáveis.
+# <a name="cv_access_e"></a>CV_access_e
+Especifica o escopo de visibilidade (nível de acesso) de funções e variáveis de membro.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -33,17 +33,17 @@ typedef enum CV_access_e {
 ```
 
 ## <a name="elements"></a>Elementos
-Membro de CV_private tem acesso privado.
+O membro CV_private tem acesso privado.
 
-Membro de CV_protected tenha acesso protegido.
+O membro CV_protected tem acesso protegido.
 
-Membro de CV_public tem acesso público.
+O membro CV_public tem acesso público.
 
 ## <a name="remarks"></a>Comentários
-O `friend` especificador de acesso não é incluída aqui porque ele é normalmente usado por funções não membro que têm acesso a elementos particulares e protegidos da classe. Use o [idiasymbol:: Get_symtag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md) método para localizar símbolos com `SymTagFriend` acesso.
+O especificador de acesso `friend` não está incluído aqui porque normalmente é usado por funções que não são de membro que têm acesso a elementos privados e protegidos da classe. Use o método [IDiaSymbol:: get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md) para localizar símbolos com acesso `SymTagFriend`.
 
 ## <a name="requirements"></a>Requisitos
-Cabeçalho: cvconst.h
+Cabeçalho: cvconst. h
 
 ## <a name="see-also"></a>Consulte também
 - [Enumerações e estruturas](../../debugger/debug-interface-access/enumerations-and-structures.md)

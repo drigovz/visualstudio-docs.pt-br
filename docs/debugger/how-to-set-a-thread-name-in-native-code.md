@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a89dce28f33bef0ffdb13d6254b2ac6b86ac25db
-ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
+ms.openlocfilehash: 1f9df52bee88722006c21c28e88a2e32113942e4
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72589029"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72732754"
 ---
 # <a name="how-to-set-a-thread-name-in-native-code"></a>Como definir um nome de thread em código nativo
 A nomeação de thread é possível em qualquer edição do Visual Studio. A nomenclatura de threads é útil para identificar threads de interesse na janela **threads** durante a depuração de um processo em execução. Ter threads com nomes reconhecidos também pode ser útil ao executar a depuração de post-mortem por meio da inspeção de despejo de memória e ao analisar capturas de desempenho usando várias ferramentas.

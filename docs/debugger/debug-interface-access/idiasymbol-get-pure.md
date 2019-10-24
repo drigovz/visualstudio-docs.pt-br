@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2ee8b08c724f88c2fcbde7e2001aa89b47442e61
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 489a50da8c5af4c7e63f0c8109c2810716d598e7
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64796103"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739478"
 ---
-# <a name="idiasymbolgetpure"></a>IDiaSymbol::get_pure
-Recupera um sinalizador que especifica se a função é pura virtual.
+# <a name="idiasymbolget_pure"></a>IDiaSymbol::get_pure
+Recupera um sinalizador que especifica se a função é virtual puro.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -33,13 +33,13 @@ HRESULT get_pure ( 
 #### <a name="parameters"></a>Parâmetros
  `pRetVal`
 
-[out] Retorna `TRUE` se a função é pura virtual; caso contrário, retornará `FALSE`.
+fora Retornará `TRUE` se a função for virtual pura; caso contrário, retorna `FALSE`.
 
-## <a name="return-value"></a>Valor de retorno
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE` ou um código de erro.
 
 > [!NOTE]
-> Um valor de retorno `S_FALSE` significa que a propriedade não está disponível para o símbolo.
+> Um valor de retorno de `S_FALSE` significa que a propriedade não está disponível para o símbolo.
 
 ## <a name="see-also"></a>Consulte também
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 77a1554e749e6f5186f7c99844cb793814b0129b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 726f5df7ff898675fc9253b47785c666d435a387
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839830"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743210"
 ---
-# <a name="idialinenumbergetlinenumber"></a>IDiaLineNumber::get_lineNumber
+# <a name="idialinenumberget_linenumber"></a>IDiaLineNumber::get_lineNumber
 Recupera o número de linha no arquivo de origem.
 
 ## <a name="syntax"></a>Sintaxe
@@ -33,10 +33,10 @@ HRESULT get_lineNumber ( 
 #### <a name="parameters"></a>Parâmetros
  `pRetVal`
 
-[out] Retorna o número de linha no arquivo de origem.
+fora Retorna o número de linha no arquivo de origem.
 
-## <a name="return-value"></a>Valor de retorno
- Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não há suporte para essa propriedade. Caso contrário, retornará um código de erro.
+## <a name="return-value"></a>Valor retornado
+ Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não houver suporte para essa propriedade. Caso contrário, retornará um código de erro.
 
 ## <a name="example"></a>Exemplo
 

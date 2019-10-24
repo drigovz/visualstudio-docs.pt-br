@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 43c825bd621ada3f3e81d76f09a1f4bf9e30a67e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 324cad63a597768dc2c13447c6d2d68756878695
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839973"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743605"
 ---
-# <a name="idiaframedatagetfunctionstart"></a>IDiaFrameData::get_functionStart
+# <a name="idiaframedataget_functionstart"></a>IDiaFrameData::get_functionStart
 Recupera um sinalizador que indica se o bloco contém o ponto de entrada de uma função.
 
 ## <a name="syntax"></a>Sintaxe
@@ -33,13 +33,13 @@ HRESULT get_functionStart ( 
 #### <a name="parameters"></a>Parâmetros
  `pRetVal`
 
-[out] Retorna `TRUE` se o bloco contiver o ponto de entrada; caso contrário, retornará `FALSE`.
+fora Retorna `TRUE` se o bloco contiver o ponto de entrada; caso contrário, retorna `FALSE`.
 
-## <a name="return-value"></a>Valor de retorno
- Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não há suporte para essa propriedade. Caso contrário, retornará um código de erro.
+## <a name="return-value"></a>Valor retornado
+ Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não houver suporte para essa propriedade. Caso contrário, retornará um código de erro.
 
 ## <a name="remarks"></a>Comentários
- É possível que um quadro de pilha não ser o início de uma função como o quadro representa um método em linha ou uma função inserida em uma função.
+ É possível que um registro de ativação não seja o início de uma função porque o quadro representa um método embutido ou função inserida em uma função.
 
 ## <a name="see-also"></a>Consulte também
 - [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

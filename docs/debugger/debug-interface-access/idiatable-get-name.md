@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fc5ac9b3892ad9447f413df58d43791b1be1720a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e3874ad63026208d096a2b7866377d09ac79cbe9
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62840467"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738754"
 ---
-# <a name="idiatablegetname"></a>IDiaTable::get_name
+# <a name="idiatableget_name"></a>IDiaTable::get_name
 Recupera o nome da tabela.
 
 ## <a name="syntax"></a>Sintaxe
@@ -33,9 +33,9 @@ HRESULT get_name ( 
 #### <a name="parameters"></a>Parâmetros
  `pRetVal`
 
-[out] Retorna o nome da tabela.
+fora Retorna o nome da tabela.
 
-## <a name="return-value"></a>Valor de retorno
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
 
 ## <a name="see-also"></a>Consulte também

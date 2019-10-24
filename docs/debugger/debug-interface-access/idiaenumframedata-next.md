@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 55875d4ad964b958bf2fb38d259e7d4d68909cb5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6fe478e503ed6e16ee570f309f91434c658ebd27
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62830099"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744592"
 ---
 # <a name="idiaenumframedatanext"></a>IDiaEnumFrameData::Next
-Recupera um número especificado de elementos de dados do quadro na sequência de enumeração.
+Recupera um número especificado de elementos de dados de quadro na sequência de enumeração.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -35,18 +35,18 @@ HRESULT Next ( 
 #### <a name="parameters"></a>Parâmetros
  celt
 
-[in] O número de elementos de dados do quadro no enumerador a ser recuperado.
+no O número de elementos de dados de quadro no enumerador a ser recuperado.
 
  rgelt
 
-[out] Uma matriz de [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) objetos a ser preenchida com os elementos de dados do quadro solicitada.
+fora Uma matriz de objetos [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) a ser preenchida com os elementos de dados de quadro solicitados.
 
  pceltFetched
 
-[out] Retorna o número de elementos de dados do quadro no enumerador buscado.
+fora Retorna o número de elementos de dados de quadro no enumerador obtido.
 
-## <a name="return-value"></a>Valor de retorno
- Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não há mais registros. Caso contrário, retornará um código de erro.
+## <a name="return-value"></a>Valor retornado
+ Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não houver mais registros. Caso contrário, retornará um código de erro.
 
 ## <a name="see-also"></a>Consulte também
 - [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)

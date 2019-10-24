@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c3a6d3eb61f4e4a7504b184477ec1b3f2a8ba83
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 091d2f5996d53341e57c5c1b2125609642a156eb
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62829609"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744021"
 ---
 # <a name="idiaenumsourcefiles"></a>IDiaEnumSourceFiles
 Enumera os vários arquivos de origem contidos na fonte de dados.
@@ -28,12 +28,12 @@ Enumera os vários arquivos de origem contidos na fonte de dados.
 IDiaEnumSourceFiles : IUnknown
 ```
 
-## <a name="methods-in-vtable-order"></a>Métodos na ordem de Vtable
+## <a name="methods-in-vtable-order"></a>Métodos em ordem vtable
 A tabela a seguir mostra os métodos de `IDiaEnumSourceFiles`.
 
 |Método|Descrição|
 |------------|-----------------|
-|[IDiaEnumSourceFiles::get__NewEnum](../../debugger/debug-interface-access/idiaenumsourcefiles-get-newenum.md)|Recupera o `IEnumVARIANT Interface` versão este enumerador.|
+|[IDiaEnumSourceFiles::get__NewEnum](../../debugger/debug-interface-access/idiaenumsourcefiles-get-newenum.md)|Recupera a versão `IEnumVARIANT Interface` deste enumerador.|
 |[IDiaEnumSourceFiles::get_Count](../../debugger/debug-interface-access/idiaenumsourcefiles-get-count.md)|Recupera o número de arquivos de origem.|
 |[IDiaEnumSourceFiles::Item](../../debugger/debug-interface-access/idiaenumsourcefiles-item.md)|Recupera um arquivo de origem por meio de um índice.|
 |[IDiaEnumSourceFiles::Next](../../debugger/debug-interface-access/idiaenumsourcefiles-next.md)|Recupera um número especificado de arquivos de origem na sequência de enumeração.|
@@ -44,10 +44,10 @@ A tabela a seguir mostra os métodos de `IDiaEnumSourceFiles`.
 ## <a name="remarks"></a>Comentários
 
 ## <a name="notes-for-callers"></a>Observações para chamadores
-Obtenha essa interface por meio da chamada a `QueryInterface` método em um [IDiaTable](../../debugger/debug-interface-access/idiatable.md) objeto. Consulte o exemplo para obter detalhes.
+Obtenha essa interface chamando o método `QueryInterface` em um objeto [IDiaTable](../../debugger/debug-interface-access/idiatable.md) . Consulte o exemplo para obter detalhes.
 
 ## <a name="example"></a>Exemplo
-Este exemplo mostra como obter o `IDiaEnumSourceFiles` interface na lista de tabelas em um objeto de sessão do DIA. Para obter um exemplo de como acessar informações do arquivo de origem, consulte a [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md) interface.
+Este exemplo mostra como obter a interface `IDiaEnumSourceFiles` da lista de tabelas em um objeto de sessão de DIA. Para obter um exemplo de acesso às informações do arquivo de origem, consulte a interface [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md) .
 
 ```C++
 
@@ -80,9 +80,9 @@ IDiaEnumSourceFiles* GetEnumSourceFiles(IDiaSession *pSession)
 ```
 
 ## <a name="requirements"></a>Requisitos
-Cabeçalho: Dia2.h
+Cabeçalho: dia2. h
 
-Biblioteca: diaguids.lib
+Biblioteca: diaguids. lib
 
 DLL: msdia80.dll
 

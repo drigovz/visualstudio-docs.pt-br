@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b5c86d9f4f8eb02b0389e7ea28b5858f8576f6c6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 47f6119eac1d48a7819f67bc57660c53e6b93b54
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62838396"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744658"
 ---
 # <a name="idiaenumframedataclone"></a>IDiaEnumFrameData::Clone
 Cria um enumerador que contém o mesmo estado de enumeração que o enumerador atual.
@@ -33,9 +33,9 @@ HRESULT Clone( 
 #### <a name="parameters"></a>Parâmetros
  ppenum
 
-[out] Retorna um [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md) objeto que contém uma duplicata do enumerador. O quadro de dados não são duplicados, apenas o enumerador.
+fora Retorna um objeto [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md) que contém uma duplicata do enumerador. Os dados do quadro não são duplicados, somente o enumerador.
 
-## <a name="return-value"></a>Valor de retorno
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
 
 ## <a name="see-also"></a>Consulte também

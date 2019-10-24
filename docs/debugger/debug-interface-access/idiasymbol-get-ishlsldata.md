@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 03b0bf45d4b8100f4ebfd1d6a61dc73547312fe6
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: f158264bbbb18e074788925534c6c9ba1a9d79a6
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62836697"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740236"
 ---
-# <a name="idiasymbolgetishlsldata"></a>IDiaSymbol::get_isHLSLData
-Especifica se este símbolo representa dados de nível sombreador HLSL (High Language).
+# <a name="idiasymbolget_ishlsldata"></a>IDiaSymbol::get_isHLSLData
+Especifica se este símbolo representa dados de HLSL (linguagem de sombreamento de alto nível).
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -30,9 +30,9 @@ HRESULT get_isHLSLData(
 #### <a name="parameters"></a>Parâmetros
  `pRetVal`
 
-[out] Um ponteiro para um `BOOL` que especifica se este símbolo representa dados HLSL.
+fora Um ponteiro para um `BOOL` que especifica se este símbolo representa dados HLSL.
 
-## <a name="return-value"></a>Valor de retorno
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE` ou um código de erro.
 
 ## <a name="see-also"></a>Consulte também

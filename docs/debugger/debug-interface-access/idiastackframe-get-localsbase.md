@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cbe6dd1d5b72faea57ecb015b0da294798527c0b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4ae3f83469e14e826802ca82d3d58686a340d9e0
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62838201"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741657"
 ---
-# <a name="idiastackframegetlocalsbase"></a>IDiaStackFrame::get_localsBase
-Recupera o endereço básico das variáveis locais para o quadro.
+# <a name="idiastackframeget_localsbase"></a>IDiaStackFrame::get_localsBase
+Recupera o endereço base das variáveis locais para o quadro.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -33,10 +33,10 @@ HRESULT get_localsBase ( 
 #### <a name="parameters"></a>Parâmetros
  `pRetVal`
 
-[out] Retorna o endereço básico das variáveis locais.
+fora Retorna o endereço base das variáveis locais.
 
-## <a name="return-value"></a>Valor de retorno
- Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não há suporte para a propriedade. Caso contrário, retornará um código de erro.
+## <a name="return-value"></a>Valor retornado
+ Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se a propriedade não tiver suporte. Caso contrário, retornará um código de erro.
 
 ## <a name="see-also"></a>Consulte também
 - [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)

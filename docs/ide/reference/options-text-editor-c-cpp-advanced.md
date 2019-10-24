@@ -14,12 +14,12 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6c5399411998f4a03468f2dedccfd660eaf8de11
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
-ms.translationtype: HT
+ms.openlocfilehash: cbdbadd93eec07c43aba99e40072cb6173e0e83d
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461817"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747838"
 ---
 # <a name="options-text-editor-cc-advanced"></a>Opções, Editor de Texto, C/C++, Avançado
 
@@ -52,7 +52,7 @@ O banco de dados de navegação de código não coleta dados para arquivos que n
 
 **Desabilitar Limpeza Implícita**
 
-O banco de dados de navegação de código não limpa arquivos implícitos que não são mais referenciados. Essa opção impede que arquivos implícitos sejam removidos do banco de dados quando não são mais usados. Por exemplo, se você adicionar um a diretiva `#include` que referencia mapi.h a um dos seus arquivos de origem, mapi.h será encontrado e indexado. Se você, em seguida, remover o #include e o arquivo não for referenciado em outro lugar, as informações sobre ele eventualmente serão removidas a menos que você escolha essa opção. (Consulte a opção **Verificar Novamente Intervalo da Solução**.) Essa opção é ignorada quando você explicitamente verifica novamente a solução.
+O banco de dados de navegação de código não limpa arquivos implícitos que não são mais referenciados. Essa opção impede que arquivos implícitos sejam removidos do banco de dados quando não são mais usados. Por exemplo, se você adicionar um a diretiva `#include` que referencia mapi.h a um dos seus arquivos de origem, mapi.h será encontrado e indexado. Se você, em seguida, remover o #include e o arquivo não for referenciado em outro lugar, as informações sobre ele eventualmente serão removidas a menos que você escolha essa opção. (Consulte a opção **examinar novamente o intervalo de solução** .) Essa opção é ignorada quando você examina a solução de forma explícita.
 
 **Desabilitar Pastas de Dependências Externas**
 
@@ -64,7 +64,7 @@ Recrie o banco de dados de navegação de código do nada na próxima vez em que
 
 **Verificar Novamente Intervalo da Solução**
 
-Um trabalho do tipo 'Examinar Novamente a Solução Agora' será agendado para o intervalo que você especificar. Você deve especificar entre 0 e 5000 minutos. O valor padrão é 60 minutos. Enquanto a solução é verificada novamente, os carimbos de data/hora do arquivo são verificados para determinar se o arquivo foi alterado fora do IDE. (As alterações feitas no IDE são rastreadas automaticamente e os arquivos são atualizados.) Os arquivos incluídos implicitamente são verificados para determinar se eles ainda são referenciados.
+Um trabalho do tipo 'Examinar Novamente a Solução Agora' será agendado para o intervalo que você especificar. Você deve especificar entre 0 e 5000 minutos. O valor padrão é 60 minutos. Enquanto a solução é verificada novamente, os carimbos de data/hora do arquivo são verificados para determinar se o arquivo foi alterado fora do IDE. (As alterações feitas no IDE são automaticamente rastreadas e os arquivos são atualizados.) Os arquivos incluídos implicitamente são verificados para determinar se todos eles ainda são referenciados.
 
 ## <a name="diagnostic-logging"></a>Diagnostic Logging
 
@@ -206,6 +206,6 @@ Se habilitado, você poderá colocar o texto selecionado entre chaves digitando 
 
 Se habilitado, você poderá colocar o texto selecionado entre parênteses digitando ‘(’ no editor de texto.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
 - [Configurando opções do editor específicas a um idioma](../../ide/reference/setting-language-specific-editor-options.md)

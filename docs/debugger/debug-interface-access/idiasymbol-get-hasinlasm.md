@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 05ebeb1670ed9eb85820a41858c964ef561a8a5c
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 336849e6818bd3b8d68558b381b8f0a0f8600028
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64830415"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740509"
 ---
-# <a name="idiasymbolgethasinlasm"></a>IDiaSymbol::get_hasInlAsm
+# <a name="idiasymbolget_hasinlasm"></a>IDiaSymbol::get_hasInlAsm
 Recupera um sinalizador que especifica se a função contém assembly embutido.
 
 ## <a name="syntax"></a>Sintaxe
@@ -33,20 +33,20 @@ HRESULT get_hasInlAsm(
 #### <a name="parameters"></a>Parâmetros
  `pFlag`
 
-[out] Retorna `TRUE` se a função tiver qualquer assembly embutido; caso contrário, retornará `FALSE`.
+fora Retornará `TRUE` se a função tiver qualquer assembly embutido; caso contrário, retorna `FALSE`.
 
-## <a name="return-value"></a>Valor de retorno
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE` ou um código de erro.
 
 > [!NOTE]
-> Um valor de retorno `S_FALSE` significa que a propriedade não está disponível para o símbolo.
+> Um valor de retorno de `S_FALSE` significa que a propriedade não está disponível para o símbolo.
 
 ## <a name="requirements"></a>Requisitos
 
 |Requisito|Descrição|
 |-----------------|-----------------|
 |Cabeçalho:|dia2.h|
-|Versão:|V DIA SDK 8.0|
+|Versão:|DIA SDK v 8.0|
 
 ## <a name="see-also"></a>Consulte também
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

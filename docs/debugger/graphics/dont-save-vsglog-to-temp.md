@@ -8,15 +8,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 501a054ddb1d3ab20a10f99bb30a0c3439004eb3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 40f3c3c22de6b4b0ebdbdf2dfc953f4cb1c9b5e6
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62848685"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72736085"
 ---
-# <a name="dontsavevsglogtotemp"></a>DONT_SAVE_VSGLOG_TO_TEMP
-Define sua presença se o arquivo de log de gráficos é salvo para o diretório de arquivos temporários do usuário.
+# <a name="dont_save_vsglog_to_temp"></a>DONT_SAVE_VSGLOG_TO_TEMP
+Define por sua presença se o arquivo de log de gráficos é salvo no diretório de arquivos temporários do usuário.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -25,12 +25,12 @@ Define sua presença se o arquivo de log de gráficos é salvo para o diretório
 ```
 
 ## <a name="value"></a>Valor
- Um símbolo do pré-processador que, por sua presença ou ausência, determina se o arquivo de log de gráficos é salvo para o diretório de arquivos temporários do usuário. Se esse símbolo é definido e, em seguida, o nome de arquivo definido pelo `VSG_DEFAULT_RUN_FILENAME` é relativo ao diretório atual do aplicativo capturado, ou é um caminho absoluto; caso contrário, o nome de arquivo definido pelo `VSG_DEFAULT_RUN_FILENAME` é relativo ao diretório de arquivos temporários do usuário e não pode ser um caminho absoluto.
+ Um símbolo de pré-processador que, por sua presença ou ausência, determina se o arquivo de log de gráficos é salvo no diretório de arquivos temporários do usuário. Se esse símbolo for definido, o nome do arquivo definido por `VSG_DEFAULT_RUN_FILENAME` será relativo ao diretório atual do aplicativo capturado, ou será um caminho absoluto; caso contrário, o nome do arquivo definido por `VSG_DEFAULT_RUN_FILENAME` é relativo ao diretório de arquivos temporários do usuário e não pode ser um caminho absoluto.
 
 ## <a name="remarks"></a>Comentários
- Dependendo dos privilégios do usuário, o arquivo de log de gráficos não poderá ser salva em um local arbitrário. É recomendável que você prefere salvar os logs de gráficos para o diretório de arquivos temporários do usuário ou outro local válida, se você não souber o local, você escolheria se pode ser gravado em pelo usuário.
+ Dependendo dos privilégios do usuário, o arquivo de log de gráficos pode não ser capaz de ser salvo em um local arbitrário. Recomendamos que você prefira salvar os logs de gráficos no diretório de arquivos temporários do usuário ou em outro local válido, se não tiver certeza se o local escolhido pode ser gravado pelo usuário.
 
- Para impedir que o arquivo de log de gráficos que estão sendo salvos no diretório de arquivos temporários, você deve ser definido `DONT_SAVE_VSGLOG_TO_TEMP` antes de incluir `vsgcapture.h`.
+ Para impedir que o arquivo de log de elementos gráficos seja salvo no diretório de arquivos temporários, você deve definir `DONT_SAVE_VSGLOG_TO_TEMP` antes de incluir `vsgcapture.h`.
 
 ## <a name="example"></a>Exemplo
  Este exemplo mostra como salvar o arquivo de log de gráficos em um caminho absoluto no computador host.

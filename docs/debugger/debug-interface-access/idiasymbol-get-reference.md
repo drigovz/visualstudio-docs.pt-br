@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5a14e3a380c1409be14142ae9ff3711ab03f410f
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 1bef59b6b7ed2e4161a6687b0e5799cd5683537b
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64808885"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739448"
 ---
-# <a name="idiasymbolgetreference"></a>IDiaSymbol::get_reference
+# <a name="idiasymbolget_reference"></a>IDiaSymbol::get_reference
 Recupera um sinalizador que especifica se um tipo de ponteiro é uma referência.
 
 ## <a name="syntax"></a>Sintaxe
@@ -33,13 +33,13 @@ HRESULT get_reference ( 
 #### <a name="parameters"></a>Parâmetros
  `pRetVal`
 
-[out] Retorna `TRUE` se um tipo de ponteiro é uma referência; caso contrário, retornará `FALSE`.
+fora Retorna `TRUE` se um tipo de ponteiro for uma referência; caso contrário, retorna `FALSE`.
 
-## <a name="return-value"></a>Valor de retorno
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE` ou um código de erro.
 
 > [!NOTE]
-> Um valor de retorno `S_FALSE` significa que a propriedade não está disponível para o símbolo.
+> Um valor de retorno de `S_FALSE` significa que a propriedade não está disponível para o símbolo.
 
 ## <a name="see-also"></a>Consulte também
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

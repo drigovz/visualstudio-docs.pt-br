@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 098dd1f5ba12c5b3aeff6add364f63b8baa676bc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 07e3823a62ca6fdb81fa6916eec6a1de5598a748
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62830469"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743981"
 ---
 # <a name="idiaenumsymbolsclone"></a>IDiaEnumSymbols::Clone
 Cria um enumerador que contém o mesmo estado de enumeração que o enumerador atual.
@@ -33,9 +33,9 @@ HRESULT Clone ( 
 #### <a name="parameters"></a>Parâmetros
  ppenum
 
-[out] Retorna um [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md) objeto que contém uma duplicata do enumerador. Os símbolos não são duplicados, apenas o enumerador.
+fora Retorna um objeto [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md) que contém uma duplicata do enumerador. Os símbolos não são duplicados, somente o enumerador.
 
-## <a name="return-value"></a>Valor de retorno
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
 
 ## <a name="see-also"></a>Consulte também

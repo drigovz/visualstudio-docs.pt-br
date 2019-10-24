@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 01d004491feedff26c350cd7d40c544bc6b6de0f
-ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+ms.openlocfilehash: 39db3bc0e0107e734f5de3f6902a2ca0fcc55bb0
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "64783736"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741899"
 ---
-# <a name="idiasessionputloadaddress"></a>IDiaSession::put_loadAddress
-Define o endereço de carregamento para o arquivo executável que corresponde aos símbolos nesse repositório de símbolos.
+# <a name="idiasessionput_loadaddress"></a>IDiaSession::put_loadAddress
+Define o endereço de carregamento para o arquivo executável que corresponde aos símbolos neste repositório de símbolos.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -33,13 +33,13 @@ HRESULT put_loadAddress ( 
 #### <a name="parameters"></a>Parâmetros
  `NewVal`
 
-[in] Carregar o endereço para o arquivo executável.
+no Carregue o endereço para o arquivo executável.
 
 ## <a name="remarks"></a>Comentários
- Propriedades de endereço virtual (VA) de símbolo são calculadas usando o valor desse método. Endereços virtuais não são calculados, a menos que essa propriedade é definida como diferente de zero.
+ As propriedades de endereço virtual de símbolo (VA) são computadas usando o valor desse método. Os endereços virtuais não são calculados, a menos que essa propriedade seja definida como diferente de zero.
 
 > [!NOTE]
-> Você deve chamar esse método quando você receber o [IDiaSession](../../debugger/debug-interface-access/idiasession.md) do objeto e antes de começar a usar o objeto se você precisar usar quaisquer propriedades virtuais nos símbolos.
+> Você deve chamar esse método quando obter o objeto [IDiaSession](../../debugger/debug-interface-access/idiasession.md) e antes de começar a usar o objeto se precisar usar qualquer propriedade virtual em símbolos.
 
 ## <a name="see-also"></a>Consulte também
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)

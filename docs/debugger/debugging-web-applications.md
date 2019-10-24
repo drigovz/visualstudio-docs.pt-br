@@ -18,21 +18,21 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c6bd788124927de759558392cfe36194632c0996
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: 5e0f9b0fc0f2f4cd7c441f5f88e4220216c8d964
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71211104"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738032"
 ---
 # <a name="debugging-web-applications"></a>Depurando aplicativos Web
 Esta seção explica como depurar vários tipos de aplicativos Web.
 
 ## <a name="in-this-section"></a>Nesta seção
- [Depuração de script do lado do cliente](../debugger/client-side-script-debugging.md) Discute scripts de teste e scripts do lado do cliente [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] em páginas.
+ [Depuração de script do lado do cliente](../debugger/client-side-script-debugging.md) Discute scripts de teste e scripts do lado do cliente em [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] páginas.
 
 ## <a name="related-sections"></a>Seções relacionadas
- [Depurar aplicativos ASP.net](../debugger/how-to-enable-debugging-for-aspnet-applications.md) Descreve as etapas necessárias para habilitar a depuração de [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplicativos.
+ [Depurar aplicativos ASP.net](../debugger/how-to-enable-debugging-for-aspnet-applications.md) Descreve as etapas necessárias para habilitar a depuração de aplicativos [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)].
 
 ## <a name="see-also"></a>Consulte também
 - [Depurando aplicativos Web e script](/visualstudio/debugger/how-to-enable-debugging-for-aspnet-applications)

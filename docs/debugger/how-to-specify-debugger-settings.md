@@ -1,5 +1,5 @@
 ---
-title: 'Como: Especificar configurações do depurador | Microsoft Docs'
+title: Como especificar configurações do depurador | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -19,14 +19,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4616bd95c0461e2318a4b0811f2f12c360a9aeae
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: 66e9d0fb5b7d63402c9add3ddf06b3997bc0d7d9
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66714970"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72732720"
 ---
-# <a name="how-to-specify-debugger-settings"></a>Como: Especificar as configurações do depurador
+# <a name="how-to-specify-debugger-settings"></a>Como especificar configurações do depurador
 No [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], você pode especificar várias configurações para o comportamento de depurador, inclusive como as variáveis são exibidas, se determinados avisos são apresentados, como os pontos de interrupção são definidos e como a interrupção afeta os programas em execução. Você especifica as configurações do depurador na caixa de diálogo **Opções**.
 
 ### <a name="to-set-debugger-options"></a>Para definir as opções de depurador
@@ -37,7 +37,7 @@ No [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], você pode especif
 
 3. Na pasta **Depuração**, escolha a categoria de opções que você deseja.
 
-     As opções mais comuns são localizadas na categoria **Geral**. Para obter mais informações, consulte [geral, depuração, caixa de diálogo Opções](../debugger/general-debugging-options-dialog-box.md).
+     As opções mais comuns são localizadas na categoria **Geral**. Para obter mais informações, consulte [geral, depuração, caixa de diálogo opções](../debugger/general-debugging-options-dialog-box.md).
 
 4. Selecionar ou limpar a opção ou as opções desejadas. Pressione F1 para obter ajuda sobre as opções.
 

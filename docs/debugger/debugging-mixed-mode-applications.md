@@ -1,5 +1,5 @@
 ---
-title: Depuração de aplicativos de modo misto | Microsoft Docs
+title: Depurando aplicativos de modo misto | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -21,19 +21,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ac2a9817ceae660f42cbed0fdbfb364ddc79c45
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1c245b6c56b7480a9395394d707aa0f02fb22fc9
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62852055"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738190"
 ---
 # <a name="debugging-mixed-mode-applications"></a>Depurando aplicativos de modo misto
 Um aplicativo no modo misto é qualquer aplicativo que combine código nativo (C++) com código gerenciado (como o Visual Basic, Visual C# ou C++ que é executado no Common Language Runtime). A depuração de aplicativos no modo misto é totalmente transparente no [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]; não é muito diferente da depuração de um aplicativo no modo único. No entanto, há algumas considerações especiais a serem feitas.
 
 ## <a name="enable-c-edit-and-continue-in-mixed-mode-debugging"></a>Habilitar o recurso Editar e Continuar do C++ na depuração em modo misto
 
-Para habilitar editar e continuar do C++, consulte [como habilitar e desabilitar editar e continuar](../debugger/how-to-enable-and-disable-edit-and-continue.md).
+Para habilitar editar e continuar para C++o, consulte [como habilitar e desabilitar editar e continuar](../debugger/how-to-enable-and-disable-edit-and-continue.md).
 
 > [!NOTE]
 > Para usar o recurso Editar e Continuar do C++ no Visual Studio 2013, você precisa reverter para o mecanismo de depuração herdado. Veja [Alternando para o Modo de Compatibilidade Gerenciado no Visual Studio 2013](https://devblogs.microsoft.com/devops/switching-to-managed-compatibility-mode-in-visual-studio-2013/) no blog de gerenciamento do ciclo de vida de aplicativos da Microsoft.

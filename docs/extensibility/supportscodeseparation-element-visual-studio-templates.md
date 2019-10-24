@@ -14,15 +14,15 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3a4a9e7ba92b9f48cf22999d53ecf6c7b7d832ab
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 9e68516a798bcd4d1437ab504c09b4cc529eb889
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66316942"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72719424"
 ---
 # <a name="supportscodeseparation-element-visual-studio-templates"></a>Elemento SupportsCodeSeparation (modelos do Visual Studio)
-Especifica se ou não a **colocar código em arquivo separado** caixa de seleção está habilitada no **Adicionar Novo Item** caixa de diálogo.
+Especifica se a caixa de seleção **código local em arquivo separado** está habilitada na caixa de diálogo **Adicionar novo item** .
 
  \<VSTemplate > \<TemplateData > \<SupportsCodeSeparation >
 
@@ -45,22 +45,22 @@ Especifica se ou não a **colocar código em arquivo separado** caixa de seleç�
 
 |Elemento|Descrição|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Elemento obrigatório.<br /><br /> Categoriza o modelo e define como ele é exibido em qualquer um de **novo projeto** ou o **Novo Item** caixa de diálogo.|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Elemento obrigatório.<br /><br /> Categoriza o modelo e define como ele é exibido na caixa de diálogo **novo projeto** ou **novo item** .|
 
 ## <a name="text-value"></a>Valor de texto
  Um valor de texto é obrigatório.
 
- O texto deve ser `true` ou `false`, indicando ou não a **colocar código em arquivo separado** caixa de seleção está habilitada no **Add New Item** caixa de diálogo.
+ O texto deve ser `true` ou `false`, indicando se a caixa de seleção **código local em arquivo separado** está habilitada na caixa de diálogo **Adicionar novo item** .
 
 ## <a name="remarks"></a>Comentários
  `SupportsCodeSeparation` é um elemento opcional. O valor padrão é `false`.
 
- O `SupportsCodeSeparation` elemento só está disponível para modelos de item da Web.
+ O elemento `SupportsCodeSeparation` só está disponível para modelos de item da Web.
 
- Separação de código ou o modelo de página code-behind, permite que você mantenha a marcação em um arquivo e o código de programação em outro arquivo. [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] e outras linguagens .NET usam esse modelo.
+ A separação de código ou o modelo de página code-behind permite que você mantenha a marcação em um arquivo e o código de programação em outro arquivo. [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] e outras linguagens .NET usam esse modelo.
 
 ## <a name="example"></a>Exemplo
- O exemplo a seguir especifica que o **colocar código em arquivo separado** opção.
+ O exemplo a seguir especifica a exibição do **código do local em uma opção de arquivo separado** .
 
 ```
 <VSTemplate Version="3.0.0" Type="Project"

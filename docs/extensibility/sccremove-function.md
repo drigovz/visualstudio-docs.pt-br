@@ -12,15 +12,15 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 70413c2e446f8ed226a58eb8ddfe62ede4a1d61f
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 7ff7299868b96aedb7cc096b4e939a0f8015aeb8
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66338630"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72720784"
 ---
 # <a name="sccremove-function"></a>Função SccRemove
-Esta função exclui os arquivos do sistema de controle de origem.
+Essa função exclui arquivos do sistema de controle do código-fonte.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -39,48 +39,48 @@ SCCRTN SccRemove(
 #### <a name="parameters"></a>Parâmetros
  pvContext
 
-[in] A estrutura de contexto de plug-in de controle de origem.
+no A estrutura de contexto do plug-in de controle do código-fonte.
 
  hWnd
 
-[in] Um identificador para a janela do IDE que o plug-in de controle de origem pode usar como um pai para todas as caixas de diálogo que ele oferece.
+no Um identificador para a janela do IDE que o plug-in de controle do código-fonte pode usar como um pai para qualquer caixa de diálogo que ele fornecer.
 
  nFiles
 
-[in] Número de arquivos especificados no `lpFileNames` matriz.
+no Número de arquivos especificados na matriz de `lpFileNames`.
 
  lpFileNames
 
-[in] Matriz de nomes de caminho local totalmente qualificado dos arquivos a serem removidos.
+no Matriz de nomes de caminho locais totalmente qualificados de arquivos a serem removidos.
 
  lpComment
 
-[in] O comentário a ser aplicado a cada arquivo que está sendo removido.
+no O comentário a ser aplicado a cada arquivo que está sendo removido.
 
  fOptions
 
-[in] Sinalizadores de comando (não usados).
+no Sinalizadores de comando (não utilizados).
 
  pvOptions
 
-[in] Opções de plug-in específico de controle de origem.
+no Opções específicas de plug-ins de controle do código-fonte.
 
-## <a name="return-value"></a>Valor de retorno
- A implementação de plug-in de controle do código-fonte desta função deve retornar um dos seguintes valores:
+## <a name="return-value"></a>Valor retornado
+ Espera-se que a implementação de plug-in de controle do código-fonte dessa função retorne um dos seguintes valores:
 
 |Valor|Descrição|
 |-----------|-----------------|
-|SCC_OK|Remoção foi bem-sucedida.|
-|SCC_E_FILENOTCONTROLLED|O arquivo selecionado não está sob controle do código-fonte.|
-|SCC_E_OPNOTSUPPORTED|O sistema de controle do código-fonte não suporta esta operação.|
-|SCC_E_ISCHECKEDOUT|Não é possível remover um arquivo, porque um usuário tiver feito check-out no momento.|
+|SCC_OK|A remoção foi bem-sucedida.|
+|SCC_E_FILENOTCONTROLLED|O arquivo selecionado não está no controle do código-fonte.|
+|SCC_E_OPNOTSUPPORTED|O sistema de controle do código-fonte não oferece suporte a essa operação.|
+|SCC_E_ISCHECKEDOUT|Não é possível remover um arquivo porque um usuário o fez check-out no momento.|
 |SCC_E_ACCESSFAILURE|Houve um problema ao acessar o sistema de controle do código-fonte, provavelmente devido a problemas de rede ou de contenção.|
 |SCC_E_NOTAUTHORIZED|O usuário não tem permissão para executar esta operação.|
-|SCC_E_NONSPECIFICERROR|Falha não específica; arquivo não foi removido.|
+|SCC_E_NONSPECIFICERROR|Falha não específica; o arquivo não foi removido.|
 |SCC_I_OPERATIONCANCELED|A operação foi cancelada antes da conclusão.|
 
 ## <a name="remarks"></a>Comentários
- Esta função remove os arquivos do sistema de controle de origem, mas não excluí-los da unidade de disco rígido local do usuário.
+ Essa função remove os arquivos do sistema de controle do código-fonte, mas não os exclui do disco rígido local do usuário.
 
 ## <a name="see-also"></a>Consulte também
 - [Funções de API do plug-in de controle do código-fonte](../extensibility/source-control-plug-in-api-functions.md)

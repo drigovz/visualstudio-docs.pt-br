@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8dfb0330f08dab158c298bbc944d8dc6410f719f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 855b40f3d35d884a366e8fdc36ed1ec4f2bef85a
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839427"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742334"
 ---
 # <a name="idiasegment"></a>IDiaSegment
-Mapeia dados de número de seção para segmentos de espaço de endereço.
+Mapeia dados do número da seção para segmentos de espaço de endereço.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -28,29 +28,29 @@ Mapeia dados de número de seção para segmentos de espaço de endereço.
 IDiaSegment : IUnknown
 ```
 
-## <a name="methods-in-vtable-order"></a>Métodos na ordem de Vtable
+## <a name="methods-in-vtable-order"></a>Métodos em ordem vtable
 A tabela a seguir mostra os métodos de `IDiaSegment`.
 
 |Método|Descrição|
 |------------|-----------------|
-|[IDiaSegment::get_frame](../../debugger/debug-interface-access/idiasegment-get-frame.md)|Recupera o número de segmento.|
-|[IDiaSegment::get_offset](../../debugger/debug-interface-access/idiasegment-get-offset.md)|Recupera o deslocamento em segmentos, em que a seção começa.|
+|[IDiaSegment::get_frame](../../debugger/debug-interface-access/idiasegment-get-frame.md)|Recupera o número do segmento.|
+|[IDiaSegment::get_offset](../../debugger/debug-interface-access/idiasegment-get-offset.md)|Recupera o deslocamento em segmentos em que a seção começa.|
 |[IDiaSegment::get_length](../../debugger/debug-interface-access/idiasegment-get-length.md)|Recupera o número de bytes no segmento.|
 |[IDiaSegment::get_read](../../debugger/debug-interface-access/idiasegment-get-read.md)|Recupera um sinalizador que indica se o segmento pode ser lido.|
 |[IDiaSegment::get_write](../../debugger/debug-interface-access/idiasegment-get-write.md)|Recupera um sinalizador que indica se o segmento pode ser modificado.|
 |[IDiaSegment::get_execute](../../debugger/debug-interface-access/idiasegment-get-execute.md)|Recupera um sinalizador que indica se o segmento é executável.|
-|[IDiaSegment::get_addressSection](../../debugger/debug-interface-access/idiasegment-get-addresssection.md)|Recupera o número de seção que mapeia para este segmento.|
+|[IDiaSegment::get_addressSection](../../debugger/debug-interface-access/idiasegment-get-addresssection.md)|Recupera o número da seção que é mapeado para este segmento.|
 |[IDiaSegment::get_relativeVirtualAddress](../../debugger/debug-interface-access/idiasegment-get-relativevirtualaddress.md)|Recupera o endereço virtual relativo (RVA) do início da seção.|
 |[IDiaSegment::get_virtualAddress](../../debugger/debug-interface-access/idiasegment-get-virtualaddress.md)|Recupera o endereço virtual (VA) do início da seção.|
 
 ## <a name="remarks"></a>Comentários
-Como o DIA SDK já realiza conversões do deslocamento de seção para endereços virtuais, a maioria dos aplicativos não fará uso das informações no mapa do segmento.
+Como o DIA SDK já executa traduções da seção deslocamento para endereços virtuais relativos, a maioria dos aplicativos não fará uso das informações no mapa de segmentos.
 
 ## <a name="notes-for-callers"></a>Observações para chamadores
-Obtenha essa interface por meio da chamada a [idiaenumsegments:: item](../../debugger/debug-interface-access/idiaenumsegments-item.md) ou [idiaenumsegments:: Next](../../debugger/debug-interface-access/idiaenumsegments-next.md) métodos. Consulte o exemplo para obter detalhes.
+Obtenha essa interface chamando os métodos [IDiaEnumSegments:: item](../../debugger/debug-interface-access/idiaenumsegments-item.md) ou [IDiaEnumSegments:: Next](../../debugger/debug-interface-access/idiaenumsegments-next.md) . Consulte o exemplo para obter detalhes.
 
 ## <a name="example"></a>Exemplo
-Esta função exibe o endereço de todos os segmentos em uma tabela e o símbolo de mais próximo.
+Essa função exibe o endereço de todos os segmentos em uma tabela e o símbolo mais próximo.
 
 ```C++
 void ShowSegments(IDiaTable *pTable, IDiaSession *pSession)
@@ -94,9 +94,9 @@ void ShowSegments(IDiaTable *pTable, IDiaSession *pSession)
 ```
 
 ## <a name="requirements"></a>Requisitos
-Cabeçalho: Dia2.h
+Cabeçalho: dia2. h
 
-Biblioteca: diaguids.lib
+Biblioteca: diaguids. lib
 
 DLL: msdia80.dll
 

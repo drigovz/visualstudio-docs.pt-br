@@ -10,22 +10,22 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: be7d265db26c31bbec3527ad2bb60e127b1dc9c0
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 243af2549862f1d29c44ba5bfc3060d87d5c6f85
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66322630"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72723829"
 ---
 # <a name="solution-configuration"></a>Configuração da solução
-Configurações da solução armazenam propriedades de nível de solução. Eles direcionam o comportamento do **inicie** chave (F5) e **Build** comandos. Por padrão, esses comandos criaram e iniciar a configuração de depuração. Ambos os comandos são executados no contexto de uma configuração de solução. Isso significa que o usuário pode esperar F5 para iniciar e seja qual for a solução ativa é configurada por meio das configurações de compilação. O ambiente foi projetado para otimizar para soluções em vez de projetos, quando se trata de criação e execução.
+As configurações da solução armazenam propriedades no nível da solução. Eles direcionam o comportamento da chave **Start** (F5) e os comandos de **Build** . Por padrão, esses comandos criam e iniciam a configuração de depuração. Ambos os comandos são executados no contexto de uma configuração de solução. Isso significa que o usuário pode esperar F5 para iniciar e compilar qualquer que seja a solução ativa configurada por meio das configurações. O ambiente foi projetado para otimizar soluções em vez de projetos quando se trata de criar e executar.
 
- A barra de ferramentas padrão do Visual Studio contém um botão de início e uma lista suspensa à direita do botão Iniciar configuração da solução. Essa lista permite aos usuários escolher a configuração a ser iniciado quando F5 é pressionado, criar suas próprias configurações de solução ou editar uma configuração existente.
+ A barra de ferramentas padrão do Visual Studio contém um botão Iniciar e uma lista suspensa configuração de solução à direita do botão Iniciar. Essa lista permite que os usuários escolham a configuração a ser iniciada quando F5 é pressionado, cria suas próprias configurações de solução ou edita uma configuração existente.
 
 > [!NOTE]
 > Não há nenhuma interface de extensibilidade para criar ou editar as configurações da solução. Você deve usar `DTE.SolutionBuilder`. No entanto, há APIs de extensibilidade para gerenciar a compilação da solução. Para obter mais informações, consulte <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager2>.
 
- Aqui está como você pode implementar as configurações de solução com suporte pelo seu tipo de projeto:
+ Veja como você pode implementar as configurações de solução com suporte pelo seu tipo de projeto:
 
 - Projeto
 
@@ -33,27 +33,27 @@ Configurações da solução armazenam propriedades de nível de solução. Eles
 
 - Configuração
 
-   Para fornecer a lista de configurações com suporte pelo seu tipo de projeto e exibidos nas páginas de propriedades, implementar <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2>.
+   Para fornecer a lista de configurações com suporte pelo tipo de projeto e exibidas nas páginas de propriedades, implemente <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2>.
 
-   A coluna de configuração exibe o nome da configuração de projeto para compilar nesta configuração de solução e lista todas as configurações de projeto quando você clica no botão de seta. O ambiente chama o <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2.GetCfgNames%2A> método para preencher essa lista. Se o <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2.GetCfgProviderProperty%2A> método indica que o projeto dá suporte à edição de configuração, novo ou editar seleções também são exibidas sob o título de configuração. Cada uma dessas seleções iniciar caixas de diálogo que chamam métodos do `IVsCfgProvider2` interface para editar as configurações do projeto.
+   A coluna configuração exibe o nome da configuração do projeto a ser criada nesta configuração de solução e lista todas as configurações do projeto quando você clica no botão de seta. O ambiente chama o método <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2.GetCfgNames%2A> para preencher essa lista. Se o método <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2.GetCfgProviderProperty%2A> indicar que o projeto dá suporte à edição de configuração, as seleções de novo ou editar também serão exibidas no título configuração. Cada uma dessas seleções inicia caixas de diálogo que chamam métodos da interface `IVsCfgProvider2` para editar as configurações do projeto.
 
-   Se um projeto não oferece suporte a configurações, a coluna de configuração exibe nenhum e está desabilitada.
+   Se um projeto não oferecer suporte a configurações, a coluna configuração exibirá nenhuma e será desabilitada.
 
 - Plataforma
 
-   Exibe a plataforma de builds para a configuração de projeto selecionado e lista todas as plataformas disponíveis para o projeto quando você clica no botão de seta. O ambiente chama o <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2.GetPlatformNames%2A> método para preencher essa lista. Se o <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2.GetCfgProviderProperty%2A> método indica que o projeto dá suporte à plataforma de edição, novo ou editar seleções também são exibidas sob o título de plataforma. Cada uma dessas seleções iniciar caixas de diálogo que chamam `IVsCfgProvider2` métodos para editar as plataformas disponíveis do projeto.
+   Exibe a plataforma à qual a configuração de projeto selecionada é compilada e lista todas as plataformas disponíveis para o projeto quando você clica no botão de seta. O ambiente chama o método <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2.GetPlatformNames%2A> para preencher essa lista. Se o método <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2.GetCfgProviderProperty%2A> indicar que o projeto dá suporte à edição de plataforma, as seleções de novo ou editar também serão exibidas sob o cabeçalho plataforma. Cada uma dessas seleções inicia caixas de diálogo que chamam `IVsCfgProvider2` métodos para editar as plataformas disponíveis do projeto.
 
-   Se um projeto não der suporte a plataformas, a coluna de plataforma para o projeto exibe nenhum e está desabilitada.
+   Se um projeto não oferecer suporte a plataformas, a coluna plataforma para esse projeto exibirá nenhum e será desabilitada.
 
 - Build
 
-   Especifica se o projeto é compilado pela configuração da solução atual. Projetos não selecionados não são criados quando os comandos de compilação de nível de solução são invocados, apesar de todas as dependências de projeto que eles contêm. Projetos não selecionados para ser compilado ainda são incluídos na depuração, execução, empacotamento e implantação da solução.
+   Especifica se o projeto é ou não compilado pela configuração da solução atual. Projetos não selecionados não são criados quando os comandos de compilação no nível da solução são invocados, apesar de quaisquer dependências de projeto que eles contêm. Os projetos não selecionados para serem criados ainda estão incluídos na depuração, execução, empacotamento e implantação da solução.
 
 - Implantar
 
-   Especifica se o projeto será implantado quando os comandos Start ou implantar são usados com a configuração de build da solução selecionada. A caixa de seleção para esse campo estará disponível se o projeto dá suporte à implantação com a implementação de <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> interface no seu <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2> objeto.
+   Especifica se o projeto será ou não implantado quando os comandos iniciar ou implantar forem usados com a configuração de compilação da solução selecionada. A caixa de seleção desse campo estará disponível se o projeto der suporte à implantação implementando a interface <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> em seu objeto <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2>.
 
-  Depois que uma nova configuração de solução é adicionada, o usuário pode selecioná-lo na caixa de lista suspensa de configuração da solução na barra de ferramentas padrão para criar e/ou iniciar essa configuração de.
+  Depois que uma nova configuração de solução for adicionada, o usuário poderá selecioná-la na caixa de listagem suspensa configuração de solução na barra de ferramentas padrão para criar e/ou iniciar essa configuração.
 
 ## <a name="see-also"></a>Consulte também
 - [Gerenciar opções de configuração](../../extensibility/internals/managing-configuration-options.md)
