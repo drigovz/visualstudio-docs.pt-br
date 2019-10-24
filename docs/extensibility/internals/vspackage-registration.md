@@ -11,22 +11,22 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c4b68d23211b0a6e1847c7cd22a79b44327e4aa6
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 44114ccdc4a0873887d48c3d191506f10cc3eaf3
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68924198"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72721995"
 ---
 # <a name="vspackage-registration"></a>Registro do VSPackage
-VSPackages deve informar [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] que eles estão instalados e devem ser carregados. Esse processo é realizado com a gravação de informações no registro. Esse é um trabalho típico de um instalador.
+VSPackages deve aconselhar [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] que eles estão instalados e devem ser carregados. Esse processo é realizado com a gravação de informações no registro. Esse é um trabalho típico de um instalador.
 
 > [!NOTE]
-> É uma prática aceita durante o desenvolvimento do VSPackage para usar o auto-registro. No entanto, [!INCLUDE[vsipprvsip](../../extensibility/includes/vsipprvsip_md.md)] os parceiros não podem enviar seus produtos usando o auto-registro como parte da instalação.
+> É uma prática aceita durante o desenvolvimento do VSPackage para usar o auto-registro. No entanto, os parceiros [!INCLUDE[vsipprvsip](../../extensibility/includes/vsipprvsip_md.md)] não podem enviar seus produtos usando o auto-registro como parte da instalação.
 
  As entradas de registro em um pacote de Windows Installer são geralmente feitas na tabela de registro. Você também pode registrar extensões de arquivo na tabela do registro. No entanto, o Windows Installer fornece suporte interno por meio do identificador programático (ProgId), classe, extensão e tabelas de verbos. Para obter mais informações, consulte [tabelas de banco de dados](/windows/desktop/Msi/database-tables).
 
- Verifique se as entradas do registro estão associadas ao componente apropriado para sua estratégia lado a lado escolhida. Por exemplo, as entradas do registro para um arquivo compartilhado devem ser associadas ao componente Windows Installer do arquivo. Da mesma forma, as entradas do registro para um arquivo específico da versão devem ser associadas ao componente desse arquivo. Caso contrário, instalar ou desinstalar seu VSPackage para uma versão do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] pode interromper seu VSPackage em outras versões. Para obter mais informações, consulte [dando suporte a várias versões do Visual Studio](../../extensibility/supporting-multiple-versions-of-visual-studio.md).
+ Verifique se as entradas do registro estão associadas ao componente apropriado para sua estratégia lado a lado escolhida. Por exemplo, as entradas do registro para um arquivo compartilhado devem ser associadas ao componente Windows Installer do arquivo. Da mesma forma, as entradas do registro para um arquivo específico da versão devem ser associadas ao componente desse arquivo. Caso contrário, instalar ou desinstalar seu VSPackage para uma versão do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] poderá interromper o VSPackage em outras versões. Para obter mais informações, consulte [dando suporte a várias versões do Visual Studio](../../extensibility/supporting-multiple-versions-of-visual-studio.md).
 
 > [!NOTE]
 > A maneira mais fácil de gerenciar o registro é usar os mesmos dados nos mesmos arquivos para o registro do desenvolvedor e o registro de tempo de instalação. Por exemplo, algumas ferramentas de desenvolvimento de instalador podem consumir arquivo no formato. reg no momento da compilação. Se os desenvolvedores mantiverem arquivos. reg para seu próprio desenvolvimento diário e depuração, esses mesmos arquivos poderão ser incluídos no instalador automaticamente. Se você não puder compartilhar automaticamente os dados de registro, deverá garantir que a cópia dos dados de registro do instalador seja atual.

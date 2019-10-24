@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4c75148fdf8453590be7eb0f9fbde95e4bb4b981
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: ece720a42b606640d02729951c11ae03d092aedf
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64791690"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739355"
 ---
-# <a name="idiasymbolgetsealed"></a>IDiaSymbol::get_sealed
-Recupera um sinalizador que especifica se a classe ou método está selado.
+# <a name="idiasymbolget_sealed"></a>IDiaSymbol::get_sealed
+Recupera um sinalizador que especifica se a classe ou o método está lacrado.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -33,21 +33,21 @@ HRESULT get_sealed( 
 #### <a name="parameters"></a>Parâmetros
  `pRetVal`
 
-[out] Retorna `TRUE` se a classe ou método é lacrado; caso contrário, retornará `FALSE`.
+fora Retorna `TRUE` se a classe ou o método é lacrado; caso contrário, retorna `FALSE`.
 
-## <a name="return-value"></a>Valor de retorno
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE` ou um código de erro.
 
 > [!NOTE]
-> Um valor de retorno `S_FALSE` significa que a propriedade não está disponível para o símbolo.
+> Um valor de retorno de `S_FALSE` significa que a propriedade não está disponível para o símbolo.
 
 ## <a name="remarks"></a>Comentários
- Uma classe sealed não pode ser usada como uma classe base. Um método lacrado não pode ser um ponto.
+ Uma classe sealed não pode ser usada como uma classe base. Um método lacrado não pode ser Overidden.
 
 ## <a name="requirements"></a>Requisitos
- Cabeçalho: Dia2.h
+ Cabeçalho: dia2. h
 
- Biblioteca: diaguids.lib
+ Biblioteca: diaguids. lib
 
  DLL: msdia100.dll
 

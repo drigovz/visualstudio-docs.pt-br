@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e68eccfebfc5218d59649aa09162b20467ceb670
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 58b959db58688fd13c3539f720315971e774a96d
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62554008"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744369"
 ---
 # <a name="idiaenumlinenumbersskip"></a>IDiaEnumLineNumbers::Skip
 Ignora um número especificado de números de linha em uma sequência de enumeração.
@@ -33,10 +33,10 @@ HRESULT Skip ( 
 #### <a name="parameters"></a>Parâmetros
  celt
 
-[in] O número de números de linha na sequência de enumeração para ignorar.
+no O número de números de linha na sequência de enumeração a serem ignorados.
 
-## <a name="return-value"></a>Valor de retorno
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE` se não houver nenhum mais números de linha para ignorar.
+## <a name="return-value"></a>Valor retornado
+ Se for bem-sucedido, retornará `S_OK`; caso contrário, retornará `S_FALSE` se não houver mais números de linha para ignorar.
 
 ## <a name="see-also"></a>Consulte também
 - [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)

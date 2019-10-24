@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 44f715c4f74d9b120b324e2d68417a24c9b42684
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 20b0c9dd106e5744a369ddaa6cb870788f7464d3
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62854825"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738548"
 ---
 # <a name="stackframetypeenum"></a>StackFrameTypeEnum
 Especifica o tipo de quadro de pilha.
@@ -36,23 +36,23 @@ enum StackFrameTypeEnum {
 ```
 
 ## <a name="elements"></a>Elementos
-`FrameTypeFPO` Ponteiro de quadro especificado; Informações de FPO disponíveis.
+ponteiro de quadro `FrameTypeFPO` omitido; Informações de FPO disponíveis.
 
-`FrameTypeTrap` Quadro de interceptação de kernel.
+`FrameTypeTrap` quadro de interceptação do kernel.
 
-`FrameTypeTSS` Quadro de interceptação de kernel.
+`FrameTypeTSS` quadro de interceptação do kernel.
 
-`FrameTypeStandard` Quadro de pilha EBP padrão.
+`FrameTypeStandard` o quadro de pilha do EBP padrão.
 
-`FrameTypeFrameData` Ponteiro de quadro especificado; Informações de dados de quadro disponíveis.
+ponteiro de quadro `FrameTypeFrameData` omitido; Informações de dados de quadro disponíveis.
 
-`FrameTypeUnknown` Quadro que não tem nenhuma informação de depuração.
+`FrameTypeUnknown` quadro que não tem nenhuma informação de depuração.
 
 ## <a name="remarks"></a>Comentários
-Os valores nesta enumeração são retornados por uma chamada para o [idiastackframe:: Get_type](../../debugger/debug-interface-access/idiastackframe-get-type.md) método.
+Os valores nessa enumeração são retornados por uma chamada para o método [IDiaStackFrame:: get_Type](../../debugger/debug-interface-access/idiastackframe-get-type.md) .
 
 ## <a name="requirements"></a>Requisitos
-Cabeçalho: cvconst.h
+Cabeçalho: cvconst. h
 
 ## <a name="see-also"></a>Consulte também
 - [Enumerações e estruturas](../../debugger/debug-interface-access/enumerations-and-structures.md)

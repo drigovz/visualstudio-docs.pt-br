@@ -10,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e82828296234b13e36b7d3eabf071071ebb708d
-ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
+ms.openlocfilehash: 7d3df97bf8e180eae99e6ba27466fbde7a8466ad
+ms.sourcegitcommit: 57bc1c3887838d707c13feff72a677b3bad3be4b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72589013"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72777777"
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Desenvolvimento móvel multiplataforma no Visual Studio
 
@@ -33,7 +33,7 @@ Com as Ferramentas do Visual Studio para Xamarin, é possível ter o Android, o 
 
 |**Saiba mais**|
 |--------------------|
-|[Instalar o Visual Studio](http://visualstudio.microsoft.com/products/visual-studio-community-vs) (VisualStudio.com)|
+|[Instalar o Visual Studio](https://visualstudio.microsoft.com/vs/community/) (VisualStudio.com)|
 |[Saiba mais sobre o Xamarin no Visual Studio](https://visualstudio.microsoft.com/xamarin/) (VisualStudio.com)|
 |[Documentação de desenvolvimento de aplicativos móveis do Xamarin](/xamarin/) |
 |[DevOps com aplicativos Xamarin](/xamarin/tools/ci/devops/) |
@@ -108,9 +108,9 @@ Com as Ferramentas do Visual Studio para Xamarin, é possível ter o Android, o 
 
 |**Saiba mais**|
 |--------------------|
-|[Instalar o Visual Studio](http://visualstudio.microsoft.com/products/visual-studio-community-vs) (VisualStudio.com)|
+|[Instalar o Visual Studio](https://visualstudio.microsoft.com/vs/community/) (VisualStudio.com)|
 |[Introdução às Ferramentas do Visual Studio para Apache Cordova](/visualstudio/cross-platform/tools-for-cordova/)|
-|[Saiba mais sobre o Emulador do Visual Studio para Android](http://visualstudio.microsoft.com/explore/msft-android-emulator-vs) (VisualStudio.com)|
+|[Saiba mais sobre o Emulador do Visual Studio para Android](https://visualstudio.microsoft.com/vs/msft-android-emulator/) (VisualStudio.com)|
 
 ::: moniker-end
 
@@ -140,7 +140,7 @@ Com as Ferramentas do Visual Studio para Xamarin, é possível ter o Android, o 
 
 |**Saiba mais**|
 |--------------------|
-|[Baixar o Visual Studio](http://visualstudio.microsoft.com/products/visual-studio-community-vs) (VisualStudio.com)|
+|[Baixar o Visual Studio](https://visualstudio.microsoft.com/vs/community/) (VisualStudio.com)|
 |[Instalar o desenvolvimento móvel de plataforma cruzada com oC++](install-visual-cpp-for-cross-platform-mobile-development.md)|
 |[Saiba mais sobre como C++ usar o para direcionar várias plataformas](https://visualstudio.microsoft.com/vs/cplusplus-mdd/) (VisualStudio.com)|
 |[Instale o que você precisa e, em seguida, crie um aplicativo de atividade nativa para Android](create-an-android-native-activity-app.md)|
@@ -163,8 +163,8 @@ Com as Ferramentas do Visual Studio para Xamarin, é possível ter o Android, o 
 |[Leia mais sobre as Ferramentas do Visual Studio para Unity](../cross-platform/visual-studio-tools-for-unity.md) |
 |[Começar a usar as Ferramentas do Visual Studio para Unity](../cross-platform/getting-started-with-visual-studio-tools-for-unity.md) |
 |[Leia mais sobre as últimas melhorias à Visualização das Ferramentas do Visual Studio para Unity 2.0](https://devblogs.microsoft.com/visualstudio/visual-studio-tools-for-unity-2-0-preview/) (blog do Visual Studio)|
-|[Assista a um vídeo de introdução à Visualização das Ferramentas do Visual Studio para Unity 2.0](http://www.bing.com/videos/search?q=visual+studio+tools+for+unity&qs=n&form=QBVLPG&pq=visual+studio+tools+for+unity&sc=6-29&sp=-1&sk=#view=detail&mid=0A13177F0BC7463A24080A13177F0BC7463A2408) (Vídeo)|
-|[Saiba mais sobre o Unity](http://unity3d.com/) (site do Unity)|
+|[Assista a um vídeo de introdução à Visualização das Ferramentas do Visual Studio para Unity 2.0](https://www.bing.com/videos/search?q=visual+studio+tools+for+unity&qs=n&form=QBVLPG&pq=visual+studio+tools+for+unity&sc=6-29&sp=-1&sk=#view=detail&mid=0A13177F0BC7463A24080A13177F0BC7463A2408) (Vídeo)|
+|[Saiba mais sobre o Unity](https://unity.com/) (site do Unity)|
 
 ## <a name="see-also"></a>Consulte também
 

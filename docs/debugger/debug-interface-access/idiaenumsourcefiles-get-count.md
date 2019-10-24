@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 03d3d52706d549ce6dff4d30b9552ff5d35f379a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7abc842a65140d1ee127dba99568ff4a57b16873
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62833370"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744122"
 ---
-# <a name="idiaenumsourcefilesgetcount"></a>IDiaEnumSourceFiles::get_Count
+# <a name="idiaenumsourcefilesget_count"></a>IDiaEnumSourceFiles::get_Count
 Recupera o número de arquivos de origem.
 
 ## <a name="syntax"></a>Sintaxe
@@ -33,9 +33,9 @@ HRESULT get_Count ( 
 #### <a name="parameters"></a>Parâmetros
  pRetVal
 
-[out] Retorna o número de arquivos de origem.
+fora Retorna o número de arquivos de origem.
 
-## <a name="return-value"></a>Valor de retorno
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
 
 ## <a name="see-also"></a>Consulte também

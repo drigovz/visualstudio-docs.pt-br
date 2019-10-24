@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a8ad236307360a96f64999313764424305980fc9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0b1118517988f6a790cd4f6732eba3bc8a9fc25a
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62838113"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741631"
 ---
-# <a name="idiastackframegetrawlvarinstancevalue"></a>IDiaStackFrame::get_rawLVarInstanceValue
+# <a name="idiastackframeget_rawlvarinstancevalue"></a>IDiaStackFrame::get_rawLVarInstanceValue
 Esse método recupera o valor da variável local especificada como bytes brutos.
 
 ## <a name="syntax"></a>Sintaxe
@@ -36,21 +36,21 @@ HRESULT get_rawLVarInstanceValue(
 #### <a name="parameters"></a>Parâmetros
  `pInstance`
 
-[in] Um `IDiaLVarInstance` que representa uma instância de variável local para obter o valor do objeto.
+no Um objeto `IDiaLVarInstance` que representa uma instância da variável local para obter o valor.
 
  `cbDataMax`
 
-[in] Número máximo de bytes no buffer apontado por `pbData`. Isso pode ter um máximo de 8 bytes (`sizeof(ULONGLONG)`).
+no Número máximo de bytes no buffer apontados por `pbData`. Pode ser um máximo de 8 bytes (`sizeof(ULONGLONG)`).
 
  `pcbData`
 
-[out] Retorna o número real de bytes armazenados no buffer.
+fora Retorna o número real de bytes armazenados no buffer.
 
  `pbData`
 
-[out] Um buffer a ser preenchida com dados. Esse não pode ser `NULL`.
+fora Um buffer a ser preenchido com dados. Esse não pode ser `NULL`.
 
-## <a name="return-value"></a>Valor de retorno
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
 
 ## <a name="see-also"></a>Consulte também

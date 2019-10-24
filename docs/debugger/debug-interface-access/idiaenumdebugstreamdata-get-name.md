@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d92b7873395c51491b9164f27d62eec8020a0f8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: edabdf0b24a0aa7cee6e021d86719621e4e7eac3
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62838461"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744866"
 ---
-# <a name="idiaenumdebugstreamdatagetname"></a>IDiaEnumDebugStreamData::get_name
+# <a name="idiaenumdebugstreamdataget_name"></a>IDiaEnumDebugStreamData::get_name
 Recupera o nome de um fluxo de dados de depuração.
 
 ## <a name="syntax"></a>Sintaxe
@@ -33,9 +33,9 @@ HRESULT get_Name ( 
 #### <a name="parameters"></a>Parâmetros
  pRetVal
 
-[out] Retorna o nome de um fluxo de dados de depuração.
+fora Retorna o nome de um fluxo de dados de depuração.
 
-## <a name="return-value"></a>Valor de retorno
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
 
 ## <a name="see-also"></a>Consulte também

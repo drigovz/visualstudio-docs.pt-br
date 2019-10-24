@@ -1,5 +1,5 @@
 ---
-title: Descobrir quem está passando um valor de parâmetro incorreto | Microsoft Docs
+title: Descubra quem está passando um valor de parâmetro errado | Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 548851a4e5811864e60d3a14368d6380f14f9e7e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 42884cd6498f00cfe2df2d0396ff9ea6b03c2f98
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62894873"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72734232"
 ---
 # <a name="how-can-i-find-out-who-is-passing-a-wrong-parameter-value"></a>Como posso descobrir quem está passando um valor de parâmetro incorreto?
 ## <a name="problem-description"></a>Descrição do problema
@@ -41,7 +41,7 @@ ms.locfileid: "62894873"
 
 2. Clique com o botão direito do mouse no ponto de interrupção e selecione **Condição**.
 
-3. Na caixa de diálogo **Condição de Ponto de Interrupção**, clique na caixa de seleção **Condição**. Ver [avançadas de pontos de interrupção](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression).
+3. Na caixa de diálogo **Condição de Ponto de Interrupção**, clique na caixa de seleção **Condição**. Consulte [pontos de interrupção avançados](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression).
 
 4. Digite uma expressão, como `Var==3`, na caixa de texto, onde `Var` é o nome do parâmetro que contém o valor incorreto, e `3` é o valor incorreto passado para ele.
 
@@ -49,7 +49,7 @@ ms.locfileid: "62894873"
 
 6. Agora, execute o programa novamente. O ponto de interrupção faz com que o programa pare no início da função quando o parâmetro `Var` tiver o valor `3`.
 
-7. Use a janela Pilha de Chamadas para localizar a função de chamada e navegar até seu código-fonte. Para obter mais informações, confira [Como: Usar a janela Pilha de Chamadas](../debugger/how-to-use-the-call-stack-window.md).
+7. Use a janela Pilha de Chamadas para localizar a função de chamada e navegar até seu código-fonte. Para obter mais informações, consulte [como: usar a janela pilha de chamadas](../debugger/how-to-use-the-call-stack-window.md).
 
 ## <a name="see-also"></a>Consulte também
 - [Perguntas frequentes de depuração de código nativo](../debugger/debugging-native-code-faqs.md)

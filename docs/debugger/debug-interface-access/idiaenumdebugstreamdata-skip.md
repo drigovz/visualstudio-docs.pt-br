@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 61c33ab75ebac94ec69d772ae23476df28bdb31d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f2f331d7a91e9dbc6dbf0dea2e8a5b91f08de584
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62838357"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744837"
 ---
 # <a name="idiaenumdebugstreamdataskip"></a>IDiaEnumDebugStreamData::Skip
-Ignora um número especificado de registros em uma sequência enumerado.
+Ignora um número especificado de registros em uma sequência enumerada.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -33,10 +33,10 @@ HRESULT Skip ( 
 #### <a name="parameters"></a>Parâmetros
  celt
 
-[in] O número de registros a serem ignorados na sequência enumerada.
+no O número de registros a serem ignorados na sequência enumerada.
 
-## <a name="return-value"></a>Valor de retorno
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE` se não houver nenhum mais registros a serem ignorados.
+## <a name="return-value"></a>Valor retornado
+ Se for bem-sucedido, retornará `S_OK`; caso contrário, retornará `S_FALSE` se não houver mais registros a serem ignorados.
 
 ## <a name="see-also"></a>Consulte também
 - [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)

@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 03607cec9b314f4f6e329a3150d097f8a2186705
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 28d9a7762cac1a63b40fa34118d4076403120763
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62838022"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741419"
 ---
 # <a name="idiastackwalkhelperframeforva"></a>IDiaStackWalkHelper::frameForVA
-Recupera o registro de ativação que contém o endereço virtual especificado.
+Recupera o quadro de pilha que contém o endereço virtual especificado.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -34,13 +34,13 @@ HRESULT frameForVA( 
 #### <a name="parameters"></a>Parâmetros
  `va`
 
-[in] O endereço virtual para os dados do quadro.
+no O endereço virtual para os dados do quadro.
 
  `ppFrame`
 
-[out] Uma [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) objeto que representa o quadro de pilha no endereço especificado.
+fora Um objeto [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) que representa o quadro de pilha no endereço especificado.
 
-## <a name="return-value"></a>Valor de retorno
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
 
 ## <a name="see-also"></a>Consulte também

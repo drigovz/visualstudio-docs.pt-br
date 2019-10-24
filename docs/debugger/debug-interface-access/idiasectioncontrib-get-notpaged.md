@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1fb132b4cf36eb686424e0f756ffe0387a432eb0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cae6940ce69bf9cd39c1002cc522af993fc59b6d
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62827640"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742580"
 ---
-# <a name="idiasectioncontribgetnotpaged"></a>IDiaSectionContrib::get_notPaged
-Recupera um sinalizador que indica se a seção não pode ser paginada sem memória.
+# <a name="idiasectioncontribget_notpaged"></a>IDiaSectionContrib::get_notPaged
+Recupera um sinalizador que indica se a seção não pode ser paginada da memória.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -32,10 +32,10 @@ HRESULT get_notPaged ( 
 
 #### <a name="parameters"></a>Parâmetros
  `pRetVal`
-- [out, retval] Retorna `TRUE` se a seção não pode ser paginada; caso contrário, retornará `FALSE`.
+- [out, retval] Retornará `TRUE` se a seção não puder ser paginada; caso contrário, retorna `FALSE`.
 
-## <a name="return-value"></a>Valor de retorno
- Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não há suporte para essa propriedade. Caso contrário, retornará um código de erro.
+## <a name="return-value"></a>Valor retornado
+ Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não houver suporte para essa propriedade. Caso contrário, retornará um código de erro.
 
 ## <a name="see-also"></a>Consulte também
 - [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

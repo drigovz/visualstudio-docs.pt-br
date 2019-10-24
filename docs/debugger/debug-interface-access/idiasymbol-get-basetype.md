@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e1d38e39fd7687de3ff87737b49972cb389187aa
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 0a3d1bb8b2f3095fd35488c47f823e7b3603995b
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62837601"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740915"
 ---
-# <a name="idiasymbolgetbasetype"></a>IDiaSymbol::get_baseType
-Recupera o tipo base para esse símbolo<em>.</em>
+# <a name="idiasymbolget_basetype"></a>IDiaSymbol::get_baseType
+Recupera o tipo base deste símbolo<em>.</em>
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -33,16 +33,16 @@ HRESULT get_baseType (
 #### <a name="parameters"></a>Parâmetros
 `pRetVal`
 
-[out] Retorna um valor da [enumeração BasicType](../../debugger/debug-interface-access/basictype.md) enumeração que especifica o tipo base do símbolo.
+fora Retorna um valor da enumeração de [Enumeração BasicType](../../debugger/debug-interface-access/basictype.md) especificando o tipo base do símbolo.
 
-## <a name="return-value"></a>Valor de retorno
+## <a name="return-value"></a>Valor retornado
 Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE` ou um código de erro.
 
 > [!NOTE]
-> Um valor de retorno `S_FALSE` significa que a propriedade não está disponível para o símbolo.
+> Um valor de retorno de `S_FALSE` significa que a propriedade não está disponível para o símbolo.
 
 ## <a name="remarks"></a>Comentários
-O tipo básico para um símbolo pode ser determinado pelo primeiro obter o tipo do símbolo e, em seguida, interrogar que retornado para o tipo base. Observe que alguns símbolos podem não ter um tipo base — por exemplo, um nome de estrutura.
+O tipo básico para um símbolo pode ser determinado pela primeira vez que obter o tipo do símbolo e, em seguida, interrogar esse tipo retornado para o tipo base. Observe que alguns símbolos podem não ter um tipo base — por exemplo, um nome de estrutura.
 
 ## <a name="example"></a>Exemplo
 
@@ -64,7 +64,7 @@ if (pType->get_type( &pBaseType ) == S_OK)
 |Requisito|Descrição|
 |-----------------|-----------------|
 |Cabeçalho:|dia2.h|
-|Versão:|DIA SDK v7.0|
+|Versão:|DIA SDK v 7.0|
 
 ## <a name="see-also"></a>Consulte também
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

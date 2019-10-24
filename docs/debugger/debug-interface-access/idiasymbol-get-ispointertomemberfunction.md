@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_isPointerToMemberFunction | Microsoft Docs
+title: 'IDiaSymbol:: get_isPointerToMemberFunction | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b666aa19e574702655178790b8aa0463a0d5c2d5
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: d1cbbc9a38ef8d92233175380455fbe8c8291263
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62836540"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740118"
 ---
-# <a name="idiasymbolgetispointertomemberfunction"></a>IDiaSymbol::get_isPointerToMemberFunction
-Especifica se esse símbolo é um ponteiro para uma função de membro.
+# <a name="idiasymbolget_ispointertomemberfunction"></a>IDiaSymbol::get_isPointerToMemberFunction
+Especifica se este símbolo é um ponteiro para uma função membro.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -30,9 +30,9 @@ HRESULT get_isPointerToMemberFunction(
 #### <a name="parameters"></a>Parâmetros
  `pRetVal`
 
-[out] Um ponteiro para um `BOOL` que especifica se esse símbolo é um ponteiro para uma função de membro.
+fora Um ponteiro para um `BOOL` que especifica se esse símbolo é um ponteiro para uma função de membro.
 
-## <a name="return-value"></a>Valor de retorno
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE` ou um código de erro.
 
 ## <a name="see-also"></a>Consulte também

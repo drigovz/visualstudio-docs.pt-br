@@ -1,5 +1,5 @@
 ---
-title: 'Como: Parar alterações de código | Microsoft Docs'
+title: 'Como: parar as alterações de código | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,14 +17,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 33bc24aaea0f24d592a897bcc70f553cfaab9667
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 545599aa68da79aa7be41f0a2517049146cebc89
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63388356"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72732450"
 ---
-# <a name="how-to-stop-code-changes"></a>Como: Parar alterações de código
+# <a name="how-to-stop-code-changes"></a>Como parar as alterações de código
 Quando Editar e Continuar estiver no processo de aplicar alterações de código, você poderá interromper a operação.
 
 > [!CAUTION]

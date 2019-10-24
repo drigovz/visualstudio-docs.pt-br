@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e6b893a40172bfd806130bef663da8676b513042
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 135f2b0a042dd74b573a0746831a48fb27e7c2a9
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62832832"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743512"
 ---
-# <a name="idiaframedatagetprogram"></a>IDiaFrameData::get_program
-Recupera a cadeia de caracteres de programa que é usada para calcular o registro definido antes da chamada para a função atual.
+# <a name="idiaframedataget_program"></a>IDiaFrameData::get_program
+Recupera a cadeia de caracteres do programa que é usada para calcular o conjunto de registros antes da chamada para a função atual.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -33,23 +33,23 @@ HRESULT get_program ( 
 #### <a name="parameters"></a>Parâmetros
  `pRetVal`
 
-[out] Retorna a cadeia de caracteres do programa.
+fora Retorna a cadeia de caracteres do programa.
 
-## <a name="return-value"></a>Valor de retorno
- Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não há suporte para essa propriedade. Caso contrário, retornará um código de erro.
+## <a name="return-value"></a>Valor retornado
+ Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não houver suporte para essa propriedade. Caso contrário, retornará um código de erro.
 
 ## <a name="remarks"></a>Comentários
- A cadeia de caracteres do programa é uma sequência de macros que é interpretada para estabelecer o prólogo. Por exemplo, um quadro de pilha típica pode usar a cadeia de caracteres do programa `"$T0 $ebp = $eip $T0 4 + ^ = $ebp $T0 ^ = $esp $T0 8 + ="`. O formato é a notação inversa polonês, onde os operadores seguem os operandos. `T0` representa uma variável temporária na pilha. Este exemplo executa as seguintes etapas:
+ A cadeia de caracteres do programa é uma sequência de macros que é interpretada para estabelecer o prólogo. Por exemplo, um quadro de pilha típico pode usar a cadeia de caracteres do programa `"$T0 $ebp = $eip $T0 4 + ^ = $ebp $T0 ^ = $esp $T0 8 + ="`. O formato é notação de polonês reverso, em que os operadores seguem os operandos. `T0` representa uma variável temporária na pilha. Este exemplo executa as seguintes etapas:
 
-1. Mover o conteúdo de registro `ebp` para `T0`.
+1. Mover o conteúdo do `ebp` de registro para `T0`.
 
-2. Adicione `4` ao valor na `T0` para produzir um endereço, obter o valor desse endereço e armazenar o valor no registro `eip`.
+2. Adicione `4` ao valor em `T0` para produzir um endereço, obter o valor desse endereço e armazenar o valor no registro `eip`.
 
-3. Obtenha o valor no endereço armazenado em `T0` e armazenar esse valor no registro `ebp`.
+3. Obtenha o valor do endereço armazenado em `T0` e armazene esse valor no `ebp`de registro.
 
-4. Adicione `8` ao valor na `T0` e armazenar esse valor no registro `esp`.
+4. Adicione `8` ao valor em `T0` e armazene esse valor no `esp`de registro.
 
-   Observe que a cadeia de caracteres do programa é específica para a CPU e a convenção de chamada definido para a função representada por quadro de pilhas atual.
+   Observe que a cadeia de caracteres do programa é específica para a CPU e para a Convenção de chamada configurada para a função representada pelo quadro de pilhas atual.
 
 ## <a name="see-also"></a>Consulte também
 - [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)
