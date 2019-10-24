@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b80a2a0f270ccd76d052d4c7863170448648e138
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d7aef3ea724bbb50f0342032a62e0044a1f0eb30
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62833357"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744048"
 ---
 # <a name="idiaenumsourcefilesskip"></a>IDiaEnumSourceFiles::Skip
 Ignora um número especificado de arquivos de origem em uma sequência de enumeração.
@@ -33,10 +33,10 @@ HRESULT Skip ( 
 #### <a name="parameters"></a>Parâmetros
  celt
 
-[in] O número de arquivos de origem na sequência de enumeração para ignorar.
+no O número de arquivos de origem na sequência de enumeração a serem ignorados.
 
-## <a name="return-value"></a>Valor de retorno
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE` se não houver nenhum arquivo de origem mais ignorar.
+## <a name="return-value"></a>Valor retornado
+ Se for bem-sucedido, retornará `S_OK`; caso contrário, retornará `S_FALSE` se não houver mais arquivos de origem a serem ignorados.
 
 ## <a name="see-also"></a>Consulte também
 - [IDiaEnumSourceFiles](../../debugger/debug-interface-access/idiaenumsourcefiles.md)

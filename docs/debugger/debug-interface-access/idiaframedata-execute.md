@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 78440c703ece2aa54e54594d57156dbb17848915
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 88c9af8293dfc6a35e5f0e42d9596494d74b10aa
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62832642"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743693"
 ---
 # <a name="idiaframedataexecute"></a>IDiaFrameData::execute
 Executa o desenrolamento de pilha e retorna os resultados em uma interface de quadro de movimentação de pilha.
@@ -33,20 +33,20 @@ HRESULT execute ( 
 #### <a name="parameters"></a>Parâmetros
  `frame`
 
-[in] Uma [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md) o objeto que mantém o estado de registradores do quadro.
+no Um objeto [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md) que contém o estado dos registros de quadro.
 
-## <a name="return-value"></a>Valor de retorno
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro. A tabela a seguir mostra os possíveis valores retornados para esse método.
+## <a name="return-value"></a>Valor retornado
+ Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro. A tabela a seguir mostra os possíveis valores de retorno para esse método.
 
 |Valor|Descrição|
 |-----------|-----------------|
-|E_DIA_INPROLOG|Não é possível executar um quadro de pilha no código de prólogo.|
-|E_DIA_SYNTAX|Erro encontrado no programa de quadro de análise.|
-|E_DIA_FRAME_ACCESS|Não é possível a registros de acesso ou memória.|
-|E_DIA_VALUE|Erro no cálculo de um valor (por exemplo, a divisão por zero).|
+|E_DIA_INPROLOG|Não é possível executar um registro de ativação no código de prólogo.|
+|E_DIA_SYNTAX|Erro de análise encontrado no programa de quadro.|
+|E_DIA_FRAME_ACCESS|Não é possível acessar os registros ou a memória.|
+|E_DIA_VALUE|Erro na computação de um valor (por exemplo, divisão por zero).|
 
 ## <a name="remarks"></a>Comentários
- Este método é chamado durante a depuração para desenrolar a pilha. O [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md) objeto é implementado pelo aplicativo cliente para receber atualizações para os registros e fornecer métodos usados pelo `execute` método.
+ Esse método é chamado durante a depuração para desenrolar a pilha. O objeto [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md) é implementado pelo aplicativo cliente para receber atualizações para os registros e para fornecer métodos usados pelo método `execute`.
 
 ## <a name="see-also"></a>Consulte também
 - [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)
