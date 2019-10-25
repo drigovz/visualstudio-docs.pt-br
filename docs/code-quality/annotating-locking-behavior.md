@@ -32,12 +32,12 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: 2460ca1c76eb43bdff89c87c880f405cdce12b48
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: 26c788319331d0da4024844b50b4c495ed2c3a37
+ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72446318"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72806761"
 ---
 # <a name="annotating-locking-behavior"></a>Anotando o comportamento de bloqueio
 Para evitar bugs de simultaneidade em seu programa multithread, sempre siga uma disciplina de bloqueio apropriada e use anotações SAL.
@@ -70,7 +70,7 @@ A tabela a seguir lista as anotações de bloqueio.
 |`_Acquires_lock_(expr)`|Anota uma função e indica que, no estado de post, a função é incrementada por uma contagem de bloqueios do objeto de bloqueio nomeado por `expr`.|
 |`_Acquires_nonreentrant_lock_(expr)`|O bloqueio nomeado por `expr` é adquirido.  Um erro será relatado se o bloqueio já estiver em retenção.|
 |`_Acquires_shared_lock_(expr)`|Anota uma função e indica que, no estado de post, a função é incrementada por uma contagem de bloqueios compartilhada do objeto de bloqueio nomeado por `expr`.|
-|`_Create_lock_level_(name)`|Uma instrução que declara o símbolo `name` para ser um nível de bloqueio para que ele possa ser usado nas anotações `_Has_Lock_level_` e `_Lock_level_order_`.|
+|`_Create_lock_level_(name)`|Uma instrução que declara o símbolo `name` ser um nível de bloqueio para que ele possa ser usado nas anotações `_Has_Lock_level_` e `_Lock_level_order_`.|
 |`_Has_lock_kind_(kind)`|Anota qualquer objeto para refinar as informações de tipo de um objeto de recurso. Às vezes, um tipo comum é usado para diferentes tipos de recursos e o tipo sobrecarregado não é suficiente para distinguir os requisitos semânticos entre vários recursos. Aqui está uma lista de parâmetros predefinidos de `kind`:<br /><br /> `_Lock_kind_mutex_`<br /> ID do tipo de bloqueio para mutexes.<br /><br /> `_Lock_kind_event_`<br /> ID de tipo de bloqueio para eventos.<br /><br /> `_Lock_kind_semaphore_`<br /> ID do tipo de bloqueio para semáforos.<br /><br /> `_Lock_kind_spin_lock_`<br /> ID do tipo de bloqueio para bloqueios de rotação.<br /><br /> `_Lock_kind_critical_section_`<br /> ID do tipo de bloqueio para seções críticas.|
 |`_Has_lock_level_(name)`|Anota um objeto de bloqueio e dá a ele o nível de bloqueio de `name`.|
 |`_Lock_level_order_(name1, name2)`|Uma instrução que fornece a ordem de bloqueio entre `name1` e `name2`.|
@@ -115,7 +115,7 @@ Os bloqueios inteligentes normalmente encapsulam bloqueios nativos e gerenciam s
 |`_Moves_lock_(target, source)`|Descreve a operação `move constructor` que transfere o estado de bloqueio do objeto `source` para o `target`. O `target` é considerado um objeto recém-criado, portanto, qualquer Estado que tinha antes é perdido e substituído pelo estado de `source`. O `source` também é redefinido para um estado limpo sem contagens de bloqueio ou destino de alias, mas os aliases que apontam para ele permanecem inalterados.|
 |`_Replaces_lock_(target, source)`|Descreve a semântica `move assignment operator` em que o bloqueio de destino é liberado antes de transferir o estado da origem. Isso pode ser considerado uma combinação de `_Moves_lock_(target, source)` precedida por um `_Releases_lock_(target)`.|
 |`_Swaps_locks_(left, right)`|Descreve o comportamento padrão de `swap` que assume que os objetos `left` e `right` trocam seu estado. O estado trocado inclui a contagem de bloqueios e o destino de alias, se houver. Os aliases que apontam para os objetos `left` e `right` permanecem inalterados.|
-|`_Detaches_lock_(detached, lock)`|Descreve um cenário no qual um tipo de wrapper de bloqueio permite dissociação com seu recurso contido. Isso é semelhante a como o `std::unique_ptr` funciona com seu ponteiro interno: ele permite que os programadores extraiam o ponteiro e deixem seu contêiner de ponteiro inteligente em um estado limpo. A lógica semelhante é suportada pelo `std::unique_lock` e pode ser implementada em invólucros de bloqueio personalizados. O bloqueio desanexado mantém seu estado (contagem de bloqueios e destino de alias, se houver), enquanto o wrapper é redefinido para conter zero contagem de bloqueios e nenhum destino de alias, enquanto retém seus próprios aliases. Não há nenhuma operação em contagens de bloqueio (liberando e adquirindo). Essa anotação se comporta exatamente como `_Moves_lock_`, exceto pelo fato de que o argumento desanexado deve ser `return` em vez de `this`.|
+|`_Detaches_lock_(detached, lock)`|Descreve um cenário no qual um tipo de wrapper de bloqueio permite dissociação com seu recurso contido. Isso é semelhante a como `std::unique_ptr` funciona com seu ponteiro interno: ele permite que os programadores extraem o ponteiro e deixem seu contêiner de ponteiro inteligente em um estado limpo. A lógica semelhante é suportada pelo `std::unique_lock` e pode ser implementada em invólucros de bloqueio personalizados. O bloqueio desanexado mantém seu estado (contagem de bloqueios e destino de alias, se houver), enquanto o wrapper é redefinido para conter zero contagem de bloqueios e nenhum destino de alias, enquanto retém seus próprios aliases. Não há nenhuma operação em contagens de bloqueio (liberando e adquirindo). Essa anotação se comporta exatamente como `_Moves_lock_`, exceto pelo fato de que o argumento desanexado deve ser `return` em vez de `this`.|
 
 ## <a name="see-also"></a>Consulte também
 
@@ -127,4 +127,4 @@ Os bloqueios inteligentes normalmente encapsulam bloqueios nativos e gerenciam s
 - [Especificando quando e onde uma anotação se aplica](../code-quality/specifying-when-and-where-an-annotation-applies.md)
 - [Funções intrínsecas](../code-quality/intrinsic-functions.md)
 - [Práticas recomendadas e exemplos](../code-quality/best-practices-and-examples-sal.md)
-- [Blog da equipe de análise de código](http://go.microsoft.com/fwlink/p/?LinkId=251197)
+- [Blog da equipe de análise de código](https://blogs.msdn.microsoft.com/codeanalysis/)
