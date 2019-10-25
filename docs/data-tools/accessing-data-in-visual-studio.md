@@ -14,12 +14,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: f2a33a0090be980c221ebfbe7f3116cdfef7b23b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 07c7c9db37a951b689e28e87a02c7f41a667685b
+ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648981"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72807052"
 ---
 # <a name="access-data-in-visual-studio"></a>Acessar dados no Visual Studio
 
@@ -94,7 +94,7 @@ Se você estiver se conectando aos serviços do Azure, certifique-se de baixar a
 
 ### <a name="data-providers"></a>Provedores de dados
 
-Para que um banco de dados seja consumível em ADO.NET, ele deve ter um provedor personalizado de *ADO.net* ou mais deve expor uma interface ODBC ou OLE DB. A Microsoft fornece uma [lista de provedores de dados ADO.net](https://docs.microsoft.com/dotnet/framework/data/adonet/ado-net-overview) para produtos SQL Server, bem como provedores de OLE DB e ODBC.
+Para que um banco de dados seja consumível em ADO.NET, ele deve ter um provedor personalizado de *ADO.net* ou mais deve expor uma interface ODBC ou OLE DB. A Microsoft fornece uma [lista de provedores de dados ADO.net](/dotnet/framework/data/adonet/ado-net-overview) para produtos SQL Server, bem como provedores de OLE DB e ODBC.
 
 ### <a name="data-modeling"></a>Modelagem de dados
 
@@ -144,9 +144,9 @@ A [plataforma de ia da microsoft](https://azure.microsoft.com/overview/ai-platfo
 
 [ADO.NET](/dotnet/framework/data/adonet/index) &mdash;Describes a arquitetura ADO.net e como usar as classes ADO.net para gerenciar dados de aplicativos e interagir com fontes de dados e XML.
 
-[ADO.NET Entity Framework](https://docs.microsoft.com/ef/ef6/) &mdash;Describes como criar aplicativos de dados que permitem aos desenvolvedores programar em um modelo conceitual em vez de diretamente em um banco de dados relacional.
+[ADO.NET Entity Framework](/ef/ef6/) &mdash;Describes como criar aplicativos de dados que permitem aos desenvolvedores programar em um modelo conceitual em vez de diretamente em um banco de dados relacional.
 
-[WCF Data Services 4,5](/dotnet/framework/data/wcf/index) &mdash;Describes como usar [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] para implantar serviços de dados na Web ou em uma intranet que implemente o [protocolo Open Data (OData)](https://www.odata.org/).
+[WCF Data Services 4,5](/dotnet/framework/data/wcf/index)&mdash;descreve como usar [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] para implantar serviços de dados na Web ou em uma intranet que implementa o [protocolo Open Data (OData)](https://www.odata.org/).
 
 [Os dados em soluções do office](../vsto/data-in-office-solutions.md) &mdash;Contains links para tópicos que explicam como os dados funcionam em soluções do Office. Isso inclui informações sobre programação orientada a esquema, cache de dados e acesso a dados no servidor.
 

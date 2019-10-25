@@ -35,12 +35,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3c83e6b85e8657487254f1f4fb275a6280c786ff
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8654e42db8ec2a285c9104c6f43bc34beb22ad22
+ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72638952"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72806962"
 ---
 # <a name="windows-communication-foundation-services-and-wcf-data-services-in-visual-studio"></a>Serviços do Windows Communication Foundation e WCF Data Services no Visual Studio
 
@@ -52,7 +52,7 @@ O Windows Communication Foundation (WCF) é uma estrutura unificada para criar a
 
 ### <a name="what-are-wcf-data-services"></a>O que são WCF Data Services
 
-WCF Data Services é uma implementação do padrão de protocolo OData (Open Data).  WCF Data Services permite que você exponha dados tabulares como um conjunto de APIs REST, permitindo que você retorne dados usando verbos HTTP padrão, como GET, POST, PUT ou DELETE. No lado do servidor, WCF Data Services estão sendo substituídas por [ASP.NET Web API](http://www.asp.net/web-api) para criar novos serviços OData. A biblioteca de cliente do WCF Data Services continua sendo uma boa opção para consumir serviços OData em um aplicativo .NET do Visual Studio (**Project**  > **Adicionar referência de serviço**). Para obter mais informações, consulte [WCF Data Services 4,5](http://go.microsoft.com/fwlink/?LinkID=119952).
+WCF Data Services é uma implementação do padrão de protocolo OData (Open Data).  WCF Data Services permite que você exponha dados tabulares como um conjunto de APIs REST, permitindo que você retorne dados usando verbos HTTP padrão, como GET, POST, PUT ou DELETE. No lado do servidor, WCF Data Services estão sendo substituídas por [ASP.NET Web API](https://dotnet.microsoft.com/apps/aspnet/apis) para criar novos serviços OData. A biblioteca de cliente do WCF Data Services continua sendo uma boa opção para consumir serviços OData em um aplicativo .NET do Visual Studio (**Project**  > **Adicionar referência de serviço**). Para obter mais informações, consulte [WCF Data Services 4,5](http://go.microsoft.com/fwlink/?LinkID=119952).
 
 ### <a name="wcf-programming-model"></a>Modelo de programação do WCF
 

@@ -7,12 +7,12 @@ ms.author: mblome
 manager: markl
 dev_langs:
 - CPP
-ms.openlocfilehash: fee4478f52cd107d2173919617aca8acd07234eb
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: 762ba639c1443bb737087233d04c9e3753f2f455
+ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72445646"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72807079"
 ---
 # <a name="use-the-c-core-guidelines-checkers"></a>Usar os verificadores de Diretrizes Principais do C++
 
@@ -73,24 +73,24 @@ c:\users\username\documents\visual studio 2015\projects\corecheckexample\coreche
 ========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========
 ```
 
-As C++ diretrizes básicas estão lá para ajudá-lo a escrever um código melhor e mais seguro. No entanto, se você tiver uma instância em que uma regra ou um perfil não deve ser aplicado, será fácil suprimir diretamente no código. Você pode usar o atributo `gsl::suppress` para manter C++ a verificação principal de detectar e relatar qualquer violação de uma regra no bloco de código a seguir. Você pode marcar instruções individuais para suprimir regras específicas. Você pode até mesmo suprimir todo o perfil de limites gravando `[[gsl::suppress(bounds)]]` sem incluir um número de regra específico.
+As C++ diretrizes básicas estão lá para ajudá-lo a escrever um código melhor e mais seguro. No entanto, se você tiver uma instância em que uma regra ou um perfil não deve ser aplicado, será fácil suprimir diretamente no código. Você pode usar o atributo `gsl::suppress` para manter C++ a verificação principal de detectar e relatar qualquer violação de uma regra no bloco de código a seguir. Você pode marcar instruções individuais para suprimir regras específicas. Você pode até mesmo suprimir todo o perfil de limites escrevendo `[[gsl::suppress(bounds)]]` sem incluir um número de regra específico.
 
 ## <a name="supported-rule-sets"></a>Conjuntos de regras com suporte
 À medida que novas regras são adicionadas ao verificador de diretrizes C++ principais, o número de avisos produzidos para código pré-existente pode aumentar. Você pode usar conjuntos de regras predefinidos para filtrar quais tipos de regras habilitar.
 Os tópicos de referência para a maioria das regras estão sob a [referência de verificação principal do Visual C++ Studio](code-analysis-for-cpp-corecheck.md).
 
 A partir do Visual Studio 2017 versão 15,3, os conjuntos de regras com suporte são:
-- **As regras de ponteiro do proprietário** impõem [verificações de gerenciamento de recursos relacionadas ao proprietário @ no__t C++ -2T > das diretrizes básicas](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).
+- **As regras de ponteiro do proprietário** impõem [verificações de gerenciamento de recursos relacionadas ao proprietário C++\<t > das principais diretrizes](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).
 
-- **As regras const** impõem [verificações relacionadas a C++ const das principais diretrizes](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#con-constants-and-immutability).
+- **As regras const** impõem [verificações relacionadas a C++ const das principais diretrizes](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#con-constants-and-immutability).
 
-- **Regras de ponteiro brutos** impõem [verificações de gerenciamento de recursos relacionadas a C++ ponteiros brutos das diretrizes básicas](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).
+- **Regras de ponteiro brutos** impõem [verificações de gerenciamento de recursos relacionadas a C++ ponteiros brutos das diretrizes básicas](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).
 
-- **Regras de ponteiro exclusivo** impõem [verificações de gerenciamento de recursos relacionadas a tipos com semântica de ponteiro C++ exclusiva das diretrizes básicas](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).
+- **Regras de ponteiro exclusivo** impõem [verificações de gerenciamento de recursos relacionadas a tipos com semântica de ponteiro C++ exclusiva das diretrizes básicas](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).
 
-- **As regras de limites** impõem o [perfil de limites C++ das principais diretrizes](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#probounds-bounds-safety-profile).
+- **As regras de limites** impõem o [perfil de limites C++ das principais diretrizes](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#probounds-bounds-safety-profile).
 
-- **As regras de tipo** impõem o [perfil C++ de tipo das principais diretrizes](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#prosafety-type-safety-profile).
+- **As regras de tipo** impõem o [perfil C++ de tipo das principais diretrizes](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#prosafety-type-safety-profile).
 
 **Visual Studio 2017 versão 15.5**:
 
@@ -131,7 +131,7 @@ Essas macros correspondem aos conjuntos de regras e se expandem para uma lista s
 
 ## <a name="attributes"></a>Atributos
 
-O compilador Visual C++ da Microsoft tem um suporte limitado para o atributo de supressão GSL. Ele pode ser usado para suprimir avisos em instruções de expressão e de bloco dentro de uma função.
+O compilador C++ da Microsoft tem um suporte limitado para o atributo de supressão GSL. Ele pode ser usado para suprimir avisos em instruções de expressão e de bloco dentro de uma função.
 
 ```cpp
 // Suppress only warnings from the 'r.11' rule in expression.
@@ -231,11 +231,11 @@ Você precisa definir algumas variáveis de ambiente e usar opções de linha de
    - `/analyze:plugin EspXEngine.dll` essa opção carrega o mecanismo de extensões de análise de código no PREfast. Esse mecanismo, por sua vez, carrega C++ o principal verificador de diretrizes.
 
 ## <a name="use-the-guideline-support-library"></a>Usar a biblioteca de suporte de diretrizes
-A biblioteca de suporte a diretrizes foi projetada para ajudá-lo a seguir as principais diretrizes. O GSL inclui definições que permitem que você substitua construções propensas a erros com alternativas mais seguras. Por exemplo, você pode substituir um par `T*, length` de parâmetros pelo tipo `span<T>`. O GSL está disponível em [http://www.nuget.org/packages/Microsoft.Gsl](http://www.nuget.org/packages/Microsoft.Gsl). A biblioteca é de código-fonte aberto, para que você possa exibir as fontes, fazer comentários ou contribuir. O projeto pode ser encontrado em [https://github.com/Microsoft/GSL](https://github.com/Microsoft/GSL).
+A biblioteca de suporte a diretrizes foi projetada para ajudá-lo a seguir as principais diretrizes. O GSL inclui definições que permitem que você substitua construções propensas a erros com alternativas mais seguras. Por exemplo, você pode substituir um par `T*, length` de parâmetros pelo tipo `span<T>`. O GSL está disponível em [http://www.nuget.org/packages/Microsoft.Gsl](https://www.nuget.org/packages/Microsoft.Gsl). A biblioteca é de código-fonte aberto, para que você possa exibir as fontes, fazer comentários ou contribuir. O projeto pode ser encontrado em [https://github.com/Microsoft/GSL](https://github.com/Microsoft/GSL).
 
 ## <a name="vs2015_corecheck"></a>Use as C++ diretrizes de verificação principal nos projetos do Visual Studio 2015
 
-Se você usar o Visual Studio 2015, C++ os conjuntos de regras de análise de código de verificação de núcleo não serão instalados por padrão. Você deve executar algumas etapas adicionais para poder habilitar as ferramentas C++ de análise de código de verificação de núcleo no Visual Studio 2015. A Microsoft fornece suporte para projetos do Visual Studio 2015 usando um pacote NuGet. O pacote é denominado Microsoft. CppCoreCheck e está disponível em [http://www.nuget.org/packages/Microsoft.CppCoreCheck](http://www.nuget.org/packages/Microsoft.CppCoreCheck). Este pacote requer que você tenha pelo menos o Visual Studio 2015 com atualização 1 instalado.
+Se você usar o Visual Studio 2015, C++ os conjuntos de regras de análise de código de verificação de núcleo não serão instalados por padrão. Você deve executar algumas etapas adicionais para poder habilitar as ferramentas C++ de análise de código de verificação de núcleo no Visual Studio 2015. A Microsoft fornece suporte para projetos do Visual Studio 2015 usando um pacote NuGet. O pacote é denominado Microsoft. CppCoreCheck e está disponível em [http://www.nuget.org/packages/Microsoft.CppCoreCheck](https://www.nuget.org/packages/Microsoft.CppCoreCheck). Este pacote requer que você tenha pelo menos o Visual Studio 2015 com atualização 1 instalado.
 
 O pacote também instala outro pacote como uma dependência, uma biblioteca de suporte de diretrizes somente de cabeçalho (GSL). O GSL também está disponível no GitHub em [https://github.com/Microsoft/GSL](https://github.com/Microsoft/GSL).
 

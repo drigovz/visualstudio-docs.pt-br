@@ -14,12 +14,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 944825c00e55fcdb3a1a8f1f0c11d3a37a25025c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8fad79423465ac3d90c426862f93f09d721c7df3
+ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72639409"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72806980"
 ---
 # <a name="walkthrough-create-an-n-tier-data-application"></a>Walkthrough: criar um aplicativo de dados de n camadas
 Os aplicativos de dados de *N camadas* são aplicativos que acessam dados e são separados em várias *camadas* lógicas. A separação de componentes de aplicativos em camadas discretas aumenta a capacidade de manutenção e a escalabilidade do aplicativo. Isso é feito pela adoção com mais facilidade de novas tecnologias que podem ser aplicadas a uma única camada, sem precisar reprojetar toda a solução. A arquitetura de N camadas inclui uma camada de apresentação, uma camada intermediária e uma camada de dados. A camada intermediária geralmente inclui uma camada de acesso a dados, uma camada lógica de negócios e componentes compartilhados, tais como autenticação e validação. A camada de dados inclui um banco de dados relacional. Os aplicativos de N camadas geralmente armazenam informações confidenciais na camada de acesso a dados da camada intermediária para manter o isolamento de usuários finais que acessam a camada de apresentação. Para obter mais informações, consulte [visão geral de aplicativos de dados de N camadas](../data-tools/n-tier-data-applications-overview.md).
@@ -48,7 +48,7 @@ Durante este passo a passos, você executa as seguintes etapas:
 
 - Gravar código para preencher as tabelas de dados.
 
-![link para vídeo](../data-tools/media/playvideo.gif) para uma versão em vídeo deste tópico, consulte [vídeo de instruções: Criando um aplicativo de dados de N camadas](http://go.microsoft.com/fwlink/?LinkId=115188).
+![link para vídeo](../data-tools/media/playvideo.gif) para uma versão em vídeo deste tópico, consulte [vídeo de instruções: Criando um aplicativo de dados de N camadas](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/cc178916(v=vs.90)).
 
 ## <a name="prerequisites"></a>Prerequisites
 Este passo a passos usa SQL Server Express LocalDB e o banco de dados de exemplo Northwind.
