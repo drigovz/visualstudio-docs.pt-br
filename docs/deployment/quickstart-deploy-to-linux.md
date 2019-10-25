@@ -9,18 +9,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - azure
-ms.openlocfilehash: 9609b636c6121ec2dac41559344485d4048e9cc5
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
-ms.translationtype: HT
+ms.openlocfilehash: 1e05862aa57c24bfa8f17d551762054278dd6e52
+ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65680072"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72806866"
 ---
 # <a name="publish-an-aspnet-core-app-to-app-service-on-linux-using-visual-studio"></a>Publicar um aplicativo ASP.NET Core no Serviço de Aplicativo no Linux usando o Visual Studio
 
 Do Visual Studio 2017 versão 15.7 em diante, você pode publicar aplicativos ASP.NET Core para o Serviço de Aplicativo do Azure para Linux (usando contêineres) usando um dos métodos a seguir.
 
-* Para implantação contínua (ou automática) de aplicativos, use o Azure DevOps com [Azure Pipelines](https://docs.microsoft.com/azure/devops/pipelines/get-started-yaml?view=azdevops).
+* Para implantação contínua (ou automática) de aplicativos, use o Azure DevOps com [Azure Pipelines](/azure/devops/pipelines/get-started-yaml?view=azdevops).
 
 * Para implantação única (ou manual) de aplicativos, use a ferramenta **Publicar** no Visual Studio para publicar aplicativos ASP.NET Core no Serviço de Aplicativo do Azure para Linux (usando contêineres).
 
@@ -32,17 +32,17 @@ Este artigo descreve como usar a ferramenta **Publicar** para uma implantação 
 
 1. No Gerenciador de Soluções, clique com o botão direito do mouse no projeto e escolha **Publicar** (ou use o item de menu **Criar** > **Publicar**).
 
-    ![O comando Publicar no menu de contexto de projeto no Gerenciador de Soluções](../deployment/media/quickstart-publish.png "Escolha Publicar")
+    ![O comando publicar no menu de contexto do projeto no Gerenciador de Soluções](../deployment/media/quickstart-publish.png "Escolha Publicar")
 
 1. Se você já tiver configurado anteriormente quaisquer perfis de publicação, o painel **Publica** será exibido; nesse caso, selecione **Criar novo perfil**.
 
 1. Na caixa de diálogo **Escolher um destino de publicação**, escolha **Serviço de Aplicativo no Linux**.
 
-    ![Escolher o Serviço de Aplicativo do Azure](../deployment/media/quickstart-publish-linux.png "Escolher o Serviço de Aplicativo do Azure")
+    ![Escolher serviço de Azure App](../deployment/media/quickstart-publish-linux.png "Escolher serviço de Azure App")
 
 1. Selecione **Publicar**. A caixa de diálogo **Criar Serviço de Aplicativo** é exibida. Entre com sua conta do Azure, se necessário, e as configurações padrão do serviço de aplicativo populam os campos.
 
-    ![Criar o Serviço de Aplicativo](../deployment/media/quickstart-publish-settings-app-service-linux.png "Criar o Serviço de Aplicativo do Azure")
+    ![Criar serviço de aplicativo](../deployment/media/quickstart-publish-settings-app-service-linux.png "Criar Azure App serviço")
 
 1. Selecione **Criar**. O Visual Studio implanta o aplicativo em seu Serviço de Aplicativo do Azure e o aplicativo Web é carregado em seu navegador. O painel **Publicar** das propriedades do projeto mostra a URL e outros detalhes do site.
 

@@ -15,12 +15,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4abe5047bd7d6f17bb0dc23f4d92a1a842ee273a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 15a34fdc4486a013999a6b53e34117008396c955
+ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648760"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72807016"
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>Associar controles do WPF a um WCF Data Service
 
@@ -46,7 +46,7 @@ Você precisa dos seguintes componentes para concluir esta instrução passo a p
 
 - Visual Studio
 
-- Acesso a uma instância em execução do SQL Server ou SQL Server Express que tenha o banco de dados de exemplo AdventureWorksLT anexado a ele. Você pode baixar o banco de dados AdventureWorksLT do [site do CodePlex](http://go.microsoft.com/fwlink/?linkid=87843).
+- Acesso a uma instância em execução do SQL Server ou SQL Server Express que tenha o banco de dados de exemplo AdventureWorksLT anexado a ele. Você pode baixar o banco de dados AdventureWorksLT do [site do CodePlex](https://archive.codeplex.com/?p=SqlServerSamples).
 
 Conhecimento prévio dos conceitos a seguir também é útil, mas não é necessário para concluir o passo a passo:
 
