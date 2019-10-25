@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 47f709ae086a32c0680fca060744898251a76afd
-ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
+ms.openlocfilehash: ec2b93d212f9a9485f6e817d00b06cccfec47a93
+ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72589140"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72888698"
 ---
 # <a name="debug-a-javascript-or-typescript-app-in-visual-studio"></a>Depurar um aplicativo JavaScript ou TypeScript no Visual Studio
 
@@ -64,7 +64,7 @@ Para anexar o depurador por meio do Visual Studio e atingir pontos de interrupç
     ::: moniker range=">=vs-2019"
 
     > [!NOTE]
-    > Você também pode definir o sinalizador `--remote-debugging-port` na inicialização do navegador selecionando **Procurar Com...** > na barra de ferramentas **Depurar**, escolhendo **Adicionar** e, em seguida, definindo o sinalizador no campo **Argumentos**. Usar um nome amigável diferente para o navegador, como **Chrome com depuração**. Para obter detalhes, confira [Notas sobre a versão](https://docs.microsoft.com/visualstudio/releases/2019/release-notes-preview).
+    > Você também pode definir o sinalizador `--remote-debugging-port` na inicialização do navegador selecionando **Procurar Com...** > na barra de ferramentas **Depurar**, escolhendo **Adicionar** e, em seguida, definindo o sinalizador no campo **Argumentos**. Usar um nome amigável diferente para o navegador, como **Chrome com depuração**. Para obter detalhes, confira [Notas sobre a versão](/visualstudio/releases/2019/release-notes-preview).
 
     ::: moniker-end
 

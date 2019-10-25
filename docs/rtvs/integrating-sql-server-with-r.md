@@ -8,12 +8,12 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: f15c785658b5c4cd5a6b158b05eb67ff9a4e4c2d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 10b5dfee629b5b6e67ab544ca0bdd905ed2a120a
+ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62814338"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72888449"
 ---
 # <a name="work-with-sql-server-and-r"></a>Trabalhar com o SQL Server e R
 
@@ -22,11 +22,11 @@ O excelente suporte do Visual Studio para SQL Server ajuda os cientistas de dado
 > [!Note]
 > Para trabalhar com SQL e R juntos, você deve ter o SQL Server Data Tools instalado:
 > - Visual Studio de 2017: execute o instalador do Visual Studio e selecione a carga de trabalho Armazenamento e processamento de dados, que inclui o SQL Server Data Tools.
-> - Visual Studio 2015: siga as instruções em [Baixar o SQL Server Data Tools](https://docs.microsoft.com/sql/ssdt/download-sql-server-data-tools-ssdt).
+> - Visual Studio 2015: siga as instruções em [Baixar o SQL Server Data Tools](/sql/ssdt/download-sql-server-data-tools-ssdt).
 
 |   |   |
 |---|---|
-| ![ícone de câmera para vídeo](../install/media/video-icon.png "Assistir a um vídeo") | [Assista a um vídeo (youtube.com)](https://www.youtube.com/watch?v=n4AYr0QIwdQ) para obter uma visão geral do SQL Server e do R (3 m 03s). |
+| ![ícone de câmera de filme para vídeo](../install/media/video-icon.png "Assista a um vídeo") | [Assista a um vídeo (youtube.com)](https://www.youtube.com/watch?v=n4AYr0QIwdQ) para obter uma visão geral do SQL Server e do R (3 m 03s). |
 
 ## <a name="create-and-run-sql-queries"></a>Criar e executar consultas SQL
 
@@ -49,7 +49,7 @@ Para obter informações, consulte [Usar o Editor Transact-SQL para editar e exe
 
 ## <a name="work-with-sql-server-stored-procedures"></a>Trabalhar com procedimentos armazenados do SQL Server
 
-Os [SQL Server R Services](https://docs.microsoft.com/sql/advanced-analytics/r/sql-server-r-services) (Serviços do R para SQL Server) (SQL Server 2016 e posterior) permitem inserir e executar código R de um procedimento armazenado do T-SQL. Você pode executar código R em um computador SQL Server, operar em dados retornados de uma consulta SQL e gerar um conjunto de resultados SQL que pode ser processado por SQL adicional ou retornado ao cliente.
+Os [SQL Server R Services](/sql/advanced-analytics/r/sql-server-r-services) (Serviços do R para SQL Server) (SQL Server 2016 e posterior) permitem inserir e executar código R de um procedimento armazenado do T-SQL. Você pode executar código R em um computador SQL Server, operar em dados retornados de uma consulta SQL e gerar um conjunto de resultados SQL que pode ser processado por SQL adicional ou retornado ao cliente.
 
 As RTVS simplificam o processo, que seria complicado e sujeito a erros, de combinar código SQL e R dentro de uma única instrução SQL, conforme descrito nas seções a seguir:
 
@@ -59,7 +59,7 @@ As RTVS simplificam o processo, que seria complicado e sujeito a erros, de combi
 
 |   |   |
 |---|---|
-| ![ícone de câmera para vídeo](../install/media/video-icon.png "Assistir a um vídeo") | [Assista a um vídeo (youtube.com)](https://www.youtube.com/watch?v=dFKIT2OitWQ) para obter uma visão geral de procedimentos armazenados de R e SQL (6 m 09s). |
+| ![ícone de câmera de filme para vídeo](../install/media/video-icon.png "Assista a um vídeo") | [Assista a um vídeo (youtube.com)](https://www.youtube.com/watch?v=dFKIT2OitWQ) para obter uma visão geral de procedimentos armazenados de R e SQL (6 m 09s). |
 
 ### <a name="add-a-database-connection"></a>Adicionar uma conexão de banco de dados
 
@@ -97,7 +97,7 @@ OutputDataSet <- InputDataSet
 Em poucas palavras, o código recebe um dataframe R chamado `InputDataSet` e retorna os resultados em `OutputDataSet`, com o código de modelo, simplesmente copiando a entrada para a saída.
 
 > [!Note]
-> Os nomes desses dataframes são controlados pelos parâmetros `@input_data_1_name` e `@output_data_1_name` na chamada para o procedimento armazenado do sistema `sp_execute_external_script`. Para obter mais detalhes sobre o design desta convenção de chamada e alguns exemplos de uso, consulte [sp_execute_external_script (Transact-SQL)](https://docs.microsoft.com/sql/relational-databases/system-stored-procedures/sp-execute-external-script-transact-sql).
+> Os nomes desses dataframes são controlados pelos parâmetros `@input_data_1_name` e `@output_data_1_name` na chamada para o procedimento armazenado do sistema `sp_execute_external_script`. Para obter mais detalhes sobre o design desta convenção de chamada e alguns exemplos de uso, consulte [sp_execute_external_script (Transact-SQL)](/sql/relational-databases/system-stored-procedures/sp-execute-external-script-transact-sql).
 
 O outro código gerado (nos comentários) fornece um script de teste pequeno que usa o [Pacote RODBC](https://cran.r-project.org/web/packages/RODBC/index.html) para transmitir uma instrução SQL ao SQL Server, executá-la e recuperar seu conjunto de resultados como um dataframe R. Você pode remover a marca de comentário desse código de teste para escrever seu código R interativamente em relação ao conjunto de resultados obtido do SQL Server.
 

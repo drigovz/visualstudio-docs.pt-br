@@ -1,6 +1,6 @@
 ---
-title: Depurando WPF | Microsoft Docs
-ms.date: 11/04/2016
+title: Depuração do WPF | Microsoft Docs
+ms.date: 10/22/2019
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -16,22 +16,25 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 93a6dadd9bdd2ef94a4c7d229f6aa1484b8fdf13
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5cfe148f67d7fe21bd98d2442a4427270b84d5dd
+ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62851796"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72888443"
 ---
 # <a name="debugging-wpf"></a>Depurando WPF
+
 O [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] fornece recursos adicionais para facilitar a depuração de aplicativos do WPF.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 | Título | Descrição |
 | - | - |
-| [Como: Usar o visualizador de árvore do WPF](../debugger/how-to-use-the-wpf-tree-visualizer.md) | Você pode usar o visualizador de árvore do WPF para explorar a árvore visual de um objeto do WPF e exibir as propriedades de dependência do WPF para os objetos nessa árvore. Este tópico descreve a interface de usuário do visualizador de árvore do WPF. |
-| [Como: Exibir informações de rastreamento do WPF](../debugger/how-to-display-wpf-trace-information.md) | O [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pode receber informações de rastreamento de depuração de aplicativos do WPF e exibir essas informações na janela de **Saída**. Este tópico descreve como habilitar e personalizar a exibição de informações de rastreamento do WPF. |
+| [Gravar e depurar o código XAML em execução](../xaml-tools/xaml-hot-reload.md) | Você pode usar o Hot recarregamento de XAML para explorar a árvore visual de um objeto do WPF e exibir as propriedades de dependência do WPF para os objetos nessa árvore. Este tópico descreve como usar o Hot recarregamento de XAML. |
+| [Inspecione as propriedades XAML durante a depuração](../xaml-tools/xaml-hot-reload.md) | Você pode usar a árvore visual ao vivo para explorar a árvore visual de um objeto do WPF e exibir as propriedades de dependência do WPF para os objetos nessa árvore. |
+| [Como usar o Visualizador de Árvore WPF](../debugger/how-to-use-the-wpf-tree-visualizer.md) | Você pode usar o visualizador de árvore do WPF para explorar a árvore visual de um objeto do WPF e exibir as propriedades de dependência do WPF para os objetos nessa árvore. Este tópico descreve a interface de usuário do visualizador de árvore do WPF. |
+| [Como exibir informações de rastreamento de WPF](../debugger/how-to-display-wpf-trace-information.md) | O [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pode receber informações de rastreamento de depuração de aplicativos do WPF e exibir essas informações na janela de **Saída**. Este tópico descreve como habilitar e personalizar a exibição de informações de rastreamento do WPF. |
 
 ## <a name="see-also"></a>Consulte também
 - [Depurando código gerenciado](../debugger/debugging-managed-code.md)

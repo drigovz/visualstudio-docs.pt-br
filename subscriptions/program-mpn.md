@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/28/2019
 ms.topic: conceptual
 description: Detalhes de quais assinaturas são oferecidas, quais regras se aplicam e quantas assinaturas são oferecidas no MPN.
-ms.openlocfilehash: 063c0348af226f0cbe06256426352edac7124b11
-ms.sourcegitcommit: b761a4a457646d04adfda510c8837734ee4d8f17
+ms.openlocfilehash: e32ae547327c4e51b7d49f6dffe9130afa843c49
+ms.sourcegitcommit: bcdab788085bd9931d73883fe70cd5831317dca2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70929751"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72816573"
 ---
 # <a name="visual-studio-subscriptions-offered-to-partners-in-the-microsoft-partner-network-mpn"></a>Assinaturas do Visual Studio oferecidas aos parceiros no MPN (Microsoft Partner Network)
 
@@ -57,7 +57,7 @@ Com o Action Pack, o parceiro ganha **Três assinaturas do Visual Studio Profess
 
 Os assinantes do Visual Studio Professional (MPN) também podem baixar e usar softwares para desenvolvimento, incluindo o SQL Server Developer Edition.
 
-A assinatura do MPN (Visual Studio Professional) não inclui benefícios do Azure DevOps Services, créditos mensais do Azure, suporte técnico, treinamento nem outros benefícios do assinante que estão disponíveis com as assinaturas do Visual Studio oferecidas comercialmente.
+A assinatura do Visual Studio Professional (MPN) não inclui Azure DevOps Services benefícios, crédito do Azure DevTest individiaul, suporte técnico, treinamento ou outros benefícios do Assinante que estão disponíveis com as assinaturas do Visual Studio que são oferecido comercialmente.
 
 ## <a name="internal-use-only-restriction"></a>Restrição somente para uso interno
 

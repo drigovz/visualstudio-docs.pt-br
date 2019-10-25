@@ -1,5 +1,5 @@
 ---
-title: 'Como: Usar o Visualizador de árvore do WPF | Microsoft Docs'
+title: 'Como: usar o Visualizador de árvore do WPF | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,17 +16,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e005c1b41d2c563c5b47f358e87912cba64bf7f
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: bbc705a20f8d878d85dc6aba14c64178c76041ac
+ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67821383"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72888397"
 ---
-# <a name="how-to-use-the-wpf-tree-visualizer"></a>Como: Usar o visualizador de árvore do WPF
+# <a name="how-to-use-the-wpf-tree-visualizer"></a>Como usar o Visualizador de Árvore WPF
 Você pode usar o visualizador de árvore do WPF para explorar a árvore visual de um objeto do WPF e exibir as propriedades de dependência do WPF para os objetos contidos nessa árvore. Para obter mais informações sobre árvores visuais, consulte [árvores no WPF](/dotnet/framework/wpf/advanced/trees-in-wpf). Para obter mais informações sobre propriedades de dependência, consulte [visão geral das propriedades de dependência](/dotnet/framework/wpf/advanced/dependency-properties-overview).
 
- Quando você abre o Visualizador de árvore do WPF, você verá dois painéis: o **árvore Visual** à esquerda e o **propriedades de** _nome_ **:**  _Tipo_ painel à direita. Selecione qualquer objeto na **árvore Visual** painel e o **propriedades de** _nome_ **:** _tipo_ é painel atualizado automaticamente para mostrar as propriedades desse objeto.
+ Ao abrir o Visualizador de árvore do WPF, você verá dois painéis: a **árvore visual** à esquerda e as **Propriedades do** _painel nome_ **:** _tipo_ à direita. Selecione qualquer objeto no painel de **árvore visual** e as **Propriedades do** painel _nome_ **:** _tipo_ serão atualizadas automaticamente para mostrar as propriedades desse objeto.
+
+ > [!NOTE]
+ > Você também pode usar a [árvore visual dinâmica e o Gerenciador de propriedades ao vivo](../xaml-tools/inspect-xaml-properties-while-debugging.md) para examinar a árvore visual de objetos do WPF. O Visualizador de árvore do WPF é um recurso herdado e não está em desenvolvimento ativo.
 
 ### <a name="to-open-the-wpf-tree-visualizer"></a>Para abrir o visualizador de árvore do WPF
 
@@ -50,7 +53,7 @@ Você pode usar o visualizador de árvore do WPF para explorar a árvore visual 
 
 ### <a name="to-search-the-properties-list"></a>Para pesquisar a lista de propriedades
 
-- No **propriedades de** _nome_ **:** _tipo_ painel, digite a cadeia de caracteres que você deseja procurar no **filtrar**caixa.
+- No painel **Propriedades do** _nome_ **:** _tipo_ , digite a cadeia de caracteres que você deseja pesquisar na caixa de **filtro** .
 
   O visualizador de árvore do WPF localiza imediatamente as propriedades que correspondem à cadeia de caracteres digitada; agora, a lista exibe apenas as propriedades que correspondem à cadeia de caracteres digitada. Digite mais caracteres para localizar uma correspondência mais precisa.
 

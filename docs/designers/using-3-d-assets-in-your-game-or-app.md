@@ -15,12 +15,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 400e69ddaf9ebd3596edf3b926484b623225d672
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 4df842f83f92afe8a8f747135632eb30a715d43f
+ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72634529"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72888501"
 ---
 # <a name="how-to-use-3d-assets-in-your-game-or-app"></a>Como: usar ativos 3D em seu jogo ou aplicativo
 
@@ -97,7 +97,7 @@ Ao usar a ferramenta de pipeline de conteúdo da imagem para compilar um ativo d
 
 |propriedade|Descrição|
 |--------------|-----------------|
-|**Compress**|Especifica o tipo de compactação usado para o arquivo de saída.<br /><br /> As opções disponíveis são:<br /><br /> -   **Sem Compactação**<br />-   **Compactação BC1_UNORM**<br />-   **Compactação BC1_UNORM_SRGB**<br />-   **Compactação BC2_UNORM**<br />-   **Compactação BC2_UNORM_SRGB**<br />-   **Compactação BC3_UNORM**<br />-   **Compactação BC3_UNORM_SRGB**<br />-   **Compactação BC4_UNORM**<br />-   **Compactação BC4_SNORM**<br />-   **Compactação BC5_UNORM**<br />-   **Compactação BC5_SNORM**<br />-   **Compactação BC6H_UF16**<br />-   **Compactação BC6H_SF16**<br />-   **Compactação BC7_UNORM**<br />-   **Compactação BC7_UNORM_SRGB**<br /><br /> Para obter informações sobre quais formatos de compactação têm suporte em diferentes versões do DirectX, consulte [Guia de programação para DXGI](http://go.microsoft.com/fwlink/p/?LinkId=246265).|
+|**Compress**|Especifica o tipo de compactação usado para o arquivo de saída.<br /><br /> As opções disponíveis são:<br /><br /> -   **Sem Compactação**<br />-   **Compactação BC1_UNORM**<br />-   **Compactação BC1_UNORM_SRGB**<br />-   **Compactação BC2_UNORM**<br />-   **Compactação BC2_UNORM_SRGB**<br />-   **Compactação BC3_UNORM**<br />-   **Compactação BC3_UNORM_SRGB**<br />-   **Compactação BC4_UNORM**<br />-   **Compactação BC4_SNORM**<br />-   **Compactação BC5_UNORM**<br />-   **Compactação BC5_SNORM**<br />-   **Compactação BC6H_UF16**<br />-   **Compactação BC6H_SF16**<br />-   **Compactação BC7_UNORM**<br />-   **Compactação BC7_UNORM_SRGB**<br /><br /> Para obter informações sobre quais formatos de compactação têm suporte em diferentes versões do DirectX, consulte [Guia de programação para DXGI](/windows/win32/direct3ddxgi/dx-graphics-dxgi-overviews).|
 |Converter para formato alfa pré-multiplicado|**Sim** para converter a imagem para um formato alfa pré-multiplicado no arquivo de saída; caso contrário, **Não**. Apenas o arquivo de saída é alterado, a imagem de origem permanece inalterada.|
 |**Gerar Mips**|**Sim** para gerar uma cadeia de MIP completa no tempo de build no arquivo de saída; caso contrário, **Não**. Se **Não** e o arquivo de origem já contiver uma cadeia de mipmap, o arquivo de saída terá uma cadeia MIP; caso contrário, o arquivo de saída não terá uma cadeia MIP.|
 |**Saída de conteúdo**|Especifica o nome do arquivo de saída. **Importante:** alterar a extensão de nome de arquivo de saída não tem efeito sobre o formato do arquivo.|
@@ -122,7 +122,7 @@ Quando você usar a ferramenta de pipeline de conteúdo do sombreador para criar
 
 ### <a name="use-textures-and-images"></a>Usar texturas e imagens
 
-Direct3D fornece funções para criar recursos de textura. No Direct3D 11, a biblioteca do utilitário D3DX11 fornece funções adicionais para criar recursos de textura e visualizações de recursos diretamente de arquivos de imagem. Para obter mais informações sobre como criar um recurso de textura em Direct3D 11, consulte [Texturas](http://go.microsoft.com/fwlink/p/?LinkID=246267). Para obter mais informações sobre como usar a biblioteca D3DX11 para criar um recurso de textura ou um modo de exibição de recursos com base em um arquivo de imagem, confira [Como inicializar uma textura de um arquivo](http://go.microsoft.com/fwlink/p/?LinkId=246268).
+Direct3D fornece funções para criar recursos de textura. No Direct3D 11, a biblioteca do utilitário D3DX11 fornece funções adicionais para criar recursos de textura e visualizações de recursos diretamente de arquivos de imagem. Para obter mais informações sobre como criar um recurso de textura em Direct3D 11, consulte [Texturas](/windows/win32/direct3d11/overviews-direct3d-11-resources-textures). Para obter mais informações sobre como usar a biblioteca D3DX11 para criar um recurso de textura ou um modo de exibição de recursos com base em um arquivo de imagem, confira [Como inicializar uma textura de um arquivo](/windows/win32/direct3d11/overviews-direct3d-11-resources-textures-how-to).
 
 ### <a name="use-3d-models"></a>Usar modelos 3D
 
@@ -130,7 +130,7 @@ O Direct3D 11 não fornece funções para criar recursos de modelos 3D. Em vez d
 
 ### <a name="use-shaders"></a>Usar sombreadores
 
-O Direct3D fornece funções para criar recursos do sombreador e associá-los ao pipeline gráfico programável. Para obter mais informações sobre como criar um recurso de sombreador no Direct3D e associá-lo ao pipeline, confira [Guia de programação para HLSL](http://go.microsoft.com/fwlink/p/?LinkID=261521).
+O Direct3D fornece funções para criar recursos do sombreador e associá-los ao pipeline gráfico programável. Para obter mais informações sobre como criar um recurso de sombreador no Direct3D e associá-lo ao pipeline, confira [Guia de programação para HLSL](/windows/win32/direct3dhlsl/dx-graphics-hlsl-pguide).
 
 No pipeline gráfico programável, cada estágio do pipeline deve dar ao próximo estágio do pipeline um resultado que esteja formatado de modo que possa ser entendido. Como o Designer do Sombreador só pode criar sombreadores de pixel, significa que é responsabilidade do aplicativo garantir que os dados recebidos estejam no formato esperado. Vários estágios do sombreador programável ocorrem antes do sombreador de pixel, e eles realizam transformações geométricas (o sombreador de vértice, o sombreador Hull, o sombreador de domínio e o sombreador de geometria). O estágio de mosaico não programável também ocorre antes do sombreador de pixel. Não importa qual desses estágios precedem diretamente o sombreador de pixel, ele deve apresentar seu resultado neste formato:
 

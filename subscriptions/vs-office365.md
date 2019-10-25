@@ -6,12 +6,12 @@ manager: lank
 ms.date: 08/02/2019
 ms.topic: conceptual
 description: Saiba mais sobre o benefício do Office 365 incluído em algumas assinaturas do Visual Studio.
-ms.openlocfilehash: ae28df2f66ff976fffd44f42c3063f790db9feb3
-ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
-ms.translationtype: HT
+ms.openlocfilehash: 65a071cbfcdc31ca2ef8a36ac5a779fc99467c17
+ms.sourcegitcommit: bcdab788085bd9931d73883fe70cd5831317dca2
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68787896"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72816467"
 ---
 # <a name="office-365-proplus-in-visual-studio-subscriptions"></a>Office 365 ProPlus em Assinaturas do Visual Studio
 
@@ -52,14 +52,14 @@ Se você planeja desenvolver aplicativos para o Office, convém ativar sua [Assi
 | Nível de Assinatura                                                 |     Canais                                            | Benefício                                                          | Renovável?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | VL, Azure, Retail| Disponível       |  Sim          |
-| Visual Studio Enterprise (Standard)   | NFR<sup>1</sup> | Não disponível       |  N/D          |
-| Visual Studio Professional (Standard) | VL, Azure, Retail                                       | Não disponível                                                            |  N/D          |
-| Visual Studio Test Professional (Padrão)                         | VL, Retail                                              | Não disponível                                             |  N/D          |
-| Plataformas MSDN (Padrão)                                          | VL, Retail                                              | Não disponível                                              |  N/D          |
-| Visual Studio Enterprise, Visual Studio Professional (nuvem mensal) | Azure | Não disponível | N/D |
+| Visual Studio Enterprise (Standard)   | NFR<sup>1</sup> | Não disponível       |  N/A          |
+| Visual Studio Professional (Standard) | VL, Azure, Retail                                       | Não disponível                                                            |  N/A          |
+| Visual Studio Test Professional (Padrão)                         | VL, Retail                                              | Não disponível                                             |  N/A          |
+| Plataformas MSDN (Padrão)                                          | VL, Retail                                              | Não disponível                                              |  N/A          |
+| Visual Studio Enterprise, Visual Studio Professional (nuvem mensal) | Azure | Não disponível | N/A |
 |  |
 
-<sup>1</sup> *Inclui:  NFR (Proibida a revenda), VSIP (Visual Studio Industry Partner), MPN (Microsoft Partner Network), FTE, MCT Software & Services Developer, BizSpark, MVP (Most Valuable Professional), RD (Diretor Regional), MCT Software & Services, Imagine e Microsoft Partner Network.*
+<sup>1</sup>  *inclui: não para revenda (NFR), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (MPN), FTE, MCT software & Developer Services, BizSpark, profissional mais valioso (MVP), diretor regional (RD), software MCT & Serviços, imagine Microsoft Partner Network.*
 
 > [!NOTE]
 > A Microsoft não oferece mais assinaturas anuais do Visual Studio Professional e do Visual Studio Enterprise nas Assinaturas na Nuvem. Não haverá nenhuma alteração na experiência dos clientes existentes nem na capacidade de renovar, aumentar, diminuir ou cancelar suas assinaturas. Os novos clientes são incentivados a acessar [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) para explorar diferentes opções de compra do Visual Studio.
@@ -75,4 +75,4 @@ Não tem certeza de qual assinatura você está usando?  Conecte-se ao [https://
 Certifique-se de ativar estes excelentes benefícios para aproveitar ao máximo sua assinatura do Visual Studio:
 - [Visual Studio](vs-ide-benefit.md)
 - [Azure DevOps](vs-azure-devops.md)
-- [Créditos Azure](vs-azure.md)
+- [Crédito individual do Azure DevTest](vs-azure.md)
