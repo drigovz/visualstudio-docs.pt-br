@@ -128,12 +128,12 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: ca1e66defbce50a9119e817155bcc2a98d01af9d
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: 8437a18bf2b732ee3f12774b04baedf12003d554
+ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72442401"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72806799"
 ---
 # <a name="annotating-function-parameters-and-return-values"></a>Anotando parâmetros de função e valores de retorno
 Este artigo descreve usos típicos de anotações para parâmetros de função simples – escalares e ponteiros para estruturas e classes – e a maioria dos tipos de buffers.  Este artigo também mostra padrões de uso comuns para anotações. Para anotações adicionais relacionadas a funções, consulte [anotando o comportamento da função](../code-quality/annotating-function-behavior.md).
@@ -169,7 +169,7 @@ Para as anotações na tabela a seguir, quando um parâmetro de ponteiro está s
 
      Um ponteiro para uma matriz, que é lido pela função.  A matriz é do tamanho `s`, e todas devem ser válidas.
 
-     A variante `_bytes_` fornece o tamanho em bytes em vez de elementos. Use-o somente quando o tamanho não puder ser expresso como elementos.  Por exemplo, as cadeias de caracteres `char` usarão a variante `_bytes_` somente se uma função semelhante que usa `wchar_t` faria.
+     A variante de `_bytes_` fornece o tamanho em bytes em vez de elementos. Use-o somente quando o tamanho não puder ser expresso como elementos.  Por exemplo, `char` cadeias de caracteres usarão a variante de `_bytes_` somente se uma função semelhante que usa `wchar_t`.
 
 - `_In_reads_z_(s)`
 
@@ -189,7 +189,7 @@ Para as anotações na tabela a seguir, quando um parâmetro de ponteiro está s
 
      Neste exemplo, o chamador fornece um buffer de elementos `size` para `p1`.  `MyStringCopy` torna alguns desses elementos válidos. O mais importante é que a anotação `_Null_terminated_` em `PWSTR` significa que `p1` é terminada em nulo no post-State.  Dessa forma, o número de elementos válidos ainda é bem definido, mas uma contagem de elementos específica não é necessária.
 
-     A variante `_bytes_` fornece o tamanho em bytes em vez de elementos. Use-o somente quando o tamanho não puder ser expresso como elementos.  Por exemplo, as cadeias de caracteres `char` usarão a variante `_bytes_` somente se uma função semelhante que usa `wchar_t` faria.
+     A variante de `_bytes_` fornece o tamanho em bytes em vez de elementos. Use-o somente quando o tamanho não puder ser expresso como elementos.  Por exemplo, `char` cadeias de caracteres usarão a variante de `_bytes_` somente se uma função semelhante que usa `wchar_t`.
 
 - `_Out_writes_z_(s)`
 
@@ -201,7 +201,7 @@ Para as anotações na tabela a seguir, quando um parâmetro de ponteiro está s
 
      Um ponteiro para uma matriz, que é lido e gravado na função.  É do tamanho `s`, e é válido em pré e após o estado.
 
-     A variante `_bytes_` fornece o tamanho em bytes em vez de elementos. Use-o somente quando o tamanho não puder ser expresso como elementos.  Por exemplo, as cadeias de caracteres `char` usarão a variante `_bytes_` somente se uma função semelhante que usa `wchar_t` faria.
+     A variante de `_bytes_` fornece o tamanho em bytes em vez de elementos. Use-o somente quando o tamanho não puder ser expresso como elementos.  Por exemplo, `char` cadeias de caracteres usarão a variante de `_bytes_` somente se uma função semelhante que usa `wchar_t`.
 
 - `_Inout_updates_z_(s)`
 
@@ -227,9 +227,9 @@ Para as anotações na tabela a seguir, quando um parâmetro de ponteiro está s
 
      `_Inout_updates_bytes_to_(s,c)`
 
-     Um ponteiro para uma matriz, que é lido e gravado pela função.  É do tamanho @no__t elementos-0, todos os quais devem ser válidos em pré-estado e os elementos `c` devem ser válidos no pós-Estado.
+     Um ponteiro para uma matriz, que é lido e gravado pela função.  É de tamanho `s` elementos, que devem ser válidos em pré-estado e `c` elementos devem ser válidos no pós-Estado.
 
-     A variante `_bytes_` fornece o tamanho em bytes em vez de elementos. Use-o somente quando o tamanho não puder ser expresso como elementos.  Por exemplo, as cadeias de caracteres `char` usarão a variante `_bytes_` somente se uma função semelhante que usa `wchar_t` faria.
+     A variante de `_bytes_` fornece o tamanho em bytes em vez de elementos. Use-o somente quando o tamanho não puder ser expresso como elementos.  Por exemplo, `char` cadeias de caracteres usarão a variante de `_bytes_` somente se uma função semelhante que usa `wchar_t`.
 
 - `_Inout_updates_all_(s)`
 
@@ -241,27 +241,27 @@ Para as anotações na tabela a seguir, quando um parâmetro de ponteiro está s
 
      Em outras palavras, cada elemento que existe no buffer até `s` no pré-estado é válido no pré-estado e no pós-Estado.
 
-     A variante `_bytes_` fornece o tamanho em bytes em vez de elementos. Use-o somente quando o tamanho não puder ser expresso como elementos.  Por exemplo, as cadeias de caracteres `char` usarão a variante `_bytes_` somente se uma função semelhante que usa `wchar_t` faria.
+     A variante de `_bytes_` fornece o tamanho em bytes em vez de elementos. Use-o somente quando o tamanho não puder ser expresso como elementos.  Por exemplo, `char` cadeias de caracteres usarão a variante de `_bytes_` somente se uma função semelhante que usa `wchar_t`.
 
 - `_In_reads_to_ptr_(p)`
 
-     Um ponteiro para uma matriz para a qual a expressão `p` @ no__t-1 @ no__t-2 (ou seja, `p` menos `_Curr_`) é definida pelo padrão de idioma apropriado.  Os elementos anteriores à `p` devem ser válidos em pré-estado.
+     Um ponteiro para uma matriz para a qual a expressão `p` - `_Curr_` (ou seja, `p` menos `_Curr_`) é definido pelo padrão de idioma apropriado.  Os elementos anteriores à `p` devem ser válidos em pré-estado.
 
 - `_In_reads_to_ptr_z_(p)`
 
-     Um ponteiro para uma matriz terminada em nulo para o qual a expressão `p` @ no__t-1 @ no__t-2 (ou seja, `p` menos `_Curr_`) é definida pelo padrão de idioma apropriado.  Os elementos anteriores à `p` devem ser válidos em pré-estado.
+     Um ponteiro para uma matriz terminada em nulo para o qual a expressão `p` - `_Curr_` (ou seja, `p` menos `_Curr_`) é definido pelo padrão de idioma apropriado.  Os elementos anteriores à `p` devem ser válidos em pré-estado.
 
 - `_Out_writes_to_ptr_(p)`
 
-     Um ponteiro para uma matriz para a qual a expressão `p` @ no__t-1 @ no__t-2 (ou seja, `p` menos `_Curr_`) é definida pelo padrão de idioma apropriado.  Os elementos anteriores à `p` não precisam ser válidos em pré-estado e devem ser válidos no pós-Estado.
+     Um ponteiro para uma matriz para a qual a expressão `p` - `_Curr_` (ou seja, `p` menos `_Curr_`) é definido pelo padrão de idioma apropriado.  Os elementos anteriores à `p` não precisam ser válidos em pré-estado e devem ser válidos no pós-Estado.
 
 - `_Out_writes_to_ptr_z_(p)`
 
-     Um ponteiro para uma matriz terminada em nulo para o qual a expressão `p` @ no__t-1 @ no__t-2 (ou seja, `p` menos `_Curr_`) é definida pelo padrão de idioma apropriado.  Os elementos anteriores à `p` não precisam ser válidos em pré-estado e devem ser válidos no pós-Estado.
+     Um ponteiro para uma matriz terminada em nulo para o qual a expressão `p` - `_Curr_` (ou seja, `p` menos `_Curr_`) é definido pelo padrão de idioma apropriado.  Os elementos anteriores à `p` não precisam ser válidos em pré-estado e devem ser válidos no pós-Estado.
 
 ## <a name="optional-pointer-parameters"></a>Parâmetros de ponteiro opcionais
 
-Quando uma anotação de parâmetro de ponteiro inclui `_opt_`, ela indica que o parâmetro pode ser nulo. Caso contrário, a anotação será executada da mesma forma que a versão que não inclui `_opt_`. Aqui está uma lista das variantes `_opt_` das anotações de parâmetro de ponteiro:
+Quando uma anotação de parâmetro de ponteiro inclui `_opt_`, ela indica que o parâmetro pode ser nulo. Caso contrário, a anotação será executada da mesma forma que a versão que não inclui `_opt_`. Aqui está uma lista das variantes de `_opt_` das anotações de parâmetro de ponteiro:
 
 ||||
 |-|-|-|
@@ -288,7 +288,7 @@ Os parâmetros de ponteiro de saída exigem notação especial para desambiguar 
 
    O parâmetro pode ser nulo e, no estado de postagem, o local apontado pode ser nulo.
 
-  Na tabela a seguir, subcadeias de caracteres adicionais são inseridas no nome da anotação para qualificar ainda mais o significado da anotação.  As várias subcadeias de caracteres são `_z`, `_COM_`, `_buffer_`, `_bytebuffer_` e `_to_`.
+  Na tabela a seguir, subcadeias de caracteres adicionais são inseridas no nome da anotação para qualificar ainda mais o significado da anotação.  As várias subcadeias de caracteres são `_z`, `_COM_`, `_buffer_`, `_bytebuffer_`e `_to_`.
 
 > [!IMPORTANT]
 > Se a interface que você está anotando for COM, use a forma COM dessas anotações. Não use as anotações com com qualquer outra interface de tipo.
@@ -313,7 +313,7 @@ Os parâmetros de ponteiro de saída exigem notação especial para desambiguar 
 
    `_COM_Outptr_opt_result_maybenull_`
 
-   O ponteiro retornado tem semântica COM e, portanto, transporta um `_On_failure_` post-Condition que o ponteiro retornado é nulo.
+   O ponteiro retornado tem semântica COM e, portanto, transporta um `_On_failure_` pós-condição que o ponteiro retornado é nulo.
 
 - `_Outptr_result_buffer_(s)`
 
@@ -361,7 +361,7 @@ Os parâmetros de ponteiro de saída exigem notação especial para desambiguar 
 
 ## <a name="output-reference-parameters"></a>Parâmetros de referência de saída
 
-Um uso comum do parâmetro de referência é para parâmetros de saída.  Para parâmetros de referência de saída simples — por exemplo, `int&` — `_Out_` fornece a semântica correta.  No entanto, quando o valor de saída é um ponteiro — por exemplo `int *&` — as anotações de ponteiro equivalentes, como `_Outptr_ int **`, não fornecem a semântica correta.  Para expressar de forma concisa a semântica dos parâmetros de referência de saída para tipos de ponteiro, use estas anotações compostas:
+Um uso comum do parâmetro de referência é para parâmetros de saída.  Para parâmetros de referência de saída simples — por exemplo, `int&`—`_Out_` fornece a semântica correta.  No entanto, quando o valor de saída é um ponteiro — por exemplo `int *&`— as anotações de ponteiro equivalentes, como `_Outptr_ int **` não fornecem a semântica correta.  Para expressar de forma concisa a semântica dos parâmetros de referência de saída para tipos de ponteiro, use estas anotações compostas:
 
 **Anotações e descrições**
 
@@ -423,7 +423,7 @@ Um uso comum do parâmetro de referência é para parâmetros de saída.  Para p
 
 ## <a name="return-values"></a>Valores de Retorno
 
-O valor de retorno de uma função é semelhante a um parâmetro `_Out_`, mas está em um nível diferente de de referência, e você não precisa considerar o conceito do ponteiro para o resultado.  Para as seguintes anotações, o valor de retorno é o objeto anotado — um escalar, um ponteiro para uma struct ou um ponteiro para um buffer. Essas anotações têm a mesma semântica que a anotação `_Out_` correspondente.
+O valor de retorno de uma função é semelhante a um parâmetro `_Out_`, mas está em um nível diferente de de referência, e você não precisa considerar o conceito do ponteiro para o resultado.  Para as seguintes anotações, o valor de retorno é o objeto anotado — um escalar, um ponteiro para uma struct ou um ponteiro para um buffer. Essas anotações têm a mesma semântica que a anotação de `_Out_` correspondente.
 
 |||
 |-|-|
@@ -497,7 +497,7 @@ O valor de retorno de uma função é semelhante a um parâmetro `_Out_`, mas es
      O parâmetro, o campo ou o resultado está no intervalo (inclusive) de `low` a `hi`.  Equivalente a `_Satisfies_(_Curr_ >= low && _Curr_ <= hi)` que é aplicado ao objeto anotado junto com as condições de pré-estado ou pós-Estado apropriadas.
 
     > [!IMPORTANT]
-    > Embora os nomes contenham "in" e "out", a semântica de `_In_` e `_Out_` **não se aplica a** essas anotações.
+    > Embora os nomes contenham "in" e "out", a semântica de `_In_` e `_Out_` **não** se aplicam a essas anotações.
 
 - `_Pre_equal_to_(expr)`
 
@@ -517,7 +517,7 @@ O valor de retorno de uma função é semelhante a um parâmetro `_Out_`, mas es
 
 ## <a name="related-resources"></a>Recursos relacionados
 
-[Blog da equipe de análise de código](http://go.microsoft.com/fwlink/?LinkId=251197)
+[Blog da equipe de análise de código](https://blogs.msdn.microsoft.com/codeanalysis/)
 
 ## <a name="see-also"></a>Consulte também
 

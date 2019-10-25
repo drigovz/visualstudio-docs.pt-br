@@ -7,19 +7,19 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: ccb18a704c2e8a2c185d3751483736631b0bba68
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: eb95e793421ecede6d4583d8d7f4730eb56df1a0
+ms.sourcegitcommit: 58000baf528da220fdf7a999d8c407a4e86c1278
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72448637"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72789790"
 ---
 # <a name="best-practices-and-examples-sal"></a>Práticas recomendadas e exemplos (SAL)
 Aqui estão algumas maneiras de aproveitar ao máximo a SAL (linguagem de anotação de código-fonte) e evitar alguns problemas comuns.
 
 ## <a name="_in_"></a>\_In\_
 
-Se a função deve gravar no elemento, use `_Inout_` em vez de `_In_`. Isso é particularmente relevante em casos de conversão automatizada de macros antigas para SAL. Antes do SAL, muitos programadores usaram macros como comentários — macros que foram nomeadas `IN`, `OUT`, `IN_OUT` ou variantes desses nomes. Embora seja recomendável converter essas macros em SAL, também recomendamos que você tenha cuidado ao convertê-las porque o código pode ter sido alterado desde que o protótipo original foi escrito e a macro antiga pode não refletir mais o que o código faz. Tenha cuidado especialmente com a macro de comentário `OPTIONAL` porque ela é freqüentemente colocada incorretamente — por exemplo, no lado errado de uma vírgula.
+Se a função deve gravar no elemento, use `_Inout_` em vez de `_In_`. Isso é particularmente relevante em casos de conversão automatizada de macros antigas para SAL. Antes do SAL, muitos programadores usaram macros como comentários — macros nomeadas `IN`, `OUT`, `IN_OUT`ou variantes desses nomes. Embora seja recomendável converter essas macros em SAL, também recomendamos que você tenha cuidado ao convertê-las porque o código pode ter sido alterado desde que o protótipo original foi escrito e a macro antiga pode não refletir mais o que o código faz. Tenha cuidado especialmente com a macro de comentário `OPTIONAL` porque ela é freqüentemente colocada incorretamente — por exemplo, no lado errado de uma vírgula.
 
 ```cpp
 
@@ -44,7 +44,7 @@ void Func2(_Inout_ PCHAR p1)
 
 ## <a name="_opt_"></a>\_opt\_
 
-Se o chamador não tiver permissão para passar um ponteiro nulo, use `_In_` ou `_Out_` em vez de `_In_opt_` ou `_Out_opt_`. Isso se aplica mesmo a uma função que verifica seus parâmetros e retorna um erro se ele for nulo quando não deveria ser. Embora ter uma função Verifique seu parâmetro em busca de NULL inesperado e retornar normalmente é uma boa prática de codificação defensiva, isso não significa que a anotação de parâmetro pode ser de um tipo opcional (`_*Xxx*_opt_`).
+Se o chamador não tiver permissão para passar um ponteiro nulo, use `_In_` ou `_Out_` em vez de `_In_opt_` ou `_Out_opt_`. Isso se aplica mesmo a uma função que verifica seus parâmetros e retorna um erro se ele for nulo quando não deveria ser. Embora ter uma função Verifique seu parâmetro para NULL inesperado e retornar normalmente é uma boa prática de codificação defensiva, isso não significa que a anotação de parâmetro pode ser de um tipo opcional (`_*Xxx*_opt_`).
 
 ```cpp
 
@@ -61,11 +61,11 @@ void Func2(_Out_ int *p1)
 }
 ```
 
-## <a name="_pre_defensive_-and-_post_defensive_"></a>\_Pre @ no__t-1defensive @ no__t-2 e \_Post @ no__t-4defensive @ no__t-5
+## <a name="_pre_defensive_-and-_post_defensive_"></a>\_pré\_\_ defensiva e \_postar\_defensiva\_
 
 Se uma função aparecer em um limite de confiança, recomendamos que você use a anotação `_Pre_defensive_`.  O modificador "defensiva" modifica certas anotações para indicar que, no ponto de chamada, a interface deve ser marcada estritamente, mas no corpo da implementação, ela deve assumir que os parâmetros incorretos podem ser passados. Nesse caso, `_In_ _Pre_defensive_` é preferencial em um limite de confiança para indicar que, embora um chamador receba um erro se ele tentar passar NULL, o corpo da função será analisado como se o parâmetro fosse nulo e qualquer tentativa de fazer referência ao ponteiro sem primeiro a verificação de NULL será sinalizada.  Uma anotação `_Post_defensive_` também está disponível, para uso em retornos de chamada, em que a parte confiável é considerada como o chamador e o código não confiável é o código chamado.
 
-## <a name="_out_writes_"></a>\_Out @ no__t-1writes @ no__t-2
+## <a name="_out_writes_"></a>\_\_gravações\_
 
 O exemplo a seguir demonstra um uso indevido comum de `_Out_writes_`.
 
@@ -98,9 +98,9 @@ void Func3(_Out_writes_(size) PSTR pb,
 );
 ```
 
-## <a name="_out_-pstr"></a>\_Out @ no__t-1 PSTR
+## <a name="_out_-pstr"></a>\_out\_ PSTR
 
-O uso de `_Out_ PSTR` quase sempre está errado. Isso é interpretado como tendo um parâmetro de saída que aponta para um buffer de caracteres e é encerrado com NULL.
+O uso de `_Out_ PSTR` está quase sempre errado. Isso é interpretado como tendo um parâmetro de saída que aponta para um buffer de caracteres e é encerrado com NULL.
 
 ```cpp
 
@@ -113,9 +113,9 @@ void Func2(_Out_writes_(n) PSTR wszFileName, size_t n);
 
 Uma anotação como `_In_ PCSTR` é comum e útil. Ele aponta para uma cadeia de caracteres de entrada que tem terminação nula porque a pré-condição de `_In_` permite o reconhecimento de uma cadeia de caracteres terminada em nulo.
 
-## <a name="_in_-wchar-p"></a>\_In @ no__t-1 WCHAR * p
+## <a name="_in_-wchar-p"></a>\_em\_ WCHAR * p
 
-`_In_ WCHAR* p` indica que há um ponteiro de entrada `p` que aponta para um caractere. No entanto, na maioria dos casos, essa provavelmente não é a especificação pretendida. Em vez disso, o que é provavelmente pretendido é a especificação de uma matriz terminada em nulo; para fazer isso, use `_In_ PWSTR`.
+`_In_ WCHAR* p` diz que há um ponteiro de entrada `p` que aponta para um caractere. No entanto, na maioria dos casos, essa provavelmente não é a especificação pretendida. Em vez disso, o que é provavelmente pretendido é a especificação de uma matriz terminada em nulo; para fazer isso, use `_In_ PWSTR`.
 
 ```cpp
 
@@ -143,7 +143,7 @@ BOOL StrEquals2(_In_ PSTR p1, _In_ PSTR p2)
 }
 ```
 
-## <a name="_out_range_"></a>\_Out @ no__t-1Range @ no__t-2
+## <a name="_out_range_"></a>\_out\_intervalo\_
 
 Se o parâmetro for um ponteiro e você quiser expressar o intervalo do valor do elemento que é apontado pelo ponteiro, use `_Deref_out_range_` em vez de `_Out_range_`. No exemplo a seguir, o intervalo de * pcbFilled é expresso, não pcbFilled.
 
@@ -164,9 +164,9 @@ void Func2(
 );
 ```
 
-`_Deref_out_range_(0, cbSize)` não é estritamente necessário para algumas ferramentas porque ela pode ser inferida de `_Out_writes_to_(cbSize,*pcbFilled)`, mas é mostrada aqui para fins de integridade.
+a `_Deref_out_range_(0, cbSize)` não é estritamente necessária para algumas ferramentas porque ela pode ser inferida de `_Out_writes_to_(cbSize,*pcbFilled)`, mas é mostrada aqui para fins de integridade.
 
-## <a name="wrong-context-in-_when_"></a>Contexto incorreto em \_When @ no__t-1
+## <a name="wrong-context-in-_when_"></a>Contexto errado em \_quando\_
 
 Outro erro comum é usar a avaliação de pós-Estado para pré-condições. No exemplo a seguir, `_Requires_lock_held_` é uma pré-condição.
 
@@ -183,20 +183,19 @@ int Func2(_In_ MyData *p, int flag);
 
 A expressão `result` se refere a um valor de pós-Estado que não está disponível em pré-estado.
 
-## <a name="true-in-_success_"></a>TRUE em \_Success @ no__t-1
+## <a name="true-in-_success_"></a>VERDADEIRO em \_êxito\_
 
-Se a função for bem-sucedida quando o valor de retorno for diferente de zero, use `return != 0` como a condição de êxito em vez de `return == TRUE`. Diferente de zero não significa necessariamente a equivalência para o valor real que o compilador fornece para `TRUE`. O parâmetro para `_Success_` é uma expressão e as expressões a seguir são avaliadas como equivalentes: `return != 0`, `return != false`, `return != FALSE` e `return` sem parâmetros ou comparações.
+Se a função for bem-sucedida quando o valor de retorno for diferente de zero, use `return != 0` como a condição de êxito em vez de `return == TRUE`. Diferente de zero não significa necessariamente a equivalência para o valor real que o compilador fornece para `TRUE`. O parâmetro para `_Success_` é uma expressão e as expressões a seguir são avaliadas como equivalentes: `return != 0`, `return != false`, `return != FALSE`e `return` sem parâmetros ou comparações.
 
 ```cpp
-
 // Incorrect
-_Success_(return == TRUE, _Acquires_lock_(*lpCriticalSection))
+_Success_(return == TRUE) _Acquires_lock_(*lpCriticalSection)
 BOOL WINAPI TryEnterCriticalSection(
   _Inout_ LPCRITICAL_SECTION lpCriticalSection
 );
 
 // Correct
-_Success_(return != 0, _Acquires_lock_(*lpCriticalSection))
+_Success_(return != 0) _Acquires_lock_(*lpCriticalSection)
 BOOL WINAPI TryEnterCriticalSection(
   _Inout_ LPCRITICAL_SECTION lpCriticalSection
 );
@@ -204,7 +203,7 @@ BOOL WINAPI TryEnterCriticalSection(
 
 ## <a name="reference-variable"></a>Variável de referência
 
-Para uma variável de referência, a versão anterior de SAL usou o ponteiro implícito como o alvo da anotação e exigia a adição de um `__deref` a anotações que foram anexadas a uma variável de referência. Essa versão usa o próprio objeto e não requer o `_Deref_` adicional.
+Para uma variável de referência, a versão anterior de SAL usou o ponteiro implícito como o alvo da anotação e exigia a adição de um `__deref` a anotações que foram anexadas a uma variável de referência. Essa versão usa o próprio objeto e não requer o `_Deref_`adicional.
 
 ```cpp
 
@@ -234,7 +233,7 @@ _Out_opt_ void *MightReturnNullPtr1();
 _Ret_maybenull_ void *MightReturnNullPtr2();
 ```
 
-Neste exemplo, `_Out_opt_` indica que o ponteiro pode ser nulo como parte da pré-condição. No entanto, as pré-condições não podem ser aplicadas ao valor de retorno. Nesse caso, a anotação correta é `_Ret_maybenull_`.
+Neste exemplo, `_Out_opt_` afirma que o ponteiro pode ser nulo como parte da pré-condição. No entanto, as pré-condições não podem ser aplicadas ao valor de retorno. Nesse caso, a anotação correta é `_Ret_maybenull_`.
 
 ## <a name="see-also"></a>Consulte também
 
