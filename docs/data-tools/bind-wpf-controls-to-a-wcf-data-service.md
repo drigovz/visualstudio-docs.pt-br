@@ -15,12 +15,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 15a34fdc4486a013999a6b53e34117008396c955
-ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
+ms.openlocfilehash: ecc08be8c865cefa9b440d9af61cf9d019865ea0
+ms.sourcegitcommit: bde55773485c9bca50a760ac9e4c919e0a208a51
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72807016"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72924561"
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>Associar controles do WPF a um WCF Data Service
 
@@ -56,7 +56,7 @@ Conhecimento prévio dos conceitos a seguir também é útil, mas não é necess
 
 - Modelos de Dados de Entidade e o ADO.NET Entity Framework. Para obter mais informações, consulte [Entity Framework visão geral](/dotnet/framework/data/adonet/ef/overview).
 
-- Associação de dados do WPF. Para obter mais informações, confira [Visão geral de associação de dados](/dotnet/framework/wpf/data/data-binding-overview).
+- Associação de dados do WPF. Para obter mais informações, confira [Visão geral de associação de dados](/dotnet/desktop-wpf/data/data-binding-overview).
 
 ## <a name="create-the-service-project"></a>Criar o projeto de serviço
 
@@ -301,4 +301,4 @@ Depois de completar este passo a passo, você poderá realizar as seguintes tare
 - [Associar controles do WPF a um conjunto de dados](../data-tools/bind-wpf-controls-to-a-dataset.md)
 - [Visão geral do WCF (.NET Framework)](/dotnet/framework/data/wcf/wcf-data-services-overview)
 - [Visão geral de Entity Framework (.NET Framework)](/dotnet/framework/data/adonet/ef/overview)
-- [Visão geral da ligação de dados (.NET Framework)](/dotnet/framework/wpf/data/data-binding-overview)
+- [Visão geral da ligação de dados (.NET Framework)](/dotnet/desktop-wpf/data/data-binding-overview)
