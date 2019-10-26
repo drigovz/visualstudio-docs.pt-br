@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-ms.openlocfilehash: 79b369fdc4bed2489b997e59215264ebaca03c74
-ms.sourcegitcommit: 3fe6bed9ef8fb1478106645f655c7472009ae43a
-ms.translationtype: HT
+ms.openlocfilehash: 34fcf81b7c7314716144bc77202d7b98525a8e4f
+ms.sourcegitcommit: 4f82de3fb0cfae226aef1abb40c47e63d2036a5c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "64556754"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72919082"
 ---
 # <a name="visual-studio-feedback-options"></a>Opções de comentários do Visual Studio
 
@@ -75,7 +75,7 @@ As versões de pré-lançamento do Visual Studio têm o item de menu **Classific
 Há duas maneiras de nos ajudar a melhorar a documentação:
 
 * Escolha o botão de comentários **Esta página foi útil?** na parte inferior da página. Você pode encontrar esse botão em todas as nossas páginas de documentação.
-* Use sua conta do GitHub para fornecer comentários sobre qualquer página do Visual Studio em [docs.microsoft.com](https://docs.microsoft.com/visualstudio/). Para fazer isso, escolha o botão **Enviar comentários sobre** > **Esta página**, também na parte inferior da página.
+* Use sua conta do GitHub para fornecer comentários sobre qualquer página do Visual Studio em [docs.microsoft.com](/visualstudio/). Para fazer isso, escolha o botão **Enviar comentários sobre** > **Esta página**, também na parte inferior da página.
 
 ## <a name="contact-microsoft-support"></a>Entrar em contato com o suporte da Microsoft
 

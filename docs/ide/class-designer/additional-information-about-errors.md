@@ -28,12 +28,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d2fe684f4b10e3570e96a88c34d1e1c08c7388da
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: de1c6c5ec6c5639cc8a9e036bcc674c407c1ac8f
+ms.sourcegitcommit: 4f82de3fb0cfae226aef1abb40c47e63d2036a5c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72631907"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72919056"
 ---
 # <a name="class-designer-errors"></a>Erros do Designer de Classe
 
@@ -44,7 +44,7 @@ O **Designer de Classe** não controla o local dos arquivos de origem, portanto,
 Você pode obter ajuda com outros erros e avisos nos seguintes recursos:
 
 - [Trabalhar com o código do Visual C++](working-with-visual-cpp-code.md) inclui informações de solução de problemas de como exibir C++ em um diagrama de classe.
-- O [Fórum do Designer de Classe do Visual Studio](http://go.microsoft.com/fwlink/?LinkId=160754) fornece um fórum para perguntas sobre o **Designer de Classe**.
+- O [Fórum do Designer de Classe do Visual Studio](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsclassdesigner) fornece um fórum para perguntas sobre o **Designer de Classe**.
 
 ## <a name="see-also"></a>Consulte também
 

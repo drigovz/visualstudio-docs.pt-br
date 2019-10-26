@@ -7,12 +7,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 69b817af15b782ebd1e281d51855d62b11e8f470
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
-ms.translationtype: HT
+ms.openlocfilehash: 8a42651792848ffd4de9eccb40c2949d113b10b4
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66262948"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911881"
 ---
 # <a name="performance-tools-on-windows-8-and-windows-server-2012-applications"></a>Ferramentas de desempenho em aplicativos do Windows 8 e do Windows Server 2012
 
@@ -72,7 +72,7 @@ Ambas as ferramentas são instaladas com o Visual Studio para uso no computador 
 
 Para analisar aplicativos em dispositivos que não têm o Visual Studio instalado, faça o seguinte:
 
-- Baixe as ferramentas como parte das Ferramentas Remotas para Visual Studio do [site do MSDN](http://go.microsoft.com/fwlink/?LinkID=219549).
+- Baixe as ferramentas como parte das Ferramentas Remotas para Visual Studio do [site do MSDN](https://visualstudio.microsoft.com/#downloads+d-additional-software).
 
 - Copie e execute o programa de instalação de ferramentas do criador de perfil autônomo do seu computador do Visual Studio. Para obter o caminho para as ferramentas de criação de perfil, confira [Especificar o caminho para ferramentas de linha de comando](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Escolha o programa de instalação do sistema operacional (x86/x64) do computador remoto.
 

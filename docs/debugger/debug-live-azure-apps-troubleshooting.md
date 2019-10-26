@@ -11,16 +11,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 27df4c097d829a4d28a77b9b1ad96eb389f4096c
-ms.sourcegitcommit: dc12a7cb66124596089f01d3e939027ae562ede9
+ms.openlocfilehash: dc0d5ce27c3241b89a1baaf540cab4f1f56d24b5
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71962939"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911593"
 ---
 # <a name="troubleshooting-and-known-issues-for-snapshot-debugging-in-visual-studio"></a>Solução de problemas e problemas conhecidos da depuração de instantâneos no Visual Studio
 
-Se as etapas descritas neste artigo não resolverem o problema, procure o problema na [comunidade de desenvolvedores](https://developercommunity.visualstudio.com/spaces/8/index.html) ou relate um novo problema escolhendo **ajuda** > **enviar comentários** > **relate um problema** no Visual Studio.
+Se as etapas descritas neste artigo não resolverem o problema, procure o problema na [comunidade de desenvolvedores](https://developercommunity.visualstudio.com/spaces/8/index.html) ou informe um novo problema escolhendo **ajuda** > **enviar comentários** > **relatar um problema** no Visual Studio.
 
 ## <a name="issue-attach-snapshot-debugger-encounters-an-http-status-code-error"></a>Problema: "Attach Depurador de Instantâneos" encontra um erro de código de status HTTP
 
@@ -34,7 +34,7 @@ Esse erro indica que a chamada REST emitida pelo Visual Studio para o Azure usa 
 
 Siga estas etapas:
 
-* Certifique-se de que sua conta de personalização do Visual Studio tenha permissões para a assinatura do Azure e o recurso ao qual você está anexando. Uma maneira rápida de determinar isso é verificar se o recurso está disponível na caixa de diálogo de **Debug** > **Attach depurador de instantâneos...**  > **recurso do Azure** > **selecione existente**ou no Cloud Explorer.
+* Certifique-se de que sua conta de personalização do Visual Studio tenha permissões para a assinatura do Azure e o recurso ao qual você está anexando. Uma maneira rápida de determinar isso é verificar se o recurso está disponível na caixa de diálogo em **depurar** > **anexar depurador de instantâneos...**  > **recurso do Azure** > **selecione existente**ou no Cloud Explorer.
 * Se esse erro continuar a persistir, use um dos canais de comentários descritos no início deste artigo.
 
 ### <a name="403-forbidden"></a>(403) proibido
@@ -43,7 +43,7 @@ Esse erro indica que a permissão foi negada. Isso pode ser causado por muitos p
 
 Siga estas etapas:
 
-* Verifique se sua conta do Visual Studio tem uma assinatura válida do Azure com as permissões de RBAC (controle de acesso baseado em função) necessárias para o recurso. Para AppService, verifique se você tem permissões para [consultar](https://docs.microsoft.com/rest/api/appservice/appserviceplans/get) o plano do serviço de aplicativo que hospeda seu aplicativo.
+* Verifique se sua conta do Visual Studio tem uma assinatura válida do Azure com as permissões de RBAC (controle de acesso baseado em função) necessárias para o recurso. Para AppService, verifique se você tem permissões para [consultar](/rest/api/appservice/appserviceplans/get) o plano do serviço de aplicativo que hospeda seu aplicativo.
 * Verifique se o carimbo de data/hora do computador cliente está correto e atualizado. Os servidores com carimbos de data/hora em mais de 15 minutos do carimbo de hora da solicitação geralmente produzem esse erro.
 * Se esse erro continuar a persistir, use um dos canais de comentários descritos no início deste artigo.
 
@@ -54,8 +54,8 @@ Esse erro indica que o site não pôde ser encontrado no servidor.
 Siga estas etapas:
 
 * Verifique se você tem um site implantado e em execução no recurso de serviço de aplicativo ao qual você está anexando.
-* Verifique se o site está disponível em https://@no__t -0resource\>.azurewebsites.net
-* Verifique se o aplicativo Web personalizado em execução correta não retorna um código de status 404 quando acessado em https://@no__t -0resource\>.azurewebsites.net
+* Verifique se o site está disponível em https://\<recurso\>. azurewebsites.net
+* Verifique se o aplicativo Web personalizado em execução correta não retorna um código de status 404 quando acessado em https://\<recurso\>. azurewebsites.net
 * Se esse erro continuar a persistir, use um dos canais de comentários descritos no início deste artigo.
 
 ### <a name="406-not-acceptable"></a>(406) não aceitável
@@ -64,7 +64,7 @@ Esse erro indica que o servidor não pode responder ao tipo definido no cabeçal
 
 Siga estas etapas:
 
-* Verifique se seu site está disponível em https://@no__t -0resource\>.azurewebsites.net
+* Verifique se seu site está disponível em https://\<recurso\>. azurewebsites.net
 * Verifique se o site não foi migrado para novas instâncias. Depurador de Instantâneos usa a noção de ARRAffinity para rotear solicitações para instâncias específicas que podem produzir esse erro intermitentemente.
 * Se esse erro continuar a persistir, use um dos canais de comentários descritos no início deste artigo.
 
@@ -88,7 +88,7 @@ Siga estas etapas:
 
 ### <a name="500-internal-server-error"></a>(500) erro interno do servidor
 
-Esse erro indica que o site está completamente inativo ou o servidor não pode manipular a solicitação. Depurador de Instantâneos só funciona em aplicativos em execução. [Application Insights depurador de instantâneos](https://docs.microsoft.com/azure/azure-monitor/app/snapshot-debugger) fornece instantâneos sobre exceções e pode ser a melhor ferramenta para suas necessidades.
+Esse erro indica que o site está completamente inativo ou o servidor não pode manipular a solicitação. Depurador de Instantâneos só funciona em aplicativos em execução. [Application Insights depurador de instantâneos](/azure/azure-monitor/app/snapshot-debugger) fornece instantâneos sobre exceções e pode ser a melhor ferramenta para suas necessidades.
 
 ### <a name="502-bad-gateway"></a>(502) gateway inadequado
 
@@ -99,17 +99,17 @@ Siga estas etapas:
 * Tente aguardar alguns minutos antes de anexar o Depurador de Instantâneos novamente.
 * Se esse erro continuar a persistir, use um dos canais de comentários descritos no início deste artigo.
 
-## <a name="issue-snappoint-does-not-turn-on"></a>Problema: Snappoint não ativa
+## <a name="issue-snappoint-does-not-turn-on"></a>Problema: o snappoint não é ativado
 
-Se você vir um ícone de aviso ![ícone de aviso de snappoint](../debugger/media/snapshot-troubleshooting-snappoint-warning-icon.png "ícone de aviso de snappoint") com seu snappoint em vez de ver o ícone de snappoint regular, significa que o snappoint não está ativado.
+Se você vir um ícone de aviso ![Snappoint ícone de aviso](../debugger/media/snapshot-troubleshooting-snappoint-warning-icon.png "Ícone de aviso do Snappoint") com seu Snappoint em vez do ícone normal de Snappoint, o Snappoint não será ativado.
 
-![O snappoint não é ativado](../debugger/media/snapshot-troubleshooting-dont-turn-on.png "O snappoint não é ativado")
+![Snappoint não ativa](../debugger/media/snapshot-troubleshooting-dont-turn-on.png "Snappoint não ativa")
 
 Siga estas etapas:
 
 1. Verifique se você tem a mesma versão do código-fonte que foi usada para criar e implantar seu aplicativo. Verifique se que você está carregando os símbolos corretos para sua implantação. Para isso, exiba a janela **Módulos** durante a depuração de instantâneos e verifique se a coluna Arquivo de Símbolos mostra um arquivo .pdb carregado para o módulo que você está depurando. O Depurador de Instantâneos tentará baixar automaticamente e usar os símbolos em sua implantação.
 
-## <a name="issue-symbols-do-not-load-when-i-open-a-snapshot"></a>Problema: Os símbolos não são carregados quando abro um instantâneo
+## <a name="issue-symbols-do-not-load-when-i-open-a-snapshot"></a>Problema: os símbolos não são carregados quando eu abro um instantâneo
 
 Se você vir a janela a seguir, significa que os símbolos não foram carregados.
 
@@ -125,7 +125,7 @@ Siga estas etapas:
 
 - Como alternativa, se sua organização usa um servidor de símbolos ou deixa os símbolos em um caminho diferente, use as configurações de símbolo para carregar os símbolos corretos para sua implantação.
 
-## <a name="issue-i-cannot-see-the-attach-snapshot-debugger-option-in-the-cloud-explorer"></a>Problema: Não consigo ver a opção "Attach Depurador de Instantâneos" no Cloud Explorer
+## <a name="issue-i-cannot-see-the-attach-snapshot-debugger-option-in-the-cloud-explorer"></a>Problema: não consigo ver a opção "Anexar Depurador de Instantâneos" no Cloud Explorer
 
 Siga estas etapas:
 
@@ -144,24 +144,24 @@ Siga estas etapas:
   - Serviços de Kubernetes do Azure – Aplicativos ASP.NET Core em execução no .NET Core 2.2 ou posterior no Ubuntu 18.04.
 ::: moniker-end
 
-## <a name="issue-i-only-see-throttled-snapshots-in-the-diagnostic-tools"></a>Problema: Vejo apenas instantâneos restritos no Ferramentas de Diagnóstico
+## <a name="issue-i-only-see-throttled-snapshots-in-the-diagnostic-tools"></a>Problema: vejo apenas instantâneos limitados nas Ferramentas de Diagnóstico
 
-![Snappoint limitado](../debugger/media/snapshot-troubleshooting-throttled-snapshots.png "Snappoint limitado")
+![Snappoint limitada](../debugger/media/snapshot-troubleshooting-throttled-snapshots.png "Snappoint limitada")
 
 Siga estas etapas:
 
 - Instantâneos ocupam pouca memória, mas têm um custo de confirmação. Se o Depurador de Instantâneos detectar que o servidor está sob carga pesada de memória, ele não fará a captura de instantâneos. Para excluir instantâneos já capturados, interrompa a sessão do Depurador de Instantâneos e tente novamente.
 
 ::: moniker range=">= vs-2019"
-## <a name="issue-snapshot-debugging-with-multiple-versions-of-the-visual-studio-gives-me-errors"></a>Problema: A depuração de instantâneo com várias versões do Visual Studio me dá erros
+## <a name="issue-snapshot-debugging-with-multiple-versions-of-the-visual-studio-gives-me-errors"></a>Problema: a depuração de instantâneos com várias versões do Visual Studio apresenta erros
 
 O Visual Studio 2019 requer uma versão mais recente do Depurador de Instantâneos extensão de site em seu serviço de Azure App.  Esta versão não é compatível com a versão mais antiga do Depurador de Instantâneos a extensão de site usada pelo Visual Studio 2017.  Você receberá o erro a seguir se tentar anexar o Depurador de Instantâneos no Visual Studio 2019 a um serviço Azure App que foi previamente depurado pelo Depurador de Instantâneos no Visual Studio 2017:
 
-![Incompatível depurador de instantâneos extensão do site do visual studio 2019](../debugger/media/snapshot-troubleshooting-incompatible-vs2019.png "incompatível depurador de instantâneos extensão do site Visual Studio 2019")
+![Depurador de Instantâneos de extensão de site incompatível no Visual Studio 2019](../debugger/media/snapshot-troubleshooting-incompatible-vs2019.png "Depurador de Instantâneos de extensão de site incompatível no Visual Studio 2019")
 
 Por outro lado, se você usar o Visual Studio 2017 para anexar o Depurador de Instantâneos a um serviço de Azure App que foi previamente depurado pelo Depurador de Instantâneos no Visual Studio 2019, você obterá o seguinte erro:
 
-![Incompatível depurador de instantâneos extensão do site do visual studio 2017](../debugger/media/snapshot-troubleshooting-incompatible-vs2017.png "incompatível depurador de instantâneos extensão do site Visual Studio 2017")
+![Depurador de Instantâneos de extensão de site incompatível no Visual Studio 2017](../debugger/media/snapshot-troubleshooting-incompatible-vs2017.png "Depurador de Instantâneos de extensão de site incompatível no Visual Studio 2017")
 
 Para corrigir esse problema, exclua as seguintes configurações de aplicativo no portal do Azure e anexe o Depurador de Instantâneos novamente:
 
@@ -169,7 +169,7 @@ Para corrigir esse problema, exclua as seguintes configurações de aplicativo n
 - SNAPSHOTDEBUGGER_EXTENSION_VERSION
 ::: moniker-end
 
-## <a name="issue-i-am-having-problems-snapshot-debugging-and-i-need-to-enable-more-logging"></a>Problema: Estou tendo problemas de depuração de instantâneo e preciso habilitar mais logs
+## <a name="issue-i-am-having-problems-snapshot-debugging-and-i-need-to-enable-more-logging"></a>Problema: estou com problemas para depurar instantâneos e preciso habilitar mais registro em log
 
 ### <a name="enable-agent-logs"></a>Habilitar logs de agente
 
@@ -179,9 +179,9 @@ Logs de agente podem ser encontrados nos seguintes locais:
 
 - Serviços de Aplicativos:
   - Navegue até o site do Kudu do Serviço de Aplicativo (ou seja, seu serviçodeaplicativo.**scm**.azurewebsites.net) e vá até o Console de Depuração.
-  - Os logs de agente são armazenados no seguinte diretório:  D:\home\LogFiles\SiteExtensions\DiagnosticsAgentLogs\
+  - Os logs de agente são armazenados no seguinte diretório: D:\home\LogFiles\SiteExtensions\DiagnosticsAgentLogs\
 - VM/VMSS:
-  - Entre em sua VM, os logs de agente são armazenados da seguinte maneira:  C:\WindowsAzure\Logs\Plugins\Microsoft.Azure.Diagnostics.IaaSDiagnostics\<Version>\SnapshotDebuggerAgent_*.txt
+  - Entre na sua VM; os logs de agente estão armazenados da seguinte maneira: C:\WindowsAzure\Logs\Plugins\Microsoft.Azure.Diagnostics.IaaSDiagnostics\<Version>\SnapshotDebuggerAgent_*.txt
 - AKS
   - Navegue até o diretório a seguir: /tmp/diag/AgentLogs/*
 
@@ -193,7 +193,7 @@ Logs de instrumentação podem ser encontrados nos seguintes locais:
   - O log de erros é enviado automaticamente para o D:\Home\LogFiles\eventlog.xml, os eventos são marcados com `<Provider Name="Instrumentation Engine" />` ou "pontos de interrupção de produção"
 - VM/VMSS:
   - Entre em sua VM e abra o Visualizador de Eventos.
-  - Abra o seguinte modo de exibição: *Logs do Windows > aplicativo*.
+  - Abra a exibição a seguir: *Logs do Windows > Aplicativo*.
   - *Filtrar Log Atual* por *Origem do Evento* usando *Pontos de Interrupção de Produção* ou *Mecanismo de Instrumentação*.
 - AKS
   - Logs de mecanismo de instrumentação em /tmp/diag/log.txt /tmp/diag/log.txt (defina MicrosoftInstrumentationEngine_FileLogPath no DockerFile)

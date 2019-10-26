@@ -9,12 +9,12 @@ manager: jillfra
 ms.technology: vs-ide-debug
 ms.workload:
 - uwp
-ms.openlocfilehash: c9a89155b81b88f46f4849ce8d739772fd6760fe
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
-ms.translationtype: MT
+ms.openlocfilehash: a9e111f904f0c017dbbe4487401e8e3c363931ac
+ms.sourcegitcommit: 4f82de3fb0cfae226aef1abb40c47e63d2036a5c
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72451181"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72919211"
 ---
 # <a name="debug-xaml-in-blend"></a>Depurar XAML no Blend
 
@@ -37,7 +37,7 @@ Algumas causas comuns de erros de sintaxe XAML são:
 
 - Um elemento XAML está em um local onde não é permitido.
 
-Para obter mais informações sobre sintaxe XAML comum, confira [Guia de sintaxe XAML básica](http://go.microsoft.com/fwlink/?LinkId=329942).
+Para obter mais informações sobre sintaxe XAML comum, confira [Guia de sintaxe XAML básica](/previous-versions/windows/apps/hh700351(v=win.10)).
 
 Você também pode identificar e resolver erros de sintaxe de código subjacente simples, erros de compilação e erros em tempo de execução no Blend. No entanto, os erros de code-behind podem ser mais fáceis de identificar e resolver no Visual Studio.
 
@@ -119,8 +119,8 @@ Quando são detectados erros de XAML, a superfície de design exibe um alerta in
 
 Você pode abrir projetos de Blend no Visual Studio para depurar com mais facilidade o código em seu aplicativo. Para abrir um projeto do Blend no Visual Studio, clique com o botão direito do mouse no projeto no painel **projetos** e clique em **Editar no Visual Studio**. Depois de concluir a sessão de depuração no Visual Studio, pressione Ctrl + Shift + S para salvar todas as suas alterações e, em seguida, volte para o Blend. Você será solicitado a recarregar o projeto. Clique em **Sim para todos** para continuar trabalhando no Blend.
 
-Para obter mais informações sobre como depurar seu aplicativo, consulte [depurar aplicativos UWP no Visual Studio](http://go.microsoft.com/fwlink/?LinkId=329944).
+Para obter mais informações sobre como depurar seu aplicativo, consulte [depurar aplicativos UWP no Visual Studio](/visualstudio/debugger/debug-store-apps-in-visual-studio?view=vs-2015&redirectedfrom=MSDN).
 
 ## <a name="get-help"></a>Obter ajuda
 
-Se precisar de mais ajuda para depurar seu aplicativo de mistura, você poderá pesquisar os [fóruns da comunidade de aplicativos UWP](http://go.microsoft.com/fwlink/?LinkId=280308) em busca de postagens relacionadas ao seu problema ou postar uma pergunta.
+Se precisar de mais ajuda para depurar seu aplicativo de mistura, você poderá pesquisar os [fóruns da comunidade de aplicativos UWP](https://social.msdn.microsoft.com/Forums/windowsapps/home?category=windowsapps) em busca de postagens relacionadas ao seu problema ou postar uma pergunta.

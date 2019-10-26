@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9fe890d5a2c88ea9d4d35a6bd01f6012d97e6ce0
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: d5c4e8f39ff77779985536e53d98ddc2785b109b
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72735545"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911498"
 ---
 # <a name="graphics-event-list"></a>Lista de eventos do gráfico
 Use a lista de eventos gráficos no Analisador de Gráficos do Visual Studio para explorar os eventos do Direct3D que foram registrados durante a renderização de um quadro de seu jogo ou aplicativo.
@@ -88,7 +88,7 @@ Use a lista de eventos gráficos no Analisador de Gráficos do Visual Studio par
 ### <a name="user-defined-events-in-direct3d-11-and-earlier"></a>Eventos definidos pelo usuário no Direct3D 11 e anteriores
  Para criar grupos e marcadores no Direct3D 11 ou anterior, use as APIs descritas nesta seção. A tabela a seguir resume as APIs que você pode usar para versões diferentes do Direct3D 11 e versões anteriores do Direct3D.
 
-|Descrição da API|[ID3D11DeviceContext2](/windows/desktop/api/d3d11_2/nn-d3d11_2-id3d11devicecontext2) (Direct3D 11.2)|[ID3DUserDefinedAnnotation](http://go.microsoft.com/fwlink/p/?LinkID=250967) (Direct3D 11,1)|Família de API D3DPerf_ (Direct3D 11,0 e anterior)|
+|Descrição da API|[ID3D11DeviceContext2](/windows/desktop/api/d3d11_2/nn-d3d11_2-id3d11devicecontext2) (Direct3D 11.2)|[ID3DUserDefinedAnnotation](/windows/win32/api/d3d11_1/nn-d3d11_1-id3duserdefinedannotation) (Direct3D 11,1)|Família de API D3DPerf_ (Direct3D 11,0 e anterior)|
 |---------------------| - | - | - |
 |Iniciar um grupo de eventos|`BeginEventInt`|`BeginEvent`|`D3DPerf_BeginEvent`|
 |Terminar um grupo de eventos|`EndEventInt`|`EndEvent`|`D3DPerf_EndEvent`|
@@ -99,7 +99,7 @@ Use a lista de eventos gráficos no Analisador de Gráficos do Visual Studio par
 <!-- VERSIONLESS -->
 <a name="resource-history"></a>
 ## <a name="resource-history"></a>Histórico de recursos
-O Visual Studio 2017 e superior contêm a janela **histórico de recursos** .  Selecionar o ícone de inspeção ![watch ícone ](media/gfx_watch.png) ao lado de uma entrada na janela **lista de eventos** abrirá a janela **histórico de recursos** mostrada abaixo:
+O Visual Studio 2017 e superior contêm a janela **histórico de recursos** .  Selecionar o ícone de inspeção ![ícone de inspeção](media/gfx_watch.png) ao lado de uma entrada na janela **lista de eventos** abrirá a janela **histórico de recursos** mostrada abaixo:
 
 ![Histórico de recursos](media/gfx_diag_resource_history.png)
 
@@ -109,7 +109,7 @@ Esta janela permite que você exiba o histórico do item selecionado na lista de
 |-----------| - |
 | **Tipo** | Mostra o tipo da entrada, normalmente *criar*, *ler* e *gravar*. |
 | **Exibir** | Mostra uma miniatura do recurso naquele momento no tempo.  Clique duas vezes na miniatura para abrir uma exibição de detalhes do recurso nesse momento. |
-| **Event** | Mostra a chamada de método que ocorreu, que gerou o evento.  Qualquer histórico adicional em itens individuais pode ser exibido selecionando o ícone de inspeção ![watch ícone ](media/gfx_watch.png) na linha apropriada.  Além disso, qualquer item desenhado em texto azul, como `m_commandList` na captura de tela acima, pode ser selecionado para obter mais detalhes. |
+| **Event** | Mostra a chamada de método que ocorreu, que gerou o evento.  Qualquer histórico adicional em itens individuais pode ser exibido selecionando o ícone de inspeção ![ícone de inspeção](media/gfx_watch.png) na linha apropriada.  Além disso, qualquer item desenhado em texto azul, como `m_commandList` na captura de tela acima, pode ser selecionado para obter mais detalhes. |
 
 <!-- /VERSIONLESS -->
 

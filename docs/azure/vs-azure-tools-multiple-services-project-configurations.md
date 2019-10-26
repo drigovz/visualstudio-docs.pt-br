@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
-ms.openlocfilehash: 5314e92065cb29691aca75d424a331d10284a558
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 7b9df8c5609c92a6b6631d1ed9fdda8d65e9b605
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71253427"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911803"
 ---
 # <a name="configuring-your-azure-project-in-visual-studio-to-use-multiple-service-configurations"></a>Configurando seu projeto do Azure no Visual Studio para usar várias configurações de serviço
 
@@ -55,7 +55,7 @@ Por padrão, o diagnóstico é habilitado para a função web. A conta de armaze
 
 ## <a name="settings-page"></a>Página Configurações
 
-Na página **Configurações**, você pode adicionar as configurações a uma configuração como pares nome-valor. O código em execução na função pode ler os valores de suas definições de configuração em tempo de execução usando classes fornecidas pela [biblioteca gerenciada do Azure](http://go.microsoft.com/fwlink?LinkID=171026), especificamente, o método [GetConfigurationSettingValue](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleenvironment.getconfigurationsettingvalue.aspx) .
+Na página **Configurações**, você pode adicionar as configurações a uma configuração como pares nome-valor. O código em execução na função pode ler os valores de suas definições de configuração em tempo de execução usando classes fornecidas pela [biblioteca gerenciada do Azure](/previous-versions/azure/dn602775(v=azure.11)), especificamente, o método [GetConfigurationSettingValue](/previous-versions/azure/reference/ee772857(v=azure.100)) .
 
 ### <a name="configuring-a-connection-string-for-a-storage-account"></a>Configurando uma cadeia de conexão para uma conta de armazenamento
 
@@ -95,7 +95,7 @@ Você pode usar a página de propriedades **Armazenamento Local** para reservar 
 
 ## <a name="certificates-page"></a>Página Certificados
 
-A página de propriedades **Certificados** adiciona informações sobre seus certificados para a configuração do serviço. Observe que os certificados não são fornecidos com o serviço; você deve carregá-los separadamente no Azure por meio do [portal do Azure](http://portal.azure.com).
+A página de propriedades **Certificados** adiciona informações sobre seus certificados para a configuração do serviço. Observe que os certificados não são fornecidos com o serviço; você deve carregá-los separadamente no Azure por meio do [portal do Azure](https://portal.azure.com).
 
 Adicionar um certificado aqui adiciona informações sobre seus certificados para a configuração do serviço. Os certificados não são fornecidos com o serviço; você deve carregá-los separadamente por meio do Portal do Azure.
 

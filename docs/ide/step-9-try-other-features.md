@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e5af132efde0c1a49e5404fa602363aab0554e6f
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: 07c0a3e24ac089bf29501dfd4e101baef73318fb
+ms.sourcegitcommit: 4f82de3fb0cfae226aef1abb40c47e63d2036a5c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72572472"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72919133"
 ---
 # <a name="step-9-try-other-features"></a>Etapa 9: Experimentar outros recursos
 Para aprender mais, tente alterar os ícones e as cores, adicionar um temporizador de jogo e adicionar sons. Para tornar o jogo mais desafiador, tente aumentar o tabuleiro e ajustar o temporizador.
@@ -37,7 +37,7 @@ Para baixar uma versão completa do exemplo, veja [Complete Matching Game tutori
 - Adicione um som para quando o jogador encontrar um par, outro som para quando o jogador selecionar dois ícones que são diferentes e um terceiro som para quando o programa ocultar os ícones novamente.
 
     > [!TIP]
-    > Para reproduzir sons, você pode usar o namespace <xref:System.Media>. Veja [Reproduzir sons no aplicativo Windows Forms (C#)](http://youtu.be/qOh4ooHg1UU) ou [Como reproduzir áudio no Visual Basic](http://youtu.be/-4oPDeQrtMs) para obter mais informações.
+    > Para reproduzir sons, você pode usar o namespace <xref:System.Media>. Veja [Reproduzir sons no aplicativo Windows Forms (C#)](https://www.youtube.com/watch?v=qOh4ooHg1UU&feature=youtu.be) ou [Como reproduzir áudio no Visual Basic](https://www.youtube.com/watch?v=-4oPDeQrtMs&feature=youtu.be) para obter mais informações.
 
 - Torne o jogo mais difícil aumentando o tamanho do tabuleiro.
 

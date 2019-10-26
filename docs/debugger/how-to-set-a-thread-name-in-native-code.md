@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1f9df52bee88722006c21c28e88a2e32113942e4
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 1e719563c831c50cc325d70d0de431f4be1bf514
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72732754"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911422"
 ---
 # <a name="how-to-set-a-thread-name-in-native-code"></a>Como definir um nome de thread em código nativo
 A nomeação de thread é possível em qualquer edição do Visual Studio. A nomenclatura de threads é útil para identificar threads de interesse na janela **threads** durante a depuração de um processo em execução. Ter threads com nomes reconhecidos também pode ser útil ao executar a depuração de post-mortem por meio da inspeção de despejo de memória e ao analisar capturas de desempenho usando várias ferramentas.
@@ -37,7 +37,7 @@ Vale a pena observar que _ambas as_ abordagens podem ser usadas juntas, se desej
 Benefícios:
 * Os nomes de thread são visíveis durante a depuração no Visual Studio, independentemente de o depurador ter sido anexado ou não ao processo no momento em que SetThreadDescription é invocado.
 * Os nomes de thread são visíveis ao executar a depuração de post-mortem carregando um despejo de memória no Visual Studio.
-* Os nomes de thread também são visíveis ao usar outras ferramentas, como o depurador do [windbg](https://docs.microsoft.com/windows-hardware/drivers/debugger/debugger-download-tools) e o analisador de desempenho do [analisador de desempenho do Windows](https://docs.microsoft.com/windows-hardware/test/wpt/windows-performance-analyzer) .
+* Os nomes de thread também são visíveis ao usar outras ferramentas, como o depurador do [windbg](/windows-hardware/drivers/debugger/debugger-download-tools) e o analisador de desempenho do [analisador de desempenho do Windows](/windows-hardware/test/wpt/windows-performance-analyzer) .
 
 Restrições:
 * Os nomes de thread só são visíveis no Visual Studio 2017 versão 15,6 e versões posteriores.

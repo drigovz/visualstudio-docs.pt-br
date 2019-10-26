@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b908e4fe9ed0087abaf5f1390bb8faf5cc12bdaa
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 27e551132e66ef0cb380b56441d19b1436d19df2
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72737569"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911532"
 ---
 # <a name="error-the-microsoft-visual-studio-remote-debugging-monitor-msvsmonexe-does-not-appear-to-be-running-on-the-remote-computer"></a>Erro: o Monitor de Depuração Remota do Microsoft Visual Studio (MSVSMON.EXE) parece não estar sendo executado no computador remoto.
 Essa mensagem de erro significa que o Visual Studio não pôde localizar a instância correta do Visual Studio Monitor de Depuração Remota no computador remoto. O Monitor de Depuração Remota do Visual Studio deve ser instalado para que a depuração remota funcione. Para obter informações sobre como baixar e configurar o depurador remoto, consulte [depuração remota](../debugger/remote-debugging.md).
@@ -41,7 +41,7 @@ Essa mensagem de erro significa que o Visual Studio não pôde localizar a inst�
  Tente [executar o ping](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee624059(v=ws.10)) no computador remoto. Se ele não responder ao ping, as ferramentas remotas não poderão se conectar. Tente reinicializar o computador remoto e, caso contrário, verifique se ele está configurado corretamente na rede.
 
 ## <a name="the-version-of-the-remote-debugger-doesnt-match-the-version-of-visual-studio"></a>A versão do depurador remoto não corresponde à versão do Visual Studio
- A versão do Visual Studio que você está executando localmente precisa corresponder à versão do monitor de depuração remota em execução no computador remoto. Para corrigir isso, baixe e instale a versão correspondente do monitor de depuração remota. Vá para o [centro de download](http://www.microsoft.com/en-us/download) para encontrar a versão correta do depurador remoto.
+ A versão do Visual Studio que você está executando localmente precisa corresponder à versão do monitor de depuração remota em execução no computador remoto. Para corrigir isso, baixe e instale a versão correspondente do monitor de depuração remota. Vá para o [centro de download](https://www.microsoft.com/download) para encontrar a versão correta do depurador remoto.
 
 ## <a name="the-local-and-remote-machines-have-different-authentication-modes"></a>As máquinas locais e remotas têm modos de autenticação diferentes
  Os computadores locais e remotos precisam usar o mesmo modo de autenticação. Para corrigir isso, verifique se ambos os computadores estão usando o mesmo modo de autenticação. Para obter mais informações sobre modos de autenticação, consulte [visão geral da autenticação do Windows](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831472(v=ws.11)).
@@ -72,7 +72,7 @@ Essa mensagem de erro significa que o Visual Studio não pôde localizar a inst�
 ## <a name="more-help"></a>Mais ajuda
  Para obter mais ajuda do depurador remoto, incluindo opções de linha de comando, clique em **ajuda > uso** na janela do depurador remoto. Se você não o tiver aberto, poderá ver a página da Web copiando a linha a seguir para uma janela do **Explorador de arquivos** . (Você precisa substituir o diretório de instalação do \<Visual Studio > pelo local da instalação do Visual Studio.)
 
- *diretório de instalação do res://\<Visual Studio >* \ COMMON7 \ IDE \ Remote %2 0 depurador \ x64 \ msvsmon. exe/help. htm
+ res:// *\<diretório de instalação do Visual Studio >* \ COMMON7 \ IDE \ Remote %2 0 depurador \ x64 \ msvsmon. exe/help. htm
 
 ## <a name="see-also"></a>Consulte também
 - [Erros e solução de problemas de depuração remota](../debugger/remote-debugging-errors-and-troubleshooting.md)
