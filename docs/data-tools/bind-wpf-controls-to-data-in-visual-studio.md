@@ -16,18 +16,18 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: fc954fe372ccd571151ab6ea09e9c1e3db96206a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ee858c7c17798f327d323f632d4cb9e8a77b6712
+ms.sourcegitcommit: bde55773485c9bca50a760ac9e4c919e0a208a51
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648767"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72924534"
 ---
 # <a name="bind-wpf-controls-to-data-in-visual-studio"></a>Associar controles WPF a dados no Visual Studio
 
 É possível exibir dados para usuários do aplicativo associando-se dados a controles [!INCLUDE[TLA#tla_titlewinclient](../data-tools/includes/tlasharptla_titlewinclient_md.md)]. Para criar esses controles associados a dados, você pode arrastar itens da janela **fontes de dados** para o [!INCLUDE[wpfdesigner_current_short](../data-tools/includes/wpfdesigner_current_short_md.md)] no Visual Studio. Este tópico descreve algumas das tarefas, ferramentas e classes mais comuns que é possível usar para criar aplicativos [!INCLUDE[TLA#tla_titlewinclient](../data-tools/includes/tlasharptla_titlewinclient_md.md)] de associação de dados.
 
-Para obter informações gerais sobre como criar controles vinculados a dados no Visual Studio, consulte [associar controles a dados no Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md). Para obter mais informações sobre vinculação de dados [!INCLUDE[TLA#tla_titlewinclient](../data-tools/includes/tlasharptla_titlewinclient_md.md)], confira [Visão geral de vinculação de dados](/dotnet/framework/wpf/data/data-binding-overview).
+Para obter informações gerais sobre como criar controles vinculados a dados no Visual Studio, consulte [associar controles a dados no Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md). Para obter mais informações sobre vinculação de dados [!INCLUDE[TLA#tla_titlewinclient](../data-tools/includes/tlasharptla_titlewinclient_md.md)], confira [Visão geral de vinculação de dados](/dotnet/desktop-wpf/data/data-binding-overview).
 
 ## <a name="tasks-involved-in-binding-wpf-controls-to-data"></a>Tarefas envolvidas na associação de controles WPF a dados
 
