@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: ca8aaf0af2ad7374137752783b242a40e94f706c
-ms.sourcegitcommit: 2bbcba305fd0f8800fd3d9aa16f7647ee27f3a4b
-ms.translationtype: HT
+ms.openlocfilehash: 4e84704d4ca37dd9e36da3838b5b1b23f068568c
+ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/17/2019
-ms.locfileid: "68300542"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72888576"
 ---
 # <a name="update-visual-studio-while-on-a-servicing-baseline"></a>Atualizar o Visual Studio enquanto estiver em uma linha de base de manutenção
 
@@ -28,7 +28,7 @@ Atualizamos o Visual Studio com frequência durante seu ciclo de vida de produto
 
 Os administradores do Enterprise podem optar por manter seus clientes em uma linha de base de manutenção. Uma linha de base de manutenção é compatível com as atualizações de manutenção por um ano após o lançamento da próxima linha de base de manutenção.
 
-A opção de linha de base de manutenção proporciona aos desenvolvedores e administradores maior flexibilidade na adoção de novos recursos, correções de bug ou componentes incluídos nas novas atualizações secundárias. A primeira linha de base de manutenção é a 16.0.x. Para saber mais, confira [Opções de suporte para clientes empresariais e profissionais](https://docs.microsoft.com/visualstudio/releases/2019/servicing#support-options-for-enterprise-and-professional-customers).
+A opção de linha de base de manutenção proporciona aos desenvolvedores e administradores maior flexibilidade na adoção de novos recursos, correções de bug ou componentes incluídos nas novas atualizações secundárias. A primeira linha de base de manutenção é a 16.0.x. Para saber mais, confira [Opções de suporte para clientes empresariais e profissionais](/visualstudio/releases/2019/servicing#support-options-for-enterprise-and-professional-customers).
 
 ## <a name="how-to-get-onto-a-servicing-baseline"></a>Como obter uma linha de base de manutenção
 

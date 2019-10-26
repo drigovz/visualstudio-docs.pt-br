@@ -13,12 +13,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 24e27c8ca2c75e2345bea4f4393fcb00bba1a0d8
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
-ms.translationtype: HT
+ms.openlocfilehash: 0a16f9501b9ce1e7c69eaa8f2460a50affd6d579
+ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67821718"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72888706"
 ---
 # <a name="install-build-tools-into-a-container"></a>Instalar Ferramentas de Build em um contêiner
 
@@ -30,9 +30,9 @@ Se as Ferramentas de Build do Visual Studio não têm o que você precisa para c
 
 ## <a name="before-you-begin"></a>Antes de começar
 
-É esperada alguma familiaridade com o [Docker](https://www.docker.com/what-docker) abaixo. Se você ainda não estiver familiarizado com a execução do Docker no Windows, leia como [instalar e configurar o mecanismo do Docker no Windows](https://docs.microsoft.com/virtualization/windowscontainers/manage-docker/configure-docker-daemon).
+É esperada alguma familiaridade com o [Docker](https://www.docker.com/what-docker) abaixo. Se você ainda não estiver familiarizado com a execução do Docker no Windows, leia como [instalar e configurar o mecanismo do Docker no Windows](/virtualization/windowscontainers/manage-docker/configure-docker-daemon).
 
-A imagem de base abaixo é uma amostra e pode não funcionar no seu sistema. Leia [Compatibilidade da versão do contêiner do Windows ](https://docs.microsoft.com/virtualization/windowscontainers/deploy-containers/version-compatibility) para determinar qual imagem de base você deve usar para o seu ambiente.
+A imagem de base abaixo é uma amostra e pode não funcionar no seu sistema. Leia [Compatibilidade da versão do contêiner do Windows ](/virtualization/windowscontainers/deploy-containers/version-compatibility) para determinar qual imagem de base você deve usar para o seu ambiente.
 
 ## <a name="create-and-build-the-dockerfile"></a>Criar e compilar o Dockerfile
 
@@ -93,7 +93,7 @@ Salve o Dockerfile de exemplo a seguir em um novo arquivo no disco. Se o nome do
    >
    > O Visual Studio 2017 versão 15.8 ou anterior (qualquer produto) não será instalado corretamente no mcr.microsoft.com/windows/servercore:1809 ou posterior. Nenhum erro é exibido.
    >
-   > Confira [Compatibilidade da versão de contêiner do Windows](https://docs.microsoft.com/virtualization/windowscontainers/deploy-containers/version-compatibility) para ver quais versões do sistema operacional do contêiner são compatíveis em quais versões do sistema operacional host e os [Problemas conhecidos de contêineres](build-tools-container-issues.md) para se informar a respeito.
+   > Confira [Compatibilidade da versão de contêiner do Windows](/virtualization/windowscontainers/deploy-containers/version-compatibility) para ver quais versões do sistema operacional do contêiner são compatíveis em quais versões do sistema operacional host e os [Problemas conhecidos de contêineres](build-tools-container-issues.md) para se informar a respeito.
 
    ::: moniker-end
 
@@ -131,7 +131,7 @@ Salve o Dockerfile de exemplo a seguir em um novo arquivo no disco. Se o nome do
    > [!WARNING]
    > Se você basear sua imagem diretamente no microsoft/windowsservercore, o .NET Framework poderá não ser instalado corretamente e nenhum erro de instalação será indicado. Código gerenciado não poderá ser executado depois que a instalação for concluída. Em vez disso, baseie a imagem no [microsoft/dotnet-framework:4.8](https://hub.docker.com/r/microsoft/dotnet-framework) ou posterior. As imagens marcadas com a versão 4.8 ou posterior também podem usar o PowerShell como o `SHELL` padrão, o que causará uma falha nas instruções `RUN` e `ENTRYPOINT`.
    >
-   > Confira [Compatibilidade da versão de contêiner do Windows](https://docs.microsoft.com/virtualization/windowscontainers/deploy-containers/version-compatibility) para ver quais versões do sistema operacional do contêiner são compatíveis em quais versões do sistema operacional host e os [Problemas conhecidos de contêineres](build-tools-container-issues.md) para se informar a respeito.
+   > Confira [Compatibilidade da versão de contêiner do Windows](/virtualization/windowscontainers/deploy-containers/version-compatibility) para ver quais versões do sistema operacional do contêiner são compatíveis em quais versões do sistema operacional host e os [Problemas conhecidos de contêineres](build-tools-container-issues.md) para se informar a respeito.
 
    ::: moniker-end
 

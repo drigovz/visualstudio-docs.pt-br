@@ -11,19 +11,19 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: b1ef763295db7673896189ce000ed59d5da5becf
-ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
-ms.translationtype: HT
+ms.openlocfilehash: 90a440ce88690c12792c17729e93f9fa287dabb6
+ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68787982"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72888637"
 ---
 # <a name="unit-testing-javascript-and-typescript-in-visual-studio"></a>Teste de unidade em JavaScript e TypeScript no Visual Studio
 
 As Ferramentas Node.js para Visual Studio permitem que você escreva e execute testes de unidade usando algumas das estruturas mais populares do JavaScript, sem a necessidade de alternar para um prompt de comando.
 
 As estruturas compatíveis são:
-* Mocha ([mochajs.org](http://mochajs.org/))
+* Mocha ([mochajs.org](https://mochajs.org/))
 * Jasmine ([Jasmine.github.io](https://jasmine.github.io/))
 * Tape ([github.com/substack/tape](https://github.com/substack/tape))
 * Jest ([jestjs.io](https://jestjs.io/))
@@ -91,7 +91,7 @@ Execute os testes clicando no link **Executar Tudo** no Gerenciador de Testes. O
 > [!NOTE]
 > No momento, não damos suporte à criação de perfil de testes nem à cobertura de código.
 
-### <a name="run-tests-from-the-command-line"></a>Executar testes na linha de comando
+### <a name="run-tests-from-the-command-line"></a>Executar testes da linha de comando
 
 Execute os testes no [Prompt de Comando do Desenvolvedor](/dotnet/framework/tools/developer-command-prompt-for-vs) do Visual Studio 2017 usando o seguinte comando:
 

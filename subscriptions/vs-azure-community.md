@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/29/2019
 ms.topic: conceptual
 description: Saiba mais sobre o benefício do Suporte da Comunidade Azure incluído nas assinaturas do Visual Studio.
-ms.openlocfilehash: 0f03d269ab316801a75cbb3b1b618d722ec46b89
-ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
-ms.translationtype: HT
+ms.openlocfilehash: 128147833baf450c0d161f39628a0928e9118412
+ms.sourcegitcommit: bcdab788085bd9931d73883fe70cd5831317dca2
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68681237"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72816545"
 ---
 # <a name="azure-community-support-forum-in-visual-studio-subscriptions"></a>Fórum do Suporte da Comunidade do Azure em assinaturas do Visual Studio
 Obtenha ajuda diretamente da equipe do Azure em fóruns de suporte selecionados por meio da Comunidade Azure.  O benefício da Comunidade Azure fornece acesso a um conjunto de fóruns voltados para tópicos relacionados ao Azure.
@@ -55,7 +55,7 @@ A disponibilidade do benefício Comunidade Azure depende do nível de sua assina
 |                                       Plataformas MSDN (Padrão)                                       |    VL, Retail     |   Um ano    |    Sim     |
 | Visual Studio Enterprise (nuvem mensal), Visual Studio Professional (nuvem mensal), NFR<sup>1</sup> |        Todos        | Não disponível |     Não     |
 
-<sup>1</sup> *Inclui:  NFR (Proibida a revenda), Microsoft FTE, MVP (Most Valuable Professional), RD (Diretor Regional), VSIP (Visual Studio Industry Partner), BizSpark, Imagine e MCT (Microsoft Certified Trainer)*
+<sup>1</sup>  *inclui: não para revenda (NFR), Microsoft FTE, profissional mais valioso (MVP), diretor regional (RD), parceiro do setor do Visual Studio (VSIP), BizSpark, imagine, Microsoft Certified Trainer (MCT)*
 
 > [!NOTE]
 > A Microsoft não oferece mais assinaturas anuais do Visual Studio Professional e do Visual Studio Enterprise nas Assinaturas na Nuvem. Não haverá nenhuma alteração na experiência dos clientes existentes nem na capacidade de renovar, aumentar, diminuir ou cancelar suas assinaturas. Os novos clientes são incentivados a acessar [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) para explorar diferentes opções de compra do Visual Studio.
@@ -69,4 +69,4 @@ Não tem certeza de qual assinatura você está usando?  Conecte-se ao [https://
 - Tem alguma pergunta sobre o IDE do Visual Studio, o Azure DevOps Services ou outros produtos ou serviços do Visual Studio?  Acesse o [Suporte do Visual Studio](https://visualstudio.microsoft.com/support/).
 
 ## <a name="next-steps"></a>Próximas etapas
-Você sabia que muitas assinaturas do Visual Studio vêm com créditos Azure?  Saiba como [ativar](vs-azure.md) os seus.
+Você sabia que muitas assinaturas do Visual Studio vêm com o crédito individual do Azure DevTest?  Saiba como [ativar](vs-azure.md) os seus.

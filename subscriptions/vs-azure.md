@@ -5,16 +5,16 @@ ms.author: lank
 manager: lank
 ms.date: 07/29/2019
 ms.topic: conceptual
-description: Saiba como ativar o benefício Azure incluído em sua assinatura do Visual Studio.
-ms.openlocfilehash: 923573b1079ddbfaa77837e57df1baa618db6e21
-ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
-ms.translationtype: HT
+description: Saiba como ativar o benefício de crédito individual do Azure DevTest incluído na sua assinatura do Visual Studio.
+ms.openlocfilehash: 7bd6313a0e6d52f9e461383fb04c9039f3b974ac
+ms.sourcegitcommit: bcdab788085bd9931d73883fe70cd5831317dca2
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68681665"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72816454"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Usar o Microsoft Azure nas assinaturas do Visual Studio
-Como assinante do Visual Studio, você pode usar o Microsoft Azure sem custo adicional.  Com seu [crédito mensal do Azure](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/), use o Azure como sua a área restrita pessoal para desenvolvimento e teste.  Você pode provisionar máquinas virtuais, serviços de nuvem e outros recursos do Azure.  Os valores de crédito variam de acordo com o nível da assinatura.
+Como assinante do Visual Studio, você pode usar o Microsoft Azure sem custo adicional.  Com o [crédito individual do Azure DevTest mensal](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/), o Azure é sua área restrita pessoal para desenvolvimento/teste.  Você pode provisionar máquinas virtuais, serviços de nuvem e outros recursos do Azure.  Os valores de crédito variam de acordo com o nível da assinatura.
 
 ## <a name="activation-steps"></a>Etapas de Ativação
 1. Entre no [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
@@ -65,22 +65,22 @@ Como assinante do Visual Studio, você pode usar o Microsoft Azure sem custo adi
 Não tem certeza de qual assinatura você está usando?  Conecte-se ao [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) para ver todas as assinaturas atribuídas ao seu endereço de email. Se não vir todas as suas assinaturas, talvez você tenha uma ou mais atribuídas a outro endereço de email.  Você precisará entrar com esse endereço de email para ver as assinaturas.
 
 ## <a name="frequently-asked-questions"></a>Perguntas frequentes
-### <a name="q-how-do-i-submit-a-technical-support-incident-from-within-the-azure-portal"></a>P: Como fazer para enviar um incidente de suporte técnico no portal do Azure?
-R:  O envio de um incidente de suporte no portal do Azure é um processo de três etapas.
+### <a name="q-how-do-i-submit-a-technical-support-incident-from-within-the-azure-portal"></a>P: Como posso enviar um incidente de suporte técnico de dentro do Portal do Azure?
+R: O envio de um incidente de suporte do Portal do Azure é um processo de três etapas.
 1. Ative o benefício de suporte técnico e obtenha sua ID de Acesso de ID de Contrato.
 2. Vincule seu contrato de suporte à sua assinatura do Azure.
 3. Envie um incidente de suporte.
 
 Visite a documentação do [Suporte Técnico](vs-tech-support.md) para encontrar os detalhes completos.
 
-### <a name="q-ive-received-a-message-stating-that-my-access-to-azure-will-end-soon--what-can-i-do-to-continue-using-azure"></a>P: Recebi uma mensagem informando que meu acesso ao Azure será encerrado em breve.  O que posso fazer para continuar usando o Azure?
-R:  Você está recebendo esse email porque usa o benefício do Azure associado à sua Assinatura do Visual Studio e essa assinatura expirou ou foi removida.  Para continuar a usar o Azure, você tem várias opções:
+### <a name="q-ive-received-a-message-stating-that-my-access-to-azure-will-end-soon--what-can-i-do-to-continue-using-azure"></a>P: Recebi uma mensagem informando que meu acesso ao Azure vai expirar em breve.  O que posso fazer para continuar usando o Azure?
+R: Você está recebendo este email porque usa o benefício do Azure associado à sua assinatura do Visual Studio, e essa assinatura expirou ou foi removida.  Para continuar a usar o Azure, você tem várias opções:
 
 **Ação recomendada:**
 
-Para continuar a usar seu crédito e seus descontos do Azure para o Visual Studio, execute uma das seguintes etapas:
+Para continuar usando seu crédito individual e descontos do Azure DevTest do Visual Studio, execute uma das seguintes etapas:
 
-Se alguém da sua equipe ou da organização compra as assinaturas em seu nome, contate o administrador do Visual Studio da organização e solicite uma assinatura do Visual Studio que o autorize à quantidade de crédito mensal do Azure de que você precisa.   Solicite que o administrador atribua a nova assinatura à mesma ID de usuário à qual sua assinatura anterior era atribuída, para que você não precise se preocupar em transferir sua assinatura do Azure.
+Se alguém em sua equipe ou organização comprar assinaturas em seu nome, entre em contato com o administrador do Visual Studio da sua organização e solicite uma assinatura do Visual Studio que o contenha para o valor de crédito individual do Azure DevTest de que você precisa.   Solicite que o administrador atribua a nova assinatura à mesma ID de usuário à qual sua assinatura anterior era atribuída, para que você não precise se preocupar em transferir sua assinatura do Azure.
 
 Se você puder comprar uma assinatura diretamente, siga um destes procedimentos:
 1. Compre uma assinatura de nuvem anual [Enterprise](https://marketplace.visualstudio.com/items?itemName=ms.vs-enterprise-annual) ou [Professional](https://marketplace.visualstudio.com/items?itemName=ms.vs-professional-annual) do Visual Studio por meio do Visual Studio Marketplace.
