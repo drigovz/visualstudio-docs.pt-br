@@ -1,5 +1,5 @@
 ---
-title: 'Como: Fazer referência a um SDK de Projeto do MSBuild | Microsoft Docs'
+title: Como fazer referência a um SDK de Projeto do MSBuild | Microsoft Docs
 ms.date: 01/25/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,14 +9,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 172dfae63fbfb95432a1635490ac703f7bbd9021
-ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
-ms.translationtype: HT
+ms.openlocfilehash: 0be8f9ed17bf4474307a639bb75f409da2ff1638
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "67852235"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911300"
 ---
-# <a name="how-to-use-msbuild-project-sdks"></a>Como: Como usar SDKs de projeto do MSBuild
+# <a name="how-to-use-msbuild-project-sdks"></a>Como usar SDKs de projeto do MSBuild
 
 O [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 15.0 introduziu o conceito de "SDK de projeto," que simplifica o uso de kits de desenvolvimento de software que exigem que propriedades e destinos sejam importados.
 
@@ -107,7 +107,7 @@ Ao avaliar a importação, o [!INCLUDE[vstecmsbuild](../extensibility/internals/
    Esse resolvedor localiza SDKs de projeto, como `Microsoft.NET.Sdk` e `Microsoft.NET.Sdk.Web`, que fazem parte do produto.
 3. Um resolvedor padrão que resolve SDKs instalados com o MSBuild.
 
-O resolvedor de SDK baseado em NuGet dá suporte à especificação de uma versão em [global.json](https://docs.microsoft.com/dotnet/core/tools/global-json) que permite que você controle a versão do SDK do projeto em um único local, em vez de em cada projeto:
+O resolvedor de SDK baseado em NuGet dá suporte à especificação de uma versão em [global.json](/dotnet/core/tools/global-json) que permite que você controle a versão do SDK do projeto em um único local, em vez de em cada projeto:
 
 ```json
 {

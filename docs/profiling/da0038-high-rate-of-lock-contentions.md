@@ -1,5 +1,5 @@
 ---
-title: 'DA0038: Alta taxa de contenções de bloqueio | Microsoft Docs'
+title: 'DA0038: alta taxa de contenções de bloqueio | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ba95cde967f428717be852dad785233eb96cb290
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: b1143da15ca682e9c3b748fbc853bcfce78f72bb
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444887"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72910179"
 ---
-# <a name="da0038-high-rate-of-lock-contentions"></a>DA0038: Alta taxa de contenções de bloqueio
+# <a name="da0038-high-rate-of-lock-contentions"></a>DA0038: taxa alta de contenções de bloqueio
 
 |||
 |-|-|
@@ -35,9 +35,9 @@ ms.locfileid: "63444887"
  Os dados de desempenho do sistema coletados com os dados de criação de perfil indicam que ocorreu uma taxa consideravelmente alta de contenções de bloqueio durante a execução do aplicativo. Considere uma nova criação de perfil usando o método de criação de perfil de simultaneidade para descobrir a causa das contenções.
 
 ## <a name="rule-description"></a>Descrição da regra
- Os bloqueios são usados para proteger seções críticas do código que devem ser executadas em série por um thread por vez em um aplicativo multi-threaded. O CLR (Common Language Runtime) do Microsoft .NET fornece um conjunto completo de primitivos de sincronização e bloqueio. Por exemplo, a linguagem C# dá suporte a uma instrução de bloqueio (SyncLock no Visual Basic). Um aplicativo gerenciado pode chamar os métodos Monitor.Enter e Monitor.Exit no namespace System.Threading para adquirir e liberar um bloqueio diretamente. O .NET Framework dá suporte a primitivos de sincronização e bloqueio adicionais, incluindo classes que dão suporte a Mutexes, ReaderWriterLocks e Semaphores. Para obter mais informações, consulte [Visão geral dos primitivos de sincronização](http://go.microsoft.com/fwlink/?LinkId=177867) no Guia do Desenvolvedor do .NET Framework no site do MSDN. As classes do .NET Framework são colocadas em camada por conta própria sobre os serviços de sincronização de nível inferior internos do sistema operacional Windows. Eles incluem objetos de seção crítica e várias funções de sinalização de evento e de Espera diferentes. Para obter mais informações, consulte a seção [Synchronization](http://go.microsoft.com/fwlink/?LinkId=177869) (Sincronização) do Desenvolvimento do Win32 e COM na Biblioteca MSDN
+ Os bloqueios são usados para proteger seções críticas do código que devem ser executadas em série por um thread por vez em um aplicativo multi-threaded. O CLR (Common Language Runtime) do Microsoft .NET fornece um conjunto completo de primitivos de sincronização e bloqueio. Por exemplo, a linguagem C# dá suporte a uma instrução de bloqueio (SyncLock no Visual Basic). Um aplicativo gerenciado pode chamar os métodos Monitor.Enter e Monitor.Exit no namespace System.Threading para adquirir e liberar um bloqueio diretamente. O .NET Framework dá suporte a primitivos de sincronização e bloqueio adicionais, incluindo classes que dão suporte a Mutexes, ReaderWriterLocks e Semaphores. Para obter mais informações, consulte [Visão geral dos primitivos de sincronização](/dotnet/standard/threading/overview-of-synchronization-primitives) no Guia do Desenvolvedor do .NET Framework no site do MSDN. As classes do .NET Framework são colocadas em camada por conta própria sobre os serviços de sincronização de nível inferior internos do sistema operacional Windows. Eles incluem objetos de seção crítica e várias funções de sinalização de evento e de Espera diferentes. Para obter mais informações, consulte a seção [Synchronization](/windows/win32/sync/synchronization) (Sincronização) do Desenvolvimento do Win32 e COM na Biblioteca MSDN
 
- Subjacentes às classes do .NET Framework e aos objetos nativos do Windows que são usados para sincronização e bloqueio estão os locais de memória compartilhada que devem ser alterados usando operações sincronizadas. As operações sincronizadas usam instruções específicas ao hardware que operam em locais de memória compartilhada para alterar seu estado usando operações atômicas. Operações atômicas têm a garantia de serem consistentes em todos os processadores no computador. Locks e WaitHandles são objetos do .NET que usam operações sincronizadas automaticamente quando são definidos ou redefinidos. Pode haver outras estruturas de dados de memória compartilhada no aplicativo que também exigem o uso de operações sincronizadas para que sejam atualizadas de uma forma thread-safe. Para obter mais informações, confira [Operações interconectadas](http://go.microsoft.com/fwlink/?LinkId=177870) na seção do .NET Framework da biblioteca do MSDN.
+ Subjacentes às classes do .NET Framework e aos objetos nativos do Windows que são usados para sincronização e bloqueio estão os locais de memória compartilhada que devem ser alterados usando operações sincronizadas. As operações sincronizadas usam instruções específicas ao hardware que operam em locais de memória compartilhada para alterar seu estado usando operações atômicas. Operações atômicas têm a garantia de serem consistentes em todos os processadores no computador. Locks e WaitHandles são objetos do .NET que usam operações sincronizadas automaticamente quando são definidos ou redefinidos. Pode haver outras estruturas de dados de memória compartilhada no aplicativo que também exigem o uso de operações sincronizadas para que sejam atualizadas de uma forma thread-safe. Para obter mais informações, confira [Operações interconectadas](/dotnet/api/system.threading.interlocked&view=netframework-4.8) na seção do .NET Framework da biblioteca do MSDN.
 
  A sincronização e o bloqueio são mecanismos usados para garantir que aplicativos de vários threads sejam executados corretamente. Cada thread de um aplicativo multi-threaded é uma unidade de execução independente que é agendada de forma independente pelo sistema operacional. Uma contenção de bloqueio ocorre sempre que um thread que está tentando adquirir um bloqueio é atrasado devido a outro thread estar mantendo o bloqueio.
 
@@ -46,7 +46,7 @@ ms.locfileid: "63444887"
  Essa regra é acionada quando as medições feitas durante uma execução de criação de perfil indicam que há uma quantidade excessivamente alta de contenções de bloqueio. As contenções de bloqueio atrasam a execução de threads que estão aguardando o bloqueio. Até mesmo pequenas quantidades de contenção de bloqueio em testes de unidade ou em testes de carga em execução em um hardware de extremidade inferior devem ser investigadas.
 
 > [!NOTE]
-> Quando a taxa de contenções de bloqueio relatadas nos dados de criação de perfil é excessivamente alta, a mensagem de aviso [DA0039: Taxa de contenções de bloqueio muito alta](../profiling/da0039-very-high-rate-of-lock-contentions.md) é acionada em lugar dessa mensagem de informações.
+> Quando a taxa de contenções de bloqueio relatadas nos dados de criação de perfil é excessivamente alta, a mensagem de aviso [DA0039: taxa muito alta de contenções de bloqueio](../profiling/da0039-very-high-rate-of-lock-contentions.md) é acionada em vez dessa mensagem de informações.
 
 ## <a name="how-to-investigate-a-warning"></a>Como investigar um aviso
  Clique duas vezes na mensagem para navegar para a exibição [Marcas](../profiling/marks-view.md) dos dados de criação de perfil.  Encontre a coluna **.NET CLR LocksAndThreads\Taxa de contenção/s**. Determine se há fases específicas da execução do programa em que a contenção de bloqueio é mais pesada do que em outras fases.

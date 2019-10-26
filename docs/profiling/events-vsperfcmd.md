@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 62d4e2431ab2dbc2ca74944ac1717fe6c3169287
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 4dad42d9bd4919e90f3ef3bd84ee156cd510e311
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440103"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72910227"
 ---
 # <a name="events-vsperfcmd"></a>Eventos (VSPerfCmd)
 A opção **Events** do *VSPerfCmd.exe* controla o log do ETW (Rastreamento de Eventos para Windows). Os dados ETW são salvos em um arquivo .etl separado do arquivo de dados do criador de perfil. Os dados podem ser exibidos em um relatório usando o comando [VSPerfReport](../profiling/vsperfreport.md) /summary:etw.
@@ -69,7 +69,7 @@ C:\<path>VSPerfCmd -events on, \".NET Common Language Runtime\", 0x7fffffff, 5
 ```
 
 > [!IMPORTANT]
-> Se você não excluir os eventos de inicialização, como tais eventos não são listados no arquivo MOF (Managed Object Format), eles aparecerão como GUIDs no relatório. Para obter mais informações, confira esta página no site da Microsoft: [Arquivo de formato MOF (Managed Object) de exemplo](http://go.microsoft.com/fwlink/?linkid=37118).
+> Se você não excluir os eventos de inicialização, como tais eventos não são listados no arquivo MOF (Managed Object Format), eles aparecerão como GUIDs no relatório. Para obter mais informações, confira esta página no site da Microsoft: [Arquivo de formato MOF (Managed Object Format) de exemplo](https://msdn.microsoft.com/library/default.aspx).
 
 ## <a name="see-also"></a>Consulte também
 - [VSPerfCmd](../profiling/vsperfcmd.md)

@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 16b46d47ec5850a79d78667671c7eb671d859f3e
-ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
+ms.openlocfilehash: 56ecf4cb1d777362daf381646094c20f82f30f85
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71128230"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72910354"
 ---
 # <a name="analyze-memory-usage-without-the-debugger"></a>Analisar o uso de memória sem o depurador
 
@@ -40,13 +40,13 @@ A ferramenta **Uso de Memória** pode ser executada com ou sem o depurador. As i
 
 1. Selecione **Uso de Memória** e, em seguida, selecione **Iniciar**.
 
-   ![Iniciar uma sessão de diagnóstico de uso de memória](../profiling/media/memuse_start_diagnosticssession.png "Iniciar uma sessão de diagnóstico de uso de memória")
+   ![Iniciar uma sessão de diagnóstico de uso de memória](../profiling/media/memuse_start_diagnosticssession.png "Iniciar uma a sessão de diagnóstico de uso de memória")
 
 ### <a name="monitor-memory-use"></a>Monitorar o uso de memória
 
 Quando você inicia uma sessão de diagnóstico, seu aplicativo é iniciado e a janela **Ferramentas de Diagnóstico** mostra um grafo de linha do tempo do uso de memória do aplicativo.
 
-![Página de visão geral do uso de memória](../profiling/media/memuse__reportoverview.png "MEMUSE__ReportOverview")
+![Página Visão geral de uso de memória](../profiling/media/memuse__reportoverview.png "MEMUSE__ReportOverview")
 
 O grafo de linha do tempo mostra flutuações de memória à medida que o aplicativo é executado. Picos no gráfico geralmente indicam que um código está coletando ou criando dados e, em seguida, descartando-os quando o processamento é concluído. Grandes picos indicam áreas que você pode otimizar. O que mais preocupa é o aumento no consumo de memória que não é devolvido, pois pode indicar uso de memória ineficiente ou mesmo uma perda de memória.
 
@@ -60,13 +60,13 @@ Para coletar instantâneos, selecione **Tirar instantâneo** quando desejar capt
 
 Para parar uma sessão de monitoramento sem criar um relatório, apenas feche a janela de diagnóstico. Para gerar um relatório quando você terminar de coletar ou tiver tirado instantâneos, selecione **Interromper Coleta**.
 
-![Interromper Coleta](../profiling/media/memuse__stopcollection.png "Interromper Coleta")
+![Parar coleta](../profiling/media/memuse__stopcollection.png "Parar coleta")
 
 ## <a name="memory-usage-reports"></a>Relatórios de uso de memória
 
 Após interromper a coleta de dados, a ferramenta **Uso de Memória** interromperá o aplicativo e exibirá a página de visão geral **Uso de Memória**.
 
-![Página de visão geral do uso de memória](../profiling/media/memuse__reportoverview1.png "Página de visão geral do uso de memória")
+![Página Visão geral de uso de memória](../profiling/media/memuse__reportoverview1.png "Página de visão geral de uso de memória")
 
 ### <a name="BKMK_Memory_Usage_snapshot_views"></a> Instantâneos do uso de memória
 
@@ -87,7 +87,7 @@ Os números são links que abrem exibições do relatório **Uso de Memória** d
 
 <a name="BKMK_Snapshot_report_trees"></a> Quando você seleciona um dos links do instantâneo na página de visão geral **Uso de Memória**, um relatório de instantâneos é aberto em uma nova página.
 
-![Relatório de instantâneos de Uso de Memória](../profiling/media/memuse_snapshotreport_all.png "Relatório de instantâneos de Uso de Memória")
+![Relatório de instantâneo de uso de memória](../profiling/media/memuse_snapshotreport_all.png "Relatório de instantâneo de uso de memória")
 
 Em um relatório de instantâneos, é possível expandir entradas **Tipo de Objeto** para exibir entradas filho. Os nomes de instância são IDs exclusivas geradas pela ferramenta Uso de Memória.
 
@@ -107,7 +107,7 @@ No relatório de instantâneos:
 
 Muitos tipos em aplicativos não são muito interessantes para os desenvolvedores de aplicativos. Os filtros de relatório de instantâneos podem ocultar a maioria desses tipos nas árvores de **Heap Gerenciado** e **Caminhos para a Raiz**.
 
-![Opções de filtro e classificação](../profiling/media/memuse_sortandfilter.png "MEMUSE_SortAndFilter")
+![Opções de classificação e filtro](../profiling/media/memuse_sortandfilter.png "MEMUSE_SortAndFilter")
 
 - <a name="BKMK_Filter"></a> Para filtrar uma árvore por nome de tipo, digite o nome na caixa **Filtrar**. O filtro não diferencia maiúsculas de minúsculas e reconhece a cadeia de caracteres especificada em qualquer parte dos nomes do tipo.
 
@@ -119,14 +119,14 @@ Muitos tipos em aplicativos não são muito interessantes para os desenvolvedore
 
  Um relatório de detalhes do instantâneo descreve um instantâneo de uma sessão de diagnóstico. Para abrir o relatório, selecione o link de tamanho ou de objetos em um painel de instantâneo.
 
- ![Links para o relatório de instantâneos em um painel de instantâneo](../profiling/media/memuse_snapshotview_snapshotdetailslinks.png "Links para o relatório de instantâneos em um painel de instantâneo")
+ ![Links para o relatório de instantâneo em um painel de instantâneo](../profiling/media/memuse_snapshotview_snapshotdetailslinks.png "Links para o relatório de instantâneo em um painel de instantâneo")
 
 Os dois links abrem o mesmo relatório. A única diferença é a ordem de classificação inicial da árvore de **Heap Gerenciado**. O link do tamanho classifica o relatório pela coluna **Tamanho Inclusivo (Bytes)** . O link de classifica o relatório pela coluna **Contagem**. É possível alterar a ordem ou coluna de classificação depois que o relatório é aberto.
 
 ### <a name="BKMK_Managed_Heap_tree__Snapshot_details_"></a> Árvore de Heap Gerenciado (relatórios de detalhes do instantâneo)
  A árvore **Heap Gerenciado** lista os tipos de objetos que são mantidos na memória. Expanda um nome do tipo para exibir as dez maiores instâncias do tipo, classificadas por tamanho. Selecione um tipo ou instância para exibir as árvores **Caminhos para a Raiz** e **Objetos Referenciados** para o item selecionado.
 
- ![Árvore de Heap Gerenciado](../profiling/media/memuse__snapshotdetails_managedheaptree.png "Árvore de Heap Gerenciado")
+ ![Árvore de heap gerenciada](../profiling/media/memuse__snapshotdetails_managedheaptree.png "Árvore de heap gerenciada")
 
 A árvore de **Heap Gerenciado** em um relatório de detalhes do instantâneo tem as seguintes colunas:
 
@@ -143,12 +143,12 @@ A **árvore Caminhos para a Raiz** mostra a cadeia de objetos que referenciam um
 
 Para um tipo na árvore **Caminhos para a Raiz**, o número de objetos que têm referências para esse tipo é exibido na coluna **Contagem de Referência**.
 
-![Árvore de Caminhos para a Raiz para tipos](../profiling/media/memuse_snapshotdetails_type_pathstoroottree.png "Árvore de Caminhos para a Raiz para tipos")
+![Caminhos para a árvore raiz para tipos](../profiling/media/memuse_snapshotdetails_type_pathstoroottree.png "Caminhos para a árvore raiz para tipos")
 
 ### <a name="BKMK_Referenced_Objects_tree__Snapshot_details_"></a> Árvore de Tipos referenciados ou de Objetos referenciados (relatórios de detalhes do instantâneo)
 A árvore **Tipos Referenciados** ou **Objetos Referenciados** mostra os objetos que a instância ou tipo selecionado referencia.
 
-![Árvore de Objetos referenciados para instâncias](../profiling/media/memuse_snapshotdetails_referencedobjects_instance.png "Árvore de Objetos referenciados para instâncias")
+![Árvore de objetos referenciados para instâncias](../profiling/media/memuse_snapshotdetails_referencedobjects_instance.png "Árvore de objetos referenciados para instâncias")
 
 A árvore de **Tipos Referenciados** em um relatório de detalhes do instantâneo tem as seguintes colunas. Uma árvore de **Objetos Referenciados** não tem a coluna **Contagem de Referência**.
 
@@ -172,7 +172,7 @@ Os dois links abrem o mesmo relatório. A única diferença é a ordem de classi
 
  A árvore **Heap Gerenciado** lista os tipos de objetos que são mantidos na memória. Você pode expandir um nome do tipo para ver as dez maiores instâncias do tipo, classificadas por tamanho. Selecione um tipo ou instância para exibir as árvores **Caminhos para a Raiz** e **Objetos Referenciados** para o item selecionado.
 
- ![Árvore de Heap gerenciado para um tipo no relatório de diferenças](../profiling/media/memuse_snapshotdiff_type_heap.png "Árvore de Heap gerenciado para um tipo no relatório de diferenças")
+ ![Árvore de heap gerenciada para um tipo no relatório de diferenças](../profiling/media/memuse_snapshotdiff_type_heap.png "Árvore de heap gerenciada para um tipo no relatório de diferenças")
 
 A árvore de **Heap Gerenciado** em um relatório de diferenças de instantâneos tem as seguintes colunas:
 
@@ -193,13 +193,13 @@ A **árvore Caminhos para a Raiz** mostra a cadeia de objetos que referenciam um
 
 Para um tipo na árvore **Caminhos para a Raiz**, o número de objetos que têm referências para esse tipo é exibido na coluna **Contagem de Referência**. A diferença na contagem do instantâneo anterior é a coluna **Diferença de Referência**.
 
- ![Árvore de Caminhos para a raiz em um relatório de diferenças](../profiling/media/memuse_snapshotdiff_pathstoroot_instance_all.png "Árvore de Caminhos para a raiz em um relatório de diferenças")
+ ![Caminhos para a árvore raiz em um relatório diff](../profiling/media/memuse_snapshotdiff_pathstoroot_instance_all.png "Caminhos para a árvore raiz em um relatório diff")
 
 ### <a name="BKMK_Referenced_Objects_tree__Snapshot_diff_"></a> Árvore de Tipos referenciados ou de Objetos referenciados (relatórios de diferenças de instantâneos)
 
 A árvore **Tipos Referenciados** ou **Objetos Referenciados** mostra os objetos que a instância ou tipo selecionado referencia.
 
-![Tipos referenciados em um relatório de diferenças](../profiling/media/memuse_snapshotdiff_referencedtypes.png "Tipos referenciados em um relatório de diferenças")
+![Tipos referenciados em um relatório diff](../profiling/media/memuse_snapshotdiff_referencedtypes.png "Tipos referenciados em um relatório diff")
 
 Uma árvore **Tipos Referenciados** em um relatório de diferenças de instantâneos tem as seguintes colunas. Uma árvore de **Objetos Referenciados** tem as colunas **Instância**, **Tamanho (Bytes)** , **Tamanho Inclusivo (Bytes)** e **Módulo**.
 
@@ -219,4 +219,4 @@ Uma árvore **Tipos Referenciados** em um relatório de diferenças de instantâ
 - [Criação de perfis no Visual Studio](../profiling/index.yml)
 - [Introdução às ferramentas de criação de perfil](../profiling/profiling-feature-tour.md)
 - [Melhores práticas de desempenho para aplicativos UWP em C++, C# e Visual Basic](/previous-versions/windows/apps/hh750313\(v\=win.10\))
-- [Diagnosing memory issues with the new Memory Usage Tool in Visual Studio](http://go.microsoft.com/fwlink/p/?LinkId=394706) (Diagnosticando problemas de memória com a nova Ferramenta de Uso de Memória no Visual Studio)
+- [Diagnosing memory issues with the new Memory Usage Tool in Visual Studio](https://devblogs.microsoft.com/devops/diagnosing-memory-issues-with-the-new-memory-usage-tool-in-visual-studio/) (Diagnosticando problemas de memória com a nova Ferramenta de Uso de Memória no Visual Studio)

@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ceda2dd4e85c8db5b66ef753a748977204b8caab
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: 5e0d8839daac2d470f4275257bfcfbc83fc7a62f
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71211220"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911403"
 ---
 # <a name="frequently-asked-questions-for-snapshot-debugging-in-visual-studio"></a>Perguntas frequentes sobre depuração de instantâneo no Visual Studio
 
@@ -31,7 +31,7 @@ Quando você tiver várias instâncias do seu aplicativo, os snappoints serão a
 
 #### <a name="how-does-the-snapshot-debugger-load-symbols"></a>Como o Depurador de Instantâneos carrega símbolos?
 
-O Depurador de Instantâneos requer que você tenha os símbolos correspondentes para seu aplicativo no local ou implantados no Serviço de Aplicativo do Azure. (No momento, não há suporte para PDBs inseridos). O Depurador de Instantâneos baixa automaticamente os símbolos de seu Serviço de Aplicativo do Azure. A partir do Visual Studio 2017 versão 15.2, a implantação no Serviço de Aplicativo do Azure também faz a implantação dos símbolos do seu aplicativo.
+O Depurador de Instantâneos requer que você tenha os símbolos correspondentes para seu aplicativo no local ou implantados no Serviço de Aplicativo do Azure. (Não há suporte para PDBs inseridos no momento.) O Depurador de Instantâneos baixa automaticamente os símbolos do seu serviço de Azure App. A partir do Visual Studio 2017 versão 15.2, a implantação no Serviço de Aplicativo do Azure também faz a implantação dos símbolos do seu aplicativo.
 
 #### <a name="does-the-snapshot-debugger-work-against-release-builds-of-my-application"></a>O Depurador de Instantâneos funciona em builds de versão do meu aplicativo?
 
@@ -125,7 +125,7 @@ Para os conjuntos de dimensionamento de máquinas virtuais/máquina virtual, rem
 
    - O certificado do servidor
       - A impressão digital do certificado de servidor correspondente é implantada como um segredo para o Azure keyvault. O VS tentará localizar ou criar um keyvault com o prefixo MSVSAZ * na região correspondente à máquina virtual ou ao recurso de conjuntos de dimensionamento de máquinas virtuais. Todos os recursos de máquina virtual ou de conjuntos de dimensionamento de máquinas virtuais implantados nessa região compartilharão o mesmo keyvault.
-      - Para excluir o segredo de impressão digital do certificado do servidor, acesse o portal do Azure e localize o MSVSAZ * keyvault na mesma região que está hospedando seu recurso. Excluir o segredo que deve ser rotulado`remotedebugcert<<ResourceName>>`
+      - Para excluir o segredo de impressão digital do certificado do servidor, acesse o portal do Azure e localize o MSVSAZ * keyvault na mesma região que está hospedando seu recurso. Exclua o segredo que deve ser rotulado `remotedebugcert<<ResourceName>>`
       - Você também precisará excluir o segredo do servidor do seu recurso por meio do PowerShell.
 
       Para máquinas virtuais:
@@ -181,7 +181,7 @@ Há várias maneiras de desabilitar o Depurador de Instantâneos:
 
 - Portal do Azure > a folha de recursos da máquina virtual/conjunto de dimensionamento de máquinas virtuais > extensões > desinstalar a extensão Microsoft. insights. VMDiagnosticsSettings
 
-- Cmdlets do PowerShell do [AZ PowerShell](https://docs.microsoft.com/powershell/azure/overview)
+- Cmdlets do PowerShell do [AZ PowerShell](/powershell/azure/overview)
 
    Máquina virtual:
 
