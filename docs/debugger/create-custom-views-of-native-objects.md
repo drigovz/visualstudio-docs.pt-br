@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cb2f9d9319a943182c8256256ca6ea7334c532d1
-ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
+ms.openlocfilehash: 53483979600093133c2b059d9ea921cdb8a08ab1
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72349480"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911621"
 ---
 # <a name="create-custom-views-of-c-objects-in-the-debugger-using-the-natvis-framework"></a>Criar exibições personalizadas C++ de objetos no depurador usando a estrutura Natvis
 
@@ -30,15 +30,15 @@ O Natvis substitui o arquivo *autoexp. dat* em versões anteriores do Visual Stu
 
 Você usa a estrutura Natvis para criar regras de visualização para os tipos criados, para que os desenvolvedores possam vê-las mais facilmente durante a depuração.
 
-Por exemplo, a ilustração a seguir mostra uma variável do tipo [Windows:: UI:: XAML:: Controls:: TextBox](http://go.microsoft.com/fwlink/?LinkId=258422) em uma janela do depurador sem nenhuma visualização personalizada aplicada.
+Por exemplo, a ilustração a seguir mostra uma variável do tipo [Windows:: UI:: XAML:: Controls:: TextBox](/uwp/api/Windows.UI.Xaml.Controls.TextBox) em uma janela do depurador sem nenhuma visualização personalizada aplicada.
 
-(../debugger/media/dbg_natvis_textbox_default.png "Visualização padrão da caixa de texto") de ![visualização padrão da caixa de texto]
+![Visualização padrão da caixa de texto](../debugger/media/dbg_natvis_textbox_default.png "Visualização padrão da caixa de texto")
 
 A linha realçada mostra a propriedade `Text` da classe `TextBox`. A hierarquia de classe complexa dificulta a localização dessa propriedade. O depurador não sabe como interpretar o tipo de cadeia de caracteres personalizada, portanto, você não pode ver a cadeia de caracteres mantida dentro da caixa de texto.
 
 O mesmo `TextBox` parece muito mais simples na janela variável quando regras de visualizador personalizado de Natvis são aplicadas. Os membros importantes da classe aparecem juntos e o depurador mostra o valor da cadeia de caracteres subjacente do tipo de cadeia de caracteres personalizada.
 
-![Dados de caixa de texto usando]Visualizer(../debugger/media/dbg_natvis_textbox_visualizer.png "dados usando o visualizador")
+![Dados de caixa de texto usando o visualizador](../debugger/media/dbg_natvis_textbox_visualizer.png "Dados de caixa de texto usando o visualizador")
 
 ## <a name="BKMK_Using_Natvis_files"></a>Usar arquivos. natvis em C++ projetos
 
@@ -71,7 +71,7 @@ Você pode adicionar um arquivo *. natvis* a qualquer C++ projeto.
 
 1. Selecione o C++ nó do projeto em **Gerenciador de soluções**e selecione **projeto** > **Adicionar novo item**ou clique com o botão direito do mouse no projeto e selecione **Adicionar** > **novo item**.
 
-1. Na caixa de diálogo **Adicionar novo item** , **selecione C++o arquivo Visual @no__t** -3**utilitário**de visualização do depurador  >  **(. natvis)** .
+1. Na caixa de diálogo **Adicionar novo item** , selecione o **utilitário**  **C++ Visual** > Utility > o **arquivo de visualização do depurador (. natvis)** .
 
 1. Nomeie o arquivo e selecione **Adicionar**.
 
@@ -138,7 +138,7 @@ As visualizações do Natvis usam expressões do C++ para especificar os itens d
 
 ## <a name="natvis-views"></a>Exibições de Natvis
 
-Você pode definir exibições de Natvis diferentes para exibir tipos de maneiras diferentes. Por exemplo, aqui está uma visualização de `std::vector` que define uma exibição simplificada chamada `simple`. Os elementos `DisplayString` e `ArrayItems` são mostrados na exibição padrão e na exibição `simple`, enquanto os itens `[size]` e `[capacity]` não são exibidos na exibição `simple`.
+Você pode definir exibições de Natvis diferentes para exibir tipos de maneiras diferentes. Por exemplo, aqui está uma visualização de `std::vector` que define uma exibição simplificada chamada `simple`. Os elementos `DisplayString` e `ArrayItems` são mostrados na exibição padrão e na exibição de `simple`, enquanto os itens `[size]` e `[capacity]` não são exibidos na exibição `simple`.
 
 ```xml
 <Type Name="std::vector&lt;*&gt;">
@@ -156,7 +156,7 @@ Você pode definir exibições de Natvis diferentes para exibir tipos de maneira
 
 Na janela **Watch** , use o especificador de formato **View** para especificar uma exibição alternativa. A exibição simples aparece como **VEC, View (simples)** :
 
-![Janela inspeção com exibição simples](../debugger/media/watch-simpleview.png "janela inspeção com exibição simples")
+![janela Inspeção com exibição simples](../debugger/media/watch-simpleview.png "janela Inspeção com exibição simples")
 
 ## <a name="BKMK_Diagnosing_Natvis_errors"></a>Erros de Natvis
 
@@ -185,7 +185,7 @@ O elemento `AutoVisualizer` pode ter os filhos [Type](#BKMK_Type), [HRESULT](#BK
 
 ### <a name="BKMK_Type"></a> Elemento Type
 
-Um @no__t básico-0 é semelhante a este exemplo:
+Um `Type` básico é semelhante a este exemplo:
 
 ```xml
 <Type Name="[fully qualified type name]">
@@ -256,7 +256,7 @@ O exemplo a seguir primeiro analisa a entrada que corresponde à STL 2015. Se is
 ```
 
 ### <a name="optional-attribute"></a>Atributo opcional
-Você pode colocar um atributo `Optional` em qualquer nó. Se uma subexpressão dentro de um nó opcional falhar na análise, o depurador ignorará esse nó, mas aplicará o restante das regras `Type`. No tipo a seguir, `[State]` é não opcional, mas `[Exception]` é opcional.  Se `MyNamespace::MyClass` tiver um campo chamado _ @ no__t-1, tanto o nó `[State]` quanto o nó `[Exception]` aparecerão, mas se não houver nenhum campo `_M_exceptionHolder`, somente o nó `[State]` será exibido.
+Você pode colocar um atributo `Optional` em qualquer nó. Se uma subexpressão dentro de um nó opcional falhar na análise, o depurador ignorará esse nó, mas aplicará o restante das regras `Type`. No tipo a seguir, `[State]` é não opcional, mas `[Exception]` é opcional.  Se `MyNamespace::MyClass` tiver um campo chamado _`M_exceptionHolder`, o nó `[State]` e o nó `[Exception]` aparecerão, mas se não houver nenhum campo de `_M_exceptionHolder`, somente o nó de `[State]` será exibido.
 
 ```xml
 <Type Name="MyNamespace::MyClass">
@@ -271,7 +271,7 @@ Você pode colocar um atributo `Optional` em qualquer nó. Se uma subexpressão 
 
 O atributo opcional `Condition` está disponível para muitos elementos de visualização e especifica quando usar uma regra de visualização. Se a expressão dentro do atributo Condition for resolvida como `false`, a regra de visualização não se aplicará. Se ele for avaliado como `true`, ou não houver nenhum atributo `Condition`, a visualização se aplicará. Você pode usar esse atributo para a lógica if-else nas entradas de visualização.
 
-Por exemplo, a visualização a seguir tem dois elementos `DisplayString` para um tipo de ponteiro inteligente. Quando o membro `_Myptr` está vazio, a condição do primeiro elemento `DisplayString` é resolvida como `true`, para que o formulário seja exibido. Quando o membro `_Myptr` não está vazio, a condição é avaliada como `false`, e o segundo elemento `DisplayString` é exibido.
+Por exemplo, a visualização a seguir tem dois elementos `DisplayString` para um tipo de ponteiro inteligente. Quando o membro de `_Myptr` está vazio, a condição do primeiro elemento `DisplayString` é resolvida como `true`, para que o formulário seja exibido. Quando o membro de `_Myptr` não está vazio, a condição é avaliada como `false`e o segundo elemento `DisplayString` é exibido.
 
 ```xml
 <Type Name="std::auto_ptr&lt;*&gt;">
@@ -285,7 +285,7 @@ Por exemplo, a visualização a seguir tem dois elementos `DisplayString` para u
 
 ### <a name="includeview-and-excludeview-attributes"></a>Atributos IncludeView e ExcludeView
 
-Os atributos `IncludeView` e `ExcludeView` especificam elementos a serem exibidos ou não exibidos em modos de exibição específicos. Por exemplo, na especificação Natvis a seguir de `std::vector`, a exibição `simple` não exibe os itens `[size]` e `[capacity]`.
+Os atributos `IncludeView` e `ExcludeView` especificam elementos a serem exibidos ou não exibidos em modos de exibição específicos. Por exemplo, na seguinte especificação de Natvis do `std::vector`, a exibição `simple` não exibe os itens `[size]` e `[capacity]`.
 
 ```xml
 <Type Name="std::vector&lt;*&gt;">
@@ -331,7 +331,7 @@ O elemento `DisplayString` especifica uma cadeia de caracteres a ser mostrada co
 
 Significa que as variáveis do tipo `CPoint` são exibidas como nesta ilustração:
 
- ![Usar um elemento DisplayString](../debugger/media/dbg_natvis_cpoint_displaystring.png "use um elemento DisplayString")
+ ![Usar um elemento DisplayString](../debugger/media/dbg_natvis_cpoint_displaystring.png "Usar um elemento DisplayString")
 
 Na expressão `DisplayString`, `x` e `y`, que são membros de `CPoint`, estão dentro das chaves, para que seus valores sejam avaliados. O exemplo também mostra como você pode escapar uma chave usando chaves duplas (`{{` ou `}}`).
 
@@ -350,7 +350,7 @@ O elemento `StringView` define um valor que o depurador pode enviar para o Visua
 
 O objeto `CStringT` é exibido em uma janela variável como neste exemplo:
 
-Elemento saplaystring do ![CStringT](../debugger/media/dbg_natvis_displaystring_cstringt.png "CStringT")
+![Elemento CStringT DisplayString](../debugger/media/dbg_natvis_displaystring_cstringt.png "Elemento CStringT DisplayString")
 
 Adicionar um elemento `StringView` informa ao depurador que ele pode exibir o valor como uma visualização de texto.
 
@@ -363,7 +363,7 @@ Adicionar um elemento `StringView` informa ao depurador que ele pode exibir o va
 
 Durante a depuração, você pode selecionar o ícone de lupa ao lado da variável e, em seguida, selecionar **Visualizador de texto** para exibir a cadeia de caracteres para a qual **m_pszData** aponta.
 
- ![Dados de CStringT com StringView visualizador](../debugger/media/dbg_natvis_stringview_cstringt.png "de CStringT com visualizador de StringView")
+ ![Dados do CStringT com o Visualizador do StringView](../debugger/media/dbg_natvis_stringview_cstringt.png "Dados do CStringT com o Visualizador do StringView")
 
 A expressão `{m_pszData,su}` inclui um C++ especificador de formato **Su**, para exibir o valor como uma cadeia de caracteres Unicode. Para obter mais informações, consulte [Formatar especificadores C++em ](../debugger/format-specifiers-in-cpp.md).
 
@@ -419,7 +419,7 @@ Use o nó `ArrayItems` para que o depurador do Visual Studio interprete o tipo c
 
 Um `std::vector` mostra os elementos individuais quando expandido na janela variável:
 
-![std:: vector usando a expansão de ArrayItems](../debugger/media/dbg_natvis_expand_arrayitems_stdvector.png "std:: vector usando a expansão ArrayItems")
+![std:: vector usando a expansão ArrayItems](../debugger/media/dbg_natvis_expand_arrayitems_stdvector.png "std:: vector usando a expansão ArrayItems")
 
 O nó `ArrayItems` deve ter:
 
@@ -429,7 +429,7 @@ O nó `ArrayItems` deve ter:
 O valor padrão do limite inferior da matriz é 0. Para substituir o valor, use um elemento `LowerBound`. Os arquivos *. natvis* fornecidos com o Visual Studio têm exemplos.
 
 >[!NOTE]
->Você pode usar o operador `[]`, por exemplo, `vector[i]`, com qualquer visualização de matriz unidimensional que usa `ArrayItems`, mesmo que o próprio tipo (por exemplo, `CATLArray`) não permita esse operador.
+>Você pode usar o operador de `[]`, por exemplo, `vector[i]`, com qualquer visualização de matriz unidimensional que usa `ArrayItems`, mesmo que o próprio tipo (por exemplo `CATLArray`) não permita esse operador.
 
 Você também pode especificar matrizes multidimensionais. Nesse caso, o depurador precisa de um pouco mais de informações para exibir corretamente os elementos filho:
 
@@ -450,11 +450,11 @@ Você também pode especificar matrizes multidimensionais. Nesse caso, o depurad
 
 - `Direction` especifica se a matriz está na ordem de linha-principal ou coluna-principal.
 - `Rank` especifica a classificação da matriz.
-- O elemento `Size` aceita o parâmetro implícito `$i`, que ele substitui pelo índice de dimensão para descobrir o tamanho da matriz na dimensão. No exemplo anterior, a expressão `_M_extent.M_base[0]` deve dar o comprimento da dimensão 0º, `_M_extent._M_base[1]` o 1º e assim por diante.
+- O elemento `Size` aceita o parâmetro implícito `$i`, que ele substitui pelo índice de dimensão para descobrir o tamanho da matriz na dimensão. No exemplo anterior, a expressão `_M_extent.M_base[0]` deve dar o comprimento da dimensão 0º, `_M_extent._M_base[1]` 1ª e assim por diante.
 
 Veja como um objeto `Concurrency::array` bidimensional procura na janela do depurador:
 
-![Matriz bidimensional com](../debugger/media/dbg_natvis_expand_arrayitems_2d.png "matriz bidimensional de expansão ArrayItems com expansão ArrayItems")
+![Matriz bidimensional com expansão ArrayItems](../debugger/media/dbg_natvis_expand_arrayitems_2d.png "Matriz bidimensional com expansão ArrayItems")
 
 #### <a name="BKMK_IndexListItems_expansion"></a> Expansão de IndexListItems
 
@@ -476,7 +476,7 @@ Você poderá usar a expansão `ArrayItems` somente se os elementos da matriz fo
 A única diferença entre `ArrayItems` e `IndexListItems` é a `ValueNode`, que espera a expressão completa para<sup>o elemento i</sup> com o parâmetro de `$i` implícito.
 
 >[!NOTE]
->Você pode usar o operador `[]`, por exemplo, `vector[i]`, com qualquer visualização de matriz unidimensional que usa `IndexListItems`, mesmo que o próprio tipo (por exemplo, `CATLArray`) não permita esse operador.
+>Você pode usar o operador de `[]`, por exemplo, `vector[i]`, com qualquer visualização de matriz unidimensional que usa `IndexListItems`, mesmo que o próprio tipo (por exemplo `CATLArray`) não permita esse operador.
 
 #### <a name="BKMK_LinkedListItems_expansion"></a> Expansão de LinkedListItems
 
@@ -582,9 +582,9 @@ A sintaxe é semelhante ao nó `LinkedListItems`. `LeftPointer`, `RightPointer` 
 
 Por exemplo, o tipo de ponteiro inteligente `auto_ptr<vector<int>>` normalmente é exibido como:
 
- (../debugger/media/dbg_natvis_expand_expandeditem_default.png "expansão padrão") de expansão padrão de ![&#95;vetor&#60;&#60;&#62; &#62; de auto PTR]
+ ![expansão&#95;&#62; padrão&#60;de&#60;vetor&#62; de auto PTR](../debugger/media/dbg_natvis_expand_expandeditem_default.png "Expansão padrão")
 
- Para ver os valores do vetor, você precisa fazer uma busca detalhada de dois níveis na janela variável, passando pelo membro `_Myptr`. Adicionando um elemento `ExpandedItem`, você pode eliminar a variável `_Myptr` da hierarquia e exibir diretamente os elementos do vetor:
+ Para ver os valores do vetor, você precisa fazer uma busca detalhada de dois níveis na janela variável, passando o membro `_Myptr`. Adicionando um elemento `ExpandedItem`, você pode eliminar a variável `_Myptr` da hierarquia e exibir diretamente os elementos do vetor:
 
 ```xml
 <Type Name="std::auto_ptr&lt;*&gt;">
@@ -595,7 +595,7 @@ Por exemplo, o tipo de ponteiro inteligente `auto_ptr<vector<int>>` normalmente 
 </Type>
 ```
 
- (../debugger/media/dbg_natvis_expand_expandeditem_visualized.png "expansão de ExpandedItem") de ![expansão de&#95;vetor&#60;&#60;int&#62; &#62; ExpandedItem de auto PTR]
+ ![expansão&#95;de&#60;ExpandedItem&#60;de&#62; &#62; vetor int de auto PTR](../debugger/media/dbg_natvis_expand_expandeditem_visualized.png "Expansão de ExpandedItem")
 
 O exemplo a seguir mostra como agregar Propriedades da classe base em uma classe derivada. Suponha que a classe `CPanel` seja derivada de `CFrameworkElement`. Em vez de repetir as propriedades que vêm da classe base `CFrameworkElement`, a visualização de nó `ExpandedItem` acrescenta essas propriedades à lista filho da classe `CPanel`.
 
@@ -661,11 +661,11 @@ Veja um exemplo de um elemento UIVisualizer:
 </AutoVisualizer>
 ```
 
-- Um par de atributos `ServiceId` @ no__t-1 @ no__t-2 identifica um `UIVisualizer`. O `ServiceId` é o GUID do serviço que o pacote do visualizador expõe. `Id` é um identificador exclusivo que diferencia os visualizadores, se um serviço fornecer mais de um. No exemplo anterior, o mesmo serviço de visualizador fornece dois visualizadores.
+- Um `ServiceId` - `Id` par de atributos identifica uma `UIVisualizer`. O `ServiceId` é o GUID do serviço que o pacote do visualizador expõe. `Id` é um identificador exclusivo que diferencia os visualizadores, se um serviço fornecer mais de um. No exemplo anterior, o mesmo serviço de visualizador fornece dois visualizadores.
 
 - O atributo `MenuName` define um nome de visualisador para ser exibido na lista suspensa ao lado do ícone de lupa no depurador. Por exemplo:
 
-  Menu de ![atalho do menu do UIVisualizer]menu de atalho do menu(../debugger/media/dbg_natvis_vectorvisualizer.png "UIVisualizer")
+  ![Menu de atalho do menu UIVisualizer](../debugger/media/dbg_natvis_vectorvisualizer.png "Menu de atalho do menu UIVisualizer")
 
 Cada tipo definido no arquivo *. natvis* deve listar explicitamente qualquer visualizador de interface do usuário que possa exibi-lo. O depurador corresponde às referências do visualizador nas entradas de tipo com os visualizadores registrados. Por exemplo, a seguinte entrada de tipo para `std::vector` faz referência a `UIVisualizer` no exemplo anterior.
 

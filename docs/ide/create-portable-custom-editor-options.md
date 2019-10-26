@@ -7,16 +7,16 @@ helpviewer_keywords:
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: cab93bcf60c5a4fb5034bfdfd7601e4f846996d0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 7cbb8c9be8ed56294d865d2612a8d79fcdb39df8
+ms.sourcegitcommit: 4f82de3fb0cfae226aef1abb40c47e63d2036a5c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652625"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72919126"
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>Criar configurações do editor portátil e personalizado com o EditorConfig
 
-Adicione um arquivo [EditorConfig](http://editorconfig.org/) ao projeto ou à base de código para impor estilos de codificação consistentes para todas as pessoas que trabalham com a base de código. As configurações de EditorConfig têm precedência sobre as configurações do editor de texto global do Visual Studio. Isso significa que é possível personalizar cada base de código para usar as configurações de editor de texto específicas para esse projeto. Você ainda pode definir suas preferências pessoais editor na caixa de diálogo **Opções** do Visual Studio. Essas configurações serão aplicadas sempre que você estiver trabalhando em uma base de código sem um arquivo *.editorconfig* ou quando o arquivo *.editorconfig* não substituir determinada configuração. Um exemplo de como essa preferência é o estilo de recuo&mdash;tabulações ou espaços.
+Adicione um arquivo [EditorConfig](https://editorconfig.org/) ao projeto ou à base de código para impor estilos de codificação consistentes para todas as pessoas que trabalham com a base de código. As configurações de EditorConfig têm precedência sobre as configurações do editor de texto global do Visual Studio. Isso significa que é possível personalizar cada base de código para usar as configurações de editor de texto específicas para esse projeto. Você ainda pode definir suas preferências pessoais editor na caixa de diálogo **Opções** do Visual Studio. Essas configurações serão aplicadas sempre que você estiver trabalhando em uma base de código sem um arquivo *.editorconfig* ou quando o arquivo *.editorconfig* não substituir determinada configuração. Um exemplo de como essa preferência é o estilo de recuo&mdash;tabulações ou espaços.
 
 As configurações do EditorConfig são compatíveis com vários editores de códigos e IDEs, incluindo o Visual Studio. Ele é um componente portátil que acompanha o seu código e pode impor estilos de codificação mesmo fora do Visual Studio.
 
@@ -50,14 +50,14 @@ As configurações em arquivos EditorConfig permitem manter configurações e es
 
 As convenções de codificação usadas em seus projetos pessoais podem ser diferentes das usadas nos projetos da sua equipe. Por exemplo, talvez você prefira que, quando estiver codificando, o recuo adicione um caractere de tabulação. No entanto, sua equipe pode preferir que o recuo adicione quatro caracteres de espaço em vez de um caractere de tabulação. Os arquivos EditorConfig resolvem esse problema permitindo que você tenha uma configuração para cada cenário.
 
-Como as configurações estão contidas em um arquivo na base de código, elas viajam juntamente com essa base de código. Contanto que você abra o arquivo de código em um editor em conformidade com o EditorConfig, as configurações do editor de texto são implementadas. Para obter mais informações sobre arquivos EditorConfig, consulte o site [EditorConfig.org](http://editorconfig.org/).
+Como as configurações estão contidas em um arquivo na base de código, elas viajam juntamente com essa base de código. Contanto que você abra o arquivo de código em um editor em conformidade com o EditorConfig, as configurações do editor de texto são implementadas. Para obter mais informações sobre arquivos EditorConfig, consulte o site [EditorConfig.org](https://editorconfig.org/).
 
 > [!NOTE]
 > As convenções definidas em um arquivo EditorConfig não podem ser aplicadas em um pipeline de CI/CD como erros ou avisos de build. Qualquer desvio de estilo aparece apenas no editor do Visual Studio e na **Lista de Erros**.
 
 ## <a name="supported-settings"></a>Configurações com suporte
 
-O editor no Visual Studio é compatível com o conjunto principal de [propriedades do EditorConfig](http://editorconfig.org/#supported-properties):
+O editor no Visual Studio é compatível com o conjunto principal de [propriedades do EditorConfig](https://editorconfig.org/#supported-properties):
 
 - indent_style
 - indent_size
@@ -182,6 +182,6 @@ Você pode controlar o escopo das convenções do EditorConfig configurando a pr
 
 - [Convenções de estilo de código do .NET](../ide/editorconfig-code-style-settings-reference.md)
 - [Dando suporte ao EditorConfig para um serviço de linguagem](../extensibility/supporting-editorconfig.md)
-- [EditorConfig.org](http://editorconfig.org/)
+- [EditorConfig.org](https://editorconfig.org/)
 - [Recursos do Editor de Códigos](writing-code-in-the-code-and-text-editor.md)
 - [EditorConfig (Visual Studio para Mac)](/visualstudio/mac/editorconfig)

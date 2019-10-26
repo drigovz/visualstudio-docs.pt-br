@@ -29,18 +29,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 62fb77590a20b0e31648cab10f310851fd65820e
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
+ms.openlocfilehash: 135c7c66c9c6602f8c2e32bbdc1ba6e2fd28f548
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70179998"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911514"
 ---
 # <a name="create-a-visual-map-of-the-call-stack-while-debugging-c-visual-basic-c-javascript"></a>Criar um mapa Visual da pilha de chamadas durante a depuraçãoC#(, Visual Basic C++,, JavaScript)
 
 Crie um mapa de códigos para rastrear visualmente a pilha de chamadas durante a depuração. Você pode fazer anotações no mapa para acompanhar o que o código está fazendo, de modo a se concentrar na localização de bugs.
 
-Para obter instruções, Assista a este vídeo: [Vídeo: Depurar visualmente com a integração do depurador do mapa de código (canal 9)](http://go.microsoft.com/fwlink/?LinkId=293418)
+Para obter instruções, assista a este vídeo: [Vídeo: Depurar visualmente com a integração do depurador mapa de códigos (Channel 9)](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012Debug-visually-with-Code-Map-debugger-integration)
 
 Para obter detalhes de comandos e ações que você pode usar com mapas de código, consulte [procurar e reorganizar mapas de código](../modeling/browse-and-rearrange-code-maps.md).
 
@@ -53,7 +53,7 @@ Aqui está uma visão rápida de um mapa de código:
 
 ## <a name="MapStack"></a> Mapear a pilha de chamadas
 
-1. Em um projeto C#Visual Studio Enterprise, Visual Basic C++, ou JavaScript, inicie a depuração selecionando **depurar** > **Iniciar Depuração** ou pressionando **F5**.
+1. Em um projeto C#Visual Studio Enterprise, Visual Basic C++, ou JavaScript, inicie a depuração selecionando **depurar** > **iniciar a depuração** ou pressionar **F5**.
 
 1. Depois que o aplicativo entrar no modo de interrupção ou você entrar em uma função, selecione **depurar** > **mapa de código**ou pressione **Ctrl**+**Shift**+ **`** .
 
@@ -72,12 +72,12 @@ Para obter mais informações sobre um item, passe o mouse sobre ele e examine a
 
 ## <a name="map-external-code"></a>Mapear código externo
 
-Por padrão, somente seu próprio código aparece no mapa. Para ver o código externo no mapa:
+Por padrão, apenas seu próprio código aparece no mapa. Para ver o código externo no mapa:
 
 - Clique com o botão direito do mouse na janela **pilha de chamadas** e selecione **Mostrar código externo**:
 
   ![Exibir código externo usando a janela pilha de chamadas](../debugger/media/debuggermap_callstackmenu.png "DebuggerMap_CallStackMenu")
-- Ou, desmarque **habilitar apenas meu código** na**depuração**de **Opções** > de **ferramentas** do Visual Studio (ou **depurar**) >:
+- Ou, desmarque **habilitar apenas meu código** nas **Opções** de > de **ferramentas** do Visual Studio (ou **depurar**) > **depuração**:
 
   ![Mostrar código externo usando a caixa de diálogo opções](../debugger/media/debuggermap_debugoptions.png "DebuggerMap_DebugOptions")
 
@@ -97,7 +97,7 @@ No menu **layout** , você pode:
 
 Você pode adicionar comentários para controlar o que está acontecendo no código.
 
-Para adicionar um comentário, clique com o botão direito do mouse no mapa do código e selecione **Editar** > **novo comentário**e digite o comentário.
+Para adicionar um comentário, clique com o botão direito do mouse no mapa do código e selecione **editar** > **novo comentário**e digite o comentário.
 
 Para adicionar uma nova linha em um comentário, pressione **Shift**+**Enter**.
 
@@ -109,7 +109,7 @@ Para adicionar uma nova linha em um comentário, pressione **Shift**+**Enter**.
 
 ![Atualizar mapa de códigos com a próxima pilha de chamadas](../debugger/media/debuggermap_addclearcallstack.png "DebuggerMap_AddClearCallStack")
 
-Para impedir que o mapa adicione novas pilhas de chamadas automaticamente, selecione ![Mostrar pilha de chamadas no mapa de códigos mostrar automaticamente]a(../debugger/media/debuggermap_automaticupdateicon.gif "pilha de chamadas no mapa de códigos automaticamente") na barra de ferramentas do mapa de códigos. O mapa continua realçando as pilhas de chamadas existentes. Para adicionar manualmente a pilha de chamadas atual ao mapa, pressione **Ctrl**+**Shift**+ **`** .
+Para impedir que o mapa adicione novas pilhas de chamadas automaticamente, selecione ![Mostrar pilha de chamadas no mapa de códigos automaticamente](../debugger/media/debuggermap_automaticupdateicon.gif "Mostrar pilha de chamadas no mapa de códigos automaticamente") na barra de ferramentas do mapa de códigos. O mapa continua realçando as pilhas de chamadas existentes. Para adicionar manualmente a pilha de chamadas atual ao mapa, pressione **Ctrl**+**Shift**+ **`** .
 
 ## <a name="AddRelatedCode"></a> Adicionar código relacionado ao mapa
 
@@ -119,12 +119,12 @@ Para ir para a definição de um método no código, clique duas vezes no métod
 
 ![Ir para a definição de código de um método no mapa de códigos](../debugger/media/debuggermap_gotocodedefinition.png "DebuggerMap_GoToCodeDefinition")
 
-Para adicionar itens que você deseja controlar ao mapa, clique com o botão direito do mouse em um método e selecione os itens que deseja rastrear. Os itens mais recentemente adicionados aparecem em verde.
+Para adicionar itens que você deseja controlar ao mapa, clique com o botão direito do mouse em um método e selecione os itens que deseja rastrear. Os itens adicionados mais recentemente aparecem em verde.
 
 ![Campos relacionados a um método no mapa de códigos de pilha de chamadas](../debugger/media/debuggermap_showedfields.png "DebuggerMap_ShowedFields")
 
 >[!NOTE]
->Por padrão, a adição de itens no mapa também adiciona os nós do grupo pai, como a classe, namespace e assembly. Você pode desativar e desativar esse recurso selecionando o botão **incluir pais** na barra de ferramentas do mapa de códigos ou pressionando **Ctrl** enquanto adiciona itens.
+>Por padrão, a adição de itens ao mapa também adiciona os nós do grupo pai, como a classe, o namespace e o assembly. Você pode desativar e desativar esse recurso selecionando o botão **incluir pais** na barra de ferramentas do mapa de códigos ou pressionando **Ctrl** enquanto adiciona itens.
 
 ![Mostrar campos em um método no mapa de códigos de pilha de chamadas](../debugger/media/debuggermap_showfields.png "DebuggerMap_ShowFields")
 
@@ -137,7 +137,7 @@ Continue criando o mapa para ver mais código.
 ## <a name="FindBugs"></a> Localizar bugs usando o mapa
  Visualizar seu código pode ajudar a localizar bugs com mais rapidez. Por exemplo, suponha que você esteja investigando um bug em um aplicativo de desenho. Quando você desenha uma linha e tenta desfazê-la, nada acontece até que você desenhe outra linha.
 
- Para que você define pontos de interrupção a `clear`, `undo`, e `Repaint` métodos, inicie a depuração e cria um mapa como este:
+ Portanto, você define pontos de interrupção nos métodos `clear`, `undo` e `Repaint`, inicia a depuração e cria um mapa como este:
 
  ![Adicionar outra pilha de chamadas ao mapa de códigos](../debugger/media/debuggermap_addpaintobjectcallstack.png "DebuggerMap_AddPaintObjectCallStack")
 
