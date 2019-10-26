@@ -1,5 +1,5 @@
 ---
-title: 'DA0018: Aplicativo de 32 bits em execução em limites de memória gerenciada do processo | Microsoft Docs'
+title: 'DA0018: aplicativo de 32 bits em execução em limites de memória gerenciada do processo | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: da437b974eff9beb671f5fe889bec427f9f85f4c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: cadf5f605b78dd82ddf205ecfb5b0beded92a59f
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62989759"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72910513"
 ---
-# <a name="da0018-32-bit-application-running-at-process-managed-memory-limits"></a>DA0018: Aplicativo de 32 bits em execução nos limites de memória gerenciada por processo
+# <a name="da0018-32-bit-application-running-at-process-managed-memory-limits"></a>DA0018: aplicativo de 32 bits em execução em limites de memória gerenciada do processo
 
 |||
 |-|-|
@@ -54,7 +54,7 @@ ms.locfileid: "62989759"
 
 - otimizando o uso de recursos de memória gerenciada do aplicativo
 
-   - ou -
+   \- ou -
 
 - tomar medidas para aliviar as restrições de arquitetura em relação ao tamanho máximo de memória virtual para um processo de 32 bits
 
@@ -64,7 +64,7 @@ ms.locfileid: "62989759"
 
   Use a [Exibição de Alocações](../profiling/dotnet-memory-allocations-view.md) para determinar o caminho de execução que resultou nessas alocações.
 
-  Para obter mais informações sobre como melhorar o desempenho da coleta de lixo, consulte o artigo técnico sobre o .NET Framework [Garbage Collector Basics and Performance Hints](http://go.microsoft.com/fwlink/?LinkId=177946) (Noções básicas sobre o coletor de lixo e dicas de desempenho) no site do MSDN.
+  Para obter mais informações sobre como melhorar o desempenho da coleta de lixo, consulte o artigo técnico sobre o .NET Framework [Garbage Collector Basics and Performance Hints](/previous-versions/dotnet/articles/ms973837(v=msdn.10)) (Noções básicas sobre o coletor de lixo e dicas de desempenho) no site do MSDN.
 
   Para obter alívio de arquitetura das restrições de memória virtual em relação ao tamanho da parte privada de um espaço de endereço do processo, tente executar esse processo de 32 bits em um computador de 64 bits.  Um processo de 32 bits em um computador de 64 bits pode adquirir até 4 GB de memória virtual privada.
 

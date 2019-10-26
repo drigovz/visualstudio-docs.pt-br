@@ -19,22 +19,22 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 38cde5c1500168dcb36021c530799d1d8d1effb9
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
-ms.translationtype: HT
+ms.openlocfilehash: 867350c1a786971a25256bbe8f60ac2bfca14a19
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66745312"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72910320"
 ---
 # <a name="profile-on-hpc-high-performance-computing-clusters"></a>Criar perfil em clusters HPC (computação de alto desempenho)
 
 Você pode criar um perfil em nós de computação de clusters do Microsoft Windows HPC usando o método de amostragem das Ferramentas de Criação de Perfil do Visual Studio. Para obter mais informações sobre HPC, consulte [Windows HPC](https://azure.microsoft.com/solutions/big-compute/) no site da Microsoft.
 
-## <a name="prerequisites"></a>Pré-requisitos
+## <a name="prerequisites"></a>Prerequisites
 
 Para criar o perfil em um nó de computação do HPC, faça o seguinte:
 
-- Instale o Microsoft HPC Pack 2008 no mesmo computador onde está o Visual Studio. O computador não precisa fazer parte do cluster de HPC. Você pode instalar o HPC Pack por meio do [Centro de Download da Microsoft](http://go.microsoft.com/fwlink/?LinkID=177414).
+- Instale o Microsoft HPC Pack 2008 no mesmo computador onde está o Visual Studio. O computador não precisa fazer parte do cluster de HPC. Você pode instalar o HPC Pack por meio do [Centro de Download da Microsoft](https://www.microsoft.com/download/details.aspx?id=4812).
 
 - Instale o .NET Framework 4 e a versão autônoma das Ferramentas de Criação de Perfil do nó de computação HPC. Os programas de instalação estão disponíveis para o .NET Framework e o criador de perfil autônomo na mídia de instalação do Visual Studio. **Observação** É necessário reiniciar o computador depois de instalar o .NET Framework e antes de instalar as Ferramentas de Criação de Perfil.
 
@@ -124,7 +124,7 @@ Você pode alterar as propriedades de sessão de desempenho definidas no Assiste
 
 ### <a name="hpc-launch-properties"></a>Propriedades de inicialização do HPC
 
-|Propriedade|Descrição|
+|propriedade|Descrição|
 |--------------|-----------------|
 |**Nó principal**|Especifica o computador que atua como o nó principal do HPC na criação de perfil.|
 |**Número de processos**|Especifica o número de instâncias do aplicativo a serem executadas no aplicativo analisado.|
@@ -135,7 +135,7 @@ Você pode alterar as propriedades de sessão de desempenho definidas no Assiste
 
 ### <a name="advanced-properties"></a>Propriedades avançadas
 
-| Propriedade | Descrição |
+| propriedade | Descrição |
 |---------------------------------------| - |
 | **Nome do projeto** | O nome do projeto ou solução [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] atual. |
 | **Limpar quando o criador de perfil é interrompido** | Quando verdadeiro, remove os binários que foram implantados para o diretório de execução. Arquivos e diretórios criados pelo programa de usuário não são removidos nesta etapa. Se o diretório de execução e o diretório de implantação foram criadas pelo IDE, o IDE tenta removê-los, mas não o fará se eles tiverem arquivos não implantados pelo IDE. |

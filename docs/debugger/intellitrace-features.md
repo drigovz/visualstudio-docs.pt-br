@@ -20,18 +20,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 852070c74a7e7171525a5feaa6cc7617fe83c00d
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: bcdb1b2b6dc4b64d180eb03fc76b26b4ef16e9d0
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68925359"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911410"
 ---
 # <a name="intellitrace-features-c-visual-basic-c"></a>Recursos do IntelliTraceC#(, Visual Basic C++,)
 
 Você pode usar o IntelliTrace para registrar eventos e o método chama seu aplicativo, o que permite que você examine seu estado (valores de pilha de chamada e variáveis locais) em pontos diferentes na execução. Basta iniciar a depuração como de costume – o IntelliTrace é ativado por padrão e você pode ver que o IntelliTrace de informações está gravando na janela novo **ferramentas de diagnóstico** na guia **eventos** . Selecione um evento e clique em **Ativar depuração histórica** para ver a pilha de chamadas e os locais registrados para este evento.
 
-Para obter uma descrição passo a passo, consulte [Walkthrough: Usando o](../debugger/walkthrough-using-intellitrace.md)IntelliTrace.
+Para obter uma descrição passo a passo, consulte [passo a passo: Usando o IntelliTrace](../debugger/walkthrough-using-intellitrace.md).
 
 O IntelliTrace está disponível na edição Visual Studio Enterprise, mas não nas edições Visual Studio Professional ou Community.
 
@@ -123,7 +123,7 @@ Ao salvar dados do IntelliTrace no arquivo, você obtém um arquivo. itrace para
 
 ## <a name="forums"></a>Fóruns
 
-[Depurador do Visual Studio](http://go.microsoft.com/fwlink/?LinkId=262263)
+[Depurador do Visual Studio](https://social.msdn.microsoft.com/Forums/en-US/home)
 
 ## <a name="videos"></a>Vídeos
 

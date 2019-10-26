@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ae0507e75a84f18350817a33abe25d3e59fa9aa2
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: fa9d6658ae14c4b84aae9361f73e4701e758f975
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926323"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911216"
 ---
 # <a name="advanced-settings-dialog-box-concurrency-visualizer"></a>Caixa de diálogo Configurações Avançadas (Visualizador de Simultaneidade)
 Usando a caixa de diálogo **Configurações Avançadas** da Visualização Simultânea, você pode controlar como os rastreamentos são coletados.  A caixa de diálogo tem guias para símbolos, Apenas Meu Código, buffer, filtragem, eventos CLR, marcadores, provedores e arquivos.
@@ -29,7 +29,7 @@ Usando a caixa de diálogo **Configurações Avançadas** da Visualização Simu
  Os caminhos dos arquivos .*exe* e .*dll* são armazenados no arquivo de rastreamento quando o rastreamento é coletado.  A alteração dessa configuração não afeta nenhum rastreamento coletado anteriormente.
 
 ## <a name="buffering"></a>Buffer
- A Visualização Simultânea usa ETW (Rastreamento de Eventos para Windows) ao coletar um rastreamento.  O ETW usa diversos buffers conforme ele armazena eventos.  As configurações padrão de buffer ETW podem não ser ideais em todos os casos e, em alguns casos, podem causar problemas como eventos perdidos.  Você pode usar a guia armazenamento em buffer para definir as configurações de buffer ETW. Para obter mais informações, consulte [Rastreamento de eventos](http://go.microsoft.com/fwlink/?LinkId=234579) e [Estrutura EVENT_TRACE_PROPERTIES](http://go.microsoft.com/fwlink/?LinkId=234580).
+ A Visualização Simultânea usa ETW (Rastreamento de Eventos para Windows) ao coletar um rastreamento.  O ETW usa diversos buffers conforme ele armazena eventos.  As configurações padrão de buffer ETW podem não ser ideais em todos os casos e, em alguns casos, podem causar problemas como eventos perdidos.  Você pode usar a guia armazenamento em buffer para definir as configurações de buffer ETW. Para obter mais informações, consulte [Rastreamento de eventos](/windows/win32/etw/event-tracing-portal) e [Estrutura EVENT_TRACE_PROPERTIES](/windows/win32/api/evntrace/ns-evntrace-event_trace_properties).
 
 ## <a name="filter"></a>Filtro
  Na guia Filtro, você pode selecionar o conjunto de eventos que a Visualização Simultânea coleta. Selecionar um subconjunto de eventos limita os tipos de dados que são exibidos nos relatórios, reduz o tamanho de cada rastreamento e reduz o tempo necessário para processar rastreamentos.
