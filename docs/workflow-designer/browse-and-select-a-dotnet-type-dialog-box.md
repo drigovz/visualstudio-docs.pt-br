@@ -11,12 +11,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: dfdbe972034920869908c1bac1cb349c98d96d3f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 2efea8f23e42b9f4839c8a1ae0d74248738b9cf4
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650717"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985347"
 ---
 # <a name="browse-and-select-a-net-type-dialog-box"></a>Procurar e selecione uma caixa de diálogo de tipo do .NET
 
@@ -31,7 +31,7 @@ Esta caixa de diálogo é empregada em um número de cenários do usuário, incl
 - Para adicionar uma captura na atividade de <xref:System.Activities.Statements.TryCatch> .
 
 > [!NOTE]
-> O navegador do tipo pode exibir tipos de jagged array Visual Basic, mas não tipos de matriz multidimensional. Consulte [matrizes denteadas](http://go.microsoft.com/fwlink/?LinkId=195226) e [matrizes multidimensionais](http://go.microsoft.com/fwlink/?LinkId=195227) para obter detalhes.
+> O navegador do tipo pode exibir tipos de jagged array Visual Basic, mas não tipos de matriz multidimensional. Consulte [matrizes denteadas](/previous-versions/visualstudio/visual-studio-2008/hkhhsz9t(v=vs.90)) e [matrizes multidimensionais](/previous-versions/visualstudio/visual-studio-2008/d2de1t93(v=vs.90)) para obter detalhes.
 
 ## <a name="selecting-a-value-or-reference-type-from-the-type-browser"></a>Selecionando um tipo de valor ou tipo de referência de navegador de tipo
 

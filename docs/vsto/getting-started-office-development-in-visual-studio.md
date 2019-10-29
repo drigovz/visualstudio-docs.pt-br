@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7a8a49f2b72745dac18a46fe8567578bca090834
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 1439bef59c621523b74f0e0634cd809deea1f3ee
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551499"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72986069"
 ---
 # <a name="get-started-office-development-in-visual-studio"></a>Introdução (desenvolvimento do Office no Visual Studio)
   Esta seção contém tópicos que ajudam você a começar a usar o Microsoft Office ferramentas de desenvolvedor no Visual Studio.
@@ -33,7 +33,7 @@ ms.locfileid: "69551499"
 
 - [Alterações no design de projetos do Office direcionados para o .NET Framework 4 ou o .NET Framework 4,5](../vsto/changes-to-the-design-of-office-projects-that-target-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md)
 
- Descreve o novo design de projetos do Office direcionados [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] para o ou posterior e lista alterações significativas no código em projetos do Office que você migra [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] para o ou posterior.
+ Descreve o novo design de projetos do Office direcionados para o [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou posterior e lista alterações significativas no código em projetos do Office que você migra para o [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou posterior.
 
 - [Recursos disponíveis pelo aplicativo do Office e tipo de projeto](../vsto/features-available-by-office-application-and-project-type.md)
 
@@ -88,4 +88,4 @@ ms.locfileid: "69551499"
 
  Fornece informações sobre como tornar as soluções do Office disponíveis para seus usuários e descreve os principais problemas a serem considerados quando você escolhe um método de implantação e define a segurança.
 
-- [Ferramentas do Visual Studio para artigos técnicos do Office e instruções visuais](http://go.microsoft.com/fwlink/?LinkID=106640) Contém links para vídeos e artigos técnicos sobre soluções do Office criadas usando o Visual Studio.
+- [Ferramentas do Visual Studio para artigos técnicos do Office e instruções visuais](/previous-versions/office/developer/office-2007/bb871648(v=office.12)) Contém links para vídeos e artigos técnicos sobre soluções do Office criadas usando o Visual Studio.

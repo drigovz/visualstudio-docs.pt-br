@@ -28,12 +28,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c294ce3c6dcf3a880cf5f57ca825064366e08e2b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 736b203feb5b1a640d7865b92a6d3ad191397d26
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72668228"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985041"
 ---
 # <a name="map-methods-on-the-call-stack-while-debugging-in-visual-studio"></a>Mapear métodos na pilha de chamadas ao depurar no Visual Studio
 
@@ -59,7 +59,7 @@ Crie um mapa de códigos para rastrear visualmente a pilha de chamadas durante a
 
   Consulte:
 
-- [Vídeo: Depurar visualmente com a integração do depurador do mapa de código (canal 9)](http://go.microsoft.com/fwlink/?LinkId=293418)
+- [Vídeo: Depurar visualmente com a integração do depurador do mapa de código (canal 9)](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012Debug-visually-with-Code-Map-debugger-integration)
 
 - [Mapear a pilha de chamadas](#MapStack)
 
@@ -178,7 +178,7 @@ Crie um mapa de códigos para rastrear visualmente a pilha de chamadas durante a
 
 - **Como fazer impedir que o mapa adicione novas pilhas de chamadas automaticamente?**
 
-   Escolha ![Button &#45; mostrar pilha de chamadas no mapa de códigos ](../debugger/media/debuggermap_automaticupdateicon.gif) automaticamente na barra de ferramentas do mapa. Para adicionar manualmente a pilha de chamadas atual ao mapa, pressione **Ctrl**  + **Shift**  +  **`** .
+   Escolha ![botão &#45; mostrar pilha de chamadas no mapa de códigos](../debugger/media/debuggermap_automaticupdateicon.gif)automaticamente na barra de ferramentas do mapa. Para adicionar manualmente a pilha de chamadas atual ao mapa, pressione **Ctrl**  + **Shift**  +  **`** .
 
    O mapa continuará realçando as pilhas de chamadas existentes no mapa enquanto você estiver depurando.
 

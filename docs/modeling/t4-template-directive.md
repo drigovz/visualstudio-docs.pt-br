@@ -7,12 +7,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4932a20fbcaee4d5aef6aac03252ee6062fbd035
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 410bc879ff4822f19436794d3cb99732be9d413e
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72606202"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72983701"
 ---
 # <a name="t4-template-directive"></a>Diretiva de modelo T4
 
@@ -235,7 +235,7 @@ Um modelo de texto de tempo de design é um arquivo para o qual a **ferramenta p
 
 Para um modelo de texto de tempo de design, você pode especificar qualquer classe base que é derivada de <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation?displayProperty=fullName>. Use a diretiva `<#@assembly#>` para carregar o assembly ou projeto que contém a classe base.
 
-Para obter mais informações, consulte ["herança em modelos de texto" no blog do Gareth Jones](http://go.microsoft.com/fwlink/?LinkId=208373).
+Para obter mais informações, consulte ["herança em modelos de texto" no blog do Gareth Jones](https://blogs.msdn.microsoft.com/garethj/2011/01/03/vs2010-sp1-t4-template-inheritance-part-i-sample-metadata/).
 
 ## <a name="linepragmas-attribute"></a>atributo linePragmas
 

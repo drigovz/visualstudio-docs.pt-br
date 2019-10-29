@@ -13,18 +13,18 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5cc42a5346498c04f759956b2ca00094ac1df119
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: aac250053f90d99e7db27a9862d2dc1b33fadbfb
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72718722"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72983036"
 ---
 # <a name="the-structure-of-the-content_typesxml-file"></a>A estrutura do arquivo [Content_types].xml
 Contém informações sobre os tipos de conteúdo em um pacote VSIX. O Visual Studio usa o arquivo [Content_Types]. xml para instalar o pacote, mas ele não instala o próprio arquivo.
 
 > [!NOTE]
-> Embora este tópico se aplique somente a arquivos [Content_Type]. XML que são usados em pacotes VSIX, o tipo de arquivo [Content_Types]. xml faz parte do padrão *OPC (Open Packaging Conventions)* . Para obter mais informações, consulte [OPC: um novo padrão para empacotar seus dados](http://go.microsoft.com/fwlink/?LinkID=148207) no site do MSDN.
+> Embora este tópico se aplique somente a arquivos [Content_Type]. XML que são usados em pacotes VSIX, o tipo de arquivo [Content_Types]. xml faz parte do padrão *OPC (Open Packaging Conventions)* . Para obter mais informações, consulte [OPC: um novo padrão para empacotar seus dados](https://msdn.microsoft.com/magazine/cc163372.aspx) no site do MSDN.
 
 ## <a name="attributes-and-elements"></a>Atributos e elementos
  As seções a seguir descrevem o elemento raiz e seus atributos e elementos filho.
@@ -102,4 +102,4 @@ Contém informações sobre os tipos de conteúdo em um pacote VSIX. O Visual St
 ## <a name="see-also"></a>Consulte também
 - [Anatomia de um pacote VSIX](../extensibility/anatomy-of-a-vsix-package.md)
 - [Referência do esquema de extensão do VSIX 1,0](https://msdn.microsoft.com/library/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)
-- [OPC: um novo padrão para empacotar seus dados](http://go.microsoft.com/fwlink/?LinkID=148207)
+- [OPC: um novo padrão para empacotar seus dados](https://msdn.microsoft.com/magazine/cc163372.aspx)

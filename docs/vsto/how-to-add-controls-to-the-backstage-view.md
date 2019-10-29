@@ -1,5 +1,5 @@
 ---
-title: 'Como: Adicionar controles ao modo de exibição Backstage '
+title: 'Como: adicionar controles ao modo de exibição de Backstage '
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -20,31 +20,31 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c4241464fe8a43af882fbdbad0f898838e8fd897
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 87cea877928baf52b0442ed9b0d952fcf649f155
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62826775"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72986018"
 ---
-# <a name="how-to-add-controls-to-the-backstage-view"></a>Como: Adicionar controles ao modo de exibição Backstage
-  Você pode usar o Designer de faixa de opções para adicionar controles ao menu que é aberta quando você clica o **arquivo** guia. Quando você executa o aplicativo, controles que podem ser adicionados para o **arquivo** guia será exibida em um grupo chamado **Add-ins**.
+# <a name="how-to-add-controls-to-the-backstage-view"></a>Como: adicionar controles ao modo de exibição de Backstage
+  Você pode usar o designer de faixa de Ribbon para adicionar controles ao menu que é aberto quando você clica na guia **arquivo** . Quando você executa o aplicativo, os controles que você adiciona à guia **arquivo** aparecem um grupo chamado **suplementos**.
 
- Você não pode posicionar controles antes ou depois de controles internos usando o designer de faixa de opções no Visual Studio. Um controle interno é um controle que já aparece no modo de exibição Backstage. Se você desejar posicionar controles antes ou depois de controles internos, você deve usar um XML de faixa de opções. Para obter mais informações sobre **da faixa de opções (XML)**, consulte [XML da faixa de opções](../vsto/ribbon-xml.md). Para obter mais informações sobre como personalizar o modo de exibição Backstage, consulte [Introdução ao modo de exibição Backstage do Office 2010 para desenvolvedores](http://go.microsoft.com/fwlink/?LinkId=182189) e [personalizar o modo de exibição Backstage do Office 2010 para desenvolvedores](http://go.microsoft.com/fwlink/?LinkId=182188).
+ Você não pode posicionar os controles antes ou depois dos controles internos usando o designer de faixa de bits no Visual Studio. Um controle interno é um controle que já aparece no modo de exibição de Backstage. Se você quiser posicionar controles antes ou depois de controles internos, deverá usar um XML da faixa de bits. Para obter mais informações sobre a **faixa de faixas (XML)** , consulte [XML da faixa](../vsto/ribbon-xml.md)de para. Para obter mais informações sobre como personalizar o modo de exibição de Backstage, consulte [introdução ao modo de exibição de Backstage do office 2010 para desenvolvedores](/previous-versions/office/developer/office-2010/ee691833(v=office.14)) e [Personalizar o modo de exibição do Backstage do Office 2010 para desenvolvedores](/previous-versions/office/developer/office-2010/ee815851(v=office.14)).
 
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]
 
-### <a name="to-add-controls-to-backstage-view"></a>Para adicionar controles ao modo de exibição Backstage
+### <a name="to-add-controls-to-backstage-view"></a>Para adicionar controles à exibição de Backstage
 
-1. Abra o item de faixa de opções no modo de exibição de Design.
+1. Abra o item da faixa de faixas no modo de exibição de Design.
 
-     Para obter informações sobre como adicionar um **faixa de opções (Visual Designer)** item ao seu projeto, consulte [como: Introdução à personalização da faixa de opções](../vsto/how-to-get-started-customizing-the-ribbon.md).
+     Para obter informações sobre como adicionar um item **da faixa de Ribbon (designer visual)** ao seu projeto, consulte [como: introdução à personalização da faixa de faixas](../vsto/how-to-get-started-customizing-the-ribbon.md).
 
-2. No Designer de faixa de opções, clique o **arquivo** guia.
+2. No designer de faixa de faixas, clique na guia **arquivo** .
 
-     Um designer de menu é exibido. Essa superfície de design não contém todos os controles.
+     Um designer de menu é exibido. Esta superfície de design não contém nenhum controle.
 
-3. Dos **controles de faixa de opções do Office** guia da **caixa de ferramentas**, arraste qualquer um dos seguintes controles para o designer de menu:
+3. Na guia **controles da faixa** de opções do Office da **caixa de ferramentas**, arraste qualquer um dos seguintes controles para o designer de menu:
 
     - Botão
 
@@ -63,8 +63,8 @@ ms.locfileid: "62826775"
 4. Arraste os controles para movê-los para novas posições no menu.
 
 ## <a name="see-also"></a>Consulte também
-- [Visão geral da faixa de opções](../vsto/ribbon-overview.md)
+- [Visão geral da faixa de faixas](../vsto/ribbon-overview.md)
 - [Designer da faixa de opções](../vsto/ribbon-designer.md)
 - [XML da faixa de opções](../vsto/ribbon-xml.md)
-- [Como: Introdução ao personalizar a faixa de opções](../vsto/how-to-get-started-customizing-the-ribbon.md)
-- [Passo a passo: Criar uma guia personalizada usando o Designer de faixa de opções](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)
+- [Como: começar a personalizar a faixa de faixas](../vsto/how-to-get-started-customizing-the-ribbon.md)
+- [Walkthrough: criar uma guia personalizada usando o designer de faixa de faixas](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)

@@ -1,5 +1,5 @@
 ---
-title: Criar item de projeto de ação personalizada com o modelo de item, parte 2
+title: Criar item de projeto de ação personalizada com modelo de item, parte 2
 ms.date: 02/02/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,193 +11,193 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6fa4915b9621789c68ed994440de3a1ef544c40c
-ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.openlocfilehash: a873d00e1befc9126f4fe89b05a66a8331853ac2
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66401176"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72984968"
 ---
-# <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-2"></a>Passo a passo: Criar um item de projeto de ação personalizado com um modelo de item, parte 2
-  Depois de definir um tipo personalizado de item de projeto do SharePoint e associá-lo a um modelo de item no Visual Studio, você também poderá fornecer um assistente do modelo. Você pode usar o Assistente para coletar informações dos usuários quando eles usam seu modelo para adicionar uma nova instância do item de projeto a um projeto. As informações que você coleta podem ser usadas para inicializar o item de projeto.
+# <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-2"></a>Walkthrough: criar um item de projeto de ação personalizada com um modelo de item, parte 2
+  Depois de definir um tipo personalizado de item de projeto do SharePoint e associá-lo a um modelo de item no Visual Studio, talvez você também queira fornecer um assistente para o modelo. Você pode usar o assistente para coletar informações de usuários quando eles usam seu modelo para adicionar uma nova instância do item de projeto a um projeto. As informações coletadas podem ser usadas para inicializar o item do projeto.
 
- Neste passo a passo, você adicionará um Assistente para o item de projeto de ação personalizada que é demonstrado [passo a passo: Criar um item de projeto de ação personalizado com um modelo de item, parte 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md). Quando um usuário adiciona um item de projeto de ação personalizada para um projeto do SharePoint, o assistente coleta informações sobre a ação personalizada (como sua localização e a URL para navegar quando um usuário final escolhe-lo) e adiciona essas informações para o *Elements. XML* arquivos no novo item de projeto.
+ Neste tutorial, você adicionará um assistente ao item de projeto de ação personalizada que é demonstrado em [Walkthrough: criar um item de projeto de ação personalizada com um modelo de item, parte 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md). Quando um usuário adiciona um item de projeto de ação personalizada a um projeto do SharePoint, o assistente coleta informações sobre a ação personalizada (como seu local e a URL para navegar até quando um usuário final o escolhe) e adiciona essas informações ao arquivo *Elements. xml* no novo item de projeto.
 
- Este passo a passo demonstra as seguintes tarefas:
+ Este tutorial demonstra as seguintes tarefas:
 
-- Criando um Assistente para um tipo de item de projeto do SharePoint personalizado que está associado um modelo de item.
+- Criar um assistente para um tipo de item de projeto personalizado do SharePoint que está associado a um modelo de item.
 
-- Definindo um assistente personalizado da interface do usuário que se parece com os assistentes internos para itens de projeto do SharePoint no Visual Studio.
+- Definir uma interface do usuário do assistente personalizada que se assemelha aos assistentes internos para itens de projeto do SharePoint no Visual Studio.
 
-- Usando parâmetros substituíveis para inicializar os arquivos de projeto do SharePoint com os dados coletados no assistente.
+- Usando parâmetros substituíveis para inicializar arquivos de projeto do SharePoint com dados coletados no assistente.
 
 - Depurando e testando o assistente.
 
 > [!NOTE]
-> Você pode baixar um exemplo de [Github](https://github.com/SharePoint/PnP/tree/master/Samples/Workflow.Activities) que mostra como criar atividades personalizadas para um fluxo de trabalho.
+> Você pode baixar um exemplo do [GitHub](https://github.com/SharePoint/PnP/tree/master/Samples/Workflow.Activities) que mostra como criar atividades personalizadas para um fluxo de trabalho.
 
-## <a name="prerequisites"></a>Pré-requisitos
- Para executar este passo a passo, você deve primeiro criar a solução CustomActionProjectItem Concluindo [passo a passo: Criar um item de projeto de ação personalizado com um modelo de item, parte 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md).
+## <a name="prerequisites"></a>Prerequisites
+ Para executar este passo a passos, você deve primeiro criar a solução CustomActionProjectItem concluindo o [passo a passos: criar um item de projeto de ação personalizada com um modelo de item, parte 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md).
 
- Você também precisa dos seguintes componentes no computador de desenvolvimento para concluir este passo a passo:
+ Você também precisa dos seguintes componentes no computador de desenvolvimento para concluir este passo a passos:
 
 - Edições com suporte do Windows, SharePoint e Visual Studio.
 
-- O SDK do Visual Studio. Este passo a passo usa o **VSIX Project** modelo no SDK para criar um pacote VSIX para implantar o item de projeto. Para obter mais informações, consulte [estender as ferramentas do SharePoint no Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).
+- O SDK do Visual Studio. Este tutorial usa o modelo de **projeto VSIX** no SDK para criar um pacote VSIX para implantar o item de projeto. Para obter mais informações, consulte [estender as ferramentas do SharePoint no Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).
 
-  Conhecimento dos conceitos a seguir é útil, mas não necessário para concluir o passo a passo:
+  O conhecimento dos seguintes conceitos é útil, mas não é necessário, para concluir o passo a passos:
 
-- Assistentes para modelos de projeto e item no Visual Studio. Para obter mais informações, confira [Como: Usar assistentes com modelos de projeto](../extensibility/how-to-use-wizards-with-project-templates.md) e o <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> interface.
+- Assistentes para modelos de projeto e item no Visual Studio. Para obter mais informações, consulte [como: usar assistentes com modelos de projeto](../extensibility/how-to-use-wizards-with-project-templates.md) e a interface <xref:Microsoft.VisualStudio.TemplateWizard.IWizard>.
 
-- Ações personalizadas no SharePoint. Para obter mais informações, consulte [ação personalizada](http://go.microsoft.com/fwlink/?LinkId=177800).
+- Ações personalizadas no SharePoint. Para obter mais informações, consulte [ação personalizada](/previous-versions/office/developer/sharepoint-2010/ms458635(v=office.14)).
 
-## <a name="create-the-wizard-project"></a>Criar o projeto de Assistente
- Para concluir este passo a passo, você deve adicionar um projeto à solução CustomActionProjectItem que você criou na [passo a passo: Criar um item de projeto de ação personalizado com um modelo de item, parte 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md). Você implementará o <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> de interface e definir o Assistente de interface do usuário neste projeto.
+## <a name="create-the-wizard-project"></a>Criar o projeto do assistente
+ Para concluir este passo a passos, você deve adicionar um projeto à solução CustomActionProjectItem que você criou no [passo a passo: criar um item de projeto de ação personalizada com um modelo de item, parte 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md). Você implementará a interface <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> e definirá a interface do usuário do assistente neste projeto.
 
-#### <a name="to-create-the-wizard-project"></a>Para criar o projeto de Assistente
+#### <a name="to-create-the-wizard-project"></a>Para criar o projeto do assistente
 
-1. No Visual Studio, abra a solução de CustomActionProjectItem
+1. No Visual Studio, abra a solução CustomActionProjectItem
 
-2. Na **Gerenciador de soluções**, abra o menu de atalho do nó da solução, escolha **Add**e, em seguida, escolha **novo projeto**.
+2. No **Gerenciador de soluções**, abra o menu de atalho para o nó da solução, escolha **Adicionar**e, em seguida, escolha **novo projeto**.
 
-3. No **novo projeto** diálogo caixa, expanda o **Visual c#** ou **Visual Basic** nós e, em seguida, escolha o **Windows** nó.
+3. Na caixa de diálogo **novo projeto** , expanda os nós  **C# Visual** ou **Visual Basic** e, em seguida, escolha o nó **Windows** .
 
-4. Na parte superior a **novo projeto** diálogo caixa, certifique-se de que **.NET Framework 4.5** for escolhido na lista de versões do .NET Framework.
+4. Na parte superior da caixa de diálogo **novo projeto** , certifique-se de que **.NET Framework 4,5** seja escolhido na lista de versões do .NET Framework.
 
-5. Escolha o **biblioteca de controle de usuário do WPF** modelo de projeto, nomeie o projeto **ItemTemplateWizard**e, em seguida, escolha o **Okey** botão.
+5. Escolha o modelo de projeto de **biblioteca de controle de usuário do WPF** , nomeie o projeto **ItemTemplateWizard**e, em seguida, escolha o botão **OK** .
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Adiciona o **ItemTemplateWizard** projeto à solução.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] adiciona o projeto **ItemTemplateWizard** à solução.
 
-6. Exclua o item de UserControl1 do projeto.
+6. Exclua o item UserControl1 do projeto.
 
-## <a name="configure-the-wizard-project"></a>Configurar o projeto de Assistente
- Antes de criar o assistente, você deve adicionar uma janela do Windows Presentation Foundation (WPF), um arquivo de código e referências de assembly ao projeto.
+## <a name="configure-the-wizard-project"></a>Configurar o projeto do assistente
+ Antes de criar o assistente, você deve adicionar uma janela Windows Presentation Foundation (WPF), um arquivo de código e referências de assembly ao projeto.
 
-#### <a name="to-configure-the-wizard-project"></a>Para configurar o projeto de Assistente
+#### <a name="to-configure-the-wizard-project"></a>Para configurar o projeto do assistente
 
-1. Na **Gerenciador de soluções**, abra o menu de atalho do **ItemTemplateWizard** nó do projeto e, em seguida, escolha **propriedades**.
+1. No **Gerenciador de soluções**, abra o menu de atalho do nó do projeto **ItemTemplateWizard** e escolha **Propriedades**.
 
-2. No **Designer de projeto**, certifique-se de que a estrutura de destino é definida como o .NET Framework 4.5.
+2. No **Designer de projeto**, verifique se a estrutura de destino está definida como .NET Framework 4,5.
 
-     Para projetos do Visual c#, você pode definir esse valor sobre o **aplicativo** guia. Para projetos do Visual Basic, você pode definir esse valor na **compilar** guia. Para obter mais informações, confira [Como: Direcionar a uma versão do .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
+     Para projetos C# visuais, você pode definir esse valor na guia **aplicativo** . Para projetos Visual Basic, você pode definir esse valor na guia **Compilar** . Para obter mais informações, consulte [como: direcionar uma versão do .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
 
-3. No **ItemTemplateWizard** do projeto, adicione uma **janela (WPF)** item ao projeto e, em seguida, o nome do item **WizardWindow**.
+3. No projeto **ItemTemplateWizard** , adicione um item **Window (WPF)** ao projeto e, em seguida, nomeie o item **WizardWindow**.
 
-4. Adicione dois arquivos de código que são nomeados CustomActionWizard e cadeias de caracteres.
+4. Adicione dois arquivos de código denominados CustomActionWizard e cadeias de caracteres.
 
-5. Abra o menu de atalho para o **ItemTemplateWizard** do projeto e, em seguida, escolha **adicionar referência**.
+5. Abra o menu de atalho para o projeto **ItemTemplateWizard** e escolha **Adicionar referência**.
 
-6. No **Gerenciador de referências - ItemTemplateWizard** caixa de diálogo do **Assemblies** nó, escolha o **extensões** nó.
+6. Na caixa de diálogo **Gerenciador de referências-ItemTemplateWizard** , no nó **assemblies** , escolha o nó **extensões** .
 
-7. Selecione as caixas de seleção ao lado de assemblies a seguir e, em seguida, escolha o **Okey** botão:
+7. Marque as caixas de seleção ao lado dos seguintes assemblies e escolha o botão **OK** :
 
     - EnvDTE
 
-    - Microsoft.VisualStudio.Shell.11.0
+    - Microsoft. VisualStudio. Shell. 11.0
 
-    - Microsoft.VisualStudio.TemplateWizardInterface
+    - Microsoft. VisualStudio. TemplateWizardInterface
 
-8. Na **Gerenciador de soluções**, no **referências** pasta do projeto ItemTemplateWizard, escolha o **EnvDTE** referência.
+8. Em **Gerenciador de soluções**, na pasta **referências** para o projeto ItemTemplateWizard, escolha a referência **EnvDTE** .
 
-9. No **propriedades** janela, altere o valor da **inserir tipos Interop** propriedade a ser **False**.
+9. Na janela **Propriedades** , altere o valor da propriedade **inserir tipos de interoperabilidade** para **false**.
 
-## <a name="define-the-default-location-and-id-strings-for-custom-actions"></a>Definir o local padrão e cadeias de caracteres de ID para ações personalizadas
- Todas as ações personalizadas tem um local e uma ID que é especificado na `GroupID` e `Location` atributos da `CustomAction` elemento no *Elements. XML* arquivo. Nesta etapa, você define algumas das cadeias de caracteres válidas para esses atributos no projeto ItemTemplateWizard. Quando você concluir este passo a passo, essas cadeias de caracteres são gravadas para o *Elements. XML* arquivo no item de projeto de ação personalizada quando os usuários no Assistente para especificar um local e uma ID.
+## <a name="define-the-default-location-and-id-strings-for-custom-actions"></a>Definir o local padrão e as cadeias de caracteres de ID para ações personalizadas
+ Cada ação personalizada tem um local e ID que é especificado nos atributos `GroupID` e `Location` do elemento `CustomAction` no arquivo *Elements. xml* . Nesta etapa, você define algumas das cadeias de caracteres válidas para esses atributos no projeto ItemTemplateWizard. Quando você concluir este passo a passos, essas cadeias de caracteres serão gravadas no arquivo *Elements. xml* no item de projeto Action personalizado quando os usuários especificarem um local e uma ID no assistente.
 
- Para simplificar, este exemplo dá suporte a apenas um subconjunto dos locais disponíveis padrão e IDs. Para obter uma lista completa, consulte [locais de ação personalizada padrão e IDs de](http://go.microsoft.com/fwlink/?LinkId=181964).
+ Para simplificar, este exemplo dá suporte apenas a um subconjunto dos locais e IDs padrão disponíveis. Para obter uma lista completa, consulte [locais e IDs da ação personalizada padrão](/previous-versions/office/developer/sharepoint-2010/bb802730(v=office.14)).
 
-#### <a name="to-define-the-default-location-and-id-strings"></a>Para definir o local padrão e cadeias de caracteres de ID
+#### <a name="to-define-the-default-location-and-id-strings"></a>Para definir o local padrão e as cadeias de caracteres de ID
 
-1. Abra.
+1. abrir.
 
-2. No **ItemTemplateWizard** do projeto, substitua o código no arquivo de código de cadeias de caracteres com o código a seguir.
+2. No projeto **ItemTemplateWizard** , substitua o código no arquivo de código de cadeia de caracteres pelo código a seguir.
 
      [!code-csharp[SPExtensibility.ProjectItem.CustomAction#6](../sharepoint/codesnippet/CSharp/customactionprojectitem/itemtemplatewizard/strings.cs#6)]
      [!code-vb[SPExtensibility.ProjectItem.CustomAction#6](../sharepoint/codesnippet/VisualBasic/customactionprojectitem/itemtemplatewizard/strings.vb#6)]
 
-## <a name="create-the-wizard-ui"></a>Criar o Assistente de interface do usuário
- Adicione o XAML para definir a interface do usuário do assistente e adicionar algum código para associar alguns dos controles no Assistente para as cadeias de caracteres de ID. O assistente que você cria se parece com o Assistente interno para projetos do SharePoint no Visual Studio.
+## <a name="create-the-wizard-ui"></a>Criar a interface do usuário do assistente
+ Adicione XAML para definir a interface do usuário do assistente e adicione algum código para associar alguns dos controles do assistente às cadeias de caracteres de ID. O assistente que você cria é semelhante ao assistente interno para projetos do SharePoint no Visual Studio.
 
-#### <a name="to-create-the-wizard-ui"></a>Para criar o Assistente de interface do usuário
+#### <a name="to-create-the-wizard-ui"></a>Para criar a interface do usuário do assistente
 
-1. No **ItemTemplateWizard** do projeto, abra o menu de atalho para o **WizardWindow.xaml** file e, em seguida, escolha **abrir** para abrir a janela no designer.
+1. No projeto **ItemTemplateWizard** , abra o menu de atalho do arquivo **WizardWindow. XAML** e, em seguida, escolha **abrir** para abrir a janela no designer.
 
-2. No modo de exibição XAML, substitua o XAML atual com o XAML a seguir. O XAML define uma interface do usuário que inclui um título, controla para especificar o comportamento da ação personalizada e botões de navegação na parte inferior da janela.
+2. No modo de exibição XAML, substitua o XAML atual pelo XAML a seguir. O XAML define uma interface do usuário que inclui um título, controles para especificar o comportamento da ação personalizada e botões de navegação na parte inferior da janela.
 
     > [!NOTE]
-    > O projeto terá alguns erros de compilação, depois de adicionar esse código. Esses erros serão eliminados quando você adicionar o código em etapas posteriores.
+    > Seu projeto terá alguns erros de compilação depois que você adicionar esse código. Esses erros vão desaparecer quando você adiciona código em etapas posteriores.
 
      [!code-xml[SPExtensibility.ProjectItem.CustomAction#9](../sharepoint/codesnippet/Xaml/customactionprojectitem/itemtemplatewizard/wizardwindow.xaml#9)]
 
     > [!NOTE]
-    > A janela que é criada nesse XAML é derivada de <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow> classe base. Quando você adiciona uma caixa de diálogo do WPF personalizada para o Visual Studio, é recomendável que você derive sua caixa de diálogo desta classe ter estilo consistentes com as outras caixas de diálogo no Visual Studio e para evitar problemas que possam ocorrer com caixas de diálogo modal. Para obter mais informações, consulte [criando e gerenciando as caixas de diálogo Modal](/visualstudio/extensibility/creating-and-managing-modal-dialog-boxes).
+    > A janela que é criada neste XAML é derivada da classe base <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow>. Quando você adiciona uma caixa de diálogo personalizada do WPF ao Visual Studio, recomendamos que você Derive sua caixa de diálogo dessa classe para ter estilos consistentes com outras caixas de diálogo no Visual Studio e para evitar problemas que podem ocorrer de outra forma com caixas de diálogo modais. Para obter mais informações, consulte [criando e gerenciando caixas de diálogo modais](/visualstudio/extensibility/creating-and-managing-modal-dialog-boxes).
 
-3. Se você estiver desenvolvendo um projeto do Visual Basic, remova os `ItemTemplateWizard` namespace do `WizardWindow` nome da classe a `x:Class` atributo do `Window` elemento. Esse elemento é na primeira linha do XAML. Quando terminar, a primeira linha deve se parecer com o código a seguir:
+3. Se você estiver desenvolvendo um projeto Visual Basic, remova o namespace `ItemTemplateWizard` do nome da classe `WizardWindow` no atributo `x:Class` do elemento `Window`. Esse elemento está na primeira linha do XAML. Quando terminar, a primeira linha deverá ser semelhante ao seguinte código:
 
     ```xml
     <Window x:Class="WizardWindow"
     ```
 
-4. No arquivo de code-behind para o arquivo WizardWindow.xaml, substitua o código atual com o código a seguir.
+4. No arquivo code-behind do arquivo WizardWindow. XAML, substitua o código atual pelo código a seguir.
 
      [!code-vb[SPExtensibility.ProjectItem.CustomAction#7](../sharepoint/codesnippet/VisualBasic/customactionprojectitem/itemtemplatewizard/wizardwindow.xaml.vb#7)]
      [!code-csharp[SPExtensibility.ProjectItem.CustomAction#7](../sharepoint/codesnippet/CSharp/customactionprojectitem/itemtemplatewizard/wizardwindow.xaml.cs#7)]
 
-## <a name="implement-the-wizard"></a>O Assistente de implementação
- Define a funcionalidade do assistente Implementando o <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> interface.
+## <a name="implement-the-wizard"></a>Implementar o assistente
+ Defina a funcionalidade do assistente implementando a interface <xref:Microsoft.VisualStudio.TemplateWizard.IWizard>.
 
-#### <a name="to-implement-the-wizard"></a>Para implementar o Assistente
+#### <a name="to-implement-the-wizard"></a>Para implementar o assistente
 
-1. No **ItemTemplateWizard** projeto, abra o **CustomActionWizard** arquivo de código e, em seguida, substitua o código atual nesse arquivo com o código a seguir:
+1. No projeto **ItemTemplateWizard** , abra o arquivo de código **CustomActionWizard** e, em seguida, substitua o código atual neste arquivo pelo seguinte código:
 
      [!code-csharp[SPExtensibility.ProjectItem.CustomAction#8](../sharepoint/codesnippet/CSharp/customactionprojectitem/itemtemplatewizard/customactionwizard.cs#8)]
      [!code-vb[SPExtensibility.ProjectItem.CustomAction#8](../sharepoint/codesnippet/VisualBasic/customactionprojectitem/itemtemplatewizard/customactionwizard.vb#8)]
 
 ## <a name="checkpoint"></a>Ponto de verificação
- Neste momento no passo a passo, todo o código para que o assistente está agora no projeto. Compile o projeto para certificar-se de que ele foi compilado sem erros.
+ Neste ponto do passo a passo, todo o código do assistente agora está no projeto. Compile o projeto para certificar-se de que ele seja compilado sem erros.
 
 #### <a name="to-build-your-project"></a>Para compilar seu projeto
 
 1. Na barra de menus, escolha **Compilar** > **Compilar Solução**.
 
-## <a name="associate-the-wizard-with-the-item-template"></a>Associar o assistente com o modelo de item
- Agora que você implementou o assistente, você deve associá-lo com o **ação personalizada** modelo de item Concluindo três etapas principais:
+## <a name="associate-the-wizard-with-the-item-template"></a>Associar o assistente ao modelo de item
+ Agora que você implementou o assistente, você deve associá-lo ao modelo de item de **ação personalizado** , concluindo três etapas principais:
 
-1. Assine o assembly de assistente com um nome forte.
+1. Assine o assembly do assistente com um nome forte.
 
-2. Obter token de chave pública para o assembly de assistente.
+2. Obtenha o token de chave pública para o assembly do assistente.
 
-3. Adicione uma referência ao assembly de assistente no arquivo. vstemplate para o **ação personalizada** modelo de item.
+3. Adicione uma referência ao assembly do assistente no arquivo. vstemplate para o modelo de item de **ação personalizado** .
 
-#### <a name="to-sign-the-wizard-assembly-with-a-strong-name"></a>Para assinar o assembly de assistente com um nome forte
+#### <a name="to-sign-the-wizard-assembly-with-a-strong-name"></a>Para assinar o assembly do assistente com um nome forte
 
-1. Na **Gerenciador de soluções**, abra o menu de atalho do **ItemTemplateWizard** nó do projeto e, em seguida, escolha **propriedades**.
+1. No **Gerenciador de soluções**, abra o menu de atalho do nó do projeto **ItemTemplateWizard** e escolha **Propriedades**.
 
-2. Sobre o **Signing** guia, selecione o **assinar o assembly** caixa de seleção.
+2. Na guia **assinatura** , marque a caixa de seleção **assinar o assembly** .
 
-3. No **escolher um arquivo de chave de nome forte** , escolha  **\<novo... >** .
+3. Na lista **escolher um arquivo de chave de nome forte** , escolha **\<novo... >** .
 
-4. No **criar chave de nome forte** caixa de diálogo, digite um nome, limpe o **proteger o arquivo de chave com uma senha** caixa de seleção e, em seguida, escolha o **Okey** botão.
+4. Na caixa de diálogo **criar chave de nome forte** , insira um nome, desmarque a caixa de seleção **proteger meu arquivo de chave com uma senha** e escolha o botão **OK** .
 
 5. Na barra de menus, escolha **Compilar** > **Compilar Solução**.
 
-#### <a name="to-get-the-public-key-token-for-the-wizard-assembly"></a>Para obter a chave pública token para o assembly de Assistente
+#### <a name="to-get-the-public-key-token-for-the-wizard-assembly"></a>Para obter o token de chave pública para o assembly do assistente
 
-1. Em uma janela de Prompt de comando do Visual Studio, execute o seguinte comando, substituindo *PathToWizardAssembly* com o caminho completo para o assembly ItemTemplateWizard.dll compilado para o projeto ItemTemplateWizard em seu desenvolvimento computador.
+1. Em uma janela de prompt de comando do Visual Studio, execute o comando a seguir, substituindo *PathToWizardAssembly* pelo caminho completo do assembly ItemTemplateWizard. dll criado para o projeto ItemTemplateWizard no seu computador de desenvolvimento.
 
     ```xml
     sn.exe -T PathToWizardAssembly
     ```
 
-     O token de chave pública para o *ItemTemplateWizard.dll* assembly estiver gravado para a janela de Prompt de comando do Visual Studio.
+     O token de chave pública para o assembly *ItemTemplateWizard. dll* é gravado na janela do prompt de comando do Visual Studio.
 
-2. Mantenha a janela de Prompt de comando do Visual Studio aberta. Você precisará do token de chave pública para concluir o procedimento a seguir.
+2. Mantenha a janela do prompt de comando do Visual Studio aberta. Você precisará do token de chave pública para concluir o próximo procedimento.
 
-#### <a name="to-add-a-reference-to-the-wizard-assembly-in-the-vstemplate-file"></a>Para adicionar uma referência ao assembly de assistente no arquivo. vstemplate
+#### <a name="to-add-a-reference-to-the-wizard-assembly-in-the-vstemplate-file"></a>Para adicionar uma referência ao assembly do assistente no arquivo. vstemplate
 
-1. Na **Gerenciador de soluções**, expanda o **ItemTemplate** nó do projeto e, em seguida, abra o *ItemTemplate.vstemplate* arquivo.
+1. Em **Gerenciador de soluções**, expanda o nó do projeto **ItemTemplate** e, em seguida, abra o arquivo *ItemTemplate. vstemplate* .
 
-2. No final do arquivo, adicione o seguinte `WizardExtension` elemento entre os `</TemplateContent>` e `</VSTemplate>` marcas. Substitua os *YourToken* valor o `PublicKeyToken` atributo com o token de chave pública que você obteve no procedimento anterior.
+2. Próximo ao final do arquivo, adicione o seguinte elemento `WizardExtension` entre as marcas `</TemplateContent>` e `</VSTemplate>`. Substitua o valor *YourToken* do atributo `PublicKeyToken` pelo token de chave pública que você obteve no procedimento anterior.
 
     ```xml
     <WizardExtension>
@@ -206,18 +206,18 @@ ms.locfileid: "66401176"
     </WizardExtension>
     ```
 
-     Para obter mais informações sobre o `WizardExtension` elemento, consulte [elemento WizardExtension &#40;modelos do Visual Studio&#41;](/visualstudio/extensibility/wizardextension-element-visual-studio-templates).
+     Para obter mais informações sobre o elemento `WizardExtension`, consulte [WizardExtension &#40;Element Visual Studio&#41;templates](/visualstudio/extensibility/wizardextension-element-visual-studio-templates).
 
 3. Salve e feche o arquivo.
 
-## <a name="add-replaceable-parameters-to-the-elementsxml-file-in-the-item-template"></a>Adicionar parâmetros substituíveis para o *Elements. XML* arquivo no modelo de item
- Adicionar vários parâmetros substituíveis para o *Elements. XML* arquivo no projeto ItemTemplate. Esses parâmetros são inicializados na `PopulateReplacementDictionary` método no `CustomActionWizard` classe que você definiu anteriormente. Quando um usuário adiciona um item de projeto de ação personalizada a um projeto, o Visual Studio automaticamente substitui esses parâmetros na *Elements. XML* arquivos no novo item de projeto com os valores que elas especificados no assistente.
+## <a name="add-replaceable-parameters-to-the-elementsxml-file-in-the-item-template"></a>Adicionar parâmetros substituíveis ao arquivo *Elements. xml* no modelo de item
+ Adicione vários parâmetros substituíveis ao arquivo *Elements. xml* no projeto ItemTemplate. Esses parâmetros são inicializados no método `PopulateReplacementDictionary` na classe `CustomActionWizard` que você definiu anteriormente. Quando um usuário adiciona um item de projeto de ação personalizada a um projeto, o Visual Studio substitui automaticamente esses parâmetros no arquivo *Elements. xml* no novo item de projeto pelos valores que eles especificaram no assistente.
 
- Um parâmetro de substituição é um token que começa e termina com o caractere de cifrão ($). Além de definir seus próprios parâmetros substituíveis, você pode usar os parâmetros internos que o sistema de projeto do SharePoint define e inicializa. Para obter mais informações, consulte [parâmetros substituíveis](../sharepoint/replaceable-parameters.md).
+ Um parâmetro substituível é um token que inicia e termina com o caractere de cifrão ($). Além de definir seus próprios parâmetros substituíveis, você pode usar parâmetros internos que o sistema de projeto do SharePoint define e inicializa. Para obter mais informações, consulte [parâmetros substituíveis](../sharepoint/replaceable-parameters.md).
 
-#### <a name="to-add-replaceable-parameters-to-the-elementsxml-file"></a>Para adicionar parâmetros substituíveis para o *Elements. XML* arquivo
+#### <a name="to-add-replaceable-parameters-to-the-elementsxml-file"></a>Para adicionar parâmetros substituíveis ao arquivo *Elements. xml*
 
-1. No projeto ItemTemplate, substitua o conteúdo do *Elements. XML* arquivo pelo XML a seguir.
+1. No projeto ItemTemplate, substitua o conteúdo do arquivo *Elements. xml* pelo seguinte XML.
 
     ```xml
     <?xml version="1.0" encoding="utf-8" ?>
@@ -233,101 +233,101 @@ ms.locfileid: "66401176"
     </Elements>
     ```
 
-     O novo XML altera os valores da `Id`, `GroupId`, `Location`, `Description`, e `Url` atributos a parâmetros substituíveis.
+     O novo XML altera os valores dos atributos `Id`, `GroupId`, `Location`, `Description`e `Url` para parâmetros substituíveis.
 
 2. Salve e feche o arquivo.
 
-## <a name="add-the-wizard-to-the-vsix-package"></a>O Assistente de adição ao pacote VSIX
- No arquivo vsixmanifest no projeto VSIX, adicione uma referência ao projeto do Assistente para que ele seja implantado com o pacote VSIX que contém o item de projeto.
+## <a name="add-the-wizard-to-the-vsix-package"></a>Adicionar o assistente ao pacote VSIX
+ No arquivo Source. Extension. vsixmanifest no projeto VSIX, adicione uma referência ao projeto do assistente para que ele seja implantado com o pacote VSIX que contém o item do projeto.
 
-#### <a name="to-add-the-wizard-to-the-vsix-package"></a>Para adicionar o Assistente para o pacote VSIX
+#### <a name="to-add-the-wizard-to-the-vsix-package"></a>Para adicionar o assistente ao pacote VSIX
 
-1. Na **Gerenciador de soluções**, abra o menu de atalho do **vsixmanifest** arquivo no projeto CustomActionProjectItem e, em seguida, escolha **abrir** para abrir o arquivo no editor de manifesto.
+1. No **Gerenciador de soluções**, abra o menu de atalho do arquivo **Source. Extension. vsixmanifest** no projeto CustomActionProjectItem e, em seguida, escolha **abrir** para abrir o arquivo no editor de manifesto.
 
-2. No editor de manifesto, escolha o **ativos** guia e, em seguida, escolha o **New** botão.
+2. No editor de manifesto, escolha a guia **ativos** e, em seguida, escolha o botão **novo** .
 
-     O **adicionar novo ativo** caixa de diálogo é exibida.
+     A caixa de diálogo **Adicionar novo ativo** é exibida.
 
-3. No **tipo** , escolha **Microsoft.VisualStudio.Assembly**.
+3. Na lista **tipo** , escolha **Microsoft. VisualStudio. assembly**.
 
-4. No **fonte** , escolha **um projeto na solução atual**.
+4. Na lista **origem** , escolha **um projeto na solução atual**.
 
-5. No **Project** , escolha **ItemTemplateWizard**e, em seguida, escolha o **Okey** botão.
+5. Na lista **projeto** , escolha **ItemTemplateWizard**e, em seguida, escolha o botão **OK** .
 
-6. Na barra de menus, escolha **construir** > **compilar solução**e, em seguida, certifique-se de que a solução é compilado sem erros.
+6. Na barra de menus, escolha **compilar** > **Compilar solução**e, em seguida, certifique-se de que a solução seja compilada sem erros.
 
-## <a name="test-the-wizard"></a>O Assistente de teste
- Agora você está pronto para testar o assistente. Primeiro, começar a depurar a solução CustomActionProjectItem na instância experimental do Visual Studio. Em seguida, teste o Assistente para o item de projeto de ação personalizada em um projeto do SharePoint na instância experimental do Visual Studio. Por fim, compile e execute o projeto do SharePoint para verificar se a ação personalizada funciona conforme o esperado.
+## <a name="test-the-wizard"></a>Testar o assistente
+ Agora você está pronto para testar o assistente. Primeiro, comece a depurar a solução CustomActionProjectItem na instância experimental do Visual Studio. Em seguida, teste o assistente para o item de projeto de ação personalizada em um projeto do SharePoint na instância experimental do Visual Studio. Por fim, compile e execute o projeto do SharePoint para verificar se a ação personalizada funciona conforme o esperado.
 
 #### <a name="to-start-to-debug-the-solution"></a>Para começar a depurar a solução
 
-1. Reinicie o Visual Studio com credenciais administrativas e, em seguida, abra a solução de CustomActionProjectItem.
+1. Reinicie o Visual Studio com credenciais administrativas e, em seguida, abra a solução CustomActionProjectItem.
 
-2. No projeto ItemTemplateWizard, abra o arquivo de código CustomActionWizard e, em seguida, adicione um ponto de interrupção para a primeira linha de código no `RunStarted` método.
+2. No projeto ItemTemplateWizard, abra o arquivo de código CustomActionWizard e, em seguida, adicione um ponto de interrupção à primeira linha de código no método `RunStarted`.
 
-3. Na barra de menus, escolha **Debug** > **exceções**.
+3. Na barra de menus, escolha **depurar** > **exceções**.
 
-4. No **exceções** diálogo caixa, certifique-se de que o **lançada** e **User-unhandled** caixas de seleção **exceções Common Language Runtime**são limpos e, em seguida, escolha o **Okey** botão.
+4. Na caixa de diálogo **exceções** , certifique-se de que as caixas de seleção **lançado** e não **manipulado pelo usuário** para **exceções do Common Language Runtime** sejam limpas e, em seguida, escolha o botão **OK** .
 
-5. Iniciar a depuração, escolhendo a **F5** chave, ou, na barra de menus, escolhendo **Debug** > **iniciar depuração**.
+5. Inicie a depuração escolhendo a tecla **F5** ou, na barra de menus, escolhendo **debug** > **iniciar a depuração**.
 
-     Visual Studio instala a extensão para %UserProfile%\AppData\Local\Microsoft\VisualStudio\11.0Exp\Extensions\Contoso\Custom Item\1.0 de projeto de ação e inicia uma instância experimental do Visual Studio. Você testará o item de projeto nesta instância do Visual Studio.
+     O Visual Studio instala a extensão para o projeto de ação%UserProfile%\AppData\Local\Microsoft\VisualStudio\11.0Exp\Extensions\Contoso\Custom Item\1.0 e inicia uma instância experimental do Visual Studio. Você testará o item de projeto nesta instância do Visual Studio.
 
 #### <a name="to-test-the-wizard-in-visual-studio"></a>Para testar o assistente no Visual Studio
 
-1. Na instância experimental do Visual Studio, na barra de menus, escolha **arquivo** > **New** > **projeto**.
+1. Na instância experimental do Visual Studio, na barra de menus, escolha **arquivo** > **novo** **projeto**de > .
 
-2. Expanda o **Visual c#** ou **Visual Basic** nó (dependendo da linguagem que dá suporte a seu modelo de item), expanda o **SharePoint** nó e, em seguida, escolha o **2010** nó.
+2. Expanda o nó **Visual C#**  ou **Visual Basic** (dependendo do idioma ao qual o modelo de item dá suporte), expanda o nó do **SharePoint** e escolha o nó **2010** .
 
-3. Na lista de modelos de projeto, escolha **projeto do SharePoint 2010**, nomeie o projeto **CustomActionWizardTest**e, em seguida, escolha o **Okey** botão.
+3. Na lista de modelos de projeto, escolha **projeto do SharePoint 2010**, nomeie o projeto **CustomActionWizardTest**e, em seguida, escolha o botão **OK** .
 
-4. No **Assistente para personalização do SharePoint**, insira a URL do site que você deseja usar para depuração e, em seguida, escolha o **concluir** botão.
+4. No **Assistente para personalização do SharePoint**, insira a URL do site que você deseja usar para depuração e, em seguida, escolha o botão **concluir** .
 
-5. Na **Gerenciador de soluções**, abra o menu de atalho do nó do projeto, escolha **Add**e, em seguida, escolha **Novo Item**.
+5. No **Gerenciador de soluções**, abra o menu de atalho para o nó do projeto, escolha **Adicionar**e, em seguida, escolha **novo item**.
 
-6. No **Adicionar Novo Item – CustomItemWizardTest** diálogo caixa, expanda o **SharePoint** nó e, em seguida, expanda o **2010** nó.
+6. Na caixa de diálogo **Adicionar novo item-CustomItemWizardTest** , expanda o nó do **SharePoint** e, em seguida, expanda o nó **2010** .
 
-7. Na lista de itens de projeto, escolha o **ação personalizada** item e, em seguida, escolha o **Add** botão.
+7. Na lista de itens de projeto, escolha o item de **ação personalizada** e, em seguida, escolha o botão **Adicionar** .
 
-8. Verifique se o código em outra instância do Visual Studio para no ponto de interrupção que você definiu anteriormente no `RunStarted` método.
+8. Verifique se o código na outra instância do Visual Studio é interrompido no ponto de interrupção que você definiu anteriormente no método `RunStarted`.
 
-9. Continuar a depuração do projeto, escolhendo a **F5** chave ou, na barra de menus, escolhendo **Debug** > **continuar**.
+9. Continue a depurar o projeto escolhendo a tecla **F5** ou, na barra de menus, escolhendo **depurar** > **continuar**.
 
-     O Assistente para personalização do SharePoint é exibida.
+     O assistente para personalização do SharePoint é exibido.
 
-10. Sob **local**, escolha o **lista Editar** botão de opção.
+10. Em **local**, escolha o botão de opção **lista de edição** .
 
-11. No **ID do grupo** , escolha **comunicações**.
+11. Na lista **ID do grupo** , escolha **comunicações**.
 
-12. No **Title** , digite **Central de desenvolvedores do SharePoint**.
+12. Na caixa **título** , insira **centro de desenvolvedores do SharePoint**.
 
-13. No **descrição** , digite **abre o site do SharePoint Developer Center**.
+13. Na caixa **Descrição** , digite **abre o site do centro de desenvolvedores do SharePoint**.
 
-14. No **URL** , digite **https://docs.microsoft.com/sharepoint/dev/** e, em seguida, escolha o **concluir** botão.
+14. Na caixa **URL** , digite **https://docs.microsoft.com/sharepoint/dev/** e, em seguida, escolha o botão **concluir** .
 
-     O Visual Studio adiciona um item que é denominado **CustomAction1** ao seu projeto e abrirá o *Elements. XML* arquivo no editor. Verifique *Elements. XML* contém os valores que você especificou no assistente.
+     O Visual Studio adiciona um item chamado **CustomAction1** ao seu projeto e abre o arquivo *Elements. xml* no editor. Verifique se *Elements. xml* contém os valores que você especificou no assistente.
 
 #### <a name="to-test-the-custom-action-in-sharepoint"></a>Para testar a ação personalizada no SharePoint
 
-1. Na instância experimental do Visual Studio, escolha o **F5** da chave ou, na barra de menus, escolha **Debug** > **iniciar depuração**.
+1. Na instância experimental do Visual Studio, escolha a tecla **F5** ou, na barra de menus, escolha **depurar** > **Iniciar Depuração**.
 
-     A ação personalizada é empacotada e implantada para o site do SharePoint especificado pela **URL do Site** propriedade do projeto e o navegador da web abre a página padrão deste site.
+     A ação personalizada é empacotada e implantada no site do SharePoint especificado pela propriedade **URL do site** do projeto e o navegador da Web é aberto na página padrão deste site.
 
     > [!NOTE]
-    > Se o **Script Debugging Disabled** caixa de diálogo for exibida, escolha o **Sim** botão.
+    > Se a caixa de diálogo **depuração de script desabilitada** for exibida, escolha o botão **Sim** .
 
-2. Na área de listas do site do SharePoint, escolha o **tarefas** link.
+2. Na área listas do site do SharePoint, escolha o link **tarefas** .
 
-     O **tarefas - todas as tarefas** página será exibida.
+     A página **tarefas – todas as tarefas** é exibida.
 
-3. No **ferramentas de lista** guia da faixa de opções, escolha o **lista** guia e, em seguida, no **configurações** grupo, escolha **as configurações da lista**.
+3. Na guia **ferramentas de lista** da faixa de opções, escolha a guia **lista** e, em seguida, no grupo **configurações** , escolha **configurações da lista**.
 
-     O **as configurações da lista** página será exibida.
+     A página **configurações da lista** é exibida.
 
-4. Sob o **comunicações** título na parte superior da página, escolha o **Central de desenvolvedores do SharePoint** vincular, verifique se o navegador abre o site https://docs.microsoft.com/sharepoint/dev/e, em seguida, feche o navegador.
+4. No título **comunicações** próximo à parte superior da página, escolha o link do **centro de desenvolvimento do SharePoint** , verifique se o navegador abre o site https://docs.microsoft.com/sharepoint/dev/ e, em seguida, feche o navegador.
 
 ## <a name="cleaning-up-the-development-computer"></a>Limpando o computador de desenvolvimento
- Após concluir o teste o item de projeto, remova o modelo de item de projeto da instância experimental do Visual Studio.
+ Depois de concluir o teste do item do projeto, remova o modelo de item do projeto da instância experimental do Visual Studio.
 
 #### <a name="to-clean-up-the-development-computer"></a>Para limpar o computador de desenvolvimento
 
@@ -335,16 +335,16 @@ ms.locfileid: "66401176"
 
      A caixa de diálogo **Extensões e Atualizações** é aberta.
 
-2. Na lista de extensões, escolha o **Item de projeto de ação personalizado** extensão e, em seguida, escolha o **desinstalar** botão.
+2. Na lista de extensões, escolha a extensão de **item de projeto de ação personalizada** e, em seguida, escolha o botão **desinstalar** .
 
-3. Na caixa de diálogo que aparece, escolha o **Yes** botão para confirmar que você deseja desinstalar a extensão e, em seguida, escolha o **reiniciar agora** botão para concluir a desinstalação.
+3. Na caixa de diálogo exibida, escolha o botão **Sim** para confirmar que você deseja desinstalar a extensão e, em seguida, escolha o botão **reiniciar agora** para concluir a desinstalação.
 
-4. Feche ambas as instâncias do Visual Studio (a instância experimental e a instância do Visual Studio em que a solução CustomActionProjectItem estiver aberta).
+4. Feche as duas instâncias do Visual Studio (a instância experimental e a instância do Visual Studio na qual a solução CustomActionProjectItem está aberta).
 
 ## <a name="see-also"></a>Consulte também
-- [Passo a passo: Criar um item de projeto de ação personalizado com um modelo de item, parte 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)
-- [Definir tipos personalizados de item de projeto do SharePoint](../sharepoint/defining-custom-sharepoint-project-item-types.md)
-- [Criar modelos de projeto do SharePoint para itens de projeto e modelos de item](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)
+- [Walkthrough: criar um item de projeto de ação personalizada com um modelo de item, parte 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)
+- [Definir tipos de item de projeto personalizados do SharePoint](../sharepoint/defining-custom-sharepoint-project-item-types.md)
+- [Criar modelos de item e modelos de projeto para itens de projeto do SharePoint](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)
 - [Referência de esquema do modelo do Visual Studio](/visualstudio/extensibility/visual-studio-template-schema-reference)
-- [Como: usar assistentes com modelos de projeto](../extensibility/how-to-use-wizards-with-project-templates.md)
-- [IDs e os locais padrão de ação personalizada](http://go.microsoft.com/fwlink/?LinkId=181964)
+- [Como usar assistentes com modelos do projeto](../extensibility/how-to-use-wizards-with-project-templates.md)
+- [IDs e locais de ação personalizada padrão](/previous-versions/office/developer/sharepoint-2010/bb802730(v=office.14))

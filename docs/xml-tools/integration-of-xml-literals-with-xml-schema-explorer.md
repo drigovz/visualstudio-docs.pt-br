@@ -8,16 +8,16 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c81f5db0477713ff99e9b7894bcbe86b3cf33018
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: cf073145b0deb21a2ec29ac1fff16be08fb24593
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72601774"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72986297"
 ---
 # <a name="integration-of-xml-literals-with-xml-schema-explorer"></a>Integração de literais XML com o XML Schema Explorer
 
-O Visual Basic dá suporte a literais XML, o que significa que você pode incorporar fragmentos XML diretamente em seu código de Visual Basic. Para obter mais informações, consulte [visão geral de literais XML](http://go.microsoft.com/fwlink/?LinkId=140325).
+O Visual Basic dá suporte a literais XML, o que significa que você pode incorporar fragmentos XML diretamente em seu código de Visual Basic. Para obter mais informações, consulte [visão geral de literais XML](/dotnet/visual-basic/programming-guide/language-features/xml/xml-literals-overview).
 
 ## <a name="how-to"></a>Como
 

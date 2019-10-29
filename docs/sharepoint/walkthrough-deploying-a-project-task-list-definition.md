@@ -1,5 +1,5 @@
 ---
-title: 'Passo a passo: Implantando uma definição de lista de tarefas do projeto | Microsoft Docs'
+title: 'Walkthrough: Implantando uma definição de Lista de Tarefas de projeto | Microsoft Docs'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,167 +12,167 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7ea7063ce432841e812312b7c7c36721a7d2d099
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 854037d096ceac01969bcb0ec2e074f4cd24a2f3
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62784203"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72983857"
 ---
-# <a name="walkthrough-deploy-a-project-task-list-definition"></a>Passo a passo: Implantar uma definição de lista de tarefas de projeto
+# <a name="walkthrough-deploy-a-project-task-list-definition"></a>Walkthrough: implantar uma definição de lista de tarefas de projeto
 
-Este passo a passo mostra como usar [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)] para criar, personalizar, depurar e implantar uma lista do SharePoint para controlar tarefas do projeto.
+Este tutorial mostra como usar [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)] para criar, personalizar, depurar e implantar uma lista do SharePoint para acompanhar as tarefas do projeto.
 
 [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>Pré-requisitos
+## <a name="prerequisites"></a>Prerequisites
 
 - Edições com suporte do Microsoft Windows e do SharePoint.
 
-- Visual Studio 2017 ou serviços de DevOps do Azure.
+- Visual Studio 2017 ou Azure DevOps Services.
 
 ## <a name="create-a-sharepoint-list"></a>Criar uma lista do SharePoint
 
-Crie um projeto de lista do SharePoint e associar a definição de lista de tarefas.
+Crie um projeto de lista do SharePoint e associe a definição de lista a tarefas.
 
-1. Abra o **novo projeto** diálogo caixa, expanda o **SharePoint** nó e, em seguida, escolha o **2010** nó.
+1. Abra a caixa de diálogo **novo projeto** , expanda o nó **SharePoint** e escolha o nó **2010** .
 
-2. No **modelos** painel, escolha o **o projeto do SharePoint 2010** modelo, nomeie o projeto **ProjectTaskList**e, em seguida, escolha o **Okey**botão.
+2. No painel **modelos** , escolha o modelo de **projeto do SharePoint 2010** , nomeie o projeto **ProjectTaskList**e, em seguida, escolha o botão **OK** .
 
-     O **Assistente para personalização do SharePoint** é exibida.
+     O **Assistente para personalização do SharePoint** é exibido.
 
-3. Especifique o site local do SharePoint que você pode usar para depuração, escolha o **implantar como uma solução de farm** botão de opção e, em seguida, escolha o **concluir** botão.
+3. Especifique o site do SharePoint local que você usa para depuração, escolha o botão de opção **implantar como uma solução de farm** e, em seguida, escolha o botão **concluir** .
 
-4. Abra o menu de atalho para o projeto e, em seguida, escolha **Add** > **Novo Item**.
+4. Abra o menu de atalho do projeto e escolha **adicionar** > **novo item**.
 
-5. No **modelos** painel, escolha o **lista** modelo e, em seguida, escolha o **Add** botão.
+5. No painel **modelos** , escolha o modelo de **lista** e, em seguida, escolha o botão **Adicionar** .
 
-     O **Assistente para personalização do SharePoint** é exibida.
+     O **Assistente para personalização do SharePoint** é exibido.
 
-6. No **que nome você deseja exibir para sua lista?** , digite **lista de tarefas do projeto**.
+6. Na caixa o **nome que você deseja exibir para sua lista?** , insira o **projeto lista de tarefas**.
 
-7. Escolha o **criar uma lista não personalizável com base em um tipo de lista existente de** botão de opção e, em seguida, na lista, escolha **tarefas**e, em seguida, escolha o **concluir** botão.
+7. Escolha a **lista criar uma não personalizável com base em um tipo de opção de lista existente** e, em seguida, em sua lista, escolha **tarefas**e, em seguida, escolha o botão **concluir** .
 
-     A lista, recurso e pacote aparecem no **Gerenciador de soluções**.
+     A lista, o recurso e o pacote aparecem no **Gerenciador de soluções**.
 
 ## <a name="add-an-event-receiver"></a>Adicionar um receptor de eventos
 
-Na lista de tarefas, você pode adicionar um receptor de eventos que define automaticamente o vencimento Data e a descrição da tarefa. O procedimento a seguir adiciona um manipulador de eventos simples para a instância de lista como um receptor de eventos.
+Na lista de tarefas, você pode adicionar um receptor de eventos que define automaticamente a data de vencimento e a descrição da tarefa. O procedimento a seguir adiciona um manipulador de eventos simples à instância da lista como um receptor de eventos.
 
-1. Abra o menu de atalho do nó do projeto, escolha **Add**e, em seguida, escolha **Novo Item**.
+1. Abra o menu de atalho para o nó do projeto, escolha **Adicionar**e, em seguida, escolha **novo item**.
 
-2. Na lista de modelos do SharePoint, escolha o **receptor de evento** modelo e, em seguida, nomeie- **ProjectTaskListEventReceiver**.
+2. Na lista de modelos do SharePoint, escolha o modelo **receptor de eventos** e nomeie-o **ProjectTaskListEventReceiver**.
 
-     O **Assistente para personalização do SharePoint** é exibida.
+     O **Assistente para personalização do SharePoint** é exibido.
 
-3. No **escolher configurações do receptor de evento** , escolha **eventos de Item de lista** como o tipo de receptor de evento no **que tipo de receptor de eventos você deseja** lista.
+3. Na página **escolher configurações do receptor de eventos** , escolha **eventos de item de lista** como o receptor de evento, na lista o **tipo de receptor de evento que você deseja** .
 
-4. No **qual item deve ser a origem do evento** , escolha **tarefas**.
+4. Na lista o **item que deve ser a origem do evento** , escolha **tarefas**.
 
-5. Na lista de eventos para manipular, marque a caixa de seleção ao lado **um item foi adicionado**e, em seguida, escolha o **concluir** botão.
+5. Na lista de eventos a serem manipulados, marque a caixa de seleção ao lado de **um item foi adicionado**e, em seguida, escolha o botão **concluir** .
 
-     Um novo nó de receptor de evento é adicionado ao projeto com um arquivo de código que é denominado **ProjectTaskListEventReceiver**.
+     Um novo nó receptor de eventos é adicionado ao projeto com um arquivo de código chamado **ProjectTaskListEventReceiver**.
 
-6. Adicione código para o `ItemAdded` método na **ProjectTaskListEventReceiver** arquivo de código. Cada vez que uma nova tarefa for adicionada, um padrão de data de vencimento e uma descrição é adicionado à tarefa. O padrão de vencimento data é 1º de julho de 2009.
+6. Adicione o código ao método `ItemAdded` no arquivo de código **ProjectTaskListEventReceiver** . Cada vez que uma nova tarefa é adicionada, uma data de vencimento padrão e uma descrição são adicionadas à tarefa. A data de vencimento padrão é 1º de julho de 2009.
 
      [!code-vb[SPProjectTaskList#1](../sharepoint/codesnippet/VisualBasic/projecttasklist1/projecttasklisteventreceiver/projecttasklisteventreceiver.vb#1)]
      [!code-csharp[SPProjectTaskList#1](../sharepoint/codesnippet/CSharp/projecttasklist/projecttasklisteventreceiver/projecttasklisteventreceiver.cs#1)]
 
 ## <a name="customize-the-project-task-list-feature"></a>Personalizar o recurso de lista de tarefas do projeto
 
-Quando você cria uma solução do SharePoint, o Visual Studio cria automaticamente os recursos para o padrão itens de projeto. Você pode personalizar as configurações de lista de tarefas do projeto para o site do SharePoint usando o Designer de recursos.
+Quando você cria uma solução do SharePoint, o Visual Studio cria automaticamente recursos para os itens de projeto padrão. Você pode personalizar as configurações da lista de tarefas do projeto do para o site do SharePoint usando o designer de recursos.
 
-1. Na **Gerenciador de soluções**, expanda **recursos**.
+1. Em **Gerenciador de soluções**, expanda **recursos**.
 
-2. Abra o menu de atalho **Feature1**e, em seguida, escolha **View Designer**.
+2. Abra o menu de atalho para **Feature1**e escolha **Designer de exibição**.
 
-3. No **Title** , digite **recurso de lista de tarefas do projeto**.
+3. Na caixa **título** , digite **projeto lista de tarefas recurso**.
 
-4. No **escopo** , escolha **Web**.
+4. Na lista **escopo** , escolha **Web**.
 
-5. No **propriedades** janela, insira **1.0.0.0** como o valor para o **versão** propriedade.
+5. Na janela **Propriedades** , digite **1.0.0.0** como o valor para a propriedade **version** .
 
-## <a name="customize-the-project-task-list-package"></a>Personalizar o pacote de lista de tarefas do projeto
+## <a name="customize-the-project-task-list-package"></a>Personalizar o pacote da lista de tarefas do projeto
 
-Quando você cria um projeto do SharePoint, o Visual Studio adiciona automaticamente os recursos que contêm os itens de projeto padrão para o pacote. Você pode personalizar as configurações de lista de tarefas do projeto para o site do SharePoint usando o Designer de pacote.
+Quando você cria um projeto do SharePoint, o Visual Studio adiciona automaticamente os recursos que contêm os itens de projeto padrão ao pacote. Você pode personalizar as configurações da lista de tarefas do projeto para o site do SharePoint usando o designer de pacotes.
 
-1. Na **SolutionExplorer**, abra o menu de atalho **pacote**e, em seguida, escolha **View Designer**.
+1. No **SolutionExplorer**, abra o menu de atalho para **pacote**e escolha **Designer de exibição**.
 
-2. No **nome** , digite **ProjectTaskListPackage**.
+2. Na caixa **nome** , digite **ProjectTaskListPackage**.
 
-3. Selecione o **redefinir o servidor de Web** caixa de seleção.
+3. Marque a caixa de seleção **Redefinir servidor Web** .
 
-## <a name="build-and-test-the-project-task-list"></a>Compilar e testar a lista de tarefas do projeto
+## <a name="build-and-test-the-project-task-list"></a>Criar e testar a lista de tarefas do projeto
 
-Quando você executa o projeto, abre o site do SharePoint. No entanto, você deve navegar manualmente para o local da lista de tarefas.
+Quando você executa o projeto, o site do SharePoint é aberto. No entanto, você deve navegar manualmente até o local da lista de tarefas.
 
-1. Escolha o **F5** chave para criar e implantar sua lista de tarefas do projeto.
+1. Escolha a tecla **F5** para criar e implantar a lista de tarefas do projeto.
 
-     Abre o site do SharePoint.
+     O site do SharePoint é aberto.
 
-2. Escolha o **Home** guia.
+2. Escolha a guia **página inicial** .
 
-3. Na barra lateral esquerda, escolha o **lista de tarefas do projeto** link.
+3. Na barra lateral esquerda, escolha o link **lista de tarefas do projeto** .
 
-     A página de lista de tarefas do projeto aparece.
+     A página Lista de Tarefas do projeto é exibida.
 
-4. No **ferramentas de lista** guia, escolha o **itens** guia.
+4. Na guia **ferramentas de lista** , escolha a guia **itens** .
 
-5. No **itens** grupo, escolha o **Novo Item** botão.
+5. No grupo **itens** , escolha o botão **novo item** .
 
-6. No **Title** texto, digite **Task1**.
+6. Na caixa de texto **título** , digite **Task1**.
 
-7. Escolha o **salvar** botão.
+7. Escolha o botão **salvar** .
 
-     Depois que o site é atualizado, o **Task1** tarefa aparece com uma data de vencimento de 7/1/2009.
+     Depois que o site for atualizado, a tarefa **Task1** aparecerá com uma data de conclusão de 7/1/2009.
 
-8. Escolher **Task1**.
+8. Escolha **Task1**.
 
-     A exibição detalhada da tarefa é exibida e a descrição mostra "É uma tarefa crítica."
+     A exibição detalhada da tarefa é exibida e a descrição mostra "esta é uma tarefa crítica".
 
 ## <a name="deploy-the-project-task-list"></a>Implantar a lista de tarefas do projeto
 
-Depois que você compilar e testar a lista de tarefas do projeto, você pode implantá-lo para o *sistema local* ou um *sistema remoto*. O sistema local é o mesmo computador em que você desenvolveu a solução, enquanto um sistema remoto é um computador diferente.
+Depois de criar e testar a lista de tarefas do projeto, você pode implantá-la no *sistema local* ou em um *sistema remoto*. O sistema local é o mesmo computador em que você desenvolveu a solução, enquanto que um sistema remoto é um computador diferente.
 
 ### <a name="to-deploy-the-project-task-list-to-the-local-system"></a>Para implantar a lista de tarefas do projeto no sistema local
 
-Na barra de menus do Visual Studio, escolha **construir** > **implantar solução**.
+Na barra de menus do Visual Studio, escolha **compilar** > **implantar solução**.
 
-Visual Studio recicla o pool de aplicativos do IIS, cancela todas as versões existentes da solução, copia o pacote de solução (*. wsp*) do arquivo no SharePoint e, em seguida, ativa seus recursos. Agora você pode usar a solução no SharePoint. Para obter mais informações sobre as etapas de configuração de implantação, consulte [como: Editar uma configuração de implantação do SharePoint](../sharepoint/how-to-edit-a-sharepoint-deployment-configuration.md).
+O Visual Studio recicla o pool de aplicativos do IIS, cancela todas as versões existentes da solução, copia o arquivo de pacote de solução ( *. wsp*) no SharePoint e ativa seus recursos. Agora você pode usar a solução no SharePoint. Para obter mais informações sobre as etapas de configuração de implantação, consulte [como editar uma configuração de implantação do SharePoint](../sharepoint/how-to-edit-a-sharepoint-deployment-configuration.md).
 
 ### <a name="to-deploy-the-project-task-list-to-a-remote-system"></a>Para implantar a lista de tarefas do projeto em um sistema remoto
 
-1. Na barra de menus do Visual Studio, escolha **construir** > **publicar**.
+1. Na barra de menus do Visual Studio, escolha **criar** > **publicar**.
 
-2. No **Publish** diálogo caixa, escolha o **publicar no sistema de arquivos** botão de opção.
+2. Na caixa de diálogo **publicar** , escolha o botão de opção **publicar no sistema de arquivos** .
 
-     Você pode alterar o local de destino na **Publish** caixa de diálogo escolhendo o botão de reticências ![no ícone reticências](../sharepoint/media/ellipsisicon.gif "ícone de reticências") e, em seguida, navegar para outro local.
+     Você pode alterar o local de destino na caixa de diálogo **publicar** escolhendo o ![ícone](../sharepoint/media/ellipsisicon.gif "Ícone de reticências") de reticências do botão de reticências e, em seguida, navegando para outro local.
 
-3. Escolha o **publicar** botão.
+3. Escolha o botão **publicar** .
 
-     Um *. wsp* arquivo é criado para a solução.
+     Um arquivo *. wsp* é criado para a solução.
 
-4. Cópia de *. wsp* arquivo no sistema remoto do SharePoint.
+4. Copie o arquivo *. wsp* para o sistema remoto do SharePoint.
 
-5. Usar o PowerShell `Add-SPUserSolution` comando para instalar o pacote de instalação remota do SharePoint. (Para soluções de farm, use o `Add-SPSolution` comando.)
+5. Use o comando `Add-SPUserSolution` do PowerShell para instalar o pacote na instalação remota do SharePoint. (Para soluções de farm, use o comando `Add-SPSolution`.)
 
      Por exemplo, `Add-SPUserSolution C:\MyProjects\ProjectTaskList\ProjectTaskList\bin\Debug\ProjectTaskList.wsp`.
 
-6. Usar o PowerShell `Install-SPUserSolution` comando para implantar a solução. (Para soluções de farm, use o `Install-SPSolution` comando.)
+6. Use o comando `Install-SPUserSolution` do PowerShell para implantar a solução. (Para soluções de farm, use o comando `Install-SPSolution`.)
 
      Por exemplo, `Install-SPUserSolution -Identity ProjectTaskList.wsp -Site http://NewSiteName`.
 
-     Para obter mais informações sobre a implantação remota, consulte [soluções usando](http://go.microsoft.com/fwlink/?LinkId=217680) e [adicionando e implantando soluções com o PowerShell no SharePoint 2010](http://go.microsoft.com/fwlink/?LinkId=217682).
+     Para obter mais informações sobre a implantação remota, consulte [usando soluções](/previous-versions/office/developer/sharepoint-2010/ee534972(v=office.14)) e [adicionando e implantando soluções com o PowerShell no SharePoint 2010](http://www.dotnetmafia.com/blogs/dotnettipoftheday/archive/2009/12/02/adding-and-deploying-solutions-with-powershell-in-sharepoint-2010.aspx).
 
 ## <a name="next-steps"></a>Próximas etapas
 
 Você pode aprender mais sobre como personalizar e implantar soluções do SharePoint dos seguintes tópicos:
 
-- [Passo a passo: Criar uma coluna de site, o tipo de conteúdo e a lista para o SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)
+- [Walkthrough: criar uma coluna de site, um tipo de conteúdo e uma lista para o SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)
 
-- [Como: Criar um receptor de eventos](../sharepoint/how-to-create-an-event-receiver.md)
+- [Como: criar um receptor de eventos](../sharepoint/how-to-create-an-event-receiver.md)
 
-- [Windows PowerShell para o SharePoint Server 2010](http://go.microsoft.com/fwlink/?LinkId=217684)
+- [Windows PowerShell para SharePoint Server 2010](/powershell/module/sharepoint-server/&view=sharepoint-ps)
 
 ## <a name="see-also"></a>Consulte também
 [Empacotar e implantar soluções do SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

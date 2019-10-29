@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 7b2de511b0d24df9c4e156ccef37ff053005af98
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: 51723d22cd72de8333fca9b83c1643117a7413e5
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72450437"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72986223"
 ---
 # <a name="step-3-use-the-interactive-repl-window"></a>Etapa 3: usar a janela interativa REPL
 
@@ -25,7 +25,7 @@ ms.locfileid: "72450437"
 A janela **Interativa** do Visual Studio para Python oferece uma experiência avançada de REPL (leitura-avaliação-impressão-loop), que reduz consideravelmente o ciclo comum de edição-build-depuração. A janela **Interativa** fornece todos os recursos da experiência de REPL da linha de comando do Python. Ela também facilita a troca de código com arquivos de origem no editor do Visual Studio, o que seria difícil com a linha de comando.
 
 > [!NOTE]
-> Para problemas com REPL, verifique se os pacotes `ipython` e `ipykernel` estão instalados e, para obter ajuda na instalação dos pacotes, confira a [guia de pacotes de ambientes Python](https://docs.microsoft.com/en-us/visualstudio/python/python-environments-window-tab-reference#packages-tab).
+> Para problemas com REPL, verifique se os pacotes `ipython` e `ipykernel` estão instalados e, para obter ajuda na instalação dos pacotes, confira a [guia de pacotes de ambientes Python](/en-us/visualstudio/python/python-environments-window-tab-reference#packages-tab).
 
 1. Abra a janela **Interativa** clicando com o botão direito do mouse no ambiente de projeto do Python no **Gerenciador de Soluções** (como **Python 3.6 (32 bits)** , mostrado em um gráfico anterior) e selecionando **Abrir Janela Interativa**. Como alternativa, você pode selecionar **Exibir** > **Outras Janelas** > **Janelas Interativas do Python** no menu principal do Visual Studio.
 
@@ -54,7 +54,7 @@ A janela **Interativa** do Visual Studio para Python oferece uma experiência av
         return ' ' * int(20 * cos(radians(x)) + 20) + 'o'
     ```
 
-1. Selecione as instruções de função `import`, `from` e `make_dot_string` no arquivo *. py* , clique com o botão direito do mouse e selecione **Enviar para interativo** (ou pressione **Ctrl**+**Enter**). O fragmento de código será imediatamente colado na janela **Interativa** e executado. Como o código definiu uma função, você pode testar rapidamente essa função chamando-a algumas vezes:
+1. Selecione as instruções de função `import`, `from`e `make_dot_string` no arquivo *. py* , clique com o botão direito do mouse e selecione **Enviar para interativo** (ou pressione **Ctrl**+**Enter**). O fragmento de código será imediatamente colado na janela **Interativa** e executado. Como o código definiu uma função, você pode testar rapidamente essa função chamando-a algumas vezes:
 
     ![Enviando o código para a janela interativa e testando-o](media/vs-getting-started-python-14-interactive4.png)
 

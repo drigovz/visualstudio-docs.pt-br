@@ -1,5 +1,5 @@
 ---
-title: Criar a coluna de site, tipo de conteúdo e lista para o SharePoint
+title: Criar coluna de site, tipo de conteúdo e lista para SharePoint
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -19,63 +19,63 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 141ce92fa083a0afacdae3a279d2697e0931e3be
-ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.openlocfilehash: e78594a98066dec6cedff6da6f3f1de823bec796
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66401278"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985012"
 ---
-# <a name="walkthrough-create-a-site-column-content-type-and-list-for-sharepoint"></a>Passo a passo: Criar uma coluna de site, o tipo de conteúdo e a lista para o SharePoint
-  Os procedimentos a seguir demonstram como criar colunas de site do SharePoint personalizadas — ou *campos*— bem como um tipo de conteúdo que usa as colunas de site. Ele também mostra como criar uma lista que usa o novo tipo de conteúdo.
+# <a name="walkthrough-create-a-site-column-content-type-and-list-for-sharepoint"></a>Walkthrough: criar uma coluna de site, um tipo de conteúdo e uma lista para o SharePoint
+  Os procedimentos a seguir demonstram como criar colunas de site do SharePoint (ou *campos*) personalizados, bem como um tipo de conteúdo que usa as colunas do site. Ele também mostra como criar uma lista que usa o novo tipo de conteúdo.
 
  Esta explicação passo a passo inclui as seguintes tarefas:
 
-- [Criar colunas de site personalizadas](#create-custom-site-columns).
+- [Crie colunas de site personalizadas](#create-custom-site-columns).
 
-- [Criar um tipo de conteúdo personalizado](#create-a-custom-content-type).
+- [Crie um tipo de conteúdo personalizado](#create-a-custom-content-type).
 
-- [Criar uma lista](#create-a-list).
+- [Crie uma lista](#create-a-list).
 
-- [Testar o aplicativo](#test-the-application).
+- [Teste o aplicativo](#test-the-application).
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>Pré-requisitos
+## <a name="prerequisites"></a>Prerequisites
  Você precisa dos seguintes componentes para concluir esta instrução passo a passo:
 
 - Edições com suporte do Windows e do SharePoint.
 
 - [!INCLUDE[vsprvs-current](../sharepoint/includes/vsprvs-current-md.md)]
 
-## <a name="create-custom-site-columns"></a>Criar colunas de site personalizada
- Este exemplo cria uma lista para o gerenciamento de pacientes em um hospital. Primeiro, você deve criar um projeto do SharePoint no [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] e adicionar colunas de site a ele, da seguinte maneira.
+## <a name="create-custom-site-columns"></a>Criar colunas de site personalizadas
+ Este exemplo cria uma lista para gerenciar pacientes em um hospital. Primeiro, você deve criar um projeto do SharePoint no [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] e adicionar colunas do site a ele, da seguinte maneira.
 
 #### <a name="to-create-the-project"></a>Para criar o projeto
 
-1. Sobre o [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] **arquivo** menu, escolha **New** > **projeto**.
+1. No menu [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] **arquivo** , escolha **novo** **projeto**de > .
 
-2. No **novo projeto** caixa de diálogo, em qualquer um **Visual c#** ou **Visual Basic**, expanda o **SharePoint** nó e, em seguida, escolha **2010**.
+2. Na caixa de diálogo **novo projeto** , em **Visual C#**  ou **Visual Basic**, expanda o nó **SharePoint** e, em seguida, escolha **2010**.
 
-3. No **modelos** painel, escolha **o projeto do SharePoint 2010**, altere o nome do projeto para **clínica**e, em seguida, escolha o **Okey** botão.
+3. No painel **modelos** , escolha **projeto do SharePoint 2010**, altere o nome do projeto para **clínica**e, em seguida, escolha o botão **OK** .
 
-     O modelo de projeto do SharePoint 2010 é um projeto vazio que é usado neste exemplo para conter as colunas de site e outros itens de projeto que forem adicionadas posteriormente.
+     O modelo de projeto do SharePoint 2010 é um projeto vazio que é usado neste exemplo para conter colunas de site e outros itens de projeto que são adicionados posteriormente.
 
-4. Sobre o **especificar o nível de site e segurança para depuração** página, insira a URL do site do SharePoint local para o qual você deseja adicionar o novo item de campo personalizado ou usar o local padrão (`http://<`*SystemName* `>/)`.
+4. Na página **especificar o site e o nível de segurança para depuração** , insira a URL do site do SharePoint local ao qual você deseja adicionar o novo item de campo personalizado ou use o local padrão (`http://<``>/)`do *sistema* .
 
-5. No **qual é o nível de confiança para essa solução do SharePoint?** seção, use o valor padrão **implantar como solução em área restrita**.
+5. Na seção **o que é o nível de confiança para esta solução do SharePoint?** , use o valor padrão **implantar como uma solução de área restrita**.
 
-     Para obter mais informações sobre a área restrita e soluções em farm, consulte [considerações sobre a solução em área restrita](../sharepoint/sandboxed-solution-considerations.md).
+     Para obter mais informações sobre soluções de farm e área restrita, consulte [Considerações sobre a solução em área restrita](../sharepoint/sandboxed-solution-considerations.md).
 
-6. Escolha o **concluir** botão. O projeto agora está listado em **Gerenciador de soluções**.
+6. Escolha o botão **concluir** . Agora, o projeto está listado em **Gerenciador de soluções**.
 
 #### <a name="to-add-site-columns"></a>Para adicionar colunas de site
 
-1. Adicione uma nova coluna de site. Para fazer isso, em **Gerenciador de soluções**, abra o menu de atalho **clínica**e, em seguida, escolha **Add** > **Novo Item**.
+1. Adicione uma nova coluna de site. Para fazer isso, em **Gerenciador de soluções**, abra o menu de atalho para a **clínica**e, em seguida, escolha **Adicionar** > **novo item**.
 
-2. No **Adicionar Novo Item** diálogo caixa, escolha **coluna de Site**, altere o nome para **paciente nome**e, em seguida, escolha o **adicionar** botão.
+2. Na caixa de diálogo **Adicionar novo item** , escolha **coluna do site**, altere o nome para **nome do paciente**e, em seguida, escolha o botão **Adicionar** .
 
-3. Na coluna de site *Elements. XML* do arquivo, deixe o **tipo** definir como **texto**e altere o **grupo** definindo como  **Colunas de Site clínica**. Ao concluir, a coluna de site *Elements. XML* arquivo deve parecer com o exemplo a seguir.
+3. No arquivo *Elements. xml* da coluna do site, deixe a configuração de **tipo** como **texto**e altere a configuração de **grupo** para colunas do **site de clínica**. Ao concluir, o arquivo *Elements. xml* da coluna do site deve ser semelhante ao exemplo a seguir.
 
     ```xml
     <Field
@@ -88,44 +88,44 @@ ms.locfileid: "66401278"
     </Field>
     ```
 
-4. Usando o mesmo procedimento, adicione mais duas colunas de site para o projeto: **ID do paciente** (tipo = "Integer") e **Doutor nome** (tipo = "Text"). Definir seu valor de grupo **colunas de Site clínica**.
+4. Usando o mesmo procedimento, adicione mais duas colunas do site ao projeto: **ID do paciente** (tipo = "inteiro") e **nome do doutor** (tipo = "texto"). Defina o valor do grupo como **colunas do site da clínica**.
 
 ## <a name="create-a-custom-content-type"></a>Criar um tipo de conteúdo personalizado
- Em seguida, crie um tipo de conteúdo — com base no tipo de conteúdo contatos — que inclui as colunas de site que você criou no procedimento anterior. Baseando um tipo de conteúdo em um tipo de conteúdo existente, você pode economizar tempo porque o tipo de conteúdo base fornece várias colunas de site para uso no novo tipo de conteúdo.
+ Em seguida, crie um tipo de conteúdo — com base no tipo de conteúdo contatos — que inclui as colunas do site que você criou no procedimento anterior. Com base em um tipo de conteúdo em um tipo de conteúdo existente, você pode economizar tempo, pois o tipo de conteúdo base fornece várias colunas de site para uso no novo tipo de conteúdo.
 
 #### <a name="to-create-a-custom-content-type"></a>Para criar um tipo de conteúdo personalizado
 
-1. Adicione um tipo de conteúdo para o projeto. Para fazer isso, em **Gerenciador de soluções**, escolha o nó do projeto
+1. Adicione um tipo de conteúdo ao projeto. Para fazer isso, em **Gerenciador de soluções**, escolha o nó do projeto
 
 2. Na barra de menus, escolha **Projeto** > **Adicionar Novo Item**.
 
-3. Em um **Visual c#** ou **Visual Basic**, expanda o **SharePoint** nó e, em seguida, escolha o **2010** nó.
+3. Em **Visual C#**  ou **Visual Basic**, expanda o nó do **SharePoint** e escolha o nó **2010** .
 
-4. No **modelos** painel, escolha o **tipo de conteúdo** modelo, altere o nome para **informações do paciente**e, em seguida, escolha o **adicionar** botão.
+4. No painel **modelos** , escolha o modelo de **tipo de conteúdo** , altere o nome para informações do **paciente**e, em seguida, escolha o botão **Adicionar** .
 
-     O **Assistente para personalização do SharePoint** é aberta.
+     O **Assistente para personalização do SharePoint** é aberto.
 
-5. No **qual tipo de conteúdo base esse tipo de conteúdo deve herdar de** , escolha **contato** como o tipo de conteúdo no qual basear o novo tipo de conteúdo e, em seguida, escolha o **concluir**botão.
+5. Em **qual tipo de conteúdo base esse tipo de conteúdo deve herdar da** lista, escolha **contato** como o tipo de conteúdo no qual basear o novo tipo de conteúdo e, em seguida, escolha o botão **concluir** .
 
-     Isso fornece acesso a outras colunas de site potencialmente útil no contato tipo de conteúdo, além das colunas de site que você definiu anteriormente.
+     Isso lhe dá acesso a outras colunas de site potencialmente úteis no tipo de conteúdo de contato, além das colunas de site que você definiu anteriormente.
 
-6. Após o tipo de conteúdo designer é exibido, além de **colunas** guia, adicione as três colunas que você definiu anteriormente do site: **Nome do paciente**, **ID do paciente**, e **Doutor nome**. Para adicionar essas colunas, escolha a primeira caixa de listagem na lista de colunas de site sob **nome de exibição**e, em seguida, escolher cada coluna de site na lista uma por vez.
+6. Depois que o designer de tipo de conteúdo for exibido, na guia **colunas** , adicione as três colunas do site que você definiu anteriormente: **nome do paciente**, **ID do paciente**e nome do **médico**. Para adicionar essas colunas, escolha a primeira caixa de listagem na lista colunas do site em **nome de exibição**e escolha cada coluna do site na lista, uma de cada vez.
 
     > [!TIP]
-    > Para escolher as colunas de site mais rapidamente, filtre a lista, digitando as primeiras letras do nome da coluna.
+    > Para escolher as colunas do site mais rapidamente, filtre a lista inserindo as primeiras letras do nome da coluna.
 
-7. Além de três colunas de site personalizado, adicione a **comentários** coluna de site da lista de colunas de site.
+7. Além das três colunas de site personalizadas, adicione a coluna site de **comentários** da lista colunas do site.
 
-8. Selecione o **necessária** caixa de seleção para o **nome do paciente** e **ID do paciente** campos obrigatórios de colunas de site para torná-los.
+8. Marque a caixa de seleção **necessário** para as colunas **nome do paciente** e site da **ID do paciente** para torná-las campos obrigatórios.
 
-9. Sobre o **Content Type** guia, certifique-se de que o nome do tipo de conteúdo é **informações do paciente**e, em seguida, altere a descrição a ser **cartão de informações do paciente**.
+9. Na guia **tipo de conteúdo** , verifique se o nome do tipo de conteúdo é **informações sobre o paciente**e altere a descrição para o cartão de informações do **paciente**.
 
-10. Alteração **nome do grupo** à **tipos de conteúdo de clínica**e deixe as outras configurações em seus valores padrão.
+10. Altere o **nome do grupo** para os tipos de conteúdo da **clínica**e deixe as outras configurações com seus valores padrão.
 
-11. Na barra de menus, escolha **arquivo** > **Salvar tudo**e, em seguida, feche o designer de tipo de conteúdo.
+11. Na barra de menus, escolha **arquivo** > **salvar tudo**e, em seguida, feche o designer de tipo de conteúdo.
 
 ## <a name="create-a-list"></a>Criar uma lista
- Agora, crie uma lista que usa as novas colunas de site e tipo de conteúdo.
+ Agora, crie uma lista que usa o novo tipo de conteúdo e colunas de site.
 
 #### <a name="to-create-a-list"></a>Para criar uma lista
 
@@ -133,19 +133,19 @@ ms.locfileid: "66401278"
 
 2. Na barra de menus, escolha **Projeto** > **Adicionar Novo Item**.
 
-3. Em um **Visual c#** ou **Visual Basic**, expanda o **SharePoint** nó e, em seguida, escolha o **2010** nó.
+3. Em **Visual C#**  ou **Visual Basic**, expanda o nó do **SharePoint** e escolha o nó **2010** .
 
-4. No **modelos** painel, escolha o **lista** modelo, altere o nome para **pacientes**e, em seguida, escolha o **adicionar** botão.
+4. No painel **modelos** , escolha o modelo de **lista** , altere o nome para **pacientes**e, em seguida, escolha o botão **Adicionar** .
 
-5. Deixe o **personalizar a lista com base no** definir como **padrão (em branco)** e, em seguida, escolha o **concluir** botão.
+5. Deixe a opção **Personalizar a lista com base na** configuração como **padrão (em branco)** e escolha o botão **concluir** .
 
-6. No Designer de lista, escolha o **tipos de conteúdo** botão para exibir o **configurações de tipo de conteúdo** caixa de diálogo.
+6. No designer de lista, escolha o botão **tipos de conteúdo** para exibir a caixa de diálogo Configurações de tipo de **conteúdo** .
 
-7. Escolha a nova linha, escolha o **informações do paciente** tipo na lista de tipos de conteúdo de conteúdo e, em seguida, escolha o **Okey** botão.
+7. Escolha a nova linha, escolha o tipo de conteúdo **informações do paciente** na lista de tipos de conteúdo e escolha o botão **OK** .
 
-     Isso adiciona todas as colunas de site do **informações do paciente** tipo na lista de conteúdo.
+     Isso adiciona todas as colunas do site do tipo de conteúdo **informações do paciente** à lista.
 
-8. Exclua todas as colunas de site na lista, exceto os seguintes:
+8. Exclua todas as colunas do site na lista, exceto as seguintes:
 
     - ID do paciente
 
@@ -153,32 +153,32 @@ ms.locfileid: "66401278"
 
     - Telefone residencial
 
-    - Email
+    - Mensagens
 
-    - Nome do Doutor
+    - Nome do doutor
 
     - Comentários
 
-9. Sob **nome de exibição da coluna**, escolha uma linha vazia, adicione uma coluna de lista personalizada e nomeie- **Hospital**. Deixe seu tipo de dados como **linha única de texto**.
+9. Em **nome de exibição da coluna**, escolha uma linha vazia, adicione uma coluna de lista personalizada e nomeie-a como **hospital**. Deixe seu tipo de dados como **uma linha de texto**.
 
-     A coluna de lista personalizada só se aplica a essa lista. Quando você adiciona uma coluna de lista personalizada a uma lista, um nova lista Tipo de conteúdo, incluindo todas as colunas adicionadas à lista, é criado e definido como a lista padrão.
+     A coluna de lista personalizada aplica-se somente a essa lista. Quando você adiciona uma coluna de lista personalizada a uma lista, um novo tipo de conteúdo de lista, incluindo todas as colunas adicionadas à lista, é criado e definido como a lista padrão.
 
     > [!TIP]
-    > Se você escolher uma coluna na lista de colunas de site, uma coluna de site existente será usada. No entanto, se você inserir um valor de nome de coluna sem escolher nenhuma coluna na lista, uma coluna de lista personalizada é criada, mesmo se uma coluna com o mesmo nome já existe na lista.
+    > Se você escolher uma coluna na lista de colunas do site, uma coluna de site existente será usada. No entanto, se você inserir um valor de nome de coluna sem escolher colunas na lista, uma coluna de lista personalizada será criada, mesmo que uma coluna com o mesmo nome já exista na lista.
 
-     Opcionalmente, em vez de definir o tipo de dados da coluna de lista personalizada para **linha única de texto**, em vez disso, você pode definir o tipo de dados para essa coluna para pesquisa e seus valores deve ser recuperados de uma tabela ou outra lista. Para obter informações sobre colunas de pesquisa, consulte [relações de lista no SharePoint 2010](http://go.microsoft.com/fwlink/?LinkId=224994) e [pesquisas e relações de lista](http://go.microsoft.com/fwlink/?LinkID=224995).
+     Opcionalmente, em vez de definir o tipo de dados para a coluna de lista personalizada como **uma única linha de texto**, você pode definir o tipo de dados para essa coluna como Lookup e seus valores seriam recuperados de uma tabela ou de outra lista. Para obter informações sobre colunas de pesquisa, consulte [relações de lista no SharePoint 2010](/previous-versions/msp-n-p/ff798514(v=pandp.10)) e [pesquisas e relações de lista](/previous-versions/office/developer/sharepoint-2010/ff623048(v=office.14)).
 
-10. Lado a **ID do paciente** e **nome do paciente** caixas, selecionadas o **necessária** caixa de seleção.
+10. Ao lado das caixas **ID do paciente** e nome do **paciente** , marque a caixa de seleção **necessário** .
 
-11. Sobre o **modos de exibição** guia, escolha uma linha vazia para criar uma exibição. Insira **detalhes do paciente**.
+11. Na guia **exibições** , escolha uma linha vazia para criar uma exibição. Insira os **detalhes do paciente**.
 
-     Sobre o **modos de exibição** guia, você pode especificar as colunas que você deseja que apareça na lista do SharePoint.
+     Na guia **modos de exibição** , você pode especificar as colunas que deseja que apareçam na lista do SharePoint.
 
-12. Escolha o novo **detalhes do paciente** linha e, em seguida, escolha o **definir como padrão** botão.
+12. Escolha a linha novos **detalhes do paciente** e, em seguida, escolha o botão **definir como padrão** .
 
-     O novo modo de exibição agora é a exibição padrão para a lista.
+     A nova exibição agora é a exibição padrão da lista.
 
-13. Adicione as seguintes colunas para o **colunas selecionadas** lista na seguinte ordem:
+13. Adicione as seguintes colunas à lista **colunas selecionadas** na seguinte ordem:
 
     - ID do paciente
 
@@ -186,42 +186,42 @@ ms.locfileid: "66401278"
 
     - Telefone residencial
 
-    - Email
+    - Mensagens
 
-    - Nome do Doutor
+    - Nome do doutor
 
     - Hospital
 
     - Comentários
 
-14. No **propriedades** , escolha o **classificando e agrupando** propriedade e, em seguida, escolha o botão de reticências ![ícone de reticências](../sharepoint/media/ellipsisicon.gif "noíconereticências")para exibir o **classificando e agrupando** caixa de diálogo.
+14. Na lista **Propriedades** , escolha a propriedade **classificar e agrupar** e, em seguida, escolha o ![ícone](../sharepoint/media/ellipsisicon.gif "Ícone de reticências") de reticências botão de reticências para exibir a caixa de diálogo **classificar e agrupar** .
 
-15. No **nome da coluna** , escolha **paciente nome**, certifique-se de que o **classificação** coluna estiver definida como **crescente**e, em seguida, escolha o  **Okey** botão.
+15. Na lista **nome da coluna** , escolha **nome do paciente**, verifique se a coluna de **classificação** está definida como **crescente**e, em seguida, escolha o botão **OK** .
 
 ## <a name="test-the-application"></a>Testar o aplicativo
- Agora que as colunas de site personalizadas, o tipo de conteúdo e a lista estiverem prontos, implantá-los no SharePoint e execute o aplicativo para testá-lo.
+ Agora que as colunas de site personalizadas, o tipo de conteúdo e a lista estão prontos, implante-as no SharePoint e execute o aplicativo para testá-lo.
 
 #### <a name="to-test-the-application"></a>Para testar o aplicativo
 
 1. Na barra de menus, escolha **Arquivo** > **Salvar Todos**.
 
-2. Escolha o **F5** chave para executar o aplicativo.
+2. Escolha a tecla **F5** para executar o aplicativo.
 
      O aplicativo é compilado e, em seguida, seus recursos são implantados no SharePoint e ativados.
 
-3. Na barra de navegação rápida, escolha o **pacientes** link para exibir o **pacientes** lista.
+3. Na barra de navegação rápida, escolha o link **pacientes** para exibir a lista de **pacientes** .
 
-     Os nomes de coluna na lista devem corresponder àquelas que você inseriu na **modos de exibição** guia [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
+     Os nomes de coluna na lista devem corresponder aos que você inseriu na guia **modos de exibição** em [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 
-4. Escolha o **adicionar novo item** link para criar um cartão de informações do paciente.
+4. Escolha o link **Adicionar novo item** para criar um cartão de informações do paciente.
 
-5. Insira as informações nos campos e, em seguida, escolha o **salvar** botão.
+5. Insira informações nos campos e, em seguida, escolha o botão **salvar** .
 
      O novo registro aparece na lista.
 
 ## <a name="see-also"></a>Consulte também
 - [Criar colunas de site, tipos de conteúdo e listas para o SharePoint](../sharepoint/creating-site-columns-content-types-and-lists-for-sharepoint.md)
 - [Desenvolver soluções do SharePoint](../sharepoint/developing-sharepoint-solutions.md)
-- [Como: Criar um tipo de campo personalizado](http://go.microsoft.com/fwlink/?LinkId=192079)
-- [Tipos de conteúdo](http://go.microsoft.com/fwlink/?LinkId=192080)
-- [Columns](http://go.microsoft.com/fwlink/?LinkId=192081)
+- [Como: criar um tipo de campo personalizado](/previous-versions/office/developer/sharepoint-2010/bb862248(v=office.14))
+- [Tipos de conteúdo](/previous-versions/office/developer/sharepoint-2010/ms479905(v=office.14))
+- [Columns](/previous-versions/office/developer/sharepoint-2010/ms196085(v=office.14))

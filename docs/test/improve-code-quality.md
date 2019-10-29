@@ -10,12 +10,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: jillre
-ms.openlocfilehash: b68793e512cdb367375cc9f27d61ae5a85e4f078
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e57feede5963b9efc04f98f4c7ba3adfb1eb49b1
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653276"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72984639"
 ---
 # <a name="testing-tools-in-visual-studio"></a>Testando ferramentas no Visual Studio
 
@@ -68,7 +68,7 @@ A análise de cobertura de código pode ser aplicada a código gerenciado e não
 A cobertura de código é uma opção quando você executa métodos de teste usando o Gerenciador de Testes. A tabela de resultados mostra a porcentagem do código que foi executada em cada assembly, classe e método. Além disso, o editor de código-fonte mostra que código foi testado.
 
 * [Usar a cobertura de código para determinar quanto do código está sendo testado](using-code-coverage-to-determine-how-much-code-is-being-tested.md)
-* [Teste de unidade, cobertura de código e análise de clone de código com o Visual Studio (laboratório)](http://download.microsoft.com/download/6/2/B/62B60ECE-B9DC-4E8A-A97C-EA261BFB935E/Docs/Unit%20Testing,%20Code%20Coverage%20and%20Code%20Clone%20Analysis%20with%20Visual%20Studio%202015.docx)
+* [Teste de unidade, cobertura de código e análise de clone de código com o Visual Studio (laboratório)](https://www.boost.org/doc/libs/1_71_0/libs/test/doc/html/index.html)
 * [Personalizar a análise de cobertura de código](customizing-code-coverage-analysis.md)
 
 ## <a name="microsoft-fakes"></a>Microsoft Fakes
@@ -86,7 +86,7 @@ Se escolher um dos melhores testes de interface do usuário codificada ou testes
 * [Usar a automação de interface do usuário para testar seu código](use-ui-automation-to-test-your-code.md)
 * [Introdução à criação, à edição, e à manutenção do teste de IU codificado](walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
 * [Testar aplicativos UWP com testes de IU codificados](test-uwp-app-with-coded-ui-test.md)
-* [Introdução aos testes de IU codificados com o Visual Studio Enterprise (laboratório)](http://download.microsoft.com/download/6/2/B/62B60ECE-B9DC-4E8A-A97C-EA261BFB935E/Docs/Introduction%20to%20Coded%20UI%20Tests%20with%20Visual%20Studio%20Enterprise%202015.docx)
+* [Introdução aos testes de IU codificados com o Visual Studio Enterprise (laboratório)](https://www.boost.org/doc/libs/1_71_0/libs/test/doc/html/index.html)
 
 ## <a name="load-testing"></a>Teste de carga
 

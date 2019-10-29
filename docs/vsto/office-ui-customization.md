@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e5fd0253c6ca560c58724c8a83e343164b678923
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 15c7061030bec6aebca9cdc63d0cd0e0c79cc9aa
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71254149"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985698"
 ---
 # <a name="office-ui-customization"></a>Personalização da interface do usuário do Office
   Você pode personalizar a interface do usuário de aplicativos Microsoft Office usando as ferramentas de desenvolvedor do Office no Visual Studio. Este tópico descreve os recursos de interface do usuário que você pode personalizar nas seguintes seções:
@@ -48,7 +48,7 @@ ms.locfileid: "71254149"
 |Painel Ações|Personalizações no nível de documento|Excel<br /><br /> Palavra|
 |Painéis de tarefas personalizados|Suplementos do VSTO|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)]<br /><br /> [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)]<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> Palavra<br /><br /> Excel|
 |Interface do usuário da faixa de para personalizada|Personalizações no nível de documento<br /><br /> Suplementos do VSTO|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)]<br /><br /> [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)]<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> Projeto<br /><br /> Palavra<br /><br /> Visio|
-|Modo de exibição de Backstage|Personalizações no nível de documento<br /><br /> Suplementos do VSTO|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)].<br /><br /> [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)]<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> Projeto<br /><br /> Palavra<br /><br /> Visio|
+|Modo de exibição de Backstage|Personalizações no nível de documento<br /><br /> Suplementos do VSTO|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)]<br /><br /> [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)]<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> Projeto<br /><br /> Palavra<br /><br /> Visio|
 |Regiões de formulário do Outlook|Suplementos do VSTO|Outlook|
 |Controles em documentos|Personalizações no nível de documento<br /><br /> Suplementos do VSTO|Excel<br /><br /> Palavra|
 |Menus de atalho|Personalizações no nível de documento<br /><br /> Suplementos do VSTO|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)]<br /><br /> [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)]<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> Projeto<br /><br /> Palavra<br /><br /> Visio<br /><br /> Excel|
@@ -76,7 +76,7 @@ ms.locfileid: "71254149"
 
  O Visual Studio não fornece um designer ou APIs para personalizar o modo de exibição de Backstage. No entanto, se você adicionar um item de faixa de visualização **(XML)** ao seu projeto do Office, poderá adicionar XML ao arquivo XML da faixa de faixas para personalizar o modo de exibição de Backstage. Para obter mais informações sobre itens de **faixa de faixas (XML)** , consulte [Ribbon XML](../vsto/ribbon-xml.md).
 
- Para obter mais informações sobre como personalizar o modo de exibição de Backstage, consulte [introdução ao modo de exibição de Backstage do office 2010 para desenvolvedores](http://go.microsoft.com/fwlink/?LinkId=182189) e [Personalizar o modo de exibição do Backstage do Office 2010 para desenvolvedores](http://go.microsoft.com/fwlink/?LinkId=182188).
+ Para obter mais informações sobre como personalizar o modo de exibição de Backstage, consulte [introdução ao modo de exibição de Backstage do office 2010 para desenvolvedores](/previous-versions/office/developer/office-2010/ee691833(v=office.14)) e [Personalizar o modo de exibição do Backstage do Office 2010 para desenvolvedores](/previous-versions/office/developer/office-2010/ee815851(v=office.14)).
 
 ## <a name="FormRegion"></a>Regiões de formulário do Outlook
  Use regiões de formulário para adicionar funcionalidade personalizada a formulários padrão do Microsoft Office Outlook. Você pode criar regiões de formulário que estendam qualquer formulário existente com campos ou controles adicionais. Se você criar uma nova região de formulário usando as ferramentas de desenvolvimento do Office no Visual Studio, poderá usar somente Windows Forms controles na região do formulário. Se você importar uma região de formulário que foi criada no Outlook, poderá usar apenas controles nativos do Outlook.
@@ -93,7 +93,7 @@ ms.locfileid: "71254149"
  Para obter mais informações, consulte Visão geral de [itens de host e controles de host](../vsto/host-items-and-host-controls-overview.md) e [controles do Windows Forms em documentos do Office](../vsto/windows-forms-controls-on-office-documents-overview.md).
 
 ## <a name="Shortcut"></a>Menus de atalho
- Um menu de atalho é exibido quando você clica com o botão direito do mouse em um documento ou em uma janela de aplicativo. Você pode definir um menu de atalho para aparecer depois que um evento ocorrer, como quando um usuário clica com o botão direito do mouse em um documento, pasta de trabalho ou controle de host. Você pode adicionar vários comandos de menu ou controles diferentes a um menu de atalho. Crie menus de atalho usando XML. Se você adicionar um item **da faixa (XML)** ao seu projeto do Office, você poderá adicionar XML ao arquivo XML da faixa de para criar menus de atalho. Para obter mais informações sobre como usar o XML para criar menus [de atalho, consulte Como: Adicione comandos a menus](../vsto/how-to-add-commands-to-shortcut-menus.md)de atalho.
+ Um menu de atalho é exibido quando você clica com o botão direito do mouse em um documento ou em uma janela de aplicativo. Você pode definir um menu de atalho para aparecer depois que um evento ocorrer, como quando um usuário clica com o botão direito do mouse em um documento, pasta de trabalho ou controle de host. Você pode adicionar vários comandos de menu ou controles diferentes a um menu de atalho. Crie menus de atalho usando XML. Se você adicionar um item **da faixa (XML)** ao seu projeto do Office, você poderá adicionar XML ao arquivo XML da faixa de para criar menus de atalho. Para obter mais informações sobre como usar o XML para criar menus de atalho, consulte [como adicionar comandos a menus de atalho](../vsto/how-to-add-commands-to-shortcut-menus.md).
 
 ## <a name="see-also"></a>Consulte também
 - [Visão geral da faixa de faixas](../vsto/ribbon-overview.md)
@@ -102,6 +102,6 @@ ms.locfileid: "71254149"
 - [Criar regiões de formulário do Outlook](../vsto/creating-outlook-form-regions.md)
 - [Painéis de tarefas personalizados](../vsto/custom-task-panes.md)
 - [Usar controles WPF em soluções do Office](../vsto/using-wpf-controls-in-office-solutions.md)
-- [Como: Mostrar a guia Desenvolvedor na faixa de faixas](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)
-- [Como: Mostrar erros da interface do usuário do suplemento](../vsto/how-to-show-add-in-user-interface-errors.md)
-- [Passo a passo: Coletar dados usando um formulário do Windows](../vsto/walkthrough-collecting-data-using-a-windows-form.md)
+- [Como: mostrar a guia Desenvolvedor na faixa de das](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)
+- [Como mostrar erros de interface do usuário do suplemento](../vsto/how-to-show-add-in-user-interface-errors.md)
+- [Walkthrough: coletar dados usando um formulário do Windows](../vsto/walkthrough-collecting-data-using-a-windows-form.md)
