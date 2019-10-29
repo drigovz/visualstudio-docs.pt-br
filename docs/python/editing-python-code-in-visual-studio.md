@@ -10,18 +10,18 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b111d3b0fe2f4af9098186aff3ef661045215473
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: eb3e3ca5d18429c60894c42bda12328836dc6fc8
+ms.sourcegitcommit: bb5425b9c6d8fd7135d9584c2963831754071347
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62958934"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73024728"
 ---
 # <a name="edit-python-code"></a>Editar código do Python
 
 Como você passa muito tempo dedicado ao desenvolvimento no editor de códigos, o [Suporte para Python no Visual Studio](installing-python-support-in-visual-studio.md) fornece funcionalidade para ajudá-lo a ser mais produtivo. Os recursos incluem o realce de sintaxe do IntelliSense, o preenchimento automático, a ajuda da assinatura, as substituições de método, a pesquisa e a navegação.
 
-O editor também é integrado à janela **Interativa** no Visual Studio, facilitando a troca do código entre as duas. Confira a [Etapa 3 do Tutorial: Usar a janela REPL Interativa](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md) e [Usar a janela Interativa – comando Enviar para Interativa](python-interactive-repl-in-visual-studio.md#send-to-interactive-command) para obter detalhes.
+O editor também é integrado à janela **Interativa** no Visual Studio, facilitando a troca do código entre as duas. Confira [Etapa 3 do tutorial: Usar a janela do REPL Interativo](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md) e [Usar a janela Interativa – comando Enviar para Interativa](python-interactive-repl-in-visual-studio.md#send-to-interactive-command) para obter detalhes.
 
 Para obter uma documentação geral sobre edição do código no Visual Studio, confira [Recursos do editor de código](../ide/writing-code-in-the-code-and-text-editor.md). Confira também [Estrutura de tópicos](../ide/outlining.md), que ajuda você a manter o foco em seções específicas do código.
 
@@ -31,7 +31,7 @@ Use também o **Pesquisador de Objetos** do Visual Studio (**Exibir** > **Outras
 
 O IntelliSense fornece [preenchimentos](#completions), [ajuda da assinatura](#signature-help), [informações rápidas](#quick-info) e [coloração de código](#code-coloring). O Visual Studio 2017 versão 15.7 e posteriores também dão suporte a [dicas de tipo](#type-hints).
 
-Para melhorar o desempenho, o IntelliSense no Visual Studio 2017 versão 15.5 e anteriores depende do banco de dados de preenchimento que é gerado para cada ambiente do Python no projeto. Os bancos de dados podem precisar de atualização se você adicionar, remover ou atualizar os pacotes. O status do banco de dados é mostrado na janela **Ambientes do Python** (um irmão do **Gerenciador de Soluções**) na guia **IntelliSense** (confira [Referência da janela Ambientes](python-environments-window-tab-reference.md#intellisense-tab)).
+Para melhorar o desempenho, o IntelliSense no Visual Studio 2017 versão 15.5 e anteriores depende do banco de dados de preenchimento que é gerado para cada ambiente do Python no projeto. Os bancos de dados podem precisar de atualização se você adicionar, remover ou atualizar os pacotes. O status do banco de dados é mostrado na janela **Ambientes do Python** (um irmão do **Gerenciador de Soluções**) na guia **IntelliSense** (confira [Referência da janela Ambientes](python-environments-window-tab-reference.md)).
 
 O Visual Studio 2017 versão 15.6 e posterior usa um modo diferente para fornecer as conclusões de IntelliSense que não são dependentes do banco de dados.
 
@@ -111,13 +111,13 @@ Usar o comando **Execute Mypy** neste código gera o seguinte erro:
 
 ::: moniker range="vs-2017"
 > [!Tip]
-> Para as versões do Python anteriores à 3.5, o Visual Studio também exibe dicas de tipo fornecidas por meio de *arquivos stub* do Typeshed (*.pyi*). Você pode usar arquivos stub sempre que não quiser incluir dicas de tipo diretamente no código, ou quando quiser criar dicas de tipo para uma biblioteca que não as usa diretamente. Para obter mais informações, confira [Criar stubs para módulos do Python](https://github.com/python/mypy/wiki/Creating-Stubs-For-Python-Modules) no wiki de projeto do MyPy.
+> Para as versões do Python anteriores à 3.5, o Visual Studio também exibe dicas de tipo fornecidas por meio de *arquivos stub* do Typeshed ( *.pyi*). Você pode usar arquivos stub sempre que não quiser incluir dicas de tipo diretamente no código, ou quando quiser criar dicas de tipo para uma biblioteca que não as usa diretamente. Para obter mais informações, confira [Criar stubs para módulos do Python](https://github.com/python/mypy/wiki/Creating-Stubs-For-Python-Modules) no wiki de projeto do MyPy.
 >
 > No momento, o Visual Studio não dá suporte a dicas de tipo nos comentários.
 ::: moniker-end
 ::: moniker range=">=vs-2019"
 > [!Tip]
-> Para as versões do Python anteriores à 3.5, o Visual Studio também exibe dicas de tipo fornecidas por meio de *arquivos stub* do Typeshed (*.pyi*). Você pode usar arquivos stub sempre que não quiser incluir dicas de tipo diretamente no código, ou quando quiser criar dicas de tipo para uma biblioteca que não as usa diretamente. Para obter mais informações, confira [Criar stubs para módulos do Python](https://github.com/python/mypy/wiki/Creating-Stubs-For-Python-Modules) no wiki de projeto do MyPy.
+> Para as versões do Python anteriores à 3.5, o Visual Studio também exibe dicas de tipo fornecidas por meio de *arquivos stub* do Typeshed ( *.pyi*). Você pode usar arquivos stub sempre que não quiser incluir dicas de tipo diretamente no código, ou quando quiser criar dicas de tipo para uma biblioteca que não as usa diretamente. Para obter mais informações, confira [Criar stubs para módulos do Python](https://github.com/python/mypy/wiki/Creating-Stubs-For-Python-Modules) no wiki de projeto do MyPy.
 >
 > O Visual Studio inclui um conjunto de pacotes de arquivos Typeshed para Python 2 e 3, para que os downloads adicionais não sejam necessários. No entanto, se você quiser usar um conjunto diferente de arquivos, poderá especificar o caminho nas opções de **Ferramentas** > **Opções** > **Python**  >  **Servidor de Linguagem**. Confira [Opções – Servidor de linguagem](python-support-options-and-settings-in-visual-studio.md#language-server-options).
 >
@@ -213,7 +213,7 @@ O comando **Ir Para Definição** vai rapidamente do uso de um identificador (co
 
 ### <a name="navigate-to"></a>Navegar para
 
-O comando **Editar** > **Navegar Para** (**Ctrl**+**,**) exibe uma caixa de pesquisa no editor em que é possível digitar qualquer cadeia de caracteres e ver as possíveis correspondências no código que definem uma função, uma classe ou uma variável que contém a cadeia de caracteres. Esse recurso fornece uma funcionalidade semelhante a **Ir Para Definição**, mas sem a necessidade de localizar um uso de um identificador.
+O comando **Editar** > **Navegar Para** (**Ctrl**+ **,** ) exibe uma caixa de pesquisa no editor em que é possível digitar qualquer cadeia de caracteres e ver as possíveis correspondências no código que definem uma função, uma classe ou uma variável que contém a cadeia de caracteres. Esse recurso fornece uma funcionalidade semelhante a **Ir Para Definição**, mas sem a necessidade de localizar um uso de um identificador.
 
 Clicar duas vezes em um nome ou selecioná-lo com teclas de direção e **Enter** levará você para a definição desse identificador.
 
