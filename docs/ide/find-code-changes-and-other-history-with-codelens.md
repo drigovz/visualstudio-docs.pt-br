@@ -9,12 +9,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: da45af92a11cfe61d5027d0710304e57ad657e48
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f4b9f55f0dc7d2b0a9fb57fa6177cd8a250f6f62
+ms.sourcegitcommit: bb5425b9c6d8fd7135d9584c2963831754071347
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653847"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73024829"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>Localizar alterações de código e outro histórico com o CodeLens
 
@@ -217,7 +217,7 @@ Descubra testes de unidade existentes para o código C# ou Visual Basic sem abri
 
 1. Acesse o código do aplicativo que tem o [código de teste de unidade](../test/unit-test-your-code.md) associado.
 
-2. Se você ainda não tiver feito isso, crie seu aplicativo para carregar os indicadores de teste do CodeLens. A [descoberta por assemblies compilados](../test/test-explorer-faq.md#assembly-based-discovery) deve estar ativada.
+2. Se você ainda não tiver feito isso, crie seu aplicativo para carregar os indicadores de teste do CodeLens. 
 
 3. Examine o código nos testes pressionando **Alt**+**3**.
 
@@ -352,8 +352,7 @@ Para usar o teclado:
 
 ### <a name="q-my-codelens-test-indicators-no-longer-appear-in-my-file-when-i-first-open-my-solution-how-can-i-load-them"></a>P: Meus indicadores de teste do CodeLens não aparecem mais no meu arquivo quando abro minha solução pela primeira vez. Como posso carregá-los?
 
-**R:** Recompile seu projeto para obter os indicadores de teste do CodeLens para carregar no seu arquivo. A [descoberta por assemblies compilados](../test/test-explorer-faq.md#assembly-based-discovery
-) deve estar ativada. Para melhorar o desempenho, o Visual Studio não busca mais informações de origem para os indicadores de teste quando os arquivos de código são carregados. Os indicadores de teste são carregados após um build ou quando você navega até um teste clicando duas vezes nele no **Gerenciador de Testes**.
+**R:** Recompile seu projeto para obter os indicadores de teste do CodeLens para carregar no seu arquivo. Para melhorar o desempenho, o Visual Studio não busca mais informações de origem para os indicadores de teste quando os arquivos de código são carregados. Os indicadores de teste são carregados após um build ou quando você navega até um teste clicando duas vezes nele no **Gerenciador de Testes**.
 
 ## <a name="see-also"></a>Consulte também
 

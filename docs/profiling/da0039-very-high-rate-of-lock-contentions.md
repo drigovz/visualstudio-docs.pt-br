@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a952f3172f1ade9f72491e961de372de3897eb60
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: 6185b080967c83be827e34baddfe5b37554398ff
+ms.sourcegitcommit: bb5425b9c6d8fd7135d9584c2963831754071347
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911962"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73024682"
 ---
 # <a name="da0039-very-high-rate-of-lock-contentions"></a>DA0039: taxa muito alta de contenções de bloqueio
 
@@ -37,7 +37,7 @@ ms.locfileid: "72911962"
 ## <a name="rule-description"></a>Descrição da regra
  Os bloqueios são usados para proteger seções críticas do código que devem ser executadas em série por um thread por vez em um aplicativo multi-threaded. O CLR (Common Language Runtime) do Microsoft .NET fornece um conjunto completo de primitivos de sincronização e bloqueio. Por exemplo, a linguagem C# dá suporte a uma instrução de bloqueio (SyncLock no Visual Basic). Um aplicativo gerenciado pode chamar os métodos Monitor.Enter e Monitor.Exit no namespace System.Threading para adquirir e liberar um bloqueio diretamente. O .NET Framework dá suporte a primitivos de sincronização e bloqueio adicionais, incluindo classes que dão suporte a Mutexes, ReaderWriterLocks e Semaphores. Para obter mais informações, consulte [Visão geral dos primitivos de sincronização](/dotnet/standard/threading/overview-of-synchronization-primitives) no Guia do Desenvolvedor do .NET Framework no site do MSDN. As classes do .NET Framework são colocadas em camada por conta própria sobre os serviços de sincronização de nível inferior internos do sistema operacional Windows. Eles incluem objetos de seção crítica e várias funções de sinalização de evento e de Espera diferentes. Para obter mais informações, confira a seção [Synchronization](/windows/win32/sync/synchronization) (Sincronização) do Desenvolvimento do Win32 e COM na Biblioteca MSDN.
 
- Subjacentes às classes do .NET Framework e aos objetos nativos do Windows que são usados para sincronização e bloqueio estão os locais de memória compartilhada que devem ser alterados usando operações sincronizadas. As operações sincronizadas usam instruções específicas ao hardware que operam em locais de memória compartilhada para alterar seu estado usando operações atômicas. Operações atômicas têm a garantia de serem consistentes em todos os processadores no computador. Locks e WaitHandles são objetos do .NET que usam operações sincronizadas automaticamente quando são definidos ou redefinidos. Pode haver outras estruturas de dados de memória compartilhada no aplicativo que também exigem o uso de operações sincronizadas para que sejam atualizadas de uma forma thread-safe. Para obter mais informações, confira [Operações interconectadas](/dotnet/api/system.threading.interlocked&view=netframework-4.8) na seção do .NET Framework da biblioteca do MSDN.
+ Subjacentes às classes do .NET Framework e aos objetos nativos do Windows que são usados para sincronização e bloqueio estão os locais de memória compartilhada que devem ser alterados usando operações sincronizadas. As operações sincronizadas usam instruções específicas ao hardware que operam em locais de memória compartilhada para alterar seu estado usando operações atômicas. Operações atômicas têm a garantia de serem consistentes em todos os processadores no computador. Locks e WaitHandles são objetos do .NET que usam operações sincronizadas automaticamente quando são definidos ou redefinidos. Pode haver outras estruturas de dados de memória compartilhada no aplicativo que também exigem o uso de operações sincronizadas para que sejam atualizadas de uma forma thread-safe. Para obter mais informações, confira [Operações interconectadas](/dotnet/api/system.threading.interlocked) na seção do .NET Framework da biblioteca do MSDN.
 
  A sincronização e o bloqueio são mecanismos usados para garantir que aplicativos de vários threads sejam executados corretamente. Cada thread de um aplicativo multi-threaded é uma unidade de execução independente que é agendada de forma independente pelo sistema operacional. Uma contenção de bloqueio ocorre sempre que um thread que está tentando adquirir um bloqueio é atrasado devido a outro thread estar mantendo o bloqueio.
 

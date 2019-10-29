@@ -10,12 +10,12 @@ ms.workload: azure-vs
 ms.date: 11/11/2016
 ms.author: mikejo
 ms.technology: vs-ide-debug
-ms.openlocfilehash: 18d2364794eef2177c4cfc607ecc6da38143ba54
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: a353ac12f7477bf40393f83de5fe41ede4d9aa95
+ms.sourcegitcommit: bb5425b9c6d8fd7135d9584c2963831754071347
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911865"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73024581"
 ---
 # <a name="debugging-an-azure-cloud-service-or-virtual-machine-in-visual-studio"></a>Depurando um serviço de nuvem ou máquina virtual do Azure no Visual Studio
 
@@ -49,7 +49,7 @@ Para depurar um serviço de nuvem em um computador remoto, você deve habilitar 
 Se você habilitar a depuração remota para um serviço de nuvem, ela não mostrará degradação de desempenho nem incorrerá em cobranças adicionais. Não use a depuração remota em um serviço de produção, pois os clientes que usam o serviço podem ser prejudicados.
 
 > [!NOTE]
-> Ao publicar um serviço de nuvem no Visual Studio, você pode habilitar o **IntelliTrace** para qualquer função nesse serviço que se destine ao .NET Framework 4 ou .NET Framework 4.5. Usando o **IntelliTrace**, você pode examinar os eventos que ocorreram em uma instância de função no passado e reproduzir o contexto no tempo em que ocorreu. Consulte [Depurando um serviço de nuvem publicado com o IntelliTrace e o Visual Studio](vs-azure-tools-IntelliTrace-debug-published-cloud-services.md) e [Usando o IntelliTrace](/debugger/intellitrace).
+> Ao publicar um serviço de nuvem no Visual Studio, você pode habilitar o **IntelliTrace** para qualquer função nesse serviço que se destine ao .NET Framework 4 ou .NET Framework 4.5. Usando o **IntelliTrace**, você pode examinar os eventos que ocorreram em uma instância de função no passado e reproduzir o contexto no tempo em que ocorreu. Consulte [Depurando um serviço de nuvem publicado com o IntelliTrace e o Visual Studio](vs-azure-tools-IntelliTrace-debug-published-cloud-services.md) e [Usando o IntelliTrace](../debugger/intellitrace.md).
 
 ### <a name="to-enable-remote-debugging-for-a-cloud-service"></a>Para habilitar a depuração remota para um serviço de nuvem
 
