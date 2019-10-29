@@ -7,12 +7,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 73a1c6458bf6afc5d6fce34208dd8c2c3ddda37f
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: fecf0d146c1116e6ec6376ffd9ad929cc9179d1c
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748210"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985220"
 ---
 # <a name="structure-your-modeling-solution"></a>Estruturar a solução de modelagem
 
@@ -30,7 +30,7 @@ Em um projeto médio ou grande, a estrutura da equipe é baseada na estrutura do
 
 ### <a name="to-divide-an-application-into-layers"></a>Para dividir um aplicativo em camadas
 
-1. Baseie a estrutura de suas soluções na estrutura do seu aplicativo, como aplicativo Web, aplicativo de serviço ou aplicativo de área de trabalho. Uma variedade de arquiteturas comuns é discutida em [arquétipos de aplicativo no guia de arquitetura de aplicativos da Microsoft](http://go.microsoft.com/fwlink/?LinkId=196681).
+1. Baseie a estrutura de suas soluções na estrutura do seu aplicativo, como aplicativo Web, aplicativo de serviço ou aplicativo de área de trabalho. Uma variedade de arquiteturas comuns é discutida em [arquétipos de aplicativo no guia de arquitetura de aplicativos da Microsoft](/previous-versions/msp-n-p/ee658107(v=pandp.10)).
 
 2. Crie uma solução do Visual Studio, que chamaremos de solução de arquitetura. Essa solução será usada para criar o design geral do sistema. Ele conterá modelos, mas sem código.
 
@@ -92,7 +92,7 @@ Por exemplo, se você usa com frequência as soluções que têm camadas de apre
 
 ### <a name="to-create-a-solution-template"></a>Para criar um modelo de solução
 
-1. [Baixe e instale o assistente de exportação de modelo](http://go.microsoft.com/fwlink/?LinkId=196686).
+1. [Baixe e instale o assistente de exportação de modelo](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.ExportTemplateWizard).
 
 2. Crie a estrutura da solução que você deseja usar como ponto de partida para projetos futuros.
 

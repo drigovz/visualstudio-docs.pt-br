@@ -1,5 +1,5 @@
 ---
-title: 'Passo a passo: Importar uma região de formulário projetada no Outlook'
+title: 'Walkthrough: importar uma região de formulário projetada no Outlook'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,14 +13,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cb4e57d1186b42ac1ed4807faf150d1af9090c69
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 23d058e7bdbbe3f12ef4521318236e939e1b22f2
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71255575"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985445"
 ---
-# <a name="walkthrough-import-a-form-region-that-is-designed-in-outlook"></a>Passo a passo: Importar uma região de formulário projetada no Outlook
+# <a name="walkthrough-import-a-form-region-that-is-designed-in-outlook"></a>Walkthrough: importar uma região de formulário projetada no Outlook
   Este tutorial demonstra como criar uma região de formulário no Microsoft Office Outlook e, em seguida, importar a região de formulário para um projeto de suplemento do VSTO do Outlook usando o assistente de **nova região de formulário** . A criação da região de formulário no Outlook possibilita que você adicione controles nativos do Outlook à região do formulário que se associam aos dados do Outlook. Depois de importar a região do formulário, você pode manipular os eventos de cada controle.
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
@@ -35,7 +35,7 @@ ms.locfileid: "71255575"
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>Pré-requisitos
+## <a name="prerequisites"></a>Prerequisites
  Você precisa dos seguintes componentes para concluir esta instrução passo a passo:
 
 - [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
@@ -45,9 +45,8 @@ ms.locfileid: "71255575"
 > [!NOTE]
 > Seu computador pode mostrar diferentes nomes ou locais para alguns dos elementos de interface do usuário do Visual Studio nas instruções a seguir. A edição do Visual Studio que você possui e as configurações que você usa determinam esses elementos. Para obter mais informações, confira [Personalizar o IDE do Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
- ![link para vídeo](../vsto/media/playvideo.gif "link para vídeo") Para ver uma demonstração de vídeo relacionada [, consulte Como fazer: Criar regiões de formulário do Outlook usando o Visual Studio 2008? ](http://go.microsoft.com/fwlink/?LinkID=130305).
 ## <a name="design-a-form-region-by-using-the-form-region-designer-in-outlook"></a>Criar uma região de formulário usando o designer de região de formulário no Outlook
- Nesta etapa, você criará uma região de formulário no Outlook. Em seguida, você salvará a região do formulário em um local fácil de encontrar para que possa importá- [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]la para o.
+ Nesta etapa, você criará uma região de formulário no Outlook. Em seguida, você salvará a região do formulário em um local fácil de encontrar para que possa importá-la para o [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 
  Esta região de formulário de exemplo substitui completamente o formulário de tarefa usual. Ele fornece uma maneira de acompanhar o progresso de todas as tarefas que devem ser concluídas antes que a tarefa principal possa ser executada (tarefas de pré-requisito). A região de formulário exibe uma lista das tarefas de pré-requisito e mostra o status de conclusão de cada tarefa na lista. Os usuários podem adicionar tarefas à lista e removê-las. Eles também podem atualizar o status de conclusão de cada tarefa.
 
@@ -55,7 +54,7 @@ ms.locfileid: "71255575"
 
 1. Inicie o Microsoft Office Outlook.
 
-2. No Outlook, na guia **desenvolvedor** , clique em **criar um formulário**. Para obter mais informações, confira [Como: Mostre a guia Desenvolvedor na faixa de](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)faixas.
+2. No Outlook, na guia **desenvolvedor** , clique em **criar um formulário**. Para obter mais informações, consulte [como: mostrar a guia Desenvolvedor na faixa de faixas](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
 
 3. Na caixa **formulário de design** , clique em **tarefa**e, em seguida, clique em **abrir**.
 
@@ -124,7 +123,7 @@ ms.locfileid: "71255575"
 
 3. Salve o projeto no diretório de projeto padrão.
 
-     Para obter mais informações, confira [Como: Crie projetos do Office no Visual](../vsto/how-to-create-office-projects-in-visual-studio.md)Studio.
+     Para obter mais informações, consulte [como: criar projetos do Office no Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
 ## <a name="import-the-form-region"></a>Importar a região do formulário
  Você pode importar a região de formulário que você criou no Outlook para o projeto de suplemento do VSTO do Outlook usando o assistente de **nova região de formulário do Outlook** .
@@ -152,9 +151,9 @@ ms.locfileid: "71255575"
      Um arquivo *TaskFormRegion.cs* ou *TaskFormRegion. vb* é adicionado ao seu projeto.
 
 ## <a name="handle-the-events-of-controls-on-the-form-region"></a>Manipular os eventos de controles na região do formulário
- Agora que você tem a região de formulário no projeto, é possível adicionar código que manipula o `Microsoft.Office.Interop.Outlook.OlkCommandButton.Click` evento do botão que você adicionou à região de formulário no Outlook.
+ Agora que você tem a região de formulário no projeto, é possível adicionar código que manipula o evento `Microsoft.Office.Interop.Outlook.OlkCommandButton.Click` do botão que você adicionou à região de formulário no Outlook.
 
- Além disso, adicione o código <xref:Microsoft.Office.Tools.Outlook.FormRegionControl.FormRegionShowing> ao evento que atualiza os controles na região do formulário quando a região do formulário é exibida.
+ Além disso, adicione código ao evento <xref:Microsoft.Office.Tools.Outlook.FormRegionControl.FormRegionShowing> que atualiza controles na região do formulário quando a região do formulário for exibida.
 
 ### <a name="to-handle-the-events-of-controls-on-the-form-region"></a>Para manipular os eventos de controles na região do formulário
 
@@ -169,16 +168,16 @@ ms.locfileid: "71255575"
 
 3. Adicione o código a seguir à classe `TaskFormRegion`. Esse código executa as seguintes tarefas:
 
-   - Localiza o `Microsoft.Office.Interop.Outlook.TaskItem` na pasta tarefas chamando o `FindTaskBySubjectName` método auxiliar e passando o assunto da tarefa desejada. Você adicionará o `FindTaskBySubjectName` método auxiliar na próxima etapa.
+   - Localiza o `Microsoft.Office.Interop.Outlook.TaskItem` na pasta tarefas chamando o método auxiliar `FindTaskBySubjectName` e passando o assunto da tarefa desejada. Você adicionará o método auxiliar `FindTaskBySubjectName` na próxima etapa.
 
-   - Adiciona os `Microsoft.Office.Interop.Outlook.TaskItem.Subject` valores `Microsoft.Office.Interop.Outlook.TaskItem.PercentComplete` e à caixa de listagem de tarefas dependente.
+   - Adiciona os valores `Microsoft.Office.Interop.Outlook.TaskItem.Subject` e `Microsoft.Office.Interop.Outlook.TaskItem.PercentComplete` à caixa de listagem de tarefas dependente.
 
    - Adiciona o assunto da tarefa ao campo oculto na região do formulário. O campo oculto armazena esses valores como parte do item do Outlook.
 
      [!code-csharp[Trin_Outlook_FR_Import#2](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Import/TaskFormRegion.cs#2)]
      [!code-vb[Trin_Outlook_FR_Import#2](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Import_O12/TaskFormRegion.vb#2)]
 
-4. Adicione o código a seguir à classe `TaskFormRegion`. Esse código fornece o método `FindTaskBySubjectName` auxiliar que foi descrito na etapa anterior.
+4. Adicione o código a seguir à classe `TaskFormRegion`. Esse código fornece o método auxiliar `FindTaskBySubjectName` que foi descrito na etapa anterior.
 
     [!code-csharp[Trin_Outlook_FR_Import#3](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Import/TaskFormRegion.cs#3)]
     [!code-vb[Trin_Outlook_FR_Import#3](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Import_O12/TaskFormRegion.vb#3)]
@@ -187,18 +186,18 @@ ms.locfileid: "71255575"
 
    - Atualiza a caixa de listagem na região do formulário com o status de conclusão atual de cada tarefa dependente.
 
-   - Analisa o campo de texto oculto para obter o assunto de cada tarefa dependente. Em seguida, ele localiza `Microsoft.Office.Interop.Outlook.TaskItem` cada uma delas na pasta *tarefas* chamando `FindTaskBySubjectName` o método auxiliar e passando o assunto de cada tarefa.
+   - Analisa o campo de texto oculto para obter o assunto de cada tarefa dependente. Em seguida, ele localiza cada `Microsoft.Office.Interop.Outlook.TaskItem` na pasta *tarefas* chamando o método auxiliar `FindTaskBySubjectName` e passando o assunto de cada tarefa.
 
-   - Adiciona os `Microsoft.Office.Interop.Outlook.TaskItem.Subject` valores `Microsoft.Office.Interop.Outlook.TaskItem.PercentComplete` e à caixa de listagem de tarefas dependente.
+   - Adiciona os valores `Microsoft.Office.Interop.Outlook.TaskItem.Subject` e `Microsoft.Office.Interop.Outlook.TaskItem.PercentComplete` à caixa de listagem de tarefas dependente.
 
      [!code-csharp[Trin_Outlook_FR_Import#4](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Import/TaskFormRegion.cs#4)]
      [!code-vb[Trin_Outlook_FR_Import#4](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Import_O12/TaskFormRegion.vb#4)]
 
-6. Substitua o `TaskFormRegion_FormRegionShowing` manipulador de eventos pelo código a seguir. Esse código executa as seguintes tarefas:
+6. Substitua o manipulador de eventos `TaskFormRegion_FormRegionShowing` pelo código a seguir. Esse código executa as seguintes tarefas:
 
    - Popula a caixa de combinação na região do formulário com os assuntos da tarefa quando a região do formulário é exibida.
 
-   - Chama o `RefreshTaskListBox` método auxiliar quando a região de formulário é exibida. Isso exibe as tarefas dependentes que foram adicionadas à caixa de listagem quando o item foi aberto anteriormente.
+   - Chama o método auxiliar `RefreshTaskListBox` quando a região de formulário é exibida. Isso exibe as tarefas dependentes que foram adicionadas à caixa de listagem quando o item foi aberto anteriormente.
 
      [!code-csharp[Trin_Outlook_FR_Import#5](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Import/TaskFormRegion.cs#5)]
      [!code-vb[Trin_Outlook_FR_Import#5](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Import_O12/TaskFormRegion.vb#5)]
@@ -228,7 +227,7 @@ ms.locfileid: "71255575"
 
 8. Na caixa de combinação **selecionar uma tarefa a ser adicionada à lista de tarefas dependentes** , selecione **tarefa dependente**e clique em **Adicionar tarefa dependente**.
 
-     **0% concluído--a tarefa dependente** aparece na caixa de listagem **esta tarefa depende da seguinte lista de tarefas** . Isso demonstra que você tratou com êxito o `Microsoft.Office.Interop.Outlook.OlkCommandButton.Click` evento do botão.
+     **0% concluído--a tarefa dependente** aparece na caixa de listagem **esta tarefa depende da seguinte lista de tarefas** . Isso demonstra que você tratou com êxito o evento de `Microsoft.Office.Interop.Outlook.OlkCommandButton.Click` do botão.
 
 9. Salve e feche o item de **tarefa principal** .
 
@@ -245,7 +244,7 @@ ms.locfileid: "71255575"
 ## <a name="next-steps"></a>Próximas etapas
  Você pode aprender mais sobre como personalizar a interface do usuário de um aplicativo do Outlook a partir destes tópicos:
 
-- Para saber mais sobre como criar a aparência de uma região de formulário arrastando controles gerenciados para um designer visual, [consulte Passo a passos: Criar uma região](../vsto/walkthrough-designing-an-outlook-form-region.md)de formulário do Outlook.
+- Para saber mais sobre como criar a aparência de uma região de formulário arrastando controles gerenciados para um designer visual, consulte [passo a passos: criar uma região de formulário do Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md).
 
 - Para saber mais sobre como personalizar a faixa de visualização de um item do Outlook, confira [personalizar uma faixa de visualização para o Outlook](../vsto/customizing-a-ribbon-for-outlook.md).
 
@@ -255,8 +254,8 @@ ms.locfileid: "71255575"
 - [Acessar uma região de formulário em tempo de execução](../vsto/accessing-a-form-region-at-run-time.md)
 - [Criar regiões de formulário do Outlook](../vsto/creating-outlook-form-regions.md)
 - [Diretrizes para criar regiões de formulário do Outlook](../vsto/guidelines-for-creating-outlook-form-regions.md)
-- [Passo a passo: Criar uma região de formulário do Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md)
-- [Como: Adicionar uma região de formulário a um projeto de suplemento do Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)
+- [Walkthrough: criar uma região de formulário do Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md)
+- [Como: adicionar uma região de formulário a um projeto de suplemento do Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)
 - [Associar uma região de formulário a uma classe de mensagem do Outlook](../vsto/associating-a-form-region-with-an-outlook-message-class.md)
 - [Ações personalizadas nas regiões de formulário do Outlook](../vsto/custom-actions-in-outlook-form-regions.md)
-- [Como: Impedir que o Outlook exiba uma região de formulário](../vsto/how-to-prevent-outlook-from-displaying-a-form-region.md)
+- [Como: impedir que o Outlook exiba uma região de formulário](../vsto/how-to-prevent-outlook-from-displaying-a-form-region.md)

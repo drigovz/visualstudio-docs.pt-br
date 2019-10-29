@@ -1,5 +1,5 @@
 ---
-title: 'Como: Definir uma instância de método | Microsoft Docs'
+title: Como definir uma instância de método | Microsoft Docs
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,33 +15,33 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 318744ec1a1a9214ce0385fc56fb1c0cf340339b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0e21900e87278ad500ee8497d1dd0c49350695d1
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62814105"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72981804"
 ---
-# <a name="how-to-define-a-method-instance"></a>Como: Definir uma instância de método
+# <a name="how-to-define-a-method-instance"></a>Como definir uma instância de método
   Você deve definir pelo menos uma instância de método para cada método em seu modelo.
 
- Adicionar uma instância de método usando o **detalhes do método BDC** janela. Quando você adiciona a instância de método, o Visual Studio adiciona um `<MethodInstance>` elemento ao XML do arquivo de modelo em seu projeto. Para obter mais informações sobre os atributos de uma `<MethodInstance>` elemento, consulte [MethodInstance](http://go.microsoft.com/fwlink/?LinkID=169282).
+ Adicione uma instância de método usando a janela **detalhes do método do BDC** . Quando você adiciona a instância do método, o Visual Studio adiciona um elemento `<MethodInstance>` ao XML do arquivo de modelo em seu projeto. Para obter mais informações sobre os atributos de um elemento `<MethodInstance>`, consulte [MethodInstance](/previous-versions/office/developer/sharepoint-2010/ee556838(v=office.14)).
 
 ### <a name="to-define-a-method-instance"></a>Para definir uma instância de método
 
-1. No **detalhes do método BDC** , expanda o nó de um método e, em seguida, expanda o **instâncias** nó.
+1. Na janela **detalhes do método BDC** , expanda o nó de um método e, em seguida, expanda o nó **instâncias** .
 
-2. No **adicionar uma instância de método** , escolha **criar instância de localizador**.
+2. Na lista **Adicionar uma instância de método** , escolha **criar instância de localizador**.
 
-     Uma nova instância de método aparece sob o **instâncias** nó.
+     Uma nova instância de método aparece abaixo do nó **instâncias** .
 
-3. Na barra de menus, escolha **modo de exibição** > **janela propriedades**.
+3. Na barra de menus, escolha **exibir** > **janela Propriedades**.
 
-4. No **propriedades** janela, defina as propriedades da instância do método. Para obter mais informações sobre cada propriedade, consulte [MethodInstance](http://go.microsoft.com/fwlink/?LinkID=169282).
+4. Na janela **Propriedades** , defina as propriedades da instância do método. Para obter mais informações sobre cada propriedade, consulte [MethodInstance](/previous-versions/office/developer/sharepoint-2010/ee556838(v=office.14)).
 
 ## <a name="see-also"></a>Consulte também
-- [Visão geral de ferramentas de design de modelo BDC](../sharepoint/bdc-model-design-tools-overview.md)
-- [Como: Adicionar uma entidade a um modelo](../sharepoint/how-to-add-an-entity-to-a-model.md)
-- [Como: Adicionar um parâmetro a um método](../sharepoint/how-to-add-a-parameter-to-a-method.md)
-- [Como: Definir o descritor de tipo de um parâmetro](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)
+- [Visão geral das ferramentas de design de modelo do BDC](../sharepoint/bdc-model-design-tools-overview.md)
+- [Como: adicionar uma entidade a um modelo](../sharepoint/how-to-add-an-entity-to-a-model.md)
+- [Como: adicionar um parâmetro a um método](../sharepoint/how-to-add-a-parameter-to-a-method.md)
+- [Como definir o descritor de tipo de um parâmetro](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)
 - [Criar um modelo de conectividade de dados corporativos](../sharepoint/designing-a-business-data-connectivity-model.md)

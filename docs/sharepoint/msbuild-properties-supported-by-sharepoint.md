@@ -1,5 +1,5 @@
 ---
-title: Propriedades de MSBuild suportadas pelo SharePoint | Microsoft Docs
+title: Propriedades do MSBuild com suporte do SharePoint | Microsoft Docs
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,44 +12,44 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f53083c49504146aca545da73bd38950493efcd8
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 5470160c6b0af1af39238a14319ad497e1541a43
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63429202"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985173"
 ---
-# <a name="msbuild-properties-supported-by-sharepoint"></a>Propriedades de MsBuild suportadas por SharePoint
-  Qualquer [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] propriedade definida no arquivo Microsoft.VisualStudio.SharePoint.targets, arquivo de projeto ou arquivo de usuário do projeto pode ser usada em [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projetos do SharePoint. Além do comum [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] propriedades fornecidas pelo projeto do SharePoint define propriedades adicionais que são específicas para projetos do SharePoint.
+# <a name="msbuild-properties-supported-by-sharepoint"></a>Propriedades do MsBuild com suporte no SharePoint
+  Qualquer propriedade [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] definida no arquivo Microsoft. VisualStudio. SharePoint. targets, no arquivo de projeto ou no arquivo de usuário do projeto pode ser usada em projetos do [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint. Além das propriedades comuns de [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] fornecidas pelo projeto, o SharePoint define propriedades adicionais que são específicas para projetos do SharePoint.
 
- Para obter uma lista do comum [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] propriedades, consulte [propriedades de projeto comuns do MSBuild](http://go.microsoft.com/fwlink/?LinkID=168687). Para obter uma lista completa das propriedades compatíveis com a linguagem de programação, examine os *. targets* arquivo, o arquivo de projeto (*. csproj* ou *. vbproj*), ou o usuário do projeto de arquivos ( *csproj* ou *. vbproj*).
+ Para obter uma lista de propriedades [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] comuns, consulte [Propriedades comuns do projeto MSBuild](/previous-versions/dotnet/netframework-4.0/bb629394(v=vs.100)). Para obter uma lista completa das propriedades com suporte pela linguagem de programação, examine o arquivo *. targets* , o arquivo de projeto ( *. csproj* ou *. vbproj*) ou o arquivo de usuário do projeto (*csproj. User* ou *. vbproj. User*).
 
 ## <a name="msbuild-properties-specific-to-sharepoint"></a>Propriedades do MsBuild específicas para o SharePoint
- A seguinte tabela lista [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] as propriedades que se aplicam especificamente aos projetos do SharePoint na [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Existem outras propriedades, mas eles são para uso interno.
+ A tabela a seguir lista [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] propriedades que se aplicam especificamente aos projetos do SharePoint no [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Existem outras propriedades, mas elas são para uso interno.
 
 |Nome da Propriedade|Descrição|
 |-------------------|-----------------|
 |SharePointSiteUrl|Uma cadeia de caracteres que representa o [!INCLUDE[TLA2#tla_url](../sharepoint/includes/tla2sharptla-url-md.md)] ao site do SharePoint.|
 |SandboxedSolution|Um valor booliano que indica se a solução é uma solução em área restrita.|
-|ActiveDeploymentConfiguration|A configuração de implantação do Active Directory.|
-|IncludeAssemblyInPackage|Um valor booliano que indica se o assembly está incluído no arquivo do pacote.|
-|PreDeploymentCommand|Um valor de cadeia de caracteres que representa o comando para executar a etapa de comando de pré-implantação.|
-|PostDeploymentCommand|Um valor de cadeia de caracteres que representa o comando para executar a etapa de comando pós-implantação.|
-|CustomBeforeSharePointTargets|Uma cadeia de caracteres que representa o caminho de um [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] arquivo de destino. Se o arquivo de destino existe e é definido, ele será importado antes que os dados de destinos do SharePoint. Essa propriedade permite personalizar o processo de pacote por predefinir propriedades relacionadas ao empacotamento sem modificar o arquivo de destinos fornecido do SharePoint, ainda que o arquivo de destino ainda se aplica a todos os projetos do SharePoint.|
-|CustomAfterSharePointTargets|Uma cadeia de caracteres que representa o caminho de um [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] arquivo de destino. Se o arquivo de destino existe e é definido, é importado depois que todos os destinos dados do SharePoint. Essa propriedade permite que você personalize o processo de pacote, substituindo propriedades relacionadas ao empacotamento e destinos sem ter que modificar o arquivo de destinos fornecido do SharePoint, ainda que o arquivo de destino ainda se aplica a todos os projetos do SharePoint.|
-|LayoutPath|Uma cadeia de caracteres que representa o diretório raiz em que cada um dos arquivos sejam empacotados são colocados temporariamente os antes de serem adicionados para o *. wsp* arquivo. Esse caminho pode ser útil saber quando você substitui os destinos BeforeLayout e AfterLayout para adicionar, remover ou modificar os arquivos sejam empacotados, porque você pode usá-lo para alterar o conteúdo do *. wsp* arquivo.|
-|BasePackagePath|Uma cadeia de caracteres que representa a pasta na qual o pacote é colocado. Este valor usa o diretório de saída do projeto, como Bin\Debug.|
-|PackageExtension|Uma cadeia de caracteres que representa a extensão de nome de arquivo para acrescentar ao pacote. O valor padrão é wsp.|
-|AssemblyDeploymentTarget|Uma cadeia de caracteres que representa o local onde o assembly de projeto é implantado no servidor do SharePoint. Seu valor é GlobalAssemblyCache (o padrão) ou aplicativo Web. Essa propriedade também pode ser definida na janela Propriedades.|
+|ActiveDeploymentConfiguration|A configuração de implantação ativa.|
+|IncludeAssemblyInPackage|Um valor booliano que indica se o assembly está incluído no arquivo de pacote.|
+|PreDeploymentCommand|Um valor de cadeia de caracteres que representa o comando a ser executado na etapa de comando pré-implantação.|
+|PostDeploymentCommand|Um valor de cadeia de caracteres que representa o comando a ser executado na etapa de comando pós-implantação.|
+|CustomBeforeSharePointTargets|Uma cadeia de caracteres que representa o caminho de um arquivo de destino [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)]. Se o arquivo de destinos existir e estiver definido, ele será importado antes de qualquer dado de destino do SharePoint. Essa propriedade permite que você personalize o processo de pacote predefinindo propriedades relacionadas ao empacotamento sem modificar o arquivo de destinos do SharePoint enviado, mas o arquivo de destinos ainda se aplica a todos os projetos do SharePoint.|
+|CustomAfterSharePointTargets|Uma cadeia de caracteres que representa o caminho de um arquivo de destino [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)]. Se o arquivo de destinos existir e estiver definido, ele será importado após todos os dados de destino do SharePoint. Essa propriedade permite que você personalize o processo de pacote substituindo as propriedades e os destinos relacionados ao empacotamento sem precisar modificar o arquivo de destinos do SharePoint enviado, mas o arquivo de destinos ainda se aplica a todos os projetos do SharePoint.|
+|LayoutPath|Uma cadeia de caracteres que representa o diretório raiz onde cada um dos arquivos a serem empacotados é temporariamente colocado antes de serem adicionados ao arquivo *. wsp* . Esse caminho pode ser útil para saber quando você substitui os destinos BeforeLayout e AfterLayout para adicionar, remover ou modificar arquivos a serem empacotados, pois você pode usá-lo para alterar o conteúdo do arquivo *. wsp* .|
+|BasePackagePath|Uma cadeia de caracteres que representa a pasta na qual o pacote é colocado. Esse valor usa o diretório de saída do projeto, como Bin\Debug.|
+|PackageExtension|Uma cadeia de caracteres que representa a extensão de nome de arquivo a ser acrescentada ao pacote. O valor padrão é WSP.|
+|AssemblyDeploymentTarget|Uma cadeia de caracteres que representa o local em que o assembly do projeto é implantado no servidor do SharePoint. Seu valor é GlobalAssemblyCache (o padrão) ou WebApplication. Essa propriedade também pode ser definida no janela Propriedades.|
 |PackageWithValidation|Um valor booliano que especifica se a validação é executada antes do empacotamento. Essa propriedade permite ignorar erros de validação durante a criação de pacotes.|
-|ValidatePackageDependsOn|Uma cadeia de caracteres que define os destinos adicionais a serem executados antes do destino ValidatePackage.|
-|TokenReplacementFileExensions|Uma cadeia de caracteres que define os arquivos que tenham seus tokens substituídos durante o empacotamento.|
+|ValidatePackageDependsOn|Uma cadeia de caracteres que define destinos adicionais a serem executados antes do destino ValidatePackage.|
+|TokenReplacementFileExensions|Uma cadeia de caracteres que define os arquivos que têm seus tokens substituídos durante o empacotamento.|
 
-## <a name="use-msbuild-properties-in-the-properties-page"></a>Use as propriedades do MsBuild na página de propriedades
- Para obter flexibilidade, em vez de usar cadeias de caracteres codificadas na **linha de comando de pré-implantação** e **linha de comando de pós-implantação** caixas na página de propriedades do SharePoint, você pode usar o SharePoint propriedades como argumentos. Por exemplo, em vez de especificar um determinado [!INCLUDE[TLA2#tla_url](../sharepoint/includes/tla2sharptla-url-md.md)] cadeia de caracteres para o site do SharePoint, em vez disso, você pode usar `$(SharePointSiteUrl)`.
+## <a name="use-msbuild-properties-in-the-properties-page"></a>Usar propriedades do MsBuild na página Propriedades
+ Para obter flexibilidade, em vez de usar cadeias de caracteres embutidas em código na **linha de comando de pré-implantação** e nas caixas de linha de comando de **pós-implantação** na página de propriedades do SharePoint, você pode usar as propriedades do SharePoint como argumentos. Por exemplo, em vez de especificar uma cadeia de caracteres de [!INCLUDE[TLA2#tla_url](../sharepoint/includes/tla2sharptla-url-md.md)] específica para o site do SharePoint, você pode usar `$(SharePointSiteUrl)`.
 
 > [!NOTE]
-> Você pode usar o [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] sintaxe da variável `$(` *propertyName* `)` ou a sintaxe da variável de ambiente `%` *propertyName* `%` para especificar uma propriedade.
+> Você pode usar a sintaxe de variável [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] `$(`*propertyname*`)` ou a sintaxe da variável de ambiente `%`*PropertyName*`%` para especificar uma propriedade.
 
 ## <a name="see-also"></a>Consulte também
 

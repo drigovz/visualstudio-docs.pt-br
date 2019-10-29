@@ -10,12 +10,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 79f1c4a55321a1b039cc2702b1040e2ab9d4ac9d
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 564672e01eeffbdcb53bf1af08f329d2f6bf218f
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71255638"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985780"
 ---
 # <a name="improve-the-performance-of-a-vsto-add-in"></a>Melhorar o desempenho de um suplemento do VSTO
   Você pode dar aos seus usuários uma experiência melhor otimizando os suplementos do VSTO criados para aplicativos do Office para que eles sejam iniciados rapidamente, desligados, abram itens e executem outras tarefas. Se o suplemento do VSTO for para Outlook, você também poderá reduzir a chance de o suplemento do VSTO ser desabilitado devido ao mau desempenho. Você pode aumentar o desempenho do suplemento do VSTO implementando as seguintes estratégias:
@@ -28,7 +28,7 @@ ms.locfileid: "71255638"
 
 - [Execute operações caras em um thread de execução separado](#Perform).
 
-  Para obter mais informações sobre como otimizar um suplemento do VSTO do Outlook, consulte [critérios de desempenho para manter os suplementos do VSTO habilitados](http://go.microsoft.com/fwlink/?LinkID=266503).
+  Para obter mais informações sobre como otimizar um suplemento do VSTO do Outlook, consulte [critérios de desempenho para manter os suplementos do VSTO habilitados](/previous-versions/office/jj228679(v=office.15)#ol15WhatsNew_AddinDisabling).
 
 ## <a name="Load"></a>Carregar suplementos do VSTO sob demanda
  Você pode configurar um suplemento do VSTO para carregar somente nas seguintes circunstâncias:
@@ -51,13 +51,13 @@ ms.locfileid: "71255638"
 
 ### <a name="to-configure-a-windows-installer-solution-to-load-vsto-add-ins-on-demand"></a>Para configurar uma solução de Windows Installer para carregar os suplementos do VSTO sob demanda
 
-1. No registro, `LoadBehavior` defina a entrada da chave de **ID do\\_suplemento_ \Software\Microsoft\Office\\_ApplicationName_\Addins _raiz_** como **0x10**.
+1. No registro, defina a entrada `LoadBehavior` da **_raiz_\Software\Microsoft\Office\\_ApplicationName_\Addins\\chave de _ID de suplemento_** para **0x10**.
 
      Para obter mais informações, consulte [entradas do registro para suplementos do VSTO](../vsto/registry-entries-for-vsto-add-ins.md).
 
 ### <a name="to-configure-a-solution-to-load-vsto-add-ins-on-demand-while-you-debug-the-solution"></a>Para configurar uma solução para carregar os suplementos do VSTO sob demanda enquanto você depura a solução
 
-1. Crie um script que defina a `LoadBehavior` entrada da chave **de ID\\do_suplemento_ \Software\Microsoft\Office_ApplicationName_\Addins\\ _raiz_** para **0x10**.
+1. Crie um script que defina a entrada de `LoadBehavior` da **_raiz_\Software\Microsoft\Office\\_ApplicationName_\Addins\\** chave de ID de suplemento para **0x10**.
 
      O código a seguir mostra um exemplo desse script.
 
@@ -79,9 +79,9 @@ ms.locfileid: "71255638"
 
     ```
 
-     Para obter informações sobre como criar um evento de pós-compilação em um C# projeto, consulte [como: Especifique os eventos &#40;de&#35;&#41;](../ide/how-to-specify-build-events-csharp.md)compilação C.
+     Para obter informações sobre como criar um evento de pós-compilação em um C# projeto, consulte [como especificar eventos &#40;de compilação C&#35;](../ide/how-to-specify-build-events-csharp.md).
 
-     Para obter informações sobre como criar um evento de pós-compilação em um projeto Visual Basic, consulte [como: Especifique &#40;&#41;VisualBasic](../ide/how-to-specify-build-events-visual-basic.md)de eventos de compilação.
+     Para obter informações sobre como criar um evento de pós-compilação em um projeto Visual Basic, consulte [como especificar eventos &#40;&#41;de compilação Visual Basic](../ide/how-to-specify-build-events-visual-basic.md).
 
 ## <a name="Publish"></a>Publicar soluções do Office usando Windows Installer
  Se você publicar sua solução usando Windows Installer, o tempo de execução das ferramentas do Visual Studio 2010 para Office ignorará as etapas a seguir quando o suplemento do VSTO for carregado.
@@ -98,9 +98,9 @@ ms.locfileid: "71255638"
   Para obter mais informações, consulte [implantar uma solução do Office usando Windows Installer](../vsto/deploying-an-office-solution-by-using-windows-installer.md).
 
 ## <a name="Bypass"></a>Ignorar reflexão da faixa de medida
- Se você criar uma solução usando [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)]o, verifique se os usuários instalaram a versão mais recente do tempo de execução das ferramentas do Visual Studio 2010 para Office ao implantar a solução. Versões mais antigas do tempo de execução do VSTO refletidas em assemblies de solução para localizar personalizações de faixa de das. Esse processo pode fazer com que o suplemento do VSTO seja carregado mais lentamente.
+ Se você criar uma solução usando [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)], verifique se os usuários instalaram a versão mais recente do tempo de execução das ferramentas do Visual Studio 2010 para Office ao implantar a solução. Versões mais antigas do tempo de execução do VSTO refletidas em assemblies de solução para localizar personalizações de faixa de das. Esse processo pode fazer com que o suplemento do VSTO seja carregado mais lentamente.
 
- Como alternativa, você pode impedir que qualquer versão do tempo de execução do Visual Studio 2010 Tools for Office Use reflexão para identificar as personalizações da faixa de opção. Para seguir essa estratégia, substitua o `CreateRibbonExtensibility` método e retorne explicitamente os objetos da faixa de forma. Se o suplemento do VSTO não contiver nenhuma personalização da faixa de forma `null` , retorne dentro do método.
+ Como alternativa, você pode impedir que qualquer versão do tempo de execução do Visual Studio 2010 Tools for Office Use reflexão para identificar as personalizações da faixa de opção. Para seguir essa estratégia, substitua o método `CreateRibbonExtensibility` e retorne explicitamente os objetos da faixa de faixas. Se o suplemento do VSTO não contiver nenhuma personalização da faixa de forma, retorne `null` dentro do método.
 
  O exemplo a seguir retorna um objeto de faixa de opções com base no valor de um campo.
 

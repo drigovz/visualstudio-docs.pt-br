@@ -7,12 +7,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b27abf8470527e4e5de5c05ca3438a8471b7c80e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9b5a0ad18c7b1472e8c08ccc2902cade7714f2b9
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72667774"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985278"
 ---
 # <a name="integrate-models-by-using-visual-studio-modelbus"></a>Integrar modelos usando o Visual Studio ModelBus
 
@@ -36,15 +36,13 @@ Para obter informações adicionais e código de exemplo, consulte:
 
 ### <a name="expose"></a>Para expor uma definição de DSL para o barramento de modelo
 
-1. Faça o download e instale a extensão Visual Studio Model Bus, a menos que já estiver instalada. Para obter mais informações, consulte [visualização e SDK de modelagem](http://go.microsoft.com/fwlink/?LinkID=185579).
+1. Abra o arquivo de definição de DSL. Clique com o botão direito do mouse na superfície de design e clique em **habilitar ModelBus**.
 
-2. Abra o arquivo de definição de DSL. Clique com o botão direito do mouse na superfície de design e clique em **habilitar ModelBus**.
+2. Na caixa de diálogo, escolha **eu quero expor essa DSL ao ModelBus**. É possível escolher as duas opções se desejar que essa DSL exponha seus modelos e consuma referências a outras DSLs.
 
-3. Na caixa de diálogo, escolha **eu quero expor essa DSL ao ModelBus**. É possível escolher as duas opções se desejar que essa DSL exponha seus modelos e consuma referências a outras DSLs.
+3. Clique em **OK**. Um novo projeto "ModelBusAdapter" é adicionado à solução de DSL.
 
-4. Clique em **OK**. Um novo projeto "ModelBusAdapter" é adicionado à solução de DSL.
-
-5. Se desejar acessar a DSL a partir de um modelo de texto, é necessário modificar o AdapterManager.tt no novo projeto. Ignore essa etapa se desejar acessar a DSL a partir de outro código como comandos e manipuladores de eventos. Para obter mais informações, consulte [usando Visual Studio ModelBus em um modelo de texto](../modeling/using-visual-studio-modelbus-in-a-text-template.md).
+4. Se desejar acessar a DSL a partir de um modelo de texto, é necessário modificar o AdapterManager.tt no novo projeto. Ignore essa etapa se desejar acessar a DSL a partir de outro código como comandos e manipuladores de eventos. Para obter mais informações, consulte [usando Visual Studio ModelBus em um modelo de texto](../modeling/using-visual-studio-modelbus-in-a-text-template.md).
 
    1. Altere a classe base de AdapterManagerBase para [VsTextTemplatingModelingAdapterManager](/previous-versions/ee844317(v=vs.140)).
 
@@ -56,9 +54,9 @@ Para obter informações adicionais e código de exemplo, consulte:
 
       Se desejar acessar a DSL a partir de modelos de texto e de outro código, serão necessários dois adaptadores, um modificado e um não modificado.
 
-6. Clique em **transformar todos os modelos**.
+5. Clique em **transformar todos os modelos**.
 
-7. Recompile a solução.
+6. Recompile a solução.
 
    Agora é possível para o ModelBus abrir instâncias dessa DSL.
 
@@ -78,7 +76,7 @@ Para garantir que as IDs de elemento sejam persistidas:
 
     Clique no nó de classe e, na janela Propriedades, verifique se a **ID de serialização** está definida como `true`.
 
-   Alternativamente, se desejar usar nomes de elemento para identificar elementos ao invés de guids, é possível substituir partes dos adaptadores gerados. Substituir os seguintes métodos na classe do adaptador:
+   Como alternativa, se você quiser usar nomes de elementos para identificar elementos em vez de GUIDs, poderá substituir partes dos adaptadores gerados. Substituir os seguintes métodos na classe do adaptador:
 
 - Substituir `GetElementId` para retornar o identificador que deseja usar. Esse método é chamado ao criar referências.
 
@@ -124,7 +122,7 @@ Para permitir que uma DSL use referências a outra DSL, você deve primeiro torn
 
 2. Selecione o **tipo apropriado de ModelBusReference**: para um modelo ou para um elemento dentro de um modelo.
 
-3. Na cadeia de caracteres de filtro do diálogo do arquivo, insira uma cadeia como `Family Tree files |*.ftree`. Substitua a extensão de arquivo da DSL exposta.
+3. Na cadeia de caracteres de filtro do diálogo do arquivo, insira uma cadeia como `Family Tree files |*.ftree`. Substitua a extensão de arquivo da sua DSL exposta.
 
 4. Ao escolher referenciar um elemento em um modelo, é possível incluir uma lista de tipos que o usuário pode selecionar, por exemplo, Company.FamilyTree.Person.
 

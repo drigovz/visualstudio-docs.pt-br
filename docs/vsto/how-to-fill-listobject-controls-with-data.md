@@ -1,5 +1,5 @@
 ---
-title: 'Como: Preencher controles ListObject com dados'
+title: Como preencher controles ListObject com dados
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -17,19 +17,17 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a0916ca11d4df5f6b69376d7223143afbb407f6e
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 48af9145ce069b426b86f05bf0aadfc5386a6271
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71255888"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985917"
 ---
-# <a name="how-to-fill-listobject-controls-with-data"></a>Como: Preencher controles ListObject com dados
+# <a name="how-to-fill-listobject-controls-with-data"></a>Como preencher controles ListObject com dados
   Você pode usar a associação de dados como uma maneira de adicionar rapidamente dados ao seu documento. Depois de vincular dados a um objeto de lista, você pode desconectar o objeto de lista para que ele exiba os dados, mas não esteja mais vinculado à fonte de dados.
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
-
- ![link para vídeo](../vsto/media/playvideo.gif "link para vídeo") Para ver uma demonstração de vídeo relacionada [, consulte Como fazer: Criar uma lista no Excel que está conectada a uma lista do SharePoint? ](http://go.microsoft.com/fwlink/?LinkID=130263).
 
 ### <a name="to-bind-data-to-a-listobject-control"></a>Para associar dados a um controle ListObject
 
@@ -38,12 +36,12 @@ ms.locfileid: "71255888"
      [!code-csharp[Trin_VstcoreHostControlsExcel#20](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet4.cs#20)]
      [!code-vb[Trin_VstcoreHostControlsExcel#20](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet4.vb#20)]
 
-2. Adicione colunas de exemplo e dados no `Startup` manipulador `Sheet1` de eventos da classe (em um projeto de nível de documento) `ThisAddIn` ou classe (em um projeto de nível de aplicativo).
+2. Adicione colunas de exemplo e dados no manipulador de eventos `Startup` da classe `Sheet1` (em um projeto de nível de documento) ou `ThisAddIn` classe (em um projeto de nível de aplicativo).
 
      [!code-csharp[Trin_VstcoreHostControlsExcel#21](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet4.cs#21)]
      [!code-vb[Trin_VstcoreHostControlsExcel#21](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet4.vb#21)]
 
-3. Chame o <xref:Microsoft.Office.Tools.Excel.ListObject.SetDataBinding%2A> método e passe os nomes de coluna na ordem em que eles devem aparecer. A ordem das colunas no objeto de lista pode ser diferente da ordem em que aparecem no <xref:System.Data.DataTable>.
+3. Chame o método <xref:Microsoft.Office.Tools.Excel.ListObject.SetDataBinding%2A> e passe os nomes de coluna na ordem em que eles devem aparecer. A ordem das colunas no objeto de lista pode ser diferente da ordem em que aparecem na <xref:System.Data.DataTable>.
 
      [!code-csharp[Trin_VstcoreHostControlsExcel#22](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet4.cs#22)]
      [!code-vb[Trin_VstcoreHostControlsExcel#22](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet4.vb#22)]
@@ -56,15 +54,15 @@ ms.locfileid: "71255888"
      [!code-vb[Trin_VstcoreHostControlsExcel#23](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet4.vb#23)]
 
 ## <a name="compile-the-code"></a>Compilar o código
- Este exemplo de código pressupõe que você tenha <xref:Microsoft.Office.Tools.Excel.ListObject> um `list1` nome existente na planilha na qual esse código é exibido.
+ Este exemplo de código pressupõe que você tenha um <xref:Microsoft.Office.Tools.Excel.ListObject> existente chamado `list1` na planilha em que esse código aparece.
 
 ## <a name="see-also"></a>Consulte também
 - [Estenda documentos do Word e pastas de trabalho do Excel em suplementos do VSTO em tempo de execução](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
 - [Controles em documentos do Office](../vsto/controls-on-office-documents.md)
 - [Adicionar controles a documentos do Office em tempo de execução](../vsto/adding-controls-to-office-documents-at-run-time.md)
-- [Como: Mapear colunas ListObject para dados](../vsto/how-to-map-listobject-columns-to-data.md)
+- [Como mapear colunas ListObject para dados](../vsto/how-to-map-listobject-columns-to-data.md)
 - [Automatizar o Excel usando objetos estendidos](../vsto/automating-excel-by-using-extended-objects.md)
 - [Controle ListObject](../vsto/listobject-control.md)
 - [Associar dados a controles em soluções do Office](../vsto/binding-data-to-controls-in-office-solutions.md)
-- [Como: Preencher planilhas com dados de um banco de dado](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)
-- [Como: Preencher documentos com dados de serviços](../vsto/how-to-populate-documents-with-data-from-services.md)
+- [Como: preencher planilhas com dados de um banco de dado](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)
+- [Como: popular documentos com dados de serviços](../vsto/how-to-populate-documents-with-data-from-services.md)

@@ -1,5 +1,5 @@
 ---
-title: Criando Web Parts do SharePoint | Microsoft Docs
+title: Criando Web Parts para SharePoint | Microsoft Docs
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -23,96 +23,96 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1105e6c68e1ec9083fd790ad8a38b09870345af2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 82e0d860f21f0fe2744c8c05c4ebeb3590be68fc
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62580936"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72984472"
 ---
-# <a name="create-web-parts-for-sharepoint"></a>Criar web parts para SharePoint
-  Usando web parts, você pode modificar o conteúdo, aparência e comportamento de páginas de um site do SharePoint usando um navegador. Web parts são controles de servidor que são executados dentro de uma página de web part: são os blocos de construção de páginas que aparecem em um site do SharePoint. Consulte [bloco de construção: Web Parts](http://go.microsoft.com/fwlink/?LinkID=182097).
+# <a name="create-web-parts-for-sharepoint"></a>Criar Web Parts para SharePoint
+  Usando Web Parts, você pode modificar o conteúdo, a aparência e o comportamento de páginas de um site do SharePoint usando um navegador. As Web Parts são controles do lado do servidor que são executados dentro de uma página de Web Part: são os blocos de construção de páginas que aparecem em um site do SharePoint. Consulte [bloco de construção: Web Parts](/previous-versions/office/developer/sharepoint-2010/ee535520(v=office.14)).
 
- Você pode criar e depurar o web parts em um site do SharePoint usando modelos do Visual Studio.
+ Você pode criar e depurar Web Parts em um site do SharePoint usando modelos do Visual Studio.
 
-## <a name="create-a-web-part-in-visual-studio"></a>Criar uma web part no Visual Studio
- Criar uma web part, adicionando um **Web Part** item para qualquer projeto do SharePoint. Você pode usar um **Web Part** item em uma solução em área restrita ou uma solução de farm.
+## <a name="create-a-web-part-in-visual-studio"></a>Criar uma Web Part no Visual Studio
+ Crie uma Web Part adicionando um item de **Web Part** a qualquer projeto do SharePoint. Você pode usar um item de **Web Part** em uma solução em área restrita ou em uma solução de farm.
 
- Se você quiser criar uma web part visualmente usando um designer, crie uma **Web Part Visual** do projeto ou adicione **Web Part Visual** item para qualquer projeto do SharePoint. Você pode usar um **Web Part Visual** item em uma solução de farm.
+ Se você quiser criar uma Web Part visualmente usando um designer, crie um projeto de **Web Part Visual** ou adicione um item de **Web Part Visual** a qualquer projeto do SharePoint. Você pode usar um item de **Web Part Visual** somente em uma solução de farm.
 
-### <a name="web-part-item"></a>Item da Web part
- Um **Web Part** item fornece os arquivos que você pode usar para criar uma web part para um site do SharePoint. Quando você adiciona uma **Web Part** item, o Visual Studio cria uma pasta em seu projeto e, em seguida, adiciona vários arquivos para a pasta. A tabela a seguir descreve cada arquivo.
+### <a name="web-part-item"></a>Item de Web Part
+ Um item de **Web Part** fornece arquivos que você pode usar para criar uma Web Part para um site do SharePoint. Quando você adiciona um item de **Web Part** , o Visual Studio cria uma pasta em seu projeto e, em seguida, adiciona vários arquivos à pasta. A tabela a seguir descreve cada arquivo.
 
 |Arquivo|Descrição|
 |----------|-----------------|
-|*Elements.xml*|Contém informações que o arquivo de definição de recurso em seu projeto usa para implantar a web part.|
-|arquivo. WebPart|Fornece informações que precisa para exibir sua web part em uma galeria de web parts de SharePoint.|
-|Arquivo de código|Contém métodos que adicionam controles à web part e que geram conteúdo personalizado na web part.|
+|*Elements. xml*|Contém informações que o arquivo de definição de recurso em seu projeto usa para implantar a Web Part.|
+|arquivo. WebPart|Fornece informações que o SharePoint precisa para exibir sua Web Part em uma galeria de Web Parts.|
+|Arquivo de código|Contém métodos que adicionam controles à Web Part e que geram conteúdo personalizado dentro da Web Part.|
 
- Para obter mais informações, confira [Como: Criar uma web part do SharePoint](../sharepoint/how-to-create-a-sharepoint-web-part.md).
+ Para obter mais informações, consulte [como: criar uma Web Part do SharePoint](../sharepoint/how-to-create-a-sharepoint-web-part.md).
 
-### <a name="visual-web-part-item"></a>Item do Visual web part
- Uma web part visual é uma web part que você cria usando o designer do Visual Web Developer no Visual Studio. Uma web part visual funciona como qualquer outra web part. Para adicionar controles, como botões e caixas de texto, a uma web part, você pode adicionar código para um arquivo XML. No entanto, você adicionar controles a uma web part visual arrastando ou copiando-os para a web part do Visual Studio **caixa de ferramentas**. O designer, em seguida, gera o código necessário no arquivo XML. Confira [Como Criar um web part do SharePoint usando um designer](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md).
+### <a name="visual-web-part-item"></a>Item de Web Part Visual
+ Uma Web Part Visual é uma Web Part que você cria usando o Visual Web Developer designer no Visual Studio. Uma Web Part Visual funciona da mesma forma que qualquer outra Web Part. Para adicionar controles, como botões e caixas de texto, a uma Web Part, você adiciona código a um arquivo XML. No entanto, você adiciona controles a uma Web Part Visual arrastando-os ou copiando-os para a Web Part da **caixa de ferramentas**do Visual Studio. Em seguida, o designer gera o código necessário no arquivo XML. Consulte [como: criar uma Web Part do SharePoint usando um designer](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md).
 
 ## <a name="sharepoint-controls"></a>Controles do SharePoint
- Visual Studio fornece alguns controles para a criação de páginas do SharePoint, como páginas de aplicativo. Esses controles aparecem na **caixa de ferramentas** sob **controles do SharePoint**. A funcionalidade desses controles deriva de [WebControls](http://go.microsoft.com/fwlink/?LinkId=235315) namespace, que contém os controles de servidor ASP.NET que são usados nas páginas de site e a lista do SharePoint.
+ O Visual Studio fornece alguns controles para criar páginas do SharePoint, como páginas de aplicativo. Esses controles aparecem na **caixa de ferramentas** em **controles do SharePoint**. A funcionalidade para esses controles deriva do namespace [Microsoft. SharePoint. WebControls](/previous-versions/office/sharepoint-server/ms413880(v=office.15)) , que contém os controles de servidor ASP.NET que são usados nas páginas de site e de lista do SharePoint.
 
 |Nome do controle|Descrição|
 |------------------|-----------------|
-|[AspMenu](http://go.microsoft.com/fwlink/?LinkId=235307)|Insere um menu ASP. Para obter mais informações, consulte [visão geral do controle de Menu](http://go.microsoft.com/fwlink/?LinkId=235316).|
-|[CssLink](http://go.microsoft.com/fwlink/?LinkId=235308)|Insere um **LINK** elemento para o *. aspx* da página e aplica um ou mais folhas de estilos externas definidas pelo **CssRegistration**.|
-|[DateTimeControl](http://go.microsoft.com/fwlink/?LinkId=235306)|Insere um controle de DateTime para o *. aspx* página.|
-|[FormDigest](http://go.microsoft.com/fwlink/?LinkId=235309)|Insere uma validação de segurança para o *. aspx* página|
-|[ListProperty](http://go.microsoft.com/fwlink/?LinkId=235310)|Retorna uma propriedade de uma lista especificada.|
-|[ProjectProperty](http://go.microsoft.com/fwlink/?LinkId=235311)|Retorna uma propriedade global do site da Web atual.|
-|[RssLink](http://go.microsoft.com/fwlink/?LinkId=235312)|Insere um link para um RSS feed para o *. aspx* página.|
-|[ScriptLink](http://go.microsoft.com/fwlink/?LinkId=235313)|Fornece propriedades e métodos para registrar recursos, como scripts, em uma página, de modo que eles possam ser solicitados quando a página é renderizada.|
-|[Tema](http://go.microsoft.com/fwlink/?LinkId=235314)|Aplica um tema para o *. aspx* página.|
+|[AspMenu](/previous-versions/office/sharepoint-server/ms454108(v=office.15))|Insere um menu ASP. Para obter mais informações, consulte [visão geral do controle de menu](/previous-versions/ecs0x9w5(v=vs.140)).|
+|[CssLink](/previous-versions/office/sharepoint-server/ms439048(v=office.15))|Insere um elemento **link** na página *. aspx* e aplica uma ou mais folhas de estilo externas definidas por **CssRegistration**.|
+|[DateTimeControl](/previous-versions/office/sharepoint-server/ms414993(v=office.15))|Insere um controle DateTime na página *. aspx* .|
+|[FormDigest](/previous-versions/office/sharepoint-server/ms416616(v=office.15))|Insere uma validação de segurança na página *. aspx*|
+|[Lista de](/previous-versions/office/sharepoint-server/ms455032(v=office.15))|Retorna uma propriedade de uma lista especificada.|
+|[ProjectProperty](/previous-versions/office/sharepoint-server/ms478990(v=office.15))|Retorna uma propriedade global do site atual.|
+|[RssLink](/previous-versions/office/sharepoint-server/ms457574(v=office.15))|Insere um link para um RSS feed na página *. aspx* .|
+|[ScriptLink](/previous-versions/office/sharepoint-server/ms411959(v=office.15))|Fornece propriedades e métodos para registrar recursos, como scripts, em uma página para que eles possam ser solicitados quando a página é renderizada.|
+|[Tema](/previous-versions/office/sharepoint-server/ms460735(v=office.15))|Aplica um tema à página *. aspx* .|
 
-## <a name="debug-a-web-part"></a>Depurar uma web part
- Você pode depurar um projeto do SharePoint que contém uma web part exatamente como você faria para depurar outros projetos do Visual Studio. Quando você inicia o depurador do Visual Studio, o Visual Studio abre o site do SharePoint.
+## <a name="debug-a-web-part"></a>Depurar uma Web Part
+ Você pode depurar um projeto do SharePoint que contém uma Web Part da mesma forma que depuraria outros projetos do Visual Studio. Quando você inicia o depurador do Visual Studio, o Visual Studio abre o site do SharePoint.
 
- Para começar a depurar seu código, adicione a web part a uma página de web part no SharePoint.
+ Para começar a depurar seu código, adicione a Web Part a uma página de Web Part no SharePoint.
 
- Para obter mais informações sobre como depurar projetos do SharePoint, consulte [soluções do SharePoint solucionar](../sharepoint/troubleshooting-sharepoint-solutions.md).
+ Para obter mais informações sobre como depurar projetos do SharePoint, consulte [solução de problemas de soluções do SharePoint](../sharepoint/troubleshooting-sharepoint-solutions.md).
 
-## <a name="visual-web-part-limitations"></a>Limitações do Visual web part
- A partir do Visual Studio, você pode adicionar web parts visuais para soluções em área restrita do SharePoint e soluções de farm. No entanto, as web parts visuais têm as seguintes limitações:
+## <a name="visual-web-part-limitations"></a>Limitações da Web Part Visual
+ A partir do Visual Studio, você pode adicionar Web Parts visuais para soluções do SharePoint em área restrita e soluções de farm. No entanto, as Web Parts visuais têm as seguintes limitações:
 
-- Web parts visuais não dão suporte a parâmetros substituíveis. Para obter mais informações, consulte [parâmetros substituíveis](../sharepoint/replaceable-parameters.md).
+- Web Parts visuais não dão suporte a parâmetros substituíveis. Para obter mais informações, consulte [parâmetros substituíveis](../sharepoint/replaceable-parameters.md).
 
-- Controles de usuário ou partes visuais da web não podem ser arrastados e descartados ou copiados para a web part visual. Essa ação faz com que um erro de compilação.
+- Os controles de usuário ou Web Parts visuais não podem ser arrastados e descartados ou copiados em Web Parts visuais. Essa ação causa um erro de compilação.
 
-- Web parts visuais diretamente não dão suporte a tokens de servidor do SharePoint como $SPUrl. Para obter mais informações, consulte "Token restrições em área restrita e Web Parts visuais" no tópico [soluções do SharePoint solucionar](../sharepoint/troubleshooting-sharepoint-solutions.md).
+- As Web Parts visuais não oferecem suporte direto a tokens do SharePoint Server, como $SPUrl. Para obter mais informações, consulte "restrições de token no Visual de área restrita Web Parts" no tópico [solucionar problemas de soluções do SharePoint](../sharepoint/troubleshooting-sharepoint-solutions.md).
 
-- Web part Visual em uma solução em área restrita, ocasionalmente, obter o erro, "a solicitação de execução de código em modo seguro foi recusada porque o serviço de Host do código em área restrita estava muito ocupado para tratar a solicitação". Para obter mais informações sobre esse erro, consulte esta postagem na [blog da equipe do SharePoint Developer](http://go.microsoft.com/fwlink/?LinkId=225932).
+- As Web Parts visuais em uma solução em área restrita eventualmente recebem o erro "a solicitação de execução de código em área restrita foi recusada porque o serviço de host de código em área restrita estava muito ocupado para lidar com a solicitação". Para obter mais informações sobre esse erro, consulte esta postagem no [blog da equipe de desenvolvedores do SharePoint](https://blogs.msdn.microsoft.com/sharepointdev/2011/02/08/error-the-sandboxed-code-execution-request-was-refused-because-the-sandboxed-code-host-service-was-too-busy-to-handle-the-request-ricky-kirkham/#10149157).
 
-- Depuração de JavaScript do lado do servidor não tem suporte no Visual Studio, mas há suporte para depuração de JavaScript do lado do cliente.
+- A depuração de JavaScript do lado do servidor não tem suporte no Visual Studio, mas há suporte para a depuração de JavaScript do lado do cliente.
 
-   Embora você possa adicionar JavaScript embutido para um arquivo de marcação do lado do servidor, depuração não tem suporte para pontos de interrupção adicionados à marcação. Para depurar o JavaScript, fazer referência a um arquivo JavaScript externo no arquivo de marcação e, em seguida, defina os pontos de interrupção no arquivo JavaScript.
+   Embora você possa adicionar JavaScript embutido a um arquivo de marcação do lado do servidor, a depuração não tem suporte para pontos de interrupção adicionados à marcação. Para depurar o JavaScript, faça referência a um arquivo JavaScript externo no arquivo de marcação e, em seguida, defina os pontos de interrupção no arquivo JavaScript.
 
-- Depuração de embutido [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] código deve ser feito no arquivo de código gerado, em vez de no arquivo de marcação.
+- A depuração de código de [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] embutido deve ser feita no arquivo de código gerado em vez de no arquivo de marcação.
 
-- Web parts visuais não suportam o uso da `<@ Assembly Src=` diretiva.
+- Web Parts visuais não dão suporte ao uso da diretiva `<@ Assembly Src=`.
 
-- SharePoint controles da web e alguns [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] controles não têm suporte no ambiente de área restrita e do SharePoint. Se não há suporte para controles são usados em uma web part visual em uma solução em área restrita, o erro "O nome do namespace ou tipo 'Tema' não existe no namespace 'WebControls'" será exibida.
+- Não há suporte para controles da Web do SharePoint e alguns controles de [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] no ambiente de área restrita do SharePoint. Se controles sem suporte forem usados em uma Web Part Visual em uma solução de área restrita, o erro "o tipo ou o nome do namespace ' Theme ' não existirá no namespace ' Microsoft. SharePoint. WebControls '" será exibido.
 
-  Para obter mais informações sobre as soluções em área restrita, consulte [diferenças entre a área restrita e soluções em farm](../sharepoint/differences-between-sandboxed-and-farm-solutions.md).
+  Para obter mais informações sobre soluções em área restrita, consulte [diferenças entre as soluções de área restrita e de farm](../sharepoint/differences-between-sandboxed-and-farm-solutions.md).
 
-## <a name="create-older-style-sharepoint-based-web-parts"></a>Criar estilo antigo baseado no SharePoint web parts
- Você pode usar os modelos no Visual Studio para criar um personalizado [!INCLUDE[vstecasplong](../sharepoint/includes/vstecasplong-md.md)] as web parts para SharePoint. [!INCLUDE[vstecasplong](../sharepoint/includes/vstecasplong-md.md)] partes da Web são criados sobre o [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] infra-estrutura de web part e o tipo recomendado para novos projetos.
+## <a name="create-older-style-sharepoint-based-web-parts"></a>Criar Web Parts baseadas no SharePoint com estilo antigo
+ Você pode usar os modelos no Visual Studio para criar Web Parts [!INCLUDE[vstecasplong](../sharepoint/includes/vstecasplong-md.md)] personalizadas para o SharePoint. [!INCLUDE[vstecasplong](../sharepoint/includes/vstecasplong-md.md)] Web Parts são criadas sobre a infraestrutura do [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] Web Part e são o tipo recomendado para novos projetos.
 
- Em poucos casos, você talvez precise criar uma web part usando o estilo mais antigo de web part baseada no SharePoint. Você pode usar o Visual Studio para criar esses tipos de web parts, mas o Visual Studio não fornece quaisquer modelos que são projetados especificamente para ajudar a criá-los.
+ Em poucos casos, talvez seja necessário criar uma Web Part usando a Web Part com estilo mais antigo do SharePoint. Você pode usar o Visual Studio para criar esses tipos de Web Parts, mas o Visual Studio não fornece modelos projetados especificamente para ajudá-lo a criá-los.
 
- Para obter mais informações sobre quando você talvez queira criar um estilo mais antigo de web part baseada no SharePoint, consulte [infraestrutura de Web Parts no Windows SharePoint Services](http://go.microsoft.com/fwlink/?LinkId=169290). Para obter mais informações sobre como criar uma web part usando o estilo mais antigo de web part baseada no SharePoint, consulte [instruções passo a passo Criando uma Web Part do SharePoint básico](http://go.microsoft.com/fwlink/?LinkId=169288).
+ Para obter mais informações sobre quando você pode querer criar uma Web Part baseada no SharePoint com estilo antigo, consulte [infraestrutura de Web Part no Windows SharePoint Services](/previous-versions/office/developer/sharepoint-2010/ms415560(v=office.14)). Para obter mais informações sobre como criar uma Web Part usando o estilo antigo da Web Part baseada no SharePoint, consulte [passo a passos criando uma Web Part básica do SharePoint](/previous-versions/office/ms452873(v=office.14)).
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 |Título|Descrição|
 |-----------|-----------------|
-|[Como: Criar uma web part do SharePoint](../sharepoint/how-to-create-a-sharepoint-web-part.md)|Mostra como criar web parts páginas do SharePoint.|
-|[Como: Criar uma web part do SharePoint usando um designer](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)|Mostra como criar web parts para SharePoint usando uma superfície de design visual.|
-|[Como: Criar um controle de usuário para uma página ou web part de aplicativo do SharePoint](../sharepoint/how-to-create-a-user-control-for-a-sharepoint-application-page-or-web-part.md)|Mostra como criar controles reutilizáveis personalizados que podem ser consumidos por páginas de aplicativos e web parts executadas no SharePoint.|
-|[Passo a passo: Criar uma web part do SharePoint](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint.md)|Descreve como criar uma web part para SharePoint.|
-|[Passo a passo: Criar uma web part para SharePoint usando um designer](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint-by-using-a-designer.md)|Descreve como criar uma web part para o SharePoint arrastando controles a uma superfície de design visual.|
-|[Passo a passo: Criar a web part do Silverlight que exiba OData para o SharePoint](../sharepoint/walkthrough-creating-a-silverlight-web-part-that-displays-odata-for-sharepoint.md)|Descreve como criar uma web part do SharePoint que hospeda um aplicativo do Silverlight e exibe dados de listas do SharePoint.|
+|[Como: criar uma Web Part do SharePoint](../sharepoint/how-to-create-a-sharepoint-web-part.md)|Mostra como criar Web Parts para páginas do SharePoint.|
+|[Como: criar uma Web Part do SharePoint usando um designer](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)|Mostra como criar Web Parts para o SharePoint usando uma superfície de Design Visual.|
+|[Como: criar um controle de usuário para uma página de aplicativo do SharePoint ou Web Part](../sharepoint/how-to-create-a-user-control-for-a-sharepoint-application-page-or-web-part.md)|Mostra como criar controles personalizados e reutilizáveis que podem ser consumidos por páginas de aplicativo e Web Parts que são executados no SharePoint.|
+|[Walkthrough: criar uma Web Part para o SharePoint](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint.md)|Descreve como criar uma Web Part para o SharePoint.|
+|[Walkthrough: criar uma Web Part para o SharePoint usando um designer](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint-by-using-a-designer.md)|Descreve como criar uma Web Part para o SharePoint arrastando controles para uma superfície de Design Visual.|
+|[Walkthrough: criar Web Part do Silverlight que exibe o OData para SharePoint](../sharepoint/walkthrough-creating-a-silverlight-web-part-that-displays-odata-for-sharepoint.md)|Descreve como criar uma Web Part para o SharePoint que hospeda um aplicativo do Silverlight e exibe dados de listas do SharePoint.|

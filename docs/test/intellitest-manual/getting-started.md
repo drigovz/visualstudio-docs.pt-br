@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: jillre
-ms.openlocfilehash: 0d0d681c59935bbbb4591438f538d0c800cba489
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 2f93b44d49b88b79068bff46df51c6c68423c16f
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653216"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72984591"
 ---
 # <a name="get-started-with-microsoft-intellitest"></a>Introdução ao Microsoft IntelliTest
 
@@ -22,7 +22,7 @@ ms.locfileid: "72653216"
   * assista ao [vídeo do Channel 9](https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Intellitest)
   * leia esta [visão geral na MSDN Magazine](https://msdn.microsoft.com/magazine/dn904672.aspx)
   * leia nossa [documentação](../../test/generate-unit-tests-for-your-code-with-intellitest.md)
-* Fazer perguntas sobre [Stack Overflow](http://stackoverflow.com/questions/tagged/intellitest)
+* Fazer perguntas sobre [Stack Overflow](https://stackoverflow.com/questions/tagged/intellitest)
 * Leia o restante deste manual de referência
 * Imprima esta página para referência rápida
 

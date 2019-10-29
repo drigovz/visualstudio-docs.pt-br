@@ -9,12 +9,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e6346f960efe1cd3af6ad9cbd070227d9171f01
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: bd1e3c3769f30806f7430bd32ddcb82db378093d
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654026"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72984279"
 ---
 # <a name="customize-and-extend-a-domain-specific-language"></a>Personalizar e estender uma linguagem específica de domínio
 
@@ -40,7 +40,7 @@ O Visual Studio Modeling VMSDK (SDK de modelagem e visualização) fornece vári
 |Ícone de alterações de forma para indicar estado.|Defina a visibilidade do mapeamento de decorador na janela detalhes de DSL. Localize vários decoradores de imagem na mesma posição. Consulte [atualizando formas e conectores para refletir o modelo](../modeling/updating-shapes-and-connectors-to-reflect-the-model.md).<br /><br /> Ou, substitua `ImageField.GetDisplayImage()`. Consulte o exemplo em <xref:Microsoft.VisualStudio.Modeling.Diagrams.ImageField>.|
 |Definir uma imagem de plano de fundo em qualquer forma|Substitua InitializeInstanceResources () para adicionar um ImageField ancorado.|
 |Aninhe formas em qualquer profundidade|Configure uma árvore de incorporação recursiva. Defina BoundsRules para conter as formas.|
-|Anexe conectores em pontos fixos no limite de um elemento.|Defina elementos de terminal inseridos, representados por portas pequenas no diagrama. Use BoundsRules para corrigir as portas em vigor. Consulte o exemplo de diagrama de circuito na [visualização e no SDK de modelagem](http://go.microsoft.com/fwlink/?LinkID=186128).|
+|Anexe conectores em pontos fixos no limite de um elemento.|Defina elementos de terminal inseridos, representados por portas pequenas no diagrama. Use BoundsRules para corrigir as portas em vigor. Consulte o exemplo de diagrama de circuito na [visualização e no SDK de modelagem](https://code.msdn.microsoft.com/Visualization-and-Modeling-313535db).|
 |O campo de texto exibe um valor derivado de outros valores.|Mapeie o decorador de texto para uma propriedade de domínio de armazenamento calculada ou personalizada. Para obter mais informações, consulte [Propriedades de armazenamento calculadas e personalizadas](../modeling/calculated-and-custom-storage-properties.md).|
 |Propagar alterações entre elementos de modelo ou entre formas|Consulte [validação em uma linguagem específica de domínio](../modeling/validation-in-a-domain-specific-language.md).|
 |Propague alterações para recursos como outras extensões do Visual Studio fora da loja.|Consulte [manipuladores de eventos propagar alterações fora do modelo](../modeling/event-handlers-propagate-changes-outside-the-model.md).|

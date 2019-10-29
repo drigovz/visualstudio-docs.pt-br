@@ -14,12 +14,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 08a709b50dd61beb874ea4cb80ebfb92a8fcd49e
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 8e2e97845c7ef17476e18e0068663772341ad8eb
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72720046"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72983120"
 ---
 # <a name="signing-vsix-packages"></a>Assinando pacotes VSIX
 Os assemblies de extensão não precisam ser assinados antes que possam ser executados no Visual Studio, mas é uma boa prática fazer isso.
@@ -30,7 +30,7 @@ Os assemblies de extensão não precisam ser assinados antes que possam ser exec
 > A partir do Visual Studio 2015, os pacotes VSIX assinados usando algo diferente da criptografia SHA256 serão identificados como tendo uma assinatura inválida. A instalação do VSIX não está bloqueada, mas o usuário será avisado.
 
 ## <a name="signing-a-vsix-with-vsixsigntool"></a>Assinando um VSIX com o VSIXSignTool
- Há uma ferramenta de assinatura de criptografia SHA256 disponível em [VisualStudioExtensibility](http://www.nuget.org/profiles/VisualStudioExtensibility) em NuGet.org em [VsixSignTool](http://www.nuget.org/packages/Microsoft.VSSDK.Vsixsigntool).
+ Há uma ferramenta de assinatura de criptografia SHA256 disponível em [VisualStudioExtensibility](https://www.nuget.org/profiles/VisualStudioExtensibility) em NuGet.org em [VsixSignTool](https://www.nuget.org/packages/Microsoft.VSSDK.Vsixsigntool).
 
 #### <a name="to-use-the-vsixsigntool"></a>Para usar o VSIXSignTool
 

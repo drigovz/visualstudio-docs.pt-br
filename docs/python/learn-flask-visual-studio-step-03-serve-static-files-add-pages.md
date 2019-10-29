@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d9d6f94a81eb97cb06820381ba09e13d4bdeb9d8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 5aa952a00075cdad262803140ab4c0360f0c62a0
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62957164"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985177"
 ---
 # <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>Etapa 3: Fornecer arquivos estáticos, adicionar páginas e usar a herança do modelo
 
@@ -44,9 +44,9 @@ Para usar um modelo, selecione o modelo desejado, especifique um nome para o arq
 
 ### <a name="question-how-does-visual-studio-know-which-item-templates-to-offer"></a>Pergunta: Como o Visual Studio sabe quais modelos de item oferecer?
 
-Resposta: O arquivo de projeto do Visual Studio (*.pyproj*) contém um identificador de tipo de projeto que o marca como um projeto do Python. O Visual Studio usa esse identificador de tipo para mostrar apenas os modelos de item adequados para o tipo de projeto. Dessa forma, o Visual Studio pode fornecer um conjunto avançado de modelos de item para muitos tipos de projeto sem solicitar que você os classifique toda vez.
+Resposta: O arquivo de projeto do Visual Studio ( *.pyproj*) contém um identificador de tipo de projeto que o marca como um projeto do Python. O Visual Studio usa esse identificador de tipo para mostrar apenas os modelos de item adequados para o tipo de projeto. Dessa forma, o Visual Studio pode fornecer um conjunto avançado de modelos de item para muitos tipos de projeto sem solicitar que você os classifique toda vez.
 
-## <a name="step-3-2-serve-static-files-from-your-app"></a>Etapa 3-2: Fornecer arquivos estáticos por meio do aplicativo
+## <a name="step-3-2-serve-static-files-from-your-app"></a>Etapa 3-2: Fornecer arquivos estáticos do seu aplicativo
 
 Em um aplicativo Web criado com Python (usando qualquer estrutura), seus arquivos em Python sempre são executados no servidor do host da Web e nunca são transmitidos para o computador de um usuário. Mas outros arquivos, como CSS e JavaScript, são usados exclusivamente pelo navegador, de modo que o servidor do host simplesmente os entrega como estão sempre que são solicitados. Esses arquivos são chamados de "estáticos", e o Flask pode fornecê-los automaticamente sem que você precise escrever código. Dentro de arquivos HTML, por exemplo, é possível referenciar arquivos estáticos usando um caminho relativo no projeto. A primeira seção desta etapa adiciona um arquivo CSS ao modelo de página existente.
 
@@ -115,11 +115,11 @@ O Flask fornece uma função chamada `serve_static_file` que você pode chamar p
 
 ### <a name="question-are-there-any-conventions-for-organizing-static-files"></a>Pergunta: Há convenções para organizar arquivos estáticos?
 
-Resposta: Você pode adicionar outros arquivos CSS, JavaScript e HTML à pasta *static* como desejar. Uma maneira comum de organizar arquivos estáticos é criar subpastas chamadas *fonts*, *scripts* e *content* (para folhas de estilo e outros arquivos).
+Resposta: Você pode adicionar outros arquivos CSS, JavaScript e HTML à sua pasta *static* como quiser. Uma maneira comum de organizar arquivos estáticos é criar subpastas chamadas *fonts*, *scripts* e *content* (para folhas de estilo e outros arquivos).
 
 ### <a name="question-how-do-i-handle-url-variables-and-query-parameters-in-an-api"></a>Pergunta: Como fazer para manipular variáveis de URL e parâmetros de consulta em uma API?
 
-Resposta: Veja a resposta na etapa 1-4 para a [Pergunta: Como o Flask trabalha com rotas de URL de variável e parâmetros de consulta?](learn-flask-visual-studio-step-01-project-solution.md#qa-url-variables)
+Resposta: Confira a resposta na etapa 1-4 para a [Pergunta: Como o Flask trabalha com rotas de URL de variável e parâmetros de consulta?](learn-flask-visual-studio-step-01-project-solution.md#qa-url-variables)
 
 ## <a name="step-3-3-add-a-page-to-the-app"></a>Etapa 3-3: Adicionar uma página ao aplicativo
 
@@ -172,9 +172,9 @@ As etapas a seguir adicionam uma página "Sobre" ao projeto "HelloFlask" e links
 
 1. Execute o projeto para observar os resultados e verificar a navegação entre as páginas. Interrompa o aplicativo quando terminar.
 
-### <a name="question-does-the-name-of-a-page-function-matter-to-flask"></a>Pergunta: O nome de uma função de página é importante para o Flask?
+### <a name="question-does-the-name-of-a-page-function-matter-to-flask"></a>Pergunta: o nome de uma função de página é importante para o Flask?
 
-Resposta: Não, porque ele é o decorador `@app.route` que determina as URLs para as quais o Flask chama a função para gerar uma resposta. Normalmente, os desenvolvedores correspondem o nome da função à rota, mas essa correspondência não é obrigatória.
+Resposta: não, porque ele é o decorador `@app.route` que determina as URLs para as quais o Flask chama a função para gerar uma resposta. Normalmente, os desenvolvedores correspondem o nome da função à rota, mas essa correspondência não é obrigatória.
 
 ## <a name="step-3-4-use-template-inheritance-to-create-a-header-and-nav-bar"></a>Etapa 3-4: Usar a herança do modelo para criar um cabeçalho e uma barra de navegação
 
@@ -286,6 +286,6 @@ As etapas a seguir demonstram a herança:
 ## <a name="go-deeper"></a>Aprofunde-se um pouco mais
 
 - [Implantar o aplicativo Web no Serviço de Aplicativo do Azure](publishing-python-web-applications-to-azure-from-visual-studio.md)
-- Para ver mais funcionalidades de modelos Jinja, como o fluxo de controle, confira [Jinja Template Designer Documentation](http://jinja.pocoo.org/docs/2.10/templates) (Documentação de Designer de Modelo do Jinja) (jinja.pocoo.org)
-- Para obter detalhes sobre o uso de `url_for`, confira [url_for](http://flask.pocoo.org/docs/1.0/api/?highlight=url_for#flask.url_for) na documentação do objeto do Aplicativo Flask (flask.pocoo.org)
+- Para ver mais funcionalidades de modelos Jinja, como o fluxo de controle, confira [Jinja Template Designer Documentation](http://jinja.palletsprojects.com/en/2.10.x/templates/) (Documentação de Designer de Modelo do Jinja) (jinja.pocoo.org)
+- Para obter detalhes sobre o uso de `url_for`, confira [url_for](https://flask.palletsprojects.com/en/1.0.x/api/#flask.url_for) na documentação do objeto do Aplicativo Flask (flask.pocoo.org)
 - Código-fonte do tutorial no GitHub: [Microsoft/python-sample-vs-learning-flask](https://github.com/Microsoft/python-sample-vs-learning-flask)

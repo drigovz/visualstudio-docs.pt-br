@@ -1,5 +1,5 @@
 ---
-title: Como adicionar um comando ao menu de atalho
+title: 'Como: adicionar um comando ao menu de atalho'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,14 +10,14 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f7d873a3401e37a18b938cb5785f33eb0bc9b8fb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e476f1db1e30a04e67e6b53f593f55ee3867fae2
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666715"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985126"
 ---
-# <a name="how-to-add-a-command-to-the-shortcut-menu"></a>Como adicionar um comando ao menu de atalho
+# <a name="how-to-add-a-command-to-the-shortcut-menu"></a>Como: adicionar um comando ao menu de atalho
 
 É possível adicionar comandos de menu à linguagem específica do domínio (DSL) para que seus usuários possam executar tarefas que são específicas de sua DSL. Os comandos aparecem no menu de contexto (atalho) quando os usuários clicam com o botão direito do mouse no diagrama. Você pode definir um comando para aparecer no menu apenas em circunstâncias específicas. Por exemplo, você pode tornar o comando visível apenas quando o usuário clicar em tipos específicos de elementos ou em elementos em estados específicos.
 
@@ -28,8 +28,6 @@ Em resumo, as etapas são executadas no projeto DslPackage da seguinte maneira:
 2. [Atualize o número de versão do pacote em Package.tt](#version). Você precisará fazer isso sempre que alterar o Commands.vsct
 
 3. [Escreva métodos na classe commandSet](#CommandSet) para tornar o comando visível e definir o que você deseja que o comando faça.
-
-   Para obter exemplos, consulte o [site do SDK de visualização e modelagem](http://go.microsoft.com/fwlink/?LinkID=185579).
 
 > [!NOTE]
 > Também é possível modificar o comportamento de alguns comandos existentes, tais como Recortar, Colar, Selecionar Tudo e Imprimir substituindo métodos em CommandSet.cs. Para obter mais informações, consulte [como modificar um comando de menu padrão](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).
@@ -102,7 +100,7 @@ Use o método neste tópico se:
     </VisibilityConstraints>
     ```
 
-4. Defina os nomes que você usou para os GUIDs e os IDs. Para fazer isso, adicione um elemento `Symbols` no elemento `CommandTable` após o elemento `Commands`.
+4. Defina os nomes que você usou para os GUIDs e IDs. Para fazer isso, adicione um elemento `Symbols` no elemento `CommandTable` após o elemento `Commands`.
 
     ```xml
     <Symbols>
