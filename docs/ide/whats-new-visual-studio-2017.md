@@ -18,12 +18,12 @@ ms.topic: conceptual
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: 354d984ef8df7bd7c493a04eb0e27b439d82b0d1
-ms.sourcegitcommit: 4f82de3fb0cfae226aef1abb40c47e63d2036a5c
-ms.translationtype: HT
+ms.openlocfilehash: 79570fe403c12c89860a67683456a3d6ca3d3f01
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72919152"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189604"
 ---
 # <a name="whats-new-in-visual-studio-2017"></a>Novidades no Visual Studio 2017
 
@@ -336,7 +336,7 @@ Para saber mais, consulte a postagem no blog [Redgate Data Tools no Visual Studi
 
 .NET Core é uma implementação de software livre, modular, multiplataforma e para fins gerais do .NET Standard que contém muitas das mesmas APIs que o .NET Framework.
 
-A plataforma do .NET Core é composta por vários componentes, incluindo os compiladores gerenciados, o runtime, as bibliotecas de classes base e vários modelos de aplicativo, como o ASP.NET Core. O .NET Core dá suporte aos três principais sistemas operacionais: Windows, Linux e macOS. Você pode usar o .NET Core nos cenários inseridos/de IoT, de dispositivo e de nuvem.
+A plataforma do .NET Core é composta por vários componentes, incluindo os compiladores gerenciados, o tempo de execução, as bibliotecas de classes base e vários modelos de aplicativo, como o ASP.NET Core. O .NET Core dá suporte aos três principais sistemas operacionais: Windows, Linux e macOS. Você pode usar o .NET Core nos cenários inseridos/de IoT, de dispositivo e de nuvem.
 
 Além disso, agora ele é compatível com o Docker.
 
@@ -386,7 +386,7 @@ Se quiser sugerir melhorias para o Visual Studio ou saber mais sobre as opções
 ## <a name="see-also"></a>Consulte também
 
 * [Notas de versão do Visual Studio 2017](/visualstudio/releasenotes/vs2017-relnotes)
-* [Novidades no SDK do Visual Studio 2017](/visualstudio/extensibility/what-s-new-in-the-visual-studio-2017-sdk)
+* [Novidades no SDK do Visual Studio 2017](../extensibility/what-s-new-in-the-visual-studio-2017-sdk.md)
 * [Novidades no Visual C++](/cpp/top/what-s-new-for-visual-cpp-in-visual-studio)
 * [Novidades no C#](/dotnet/csharp/whats-new)
 * [Novidades para o Team Foundation Server](/tfs/server/whats-new?view=vsts)

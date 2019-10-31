@@ -6,12 +6,12 @@ ms.author: sayedha
 ms.date: 04/02/2019
 ms.technology: vs-ide-install
 ms.assetid: 25CD47A4-5B32-4734-8EF3-E24A02AABF29
-ms.openlocfilehash: 493e03ecd2a10d7cd9e81467d5886f863cd7229b
-ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
-ms.translationtype: HT
+ms.openlocfilehash: dac6a1c53cea8982a75c7b12661c98f2feb37f83
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72888592"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189666"
 ---
 # <a name="introduction-to-azure-functions"></a>Introdução ao Azure Functions
 
@@ -21,7 +21,7 @@ O Azure Functions é uma maneira de criar e executar snippets de código control
 
 As ferramentas do Azure Functions estão incluídas no **Visual Studio para Mac 7.5** e posterior.
 
-Para criar e implantar funções, você também precisará de uma assinatura do Azure, que está disponível gratuitamente em [https://azure.com/free](https://azure.com/free).
+Para criar e implantar funções, você também precisa de uma assinatura do Azure. Se você não tiver uma conta do Azure, poderá se inscrever hoje gratuitamente e receber 12 meses de serviços populares gratuitos, $200 de crédito gratuito e mais de 25 serviços sempre gratuitos-> [https://azure.com/free](https://azure.com/free/dotnet).
 
 ## <a name="creating-your-first-azure-functions-project"></a>Criando seu primeiro projeto do Azure Functions
 
@@ -106,7 +106,7 @@ Você pode usar o procedimento acima para adicionar mais funções ao seu projet
     |**[Grupo de Recursos](/azure/azure-resource-manager/resource-group-overview)**|O Nome do grupo de recursos no qual criar o seu aplicativo de funções. Escolha **+** para criar um novo grupo de recursos.|
     |**[Plano de Serviço](/azure/azure-functions/functions-scale)**|Escolha um plano existente ou crie um personalizado. Escolha um local em uma região perto de você ou perto de outros serviços acessados pelas funções.|
 
-5. Crie em **Próximo** para criar uma conta de armazenamento. Uma conta de armazenamento do Azure é requerida pelo runtime do Functions. Clique em **Personalizado** para criar uma conta de armazenamento de uso geral ou use uma já existente:
+5. Crie em **Próximo** para criar uma conta de armazenamento. Uma conta de armazenamento do Azure é requerida pelo tempo de execução do Functions. Clique em **Personalizado** para criar uma conta de armazenamento de uso geral ou use uma já existente:
 
     ![Opção de menu Publicar no Azure](media/azure-functions-image8.png)
 

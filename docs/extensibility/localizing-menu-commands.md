@@ -15,12 +15,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b2b42143c2971bcbb172958b8da42a1e887e4699
-ms.sourcegitcommit: 3e94d9fb6dc56fa8b23fbacd5d11cf8d6e7e18f1
+ms.openlocfilehash: 94f71014440c55da0151d0ebd817aac9f5d2c7ed
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "72252636"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73186283"
 ---
 # <a name="localize-menu-commands"></a>Comandos do menu localizar
 
@@ -48,7 +48,7 @@ No VSPackages, os comandos de menu e os botões da barra de ferramentas são def
 
       O exemplo a seguir mostra o texto do botão inglês e espanhol de um comando para abrir uma janela de ferramenta do Gerenciador de árvore de família.
 
-      [*FamilyTree.en-US.vsct*]
+      [*FamilyTree. en-US. vsct*]
 
    ```xml
    <Button guid="guidLocalizedPackageCmdSet" id="cmdidFamilyTree" priority="0x0100" type="Button">
@@ -61,7 +61,7 @@ No VSPackages, os comandos de menu e os botões da barra de ferramentas são def
    </Button>
    ```
 
-    [*FamilyTree.es-ES.vsct*]
+    [*FamilyTree.es-es. vsct*]
 
    ```xml
    <Button guid="guidLocalizedPackageCmdSet" id="cmdidFamilyTree" priority="0x0100" type="Button">
@@ -92,7 +92,7 @@ Recursos de texto diferentes de nomes de comando são definidos em arquivos de r
 
 5. Abra cada arquivo *. resx* para modificar os valores da cadeia de caracteres conforme apropriado para o idioma e a cultura específicos. O exemplo a seguir mostra a definição de recurso localizado para a barra de título de uma janela de ferramenta.
 
-     [*Resources.en-US.resx*]
+     [*Resources. en-US. resx*]
 
     ```xml
     <data name="ToolWindowTitle" xml:space="preserve">
@@ -126,7 +126,7 @@ Você deve modificar o arquivo *AssemblyInfo.cs* e o arquivo de projeto para inc
 
 4. Abra o arquivo de projeto no editor.
 
-5. No elemento raiz `Project`, adicione um elemento `PropertyGroup` com um elemento `UICulture` que corresponda ao idioma padrão.
+5. No elemento de `Project` raiz, adicione um elemento `PropertyGroup` com um elemento `UICulture` que corresponda ao seu idioma padrão.
 
     ```xml
     <PropertyGroup>
@@ -147,9 +147,9 @@ Você deve modificar o arquivo *AssemblyInfo.cs* e o arquivo de projeto para inc
     </EmbeddedResource>
     ```
 
-8. Para cada idioma localizado, copie o elemento `EmbeddedResource` para `VsPackage.en-US` e defina o atributo **include** e o elemento **LogicalName** da cópia para a localidade de destino.
+8. Para cada idioma localizado, copie o elemento `EmbeddedResource` para `VsPackage.en-US`e defina o atributo **include** e o elemento **LogicalName** da cópia para a localidade de destino.
 
-9. Para cada elemento `VSCTCompile` localizado, adicione um elemento `ResourceName` que aponte para `Menus.ctmenu`, conforme mostrado no exemplo a seguir:
+9. Para cada elemento de `VSCTCompile` localizado, adicione um elemento `ResourceName` que aponte para `Menus.ctmenu`, conforme mostrado no exemplo a seguir:
 
     ```xml
     <ItemGroup>
@@ -166,6 +166,6 @@ Você deve modificar o arquivo *AssemblyInfo.cs* e o arquivo de projeto para inc
      Isso cria um assembly principal e assemblies de recurso para cada idioma. Para obter informações sobre como localizar o processo de implantação, consulte [Localizar pacotes VSIX](../extensibility/localizing-vsix-packages.md)
 
 ## <a name="see-also"></a>Consulte também
+
 - [Estender menus e comandos](../extensibility/extending-menus-and-commands.md)
-- [MenuCommands vs. OleMenuCommands](../extensibility/menucommands-vs-olemenucommands.md)
 - [Globalizar e localizar aplicativos](../ide/globalizing-and-localizing-applications.md)

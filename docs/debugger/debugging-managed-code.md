@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: f6dd305b55e1ff7dd11b46f023906a8422b5504f
-ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
+ms.openlocfilehash: 76b841d94aee93a1bc88f6d01161239828dee166
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72536053"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188418"
 ---
 # <a name="debug-managed-code-c-visual-basic-f-ccli"></a>Depurar código gerenciado (C#, Visual Basic, F#, C++/CLI)
 
@@ -76,7 +76,7 @@ Fornece considerações para depurar aplicativos de serviço do Windows, incluin
 [Depuração e criação de perfil](/dotnet/framework/debug-trace-profile/index)\
 Discute a depuração de aplicativos .NET e os requisitos de configuração.
 
-[Como depurar aplicativos de script e Web](/visualstudio/debugger/how-to-enable-debugging-for-aspnet-applications)\
+[Como depurar aplicativos de script e Web](how-to-enable-debugging-for-aspnet-applications.md)\
 Descreve os problemas comuns de depuração e técnicas que você pode encontrar ao depurar aplicativos de script e Web.
 
 ## <a name="see-also"></a>Consulte também

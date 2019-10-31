@@ -14,19 +14,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b03b1350b4125262bedfd7fa5284c13d6d38a2e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 259b4089e4a54dbde4cc8b30a3da2899ad37a85a
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62822893"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189303"
 ---
 # <a name="vsinstr-warnings"></a>Avisos de VSInstr
 A tabela a seguir lista os avisos emitidos pela ferramenta *VSInstr.exe*. Você pode usar a opção NOWARN junto com os números de aviso para suprimir o aviso seja exibido.
 
 |Número do aviso|Descrição|
 |--------------------|-----------------|
-|**VSP1026**|Não há suporte para cobertura em bibliotecas que não fazem referência a MSCorLib. Esse geralmente é o caso de Bibliotecas Portáteis.<br /><br />A opção [/EnableCodeCoverage](/visualstudio/test/vstest-console-options) da linha de comando é obrigatória para o .NET Core.|
+|**VSP1026**|Não há suporte para cobertura em bibliotecas que não fazem referência a MSCorLib. Esse geralmente é o caso de Bibliotecas Portáteis.<br /><br />A opção [/EnableCodeCoverage](../test/vstest-console-options.md) da linha de comando é obrigatória para o .NET Core.|
 |**VSP2000**|Erro interno. Não é possível obter o nome de arquivo do módulo para este executável.|
 |**VSP2001**|\<assembly name> é um assembly de nome forte. Ele deve ser assinado novamente antes de ser executado.<br /><br /> Este aviso ocorre quando um assembly assinado é instrumentado. Use a ferramenta *sn.exe* para desistir do binário ou desligar temporariamente o requisito de nome forte. Para obter mais informações, confira [Sn.exe (ferramenta de nome forte)](/dotnet/framework/tools/sn-exe-strong-name-tool).|
 |**VSP2002**|Não foi possível localizar a função \<funcname > no arquivo \<filename ><br /><br /> Este aviso ocorrerá se uma função não puder ser localizada no arquivo especificado.|

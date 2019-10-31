@@ -1,6 +1,6 @@
 ---
-title: Usar tracepoints no depurador | Microsoft Docs
-ms.date: 9/17/2019
+title: Informações de log com tracepoints | Microsoft Docs
+ms.date: 10/28/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - tracepoints, about tracepoints
@@ -9,16 +9,16 @@ ms.author: sashe
 manager: AndSter
 ms.workload:
 - multiple
-ms.openlocfilehash: 263657213f1720eaca7a0462bb31585adaacf9bb
-ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
+ms.openlocfilehash: fcc9f01315d3783af1a1f124785cd74fafb215bf
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72516396"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73187306"
 ---
-# <a name="use-tracepoints-in-the-visual-studio-debugger"></a>Usar tracepoints no depurador do Visual Studio
+# <a name="log-info-to-the-output-window-using-tracepoints-in-visual-studio"></a>Informações de log para a janela de saída usando tracepoints no Visual Studio
 
-Os Tracepoints permitem registrar informações na janela de saída em condições configuráveis sem modificar ou parar seu código. Esse recurso tem suporte para código gerenciado e nativo, bem como para várias linguagens como JavaScript e C#.
+Os Tracepoints permitem registrar informações na janela de saída em condições configuráveis sem modificar ou parar seu código. Esse recurso tem suporte para linguagens gerenciadasC#(, Visual Basic F#,) e código nativo, bem como para linguagens como JavaScript e Python.
 
 ## <a name="let39s-take-an-example"></a>Vamos&#39;pegar um exemplo
 
@@ -77,7 +77,7 @@ Você também pode usar palavras-chave especiais para exibir informações mais 
 | $FUNCTION | Nome da função atual |
 | $PID | ID do processo |
 | $PNAME | Nome do processo |
-| $TID | ID do thread |
+| $TID | Identificação do Thread |
 | $TNAME   | Nome do thread |
 | $TICK | Contagem de tiques (do Windows ObterContagemMarcaEscala) |
 
@@ -111,7 +111,7 @@ Para contagem de ocorrências, você pode optar por gerar uma mensagem quando a 
 ![Contagem de acesso à expressão condicional](../debugger/media/conditionalexpressionhitcount.png "Contagem de acesso à expressão condicional")
 
 ### <a name="filter"></a>Filtro
-Para uma condição de filtro, especifique quais dispositivos, processos ou threads de saída são mostrados para.
+Para uma condição de filtro, especifique quais dispositivos, processos ou saída de threads são mostrados para.
 
 ![Filtro de expressão condicional](../debugger/media/conditionalexpressionfilter.png "Filtro de expressão condicional")
 
@@ -129,7 +129,7 @@ Coloque as cadeias de caracteres (como nomes) entre aspas duplas. Os valores pod
 
 Embora os tracepoints destinam-se a tornar a depuração uma experiência mais limpa e mais suave, há algumas considerações que você deve conhecer quando se trata de usá-las.
 
-Às vezes, quando você inspeciona uma propriedade ou atributo de um objeto, seu valor pode ser alterado. Isso não é um bug causado pelo próprio recurso tracepoint, mas vale a pena mencionar que o uso de tracepoints para inspecionar objetos não evita essas modificações acidentais.
+Às vezes, quando você inspeciona uma propriedade ou atributo de um objeto, seu valor pode ser alterado. Se o valor for alterado durante a inspeção, não será um bug causado pelo próprio recurso tracepoint. No entanto, o uso de tracepoints para inspecionar objetos não evita essas modificações acidentais.
 
 A maneira como as expressões são avaliadas na caixa de mensagem de **ação** pode ser diferente da linguagem que você está usando no momento para desenvolvimento. Por exemplo, para gerar uma cadeia de caracteres, não é necessário encapsular uma mensagem entre aspas mesmo se você normalmente usa `Debug.WriteLine()` ou `console.log()`. Além disso, a sintaxe de chave (`{ }`) para expressões de saída também pode ser diferente da Convenção de saída de valores em sua linguagem de desenvolvimento. (No entanto, o conteúdo entre chaves (`{ }`) ainda deve ser escrito usando a sintaxe da linguagem de desenvolvimento.
 

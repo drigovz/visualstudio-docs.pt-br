@@ -8,12 +8,12 @@ manager: jillfra
 ms.technology: vs-azure
 ms.workload:
 - azure
-ms.openlocfilehash: 45397ddf21f1ea1d735c2753864e5954850a4d98
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
+ms.openlocfilehash: 8b6aef437519a4fe92f11a3b21546b3dda9981bb
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70312110"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188763"
 ---
 # <a name="get-started-with-visual-studio-kubernetes-tools"></a>Introdução às ferramentas de kubernetes do Visual Studio
 
@@ -21,7 +21,7 @@ As ferramentas de kubernetes do Visual Studio ajudam a simplificar o desenvolvim
 
 Este tutorial aborda o uso do Visual Studio para adicionar suporte a kubernetes a um projeto e publicar no AKS. Se você estiver interessado principalmente em usar [Azure dev Spaces](https://aka.ms/get-azds) para depurar e testar seu projeto em execução no AKs, poderá ir para o [tutorial de Azure dev Spaces](/azure/dev-spaces/get-started-netcore-visualstudio) em vez disso.
 
-## <a name="prerequisites"></a>Pré-requisitos
+## <a name="prerequisites"></a>Prerequisites
 
 Para aproveitar essa nova funcionalidade, você precisará de:
 
@@ -42,7 +42,7 @@ Para aproveitar essa nova funcionalidade, você precisará de:
 
     1. Helm CLI instalada em sua estação de trabalho de desenvolvimento. Para obter mais informações, consulte [instalando o Helm](https://github.com/kubernetes/helm/blob/master/docs/install.md).
 
-    1. Helm configurado em seu cluster AKs usando o `helm init` comando. Para obter mais informações sobre como fazer isso, consulte [como configurar o Helm](/azure/aks/kubernetes-helm#configure-helm).
+    1. Helm configurado em seu cluster AKS usando o comando `helm init`. Para obter mais informações sobre como fazer isso, consulte [como configurar o Helm](/azure/aks/kubernetes-helm#configure-helm).
 ::: moniker-end
 
 ## <a name="create-a-new-kubernetes-project"></a>Criar um novo projeto kubernetes
@@ -81,7 +81,7 @@ Em seguida, você pode escolher qual tipo de aplicativo Web ASP.NET Core criar. 
 
 ## <a name="add-kubernetes-support-to-an-existing-project"></a>Adicionar suporte a kubernetes a um projeto existente
 
-Como alternativa, você pode adicionar suporte a kubernetes a um projeto de aplicativo Web ASP.NET Core existente. Para fazer isso, clique com o botão direito do mouse no projeto e escolha **Adicionar** > **suporte ao orquestrador de contêiner**.
+Como alternativa, você pode adicionar suporte a kubernetes a um projeto de aplicativo Web ASP.NET Core existente. Para fazer isso, clique com o botão direito do mouse no projeto e escolha **adicionar** > **contêiner de suporte do orquestrador**.
 
 ::: moniker range="vs-2017"
 
@@ -119,7 +119,7 @@ Os arquivos adicionados são:
 
    ![Captura de tela da opção criar imagem do Docker](media/tutorial-kubernetes-tools/k8s-tools-build-docker-image.png)
 
-- um gráfico do Helm e uma pasta de *gráficos* . Esses arquivos YAML compõem o gráfico do Helm para o aplicativo, que pode ser usado para implantá-lo no kubernetes. Para obter mais informações sobre o Helm [https://www.helm.sh](https://www.helm.sh), consulte.
+- um gráfico do Helm e uma pasta de *gráficos* . Esses arquivos YAML compõem o gráfico do Helm para o aplicativo, que pode ser usado para implantá-lo no kubernetes. Para obter mais informações sobre o Helm, consulte [https://www.helm.sh](https://www.helm.sh).
 
 - *azds.yaml*. Isso contém configurações para Azure Dev Spaces, que fornece uma experiência de depuração rápida e iterativa no serviço kubernetes do Azure. Para obter mais informações, consulte [a documentação do Azure dev Spaces](https://docs.microsoft.com/azure/dev-spaces/azure-dev-spaces).
 
@@ -137,7 +137,7 @@ Para fazer isso, primeiro você precisa verificar se instalou tudo conforme desc
 
    ![Captura de tela do item de menu publicar](media/tutorial-kubernetes-tools/k8s-tools-publish-project.png)
 
-2. Na tela **publicar** , escolha **registro de contêiner** como o destino de publicação e siga os prompts para selecionar o registro de contêiner. Se você ainda não tiver um registro de contêiner, escolha **criar novo registro de contêiner do Azure** para criar um do Visual Studio. Para obter mais informações, consulte [publicar seu contêiner no registro de contêiner do Azure](vs-azure-tools-docker-hosting-web-apps-in-docker.md).
+2. Na tela **publicar** , escolha **registro de contêiner** como o destino de publicação e siga os prompts para selecionar o registro de contêiner. Se você ainda não tiver um registro de contêiner, escolha **criar novo registro de contêiner do Azure** para criar um do Visual Studio. Para obter mais informações, consulte [publicar seu contêiner no registro de contêiner do Azure](hosting-web-apps-in-docker.md).
 
    ![Captura de tela de escolher um destino de publicação](media/tutorial-kubernetes-tools/k8s-tools-publish-to-acr.png)
 

@@ -9,12 +9,12 @@ manager: jillfra
 ms.technology: vs-ide-debug
 ms.workload:
 - uwp
-ms.openlocfilehash: 0c785be0002a1e6d4fd1934e559743502611f5fb
-ms.sourcegitcommit: bde55773485c9bca50a760ac9e4c919e0a208a51
+ms.openlocfilehash: 5d6f0e54c37c394fce464b07440daa99b4dd7d5e
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72924493"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188898"
 ---
 # <a name="debug-xaml-in-blend"></a>Depurar XAML no Blend
 
@@ -119,7 +119,7 @@ Quando são detectados erros de XAML, a superfície de design exibe um alerta in
 
 Você pode abrir projetos de Blend no Visual Studio para depurar com mais facilidade o código em seu aplicativo. Para abrir um projeto do Blend no Visual Studio, clique com o botão direito do mouse no projeto no painel **projetos** e clique em **Editar no Visual Studio**. Depois de concluir a sessão de depuração no Visual Studio, pressione Ctrl + Shift + S para salvar todas as suas alterações e, em seguida, volte para o Blend. Você será solicitado a recarregar o projeto. Clique em **Sim para todos** para continuar trabalhando no Blend.
 
-Para obter mais informações sobre como depurar seu aplicativo, consulte [depurar aplicativos UWP no Visual Studio](../debugger/debug-store-apps-in-visual-studio.md).
+Para obter mais informações sobre como depurar seu aplicativo, consulte [depurar aplicativos UWP no Visual Studio](../debugger/debugging-windows-store-and-windows-universal-apps.md).
 
 ## <a name="get-help"></a>Obter ajuda
 

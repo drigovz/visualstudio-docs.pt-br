@@ -1,7 +1,7 @@
 ---
 title: Criar uma instalação baseada em rede
 description: Saiba como criar um ponto de instalação de rede para implantar o Visual Studio em uma empresa.
-ms.date: 10/11/2019
+ms.date: 10/29/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: fcc4a3d3d99deab62971c40b26c9a4252367438f
-ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
+ms.openlocfilehash: ca393af528abc7f685ceca83ac4c59ebb75dedfe
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72516328"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189496"
 ---
 # <a name="create-a-network-installation-of-visual-studio"></a>Criar uma instalação de rede do Visual Studio
 
@@ -88,8 +88,9 @@ Outros bootstrapper com suporte incluem [vs_teamexplorer. exe](https://aka.ms/vs
 
 ## <a name="modify-the-responsejson-file"></a>Modificar o arquivo response.json
 
-Você pode modificar response.json para definir valores padrão que serão usados quando a instalação for executada.  Por exemplo, você pode configurar o arquivo `response.json` para selecionar um conjunto específico de cargas de trabalho selecionadas automaticamente.
-Confira [Automatizar a instalação do Visual Studio com um arquivo de resposta](automated-installation-with-response-file.md) para obter detalhes.
+Você pode modificar response.json para definir valores padrão que serão usados quando a instalação for executada.  Por exemplo, você pode configurar o arquivo `response.json` para selecionar um conjunto específico de cargas de trabalho selecionadas automaticamente. Confira [Automatizar a instalação do Visual Studio com um arquivo de resposta](automated-installation-with-response-file.md) para obter detalhes.
+
+E, se você encontrar um problema com o bootstrapper do Visual Studio gerando um erro ao emparelhar com um arquivo Response. JSON, consulte a seção "falha ao analisar a ID do processo pai" de [solucionar erros relacionados à rede ao instalar ou usar o Visual ](troubleshooting-network-related-errors-in-visual-studio.md#error-failed-to-parse-id-from-parent-process)Página do estúdio para obter mais informações sobre o que fazer.
 
 ## <a name="copy-the-layout-to-a-network-share"></a>Copiar o layout para um compartilhamento de rede
 
@@ -219,7 +220,7 @@ Os administradores podem implantar o Visual Studio em estações de trabalho cli
 
 > [!IMPORTANT]
 > Para evitar um erro, verifique se o caminho de instalação completo tem menos do que 80 caracteres.
->
+
 > [!TIP]
 > Quando executada como parte de um arquivo em lotes, a opção `--wait` garante que o processo `vs_enterprise.exe` aguarde até que a instalação seja concluída antes de ela retornar um código de saída.
 >
@@ -287,6 +288,7 @@ Também temos outras opções de suporte disponíveis. Para obter uma lista, con
 
 - [Guia do administrador do Visual Studio](visual-studio-administrator-guide.md)
 - [Atualizar uma instalação em rede do Visual Studio](update-a-network-installation-of-visual-studio.md)
+- [Solucionar erros relacionados à rede ao instalar ou usar o Visual Studio](troubleshooting-network-related-errors-in-visual-studio.md)
 - [Atualizações de controle para implantações do Visual Studio com base em rede](controlling-updates-to-visual-studio-deployments.md)
 - [Ciclo de vida e manutenção do produto Visual Studio](/visualstudio/releases/2019/servicing/)
 - [Atualizar o Visual Studio enquanto estiver em uma linha de base de manutenção](update-servicing-baseline.md)

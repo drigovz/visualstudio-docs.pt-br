@@ -27,12 +27,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bb84da1c75da968f9f89417cc48deec5310bc270
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: f4cb60f4d378daab829713cb4bbbb670ef8ed25a
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72738049"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188341"
 ---
 # <a name="debugging-web-applications-errors-and-troubleshooting"></a>Depurando aplicativos Web: erros e solução de problemas
 Você pode descobrir os seguintes erros ao tentar depurar aplicativos Web.
@@ -57,4 +57,4 @@ Você pode descobrir os seguintes erros ao tentar depurar aplicativos Web.
 
 ## <a name="see-also"></a>Consulte também
 - [Segurança do depurador](../debugger/debugger-security.md)
-- [Depurando aplicativos Web e script](/visualstudio/debugger/how-to-enable-debugging-for-aspnet-applications)
+- [Depurando aplicativos Web e script](how-to-enable-debugging-for-aspnet-applications.md)

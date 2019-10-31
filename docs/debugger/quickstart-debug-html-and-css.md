@@ -17,12 +17,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - uwp
-ms.openlocfilehash: 52235ab4770f5267de8507ff67fcda0aa1370392
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 12f66658cd8069f58355a96b2c3b3031a4cb6808
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72730560"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73187572"
 ---
 # <a name="debug-html-and-css-in-uwp-apps-in-visual-studio"></a>Depurar HTML e CSS em aplicativos UWP no Visual Studio
 
@@ -30,7 +30,7 @@ Para aplicativos JavaScript, o Visual Studio fornece uma experiência de depura�
 
 Com o uso do modelo de depuração interativo fornecido pelas ferramentas de inspeção do DOM, você pode ver e modificar o código HTML e CSS renderizado. Você pode fazer tudo isso sem parar e reiniciar o depurador.
 
-Para obter informações sobre outros recursos de depuração de JavaScript, como usar a janela do console do JavaScript e definir pontos de interrupção, consulte [início rápido: Depurar JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md) e [depurar aplicativos no Visual Studio](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps).
+Para obter informações sobre outros recursos de depuração de JavaScript, como usar a janela do console do JavaScript e definir pontos de interrupção, consulte [início rápido: Depurar JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md) e [depurar aplicativos no Visual Studio](debugging-windows-store-and-windows-universal-apps.md).
 
 ## <a name="InspectingDOM"></a> Inspecionando o DOM ativo
 O Explorador de DOMs mostra a página renderizada, e você pode usá-lo para alterar valores e imediatamente ver os resultados. Isso permite que você teste as mudanças sem parar e reiniciar o depurador. O código-fonte em seu projeto não muda quando você interage com a página usando esse método; então, quando você encontra as correções de código desejadas, você faz as mudanças no seu código-fonte.
@@ -182,7 +182,7 @@ No procedimento a seguir, avançaremos pelo processo de depurar interativamente 
 14. Na janela principal, clique duas vezes em `width: 100px;height: 100px;`, pressione a tecla **delete** e pressione **Enter**. Depois de pressionar Enter, os novos valores são refletidos imediatamente no aplicativo, embora você não tenha parado a sessão de depuração.
 
     > [!IMPORTANT]
-    > Assim como você pode atualizar atributos na janela do Explorador do DOM, também pode atualizar os valores exibidos nas guias **Estilos**, **Computado** e **Layout**. Para obter mais informações, consulte [depurar estilos CSS usando o explorador do dom](../debugger/debug-css-styles-using-dom-explorer.md) e o layout de [depuração usando o explorador do dom](../debugger/debug-layout-using-dom-explorer.md).
+    > Assim como você pode atualizar atributos na janela do Explorador do DOM, também pode atualizar os valores exibidos nas guias **Estilos**, **Computado** e **Layout**. Para obter mais informações, consulte [depurar estilos CSS usando o explorador do dom](../debugger/debug-css-styles-using-dom-explorer.md) e o layout de [depuração usando o explorador do dom](quickstart-debug-html-and-css.md).
 
 15. Alterne para o aplicativo selecionando-o ou usando ALT + TAB.
 
@@ -255,7 +255,7 @@ Você pode selecionar elementos DOM de três maneiras ao depurar um aplicativo:
 > Realçar elementos ao focalizá-los só tem suporte parcial no Emulador do Windows Phone.
 
 ## <a name="see-also"></a>Consulte também
-- [Depurar aplicativos no Visual Studio](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)
+- [Depurar aplicativos no Visual Studio](debugging-windows-store-and-windows-universal-apps.md)
 - [Atualizar um aplicativo (JavaScript)](../debugger/refresh-an-app-javascript.md)
 - [Depurar um controle WebView](../debugger/debug-a-webview-control.md)
 - [Atalhos de teclado](../debugger/keyboard-shortcuts-html-and-javascript.md?view=vs-2017)

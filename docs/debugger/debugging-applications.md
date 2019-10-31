@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 159f641b1ae5d05233e997d8dc41513a484eae75
-ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
+ms.openlocfilehash: baa028029081ee1c9c88b75aac416b634632b21a
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72018793"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188375"
 ---
 # <a name="debugging-applications"></a>Depurando aplicativos
 As seções a seguir lidam com a depuração de tipos específicos de aplicativos. Diferentes tipos de aplicativos e linguagens diferentes exigem configurações e técnicas diferentes e apresentam diferentes problemas que precisam ser depurados.
@@ -31,7 +31,7 @@ As seções a seguir lidam com a depuração de tipos específicos de aplicativo
 |[Depurar código gerenciado](../debugger/debugging-managed-code.md)|Descreve como depurar código gerenciado (Visual C#, Visual Basic, F#e C++/CLI).|
 |[Depurar código nativo](../debugger/debugging-native-code.md)|Descreve como depurar diferentes tipos de aplicativos nativos C++ .|
 |[Depurar o código GPU](../debugger/debugging-gpu-code.md)|Descreve como depurar C++ o código que é executado na GPU (unidade de processamento gráfico).|
-|[Diagnóstico de gráficos (depuração de gráficos DirectX)](/visualstudio/debugger/graphics/visual-studio-graphics-diagnostics)|Descreve como depurar elementos gráficos do DirectX.|
+|[Diagnóstico de gráficos (depuração de gráficos DirectX)](graphics/visual-studio-graphics-diagnostics.md)|Descreve como depurar elementos gráficos do DirectX.|
 |[Depurar aplicativos ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md)|Descreve como depurar aplicativos ASP.NET.|
 |[Depurar código Python](../python/tutorial-working-with-python-in-visual-studio-step-04-debugging.md)|Descreve como depurar o código Python|
 |[Depurar aplicativos JavaScript e TypeScript](../javascript/debug-nodejs.md)|Descreve como depurar aplicativos JavaScript, TypeScript e node. js|

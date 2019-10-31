@@ -11,12 +11,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e406fb5ba9f221fa22faadfecaa8f0baaefebf75
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 1c8be1cff099a713413957cfa5f8b3f383ca4bae
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72727339"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73186338"
 ---
 # <a name="ide-defined-commands-for-extending-project-systems"></a>Comandos definidos pelo IDE para estender sistemas de projeto
 Quando você deseja estender sistemas de projeto, você pode usar comandos e grupos de comandos fornecidos pelo [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE.
@@ -70,6 +70,6 @@ Quando você deseja estender sistemas de projeto, você pode usar comandos e gru
 |IDG_VS_CTXT_PROJECT_PROPERTIES|Comandos que fornecem acesso à caixa de diálogo **Propriedades do projeto** .|
 
 ## <a name="see-also"></a>Consulte também
+
 - [Como os VSPackages adicionam elementos da interface do usuário](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)
-- [MenuCommands vs. OleMenuCommands](../../extensibility/menucommands-vs-olemenucommands.md)
 - [Criar grupos reutilizáveis de botões](../../extensibility/creating-reusable-groups-of-buttons.md)

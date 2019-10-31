@@ -8,12 +8,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: jillre
-ms.openlocfilehash: b5ea5034f5967b5ba94b57746fd30bf7f1d750e6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8a2ad311c5ea9b992b8e68a8250433354ea48f01
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649927"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188912"
 ---
 # <a name="state-machine-activity-designers"></a>Designer de atividade do computador de estado
 
@@ -35,7 +35,7 @@ O Designer de Fluxo de Trabalho inclui vários designers de atividade que você 
 
  [Fluxograma](../workflow-designer/flowchart-activity-designers.md)
 
- [Usando os designers de atividade](../workflow-designer/using-the-activity-designers.md)
+ [Usando os designers de atividade](control-flow-activity-designers.md)
 
  [Mensagens](../workflow-designer/messaging-activity-designers.md)
 
@@ -45,6 +45,6 @@ O Designer de Fluxo de Trabalho inclui vários designers de atividade que você 
 
  [Transação](../workflow-designer/transaction-activity-designers.md)
 
- [Coleção](../workflow-designer/collection-activity-designers.md)
+ [Coleta](../workflow-designer/collection-activity-designers.md)
 
  [Tratamento de erro](../workflow-designer/error-handling-activity-designers.md)

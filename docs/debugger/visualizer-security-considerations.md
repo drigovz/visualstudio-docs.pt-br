@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d53df0bc83e2068488c8a7c919f8b76258ad827
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: c1c18ec84a6a62da6cd564c69ef4b83ea76bcfd6
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72728379"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73187154"
 ---
 # <a name="visualizer-security-considerations"></a>Considerações de segurança do visualizador
 Gravar um Visualizador envolve possíveis ameaças de segurança. Nenhuma exploração conhecida existe no momento para essas ameaças potenciais, mas os desenvolvedores devem estar atentos a elas e tomar as precauções apropriadas de segurança, conforme descrito aqui, para se proteger contra futuras explorações.
@@ -39,6 +39,6 @@ Gravar um Visualizador envolve possíveis ameaças de segurança. Nenhuma explor
 
 ## <a name="see-also"></a>Consulte também
 - [Arquitetura do visualizador](../debugger/visualizer-architecture.md)
-- [Como escrever um visualizador](/visualstudio/debugger/create-custom-visualizers-of-data)
+- [Como escrever um visualizador](create-custom-visualizers-of-data.md)
 - [Criar visualizadores personalizados](../debugger/create-custom-visualizers-of-data.md)
 - [Exibindo dados no depurador](../debugger/viewing-data-in-the-debugger.md)

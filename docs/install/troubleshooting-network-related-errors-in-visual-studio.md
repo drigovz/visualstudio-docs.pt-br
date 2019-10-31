@@ -1,7 +1,7 @@
 ---
 title: Solução de erros relacionados à rede ou ao proxy
 description: Encontre soluções para erros relacionados à rede ou ao proxy que você pode encontrar ao instalar ou usar o Visual Studio por trás de um firewall ou um servidor proxy.
-ms.date: 05/22/2019
+ms.date: 10/29/2019
 ms.topic: troubleshooting
 helpviewer_keywords:
 - network installation, Visual Studio
@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 7879efca149c31fbe3114b0ddfcba2f2a347f5e6
-ms.sourcegitcommit: 2db01751deeee7b2bdb1db25419ea6706e6fcdf8
+ms.openlocfilehash: fbdacb265d39c9aff96fed37c69c684aa3f8503b
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71062783"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189471"
 ---
 # <a name="troubleshoot-network-related-errors-when-you-install-or-use-visual-studio"></a>Solucionar erros relacionados à rede ao instalar ou usar o Visual Studio
 
@@ -92,11 +92,11 @@ Esse erro geralmente ocorre quando os usuários estão conectados à Internet po
 
 ::: moniker-end
 
-## <a name="error-the-underlying-connection-was-closed"></a>Erro: “A conexão subjacente foi fechada”
+## <a name="error-the-underlying-connection-was-closed"></a>Erro: “A conexão subjacente estava fechada”
 
 Se você estiver usando o Visual Studio em uma rede privada que tem um firewall, o Visual Studio poderá não ser capaz de se conectar a alguns recursos da rede. Esses recursos podem incluir o Azure DevOps Services para conexão e licenciamento, o NuGet e os serviços do Azure. Se o Visual Studio falhar ao se conectar a um desses recursos, você deverá ver a seguinte mensagem de erro:
 
-  **A conexão subjacente foi fechada: Erro inesperado no envio**
+  **A conexão subjacente estava fechada: Ocorreu um erro inesperado no envio**
 
 O Visual Studio usa o TLS (protocolo TLS) 1.2 para se conectar aos recursos de rede. Os dispositivos de segurança de algumas redes privadas bloqueiam determinadas conexões de servidor quando o Visual Studio usa o protocolo TLS 1.2.
 
@@ -132,6 +132,19 @@ Habilite as conexões para as seguintes URLs:
 
   > [!NOTE]
   > As URLs de servidor NuGet privadas podem não estar incluídas nesta lista. Você pode verificar os servidores NuGet que estamos usando em %APPData%\Nuget\NuGet.Config.
+
+## <a name="error-failed-to-parse-id-from-parent-process"></a>Erro: "falha ao analisar a ID do processo pai"
+
+Você pode encontrar essa mensagem de erro ao usar um bootstrapper do Visual Studio e um arquivo Response. JSON em uma unidade de rede. A origem do erro é o controle de conta de usuário (UAC) no Windows.
+
+Aqui está o motivo pelo qual esse erro pode ocorrer: uma unidade de rede mapeada ou um compartilhamento [UNC](/dotnet/standard/io/file-patch-formats#unc-paths) está vinculado ao token de acesso do usuário. Quando o UAC está habilitado, dois [tokens de acesso](/windows/win32/secauthz/access-tokens) de usuário são criados: um *com* acesso de administrador e outro *sem* acesso de administrador. Quando a unidade de rede ou o compartilhamento é criado, o token de acesso atual do usuário é vinculado a ele. Como o bootstrapper deve ser executado como administrador, ele não poderá acessar a unidade de rede ou compartilhar se a unidade ou o compartilhamento não estiver vinculado a um token de acesso de usuário que tenha acesso de administrador.
+
+### <a name="to-fix-this-error"></a>Para corrigir esse erro
+
+Você pode usar o comando `net use` ou pode alterar a configuração de Política de Grupo do UAC. Para obter mais informações sobre essas soluções alternativas e como implementá-las, consulte os seguintes artigos de suporte da Microsoft:
+
+* [Unidades mapeadas não estão disponíveis em um prompt com privilégios elevados quando o UAC está configurado para "solicitar credenciais" no Windows](https://support.microsoft.com/help/3035277/mapped-drives-are-not-available-from-an-elevated-prompt-when-uac-is-co)
+* [Os programas podem não conseguir acessar alguns locais de rede depois de ativar o controle de conta de usuário em sistemas operacionais Windows](https://support.microsoft.com/en-us/help/937624/programs-may-be-unable-to-access-some-network-locations-after-you-turn)
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

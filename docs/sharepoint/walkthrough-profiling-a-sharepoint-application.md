@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d001edcd281a0c21d244704f0a068850804b8762
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 4d3afc8ff48355c74544edf123689495bfde1302
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72981152"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189129"
 ---
 # <a name="walkthrough-profile-a-sharepoint-application"></a>Walkthrough: criar perfil de um aplicativo do SharePoint
   Este tutorial mostra como usar as ferramentas de criação de perfil no Visual Studio para otimizar o desempenho de um aplicativo do SharePoint. O aplicativo de exemplo é um receptor de evento de recurso do SharePoint que contém um loop ocioso que degrada o desempenho do receptor de evento de recurso. O criador de perfil do Visual Studio permite que você localize e elimine a parte mais cara (com desempenho mais lento) do projeto, também conhecida como o *caminho quente*.
@@ -197,7 +197,7 @@ ms.locfileid: "72981152"
 
 2. Na página um do **Assistente de desempenho**, deixe o método de criação de perfil como **amostragem de CPU** e escolha o botão **Avançar** .
 
-     Os outros métodos de criação de perfil podem ser usados em situações de criação de perfil mais avançadas. Para obter mais informações, consulte [Noções Básicas sobre Métodos de Coleta de Desempenho](/visualstudio/profiling/understanding-performance-collection-methods).
+     Os outros métodos de criação de perfil podem ser usados em situações de criação de perfil mais avançadas. Para obter mais informações, consulte [Noções Básicas sobre Métodos de Coleta de Desempenho](../profiling/understanding-performance-collection-methods.md).
 
 3. Na página dois do **Assistente de desempenho**, deixe o destino do perfil como **ProfileTest** e escolha o botão **Avançar** .
 
@@ -273,7 +273,7 @@ ms.locfileid: "72981152"
      O recurso deve ser ativado muito mais rapidamente agora que a chamada para o loop ocioso foi eliminada. O relatório de criação de perfil de exemplo deve refletir isso.
 
 ## <a name="see-also"></a>Consulte também
-- [Gerenciador de Desempenho](/visualstudio/profiling/performance-explorer)
-- [Visão geral da sessão de desempenho](/visualstudio/profiling/performance-session-overview)
-- [Guia do iniciante à criação de perfil de desempenho](/visualstudio/profiling/beginners-guide-to-performance-profiling)
+- [Gerenciador de Desempenho](../profiling/performance-explorer.md)
+- [Visão geral da sessão de desempenho](../profiling/performance-session-overview.md)
+- [Guia do iniciante à criação de perfil de desempenho](../profiling/beginners-guide-to-performance-profiling.md)
 - [Encontre afunilamentos de aplicativos com o criador de perfil do Visual Studio](https://msdn.microsoft.com/magazine/cc337887.aspx)

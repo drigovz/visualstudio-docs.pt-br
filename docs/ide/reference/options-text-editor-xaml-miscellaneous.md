@@ -28,12 +28,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 242daf82d405af4b3a1e529633fb82651aa6bdc9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 693e0d206455c2c430f8d723f131868fdf21eefc
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666631"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189561"
 ---
 # <a name="options-text-editor-xaml-miscellaneous"></a>Opções, Editor de texto, XAML, Diversos
 
@@ -52,7 +52,7 @@ Use essa configuração para controlar quando marcas e aspas são geradas automa
 
 ## <a name="errors-and-warnings"></a>Erros e Avisos
 
-Use essa configuração para controlar quando os erros e avisos são gerados automaticamente. Para obter mais informações, confira [Avisos e erros de XAML](../../designers/xaml-errors-warnings.md).
+Use essa configuração para controlar quando os erros e avisos são gerados automaticamente. Para obter mais informações, confira [Avisos e erros de XAML](../../xaml-tools/xaml-errors-warnings.md).
 
 ## <a name="see-also"></a>Consulte também
 

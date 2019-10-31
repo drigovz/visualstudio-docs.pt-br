@@ -11,15 +11,15 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2ae53481b773cfdad5d4ac70f90202fcfd9d1ad4
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 34fddd6513aad612398c700b935c6d1d3ee72b59
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66334317"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73186267"
 ---
 # <a name="register-a-tool-window"></a>Registrar uma janela de ferramentas
-Você pode registrar suas janelas de ferramenta usando <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> e <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowVisibilityAttribute>.
+Você pode registrar suas janelas de ferramentas usando <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> e <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowVisibilityAttribute>.
 
 ## <a name="example"></a>Exemplo
 
@@ -35,4 +35,4 @@ public class PackageToolWindow : Package
 {
 ```
 
- No código acima, o <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> registra o `PersistedWindowPane` e `DynamicWindowPane` janelas com o Visual Studio. A janela da ferramenta persistente é encaixada e com guias com **Gerenciador de soluções**, e a janela dinâmica é dada uma posição inicial e o tamanho de padrão. A janela dinâmica é feita transitória, que indica que ela não será criada na inicialização. Grava uma `DontForceCreate` o valor de `ToolWindows` chave no registro do sistema. Para obter mais informações, consulte [configuração de exibição da janela de ferramenta](../extensibility/tool-window-display-configuration.md).
+ No código acima, o <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> registra as janelas de ferramentas `PersistedWindowPane` e `DynamicWindowPane` com o Visual Studio. A janela de ferramentas persistentes é encaixada e tabulada com **Gerenciador de soluções**, e a janela dinâmica recebe uma posição inicial e um tamanho padrão. A janela dinâmica torna-se transitória, o que indica que ela não é criada na inicialização. Isso grava um valor de `DontForceCreate` na chave de `ToolWindows` no registro do sistema. Para obter mais informações, consulte [configuração de exibição da janela de ferramentas](/visualstudio/extensibility/tool-window-display-configuration?view=vs-2015).

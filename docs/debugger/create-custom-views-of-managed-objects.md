@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 196ba13b95245b8c42e6d946572665792f71346d
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: f5247a56667f5715d9f155c662eb333967878d71
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72745637"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188641"
 ---
 # <a name="create-custom-views-of-managed-objects-c-visual-basic-f-ccli"></a>Criar exibições personalizadas de objetos gerenciados (C#, F#Visual Basic C++,,/CLI)
 Você pode personalizar o modo como o Visual Studio exibe tipos de dados nas janelas variáveis do depurador.
@@ -41,10 +41,10 @@ No código .NET Framework 2,0, Visual Basic não oferece suporte ao atributo Deb
 
 ## <a name="visualizers"></a>Visualizadores
 
-Você pode escrever um visualizador para exibir qualquer tipo de dados gerenciados. Para obter mais informações, consulte [How to: Write a Visualizer](/visualstudio/debugger/create-custom-visualizers-of-data).
+Você pode escrever um visualizador para exibir qualquer tipo de dados gerenciados. Para obter mais informações, consulte [How to: Write a Visualizer](create-custom-visualizers-of-data.md).
 
 > [!NOTE]
-> Para C++ o código, você pode adicionar expansões de tipo de dados personalizadas usando a estrutura Natvis, conforme descrito em [criar exibições personalizadas de C++ objetos no depurador](/visualstudio/debugger/create-custom-views-of-native-objects).
+> Para C++ o código, você pode adicionar expansões de tipo de dados personalizadas usando a estrutura Natvis, conforme descrito em [criar exibições personalizadas de C++ objetos no depurador](create-custom-views-of-native-objects.md).
 
 ## <a name="see-also"></a>Consulte também
 

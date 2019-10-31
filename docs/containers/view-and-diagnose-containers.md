@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.date: 10/16/2019
 ms.technology: vs-azure
 monikerRange: vs-2019
-ms.openlocfilehash: a398adf047ebfe2e76ed91da72513eb7646c36c3
-ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
+ms.openlocfilehash: 355a08b2ff322226d347d999f4ec8a9ebb7ba5fc
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72535640"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188728"
 ---
 # <a name="how-to-view-and-diagnose-containers-and-images-in-visual-studio"></a>Como exibir e diagnosticar contêineres e imagens no Visual Studio
 
@@ -32,7 +32,7 @@ A janela **contêineres** é aberta automaticamente quando você inicia um proje
 No lado esquerdo, você verá a lista de contêineres em seu computador local. Os contêineres associados à sua solução são mostrados em **contêineres de solução**. À direita, você vê um painel com guias de **ambiente**, **portas**, **logs**e **arquivos**.
 
 > [!TIP]
-> Você pode personalizar facilmente onde a janela de ferramenta **contêineres** está encaixada no Visual Studio. Consulte [Personalizando layouts de janela no Visual Studio](/visualstudio/ide/customizing-window-layouts-in-visual-studio). Por padrão, a janela **contêineres** é encaixada com a janela **Watch** quando o depurador está em execução.
+> Você pode personalizar facilmente onde a janela de ferramenta **contêineres** está encaixada no Visual Studio. Consulte [Personalizando layouts de janela no Visual Studio](../ide/customizing-window-layouts-in-visual-studio.md). Por padrão, a janela **contêineres** é encaixada com a janela **Watch** quando o depurador está em execução.
 
 ## <a name="view-environment-variables"></a>Exibir variáveis de ambiente
 

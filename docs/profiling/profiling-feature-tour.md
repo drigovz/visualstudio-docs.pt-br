@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c78c56d00f087bdef7733ee1ef2cbf90afd9638
-ms.sourcegitcommit: bdccab4c2dbd50ea8adaaf88c69c9ca32db88099
-ms.translationtype: HT
+ms.openlocfilehash: 9cc8ab1ac26f4aa01342d9949243772edd3de91f
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73144765"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189416"
 ---
 # <a name="quickstart-first-look-at-profiling-tools"></a>Início rápido: primeiro olhar sobre ferramentas de criação de perfil
 
@@ -111,7 +111,7 @@ Para obter mais informações, consulte [Linha do Tempo do Aplicativo](../profil
 
 ## <a name="analyze-gpu-usage-direct3d"></a>Analise o uso de GPU (Direct3D)
 
-Em aplicativos Direct3D (os componentes Direct3D devem estar no C++), é possível examinar a atividade na GPU e analisar problemas de desempenho. Para obter mais informações, consulte [Uso da GPU](../debugger/gpu-usage.md). Para usar a ferramenta, escolha **Uso da GPU** no Criador de Perfil de Desempenho e, em seguida, escolha **Iniciar**. No aplicativo, percorra o cenário de interesse na criação de perfil e, em seguida, escolha **Parar coleta** para gerar um relatório.
+Em aplicativos Direct3D (os componentes Direct3D devem estar no C++), é possível examinar a atividade na GPU e analisar problemas de desempenho. Para obter mais informações, consulte [Uso da GPU](/visualstudio/debugger/graphics/gpu-usage). Para usar a ferramenta, escolha **Uso da GPU** no Criador de Perfil de Desempenho e, em seguida, escolha **Iniciar**. No aplicativo, percorra o cenário de interesse na criação de perfil e, em seguida, escolha **Parar coleta** para gerar um relatório.
 
 Ao selecionar um período nos gráficos e escolher **Exibir detalhes**, uma exibição detalhada será exibida no painel inferior. Na exibição detalhada, é possível examinar as atividades que estão ocorrendo em cada CPU e GPU. Selecione eventos no painel inferior para obter pop-ups na linha do tempo. Por exemplo, selecione o eventos **Presente** para exibir pop-ups da chamada **Presente**. (As linhas verticais Vsync cinza-claras podem ser usadas como referência para entender se algumas chamadas **Presente** não têm Vsync. Deve haver uma chamada **Presente** entre cada dois Vsyncs para que o aplicativo atinja progressivamente 60 FPS.)
 
@@ -162,7 +162,7 @@ Eis aqui uma tabela que lista as diferentes ferramentas que o Visual Studio ofer
 |----------------------|---------------------|-------------|-------------|
 |[Uso da CPU](../profiling/cpu-usage.md)|sim|sim|sim|
 |[Uso de Memória](../profiling/memory-usage.md)|sim|sim|sim|
-|[Uso de GPU](../debugger/gpu-usage.md)|sim|sim|no|
+|[Uso de GPU](/visualstudio/debugger/graphics/gpu-usage)|sim|sim|no|
 |[Linha do tempo do aplicativo](../profiling/application-timeline.md)|sim|sim|no|
 |[PerfTips](../profiling/perftips.md)|sim|sim para XAML, não para HTML|sim|
 |[Gerenciador de Desempenho](../profiling/performance-explorer.md)|sim|no|sim|
@@ -174,7 +174,7 @@ Eis aqui uma tabela que lista as diferentes ferramentas que o Visual Studio ofer
 |----------------------|---------------------|-------------|-------------|
 |[Uso da CPU](../profiling/cpu-usage.md)|sim|sim|sim|
 |[Uso de Memória](../profiling/memory-usage.md)|sim|sim|sim|
-|[Uso de GPU](../debugger/gpu-usage.md)|sim|sim|no|
+|[Uso de GPU](/visualstudio/debugger/graphics/gpu-usage)|sim|sim|no|
 |[Linha do tempo do aplicativo](../profiling/application-timeline.md)|sim|sim|no|
 |[PerfTips](../profiling/perftips.md)|sim|sim para XAML, não para HTML|sim|
 |[Gerenciador de Desempenho](../profiling/performance-explorer.md)|sim|no|sim|
@@ -186,4 +186,4 @@ Eis aqui uma tabela que lista as diferentes ferramentas que o Visual Studio ofer
 
 
 ## <a name="see-also"></a>Consulte também
-- [Depurando no Visual Studio](/visualstudio/debugger/debugger-feature-tour)
+- [Depurando no Visual Studio](../debugger/debugger-feature-tour.md)

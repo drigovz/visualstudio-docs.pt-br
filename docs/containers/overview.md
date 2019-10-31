@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.topic: overview
 ms.date: 03/20/2019
 ms.technology: vs-azure
-ms.openlocfilehash: badb06b8c3eea5158054ba4c32f72e51dae0d60d
-ms.sourcegitcommit: bcdab788085bd9931d73883fe70cd5831317dca2
+ms.openlocfilehash: 19a6149e60e61cad347dda9bf8b2a75be7b1885d
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72816365"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188742"
 ---
 # <a name="container-tools-in-visual-studio"></a>Ferramentas de contêiner no Visual Studio
 
@@ -150,4 +150,4 @@ Para obter mais detalhes sobre os serviços de implementação e uso de ferramen
 
 [Depurando aplicativos em um contêiner local do Docker](vs-azure-tools-docker-edit-and-refresh.md)
 
-[Implantar um contêiner ASP.NET em um registro de contêiner usando o Visual Studio](vs-azure-tools-docker-hosting-web-apps-in-docker.md)
+[Implantar um contêiner ASP.NET em um registro de contêiner usando o Visual Studio](hosting-web-apps-in-docker.md)

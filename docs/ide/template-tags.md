@@ -13,12 +13,12 @@ helpviewer_keywords:
 - updating templates [Visual Studio]
 - template tagging, updating
 - template tags, updating
-ms.openlocfilehash: 417b171a731224302e6dd2efa55b45d84455ca4b
-ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
-ms.translationtype: HT
+ms.openlocfilehash: 37fa5449847eb4c093475df11a07decb31168f1f
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67891145"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189512"
 ---
 # <a name="add-tags-to-project-templates"></a>Adicionar marcas aos modelos de projeto
 
@@ -40,9 +40,9 @@ Você pode adicionar marcas ao atualizar o arquivo XML *.vstemplate*. Você pode
 
 Talvez você queira adicionar ou editar as marcas no XML *.vstemplate* do modelo de projeto ao executar uma das seguintes ações:
 
-* [Criar um novo modelo de projeto](/visualstudio/ide/how-to-create-project-templates) usando o Assistente para Exportar Modelo.
-* [Atualizar seu modelo de projeto existente](/visualstudio/ide/how-to-update-existing-templates).
-* [Criar um novo modelo de projeto do VSIX](/visualstudio/extensibility/getting-started-with-the-vsix-project-template).
+* [Criar um novo modelo de projeto](how-to-create-project-templates.md) usando o Assistente para Exportar Modelo.
+* [Atualizar seu modelo de projeto existente](how-to-update-existing-templates.md).
+* [Criar um novo modelo de projeto do VSIX](../extensibility/getting-started-with-the-vsix-project-template.md).
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -56,7 +56,7 @@ Talvez você queira adicionar ou editar as marcas no XML *.vstemplate* do modelo
 
 Você pode usar os seguintes atributos opcionais em cenários de usuário avançado:
 
-|Atributo|DESCRIÇÃO|
+|Atributo|Descrição|
 |---------------|-----------------|
 |`Package`|Um GUID que especifica a ID do pacote do Visual Studio.|
 |`ID`|Especifica a ID de recurso do Visual Studio.|
@@ -77,7 +77,7 @@ nenhuma.
 
 ### <a name="parent-elements"></a>Elementos pai
 
-|Elemento|DESCRIÇÃO|
+|Elemento|Descrição|
 |-------------|-----------------|
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|(Obrigatório) Classifica o modelo e define como ele é exibido na caixa de diálogo **Novo Projeto** ou na caixa de diálogo **Adicionar Novo Item**.|
 
@@ -147,7 +147,7 @@ O exemplo a seguir mostra os metadados para um modelo de projeto de um aplicativ
 
 ## <a name="see-also"></a>Consulte também
 
-- [Referência de esquema de modelo do Visual Studio](/visualstudio/extensibility/visual-studio-template-schema-reference)
-- [Criar modelos de projeto e de item](/visualstudio/ide/creating-project-and-item-templates)
-- [Personalizar modelos de item e projeto](/visualstudio/ide/customizing-project-and-item-templates)
-- [Introdução ao modelo de projeto do VSIX](/visualstudio/extensibility/getting-started-with-the-vsix-project-template)
+- [Referência de esquema de modelo do Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
+- [Criar modelos de projeto e de item](creating-project-and-item-templates.md)
+- [Personalizar modelos de item e projeto](customizing-project-and-item-templates.md)
+- [Introdução ao modelo de projeto do VSIX](../extensibility/getting-started-with-the-vsix-project-template.md)

@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 350f6d6d087ebef07ff3113b081f1742db7012c2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 545a77791d7bc5318dc17d869c510fb4e8a0787f
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62798392"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189351"
 ---
 # <a name="performance-session-overview"></a>Visão geral da sessão de desempenho
 Esta visão geral explica as noções básicas de criação de perfil. Desenvolvedores pouco familiarizados com o trabalho de desempenho verão como as Ferramentas de Criação de Perfil do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] podem ajudá-los a se tornarem rapidamente produtivos e a aumentar o desempenho do seu código. Desenvolvedores experientes na criação de perfis podem obter uma visão geral dos processos e recursos específicos das Ferramentas de Criação de Perfil.
@@ -75,4 +75,4 @@ Esta visão geral explica as noções básicas de criação de perfil. Desenvolv
 
 ## <a name="see-also"></a>Consulte também
 - [Visões gerais](../profiling/overviews-performance-tools.md)
-- [Passo a passo: Identificar problemas de desempenho](/visualstudio/profiling/beginners-guide-to-cpu-sampling)
+- [Passo a passo: identificar problemas de desempenho](beginners-guide-to-cpu-sampling.md)

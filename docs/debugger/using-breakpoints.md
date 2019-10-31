@@ -1,7 +1,7 @@
 ---
 title: Usar pontos de interrupção no depurador | Microsoft Docs
-ms.custom: seodec18
-ms.date: 10/15/2018
+ms.custom: ''
+ms.date: 10/28/2019
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.breakpointswin
@@ -34,33 +34,39 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 985369a052a8a7d00b55c45844562af9f0491cc2
-ms.sourcegitcommit: 4f82de3fb0cfae226aef1abb40c47e63d2036a5c
+ms.openlocfilehash: a6a8ee96834fc20186ba6719a7c4f377fea45d6b
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72919019"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73187314"
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>Usar pontos de interrupção no depurador do Visual Studio
 
-Os pontos de interrupção são uma das técnicas de depuração mais importantes na caixa de ferramentas do desenvolvedor. Você define pontos de interrupção onde quiser pausar a execução do depurador. Por exemplo, talvez você queira ver o estado das variáveis de código ou examinar a pilha de chamadas em um determinado ponto de interrupção. Se você souber a tarefa ou o problema que está tentando resolver, mas precisar saber qual tipo de ponto de interrupção usar, consulte [localizar sua tarefa de depuração](../debugger/find-your-debugging-task.md#pause-running-code). Se esta for sua primeira tentativa de depurar um código, leia [Como depurar para iniciantes absolutos](../debugger/debugging-absolute-beginners.md) antes continuar neste artigo. 
+Os pontos de interrupção são uma das técnicas de depuração mais importantes na caixa de ferramentas do desenvolvedor. Você define pontos de interrupção onde quiser pausar a execução do depurador. Por exemplo, talvez você queira ver o estado das variáveis de código ou examinar a pilha de chamadas em um determinado ponto de interrupção.  Se você estiver tentando resolver um aviso ou problema ao usar pontos de interrupção, consulte [solucionar problemas de pontos de interrupção no depurador do Visual Studio](../debugger/troubleshooting-breakpoints.md).
+
+> [!NOTE]
+> Se você souber a tarefa ou o problema que está tentando resolver, mas precisar saber qual tipo de ponto de interrupção usar, consulte [localizar sua tarefa de depuração](../debugger/find-your-debugging-task.md#pause-running-code).
 
 ## <a name="BKMK_Overview"></a>Definir pontos de interrupção no código-fonte
- Você pode definir um ponto de interrupção em qualquer linha de código executável. Por exemplo, no código a C# seguir, você pode definir um ponto de interrupção na declaração de variável, o loop de`for`ou qualquer código dentro do loop de`for`. Você não pode definir um ponto de interrupção nas declarações de namespace ou de classe ou na assinatura do método.
 
- Para definir um ponto de interrupção no código-fonte, clique na margem da extrema esquerda ao lado de uma linha de código. Você também pode selecionar a linha e pressionar **F9**, selecionar **depurar** > **Ativar/desativar ponto de interrupção**ou clicar com o botão direito do mouse e selecionar **ponto de interrupção** > **Inserir ponto de interrupção**. O ponto de interrupção aparece como vermelho na margem esquerda.
+Você pode definir um ponto de interrupção em qualquer linha de código executável. Por exemplo, no código a C# seguir, você pode definir um ponto de interrupção na declaração de variável, o loop de`for`ou qualquer código dentro do loop de`for`. Você não pode definir um ponto de interrupção nas declarações de namespace ou de classe ou na assinatura do método.
 
-No C# código, o ponto de interrupção e as linhas de execução atuais são realçados automaticamente. Para C++ o código, você pode ativar o realce do ponto de interrupção e das linhas atuais selecionando **ferramentas** (ou **depurar**) > **Opções** > **depuração** >  **realçar toda a linha de origem para pontos de interrupção e atual instrução (C++ somente)** .
+Para definir um ponto de interrupção no código-fonte, clique na margem da extrema esquerda ao lado de uma linha de código. Você também pode selecionar a linha e pressionar **F9**, selecionar **depurar** > **Ativar/desativar ponto de interrupção**ou clicar com o botão direito do mouse e selecionar **ponto de interrupção** > **Inserir ponto de interrupção**. O ponto de interrupção aparece como vermelho na margem esquerda.
 
- ![Definir um ponto de interrupção](../debugger/media/basicbreakpoint.png "Ponto de interrupção básico")
+Para a maioria dos C#idiomas, incluindo, o ponto de interrupção e as linhas de execução atuais são destacados automaticamente. Para C++ o código, você pode ativar o realce do ponto de interrupção e das linhas atuais selecionando **ferramentas** (ou **depurar**) > **Opções** > **depuração** >  **realçar toda a linha de origem para pontos de interrupção e atual instrução (C++ somente)** .
 
- Quando você depura, a execução pausa no ponto de interrupção, antes que o código nessa linha seja executado. O símbolo de ponto de interrupção mostra uma seta amarela.
+![Definir um ponto de interrupção](../debugger/media/basicbreakpoint.png "Ponto de interrupção básico")
 
- No ponto de interrupção no exemplo a seguir, o valor de `testInt` ainda é 1.
+Quando você depura, a execução pausa no ponto de interrupção, antes que o código nessa linha seja executado. O símbolo de ponto de interrupção mostra uma seta amarela.
 
- ![Execução de ponto de interrupção interrompida](../debugger/media/breakpointexecution.png "Execução de ponto de interrupção")
+No ponto de interrupção no exemplo a seguir, o valor de `testInt` ainda é 1. Portanto, o valor não foi alterado desde que a variável foi inicializada (definida como um valor de 1) porque a instrução em amarelo ainda não foi executada.
 
- Quando o depurador para o ponto de interrupção, você pode examinar o estado atual do aplicativo, incluindo valores de variáveis e a pilha de chamadas. Para obter mais informações sobre a pilha de chamadas, consulte [como: Use a janela Pilha de Chamadas](../debugger/how-to-use-the-call-stack-window.md).
+![Execução de ponto de interrupção interrompida](../debugger/media/breakpointexecution.png "Execução de ponto de interrupção")
+
+Quando o depurador para o ponto de interrupção, você pode examinar o estado atual do aplicativo, incluindo [valores de variáveis](../debugger/debugger-feature-tour.md#inspect-variables-with-data-tips) e a [pilha de chamadas](../debugger/how-to-use-the-call-stack-window.md).
+
+Aqui estão algumas instruções gerais para trabalhar com pontos de interrupção.
 
 - O ponto de interrupção é uma alternância. Você pode clicar nele, pressionar **F9**ou usar **debug** > **alternar ponto de interrupção** para excluí-lo ou reinseri-lo.
 
@@ -68,39 +74,99 @@ No C# código, o ponto de interrupção e as linhas de execução atuais são re
 
 - Defina condições e ações, adicione e edite rótulos ou exporte um ponto de interrupção clicando com o botão direito do mouse nele e selecionando o comando apropriado, ou passando o cursor sobre ele e selecionando o ícone de **configurações** .
 
-## <a name="BKMK_Set_a_breakpoint_from_debugger_windows"></a>Definir pontos de interrupção de janelas do depurador
+## <a name="BKMK_Print_to_the_Output_window_with_tracepoints"></a>Ações de ponto de interrupção e tracepoints
 
-Você também pode definir pontos de interrupção da **pilha de chamadas** e janelas do depurador de **desmontagem** .
+Um *tracepoint* é um ponto de interrupção que imprime uma mensagem na janela de **Saída**. Um tracepoint pode agir como uma instrução de rastreamento temporária na linguagem de programação e não pausa a execução do código. Você cria um tracepoint definindo uma ação especial na janela **configurações de ponto de interrupção** . Para obter instruções detalhadas, consulte [usar tracepoints no depurador do Visual Studio](../debugger/using-tracepoints.md).
 
-### <a name="set-a-breakpoint-in-the-call-stack-window"></a>Definir um ponto de interrupção na janela pilha de chamadas
+## <a name="breakpoint-conditions"></a>Condições de ponto de interrupção
 
- Para interromper a instrução ou a linha para a qual uma função de chamada retorna, você pode definir um ponto de interrupção na janela **pilha de chamadas** .
+Você pode controlar quando e onde um ponto de interrupção é executado definindo condições. A condição pode ser qualquer expressão válida que o depurador reconheça. Para obter mais informações sobre expressões válidas, confira [Expressões no depurador](../debugger/expressions-in-the-debugger.md).
 
-**Para definir um ponto de interrupção na janela pilha de chamadas:**
+**Para definir uma condição de ponto de interrupção:**
 
-1. Para abrir a janela **pilha de chamadas** , você deve estar em pausa durante a depuração. Selecione **depurar** > pilha de **chamadas**do **Windows** > ou **pressione CTRL**+**ALT**+**C**.
+1. Clique com o botão direito do mouse no símbolo do ponto de interrupção e selecione **condições**. Ou passe o mouse sobre o símbolo de ponto de interrupção, selecione o ícone **configurações** e, em seguida, selecione **condições** na janela **configurações de ponto de interrupção** .
 
-2. Na janela **pilha de chamadas** , clique com o botão direito do mouse na função de chamada e selecione **ponto de interrupção** > **Inserir ponto de interrupção**ou pressione **F9**.
+   Você também pode definir condições na janela **pontos de interrupção** clicando com o botão direito do mouse em um ponto de interrupção e selecionando **configurações**e, em seguida, selecionando **condições**.
 
-   Um símbolo de ponto de interrupção aparece ao lado do nome de chamada de função na margem esquerda da pilha de chamadas.
+   ![Configurações de ponto de interrupção](../debugger/media/breakpointsettings.png "BreakpointSettings")
 
-O ponto de interrupção da pilha de chamadas aparece na janela **pontos de interrupção** como um endereço, com um local de memória que corresponde à próxima instrução executável na função.
+2. Na lista suspensa, selecione **expressão condicional**, **contagem de acesso**ou **filtro**e defina o valor de acordo.
 
-O depurador é interrompido na instrução.
+3. Selecione **fechar** ou pressione **Ctrl**+**Enter** para fechar a janela **configurações de ponto de interrupção** . Ou, na janela **pontos de interrupção** , selecione **OK** para fechar a caixa de diálogo.
 
-Para obter mais informações sobre a pilha de chamadas, consulte [como: Use a janela Pilha de Chamadas](../debugger/how-to-use-the-call-stack-window.md).
+Os pontos de interrupção com condições definidas aparecem com um símbolo de **+** no código-fonte e as janelas de **pontos de interrupção** .
 
-Para rastrear visualmente pontos de interrupção durante a execução do código, consulte [mapear métodos na pilha de chamadas durante a depuração](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md).
+<a name="BKMK_Specify_a_breakpoint_condition_using_a_code_expression"></a>
+### <a name="create-a-conditional-expression"></a>Criar uma expressão condicional
 
-### <a name="set-a-breakpoint-in-the-disassembly-window"></a>Definir um ponto de interrupção na janela de desmontagem
+Quando você seleciona **expressão condicional**, pode escolher entre duas condições: **é verdadeiro** ou **quando alterado**. Escolha **é true** para quebrar quando a expressão for satisfeita ou **quando for alterada** para quebra quando o valor da expressão for alterado.
 
-1. Para abrir a janela de **desmontagem** , você deve estar em pausa durante a depuração. Selecione **depurar** > **desmontagem**de > do **Windows** ou pressione **ALT**+**8**.
+No exemplo a seguir, o ponto de interrupção é atingido somente quando o valor de `testInt` é **4**:
 
-2. Na janela **desmontagem** , clique na margem esquerda da instrução que você deseja interromper. Você também pode selecioná-lo e pressionar **F9**, ou clicar com o botão direito do mouse e selecionar **ponto de interrupção** > **Inserir ponto de interrupção**.
+![A condição de ponto de interrupção é verdadeira](../debugger/media/breakpointconditionistrue.png "Ponto de interrupção é verdadeiro")
+
+No exemplo a seguir, o ponto de interrupção é atingido somente quando o valor de `testInt` é alterado:
+
+![Ponto de interrupção quando alterado](../debugger/media/breakpointwhenchanged.png "Ponto de interrupção quando alterado")
+
+Se você definir uma condição de ponto de interrupção com sintaxe inválida, uma mensagem de aviso será exibida. Se você especificar uma condição de ponto de interrupção com sintaxe válida mas semântica inválida, uma mensagem de aviso aparecerá na primeira vez em que o ponto de interrupção for atingido. Em ambos os casos, o depurador é interrompido quando atinge o ponto de interrupção inválido. O ponto de interrupção será ignorado somente se a condição for válida e for avaliada como `false`.
+
+>[!NOTE]
+>O comportamento do campo **quando alterado** é diferente para linguagens de programação diferentes.
+>- Para código nativo, o depurador não considera a primeira avaliação da condição como uma alteração, portanto, não atinge o ponto de interrupção na primeira avaliação.
+>- Para código gerenciado, o depurador atinge o ponto de interrupção na primeira avaliação depois **que a alteração** é selecionada.
+
+<a name="using-object-ids-in-breakpoint-conditions-c-and-f"></a>
+### <a name="use-object-ids-in-conditional-expressions-c-and-f-only"></a>Usar IDs de objeto em expressõesC# condicionais F# (e somente)
+
+ Há ocasiões em que você deseja observar o comportamento de um objeto específico. Por exemplo, talvez você queira descobrir por que um objeto foi inserido em uma coleção mais de uma vez. No C# e F#no, você pode criar IDs de objeto para instâncias específicas de [tipos de referência](/dotnet/csharp/language-reference/keywords/reference-types)e usá-las em condições de ponto de interrupção. A ID de objeto é gerada pelos serviços de depuração de Common Language Runtime (CLR) e associada ao objeto.
+
+**Para criar uma ID de objeto:**
+
+1. Defina um ponto de interrupção no código em algum lugar depois que o objeto tiver sido criado.
+
+2. Inicie a depuração e, quando a execução pausa no ponto de interrupção, selecione **depurar** > **Windows** > **locais** ou **ALT**+**4** para abrir a janela **locais** .
+
+   Localize a instância de objeto específica na janela **locais** , clique com o botão direito do mouse nela e selecione **criar ID de objeto**.
+
+   Você deve ver um **$** mais um número na janela **locais** . Esta é a ID do objeto.
+
+3. Adicione um novo ponto de interrupção no momento que você deseja investigar; por exemplo, quando o objeto deve ser adicionado à coleção. Clique com o botão direito do mouse no ponto de interrupção e selecione **Condições**.
+
+4. Use a ID de objeto no campo **expressão condicional** . Por exemplo, se a variável `item` for o objeto a ser adicionado à coleção, selecione **é true** e digite **Item = = $\<n >** , em que \<n > é o número de ID de objeto.
+
+   A execução será interrompida no ponto em que o objeto deve ser adicionado à coleção.
+
+   Para excluir a ID de objeto, clique com o botão direito do mouse na variável na janela **locais** e selecione **excluir ID de objeto**.
+
+> [!NOTE]
+> As IDs de objeto criam referências fracas e não impedem que o objeto seja coletado como lixo. Eles são válidos somente para a sessão de depuração atual.
+
+### <a name="set-a-hit-count-condition"></a>Definir uma condição de contagem de acesso
+
+Se você suspeitar que um loop em seu código inicia o comportamento inadequado após um determinado número de iterações, você pode definir um ponto de interrupção para parar a execução após esse número de ocorrências, em vez de ter que pressionar **F5** repetidamente para alcançar essa iteração.
+
+Em **condições** na janela **configurações de ponto de interrupção** , selecione **contagem de acesso**e, em seguida, especifique o número de iterações. No exemplo a seguir, o ponto de interrupção é definido para atingir todas as outras iterações:
+
+![Contagem de acesso de ponto de interrupção](../debugger/media/breakpointhitcount.png "BreakpointHitCount")
+
+### <a name="set-a-filter-condition"></a>Definir uma condição de filtro
+
+Você pode restringir um ponto de interrupção para disparar somente em dispositivos especificados ou em processos e threads especificados.
+
+Em **condições** na janela **configurações de ponto de interrupção** , selecione **Filtrar**e, em seguida, insira uma ou mais das seguintes expressões:
+
+- MachineName = "nome"
+- ProcessId = valor
+- ProcessName = "nome"
+- ThreadId = valor
+- ThreadName = "nome"
+
+Coloque os valores da cadeia de caracteres entre aspas duplas. Você pode combinar cláusulas usando `&` (AND), `||` (ou), `!` (não) e parênteses.
 
 ## <a name="BKMK_Set_a_breakpoint_in_a_source_file"></a>Definir pontos de interrupção de função
 
-  Você pode interromper a execução quando uma função é chamada.
+Você pode interromper a execução quando uma função é chamada. Isso é útil, por exemplo, quando você sabe o nome da função, mas não sua localização. Ele também será útil se você tiver funções com o mesmo nome e quiser interromper todas elas (como funções ou funções sobrecarregadas em projetos diferentes).
 
 **Para definir um ponto de interrupção de função:**
 
@@ -223,112 +289,35 @@ Você pode usar rótulos para classificar e filtrar a lista de pontos de interru
 - Para exportar todos os pontos de interrupção, desmarque todas as caixas e deixe o campo de **pesquisa** em branco. Selecione o ícone **exportar todos os pontos de interrupção correspondentes aos critérios de pesquisa atuais** e salve o arquivo.
 - Para importar pontos de interrupção, na janela **pontos de interrupção** , selecione o ícone **importar pontos de interrupção de um arquivo** , navegue até o local do arquivo XML e selecione **abrir**.
 
-## <a name="breakpoint-conditions"></a>Condições de ponto de interrupção
- Você pode controlar quando e onde um ponto de interrupção é executado definindo condições. A condição pode ser qualquer expressão válida que o depurador reconheça. Para obter mais informações sobre expressões válidas, confira [Expressões no depurador](../debugger/expressions-in-the-debugger.md).
+## <a name="BKMK_Set_a_breakpoint_from_debugger_windows"></a>Definir pontos de interrupção de janelas do depurador
 
-**Para definir uma condição de ponto de interrupção:**
+Você também pode definir pontos de interrupção da **pilha de chamadas** e janelas do depurador de **desmontagem** .
 
-1. Clique com o botão direito do mouse no símbolo do ponto de interrupção e selecione **condições**. Ou passe o mouse sobre o símbolo de ponto de interrupção, selecione o ícone **configurações** e, em seguida, selecione **condições** na janela **configurações de ponto de interrupção** .
+### <a name="set-a-breakpoint-in-the-call-stack-window"></a>Definir um ponto de interrupção na janela pilha de chamadas
 
-   Você também pode definir condições na janela **pontos de interrupção** clicando com o botão direito do mouse em um ponto de interrupção e selecionando **configurações**e, em seguida, selecionando **condições**.
+ Para interromper a instrução ou a linha para a qual uma função de chamada retorna, você pode definir um ponto de interrupção na janela **pilha de chamadas** .
 
-   ![Configurações de ponto de interrupção](../debugger/media/breakpointsettings.png "BreakpointSettings")
+**Para definir um ponto de interrupção na janela pilha de chamadas:**
 
-2. Na lista suspensa, selecione **expressão condicional**, **contagem de acesso**ou **filtro**e defina o valor de acordo.
+1. Para abrir a janela **pilha de chamadas** , você deve estar em pausa durante a depuração. Selecione **depurar** > pilha de **chamadas**do **Windows** > ou **pressione CTRL**+**ALT**+**C**.
 
-3. Selecione **fechar** ou pressione **Ctrl**+**Enter** para fechar a janela **configurações de ponto de interrupção** . Ou, na janela **pontos de interrupção** , selecione **OK** para fechar a caixa de diálogo.
+2. Na janela **pilha de chamadas** , clique com o botão direito do mouse na função de chamada e selecione **ponto de interrupção** > **Inserir ponto de interrupção**ou pressione **F9**.
 
-Os pontos de interrupção com condições definidas aparecem com um símbolo de **+** no código-fonte e as janelas de **pontos de interrupção** .
+   Um símbolo de ponto de interrupção aparece ao lado do nome de chamada de função na margem esquerda da pilha de chamadas.
 
-<a name="BKMK_Specify_a_breakpoint_condition_using_a_code_expression"></a>
-### <a name="conditional-expression"></a>Expressão Condicional
+O ponto de interrupção da pilha de chamadas aparece na janela **pontos de interrupção** como um endereço, com um local de memória que corresponde à próxima instrução executável na função.
 
-Quando você seleciona **expressão condicional**, pode escolher entre duas condições: **é verdadeiro** ou **quando alterado**. Escolha **é true** para quebrar quando a expressão for satisfeita ou **quando for alterada** para quebra quando o valor da expressão for alterado.
+O depurador é interrompido na instrução.
 
- No exemplo a seguir, o ponto de interrupção é atingido somente quando o valor de `testInt` é **4**:
+Para obter mais informações sobre a pilha de chamadas, consulte [como: Use a janela Pilha de Chamadas](../debugger/how-to-use-the-call-stack-window.md).
 
- ![A condição de ponto de interrupção é verdadeira](../debugger/media/breakpointconditionistrue.png "Ponto de interrupção é verdadeiro")
+Para rastrear visualmente pontos de interrupção durante a execução do código, consulte [mapear métodos na pilha de chamadas durante a depuração](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md).
 
- No exemplo a seguir, o ponto de interrupção é atingido somente quando o valor de `testInt` é alterado:
+### <a name="set-a-breakpoint-in-the-disassembly-window"></a>Definir um ponto de interrupção na janela de desmontagem
 
- ![Ponto de interrupção quando alterado](../debugger/media/breakpointwhenchanged.png "Ponto de interrupção quando alterado")
+1. Para abrir a janela de **desmontagem** , você deve estar em pausa durante a depuração. Selecione **depurar** > **desmontagem**de > do **Windows** ou pressione **ALT**+**8**.
 
- Se você definir uma condição de ponto de interrupção com sintaxe inválida, uma mensagem de aviso será exibida. Se você especificar uma condição de ponto de interrupção com sintaxe válida mas semântica inválida, uma mensagem de aviso aparecerá na primeira vez em que o ponto de interrupção for atingido. Em ambos os casos, o depurador é interrompido quando atinge o ponto de interrupção inválido. O ponto de interrupção será ignorado somente se a condição for válida e for avaliada como `false`.
-
- >[!NOTE]
- >O comportamento do campo **quando alterado** é diferente para linguagens de programação diferentes.
- >- Para código nativo, o depurador não considera a primeira avaliação da condição como uma alteração, portanto, não atinge o ponto de interrupção na primeira avaliação.
- >- Para código gerenciado, o depurador atinge o ponto de interrupção na primeira avaliação depois **que a alteração** é selecionada.
-
-<a name="using-object-ids-in-breakpoint-conditions-c-and-f"></a>
-### <a name="using-object-ids-in-conditional-expressions-c-and-f-only"></a>Usando IDs de objeto em expressõesC# condicionais F# (e somente)
- Há ocasiões em que você deseja observar o comportamento de um objeto específico. Por exemplo, talvez você queira descobrir por que um objeto foi inserido em uma coleção mais de uma vez. No C# e F#no, você pode criar IDs de objeto para instâncias específicas de [tipos de referência](/dotnet/csharp/language-reference/keywords/reference-types)e usá-las em condições de ponto de interrupção. A ID de objeto é gerada pelos serviços de depuração de Common Language Runtime (CLR) e associada ao objeto.
-
-**Para criar uma ID de objeto:**
-
-1. Defina um ponto de interrupção no código em algum lugar depois que o objeto tiver sido criado.
-
-2. Inicie a depuração e, quando a execução pausa no ponto de interrupção, selecione **depurar** > **Windows** > **locais** ou **ALT**+**4** para abrir a janela **locais** .
-
-   Localize a instância de objeto específica na janela **locais** , clique com o botão direito do mouse nela e selecione **criar ID de objeto**.
-
-   Você deve ver um **$** mais um número na janela **locais** . Esta é a ID do objeto.
-
-3. Adicione um novo ponto de interrupção no momento que você deseja investigar; por exemplo, quando o objeto deve ser adicionado à coleção. Clique com o botão direito do mouse no ponto de interrupção e selecione **Condições**.
-
-4. Use a ID de objeto no campo **expressão condicional** . Por exemplo, se a variável `item` for o objeto a ser adicionado à coleção, selecione **é true** e digite **Item = = $\<n >** , em que \<n > é o número de ID de objeto.
-
-   A execução será interrompida no ponto em que o objeto deve ser adicionado à coleção.
-
-   Para excluir a ID de objeto, clique com o botão direito do mouse na variável na janela **locais** e selecione **excluir ID de objeto**.
-
->[!NOTE]
->As IDs de objeto criam referências fracas e não impedem que o objeto seja coletado como lixo. Eles são válidos somente para a sessão de depuração atual.
-
-### <a name="hit-count"></a>Contagem de acertos
- Se você suspeitar que um loop em seu código inicia o comportamento inadequado após um determinado número de iterações, você pode definir um ponto de interrupção para parar a execução após esse número de ocorrências, em vez de ter que pressionar **F5** repetidamente para alcançar essa iteração.
-
- Em **condições** na janela **configurações de ponto de interrupção** , selecione **contagem de acesso**e, em seguida, especifique o número de iterações. No exemplo a seguir, o ponto de interrupção é definido para atingir todas as outras iterações:
-
- ![Contagem de acesso de ponto de interrupção](../debugger/media/breakpointhitcount.png "BreakpointHitCount")
-
-### <a name="filter"></a>Filtro
-Você pode restringir um ponto de interrupção para disparar somente em dispositivos especificados ou em processos e threads especificados.
-
-Em **condições** na janela **configurações de ponto de interrupção** , selecione **Filtrar**e, em seguida, insira uma ou mais das seguintes expressões:
-
-- MachineName = "nome"
-- ProcessId = valor
-- ProcessName = "nome"
-- ThreadId = valor
-- ThreadName = "nome"
-
-Coloque os valores da cadeia de caracteres entre aspas duplas. Você pode combinar cláusulas usando `&` (AND), `||` (ou), `!` (não) e parênteses.
-
-## <a name="BKMK_Print_to_the_Output_window_with_tracepoints"></a>Ações de ponto de interrupção e tracepoints
- Um *tracepoint* é um ponto de interrupção que imprime uma mensagem na janela de **Saída**. Um tracepoint pode funcionar como uma declaração de rastreamento temporária na linguagem de programação.
-
-**Para definir um tracepoint:**
-
-1. Clique com o botão direito do mouse em um ponto de interrupção e selecione **ações**. Ou, na janela **configurações do ponto de interrupção** , passe o mouse sobre o ponto de interrupção, selecione o ícone **configurações** e, em seguida, selecione **ações**.
-
-1. Insira uma mensagem no campo **registrar uma mensagem na janela de saída** . A mensagem pode incluir cadeias de caracteres de texto genéricas, valores de variáveis ou expressões entre chaves e especificadores de formato[C#](../debugger/format-specifiers-in-csharp.md) ( [C++](../debugger/format-specifiers-in-cpp.md)e) para os valores.
-
-   Você também pode usar as seguintes palavras-chave especiais na mensagem:
-
-   - **$Address** -instrução atual
-   - **$Caller** -nome da função de chamada
-   - Pilha de chamadas de **$CALLSTACK**
-   - **$Function** -nome da função atual
-   - ID do processo de **$pid**
-   - **$PNAME** -nome do processo
-   - ID do thread de **$tid**
-   - **$TNAME** -nome do thread
-   - Contagem de **$Tick** em escala (do `GetTickCount`do Windows)
-
-1. Para imprimir a mensagem na janela de **saída** sem interrupção, marque a caixa de seleção **continuar execução** . Para imprimir a mensagem e interromper a execução no tracepoint, desmarque a caixa de seleção.
-
-Os tracepoints aparecem como losangos vermelhos na margem esquerda das janelas de código-fonte e **pontos de interrupção** .
+2. Na janela **desmontagem** , clique na margem esquerda da instrução que você deseja interromper. Você também pode selecioná-lo e pressionar **F9**, ou clicar com o botão direito do mouse e selecionar **ponto de interrupção** > **Inserir ponto de interrupção**.
 
 ## <a name="see-also"></a>Consulte também
 

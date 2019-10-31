@@ -11,12 +11,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a873d00e1befc9126f4fe89b05a66a8331853ac2
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: ae9c686e46bf6a956d58ac22b823dcc36c2aacce
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72984968"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189160"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-2"></a>Walkthrough: criar um item de projeto de ação personalizada com um modelo de item, parte 2
   Depois de definir um tipo personalizado de item de projeto do SharePoint e associá-lo a um modelo de item no Visual Studio, talvez você também queira fornecer um assistente para o modelo. Você pode usar o assistente para coletar informações de usuários quando eles usam seu modelo para adicionar uma nova instância do item de projeto a um projeto. As informações coletadas podem ser usadas para inicializar o item do projeto.
@@ -79,7 +79,7 @@ ms.locfileid: "72984968"
 
 2. No **Designer de projeto**, verifique se a estrutura de destino está definida como .NET Framework 4,5.
 
-     Para projetos C# visuais, você pode definir esse valor na guia **aplicativo** . Para projetos Visual Basic, você pode definir esse valor na guia **Compilar** . Para obter mais informações, consulte [como: direcionar uma versão do .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
+     Para projetos C# visuais, você pode definir esse valor na guia **aplicativo** . Para projetos Visual Basic, você pode definir esse valor na guia **Compilar** . Para obter mais informações, consulte [como: direcionar uma versão do .NET Framework](../ide/visual-studio-multi-targeting-overview.md).
 
 3. No projeto **ItemTemplateWizard** , adicione um item **Window (WPF)** ao projeto e, em seguida, nomeie o item **WizardWindow**.
 
@@ -130,7 +130,7 @@ ms.locfileid: "72984968"
      [!code-xml[SPExtensibility.ProjectItem.CustomAction#9](../sharepoint/codesnippet/Xaml/customactionprojectitem/itemtemplatewizard/wizardwindow.xaml#9)]
 
     > [!NOTE]
-    > A janela que é criada neste XAML é derivada da classe base <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow>. Quando você adiciona uma caixa de diálogo personalizada do WPF ao Visual Studio, recomendamos que você Derive sua caixa de diálogo dessa classe para ter estilos consistentes com outras caixas de diálogo no Visual Studio e para evitar problemas que podem ocorrer de outra forma com caixas de diálogo modais. Para obter mais informações, consulte [criando e gerenciando caixas de diálogo modais](/visualstudio/extensibility/creating-and-managing-modal-dialog-boxes).
+    > A janela que é criada neste XAML é derivada da classe base <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow>. Quando você adiciona uma caixa de diálogo personalizada do WPF ao Visual Studio, recomendamos que você Derive sua caixa de diálogo dessa classe para ter estilos consistentes com outras caixas de diálogo no Visual Studio e para evitar problemas que podem ocorrer de outra forma com caixas de diálogo modais. Para obter mais informações, consulte [criando e gerenciando caixas de diálogo modais](../extensibility/creating-and-managing-modal-dialog-boxes.md).
 
 3. Se você estiver desenvolvendo um projeto Visual Basic, remova o namespace `ItemTemplateWizard` do nome da classe `WizardWindow` no atributo `x:Class` do elemento `Window`. Esse elemento está na primeira linha do XAML. Quando terminar, a primeira linha deverá ser semelhante ao seguinte código:
 
@@ -206,7 +206,7 @@ ms.locfileid: "72984968"
     </WizardExtension>
     ```
 
-     Para obter mais informações sobre o elemento `WizardExtension`, consulte [WizardExtension &#40;Element Visual Studio&#41;templates](/visualstudio/extensibility/wizardextension-element-visual-studio-templates).
+     Para obter mais informações sobre o elemento `WizardExtension`, consulte [WizardExtension &#40;Element Visual Studio&#41;templates](../extensibility/wizardextension-element-visual-studio-templates.md).
 
 3. Salve e feche o arquivo.
 
@@ -345,6 +345,6 @@ ms.locfileid: "72984968"
 - [Walkthrough: criar um item de projeto de ação personalizada com um modelo de item, parte 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)
 - [Definir tipos de item de projeto personalizados do SharePoint](../sharepoint/defining-custom-sharepoint-project-item-types.md)
 - [Criar modelos de item e modelos de projeto para itens de projeto do SharePoint](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)
-- [Referência de esquema do modelo do Visual Studio](/visualstudio/extensibility/visual-studio-template-schema-reference)
+- [Referência de esquema do modelo do Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Como usar assistentes com modelos do projeto](../extensibility/how-to-use-wizards-with-project-templates.md)
 - [IDs e locais de ação personalizada padrão](/previous-versions/office/developer/sharepoint-2010/bb802730(v=office.14))

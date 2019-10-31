@@ -1,5 +1,5 @@
 ---
-title: Documentar Windows | Microsoft Docs
+title: Janelas de documentos | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,36 +10,36 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 844176b2db6074a33ac2e612c47d3779031836df
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 5d29d64090320a8f62491209773145c024564efa
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66345473"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73186638"
 ---
-# <a name="document-windows"></a>Janelas de documento
-No Visual Studio, uma *janela de documento* é uma janela com moldura filho que está associada uma janela de interface de documentos múltiplos (MDI). Janelas de documento normalmente são usadas para a exibição e modificação do código-fonte ou texto, mas eles também podem hospedar outros tipos de funcionais. Janelas de documento:
+# <a name="document-windows"></a>Janelas de documentos
+No Visual Studio, uma *janela de documento* é uma janela filho com quadros que está associada a uma janela MDI (interface de vários documentos). As janelas de documentos normalmente são usadas para a exibição e modificação do código-fonte ou do texto, mas também podem hospedar outros tipos funcionais. Janelas de documentos:
 
-- Podem ser organizados em grupos de guia horizontal ou vertical separada no pai MDI, para que vários arquivos podem ser exibidos ao mesmo tempo.
+- Pode ser organizado em grupos de guias horizontais ou verticais separados no MDI pai para que vários arquivos possam ser exibidos ao mesmo tempo.
 
-- Podem ser encaixadas em qualquer ordem no pai MDI.
+- Pode ser encaixado em qualquer ordem no MDI pai.
 
 - Pode ser flutuante livremente.
 
-- São vinculados na ordem de tabulação para outras janelas MDI.
+- São vinculados em ordem de tabulação a outras janelas MDI.
 
-  Os comandos para agrupamento, Encaixando e flutuando podem ser encontrados no menu de atalho para uma guia da janela de documento.
+  Os comandos para agrupamento, encaixe e flutuação podem ser encontrados no menu de atalho para uma guia de janela de documento.
 
-  Para obter mais informações sobre o comportamento de janela no Visual Studio, consulte [Personalizar layouts de janela](../../ide/customizing-window-layouts-in-visual-studio.md).
+  Para obter mais informações sobre o comportamento da janela no Visual Studio, consulte [Personalizar layouts de janela](../../ide/customizing-window-layouts-in-visual-studio.md).
 
-## <a name="document-window-implementation"></a>Implementação de janela de documento
- Janelas de documento são criadas com a implementação de um editor. O <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> interface cria janelas de documentos como parte de criar uma instância de um editor. Para obter mais informações, consulte [herdado interfaces no editor de](../../extensibility/legacy-interfaces-in-the-editor.md).
+## <a name="document-window-implementation"></a>Implementação da janela do documento
+ As janelas de documentos são criadas com a implementação de um editor. A interface <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> cria janelas de documentos como parte da instanciação de um editor. Para obter mais informações, consulte [interfaces herdadas no editor](/visualstudio/extensibility/legacy-interfaces-in-the-editor?view=vs-2015).
 
 > [!NOTE]
-> Para fornecer para trás e encaminhar os pontos em uma janela de navegação, implementar o <xref:Microsoft.VisualStudio.Shell.Interop.IVsBackForwardNavigation> interface. O editor de texto usa marcadores de texto para identificar os pontos de navegação no documento.
+> Para fornecer pontos de navegação para trás e para frente em uma janela, implemente a interface <xref:Microsoft.VisualStudio.Shell.Interop.IVsBackForwardNavigation>. O editor de texto usa marcadores de texto para identificar pontos de navegação no documento.
 
-## <a name="the-running-document-table"></a>A tabela de documento em execução
- O IDE usa a tabela de documento de execução (RDT) para acompanhar o status de cada janela de documento. O RDT é o mecanismo pelo qual documento windows são notificados sobre eventos, como quando uma solução é fechada ou quando um arquivo foi editado. Para obter mais informações, consulte [tabela de documento em execução](../../extensibility/internals/running-document-table.md).
+## <a name="the-running-document-table"></a>A tabela de documentos em execução
+ O IDE usa a tabela de documentos em execução (RDT) para acompanhar o status de cada janela do documento. O RDT é o mecanismo pelo qual as janelas de documentos são notificadas sobre eventos, como quando uma solução é fechada ou quando um arquivo é editado. Para obter mais informações, consulte [executando a tabela de documentos](../../extensibility/internals/running-document-table.md).
 
 ## <a name="see-also"></a>Consulte também
-- [Atraso de carregamento do documento](../../extensibility/internals/delayed-document-loading.md)
+- [Carregamento de documento atrasado](../../extensibility/internals/delayed-document-loading.md)

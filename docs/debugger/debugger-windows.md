@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 91df84c92761ae75ce9f26bddefad57c6dc8bc2c
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 3c27d2b4436fc5defedcda44c4f7840760018ade
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72738305"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188545"
 ---
 # <a name="inspect-data-using-debugger-windows-in-visual-studio"></a>Inspecionar dados usando janelas do depurador no Visual Studio
 
@@ -39,7 +39,7 @@ Você pode abrir a maioria das janelas do depurador enquanto estiver Depurando s
 |Tarefas|CTR: + SHIFT + D, K|[Usando a janela Tarefas](../debugger/using-the-tasks-window.md)|
 |Interativo de depuração do Python|SHIFT + ALT + I|[REPL Interativo do Python](../python/python-interactive-repl-in-visual-studio.md)|
 |Console do JavaScript|CTRL + ALT + V, C|[Guia de início rápido: depurar JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)|
-|Explorador do DOM|CTRL + ALT + V, D|[Depurar o layout usando o Explorador do DOM](/visualstudio/debugger/quickstart-debug-html-and-css)|
+|Explorador do DOM|CTRL + ALT + V, D|[Depurar o layout usando o Explorador do DOM](quickstart-debug-html-and-css.md)|
 |Árvore visual dinâmica|-|[Inspecione as propriedades XAML durante a depuração](../xaml-tools/inspect-xaml-properties-while-debugging.md)|
 |Explorador de propriedades dinâmicas|-|[Inspecione as propriedades XAML durante a depuração](../xaml-tools/inspect-xaml-properties-while-debugging.md)|
 |Processos|CTRL + ALT + Z|[Depurar threads e processos](../debugger/debug-threads-and-processes.md)|

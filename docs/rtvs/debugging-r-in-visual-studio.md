@@ -8,16 +8,16 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 98dcbaaeb6f330cda3a14cf8c32afe403b50aa85
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 5efa0a32f51e1f5060474a0d277bfca7f1e7d548
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62939257"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189260"
 ---
 # <a name="debug-r-in-visual-studio"></a>Depurar o R no Visual Studio
 
-As RTVS (Ferramentas do R para Visual Studio) se integram à experiência de depuração completa do Visual Studio (consulte [Depurando no Visual Studio](/visualstudio/debugger/debugger-feature-tour)). Esse suporte inclui pontos de interrupção, a anexação a processos em execução, a inspeção e a observação de varáveis e a inspeção da pilha de chamadas. Portanto, este artigo explora os aspectos de depuração que são exclusivos para R e RTVS.
+As RTVS (Ferramentas do R para Visual Studio) se integram à experiência de depuração completa do Visual Studio (consulte [Depurando no Visual Studio](../debugger/debugger-feature-tour.md)). Esse suporte inclui pontos de interrupção, a anexação a processos em execução, a inspeção e a observação de varáveis e a inspeção da pilha de chamadas. Portanto, este artigo explora os aspectos de depuração que são exclusivos para R e RTVS.
 
 A inicialização do depurador para o arquivo R de inicialização em um projeto do R é igual a de outros tipos de projeto: use **Depurar** > **Iniciar Depuração**, a tecla **F5** ou o **Arquivo de inicialização de origem** na barra de ferramentas de depuração:
 

@@ -8,12 +8,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ba6aaaf0f6e77714af14e690d4944eac031e1d7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b58a4c6f369f9a5338365e215805c2379db8d2ba
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650140"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189743"
 ---
 # <a name="messaging-activity-designers"></a>Designers de atividade de mensagens
 
@@ -41,7 +41,7 @@ Para outros tipos de designers de atividade, consulte os seguintes tópicos:
 
 - [Fluxo de Controle](../workflow-designer/control-flow-activity-designers.md)
 
-- [Usando os designers de atividade](../workflow-designer/using-the-activity-designers.md)
+- [Usando os designers de atividade](control-flow-activity-designers.md)
 
 - [Fluxograma](../workflow-designer/flowchart-activity-designers.md)
 
@@ -51,10 +51,10 @@ Para outros tipos de designers de atividade, consulte os seguintes tópicos:
 
 - [Transação](../workflow-designer/transaction-activity-designers.md)
 
-- [Coleção](../workflow-designer/collection-activity-designers.md)
+- [Coleta](../workflow-designer/collection-activity-designers.md)
 
 - [Tratamento de erro](../workflow-designer/error-handling-activity-designers.md)
 
 ## <a name="external-resources"></a>Recursos externos
 
-[Usando os designers de atividade](../workflow-designer/using-the-activity-designers.md)
+[Usando os designers de atividade](control-flow-activity-designers.md)

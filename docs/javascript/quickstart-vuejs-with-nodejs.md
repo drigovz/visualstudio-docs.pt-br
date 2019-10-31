@@ -1,5 +1,5 @@
 ---
-title: 'Início Rápido: Criar seu primeiro aplicativo Vue.js'
+title: 'Início rápido: criar seu primeiro aplicativo Vue. js'
 description: Neste início rápido, você criará um aplicativo Vue.js no Visual Studio usando as Ferramentas Node.js para Visual Studio
 ms.custom: seodec18
 ms.date: 09/24/2018
@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 28e86068b2255d1796363405c0231c1fb6bdd480
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
-ms.translationtype: HT
+ms.openlocfilehash: ba1f403cd722b4d3dd1860c4a8b135c87b80bb4d
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65226507"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189474"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-vuejs-app"></a>Início Rápido: Usar o Visual Studio para criar seu primeiro aplicativo Vue.js
 
@@ -27,7 +27,7 @@ Nesta introdução de 5 a 10 minutos do IDE (ambiente de desenvolvimento integra
 > [!IMPORTANT]
 > Este artigo requer o modelo Vue.js, disponível no Visual Studio 2017 versão 15.8 e posteriores.
 
-## <a name="prerequisites"></a>Pré-requisitos
+## <a name="prerequisites"></a>Prerequisites
 
 * Você precisa ter o Visual Studio instalado e a carga de trabalho de desenvolvimento de Node.js.
 
@@ -128,6 +128,6 @@ Parabéns por concluir este Guia de Início Rápido! Esperamos que você tenha a
 
 ## <a name="next-steps"></a>Próximas etapas
 
-- Veja o [Tutorial para Node.js e Express](../nodejs/tutorial-nodejs.md)
-- Veja o [Tutorial para Node.js e React](/visualstudio/javascript/tutorial-nodejs-with-react-and-jsx)
+- Veja o [Tutorial para Node.js e Express](tutorial-nodejs.md)
+- Veja o [Tutorial para Node.js e React](tutorial-nodejs-with-react-and-jsx.md)
 - [Implantar o aplicativo no Serviço de Aplicativo do Linux](../javascript/publish-nodejs-app-azure.md)
