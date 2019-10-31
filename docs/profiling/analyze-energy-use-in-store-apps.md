@@ -13,12 +13,13 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 1259f92b89fc6d83bb0b7296cc07844bf25df705
-ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
+monikerRange: vs-2017
+ms.openlocfilehash: 0fc78a84d0c2f86e8db6c4703cc7404a32508d72
+ms.sourcegitcommit: bdccab4c2dbd50ea8adaaf88c69c9ca32db88099
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71128330"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73144739"
 ---
 # <a name="analyze-energy-use-in-uwp-apps"></a>Analisar o uso de energia em aplicativos UWP
 
@@ -90,7 +91,7 @@ if (performance && performance.mark) {
 
 1. No menu **Depurar**, escolha **Iniciar Diagnóstico Sem Depurar**.
 
-     ![Selecione Consumo de Energia no hub de diagnóstico](../profiling/media/energyprof_diagnosticshub.png "ENERGYPROF_DiagnosticsHub")
+     ![Escolha consumo de energia no Hub de diagnóstico](../profiling/media/energyprof_diagnosticshub.png "ENERGYPROF_DiagnosticsHub")
 
 2. Selecione **Consumo de Energia** e então **Iniciar**.
 
@@ -101,7 +102,7 @@ if (performance && performance.mark) {
 
 4. Para interromper a criação do perfil, retorne ao Visual Studio (Alt + Tab) e selecione **Interromper a coleta** na página Hub de diagnóstico.
 
-     ![Interromper a coleta de dados](../profiling/media/xamlprof_stopcollection.png "XAMLProf_StopCollection")
+     ![Parar coleta de dados](../profiling/media/xamlprof_stopcollection.png "XAMLProf_StopCollection")
 
      O Visual Studio analisa os dados coletados e exibe os resultados.
 
@@ -121,7 +122,7 @@ if (performance && performance.mark) {
 ## <a name="analyze-energy-profile-data"></a>Analisar dados do perfil de energia
  Os dados do perfil de energia são exibidos na janela do documento do Visual Studio:
 
- ![Página de relatório do criador de perfil de energia](../profiling/media/energyprof_all.png "ENERGYPROF_All")
+ ![Página de relatório do Energy Profiler](../profiling/media/energyprof_all.png "ENERGYPROF_All")
 
 |||
 |-|-|
@@ -139,11 +140,11 @@ if (performance && performance.mark) {
 ## <a name="optimize-energy-use"></a>Otimizar o uso de energia
  Além de transmitir dados, as conexões de rede implicam custos de energia para inicializar, manter e encerrar a conexão. Algumas redes mantêm a conexão por um período depois que os dados são enviados ou recebidos para permitir que mais dados sejam transmitidos por uma única conexão. Você pode usar o painel **Recursos (Ativado/Desativado)** para examinar a maneira como seu aplicativo interage com a conexão.
 
- ![Painel Recursos &#40;Ativado&#47;Desativado&#41](../profiling/media/energyprof_resources.png "ENERGYPROF_Resources")
+ ![Recursos &#40;no&#47;painel&#41; desativado](../profiling/media/energyprof_resources.png "ENERGYPROF_Resources")
 
  Se as barras **Rede** e **Transferência de Dados** mostrarem que a conexão está aberta por um longo período para transmitir uma série de pacotes pequenos de dados de maneira intermitente, você poderá dividir os dados em lotes para enviá-los em uma transmissão, reduzir o tempo em que a rede fica aberta e, portanto, economizar em custos de energia.
 
- ![Painel de Resumo de Consumo de Energia](../profiling/media/energyprof_summary.png "ENERGYPROF_Summary")
+ ![Painel Resumo de consumo de energia](../profiling/media/energyprof_summary.png "ENERGYPROF_Summary")
 
  Você tem menos controle sobre os custos de energia da tela. A maioria das telas exige mais energia para exibir cores claras do que cores mais escuras, portanto, usar uma tela de fundo escuro é uma maneira de reduzir custos.
 

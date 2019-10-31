@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 92d1c327c168bfd2881ad014b7f9ab87f771b95d
-ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
-ms.translationtype: MT
+ms.openlocfilehash: 70276b8ba4efb08b0a6a57dc48716bd608f0429a
+ms.sourcegitcommit: bdccab4c2dbd50ea8adaaf88c69c9ca32db88099
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72536071"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73144749"
 ---
 # <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>Aprenda dicas e truques de produtividade para o depurador no Visual Studio
 
@@ -140,6 +140,7 @@ Se você precisar depurar os tipos de problemas que são comuns a aplicativos mu
 
     Você também pode exibir o local dos threads na [janela pilhas paralelas](../debugger/get-started-debugging-multithreaded-apps.md).
 
+::: moniker range="vs-2017"
 ## <a name="examine-payloads-for-web-services-and-network-resources-uwp"></a>Examinar as cargas para serviços Web e recursos de rede (UWP)
 
 Em aplicativos UWP, você pode analisar as operações de rede executadas usando a API `Windows.Web.Http`. Você pode usar essa ferramenta para ajudar a depurar os serviços Web e os recursos de rede. Para usar a ferramenta, selecione **depurar > criador de perfil de desempenho**. Selecione **rede**e, em seguida, escolha **Iniciar**. No aplicativo, percorra o cenário que usa `Windows.Web.Http` e escolha **Parar coleta** para gerar o relatório.
@@ -151,6 +152,7 @@ Selecione uma operação na exibição de resumo para exibir mais detalhes.
 ![Informações detalhadas na ferramenta de uso de rede](../profiling/media/prof-tour-network-usage-details.png "DetailedViewNetworkUsage")
 
 Para obter mais informações, consulte [Uso de rede](../profiling/network-usage.md).
+::: moniker-end
 
 ## <a name="modules_window"></a>Familiarize-se com o modo como o depurador se anexa aoC#seu C++aplicativo (, F#, Visual Basic,)
 
