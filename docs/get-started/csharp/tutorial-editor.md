@@ -58,7 +58,7 @@ Comece criando um novo arquivo e adicionando códigos nele.
 
 ::: moniker-end
 
-2. No menu **arquivo** na barra de menus, escolha **novo**  > **arquivo**ou pressione **Ctrl** +**N**.
+2. No menu **arquivo** na barra de menus, escolha **novo**  > **arquivo** ou pressione **Ctrl** +**N**.
 
 3. Na caixa de diálogo **Novo Arquivo**, na categoria **Geral**, escolha **Classe do Visual C#** e, então, selecione **Abrir**.
 
