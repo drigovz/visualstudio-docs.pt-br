@@ -18,7 +18,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 2a92daf09f033da020fe54369a20483686c72f81
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72730428"
@@ -37,7 +37,7 @@ A janela Console do JavaScript permite que você:
 
 - Execute o código JavaScript, que é executado no contexto do script atual.
 
-- Exiba erros e exceções de JavaScript, além de exceções de DOM (Document Object Model) e do Tempo de Execução do Windows.
+- Exiba erros e exceções de JavaScript, além de exceções de DOM (Document Object Model) e do Windows Runtime.
 
 - Realizar outras tarefas, como limpar a tela. Consulte [comandos do console do JavaScript](../debugger/javascript-console-commands.md?view=vs-2017) para obter a lista completa de comandos.
 

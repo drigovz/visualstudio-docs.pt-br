@@ -218,7 +218,7 @@ public class ShimMyClass : ShimBase<MyClass> {
 }
 ```
 
-Observe que o Fakes passa a instância de tempo de execução como o primeiro argumento do representante nesse caso.
+Observe que o Fakes passa a instância de runtime como o primeiro argumento do representante nesse caso.
 
 ### <a name="instance-methods-for-one-runtime-instance"></a>Métodos de instância (para uma instância de tempo de execução)
 
@@ -458,7 +458,7 @@ ShimMyClass.BehaveAsNotImplemented();
 
 ## <a name="concurrency"></a>Concorrência
 
-Os tipos de shim se aplicam a todos os threads no AppDomain e não têm afinidade de thread. Esse é um fato importante se você planeja usar um executor de teste que dá suporte à simultaneidade. Os testes que envolvem tipos de Shim não podem ser executados simultaneamente. Essa propriedade não é imposta pelo tempo de execução do Fakes.
+Os tipos de shim se aplicam a todos os threads no AppDomain e não têm afinidade de thread. Esse é um fato importante se você planeja usar um executor de teste que dá suporte à simultaneidade. Os testes que envolvem tipos de Shim não podem ser executados simultaneamente. Essa propriedade não é imposta pelo runtime do Fakes.
 
 ## <a name="call-the-original-method-from-the-shim-method"></a>Chamar o método original por meio do método shim
 

@@ -215,7 +215,7 @@ public class ShimMyClass : ShimBase<MyClass> {
 }
 ```
 
- Observe que o Fakes passa a instância de tempo de execução como o primeiro argumento do representante nesse caso.
+ Observe que o Fakes passa a instância de runtime como o primeiro argumento do representante nesse caso.
 
 ### <a name="BKMK_Instance_methods__for_one_instance_"></a> Métodos de instância (para uma instância de tempo de execução)
  Os métodos de instância também podem sofrer shim por representantes diferentes com base no receptor da chamada. Isso permite que o mesmo método de instância tenha comportamentos diferentes por instância do tipo. As propriedades para configurar esses shims são métodos de instância do próprio tipo shim. Cada tipo de shim instanciado também está associado uma instância bruta de um tipo com shim.
@@ -454,7 +454,7 @@ ShimMyClass.BehaveAsNotImplemented();
 ```
 
 ## <a name="BKMK_Concurrency"></a> Simultaneidade
- Os tipos de shim se aplicam a todos os threads no AppDomain e não têm afinidade de thread. Isso é importante se você planeja usar um executor de teste que dá suporte à simultaneidade: testes que envolvem tipos de shim não podem ser executados simultaneamente. Essa propriedade não é imposta pelo tempo de execução do Fakes.
+ Os tipos de shim se aplicam a todos os threads no AppDomain e não têm afinidade de thread. Isso é importante se você planeja usar um executor de teste que dá suporte à simultaneidade: testes que envolvem tipos de shim não podem ser executados simultaneamente. Essa propriedade não é imposta pelo runtime do Fakes.
 
 ## <a name="BKMK_Calling_the_original_method_from_the_shim_method"></a> Chamando o método original do método shim
  Imagine que gostaríamos realmente de escrever o texto no sistema de arquivos depois de validar o nome do arquivo passado para o método. Nesse caso, quereríamos chamar o método original no meio do método shim.

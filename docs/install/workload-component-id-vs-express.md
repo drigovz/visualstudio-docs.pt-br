@@ -18,7 +18,7 @@ ms.technology: vs-installation
 monikerRange: vs-2017
 ms.openlocfilehash: 2447f0eab7ee3931df70f503519f3f110f4ba272
 ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "62818954"

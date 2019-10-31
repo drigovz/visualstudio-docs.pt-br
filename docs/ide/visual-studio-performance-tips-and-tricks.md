@@ -125,7 +125,7 @@ Para obter mais informações sobre as considerações de desempenho do .NET Com
 
 - **Remover as cargas de trabalho**
 
-    Você pode usar o Instalador do Visual Studio para remover as cargas de trabalho que não são mais usadas. Esta ação pode simplificar o custo de inicialização e do tempo de execução ignorando pacotes e assemblies que não são mais necessários.
+    Você pode usar o Instalador do Visual Studio para remover as cargas de trabalho que não são mais usadas. Esta ação pode simplificar o custo de inicialização e do runtime ignorando pacotes e assemblies que não são mais necessários.
 
 ## <a name="force-a-garbage-collection"></a>Forçar uma coleta de lixo
 

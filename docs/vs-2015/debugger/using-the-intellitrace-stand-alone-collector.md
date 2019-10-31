@@ -107,12 +107,12 @@ O **coletor autônomo do IntelliTrace** permite coletar dados de diagnóstico In
 
    2. Navegue até o diretório do coletor, por exemplo: **C:\IntelliTraceCollector**
 
-   3. Use o **expandir** comando, incluindo o período (**.**) no final, para expandir o intellitracecollection. cab:
+   3. Use o **expandir** comando, incluindo o período ( **.** ) no final, para expandir o intellitracecollection. cab:
 
         `expand  /f:* IntelliTraceCollection.cab .`
 
        > [!NOTE]
-       > O ponto (**.**) preserva as subpastas que contêm planos de coleta localizada.
+       > O ponto ( **.** ) preserva as subpastas que contêm planos de coleta localizada.
 
 ## <a name="ConfigurePermissionsRunningCollector"></a> Configurar permissões para o diretório do coletor
 
@@ -158,7 +158,7 @@ O **coletor autônomo do IntelliTrace** permite coletar dados de diagnóstico In
 
             - Em sistemas operacionais de 64 bits, abra o menu de atalho do **Windows PowerShell**. Escolha **Executar como administrador**.
 
-            - Em sistemas operacionais de 32 bits, abra o menu de atalho do **Windows PowerShell (x86)**. Escolha **Executar como administrador**.
+            - Em sistemas operacionais de 32 bits, abra o menu de atalho do **Windows PowerShell (x86)** . Escolha **Executar como administrador**.
 
     2. Na janela de comando do PowerShell, use o comando **Import-Module** para importar o **Microsoft.VisualStudio.IntelliTrace.PowerShell.dll**.
 

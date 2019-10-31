@@ -10,7 +10,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: ae62a380e4e0feb23a901a4fc6a2628fcd8c6a0c
 ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72734920"
@@ -55,7 +55,7 @@ O Visual Studio *diagnóstico de gráficos* é um conjunto de ferramentas para g
  Consulte [uso de GPU](/visualstudio/profiling/gpu-usage) para obter mais informações.
 
 ### <a name="directx-control-panel"></a>Painel de controle do DirectX
- O painel de controle do DirectX é um componente do DirectX que você pode usar para alterar o comportamento do DirectX. Por exemplo, é possível habilitar a versão de depuração dos componentes de tempo de execução do DirectX, selecionar os tipos de mensagem de depuração que são relatados e impedir que determinados recursos de hardware gráfico sejam usados para emular um hardware menos capaz. Esse nível de controle sobre o DirectX pode ajudar você a depurar e testar seu aplicativo DirectX. É possível acessar o painel de controle do DirectX do Visual Studio.
+ O painel de controle do DirectX é um componente do DirectX que você pode usar para alterar o comportamento do DirectX. Por exemplo, é possível habilitar a versão de depuração dos componentes de runtime do DirectX, selecionar os tipos de mensagem de depuração que são relatados e impedir que determinados recursos de hardware gráfico sejam usados para emular um hardware menos capaz. Esse nível de controle sobre o DirectX pode ajudar você a depurar e testar seu aplicativo DirectX. É possível acessar o painel de controle do DirectX do Visual Studio.
 
 #### <a name="to-open-the-directx-control-panel"></a>Para abrir o painel de controle do DirectX
 

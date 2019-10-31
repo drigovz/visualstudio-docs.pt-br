@@ -39,7 +39,7 @@ ph x="1" /&gt; é um designer e um depurador visuais para a compilação e gráf
 
 - Em [!INCLUDE[vs2010](../includes/vs2010-md.md)], [!INCLUDE[wfd2](../includes/wfd2-md.md)] fornece recursos do IntelliSense para criar expressões do Visual Basic dentro dos fluxos de trabalho [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] .
 
-- A experiência de depuração estende agora em XAML, permitindo que você defina pontos de interrupção na definição de fluxo de trabalho XAML e entrar no seu código XAML em tempo de execução, que fornece uma experiência semelhante ao código gerenciado.
+- A experiência de depuração estende agora em XAML, permitindo que você defina pontos de interrupção na definição de fluxo de trabalho XAML e entrar no seu código XAML em runtime, que fornece uma experiência semelhante ao código gerenciado.
 
 - Rehosting [!INCLUDE[wfd2](../includes/wfd2-md.md)] fora de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] é simplificado extremamente em comparação com versões anteriores, que requer agora apenas algumas linhas de código.
 

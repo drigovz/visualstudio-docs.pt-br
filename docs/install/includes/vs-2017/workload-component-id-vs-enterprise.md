@@ -12,7 +12,7 @@ ms.technology: vs-installation
 ms.topic: include
 ms.openlocfilehash: 1e9ac9e8371c1dab482fd16ce4d10e8982ba1aee
 ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 07/15/2019
 ms.locfileid: "68177664"

@@ -22,7 +22,7 @@ Com a Plataforma Universal do Windows e nosso único núcleo do Windows, é poss
 
 ![Plataforma Universal do Windows](../cross-platform/media/uwp_coreextensions.png)
 
-Execute seu aplicativo em um telefone Windows 10, área de trabalho do Windows 10 ou Xbox. O pacote do aplicativo é o mesmo! Com a introdução do núcleo único e unificado do Windows 10, um pacote do aplicativo pode ser executado em todas as plataformas. Várias plataformas têm SDKs de extensão que podem ser adicionados ao aplicativo para aproveitar comportamentos específicos da plataforma. Por exemplo, o SDK de uma extensão para dispositivos móveis manipula o botão Voltar pressionado em um Windows Phone. Se você referenciar um SDK de extensão em seu projeto, bastará adicionar verificações de tempo de execução para testar se esse SDK está disponível nessa plataforma. É assim que você pode usar o mesmo pacote do aplicativo para todas as plataformas!
+Execute seu aplicativo em um telefone Windows 10, área de trabalho do Windows 10 ou Xbox. O pacote do aplicativo é o mesmo! Com a introdução do núcleo único e unificado do Windows 10, um pacote do aplicativo pode ser executado em todas as plataformas. Várias plataformas têm SDKs de extensão que podem ser adicionados ao aplicativo para aproveitar comportamentos específicos da plataforma. Por exemplo, o SDK de uma extensão para dispositivos móveis manipula o botão Voltar pressionado em um Windows Phone. Se você referenciar um SDK de extensão em seu projeto, bastará adicionar verificações de runtime para testar se esse SDK está disponível nessa plataforma. É assim que você pode usar o mesmo pacote do aplicativo para todas as plataformas!
 
 **O que é o núcleo do Windows?**
 

@@ -7,7 +7,7 @@ ms.date: 05/30/2019
 ms.assetid: 771C2F8E-46BC-4280-AFE8-ED9D5C7790CE
 ms.openlocfilehash: 345111144e0e209d91d34e53fefcd7d1207d9a8a
 ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 08/09/2019
 ms.locfileid: "68872899"

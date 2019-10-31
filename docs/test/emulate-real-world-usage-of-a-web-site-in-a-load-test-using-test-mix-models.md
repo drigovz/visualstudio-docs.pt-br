@@ -64,7 +64,7 @@ Se você especificar um ritmo para a combinação de testes, definirá uma taxa 
 
 - TestC: 0,125 testes por usuário por hora
 
-Se você usar o modelo de ritmo de combinação de testes, o mecanismo de tempo de execução do teste de carga garantirá que a taxa real em que os testes são iniciados seja menor ou igual à taxa especificada. Se a execução dos testes demorar muito para que o número atribuído seja concluído, um erro será retornado.
+Se você usar o modelo de ritmo de combinação de testes, o mecanismo de runtime do teste de carga garantirá que a taxa real em que os testes são iniciados seja menor ou igual à taxa especificada. Se a execução dos testes demorar muito para que o número atribuído seja concluído, um erro será retornado.
 
 A configuração de **Tempo de processamento entre iterações de teste** não se aplica quando você usa o ritmo de combinação de testes.
 

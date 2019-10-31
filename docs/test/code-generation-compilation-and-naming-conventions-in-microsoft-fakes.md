@@ -161,7 +161,7 @@ O build de assemblies do Fakes pode aumentar significativamente o tempo de build
 
 De seus projetos de teste de unidade, faça uma referência aos assemblies do Fakes compilados que são colocados em FakesAssemblies na pasta do projeto.
 
-1. Crie uma nova biblioteca de classes com a versão de tempo de execução do .NET que corresponde aos seus projetos de teste. Vamos chamá-lo de Fakes.Prebuild. Remova o arquivo *class1.cs* do projeto, pois ele não é necessário.
+1. Crie uma nova biblioteca de classes com a versão de runtime do .NET que corresponde aos seus projetos de teste. Vamos chamá-lo de Fakes.Prebuild. Remova o arquivo *class1.cs* do projeto, pois ele não é necessário.
 
 2. Adicione uma referência a todos os assemblies do System e de terceiros para os quais você precisa do Fakes.
 
@@ -169,7 +169,7 @@ De seus projetos de teste de unidade, faça uma referência aos assemblies do Fa
 
 4. Do seu projeto de teste
 
-    - Certifique-se de que você tem uma referência para a DLL de tempo de execução do Fakes:
+    - Certifique-se de que você tem uma referência para a DLL de runtime do Fakes:
 
          *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PublicAssemblies\Microsoft.QualityTools.Testing.Fakes.dll*
 

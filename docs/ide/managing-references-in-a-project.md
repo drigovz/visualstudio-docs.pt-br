@@ -72,7 +72,7 @@ Se você determinar que não há suporte para o SDK de Extensão que está sendo
     > Uma maneira de descobrir se um SDK de Extensão tem dependências em outros SDKs de Extensão é examinar no **Gerenciador de Referências**. Reinicie o Visual Studio, crie um novo projeto de aplicativo UWP de C#, clique com o botão direito do mouse no projeto e escolha **Adicionar Referência**. Acesse a guia **Windows**, a subguia **Extensões** e selecione o SDK de Extensão. Examine o painel à direita no **Gerenciador de Referências**. Se ele tiver dependências, elas serão listadas no painel.
 
     > [!IMPORTANT]
-    > Se o projeto tiver como destino o Windows 10 e o SDK de Extensão instalado na etapa anterior tiver uma dependência do Pacote de Tempo de Execução do Microsoft Visual C++, a versão do Pacote de Tempo de Execução do Microsoft Visual C++ compatível com o Windows 10 será v14.0 e ela será instalada com o Visual Studio.
+    > Se o projeto tiver como destino o Windows 10 e o SDK de Extensão instalado na etapa anterior tiver uma dependência do Pacote de Runtime do Microsoft Visual C++, a versão do Pacote de Runtime do Microsoft Visual C++ compatível com o Windows 10 será v14.0 e ela será instalada com o Visual Studio.
 
 1. Se o SDK de Extensão instalado na etapa anterior tiver dependências de outros SDKs de Extensão, acesse os sites dos fornecedores proprietários das dependências e instale as versões dessas dependências compatíveis com a versão da plataforma de destino do projeto.
 

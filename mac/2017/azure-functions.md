@@ -105,7 +105,7 @@ Você pode usar o procedimento acima para adicionar mais funções ao seu projet
     > [!CAUTION]
     > Há um bug na versão 7.6 do Visual Studio para Mac que fará com que a publicação falhe com um erro de provisionamento se você tentar criar um plano de serviço personalizado com o **Preço** definido como **Consumo**. Isso será corrigido na próxima versão do serviço.
 
-5. Crie em **Próximo** para criar uma conta de armazenamento. Uma conta de armazenamento do Azure é requerida pelo tempo de execução do Functions. Clique em **Personalizado** para criar uma conta de armazenamento de uso geral ou use uma já existente:
+5. Crie em **Próximo** para criar uma conta de armazenamento. Uma conta de armazenamento do Azure é requerida pelo runtime do Functions. Clique em **Personalizado** para criar uma conta de armazenamento de uso geral ou use uma já existente:
 
     ![Opção de menu Publicar no Azure](media/azure-functions-image8.png)
 

@@ -20,7 +20,7 @@ ms.workload:
 monikerRange: vs-2017
 ms.openlocfilehash: 354d984ef8df7bd7c493a04eb0e27b439d82b0d1
 ms.sourcegitcommit: 4f82de3fb0cfae226aef1abb40c47e63d2036a5c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 10/25/2019
 ms.locfileid: "72919152"
@@ -336,7 +336,7 @@ Para saber mais, consulte a postagem no blog [Redgate Data Tools no Visual Studi
 
 .NET Core é uma implementação de software livre, modular, multiplataforma e para fins gerais do .NET Standard que contém muitas das mesmas APIs que o .NET Framework.
 
-A plataforma do .NET Core é composta por vários componentes, incluindo os compiladores gerenciados, o tempo de execução, as bibliotecas de classes base e vários modelos de aplicativo, como o ASP.NET Core. O .NET Core dá suporte aos três principais sistemas operacionais: Windows, Linux e macOS. Você pode usar o .NET Core nos cenários inseridos/de IoT, de dispositivo e de nuvem.
+A plataforma do .NET Core é composta por vários componentes, incluindo os compiladores gerenciados, o runtime, as bibliotecas de classes base e vários modelos de aplicativo, como o ASP.NET Core. O .NET Core dá suporte aos três principais sistemas operacionais: Windows, Linux e macOS. Você pode usar o .NET Core nos cenários inseridos/de IoT, de dispositivo e de nuvem.
 
 Além disso, agora ele é compatível com o Docker.
 

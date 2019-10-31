@@ -8,7 +8,7 @@ ms.technology: vs-ide-install
 ms.assetid: 25CD47A4-5B32-4734-8EF3-E24A02AABF29
 ms.openlocfilehash: 493e03ecd2a10d7cd9e81467d5886f863cd7229b
 ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 10/24/2019
 ms.locfileid: "72888592"
@@ -106,7 +106,7 @@ Você pode usar o procedimento acima para adicionar mais funções ao seu projet
     |**[Grupo de Recursos](/azure/azure-resource-manager/resource-group-overview)**|O Nome do grupo de recursos no qual criar o seu aplicativo de funções. Escolha **+** para criar um novo grupo de recursos.|
     |**[Plano de Serviço](/azure/azure-functions/functions-scale)**|Escolha um plano existente ou crie um personalizado. Escolha um local em uma região perto de você ou perto de outros serviços acessados pelas funções.|
 
-5. Crie em **Próximo** para criar uma conta de armazenamento. Uma conta de armazenamento do Azure é requerida pelo tempo de execução do Functions. Clique em **Personalizado** para criar uma conta de armazenamento de uso geral ou use uma já existente:
+5. Crie em **Próximo** para criar uma conta de armazenamento. Uma conta de armazenamento do Azure é requerida pelo runtime do Functions. Clique em **Personalizado** para criar uma conta de armazenamento de uso geral ou use uma já existente:
 
     ![Opção de menu Publicar no Azure](media/azure-functions-image8.png)
 

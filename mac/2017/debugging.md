@@ -8,7 +8,7 @@ ms.technology: vs-ide-debug
 ms.assetid: BB7A084D-9AC2-48B5-8076-6C8518796BBA
 ms.openlocfilehash: e184daa5271497e158c68989cb43889a03a98802
 ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "62931902"
@@ -90,7 +90,7 @@ Os produtos Xamarin são fornecidos com o código-fonte para bibliotecas de clas
 
 Como esse recurso consome mais memória durante a depuração, ele fica desligado por padrão.
 
-Para habilitar esse recurso, navegue para **Visual Studio para Mac > Preferências > Depurador** e verifique se a opção “**Depurar somente o código do projeto, não intervir no código da estrutura.**” está **desmarcada**, como ilustrado abaixo:
+Para habilitar esse recurso, navegue para **Visual Studio para Mac > Preferências > Depurador** e verifique se a opção “**Depurar somente o código do projeto, não intervir no código da estrutura.** ” está **desmarcada**, como ilustrado abaixo:
 
 ![Opção Não intervir no código da estrutura](media/debugging-image8.png)
 

@@ -53,7 +53,7 @@ A [CUDA](https://developer.nvidia.com/cuda-zone) é uma plataforma de computaç�
 Para instalar a CUDA
 
 - Acesse este [site](https://developer.nvidia.com/cuda-80-ga2-download-archive), baixe a CUDA e instale-a.
-- Não se esqueça de instalar as bibliotecas de tempo de execução CUDA e, em seguida, adicionar o caminho binário CUDA à variável de ambiente %PATH% ou $Path.
+- Não se esqueça de instalar as bibliotecas de runtime CUDA e, em seguida, adicionar o caminho binário CUDA à variável de ambiente %PATH% ou $Path.
 - No Windows, esse caminho é "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\bin" por padrão.
 
 ![Instalar a CUDA no Windows](media/installation/install_cuda_win.png)

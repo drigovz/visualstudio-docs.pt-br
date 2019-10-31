@@ -265,4 +265,4 @@ Valores válidos:
 
 `internal`
 
-Em um modelo de texto de tempo de execução, isso define o atributo visibility da classe gerada. Por padrão, a classe faz parte da API pública do código, mas definir `visibility="internal"` garante que somente seu código possa usar a classe text-generating.
+Em um modelo de texto de runtime, isso define o atributo visibility da classe gerada. Por padrão, a classe faz parte da API pública do código, mas definir `visibility="internal"` garante que somente seu código possa usar a classe text-generating.

@@ -27,7 +27,7 @@ Este método relacionado é o método de suporte para a seguir inserção, atual
 
 - Clique em **Sim**.
 
-     O método selecionado é excluído e as classes que usam esse método substituindo o comportamento de atualização são revertidas para usar o comportamento padrão de tempo de execução LINQ to SQL.
+     O método selecionado é excluído e as classes que usam esse método substituindo o comportamento de atualização são revertidas para usar o comportamento padrão de runtime LINQ to SQL.
 
 ### <a name="to-close-the-message-box-leaving-the-selected-method-unchanged"></a>Para fechar a caixa de mensagem, deixando o método selecionado inalterado
 

@@ -66,7 +66,7 @@ Encapsula a ferramenta de definição de esquema XML (*xsd.exe*), a qual gera ar
 
      Parâmetro **String** opcional.
 
-     Especifica o namespace de tempo de execução para os tipos gerados.
+     Especifica o namespace de runtime para os tipos gerados.
 
 - **Sources**
 

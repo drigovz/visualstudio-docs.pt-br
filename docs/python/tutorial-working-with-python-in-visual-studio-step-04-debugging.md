@@ -13,7 +13,7 @@ ms.workload:
 - data-science
 ms.openlocfilehash: 3f6464986cb94ffa3ab3cc9264ab818112046ea9
 ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "63002820"
@@ -68,7 +68,7 @@ Além de gerenciar projetos, fornecer uma experiência de edição avançada e a
     - **Interromper Tudo** (**Ctrl**+**Alt**+**Break**) pausa um programa de execução longa.
     - **Interromper a Depuração** (**Shift**+**F5**) interrompe o programa no ponto em que está e sai do depurador.
     - **Reiniciar** (**Ctrl**+**Shift**+**F5**) interrompe o programa no ponto em que está e o reinicia no depurador.
-    - **Mostrar Próxima Instrução** (**Alt**+**Num** **&#42;**) alterna para a próxima linha de código a ser executada. Isso é mais útil quando você navega em seu código durante uma sessão de depuração e deseja retornar rapidamente ao ponto em que o depurador está em pausa.
+    - **Mostrar Próxima Instrução** (**Alt**+**Num** **&#42;** ) alterna para a próxima linha de código a ser executada. Isso é mais útil quando você navega em seu código durante uma sessão de depuração e deseja retornar rapidamente ao ponto em que o depurador está em pausa.
     - **Intervir** (**F11**) executa a próxima linha de código, entrando em funções chamadas.
     - **Contornar** (**F10**) executa a próxima linha de código sem entrar em funções chamadas.
     - **Sair** (**Shift**+**F11**) executa o restante da função atual e pausa no código de chamada.

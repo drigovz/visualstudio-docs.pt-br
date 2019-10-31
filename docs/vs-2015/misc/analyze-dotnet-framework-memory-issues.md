@@ -133,7 +133,7 @@ Encontre perdas de memória e uso ineficiente da memória no código do .NET Fra
   
 - **Tamanho inclusivo (Bytes)** inclui os tamanhos de objetos referenciados.  
   
-  Por padrão, os tipos e as instâncias são classificadas por **tamanho inclusivo (Bytes)**. Escolha um cabeçalho de coluna na lista para alterar a ordem de classificação.  
+  Por padrão, os tipos e as instâncias são classificadas por **tamanho inclusivo (Bytes)** . Escolha um cabeçalho de coluna na lista para alterar a ordem de classificação.  
   
 #### <a name="paths-to-root"></a>Caminhos para a Raiz  
   

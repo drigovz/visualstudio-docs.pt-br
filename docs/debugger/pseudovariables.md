@@ -46,7 +46,7 @@ As pseudovariáveis são termos usados para exibir determinadas informações em
 |`$` *registername*<br /><br /> ou<br /><br /> `@` *registername*|Exibe o conteúdo do registro *registername*.<br /><br /> Normalmente, você pode exibir conteúdo do registro simplesmente inserindo o nome do registro. A única vez que você precisa usar essa sintaxe é quando o nome do registro sobrecarrega um nome de variável. Se o nome do registro for igual ao nome da variável no escopo atual, o depurador interpretará o nome como um nome de variável. É nesse momento que `$`*registername* ou `@`*registername* é útil.|
 |`$clk`|Exibe a hora em ciclos de relógio.|
 |`$user`|Exibe uma estrutura com informações de conta para a conta que executa o aplicativo. Por motivo de segurança, as informações de senha não são exibidas.|
-|`$exceptionstack`|Exibe o rastreamento de pilha da exceção atual de Tempo de Execução do Windows. `$ exceptionstack` funciona somente em aplicativos UWP. Não há suporte para `$ exceptionstack` C++ para exceções Seh e|
+|`$exceptionstack`|Exibe o rastreamento de pilha da exceção atual de Windows Runtime. `$ exceptionstack` funciona somente em aplicativos UWP. Não há suporte para `$ exceptionstack` C++ para exceções Seh e|
 |`$returnvalue`|Exibe o valor de retorno de um método .NET.|
 
  No C# , você pode usar o pseudovariables mostrado na tabela a seguir:
