@@ -6,16 +6,19 @@ manager: lank
 ms.date: 08/02/2019
 ms.topic: conceptual
 description: Saiba mais sobre o benefício do Office 365 incluído em algumas assinaturas do Visual Studio.
-ms.openlocfilehash: 65a071cbfcdc31ca2ef8a36ac5a779fc99467c17
-ms.sourcegitcommit: bcdab788085bd9931d73883fe70cd5831317dca2
+ms.openlocfilehash: 58bfed3de99e3a3fa0a46e084ea566ae0451c47f
+ms.sourcegitcommit: bdccab4c2dbd50ea8adaaf88c69c9ca32db88099
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72816467"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73144711"
 ---
 # <a name="office-365-proplus-in-visual-studio-subscriptions"></a>Office 365 ProPlus em Assinaturas do Visual Studio
 
 Crie seu melhor trabalho. Trabalhe em qualquer lugar com aplicativos que estão sempre atualizados. O Office 365 ProPlus é uma assinatura que acompanha aplicativos premium, como Word, Excel, PowerPoint, OneNote, Outlook, Publisher e Access (Publisher e Access disponíveis apenas no PC). Os aplicativos podem ser instalados em vários dispositivos, incluindo PCs, Macs, iPads, iPhones, tablets Android e telefones Android. Com uma assinatura, você obtém as últimas versões dos aplicativos e recebe atualizações automaticamente quando elas são disponibilizadas.
+
+> [!NOTE]
+> Sua assinatura do Visual Studio lhe dá direito a usar o Office 365 para uso em produção.  
 
 ## <a name="getting-started-with-office-365-proplus"></a>Introdução ao Office 365 ProPlus
 
@@ -42,10 +45,6 @@ Siga estas etapas para baixar e ativar o Office 365 ProPlus:
    > ![Inserir chave do produto (Product Key) do Office 365](_img/vs-office365/vs-office365-enter-key.png)
 0. Clique em **Avançar** novamente.
 0. Clique em **Instalar** para instalar os aplicativos do Office.
-
-## <a name="next-steps"></a>Próximas etapas
-
-Se você planeja desenvolver aplicativos para o Office, convém ativar sua [Assinatura de Desenvolvedor do Office](vs-office-dev.md)
 
 ## <a name="eligibility"></a>Qualificação
 
@@ -75,4 +74,4 @@ Não tem certeza de qual assinatura você está usando?  Conecte-se ao [https://
 Certifique-se de ativar estes excelentes benefícios para aproveitar ao máximo sua assinatura do Visual Studio:
 - [Visual Studio](vs-ide-benefit.md)
 - [Azure DevOps](vs-azure-devops.md)
-- [Crédito individual do Azure DevTest](vs-azure.md)
+- [Crédito individual do Azure DevTest](vs-azure.md) Se estiver planejando desenvolver aplicativos para o Office, você desejará ativar sua [assinatura de desenvolvedor do Office](vs-office-dev.md)
