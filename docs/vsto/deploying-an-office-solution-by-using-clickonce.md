@@ -307,7 +307,7 @@ ms.locfileid: "72986127"
 5. Copie o arquivo *ExcelWorkbook. vsto* para o diretório **C:\publish\Application Files\ExcelWorkbook**\__MostRecentVersionNumber_ .
 
 ## <a name="SharePoint"></a>Colocar o documento de uma solução em um servidor que executa o SharePoint (somente personalizações em nível de documento)
- Você pode publicar sua personalização no nível de documento para os usuários finais usando o SharePoint. Quando os usuários acessam o site do SharePoint e abrem o documento, o tempo de execução instala a solução automaticamente da pasta de rede compartilhada no computador local do usuário. Depois que a solução estiver localmente instalada, a personalização continuará funcionando mesmo que o documento seja copiado em qualquer lugar, como na área de trabalho, por exemplo.
+ Você pode publicar sua personalização no nível de documento para os usuários finais usando o SharePoint. Quando os usuários acessam o site do SharePoint e abrem o documento, o runtime instala a solução automaticamente da pasta de rede compartilhada no computador local do usuário. Depois que a solução estiver localmente instalada, a personalização continuará funcionando mesmo que o documento seja copiado em qualquer lugar, como na área de trabalho, por exemplo.
 
 #### <a name="to-put-the-document-on-a-server-thats-running-sharepoint"></a>Para colocar o documento em um servidor que está executando o SharePoint
 

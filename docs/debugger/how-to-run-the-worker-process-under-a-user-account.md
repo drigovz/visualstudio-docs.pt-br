@@ -37,7 +37,7 @@ Para configurar o computador de modo que você possa executar o processo de trab
 
 #### <a name="to-run-aspnet_wpexe-under-a-user-account"></a>Para executar aspnet_wp.exe em uma conta de usuário
 
-1. Abra o arquivo machine.config, localizado no computador na pasta CONFIGURATION no caminho onde você instalou o tempo de execução.
+1. Abra o arquivo machine.config, localizado no computador na pasta CONFIGURATION no caminho onde você instalou o runtime.
 
 2. Localize a seção &lt;processModel&gt; e altere os atributos de usuário e de senha para o nome e a senha da conta de usuário com a qual você deseja que o aspnet_wp.exe seja executado.
 

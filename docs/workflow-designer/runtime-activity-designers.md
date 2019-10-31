@@ -10,13 +10,13 @@ ms.workload:
 - multiple
 ms.openlocfilehash: fb62644b362a7630d454db2740b354c546b0155b
 ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 10/19/2019
 ms.locfileid: "72649982"
 ---
-# <a name="runtime-activity-designers"></a>Designer de atividade do tempo de execução
-Os designers de atividade de tempo de execução são usados para persistir e finalizar atividades de fluxo de trabalho. Os tópicos contidos nesta seção fornecem orientação sobre como usar os designers de atividade de Designer de Fluxo de Trabalho.
+# <a name="runtime-activity-designers"></a>Designer de atividade do runtime
+Os designers de atividade de runtime são usados para persistir e finalizar atividades de fluxo de trabalho. Os tópicos contidos nesta seção fornecem orientação sobre como usar os designers de atividade de Designer de Fluxo de Trabalho.
 
 ## <a name="related-sections"></a>Seções relacionadas
  [Fluxo de Controle](../workflow-designer/control-flow-activity-designers.md)

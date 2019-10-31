@@ -8,7 +8,7 @@ ms.assetid: 6E8B0C90-33D6-4546-8207-CE0787584565
 ms.custom: video
 ms.openlocfilehash: 6260233d564421ce3fc32c9700c4430989a4f53b
 ms.sourcegitcommit: d2b234e0a4a875c3cba09321cdf246842670d872
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 07/01/2019
 ms.locfileid: "67493731"

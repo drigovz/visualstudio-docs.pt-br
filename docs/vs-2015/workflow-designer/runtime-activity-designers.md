@@ -16,8 +16,8 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 10/19/2019
 ms.locfileid: "72663307"
 ---
-# <a name="runtime-activity-designers"></a>Designer de atividade do tempo de execução
-Os designers de atividade de tempo de execução são usados para persistir e finalizar atividades de fluxo de trabalho. Os tópicos contidos nesta seção fornecem orientação sobre como usar o designer de atividade de [!INCLUDE[wfd2](../includes/wfd2-md.md)] .
+# <a name="runtime-activity-designers"></a>Designer de atividade do runtime
+Os designers de atividade de runtime são usados para persistir e finalizar atividades de fluxo de trabalho. Os tópicos contidos nesta seção fornecem orientação sobre como usar o designer de atividade de [!INCLUDE[wfd2](../includes/wfd2-md.md)] .
 
 ## <a name="in-this-section"></a>Nesta seção
  [Persistir](../workflow-designer/persist-activity-designer.md) Usado para criar e configurar uma atividade de <xref:System.Activities.Statements.Persist>.

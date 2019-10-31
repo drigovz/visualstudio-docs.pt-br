@@ -8,7 +8,7 @@ ms.technology: vs-ide-debug
 ms.assetid: BB7A084D-9AC2-48B5-8076-6C8518796BBA
 ms.openlocfilehash: 3578e3e903470f857192643a3da47d62e87da934
 ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 07/09/2019
 ms.locfileid: "67691719"

@@ -144,7 +144,7 @@ Os testes de unidade no Visual Studio podem ser configurados com um arquivo *.ru
  Para personalizar qualquer outro tipo de adaptador de dados de diagnóstico, você deve usar um arquivo de configurações de teste. Para obter mais informações, consulte [Especificando configurações de teste do Visual Studio](https://msdn.microsoft.com/library/0c15317e-80c6-4317-aed3-82b8e15e3901).
 
 #### <a name="testrunparameters"></a>TestRunParameters
- TestRunParameters fornece uma maneira de definir variáveis e valores disponíveis para os testes em tempo de execução.
+ TestRunParameters fornece uma maneira de definir variáveis e valores disponíveis para os testes em runtime.
 
 ### <a name="mstest-run-settings"></a>Configurações de execução do MSTest
  Essas configurações são específicas para o adaptador de teste que executa os métodos de teste que têm o atributo `[TestMethod]`.

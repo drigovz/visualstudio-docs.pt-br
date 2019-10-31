@@ -35,7 +35,7 @@ As [interfaces do criador de perfil de script ativo](../winscript/reference/acti
  O mecanismo de linguagem implementa a [Interface IActiveScriptProfilerControl](../winscript/reference/iactivescriptprofilercontrol-interface.md).  
   
 > [!NOTE]
-> O tempo de execução da linguagem [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] verifica a variável de ambiente JS_PROFILER na criação para determinar se a criação de perfil deve ser habilitada. Se essa variável é definida para o CLSID do criador de perfil, o tempo de execução da linguagem cria uma instância do objeto COM do criador de perfil, usando o valor da variável para determinar qual criador de perfil criar.  
+> O tempo de execução da linguagem [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] verifica a variável de ambiente JS_PROFILER na criação para determinar se a criação de perfil deve ser habilitada. Se essa variável é definida para o CLSID do criador de perfil, o runtime da linguagem cria uma instância do objeto COM do criador de perfil, usando o valor da variável para determinar qual criador de perfil criar.  
   
 ## <a name="host"></a>Host  
  O host cria o mecanismo de linguagem e fornece a ele scripts a serem executados. Um host inteligente também fornece o contexto de documento que pode ser usado por um depurador ou criador de perfil para fornecer melhores informações quando você está depurando ou criando perfis.  

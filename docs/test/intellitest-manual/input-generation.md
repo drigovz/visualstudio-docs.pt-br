@@ -51,7 +51,7 @@ O IntelliTest usa o solver de restrição [Z3](https://github.com/Z3Prover/z3/wi
 
 ## <a name="dynamic-code-coverage"></a>Cobertura de código dinâmica
 
-Como um efeito colateral do monitoramento do tempo de execução, o IntelliTest coleta dados de cobertura de código dinâmica.
+Como um efeito colateral do monitoramento do runtime, o IntelliTest coleta dados de cobertura de código dinâmica.
 Ela é chamada de *dinâmica* porque o IntelliTest sabe apenas sobre o código que foi executado, portanto ele não pode fornecer valores absolutos para a cobertura da mesma maneira que outra ferramenta de cobertura normalmente faz.
 
 Por exemplo, quando o IntelliTest informa a cobertura dinâmica como blocos básicos de 5/10, isso significa que cinco blocos de dez foram abrangidos, em que o número total de blocos em todos os métodos que foram alcançados até agora pela análise (em vez de todos os métodos que existem no assembly em teste) é de dez.

@@ -11,7 +11,7 @@ ms.workload:
 - dotnet
 ms.openlocfilehash: c23fe867c3825958f1e2f1c3b7fedc3dd15d840e
 ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 05/28/2019
 ms.locfileid: "66261606"

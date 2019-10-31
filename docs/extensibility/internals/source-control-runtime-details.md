@@ -17,7 +17,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 10/22/2019
 ms.locfileid: "72723404"
 ---
-# <a name="source-control-runtime-details"></a>Detalhes de tempo de execução de controle do código-fonte
+# <a name="source-control-runtime-details"></a>Detalhes de runtime de controle do código-fonte
 Um projeto é adicionado ao controle do código-fonte quando o usuário adiciona um arquivo no projeto ao controle do código-fonte ou por meio de um controlador de automação, como um assistente. Um projeto não especifica se ele está sob controle do código-fonte; Ele dá suporte ao controle do código-fonte, mas deve ser adicionado a ele manualmente.
 
 ## <a name="registering-with-a-source-control-package"></a>Registrando com um pacote de controle do código-fonte

@@ -12,7 +12,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 97644776f4197e2f3286d29cbd3f746f7ecd0b15
 ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "62809646"
@@ -26,7 +26,7 @@ Por padrão, o método de amostragem das Ferramentas de Criação de Perfil do V
 
 É possível especificar o método de amostragem usando um dos seguintes recursos:
 
-- Na primeira página do Assistente de Criação de Perfil, clique em **Amostragem de CPU (recomendada)**.
+- Na primeira página do Assistente de Criação de Perfil, clique em **Amostragem de CPU (recomendada)** .
 - Na barra de ferramentas **Gerenciador de Desempenho**, na lista **Método**, clique em **Amostragem**.
 - Na página **Geral** da caixa de diálogo de propriedades da sessão de desempenho, clique em **Amostragem**.
 

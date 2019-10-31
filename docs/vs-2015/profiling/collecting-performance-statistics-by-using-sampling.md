@@ -33,7 +33,7 @@ Por padrão, o método de amostragem das Ferramentas de Criação de Perfil [!IN
   
  É possível especificar o método de amostragem usando um dos seguintes recursos:  
   
-- Na primeira página do Assistente de Criação de Perfil, clique em **Amostragem de CPU (recomendada)**.  
+- Na primeira página do Assistente de Criação de Perfil, clique em **Amostragem de CPU (recomendada)** .  
   
 - Na barra de ferramentas **Gerenciador de Desempenho**, na lista **Método**, clique em **Amostragem**.  
   

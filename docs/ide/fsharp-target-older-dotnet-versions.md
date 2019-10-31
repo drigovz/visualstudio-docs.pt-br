@@ -30,7 +30,7 @@ Esse erro costuma ocorrer na seguinte combinação de condições:
 
 - O projeto é direcionado ao .NET Framework 2.0, 3.0 ou 3.5.
 
-Quando você instala o Visual Studio, ele detecta as versões instaladas do .NET Framework. O Visual Studio instala o tempo de execução do F# 2.0 somente se o .NET Framework 3.5 está instalado e habilitado.
+Quando você instala o Visual Studio, ele detecta as versões instaladas do .NET Framework. O Visual Studio instala o runtime do F# 2.0 somente se o .NET Framework 3.5 está instalado e habilitado.
 
 ## <a name="resolve-the-error"></a>Resolver o erro
 
@@ -38,7 +38,7 @@ Para resolver esse erro, você pode:
 
 - Usar como destino uma versão mais recente do .NET Framework.
 
-- Habilitar o .NET Framework 3.5 no Windows 8.1 e, em seguida, instalar o tempo de execução do F# 2.0 ao reparar a instalação do Visual Studio. Veja a seguir as etapas para fazer isso.
+- Habilitar o .NET Framework 3.5 no Windows 8.1 e, em seguida, instalar o runtime do F# 2.0 ao reparar a instalação do Visual Studio. Veja a seguir as etapas para fazer isso.
 
 ### <a name="to-enable-the-net-framework-35-on-windows-81"></a>Para habilitar o .NET Framework 3.5 no Windows 8.1
 
@@ -52,7 +52,7 @@ Para resolver esse erro, você pode:
 
    O .NET Framework 3.5 será habilitado, caso ainda não estivesse.
 
-### <a name="to-install-the-f-20-runtime"></a>Para instalar o tempo de execução do F# 2.0
+### <a name="to-install-the-f-20-runtime"></a>Para instalar o runtime do F# 2.0
 
 Siga as [etapas para reparar o Visual Studio](../install/repair-visual-studio.md).
 

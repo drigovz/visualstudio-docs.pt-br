@@ -38,7 +38,7 @@ Nesta introdução de 5 a 10 minutos do IDE (ambiente de desenvolvimento integra
     Se você ainda não instalou o Visual Studio 2017, acesse a página  [Downloads do Visual Studio](https://visualstudio.microsoft.com/downloads/)  para instalá-lo gratuitamente.
     ::: moniker-end
 
-    Caso precise instalar a carga de trabalho, mas já tiver o Visual Studio, acesse **Ferramentas** > **Obter Ferramentas e Funcionalidades...**, que abre o Instalador do Visual Studio. Escolha a carga de trabalho **Desenvolvimento de Node.js** e, em seguida, selecione **Modificar**.
+    Caso precise instalar a carga de trabalho, mas já tiver o Visual Studio, acesse **Ferramentas** > **Obter Ferramentas e Funcionalidades...** , que abre o Instalador do Visual Studio. Escolha a carga de trabalho **Desenvolvimento de Node.js** e, em seguida, selecione **Modificar**.
 
     ![Carga de trabalho Node.js no instalador do VS](../ide/media/quickstart-nodejs-workload.png)
 
@@ -106,7 +106,7 @@ Primeiro, você criará um projeto de aplicativo Web Vue.js.
 
 1. Em seguida, escolha **Compilar** > **Compilar Solução** para criar o projeto. Verifique a janela de **Saída** para ver os resultados do build e escolha **Build** na lista **Mostrar saída de**.
 
-    O modelo de projeto Vue.js usa o script npm `build`, configurando um evento pós-build. Caso deseje modificar essa configuração, abra o arquivo de projeto (*\<projectname\>.njsproj*) no Windows Explorer e localize esta linha de código:
+    O modelo de projeto Vue.js usa o script npm `build`, configurando um evento pós-build. Caso deseje modificar essa configuração, abra o arquivo de projeto ( *\<projectname\>.njsproj*) no Windows Explorer e localize esta linha de código:
 
     ```xml
     <PostBuildEvent>npm run build</PostBuildEvent>

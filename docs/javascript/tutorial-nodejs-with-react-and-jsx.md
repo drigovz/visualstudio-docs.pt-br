@@ -37,7 +37,7 @@ Aqui está algumas perguntas frequentes rápidas para apresentar alguns conceito
 
 ### <a name="what-is-nodejs"></a>O que é o Node.js?
 
-O Node.js é um ambiente de tempo de execução do JavaScript do servidor que executa o JavaScript no servidor.
+O Node.js é um ambiente de runtime do JavaScript do servidor que executa o JavaScript no servidor.
 
 ### <a name="what-is-npm"></a>O que é o npm?
 
@@ -70,11 +70,11 @@ O webpack empacota arquivos JavaScript para que eles possam ser executados em um
 
     ![Carga de trabalho Node.js no instalador do VS](../ide/media/quickstart-nodejs-workload.png)
 
-* Você precisa ter o tempo de execução do Node.js instalado.
+* Você precisa ter o runtime do Node.js instalado.
 
     Este tutorial foi testado com a versão 10.16.0.
 
-    Se não o tiver instalado, instale a versão LTS do site do [Node.js](https://nodejs.org/en/download/). Em geral, o Visual Studio detecta automaticamente o tempo de execução do Node.js instalado. Se ele não detectar um tempo de execução instalado, você poderá configurar seu projeto para fazer referência ao tempo de execução instalado na página de propriedades (depois de criar um projeto, clique com botão direito do mouse no nó do projeto e escolha **Propriedades**).
+    Se não o tiver instalado, instale a versão LTS do site do [Node.js](https://nodejs.org/en/download/). Em geral, o Visual Studio detecta automaticamente o runtime do Node.js instalado. Se ele não detectar um tempo de execução instalado, você poderá configurar seu projeto para fazer referência ao tempo de execução instalado na página de propriedades (depois de criar um projeto, clique com botão direito do mouse no nó do projeto e escolha **Propriedades**).
 
 ## <a name="create-a-project"></a>Criar um projeto
 

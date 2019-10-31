@@ -97,7 +97,7 @@ Aplicativos e plataformas sem suporte incluem ASP.NET 5, Silverlight 5 e Windows
 
 - Depurando um despejo de Dr. Watson.
 
-- Depurando um aplicativo inserido de tempo de execução.
+- Depurando um aplicativo inserido de runtime.
 
 - Depuração de um aplicativo usando anexar ao processo (**depurar > anexar ao processo**) em vez de executar o aplicativo escolhendo **Iniciar** no menu **depurar** .
 

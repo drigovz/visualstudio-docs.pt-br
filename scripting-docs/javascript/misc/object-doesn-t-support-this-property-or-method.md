@@ -28,7 +28,7 @@ Você especificou uma propriedade ou um método que não existe para esse objeto
   
 - Verifique as propriedades e os métodos em busca de erros de digitação.  
   
-- Verifique se o tipo de tempo de execução do objeto é o tipo de objeto esperado.  
+- Verifique se o tipo de runtime do objeto é o tipo de objeto esperado.  
   
 - Confira a documentação do objeto para saber mais.  
   

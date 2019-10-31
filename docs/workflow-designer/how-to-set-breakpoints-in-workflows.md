@@ -19,7 +19,7 @@ ms.locfileid: "72650327"
 
 Ao usar Designer de Fluxo de Trabalho, você pode definir pontos de interrupção em seus fluxos de trabalho gráficos como faria em Visual Basic ou C# código. Como esperado, a execução de fluxo de trabalho que ele pare em cada ponto de interrupção esse definido.
 
-Um ponto de interrupção tem três Estados: *pendente*, *associado*e *erro*. Quando você definir um ponto de interrupção, ele está pendente, e ele é representado por um ícone vermelho contínuo. Quando o tempo de execução carregado o tipo de fluxo de trabalho, transformações limite. Se você especificar um formato incorreto do ponto de interrupção, como um nome de atividade que não é válida, uma janela de erro aparece. O ponto de interrupção é adicionado ainda para a janela de ponto de interrupção, mas é marcado com um pequeno “x”.
+Um ponto de interrupção tem três Estados: *pendente*, *associado*e *erro*. Quando você definir um ponto de interrupção, ele está pendente, e ele é representado por um ícone vermelho contínuo. Quando o runtime carregado o tipo de fluxo de trabalho, transformações limite. Se você especificar um formato incorreto do ponto de interrupção, como um nome de atividade que não é válida, uma janela de erro aparece. O ponto de interrupção é adicionado ainda para a janela de ponto de interrupção, mas é marcado com um pequeno “x”.
 
 > [!NOTE]
 > Os pontos de interrupção em fluxos de trabalho chamados não são suportados.

@@ -17,18 +17,18 @@ ms.locfileid: "72777752"
 ---
 # <a name="using-net-4x-in-unity"></a>Usar o .NET 4.x no Unity
 
-C# e .NET, as tecnologias subjacentes ao script do Unity, continuam a receber atualizações, uma vez que a Microsoft as lançou originalmente em 2002. Mas os desenvolvedores do Unity podem não estar cientes do fluxo constante de novos recursos adicionados à linguagem C# e ao .NET Framework. Isso ocorre porque antes do Unity 2017.1, o Unity tem usado um tempo de execução de script equivalente ao .NET 3.5, que ficou anos sem atualizações.
+C# e .NET, as tecnologias subjacentes ao script do Unity, continuam a receber atualizações, uma vez que a Microsoft as lançou originalmente em 2002. Mas os desenvolvedores do Unity podem não estar cientes do fluxo constante de novos recursos adicionados à linguagem C# e ao .NET Framework. Isso ocorre porque antes do Unity 2017.1, o Unity tem usado um runtime de script equivalente ao .NET 3.5, que ficou anos sem atualizações.
 
-Com o lançamento do Unity 2017.1, o Unity introduziu uma versão experimental do seu tempo de execução de script atualizado para uma versão compatível com o .NET 4.6 e o C# 6. No Unity 2018.1, o tempo de execução equivalente ao .NET 4.x não é mais considerado experimental, enquanto o tempo de execução equivalente ao .NET 3.5 mais antigo agora é considerado como a versão herdada. E com o lançamento do Unity 2018.3, o Unity está projetando tornar o tempo de execução de script atualizado a seleção padrão, além de atualizar mais, para o C# 7. Para obter mais informações e as atualizações mais recentes sobre este roteiro, leia a [postagem de blog](https://blogs.unity3d.com/2018/07/11/scripting-runtime-improvements-in-unity-2018-2/) do Unity ou acesse seu [Fórum de visualizações de script experimental](https://forum.unity.com/forums/experimental-scripting-previews.107/). Enquanto isso, confira as seções abaixo para saber mais sobre os novos recursos disponíveis com o tempo de execução de script do .NET 4.x.
+Com o lançamento do Unity 2017.1, o Unity introduziu uma versão experimental do seu runtime de script atualizado para uma versão compatível com o .NET 4.6 e o C# 6. No Unity 2018.1, o runtime equivalente ao .NET 4.x não é mais considerado experimental, enquanto o runtime equivalente ao .NET 3.5 mais antigo agora é considerado como a versão herdada. E com o lançamento do Unity 2018.3, o Unity está projetando tornar o runtime de script atualizado a seleção padrão, além de atualizar mais, para o C# 7. Para obter mais informações e as atualizações mais recentes sobre este roteiro, leia a [postagem de blog](https://blogs.unity3d.com/2018/07/11/scripting-runtime-improvements-in-unity-2018-2/) do Unity ou acesse seu [Fórum de visualizações de script experimental](https://forum.unity.com/forums/experimental-scripting-previews.107/). Enquanto isso, confira as seções abaixo para saber mais sobre os novos recursos disponíveis com o runtime de script do .NET 4.x.
 
 ## <a name="prerequisites"></a>Prerequisites
 
 * [Unity 2017.1 ou superior](https://unity3d.com/) (2018.2 recomendado)
 * [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)
 
-## <a name="enabling-the-net-4x-scripting-runtime-in-unity"></a>Habilitar o tempo de execução de script do .NET 4.x no Unity
+## <a name="enabling-the-net-4x-scripting-runtime-in-unity"></a>Habilitar o runtime de script do .NET 4.x no Unity
 
-Para habilitar o tempo de execução de script do .NET 4.x, execute as seguintes etapas:
+Para habilitar o runtime de script do .NET 4.x, execute as seguintes etapas:
 
 1. Abra as PlayerSettings no Inspetor do Unity, selecionando **Editar > Configurações do projeto > Player**.
 
@@ -66,7 +66,7 @@ O Visual Studio regenera os arquivos .csproj e .sln para projetos do Unity cada 
 
 ## <a name="taking-advantage-of-net-compatibility"></a>Aproveitando a compatibilidade do .NET
 
-Além dos novos recursos de linguagem de programação e de sintaxe do C#, o tempo de execução de script do .NET 4.x oferece aos usuários do Unity acesso a uma enorme biblioteca de pacotes do .NET que são incompatíveis com o tempo de execução de script do .NET 3.5 herdado.
+Além dos novos recursos de linguagem de programação e de sintaxe do C#, o runtime de script do .NET 4.x oferece aos usuários do Unity acesso a uma enorme biblioteca de pacotes do .NET que são incompatíveis com o runtime de script do .NET 3.5 herdado.
 
 ### <a name="add-packages-from-nuget-to-a-unity-project"></a>Adicionar pacotes do NuGet a um projeto do Unity
 
@@ -130,11 +130,11 @@ Esse é um exemplo simples do uso de uma biblioteca sem dependências. Quando os
 
 ## <a name="new-syntax-and-language-features"></a>Novos recursos de linguagem e de sintaxe
 
-Usar o tempo de execução de script atualizado dá aos desenvolvedores do Unity acesso a C# 6 e a uma série de novos recursos de linguagem e de sintaxe.
+Usar o runtime de script atualizado dá aos desenvolvedores do Unity acesso a C# 6 e a uma série de novos recursos de linguagem e de sintaxe.
 
 ### <a name="auto-property-initializers"></a>Inicializadores de propriedade automática
 
-No tempo de execução de script do Unity .NET 3.5, a sintaxe de propriedade automática torna mais fácil definir rapidamente as propriedades não inicializadas, mas a inicialização precisa ocorrer em outro lugar no seu script. Agora, com o tempo de execução .NET 4.x, é possível inicializar as propriedades automáticas na mesma linha:
+No runtime de script do Unity .NET 3.5, a sintaxe de propriedade automática torna mais fácil definir rapidamente as propriedades não inicializadas, mas a inicialização precisa ocorrer em outro lugar no seu script. Agora, com o runtime .NET 4.x, é possível inicializar as propriedades automáticas na mesma linha:
 
 ```csharp
 // .NET 3.5
@@ -146,7 +146,7 @@ public int Health { get; set; } = 100;
 
 ### <a name="string-interpolation"></a>Interpolação de cadeias de caracteres
 
-Com o tempo de execução mais antigo do .NET 3.5, a concatenação de cadeia de caracteres exigia uma sintaxe estranha. Agora, com o tempo de execução .NET 4.x, o recurso de [interpolação de cadeia de caracteres de `$`](https://docs.microsoft.com/dotnet/csharp/language-reference/tokens/interpolated) permite que as expressões sejam inseridas em cadeias de caracteres em uma sintaxe mais legível e direta:
+Com o runtime mais antigo do .NET 3.5, a concatenação de cadeia de caracteres exigia uma sintaxe estranha. Agora, com o tempo de execução .NET 4.x, o recurso de [interpolação de cadeia de caracteres de `$`](https://docs.microsoft.com/dotnet/csharp/language-reference/tokens/interpolated) permite que as expressões sejam inseridas em cadeias de caracteres em uma sintaxe mais legível e direta:
 
 ```csharp
 // .NET 3.5
