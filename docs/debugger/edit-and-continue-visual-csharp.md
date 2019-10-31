@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a4d11875a7ab2ca3f21f364308580a732b7516e6
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 5d54673ee46c594bd1a4bea2990d3b9bbe90ce1f
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72737929"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188197"
 ---
 # <a name="edit-and-continue-visual-c"></a>Editar e continuar (Visual C#)
  Com a função Editar e Continuar no C#, é possível fazer alterações em seu código no modo de interrupção durante a depuração. As alterações podem ser aplicadas sem precisar interromper e reiniciar a sessão de depuração. No modo de execução, o editor de origem é somente leitura.
@@ -41,4 +41,4 @@ ms.locfileid: "72737929"
 ## <a name="see-also"></a>Consulte também
 - [Como usar Editar e Continuar (C#)](../debugger/how-to-use-edit-and-continue-csharp.md)
 - [Alterações de código comC# suporte (e Visual Basic)](../debugger/supported-code-changes-csharp.md)
-- [Escrever e depurar o código XAML em execução com o Hot recarregamento de XAML no Visual Studio](../debugger/xaml-hot-reload.md)
+- [Escrever e depurar o código XAML em execução com o Hot recarregamento de XAML no Visual Studio](../xaml-tools/xaml-hot-reload.md)

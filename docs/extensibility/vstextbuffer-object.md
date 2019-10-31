@@ -13,35 +13,35 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2a324db2226056fd3f41180055600671a8979a67
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: d1895efa9ef10e1e554b98844619507224f09126
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66312798"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189030"
 ---
 # <a name="vstextbuffer-object"></a>Objeto VSTextBuffer
-O objeto de buffer de texto representa um fluxo de texto em Unicode, que é geralmente associado um arquivo. Um <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> objeto pode ser usado fora do contexto do editor de núcleo, por exemplo, um assistente.
+O objeto buffer de texto representa um fluxo de texto Unicode, que geralmente está associado a um arquivo. Um objeto <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> pode ser usado fora do contexto do editor principal, como no, um assistente.
 
  A tabela a seguir mostra as interfaces de `VSTextBuffer`.
 
 |Método|Descrição|
 |------------|-----------------|
-|[IOleCommandTarget](/windows/desktop/api/docobj/nn-docobj-iolecommandtarget)|Interface OLE padrão. Usado para manipulação no buffer de desfazer/refazer.|
+|[IOleCommandTarget](/windows/desktop/api/docobj/nn-docobj-iolecommandtarget)|Interface OLE padrão. Usado para a manipulação de desfazer/refazer no buffer.|
 |[IPersistFile](/windows/desktop/api/objidl/nn-objidl-ipersistfile)|Interface OLE padrão.|
 |[IPersistStream](/windows/desktop/api/objidl/nn-objidl-ipersiststream)|Interface OLE padrão.|
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompoundAction>|Permite a criação de ações de compostos (ou seja, ações que são agrupadas em uma unidade de desfazer/refazer único).|
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData>|Habilita a persistência de dados do documento gerenciados pelo buffer de texto.|
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompoundAction>|Habilita a criação de ações de compostos (ou seja, ações agrupadas em uma única unidade de desfazer/refazer).|
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData>|Habilita a persistência de dados de documento gerenciados pelo buffer de texto.|
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>|Fornece serviços básicos; usado por muitos clientes.|
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextFind>|Usado para pesquisar um buffer.|
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines>|Fornece ler e gravar recursos usando as coordenadas bidimensionais. Herda de `IVsTextBuffer`.|
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStream>|Fornece ler e gravar recursos usando coordenadas unidimensionais. Herda de `IVsTextBuffer`.|
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextScanner>|Rápido e fornece acesso sequencial orientada por fluxo para o texto no buffer.|
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsUserData>|Fornece acesso a uma coleção genérica de propriedades. A propriedade mais importante é o nome ou o moniker do buffer. Você pode armazenar seus próprios dados aleatórios em buffer com essa interface criando um GUID e usá-lo como uma chave.|
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines>|Fornece recursos de leitura e gravação usando coordenadas bidimensionais. Herda de `IVsTextBuffer`.|
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStream>|Fornece recursos de leitura e gravação usando coordenadas unidimensionais. Herda de `IVsTextBuffer`.|
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextScanner>|Fornece acesso seqüencial rápido, orientado a fluxo, ao texto no buffer.|
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsUserData>|Fornece acesso a uma coleção genérica de propriedades. A propriedade mais importante é o nome, ou moniker, do buffer. Você pode armazenar seus próprios dados aleatórios no buffer com essa interface criando um GUID e usando-o como uma chave.|
 |<xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer>|Dá suporte a pontos de conexão para eventos.|
 
 ## <a name="remarks"></a>Comentários
- O `VSTextBuffer` costuma ser encontrado por um `QueryInterface` chamar em `IVsTextBuffer`. Para obter mais informações, consulte [buffer de texto](../extensibility/accessing-the-text-buffer-by-using-the-legacy-api.md).
+ A `VSTextBuffer` geralmente é encontrada por uma chamada de `QueryInterface` no `IVsTextBuffer`. Para obter mais informações, consulte [buffer de texto](/visualstudio/extensibility/accessing-the-text-buffer-by-using-the-legacy-api?view=vs-2015).
 
 ## <a name="see-also"></a>Consulte também
 - <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>

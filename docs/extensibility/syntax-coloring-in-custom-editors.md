@@ -10,12 +10,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f4302f463d93776d17be0251e6194375c15adc19
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: a62fd7a8ab0673d6a6020fb7d73f04488ff23485
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72718764"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188848"
 ---
 # <a name="syntax-coloring-in-custom-editors"></a>Coloração de sintaxe em editores personalizados
 Os editores do SDK do ambiente do Visual Studio, incluindo o editor principal, usam os serviços de linguagem para identificar itens sintáticos específicos e os exibem com cores especificadas para uma determinada exibição de documento.
@@ -52,7 +52,7 @@ Os editores do SDK do ambiente do Visual Studio, incluindo o editor principal, u
 3. Use as informações de colorização retornadas por <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A> redesenhar e exibir seu texto.
 
 > [!NOTE]
-> Além de usar o Colorizer de um serviço de linguagem, um VSPackage pode optar por usar o mecanismo de coloração de texto do SDK do ambiente do Visual Studio para fins gerais. Para obter mais informações sobre esse mecanismo, consulte [usando fontes e cores](../extensibility/using-fonts-and-colors.md).
+> Além de usar o Colorizer de um serviço de linguagem, um VSPackage pode optar por usar o mecanismo de coloração de texto do SDK do ambiente do Visual Studio para fins gerais. Para obter mais informações sobre esse mecanismo, consulte [usando fontes e cores](/visualstudio/extensibility/using-fonts-and-colors?view=vs-2015).
 
 ## <a name="see-also"></a>Consulte também
 

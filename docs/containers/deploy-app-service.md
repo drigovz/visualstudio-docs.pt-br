@@ -8,12 +8,12 @@ ms.devlang: dotnet
 ms.topic: article
 ms.date: 03/08/2019
 ms.author: ghogen
-ms.openlocfilehash: 9431046c57851e31a3711b4785f9cce45acab45f
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
+ms.openlocfilehash: 5d1f160435fd8c62a44d3e5d3192870143558de4
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70312266"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188785"
 ---
 # <a name="deploy-an-aspnet-core-container-to-azure-app-service-using-visual-studio"></a>Implantar um contêiner de ASP.NET Core no serviço Azure App usando o Visual Studio
 
@@ -21,7 +21,7 @@ Este tutorial orienta você pelo uso do Visual Studio para publicar seu aplicati
 
 Se você não tiver uma assinatura do Azure, crie uma [conta gratuita](https://azure.microsoft.com/free/dotnet/?utm_source=acr-publish-doc&utm_medium=docs&utm_campaign=docs) antes de começar.
 
-## <a name="prerequisites"></a>Pré-requisitos
+## <a name="prerequisites"></a>Prerequisites
 
 Para concluir este tutorial:
 
@@ -83,7 +83,7 @@ As etapas a seguir guiam você na criação de um aplicativo básico ASP.NET Cor
 
 ## <a name="clean-up-resources"></a>Limpar recursos
 
-Para remover todos os recursos do Azure associados a este tutorial, exclua o grupo de recursos usando o [portal do Azure](https://portal.azure.com). Para localizar o grupo de recursos associado a um aplicativo Web publicado, escolha **Exibir** > **outra** > **atividade de publicação na Web**do Windows e, em seguida, escolha o ícone de engrenagem. A guia **publicar** é aberta, que contém o grupo de recursos.
+Para remover todos os recursos do Azure associados a este tutorial, exclua o grupo de recursos usando o [portal do Azure](https://portal.azure.com). Para localizar o grupo de recursos associado a um aplicativo Web publicado, escolha **exibir** > outra **atividade de publicação da web**do **Windows** > e, em seguida, escolha o ícone de engrenagem. A guia **publicar** é aberta, que contém o grupo de recursos.
 
 No portal do Azure, escolha **grupos de recursos**, selecione o grupo de recursos para abrir sua página de detalhes. Verifique se esse é o grupo de recursos correto e escolha **remover grupo de recursos**, digite o nome e escolha **excluir**.
 
@@ -93,4 +93,4 @@ Configure a integração e a entrega contínuas (CI/CD) com [Azure pipelines](/a
 
 ## <a name="see-also"></a>Consulte também
 
-[Implantar no registro de contêiner do Azure](vs-azure-tools-docker-hosting-web-apps-in-docker.md)
+[Implantar no registro de contêiner do Azure](hosting-web-apps-in-docker.md)

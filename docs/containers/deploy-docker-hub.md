@@ -8,12 +8,12 @@ ms.devlang: dotnet
 ms.topic: article
 ms.date: 07/23/2019
 ms.author: ghogen
-ms.openlocfilehash: 267e0c1ed1ac3911aad2161f186bf4a482f069b6
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: b033825bbe8facbeae3dcdee6a5b563461921522
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "70312192"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188752"
 ---
 # <a name="deploy-to-docker-hub"></a>Implantar no Docker Hub
 
@@ -45,11 +45,11 @@ Se você não tiver um repositório do Hub do Docker, crie um no [Hub do Docker]
 
 ## <a name="next-steps"></a>Próximas etapas
 
-Publique no [registro de contêiner do Azure](/azure/container-registry/) seguindo as etapas em [implantar no registro de contêiner do Azure](vs-azure-tools-docker-hosting-web-apps-in-docker.md).
+Publique no [registro de contêiner do Azure](/azure/container-registry/) seguindo as etapas em [implantar no registro de contêiner do Azure](hosting-web-apps-in-docker.md).
 
 Configure a integração e a entrega contínuas (CI/CD) com [Azure pipelines](/azure/devops/pipelines/?view=azure-devops).
 
 ## <a name="see-also"></a>Consulte também
 
-[Implantar](deploy-app-service.md)
-nas ferramentas de contêiner do serviço Azure app do[Visual Studio](/visualstudio/containers/).
+[Implante no serviço Azure App](deploy-app-service.md)
+as [ferramentas de contêiner do Visual Studio](/visualstudio/containers/).

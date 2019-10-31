@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e6444f559902841c13a56265569a0bdc13a9ed26
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 7bcd11d7860e1d191479d4a2ea5f9fac78dcdfe2
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72981727"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189213"
 ---
 # <a name="localize-sharepoint-solutions"></a>Localizar soluções do SharePoint
 
@@ -42,7 +42,7 @@ ms.locfileid: "72981727"
 |Neutro de idioma|Um arquivo de recurso que contém cadeias de caracteres localizadas para um idioma, mas não uma cultura específica. Por exemplo, "fr" para francês.|
 |Específico do idioma|Um arquivo de recurso que contém cadeias de caracteres localizadas para um idioma e uma cultura. Por exemplo, "fr-CA" para francês canadense.|
 
- Para obter mais informações, consulte [organização hierárquica de recursos para localização](../ide/hierarchical-organization-of-resources-for-localization.md).
+ Para obter mais informações, consulte [organização hierárquica de recursos para localização](../ide/globalizing-and-localizing-applications.md).
 
  Para especificar arquivos de recurso padrão em projetos do SharePoint desenvolvidas no [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], escolha **Idioma invariável (país invariável)** na lista de cultura da caixa de diálogo **Adicionar recurso** quando você adicionar um arquivo de recurso.
 

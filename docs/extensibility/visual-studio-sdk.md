@@ -14,12 +14,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4803fbb0887deaf140836263ca82d772b29112f7
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 662b64f69b278c4cc815a742c5cba26592e000bd
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72981695"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189094"
 ---
 # <a name="visual-studio-sdk"></a>SDK do Visual Studio
 O SDK do Visual Studio ajuda você a estender recursos do Visual Studio ou integrar novos recursos ao Visual Studio. Você pode distribuir suas extensões para outros usuários, bem como para a Visual Studio Marketplace. A seguir estão algumas das maneiras pelas quais você pode estender o Visual Studio:
@@ -74,6 +74,7 @@ O SDK do Visual Studio ajuda você a estender recursos do Visual Studio ou integ
 - [Estendendo o Visual Studio](https://blog.slaks.net/2013-10-18/extending-visual-studio-part-1-getting-started/)
 
 ## <a name="see-also"></a>Consulte também
+
 - [Criar uma extensão com um comando de menu](../extensibility/creating-an-extension-with-a-menu-command.md)
 - [Como migrar projetos de extensibilidade para o Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md)
 - [Perguntas frequentes: convertendo suplementos em extensões VSPackage](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md)
@@ -93,5 +94,4 @@ O SDK do Visual Studio ajuda você a estender recursos do Visual Studio ou integ
 - [Enviar extensões do Visual Studio](../extensibility/shipping-visual-studio-extensions.md)
 - [Dentro do SDK do Visual Studio](../extensibility/internals/inside-the-visual-studio-sdk.md)
 - [Suporte para o SDK do Visual Studio](../extensibility/support-for-the-visual-studio-sdk.md)
-- [Arquivar](../extensibility/archive.md)
 - [Referência do SDK do Visual Studio](../extensibility/visual-studio-sdk-reference.md)

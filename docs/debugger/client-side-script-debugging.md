@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f9f66d757f5f46530619be1424eb0810ce546ff5
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 9f0ac06712810e39432f1d19c250c3e7976f4a01
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72745708"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188703"
 ---
 # <a name="client-side-script-debugging"></a>Depuração de script do lado do cliente
 O depurador do Visual Studio fornece um ambiente de depuração abrangente para localizar e corrigir erros em scripts do lado do cliente em páginas do ASP.NET.
@@ -61,7 +61,7 @@ Você pode ver listas de documentos de script do lado do servidor e do lado do c
 
 ## <a name="see-also"></a>Consulte também
 
-- [Depurando aplicativos ASP.NET e AJAX](/visualstudio/debugger/how-to-enable-debugging-for-aspnet-applications)
+- [Depurando aplicativos ASP.NET e AJAX](how-to-enable-debugging-for-aspnet-applications.md)
 - [Limitações na depuração de script](../debugger/limitations-on-script-debugging.md)
 - [Janelas de Variáveis](../debugger/debugger-windows.md)
 - [Janela Imediata](../ide/reference/immediate-window.md)

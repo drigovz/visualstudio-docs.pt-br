@@ -1,5 +1,5 @@
 ---
-title: Depurar aplicativos da web - solução de problemas | Microsoft Docs
+title: Depuração de aplicativos Web-solução de problemas | Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -18,20 +18,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9cf25518a5511c0da629c400adfe866789929ea2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6907ba5f0b48721646c57964012bf0aaa0838b60
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62852353"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188323"
 ---
-# <a name="debugging-web-applications-troubleshooting"></a>Depurando aplicativos Web: Solução de problemas
+# <a name="debugging-web-applications-troubleshooting"></a>Depurando aplicativos Web: solucionando problemas
 Esta seção contém procedimentos comuns que podem ser usados para resolver erros.
 
 ## <a name="in-this-section"></a>Nesta seção
- [Como: Verificar as configurações de propriedade do IIS](../debugger/how-to-verify-iis-property-settings.md) explica como definir corretamente as propriedades no IIS para habilitar a depuração.
+ [Como verificar as configurações de Propriedade do IIS](../debugger/how-to-verify-iis-property-settings.md) Explica como definir corretamente as propriedades no IIS para habilitar a depuração.
 
 ## <a name="related-sections"></a>Seções relacionadas
- [Depurando aplicativos Web: Erros e solução de problemas](../debugger/debugging-web-applications-errors-and-troubleshooting.md) explica a resolução de erro e solução de problemas.
+ [Depuração de aplicativos Web: erros e solução de problemas](../debugger/debugging-web-applications-errors-and-troubleshooting.md) Explica solução de problemas e resolução de erros.
 
- [Depurando aplicativos Web e Script](/visualstudio/debugger/how-to-enable-debugging-for-aspnet-applications) visão geral da depuração de aplicativos Web, como [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], Web services XML e projetos do servidor ATL.
+ [Depuração de scripts e aplicativos Web](how-to-enable-debugging-for-aspnet-applications.md) Visão geral da depuração de aplicativos Web, como [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], serviços Web XML e projetos de servidor ATL.

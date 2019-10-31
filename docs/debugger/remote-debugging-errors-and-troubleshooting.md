@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f41292c22de1d9c76007ca44cb7accbf82359b3b
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 8b413ce193e6761d515de5bc5ef30fae8e18a3a3
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72730027"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73187508"
 ---
 # <a name="remote-debugging-errors-and-troubleshooting"></a>Erros de depuração remota e solução de problemas
 
@@ -33,7 +33,7 @@ Você pode vir os seguintes erros ao tentar depurar remotamente.
 
 - [Erro: não é possível intervir automaticamente no servidor](../debugger/error-unable-to-automatically-step-into-the-server.md)
 
-- [Erro: o Monitor de Depuração Remota do Microsoft Visual Studio (MSVSMON.EXE) parece não estar sendo executado no computador remoto.](/visualstudio/debugger/error-remote-debugging-monitor-msvsmon-exe-does-not-appear-to-be-running)
+- [Erro: o Monitor de Depuração Remota do Microsoft Visual Studio (MSVSMON.EXE) parece não estar sendo executado no computador remoto.](error-remote-debugging-monitor-msvsmon-exe-does-not-appear-to-be-running.md)
 
 - [Não foi possível se conectar ao Monitor de Depuração Remota do Microsoft Visual Studio](../debugger/unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor.md)
 

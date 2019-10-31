@@ -11,12 +11,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2efea8f23e42b9f4839c8a1ae0d74248738b9cf4
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 5eac3c2a45f1e220415f7512e601f4bf034c4dd7
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985347"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189804"
 ---
 # <a name="browse-and-select-a-net-type-dialog-box"></a>Procurar e selecione uma caixa de diálogo de tipo do .NET
 
@@ -75,4 +75,4 @@ Ao selecionar um tipo de contrato de serviço, o navegador do tipo mostra soment
 
 ## <a name="see-also"></a>Consulte também
 
-- [Usando os designers de atividade](../workflow-designer/using-the-activity-designers.md)
+- [Usando os designers de atividade](control-flow-activity-designers.md)

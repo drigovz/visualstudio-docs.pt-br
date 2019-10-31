@@ -1,5 +1,5 @@
 ---
-title: 'Como: configurar projetos a serem direcionados a plataformas'
+title: Como configurar projetos para terem plataformas como destino
 ms.date: 08/16/2019
 ms.technology: vs-ide-compile
 ms.topic: conceptual
@@ -18,14 +18,14 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d31d3a4f2e42981df646f9c38e13ee9b5f21122
-ms.sourcegitcommit: 9e5e8b6e9a3b6614723e71cc23bb434fe4218c9c
-ms.translationtype: HT
+ms.openlocfilehash: 15799ff8b181ddcfff97f7fb7338897c6f23fee2
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2019
-ms.locfileid: "69634917"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188944"
 ---
-# <a name="how-to-configure-projects-to-target-platforms"></a>Como: configurar projetos a serem direcionados a plataformas
+# <a name="how-to-configure-projects-to-target-platforms"></a>Como configurar projetos para terem plataformas como destino
 
 O Visual Studio permite que você configure seus aplicativos para direcionar as plataformas diferentes, incluindo plataformas de 64 bits. Para obter mais informações sobre o suporte à plataforma de 64 bits no Visual Studio, consulte [Aplicativos de 64 bits](/dotnet/framework/64-bit-apps).
 
@@ -112,7 +112,7 @@ Você pode ter um assembly ou uma DLL .NET com as versões x86 e x64. Para confi
 > No Visual Studio 2017, você precisa descarregar o projeto antes de editar o arquivo de projeto. Para descarregar o projeto, clique com o botão direito do mouse sobre o nó do projeto e escolha **Descarregar projeto**. Ao terminar de editar, salve as alterações e recarregue o projeto clicando com o botão direito do mouse sobre o nó do projeto e escolhendo **Recarregar projeto**.
 ::: moniker-end
 
-Para obter mais informações sobre o arquivo de projeto, confira [Referência de esquema do arquivo de projeto do MSBuild](/visualstudio/msbuild/msbuild-project-file-schema-reference).
+Para obter mais informações sobre o arquivo de projeto, confira [Referência de esquema do arquivo de projeto do MSBuild](../msbuild/msbuild-project-file-schema-reference.md).
 
 ## <a name="see-also"></a>Consulte também
 

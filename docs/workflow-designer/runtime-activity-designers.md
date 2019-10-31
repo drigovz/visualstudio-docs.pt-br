@@ -8,15 +8,15 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fb62644b362a7630d454db2740b354c546b0155b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
-ms.translationtype: HT
+ms.openlocfilehash: 9c553b7069243d5a701b94fd1f5f011e4075d4c9
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649982"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188925"
 ---
-# <a name="runtime-activity-designers"></a>Designer de atividade do runtime
-Os designers de atividade de runtime são usados para persistir e finalizar atividades de fluxo de trabalho. Os tópicos contidos nesta seção fornecem orientação sobre como usar os designers de atividade de Designer de Fluxo de Trabalho.
+# <a name="runtime-activity-designers"></a>Designer de atividade do tempo de execução
+Os designers de atividade de tempo de execução são usados para persistir e finalizar atividades de fluxo de trabalho. Os tópicos contidos nesta seção fornecem orientação sobre como usar os designers de atividade de Designer de Fluxo de Trabalho.
 
 ## <a name="related-sections"></a>Seções relacionadas
  [Fluxo de Controle](../workflow-designer/control-flow-activity-designers.md)
@@ -29,10 +29,10 @@ Os designers de atividade de runtime são usados para persistir e finalizar ativ
 
  [Transação](../workflow-designer/transaction-activity-designers.md)
 
- [Coleção](../workflow-designer/collection-activity-designers.md)
+ [Coleta](../workflow-designer/collection-activity-designers.md)
 
  [Tratamento de erro](../workflow-designer/error-handling-activity-designers.md)
 
 ## <a name="see-also"></a>Consulte também
 
-- [Usando os designers de atividade](../workflow-designer/using-the-activity-designers.md)
+- [Usando os designers de atividade](control-flow-activity-designers.md)

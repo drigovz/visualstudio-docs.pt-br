@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 875c2578d5f8cc1aa68cc624adc0a6e2a1713472
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: e69d88bb5764836d82232cec26606009eaf694d7
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911360"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73187739"
 ---
 # <a name="visual-studio-graphics-diagnostics"></a>Diagnóstico de gráficos do Visual Studio
 O Visual Studio*diagnóstico de gráficos* é um conjunto de ferramentas para gravar e analisar problemas de desempenho e renderização em aplicativos Direct3D. Diagnóstico de Gráficos pode ser usado em aplicativos que estão sendo executados localmente em seu computador Windows, em um emulador de dispositivo do Windows ou em um computador ou dispositivo remoto.
@@ -38,7 +38,7 @@ O Visual Studio*diagnóstico de gráficos* é um conjunto de ferramentas para gr
 
  [Capturando informações de gráficos](capturing-graphics-information.md) Para usar Diagnóstico de Gráficos para examinar um problema de renderização em seu aplicativo, primeiro você registra informações sobre como o aplicativo usa o DirectX. Durante a sessão de gravação, enquanto o aplicativo é executado normalmente, você *captura* (ou seja, seleciona) os quadros de interesse. A captura contém informações detalhadas sobre como os quadros são renderizados. É possível salvar as informações capturadas como um documento de log de gráficos para examinar mais tarde ou compartilhar com outros membros da equipe.
 
- [Uso de GPU](gpu-usage.md) Para usar Diagnóstico de Gráficos para criar o perfil de seu aplicativo, use a ferramenta uso de GPU. O uso de GPU pode ser usado em conjunto com outras ferramentas de criação de perfil, como o uso da CPU, para correlacionar a atividade de CPU e GPU que podem contribuir para problemas de desempenho em seu aplicativo.
+ [Uso de GPU](../../profiling/gpu-usage.md) Para usar Diagnóstico de Gráficos para criar o perfil de seu aplicativo, use a ferramenta uso de GPU. O uso de GPU pode ser usado em conjunto com outras ferramentas de criação de perfil, como o uso da CPU, para correlacionar a atividade de CPU e GPU que podem contribuir para problemas de desempenho em seu aplicativo.
 
  [Documento de log de gráficos](graphics-log-document.md) Para iniciar o exame de um log de gráficos gravados, use a janela documento de log de gráficos para selecionar um quadro capturado, ou até mesmo um pixel específico, para que você possa examinar em detalhes os *eventos* (isto é, as chamadas à API do DirectX) que o afetam.
 
@@ -66,5 +66,5 @@ O Visual Studio*diagnóstico de gráficos* é um conjunto de ferramentas para gr
 
 | Título | Descrição |
 | - | - |
-| [Tour dos recursos do depurador](/visualstudio/debugger/debugger-feature-tour) | Apresenta a funcionalidade de depuração no [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. |
+| [Tour dos recursos do depurador](../debugger-feature-tour.md) | Apresenta a funcionalidade de depuração no [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. |
 | [Gráficos e jogos do DirectX](/windows/win32/directx) | Fornece artigos que discutem as tecnologias de gráficos do DirectX. |

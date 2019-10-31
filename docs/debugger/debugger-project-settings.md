@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f6a4e3fde3d98b83f8b92ffe039e3bff5c8eae4f
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 77f5ca5dcc1b886ec56b7177dd0d6aa62a8ce4f0
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72738337"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188636"
 ---
 # <a name="debugger-project-settings"></a>Configurações de projeto do depurador
 Determinadas configurações de projeto também afetam a depuração. Essas configurações determinam coisas como quais diretórios o depurador analisa, os comandos e os argumentos de comando usados para iniciar o programa e o tipo de informações de depuração criadas para o programa. Você poderá alterar essas configurações na caixa de diálogo **Páginas de Propriedades**.
@@ -44,7 +44,7 @@ Determinadas configurações de projeto também afetam a depuração. Essas conf
 ## <a name="related-sections"></a>Seções relacionadas
  [Especificar o símbolo (. pdb) e os arquivos de origem](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md) Descreve como o depurador usa arquivos de símbolo e arquivos de origem para exibir informações de depuração.
 
- [Depurar aplicativos no Visual Studio](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps) Descreve como depurar aplicativos UWP. (Centro de Desenvolvedores do Windows)
+ [Depurar aplicativos no Visual Studio](debugging-windows-store-and-windows-universal-apps.md) Descreve como depurar aplicativos UWP. (Centro de Desenvolvedores do Windows)
 
  [Configurações e preparação do depurador](../debugger/debugger-settings-and-preparation.md) Descreve as configurações de propriedade relacionadas ao depurador e a preparação necessária para depurar seu programa com o depurador de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
 

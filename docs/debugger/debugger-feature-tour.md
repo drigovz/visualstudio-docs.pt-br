@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 40b7a097f0544459083b5217e6ad97f2b3f31bfa
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: 8741d0815aa3e5478a7dcf93585fc0be6e266ae0
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911633"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188713"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>Introdução ao Depurador do Visual Studio
 
@@ -124,7 +124,7 @@ Na maioria dos idiomas com suporte no Visual Studio, você pode editar seu códi
 
 Para obter mais informações sobre como usar o recurso e as limitações de recursos, consulte [Editar e continuar](../debugger/edit-and-continue.md).
 
-Para modificar o código XAML durante uma sessão de depuração, consulte [gravar e depurar o código XAML em execução com o Hot recarregamento de XAML](xaml-hot-reload.md).
+Para modificar o código XAML durante uma sessão de depuração, consulte [gravar e depurar o código XAML em execução com o Hot recarregamento de XAML](../xaml-tools/xaml-hot-reload.md).
 
 ## <a name="inspect-variables-with-data-tips"></a>Inspecionar variáveis com dicas de dados
 

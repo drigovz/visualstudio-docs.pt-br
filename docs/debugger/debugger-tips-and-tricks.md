@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 70276b8ba4efb08b0a6a57dc48716bd608f0429a
-ms.sourcegitcommit: bdccab4c2dbd50ea8adaaf88c69c9ca32db88099
-ms.translationtype: HT
+ms.openlocfilehash: bf8d6df020694bb10fe4f3f051551056549d5673
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73144749"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188622"
 ---
 # <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>Aprenda dicas e truques de produtividade para o depurador no Visual Studio
 
@@ -41,7 +41,7 @@ Para obter mais informações sobre como usar o recurso e as limitações de rec
 
 ## <a name="edit-xaml-code-and-continue-debugging"></a>Editar código XAML e continuar a depuração
 
-Para modificar o código XAML durante uma sessão de depuração, consulte [gravar e depurar o código XAML em execução com o Hot recarregamento de XAML](xaml-hot-reload.md).
+Para modificar o código XAML durante uma sessão de depuração, consulte [gravar e depurar o código XAML em execução com o Hot recarregamento de XAML](../xaml-tools/xaml-hot-reload.md).
 
 ## <a name="debug-issues-that-are-hard-to-reproduce"></a>Problemas de depuração que são difíceis de reproduzir
 

@@ -8,12 +8,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c7426ea21e1928eb46a2b733df7eb24c9de6e147
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 01727901f5ce063a16954f98914833ba39f8ab5d
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650448"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189669"
 ---
 # <a name="flowchart-activity-designers"></a>Designer de atividade do fluxograma
 
@@ -33,7 +33,7 @@ O Designer de Fluxo de Trabalho inclui várias atividades fornecidas pelo sistem
 
  [Fluxo de Controle](../workflow-designer/control-flow-activity-designers.md)
 
- [Usando os designers de atividade](../workflow-designer/using-the-activity-designers.md)
+ [Usando os designers de atividade](control-flow-activity-designers.md)
 
  [Mensagens](../workflow-designer/messaging-activity-designers.md)
 
@@ -43,6 +43,6 @@ O Designer de Fluxo de Trabalho inclui várias atividades fornecidas pelo sistem
 
  [Transação](../workflow-designer/transaction-activity-designers.md)
 
- [Coleção](../workflow-designer/collection-activity-designers.md)
+ [Coleta](../workflow-designer/collection-activity-designers.md)
 
  [Tratamento de erro](../workflow-designer/error-handling-activity-designers.md)
