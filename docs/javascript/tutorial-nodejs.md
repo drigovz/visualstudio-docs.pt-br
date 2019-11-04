@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: bfb5f28763e4f95a2713e67543fca35398536fa9
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
+ms.openlocfilehash: ecc14e4dc98caa17ac3849e9231ab17491f2acc8
+ms.sourcegitcommit: 2f64b3b231900018fceafb72b5a1c65140213a18
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70180308"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73428777"
 ---
 # <a name="tutorial-create-a-nodejs-and-express-app-in-visual-studio"></a>Tutorial: Criar um aplicativo Node.js e Express no Visual Studio
 
@@ -58,7 +58,7 @@ npm é o gerenciador de pacotes padrão do Node.js. O gerenciador de pacotes fac
 
 O Express é uma estrutura de aplicativo Web, usada como uma estrutura de servidor do Node.js para criação de aplicativos Web. O Express permite que você use e escolha diferentes estruturas front-end para criar uma interface do usuário, como o Pug (anteriormente chamado de Jade). O Pug é usado neste tutorial.
 
-## <a name="prerequisites"></a>Pré-requisitos
+## <a name="prerequisites"></a>Prerequisites
 
 * Você precisa ter o Visual Studio instalado e a carga de trabalho de desenvolvimento de Node.js.
 
@@ -95,7 +95,7 @@ Neste tutorial, você começará com um projeto simples que contém o código pa
     ::: moniker range="vs-2017"
     Na barra de menus superior, escolha **Arquivo** > **Novo** > **Projeto**. No painel esquerdo da caixa de diálogo **Novo Projeto**, expanda **JavaScript** e escolha **Node.js**. No painel central, escolha **Aplicativo Azure Node.js Express 4 básico** e, em seguida, **OK**.
     ::: moniker-end
-    Se você não vir o modelo de projeto **Aplicativo Azure Node.js Express 4 básico**, adicione a carga de trabalho de **desenvolvimento do Node.js**. Confira instruções detalhadas nos. [Pré-requisitos](#prerequisites).
+    Se você não vir o modelo de projeto **Aplicativo Azure Node.js Express 4 básico**, adicione a carga de trabalho de **desenvolvimento do Node.js**. Confira instruções detalhadas nos [Pré-requisitos](#prerequisites).
 
     O Visual Studio cria a solução e abre o projeto no painel direito. O arquivo de projeto *app.js* é aberto no editor (painel esquerdo).
 
@@ -183,6 +183,8 @@ O IntelliSense é uma ferramenta do Visual Studio que ajuda você na codificaç�
 1. Coloque o cursor após a cadeia de caracteres `data`, digite `: get` e o IntelliSense mostrará a função `getData` definida anteriormente no código. Selecione `getData`.
 
     ![Usar o IntelliSense](../javascript/media/tutorial-nodejs-intellisense.png)
+
+1. Adicione os parênteses para torná-lo uma chamada de função, `getData()`.
 
 1. Remova a vírgula (`,`) antes de `"data"` e você verá o realce de sintaxe verde na expressão. Passe o mouse sobre o realce de sintaxe.
 
