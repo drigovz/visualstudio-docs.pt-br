@@ -1,5 +1,5 @@
 ---
-title: FlowSwitch&lt;T&gt; Designer de atividade | Microsoft Docs
+title: FlowSwitch &lt;T &gt; designer de atividade | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-workflow-designer
@@ -11,39 +11,37 @@ f1_keywords:
 - System.Activities.Core.Presentation.FlowSwitchLinkIdentifier.UI
 ms.assetid: 5b9c5afe-7499-4ee8-8c33-28aff14bde07
 caps.latest.revision: 4
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: ccd3e328a904540dd03c85f53634dc1eaab96c6e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 27abb660766a7c04742eca221432af19f05f0d28
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62943301"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72656641"
 ---
-# <a name="flowswitchlttgt-activity-designer"></a>FlowSwitch&lt;T&gt; Designer de atividade
-A atividade de <xref:System.Activities.Statements.FlowSwitch%601> é um nó condicional que fornece a ramificação para o fluxo de controle baseado no critério de correspondência quando mais de duas ramificações alternativas são necessários. Se a ramificação de fluxo requer apenas dois caminhos, use a atividade de <xref:System.Activities.Statements.FlowDecision> em vez disso.  
-  
-## <a name="the-flowswitcht-activity"></a>O FlowSwitch\<T > atividade  
- O <xref:System.Activities.Statements.FlowSwitch%601> atividade contém uma <xref:System.Activities.Statements.FlowSwitch%601.Expression%2A> que retorna um valor do tipo *T* (especificada pelo parâmetro genérico) quando avaliada. A atividade também contém um conjunto de <xref:System.Activities.Statements.FlowSwitch%601.Cases%2A>, que especifica um mapeamento exclusivo de resultados possíveis da avaliação a um conjunto de objetos de <xref:System.Activities.Statements.FlowNode> . O <xref:System.Activities.Statements.FlowNode> executada é aquele cujo objeto do tipo *T* corresponde ao valor do avaliado <xref:System.Activities.Statements.FlowSwitch%601.Expression%2A>. Os exemplos de <xref:System.Activities.Statements.FlowSwitch%601.Default%2A> podem opcionalmente () são fornecidos para casos em que nenhuma correspondência for obtida.  
-  
-### <a name="using-the-flowswitcht-activity-designer"></a>Usando o FlowSwitch\<T > Designer de atividade  
- O **FlowSwitch\<T >** designer de atividade pode ser encontrado no **fluxograma** categoria do **caixa de ferramentas**, que é acessado clicando-se a **Caixa de ferramentas** guia no lado esquerdo do [!INCLUDE[wfd2](../includes/wfd2-md.md)] (como alternativa, selecione **barra de ferramentas** do **exibição** menu, ou CTRL + ALT + X.)  
-  
- O **FlowSwitch\<T >** designer de atividade pode ser arrastado dos **caixa de ferramentas** e ser solto sobre a [!INCLUDE[wfd2](../includes/wfd2-md.md)] superfície dentro de um **fluxograma** designer de atividade. Use o **selecionar tipos** janela que exibe para especificar o tipo (associado no código com o <xref:System.Activities.Statements.FlowSwitch%601> pelo parâmetro genérico) obtido de avaliar o <xref:System.Activities.Statements.FlowSwitch%601.Expression%2A>. Este procedimento cria um <xref:System.Activities.Statements.FlowSwitch%601> atividade rotulada **Switch** dentro de <xref:System.Activities.Statements.Flowchart> atividade. O <xref:System.Activities.Statements.FlowSwitch%601.Expression%2A> podem ser digitados em de **expressão** caixa da **propriedades** janela clicando em que o texto de dica que informa "Digite uma expressão de VB".  
-  
- Passe o mouse sobre o **FlowSwitch\<T >** designer de atividade para fazer com que o quadrado que é usado para o link <xref:System.Activities.Statements.FlowSwitch%601.Cases%2A> para aparecer em torno de suas bordas. Após arrastar o **FlowSwitch < T\>**  designer de atividade e outros designers de atividade no **fluxograma**, o <xref:System.Activities.Activity> objetos que representam estão prontos para ser vinculadas entre si para especificar a ordem de execução. Para criar um dos <xref:System.Activities.Statements.FlowSwitch%601.Cases%2A> associado com o <xref:System.Activities.Statements.FlowSwitch%601>, clique em uma das alças de quadradas dos casos no perímetro da **FlowSwitch\<T >** e arraste-a (segurando o botão do mouse) para uma das alças de que aparece de maneira semelhante ao redor de atividade de destino quando o mouse passa sobre o designer. Solte o botão do mouse e uma seta do **FlowSwitch\<T >** para o designer de destino aparece representação desses casos. O valor padrão para exibe desses casos na seta e ele pode ser editado na **caso** caixa da **propriedades** janela.  
-  
-### <a name="the-flowswitcht-properties"></a>O FlowSwitch\<T > Propriedades  
- A tabela a seguir mostra as propriedades de <xref:System.Activities.Statements.FlowSwitch%601> e descreve como elas são usadas no designer. Essas propriedades podem ser editadas na grade de propriedade ou na superfície de designer.  
-  
-|Nome da Propriedade|Necessária|Uso|  
-|-------------------|--------------|-----------|  
-|<xref:System.Activities.Statements.FlowSwitch%601.Expression%2A>|verdadeiro|Especifica a expressão que é avaliada para determinar qual de <xref:System.Activities.Statements.FlowSwitch%601.Cases%2A> para alternar o caminho execução.|  
-|<xref:System.Activities.Statements.FlowSwitch%601.Cases%2A>|False|Especifica um mapeamento exclusivo de resultados possíveis obtidos de avaliar <xref:System.Activities.Statements.FlowSwitch%601.Expression%2A> a um conjunto de objetos de <xref:System.Activities.Statements.FlowNode> .|  
-|<xref:System.Activities.Statements.FlowSwitch%601.Default%2A>|verdadeiro|Especificar o mapeamento quando a avaliação de <xref:System.Activities.Statements.FlowSwitch%601.Expression%2A> não coincide com um dos valores contidos no objeto de <xref:System.Activities.Statements.FlowSwitch%601.Cases%2A> .|  
-  
-## <a name="see-also"></a>Consulte também  
- [Fluxograma](../workflow-designer/flowchart-activity-designers.md)   
- [Fluxograma](../workflow-designer/flowchart-activity-designer.md)   
- [FlowDecision](../workflow-designer/flowdecision-activity-designer.md)
+# <a name="flowswitchlttgt-activity-designer"></a>Designer de atividade do FlowSwitch &lt;T &gt;
+A atividade de <xref:System.Activities.Statements.FlowSwitch%601> é um nó condicional que fornece a ramificação para o fluxo de controle baseado no critério de correspondência quando mais de duas ramificações alternativas são necessários. Se a ramificação de fluxo requer apenas dois caminhos, use a atividade de <xref:System.Activities.Statements.FlowDecision> em vez disso.
+
+## <a name="the-flowswitcht-activity"></a>A atividade de > \<T do FlowSwitch
+ A atividade <xref:System.Activities.Statements.FlowSwitch%601> contém um <xref:System.Activities.Statements.FlowSwitch%601.Expression%2A> que retorna um valor do tipo *t* (especificado pelo parâmetro Generic) quando avaliado. A atividade também contém um conjunto de <xref:System.Activities.Statements.FlowSwitch%601.Cases%2A>, que especifica um mapeamento exclusivo de resultados possíveis da avaliação a um conjunto de objetos de <xref:System.Activities.Statements.FlowNode> . O <xref:System.Activities.Statements.FlowNode> executado é aquele cujo objeto do tipo *t* corresponde ao valor do <xref:System.Activities.Statements.FlowSwitch%601.Expression%2A> avaliado. Os exemplos de <xref:System.Activities.Statements.FlowSwitch%601.Default%2A> podem opcionalmente () são fornecidos para casos em que nenhuma correspondência for obtida.
+
+### <a name="using-the-flowswitcht-activity-designer"></a>Usando o designer de atividade do FlowSwitch \<T >
+ O **FlowSwitch \<T >** designer de atividade pode ser encontrado na **categoria fluxograma** da **caixa de ferramentas**, que é acessada clicando na guia caixa de **ferramentas** no lado esquerdo da [!INCLUDE[wfd2](../includes/wfd2-md.md)] (como alternativa, selecione **barra de ferramentas** no menu **Exibir** , ou CTRL + ALT + X.)
+
+ O designer de atividade do **FlowSwitch \<T >** pode ser arrastado da **caixa de ferramentas** e retirado para a superfície de [!INCLUDE[wfd2](../includes/wfd2-md.md)] dentro de um designer de atividade de **fluxograma** . Use a janela **Selecionar tipos** que é exibida para especificar o tipo (associado ao código com o <xref:System.Activities.Statements.FlowSwitch%601> por seu parâmetro genérico) obtido da avaliação da <xref:System.Activities.Statements.FlowSwitch%601.Expression%2A>. Este procedimento cria uma atividade de <xref:System.Activities.Statements.FlowSwitch%601> rotulada como **switch** dentro da atividade de <xref:System.Activities.Statements.Flowchart>. O <xref:System.Activities.Statements.FlowSwitch%601.Expression%2A> pode ser digitado na caixa **expressão** da janela **Propriedades** clicando em onde o texto de dica diz "inserir uma expressão vb".
+
+ Passe o mouse sobre o **FlowSwitch \<T >** designer de atividade para fazer com que as alças quadradas usadas para vincular <xref:System.Activities.Statements.FlowSwitch%601.Cases%2A> apareçam ao longo de suas bordas. Depois de arrastar o **FlowSwitch < T \>** designer de atividades e outros designers de atividades para o **fluxograma**, os objetos de <xref:System.Activities.Activity> que eles representam estão prontos para serem vinculados para especificar a ordem de execução. Para criar um dos <xref:System.Activities.Statements.FlowSwitch%601.Cases%2A> associados ao <xref:System.Activities.Statements.FlowSwitch%601>, clique em um dos identificadores de caso quadrado no perímetro do **FlowSwitch \<T >** e arraste-o (segurando o botão do mouse) para um dos identificadores que aparece de maneira semelhante ao lado do atividade de destino quando o mouse passa sobre seu designer. Solte o botão do mouse e uma seta do **FlowSwitch \<T >** ao designer de destino aparecerá representando esse caso. O valor padrão para esse caso é exibido na seta e pode ser editado na caixa de **caso** da janela **Propriedades** .
+
+### <a name="the-flowswitcht-properties"></a>As propriedades de > \<T FlowSwitch
+ A tabela a seguir mostra as propriedades de <xref:System.Activities.Statements.FlowSwitch%601> e descreve como elas são usadas no designer. Essas propriedades podem ser editadas na grade de propriedade ou na superfície de designer.
+
+|Nome da Propriedade|Necessária|Uso|
+|-------------------|--------------|-----------|
+|<xref:System.Activities.Statements.FlowSwitch%601.Expression%2A>|True|Especifica a expressão que é avaliada para determinar qual de <xref:System.Activities.Statements.FlowSwitch%601.Cases%2A> para alternar o caminho execução.|
+|<xref:System.Activities.Statements.FlowSwitch%601.Cases%2A>|False|Especifica um mapeamento exclusivo de resultados possíveis obtidos de avaliar <xref:System.Activities.Statements.FlowSwitch%601.Expression%2A> a um conjunto de objetos de <xref:System.Activities.Statements.FlowNode> .|
+|<xref:System.Activities.Statements.FlowSwitch%601.Default%2A>|True|Especificar o mapeamento quando a avaliação de <xref:System.Activities.Statements.FlowSwitch%601.Expression%2A> não coincide com um dos valores contidos no objeto de <xref:System.Activities.Statements.FlowSwitch%601.Cases%2A> .|
+
+## <a name="see-also"></a>Consulte também
+ [Fluxograma](../workflow-designer/flowchart-activity-designers.md) [de fluxograma](../workflow-designer/flowchart-activity-designer.md) [FlowDecision](../workflow-designer/flowdecision-activity-designer.md)

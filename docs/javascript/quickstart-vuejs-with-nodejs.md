@@ -1,11 +1,10 @@
 ---
 title: 'Início rápido: criar seu primeiro aplicativo Vue. js'
 description: Neste início rápido, você criará um aplicativo Vue.js no Visual Studio usando as Ferramentas Node.js para Visual Studio
-ms.custom: seodec18
-ms.date: 09/24/2018
+ms.custom: ''
+ms.date: 10/31/2019
 ms.topic: quickstart
 ms.devlang: javascript
-ms.assetid: b0e4ebed-1a01-41ef-aad1-4d8465ce5322
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
@@ -13,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: ba1f403cd722b4d3dd1860c4a8b135c87b80bb4d
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 5f7b877d825a573b935a9bf0f2c907ec2ce6f808
+ms.sourcegitcommit: 2f64b3b231900018fceafb72b5a1c65140213a18
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189474"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73428765"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-vuejs-app"></a>Início Rápido: Usar o Visual Studio para criar seu primeiro aplicativo Vue.js
 
@@ -104,9 +103,13 @@ Primeiro, você criará um projeto de aplicativo Web Vue.js.
 
 1. (Somente projeto TypeScript) No Visual Studio, escolha **Compilar** > **Limpar Solução**.
 
+    ::: moniker range=">=vs-2019"
+    No modelo TypeScript incluído no Visual Studio 2019, ignore esta etapa.
+    ::: moniker-end
+
 1. Em seguida, escolha **Compilar** > **Compilar Solução** para criar o projeto. Verifique a janela de **Saída** para ver os resultados do build e escolha **Build** na lista **Mostrar saída de**.
 
-    O modelo de projeto Vue.js usa o script npm `build`, configurando um evento pós-build. Caso deseje modificar essa configuração, abra o arquivo de projeto ( *\<projectname\>.njsproj*) no Windows Explorer e localize esta linha de código:
+    O modelo de projeto JavaScript Vue. js (e versões mais antigas do modelo TypeScript) usam o script `build` NPM Configurando um evento Post Build. Caso deseje modificar essa configuração, abra o arquivo de projeto ( *\<projectname\>.njsproj*) no Windows Explorer e localize esta linha de código:
 
     ```xml
     <PostBuildEvent>npm run build</PostBuildEvent>
@@ -119,6 +122,8 @@ Primeiro, você criará um projeto de aplicativo Web Vue.js.
    No console, você verá a mensagem *Iniciando Development Server*.
 
    Em seguida, o aplicativo será aberto em um navegador.
+   
+   Se você não vir o aplicativo em execução, atualize a página.
 
    ![Aplicativo Vue.js em execução no navegador](../javascript/media/vuejs-running-app.png)
 

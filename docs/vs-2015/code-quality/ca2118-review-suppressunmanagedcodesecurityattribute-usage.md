@@ -1,5 +1,5 @@
 ---
-title: 'CA2118: Revise o uso de SuppressUnmanagedCodeSecurityAttribute | Microsoft Docs'
+title: 'CA2118: Examinar o uso do SuppressUnmanagedCodeSecurityAttribute | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,15 +12,15 @@ helpviewer_keywords:
 - CA2118
 ms.assetid: 4cb8d2fc-4e44-4dc3-9b74-7f5838827d41
 caps.latest.revision: 22
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 4fdbf84cc981dfe9e7cee73fba06867250d2fc33
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: bb7404d9add159f182ae44b22444dded1aafca20
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65687291"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72658649"
 ---
 # <a name="ca2118-review-suppressunmanagedcodesecurityattribute-usage"></a>CA2118: Examinar o uso de SuppressUnmanagedCodeSecurityAttribute
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,43 +33,43 @@ ms.locfileid: "65687291"
 |Alteração Significativa|Quebra|
 
 ## <a name="cause"></a>Causa
- Um tipo público ou protegido ou membro tem o <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName> atributo.
+ Um tipo ou membro público ou protegido tem o atributo <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName>.
 
 ## <a name="rule-description"></a>Descrição da Regra
- <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute> Altera o comportamento do sistema de segurança padrão para membros que executem código não gerenciado usando invocação de plataforma ou interoperabilidade de COM. Em geral, o sistema faz uma [dados e modelagem](https://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6) para permissão de código não gerenciado. Essa demanda ocorre em tempo de execução para cada invocação do membro e verifica todos os chamadores na pilha de chamadas para a permissão. Quando o atributo estiver presente, o sistema faz uma [demandas de Link](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) para a permissão: as permissões do chamador imediato são verificadas quando o chamador é compilado por JIT.
+ <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute> altera o comportamento padrão do sistema de segurança para membros que executam código não gerenciado usando a interoperabilidade COM ou a invocação de plataforma. Geralmente, o sistema cria [dados e modelando](https://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6) a permissão de código não gerenciado. Essa demanda ocorre em tempo de execução para cada invocação do membro e verifica a permissão de cada chamador na pilha de chamadas. Quando o atributo está presente, o sistema faz uma [demanda de link](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) para a permissão: as permissões do chamador imediato são verificadas quando o chamador é compilado em JIT.
 
- Esse atributo é usado principalmente para aumentar o desempenho; no entanto, os ganhos de desempenho acompanham riscos de segurança significativos. Se você colocar o atributo em membros públicos que chamam métodos nativos, os chamadores na pilha de chamadas (que não seja o chamador imediato) precisa de permissão de código não gerenciado para executar código não gerenciado. Dependendo do membro público ações e manipulação de entrada, ele pode permitir que os chamadores não confiáveis para acessar a funcionalidade normalmente restringido ao código confiável.
+ Esse atributo é usado principalmente para aumentar o desempenho; no entanto, os ganhos de desempenho acompanham riscos de segurança significativos. Se você posicionar o atributo em membros públicos que chamam métodos nativos, os chamadores na pilha de chamadas (além do chamador imediato) não precisarão de permissão de código não gerenciado para executar código não gerenciado. Dependendo das ações do membro público e da manipulação de entrada, ele pode permitir que chamadores não confiáveis acessem a funcionalidade normalmente restrita ao código confiável.
 
- O [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] se baseia em verificações de segurança para impedir que os chamadores tenham acesso direto ao espaço de endereço do processo atual. Como esse atributo ignora a segurança normal, seu código representa uma ameaça grave se ele pode ser usado para ler ou gravar na memória do processo. Observe que não é limitado a métodos que intencionalmente fornecem acesso para processar a memória; o risco Ele também está presente em qualquer cenário em que código mal-intencionado pode obter o acesso por qualquer meio, por exemplo, fornecendo entrada surpreendente, malformada ou inválida.
+ O [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] se baseia em verificações de segurança para impedir que os chamadores obtenham acesso direto ao espaço de endereço do processo atual. Como esse atributo ignora a segurança normal, seu código representa uma ameaça séria se puder ser usado para ler ou gravar na memória do processo. Observe que o risco não está limitado aos métodos que intencionalmente fornecem acesso para processar a memória; Ele também está presente em qualquer cenário em que o código mal-intencionado possa obter acesso por qualquer meio, por exemplo, fornecendo entradas surpreendentes, malformadas ou inválidas.
 
- A política de segurança padrão não concede permissão de código não gerenciado a um assembly, a menos que ele está em execução no computador local ou é um membro de um dos seguintes grupos:
+ A política de segurança padrão não concede permissão de código não gerenciado a um assembly, a menos que ele esteja sendo executado do computador local ou seja membro de um dos seguintes grupos:
 
-- Grupo de códigos de zona Meu computador
+- Grupo de códigos de zona Meu Computador
 
-- Grupo de códigos do Microsoft forte nome
+- Grupo de códigos de nome forte da Microsoft
 
-- Grupo de códigos do ECMA forte nome
+- Grupo de códigos de nome forte ECMA
 
 ## <a name="how-to-fix-violations"></a>Como Corrigir Violações
- Examine cuidadosamente o código para garantir que esse atributo é absolutamente necessário. Se você não estiver familiarizado com a segurança do código gerenciado ou não compreende as implicações de segurança de usar esse atributo, remova-o do seu código. Se o atributo for necessário, você deve garantir que os chamadores não é possível usar seu código maliciosamente. Se seu código não tem permissão para executar código não gerenciado, esse atributo não tem nenhum efeito e deve ser removido.
+ Examine atentamente seu código para garantir que esse atributo seja absolutamente necessário. Se você não estiver familiarizado com a segurança de código gerenciado ou não entender as implicações de segurança do uso desse atributo, remova-o do seu código. Se o atributo for necessário, você deve garantir que os chamadores não possam usar seu código de forma mal-intencionada. Se seu código não tiver permissão para executar código não gerenciado, esse atributo não terá nenhum efeito e deverá ser removido.
 
 ## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos
- Para suprimir com segurança um aviso nessa regra, você deve garantir que seu código não fornece os chamadores acesso a operações nativas ou recursos que podem ser usados de forma destrutivas.
+ Para suprimir um aviso dessa regra com segurança, você deve garantir que o código não forneça acesso de chamadores a operações nativas ou recursos que possam ser usados de maneira destrutiva.
 
-## <a name="example"></a>Exemplo
+## <a name="example"></a>{1&gt;Exemplo&lt;1}
  O exemplo a seguir viola a regra.
 
  [!code-csharp[FxCop.Security.TypesDoNotSuppress#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Security.TypesDoNotSuppress/cs/FxCop.Security.TypesDoNotSuppress.cs#1)]
 
-## <a name="example"></a>Exemplo
- No exemplo a seguir, o `DoWork` método fornece um caminho de código publicamente acessível para o método de invocação de plataforma `FormatHardDisk`.
+## <a name="example"></a>{1&gt;Exemplo&lt;1}
+ No exemplo a seguir, o método `DoWork` fornece um caminho de código publicamente acessível para o método de invocação de plataforma `FormatHardDisk`.
 
  [!code-csharp[FxCop.Security.PInvokeAndSuppress#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Security.PInvokeAndSuppress/cs/FxCop.Security.PInvokeAndSuppress.cs#1)]
 
-## <a name="example"></a>Exemplo
- No exemplo a seguir, o método público `DoDangerousThing` faz com que uma violação. Para resolver a violação `DoDangerousThing` deve ser feito particular e acesso a ele deve ser por meio de um método público, protegido por uma exigência de segurança, conforme ilustrado pelo `DoWork` método.
+## <a name="example"></a>{1&gt;Exemplo&lt;1}
+ No exemplo a seguir, o método público `DoDangerousThing` causa uma violação. Para resolver a violação, `DoDangerousThing` deve se tornar particular, e o acesso a ela deve ser por meio de um método público protegido por uma demanda de segurança, conforme ilustrado pelo método `DoWork`.
 
  [!code-csharp[FxCop.Security.TypeInvokeAndSuppress#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Security.TypeInvokeAndSuppress/cs/FxCop.Security.TypeInvokeAndSuppress.cs#1)]
 
 ## <a name="see-also"></a>Consulte também
- <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName> [Diretrizes de codificação segura](https://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177) [otimizações de segurança](https://msdn.microsoft.com/cf255069-d85d-4de3-914a-e4625215a7c0) [dados e modelagem](https://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6) [demandas de Link](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d)
+ <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName> [diretrizes de codificação seguras](https://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177) [otimizações de segurança](https://msdn.microsoft.com/cf255069-d85d-4de3-914a-e4625215a7c0) e [requisitos de link](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) [de modelagem](https://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6)

@@ -1,82 +1,80 @@
 ---
-title: 'Como: Criar um modelo 3D básico | Microsoft Docs'
+title: 'Como: Criar um modelo básico 3D | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-designers
 ms.topic: conceptual
 ms.assetid: a0d97966-2df8-449b-a8cf-5a19684dc773
 caps.latest.revision: 20
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 834651f525ccb292f82d5cf0ab5a7068a1cf7f20
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4b4db5b54f39a0be6de184b609e672b1f0173890
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68197809"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72664604"
 ---
 # <a name="how-to-create-a-basic-3-d-model"></a>Como: Criar um modelo 3D básico
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Este documento demonstra como usar o Editor de Modelo para criar um modelo 3D básico.  
-  
- Este documento demonstra essas atividades:  
-  
-- Adicionar objetos a uma cena  
-  
-- Selecionar faces e bordas  
-  
-- Converter seleções  
-  
-- Uso das ferramentas **Subdivide a face** e **Extrudar face**  
-  
-- Uso do comando **Triangular**  
-  
-## <a name="creating-a-basic-3-d-model"></a>Criando um modelo 3D básico  
- Você pode usar o Editor de Modelo para criar e modificar modelos e cenas 3D para seu jogo ou aplicativo. As etapas a seguir mostram como usar o Editor de Modelo para criar um modelo 3D simplificado de uma casa. Um modelo simplificado pode ser usado como um substituto para ativos de arte final que ainda estão sendo criados, como uma malha para detecção de colisão ou como um modelo de nível baixo de detalhes a ser usado quando o objeto que ele representa está muito longe tirar proveito de uma renderização mais detalhada.  
-  
- Ao terminar, o modelo deve ter esta aparência:  
-  
- ![O modelo concluído da casa simplificada](../designers/media/gfx-model-demo-house-final.png "gfx_model_demo_house_final")  
-  
- Antes de começar, verifique se a janela **Propriedades** e a **Caixa de Ferramentas** estão sendo exibidas.  
-  
-#### <a name="to-create-a-simplified-3-d-model-of-a-house"></a>Para criar um modelo 3D simplificado de uma casa  
-  
-1. Crie um modelo 3D com o qual trabalhar. Para obter informações sobre como adicionar um modelo ao seu projeto, consulte a seção de Introdução em [Editor de Modelo](../designers/model-editor.md).  
-  
-2. Adicione um cubo para a cena. Na janela **Caixa de Ferramentas**, em **Formas**, selecione **Cubo** e mova-o para a superfície de design.  
-  
-3. Mude para seleção de face. Na barra de ferramentas do Editor de Modelo, escolha **Selecionar Face**.  
-  
-4. Subdivida a parte superior do cubo. No modo de seleção de face, escolha o cubo uma vez para ativá-lo para a seleção e, em seguida, escolha a parte superior do cubo para selecionar a face superior. Na barra de ferramentas do Editor de Modelo, escolha **Subdivide a face**. Isso adiciona novos vértices na parte superior do cubo que o dividem em quatro partições de tamanhos iguais.  
-  
-    ![A parte superior do cubo foi subdividida](../designers/media/gfx-model-demo-house-subdiv.png "gfx_model_demo_house_subdiv")  
-  
-5. Faça a extrusão de dois lados adjacentes do cubo, por exemplo, a frente e o lado direito do cubo. No modo de seleção de face, escolha uma vez o cubo para ativá-lo para a seleção e, em seguida, escolha um lado do cubo. Pressione e mantenha a tecla Control pressionada, escolha outro lado do cubo que seja adjacente ao lado que foi selecionado primeiro e, em seguida, na barra de ferramentas do Editor de Modelo, escolha **Extrudar face**.  
-  
-    ![Os lados do cubo foram extrudados](../designers/media/gfx-model-demo-house-extrude.png "gfx_model_demo_house_extrude")  
-  
-6. Estenda uma das extrusões. Escolha uma as faces que você acabou de extrudar e, na barra de ferramentas do Editor de Modelo, escolha a ferramenta **Mover** e mova o manipulador de movimento na mesma direção da extrusão.  
-  
-    ![Um lado do cubo foi ainda mais extrudado.](../designers/media/gfx-model-demo-house-extend.png "gfx_model_demo_house_extend")  
-  
-7. Triangular o modelo. Na barra de ferramentas do Editor de Modelo, escolha **Avançado**, **Ferramentas** e **Triangular**.  
-  
-8. Crie o teto da casa. Mude para o modo de seleção de borda escolhendo **Selecionar Borda** na barra de ferramentas do Editor de Modelo e, em seguida, escolha o cubo para ativá-lo. Pressione e mantenha a tecla Control pressionada enquanto seleciona as bordas que são mostradas aqui:  
-  
-    ![As bordas que formarão o cume do telhado](../designers/media/gfx-model-demo-house-edges.png "gfx_model_demo_house_edges")  
-  
-    Com as bordas selecionadas, na barra de ferramentas do Editor de Modelo, escolha a ferramenta **Mover** e, em seguida, mova o manipulador de movimento para cima a fim de criar o telhado da casa.  
-  
-   O modelo de casa simplificada está concluído. Aqui está o modelo final novamente, com sombreamento simples aplicado:  
-  
-   ![O modelo concluído da casa simplificada](../designers/media/gfx-model-demo-house-final.png "gfx_model_demo_house_final")  
-  
-   Como uma próxima etapa, você pode aplicar um sombreador a esse modelo 3D. Para obter mais informações, veja [Como: Aplicar um sombreador a um modelo 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md).  
-  
-## <a name="see-also"></a>Consulte também  
- [Como: Modelo de terreno 3D](../designers/how-to-model-3-d-terrain.md)   
- [Editor de Modelo](../designers/model-editor.md)   
- [Designer de Sombreador](../designers/shader-designer.md)
+Este documento demonstra como usar o Editor de Modelo para criar um modelo 3D básico.
+
+ Este documento demonstra essas atividades:
+
+- Adicionar objetos a uma cena
+
+- Selecionar faces e bordas
+
+- Converter seleções
+
+- Uso das ferramentas **Subdivide a face** e **Extrudar face**
+
+- Uso do comando **Triangular**
+
+## <a name="creating-a-basic-3-d-model"></a>Criando um modelo 3D básico
+ Você pode usar o Editor de Modelo para criar e modificar modelos e cenas 3D para seu jogo ou aplicativo. As etapas a seguir mostram como usar o Editor de Modelo para criar um modelo 3D simplificado de uma casa. Um modelo simplificado pode ser usado como um substituto para ativos de arte final que ainda estão sendo criados, como uma malha para detecção de colisão ou como um modelo de nível baixo de detalhes a ser usado quando o objeto que ele representa está muito longe tirar proveito de uma renderização mais detalhada.
+
+ Ao terminar, o modelo deve ter esta aparência:
+
+ ![O modelo concluído da casa simplificada](../designers/media/gfx-model-demo-house-final.png "gfx_model_demo_house_final")
+
+ Antes de começar, verifique se a janela **Propriedades** e a **Caixa de Ferramentas** estão sendo exibidas.
+
+#### <a name="to-create-a-simplified-3-d-model-of-a-house"></a>Para criar um modelo 3D simplificado de uma casa
+
+1. Crie um modelo 3D com o qual trabalhar. Para obter informações sobre como adicionar um modelo ao seu projeto, consulte a seção de Introdução em [Editor de Modelo](../designers/model-editor.md).
+
+2. Adicione um cubo para a cena. Na janela **Caixa de Ferramentas**, em **Formas**, selecione **Cubo** e mova-o para a superfície de design.
+
+3. Mude para seleção de face. Na barra de ferramentas do Editor de Modelo, escolha **Selecionar Face**.
+
+4. Subdivida a parte superior do cubo. No modo de seleção de face, escolha o cubo uma vez para ativá-lo para a seleção e, em seguida, escolha a parte superior do cubo para selecionar a face superior. Na barra de ferramentas do Editor de Modelo, escolha **Subdivide a face**. Isso adiciona novos vértices na parte superior do cubo que o dividem em quatro partições de tamanhos iguais.
+
+    ![A parte superior do cubo foi subdividida](../designers/media/gfx-model-demo-house-subdiv.png "gfx_model_demo_house_subdiv")
+
+5. Faça a extrusão de dois lados adjacentes do cubo, por exemplo, a frente e o lado direito do cubo. No modo de seleção de face, escolha uma vez o cubo para ativá-lo para a seleção e, em seguida, escolha um lado do cubo. Pressione e mantenha a tecla Control pressionada, escolha outro lado do cubo que seja adjacente ao lado que foi selecionado primeiro e, em seguida, na barra de ferramentas do Editor de Modelo, escolha **Extrudar face**.
+
+    ![Os lados do cubo foram submetidos a extrusão](../designers/media/gfx-model-demo-house-extrude.png "gfx_model_demo_house_extrude")
+
+6. Estenda uma das extrusões. Escolha uma as faces que você acabou de extrudar e, na barra de ferramentas do Editor de Modelo, escolha a ferramenta **Mover** e mova o manipulador de movimento na mesma direção da extrusão.
+
+    ![Um lado do cubo já passou por extrusão.](../designers/media/gfx-model-demo-house-extend.png "gfx_model_demo_house_extend")
+
+7. Triangular o modelo. Na barra de ferramentas do Editor de Modelo, escolha **Avançado**, **Ferramentas** e **Triangular**.
+
+8. Crie o teto da casa. Mude para o modo de seleção de borda escolhendo **Selecionar Borda** na barra de ferramentas do Editor de Modelo e, em seguida, escolha o cubo para ativá-lo. Pressione e mantenha a tecla Control pressionada enquanto seleciona as bordas que são mostradas aqui:
+
+    ![As bordas que irão formar o pico do teto](../designers/media/gfx-model-demo-house-edges.png "gfx_model_demo_house_edges")
+
+    Com as bordas selecionadas, na barra de ferramentas do Editor de Modelo, escolha a ferramenta **Mover** e, em seguida, mova o manipulador de movimento para cima a fim de criar o telhado da casa.
+
+   O modelo de casa simplificada está concluído. Aqui está o modelo final novamente, com sombreamento simples aplicado:
+
+   ![O modelo concluído da casa simplificada](../designers/media/gfx-model-demo-house-final.png "gfx_model_demo_house_final")
+
+   Como uma próxima etapa, você pode aplicar um sombreador a esse modelo 3D. Para obter mais informações, veja [Como: Aplique um sombreador a um ](../designers/how-to-apply-a-shader-to-a-3-d-model.md) de modelo 3D.
+
+## <a name="see-also"></a>Consulte também
+ [Como: [Modelo de](../designers/model-editor.md) [Designer de sombreador](../designers/shader-designer.md) de modelo 3-D](../designers/how-to-model-3-d-terrain.md)
