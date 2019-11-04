@@ -8,12 +8,12 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 385d58834aa96a3ad9e2002020dd1ce4fda3c87f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1132a7a0363e2d508d6eff1026192aad3407fca4
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63000017"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189245"
 ---
 # <a name="work-with-r-in-visual-studio"></a>Trabalhar com o R no Visual Studio
 
@@ -41,7 +41,7 @@ Depois, siga os links abaixo para saber mais sobre recursos relacionados ao R, b
 | [Janela Interativa](interactive-repl-for-r-in-visual-studio.md) | Fornece uma experiência completa de REPL para o R com a capacidade de executar facilmente o código em um arquivo de origem na janela interativa. | N/D |
 | [Visualização de dados](visualizing-data-with-r-in-visual-studio.md) | A plotagem é parte integral da experiência do R, e as RTVS são compatíveis com várias janelas de gráficos independentes, cada qual com seu próprio histórico e a capacidade de mover as plotagens entre as janelas. As plotagens podem ser salvas em bitmap e arquivos PDF ou copiadas para a área de transferência como um bitmap ou metarquivo.  | N/D |
 | [Gerenciador de Variáveis](variable-explorer.md) | Examine as variáveis em escopos globais ou específicos do pacote, com a possibilidade de exibir tabelas classificáveis e exportar para CSV. | N/D |
-| [Depuração completa](debugging-r-in-visual-studio.md) | Inclui a integração com a janela interativa. | [Depurando no Visual Studio](/visualstudio/debugger/debugger-feature-tour) |
+| [Depuração completa](debugging-r-in-visual-studio.md) | Inclui a integração com a janela interativa. | [Depurando no Visual Studio](../debugger/debugger-feature-tour.md) |
 
 Confira também as [Perguntas frequentes](faq.md).
 
