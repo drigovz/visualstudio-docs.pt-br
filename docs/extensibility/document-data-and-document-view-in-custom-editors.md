@@ -10,12 +10,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 94c30279683a6d367ede31c00133e6fbf8c293e5
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 2aa8779a069f4b001743326470f69f3cb35a8c10
+ms.sourcegitcommit: 97623fd6190c43fed0d2ee7af92b01c375282622
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73186762"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73568887"
 ---
 # <a name="document-data-and-document-view-in-custom-editors"></a>Dados de documento e exibição de documento em editores personalizados
 Um editor personalizado consiste em duas partes: um objeto de dados de documento e um objeto de exibição de documento. Como os nomes sugerem, o objeto de dados do documento representa os dados de texto a serem exibidos. Da mesma forma, o objeto de exibição de documento (ou "exibição") representa uma ou mais janelas nas quais exibir o objeto de dados do documento.
@@ -34,7 +34,7 @@ Um editor personalizado consiste em duas partes: um objeto de dados de documento
 
  O IDE notifica exibições sobre eventos (por exemplo, quando uma solução que contém um documento é fechada) combinando um ID de item (ItemID) para cada entrada na tabela de documentos em execução. Para obter mais informações sobre isso, consulte [executando a tabela de documentos](../extensibility/internals/running-document-table.md).
 
- Há duas opções para criar uma exibição para um editor personalizado. Um é o modelo de ativação in-loco, em que a exibição é hospedada em uma janela usando um controle ActiveX ou um objeto de dados de documento. O segundo é o modelo de incorporação simplificado, onde a exibição é hospedada por [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] e <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane> é implementada para manipular comandos de janela. Para obter informações sobre o modelo de ativação in-loco, consulte [ativação in-loco](../extensibility/in-place-activation.md). Para obter informações sobre o modelo de incorporação simplificada, consulte [incorporação simplificada](../extensibility/simplified-embedding.md).
+ Há duas opções para criar uma exibição para um editor personalizado. Um é o modelo de ativação in-loco, em que a exibição é hospedada em uma janela usando um controle ActiveX ou um objeto de dados de documento. O segundo é o modelo de incorporação simplificado, onde a exibição é hospedada por [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] e <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane> é implementada para manipular comandos de janela. Para obter informações sobre o modelo de ativação in-loco, consulte [ativação in-loco](/visualstudio/misc/in-place-activation?view=vs-2015). Para obter informações sobre o modelo de incorporação simplificada, consulte [incorporação simplificada](../extensibility/simplified-embedding.md).
 
 ## <a name="see-also"></a>Consulte também
 
