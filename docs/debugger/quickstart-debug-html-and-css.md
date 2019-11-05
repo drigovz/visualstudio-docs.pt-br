@@ -17,12 +17,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - uwp
-ms.openlocfilehash: 12f66658cd8069f58355a96b2c3b3031a4cb6808
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 75bdfe55d516deb34872007a9461a286b4d742e0
+ms.sourcegitcommit: 97623fd6190c43fed0d2ee7af92b01c375282622
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73187572"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73568913"
 ---
 # <a name="debug-html-and-css-in-uwp-apps-in-visual-studio"></a>Depurar HTML e CSS em aplicativos UWP no Visual Studio
 
@@ -49,7 +49,7 @@ Você pode usar o Explorador de DOMs para:
   Ao depurar aplicativos, muitas vezes é preciso selecionar elementos no Explorador de DOMs. Quando você seleciona um elemento, os valores que aparecem nas guias à direita do Explorador do DOM são automaticamente atualizados para refletir o elemento selecionado no Explorador do DOM. Estas são as guias: **estilos**, **computado**, **layout**. Os aplicativos UWP também dão suporte às guias **eventos** e **alterações** . Para obter mais informações sobre como selecionar elementos, confira [Selecionar elementos](#SelectingElements).
 
 > [!TIP]
-> Se a janela Explorador do DOM estiver fechada, escolha **depurar** >**Windows**  > **Explorador do dom** para abri-lo novamente. A janela só aparece durante uma sessão de depuração de script.
+> Se a janela Explorador do DOM estiver fechada, escolha **depurar**>**Windows** > **Explorador do dom** para abri-lo novamente. A janela só aparece durante uma sessão de depuração de script.
 
 No procedimento a seguir, avançaremos pelo processo de depurar interativamente um aplicativo usando o Explorador de DOMs. Vamos criar um aplicativo que usa um controle `FlipView` e depurá-lo. O aplicativo contém vários erros.
 
@@ -58,9 +58,9 @@ No procedimento a seguir, avançaremos pelo processo de depurar interativamente 
 
 #### <a name="to-debug-by-inspecting-the-live-dom"></a>Para depurar inspecionando o DOM ativo
 
-1. Crie uma nova solução no Visual Studio escolhendo **arquivo**  > **novo projeto**.
+1. Crie uma nova solução no Visual Studio escolhendo **arquivo** > **novo projeto**.
 
-2. Escolha **JavaScript**  > **Windows universal**e, em seguida, escolha **aplicativo WinJS**.
+2. Escolha **JavaScript** > **Windows universal**e, em seguida, escolha **aplicativo WinJS**.
 
 3. Digite um nome para o projeto, como `FlipViewApp`, e escolha **OK** para criar o aplicativo.
 
@@ -149,7 +149,7 @@ No procedimento a seguir, avançaremos pelo processo de depurar interativamente 
 
     ![Selecionar lista de destino de depuração](../debugger/media/js_select_target.png "JS_Select_Target")
 
-8. Escolha **depurar**  > **Iniciar Depuração**ou pressione F5 para executar seu aplicativo no modo de depuração.
+8. Escolha **depurar** > **Iniciar Depuração**ou pressione F5 para executar seu aplicativo no modo de depuração.
 
     Isso executa o aplicativo, mas você verá uma tela quase em branco, pois o estilo tem alguns bugs. Uma primeira imagem `FlipView` aparecerá em um pequeno quadrado próximo ao meio da tela.
 
@@ -182,7 +182,7 @@ No procedimento a seguir, avançaremos pelo processo de depurar interativamente 
 14. Na janela principal, clique duas vezes em `width: 100px;height: 100px;`, pressione a tecla **delete** e pressione **Enter**. Depois de pressionar Enter, os novos valores são refletidos imediatamente no aplicativo, embora você não tenha parado a sessão de depuração.
 
     > [!IMPORTANT]
-    > Assim como você pode atualizar atributos na janela do Explorador do DOM, também pode atualizar os valores exibidos nas guias **Estilos**, **Computado** e **Layout**. Para obter mais informações, consulte [depurar estilos CSS usando o explorador do dom](../debugger/debug-css-styles-using-dom-explorer.md) e o layout de [depuração usando o explorador do dom](quickstart-debug-html-and-css.md).
+    > Assim como você pode atualizar atributos na janela do Explorador do DOM, também pode atualizar os valores exibidos nas guias **Estilos**, **Computado** e **Layout**.
 
 15. Alterne para o aplicativo selecionando-o ou usando ALT + TAB.
 
@@ -255,6 +255,7 @@ Você pode selecionar elementos DOM de três maneiras ao depurar um aplicativo:
 > Realçar elementos ao focalizá-los só tem suporte parcial no Emulador do Windows Phone.
 
 ## <a name="see-also"></a>Consulte também
+
 - [Depurar aplicativos no Visual Studio](debugging-windows-store-and-windows-universal-apps.md)
 - [Atualizar um aplicativo (JavaScript)](../debugger/refresh-an-app-javascript.md)
 - [Depurar um controle WebView](../debugger/debug-a-webview-control.md)

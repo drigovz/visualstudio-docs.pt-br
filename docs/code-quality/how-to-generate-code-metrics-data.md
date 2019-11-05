@@ -11,12 +11,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 37f208421079f77cadaf85556e00a8f8548c6182
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 55f9904c95be45c7f293355340c814faafb5de2b
+ms.sourcegitcommit: 97623fd6190c43fed0d2ee7af92b01c375282622
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73188798"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73568849"
 ---
 # <a name="how-to-generate-code-metrics-data"></a>Como gerar dados de métricas de código
 
@@ -24,7 +24,7 @@ Você pode gerar dados de métricas de código de três maneiras:
 
 - Instalando [analisadores do FxCop](#fxcop-analyzers-code-metrics-rules) e habilitando as quatro regras de métricas de código (manutenção) que ele contém.
 
-- Escolhendo o comando de menu [ **analisar**  > **calcular métricas de código** ](#calculate-code-metrics-menu-command) no Visual Studio.
+- Escolhendo o comando de menu [ **analisar** > **calcular métricas de código** ](#calculate-code-metrics-menu-command) no Visual Studio.
 
 - Na [linha de comando](#command-line-code-metrics) para C# projetos do e Visual Basic.
 
@@ -35,7 +35,7 @@ O [pacote NuGet do FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.Code
 - [CA1501](ca1501-avoid-excessive-inheritance.md)
 - [CA1502](ca1502.md)
 - [CA1505](ca1505-avoid-unmaintainable-code.md)
-- [CA1506](ca1506-avoid-excessive-class-coupling.md)
+- [CA1506](ca1506.md)
 
 Essas regras são desabilitadas por padrão, mas você pode habilitá-las de [**Gerenciador de soluções**](use-roslyn-analyzers.md#set-rule-severity-from-solution-explorer) ou em um arquivo de [conjunto de regras](using-rule-sets-to-group-code-analysis-rules.md) . Por exemplo, para habilitar a regra CA1502 como um aviso, o arquivo. RuleSet conterá a seguinte entrada:
 
@@ -72,13 +72,13 @@ Você pode configurar os limites em que as regras de métricas de código no pac
 
 ## <a name="calculate-code-metrics-menu-command"></a>Comando de menu calcular métricas de código
 
-Gere métricas de código para um ou todos os seus projetos abertos no IDE usando o menu **analisar**  > **calcular métricas de código** .
+Gere métricas de código para um ou todos os seus projetos abertos no IDE usando o menu **analisar** > **calcular métricas de código** .
 
 ### <a name="generate-code-metrics-results-for-an-entire-solution"></a>Gerar resultados de métricas de código para uma solução inteira
 
 Você pode gerar resultados de métricas de código para uma solução inteira de qualquer uma das seguintes maneiras:
 
-- Na barra de menus, escolha **analisar**  > **calcular métricas de código**  > **para solução**.
+- Na barra de menus, escolha **analisar** > **calcular métricas de código** > **para solução**.
 
 - Em **Gerenciador de soluções**, clique com o botão direito do mouse na solução e escolha **calcular métricas de código**.
 
@@ -90,7 +90,7 @@ Os resultados são gerados e a janela **resultados de métricas de código** é 
 
 1. Em **Gerenciador de soluções**, selecione um ou mais projetos.
 
-1. Na barra de menus, escolha **analisar**  > **calcular métricas de código**  > **para projetos selecionados**.
+1. Na barra de menus, escolha **analisar** > **calcular métricas de código** > **para projetos selecionados**.
 
 Os resultados são gerados e a janela **resultados de métricas de código** é exibida. Para exibir os detalhes dos resultados, expanda a árvore na **hierarquia**.
 
