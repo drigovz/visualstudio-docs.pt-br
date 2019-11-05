@@ -1,7 +1,7 @@
 ---
 title: Depurar um aplicativo JavaScript ou TypeScript
 description: O Visual Studio fornece suporte para depuração de aplicativos JavaScript e TypeScript no Visual Studio
-ms.date: 12/03/2018
+ms.date: 11/01/2019
 ms.topic: conceptual
 ms.devlang: javascript
 author: mikejo5000
@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: ec2b93d212f9a9485f6e817d00b06cccfec47a93
-ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
+ms.openlocfilehash: 5fbaa25146c9e06f3a12b90ab2d6ae124fbbd189
+ms.sourcegitcommit: ee9c55616a22addc89cf1cf1942bf371d73e2e11
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72888698"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73618098"
 ---
 # <a name="debug-a-javascript-or-typescript-app-in-visual-studio"></a>Depurar um aplicativo JavaScript ou TypeScript no Visual Studio
 
@@ -43,74 +43,115 @@ Depure o código JavaScript e TypeScript usando o Visual Studio. Defina e atinja
 
 ## <a name="debug-client-side-script"></a>Depurar um script do lado do cliente
 
-O Visual Studio fornece suporte de depuração somente para o Chrome e o Internet Explorer. Em alguns cenários, o depurador atinge automaticamente os pontos de interrupção no código JavaScript e TypeScript e em scripts inseridos em arquivos HTML.
+::: moniker range=">=vs-2019"
+O Visual Studio fornece suporte de depuração do lado do cliente somente para Chrome e Microsoft Edge (Chromium). Em alguns cenários, o depurador atinge automaticamente os pontos de interrupção no código JavaScript e TypeScript e em scripts inseridos em arquivos HTML. Para depurar o script do lado do cliente em aplicativos ASP.NET, consulte a postagem do blog [Depurar JavaScript no Microsoft Edge](https://devblogs.microsoft.com/visualstudio/debug-javascript-in-microsoft-edge-from-visual-studio/) e esta [postagem para o Google Chrome](https://devblogs.microsoft.com/aspnet/client-side-debugging-of-asp-net-projects-in-google-chrome).
+::: moniker-end
+::: moniker range="vs-2017"
+O Visual Studio fornece suporte de depuração do lado do cliente somente para Chrome e Internet Explorer. Em alguns cenários, o depurador atinge automaticamente os pontos de interrupção no código JavaScript e TypeScript e em scripts inseridos em arquivos HTML. Para depurar o script do lado do cliente em aplicativos ASP.NET, consulte a postagem do blog [depuração do lado do cliente de projetos do ASP.net no Google Chrome](https://devblogs.microsoft.com/aspnet/client-side-debugging-of-asp-net-projects-in-google-chrome/).
+::: moniker-end
 
-Se a fonte for minificada ou criada por um transcompilador como o TypeScript ou o Babel, o uso de [mapas de origem](#generate_sourcemaps) será necessário para proporcionar a melhor experiência de depuração. Sem mapas de origem, você ainda poderá anexar o depurador a um script do lado do cliente em execução. No entanto, você só poderá definir e atingir pontos de interrupção no arquivo minificado ou transcompilado, não no arquivo de origem original. Por exemplo, em um aplicativo Vue.js, o script minificado é passado como uma cadeia de caracteres para uma instrução `eval`, e não há nenhuma maneira de executar esse código em etapas com eficiência usando o depurador do Visual Studio, a menos que você use mapas de origem. Em alguns cenários complexos de depuração, você também pode usar as Ferramentas para Desenvolvedores do Chrome ou as Ferramentas F12 do Microsoft Edge.
+Se a fonte for minificada ou criada por um transcompilador como o TypeScript ou o Babel, o uso de [mapas de origem](#generate_sourcemaps) será necessário para proporcionar a melhor experiência de depuração. Sem mapas de origem, você ainda poderá anexar o depurador a um script do lado do cliente em execução. No entanto, você só poderá definir e atingir pontos de interrupção no arquivo minificado ou transcompilado, não no arquivo de origem original. Por exemplo, em um aplicativo Vue.js, o script minificado é passado como uma cadeia de caracteres para uma instrução `eval`, e não há nenhuma maneira de executar esse código em etapas com eficiência usando o depurador do Visual Studio, a menos que você use mapas de origem. Em cenários de depuração complexos, você pode usar o Chrome Ferramentas para Desenvolvedores ou as ferramentas F12 para o Microsoft Edge.
 
-Para anexar o depurador por meio do Visual Studio e atingir pontos de interrupção no código do lado do cliente, o depurador normalmente precisa de ajuda para identificar o processo correto. Veja a seguir uma maneira de habilitar isso usando o Chrome.
+### <a name="attach-the-debugger-to-client-side-script"></a>Anexar o depurador ao script do lado do cliente
 
-### <a name="attach-the-debugger-to-client-side-script-using-chrome"></a>Anexar o depurador ao script do lado do cliente usando o Chrome
+Para anexar o depurador do Visual Studio e clicar em pontos de interrupção no código do lado do cliente, o depurador precisa de ajuda para identificar o processo correto. Esta é uma maneira de permitir isso.
 
-1. Feche todas as janelas do Chrome.
+::: moniker range=">=vs-2019"
+Para este cenário, use o Microsoft Edge (Chromium), atualmente chamado de **Microsoft Edge beta** no IDE ou Chrome.
+::: moniker-end
+::: moniker range="vs-2017"
+Para este cenário, use o Chrome.
+::: moniker-end
 
-    Essa ação é necessária antes de executar o Chrome no modo de depuração.
+1. Feche todas as janelas do navegador de destino.
+
+   Outras instâncias do navegador podem impedir que o navegador seja aberto com a depuração habilitada. (As extensões do navegador podem estar em execução e impedindo o modo de depuração completa, portanto, talvez seja necessário abrir o Gerenciador de tarefas para localizar instâncias inesperadas do Chrome.)
+
+   ::: moniker range=">=vs-2019"
+   Para o Microsoft Edge (Chromium), também Desligue todas as instâncias do Chrome. Como ambos os navegadores usam a base de código Chromium, isso fornece os melhores resultados.
+   ::: moniker-end
 
 2. Abra o comando **Executar** do botão **Iniciar** do Windows (clique com o botão direito do mouse e escolha **Executar**) e digite o seguinte comando:
 
     `chrome.exe --remote-debugging-port=9222`
+    ::: moniker range=">=vs-2019"
+    ou, `msedge --remote-debugging-port=9222`
+    ::: moniker-end
 
-    Esse comando inicia o Chrome com a depuração habilitada.
+    Isso inicia o navegador com a depuração habilitada.
 
     ::: moniker range=">=vs-2019"
 
-    > [!NOTE]
-    > Você também pode definir o sinalizador `--remote-debugging-port` na inicialização do navegador selecionando **Procurar Com...** > na barra de ferramentas **Depurar**, escolhendo **Adicionar** e, em seguida, definindo o sinalizador no campo **Argumentos**. Usar um nome amigável diferente para o navegador, como **Chrome com depuração**. Para obter detalhes, confira [Notas sobre a versão](/visualstudio/releases/2019/release-notes-preview).
+    > [!TIP]
+    > A partir do Visual Studio 2019, você pode definir o sinalizador `--remote-debugging-port` na inicialização do navegador selecionando **procurar com...** > na barra de ferramentas **depurar** , escolhendo **Adicionar**e, em seguida, definindo o sinalizador no campo **argumentos** . Use um nome amigável diferente para o navegador, como **borda com depuração** ou **Chrome com depuração**. Para obter detalhes, confira [Notas sobre a versão](/visualstudio/releases/2019/release-notes-v16.2).
+
+    ![Definir o navegador para abrir com a depuração habilitada](../javascript/media/tutorial-nodejs-react-edge-with-debugging.png)
 
     ::: moniker-end
 
-3. Alterne para o Visual Studio e defina um ponto de interrupção no código-fonte. (Defina o ponto de interrupção em uma linha de código que permita pontos de interrupção, como uma instrução `return` ou uma declaração `var`).
+    O aplicativo ainda não está em execução e, portanto, você obtém uma página vazia do navegador.
+
+3. Alterne para o Visual Studio e defina um ponto de interrupção no código-fonte, que pode ser um arquivo JavaScript, um arquivo TypeScript ou um arquivo JSX. (Defina o ponto de interrupção em uma linha de código que permite pontos de interrupção, como uma instrução de retorno ou uma declaração var.)
 
     ![Definir um ponto de interrupção](../javascript/media/tutorial-nodejs-react-set-breakpoint-client-code.png)
 
-    Caso precise localizar um código específico em um arquivo grande gerado, use **Ctrl**+**F** (**Editar** > **Localizar e Substituir** > **Localização Rápida**).
+    Para localizar o código específico em um arquivo transcompilado, use **Ctrl**+**F** (**editar** > **Localizar e substituir** > **localização rápida**).
 
-4. Com o Chrome selecionado como o destino de depuração no Visual Studio, pressione **Ctrl**+**F5** (**Depurar** > **Iniciar sem Depuração**) para executar o aplicativo no navegador.
+    Para o código do lado do cliente, para atingir um ponto de interrupção em um arquivo TypeScript ou JSX, o arquivo geralmente requer o uso de [sourcemaps](#generate_sourcemaps). Um sourcemap deve ser configurado corretamente para dar suporte à depuração no Visual Studio.
+
+4. (Somente webpack) Siga as instruções descritas em [gerar sourcemaps](#generate_sourcemaps).
+
+5. Selecione o navegador de destino como o destino de depuração no Visual Studio e pressione **Ctrl**+**F5** (**depurar** > **Iniciar sem depuração**) para executar o aplicativo no navegador.
 
     O aplicativo será aberto em uma nova guia do navegador.
 
-    Se o Chrome estiver disponível em seu computador, mas não aparecer como uma opção, escolha **Procurar com** na lista suspensa de destinos de depuração e selecione Chrome como o destino padrão de navegador (escolha **Definir como padrão**).
+6. Escolha **Depurar** > **Anexar ao Processo**.
 
-5. Escolha **Depurar** > **Anexar ao Processo**.
+7. Na caixa de diálogo **anexar ao processo** , obtenha uma lista filtrada de instâncias do navegador às quais você pode anexar.
 
-6. Na caixa de diálogo **Anexar ao Processo**, escolha **Código do WebKit** no campo **Anexar a** e digite **Chrome** na caixa de filtro para filtrar o resultados da pesquisa.
+    ::: moniker range=">=vs-2019"
+    No Visual Studio 2019, escolha o navegador de destino, **JavaScript (Chrome)** ou **JavaScript correto (Microsoft Edge-Chromium)** no campo **anexar a** , digite **Chrome** ou **Edge** na caixa de filtro para filtrar os resultados da pesquisa. Se você tiver criado uma configuração de navegador com um nome amigável, escolha isso em vez disso.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    No Visual Studio 2017, escolha **código WebKit** no campo **anexar a** , digite **Chrome** na caixa de filtro para filtrar os resultados da pesquisa.
+    ::: moniker-end
 
-    O **Código do WebKit** é o valor obrigatório para o Chrome, que é um navegador baseado em Webkit.
+8. Selecione o processo de navegador com a porta de host correta (localhost neste exemplo) e selecione **anexar**.
 
-7. Selecione o processo do Chrome com a porta do host correta (1337, nesta ilustração) e selecione **Anexar**.
+    A porta (por exemplo, 1337) também pode aparecer no campo **título** para ajudá-lo a selecionar a instância correta do navegador.
 
+    ::: moniker range=">=vs-2019"
+    O exemplo a seguir mostra como isso se parece com o navegador Microsoft Edge (Chromium).
+
+    ![Anexar ao processo](../javascript/media/tutorial-nodejs-react-attach-to-process-edge.png)
+    ::: moniker-end
+    ::: moniker range="vs-2017"
     ![Anexar ao processo](../javascript/media/tutorial-nodejs-react-attach-to-process.png)
 
-    ::: moniker range="vs-2017"
     Você sabe que o depurador foi anexado corretamente quando o Explorador do DOM e o Console do JavaScript são abertos no Visual Studio. Essas ferramentas de depuração são semelhantes às Ferramentas para Desenvolvedores do Chrome e às Ferramentas F12 do Microsoft Edge.
     ::: moniker-end
 
-    > [!NOTE]
-    > Se o depurador não for anexado e a mensagem "Não é possível anexar ao processo. Uma operação não é válida no estado atual", use o Gerenciador de Tarefas para fechar todas as instâncias do Chrome antes de iniciar o Chrome no modo de depuração. As extensões do Chrome podem estar em execução e impedindo o modo de depuração completa.
+    > [!TIP]
+    > Se o depurador não anexar e você vir a mensagem "falha ao iniciar o adaptador de depuração" ou "não é possível anexar ao processo. Uma operação não é válida no estado atual. ", use o Gerenciador de tarefas do Windows para fechar todas as instâncias do navegador de destino antes de iniciar o navegador no modo de depuração. As extensões de navegador podem estar em execução e impedindo o modo de depuração completa.
 
-8. Se o código com o ponto de interrupção já tiver sido executado, atualize a página do navegador para atingir o ponto de interrupção.
+9. Como o código com o ponto de interrupção pode já ter sido executado, atualize a página do navegador. Se necessário, tome medidas para fazer com que o código com o ponto de interrupção seja executado.
 
     Enquanto estiver em pausa no depurador, você pode examinar o estado do aplicativo passando o mouse sobre as variáveis e usando as janelas do depurador. Você pode avançar o depurador percorrendo o código (**F5**, **F10** e **F11**).
 
-    Para JavaScript minificado ou transcompilado, você pode atingir o ponto de interrupção no JavaScript transcompilado ou em sua localização mapeada no arquivo TypeScript (usando mapas de origem), dependendo do estado do navegador e do ambiente. De qualquer forma, você pode percorrer o código e examinar as variáveis.
+    Você pode atingir o ponto de interrupção no arquivo *. js* transcompilado ou no arquivo de origem, dependendo de quais etapas você seguiu anteriormente, junto com o seu ambiente e o estado do navegador. De qualquer forma, você pode percorrer o código e examinar as variáveis.
 
-    * Caso precise interromper o código em um arquivo TypeScript e não conseguir fazer isso, use a caixa de diálogo **Anexar ao Processo**, conforme descrito nas etapas anteriores para anexar o depurador. Em seguida, abra o arquivo TypeScript gerado dinamicamente no Gerenciador de Soluções abrindo **Documentos de Script** > **filename.tsx**, defina um ponto de interrupção e atualize a página no navegador (defina o ponto de interrupção em uma linha de código que permita pontos de interrupção, como a instrução `return` ou uma declaração `var`).
+   * Se você precisar dividir o código em um arquivo de origem TypeScript ou JSX e não puder fazê-lo, use **anexar ao processo** conforme descrito nas etapas anteriores para anexar o depurador. Verifique se o seu ambiente está configurado corretamente:
 
-        Como alternativa, caso precise interromper o código em um arquivo TypeScript e não conseguir fazer isso, tente usar a instrução `debugger;` no arquivo TypeScript ou defina pontos de interrupção nas Ferramentas para Desenvolvedores do Chrome.
+      * Você fechou todas as instâncias de navegador, incluindo as extensões Chrome (usando o Gerenciador de tarefas), para que você possa executar o navegador no modo de depuração. Certifique-se de iniciar o navegador no modo de depuração.
 
-    * Caso precise interromper o código em um arquivo JavaScript transcompilado (por exemplo, *app-bundle.js*) e não conseguir fazer isso, remova o arquivo de mapa de origem, *filename.js.map*.
+      * Verifique se o arquivo sourcemap inclui uma referência ao seu arquivo de origem que não inclui prefixos sem suporte, como *webpack:///* , que impede que o depurador do Visual Studio localize o *app. TSX*. Por exemplo, essa referência pode ser corrigida para *./app.TSX*. Você pode fazer isso manualmente no arquivo sourcemap ou por meio de uma modificação de compilação personalizada.
+
+       Como alternativa, se você precisar dividir o código em um arquivo de origem (por exemplo, * app. TSX) e não puder fazê-lo, tente usar a instrução `debugger;` no arquivo de origem ou definir pontos de interrupção no Chrome Ferramentas para Desenvolvedores (ou ferramentas F12 para o Microsoft Edge) em vez disso.
+
+   * Se você precisar dividir o código em um arquivo JavaScript transcompilado (por exemplo, *app-Bundle. js*) e não puder fazê-lo, remova o arquivo sourcemap, filename. *js. map*.
 
      > [!TIP]
-     > Após anexar ao processo pela primeira vez seguindo estas etapas, você pode rapidamente anexar novamente ao mesmo processo escolhendo **Depurar** > **Reanexar ao Processo**.
+     > Após anexar ao processo pela primeira vez seguindo estas etapas, você pode rapidamente anexar novamente ao mesmo processo no Visual Studio 2017 escolhendo **Depurar** > **Reanexar ao Processo**.
 
 ## <a name="generate_sourcemaps"></a> Gerar mapas de origem para depuração
 
@@ -121,9 +162,32 @@ O Visual Studio tem a capacidade de usar e gerar mapas de origem em arquivos de 
 * Em um projeto JavaScript, é necessário gerar mapas de origem usando um empacotador como o webpack e um compilador como o compilador TypeScript (ou Babel), que pode ser adicionado ao projeto. Para o compilador TypeScript, também é necessário adicionar um arquivo *tsconfig.json*. Para obter um exemplo que mostra como fazer isso usando uma configuração básica de webpack, confira [Criar um aplicativo Node.js com o React](../javascript/tutorial-nodejs-with-react-and-jsx.md).
 
 > [!NOTE]
-> Caso não esteja familiarizado com mapas de origem, leia [Introduction to JavaScript Source Maps](https://www.html5rocks.com/en/tutorials/developertools/sourcemaps/) (Introdução a mapas de origem JavaScript) antes de continuar.
+> Caso não esteja familiarizado com mapas de origem, leia [Introduction to JavaScript Source Maps](https://www.html5rocks.com/en/tutorials/developertools/sourcemaps/) (Introdução a mapas de origem JavaScript) antes de continuar. 
 
 Para definir configurações avançadas para mapas de origem, use um *tsconfig.json* ou as configurações do projeto em um projeto TypeScript, mas não ambos.
+
+Para habilitar a depuração usando o Visual Studio, você precisa certificar-se de que as referências ao arquivo de origem no sourcemap gerado estão corretas. Por exemplo, se você estiver usando o webpack, as referências no arquivo sourcemap incluem o prefixo *webpack:///* , que impede que o Visual Studio Localize um arquivo de origem TYPESCRIPT ou JSX. Especificamente, quando você corrige isso para fins de depuração, a referência ao arquivo de origem (como *app. TSX*) deve ser alterada de algo como *webpack:///./app.TSX* para algo como *./app.TSX*, que habilita a depuração (o o caminho é relativo ao arquivo de origem). O exemplo a seguir mostra como você pode corrigir o sourcemaps com o webpack, que é um dos pacotes mais comuns.
+
+(Somente webpack) Se você estiver definindo o ponto de interrupção em um TypeScript de arquivo JSX (em vez de um arquivo JavaScript transcompilado), precisará atualizar sua configuração do webpack. Por exemplo, em *webpack-config. js*, talvez seja necessário substituir o seguinte código:
+
+```javascript
+  output: {
+    filename: "./app-bundle.js", // This is an example of the filename in your project
+  },
+```
+
+com este código:
+
+```javascript
+  output: {
+    filename: "./app-bundle.js", // Replace with the filename in your project
+    devtoolModuleFilenameTemplate: '[resource-path]'  // Removes the webpack:/// prefix
+  },
+```
+
+Essa é uma configuração somente de desenvolvimento para habilitar a depuração do código do lado do cliente no Visual Studio.
+
+Para cenários complicados, as ferramentas de navegador (**F12**) podem funcionar melhor para depuração.
 
 ### <a name="configure-source-maps-using-a-tsconfigjson-file"></a>Configurar mapas de origem usando um arquivo tsconfig.json
 
@@ -155,7 +219,7 @@ Se você adicionar um arquivo *tsconfig.json* ao projeto, o Visual Studio tratar
 
 Para obter mais detalhes sobre as opções do compilador, confira a página [Opções do compilador](https://www.typescriptlang.org/docs/handbook/compiler-options.html) no Manual do TypeScript.
 
-### <a name="configure-source-maps-using-project-settings"></a>Configurar mapas de origem usando configurações do projeto
+### <a name="configure-source-maps-using-project-settings-typescript-project"></a>Configurar mapas de origem usando configurações de projeto (projeto TypeScript)
 
 Defina também as configurações de mapa de origem usando as propriedades do projeto clicando com o botão direito do mouse no projeto e, em seguida, escolhendo **Projeto > Propriedades > Build TypeScript > Depuração**.
 

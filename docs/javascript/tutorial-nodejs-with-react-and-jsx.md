@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: dd34d0afa9f1b83a3795a9bccd0578d88c585ffa
-ms.sourcegitcommit: 97623fd6190c43fed0d2ee7af92b01c375282622
+ms.openlocfilehash: c5f3c4a0a2acdf73aae96c5cb5629252e712da64
+ms.sourcegitcommit: ee9c55616a22addc89cf1cf1942bf371d73e2e11
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73569025"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73618114"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>Tutorial: Criar um aplicativo Node.js e React no Visual Studio
 
@@ -55,7 +55,7 @@ O JSX é uma extensão da sintaxe de JavaScript, normalmente usada com o React p
 
 O webpack empacota arquivos JavaScript para que eles possam ser executados em um navegador. Ele também pode transformar ou empacotar outros recursos e ativos. Geralmente, é usado para especificar um compilador, como Babel ou TypeScript, para transcompilar código JSX ou TypeScript para JavaScript simples.
 
-## <a name="prerequisites"></a>Pré-requisitos
+## <a name="prerequisites"></a>Prerequisites
 
 * Você precisa ter o Visual Studio instalado e a carga de trabalho de desenvolvimento de Node.js.
 
@@ -90,7 +90,7 @@ Primeiro, crie um projeto de aplicativo Web Node.js.
     ::: moniker range="vs-2017"
     Na barra de menus superior, escolha **Arquivo** > **Novo** > **Projeto**. No painel esquerdo da caixa de diálogo **Novo Projeto**, expanda **JavaScript** e escolha **Node.js**. No painel central, escolha **Aplicativo Web Node.js em Branco**, digite o nome **NodejsWebAppBlank** e escolha **OK**.
     ::: moniker-end
-    Se não vir o modelo de projeto **Aplicativo Web Node.js em Branco**, instale a carga de trabalho de **desenvolvimento de Node.js**. Confira instruções detalhadas nos. [Pré-requisitos](#prerequisites).
+    Se não vir o modelo de projeto **Aplicativo Web Node.js em Branco**, instale a carga de trabalho de **desenvolvimento de Node.js**. Confira instruções detalhadas nos [Pré-requisitos](#prerequisites).
 
     O Visual Studio cria a nova solução e abre seu projeto.
 
@@ -395,7 +395,11 @@ Para este cenário, use o Chrome.
 
 1. Feche todas as janelas do navegador de destino.
 
-   Outras instâncias do navegador podem impedir que o depurador se anexe.
+   Outras instâncias do navegador podem impedir que o navegador seja aberto com a depuração habilitada. (As extensões do navegador podem estar em execução e impedindo o modo de depuração completa, portanto, talvez seja necessário abrir o Gerenciador de tarefas para localizar instâncias inesperadas do Chrome.)
+
+   ::: moniker range=">=vs-2019"
+   Para o Microsoft Edge (Chromium), também Desligue todas as instâncias do Chrome. Como ambos os navegadores compartilham a base de código Chromium, isso fornece os melhores resultados.
+   ::: moniker-end
 
 2. Abra o comando **Executar** do botão **Iniciar** do Windows (clique com o botão direito do mouse e escolha **Executar**) e digite o seguinte comando:
 
@@ -417,19 +421,44 @@ Para este cenário, use o Chrome.
 
     O aplicativo ainda não está em execução e, portanto, você obtém uma página vazia do navegador.
 
-3. Alterne para o Visual Studio e defina um ponto de interrupção no código *app-Bundle. js* na função `render()`, conforme mostrado na ilustração a seguir:
+3. Alterne para o Visual Studio e defina um ponto de interrupção no código-fonte, ou seja, *app-Bundle. js* ou *app. TSX*.
+
+    Para *app-Bundle. js*, defina o ponto de interrupção na função `render()`, conforme mostrado na ilustração a seguir:
 
     ![Definir um ponto de interrupção](../javascript/media/tutorial-nodejs-react-set-breakpoint-client-code.png)
 
-    Para localizar a função `render()` no *app-bundle.js*, use **Ctrl**+**F** (**Editar** > **Localizar e Substituir** > **Localização Rápida**).
+    Para localizar a função `render()` no arquivo *app-Bundle. js* transcompilado, use **Ctrl**+**F** (**Editar** > **Localizar e substituir** > **localização rápida**).
 
-4. Selecione o navegador de destino como o destino de depuração no Visual Studio e pressione **Ctrl**+**F5** (**depurar** > **Iniciar sem depuração**) para executar o aplicativo no navegador.
+    Para *app. TSX*, defina o ponto de interrupção dentro da função `render()`, na instrução `return`.
+
+    ![Definir um ponto de interrupção](../javascript/media/tutorial-nodejs-react-set-breakpoint-in-tsx-file.png)
+
+4. Se você estiver definindo o ponto de interrupção no arquivo *. TSX* (em vez de *app-Bundle. js*), precisará atualizar *webpack-config. js*. Substitua o código a seguir:
+
+    ```javascript
+    output: {
+        filename: "./app-bundle.js",
+    },
+    ```
+
+    com este código:
+
+    ```javascript
+    output: {
+        filename: "./app-bundle.js",
+        devtoolModuleFilenameTemplate: '[resource-path]'  // removes the webpack:/// prefix
+    },
+    ```
+
+    Essa é uma configuração somente de desenvolvimento para habilitar a depuração no Visual Studio. Essa configuração permite que você substitua as referências geradas no arquivo sourcemap, *app-Bundle. js. map*, ao compilar o aplicativo. Por padrão, as referências do webpack no arquivo sourcemap incluem o prefixo *webpack:///* , que impede que o Visual Studio localize o arquivo de origem, *app. TSX*. Especificamente, quando você faz essa alteração, a referência ao arquivo de origem, *app. TSX*, é alterada de *webpack:///./app.TSX* para *./app.TSX*, que habilita a depuração.
+
+5. Selecione o navegador de destino como o destino de depuração no Visual Studio e pressione **Ctrl**+**F5** (**depurar** > **Iniciar sem depuração**) para executar o aplicativo no navegador.
 
     O aplicativo será aberto em uma nova guia do navegador.
 
-5. Escolha **Depurar** > **Anexar ao Processo**.
+6. Escolha **Depurar** > **Anexar ao Processo**.
 
-6. Na caixa de diálogo **anexar ao processo** , obtenha uma lista filtrada de instâncias do navegador às quais você pode anexar.
+7. Na caixa de diálogo **anexar ao processo** , obtenha uma lista filtrada de instâncias do navegador às quais você pode anexar.
 
     ::: moniker range=">=vs-2019"
     No Visual Studio 2019, escolha o navegador de destino, **JavaScript (Chrome)** ou **JavaScript correto (Microsoft Edge-Chromium)** no campo **anexar a** , digite **Chrome** ou **Edge** na caixa de filtro para filtrar os resultados da pesquisa. Se você tiver criado uma configuração de navegador com um nome amigável, escolha isso em vez disso.
@@ -438,7 +467,7 @@ Para este cenário, use o Chrome.
     No Visual Studio 2017, escolha **código WebKit** no campo **anexar a** , digite **Chrome** na caixa de filtro para filtrar os resultados da pesquisa.
     ::: moniker-end
 
-7. Selecione o processo de navegador com a porta de host correta (localhost neste exemplo) e selecione **anexar**.
+8. Selecione o processo de navegador com a porta de host correta (localhost neste exemplo) e selecione **anexar**.
 
     A porta (1337) também pode aparecer no campo **título** para ajudá-lo a selecionar a instância correta do navegador.
 
@@ -456,15 +485,19 @@ Para este cenário, use o Chrome.
     > [!TIP]
     > Se o depurador não for anexado e a mensagem "Não é possível anexar ao processo. Uma operação não é válida no estado atual. ", use o Gerenciador de tarefas para fechar todas as instâncias do navegador de destino antes de iniciar o navegador no modo de depuração. As extensões de navegador podem estar em execução e impedindo o modo de depuração completa.
 
-8. Como o código com o ponto de interrupção já foi executado, atualize a página do navegador para atingir o ponto de interrupção.
+9. Como o código com o ponto de interrupção já foi executado, atualize a página do navegador para atingir o ponto de interrupção.
 
     Enquanto estiver em pausa no depurador, você pode examinar o estado do aplicativo passando o mouse sobre as variáveis e usando as janelas do depurador. Você pode avançar o depurador percorrendo o código (**F5**, **F10** e **F11**).
 
-    Você pode atingir o ponto de interrupção em *app-bundle.js* ou sua localização mapeada em *app.tsx*, dependendo do estado do ambiente e do navegador. De qualquer forma, você pode percorrer o código e examinar as variáveis.
+    Você pode atingir o ponto de interrupção no *app-Bundle. js* ou seu local mapeado no *app. TSX*, dependendo de quais etapas você seguiu anteriormente, junto com o seu ambiente e o estado do navegador. De qualquer forma, você pode percorrer o código e examinar as variáveis.
 
-   * Se você precisar entrar no código em *app.tsx* e não conseguir, use **Anexar ao Processo**, conforme descrito nas etapas anteriores para anexar o depurador. Em seguida, abra o arquivo *app.tsx* gerado dinamicamente no Gerenciador de Soluções abrindo **Documentos de Script** > **app.tsx**, defina um ponto de interrupção e atualize a página no navegador (defina o ponto de interrupção em uma linha de código que permita pontos de interrupção, como a instrução `return` ou uma declaração `var`).
+   * Se você precisar entrar no código em *app.tsx* e não conseguir, use **Anexar ao Processo**, conforme descrito nas etapas anteriores para anexar o depurador. Verifique se o seu ambiente está configurado corretamente:
 
-       Como alternativa, se você precisar dividir o código em *app. TSX* e não puder fazê-lo, tente usar a instrução `debugger;` no *app. TSX*ou defina os pontos de interrupção no Chrome ferramentas para desenvolvedores (ou as ferramentas F12 para o Microsoft Edge) em seu lugar. Para arquivos sourcemap gerados pelo webpack, as ferramentas de navegador (**F12**) normalmente funcionam melhor para depuração.
+      * Você fechou todas as instâncias de navegador, incluindo as extensões Chrome (usando o Gerenciador de tarefas), para que você possa executar o navegador no modo de depuração. Certifique-se de iniciar o navegador no modo de depuração.
+
+      * Verifique se o arquivo sourcemap inclui uma referência a *./app.TSX* e não *webpack:///./app.TSX*, o que impede que o depurador do Visual Studio localize o *app. TSX*.
+
+       Como alternativa, se você precisar dividir o código em *app. TSX* e não puder fazê-lo, tente usar a instrução `debugger;` no *app. TSX*ou defina os pontos de interrupção no Chrome ferramentas para desenvolvedores (ou as ferramentas F12 para o Microsoft Edge) em seu lugar.
 
    * Se você precisar entrar no código em *app-bundle.js* e não conseguir, remova o arquivo sourcemap, *app-bundle.js.map*.
 

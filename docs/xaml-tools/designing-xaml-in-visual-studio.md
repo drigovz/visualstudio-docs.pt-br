@@ -7,12 +7,12 @@ ms.assetid: 288e2415-9fcf-408e-bc35-9848315e14fd
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: ec10ea271fad4c49402e75ad7f8b5a84ad287cea
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: d9cfa2d216baf89d4b7a886ff9d7b56b8b946b8b
+ms.sourcegitcommit: 97623fd6190c43fed0d2ee7af92b01c375282622
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73188875"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73569049"
 ---
 # <a name="design-xaml-in-visual-studio-and-blend-for-visual-studio"></a>Projetar XAML no Visual Studio e no Blend para Visual Studio
 
@@ -47,7 +47,7 @@ Para aumentar sua produtividade, considere o uso do Blend for Visual Studio para
 | **Projetar estados visuais** | Não há ferramenta para ajudar você a criar estados visuais; é necessário criá-los programaticamente. | Use ferramentas de design para alterar a aparência de um controle com base em seu estado. | [Estados visuais](modify-the-style-of-objects-in-blend.md#visual-states) |
 | **Criar animações** |Não há nenhuma ferramenta de design para animações; você precisa criá-las de forma programática. Isso exige noções básicas da animação e do sistema de tempo no WPF, além de amplas competências em codificação.|Você cria animações visualmente e pode visualizá-las no Blend for Visual Studio. Isso é mais rápido e mais preciso do que criar as animações em código. É possível adicionar gatilhos para manipular a interação do usuário e mudar para o código para adicionar manipuladores de eventos e outras funcionalidades.|[Animar objetos](../xaml-tools/animate-objects-in-xaml-designer.md)|
 |**Transformar formas e texto em demarcadores para facilitar a manipulação**|Não há suporte.|Você pode fazer alterações sutis ou drásticas em formas (como retângulos e elipses) convertendo-as em demarcadores, que fornecem um melhor controle de edição. É possível alterar a forma ou combinar demarcadores, além de criar demarcadores compostos com base em várias formas.<br /><br />Você também pode converter blocos de texto em demarcadores para manipulá-los como imagens vetoriais.|[Desenhar formas e demarcadores](../xaml-tools/draw-shapes-and-paths.md)|
-|**Editar controles, modelos e estilos**|Exige a codificação e o conhecimento de estilos e modelos do WPF.|Transforme qualquer imagem em um controle.<br /><br />Use as ferramentas de edição de modelo para fazer alterações em controles, estilos e modelos com apenas alguns cliques do mouse.<br /><br />Por exemplo, é possível usar os recursos de estilo do Blend for Visual Studio para implementar controles WPF comuns (como botões, caixas de listagem, barras de rolagem, menus, etc.) e alterar a cor, o estilo ou o modelo subjacente diretamente no Blend for Visual Studio. Você pode mudar para o código para dar os toques finais, se desejar.|[Modificar o estilo de objetos](../designers/modify-the-style-of-objects-in-blend.md)|
+|**Editar controles, modelos e estilos**|Exige a codificação e o conhecimento de estilos e modelos do WPF.|Transforme qualquer imagem em um controle.<br /><br />Use as ferramentas de edição de modelo para fazer alterações em controles, estilos e modelos com apenas alguns cliques do mouse.<br /><br />Por exemplo, é possível usar os recursos de estilo do Blend for Visual Studio para implementar controles WPF comuns (como botões, caixas de listagem, barras de rolagem, menus, etc.) e alterar a cor, o estilo ou o modelo subjacente diretamente no Blend for Visual Studio. Você pode mudar para o código para dar os toques finais, se desejar.|[Modificar o estilo de objetos](modify-the-style-of-objects-in-blend.md)|
 |**Conectar a interface do usuário aos dados**|É possível criar uma fonte de dados com base em recursos, como bancos de dados SQL Server, WCF ou serviços Web, objetos ou lista do SharePoint, depois associar a fonte de dados aos controles da interface do usuário.<br /><br />Dados de tempo de design devem ser criados manualmente para proporcionar uma experiência de design interativa.|Para aplicativos do .NET Framework, crie dados de amostra com facilidade para executar protótipos e testes. Mude para dados dinâmicos quando você estiver pronto.<br /><br />As funcionalidades de geração de dados do Blend para Visual Studio são impressionantes (é possível adicionar nomes, números, URLs e fotos de maneira fácil e imediata) e podem economizar um bom tempo.<br /><br />Para dados dinâmicos, é possível associar os controles da interface do usuário a um arquivo XML ou a qualquer fonte de dados CLR.|[Exibir dados](display-data-in-blend.md)|
 
 Para obter mais informações sobre design avançado de XAML, confira [Criar uma interface do usuário usando o Blend para Visual Studio](../xaml-tools/creating-a-ui-by-using-blend-for-visual-studio.md).

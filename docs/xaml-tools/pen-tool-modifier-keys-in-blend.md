@@ -9,12 +9,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7213bd271b5c690d78443339039d09bf14163e91
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 255b3de916215759615384dce26c5affbc07a995
+ms.sourcegitcommit: 97623fd6190c43fed0d2ee7af92b01c375282622
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189611"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73569096"
 ---
 # <a name="pen-tool-modifier-keys-in-blend-for-visual-studio"></a>Teclas modificadoras da ferramenta Caneta no Blend para Visual Studio
 
@@ -39,5 +39,5 @@ A tabela a seguir lista os atalhos que você pode usar para modificar um demarca
 ## <a name="see-also"></a>Consulte também
 
 - [Teclas modificadoras da prancheta](../designers/artboard-modifier-keys-in-blend.md)
-- [Teclas modificadoras da ferramenta Seleção Direta](../designers/direct-selection-tool-modifier-keys-in-blend.md)
+- [Teclas modificadoras da ferramenta Seleção Direta](direct-selection-tool-modifier-keys-in-blend.md)
 - [Desenhar formas e demarcadores](draw-shapes-and-paths.md)
