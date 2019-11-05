@@ -11,12 +11,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 08d9ee33d49985fed8e8c0180fa652aed39b25d9
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 7a6cb0d70566eaabb2ba37cb209041e03684c958
+ms.sourcegitcommit: 97623fd6190c43fed0d2ee7af92b01c375282622
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73186813"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73568880"
 ---
 # <a name="create-custom-editors-and-designers"></a>Criar editores e designers personalizados
 
@@ -59,7 +59,7 @@ Para obter informações sobre o editor de núcleo do Visual Studio, consulte [e
 
 - Seu editor precisa hospedar controles ActiveX?
 
-   Se o editor hospedar controles ActiveX, implemente um editor de ativação in-loco, conforme descrito na [ativação](../extensibility/in-place-activation.md)in-loco. Se não hospedar controles ActiveX, use um editor de incorporação simplificado ou personalize o [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] editor padrão.
+   Se o editor hospedar controles ActiveX, implemente um editor de ativação in-loco, conforme descrito na [ativação](/visualstudio/misc/in-place-activation?view=vs-2015)in-loco. Se não hospedar controles ActiveX, use um editor de incorporação simplificado ou personalize o [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] editor padrão.
 
 - Seu editor dará suporte a várias exibições? Você deve dar suporte a várias exibições se quiser que as exibições do seu editor fiquem visíveis ao mesmo tempo que o editor padrão.
 

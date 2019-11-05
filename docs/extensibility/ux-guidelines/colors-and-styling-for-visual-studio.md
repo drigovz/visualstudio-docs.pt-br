@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ac04f7ef5d7ad445bec470b3d019418a3bec1f7b
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 4ceea00a3fa77a9c1106f24f28ac1d5890437b41
+ms.sourcegitcommit: 97623fd6190c43fed0d2ee7af92b01c375282622
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73188887"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73568960"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>Cores e estilo do Visual Studio
 
@@ -340,7 +340,7 @@ Muitos elementos comuns da interface do usuário já têm Alto Contraste cores d
 
 Um VSPackage pode controlar as fontes e cores por meio de categorias personalizadas e exibir itens na página de propriedades fontes e cores. Ao usar esse mecanismo, o VSPackages deve implementar a interface [IVsFontAndColorDefaultsProvider](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolordefaultsprovider) e suas interfaces associadas.
 
-Em princípio, esse mecanismo pode ser usado para modificar todos os itens de exibição existentes e as categorias que os contêm. No entanto, ele não deve ser usado para modificar a categoria do editor de texto ou seus itens de exibição. Para obter mais informações sobre a categoria editor de texto, consulte [visão geral de fonte e cor](../font-and-color-overview.md).
+Em princípio, esse mecanismo pode ser usado para modificar todos os itens de exibição existentes e as categorias que os contêm. No entanto, ele não deve ser usado para modificar a categoria do editor de texto ou seus itens de exibição. Para obter mais informações sobre a categoria editor de texto, consulte [visão geral de fonte e cor](/visualstudio/extensibility/font-and-color-overview?view=vs-2015).
 
 Para implementar categorias personalizadas ou itens de exibição, um VSPackage deve:
 
@@ -358,7 +358,7 @@ Construa um tipo especial de entrada de registro de categoria em `[HKLM\SOFTWARE
 
 Preencha o registro com dois valores:
 
-| Name | Digite | Dados | Descrição |
+| Nome | Tipo | Dados | Descrição |
 | --- | --- | --- | --- |
 | Categoria | REG_SZ | GUID | Um GUID criado para identificar a categoria |
 | Pacote | REG_SZ | GUID | O GUID do serviço VSPackage que dá suporte à categoria |
@@ -371,7 +371,7 @@ Construa um tipo especial de entrada de registro de categoria em `[HKLM\SOFTWARE
 
 Preencha o registro com dois valores:
 
-| Name | Digite | Dados | Descrição |
+| Nome | Tipo | Dados | Descrição |
 |--- | --- | --- | --- |
 | Categoria | REG_SZ | GUID | Um GUID criado para identificar a categoria |
 | Pacote | REG_SZ | GUID | O GUID do serviço VSPackage que dá suporte à categoria |
