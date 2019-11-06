@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 825e985820ac7a4d72bf321133491e312adb0a0e
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 762fce80ad1e97f700af0768cdb68251a3ee8017
+ms.sourcegitcommit: 77ef1dcc71057cd5fdc4733ff0cb6085bd6113e0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72981945"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73661869"
 ---
 # <a name="sharepoint-project-and-project-item-templates"></a>Modelos de projeto e item de projeto do SharePoint
   As seções a seguir descrevem o projeto do SharePoint e os modelos de item de projeto disponíveis e como eles são usados.
@@ -132,7 +132,7 @@ ms.locfileid: "72981945"
  Um *fluxo de trabalho de máquina de estado* é um conjunto de Estados, transições e ações de lógica de negócios. As etapas em um fluxo de trabalho de máquina de estado não são executadas em sequência; em vez disso, eles são disparados por ações e Estados. Como um fluxo de trabalho seqüencial, os fluxos de trabalho de máquina de estado são associados a itens do SharePoint, como listas e documentos. Mais uma vez, você pode criar fluxos de trabalho em nível de site (global) ou fluxos de trabalho em nível de lista (local). Você também pode selecionar se um fluxo de trabalho é iniciado automaticamente ou manualmente. Este item de projeto só pode ser usado em soluções de farm. Você pode adicionar este item de projeto somente a soluções de farm. Para obter mais informações, consulte [criar soluções de fluxo de trabalho do SharePoint](../sharepoint/creating-sharepoint-workflow-solutions.md), [fluxos de trabalho no SharePoint Server 2010](/previous-versions/office/developer/sharepoint-2010/ms549489(v=office.14))e [o que há de novo: aprimoramentos de fluxo de trabalho](/previous-versions/office/developer/sharepoint-2010/ee537015(v=office.14)).
 
 ### <a name="user-control-farm-solution-only"></a>Controle de usuário (somente solução de farm)
- Um *controle de usuário* é um controle personalizado e reutilizável ao qual você pode adicionar outros controles ASP.net e controles do SharePoint. O controle de usuário pode ser adicionado a páginas de aplicativo e Web Parts que são executadas no SharePoint. Este item de projeto só pode ser usado em soluções de farm. Você pode adicionar este item de projeto somente a soluções de farm. Para obter mais informações, consulte [criando controles reutilizáveis para Web Parts ou páginas de aplicativo](/visualstudio/sharepoint/creating-reusable-controls-for-web-parts-or-application-pages&view=vs-2019).
+ Um *controle de usuário* é um controle personalizado e reutilizável ao qual você pode adicionar outros controles ASP.net e controles do SharePoint. O controle de usuário pode ser adicionado a páginas de aplicativo e Web Parts que são executadas no SharePoint. Este item de projeto só pode ser usado em soluções de farm. Você pode adicionar este item de projeto somente a soluções de farm. Para obter mais informações, consulte [criando controles reutilizáveis para Web Parts ou páginas de aplicativo](/visualstudio/sharepoint/creating-reusable-controls-for-web-parts-or-application-pages).
 
 ### <a name="visual-web-part"></a>Web Part Visual
  Um item de projeto de *Web Part Visual* inclui um arquivo de definição *Elements. xml* , um item de **Web Part** e um item de **controle de usuário** . Você pode criar a aparência da Web Part Visual arrastando ou copiando controles da caixa de ferramentas do Visual Studio para a superfície do controle de usuário. Para obter mais informações, consulte [como: criar uma Web Part do SharePoint usando um designer](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md) e [bloco de construção: Web Parts](/previous-versions/office/developer/sharepoint-2010/ee535520(v=office.14)).

@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 854037d096ceac01969bcb0ec2e074f4cd24a2f3
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: c0b7f1b0668af8218017c5cc96712384ed5f275c
+ms.sourcegitcommit: 77ef1dcc71057cd5fdc4733ff0cb6085bd6113e0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72983857"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73661882"
 ---
 # <a name="walkthrough-deploy-a-project-task-list-definition"></a>Walkthrough: implantar uma definição de lista de tarefas de projeto
 
@@ -172,7 +172,7 @@ Você pode aprender mais sobre como personalizar e implantar soluções do Share
 
 - [Como: criar um receptor de eventos](../sharepoint/how-to-create-an-event-receiver.md)
 
-- [Windows PowerShell para SharePoint Server 2010](/powershell/module/sharepoint-server/&view=sharepoint-ps)
+- [Windows PowerShell para SharePoint Server 2010](/powershell/module/sharepoint-server)
 
 ## <a name="see-also"></a>Consulte também
 [Empacotar e implantar soluções do SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

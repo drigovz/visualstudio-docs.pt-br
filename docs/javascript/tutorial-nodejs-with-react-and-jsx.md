@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: c5f3c4a0a2acdf73aae96c5cb5629252e712da64
-ms.sourcegitcommit: ee9c55616a22addc89cf1cf1942bf371d73e2e11
+ms.openlocfilehash: 2f14a5f2255f7ba1b077ead60147a6df407970fc
+ms.sourcegitcommit: f9f389e72787de30eb869a55ef7725a10a4011f0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "73618114"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73636561"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>Tutorial: Criar um aplicativo Node.js e React no Visual Studio
 
@@ -386,6 +386,8 @@ Do Visual Studio 2019 em diante, é necessário um script de build. Em vez de tr
 
 Na seção anterior, você anexou o depurador ao código do Node.js do lado do servidor. Para anexar o depurador do Visual Studio e atingir pontos de interrupção no código do React lado do cliente, o depurador precisa de ajuda para identificar o processo correto. Esta é uma maneira de permitir isso.
 
+### <a name="prepare-the-browser-for-debugging"></a>Preparar o navegador para depuração
+
 ::: moniker range=">=vs-2019"
 Para este cenário, use o Microsoft Edge (Chromium), atualmente chamado de **Microsoft Edge beta** no IDE ou Chrome.
 ::: moniker-end
@@ -398,30 +400,38 @@ Para este cenário, use o Chrome.
    Outras instâncias do navegador podem impedir que o navegador seja aberto com a depuração habilitada. (As extensões do navegador podem estar em execução e impedindo o modo de depuração completa, portanto, talvez seja necessário abrir o Gerenciador de tarefas para localizar instâncias inesperadas do Chrome.)
 
    ::: moniker range=">=vs-2019"
-   Para o Microsoft Edge (Chromium), também Desligue todas as instâncias do Chrome. Como ambos os navegadores compartilham a base de código Chromium, isso fornece os melhores resultados.
+   Para o Microsoft Edge (Chromium), também Desligue todas as instâncias do Chrome. Como ambos os navegadores usam a base de código Chromium, isso fornece os melhores resultados.
    ::: moniker-end
 
-2. Abra o comando **Executar** do botão **Iniciar** do Windows (clique com o botão direito do mouse e escolha **Executar**) e digite o seguinte comando:
+2. Inicie seu navegador com a depuração habilitada.
+
+    ::: moniker range=">=vs-2019"
+    A partir do Visual Studio 2019, você pode definir o sinalizador `--remote-debugging-port=9222` na inicialização do navegador selecionando **procurar com...** > na barra de ferramentas **depurar** , escolhendo **Adicionar**e, em seguida, definindo o sinalizador no campo **argumentos** . Use um nome amigável diferente para o navegador, como **borda com depuração** ou **Chrome com depuração**. Para obter detalhes, confira [Notas sobre a versão](/visualstudio/releases/2019/release-notes-v16.2).
+
+    ![Definir o navegador para abrir com a depuração habilitada](../javascript/media/tutorial-nodejs-react-edge-with-debugging.png)
+
+    Como alternativa, abra o comando **executar** no botão **Iniciar** do Windows (clique com o botão direito do mouse e escolha **executar**) e digite o seguinte comando:
+
+    `msedge --remote-debugging-port=9222`
+
+    Or
 
     `chrome.exe --remote-debugging-port=9222`
-    ::: moniker range=">=vs-2019"
-    ou, `msedge --remote-debugging-port=9222`
+    ::: moniker-end
+
+    ::: moniker range="vs-2017"
+    Abra o comando **Executar** do botão **Iniciar** do Windows (clique com o botão direito do mouse e escolha **Executar**) e digite o seguinte comando:
+
+    `chrome.exe --remote-debugging-port=9222`
     ::: moniker-end
 
     Isso inicia o navegador com a depuração habilitada.
 
-    ::: moniker range=">=vs-2019"
-
-    > [!TIP]
-    > A partir do Visual Studio 2019, você pode definir o sinalizador `--remote-debugging-port` na inicialização do navegador selecionando **procurar com...** > na barra de ferramentas **depurar** , escolhendo **Adicionar**e, em seguida, definindo o sinalizador no campo **argumentos** . Use um nome amigável diferente para o navegador, como **borda com depuração** ou **Chrome com depuração**. Para obter detalhes, confira [Notas sobre a versão](/visualstudio/releases/2019/release-notes-v16.2).
-
-    ![Definir o navegador para abrir com a depuração habilitada](../javascript/media/tutorial-nodejs-react-edge-with-debugging.png)
-
-    ::: moniker-end
-
     O aplicativo ainda não está em execução e, portanto, você obtém uma página vazia do navegador.
 
-3. Alterne para o Visual Studio e defina um ponto de interrupção no código-fonte, ou seja, *app-Bundle. js* ou *app. TSX*.
+### <a name="attach-the-debugger-to-client-side-script"></a>Anexar o depurador ao script do lado do cliente
+
+1. Alterne para o Visual Studio e defina um ponto de interrupção no código-fonte, ou seja, *app-Bundle. js* ou *app. TSX*.
 
     Para *app-Bundle. js*, defina o ponto de interrupção na função `render()`, conforme mostrado na ilustração a seguir:
 
@@ -433,7 +443,7 @@ Para este cenário, use o Chrome.
 
     ![Definir um ponto de interrupção](../javascript/media/tutorial-nodejs-react-set-breakpoint-in-tsx-file.png)
 
-4. Se você estiver definindo o ponto de interrupção no arquivo *. TSX* (em vez de *app-Bundle. js*), precisará atualizar *webpack-config. js*. Substitua o código a seguir:
+2. Se você estiver definindo o ponto de interrupção no arquivo *. TSX* (em vez de *app-Bundle. js*), precisará atualizar *webpack-config. js*. Substitua o código a seguir:
 
     ```javascript
     output: {
@@ -450,24 +460,31 @@ Para este cenário, use o Chrome.
     },
     ```
 
-    Essa é uma configuração somente de desenvolvimento para habilitar a depuração no Visual Studio. Essa configuração permite que você substitua as referências geradas no arquivo sourcemap, *app-Bundle. js. map*, ao compilar o aplicativo. Por padrão, as referências do webpack no arquivo sourcemap incluem o prefixo *webpack:///* , que impede que o Visual Studio localize o arquivo de origem, *app. TSX*. Especificamente, quando você faz essa alteração, a referência ao arquivo de origem, *app. TSX*, é alterada de *webpack:///./app.TSX* para *./app.TSX*, que habilita a depuração.
+    Essa é uma configuração somente de desenvolvimento para habilitar a depuração no Visual Studio. Essa configuração permite que você substitua as referências geradas no arquivo do mapa de origem, *app-Bundle. js. map*, ao compilar o aplicativo. Por padrão, as referências do webpack no arquivo de mapa de origem incluem o prefixo *webpack:///* , que impede que o Visual Studio localize o arquivo de origem, *app. TSX*. Especificamente, quando você faz essa alteração, a referência ao arquivo de origem, *app. TSX*, é alterada de *webpack:///./app.TSX* para *./app.TSX*, que habilita a depuração.
 
-5. Selecione o navegador de destino como o destino de depuração no Visual Studio e pressione **Ctrl**+**F5** (**depurar** > **Iniciar sem depuração**) para executar o aplicativo no navegador.
+3. Selecione o navegador de destino como o destino de depuração no Visual Studio e pressione **Ctrl**+**F5** (**depurar** > **Iniciar sem depuração**) para executar o aplicativo no navegador.
+
+    ::: moniker range=">=vs-2019"
+    Se você criou uma configuração de navegador com um nome amigável, escolha-a como seu destino de depuração.
+    ::: moniker-end
 
     O aplicativo será aberto em uma nova guia do navegador.
 
-6. Escolha **Depurar** > **Anexar ao Processo**.
+4. Escolha **Depurar** > **Anexar ao Processo**.
 
-7. Na caixa de diálogo **anexar ao processo** , obtenha uma lista filtrada de instâncias do navegador às quais você pode anexar.
+    > [!TIP]
+    > A partir do Visual Studio 2017, depois de anexar ao processo pela primeira vez seguindo estas etapas, você pode reanexar rapidamente ao mesmo processo escolhendo **Debug** > **reanexar para processar**.
+
+5. Na caixa de diálogo **anexar ao processo** , obtenha uma lista filtrada de instâncias do navegador às quais você pode anexar.
 
     ::: moniker range=">=vs-2019"
-    No Visual Studio 2019, escolha o navegador de destino, **JavaScript (Chrome)** ou **JavaScript correto (Microsoft Edge-Chromium)** no campo **anexar a** , digite **Chrome** ou **Edge** na caixa de filtro para filtrar os resultados da pesquisa. Se você tiver criado uma configuração de navegador com um nome amigável, escolha isso em vez disso.
+    No Visual Studio 2019, escolha o depurador correto para seu navegador de destino, **JavaScript (Chrome)** ou **JavaScript (Microsoft Edge-Chromium)** no campo **anexar a** , digite **Chrome** ou **Edge** na caixa de filtro para filtrar o resultados da pesquisa.
     ::: moniker-end
     ::: moniker range="vs-2017"
     No Visual Studio 2017, escolha **código WebKit** no campo **anexar a** , digite **Chrome** na caixa de filtro para filtrar os resultados da pesquisa.
     ::: moniker-end
 
-8. Selecione o processo de navegador com a porta de host correta (localhost neste exemplo) e selecione **anexar**.
+6. Selecione o processo de navegador com a porta de host correta (localhost neste exemplo) e selecione **anexar**.
 
     A porta (1337) também pode aparecer no campo **título** para ajudá-lo a selecionar a instância correta do navegador.
 
@@ -485,9 +502,9 @@ Para este cenário, use o Chrome.
     > [!TIP]
     > Se o depurador não for anexado e a mensagem "Não é possível anexar ao processo. Uma operação não é válida no estado atual. ", use o Gerenciador de tarefas para fechar todas as instâncias do navegador de destino antes de iniciar o navegador no modo de depuração. As extensões de navegador podem estar em execução e impedindo o modo de depuração completa.
 
-9. Como o código com o ponto de interrupção já foi executado, atualize a página do navegador para atingir o ponto de interrupção.
+7. Como o código com o ponto de interrupção já foi executado, atualize a página do navegador para atingir o ponto de interrupção.
 
-    Enquanto estiver em pausa no depurador, você pode examinar o estado do aplicativo passando o mouse sobre as variáveis e usando as janelas do depurador. Você pode avançar o depurador percorrendo o código (**F5**, **F10** e **F11**).
+    Enquanto estiver em pausa no depurador, você pode examinar o estado do aplicativo passando o mouse sobre as variáveis e usando as janelas do depurador. Você pode avançar o depurador percorrendo o código (**F5**, **F10** e **F11**). Para obter mais informações sobre os recursos básicos de depuração, consulte [primeira olhada no depurador](../debugger/debugger-feature-tour.md).
 
     Você pode atingir o ponto de interrupção no *app-Bundle. js* ou seu local mapeado no *app. TSX*, dependendo de quais etapas você seguiu anteriormente, junto com o seu ambiente e o estado do navegador. De qualquer forma, você pode percorrer o código e examinar as variáveis.
 
@@ -495,14 +512,11 @@ Para este cenário, use o Chrome.
 
       * Você fechou todas as instâncias de navegador, incluindo as extensões Chrome (usando o Gerenciador de tarefas), para que você possa executar o navegador no modo de depuração. Certifique-se de iniciar o navegador no modo de depuração.
 
-      * Verifique se o arquivo sourcemap inclui uma referência a *./app.TSX* e não *webpack:///./app.TSX*, o que impede que o depurador do Visual Studio localize o *app. TSX*.
+      * Verifique se o arquivo de mapa de origem inclui uma referência a *./app.TSX* e não *webpack:///./app.TSX*, o que impede que o depurador do Visual Studio localize o *app. TSX*.
 
        Como alternativa, se você precisar dividir o código em *app. TSX* e não puder fazê-lo, tente usar a instrução `debugger;` no *app. TSX*ou defina os pontos de interrupção no Chrome ferramentas para desenvolvedores (ou as ferramentas F12 para o Microsoft Edge) em seu lugar.
 
-   * Se você precisar entrar no código em *app-bundle.js* e não conseguir, remova o arquivo sourcemap, *app-bundle.js.map*.
-
-     > [!TIP]
-     > Após anexar ao processo pela primeira vez seguindo estas etapas, você pode rapidamente anexar novamente ao mesmo processo no Visual Studio 2017 escolhendo **Depurar** > **Reanexar ao Processo**.
+   * Se você precisar dividir o código em *app-Bundle. js* e não puder fazê-lo, remova o arquivo do mapa de origem, *app-Bundle. js. map*.
 
 ## <a name="next-steps"></a>Próximas etapas
 

@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 677dddbde5e90117dc19acfaf54a941c304ae7f1
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
-ms.translationtype: HT
+ms.openlocfilehash: 713e7319618b42e2cdc4b8c0951bd79c225ac1b6
+ms.sourcegitcommit: f9f389e72787de30eb869a55ef7725a10a4011f0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70180063"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73636582"
 ---
 # <a name="first-look-at-the-visual-studio-ide"></a>Introdução ao IDE do Visual Studio
 
@@ -90,7 +90,7 @@ Para continuar explorando os recursos do Visual Studio, vamos criar um projeto.
 1. Na caixa de diálogo **Novo Projeto** exibida, aceite o nome de projeto padrão e escolha **OK**.
 ::: moniker-end
 
-   O projeto é criado e um arquivo chamado *server.cs* é aberto na janela **Editor**. O **Editor** mostra o conteúdo dos arquivos e é onde você fará a maior parte do trabalho de codificação no Visual Studio.
+   O projeto é criado e um arquivo chamado *Server. js* é aberto na janela do **Editor** . O **Editor** mostra o conteúdo dos arquivos e é onde você fará a maior parte do trabalho de codificação no Visual Studio.
 
    ![Editor no Visual Studio](media/editor.png)
 

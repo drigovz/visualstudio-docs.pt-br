@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 29ede9dd29952e87e7f1dd76875905973bada6a6
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: cf81dea230c2cfc33eb19ca001d8c9ed06b0489c
+ms.sourcegitcommit: 77ef1dcc71057cd5fdc4733ff0cb6085bd6113e0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72986087"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73661857"
 ---
 # <a name="excel-object-model-overview"></a>Visão geral do modelo de objeto do Excel
   Para desenvolver soluções que usam o Microsoft Office Excel, você pode interagir com os objetos fornecidos pelo modelo de objeto do Excel. Este tópico apresenta os objetos mais importantes:
@@ -103,7 +103,7 @@ ms.locfileid: "72986087"
  Para obter informações completas sobre o modelo de objeto do Excel, consulte a referência do assembly de interoperabilidade primária do Excel (PIA) e a referência do modelo de objeto do VBA.
 
 ### <a name="primary-interop-assembly-reference"></a>Referência de assembly de interoperabilidade primária
- A documentação de referência do PIA do Excel descreve os tipos no assembly de interoperabilidade primário para Excel. Esta documentação está disponível no seguinte local: [referência de assembly de interoperabilidade primária do Excel 2010](/visualstudio/vsto/office-primary-interop-assemblies&view=vs-2019).
+ A documentação de referência do PIA do Excel descreve os tipos no assembly de interoperabilidade primário para Excel. Esta documentação está disponível no seguinte local: [referência de assembly de interoperabilidade primária do Excel 2010](/visualstudio/vsto/office-primary-interop-assemblies).
 
  Para obter mais informações sobre o design do PIA do Excel, como as diferenças entre classes e interfaces no PIA e como os eventos no PIA são implementados, consulte [visão geral de classes e interfaces nos assemblies de interoperabilidade primária do Office](/previous-versions/office/office-12/ms247299(v=office.12)).
 

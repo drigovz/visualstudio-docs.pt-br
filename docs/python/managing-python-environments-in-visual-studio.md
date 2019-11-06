@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a709c4b76f23529e0ffee7027bd1b6257ba00d84
-ms.sourcegitcommit: bb5425b9c6d8fd7135d9584c2963831754071347
+ms.openlocfilehash: 5e269e19a09aec157e38eaf8938b5995c2647803
+ms.sourcegitcommit: 77ef1dcc71057cd5fdc4733ff0cb6085bd6113e0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73024706"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73661937"
 ---
 # <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>Como criar e gerenciar ambientes Python no Visual Studio
 
@@ -124,7 +124,7 @@ Por esse motivo, os desenvolvedores geralmente criam um *ambiente virtual* para 
 
 O Visual Studio dá suporte direto para a criação de um ambiente virtual para um projeto. Por exemplo, se você abrir um projeto que contenha um *requirements.txt* ou criar um projeto usando um modelo que inclua esse arquivo, o Visual Studio solicitará que você crie automaticamente um ambiente virtual e instale essas dependências.
 
-A qualquer momento dentro de um projeto aberto, você pode criar um ambiente virtual. No **Gerenciador de Soluções**, expanda o nó do projeto, clique com o botão direito do mouse no nó **Ambientes do Python** e selecione “Adicionar Ambiente Virtual”. Para obter mais informações, confira [Criar um ambiente virtual](selecting-a-python-environment-for-a-project.md#create-a-virtual-environment-1).
+A qualquer momento dentro de um projeto aberto, você pode criar um ambiente virtual. No **Gerenciador de Soluções**, expanda o nó do projeto, clique com o botão direito do mouse no nó **Ambientes do Python** e selecione “Adicionar Ambiente Virtual”. Para obter mais informações, confira [Criar um ambiente virtual](/visualstudio/python/selecting-a-python-environment-for-a-project?view=vs-2019#create-a-virtual-environment-1).
 
 O Visual Studio também fornece um comando para gerar um arquivo *requirements.txt* de um ambiente virtual, facilitando a recriação do ambiente em outros computadores. Para obter mais informações, confira [Usar ambientes virtuais](selecting-a-python-environment-for-a-project.md#use-virtual-environments).
 
@@ -167,7 +167,7 @@ Um ambiente do conda é aquele criado usando a ferramenta `conda`, ou com o gere
     | Exibir na janela de ambientes do Python | Especifica se deve mostrar a janela **Ambientes do Python** depois de criar o ambiente. |
 
     > [!Important]
-    > Ao criar um ambiente do conda, certifique-se de especificar pelo menos uma versão do Python ou um pacote do Python usando `environments.yml` ou a lista de pacotes, que garante que o ambiente contém um tempo de execução do Python. Caso contrário, o Visual Studio ignora o ambiente: o ambiente não aparece na janela **Ambientes do Python**, não é definido como o ambiente atual para um projeto e não está disponível como um ambiente global.
+    > Ao criar um ambiente do conda, certifique-se de especificar pelo menos uma versão do Python ou um pacote do Python usando `environments.yml` ou a lista de pacotes, que garante que o ambiente contém um runtime do Python. Caso contrário, o Visual Studio ignora o ambiente: o ambiente não aparece na janela **Ambientes do Python**, não é definido como o ambiente atual para um projeto e não está disponível como um ambiente global.
     >
     > Se você criar um ambiente de conda sem uma versão do Python, use o comando `conda info` para ver os locais das pastas de ambiente do conda, em seguida, remova manualmente a subpasta do ambiente do local.
 
