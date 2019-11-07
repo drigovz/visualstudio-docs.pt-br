@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 046f3bbca7b66d14e9b6a3eae96b613492292be0
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: fcb30056021a865d0b0e605de462ff72ced5a383
+ms.sourcegitcommit: 77ef1dcc71057cd5fdc4733ff0cb6085bd6113e0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189192"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73661894"
 ---
 # <a name="troubleshoot-sharepoint-solutions"></a>Solucionar problemas de soluções do SharePoint
   Os seguintes problemas ou alertas podem ocorrer quando você depura soluções do SharePoint usando o depurador de [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Para obter mais informações, consulte [Depurando soluções de fluxo de trabalho do SharePoint 2007](https://msdn.microsoft.com/3a5392f3-66f3-48be-956e-02de23fa6247).
@@ -172,9 +172,9 @@ ms.locfileid: "73189192"
 ### <a name="resolution"></a>Resolução
  Para resolver esse problema, exclua o modelo manualmente e, em seguida, implante a solução novamente.  Você pode excluir o modelo usando uma das seguintes ferramentas:
 
-- Administração Central do SharePoint 2010. Para obter mais informações, consulte [BDC gerenciamento de modelos](/previous-versions/office/sharepoint-server-2010/ee524073(v=office.14)#deleteamodel) no site do Microsoft TechNet.
+- Administração Central do SharePoint 2010. Para obter mais informações, consulte [BDC gerenciamento de modelos](/previous-versions/office/sharepoint-server-2010/ee524073(v=office.14)#delete-a-bdc-model) no site do Microsoft TechNet.
 
-- Windows PowerShell. Você pode excluir o modelo digitando este comando no prompt de comando: **Remove-SPBusinessDataCatalogModel**. Para obter mais informações, consulte [cmdlets gerais (SharePoint Server 2010)](/powershell/module/sharepoint-server/&view=sharepoint-ps) no site do Microsoft TechNet.
+- Windows PowerShell. Você pode excluir o modelo digitando este comando no prompt de comando: **Remove-SPBusinessDataCatalogModel**. Para obter mais informações, consulte [cmdlets gerais (SharePoint Server 2010)](/powershell/module/sharepoint-server) no site do Microsoft TechNet.
 
 ## <a name="an-error-appears-when-you-try-to-view-a-visual-web-part-in-sharepoint"></a>Um erro é exibido quando você tenta exibir uma Web Part Visual no SharePoint
  Esse problema ocorre quando a propriedade **path** do controle de usuário não começa com a cadeia de caracteres "controltemplates\\".

@@ -10,12 +10,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 564672e01eeffbdcb53bf1af08f329d2f6bf218f
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: dd7b8f7b88040c7b80dcc6c40dc168a51890d8d2
+ms.sourcegitcommit: 77ef1dcc71057cd5fdc4733ff0cb6085bd6113e0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985780"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73661835"
 ---
 # <a name="improve-the-performance-of-a-vsto-add-in"></a>Melhorar o desempenho de um suplemento do VSTO
   Você pode dar aos seus usuários uma experiência melhor otimizando os suplementos do VSTO criados para aplicativos do Office para que eles sejam iniciados rapidamente, desligados, abram itens e executem outras tarefas. Se o suplemento do VSTO for para Outlook, você também poderá reduzir a chance de o suplemento do VSTO ser desabilitado devido ao mau desempenho. Você pode aumentar o desempenho do suplemento do VSTO implementando as seguintes estratégias:
@@ -28,7 +28,7 @@ ms.locfileid: "72985780"
 
 - [Execute operações caras em um thread de execução separado](#Perform).
 
-  Para obter mais informações sobre como otimizar um suplemento do VSTO do Outlook, consulte [critérios de desempenho para manter os suplementos do VSTO habilitados](/previous-versions/office/jj228679(v=office.15)#ol15WhatsNew_AddinDisabling).
+  Para obter mais informações sobre como otimizar um suplemento do VSTO do Outlook, consulte [critérios de desempenho para manter os suplementos do VSTO habilitados](/previous-versions/office/jj228679(v=office.15)#performance-criteria-for-keeping-add-ins-enabled).
 
 ## <a name="Load"></a>Carregar suplementos do VSTO sob demanda
  Você pode configurar um suplemento do VSTO para carregar somente nas seguintes circunstâncias:
