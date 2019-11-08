@@ -1,17 +1,17 @@
 ---
 title: Estendendo o Visual Studio para Mac
 description: Os recursos do Visual Studio para Mac podem ser estendido com módulos chamados de pacotes de extensão. A primeira parte deste guia cria um pacote de extensão simples do Visual Studio para Mac para inserir a data e a hora em um documento. A segunda parte deste guia apresenta os conceitos básicos do sistema de pacote de extensão e algumas das principais APIs que formam a base do Visual Studio para Mac.
-author: alanjclark
-ms.author: alcl
+author: conceptdev
+ms.author: crdun
 ms.date: 05/07/2019
 ms.technology: vs-ide-sdk
 ms.assetid: D5245AB0-8404-426B-B538-F49125E672B2
-ms.openlocfilehash: f9c14b408a7714f06ae8a96b0ecc60dfc4b8ebe7
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.openlocfilehash: 02285a38214b4f13c45b4868599c84f47e67013c
+ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67691655"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73716846"
 ---
 # <a name="extending-visual-studio-for-mac"></a>Estendendo o Visual Studio para Mac
 
@@ -28,7 +28,7 @@ Para que um pacote de extensão se baseie no Visual Studio para Mac, ele deve te
 A vantagem desse design modular é que o Visual Studio para Mac é extensível – há muitos pontos de extensão que podem servir de base com pacotes de extensão personalizados. Exemplos de pacotes de extensão atuais incluem suporte para C# e F#, ferramentas de depuração e modelos de projeto.
 
 > [!NOTE]
-> Se você tiver um projeto do Criador de Suplementos que foi criado antes do Criador de Suplementos 1.2, será necessário migrar seu projeto, conforme descrito nas etapas indicadas [aqui](https://mhut.ch/addinmaker/1.2).
+> Se você tiver um projeto do criador de suplementos criado antes do Add-in Maker 1,2, você precisará migrar seu projeto conforme descrito nas etapas [aqui](https://mhut.ch/addinmaker/1.2).
 
 <!---The [Walkthrough](~/extending-visual-studio-mac-walkthrough.md) topic explains how to build an extension package that uses a *Command* to insert the date and time into an open text document.--->
 
@@ -135,7 +135,7 @@ Comando e CommandItem agora estão vinculados – o CommandItem chama o Comando 
 
 <!--The extension package detailed in the [Walkthrough](~/extending-visual-studio-mac-walkthrough.md) deals with the Text Editor in Visual Studio for Mac, but this is only one of many possible areas for customization. -->
 
-Para ver informações sobre o escopo das áreas que estão disponíveis para o desenvolvimento, consulte a [Referência de árvore de extensões](http://monodevelop.com/Developers/Articles/Extension_Tree_Reference) e [Visão geral da API](http://monodevelop.com/Developers/Articles/API_Overview). Ao criar pacotes de extensão avançados, consulte também [Artigos do desenvolvedor](http://monodevelop.com/Developers/Articles). Veja abaixo uma lista parcial das áreas de personalização:
+Para ver informações sobre o escopo das áreas que estão disponíveis para o desenvolvimento, consulte a [Referência de árvore de extensões](https://www.monodevelop.com/developers/articles/extension-tree-reference/) e [Visão geral da API](https://www.monodevelop.com/developers/articles/api-overview/). Ao criar pacotes de extensão avançados, consulte também [Artigos do desenvolvedor](https://www.monodevelop.com/developers/articles/). Veja abaixo uma lista parcial das áreas de personalização:
 
 * Painéis
 * Esquemas de associação de teclas
@@ -153,7 +153,7 @@ Para ver informações sobre o escopo das áreas que estão disponíveis para o 
 * Geradores de código
 * Snippets de código
 * Frameworks de destino
-* Tempo de execução de destino
+* runtime de destino
 * Back-ends de VCS
 * Refatoração
 * Manipuladores de execução
@@ -174,13 +174,13 @@ Um dos muitos benefícios de compartilhar o editor entre o Visual Studio e o Vis
 
 Antes de entrarmos nos detalhes da extensão específicos do Visual Studio para Mac, é útil entender mais sobre o próprio editor compartilhado. Veja a seguir alguns recursos que podem aprofundar essa compreensão:
 
-* [Managed Extensibility Framework](https://docs.microsoft.com/dotnet/framework/mef/index)
-* [MEF no editor](https://docs.microsoft.com/visualstudio/extensibility/managed-extensibility-framework-in-the-editor)
-* [Dentro do Editor](https://docs.microsoft.com/visualstudio/extensibility/inside-the-editor)
-* [Serviço de linguagem e pontos de extensão do editor](https://docs.microsoft.com/visualstudio/extensibility/language-service-and-editor-extension-points)
+* [Managed Extensibility Framework](/dotnet/framework/mef/index)
+* [MEF no editor](/visualstudio/extensibility/managed-extensibility-framework-in-the-editor)
+* [Dentro do Editor](/visualstudio/extensibility/inside-the-editor)
+* [Serviço de linguagem e pontos de extensão do editor](/visualstudio/extensibility/language-service-and-editor-extension-points)
 * [Um vídeo de introdução à arquitetura do editor](https://www.youtube.com/watch?v=PkYVztKjO9A)
 
-Com esses recursos em mãos, os principais conceitos com os quais você precisa estar familiarizado são um [`ITextBuffer`](https://docs.microsoft.com/dotnet/api/microsoft.visualstudio.text.itextbuffer) e um [`ITextView`](https://docs.microsoft.com/dotnet/api/microsoft.visualstudio.text.editor.itextview):
+Com esses recursos em mãos, os principais conceitos com os quais você precisa estar familiarizado são um [`ITextBuffer`](/dotnet/api/microsoft.visualstudio.text.itextbuffer) e um [`ITextView`](/dotnet/api/microsoft.visualstudio.text.editor.itextview):
 
 * Um `ITextBuffer` é uma representação de texto na memória que pode ser alterado ao longo do tempo. A propriedade `CurrentSnapshot` em `ITextBuffer` retorna uma representação *imutável* do conteúdo atual do buffer, uma instância de `ITextSnapshot`. Quando uma edição é feita no buffer, a propriedade CurrentSnapshot é atualizada para a versão mais recente. Os analisadores podem inspecionar o instantâneo de texto em qualquer thread e é certo que seu conteúdo nunca será alterado.
 

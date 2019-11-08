@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: 5399BCB1-E317-4C7B-87B1-C531E985DE6E
-ms.openlocfilehash: 16617f8de15fbef40941c4f9409497da142c9e8a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 97cabcacf276c6972a717e968656430ad32e37e3
+ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62932786"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73715843"
 ---
 # <a name="build-actions"></a>Ações de Build
 
@@ -22,7 +22,7 @@ Algumas das ações de build comuns para projetos C# são:
 
 * **None** – O arquivo não faz parte do build de nenhuma forma, sendo incluído no projeto para fácil acesso no IDE.
 * **Compile** – O arquivo será passado para o compilador C# como um arquivo de origem.
-* **EmbeddedResource** – O arquivo será passado para o compilador C# como um recurso a ser inserido no assembly. O [Assembly.GetManifestResourceStream](https://docs.microsoft.com/dotnet/api/system.reflection.assembly.getmanifestresourcestream), do namespace `System.Reflection`, pode ser usado para ler o arquivo do assembly.
+* **EmbeddedResource** – O arquivo será passado para o compilador C# como um recurso a ser inserido no assembly. O [Assembly.GetManifestResourceStream](/dotnet/api/system.reflection.assembly.getmanifestresourcestream), do namespace `System.Reflection`, pode ser usado para ler o arquivo do assembly.
 * **Content** – Para projetos ASP.NET, esses arquivos serão incluídos como parte do site quando ele for implantado. Para projetos Xamarin.iOS e Xamarin.Mac, eles estarão incluídos no lote de aplicativo.
 
 É possível selecionar mais de um arquivo no Gerenciador de Soluções, permitindo que você defina a ação de build para vários arquivos ao mesmo tempo.

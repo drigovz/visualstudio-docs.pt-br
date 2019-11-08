@@ -1,6 +1,6 @@
 ---
 title: Como exibir documentos de script | Microsoft Docs
-ms.date: 01/08/2019
+ms.date: 11/05/2019
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -15,16 +15,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7696122cc9f0d431f310b8d6efb10819af995823
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 5e362e0504c4ed2584bbbbea687fe3c58fc79edb
+ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72731858"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73714432"
 ---
 # <a name="how-to-view-script-documents-javascript"></a>Como exibir documentos de script (JavaScript)
 
 Os arquivos de script do lado do servidor são visíveis no Gerenciador de Soluções. Os arquivos de script do lado do cliente são visíveis apenas quando você está no modo de depuração ou modo de interrupção. Os arquivos de script do lado do cliente são exibidos no nó **documentos de script** .
+
+Para alguns tipos de aplicativos que geram dinamicamente páginas, é mais fácil entrar no modo de interrupção e depurar quando você define um ponto de interrupção de um documento de script que é carregado no navegador. Da mesma forma, você pode adicionar a instrução `debugger` de um documento de script carregado para entrar no modo de interrupção. Este artigo mostra como exibir esses documentos.
 
 > [!NOTE]
 > Anterior ao [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)], os arquivos de script do lado do cliente gerados a partir do script do lado do servidor apareciam na janela do Gerenciador de script.

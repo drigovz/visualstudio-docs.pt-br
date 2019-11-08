@@ -6,12 +6,12 @@ author: therealjohn
 ms.author: johmil
 ms.date: 06/18/2019
 ms.assetid: DDC39599-8C5D-4CB9-8DA5-229E085384CA
-ms.openlocfilehash: 676193bc84b680c3c78f3b5ddff546a64e4767af
-ms.sourcegitcommit: cf8c0fef2b9690595e99ce3802586cdd55fd37c2
-ms.translationtype: HT
+ms.openlocfilehash: b4c5b460670a438b1aeaeb11cd8ae540b39cf9b7
+ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "70108174"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73714414"
 ---
 # <a name="visual-studio-for-mac-workloads"></a>Cargas de trabalho do Visual Studio para Mac
 
@@ -31,7 +31,7 @@ Para obter informações sobre como usar o Xamarin no Visual Studio para Mac, co
 
 ## <a name="mac-desktop-applications"></a>Aplicativos Mac de área de trabalho
 
-Você pode criar aplicativos Mac com [Xamarin.Mac](https://docs.microsoft.com/xamarin/mac/) usando a estrutura de interface do usuário do Cocoa e [Xamarin.Forms no Mac](https://docs.microsoft.com/xamarin/xamarin-forms/platform/other/mac) para criar aplicativos que compartilham o código e a interface do usuário com outras plataformas.
+Você pode criar aplicativos Mac com [Xamarin.Mac](/xamarin/mac/) usando a estrutura de interface do usuário do Cocoa e [Xamarin.Forms no Mac](/xamarin/xamarin-forms/platform/other/mac) para criar aplicativos que compartilham o código e a interface do usuário com outras plataformas.
 
 ## <a name="net-core-applications"></a>Aplicativos .NET Core
 

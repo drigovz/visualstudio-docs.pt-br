@@ -6,22 +6,22 @@ ms.author: cobey
 ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 26A0DE31-2FBF-4E1B-99FB-083111AA1680
-ms.openlocfilehash: 8115715950881168e282cd205ea2dd3e64d89f97
-ms.sourcegitcommit: cf8c0fef2b9690595e99ce3802586cdd55fd37c2
-ms.translationtype: HT
+ms.openlocfilehash: 6f6241c114d636cc8cb01cf5c4bf9ba2b5106701
+ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "70108300"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73716895"
 ---
 # <a name="creating-and-editing-a-custom-editorconfig-file"></a>Criando e editando um arquivo EditorConfig personalizado
 
-No Visual Studio para Mac, você pode adicionar um arquivo [EditorConfig](http://editorconfig.org/) ao seu projeto ou solução para impor estilos de codificação consistente para todas as pessoas que trabalham na base de código. As configurações declaradas no arquivo EditorConfig têm precedência sobre as configurações do editor de texto globais do Visual Studio para Mac. Usar um arquivo do EditorConfig dentro de seu projeto ou base de código permite que você defina o estilo de codificação, as preferências e os avisos para seu projeto. Devido ao arquivo fazer parte de sua base de código, ele facilita para todos os usuários a adesão às práticas de codificação de um projeto, independentemente do IDE ou editor de código que eles usam.
+No Visual Studio para Mac, você pode adicionar um arquivo [EditorConfig](https://editorconfig.org/) ao seu projeto ou solução para impor estilos de codificação consistente para todas as pessoas que trabalham na base de código. As configurações declaradas no arquivo EditorConfig têm precedência sobre as configurações do editor de texto globais do Visual Studio para Mac. Usar um arquivo do EditorConfig dentro de seu projeto ou base de código permite que você defina o estilo de codificação, as preferências e os avisos para seu projeto. Devido ao arquivo fazer parte de sua base de código, ele facilita para todos os usuários a adesão às práticas de codificação de um projeto, independentemente do IDE ou editor de código que eles usam.
 
-Arquivos [EditorConfig](http://editorconfig.org/) são compatíveis com muitos editores de código e IDEs, incluindo o Visual Studio.
+Arquivos [EditorConfig](https://editorconfig.org/) são compatíveis com muitos editores de código e IDEs, incluindo o Visual Studio.
 
 ## <a name="supported-settings"></a>Configurações com suporte
 
-O editor no Visual Studio para Mac é compatível com o conjunto principal de [propriedades do EditorConfig](http://editorconfig.org/#supported-properties):
+O editor no Visual Studio para Mac é compatível com o conjunto principal de [propriedades do EditorConfig](https://editorconfig.org/#supported-properties):
 
 - `indent_style`
 - `indent_size`
@@ -134,7 +134,7 @@ No exemplo acima, algumas configurações são aplicadas a todos os arquivos no 
 
 ![após as configurações de editorconfig serem aplicadas](media/editorconfig-image5.png)
 
-Para obter mais informações sobre as configurações de EditorConfig disponíveis, consulte o artigo [Configurações de convenção de codificação do .NET para o EditorConfig](/visualstudio/ide/editorconfig-code-style-settings-reference) e a seção [Propriedades com suporte](http://editorconfig.org/#supported-properties) na documentação oficial.
+Para obter mais informações sobre as configurações de EditorConfig disponíveis, consulte o artigo [Configurações de convenção de codificação do .NET para o EditorConfig](/visualstudio/ide/editorconfig-code-style-settings-reference) e a seção [Propriedades com suporte](https://editorconfig.org/#supported-properties) na documentação oficial.
 
 ## <a name="override-editorconfig-settings"></a>Substituir as configurações de EditorConfig
 

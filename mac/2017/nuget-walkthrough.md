@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 04/14/2017
 ms.assetid: 5C800815-0B13-4B27-B017-95FCEF1A0EA2
 ms.custom: video
-ms.openlocfilehash: 9e4699a1d4e2826cad205ce89ab46812cd5c4b2d
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
-ms.translationtype: HT
+ms.openlocfilehash: 154f779ee8b622c9ee66a753a23e9627f9d443c0
+ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67692795"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73715170"
 ---
 # <a name="include-a-nuget-package-in-your-project"></a>Incluir um pacote NuGet em seu projeto
 
@@ -39,7 +39,7 @@ Isso inicia a janela **Adicionar Pacotes**. Verifique se a lista suspensa Origem
 
 ![Lista suspensa Origem](media/nuget-walkthrough-Source.png)
 
-Quando a janela é aberta, ela carrega uma lista de pacotes da origem de pacote padrão: nuget.org. Os primeiros resultados serão semelhantes a estes:
+Quando a janela é aberta, ela carrega uma lista de pacotes da origem do pacote padrão: nuget.org. Os resultados iniciais têm a seguinte aparência:
 
 ![Listar pacotes NuGet](media/nuget-walkthrough-AddPackages1.png)
 
@@ -51,7 +51,7 @@ Depois que o pacote for baixado, ele será adicionado ao seu projeto. A soluçã
 
 * O nó **Referências** conterá uma lista de todos os assemblies que fazem parte de um pacote NuGet.
 * O nó **Pacotes** exibe cada pacote NuGet que você baixou. Você pode atualizar ou remover um pacote da lista.
-* Um arquivo **packages.config** será adicionado ao projeto. Esse arquivo XML é usado pelo IDE para controlar quais versões do pacote são referenciada neste projeto. Esse arquivo não deve ser editado manualmente e deve ser mantido no controle de versão. Observe que é possível usar um arquivo project.json em vez de um arquivo packages.config. O arquivo project.json é um formato de arquivo de pacote novo introduzido com o NuGet 3, que dá suporte à restauração transitiva. Informações mais detalhadas sobre o project.json podem ser encontradas na [Documentação do NuGet](https://docs.microsoft.com/NuGet/Schema/Project-Json). O arquivo project.json precisa ser adicionado manualmente e o projeto fechado e reaberto para que o arquivo possa ser usado no Visual Studio para Mac.
+* Um arquivo **packages.config** será adicionado ao projeto. Esse arquivo XML é usado pelo IDE para controlar quais versões do pacote são referenciada neste projeto. Esse arquivo não deve ser editado manualmente e deve ser mantido no controle de versão. Observe que é possível usar um arquivo project.json em vez de um arquivo packages.config. O arquivo project.json é um formato de arquivo de pacote novo introduzido com o NuGet 3, que dá suporte à restauração transitiva. Informações mais detalhadas sobre o project.json podem ser encontradas na [Documentação do NuGet](/NuGet/Schema/Project-Json). O arquivo project.json precisa ser adicionado manualmente e o projeto fechado e reaberto para que o arquivo possa ser usado no Visual Studio para Mac.
 
 ## <a name="using-nuget-packages"></a>Usando pacotes NuGet
 
@@ -93,7 +93,7 @@ Também é possível clicar com o botão direito do mouse em pacotes individuais
 
 ## <a name="adding-package-sources"></a>Adicionando origens de pacotes
 
-Os pacotes disponíveis para instalação são recuperados inicialmente de nuget.org. No entanto, você pode adicionar outros locais de pacotes para o Visual Studio para Mac. Isso pode ser útil para testar seus próprios pacotes NuGet em desenvolvimento ou para usar um servidor NuGet privado dentro de sua empresa ou organização.
+Os pacotes disponíveis para instalação são recuperados inicialmente de nuget.org. No entanto, você pode adicionar outros locais de pacote ao Visual Studio para Mac. Isso pode ser útil para testar seus próprios pacotes NuGet em desenvolvimento ou para usar um servidor NuGet privado dentro de sua empresa ou organização.
 
 No Visual Studio para Mac, navegue até **Visual Studio > Preferências > NuGet > Origens** para exibir e editar a lista de origens de pacote. Observe que as origens podem ser um servidor remoto (especificado por uma URL) ou um diretório local.
 

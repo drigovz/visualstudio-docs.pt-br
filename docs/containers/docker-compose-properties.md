@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.date: 08/12/2019
 ms.technology: vs-azure
 ms.topic: conceptual
-ms.openlocfilehash: 2178881c6ea0e597aef5e25074e3648162d3f6e9
-ms.sourcegitcommit: 6ae0a289f1654dec63b412bfa22035511a2ef5ad
+ms.openlocfilehash: 4ea1a936de215340cc13971e7a70a8d795d36cbb
+ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71950647"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73713936"
 ---
 # <a name="docker-compose-build-properties"></a>Docker Compose Propriedades de compilação
 
@@ -27,14 +27,16 @@ Para definir o valor de uma propriedade, edite o arquivo de projeto. Para propri
 </PropertyGroup>
 ```
 
-Você pode adicionar a configuração de propriedade a um elemento existente `PropertyGroup`, ou se não houver um, crie um novo elemento `PropertyGroup`.
+Você pode adicionar a configuração de propriedade a um elemento de `PropertyGroup` existente ou, se não houver um, crie um novo elemento `PropertyGroup`.
 
 ## <a name="docker-compose-msbuild-properties"></a>Docker Compose Propriedades do MSBuild
 
 A tabela a seguir mostra as propriedades do MSBuild disponíveis para projetos Docker Compose.
 
-| Nome da propriedade | Location | Descrição | Valor padrão  |
+| Property name | Local | Descrição | Valor padrão  |
 |---------------|----------|-------------|----------------|
+|AdditionalComposeFiles|dcproj|Especifica arquivos de composição adicionais em uma lista delimitada por ponto-e-vírgula a serem enviados para Docker-Compose. exe para todos os comandos. São permitidos caminhos relativos do arquivo de projeto Docker-Compose (dcproj).|-|
+|DockerComposeBaseFilePath|dcproj|Especifica a primeira parte dos nomes de arquivo dos arquivos Docker-Compose, sem a extensão *. yml* . Por exemplo: <br>1. DockerComposeBaseFilePath = NULL/undefined: Use o caminho do arquivo base *Docker-Compose*, e os arquivos serão nomeados *Docker-Compose. yml* e *Docker-Compose. Override. yml*<br>2. DockerComposeBaseFilePath = *mydockercompose*: os arquivos serão nomeados *mydockercompose. yml* e *mydockercompose. Override. yml*<br> 3. DockerComposeBaseFilePath = *.. \mydockercompose*: os arquivos terão um nível acima. |Docker-Compose|
 |DockerComposeBuildArguments|dcproj|Especifica os parâmetros extras a serem passados para o comando `docker-compose build`. Por exemplo, `--parallel --pull` |
 |DockerComposeDownArguments|dcproj|Especifica os parâmetros extras a serem passados para o comando `docker-compose down`. Por exemplo, `--timeout 500`|-|  
 |DockerComposeProjectPath|csproj ou vbproj|O caminho relativo para o arquivo de projeto do Docker-Compose (dcproj). Defina essa propriedade ao publicar o projeto de serviço para localizar as configurações de Build de imagem associadas armazenadas no arquivo Docker-Compose. yml.|-|
