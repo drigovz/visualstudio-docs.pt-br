@@ -5,12 +5,12 @@ author: therealjohn
 ms.author: johmil
 ms.date: 06/18/2019
 ms.assetid: 339F6051-5F90-48DC-8237-EBBC8A03A32B
-ms.openlocfilehash: c8b6bddac92a9ec6b40ba08ebcdc3fe3577b0bc8
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: 31fb7fa4c2a87820285809d24b98fe8e59a6be01
+ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71211477"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73714471"
 ---
 # <a name="xamarin-mobile-app-development"></a>Desenvolvimento de aplicativos móveis do Xamarin
 
@@ -22,7 +22,7 @@ O Hot recarregamento de XAML para Xamarin. Forms é integrado ao Visual Studio p
 
 O Hot recarregamento de XAML pode ser habilitado marcando a caixa de seleção **habilitar o WebLoad do xamarin** no **Visual Studio > preferências > projetos > Xamarin Hot recarregar**.
 
-Para obter mais informações sobre a recarga a quente, consulte o [Guia de Hot recarregamento de XAML para Xamarin. Forms](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/xaml/hot-reload) na documentação.
+Para obter mais informações sobre a recarga a quente, consulte o [Guia de Hot recarregamento de XAML para Xamarin. Forms](/xamarin/xamarin-forms/xaml/hot-reload) na documentação.
 
 ## <a name="android"></a>Android
 
@@ -40,7 +40,7 @@ O iOS Designer está totalmente integrado com o Visual Studio para Mac e permite
 
 ![Designer de Storyboard do iOS](media/intro-image30.png)
 
-Para obter mais informações sobre como usar o Designer do iOS, consulte os guias do [Designer](https://docs.microsoft.com/xamarin/ios/user-interface/designer/?tabs=macos).
+Para obter mais informações sobre como usar o Designer do iOS, consulte os guias do [Designer](/xamarin/ios/user-interface/designer/?tabs=macos).
 
 ### <a name="mac"></a>Mac
 

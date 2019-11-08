@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 06/25/2019
 ms.technology: vs-ide-general
 ms.assetid: 52D3D26A-4D01-4FD1-AAA1-AE7D7BD39746
-ms.openlocfilehash: fa269285cf11df848f842524e0d3d496a67b7469
-ms.sourcegitcommit: cf8c0fef2b9690595e99ce3802586cdd55fd37c2
-ms.translationtype: HT
+ms.openlocfilehash: e45f80ab1a5aab4969b01a2fddcfd88d9dc4eff7
+ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "70108229"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73716127"
 ---
 # <a name="connecting-to-team-foundation-version-control"></a>Conexão com o Controle de Versão do Team Foundation
 
@@ -20,7 +20,7 @@ ms.locfileid: "70108229"
 >
 > Se a versão prévia da extensão do TFVC para o Visual Studio para Mac foi usada anteriormente, ela não é mais compatível ao atualizar para o Visual Studio 2019 para Mac.
 
-O Azure Repos fornece dois modelos de controle de versão: [Git](/azure/devops/repos/git/?view=azure-devops), um sistema de controle de versão distribuído, e [Controle de Versão do Team Foundation](/azure/devops/repos/tfvc/index?view=azure-devops) (TFVC), um sistema de controle de versão centralizado.
+Azure Repos fornece dois modelos de controle de versão: [git](/azure/devops/repos/git/?view=azure-devops), um sistema de controle de versão distribuído e [controle de versão do Team Foundation](/azure/devops/repos/tfvc/index?view=azure-devops) (TFVC), um sistema de controle de versão centralizado.
 
 O Visual Studio para Mac fornece suporte completo para repositórios Git, mas requer algumas soluções alternativas para trabalhar com o TFVC. Se você estiver usando o TFVC para o controle de versão hoje, veja abaixo algumas soluções que você poderá usar para acessar seu código-fonte hospedado no TFVC:
 
@@ -68,7 +68,7 @@ Para **configurar manualmente o TEE-CLC**:
 
 Depois que o TEE-CLC estiver instalado, você poderá executar o comando `tf eula` para visualizar e aceitar o contrato de licença do cliente.
 
-Por fim, para autenticar com seu ambiente TFS/Azure DevOps, você precisará criar um token de acesso pessoal no servidor. Saiba mais sobre [autenticação com tokens de acesso pessoal](https://docs.microsoft.com/azure/devops/integrate/get-started/authentication/pats?view=azure-devops). Ao criar um token de acesso pessoal para usar com o TFVC, certifique-se de fornecer acesso completo ao configurar o token.
+Por fim, para autenticar com seu ambiente TFS/Azure DevOps, você precisará criar um token de acesso pessoal no servidor. Saiba mais sobre [autenticação com tokens de acesso pessoal](/azure/devops/integrate/get-started/authentication/pats?view=azure-devops). Ao criar um token de acesso pessoal para usar com o TFVC, certifique-se de fornecer acesso completo ao configurar o token.
 
 ### <a name="using-the-tee-clc-to-connect-to-your-repo"></a>Usar o TEE-CLC para se conectar ao seu repositório
 
@@ -124,7 +124,7 @@ Siga os prompts para instalar a extensão. Depois de instalá-la, reinicie o IDE
 
 ### <a name="updating-the-extension"></a>Atualizando a extensão
 
-Periodicamente, são feitas atualizações na extensão do TFVC. Para acessar as atualizações, escolha **Visual Studio > Extensões...** no menu e selecione a guia **Atualizações**. Selecione a extensão na lista e pressione o botão **Atualizar**:
+Periodicamente, são feitas atualizações na extensão do TFVC. Para acessar as atualizações, escolha **Visual Studio > Extensions...** no menu e selecione a guia **atualizações** . Selecione a extensão na lista e pressione o botão **Atualizar** :
 
 Pressione **Instalar** na próxima caixa de diálogo para desinstalar o pacote antigo e instalar um novo.
 
@@ -230,7 +230,7 @@ Depois que o workspace for configurado, ele poderá ser alterado ou removido cli
 
 ![Gerenciar Workspaces](media/tfvc-workspace4.png)
 
-## <a name="troubleshooting-and-known-issues"></a>Solução de problemas e problemas conhecidos
+## <a name="troubleshooting-and-known-issues"></a>Solucionando problemas e problemas conhecidos
 
 #### <a name="problems-using-basic-authentication"></a>Problemas no uso da autenticação básica
 

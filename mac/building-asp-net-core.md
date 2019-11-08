@@ -5,16 +5,16 @@ author: sayedihashimi
 ms.author: sayedha
 ms.date: 05/30/2019
 ms.assetid: 771C2F8E-46BC-4280-AFE8-ED9D5C7790CE
-ms.openlocfilehash: 345111144e0e209d91d34e53fefcd7d1207d9a8a
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 5aa0b02c87335305f29d098b51c89310cc0a9e5d
+ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68872899"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73717277"
 ---
 # <a name="building-aspnet-core-applications-in-visual-studio-for-mac"></a>Como criar aplicativos ASP.NET Core no Visual Studio para Mac
 
-O ASP.NET Core é uma estrutura open-source e multiplataforma para a criação de aplicativos modernos, conectados à Internet e baseados em nuvem, como serviços e aplicativos Web, aplicativos IoT e back-ends móveis. Os aplicativos ASP.NET Core podem ser executados nos tempos de execução do [.NET Core](https://www.microsoft.com/net/core/platform) ou do .NET Framework. Ele foi projetado para fornecer uma estrutura de desenvolvimento otimizada para aplicativos que são implantados na nuvem ou executados localmente. Ele consiste em componentes modulares com sobrecarga mínima, para que você mantenha a flexibilidade durante a construção de suas soluções. Você pode desenvolver e executar aplicativos ASP.NET Core de multiplataforma no Windows, Mac e Linux. O ASP.NET Core é um software livre no [GitHub](https://github.com/aspnet/home).
+O ASP.NET Core é uma estrutura open-source e multiplataforma para a criação de aplicativos modernos, conectados à Internet e baseados em nuvem, como serviços e aplicativos Web, aplicativos IoT e back-ends móveis. Os aplicativos ASP.NET Core podem ser executados nos runtimes do [.NET Core](https://www.microsoft.com/net/core/platform) ou do .NET Framework. Ele foi projetado para fornecer uma estrutura de desenvolvimento otimizada para aplicativos que são implantados na nuvem ou executados localmente. Ele consiste em componentes modulares com sobrecarga mínima, para que você mantenha a flexibilidade durante a construção de suas soluções. Você pode desenvolver e executar aplicativos ASP.NET Core de multiplataforma no Windows, Mac e Linux. O ASP.NET Core é um software livre no [GitHub](https://github.com/aspnet/home).
 
 Neste laboratório, você criará e explorar um aplicativo ASP.NET Core com o Visual Studio para Mac.
 
@@ -25,7 +25,7 @@ Neste laboratório, você criará e explorar um aplicativo ASP.NET Core com o Vi
 > * Explorar o modelo de hospedagem, configuração e middleware do ASP.NET Core
 > * Depurar um aplicativo Web ASP.NET Core
 
-## <a name="prerequisites"></a>Pré-requisitos
+## <a name="prerequisites"></a>Prerequisites
 
 - [Visual Studio para Mac](https://www.visualstudio.com/vs/visual-studio-mac)
 
@@ -33,7 +33,7 @@ Neste laboratório, você criará e explorar um aplicativo ASP.NET Core com o Vi
 
 Este laboratório destina-se a desenvolvedores que estão familiarizados com o C#, embora uma ampla experiência não seja necessária.
 
-## <a name="task-1-creating-a-new-aspnet-core-application"></a>Tarefa 1: Como criar um aplicativo ASP.NET Core
+## <a name="task-1-creating-a-new-aspnet-core-application"></a>Tarefa 1: Criando um novo aplicativo de ASP.NET Core
 
 1. Inicialize o **Visual Studio para Mac**.
 
@@ -47,7 +47,7 @@ Este laboratório destina-se a desenvolvedores que estão familiarizados com o C
 
     ![](media/netcore-image2.png)
 
-## <a name="task-2-touring-the-solution"></a>Tarefa 2: Como fazer um tour pela solução
+## <a name="task-2-touring-the-solution"></a>Tarefa 2: Tour pela solução
 
 1. O modelo padrão produzirá uma solução com um único projeto ASP.NET Core chamado **CoreLab**. Expanda o nó do projeto para expor seu conteúdo.
 
@@ -65,7 +65,7 @@ Este laboratório destina-se a desenvolvedores que estão familiarizados com o C
 
     ![](media/netcore-image6.png)
 
-5. Esse arquivo CSHTML usa a sintaxe Razor para renderizar HTML com base em uma combinação de marcas padrão e C# embutido. Saiba mais sobre isso na [documentação online](https://docs.microsoft.com/aspnet/web-pages/overview/getting-started/introducing-razor-syntax-c).
+5. Esse arquivo CSHTML usa a sintaxe Razor para renderizar HTML com base em uma combinação de marcas padrão e C# embutido. Saiba mais sobre isso na [documentação online](/aspnet/web-pages/overview/getting-started/introducing-razor-syntax-c).
 
     ![](media/netcore-image7.png)
 
@@ -73,11 +73,11 @@ Este laboratório destina-se a desenvolvedores que estão familiarizados com o C
 
     ![](media/netcore-image8.png)
 
-7. Também há uma variedade de arquivos de configuração que servem para gerenciar o projeto, seus pacotes e o aplicativo no tempo de execução. Por exemplo, a [configuração](https://docs.microsoft.com/aspnet/core/fundamentals/configuration) de aplicativo padrão é armazenada em **appsettings.json**. No entanto, você pode substituir algumas ou todas essas configurações por ambiente, fornecendo um arquivo **appsettings.Development.json** para o ambiente de **Desenvolvimento**.
+7. Também há uma variedade de arquivos de configuração que servem para gerenciar o projeto, seus pacotes e o aplicativo no runtime. Por exemplo, a [configuração](/aspnet/core/fundamentals/configuration) de aplicativo padrão é armazenada em **appsettings.json**. No entanto, você pode substituir algumas ou todas essas configurações por ambiente, fornecendo um arquivo **appsettings.Development.json** para o ambiente de **Desenvolvimento**.
 
     ![](media/netcore-image9.png)
 
-## <a name="task-3-understanding-how-the-application-is-hosted"></a>Tarefa 3: Noções básicas sobre como o aplicativo é hospedado
+## <a name="task-3-understanding-how-the-application-is-hosted"></a>Tarefa 3: entendendo como o aplicativo é hospedado
 
 1. No **Gerenciador de Soluções**, abra **Program.cs**. Esse é o bootstrapper que executará seu aplicativo.
 
@@ -87,7 +87,7 @@ Este laboratório destina-se a desenvolvedores que estão familiarizados com o C
 
     ![](media/netcore-image11.png)
 
-3. Embora o **WebHostBuilder** seja responsável por criar o host que inicializará o servidor para o aplicativo, ele exige que você forneça um servidor que implementa **IServer**. Por padrão, esse é o **[Kestrel](https://docs.microsoft.com/aspnet/core/fundamentals/servers/kestrel)** , um servidor Web multiplataforma para o ASP.NET Core baseado no **libuv**, uma biblioteca de E/S assíncrona multiplataforma.
+3. Embora o **WebHostBuilder** seja responsável por criar o host que inicializará o servidor para o aplicativo, ele exige que você forneça um servidor que implementa **IServer**. Por padrão, esse é o **[Kestrel](/aspnet/core/fundamentals/servers/kestrel)** , um servidor Web multiplataforma para o ASP.NET Core baseado no **libuv**, uma biblioteca de E/S assíncrona multiplataforma.
 
     ![](media/netcore-image12.png)
 
@@ -111,7 +111,7 @@ Este laboratório destina-se a desenvolvedores que estão familiarizados com o C
 
     ![](media/netcore-image17.png)
 
-## <a name="task-4-running-and-debugging-the-application"></a>Tarefa 4: Como executar e depurar o aplicativo
+## <a name="task-4-running-and-debugging-the-application"></a>Tarefa 4: executando e Depurando o aplicativo
 
 1. No **Gerenciador de Soluções**, clique com o botão direito do mouse no nó do projeto **CoreLab** e selecione **Opções**.
 
@@ -171,7 +171,7 @@ Este laboratório destina-se a desenvolvedores que estão familiarizados com o C
 
 18. Feche a janela do navegador de teste e o aplicativo de console. Isso interromperá a depuração também.
 
-## <a name="task-5-application-startup-configuration"></a>Tarefa 5: Configuração de inicialização do aplicativo
+## <a name="task-5-application-startup-configuration"></a>Tarefa 5: configuração de inicialização do aplicativo
 
 1. No **Gerenciador de Soluções**, abra **Startup.cs**. Você pode observar alguns rabiscos vermelhos inicialmente, conforme os pacotes NuGet são restaurados em segundo plano e o compilador Roslyn cria um panorama completo das dependências do projeto.
 
@@ -189,7 +189,7 @@ Este laboratório destina-se a desenvolvedores que estão familiarizados com o C
 
     ![](media/netcore-image32.png)
 
-5. Depois disso, ele tenta carregar um arquivo **appsettings.json** específico do ambiente, que substituirá as configurações existentes. Por exemplo, esse é um arquivo **appsettings.Development.json** fornecido usado para esse ambiente específico. Para ler mais sobre a configuração no ASP.NET Core, confira a [documentação](https://docs.microsoft.com/aspnet/core/fundamentals/configuration).
+5. Depois disso, ele tenta carregar um arquivo **appsettings.json** específico do ambiente, que substituirá as configurações existentes. Por exemplo, esse é um arquivo **appsettings.Development.json** fornecido usado para esse ambiente específico. Para ler mais sobre a configuração no ASP.NET Core, confira a [documentação](/aspnet/core/fundamentals/configuration).
 
     ![](media/netcore-image34.png)
 
@@ -197,7 +197,7 @@ Este laboratório destina-se a desenvolvedores que estão familiarizados com o C
 
     ![](media/netcore-image35.png)
 
-## <a name="task-6-inserting-application-middleware"></a>Tarefa 6: Como inserir o middleware de aplicativo
+## <a name="task-6-inserting-application-middleware"></a>Tarefa 6: inserindo middleware de aplicativo
 
 1. Localize o método **Configure** na classe **Startup**. É nele em que todo o middleware é configurado para que possa ser inserido no pipeline HTTP e usado para processar cada solicitação ao servidor. Embora esse método seja chamado apenas uma vez, o conteúdo dos métodos (como **UseStaticFiles**) pode ser executado em cada solicitação.
 
@@ -243,4 +243,4 @@ Este laboratório destina-se a desenvolvedores que estão familiarizados com o C
 
 ## <a name="summary"></a>Resumo
 
-Neste laboratório, você aprendeu a começar a desenvolver aplicativos ASP.NET Core com o Visual Studio para Mac. Caso deseje explorar o desenvolvimento de um aplicativo de banco de dados de filmes mais completo, confira o tutorial [Introdução ao ASP.NET Core MVC](https://docs.microsoft.com/aspnet/core/tutorials/first-mvc-app/start-mvc).
+Neste laboratório, você aprendeu a começar a desenvolver aplicativos ASP.NET Core com o Visual Studio para Mac. Caso deseje explorar o desenvolvimento de um aplicativo de banco de dados de filmes mais completo, confira o tutorial [Introdução ao ASP.NET Core MVC](/aspnet/core/tutorials/first-mvc-app/start-mvc).

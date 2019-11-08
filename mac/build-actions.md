@@ -5,12 +5,12 @@ author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 09/18/2019
 ms.assetid: 5399BCB1-E317-4C7B-87B1-C531E985DE6E
-ms.openlocfilehash: 5a0d7c6646fac83ef70fbe2aa7384dcee992d726
-ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
+ms.openlocfilehash: d089f38bd91eda2565f215e8d15a74cc119b8767
+ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71128441"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73714393"
 ---
 # <a name="build-actions"></a>Ações de Build
 
@@ -35,7 +35,7 @@ Algumas das ações comuns de compilação para projetos que você pode criar no
 |--|--|--|
 | **Compile** | qualquer | O arquivo é passado para o C# compilador como um arquivo de origem.|
 | **Disputa** | .NET, Xamarin | Para projetos ASP.NET, esses arquivos são incluídos como parte do site quando ele for implantado. Para projetos Xamarin.iOS e Xamarin.Mac, eles estarão incluídos no lote de aplicativo.|
-| **Embedded Resource** | .NET | O arquivo é passado para o C# compilador como um recurso a ser inserido no assembly. O [Assembly.GetManifestResourceStream](https://docs.microsoft.com/dotnet/api/system.reflection.assembly.getmanifestresourcestream), do namespace `System.Reflection`, pode ser usado para ler o arquivo do assembly.|
+| **Embedded Resource** | .NET | O arquivo é passado para o C# compilador como um recurso a ser inserido no assembly. O [Assembly.GetManifestResourceStream](/dotnet/api/system.reflection.assembly.getmanifestresourcestream), do namespace `System.Reflection`, pode ser usado para ler o arquivo do assembly.|
 | **Nenhum** | qualquer | O arquivo não faz parte da compilação de nenhuma forma e é incluído no projeto para facilitar o acesso do IDE. Esse valor pode ser usado para arquivos de documentação como "Leiame", por exemplo.|
 
 > [!NOTE]

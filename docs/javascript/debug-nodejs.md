@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 386a489faf859038cd0f529da74a0fbac07b7250
-ms.sourcegitcommit: f9f389e72787de30eb869a55ef7725a10a4011f0
+ms.openlocfilehash: 7bd03ead39d0b2b5013075de017954f0c0c30e8c
+ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73636548"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73714492"
 ---
 # <a name="debug-a-javascript-or-typescript-app-in-visual-studio"></a>Depurar um aplicativo JavaScript ou TypeScript no Visual Studio
 
@@ -86,7 +86,7 @@ Para este cenário, use o Chrome.
 
     `msedge --remote-debugging-port=9222`
 
-    Or
+    or
 
     `chrome.exe --remote-debugging-port=9222`
     ::: moniker-end
@@ -157,9 +157,9 @@ Para anexar o depurador do Visual Studio e clicar em pontos de interrupção no 
 
     Enquanto estiver em pausa no depurador, você pode examinar o estado do aplicativo passando o mouse sobre as variáveis e usando as janelas do depurador. Você pode avançar o depurador percorrendo o código (**F5**, **F10** e **F11**). Para obter mais informações sobre os recursos básicos de depuração, consulte [primeira olhada no depurador](../debugger/debugger-feature-tour.md).
 
-    Você pode atingir o ponto de interrupção no arquivo *. js* transcompilado ou no arquivo de origem, dependendo de quais etapas você seguiu anteriormente, junto com o seu ambiente e o estado do navegador. De qualquer forma, você pode percorrer o código e examinar as variáveis.
+    Você pode atingir o ponto de interrupção em um arquivo *. js* ou arquivo de origem transcompilado, dependendo de seu tipo de aplicativo, que etapas você seguiu anteriormente e outros fatores, como o estado do navegador. De qualquer forma, você pode percorrer o código e examinar as variáveis.
 
-   * Se você precisar dividir o código em um arquivo de origem TypeScript, JSX ou *. Vue* e não puder fazê-lo, verifique se o seu ambiente está configurado corretamente, conforme descrito na seção [solução de problemas](#troubleshooting_source_maps) .
+   * Se você precisar dividir o código em um arquivo de origem TypeScript, JSX ou *. Vue* e não puder fazê-lo, verifique se o seu ambiente está configurado corretamente, conforme descrito na seção solução de [problemas](#troubleshooting_source_maps) .
 
    * Se você precisar dividir o código em um arquivo JavaScript transcompilado (por exemplo, *app-Bundle. js*) e não puder fazê-lo, remova o arquivo do mapa de origem, *filename. js. map*.
 
@@ -171,7 +171,7 @@ Se você precisar dividir o código em um arquivo de origem TypeScript, JSX ou *
       
 * Certifique-se [de iniciar o navegador no modo de depuração](#prepare_the_browser_for_debugging).
 
-* Verifique se o arquivo de mapa de origem inclui a referência correta ao arquivo de origem e se ele não inclui prefixos sem suporte, como *webpack:///* , que impede que o depurador do Visual Studio Localize um arquivo de origem. Por exemplo, uma referência como *webpack:///.app.TSX* pode ser corrigida para *./app.TSX*. Você pode fazer isso manualmente no arquivo de mapa de origem ou por meio de uma configuração de compilação personalizada. Para obter mais informações, consulte [gerar mapas de origem para depuração](#generate_source_maps).
+* Verifique se o arquivo de mapa de origem inclui o caminho relativo correto para o arquivo de origem e se ele não inclui prefixos sem suporte, como *webpack:///* , que impede que o depurador do Visual Studio Localize um arquivo de origem. Por exemplo, uma referência como *webpack:///.app.TSX* pode ser corrigida para *./app.TSX*. Você pode fazer isso manualmente no arquivo do mapa de origem (que é útil para teste) ou por meio de uma configuração de compilação personalizada. Para obter mais informações, consulte [gerar mapas de origem para depuração](#generate_source_maps).
 
 Como alternativa, se você precisar dividir o código em um arquivo de origem (por exemplo, *app. TSX*) e não puder fazê-lo, tente usar a instrução `debugger;` no arquivo de origem ou definir pontos de interrupção no Chrome ferramentas para desenvolvedores (ou ferramentas F12 para o Microsoft Edge) em vez disso.
 
