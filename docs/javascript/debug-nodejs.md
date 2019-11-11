@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 7bd03ead39d0b2b5013075de017954f0c0c30e8c
-ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
+ms.openlocfilehash: 0405488f6f456f22711498e81789881ffc5a0a8a
+ms.sourcegitcommit: 308a2bdbea81df78bffc3a01afce4ab13131fabc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73714492"
+ms.lasthandoff: 11/11/2019
+ms.locfileid: "73913002"
 ---
 # <a name="debug-a-javascript-or-typescript-app-in-visual-studio"></a>Depurar um aplicativo JavaScript ou TypeScript no Visual Studio
 
@@ -105,13 +105,13 @@ Para este cenário, use o Chrome.
 
 Para anexar o depurador do Visual Studio e clicar em pontos de interrupção no código do lado do cliente, o depurador precisa de ajuda para identificar o processo correto. Esta é uma maneira de permitir isso.
 
-1. Alterne para o Visual Studio e defina um ponto de interrupção no código-fonte, que pode ser um arquivo JavaScript, arquivo TypeScript, arquivo *. Vue* ou um arquivo JSX. (Defina o ponto de interrupção em uma linha de código que permite pontos de interrupção, como uma instrução de retorno ou uma declaração var.)
+1. Alterne para o Visual Studio e defina um ponto de interrupção no código-fonte, que pode ser um arquivo JavaScript, um arquivo TypeScript ou um arquivo JSX. (Defina o ponto de interrupção em uma linha de código que permite pontos de interrupção, como uma instrução de retorno ou uma declaração var.)
 
     ![Definir um ponto de interrupção](../javascript/media/tutorial-nodejs-react-set-breakpoint-client-code.png)
 
     Para localizar o código específico em um arquivo transcompilado, use **Ctrl**+**F** (**editar** > **Localizar e substituir** > **localização rápida**).
 
-    Para o código do lado do cliente, para atingir um ponto de interrupção em um arquivo TypeScript, *. Vue*ou JSX normalmente requer o uso de [mapas de origem](#generate_source_maps). Um mapa de origem deve ser configurado corretamente para dar suporte à depuração no Visual Studio.
+    Para o código do lado do cliente, para atingir um ponto de interrupção em um arquivo TypeScript ou JSX, o arquivo geralmente requer o uso de [mapas de origem](#generate_source_maps). Um mapa de origem deve ser configurado corretamente para dar suporte à depuração no Visual Studio.
 
 2. Selecione o navegador de destino como o destino de depuração no Visual Studio e pressione **Ctrl**+**F5** (**depurar** > **Iniciar sem depuração**) para executar o aplicativo no navegador.
 
@@ -165,7 +165,7 @@ Para anexar o depurador do Visual Studio e clicar em pontos de interrupção no 
 
 ### <a name="troubleshooting_source_maps"></a>Solucionando problemas de pontos de interrupção e mapas de origem
 
-Se você precisar dividir o código em um arquivo de origem TypeScript, JSX ou *. Vue* e não puder fazê-lo, use **anexar ao processo** conforme descrito nas etapas anteriores para anexar o depurador. Verifique se o seu ambiente está configurado corretamente:
+Se você precisar dividir o código em um arquivo de origem TypeScript ou JSX e não puder fazê-lo, use **anexar ao processo** conforme descrito nas etapas anteriores para anexar o depurador. Verifique se o seu ambiente está configurado corretamente:
 
 * Você fechou todas as instâncias de navegador, incluindo as extensões Chrome (usando o Gerenciador de tarefas), para que você possa executar o navegador no modo de depuração.
       
