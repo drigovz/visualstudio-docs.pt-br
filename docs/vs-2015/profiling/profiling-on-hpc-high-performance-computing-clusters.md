@@ -21,22 +21,22 @@ caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e14ce5ac1e0596947e69d20e14a3dc1e7ff4f1e5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: eeb5375d636ef16fde658b88dbf662cdd9f1e27d
+ms.sourcegitcommit: 3a19319e2599bd193fb2ca32020ca53942974bfd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62421038"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "73983800"
 ---
 # <a name="profiling-on-hpc-high-performance-computing-clusters"></a>Criando perfil em clusters HPC (computação de alto desempenho)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Você pode criar um perfil em nós de computação de clusters do Microsoft Windows HPC usando o método de amostragem de Ferramentas de Criação de Perfil do [!INCLUDE[vsPreExt](../includes/vspreext-md.md)] ou [!INCLUDE[vsUltExt](../includes/vsultext-md.md)]. Para obter mais informações sobre HPC consulte [computação intensa: HPC e lote](https://azure.microsoft.com/solutions/big-compute/) no site da Microsoft.  
+Você pode criar um perfil em nós de computação de clusters do Microsoft Windows HPC usando o método de amostragem de Ferramentas de Criação de Perfil do [!INCLUDE[vsPreExt](../includes/vspreext-md.md)] ou [!INCLUDE[vsUltExt](../includes/vsultext-md.md)]. Para obter mais informações sobre o HPC, consulte [Big Compute: hpc & lote](https://azure.microsoft.com/solutions/big-compute/) no site da Microsoft.  
   
-## <a name="prerequisites"></a>Pré-requisitos  
+## <a name="prerequisites"></a>Prerequisites  
  Para criar o perfil em um nó de computação do HPC, faça o seguinte:  
   
-- Instale o Microsoft HPC Pack 2008 no mesmo computador como [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]. O computador não precisa fazer parte do cluster de HPC. Você pode instalar o HPC Pack por meio do [Centro de Download da Microsoft](http://go.microsoft.com/fwlink/?LinkID=177414).  
+- Instale o Microsoft HPC Pack 2008 no mesmo computador como [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]. O computador não precisa fazer parte do cluster de HPC. Você pode instalar o HPC Pack por meio do [Centro de Download da Microsoft](https://www.microsoft.com/download/details.aspx?id=2800).  
   
 - Instale o [!INCLUDE[net_v40_long](../includes/net-v40-long-md.md)] e a versão autônoma das Ferramentas de Criação de Perfil do nó de computação do HPC. Programas de instalação estão disponíveis para ambos o [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] e o criador de perfil autônomo na mídia de instalação do [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)]. **Observação** Você deve reiniciar a computação depois de ter instalado [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] e antes de instalar as ferramentas de criação de perfil.  
   
@@ -55,8 +55,8 @@ Você pode criar um perfil em nós de computação de clusters do Microsoft Wind
 |||  
 |-|-|  
 |*%HeadNode%*|Nome do nó principal do cluster.|  
-|*%FxPath%*|Caminho para o instalador de [!INCLUDE[net_v40_long](../includes/net-v40-long-md.md)]. Sobre o [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] é o caminho de mídia de instalação: WCU\dotNetFramework\dotNetFx40_Full_x86_x64.exe|  
-|*%ProfilerPath%*|Caminho para a versão autônoma do instalador das Ferramentas de Criação de Perfil. Sobre o [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] é o caminho de mídia de instalação: Standalone Profiler\x64\vs_profiler.exe|  
+|*%FxPath%*|Caminho para o instalador de [!INCLUDE[net_v40_long](../includes/net-v40-long-md.md)]. No [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)], o caminho de mídia de instalação é: WCU\dotNetFramework\dotNetFx40_Full_x86_x64.exe|  
+|*%ProfilerPath%*|Caminho para a versão autônoma do instalador das Ferramentas de Criação de Perfil. Na mídia de instalação [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)], o caminho é: Standalone Profiler\x64\vs_profiler.exe|  
   
 ## <a name="profiling-on-an-hpc-compute-node"></a>Criação de perfil em um nó de computação HPC  
  Você pode configurar uma sessão de criação de perfil usando o Assistente de Desempenho HPC para especificar as informações de destino e de cluster HPC. Você pode definir outras opções nas páginas de propriedade de sessão de desempenho. As Ferramentas de Criação de Perfil implantam automaticamente os binários de destino e iniciam o criador de perfil e o aplicativo do HPC.  
@@ -71,7 +71,7 @@ Você pode criar um perfil em nós de computação de clusters do Microsoft Wind
   
     - Para analisar um projeto que está aberto no momento no [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)], selecione a opção **Um ou mais projetos disponíveis** e, em seguida, selecione o nome do projeto na lista.  
   
-    - Para analisar um binário que não está em um projeto aberto, selecione a opção **Um executável (arquivo .EXE)**.  
+    - Para analisar um binário que não está em um projeto aberto, selecione a opção **Um executável (arquivo .EXE)** .  
   
 4. Clique em **Avançar**.  
   
@@ -126,7 +126,7 @@ Você pode criar um perfil em nós de computação de clusters do Microsoft Wind
   
 ### <a name="hpc-launch-properties"></a>Propriedades de inicialização do HPC  
   
-|Propriedade|Descrição|  
+|propriedade|Descrição|  
 |--------------|-----------------|  
 |**Nó principal**|Especifica o computador que atua como o nó principal do HPC na criação de perfil.|  
 |**Número de processos**|Especifica o número de instâncias do aplicativo a serem executadas no aplicativo analisado.|  
@@ -137,11 +137,11 @@ Você pode criar um perfil em nós de computação de clusters do Microsoft Wind
   
 ### <a name="advanced-properties"></a>Propriedades avançadas  
   
-|Propriedade|Descrição|  
+|propriedade|Descrição|  
 |--------------|-----------------|  
 |**Nome do projeto**|O nome do projeto ou solução [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] atual.|  
 |**Limpar quando o criador de perfil é interrompido**|Quando verdadeiro, remove os binários que foram implantados para o diretório de execução. Arquivos e diretórios criados pelo programa de usuário não são removidos nesta etapa. Se o diretório de execução e o diretório de implantação foram criadas pelo IDE, o IDE tenta removê-los, mas não o fará se eles tiverem arquivos não implantados pelo IDE.|  
-|**Arquivos adicionais a serem implantados**|Especifica uma lista separada por ponto e vírgula de arquivos adicionais para implantar em um nó de computação. Você pode clicar no botão de reticências (**...**) para selecionar vários arquivos usando uma caixa de diálogo.|  
+|**Arquivos adicionais a serem implantados**|Especifica uma lista separada por ponto e vírgula de arquivos adicionais para implantar em um nó de computação. Você pode clicar no botão de reticências ( **...** ) para selecionar vários arquivos usando uma caixa de diálogo.|  
 |**Comando Mpiexec**|Especifica o aplicativo que inicia o aplicativo MPI. O valor padrão é **mpiexec.exe**|  
 |**Argumentos Mpiexec**|Especifica os argumentos para passar para o comando mpiexec.exe.|  
 |**Nós solicitados no cluster**|Especifica o número de nós no cluster no qual executar o aplicativo.|  

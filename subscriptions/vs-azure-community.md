@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/29/2019
 ms.topic: conceptual
 description: Saiba mais sobre o benefício do Suporte da Comunidade Azure incluído nas assinaturas do Visual Studio.
-ms.openlocfilehash: 128147833baf450c0d161f39628a0928e9118412
-ms.sourcegitcommit: bcdab788085bd9931d73883fe70cd5831317dca2
+ms.openlocfilehash: 32a1c962e238bfc5ab8083ff643a99a77b699925
+ms.sourcegitcommit: 3a19319e2599bd193fb2ca32020ca53942974bfd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72816545"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "73983757"
 ---
 # <a name="azure-community-support-forum-in-visual-studio-subscriptions"></a>Fórum do Suporte da Comunidade do Azure em assinaturas do Visual Studio
 Obtenha ajuda diretamente da equipe do Azure em fóruns de suporte selecionados por meio da Comunidade Azure.  O benefício da Comunidade Azure fornece acesso a um conjunto de fóruns voltados para tópicos relacionados ao Azure.
@@ -50,7 +50,9 @@ A disponibilidade do benefício Comunidade Azure depende do nível de sua assina
 |                                          Nível de Assinatura                                           |     Canais      |    Benefício    | Renovável? |
 |-------------------------------------------------------------------------------------------------------|-------------------|---------------|------------|
 |                           Visual Studio Enterprise (Standard)                           | VL, Azure, Retail |   Um ano    |    Sim     |
+|                           Visual Studio Enterprise com GitHub Enterprise                           | VL, Azure, Retail |   Um ano    |    Sim     |
 |                          Visual Studio Professional (Standard)                          | VL, Azure, Retail |   Um ano    |    Sim     |
+|                          Visual Studio Professional com GitHub Enterprise                          | VL, Azure, Retail |   Um ano    |    Sim     |
 |                              Visual Studio Test Professional (Padrão)                               |    VL, Retail     |   Um ano    |    Sim     |
 |                                       Plataformas MSDN (Padrão)                                       |    VL, Retail     |   Um ano    |    Sim     |
 | Visual Studio Enterprise (nuvem mensal), Visual Studio Professional (nuvem mensal), NFR<sup>1</sup> |        Todos        | Não disponível |     Não     |
