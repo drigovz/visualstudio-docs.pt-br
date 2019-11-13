@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0493e7d16a7c7ecb7a9cf7d414e3bd13cb9ad9a7
-ms.sourcegitcommit: f9f389e72787de30eb869a55ef7725a10a4011f0
+ms.openlocfilehash: cb759ba9571e16d0030f1fd6baf6d4feb03efb2e
+ms.sourcegitcommit: 510529f2f86a9897ed5767973e60c99c0d3a77a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73636570"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "73956139"
 ---
 # <a name="common-msbuild-project-items"></a>Itens de projeto comuns do MSBuild
 Em [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], um item é uma referência nomeada a um ou mais arquivos. Itens contêm metadados, como nomes de arquivos, caminhos e números de versão. Todos os tipos de projeto em [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] têm vários itens em comum. Esses itens são definidos no arquivo *Microsoft.Build.CommonTypes.xsd*.
@@ -141,6 +141,7 @@ Em [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.m
 
 > [!NOTE]
 > Isso se aplica a projetos usando apenas o SDK do .NET Core.
+
 ### <a name="baseapplicationmanifest"></a>BaseApplicationManifest
  Representa o manifesto do aplicativo base do build e contém [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] informações de segurança de implantação.
 
