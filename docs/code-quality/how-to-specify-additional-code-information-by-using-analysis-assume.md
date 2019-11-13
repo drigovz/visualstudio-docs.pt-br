@@ -12,20 +12,20 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: 186ea6ac58736098720d60c644c30801073b7453
-ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
+ms.openlocfilehash: 9933a013ed4f2df0978fb66e3aff87b4cdc024f9
+ms.sourcegitcommit: c6af923c1f485959d751b23ab3f03541013fc4a7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72018725"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "73925955"
 ---
-# <a name="how-to-specify-additional-code-information-by-using-_analysis_assume"></a>Como: Especificar informações de código adicionais usando _Analysis_assume
+# <a name="how-to-specify-additional-code-information-by-using-_analysis_assume"></a>Como especificar informações de código adicionais usando _Analysis_assume
 
 Você pode fornecer dicas para a ferramenta de análise de código paraC++ C/Code que ajudará o processo de análise e a reduzir os avisos. Para fornecer informações adicionais, use a seguinte função:
 
 `_Analysis_assume(`  `expr`  `)`
 
-`expr`-qualquer expressão presumida para avaliar como true.
+`expr`-qualquer expressão presumida para ser avaliada como true.
 
 A ferramenta de análise de código pressupõe que a condição representada pela expressão seja verdadeira no ponto em que a função aparece e permaneça true até que a expressão seja alterada, por exemplo, por atribuição para uma variável.
 
@@ -52,7 +52,7 @@ void test()
 {
     char pc = (char)malloc(5);
     FreeAndNull(&pc);
-    __analysis_assume(pc == NULL);
+    _Analysis_assume(pc == NULL);
     f(pc);
 }
 ```

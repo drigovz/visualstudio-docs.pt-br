@@ -12,18 +12,18 @@ ms.assetid: c54969a7-d75a-4a35-9b37-af7a596a7c24
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 0f43222e593b836f44a84e5f64642403f0263ca5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 0facc87df720af8376561ae7599fe20afeab1a12
+ms.sourcegitcommit: c6af923c1f485959d751b23ab3f03541013fc4a7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649709"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "73925970"
 ---
 # <a name="create-a-ui-by-using-xaml-designer"></a>Criar uma interface do usuário usando o Designer XAML
 
 No Visual Studio e no Blend para Visual Studio, o Designer XAML fornece uma interface visual para ajudar você a criar aplicativos baseados em XAML, como aplicativos WPF, UWP e Xamarin.Forms. Você pode criar interfaces do usuário para seus aplicativos arrastando controles da janela Caixa de Ferramentas (janela Ativos no Blend para Visual Studio) e configurando propriedades na janela Propriedades. Você também pode editar XAML diretamente no modo de exibição XAML.
 
-Para usuários avançados, é possível até mesmo [personalizar o Designer XAML](../extensibility/xaml-designer-extensibility-migration.md).
+Para usuários avançados, é possível até mesmo [personalizar o Designer XAML](https://github.com/microsoft/xaml-designer-extensibility/blob/master/documents/xaml-designer-extensibility-migration.md).
 
 ## <a name="xaml-designer-workspace"></a>Workspace do Designer XAML
 
