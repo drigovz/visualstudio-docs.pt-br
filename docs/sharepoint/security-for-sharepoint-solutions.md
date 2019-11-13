@@ -15,18 +15,18 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 16fb3e4a0e1aed14e4a3f1b3178dc753f5dc10b4
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 6dc1449a40528670274ea5b275cca3f0a8d2f277
+ms.sourcegitcommit: 3a19319e2599bd193fb2ca32020ca53942974bfd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72984180"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "73983785"
 ---
 # <a name="security-for-sharepoint-solutions"></a>Segurança para soluções do SharePoint
   o [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] incorpora os seguintes recursos para ajudar a aprimorar a segurança dos aplicativos do SharePoint.
 
 ## <a name="safe-control-entries"></a>Entradas de controle seguro
- Cada item de projeto do SharePoint criado no [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] tem uma propriedade de **entradas de controle segura** que representa uma coleção de controles seguros. Seu subpropriedade **seguro** permite que você especifique os controles que você considera seguros. Para obter mais informações, consulte [fornecer informações de pacote e de implantação em itens de projeto](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md) e [especificar Web Parts seguras](/previous-versions/office/developer/sharepoint2003/dd583154(v=office.11)#sharepoint_northwindwebparts_topic19).
+ Cada item de projeto do SharePoint criado no [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] tem uma propriedade de **entradas de controle segura** que representa uma coleção de controles seguros. Seu subpropriedade **seguro** permite que você especifique os controles que você considera seguros. Para obter mais informações, consulte [fornecer informações de pacote e de implantação em itens de projeto](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md) e [especificar Web Parts seguras](/previous-versions/office/developer/sharepoint2003/dd583154(v=office.11)#specifying-safe-web-parts).
 
 ## <a name="allowpartiallytrustedcallers-attribute"></a>Atributo AllowPartiallyTrustedCallers
  Por padrão, somente os aplicativos que são totalmente confiáveis pelo sistema de segurança de acesso ao código (CAS) do Runtime podem acessar um assembly de código gerenciado compartilhado. Marcar um assembly totalmente confiável com o atributo AllowPartiallyTrustedCallers permite que os assemblies parcialmente confiáveis o acessem.
@@ -54,7 +54,7 @@ ms.locfileid: "72984180"
 
     2. Na página **Administradores de farm** , escolha a opção de menu **novo**
 
-3. Adicione sua conta de usuário ao grupo WSS_ADMIN_WPG.
+3. Adicione sua conta de usuário ao para o grupo de WSS_ADMIN_WPG.
 
 ## <a name="additional-security-resources"></a>Recursos de segurança adicionais
  Para obter mais informações sobre problemas de segurança, consulte o seguinte.

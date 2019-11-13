@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c9e75d003031d591c8ae777c606e6f7a2b6ea8c0
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: e3a83ad65232e75ffa74b66035e5c01a8491b426
+ms.sourcegitcommit: 3a19319e2599bd193fb2ca32020ca53942974bfd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911996"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "73983699"
 ---
 # <a name="da0001-use-stringbuilder-for-concatenations"></a>DA0001: usar StringBuilder para concatenações
 
@@ -41,4 +41,4 @@ ms.locfileid: "72911996"
 ## <a name="how-to-investigate-a-warning"></a>Como investigar um aviso
  Clique duas vezes na mensagem na janela **Lista de Erros** para navegar até a [Exibição de Detalhes da Função](../profiling/function-details-view.md) dos dados de perfil de amostragem. Encontre as seções do programa que fazem o uso mais frequente da concatenação de cadeia de caracteres. Use a classe StringBuilder para manipulações de cadeias de caracteres complexas, incluindo operações de concatenação de cadeia de caracteres frequentes.
 
- Para obter mais informações sobre como trabalhar com cadeias de caracteres, consulte a seção [String Operations](/previous-versions/msp-n-p/ff647790(v=pandp.10)#scalenetchapt05_topic26) (Operações de cadeia de caracteres) de [Chapter 5 — Improving Managed Code Performance](/previous-versions/msp-n-p/ff647790(v=pandp.10)) (Capítulo 5 – Melhorando o desempenho de código gerenciado) na biblioteca Microsoft Patterns and Practices (Padrões e Práticas da Microsoft).
+ Para obter mais informações sobre como trabalhar com cadeias de caracteres, consulte a seção [String Operations](/previous-versions/msp-n-p/ff647790(v=pandp.10)#string-operations) (Operações de cadeia de caracteres) de [Chapter 5 — Improving Managed Code Performance](/previous-versions/msp-n-p/ff647790(v=pandp.10)) (Capítulo 5 – Melhorando o desempenho de código gerenciado) na biblioteca Microsoft Patterns and Practices (Padrões e Práticas da Microsoft).
