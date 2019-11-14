@@ -1,6 +1,6 @@
 ### YamlMime:Landing
-title: Editar código no Visual Studio
-summary: Saiba mais sobre as tarefas de edição, como abrir um projeto, usar recursos do editor de código e manter o estilo de código consistente.
+title: Organizar e editar código no Visual Studio
+summary: Saiba mais sobre como trabalhar com projetos de código, usando recursos do editor de código e como manter o estilo de código consistente.
 metadata:
   title: Funcionalidades do editor de códigos
   description: Saiba mais sobre os recursos de edição de código no Visual Studio.
@@ -10,12 +10,12 @@ metadata:
   author: gewarren
   ms.author: gewarren
   ms.date: 10/15/2019
-  ms.openlocfilehash: 30345839ca1c5f4f07b3c36415f7aad277693069
-  ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
+  ms.openlocfilehash: 8cecddb4c8b9a49d56a6f133b751be53302b4347
+  ms.sourcegitcommit: 20325d85cd74906f5f30668133bd11a40f229b0c
   ms.translationtype: MT
   ms.contentlocale: pt-BR
-  ms.lasthandoff: 10/17/2019
-  ms.locfileid: "72516830"
+  ms.lasthandoff: 11/14/2019
+  ms.locfileid: "74087242"
 landingContent:
 - title: Abrir ou criar um projeto
   linkLists:
