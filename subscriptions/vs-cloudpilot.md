@@ -3,15 +3,15 @@ title: O benefício CloudPilot para as assinaturas do Visual Studio | Microsoft 
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/30/2019
+ms.date: 11/13/2019
 ms.topic: conceptual
 description: Saiba mais sobre o benefício do CloudPilot disponível nas assinaturas do Visual Studio selecionadas
-ms.openlocfilehash: 5f8592b15f61dff454b6fe29d4d207dd609ab461
-ms.sourcegitcommit: bcdab788085bd9931d73883fe70cd5831317dca2
+ms.openlocfilehash: 253a1b1c3b6996a200a236661d621c43975cb1ed
+ms.sourcegitcommit: ca3bb6db949f5e405f6ffe1afa5f430662c1173f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72816499"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "74099626"
 ---
 # <a name="the-cloudpilot-benefit-in-visual-studio-subscriptions"></a>O benefício CloudPilot nas assinaturas do Visual Studio
 Mova seus aplicativos para o Microsoft Azure em poucas etapas simples. Em minutos, identifique todas as alterações de código necessárias à linha de código para a migração bem-sucedida para: Contêineres, VMs, Serviços de Aplicativos, SQL do Azure e/ou MI do SQL. Em seguida, migre os aplicativos para o Azure usando assistentes e aproveitando o ASR, o AMD e o DMS.
@@ -59,7 +59,9 @@ O CloudPilot, da UnifyCloud, foi projetado para ajudar os desenvolvedores a move
 | Nível de Assinatura                                                 |     Canais                                            | Benefício                                                          | Renovável?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | VL, Azure, Retail, | 2 licenças, 90 dias, verificações ilimitadas       |  Nº  Disponível apenas para novos assinantes          |
+| Visual Studio Enterprise com GitHub Enterprise   | VL | 2 licenças, 90 dias, verificações ilimitadas       |  Nº  Disponível apenas para novos assinantes          |
 | Visual Studio Professional (Standard) | VL, Azure, Retail                                       | 1 licença, 30 dias, uma verificação                                                            |  Nº  Disponível apenas para novos assinantes           |
+| Visual Studio Professional com GitHub Enterprise | VL | 1 licença, 30 dias, uma verificação                                                            |  Nº  Disponível apenas para novos assinantes           |
 | Visual Studio Test Professional (Padrão)                         | VL, Retail                                              | Não disponível                                             |  N/A           |
 | Plataformas MSDN (Padrão)                                          | VL, Retail                                              | Não disponível                                              |  N/A          |
 | Visual Studio Enterprise (Standard)  | NFR<sup>1</sup> |Não disponível  | N/A |
@@ -83,4 +85,4 @@ Não tem certeza de qual assinatura você está usando?  Conecte-se ao [https://
 
 ## <a name="next-steps"></a>Próximas etapas
 
-Se você ainda não ativou o benefício do Azure que vem com sua assinatura, visite [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) e clique no bloco Azure na categoria ferramentas para configurar sua assinatura do Azure e resgatar seu crédito individual do Azure DevTest.
+Se você ainda não ativou o benefício de crédito individual do Azure DevTest que vem com sua assinatura, visite [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) e clique no bloco Azure na categoria ferramentas para configurar sua assinatura do Azure e resgatar seu crédito individual do Azure DevTest.

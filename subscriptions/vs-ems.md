@@ -3,22 +3,25 @@ title: Benefício do EMS | Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 08/05/2019
+ms.date: 11/13/2019
 ms.topic: conceptual
 description: Saiba mais sobre o benefício Enterprise Mobility + Security incluído em sua assinatura do Visual Studio.
-ms.openlocfilehash: 93b613d06c6cd8ebcb3b28437677339084a9b720
-ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
-ms.translationtype: HT
+ms.openlocfilehash: a8ea7cba0c23129e9dd7669c474f54675a12e619
+ms.sourcegitcommit: ca3bb6db949f5e405f6ffe1afa5f430662c1173f
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68787770"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "74099540"
 ---
 # <a name="enterprise-mobility--security-ems-in-visual-studio-subscriptions"></a>Benefício do EMS (Enterprise Mobility + Security) nas assinaturas do Visual Studio
 
 As assinaturas anuais padrão e de nuvem do Visual Studio Enterprise incluem o EMS (Enterprise Mobility + Security).  Proteja e gerencie identidades, dispositivos, aplicativos e dados com o EMS – Azure Active Directory, Microsoft Intune, Proteção de Informações do Azure, Microsoft Advanced Threat Analytics e Microsoft Cloud App Security. 
 
-> [!IMPORTANT]
-> Atualmente, o benefício do EMS (Enterprise Mobility + Security) não está disponível para novas ativações enquanto fazemos alterações importantes nesse benefício.  Se você já o ativou, pode continuar a usá-lo normalmente.  
+## <a name="who-should-install-ems"></a>Quem deve instalar o EMS?
+Se você já tiver um locatário do Office 365 Developer (E3), instale o EMS.  Caso contrário, você deve instalar o [Microsoft 365](vs-m365.md), que inclui o EMS e o Office 365 Developer (E5), bem como:
+- Análise avançada com Power BI
+- Proteção avançada contra ameaças do Office 365
+- Azure Active Directory para criar soluções avançadas de gerenciamento de identidade e acesso
 
 ## <a name="eligibility"></a>Qualificação
 
@@ -26,11 +29,11 @@ As assinaturas anuais padrão e de nuvem do Visual Studio Enterprise incluem o E
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | VL, Azure, Retail, NFR<sup>1</sup> selecionado | Disponível       |  Sim          |
 | Visual Studio Professional (Standard<sup>2</sup>) | VL, Azure, Retail                                       | Disponível                                                            |  Sim          |
-| Visual Studio Test Professional (Padrão)                         | VL, Retail                                              | Não disponível                                             |  N/D          |
-| Plataformas MSDN (Padrão)                                          | VL, Retail                                              | Não disponível                                              |  N/D          |
-| Visual Studio Enterprise, Visual Studio Professional (nuvem mensal) | Azure | Não disponível | N/D |
+| Visual Studio Test Professional (Padrão)                         | VL, Retail                                              | Não disponível                                             |  N/A          |
+| Plataformas MSDN (Padrão)                                          | VL, Retail                                              | Não disponível                                              |  N/A          |
+| Visual Studio Enterprise, Visual Studio Professional (nuvem mensal) | Azure | Não disponível | N/A |
 
-<sup>1</sup> *Inclui:  NFR (Proibida a revenda), VSIP (Visual Studio Industry Partner), MPN (Microsoft Partner Network), FTE, MCT Software & Services Developer e BizSpark.  Exclui: MVP (Most Valuable Professional), RD (Diretor Regional), MCT Software & Services, Imagine e Microsoft Partner Network (Professional).*
+<sup>1</sup>  *inclui: não para revenda (NFR), parceiro do setor do Visual Studio (VSIP), Microsoft Partner Network (MPN), FTE, MCT software & Developer Services, BizSpark.  Exclusões: profissional mais valioso (MVP), diretor regional (RD), MCT software & Services, imagine, Microsoft Partner Network (Professional).*
 
 <sup>2</sup> *Exclui: Microsoft Partner Network (Professional)*
 
@@ -44,3 +47,8 @@ Não tem certeza de qual assinatura você está usando?  Conecte-se ao [https://
 - Para obter suporte técnico com qualquer componente do EMS, visite as [Perguntas frequentes de suporte do EMS](https://docs.microsoft.com/enterprise-mobility-security/solutions/ems-support-faq) para encontrar o suporte certo para sua pergunta.
 - Para obter assistência com vendas, assinaturas, contas e cobrança para Assinaturas do Visual Studio, entre em contato com o [Suporte a Assinaturas](https://visualstudio.microsoft.com/subscriptions/support/) do Visual Studio.
 - Tem alguma pergunta sobre o IDE do Visual Studio, o Azure DevOps Services ou outros produtos ou serviços do Visual Studio?  Acesse o [Suporte do Visual Studio](https://visualstudio.microsoft.com/support/).
+
+## <a name="next-steps"></a>Próximas etapas
+Se você ainda não ativou o benefício de crédito individual do Azure DevTest que vem com sua assinatura, visite [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) e clique no bloco Azure na categoria ferramentas para configurar sua assinatura do Azure e resgatar seu crédito individual do Azure DevTest.
+
+Confira o restante dos ótimos benefícios incluídos na sua assinatura. Visite [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
