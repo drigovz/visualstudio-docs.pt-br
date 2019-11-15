@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.date: 08/12/2019
 ms.technology: vs-azure
 ms.topic: conceptual
-ms.openlocfilehash: 4ea1a936de215340cc13971e7a70a8d795d36cbb
-ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
+ms.openlocfilehash: c2f96bcc9df16b5de7d7f3ff485431352800d27e
+ms.sourcegitcommit: 9801fc66a14c0f855b9ff601fb981a9e5321819e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73713936"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "74072733"
 ---
 # <a name="docker-compose-build-properties"></a>Docker Compose Propriedades de compilação
 
@@ -46,6 +46,46 @@ A tabela a seguir mostra as propriedades do MSBuild disponíveis para projetos D
 |DockerServiceName| dcproj|Se DockerLaunchAction ou DockerLaunchBrowser forem especificados, DockerServiceName será o nome do serviço que deve ser iniciado.  Use essa propriedade para determinar qual dos possíveis projetos que podem ser referenciados por um arquivo Docker-Compose será iniciado.|-|
 |DockerServiceUrl| dcproj | A URL a ser usada ao iniciar o navegador.  Os tokens de substituição válidos são "{% IPAddress}", "{ServicePortal}" e "{Scheme}".  Por exemplo: {Scheme}://{ServiceIPAddress}: {ServicePortal}|-|
 |DockerTargetOS| dcproj | O sistema operacional de destino usado ao criar a imagem do Docker.|-|
+
+## <a name="example"></a>Exemplo
+
+Se você alterar o local dos arquivos do Docker Compose, definindo `DockerComposeBaseFilePath` como um caminho relativo, você também precisará certificar-se de que o contexto de compilação foi alterado para que ele faça referência à pasta da solução. Por exemplo, se o arquivo do Docker Compose for uma pasta chamada *DockerComposeFiles*, o arquivo Docker Compose deverá definir o contexto de compilação como ".." ou ".. /.. ", dependendo de onde ele é relativo à pasta da solução.
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" Sdk="Microsoft.Docker.Sdk">
+  <PropertyGroup Label="Globals">
+    <ProjectVersion>2.1</ProjectVersion>
+    <DockerTargetOS>Windows</DockerTargetOS>
+    <ProjectGuid>154022c1-8014-4e9d-bd78-6ff46670ffa4</ProjectGuid>
+    <DockerLaunchAction>LaunchBrowser</DockerLaunchAction>
+    <DockerServiceUrl>{Scheme}://{ServiceIPAddress}{ServicePort}</DockerServiceUrl>
+    <DockerServiceName>webapplication1</DockerServiceName>
+    <DockerComposeBaseFilePath>DockerComposeFiles\mydockercompose</DockerComposeBaseFilePath>
+    <AdditionalComposeFilePaths>AdditionalComposeFiles\myadditionalcompose.yml</AdditionalComposeFilePaths>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="DockerComposeFiles\mydockercompose.override.yml">
+      <DependentUpon>DockerComposeFiles\mydockercompose.yml</DependentUpon>
+    </None>
+    <None Include="DockerComposeFiles\mydockercompose.yml" />
+    <None Include=".dockerignore" />
+  </ItemGroup>
+</Project>
+```
+
+O arquivo *mydockercompose. yml* deve ter a seguinte aparência, com o contexto de compilação definido como o caminho relativo da pasta da solução (nesse caso, `..`).
+
+```yml
+version: '3.4'
+
+services:
+  webapplication1:
+    image: ${DOCKER_REGISTRY-}webapplication1
+    build:
+      context: ..
+      dockerfile: WebApplication1\Dockerfile
+```
 
 > [!NOTE]
 > DockerComposeBuildArguments, DockerComposeDownArguments e DockerComposeUpArguments são novos no Visual Studio 2019 versão 16,3.

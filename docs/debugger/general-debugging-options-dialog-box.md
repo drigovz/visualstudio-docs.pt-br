@@ -1,6 +1,6 @@
 ---
 title: Caixa de diálogo geral, depuração, opções | Microsoft Docs
-ms.date: 11/09/2018
+ms.date: 11/12/2019
 ms.topic: reference
 f1_keywords:
 - vs.debug.options.General
@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bbd99d260ba61d9e3ae9e877ecc1cefb1a22892e
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: 528fa04b081937af69e647b01911ed00c1ec40c9
+ms.sourcegitcommit: 9801fc66a14c0f855b9ff601fb981a9e5321819e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72569070"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "74072711"
 ---
 # <a name="general-debugging-options"></a>Opções gerais de depuração
 
@@ -137,6 +137,12 @@ Para ver quais símbolos estão disponíveis na tabela de exportação de uma dl
 - **Mostrar ferramentas de tempo de execução no aplicativo**: mostra os comandos de **árvore visual ao vivo** em uma barra de ferramentas na janela principal do aplicativo XAML que está sendo depurado. Essa opção foi introduzida no Visual Studio 2015 atualização 2.
 
 - **Habilitar o recarregamento de XAML**: permite que você use o recurso de recarregamento ativo em XAML com código XAML quando seu aplicativo está em execução. (Anteriormente, esse recurso era chamado de "edição XAML e continuação")
+
+::: moniker range=">= vs-2019" 
+- **Habilitar apenas meu XAML**: a partir do Visual Studio 2019 versão 16,4, a **árvore visual ativa** , por padrão, mostra apenas o XAML que é classificado como código de usuário. Se você desabilitar essa opção, todo o código XAML gerado será mostrado na ferramenta.
+
+- Desligar **o modo de seleção quando um elemento é selecionado** A partir do Visual Studio 2019 versão 16,4, o botão seletor do elemento da barra de ferramentas no aplicativo (**habilitar seleção**) é desativado quando um elemento é selecionado. Se você desabilitar essa opção, a seleção de elementos permanecerá ativada até você clicar no botão da barra de ferramentas no aplicativo novamente.
+::: moniker-end
 
 **Habilitar ferramentas de diagnóstico durante a depuração**: a janela **ferramentas de diagnóstico** aparece enquanto você está depurando.
 
