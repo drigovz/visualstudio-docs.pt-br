@@ -3,15 +3,15 @@ title: Benefício de Atendimento via Chat da Assinatura do Visual Studio | Micro
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/29/2019
+ms.date: 11/13/2019
 ms.topic: conceptual
 description: Saiba mais sobre o benefício de Atendimento via Chat incluído nas assinaturas do Visual Studio.
-ms.openlocfilehash: 543fee937437141aa38d53707cb6e5bf84031e94
-ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
-ms.translationtype: HT
+ms.openlocfilehash: 83fdb9a21528e00db1ef8652846c6b852c5c6067
+ms.sourcegitcommit: ca3bb6db949f5e405f6ffe1afa5f430662c1173f
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68681178"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "74099585"
 ---
 # <a name="concierge-chat-in-visual-studio-subscriptions"></a>Atendimento via Chat em assinaturas do Visual Studio
 O serviço de Atendimento via Chat fornece assistência para a localização de informações sobre produtos e documentação técnica, bem como ajuda para usar os benefícios de assinatura do Visual Studio.
@@ -38,12 +38,14 @@ Obter ajuda por meio do serviço de Atendimento via Chat é muito fácil.
 | Nível de Assinatura                                                 |     Canais                                            | Benefício                                                          | Renovável?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | VL, Azure, Retail, NFR<sup>1</sup> selecionado | Disponível       |  Sim          |
+| Visual Studio Enterprise com GitHub Enterprise | VL| Disponível       |  Sim          |
 | Visual Studio Professional (Standard) | VL, Azure, Retail                                       | Disponível                                                            |  Sim          |
+| Visual Studio Professional com GitHub Enterprise | VL | Disponível                                                            |  Sim          |
 | Visual Studio Test Professional (Padrão)                         | VL, Retail                                              | Disponível                                             |  Sim          |
 | Plataformas MSDN (Padrão)                                          | VL, Retail                                              | Disponível                                              |  Sim          |
-| Visual Studio Enterprise, Visual Studio Professional (nuvem mensal) | Azure | Não disponível | N/D |
+| Visual Studio Enterprise, Visual Studio Professional (nuvem mensal) | Azure | Não disponível | N/A |
 
-<sup>1</sup> *Inclui:  NFR (Proibida a revenda), VSIP (Visual Studio Industry Partner), Microsoft Certified Trainer e BizSpark.  Exclui:  FTE, MVP (Most Valuable Professional), RD (Diretor Regional), MPN (Microsoft Partner Network) e Imagine.*
+<sup>1</sup>  *inclui: não para revenda (NFR), parceiro do setor do Visual Studio (VSIP), Microsoft Certified Trainer, BizSpark.  Exclusões: FTE, profissional mais valioso (MVP), diretor regional (RD), Microsoft Partner Network (MPN), imagine.*
 
 > [!NOTE]
 > A Microsoft não oferece mais assinaturas anuais do Visual Studio Professional e do Visual Studio Enterprise nas Assinaturas na Nuvem. Não haverá nenhuma alteração na experiência dos clientes existentes nem na capacidade de renovar, aumentar, diminuir ou cancelar suas assinaturas. Os novos clientes são incentivados a acessar [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) para explorar diferentes opções de compra do Visual Studio.
@@ -51,7 +53,7 @@ Obter ajuda por meio do serviço de Atendimento via Chat é muito fácil.
 Não tem certeza de qual assinatura você está usando?  Conecte-se ao [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) para ver todas as assinaturas atribuídas ao seu endereço de email. Se não vir todas as suas assinaturas, talvez você tenha uma ou mais atribuídas a outro endereço de email.  Você precisará entrar com esse endereço de email para ver as assinaturas.
 
 ## <a name="frequently-asked-questions"></a>Perguntas frequentes
-### <a name="q--is-the-chat-service-available-in-multiple-languages"></a>P:  O serviço de chat está disponível em vários idiomas?
+### <a name="q--is-the-chat-service-available-in-multiple-languages"></a>P: O serviço de chat está disponível em vários idiomas?
    R: A assistência com problemas de contas, cobrança e assinaturas está disponível em vários idiomas.  A assistência para localizar informações sobre produtos e documentação técnica está disponível em inglês.
 
 ## <a name="support-resources"></a>Recursos de suporte
@@ -63,3 +65,5 @@ Para obter mais informações sobre ferramentas e serviços da Microsoft, confir
 - [Azure](/azure/)
 - [Azure DevOps](/azure/devops/)
 - [Visual Studio IDE](/visualstudio/)
+
+Se você ainda não ativou o benefício de crédito individual do Azure DevTest que vem com sua assinatura, visite [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) e clique no bloco Azure na categoria ferramentas para configurar sua assinatura do Azure e resgatar seu crédito individual do Azure DevTest.

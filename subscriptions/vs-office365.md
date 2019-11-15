@@ -6,12 +6,12 @@ manager: lank
 ms.date: 08/02/2019
 ms.topic: conceptual
 description: Saiba mais sobre o benefício do Office 365 incluído em algumas assinaturas do Visual Studio.
-ms.openlocfilehash: 58bfed3de99e3a3fa0a46e084ea566ae0451c47f
-ms.sourcegitcommit: bdccab4c2dbd50ea8adaaf88c69c9ca32db88099
+ms.openlocfilehash: 2dde8489f15d8bd2e6a5d04045b99aea2245f73d
+ms.sourcegitcommit: ca3bb6db949f5e405f6ffe1afa5f430662c1173f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73144711"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "74099602"
 ---
 # <a name="office-365-proplus-in-visual-studio-subscriptions"></a>Office 365 ProPlus em Assinaturas do Visual Studio
 
@@ -51,8 +51,10 @@ Siga estas etapas para baixar e ativar o Office 365 ProPlus:
 | Nível de Assinatura                                                 |     Canais                                            | Benefício                                                          | Renovável?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | VL, Azure, Retail| Disponível       |  Sim          |
+| Visual Studio Enterprise com GitHub Enterprise  | VL | Disponível       |  Sim          |
 | Visual Studio Enterprise (Standard)   | NFR<sup>1</sup> | Não disponível       |  N/A          |
 | Visual Studio Professional (Standard) | VL, Azure, Retail                                       | Não disponível                                                            |  N/A          |
+| Visual Studio Professional com GitHub Enterprise | VL | Não disponível         |  N/A          |
 | Visual Studio Test Professional (Padrão)                         | VL, Retail                                              | Não disponível                                             |  N/A          |
 | Plataformas MSDN (Padrão)                                          | VL, Retail                                              | Não disponível                                              |  N/A          |
 | Visual Studio Enterprise, Visual Studio Professional (nuvem mensal) | Azure | Não disponível | N/A |

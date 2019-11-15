@@ -1,7 +1,7 @@
 ---
 title: Desenvolvimento móvel de plataforma cruzada C++ com | Microsoft Docs
 ms.custom: ''
-ms.date: 10/17/2019
+ms.date: 11/14/2019
 ms.technology: vs-ide-mobile
 ms.topic: conceptual
 dev_langs:
@@ -12,14 +12,14 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: 61bb3e17b104759995852959a7396d5a76927cfb
-ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
+ms.openlocfilehash: bc4164ec405aed2941e807934ee8d66b7ae72504
+ms.sourcegitcommit: ca3bb6db949f5e405f6ffe1afa5f430662c1173f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72589040"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "74098978"
 ---
-# <a name="cross-platform-mobile-development-with-c"></a>Desenvolvimento móvel de plataforma cruzada comC++
+# <a name="cross-platform-mobile-development-with-c"></a>Desenvolvimento de tecnologia móvel multiplataforma com C++
 
 Você pode criar aplicativos C++ nativos para dispositivos IOS, Android e Windows usando as ferramentas de plataforma cruzada disponíveis no Visual Studio. O **desenvolvimento móvel C++ com** o é uma carga de trabalho disponível no instalador do Visual Studio. Ele instala os SDKs e as ferramentas de que você precisa para o desenvolvimento de plataforma cruzada de bibliotecas compartilhadas e aplicativos nativos. Quando ele é instalado, você pode usar C++ o para criar um código que é executado em dispositivos e plataformas Ios e Android, Windows, Windows Store e Xbox.
 
@@ -42,10 +42,6 @@ O desenvolvimento móvel C++ com o é uma carga de trabalho instalável que vem 
 Se você estiver vindo do desenvolvimento Android ou iOS, temos materiais excelente sobre como começar. O Visual Studio é um ambiente de desenvolvimento completo expressivo e capaz. Para saber como usá-lo, experimente a [Introdução para desenvolvedores do Android](/previous-versions/windows/apps/dn275875\(v=win.10\)) ou a [Introdução para desenvolvedores do iOS](/previous-versions/windows/apps/jj657966\(v=win.10\)). Esses artigos apresentarão o Visual Studio e os conceitos necessários para desenvolver aplicativos de plataforma cruzada para Windows e Windows Store. Para começar a escrever seu primeiro aplicativo de plataforma cruzada para iOS e Android, consulte [criar um aplicativo OpenGL ES no Android e Ios](../cross-platform/build-an-opengl-es-application-on-android-and-ios.md).
 
 O desenvolvimento móvel com C++ carga de trabalho inclui vários modelos para ajudá-lo a começar a usar seus aplicativos:
-
-- Aplicativo OpenGLES 2 (Android, iOS e Windows Universal)
-
-  Cria uma solução que inclui um conjunto de projetos para compilar um aplicativo de Atividade Nativa do Android, um aplicativo iOS, um aplicativo Universal do Windows, junto com uma biblioteca compartilhada de C++. Estes aplicativos usam bibliotecas específicas da plataforma criada ao usar o código C++ OpenGL ES comum para desenhar o mesmo cubo rotatório em cada aplicativo. Para usar esse modelo, inclua a carga de trabalho de **desenvolvimento da plataforma universal do Windows** ao instalar o Visual Studio.
 
 - Aplicativo de Atividade Nativa (Android)
 
