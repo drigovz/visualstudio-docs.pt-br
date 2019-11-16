@@ -7,16 +7,16 @@ ms.date: 02/01/2019
 ms.prod: visual-studio-dev16
 ms.technology: vs-azure
 ms.topic: include
-ms.openlocfilehash: 124f60a4a632115625524b4e30ab28f795d41660
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
+ms.openlocfilehash: 7eae92f7c65208dfeda9cd19e14eaa627e12a22a
+ms.sourcegitcommit: bbff780cda82bb64862d77fe8f407f1803beb876
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70311981"
+ms.lasthandoff: 11/16/2019
+ms.locfileid: "74142179"
 ---
 Com o Visual Studio, você pode facilmente compilar, depurar e executar aplicativos ASP.NET Core em contêineres e publicá-los no ACR (registro de contêiner do Azure), no Hub do Docker, no serviço de Azure App ou em seu próprio registro de contêiner. Neste artigo, publicaremos no ACR.
 
-## <a name="prerequisites"></a>Pré-requisitos
+## <a name="prerequisites"></a>Prerequisites
 
 * [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
 * [Visual Studio 2019](https://visualstudio.microsoft.com/downloads) com **Desenvolvimento para a Web**, a carga de trabalho de **Ferramentas do Azure** e/ou **Desenvolvimento multiplataforma do .NET Core** instalados
@@ -25,7 +25,7 @@ Com o Visual Studio, você pode facilmente compilar, depurar e executar aplicati
 
 ## <a name="installation-and-setup"></a>Instalação e configuração
 
-Para a instalação do Docker, primeiro examine as informações em [Docker Desktop for Windows: What to know before you install](https://docs.docker.com/docker-for-windows/install/#what-to-know-before-you-install) (Docker Desktop for Windows: o que saber antes de instalar). Em seguida, instale o [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows).
+Para a instalação do Docker, primeiro examine as informações no [Docker desktop para Windows: o que saber antes de instalar](https://docs.docker.com/docker-for-windows/install/#what-to-know-before-you-install)o. Em seguida, instale o [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows).
 
 ## <a name="add-a-project-to-a-docker-container"></a>Adicionar um projeto a um contêiner do Docker
 
@@ -93,6 +93,18 @@ CONTAINER ID        IMAGE                  COMMAND               CREATED        
 cf5d2ef5f19a        hellodockertools:dev   "tail -f /dev/null"   2 minutes ago       Up 2 minutes        0.0.0.0:52036->80/tcp, 0.0.0.0:44342->443/tcp   priceless_cartwright
 ```
 
+## <a name="containers-window"></a>Janela contêineres
+
+Se você tiver o Visual Studio 2019 versão 16,4 ou posterior, poderá usar a janela **contêineres** para exibir contêineres em execução em seu computador, bem como imagens disponíveis.
+
+Abra a janela **contêineres** usando a caixa de pesquisa no IDE (pressione **Ctrl**+**Q** para usá-la), digite `container`e escolha a janela **contêineres** na lista.
+
+Você pode montar a janela **contêineres** em um local conveniente, como abaixo do editor, movendo-a e seguindo os guias de posicionamento da janela.
+
+Na janela, localize o contêiner e percorra cada guia para exibir as variáveis de ambiente, os mapeamentos de porta, os logs e o sistema de arquivos.
+
+Para obter mais informações, consulte [Exibir e diagnosticar contêineres e imagens no Visual Studio](../../view-and-diagnose-containers.md).
+
 ## <a name="publish-docker-images"></a>Publicar imagens do Docker
 
 Depois que o ciclo de desenvolvimento e de depuração do aplicativo forem concluídos, você poderá criar uma imagem de produção do aplicativo.
@@ -103,10 +115,10 @@ Depois que o ciclo de desenvolvimento e de depuração do aplicativo forem concl
 1. Escolha **Criar Registro de Contêiner do Azure** e clique em **Publicar**.
 1. Preencha os valores desejados em **Criar um novo Registro de Contêiner do Azure**.
 
-    | Configuração      | Valor sugerido  | DESCRIÇÃO                                |
+    | Configuração      | Valor sugerido  | Descrição                                |
     | ------------ |  ------- | -------------------------------------------------- |
     | **Prefixo DNS** | Nome globalmente exclusivo | Nome que identifica exclusivamente o registro de contêiner. |
-    | **Assinatura** | Escolha sua assinatura | A assinatura do Azure a utilizar. |
+    | **Assinatura** | Escolha sua assinatura | A assinatura do Azure a usar. |
     | **[Grupo de Recursos](/azure/azure-resource-manager/resource-group-overview)** | myResourceGroup |  Nome do grupo de recursos no qual criar o registro de contêiner. Escolha **Novo** para criar um novo grupo de recursos.|
     | **[SKU](https://docs.microsoft.com/azure/container-registry/container-registry-skus)** | Padrão | Camada de serviço do registro de contêiner  |
     | **Local do Registro** | Um local próximo | Escolha um Local em uma [região](https://azure.microsoft.com/regions/) próxima a você ou perto de outros serviços que usarão o registro de contêiner. |
