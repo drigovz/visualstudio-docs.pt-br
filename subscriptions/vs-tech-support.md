@@ -3,15 +3,15 @@ title: Benefício do suporte técnico
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/29/2019
+ms.date: 11/18/2019
 ms.topic: conceptual
 description: Saiba como ativar o benefício do suporte técnico incluído na assinatura do Visual Studio.
-ms.openlocfilehash: 6d76fa3bdff63a31598fb9a977f6ed024d214af1
-ms.sourcegitcommit: ab18c9d850192fc9ccec10961f1126e8b0cba8da
+ms.openlocfilehash: f88cf221f47f2b8aa89a733a4794e424ac938261
+ms.sourcegitcommit: 5c9ca18eadc7ed0ed095cc5a3e1df40bbc13e70c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73061152"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74161976"
 ---
 # <a name="activate-and-use-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Ativar e usar o benefício do Suporte Técnico em assinaturas do Visual Studio
 O benefício de Suporte Técnico em assinaturas do Visual Studio destina-se a resolver problemas de interrupção/reparo em **ambientes de não produção** para os produtos que ainda estão na fase de suporte base do [ciclo de vida de suporte](https://support.microsoft.com/lifecycle/search). As assinaturas de nuvem anual e padrão do Visual Studio Enterprise recebem quatro incidentes, enquanto as assinaturas de nuvem anual e padrão do Visual Studio Professional recebem dois incidentes, por até 1 ano a contar da ativação do benefício. A ativação do benefício precisa ocorrer enquanto a assinatura é atual.
@@ -112,7 +112,9 @@ Para usar o benefício de suporte técnico da assinatura do Visual Studio para p
 | Nível de Assinatura                                                 |     Canais                                            | Benefício                                                          | Renovável?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | VL, Azure, Comercial, NFR selecionado<sup>1</sup> | 4 incidentes       |  Sim|
+| Visual Studio Enterprise com GitHub Enterprise | VL | 4 incidentes       |  Sim|
 | Visual Studio Professional (Standard) | VL, Azure, Retail, NFR<sup>2</sup> selecionado                                        | 2 incidentes                                                          |Sim         |
+| Visual Studio Professional com GitHub Enterprise | VL                                     | 2 incidentes                                                          |Sim         |
 | Visual Studio Test Professional (Padrão)                         | VL, Retail                                              | 2 incidentes                                             |  Sim         |
 | Plataformas MSDN (Padrão)                                          | VL, Retail                                              | 2 incidentes                                               | Sim         |
 | Visual Studio Enterprise, Visual Studio Professional (nuvem mensal) | Azure                                       | Não disponível                                                           |NA|
@@ -123,3 +125,9 @@ Para usar o benefício de suporte técnico da assinatura do Visual Studio para p
 <sup>2</sup> *inclui: Imagine Standard.*
 
 Não tem certeza de qual assinatura você está usando?  Conecte-se ao [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) para ver todas as assinaturas atribuídas ao seu endereço de email. Se não vir todas as suas assinaturas, talvez você tenha uma ou mais atribuídas a outro endereço de email.  Você precisará entrar com esse endereço de email para ver as assinaturas.
+
+## <a name="next-steps"></a>Próximas etapas
+Certifique-se de ativar estes excelentes benefícios para aproveitar ao máximo sua assinatura do Visual Studio:
+- [Visual Studio](vs-ide-benefit.md)
+- [Azure DevOps](vs-azure-devops.md)
+- [Crédito individual do Azure DevTest](vs-azure.md)
