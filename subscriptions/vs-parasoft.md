@@ -3,15 +3,15 @@ title: Benefício desktop profissional Parasoft Virtualize/SOAtest | Microsoft D
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/31/2019
+ms.date: 11/18/2019
 ms.topic: conceptual
 description: Saiba como ativar a assinatura do Parasoft Virtualize/SOA Test Professional incluída em sua assinatura do Visual Studio.
-ms.openlocfilehash: a1bd6525df65ee8cc0c9f3dd9dfd60673dbb6df1
-ms.sourcegitcommit: bcdab788085bd9931d73883fe70cd5831317dca2
+ms.openlocfilehash: 036b265f9ca1accc7027477abfc27ce4e66c4033
+ms.sourcegitcommit: 5c9ca18eadc7ed0ed095cc5a3e1df40bbc13e70c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72816485"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74161932"
 ---
 # <a name="parasoft-virtualizesoatest-professional-desktop-in-visual-studio-subscriptions"></a>Parasoft Virtualize/SOAtest Professional Desktop em assinaturas do Visual Studio
 
@@ -73,7 +73,9 @@ Teste antes e com mais frequência.  Simule e teste o comportamento de aplicativ
 | Nível de Assinatura                                                 |     Canais                                            | Benefício                                                          | Renovável?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | VL, Azure, Retail, NFR<sup>1</sup> selecionado | Seis meses       |  Sim       |
+| Visual Studio Enterprise com GitHub Enterprise | VL | Seis meses       |  Sim       |
 | Visual Studio Professional (Standard) | VL, Azure, Retail                                       | Não disponível                                                           |NA         |
+| Visual Studio Professional com GitHub Enterprise | VL                                      | Não disponível                                                           |NA         |
 | Visual Studio Test Professional (Padrão)                         | VL, Retail                                              | Não disponível                                                           |NA         |
 | Plataformas MSDN (Padrão)                                          | VL, Retail                                              | Não disponível                                                           |NA         |
 | Visual Studio Enterprise, Visual Studio Professional (nuvem mensal) | Azure                                       | Não disponível                                                           |NA|
