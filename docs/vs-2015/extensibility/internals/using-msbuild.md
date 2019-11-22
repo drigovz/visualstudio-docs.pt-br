@@ -12,24 +12,24 @@ ms.assetid: 9d38c388-1f64-430e-8f6c-e88bc99a4260
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 887afab85738e33bccd56543772b576e3843fe92
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: a1ad59e6d8f4cb88004629b0dfd2cdf0631a7824
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65675219"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297668"
 ---
 # <a name="using-msbuild"></a>Usando o MSBuild
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-MSBuild fornece um formato XML bem definido e extensível para a criação de arquivos de projeto que descrevem totalmente os itens de projeto para ser compilado, as tarefas de compilação e configurações de build.  
+O MSBuild fornece um formato XML extensível e bem definido para a criação de arquivos de projeto que descrevem totalmente os itens de projeto a serem criados, as tarefas de compilação e as configurações de compilação.  
   
- Para um exemplo de ponta a ponta de um sistema de projeto de linguagem baseado no MSBuild, consulte o exemplo de IronPython Deep Dive na[exemplos de VSSDK](../../misc/vssdk-samples.md).  
+ Para obter um exemplo de ponta a ponta de um sistema de projeto de linguagem baseado no MSBuild, consulte a amostra aprofundada do IronPython nos[exemplos de VSSDK](../../misc/vssdk-samples.md).  
   
-## <a name="general-msbuild-considerations"></a>Considerações gerais MSBuild  
- Arquivos de projeto MSBuild, por exemplo, [!INCLUDE[csprcs](../../includes/csprcs-md.md)] . csproj e [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] arquivos. vbproj, contêm dados que são usados no momento da compilação, mas também podem conter dados que são usados em tempo de design. Dados de tempo de compilação são armazenados usando o MSBuild primitivos, incluindo [elemento Item (MSBuild)](../../msbuild/item-element-msbuild.md) e [elemento Property (MSBuild)](../../msbuild/property-element-msbuild.md). Dados de tempo de design, que são específico para o tipo de projeto e quaisquer subtipos do projeto relacionado a dados, são armazenados no XML de forma livre, reservada para ela.  
+## <a name="general-msbuild-considerations"></a>Considerações gerais do MSBuild  
+ Os arquivos de projeto do MSBuild, por exemplo, [!INCLUDE[csprcs](../../includes/csprcs-md.md)]. csproj e [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] arquivos. vbproj, contêm dados que são usados no momento da compilação, mas também podem conter dados que são usados em tempo de design. Os dados de tempo de compilação são armazenados usando primitivos do MSBuild, incluindo o [elemento de item (MSBuild)](../../msbuild/item-element-msbuild.md) e o [elemento de propriedade (MSBuild)](../../msbuild/property-element-msbuild.md). Os dados de tempo de design, que são dados específicos para o tipo de projeto e todos os subtipos de projeto relacionados, são armazenados em XML de forma livre reservado para ele.  
   
- MSBuild não tem suporte nativo para objetos de configuração, mas fornecer atributos condicionais para especificar dados de configuração específicos. Por exemplo:  
+ O MSBuild não tem suporte nativo para objetos de configuração, mas fornece atributos condicionais para especificar dados específicos da configuração. Por exemplo:  
   
 ```  
 <OutputDir Condition="'$(Configuration)'=="release'">Bin\MyReleaseConfig</OutputDir>  
@@ -38,11 +38,11 @@ MSBuild fornece um formato XML bem definido e extensível para a criação de ar
  Para obter mais informações sobre atributos condicionais, consulte [constructos condicionais](../../msbuild/msbuild-conditional-constructs.md).  
   
 ### <a name="extending-msbuild-for-your-project-type"></a>Estendendo o MSBuild para o tipo de projeto  
- APIs e interfaces do MSBuild estão sujeitos a alterações em versões futuras do [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Portanto, é aconselhável usar as classes de estrutura (MPF) de pacote gerenciado porque eles fornecem a blindagem de alterações.  
+ As interfaces e APIs do MSBuild estão sujeitas a alterações em versões futuras do [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Portanto, é prudente usar as classes do MPF (estrutura de pacote gerenciada) porque elas fornecem a blindagem de alterações.  
   
- A estrutura de pacote gerenciado para projetos (MPFProj) fornece classes auxiliares para criar e gerenciar o novo sistema de projeto. Você pode encontrar a fonte de instruções de código e compilação em [MPF de projetos – Visual Studio 2013](http://mpfproj12.codeplex.com/).  
+ A estrutura de pacote gerenciada para projetos (MPFProj) fornece classes auxiliares para criar e gerenciar o novo sistema de projeto. Você pode encontrar o código-fonte e as instruções de compilação em [MPF for projects-Visual Studio 2013](https://archive.codeplex.com/?p=mpfproj12).  
   
- As classes MPF de específicos do projeto são da seguinte maneira:  
+ As classes do MPF específicas do projeto são as seguintes:  
   
 |Classe|Implementação|  
 |-----------|--------------------|  
@@ -54,8 +54,8 @@ MSBuild fornece um formato XML bem definido e extensível para a criação de ar
   
  `Microsoft.VisualStudio.Package.ProjectElement` classe é um wrapper para itens do MSBuild.  
   
-#### <a name="single-file-generators-vs-msbuild-tasks"></a>Geradores de arquivo único vs. Tarefas do MSBuild  
- Arquivo único geradores são acessíveis em tempo de design somente, mas as tarefas do MSBuild podem ser usadas no tempo de design e tempo de compilação. Para máxima flexibilidade, portanto, use tarefas do MSBuild para transformar e gerar código. Para obter mais informações, consulte [ferramentas personalizados](../../extensibility/internals/custom-tools.md).  
+#### <a name="single-file-generators-vs-msbuild-tasks"></a>Geradores de arquivo único versus tarefas do MSBuild  
+ Os geradores de arquivo único são acessíveis em tempo de design apenas, mas as tarefas do MSBuild podem ser usadas em tempo de design e em tempo de compilação. Para obter máxima flexibilidade, portanto, use tarefas do MSBuild para transformar e gerar código. Para obter mais informações, consulte [ferramentas personalizadas](../../extensibility/internals/custom-tools.md).  
   
 ## <a name="see-also"></a>Consulte também  
  [Referência do MSBuild](../../msbuild/msbuild-reference.md)   

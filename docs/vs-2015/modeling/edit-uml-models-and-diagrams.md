@@ -21,12 +21,12 @@ caps.latest.revision: 86
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 6585fbfa7c16e710633e81841b4c8eb380f9f564
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 00ac30cc7e9ee3aff0dd64f015a4b4954972c09a
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669719"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74295532"
 ---
 # <a name="edit-uml-models-and-diagrams"></a>Editar modelos e diagramas UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -251,7 +251,7 @@ Você pode criar e editar um modelo UML por meio dos modos de exibição forneci
 
 3. Se você quiser copiar os elementos para outro diagrama, crie o novo diagrama ou abra o diagrama existente.
 
-4. No menu **Editar** , clique em **colar**.
+4. No menu **Editar**, clique em **Colar**.
 
     - As cópias dos elementos são exibidas, juntamente com cópias de quaisquer relações vinculadas entre eles.
 
@@ -320,23 +320,11 @@ Você pode criar e editar um modelo UML por meio dos modos de exibição forneci
 
 - Para adicionar observações e explicações a elementos de modelo, você pode criar comentários e vinculá-los aos elementos.
 
-- Para alinhar de forma organizada uma coluna ou formas de linha no diagrama, você pode instalar o comando Alinhar formas. Isso está disponível como exemplo de extensão UML: [UML: comando para alinhar formas](http://code.msdn.microsoft.com/UML-command-to-Align-4139c0d7)
-
 ### <a name="to-export-a-diagram-as-an-image"></a>Para exportar um diagrama como uma imagem
  Para obter mais informações, consulte [exportar diagramas como imagens](../modeling/export-diagrams-as-images.md).
 
 ## <a name="extensions"></a>Estendendo os designers UML
  Você pode adicionar uma nova funcionalidade às ferramentas UML e adaptar a notação de diagrama às suas próprias necessidades. Para obter mais informações, consulte [estender modelos e diagramas UML](../modeling/extend-uml-models-and-diagrams.md).
-
- Há várias extensões de exemplo disponíveis. Você pode simplesmente instalá-los e usá-los ou pode usar o código-fonte como base para suas próprias extensões. Os exemplos incluem:
-
-|||
-|-|-|
-|[Alinhar formas](http://code.msdn.microsoft.com/UML-command-to-Align-4139c0d7)|Comando de menu que ajuda você a organizar um diagrama.|
-|[Link para docs](http://code.msdn.microsoft.com/Link-UML-elements-to-0adbf5a8)|Vincule qualquer elemento UML a títulos do Word, slides do PowerPoint, arquivos de qualquer tipo, diagramas UML ou outros elementos UML. O link pode ser feito simplesmente arrastando. Posteriormente, você pode clicar duas vezes no elemento para ver o item vinculado. Por exemplo, você pode vincular casos de uso a especificações de palavras ou diagramas de atividade detalhados e ações para slides de storyboard.|
-|[Entrada rápida](http://code.msdn.microsoft.com/UML-Rapid-Entry-using-Text-0813ad8a)|Crie um modelo rapidamente usando a entrada de texto. Útil para capturar ideias em reuniões.|
-|[Cor por estereótipo](http://code.msdn.microsoft.com/UML-Color-Classes-by-07de2b70)|As classes de cores de acordo com o estereótipo. Você pode estender facilmente o código para trabalhar com seus próprios estereótipos.|
-|[Modelagem de domínio](http://code.msdn.microsoft.com/UML-Domain-Modeling-6df6f7f4)|Padrões convenientes para modelos de negócios. As associações são mostradas sem setas por padrão e as operações não aparecem em classes.|
 
 ## <a name="see-also"></a>Consulte também
  [Criar projetos de modelagem UML e diagramas](../modeling/create-uml-modeling-projects-and-diagrams.md) [analisando e modelando a arquitetura](../modeling/analyze-and-model-your-architecture.md) [criar modelos para seu aplicativo](../modeling/create-models-for-your-app.md)

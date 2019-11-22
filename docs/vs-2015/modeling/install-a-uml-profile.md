@@ -11,12 +11,12 @@ caps.latest.revision: 13
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: e38e89ee5572f5ba552f3b6807a3edab5012a727
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 14911cda4cfc2be5fece6005a879427c10529bbc
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669597"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74298917"
 ---
 # <a name="install-a-uml-profile"></a>Instalar um perfil UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ Você pode estender o Visual Studio com um perfil UML. Um perfil permite adicion
 
  Se você receber um modelo UML que foi criado usando perfis, algumas propriedades não serão exibidas, a menos que você instale os mesmos perfis.
 
- Um perfil é distribuído dentro de uma extensão do Visual Studio. Uma extensão também pode conter outros recursos, como comandos de menu. Para obter mais informações, consulte [Gerenciando extensões do Visual Studio](http://go.microsoft.com/fwlink/?LinkId=160728).
+ Um perfil é distribuído dentro de uma extensão do Visual Studio. Uma extensão também pode conter outros recursos, como comandos de menu. Para obter mais informações, consulte [Gerenciando extensões do Visual Studio](https://go.microsoft.com/fwlink/?LinkId=160728).
 
 ### <a name="to-install-a-uml-profile-on-your-computer"></a>Para instalar um perfil UML em seu computador
 

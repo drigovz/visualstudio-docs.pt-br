@@ -15,12 +15,12 @@ caps.latest.revision: 18
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 4b49ea9c293128efd400a1aa22d78ae4ee945092
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 439c6b5fc30be2e76eb6c0b6a44b1ec5226633b1
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72663592"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74295947"
 ---
 # <a name="ca1065-do-not-raise-exceptions-in-unexpected-locations"></a>CA1065: não acione exceções em locais inesperados
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "72663592"
 |-|-|
 |NomeDoTipo|DoNotRaiseExceptionsInUnexpectedLocations|
 |CheckId|CA1065|
-|Categoria|Microsoft. Design|
+|Categoria|Microsoft.Design|
 |Alteração Significativa|Sem interrupção|
 
 ## <a name="cause"></a>Causa
@@ -89,16 +89,16 @@ ms.locfileid: "72663592"
 
 - <xref:System.Object.Equals%2A?displayProperty=fullName>
 
-- [M:IEquatable.Equals](http://go.microsoft.com/fwlink/?LinkId=113472)
+- [M:IEquatable.Equals](https://go.microsoft.com/fwlink/?LinkId=113472)
 
-  Um método **Equals** deve retornar `true` ou `false` em vez de lançar uma exceção. Por exemplo, se Equals for passado dois tipos incompatíveis, ele deverá simplesmente retornar `false` em vez de lançar um <xref:System.ArgumentException>.
+  Um método **Equals** deve retornar `true` ou `false` em vez de lançar uma exceção. Por exemplo, se Equals for passado por dois tipos incompatíveis, ele deverá apenas retornar `false` em vez de lançar um <xref:System.ArgumentException>.
 
 ### <a name="gethashcode-methods"></a>Métodos GetHashCode
  Os seguintes métodos **GetHashCode** normalmente não devem gerar exceções:
 
 - <xref:System.Object.GetHashCode%2A>
 
-- [M:IEqualityComparer.GetHashCode (T)](http://go.microsoft.com/fwlink/?LinkId=113477)
+- [M:IEqualityComparer.GetHashCode(T)](https://go.microsoft.com/fwlink/?LinkId=113477)
 
   **GetHashCode** sempre deve retornar um valor. Caso contrário, você pode perder itens na tabela de hash.
 

@@ -13,12 +13,12 @@ caps.latest.revision: 49
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 51b546e953cae80b7a1871b72a1f0b0613c77342
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 955103b6d28e90321fb45c23825f0c2a25362208
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659332"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301321"
 ---
 # <a name="visualize-code"></a>Visualizar código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,9 +50,9 @@ Você pode usar as ferramentas de visualização e modelagem no Visual Studio pa
 
 |**Categoria**|**Vincule**|
 |------------------|---------------|
-|**Nos**|[ferramentas de modelagem & de visualização do Visual Studio](http://go.microsoft.com/fwlink/?LinkId=184720) -   <br />[SDK de modelagem do & de visualização do Visual Studio (ferramentas DSL)](http://go.microsoft.com/fwlink/?LinkId=184721) -   |
-|**Blogs**|[Visual Studio ALM + Team Foundation Server Blog](http://go.microsoft.com/fwlink/?LinkID=201340)|
-|**Artigos técnicos e diários**|[Fórum de arquitetura do MSDN](http://go.microsoft.com/fwlink/?LinkId=201343)|
+|**Nos**|[ferramentas de modelagem & de visualização do Visual Studio](https://go.microsoft.com/fwlink/?LinkId=184720) -   <br />[SDK de modelagem do & de visualização do Visual Studio (ferramentas DSL)](https://go.microsoft.com/fwlink/?LinkId=184721) -   |
+|**Blogs**|[Visual Studio ALM + Team Foundation Server Blog](https://go.microsoft.com/fwlink/?LinkID=201340)|
+|**Artigos técnicos e diários**|[Fórum de arquitetura do MSDN](https://go.microsoft.com/fwlink/?LinkId=201343)|
 
 ## <a name="see-also"></a>Consulte também
- [Cenário: altere o design usando visualização e modelagem](../modeling/scenario-change-your-design-using-visualization-and-modeling.md) [análise e arquitetura de modelagem](../modeling/analyze-and-model-your-architecture.md) [criar modelos para o](../modeling/create-models-for-your-app.md) modelo de [requisitos de usuário modelo](../modeling/model-user-requirements.md) de aplicativo [a arquitetura de seu aplicativo](../modeling/model-your-app-s-architecture.md) [usa modelos em seu processo de desenvolvimento](../modeling/use-models-in-your-development-process.md)
+ [Cenário: alterar o design usando visualização e modelagem](../modeling/scenario-change-your-design-using-visualization-and-modeling.md) [análise e arquitetura de modelagem](../modeling/analyze-and-model-your-architecture.md) [criar modelos para o modelo de aplicativo](../modeling/create-models-for-your-app.md) [modelo de requisitos de usuário](../modeling/model-user-requirements.md) [a arquitetura de seu aplicativo](../modeling/model-your-app-s-architecture.md) [usa modelos em seu processo de desenvolvimento](../modeling/use-models-in-your-development-process.md)

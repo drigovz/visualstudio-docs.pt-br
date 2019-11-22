@@ -12,12 +12,12 @@ caps.latest.revision: 49
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 41023f49f1897f3e3d26d7fc57807ea98fa35f24
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 10c9c6cfa1d8553c79b710239a99f8ea9e2438e5
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659291"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301283"
 ---
 # <a name="walkthrough-connecting-a-host-to-a-generated-directive-processor"></a>Instruções passo a passo: conectando um host a um processador de diretriz gerado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,14 +37,14 @@ Você pode escrever seu próprio host que processa modelos de texto. Um host per
 
 - Testando o host personalizado com o processador de diretiva gerado.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Pré-requisitos
  Para definir uma DSL, é necessário ter instalados os seguintes componentes:
 
 |||
 |-|-|
-|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185579](http://go.microsoft.com/fwlink/?LinkId=185579)|
-|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185580](http://go.microsoft.com/fwlink/?LinkId=185580)|
-|SDK de Visualização e Modelagem do Visual Studio|[http://go.microsoft.com/fwlink/?LinkID=186128](http://go.microsoft.com/fwlink/?LinkID=186128)|
+|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185579](https://go.microsoft.com/fwlink/?LinkId=185579)|
+|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185580](https://go.microsoft.com/fwlink/?LinkId=185580)|
+|SDK de Visualização e Modelagem do Visual Studio|[http://go.microsoft.com/fwlink/?LinkID=186128](https://go.microsoft.com/fwlink/?LinkID=186128)|
 
  Além disso, você deve ter a transformação de modelo de texto personalizado criada em [passo a passo: Criando um host de modelo de texto personalizado](../modeling/walkthrough-creating-a-custom-text-template-host.md).
 
@@ -95,17 +95,17 @@ Você pode escrever seu próprio host que processa modelos de texto. Um host per
 
 3. Adicione as seguintes referências:
 
-    - Microsoft. VisualStudio. Modeling. Sdk. 11.0
+    - Microsoft.VisualStudio.Modeling.Sdk.11.0
 
-    - Microsoft. VisualStudio. Modeling. Sdk. Diagrams. 11.0
+    - Microsoft.VisualStudio.Modeling.Sdk.Diagrams.11.0
 
-    - Microsoft. VisualStudio. TextTemplating. 11.0
+    - Microsoft.VisualStudio.TextTemplating.11.0
 
-    - Microsoft. VisualStudio. TextTemplating. interfaces. 11.0
+    - Microsoft.VisualStudio.TextTemplating.Interfaces.11.0
 
-    - Microsoft. VisualStudio. TextTemplating. Modeling. 11.0
+    - Microsoft.VisualStudio.TextTemplating.Modeling.11.0
 
-    - Microsoft. VisualStudio. TextTemplating. VSHost. 11.0
+    - Microsoft.VisualStudio.TextTemplating.VSHost.11.0
 
 4. Na parte superior de Program.cs ou Module1. vb, adicione a seguinte linha de código:
 
@@ -117,7 +117,7 @@ Você pode escrever seu próprio host que processa modelos de texto. Um host per
     Imports Microsoft.Win32
     ```
 
-5. Localize o código para a propriedade `StandardAssemblyReferences` e substitua-o pelo seguinte código:
+5. Localize o código para a propriedade `StandardAssemblyReferences`e substitua-o pelo seguinte código:
 
     > [!NOTE]
     > Nesta etapa, você adiciona referências aos assemblies que são exigidos pelo processador de diretiva gerado ao qual seu host dará suporte.
@@ -153,7 +153,7 @@ Você pode escrever seu próprio host que processa modelos de texto. Um host per
     }
     ```
 
-6. Localize o código para a função `ResolveDirectiveProcessor` e substitua-o pelo seguinte código:
+6. Localize o código para a função `ResolveDirectiveProcessor`e substitua-o pelo seguinte código:
 
     > [!IMPORTANT]
     > Esse código contém referências embutidas em código para o nome do processador de diretiva gerado ao qual você deseja se conectar. Você poderia facilmente tornar isso mais geral. nesse caso, ele procura todos os processadores de diretiva listados no registro e tenta encontrar uma correspondência. Nesse caso, o host funcionaria com qualquer processador de diretiva gerado.
@@ -310,7 +310,7 @@ Você pode escrever seu próprio host que processa modelos de texto. Um host per
     #>
     ```
 
-3. No código, substitua \<YOUR caminho > pelo caminho do arquivo Sample. min da linguagem específica do design criada no primeiro procedimento.
+3. No código, substitua \<seu caminho > pelo caminho do arquivo Sample. min da linguagem específica do design criada no primeiro procedimento.
 
 4. Salve e feche o arquivo.
 

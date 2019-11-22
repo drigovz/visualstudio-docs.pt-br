@@ -9,12 +9,12 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 700417e0cf6bb93c96c0826a7d49d4d0deb7395f
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 175cb6f6a8a3f240c244e139406841b0546209cc
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65705783"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74295907"
 ---
 # <a name="javascript-in-visual-studio"></a>JavaScript no Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,13 +25,13 @@ O JavaScript é uma linguagem de primeira classe no Visual Studio. Você pode us
 
  Versões específicas do Visual Studio ou extensões específicas do Visual Studio podem ser necessárias para desenvolver serviços e tipos de aplicativo específicos usando HTML e JavaScript. A lista a seguir contém links para obtenção de mais informações.
 
-- Para criar aplicativos de plataforma cruzada usando o Apache Cordova, [obtenha as Ferramentas do Visual Studio para Apache Cordova](http://go.microsoft.com/fwlink/p/?LinkId=397606).
+- Para criar aplicativos de plataforma cruzada usando o Apache Cordova, [obtenha as Ferramentas do Visual Studio para Apache Cordova](https://go.microsoft.com/fwlink/p/?LinkId=397606).
 
-- Para criar aplicativos [da Windows Store](http://dev.windows.com/develop), [do Windows Phone](http://dev.windows.com/develop) e universais (que dão suporte a ambas as plataformas), [obtenha as ferramentas](https://developer.microsoft.com/windows/downloads).
+- Para criar aplicativos [da Windows Store](https://developer.microsoft.com/), [do Windows Phone](https://developer.microsoft.com/) e universais (que dão suporte a ambas as plataformas), [obtenha as ferramentas](https://developer.microsoft.com/windows/downloads).
 
 - Para criar serviços baseados em nuvem, consulte o [site do Microsoft Azure](https://azure.microsoft.com/documentation/).
 
-- Para criar sites e aplicativos Web, [consulte o site do ASP.NET](http://www.asp.net/get-started/websites).
+- Para criar sites e aplicativos Web, [consulte o site do ASP.NET](https://dotnet.microsoft.com/apps/aspnet/web-apps).
 
   > [!NOTE]
   > Você pode criar um site ASP.NET vazio e usá-lo para programação em HTML, CSS e JavaScript. O arquivo Webconfig fornecido pelo ASP.NET habilita a depuração no Visual Studio (ou você pode usar ferramentas F12 quando executa o aplicativo).
@@ -45,7 +45,7 @@ O JavaScript é uma linguagem de primeira classe no Visual Studio. Você pode us
 |-------------|-----------------|
 |Classes|A nova sintaxe dá suporte a declaração de [classes](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/class).|
 |Promises|[Promises](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise) permitem codificação assíncrona mais fácil e limpa. Construtores Promise têm suporte, juntamente com os métodos de utilitário `all` e `race`.|
-|Iterators|Agora você pode iterar pelos objetos que permitem iteração (incluindo matrizes, objetos de tipo matriz e iteradores), invocando um gancho de iteração personalizado com as instruções a serem executadas para o valor de cada propriedade distinta. Para obter mais informações, consulte [Iteradores e geradores](https://developer.mozilla.org/docs/Web/JavaScript/Guide/Iterators_and_Generators). **Observação:**  Ainda não há suporte para geradores.|
+|Iterators|Agora você pode iterar pelos objetos que permitem iteração (incluindo matrizes, objetos de tipo matriz e iteradores), invocando um gancho de iteração personalizado com as instruções a serem executadas para o valor de cada propriedade distinta. Para obter mais informações, consulte [Iteradores e geradores](https://developer.mozilla.org/docs/Web/JavaScript/Guide/Iterators_and_Generators). **Observação:** ainda não há suporte para geradores.|
 |Funções de seta|A função de seta (=>) fornece uma sintaxe abreviada para a palavra-chave `function`, que apresenta uma associação `this` léxica.|
 |Novos métodos para objetos internos|Os objetos internos [Array](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array), [Math](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Math), [Number](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number), [Object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object) e [String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String) incluem muitas novas propriedades e funções de utilitário para manipular e inspecionar dados.|
 |Aprimoramentos de literal de objeto|Os objetos agora dão suporte a propriedades computadas, definições de método concisas e sintaxe abreviada para propriedades cujo valor é inicializado com uma variável de mesmo nome. Para obter mais informações, consulte [Criando objetos](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object).|

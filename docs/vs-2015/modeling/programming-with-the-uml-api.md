@@ -12,12 +12,12 @@ caps.latest.revision: 21
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: b264987818e244cf016e9b54794109cafc548439
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: dcb179ae80e60654c981da8c76e9a57e6fb8ed66
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652103"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74296056"
 ---
 # <a name="programming-with-the-uml-api"></a>Programando com a API UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,9 +28,9 @@ A API UML do Visual Studio permite que você escreva código para criar, ler e a
 
 |Tópico|Tipos de exemplo e métodos descritos|Recursos descritos|
 |-----------|-----------------------------------------|------------------------|
-|[Navegar em relações com a API UML](../modeling/navigate-relationships-with-the-uml-api.md)|Elementos UML e suas propriedades e associações. Por exemplo, ielemento e seus descendentes, incluindo: IClass, IActivity, IUseCase, IComponent, IInteraction, IModel, IPackage|No Visual Studio, os modelos UML estão em conformidade com a versão de especificação UML 2.1.2, que pode ser obtida na [página de recursos UML](http://go.microsoft.com/fwlink/?LinkId=160796). Cada tipo é uma interface que tem o mesmo nome que o tipo UML, prefixado com "I".|
-|[Criar elementos e relações em modelos UML](../modeling/create-elements-and-relationships-in-uml-models.md)|IPackage. createclass ()<br /><br /> IClass. CreateOperation ()|Cada tipo de elemento tem métodos para criar seus filhos.|
-|[Exibir um modelo UML em diagramas](../modeling/display-a-uml-model-on-diagrams.md)|IShape, IDiagram<br /><br /> IShape. Move ()|Cada elemento em um modelo pode ser representado como uma forma em um diagrama. Em alguns casos, você pode criar novas formas para cada objeto. Você pode mover, redimensionar, colorir e recolher ou expandir essas formas.|
+|[Navegar em relações com a API UML](../modeling/navigate-relationships-with-the-uml-api.md)|Elementos UML e suas propriedades e associações. Por exemplo, ielemento e seus descendentes, incluindo: IClass, IActivity, IUseCase, IComponent, IInteraction, IModel, IPackage|No Visual Studio, os modelos UML estão em conformidade com a versão de especificação UML 2.1.2, que pode ser obtida na [página de recursos UML](https://go.microsoft.com/fwlink/?LinkId=160796). Cada tipo é uma interface que tem o mesmo nome que o tipo UML, prefixado com "I".|
+|[Criar elementos e relações em modelos UML](../modeling/create-elements-and-relationships-in-uml-models.md)|IPackage.CreateClass()<br /><br /> IClass.CreateOperation()|Cada tipo de elemento tem métodos para criar seus filhos.|
+|[Exibir um modelo UML em diagramas](../modeling/display-a-uml-model-on-diagrams.md)|IShape, IDiagram<br /><br /> IShape.Move()|Cada elemento em um modelo pode ser representado como uma forma em um diagrama. Em alguns casos, você pode criar novas formas para cada objeto. Você pode mover, redimensionar, colorir e recolher ou expandir essas formas.|
 |[Navegar no modelo UML](../modeling/navigate-the-uml-model.md)|IModelStore<br /><br /> IDiagramContext|O repositório de modelos armazena o modelo.<br /><br /> O contexto do diagrama fornece acesso ao diagrama e ao repositório atuais.|
 |[Vincular atualizações de modelo UML usando transações](../modeling/link-uml-model-updates-by-using-transactions.md)|ILinkedUndoContext|Você pode vincular uma série de alterações em uma transação.|
 |[Definir um comando de menu em um diagrama de modelagem](../modeling/define-a-menu-command-on-a-modeling-diagram.md)|IMenuCommand<br /><br /> IGestureExtension<br /><br /> ICommandExtension|Você pode estender a funcionalidade de um diagrama definindo comandos invocados clicando duas vezes e arrastando para o diagrama.|
@@ -53,19 +53,19 @@ A API UML do Visual Studio permite que você escreva código para criar, ler e a
 
 |Assembly|Namespaces|Fornece acesso a:|
 |--------------|----------------|-------------------------|
-|Microsoft. VisualStudio. Uml. interfaces|Os|Os tipos UML.|
-|Microsoft. VisualStudio. ArchitectureTools. Extensibility|Microsoft. VisualStudio. ArchitectureTools. Extensibility. Uml|[Métodos de criação](../modeling/create-elements-and-relationships-in-uml-models.md)|
-||Microsoft. VisualStudio. ArchitectureTools. Extensibility. Presentation|[Diagramas e formas](../modeling/display-a-uml-model-on-diagrams.md)|
-||Microsoft. VisualStudio. ArchitectureTools. Extensibility|[O projeto de modelagem](../modeling/read-a-uml-model-in-program-code.md)|
-|Microsoft. VisualStudio. Modeling. Sdk. versão|<xref:Microsoft.VisualStudio.Modeling.ExtensionEnablement>|[Extensão de comando de menu](../modeling/define-a-menu-command-on-a-modeling-diagram.md).<br /><br /> [Transações de desfazer vinculadas](../modeling/link-uml-model-updates-by-using-transactions.md).|
+|Microsoft.VisualStudio.Uml.Interfaces|Os|Os tipos UML.|
+|Microsoft.VisualStudio.ArchitectureTools.Extensibility|Microsoft. VisualStudio. ArchitectureTools. Extensibility. Uml|[Métodos de criação](../modeling/create-elements-and-relationships-in-uml-models.md)|
+||Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation|[Diagramas e formas](../modeling/display-a-uml-model-on-diagrams.md)|
+||Microsoft.VisualStudio.ArchitectureTools.Extensibility|[O projeto de modelagem](../modeling/read-a-uml-model-in-program-code.md)|
+|Microsoft.VisualStudio.Modeling.Sdk.[version]|<xref:Microsoft.VisualStudio.Modeling.ExtensionEnablement>|[Extensão de comando de menu](../modeling/define-a-menu-command-on-a-modeling-diagram.md).<br /><br /> [Transações de desfazer vinculadas](../modeling/link-uml-model-updates-by-using-transactions.md).|
 ||<xref:Microsoft.VisualStudio.Modeling.Validation>|[Validação](../modeling/define-validation-constraints-for-uml-models.md)|
 ||(outros namespaces)|Recomendado apenas para uso avançado.|
-|Microsoft. VisualStudio. Modeling. Sdk. Diagrams. versão|<xref:Microsoft.VisualStudio.Modeling.Diagrams.ExtensionEnablement>|[Manipuladores de gestos](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md).|
+|Microsoft.VisualStudio.Modeling.Sdk.Diagrams.[version]|<xref:Microsoft.VisualStudio.Modeling.Diagrams.ExtensionEnablement>|[Manipuladores de gestos](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md).|
 ||(outros namespaces)|Recomendado apenas para uso avançado.|
-|Microsoft. VisualStudio. TeamFoundation. WorkItemTracking|Microsoft. VisualStudio. TeamFoundation. WorkItemTracking|[Links para itens de trabalho](../modeling/define-a-work-item-link-handler.md).|
-|Microsoft. TeamFoundation. WorkItemTracking. Client|Microsoft. TeamFoundation. WorkItemTracking. Client|[Itens de trabalho e seus campos](../modeling/define-a-work-item-link-handler.md).|
-|Microsoft. TeamFoundation. Client|Microsoft. TeamFoundation. Client|[Itens de trabalho e seus campos](../modeling/define-a-work-item-link-handler.md).|
-|System. ComponentModel. composição|<xref:System.ComponentModel.Composition>|[Exportar e importar para componentes do MEF](../modeling/define-and-install-a-modeling-extension.md)|
+|Microsoft.VisualStudio.TeamFoundation.WorkItemTracking|Microsoft.VisualStudio.TeamFoundation.WorkItemTracking|[Links para itens de trabalho](../modeling/define-a-work-item-link-handler.md).|
+|Microsoft.TeamFoundation.WorkItemTracking.Client|Microsoft.TeamFoundation.WorkItemTracking.Client|[Itens de trabalho e seus campos](../modeling/define-a-work-item-link-handler.md).|
+|Microsoft.TeamFoundation.Client|Microsoft.TeamFoundation.Client|[Itens de trabalho e seus campos](../modeling/define-a-work-item-link-handler.md).|
+|System.ComponentModel.Composition|<xref:System.ComponentModel.Composition>|[Exportar e importar para componentes do MEF](../modeling/define-and-install-a-modeling-extension.md)|
 |System.Linq|<xref:System.Linq>|[Fácil manipulação de coleções, especialmente ao lidar com relações](../modeling/navigate-relationships-with-the-uml-api.md).|
 
 ## <a name="see-also"></a>Consulte também

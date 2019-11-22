@@ -1,5 +1,5 @@
 ---
-title: Usando anotações de SAL para reduzir defeitos de código do C / C++ | Microsoft Docs
+title: Usando anotações de SAL para reduzir os defeitosC++ de C-Code | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -13,35 +13,35 @@ caps.latest.revision: 29
 author: mikeblome
 ms.author: mblome
 manager: jillfra
-ms.openlocfilehash: cb1d5b7f7368b0168a0de6a540a4f025f3179f24
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d8ea7122c5dcd086d10e4b937792dd7e47f68547
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68201211"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74291893"
 ---
 # <a name="using-sal-annotations-to-reduce-cc-code-defects"></a>Usando anotações de SAL para reduzir defeitos de código do C/C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-SAL é a linguagem de anotação do código de origem do Microsoft. Usando anotações de código fonte, você pode deixar a intenção por trás de seu código explícito. Essas anotações também habilitar ferramentas de análise estática automatizado analisar seu código com mais precisão, com muito menos falsos positivos e falsos negativos.  
+SAL é a linguagem de anotação de código-fonte da Microsoft. Usando as anotações de código-fonte, você pode tornar a intenção por trás do seu código explícita. Essas anotações também permitem que as ferramentas de análise estática automatizada analisem seu código de forma mais precisa, com menos falsos positivos e falsos negativos.  
   
- Os artigos nesta seção da documentação discutem aspectos de SAL, fornecem a referência para a sintaxe SAL e darem exemplos de uso.  
+ Os artigos nesta seção da documentação discutem aspectos do SAL, fornecem referência para a sintaxe SAL e fornecem exemplos de seu uso.  
   
 - [Noções básicas de SAL](../code-quality/understanding-sal.md)  
   
-     Fornece informações e exemplos que mostram o núcleo anotações de SAL.  
+     Fornece informações e exemplos que mostram as anotações de SAL principal.  
   
 - [Anotando parâmetros de função e valores de retorno](../code-quality/annotating-function-parameters-and-return-values.md)  
   
-     Lista as anotações de SAL para funções e parâmetros de função.  
+     Lista as anotações SAL para funções e parâmetros de função.  
   
 - [Anotando o comportamento da função](../code-quality/annotating-function-behavior.md)  
   
-     Lista as anotações de SAL para funções e o comportamento da função.  
+     Lista as anotações SAL para funções e comportamento de função.  
   
 - [Anotando estruturas e classes](../code-quality/annotating-structs-and-classes.md)  
   
-     Lista as anotações de SAL para estruturas e classes.  
+     Lista as anotações SAL para estruturas e classes.  
   
 - [Anotando o comportamento de bloqueio](../code-quality/annotating-locking-behavior.md)  
   
@@ -49,18 +49,18 @@ SAL é a linguagem de anotação do código de origem do Microsoft. Usando anota
   
 - [Especificando quando e onde uma anotação se aplica](../code-quality/specifying-when-and-where-an-annotation-applies.md)  
   
-     Lista as anotações de SAL que especificam a condição ou escopo (posicionamento) de outras anotações de SAL.  
+     Lista as anotações SAL que especificam a condição ou o escopo (posicionamento) de outras anotações de SAL.  
   
 - [Funções intrínsecas](../code-quality/intrinsic-functions.md)  
   
-     Lista as anotações de SAL intrínseco.  
+     Lista as anotações de SAL intrínsecas.  
   
 - [Práticas recomendadas e exemplos](../code-quality/best-practices-and-examples-sal.md)  
   
-     Fornece exemplos que mostram como usar anotações de SAL. Também explica as armadilhas comuns.  
+     Fornece exemplos que mostram como usar anotações SAL. Também explica armadilhas comuns.  
   
 ## <a name="related-resources"></a>Recursos relacionados  
- [Blog da equipe de análise de código](http://go.microsoft.com/fwlink/?LinkId=251197)  
+ [Blog da equipe de análise de código](https://go.microsoft.com/fwlink/?LinkId=251197)  
   
 ## <a name="see-also"></a>Consulte também  
- [SAL 2.0 anotações para Drivers do Windows](http://go.microsoft.com/fwlink/?LinkId=250979)
+ [Anotações de SAL 2,0 para drivers do Windows](https://go.microsoft.com/fwlink/?LinkId=250979)

@@ -8,19 +8,19 @@ ms.assetid: a859595f-6517-43f2-9d61-c706cb55a388
 caps.latest.revision: 25
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 31ca0fdbecf7ea3742fef60f99f2a0a25220f9cf
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d9c86125d934c5165e3e8111fdd06631844ad1a6
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72657231"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297965"
 ---
 # <a name="using-different-web-browsers-with-coded-ui-tests"></a>Usando navegadores diferentes com testes de interface do usuário codificada
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Os testes de IU codificados podem automatizar testes para aplicativos Web gravando os testes usando o Internet Explorer. Você pode personalizar o teste e executá-lo usando o Internet Explorer ou outros tipos de navegador para esses aplicativos Web.
 
- **Requirements**
+ **Requisitos**
 
 - Visual Studio Enterprise
 
@@ -38,19 +38,19 @@ Os testes de IU codificados podem automatizar testes para aplicativos Web gravan
 
   - Windows Internet Explorer 10
 
-  - Para versões com suporte do Mozilla Firefox e do Google Chrome, acesse [aqui](http://visualstudiogallery.msdn.microsoft.com/11cfc881-f8c9-4f96-b303-a2780156628d/)
+  - Para versões com suporte do Mozilla Firefox e do Google Chrome, acesse [aqui](https://marketplace.visualstudio.com/items?itemName=AtinBansal.SeleniumcomponentsforCodedUICrossBrowserTesting)
 
-- Instale os [componentes Selenium para testes de IU codificados entre navegadores](http://visualstudiogallery.msdn.microsoft.com/11cfc881-f8c9-4f96-b303-a2780156628d/).
+- Instale os [componentes Selenium para testes de IU codificados entre navegadores](https://marketplace.visualstudio.com/items?itemName=AtinBansal.SeleniumcomponentsforCodedUICrossBrowserTesting).
 
   **O que tem suporte por todos os navegadores da Web?**
 
-- [Adicionar código personalizado para recursos de controle, ](http://blogs.msdn.com/b/visualstudioalm/archive/2012/12/10/coded-ui-test-configuring-search-properties-while-recording-on-internet-explorer.aspx)como propriedades, pesquisa e waiters de reprodução.
+- [Adicionar código personalizado para recursos de controle, ](https://devblogs.microsoft.com/devops/coded-ui-test-configuring-search-properties-while-recording-on-internet-explorer/)como propriedades, pesquisa e waiters de reprodução.
 
 - Pop-ups e caixas de diálogo
 
-- [Executar JavaScript básico sem tipo de retorno](http://blogs.msdn.com/b/visualstudioalm/archive/2013/01/18/introducing-jscript-execution-on-internetexplorer-and-crossbrowser-in-coded-ui-test.aspx)
+- [Executar JavaScript básico sem tipo de retorno](https://devblogs.microsoft.com/devops/introducing-javascript-execution-on-internetexplorer-and-crossbrowser-in-coded-ui-test/)
 
-- Resiliência de pesquisa (usando smart match) e [melhorias de desempenho](http://blogs.msdn.com/b/visualstudioalm/archive/2012/02/01/guidelines-on-improving-performance-of-coded-ui-test-playback.aspx)
+- Resiliência de pesquisa (usando smart match) e [melhorias de desempenho](https://devblogs.microsoft.com/devops/guidelines-on-improving-performance-of-coded-ui-test-playback/)
 
 ## <a name="why-should-i-use-coded-ui-tests-across-multiple-web-browser-types"></a>Por que eu deveria usar testes de IU codificados em vários tipos de navegadores da Web?
  Testando seu aplicativo Web com uma variedade de tipos de navegadores da Web, você emula melhor a experiência de IU de seus usuários que podem usar navegadores diferentes. Por exemplo, o aplicativo pode incluir um controle ou um código no Internet Explorer que não seja compatível com outros navegadores da Web. Executando os testes de IU codificados em outros navegadores, você pode identificar e corrigir qualquer problema antes que isso afete seus clientes.
@@ -76,7 +76,7 @@ Os testes de IU codificados podem automatizar testes para aplicativos Web gravan
 3. Realce a extensão e escolha **Baixar**.
 
    > [!TIP]
-   > Você também pode baixar os componentes Selenium para testes de IU codificados entre navegadores [aqui](http://visualstudiogallery.msdn.microsoft.com/11cfc881-f8c9-4f96-b303-a2780156628d/).
+   > Você também pode baixar os componentes Selenium para testes de IU codificados entre navegadores [aqui](https://marketplace.visualstudio.com/items?itemName=AtinBansal.SeleniumcomponentsforCodedUICrossBrowserTesting).
 
    Para obter mais informações sobre a criação e o uso de testes de IU codificados, confira [Criação de testes de IU codificados](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate).
 
@@ -139,17 +139,17 @@ Os testes de IU codificados podem automatizar testes para aplicativos Web gravan
  [Solucionar problemas de falhas de teste entre navegadores](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!182&authkey=!AEpS48i295B49FI)
 
 ### <a name="guidance"></a>Diretrizes
- [Testes de Entrega Contínua com o Visual Studio 2012 – Capítulo 2: Teste de Unidade: Testando o Interior](http://go.microsoft.com/fwlink/?LinkID=255188)
+ [Testes de Entrega Contínua com o Visual Studio 2012 – Capítulo 2: Teste de Unidade: Testando o Interior](https://go.microsoft.com/fwlink/?LinkID=255188)
 
- [Teste de Entrega Contínua com o Visual Studio 2012 – Capítulo 5: Automatizar Testes do Sistema](http://go.microsoft.com/fwlink/?LinkID=255196)
+ [Teste de Entrega Contínua com o Visual Studio 2012 – Capítulo 5: Automatizar Testes do Sistema](https://go.microsoft.com/fwlink/?LinkID=255196)
 
 ### <a name="faq"></a>Perguntas Frequentes
- [Perguntas frequentes sobre testes de IU codificados – 1](http://go.microsoft.com/fwlink/?LinkID=230576)
+ [Perguntas frequentes sobre testes de IU codificados – 1](https://go.microsoft.com/fwlink/?LinkID=230576)
 
- [Perguntas frequentes sobre testes de IU codificados – 2](http://go.microsoft.com/fwlink/?LinkID=230578)
+ [Perguntas frequentes sobre testes de IU codificados – 2](https://go.microsoft.com/fwlink/?LinkID=230578)
 
 ### <a name="forum"></a>Fórum
- [Teste de automação da interface do usuário do Visual Studio (inclui IU codificada)](http://go.microsoft.com/fwlink/?LinkID=224497)
+ [Teste de automação da interface do usuário do Visual Studio (inclui IU codificada)](https://go.microsoft.com/fwlink/?LinkID=224497)
 
 ## <a name="see-also"></a>Consulte também
  [Use a automação da interface do usuário para testar suas](../test/use-ui-automation-to-test-your-code.md) [configurações e plataformas com suporte de código para testes de interface do usuário codificados e gravações de ação](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md) [analisando testes de IU codificados usando logs de teste de IU codificados](../test/analyzing-coded-ui-tests-using-coded-ui-test-logs.md)

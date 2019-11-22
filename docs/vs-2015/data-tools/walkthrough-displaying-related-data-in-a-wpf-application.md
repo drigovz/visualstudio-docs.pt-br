@@ -19,12 +19,12 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: c44b949daabf587dbca5d8a5d1d932afca2c1f9c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 787be52eeb546d2ab184a172464862d10cb43288
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72602464"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299575"
 ---
 # <a name="walkthrough-displaying-related-data-in-a-wpf-application"></a>Instruções passo a passo: exibindo dados relacionados em um aplicativo WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,12 +41,12 @@ Neste tutorial, você criará um aplicativo WPF que exibe dados de tabelas de ba
 
    [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Pré-requisitos
  Você precisa dos seguintes componentes para concluir esta instrução passo a passo:
 
-- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]
+- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
 
-- Acesso a uma instância em execução do SQL Server ou SQL Server Express que tenha o banco de dados de exemplo AdventureWorksLT anexado a ele. Você pode baixar o banco de dados AdventureWorksLT do [site da CodePlex](http://go.microsoft.com/fwlink/?linkid=87843).
+- Acesso a uma instância em execução do SQL Server ou SQL Server Express que tenha o banco de dados de exemplo AdventureWorksLT anexado a ele. Você pode baixar o banco de dados AdventureWorksLT do [site da CodePlex](https://go.microsoft.com/fwlink/?linkid=87843).
 
   Conhecimento prévio dos conceitos a seguir também é útil, mas não é necessário para concluir o passo a passo:
 
@@ -94,9 +94,9 @@ Neste tutorial, você criará um aplicativo WPF que exibe dados de tabelas de ba
 
    - Se uma conexão de dados com o banco de dados de exemplo AdventureWorksLT estiver disponível na lista suspensa, selecione-a.
 
-      \- ou -
+      - ou -
 
-   - Clique em **nova conexão** e crie uma conexão com o banco de dados AdventureWorksLT.
+   - Clique em **Nova Conexão** e crie uma conexão com o banco de dados AdventureWorksLT.
 
      Verifique se a opção **salvar configurações de conexão de entidade na App. config como** está selecionada e clique em **Avançar**.
 
@@ -115,13 +115,13 @@ Neste tutorial, você criará um aplicativo WPF que exibe dados de tabelas de ba
 
 #### <a name="to-create-data-bound-controls-that-display-the-order-records"></a>Para criar controles vinculados a dados que exibem os registros de pedidos
 
-1. Em **Gerenciador de soluções**, clique duas vezes em MainWindow. XAML.
+1. No **Gerenciador de Soluções**, clique duas vezes em MainWindow.xaml.
 
     A janela é aberta no WPF Designer.
 
 2. Edite o XAML para que as propriedades **Height** e **Width** sejam definidas como 800
 
-3. Na janela **fontes de dados** , clique no menu suspenso do nó **SalesOrderHeaders** e selecione **detalhes**.
+3. Na janela **Fontes de Dados**, abra o menu da lista suspensa para o nó **SalesOrderHeaders** e selecione **Detalhes**.
 
 4. Expanda o nó **SalesOrderHeaders**.
 

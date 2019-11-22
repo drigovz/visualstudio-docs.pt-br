@@ -10,12 +10,12 @@ ms.assetid: 91b167a3-280a-498b-8fc2-f67859a2c64e
 caps.latest.revision: 29
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 9a860ad5408038cced1f5aa2ac20420e35a1240a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 56f2d4cb0b02cc661177a4f781a5c40db924ee2c
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72672216"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74302108"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Executar testes de unidade com o Gerenciador de Testes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ Use o Gerenciador de Testes para executar testes de unidade do Visual Studio ou 
 ## <a name="BKMK_Contents"></a> Conteúdo
  [Estruturas de teste de unidade e projetos de teste](#BKMK_Unit_test_frameworks_and_test_projects)
 
- [Executar testes de unidade no Gerenciador de Testes](#BKMK_Run_tests_in_Test_Explorer)
+ [Executar testes no Gerenciador de Testes](#BKMK_Run_tests_in_Test_Explorer)
 
  [Exibir resultados de teste](#BKMK_View_test_results)
 
@@ -44,12 +44,12 @@ Use o Gerenciador de Testes para executar testes de unidade do Visual Studio ou 
 
  ![Voltar ao](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [conteúdo](#BKMK_Contents) superior
 
-## <a name="BKMK_Run_tests_in_Test_Explorer"></a> Executar testes de unidade no Gerenciador de Testes
+## <a name="BKMK_Run_tests_in_Test_Explorer"></a> Executar testes no Gerenciador de Testes
  [Executar Testes](#BKMK_Run_tests) **&#124;** [Executar testes após cada build](#BKMK_Run_tests_after_every_build)
 
  Quando você compila o projeto de teste, os testes são exibidos no Gerenciador de Testes. Se o Gerenciador de Testes não estiver visível, escolha **Teste** no menu do Visual Studio, escolha **Windows** e, em seguida, escolha **Gerenciador de Testes**.
 
- ![Gerenciador de testes de unidade](../ide/media/ute-failedpassednotrunsummary.png "UTE_FailedPassedNotRunSummary")
+ ![Gerenciador de Testes de Unidade](../ide/media/ute-failedpassednotrunsummary.png "UTE_FailedPassedNotRunSummary")
 
  Conforme você executa, grava e executa novamente os testes, o Gerenciador de Testes exibe os resultados nos grupos padrão de **Testes com Falha**, **Testes Aprovados**, **Testes Ignorados** e **Testes Não Executados**. Você pode alterar a forma como o Gerenciador de Testes agrupa seus testes.
 
@@ -74,7 +74,7 @@ Use o Gerenciador de Testes para executar testes de unidade do Visual Studio ou 
 
   ![Voltar ao](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [conteúdo](#BKMK_Contents) superior
 
-### <a name="BKMK_Run_tests_after_every_build"></a> Executar testes depois de cada compilação
+### <a name="BKMK_Run_tests_after_every_build"></a> Executar testes após cada build
 
 > [!WARNING]
 > Executar testes de unidade após cada build tem suporte no Visual Studio Enterprise.
@@ -133,7 +133,7 @@ Use o Gerenciador de Testes para executar testes de unidade do Visual Studio ou 
 |**Duração**|Agrupa teste pelo tempo de execução: **rápido**, **médio** e **lento**.|
 |**Resultado**|Agrupa testes por resultados da execução: **testes com falha**, **testes ignorados**, **testes aprovados**.|
 |**Características**|Agrupa teste por pares de categoria/valor que você define. A sintaxe para especificar valores e categorias de característica é definida pela estrutura de teste de unidade.|
-|**Projeto**|Agrupa teste por nome dos projetos.|
+|{1&gt;Projeto&lt;1}|Agrupa teste por nome dos projetos.|
 
  ![Voltar ao](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [conteúdo](#BKMK_Contents) superior
 
@@ -206,7 +206,7 @@ TEST_METHOD(Method1)
 |Qualificador|Descrição|
 |---------------|-----------------|
 |**Característica**|Procura categoria de característica e valor para correspondência. A sintaxe para especificar valores e categorias de característica é definida pela estrutura de teste de unidade.|
-|**Projeto**|Procura os nomes de projeto de teste para correspondências.|
+|{1&gt;Projeto&lt;1}|Procura os nomes de projeto de teste para correspondências.|
 |**Mensagem de erro**|Procura nas mensagens de erro definidas pelo usuário retornadas por falhas para encontrar correspondências.|
 |**Caminho do arquivo**|Procura o nome de arquivo totalmente qualificado dos arquivos de origem do teste para encontrar correspondências.|
 |**Nome Totalmente Qualificado**|Procura o nome de arquivo totalmente qualificado dos namespaces de teste, classes e métodos para encontrar correspondências.|
@@ -281,7 +281,7 @@ FullName:"MyClass" - FullName:"PerfTest"
 
    - **Todos os testes** executa todos os métodos de teste na solução.
 
-   A janela Resultados de Cobertura de Código exibe o percentual dos blocos que foram exercidos por linha, função, classe, namespace e módulo de código do produto.
+   A janela Resultados de Cobertura do Código exibe a porcentagem dos blocos que foram exercidos por linha, função, classe, namespace e módulo de código do produto.
 
    Para obter mais informações, consulte [Usando cobertura de código para determinar quanto código está sendo testado](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md).
 
@@ -290,7 +290,7 @@ FullName:"MyClass" - FullName:"PerfTest"
 ## <a name="BKMK_External_resources"></a> Recursos externos
 
 ### <a name="BKMK_Guidance"></a> Diretrizes
- [Testes de Entrega Contínua com o Visual Studio 2012 – Capítulo 2: Teste de Unidade: Testando o Interior](http://go.microsoft.com/fwlink/?LinkID=255188)
+ [Testes de Entrega Contínua com o Visual Studio 2012 – Capítulo 2: Teste de Unidade: Testando o Interior](https://go.microsoft.com/fwlink/?LinkID=255188)
 
 ## <a name="see-also"></a>Consulte também
  [Teste de unidade seu código](../test/unit-test-your-code.md) [Execute um teste de unidade como um processo de 64 bits](../test/run-a-unit-test-as-a-64-bit-process.md)

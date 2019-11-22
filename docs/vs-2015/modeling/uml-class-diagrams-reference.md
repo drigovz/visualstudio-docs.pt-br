@@ -24,12 +24,12 @@ caps.latest.revision: 43
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 6d2368c19292f9e4205cec9f1b42b1553ce3188f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: da4e0e3bab904b660f3d843e105b7d256a63a1b5
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658436"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297225"
 ---
 # <a name="uml-class-diagrams-reference"></a>Diagramas de classe UML: referência
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ ms.locfileid: "72658436"
 Um diagrama de classe UML descreve as estruturas de objeto e de informações usadas pelo seu aplicativo, internamente e em comunicação com seus usuários. Ele descreve as informações sem referência a nenhuma implementação específica. Suas classes e relações podem ser implementadas de várias maneiras, como tabelas de banco de dados, nós XML ou composições de objetos de software.
 
 > [!NOTE]
-> Este tópico é sobre diagramas de classe UML. Há outro tipo de diagrama de classe, o diagrama de classes do .NET, que é usado para visualizar o código do programa. Para obter mais informações, consulte [projetando e exibindo classes e tipos](http://go.microsoft.com/fwlink/?LinkId=142231).
+> Este tópico é sobre diagramas de classe UML. Há outro tipo de diagrama de classe, o diagrama de classes do .NET, que é usado para visualizar o código do programa. Para obter mais informações, consulte [projetando e exibindo classes e tipos](https://go.microsoft.com/fwlink/?LinkId=142231).
 
  Para criar um diagrama de classes UML, no menu **arquitetura** , escolha **novo UML ou diagrama de camada**. Para obter mais informações sobre como desenhar diagramas de classe UML, consulte [diagramas de classe UML: diretrizes](../modeling/uml-class-diagrams-guidelines.md). Para obter mais informações sobre como criar e desenhar diagramas de modelagem, consulte [Editar diagramas e modelos UML](../modeling/edit-uml-models-and-diagrams.md).
 
@@ -61,8 +61,8 @@ Um diagrama de classe UML descreve as estruturas de objeto e de informações us
 |     1     |        **Class**         |                                                           Uma definição de objetos que compartilham características estruturais ou comportamentais determinadas. Para obter mais informações, consulte [Propriedades de tipos em diagramas de classe UML](../modeling/properties-of-types-on-uml-class-diagrams.md).                                                            |
 |     1     |        Classificação        |                                                                                                             O nome geral para uma classe, interface ou enumeração. Componentes, casos de uso e atores também são classificadores.                                                                                                             |
 |     2     | Recolher/expandir controle |                                                                                         Se você não puder ver os detalhes de um classificador, clique no expansor no canto superior esquerdo do classificador. Você também pode ter que clicar em [+] em cada segmento.                                                                                         |
-|     3     |      **Atributo**       |   Um valor tipado anexado a cada instância de um classificador.<br /><br /> Para adicionar um atributo, clique na seção **atributos** e pressione **Enter**. Digite a assinatura do atributo. Para obter mais informações, consulte [Propriedades de atributos em diagramas de classe UML](../modeling/properties-of-attributes-on-uml-class-diagrams.md).   |
-|     4     |      **Operacional**       | Um método ou função que pode ser executado por instâncias de um classificador. Para adicionar uma operação, clique na seção **operações** e pressione **Enter**. Digite a assinatura da operação. Para obter mais informações, consulte [Propriedades de operações em diagramas de classe UML](../modeling/properties-of-operations-on-uml-class-diagrams.md). |
+|     3     |      **Attribute**       |   Um valor tipado anexado a cada instância de um classificador.<br /><br /> Para adicionar um atributo, clique na seção **atributos** e pressione **Enter**. Digite a assinatura do atributo. Para obter mais informações, consulte [Propriedades de atributos em diagramas de classe UML](../modeling/properties-of-attributes-on-uml-class-diagrams.md).   |
+|     4     |      **Operação**       | Um método ou função que pode ser executado por instâncias de um classificador. Para adicionar uma operação, clique na seção **operações** e pressione **Enter**. Digite a assinatura da operação. Para obter mais informações, consulte [Propriedades de operações em diagramas de classe UML](../modeling/properties-of-operations-on-uml-class-diagrams.md). |
 |     5     |     **Associação**      |                                                                  Uma relação entre os membros de dois classificadores. Para obter mais informações, consulte [Propriedades de associações em diagramas de classe UML](../modeling/properties-of-associations-on-uml-class-diagrams.md).                                                                   |
 |    5a     |     **Agregação**      |                                                                                                    Uma associação que representa uma relação de propriedade compartilhada. A propriedade **Aggregation** da função Owner é definida como **Shared**.                                                                                                     |
 |    5b     |     **Composição**      |                                                                                                      Uma associação que representa uma relação de parte inteira. A propriedade **Aggregation** da função Owner é definida como **Composite**.                                                                                                      |
@@ -78,7 +78,7 @@ Um diagrama de classe UML descreve as estruturas de objeto e de informações us
 |10|**Interface**|Uma definição de parte do comportamento visível externamente de um objeto. Para obter mais informações, consulte [Propriedades de tipos em diagramas de classe UML](../modeling/properties-of-types-on-uml-class-diagrams.md).|
 |11|**Enumeração**|Um classificador que consiste em um conjunto de valores literais.|
 |12|**Pacote**|Um grupo de classificadores, associações, ações, linhas de vida, componentes e pacotes. Um diagrama de classe lógica mostra que os classificadores e os pacotes de membros estão contidos no pacote.<br /><br /> Os nomes são delimitados em pacotes, de forma que **Class1** dentro de **pacote1** seja diferente de **Class1** fora desse pacote. O nome do pacote aparece como parte das propriedades de **nome qualificado** de seu conteúdo.<br /><br /> Você pode definir a propriedade **pacote vinculado** de qualquer diagrama UML para se referir a um pacote. Todos os elementos que você criar nesse diagrama se tornarão parte do pacote. Eles aparecerão sob o pacote no **Gerenciador de modelos UML**.|
-|13|**Import**|Uma relação entre pacotes, indicando que um pacote inclui todas as definições de outro.|
+|13|{1&gt;Importar&lt;1}|Uma relação entre pacotes, indicando que um pacote inclui todas as definições de outro.|
 |14|**Estados**|A definição ou implementação do classificador dependente pode mudar se o classificador na extremidade da ponta de seta for alterado.|
 
  ![Realização mostrada com conector e pirulito](../modeling/media/uml-classovrealize.png "UML_ClassOvRealize")

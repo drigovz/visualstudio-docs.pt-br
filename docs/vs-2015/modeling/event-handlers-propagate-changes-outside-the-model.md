@@ -12,12 +12,12 @@ caps.latest.revision: 20
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 5b22e120161a3fefb5688a71c8e4d7540b8bc66e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a23a8d28f336728789fe9cbbe38f965cc56763d7
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669682"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74295520"
 ---
 # <a name="event-handlers-propagate-changes-outside-the-model"></a>Manipuladores de eventos propagam alterações fora do modelo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -94,7 +94,7 @@ namespace Company.MusicLib
 ```
 
 ## <a name="using-events-to-make-undoable-adjustments-in-the-store"></a>Usando eventos para fazer ajustes desfeitos na loja
- Os eventos de armazenamento normalmente não são usados para propagar alterações no repositório, pois o manipulador de eventos é executado depois que a transação é confirmada. Em vez disso, você usaria uma regra de armazenamento. Para obter mais informações, consulte [regras propagar alterações no modelo](../modeling/rules-propagate-changes-within-the-model.md).
+ Os eventos de armazenamento normalmente não são usados para propagar alterações no repositório, pois o manipulador de eventos é executado depois que a transação é confirmada. Em vez disso, você usaria uma regra de armazenamento. Para obter mais informações, consulte [propagam alterações dentro do modelo de regras](../modeling/rules-propagate-changes-within-the-model.md).
 
  No entanto, você pode usar um manipulador de eventos para fazer atualizações adicionais na loja, se quiser que o usuário consiga desfazer as atualizações adicionais separadamente do evento original. Por exemplo, suponha que caracteres minúsculos sejam a Convenção comum para títulos de álbuns. Você poderia escrever um manipulador de eventos de armazenamento que corrija o título para letras minúsculas depois que o usuário o tiver digitado em letras maiúsculas. Mas o usuário pode usar o comando Desfazer para cancelar a correção, restaurando os caracteres em maiúsculas. Uma segunda desfazer removeria a alteração do usuário.
 
@@ -190,4 +190,4 @@ private static void AlbumTitleAdjuster(object sender,
 |TransactionRolledBack||
 
 ## <a name="see-also"></a>Consulte também
- [Respondendo e propagando alterações](../modeling/responding-to-and-propagating-changes.md) [código de exemplo: diagramas de circuito](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
+ [Respondendo a alterações e propagando-as](../modeling/responding-to-and-propagating-changes.md)

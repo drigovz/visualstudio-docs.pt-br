@@ -8,12 +8,12 @@ caps.latest.revision: 19
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 7cf9da2f295d94ac68c74039458f4cdbfda3ae5c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 2ce5390ce8d649ab2c57eccde34506d6831b8193
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661618"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300967"
 ---
 # <a name="ca3075-insecure-dtd-processing"></a>CA3075: processamento de DTD não seguro
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "72661618"
  Se você usar instâncias de <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A> inseguras ou referenciar origens de entidade externa, o analisador poderá aceitar a entrada não confiável e divulgar as informações confidenciais para invasores.
 
 ## <a name="rule-description"></a>Descrição da Regra
- Uma [DTD (definição de tipo de documento)](https://msdn.microsoft.com/library/aa468547.aspx) é uma das duas maneiras que um analisador XML pode determinar a validade de um documento, conforme definido pelo [World Wide Web Consortium (W3C) linguagem XML (XML) 1,0](http://www.w3.org/TR/2008/REC-xml-20081126/). Essa regra busca Propriedades e instâncias em que os dados não confiáveis são aceitos para avisar os desenvolvedores sobre possíveis ameaças de [divulgação de informações](https://msdn.microsoft.com/library/4064c89f-afa6-444a-aa7e-807ef072131c) , o que pode levar a ataques [de negação de serviço (dos)](https://msdn.microsoft.com/library/dfb150f3-d598-4697-a5e6-6779e4f9b600) . Esta regra é disparada quando:
+ Uma [DTD (definição de tipo de documento)](https://msdn.microsoft.com/library/aa468547.aspx) é uma das duas maneiras que um analisador XML pode determinar a validade de um documento, conforme definido pelo [World Wide Web Consortium (W3C) linguagem XML (XML) 1,0](https://www.w3.org/TR/2008/REC-xml-20081126/). Essa regra busca Propriedades e instâncias em que os dados não confiáveis são aceitos para avisar os desenvolvedores sobre possíveis ameaças de [divulgação de informações](https://msdn.microsoft.com/library/4064c89f-afa6-444a-aa7e-807ef072131c) , o que pode levar a ataques [de negação de serviço (dos)](https://msdn.microsoft.com/library/dfb150f3-d598-4697-a5e6-6779e4f9b600) . Esta regra é disparada quando:
 
 - DtdProcessing está habilitado na instância de <xref:System.Xml.XmlReader>, que resolve entidades XML externas usando <xref:System.Xml.XmlUrlResolver>.
 
@@ -39,7 +39,7 @@ ms.locfileid: "72661618"
 
 - A entrada não confiável é processada usando <xref:System.Xml.XmlResolver> em vez de <xref:System.Xml.XmlSecureResolver>.
 
-- O XmlReader. <xref:System.Xml.XmlReader.Create%2A> o método é invocado com uma instância <xref:System.Xml.XmlReaderSettings> não segura ou nenhuma instância.
+- O XmlReader.<xref:System.Xml.XmlReader.Create%2A> o método é invocado com uma instância <xref:System.Xml.XmlReaderSettings> não segura ou nenhuma instância.
 
 - <xref:System.Xml.XmlReader> é criada com valores ou configurações padrão inseguras.
 
@@ -49,15 +49,15 @@ ms.locfileid: "72661618"
 
 - Pegue e processe todas as exceções de XmlTextReader corretamente para evitar a divulgação de informações de caminho.
 
-- Use o  <xref:System.Xml.XmlSecureResolver> para restringir os recursos que o XmlTextReader pode acessar.
+- Use o <xref:System.Xml.XmlSecureResolver> para restringir os recursos que o XmlTextReader pode acessar.
 
-- Não permita que o  <xref:System.Xml.XmlReader> Abra os recursos externos definindo a propriedade <xref:System.Xml.XmlResolver> como **NULL**.
+- Não permita que o <xref:System.Xml.XmlReader> Abra os recursos externos definindo a propriedade <xref:System.Xml.XmlResolver> como **NULL**.
 
 - Certifique-se de que a propriedade <xref:System.Data.DataViewManager.DataViewSettingCollectionString%2A> de <xref:System.Data.DataViewManager> seja atribuída de uma fonte confiável.
 
   .NET 3,5 e anterior
 
-- Desabilite o processamento de DTD se você estiver lidando com fontes não confiáveis definindo a propriedade  <xref:System.Xml.XmlReaderSettings.ProhibitDtd%2A> como **true** .
+- Desabilite o processamento de DTD se você estiver lidando com fontes não confiáveis definindo a propriedade <xref:System.Xml.XmlReaderSettings.ProhibitDtd%2A> como **true** .
 
 - A classe XmlTextReader tem uma demanda de herança de confiança total. Consulte [demandas de herança](https://msdn.microsoft.com/28b9adbb-8f08-4f10-b856-dbf59eb932d9) para obter mais informações.
 

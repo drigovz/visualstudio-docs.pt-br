@@ -15,17 +15,17 @@ caps.latest.revision: 50
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: abcc83a301553ee0c6141502c25903ef2153258b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 692859008891439e4af3d751306bfd3ee6d351e8
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658485"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74298992"
 ---
 # <a name="uml-activity-diagrams-guidelines"></a>Diagramas de atividade UML: diretrizes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-No Visual Studio, você pode desenhar um diagrama de atividade para descrever um processo de negócios ou um algoritmo de software como um fluxo de trabalho por meio de uma série de ações. Pessoas, componentes de software ou dispositivos podem executar essas ações. Para ver uma demonstração em vídeo, consulte: [capturar fluxos de trabalho de negócios usando diagramas de atividade](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-4-Capture-Business-Workflows/).
+No Visual Studio, você pode desenhar um diagrama de atividade para descrever um processo de negócios ou um algoritmo de software como um fluxo de trabalho por meio de uma série de ações. Pessoas, componentes de software ou dispositivos podem executar essas ações. Para ver uma demonstração em vídeo, consulte: [capturar fluxos de trabalho de negócios usando diagramas de atividade](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-4-capture-business-workflows).
 
  Para ver quais versões do Visual Studio oferecem suporte a esse recurso, consulte [suporte de versão para ferramentas de arquitetura e modelagem](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
@@ -398,7 +398,7 @@ No Visual Studio, você pode desenhar um diagrama de atividade para descrever um
 
 - Anexe um comentário ao PIN de entrada ou saída.
 
-  - Para distinguir essa descrição de um comentário geral, você pode iniciar o comentário com < \<**transformação**> > ou <**seleção**\< >.
+  - Para distinguir essa descrição de um comentário geral, você pode iniciar o comentário com <\<**transformação**> > ou < **seleção**\<>.
 
 - Especifique a transformação ou a seleção em detalhes em um diagrama de atividade separado.
 
@@ -427,4 +427,4 @@ No Visual Studio, você pode desenhar um diagrama de atividade para descrever um
    Você também pode definir uma seleção para um nó de objeto e em Pins de entrada e saída individuais. Defina uma atividade de seleção como no procedimento anterior e, em seguida, defina a propriedade **Selection** do nó do objeto ou o PIN de entrada ou saída.
 
 ## <a name="see-also"></a>Consulte também
- [Editar modelos UML e diagramas](../modeling/edit-uml-models-and-diagrams.md) [diagramas de sequência UML: referenciar](../modeling/uml-sequence-diagrams-reference.md) [diagramas de componentes UML: referência](../modeling/uml-component-diagrams-reference.md) diagramas de [caso de uso UML: referenciar](../modeling/uml-use-case-diagrams-reference.md) diagramas de [classes UML: referência](../modeling/uml-class-diagrams-reference.md) a [diagramas de componentes UML: referência](../modeling/uml-component-diagrams-reference.md) [ Vídeo: capturar fluxos de trabalho de negócios usando diagramas de atividade](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-4-Capture-Business-Workflows/)
+ [Editar modelos UML e diagramas](../modeling/edit-uml-models-and-diagrams.md) [diagramas de sequência UML: referenciar](../modeling/uml-sequence-diagrams-reference.md) [diagramas de componentes UML: referenciar](../modeling/uml-component-diagrams-reference.md) diagramas de [caso de uso UML: referenciar](../modeling/uml-use-case-diagrams-reference.md) diagramas de [classes UML: referenciar](../modeling/uml-class-diagrams-reference.md) [diagramas de componentes UML:](../modeling/uml-component-diagrams-reference.md) [vídeo de referência: capturar fluxos de trabalho comerciais usando diagrama](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-4-capture-business-workflows)

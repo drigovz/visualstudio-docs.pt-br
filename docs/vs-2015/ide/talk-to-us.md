@@ -11,12 +11,12 @@ caps.latest.revision: 34
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: ef686c001fe04dfd23d16685f8cee88df542c52d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 89f43167a12bce77ef260fcf3d72764072f80143
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647203"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299936"
 ---
 # <a name="talk-to-us"></a>Fale conosco
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Estamos interessados em suas ideias para melhorar a nossa documentação. Não p
  Use nosso botão de comentários (**Esta página foi útil?** ) na parte inferior da página. Você pode encontrar esse botão em todas as páginas do MSDN. Se você está procurando uma resposta e não consegue encontrá-la, informe o que você está procurando.
 
 ## <a name="i-would-like-to-report-a-problem-with-visual-studio"></a>Eu gostaria de relatar um problema com o Visual Studio
- Se você estiver tendo problemas com o Visual Studio, como falhas, desempenho lento, comportamento inesperado e assim por diante, informe o problema para nós clicando com o botão direito do mouse no ícone de comentários ao lado de início **rápido**ou escolhendo **ajuda &#124; enviar Os &#124; comentários relatam um problema** no menu principal. Para obter mais informações, confira [Como relatar um problema com o Visual Studio](../ide/how-to-report-a-problem-with-visual-studio-2015.md).
+ Se você estiver tendo problemas com o Visual Studio, como falhas, desempenho lento, comportamento inesperado e assim por diante, relate o problema para nós clicando com o botão direito do mouse no ícone de comentários ao lado de início **rápido**ou escolhendo **ajuda &#124; enviar comentários &#124; para relatar um problema** no menu principal. Para obter mais informações, confira [Como relatar um problema com o Visual Studio](../ide/how-to-report-a-problem-with-visual-studio-2015.md).
 
 ## <a name="i-want-to-make-a-suggestion-about-visual-studio-features"></a>Quero fazer sugestões sobre os recursos do Visual Studio
  Caso tenha sugestões de melhorias, informe-nos. Escolha **Fornecer uma sugestão** para sugerir um recurso ou alteração à equipe do Visual Studio.
@@ -38,20 +38,17 @@ Estamos interessados em suas ideias para melhorar a nossa documentação. Não p
  Versões de pré-lançamento do Visual Studio têm um item de menu **Classificar este produto** que permite que você envie comentários sobre a qualidade do build que você está executando. Você não verá isso em versões de lançamento do produto.
 
 ## <a name="i-need-help"></a>Preciso de ajuda!
- Consulte [suporte da Microsoft](http://go.microsoft.com/fwlink/?LinkID=99019) para obter ajuda online.
+ Consulte [suporte da Microsoft](https://go.microsoft.com/fwlink/?LinkID=99019) para obter ajuda online.
 
- O suporte fora dos Estados Unidos e do Canadá pode variar. Para obter uma lista de contatos regionais, consulte [Sites Internacionais da Microsoft](http://www.microsoft.com/worldwide/).
+ O suporte fora dos Estados Unidos e do Canadá pode variar. Para obter uma lista de contatos regionais, consulte [Sites Internacionais da Microsoft](https://www.microsoft.com/worldwide/).
 
- Para obter mais opções, consulte [visão geral do suporte](http://www.visualstudio.com/support/support-overview-vs).
+ Para obter mais opções, consulte [visão geral do suporte](https://visualstudio.microsoft.com/support/).
 
- Para organizações maiores que exigem suporte gerenciado diretamente da Microsoft, os contratos estão disponíveis por meio de várias ofertas de Suporte Premier. Para obter mais informações, consulte [Suporte Premier dos Serviços Microsoft](http://go.microsoft.com/fwlink/?LinkId=258223).
+ Para organizações maiores que exigem suporte gerenciado diretamente da Microsoft, os contratos estão disponíveis por meio de várias ofertas de Suporte Premier. Para obter mais informações, consulte [Suporte Premier dos Serviços Microsoft](https://go.microsoft.com/fwlink/?LinkId=258223).
 
  Se o produto veio instalado em um novo computador ou dispositivo, o fabricante de hardware fornecerá suporte técnico e assistência para esse software. Contate o fabricante diretamente para obter suporte.
 
  Os serviços de suporte da Microsoft estão sujeitos a preços, termos e condições vigentes. Os preços, termos e condições estão sujeitos à alteração sem aviso.
-
-## <a name="i-want-to-get-involved-in-the-developer-community"></a>Quero participar da comunidade de desenvolvedores
- Se você quiser compartilhar suas perguntas e respostas com outros desenvolvedores, poderá usar os fóruns do [msdn](http://social.msdn.microsoft.com/Forums/home) ou [StackOverflow](http://stackoverflow.com/). Você pode exibir o código de outros desenvolvedores e compartilhar seus próprios exemplos nos [exemplos de código do desenvolvedor](http://code.msdn.microsoft.com/) e sites do [codeplex](http://www.codeplex.com/) .
 
 ## <a name="see-also"></a>Consulte também
  [Como relatar um problema com o Visual Studio 2015](../ide/how-to-report-a-problem-with-visual-studio-2015.md)

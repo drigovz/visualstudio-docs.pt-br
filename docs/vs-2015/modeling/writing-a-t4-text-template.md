@@ -13,17 +13,17 @@ caps.latest.revision: 45
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: e529e0ed4407343a9e233a08293bfc1bbd8458d7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: bcd5a4996db4a5e374baabe4f52d5fd1dbac2e5e
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72663010"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301123"
 ---
 # <a name="writing-a-t4-text-template"></a>Gravando um modelo de texto T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Um modelo de texto contém o texto que será gerado a partir dele. Por exemplo, um modelo que cria uma página da Web conterá "\<html >..." e todas as outras partes padrão de uma página HTML. Inseridos no modelo são *blocos de controle*, que são fragmentos de código do programa. Os blocos de controle fornecem valores variáveis​e permitem que partes do texto sejam condicionadas e repetidas.
+Um modelo de texto contém o texto que será gerado a partir dele. Por exemplo, um modelo que cria uma página da Web conterá "\<html >..." e todas as outras partes padrão de uma página HTML. Inseridos no modelo estão os *blocos de controle*, que são fragmentos de código do programa. Os blocos de controle fornecem valores variáveis​e permitem que partes do texto sejam condicionadas e repetidas.
 
  Essa estrutura facilita o desenvolvimento de um modelo, porque você pode começar com um protótipo do arquivo gerado e inserir, gradativamente, blocos de controle que variam o resultado.
 
@@ -31,7 +31,7 @@ Um modelo de texto contém o texto que será gerado a partir dele. Por exemplo, 
 
 - **Diretivas** – elementos que controlam como o modelo é processado.
 
-- **Blocos de texto** -conteúdo copiado diretamente para a saída.
+- {1&gt;Blocos de texto&lt;1} – conteúdo que é copiado diretamente na saída.
 
 - **Blocos de controle** -código do programa que insere valores variáveis no texto e controla partes condicionais ou repetidas do texto.
 
@@ -130,7 +130,7 @@ This is hello number <#= i+1 #>: Hello!
 ```
 
 ### <a name="class-feature-control-blocks"></a>Blocos de controle de recurso de classe
- Um bloco de controle de recurso de classe define propriedades, métodos ou qualquer outro código que não deveria ser incluído na transformação principal. Os blocos de recurso de classe são usados com frequência para funções auxiliares.  Normalmente, os blocos de recursos de classe são colocados em arquivos separados para que possam ser [incluídos](#Include) por mais de um modelo de texto.
+ Um bloco de controle de recurso de classe define propriedades, métodos ou qualquer outro código que não deveria ser incluído na transformação principal. Os blocos de recurso de classe são usados com frequência para funções auxiliares.  Normalmente, os blocos de recurso de classe são colocados em arquivos separados para que possam ser [incluídos](#Include) por mais de um modelo de texto.
 
  Os blocos de controle de recurso de classe são delimitados pelos símbolos `<#+ ... #>`
 
@@ -235,21 +235,21 @@ private void WriteSquareLine(int i)
 
  Existem várias abordagens para a leitura do arquivo de origem.
 
- **Ler um arquivo no modelo de texto**. Esta é a maneira mais simples de colocar dados no modelo:
+ {1&gt;Ler um arquivo no modelo de texto&lt;1}. Esta é a maneira mais simples de colocar dados no modelo:
 
 ```
 <#@ import namespace="System.IO" #>
 <# string fileContent = File.ReadAllText(@"C:\myData.txt"); ...
 ```
 
- **Carregar um arquivo como um modelo navegável**. Um método mais eficiente é ler os dados como um modelo, pelo qual o código do modelo de texto pode navegar. Por exemplo, você pode carregar um arquivo XML e navegá-lo com expressões XPath. Você também pode usar [XSD. exe](http://go.microsoft.com/fwlink/?LinkId=178765) para criar um conjunto de classes com os quais você pode ler os dados XML.
+ **Carregar um arquivo como um modelo navegável**. Um método mais eficiente é ler os dados como um modelo, pelo qual o código do modelo de texto pode navegar. Por exemplo, você pode carregar um arquivo XML e navegá-lo com expressões XPath. Você também pode usar [XSD. exe](https://go.microsoft.com/fwlink/?LinkId=178765) para criar um conjunto de classes com os quais você pode ler os dados XML.
 
- **Edite o arquivo de modelo em um diagrama ou formulário.** [!INCLUDE[dsl](../includes/dsl-md.md)] fornece ferramentas que permitem editar um modelo como um diagrama ou um formulário do Windows. Isso facilita discutir o modelo com os usuários do aplicativo gerado. [!INCLUDE[dsl](../includes/dsl-md.md)] também cria um conjunto de classes fortemente tipado que reflete a estrutura do modelo. Para obter mais informações, consulte [gerando código de uma linguagem específica de domínio](../modeling/generating-code-from-a-domain-specific-language.md).
+ **Edite o arquivo de modelo em um diagrama ou formulário.** [!INCLUDE[dsl](../includes/dsl-md.md)] fornece ferramentas que permitem editar um modelo como um diagrama ou um formulário do Windows. Isso facilita discutir o modelo com os usuários do aplicativo gerado. [!INCLUDE[dsl](../includes/dsl-md.md)] também cria um conjunto de classes fortemente tipadas que refletem a estrutura do modelo. Para obter mais informações, consulte [gerando código de uma linguagem específica de domínio](../modeling/generating-code-from-a-domain-specific-language.md).
 
  **Use um modelo UML**. Você pode gerar o código a partir de um modelo UML. Com isso, você tem a vantagem de que o modelo pode ser editado como um diagrama em uma notação familiar. Além disso, não é necessário projetar o diagrama. Para obter mais informações, consulte [gerar arquivos de um modelo UML](../modeling/generate-files-from-a-uml-model.md).
 
 ### <a name="relative-file-paths-in-design-time-templates"></a>Caminhos de arquivo relativos em modelos de tempo de design
- Em um [modelo de texto de tempo de design](../modeling/design-time-code-generation-by-using-t4-text-templates.md), se você quiser fazer referência a um arquivo em um local relativo ao modelo de texto, use `this.Host.ResolvePath()`. Você também pode definir `hostspecific="true"` na diretiva `template`:
+ Em um [modelo de texto em tempo de design](../modeling/design-time-code-generation-by-using-t4-text-templates.md), se você quiser fazer referência a um arquivo em um local relacionado ao modelo de texto, use `this.Host.ResolvePath()`. Você também pode definir `hostspecific="true"` na diretiva `template`:
 
 ```csharp
 <#@ template hostspecific="true" language="C#" #>
@@ -267,12 +267,12 @@ Content of MyFile.txt is:
  Você também pode obter outros serviços fornecidos pelo host. Para obter mais informações, consulte [acessando o Visual Studio ou outros hosts de um modelo](https://msdn.microsoft.com/0556f20c-fef4-41a9-9597-53afab4ab9e4).
 
 ### <a name="design-time-text-templates-run-in-a-separate-appdomain"></a>Modelos de texto em tempo de design executados em um AppDomain separado
- Você deve estar ciente de que um [modelo de texto de tempo de design](../modeling/design-time-code-generation-by-using-t4-text-templates.md) é executado em um AppDomain separado do aplicativo principal. Na maioria dos casos, isso não é importante, mas você pode descobrir restrições em certos casos complexos. Por exemplo, se você quiser passar dados dentro ou fora do modelo a partir de um serviço separado, o serviço deve fornecer uma API serializável.
+ Você deve saber que um [modelo de texto em tempo de design](../modeling/design-time-code-generation-by-using-t4-text-templates.md) é executado em um AppDomain separado do aplicativo principal. Na maioria dos casos, isso não é importante, mas você pode descobrir restrições em certos casos complexos. Por exemplo, se você quiser passar dados dentro ou fora do modelo a partir de um serviço separado, o serviço deve fornecer uma API serializável.
 
- (Isso não é verdade de um [modelo de texto de tempo de execução](../modeling/run-time-text-generation-with-t4-text-templates.md), que fornece código que é compilado junto com o restante do seu código.)
+ (Isso não se aplica a um [modelo de texto em tempo de execução](../modeling/run-time-text-generation-with-t4-text-templates.md), o qual fornece o código compilado junto com o resto de seu código.)
 
 ## <a name="editing-templates"></a>Editando modelos
- Editores de modelo de texto especializados podem ser baixados da Galeria Online do Gerenciador de Extensões. No menu **ferramentas** , clique em **Gerenciador de extensões**. Clique em **galeria online**e, em seguida, use a ferramenta de pesquisa.
+ Editores de modelo de texto especializados podem ser baixados da Galeria Online do Gerenciador de Extensões. No menu **Ferramentas**, clique em **Gerenciador de Extensões**. Clique em **Galeria Online** e use a ferramenta de pesquisa.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 

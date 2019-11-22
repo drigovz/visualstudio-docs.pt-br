@@ -11,12 +11,12 @@ caps.latest.revision: 17
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 2f511a96f94ab98a93144938529a05d07bb6ed26
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: caecb85392170559a860a7dc334570880d6e76f1
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669578"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301470"
 ---
 # <a name="integrate-uml-models-with-other-models-and-tools"></a>Integrar modelos UML a outros modelos e ferramentas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,17 +40,17 @@ Em um elemento UML, você pode armazenar links para outros elementos, arquivos o
 
    Para obter mais informações, consulte [definir um perfil para estender o UML](../modeling/define-a-profile-to-extend-uml.md).
 
-   Para um projeto de exemplo no qual um perfil é implantado junto com comandos de menu e manipuladores de gestos, consulte [exemplo: perfis UML](http://go.microsoft.com/fwlink/?LinkID=213811).
+   Para um projeto de exemplo no qual um perfil é implantado junto com comandos de menu e manipuladores de gestos, consulte [exemplo: perfis UML](https://go.microsoft.com/fwlink/?LinkID=213811).
 
 - **Referências.** Você pode anexar um conjunto de cadeias de caracteres a qualquer elemento UML. Você poderia escrever um código que armazene as informações como um nome de arquivo ou o GUID de outro elemento. Isso pode ser feito sem fornecer definições adicionais. As referências não são visíveis diretamente para o usuário.
 
-   Para obter mais informações, consulte [anexar cadeias de caracteres de referência a elementos de modelo UML](../modeling/attach-reference-strings-to-uml-model-elements.md). Para obter um exemplo, consulte [vincular elementos UML a diagramas ou outros arquivos](http://go.microsoft.com/fwlink/?LinkId=213813).
+   Para obter mais informações, consulte [anexar cadeias de caracteres de referência a elementos de modelo UML](../modeling/attach-reference-strings-to-uml-model-elements.md). Para obter um exemplo, consulte [vincular elementos UML a diagramas ou outros arquivos](https://go.microsoft.com/fwlink/?LinkId=213813).
 
   Há duas maneiras de codificar referências a elementos de modelo:
 
 - **GUID e nome do arquivo** do elemento de modelo de destino e o modelo que o contém, ou um diagrama específico que o exibe.
 
-   Para obter um exemplo, consulte [vincular elementos UML a diagramas ou outros arquivos](http://go.microsoft.com/fwlink/?LinkId=213813).
+   Para obter um exemplo, consulte [vincular elementos UML a diagramas ou outros arquivos](https://go.microsoft.com/fwlink/?LinkId=213813).
 
 - **Referências de ModelBus.** ModelBus é uma estrutura para criar e resolver referências entre modelos. Ele inclui o seletor ModelBus, que permite ao usuário selecionar um elemento em um modelo. Ele também ajuda o usuário a resolver referências que são perdidas devido a alterações no modelo de destino.
 
@@ -61,7 +61,7 @@ Em um elemento UML, você pode armazenar links para outros elementos, arquivos o
 
 1. **As regras VMSDK** podem ser usadas para propagar alterações dentro do mesmo modelo.
 
-    Para obter um exemplo, consulte [vincular elementos UML a diagramas ou outros arquivos](http://go.microsoft.com/fwlink/?LinkId=213813).
+    Para obter um exemplo, consulte [vincular elementos UML a diagramas ou outros arquivos](https://go.microsoft.com/fwlink/?LinkId=213813).
 
 2. **Eventos VMSDK** podem ser usados para propagar alterações fora do modelo – por exemplo, para alterar o nome de arquivo de um documento vinculado ou para alterar um elemento em outro modelo.
 
@@ -72,7 +72,7 @@ Em um elemento UML, você pode armazenar links para outros elementos, arquivos o
    Para obter mais informações, consulte [definir um manipulador de gestos em um diagrama de modelagem](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md) e [como adicionar um manipulador de arrastar e soltar](../modeling/how-to-add-a-drag-and-drop-handler.md).
 
 ## <a name="samples"></a>Exemplos
- Consulte o exemplo de código [vincular elementos UML a diagramas ou outros arquivos](http://go.microsoft.com/fwlink/?LinkId=213813). O exemplo permite que os usuários arrastem um arquivo para qualquer elemento UML e, posteriormente, abra o arquivo clicando duas vezes no elemento. Por exemplo, você pode vincular um diagrama de atividade a um elemento de caso de uso. Um ícone mostra quais elementos têm links.
+ Consulte o exemplo de código [vincular elementos UML a diagramas ou outros arquivos](https://go.microsoft.com/fwlink/?LinkId=213813). O exemplo permite que os usuários arrastem um arquivo para qualquer elemento UML e, posteriormente, abra o arquivo clicando duas vezes no elemento. Por exemplo, você pode vincular um diagrama de atividade a um elemento de caso de uso. Um ícone mostra quais elementos têm links.
 
  Este exemplo de código demonstra as seguintes técnicas:
 
@@ -97,4 +97,4 @@ Em um elemento UML, você pode armazenar links para outros elementos, arquivos o
   Para obter um exemplo em que um modelo UML é lido por uma DSL, consulte [como adicionar um manipulador de arrastar e soltar](../modeling/how-to-add-a-drag-and-drop-handler.md).
 
 ## <a name="see-also"></a>Consulte também
- [Definir um comando de menu em um diagrama de modelagem](../modeling/define-a-menu-command-on-a-modeling-diagram.md) [definir um manipulador de gestos em um diagrama de modelagem](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md) [como: adicionar um manipulador de arrastar e soltar](../modeling/how-to-add-a-drag-and-drop-handler.md) [como: responder a alterações em um modelo UML](../misc/how-to-respond-to-changes-in-a-uml-model.md) [exemplo: perfis UML](http://go.microsoft.com/fwlink/?LinkID=213811) [vincular elementos UML a Diagramas ou outros arquivos](http://go.microsoft.com/fwlink/?LinkId=213813)
+ [Definir um comando de menu em um diagrama de modelagem](../modeling/define-a-menu-command-on-a-modeling-diagram.md) [definir um manipulador de gestos em um diagrama de modelagem](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md) [como: adicionar um manipulador de arrastar e soltar](../modeling/how-to-add-a-drag-and-drop-handler.md) [como: responder a alterações em um exemplo de modelo UML](../misc/how-to-respond-to-changes-in-a-uml-model.md) [: perfis UML](https://go.microsoft.com/fwlink/?LinkID=213811) [vincular elementos UML a diagramas ou outros arquivos](https://go.microsoft.com/fwlink/?LinkId=213813)

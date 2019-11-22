@@ -13,12 +13,12 @@ caps.latest.revision: 24
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 6e6664f78123864073d605b59c7f43e5b2db36cc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 19d673d9d09ce95580e25033966e1a901255fd90
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72609246"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74292642"
 ---
 # <a name="adding-a-tracking-property-to-a-domain-specific-language-definition"></a>Adicionando uma propriedade de acompanhamento a uma definição de linguagem específica do domínio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,14 +45,14 @@ Este tutorial mostra como adicionar uma propriedade de rastreamento a um modelo 
 
 - Na janela **Propriedades** , quando a propriedade de rastreamento está no estado atualizado por usuário, seu valor é exibido em uma fonte em negrito.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Pré-requisitos
  Antes de poder iniciar este passo a passos, você deve primeiro instalar estes componentes:
 
 |||
 |-|-|
-|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185579](http://go.microsoft.com/fwlink/?LinkID=185579)|
-|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185580](http://go.microsoft.com/fwlink/?LinkID=185580)|
-|[!INCLUDE[dsl](../includes/dsl-md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185581](http://go.microsoft.com/fwlink/?LinkID=185581)|
+|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185579](https://go.microsoft.com/fwlink/?LinkID=185579)|
+|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185580](https://go.microsoft.com/fwlink/?LinkID=185580)|
+|[!INCLUDE[dsl](../includes/dsl-md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185581](https://go.microsoft.com/fwlink/?LinkID=185581)|
 
 ## <a name="creating-the-dsl-project"></a>Criando o projeto DSL
  Crie o projeto para sua linguagem específica de domínio.
@@ -98,7 +98,7 @@ Este tutorial mostra como adicionar uma propriedade de rastreamento a um modelo 
 
     1. Nomeie a nova propriedade `DefaultNamespace`.
 
-    2. Na janela **Propriedades** da nova propriedade, defina **valor padrão** como `DefaultNamespace` e defina **tipo** como **cadeia de caracteres**.
+    2. Na janela **Propriedades** da nova propriedade, defina **valor padrão** como `DefaultNamespace`e defina **tipo** como **cadeia de caracteres**.
 
 2. Para a classe de domínio **ExampleModel** , adicione uma propriedade de domínio chamada `CustomElements`.
 
@@ -110,7 +110,7 @@ Este tutorial mostra como adicionar uma propriedade de rastreamento a um modelo 
 
 4. Para a classe de domínio **exampleelement** , adicione uma propriedade de domínio chamada `IsNamespaceTracking`.
 
-     Na janela **Propriedades** da nova propriedade, definir **é navegável** como **false**, definir **valor padrão** como `true` e definir **tipo** como **booliano**.
+     Na janela **Propriedades** da nova propriedade, definir **é navegável** como **false**, definir **valor padrão** como `true`e definir **tipo** como **booliano**.
 
 #### <a name="to-update-the-diagram-elements-and-dsl-details"></a>Para atualizar os elementos de diagrama e os detalhes de DSL
 
@@ -141,7 +141,7 @@ Este tutorial mostra como adicionar uma propriedade de rastreamento a um modelo 
 
 #### <a name="to-transform-the-text-templates"></a>Para transformar os modelos de texto
 
-1. Na barra de ferramentas **Gerenciador de soluções** , clique em **transformar todos os modelos**.
+1. Na barra de ferramentas do **Gerenciador de Soluções**, clique em **Transformar Todos os Modelos**.
 
 2. O sistema regenera o código para a solução e salva DslDefinition. DSL. Para obter informações sobre o formato XML dos arquivos de definição, consulte [o arquivo DslDefinition. DSL](../modeling/the-dsldefinition-dsl-file.md).
 
@@ -156,11 +156,11 @@ Este tutorial mostra como adicionar uma propriedade de rastreamento a um modelo 
 
 2. Clique com o botão direito do mouse na pasta New **CustomCode** , aponte para **Adicionar**e clique em **novo item**.
 
-3. Selecione o modelo de **arquivo de código** , defina o **nome** como `NamespaceTrackingProperty.cs` e clique em **OK**.
+3. Selecione o modelo de **arquivo de código** , defina o **nome** como `NamespaceTrackingProperty.cs`e clique em **OK**.
 
      O arquivo NamespaceTrackingProperty.cs é criado e aberto para edição.
 
-4. Na pasta, crie os seguintes arquivos de código: `ExampleModel.cs,``HelperClasses.cs`, `Serialization.cs` e `TypeDescriptor.cs`.
+4. Na pasta, crie os seguintes arquivos de código: `ExampleModel.cs,``HelperClasses.cs`, `Serialization.cs`e `TypeDescriptor.cs`.
 
 5. No projeto **DslPackage** , crie também uma pasta `CustomCode` e adicione a ela um arquivo de código `Package.cs`.
 
@@ -348,7 +348,7 @@ Este tutorial mostra como adicionar uma propriedade de rastreamento a um modelo 
 
  A definição do método `GetCustomElementsValue` fornece a lógica para a propriedade calculada CustomElements de `ExampleModel`. Esse método conta o número de `ExampleElement` classes de domínio que têm uma propriedade de rastreamento de namespace que tem um valor atualizado pelo usuário e retorna uma cadeia de caracteres que representa essa contagem como uma proporção do total de elementos no modelo.
 
- Além disso, adicione um método `OnDefaultNamespaceChanged` para `ExampleModel` e substitua o método `OnValueChanged` do `DefaultNamespacePropertyHandler` classe aninhada de `ExampleModel` para chamar `OnDefaultNamespaceChanged`.
+ Além disso, adicione um método `OnDefaultNamespaceChanged` para `ExampleModel`e substitua o método `OnValueChanged` do `DefaultNamespacePropertyHandler` classe aninhada de `ExampleModel` para chamar `OnDefaultNamespaceChanged`.
 
  Como a propriedade DefaultNamespace é usada para calcular a propriedade de rastreamento de namespace, `ExampleModel` deve notificar todas as classes de domínio `ExampleElement` que o valor de DefaultNamespace foi alterado.
 

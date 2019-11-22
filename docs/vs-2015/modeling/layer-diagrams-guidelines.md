@@ -14,17 +14,17 @@ caps.latest.revision: 57
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: aee4ddc6062e465384921fa2632636c480736a77
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 51cb71d4bc2f66377b677d5be292c4eafa1dbd18
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72646131"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299468"
 ---
 # <a name="layer-diagrams-guidelines"></a>Diagramas de camada: diretrizes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Descreva a arquitetura do aplicativo em um alto nível criando *diagramas de camada* no Visual Studio. Certifique-se de que seu código permaneça consistente com esse design validando seu código com um diagrama de camada. Você também pode incluir a validação de camada em seu processo de compilação. Veja [vídeo do Channel 9: projete e valide sua arquitetura usando diagramas de camada](http://go.microsoft.com/fwlink/?LinkID=252073).
+Descreva a arquitetura do aplicativo em um alto nível criando *diagramas de camada* no Visual Studio. Certifique-se de que seu código permaneça consistente com esse design validando seu código com um diagrama de camada. Você também pode incluir a validação de camada em seu processo de compilação. Veja [vídeo do Channel 9: projete e valide sua arquitetura usando diagramas de camada](https://go.microsoft.com/fwlink/?LinkID=252073).
 
  Para ver quais versões do Visual Studio oferecem suporte a esse recurso, consulte [suporte de versão para ferramentas de arquitetura e modelagem](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
@@ -66,7 +66,7 @@ Descreva a arquitetura do aplicativo em um alto nível criando *diagramas de cam
 ## <a name="CreateLayers"></a>Definir camadas para representar áreas funcionais ou componentes
  Camadas representam grupos lógicos de *artefatos*, como projetos, arquivos de código, namespaces, classes e métodos. Você pode criar camadas de artefatos de C# projetos do Visual .net e Visual Basic .net, ou pode anexar especificações ou planos a uma camada vinculando documentos, como arquivos do Word ou apresentações do PowerPoint. Cada camada aparece como um retângulo no diagrama e mostra o número de artefatos vinculados a ele. Uma camada pode conter camadas aninhadas que descrevem tarefas mais específicas.
 
- Como uma diretriz geral, as camadas de nome de acordo com sua função, por exemplo, "apresentação" ou "serviços". Se os artefatos estiverem fortemente interdependentes, coloque-os na mesma camada. Se os artefatos puderem ser atualizados separadamente ou usados em aplicativos separados, coloque-os em camadas diferentes. Para saber mais sobre padrões de camadas, visite o site Patterns & Practices em [http://go.microsoft.com/fwlink/?LinkId=145794](http://go.microsoft.com/fwlink/?LinkId=145794).
+ Como uma diretriz geral, as camadas de nome de acordo com sua função, por exemplo, "apresentação" ou "serviços". Se os artefatos estiverem fortemente interdependentes, coloque-os na mesma camada. Se os artefatos puderem ser atualizados separadamente ou usados em aplicativos separados, coloque-os em camadas diferentes. Para saber mais sobre padrões de camadas, visite o site Patterns & Practices em [http://go.microsoft.com/fwlink/?LinkId=145794](https://go.microsoft.com/fwlink/?LinkId=145794).
 
 > [!TIP]
 > Há certos tipos de artefatos que você pode vincular a camadas, mas que não dão suporte à validação no diagrama de camadas. Para ver se o artefato dá suporte à validação, abra o **Gerenciador de camadas** para examinar a propriedade de **validação de suporte** do link do artefato. Consulte [descobrir dependências existentes entre camadas](#Generate).
@@ -85,7 +85,7 @@ Descreva a arquitetura do aplicativo em um alto nível criando *diagramas de cam
  Existirá uma dependência sempre que um artefato associado a uma camada tiver uma referência a um artefato associado a outra camada. Por exemplo, uma classe em uma camada declara uma variável que tem uma classe em outra camada. Você pode descobrir dependências existentes por meio da engenharia reversa.
 
 > [!NOTE]
-> As dependências não podem sofrer engenharia reversa para determinados tipos de artefatos. Por exemplo, nenhuma dependência sofrerá engenharia reversa de ou para uma camada vinculada a um arquivo de texto. Para ver quais artefatos têm dependências que você pode fazer engenharia reversa, clique com o botão direito do mouse em uma ou várias camadas e clique em **exibir links**. No **Gerenciador de camadas**, examine a coluna de **validação de suporte** . As dependências não serão criadas com engenharia reversa para artefatos para os quais essa coluna mostra **false**.
+> As dependências não podem sofrer engenharia reversa para determinados tipos de artefatos. Por exemplo, nenhuma dependência sofrerá engenharia reversa de ou para uma camada vinculada a um arquivo de texto. Para ver quais artefatos têm dependências que você pode fazer engenharia reversa, clique com o botão direito do mouse em uma ou várias camadas e clique em **exibir links**. Em **Gerenciador de Camadas**, examine a coluna **Dá Suporte à Validação**. As dependências não sofrerão engenharia reversa para artefatos para os quais essa coluna mostra **Falso**.
 
 #### <a name="to-reverse-engineer-existing-dependencies-between-layers"></a>Para fazer engenharia reversa de dependências existentes entre camadas
 
@@ -99,11 +99,11 @@ Descreva a arquitetura do aplicativo em um alto nível criando *diagramas de cam
 |**To**|**Execute estas etapas**|
 |------------|-----------------------------|
 |Excluir uma dependência que não deveria existir|Clique na dependência e pressione **delete**.|
-|Alterar ou restringir a direção de uma dependência|Defina sua propriedade **Direction** .|
-|Criar novas dependências|Use as **ferramentas dependência e** **dependência bidirecional** .<br /><br /> Para desenhar várias dependências, clique duas vezes na ferramenta. Quando tiver terminado, clique na ferramenta **ponteiro** ou pressione a tecla **ESC** .|
-|Especificar que os artefatos associados a uma camada não dependem dos namespaces especificados|Digite os namespaces na propriedade **dependências de namespace proibido** da camada. Use um ponto-e-vírgula ( **;** ) para separar os namespaces.|
-|Especificar que os artefatos associados a uma camada não devem pertencer aos namespaces especificados|Digite os namespaces na propriedade de **namespaces proibidos** da camada. Use um ponto-e-vírgula ( **;** ) para separar os namespaces.|
-|Especificar que os artefatos associados a uma camada devem pertencer a um dos namespaces especificados|Digite o namespace na propriedade **namespaces obrigatórios** da camada. Use um ponto-e-vírgula ( **;** ) para separar os namespaces.|
+|Alterar ou restringir a direção de uma dependência|Defina sua propriedade **Direção**.|
+|Criar novas dependências|Use as ferramentas **Dependência** e **Dependência Bidirecional**.<br /><br /> Para desenhar várias dependências, clique duas vezes na ferramenta. Quando tiver terminado, clique na ferramenta **ponteiro** ou pressione a tecla **ESC** .|
+|Especificar que os artefatos associados a uma camada não dependem dos namespaces especificados|Digite os namespaces na propriedade **Dependências de Namespace Proibidas** da camada. Use um ponto-e-vírgula ( **;** ) para separar os namespaces.|
+|Especificar que os artefatos associados a uma camada não devem pertencer aos namespaces especificados|Digite os namespaces na propriedade **Namespaces Proibidos** da camada. Use um ponto-e-vírgula ( **;** ) para separar os namespaces.|
+|Especificar que os artefatos associados a uma camada devem pertencer a um dos namespaces especificados|Digite o namespace na propriedade **Namespaces Obrigatórios** da camada. Use um ponto-e-vírgula ( **;** ) para separar os namespaces.|
 
 ### <a name="Improving"></a>Melhorando a estrutura do código
  As alterações de refatoração são melhorias que não afetam o comportamento do aplicativo, mas ajudam a facilitar a alteração e a extensão do código no futuro. O código bem estruturado tem um design que é fácil de abstrair para um diagrama de camadas.
@@ -115,7 +115,7 @@ Descreva a arquitetura do aplicativo em um alto nível criando *diagramas de cam
 ## <a name="NewAreas"></a>Projetar novas áreas do seu aplicativo
  Ao iniciar o desenvolvimento de um novo projeto ou uma nova área em um novo projeto, você pode desenhar camadas e dependências para ajudar a identificar os principais componentes antes de começar a desenvolver o código.
 
-- **Mostrar padrões arquitetônicos identificáveis** em seus diagramas de camada, se possível. Por exemplo, um diagrama de camada que descreve um aplicativo de área de trabalho pode incluir camadas como apresentação, lógica de domínio e armazenamento de dados. Um diagrama de camada que abrange um único recurso dentro de um aplicativo pode ter camadas como modelo, exibição e controlador. Para obter mais informações sobre esses padrões, consulte [padrões & práticas: arquitetura do aplicativo](http://go.microsoft.com/fwlink/?LinkId=145794).
+- **Mostrar padrões arquitetônicos identificáveis** em seus diagramas de camada, se possível. Por exemplo, um diagrama de camada que descreve um aplicativo de área de trabalho pode incluir camadas como apresentação, lógica de domínio e armazenamento de dados. Um diagrama de camada que abrange um único recurso dentro de um aplicativo pode ter camadas como modelo, exibição e controlador. Para obter mais informações sobre esses padrões, consulte [padrões & práticas: arquitetura do aplicativo](https://go.microsoft.com/fwlink/?LinkId=145794).
 
      Se você criar com frequência padrões semelhantes, crie uma ferramenta personalizada. Consulte [definir um item de caixa de ferramentas de modelagem personalizado](../modeling/define-a-custom-modeling-toolbox-item.md).
 

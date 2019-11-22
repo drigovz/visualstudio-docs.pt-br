@@ -8,12 +8,12 @@ ms.assetid: d2a34de2-6527-4c21-8b93-2f268ee894b7
 caps.latest.revision: 14
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 8672d04bd2311c5bda5e2bb1bc9dc1455764f96a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 07e42c6b1e3e3537801c3d7420d2cad8dd119fa7
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72657158"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301420"
 ---
 # <a name="using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing"></a>Usando shims para isolar seu aplicativo de outros assemblies para teste de unidade
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,11 +24,11 @@ Os tipos de shim** são uma das duas tecnologias usadas pelo Microsoft Fakes Fra
 
  Para obter uma visão geral e início rápido, confira [Isolamento de código em teste com o Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md)
 
- **Requirements**
+ **Requisitos**
 
 - Visual Studio Enterprise
 
-  Confira [Vídeo (1:16): testando códigos que não podem ser testados com o Fakes no Visual Studio 2012](http://go.microsoft.com/fwlink/?LinkId=261837)
+  Confira [Vídeo (1:16): testando códigos que não podem ser testados com o Fakes no Visual Studio 2012](https://go.microsoft.com/fwlink/?LinkId=261837)
 
 ## <a name="BKMK_Example__The_Y2K_bug"></a> Exemplo: o bug do milênio
  Vamos considerar um método que gera uma exceção em 1º de janeiro de 2000:
@@ -217,7 +217,7 @@ public class ShimMyClass : ShimBase<MyClass> {
 
  Observe que o Fakes passa a instância de runtime como o primeiro argumento do representante nesse caso.
 
-### <a name="BKMK_Instance_methods__for_one_instance_"></a> Métodos de instância (para uma instância de tempo de execução)
+### <a name="BKMK_Instance_methods__for_one_instance_"></a> Métodos de instância (para uma instância de runtime)
  Os métodos de instância também podem sofrer shim por representantes diferentes com base no receptor da chamada. Isso permite que o mesmo método de instância tenha comportamentos diferentes por instância do tipo. As propriedades para configurar esses shims são métodos de instância do próprio tipo shim. Cada tipo de shim instanciado também está associado uma instância bruta de um tipo com shim.
 
  Por exemplo, dada a classe `MyClass` com um método de instância `MyMethod`:
@@ -504,7 +504,7 @@ ShimFile.WriteAllTextStringString = shim;
 ## <a name="external-resources"></a>Recursos externos
 
 ### <a name="guidance"></a>Diretrizes
- [Testes de Entrega Contínua com o Visual Studio 2012 – Capítulo 2: Teste de Unidade: Testando o Interior](http://go.microsoft.com/fwlink/?LinkID=255188)
+ [Testes de Entrega Contínua com o Visual Studio 2012 – Capítulo 2: Teste de Unidade: Testando o Interior](https://go.microsoft.com/fwlink/?LinkID=255188)
 
 ## <a name="see-also"></a>Consulte também
- [Isolamento de código sob teste com o blog do Microsoft falsificates](../test/isolating-code-under-test-with-microsoft-fakes.md) [Peter Provost: vídeo de shims do Visual Studio 2012](http://www.peterprovost.org/blog/2012/04/25/visual-studio-11-fakes-part-2) [(1H16): testando código não-retestado com falsificações no Visual Studio 2012](http://go.microsoft.com/fwlink/?LinkId=261837)
+ [Isolamento de código sob teste com o blog do Microsoft falsificates](../test/isolating-code-under-test-with-microsoft-fakes.md) [Peter Provost: vídeo de shims do Visual Studio 2012](http://www.peterprovost.org/blog/2012/04/25/visual-studio-11-fakes-part-2) [(1H16): testando código não-retestado com falsificações no Visual Studio 2012](https://go.microsoft.com/fwlink/?LinkId=261837)

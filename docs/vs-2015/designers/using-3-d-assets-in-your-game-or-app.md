@@ -16,12 +16,12 @@ caps.latest.revision: 19
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 4b61a187f4e07c73e5c53db382a6ee5e5cb8cb70
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 6d838b7519b40d47b644a53befb91391fa30a664
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72664079"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74293140"
 ---
 # <a name="using-3-d-assets-in-your-game-or-app"></a>Usando ativos 3D no jogo ou no aplicativo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ Este artigo descreve como é possível usar o [!INCLUDE[vsprvs](../includes/vspr
     |Modelos 3D|**MeshContentTask(.targets, .props)**|
     |Sombreadores|**ShaderGraphContentTask(.targets, .props)**|
 
-3. Selecione o botão **OK**.
+3. Escolha o botão **OK**.
 
 ## <a name="including-assets-in-your-build"></a>Incluindo ativos na compilação
  Agora que seu projeto conhece os diferentes tipos de ativos 3D que você deseja usar, a próxima etapa é dizer quais arquivos são ativos 3D e quais tipos de ativos eles são.
@@ -61,7 +61,7 @@ Este artigo descreve como é possível usar o [!INCLUDE[vsprvs](../includes/vspr
    > [!IMPORTANT]
    > Por padrão, o [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] presume que muitos tipos de arquivos de imagem devem ser classificados usando o tipo de item **Imagem**, integrado ao [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Portanto, você precisa alterar a propriedade **Tipo de Item** de cada imagem que deseja que seja processada pelo pipeline de conteúdo da imagem. Outros tipos de arquivos de origem de pipeline de conteúdo para modelos 3D e gráficos de sombreador visual assumem como padrão o **Tipo de Item** correto.
 
-4. Selecione o botão **OK**.
+4. Escolha o botão **OK**.
 
    Seguem os três tipos de item de pipeline de conteúdo e seus tipos de arquivo de origem e saída associados.
 
@@ -82,14 +82,14 @@ Este artigo descreve como é possível usar o [!INCLUDE[vsprvs](../includes/vspr
 
 3. Em **Propriedades de Configuração**, escolha o nó do pipeline de conteúdo (por exemplo, **Pipeline de Conteúdo de Imagem** para ativos de textura e imagens) e, na grade de propriedade, defina as propriedades para os valores adequados. Por exemplo, para gerar mipmaps para um ativo de textura no tempo de build, defina a propriedade **Gerar Mips** como **Sim**.
 
-4. Selecione o botão **OK**.
+4. Escolha o botão **OK**.
 
 ### <a name="image-content-pipeline-configuration"></a>Configuração do pipeline de conteúdo da imagem
  Ao usar a ferramenta de pipeline de conteúdo da imagem para compilar um ativo de textura, é possível compactar a textura de várias maneiras, indicar se os níveis de MIP devem ser gerados no tempo de compilação e alterar o nome do arquivo de saída.
 
-|propriedade|Descrição|
+|Propriedade|Descrição|
 |--------------|-----------------|
-|**Compress**|Especifica o tipo de compactação usado para o arquivo de saída.<br /><br /> As opções disponíveis são:<br /><br /> -   **Sem Compactação**<br />-   **Compactação BC1_UNORM**<br />-   **Compactação BC1_UNORM_SRGB**<br />-   **Compactação BC2_UNORM**<br />-   **Compactação BC2_UNORM_SRGB**<br />-   **Compactação BC3_UNORM**<br />-   **Compactação BC3_UNORM_SRGB**<br />-   **Compactação BC4_UNORM**<br />-   **Compactação BC4_SNORM**<br />-   **Compactação BC5_UNORM**<br />-   **Compactação BC5_SNORM**<br />-   **Compactação BC6H_UF16**<br />-   **Compactação BC6H_SF16**<br />-   **Compactação BC7_UNORM**<br />-   **Compactação BC7_UNORM_SRGB**<br /><br /> Para obter informações sobre quais formatos de compactação têm suporte em diferentes versões do DirectX, consulte [Guia de programação para DXGI](http://go.microsoft.com/fwlink/p/?LinkId=246265).|
+|**Compress**|Especifica o tipo de compactação usado para o arquivo de saída.<br /><br /> As opções disponíveis são:<br /><br /> -   **Sem Compactação**<br />-   **Compactação BC1_UNORM**<br />-   **Compactação BC1_UNORM_SRGB**<br />-   **Compactação BC2_UNORM**<br />-   **Compactação BC2_UNORM_SRGB**<br />-   **Compactação BC3_UNORM**<br />-   **Compactação BC3_UNORM_SRGB**<br />-   **Compactação BC4_UNORM**<br />-   **Compactação BC4_SNORM**<br />-   **Compactação BC5_UNORM**<br />-   **Compactação BC5_SNORM**<br />-   **Compactação BC6H_UF16**<br />-   **Compactação BC6H_SF16**<br />-   **Compactação BC7_UNORM**<br />-   **Compactação BC7_UNORM_SRGB**<br /><br /> Para obter informações sobre quais formatos de compactação têm suporte em diferentes versões do DirectX, consulte [Guia de programação para DXGI](https://go.microsoft.com/fwlink/p/?LinkId=246265).|
 |Converter para formato alfa pré-multiplicado|**Sim** para converter a imagem para um formato alfa pré-multiplicado no arquivo de saída; caso contrário, **Não**. Apenas o arquivo de saída é alterado, a imagem de origem permanece inalterada.|
 |**Gerar Mips**|**Sim** para gerar uma cadeia de MIP completa no tempo de build no arquivo de saída; caso contrário, **Não**. Se **Não** e o arquivo de origem já contiver uma cadeia de mipmap, o arquivo de saída terá uma cadeia MIP; caso contrário, o arquivo de saída não terá uma cadeia MIP.|
 |**Saída de conteúdo**|Especifica o nome do arquivo de saída. **Importante:** alterar a extensão de nome de arquivo de saída não tem efeito sobre o formato do arquivo.|
@@ -97,27 +97,27 @@ Este artigo descreve como é possível usar o [!INCLUDE[vsprvs](../includes/vspr
 ### <a name="mesh-content-pipeline-configuration"></a>Configuração do pipeline de conteúdo da malha
  Quando você usar a ferramenta de pipeline de conteúdo da malha para criar um ativo de malha, é possível alterar o nome do arquivo de saída.
 
-|propriedade|Descrição|
+|Propriedade|Descrição|
 |--------------|-----------------|
 |**Saída de conteúdo**|Especifica o nome do arquivo de saída. **Importante:** alterar a extensão de nome de arquivo de saída não tem efeito sobre o formato do arquivo.|
 
 ### <a name="shader-content-pipeline-configuration"></a>Configuração do pipeline de conteúdo do sombreador
  Quando você usar a ferramenta de pipeline de conteúdo do sombreador para criar um ativo de sombreador, é possível alterar o nome do arquivo de saída.
 
-|propriedade|Descrição|
+|Propriedade|Descrição|
 |--------------|-----------------|
 |**Saída de conteúdo**|Especifica o nome do arquivo de saída. **Importante:** alterar a extensão de nome de arquivo de saída não tem efeito sobre o formato do arquivo.|
 
 ## <a name="loading-and-using-3-d-assets-at-run-time"></a>Carregando e usando ativos 3D no tempo de execução
 
 ### <a name="using-textures-and-images"></a>Usando texturas e imagens
- Direct3D fornece funções para criar recursos de textura. No Direct3D 11, a biblioteca do utilitário D3DX11 fornece funções adicionais para criar recursos de textura e visualizações de recursos diretamente de arquivos de imagem. Para obter mais informações sobre como criar um recurso de textura em Direct3D 11, consulte [Texturas](http://go.microsoft.com/fwlink/p/?LinkID=246267). Para obter mais informações sobre como usar a biblioteca D3DX11 para criar um recurso de textura ou um modo de exibição de recursos de um arquivo de imagem, consulte [Como inicializar uma textura de um arquivo](http://go.microsoft.com/fwlink/p/?LinkId=246268).
+ Direct3D fornece funções para criar recursos de textura. No Direct3D 11, a biblioteca do utilitário D3DX11 fornece funções adicionais para criar recursos de textura e visualizações de recursos diretamente de arquivos de imagem. Para obter mais informações sobre como criar um recurso de textura em Direct3D 11, consulte [Texturas](https://go.microsoft.com/fwlink/p/?LinkID=246267). Para obter mais informações sobre como usar a biblioteca D3DX11 para criar um recurso de textura ou um modo de exibição de recursos de um arquivo de imagem, consulte [Como inicializar uma textura de um arquivo](https://go.microsoft.com/fwlink/p/?LinkId=246268).
 
 ### <a name="using-3-d-models"></a>Usando modelos 3D
  O Direct3D 11 não fornece funções para criar recursos de modelos 3D. Em vez disso, você precisa gravar código que leia o arquivo de modelo 3D e crie buffers de índice e vértice que representem o modelo 3D e quaisquer recursos que o modelo exija, como texturas ou sombreadores.
 
 ### <a name="using-shaders"></a>Usando sombreadores
- O Direct3D fornece funções para criar recursos do sombreador e associá-los ao pipeline gráfico programável. Para obter mais informações sobre como criar um recurso de sombreador no Direct3D e associá-lo ao pipeline, consulte [Guia de programação para HLSL](http://go.microsoft.com/fwlink/p/?LinkID=261521).
+ O Direct3D fornece funções para criar recursos do sombreador e associá-los ao pipeline gráfico programável. Para obter mais informações sobre como criar um recurso de sombreador no Direct3D e associá-lo ao pipeline, consulte [Guia de programação para HLSL](https://go.microsoft.com/fwlink/p/?LinkID=261521).
 
  No pipeline gráfico programável, cada estágio do pipeline deve dar ao próximo estágio do pipeline um resultado que esteja formatado de modo que possa ser entendido. Como o Designer do Sombreador só pode criar sombreadores de pixel, significa que é responsabilidade do aplicativo garantir que os dados recebidos estejam no formato esperado. Vários estágios do sombreador programável ocorrem antes do sombreador de pixel, e eles realizam transformações geométricas (o sombreador de vértice, o sombreador Hull, o sombreador de domínio e o sombreador de geometria). O estágio de mosaico não programável também ocorre antes do sombreador de pixel. Não importa qual desses estágios precedem diretamente o sombreador de pixel, ele deve apresentar seu resultado neste formato:
 

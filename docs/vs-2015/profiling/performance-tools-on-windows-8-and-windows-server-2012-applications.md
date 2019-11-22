@@ -9,12 +9,12 @@ caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cb77271c37b02104a0e1695d5495ff085518acad
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: c65561f9a9a2ca287232b7a61bb0e07ca07a769d
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65675279"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299658"
 ---
 # <a name="performance-tools-on-windows-8-and-windows-server-2012-applications"></a>Ferramentas de desempenho em aplicativos do Windows 8 e Windows Server 2012
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ Os recursos de segurança avançada do Windows 8 e Windows Server 2012 exigiam a
   
 - Opções de instrumentação, tais como coleta de desempenho e dados do contador da janela ou especificação de opções de linha de comando adicionais.  
   
-  Para obter mais informações sobre a criação de perfil de aplicativos da Windows Store, consulte os tópicos a seguir no Centro de desenvolvimento do Windows:  
+  Para obter mais informações sobre a criação de perfil de aplicativos da Windows Store, consulte os seguintes tópicos no centro de desenvolvimento do Windows:  
   
   [Executar aplicativos da Windows Store no computador local](../debugger/run-windows-store-apps-on-the-local-machine.md)  
   
@@ -64,7 +64,7 @@ Os recursos de segurança avançada do Windows 8 e Windows Server 2012 exigiam a
   
 - [Temporização de Função JavaScript](https://msdn.microsoft.com/library/b2bf49fc-aea7-4d9c-8fcf-cff8b8dd0c03)  
   
-- [Temporização de função JavaScript em um dispositivo remoto](https://msdn.microsoft.com/library/d78812b6-a97e-46dc-8d99-e724d1d725d8)  
+- [Tempo de função do JavaScript em um dispositivo remoto](https://msdn.microsoft.com/library/d78812b6-a97e-46dc-8d99-e724d1d725d8)  
   
 - [Analisar os dados de Temporização de Função JavaScript](https://msdn.microsoft.com/library/b5aea8d8-36df-47ba-a7ca-95406700ca9b)  
   
@@ -100,7 +100,7 @@ Os recursos de segurança avançada do Windows 8 e Windows Server 2012 exigiam a
   
  Para analisar aplicativos em dispositivos que não têm o Visual Studio instalado, faça o seguinte:  
   
-- Baixe as ferramentas como parte das Ferramentas Remotas para Visual Studio do [site do MSDN](http://go.microsoft.com/fwlink/?LinkID=219549).  
+- Baixe as ferramentas como parte das Ferramentas Remotas para Visual Studio do [site do MSDN](https://go.microsoft.com/fwlink/?LinkID=219549).  
   
 - Copie e execute o programa de instalação de ferramentas do criador de perfil autônomo do seu computador do Visual Studio. Os programas de instalação estão na pasta *%VSInstallDir%* **\Team Tools\Performance Tools\Setups**. Escolha o programa de instalação do sistema operacional (x86/x64) do computador remoto.  
   
@@ -136,7 +136,7 @@ Os recursos de segurança avançada do Windows 8 e Windows Server 2012 exigiam a
   
    **Coletando dados TIP em um computador remoto**  
   
-   Para coletar os dados de interação de camada em um computador remoto, é necessário copiar o arquivo **vs\_profiler\_**_\<Plataforma>_**\_**_\<Linguagem>_**.exe** da pasta _%VSInstallDir%_**\Team Tools\Performance Tools\Setups** de um computador com o Visual Studio para o computador remoto e instalá-lo. Você não pode usar as ferramentas de criação de perfil na [as ferramentas remotas do Visual Studio](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c) fazer download do pacote.  
+   Para coletar os dados de interação de camada em um computador remoto, é necessário copiar o arquivo **vs\_profiler\_** _\<Plataforma>_ **\_** _\<Linguagem>_ **.exe** da pasta _%VSInstallDir%_ **\Team Tools\Performance Tools\Setups** de um computador com o Visual Studio para o computador remoto e instalá-lo. Você não pode usar as ferramentas de criação de perfil no pacote de download do [ferramentas remotas do Visual Studio](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c) .  
   
    Você pode usar [VSPerfCmd](../profiling/vsperfcmd.md) ou [VSPerfASPNetCmd](../profiling/vsperfaspnetcmd.md) para coletar dados de criação de perfil.  
   

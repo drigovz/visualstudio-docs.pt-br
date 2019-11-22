@@ -14,12 +14,12 @@ caps.latest.revision: 39
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c2b25d0fa57659b3081b54c51b7493621423188f
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: a3147a6bafc550383f96134f5a76932413eb8a22
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65696998"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299368"
 ---
 # <a name="analyze-energy-use-in-store-apps"></a>Analisar o uso de energia em aplicativos da Store
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,8 +63,6 @@ O criador de perfil de **Consumo de Energia** do Visual Studio ajuda a analisar 
 > - O Windows.Foundation.Diagnostics LoggingChannel implementa a interface [Windows.Foundation.IClosable](https://msdn.microsoft.com/library/windows/apps/windows.foundation.iclosable.aspx) (projetada como [System.IDisposable](https://msdn.microsoft.com/library/System.IDisposable.aspx) em C# e VB). Para evitar a perda de recursos do sistema operacional, chame [LoggingChannel.Close](https://msdn.microsoft.com/library/windows/apps/windows.foundation.diagnostics.loggingchannel.close.aspx)() [Windows.Foundation.Diagnostics.LoggingChannel.Dispose() em C# e VB] quando concluir o trabalho em um canal de log.  
 >   - Cada canal de registro em log aberto deve ter um nome exclusivo. Tentar criar um novo canal de registro em log com o mesmo nome de um canal não descartado gera uma exceção.  
   
- Consulte [Exemplo de LoggingSession](http://code.msdn.microsoft.com/windowsapps/LoggingSession-Sample-ccd52336) do Windows SDK para obter exemplos.  
-  
  **Adicionar marcas ao código JavaScript**  
   
  Para adicionar marcas do usuário, adicione o seguinte código nos pontos do código que você deseja marcar:  
@@ -89,7 +87,7 @@ if (performance && performance.mark) {
   
 1. No menu **Depurar**, escolha **Iniciar Diagnóstico Sem Depurar**.  
   
-     ![Selecione Consumo de Energia no hub de diagnóstico](../profiling/media/energyprof-diagnosticshub.png "ENERGYPROF_DiagnosticsHub")  
+     ![Escolha consumo de energia no Hub de diagnóstico](../profiling/media/energyprof-diagnosticshub.png "ENERGYPROF_DiagnosticsHub")  
   
 2. Selecione **Consumo de Energia** e então **Iniciar**.  
   
@@ -100,7 +98,7 @@ if (performance && performance.mark) {
   
 4. Para interromper a criação do perfil, retorne ao Visual Studio (Alt + Tab) e selecione **Interromper a coleta** na página Hub de diagnóstico.  
   
-     ![Interromper a coleta de dados](../profiling/media/xamlprof-stopcollection.png "XAMLProf_StopCollection")  
+     ![Parar coleta de dados](../profiling/media/xamlprof-stopcollection.png "XAMLProf_StopCollection")  
   
      O Visual Studio analisa os dados coletados e exibe os resultados.  
   
@@ -120,7 +118,7 @@ if (performance && performance.mark) {
 ## <a name="BKMK_Analyze_energy_profile_data"></a> Analisar dados do perfil de energia  
  Os dados do perfil de energia são exibidos na janela do documento do Visual Studio:  
   
- ![Página de relatório do criador de perfil de energia](../profiling/media/energyprof-all.png "ENERGYPROF_All")  
+ ![Página de relatório do Energy Profiler](../profiling/media/energyprof-all.png "ENERGYPROF_All")  
   
 |||  
 |-|-|  
@@ -138,11 +136,11 @@ if (performance && performance.mark) {
 ## <a name="BKMK_Optimize_energy_use"></a> Otimizar o consumo de energia  
  Além de transmitir dados, as conexões de rede implicam custos de energia para inicializar, manter e encerrar a conexão. Algumas redes mantêm a conexão por um período depois que os dados são enviados ou recebidos para permitir que mais dados sejam transmitidos por uma única conexão. Você pode usar o painel **Recursos (Ativado/Desativado)** para examinar a maneira como seu aplicativo interage com a conexão.  
   
- ![Painel Recursos &#40;Ativado&#47;Desativado&#41](../profiling/media/energyprof-resources.png "ENERGYPROF_Resources")  
+ ![Recursos &#40;no&#47;painel&#41; desativado](../profiling/media/energyprof-resources.png "ENERGYPROF_Resources")  
   
  Se as barras **Rede** e **Transferência de Dados** mostrarem que a conexão está aberta por um longo período para transmitir uma série de pacotes pequenos de dados de maneira intermitente, você poderá dividir os dados em lotes para enviá-los em uma transmissão, reduzir o tempo em que a rede fica aberta e, portanto, economizar em custos de energia.  
   
- ![Painel de Resumo de Consumo de Energia](../profiling/media/energyprof-summary.png "ENERGYPROF_Summary")  
+ ![Painel Resumo de consumo de energia](../profiling/media/energyprof-summary.png "ENERGYPROF_Summary")  
   
  Você tem menos controle sobre os custos de energia da tela. A maioria das telas exige mais energia para exibir cores claras do que cores mais escuras, portanto, usar uma tela de fundo escuro é uma maneira de reduzir custos.  
   

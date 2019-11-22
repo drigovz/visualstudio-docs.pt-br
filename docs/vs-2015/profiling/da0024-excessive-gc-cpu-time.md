@@ -1,5 +1,5 @@
 ---
-title: 'DA0024: Excesso de tempo de CPU no GC | Microsoft Docs'
+title: 'DA0024: excesso de tempo de CPU no GC | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -13,20 +13,20 @@ caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d40377c28e0987ac902ab8aa5cf778715eb899cd
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: e0414e8bc4b5789f08751749b52f870c7c5e5167
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435844"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300097"
 ---
-# <a name="da0024-excessive-gc-cpu-time"></a>DA0024: Tempo de CPU de GC excessivo
+# <a name="da0024-excessive-gc-cpu-time"></a>DA0024: tempo de GPU GC excessivo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Id da regra | DA0024 |  
-| Categoria de |. Uso do .NET Framework |  
-| Método de criação de perfil | Todos os |  
-| Mensagem | % Time no GC é muito alta. Há uma quantidade excessiva de sobrecarga de coleta de lixo.|  
+ID da regra | DA0024 |  
+| Categoria |. Uso do .NET Framework |  
+| Método de criação de perfil | Todos |  
+| A mensagem |% de tempo no GC é muito alta. Há uma quantidade excessiva de sobrecarga de coleta de lixo.|  
 | Tipo de regra | Aviso |  
   
  Ao criar o perfil usando a amostragem, a memória do .NET ou métodos de contenção de recursos, é necessário coletar pelo menos 10 amostras para disparar essa regra.  
@@ -42,9 +42,9 @@ Id da regra | DA0024 |
  Essa regra é acionada quando o tempo gasto na coleta de lixo é excessivamente alto em comparação com o tempo total de processamento do aplicativo.  
   
 > [!NOTE]
-> Quando a proporção de tempo gasto na coleta de lixo é significativa mas não excessiva em comparação com o tempo total de processamento do aplicativo, o aviso [DA0023: Tempo alto de CPU no GC](../profiling/da0023-high-gc-cpu-time.md) é acionado em vez dessa regra.  
+> Quando a proporção de tempo gasto na coleta de lixo é significativo, mas não excessivo em comparação com o tempo total de processamento do aplicativo, o aviso [DA0023: alto tempo de CPU no GC](../profiling/da0023-high-gc-cpu-time.md) é acionado em vez dessa regra.  
   
 ## <a name="how-to-investigate-a-warning"></a>Como investigar um aviso  
  Clique duas vezes na mensagem da janela Lista de Erros para navegar para a [Exibição de Marcas](../profiling/marks-view.md) dos dados de criação de perfil. Encontre a coluna **Memória do .NET CLR\\% de tempo no GC**. Determine se há fases específicas da execução do programa em que a sobrecarga da coleta de lixo de memória gerenciada é mais pesada do que em outras fases. Compare os valores do valor de % de tempo no GC com a taxa de coleta de lixo relatada nos valores **Nº de coletas da Ger 0**, **Nº de coletas da Ger 1** e **Nº de coletas da Ger 2**.  
   
- O valor de % de tempo no GC tenta relatar o tempo que um aplicativo gasta executando a coleta de lixo proporcional à quantidade total de processamento. Lembre-se de que há circunstâncias em que o valor de % de tempo no GC pode relatar um valor muito alto, mas não devido a um excesso de coleta de lixo. Para obter mais informações sobre a maneira como o valor de % de tempo no GC é calculado, consulte a entrada [Difference Between Perf Data Reported by Different Tools – 4](http://go.microsoft.com/fwlink/?LinkId=177863) (Diferença entre dados de desempenho relatados por ferramentas diferentes – 4) do **Weblog do Maoni** no MSDN. Se ocorrerem falhas de página ou o aplicativo for impedido por outro trabalho de prioridade mais alta no computador durante a coleta de lixo, o contador % de tempo no GC refletirá esses atrasos adicionais.
+ O valor de % de tempo no GC tenta relatar o tempo que um aplicativo gasta executando a coleta de lixo proporcional à quantidade total de processamento. Lembre-se de que há circunstâncias em que o valor de % de tempo no GC pode relatar um valor muito alto, mas não devido a um excesso de coleta de lixo. Para obter mais informações sobre a maneira como o valor de % de tempo no GC é calculado, consulte a entrada [Difference Between Perf Data Reported by Different Tools – 4](https://go.microsoft.com/fwlink/?LinkId=177863) (Diferença entre dados de desempenho relatados por ferramentas diferentes – 4) do **Weblog do Maoni** no MSDN. Se ocorrerem falhas de página ou o aplicativo for impedido por outro trabalho de prioridade mais alta no computador durante a coleta de lixo, o contador % de tempo no GC refletirá esses atrasos adicionais.

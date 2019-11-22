@@ -11,12 +11,12 @@ caps.latest.revision: 25
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 4c8365f045618b92b4b34935bf5024c2ff781650
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 67eb1a6ce55292415da4a5c4e363941a4285d8b7
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669750"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74296007"
 ---
 # <a name="display-a-uml-model-on-diagrams"></a>Exibir um modelo UML em diagramas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,7 +65,7 @@ Neste tópico:
 |`anIShape.ParentShape`|A forma que contém `anIShape`. Por exemplo, uma forma de porta está contida em uma forma de componente.|
 |`anIShape.ChildShapes`|As formas contidas em um `IShape` ou `IDiagram`.|
 |`anIShape.GetChildShapes<IUseCase>()`|As formas contidas em um `IShape` ou `IDiagram` que representam elementos do tipo especificado, como `IUseCase`.|
-|`IShape iShape = ...;`<br /><br /> `IShape<IClass> classShape = iShape.ToIShape<IClass>();`<br /><br /> `IClass aClass = classShape.Element;`|Converta um `IShape` genérico em um `IShape<IElement>` fortemente tipado.|
+|`IShape iShape = ...;`<br /><br /> `IShape<IClass> classShape = iShape.ToIShape<IClass>();`<br /><br /> `IClass aClass = classShape.Element;`|Converta um `IShape` genérico em um `IShape<IElement>`fortemente tipado.|
 |`IShape<IClassifier> classifierShape;`<br /><br /> `IShape<IUseCase> usecaseShape =`<br /><br /> `classifierShape.ToIShape<IUseCase>();`|Converta uma forma de um tipo de forma com parâmetros para outro.|
 
 ## <a name="Moving"></a>Movendo e redimensionando formas
@@ -379,4 +379,4 @@ namespace AlignCommand
 ```
 
 ## <a name="see-also"></a>Consulte também
- [Estender modelos e diagramas UML](../modeling/extend-uml-models-and-diagrams.md) [navegue até o exemplo de modelo UML](../modeling/navigate-the-uml-model.md) [: alinhar formas em um menu de diagrama](http://go.microsoft.com/fwlink/?LinkId=213809) [exemplo de comando: criando elementos, formas e estereótipos](http://go.microsoft.com/fwlink/?LinkId=213811)
+ [Estender modelos e diagramas UML](../modeling/extend-uml-models-and-diagrams.md) [navegue até o exemplo de modelo UML](../modeling/navigate-the-uml-model.md) [: alinhar formas em um menu de diagrama](https://go.microsoft.com/fwlink/?LinkId=213809) [exemplo de comando: criando elementos, formas e estereótipos](https://go.microsoft.com/fwlink/?LinkId=213811)

@@ -12,17 +12,17 @@ caps.latest.revision: 39
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 66a9cdab1284d015e2ea76162d240b6a1232d90f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9c0fa4e92c62ffb5b9c41cf5e297ed11ca63c38e
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669916"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74298714"
 ---
 # <a name="define-and-install-a-modeling-extension"></a>Definir e instalar uma extensão de modelagem
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-No Visual Studio, você pode definir extensões para diagramas de modelagem. Dessa maneira, você pode adaptar os diagramas e modelos às suas próprias necessidades. Por exemplo, você pode definir comandos de menu, perfis UML, restrições de validação e itens de caixa de ferramentas. Você pode definir vários componentes em uma única extensão. Você também pode distribuir essas extensões para outros usuários do Visual Studio na forma de um [VSIX (extensão de integração do Visual Studio)](http://go.microsoft.com/fwlink/?LinkId=160780). Você pode criar um VSIX usando um projeto VSIX no Visual Studio.
+No Visual Studio, você pode definir extensões para diagramas de modelagem. Dessa maneira, você pode adaptar os diagramas e modelos às suas próprias necessidades. Por exemplo, você pode definir comandos de menu, perfis UML, restrições de validação e itens de caixa de ferramentas. Você pode definir vários componentes em uma única extensão. Você também pode distribuir essas extensões para outros usuários do Visual Studio na forma de um [VSIX (extensão de integração do Visual Studio)](https://go.microsoft.com/fwlink/?LinkId=160780). Você pode criar um VSIX usando um projeto VSIX no Visual Studio.
 
 ## <a name="requirements"></a>Requisitos
  Consulte [requisitos](../modeling/extend-uml-models-and-diagrams.md#Requirements).
@@ -68,16 +68,16 @@ No Visual Studio, você pode definir extensões para diagramas de modelagem. Des
 
 7. Na guia **ativos** , adicione seus componentes à extensão do Visual Studio.
 
-    1. Escolha **novo**.
+    1. Escolha **Novo**.
 
     2. Para um componente com código, defina esses campos na caixa de diálogo **Adicionar novo ativo** :
 
         |||
         |-|-|
-        |**Tipo**  =|**Microsoft. VisualStudio. MefComponent**|
+        |**Tipo** =|**Microsoft.VisualStudio.MefComponent**|
         |**Source** =|**Um projeto na solução atual**|
-        |@No__t_1 do **projeto**|*Seu projeto de biblioteca de classes*|
-        |**Inserir nesta pasta**  =|*esvaziá*|
+        | = do **projeto**|*Seu projeto de biblioteca de classes*|
+        |**Inserir nesta pasta** =|*esvaziá*|
 
          Para outros tipos de componente, consulte os links na próxima seção.
 
@@ -107,7 +107,7 @@ No Visual Studio, você pode definir extensões para diagramas de modelagem. Des
 
      Sua extensão será carregada e executada.
 
-3. Se você usou **Iniciar sem depuração** , mas deseja usar o depurador, volte para a instância principal do Visual Studio. No menu **depurar** , clique em **anexar ao processo**. Na caixa de diálogo, selecione a instância experimental do Visual Studio, que tem o nome do programa **devenv**.
+3. Se você usou **Iniciar sem depuração** , mas deseja usar o depurador, volte para a instância principal do Visual Studio. No menu **Depurar**, clique em **Anexar ao Processo**. Na caixa de diálogo, selecione a instância experimental do Visual Studio, que tem o nome do programa **devenv**.
 
 ## <a name="Installing"></a>Instalando e desinstalando uma extensão
  Execute as etapas a seguir para executar sua extensão na instância principal do Visual Studio em seu próprio computador ou em outros computadores.
@@ -116,7 +116,7 @@ No Visual Studio, você pode definir extensões para diagramas de modelagem. Des
 
     1. No **Gerenciador de soluções**, no menu de atalho do seu projeto e escolha **abrir pasta no Windows Explorer**.
 
-    2. Localize o arquivo **bin \\ \* \\** _seuprojeto_ **. vsix**
+    2. Localize o arquivo **bin\\\*\\** _seuprojeto_ **. vsix**
 
 2. Copie o arquivo **. vsix** para o computador de destino no qual você deseja instalar a extensão. Este pode ser seu próprio computador ou outro.
 
@@ -136,9 +136,9 @@ No Visual Studio, você pode definir extensões para diagramas de modelagem. Des
 
 3. Selecione a extensão e clique em **desinstalar**.
 
-   Raramente, uma extensão defeituosa não carrega e cria um relatório na janela de erro, mas não aparece no Gerenciador de extensões. Nesse caso, você pode remover a extensão excluindo o arquivo do seguinte local em que *% LocalAppData%* normalmente é *driveName*: \Users \\*username*\AppData\Local:
+   Raramente, uma extensão defeituosa não carrega e cria um relatório na janela de erro, mas não aparece no Gerenciador de extensões. Nesse caso, você pode remover a extensão excluindo o arquivo do seguinte local em que *% LocalAppData%* normalmente é *driveName*: \Users\\*username*\AppData\Local:
 
-   *% LocalAppData%* **\Microsoft\VisualStudio \\ [versão] \Extensions**
+   *%LocalAppData%* **\Microsoft\VisualStudio\\[version]\Extensions**
 
 ## <a name="see-also"></a>Consulte também
  [Definir um perfil para estender](../modeling/define-a-profile-to-extend-uml.md) [o UML defina um item da caixa de ferramentas de modelagem personalizado](../modeling/define-a-custom-modeling-toolbox-item.md) [definir restrições de validação para modelos UML](../modeling/define-validation-constraints-for-uml-models.md) [definir um comando de menu em um diagrama de modelagem](../modeling/define-a-menu-command-on-a-modeling-diagram.md)

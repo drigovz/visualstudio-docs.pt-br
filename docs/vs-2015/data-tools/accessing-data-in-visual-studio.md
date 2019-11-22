@@ -22,12 +22,12 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: 2be1de65bb29ddca611366fcdc046162bdafc4b7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 158bc4c2fc7734957c7d3e946390ab1339a322ba
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72673131"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299435"
 ---
 # <a name="accessing-data-in-visual-studio"></a>Acessando dados no Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,7 +67,7 @@ No Visual Studio, você pode criar aplicativos que se conectam a dados em pratic
 
  E muito mais...
 
- Muitos fornecedores de banco de dados e terceiros dão suporte à integração do Visual Studio por pacotes NuGet. Você pode explorar as ofertas em nuget.org ou por meio do Gerenciador de pacotes NuGet no Visual Studio (**ferramentas**  > **Gerenciador de pacotes NuGet**  > **gerenciar pacotes NuGet para solução**). Outros produtos de banco de dados se integram com o Visual Studio como uma extensão.   Você pode procurar essas ofertas na galeria do Visual Studio navegando até **ferramentas**  > **extensões e atualizações** e, em seguida, selecionando **online** no painel esquerdo da caixa de diálogo.  Para obter mais informações, consulte [instalando sistemas de banco de dados, ferramentas e exemplos](../data-tools/installing-database-systems-tools-and-samples.md).
+ Muitos fornecedores de banco de dados e terceiros dão suporte à integração do Visual Studio por pacotes NuGet. Você pode explorar as ofertas em nuget.org ou por meio do Gerenciador de pacotes NuGet no Visual Studio (**ferramentas** > **Gerenciador de pacotes NuGet** > **gerenciar pacotes NuGet para solução**). Outros produtos de banco de dados se integram com o Visual Studio como uma extensão.   Você pode procurar essas ofertas na galeria do Visual Studio navegando até **ferramentas** > **extensões e atualizações** e, em seguida, selecionando **online** no painel esquerdo da caixa de diálogo.  Para obter mais informações, consulte [instalando sistemas de banco de dados, ferramentas e exemplos](../data-tools/installing-database-systems-tools-and-samples.md).
 
 > [!NOTE]
 > O suporte estendido para o SQL Server 2005 foi encerrado em 12 de abril de 2016.   Não há nenhuma garantia de que as ferramentas de dados no Visual Studio 2015 e posteriores continuarão a funcionar com o SQL Server 2005 após essa data. Para obter mais informações, consulte o [anúncio do fim do suporte para o SQL Server 2005](https://www.microsoft.com/sql-server/sql-server-2005).
@@ -75,7 +75,7 @@ No Visual Studio, você pode criar aplicativos que se conectam a dados em pratic
 ### <a name="net-languages"></a>Linguagens .NET
  Todo o acesso a dados do .NET, incluindo o .NET Core, é baseado em ADO.NET, um conjunto de classes que define uma interface para acessar qualquer tipo de fonte de dados, relacional e não relacional. O Visual Studio tem várias ferramentas e designers que funcionam com o ADO.NET para ajudá-lo a se conectar a bancos de dados, manipular e apresentar os dados para o usuário. A documentação nesta seção descreve como usar essas ferramentas. Você também pode programar diretamente em relação aos objetos de comando ADO.NET. Para obter mais informações sobre como chamar as APIs ADO.NET diretamente, consulte [ADO.net](https://msdn.microsoft.com/library/e80y5yhx\(v=vs.110\).aspx) na biblioteca MSDN.
 
- Para obter a documentação de acesso a dados especificamente relacionada ao ASP.NET, consulte [trabalhando com dados](http://www.asp.net/web-forms/overview/presenting-and-managing-data) no site do ASP.net. Para obter um tutorial sobre como usar Entity Framework com o ASP.NET MVC, confira [introdução com Entity Framework 6 Code First usando o MVC 5](http://www.asp.net/mvc/overview/getting-started/getting-started-with-ef-using-mvc/creating-an-entity-framework-data-model-for-an-asp-net-mvc-application).
+ Para obter a documentação de acesso a dados especificamente relacionada ao ASP.NET, consulte [trabalhando com dados](https://docs.microsoft.com/aspnet/web-forms/overview/presenting-and-managing-data/) no site do ASP.net. Para obter um tutorial sobre como usar Entity Framework com o ASP.NET MVC, confira [introdução com Entity Framework 6 Code First usando o MVC 5](https://docs.microsoft.com/aspnet/mvc/overview/getting-started/getting-started-with-ef-using-mvc/creating-an-entity-framework-data-model-for-an-asp-net-mvc-application).
 
  Os aplicativos Plataforma Universal do Windows (UWP) C# no ou Visual Basic podem usar o SDK do Microsoft Azure para .net para acessar o armazenamento do Azure e outros serviços do Azure. A classe Windows. Web. HttpClient permite a comunicação com qualquer serviço RESTful. Para obter mais informações, consulte [como se conectar a um servidor http usando Windows. Web. http](https://msdn.microsoft.com/library/windows/apps/dn469430.aspx).
 
@@ -95,17 +95,17 @@ No Visual Studio, você pode criar aplicativos que se conectam a dados em pratic
 
  DataSets é o mais antigo das três tecnologias de modelagem. Ele foi projetado principalmente para o desenvolvimento rápido de aplicativos de "formulários em dados" nos quais você não está processando grandes quantidades de dados ou realizando consultas ou transformações complexas. Um objeto DataSet consiste em objetos DataTable e DataRow que se assemelham logicamente a objetos do banco de dados SQL muito mais do que objetos .NET. Para aplicativos relativamente simples com base em fontes de dados SQL, os DataSets ainda podem ser uma boa opção.
 
- Não há nenhum requisito para usar nenhuma dessas tecnologias. Em alguns cenários, especialmente onde o desempenho é crítico, você pode simplesmente usar um objeto DataReader para ler do banco de dados e copiar os valores necessários para um objeto de coleção, como List \<T >.
+ Não há nenhum requisito para usar nenhuma dessas tecnologias. Em alguns cenários, especialmente onde o desempenho é crítico, você pode simplesmente usar um objeto DataReader para ler do banco de dados e copiar os valores necessários para um objeto de coleção, como List\<T >.
 
 ### <a name="native-c"></a>C++ Nativo
  C++os aplicativos que se conectam ao SQL Server devem usar o [SQL Server Native Client](https://msdn.microsoft.com/sqlserver/aa937733.aspx). Você pode acessar outros bancos de dados usando os drivers [ODBC](https://msdn.microsoft.com/library/ms710252\(v=vs.85\).aspx) ou OLE DB diretamente. O ODBC é a interface de banco de dados padrão atual, mas a maioria dos sistemas de banco de dados fornece uma funcionalidade personalizada que não pode ser acessada pela interface ODBC.  OLE DB é uma tecnologia de acesso a dados COM herdada que ainda é suportada, mas não é recomendada para novos aplicativos.  Para obter mais informações, consulte [acesso a dados](https://msdn.microsoft.com/library/a9455752-39c4-4457-b14e-197772d3df0b).
 
  C++programas que consomem serviços REST podem usar o [ C++ SDK REST](https://github.com/Microsoft/cpprestsdk).
 
- C++programas que funcionam com Armazenamento do Microsoft Azure podem usar o [cliente armazenamento do Microsoft Azure](http://www.nuget.org/packages/wastorage).
+ C++programas que funcionam com Armazenamento do Microsoft Azure podem usar o [cliente armazenamento do Microsoft Azure](https://www.nuget.org/packages/wastorage).
 
 #### <a name="data-modeling"></a>Modelagem de dados
- O Visual Studio não fornece uma camada de ORM C++para.  [ODB](http://www.codesynthesis.com/products/odb/) é um popular ORM de código-fonte C++aberto para o.
+ O Visual Studio não fornece uma camada de ORM C++para.  [ODB](https://www.codesynthesis.com/products/odb/) é um popular ORM de código-fonte C++aberto para o.
 
  Para obter mais informações sobre as C++ tecnologias de acesso a dados visuais herdadas, consulte [acesso a dados](https://msdn.microsoft.com/library/a9455752-39c4-4457-b14e-197772d3df0b)
 
@@ -133,7 +133,7 @@ No Visual Studio, você pode criar aplicativos que se conectam a dados em pratic
 
  [Entity Framework ADO.net](https://msdn.microsoft.com/data/ef) Descreve como criar aplicativos de dados que permitem aos desenvolvedores programar em um modelo conceitual em vez de diretamente em relação a um banco de dados relacional.
 
- [WCF Data Services 4,5](https://msdn.microsoft.com/library/73d2bec3-7c92-4110-b905-11bb0462357a) Descreve como usar [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)] para implantar serviços de dados na Web ou em uma intranet que implementam o [protocolo Open Data (OData)](http://go.microsoft.com/fwlink/?LinkID=182204).
+ [WCF Data Services 4,5](https://msdn.microsoft.com/library/73d2bec3-7c92-4110-b905-11bb0462357a) Descreve como usar [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)] para implantar serviços de dados na Web ou em uma intranet que implementam o [protocolo Open Data (OData)](https://go.microsoft.com/fwlink/?LinkID=182204).
 
  [Dados em soluções do Office](https://msdn.microsoft.com/library/8478c095-864b-4ed3-8a70-1fc19b411c6a) Contém links para tópicos que explicam como os dados funcionam em soluções do Office. Isso inclui informações sobre programação orientada a esquema, cache de dados e acesso a dados no servidor.
 

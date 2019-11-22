@@ -1,5 +1,5 @@
 ---
-title: 'DA0022: Alta taxa de coletas de lixo de Geração 2 | Microsoft Docs'
+title: 'DA0022: alta taxa de coletas de lixo da Ger 2 | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -13,20 +13,20 @@ caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 820d74a9dced29dc237c4bf182419abcb7d503b3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 067544e6b97e2709ed217ae0232771e833800e52
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68194921"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300117"
 ---
-# <a name="da0022-high-rate-of-gen-2-garbage-collections"></a>DA0022: Alta taxa de coletas de lixo de Geração 2
+# <a name="da0022-high-rate-of-gen-2-garbage-collections"></a>DA0022: taxa alta de coletas de lixo Gen 2
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Id da regra | DA0022 |  
-| Categoria de |. Uso do .NET Framework |  
-| Método de criação de perfil | Todos os |  
-| Mensagem | Há uma taxa bem alta de coletas de lixo da Ger 2 ocorrendo. Se, por design, a maioria das estruturas de dados do programa for alocada e persistida por um longo tempo, normalmente, isso não será um problema. No entanto, se esse comportamento não for intencional, o aplicativo poderá estar fixando objetos. Caso não tenha certeza, você poderá coletar dados de alocação de memória do .NET e informações de tempo de vida do objeto para entender o padrão de alocação de memória usado pelo aplicativo.|  
+ID da regra | DA0022 |  
+| Categoria |. Uso do .NET Framework |  
+| Método de criação de perfil | Todos |  
+| Mensagem | Há uma taxa bem alta de coletas de lixo de Gen 2 que ocorrem. Se, por design, a maioria das estruturas de dados do programa for alocada e persistida por um longo tempo, normalmente, isso não será um problema. No entanto, se esse comportamento não for intencional, o aplicativo poderá estar fixando objetos. Caso não tenha certeza, você poderá coletar dados de alocação de memória do .NET e informações de tempo de vida do objeto para entender o padrão de alocação de memória usado pelo aplicativo.|  
 | Tipo de regra | Aviso |  
   
  Ao criar o perfil usando a amostragem, a memória do .NET ou métodos de contenção de recursos, é necessário coletar pelo menos 10 amostras para disparar essa regra.  
@@ -50,4 +50,4 @@ Id da regra | DA0022 |
   
  Para entender o padrão do aplicativo de uso de memória gerenciada, crie o perfil dele novamente executando um perfil de alocação de Memória do .NET e selecione a opção de criação de perfil Tempo de Vida do Objeto.  
   
- Para obter informações sobre como melhorar o desempenho da coleta de lixo, consulte [Garbage Collector Basics and Performance Hints](http://go.microsoft.com/fwlink/?LinkId=148226) (Noções básicas sobre o coletor de lixo e dicas de desempenho) no site da Microsoft. Para obter informações sobre a sobrecarga de coleta de lixo automática, consulte [O que há por trás do heap de objetos grandes](http://go.microsoft.com/fwlink/?LinkId=177836).
+ Para obter informações sobre como melhorar o desempenho da coleta de lixo, consulte [Garbage Collector Basics and Performance Hints](https://go.microsoft.com/fwlink/?LinkId=148226) (Noções básicas sobre o coletor de lixo e dicas de desempenho) no site da Microsoft. Para obter informações sobre a sobrecarga de coleta de lixo automática, consulte [O que há por trás do heap de objetos grandes](https://go.microsoft.com/fwlink/?LinkId=177836).

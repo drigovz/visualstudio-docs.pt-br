@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 3fdedf3fd9463b25e2c825a0a2d43b069049a2cb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f634f028dafea3260a69537893513f13cc0ebe83
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72671229"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74292537"
 ---
 # <a name="run-unit-tests-on-uml-extensions"></a>Executar testes de unidade em extensões UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,8 +43,6 @@ Para ajudar a manter o código estável ao longo de sucessivas alterações, rec
 
   Esses pontos são elaborados nas seguintes seções.
 
-  Um exemplo de uma extensão de UML testada por unidade pode ser encontrado na Galeria de exemplos de código em [UML – entrada rápida usando texto](http://code.msdn.microsoft.com/UML-Rapid-Entry-using-Text-0813ad8a).
-
 ## <a name="requirements"></a>Requisitos
  Consulte [requisitos](../modeling/extend-uml-models-and-diagrams.md#Requirements).
 
@@ -70,7 +68,7 @@ Para ajudar a manter o código estável ao longo de sucessivas alterações, rec
         <CopyOutputSymbolsToOutputDirectory>true</CopyOutputSymbolsToOutputDirectory>
     ```
 
-     Para editar o arquivo. csproj como texto, escolha **descarregar projeto** no menu de atalho do projeto no Gerenciador de soluções. Em seguida, escolha **Editar.... csproj**. Depois de editar o texto, escolha **recarregar projeto**.
+     Para editar o arquivo .csproj como texto, clique em **Descarregar Projeto** no menu de atalho do projeto no Gerenciador de Soluções. Clique em **Editar... .csproj**. Depois de editar o texto, clique em **Recarregar Projeto**.
 
 4. Em seu projeto de extensão UML, adicione a seguinte linha a **Properties\AssemblyInfo.cs**. Isso permite que os testes de unidade acessem os métodos que você quer testar:
 
@@ -82,17 +80,17 @@ Para ajudar a manter o código estável ao longo de sucessivas alterações, rec
 
     - *Seu projeto de extensão UML*
 
-    - **EnvDTE. dll**
+    - **EnvDTE.dll**
 
-    - **Microsoft. VisualStudio. ArchitectureTools. Extensibility. dll**
+    - **Microsoft.VisualStudio.ArchitectureTools.Extensibility.dll**
 
-    - **Microsoft. VisualStudio. ComponentModelHost. dll**
+    - **Microsoft.VisualStudio.ComponentModelHost.dll**
 
-    - **Microsoft. VisualStudio. QualityTools. UnitTestFramework. dll**
+    - **Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll**
 
-    - **Microsoft. VisualStudio. Uml. interfaces. dll**
+    - **Microsoft.VisualStudio.Uml.Interfaces.dll**
 
-    - **Microsoft. VSSDK. TestHostFramework. dll**
+    - **Microsoft.VSSDK.TestHostFramework.dll**
 
 6. Prefixe o atributo `[HostType("VS IDE")]` para cada método de teste, incluindo os métodos de inicialização.
 
@@ -362,7 +360,7 @@ partial public class MyClass
 
 ```
 
- Permita que o assembly de teste use as interfaces de teste, adicionando esse atributo ao assembly que você está testando:
+ Permita que o assembly de teste use as interfaces de teste adicionando esse atributo ao assembly que você está testando:
 
 ```csharp
 [assembly:InternalsVisibleTo("MyUnitTests")] // Name of unit tests assembly.
@@ -379,4 +377,4 @@ Assert.AreEqual("hello", testInstance.privateField1_Accessor);
  Definir acessadores usando reflexão essa é a maneira que recomendamos o mínimo. As versões mais antigas do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] forneciam um utilitário que criava automaticamente um método de acesso para cada método particular. Embora seja conveniente, a nossa experiência indica que eles tendem a resultar em testes de unidade que são muito acoplados à estrutura interna do aplicativo que estão testando. Isso acarreta trabalho adicional quando os requisitos ou a arquitetura mudam, pois você precisa alterar os testes com a implementação. Além disso, todas as suposições incorretas no projeto de implementação também são compiladas nos testes, para que os testes não encontrem erros.
 
 ## <a name="see-also"></a>Consulte também
- [Anatomia de um teste de unidade](https://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144) [define um comando de menu em um diagrama de modelagem](../modeling/define-a-menu-command-on-a-modeling-diagram.md) [UML – entrada rápida usando texto](http://code.msdn.microsoft.com/UML-Rapid-Entry-using-Text-0813ad8a)
+ [Anatomia de um teste de unidade](https://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144) [define um comando de menu em um diagrama de modelagem](../modeling/define-a-menu-command-on-a-modeling-diagram.md)

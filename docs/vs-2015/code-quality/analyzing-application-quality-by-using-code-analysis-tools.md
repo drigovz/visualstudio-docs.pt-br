@@ -15,17 +15,17 @@ caps.latest.revision: 26
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: c0b46c8efb681a067d5a9e74369ed73c43f1568f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8b85bbad909a05bacab361a49cc7e029482ad606
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72671097"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74291208"
 ---
 # <a name="analyzing-application-quality-by-using-code-analysis-tools"></a>Analisando a qualidade do aplicativo usando as ferramentas de análise de código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Nesta seção [analisando a qualidade de código gerenciado](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md) , a análise de código do Visual Studio para código gerenciado fornece informações sobre assemblies gerenciados, como violações das regras de programação e design estabelecidas no design do Microsoft .NET Framework Diretrizes. As mensagens de aviso identificam problemas de programação e de design relevantes e, quando possível, fornecem informações de como corrigir o problema.
+Nesta seção [analisando a qualidade de código gerenciado](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md) , a análise de código do Visual Studio para código gerenciado fornece informações sobre assemblies gerenciados, como violações das regras de programação e design definidas nas diretrizes de design do Microsoft .NET Framework. As mensagens de aviso identificam problemas de programação e de design relevantes e, quando possível, fornecem informações de como corrigir o problema.
 
  [Analisando aC++ qualidade do c/Code usando a análise de código,](../code-quality/analyzing-c-cpp-code-quality-by-using-code-analysis.md) a ferramenta de análise de c/C++ Code fornece informações para desenvolvedoresC++ sobre possíveis defeitos em seu código-fonte/c. Erros de codificação comuns relatados pela ferramenta incluem estouros de buffer, memória não inicializada, desreferências de ponteiro nulo e perdas de memória e de recursos.
 
@@ -40,7 +40,7 @@ Nesta seção [analisando a qualidade de código gerenciado](../code-quality/ana
 
  [Analisando a qualidade do driver usando ferramentas de análise de código](/windows-hardware/drivers/devtest/tools-for-verifying-drivers) A análise de código para drivers é uma ferramenta de verificação estática de tempo de compilação que detecta erros de C++ codificação básicos em C e programas e inclui um módulo especializado que é projetado para detectar erros no código de driver de modo kernel (principalmente). O SDV (verificador de driver estático) é uma ferramenta de verificação estática que analisa sistematicamente o código-fonte de drivers do modo kernel do Windows. SDV determina se o driver interage corretamente com o kernel do sistema operacional Windows.
 
- [Análise de código para avisos de drivers](http://go.microsoft.com/fwlink/?LinkId=225920) Descreve os avisos que a análise de código dos drivers relata quando detecta um possível erro no código do driver.
+ [Análise de código para avisos de drivers](https://go.microsoft.com/fwlink/?LinkId=225920) Descreve os avisos que a análise de código dos drivers relata quando detecta um possível erro no código do driver.
 
 ## <a name="related-tasks"></a>Tarefas relacionadas
  [Medindo a complexidade e a manutenção do código gerenciado](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md) Insira a descrição aqui.

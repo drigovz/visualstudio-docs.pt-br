@@ -9,25 +9,25 @@ caps.latest.revision: 14
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 3991d3b741162b4b1993e5359ad427c17f00321a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3915351bff74f35ceb5fc462cb29dfd2f322fb6a
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72651524"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299631"
 ---
 # <a name="install-sql-server-sample-databases"></a>Instalar bancos de dados de exemplo do SQL Server
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Os bancos de dados de exemplo são úteis para experimentar consultas do SQL e do LINQ, DataBinding, Entity Framework modelagem e assim por diante.  Cada produto de banco de dados tem seus próprios bancos de dados de exemplo. A Northwind e a AdventureWorks são dois bancos de dados de exemplo populares SQL Server.
 
- O **AdventureWorks** é o banco de dados de exemplo atual fornecido para produtos SQL Server. Você pode baixá-lo como um arquivo. MDF da [página AdventureWorks no CodePlex](http://msftdbprodsamples.codeplex.com/). Há versões normais e leves (LT) do banco de dados disponíveis aqui. Na maioria dos cenários, a versão de LT é preferida porque é menos complexa.
+ O **AdventureWorks** é o banco de dados de exemplo atual fornecido para produtos SQL Server. Você pode baixá-lo como um arquivo. MDF da [página AdventureWorks no CodePlex](https://archive.codeplex.com/?p=msftdbprodsamples). Há versões normais e leves (LT) do banco de dados disponíveis aqui. Na maioria dos cenários, a versão de LT é preferida porque é menos complexa.
 
  A **Northwind** é um banco de dados SQL Server relativamente simples que foi usado há muitos anos. Você pode baixá-lo como um arquivo. bak da [página do banco de dados Northwind no CodePlex](https://northwinddatabase.codeplex.com/). Para evitar problemas de permissões, descompacte o arquivo em uma nova pasta que não esteja sob sua pasta de usuário.
 
 #### <a name="to-restore-a-database-from-a-bak-file-in-visual-studio"></a>Para restaurar um banco de dados de um arquivo. bak no Visual Studio
 
-1. Quando você faz backup de um banco de dados Microsoft SQL Server, o resultado é um arquivo. bak. Para tornar o arquivo. bak utilizável novamente como um arquivo de banco de dados, ele deve ser *restaurado*. No menu principal, selecione **exibir**  > **pesquisador de objetos do SQL Server**. Se você não o vir, talvez seja necessário instalá-lo. Vá para o **painel de controle**  > **programas e recursos**, localize Microsoft Visual Studio 2015 e clique no botão **alterar** . Quando a lista de componentes instalados aparecer na janela do instalador, marque a caixa de seleção **pesquisador de objetos do SQL Server** e continue com a instalação.
+1. Quando você faz backup de um banco de dados Microsoft SQL Server, o resultado é um arquivo. bak. Para tornar o arquivo. bak utilizável novamente como um arquivo de banco de dados, ele deve ser *restaurado*. No menu principal, selecione **exibir** > **pesquisador de objetos do SQL Server**. Se você não o vir, talvez seja necessário instalá-lo. Vá para o **painel de controle** > **programas e recursos**, localize Microsoft Visual Studio 2015 e clique no botão **alterar** . Quando a lista de componentes instalados aparecer na janela do instalador, marque a caixa de seleção **pesquisador de objetos do SQL Server** e continue com a instalação.
 
 2. Em Pesquisador de Objetos do SQL Server, clique com o botão direito do mouse em qualquer mecanismo de banco de dados SQL Server (por exemplo, LocalDB) e selecione**nova consulta**.
 

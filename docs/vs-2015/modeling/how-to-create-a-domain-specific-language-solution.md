@@ -15,26 +15,26 @@ caps.latest.revision: 43
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: ddce137ebdf2cff0e029a1cbe8551c7437c58386
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 60813fcce28c71c91a3e0c2af9889261c8897a99
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72671669"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301403"
 ---
 # <a name="how-to-create-a-domain-specific-language-solution"></a>Como criar uma solução de linguagem específica do domínio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Uma DSL (linguagem específica de domínio) é criada usando uma solução de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] especializada.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Pré-requisitos
  Antes de iniciar este procedimento, você deve primeiro instalar estes componentes:
 
 |||
 |-|-|
-|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185579](http://go.microsoft.com/fwlink/?LinkID=185579)|
-|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185580](http://go.microsoft.com/fwlink/?LinkID=185580)|
-|SDK de Visualização e Modelagem do Visual Studio|[http://go.microsoft.com/fwlink/?LinkID=185581](http://go.microsoft.com/fwlink/?LinkID=185581)|
+|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185579](https://go.microsoft.com/fwlink/?LinkID=185579)|
+|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185580](https://go.microsoft.com/fwlink/?LinkID=185580)|
+|SDK de Visualização e Modelagem do Visual Studio|[http://go.microsoft.com/fwlink/?LinkID=185581](https://go.microsoft.com/fwlink/?LinkID=185581)|
 
 ## <a name="creating-a-domain-specific-language-solution"></a>Criando uma solução de linguagem específica de domínio
 
@@ -69,7 +69,7 @@ Uma DSL (linguagem específica de domínio) é criada usando uma solução de [!
 
    - Se você tiver usado a extensão de nome de arquivo em DSLs experimentais anteriores que não foram totalmente instaladas, você poderá limpá-las usando a ferramenta **redefinir a instância experimental** , que pode ser encontrada no menu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] SDK.
 
-   - Se outra extensão de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] que usa essa extensão de arquivo tiver sido totalmente instalada em seu computador, considere desinstalá-la. No menu **ferramentas** , clique em **Gerenciador de extensões**.
+   - Se outra extensão de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] que usa essa extensão de arquivo tiver sido totalmente instalada em seu computador, considere desinstalá-la. No menu **Ferramentas**, clique em **Gerenciador de Extensões**.
 
 4. Inspecione e, se necessário, ajuste, os campos nas páginas restantes do assistente. Quando estiver satisfeito com as configurações, clique em **concluir**. Para obter mais informações sobre as configurações, consulte [Designer de DSL páginas do assistente](#settings).
 
@@ -106,7 +106,7 @@ Digite uma nova extensão de arquivo.
 
      \- ou -
 
-- Se uma extensão de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] que usa essa extensão de arquivo tiver sido totalmente instalada em seu computador, desinstale-a. No menu **ferramentas** , clique em **Gerenciador de extensões**.
+- Se uma extensão de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] que usa essa extensão de arquivo tiver sido totalmente instalada em seu computador, desinstale-a. No menu **Ferramentas**, clique em **Gerenciador de Extensões**.
 
 ### <a name="product-settings-page"></a>Página de configurações do produto
  **Qual é o nome do produto ao qual a nova linguagem específica de domínio pertence?**
@@ -127,7 +127,7 @@ O padrão é um nome composto por seus nomes de produtos e da empresa.
 
  **Usar chave de nome forte existente** Use esta opção se você quiser integrar sua DSL com outro assembly.
 
- Para obter mais informações sobre nomes fortes, consulte [criando e usando assemblies de nome forte](http://go.microsoft.com/fwlink/?LinkId=186073).
+ Para obter mais informações sobre nomes fortes, consulte [criando e usando assemblies de nome forte](https://go.microsoft.com/fwlink/?LinkId=186073).
 
 ## <a name="see-also"></a>Consulte também
  [Como definir uma linguagem específica de domínio](../modeling/how-to-define-a-domain-specific-language.md) [ferramentas de linguagem específica de domínio Glossário](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

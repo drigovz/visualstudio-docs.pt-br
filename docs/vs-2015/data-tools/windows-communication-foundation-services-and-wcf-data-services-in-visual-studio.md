@@ -33,12 +33,12 @@ caps.latest.revision: 29
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 49c2dc46a3e78c5823e569aec80a3166c6e30c04
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c366ce44ab65ded62370dd3c219473089d5ca111
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72657825"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299563"
 ---
 # <a name="windows-communication-foundation-services-and-wcf-data-services-in-visual-studio"></a>Serviços do Windows Communication Foundation e WCF Data Services no Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ O Visual Studio fornece ferramentas para trabalhar com Windows Communication Fou
  [!INCLUDE[vsindigo](../includes/vsindigo-md.md)] é uma estrutura unificada para criar aplicativos distribuídos seguros, confiáveis, transacionados e interoperáveis. Ele substitui as tecnologias de comunicação entre processos mais antigas, como serviços Web ASMX, .NET Remoting, serviços corporativos (DCOM) e MSMQ. O WCF reúne a funcionalidade de todas essas tecnologias em um modelo de programação unificado. Isso simplifica a experiência de desenvolvimento de aplicativos distribuídos.
 
 #### <a name="what-are-wcf-data-services"></a>O que são WCF Data Services
- [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)] é uma implementação do padrão de protocolo OData (Open Data).  WCF Data Services permite que você exponha dados tabulares como um conjunto de APIs REST, permitindo que você retorne dados usando verbos HTTP padrão, como GET, POST, PUT ou DELETE. No lado do servidor, WCF Data Services estão sendo substituídas por [ASP.NET Web API](http://www.asp.net/web-api) para criar novos serviços OData. A biblioteca de cliente do WCF Data Services continua sendo uma boa opção para consumir serviços OData em um aplicativo .NET do Visual Studio **( &#124; Project Adicionar referência de serviço**). Para obter mais informações, consulte [WCF Data Services 4,5](http://go.microsoft.com/fwlink/?LinkID=119952).
+ [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)] é uma implementação do padrão de protocolo OData (Open Data).  WCF Data Services permite que você exponha dados tabulares como um conjunto de APIs REST, permitindo que você retorne dados usando verbos HTTP padrão, como GET, POST, PUT ou DELETE. No lado do servidor, WCF Data Services estão sendo substituídas por [ASP.NET Web API](https://dotnet.microsoft.com/apps/aspnet/apis) para criar novos serviços OData. A biblioteca de cliente do WCF Data Services continua sendo uma boa opção para consumir serviços OData em um aplicativo .NET do Visual Studio **( &#124; Project Adicionar referência de serviço**). Para obter mais informações, consulte [WCF Data Services 4,5](https://go.microsoft.com/fwlink/?LinkID=119952).
 
 ### <a name="wcf-programming-model"></a>Modelo de programação do WCF
  O modelo de programação do WCF se baseia na comunicação entre duas entidades: um serviço WCF e um cliente WCF. O modelo de programação é encapsulado no namespace <xref:System.ServiceModel> no [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].
@@ -102,7 +102,7 @@ O Visual Studio fornece ferramentas para trabalhar com Windows Communication Fou
  Para saber mais sobre o host de serviço WCF, consulte [host de serviço WCF (WcfSvcHost. exe)](https://msdn.microsoft.com/library/8643a63d-a357-4c39-bd6c-cdfdf71e370e).
 
 #### <a name="wcf-test-client"></a>Cliente de teste do WCF
- A ferramenta de cliente de teste do WCF permite que você insira parâmetros de teste, envie essa entrada para um serviço WCF e exiba a resposta que o serviço envia de volta. Ele fornece uma experiência de teste de serviço conveniente quando você a combina com o host de serviço WCF. A ferramenta pode ser encontrada na pasta \Common7\IDE, que para o Visual Studio 2015 instalado na unidade C: está aqui: **c:\Arquivos de programas (x86) \Microsoft Visual Studio 14.0 \ Common7\IDE \\** .
+ A ferramenta de cliente de teste do WCF permite que você insira parâmetros de teste, envie essa entrada para um serviço WCF e exiba a resposta que o serviço envia de volta. Ele fornece uma experiência de teste de serviço conveniente quando você a combina com o host de serviço WCF. A ferramenta pode ser encontrada na pasta \Common7\IDE, que para o Visual Studio 2015 instalado na unidade C: está aqui: **c:\Arquivos de programas (x86) \Microsoft Visual Studio 14.0 \ Common7\IDE\\** .
 
  Quando você pressiona F5 para depurar um projeto de serviço WCF, o cliente de teste do WCF é aberto e exibe uma lista de pontos de extremidade de serviço que são definidos no arquivo de configuração. Você pode testar os parâmetros e iniciar o serviço e repetir esse processo para testar e validar continuamente seu serviço.
 
@@ -156,7 +156,7 @@ O Visual Studio fornece ferramentas para trabalhar com Windows Communication Fou
 
      Se a referência de serviço fornecer vários pontos de extremidade, haverá duas ou mais marcas de `<Endpoint`.
 
-4. Dentro da marca `<EndPoint>`, você encontrará um parâmetro `name="`*SomeService* `"` (em que *SomeService* representa um nome de ponto de extremidade). Esse é o nome do ponto de extremidade que pode ser passado para a sobrecarga de `endpointConfigurationName As String` de um construtor para uma referência de serviço.
+4. Dentro da marca `<EndPoint>`, você encontrará um parâmetro `name="`*SomeService*`"` (em que *SomeService* representa um nome de ponto de extremidade). Esse é o nome do ponto de extremidade que pode ser passado para a sobrecarga de `endpointConfigurationName As String` de um construtor para uma referência de serviço.
 
 ## <a name="how-to-call-a-service-method-asynchronously"></a>Como: chamar um método de serviço de forma assíncrona
  A maioria dos métodos nos serviços Windows Communication Foundation (WCF) pode ser chamada de forma síncrona ou assíncrona. Chamar um método de forma assíncrona permite que seu aplicativo continue funcionando enquanto o método está sendo chamado quando ele opera em uma conexão lenta.

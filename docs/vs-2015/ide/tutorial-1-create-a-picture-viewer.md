@@ -9,12 +9,12 @@ caps.latest.revision: 21
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: ad57a05e45b7e9acd3db455f0a8849166dc3c735
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9c56eb091e6d4efbe33dc8f05d5040272307c274
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654758"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299906"
 ---
 # <a name="tutorial-1-create-a-picture-viewer"></a>Tutorial 1: Criar um visualizador de imagens
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,9 +39,7 @@ Neste tutorial, você cria um programa que carrega uma imagem de um arquivo e a 
 
   ![Imagem que você cria neste tutorial](../ide/media/express-pictureviewerdone.png "Express_PictureViewerDone") Imagem que você cria neste tutorial
 
-  Para baixar uma versão concluída do exemplo, consulte [Exemplo de tutorial completo do Visualizador de Imagens](http://code.msdn.microsoft.com/Complete-Picture-Viewer-7d91d3a8).
-
-  ![link para vídeo](../data-tools/media/playvideo.gif "PlayVideo") Para obter uma versão de vídeo deste tópico, consulte [como fazer: criar um visualizador de imagens no Visual Basic?](http://go.microsoft.com/fwlink/?LinkId=205207) ou [como faço para: criar um visualizador de C#imagens no?](http://go.microsoft.com/fwlink/?LinkId=205198).
+  ![link para vídeo](../data-tools/media/playvideo.gif "PlayVideo") Para obter uma versão de vídeo deste tópico, consulte [como fazer: criar um visualizador de imagens no Visual Basic?](https://go.microsoft.com/fwlink/?LinkId=205207) ou [como faço para: criar um visualizador de C#imagens no?](https://go.microsoft.com/fwlink/?LinkId=205198).
 
 > [!NOTE]
 > Esses vídeos usam uma versão anterior do Visual Studio, portanto, existem pequenas diferenças em alguns comandos de menu e em outros elementos da interface do usuário. No entanto, os conceitos e procedimentos funcionam de maneiras semelhantes na versão atual do Visual Studio. O Visual C# e o Visual Basic são abordados neste tutorial, portanto concentre-se nas informações específicas da linguagem de programação que você está usando.

@@ -12,12 +12,12 @@ caps.latest.revision: 79
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: b67f74397b8f3c3e410c4282d8a74b7309bc1bc9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 505c17635c80a165a7a094d3ce2bec3c32bd7101
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72668630"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297689"
 ---
 # <a name="modeling-sdk-for-visual-studio---domain-specific-languages"></a>SDK de Modelagem para Visual Studio - linguagens específicas ao domínio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,11 +41,11 @@ Usando o SDK de modelagem para [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] (MSD
   Você pode personalizar e estender todos esses recursos. Suas extensões são integradas de tal forma que você ainda pode atualizar a definição de DSL e gerar novamente os recursos sem perder suas extensões.
 
 ## <a name="samples-and-the-latest-information"></a>Exemplos e as informações mais recentes
- [Baixe o SDK de modelagem para o Visual Studio 2015](http://www.microsoft.com/download/details.aspx?id=48148)
+ [Baixe o SDK de modelagem para o Visual Studio 2015](https://www.microsoft.com/download/details.aspx?id=48148)
 
- [Exemplos](http://go.microsoft.com/fwlink/?LinkId=186128) do SDK de modelagem do Visual Studio.
+ [Exemplos](https://go.microsoft.com/fwlink/?LinkId=186128) do SDK de modelagem do Visual Studio.
 
- Para obter orientação sobre técnicas avançadas e solução de problemas, visite o [Fórum de extensibilidade das ferramentas de modelagem de & de DSL do Visual Studio](http://go.microsoft.com/fwlink/?LinkID=186074).
+ Para obter orientação sobre técnicas avançadas e solução de problemas, visite [Fórum de extensibilidade de ferramentas de modelagem & de DSL do Visual Studio](https://go.microsoft.com/fwlink/?LinkID=186074).
 
 ## <a name="in-this-section"></a>Nesta seção
  [Introdução às linguagens específicas de domínio](../modeling/getting-started-with-domain-specific-languages.md)

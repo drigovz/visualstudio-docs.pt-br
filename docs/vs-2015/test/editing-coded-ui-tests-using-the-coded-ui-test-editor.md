@@ -12,19 +12,19 @@ ms.assetid: 76435c4b-593e-43a3-a9fe-709a7f9f5e0f
 caps.latest.revision: 42
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 41b589526fb1f864c97571db893506bc612893ff
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d408f21555deee835cd8f00926bb9c73fd3167f3
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72660603"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74302649"
 ---
 # <a name="editing-coded-ui-tests-using-the-coded-ui-test-editor"></a>Editando testes de interface de usuário codificada usando o editor de teste de interface de usuário codificada
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 o Editor de testes de interface de usuário codificada permite modificar facilmente os testes de IU codificados. Ao usar o Editor de Teste de IU Codificado, é possível localizar, exibir e editar as propriedades de métodos de teste e ações de interface do usuário. Além disso, é possível utilizar o mapa de controles de interface do usuário para exibir e editar os controles correspondentes.
 
- **Requirements**
+ **Requisitos**
 
 - Visual Studio Enterprise
 
@@ -65,7 +65,7 @@ o Editor de testes de interface de usuário codificada permite modificar facilme
 > Ao selecionar uma ação de interface do usuário localizada em um método do painel **Ações de interface do usuário**, o controle correspondente será realçado. Também é possível modificar a ação de interface do usuário ou as propriedades dos controles.
 
  *Não vejo* o Editor de Teste de IU Codificado.
-Você pode estar usando uma versão do Visual Studio Enterprise anterior a 2012. O Editor de Teste de IU Codificado também estava disponível no Feature Pack 2 do Visual Studio 2010, com uma assinatura do MSDN. [!INCLUDE[crdefault](../includes/crdefault-md.md)][Feature Pack 2 do Microsoft Visual Studio 2010](http://go.microsoft.com/fwlink/?LinkID=204119).
+Você pode estar usando uma versão do Visual Studio Enterprise anterior a 2012. O Editor de Teste de IU Codificado também estava disponível no Feature Pack 2 do Visual Studio 2010, com uma assinatura do MSDN. [!INCLUDE[crdefault](../includes/crdefault-md.md)][Feature Pack 2 do Microsoft Visual Studio 2010](https://go.microsoft.com/fwlink/?LinkID=204119).
 
 ## <a name="CodedUITestEditor_EditActionAndControlProperties"></a> Modificar propriedades de ação de interface do usuário e as propriedades de controle correspondentes
  Por meio do Editor de Teste de IU Codificado, é possível localizar e exibir rapidamente todas as ações de interface do usuário de métodos de teste. Ao selecionar a ação de interface do usuário no editor, o controle correspondente será realçado automaticamente. Do mesmo modo, ao selecionar um controle, as ações de interface do usuário correspondentes serão realçadas. Selecionar uma ação ou controle de interface do usuário facilita o uso da janela Propriedades para modificar as propriedades correspondentes.
@@ -126,7 +126,7 @@ Você pode estar usando uma versão do Visual Studio Enterprise anterior a 2012.
 
 - ![Dica](../test/media/tip.png "Dica") Você pode renomear o novo método. Selecione-o no painel Ações de interface do usuário e escolha o botão **Renomear** na barra de ferramentas do Editor de Teste de IU Codificado.
 
-   \- ou -
+   - ou -
 
    Abra o menu de atalho do novo método de teste e escolha **Renomear**.
 
@@ -203,15 +203,15 @@ Você pode estar usando uma versão do Visual Studio Enterprise anterior a 2012.
 ## <a name="external-resources"></a>Recursos externos
 
 ### <a name="guidance"></a>Diretrizes
- [Testes de Entrega Contínua com o Visual Studio 2012 – Capítulo 2: Teste de Unidade: Testando o Interior](http://go.microsoft.com/fwlink/?LinkID=255188)
+ [Testes de Entrega Contínua com o Visual Studio 2012 – Capítulo 2: Teste de Unidade: Testando o Interior](https://go.microsoft.com/fwlink/?LinkID=255188)
 
 ### <a name="faq"></a>Perguntas Frequentes
- [Perguntas frequentes sobre testes de IU codificados – 1](http://go.microsoft.com/fwlink/?LinkID=230576)
+ [Perguntas frequentes sobre testes de IU codificados – 1](https://go.microsoft.com/fwlink/?LinkID=230576)
 
- [Perguntas frequentes sobre testes de IU codificados – 2](http://go.microsoft.com/fwlink/?LinkID=230578)
+ [Perguntas frequentes sobre testes de IU codificados – 2](https://go.microsoft.com/fwlink/?LinkID=230578)
 
 ### <a name="forum"></a>Fórum
- [Teste de Automação de interface do usuário do Visual Studio (inclui CodedUI)](http://go.microsoft.com/fwlink/?LinkID=224497)
+ [Teste de Automação de interface do usuário do Visual Studio (inclui CodedUI)](https://go.microsoft.com/fwlink/?LinkID=224497)
 
 ## <a name="see-also"></a>Consulte também
- [Use a automação da interface do usuário para testar seu código](../test/use-ui-automation-to-test-your-code.md) [criando testes de IU codificados](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate) [criando um teste de interface do usuário codificado por dados](../test/creating-a-data-driven-coded-ui-test.md) [gerando um teste de interface do usuário codificado de uma ação existente](https://msdn.microsoft.com/library/56736963-9027-493b-b5c4-2d4e86d1d497) [: criando, editando e mantendo um teste de IU codificado ](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
+ [Use a automação da interface do usuário para testar seu código](../test/use-ui-automation-to-test-your-code.md) [criando testes de IU codificados](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate) [criando um teste de interface do usuário codificado por dados](../test/creating-a-data-driven-coded-ui-test.md) [gerando um teste de interface do usuário codificado de uma ação existente](https://msdn.microsoft.com/library/56736963-9027-493b-b5c4-2d4e86d1d497) [: criando, editando e mantendo um teste de IU codificado](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)

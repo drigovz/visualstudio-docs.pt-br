@@ -23,12 +23,12 @@ caps.latest.revision: 48
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 04b6573b6cd04b5a061a40025a9872d9972e35cb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 1ed9a341e1b0f7247175e62aceafc6051f83e8f9
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72645479"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300153"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Como adicionar ou remover referências usando o Gerenciador de Referências
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ ms.locfileid: "72645479"
 - Procurar, com o subgrupo Recente.
 
 ## <a name="assemblies-tab"></a>Guia Assemblies
- A guia **Assemblies** lista todos os assemblies do .NET Framework que estão disponíveis para referência. A guia **Assemblies** não lista os assemblies do GAC (cache de assembly global), pois os assemblies no GAC fazem parte do ambiente de tempo de execução. Se você implantar um aplicativo que contém uma referência a um assembly registrado no GAC, o assembly não será implantado ou copiado com o aplicativo, independentemente da configuração do Local da Cópia. Para obter mais informações, consulte [Referências do projeto](http://go.microsoft.com/fwlink/?LinkId=238512).
+ A guia **Assemblies** lista todos os assemblies do .NET Framework que estão disponíveis para referência. A guia **Assemblies** não lista os assemblies do GAC (cache de assembly global), pois os assemblies no GAC fazem parte do ambiente de tempo de execução. Se você implantar um aplicativo que contém uma referência a um assembly registrado no GAC, o assembly não será implantado ou copiado com o aplicativo, independentemente da configuração do Local da Cópia. Para obter mais informações, consulte [Referências do projeto](https://go.microsoft.com/fwlink/?LinkId=238512).
 
  Ao adicionar manualmente uma referência a qualquer namespace EnvDTE (EnvDTE, EnvDTE80, EnvDTE90, EnvDTE90a ou EnvDTE100), defina a propriedade de Inserir Tipos Interop da referência como Falso na janela Propriedades. Definir essa propriedade como Verdadeiro poderá causar problemas de compilação devido a determinadas propriedades de EnvDTE que não podem ser inseridas.
 
@@ -141,7 +141,7 @@ ms.locfileid: "72645479"
 ## <a name="solution-tab"></a>Guia Solução
  A guia Solução lista todos os projetos compatíveis dentro da solução atual, na subguia Projetos.
 
- Um projeto pode referenciar outro projeto que tenha como destino uma versão diferente do .NET Framework. Por exemplo, você pode criar um projeto que tenha como destino o [!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)], mas que faça referência a um assembly que foi criado para o .NET Framework 2. Porém, o projeto do .NET Framework 2 não pode referenciar um projeto do [!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)]. Para obter mais informações, consulte [Definindo uma Versão Específica do .NET Framework como Destino](../ide/targeting-a-specific-dotnet-framework-version.md).
+ Um projeto pode referenciar outro projeto que tenha como destino uma versão diferente do .NET Framework. Por exemplo, você pode criar um projeto que tenha como destino o [!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)], mas que faça referência a um assembly que foi criado para o .NET Framework 2. Porém, o projeto do .NET Framework 2 não pode referenciar um projeto do [!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)]. Para obter mais informações, consulte [Definindo uma versão específica do .NET Framework como destino](../ide/targeting-a-specific-dotnet-framework-version.md).
 
  Um projeto que tem como destino o [!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)] é incompatível com um projeto que tenha como destino o [!INCLUDE[net_client_v40_long](../includes/net-client-v40-long-md.md)].
 
@@ -156,7 +156,7 @@ ms.locfileid: "72645479"
 
 - **[!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] Projetos gerenciados pelo aplicativo**: os projetos do aplicativo [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] podem produzir binários WinMD definindo Propriedades do Projeto &#124; Tipo de Saída = Arquivo WinMD. O nome do arquivo WinMD deve ser o namespace do superconjunto de todos os namespaces existentes dentro dele. Por exemplo, se um projeto consiste nos namespaces A.B e A.B.C, os possíveis nomes para o WinMD emitido serão A.winmd e A.B.winmd. Se um usuário entrar em um valor de Propriedade do Projeto &#124; Nome do Assembly ou Propriedades do Projeto &#124; Namespace não contíguo ao conjunto de namespaces no projeto ou se não houver nenhum namespace de superconjunto em um projeto, um aviso de build será gerado: “A.winmd” não é um nome de arquivo .winmd válido para esse assembly. Todos os tipos em um arquivo de metadados do Windows devem existir em um namespace secundário do nome do arquivo. Tipos que não existem em um namespace secundário do nome de arquivo não poderão ser localizados no runtime. Nesse assembly, o menor namespace comum é “CSWSClassLibrary1”. A área de trabalho do Visual Basic ou um projeto do Visual C# só podem consumir WinMDs gerados usando [!INCLUDE[win8](../includes/win8-md.md)] SDKs, conhecidos como primeira parte do WinMDs, e não podem gerar WinMDs.
 
-- **[!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] Projetos nativos do aplicativo**: um arquivo WinMD nativo consiste apenas em metadados. Sua implementação existe em um arquivo separado da DLL. É possível gerar binários nativos escolhendo o modelo de projeto do componente do Tempo de Execução do Windows na caixa de diálogo **Novo Projeto** ou em um projeto em branco e modificando as propriedades do projeto para gerar um arquivo WinMD. Se o projeto consiste em namespaces separados, um erro de compilação dirá ao usuário para combinar os namespaces ou executar a ferramenta MSMerge.
+- **[!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] Projetos nativos do aplicativo**: um arquivo WinMD nativo consiste apenas em metadados. Sua implementação existe em um arquivo separado da DLL. É possível gerar binários nativos escolhendo o modelo de projeto do componente do Windows Runtime na caixa de diálogo **Novo Projeto** ou em um projeto em branco e modificando as propriedades do projeto para gerar um arquivo WinMD. Se o projeto consiste em namespaces separados, um erro de compilação dirá ao usuário para combinar os namespaces ou executar a ferramenta MSMerge.
 
   A guia Windows consiste em dois subgrupos.
 
@@ -188,7 +188,7 @@ ms.locfileid: "72645479"
 ## <a name="browse-button"></a>Botão Procurar
  É possível usar o botão **Procurar** para procurar um componente no sistema de arquivos.
 
- Um projeto pode referenciar um componente que tenha como destino uma versão diferente do .NET Framework. Por exemplo, você pode criar um aplicativo que tem como destino o .NET Framework 4 Client Profile, que referencia um componente que tem como destino o .NET Framework 2. Para obter mais informações, consulte [Definindo uma Versão Específica do .NET Framework como Destino](../ide/targeting-a-specific-dotnet-framework-version.md).
+ Um projeto pode referenciar um componente que tenha como destino uma versão diferente do .NET Framework. Por exemplo, você pode criar um aplicativo que tem como destino o .NET Framework 4 Client Profile, que referencia um componente que tem como destino o .NET Framework 2. Para obter mais informações, consulte [Definindo uma versão específica do .NET Framework como destino](../ide/targeting-a-specific-dotnet-framework-version.md).
 
  Você deve evitar adicionar referências de arquivo às saídas de outro projeto na mesma solução, porque essa tática pode causar erros de compilação. Em vez disso, use a guia **Solução** da caixa de diálogo **Gerenciador de Referências** para criar referências projeto a projeto. Essa tática torna o desenvolvimento em equipe mais fácil, permitindo um melhor gerenciamento das bibliotecas de classes criadas em seus projetos. Para obter mais informações, consulte [Solução de problemas de referências desfeitas](../ide/troubleshooting-broken-references.md).
 
@@ -196,7 +196,7 @@ ms.locfileid: "72645479"
 
  Ao fazer uma referência de arquivo a um WinMD, o layout previsto é que os arquivos *FileName*.winmd, *FileName*.dll e *FileName*.pri sejam colocados um ao lado do outro. Se você referenciar um WinMD nos seguintes cenários, um conjunto incompleto de arquivos será copiado no diretório de saída do projeto e, consequentemente, falhas de compilação e de runtime ocorrerão.
 
-- **Componente nativo**: um projeto nativo criará um WinMD para cada conjunto não contínuo de namespaces e uma DLL que consiste na implementação. O WinMDs terá nomes distintos. Ao fazer referência a esse arquivo de componente nativo, o MSBuild não reconhecerá que os WinMDs nomeados de forma diferente formam um componente. Consequentemente, somente o *FileName*.dll e *FileName*.winmd de nome idêntico serão copiados, e ocorrerão erros de tempo de execução. Para resolver esse problema, crie uma SDK de Extensão. Para obter mais informações, consulte [Criando um Software Development Kit](../extensibility/creating-a-software-development-kit.md).
+- **Componente nativo**: um projeto nativo criará um WinMD para cada conjunto não contínuo de namespaces e uma DLL que consiste na implementação. O WinMDs terá nomes distintos. Ao fazer referência a esse arquivo de componente nativo, o MSBuild não reconhecerá que os WinMDs nomeados de forma diferente formam um componente. Consequentemente, somente o *FileName*.dll e *FileName*.winmd de nome idêntico serão copiados, e ocorrerão erros de runtime. Para resolver esse problema, crie uma SDK de Extensão. Para obter mais informações, consulte [Criando um Software Development Kit](../extensibility/creating-a-software-development-kit.md).
 
 - **Consumindo controles**: no mínimo, um controle XAML consiste em um *FileName*.winmd, *FileName*.dll, *FileName*.pri, *XamlName*.xaml e *ImageName*.jpg. Quando o projeto é compilado, os arquivos de recursos associados à referência de arquivo não serão copiados no diretório de saída do projeto, e apenas *FileName*.winmd, *FileName*.dll e *FileName*.pri serão copiados. Um erro de build é registrado para informar ao usuário que os recursos *XamlName*.xaml e *ImageName*.jpg estão ausentes. Para ter êxito, o usuário precisará copiar manualmente esses arquivos de recurso no diretório de saída do projeto para a compilação e a depuração/runtime. Para resolver esse problema, crie um SDK de Extensão seguindo as etapas em [Criando um Software Development Kit](../extensibility/creating-a-software-development-kit.md) ou edite o arquivo de projeto para adicionar a seguinte propriedade:
 

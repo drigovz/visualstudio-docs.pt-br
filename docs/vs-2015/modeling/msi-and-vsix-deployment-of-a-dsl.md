@@ -9,12 +9,12 @@ caps.latest.revision: 4
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 749763a9a2bb742bb3670050010f497c5c15fba4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 4917fc81f439ef0185a753fb1c4c85e460eb7681
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72668592"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297742"
 ---
 # <a name="msi-and-vsix-deployment-of-a-dsl"></a>Implantação de uma DSL por MSI e VSIX
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ Você pode instalar uma linguagem específica de domínio em seu próprio comput
 
 |Método|Benefícios|
 |------------|--------------|
-|VSX (extensão de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)])|Muito fácil de implantar: Copie e execute o arquivo **. vsix** do projeto DslPackage.<br /><br /> Para obter mais informações [, consulte Instalando e desinstalando uma DSL usando o VSX](#Installing).|
+|VSX (extensão de[!INCLUDE[vsprvs](../includes/vsprvs-md.md)])|Muito fácil de implantar: Copie e execute o arquivo **. vsix** do projeto DslPackage.<br /><br /> Para obter mais informações [, consulte Instalando e desinstalando uma DSL usando o VSX](#Installing).|
 |MSI (arquivo do instalador)|-Permite que o usuário abra [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] clicando duas vezes em um arquivo DSL.<br />-Associa um ícone ao tipo de arquivo DSL no computador de destino.<br />-Associa um XSD (esquema XML) ao tipo de arquivo DSL. Isso evita avisos quando o arquivo é carregado em [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].<br /><br /> Você deve adicionar um projeto de instalação à sua solução para criar um MSI.<br /><br /> Para obter mais informações, consulte [implantando uma DSL usando um arquivo MSI](#msi).|
 
 ## <a name="Installing"></a>Instalando e desinstalando uma DSL usando o VSX
@@ -38,7 +38,7 @@ Você pode instalar uma linguagem específica de domínio em seu próprio comput
 
     1. No **Gerenciador de soluções**, clique com o botão direito do mouse no projeto **DslPackage** e clique em **abrir pasta no Windows Explorer**.
 
-    2. Localize o arquivo **bin \\ \* \\** _seuprojeto_ **. DslPackage. vsix**
+    2. Localize o arquivo **bin\\\*\\** _seuprojeto_ **. DslPackage. vsix**
 
 2. Copie o arquivo **. vsix** para o computador de destino no qual você deseja instalar a DSL. Este pode ser seu próprio computador ou outro.
 
@@ -56,7 +56,7 @@ Você pode instalar uma linguagem específica de domínio em seu próprio comput
 
 #### <a name="to-uninstall-a-dsl-that-was-installed-by-using-vsx"></a>Para desinstalar uma DSL que foi instalada usando o VSX
 
-1. No menu **ferramentas** , clique em **Gerenciador de extensões**.
+1. No menu **Ferramentas**, clique em **Gerenciador de Extensões**.
 
 2. Expanda **extensões instaladas**.
 
@@ -71,7 +71,7 @@ Você pode instalar uma linguagem específica de domínio em seu próprio comput
 
  Para obter mais informações sobre arquivos MSI e outras opções de implantação, consulte [Implantando aplicativos, serviços e componentes](../deployment/deploying-applications-services-and-components.md).
 
- Para criar um MSI, você adiciona um projeto de instalação à sua solução de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. O método mais fácil de criar um projeto de instalação é usar o modelo CreateMsiSetupProject.tt, que pode ser baixado do [site do VMSDK](http://go.microsoft.com/fwlink/?LinkID=186128).
+ Para criar um MSI, você adiciona um projeto de instalação à sua solução de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. O método mais fácil de criar um projeto de instalação é usar o modelo CreateMsiSetupProject.tt, que pode ser baixado do [site do VMSDK](https://go.microsoft.com/fwlink/?LinkID=186128).
 
 #### <a name="to-deploy-a-dsl-in-an-msi"></a>Para implantar uma DSL em um MSI
 
@@ -99,17 +99,17 @@ Você pode instalar uma linguagem específica de domínio em seu próprio comput
 
    - No menu **Compilar** , abra **Configuration Manager**e selecione a configuração que você deseja compilar, como **liberar** ou **depurar**.
 
-4. Acesse o [SDK de visualização e modelagem Home Page](http://go.microsoft.com/fwlink/?LinkID=186128)e, na guia **Downloads** , baixe **CreateMsiSetupProject.tt**.
+4. Acesse o [SDK de visualização e modelagem Home Page](https://go.microsoft.com/fwlink/?LinkID=186128)e, na guia **Downloads** , baixe **CreateMsiSetupProject.tt**.
 
 5. Adicione **CreateMsiSetupProject.tt** ao seu projeto DSL.
 
     [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] criará um arquivo chamado **CreateMsiSetupProject. vdproj**.
 
-6. No Windows Explorer, copie DSL \\ *. vdproj para uma nova pasta chamada setup.
+6. No Windows Explorer, copie Dsl\\\*.vdproj para uma nova pasta denominada programa de instalação.
 
     (Se desejar, agora você pode excluir CreateMsiSetupProject.tt de seu projeto DSL.)
 
-7. Em **Gerenciador de soluções**, adicione **a instalação \\ \*. vdproj** como um projeto existente.
+7. Em **Gerenciador de soluções**, adicione **a instalação\\\*. vdproj** como um projeto existente.
 
 8. No menu **projeto** , clique em **dependências do projeto**.
 
@@ -129,7 +129,7 @@ Você pode instalar uma linguagem específica de domínio em seu próprio comput
 
     - Quando você clica duas vezes no arquivo, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] é iniciado e abre o arquivo DSL em seu editor DSL.
 
-    Se preferir, você pode criar o projeto de instalação manualmente, em vez de usar o modelo de texto. Para obter uma explicação que inclui esse procedimento, consulte o capítulo 5 do [laboratório de visualização e do SDK de modelagem](http://go.microsoft.com/fwlink/?LinkId=208878).
+    Se preferir, você pode criar o projeto de instalação manualmente, em vez de usar o modelo de texto. Para obter uma explicação que inclui esse procedimento, consulte o capítulo 5 do [laboratório de visualização e do SDK de modelagem](https://go.microsoft.com/fwlink/?LinkId=208878).
 
 #### <a name="to-uninstall-a-dsl-that-was-installed-from-an-msi"></a>Para desinstalar uma DSL que foi instalada a partir de um MSI
 

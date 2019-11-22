@@ -1,5 +1,5 @@
 ---
-title: 'DA0006: Substituir Equals() por tipos de valor | Microsoft Docs'
+title: 'DA0006: substituir Equals() para tipos de valor | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,21 +14,21 @@ caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2229edad7ff338251fea23740343e23f87aa2792
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ae18d4cb69de5faa4289a99cbb53b273443b494a
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68158672"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300993"
 ---
-# <a name="da0006-override-equals-for-value-types"></a>DA0006: Substituir Equals() por tipos de valor
+# <a name="da0006-override-equals-for-value-types"></a>DA0006: substituir Equals() para tipos de valor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Id da regra | DA0006 |  
-| Categoria de |. Uso do .NET Framework |  
-| Métodos de criação de perfil | Amostragem |  
+ID da regra | DA0006 |  
+| Categoria |. Uso do .NET Framework |  
+| Métodos Profiiling | Amostragem |  
 | Mensagem | Substituir Equals e operador de igualdade em tipos de valor. |  
-| Tipo de mensagens | Aviso |  
+| Tipo de mensagens das | Aviso |  
   
 ## <a name="cause"></a>Causa  
  Chamadas para o método Equals ou os operadores de igualdade de um tipo de valor público são uma parte significativa dos dados de criação de perfil. Considere a implementação de um método mais eficiente.  
@@ -36,7 +36,7 @@ Id da regra | DA0006 |
 ## <a name="rule-description"></a>Descrição da Regra  
  Para tipos de valor, a implementação herdada de Equals usa a biblioteca <xref:System.Reflection> e compara o conteúdo de todos os campos do tipo. Reflection é computacionalmente cara, e pode ser desnecessário comparar a igualdade de cada campo. Se você espera que os usuários comparem ou classifiquem instâncias ou as usem como chaves de tabela de hash, o tipo de valor deverá implementar Equals. Se a linguagem de programação der suporte à sobrecarga de operador, também é necessário fornecer uma implementação dos operadores de igualdade e desigualdade.  
   
- Para obter mais informações sobre como substituir Equals e os operadores de igualdade, consulte [Diretrizes para Implementação de Equals e o Operador de Igualdade (= =)](http://go.microsoft.com/fwlink/?LinkId=177818).  
+ Para obter mais informações sobre como substituir Equals e os operadores de igualdade, consulte [Diretrizes para Implementação de Equals e o Operador de Igualdade (= =)](https://go.microsoft.com/fwlink/?LinkId=177818).  
   
 ## <a name="how-to-investigate-a-warning"></a>Como investigar um aviso  
- Para obter um exemplo de implementação de Equals e operadores de igualdade, confira a regra de análise de código [CA1815: Substituir equals e operador equals em tipos de valor](../code-quality/ca1815-override-equals-and-operator-equals-on-value-types.md)
+ Para obter um exemplo de implementação de Equals e operadores de igualdade, consulte a regra de análise de código [CA1815: substituir Equals e operador Equals em tipos de valor](../code-quality/ca1815-override-equals-and-operator-equals-on-value-types.md)

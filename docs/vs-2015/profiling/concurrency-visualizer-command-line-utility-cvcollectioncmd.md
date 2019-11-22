@@ -11,12 +11,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5f664b1bf2af89d8c3f6e06792039571f4211236
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 23c6f008050cc2695a5b86d2164093823726a7b2
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65692752"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300653"
 ---
 # <a name="concurrency-visualizer-command-line-utility-cvcollectioncmd"></a>Utilitário de linha de comando Visualizador de Simultaneidade (CVCollectionCmd)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,10 +24,10 @@ ms.locfileid: "65692752"
 É possível usar o utilitário de linha de comanda Visualização Simultânea (CVCollectionCmd.exe) para coletar rastreamentos na linha de comando para que seja possível exibi-los na Visualização Simultânea do Visual Studio. As ferramentas podem ser usadas em computadores que não tenham o Visual Studio instalado.  
   
 > [!NOTE]
-> A partir do Visual Studio 2013, a Visualização Simultânea é uma extensão opcional. (Anteriormente, ela havia sido incluída no Visual Studio.) É possível baixar a [Coleção de Ferramentas de Visualização Simultânea para Visual Studio 2015](http://www.microsoft.com/download/details.aspx?id=49103) no Centro de Download.  
+> A partir do Visual Studio 2013, a Visualização Simultânea é uma extensão opcional. (Anteriormente, ele tinha sido incluído no Visual Studio.) Você pode baixar as [ferramentas da coleção do Visualizador de simultaneidade para o Visual Studio 2015](https://www.microsoft.com/download/details.aspx?id=49103) do centro de download.  
   
 ## <a name="download-the-concurrency-visualizer-command-line-utility"></a>Baixar o utilitário de linha de comando Visualização Simultânea  
- Para baixar e instalar o utilitário de linha de comando, vá para [Coleção de Ferramentas de Visualização Simultânea para Visual Studio 2015](http://www.microsoft.com/download/details.aspx?id=49103) e siga as instruções. Por padrão, CVCollectionCmd.exe é instalado em %ProgramFiles%\Microsoft Concurrency Visualizer Collection Tools\ (%ProgramFiles(x86)%\Microsoft Concurrency Visualizer Collection Tools\ em computadores x64).  
+ Para baixar e instalar o utilitário de linha de comando, vá para [Coleção de Ferramentas de Visualização Simultânea para Visual Studio 2015](https://www.microsoft.com/download/details.aspx?id=49103) e siga as instruções. Por padrão, CVCollectionCmd.exe é instalado em %ProgramFiles%\Microsoft Concurrency Visualizer Collection Tools\ (%ProgramFiles(x86)%\Microsoft Concurrency Visualizer Collection Tools\ em computadores x64).  
   
 ## <a name="collect-a-trace-with-cvcollectioncmd"></a>Coletar um rastreamento usando CVCollectionCmd  
  Você pode coletar um rastreamento iniciando o aplicativo com CVCollectionCmd ou se conectando a ele. Consulte a referência aos comandos abaixo para ver as opções. Por exemplo  
@@ -46,12 +46,12 @@ ms.locfileid: "65692752"
 |Consulta|Retorna se a coleta pode ser iniciada.|Nenhum|0 se a coleta estiver pronta para começar.<br /><br /> 1 se a coleta já estiver em andamento.<br /><br /> 2 se a coleta não estiver em andamento, mas uma ou mais sessões [ETW](https://msdn.microsoft.com/library/ac99a063-e2d2-40cc-b659-d23c2f783f92) necessárias já estiverem habilitadas.|  
 |Inicializar|Executa o processo especificado na Visualização Simultânea.|O caminho do executável.|0 se a execução foi bem-sucedida.<br /><br /> 1 se a execução falhou porque não foi possível iniciar o aplicativo de destino.<br /><br /> 13 se a execução falhou porque CVCollectionCmd não tem permissões suficientes para gravar no diretório de saída especificado.|  
 |Attach|Começa coletando um rastreamento em todo o sistema. Do contrário, se conecta a um processo, se algum for especificado.|Nenhum.|0 se o anexo for bem-sucedido.<br /><br /> 1 se o anexo falhou porque o processo especificado é inválido ou ambíguo.<br /><br /> 13 se o anexo falhou porque CVCollectionCmd não tem permissões suficientes para gravar no diretório de saída especificado.|  
-|Detach|Para a coleta.|nenhuma.|0 se a desanexação for bem-sucedida.<br /><br /> 1 se a desanexação falhou porque a coleta não está em andamento no momento.<br /><br /> 2 se a desanexação falhou porque a coleta não pode ser parada.|  
+|Detach|Para a coleta.|Nenhum.|0 se a desanexação for bem-sucedida.<br /><br /> 1 se a desanexação falhou porque a coleta não está em andamento no momento.<br /><br /> 2 se a desanexação falhou porque a coleta não pode ser parada.|  
 |Analisar|Analisa o rastreamento especificado.|O caminho completo do arquivo CVTrace.|0 se a análise for bem-sucedida.<br /><br /> 1 se a análise não puder ser iniciada porque o rastreamento especificado estava em todo o sistema, mas sem um processo de destino especificado.<br /><br /> 2 se a análise não puder ser iniciada porque o rastreamento não estava em todo o sistema e um processo foi especificado.<br /><br /> 3 se a análise falhou porque o processo especificado é inválido.<br /><br /> 4 se a análise falhou porque o arquivo CVTrace especificado é inválido.|  
-|LaunchArgs|Especifica os argumentos executáveis de destino. Essa opção só se aplica ao comando Inicializar.|Os argumentos de linha de comando para o aplicativo.|nenhuma.|  
-|Outdir|Especifica o diretório no qual os arquivos de rastreamento serão salvos. Aplica-se aos comandos Inicializar e Anexar.|Um caminho do diretório ou relativo.|nenhuma.|  
-|Processo|Especifica o processo a ser conectado quando o comando Anexar é executado ou o processo em um rastreamento a ser analisado quando o comando Analisar é executado. Aplica-se aos comandos Anexar e Analisar.|A PID ou o nome do processo.|nenhuma.|  
-|Config|Especifica o caminho do arquivo de configuração, se você quiser configurações de coleta diferentes das configurações padrão.   Aplica-se aos comandos Inicializar, Anexar e Analisar.|O caminho do diretório ou relativo do arquivo de configuração XML.|nenhuma.|  
+|LaunchArgs|Especifica os argumentos executáveis de destino. Essa opção só se aplica ao comando Inicializar.|Os argumentos de linha de comando para o aplicativo.|Nenhum.|  
+|Outdir|Especifica o diretório no qual os arquivos de rastreamento serão salvos. Aplica-se aos comandos Inicializar e Anexar.|Um caminho do diretório ou relativo.|Nenhum.|  
+|Processar|Especifica o processo a ser conectado quando o comando Anexar é executado ou o processo em um rastreamento a ser analisado quando o comando Analisar é executado. Aplica-se aos comandos Anexar e Analisar.|A PID ou o nome do processo.|Nenhum.|  
+|Config|Especifica o caminho do arquivo de configuração, se você quiser configurações de coleta diferentes das configurações padrão.   Aplica-se aos comandos Inicializar, Anexar e Analisar.|O caminho do diretório ou relativo do arquivo de configuração XML.|Nenhum.|  
   
 ## <a name="customizing-configuration-settings"></a>Personalizando definições de configuração  
  Se você usar CVCollectionCmd para coletar rastreamentos e quiser personalizar as configurações de coleta, use um arquivo de configuração para especificá-las.  
@@ -71,11 +71,11 @@ ms.locfileid: "65692752"
 |MinorVersion|Especifica a versão secundária do arquivo de configuração.|Deve ser 0 para projetos do [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]. Se não for 0, o utilitário não funcionará.|  
 |IncludeEnvSymbolPath|Define um valor que determina se o caminho do símbolo de ambiente (_NT_SYMBOL_PATH) é usado.|-   Verdadeiro<br />-   Falso|  
 |DeleteEtlsAfterAnalysis|Define um valor que determina se os arquivos ETL são excluídos quando a análise é concluída.|-   Verdadeiro<br />-   Falso|  
-|SymbolPath|Especifica o caminho do servidor de símbolos. Para obter mais informações, consulte [Use the Microsoft Symbol Server to obtain debug symbol files (Usar o Servidor de Símbolos da Microsoft para obter arquivos de símbolo de depuração)](http://go.microsoft.com/fwlink/?LinkID=149389).|Um nome ou uma URL do diretório.|  
+|SymbolPath|Especifica o caminho do servidor de símbolos. Para obter mais informações, consulte [Use the Microsoft Symbol Server to obtain debug symbol files (Usar o Servidor de Símbolos da Microsoft para obter arquivos de símbolo de depuração)](https://go.microsoft.com/fwlink/?LinkID=149389).|Um nome ou uma URL do diretório.|  
 |Marcadores|Contém a lista de provedores de marcadores.|Pode conter zero ou mais elementos MarkerProvider.|  
 |MarkerProvider|Especifica um único provedor de marcadores.|Deve conter estes elementos:<br /><br /> –   Nível<br />–   GUID<br />–   Nome<br /><br /> Pode conter estes elementos:<br /><br /> –   Categories<br />–   IsEnabled|  
 |Nível|Define o nível de importância de um MarkerProvider.|–   Baixa<br />–   Normal<br />–   Alta<br />–   Crítica<br />–   Todas|  
-|Guid|O identificador global exclusivo do provedor de marcadores ETW.|Uma GUID.|  
+|GUID|O identificador global exclusivo do provedor de marcadores ETW.|Uma GUID.|  
 |Nome|Especifica a descrição do provedor de marcadores.|Uma cadeia de caracteres.|  
 |Categorias|Especifica as categorias coletadas para o provedor de marcadores.|Uma cadeia de caracteres delimitada por vírgula de números ou intervalos de números.|  
 |IsEnabled|Define um valor que determina se o provedor de marcadores está habilitado para a coleção.|-   Verdadeiro<br />-   Falso|  

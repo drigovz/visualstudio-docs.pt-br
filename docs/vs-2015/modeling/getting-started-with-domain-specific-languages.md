@@ -9,19 +9,19 @@ caps.latest.revision: 18
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 124fc1027e3b5eba537341c87ae2a80ce5c325bc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a2757201f482682b8fdf26275f510984629204f6
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666065"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300911"
 ---
 # <a name="getting-started-with-domain-specific-languages"></a>Introdução às linguagens específicas do domínio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Este tópico explica os conceitos básicos de definição e uso de uma DSL (linguagem específica de domínio) criada com o SDK de modelagem do Visual Studio.
 
- Se você for novo nas DSLs, recomendamos que você trabalhe no **laboratório de ferramentas DSL**, que pode ser encontrado neste site: [VISUALIZATON e o SDK de modelagem](http://go.microsoft.com/fwlink/?LinkID=186128)
+ Se você for novo nas DSLs, recomendamos que você trabalhe no **laboratório de ferramentas DSL**, que pode ser encontrado neste site: [VISUALIZATON e o SDK de modelagem](https://go.microsoft.com/fwlink/?LinkID=186128)
 
 ## <a name="what-can-you-do-with-a-domain-specific-language"></a>O que você pode fazer com uma linguagem específica de domínio?
  Uma linguagem específica de domínio é uma notação, geralmente gráfica, que é projetada para ser usada para uma finalidade específica. Por outro lado, linguagens como UML são de finalidade geral. Em uma DSL, você pode definir os tipos de elemento de modelo e suas relações e como eles são apresentados na tela.
@@ -36,13 +36,13 @@ Este tópico explica os conceitos básicos de definição e uso de uma DSL (ling
 
  O restante desta visão geral é uma explicação que apresenta as operações básicas de criação e uso de uma linguagem específica de domínio no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Pré-requisitos
  Para definir uma DSL, é necessário ter instalados os seguintes componentes:
 
 |||
 |-|-|
-|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185579](http://go.microsoft.com/fwlink/?LinkId=185579)|
-|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185580](http://go.microsoft.com/fwlink/?LinkId=185580)|
+|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185579](https://go.microsoft.com/fwlink/?LinkId=185579)|
+|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185580](https://go.microsoft.com/fwlink/?LinkId=185580)|
 |SDK de modelagem para Visual Studio|[Baixar o MSDK](https://www.microsoft.com/download/details.aspx?id=48148)|
 
 ## <a name="creating-a-dsl-solution"></a>Criando uma solução de DSL
@@ -72,7 +72,7 @@ Este tópico explica os conceitos básicos de definição e uso de uma DSL (ling
 
    - Escolha uma extensão que não esteja associada a nenhum aplicativo em seu computador ou em qualquer computador em que você queira instalar a DSL. Por exemplo, **docx** e **htm** seriam extensões de nome de arquivo inaceitáveis.
 
-   - O assistente o avisará se a extensão inserida está sendo usada como uma DSL. Considere usar uma extensão de nome de arquivo diferente. Também é possível redefinir a instância Experimental do SDK do Visual Studio para limpar os designers experimentais antigos. Clique em **Iniciar**, **todos os programas**, **Microsoft Visual Studio SDK 2010**, **ferramentas**e, em seguida, **redefina a instância experimental Microsoft Visual Studio 2010**.
+   - O assistente o avisará se a extensão inserida está sendo usada como uma DSL. Considere usar uma extensão de nome de arquivo diferente. Também é possível redefinir a instância Experimental do SDK do Visual Studio para limpar os designers experimentais antigos. Clique em **Iniciar**, **Todos os Programas**, **SDK do Microsoft Visual Studio 2010**, **Ferramentas** e **Redefinir a Instância Experimental do Microsoft Visual Studio 2010**.
 
 7. Inspecione as outras páginas e clique em **concluir**.
 
@@ -101,7 +101,7 @@ Este tópico explica os conceitos básicos de definição e uso de uma DSL (ling
 
 #### <a name="to-experiment-with-the-dsl"></a>Para experimentar a DSL
 
-1. Clique em **transformar todos os modelos** na barra de ferramentas Gerenciador de soluções. Isso regenera a maior parte do código-fonte de DslDefinition. DSL.
+1. Clique em **Transformar Todos os Modelos** na barra de ferramentas do Gerenciador de Soluções. Isso regenera a maior parte do código-fonte de DslDefinition. DSL.
 
    > [!NOTE]
    > Sempre que você alterar DslDefinition. DSL, deverá clicar em **transformar todos os modelos** antes de recompilar a solução. Você pode automatizar esta etapa. Para obter mais informações, consulte [como automatizar a transformação de todos os modelos](https://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a).
@@ -141,7 +141,7 @@ Este tópico explica os conceitos básicos de definição e uso de uma DSL (ling
 
  Você pode exibir um modelo como uma árvore no modo de exibição do **Explorer** enquanto estiver editando um modelo. À medida que você adiciona formas ao diagrama, os elementos de modelo também aparecem no Gerenciador. O Gerenciador pode ser usado mesmo se não houver nenhum diagrama.
 
- Se você não conseguir ver o Gerenciador na instância de depuração do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], no menu **Exibir** aponte para **outras janelas**e clique em *\<Your Language >* **Explorer**.
+ Se você não conseguir ver o Gerenciador na instância de depuração do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], no menu **Exibir** aponte para **outras janelas**e clique em *\<seu idioma >* **Explorer**.
 
 ### <a name="the-api-of-your-dsl"></a>A API de sua DSL
  Sua DSL gera uma API que permite que você leia e atualize modelos que são instâncias da DSL. Um aplicativo da API é para gerar arquivos de texto de um modelo. Para obter mais informações, consulte [geração de código em tempo de design usando modelos de texto T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md).
@@ -200,7 +200,7 @@ Este tópico explica os conceitos básicos de definição e uso de uma DSL (ling
 
     2. Abra o janela Propriedades e posicione-o para que você possa ver o Gerenciador de DSL e as propriedades ao mesmo tempo.
 
-    3. No Gerenciador de DSL, expanda **Editor**, **guias da caixa de ferramentas**, *\<your > DSL*e, em seguida, **ferramentas**.
+    3. No Gerenciador de DSL, expanda **Editor**, **guias da caixa de ferramentas**, *\<> DSL*e, em seguida, **ferramentas**.
 
     4. Clique no **exemploelement**. Esse é o item da caixa de ferramentas usado para criar elementos.
 
@@ -324,7 +324,7 @@ Este tópico explica os conceitos básicos de definição e uso de uma DSL (ling
 
     1. No **Gerenciador de DSL**, expanda o **Editor** e as guias da **caixa de ferramentas**.
 
-    2. Clique com o botão direito do mouse *\<your > DSL* e clique em **Adicionar nova ferramenta de elemento**.
+    2. Clique com o botão direito do mouse *\<> DSL* e clique em **Adicionar nova ferramenta de elemento**.
 
     3. Defina a propriedade **Name** da nova ferramenta e defina sua propriedade de **classe** como cidade.
 
@@ -332,7 +332,7 @@ Este tópico explica os conceitos básicos de definição e uso de uma DSL (ling
 
 7. Crie uma ferramenta de conector para fazer um vínculo entre cidades e pessoas.
 
-    1. Clique com o botão direito do mouse *\<your > DSL* e clique em **Adicionar nova ferramenta de conector**.
+    1. Clique com o botão direito do mouse *\<> DSL* e clique em **Adicionar nova ferramenta de conector**.
 
     2. Defina a propriedade Name da nova ferramenta.
 
@@ -394,9 +394,9 @@ Este tópico explica os conceitos básicos de definição e uso de uma DSL (ling
 
 #### <a name="to-reset-the-visual-studio-experimental-instance"></a>Para redefinir a instância experimental do Visual Studio
 
-1. Clique em **Iniciar**, **todos os programas**, **Microsoft Visual Studio SDK 2010**, **ferramentas**e, em seguida, **redefina a instância experimental Microsoft Visual Studio 2010**.
+1. Clique em **Iniciar**, **Todos os Programas**, **SDK do Microsoft Visual Studio 2010**, **Ferramentas** e **Redefinir a Instância Experimental do Microsoft Visual Studio 2010**.
 
 2. Reconstrua quaisquer DSLs experimentais ou outras extensões experimentais de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] que você ainda deseja usar.
 
 ## <a name="see-also"></a>Consulte também
- [Entendendo modelos, classes e relações](../modeling/understanding-models-classes-and-relationships.md) [como definir um](../modeling/how-to-define-a-domain-specific-language.md) [VISUALIZATON](http://go.microsoft.com/fwlink/?LinkID=186128) de linguagem e um SDK de modelagem específicos de domínio
+ [Entendendo modelos, classes e relações](../modeling/understanding-models-classes-and-relationships.md) [como definir um](../modeling/how-to-define-a-domain-specific-language.md) [VISUALIZATON](https://go.microsoft.com/fwlink/?LinkID=186128) de linguagem e um SDK de modelagem específicos de domínio

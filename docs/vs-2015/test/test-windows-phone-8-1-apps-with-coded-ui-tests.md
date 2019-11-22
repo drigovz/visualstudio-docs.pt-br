@@ -8,12 +8,12 @@ ms.assetid: 7b866776-f2d5-4823-8d15-919f889db26f
 caps.latest.revision: 31
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 8e314b63490387b94c068e178f0d02db4822921f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 1f2ac13b62dcc522626fde92b1b29cac9873edec
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72672163"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301833"
 ---
 # <a name="test-windows-uwp-and-81-phone-apps-with-coded-ui-tests"></a>Testar aplicativos Windows UWP e 8.1 do Windows Phone com testes de UI codificados
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -88,7 +88,7 @@ Use este passo a passo para criar testes de interface do usuário para aplicativ
 
     ![Gerar teste de interface de usuário codificado&#45;usando a ferramenta de mira.](../test/media/cuit-phone-howgencodedialog.png "CUIT_Phone_HowGenCodeDialog")
 
-3. Use a ferramenta de fios para selecionar o aplicativo. Em seguida, copie o valor da propriedade **AutomationId** do aplicativo, que será usado posteriormente para iniciar o aplicativo no teste.
+3. Use a ferramenta de fios para selecionar o aplicativo. Em seguida, copie o valor da propriedade **AutomationId** do aplicativo, que será usado depois para iniciar o aplicativo no teste.
 
     ![Copiar o valor de AutomationId do aplicativo](../test/media/cuit-phone-getautomationid.png "CUIT_Phone_GetAutomationId")
 
@@ -345,7 +345,7 @@ public void DataDrivingDemo_MyTestMethod(int x, int y)
  **R**: Não. O compilador não os detectará.
 
 ### <a name="q-can-i-use-the-coded-ui-test-builder-to-map-controls-using-a-physical-phone-device"></a>P: Posso usar o compilador de teste de IU codificado para mapear controles usando um dispositivo telefônico físico?
- **R**: Não. O compilador poderá mapear elementos de interface do usuário apenas se o aplicativo tiver sido implantado no emulador.
+ {1&gt;R&lt;1}: Não. O compilador só pode mapear os elementos da interface de usuário se o aplicativo tiver sido implantado no emulador.
 
 ### <a name="q-why-cant-i-modify-the-code-in-the-uimapdesigner-file"></a>P: Por que não posso modificar o código do arquivo UIMap.Designer?
  **R**: Todas as alterações de código feitas no arquivo UIMapDesigner.cs serão substituídas sempre que você gerenciar o código usando o UIMap – Construtor de Teste de IU Codificado. Se você tiver de modificar um método gravado, copie-o para o arquivo UIMap.cs e renomeie-o. O arquivo UIMap.cs pode ser usado para substituir métodos e propriedades no arquivo UIMapDesigner.cs. Você deve remover a referência para o método original no arquivo Coded UITest.cs e substituí-la pelo nome do método renomeado.
@@ -382,7 +382,7 @@ public void DataDrivingDemo_MyTestMethod(int x, int y)
 |Testes direcionados a dados|Consulte [Testes controlados por dados](../test/creating-a-data-driven-coded-ui-test.md) para obter informações sobre como usar fontes de dados externas e o atributo DataSource em um método de teste.|Os dados são especificados e embutidos com o uso do atributo DataRow em um método de teste. Consulte [Usar testes de IU codificados e controlados por dados em aplicativos Windows Phone](#TestingPhoneAppsCodedUI_DataDriven) neste tópico.|
 
 ## <a name="external-resources"></a>Recursos externos
- Blog do Gerenciamento do Ciclo de Vida do Aplicativo do Microsoft Visual Studio: [Using Coded UI to test XAML-based Windows Phone apps](http://blogs.msdn.com/b/visualstudioalm/archive/2014/04/05/using-coded-ui-to-test-xaml-based-windows-phone-apps.aspx?PageIndex=2#comments) (Usando a IU codificada para testar aplicativos Windows Phone baseados em XAML)
+ Blog do Gerenciamento do Ciclo de Vida do Aplicativo do Microsoft Visual Studio: [Using Coded UI to test XAML-based Windows Phone apps](https://devblogs.microsoft.com/devops/using-coded-ui-to-test-xaml-based-windows-phone-apps/#comments) (Usando a IU codificada para testar aplicativos Windows Phone baseados em XAML)
 
 ## <a name="see-also"></a>Consulte também
  [Usar automação de interface do usuário para testar código](../test/use-ui-automation-to-test-your-code.md)
