@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: dba4e9143c02a76763372a12153b2e22f612959c
-ms.sourcegitcommit: 3cc73e74921a9ceb622542e0e263abeebc455c00
+ms.openlocfilehash: 6c9c2e281ace3b483d1f37552fba0cc6f490978a
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "67624432"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74298133"
 ---
 # <a name="publish-webapplicationwebsite-windows-powershell-script"></a>Publish-WebApplicationWebSite (script do Windows PowerShell)
 ## <a name="syntax"></a>Sintaxe
@@ -39,7 +39,7 @@ O caminho para o arquivo de configuração de JSON que descreve os detalhes da i
 | --- | --- |
 | Aliases |nenhum |
 | Necessário? |true |
-| Posição |nomeado |
+| Posição |nomeados |
 | Valor padrão |nenhum |
 | Aceitar entrada do Pipeline? |false |
 | Aceitar caracteres curinga? |false |
@@ -51,19 +51,19 @@ O nome da assinatura do Azure na qual você deseja criar o site.
 | --- | --- |
 | Aliases |nenhum |
 | Necessário? |false |
-| Position |nomeado |
+| Posição |nomeados |
 | Valor padrão |nenhum |
 | Aceitar entrada do Pipeline? |false |
 | Aceitar caracteres curinga? |false |
 
 ## <a name="webdeploypackage"></a>WebDeployPackage
-O caminho para o pacote de implantação Web a publicar no site. Você pode criar este pacote usando o assistente Publicar Web no Visual Studio. Para obter mais informações, consulte [Introdução aos serviços de nuvem do Azure e ASP.NET](http://go.microsoft.com/fwlink/p/?LinkID=623089).
+O caminho para o pacote de implantação Web a publicar no site. Você pode criar este pacote usando o assistente Publicar Web no Visual Studio. Para obter mais informações, consulte [Introdução aos serviços de nuvem do Azure e ASP.NET](https://go.microsoft.com/fwlink/p/?LinkID=623089).
 
 | Parâmetro | Valor padrão |
 | --- | --- |
 | Aliases |nenhum |
 | Necessário? |false |
-| Position |nomeado |
+| Posição |nomeados |
 | Valor padrão |nenhum |
 | Aceitar entrada do Pipeline? |false |
 | Aceitar caracteres curinga? |false |
@@ -75,7 +75,7 @@ O nome do administrador e a senha do Banco de Dados SQL no Azure.
 | --- | --- |
 | Aliases |nenhum |
 | Necessário? |false |
-| Position |nomeado |
+| Posição |nomeados |
 | Valor padrão |nenhum |
 | Aceitar entrada do Pipeline? |false |
 | Aceitar caracteres curinga? |false |
@@ -87,7 +87,7 @@ Se seu valor for true, imprimir mensagens do script para o fluxo de saída.
 | --- | --- |
 | Aliases |nenhum |
 | Necessário? |false |
-| Position |nomeado |
+| Posição |nomeados |
 | Valor padrão |false |
 | Aceitar entrada do Pipeline? |false |
 | Aceitar caracteres curinga? |false |

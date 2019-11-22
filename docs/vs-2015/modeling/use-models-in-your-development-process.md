@@ -11,17 +11,17 @@ caps.latest.revision: 31
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d3bc95e74c9e80596ea46efa42abce5c4ed48fa8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 5d5284bb163f474d67324c395a4342ccef6f8561
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659434"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74298261"
 ---
 # <a name="use-models-in-your-development-process"></a>Usar modelos no processo de desenvolvimento
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-No Visual Studio, você pode usar um modelo para ajudá-lo a entender e alterar um sistema, aplicativo ou componente. Um modelo pode ajudá-lo a visualizar o mundo em que seu sistema funciona, esclarecer as necessidades dos usuários, definir a arquitetura do seu sistema, analisar o código e garantir que seu código atenda aos requisitos. Consulte [vídeo do Channel 9: melhorar a arquitetura por meio de modelagem](http://go.microsoft.com/fwlink/?LinkID=252078).
+No Visual Studio, você pode usar um modelo para ajudá-lo a entender e alterar um sistema, aplicativo ou componente. Um modelo pode ajudá-lo a visualizar o mundo em que seu sistema funciona, esclarecer as necessidades dos usuários, definir a arquitetura do seu sistema, analisar o código e garantir que seu código atenda aos requisitos. Consulte [vídeo do Channel 9: melhorar a arquitetura por meio de modelagem](https://go.microsoft.com/fwlink/?LinkID=252078).
 
  Para ver quais versões do Visual Studio oferecem suporte a cada tipo de modelo, consulte [suporte de versão para ferramentas de arquitetura e modelagem](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
@@ -48,7 +48,7 @@ No Visual Studio, você pode usar um modelo para ajudá-lo a entender e alterar 
  Em ambos os casos, a criação de um modelo quase sempre resulta em uma redução significativa em inconsistências e ambiguidades. Diferentes participantes com frequência têm diferentes entendimentos do mundo de negócios em que o sistema funciona, e diferentes desenvolvedores com frequência têm diferentes entendimentos de como o sistema funciona. O uso de um modelo como o foco de uma discussão geralmente expõe essas diferenças. Para obter mais informações sobre como usar um modelo para reduzir inconsistências, consulte [requisitos de usuário de modelo](../modeling/model-user-requirements.md).
 
 ### <a name="use-models-with-other-artifacts"></a>Usar modelos com outros artefatos
- Um modelo não é, por si só, uma especificação de requisitos ou uma arquitetura. É uma ferramenta para expressar alguns aspectos dessas coisas de forma mais clara, mas nem todos os conceitos necessários durante o design de software podem ser expressos. Os modelos devem, portanto, ser usados em conjunto com outros meios de comunicação, como páginas do OneNote ou parágrafos, Microsoft Office documentos, itens de trabalho em [!INCLUDE[esprfound](../includes/esprfound-md.md)] ou notas auto-adesivas no mural da sala do projeto. Além do último item, todos esses tipos de objeto podem ser vinculados a partes de elementos do modelo.
+ Um modelo não é, por si só, uma especificação de requisitos ou uma arquitetura. É uma ferramenta para expressar alguns aspectos dessas coisas de forma mais clara, mas nem todos os conceitos necessários durante o design de software podem ser expressos. Os modelos devem, portanto, ser usados em conjunto com outros meios de comunicação, como páginas do OneNote ou parágrafos, Microsoft Office documentos, itens de trabalho em [!INCLUDE[esprfound](../includes/esprfound-md.md)]ou notas auto-adesivas no mural da sala do projeto. Além do último item, todos esses tipos de objeto podem ser vinculados a partes de elementos do modelo.
 
  Outros aspectos da especificação que normalmente são usados juntamente com modelos incluem o seguinte. Dependendo da escala e do estilo do seu projeto, você pode usar vários desses aspectos ou não usar nenhum:
 
@@ -132,10 +132,10 @@ No Visual Studio, você pode usar um modelo para ajudá-lo a entender e alterar 
 
 |**Categoria**|**Vincule**|
 |------------------|---------------|
-|**Vídeos**|![link para vídeo](../data-tools/media/playvideo.gif "PlayVideo") [como faço vídeos do MSDN: como criar e usar diagramas e modelos UML (Visual Studio 2010 Ultimate)](http://go.microsoft.com/fwlink/?LinkId=214460)<br /><br /> ![link para o canal de vídeo](../data-tools/media/playvideo.gif "PlayVideo") [9: UML com o Visual Studio 2010](http://go.microsoft.com/fwlink/?LinkID=201106)<br /><br /> ![link para vídeo](../data-tools/media/playvideo.gif "PlayVideo") [série How do MSDN: ferramentas e extensibilidade UML (Visual Studio 2010 Ultimate)](http://go.microsoft.com/fwlink/?LinkID=214467)|
-|**Nos**|[ferramentas de modelagem & de visualização do Visual Studio](http://go.microsoft.com/fwlink/?LinkId=184720) -   <br />[SDK de modelagem do & de visualização do Visual Studio (ferramentas DSL)](http://go.microsoft.com/fwlink/?LinkId=184721) -   |
-|**Blogs**|[Visual Studio ALM + Team Foundation Server Blog](http://go.microsoft.com/fwlink/?LinkID=201340)|
-|**Artigos técnicos e diários**|[Centro de arquitetura do MSDN](http://go.microsoft.com/fwlink/?LinkId=201343)<br /><br /> [Diretrizes de ferramentas de arquitetura do Visual Studio](../modeling/visual-studio-architecture-tooling-guidance.md)|
+|**Vídeos**|![link para vídeo](../data-tools/media/playvideo.gif "PlayVideo") [como faço vídeos do MSDN: como criar e usar diagramas e modelos UML (Visual Studio 2010 Ultimate)](https://go.microsoft.com/fwlink/?LinkId=214460)<br /><br /> ![link para o canal de vídeo](../data-tools/media/playvideo.gif "PlayVideo") [9: UML com o Visual Studio 2010](https://go.microsoft.com/fwlink/?LinkID=201106)<br /><br /> ![link para vídeo](../data-tools/media/playvideo.gif "PlayVideo") [série How do MSDN: ferramentas e extensibilidade UML (Visual Studio 2010 Ultimate)](https://go.microsoft.com/fwlink/?LinkID=214467)|
+|**Nos**|[ferramentas de modelagem & de visualização do Visual Studio](https://go.microsoft.com/fwlink/?LinkId=184720) -   <br />[SDK de modelagem do & de visualização do Visual Studio (ferramentas DSL)](https://go.microsoft.com/fwlink/?LinkId=184721) -   |
+|**Blogs**|[Visual Studio ALM + Team Foundation Server Blog](https://go.microsoft.com/fwlink/?LinkID=201340)|
+|**Artigos técnicos e diários**|[Centro de arquitetura do MSDN](https://go.microsoft.com/fwlink/?LinkId=201343)<br /><br /> [Diretrizes de ferramentas de arquitetura do Visual Studio](../modeling/visual-studio-architecture-tooling-guidance.md)|
 
 ## <a name="see-also"></a>Consulte também
  [Usar modelos no desenvolvimento Agile](https://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f) [criar modelos para o](../modeling/create-models-for-your-app.md) modelo de [requisitos de usuário modelo](../modeling/model-user-requirements.md) de aplicativo [a arquitetura do aplicativo](../modeling/model-your-app-s-architecture.md) [desenvolver testes de uma estrutura de modelo](../modeling/develop-tests-from-a-model.md) [sua solução de modelagem](../modeling/structure-your-modeling-solution.md)

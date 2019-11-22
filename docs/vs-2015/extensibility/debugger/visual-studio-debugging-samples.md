@@ -1,5 +1,5 @@
 ---
-title: Exemplos de depuração do Visual Studio | Microsoft Docs
+title: Amostras de depuração do Visual Studio | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,18 +12,18 @@ ms.assetid: fbcc42a7-7851-487f-b981-8c4ae7ec7347
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 19144365a428fdde8915f481ce8d12841bddc003
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9f1dab6be397028917976c9827e48a6748ba78bd
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68185265"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74295993"
 ---
 # <a name="visual-studio-debugging-samples"></a>Amostras de depuração do Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Dois exemplos mostram como estender o depurador do Visual Studio usando [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)].  
   
-- O exemplo de avaliador de expressão de depurador, para linguagens gerenciadas, está incluído no [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)]. No [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] janela, clique em de **exemplos** , clique em **todos os** ou **c#** na lista de idiomas e depois clique em **depurador**.  
+- O exemplo do avaliador de expressão do depurador, para linguagens gerenciadas, está incluído no [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)]. Na janela [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)], clique na guia **exemplos** , clique em **tudo** ou **C#** na lista de idiomas e clique em **depurador**.  
   
-- O Visual Studio depurar mecanismo de exemplo, linguagens nativas, está disponível na Galeria de códigos do MSDN. Para obter mais informações, confira esta página no site da Microsoft: [Exemplo de mecanismo de depuração do Visual Studio](http://go.microsoft.com/fwlink/?LinkId=150236).
+- O exemplo de mecanismo de depuração do Visual Studio, para idiomas nativos, está disponível na Galeria de códigos do MSDN. Para obter mais informações, consulte esta página no site da Microsoft: [exemplo do mecanismo de depuração do Visual Studio](https://go.microsoft.com/fwlink/?LinkId=150236).

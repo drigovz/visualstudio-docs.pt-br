@@ -13,26 +13,26 @@ caps.latest.revision: 5
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: b93f6787ef24a191385c0fd86672aa23ff72e3e5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 451544a84237bc6fa4e069df9dd1e17feccf86f7
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659212"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301016"
 ---
 # <a name="bind-to-an-activity39s-property-dialog-box-legacy"></a>Associar a uma caixa&#39;de diálogo de propriedade de atividade (herdada)
-Este tópico descreve como usar a caixa de diálogo **associar a uma propriedade de uma atividade** no [!INCLUDE[wfd1](../includes/wfd1-md.md)] herdado. Use [!INCLUDE[wfd2](../includes/wfd2-md.md)] herdado quando você precisa definir como alvo [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] ou [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].
+Este tópico descreve como usar a caixa de diálogo **Associar à propriedade de uma atividade** em [!INCLUDE[wfd1](../includes/wfd1-md.md)]herdado. Use [!INCLUDE[wfd2](../includes/wfd2-md.md)] herdado quando você precisa definir como alvo [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] ou [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].
 
- Um tipo de instância de propriedade de dependência pode ser associado a propriedade pública ou ao evento de outra atividade. Para obter mais informações sobre associação de atividade, consulte [usando propriedades de dependência](http://go.microsoft.com/fwlink?LinkID=65007).
+ Um tipo de instância de propriedade de dependência pode ser associado a propriedade pública ou ao evento de outra atividade. Para obter mais informações sobre associação de atividade, consulte [usando propriedades de dependência](https://go.microsoft.com/fwlink?LinkID=65007).
 
- Você seleciona uma propriedade para associar usando a caixa de diálogo **associar a uma propriedade de uma atividade** . Você abre essa caixa de diálogo clicando nas reticências **[...]** no final da caixa de texto da propriedade selecionada na janela **Propriedades** ou clicando no ícone de ponto de exclamação azul que aparece ao lado do nome da propriedade no navegador de propriedades.
+ Você seleciona uma propriedade para associar a usar a caixa de diálogo **Associar a propriedade de uma atividade** . Você abrir esta caixa de diálogo clicando nas reticências **[…]** no final da caixa de texto da propriedade selecionada na janela **Propriedades**, ou clicando no ícone de ponto de exclamação azul que aparece ao lado do nome de propriedade no navegador de propriedade.
 
- A tabela a seguir descreve os elementos da interface do usuário da caixa de diálogo **associar à propriedade de uma atividade** .
+ A tabela a seguir descreve os elementos de (UI) de interface de usuário da caixa de diálogo **Associar à propriedade de uma atividade** .
 
 |Elemento da Interface do Usuário|Descrição|
 |----------------|-----------------|
-|**Associar a um membro existente**|Selecione um membro que você deseja associar no painel modo de exibição de árvore. O painel abaixo de exibição de árvore exibe uma mensagem que indica se o membro é um tipo válido para associar a ou não. Clique em **OK** para associar ao membro válido selecionado.|
-|**Associar a um novo membro**|Crie um novo campo ou propriedade de membro para associação. Insira um **novo nome de membro**. Escolha se deseja criar uma propriedade de dependência ou um campo público selecionando **criar campo** ou **criar Propriedade**. Clique em **OK** para criar o novo membro.|
+|**Associar a um membro existente**|Selecione um membro que você deseja associar no painel modo de exibição de árvore. O painel abaixo de exibição de árvore exibe uma mensagem que indica se o membro é um tipo válido para associar a ou não. Clique **OK** para associar ao membro selecionado válido.|
+|**Associar a um novo membro**|Crie um novo campo ou propriedade de membro para associação. Entre em **Novo nome de membro**. Escolha se deseja criar uma propriedade de dependência ou um campo público selecionando **Criar Campo** ou **Criar Propriedade**. Clique **OK** para criar o novo membro.|
 
 ## <a name="see-also"></a>Consulte também
- [Usando propriedades de atividade](http://go.microsoft.com/fwlink?LinkID=65013) [usando propriedades de dependência](http://go.microsoft.com/fwlink?LinkID=65007) [Designer herdado para ajuda da interface do usuário Windows Workflow Foundation](../workflow-designer/legacy-designer-for-windows-workflow-foundation-ui-help.md)
+ [Usando propriedades de atividade](https://go.microsoft.com/fwlink?LinkID=65013) [usando propriedades de dependência](https://go.microsoft.com/fwlink?LinkID=65007) [Designer herdado para ajuda da interface do usuário Windows Workflow Foundation](../workflow-designer/legacy-designer-for-windows-workflow-foundation-ui-help.md)

@@ -1,5 +1,5 @@
 ---
-title: 'DA0503: Conjunto de trabalho médio em bytes para o processo do qual o perfil está sendo criado | Microsoft Docs'
+title: 'DA0503: conjunto de trabalho médio em bytes para o processo do qual o perfil está sendo criado | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -13,20 +13,20 @@ caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b45725c59cb18f965ba7d1fa134de739d9c4144d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 898208530eb1ba71a5a1443fcb97ac1f1a1081e1
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68205914"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300050"
 ---
-# <a name="da0503-average-working-set-in-bytes-for-the-process-being-profiled"></a>DA0503: Média de Conjunto de Trabalho em Bytes para o Processo cujo perfil está sendo criado
+# <a name="da0503-average-working-set-in-bytes-for-the-process-being-profiled"></a>DA0503: conjunto de trabalho médio em bytes para o processo com criação de perfil
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Id da regra | DA0503 |  
+ID da regra | DA0503 |  
 | Categoria | Monitoramento de recursos |  
-| Método de criação de perfil | Todos os |  
-| Mensagem | Estas informações foram coletadas apenas para fins informativos. O contador Conjunto de trabalho do processo mede o uso de memória física do processo do qual está sendo criado o perfil. O valor relatado é a média calculada de todos os intervalos de medição.|  
+| Método de criação de perfil | Todos |  
+| Mensagem | Essas informações foram coletadas apenas para fins informativos. O contador Conjunto de trabalho do processo mede o uso de memória física do processo do qual está sendo criado o perfil. O valor relatado é a média calculada de todos os intervalos de medição.|  
 | Tipo de regra | Informações |  
   
  Ao criar o perfil usando a amostragem, a memória do .NET ou métodos de contenção de recursos, é necessário coletar pelo menos 10 amostras para disparar essa regra.  
@@ -40,7 +40,7 @@ Id da regra | DA0503 |
   
  O tamanho do conjunto de trabalho do processo reflete a quantidade de memória virtual que o processo está usando de forma ativa. Ele também é afetado pela quantidade de memória física (ou RAM) disponível para executar o aplicativo e a contenção para a memória física de outros processos em execução. Se a memória física for restrita, o valor do conjunto de trabalho do processo estará apto a variar de forma considerável, conforme o sistema operacional tenta equilibrar o uso de memória entre os processos ativos cortando periodicamente as páginas razoavelmente inativas dos conjuntos de trabalho do processo.  
   
- Para obter mais informações sobre conjuntos de trabalho do processo, consulte [Conjunto de trabalho](http://go.microsoft.com/fwlink/?LinkId=177830) na documentação do Gerenciamento de memória do Windows do MSDN.  
+ Para obter mais informações sobre conjuntos de trabalho do processo, consulte [Conjunto de trabalho](https://go.microsoft.com/fwlink/?LinkId=177830) na documentação do Gerenciamento de memória do Windows do MSDN.  
   
 ## <a name="how-to-use-rule-data"></a>Como usar dados de regra  
  Use o valor da regra para comparar o desempenho de diferentes versões ou compilações do programa ou para entender o desempenho do aplicativo em diferentes cenários de criação de perfil.  

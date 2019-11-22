@@ -231,33 +231,33 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: b304b31447c0a43e37a333516a3a79c71070bd4e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 005f1d1edd1c0a6127c150922cdaab2aef439634
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72673024"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299443"
 ---
 # <a name="additional-resources-for-troubleshooting-data-access-errors"></a>Recursos adicionais para solucionar problemas de erros de acesso a dados
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Você pode obter ajuda com a solução de erros e avisos nos fóruns públicos do Microsoft Developer Network (MSDN). A tabela a seguir lista os fóruns relacionados aos dados disponíveis no MSDN.
 
- [Controles de dados Windows Forms e DataBinding](http://go.microsoft.com/fwlink/?LinkId=160179) Fornece um fórum para perguntas e discussões gerais sobre o acesso a dados no Windows Forms.
+ [Controles de dados Windows Forms e DataBinding](https://go.microsoft.com/fwlink/?LinkId=160179) Fornece um fórum para perguntas e discussões gerais sobre o acesso a dados no Windows Forms.
 
- [Fórum do conjunto de ADO.net](http://go.microsoft.com/fwlink/?LinkId=160180) Fornece um fórum para perguntas e discussões gerais sobre conjuntos de informações.
+ [Fórum do conjunto de ADO.net](https://go.microsoft.com/fwlink/?LinkId=160180) Fornece um fórum para perguntas e discussões gerais sobre conjuntos de informações.
 
- [ADO.NET Entity Framework e LINQ to Entities](http://go.microsoft.com/fwlink/?LinkId=191520) Fornece um fórum para perguntas e discussões gerais sobre Entity Framework aplicativos e a linguagem LINQ to Entities.
+ [ADO.NET Entity Framework e LINQ to Entities](https://go.microsoft.com/fwlink/?LinkId=191520) Fornece um fórum para perguntas e discussões gerais sobre Entity Framework aplicativos e a linguagem LINQ to Entities.
 
- [Fórum de WCF Data Services](http://go.microsoft.com/fwlink/?LinkId=160181) Fornece um fórum para perguntas e discussões gerais sobre serviços de dados.
+ [Fórum de WCF Data Services](https://go.microsoft.com/fwlink/?LinkId=160181) Fornece um fórum para perguntas e discussões gerais sobre serviços de dados.
 
- [Fórum de acesso a dados SQL Server](http://go.microsoft.com/fwlink/?LinkID=160184) Fornece um fórum para perguntas e discussões gerais sobre como acessar dados no Microsoft SQL Server.
+ [Fórum de acesso a dados SQL Server](https://go.microsoft.com/fwlink/?LinkID=160184) Fornece um fórum para perguntas e discussões gerais sobre como acessar dados no Microsoft SQL Server.
 
- [Fórum do LINQ to SQL](http://go.microsoft.com/fwlink/?LinkId=160183) Fornece um fórum para perguntas e discussões gerais do LINQ to SQL.
+ [Fórum do LINQ to SQL](https://go.microsoft.com/fwlink/?LinkId=160183) Fornece um fórum para perguntas e discussões gerais do LINQ to SQL.
 
- [Fórum de provedores de dados do ADO.net](http://go.microsoft.com/fwlink/?LinkId=160182) Fornece um fórum para perguntas e discussões gerais sobre os diferentes provedores de dados de .NET Framework.
+ [Fórum de provedores de dados do ADO.net](https://go.microsoft.com/fwlink/?LinkId=160182) Fornece um fórum para perguntas e discussões gerais sobre os diferentes provedores de dados de .NET Framework.
 
- Para obter informações sobre como solucionar problemas de conectividade com SQL Server, consulte [como solucionar problemas de conexão com o mecanismo de banco de dados de SQL Server](http://go.microsoft.com/fwlink/?LinkID=246151).
+ Para obter informações sobre como solucionar problemas de conectividade com SQL Server, consulte [como solucionar problemas de conexão com o mecanismo de banco de dados de SQL Server](https://go.microsoft.com/fwlink/?LinkID=246151).
 
 ## <a name="see-also"></a>Consulte também
  [Ferramentas de dados do Visual Studio para .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)

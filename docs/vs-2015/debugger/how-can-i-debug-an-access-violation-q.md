@@ -20,12 +20,12 @@ caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 073fc84d15cb31b4f7a4cc635524ab08a724911e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f6188cc273cdea1755071e36f606fb8f041508d7
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68147840"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297319"
 ---
 # <a name="how-can-i-debug-an-access-violation"></a>Como posso depurar uma violação de acesso?
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,9 +34,9 @@ Descrição do problema
  Meu programa produz uma violação de acesso. Como posso depurar isso?  
   
 ## <a name="solution"></a>Solução  
- Se você receber uma violação de acesso em uma linha de código que cancela a referência de vários ponteiros, pode ser difícil descobrir quais ponteiro causou a violação de acesso. A partir do Visual Studio 2015 atualização 1, a caixa de diálogo de exceção agora explicitamente nomeia o ponteiro que causou a violação de acesso.  
+ Se você obtiver uma violação de acesso em uma linha de código que faz referência a vários ponteiros, pode ser difícil descobrir qual ponteiro causou a violação de acesso. A partir do Visual Studio 2015 atualização 1, a caixa de diálogo de exceção agora nomeia explicitamente o ponteiro que causou a violação de acesso.  
   
- Por exemplo, dado o código a seguir, você deve obter uma violação de acesso:  
+ Por exemplo, considerando o código a seguir, você deve obter uma violação de acesso:  
   
 ```cpp  
 #include <iostream>  
@@ -67,11 +67,11 @@ int main() {
 }  
 ```  
   
- Se você executar esse código no Visual Studio 2015 atualização 1, você deverá ver a seguinte caixa de diálogo de exceção:  
+ Se você executar esse código no Visual Studio 2015 atualização 1, verá a seguinte caixa de diálogo de exceção:  
   
  ![AccessViolationCPlus](../debugger/media/accessviolationcplus.png "AccessViolationCPlus")  
   
- Se você não puder determinar por que o ponteiro causou uma violação de acesso, rastrear o código para certificar-se de que o ponteiro causando o problema foi atribuído corretamente.  Se ele é passado como um parâmetro, certifique-se de que ele é passado corretamente, e você não criar acidentalmente um [cópia superficial](http://stackoverflow.com/questions/184710/what-is-the-difference-between-a-deep-copy-and-a-shallow-copy). Em seguida, verifique se que os valores não sejam sendo inadvertidamente alterados em algum lugar no programa, criando um ponto de interrupção de dados para o ponteiro em questão para certificar-se de que não está sendo modificada em outro lugar no programa. Para obter mais informações sobre pontos de interrupção de dados, consulte a seção de ponto de interrupção de dados no [usando pontos de interrupção](../debugger/using-breakpoints.md).  
+ Se você não puder determinar por que o ponteiro causou uma violação de acesso, rastreie o código para certificar-se de que o ponteiro que está causando o problema tenha sido atribuído corretamente.  Se ele for passado como um parâmetro, verifique se ele foi passado corretamente e se você não está criando acidentalmente uma [cópia superficial](https://stackoverflow.com/questions/184710/what-is-the-difference-between-a-deep-copy-and-a-shallow-copy). Em seguida, verifique se os valores não estão sendo acidentalmente alterados em algum lugar no programa criando um ponto de interrupção de dados para o ponteiro em questão para verificar se ele não está sendo modificado em outro lugar no programa. Para obter mais informações sobre pontos de interrupção de dados, consulte a seção ponto de interrupção de dados em [usando pontos de interrupção](../debugger/using-breakpoints.md).  
   
 ## <a name="see-also"></a>Consulte também  
  [Perguntas frequentes de depuração de código nativo](../debugger/debugging-native-code-faqs.md)

@@ -8,12 +8,12 @@ ms.assetid: 5ef1188f-89dc-413d-801d-0efdaf9b0427
 caps.latest.revision: 24
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 920dea4e81ca2ce0c562bb6d77582fd5e3753663
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 331dabfe8e219383fdc04187482b17b9048886a9
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72660577"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74302580"
 ---
 # <a name="enable-coded-ui-testing-of-your-controls"></a>Habilitar testes de IU codificado dos controles
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -536,7 +536,7 @@ Assert.AreEqual(this.AssertMethod3ExpectedValues.UIATextState, uIAText.State);
 ## <a name="external-resources"></a>Recursos externos
 
 ### <a name="guidance"></a>Diretrizes
- [Testes de Entrega Contínua com o Visual Studio 2012 – Capítulo 2: Teste de Unidade: Testando o Interior](http://go.microsoft.com/fwlink/?LinkID=255188)
+ [Testes de Entrega Contínua com o Visual Studio 2012 – Capítulo 2: Teste de Unidade: Testando o Interior](https://go.microsoft.com/fwlink/?LinkID=255188)
 
 ## <a name="see-also"></a>Consulte também
 

@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 26065ac7d9b92a8d9bc12f8f7843d8a0fb93f7ac
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 16a51c7fc05d51b551884f70dc514e8939962818
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669759"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74296031"
 ---
 # <a name="directed-graph-markup-language-dgml-reference"></a>Referência DGML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ A DGML (grafo Markup Language) descreve informações usadas para visualização
  Observe que algumas versões do Visual Studio dão suporte apenas a um subconjunto de recursos DGML, consulte [suporte de versão para ferramentas de arquitetura e modelagem](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
 > [!NOTE]
-> Quando você edita um arquivo .dgml, o IntelliSense ajuda você a identificar atributos disponíveis para cada elemento e seus valores. Para especificar a cor em um atributo, use nomes de cores comuns como, por exemplo, "Azul", ou valores hexadecimais ARGB, como "#ffa0b1c3". DGML usa um subconjunto pequeno de formatos de definição de cor do WPF (Windows Presentation Foundation). Para obter mais informações, consulte a [classe Colors](http://go.microsoft.com/fwlink/?LinkId=182345).
+> Quando você edita um arquivo .dgml, o IntelliSense ajuda você a identificar atributos disponíveis para cada elemento e seus valores. Para especificar a cor em um atributo, use nomes de cores comuns como, por exemplo, "Azul", ou valores hexadecimais ARGB, como "#ffa0b1c3". DGML usa um subconjunto pequeno de formatos de definição de cor do WPF (Windows Presentation Foundation). Para obter mais informações, consulte a [classe Colors](https://go.microsoft.com/fwlink/?LinkId=182345).
 
 ## <a name="DGML"></a>Sintaxe de DGML
  A tabela a seguir descreve os tipos de elementos que são usados em DGML:
@@ -39,7 +39,7 @@ A DGML (grafo Markup Language) descreve informações usadas para visualização
 
    `BackgroundImage`-o local de um arquivo de imagem a ser usado como plano de fundo do mapa.
 
-   `GraphDirection`-quando o mapa é definido como layout de árvore (`Sugiyama`), organize os nós para que a maioria dos links flua na direção especificada: `TopToBottom`, `BottomToTop`, `LeftToRight` ou `RightToLeft`. Consulte [alterar o layout do mapa](../modeling/browse-and-rearrange-code-maps.md#Selecting).
+   `GraphDirection`-quando o mapa é definido como layout de árvore (`Sugiyama`), organize os nós para que a maioria dos links flua na direção especificada: `TopToBottom`, `BottomToTop`, `LeftToRight`ou `RightToLeft`. Consulte [alterar o layout do mapa](../modeling/browse-and-rearrange-code-maps.md#Selecting).
 
    `Layout`-defina o mapa para os seguintes layouts: `None`, `Sugiyama` (layout de árvore), `ForceDirected` (clusters rápidos) ou `DependencyMatrix`. Consulte [alterar o layout do mapa](../modeling/browse-and-rearrange-code-maps.md#Selecting).
 
@@ -92,23 +92,23 @@ A DGML (grafo Markup Language) descreve informações usadas para visualização
 
    Esse elemento deve incluir os seguintes atributos:
 
-   `Id` - O nome exclusivo do nó e o valor padrão do atributo `Label`, caso nenhum atributo `Label` separado seja especificado. Esse nome deve corresponder ao atributo `Source` ou `Target` do link que faz referência a ele.
+   `Id`-o nome exclusivo do nó e o valor padrão do atributo `Label`, se nenhum atributo `Label` separado for especificado. Esse nome deve corresponder ao atributo `Source` ou `Target` do link que faz referência a ele.
 
    A seguinte lista descreve alguns dos atributos opcionais que é possível incluir:
 
    `Label`-o nome de exibição do nó.
 
-   Atributos de estilo. Consulte [Personalizar mapas de código editando os arquivos DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md).
+   Atributos de estilo. Consulte [Personalizar mapa de códigos editando os arquivos DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md).
 
-   `Category` - O nome de uma categoria que identifica os elementos que compartilham esse atributo. Para obter mais informações, consulte o elemento `<Category/>`.
+   `Category`-o nome de uma categoria que identifica elementos que compartilham este atributo. Para obter mais informações, consulte o elemento `<Category/>`.
 
-   `Property` - O nome de uma propriedade que identifica elementos que têm o mesmo valor da propriedade. Para obter mais informações, consulte o elemento `<Property/>`.
+   `Property`-o nome de uma propriedade que identifica elementos que têm o mesmo valor de propriedade. Para obter mais informações, consulte o elemento `<Property/>`.
 
-   `Group` - Se o nó contiver outros nós, defina esse atributo como `Expanded` ou `Collapsed` para mostrar ou ocultar seu conteúdo. Deve haver um elemento `<Link/>` que inclua o atributo `Category="Contains"` e especifique o nó pai como o nó de origem e o nó filho como o nó de destino. Consulte [elementos de código de grupo](../modeling/customize-code-maps-by-editing-the-dgml-files.md#OrganizeNodes).
+   `Group`-se o nó contiver outros nós, defina esse atributo como `Expanded` ou `Collapsed` para mostrar ou ocultar seu conteúdo. Deve haver um elemento `<Link/>` que inclua o atributo `Category="Contains"` e especifique o nó pai como o nó de origem e o nó filho como o nó de destino. Consulte [elementos de código de grupo](../modeling/customize-code-maps-by-editing-the-dgml-files.md#OrganizeNodes).
 
-   `Visibility` - Defina esse atributo como `Visible`, `Hidden` ou `Collapsed`. Usa `System.Windows.Visibility`. Consulte [ocultar ou mostrar nós e links](../modeling/browse-and-rearrange-code-maps.md#HidingShowing).
+   `Visibility`-defina esse atributo como `Visible`, `Hidden`ou `Collapsed`. Usa `System.Windows.Visibility`. Consulte [ocultar ou mostrar nós e links](../modeling/browse-and-rearrange-code-maps.md#HidingShowing).
 
-   `Reference` - Defina esse atributo para vincular a um documento ou a uma URL. Consulte [vincular documentos ou URLs a elementos de código e links](../modeling/customize-code-maps-by-editing-the-dgml-files.md#AddReferences).
+   `Reference`-defina esse atributo para vincular a um documento ou URL. Consulte [vincular documentos ou URLs a elementos de código e links](../modeling/customize-code-maps-by-editing-the-dgml-files.md#AddReferences).
 
    Exemplo:
 
@@ -155,19 +155,19 @@ A DGML (grafo Markup Language) descreve informações usadas para visualização
 
    Esse elemento deve incluir os seguintes atributos:
 
-   `Source` - O nó de origem do link
+   `Source`-o nó de origem do link
 
-   `Target` - O nó de destino do link
+   `Target`-o nó de destino do link
 
    A seguinte lista descreve alguns dos atributos opcionais que é possível incluir:
 
-   `Label` - O nome para exibição do link
+   `Label`-o nome de exibição do link
 
-   Atributos de estilo. Consulte [Personalizar mapas de código editando os arquivos DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md).
+   Atributos de estilo. Consulte [Personalizar mapa de códigos editando os arquivos DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md).
 
-   `Category` - O nome de uma categoria que identifica os elementos que compartilham esse atributo. Para obter mais informações, consulte o elemento `<Category/>`.
+   `Category`-o nome de uma categoria que identifica elementos que compartilham este atributo. Para obter mais informações, consulte o elemento `<Category/>`.
 
-   `Property` - O nome de uma propriedade que identifica elementos que têm o mesmo valor da propriedade. Para obter mais informações, consulte o elemento `<Property/>`.
+   `Property`-o nome de uma propriedade que identifica elementos que têm o mesmo valor de propriedade. Para obter mais informações, consulte o elemento `<Property/>`.
 
    Exemplo:
 
@@ -210,17 +210,17 @@ A DGML (grafo Markup Language) descreve informações usadas para visualização
 
    Esse elemento deve incluir os seguintes atributos:
 
-   `Id` - O nome exclusivo da categoria e o valor padrão do atributo `Label`, caso nenhum atributo `Label` separado seja especificado.
+   `Id`-o nome exclusivo da categoria e o valor padrão do atributo `Label`, se nenhum atributo `Label` separado for especificado.
 
    A seguinte lista descreve alguns dos atributos opcionais que é possível incluir:
 
-   `Label` - Um nome amigável para o leitor da categoria.
+   `Label`-um nome amigável para o leitor para a categoria.
 
-   `BasedOn` - A categoria pai da qual `<Category/>` herda o elemento atual.
+   `BasedOn`-a categoria pai da qual o `<Category/>` do elemento atual é herdado.
 
    No exemplo desse elemento, a categoria `FailedTest` herda seu atributo `Stroke` da categoria `PassedTest`. Consulte "para criar categorias hierárquicas" em [Personalizar mapas de código editando os arquivos DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md).
 
-   As categorias também fornecem algum comportamento de modelo básico que controla a aparência de nós e links quando eles são exibidos em um mapa. Consulte [Personalizar mapas de código editando os arquivos DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md).
+   As categorias também fornecem algum comportamento de modelo básico que controla a aparência de nós e links quando eles são exibidos em um mapa. Consulte [Personalizar mapa de códigos editando os arquivos DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md).
 
    Exemplo:
 
@@ -267,11 +267,11 @@ A DGML (grafo Markup Language) descreve informações usadas para visualização
 
    Esse elemento deve incluir os seguintes atributos:
 
-  - `Id` - O nome exclusivo da propriedade e o valor padrão do atributo `Label`, caso nenhum atributo `Label` separado seja especificado.
+  - `Id`-o nome exclusivo da propriedade e o valor padrão do atributo `Label`, se nenhum atributo `Label` separado for especificado.
 
-  - `DataType` - O tipo de dados armazenado pela propriedade
+  - `DataType`-o tipo de dados armazenados pela propriedade
 
-    Se você quiser que a propriedade apareça na janela **Propriedades** , use a propriedade `Label` para especificar o nome de exibição da propriedade.
+    Se você quiser que a propriedade seja exibida na janela **Propriedades**, use a propriedade `Label` para especificar o nome para exibição da propriedade.
 
     Consulte [atribuir categorias a elementos de código e links](../modeling/customize-code-maps-by-editing-the-dgml-files.md#AssignCategories).
 

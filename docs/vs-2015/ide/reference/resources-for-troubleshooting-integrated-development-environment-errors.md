@@ -94,12 +94,12 @@ caps.latest.revision: 16
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 5198c541deb4680d19e2b15ae0e672b831dbb13e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3d3048d16da507d9d63ea9d3df77b4e88d5a5e59
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72665547"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297769"
 ---
 # <a name="resources-for-troubleshooting-integrated-development-environment-errors"></a>Recursos para solucionar problemas de erros de ambiente do ambiente integrado
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -107,12 +107,12 @@ ms.locfileid: "72665547"
 Nem todas as mensagens de erro têm um tópico de Ajuda específico associado. Se as informações na mensagem de erro não ajudarem você a resolver o problema, você pode consultar outros recursos, como artigos da Base de Dados de Conhecimento, a comunidade de desenvolvedores ou o suporte do produto.
 
 ## <a name="knowledge-base-articles"></a>Artigos da Base de Dados de Conhecimento
- É possível pesquisar a KB (Base de Dados de Conhecimento) online para encontrar artigos sobre problemas do produto. Nem todos os problemas têm um artigo correspondente na KB, mas erros encontrados por um número significativo de clientes normalmente são documentados. Você pode acessar artigos da KB no site de [Suporte da Microsoft](http://go.microsoft.com/fwlink/?linkid=1782).
+ É possível pesquisar a KB (Base de Dados de Conhecimento) online para encontrar artigos sobre problemas do produto. Nem todos os problemas têm um artigo correspondente na KB, mas erros encontrados por um número significativo de clientes normalmente são documentados. Você pode acessar artigos da KB no site de [Suporte da Microsoft](https://go.microsoft.com/fwlink/?linkid=1782).
 
 ## <a name="the-developer-community"></a>A comunidade de desenvolvedores
- Os fóruns lhe permitem interagir com outros desenvolvedores e também com funcionários da Microsoft. Se encontrar um erro para o qual não é possível encontrar uma resolução, você pode postar perguntas sobre o problema em um fórum. Também é possível pesquisar grupos de notícias para ver se outras pessoas postaram sobre o mesmo problema.
+ Fóruns lhe permitem interagir com outros desenvolvedores e também com funcionários da Microsoft. Se encontrar um erro para o qual não é possível encontrar uma resolução, você pode postar perguntas sobre o problema em um fórum. Você também pode pesquisar grupos de notícias para ver outras pessoas postaram sobre o mesmo problema.
 
  Você pode acessar fóruns, blogs, chats e outros recursos sobre no site das [Comunidades Técnicas da Microsoft](https://techcommunity.microsoft.com/).
 
 ## <a name="product-support"></a>Suporte a produto
- Se ainda tiver dúvidas após tentar os outros recursos, você pode contatar os serviços de suporte da Microsoft visitando o site de [Suporte da Microsoft](http://go.microsoft.com/fwlink/?linkid=1782). Para obter informações sobre o suporte de produto disponível na sua área, consulte [Fale conosco](../../ide/talk-to-us.md).
+ Se ainda tiver dúvidas após tentar os outros recursos, você pode contatar os serviços de suporte da Microsoft visitando o site de [Suporte da Microsoft](https://go.microsoft.com/fwlink/?linkid=1782). Para obter informações sobre o suporte de produto disponível na sua área, consulte [Fale conosco](../../ide/talk-to-us.md).

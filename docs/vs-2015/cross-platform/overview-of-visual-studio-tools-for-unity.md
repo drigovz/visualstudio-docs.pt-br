@@ -8,12 +8,12 @@ ms.assetid: b4231bb9-45c4-4c77-ac3c-d05033b26393
 caps.latest.revision: 6
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 27ef5a1f79b97a5be5583917f1c9703b3d624c16
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: ba5447301c3a5581d35825ed91c17b3c9f50015f
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68183316"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74298744"
 ---
 # <a name="overview-of-visual-studio-tools-for-unity"></a>Visão Geral das Ferramentas do Visual Studio para Unity
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,5 +66,5 @@ Nesta seção, saiba mais sobre os recursos que as Ferramentas do Visual Studio 
   
 - É possível alterar o modo como as Ferramentas do Visual Studio para Unity geram arquivos de projeto usando o estilo de retorno de chamada ProjectFileGeneration do Unity. Para obter mais informações, consulte o exemplo de Geração de Arquivo de Projeto.  
   
-## <a name="see-also"></a>Veja também  
- [Home page do Unity](http://unity3d.com)
+## <a name="see-also"></a>Consulte também  
+ [Home page do Unity](https://unity.com/)

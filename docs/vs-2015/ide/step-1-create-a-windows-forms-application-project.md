@@ -9,19 +9,19 @@ caps.latest.revision: 24
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d9cf0177efe373933f8c34e1600658160f489a64
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a9651c04c1d94459052d92cdda0afa58e344b650
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72667346"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74295791"
 ---
 # <a name="step-1-create-a-windows-forms-application-project"></a>Etapa 1: Criar um projeto de aplicativo do Windows Forms
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Ao criar um visualizador de imagens, a primeira etapa é criar um projeto de aplicativo do Windows Forms.
 
- ![link para vídeo](../data-tools/media/playvideo.gif "PlayVideo") Para obter uma versão de vídeo deste tópico, consulte [tutorial 1: criar um visualizador de imagens no Visual Basic-Video 1](http://go.microsoft.com/fwlink/?LinkId=205209) ou [tutorial 1: criar um visualizador C# de imagens em-vídeo 1](http://go.microsoft.com/fwlink/?LinkId=205199). Esses vídeos usam uma versão anterior do Visual Studio, portanto, existem pequenas diferenças em alguns comandos de menu e em outros elementos da interface do usuário. No entanto, os conceitos e procedimentos funcionam de maneiras semelhantes na versão atual do Visual Studio.
+ ![link para vídeo](../data-tools/media/playvideo.gif "PlayVideo") Para obter uma versão de vídeo deste tópico, consulte [tutorial 1: criar um visualizador de imagens no Visual Basic-Video 1](https://go.microsoft.com/fwlink/?LinkId=205209) ou [tutorial 1: criar um visualizador C# de imagens em-vídeo 1](https://go.microsoft.com/fwlink/?LinkId=205199). Esses vídeos usam uma versão anterior do Visual Studio, portanto, existem pequenas diferenças em alguns comandos de menu e em outros elementos da interface do usuário. No entanto, os conceitos e procedimentos funcionam de maneiras semelhantes na versão atual do Visual Studio.
 
 ### <a name="to-create-a-windows-forms-application-project"></a>Para criar um projeto de aplicativo do Windows Forms
 
@@ -31,7 +31,7 @@ Ao criar um visualizador de imagens, a primeira etapa é criar um projeto de apl
 
 2. Escolha **Visual C#** ou **Visual Basic** na lista de **Modelos Instalados**.
 
-3. Na lista de modelos, escolha o ícone **Aplicativo do Windows Forms**. Dê o nome de **PictureViewer** ao novo formulário e escolha o botão **OK**.
+3. Na lista de modelos, escolha o ícone **Aplicativo de Windows Forms**. Dê o nome de **PictureViewer** ao novo formulário e escolha o botão **OK**.
 
      O Visual Studio cria uma solução para seu programa. Uma solução atua como um recipiente para todos os projetos e arquivos necessários pelo seu programa. Esses termos serão explicados em mais detalhes posteriormente neste tutorial.
 

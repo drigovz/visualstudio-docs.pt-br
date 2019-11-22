@@ -12,12 +12,12 @@ caps.latest.revision: 41
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 48fdddd8711086ff185e64df6981cd6848ad1f51
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: bfcec64f9401fdbf79e67bee5fe8430452632fbc
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669628"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301025"
 ---
 # <a name="extend-layer-diagrams"></a>Estender diagramas de camada
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ Você pode escrever código para criar e atualizar diagramas de camada e para va
 
 - [SDK do Visual Studio](../extensibility/visual-studio-sdk.md)
 
-- [SDK de modelagem para o Visual Studio 2015](http://www.microsoft.com/download/details.aspx?id=48148)
+- [SDK de modelagem para o Visual Studio 2015](https://www.microsoft.com/download/details.aspx?id=48148)
 
   Você deve ter uma versão adequada do Visual Studio instalada no computador em que deseja executar suas extensões de camada. Para obter mais informações, consulte [implantar uma extensão de modelo de camada](../modeling/deploy-a-layer-model-extension.md).
 
@@ -61,4 +61,4 @@ Você pode escrever código para criar e atualizar diagramas de camada e para va
  [Solucionar problemas de extensões para diagramas de camada](../modeling/troubleshoot-extensions-for-layer-diagrams.md)
 
 ## <a name="see-also"></a>Consulte também
- [Definir e instalar um diagrama de](../modeling/define-and-install-a-modeling-extension.md) camada de extensão de modelagem: diagramas de camada de [referência](../modeling/layer-diagrams-reference.md) [: diretrizes](../modeling/layer-diagrams-guidelines.md) [crie diagramas de camada do código de](../modeling/create-layer-diagrams-from-your-code.md) validação de código [com diagramas de camada](../modeling/validate-code-with-layer-diagrams.md) [geram arquivos de um modelo UML](../modeling/generate-files-from-a-uml-model.md) [ Abrir um modelo UML usando a API do Visual Studio](../modeling/open-a-uml-model-by-using-the-visual-studio-api.md)
+ [Definir e instalar um](../modeling/define-and-install-a-modeling-extension.md) [diagramas](../modeling/layer-diagrams-reference.md) de camada de extensão de modelagem: [diagramas de camada de referência: diretrizes](../modeling/layer-diagrams-guidelines.md) [crie diagramas de camada do código de](../modeling/create-layer-diagrams-from-your-code.md) [validação de código com diagramas de camada](../modeling/validate-code-with-layer-diagrams.md) [gere arquivos de um modelo UML](../modeling/generate-files-from-a-uml-model.md) [abra um modelo UML usando a API do Visual Studio](../modeling/open-a-uml-model-by-using-the-visual-studio-api.md)

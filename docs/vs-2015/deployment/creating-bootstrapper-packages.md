@@ -1,5 +1,5 @@
 ---
-title: Criando pacotes de Bootstrapper | Microsoft Docs
+title: Criando pacotes de bootstrapper | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -21,12 +21,12 @@ caps.latest.revision: 47
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ac304d695c13fde2b69aafbb903493ad9865bf87
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f90344c156ea6c012c6ac086ffa40bf30e78a682
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68187801"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300734"
 ---
 # <a name="creating-bootstrapper-packages"></a>Criando pacotes de bootstrapper
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ O programa de instalação é um instalador genérico que pode ser configurado p
  O bootstrapper primeiro detecta se qualquer um dos pré-requisitos já está instalado. Se os pré-requisitos não estiverem instalados, primeiro o bootstrapper mostra os contratos de licença. Em segundo lugar, depois que o usuário final aceita os contratos de licença, a instalação dos pré-requisitos começa. Caso contrário, se forem detectados todos os pré-requisitos, o bootstrapper apenas inicia o instalador do aplicativo.  
   
 ## <a name="creating-custom-packages"></a>Criando pacotes personalizados  
- É possível gerar manifestos usando o Editor de XML no Visual Studio. Para obter mais informações, confira [Como: Criar um manifesto de pacote](../deployment/how-to-create-a-package-manifest.md) e [como: Criar um manifesto de produto](../deployment/how-to-create-a-product-manifest.md). Para ver um exemplo de como criar um pacote de bootstrapper, consulte [passo a passo: Criando um Bootstrapper personalizado para mostrar uma privacidade Prompt](../deployment/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt.md).  
+ É possível gerar manifestos usando o Editor de XML no Visual Studio. Para obter mais informações, consulte [como: criar um manifesto de pacote](../deployment/how-to-create-a-package-manifest.md) e [como criar um manifesto do produto](../deployment/how-to-create-a-product-manifest.md). Para ver um exemplo de criação de um pacote de bootstrapper, consulte [passo a passos: Criando um bootstrapper personalizado para mostrar um aviso de privacidade](../deployment/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt.md).  
   
  Para criar um pacote de bootstrapper, é necessário fornecer o redistribuível na forma de um arquivo EXE ou MSI ao Gerador de Manifesto do Bootstrapper. Em seguida, o Gerador de Manifesto do Bootstrapper cria os seguintes arquivos:  
   
@@ -70,7 +70,7 @@ O programa de instalação é um instalador genérico que pode ser configurado p
   
   `package.xml`  
   
-  Por fim, copie os arquivos redistribuíveis para o local da pasta do bootstrapper. Para obter mais informações, confira [Como: Criar um pacote de Bootstrapper localizado](../deployment/how-to-create-a-localized-bootstrapper-package.md).  
+  Por fim, copie os arquivos redistribuíveis para o local da pasta do bootstrapper. Para obter mais informações, consulte [como: criar um pacote de bootstrapper localizado](../deployment/how-to-create-a-localized-bootstrapper-package.md).  
   
 ```  
 \Program Files\Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages  
@@ -96,7 +96,7 @@ HKLM\Software\Wow6432Node\Microsoft\GenericBootstrapper\11.0
   
  Cada componente redistribuível aparece em sua própria subpasta no diretório de pacotes. Os arquivos redistribuíveis e o manifesto do produto são colocados nessa subpasta. As versões localizadas do componente e dos manifestos do pacote são colocadas em subpastas nomeadas de acordo com o nome da cultura.  
   
- Após esses arquivos serem copiados na pasta do bootstrapper, o pacote de bootstrapper aparece automaticamente na caixa de diálogo de pré-requisitos do Visual Studio. Se o seu pacote personalizado de bootstrapper não aparecer, feche e reabra a caixa de diálogo Pré-requisitos. Para obter mais informações, consulte [caixa de diálogo de pré-requisitos](../ide/reference/prerequisites-dialog-box.md).  
+ Após esses arquivos serem copiados na pasta do bootstrapper, o pacote de bootstrapper aparece automaticamente na caixa de diálogo de pré-requisitos do Visual Studio. Se o seu pacote personalizado de bootstrapper não aparecer, feche e reabra a caixa de diálogo Pré-requisitos. Para obter mais informações, consulte a [caixa de diálogo pré-requisitos](../ide/reference/prerequisites-dialog-box.md).  
   
  A tabela a seguir mostra as propriedades que são preenchidas automaticamente pelo bootstrapper.  
   
@@ -115,7 +115,7 @@ HKLM\Software\Wow6432Node\Microsoft\GenericBootstrapper\11.0
   
  `%ProgramFiles%\Microsoft.NET\RedistList`  
   
- A lista redistribuível é um arquivo XML que você deve nomear usando o seguinte formato: *Nome da empresa*. *Nome do componente*. Redistlist. Assim, por exemplo, se o componente for chamado de Datawidgets feito por Acme, use Acme.DataWidgets.RedistList.xml. Um exemplo de conteúdo da lista redistribuível pode ser semelhante a:  
+ A lista redistribuível é um arquivo XML que você deve nomear usando o seguinte formato: *Nome da Empresa*.*Componente Nome*.RedistList.xml. Assim, por exemplo, se o componente for chamado de Datawidgets feito por Acme, use Acme.DataWidgets.RedistList.xml. Um exemplo de conteúdo da lista redistribuível pode ser semelhante a:  
   
 ```  
 <?xml version="1.0" encoding="UTF-8"?>  
@@ -125,7 +125,7 @@ HKLM\Software\Wow6432Node\Microsoft\GenericBootstrapper\11.0
 ```  
   
 ## <a name="see-also"></a>Consulte também  
- [Como: Instalar pré-requisitos com um aplicativo ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)   
+ [Como instalar pré-requisitos com um aplicativo ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)   
  [Caixa de diálogo de pré-requisitos](../ide/reference/prerequisites-dialog-box.md)   
- [Referência de esquema de pacote e produto](../deployment/product-and-package-schema-reference.md)   
- [Usar o Visual Studio 2005 Bootstrapper para iniciar sua instalação](http://go.microsoft.com/fwlink/?LinkId=107537)
+ [Referência de esquema de produto e pacote](../deployment/product-and-package-schema-reference.md)   
+ [Use o bootstrapper do Visual Studio 2005 para iniciar sua instalação](https://go.microsoft.com/fwlink/?LinkId=107537)

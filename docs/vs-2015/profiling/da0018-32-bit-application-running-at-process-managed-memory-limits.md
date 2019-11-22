@@ -1,5 +1,5 @@
 ---
-title: 'DA0018: Aplicativo de 32 bits em execução em limites de memória gerenciada do processo | Microsoft Docs'
+title: 'DA0018: aplicativo de 32 bits em execução em limites de memória gerenciada do processo | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -13,20 +13,20 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6418a39d7e53a3edaa48b3cd003d35d95cba386e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 67589a04b8f3c39e442b596a7a41981825bd5aa5
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68194954"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301114"
 ---
-# <a name="da0018-32-bit-application-running-at-process-managed-memory-limits"></a>DA0018: Aplicativo de 32 bits em execução nos limites de memória gerenciada por processo
+# <a name="da0018-32-bit-application-running-at-process-managed-memory-limits"></a>DA0018: aplicativo de 32 bits em execução em limites de memória gerenciada do processo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Id da regra | DA0018 |  
-| Categoria | Uso das ferramentas de criação de perfil |  
+ID da regra | DA0018 |  
+| Categoria | Uso de Ferramentas de Criação de Perfil |  
 | Método de criação de perfil | Amostragem |  
-| Mensagem | Gerenciado alocações de memória se aproximando do limite padrão para um processo de 32 bits. O aplicativo pode ser associado à memória.|  
+| Mensagem | Alocações de memória gerenciadas que se aproximam do limite padrão para um processo de 32 bits. O aplicativo pode ser associado à memória.|  
 | Tipo de regra | Aviso |  
   
  Ao criar o perfil usando a amostragem, a memória do .NET ou métodos de contenção de recursos, é necessário coletar pelo menos 10 amostras para disparar essa regra.  
@@ -64,7 +64,7 @@ Id da regra | DA0018 |
   
   Use a [Exibição de Alocações](../profiling/dotnet-memory-allocations-view.md) para determinar o caminho de execução que resultou nessas alocações.  
   
-  Para obter mais informações sobre como melhorar o desempenho da coleta de lixo, consulte o artigo técnico sobre o .NET Framework [Garbage Collector Basics and Performance Hints](http://go.microsoft.com/fwlink/?LinkId=177946) (Noções básicas sobre o coletor de lixo e dicas de desempenho) no site do MSDN.  
+  Para obter mais informações sobre como melhorar o desempenho da coleta de lixo, consulte o artigo técnico sobre o .NET Framework [Garbage Collector Basics and Performance Hints](https://go.microsoft.com/fwlink/?LinkId=177946) (Noções básicas sobre o coletor de lixo e dicas de desempenho) no site do MSDN.  
   
   Para obter alívio de arquitetura das restrições de memória virtual em relação ao tamanho da parte privada de um espaço de endereço do processo, tente executar esse processo de 32 bits em um computador de 64 bits.  Um processo de 32 bits em um computador de 64 bits pode adquirir até 4 GB de memória virtual privada.  
   

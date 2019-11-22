@@ -11,17 +11,17 @@ caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: eaaaacdcc5cf7e3044505f7cdb7aeb2e7e3e7078
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 33689ed44f4228411243d3b9716a2407b751d32b
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68871976"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300634"
 ---
 # <a name="concurrency-visualizer-sdk"></a>SDK do Visualizador de Simultaneidade
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Descreve como instrumentalizar o código-fonte usando o SDK de Visualização Simultânea para exibir informações adicionais na Visualização Simultânea. É possível associar os dados adicionais a fases e eventos em seu código. Estas visualizações adicionais são conhecidas como *marcadores*.  Para ver um passo a passo introdutório, consulte [Apresentando o SDK da Visualização Simultânea](http://go.microsoft.com/fwlink/?LinkId=235405).
+Descreve como instrumentalizar o código-fonte usando o SDK de Visualização Simultânea para exibir informações adicionais na Visualização Simultânea. É possível associar os dados adicionais a fases e eventos em seu código. Estas visualizações adicionais são conhecidas como *marcadores*.  Para ver um passo a passo introdutório, consulte [Apresentando o SDK da Visualização Simultânea](https://go.microsoft.com/fwlink/?LinkId=235405).
 
 ## <a name="properties"></a>Propriedades
  Sinalizadores, intervalos e mensagens têm, cada um, duas propriedades: categoria e importância. Na caixa de diálogo [Configurações Avançadas](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md), é possível usar essas propriedades para filtrar o conjunto de marcadores exibidos. Além disso, essas propriedades afetam a representação visual de marcadores. Por exemplo, o tamanho dos sinalizadores é usado para representar a importância. Além disso, a cor é usada para indicar a categoria.
@@ -31,7 +31,7 @@ Descreve como instrumentalizar o código-fonte usando o SDK de Visualização Si
 
 ### <a name="c-and-visual-basic"></a>C# e Visual Basic
 
-No C#, no Visual Basic e em outro código gerenciado, use o provedor padrão chamando métodos na classe de [marcadores](/previous-versions/hh694099(v=vs.140)) . Ele expõe quatro métodos para gerar marcadores: [WriteFlag](/previous-versions/hh694185(v=vs.140)), [EnterSpan](/previous-versions/hh694205(v=vs.140)), [WriteMessage](/previous-versions/hh694161(v=vs.140))e [WriteAlert](/previous-versions/hh694180(v=vs.140)). Há várias sobrecargas para essas funções, dependendo se você deseja usar os padrões para as propriedades.  A sobrecarga mais simples aceita apenas um parâmetro de cadeia de caracteres que especifica a descrição do evento. A descrição é exibida nos relatórios da Visualização Simultânea.
+No C#, no Visual Basic e em outros códigos gerenciados, use o provedor padrão chamando métodos na classe [Markers](/previous-versions/hh694099(v=vs.140)). Ele expõe quatro métodos para gerar marcadores: [WriteFlag](/previous-versions/hh694185(v=vs.140)), [EnterSpan](/previous-versions/hh694205(v=vs.140)), [WriteMessage](/previous-versions/hh694161(v=vs.140))e [WriteAlert](/previous-versions/hh694180(v=vs.140)). Há várias sobrecargas para essas funções, dependendo se você deseja usar os padrões para as propriedades.  A sobrecarga mais simples aceita apenas um parâmetro de cadeia de caracteres que especifica a descrição do evento. A descrição é exibida nos relatórios da Visualização Simultânea.
 
 #### <a name="add-sdk-support-to-a-c-or-visual-basic-project"></a>Adicionar suporte do SDK a C# um projeto do ou Visual Basic
 
@@ -78,7 +78,7 @@ No C#, no Visual Basic e em outro código gerenciado, use o provedor padrão cha
 
 #### <a name="to-use-a-new-marker-provider-in-a-c-or-visual-basic-project"></a>Para usar um novo provedor de marcador em um projeto em C# ou do Visual Basic
 
-1. Crie um objeto [MarkerWriter](/previous-versions/hh694138(v=vs.140)) . O construtor aceita um GUID.
+1. Crie um objeto [MarkerWriter](/previous-versions/hh694138(v=vs.140)). O construtor aceita um GUID.
 
 2. Para registrar o provedor, abra a caixa de diálogo [Configurações Avançadas](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) da Visualização Simultânea.  Selecione a guia **Marcadores** e, em seguida, escolha o botão **Adicionar novo provedor**. Na caixa de diálogo [Configurações Avançadas](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md), digite o GUID usado para criar o provedor e uma descrição do provedor.
 
@@ -90,7 +90,7 @@ No C#, no Visual Basic e em outro código gerenciado, use o provedor padrão cha
 
 #### <a name="to-use-a-marker-series-in-a-c-or-visual-basic-project"></a>Para usar uma série de marcadores em um projeto em C# ou do Visual Basic
 
-1. Para usar um novo [MarkerSeries](/previous-versions/hh694127(v=vs.140)), primeiro crie-o usando um objeto [MarkerWriter](/previous-versions/hh694138(v=vs.140)) e, em seguida, gere eventos de marcador diretamente da nova série.
+1. Para usar uma nova [MarkerSeries](/previous-versions/hh694127(v=vs.140)), primeiro crie-a usando um objeto [MarkerWriter](/previous-versions/hh694138(v=vs.140)) e, em seguida, gere eventos de marcador diretamente da nova série.
 
     ```csharp
     MarkerSeries series1 = myMarkerWriter.CreateMarkerSeries(″Series 1″);

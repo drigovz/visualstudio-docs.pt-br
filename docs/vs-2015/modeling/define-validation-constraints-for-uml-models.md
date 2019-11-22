@@ -11,17 +11,17 @@ caps.latest.revision: 49
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 2f279216d06972578f5173e57375c89542c71e3f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3dd76deb3b72d3b12d3b5892c2e5664273425c4c
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669892"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74295835"
 ---
 # <a name="define-validation-constraints-for-uml-models"></a>Definir restrições de validação para modelos UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Você pode definir restrições de validação que testam se o modelo atende a uma condição que você especificar. Por exemplo, você pode definir uma restrição para garantir que um usuário não crie um loop de relações de herança. A restrição é invocada quando o usuário tenta abrir ou salvar o modelo e também pode ser invocado manualmente. Se a restrição falhar, uma mensagem de erro que você definir será adicionada à janela de erro. Você pode empacotar essas restrições em uma extensão de integração do Visual Studio ([VSIX](http://go.microsoft.com/fwlink/?LinkId=160780)) e distribuí-las a outros usuários do Visual Studio.
+Você pode definir restrições de validação que testam se o modelo atende a uma condição que você especificar. Por exemplo, você pode definir uma restrição para garantir que um usuário não crie um loop de relações de herança. A restrição é invocada quando o usuário tenta abrir ou salvar o modelo e também pode ser invocado manualmente. Se a restrição falhar, uma mensagem de erro que você definir será adicionada à janela de erro. Você pode empacotar essas restrições em uma extensão de integração do Visual Studio ([VSIX](https://go.microsoft.com/fwlink/?LinkId=160780)) e distribuí-las a outros usuários do Visual Studio.
 
  Você também pode definir restrições que validam o modelo em relação a recursos externos, como bancos de dados. Se você quiser validar o código do programa em um diagrama de camada, consulte [Adicionar validação de arquitetura personalizada a diagramas de camada](../modeling/add-custom-architecture-validation-to-layer-diagrams.md).
 
@@ -63,7 +63,7 @@ Você pode definir restrições de validação que testam se o modelo atende a u
 
 4. Teste suas restrições pressionando F5. Para obter mais informações, consulte [executando uma restrição de validação](#Executing).
 
-5. Instale o comando de menu em outro computador copiando o arquivo **bin \\ \* \\ \*. vsix** criado pelo seu projeto. Para obter mais informações, consulte [Instalando e desinstalando uma extensão](#Installing).
+5. Instale o comando de menu em outro computador copiando o arquivo **bin\\\*\\\*. vsix** criado pelo seu projeto. Para obter mais informações, consulte [Instalando e desinstalando uma extensão](#Installing).
 
    Ao adicionar outros arquivos **. cs** , normalmente você precisará das seguintes instruções de `using`:
 
@@ -105,11 +105,11 @@ using Microsoft.VisualStudio.Uml.Classes;
 
     3. Na guia **ativos** , escolha um **novo**e, na caixa de diálogo, defina:
 
-         **Tipo**  = **componente MEF**
+         **Tipo** = **componente MEF**
 
-         **Fonte**  = **um projeto na solução atual**
+         **Fonte** = **um projeto na solução atual**
 
-         **Projeto**  = *seu projeto de biblioteca de classes*
+         **Projeto** = *seu projeto de biblioteca de classes*
 
 #### <a name="to-define-the-validation-class"></a>Para definir a classe de validação
 
@@ -195,7 +195,7 @@ using Microsoft.VisualStudio.Uml.Classes;
 
          `C:\Program Files\Microsoft Visual Studio [version]\Common7\IDE\devenv.exe`
 
-2. No [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] experimental, abra ou crie um projeto de modelagem e abra ou crie um diagrama de modelagem.
+2. No [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]experimental, abra ou crie um projeto de modelagem e abra ou crie um diagrama de modelagem.
 
 3. Para configurar um teste para a restrição de exemplo fornecida na seção anterior:
 
@@ -280,7 +280,7 @@ public void ValidateSomething
 ## <a name="how-validation-methods-are-applied"></a>Como os métodos de validação são aplicados
  A validação é aplicada a todos os elementos no modelo, incluindo relações e as partes de elementos maiores, como atributos de uma classe e parâmetros de uma operação.
 
- Cada método de validação é aplicado a cada elemento que está de acordo com o tipo em seu segundo parâmetro. Isso significa que, por exemplo, se você definir um método de validação com um segundo parâmetro de `IUseCase` e outro com seu `IElement` de supertipo, então esses dois métodos serão aplicados a cada caso de uso no modelo.
+ Cada método de validação é aplicado a cada elemento que está de acordo com o tipo em seu segundo parâmetro. Isso significa que, por exemplo, se você definir um método de validação com um segundo parâmetro de `IUseCase` e outro com seu `IElement`de supertipo, então esses dois métodos serão aplicados a cada caso de uso no modelo.
 
  A hierarquia de tipos é resumida em [tipos de elementos de modelo UML](../modeling/uml-model-element-types.md).
 
@@ -372,7 +372,7 @@ context.LogError(... , usecase);
 
     1. No **Gerenciador de soluções**, no menu de atalho do projeto VSIX, escolha **abrir pasta no Windows Explorer**.
 
-    2. Localize o arquivo **bin \\ \* \\** _seuprojeto_ **. vsix**
+    2. Localize o arquivo **bin\\\*\\** _seuprojeto_ **. vsix**
 
 2. Copie o arquivo **. vsix** para o computador de destino no qual você deseja instalar a extensão. Este pode ser seu próprio computador ou outro.
 
@@ -392,9 +392,9 @@ context.LogError(... , usecase);
 
 3. Selecione a extensão e escolha **desinstalar**.
 
-   Raramente, uma extensão defeituosa não carrega e cria um relatório na janela de erro, mas não aparece no Gerenciador de extensões. Nesse caso, você pode remover a extensão excluindo o arquivo do seguinte local em que *% LocalAppData%* normalmente é *driveName*: \Users \\*username*\AppData\Local:
+   Raramente, uma extensão defeituosa não carrega e cria um relatório na janela de erro, mas não aparece no Gerenciador de extensões. Nesse caso, você pode remover a extensão excluindo o arquivo do seguinte local em que *% LocalAppData%* normalmente é *driveName*: \Users\\*username*\AppData\Local:
 
-   *% LocalAppData%* **\Microsoft\VisualStudio \\ [versão] \Extensions**
+   *%LocalAppData%* **\Microsoft\VisualStudio\\[version]\Extensions**
 
 ## <a name="Example"></a> Exemplo
  Este exemplo localiza loops na relação de dependência entre elementos.

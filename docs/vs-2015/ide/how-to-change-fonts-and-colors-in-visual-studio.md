@@ -12,12 +12,12 @@ caps.latest.revision: 16
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 3ae3d35f98b54038b590c2fbaf75d0f1597fd0b3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 0312846431f670ae136fdadfc8647c4096348941
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72645449"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300134"
 ---
 # <a name="how-to-change-fonts-and-colors-in-visual-studio"></a>Como alterar fontes e cores no Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ ms.locfileid: "72645449"
     > [!IMPORTANT]
     > Ao alterar um tema de cores, o texto no IDE é revertido para as fontes e os tamanhos padrão ou personalizados anteriormente.
     >
-    >  Se você tiver o Visual Studio Professional, Visual Studio Premium ou Visual Studio Ultimate, é possível instalar outros temas de cores predefinidos e criar seu próprio baixando e instalando o [Editor de Tema de Cores do Visual Studio 2013](http://visualstudiogallery.msdn.microsoft.com/9e08e5d3-6eb4-4e73-a045-6ea2a5cbdabe).
+    >  Se você tiver o Visual Studio Professional, Visual Studio Premium ou Visual Studio Ultimate, é possível instalar outros temas de cores predefinidos e criar seu próprio baixando e instalando o [Editor de Tema de Cores do Visual Studio 2013](https://marketplace.visualstudio.com/items?itemName=MatthewJohnsonMSFT.VisualStudio2013ColorThemeEditor).
 
 ### <a name="use-windows-high-contrast-colors"></a>Usar as cores de alto contraste do Windows
 

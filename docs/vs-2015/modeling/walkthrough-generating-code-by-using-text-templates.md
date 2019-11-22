@@ -12,12 +12,12 @@ caps.latest.revision: 13
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 29a455194e64ee30186941cb67b014170426cce0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c2a86689fd41b7c0233db0df544082ef22c4931a
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659259"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74295505"
 ---
 # <a name="walkthrough-generating-code-by-using-text-templates"></a>Instruções passo a passo: gerenciando código usando modelos de texto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ A geração de código permite que você produza um código de programa fortemen
  Neste projeto de exemplo, um modelo lê um arquivo XML de exemplo e gera classes que correspondem a cada tipo de nó. No código escrito manualmente, você pode usar essas classes para navegar pelo arquivo XML. Você também pode executar seu aplicativo em qualquer outro arquivo que use os mesmos tipos de nó. A finalidade do arquivo XML de exemplo é fornecer exemplos de todos os tipos de nó com os quais você deseja que seu aplicativo lide.
 
 > [!NOTE]
-> O aplicativo [XSD. exe](http://go.microsoft.com/fwlink/?LinkId=178765), que está incluído com [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], pode gerar classes fortemente tipadas a partir de arquivos XML. O modelo mostrado aqui é fornecido como um exemplo.
+> O aplicativo [XSD. exe](https://go.microsoft.com/fwlink/?LinkId=178765), que está incluído com [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], pode gerar classes fortemente tipadas a partir de arquivos XML. O modelo mostrado aqui é fornecido como um exemplo.
 
  Este é o arquivo de exemplo:
 
@@ -418,7 +418,7 @@ namespace MyProject
   Neste tutorial, o código do programa é realmente gerado a partir de uma instância do modelo, um exemplo representativo dos arquivos XML que o aplicativo processará. Em uma abordagem mais formal, o esquema XML seria a entrada para o modelo, na forma de um arquivo. xsd ou uma definição de linguagem específica de domínio. Essa abordagem tornaria mais fácil para o modelo determinar características como a multiplicidade de uma relação.
 
 ## <a name="troubleshooting-the-text-template"></a>Solucionando problemas do modelo de texto
- Se você tiver visto o modelo de transformação ou erros de compilação no **lista de erros**, ou se o arquivo de saída não tiver sido gerado corretamente, você poderá solucionar o problema do modelo de texto com as técnicas descritas em [gerando arquivos com o TextTransform Utilitário](../modeling/generating-files-with-the-texttransform-utility.md).
+ Se você tiver visto o modelo de transformação ou erros de compilação no **lista de erros**, ou se o arquivo de saída não tiver sido gerado corretamente, você poderá solucionar o problema do modelo de texto com as técnicas descritas em [gerando arquivos com o utilitário TextTransform](../modeling/generating-files-with-the-texttransform-utility.md).
 
 ## <a name="see-also"></a>Consulte também
  [Geração de código em tempo de design usando modelos de texto T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md) [escrevendo um modelo de texto T4](../modeling/writing-a-t4-text-template.md)

@@ -11,12 +11,12 @@ caps.latest.revision: 17
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 838f2d4d01372cf99d898c4e0d6584bb838c4f9b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 67d489b1446e7205d72b53e160a8c7ca87f216d7
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72655271"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74292335"
 ---
 # <a name="add-stereotypes-to-uml-model-elements"></a>Adicionar estereótipos a elementos de modelo UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -82,4 +82,5 @@ Você pode adicionar um estereótipo a um elemento de modelo UML para anotá-lo 
          Você pode fazer isso somente com alguns tipos de diagrama.
 
 ## <a name="see-also"></a>Consulte também
- [Definir um perfil para estender UML](../modeling/define-a-profile-to-extend-uml.md) [Personalize seu modelo com perfis e estereótipos](../modeling/customize-your-model-with-profiles-and-stereotypes.md) [definir pacotes e namespaces](../modeling/define-packages-and-namespaces.md) de [cores UML classes por estereótipo](http://code.msdn.microsoft.com/UML-Color-Classes-by-07de2b70)
+ [Definir um perfil para estender UML](../modeling/define-a-profile-to-extend-uml.md) [Personalize seu modelo com perfis e estereótipos](../modeling/customize-your-model-with-profiles-and-stereotypes.md) [definir pacotes e namespaces](../modeling/define-packages-and-namespaces.md)
+

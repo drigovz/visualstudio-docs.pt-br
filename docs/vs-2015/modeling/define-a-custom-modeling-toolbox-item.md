@@ -11,12 +11,12 @@ caps.latest.revision: 33
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 27692c31c2c0f1c52ab026fb2d55e5d240839ff3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ac299f18e544ef4f3215707abbdc3d9e8d266de6
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654896"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299299"
 ---
 # <a name="define-a-custom-modeling-toolbox-item"></a>Definir um item de caixa de ferramentas de modelagem personalizado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -125,13 +125,13 @@ Para facilitar a criação de um elemento ou grupo de elementos de acordo com um
 
   Os nós no arquivo **. tbxinfo** são os seguintes. Há um valor padrão para cada nó.
 
-|Nome do nó|autor|
+|Nome do nó|Autor|
 |---------------|-------------|
 |displayName|O nome do item da caixa de ferramentas.|
 |tabName|A guia caixa de ferramentas na qual o item deve aparecer. Você pode especificar o nome da guia regular para este tipo de diagrama ou um nome separado.|
 |imagem|O local do arquivo de bitmap ( **. bmp**), que deve ter altura e largura de 16 e uma intensidade de cor de 24 bits.|
 |f1Keyword|A palavra-chave que localiza um tópico da ajuda.|
-|Dessa|Uma dica de ferramentas para esta ferramenta.|
+|dessa|Uma dica de ferramentas para esta ferramenta.|
 
  Você pode editar o arquivo de bitmap no Visual Studio e definir sua altura e largura como 16 no janela Propriedades.
 
@@ -139,9 +139,9 @@ Para facilitar a criação de um elemento ou grupo de elementos de acordo com um
 > Se você começar a usar um arquivo. tbxinfo depois de experimentar usando arquivos de diagrama por conta própria, talvez descubra que a caixa de ferramentas contém as versões antiga e nova de um item da caixa de ferramentas. Isso também pode ocorrer se o nome do arquivo de diagrama tiver sido digitado no arquivo. tbxinfo. Se isso ocorrer, no menu de atalho da caixa de ferramentas, escolha **Redefinir caixa de ferramentas**. Os itens da caixa de ferramentas personalizada desaparecerão. Reinicie o Visual Studio e os itens personalizados corretos serão exibidos.
 
 ## <a name="Extension"></a>Como distribuir itens da caixa de ferramentas em uma extensão do Visual Studio
- Você pode distribuir itens da caixa de ferramentas para outros usuários [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] empacotando-os em uma extensão do Visual Studio (VSIX). Você pode empacotar comandos, perfis e outras extensões no mesmo arquivo VSIX. Para obter mais informações, consulte [implantando extensões do Visual Studio](http://go.microsoft.com/fwlink/?LinkId=160780).
+ Você pode distribuir itens da caixa de ferramentas para outros usuários [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] empacotando-os em uma extensão do Visual Studio (VSIX). Você pode empacotar comandos, perfis e outras extensões no mesmo arquivo VSIX. Para obter mais informações, consulte [implantando extensões do Visual Studio](https://go.microsoft.com/fwlink/?LinkId=160780).
 
- A maneira usual de criar uma extensão do Visual Studio é usar o modelo de projeto VSIX. Para fazer isso, você deve ter o [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] instalado.
+ A maneira usual de criar uma extensão do Visual Studio é usar o modelo de projeto VSIX. Para fazer isso, você deve ter o [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)]instalado.
 
 #### <a name="to-add-a-toolbox-item-to-a-visual-studio-extension"></a>Para adicionar um item da caixa de ferramentas a uma extensão do Visual Studio
 
@@ -168,11 +168,11 @@ Para facilitar a criação de um elemento ou grupo de elementos de acordo com um
 
 5. Defina as propriedades a seguir de todos os arquivos que você acabou de adicionar. Você pode definir suas propriedades ao mesmo tempo selecionando-as em Gerenciador de Soluções. Tenha cuidado para não alterar as propriedades dos outros arquivos no projeto.
 
-     **Copiar para o diretório de saída**  = **copiar sempre**
+     **Copiar para o diretório de saída** = **copiar sempre**
 
-     **Compilar** **conteúdo** de  =  de ação
+     **Compilar** **conteúdo** de = de ação
 
-     **Incluir no VSIX**  = **verdadeiro**
+     **Incluir no VSIX** = **verdadeiro**
 
 6. Open **Source. Extension. vsixmanifest**. Ele é aberto no editor de manifesto de extensão.
 
@@ -180,14 +180,14 @@ Para facilitar a criação de um elemento ou grupo de elementos de acordo com um
 
      Em **ativos**, escolha **novo** e, em seguida, defina os campos na caixa de diálogo da seguinte maneira:
 
-    - **Tipo**  = **tipo de extensão personalizada**
+    - **Tipo** = **tipo de extensão personalizada**
 
     - Tipo = `Microsoft.VisualStudio.ArchitectureTools.CustomToolboxItems`
 
         > [!NOTE]
         > Essa não é uma das opções na lista suspensa. Você precisa inseri-lo usando o teclado.
 
-    - **Arquivo de  =  de origem no sistema de arquivos**.
+    - **Arquivo de = de origem no sistema de arquivos**.
 
     - **Caminho** = seu arquivo **. tbxinfo** , por exemplo, **MyTools. tbxinfo**
 
@@ -214,13 +214,13 @@ Para facilitar a criação de um elemento ou grupo de elementos de acordo com um
 
 1. Crie um projeto de extensão do Visual Studio que contenha uma ou mais ferramentas personalizadas.
 
-    No arquivo **. tbxinfo** , use o método do arquivo de recurso para definir o `displayName`, a caixa de ferramentas `tabName` e a dica de ferramenta da ferramentas. Crie um arquivo de recurso no qual essas cadeias de caracteres são definidas, compile-o em um assembly e consulte-o no arquivo tbxinfo.
+    No arquivo **. tbxinfo** , use o método do arquivo de recurso para definir o `displayName`, a caixa de ferramentas `tabName`e a dica de ferramenta da ferramentas. Crie um arquivo de recurso no qual essas cadeias de caracteres são definidas, compile-o em um assembly e consulte-o no arquivo tbxinfo.
 
 2. Crie assemblies adicionais que contenham arquivos de recursos com cadeias de caracteres em outras linguagens.
 
 3. Coloque cada assembly adicional em uma pasta cujo nome é o código de cultura do idioma. Por exemplo, coloque uma versão em francês do assembly dentro de uma pasta chamada **fr**.
 
-4. Você deve usar um código de cultura neutro, normalmente duas letras, não uma cultura específica, como `fr-CA`. Para obter mais informações sobre códigos de cultura, consulte o [método CultureInfo. Getculturals](http://go.microsoft.com/fwlink/?LinkId=160782), que fornece uma lista completa de códigos de cultura.
+4. Você deve usar um código de cultura neutro, normalmente duas letras, não uma cultura específica, como `fr-CA`. Para obter mais informações sobre códigos de cultura, consulte o [método CultureInfo. Getculturals](https://go.microsoft.com/fwlink/?LinkId=160782), que fornece uma lista completa de códigos de cultura.
 
 5. Crie a extensão do Visual Studio e distribua-a.
 

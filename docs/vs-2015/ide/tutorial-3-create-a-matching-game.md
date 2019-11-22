@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 1d67e81aa90faa59cf5320293aba9e7d82e3f625
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 30ee029fe231202c821c8448d3594192b5ebfdf8
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654726"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299855"
 ---
 # <a name="tutorial-3-create-a-matching-game"></a>Tutorial 3: criar um jogo da memória
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,12 +35,10 @@ Neste tutorial, você cria um jogo da memória, onde o jogador deve combinar par
 
   ![Jogo que você cria neste tutorial](../ide/media/express-finishedgame.png "Express_FinishedGame") Jogo que você cria neste tutorial
 
-  Para baixar uma versão completa do exemplo, consulte [Complete Matching Game tutorial sample (Exemplo de tutorial completo de jogo da memória)](http://code.msdn.microsoft.com/Complete-Matching-Game-4cffddba).
-
 > [!NOTE]
 > Neste tutorial, o Visual C# e o Visual Basic são abordados, portanto concentre-se nas informações específicas da linguagem de programação que você está usando.
 
- Se você estiver com dificuldades ou tiver dúvidas quanto à programação, tente publicar sua dúvida em um dos fóruns do MSDN. Consulte [Fórum do Visual Basic](http://social.msdn.microsoft.com/Forums/home?forum=vbgeneral) e [Fórum do Visual C#](http://social.msdn.microsoft.com/Forums/home?forum=csharpgeneral). Além disso, há recursos de aprendizagem por vídeo excelentes e gratuitos disponíveis para você. Para saber mais sobre programação no Visual Basic, consulte [Visual Basic Fundamentals: Development for Absolute Beginners (Conceitos básicos do Visual Basic: desenvolvimento para iniciantes absolutos)](http://channel9.msdn.com/Series/Visual-Basic-Development-for-Absolute-Beginners). Para saber mais sobre programação no Visual C#, consulte [C# Fundamentals: Development for Absolute Beginners (Conceitos básicos do C#: desenvolvimento para iniciantes absolutos)](http://channel9.msdn.com/Series/C-Sharp-Fundamentals-Development-for-Absolute-Beginners).
+ Se você estiver com dificuldades ou tiver dúvidas quanto à programação, tente publicar sua dúvida em um dos fóruns do MSDN. Consulte [Fórum do Visual Basic](https://social.msdn.microsoft.com/Forums/en-US/home) e [Fórum do Visual C#](https://social.msdn.microsoft.com/Forums/en-US/home). Além disso, há recursos de aprendizagem por vídeo excelentes e gratuitos disponíveis para você. Para saber mais sobre programação no Visual Basic, consulte [Visual Basic Fundamentals: Development for Absolute Beginners (Conceitos básicos do Visual Basic: desenvolvimento para iniciantes absolutos)](https://channel9.msdn.com/Series/Visual-Basic-Development-for-Absolute-Beginners). Para saber mais sobre programação no Visual C#, consulte [C# Fundamentals: Development for Absolute Beginners (Conceitos básicos do C#: desenvolvimento para iniciantes absolutos)](https://channel9.msdn.com/Series/C-Sharp-Fundamentals-Development-for-Absolute-Beginners).
 
 ## <a name="related-topics"></a>Tópicos relacionados
 

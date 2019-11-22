@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9d3ed6456ecf4ca226368338078247a10d80cee3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2d2e067b70256bd86a1f7598033689d6a498af60
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68196606"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74298352"
 ---
 # <a name="configuring-targets-and-tasks"></a>Configurando destinos e tarefas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,12 +24,12 @@ Você pode configurar destinos do MSBuild e tarefas para execução fora de proc
 ## <a name="installation"></a>Instalação  
  O .NET Framework 4.5 e 4.5.1 substitui o CLR (Common Language Runtime), os destinos, as tarefas e as ferramentas do .NET Framework 4 sem renomeá-los. O .NET Framework 4.5.1 é instalado como parte do [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)].  
   
- Se desejar instalar o MSBuild separadamente do Visual Studio, baixe o pacote de instalação em [Download do MSBuild](http://go.microsoft.com/fwlink/?LinkId=309745). Você também deve instalar as versões do .NET Framework que deseja usar.  
+ Se desejar instalar o MSBuild separadamente do Visual Studio, baixe o pacote de instalação em [Download do MSBuild](https://go.microsoft.com/fwlink/?LinkId=309745). Você também deve instalar as versões do .NET Framework que deseja usar.  
   
 ## <a name="targets-and-tasks"></a>Destinos e tarefas  
  O MSBuild executa certas tarefas de build fora do processo para destinar para um conjunto maior de contextos.  Por exemplo, um MSBuild de 32 bits pode executar uma tarefa de build em um processo de 64 bits para destinar um computador de 64 bits. Isso é controlado pelos argumentos `UsingTask` e parâmetros `Task`. Os destinos instalados pelo .NET Framework 4.5 definem esses parâmetros e argumentos e nenhuma alteração é necessária para compilar aplicativos para os vários contextos de destino.  
   
- Se quiser criar seu próprio contexto de destino, você deverá definir esses parâmetros e argumentos adequadamente. Examine o arquivo Microsoft.Common.targets do .NET Framework 4.5 e o arquivo Microsoft.Common.Tasks para obter exemplos.  Para obter informações sobre como criar uma tarefa personalizada que pode trabalhar com vários contextos de destino ou como modificar as tarefas existentes, veja [Como: Configurar destinos e tarefas](../msbuild/how-to-configure-targets-and-tasks.md).  
+ Se quiser criar seu próprio contexto de destino, você deverá definir esses parâmetros e argumentos adequadamente. Examine o arquivo Microsoft.Common.targets do .NET Framework 4.5 e o arquivo Microsoft.Common.Tasks para obter exemplos.  Para obter informações sobre como criar uma tarefa personalizada que possa trabalhar com vários contextos de destino ou modificar tarefas existentes, consulte [Como configurar destinos e tarefas](../msbuild/how-to-configure-targets-and-tasks.md).  
   
 ## <a name="see-also"></a>Consulte também  
  [Multiplataforma](../msbuild/msbuild-multitargeting-overview.md)

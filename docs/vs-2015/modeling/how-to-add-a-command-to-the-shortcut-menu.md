@@ -12,12 +12,12 @@ caps.latest.revision: 24
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 1d218f5f560a7ae2c95d7e7ae0e20002f922e257
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8d5373ae27797aa3bfe4627fb84ce393dce9e910
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72602072"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300889"
 ---
 # <a name="how-to-add-a-command-to-the-shortcut-menu"></a>Como adicionar um comando ao menu de atalho
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,9 +30,9 @@ ms.locfileid: "72602072"
 
 2. [Atualize o número de versão do pacote em Package.tt](#version). Você precisará fazer isso sempre que alterar o Commands.vsct
 
-3. [Escreva métodos na classe commandSet](#CommandSet) para tornar o comando visível e definir o que você deseja que o comando faça.
+3. {1&gt;Gravar métodos na classe CommandSet&lt;1} para tornar o comando visível e definir o que deseja que o comando faça.
 
-   Para obter exemplos, consulte o [site do SDK de visualização e modelagem](http://go.microsoft.com/fwlink/?LinkID=185579).
+   Para obter exemplos, consulte o [site do SDK de visualização e modelagem](https://go.microsoft.com/fwlink/?LinkID=185579).
 
 > [!NOTE]
 > Também é possível modificar o comportamento de alguns comandos existentes, tais como Recortar, Colar, Selecionar Tudo e Imprimir substituindo métodos em CommandSet.cs. Para obter mais informações, consulte [como modificar um comando de menu padrão](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).
@@ -61,7 +61,7 @@ ms.locfileid: "72602072"
 
 #### <a name="to-add-the-command"></a>Para adicionar o comando
 
-1. No **Gerenciador de soluções**, no projeto **DslPackage** , abra Commands. vsct.
+1. No **Gerenciador de Soluções**, no projeto **DslPackage**, abra Commands.vsct.
 
 2. No elemento `Commands`, defina um ou mais botões e um grupo. Um *botão* é um item no menu. Um *grupo* é uma seção no menu. Para definir esses itens, adicione os seguintes elementos:
 
@@ -117,7 +117,7 @@ ms.locfileid: "72602072"
     </Symbols>
     ```
 
-5. Substitua `{000...000}` por um GUID que identifica seus grupos e itens de menu. Para obter um novo GUID, use a ferramenta **Criar GUID** no menu **ferramentas** .
+5. Substitua `{000...000}` por um GUID que identifica seus grupos e itens de menu. Para obter um novo GUID, use a ferramenta **Criar GUID** no menu **Ferramentas**.
 
     > [!NOTE]
     > Se você adicionar mais grupos ou itens de menu, poderá usar o mesmo GUID. No entanto, você deve usar novos valores para o `IDSymbols`.
@@ -139,7 +139,7 @@ ms.locfileid: "72602072"
 
 #### <a name="to-update-the-packagett-file"></a>Para atualizar o arquivo Package.tt
 
-1. No **Gerenciador de soluções**, no projeto **DslPackage** , na pasta **GeneratedCode** , abra o arquivo Package.tt.
+1. Em **Gerenciador de Soluções**, no projeto **DslPackage**, na pasta **GeneratedCode**, abra o arquivo Package.tt.
 
 2. Localize o atributo `ProvideMenuResource`.
 
@@ -223,17 +223,17 @@ private void OnStatusMyContextMenuCommand(object sender, EventArgs e)
 
  Os seguintes fragmentos são geralmente úteis nos métodos OnStatus:
 
-- `this.CurrentSelection` O formato que o usuário clicou com o botão direito do mouse estará sempre incluído nesta lista. Se o usuário clicar em uma parte em branco do diagrama, o Diagrama será o único membro da lista.
+- `this.CurrentSelection`. O formato que o usuário clicou com o botão direito do mouse estará sempre incluído nesta lista. Se o usuário clicar em uma parte em branco do diagrama, o Diagrama será o único membro da lista.
 
-- `this.IsDiagramSelected()`  -  `true` se o usuário clicou em uma parte em branco do diagrama.
+- `this.IsDiagramSelected()` - `true` se o usuário clicou em uma parte em branco do diagrama.
 
 - `this.IsCurrentDiagramEmpty()`
 
-- `this.IsSingleSelection()` - o usuário não escolheu vários objetos
+- `this.IsSingleSelection()`-o usuário não selecionou vários objetos
 
-- `this.SingleSelection` - a forma ou o diagrama que o usuário clicou com o botão direito
+- `this.SingleSelection`-a forma ou o diagrama em que o usuário clicou com o botão direito
 
-- `shape.ModelElement as MyLanguageElement` - o elemento de modelo representado por uma forma.
+- `shape.ModelElement as MyLanguageElement`-o elemento de modelo representado por uma forma.
 
   Como diretriz geral, faça com que a propriedade `Visible` dependa do que foi selecionado e faça com que a propriedade `Enabled` dependa do estado dos elementos selecionados.
 
@@ -300,7 +300,7 @@ private const int cmdidMyContextMenuCommand = 1;
 > [!NOTE]
 > Se você alterar a seção Símbolos do arquivo VSCT, deverá também alterar essas declarações para que correspondam. Você deve também incrementar o número de versão em Package.tt
 
- Registre os comandos de menu como parte deste conjunto de comandos. `GetMenuCommands()` é chamado uma vez quando o diagrama é iniciado:
+ Registre os comandos de menu como parte deste conjunto de comandos. `GetMenuCommands()` é chamado uma vez quando o diagrama é inicializado:
 
 ```
 protected override IList<MenuCommand> GetMenuCommands()
@@ -324,7 +324,7 @@ protected override IList<MenuCommand> GetMenuCommands()
 
 #### <a name="to-exercise-the-command"></a>Para exercitar o comando
 
-1. Na barra de ferramentas **Gerenciador de soluções** , clique em **transformar todos os modelos**.
+1. Na barra de ferramentas do **Gerenciador de Soluções**, clique em **Transformar Todos os Modelos**.
 
 2. Pressione **F5** para recompilar a solução e iniciar a depuração da linguagem específica do domínio na compilação experimental.
 
@@ -339,11 +339,11 @@ protected override IList<MenuCommand> GetMenuCommands()
 
 - Verifique se a sua amostra experimental tem a extensão de nome de arquivo correta para esta DSL. Para verificar a extensão do nome do arquivo, abra DslDefinition.dsl na instância principal do Visual Studio. Em seguida, no Gerenciador de DSL, clique com o botão direito do mouse no nó Editor e clique em Propriedades. Na janela Propriedades, examine a propriedade FileExtension.
 
-- Você [incrementa o número de versão do pacote](#version)?
+- Você [incrementou o número de versão do pacote](#version)?
 
 - Defina um ponto de interrupção no início do método OnStatus. Ele deve ser interrompido quando você clicar com o botão direito do mouse em qualquer parte do diagrama.
 
-   O **método OnStatus não é chamado**:
+   {1&gt;O método OnStatus não é chamado&lt;1}:
 
   - Verifique se os GUIDs e IDs em seu código CommandSet correspondem aos presentes na seção Símbolos de Commands.vsct.
 
@@ -360,4 +360,4 @@ protected override IList<MenuCommand> GetMenuCommands()
 - Certifique-se de que você tenha desinstalado as versões anteriores do pacote.
 
 ## <a name="see-also"></a>Consulte também
- [Escrever código para personalizar uma linguagem específica de domínio](../modeling/writing-code-to-customise-a-domain-specific-language.md) [como modificar um comando de menu padrão](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md) [implantando soluções de linguagem específica de domínio](../modeling/deploying-domain-specific-language-solutions.md) [exemplo de código: diagramas de circuito](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
+ [Escrever código para personalizar uma linguagem específica de domínio](../modeling/writing-code-to-customise-a-domain-specific-language.md) [como modificar um comando de menu padrão](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md) [implantando soluções de linguagem específica de domínio](../modeling/deploying-domain-specific-language-solutions.md)

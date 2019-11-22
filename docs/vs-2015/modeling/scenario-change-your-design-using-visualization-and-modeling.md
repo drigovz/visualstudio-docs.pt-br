@@ -17,12 +17,12 @@ caps.latest.revision: 63
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: e66f8438e0c28a64d2e8705fea0ffa5e362887b0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: cafc4e2a87a31603e1f8cef4174d8538be768428
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72671251"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74296025"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>Cenário: alterar o design usando visualização e modelagem
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -363,7 +363,7 @@ Verifique se o sistema de software atende às necessidades dos usuários usando 
 
 - [Validar o sistema durante o desenvolvimento](../modeling/validate-your-system-during-development.md)
 
-- [Usar o controle de versão](http://go.microsoft.com/fwlink/?LinkID=525605)
+- [Usar o controle de versão](https://go.microsoft.com/fwlink/?LinkID=525605)
 
 - [Compilar o aplicativo](/azure/devops/pipelines/index)
 
@@ -697,9 +697,9 @@ Verifique se o sistema de software atende às necessidades dos usuários usando 
 
 - *As mensagens* horizontais representam chamadas de método, mensagens de serviço Web ou alguma outra comunicação. As *ocorrências de execução* são retângulos sombreados verticais que aparecem nas linhas de vida e representam os períodos durante os quais os processos de recebimento de objetos são chamados.
 
-- Durante uma mensagem *síncrona* , o objeto do remetente aguarda o controle para < \<return > > como em uma chamada de função regular. Durante uma mensagem *assíncrona* , o remetente pode continuar imediatamente.
+- Durante uma mensagem *síncrona* , o objeto do remetente aguarda o controle para <\<retornar > > como em uma chamada de função regular. Durante uma mensagem *assíncrona* , o remetente pode continuar imediatamente.
 
-- Use < \<create > Mensagens > para indicar a construção de objetos por outros objetos. Deve ser a primeira mensagem enviada ao objeto.
+- Use <\<criar > Mensagens > para indicar a construção de objetos por outros objetos. Deve ser a primeira mensagem enviada ao objeto.
 
   Consulte:
 
@@ -882,7 +882,7 @@ Verifique se o sistema de software atende às necessidades dos usuários usando 
 
 |**Categoria**|**Vincule**|
 |------------------|---------------|
-|**Nos**|[ferramentas de modelagem & de visualização do Visual Studio](http://go.microsoft.com/fwlink/?LinkId=184720) -   <br />[SDK de modelagem do & de visualização do Visual Studio (ferramentas DSL)](http://go.microsoft.com/fwlink/?LinkId=184721) -   |
+|**Nos**|[ferramentas de modelagem & de visualização do Visual Studio](https://go.microsoft.com/fwlink/?LinkId=184720) -   <br />[SDK de modelagem do & de visualização do Visual Studio (ferramentas DSL)](https://go.microsoft.com/fwlink/?LinkId=184721) -   |
 
 ## <a name="see-also"></a>Consulte também
  [Visualize](../modeling/visualize-code.md) os [modelos de criação de código para seus](../modeling/create-models-for-your-app.md) [modelos de uso de aplicativo no processo de desenvolvimento](../modeling/use-models-in-your-development-process.md) [usar modelos no desenvolvimento ágil](https://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f) [validar seu sistema durante o desenvolvimento](../modeling/validate-your-system-during-development.md) [estender modelos e diagramas UML](../modeling/extend-uml-models-and-diagrams.md)

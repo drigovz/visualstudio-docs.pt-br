@@ -8,12 +8,12 @@ ms.assetid: ff978cc2-5a25-46d6-921b-e51adaa65992
 caps.latest.revision: 16
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: c72d37e34afe65378a1ddebe1c5b9be560b4d173
-ms.sourcegitcommit: b56dc6fadc6c924beed36bb4c2ccc16cf6bcfa1c
+ms.openlocfilehash: 1a0ea4f611c5312331fa0e2f2f467b4189778f30
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "68740179"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300030"
 ---
 # <a name="application-lifecycle-management-alm-with-xamarin-apps"></a>ALM (Gerenciamento do Ciclo de Vida do Aplicativo) com aplicativos Xamarin
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,12 +24,12 @@ O Xamarin permite criar aplicativos móveis de plataforma cruzada direcionados p
   
  O Visual Studio, junto com o Visual Studio Team Services e o Team Foundation Server, proporciona uma variedade de recursos de DevOps, também conhecidos como ALM ou Gerenciamento do Ciclo de Vida do Aplicativo. Muitos deles são totalmente aplicáveis a projetos de plataforma cruzada.  
   
- Isso é especialmente verdadeiro com aplicativos Xamarin, pois eles são criados com C# e .NET, em torno dos quais algumas ferramentas ALM são criadas. Outras ferramentas exigem integração com ambientes de build e tempo de execução. Uma vez que os aplicativos Xamarin são executados em plataformas não Windows e usam a implementação Mono do .NET, o Xamarin fornece ferramentas especializadas para determinadas necessidades.  
+ Isso é especialmente verdadeiro com aplicativos Xamarin, pois eles são criados com C# e .NET, em torno dos quais algumas ferramentas ALM são criadas. Outras ferramentas exigem integração com ambientes de build e runtime. Uma vez que os aplicativos Xamarin são executados em plataformas não Windows e usam a implementação Mono do .NET, o Xamarin fornece ferramentas especializadas para determinadas necessidades.  
   
  As tabelas a seguir identificam os recursos do Visual Studio ALM que você pode esperar que funcionem bem com um projeto do Xamarin e quais delas têm limitações. Consulte a documentação vinculada para obter detalhes sobre os recursos em si.  
   
 ## <a name="agile-tools"></a>Ferramentas agile  
- Link de referência: **[Trabalho](https://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)** (usando Visual Studio Team Services ou TFS, incluindo Team Explorer Everywhere)  
+ Link de referência: **[Trabalho](https://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)** (usando o Visual Studio Team Services ou TFS, incluindo o Team Explorer Everywhere)  
   
  Comentário Geral: todos os recursos de planejamento e acompanhamento são independentes do tipo de projeto e de linguagens de codificação.  
   
@@ -42,7 +42,7 @@ O Xamarin permite criar aplicativos móveis de plataforma cruzada direcionados p
 |Relatar e visualizar o progresso|Sim||  
   
 ## <a name="modeling"></a>Modelagem  
- Link de referência: **[Analisando e modelando a arquitetura](../modeling/analyze-and-model-your-architecture.md)**  
+ Link de referência: **[Análise e modelagem de arquitetura](../modeling/analyze-and-model-your-architecture.md)**  
   
  Recursos de design são independentes da linguagem de codificação ou funcionam com linguagens .NET como C#. Consulte [Funções de arquitetura e diagramas de modelagem no desenvolvimento de software](../modeling/scenario-change-your-design-using-visualization-and-modeling.md#ModelingDiagramsTools) para aspectos relacionados a código.  
   
@@ -68,11 +68,11 @@ O Xamarin permite criar aplicativos móveis de plataforma cruzada direcionados p
 |[Usar mapas de códigos para depurar aplicativos](../modeling/use-code-maps-to-debug-your-applications.md)|Sim||  
   
 ## <a name="build"></a>Build  
- Link de referência: **[Integrado](/azure/devops/pipelines/index)**  
+ Link de referência: **[Build](/azure/devops/pipelines/index)**  
   
 |Recurso|Tem suporte com o Xamarin|Comentários Adicionais|  
 |-------------|----------------------------|-------------------------|  
-|Servidor TFS local|Sim|Computadores de build devem ter Xamarin instalado e podem ser vinculados a um computador OSX para compilar para iOS. Consulte [Configurando TFS para Xamarin](http://developer.xamarin.com/guides/cross-platform/ci/configuring_tfs/) (site do Xamarin)|  
+|Servidor TFS local|Sim|Computadores de build devem ter Xamarin instalado e podem ser vinculados a um computador OSX para compilar para iOS. Consulte [Configurando TFS para Xamarin](https://docs.microsoft.com/azure/devops/repos/tfvc/overview?view=azure-devops) (site do Xamarin)|  
 |Servidor de build local vinculado ao Visual Studio Team Services|Sim|Consulte [Servidor de build](https://msdn.microsoft.com/library/2d258a0a-f178-4e93-9da1-eba61151af3c) para obter instruções.|  
 |Serviço de controlador hospedado do Visual Studio Team Services|Sim|Consulte [Compilar seu aplicativo Xamarin](https://www.visualstudio.com/docs/build/apps/mobile/xamarin).|  
 |Compilar definições com pré e pós-scripts|Sim||  
@@ -87,7 +87,7 @@ O Xamarin permite criar aplicativos móveis de plataforma cruzada direcionados p
 |Teste manual|Sim||  
 |Gerenciador de Teste (testes de gravação e reprodução)|Sim|Somente dispositivos Windows e emuladores Android do Visual Studio. Gravação para todos os dispositivos é possível com o [Xamarin Test Recorder](https://www.xamarin.com/test-cloud/recorder).|  
 |Cobertura de código|N/D||  
-|[Efetuar teste de unidade em seu código](../test/unit-test-your-code.md)|Sim|Para os destinos Android e Windows, as ferramentas internas do MSTest podem ser usadas. Para executar testes de unidade em Windows, Android e iOS, o Xamarin recomenda NUnit. Consulte [Configurando TFS para Xamarin](http://developer.xamarin.com/guides/cross-platform/ci/configuring_tfs/) (site do Xamarin).|  
+|[Efetuar teste de unidade em seu código](../test/unit-test-your-code.md)|Sim|Para os destinos Android e Windows, as ferramentas internas do MSTest podem ser usadas. Para executar testes de unidade em Windows, Android e iOS, o Xamarin recomenda NUnit. Consulte [Configurando TFS para Xamarin](https://docs.microsoft.com/azure/devops/repos/tfvc/overview?view=azure-devops) (site do Xamarin).|  
 |[Usar automação de interface do usuário para testar código](../test/use-ui-automation-to-test-your-code.md)|Somente Windows|O gravador de teste da interface do usuário do Visual Studio é somente Windows. Para todas as plataformas, consulte [Xamarin Test Recorder](https://www.xamarin.com/test-cloud/recorder).|  
   
 ## <a name="improve-code-quality"></a>Melhorar a qualidade do código  
@@ -98,11 +98,11 @@ O Xamarin permite criar aplicativos móveis de plataforma cruzada direcionados p
 |[Analisando a qualidade do código gerenciado](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)|Sim||  
 |[Localizando código duplicado usando detecção de clone de código](https://msdn.microsoft.com/library/a97cd5a6-5ffa-4104-9627-8e59e513654d)|Sim||  
 |[Medindo complexidade e facilidade de manutenção do código gerenciado](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)|Sim||  
-|[Gerenciador de Desempenho](../profiling/performance-explorer.md)|Não|Use o [Xamarin Profiler](http://developer.xamarin.com/guides/cross-platform/deployment,_testing,_and_metrics/) por meio do Xamarin Studio em vez disso. Observe que o Xamarin Profiler está atualmente em visualização e ainda não funciona para destinos do Windows.|  
+|[Gerenciador de Desempenho](../profiling/performance-explorer.md)|Não|Use o [Xamarin Profiler](https://docs.microsoft.com/xamarin/cross-platform/deploy-test/) por meio do Xamarin Studio em vez disso. Observe que o Xamarin Profiler está atualmente em visualização e ainda não funciona para destinos do Windows.|  
 |[Analisar problemas de memória do .NET Framework](../misc/analyze-dotnet-framework-memory-issues.md)|Não|Ferramentas do Visual Studio não têm ganchos na estrutura Mono para a criação de perfil.|  
   
 ## <a name="release-management"></a>Gerenciamento de liberações  
- Link de referência: **[Automatizar implantações com o Release Management](https://msdn.microsoft.com/library/vs/alm/release/overview)**  
+ Link de referência: **[Implantações automatizadas com Release Management](https://msdn.microsoft.com/library/vs/alm/release/overview)**  
   
 |Recurso|Tem suporte com o Xamarin|Comentários Adicionais|  
 |-------------|----------------------------|-------------------------|  
@@ -111,7 +111,7 @@ O Xamarin permite criar aplicativos móveis de plataforma cruzada direcionados p
 |Carregar para a loja de aplicativos|Parcial|Estão disponíveis extensões que podem automatizar esse processo para algumas lojas de aplicativos.  Consulte [Extensões para Visual Studio Team Services](https://marketplace.visualstudio.com/VSTS); por exemplo, a [extensão para Google Play](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play).|  
   
 ## <a name="monitor-with-hockeyapp"></a>Monitorar com HockeyApp  
- Link de referência: **[Monitoramento com o HockeyApp](https://www.hockeyapp.net/features/)**  
+ Link de referência: **[Monitorar com HockeyApp](https://www.hockeyapp.net/features/)**  
   
 |Recurso|Tem suporte com o Xamarin|Comentários Adicionais|  
 |-------------|----------------------------|-------------------------|  

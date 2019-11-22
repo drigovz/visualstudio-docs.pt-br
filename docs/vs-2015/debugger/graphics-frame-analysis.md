@@ -1,5 +1,5 @@
 ---
-title: Análise de quadros de gráficos | Microsoft Docs
+title: Análise de Quadros de Gráficos | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -11,20 +11,20 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: bc11af7d259f252d7659f559be15b85f4af90149
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 331722df4749ca59241259e13c3b387d8303b69f
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437936"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300515"
 ---
 # <a name="graphics-frame-analysis"></a>Análise de quadro de gráficos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Use análise de quadros de gráficos no analisador de gráficos do Visual Studio para analisar e otimizar o desempenho de renderização do Direct3D jogo ou aplicativo.  
+Use Análise de Quadros de Gráficos no Analisador de Gráficos do Visual Studio para analisar e otimizar o desempenho de renderização do seu jogo ou aplicativo Direct3D.  
   
 > [!IMPORTANT]
-> Analisador de gráficos dá suporte à análise de quadros para aplicativos que usam o Direct3D 11 em plataformas com suporte, incluindo o Windows 10. Análise de quadro não é suportada para aplicativos que usam o Direct3D 12.  
+> O Graphics Analyzer dá suporte à análise de quadros para aplicativos que usam o Direct3D 11 em plataformas com suporte, incluindo o Windows 10. Atualmente, a análise de quadros não tem suporte para aplicativos que usam o Direct3D 12.  
   
 ## <a name="frame-analysis"></a>Análise de quadro  
  A análise de quadro usa as mesmas informações capturadas em um arquivo de log de elementos gráficos para fins de diagnóstico, mas as utiliza para resumir o desempenho de renderização. As informações de desempenho não são registradas no log durante a captura; ao invés disso, as informações de desempenho são geradas posteriormente, durante a análise de quadro, programando eventos e coletando estatísticas conforme o quadro é reproduzido. Essa abordagem possui diversas vantagens em relação a registrar informações de desempenho durante a captura:  
@@ -39,12 +39,12 @@ Use análise de quadros de gráficos no analisador de gráficos do Visual Studio
   
   Embora a análise de quadro seja primordialmente pensada para ajudá-lo a alcançar um desempenho de renderização mais rápido, ela também pode ajudá-lo a atingir uma qualidade visual aprimorada para um determinado destino de desempenho ou reduzir o consumo de energia de GPU.  
   
-  Para ver uma demonstração do que a análise de quadros pode fazer para seu aplicativo, você pode assistir a [análise de quadros de gráficos do Visual Studio](http://channel9.msdn.com/Shows/C9-GoingNative/GoingNative-25-Offline-Analysis-Graphics-Tool) vídeo no Channel 9.  
+  Para ver uma demonstração de qual análise de quadros pode fazer para seu aplicativo, você pode assistir ao vídeo do [Visual Studio análise de quadros de gráficos](https://channel9.msdn.com/Shows/C9-GoingNative/GoingNative-25-Offline-Analysis-Graphics-Tool) no Channel 9.  
   
 ## <a name="using-frame-analysis"></a>Usando a análise de quadro  
- Antes de usar a análise de quadro, você precisa capturar informações gráficas de seu aplicativo enquanto ele é executado, exatamente como você faria ao usar qualquer uma das ferramentas do analisador de gráficos. Em seguida, na janela do documento de log de gráficos (.vsglog), escolha a guia **Análise de Quadros**.  
+ Antes de usar a análise de quadros, você precisa capturar informações de gráficos do seu aplicativo conforme ele é executado, exatamente como você faria ao usar qualquer uma das outras ferramentas do analisador de gráficos. Em seguida, na janela do documento de log de gráficos (.vsglog), escolha a guia **Análise de Quadros**.  
   
- ![Selecione a guia análise de quadro](../debugger/media/pix-frame-analysis-select-tab.png "pix_frame_analysis_select_tab")  
+ ![Selecione a guia análise de quadros.](../debugger/media/pix-frame-analysis-select-tab.png "pix_frame_analysis_select_tab")  
   
  Os resultados são exibidos após a conclusão da análise. A parte superior da guia de análise de quadros exibe a linha do tempo e a tabela de resumo. A parte inferior exibe as tabelas de detalhes. Se erros ou avisos forem gerados durante a reprodução, eles são resumidos acima da linha do tempo; a partir daí, é possível seguir os links para saber mais sobre os erros e os avisos.  
   
@@ -77,14 +77,14 @@ Use análise de quadros de gráficos no analisador de gráficos do Visual Studio
 #### <a name="timeline"></a>Linha do tempo  
  A linha do tempo mostra uma visão geral dos horários de chamadas de desenho em relação umas às outras. Como barras maiores correspondem a horários de desenho maiores, você pode usá-las para localizar rapidamente as chamadas de desenho mais custosas no quadro. Quando o quadro capturado contiver um número muito grande de chamadas de desenho, diversas chamadas de desenho são combinadas em uma única barra, cujo comprimento é a soma dessas chamadas de desenho.  
   
- ![A linha do tempo mostra o desenho&#45;chamar os custos. ](../debugger/media/pix-frame-analysis-timeline.png "pix_frame_analysis_timeline")  
+ ![A linha do tempo&#45;mostra os custos de chamada de empate.](../debugger/media/pix-frame-analysis-timeline.png "pix_frame_analysis_timeline")  
   
  Você pode deixar o ponteiro sobre uma barra para ver a qual evento de chamada de desenho a barra corresponde. Escolher a barra faz com que a lista de eventos seja sincronizada com esse evento.  
   
 #### <a name="table"></a>Tabela  
  A tabela de números abaixo da linha do tempo mostra o desempenho relativo de cada variante de renderização para cada chamada de desenho em relação à renderização padrão do seu aplicativo. Cada coluna exibe uma variante de renderização diferente e cada linha representa uma chamada de desenho diferente identificada na coluna mais à esquerda; a partir daí, é possível seguir um link até o evento na janela Lista de Eventos de Gráficos.  
   
- ![A tabela de resumo mostra varients diferentes. ](../debugger/media/pix-frame-analysis-summary.png "pix_frame_analysis_summary")  
+ ![A tabela de resumo mostra diferentes varients.](../debugger/media/pix-frame-analysis-summary.png "pix_frame_analysis_summary")  
   
  A segunda coluna mais à esquerda na Tabela de Resumo exibe o horário de renderização de linha de base de seu aplicativo, ou seja, a quantidade de tempo necessária para que a renderização padrão do seu aplicativo conclua a chamada de desenho. As colunas restantes mostram o desempenho relativo de cada variante de renderização como uma porcentagem da linha de base de forma que facilite ver se o desempenho foi aprimorado. Porcentagens superiores a 100% levam mais tempo do que a linha de base, ou seja, o desempenho foi reduzido; porcentagens inferiores a 100% levam menos tempo, indicando que o desempenho foi aumentado.  
   
@@ -93,27 +93,27 @@ Use análise de quadros de gráficos no analisador de gráficos do Visual Studio
 #### <a name="hot-draw-calls"></a>Chamadas de desenho "ativas"  
  Para chamar atenção para chamadas de desenho que consomem uma proporção maior do tempo de renderização geral ou que podem ser incomumente mais lentas por motivos que podem ser evitados, a linha que contém essas chamadas de desenho "ativas" é exibida em vermelho quando seu horário de linha de base tem mais de um desvio padrão em relação ao horário de linha de base médio de todas as chamadas de desenho no quadro.  
   
- ![Essa chamada DrawIndexed tem varients quentes e frios. ](../debugger/media/pix-frame-analysis-hot-calls.png "pix_frame_analysis_hot_calls")  
+ ![Essa chamada DrawIndexed tem varients quente e frio.](../debugger/media/pix-frame-analysis-hot-calls.png "pix_frame_analysis_hot_calls")  
   
 #### <a name="statistical-significance"></a>Significância estatística  
  Para chamar atenção para as variações de renderização que possuem maior relevância, a Análise de Quadro determina a significância estatística de cada variante de renderização e exibe aquelas de são significativas em negrito. Aquelas que aprimoram o desempenho são exibidas em verde, e as que reduzem o desempenho, em vermelho. Os resultados que não são estatisticamente significativos são exibidos em fonte normal.  
   
- ![A relevância estatística da variante chamada draw](../debugger/media/pix-frame-analysis-summary-stats.png "pix_frame_analysis_summary_stats")  
+ ![A relevância estatística da variante de chamada de desenho](../debugger/media/pix-frame-analysis-summary-stats.png "pix_frame_analysis_summary_stats")  
   
- Para determinar a relevância estatística, análise de quadro usa o [teste t de Student](http://www.wikipedia.org/wiki/Student%27s_t-test).  
+ Para determinar a relevância estatística, a análise de quadros usa o [teste t de Student](https://en.wikipedia.org/wiki/Student's_t-test).  
   
 ### <a name="details-table"></a>Tabela de detalhes  
- Abaixo da tabelo de Resumo está a tabela de Detalhes, que fica recolhida por padrão. O conteúdo da tabela de Detalhes depende da plataforma de hardware do computador de reprodução. Para obter informações sobre as plataformas de hardware com suporte, consulte [suporte de Hardware](#HardwareSupport).  
+ Abaixo da tabelo de Resumo está a tabela de Detalhes, que fica recolhida por padrão. O conteúdo da tabela de Detalhes depende da plataforma de hardware do computador de reprodução. Para obter informações sobre plataformas de hardware com suporte, consulte [suporte de hardware](#HardwareSupport).  
   
 #### <a name="platforms-that-do-not-support-hardware-counters"></a>Plataformas que não oferecem suporte a contadores de hardware  
  A maioria das plataformas não oferece suporte completo a contadores de GPU de hardware; isso inclui todas as GPUs oferecidas atualmente pela Intel, AMD e nVidia. Quando não há contadores de hardware para coleta, somente uma tabela de Detalhes é exibida, e ela contém o horário absoluto médio de todas as variantes.  
   
- ![A tabela de detalhes e alguns varients de reprodução. ](../debugger/media/pix-frame-analysis-details.png "pix_frame_analysis_details")  
+ ![A tabela de detalhes e alguns varients de reprodução.](../debugger/media/pix-frame-analysis-details.png "pix_frame_analysis_details")  
   
 #### <a name="platforms-that-support-hardware-counters"></a>Plataformas que oferecem suporte a contadores de hardware  
  No caso de plataformas que oferecem suporte a contadores de GPU de hardware, por exemplo, SOC da nVidia T40 e todos os SOCs da Qualcomm, diversas tabelas de Detalhes são exibidas, uma para cada variante. Cada contador de hardware disponível é coletado para cada variante de renderização e exibido em sua própria tabela de Detalhes.  
   
- ![Contadores de hardware são exibidos quando houver suporte. ](../debugger/media/pix-frame.png "pix_frame")  
+ ![Os contadores de hardware são exibidos quando há suporte.](../debugger/media/pix-frame.png "pix_frame")  
   
  As informações do contador de hardware oferecem uma visão bastante detalhada de comportamentos específicos da plataforma de hardware para cada chamada de desempenho, o que pode ajudar a identificar a causa de gargalos de desempenho de maneira bastante precisa.  
   
@@ -171,13 +171,13 @@ Use análise de quadros de gráficos no analisador de gráficos do Visual Studio
  A análise de quadro deve ser usada para analisar e aprimorar o desempenho de renderização em hardwares reais. Executar a análises de quadro em dispositivos WARP não é proibido, o emulador do Windows Phone pode ser executado em WARP, mas essa tarefa geralmente não vale a pena, pois o WARP em execução em uma CPU de alto nível é mais lento até mesmo do que as GPUs modernas com menor capacidade, e porque o desempenho de WARP pode variar bastante dependendo da CPU específica em que ele está sendo executado.  
   
 ### <a name="playback-of-high-feature-level-captures-on-down-level-devices"></a>Reprodução de capturas de alto nível de recursos em dispositivos de baixo nível  
- No analisador de gráficos, ao reproduzir um arquivo de log de gráficos que usa um nível mais alto de recurso que dá suporte ao computador de reprodução, ele recorre automaticamente ao WARP. Na Análise de Quadro, ele não recorre explicitamente ao WARP e gera um erro; o WARP é útil para examinar a precisão do aplicativo Direct3D, mas não para examinar seu desempenho.  
+ No analisador de gráficos, quando você reproduzir um arquivo de log de gráficos que usa um nível de recurso mais alto do que o computador de reprodução dá suporte, ele voltará automaticamente à distorção. Na Análise de Quadro, ele não recorre explicitamente ao WARP e gera um erro; o WARP é útil para examinar a precisão do aplicativo Direct3D, mas não para examinar seu desempenho.  
   
 > [!NOTE]
 > Embora seja importante manter os problemas de nível de recurso em mente, você pode capturar e reproduzir arquivos de log de elementos gráficos em diferentes configurações de hardware e dispositivos. Por exemplo, você pode capturar informações de gráficos em um Windows Phone e reproduzi-las em um computador desktop, ou vice-versa. Em ambos os casos, o log de elementos gráficos pode ser reproduzido considerando que o arquivo de log não contenha APIs nem utilize níveis de recurso sem suporte no computador de reprodução.  
   
 ### <a name="direct3d-10-and-lower"></a>Direct3D 10 e versão anterior  
- A Análise de Quadro só tem suporte para API do Direct3D 11. Se seu aplicativo chama a API do Direct3D 10, a análise de quadro não reconhece ou criar o perfil mesmo que ela seja reconhecida e usadas por outras ferramentas do analisador de gráficos. Se seu aplicativo usar as APIs do Direct3D11 e Direct3D 10, apenas as chamadas do Direct3D 11 serão analisadas.  
+ A Análise de Quadro só tem suporte para API do Direct3D 11. Se seu aplicativo chamar a API do Direct3D 10, a análise de quadros não reconhecerá nem criará o perfil, mesmo que elas sejam reconhecidas e usadas por outras ferramentas do analisador de gráficos. Se seu aplicativo usar as APIs do Direct3D11 e Direct3D 10, apenas as chamadas do Direct3D 11 serão analisadas.  
   
 > [!NOTE]
 > Isso se aplica somente às chamadas à API do Direct3D que você estiver utilizando, e não aos níveis de recurso. Contanto que esteja utilizando a API do Direct3D 11, do Direct3D 11.1 ou do Direct3D 11.2, você poderá usar o nível de recurso desejado e a Análise de Quadro funcionará.  
@@ -187,18 +187,18 @@ Use análise de quadros de gráficos no analisador de gráficos do Visual Studio
   
 |Variante|Descrição|  
 |-------------|-----------------|  
-|**Tamanho do Visor 1 x 1**|Reduz as dimensões do visor em todos os destinos de renderização para 1 x 1 pixels.<br /><br /> Para obter mais informações, consulte [variante de tamanho do visor 1 x 1](../debugger/1x1-viewport-size-variant.md)|  
-|**MSAA 0x**|Desativa a MSAA (suavização de múltipla amostra) em todos os destinos de renderização.<br /><br /> Para obter mais informações, consulte [0x / 2 x / 4 variantes de MSAA](../debugger/0x-2x-4x-msaa-variants.md)|  
-|**MSAA 2x**|Ativa a MSAA de 2x em todos os destinos de renderização.<br /><br /> Para obter mais informações, consulte [0x / 2 x / 4 variantes de MSAA](../debugger/0x-2x-4x-msaa-variants.md)|  
-|**MSAA 4x**|Ativa a MSAA de 4x em todos os destinos de renderização.<br /><br /> Para obter mais informações, consulte [0x / 2 x / 4 variantes de MSAA](../debugger/0x-2x-4x-msaa-variants.md)|  
-|**Filtragem de textura de ponto**|Define o modo de filtragem como `DXD11_FILTER_MIN_MAG_MIP_POINT` (filtragem de textura de ponto) para todas as amostras de textura adequadas.<br /><br /> Para obter mais informações, consulte [ponto, Bilinear, Trilinear e variantes de filtragem de textura Anisotrópica](../debugger/point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md).|  
-|**Filtragem de textura bilinear**|Define o modo de filtragem como `DXD11_FILTER_MIN_MAG_LINEAR_MIP_POINT` (filtragem de textura bilinear) para todas as amostras de textura adequadas.<br /><br /> Para obter mais informações, consulte [ponto, Bilinear, Trilinear e variantes de filtragem de textura Anisotrópica](../debugger/point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md).|  
-|**Filtragem de textura trilinear**|Define o modo de filtragem como `DXD11_FILTER_MIN_MAG_MIP_LINEAR` (filtragem de textura trilinear) para todas as amostras de textura adequadas.<br /><br /> Para obter mais informações, consulte [ponto, Bilinear, Trilinear e variantes de filtragem de textura Anisotrópica](../debugger/point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md).|  
-|**Filtragem de textura anisotrópica**|Define o modo de filtragem como `DXD11_FILTER_ANISOTROPIC` e `MaxAnisotropy` para `16` (filtragem de textura anisotrópica de 16x) para todas as amostras de textura adequadas.<br /><br /> Para obter mais informações, consulte [ponto, Bilinear, Trilinear e variantes de filtragem de textura Anisotrópica](../debugger/point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md).|  
-|**Formato de destino de renderização de 16 bpp**|Define o formato de pixels como `DXGI_FORMAT_B5G6R5_UNORM` (16 bpp, formato 565) para todos os destinos de renderização e buffers de fundo.<br /><br /> Para obter mais informações, consulte [formato destino 16 bpp renderizar Variant](../debugger/16bpp-render-target-format-variant.md)|  
-|**Geração de mapas mip**|Ativa mapas mip em todas as texturas que não são destinos de renderização.<br /><br /> Para obter mais informações, consulte [variante de geração de Mip-map](../debugger/mip-map-generation-variant.md).|  
-|**Dimensões de textura pela metade**|Reduz as dimensões de textura em todas as texturas que não são destinos de renderização pela metade de seu tamanho original em cada dimensão. Por exemplo, uma textura de 256 x 128 é reduzida para 128 x 64 texels.<br /><br /> Para obter mais informações, consulte [variantes de dimensões de textura de metade/quarto](../debugger/half-quarter-texture-dimensions-variant.md).|  
-|**Dimensões de textura de um quarto**|Reduz as dimensões de textura em todas as texturas que não são destinos de renderização a um quarto de seu tamanho original em cada dimensão. Por exemplo, uma textura de 256 x 128 é reduzida para 64 x 32 texels.<br /><br /> Para obter mais informações, consulte [variantes de dimensões de textura de metade/quarto](../debugger/half-quarter-texture-dimensions-variant.md).|  
-|**Compactação de textura BC**|Habilita a compactação de bloco em todas as texturas que possuem uma variante de formato de pixel de B8G8R8X8, B8G8R8A8 ou R8G8B8A8. As variantes de formato B8G8R8X8 são compactados com BC1; as variantes de formato B8G8R8A8 e R8G8B8A8 são compactadas com BC3.<br /><br /> Para obter mais informações, consulte [variante de compressão de textura BC](../debugger/bc-texture-compression-variant.md).|  
+|**Tamanho do Visor 1 x 1**|Reduz as dimensões do visor em todos os destinos de renderização para 1 x 1 pixels.<br /><br /> Para obter mais informações, consulte [variante do tamanho do visor 1x1](../debugger/1x1-viewport-size-variant.md)|  
+|**MSAA 0x**|Desativa a MSAA (suavização de múltipla amostra) em todos os destinos de renderização.<br /><br /> Para obter mais informações, consulte [0x/2x/4x MSAA Variations](../debugger/0x-2x-4x-msaa-variants.md)|  
+|**MSAA 2x**|Ativa a MSAA de 2x em todos os destinos de renderização.<br /><br /> Para obter mais informações, consulte [0x/2x/4x MSAA Variations](../debugger/0x-2x-4x-msaa-variants.md)|  
+|**MSAA 4x**|Ativa a MSAA de 4x em todos os destinos de renderização.<br /><br /> Para obter mais informações, consulte [0x/2x/4x MSAA Variations](../debugger/0x-2x-4x-msaa-variants.md)|  
+|**Filtragem de textura de ponto**|Define o modo de filtragem como `DXD11_FILTER_MIN_MAG_MIP_POINT` (filtragem de textura de ponto) para todas as amostras de textura adequadas.<br /><br /> Para obter mais informações, consulte [variantes de filtragem de textura ponto, biline, triline e anisotropic](../debugger/point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md).|  
+|**Filtragem de textura bilinear**|Define o modo de filtragem como `DXD11_FILTER_MIN_MAG_LINEAR_MIP_POINT` (filtragem de textura bilinear) para todas as amostras de textura adequadas.<br /><br /> Para obter mais informações, consulte [variantes de filtragem de textura ponto, biline, triline e anisotropic](../debugger/point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md).|  
+|**Filtragem de textura trilinear**|Define o modo de filtragem como `DXD11_FILTER_MIN_MAG_MIP_LINEAR` (filtragem de textura trilinear) para todas as amostras de textura adequadas.<br /><br /> Para obter mais informações, consulte [variantes de filtragem de textura ponto, biline, triline e anisotropic](../debugger/point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md).|  
+|**Filtragem de textura anisotrópica**|Define o modo de filtragem como `DXD11_FILTER_ANISOTROPIC` e `MaxAnisotropy` para `16` (filtragem de textura anisotrópica de 16x) para todas as amostras de textura adequadas.<br /><br /> Para obter mais informações, consulte [variantes de filtragem de textura ponto, biline, triline e anisotropic](../debugger/point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md).|  
+|**Formato de destino de renderização de 16 bpp**|Define o formato de pixels como `DXGI_FORMAT_B5G6R5_UNORM` (16 bpp, formato 565) para todos os destinos de renderização e buffers de fundo.<br /><br /> Para obter mais informações, consulte [variante de formato de destino de renderização 16bpp](../debugger/16bpp-render-target-format-variant.md)|  
+|**Geração de mapas mip**|Ativa mapas mip em todas as texturas que não são destinos de renderização.<br /><br /> Para obter mais informações, consulte [variação de geração de mapa MIP](../debugger/mip-map-generation-variant.md).|  
+|**Dimensões de textura pela metade**|Reduz as dimensões de textura em todas as texturas que não são destinos de renderização pela metade de seu tamanho original em cada dimensão. Por exemplo, uma textura de 256 x 128 é reduzida para 128 x 64 texels.<br /><br /> Para obter mais informações, consulte [variante de dimensões de textura semestre/trimestre](../debugger/half-quarter-texture-dimensions-variant.md).|  
+|**Dimensões de textura de um quarto**|Reduz as dimensões de textura em todas as texturas que não são destinos de renderização a um quarto de seu tamanho original em cada dimensão. Por exemplo, uma textura de 256 x 128 é reduzida para 64 x 32 texels.<br /><br /> Para obter mais informações, consulte [variante de dimensões de textura semestre/trimestre](../debugger/half-quarter-texture-dimensions-variant.md).|  
+|**Compactação de textura BC**|Habilita a compactação de bloco em todas as texturas que possuem uma variante de formato de pixel de B8G8R8X8, B8G8R8A8 ou R8G8B8A8. As variantes de formato B8G8R8X8 são compactados com BC1; as variantes de formato B8G8R8A8 e R8G8B8A8 são compactadas com BC3.<br /><br /> Para obter mais informações, consulte [variante de compactação de textura BC](../debugger/bc-texture-compression-variant.md).|  
   
- O resultado da maioria das variantes é prescritivo: "Reduzir o tamanho da textura pela metade é 25% mais rápido" ou "Ativar MSAA de 2x é apenas 2% mais lento". Outras variantes podem exigir mais interpretação; por exemplo, se a variante que alterar as dimensões do visor para 1 x 1 mostrar um ganho de desempenho grande, isso pode indicar que a renderização é reduzida por uma taxa de enchimento baixa; alternativamente, se não houver uma alteração significativa no desempenho, isso pode indicar que a renderização é reduzida pelo processamento de vértice.
+ O resultado para a maioria das variantes é descrito como: "Reduzir o tamanho da textura pela metade é 25% mais rápido" ou "Ativar MSAA de 2x é apenas 2% mais lento". Outras variantes podem exigir mais interpretação; por exemplo, se a variante que alterar as dimensões do visor para 1 x 1 mostrar um ganho de desempenho grande, isso pode indicar que a renderização é reduzida por uma taxa de enchimento baixa; alternativamente, se não houver uma alteração significativa no desempenho, isso pode indicar que a renderização é reduzida pelo processamento de vértice.

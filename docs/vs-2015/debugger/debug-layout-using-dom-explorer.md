@@ -1,5 +1,5 @@
 ---
-title: Depurar o layout usando o Explorador do DOM | Microsoft Docs
+title: Depurar o layout usando o explorador do DOM | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -18,27 +18,27 @@ caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8b9d0d2a3250785e5ff60d65a6bf1264892c6f98
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 5dd40381b8f5ba4807e95cfcf5e5b7d54afd77e2
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434114"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74298392"
 ---
 # <a name="debug-layout-using-dom-explorer"></a>Depurar o layout com o Explorador do DOM
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Aplica-se ao Windows e Windows Phone] (... /Image/windows_and_phone_content.png "windows_and_phone_content")  
+Aplica-se ao Windows e Windows Phone] (.. /Imagem/windows_and_phone_content. png "windows_and_phone_content")  
   
- O **Layout** guia do Explorador do DOM mostra o [modelo de caixa CSS](http://go.microsoft.com/fwlink/?LinkID=238778) para o elemento selecionado em um [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] app, aplicativo do Windows Phone Store ou um aplicativo criado usando ferramentas do Visual Studio para Apache Cordova. Você pode usar essa representação visual do modelo de caixa para identificar e modificar os valores relacionados a layout que afetam a aparência dos elementos.  
+ A guia **layout** do explorador do dom mostra o [modelo de caixa CSS](https://go.microsoft.com/fwlink/?LinkID=238778) do elemento selecionado em um aplicativo [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)], Windows Phone aplicativo da loja ou um aplicativo criado usando ferramentas do Visual Studio para Apache Cordova. Você pode usar essa representação visual do modelo de caixa para identificar e modificar os valores relacionados a layout que afetam a aparência dos elementos.  
   
 > [!TIP]
-> As alterações feitas na **Layout** guia não são permanentes. Você pode fazer mudanças permanentes no seu código-fonte e, em seguida, atualize seu aplicativo usando o **Windows atualizar aplicativo** botão (somente para aplicativos Windows Store e Windows Phone Store) na barra de ferramentas Depurar. Dessa maneira, você pode evitar reiniciar o depurador.  
+> As alterações feitas na guia **Layout** não são permanentes. Você pode fazer alterações permanentes em seu código-fonte e, em seguida, atualizar seu aplicativo usando o botão **Atualizar aplicativo do Windows** (somente para aplicativos da Windows Store e da Windows Phone Store) na barra de ferramentas Depurar. Dessa maneira, você pode evitar reiniciar o depurador.  
   
- Para usar o Explorador do DOM para modificar os aspectos do layout que não são mostrados no modelo de caixa, consulte [guia de início rápido: Depurar HTML e CSS](../debugger/quickstart-debug-html-and-css.md) e [estilos de CSS depurar usando o Explorador do DOM](../debugger/debug-css-styles-using-dom-explorer.md).  
+ Para usar o explorador do DOM para modificar aspectos de layout que não são mostrados no modelo de caixa, consulte [início rápido: Depurar HTML e CSS](../debugger/quickstart-debug-html-and-css.md) e [depurar estilos CSS usando o explorador do dom](../debugger/debug-css-styles-using-dom-explorer.md).  
   
 ## <a name="example-of-fixing-a-layout-issue"></a>Exemplo de correção de um problema de layout  
- Este exemplo mostra como selecionar um elemento de lista no modelo Hub/dinâmico, interpretar os valores do modelo de caixa que estão na **Layout** guia e, em seguida, alterar um dos valores de propriedade para corrigir um problema de layout.  
+ Este exemplo mostra como escolher um elemento de lista no modelo Hub/Dinâmico, interpretar os valores do modelo de caixa que estão na guia **Layout** e mudar um dos valores de propriedade para corrigir um problema de layout.  
   
 #### <a name="to-fix-the-layout-issue"></a>Para corrigir o problema de layout  
   
@@ -65,9 +65,9 @@ Aplica-se ao Windows e Windows Phone] (... /Image/windows_and_phone_content.png 
     }  
     ```  
   
-4. Selecione o projeto Windowsphone ou o projeto appname no Gerenciador de soluções e, em seguida, escolha **definir como projeto de inicialização** no menu de atalho para o projeto.  
+4. Selecione o projeto appName.WindowsPhone ou o appName.Windows no Gerenciador de Soluções, em seguida, escolha **Definir como Projeto de Inicialização** no menu de atalhos do projeto.  
   
-5. Dependendo do seu projeto de inicialização, escolha **Emulator 8.1 WVGA 4 inch 512MB** ou **simulador** na lista suspensa na barra de ferramentas Depurar (**Máquina Local** é o padrão valor).  
+5. Dependendo do seu projeto de inicialização, escolha **Emulator 8.1 WVGA 4 inch 512MB** ou **Simulador** da lista suspensa na barra de ferramentas Depurar (**Computador Local** é o valor padrão).  
   
      ![Selecionando um destino de depuração](../debugger/media/js-dom-debug-target-emu.png "JS_DOM_Debug_Target_Emu")  
   
@@ -80,10 +80,10 @@ Aplica-se ao Windows e Windows Phone] (... /Image/windows_and_phone_content.png 
   
      Quando a Seção 4 for carregada, você poderá ver que as imagens inferiores não aparecem corretamente. Cada imagem de item aparece cortada ao meio (com a metade esquerda ausente).  
   
-8. Alterne para o Visual Studio e escolha **selecionar elemento** no Explorador do DOM (ou pressione Ctrl + B). Isso altera o modo de seleção, permitindo que você selecione um item ao clicar nele, e traz o aplicativo para o primeiro plano. O modo é revertido após um único clique.  
+8. Alterne para o Visual Studio e escolha **Selecionar Elemento** no Explorador do DOM (ou pressione Ctrl+B). Isso altera o modo de seleção, permitindo que você selecione um item ao clicar nele, e traz o aplicativo para o primeiro plano. O modo é revertido após um único clique.  
   
     > [!TIP]
-    > Você também pode usar as teclas de seta ou outros métodos para selecionar os elementos HTML diretamente no Explorador do DOM. Para obter mais informações sobre como selecionar elementos, consulte [guia de início rápido: Depurar HTML e CSS](../debugger/quickstart-debug-html-and-css.md).  
+    > Você também pode usar as teclas de seta ou outros métodos para selecionar os elementos HTML diretamente no Explorador do DOM. Para obter mais informações sobre como selecionar elementos, consulte [início rápido: Depurar HTML e CSS](../debugger/quickstart-debug-html-and-css.md).  
   
 9. No Simulador ou Emulador do Windows Phone, selecione a metade cinza à direita de uma das imagens que estão cortadas ao meio. Aparecem realces ao redor do elemento selecionado, como mostrado aqui no Emulador do Windows Phone:  
   
@@ -99,34 +99,34 @@ Aplica-se ao Windows e Windows Phone] (... /Image/windows_and_phone_content.png 
     </img>  
     ```  
   
-10. Clique o **Layout** guia. Esta guia mostra o modelo de caixa do elemento selecionado, como mostrado aqui no Emulador do Windows Phone.  
+10. Clique na guia **layout** . Essa guia mostra o modelo de caixa do elemento selecionado, como mostrado aqui no emulador de Windows Phone.  
   
-     ![Guia de layout do Explorador do DOM](../debugger/media/js-css-layout.png "JS_CSS_Layout")  
+     ![Guia layout do explorador do DOM](../debugger/media/js-css-layout.png "JS_CSS_Layout")  
   
      Essa exibição fornece algumas informações úteis sobre o elemento:  
   
-    - As cores correspondem ao realce da caixa que aparece no Simulador ao focalizar os elementos. A cor azul representa o \<img > dimensões do elemento. A cor marrom-claro representa os valores de margem.  
+    - As cores correspondem ao realce da caixa que aparece no Simulador ao focalizar os elementos. A cor azul representa as dimensões do elemento \<img >. A cor marrom-claro representa os valores de margem.  
   
     - A margem esquerda (margin-left) é definida, o que sugere a causa do problema, pois corresponde ao sintoma (preto no lado esquerdo das imagens).  
   
     - As caixas que mostram valores de 0 pixels (por exemplo, Borda e Preenchimento) sugerem que as propriedades de CSS correspondentes provavelmente não estão definidas.  
   
-11. Para ver como a regra margin-left é aplicada, escolha o **computado** guia e procure a regra margin-left. Você pode ver que essa regra está definida com o valor 5em, mas o valor computado é 66,66 px ou 146,66 px, dependendo do dispositivo de destino.  
+11. Para ver como a regra margin-left é aplicada, escolha a guia **Computado** e veja abaixo da regra margin-left. Você pode ver que essa regra está definida com o valor 5em, mas o valor computado é 66,66 px ou 146,66 px, dependendo do dispositivo de destino.  
   
     > [!TIP]
-    > O **computado** guia mostra que a regra margin-left é definida `..hubpage .hub. section4 .sub-image-row img` seletor de CSS, encontrado no CSS. Neste aplicativo de demonstração, é aqui que você precisa fazer a correção.  
+    > A guia **Computado** mostra que a regra margin-left é definida no Seletor de CSS `..hubpage .hub. section4 .sub-image-row img`, encontrado em hub.css. Neste aplicativo de demonstração, é aqui que você precisa fazer a correção.  
   
-     Você também pode usar o **Layout** guia para testar as modificações de valores de layout.  
+     Você também pode usar a guia **Layout** para testar as modificações dos valores de layout.  
   
-12. No **Layout** guia, escolha o **66,66** ou **146,66**, que aparece no **margem** caixa, no lado esquerdo da caixa.  
+12. Na guia **Layout**, escolha **66,66** ou **146,66**, que aparece na caixa **Margem**, no lado esquerdo da caixa.  
   
-13. Tipo `0` e pressione Enter. (Você também pode usar as teclas de seta para cima e para baixo para alterar o valor.)  
+13. Digite `0` e pressione Enter. (Você também pode usar as teclas de seta para cima e para baixo para alterar o valor.)  
   
-14. Selecione os outros \<img > elementos no Explorador do DOM e altere os valores de sua margem esquerda como 0.  
+14. Selecione os outros elementos \<img > no explorador do DOM e altere os valores da margem esquerda para 0.  
   
-15. Alterne para Simulador ou Emulador do Windows Phone. Os valores margin-left atualizados foram aplicados às imagens da Seção 4. Esses valores também são atualizados na **computado** guia sob a regra margin-left.  
+15. Alterne para Simulador ou Emulador do Windows Phone. Os valores margin-left atualizados foram aplicados às imagens da Seção 4. Esses valores também são atualizados na guia **Computado** sob a regra margin-left.  
   
 ## <a name="see-also"></a>Consulte também  
- [Início Rápido: Depurar HTML e CSS](../debugger/quickstart-debug-html-and-css.md)   
- [Depurar estilos CSS usando o Explorador do DOM](../debugger/debug-css-styles-using-dom-explorer.md)   
+ [Início rápido: Depurar HTML e CSS](../debugger/quickstart-debug-html-and-css.md)   
+ [Depurar estilos CSS usando o explorador do DOM](../debugger/debug-css-styles-using-dom-explorer.md)   
  [Exibir ouvintes de eventos DOM](../debugger/view-dom-event-listeners.md)

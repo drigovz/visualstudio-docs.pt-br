@@ -10,12 +10,12 @@ caps.latest.revision: 34
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 9c732f4011c4194ce95621cf49022c2b6a9fabf3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 257c3e097f890cc5b3ceec03aca8b264695e1bd9
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661213"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301226"
 ---
 # <a name="signing-in-to-visual-studio"></a>Fazendo login no Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ Será possível personalizar e otimizar sua experiência de desenvolvimento do V
 - **Conecta-se automaticamente a serviços como o Azure e Visual Studio Team Services** no IDE sem solicitar credenciais para a mesma conta novamente.
 
 ## <a name="how-to-sign-in-to-visual-studio"></a>Como entrar no Visual Studio
- Ao iniciar o Visual Studio pela primeira vez, será solicitado que você entre e forneça algumas informações básicas de registro. Você deve escolher uma conta da Microsoft ou uma conta corporativa ou de estudante que melhor lhe representa. Se você não tiver uma conta da Microsoft, poderá criar uma gratuitamente. Consulte [Como me inscrevo em uma conta da Microsoft?](http://windows.microsoft.com/windows-live/sign-up-create-account-how)
+ Ao iniciar o Visual Studio pela primeira vez, será solicitado que você entre e forneça algumas informações básicas de registro. Você deve escolher uma conta da Microsoft ou uma conta corporativa ou de estudante que melhor lhe representa. Se você não tiver uma conta da Microsoft, poderá criar uma gratuitamente. Consulte [Como me inscrevo em uma conta da Microsoft?](https://support.microsoft.com/help/4026324/microsoft-account-how-to-create)
 
  Em seguida, escolha as configurações da interface de usuário e o tema de cor que você deseja usar no Visual Studio. O Visual Studio se lembra essas configurações e sincroniza-as em todos os ambientes do Visual Studio nos quais você entrou. Para obter uma lista das configurações que são sincronizadas, consulte [Configurações Sincronizadas](../ide/synchronized-settings-in-visual-studio.md). Você pode alterar as configurações posteriormente se abrir o menu **Ferramentas &#124; Opções** do Visual Studio.
 

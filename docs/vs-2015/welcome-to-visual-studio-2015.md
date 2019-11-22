@@ -13,12 +13,12 @@ ms.assetid: ba237712-f8c4-4d13-854b-ab4a16afa309
 caps.latest.revision: 128
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 90cc4849567d744c5380076bf8c1773254cda618
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 7eeb6b0ac3322090cf85e26ac6388aac76890d44
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72657043"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297568"
 ---
 # <a name="welcome-to-visual-studio-2015"></a>Bem-vindo ao Visual Studio de 2015
 [!INCLUDE[vs2017banner](includes/vs2017banner.md)]
@@ -30,13 +30,13 @@ Bem-vindo ao Visual Studio! Temos tudo o que você precisa para criar ótimos ap
 >
 > Clique aqui para obter as notas de versão do [Visual Studio 2017](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes).
 
- Baixe o [Visual Studio Community](http://go.microsoft.com/fwlink/?LinkId=517106) gratuitamente para começar a codificar agora mesmo. Se desejar fazer desenvolvimento multiplataforma, não deixe de instalar os pacotes opcionais. (Você pode obter mais recursos com [outras edições do Visual Studio](http://www.visualstudio.com/products/compare-visual-studio-products-vs).)
+ Baixe o [Visual Studio Community](https://go.microsoft.com/fwlink/?LinkId=517106) gratuitamente para começar a codificar agora mesmo. Se desejar fazer desenvolvimento multiplataforma, não deixe de instalar os pacotes opcionais. (Você pode obter mais recursos com [outras edições do Visual Studio](https://visualstudio.microsoft.com/vs/compare/).)
 
  Vá diretamente, crie um novo projeto e comece a escrever código. Escolha o tipo de aplicativo que você deseja criar. Ou você pode [fazer um tour](./ide/visual-studio-ide.md) pelo IDE do Visual Studio para se familiarizar com as ferramentas.
 
  E não se esqueça de explorar a nossa [galeria de códigos](https://code.msdn.microsoft.com/) para encontrar exemplos para ajudá-lo a escrever seu aplicativo mais rapidamente!
 
- É possível instalar o Visual Studio 2015 baixando-o em [Downloads do Visual Studio](http://www.visualstudio.com/downloads/download-visual-studio-vs.aspx). Para saber mais sobre o processo de instalação, consulte [instalar o Visual Studio 2015](./install/install-visual-studio-2015.md).
+ É possível instalar o Visual Studio 2015 baixando-o em [Downloads do Visual Studio](https://www.visualstudio.com/downloads/download-visual-studio-vs.aspx). Para saber mais sobre o processo de instalação, consulte [instalar o Visual Studio 2015](./install/install-visual-studio-2015.md).
 
 ## <a name="extend-visual-studio"></a>Estenda o Visual Studio
  Adicione sua própria extensão do Visual Studio para incluir uma ferramenta ou script que você normalmente usa durante a codificação. Você pode criar janelas de ferramentas e itens de menu personalizados para integrar suas próprias ferramentas ao IDE do Visual Studio. Você pode estender o editor do Visual Studio para analisar e corrigir código ou adicionar um novo tipo de projeto para incluir tudo o que você precisa.
@@ -74,7 +74,7 @@ Bem-vindo ao Visual Studio! Temos tudo o que você precisa para criar ótimos ap
 - Integre as APIs REST do Office 365 em seu próprio aplicativo para se conectar aos dados armazenados na nuvem. Para obter mais informações, confira [estes exemplos](https://github.com/OfficeDev/?utf8=%E2%9C%93&query=o365).
 
 ## <a name="write-great-web-apps-with-aspnet"></a>Escreva ótimos aplicativos Web com o ASP.NET
- O [ASP.NET 5](http://www.asp.net/vnext/overview/aspnet-vnext/aspnet-5-overview) é uma importante atualização para MVC, WebAPI e signalr, e é executado no Windows, Mac e Linux.  O ASP.NET 5 foi projetado desde o início para fornecer uma pilha .NET Lean e combinável para a criação de aplicativos Web e serviços modernos baseados em nuvem.
+ O [ASP.NET 5](https://docs.microsoft.com/aspnet/core/?view=aspnetcore-3.0) é uma importante atualização para MVC, WebAPI e signalr, e é executado no Windows, Mac e Linux.  O ASP.NET 5 foi projetado desde o início para fornecer uma pilha .NET Lean e combinável para a criação de aplicativos Web e serviços modernos baseados em nuvem.
 
 ## <a name="build-test-and-manage-your-code"></a>Compilar, testar e gerenciar código
 

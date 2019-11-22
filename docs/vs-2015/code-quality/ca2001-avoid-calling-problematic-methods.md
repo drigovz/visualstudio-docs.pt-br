@@ -15,12 +15,12 @@ caps.latest.revision: 19
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 17f3c283f0a837873c5e01716ec2c412b1e67f16
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 287f83d23db75206183fb1ee1461e461a05a6182
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72667739"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74298487"
 ---
 # <a name="ca2001-avoid-calling-problematic-methods"></a>CA2001: evitar métodos problemáticos de chamada
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "72667739"
 |-|-|
 |NomeDoTipo|AvoidCallingProblematicMethods|
 |CheckId|CA2001|
-|Categoria|Microsoft. confiabilidade|
+|Categoria|Microsoft.Reliability|
 |Alteração Significativa|Sem interrupção|
 
 ## <a name="cause"></a>Causa
@@ -42,11 +42,11 @@ ms.locfileid: "72667739"
 
 |Método|Descrição|
 |------------|-----------------|
-|<xref:System.GC.Collect%2A?displayProperty=fullName>|Chamando GC. A coleta pode afetar significativamente o desempenho do aplicativo e raramente é necessária. Para obter mais informações, consulte a entrada de blog [palhinhas de desempenho do rico Mariani](http://go.microsoft.com/fwlink/?LinkId=169256) no msdn.|
-|<xref:System.Threading.Thread.Resume%2A?displayProperty=fullName><br /><br /> <xref:System.Threading.Thread.Suspend%2A?displayProperty=fullName>|Thread. Suspend e thread. resume foram preteridos devido ao comportamento imprevisível.  Use outras classes no namespace <xref:System.Threading>, como <xref:System.Threading.Monitor>, <xref:System.Threading.Mutex> e <xref:System.Threading.Semaphore> para sincronizar threads ou proteger recursos.|
+|<xref:System.GC.Collect%2A?displayProperty=fullName>|Chamando GC. A coleta pode afetar significativamente o desempenho do aplicativo e raramente é necessária. Para obter mais informações, consulte a entrada de blog [palhinhas de desempenho do rico Mariani](https://go.microsoft.com/fwlink/?LinkId=169256) no msdn.|
+|<xref:System.Threading.Thread.Resume%2A?displayProperty=fullName><br /><br /> <xref:System.Threading.Thread.Suspend%2A?displayProperty=fullName>|Thread. Suspend e thread. resume foram preteridos devido ao comportamento imprevisível.  Use outras classes no namespace <xref:System.Threading>, como <xref:System.Threading.Monitor>, <xref:System.Threading.Mutex>e <xref:System.Threading.Semaphore> para sincronizar threads ou proteger recursos.|
 |<xref:System.Runtime.InteropServices.SafeHandle.DangerousGetHandle%2A?displayProperty=fullName>|O método DangerousGetHandle representa um risco de segurança porque ele pode retornar um identificador que não é válido. Consulte a <xref:System.Runtime.InteropServices.SafeHandle.DangerousAddRef%2A> e os métodos de <xref:System.Runtime.InteropServices.SafeHandle.DangerousRelease%2A> para obter mais informações sobre como usar o método DangerousGetHandle com segurança.|
-|<xref:System.Reflection.Assembly.LoadFrom%2A?displayProperty=fullName><br /><br /> <xref:System.Reflection.Assembly.LoadFile%2A?displayProperty=fullName><br /><br /> <xref:System.Reflection.Assembly.LoadWithPartialName%2A?displayProperty=fullName>|Esses métodos podem carregar assemblies de locais inesperados. Por exemplo, consulte blog do .NET CLR Notes do Suzanne Cook posta [LoadFile vs. LoadFrom](http://go.microsoft.com/fwlink/?LinkId=164450) e [escolhendo um contexto de associação](http://go.microsoft.com/fwlink/?LinkId=164451) no site do MSDN para obter informações sobre métodos que carregam assemblies.|
-|[CoSetProxyBlanket](http://go.microsoft.com/fwlink/?LinkID=169250) (Ole32)<br /><br /> [CoInitializeSecurity](http://go.microsoft.com/fwlink/?LinkId=169255) (Ole32)|No momento em que o código do usuário começa a ser executado em um processo gerenciado, ele é muito tarde para chamar CoSetProxyBlanket com confiança. O Common Language Runtime (CLR) usa ações de inicialização que podem impedir que os usuários P/Invoke tenham sucesso.<br /><br /> Se você precisar chamar CoSetProxyBlanket para um aplicativo gerenciado, recomendamos que inicie o processo usando um executável de código nativo (C++), chame CoSetProxyBlanket no código nativo e, em seguida, inicie o aplicativo de código gerenciado em andamento. (Certifique-se de especificar um número de versão de tempo de execução.)|
+|<xref:System.Reflection.Assembly.LoadFrom%2A?displayProperty=fullName><br /><br /> <xref:System.Reflection.Assembly.LoadFile%2A?displayProperty=fullName><br /><br /> <xref:System.Reflection.Assembly.LoadWithPartialName%2A?displayProperty=fullName>|Esses métodos podem carregar assemblies de locais inesperados. Por exemplo, consulte blog do .NET CLR Notes do Suzanne Cook posta [LoadFile vs. LoadFrom](https://go.microsoft.com/fwlink/?LinkId=164450) e [escolhendo um contexto de associação](https://go.microsoft.com/fwlink/?LinkId=164451) no site do MSDN para obter informações sobre métodos que carregam assemblies.|
+|[CoSetProxyBlanket](https://go.microsoft.com/fwlink/?LinkID=169250) (Ole32)<br /><br /> [CoInitializeSecurity](https://go.microsoft.com/fwlink/?LinkId=169255) (Ole32)|No momento em que o código do usuário começa a ser executado em um processo gerenciado, ele é muito tarde para chamar CoSetProxyBlanket com confiança. O Common Language Runtime (CLR) usa ações de inicialização que podem impedir que os usuários P/Invoke tenham sucesso.<br /><br /> Se você precisar chamar CoSetProxyBlanket para um aplicativo gerenciado, recomendamos que inicie o processo usando um executável de código nativo (C++), chame CoSetProxyBlanket no código nativo e, em seguida, inicie o aplicativo de código gerenciado em andamento. (Certifique-se de especificar um número de versão de tempo de execução.)|
 
 ## <a name="how-to-fix-violations"></a>Como Corrigir Violações
  Para corrigir uma violação dessa regra, remova ou substitua a chamada para o método perigoso ou problemático.

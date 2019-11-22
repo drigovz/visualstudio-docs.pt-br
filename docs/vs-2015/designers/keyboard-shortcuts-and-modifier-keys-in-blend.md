@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 1068c87a8979b853dd27de1b35e2449d7f96eaf4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 47bcda57d4446b69096405a54e238e696df24d50
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72664325"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300810"
 ---
 # <a name="keyboard-shortcuts-and-modifier-keys-in-blend"></a>Atalhos de teclado e teclas modificadoras no Blend
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,11 +29,11 @@ Atalhos de teclado podem acelerar seu trabalho reduzindo em um único atalho de 
 
 - **Teclas de atalho** Você pode usar teclas de atalho para realizar uma ação (como selecionar um comando de menu ou modificar o comportamento de uma ferramenta) pressionando um atalho de teclado.
 
-   A maioria dos atalhos de teclado é fácil de identificar na interface do usuário do [!INCLUDE[blend_subs](../includes/blend-subs-md.md)]. Esses atalhos são exibidos à direita de comandos de menu. Por exemplo, no menu **Arquivo**, o comando de menu **Abrir Projeto** inclui o atalho de teclado CTRL+SHIFT+A. Para ver as teclas de atalho para uma ferramenta no painel **Ferramentas**, passe o ponteiro sobre a ferramenta.
+   A maioria dos atalhos de teclado é fácil de identificar na interface do usuário do [!INCLUDE[blend_subs](../includes/blend-subs-md.md)]. Esses atalhos são exibidos à direita de comandos de menu. Por exemplo, no menu **Arquivo**, o comando de menu **Abrir Projeto** inclui o atalho de teclado CTRL+SHIFT+A. Para ver as teclas de atalho para uma ferramenta no painel **Ferramentas**, focalize o ponteiro sobre a ferramenta.
 
    ![](../designers/media/f147fc85-9fc5-4e8a-8039-bead80a3e595.png "f147fc85-9fc5-4e8a-8039-bead80a3e595")Teclas de atalho que aparecem ao lado de itens de menu que têm atalhos
 
-  Para obter mais informações sobre acessibilidade e recursos, consulte [Acessibilidade na Microsoft](http://go.microsoft.com/fwlink/?LinkId=75069).
+  Para obter mais informações sobre acessibilidade e recursos, consulte [Acessibilidade na Microsoft](https://go.microsoft.com/fwlink/?LinkId=75069).
 
 ## <a name="modifier-keys"></a>Teclas modificadoras
  Alguns atalhos de teclado não têm itens de menu associados, o que significa que você não pode usar a interface do usuário do [!INCLUDE[blend_subs](../includes/blend-subs-md.md)] para descobri-los. Os tópicos a seguir listam atalhos que modificam o comportamento de ferramentas ou que modificam uma ação, como redimensionar um objeto:

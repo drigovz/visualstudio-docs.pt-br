@@ -18,12 +18,12 @@ caps.latest.revision: 44
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 421bd778b86aa223e1e7b3a96aa3943a86588174
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a3d1aab68e3dc9f33e0b3e9f9a5665d59f6f2ddc
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72662524"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299414"
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>Associar controles do WPF a um WCF Data Service
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,12 +44,12 @@ Neste passo a passo, você criará um aplicativo WPF que contém controles de as
 
    [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Pré-requisitos
  Você precisa dos seguintes componentes para concluir esta instrução passo a passo:
 
 - [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]
 
-- Acesso a uma instância em execução do SQL Server ou SQL Server Express que tenha o banco de dados de exemplo AdventureWorksLT anexado a ele. Você pode baixar o banco de dados AdventureWorksLT do [site da CodePlex](http://go.microsoft.com/fwlink/?linkid=87843).
+- Acesso a uma instância em execução do SQL Server ou SQL Server Express que tenha o banco de dados de exemplo AdventureWorksLT anexado a ele. Você pode baixar o banco de dados AdventureWorksLT do [site da CodePlex](https://go.microsoft.com/fwlink/?linkid=87843).
 
   Conhecimento prévio dos conceitos a seguir também é útil, mas não é necessário para concluir o passo a passo:
 
@@ -91,7 +91,7 @@ Neste passo a passo, você criará um aplicativo WPF que contém controles de as
 
 2. Na lista Modelos Instalados, clique em **Dados** e selecione o item do projeto **Modelo de Dados de Entidade ADO.NET**.
 
-3. Altere o nome para `AdventureWorksModel.edmx` e clique em **Adicionar**.
+3. Altere o nome para `AdventureWorksModel.edmx`e clique em **Adicionar**.
 
      O **Assistente do Modelo de Dados de Entidade** será aberto.
 
@@ -116,9 +116,9 @@ Neste passo a passo, você criará um aplicativo WPF que contém controles de as
 
 1. No menu **Projeto**, selecione **Adicionar Novo Item**.
 
-2. Na lista modelos instalados, clique em **Web**e selecione o item de projeto do **WCF Data Service** .
+2. Na lista Modelos Instalados, clique em **Web** e selecione o item de projeto **Serviço de Dados WCF**.
 
-3. Na caixa **nome** , digite `AdventureWorksService.svc` e clique em **Adicionar**.
+3. Na caixa **nome** , digite `AdventureWorksService.svc`e clique em **Adicionar**.
 
      O Visual Studio adiciona o `AdventureWorksService.svc` ao projeto.
 
@@ -180,7 +180,7 @@ Neste passo a passo, você criará um aplicativo WPF que contém controles de as
 
 #### <a name="to-create-the-window-layout"></a>Para criar o layout da janela
 
-1. Em **Gerenciador de soluções**, clique duas vezes em MainWindow. XAML.
+1. No **Gerenciador de Soluções**, clique duas vezes em MainWindow.xaml.
 
      A janela é aberta no WPF Designer.
 
@@ -273,7 +273,7 @@ Neste passo a passo, você criará um aplicativo WPF que contém controles de as
      [!code-vb[Data_WPFWCF#4](../snippets/visualbasic/VS_Snippets_ProTools/data_wpfwcf/vb/adventureworkssaleseditor/mainwindow.xaml.vb#4)]
 
 ## <a name="saving-changes-to-sales-records"></a>Salvando alterações em registros de vendas
- Adicione o código que permite aos usuários exibir e salvar alterações em registros de vendas usando o botão **salvar alterações** .
+ Adicione o código que permite aos usuários visualizar e salvar as alterações em registros de vendas ao usar o botão **Salvar alterações**.
 
 #### <a name="to-add-the-ability-to-save-changes-to-sales-records"></a>Para adicionar a capacidade de salvar as alterações em registros de vendas
 
@@ -291,7 +291,7 @@ Neste passo a passo, você criará um aplicativo WPF que contém controles de as
 
 #### <a name="to-test-the-application"></a>Para testar o aplicativo
 
-1. No menu **Compilar** , clique em **Compilar solução**. Verifique se a solução é compilada sem erros.
+1. No menu **Compilar**, clique em **Compilar Solução**. Verifique se a solução é compilada sem erros.
 
 2. Pressione **Ctrl + F5**.
 
@@ -323,4 +323,4 @@ Neste passo a passo, você criará um aplicativo WPF que contém controles de as
 - Saiba como usar a janela **Fontes de Dados** no Visual Studio para exibir dados relacionados (isto é, dados em uma relação pai-filho) em controles do WPF. Para obter mais informações, consulte [Walkthrough: Exibindo dados relacionados em um aplicativo do WPF](../data-tools/walkthrough-displaying-related-data-in-a-wpf-application.md).
 
 ## <a name="see-also"></a>Consulte também
- [Associar controles do WPF a dados no Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md) [associar controles do WPF a dados no Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio2.md) [associar controles do WPF a um conjunto](../data-tools/bind-wpf-controls-to-a-dataset.md) de dados [visão geral](https://msdn.microsoft.com/library/7924cf94-c9a6-4015-afc9-f5d22b1743bb) [Entity Framework visão geral](https://msdn.microsoft.com/library/a2166b3d-d8ba-4a0a-8552-6ba1e3eaaee0) do [WPF e do designer do Silverlight](https://msdn.microsoft.com/570b7a5c-0c86-4326-a371-c9b63378fc62) [ Visão geral da Associação](https://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211)
+ [Associar controles do WPF a dados no Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md) [associar controles do WPF a dados no Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio2.md) [associar controles do WPF a um DataSet](../data-tools/bind-wpf-controls-to-a-dataset.md) [visão](https://msdn.microsoft.com/library/7924cf94-c9a6-4015-afc9-f5d22b1743bb) geral [Entity Framework](https://msdn.microsoft.com/library/a2166b3d-d8ba-4a0a-8552-6ba1e3eaaee0) visão geral [WPF e](https://msdn.microsoft.com/570b7a5c-0c86-4326-a371-c9b63378fc62) visão geral de [Associação de dados](https://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211) do designer do Silverlight

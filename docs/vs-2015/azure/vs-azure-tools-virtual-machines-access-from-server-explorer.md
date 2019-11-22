@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/31/2017
 ms.author: ghogen
-ms.openlocfilehash: 6d6b35218355db686a4154928e5529d213e733d5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9a95cd84ede6befded37f9d875535f39846de50a
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62968022"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74291054"
 ---
 # <a name="accessing-azure-virtual-machines-from-server-explorer"></a>Acessando máquinas virtuais do Azure no Gerenciador de Servidores
 
@@ -24,18 +24,18 @@ Se tiver máquinas virtuais hospedadas pelo Azure, você pode acessá-las no Ger
 
 1. No Cloud Explorer, escolha uma máquina virtual e pressione a tecla F4 para mostrar a respectiva janela de propriedades.
 
-    A tabela a seguir mostra quais propriedades estão disponíveis, mas elas são somente leitura. Para alterá-las, use o [Portal do Azure](http://go.microsoft.com/fwlink/p/?LinkID=525040).
+    A tabela a seguir mostra quais propriedades estão disponíveis, mas elas são somente leitura. Para alterá-las, use o [Portal do Azure](https://go.microsoft.com/fwlink/p/?LinkID=525040).
 
-   | Propriedade | DESCRIÇÃO |
+   | Propriedade | Descrição |
    | --- | --- |
    | Nome DNS |A URL com o endereço de Internet da máquina virtual. |
    | Ambiente |Para uma máquina virtual, o valor dessa propriedade é sempre produção. |
    | Nome |O nome da máquina virtual. |
    | Tamanho |O tamanho da máquina virtual, que reflete a quantidade de memória e espaço em disco disponível. Para obter mais informações, consulte os [tamanhos de máquina virtual](https://docs.microsoft.com/azure/cloud-services/cloud-services-sizes-specs). |
-   | Status |Os valores incluem Inicial, Iniciado, Parando, Parado e Recuperando Status. Se Recuperando Status aparecer, o status atual é desconhecido. Os valores para essa propriedade diferem dos valores que são usados no [Portal do Azure](http://go.microsoft.com/fwlink/p/?LinkID=525040). |
-   | SubscriptionID |A ID de assinatura para sua conta do Azure. Você pode mostrar essas informações no [Portal do Azure](http://go.microsoft.com/fwlink/p/?LinkID=525040) exibindo as propriedades de uma assinatura. |
+   | Status |Os valores incluem Inicial, Iniciado, Parando, Parado e Recuperando Status. Se Recuperando Status aparecer, o status atual é desconhecido. Os valores para essa propriedade diferem dos valores que são usados no [Portal do Azure](https://go.microsoft.com/fwlink/p/?LinkID=525040). |
+   | SubscriptionID |A ID de assinatura para sua conta do Azure. Você pode mostrar essas informações no [Portal do Azure](https://go.microsoft.com/fwlink/p/?LinkID=525040) exibindo as propriedades de uma assinatura. |
 2. Escolha um nó do ponto de extremidade e exiba a janela **Propriedades** .
-3. A tabela a seguir descreve as propriedades de pontos de extremidade disponíveis, mas eles são somente leitura. Para adicionar ou editar os pontos de extremidade para uma máquina virtual, use o [Portal do Azure](http://go.microsoft.com/fwlink/p/?LinkID=525040). 
+3. A tabela a seguir descreve as propriedades de pontos de extremidade disponíveis, mas eles são somente leitura. Para adicionar ou editar os pontos de extremidade para uma máquina virtual, use o [Portal do Azure](https://go.microsoft.com/fwlink/p/?LinkID=525040). 
 
    | Propriedade | Descrição |
    | --- | --- |

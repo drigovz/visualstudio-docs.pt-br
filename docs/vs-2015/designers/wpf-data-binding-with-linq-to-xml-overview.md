@@ -9,12 +9,12 @@ caps.latest.revision: 5
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 09c0c26a75d6881f06e67fa84f30ac7279bddf33
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 751840960288f46c0a1ca09ebe80a2b8e7603359
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72663899"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299532"
 ---
 # <a name="wpf-data-binding-with-linq-to-xml-overview"></a>Visão geral da associação de dados do WPF com LINQ to XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -89,4 +89,4 @@ Este tópico apresenta os recursos dinâmicos de vinculação de dados no namesp
  Para implementar a associação dinâmica de WPF, as propriedades dinâmicas serão usadas com os recursos fornecidos pelo namespace <xref:System.Windows.Data>, especialmente a classe <xref:System.Windows.Data.Binding>.
 
 ## <a name="see-also"></a>Consulte também
- [Associação de dados do WPF com LINQ to XML](../designers/wpf-data-binding-with-linq-to-xml.md) [LINQ to XML propriedades dinâmicas](../designers/linq-to-xml-dynamic-properties.md) [XAML na associação de dados do WPF](https://msdn.microsoft.com/library/5d858575-a83b-42df-ad3f-047ed2d6e3c8) [(WPF)](https://msdn.microsoft.com/library/90f79b97-17e7-40d1-abf0-3ba600ad1d7e) [usando marcação de fluxo de trabalho](http://go.microsoft.com/fwlink/?LinkId=98685)
+ [Associação de dados do WPF com LINQ to XML](../designers/wpf-data-binding-with-linq-to-xml.md) [LINQ to XML propriedades dinâmicas](../designers/linq-to-xml-dynamic-properties.md) [XAML na associação de dados do WPF](https://msdn.microsoft.com/library/5d858575-a83b-42df-ad3f-047ed2d6e3c8) [(WPF)](https://msdn.microsoft.com/library/90f79b97-17e7-40d1-abf0-3ba600ad1d7e) [usando marcação de fluxo de trabalho](https://go.microsoft.com/fwlink/?LinkId=98685)

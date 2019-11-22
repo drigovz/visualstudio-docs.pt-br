@@ -15,19 +15,19 @@ caps.latest.revision: 38
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 2d3434236908771cbc2149e766b841e7bcf4cb4e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 7c9ccd5285f9a2744704c0ee13094a1dac31c53b
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72667840"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74302842"
 ---
 # <a name="uml-use-case-diagrams-guidelines"></a>Diagramas de caso de uso UML: diretrizes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 No Visual Studio, você pode desenhar um *diagrama de caso de uso* para resumir quem usa seu aplicativo ou sistema e o que eles podem fazer com ele. Para criar um diagrama de caso de uso UML, no menu **arquitetura** , clique em **novo UML ou diagrama de camada**.
 
- Para uma demonstração em vídeo, consulte [organizando recursos em casos de uso](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-2-Organizing-Features-Into-Use-Cases/).
+ Para uma demonstração em vídeo, consulte [organizando recursos em casos de uso](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-2-organizing-features-into-use-cases).
 
  Para ver quais versões do Visual Studio oferecem suporte a esse recurso, consulte [suporte de versão para ferramentas de arquitetura e modelagem](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
@@ -170,7 +170,7 @@ No Visual Studio, você pode desenhar um *diagrama de caso de uso* para resumir 
 
  ![Caso de uso mostrando a multiplicidade muitos para muitos](../modeling/media/uml-ucguidemulti2.png "UML_UCGuideMulti2")
 
-- Para declarar que vários atores da mesma classe podem participar em uma única ocorrência de um caso de uso, defina a multiplicidade na extremidade do ator da associação como **1.. \*** .
+- Para declarar que vários atores da mesma classe podem participar em uma única ocorrência de um caso de uso, defina a multiplicidade na extremidade do ator da associação como **1..\*** .
 
    Na ilustração, um ou mais restaurantes podem fazer parte do cumprimento da mesma ordem de refeição.
 
@@ -190,7 +190,7 @@ No Visual Studio, você pode desenhar um *diagrama de caso de uso* para resumir 
 
    - **1** para declarar que exatamente uma instância dessa função participa de cada link.
 
-   - **1.. \*** para declarar que uma ou mais instâncias dessa função participam de cada link.
+   - **1..\*** para declarar que uma ou mais instâncias dessa função participam de cada link.
 
    - **0.. 1** para indicar que a participação é opcional.
 
@@ -270,7 +270,7 @@ No Visual Studio, você pode desenhar um *diagrama de caso de uso* para resumir 
 
 #### <a name="to-link-to-a-shared-document-onenote-element-or-web-page"></a>Para vincular a um documento compartilhado, elemento do OneNote ou página da Web
 
-1. Obtenha a URL do elemento compartilhado. Isso pode ser, por exemplo, um caminho de arquivo de rede que começa com ' \\ \\ ' ou uma página da Web ou URL do SharePoint começando com ' http://' ou um link para uma seção, página ou parágrafo do OneNote que comece ' OneNote: '.
+1. Obtenha a URL do elemento compartilhado. Isso pode ser, por exemplo, um caminho de arquivo de rede que começa com '\\\\' ou uma página da Web ou URL do SharePoint começando com ' http://' ou um link para uma seção, página ou parágrafo do OneNote que comece ' OneNote: '.
 
 2. Na caixa de ferramentas, clique em **artefato** e, em seguida, clique no diagrama de caso de uso.
 
@@ -441,4 +441,4 @@ No Visual Studio, você pode desenhar um *diagrama de caso de uso* para resumir 
  ![Os subsistemas mostram versões diferentes de um sistema](../modeling/media/uml-ucguidesystem.png "UML_UCGuideSystem")
 
 ## <a name="see-also"></a>Consulte também
- [Modelos de usuário de modelo](../modeling/model-user-requirements.md) [diagramas de sequência UML: diretrizes](../modeling/uml-sequence-diagrams-guidelines.md) [editar modelos UML e diagramas diagramas de caso de](../modeling/edit-uml-models-and-diagrams.md) [uso UML: referenciar](../modeling/uml-use-case-diagrams-reference.md) [diagramas de classes UML:](../modeling/uml-class-diagrams-reference.md) referenciar [diagramas de componentes UML: referência](../modeling/uml-component-diagrams-reference.md) [UML Diagramas das atividades:](../modeling/uml-activity-diagrams-guidelines.md) [vídeo de diretrizes: organizando recursos em casos de uso](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-2-Organizing-Features-Into-Use-Cases/)
+ [Modelos de usuário de modelo](../modeling/model-user-requirements.md) [diagramas de sequência UML: diretrizes](../modeling/uml-sequence-diagrams-guidelines.md) [editar modelos UML e diagramas diagramas de](../modeling/edit-uml-models-and-diagrams.md) [caso de uso UML: referenciar](../modeling/uml-use-case-diagrams-reference.md) [diagramas de classes UML: referenciar](../modeling/uml-class-diagrams-reference.md) [diagramas de componentes UML:](../modeling/uml-component-diagrams-reference.md) referência [diagramas de atividade UML: diretrizes](../modeling/uml-activity-diagrams-guidelines.md) [vídeo: organizando recursos em casos](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-2-organizing-features-into-use-cases)

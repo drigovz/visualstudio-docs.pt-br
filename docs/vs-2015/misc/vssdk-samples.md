@@ -7,19 +7,19 @@ ms.topic: conceptual
 ms.assetid: 6aefb510-64cd-4a16-882b-58ada1db02bf
 caps.latest.revision: 17
 manager: jillfra
-ms.openlocfilehash: 47e99e64e96c0572f7b3c9e93c0ee034afcfd9f1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8f5b3ea6b8daef0d1df1110721ec31ef462da924
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63002135"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74298176"
 ---
 # <a name="vssdk-samples"></a>Exemplos de VSSDK
-A página inicial oficial para obter exemplos de extensibilidade do Visual Studio é o [MSDN Code Gallery](http://go.microsoft.com/fwlink/?LinkID=127810) site da Web. O site contém exemplos de Introdução, exemplos que ilustram os novos recursos no Visual Studio, documentação detalhada, links para projetos de código-fonte compartilhado e outros recursos para ajudá-lo a estender o Visual Studio. Para ver uma lista desses recursos, digite **VSX** na **Pesquisar exemplos** caixa na home page.  
+A página inicial oficial dos exemplos de extensibilidade do Visual Studio é o site da [Galeria de código do MSDN](https://go.microsoft.com/fwlink/?LinkID=127810) . O site contém exemplos introdutórios, exemplos que ilustram novos recursos no Visual Studio, documentação aprofundada, links para projetos de origem compartilhados e outros recursos para ajudá-lo a estender o Visual Studio. Para ver uma lista desses recursos, digite **VSX** na caixa **pesquisar exemplos** no Home Page.  
   
- O [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] amostras de SDK demonstram como integrar uma extensão no ambiente de desenvolvimento integrado (IDE) do Visual Studio. O diretório de código de origem de cada exemplo inclui um documento chamado Overview.xml, que contém as notas de implementação para que esse exemplo.  
+ Os exemplos do SDK [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] demonstram como integrar uma extensão ao IDE (ambiente de desenvolvimento integrado) do Visual Studio. O diretório de código-fonte de cada exemplo inclui um documento chamado Overview. xml, que contém notas de implementação para esse exemplo.  
   
- Um exemplo de IronPython também está disponível. Ele é integrado com o [projeto Studio de IronPython](http://go.microsoft.com/fwlink/?LinkID=183554) no site da CodePlex.  
+ Um exemplo de IronPython também está disponível. Ele é integrado ao [projeto do IronPython Studio](https://go.microsoft.com/fwlink/?LinkID=183554) no site da CodePlex.  
   
 ## <a name="see-also"></a>Consulte também  
  [SDK do Visual Studio](../extensibility/visual-studio-sdk.md)

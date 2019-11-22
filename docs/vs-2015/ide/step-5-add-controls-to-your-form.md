@@ -9,19 +9,19 @@ caps.latest.revision: 22
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: a8c261d903868df887d99c10182ed134c79c552b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 89ca4c02a1cbb1171619060b9478b5f2d3ccaa36
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72671762"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74295724"
 ---
 # <a name="step-5-add-controls-to-your-form"></a>Etapa 5: Adicionar controles ao formulário
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Nessa etapa, você adiciona controles como um controle `PictureBox` e um controle `CheckBox` em seu formulário. Em seguida, você adiciona botões ao seu formulário.
 
- ![link para vídeo](../data-tools/media/playvideo.gif "PlayVideo") Para obter uma versão de vídeo deste tópico, consulte [tutorial 1: criar um visualizador de imagens no Visual Basic-Video 2](http://go.microsoft.com/fwlink/?LinkId=205211) ou [tutorial 1: criar um visualizador C# de imagens em-vídeo 2](http://go.microsoft.com/fwlink/?LinkId=205200). Esses vídeos usam uma versão anterior do Visual Studio, portanto, existem pequenas diferenças em alguns comandos de menu e em outros elementos da interface do usuário. No entanto, os conceitos e procedimentos funcionam de maneiras semelhantes na versão atual do Visual Studio.
+ ![link para vídeo](../data-tools/media/playvideo.gif "PlayVideo") Para obter uma versão de vídeo deste tópico, consulte [tutorial 1: criar um visualizador de imagens no Visual Basic-Video 2](https://go.microsoft.com/fwlink/?LinkId=205211) ou [tutorial 1: criar um visualizador C# de imagens em-vídeo 2](https://go.microsoft.com/fwlink/?LinkId=205200). Esses vídeos usam uma versão anterior do Visual Studio, portanto, existem pequenas diferenças em alguns comandos de menu e em outros elementos da interface do usuário. No entanto, os conceitos e procedimentos funcionam de maneiras semelhantes na versão atual do Visual Studio.
 
 ### <a name="to-add-controls-to-your-form"></a>Para adicionar controles ao seu formulário
 
@@ -49,7 +49,7 @@ Nessa etapa, você adiciona controles como um controle `PictureBox` e um control
 
      ![Controle TextBox com a propriedade Stretch](../ide/media/express-pictureviewercheckbox.png "Express_PictureViewerCheckbox") Controle TextBox com a propriedade Stretch
 
-8. Escolha o TableLayoutPanel no formulário e, em seguida, vá para o grupo **Contêineres** na Caixa de Ferramentas (na qual você obteve o controle TableLayoutPanel) e clique duas vezes no item **FlowLayoutPanel** para adicionar um novo controle à última célula em PictureBox (canto inferior direito). Encaixe então o FlowLayoutPanel no TableLayoutPanel (escolhendo **Encaixar no contêiner pai** na lista de tarefas de triângulo preto de FlowLayoutPanel ou configurando a propriedade **Dock** de FlowLayoutPanel para **Fill**).
+8. Escolha o TableLayoutPanel no formulário e, em seguida, vá para o grupo **Contêineres** na Caixa de Ferramentas (na qual você obteve o controle TableLayoutPanel) e clique duas vezes no item **FlowLayoutPanel** para adicionar um novo controle à última célula em PictureBox (canto inferior direito). Insira FlowLayoutPanel no TableLayoutPanel (escolhendo **Encaixar em recipiente pai** na lista de tarefas de triângulo preto de FlowLayoutPanel, ou definindo a propriedade **Dock** de FlowLayoutPanel a **Fill**.
 
     > [!NOTE]
     > Um FlowLayoutPanel é um contêiner que organiza outros controles em linhas nítidas na ordem. Quando você redimensiona um FlowLayoutPanel, se ele tiver espaço para colocar todos os controles em uma única linha, ele faz isso. Caso contrário, organize-os em linhas, um sobre o outro. Você usará um FlowLayoutPanel para armazenar quatro botões. Se os botões forem organizados uns sobre os outros quando adicionados, verifique se FlowLayoutPanel está selecionado antes de adicionar os botões. Embora tenha sido indicado anteriormente que cada célula pode conter somente um controle, a célula inferior direita de TableLayoutPanel possui quatro controles de botão. Isso ocorre porque você pode colocar um controle em uma célula que contém outros controles. O tipo de controle é chamado de recipiente, e o FlowLayoutPanel é um recipiente.

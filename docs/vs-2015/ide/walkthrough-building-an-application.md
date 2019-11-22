@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: f96909d3051e18fe3992e68b44b2948d1e23ebd6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f2d9b958dacfb35877abc9ad1e83a349e43a7af0
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72670132"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74296872"
 ---
 # <a name="walkthrough-building-an-application"></a>Instruções passo a passo: criando um aplicativo
 
@@ -24,7 +24,7 @@ Ao concluir este passo a passo, você ficará mais familiarizado com as várias 
 
 Esse tópico contém as seguintes seções:
 
-[Instalar o aplicativo de exemplo](../ide/walkthrough-building-an-application.md#BKMK_installapp)
+[Instalar o aplicativo de exemplo](../ide/walkthrough-building-an-application.md)
 
 [Criar uma configuração de build personalizada](../ide/walkthrough-building-an-application.md#BKMK_CreateBuildConfig)
 
@@ -34,11 +34,7 @@ Esse tópico contém as seguintes seções:
 
 [Exibir detalhes de build adicionais na Janela de Saída](../ide/walkthrough-building-an-application.md#BKMK_outputdetails)
 
-[Criar um build da versão](../ide/walkthrough-building-an-application.md#BKMK_releasebuild)
-
-## <a name="BKMK_installapp"></a> Instalar o aplicativo de exemplo
-
-Você usará a caixa de diálogo **Extensões e Atualizações** para encontrar e instalar a amostra [Introdução à compilação de aplicativos WPF](http://code.msdn.microsoft.com/Introduction-to-Building-b8d16419?SRC=VSIDE) da Galeria de Amostras no site da Microsoft. A Galeria de Amostras fornece uma variedade de projetos e códigos de exemplo que podem ser baixados e examinados conforme você planeja e desenvolve seus aplicativos.
+[Criar um build da versão](../ide/walkthrough-building-an-application.md)
 
 #### <a name="to-install-the-sample-application"></a>Para instalar o aplicativo de exemplo
 
@@ -74,7 +70,7 @@ Você usará a caixa de diálogo **Extensões e Atualizações** para encontrar 
 
      ![Caixa de diálogo novo projeto, Visual Basic exemplo](../ide/media/buildwalk-newprojectdlgintrotowpfsamplevb.png "BuildWalk_NewProjectdlgIntrotoWPFsampleVB")
 
-4. Selecione o botão **OK**.
+4. Escolha o botão **OK**.
 
 ## <a name="BKMK_CreateBuildConfig"></a> Criar uma configuração de build personalizada
 
@@ -100,7 +96,7 @@ Ao criar uma solução, as configurações de build de depuração e versão e s
 
     ![Caixa de diálogo nova plataforma de solução](../ide/media/buildwalk-newsolutionplatform.png "BuildWalk_NewSolutionPlatform")
 
-6. Selecione o botão **OK**.
+6. Escolha o botão **OK**.
 
    A configuração da solução ativa foi alterada para Teste com a plataforma da solução ativa definida como x64.
 
@@ -185,7 +181,7 @@ Temporariamente, é possível ocultar determinadas mensagens de aviso durante um
 
 1. Abra a caixa de diálogo **Opções**.
 
-    ![Comando de opções no menu ferramentas](../ide/media/exploreide-toolsoptionsmenu.png "ExploreIDE-ToolsOptionsmenu")
+    ![Comando Opções no menu Ferramentas](../ide/media/exploreide-toolsoptionsmenu.png "ExploreIDE-ToolsOptionsmenu")
 
 2. Escolha a categoria **Projetos e Soluções** e, em seguida, a página **Compilar e Executar**.
 
@@ -206,7 +202,7 @@ Temporariamente, é possível ocultar determinadas mensagens de aviso durante um
 
    Para obter mais informações, consulte [Como exibir, salvar e configurar arquivos de log de build](../ide/how-to-view-save-and-configure-build-log-files.md).
 
-## <a name="BKMK_releasebuild"></a> Criar um build da versão
+## <a name="create-a-release-build"></a>Criar um build da versão
 
 É possível compilar uma versão do aplicativo de exemplo que é otimizada para enviá-lo. Para o build de versão, você especificará que o executável é copiado para um compartilhamento de rede antes do início do build.
 
@@ -233,9 +229,9 @@ Para obter mais informações, consulte [Como alterar o diretório de saída do 
 
 6. Compile o aplicativo.
 
-     ![Comando Compilar solução no menu Compilar](../ide/media/exploreide-buildsolution.png "ExploreIDE-BuildSolution")
+     ![Comando Compilar Solução no menu Compilar](../ide/media/exploreide-buildsolution.png "ExploreIDE-BuildSolution")
 
-#### <a name="to-specify-a-release-build-for-visual-c"></a>Para especificar uma compilação de versão para o Visual C \#
+#### <a name="to-specify-a-release-build-for-visual-c"></a>Para especificar uma compilação de versão para o Visual C\#
 
 1. Abra o **Designer de Projeto**.
 
@@ -256,7 +252,7 @@ Para obter mais informações, consulte [Como alterar o diretório de saída do 
 
 6. Compile o aplicativo.
 
-    ![Comando Compilar solução no menu Compilar](../ide/media/exploreide-buildsolution.png "ExploreIDE-BuildSolution")
+    ![Comando Compilar Solução no menu Compilar](../ide/media/exploreide-buildsolution.png "ExploreIDE-BuildSolution")
 
    O arquivo executável é copiado para o caminho de rede especificado. O caminho será \\\myserver\builds\\*FileName*.exe.
 

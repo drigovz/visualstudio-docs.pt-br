@@ -14,12 +14,12 @@ caps.latest.revision: 364
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 469405515b7cc0ebe615dc821ebfa5ddb7258468
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 036ad2171c3b117049635247a980cd0f8411d887
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72672095"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297561"
 ---
 # <a name="what39s-new-in-visual-studio-2015"></a>Novidades no Visual Studio 2015
 [!INCLUDE[vs2017banner](./includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ Para saber mais sobre os vários aprimoramentos e novos recursos do Visual Studi
  ![Caixa de diálogo de instalação do Visual Studio 2015](./ide/media/vs2015-setup-screen.png "VS2015_Setup_screen")
 
 ## <a name="sign-in-across-multiple-accounts"></a>Entrar através de várias contas
- Com o Visual Studio 2015, a nova experiência de entrada simplificada foi projetada para simplificar bastante o acesso a recursos online, mesmo quando você tem várias contas do Visual Studio. Depois de entrar no Visual Studio, você será automaticamente conectado a todas as instâncias do Visual Studio 2015 e do Blend em seu computador. Conectar-se automaticamente inicia as configurações de roaming para você. No Visual Studio 2015, sua conta é compartilhada entre recursos, desde que você tenha um bom token, você pode acessar suas contas de Visual Studio Team Services de **Team Explorer**e recursos e sites da sua assinatura do Microsoft Azure no servidor Explorer. Você também verá seus recursos do Azure na caixa de diálogo novo projeto para projetos de Application Insights e verá suas contas de [desenvolvedor](https://developer.salesforce.com/) do Azure Mobile, armazenamento do azure, [Microsoft Office 365](https://msdn.microsoft.com/office/aa905340.aspx) e Saleforce.com no novo **Adicionar um serviço conectado** caixa de diálogo.
+ Com o Visual Studio 2015, a nova experiência de entrada simplificada foi projetada para simplificar bastante o acesso a recursos online, mesmo quando você tem várias contas do Visual Studio. Depois de entrar no Visual Studio, você será automaticamente conectado a todas as instâncias do Visual Studio 2015 e do Blend em seu computador. Conectar-se automaticamente inicia as configurações de roaming para você. No Visual Studio 2015, sua conta é compartilhada entre recursos, desde que você tenha um bom token, você pode acessar suas contas de Visual Studio Team Services de **Team Explorer**e recursos e sites da sua assinatura do Microsoft Azure no Gerenciador de servidores. Você também verá os recursos do Azure na caixa de diálogo novo projeto para projetos de Application Insights e verá suas contas de [desenvolvedor](https://developer.salesforce.com/) do Azure Mobile, armazenamento do azure, [Microsoft Office 365](https://msdn.microsoft.com/office/aa905340.aspx) e Saleforce.com na caixa de diálogo novo **Adicionar um serviço conectado** .
 
  Você pode trabalhar com várias contas de usuário no Visual Studio adicionando-as à sua volta ou ao novo Gerenciador de contas. Em seguida, você pode alternar entre essas contas imediatamente ao conectar-se a serviços ou acessar recursos online. O Visual Studio lembra as contas adicionadas para que você possa usá-las de qualquer instância do Visual Studio ou do Blend. O Visual Studio também fará roaming da lista de contas (ainda que não vamos enmover suas credenciais valiosas) com sua conta de personalização para que você possa começar rapidamente a trabalhar com uma dessas contas em outro dispositivo. É claro que você pode remover contas da caixa de diálogo de configurações de conta a qualquer momento. Para começar, consulte [trabalhar com várias contas de usuário](./ide/work-with-multiple-user-accounts.md).
 
@@ -73,7 +73,7 @@ Para saber mais sobre os vários aprimoramentos e novos recursos do Visual Studi
  Use C#, Visual Basic C++ ou JavaScript para criar esses [aplicativos universais do Windows](https://msdn.microsoft.com/library/dn975273.aspx).
 
 ### <a name="web"></a>Web
- O ASP.NET 5 é uma importante atualização para MVC, WebAPI e Signalr, e é executado no Windows, Mac e Linux.  O ASP.NET 5 foi projetado desde o início para fornecer uma pilha .NET Lean e combinável para a criação de aplicativos modernos baseados em nuvem. As ferramentas do Visual Studio 2015 são mais bem integradas a ferramentas de desenvolvimento para a web populares, como Bower e Grunt. Para começar, consulte as várias Postagens de blog no [blog de ferramentas e desenvolvimento da Web de rede](http://blogs.msdn.com/b/webdev/).
+ O ASP.NET 5 é uma importante atualização para MVC, WebAPI e Signalr, e é executado no Windows, Mac e Linux.  O ASP.NET 5 foi projetado desde o início para fornecer uma pilha .NET Lean e combinável para a criação de aplicativos modernos baseados em nuvem. As ferramentas do Visual Studio 2015 são mais bem integradas a ferramentas de desenvolvimento para a web populares, como Bower e Grunt. Para começar, consulte as várias Postagens de blog no [blog de ferramentas e desenvolvimento da Web de rede](https://devblogs.microsoft.com/aspnet/).
 
 ### <a name="classic-desktop-and-windows-store"></a>Área de trabalho clássica e Windows Store
  O Visual Studio 2015 continua a oferecer suporte à área de trabalho clássica e ao desenvolvimento da Windows Store. À medida que o Windows evolui, o Visual Studio irá evoluir junto com ele.  No Visual Studio 2015, as bibliotecas e linguagens para .NET, bem C++ como foram feitas avanços significativos que se aplicam a todas as versões do Windows.
@@ -87,12 +87,12 @@ Para saber mais sobre os vários aprimoramentos e novos recursos do Visual Studi
 
  As C# linguagens e Visual Basic contêm muitos aprimoramentos pequenos na linguagem principal e no suporte a IDE. Todos esses aprimoramentos se somam para tornar sua experiência de codificação .NET ainda mais intuitiva, conveniente e produtiva.
 
- Para obter mais informações, consulte [o que há de novo](https://msdn.microsoft.com/library/1d971dd7-10fc-4692-8dac-30ca308fc0fa) e o [blog do .net](http://blogs.msdn.com/b/dotnet/).
+ Para obter mais informações, consulte [o que há de novo](https://msdn.microsoft.com/library/1d971dd7-10fc-4692-8dac-30ca308fc0fa) e o [blog do .net](https://devblogs.microsoft.com/dotnet/).
 
 #### <a name="c"></a>C++
- O C++ Visual fornece avanços significativos em conformidade com o idioma c++ 11/14, suporte para desenvolvimento de dispositivo móvel de plataforma cruzada, suporte para funções retomáveis e Await (atualmente planejado para padronização no c++ 17), melhorias e correções de bugs no as implementações da biblioteca de tempo de C++ execução C (CRT) e da biblioteca padrão (STL), caixas de diálogo redimensionáveis no MFC, novas otimizações de compilador, melhor desempenho de compilação, novos recursos de diagnóstico e novas ferramentas de produtividade no editor de códigos.
+ O C++ Visual fornece avanços significativos em conformidade com o idioma c++ 11/14, suporte para desenvolvimento de dispositivo móvel multiplataforma, suporte para funções retomáveis e Await (atualmente planejado para padronização no c++ 17), melhorias e correções de bugs nas implementações C++ da biblioteca de tempo de execução C (CRT) e da STL (standard library), caixas de diálogo redimensionáveis no MFC, novas otimizações de compilador, melhor desempenho de compilação, novos recursos de diagnóstico e
 
- Para obter mais informações, consulte [What ' s New C++ for Visual](https://msdn.microsoft.com/library/1cc09fad-85a2-43c2-b022-bb99f5fe0ad7) and The [ C++ Visual blog](http://blogs.msdn.com/b/vcblog/).
+ Para obter mais informações, consulte [What ' s New C++ for Visual](https://msdn.microsoft.com/library/1cc09fad-85a2-43c2-b022-bb99f5fe0ad7) and The [ C++ Visual blog](https://devblogs.microsoft.com/cppblog/).
 
 ## <a name="device-preview-menu-bar"></a>Barra de menus de visualização do dispositivo
  Em projetos Plataforma Universal do Windows, a barra de menu Visualização do dispositivo permite que você veja como sua interface do usuário baseada em XAML será renderizada em vários tamanhos de tela.
@@ -121,7 +121,7 @@ Para saber mais sobre os vários aprimoramentos e novos recursos do Visual Studi
  A experiência de fusão para a criação de interfaces de usuário XAML foi significativamente aprimorada. O Blend foi completamente reprojetado para fornecer uma interface do usuário mais intuitiva, recursos de edição XAML mais eficientes, incluindo o IntelliSense, e melhor integração com o Visual Studio. Consulte [Criando o XAML no Visual Studio e no Blend para Visual Studio](./designers/designing-xaml-in-visual-studio.md) para obter mais informações.
 
 ## <a name="cross-platform-debugging-support"></a>Suporte à depuração entre plataformas
- Você pode usar o Visual Studio para criar e depurar aplicativos móveis nativos que são executados em dispositivos Windows, iOS e Android. Use o [emulador do Visual Studio para Android](http://blogs.msdn.com/b/visualstudioalm/archive/2014/11/12/introducing-visual-studio-s-emulator-for-android.aspx)ou conecte um dispositivo e depure seu código diretamente no Visual Studio.
+ Você pode usar o Visual Studio para criar e depurar aplicativos móveis nativos que são executados em dispositivos Windows, iOS e Android. Use o [emulador do Visual Studio para Android](https://devblogs.microsoft.com/devops/introducing-visual-studios-emulator-for-android/)ou conecte um dispositivo e depure seu código diretamente no Visual Studio.
 
 - **JavaScript/Cordova**. Use o [Ferramentas do Visual Studio para Apache Cordova](https://msdn.microsoft.com/library/dn879821\(v=vs.140\).aspx) para compilar aplicativos nativos para Windows, Ios e Android com JavaScript.
 
@@ -129,7 +129,7 @@ Para saber mais sobre os vários aprimoramentos e novos recursos do Visual Studi
 
 - **C# /Xamarin**. Use o [Xamarin](https://msdn.microsoft.com/library/dn879698\(v=vs.140\).aspx) para criar aplicativos nativos para Windows, Ios e Android no Visual Studio com C#o.
 
-     A [depuração](http://developer.xamarin.com/guides/ios/deployment,_testing,_and_metrics/debugging_in_xamarin_ios/) (Ios) e a [depuração no dispositivo](http://developer.xamarin.com/guides/android/deployment,_testing,_and_metrics/debugging_with_xamarin_android/) nos [guias de desenvolvedor do Xamarin](http://developer.xamarin.com/guides) descrevem a experiência de depuração.
+     A [depuração](https://docs.microsoft.com/xamarin/ios/deploy-test/debugging-in-xamarin-ios?tabs=windows) (Ios) e a [depuração no dispositivo](https://docs.microsoft.com/xamarin/android/deploy-test/debugging/debug-on-device?tabs=windows) nos [guias de desenvolvedor do Xamarin](https://docs.microsoft.com/xamarin/) descrevem a experiência de depuração.
 
 - **C++ /Android**. Use o [Visual C++ para modelos de desenvolvimento móvel de plataforma cruzada](cross-platform/visual-cpp-for-cross-platform-mobile-development.md) junto com ferramentas de terceiros como o [Android NDK](https://developer.android.com/tools/sdk/ndk/index.html) para criar aplicativos nativos para Windows e Android.
 
@@ -140,16 +140,16 @@ Para obter informações sobre as novidades do diagnóstico, consulte [novidades
 A seguir estão as ferramentas novas ou aprimoradas que executam diferentes tipos de diagnóstico e análise em seu código:
 
 ### <a name="perftips"></a>PerfTips
- PerfTips exibem o tempo de execução dos métodos durante a depuração, permitindo que você identifique rapidamente os afunilamentos sem precisar invocar o criador de perfil. Para começar, consulte [PerfTips: informações de desempenho imediatas durante depuração com o Visual Studio](http://blogs.msdn.com/b/visualstudioalm/archive/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio.aspx)
+ PerfTips exibem o tempo de execução dos métodos durante a depuração, permitindo que você identifique rapidamente os afunilamentos sem precisar invocar o criador de perfil. Para começar, consulte [PerfTips: informações de desempenho imediatas durante depuração com o Visual Studio](https://devblogs.microsoft.com/devops/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio/)
 
 ### <a name="error-list"></a>Lista de Erros
  A lista de erros agora dá suporte à filtragem em qualquer coluna. Ele também mostra uma exibição dinâmica de erros, avisos e análise de código em toda C# a sua solução ou Visual Basic à medida que você digita, mesmo quando uma alteração de código produz milhares de avisos. O novo Lista de Erros é de back-Compatible com o uso existente. Para obter mais informações, consulte [lista de erros janela](./ide/reference/error-list-window.md).
 
 ### <a name="gpu-usage-tool"></a>Ferramenta de uso de GPU
- A ferramenta de uso de GPU ajuda a coletar e analisar dados de uso de GPU em aplicativos e jogos do DirectX e a solucionar problemas de gargalos de desempenho na CPU ou GPU. Para começar a usar a ferramenta, consulte a [postagem no blog da C++ equipe Visual](http://blogs.msdn.com/b/vcblog/archive/2014/09/05/gpu-usage-tool-in-visual-studio-2013-update-4-ctp1.aspx).
+ A ferramenta de uso de GPU ajuda a coletar e analisar dados de uso de GPU em aplicativos e jogos do DirectX e a solucionar problemas de gargalos de desempenho na CPU ou GPU. Para começar a usar a ferramenta, consulte a [postagem no blog da C++ equipe Visual](https://devblogs.microsoft.com/cppblog/gpu-usage-tool-in-visual-studio-2013-update-4-ctp1/).
 
 ## <a name="live-code-analysis-light-bulbs"></a>Análise de código ao vivo (lâmpadas)
- O novo compilador Roslyn para C# e Visual Basic não apenas oferece tempos de compilação mais rápidos — ele também permite cenários completamente novos, como análise de código ao vivo, que fornece comentários avançados e personalizáveis e sugestões diretamente dentro do editor de código como você Escreva. No Visual Studio 2015, lâmpadas leves são exibidas na margem esquerda (ao usar o teclado) ou uma dica de ferramenta (ao focalizar um erro com o mouse). A lâmpada diz em tempo real que o compilador (possivelmente usando um conjunto de regras personalizado) detectou um problema em seu código e também tem uma sugestão de como corrigir o problema. Quando você vir uma lâmpada, clique nela para obter sugestões acionáveis.
+ O novo compilador Roslyn para C# e Visual Basic não apenas oferece tempos de compilação mais rápidos — ele também permite cenários completamente novos, como a análise de código ao vivo, que fornece comentários avançados e personalizáveis e sugestões diretamente dentro do editor de códigos conforme você digita. No Visual Studio 2015, lâmpadas leves são exibidas na margem esquerda (ao usar o teclado) ou uma dica de ferramenta (ao focalizar um erro com o mouse). A lâmpada diz em tempo real que o compilador (possivelmente usando um conjunto de regras personalizado) detectou um problema em seu código e também tem uma sugestão de como corrigir o problema. Quando você vir uma lâmpada, clique nela para obter sugestões acionáveis.
 
  ![Lâmpadas no editor de Visual Studio Code](./ide/media/vs2015-lightbulbs.png "VS2015_LightBulbs")
 

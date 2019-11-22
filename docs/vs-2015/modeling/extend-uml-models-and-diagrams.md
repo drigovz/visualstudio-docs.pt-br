@@ -12,12 +12,12 @@ caps.latest.revision: 39
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 69315b8a81c321d8a33583b02e9579f392d1dc65
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b8b154ccd18472d0b0bca502c78a6612aeccdda6
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669603"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301042"
 ---
 # <a name="extend-uml-models-and-diagrams"></a>Estender modelos e diagramas UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,13 +30,13 @@ Este tópico resume as diferentes maneiras pelas quais você pode estender as fe
 
  A equipe de ferramentas da Fabrikam faz uma série de aprimoramentos para ajudar as equipes de desenvolvimento. As seções a seguir descrevem os diferentes tipos de extensões que você pode definir. Você pode combinar várias dessas técnicas em uma extensão do Visual Studio.
 
- Para obter mais informações, consulte este vídeo: ![link para vídeo](../data-tools/media/playvideo.gif "PlayVideo")[msdn how da Series: ferramentas e extensibilidade UML](http://go.microsoft.com/fwlink/?LinkId=214467).
+ Para obter mais informações, consulte este vídeo: ![link para vídeo](../data-tools/media/playvideo.gif "PlayVideo")[msdn how da Series: ferramentas e extensibilidade UML](https://go.microsoft.com/fwlink/?LinkId=214467).
 
 ## <a name="Requirements"></a> Requisitos
 
 - [SDK do Visual Studio](../extensibility/visual-studio-sdk.md).
 
-- [SDK de modelagem para o Visual Studio 2015](http://www.microsoft.com/download/details.aspx?id=48148).
+- [SDK de modelagem para o Visual Studio 2015](https://www.microsoft.com/download/details.aspx?id=48148).
 
 ## <a name="profiles"></a>Perfis
  Os perfis permitem que você defina estereótipos e propriedades adicionais em elementos UML.
@@ -113,10 +113,10 @@ Este tópico resume as diferentes maneiras pelas quais você pode estender as fe
 
 |**Categoria**|**Vincule**|
 |------------------|---------------|
-|**Vídeos**|![link para vídeo](../data-tools/media/playvideo.gif "PlayVideo") [série How do MSDN: ferramentas e extensibilidade UML](http://go.microsoft.com/fwlink/?LinkId=214467)<br /><br /> ![link para o canal de vídeo](../data-tools/media/playvideo.gif "PlayVideo") [9: UML com o Visual Studio](http://go.microsoft.com/fwlink/?LinkId=199957)|
-|**Nos**|[ferramentas de modelagem & de visualização do Visual Studio](http://go.microsoft.com/fwlink/?LinkId=184720) -   <br />[SDK de modelagem do & de visualização do Visual Studio (ferramentas DSL)](http://go.microsoft.com/fwlink/?LinkId=184721) -   |
-|**Blogs**|[Visual Studio ALM + Team Foundation Server Blog](http://go.microsoft.com/fwlink/?LinkID=201340)|
-|**Artigos técnicos e diários**|[Centro de arquitetura do MSDN](http://go.microsoft.com/fwlink/?LinkId=201343)|
+|**Vídeos**|![link para vídeo](../data-tools/media/playvideo.gif "PlayVideo") [série How do MSDN: ferramentas e extensibilidade UML](https://go.microsoft.com/fwlink/?LinkId=214467)<br /><br /> ![link para o canal de vídeo](../data-tools/media/playvideo.gif "PlayVideo") [9: UML com o Visual Studio](https://go.microsoft.com/fwlink/?LinkId=199957)|
+|**Nos**|[ferramentas de modelagem & de visualização do Visual Studio](https://go.microsoft.com/fwlink/?LinkId=184720) -   <br />[SDK de modelagem do & de visualização do Visual Studio (ferramentas DSL)](https://go.microsoft.com/fwlink/?LinkId=184721) -   |
+|**Blogs**|[Visual Studio ALM + Team Foundation Server Blog](https://go.microsoft.com/fwlink/?LinkID=201340)|
+|**Artigos técnicos e diários**|[Centro de arquitetura do MSDN](https://go.microsoft.com/fwlink/?LinkId=201343)|
 
 ## <a name="see-also"></a>Consulte também
  [Criar modelos para a](../modeling/create-models-for-your-app.md) [referência de API de seu aplicativo para EXTENSIBILIDADE de modelagem UML](../modeling/api-reference-for-uml-modeling-extensibility.md)

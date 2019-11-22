@@ -14,12 +14,12 @@ caps.latest.revision: 31
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 1c5d0770115fffd8c81078fd0e3d187ec5d3c5ae
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 879d8457a0f5fd4bf63a2d69a4f3f026ce4c6fe1
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72657943"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74294670"
 ---
 # <a name="creating-a-ui-by-using-xaml-designer-in-visual-studio"></a>Criando uma interface de usuário usando o XAML Designer no Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -133,7 +133,7 @@ O Designer XAML no Visual Studio fornece uma interface visual para ajudá-lo a c
 
  ![Janela Propriedades](../designers/media/xaml-editor-prop-window.png "xaml_editor_prop_window")
 
- Há várias opções na parte superior da janela Propriedades. Você pode alterar o nome do elemento atualmente selecionado usando a caixa **Nome**. No canto esquerdo superior, há um ícone que representa o elemento atualmente selecionado. Para organizar as propriedades por categoria ou em ordem alfabética, clique em **Categoria**, **Nome** ou **Fonte** na lista **Organizar por**. Para ver a lista de eventos de um controle, clique no botão **Eventos**, que exibe um símbolo de relâmpago. Para pesquisar uma propriedade, comece a digitar o nome da propriedade na caixa **Propriedades de Pesquisa**. A janela Propriedades exibe as propriedades que correspondem à pesquisa à medida que você digita. Algumas propriedades permitem que você defina propriedades avançadas selecionando um botão de seta para baixo. Para obter mais informações sobre como usar propriedades e manipular eventos, veja o artigo sobre [Guia de início rápido: adicionando controles e manipulando eventos](http://go.microsoft.com/fwlink/?LinkID=247983)
+ Há várias opções na parte superior da janela Propriedades. Você pode alterar o nome do elemento atualmente selecionado usando a caixa **Nome**. No canto esquerdo superior, há um ícone que representa o elemento atualmente selecionado. Para organizar as propriedades por categoria ou em ordem alfabética, clique em **Categoria**, **Nome** ou **Fonte** na lista **Organizar por**. Para ver a lista de eventos de um controle, clique no botão **Eventos**, que exibe um símbolo de relâmpago. Para pesquisar uma propriedade, comece a digitar o nome da propriedade na caixa **Propriedades de Pesquisa**. A janela Propriedades exibe as propriedades que correspondem à pesquisa à medida que você digita. Algumas propriedades permitem que você defina propriedades avançadas selecionando um botão de seta para baixo. Para obter mais informações sobre como usar propriedades e manipular eventos, veja o artigo sobre [Guia de início rápido: adicionando controles e manipulando eventos](https://go.microsoft.com/fwlink/?LinkID=247983)
 
  À direita de cada valor da propriedade, está um *marcador de propriedade* que é exibido como símbolo de caixa. A aparência do marcador da propriedade indica se existe uma associação de dados ou um recurso aplicado à propriedade. Por exemplo, um símbolo de caixa branca indica um valor padrão, um símbolo de caixa preta normalmente indica que um recurso local foi aplicado, e uma caixa laranja geralmente indica que uma associação de dados foi aplicada. Quando você clica no marcador da propriedade, pode navegar para a definição de um estilo, abrir o construtor da associação de dados ou abrir o selecionador de recurso.
 

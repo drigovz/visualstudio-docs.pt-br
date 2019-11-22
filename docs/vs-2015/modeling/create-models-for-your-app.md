@@ -37,19 +37,19 @@ caps.latest.revision: 60
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: da86a6cf2e561fdc7e642a76b84b4e604bec12d6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a9f20629c39bc37ca20550c3b88d8ecb2aca470f
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72651238"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300254"
 ---
 # <a name="create-models-for-your-app"></a>Criar modelos para o aplicativo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Os diagramas de modelagem ajudam você a entender, esclarecer e comunicar ideias sobre seu código e os requisitos de usuário para os quais seu sistema de software deve dar suporte. Por exemplo, para descrever e comunicar os requisitos do usuário, você pode usar os diagramas de caso de uso, atividade, classe e sequência do Unified Modeling Language (UML). Para descrever e comunicar a funcionalidade do seu sistema, você pode usar os diagramas de componente, classe, atividade e Sequência UML.
 
- Consulte [vídeo do Channel 9: melhorar a arquitetura por meio de modelagem](http://go.microsoft.com/fwlink/?LinkID=252078).
+ Consulte [vídeo do Channel 9: melhorar a arquitetura por meio de modelagem](https://go.microsoft.com/fwlink/?LinkID=252078).
 
  Você pode criar os seguintes diagramas UML nesta versão:
 
@@ -73,7 +73,7 @@ Os diagramas de modelagem ajudam você a entender, esclarecer e comunicar ideias
 
 ## <a name="common-tasks"></a>Tarefas comuns
 
-|**Tópico**|**Tarefa**|
+|**Tópico**|{1&gt;Tarefa&lt;1}|
 |---------------|--------------|
 |[Criar projetos e diagramas de modelagem UML](../modeling/create-uml-modeling-projects-and-diagrams.md)|**Crie modelos** e adicione diagramas.|
 |[Editar modelos e diagramas UML](../modeling/edit-uml-models-and-diagrams.md)|**Desenhe diagramas** para editar o modelo.|
@@ -85,7 +85,7 @@ Os diagramas de modelagem ajudam você a entender, esclarecer e comunicar ideias
 
 ## <a name="related-tasks"></a>Tarefas relacionadas
 
-|**Tópico**|**Tarefa**|
+|**Tópico**|{1&gt;Tarefa&lt;1}|
 |---------------|--------------|
 |[Visualizar código](../modeling/visualize-code.md)|Crie mapas de código e diagramas de camada para entender melhor o código desconhecido.|
 |[Requisitos de usuário do modelo](../modeling/model-user-requirements.md)|Use modelos para esclarecer e comunicar as necessidades dos usuários.|
@@ -98,4 +98,4 @@ Os diagramas de modelagem ajudam você a entender, esclarecer e comunicar ideias
 
 |**Categoria**|**Vincule**|
 |------------------|---------------|
-|**Nos**|[ferramentas de modelagem & de visualização do Visual Studio](http://go.microsoft.com/fwlink/?LinkId=184720) -   <br />[SDK de modelagem do & de visualização do Visual Studio (ferramentas DSL)](http://go.microsoft.com/fwlink/?LinkId=184721) -   |
+|**Nos**|[ferramentas de modelagem & de visualização do Visual Studio](https://go.microsoft.com/fwlink/?LinkId=184720) -   <br />[SDK de modelagem do & de visualização do Visual Studio (ferramentas DSL)](https://go.microsoft.com/fwlink/?LinkId=184721) -   |

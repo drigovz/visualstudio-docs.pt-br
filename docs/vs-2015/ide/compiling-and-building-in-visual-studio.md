@@ -12,12 +12,12 @@ caps.latest.revision: 30
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 71bddf0f833bbaf717f7a2dbdf4a734efa295afb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d8ec7d6508ec025a2b2005754da03bdd4db38943
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72619438"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300265"
 ---
 # <a name="compiling-and-building-in-visual-studio"></a>Compilando e criando no Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ ms.locfileid: "72619438"
 
 - [Especificar ações personalizadas pré e pós-compilação para um build](../ide/specifying-custom-build-events-in-visual-studio.md).
 
-- Melhorar o desempenho do build usando builds paralelas. Para obter mais informações, consulte [Building Multiple Projects in Parallel (Criando vários projetos paralelamente)](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md) ou a postagem do blog [Tuning C++ build parallelism (Ajustando o paralelismo de build do C++)](http://blogs.msdn.com/b/msbuild/archive/2010/03/08/tuning-c-build-parallelism-in-vs2010.aspx).
+- Melhorar o desempenho do build usando builds paralelas. Para obter mais informações, consulte [Building Multiple Projects in Parallel (Criando vários projetos paralelamente)](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md) ou a postagem do blog [Tuning C++ build parallelism (Ajustando o paralelismo de build do C++)](https://blogs.msdn.microsoft.com/msbuild/2010/03/07/tuning-c-build-parallelism-in-vs2010/).
 
 ## <a name="see-also"></a>Consulte também
  [Passo a passo: Criando um aplicativo](../ide/walkthrough-building-an-application.md) [Noções básicas sobre configurações de Build](../ide/understanding-build-configurations.md) [Noções básicas sobre plataformas de Build](../ide/understanding-build-platforms.md) [criando (compilando) projetos de Site](https://msdn.microsoft.com/library/a9cbb88c-8fff-4c67-848b-98fbfd823193) [ Como: Criar e remover dependências de projeto](../ide/how-to-create-and-remove-project-dependencies.md)

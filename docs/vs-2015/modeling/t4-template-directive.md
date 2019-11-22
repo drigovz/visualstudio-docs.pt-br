@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d4c6176caee5551b860029ac98b19d52fcb7b51f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d3a17275730cd093f8f9fa433aa28c7f9ca86e80
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658549"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74298137"
 ---
 # <a name="t4-template-directive"></a>Diretiva de modelo T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,7 +62,7 @@ debug="true"
 
  Para modelos de tempo de design, o arquivo de código intermediário será gravado no diretório **% Temp%** .
 
- Para executar um modelo de tempo de design no depurador, salve o modelo de texto, abra o menu de atalho do modelo de texto em Gerenciador de Soluções e escolha **depurar modelo T4**.
+ Para executar um modelo de tempo de design no depurador, salve o modelo de texto, abra o menu de atalho do modelo de texto no Gerenciador de Soluções e escolha **Depurar Modelo T4**.
 
 ## <a name="hostspecific-attribute"></a>Atributo hostspecific
  Exemplo:
@@ -75,7 +75,7 @@ hostspecific="true"
 
  Se você definir o valor desse atributo como `true`, uma propriedade chamada `Host` será adicionado à classe gerada pelo modelo de texto. A propriedade é uma referência ao host do mecanismo de transformação e é declarada como [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110)). Se você definiu um host personalizado, pode convertê-lo no tipo de host personalizado.
 
- Como o tipo dessa propriedade depende do tipo de host, ele só é útil se você estiver gravando um modelo de texto que funciona somente com um host específico. Ele é aplicável a [modelos de tempo de design](../modeling/design-time-code-generation-by-using-t4-text-templates.md), mas não [a modelos de tempo de execução](../modeling/run-time-text-generation-with-t4-text-templates.md).
+ Como o tipo dessa propriedade depende do tipo de host, ele só é útil se você estiver gravando um modelo de texto que funciona somente com um host específico. É aplicável a [modelos de tempo de design](../modeling/design-time-code-generation-by-using-t4-text-templates.md), mas não a [modelos de tempo de execução](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
  Quando `hostspecific` for `true`, e você estiver usando [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], poderá converter `this.Host` em IServiceProvider para acessar recursos do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Você também pode usar `Host.ResolvePath(filename)` para obter o caminho absoluto de um arquivo no projeto. Por exemplo:
 
@@ -211,7 +211,7 @@ This is the common footer.
 
  Para um modelo de texto de tempo de design, você pode especificar qualquer classe base que é derivada de <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation?displayProperty=fullName>. Use a diretiva `<#@assembly#>` para carregar o assembly ou projeto que contém a classe base.
 
- Para obter mais informações, consulte ["herança em modelos de texto" no blog do Gareth Jones](http://go.microsoft.com/fwlink/?LinkId=208373).
+ Para obter mais informações, consulte ["herança em modelos de texto" no blog do Gareth Jones](https://go.microsoft.com/fwlink/?LinkId=208373).
 
 ## <a name="linepragmas-attribute"></a>Atributo LinePragmas
  Exemplo: `linePragmas="false"`

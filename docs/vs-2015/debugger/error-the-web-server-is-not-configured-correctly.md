@@ -1,5 +1,5 @@
 ---
-title: 'Erro: O servidor web não está configurado corretamente | Microsoft Docs'
+title: 'Erro: o servidor Web não está configurado corretamente | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -18,23 +18,23 @@ caps.latest.revision: 25
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 643be465aab889b1f31e8fa75dba68261444bc31
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2f5df9fb04849fce94d1a82748f2fc88f9577667
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68203202"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297436"
 ---
-# <a name="error-the-web-server-is-not-configured-correctly"></a>Erro: O servidor Web não foi configurado corretamente
+# <a name="error-the-web-server-is-not-configured-correctly"></a>Erro: o servidor Web não foi configurado corretamente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Possíveis causas do erro incluem:  
   
 - Tentando depurar um aplicativo Web do .NET que foi copiado para um computador diferente, renomeado manualmente ou movido.  
   
-- Não ter conexões suficientes do IIS. Para obter mais informações sobre como implantar um site da web para o IIS, consulte [criar um Site da Web](http://www.iis.net/learn/get-started/getting-started-with-iis/create-a-web-site).  
+- Não ter conexões suficientes do IIS. Para obter mais informações sobre como implantar um site para o IIS, consulte [criar um site da Web](https://docs.microsoft.com/iis/get-started/getting-started-with-iis/create-a-web-site).  
   
-- Se você está tentando depurar um aplicativo ASP.NET, consulte [publicar no IIS](https://docs.asp.net/en/latest/publishing/iis.html) para obter instruções sobre como implantar um computador remoto executando o IIS 8 ou superior, ou [ASP.NET de depuração remota em um computador de 7.5 do IIS remoto](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md) para obter instruções sobre como implantar um computador remoto executando o IIS 7.5.  
+- Se você estiver tentando depurar um aplicativo ASP.NET, consulte [publicando no IIS](https://docs.asp.net/en/latest/publishing/iis.html) para obter instruções sobre como implantar em um computador remoto que executa o IIS 8 ou superior, ou [a depuração remota ASP.net em um computador remoto do IIS 7,5](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md) para obter instruções sobre como implantar em um computador remoto que executa o IIS 7,5.  
   
 ## <a name="see-also"></a>Consulte também  
  [Depurando aplicativos Web: erros e solução de problemas](../debugger/debugging-web-applications-errors-and-troubleshooting.md)

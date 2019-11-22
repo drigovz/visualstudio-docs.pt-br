@@ -1,5 +1,5 @@
 ---
-title: 'DA0007: Evitar usar exceções no fluxo de controle | Microsoft Docs'
+title: 'DA0007: evitar usar exceções no fluxo de controle | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,20 +14,20 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2599282909c62e3a35702346f793dfd914c18ac4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 35a800d83e10b1c47096876fb3f9181a4db2f7a2
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62580206"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300997"
 ---
-# <a name="da0007-avoid-using-exceptions-for-control-flow"></a>DA0007: Evitar usar exceções no fluxo de controle
+# <a name="da0007-avoid-using-exceptions-for-control-flow"></a>DA0007: evitar usar exceções no fluxo de controle
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Id da regra | DA0007 |  
-| Categoria de |. Uso do .NET Framework |  
-| Métodos de criação de perfil | Todos os |  
-| Mensagem | Um grande número de exceções está sendo lançado consistentemente. Considere a redução do uso de exceções na lógica do programa.|  
+ID da regra | DA0007 |  
+| Categoria |. Uso do .NET Framework |  
+| Métodos de criação de perfil | Todos |  
+| Mensagem | Um grande número de exceções é lançado consistentemente. Considere a redução do uso de exceções na lógica do programa.|  
 | Tipo de mensagem | Aviso |  
   
  Ao criar o perfil usando a amostragem, a memória do .NET ou métodos de contenção de recursos, é necessário coletar pelo menos 25 amostras para disparar essa regra.  
@@ -38,7 +38,7 @@ Id da regra | DA0007 |
 ## <a name="rule-description"></a>Descrição da Regra  
  Embora o uso de manipuladores de exceção para capturar erros e outros eventos que interrompem a execução do programa seja uma boa prática, o uso do manipulador de exceção como parte da lógica regular de execução do programa pode ser caro e deve ser evitado. Na maioria dos casos, as exceções devem ser usadas somente em circunstâncias que ocorrem com pouca frequência e que não são esperadas. Exceções não devem ser usadas para retornar valores como parte do fluxo típico do programa. Em muitos casos, é possível evitar acionar exceções validando valores e usando a lógica condicional para interromper a execução de instruções que causam o problema.  
   
- Para obter mais informações, consulte a seção [Exception Management](http://go.microsoft.com/fwlink/?LinkID=177825) (Gerenciamento de exceções) de **Chapter 5 — Improving Managed Code Performance** (Capítulo 5 – Melhorando o desempenho de código gerenciado) no volume **Improving .NET Application Performance and Scalability** (Melhorando o desempenho e a escalabilidade de aplicativos .NET) na biblioteca **Microsoft Patterns and Practices** (Padrões e Práticas da Microsoft) no MSDN.  
+ Para obter mais informações, consulte a seção [Exception Management](https://go.microsoft.com/fwlink/?LinkID=177825) (Gerenciamento de exceções) de **Chapter 5 — Improving Managed Code Performance** (Capítulo 5 – Melhorando o desempenho de código gerenciado) no volume **Improving .NET Application Performance and Scalability** (Melhorando o desempenho e a escalabilidade de aplicativos .NET) na biblioteca **Microsoft Patterns and Practices** (Padrões e Práticas da Microsoft) no MSDN.  
   
 ## <a name="how-to-investigate-a-warning"></a>Como investigar um aviso  
  Clique duas vezes na mensagem da janela Lista de Erros para navegar para a exibição Marcas. Encontre a coluna que contém as medições das **exceções .NET CLR (@ProcessInstance)\\nº de exceções geradas/segundo**. Determine se há fases específicas da execução do programa em que o tratamento de exceção é mais frequente do que em outras. Usando um perfil de amostragem, tente identificar instruções throw e blocos try/catch que geram exceções frequentes. Se necessário, adicione lógica para capturar blocos para ajudá-lo a entender quais exceções são tratadas com mais frequência. Sempre que possível, substitua instruções throw ou blocos catch frequentemente executados por uma lógica de controle de fluxo simples ou um código de validação.  

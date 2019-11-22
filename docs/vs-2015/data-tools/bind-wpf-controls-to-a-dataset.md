@@ -18,12 +18,12 @@ caps.latest.revision: 35
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 70dfaa5671f589c02560a554a6d50611c5364c82
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f0ad4ea108cb0ec3b874c7f360be2e1f0e25ef45
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72651194"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299428"
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>Associar controles do WPF a um conjunto de dados
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,12 +42,12 @@ Neste passo a passo, você criará um aplicativo WPF que contém controles de as
 
    [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Pré-requisitos
  Você precisa dos seguintes componentes para concluir esta instrução passo a passo:
 
 - [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]
 
-- Acesso a uma instância em execução do SQL Server ou SQL Server Express que tenha o banco de dados de exemplo AdventureWorksLT anexado a ele. Você pode baixar o banco de dados AdventureWorksLT do [site da CodePlex](http://go.microsoft.com/fwlink/?linkid=87843).
+- Acesso a uma instância em execução do SQL Server ou SQL Server Express que tenha o banco de dados de exemplo AdventureWorksLT anexado a ele. Você pode baixar o banco de dados AdventureWorksLT do [site da CodePlex](https://go.microsoft.com/fwlink/?linkid=87843).
 
   Conhecimento prévio dos conceitos a seguir também é útil, mas não é necessário para concluir o passo a passo:
 
@@ -103,7 +103,7 @@ Neste passo a passo, você criará um aplicativo WPF que contém controles de as
 
 8. Clique em **Finalizar**.
 
-     O Visual Studio adiciona um novo arquivo AdventureWorksLTDataSet. xsd ao projeto e adiciona um item **AdventureWorksLTDataSet** correspondente à janela fontes de **dados** . O arquivo AdventureWorksLTDataSet.xsd define um conjunto de dados tipado nomeado `AdventureWorksLTDataSet` e um TableAdapter nomeado `ProductTableAdapter`. A seguir neste passo a passo, você usará o `ProductTableAdapter` para preencher o conjunto de dados com dados e salvar as alterações no banco de dados.
+     O Visual Studio adiciona um novo arquivo AdventureWorksLTDataSet.xsd ao projeto, e adiciona um item correspondente **AdventureWorksLTDataSet** à janela **Fontes de Dados**. O arquivo AdventureWorksLTDataSet.xsd define um conjunto de dados tipado nomeado `AdventureWorksLTDataSet` e um TableAdapter nomeado `ProductTableAdapter`. A seguir neste passo a passo, você usará o `ProductTableAdapter` para preencher o conjunto de dados com dados e salvar as alterações no banco de dados.
 
 9. Compile o projeto.
 
@@ -112,11 +112,11 @@ Neste passo a passo, você criará um aplicativo WPF que contém controles de as
 
 #### <a name="to-load-product-rows-that-have-photos"></a>Para carregar as linhas de produtos que possuem fotos
 
-1. Em **Gerenciador de soluções**, clique duas vezes no arquivo AdventureWorksLTDataSet. xsd.
+1. No **Gerenciador de Soluções**, clique duas vezes no arquivo AdventureWorksLTDataSet.xsd.
 
      O designer de conjunto de dados é aberto.
 
-2. No designer, clique com o botão direito do mouse na consulta **Fill, GetData ()** e selecione **Configurar**.
+2. No designer, clique com o botão direito do mouse na consulta **Fill,GetData()** e selecione **Configurar**.
 
      O assistente **Configuração do TableAdapter** é aberto.
 
@@ -133,7 +133,7 @@ Neste passo a passo, você criará um aplicativo WPF que contém controles de as
 
 #### <a name="to-define-the-user-interface-of-the-window"></a>Para definir a interface do usuário da janela
 
-1. Em **Gerenciador de soluções**, clique duas vezes em MainWindow. XAML.
+1. No **Gerenciador de Soluções**, clique duas vezes em MainWindow.xaml.
 
      A janela é aberta no WPF Designer.
 

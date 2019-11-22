@@ -13,12 +13,12 @@ caps.latest.revision: 20
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 4f83fcf3ea500e0640a226b80d3d3c0e2c7ed869
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b634b11418ef2d4220dc4eb07c825b514ab5494c
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72655101"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301200"
 ---
 # <a name="customize-your-model-with-profiles-and-stereotypes"></a>Personalizar o modelo com perfis e estereótipos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,4 +45,3 @@ No Visual Studio, você pode adaptar os elementos de modelo UML padrão, como cl
 |[Definir um perfil para estender UML](../modeling/define-a-profile-to-extend-uml.md)|Você pode definir seus próprios estereótipos e ferramentas que são adaptados para sua própria área de aplicativo.<br /><br /> Por exemplo, se você desenvolver um software de banco, poderá definir um estereótipo «Account» que possa ser aplicado às classes. Em seguida, você pode usar diagramas de classe para descrever diferentes tipos de conta e suas relações.|
 |[Instalar um perfil UML](../modeling/install-a-uml-profile.md)|Se alguém tiver dado a você um perfil de UML, você poderá instalá-lo em seu computador.|
 |[Definir um item de caixa de ferramentas de modelagem personalizada](../modeling/define-a-custom-modeling-toolbox-item.md)|Um item de caixa de ferramentas personalizado o salva de uma configuração repetida de um estereótipo em novos elementos.|
-|[Colorir classes UML por estereótipo](http://code.msdn.microsoft.com/UML-Color-Classes-by-07de2b70)|Este código de exemplo estende os diagramas UML. Ele define automaticamente a cor de uma forma UML de acordo com o estereótipo do elemento.|

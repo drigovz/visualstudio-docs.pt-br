@@ -13,12 +13,12 @@ caps.latest.revision: 38
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: aa377f657143ccc03a19d99bfc9620782bb916e7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8189330f5bc3ff5c9008b6f01ffc00af96162806
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72655026"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301144"
 ---
 # <a name="customizing-element-creation-and-movement"></a>Personalizando a criação e o movimento de elementos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -73,7 +73,7 @@ Você pode permitir que um elemento seja arrastado para outro, seja na caixa de 
 > [!NOTE]
 > Se você escrever um código de mesclagem personalizado, ele afetará somente as mesclagens executadas usando esse EMD. Se houver outros EMDs que mesclam o mesmo tipo de objeto, ou se houver outro código personalizado que crie esses objetos sem usar o EMD, eles não serão afetados pelo seu código de mesclagem personalizado.
 >
-> Se você quiser garantir que um novo elemento ou uma nova relação seja sempre processada pelo seu código personalizado, considere definir um `AddRule` na relação de incorporação e um `DeleteRule` na classe de domínio do elemento. Para obter mais informações, consulte [regras propagar alterações no modelo](../modeling/rules-propagate-changes-within-the-model.md).
+> Se você quiser garantir que um novo elemento ou uma nova relação seja sempre processada pelo seu código personalizado, considere definir um `AddRule` na relação de incorporação e um `DeleteRule` na classe de domínio do elemento. Para obter mais informações, consulte [propagam alterações dentro do modelo de regras](../modeling/rules-propagate-changes-within-the-model.md).
 
 ## <a name="example-defining-an-emd-without-custom-code"></a>Exemplo: definindo um EMD sem código personalizado
  O exemplo a seguir permite que os usuários criem um elemento e um conector ao mesmo tempo arrastando da caixa de ferramentas para uma forma existente. O exemplo adiciona um EMD à definição de DSL. Antes dessa modificação, os usuários podem arrastar ferramentas para o diagrama, mas não para as formas existentes.
@@ -110,7 +110,7 @@ Você pode permitir que um elemento seja arrastado para outro, seja na caixa de 
 
       Você pode usar a ferramenta de navegação de caminho para criar cada caminho:
 
-   3. Em **mesclar processo, criando links em caminhos**, clique em **\<add caminho >** .
+   3. Em **mesclar processo, criando links em caminhos**, clique em **\<Adicionar caminho >** .
 
    4. Clique na seta suspensa à direita do item de lista. Uma exibição de árvore é exibida.
 
@@ -214,7 +214,7 @@ Você pode permitir que um elemento seja arrastado para outro, seja na caixa de 
 
 2. Substitua o método `MergeRelate` e, opcionalmente, o método `MergeDisconnect`. Para fazer isso, você deve definir a propriedade **derivada dupla** da classe de domínio. Seu código pode chamar o código de mesclagem gerado na classe base. Use esta opção se você quiser executar operações adicionais depois que a mesclagem tiver sido executada.
 
-   Essas abordagens afetam apenas as mesclagens que são executadas usando esse EMD. Se você quiser afetar todas as maneiras em que o elemento mesclado pode ser criado, uma alternativa é definir um `AddRule` na relação de incorporação e um `DeleteRule` na classe de domínio mesclado. Para obter mais informações, consulte [regras propagar alterações no modelo](../modeling/rules-propagate-changes-within-the-model.md).
+   Essas abordagens afetam apenas as mesclagens que são executadas usando esse EMD. Se você quiser afetar todas as maneiras em que o elemento mesclado pode ser criado, uma alternativa é definir um `AddRule` na relação de incorporação e um `DeleteRule` na classe de domínio mesclado. Para obter mais informações, consulte [propagam alterações dentro do modelo de regras](../modeling/rules-propagate-changes-within-the-model.md).
 
 #### <a name="to-override-mergerelate"></a>Para substituir MergeRelate
 
@@ -273,7 +273,7 @@ Você pode permitir que um elemento seja arrastado para outro, seja na caixa de 
 
 4. Escreva os métodos em uma definição de classe parcial em um arquivo de código separado. Os exemplos inspecionados anteriormente devem sugerir o que você precisa.
 
-   O código de mesclagem personalizado não afetará o código que cria objetos e relações diretamente e não afetará outros EMDs. Para certificar-se de que suas alterações adicionais sejam implementadas independentemente de como o elemento é criado, considere escrever um `AddRule` e um `DeleteRule` em vez disso. Para obter mais informações, consulte [regras propagar alterações no modelo](../modeling/rules-propagate-changes-within-the-model.md).
+   O código de mesclagem personalizado não afetará o código que cria objetos e relações diretamente e não afetará outros EMDs. Para certificar-se de que suas alterações adicionais sejam implementadas independentemente de como o elemento é criado, considere escrever um `AddRule` e um `DeleteRule` em vez disso. Para obter mais informações, consulte [propagam alterações dentro do modelo de regras](../modeling/rules-propagate-changes-within-the-model.md).
 
 ## <a name="redirecting-a-merge-operation"></a>Redirecionando uma operação de mesclagem
  Uma diretiva de mesclagem direta redireciona o destino de uma operação de mesclagem. Normalmente, o novo destino é o pai de inserção do destino inicial.
@@ -304,7 +304,7 @@ Você pode permitir que um elemento seja arrastado para outro, seja na caixa de 
 
      O novo caminho deve ser semelhante a este:
 
-     **Componente ComponentHasPorts. Component/!**
+     **ComponentHasPorts.Component/!Component**
 
 9. Salve a solução e, em seguida, transforme os modelos clicando no botão mais à direita na barra de ferramentas **Gerenciador de soluções** .
 
@@ -317,4 +317,4 @@ Você pode permitir que um elemento seja arrastado para outro, seja na caixa de 
      Você não verá o ponteiro indisponível e poderá descartar a nova **porta de entrada** no existente. Selecione a nova **porta de entrada** e arraste-a para outro ponto no **componente**.
 
 ## <a name="see-also"></a>Consulte também
- [Navegando e atualizando um modelo no código do programa](../modeling/navigating-and-updating-a-model-in-program-code.md) [Personalizando ferramentas e os diagramas de circuito da caixa de ferramentas exemplo de](../modeling/customizing-tools-and-the-toolbox.md) [DSL](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
+ [Navegando e atualizando um modelo no código do programa](../modeling/navigating-and-updating-a-model-in-program-code.md) [Personalizando ferramentas e a caixa de ferramentas](../modeling/customizing-tools-and-the-toolbox.md)

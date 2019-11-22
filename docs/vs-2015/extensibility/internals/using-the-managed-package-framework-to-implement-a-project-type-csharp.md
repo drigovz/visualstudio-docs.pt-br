@@ -1,5 +1,5 @@
 ---
-title: Usando a estrutura de pacote gerenciado para implementar um tipo de projeto (c#) | Microsoft Docs
+title: Usando a estrutura de pacote gerenciado para implementar um tipo deC#projeto () | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,26 +12,26 @@ ms.assetid: 926de536-eead-415b-9451-f1ddc8c44630
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 86e250c5a5922df52acea7445c97862a00cdc826
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 066695c6d94603d0a0474243ed05dece4cc0bd1f
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68143731"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300365"
 ---
 # <a name="using-the-managed-package-framework-to-implement-a-project-type-c"></a>Usando a estrutura de pacote gerenciado para implementar um tipo de projeto (C#)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Estrutura de pacote gerenciado (MPF) fornece as classes do c# você pode usar ou herdar de implementar seus próprios tipos de projeto. MPF implementa a muitas das interfaces do que Visual Studio espera um tipo de projeto para fornecer, deixando-o livre para se concentrar em como implementar as particularidades de seu tipo de projeto.  
+A MPF (estrutura de pacote gerenciada C# ) fornece classes que você pode usar ou herdar de para implementar seus próprios tipos de projeto. O MPF implementa muitas das interfaces que o Visual Studio espera que um tipo de projeto forneça, deixando você livre para se concentrar em implementar as particularidades do seu tipo de projeto.  
   
-## <a name="using-the-mpf-project-source-code"></a>Usando o código-fonte MPF projeto  
- A estrutura de pacote gerenciado para projetos (MPFProj) fornece classes auxiliares para criar e gerenciar o novo sistema de projeto. Ao contrário de outras classes no MPF, as classes do projeto não estão incluídas nos assemblies que acompanham o Visual Studio. Em vez disso, as classes do projeto são fornecidas como código-fonte no [MPF de projetos 2013](http://mpfproj12.codeplex.com).  
+## <a name="using-the-mpf-project-source-code"></a>Usando o código-fonte do projeto MPF  
+ A estrutura de pacote gerenciada para projetos (MPFProj) fornece classes auxiliares para criar e gerenciar o novo sistema de projeto. Ao contrário de outras classes no MPF, as classes de projeto não são incluídas nos assemblies fornecidos com o Visual Studio. Em vez disso, as classes de projeto são fornecidas como código-fonte no [MPF para projetos 2013](https://archive.codeplex.com/?p=mpfproj12).  
   
- Para adicionar esse projeto à sua solução de VSPackage, faça o seguinte:  
+ Para adicionar esse projeto à solução VSPackage, faça o seguinte:  
   
-1. Baixar os arquivos MPFProj *MPFProjectDir*.  
+1. Baixe os arquivos MPFProj para *MPFProjectDir*.  
   
-2. No *MPFProjectDir*\Dev10\Src\CSharp\ProjectBase.file, altere o seguinte bloco:  
+2. No *MPFProjectDir*\Dev10\Src\CSharp\ProjectBase.File, altere o bloco a seguir:  
   
 ```  
 <!-- Provide a default value for $(ProjectBasePath) -->  
@@ -40,11 +40,11 @@ Estrutura de pacote gerenciado (MPF) fornece as classes do c# você pode usar ou
   </PropertyGroup>  
 ```  
   
-1. Crie um projeto de VSPackage.  
+1. Crie um projeto VSPackage.  
   
-2. Descarregue o projeto de VSPackage.  
+2. Descarregue o projeto VSPackage.  
   
-3. Editar o arquivo. csproj VSPackage adicionando o seguinte bloco antes das outras `<Import>` blocos:  
+3. Edite o arquivo VSPackage. csproj adicionando o bloco a seguir antes dos outros blocos de `<Import>`:  
   
 ```  
 <Import Project="MPFProjectDir\Dev10\Src\CSharp\ProjectBase.files" />  
@@ -58,18 +58,18 @@ Estrutura de pacote gerenciado (MPF) fornece as classes do c# você pode usar ou
   
 1. Salvar o projeto.  
   
-2. Feche e reabra a solução de VSPackage.  
+2. Feche e reabra a solução VSPackage.  
   
-3. Reabra o projeto de VSPackage. Você deve ver um novo diretório chamado ProjectBase.  
+3. Reabra o projeto VSPackage. Você deverá ver um novo diretório chamado ProjectBase.  
   
-4. Adicione a seguinte referência ao projeto de VSPackage:  
+4. Adicione a seguinte referência ao projeto VSPackage:  
   
      Microsoft.Build.Tasks.4.0  
   
 5. Compile o projeto.  
   
-## <a name="hierarchy-classes"></a>Hierarquia de Classes  
- A tabela a seguir resume as classes do MPFProj que dão suporte a hierarquias de projeto. Para obter mais informações, consulte [seleção e hierarquias](../../extensibility/internals/hierarchies-and-selection.md).  
+## <a name="hierarchy-classes"></a>Classes de hierarquia  
+ A tabela a seguir resume as classes no MPFProj que dão suporte a hierarquias de projeto. Para obter mais informações, consulte [hierarquias e seleção](../../extensibility/internals/hierarchies-and-selection.md).  
   
 |Nome da classe|  
 |----------------|  
@@ -85,16 +85,16 @@ Estrutura de pacote gerenciado (MPF) fornece as classes do c# você pode usar ou
 |`Microsoft.VisualStudio.Package.AssemblyReferenceNode`|  
 |`Microsoft.VisualStudio.Package.BuildDependency`|  
   
-## <a name="document-handling-classes"></a>Classes de manuseio de documento  
- A tabela a seguir lista as classes no MPF que dão suporte ao processamento de documentos. Para obter mais informações, consulte [abrindo e salvando itens de projeto](../../extensibility/internals/opening-and-saving-project-items.md).  
+## <a name="document-handling-classes"></a>Classes de manipulação de documentos  
+ A tabela a seguir lista as classes no MPF que dão suporte ao manuseio de documentos. Para obter mais informações, consulte [abrindo e salvando itens de projeto](../../extensibility/internals/opening-and-saving-project-items.md).  
   
 |Nome da classe|  
 |----------------|  
 |`Microsoft.VisualStudio.Package.DocumentManager`|  
 |`Microsoft.VisualStudio.Package.FileDocumentManager`|  
   
-## <a name="configuration-and-output-classes"></a>Configuração e Classes de saída  
- A tabela a seguir lista as classes no MPF que permitem que os tipos de projeto dão suporte a várias configurações, como debug e release e coleções de saída do projeto. Para obter mais informações, consulte [opções de configuração de gerenciamento de](../../extensibility/internals/managing-configuration-options.md).  
+## <a name="configuration-and-output-classes"></a>Classes de configuração e saída  
+ A tabela a seguir lista as classes no MPF que permitem que os tipos de projeto ofereçam suporte a várias configurações, como depuração e liberação, e coleções de saída do projeto. Para obter mais informações, consulte [Gerenciando opções de configuração](../../extensibility/internals/managing-configuration-options.md).  
   
 |Nome da classe|  
 |----------------|  
@@ -104,8 +104,8 @@ Estrutura de pacote gerenciado (MPF) fornece as classes do c# você pode usar ou
 |`Microsoft.VisualStudio.Package.OutputGroup`|  
 |`Microsoft.VisualStudio.Package.ProjectElement`|  
   
-## <a name="automation-support-classes"></a>Classes de suporte de automação  
- A tabela a seguir lista as classes do MPF que oferecem suporte à automação para que os usuários do seu tipo de projeto podem escrever suplementos.  
+## <a name="automation-support-classes"></a>Automação-classes de suporte  
+ A tabela a seguir lista as classes no MPF que dão suporte à automação para que os usuários do tipo de projeto possam gravar suplementos.  
   
 |Nome da classe|  
 |----------------|  
@@ -116,7 +116,7 @@ Estrutura de pacote gerenciado (MPF) fornece as classes do c# você pode usar ou
 |`Microsoft.VisualStudio.Package.Automation.OANestedProjectItem`|  
   
 ## <a name="properties-classes"></a>Classes de propriedades  
- A tabela a seguir lista as classes que permitem que os tipos de projeto MPF adicionar propriedades que os usuários podem procurar e modificar em um navegador de propriedade.  
+ A tabela a seguir lista as classes no MPF que permitem que os tipos de projeto adicionem propriedades que os usuários podem procurar e modificar em um navegador de propriedades.  
   
 |Nome da classe|  
 |----------------|  

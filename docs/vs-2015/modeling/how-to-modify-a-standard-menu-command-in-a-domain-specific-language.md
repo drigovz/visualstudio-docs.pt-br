@@ -12,21 +12,21 @@ caps.latest.revision: 12
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 6a821899eb660fb8448b541f9c1be082351dacc6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 989367d395abb56e4f57c4aa2694b5f4ef17fb6e
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72662579"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300877"
 ---
 # <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>Como modificar um comando de menu padrão em uma linguagem específica do domínio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-É possível modificar o comportamento de alguns dos comandos padrão que são definidos automaticamente na DSL. Por exemplo, você pode modificar **recortar** para que ele exclua informações confidenciais. Para isso, substitua métodos em uma classe de conjunto de comandos. Essas classes são definidas no arquivo CommandSet.cs, no projeto DslPackage e são derivadas de <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet>.
+É possível modificar o comportamento de alguns dos comandos padrão que são definidos automaticamente na DSL. Por exemplo, é possível modificar **Recortar** para excluir informações confidenciais. Para isso, substitua métodos em uma classe de conjunto de comandos. Essas classes são definidas no arquivo CommandSet.cs, no projeto DslPackage e são derivadas de <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet>.
 
  Em resumo, para modificar um comando:
 
-1. [Descubra quais comandos você pode modificar](#what).
+1. {1&gt;Descubra quais comandos podem ser modificados&lt;1}.
 
 2. [Crie uma declaração parcial da classe de conjunto de comandos apropriada](#extend).
 
@@ -136,19 +136,19 @@ protected override void ProcessOnMenuDeleteCommand()
 ### <a name="writing-the-code-of-the-methods"></a>Gravando o código dos métodos
  Os seguintes fragmentos são úteis com frequência dentro desses métodos:
 
-- `this.CurrentSelection` A forma que o usuário clicou com o botão direito sempre é incluída nessa lista de formas e conectores. Se o usuário clicar em uma parte em branco do diagrama, o Diagrama será o único membro da lista.
+- `this.CurrentSelection`. A forma que o usuário clicou com o botão direito sempre é incluída nessa lista de formas e conectores. Se o usuário clicar em uma parte em branco do diagrama, o Diagrama será o único membro da lista.
 
-- `this.IsDiagramSelected()`  -  `true` se o usuário clicou em uma parte em branco do diagrama.
+- `this.IsDiagramSelected()` - `true` se o usuário clicou em uma parte em branco do diagrama.
 
 - `this.IsCurrentDiagramEmpty()`
 
-- `this.IsSingleSelection()` - o usuário não selecionou múltiplas formas
+- `this.IsSingleSelection()`-o usuário não selecionou várias formas
 
-- `this.SingleSelection` - a forma ou o diagrama que o usuário clicou com o botão direito
+- `this.SingleSelection`-a forma ou o diagrama em que o usuário clicou com o botão direito
 
-- `shape.ModelElement as MyLanguageElement` - o elemento de modelo representado por uma forma.
+- `shape.ModelElement as MyLanguageElement`-o elemento de modelo representado por uma forma.
 
   Para obter mais informações sobre como navegar de elemento para elemento e sobre como criar objetos e links, consulte [navegando e atualizando um modelo no código do programa](../modeling/navigating-and-updating-a-model-in-program-code.md).
 
 ## <a name="see-also"></a>Consulte também
- <xref:System.ComponentModel.Design.MenuCommand> [escrever código para personalizar uma linguagem específica de domínio](../modeling/writing-code-to-customise-a-domain-specific-language.md) [como: adicionar um comando ao menu de atalho](../modeling/how-to-add-a-command-to-the-shortcut-menu.md) [Walkthrough: obtendo informações de um link selecionado](../misc/walkthrough-getting-information-from-a-selected-link.md) [como VSPackages Add user interface Elements](../extensibility/internals/how-vspackages-add-user-interface-elements.md) [Visual Studio Tabela de comandos (. Vsct) arquivos](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md) [vsct referência de esquema XML](../extensibility/vsct-xml-schema-reference.md) [VMSDK – exemplo de diagramas de circuito. ](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)Código de exemplo de personalização de DSL extensivo [: diagramas de circuito](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
+ <xref:System.ComponentModel.Design.MenuCommand> [escrever código para personalizar uma linguagem específica de domínio](../modeling/writing-code-to-customise-a-domain-specific-language.md) [como: adicionar um comando ao menu de atalho](../modeling/how-to-add-a-command-to-the-shortcut-menu.md) [Walkthrough: obtendo informações de um link selecionado](../misc/walkthrough-getting-information-from-a-selected-link.md) [como VSPackages Add user interface Elements](../extensibility/internals/how-vspackages-add-user-interface-elements.md) [Visual Studio Command Table (. Vsct) arquivos](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md) [vsct referência de esquema XML](../extensibility/vsct-xml-schema-reference.md)

@@ -8,12 +8,12 @@ ms.assetid: 73519dd9-f3d5-49b6-a634-38881b459ea4
 caps.latest.revision: 19
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: a230b55149152ba1d195f487951323eda855b8b2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9f2e62766f919c9f3379d59c4528a32739ef73ac
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72657150"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301398"
 ---
 # <a name="using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing"></a>Usando stubs para isolar partes de seu aplicativo para teste de unidade
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,14 +30,14 @@ Os tipos de stub* são uma das duas tecnologias fornecidas pelo Microsoft Fakes 
 
  Como os stubs dependem de sua capacidade de estruturar seu código dessa forma, normalmente você usará stubs para isolar uma parte do aplicativo de outra. Para isolá-lo de outros assemblies que não estão sob seu controle, como System.dll, você normalmente usaria shims. Confira o artigo [Uso de shims para isolar o seu aplicativo de outros assemblies para o teste de unidade](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md).
 
- **Requirements**
+ **Requisitos**
 
 - Visual Studio Enterprise
 
 ## <a name="How"></a> Como usar o stubs
 
 ### <a name="Dependency"></a> Projetado para injeção de dependência
- Para usar stubs, seu aplicativo precisa ser criado de forma que os diferentes componentes não sejam dependentes um do outro, mas apenas dependentes das definições de interface. Em vez de ser acoplados no tempo de compilação, os componentes são conectados no tempo de execução. Esse padrão ajuda a criar um software robusto e fácil de atualizar, pois as alterações tendem a não ser propagadas além dos limites dos componentes. Recomendamos segui-lo mesmo que você não use stubs. Se você está escrevendo um código novo, siga o padrão [Injeção de dependência](http://en.wikipedia.org/wiki/Dependency_injection). Se você está escrevendo testes para um software existente, talvez seja necessário refatorá-lo. Caso isso seja impraticável, você pode considerar o uso de shims.
+ Para usar stubs, seu aplicativo precisa ser criado de forma que os diferentes componentes não sejam dependentes um do outro, mas apenas dependentes das definições de interface. Em vez de ser acoplados no tempo de compilação, os componentes são conectados no tempo de execução. Esse padrão ajuda a criar um software robusto e fácil de atualizar, pois as alterações tendem a não ser propagadas além dos limites dos componentes. Recomendamos segui-lo mesmo que você não use stubs. Se você está escrevendo um código novo, siga o padrão [Injeção de dependência](https://en.wikipedia.org/wiki/Dependency_injection). Se você está escrevendo testes para um software existente, talvez seja necessário refatorá-lo. Caso isso seja impraticável, você pode considerar o uso de shims.
 
  Vamos começar esta discussão com um exemplo motivador, aquele do diagrama. A classe StockAnalyzer lê preços de ações e gera alguns resultados interessantes. Ela tem alguns métodos públicos, que queremos testar. Para simplificar as coisas, vamos conferir apenas um desses métodos, um muito simples que informa o preço atual de uma ação específica. Queremos escrever um teste de unidade desse método. Este é o primeiro rascunho de um teste:
 
@@ -472,7 +472,7 @@ StubBehaviors.Current =
 ## <a name="external-resources"></a>Recursos externos
 
 ### <a name="guidance"></a>Diretrizes
- [Testes de Entrega Contínua com o Visual Studio 2012 – Capítulo 2: Teste de Unidade: Testando o Interior](http://go.microsoft.com/fwlink/?LinkID=255188)
+ [Testes de Entrega Contínua com o Visual Studio 2012 – Capítulo 2: Teste de Unidade: Testando o Interior](https://go.microsoft.com/fwlink/?LinkID=255188)
 
 ## <a name="see-also"></a>Consulte também
  [Isolando código em teste com Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md)

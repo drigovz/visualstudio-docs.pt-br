@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/24/2017
 ms.author: ghogen
-ms.openlocfilehash: 1f2199907ab6a59e329624046079436ca7cd08dd
-ms.sourcegitcommit: 3cc73e74921a9ceb622542e0e263abeebc455c00
+ms.openlocfilehash: 36b2691525eb66bf946317c1bb5254796d5cd639
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "67624149"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74291228"
 ---
 # <a name="browse-and-manage-storage-resources-by-using-server-explorer"></a>Procurar e gerenciar recursos de armazenamento usando o Gerenciador de Servidores
 
@@ -122,7 +122,7 @@ Por padrão, um blob é baixado para um diretório temporário. Para baixar blob
 
 Para carregar os blobs, selecione o botão **Carregar Blob** quando o contêiner for aberto para visualização na exibição do contêiner de blob.
 
-Você pode escolher um ou mais arquivos para carregar e pode carregar arquivos de qualquer tipo. A janela **Log de Atividades do Azure** mostra o andamento do upload. Para saber mais sobre como trabalhar com os dados de blob, consulte [Como usar o Armazenamento de Blobs do Azure no .NET](http://go.microsoft.com/fwlink/p/?LinkId=267911).
+Você pode escolher um ou mais arquivos para carregar e pode carregar arquivos de qualquer tipo. A janela **Log de Atividades do Azure** mostra o andamento do upload. Para saber mais sobre como trabalhar com os dados de blob, consulte [Como usar o Armazenamento de Blobs do Azure no .NET](https://go.microsoft.com/fwlink/p/?LinkId=267911).
 
 ### <a name="to-view-logs-transferred-to-blobs"></a>Para exibir os logs transferidos para os blobs
 
@@ -157,7 +157,7 @@ A imagem a seguir mostra uma fila que contém duas mensagens:
 
 ![Exibindo uma fila](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC651470.png)
 
-Para obter mais informações sobre a manipulação de filas no código, consulte a [Introdução ao Armazenamento de Filas do Azure usando o .NET](http://go.microsoft.com/fwlink/?LinkID=264702). Para saber mais sobre o serviço Web para filas de serviços de armazenamento, consulte [Conceitos do serviço Fila](http://go.microsoft.com/fwlink/?LinkId=264788). Para saber mais sobre como enviar mensagens a uma fila de serviços de armazenamento usando o Visual Studio, consulte [Enviando mensagens para uma fila de serviços de armazenamento](/azure/visual-studio/vs-storage-cloud-services-getting-started-queues).
+Para obter mais informações sobre a manipulação de filas no código, consulte a [Introdução ao Armazenamento de Filas do Azure usando o .NET](https://go.microsoft.com/fwlink/?LinkID=264702). Para saber mais sobre o serviço Web para filas de serviços de armazenamento, consulte [Conceitos do serviço Fila](https://go.microsoft.com/fwlink/?LinkId=264788). Para saber mais sobre como enviar mensagens a uma fila de serviços de armazenamento usando o Visual Studio, consulte [Enviando mensagens para uma fila de serviços de armazenamento](/azure/visual-studio/vs-storage-cloud-services-getting-started-queues).
 
 > [!NOTE]
 > Filas de serviços de armazenamento são diferentes de filas do Barramento de Serviço do Azure. Para obter mais informações sobre filas do barramento de serviço, consulte [Filas do barramento de serviço, tópicos e assinaturas](/azure/service-bus-messaging/service-bus-queues-topics-subscriptions).
@@ -227,7 +227,7 @@ A ilustração a seguir mostra um exemplo de uma cadeia de caracteres de filtro 
 
 ## <a name="refresh-storage-data"></a>Atualizar dados de armazenamento
 
-Quando o Gerenciador de Servidores é conectado ou obtém dados de uma conta de armazenamento, a operação pode levar até um minuto para ser concluída. Se o Gerenciador de Servidores não conseguir conectar, a operação poderá atingir o tempo limite. Enquanto os dados são recuperados, você pode continuar a trabalhar em outras partes do Visual Studio. Para cancelar a operação se demorar muito, selecione o botão **Parar Atualização** na barra de ferramentas do Gerenciador de Servidores.
+Quando o Gerenciador de Servidores é conectado ou obtém dados de uma conta de armazenamento, a operação pode levar até um minuto para ser concluída. Se Gerenciador de Servidores não puder se conectar, a operação poderá atingir o tempo limite. Enquanto os dados são recuperados, você pode continuar trabalhando em outras partes do Visual Studio. Para cancelar a operação se demorar muito, selecione o botão **Parar Atualização** na barra de ferramentas do Gerenciador de Servidores.
 
 ### <a name="to-refresh-blob-container-data"></a>Para atualizar dados de contêiner de blob
 
@@ -295,4 +295,4 @@ Se você excluir uma conta de armazenamento do Gerenciador de Servidores, isto n
 
 ## <a name="next-steps"></a>Próximas etapas
 
-Para saber mais sobre como usar os serviços de armazenamento do Azure, consulte [Introdução ao armazenamento do Azure](/azure/storage/common/storage-introduction).
+Para saber mais sobre como usar os serviços de armazenamento do Azure, confira [introdução ao armazenamento do Azure](/azure/storage/common/storage-introduction).

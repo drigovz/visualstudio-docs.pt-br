@@ -9,19 +9,19 @@ caps.latest.revision: 19
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: ab16750694e1bc8bb74afa7d22d899dc492d7c7d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 54e4713abef096d5a23cf1ebf74a9d90db0d6409
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72671788"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74295733"
 ---
 # <a name="step-4-lay-out-your-form-with-a-tablelayoutpanel-control"></a>Etapa 4: Definir o layout do formulário com um controle TableLayoutPanel
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Nesta etapa, você adiciona um controle `TableLayoutPanel` ao formulário. O TableLayoutPanel ajuda a alinhar corretamente controles no formulário que você irá adicionar posteriormente.
 
- ![link para vídeo](../data-tools/media/playvideo.gif "PlayVideo") Para obter uma versão de vídeo deste tópico, consulte [tutorial 1: criar um visualizador de imagens no Visual Basic-Video 2](http://go.microsoft.com/fwlink/?LinkId=205211) ou [tutorial 1: criar um visualizador C# de imagens em-vídeo 2](http://go.microsoft.com/fwlink/?LinkId=205200). Esses vídeos usam uma versão anterior do Visual Studio, portanto, existem pequenas diferenças em alguns comandos de menu e em outros elementos da interface do usuário. No entanto, os conceitos e procedimentos funcionam de maneiras semelhantes na versão atual do Visual Studio.
+ ![link para vídeo](../data-tools/media/playvideo.gif "PlayVideo") Para obter uma versão de vídeo deste tópico, consulte [tutorial 1: criar um visualizador de imagens no Visual Basic-Video 2](https://go.microsoft.com/fwlink/?LinkId=205211) ou [tutorial 1: criar um visualizador C# de imagens em-vídeo 2](https://go.microsoft.com/fwlink/?LinkId=205200). Esses vídeos usam uma versão anterior do Visual Studio, portanto, existem pequenas diferenças em alguns comandos de menu e em outros elementos da interface do usuário. No entanto, os conceitos e procedimentos funcionam de maneiras semelhantes na versão atual do Visual Studio.
 
 ### <a name="to-lay-out-your-form-with-a-tablelayoutpanel-control"></a>Para apresentar seu formulário com um controle TableLayoutPanel
 
@@ -75,7 +75,7 @@ Nesta etapa, você adiciona um controle `TableLayoutPanel` ao formulário. O Tab
 
 11. Na lista suspensa **Mostrar** na parte superior da janela, escolha **Linhas**. Defina **Row1** como 90% e **Row2** como 10%.
 
-12. Selecione o botão **OK**. O TableLayoutPanel agora deve ter uma grande primeira linha, uma pequena linha inferior, uma pequena coluna esquerda, e uma grande coluna direita. Você pode redimensionar linhas e colunas em TableLayoutPanel selecionando tableLayoutPanel1 no formulário e então arrastando as bordas de linha e coluna.
+12. Escolha o botão **OK**. O TableLayoutPanel agora deve ter uma grande primeira linha, uma pequena linha inferior, uma pequena coluna esquerda, e uma grande coluna direita. Você pode redimensionar linhas e colunas em TableLayoutPanel selecionando tableLayoutPanel1 no formulário e então arrastando as bordas de linha e coluna.
 
      ![Form1 com TableLayoutPanel redimensionado](../ide/media/vs-formafterlayoutpanel.png "VS_FormAfterLayoutPanel") Form1 com TableLayoutPanel redimensionado
 

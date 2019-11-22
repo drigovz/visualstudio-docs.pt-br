@@ -12,12 +12,12 @@ ms.assetid: c191de3e-3f3b-471e-b828-29ec24e80e2c
 caps.latest.revision: 64
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 96ab033cad301f478df3d011b7c648e6e5e8d6c9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8c861099ac5253c9610e8ae75d3c429a5ce88a9d
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72660356"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301434"
 ---
 # <a name="unit-test-your-code"></a>Teste de unidade de código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +51,7 @@ Os testes de unidade fornecem aos desenvolvedores e testadores uma maneira rápi
 |**Uso da cobertura de código para identificar quais proporções do código do projeto estão sendo testadas usando os testes de unidade:** saiba mais sobre o recurso de cobertura de código das ferramentas de teste do [!INCLUDE[vsprvsts](../includes/vsprvsts-md.md)].|-   [Uso da cobertura de código para determinar quanto código está sendo testado](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)|
 |**Execução de análise de estresse e desempenho usando testes de carga para seus testes de unidade:** você pode criar um teste de carga e adicionar seus testes de unidade a ele para ajudar a isolar os problemas de estresse e desempenho em seu aplicativo. **Nota:** a criação e utilização dos testes de carga requerem o Visual Studio Enterprise.|-   [Criação e edição de testes de carga](https://msdn.microsoft.com/e2985d15-60a7-4177-93b4-f986c2936337)<br />-   [Como: adicionar testes de desempenho na Web e testes de unidade para um cenário de teste de carga](https://msdn.microsoft.com/03cc073e-9bdf-4530-ae46-504a51884594)<br />-   [Como: remover testes da Web e testes de unidade de um cenário de teste de carga](https://msdn.microsoft.com/3d6128d2-82b0-42fc-bda2-23a8aa03be07)|
 |**Definição e aplicação de restrições de qualidade:** você pode criar restrições de qualidade para garantir que os testes sejam executados antes que o código seja verificado para ajudar a garantir a qualidade do código.|-   [Definição e aplicação de restrições de qualidade](https://msdn.microsoft.com/library/bdc5666e-6cf0-45b2-a0a1-133c3f61e852)|
-|**Extensão do tipo de teste de unidade:** você pode adicionar uma funcionalidade aos seus testes que pode não estar no framework de teste de unidade. Por exemplo, é possível adicionar uma propriedade de teste que especifica se um teste deve ser executado como um usuário normal ou não. Ou você pode estender a estrutura para adicionar atributos de linha a um método e usar os dados nessa linha dentro do teste.|Para o código de exemplo de como estender o framework de teste de unidade, confira este [Site da Microsoft](http://go.microsoft.com/fwlink/?LinkId=185591).|
+|**Extensão do tipo de teste de unidade:** você pode adicionar uma funcionalidade aos seus testes que pode não estar no framework de teste de unidade. Por exemplo, é possível adicionar uma propriedade de teste que especifica se um teste deve ser executado como um usuário normal ou não. Ou você pode estender a estrutura para adicionar atributos de linha a um método e usar os dados nessa linha dentro do teste.|Para o código de exemplo de como estender o framework de teste de unidade, confira este [Site da Microsoft](https://go.microsoft.com/fwlink/?LinkId=185591).|
 |**Definição de opções de teste:** por exemplo, você pode especificar onde os resultados dos testes são armazenados.|[Configurar testes de unidade usando um arquivo .runsettings](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md)|
 
 ## <a name="related-tasks"></a>Tarefas relacionadas
@@ -71,16 +71,16 @@ Os testes de unidade fornecem aos desenvolvedores e testadores uma maneira rápi
 ## <a name="external-resources"></a>Recursos externos
 
 ### <a name="videos"></a>Vídeos
- [Canal 9: teste de unidade dos aplicativos da Windows Store criados com XAML](http://go.microsoft.com/fwlink/?LinkId=226285)
+ [Canal 9: teste de unidade dos aplicativos da Windows Store criados com XAML](https://go.microsoft.com/fwlink/?LinkId=226285)
 
 ### <a name="forums"></a>Fóruns
- [Teste de unidade do Visual Studio](http://go.microsoft.com/fwlink/?LinkId=224477)
+ [Teste de unidade do Visual Studio](https://go.microsoft.com/fwlink/?LinkId=224477)
 
 ### <a name="guidance"></a>Diretrizes
- [Testes de Entrega Contínua com o Visual Studio 2012 – Capítulo 2: Teste de Unidade: Testando o Interior](http://go.microsoft.com/fwlink/?LinkID=255188)
+ [Testes de Entrega Contínua com o Visual Studio 2012 – Capítulo 2: Teste de Unidade: Testando o Interior](https://go.microsoft.com/fwlink/?LinkID=255188)
 
 ### <a name="reference"></a>Referência
- [Índice de conteúdo para testes de unidade](http://go.microsoft.com/fwlink/?LinkID=254719)
+ [Índice de conteúdo para testes de unidade](https://go.microsoft.com/fwlink/?LinkID=254719)
 
 ## <a name="see-also"></a>Consulte também
  [Melhorar](https://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945) [o teste de qualidade de código do aplicativo](https://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)

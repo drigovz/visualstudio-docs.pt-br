@@ -11,19 +11,19 @@ ms.date: 11/11/2016
 ms.author: mikejo
 ms.prod: visual-studio-dev14
 ms.technology: vs-azure
-ms.openlocfilehash: 68e5ce85d9184b0e1e8b055f9d81d76b775fdef1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 35593f4164ed024db19b5fa3503b2d7589a7ac2b
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62421563"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74289758"
 ---
 # <a name="testing-the-performance-of-a-cloud-service"></a>Testando o desempenho de um serviço de nuvem
 ## <a name="overview"></a>Visão geral
 Você pode testar o desempenho de um serviço de nuvem das seguintes maneiras:
 
-* Use o Diagnóstico do Azure para coletar informações sobre solicitações e conexões e para examinar estatísticas de site que mostram o desempenho do serviço da perspectiva do cliente. Para começar, consulte [Configuração de diagnóstico para os Serviços de Nuvem do Azure e Máquinas Virtuais](http://go.microsoft.com/fwlink/p/?LinkId=623009).
-* Use o criador de perfil do Visual Studio para obter uma análise detalhada dos aspectos computacionais de como o serviço é executado. Como descrito neste tópico, você pode usar o criador de perfil para medir o desempenho à medida que um serviço é executado no Azure. Para saber mais sobre como usar o criador de perfil para medir o desempenho à medida que um serviço é executado localmente em um emulador de computação, consulte [Testando o desempenho de um Serviço de Nuvem de Azure localmente no emulador de computação usando o criador de perfil do Visual Studio](http://go.microsoft.com/fwlink/p/?LinkId=262845).
+* Use o Diagnóstico do Azure para coletar informações sobre solicitações e conexões e para examinar estatísticas de site que mostram o desempenho do serviço da perspectiva do cliente. Para começar, consulte [Configuração de diagnóstico para os Serviços de Nuvem do Azure e Máquinas Virtuais](https://go.microsoft.com/fwlink/p/?LinkId=623009).
+* Use o criador de perfil do Visual Studio para obter uma análise detalhada dos aspectos computacionais de como o serviço é executado. Como descrito neste tópico, você pode usar o criador de perfil para medir o desempenho à medida que um serviço é executado no Azure. Para saber mais sobre como usar o criador de perfil para medir o desempenho à medida que um serviço é executado localmente em um emulador de computação, consulte [Testando o desempenho de um Serviço de Nuvem de Azure localmente no emulador de computação usando o criador de perfil do Visual Studio](https://go.microsoft.com/fwlink/p/?LinkId=262845).
 
 ## <a name="choosing-a-performance-testing-method"></a>Escolhendo um método de teste de desempenho
 ### <a name="use-azure-diagnostics-to-collect"></a>Use o Diagnóstico do Azure para coletar:
@@ -68,9 +68,9 @@ Para saber mais sobre o perfil de desempenho no Visual Studio, consulte [Guia de
 Você pode usar diferentes métodos de coleção para a criação de perfil com base nos seus problemas de desempenho:
 
 * **Amostragem de CPU** - esse método coleta estatísticas de aplicativo que são úteis para a análise inicial de problemas de utilização de CPU. A amostragem de CPU é o método sugerido para iniciar a maioria das investigações de desempenho. Há pouco impacto sobre o aplicativo para o qual o perfil está sendo criado quando você coleta dados de amostragem de CPU.
-* **Instrumentação** - esse método coleta dados detalhados de tempo úteis para a análise concentrada e para analisar problemas de desempenho de entrada/saída. O método de instrumentação registra cada entrada, saída e a chamada de função das funções em um módulo durante uma execução da criação de perfil. Este método é útil para coletar informações detalhadas de tempo sobre uma seção de seu código e para compreender o impacto das operações de entrada e de saída no desempenho do aplicativo. Este método está desabilitado para um computador que esteja executando um sistema operacional de 32 bits. Esta opção só estará disponível quando você executar o serviço de nuvem no Azure, e não localmente no emulador de computação.
+* **Instrumentação** - esse método coleta dados detalhados de tempo úteis para a análise concentrada e para analisar problemas de desempenho de entrada/saída. O método de instrumentação registra cada entrada, saída e a chamada de função das funções em um módulo durante uma execução da criação de perfil. Este método é útil para coletar informações detalhadas de tempo sobre uma seção do seu código e para compreender o impacto das operações de entrada e saída sobre o desempenho do aplicativo. Este método está desabilitado para um computador que esteja executando um sistema operacional de 32 bits. Esta opção só estará disponível quando você executar o serviço de nuvem no Azure, e não localmente no emulador de computação.
 * **Alocação de memória do .NET** -esse método coleta dados de alocação de memória do .NET Framework usando o método de criação de perfil de amostragem. Os dados coletados incluem o número e o tamanho dos objetos alocados.
-* **Simultaneidade** - esse método coleta dados de contenção de recursos e dados de execução de thread e processo úteis na análise de aplicativos multi-threaded e multiprocessados. O método de simultaneidade coleta dados para cada evento que bloqueia a execução de seu código, como quando um thread aguarda que o acesso bloqueado a um recurso de aplicativo seja liberado. Este método é útil para analisar aplicativos multi-threaded.
+* **Simultaneidade** - esse método coleta dados de contenção de recursos e dados de execução de thread e processo úteis na análise de aplicativos multi-threaded e multiprocessados. O método de simultaneidade coleta dados para cada evento que bloqueia a execução de seu código, como quando um thread aguarda bloqueia o acesso a um recurso de aplicativo para ser liberado. Esse método é útil para analisar aplicativos multi-threaded.
 * Você também pode habilitar **Criação de Perfil de Interação de Camadas**, que oferece informações adicionais sobre os tempos de execução de chamadas ADO.NET síncronas em funções de aplicativos de várias camadas que se comunicam com um ou mais bancos de dados. Você pode coletar dados de interação de camadas com qualquer um dos métodos de criação de perfil. Para saber mais sobre a criação de perfil de interação de camadas, consulte [Exibição de interações de camada](https://msdn.microsoft.com/library/azure/dd557764.aspx).
 
 ## <a name="configuring-profiling-settings"></a>Definindo configurações de criação de perfil
@@ -84,7 +84,7 @@ A seguinte ilustração mostra como definir as configurações de criação de p
 > 
 
 ### <a name="to-configure-profiling-settings"></a>Para definir configurações de criação de perfil
-1. No Gerenciador de Soluções, abra o menu de atalho para o seu projeto do Azure e escolha **Publicar**. Para obter etapas detalhadas sobre como publicar um serviço de nuvem, consulte [Publicando um serviço na nuvem usando as ferramentas do Azure](http://go.microsoft.com/fwlink/p?LinkId=623012).
+1. No Gerenciador de Soluções, abra o menu de atalho para o seu projeto do Azure e escolha **Publicar**. Para obter etapas detalhadas sobre como publicar um serviço de nuvem, consulte [Publicando um serviço na nuvem usando as ferramentas do Azure](https://go.microsoft.com/fwlink/p?LinkId=623012).
 2. Na caixa de diálogo **Publicar Aplicativo do Azure**, escolha a guia **Configurações Avançadas**.
 3. Para habilitar a criação de perfil, marque a caixa de seleção **Habilitar criação de perfil** .
 4. Para definir suas configurações de criação de perfil, escolha o hiperlink **Configurações** . A caixa de diálogo Configurações de Criação de Perfil aparecerá.
@@ -104,7 +104,7 @@ Uma sessão de criação de perfil é gerada para cada instância de uma funçã
 2. Escolha o nó de Computação do Azure e escolha o nó de implantação do Azure para o serviço de nuvem que você selecionou para o perfil ao publicar no Visual Studio.
 3. Para exibir relatórios de criação de perfil para uma instância, escolha a função no serviço, abra o menu de atalho para uma instância específica e, em seguida, escolha **Exibir Relatório de Criação de Perfil**.
    
-    O relatório, um arquivo .vsp, agora é baixado do Azure e o status do download é exibido no log de atividades do Azure. Quando o download é concluído, o relatório de criação de perfil é exibido em uma guia no editor do Visual Studio denominada <Nome da função\>*<Número da instância\>*<identificador\>.vsp. Serão exibidos dados de resumo para o relatório.
+    O relatório, um arquivo .vsp, agora é baixado do Azure e o status do download é exibido no log de atividades do Azure. Quando o download é concluído, o relatório de criação de perfil é exibido em uma guia no editor do Visual Studio denominada <Nome da função\> *<Número da instância\>* <identificador\>.vsp. Serão exibidos dados de resumo para o relatório.
 4. Para mostrar diferentes modos de exibição do relatório, na lista Modo de Exibição Atual, escolha o tipo de exibição desejado. Para saber mais, consulte [Exibições de relatório de ferramentas de criação de perfil](https://msdn.microsoft.com/library/azure/bb385755.aspx).
 
 ## <a name="next-steps"></a>Próximas etapas

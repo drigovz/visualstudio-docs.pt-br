@@ -11,17 +11,17 @@ caps.latest.revision: 13
 author: corob-msft
 ms.author: corob
 manager: jillfra
-ms.openlocfilehash: 227d4ba765dbea3be5306f05995cc29d075e6a66
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 695cbeaba5a108c61b5e81078a9651c0df9237f5
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434141"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299819"
 ---
 # <a name="install-and-configure-tools-to-build-using-ios"></a>Instalar e configurar ferramentas para criação usando iOS
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-É possível usar o Visual C++ para Desenvolvimento Móvel de Multiplataforma para editar, depurar e implantar código do iOS no Simulador de IOS ou em um dispositivo iOS, mas devido a restrições de licenciamento, o código deve ser compilado e executado remotamente em um Mac. Para compilar e executar aplicativos iOS usando o Visual Studio, é necessário instalar e configurar o agente remoto, [vcremote](http://go.microsoft.com/fwlink/p/?LinkId=534988), no Mac. O agente remoto trata de solicitações de build do Visual Studio e executa o aplicativo em um dispositivo iOS conectado ao Mac, ou no Simulator de iOS no Mac.  
+É possível usar o Visual C++ para Desenvolvimento Móvel de Multiplataforma para editar, depurar e implantar código do iOS no Simulador de IOS ou em um dispositivo iOS, mas devido a restrições de licenciamento, o código deve ser compilado e executado remotamente em um Mac. Para compilar e executar aplicativos iOS usando o Visual Studio, é necessário instalar e configurar o agente remoto, [vcremote](https://go.microsoft.com/fwlink/p/?LinkId=534988), no Mac. O agente remoto trata de solicitações de build do Visual Studio e executa o aplicativo em um dispositivo iOS conectado ao Mac, ou no Simulator de iOS no Mac.  
   
 > [!NOTE]
 > Para obter informações sobre como usar serviços Mac hospedados na nuvem em vez de um Mac, consulte [Compilar e simular o iOS na nuvem](https://taco.visualstudio.com/docs/build_ios_cloud/). As instruções são para compilação usando as Ferramentas do Visual Studio para Apache Cordova. Para usar as instruções para compilar usando o Visual C++ para Desenvolvimento Móvel de Multiplataforma, substitua vcremote por vs-mda-remote.  
@@ -69,7 +69,7 @@ ms.locfileid: "63434141"
   
      Para obter informações detalhadas sobre a criação de perfis de provisionamento, consulte [Creating Provisioning Profiles Using Member Center](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/MaintainingProfiles/MaintainingProfiles.html#//apple_ref/doc/uid/TP40012582-CH30-SW24) (Criando perfis de provisionamento usando a central de membros) na Biblioteca do Desenvolvedor de iOS.  
   
-- [Node.js](http://nodejs.org/)  
+- [Node.js](https://nodejs.org/en/)  
   
 - Uma versão atualizada do npm  
   
@@ -78,7 +78,7 @@ ms.locfileid: "63434141"
      `sudo npm install -g npm@latest`  
   
 ## <a name="Install"></a> Instalar o agente remoto para iOS  
- Quando você instala o Visual C++ para Desenvolvimento Móvel de Multiplataforma, o Visual Studio pode se comunicar com [vcremote](http://go.microsoft.com/fwlink/p/?LinkId=534988), um agente remoto em execução no seu Mac, para transferir arquivos, compilar e executar seu aplicativo iOS e enviar comandos de depuração.  
+ Quando você instala o Visual C++ para Desenvolvimento Móvel de Multiplataforma, o Visual Studio pode se comunicar com [vcremote](https://go.microsoft.com/fwlink/p/?LinkId=534988), um agente remoto em execução no seu Mac, para transferir arquivos, compilar e executar seu aplicativo iOS e enviar comandos de depuração.  
   
  Antes de instalar o agente remoto, verifique se os [Pré-requisitos](#Prerequisites) foram satisfeitos e se você instalou o [Visual C++ para Desenvolvimento Móvel de Multiplataforma](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md#InstallTheTools).  
   
@@ -88,9 +88,9 @@ ms.locfileid: "63434141"
   
    `sudo npm install -g --unsafe-perm vcremote`  
   
-   O comutador da instalação global (**-g**) é recomendado, mas não é obrigatório.  
+   O comutador da instalação global ( **-g**) é recomendado, mas não é obrigatório.  
   
-   Durante a instalação, vcremote é instalado e o modo de desenvolvedor é ativado em seu Mac. [Homebrew](http://brew.sh/) e dois pacotes npm, vcremote-lib e vcremote-utils, também são instalados.  
+   Durante a instalação, vcremote é instalado e o modo de desenvolvedor é ativado em seu Mac. [Homebrew](https://brew.sh/) e dois pacotes npm, vcremote-lib e vcremote-utils, também são instalados.  
   
   > [!NOTE]
   > Para instalar o Homebrew, você deve ter acesso sudo (administrador). Se precisar instalar o vcremote sem sudo, você poderá instalar o Homebrew manualmente em um local usr/local e adicionar sua pasta de compartimento ao seu caminho. Para obter mais informações, consulte a [Documentação do Homebrew](https://github.com/Homebrew/homebrew/wiki/Installation). Para habilitar manualmente o modo de desenvolvedor, digite este comando no aplicativo Terminal: `DevToolsSecurity –enable`  
@@ -149,7 +149,7 @@ ms.locfileid: "63434141"
   
 3. Na barra de menus do Visual Studio, escolha **Ferramentas**, **Opções**.  
   
-4. Na caixa de diálogo **Opções**, expanda **Multiplataforma**, **C++**, **iOS**.  
+4. Na caixa de diálogo **Opções**, expanda **Multiplataforma**, **C++** , **iOS**.  
   
 5. Nos campos **Nome do Host** e **Porta**, insira os valores especificados pelo agente remoto quando você o iniciou. O nome do host pode ser o nome DNS ou o endereço IP do seu Mac. A porta padrão é a 3030.  
   
@@ -160,7 +160,7 @@ ms.locfileid: "63434141"
   
 7. Escolha **Emparelhamento** para habilitar o emparelhamento.  
   
-    ![Configurar a conexão de vcremote para compilações do iOS](../cross-platform/media/cppmdd-options-ios.PNG "CPPMDD_Options_iOS")  
+    ![Configurar conexão vcremote para compilações do iOS](../cross-platform/media/cppmdd-options-ios.PNG "CPPMDD_Options_iOS")  
   
     O emparelhamento persiste até que você altere o nome do host ou a porta. Se você alterar o nome do host ou a porta na caixa de diálogo **Opções**, para desfazer a alteração, escolha o botão **Reverter** para reverter o emparelhamento anterior.  
   
