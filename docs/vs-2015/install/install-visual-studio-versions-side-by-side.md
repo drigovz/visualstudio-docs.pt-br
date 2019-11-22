@@ -13,17 +13,17 @@ caps.latest.revision: 48
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: d040353aadbc448b6608cd11fc78a134872fdafa
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: a146872561c4be5fe48016c17eb64ad6f854106a
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65693571"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74298018"
 ---
 # <a name="install-visual-studio-versions-side-by-side"></a>Instalar versões do Visual Studio lado a lado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-É possível instalar esta versão do Visual Studio em um computador que já tenha uma versão anterior instalada. Se você encontrar uma falha de instalação, use a [ferramenta de coleta de log](http://go.microsoft.com/fwlink/?LinkId=262077) para coletar informações sobre as falhas para que você mesmo possa depurar os problemas.
+É possível instalar esta versão do Visual Studio em um computador que já tenha uma versão anterior instalada. Se você encontrar uma falha de instalação, use a [ferramenta de coleta de log](https://go.microsoft.com/fwlink/?LinkId=262077) para coletar informações sobre as falhas para que você mesmo possa depurar os problemas.
 
 > [!NOTE]
 > Recomendamos que você instale as versões dos [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] na ordem em que elas foram lançadas. Por exemplo, instale o Visual Studio 2013 antes de instalar o Visual Studio 2015.
@@ -36,7 +36,7 @@ ms.locfileid: "65693571"
 
 - Se você desinstalar uma versão do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] em um computador que tem mais de uma versão instalada, as associações de arquivo do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] são removidas para todas as versões. É possível remapear essas associações de arquivos usando o botão **Restaurar Associações de Arquivos** na página **Ambiente**, **Geral** da caixa de diálogo [Opções](../ide/reference/general-environment-options-dialog-box.md).
 
-- O Visual Studio não atualiza automaticamente extensões porque nem todas as extensões são compatíveis. Você deverá reinstalar as extensões do [Visual Studio Marketplace](http://go.microsoft.com/fwlink/?LinkId=178891) ou do fornecedor de software.
+- O Visual Studio não atualiza automaticamente extensões porque nem todas as extensões são compatíveis. Você deverá reinstalar as extensões do [Visual Studio Marketplace](https://go.microsoft.com/fwlink/?LinkId=178891) ou do fornecedor de software.
 
 ## <a name="net-framework-versions-and-side-by-side-installations"></a>Versões do .NET Framework e instalações lado a lado
 
@@ -54,7 +54,7 @@ ms.locfileid: "65693571"
     |C++|[Como modificar a estrutura de destino e o conjunto de ferramentas da plataforma](https://msdn.microsoft.com/library/031b1d54-e6e1-4da7-9868-3e75a87d9ffe)|
     |[!INCLUDE[jsprjscript](../includes/jsprjscript-md.md)]|[Como executar um aplicativo JScript em uma versão anterior do Common Language Runtime](https://msdn.microsoft.com/bbea51b5-ac03-4e6c-b9a6-f487ef63eda5)|
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Instalar o Visual Studio](../install/install-visual-studio-2015.md)
 - [Portar, migrar e atualizar projetos do Visual Studio](/visualstudio/porting/port-migrate-and-upgrade-visual-studio-projects?view=vs-2015)

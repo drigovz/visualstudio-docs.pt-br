@@ -31,12 +31,12 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: efcdbb4f72d47a5044b287f1b40424f5611d6401
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 181c32017a84328037ea46d49698821fa3cb41ea
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65703428"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74295873"
 ---
 # <a name="link-task"></a>Tarefa Link
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,13 +68,13 @@ Encapsula a ferramenta de vinculador do Visual C++, link.exe. A ferramenta de vi
   
    Especifica atributos que serão colocados na seção `dependency` do arquivo de manifesto.  
   
-   Para obter mais informações, consulte [/MANIFESTDEPENDENCY (Especificar Dependências de Manifesto)](https://msdn.microsoft.com/library/e4b68313-33a2-4c3e-908e-ac2b9f7d6a73). Consulte também os "Arquivos de Configuração do Distribuidor" no site do [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
+   Para obter mais informações, consulte [/MANIFESTDEPENDENCY (Especificar Dependências de Manifesto)](https://msdn.microsoft.com/library/e4b68313-33a2-4c3e-908e-ac2b9f7d6a73). Consulte também os "Arquivos de Configuração do Distribuidor" no site do [MSDN](https://go.microsoft.com/fwlink/?LinkId=737).  
   
 - **AdditionalOptions**  
   
    Parâmetro **String** opcional.  
   
-   Uma lista de opções de vinculador, conforme especificado na linha de comando. Por exemplo, **"**_/option1 /option2 /option#_". Use esse parâmetro para especificar opções de vinculador que não são representadas por qualquer outro parâmetro de tarefa **Link**.  
+   Uma lista de opções de vinculador, conforme especificado na linha de comando. Por exemplo, **"** _/option1 /option2 /option#_ ". Use esse parâmetro para especificar opções de vinculador que não são representadas por qualquer outro parâmetro de tarefa **Link**.  
   
    Para obter mais informações, consulte [Opções de Vinculador](https://msdn.microsoft.com/library/c1d51b8a-bd23-416d-81e4-900e02b2c129).  
   
@@ -140,13 +140,13 @@ Encapsula a ferramenta de vinculador do Visual C++, link.exe. A ferramenta de vi
   
    Especifique um dos valores a seguir, cada um correspondente a uma opção de vinculador.  
   
-  - **Default** - *\<none>*  
+  - **Default** -  *\<none>*  
   
-  - **ForceIJWImage** - **/CLRIMAGETYPE:IJW**  
+  - **ForceIJWImage** -  **/CLRIMAGETYPE:IJW**  
   
-  - **ForcePureILImage** - **/CLRIMAGETYPE:PURE**  
+  - **ForcePureILImage** -  **/CLRIMAGETYPE:PURE**  
   
-  - **ForceSafeILImage** - **/CLRIMAGETYPE:SAFE**  
+  - **ForceSafeILImage** -  **/CLRIMAGETYPE:SAFE**  
   
     Para obter mais informações, consulte, [/CLRIMAGETYPE (Especificar Tipo de Imagem CLR)](https://msdn.microsoft.com/library/04c60ee6-9dd7-4391-bc03-6926ad0fa116).  
   
@@ -158,11 +158,11 @@ Encapsula a ferramenta de vinculador do Visual C++, link.exe. A ferramenta de vi
   
    Especifique um dos valores a seguir, cada um correspondente a uma opção de vinculador.  
   
-  - **Enabled** - **/CLRSupportLastError**  
+  - **Enabled** -  **/CLRSupportLastError**  
   
-  - **Desabilitado** - **/CLRSupportLastError:NO**  
+  - **Desabilitado** -  **/CLRSupportLastError:NO**  
   
-  - **SystemDlls** - **/CLRSupportLastError:SYSTEMDLL**  
+  - **SystemDlls** -  **/CLRSupportLastError:SYSTEMDLL**  
   
     Para obter mais informações, consulte [/CLRSUPPORTLASTERROR (Preservar Último Código de Erro para Chamadas PInvoke)](https://msdn.microsoft.com/library/b7057990-4154-4b1d-9fc9-6236f7be7575).  
   
@@ -174,11 +174,11 @@ Encapsula a ferramenta de vinculador do Visual C++, link.exe. A ferramenta de vi
   
    Especifique um dos valores a seguir, cada um correspondente a uma opção de vinculador.  
   
-  - **DefaultThreadingAttribute** - **/CLRTHREADATTRIBUTE:NONE**  
+  - **DefaultThreadingAttribute** -  **/CLRTHREADATTRIBUTE:NONE**  
   
-  - **MTAThreadingAttribute** - **/CLRTHREADATTRIBUTE:MTA**  
+  - **MTAThreadingAttribute** -  **/CLRTHREADATTRIBUTE:MTA**  
   
-  - **STAThreadingAttribute** - **/CLRTHREADATTRIBUTE:STA**  
+  - **STAThreadingAttribute** -  **/CLRTHREADATTRIBUTE:STA**  
   
     Para obter mais informações, consulte [/CLRTHREADATTRIBUTE (Definir Atributo de Thread CLR)](https://msdn.microsoft.com/library/4907e9ef-5031-446c-aecf-0a0b32fae1e8).  
   
@@ -198,13 +198,13 @@ Encapsula a ferramenta de vinculador do Visual C++, link.exe. A ferramenta de vi
   
    Especifique um dos valores a seguir, que corresponda a uma opção de vinculador.  
   
-  - **Enabled** - **/FUNCTIONPADMIN**  
+  - **Enabled** -  **/FUNCTIONPADMIN**  
   
-  - **X86Image** - **/FUNCTIONPADMIN:5**  
+  - **X86Image** -  **/FUNCTIONPADMIN:5**  
   
-  - **X64Image** - **/FUNCTIONPADMIN:6**  
+  - **X64Image** -  **/FUNCTIONPADMIN:6**  
   
-  - **ItaniumImage** - **/FUNCTIONPADMIN:16**  
+  - **ItaniumImage** -  **/FUNCTIONPADMIN:16**  
   
     Para obter mais informações, consulte [/FUNCTIONPADMIN (Cria Imagem Hotpatchable)](https://msdn.microsoft.com/library/25b02c13-1add-4fbd-add9-fcb30eb2cae7).  
   
@@ -240,13 +240,13 @@ Encapsula a ferramenta de vinculador do Visual C++, link.exe. A ferramenta de vi
   
    Especifique um dos valores a seguir, cada um correspondente a uma opção de vinculador.  
   
-  - **NotSet** - *\<none>*  
+  - **NotSet** -  *\<none>*  
   
-  - **Driver** - **/Driver**  
+  - **Driver** -  **/Driver**  
   
-  - **UpOnly** - **/DRIVER:UPONLY**  
+  - **UpOnly** -  **/DRIVER:UPONLY**  
   
-  - **WDM** - **/DRIVER:WDM**  
+  - **WDM** -  **/DRIVER:WDM**  
   
     Para obter mais informações, consulte [/DRIVER (Driver de Modo Kernel do Windows NT)](https://msdn.microsoft.com/library/aeee8e28-5d97-40f5-ba16-9f370fe8a1b8).  
   
@@ -298,11 +298,11 @@ Encapsula a ferramenta de vinculador do Visual C++, link.exe. A ferramenta de vi
   
    Especifique um dos valores a seguir, cada um correspondendo a uma opção de linha de comando.  
   
-  - **Enabled** - **/FORCE**  
+  - **Enabled** -  **/FORCE**  
   
-  - **MultiplyDefinedSymbolOnly** - **/FORCE:MULTIPLE**  
+  - **MultiplyDefinedSymbolOnly** -  **/FORCE:MULTIPLE**  
   
-  - **UndefinedSymbolOnly** - **/FORCE:UNRESOLVED**  
+  - **UndefinedSymbolOnly** -  **/FORCE:UNRESOLVED**  
   
     Para obter mais informações, consulte [/FORCE (Forçar Saída de Arquivo)](https://msdn.microsoft.com/library/b1e9a218-a5eb-4e60-a4a4-65b4be15e5da).  
   
@@ -448,13 +448,13 @@ Encapsula a ferramenta de vinculador do Visual C++, link.exe. A ferramenta de vi
   
    Especifique um dos valores a seguir, cada um correspondendo a uma opção de linha de comando.  
   
-  - **NoErrorReport** - **/ERRORREPORT:NONE**  
+  - **NoErrorReport** -  **/ERRORREPORT:NONE**  
   
-  - **PromptImmediately** - **/ERRORREPORT:PROMPT**  
+  - **PromptImmediately** -  **/ERRORREPORT:PROMPT**  
   
-  - **QueueForNextLogin** - **/ERRORREPORT:QUEUE**  
+  - **QueueForNextLogin** -  **/ERRORREPORT:QUEUE**  
   
-  - **SendErrorReport** - **/ERRORREPORT:SEND**  
+  - **SendErrorReport** -  **/ERRORREPORT:SEND**  
   
     Para obter mais informações, consulte [/ERRORREPORT (Relatório de Erros Internos do Vinculador)](https://msdn.microsoft.com/library/f5fab595-a2f1-4eb0-ab5c-1c0fbd3d8c28).  
   
@@ -490,13 +490,13 @@ Encapsula a ferramenta de vinculador do Visual C++, link.exe. A ferramenta de vi
   
    Especifique um dos valores a seguir, cada um correspondendo a uma opção de linha de comando.  
   
-  - **Default** - *\<none>*  
+  - **Default** -  *\<none>*  
   
-  - **UseLinkTimeCodeGeneration** - **/LTCG**  
+  - **UseLinkTimeCodeGeneration** -  **/LTCG**  
   
-  - **PGInstrument** - **/LTCG:PGInstrument**  
+  - **PGInstrument** -  **/LTCG:PGInstrument**  
   
-  - **PGOptimization** - **/LTCG:PGOptimize**  
+  - **PGOptimization** -  **/LTCG:PGOptimize**  
   
   - **PGUpdate**  
   
@@ -582,7 +582,7 @@ Encapsula a ferramenta de vinculador do Visual C++, link.exe. A ferramenta de vi
   
 - **ObjectFiles**  
   
-   Parâmetro implícito **Cadeia de Caracteres[]**.  
+   Parâmetro implícito **Cadeia de Caracteres[]** .  
   
    Especifica os arquivos-objeto vinculados.  
   
@@ -684,19 +684,19 @@ Encapsula a ferramenta de vinculador do Visual C++, link.exe. A ferramenta de vi
   
    Especifique um dos valores a seguir, cada um correspondendo a uma opção de linha de comando.  
   
-  - **NotSet** - *\<none>*  
+  - **NotSet** -  *\<none>*  
   
-  - **LinkVerbose** - **/VERBOSE**  
+  - **LinkVerbose** -  **/VERBOSE**  
   
-  - **LinkVerboseLib** - **/VERBOSE:Lib**  
+  - **LinkVerboseLib** -  **/VERBOSE:Lib**  
   
-  - **LinkVerboseICF** - **/VERBOSE:ICF**  
+  - **LinkVerboseICF** -  **/VERBOSE:ICF**  
   
-  - **LinkVerboseREF** - **/VERBOSE:REF**  
+  - **LinkVerboseREF** -  **/VERBOSE:REF**  
   
-  - **LinkVerboseSAFESEH** - **/VERBOSE:SAFESEH**  
+  - **LinkVerboseSAFESEH** -  **/VERBOSE:SAFESEH**  
   
-  - **LinkVerboseCLR** - **/VERBOSE:CLR**  
+  - **LinkVerboseCLR** -  **/VERBOSE:CLR**  
   
     Para obter mais informações, consulte [/VERBOSE (Imprimir Mensagens de Progresso)](https://msdn.microsoft.com/library/9c347d98-4c37-4724-a39e-0983934693ab).  
   
@@ -746,25 +746,25 @@ Encapsula a ferramenta de vinculador do Visual C++, link.exe. A ferramenta de vi
   
    Especifique um dos valores a seguir, cada um correspondendo a uma opção de linha de comando.  
   
-  - **NotSet** - *\<none>*  
+  - **NotSet** -  *\<none>*  
   
-  - **Console** - **/SUBSYSTEM:CONSOLE**  
+  - **Console** -  **/SUBSYSTEM:CONSOLE**  
   
-  - **Windows** - **/SUBSYSTEM:WINDOWS**  
+  - **Windows** -  **/SUBSYSTEM:WINDOWS**  
   
-  - **Native** - **/SUBSYSTEM:NATIVE**  
+  - **Native** -  **/SUBSYSTEM:NATIVE**  
   
-  - **EFI Application** - **/SUBSYSTEM:EFI_APPLICATION**  
+  - **EFI Application** -  **/SUBSYSTEM:EFI_APPLICATION**  
   
-  - **EFI Boot Service Driver** - **/SUBSYSTEM:EFI_BOOT_SERVICE_DRIVER**  
+  - **EFI Boot Service Driver** -  **/SUBSYSTEM:EFI_BOOT_SERVICE_DRIVER**  
   
-  - **EFI ROM** - **/SUBSYSTEM:EFI_ROM**  
+  - **EFI ROM** -  **/SUBSYSTEM:EFI_ROM**  
   
-  - **EFI Runtime** - **/SUBSYSTEM:EFI_RUNTIME_DRIVER**  
+  - **EFI Runtime** -  **/SUBSYSTEM:EFI_RUNTIME_DRIVER**  
   
-  - **WindowsCE** - **/SUBSYSTEM:WINDOWSCE**  
+  - **WindowsCE** -  **/SUBSYSTEM:WINDOWSCE**  
   
-  - **POSIX** - **/SUBSYSTEM:POSIX**  
+  - **POSIX** -  **/SUBSYSTEM:POSIX**  
   
     Para obter mais informações, consulte [/SUBSYSTEM (Especificar Subsistema)](https://msdn.microsoft.com/library/d7b133cf-cf22-4da8-ab46-6552702c0b9b).  
   
@@ -816,29 +816,29 @@ Encapsula a ferramenta de vinculador do Visual C++, link.exe. A ferramenta de vi
   
    Especifique um dos valores a seguir, cada um correspondendo a uma opção de linha de comando.  
   
-  - **NotSet** - *\<none>*  
+  - **NotSet** -  *\<none>*  
   
-  - **MachineARM** - **/MACHINE:ARM**  
+  - **MachineARM** -  **/MACHINE:ARM**  
   
-  - **MachineEBC** - **/MACHINE:EBC**  
+  - **MachineEBC** -  **/MACHINE:EBC**  
   
-  - **MachineIA64** - **/MACHINE:IA64**  
+  - **MachineIA64** -  **/MACHINE:IA64**  
   
-  - **MachineMIPS** - **/MACHINE:MIPS**  
+  - **MachineMIPS** -  **/MACHINE:MIPS**  
   
-  - **MachineMIPS16** - **/MACHINE:MIPS16**  
+  - **MachineMIPS16** -  **/MACHINE:MIPS16**  
   
-  - **MachineMIPSFPU** - **/MACHINE:MIPSFPU**  
+  - **MachineMIPSFPU** -  **/MACHINE:MIPSFPU**  
   
-  - **MachineMIPSFPU16** - **/MACHINE:MIPSFPU16**  
+  - **MachineMIPSFPU16** -  **/MACHINE:MIPSFPU16**  
   
-  - **MachineSH4** - **/MACHINE:SH4**  
+  - **MachineSH4** -  **/MACHINE:SH4**  
   
-  - **MachineTHUMB** - **/MACHINE:THUMB**  
+  - **MachineTHUMB** -  **/MACHINE:THUMB**  
   
-  - **MachineX64** - **/MACHINE:X64**  
+  - **MachineX64** -  **/MACHINE:X64**  
   
-  - **MachineX86** - **/MACHINE:X86**  
+  - **MachineX86** -  **/MACHINE:X86**  
   
     Para obter mais informações, consulte [/MACHINE (Especificar Plataforma de Destino)](https://msdn.microsoft.com/library/8d41bf4b-7e53-4ab9-9085-d852b08d31c2).  
   
@@ -926,5 +926,5 @@ Encapsula a ferramenta de vinculador do Visual C++, link.exe. A ferramenta de vi
   
    Para obter mais informações, consulte [/VERSION (Informações de Versão)](https://msdn.microsoft.com/library/b86d0e86-dca6-4316-aee2-d863ccb9f223).  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Veja também  
  [Referência de tarefas](../msbuild/msbuild-task-reference.md)

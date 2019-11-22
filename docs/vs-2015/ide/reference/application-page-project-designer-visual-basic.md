@@ -15,12 +15,12 @@ caps.latest.revision: 68
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 80811c63ff0b4fa764c95976bf2f69a30123b235
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3ca14cead3b632cb70b817c79fce797078c7069b
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72651676"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299387"
 ---
 # <a name="application-page-project-designer-visual-basic"></a>Página de Aplicativo, Designer de Projeto (Visual Basic)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -62,7 +62,7 @@ Use a página **Aplicativo** do Designer de Projeto para especificar as propried
 
  Para um projeto de aplicativo Web, é necessário especificar **Biblioteca de Classes**.
 
- Se você especificar a opção **Arquivo WinMD**, os tipos poderão ser projetados em uma linguagem de programação do Windows Runtime. Ao empacotar a saída do projeto como um arquivo WinMD, é possível codificar um aplicativo em várias linguagens e ter interoperação de código como se você tivesse escrito tudo na mesma linguagem. É possível usar a opção **Arquivo WinMD** para soluções que direcionam as bibliotecas do Windows Runtime, incluindo os aplicativos [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)]. Para obter mais informações, consulte [Criando componentes do Windows Runtime em C# e Visual Basic](http://go.microsoft.com/fwlink/?LinkId=231895).
+ Se você especificar a opção **Arquivo WinMD**, os tipos poderão ser projetados em uma linguagem de programação do Windows Runtime. Ao empacotar a saída do projeto como um arquivo WinMD, é possível codificar um aplicativo em várias linguagens e ter interoperação de código como se você tivesse escrito tudo na mesma linguagem. É possível usar a opção **Arquivo WinMD** para soluções que direcionam as bibliotecas do Windows Runtime, incluindo os aplicativos [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)]. Para obter mais informações, consulte [Criando componentes do Windows Runtime em C# e Visual Basic](https://go.microsoft.com/fwlink/?LinkId=231895).
 
 > [!NOTE]
 > O Windows Runtime pode projetar tipos para que eles sejam exibidos como objetos nativos em qualquer que os use. Por exemplo, aplicativos JavaScript que interagem com o Windows Runtime usam-no como um conjunto de objetos JavaScript e aplicativos C# usam a biblioteca como uma coleção de objetos .NET. Ao empacotar a saída do projeto como um arquivo WinMD, é possível usar a mesma tecnologia que o Windows Runtime usa.

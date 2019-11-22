@@ -8,12 +8,12 @@ ms.assetid: 20221de4-2a9e-4787-b99a-b5855bb90872
 caps.latest.revision: 18
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: df937d43c196193593bcfb1244bcc9e59a3c634a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 6ff1d953dc853beba8ef836b1eab03140ee0b1e0
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72660669"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300387"
 ---
 # <a name="code-generation-compilation-and-naming-conventions-in-microsoft-fakes"></a>Geração de código, compilação e convenções de nomenclatura no Microsoft Fakes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -169,7 +169,7 @@ Este tópico discute problemas e opções na compilação e geração de código
 
  De seus projetos de teste de unidade, você pode simplesmente fazer uma referência aos assemblies do Fakes compilados que são colocados em FakesAssemblies na pasta do projeto.
 
-1. Crie uma nova biblioteca de classes com a versão de tempo de execução do .NET que corresponde aos seus projetos de teste. Vamos chamá-la de Fakes.Prebuild. Remova o arquivo class1.cs so projeto, ele não é necessário.
+1. Crie uma nova biblioteca de classes com a versão de runtime do .NET que corresponde aos seus projetos de teste. Vamos chamá-la de Fakes.Prebuild. Remova o arquivo class1.cs so projeto, ele não é necessário.
 
 2. Adicione uma referência a todos os assemblies do System e de terceiros para os quais você precisa do Fakes.
 
@@ -177,7 +177,7 @@ Este tópico discute problemas e opções na compilação e geração de código
 
 4. Do seu projeto de teste
 
-    - Certifique-se de que você tem uma referência para a DLL de tempo de execução do Fakes:
+    - Certifique-se de que você tem uma referência para a DLL de runtime do Fakes:
 
          C:\Arquivos de Programas\Microsoft Visual Studio 12.0\Common7\IDE\PublicAssemblies\Microsoft.QualityTools.Testing.Fakes.dll
 
@@ -285,7 +285,7 @@ attribute of the Assembly element in the .fakes:
 ## <a name="BKMK_External_resources"></a> Recursos externos
 
 ### <a name="BKMK_Guidance"></a> Diretrizes
- [Testes de Entrega Contínua com o Visual Studio 2012 – Capítulo 2: Teste de Unidade: Testando o Interior](http://go.microsoft.com/fwlink/?LinkID=255188)
+ [Testes de Entrega Contínua com o Visual Studio 2012 – Capítulo 2: Teste de Unidade: Testando o Interior](https://go.microsoft.com/fwlink/?LinkID=255188)
 
 ## <a name="see-also"></a>Veja também
  [Isolando código em teste com Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md)

@@ -26,12 +26,12 @@ caps.latest.revision: 67
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 39c90a8550736c945f04467e9366a73039cfa2b1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e367ff6d6abbf40cdf7efebed04aee6fc74a384c
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72670473"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300744"
 ---
 # <a name="javascript-intellisense"></a>JavaScript IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -127,7 +127,7 @@ O IntelliSense ajuda a escrever código mais rapidamente e com menos erros forne
 ### <a name="UserDefined"></a> Variáveis, funções e objetos definidos pelo usuário
  Quando você altera um arquivo JavaScript, o [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] examina documentos abertos e referenciados para determinar todos os recursos de código disponíveis. Isso inclui variáveis, funções e objetos que você criou. Esses recursos são então disponibilizados para o JavaScript IntelliSense.
 
- Para saber mais sobre variáveis, funções e objetos definidos pelo usuário, consulte [Como criar seus próprios objetos](http://go.microsoft.com/fwlink/?LinkId=108671) no site do MSDN.
+ Para saber mais sobre variáveis, funções e objetos definidos pelo usuário, consulte [Como criar seus próprios objetos](https://go.microsoft.com/fwlink/?LinkId=108671) no site do MSDN.
 
 ### <a name="External"></a> Referências de arquivo externo
  Você pode incluir vários tipos de referências de arquivo externo para obter o suporte do IntelliSense em seu código. As referências de arquivo externo podem ser referências de script, diretivas de referência ou podem ser especificadas usando grupos de referência.
@@ -233,7 +233,7 @@ O IntelliSense ajuda a escrever código mais rapidamente e com menos erros forne
   Na maioria dos cenários, não é preciso modificar grupos de referência. No entanto, se desejar fazer alterações, você poderá usar opções de configuração do Editor de Códigos do JavaScript para especificar os arquivos incluídos nos grupos de referência. Para obter instruções sobre como usar este recurso, confira [Opções, Editor de texto, JavaScript, IntelliSense](../ide/reference/options-text-editor-javascript-intellisense.md).
 
 > [!TIP]
-> Geralmente, as referências do IntelliSense são usadas para oferecer suporte a objetos globais e a [extensões](#Extensibility) do IntelliSense. Também é possível usar esse recurso para scripts que devem ser carregados no tempo de execução usando o carregador de scripts.
+> Geralmente, as referências do IntelliSense são usadas para oferecer suporte a objetos globais e a [extensões](#Extensibility) do IntelliSense. Também é possível usar esse recurso para scripts que devem ser carregados no runtime usando o carregador de scripts.
 
 ### <a name="remote-file-references"></a>Referências de arquivo remoto
  Você pode orientar o Visual Studio a baixar arquivos JavaScript remotos que são referenciados em um arquivo JavaScript para fornecer suporte ao arquivo remoto ou à biblioteca do IntelliSense. Quando você usa esse recurso, os arquivos são baixados quando são incluídos como uma referência no seu arquivo JavaScript.
@@ -283,6 +283,6 @@ O IntelliSense ajuda a escrever código mais rapidamente e com menos erros forne
 - [Estendendo o JavaScript IntelliSense](../ide/extending-javascript-intellisense.md)
 - [Preenchimento de declaração para identificadores](../ide/statement-completion-for-identifiers.md)
 - [Comentários da documentação XML](../ide/xml-documentation-comments-javascript.md)
-- [Sobre o modelo de objeto DHTML](http://go.microsoft.com/fwlink/?LinkID=92344)
+- [Sobre o modelo de objeto DHTML](https://go.microsoft.com/fwlink/?LinkID=92344)
 - [Listar Membros](https://msdn.microsoft.com/1b9cc469-9cd4-4d42-9999-1f9479635ff8)
-- [Atributo SRC &#124; Propriedade src](http://go.microsoft.com/fwlink/?LinkId=92345)
+- [Atributo SRC &#124; Propriedade src](https://go.microsoft.com/fwlink/?LinkId=92345)

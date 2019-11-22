@@ -13,18 +13,18 @@ caps.latest.revision: 27
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: b37ed78f9b67d10c0bf845a5bd7340f1f38557bb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 85cc90170b2dc665bcdd5acd97860c47ef5a14c4
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72651420"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74293870"
 ---
 # <a name="managing-application-settings-net"></a>Gerenciando configurações de aplicativo (.NET)
 
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-As configurações de aplicativo permitem armazenar informações do aplicativo dinamicamente. As configurações permitem que você armazene informações no computador cliente que não devem ser incluídas no código do aplicativo (por exemplo, uma cadeia de conexão), as preferências do usuário e outras informações necessárias em tempo de execução.
+As configurações de aplicativo permitem armazenar informações do aplicativo dinamicamente. As configurações permitem que você armazene informações no computador cliente que não devem ser incluídas no código do aplicativo (por exemplo, uma cadeia de conexão), as preferências do usuário e outras informações necessárias em runtime.
 
 As configurações de aplicativo substituem as propriedades dinâmicas usadas em versões anteriores do Visual Studio.
 
@@ -98,7 +98,7 @@ Você deve explicitamente chamar o método `Save` dessa classe wrapper para pers
 Properties.Settings.Default.Save();
 ```
 
-Para obter informações gerais sobre como acessar as configurações de aplicativo por meio da classe `Settings`, consulte [Visão geral sobre configurações de aplicativo](https://msdn.microsoft.com/library/0dd8bca5-a6bf-4ac4-8eec-5725d08b38dc). Para obter informações sobre como fazer a iteração por meio das configurações, consulte esta [postagem no fórum](http://social.msdn.microsoft.com/Forums/vstudio/40fbb470-f1e8-4a02-a4a0-9f62b54d0fc4/is-this-possible-propertiessettingsdefault?forum=csharpgeneral).
+Para obter informações gerais sobre como acessar as configurações de aplicativo por meio da classe `Settings`, consulte [Visão geral sobre configurações de aplicativo](https://msdn.microsoft.com/library/0dd8bca5-a6bf-4ac4-8eec-5725d08b38dc). Para obter informações sobre como fazer a iteração por meio das configurações, consulte esta [postagem no fórum](https://social.msdn.microsoft.com/Forums/en-US/40fbb470-f1e8-4a02-a4a0-9f62b54d0fc4/is-this-possible-propertiessettingsdefault?forum=csharpgeneral).
 
 ## <a name="see-also"></a>Veja também
 

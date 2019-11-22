@@ -10,12 +10,12 @@ caps.latest.revision: 7
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 08e317555042bbc63707cc6eccd0177e78b6ddcc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: fe8b158fd870b83b39b9d316e68582f2726d89bb
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72645662"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300193"
 ---
 # <a name="getting-started-with-debugging-in-visual-studio-2015"></a>Introdução à depuração no Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -170,7 +170,7 @@ O Visual Studio 2015 fornece um poderoso conjunto integrado de ferramentas de co
 
  ![Ponto de interrupção condicional do Visual Studio 2015](../ide/media/vs-ide-gs-debug-breakpoint-conditional.PNG "|::ref23::|")
 
- Para obter mais detalhes de como declarar as expressões usadas para avaliar os pontos de interrupção condicionais, confira o vídeo do Channel9 [Breakpoint Configuration Experience in Visual Studio 2015](http://channel9.msdn.com/Events/Visual-Studio/Connect-event-2014/711) (Experiência de configuração de ponto de interrupção no Visual Studio).
+ Para obter mais detalhes de como declarar as expressões usadas para avaliar os pontos de interrupção condicionais, confira o vídeo do Channel9 [Breakpoint Configuration Experience in Visual Studio 2015](https://channel9.msdn.com/Events/Visual-Studio/Connect-event-2014/711) (Experiência de configuração de ponto de interrupção no Visual Studio).
 
 ### <a name="inspecting-your-code-at-run-time"></a>Inspecionando seu código em tempo de execução
  Quando o código em execução atinge um ponto de interrupção e é interrompido, você pode inspecionar variáveis e pilhas de chamadas para determinar o que está acontecendo. Os valores estão nos intervalos que você espera ver? As chamadas estão sendo feitas na ordem correta?

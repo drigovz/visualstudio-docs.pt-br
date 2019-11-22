@@ -16,17 +16,17 @@ caps.latest.revision: 30
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 37bbdfd00778575755379fc442dfa9be3f90eeb7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: de27d99d6bccab46734399e524f70a731a36aa1b
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72651312"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297877"
 ---
 # <a name="how-to-use-the-keyboard-exclusively"></a>Como usar o teclado de forma exclusiva
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-O [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] fornece muitas combinações padrão de teclas de atalho para facilitar a navegação e a criação de código dentro do IDE (ambiente de desenvolvimento integrado). Para obter uma lista completa das teclas de atalho usadas no Visual Studio, consulte [Atalhos de teclado padrão](../../ide/default-keyboard-shortcuts-in-visual-studio.md). Para obter informações sobre os atalhos de teclado disponíveis para outros produtos da Microsoft, consulte [http://www.microsoft.com/enable/products/keyboard.aspx](http://go.microsoft.com/fwlink/?LinkID=40400).
+O [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] fornece muitas combinações padrão de teclas de atalho para facilitar a navegação e a criação de código dentro do IDE (ambiente de desenvolvimento integrado). Para obter uma lista completa das teclas de atalho usadas no Visual Studio, consulte [Atalhos de teclado padrão](../../ide/default-keyboard-shortcuts-in-visual-studio.md). Para obter informações sobre os atalhos de teclado disponíveis para outros produtos da Microsoft, consulte [http://www.microsoft.com/enable/products/keyboard.aspx](https://go.microsoft.com/fwlink/?LinkID=40400).
 
 > [!NOTE]
 > As caixas de diálogo e os comandos de menu que você vê podem ser diferentes dos descritos na Ajuda, dependendo da sua edição ou das configurações ativas. Para alterar as configurações, escolha **Importar e Exportar Configurações** no menu **Ferramentas**. Para obter mais informações, consulte [Personalizando configurações de desenvolvimento no Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
