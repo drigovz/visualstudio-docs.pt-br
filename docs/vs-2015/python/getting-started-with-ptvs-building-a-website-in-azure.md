@@ -9,12 +9,12 @@ caps.latest.revision: 5
 author: kraigb
 ms.author: kraigb
 manager: jillfra
-ms.openlocfilehash: 61f8748a3874f32db9c235d03b6b7464bc5cecf1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 288fb24c9c1c4ddee1cb59a968e717531e274af1
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62550994"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300583"
 ---
 # <a name="getting-started-with-ptvs-building-a-website-in-azure"></a>Introdução ao PTVS: compilando um site no Azure
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ Você pode começar a criar rapidamente um site Python no Azure.
   
  É possível assistir a essas instruções em um breve [vídeo no YouTube](https://www.youtube.com/watch?v=FJx5mutt1uk&list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff&index=6).  
   
- Comece pela caixa de diálogo Novo Projeto... e, nos projetos Python, escolha o projeto Web Garrafa.  Esse modelo [Garrafa](http://bottlepy.org/docs/dev/index.html) é um site inicial com base no [Framework de inicialização](http://getbootstrap.com/).  Quando você cria o projeto, o Visual Studio solicitará a instalação das dependências (Garrafa neste caso) em um ambiente virtual.  Como você está implantando para um site do Azure, será necessário adicionar as dependências a um ambiente virtual para implantar os bits necessários para a operação do seu site.  Você também precisa basear seu ambiente em Python 2.7 ou 3.4 de 32 bits.  Depois de criar o projeto, pressione F5 para iniciar a execução de seu site localmente.  
+ Comece pela caixa de diálogo Novo Projeto... e, nos projetos Python, escolha o projeto Web Garrafa.  Esse modelo [Garrafa](http://bottlepy.org/docs/dev/index.html) é um site inicial com base no [Framework de inicialização](https://getbootstrap.com/).  Quando você cria o projeto, o Visual Studio solicitará a instalação das dependências (Garrafa neste caso) em um ambiente virtual.  Como você está implantando para um site do Azure, será necessário adicionar as dependências a um ambiente virtual para implantar os bits necessários para a operação do seu site.  Você também precisa basear seu ambiente em Python 2.7 ou 3.4 de 32 bits.  Depois de criar o projeto, pressione F5 para iniciar a execução de seu site localmente.  
   
  É fácil testar o site no Azure.  Se você não tiver uma assinatura do Azure, poderá usar [try.azurewebsites.net](https://trywebsites.azurewebsites.net/).  Este site oferece uma maneira simples de testar Sites do Azure por uma hora por vez com apenas um logon social.  Não é necessário informar um cartão de crédito.  Escolha o modelo Site vazio no menu suspenso Alterar idioma e escolha Criar.  Em “Trabalhar com seu aplicativo Web”, escolha Baixar Perfil de Publicação e salve o arquivo para ser usado com o Visual Studio.  Você também pode implantá-lo usando git de qualquer sistema operacional.  
   
@@ -33,6 +33,6 @@ Você pode começar a criar rapidamente um site Python no Azure.
   
  É possível assistir a essas instruções em um breve [vídeo no YouTube](https://www.youtube.com/watch?v=FJx5mutt1uk&list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff&index=6).  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Veja também  
  [Documentação do wiki](https://github.com/Microsoft/PTVS/wiki/Web-Project)   
  [Introdução ao PTVS e vídeos de aprofundamento](https://www.youtube.com/playlist?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff)

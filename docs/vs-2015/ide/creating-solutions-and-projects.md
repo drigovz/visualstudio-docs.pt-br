@@ -18,12 +18,12 @@ caps.latest.revision: 49
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 47083fe3f496cb855a7fb7101a886290e53cfbce
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 03ecd3fcc253f255afc59c2d6412f3864fe253b8
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72619127"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300595"
 ---
 # <a name="creating-solutions-and-projects"></a>Criando soluções e projetos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ Os projetos são os contêineres lógicos para tudo que é necessário para cria
  É necessário ter o .NET Framework 3.5 instalado em seu sistema para acessar as versões de estrutura anteriores à versão 4.0.
 
 ## <a name="downloading-sample-solutions"></a>Baixando soluções de amostra
- É possível usar o Visual Studio para baixar e instalar soluções de amostra na [Galeria de Códigos do MSDN](http://go.microsoft.com/fwlink/?LinkId=254185).
+ É possível usar o Visual Studio para baixar e instalar soluções de amostra na [Galeria de Códigos do MSDN](https://go.microsoft.com/fwlink/?LinkId=254185).
 
  É possível baixar as amostras individualmente ou baixar um Pacote de Amostras que contém amostras relacionadas que compartilham uma tecnologia ou tópico. Você receberá uma notificação quando as alterações no código-fonte forem publicadas para qualquer exemplo baixado.
 

@@ -19,12 +19,12 @@ caps.latest.revision: 20
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: dcb8fc6b62d7b4085b5ee2bd153070de3e27df51
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e9d476cfc4ce742d3300c78f2219c0b3797130c8
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72670259"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301307"
 ---
 # <a name="accessibility-products-and-services-from-microsoft"></a>Produtos e serviços de acessibilidade da Microsoft
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -40,29 +40,29 @@ A Microsoft tem o compromisso de facilitar o uso de seus produtos e serviços pa
 - [Para obter mais informações](../../ide/reference/accessibility-products-and-services-from-microsoft.md#moreinfo)
 
 > [!NOTE]
-> As informações nesta seção somente podem ser aplicadas aos usuários que licenciam produtos Microsoft nos Estados Unidos. Se tiver adquirido este produto fora dos Estados Unidos, você pode usar o cartão de informações da subsidiária que acompanha seu pacote de software ou visitar o site [Microsoft Accessibility](http://go.microsoft.com/fwlink/?LinkId=8431) para obter uma lista dos telefones e dos endereços dos serviços de Suporte da Microsoft. Você pode contatar qualquer subsidiária para descobrir se os tipos de produtos ou serviços descritos nesta seção estão disponíveis na sua área. As informações sobre acessibilidade estão disponíveis em outros idiomas, incluindo japonês e francês.
+> As informações nesta seção somente podem ser aplicadas aos usuários que licenciam produtos Microsoft nos Estados Unidos. Se tiver adquirido este produto fora dos Estados Unidos, você pode usar o cartão de informações da subsidiária que acompanha seu pacote de software ou visitar o site [Microsoft Accessibility](https://go.microsoft.com/fwlink/?LinkId=8431) para obter uma lista dos telefones e dos endereços dos serviços de Suporte da Microsoft. Você pode contatar qualquer subsidiária para descobrir se os tipos de produtos ou serviços descritos nesta seção estão disponíveis na sua área. As informações sobre acessibilidade estão disponíveis em outros idiomas, incluindo japonês e francês.
 
 ## <a name="windows"></a> Recursos de acessibilidade do Windows
- O sistema operacional Windows tem muitos recursos de acessibilidade internos que são úteis para indivíduos com dificuldade para digitar ou usar um mouse, são cegas ou têm deficiências visuais ou são surdas ou têm deficiências auditivas. Os recursos são instalados durante a Instalação. Para obter mais informações sobre esses recursos, consulte a Ajuda no Windows e o site [Microsoft Accessibility](http://go.microsoft.com/fwlink/?LinkId=8431).
+ O sistema operacional Windows tem muitos recursos de acessibilidade internos que são úteis para indivíduos com dificuldade para digitar ou usar um mouse, são cegas ou têm deficiências visuais ou são surdas ou têm deficiências auditivas. Os recursos são instalados durante a Instalação. Para obter mais informações sobre esses recursos, consulte a Ajuda no Windows e o site [Microsoft Accessibility](https://go.microsoft.com/fwlink/?LinkId=8431).
 
 ### <a name="free-step-by-step-tutorials"></a>Tutoriais passo a passo gratuitos
  A Microsoft oferece uma série de tutoriais passo a passo que fornecem os procedimentos detalhados para o ajuste das opções de acessibilidade e configurações no seu computador. Essas informações são apresentadas em um formato lado a lado para que você possa aprender a usar o mouse, o teclado ou uma combinação de ambos.
 
- Para localizar tutoriais passo a passo para produtos Microsoft, consulte o site [Microsoft Accessibility](http://go.microsoft.com/fwlink/?LinkId=8431).
+ Para localizar tutoriais passo a passo para produtos Microsoft, consulte o site [Microsoft Accessibility](https://go.microsoft.com/fwlink/?LinkId=8431).
 
 ### <a name="assistive-technology-products-for-windows"></a>Produtos de tecnologia assistencial para Windows
- Há uma ampla variedade de produtos de tecnologia assistencial disponíveis para facilitar o uso de computadores por pessoas com deficiências. Você pode pesquisar um catálogo de produtos de tecnologia assistencial executados no Windows no site [Microsoft Accessibility](http://go.microsoft.com/fwlink/?LinkId=8431).
+ Há uma ampla variedade de produtos de tecnologia assistencial disponíveis para facilitar o uso de computadores por pessoas com deficiências. Você pode pesquisar um catálogo de produtos de tecnologia assistencial executados no Windows no site [Microsoft Accessibility](https://go.microsoft.com/fwlink/?LinkId=8431).
 
  Se você usar a tecnologia assistencial, contate o fornecedor dessa tecnologia antes de atualizar o software ou o hardware para verificar possíveis problemas de compatibilidade.
 
 ## <a name="altfortmats"></a> Documentação em formatos alternativos
- Se você tiver dificuldade para ler ou manipular materiais impressos, poderá obter a documentação de muitos produtos Microsoft em formatos mais acessíveis. Você pode exibir um índice da documentação de produto acessível no site [Microsoft Accessibility](http://go.microsoft.com/fwlink/?LinkId=8431).
+ Se você tiver dificuldade para ler ou manipular materiais impressos, poderá obter a documentação de muitos produtos Microsoft em formatos mais acessíveis. Você pode exibir um índice da documentação de produto acessível no site [Microsoft Accessibility](https://go.microsoft.com/fwlink/?LinkId=8431).
 
  Além disso, é possível obter mais publicações da Microsoft junto à Recording for the Blind & Dyslexic, Inc (RFB&D). A RFB&D distribui esses documentos aos membros registrados e qualificados de seu serviço de distribuição. Para obter mais informações sobre a disponibilidade de documentação de produto Microsoft e livros da Microsoft Press, contate:
 
 |Learning Ally|
 |----------------------------------------------|
-|20 Roszel Road<br /><br /> Princeton, NJ 08540<br /><br /> Site da Learning Ally: [http://www.learningally.org](http://www.learningally.org/).|
+|20 Roszel Road<br /><br /> Princeton, NJ 08540<br /><br /> Site da Learning Ally: [http://www.learningally.org](https://learningally.org/).|
 
  Endereços Web podem mudar, portanto, talvez você não consiga se conectar ao site ou aos sites mencionados aqui.
 
@@ -76,7 +76,7 @@ A Microsoft tem o compromisso de facilitar o uso de seus produtos e serviços pa
   Os Microsoft Support Services estão sujeitos aos preços, termos e condições em vigor no momento em que o serviço é usado.
 
 ## <a name="moreinfo"></a> Para obter mais informações
- Para obter mais informações sobre como a tecnologia acessível para computadores ajuda a melhorar as vidas das pessoas com deficiências, consulte o site [Microsoft Accessibility](http://go.microsoft.com/fwlink/?LinkId=8431).
+ Para obter mais informações sobre como a tecnologia acessível para computadores ajuda a melhorar as vidas das pessoas com deficiências, consulte o site [Microsoft Accessibility](https://go.microsoft.com/fwlink/?LinkId=8431).
 
 ## <a name="see-also"></a>Veja também
  [Recursos para a criação de aplicativos acessíveis](../../ide/reference/resources-for-designing-accessible-applications.md) [recursos de acessibilidade do Visual Studio](../../ide/reference/accessibility-features-of-visual-studio.md)

@@ -9,12 +9,12 @@ caps.latest.revision: 21
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: bf06151265c1647de29725917624c5984577bf6a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d5e41dbf3422374add68e351da1e4b703772a3a4
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658611"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74296858"
 ---
 # <a name="walkthrough-create-a-simple-application-with-visual-c-or-visual-basic"></a>Instruções passo a passo: criar um aplicativo simples com o Visual C# ou o Visual Basic
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,10 +30,10 @@ Ao concluir este passo a passo, você estará familiarizado com vários designer
  [Depurar e testar o aplicativo](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md#BKMK_DebugTest)
 
 > [!NOTE]
-> Este passo a passo se baseia no Visual Studio Professional, que oferece o modelo de aplicativo WPF no qual você criará o projeto. O Visual Studio Express para Windows Desktop também oferece esse modelo, mas o Visual Studio Express para Windows e Visual Studio Express for Web, não. Para obter informações introdutórias sobre como usar o Visual Studio Express para Windows, consulte o [Centro de Desenvolvedores de Aplicativos da Windows Store](https://msdn.microsoft.com/windows/apps/br229519). Para obter informações introdutórias sobre como usar o Visual Studio Express para a Web, consulte [Introdução ao ASP.NET](http://www.asp.net/get-started). Além disso, sua edição do Visual Studio e as configurações que você usa determinam os nomes e os locais de alguns elementos da interface do usuário. Consulte [Personalizando configurações de desenvolvimento no Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+> Este passo a passo se baseia no Visual Studio Professional, que oferece o modelo de aplicativo WPF no qual você criará o projeto. O Visual Studio Express para Windows Desktop também oferece esse modelo, mas o Visual Studio Express para Windows e Visual Studio Express for Web, não. Para obter informações introdutórias sobre como usar o Visual Studio Express para Windows, consulte o [Centro de Desenvolvedores de Aplicativos da Windows Store](https://msdn.microsoft.com/windows/apps/br229519). Para obter informações introdutórias sobre como usar o Visual Studio Express para a Web, consulte [Introdução ao ASP.NET](https://dotnet.microsoft.com/learn/aspnet/hello-world-tutorial/intro). Além disso, sua edição do Visual Studio e as configurações que você usa determinam os nomes e os locais de alguns elementos da interface do usuário. Consulte [Personalizando configurações de desenvolvimento no Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
 ## <a name="BKMK_ConfigureIDE"></a> Configurar o IDE
- Ao iniciar o Visual Studio pela primeira vez, o Visual Studio solicita que você se conecte com uma MSA (Conta de Serviço da Microsoft), [Entrar no Visual Studio](http://blogs.msdn.com/b/visualstudio/archive/2013/06/28/welcome-sign-in-to-visual-studio.aspx). Você não precisa entrar e pode fazer isso mais tarde.
+ Ao iniciar o Visual Studio pela primeira vez, o Visual Studio solicita que você se conecte com uma MSA (Conta de Serviço da Microsoft), [Entrar no Visual Studio](https://devblogs.microsoft.com/visualstudio/welcome-sign-in-to-visual-studio/). Você não precisa entrar e pode fazer isso mais tarde.
 
  Ao iniciar o Visual Studio, é necessário escolher uma combinação de configurações que aplica um conjunto de personalizações predefinidas à IDE. Cada combinação de configurações foi desenvolvida para facilitar o desenvolvimento de aplicativos.
 

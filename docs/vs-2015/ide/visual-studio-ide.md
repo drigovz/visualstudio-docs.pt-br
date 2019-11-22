@@ -9,12 +9,12 @@ caps.latest.revision: 36
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 52e0b8f87774b11b1750700d5bef19c5423824c4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3780e0ee5cf6bffb1a749b17d868445fbda38b13
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72667137"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74296924"
 ---
 # <a name="visual-studio-ide"></a>Visual Studio IDE
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,9 +37,9 @@ Se você nunca usou o Visual Studio, conheça os fundamentos com as instruções
 Se quiser saber sobre as novas funcionalidades do Visual Studio 2015, consulte [O que há de novo no Visual Studio 2015](../what-s-new-in-visual-studio-2015.md).
 
 ## <a name="visual-studio-setup"></a>Configuração do Visual Studio
- Você pode descobrir qual edição do Visual Studio é adequada para você em [Edições do Visual Studio](http://www.visualstudio.com/products/visual-studio-with-msdn-overview-vs).
+ Você pode descobrir qual edição do Visual Studio é adequada para você em [Edições do Visual Studio](https://visualstudio.microsoft.com/vs/).
 
- É possível instalar o Visual Studio 2015 baixando-o em [Downloads do Visual Studio](http://www.visualstudio.com/downloads/download-visual-studio-vs.aspx). Se precisar saber mais sobre o processo de instalação, consulte [Instalação do Visual Studio 2015](../install/install-visual-studio-2015.md).
+ É possível instalar o Visual Studio 2015 baixando-o em [Downloads do Visual Studio](https://www.visualstudio.com/downloads/download-visual-studio-vs.aspx). Se precisar saber mais sobre o processo de instalação, consulte [Instalação do Visual Studio 2015](../install/install-visual-studio-2015.md).
 
 ## <a name="ide-basics"></a>Noções básicas sobre o IDE
  A imagem a seguir mostra o IDE do Visual Studio com um projeto aberto, a janela do Gerenciador de Soluções para navegar nos arquivos de projeto e a janela do Team Explorer para navegação do controle do código-fonte e acompanhamento de item de trabalho. Os recursos destacados na barra de título são explicados em mais detalhes abaixo.
@@ -150,7 +150,7 @@ A saída do build, incluindo mensagens de erro ou sucesso, aparece na janela de 
 
  ![Janela Inspecionar configurações de ponto de interrupção](../ide/media/dbg-breakpoints-peekwindow.png "|::ref15::|")
 
- O próprio depurador tem várias janelas que permitem que você exiba e manipule variáveis locais, a pilha de chamadas e outros aspectos do ambiente de tempo de execução. Você pode encontrar essas janelas no menu **Depurar**.
+ O próprio depurador tem várias janelas que permitem que você exiba e manipule variáveis locais, a pilha de chamadas e outros aspectos do ambiente de runtime. Você pode encontrar essas janelas no menu **Depurar**.
 
  A [Janela Imediata](../ide/reference/immediate-window.md) permite a digitação de uma expressão e a visualização imediada de seu resultado.
 
@@ -164,7 +164,7 @@ A saída do build, incluindo mensagens de erro ou sucesso, aparece na janela de 
  ![Gerenciador de Testes de Unidade](../ide/media/ute-failedpassednotrunsummary.png "|::ref16::|")
 
 ## <a name="analyzing-code-quality-and-performance"></a>Analisar o desempenho e a qualidade do código
- O Visual Studio inclui ferramentas avançadas para análise estática e em tempo de execução. As ferramentas de análise estática ajudam a identificar possíveis erros no design, na globalização, na interoperabilidade, no desempenho, na segurança e em outras categorias. O teste de desempenho ou criação de perfil envolve a medição de como o seu programa é executado. Acesse essas ferramentas no menu **Analisar**. Para obter mais informações, consulte [Melhorando a qualidade com as ferramentas de diagnóstico do Visual Studio](https://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945).
+ O Visual Studio inclui ferramentas avançadas para análise estática e em runtime. As ferramentas de análise estática ajudam a identificar possíveis erros no design, na globalização, na interoperabilidade, no desempenho, na segurança e em outras categorias. O teste de desempenho ou criação de perfil envolve a medição de como o seu programa é executado. Acesse essas ferramentas no menu **Analisar**. Para obter mais informações, consulte [Melhorando a qualidade com as ferramentas de diagnóstico do Visual Studio](https://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945).
 
 ## <a name="connecting-to-cloud-services-and-databases"></a>Conectar-se aos serviços de nuvem e bancos de dados
  A janela [Gerenciador de Servidores](https://msdn.microsoft.com/library/4ea29b3b-bbb2-45e4-9082-eaf635c41c4d) no Visual Studio mostra os recursos em todas as contas gerenciadas em sua conta de personalização (aquela com a qual você fez logon), incluindo instâncias do SQL Server, Azure, Salesforce.com, Office 365 e sites da Web.
