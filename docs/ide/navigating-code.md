@@ -1,6 +1,6 @@
 ---
 title: Comandos de navegação de código
-ms.date: 08/14/2018
+ms.date: 11/21/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - code editor, navigation
@@ -13,17 +13,17 @@ helpviewer_keywords:
 - peek definition
 - go to line
 - go to
-author: jillre
-ms.author: jillfra
-manager: jillfra
+author: mikadumont
+ms.author: midumont
+manager: tglee
 ms.workload:
 - multiple
-ms.openlocfilehash: f1fcfd69e2de9a174c708da1c4f5eaedd397722e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f5348fc0c36435e5760f3967a7e6c9be2aecb1b7
+ms.sourcegitcommit: b04c603ce73b993d042ebdf7f3722cf4fe2ef7f4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72667010"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74316462"
 ---
 # <a name="navigate-code"></a>Navegue pelos códigos
 
@@ -82,7 +82,7 @@ Ir Para tem os seguintes comandos que estão disponíveis no menu **Editar** em 
 
 - **Ir para Arquivo** (**Ctrl**+**1**, **Ctrl**+**F**): mover para o arquivo especificado na solução.
 
-- **Ir para o arquivo recente** (**Ctrl** +**1**, **Ctrl** +**R**): mover para o arquivo especificado recentemente visitado na solução.
+- **Go To Recent File** (**Ctrl**+**1**, **Ctrl**+**R**): Move to the specified, recently visited file in the solution.
 
 - **Ir para Tipo** (**Ctrl**+**1**, **Ctrl**+**T**): mover para o tipo especificado na solução.
 
@@ -124,6 +124,15 @@ Entrada | Função
 ------------ | ---
 **Teclado** | Coloque o cursor de texto em algum lugar dentro do nome do tipo e pressione **Ctrl**+**F12**
 **Mouse** | Clique com o botão direito do mouse no nome do tipo e selecione **Ir Para Implementação**
+
+## <a name="go-to-base"></a>Go To Base
+
+Using Go To Base, you can navigate up the inheritance chain of the selected element. If there are multiple results, you will see them listed in the **Go To Base** window:
+
+Entrada | Função
+------------ | ---
+**Teclado** | Place your text cursor somewhere inside the type name, and press **Alt**+**Home**
+**Mouse** | Right-click on the type name and select **Go To Base**
 
 ## <a name="call-hierarchy"></a>Hierarquia de chamadas
 

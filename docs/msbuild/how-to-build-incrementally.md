@@ -1,5 +1,5 @@
 ---
-title: 'Como: Compilar incrementalmente | Microsoft Docs'
+title: Como compilar incrementalmente | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e78ce202c04b8b2af60a7b3d09b149c7e02f2e50
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 0d2bf2f8a45618e8b1f7540479a02c1a5f91b9bf
+ms.sourcegitcommit: b04c603ce73b993d042ebdf7f3722cf4fe2ef7f4
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62977358"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74316477"
 ---
-# <a name="how-to-build-incrementally"></a>Como: Compilar de forma incremental
+# <a name="how-to-build-incrementally"></a>Como criar de forma incremental
 Quando você cria um projeto grande, é importante que já tenha criado componentes que ainda estejam atualizados e não sejam recriados. Se todos os destinos forem criados todas as vezes, cada build levará muito tempo para ser concluída. Para habilitar as builds incrementais (builds nos quais somente os destinos que não foram criados antes ou destinos que estão desatualizados são recriadas), o [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]) pode comparar os carimbos de data/hora dos arquivos de entrada com carimbos de data/hora dos arquivos de saída e determinar se ignora, compila ou recompila parcialmente um destino. No entanto, deve haver um mapeamento de um para um entre entradas e saídas. Você pode usar transformações para permitir que os destinos identifiquem esse mapeamento direto. Para obter mais informações sobre transformações, consulte [Transformações](../msbuild/msbuild-transforms.md).
 
 ## <a name="specify-inputs-and-outputs"></a>Especificar entradas e saídas
@@ -35,7 +35,7 @@ Um destino pode ser criado incrementalmente se as entradas e saídas forem espec
       Outputs="hello.exe">
   ```
 
-  O [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] pode comparar os carimbos de data/hora dos arquivos de entrada com carimbos de data/hora dos arquivos de saída e determinar se ignora, compila ou recompila parcialmente um destino. No seguinte exemplo, se um arquivo da lista de itens `@(CSFile)` for mais recente que o arquivo *hello.exe*, o [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] executará o destino; caso contrário, ele será ignorado:
+O [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] pode comparar os carimbos de data/hora dos arquivos de entrada com carimbos de data/hora dos arquivos de saída e determinar se ignora, compila ou recompila parcialmente um destino. No seguinte exemplo, se um arquivo da lista de itens `@(CSFile)` for mais recente que o arquivo *hello.exe*, o [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] executará o destino; caso contrário, ele será ignorado:
 
 ```xml
 <Target Name="Build"
@@ -58,9 +58,9 @@ As tarefas nas quais você pode identificar um mapeamento direto entre as saída
 ## <a name="example"></a>Exemplo
 O exemplo a seguir usa um projeto que cria arquivos de ajuda para um sistema de ajuda hipotético. O projeto funciona convertendo arquivos *.txt* de origem em arquivos *.content* intermediários, que são então combinados com arquivos de metadados XML para produzir o arquivo *.help* final usado pelo sistema de Ajuda. O projeto usa as seguintes tarefas hipotéticas:
 
-- `GenerateContentFiles`: Converte arquivos *.txt* em arquivos *.content*.
+- `GenerateContentFiles`: converte arquivos *.txt* em arquivos *.content*.
 
-- `BuildHelp`: Combina arquivos *.content* e arquivos de metadados XML para criar o arquivo *.help* final.
+- `BuildHelp`: combina arquivos *.content* e arquivos de metadados XML para criar o arquivo *.help* final.
 
 O projeto usa transformações para criar um mapeamento de um para um entre entradas e saídas na tarefa `GenerateContentFiles`. Para obter mais informações, consulte [Transformações](../msbuild/msbuild-transforms.md). Além disso, o elemento `Output` é configurado para usar automaticamente as saídas da tarefa `GenerateContentFiles` como entradas para a tarefa `BuildHelp`.
 
