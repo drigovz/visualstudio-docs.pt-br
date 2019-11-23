@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentHelper::D Etach | Microsoft Docs
+title: IDebugDocumentHelper::Detach | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -47,5 +47,5 @@ HRESULT Detach();
  Esse método remove este documento da árvore de documentos.  
   
 ## <a name="see-also"></a>Consulte também  
- [IDebugDocumentHelper:: anexar](../../winscript/reference/idebugdocumenthelper-attach.md)    
+ [IDebugDocumentHelper::Attach](../../winscript/reference/idebugdocumenthelper-attach.md)   
  [IDebugDocumentHelper Interface](../../winscript/reference/idebugdocumenthelper-interface.md)

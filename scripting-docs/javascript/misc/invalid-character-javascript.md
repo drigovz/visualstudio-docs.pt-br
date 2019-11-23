@@ -30,11 +30,11 @@ Você compostou um identificador usando um caractere (ou caracteres) não reconh
   
 - O nome do identificador não pode ser uma palavra reservada.  
   
-### <a name="to-correct-this-error"></a>Para corrigir este erro  
+### <a name="to-correct-this-error"></a>Para corrigir esse erro  
   
 - Evite usar caracteres que não fazem parte da definição de linguagem [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)].  
   
 ## <a name="see-also"></a>Consulte também  
- [Variáveis](../../javascript/variables-javascript.md)    
- [Caracteres especiais](../../javascript/advanced/special-characters-javascript.md)    
+ [Variáveis](../../javascript/variables-javascript.md)   
+ [Caracteres especiais](../../javascript/advanced/special-characters-javascript.md)   
  [Tipos de Dados](../../javascript/data-types-javascript.md)

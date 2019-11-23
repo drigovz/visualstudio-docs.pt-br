@@ -30,7 +30,7 @@ ms.locfileid: "72574624"
 
 Com o depurador do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], você pode depurar um aplicativo Web de maneira transparente no computador local ou em um servidor remoto. Isso significa que o depurador funciona da mesma maneira e permite que você use os mesmos recursos em qualquer computador. Para que a depuração remota funcione corretamente, no entanto, há alguns pré-requisitos.  
   
-- Os componentes da depuração remota do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] devem estar instalados no servidor que você deseja depurar. Para obter mais informações, consulte [Configurando a depuração remota](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c).  
+- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] componentes de depuração remota devem ser instalados no servidor que você deseja depurar. Para obter mais informações, consulte [Configurando a depuração remota](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c).  
   
 - Por padrão, o processo de trabalho do [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] é executado como um processo de usuário do ASPNET. Como resultado, você deve ter privilégios de Administrador no computador no qual o [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] é executado para depurá-lo. O nome do processo de trabalho do [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] varia de acordo com o cenário de depuração e a versão do IIS. Para obter mais informações, consulte [como: localizar o nome do processo ASP.net](../debugger/how-to-find-the-name-of-the-aspnet-process.md).  
   

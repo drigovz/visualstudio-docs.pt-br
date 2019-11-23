@@ -24,10 +24,10 @@ ms.locfileid: "72575909"
 # <a name="expected-while"></a>'while' esperado
 Você não incluiu a condição de `while` em um loop de `do...while`. Uma instrução **do** deve ter um teste de `while` correspondente no final do bloco de código.  
   
-### <a name="to-correct-this-error"></a>Para corrigir este erro  
+### <a name="to-correct-this-error"></a>Para corrigir esse erro  
   
 - Inclua a instrução de teste `while` após a chave de fechamento.  
   
 ## <a name="see-also"></a>Consulte também  
- [instrução while](../../javascript/reference/while-statement-javascript.md)    
+ [instrução while](../../javascript/reference/while-statement-javascript.md)   
  [Controlar o fluxo de programas](../../javascript/controlling-program-flow-javascript.md)

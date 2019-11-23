@@ -32,10 +32,10 @@ Você tentou decodificar um URI formado incorretamente (Uniform Resource Identif
   
  Os nomes entre colchetes angulares representam componentes e ":", "/", ";" e "?" são caracteres reservados usados como separadores.  
   
-### <a name="to-correct-this-error"></a>Para corrigir este erro  
+### <a name="to-correct-this-error"></a>Para corrigir esse erro  
   
 - Verifique se você está tentando decodificar apenas URIs válidos. Você não pode decodificar cadeias de [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] normais, pois elas podem conter caracteres inválidos.  
   
 ## <a name="see-also"></a>Consulte também  
- [função decodeURI](../../javascript/reference/decodeuri-function-javascript.md)    
+ [função decodeURI](../../javascript/reference/decodeuri-function-javascript.md)   
  [Função DecodeURIComponent](../../javascript/reference/decodeuricomponent-function-javascript.md)

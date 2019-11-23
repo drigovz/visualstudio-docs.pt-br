@@ -24,7 +24,7 @@ ms.locfileid: "72572862"
 # <a name="exception-thrown-and-not-caught"></a>Exceção lançada, mas não capturada
 Você incluiu uma instrução `throw` em seu código, mas ela não estava dentro de um bloco **try** ou não havia nenhum bloco **Catch** associado para interceptar o erro. As exceções são geradas de dentro do bloco **try** usando a instrução **throw** e detectadas fora do bloco **try** com uma instrução **Catch** .  
   
-### <a name="to-correct-this-error"></a>Para corrigir este erro  
+### <a name="to-correct-this-error"></a>Para corrigir esse erro  
   
 - Coloque o código que pode gerar uma exceção em um bloco **try** e garantir que haja um bloco **Catch** correspondente.  
   
@@ -33,6 +33,6 @@ Você incluiu uma instrução `throw` em seu código, mas ela não estava dentro
 - Se a exceção for relançada, verifique se há outra instrução Catch correspondente.  
   
 ## <a name="see-also"></a>Consulte também  
- @No__t_1 de [objeto de erro](../../javascript/reference/error-object-javascript.md)  
- [instrução throw](../../javascript/reference/throw-statement-javascript.md)    
+   de [objeto de erro](../../javascript/reference/error-object-javascript.md)  
+ [instrução throw](../../javascript/reference/throw-statement-javascript.md)   
  [Instrução try...catch...finally](../../javascript/reference/try-dot-dot-dot-catch-dot-dot-dot-finally-statement-javascript.md)

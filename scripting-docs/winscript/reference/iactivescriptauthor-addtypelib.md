@@ -1,5 +1,5 @@
 ---
-title: 'IActiveScriptAuthor:: AddTypeLib | Microsoft Docs'
+title: IActiveScriptAuthor::AddTypeLib | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -63,5 +63,5 @@ HRESULT AddTypeLib(
   
 ## <a name="see-also"></a>Consulte também  
    de [interface IActiveScriptAuthor](../../winscript/reference/iactivescriptauthor-interface.md)  
- [IActiveScriptAuthor:: AddNamedItem](../../winscript/reference/iactivescriptauthor-addnameditem.md)    
+ [IActiveScriptAuthor::AddNamedItem](../../winscript/reference/iactivescriptauthor-addnameditem.md)   
  [LoadTypeLib](/previous-versions/windows/desktop/api/oleauto/nf-oleauto-loadtypelib)

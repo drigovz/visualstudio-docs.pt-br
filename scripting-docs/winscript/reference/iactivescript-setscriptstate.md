@@ -1,5 +1,5 @@
 ---
-title: 'IActiveScript:: setscriptstate | Microsoft Docs'
+title: IActiveScript::SetScriptState | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -54,8 +54,8 @@ HRESULT SetScriptState(
  Para obter mais informações sobre os Estados do mecanismo de script, consulte a seção Estados do mecanismo de script dos [mecanismos de script do Windows](../../winscript/windows-script-engines.md) .  
   
 ## <a name="see-also"></a>Consulte também  
- [IActiveScript:: Clone](../../winscript/reference/iactivescript-clone.md)    
- [IActiveScript:: GetScriptDispatch](../../winscript/reference/iactivescript-getscriptdispatch.md)    
- [IActiveScript:: InterruptScriptThread](../../winscript/reference/iactivescript-interruptscriptthread.md)    
- [IActiveScriptParse::P arsescripttext](../../winscript/reference/iactivescriptparse-parsescripttext.md)    
+ [IActiveScript::Clone](../../winscript/reference/iactivescript-clone.md)   
+ [IActiveScript::GetScriptDispatch](../../winscript/reference/iactivescript-getscriptdispatch.md)   
+ [IActiveScript::InterruptScriptThread](../../winscript/reference/iactivescript-interruptscriptthread.md)   
+ [IActiveScriptParse::ParseScriptText](../../winscript/reference/iactivescriptparse-parsescripttext.md)   
  [IActiveScriptSite::GetItemInfo](../../winscript/reference/iactivescriptsite-getiteminfo.md)

@@ -1,5 +1,5 @@
 ---
-title: 'IDebugDocumentHelper:: init | Microsoft Docs'
+title: IDebugDocumentHelper::Init | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -64,6 +64,6 @@ HRESULT Init(
  Este documento não aparecerá na árvore até que `IDebugDocumentHelper::Attach` seja chamado.  
   
 ## <a name="see-also"></a>Consulte também  
- [IDebugDocumentHelper:: anexar](../../winscript/reference/idebugdocumenthelper-attach.md)    
- @No__t_1 de [interface IDebugDocumentHelper](../../winscript/reference/idebugdocumenthelper-interface.md)  
+ [IDebugDocumentHelper::Attach](../../winscript/reference/idebugdocumenthelper-attach.md)   
+   de [interface IDebugDocumentHelper](../../winscript/reference/idebugdocumenthelper-interface.md)  
  [TEXT_DOC_ATTR Constants](../../winscript/reference/text-doc-attr-constants.md)

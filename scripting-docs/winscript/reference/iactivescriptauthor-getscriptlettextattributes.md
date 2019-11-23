@@ -1,5 +1,5 @@
 ---
-title: 'IActiveScriptAuthor:: GetScriptletTextAttributes | Microsoft Docs'
+title: IActiveScriptAuthor::GetScriptletTextAttributes | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -71,6 +71,6 @@ HRESULT GetScriptletTextAttributes(
 ## <a name="remarks"></a>Comentários  
   
 ## <a name="see-also"></a>Consulte também  
- @No__t_1 de [interface IActiveScriptAuthor](../../winscript/reference/iactivescriptauthor-interface.md)  
- [IActiveScriptAuthor:: GetScriptTextAttributes](../../winscript/reference/iactivescriptauthor-getscripttextattributes.md)    
+   de [interface IActiveScriptAuthor](../../winscript/reference/iactivescriptauthor-interface.md)  
+ [IActiveScriptAuthor::GetScriptTextAttributes](../../winscript/reference/iactivescriptauthor-getscripttextattributes.md)   
  [SOURCE_TEXT_ATTR Enumeration](../../winscript/reference/source-text-attr-enumeration.md)

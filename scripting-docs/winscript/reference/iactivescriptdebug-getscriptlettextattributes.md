@@ -1,5 +1,5 @@
 ---
-title: 'IActiveScriptDebug:: GetScriptletTextAttributes | Microsoft Docs'
+title: IActiveScriptDebug::GetScriptletTextAttributes | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -74,8 +74,8 @@ HRESULT GetScriptletTextAttributes(
  Essa chamada é fornecida porque scriptlets tendem a ser expressões e pode ter uma sintaxe diferente de um bloco de script. Se eles tiverem a mesma sintaxe, a implementação desse método será idêntica à implementação do método `GetScriptTextAttributes`.  
   
 ## <a name="see-also"></a>Consulte também  
- @No__t_1 de [interface IActiveScriptDebug](../../winscript/reference/iactivescriptdebug-interface.md)  
- [IActiveScriptDebug:: GetScriptTextAttributes](../../winscript/reference/iactivescriptdebug-getscripttextattributes.md)    
- @No__t_1 de [interface IDebugDocumentText](../../winscript/reference/idebugdocumenttext-interface.md)  
- [IDebugDocumentText:: gettext](../../winscript/reference/idebugdocumenttext-gettext.md)    
+   de [interface IActiveScriptDebug](../../winscript/reference/iactivescriptdebug-interface.md)  
+ [IActiveScriptDebug::GetScriptTextAttributes](../../winscript/reference/iactivescriptdebug-getscripttextattributes.md)   
+   de [interface IDebugDocumentText](../../winscript/reference/idebugdocumenttext-interface.md)  
+ [IDebugDocumentText::GetText](../../winscript/reference/idebugdocumenttext-gettext.md)   
  [SOURCE_TEXT_ATTR Enumeration](../../winscript/reference/source-text-attr-enumeration.md)

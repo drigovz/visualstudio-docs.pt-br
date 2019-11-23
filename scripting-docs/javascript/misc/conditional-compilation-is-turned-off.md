@@ -28,7 +28,7 @@ Você tentou usar uma variável de compilação condicional sem primeiro ativar 
 /*@cc_on @*/  
 ```  
   
-### <a name="to-correct-this-error"></a>Para corrigir este erro  
+### <a name="to-correct-this-error"></a>Para corrigir esse erro  
   
 - Adicione a seguinte instrução ao início do seu código condicional:  
   
@@ -37,8 +37,8 @@ Você tentou usar uma variável de compilação condicional sem primeiro ativar 
     ```  
   
 ## <a name="see-also"></a>Consulte também  
- @No__t_1 de [compilação condicional](../../javascript/advanced/conditional-compilation-javascript.md)  
- [Variáveis de compilação condicional](../../javascript/advanced/conditional-compilation-variables-javascript.md)    
- [instrução de @cc_on](../../javascript/reference/at-cc-on-statement-javascript.md)    
- [instrução de @if](../../javascript/reference/at-if-statement-javascript.md)    
+   de [compilação condicional](../../javascript/advanced/conditional-compilation-javascript.md)  
+ [Variáveis de compilação condicional](../../javascript/advanced/conditional-compilation-variables-javascript.md)   
+ [instrução de@cc_on](../../javascript/reference/at-cc-on-statement-javascript.md)   
+ [instrução de@if](../../javascript/reference/at-if-statement-javascript.md)   
  [Instrução @set](../../javascript/reference/at-set-statement-javascript.md)

@@ -55,7 +55,7 @@ O JSX é uma extensão da sintaxe de JavaScript, normalmente usada com o React p
 
 O webpack empacota arquivos JavaScript para que eles possam ser executados em um navegador. Ele também pode transformar ou empacotar outros recursos e ativos. Geralmente, é usado para especificar um compilador, como Babel ou TypeScript, para transcompilar código JSX ou TypeScript para JavaScript simples.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>{1&gt;Pré-requisitos&lt;1}
 
 * Você precisa ter o Visual Studio instalado e a carga de trabalho de desenvolvimento de Node.js.
 
@@ -90,7 +90,7 @@ Primeiro, crie um projeto de aplicativo Web Node.js.
     ::: moniker range="vs-2017"
     Na barra de menus superior, escolha **Arquivo** > **Novo** > **Projeto**. No painel esquerdo da caixa de diálogo **Novo Projeto**, expanda **JavaScript** e escolha **Node.js**. No painel central, escolha **Aplicativo Web Node.js em Branco**, digite o nome **NodejsWebAppBlank** e escolha **OK**.
     ::: moniker-end
-    Se não vir o modelo de projeto **Aplicativo Web Node.js em Branco**, instale a carga de trabalho de **desenvolvimento de Node.js**. Confira instruções detalhadas nos [Pré-requisitos](#prerequisites).
+    Se não vir o modelo de projeto **Aplicativo Web Node.js em Branco**, instale a carga de trabalho de **desenvolvimento de Node.js**. Confira instruções detalhadas nos. [Pré-requisitos](#prerequisites).
 
     O Visual Studio cria a nova solução e abre seu projeto.
 
@@ -360,7 +360,7 @@ Do Visual Studio 2019 em diante, é necessário um script de build. Em vez de tr
 
     ![Execute o React no navegador](../javascript/media/tutorial-nodejs-react-running-react.png)
 
-1. Feche a janela do navegador.
+1. Fechar a janela do navegador.
 
 1. Feche a janela do console.
 
@@ -414,7 +414,7 @@ Para este cenário, use o Chrome.
 
     `msedge --remote-debugging-port=9222`
 
-    Or
+    or
 
     `chrome.exe --remote-debugging-port=9222`
     ::: moniker-end
@@ -478,7 +478,7 @@ Para este cenário, use o Chrome.
 5. Na caixa de diálogo **anexar ao processo** , obtenha uma lista filtrada de instâncias do navegador às quais você pode anexar.
 
     ::: moniker range=">=vs-2019"
-    No Visual Studio 2019, escolha o depurador correto para seu navegador de destino, **JavaScript (Chrome)** ou **JavaScript (Microsoft Edge-Chromium)** no campo **anexar a** , digite **Chrome** ou **Edge** na caixa de filtro para filtrar o resultados da pesquisa.
+    No Visual Studio 2019, escolha o depurador correto para seu navegador de destino, **JavaScript (Chrome)** ou **JavaScript (Microsoft Edge-Chromium)** no campo **anexar a** , digite **Chrome** ou **Edge** na caixa de filtro para filtrar os resultados da pesquisa.
     ::: moniker-end
     ::: moniker range="vs-2017"
     No Visual Studio 2017, escolha **código WebKit** no campo **anexar a** , digite **Chrome** na caixa de filtro para filtrar os resultados da pesquisa.

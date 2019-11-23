@@ -24,7 +24,7 @@ ms.locfileid: "72572251"
 # <a name="the-uri-to-be-encoded-contains-an-invalid-character"></a>O URI a ser decodificado contém um caractere inválido
 Você tentou codificar uma cadeia de caracteres como um URI (Uniform Resource Identifier), mas ele continha caracteres inválidos. Embora a maioria dos caracteres sejam válidos dentro de cadeias para serem convertidas em URIs, algumas sequências de caracteres Unicode são ilegais.  
   
-### <a name="to-correct-this-error"></a>Para corrigir este erro  
+### <a name="to-correct-this-error"></a>Para corrigir esse erro  
   
 - Verifique se a cadeia de caracteres a ser codificada contém apenas sequências Unicode válidas. Um URI completo é composto de uma sequência de componentes e separadores. Os nomes entre colchetes angulares representam componentes e ":", "/", ";" e "?" são caracteres reservados usados como separadores. A forma geral é:  
   
@@ -33,5 +33,5 @@ Você tentou codificar uma cadeia de caracteres como um URI (Uniform Resource Id
     ```  
   
 ## <a name="see-also"></a>Consulte também  
- [função encodeURI](../../javascript/reference/encodeuri-function-javascript.md)    
+ [função encodeURI](../../javascript/reference/encodeuri-function-javascript.md)   
  [Função encodeURIComponent](../../javascript/reference/encodeuricomponent-function-javascript.md)

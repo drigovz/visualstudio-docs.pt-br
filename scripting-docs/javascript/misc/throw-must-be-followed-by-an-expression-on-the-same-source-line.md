@@ -32,11 +32,11 @@ if (denominator == 0) {
   
  Você não pode dividir esses dois componentes.  
   
-### <a name="to-correct-this-error"></a>Para corrigir este erro  
+### <a name="to-correct-this-error"></a>Para corrigir esse erro  
   
 - Certifique-se de que a palavra-chave `throw` e a expressão a ser gerada apareçam na mesma linha.  
   
 ## <a name="see-also"></a>Consulte também  
- @No__t_1 de [objeto de erro](../../javascript/reference/error-object-javascript.md)  
- [instrução throw](../../javascript/reference/throw-statement-javascript.md)    
+   de [objeto de erro](../../javascript/reference/error-object-javascript.md)  
+ [instrução throw](../../javascript/reference/throw-statement-javascript.md)   
  [Instrução try...catch...finally](../../javascript/reference/try-dot-dot-dot-catch-dot-dot-dot-finally-statement-javascript.md)

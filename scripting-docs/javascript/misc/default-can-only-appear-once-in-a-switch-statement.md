@@ -24,11 +24,11 @@ ms.locfileid: "72572886"
 # <a name="default-can-only-appear-once-in-a-switch-statement"></a>'default' só pode aparecer em uma instrução 'switch'
 Você tentou usar a instrução **padrão** mais de uma vez em uma instrução switch. O caso padrão é sempre a última instrução de caso em uma instrução switch (é o caso de outono).  
   
-### <a name="to-correct-this-error"></a>Para corrigir este erro  
+### <a name="to-correct-this-error"></a>Para corrigir esse erro  
   
 - Remova as instruções de caso **padrão** extras da instrução de `switch` (use no máximo uma instrução de caso padrão em sua instrução switch).  
   
 ## <a name="see-also"></a>Consulte também  
- [instrução switch](../../javascript/reference/switch-statement-javascript.md)    
- [Controlando o fluxo do programa](../../javascript/controlling-program-flow-javascript.md)    
+ [instrução switch](../../javascript/reference/switch-statement-javascript.md)   
+ [Controlando o fluxo do programa](../../javascript/controlling-program-flow-javascript.md)   
  [Palavras reservadas de JavaScript](../../javascript/reference/javascript-reserved-words.md)

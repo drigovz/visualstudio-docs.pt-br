@@ -66,7 +66,7 @@ ms.locfileid: "72666019"
 
  A saída deste exemplo é:
 
- **Antes da violação: notas: 90, 90, 90 notas privadas: 90, 90, 90 notas seguras, 90, 90, 90** 
+ **Antes da violação: notas: 90, 90, 90 notas privadas: 90, 90, 90 notas seguras, 90, 90, 90**
 **após a violação: notas: 90, 555, 90 notas privadas: 90, 555, 90 notas seguras, 90, 90, 90**
 ## <a name="see-also"></a>Consulte também
  <xref:System.Array?displayProperty=fullName> <xref:System.Collections.ReadOnlyCollectionBase?displayProperty=fullName>

@@ -22,9 +22,9 @@ ms.lasthandoff: 10/18/2019
 ms.locfileid: "72573799"
 ---
 # <a name="javascript-object-expected"></a>Objeto do JavaScript esperado
-Você tentou passar um objeto não [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] para uma função interna que espera um objeto [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]. Várias funções internas exigem objetos definidos no [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] (em oposição aos objetos definidos pelo host ou a um componente externo como um controle).  
+Você tentou passar um objeto não[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] para uma função interna que espera um objeto [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]. Várias funções internas exigem objetos definidos no [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] (em oposição aos objetos definidos pelo host ou a um componente externo como um controle).  
   
-### <a name="to-correct-this-error"></a>Para corrigir este erro  
+### <a name="to-correct-this-error"></a>Para corrigir esse erro  
   
 - Verifique se o objeto que você está passando como parâmetro é do tipo correto.  
   

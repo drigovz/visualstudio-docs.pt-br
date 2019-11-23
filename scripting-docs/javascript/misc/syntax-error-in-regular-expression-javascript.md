@@ -24,11 +24,11 @@ ms.locfileid: "72573660"
 # <a name="syntax-error-in-regular-expression-javascript"></a>Erro de sintaxe em expressão regular (JavaScript)
 A estrutura da sua cadeia de caracteres de pesquisa viola uma ou mais das regras gramaticais de uma [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] expressão regular.  
   
-### <a name="to-correct-this-error"></a>Para corrigir este erro  
+### <a name="to-correct-this-error"></a>Para corrigir esse erro  
   
 - Verifique se a estrutura da cadeia de caracteres de pesquisa de expressão regular adere à sintaxe de expressão regular [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)].  
   
 ## <a name="see-also"></a>Consulte também  
- @No__t_1 de [objeto de expressão regular](../../javascript/reference/regular-expression-object-javascript.md)  
- [Sintaxe de expressão regular (JavaScript)](https://msdn.microsoft.com/library/1400241x)    
+   de [objeto de expressão regular](../../javascript/reference/regular-expression-object-javascript.md)  
+ [Sintaxe de expressão regular (JavaScript)](https://msdn.microsoft.com/library/1400241x)   
  [Método compile (Regular Expression)](../../javascript/reference/compile-method-regular-expression-javascript.md)

@@ -24,10 +24,10 @@ ms.locfileid: "72573414"
 # <a name="expected-"></a>':' esperado
 Você tentou criar uma expressão usando o operador condicional Ternário, mas não incluiu os dois-pontos entre o segundo e o terceiro operandos. O operador condicional Ternário (três operandos) requer um sinal de dois pontos entre o segundo (verdadeiro) e o terceiro (falso) operandos.  
   
-### <a name="to-correct-this-error"></a>Para corrigir este erro  
+### <a name="to-correct-this-error"></a>Para corrigir esse erro  
   
 - Insira dois-pontos entre o segundo e o terceiro operandos.  
   
 ## <a name="see-also"></a>Consulte também  
- [Operador condicional (Ternário) (?:)](../../javascript/reference/conditional-ternary-operator-decrement-javascript.md)    
+ [Operador condicional (Ternário) (?:)](../../javascript/reference/conditional-ternary-operator-decrement-javascript.md)   
  [Operadores](../../javascript/operators-javascript.md)

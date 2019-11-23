@@ -54,6 +54,6 @@ HRESULT AddApplication(
  Esse método é chamado pelo Gerenciador de depuração de processo sempre que `IProcessDebugManager::AddApplication` é chamado.  
   
 ## <a name="see-also"></a>Consulte também  
- @No__t_1 de [interface IMachineDebugManager](../../winscript/reference/imachinedebugmanager-interface.md)  
- [IMachineDebugManager:: RemoveApplication](../../winscript/reference/imachinedebugmanager-removeapplication.md)    
+   de [interface IMachineDebugManager](../../winscript/reference/imachinedebugmanager-interface.md)  
+ [IMachineDebugManager::RemoveApplication](../../winscript/reference/imachinedebugmanager-removeapplication.md)   
  [IProcessDebugManager::AddApplication](../../winscript/reference/iprocessdebugmanager-addapplication.md)

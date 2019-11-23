@@ -47,5 +47,5 @@ HRESULT OnFunctionExit(
  Para chamadas DOM, o mecanismo de script chama [IActiveScriptProfilerCallback2:: OnFunctionExitByName](../../winscript/reference/iactivescriptprofilercallback2-onfunctionexitbyname.md) em vez de `IActiveScriptProfilerCallback::OnFunctionExit`. Isso ocorre devido ao grande número de métodos e propriedades exclusivos no DOM.  
   
 ## <a name="see-also"></a>Consulte também  
- [IActiveScriptProfilerCallback:: OnFunctionEnter](../../winscript/reference/iactivescriptprofilercallback-onfunctionenter.md)    
+ [IActiveScriptProfilerCallback::OnFunctionEnter](../../winscript/reference/iactivescriptprofilercallback-onfunctionenter.md)   
  [Interface IActiveScriptProfilerCallback](../../winscript/reference/iactivescriptprofilercallback-interface.md)

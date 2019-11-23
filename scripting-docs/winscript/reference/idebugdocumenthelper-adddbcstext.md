@@ -1,5 +1,5 @@
 ---
-title: 'IDebugDocumentHelper:: AddDBCSText | Microsoft Docs'
+title: IDebugDocumentHelper::AddDBCSText | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -54,6 +54,6 @@ HRESULT AddDBCSText(
 > Se esse método for chamado depois que `IDebugDocumentHelper::AddDeferredText` for chamado, `E_FAIL` será retornado.  
   
 ## <a name="see-also"></a>Consulte também  
- @No__t_1 de [interface IDebugDocumentHelper](../../winscript/reference/idebugdocumenthelper-interface.md)  
- [IDebugDocumentHelper:: AddDeferredText](../../winscript/reference/idebugdocumenthelper-adddeferredtext.md)    
+   de [interface IDebugDocumentHelper](../../winscript/reference/idebugdocumenthelper-interface.md)  
+ [IDebugDocumentHelper::AddDeferredText](../../winscript/reference/idebugdocumenthelper-adddeferredtext.md)   
  [Interface IDebugDocumentTextEvents](../../winscript/reference/idebugdocumenttextevents-interface.md)

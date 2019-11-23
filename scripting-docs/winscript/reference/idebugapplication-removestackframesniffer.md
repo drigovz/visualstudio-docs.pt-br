@@ -50,6 +50,6 @@ HRESULT RemoveStackFrameSniffer(
  O método `RemoveStackFrameSniffer` remove um provedor de enumerador de quadros de pilha deste aplicativo.  
   
 ## <a name="see-also"></a>Consulte também  
- [IDebugApplication:: AddStackFrameSniffer](../../winscript/reference/idebugapplication-addstackframesniffer.md)    
- @No__t_1 de [interface IDebugApplication](../../winscript/reference/idebugapplication-interface.md)  
+ [IDebugApplication::AddStackFrameSniffer](../../winscript/reference/idebugapplication-addstackframesniffer.md)   
+   de [interface IDebugApplication](../../winscript/reference/idebugapplication-interface.md)  
  [Interface IDebugStackFrameSniffer](../../winscript/reference/idebugstackframesniffer-interface.md)

@@ -1,5 +1,5 @@
 ---
-title: 'IActiveScriptProfilerControl2:: CompleteProfilerStart | Microsoft Docs'
+title: IActiveScriptProfilerControl2::CompleteProfilerStart | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -47,5 +47,5 @@ HRESULT CompleteProfilerStart();
  Chamar `IActiveScriptProfilerControl2::CompleteProfilerStart` garante que os eventos para as funções que já estão na pilha de chamadas sejam enviados. Esse método deve ser chamado depois que a criação de perfil é iniciada em qualquer mecanismo de script que esteja na guia atual. O método pode ser chamado para qualquer mecanismo de script.  
   
 ## <a name="see-also"></a>Consulte também  
- [IActiveScriptProfilerControl2::P repareprofilerstop](../../winscript/reference/iactivescriptprofilercontrol2-prepareprofilerstop.md)    
+ [IActiveScriptProfilerControl2::PrepareProfilerStop](../../winscript/reference/iactivescriptprofilercontrol2-prepareprofilerstop.md)   
  [Interface IActiveScriptProfilerControl2](../../winscript/reference/iactivescriptprofilercontrol2-interface.md)

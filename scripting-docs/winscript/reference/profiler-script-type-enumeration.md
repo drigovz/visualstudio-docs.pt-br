@@ -1,5 +1,5 @@
 ---
-title: Enumeração PROFILER_SCRIPT_TYPE | Microsoft Docs
+title: Enumeração de PROFILER_SCRIPT_TYPE | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -46,7 +46,7 @@ typedef enum {
 |PROFILER_SCRIPT_TYPE_DOM|Especifica uma chamada para o Modelo de Objeto do Documento (DOM) do Internet Explorer, por exemplo, uma chamada para o método `document.getElementById`.|  
   
 ## <a name="see-also"></a>Consulte também  
- [Constantes, enumerações e estruturas do criador de perfil de script ativo](../../winscript/reference/active-script-profiler-constants-enumerations-and-structures.md)    
- [IActiveScriptProfilerCallback:: ScriptCompiled](../../winscript/reference/iactivescriptprofilercallback-scriptcompiled.md)    
- [IActiveScriptProfilerCallback2:: OnFunctionEnterByName](../../winscript/reference/iactivescriptprofilercallback2-onfunctionenterbyname.md)    
+ [Constantes, enumerações e estruturas do criador de perfil de script ativo](../../winscript/reference/active-script-profiler-constants-enumerations-and-structures.md)   
+ [IActiveScriptProfilerCallback::ScriptCompiled](../../winscript/reference/iactivescriptprofilercallback-scriptcompiled.md)   
+ [IActiveScriptProfilerCallback2::OnFunctionEnterByName](../../winscript/reference/iactivescriptprofilercallback2-onfunctionenterbyname.md)   
  [IActiveScriptProfilerCallback2::OnFunctionExitByName](../../winscript/reference/iactivescriptprofilercallback2-onfunctionexitbyname.md)

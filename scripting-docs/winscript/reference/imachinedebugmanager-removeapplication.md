@@ -1,5 +1,5 @@
 ---
-title: 'IMachineDebugManager:: RemoveApplication | Microsoft Docs'
+title: IMachineDebugManager::RemoveApplication | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -50,6 +50,6 @@ HRESULT RemoveApplication(
  Esse método é chamado pelo Gerenciador de depuração de processo sempre que `IProcessDebugManager::RemoveApplication` é chamado.  
   
 ## <a name="see-also"></a>Consulte também  
- [IMachineDebugManager:: AddApplication](../../winscript/reference/imachinedebugmanager-addapplication.md)    
- @No__t_1 de [interface IMachineDebugManager](../../winscript/reference/imachinedebugmanager-interface.md)  
+ [IMachineDebugManager::AddApplication](../../winscript/reference/imachinedebugmanager-addapplication.md)   
+   de [interface IMachineDebugManager](../../winscript/reference/imachinedebugmanager-interface.md)  
  [IProcessDebugManager::RemoveApplication](../../winscript/reference/iprocessdebugmanager-removeapplication.md)

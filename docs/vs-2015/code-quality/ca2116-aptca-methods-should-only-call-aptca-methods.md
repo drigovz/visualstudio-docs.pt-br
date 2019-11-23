@@ -36,17 +36,17 @@ ms.locfileid: "72658689"
  Um método em um assembly com o atributo <xref:System.Security.AllowPartiallyTrustedCallersAttribute?displayProperty=fullName> chama um método em um assembly que não tem o atributo.
 
 ## <a name="rule-description"></a>Descrição da Regra
- Por padrão, os métodos públicos ou protegidos em assemblies com nomes fortes são implicitamente protegidos por uma [demanda de link](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) para confiança total; somente chamadores totalmente confiáveis podem acessar um assembly de nome forte. Os assemblies com nome forte marcados com o atributo <xref:System.Security.AllowPartiallyTrustedCallersAttribute> (APTCA) não têm essa proteção. O atributo desabilita a demanda de link, tornando o assembly acessível a chamadores que não têm confiança total, como a execução de código de uma intranet ou da Internet.
+ Por padrão, os métodos públicos ou protegidos em assemblies com nomes fortes são implicitamente protegidos por uma [demanda de link](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) para confiança total; somente chamadores totalmente confiáveis podem acessar um assembly de nome forte. Os assemblies com nomes fortes marcados com o atributo <xref:System.Security.AllowPartiallyTrustedCallersAttribute> (APTCA) não têm essa proteção. O atributo desabilita a demanda de link, tornando o assembly acessível a chamadores que não têm confiança total, como a execução de código de uma intranet ou da Internet.
 
- Quando o atributo APTCA está presente em um assembly totalmente confiável e o assembly executa o código em outro assembly que não permite chamadores parcialmente confiáveis, uma exploração de segurança é possível. Se dois métodos `M1` e `M2` atenderem às seguintes condições, os chamadores mal-intencionados poderão usar o método `M1` para ignorar a demanda de link de confiança total implícita que protege o `M2`:
+ Quando o atributo APTCA está presente em um assembly totalmente confiável e o assembly executa o código em outro assembly que não permite chamadores parcialmente confiáveis, uma exploração de segurança é possível. Se dois métodos `M1` e `M2` atenderem às condições a seguir, os chamadores mal-intencionados poderão usar o método `M1` para ignorar a demanda de link de confiança total implícita que protege o `M2`:
 
 - `M1` é um método público declarado em um assembly totalmente confiável que tem o atributo APTCA.
 
-- `M1` chama um método `M2` fora do assembly `M1`.
+- `M1` chama um método `M2` fora do assembly de `M1`.
 
-- o assembly de `M2` não tem o atributo APTCA e, portanto, não deve ser executado por ou em nome de chamadores que são parcialmente confiáveis.
+- o assembly de `M2`não tem o atributo APTCA e, portanto, não deve ser executado por ou em nome de chamadores que são parcialmente confiáveis.
 
-  Um chamador parcialmente confiável `X` pode chamar o método `M1`, fazendo com que `M1` chame `M2`. Como `M2` não tem o atributo APTCA, seu chamador imediato (`M1`) deve atender a uma demanda de link para confiança total; o `M1` tem confiança total e, portanto, satisfaz essa verificação. O risco de segurança é porque `X` não participa da demanda de link que protege `M2` de chamadores não confiáveis. Portanto, os métodos com o atributo APTCA não devem chamar métodos que não tenham o atributo.
+  Um chamador parcialmente confiável `X` pode chamar o método `M1`, fazendo com que `M1` chame `M2`. Como `M2` não tem o atributo APTCA, seu chamador imediato (`M1`) deve atender a uma demanda de link para confiança total; `M1` tem confiança total e, portanto, satisfaz essa verificação. O risco de segurança é porque `X` não participa da demanda de link que protege `M2` de chamadores não confiáveis. Portanto, os métodos com o atributo APTCA não devem chamar métodos que não tenham o atributo.
 
 ## <a name="how-to-fix-violations"></a>Como Corrigir Violações
  Se o atributo APCTA for necessário, use uma demanda para proteger o método que chama o assembly de confiança total. As permissões exatas que você exige dependerão da funcionalidade exposta pelo método. Se possível, proteja o método com uma demanda de confiança total para garantir que a funcionalidade subjacente não seja exposta a chamadores parcialmente confiáveis. Se isso não for possível, selecione um conjunto de permissões que proteja efetivamente a funcionalidade exposta. Para obter mais informações sobre as demandas, consulte [demandas](https://msdn.microsoft.com/e5283e28-2366-4519-b27d-ef5c1ddc1f48).
@@ -65,14 +65,14 @@ ms.locfileid: "72658689"
  [!code-csharp[FxCop.Security.YesAptca#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Security.YesAptca/cs/FxCop.Security.YesAptca.cs#1)]
 
 ## <a name="example"></a>Exemplo
- O aplicativo de teste (representado pelo `X` na discussão anterior) é parcialmente confiável.
+ O aplicativo de teste (representado por `X` na discussão anterior) é parcialmente confiável.
 
  [!code-csharp[FxCop.Security.TestAptcaMethods#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Security.TestAptcaMethods/cs/FxCop.Security.TestAptcaMethods.cs#1)]
 
  Este exemplo gerencia a seguinte saída.
 
- **Demanda de confiança total: falha na solicitação.** 
-**ClassRequiringFullTrust. DoWork foi chamado.**
+ **Falha na demanda de confiança: solicitação completa.** 
+**ClassRequiringFullTrust.DoWork foi chamado.**
 ## <a name="related-rules"></a>Regras relacionadas
  [CA2117: os tipos APTCA só devem estender tipos base APTCA](../code-quality/ca2117-aptca-types-should-only-extend-aptca-base-types.md)
 

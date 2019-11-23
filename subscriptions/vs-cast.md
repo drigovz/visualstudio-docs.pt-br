@@ -72,17 +72,17 @@ Após a aprovação de sua solicitação, você receberá um segundo email confi
    > [!NOTE]
    > Não deixe de clicar no link de ativação no email que você receber.  Caso contrário, você não poderá acessar sua assinatura do CAST Highlight. Se o email não estiver na caixa de entrada, não deixe de verificar suas pastas de spam.
 
-## <a name="eligibility"></a>Qualificação
+## <a name="eligibility"></a>Elegibilidade
 | Nível de Assinatura                                                 |     Canais                                            | Benefício                                                          | Renovável?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Standard)   | VL, Azure, Retail, | Avaliar 5 aplicativos por 30 dias|  Nº  Disponível apenas para novos assinantes          |
-| Visual Studio Enterprise com GitHub Enterprise  | VL | Avaliar 5 aplicativos por 30 dias|  Nº  Disponível apenas para novos assinantes          |
-| Visual Studio Professional (Standard) | VL, Azure, Retail                                       | Não disponível                                                             |  N/A          |
-| Visual Studio Professional com GitHub Enterprise | VL                                       | Não disponível                                                             |  N/A          |
-| Visual Studio Test Professional (Padrão)                         | VL, Retail                                              | Não disponível                                             |  N/A           |
-| Plataformas MSDN (Padrão)                                          | VL, Retail                                              | Não disponível                                              |  N/A          |
-| Visual Studio Enterprise (Standard)  | NFR<sup>1</sup> |Não disponível  | N/A |
-| Visual Studio Enterprise, Visual Studio Professional (nuvem mensal) | Azure | Não disponível | N/A |
+| Visual Studio Enterprise (Standard)   | VL, Azure, Retail, | Avaliar 5 aplicativos por 30 dias|  Não.  Disponível apenas para novos assinantes          |
+| Visual Studio Enterprise com GitHub Enterprise  | VL | Avaliar 5 aplicativos por 30 dias|  Não.  Disponível apenas para novos assinantes          |
+| Visual Studio Professional (Standard) | VL, Azure, Retail                                       | Não disponível                                                             |  {1&gt;N/A&lt;1}          |
+| Visual Studio Professional com GitHub Enterprise | VL                                       | Não disponível                                                             |  {1&gt;N/A&lt;1}          |
+| Visual Studio Test Professional (Padrão)                         | VL, Retail                                              | Não disponível                                             |  {1&gt;N/A&lt;1}           |
+| Plataformas MSDN (Padrão)                                          | VL, Retail                                              | Não disponível                                              |  {1&gt;N/A&lt;1}          |
+| Visual Studio Enterprise (Standard)  | NFR<sup>1</sup> |Não disponível  | {1&gt;N/A&lt;1} |
+| Visual Studio Enterprise, Visual Studio Professional (nuvem mensal) | Azure | Não disponível | {1&gt;N/A&lt;1} |
 
 <sup>1</sup>  *inclui: não para revenda (NFR), FTE, profissional mais valioso (MVP), diretor regional (RD), Microsoft Partner Network (MPN), parceiro do setor do Visual Studio (VSIP), Microsoft Certified Trainer, BizSpark, imagine*
 

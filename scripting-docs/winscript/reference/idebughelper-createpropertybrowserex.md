@@ -66,6 +66,6 @@ HRESULT CreatePropertyBrowserEx(
  Esse método retorna um navegador de propriedades que encapsula uma variante e permite a conversão personalizada de valores VARIAntes ou tipos VARTYPE em cadeias de caracteres.  
   
 ## <a name="see-also"></a>Consulte também  
- [IDebugHelper:: CreatePropertyBrowser](../../winscript/reference/idebughelper-createpropertybrowser.md)    
- @No__t_1 de [interface IDebugHelper](../../winscript/reference/idebughelper-interface.md)  
+ [IDebugHelper::CreatePropertyBrowser](../../winscript/reference/idebughelper-createpropertybrowser.md)   
+   de [interface IDebugHelper](../../winscript/reference/idebughelper-interface.md)  
  [Interface IDebugProperty](../../winscript/reference/idebugproperty-interface.md)

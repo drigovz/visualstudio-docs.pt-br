@@ -28,7 +28,7 @@ Você tentou atribuir um valor a um resultado de função. O resultado de uma fu
 myFunction() = 42;  // Attempting to assign the value 42 to the result of the function call.  
 ```  
   
-### <a name="to-correct-this-error"></a>Para corrigir este erro  
+### <a name="to-correct-this-error"></a>Para corrigir esse erro  
   
 - Não use o valor de um resultado de chamada de função como algo ao qual você possa *atribuir*. No entanto, você pode atribuir o resultado da chamada de função *a uma variável* .  
   
@@ -43,6 +43,6 @@ myFunction() = 42;  // Attempting to assign the value 42 to the result of the fu
     ```  
   
 ## <a name="see-also"></a>Consulte também  
- @No__t_1 de [objeto de função](../../javascript/reference/function-object-javascript.md)  
- [Escrevendo   de código JavaScript](../../javascript/writing-javascript-code.md)  
+   de [objeto de função](../../javascript/reference/function-object-javascript.md)  
+ [Escrevendo  de código JavaScript](../../javascript/writing-javascript-code.md)  
  [Funções](../../javascript/functions-javascript.md)

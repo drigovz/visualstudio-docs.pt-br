@@ -47,5 +47,5 @@ HRESULT Detach();
  Esse método remove este nó de aplicativo da árvore do projeto.  
   
 ## <a name="see-also"></a>Consulte também  
- [IDebugApplicationNode:: anexar](../../winscript/reference/idebugapplicationnode-attach.md)    
+ [IDebugApplicationNode::Attach](../../winscript/reference/idebugapplicationnode-attach.md)   
  [IDebugApplicationNode Interface](../../winscript/reference/idebugapplicationnode-interface.md)

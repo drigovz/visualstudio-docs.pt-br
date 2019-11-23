@@ -54,6 +54,6 @@ HRESULT AddStackFrameSniffer(
  Embora os mecanismos de linguagem normalmente chamem esse método para expor seus quadros de pilha para o depurador, é possível que outras entidades exponham os quadros de pilha.  
   
 ## <a name="see-also"></a>Consulte também  
- @No__t_1 de [interface IDebugApplication](../../winscript/reference/idebugapplication-interface.md)  
- [IDebugApplication:: RemoveStackFrameSniffer](../../winscript/reference/idebugapplication-removestackframesniffer.md)    
+   de [interface IDebugApplication](../../winscript/reference/idebugapplication-interface.md)  
+ [IDebugApplication::RemoveStackFrameSniffer](../../winscript/reference/idebugapplication-removestackframesniffer.md)   
  [Interface IDebugStackFrameSniffer](../../winscript/reference/idebugstackframesniffer-interface.md)

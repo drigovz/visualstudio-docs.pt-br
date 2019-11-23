@@ -25,7 +25,7 @@ ms.locfileid: "72572341"
 # <a name="circular-reference-in-value-argument-not-supported"></a>Referência circular no argumento de valor não é compatível
 Foi feita uma tentativa de invocar `JSON.stringify` com um valor que não é válido. O argumento `value`, uma matriz ou um objeto, contém uma referência circular.  
   
-### <a name="to-correct-this-error"></a>Para corrigir este erro  
+### <a name="to-correct-this-error"></a>Para corrigir esse erro  
   
 - Remova a referência circular do argumento.  
   
@@ -43,6 +43,6 @@ var error = JSON.stringify(john);
 ```  
   
 ## <a name="see-also"></a>Consulte também  
- @No__t_1 de [objeto JSON](../../javascript/reference/json-object-javascript.md)  
- [Função JSON. parse](../../javascript/reference/json-parse-function-javascript.md)    
+   de [objeto JSON](../../javascript/reference/json-object-javascript.md)  
+ [Função JSON. parse](../../javascript/reference/json-parse-function-javascript.md)   
  [Erros de tempo de execução JavaScript](../../javascript/reference/javascript-run-time-errors.md)

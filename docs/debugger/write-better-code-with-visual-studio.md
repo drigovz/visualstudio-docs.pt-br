@@ -42,7 +42,7 @@ O código a seguir tem alguns bugs que você pode corrigir usando o IDE do Visua
 
 Para criar o aplicativo:
 
-1. Abra o Visual Studio e escolha **arquivo** > **novo** **projeto** > . Em **Visual C#** , escolha **Windows Desktop** ou **.NET Core**e, no painel central, escolha um **aplicativo de console**.
+1. Abra o Visual Studio e escolha **arquivo** > **novo** **projeto**de > . Em **Visual C#** , escolha **Windows Desktop** ou **.NET Core**e, no painel central, escolha um **aplicativo de console**.
 
     > [!NOTE]
     > Se o modelo de projeto do **Aplicativo de Console** não for exibido, clique no link **Abrir Instalador do Visual Studio** no painel esquerdo da caixa de diálogo **Novo Projeto**. O Instalador do Visual Studio é iniciado. Escolha a carga de trabalho **Desenvolvimento de área de trabalho do .NET** (ou a carga de trabalho **Desenvolvimento multiplataforma do .NET Core**) e escolha **Modificar**.
@@ -186,13 +186,13 @@ Para corrigir esse erro, você examinará outro recurso do IDE, representado pel
 
 O primeiro ondulado vermelho representa um erro de tempo de compilação. Passe o mouse sobre ele e você verá a mensagem ```The name `Encoding` does not exist in the current context```.
 
-Observe que esse erro mostra um ícone de lâmpada à esquerda inferior. Junto com o ícone de chave de fenda ![screwdriver ícone @ no__t-1, o ícone de lâmpada ![light ícone de lâmpada @ no__t-3 representa ações rápidas que podem ajudá-lo a corrigir ou refatorar o código embutido. A lâmpada representa problemas que você *deve* corrigir. A chave de fenda é para problemas que você pode optar por corrigir. Use a primeira correção sugerida para resolver esse erro clicando em **usar System. Text** à esquerda.
+Observe que esse erro mostra um ícone de lâmpada à esquerda inferior. Junto com o ícone de chave de fenda ![ícone de chave de fenda](../ide/media/screwdriver-icon.png), o ícone de lâmpada ![ícone de lâmpada](../ide/media/light-bulb-icon.png) representa ações rápidas que podem ajudá-lo a corrigir ou refatorar o código embutido. A lâmpada representa problemas que você *deve* corrigir. A chave de fenda é para problemas que você pode optar por corrigir. Use a primeira correção sugerida para resolver esse erro clicando em **usar System. Text** à esquerda.
 
 ![Usar a lâmpada para corrigir o código](../debugger/media/write-better-code-missing-include.png)
 
 Quando você clica neste item, o Visual Studio adiciona a instrução `using System.Text` na parte superior do arquivo *Program.cs* e o ondulado vermelho desaparece. (Quando você não tiver certeza do que uma correção sugerida fará, escolha o link **Visualizar alterações** à direita antes de aplicar a correção.)
 
-O erro anterior é um comum que você geralmente corrige adicionando uma nova instrução `using` ao seu código. Há vários erros semelhantes e comuns a este, como ```The type or namespace `Name` cannot be found.``` esses tipos de erros podem indicar uma referência de assembly ausente (clique com o botão direito do mouse noprojeto, escolha Adicionar**referência**de  > ), um nome incorreto ou uma biblioteca ausente que você precisa para adicionar (para C#, clique com o botão direito do mouse no projeto e escolha **gerenciar pacotes NuGet**).
+O erro anterior é um comum que você geralmente corrige adicionando uma nova instrução `using` ao seu código. Há vários erros comuns semelhantes a este, como ```The type or namespace `Name` cannot be found.``` esses tipos de erros podem indicar uma referência de assembly ausente (clique com o botão direito do mouse no projeto, escolha **Adicionar** **referência**de > ), um nome com erros de ortografia ou uma biblioteca ausente que você precisa adicionar C#(para, clique com o botão direito do mouse no projeto e escolha **gerenciar pacotes NuGet**).
 
 ## <a name="fix-the-remaining-errors-and-warnings"></a>Corrigir os erros e avisos restantes
 
@@ -200,9 +200,9 @@ Há mais alguns rabiscos a serem examinados neste código. Aqui, você verá um 
 
 ![Erro de conversão de tipo](../debugger/media/write-better-code-conversion-error.png)
 
-Como o analisador de código não pode adivinhar sua intenção, não há lâmpadas leves para ajudá-lo nesse tempo. Para corrigir esse erro, você precisa saber a intenção do código. Neste exemplo, não é muito difícil ver que `points` deve ser um valor numérico (inteiro), já que você está tentando adicionar `points` a `totalpoints`.
+Como o analisador de código não pode adivinhar sua intenção, não há lâmpadas leves para ajudá-lo nesse tempo. Para corrigir esse erro, você precisa saber a intenção do código. Neste exemplo, não é muito difícil ver que `points` deve ser um valor numérico (inteiro), já que você está tentando adicionar `points` ao `totalpoints`.
 
-Para corrigir esse erro, altere o membro `points` da classe `User` do seguinte:
+Para corrigir esse erro, altere o membro `points` da classe `User` a partir dela:
 
 ```csharp
 [DataMember]
@@ -243,7 +243,7 @@ Quando você tiver corrigido todos os rabiscos vermelhos e resolvidos, ou pelo m
 
 Pressione **F5** (**Depurar > Iniciar Depuração**) ou o botão **Iniciar Depuração** ![Iniciar Depuração](../debugger/media/dbg-tour-start-debugging.png "Iniciar Depuração") na barra de ferramentas Depurar.
 
-Neste ponto, o aplicativo de exemplo gera uma exceção `SerializationException` (um erro de tempo de execução). Ou seja, o aplicativo obstru os dados que ele está tentando serializar. Como você iniciou o aplicativo no modo de depuração (depurador anexado), o auxiliar de exceção do depurador leva você diretamente ao código que gerou a exceção e fornece uma mensagem de erro útil.
+Neste ponto, o aplicativo de exemplo gera uma exceção de `SerializationException` (um erro de tempo de execução). Ou seja, o aplicativo obstru os dados que ele está tentando serializar. Como você iniciou o aplicativo no modo de depuração (depurador anexado), o auxiliar de exceção do depurador leva você diretamente ao código que gerou a exceção e fornece uma mensagem de erro útil.
 
 ![Uma Serializaexception ocorre](../debugger/media/write-better-code-serialization-exception.png)
 
@@ -255,7 +255,7 @@ Ao chegar a uma exceção, você precisa fazer (e responder) algumas perguntas:
 
 * Essa exceção é algo que os usuários podem encontrar?
 
-Se for o primeiro, corrija o bug. (No aplicativo de exemplo, isso significa corrigir os dados inválidos.) Se for o último, talvez seja necessário manipular a exceção em seu código usando um bloco `try/catch` (examinaremos outras estratégias possíveis na próxima seção). No aplicativo de exemplo, substitua o seguinte código:
+Se for o primeiro, corrija o bug. (No aplicativo de exemplo, isso significa corrigir os dados inválidos.) Se for o último, talvez seja necessário manipular a exceção em seu código usando um bloco de `try/catch` (examinaremos outras estratégias possíveis na próxima seção). No aplicativo de exemplo, substitua o seguinte código:
 
 ```csharp
 users = ser.ReadObject(ms) as User[];
@@ -275,13 +275,13 @@ catch (SerializationException)
 }
 ```
 
-Um bloco `try/catch` tem algum custo de desempenho, portanto, você só desejará usá-los quando realmente precisar deles, ou seja, onde (a) eles podem ocorrer na versão de lançamento do aplicativo e onde (b) a documentação do método indica que você deve verificar a exceção (como suming a documentação está completa!). Em muitos casos, você pode manipular uma exceção de forma adequada e o usuário nunca precisará saber sobre ela.
+Um bloco de `try/catch` tem algum custo de desempenho, portanto, você só desejará usá-los quando realmente precisar deles, ou seja, onde (a) eles podem ocorrer na versão de lançamento do aplicativo e onde (b) a documentação do método indica que você deve verificar a exceção (supondo que a documentação esteja completa!). Em muitos casos, você pode manipular uma exceção de forma adequada e o usuário nunca precisará saber sobre ela.
 
 Aqui estão algumas dicas importantes para a manipulação de exceções:
 
 * Evite usar um bloco catch vazio, como `catch (Exception) {}`, que não executa a ação apropriada para expor ou tratar um erro. Um bloco catch vazio ou não informativo pode ocultar exceções e pode tornar seu código mais difícil de Depurar em vez de mais fácil.
 
-* Use o bloco `try/catch` em volta da função específica que gera a exceção (`ReadObject`, no aplicativo de exemplo). Se você usá-lo em uma parte maior do código, acabará ocultando o local do erro. Por exemplo, não use o bloco `try/catch` ao contrário da chamada para a função pai `ReadToObject`, mostrada aqui ou você não saberá exatamente onde ocorreu a exceção.
+* Use o bloco de `try/catch` em volta da função específica que gera a exceção (`ReadObject`, no aplicativo de exemplo). Se você usá-lo em uma parte maior do código, acabará ocultando o local do erro. Por exemplo, não use o bloco `try/catch` ao contrário da chamada para a função pai `ReadToObject`, mostrada aqui ou você não saberá exatamente onde ocorreu a exceção.
 
     ```csharp
     // Don't do this
@@ -306,7 +306,7 @@ Clique no botão **Reiniciar** ![Reiniciar Aplicativo](../debugger/media/dbg-tou
 
 Você pode ver algo nessa saída que não está bem certo. o **nome** e o **sobrenome** do terceiro registro estão em branco!
 
-Esse é um bom momento para falar sobre uma prática de codificação útil, geralmente subutilizada, que é usar instruções `assert` em suas funções. Ao adicionar o código a seguir, você inclui uma verificação de tempo de execução para certificar-se de que `firstname` e `lastname` não são `null`. Substitua o seguinte código no método `UpdateRecords`:
+Esse é um bom momento para falar sobre uma prática de codificação útil, geralmente subutilizada, que é usar `assert` instruções em suas funções. Ao adicionar o código a seguir, você inclui uma verificação de tempo de execução para garantir que `firstname` e `lastname` não sejam `null`. Substitua o seguinte código no método `UpdateRecords`:
 
 ```csharp
 if (existingUser == false)
@@ -329,26 +329,26 @@ if (existingUser == false)
     user.lastname = users[i].lastname;
 ```
 
-Ao adicionar instruções `assert` como essa para suas funções durante o processo de desenvolvimento, você pode ajudar a especificar a intenção do seu código. No exemplo anterior, especificamos o seguinte:
+Ao adicionar `assert` instruções como essa às suas funções durante o processo de desenvolvimento, você pode ajudar a especificar a intenção do seu código. No exemplo anterior, especificamos o seguinte:
 
 * Uma cadeia de caracteres válida é necessária para o primeiro nome
 * Uma cadeia de caracteres válida é necessária para o último nome
 
-Ao especificar a intenção dessa forma, você impõe suas necessidades. Esse é um método simples e útil que você pode usar para surgir bugs durante o desenvolvimento. (as instruções `assert` também são usadas como o elemento principal em testes de unidade.)
+Ao especificar a intenção dessa forma, você impõe suas necessidades. Esse é um método simples e útil que você pode usar para surgir bugs durante o desenvolvimento. (`assert` instruções também são usadas como o elemento principal em testes de unidade.)
 
 Clique no botão **Reiniciar** ![Reiniciar Aplicativo](../debugger/media/dbg-tour-restart.png "RestartApp") na barra de ferramentas Depurar (**Ctrl** + **Shift** + **F5**).
 
 > [!NOTE]
-> O código `assert` está ativo somente em uma compilação de depuração.
+> O código de `assert` está ativo somente em uma compilação de depuração.
 
 Quando você reinicia, o depurador pausa na instrução `assert`, porque a expressão `users[i].firstname != null` é avaliada como `false` em vez de `true`.
 
 ![Assert é resolvido para false](../debugger/media/write-better-code-using-assert.png)
 
-O erro `assert` informa que há um problema que você precisa investigar. `assert` pode abranger muitos cenários em que você não vê necessariamente uma exceção. Neste exemplo, o usuário não verá uma exceção e um valor `null` será adicionado como `firstname` na lista de registros. Isso pode causar problemas posteriormente (como você vê na saída do console) e pode ser mais difícil de depurar.
+O erro de `assert` informa que há um problema que você precisa investigar. `assert` pode abranger muitos cenários em que você não vê necessariamente uma exceção. Neste exemplo, o usuário não verá uma exceção e um valor `null` será adicionado como `firstname` na lista de registros. Isso pode causar problemas posteriormente (como você vê na saída do console) e pode ser mais difícil de depurar.
 
 > [!NOTE]
-> Em cenários em que você chama um método no valor `null`, um `NullReferenceException` resulta. Normalmente, você deseja evitar o uso de um bloco `try/catch` para uma exceção geral, ou seja, uma exceção que não esteja vinculada à função de biblioteca específica. Qualquer objeto pode lançar um `NullReferenceException`. Verifique a documentação da função de biblioteca se você não tiver certeza.
+> Em cenários em que você chama um método no valor `null`, um `NullReferenceException` resultados. Normalmente, você deseja evitar o uso de um bloco de `try/catch` para uma exceção geral, ou seja, uma exceção que não esteja vinculada à função de biblioteca específica. Qualquer objeto pode gerar um `NullReferenceException`. Verifique a documentação da função de biblioteca se você não tiver certeza.
 
 Durante o processo de depuração, é bom manter uma instrução `assert` específica até que você saiba que precisa substituí-la por uma correção de código real. Digamos que você decida que o usuário pode encontrar a exceção em uma compilação de versão do aplicativo. Nesse caso, você deve refatorar o código para garantir que seu aplicativo não lance uma exceção fatal ou resulte em algum outro erro. Portanto, para corrigir esse código, substitua o código a seguir:
 
@@ -366,9 +366,9 @@ if (existingUser == false && users[i].firstname != null && users[i].lastname != 
     User user = new User();
 ```
 
-Ao usar esse código, você preenche os requisitos de código e verifica se um registro com um valor `firstname` ou `lastname` de `null` não é adicionado aos dados.
+Usando esse código, você preenche os requisitos de código e verifica se um registro com um valor de `firstname` ou `lastname` de `null` não é adicionado aos dados.
 
-Neste exemplo, adicionamos as duas instruções `assert` dentro de um loop. Normalmente, ao usar `assert`, é melhor adicionar instruções `assert` no ponto de entrada (início) de uma função ou método. No momento, você está examinando o método `UpdateRecords` no aplicativo de exemplo. Nesse método, você saberá que está com problemas se um dos argumentos do método for `null`, portanto, verifique-os com uma instrução `assert` no ponto de entrada da função.
+Neste exemplo, adicionamos as duas instruções `assert` dentro de um loop. Normalmente, ao usar `assert`, é melhor adicionar instruções `assert` no ponto de entrada (início) de uma função ou método. No momento, você está vendo o método `UpdateRecords` no aplicativo de exemplo. Nesse método, você saberá que está com problemas se um dos argumentos do método for `null`, portanto, verifique-os com uma instrução `assert` no ponto de entrada da função.
 
 ```csharp
 public static void UpdateRecords(List<User> db, User[] users)

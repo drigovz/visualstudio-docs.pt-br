@@ -1,5 +1,5 @@
 ---
-title: 'IDebugDocumentHost:: GetDeferredText | Microsoft Docs'
+title: IDebugDocumentHost::GetDeferredText | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -70,6 +70,6 @@ HRESULT GetDeferredText(
 > Esse método retorna o texto do documento original. O host não mantém o controle das edições ou outras alterações no documento.  
   
 ## <a name="see-also"></a>Consulte também  
- @No__t_1 de [interface IDebugDocumentHost](../../winscript/reference/idebugdocumenthost-interface.md)  
- [IDebugDocumentHelper:: AddDeferredText](../../winscript/reference/idebugdocumenthelper-adddeferredtext.md)    
+   de [interface IDebugDocumentHost](../../winscript/reference/idebugdocumenthost-interface.md)  
+ [IDebugDocumentHelper::AddDeferredText](../../winscript/reference/idebugdocumenthelper-adddeferredtext.md)   
  [SOURCE_TEXT_ATTR Enumeration](../../winscript/reference/source-text-attr-enumeration.md)

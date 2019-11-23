@@ -50,5 +50,5 @@ HRESULT Start(
  Esse método inicia a avaliação da expressão.  
   
 ## <a name="see-also"></a>Consulte também  
- [IDebugExpression:: Abort](../../winscript/reference/idebugexpression-abort.md)    
+ [IDebugExpression:: Abort](../../winscript/reference/idebugexpression-abort.md)   
  [Interface IDebugExpression](../../winscript/reference/idebugexpression-interface.md)

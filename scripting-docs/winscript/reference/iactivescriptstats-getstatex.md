@@ -1,5 +1,5 @@
 ---
-title: 'IActiveScriptStats:: GetStatEx | Microsoft Docs'
+title: IActiveScriptStats::GetStatEx | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -62,5 +62,5 @@ HRESULT GetStatEx(
 > Este método não está implementado no momento.  
   
 ## <a name="see-also"></a>Consulte também  
- [IActiveScriptStats:: getstat](../../winscript/reference/iactivescriptstats-getstat.md)    
+ [IActiveScriptStats::GetStat](../../winscript/reference/iactivescriptstats-getstat.md)   
  [IActiveScriptStats Interface](../../winscript/reference/iactivescriptstats-interface.md)

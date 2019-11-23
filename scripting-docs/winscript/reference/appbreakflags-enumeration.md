@@ -39,7 +39,7 @@ enum enum_APPBREAKFLAGS{APPBREAKFLAG_DEBUGGER_BLOCK= 0x00000001,APPBREAKFLAG_DEB
 |------------|-----------|-----------------|  
 |APPBREAKFLAG_DEBUGGER_BLOCK|0x00000001|O mecanismo de linguagem deve ser interrompido imediatamente em todos os threads com BREAKREASON_DEBUGGER_BLOCK.|  
 |APPBREAKFLAG_DEBUGGER_HALT|0x00000002|O mecanismo de linguagem deve ser interrompido imediatamente com BREAKREASON_DEBUGGER_HALT.|  
-|APPBREAKFLAG_STEP|0x00010000|O mecanismo de linguagem deve ser interrompido imediatamente no thread de Stepping com BREAKREASON_STEP.|  
+|APPBREAKFLAG_STEP|0x00010000|O mecanismo de linguagem deve ser interrompido imediatamente no thread de revisão com BREAKREASON_STEP.|  
 |APPBREAKFLAG_NESTED|0x00020000|O aplicativo está em execução aninhada em um ponto de interrupção.|  
 |APPBREAKFLAG_STEPTYPE_SOURCE|0x00000000|O depurador está passando pelo nível de origem.|  
 |APPBREAKFLAG_STEPTYPE_BYTECODE|0x00100000|O depurador está passando pelo nível de código de byte.|  
@@ -51,5 +51,5 @@ enum enum_APPBREAKFLAGS{APPBREAKFLAG_DEBUGGER_BLOCK= 0x00000001,APPBREAKFLAG_DEB
  Alguns sinalizadores especificam que os mecanismos de idioma devem ser interrompidos na próxima oportunidade, enquanto outros sinalizadores especificam o modo de Stepping do depurador.  
   
 ## <a name="see-also"></a>Consulte também  
- [Constantes, enumerações e estruturas do depurador de script ativo](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)    
+ [Constantes, enumerações e estruturas do depurador de script ativo](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)   
  [BREAKREASON Enumeration](../../winscript/reference/breakreason-enumeration.md)

@@ -50,5 +50,5 @@ HRESULT Attach(
  Esse método adiciona este documento à árvore de documentos, usando `pddhParent` como o pai. Se o `pddhParent` for `NULL`, este documento será o documento de nível superior.  
   
 ## <a name="see-also"></a>Consulte também  
- [IDebugDocumentHelper::D etach](../../winscript/reference/idebugdocumenthelper-detach.md)    
+ [IDebugDocumentHelper::Detach](../../winscript/reference/idebugdocumenthelper-detach.md)   
  [IDebugDocumentHelper Interface](../../winscript/reference/idebugdocumenthelper-interface.md)
