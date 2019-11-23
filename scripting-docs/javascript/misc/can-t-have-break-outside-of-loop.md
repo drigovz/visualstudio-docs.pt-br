@@ -30,11 +30,11 @@ break labelname;
   
  Você só precisa da forma rotulada da palavra-chave **Break** quando estiver usando loops aninhados ou instruções `switch` e precisar interromper um loop que não seja o mais interno.  
   
-### <a name="to-correct-this-error"></a>Para corrigir este erro  
+### <a name="to-correct-this-error"></a>Para corrigir esse erro  
   
 - Verifique se a palavra-chave **Break** aparece dentro de um loop delimitador ou instrução switch.  
   
 ## <a name="see-also"></a>Consulte também  
  [Instrução break](../../javascript/reference/break-statement-javascript.md)   
- [Controlando o fluxo do programa](../../javascript/controlling-program-flow-javascript.md)    
+ [Controlando o fluxo do programa](../../javascript/controlling-program-flow-javascript.md)   
  [Solucionar problemas com scripts](../../javascript/advanced/troubleshooting-your-scripts-javascript.md)
