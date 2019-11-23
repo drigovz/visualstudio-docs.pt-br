@@ -1,5 +1,5 @@
 ---
-title: 'IDebugApplicationNodeEvents:: onAddChild | Microsoft Docs'
+title: IDebugApplicationNodeEvents::onAddChild | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -52,6 +52,6 @@ HRESULT onAddChild(
  Implementadores da interface `IDebugApplicationNode` acionam este evento  
   
 ## <a name="see-also"></a>Consulte também  
- @No__t_1 de [interface IDebugApplicationNodeEvents](../../winscript/reference/idebugapplicationnodeevents-interface.md)  
- [IDebugApplicationNodeEvents:: onRemoveChild](../../winscript/reference/idebugapplicationnodeevents-onremovechild.md)    
+   de [interface IDebugApplicationNodeEvents](../../winscript/reference/idebugapplicationnodeevents-interface.md)  
+ [IDebugApplicationNodeEvents::onRemoveChild](../../winscript/reference/idebugapplicationnodeevents-onremovechild.md)   
  [IDebugApplicationNode Interface](../../winscript/reference/idebugapplicationnode-interface.md)

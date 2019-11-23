@@ -37,7 +37,7 @@ Esta explicação passo a passo ilustra as seguintes tarefas:
 > [!NOTE]
 > Seu computador pode mostrar diferentes nomes ou locais para alguns dos elementos de interface do usuário do Visual Studio nas instruções a seguir. A edição do Visual Studio que você possui e as configurações que você usa determinam esses elementos. Para obter mais informações, confira [Personalizar o IDE do Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>{1&gt;Pré-requisitos&lt;1}
 
 - Edições com suporte do Windows e do SharePoint.
 
@@ -154,4 +154,4 @@ Você pode aprender mais sobre como criar conteúdo de página do SharePoint usa
 ## <a name="see-also"></a>Consulte também
 
 [Como: criar uma página de aplicativo](../sharepoint/how-to-create-an-application-page.md)
-[tipo de página _ layouts de aplicativo](/previous-versions/office/aa979604(v=office.14))
+[tipo de página de _layouts de aplicativo](/previous-versions/office/aa979604(v=office.14))

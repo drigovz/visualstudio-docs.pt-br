@@ -24,14 +24,14 @@ ms.locfileid: "72573778"
 # <a name="label-not-found"></a>Rótulo não encontrado
 Você fez uma referência a um rótulo que não existe. Os rótulos podem ser usados para marcar blocos de código, mas dentro de um escopo especificado, devem ser exclusivos.  
   
-### <a name="to-correct-this-error"></a>Para corrigir este erro  
+### <a name="to-correct-this-error"></a>Para corrigir esse erro  
   
 - Verifique se você não errau o nome do rótulo.  
   
 - Verifique se todas as referências de rótulo são feitas para rótulos que foram definidos no escopo atual (isso inclui as definições de encaminhamento).  
   
 ## <a name="see-also"></a>Consulte também  
- [Instrução rotulada](../../javascript/reference/labeled-statement-javascript.md)    
- [instrução switch](../../javascript/reference/switch-statement-javascript.md)    
+ [Instrução rotulada](../../javascript/reference/labeled-statement-javascript.md)   
+ [instrução switch](../../javascript/reference/switch-statement-javascript.md)   
  [Instrução break](../../javascript/reference/break-statement-javascript.md)   
  [Instrução continue](../../javascript/reference/continue-statement-javascript.md)

@@ -1,5 +1,5 @@
 ---
-title: 'IDebugAsyncOperation:: iniciar | Microsoft Docs'
+title: IDebugAsyncOperation::Start | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -51,7 +51,7 @@ HRESULT Start(
  Esse método faz com que `IDebugSyncOperation::Execute` seja chamado de forma assíncrona no thread obtido do `IDebugSyncOperation::GetTargetThread`. Esse método deve ser chamado somente de dentro do thread do depurador; caso contrário, não retornará até que a operação seja concluída.  
   
 ## <a name="see-also"></a>Consulte também  
- [IDebugAsyncOperation:: Abort](../../winscript/reference/idebugasyncoperation-abort.md)    
- @No__t_1 de [interface IDebugAsyncOperation](../../winscript/reference/idebugasyncoperation-interface.md)  
- [IDebugSyncOperation:: Execute](../../winscript/reference/idebugsyncoperation-execute.md)    
+ [IDebugAsyncOperation::Abort](../../winscript/reference/idebugasyncoperation-abort.md)   
+   de [interface IDebugAsyncOperation](../../winscript/reference/idebugasyncoperation-interface.md)  
+ [IDebugSyncOperation::Execute](../../winscript/reference/idebugsyncoperation-execute.md)   
  [IDebugSyncOperation::GetTargetThread](../../winscript/reference/idebugsyncoperation-gettargetthread.md)

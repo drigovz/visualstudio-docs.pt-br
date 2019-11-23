@@ -1,5 +1,5 @@
 ---
-title: 'IDebugThreadCall:: ThreadCallHandler | Microsoft Docs'
+title: IDebugThreadCall::ThreadCallHandler | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -58,6 +58,6 @@ HRESULT ThreadCallHandler(
  Esse método manipula chamadas para executar o código no thread do depurador.  
   
 ## <a name="see-also"></a>Consulte também  
- @No__t_1 de [interface IDebugThreadCall](../../winscript/reference/idebugthreadcall-interface.md)  
- [IDebugApplication:: SynchronousCallInDebuggerThread](../../winscript/reference/idebugapplication-synchronouscallindebuggerthread.md)    
+   de [interface IDebugThreadCall](../../winscript/reference/idebugthreadcall-interface.md)  
+ [IDebugApplication::SynchronousCallInDebuggerThread](../../winscript/reference/idebugapplication-synchronouscallindebuggerthread.md)   
  [IDebugApplicationThread::SynchronousCallIntoThread](../../winscript/reference/idebugapplicationthread-synchronouscallintothread.md)

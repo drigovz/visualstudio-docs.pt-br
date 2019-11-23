@@ -24,10 +24,10 @@ ms.locfileid: "72573712"
 # <a name="object-member-expected"></a>Membro de objeto esperado
 Você tentou executar uma operação no membro de dados de um objeto, mas o membro não existe.  
   
-### <a name="to-correct-this-error"></a>Para corrigir este erro  
+### <a name="to-correct-this-error"></a>Para corrigir esse erro  
   
 - Certifique-se de que você digitou corretamente o nome do membro de dados.  
   
 ## <a name="see-also"></a>Consulte também  
- [Objeto de objeto](../../javascript/reference/object-object-javascript.md)    
+ [Objeto de objeto](../../javascript/reference/object-object-javascript.md)   
  [Objetos e matrizes](../../javascript/objects-and-arrays-javascript.md)

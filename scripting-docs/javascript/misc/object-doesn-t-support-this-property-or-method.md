@@ -24,7 +24,7 @@ ms.locfileid: "72573742"
 # <a name="object-doesnt-support-this-property-or-method"></a>O objeto não dá suporte a essa propriedade ou método
 Você especificou uma propriedade ou um método que não existe para esse objeto. Nem todos os objetos são compatíveis com todas as propriedades e todos os métodos.  
   
-### <a name="to-correct-this-error"></a>Para corrigir este erro  
+### <a name="to-correct-this-error"></a>Para corrigir esse erro  
   
 - Verifique as propriedades e os métodos em busca de erros de digitação.  
   
@@ -33,5 +33,5 @@ Você especificou uma propriedade ou um método que não existe para esse objeto
 - Confira a documentação do objeto para saber mais.  
   
 ## <a name="see-also"></a>Consulte também  
- [Objeto de objeto](../../javascript/reference/object-object-javascript.md)    
+ [Objeto de objeto](../../javascript/reference/object-object-javascript.md)   
  [Objetos JavaScript](../../javascript/reference/javascript-objects.md)

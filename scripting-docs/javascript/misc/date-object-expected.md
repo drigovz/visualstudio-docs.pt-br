@@ -30,11 +30,11 @@ o.f = Date.prototype.toString;
 o.f();  
 ```  
   
-### <a name="to-correct-this-error"></a>Para corrigir este erro  
+### <a name="to-correct-this-error"></a>Para corrigir esse erro  
   
 - Invocar apenas os métodos **Date. prototype. ToString** ou **Date. prototype. valueOf** em objetos do tipo `Date`.  
   
 ## <a name="see-also"></a>Consulte também  
  [Objeto Date](../../javascript/reference/date-object-javascript.md)   
- [método GETDATE (Date)](../../javascript/reference/getdate-method-date-javascript.md)    
+ [método GETDATE (Date)](../../javascript/reference/getdate-method-date-javascript.md)   
  [Objetos intrínsecos](../../javascript/intrinsic-objects-javascript.md)

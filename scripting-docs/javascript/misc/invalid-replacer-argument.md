@@ -25,7 +25,7 @@ ms.locfileid: "72573803"
 # <a name="invalid-replacer-argument"></a>Argumento substituto inválido
 Foi feita uma tentativa de invocar `JSON.stringify` com um argumento que não é válido. O argumento `replacer` deve ser uma função ou uma matriz.  
   
-### <a name="to-correct-this-error"></a>Para corrigir este erro  
+### <a name="to-correct-this-error"></a>Para corrigir esse erro  
   
 - Altere o argumento `replacer` para uma função ou uma matriz.  
   
@@ -45,6 +45,6 @@ var jsontext = JSON.stringify(contact, memberfilter, "\t");
 ```  
   
 ## <a name="see-also"></a>Consulte também  
- @No__t_1 de [objeto JSON](../../javascript/reference/json-object-javascript.md)  
- [Função JSON. parse](../../javascript/reference/json-parse-function-javascript.md)    
+   de [objeto JSON](../../javascript/reference/json-object-javascript.md)  
+ [Função JSON. parse](../../javascript/reference/json-parse-function-javascript.md)   
  [Erros de tempo de execução JavaScript](../../javascript/reference/javascript-run-time-errors.md)

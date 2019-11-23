@@ -1,5 +1,5 @@
 ---
-title: 'IMachineDebugManagerCookie:: AddApplication | Microsoft Docs'
+title: IMachineDebugManagerCookie::AddApplication | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -58,6 +58,6 @@ HRESULT AddApplication(
  Esse método é chamado pelo Gerenciador de depuração de processo sempre que `IProcessDebugManager::AddApplication` é chamado.  
   
 ## <a name="see-also"></a>Consulte também  
- @No__t_1 de [interface IMachineDebugManagerCookie](../../winscript/reference/imachinedebugmanagercookie-interface.md)  
- [IMachineDebugManagerCookie:: RemoveApplication](../../winscript/reference/imachinedebugmanagercookie-removeapplication.md)    
+   de [interface IMachineDebugManagerCookie](../../winscript/reference/imachinedebugmanagercookie-interface.md)  
+ [IMachineDebugManagerCookie::RemoveApplication](../../winscript/reference/imachinedebugmanagercookie-removeapplication.md)   
  [IProcessDebugManager::AddApplication](../../winscript/reference/iprocessdebugmanager-addapplication.md)

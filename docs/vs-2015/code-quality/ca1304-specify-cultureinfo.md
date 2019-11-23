@@ -66,13 +66,13 @@ ms.locfileid: "72661466"
  [!code-csharp[FxCop.Globalization.CultureInfo#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Globalization.CultureInfo/cs/FxCop.Globalization.CultureInfo.cs#1)]
 
 ## <a name="example"></a>Exemplo
- O exemplo a seguir mostra o efeito da cultura atual no padrão <xref:System.IFormatProvider> que é selecionado pelo tipo <xref:System.DateTime>.
+ O exemplo a seguir mostra o efeito da cultura atual no <xref:System.IFormatProvider> padrão selecionado pelo tipo de <xref:System.DateTime>.
 
  [!code-csharp[FxCop.Globalization.IFormatProvider#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Globalization.IFormatProvider/cs/FxCop.Globalization.IFormatProvider.cs#1)]
 
  Este exemplo gerencia a seguinte saída.
 
- **6/4/1900 12:15:12 PM** 
+ **6/4/1900 12:15:12 PM**
 **06/04/1900 12:15:12**
 ## <a name="related-rules"></a>Regras relacionadas
  [CA1305: especificar IFormatProvider](../code-quality/ca1305-specify-iformatprovider.md)

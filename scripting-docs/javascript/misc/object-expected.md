@@ -24,7 +24,7 @@ ms.locfileid: "72573729"
 # <a name="object-expected"></a>Objeto esperado
 Você tentou invocar um método ou propriedade em um objeto de um tipo diferente de `Object`, ou passou um argumento de um tipo diferente de `Object` quando um `Object` era necessário.  
   
-### <a name="to-correct-this-error"></a>Para corrigir este erro  
+### <a name="to-correct-this-error"></a>Para corrigir esse erro  
   
 - Invoque apenas o método ou propriedade em objetos do tipo `Object`.  
   
@@ -47,5 +47,5 @@ Você tentou invocar um método ou propriedade em um objeto de um tipo diferente
     ```  
   
 ## <a name="see-also"></a>Consulte também  
- [Objeto de objeto](../../javascript/reference/object-object-javascript.md)    
+ [Objeto de objeto](../../javascript/reference/object-object-javascript.md)   
  [Objetos e matrizes](../../javascript/objects-and-arrays-javascript.md)

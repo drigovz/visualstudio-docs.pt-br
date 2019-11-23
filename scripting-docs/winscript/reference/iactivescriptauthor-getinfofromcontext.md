@@ -1,5 +1,5 @@
 ---
-title: 'IActiveScriptAuthor:: GetInfoFromContext | Microsoft Docs'
+title: IActiveScriptAuthor::GetInfoFromContext | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -65,7 +65,7 @@ HRESULT GetInfoFromContext(
 |SCRIPT_CMPL_PARAMLIST|0x0004|Lista de parâmetros do método de chamada.|  
 |SCRIPT_CMPL_GLOBALLIST|0x0008|Lista global.|  
   
- O tipo SCRIPT_CMPL_GLOBALLIST é tratado como um item de conclusão padrão que pode ser combinado usando o operador OR com outros itens de conclusão. O mecanismo de criação de scripts primeiro tenta popular informações de tipo para outros itens de lista de conclusão. Se isso falhar, o mecanismo populará para SCRIPT_CMPL_GLOBALLIST.  
+ O tipo de SCRIPT_CMPL_GLOBALLIST é tratado como um item de conclusão padrão que pode ser combinado usando o operador OR com outros itens de conclusão. O mecanismo de criação de scripts primeiro tenta popular informações de tipo para outros itens de lista de conclusão. Se isso falhar, o mecanismo populará para SCRIPT_CMPL_GLOBALLIST.  
   
  `pdwListTypesProvided`  
  fora O tipo de lista fornecido.  
@@ -88,7 +88,7 @@ HRESULT GetInfoFromContext(
  `piCurrentParameter`  
  fora O índice do parâmetro que contém a posição atual. Se a posição atual estiver no nome da função,-1 será retornado.  
   
- O valor `piCurrentParameter` é populado somente quando `dwListTypesRequested` inclui SCRIPT_CMPL_PARAMLIST.  
+ O valor `piCurrentParameter` é preenchido somente quando `dwListTypesRequested` inclui SCRIPT_CMPL_PARAMLIST.  
   
  `ppunk`  
  As informações de tipo, que são fornecidas na forma de um objeto de `IProvideMultipleClassInfo`.  

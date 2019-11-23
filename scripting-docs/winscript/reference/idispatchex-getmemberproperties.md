@@ -1,5 +1,5 @@
 ---
-title: 'IDispatchEx:: GetMemberProperties | Microsoft Docs'
+title: IDispatchEx::GetMemberProperties | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -97,6 +97,6 @@ BSTR bstrName;
 ```  
   
 ## <a name="see-also"></a>Consulte também  
- @No__t_1 de [interface IDispatchEx](../../winscript/reference/idispatchex-interface.md)  
- [IDispatchEx:: getdispid](../../winscript/reference/idispatchex-getdispid.md)    
+   de [interface IDispatchEx](../../winscript/reference/idispatchex-interface.md)  
+ [IDispatchEx::GetDispID](../../winscript/reference/idispatchex-getdispid.md)   
  [IDispatchEx::GetNextDispID](../../winscript/reference/idispatchex-getnextdispid.md)

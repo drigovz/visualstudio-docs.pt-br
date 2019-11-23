@@ -1,5 +1,5 @@
 ---
-title: 'IActiveScriptStats:: getstat | Microsoft Docs'
+title: IActiveScriptStats::GetStat | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -62,5 +62,5 @@ HRESULT GetStat(
  Esse método retorna uma das estatísticas de script padrão.  
   
 ## <a name="see-also"></a>Consulte também  
- [IActiveScriptStats:: GetStatEx](../../winscript/reference/iactivescriptstats-getstatex.md)    
+ [IActiveScriptStats::GetStatEx](../../winscript/reference/iactivescriptstats-getstatex.md)   
  [IActiveScriptStats Interface](../../winscript/reference/iactivescriptstats-interface.md)

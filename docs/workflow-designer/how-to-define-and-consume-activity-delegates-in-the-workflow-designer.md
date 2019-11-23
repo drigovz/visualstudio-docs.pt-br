@@ -26,13 +26,13 @@ O .NET Framework 4,5 inclui um designer pronto para a atividade de <xref:System.
    > [!NOTE]
    > Se você não vir os modelos de projeto de **fluxo de trabalho** , primeiro instale o componente **Windows Workflow Foundation** do Visual Studio. Para obter instruções detalhadas, consulte [instalar Windows Workflow Foundation](developing-applications-with-the-workflow-designer.md#install-windows-workflow-foundation).
 
-3. Clique com o botão direito do mouse no projeto em **Gerenciador de soluções** e selecione **Adicionar**  > **novo item**. Selecione a categoria **fluxo de trabalho** e, em seguida, selecione o modelo item de **atividade** . Nomeie a nova atividade **myforeach. XAML** e, em seguida, selecione **OK**.
+3. Clique com o botão direito do mouse no projeto em **Gerenciador de soluções** e selecione **Adicionar** > **novo item**. Selecione a categoria **fluxo de trabalho** e, em seguida, selecione o modelo item de **atividade** . Nomeie a nova atividade **myforeach. XAML** e, em seguida, selecione **OK**.
 
    A atividade é aberta no designer de fluxo de trabalho.
 
 4. Na Designer de Fluxo de Trabalho, clique na guia **argumentos** .
 
-5. Clique em **criar argumento**. Nomeie os novos **itens**de argumento.
+5. Clique em **Criar Argumento**. Nomeie os novos **itens**de argumento.
 
 6. Na coluna **tipo de argumento** , selecione **matriz de [T]** .
 
@@ -42,7 +42,7 @@ O .NET Framework 4,5 inclui um designer pronto para a atividade de <xref:System.
 
 9. Na coluna tipo de argumento, selecione **procurar tipos**
 
-10. No navegador de tipos, insira **ActivityAction** no campo **nome do tipo** . Selecione **activityaction \<T >** no modo de exibição de árvore. Selecione **objeto** na lista suspensa que aparece para atribuir o tipo **activityaction \<Object >** ao argumento.
+10. No navegador de tipos, insira **ActivityAction** no campo **nome do tipo** . Selecione **activityaction\<t >** no modo de exibição de árvore. Selecione **objeto** na lista suspensa que aparece para atribuir o tipo **ActivityAction\<objeto >** ao argumento.
 
 11. Arraste uma atividade de <xref:System.Activities.Statements.While> da seção **fluxo de controle** da caixa de ferramentas para a superfície do designer.
 
@@ -70,7 +70,7 @@ O .NET Framework 4,5 inclui um designer pronto para a atividade de <xref:System.
 
 ## <a name="use-the-custom-activity-in-a-workflow"></a>Use a atividade personalizado em um fluxo de trabalho
 
-1. Crie o projeto pressionando **Ctrl** +**Shift** +**B**.
+1. Crie o projeto pressionando **Ctrl**+**Shift**+**B**.
 
 2. No **Gerenciador de soluções**, abra **Workflow1. XAML** no designer.
 
@@ -84,5 +84,5 @@ O .NET Framework 4,5 inclui um designer pronto para a atividade de <xref:System.
 
 Quando o fluxo de trabalho é executado, o console mostra a seguinte saída:
 
-**1** 
-**ABC**
+**1**
+**abc**

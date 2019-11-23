@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentHelper::D efineScriptBlock | Microsoft Docs
+title: IDebugDocumentHelper::DefineScriptBlock | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -70,6 +70,6 @@ HRESULT DefineScriptBlock(
  O método `DefineScriptBlock` deve ser chamado depois que o texto tiver sido adicionado (por exemplo, usando o método `IDebugDocumentHelper::AddDBCSText`), mas antes de o bloco de script ter sido analisado (por exemplo, usando o método `IActiveScriptParse ::ParseScriptText`).  
   
 ## <a name="see-also"></a>Consulte também  
- @No__t_1 de [interface IDebugDocumentHelper](../../winscript/reference/idebugdocumenthelper-interface.md)  
- [IDebugDocumentHelper:: AddDBCSText](../../winscript/reference/idebugdocumenthelper-adddbcstext.md)    
+   de [interface IDebugDocumentHelper](../../winscript/reference/idebugdocumenthelper-interface.md)  
+ [IDebugDocumentHelper::AddDBCSText](../../winscript/reference/idebugdocumenthelper-adddbcstext.md)   
  [IDebugDocumentHelper::AddUnicodeText](../../winscript/reference/idebugdocumenthelper-addunicodetext.md)

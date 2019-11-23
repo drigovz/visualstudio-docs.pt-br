@@ -100,7 +100,7 @@ Depois de selecionar o C# modelo de projeto e nomear o arquivo, o Visual Studio 
 
      ![Escolha a caixa de ferramentas para abrir a janela caixa de ferramentas](../ide/media/csharp-toolbox-toolwindow.png)
 
-     (Se você não encontrar a opção suspensa **Caixa de Ferramentas**, ela poderá ser aberta da barra de menus. Para fazer isso, **exiba**a caixa de**ferramentas** > . Ou pressione **Ctrl**+**Alt**+**X**.)
+     (Se você não encontrar a opção suspensa **Caixa de Ferramentas**, ela poderá ser aberta da barra de menus. Para fazer isso, **exiba** > **caixa de ferramentas**. Ou pressione **Ctrl**+**Alt**+**X**.)
 
 1. Escolha o ícone de **pino** para encaixar a janela caixa de **ferramentas** .
 
@@ -110,7 +110,7 @@ Depois de selecionar o C# modelo de projeto e nomear o arquivo, o Visual Studio 
 
      ![Adicionar um botão no formulário](../ide/media/csharp-add-button-form1.png)
 
-1. Na janela **Propriedades** , localize o **texto**, altere o nome de **Button1** para `Click this` e pressione **Enter**.
+1. Na janela **Propriedades** , localize o **texto**, altere o nome de **Button1** para `Click this`e pressione **Enter**.
 
      ![Adicionar texto no botão do formulário](../ide/media/vb-button-control-text.png)
 
@@ -129,7 +129,7 @@ Agora que adicionamos um controle de botão para criar uma ação, vamos adicion
 
 1. Selecione o controle **Rótulo** da janela **Caixa de Ferramentas** e, então, arraste-a para o formulário e solte-a abaixo do botão **Clique aqui**.
 
-1. Na seção **design** ou na seção **(DataBindings)** da janela **Propriedades** , altere o nome de **Label1** para `lblHelloWorld` e pressione **Enter**.
+1. Na seção **design** ou na seção **(DataBindings)** da janela **Propriedades** , altere o nome de **Label1** para `lblHelloWorld`e pressione **Enter**.
 
 ### <a name="add-code-to-the-form"></a>Adicionar código ao formulário
 
@@ -137,7 +137,7 @@ Agora que adicionamos um controle de botão para criar uma ação, vamos adicion
 
       (Como alternativa, você pode expandir **Form1.cs** em **Gerenciador de soluções**e, em seguida, escolher **Form1**.)
 
-1. Na janela **Form1.cs** , após a linha **void particular** , digite ou insira `lblHelloWorld.Text = "Hello World!";`, conforme mostrado na seguinte captura de tela:
+1. Na janela **Form1.cs** , após a linha **void particular** , digite ou insira `lblHelloWorld.Text = "Hello World!";` conforme mostrado na seguinte captura de tela:
 
      ![Adicionar código ao formulário](../get-started/csharp/media/csharp-winforms-add-code.png)
 
@@ -160,7 +160,7 @@ Agora que adicionamos um controle de botão para criar uma ação, vamos adicion
 Para saber mais, continue com o tutorial a seguir:
 
 > [!div class="nextstepaction"]
-> [Tutorial: Criar um visualizador de imagens @ no__t-0
+> [Tutorial: criar um visualizador de imagens](tutorial-1-create-a-picture-viewer.md)
 
 ## <a name="see-also"></a>Consulte também
 

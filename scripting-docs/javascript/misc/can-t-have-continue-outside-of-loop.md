@@ -32,7 +32,7 @@ Você tentou usar a instrução **continue** fora de um loop. A instrução **co
   
 - loop **for/in** .  
   
-### <a name="to-correct-this-error"></a>Para corrigir este erro  
+### <a name="to-correct-this-error"></a>Para corrigir esse erro  
   
 - Certifique-se de que a instrução **continue** apareça no corpo de um:  
   
@@ -45,6 +45,6 @@ Você tentou usar a instrução **continue** fora de um loop. A instrução **co
   - loop **for/in** .  
   
 ## <a name="see-also"></a>Consulte também  
- [instrução continue](../../javascript/reference/continue-statement-javascript.md)    
- [Controlando o fluxo do programa](../../javascript/controlling-program-flow-javascript.md)    
+ [instrução continue](../../javascript/reference/continue-statement-javascript.md)   
+ [Controlando o fluxo do programa](../../javascript/controlling-program-flow-javascript.md)   
  [Solucionar problemas com scripts](../../javascript/advanced/troubleshooting-your-scripts-javascript.md)

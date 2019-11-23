@@ -1,5 +1,5 @@
 ---
-title: 'IRemoteDebugApplication:: getdebugger | Microsoft Docs'
+title: IRemoteDebugApplication::GetDebugger | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -50,5 +50,5 @@ HRESULT GetDebugger(
  Esse método retorna o depurador atual conectado ao aplicativo.  
   
 ## <a name="see-also"></a>Consulte também  
- [IRemoteDebugApplication:: ConnectDebugger](../../winscript/reference/iremotedebugapplication-connectdebugger.md)    
+ [IRemoteDebugApplication::ConnectDebugger](../../winscript/reference/iremotedebugapplication-connectdebugger.md)   
  [IRemoteDebugApplication Interface](../../winscript/reference/iremotedebugapplication-interface.md)

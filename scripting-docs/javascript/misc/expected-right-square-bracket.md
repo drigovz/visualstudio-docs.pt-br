@@ -24,10 +24,10 @@ ms.locfileid: "72576519"
 # <a name="expected-"></a>']' esperado
 Você fez uma referência a um elemento de matriz, mas não incluiu o colchete direito. Qualquer expressão que se refere a um elemento de matriz deve incluir colchetes de abertura e de fechamento.  
   
-### <a name="to-correct-this-error"></a>Para corrigir este erro  
+### <a name="to-correct-this-error"></a>Para corrigir esse erro  
   
 - Adicione o colchete direito à expressão que se refere ao elemento da matriz.  
   
 ## <a name="see-also"></a>Consulte também  
- [Usando matrizes](../../javascript/advanced/using-arrays-javascript.md)    
+ [Usando matrizes](../../javascript/advanced/using-arrays-javascript.md)   
  [Objeto Array](../../javascript/reference/array-object-javascript.md)

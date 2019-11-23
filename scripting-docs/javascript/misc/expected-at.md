@@ -1,5 +1,5 @@
 ---
-title: Esperado ' @ ' | Microsoft Docs
+title: Esperado '@' | Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -21,10 +21,10 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 10/18/2019
 ms.locfileid: "72576508"
 ---
-# <a name="expected-"></a>' @No__t_0 ' esperado
+# <a name="expected-"></a>'\@' esperado
 Você tentou criar uma variável a ser usada com instruções de compilação condicional usando a instrução `@set`, mas não localizou um sinal de arroba " **@** " antes do nome da variável.  
   
-### <a name="to-correct-this-error"></a>Para corrigir este erro  
+### <a name="to-correct-this-error"></a>Para corrigir esse erro  
   
 - Adicione um sinal " **@** " imediatamente antes do nome da variável. Por exemplo:  
   
@@ -33,6 +33,6 @@ Você tentou criar uma variável a ser usada com instruções de compilação co
     ```  
   
 ## <a name="see-also"></a>Consulte também  
- [instrução de @set](../../javascript/reference/at-set-statement-javascript.md)    
- @No__t_1 de [compilação condicional](../../javascript/advanced/conditional-compilation-javascript.md)  
+ [instrução de@set](../../javascript/reference/at-set-statement-javascript.md)   
+   de [compilação condicional](../../javascript/advanced/conditional-compilation-javascript.md)  
  [Variáveis de compilação condicional](../../javascript/advanced/conditional-compilation-variables-javascript.md)

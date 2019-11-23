@@ -1,5 +1,5 @@
 ---
-title: Enumeração PROFILER_EVENT_MASK | Microsoft Docs
+title: Enumeração de PROFILER_EVENT_MASK | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -51,6 +51,6 @@ typedef enum {
 |PROFILER_EVENT_MASK_TRACE_ALL_WITH_DOM|Cria perfis de todas as funções, incluindo chamadas para o DOM.|  
   
 ## <a name="see-also"></a>Consulte também  
- [Constantes, enumerações e estruturas do criador de perfil de script ativo](../../winscript/reference/active-script-profiler-constants-enumerations-and-structures.md)    
- [IActiveScriptProfilerControl:: SetProfilerEventMask](../../winscript/reference/iactivescriptprofilercontrol-setprofilereventmask.md)    
+ [Constantes, enumerações e estruturas do criador de perfil de script ativo](../../winscript/reference/active-script-profiler-constants-enumerations-and-structures.md)   
+ [IActiveScriptProfilerControl::SetProfilerEventMask](../../winscript/reference/iactivescriptprofilercontrol-setprofilereventmask.md)   
  [IActiveScriptProfilerControl::StartProfiling](../../winscript/reference/iactivescriptprofilercontrol-startprofiling.md)

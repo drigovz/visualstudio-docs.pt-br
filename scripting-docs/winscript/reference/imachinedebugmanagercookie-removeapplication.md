@@ -1,5 +1,5 @@
 ---
-title: 'IMachineDebugManagerCookie:: RemoveApplication | Microsoft Docs'
+title: IMachineDebugManagerCookie::RemoveApplication | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -54,6 +54,6 @@ HRESULT RemoveApplication(
  Esse método é chamado pelo Gerenciador de depuração de processo sempre que `IProcessDebugManager::RemoveApplication` é chamado.  
   
 ## <a name="see-also"></a>Consulte também  
- [IMachineDebugManagerCookie:: AddApplication](../../winscript/reference/imachinedebugmanagercookie-addapplication.md)    
- @No__t_1 de [interface IMachineDebugManagerCookie](../../winscript/reference/imachinedebugmanagercookie-interface.md)  
+ [IMachineDebugManagerCookie::AddApplication](../../winscript/reference/imachinedebugmanagercookie-addapplication.md)   
+   de [interface IMachineDebugManagerCookie](../../winscript/reference/imachinedebugmanagercookie-interface.md)  
  [IProcessDebugManager::RemoveApplication](../../winscript/reference/iprocessdebugmanager-removeapplication.md)

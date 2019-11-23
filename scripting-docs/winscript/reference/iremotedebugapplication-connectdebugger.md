@@ -1,5 +1,5 @@
 ---
-title: 'IRemoteDebugApplication:: ConnectDebugger | Microsoft Docs'
+title: IRemoteDebugApplication::ConnectDebugger | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -51,5 +51,5 @@ HRESULT ConnectDebugger(
  Um aplicativo pode ter apenas um depurador conectado por vez. Esse método falhará se um depurador já estiver conectado.  
   
 ## <a name="see-also"></a>Consulte também  
- [IRemoteDebugApplication:: getdebugger](../../winscript/reference/iremotedebugapplication-getdebugger.md)    
+ [IRemoteDebugApplication::GetDebugger](../../winscript/reference/iremotedebugapplication-getdebugger.md)   
  [IRemoteDebugApplication Interface](../../winscript/reference/iremotedebugapplication-interface.md)

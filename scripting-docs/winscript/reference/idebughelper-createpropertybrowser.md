@@ -1,5 +1,5 @@
 ---
-title: 'IDebugHelper:: CreatePropertyBrowser | Microsoft Docs'
+title: IDebugHelper::CreatePropertyBrowser | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -62,6 +62,6 @@ HRESULT CreatePropertyBrowser(
  Esse método retorna um navegador de propriedades que encapsula uma variante.  
   
 ## <a name="see-also"></a>Consulte também  
- [IDebugHelper:: CreatePropertyBrowserEx](../../winscript/reference/idebughelper-createpropertybrowserex.md)    
- @No__t_1 de [interface IDebugHelper](../../winscript/reference/idebughelper-interface.md)  
+ [IDebugHelper::CreatePropertyBrowserEx](../../winscript/reference/idebughelper-createpropertybrowserex.md)   
+   de [interface IDebugHelper](../../winscript/reference/idebughelper-interface.md)  
  [Interface IDebugProperty](../../winscript/reference/idebugproperty-interface.md)

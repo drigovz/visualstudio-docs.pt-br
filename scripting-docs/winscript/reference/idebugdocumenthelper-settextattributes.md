@@ -1,5 +1,5 @@
 ---
-title: 'IDebugDocumentHelper:: settextattributes | Microsoft Docs'
+title: IDebugDocumentHelper::SetTextAttributes | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -55,11 +55,11 @@ HRESULT SetTextAttributes(
 |`S_OK`|O método foi bem-sucedido.|  
   
 ## <a name="remarks"></a>Comentários  
- É um erro chamar `SetTextAttributes` em um intervalo de texto antes que esse texto seja adicionado ao documento. Chame os métodos `AddDBCSText`, `AddUnicodeText` ou `AddDeferredText` para adicionar texto ao documento.  
+ É um erro chamar `SetTextAttributes` em um intervalo de texto antes que esse texto seja adicionado ao documento. Chame os métodos `AddDBCSText`, `AddUnicodeText`ou `AddDeferredText` para adicionar texto ao documento.  
   
 ## <a name="see-also"></a>Consulte também  
- @No__t_1 de [interface IDebugDocumentHelper](../../winscript/reference/idebugdocumenthelper-interface.md)  
- [IDebugDocumentHelper:: AddUnicodeText](../../winscript/reference/idebugdocumenthelper-addunicodetext.md)    
- [IDebugDocumentHelper:: AddDBCSText](../../winscript/reference/idebugdocumenthelper-adddbcstext.md)    
- [IDebugDocumentHelper:: AddDeferredText](../../winscript/reference/idebugdocumenthelper-adddeferredtext.md)    
+   de [interface IDebugDocumentHelper](../../winscript/reference/idebugdocumenthelper-interface.md)  
+ [IDebugDocumentHelper::AddUnicodeText](../../winscript/reference/idebugdocumenthelper-addunicodetext.md)   
+ [IDebugDocumentHelper::AddDBCSText](../../winscript/reference/idebugdocumenthelper-adddbcstext.md)   
+ [IDebugDocumentHelper::AddDeferredText](../../winscript/reference/idebugdocumenthelper-adddeferredtext.md)   
  [SOURCE_TEXT_ATTR Enumeration](../../winscript/reference/source-text-attr-enumeration.md)

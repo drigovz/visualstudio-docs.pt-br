@@ -1,5 +1,5 @@
 ---
-title: 'IApplicationDebugger:: onHandleBreakPoint | Microsoft Docs'
+title: IApplicationDebugger::onHandleBreakPoint | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -60,7 +60,7 @@ HRESULT onHandleBreakPoint(
  O aplicativo permanecerá suspenso até que o IDE do depurador chame `IRemoteDebugApplication::ResumeFromBreakPoint`.  
   
 ## <a name="see-also"></a>Consulte também  
- @No__t_1 de [interface IApplicationDebugger](../../winscript/reference/iapplicationdebugger-interface.md)  
- [IDebugApplication:: HandleBreakPoint](../../winscript/reference/idebugapplication-handlebreakpoint.md)    
- [IRemoteDebugApplication:: ResumeFromBreakPoint](../../winscript/reference/iremotedebugapplication-resumefrombreakpoint.md)    
+   de [interface IApplicationDebugger](../../winscript/reference/iapplicationdebugger-interface.md)  
+ [IDebugApplication::HandleBreakPoint](../../winscript/reference/idebugapplication-handlebreakpoint.md)   
+ [IRemoteDebugApplication::ResumeFromBreakPoint](../../winscript/reference/iremotedebugapplication-resumefrombreakpoint.md)   
  [BREAKREASON Enumeration](../../winscript/reference/breakreason-enumeration.md)

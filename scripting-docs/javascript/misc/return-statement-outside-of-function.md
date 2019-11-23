@@ -37,11 +37,11 @@ return [ expression ];
   
  Se uma função retornar, pois atingirá o final do corpo da função sem executar uma instrução `return`, o valor retornado será o valor **indefinido** (isso significa que o resultado da função não poderá ser usado como parte de uma expressão maior).  
   
-### <a name="to-correct-this-error"></a>Para corrigir este erro  
+### <a name="to-correct-this-error"></a>Para corrigir esse erro  
   
 - Remova a instrução `return` do corpo principal do seu código (o escopo global).  
   
 ## <a name="see-also"></a>Consulte também  
  [Instrução return](../../javascript/reference/return-statement-javascript.md)   
- @No__t_1 de [objeto de função](../../javascript/reference/function-object-javascript.md)  
+   de [objeto de função](../../javascript/reference/function-object-javascript.md)  
  [Propriedade caller (Function)](../../javascript/reference/caller-property-function-javascript.md)

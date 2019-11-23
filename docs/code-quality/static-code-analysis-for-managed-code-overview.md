@@ -26,15 +26,15 @@ A análise de código para código gerenciado analisa os assemblies gerenciados 
 A ferramenta de análise representa as verificações que executa durante uma análise como mensagens de aviso. As mensagens de aviso identificam problemas de programação e de design relevantes e, quando possível, fornecem informações de como corrigir o problema.
 
 > [!NOTE]
-> A análise herdada (análise de código estático) não tem suporte para projetos .NET Core e .NET Standard no Visual Studio. Se você executar a análise de código em um projeto do .NET Core ou .NET Standard como parte do MSBuild, você verá um erro semelhante a **error: CA0055 : Não foi possível identificar a plataforma para @no__t -0your. dll >** . Para analisar o código em projetos .NET Core ou .NET Standard, use [analisadores de código](../code-quality/roslyn-analyzers-overview.md) em vez disso.
+> A análise herdada (análise de código estático) não tem suporte para projetos .NET Core e .NET Standard no Visual Studio. Se você executar a análise de código em um projeto do .NET Core ou .NET Standard como parte do MSBuild, verá um erro semelhante a **erro: CA0055: não foi possível identificar a plataforma para \<>. dll**. Para analisar o código em projetos .NET Core ou .NET Standard, use [analisadores de código](../code-quality/roslyn-analyzers-overview.md) em vez disso.
 
 ## <a name="ide-integrated-development-environment-integration"></a>Integração do IDE (ambiente de desenvolvimento integrado)
 
 Você pode executar a análise de código em seu projeto manualmente ou automaticamente.
 
-Para executar a análise de código cada vez que você criar um projeto, selecione a opção na página de propriedades de **análise de código** do projeto. Para obter mais informações, confira [Como: habilitar e desabilitar a análise de código automática](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md).
+Para executar a análise de código cada vez que você criar um projeto, selecione a opção na página de propriedades de **análise de código** do projeto. Para obter mais informações, consulte [como habilitar e desabilitar a análise automática de código](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md).
 
-Para executar a análise de código manualmente em um projeto, na barra de menus, escolha **analisar** > **executar análise de código** > **executar análise de código em > de \<project**.
+Para executar a análise de código manualmente em um projeto, na barra de menus, escolha **analisar** > **executar análise de código** > **executar análise de código no > do projeto \<** .
 
 ## <a name="rule-sets"></a>Conjuntos de regras
 
@@ -90,4 +90,4 @@ Você pode usar os recursos integrados do sistema de build para executar a ferra
 
 - [Visão geral de analisadores baseados em .NET Compiler Platform](../code-quality/roslyn-analyzers-overview.md)
 - [Usando conjuntos de regras para agrupar regras de análise de código](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)
-- [Como: habilitar e desabilitar a análise de código automática](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)
+- [Como habilitar e desabilitar a análise de código automática](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)

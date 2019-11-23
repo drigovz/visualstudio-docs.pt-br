@@ -30,10 +30,10 @@ Você tentou usar um identificador que o compilador de [!INCLUDE[javascript](../
   
 - uma propriedade de objeto que não existe.  
   
-### <a name="to-correct-this-error"></a>Para corrigir este erro  
+### <a name="to-correct-this-error"></a>Para corrigir esse erro  
   
 - Declare a variável com uma instrução **var** (como em `var` x;).  
   
 ## <a name="see-also"></a>Consulte também  
- [Variáveis](../../javascript/variables-javascript.md)    
+ [Variáveis](../../javascript/variables-javascript.md)   
  [Escopo de variáveis](../../javascript/advanced/variable-scope-javascript.md)

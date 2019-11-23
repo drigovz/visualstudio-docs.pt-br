@@ -1,5 +1,5 @@
 ---
-title: 'Passo a passo: Analisando o código C/C++ em busca de defeitos'
+title: 'Instruções passo a passo: analisando código do C/C++ em busca de defeitos'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -19,7 +19,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 10/07/2019
 ms.locfileid: "72018347"
 ---
-# <a name="walkthrough-analyzing-cc-code-for-defects"></a>Passo a passo: Analisando o código C/C++ em busca de defeitos
+# <a name="walkthrough-analyzing-cc-code-for-defects"></a>Instruções passo a passo: analisando código do C/C++ em busca de defeitos
 
 Este tutorial demonstra como analisar C/C++ Code para possíveis defeitos de código usando a ferramenta de análise de código para CC++ /Code.
 
@@ -28,7 +28,7 @@ Este tutorial demonstra como analisar C/C++ Code para possíveis defeitos de có
 - Trate o aviso como um erro.
 - Anote o código-fonte para melhorar a análise de defeitos de código.
 
-## <a name="prerequisites"></a>Pré-requisitos
+## <a name="prerequisites"></a>{1&gt;Pré-requisitos&lt;1}
 
 - Uma cópia do [exemplo de demonstração](../code-quality/demo-sample.md).
 - Noções básicas sobre C/C++.
@@ -65,7 +65,7 @@ Este tutorial demonstra como analisar C/C++ Code para possíveis defeitos de có
 
 2. No **lista de erros**, clique duas vezes no seguinte aviso:
 
-     C6230 de aviso: Conversão implícita entre tipos semanticamente diferentes: usando HRESULT em um contexto booliano.
+     aviso C6230: conversão implícita entre tipos semanticamente diferentes: usando HRESULT em um contexto booliano.
 
      O editor de código exibe a linha que causou o aviso na função `bool ProcessDomain()`. Esse aviso indica que um HRESULT está sendo usado em uma instrução ' If ' onde um resultado booliano é esperado.
 
@@ -77,7 +77,7 @@ Este tutorial demonstra como analisar C/C++ Code para possíveis defeitos de có
 
 4. No **lista de erros**, clique duas vezes no seguinte aviso:
 
-     C6282 de aviso: Operador incorreto: atribuição à constante no contexto de teste. Era = = pretendido?
+     aviso C6282: operador incorreto: atribuição à constante no contexto de teste. Era = = pretendido?
 
 5. Corrija esse aviso testando a igualdade. Seu código deve ser semelhante ao seguinte código:
 
@@ -119,7 +119,7 @@ Este tutorial demonstra como analisar C/C++ Code para possíveis defeitos de có
 
 6. No **lista de erros**, clique duas vezes no seguinte aviso:
 
-     C6011 de aviso: Desreferenciando o ponteiro nulo ' newNode '.
+     Aviso C6011: desreferenciando o ponteiro nulo ' newNode '.
 
      Esse aviso indica falha pelo chamador para verificar o valor de retorno. Nesse caso, uma chamada para **AllocateNode** pode retornar um valor nulo (consulte o arquivo de cabeçalho annotations. h para declaração de função para AllocateNode).
 
@@ -142,7 +142,7 @@ Este tutorial demonstra como analisar C/C++ Code para possíveis defeitos de có
 
 ### <a name="to-use-source-code-annotation"></a>Para usar a anotação de código-fonte
 
-1. Anote os parâmetros formais e o valor de retorno da função `AddTail` usando as condições de pré e pós, conforme mostrado neste exemplo:
+1. Anote os parâmetros formais e o valor de retorno da função `AddTail` usando as condições anterior e posterior, conforme mostrado neste exemplo:
 
    ```cpp
    [returnvalue:SA_Post (Null=SA_Maybe)] LinkedList* AddTail
@@ -156,7 +156,7 @@ Este tutorial demonstra como analisar C/C++ Code para possíveis defeitos de có
 
 3. No **lista de erros**, clique duas vezes no seguinte aviso:
 
-     C6011 de aviso: Desreferenciando o ponteiro nulo ' node '.
+     Aviso C6011: desreferenciando o ponteiro nulo ' node '.
 
      Esse aviso indica que o nó passado para a função pode ser nulo e indica o número da linha em que o aviso foi gerado.
 
@@ -178,4 +178,5 @@ Este tutorial demonstra como analisar C/C++ Code para possíveis defeitos de có
 
 ## <a name="see-also"></a>Consulte também
 
-[Passo a passo: Analisando código gerenciado para defeitos de código @ no__t-0 @ no__t-1[análise de códigoC++ para C/](../code-quality/code-analysis-for-c-cpp-overview.md)
+[Walkthrough: analisando código gerenciado para defeitos de código](../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)
+[análise de códigoC++ para C/](../code-quality/code-analysis-for-c-cpp-overview.md)

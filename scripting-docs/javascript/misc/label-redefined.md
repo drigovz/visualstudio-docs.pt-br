@@ -24,12 +24,12 @@ ms.locfileid: "72573769"
 # <a name="label-redefined"></a>Rótulo redefinido
 Você criou um novo rótulo, mas deu a ele o nome de um rótulo existente. Os rótulos podem ser usados para marcar blocos de código, mas dentro de um escopo especificado, eles devem ser exclusivos.  
   
-### <a name="to-correct-this-error"></a>Para corrigir este erro  
+### <a name="to-correct-this-error"></a>Para corrigir esse erro  
   
 - Verifique se todos os rótulos que você usa em seus programas são exclusivos em seus respectivos escopos.  
   
 ## <a name="see-also"></a>Consulte também  
- [Instrução rotulada](../../javascript/reference/labeled-statement-javascript.md)    
- [instrução switch](../../javascript/reference/switch-statement-javascript.md)    
+ [Instrução rotulada](../../javascript/reference/labeled-statement-javascript.md)   
+ [instrução switch](../../javascript/reference/switch-statement-javascript.md)   
  [Instrução break](../../javascript/reference/break-statement-javascript.md)   
  [Instrução continue](../../javascript/reference/continue-statement-javascript.md)

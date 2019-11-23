@@ -100,7 +100,7 @@ Depois de selecionar o modelo de projeto do Visual Basic e nomear seu arquivo, o
 
      ![Clique na Caixa de Ferramentas para abrir a janela da Caixa de Ferramentas](../ide/media/vb-toolbox-toolwindow.png)
 
-     (Se você não encontrar a opção suspensa **Caixa de Ferramentas**, ela poderá ser aberta da barra de menus. Para fazer isso, **exiba**a caixa de**ferramentas** > . Ou pressione **Ctrl**+**Alt**+**X**.)
+     (Se você não encontrar a opção suspensa **Caixa de Ferramentas**, ela poderá ser aberta da barra de menus. Para fazer isso, **exiba** > **caixa de ferramentas**. Ou pressione **Ctrl**+**Alt**+**X**.)
 
 1. Clique no ícone **Fixar** para encaixar a janela **Caixa de Ferramentas**.
 
@@ -129,7 +129,7 @@ Agora que adicionamos um controle de botão para criar uma ação, vamos adicion
 
 1. Selecione o controle **Rótulo** da janela **Caixa de Ferramentas** e, então, arraste-a para o formulário e solte-a abaixo do botão **Clique aqui**.
 
-1. Na seção **design** ou na seção **(DataBindings)** da janela **Propriedades** , altere o nome de **Label1** para `lblHelloWorld` e pressione **Enter**.
+1. Na seção **design** ou na seção **(DataBindings)** da janela **Propriedades** , altere o nome de **Label1** para `lblHelloWorld`e pressione **Enter**.
 
 ### <a name="add-code-to-the-form"></a>Adicionar código ao formulário
 
@@ -137,7 +137,7 @@ Agora que adicionamos um controle de botão para criar uma ação, vamos adicion
 
       (Como alternativa, você pode expandir **Form1.vb** no **Gerenciador de Soluções** e, em seguida, clicar em **Form1**.)
 
-1. Na janela **Form1. vb** , entre as sublinhas **particular** e **final** , digite ou insira `lblHelloWorld.Text = "Hello World!"`, conforme mostrado na seguinte captura de tela:
+1. Na janela **Form1. vb** , entre as sublinhas **particular** e **final** , digite ou insira `lblHelloWorld.Text = "Hello World!"` conforme mostrado na seguinte captura de tela:
 
      ![Adicionar código ao formulário](../ide/media/vb-add-code-to-the-form.png)
 
@@ -160,7 +160,7 @@ Agora que adicionamos um controle de botão para criar uma ação, vamos adicion
 Para saber mais, continue com o tutorial a seguir:
 
 > [!div class="nextstepaction"]
-> [Tutorial: Criar um visualizador de imagens @ no__t-0
+> [Tutorial: criar um visualizador de imagens](tutorial-1-create-a-picture-viewer.md)
 
 ## <a name="see-also"></a>Consulte também
 

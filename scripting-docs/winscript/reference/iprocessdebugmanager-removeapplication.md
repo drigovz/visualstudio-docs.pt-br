@@ -1,5 +1,5 @@
 ---
-title: 'IProcessDebugManager:: RemoveApplication | Microsoft Docs'
+title: IProcessDebugManager::RemoveApplication | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -50,5 +50,5 @@ HRESULT RemoveApplication(
  Esse método Remove um aplicativo da lista de aplicativos em execução.  
   
 ## <a name="see-also"></a>Consulte também  
- [IProcessDebugManager:: AddApplication](../../winscript/reference/iprocessdebugmanager-addapplication.md)    
+ [IProcessDebugManager::AddApplication](../../winscript/reference/iprocessdebugmanager-addapplication.md)   
  [Interface IProcessDebugManager](../../winscript/reference/iprocessdebugmanager-interface.md)

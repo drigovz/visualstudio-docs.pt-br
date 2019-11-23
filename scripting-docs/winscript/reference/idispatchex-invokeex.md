@@ -1,5 +1,5 @@
 ---
-title: 'IDispatchEx:: InvokeEx | Microsoft Docs'
+title: IDispatchEx::InvokeEx | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -57,7 +57,7 @@ HRESULT InvokeEx(
   
 |Valor|Significado|  
 |-----------|-------------|  
-|DISPATCH_METHOD|O membro é invocado como um método. Se uma propriedade tiver o mesmo nome, isso e o sinalizador DISPATCH_PROPERTYGET poderão ser definidos (definidos por `IDispatch`).|  
+|DISPATCH_METHOD|O membro é invocado como um método. Se uma propriedade tiver o mesmo nome, isso e o sinalizador de DISPATCH_PROPERTYGET poderão ser definidos (definidos por `IDispatch`).|  
 |DISPATCH_PROPERTYGET|O membro é recuperado como uma propriedade ou um membro de dados (definido por `IDispatch`).|  
 |DISPATCH_PROPERTYPUT|O membro é alterado como um membro de dados ou propriedade (definido por `IDispatch`).|  
 |DISPATCH_PROPERTYPUTREF|O membro é alterado por uma atribuição de referência em vez de uma atribuição de valor. Esse sinalizador é válido somente quando a propriedade aceita uma referência a um objeto (definido por `IDispatch`).|  
@@ -137,6 +137,6 @@ VARIANT var;
 ```  
   
 ## <a name="see-also"></a>Consulte também  
- @No__t_1 de [interface IDispatchEx](../../winscript/reference/idispatchex-interface.md)  
- [IDispatchEx:: getdispid](../../winscript/reference/idispatchex-getdispid.md)    
+   de [interface IDispatchEx](../../winscript/reference/idispatchex-interface.md)  
+ [IDispatchEx::GetDispID](../../winscript/reference/idispatchex-getdispid.md)   
  [IDispatchEx::GetNextDispID](../../winscript/reference/idispatchex-getnextdispid.md)
