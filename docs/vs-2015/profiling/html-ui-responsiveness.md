@@ -20,12 +20,12 @@ caps.latest.revision: 52
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e8078ad03661e8430158106aa2d0d40f844eb6c3
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: af2b71dd2169500b1c4a75ed59292779959d31a0
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67824833"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299668"
 ---
 # <a name="html-ui-responsiveness"></a>Capacidade de Resposta de interface do usuário HTML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ Este tópico descreve como isolar problemas de desempenho em seus aplicativos us
   
      Se desejar alterar o destino da análise para o criador de perfil, escolha **Alterar Destino**.  
   
-     ![Alterar destino de análise](../profiling/media/js-tools-target.png "JS_Tools_Target")  
+     ![Destino da análise de alterações](../profiling/media/js-tools-target.png "|::ref1::|")  
   
      As seguintes opções estão disponíveis para o destino de análise:  
   
@@ -100,7 +100,7 @@ Este tópico descreve como isolar problemas de desempenho em seus aplicativos us
   
 8. Se você tiver adicionado marcas de usuário, elas aparecerão na opção [Exibir a linha do tempo da sessão de diagnóstico](#Ruler) do criador de perfil. A ilustração a seguir mostra uma única marca de usuário usada para especificar uma operação específica em seu código.  
   
-     ![Régua de diagnóstico mostrando uma marca de usuário](../profiling/media/js-htmlvizprofiler-usermark.png "JS_HTMLVizProfiler_UserMark")  
+     ![Regra de diagnóstico mostrando uma marca de usuário](../profiling/media/js-htmlvizprofiler-usermark.png "|::ref2::|")  
   
 9. Identifique uma área de interesse na linha de tempo e nos gráficos do criador de perfil usando marcas de usuário, eventos de ciclo de vida do aplicativo ou dados visíveis nos gráficos. Veja a seguir algumas diretrizes para ajudá-lo a analisar e usar os dados dos gráficos:  
   
@@ -114,7 +114,7 @@ Este tópico descreve como isolar problemas de desempenho em seus aplicativos us
   
      A ilustração a seguir mostra o gráfico de utilização da CPU com uma área de interesse realçada.  
   
-     ![Gráfico de utilização de CPU](../profiling/media/js-htmlvizprof-cpu-util.png "JS_HTMLVizProf_CPU_Util")  
+     ![Gráfico de utilização da CPU](../profiling/media/js-htmlvizprof-cpu-util.png "|::ref3::|")  
   
 11. Use a opção [Exibir detalhes da linha de tempo](#TimelineDetails) para obter informações detalhadas sobre os eventos que são realizados com muita frequência ou demorando muito tempo para terminar. Por exemplo, procure o seguinte:  
   
@@ -157,7 +157,7 @@ if (performance && performance.mark) {
   
  A ilustração a seguir mostra a régua de diagnóstico com uma única marca de usuário e sua dica de ferramenta.  
   
- ![Régua de diagnóstico mostrando uma marca de usuário](../profiling/media/js-htmlvizprofiler-usermark.png "JS_HTMLVizProfiler_UserMark")  
+ ![Regra de diagnóstico mostrando uma marca de usuário](../profiling/media/js-htmlvizprofiler-usermark.png "|::ref4::|")  
   
  Você também pode criar eventos gerados por ferramenta na exibição dos detalhes da linha do tempo para ver quanto tempo se passa entre duas marcas de usuário. O código a seguir adiciona uma segunda marca de usuário e uma medida do tempo decorrido entre a execução de duas marcas de usuário (o código anterior mostra a primeira marca de usuário).  
   
@@ -172,7 +172,7 @@ if (performance.mark && performance.measure) {
   
  A medição da duração aparece como um evento de **Medida do usuário** na exibição de detalhes da linha do tempo e mostra informações detalhadas quando selecionada.  
   
- ![Evento de medida do usuário na exibição de detalhes da linha do tempo](../profiling/media/js-htmlvizprofiler-user-measure.png "JS_HTMLVizProfiler_User_Measure")  
+ ![Evento de medida do usuário na exibição de detalhes da linha do tempo](../profiling/media/js-htmlvizprofiler-user-measure.png "|::ref5::|")  
   
 ## <a name="AnalyzeData"></a> Analisar dados  
  As seções a seguir fornecem informações para ajudar a interpretar os dados que aparecem no criador de perfil.  
@@ -182,7 +182,7 @@ if (performance.mark && performance.measure) {
   
  Esta é a aparência da sessão de diagnóstico com uma dica de ferramenta exibida para vários eventos de ciclo de vida do aplicativo:  
   
- ![Régua da sessão de diagnóstico](../profiling/media/js-htmlvizprof-ruler.png "JS_HTMLVizProf_Ruler")  
+ ![Régua de sessão de diagnóstico](../profiling/media/js-htmlvizprof-ruler.png "|::ref6::|")  
   
  A linha do tempo mostra quando ocorrem os eventos de ciclo de vida do aplicativo, como o evento de ativação, e mostra marcas de usuário (triângulos com a marca de usuário) que você pode adicionar ao seu código. Você pode selecionar os eventos para mostrar dicas de ferramenta com mais informações. Para obter mais informações sobre as marcas de usuário, consulte [Marcar código para análise](#ProfileMark) neste tópico.  
   
@@ -202,7 +202,7 @@ if (performance.mark && performance.measure) {
   
  Este exemplo mostra a aparência do gráfico da utilização da CPU:  
   
- ![Gráfico de utilização de CPU](../profiling/media/js-htmlvizprof-cpu-util.png "JS_HTMLVizProf_CPU_Util")  
+ ![Gráfico de utilização da CPU](../profiling/media/js-htmlvizprof-cpu-util.png "|::ref7::|")  
   
  Use este gráfico para:  
   
@@ -227,7 +227,7 @@ if (performance.mark && performance.measure) {
   
   Este exemplo mostra a aparência do gráfico Taxa de Transferência Visual:  
   
-  ![Gráfico de taxa de transferência Visual](../profiling/media/js-htmlvizprof-vizthru.png "JS_HTMLVizProf_VizThru")  
+  ![Gráfico de taxa de transferência visual](../profiling/media/js-htmlvizprof-vizthru.png "|::ref8::|")  
   
   Use o gráfico Taxa de Transferência Visual para:  
   
@@ -247,7 +247,7 @@ if (performance.mark && performance.measure) {
   
  Este exemplo mostra a aparência do gráfico de detalhes da linha do tempo quando o ouvinte de eventos para um evento de clique DOM é selecionado:  
   
- ![Gráfico de detalhes da linha do tempo](../profiling/media/js-htmlvizprof-timelinedet.png "JS_HTMLVizProf_TimelineDet")  
+ ![Gráfico de detalhes da linha de tempo](../profiling/media/js-htmlvizprof-timelinedet.png "|::ref9::|")  
   
  Nesta ilustração, o manipulador de eventos **spinAction** na coluna **Nome do evento** é um link que, quando selecionado, levará você ao manipulador de eventos no código-fonte. No painel direito, a propriedade **Callback function** fornece o mesmo link ao código-fonte. Outras propriedades também fornecem informações sobre o evento, como o elemento DOM associado.  
   
@@ -279,14 +279,14 @@ if (performance.mark && performance.measure) {
 ### <a name="FilterTimelineDetails"></a> Filtrar detalhes da linha do tempo  
  Você pode filtrar a exibição nos detalhes da linha do tempo para um evento particular selecionando **Filtrar para evento** no menu de contexto de um evento específico. Quando você escolhe essa opção, a linha do tempo e a exibição de grade têm como escopo o evento selecionado A seleção no gráfico de uso da CPU também tem como escopo o evento especial.  
   
- ![Filtragem de linha do tempo para um evento](../profiling/media/js-htmlvizprofiler-filtertoevent.png "JS_HTMLVizProfiler_FilterToEvent")  
+ ![Filtrando a linha do tempo para um evento](../profiling/media/js-htmlvizprofiler-filtertoevent.png "|::ref10::|")  
   
 ### <a name="FilterEvents"></a> Filtrar eventos  
  Você pode filtrar alguns eventos do gráfico de detalhes da linha do tempo para reduzir o ruído nos dados ou para eliminar dados que não são interessantes para seu cenário de desempenho. É possível filtrar por nome ou por duração de evento, ou ainda, pelos filtros específicos descritos aqui.  
   
  Desmarque a opção **Atividade em segundo plano** do ícone de filtro no painel inferior para filtrar a decodificação de imagem, o download especulativo e os eventos GC. Como esses eventos não são muito acionáveis, eles ficam ocultos por padrão.  
   
- ![Filtrando eventos na linha do tempo](../profiling/media/js-htmlvizprofiler-event-filter.png "JS_HTMLVizProfiler_Event_Filter")  
+ ![Filtrando eventos na linha do tempo](../profiling/media/js-htmlvizprofiler-event-filter.png "|::ref11::|")  
   
  Para filtrar os eventos de solicitação HTTP, desmarque a opção **Tráfego de rede** do ícone de filtro no painel inferior. Por padrão, esses eventos são mostrados no gráfico de detalhes da linha do tempo.  
   
@@ -300,11 +300,11 @@ if (performance.mark && performance.measure) {
 ### <a name="GroupFrames"></a> Agrupar eventos por quadro  
  Você pode agrupar os eventos que aparecem na exibição dos detalhes da linha do tempo em quadros individuais. Tais eventos de quadros são eventos gerados por ferramenta e representam contêineres de evento de nível superior, para todo o trabalho de thread da interface do usuário que ocorre entre os eventos de pintura. Para habilitar esta exibição, selecione **Agrupar eventos de nível superior por quadro**.  
   
- ![Agrupar eventos de nível superior por quadro](../profiling/media/js-htmlvizprofiler-frame-grouping-button.png "JS_HTMLVizProfiler_Frame_Grouping_Button")  
+ ![Agrupar eventos de nível superior por quadro](../profiling/media/js-htmlvizprofiler-frame-grouping-button.png "|::ref12::|")  
   
  Ao agrupar os eventos por quadro, cada um dos eventos de nível superior na exibição de detalhes da linha do tempo representa um quadro.  
   
- ![Eventos de linha do tempo agrupados por quadro](../profiling/media/js-htmlvizprofiler-frame-grouping.png "JS_HTMLVizProfiler_Frame_Grouping")  
+ ![Eventos de linha do tempo agrupados por quadro](../profiling/media/js-htmlvizprofiler-frame-grouping.png "|::ref13::|")  
   
 ## <a name="SaveSession"></a> Salvar uma sessão de diagnóstico  
  No Visual Studio, você pode salvar uma sessão de diagnóstico ao fechar a guia associada à sessão. As sessões salvas podem ser reabertas mais tarde.  
@@ -343,8 +343,8 @@ if (performance.mark && performance.measure) {
 |Observador de mutação|Script|Um ou mais elementos observados do DOM foram modificados, resultando na execução do retorno de chamada associado do MutationObserver.|  
 |Avaliação de script|Script|Um novo elemento SCRIPT foi encontrado no DOM e foi feita uma tentativa de analisar e executar o script.|  
 |Temporizador|Script|Um temporizador agendado teve o tempo decorrido, e isso resultou na execução de sua função associada de retorno de chamada.|  
-|Função de retorno de chamada assíncrona do Tempo de Execução do Windows|Script|Uma operação assíncrona que disparou uma função de retorno de chamada `Promise` foi concluída por um objeto do Tempo de Execução do Windows.|  
-|Evento do Tempo de Execução do Windows|Script|Um evento ocorrido em um objeto do Tempo de Execução do Windows disparou um ouvinte registrado.|  
+|Função de retorno de chamada assíncrona do Windows Runtime|Script|Uma operação assíncrona que disparou uma função de retorno de chamada `Promise` foi concluída por um objeto do Windows Runtime.|  
+|Evento do Windows Runtime|Script|Um evento ocorrido em um objeto do Windows Runtime disparou um ouvinte registrado.|  
 |Coleta de lixo|GC|O tempo foi gasto na coleta de memória para objetos que não estão mais em uso.|  
 |Cálculo CSS|Estilo|Foram feitas alterações no DOM que exigiram que as propriedades de estilo de todos os elementos afetados fossem recalculadas.|  
 |Layout|Estilo|Foram feitas alterações no DOM que exigiram que o tamanho e/ou a posição de todos os elementos afetados fossem recalculados.|  
@@ -356,7 +356,7 @@ if (performance.mark && performance.measure) {
   
 ## <a name="Tips"></a> Informações adicionais  
   
-- Assista a [este vídeo](http://channel9.msdn.com/Events/Build/2013/3-316) da conferência Build 2013 sobre o criador de perfil de Capacidade de Resposta de Interface do Usuário.  
+- Assista a [este vídeo](https://channel9.msdn.com/Events/Build/2013/3-316) da conferência Build 2013 sobre o criador de perfil de Capacidade de Resposta de Interface do Usuário.  
   
 - Leia as dicas de desempenho para aplicativos da Windows Store criadas para o Windows usando JavaScript. Para obter mais informações, consulte [Práticas Recomendadas para aplicativos da Windows Store usando JavaScript](https://msdn.microsoft.com/library/windows/apps/hh465194.aspx).  
   
