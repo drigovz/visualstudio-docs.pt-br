@@ -72,7 +72,7 @@ O Visual Studio agora oferece a opção de ferramentas de desempenho, algumas da
 ## <a name="collect-profiling-data-without-debugging"></a>Coletar dados de criação de perfil sem depuração  
  Algumas ferramentas de criação de perfil requerem privilégios de administrador para serem executadas. Você pode abrir o Visual Studio como administrador ou optar por executar as ferramentas como administrador ao iniciar a sessão de diagnóstico.  
   
-1. Abra o projeto no Visual Studio.  
+1. {1&gt;Abra o projeto no Visual Studio.&lt;1}  
   
 2. No menu **depurar** , escolha **criador de perfil de desempenho...** (tecla de atalho: Alt + F2).  
   
@@ -101,15 +101,15 @@ O Visual Studio agora oferece a opção de ferramentas de desempenho, algumas da
   
 |||  
 |-|-|  
-|![Etapa 1](../profiling/media/procguid-1.png "ProcGuid_1")|A linha de tempo mostra a duração da sessão de criação de perfil, os eventos de ativação de ciclo de vida do aplicativo e as marcas de usuário.|  
-|![Etapa 2](../profiling/media/procguid-2.png "ProcGuid_2")|Você pode restringir o relatório a uma parte da linha do tempo arrastando as barras azuis para selecionar uma região da linha do tempo.|  
-|![Etapa 3](../profiling/media/procguid-3.png "ProcGuid_3")|Uma ferramenta exibe um ou mais grafos mestres. Se sua sessão de diagnóstico for criada com várias ferramentas, todos os grafos mestres serão exibidos.|  
-|![Etapa 4](../profiling/media/procguid-4.png "ProcGuid_4")|Você pode recolher e expandir os gráficos individuais.|  
-|![Etapa 5](../profiling/media/procguid-6.png "ProcGuid_6")|Quando seus dados incluem informações de várias ferramentas, os detalhes da ferramenta são coletados sob as guias.|  
+|![Etapa 1](../profiling/media/procguid-1.png "ProcGuid_1")|{1&gt;A linha de tempo mostra a duração da sessão de criação de perfil, os eventos de ativação de ciclo de vida do aplicativo e as marcas de usuário.&lt;1}|  
+|![Etapa 2](../profiling/media/procguid-2.png "ProcGuid_2")|{1&gt;Você pode restringir o relatório a uma parte da linha do tempo arrastando as barras azuis para selecionar uma região da linha do tempo.&lt;1}|  
+|![Etapa 3](../profiling/media/procguid-3.png "ProcGuid_3")|Uma ferramenta exibe um ou mais gráficos mestres. Se sua sessão de diagnóstico for criada com várias ferramentas, todos os gráficos mestres serão exibidos.|  
+|![Etapa 4](../profiling/media/procguid-4.png "ProcGuid_4")|{1&gt;Você pode recolher e expandir os gráficos individuais.&lt;1}|  
+|![Etapa 5](../profiling/media/procguid-6.png "ProcGuid_6")|{1&gt;Quando seus dados incluem informações de várias ferramentas, os detalhes da ferramenta são coletados sob as guias.&lt;1}|  
 |![Etapa 6](../profiling/media/procguid-6a.png "ProcGuid_6a")|Uma ferramenta poder ter uma ou mais exibições de detalhes. A exibição é filtrada pela região selecionada da linha do tempo.|  
   
 ## <a name="setting-the-analysis-target-to-another-device"></a>Configurando o destino da análise para outro dispositivo  
- Além de iniciar o aplicativo a partir do projeto do Visual Studio, você também pode executar sessões de diagnóstico em destinos alternativos. Por exemplo, você pode diagnosticar problemas de desempenho em uma versão de seu aplicativo que foi instalado por meio da Windows Store.  
+ Além de iniciar o aplicativo no projeto do Visual Studio, você também pode executar sessões de diagnóstico em destinos alternativos. Por exemplo, você pode diagnosticar problemas de desempenho em uma versão de seu aplicativo que foi instalado por meio da Windows Store.  
   
  ![Escolher destino de análise de ferramentas de diagnóstico](../profiling/media/pdhub-chooseanalysistarget.png "PDHUB_ChooseAnalysisTarget")  
   

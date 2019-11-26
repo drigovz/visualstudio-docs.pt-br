@@ -467,9 +467,9 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
   Os testes de IU codificados costumam ser usados para automatizar testes manuais. Para obter diretrizes adicionais, consulte [Teste para Entrega Contínua com o Visual Studio 2012 – Capítulo 5: Automatizando os Testes de Sistema](https://go.microsoft.com/fwlink/?LinkID=255196). Para obter mais informações sobre testes manuais, consulte [&#91;retired&#93; Criar Casos de Testes Manuais por meio do Microsoft Test Manager](https://msdn.microsoft.com/library/9989e184-c8e4-444b-998d-a1a5ec94461e). Para obter mais informações sobre testes de sistemas automatizados, consulte [Criar Testes Automatizados por meio do Microsoft Test Manager](https://msdn.microsoft.com/7b5075ee-ddfe-411d-b1d4-94283550a5d0).
 
-## <a name="external-resources"></a>Recursos externos
+## <a name="external-resources"></a>Recursos Externos
 
-### <a name="guidance"></a>Diretrizes
+### <a name="guidance"></a>{1&gt;Orientação&lt;1}
 - [Testes de Entrega Contínua com o Visual Studio 2012 – Capítulo 2: Teste de Unidade: Testando o Interior](https://go.microsoft.com/fwlink/?LinkID=255188)
 
 - [Teste de Entrega Contínua com o Visual Studio 2012 – Capítulo 5: Automatizar Testes do Sistema](https://go.microsoft.com/fwlink/?LinkID=255196)

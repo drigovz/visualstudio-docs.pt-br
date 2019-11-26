@@ -51,12 +51,12 @@ Você pode usar a ferramenta **Uso de Memória** sem depuração para fazer o se
   
  ![Página Visão geral de uso de memória](../profiling/media/memuse-reportoverview.png "MEMUSE__ReportOverview")  
   
- O gráfico de linha do tempo mostra flutuações na memória do seu aplicativo, conforme ele é executado. Picos no gráfico geralmente indicam que um código está coletando ou criando dados e, em seguida, descartando-os quando o processamento é concluído. Grandes picos indicam áreas que você pode otimizar. O que mais preocupa é o aumento no consumo de memória que não é devolvido, pois pode indicar uso de memória ineficiente ou mesmo uma perda de memória.  
+ O gráfico de linha do tempo mostra flutuações na memória do seu aplicativo, conforme ele é executado. Picos no gráfico geralmente indicam que um código está coletando ou criando dados e, em seguida, descartando-os quando o processamento é concluído. Grandes picos indicam áreas que você pode otimizar. O que mais preocupa é o aumento no consumo de memória que não é devolvido, pois isso pode indicar uso de memória ineficiente ou mesmo uma perda de memória.  
   
 ### <a name="BKMK_Close_a_monitoring_session"></a> Fechar uma sessão de monitoramento  
  ![Parar coleta](../profiling/media/memuse-stopcollection.png "MEMUSE__StopCollection")  
   
- Para parar uma sessão de monitoramento sem criar um relatório, apenas feche a janela de diagnóstico. Para gerar um relatório quando você tiver tirado instantâneos de memória, escolha **Parar**.  
+ Para interromper uma sessão de monitoramento sem criar um relatório, apenas feche a janela de diagnóstico. Para gerar um relatório quando você tiver tirado instantâneos de memória, escolha **Parar**.  
   
 ## <a name="BKMK_Take_snapshots_to_analyze_the_memory_state_of_your_app"></a> Tirar instantâneos do estado de memória do aplicativo  
  Se você descobrir um problema de memória que deseja investigar, será possível tirar instantâneos durante a sessão de diagnóstico para capturar objetos na memória em momentos específicos. Como o aplicativo usa uma grande variedade de tipos de objetos, talvez você queira concentrar sua análise em um cenário. Também é uma boa ideia obter um instantâneo de linha de base do aplicativo antes de aparecer um problema de memória, outro instantâneo após a primeira ocorrência do problema e um ou mais instantâneos adicionais se você puder repetir o cenário.  
@@ -64,7 +64,7 @@ Você pode usar a ferramenta **Uso de Memória** sem depuração para fazer o se
  Para a coleta de instantâneos, inicie uma nova sessão de diagnóstico. Escolha **Tirar Instantâneo** quando quiser capturar os dados da memória. Para gerar um relatório, escolha **Parar**.  
   
 ## <a name="BKMK_Memory_Usage_overview_page"></a> Página de visão geral do uso de memória  
- Depois de parar a coleta de dados, a ferramenta Uso de Memória para o aplicativo e exibe o relatório geral.  
+ {1&gt;Depois de parar a coleta de dados, a ferramenta Uso de Memória para o aplicativo e exibe o relatório geral.&lt;1}  
   
  ![Página Visão geral de uso de memória](../profiling/media/memuse-reportoverview.png "MEMUSE__ReportOverview")  
   
@@ -77,7 +77,7 @@ Você pode usar a ferramenta **Uso de Memória** sem depuração para fazer o se
   
   ![Links de exibição do instantâneo](../profiling/media/memuse-snapshotview-numbered.png "MEMUSE__SnapshotView_Numbered")  
   
-  Os itens numerados na imagem de exibição do instantâneo são links que abrem exibições de relatório de uso de memória.  
+  {1&gt;Os itens numerados na imagem de exibição do instantâneo são links que abrem exibições de relatório de uso de memória.&lt;1}  
   
 |||  
 |-|-|  
@@ -139,8 +139,8 @@ Você pode usar a ferramenta **Uso de Memória** sem depuração para fazer o se
 |-|-|  
 |**Tipo de objeto**|O nome do tipo ou instância de objeto.|  
 |**Contagem**|O número de instâncias do objeto do tipo. O número é sempre 1 para uma instância.|  
-|**Tamanho (bytes)**|No caso de um tipo, o tamanho de todas as instâncias do tipo no instantâneo de memória, excluindo o tamanho dos objetos contidos nas instâncias.<br /><br /> No caso de uma instância, o tipo, o tamanho do objeto excluindo o tamanho dos objetos contidos na instância. instâncias.|  
-|**Tamanho Inclusivo (Bytes)**|O tamanho das instâncias do tipo ou o tamanho de uma única instância, incluindo o tamanho dos objetos contidos.|  
+|**Tamanho (bytes)**|Para um tipo, o tamanho de todas as instâncias do tipo no instantâneo de memória, excluindo o tamanho dos objetos contidos nas instâncias.<br /><br /> No caso de uma instância, o tipo, o tamanho do objeto excluindo o tamanho dos objetos contidos na instância. instâncias.|  
+|**Tamanho Inclusivo (Bytes)**|{1&gt;O tamanho das instâncias do tipo ou o tamanho de uma única instância, incluindo o tamanho dos objetos contidos.&lt;1}|  
   
 ### <a name="BKMK_Paths_to_Root_tree__Snapshot_details_"></a> Árvore de Caminhos para a Raiz (detalhes do instantâneo)  
  A **árvore de Caminhos para a Raiz** mostra a cadeia de objetos que faz referência ao tipo ou instância. O coletor de lixo .NET Framework limpa a memória de um objeto apenas quando todas as referências a ele foram liberadas.  
@@ -158,10 +158,10 @@ Você pode usar a ferramenta **Uso de Memória** sem depuração para fazer o se
 |-|-|  
 |**Tipo/Instância de Objeto**|O nome do tipo ou instância de objeto.|  
 |**Tamanho (bytes)**|No caso de um tipo, o tamanho de todas as instâncias do tipo, excluindo o tamanho dos objetos contidos no tipo.<br /><br /> No caso de uma instância, o tamanho do objeto, excluindo o tamanho dos objetos contidos no objeto.|  
-|**Tamanho Inclusivo (Bytes)**|O tamanho total das instâncias do tipo ou o tamanho da instância, incluindo o tamanho dos objetos contidos.|  
+|**Tamanho Inclusivo (Bytes)**|{1&gt;O tamanho total das instâncias do tipo ou o tamanho da instância, incluindo o tamanho dos objetos contidos.&lt;1}|  
   
 ## <a name="BKMK_Snapshot_difference__diff__reports"></a> Relatórios de diferenças (dif) do instantâneo  
- O relatório de diferença (dif) do instantâneo mostra as mudanças entre um instantâneo primário e o instantâneo que foi tirado imediatamente antes dele. Para abrir um relatório de diferença, escolha um dos links em uma exibição de instantâneo, como mostrado na figura a seguir. Os dois links abrem o mesmo relatório, a única diferença é a ordem de classificação inicial da árvore **Heap Gerenciado** no relatório. Você pode mudar a ordem de classificação depois que o relatório abre.  
+ O relatório de diferença (diff) do instantâneo mostra as mudanças entre um instantâneo primário e o instantâneo tirado imediatamente antes dele. Para abrir um relatório de diferença, escolha um dos links em uma exibição de instantâneo, como mostrado na figura a seguir. Os dois links abrem o mesmo relatório, a única diferença é a ordem de classificação inicial da árvore **Heap Gerenciado** no relatório. Você pode mudar a ordem de classificação depois que o relatório abre.  
   
  ![Links para o relatório de diferenças em uma exibição de instantâneo](../profiling/media/memuse-snapshotview-snapshotdifflinks.png "MEMUSE_SnapshotView_SnapshotDiffLinks")  
   
@@ -183,7 +183,7 @@ Você pode usar a ferramenta **Uso de Memória** sem depuração para fazer o se
 |**Dif. de Contagem**|No caso de um tipo, a diferença no número de instâncias do tipo entre o instantâneo primário e o instantâneo anterior. O campo fica em branco no caso de uma instância.|  
 |**Tamanho (bytes)**|O tamanho dos objetos no instantâneo primário, excluindo o tamanho dos objetos contidos nos objetos. No caso de um tipo, **Tamanho (Bytes)** e **Tamanho Inclusivo (Bytes)** são os totais dos tamanhos das instâncias de tipo.|  
 |**Dif. de Tamanho Total (Bytes)**|No caso de um tipo, a diferença no tamanho total de instâncias do tipo entre o instantâneo primário e o instantâneo anterior, excluindo o tamanho dos objetos contidos nas instâncias. O campo fica em branco no caso de uma instância.|  
-|**Tamanho Inclusivo (Bytes)**|O tamanho dos objetos no instantâneo primário, incluindo o tamanho dos objetos contidos nos objetos.|  
+|**Tamanho Inclusivo (Bytes)**|{1&gt;O tamanho dos objetos no instantâneo primário, incluindo o tamanho dos objetos contidos nos objetos.&lt;1}|  
 |**Diferença de Tamanho Inclusivo (Bytes)**|No caso de um tipo, a diferença no tamanho de todas as instâncias do tipo entre o instantâneo primário e o instantâneo anterior, incluindo o tamanho dos objetos contidos nos objetos. O campo fica em branco no caso de uma instância.|  
   
 ### <a name="BKMK_Paths_to_Root_tree__Snapshot_diff_"></a> Árvore de Caminhos para a Raiz (diferenças do instantâneo)  
@@ -200,7 +200,7 @@ Você pode usar a ferramenta **Uso de Memória** sem depuração para fazer o se
 |-|-|  
 |**Tipo/Instância de Objeto**|O nome do tipo ou instância de objeto.|  
 |**Tamanho (bytes)**|No caso de uma instância, o tamanho do objeto no instantâneo primário, excluindo o tamanho dos objetos contidos na instância.<br /><br /> No caso de um tipo, o tamanho total das instâncias do tipo no instantâneo primário, excluindo o tamanho dos objetos contidos na instância.|  
-|**Tamanho Inclusivo (Bytes)**|O tamanho dos objetos no instantâneo primário, incluindo o tamanho dos objetos contidos nos objetos.|  
+|**Tamanho Inclusivo (Bytes)**|{1&gt;O tamanho dos objetos no instantâneo primário, incluindo o tamanho dos objetos contidos nos objetos.&lt;1}|  
   
 ## <a name="see-also"></a>Consulte também  
  [Memória JavaScript](../profiling/javascript-memory.md)   

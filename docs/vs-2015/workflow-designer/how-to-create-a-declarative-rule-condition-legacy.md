@@ -41,25 +41,25 @@ Este tópico descreve como declarar uma condição de regra usando o novas [!INC
 
 ### <a name="to-create-a-declarative-rule-condition-using-the-rule-condition-editor"></a>Para criar uma condição de regra declarativamente usando o editor de condição de regra
 
-1. Na janela de **Propriedades** de atividade, clique na propriedade de **Condição** ou propriedade de **UntilCondition** , dependendo da atividade.
+1. Na janela **Propriedades** da atividade, clique na propriedade **condição** ou na propriedade **UntilCondition** , dependendo da atividade.
 
-2. {1&gt;Condição de Regra Declarativa&lt;1} A partir da lista para a propriedade.
+2. Selecione **condição de regra declarativa** na lista para a propriedade.
 
-3. Expanda a propriedade de **Condição** ou de **UntilCondition** .
+3. Expanda a propriedade **Condition** ou **UntilCondition** .
 
-4. Clique na propriedade de **ConditionName** .
+4. Clique na propriedade **ConditionName** .
 
-5. Clique nas reticências **[…]** de **ConditionName** para abrir a caixa de diálogo **Selecionar Condição**.
+5. Clique nas reticências **condicionaname** **[...]** para abrir a caixa de diálogo **Selecionar condição** .
 
-6. Clique **Nova condição** para abrir a caixa de diálogo **Editor de Condição de Regra** .
+6. Clique em **nova condição** para abrir a caixa de diálogo **Editor de condição de regra** .
 
-7. Digite a expressão para a condição na caixa de texto **Condição** .
+7. Digite a expressão da condição na caixa de texto **condição** .
 
      Para obter informações sobre como criar expressões de condição, consulte [caixa de diálogo Editor de condição de regra (Herdado)](../workflow-designer/rule-condition-editor-dialog-box-legacy.md).
 
-8. Quando você terminou de criar a expressão de condição, clique **OK** para fechar a caixa de diálogo e criar a condição de regra com um nome atribuído.
+8. Quando terminar de criar a expressão de condição, clique em **OK** para fechar a caixa de diálogo e criar a condição de regra com um nome atribuído.
 
-     A caixa de diálogo **Selecionar Condição** abre.
+     A caixa de diálogo **Selecionar condição** é aberta.
 
      Para obter informações sobre como usar a caixa de diálogo **Selecionar condição** , consulte [caixa de diálogo Selecionar condição (herdada)](../workflow-designer/select-condition-dialog-box-legacy.md).
 

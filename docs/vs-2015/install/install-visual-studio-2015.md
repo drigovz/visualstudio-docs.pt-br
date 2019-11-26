@@ -41,7 +41,7 @@ Antes de nos aprofundarmos nos detalhes, aqui está uma lista de nossos links so
 |![Baixar o Visual Studio](../install/media/downloads.png "Downloads") |**Downloads**: para instalar o Visual Studio 2015, você pode baixar um arquivo executável do produto da página [My.VisualStudio.com](https://my.visualstudio.com/downloads?q=visual%20studio%20enterprise%202015) (assinatura necessária) ou usar a mídia de instalação do produto em caixa. [Saiba mais sobre como baixar versões atuais ou anteriores do Visual Studio](https://www.visualstudio.com/vs/older-downloads/).|
 |![Saiba mais sobre os recursos](../install/media/features.png "Recursos") |**Recursos**: para saber mais sobre os recursos do Visual Studio 2015, consulte as notas de versão para [RTM](https://www.visualstudio.com/news/vs2015-vs), [atualização 1](https://www.visualstudio.com/news/vs2015-update1-vs), [atualização 2](https://www.visualstudio.com/news/vs2015-update2-vs)e [atualização 3](https://www.visualstudio.com/news/releasenotes/vs2015-update3-vs).|
 |![Descubra o que há em cada SKU](../install/media/sku.png "SKUs") |**SKUs**: para descobrir o que está disponível em cada edição do Visual Studio 2015, consulte nossa página [comparar ofertas do Visual Studio](https://go.microsoft.com/fwlink/?LinkID=242142) .|
-|![Exibir requisitos do sistema](../install/media/system-requirements.png "Requisitos de sistema") |**Requisitos do sistema**: para exibir os requisitos de sistema para cada edição do Visual Studio 2015, consulte a página de [compatibilidade do Visual Studio 2015](https://www.visualstudio.com/products/visual-studio-2015-compatibility-vs) .|
+|![Exibir requisitos do sistema](../install/media/system-requirements.png "Requisitos do sistema") |**Requisitos do sistema**: para exibir os requisitos de sistema para cada edição do Visual Studio 2015, consulte a página de [compatibilidade do Visual Studio 2015](https://www.visualstudio.com/products/visual-studio-2015-compatibility-vs) .|
 |![Localize a chave do produto](../install/media/product-keys.png "Chaves do produto") |**Chaves do produto**: para localizar a chave do produto, consulte o tópico [como localizar a chave do produto Visual Studio](../install/how-to-locate-the-visual-studio-product-key.md) .|
 |![Saiba mais sobre licenciamento](../install/media/licensing.png "Licenciamento") |**Licenciamento**: para saber mais sobre as opções de licenciamento para indivíduos ou clientes corporativos, consulte o White Paper de [Licenciamento do Visual Studio e do MSDN](https://www.microsoft.com/download/details.aspx?id=13350) .|
 
@@ -184,7 +184,7 @@ Antes de nos aprofundarmos nos detalhes, aqui está uma lista de nossos links so
 
 ## <a name="relatedTopics"></a> Tópicos relacionados
 
-|Título|Descrição|
+|Title|Descrição|
 |-----------|-----------------|
 |[Criar uma instalação do Offline do Visual Studio](../install/create-an-offline-installation-of-visual-studio.md)|Descreve como instalar o Visual Studio quando você não está conectado à Internet.
 |[Instalar versões do Visual Studio lado a lado](../install/install-visual-studio-versions-side-by-side.md)|Fornece informações sobre como instalar várias versões do Visual Studio no mesmo computador.|

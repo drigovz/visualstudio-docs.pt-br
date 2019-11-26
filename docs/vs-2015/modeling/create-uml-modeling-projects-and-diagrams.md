@@ -129,7 +129,7 @@ Os modelos UML ajudam você a entender, discutir e criar sistemas de software. O
     > [!NOTE]
     > O projeto de modelagem contém uma pasta de definição de modelo chamada **ModelDefinition**.
 
-2. No menu **Projeto**, clique em **Adicionar Item Existente**.
+2. No menu **projeto** , clique em **Adicionar item existente**.
 
 3. Na caixa de diálogo **Adicionar item existente** , localize o arquivo de diagrama, selecione o arquivo e clique em **Adicionar**.
 
@@ -152,7 +152,7 @@ Os modelos UML ajudam você a entender, discutir e criar sistemas de software. O
 
 |**Lo**|**Com**|**Resolução**|
 |---------------|----------------|--------------------|
-|O projeto de modelagem não pode ser aberto ou carregado na solução.<br /><br /> A seguinte mensagem é exibida:<br /><br /> "Um ou mais projetos na solução não foram carregados corretamente. Consulte a Janela de Saída para obter detalhes. "<br /><br /> A janela saída exibe a seguinte mensagem:<br /><br /> "*ModelingProjectFilenameAndPath*. modelproj: erro: formato de GUID não reconhecido."|Um projeto de modelagem tem referências a projetos que têm o mesmo nome e estão na mesma solução.<br /><br /> Por exemplo, uma camada é vinculada a projetos que têm o mesmo nome e estão na mesma solução.|Use um editor de texto para abrir o arquivo de projeto de modelagem, remova as referências e tente abrir o projeto de modelagem novamente.<br /><br /> Para evitar esse problema, não adicione referências a projetos que tenham o mesmo nome. Verifique se os projetos têm nomes exclusivos.|
+|O projeto de modelagem não pode ser aberto ou carregado na solução.<br /><br /> A mensagem a seguir é exibida:<br /><br /> "Um ou mais projetos na solução não foram carregados corretamente. Consulte a Janela de Saída para obter detalhes. "<br /><br /> A janela saída exibe a seguinte mensagem:<br /><br /> "*ModelingProjectFilenameAndPath*. modelproj: erro: formato de GUID não reconhecido."|Um projeto de modelagem tem referências a projetos que têm o mesmo nome e estão na mesma solução.<br /><br /> Por exemplo, uma camada é vinculada a projetos que têm o mesmo nome e estão na mesma solução.|Use um editor de texto para abrir o arquivo de projeto de modelagem, remova as referências e tente abrir o projeto de modelagem novamente.<br /><br /> Para evitar esse problema, não adicione referências a projetos que tenham o mesmo nome. Verifique se os projetos têm nomes exclusivos.|
 |Os elementos estão ausentes de diagramas que são adicionados, copiados ou arrastados para outros projetos de modelagem ou para outros locais na solução.<br /><br /> - ou -<br /><br /> As seguintes mensagens são exibidas quando você tenta abrir um diagrama:<br /><br /> -"Algumas formas ou conectores no diagrama estão ausentes porque suas definições não existem neste projeto. As definições foram excluídas do modelo enquanto o diagrama foi fechado ou o diagrama foi copiado para outro projeto que não contém essas definições. "<br /><br /> - ou -<br /><br /> -"Este documento está aberto por outro projeto".|O arquivo de diagrama foi adicionado, arrastado ou copiado de um projeto de modelagem para outro projeto de modelagem ou para outro local na solução.|Para copiar um arquivo de diagrama, crie um novo diagrama e, em seguida, copie os elementos do diagrama de origem para o novo diagrama.|
 
 ## <a name="see-also"></a>Consulte também

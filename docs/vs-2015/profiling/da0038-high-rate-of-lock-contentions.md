@@ -27,8 +27,8 @@ Para obter a documentação mais recente sobre o Visual Studio, consulte [DA0038
   
 |||  
 |-|-|  
-|ID de regra|DA0038|  
-|Categoria|Uso do .NET Framework|  
+|Id da Regra|DA0038|  
+|Category|Uso do .NET Framework|  
 |Método de criação de perfil|Amostragem<br /><br /> Instrumentação<br /><br /> Memória do .NET|  
 |Mensagem|Uma alta taxa de contenções de Bloqueio do .NET está ocorrendo. Investigue o motivo dessa contenção de bloqueio executando um perfil de Simultaneidade.|  
 |Tipo de regra|Informações|  

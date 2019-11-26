@@ -37,7 +37,7 @@ Você pode escrever código para criar e atualizar diagramas de camada e para va
 ## <a name="prereqs"></a> Requisitos
  Você deve ter o seguinte instalado no computador em que deseja desenvolver suas extensões de camada:
 
-- Visual Studio
+- {1&gt;Visual Studio&lt;1}
 
 - [SDK do Visual Studio](../extensibility/visual-studio-sdk.md)
 

@@ -128,7 +128,7 @@ No Visual Studio, você pode usar um modelo para ajudá-lo a entender e alterar 
 |Padrões de design<br /><br /> Convenções e métodos de solução de problemas de design que são usados em todas as partes do design|-Os diagramas de classe UML descrevem as estruturas de um padrão<br />-Os diagramas de sequência ou de atividade mostram as interações e os algoritmos|
 |Análise de código<br /><br /> Vários tipos de diagrama podem ser gerados a partir do código.|-Os diagramas de sequência mostram a interação entre objetos no código.<br />-Os diagramas de camada mostram as dependências entre classes. O código atualizado pode ser validado em um diagrama de camada.<br />-Os diagramas de classe mostram as classes no código.|
 
-## <a name="external-resources"></a>Recursos externos
+## <a name="external-resources"></a>Recursos Externos
 
 |**Categoria**|**Vincule**|
 |------------------|---------------|

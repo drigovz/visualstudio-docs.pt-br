@@ -98,7 +98,7 @@ A DGML (grafo Markup Language) descreve informações usadas para visualização
 
    `Label`-o nome de exibição do nó.
 
-   Atributos de estilo. Consulte [Personalizar mapa de códigos editando os arquivos DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md).
+   Atributos de estilo. Consulte [Personalizar mapas de código editando os arquivos DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md).
 
    `Category`-o nome de uma categoria que identifica elementos que compartilham este atributo. Para obter mais informações, consulte o elemento `<Category/>`.
 
@@ -163,7 +163,7 @@ A DGML (grafo Markup Language) descreve informações usadas para visualização
 
    `Label`-o nome de exibição do link
 
-   Atributos de estilo. Consulte [Personalizar mapa de códigos editando os arquivos DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md).
+   Atributos de estilo. Consulte [Personalizar mapas de código editando os arquivos DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md).
 
    `Category`-o nome de uma categoria que identifica elementos que compartilham este atributo. Para obter mais informações, consulte o elemento `<Category/>`.
 
@@ -220,7 +220,7 @@ A DGML (grafo Markup Language) descreve informações usadas para visualização
 
    No exemplo desse elemento, a categoria `FailedTest` herda seu atributo `Stroke` da categoria `PassedTest`. Consulte "para criar categorias hierárquicas" em [Personalizar mapas de código editando os arquivos DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md).
 
-   As categorias também fornecem algum comportamento de modelo básico que controla a aparência de nós e links quando eles são exibidos em um mapa. Consulte [Personalizar mapa de códigos editando os arquivos DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md).
+   As categorias também fornecem algum comportamento de modelo básico que controla a aparência de nós e links quando eles são exibidos em um mapa. Consulte [Personalizar mapas de código editando os arquivos DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md).
 
    Exemplo:
 
@@ -271,7 +271,7 @@ A DGML (grafo Markup Language) descreve informações usadas para visualização
 
   - `DataType`-o tipo de dados armazenados pela propriedade
 
-    Se você quiser que a propriedade seja exibida na janela **Propriedades**, use a propriedade `Label` para especificar o nome para exibição da propriedade.
+    Se você quiser que a propriedade apareça na janela **Propriedades** , use a propriedade `Label` para especificar o nome de exibição da propriedade.
 
     Consulte [atribuir categorias a elementos de código e links](../modeling/customize-code-maps-by-editing-the-dgml-files.md#AssignCategories).
 

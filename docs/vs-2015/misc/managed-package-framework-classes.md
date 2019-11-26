@@ -28,7 +28,7 @@ As classes do MPF (estrutura de pacote gerenciada) podem ser usadas para criar V
 ## <a name="mpf-namespaces"></a>Namespaces do MPF  
  A tabela a seguir lista os namespaces do MPF fornecidos pelo [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)].  
   
-|Espaço de nome|Conteúdo|  
+|Espaço de nome|{1&gt;Conteúdo&lt;1}|  
 |----------------|--------------|  
 |<xref:Microsoft.VisualStudio>|Contém classes úteis para manipular erros COM, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] constantes e janelas Win32.|  
 |<xref:Microsoft.VisualStudio.Package>|Inclui wrappers de código gerenciado para [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] projetos, editores e MSBuild.|  

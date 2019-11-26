@@ -60,7 +60,7 @@ Se você habilitar a depuração remota para um serviço de nuvem, ela não most
 
     Isso é apenas uma diretriz. Você pode optar por executar ambientes de teste em um ambiente de Produção. No entanto, você poderá afetar negativamente os usuários ao habilitar a depuração remota no ambiente de Produção. É possível escolher a configuração de Versão, mas a configuração de Depuração facilita a depuração.
 
-    ![Escolher a configuração de Depuração](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC746717.gif)
+    ![Escolher a configuração de depuração](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC746717.gif)
 
 3. Siga as etapas comuns, mas marque a caixa de seleção **Habilitar depurador remoto para todas as funções** na guia **Configurações Avançadas**.
 
@@ -115,7 +115,7 @@ Você pode depurar programas que são executados em máquinas virtuais do Azure 
 
     O Azure instala a extensão da depuração remota na máquina virtual para habilitar a depuração.
 
-    ![Comando Depuração habilitada para máquina virtual](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC746720.png)
+    ![Máquina virtual que permite comando de depuração](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC746720.png)
 
     ![Log de atividades do Azure](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC746721.png)
 
@@ -145,7 +145,7 @@ Os projetos ASP.NET do Visual Studio oferecem uma opção para criar uma máquin
 
     A caixa de diálogo **Criar máquina virtual no Azure** é exibida.
 
-    ![Caixa de diálogo Criar projeto da Web do ASP.NET](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC746723.png)
+    ![Caixa de diálogo Criar projeto da Web de ASP.NET](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC746723.png)
 
     > [!NOTE]
     > será solicitado que você entre em sua conta do Azure, caso ainda não tenha entrado.
@@ -164,7 +164,7 @@ Os projetos ASP.NET do Visual Studio oferecem uma opção para criar uma máquin
 
     O Azure instala a extensão da depuração remota na máquina virtual para habilitar a depuração.
 
-    ![Comando Depuração habilitada para máquina virtual](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC746720.png)
+    ![Máquina virtual que permite comando de depuração](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC746720.png)
 
     ![Log de atividades do Azure](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC746721.png)
 

@@ -136,7 +136,7 @@ Você pode criar e editar um modelo UML por meio dos modos de exibição forneci
 
 #### <a name="to-move-one-end-of-a-connector-to-another-shape"></a>Para mover uma extremidade de um conector para outra forma
 
-1. Realize um dos seguintes procedimentos:
+1. Siga um destes procedimentos:
 
    - Pressione **Ctrl** e mova o final.
 

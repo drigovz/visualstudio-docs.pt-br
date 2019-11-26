@@ -72,7 +72,7 @@ Controles permitem que usuários interajam com seu aplicativo. Você pode usá-l
 
  **Assista a um breve vídeo:** configurar as dicas de combinação de ![recursos instalados](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [: introdução ao uso de comportamentos parte 1](https://www.bing.com/videos/search?q=Expression%20blend%20behaviors&qs=n&form=QBVR&pq=expression%20blend%20behavior&sc=4-25&sp=-1&sk=#view=detail&mid=CF0DD797ED84DE740904CF0DD797ED84DE740904).
 
-### <a name="events"></a>Eventos
+### <a name="events"></a>Events
  Para máxima flexibilidade, manipule um *evento*. Você precisará gravar algum código.
 
  **Assista a um breve vídeo:** ![configurar recursos instalados](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Adicionar um evento do mouse](https://www.youtube.com/watch?v=2PMxAlb-x_E).

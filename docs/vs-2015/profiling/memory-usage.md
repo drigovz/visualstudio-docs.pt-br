@@ -16,7 +16,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 11/21/2019
 ms.locfileid: "74298368"
 ---
-# <a name="memory-usage"></a>Uso de Memória
+# <a name="memory-usage"></a>Utilização de Memória
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Encontre vazamentos de memória e memória ineficiente enquanto estiver depurando com a ferramenta de diagnóstico **Uso de Memória** integrada ao depurador. A ferramenta Uso de Memória permite que você tire um ou mais *instantâneos* do heap de memória gerenciada e do heap de memória nativa. Você pode coletar instantâneos de aplicativos .NET, nativos ou mistos (.NET e nativos).  

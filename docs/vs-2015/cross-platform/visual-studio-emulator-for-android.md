@@ -97,7 +97,7 @@ O Emulador do Visual Studio para Android é um aplicativo de área de trabalho q
   
 - Bússola  
   
-- Giroscópio  
+- {1&gt;Giroscópio&lt;1}  
   
 - Controlador de vibração  
   

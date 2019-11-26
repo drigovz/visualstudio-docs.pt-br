@@ -73,7 +73,7 @@ Os diagramas de modelagem ajudam você a entender, esclarecer e comunicar ideias
 
 ## <a name="common-tasks"></a>Tarefas comuns
 
-|**Tópico**|{1&gt;Tarefa&lt;1}|
+|**Tópico**|**Tarefa**|
 |---------------|--------------|
 |[Criar projetos e diagramas de modelagem UML](../modeling/create-uml-modeling-projects-and-diagrams.md)|**Crie modelos** e adicione diagramas.|
 |[Editar modelos e diagramas UML](../modeling/edit-uml-models-and-diagrams.md)|**Desenhe diagramas** para editar o modelo.|
@@ -85,7 +85,7 @@ Os diagramas de modelagem ajudam você a entender, esclarecer e comunicar ideias
 
 ## <a name="related-tasks"></a>Tarefas relacionadas
 
-|**Tópico**|{1&gt;Tarefa&lt;1}|
+|**Tópico**|**Tarefa**|
 |---------------|--------------|
 |[Visualizar código](../modeling/visualize-code.md)|Crie mapas de código e diagramas de camada para entender melhor o código desconhecido.|
 |[Requisitos de usuário do modelo](../modeling/model-user-requirements.md)|Use modelos para esclarecer e comunicar as necessidades dos usuários.|
@@ -94,7 +94,7 @@ Os diagramas de modelagem ajudam você a entender, esclarecer e comunicar ideias
 |[Usar modelos no processo de desenvolvimento](../modeling/use-models-in-your-development-process.md)<br /><br /> [Usar modelos no desenvolvimento ágil](https://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)|Use modelos para ajudá-lo a entender e alterar seu sistema durante seu desenvolvimento.|
 |[Estruturar a solução de modelagem](../modeling/structure-your-modeling-solution.md)|Organize modelos em um projeto grande ou médio.|
 
-## <a name="external-resources"></a>Recursos externos
+## <a name="external-resources"></a>Recursos Externos
 
 |**Categoria**|**Vincule**|
 |------------------|---------------|

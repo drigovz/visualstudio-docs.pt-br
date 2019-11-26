@@ -46,7 +46,7 @@ Um **Sessão de Desempenho** permite definir as configurações que determinam c
   
  [Como definir opções do nome do arquivo de dados de desempenho](../profiling/how-to-set-performance-data-file-name-options.md)  
   
-## <a name="launch"></a>Inicializar  
+## <a name="launch"></a>Inicie o  
  Essas configurações permitem selecionar em uma lista de binários e especificar a ordem de inicialização dos binários.  
   
  Para obter mais informações, [Como especificar o início do binário](../profiling/how-to-specify-the-binary-to-start.md)  

@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/23/2019
 ms.topic: conceptual
 description: Conheça a responsabilidade dos administradores de rastrear atribuições de usuário e processar pedidos.
-ms.openlocfilehash: ab2a19fc94be27e8eaf90290b50820d58e919297
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
-ms.translationtype: HT
+ms.openlocfilehash: 4c23994de1eb1a24982bd0554e838691b34b8025
+ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68420527"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74491607"
 ---
 # <a name="track-user-assignment-and-process-orders"></a>Rastrear atribuição de usuário e processar pedidos
 Os administradores de assinaturas do Visual Studio devem controlar o uso do Visual Studio e processar pedidos de qualquer aumento no uso conforme o prazo descrito no contrato de Licenciamento por Volume ou no Contrato de produtos e serviços da Microsoft. O novo Portal de administração de assinaturas do Visual Studio tornou isso mais simples com um rastreador útil que mostra as licenças usadas e disponíveis.
@@ -28,7 +28,7 @@ Sua obrigação de compra completa é determinada pelo número máximo de assina
 - Os administradores de assinaturas do Visual Studio podem reatribuir assinaturas de um assinante a outro após 90 dias do momento da atribuição original. 
     > [!NOTE]
     > Para evitar um nível artificialmente alto de uso máximo, sempre faça isso removendo primeiro a assinatura existente e, em seguida, adicionando a nova. 
-- Para ajudar você a monitorar o uso máximo de sua organização, há um relatório de [Uso Máximo](maximum-usage.md) no [Portal de Administração de Assinaturas](https://manage.visualstudio.com) do Visual Studio. 
+- Para ajudá-lo a monitorar o uso máximo da sua organização, há um relatório de [uso máximo](maximum-usage.md) no [portal de administração de assinaturas](https://manage.visualstudio.com)do Visual Studio. 
 
 ## <a name="cloud-subscriptions-open-license-or-open-value"></a>Assinaturas de nuvem, Open License ou Open Value
 É possível que você esteja atribuindo assinaturas por meio de um programa, como assinaturas do Microsoft Cloud, Open License ou Open Value. Nesse caso, você deve processar seu pedido de usuários adicionais durante o mês no qual os usuários (funcionários ou prestadores de serviço externos) começam a interagir com o software licenciado do Visual Studio.

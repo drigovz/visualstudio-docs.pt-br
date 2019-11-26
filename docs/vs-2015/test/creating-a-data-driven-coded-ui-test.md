@@ -31,7 +31,7 @@ Para testar diferentes condições, você pode executar os testes várias vezes 
 
 #### <a name="step-1---create-a-coded-ui-test"></a>Etapa 1 - Criar um teste de interface do usuário codificado
 
-1. Criar um projeto.
+1. Crie um projeto.
 
      ![Criar um projeto de teste de interface do usuário codificado](../test/media/cuit-datadriven.png "CUIT_dataDriven_")
 

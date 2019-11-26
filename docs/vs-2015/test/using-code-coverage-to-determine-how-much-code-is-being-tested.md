@@ -271,7 +271,7 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
 
      No menu **Iniciar** do Windows, escolha **Todos os Programas**, **Microsoft Visual Studio**, **Ferramentas do Visual Studio** e **Prompt de Comando do Desenvolvedor**.
 
-2. Execute:
+2. Executar:
 
      `vstest.console.exe MyTestAssembly.dll /EnableCodeCoverage`
 
@@ -280,7 +280,7 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
 
 ## <a name="external-resources"></a>Recursos externos
 
-### <a name="guidance"></a>Diretrizes
+### <a name="guidance"></a>{1&gt;Orientação&lt;1}
  [Testes de Entrega Contínua com o Visual Studio 2012 – Capítulo 2: Teste de Unidade: Testando o Interior](https://go.microsoft.com/fwlink/?LinkID=255188)
 
 ## <a name="see-also"></a>Consulte também

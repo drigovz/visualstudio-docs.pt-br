@@ -67,7 +67,7 @@ O Xamarin permite criar aplicativos móveis de plataforma cruzada direcionados p
 |[Localizar alterações de código e outros históricos](../ide/find-code-changes-and-other-history-with-codelens.md)|Sim|Exceto através de limites específicos da plataforma em que a implementação não seja resolvida até o tempo de execução.|  
 |[Usar mapas de códigos para depurar aplicativos](../modeling/use-code-maps-to-debug-your-applications.md)|Sim||  
   
-## <a name="build"></a>Build  
+## <a name="build"></a>{1&gt;Compilação&lt;1}  
  Link de referência: **[Build](/azure/devops/pipelines/index)**  
   
 |Recurso|Tem suporte com o Xamarin|Comentários Adicionais|  
@@ -86,7 +86,7 @@ O Xamarin permite criar aplicativos móveis de plataforma cruzada direcionados p
 |Planejando testes, criando casos de teste e organizando conjuntos de testes|Sim||  
 |Teste manual|Sim||  
 |Gerenciador de Teste (testes de gravação e reprodução)|Sim|Somente dispositivos Windows e emuladores Android do Visual Studio. Gravação para todos os dispositivos é possível com o [Xamarin Test Recorder](https://www.xamarin.com/test-cloud/recorder).|  
-|Cobertura de código|N/D||  
+|Cobertura de código|n/d||  
 |[Efetuar teste de unidade em seu código](../test/unit-test-your-code.md)|Sim|Para os destinos Android e Windows, as ferramentas internas do MSTest podem ser usadas. Para executar testes de unidade em Windows, Android e iOS, o Xamarin recomenda NUnit. Consulte [Configurando TFS para Xamarin](https://docs.microsoft.com/azure/devops/repos/tfvc/overview?view=azure-devops) (site do Xamarin).|  
 |[Usar automação de interface do usuário para testar código](../test/use-ui-automation-to-test-your-code.md)|Somente Windows|O gravador de teste da interface do usuário do Visual Studio é somente Windows. Para todas as plataformas, consulte [Xamarin Test Recorder](https://www.xamarin.com/test-cloud/recorder).|  
   

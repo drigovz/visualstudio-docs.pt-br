@@ -29,7 +29,7 @@ ms.locfileid: "74298487"
 |-|-|
 |NomeDoTipo|AvoidCallingProblematicMethods|
 |CheckId|CA2001|
-|Categoria|Microsoft.Reliability|
+|Category|Microsoft.Reliability|
 |Alteração Significativa|Sem interrupção|
 
 ## <a name="cause"></a>Causa

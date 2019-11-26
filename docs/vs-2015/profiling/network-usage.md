@@ -16,7 +16,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 11/21/2019
 ms.locfileid: "74297902"
 ---
-# <a name="network-usage"></a>Uso de rede
+# <a name="network-usage"></a>Uso da Rede
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 A ferramenta de diagnóstico de **rede** do Visual Studio coleta dados sobre as operações de rede executadas usando a [API Windows.Web.Http](https://msdn.microsoft.com/library/windows/apps/windows.web.http.aspx). Analisar os dados pode ajudar a resolver problemas, como problemas de autenticação e acesso, uso incorreto de cache e exibição ruim e desempenho de download.  
@@ -29,7 +29,7 @@ A ferramenta de diagnóstico de **rede** do Visual Studio coleta dados sobre as 
 ## <a name="collecting-network-tool-data"></a>Coleta de dados da ferramenta de rede  
  Você deve executar a ferramenta de **rede** com um projeto aberto do Visual Studio no computador do Visual Studio.  
   
-1. Abra o projeto no Visual Studio.  
+1. {1&gt;Abra o projeto no Visual Studio.&lt;1}  
   
 2. No menu, clique em **criador de perfil de depuração/desempenho...** . Escolha **rede**e, em seguida, escolha **Iniciar**.  
   

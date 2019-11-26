@@ -22,11 +22,11 @@ ms.locfileid: "74300877"
 # <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>Como modificar um comando de menu padrão em uma linguagem específica do domínio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-É possível modificar o comportamento de alguns dos comandos padrão que são definidos automaticamente na DSL. Por exemplo, é possível modificar **Recortar** para excluir informações confidenciais. Para isso, substitua métodos em uma classe de conjunto de comandos. Essas classes são definidas no arquivo CommandSet.cs, no projeto DslPackage e são derivadas de <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet>.
+É possível modificar o comportamento de alguns dos comandos padrão que são definidos automaticamente na DSL. Por exemplo, você pode modificar **recortar** para que ele exclua informações confidenciais. Para isso, substitua métodos em uma classe de conjunto de comandos. Essas classes são definidas no arquivo CommandSet.cs, no projeto DslPackage e são derivadas de <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet>.
 
  Em resumo, para modificar um comando:
 
-1. {1&gt;Descubra quais comandos podem ser modificados&lt;1}.
+1. [Descubra quais comandos você pode modificar](#what).
 
 2. [Crie uma declaração parcial da classe de conjunto de comandos apropriada](#extend).
 

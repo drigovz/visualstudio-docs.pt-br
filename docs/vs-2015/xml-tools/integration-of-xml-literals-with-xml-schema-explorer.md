@@ -21,7 +21,7 @@ ms.locfileid: "74297460"
 
 O Visual Basic dá suporte a literais XML, o que significa que você pode incorporar fragmentos XML diretamente em seu código de Visual Basic. Para obter mais informações, consulte [visão geral de literais XML](https://go.microsoft.com/fwlink/?LinkId=140325).
 
- Se um arquivo XSD em seu projeto Visual Basic inclui uma literal XML, você pode exibir o esquema XML definido em XML Schema Explorer. Para exibir o esquema define associado com uma literal XML, clique com o botão direito do mouse em um nó XML em um literal XML ou uma importação do namespace XML e seleciona **Apresentação no esquema Explorer**.
+ Se um arquivo XSD em seu projeto Visual Basic inclui uma literal XML, você pode exibir o esquema XML definido em XML Schema Explorer. Para exibir o conjunto de esquema associado a um literal XML, clique com o botão direito do mouse em um nó XML em um literal XML ou em uma importação de namespace XML e selecione **Mostrar no Gerenciador de esquema**.
 
  ![Visual Basic literais XML; Gerenciador de esquema XML](../xml-tools/media/vbxmlliteralswithxmlschemaexplorer1.gif "VBXMLLiteralsWithXMLSchemaExplorer1")
 

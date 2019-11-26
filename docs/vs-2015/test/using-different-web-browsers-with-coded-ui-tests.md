@@ -111,7 +111,7 @@ Os testes de IU codificados podem automatizar testes para aplicativos Web gravan
 
   **Dicas**
 
-- ![Dica](../test/media/tip.png "Dica") Você pode configurar a saída para incluir capturas de tela nos logs de interface do usuário codificados. Para fazer isso, você precisa definir algumas configurações no arquivo QTAgent32.exe.config. Por padrão, esse arquivo é instalado no seguinte local:
+- ![Dica](../test/media/tip.png "{1&gt;Dica&lt;1}") Você pode configurar a saída para incluir capturas de tela nos logs de interface do usuário codificados. Para fazer isso, você precisa definir algumas configurações no arquivo QTAgent32.exe.config. Por padrão, esse arquivo é instalado no seguinte local:
 
    **C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE**
 
@@ -125,7 +125,7 @@ Os testes de IU codificados podem automatizar testes para aplicativos Web gravan
 
     Para obter mais informações, consulte [Analisando Testes de IU Codificado usando o Logs de Teste de IU Codificado](../test/analyzing-coded-ui-tests-using-coded-ui-test-logs.md).
 
-## <a name="external-resources"></a>Recursos externos
+## <a name="external-resources"></a>Recursos Externos
 
 ### <a name="videos"></a>Vídeos
  [Gravar no IE e reproduzir em qualquer lugar](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!183&authkey=!ANqaLtCZbtJrImU)
@@ -138,7 +138,7 @@ Os testes de IU codificados podem automatizar testes para aplicativos Web gravan
 
  [Solucionar problemas de falhas de teste entre navegadores](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!182&authkey=!AEpS48i295B49FI)
 
-### <a name="guidance"></a>Diretrizes
+### <a name="guidance"></a>{1&gt;Orientação&lt;1}
  [Testes de Entrega Contínua com o Visual Studio 2012 – Capítulo 2: Teste de Unidade: Testando o Interior](https://go.microsoft.com/fwlink/?LinkID=255188)
 
  [Teste de Entrega Contínua com o Visual Studio 2012 – Capítulo 5: Automatizar Testes do Sistema](https://go.microsoft.com/fwlink/?LinkID=255196)

@@ -36,7 +36,7 @@ Este tópico explica os conceitos básicos de definição e uso de uma DSL (ling
 
  O restante desta visão geral é uma explicação que apresenta as operações básicas de criação e uso de uma linguagem específica de domínio no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
 
-## <a name="prerequisites"></a>Pré-requisitos
+## <a name="prerequisites"></a>{1&gt;Pré-requisitos&lt;1}
  Para definir uma DSL, é necessário ter instalados os seguintes componentes:
 
 |||
@@ -72,7 +72,7 @@ Este tópico explica os conceitos básicos de definição e uso de uma DSL (ling
 
    - Escolha uma extensão que não esteja associada a nenhum aplicativo em seu computador ou em qualquer computador em que você queira instalar a DSL. Por exemplo, **docx** e **htm** seriam extensões de nome de arquivo inaceitáveis.
 
-   - O assistente o avisará se a extensão inserida está sendo usada como uma DSL. Considere usar uma extensão de nome de arquivo diferente. Também é possível redefinir a instância Experimental do SDK do Visual Studio para limpar os designers experimentais antigos. Clique em **Iniciar**, **Todos os Programas**, **SDK do Microsoft Visual Studio 2010**, **Ferramentas** e **Redefinir a Instância Experimental do Microsoft Visual Studio 2010**.
+   - O assistente o avisará se a extensão inserida está sendo usada como uma DSL. Considere usar uma extensão de nome de arquivo diferente. Também é possível redefinir a instância Experimental do SDK do Visual Studio para limpar os designers experimentais antigos. Clique em **Iniciar**, **todos os programas**, **Microsoft Visual Studio SDK 2010**, **ferramentas**e, em seguida, **redefina a instância experimental Microsoft Visual Studio 2010**.
 
 7. Inspecione as outras páginas e clique em **concluir**.
 
@@ -101,7 +101,7 @@ Este tópico explica os conceitos básicos de definição e uso de uma DSL (ling
 
 #### <a name="to-experiment-with-the-dsl"></a>Para experimentar a DSL
 
-1. Clique em **Transformar Todos os Modelos** na barra de ferramentas do Gerenciador de Soluções. Isso regenera a maior parte do código-fonte de DslDefinition. DSL.
+1. Clique em **transformar todos os modelos** na barra de ferramentas Gerenciador de soluções. Isso regenera a maior parte do código-fonte de DslDefinition. DSL.
 
    > [!NOTE]
    > Sempre que você alterar DslDefinition. DSL, deverá clicar em **transformar todos os modelos** antes de recompilar a solução. Você pode automatizar esta etapa. Para obter mais informações, consulte [como automatizar a transformação de todos os modelos](https://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a).
@@ -255,7 +255,7 @@ Este tópico explica os conceitos básicos de definição e uso de uma DSL (ling
 
 3. Mapeie os decoradores para as propriedades.
 
-   1. Abra a janela detalhes de DSL. Em geral, ele está em uma guia ao lado da janela saída. Se você não puder vê-lo, no menu **Exibir** , aponte para **outras janelas**e clique em **detalhes de DSL**.
+   1. Abra a janela Detalhes de DSL. Em geral, ele está em uma guia ao lado da janela saída. Se você não puder vê-lo, no menu **Exibir** , aponte para **outras janelas**e clique em **detalhes de DSL**.
 
    2. No diagrama de definição de DSL, clique na linha que conecta a classe de domínio **Person** à classe Shape.
 
@@ -394,7 +394,7 @@ Este tópico explica os conceitos básicos de definição e uso de uma DSL (ling
 
 #### <a name="to-reset-the-visual-studio-experimental-instance"></a>Para redefinir a instância experimental do Visual Studio
 
-1. Clique em **Iniciar**, **Todos os Programas**, **SDK do Microsoft Visual Studio 2010**, **Ferramentas** e **Redefinir a Instância Experimental do Microsoft Visual Studio 2010**.
+1. Clique em **Iniciar**, **todos os programas**, **Microsoft Visual Studio SDK 2010**, **ferramentas**e, em seguida, **redefina a instância experimental Microsoft Visual Studio 2010**.
 
 2. Reconstrua quaisquer DSLs experimentais ou outras extensões experimentais de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] que você ainda deseja usar.
 

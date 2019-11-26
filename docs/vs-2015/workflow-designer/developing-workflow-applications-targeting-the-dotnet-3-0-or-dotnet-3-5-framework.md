@@ -28,5 +28,5 @@ ms.locfileid: "74300931"
 
  [Depurando fluxos de trabalho herdados](../workflow-designer/debugging-legacy-workflows.md)
 
-## <a name="related-sections"></a>Seções relacionadas
+## <a name="related-sections"></a>Seções Relacionadas
  [Guia de programação Windows Workflow Foundation](https://go.microsoft.com/fwlink?LinkID=65012)

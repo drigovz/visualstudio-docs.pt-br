@@ -31,22 +31,22 @@ Este tópico descreve como usar o designer de atividade em [!INCLUDE[wfd1](../in
 ## <a name="creating-a-custom-activity"></a>Criando uma atividade personalizado
  Siga estas etapas para criar uma atividade personalizado utilizando o designer de atividade:
 
-1. No menu de **Projeto** , clique **Adicionar Atividade**.
+1. No menu **projeto** , clique em **Adicionar atividade**.
 
-2. Selecione o modelo de **Atividade** ou de **Atividade (com separação de código)** .
+2. Selecione o modelo **atividade** ou **atividade (com separação de código)** .
 
-   1. Use o modelo de **Atividade** para criar uma atividade com a definição de atividade e o código do usuário no mesmo arquivo de código.
+   1. Use o modelo de **atividade** para criar uma atividade com a definição da atividade e o código do usuário no mesmo arquivo de código.
 
-   2. Use o modelo de **Atividade (com separação de código)** para criar uma atividade com a definição de atividade expressa como a marcação de fluxo de trabalho e o código do usuário em um arquivo separado de código.
+   2. Use o modelo **atividade (com separação de código)** para criar uma atividade com a definição de atividade expressa como marcação de fluxo de trabalho e o código de usuário em um arquivo de código separado.
 
-3. Digite um nome de atividade ou manter o nome padrão, e clique em **Adicionar**.
+3. Digite um nome de atividade ou mantenha o nome padrão e clique em **Adicionar**.
 
    Você também pode criar um conjunto de atividades personalizadas criando um novo projeto do tipo **biblioteca de atividades de fluxo de trabalho**. Para obter mais informações sobre esse tipo de projeto, consulte [como: criar uma biblioteca de atividades de fluxo de trabalho (Herdado)](../workflow-designer/how-to-create-a-workflow-activity-library-legacy.md).
 
 ## <a name="configuring-an-activity"></a>Configurando uma atividade
  Quando o designer de atividade estiver ativo, você pode usar o navegador de propriedade para configurar as propriedades listadas na tabela a seguir.
 
-|Propriedade|Comentários|
+|Propriedade|Comments|
 |--------------|--------------|
 |**Nome**|Nome da atividade.|
 |**Classe base**|Classe base que a atividade deriva. A classe base padrão é [SequenceActivity](https://go.microsoft.com/fwlink?LinkID=65020). Na janela **Propriedades** , clique nas reticências da **classe base** **[...]** para selecionar outra classe base na [caixa de diálogo Procurar e selecione um tipo .net (Herdado)](../workflow-designer/browse-and-select-a-dotnet-type-dialog-box-legacy.md).|

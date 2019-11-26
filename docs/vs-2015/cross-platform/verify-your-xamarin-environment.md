@@ -24,7 +24,7 @@ Depois de ter concluído os instaladores (consulte [Configurar e instalar](../cr
   
 - [Criar aplicativos com interface do usuário nativa usando o Xamarin no Visual Studio](../cross-platform/build-apps-with-native-ui-using-xamarin-in-visual-studio.md)  
   
-## <a name="all-platforms"></a>Todas as Plataformas  
+## <a name="all-platforms"></a>Todas as plataformas  
  Primeiro, selecione **Ferramentas > Opções**, expanda **Xamarin > Outros** e clique no link **Verificar agora** para obter as atualizações. Você precisa usar o Xamarin 4.0.3.214 ou posterior para evitar problemas de licenciamento anteriores.  
   
  Em seguida, crie uma nova solução do Xamarin no Visual Studio usando **Arquivo > Novo Projeto**, em seguida, na caixa de diálogo, expanda **Modelos > Outros Idiomas > Visual C# > Multiplataforma**, selecione **Aplicativo em Branco (Nativo Portátil)** e clique em OK. Isso cria uma solução com um projeto de biblioteca de classes portátil compartilhado e projetos individuais para Android, iOS e Windows:  

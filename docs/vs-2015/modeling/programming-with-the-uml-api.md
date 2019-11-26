@@ -51,9 +51,9 @@ A API UML do Visual Studio permite que você escreva código para criar, ler e a
 ## <a name="the-api-assemblies"></a>Os assemblies de API
  Esta tabela resume os assemblies que fornecem extensibilidade para as ferramentas UML e os namespaces que você recomenda usar.
 
-|Assembly|Namespaces|Fornece acesso a:|
+|Assembly|{1&gt;Namespaces&lt;1}|Fornece acesso a:|
 |--------------|----------------|-------------------------|
-|Microsoft.VisualStudio.Uml.Interfaces|Os|Os tipos UML.|
+|Microsoft.VisualStudio.Uml.Interfaces|(Tudo)|Os tipos UML.|
 |Microsoft.VisualStudio.ArchitectureTools.Extensibility|Microsoft. VisualStudio. ArchitectureTools. Extensibility. Uml|[Métodos de criação](../modeling/create-elements-and-relationships-in-uml-models.md)|
 ||Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation|[Diagramas e formas](../modeling/display-a-uml-model-on-diagrams.md)|
 ||Microsoft.VisualStudio.ArchitectureTools.Extensibility|[O projeto de modelagem](../modeling/read-a-uml-model-in-program-code.md)|
@@ -66,7 +66,7 @@ A API UML do Visual Studio permite que você escreva código para criar, ler e a
 |Microsoft.TeamFoundation.WorkItemTracking.Client|Microsoft.TeamFoundation.WorkItemTracking.Client|[Itens de trabalho e seus campos](../modeling/define-a-work-item-link-handler.md).|
 |Microsoft.TeamFoundation.Client|Microsoft.TeamFoundation.Client|[Itens de trabalho e seus campos](../modeling/define-a-work-item-link-handler.md).|
 |System.ComponentModel.Composition|<xref:System.ComponentModel.Composition>|[Exportar e importar para componentes do MEF](../modeling/define-and-install-a-modeling-extension.md)|
-|System.Linq|<xref:System.Linq>|[Fácil manipulação de coleções, especialmente ao lidar com relações](../modeling/navigate-relationships-with-the-uml-api.md).|
+|{1&gt;System.Linq&lt;1}|<xref:System.Linq>|[Fácil manipulação de coleções, especialmente ao lidar com relações](../modeling/navigate-relationships-with-the-uml-api.md).|
 
 ## <a name="see-also"></a>Consulte também
  [Estender modelos UML e](../modeling/extend-uml-models-and-diagrams.md) [referência de API de diagramas para EXTENSIBILIDADE de modelagem UML](../modeling/api-reference-for-uml-modeling-extensibility.md)

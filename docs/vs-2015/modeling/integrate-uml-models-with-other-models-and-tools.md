@@ -71,7 +71,7 @@ Em um elemento UML, você pode armazenar links para outros elementos, arquivos o
 
    Para obter mais informações, consulte [definir um manipulador de gestos em um diagrama de modelagem](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md) e [como adicionar um manipulador de arrastar e soltar](../modeling/how-to-add-a-drag-and-drop-handler.md).
 
-## <a name="samples"></a>Exemplos
+## <a name="samples"></a>Amostras
  Consulte o exemplo de código [vincular elementos UML a diagramas ou outros arquivos](https://go.microsoft.com/fwlink/?LinkId=213813). O exemplo permite que os usuários arrastem um arquivo para qualquer elemento UML e, posteriormente, abra o arquivo clicando duas vezes no elemento. Por exemplo, você pode vincular um diagrama de atividade a um elemento de caso de uso. Um ícone mostra quais elementos têm links.
 
  Este exemplo de código demonstra as seguintes técnicas:

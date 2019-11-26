@@ -33,7 +33,7 @@ Para obter informações sobre os esquemas subjacentes para a definição de ser
 
 ## <a name="configuration-page"></a>Página Configuração
 
-### <a name="service-configuration"></a>Configuração de Serviço
+### <a name="service-configuration"></a>Configuração do serviço
 
 Seleciona qual arquivo do `ServiceConfiguration.*.cscfg` é afetado pelas alterações. Por padrão, há variantes de Local e Nuvem, e você pode usar o comando **Manage...** para copiar, renomear e remover os arquivos de configuração. Esses arquivos são adicionados ao seu projeto de serviço de nuvem e aparecem no **Gerenciador de Soluções**. No entanto, renomear ou remover configurações pode ser feito somente por este controle.
 

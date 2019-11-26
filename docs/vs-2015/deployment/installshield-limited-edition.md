@@ -28,8 +28,8 @@ Com o InstallShield Limited Edition, você pode criar um arquivo de configuraç�
   
 1. Na barra de menus, escolha **Arquivo**, **Novo**, **Projeto**.  
   
-2. Na caixa de diálogo **Novo Projeto**, expanda o nó **Outros Tipos de Projeto** e escolha o nó **Instalação e Implantação**.  
+2. Na caixa de diálogo **novo projeto** , expanda o nó **outros tipos de projeto** e, em seguida, escolha o nó **instalação e implantação** .  
   
-3. Na lista, escolha **Habilitar InstallShield Limited Edition** e clique no botão **OK**.  
+3. Na lista modelo, escolha **habilitar InstallShield Limited Edition**e, em seguida, escolha o botão **OK** .  
   
-4. Na janela do navegador aberta, leia as instruções e clique no link **Ir para o site de downloads**.
+4. Na janela do navegador que é aberta, leia as instruções e, em seguida, escolha o link **ir para o site de download** .
