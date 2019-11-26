@@ -109,7 +109,7 @@ Este tópico resume as diferentes maneiras pelas quais você pode estender as fe
 ## <a name="domain-specific-languages"></a>Linguagens específicas de domínio
  Onde você usa com frequência um tipo específico de modelo, pode ser útil criar uma linguagem específica de domínio. Isso pode ser feito para atender às suas necessidades de negócios de forma mais próxima do que um modelo UML, mas requer mais esforço para compilá-lo e mantê-lo. Para obter mais informações, consulte [SDK de modelagem para Visual Studio-linguagens específicas de domínio](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md).
 
-## <a name="external-resources"></a>Recursos externos
+## <a name="external-resources"></a>Recursos Externos
 
 |**Categoria**|**Vincule**|
 |------------------|---------------|

@@ -38,7 +38,7 @@ No Visual Studio, você pode adaptar os elementos de modelo UML padrão, como cl
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
-|Título|Descrição|
+|Title|Descrição|
 |-----------|-----------------|
 |[Adicionar estereótipos a elementos de modelo UML](../modeling/add-stereotypes-to-uml-model-elements.md)|Colocando um elemento de modelo em um pacote, vinculando o pacote a um perfil e aplicando um estereótipo ao elemento.|
 |[Estereótipos padrão para modelos UML](../modeling/standard-stereotypes-for-uml-models.md)|Os perfis padrão UML L2 e L3 são instalados com o Visual Studio e todos os modelos são vinculados a eles por padrão. Eles fornecem estereótipos que você pode usar para anotar seus modelos.<br /><br /> Por exemplo, você pode aplicar o estereótipo «especificação» a uma classe para indicar que ele se destina apenas a definir o comportamento visível externamente de suas instâncias,|

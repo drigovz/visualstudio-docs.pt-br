@@ -113,7 +113,7 @@ Você pode definir um *perfil UML* para personalizar os elementos do modelo padr
 
    - Clique em **arquivo no sistema de arquivos** e selecione o nome do seu arquivo de perfil, por exemplo `MyProfile.profile`
 
-6. Compile o projeto.
+6. Crie o projeto.
 
 7. **Para depurar o perfil**, pressione F5.
 

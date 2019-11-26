@@ -48,7 +48,7 @@ Verifique se seu aplicativo atende aos requisitos de usuário usando ferramentas
 
  Para ver quais versões do Visual Studio oferecem suporte a cada recurso, consulte [suporte de versão para ferramentas de arquitetura e modelagem](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)
 
-## <a name="to"></a>Para
+## <a name="to"></a>{1&gt;Para&lt;1}
 
 |||
 |-|-|

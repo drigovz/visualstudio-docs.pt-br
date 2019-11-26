@@ -45,7 +45,7 @@ Para garantir que o código não entre em conflito com seu design, valide seu c�
 
   **Requisitos**
 
-- Visual Studio
+- {1&gt;Visual Studio&lt;1}
 
 - Visual Studio em seu servidor de compilação do Team Foundation para validar o código automaticamente com o Team Foundation Build
 
@@ -73,30 +73,30 @@ Para garantir que o código não entre em conflito com seu design, valide seu c�
 ## <a name="SupportsValidation"></a>Ver se um item dá suporte à validação
  É possível vincular camadas a sites, documentos do Office, arquivos de texto sem formatação e arquivos em projetos compartilhados entre vários aplicativos, mas o processo de validação não os incluirá. Os erros de validação não serão exibidos para referências a projetos ou assemblies vinculados a camadas separadas quando nenhuma dependência for exibida entre essas camadas. Essas referências não serão consideradas dependências, a menos que o código use essas referências.
 
-1. No diagrama de camada, selecione uma ou mais camadas, clique com o botão direito do mouse na seleção e, em seguida, clique em **Exibir Links**.
+1. No diagrama de camada, selecione uma ou mais camadas, clique com o botão direito do mouse em sua seleção e clique em **exibir links**.
 
-2. Em **Gerenciador de Camadas**, examine a coluna **Dá Suporte à Validação**. Se o valor for falso, o item não dará suporte à validação.
+2. No **Gerenciador de camadas**, examine a coluna de **validação de suporte** . Se o valor for falso, o item não dará suporte à validação.
 
 ## <a name="IncludeReferences"></a>Incluir outros assemblies e projetos .NET para validação
- Quando você arrasta itens para o diagrama de camada, as referências para os assemblies ou projetos do .NET correspondentes são adicionadas automaticamente à pasta **Referências de Camada** no projeto de modelagem. Essa pasta contém referências aos assemblies e aos projetos analisados durante a validação. É possível incluir outros assemblies e projetos do .NET para avaliação sem arrastá-los manualmente para o diagrama de camada.
+ Quando você arrasta itens para o diagrama de camada, as referências aos assemblies ou projetos do .NET correspondentes são adicionadas automaticamente à pasta de **referências de camada** no projeto de modelagem. Essa pasta contém referências aos assemblies e aos projetos analisados durante a validação. É possível incluir outros assemblies e projetos do .NET para avaliação sem arrastá-los manualmente para o diagrama de camada.
 
-1. No **Gerenciador de Soluções**, clique com botão direito do mouse no projeto de modelagem ou na pasta **Referências de Camada** e, em seguida, clique em **Adicionar Referência**.
+1. Em **Gerenciador de soluções**, clique com o botão direito do mouse no projeto de modelagem ou na pasta **referências de camada** e clique em **Adicionar referência**.
 
-2. Na caixa de diálogo **Adicionar Referência**, selecione os assemblies ou os projetos e, em seguida, clique em **OK**.
+2. Na caixa de diálogo **Adicionar referência** , selecione os assemblies ou projetos e clique em **OK**.
 
 ## <a name="ValidateManually"></a>Validar o código manualmente
- Se tiver um diagrama de camada aberto vinculado a itens de solução, você poderá executar o comando de atalho **Validar** no diagrama. Você também pode usar o prompt de comando para executar o comando do **MSBuild** com a propriedade personalizada **/p: ValidateArchitecture** definida como **true**. Por exemplo, à medida que fizer alterações no código, execute a validação da camada regularmente de forma que você possa capturar conflitos de dependência com antecedência.
+ Se você tiver um diagrama de camada aberta vinculado a itens de solução, poderá executar o comando **validar** atalho do diagrama. Você também pode usar o prompt de comando para executar o comando do **MSBuild** com a propriedade personalizada **/p: ValidateArchitecture** definida como **true**. Por exemplo, à medida que fizer alterações no código, execute a validação da camada regularmente de forma que você possa capturar conflitos de dependência com antecedência.
 
 #### <a name="to-validate-code-from-an-open-layer-diagram"></a>Para validar o código com base em um diagrama de camada aberto
 
-1. Clique com o botão direito do mouse na superfície do diagrama e, em seguida, clique em **Validar Arquitetura**.
+1. Clique com o botão direito do mouse na superfície do diagrama e clique em **validar arquitetura**.
 
     > [!NOTE]
-    > Por padrão, a propriedade **Compilar Ação** no arquivo do diagrama de camada (.layerdiagram) é definida como **Validar**, de forma que o diagrama seja incluído no processo de validação.
+    > Por padrão, a propriedade de **ação de compilação** no arquivo de diagrama de camada (. layerdiagram) é definida como **validar** para que o diagrama seja incluído no processo de validação.
 
-     A janela **Lista de Erros** relata todos os erros ocorridos. Para obter mais informações sobre erros de validação, consulte [Compreender e resolver erros na validação de camada](#UnderstandingValidationErrors).
+     A janela **lista de erros** relata os erros que ocorrem. Para obter mais informações sobre erros de validação, consulte [entender e resolver erros de validação de camada](#UnderstandingValidationErrors).
 
-2. Para exibir a origem de cada erro, clique duas vezes no erro na janela **Lista de Erros**.
+2. Para exibir a origem de cada erro, clique duas vezes no erro na janela **lista de erros** .
 
     > [!NOTE]
     > [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] pode mostrar um mapa de código em vez da origem do erro. Isso ocorre quando o código tem uma dependência em um assembly não especificado pelo diagrama de camada ou o código não tem uma dependência especificada pelo diagrama de camada. Examine o mapa de código ou o código para determinar se a dependência deve existir. Para obter mais informações sobre mapas de código, consulte [mapear dependências em suas soluções](../modeling/map-dependencies-across-your-solutions.md).
@@ -139,7 +139,7 @@ Para garantir que o código não entre em conflito com seu design, valide seu c�
 
      Todos os erros ocorridos serão listados. Para obter mais informações sobre [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], consulte [MSBuild](../msbuild/msbuild.md) e [MSBuild Task](../msbuild/msbuild-task.md).
 
-   Para obter mais informações sobre erros de validação, consulte [Compreender e resolver erros na validação de camada](#UnderstandingValidationErrors).
+   Para obter mais informações sobre erros de validação, consulte [entender e resolver erros de validação de camada](#UnderstandingValidationErrors).
 
 ### <a name="ManageErrors"></a>Gerenciar erros de validação
  Durante o processo de desenvolvimento, você talvez queira suprimir alguns dos conflitos reportados durante a validação. Por exemplo, você talvez queira suprimir erros que já esteja resolvendo ou que não sejam relevantes para seu cenário específico. Quando você suprime um erro, é uma prática recomendada registrar em log um item de trabalho em [!INCLUDE[esprfound](../includes/esprfound-md.md)].
@@ -149,16 +149,16 @@ Para garantir que o código não entre em conflito com seu design, valide seu c�
 
 ##### <a name="to-create-a-work-item-for-a-validation-error"></a>Para criar um item de trabalho para um erro de validação
 
-- Na janela **Lista de Erros**, clique com o botão direito do mouse no erro, aponte para **Criar Item de Trabalho** e, em seguida, clique no tipo de item de trabalho que você deseja criar.
+- Na janela **lista de erros** , clique com o botão direito do mouse no erro, aponte para **Criar item de trabalho**e clique no tipo de item de trabalho que você deseja criar.
 
-  Use essas tarefas para gerenciar erros de validação na janela **Lista de Erros**:
+  Use estas tarefas para gerenciar erros de validação na janela de **lista de erros** :
 
 |**To**|**Siga estas etapas**|
 |------------|----------------------------|
-|Suprimir erros selecionados durante a validação|Clique com o botão direito do mouse em um ou em vários erros selecionados, aponte para **Gerenciar Erros de Validação** e, em seguida, clique em **Suprimir Erros**.<br /><br /> Os erros suprimidos são exibidos com formatação de tachado. Quando você executar a validação da próxima vez, esses erros não serão exibidos.<br /><br /> Os erros suprimidos são acompanhados em um arquivo .suppressions para o arquivo do diagrama de camada correspondente.|
-|Parar a supressão de erros selecionados|Clique com o botão direito do mouse no erro ou nos erros suprimidos selecionados, aponte para **Gerenciar Erros de Validação** e, em seguida, clique em **Parar de Suprimir Erros**.<br /><br /> Os erros suprimidos selecionados serão exibidos quando você executar a validação na próxima vez.|
-|Restaurar todos os erros suprimidos na janela **Lista de Erros**|Clique com o botão direito do mouse em qualquer lugar na janela **Lista de Erros**, aponte para **Gerenciar Erros de Validação** e, em seguida, clique em **Mostrar Todos os Erros Suprimidos**.|
-|Ocultar todos os erros suprimidos na janela **Lista de Erros**|Clique com o botão direito do mouse em qualquer lugar na janela **Lista de Erros**, aponte para **Gerenciar Erros de Validação** e, em seguida, clique em **Ocultar Todos os Erros Suprimidos**.|
+|Suprimir erros selecionados durante a validação|Clique com o botão direito do mouse em um ou vários erros selecionados, aponte para **Gerenciar erros de validação**e clique em **suprimir erros**.<br /><br /> Os erros suprimidos são exibidos com formatação de tachado. Quando você executar a validação da próxima vez, esses erros não serão exibidos.<br /><br /> Os erros suprimidos são acompanhados em um arquivo .suppressions para o arquivo do diagrama de camada correspondente.|
+|Parar a supressão de erros selecionados|Clique com o botão direito do mouse no erro ou erros suprimidos selecionados, aponte para **Gerenciar erros de validação**e clique em **parar de suprimir erros**.<br /><br /> Os erros suprimidos selecionados serão exibidos quando você executar a validação na próxima vez.|
+|Restaurar todos os erros suprimidos na janela de **lista de erros**|Clique com o botão direito do mouse em qualquer lugar na janela **lista de erros** , aponte para **Gerenciar erros de validação**e clique em **Mostrar todos os erros suprimidos**.|
+|Ocultar todos os erros suprimidos da janela de **lista de erros**|Clique com o botão direito do mouse em qualquer lugar na janela **lista de erros** , aponte para **Gerenciar erros de validação**e clique em **ocultar todos os erros suprimidos**.|
 
 ## <a name="ValidateAuto"></a>Validar o código automaticamente
  É possível executar a validação da camada sempre que você executa uma compilação local. Se a equipe usar o Team Foundation Build, será possível executar a validação da camada com check-ins restritos, que você pode especificar criando uma tarefa MSBuild personalizada, e usar relatórios de compilação para coletar erros de validação. Para criar compilações de check-in restringidas, consulte [usar um processo de compilação de check-in restrito para validar as alterações](https://msdn.microsoft.com/library/9cfc8b9c-1023-40fd-8ab5-1b1bd9c172ec).
@@ -173,29 +173,29 @@ Para garantir que o código não entre em conflito com seu design, valide seu c�
 
  \- ou -
 
-1. No **Gerenciador de Soluções**, clique com botão direito do mouse no projeto de modelagem que contém o diagrama ou os diagramas de camada e, em seguida, clique em **Propriedades**.
+1. No **Gerenciador de soluções**, clique com o botão direito do mouse no projeto de modelagem que contém o diagrama de camada ou diagramas e clique em **Propriedades**.
 
-2. Na janela **Propriedades**, defina a propriedade **Validar Arquitetura** do projeto de modelagem como **Verdadeiro**.
+2. Na janela **Propriedades** , defina a propriedade de arquitetura de **validação** do projeto de modelagem como **true**.
 
     Isso inclui o projeto de modelagem no processo de validação.
 
-3. No **Gerenciador de Soluções**, clique com o botão direito do mouse no arquivo do diagrama de camada (.layerdiagram) que você talvez queira usar na validação.
+3. Em **Gerenciador de soluções**, clique no arquivo de diagrama de camada (. layerdiagram) que você deseja usar para validação.
 
-4. Na janela **Propriedades**, verifique se a propriedade **Compilar Ação** do diagrama está definida como **Validar**.
+4. Na janela **Propriedades** , verifique se a propriedade **ação de Build** do diagrama está definida como **validar**.
 
     Isso inclui o diagrama de camada no processo de validação.
 
-   Para gerenciar erros na janela Lista de Erros, consulte [Gerenciar Erros de Validação](#ManageErrors).
+   Para gerenciar erros na janela de Lista de Erros, consulte [Gerenciar erros de validação](#ManageErrors).
 
 #### <a name="to-validate-code-automatically-during-a-team-foundation-build"></a>Para validar automaticamente o código durante um Team Foundation Build
 
-1. No **Team Explorer**, clique duas vezes na definição da compilação e, em seguida, clique em **Processo**.
+1. Em **Team Explorer**, clique duas vezes na definição de compilação e, em seguida, clique em **processar**.
 
-2. Em **Parâmetros do processo de compilação**, expanda **Compilação** e digite o seguinte no parâmetro **Argumentos de MSBuild**:
+2. Em **criar parâmetros de processo**, expanda **compilação**e digite o seguinte no parâmetro de **argumentos do MSBuild** :
 
     `/p:ValidateArchitecture=true`
 
-   Para obter mais informações sobre erros de validação, consulte [Compreender e resolver erros na validação de camada](#UnderstandingValidationErrors). Para obter mais informações sobre [!INCLUDE[esprbuild](../includes/esprbuild-md.md)], consulte:
+   Para obter mais informações sobre erros de validação, consulte [entender e resolver erros de validação de camada](#UnderstandingValidationErrors). Para obter mais informações sobre [!INCLUDE[esprbuild](../includes/esprbuild-md.md)], consulte:
 
 - [Compilar o aplicativo](/azure/devops/pipelines/index)
 
@@ -208,7 +208,7 @@ Para garantir que o código não entre em conflito com seu design, valide seu c�
 - [Monitorar o progresso de uma compilação em execução](https://msdn.microsoft.com/library/e51e3bad-2d1d-4b7b-bfcc-c43439c6c8ef)
 
 ## <a name="TroubleshootingValidation"></a>Solucionar problemas de validação de camada
- A tabela a seguir descreve problemas na validação da camada e sua resolução. Esses problemas são diferentes dos erros resultantes de conflitos entre o código e o design. Para obter mais informações sobre esses erros, consulte [Compreender e resolver erros na validação de camada](#UnderstandingValidationErrors).
+ A tabela a seguir descreve problemas na validação da camada e sua resolução. Esses problemas são diferentes dos erros resultantes de conflitos entre o código e o design. Para obter mais informações sobre esses erros, consulte [entender e resolver erros de validação de camada](#UnderstandingValidationErrors).
 
 |**Lo**|**Causa possível**|**Resolução**|
 |---------------|------------------------|--------------------|
@@ -227,18 +227,18 @@ Para garantir que o código não entre em conflito com seu design, valide seu c�
 
 |**Sintaxe**|**Descrição**|
 |----------------|---------------------|
-|*ArtifactN*(*ArtifactTypeN*)|O *artefaton* é um artefato associado a uma camada no diagrama de camadas.<br /><br /> *ArtifactTypeN* é o tipo de *artefaton*, como uma **classe** ou um **método**, por exemplo:<br /><br /> MySolution.MyProject.MyClass.MyMethod(Method)|
+|*Artefaton*(*ArtifactTypeN*)|O *artefaton* é um artefato associado a uma camada no diagrama de camadas.<br /><br /> *ArtifactTypeN* é o tipo de *artefaton*, como uma **classe** ou um **método**, por exemplo:<br /><br /> MySolution.MyProject.MyClass.MyMethod(Method)|
 |*NamespaceNameN*|O nome de um namespace.|
 |*LayerNameN*|O nome de uma camada no diagrama de camada.|
-|*DependencyType*|O tipo de relação de dependência entre *Artefato1* e *Artefato2*. Por exemplo, *Artefato1* tem uma relação **Chamadas** com *Artefato2*.|
+|*DependencyType*|O tipo de relação de dependência entre *Artifact1* e *Artifact2*. Por exemplo, *Artifact1* tem uma relação de **chamadas** com *Artifact2*.|
 
 |**Sintaxe de erro**|**Descrição do erro**|
 |----------------------|---------------------------|
-|AV0001: Dependência inválida: *Artefato1*(*TipoArtefato1*) --> *Artefato2*(*TipoArtefato2*)<br /><br /> Camadas: *LayerName1*, dependências de *LayerName2* &#124; : *DependencyType*|*Artifact1* em *LayerName1* não deve ter uma dependência em *Artifact2* no *LayerName2* porque *LayerName1* não tem uma dependência direta em *LayerName2*.|
-|AV1001: Namespace Inválido: *Artefato*<br /><br /> Camada: *LayerName* &#124; obrigatório namespace: *NamespaceName1* &#124; Current namespace: *NamespaceName2*|{1&gt;NomeCamada&lt;1} exige que seus artefatos associados devam pertencer a {2&gt;NomeNamespace1&lt;2}. O *artefato* está em *NamespaceName2*, não *NamespaceName1*.|
-|AV1002: depende do namespace proibido: *Artifact1*(*ArtifactType1*) &#124; *Artifact2*(*ArtifactType2*)<br /><br /> Camada: nome da *camada* &#124; proibido namespace: dependências de *NamespaceName* &#124; : *DependencyType*|{1&gt;NomeCamada&lt;1} exige que seus artefatos associados não devam depender de {2&gt;NomeNamespace&lt;2}. {1&gt;Artefato1&lt;1} não pode depender do {2&gt;Artefato2&lt;2} porque o {3&gt;Artefato2&lt;3} está no {4&gt;NomeNamespace&lt;4}.|
-|AV1003: No Namespace Proibido: *Artefato*(*TipoArtefato*)<br /><br /> Camada: namespace de *LayerName* &#124; proibido: *NamespaceName*|O *LayerName* requer que seus artefatos associados não possam pertencer a *NamespaceName*. O *artefato* pertence a *NamespaceName*.|
-|AV3001: Link Ausente: não foi possível encontrar os links da camada '*NomeCamada*' com o '*Artefato*'. Você não tem uma referência de assembly?|Os links de *LayerName* para um artefato que não podem ser encontrados. Por exemplo, um link para uma classe talvez não seja encontrado porque o projeto de modelagem não tem uma referência para o assembly que contém a classe.|
+|AV0001: dependência inválida: *Artifact1*(*ArtifactType1*)--> *Artifact2*(*ArtifactType2*)<br /><br /> Camadas: *LayerName1*, dependências de *LayerName2* &#124; : *DependencyType*|*Artifact1* em *LayerName1* não deve ter uma dependência em *Artifact2* no *LayerName2* porque *LayerName1* não tem uma dependência direta em *LayerName2*.|
+|AV1001: namespace inválido: *artefato*<br /><br /> Camada: *LayerName* &#124; obrigatório namespace: *NamespaceName1* &#124; Current namespace: *NamespaceName2*|O *LayerName* requer que seus artefatos associados devam pertencer a *NamespaceName1*. O *artefato* está em *NamespaceName2*, não *NamespaceName1*.|
+|AV1002: depende do namespace proibido: *Artifact1*(*ArtifactType1*) &#124; *Artifact2*(*ArtifactType2*)<br /><br /> Camada: nome da *camada* &#124; proibido namespace: dependências de *NamespaceName* &#124; : *DependencyType*|O *LayerName* requer que seus artefatos associados não dependam do *NamespaceName*. *Artifact1* não pode depender de *Artifact2* porque *Artifact2* está em *NamespaceName*.|
+|AV1003: no namespace proibido: *artefato*(*artefatotype*)<br /><br /> Camada: namespace de *LayerName* &#124; proibido: *NamespaceName*|O *LayerName* requer que seus artefatos associados não possam pertencer a *NamespaceName*. O *artefato* pertence a *NamespaceName*.|
+|AV3001: link ausente: camada '*LayerName*' vincula ao '*artefato*', que não foi encontrado. Você não tem uma referência de assembly?|Os links de *LayerName* para um artefato que não podem ser encontrados. Por exemplo, um link para uma classe talvez não seja encontrado porque o projeto de modelagem não tem uma referência para o assembly que contém a classe.|
 |AV9001: A análise arquitetônica encontrou erros internos. Os resultados talvez não estejam completos. Para obter mais informações, consulte o log de eventos da compilação detalhado ou a janela de saída.|Consulte o log de eventos da compilação ou a janela de saída para obter mais detalhes.|
 
 ## <a name="security"></a>Segurança
