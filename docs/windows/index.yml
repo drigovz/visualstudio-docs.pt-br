@@ -10,12 +10,12 @@ metadata:
   monikerRange: '>=vs-2017'
   f1_keywords:
   - MSDNSTART
-  ms.openlocfilehash: 905fd0b3f9ad37125ae8cccd5dab30f0517d16a1
-  ms.sourcegitcommit: 890ae10c8ea3bff8306ed25b06256578dee08397
+  ms.openlocfilehash: 2b2fffb32ba16111449c2876769e70d9c687b976
+  ms.sourcegitcommit: e825d1223579b44ee2deb62baf4de0153f99242a
   ms.translationtype: HT
   ms.contentlocale: pt-BR
-  ms.lasthandoff: 11/15/2019
-  ms.locfileid: "74119710"
+  ms.lasthandoff: 11/25/2019
+  ms.locfileid: "74474008"
 highlightedContent:
   items:
   - title: Instalação e configuração
@@ -157,8 +157,8 @@ additionalContent:
     - title: Colaboração
       summary: Compartilhar, editar e depurar o código em um ambiente de colaboração em tempo real.
       url: /visualstudio/liveshare/
-    - title: Desenvolver com contêineres
-      summary: Use contêineres para isolar componentes modulares e melhorar a escalabilidade.
+    - title: Desenvolver com contêineres do Docker
+      summary: Use contêineres do Docker para isolar componentes modulares e melhorar a escalabilidade.
       url: ../containers/index.yml
   - title: Cargas de trabalho
     items:
