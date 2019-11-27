@@ -191,7 +191,7 @@ ms.locfileid: "74296908"
  Depois que você tiver preparado o aplicativo para captura programática e, como opção, configurado o local e o nome do arquivo de log de gráficos, compile o aplicativo, em seguida, execute ou o depure para capturar dados. Não inicie o diagnóstico de gráficos no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] quando você usar a API de captura programática. O log de gráficos é gravado no local especificado por você. Se quiser manter essa versão do log, mova-a para outro local. Do contrário, ela será substituída quando o aplicativo for executado novamente.  
   
 > [!TIP]
-> Ainda assim é possível capturar informações gráficas manualmente enquanto você estiver usando a captura programática. Com o aplicativo no foco, basta pressionar **Print Screen**. Você pode usar essa técnica para capturar informações gráficas adicionais não capturadas pela API de captura programática.  
+> Você ainda pode capturar as informações de gráficos manualmente enquanto estiver usando a captura programática — com o aplicativo em foco, basta pressionar a **tela de impressão**. Você pode usar essa técnica para capturar informações gráficas adicionais não capturadas pela API de captura programática.  
   
 ## <a name="next-steps"></a>Próximas etapas  
  Este passo a passo demonstrou como capturar informações gráficas de forma programática. Como próxima etapa, considere esta opção:  

@@ -52,4 +52,4 @@ Projetos e soluções são as maneiras como o Visual Studio organiza arquivos de
  [Gerenciar projetos universais do Windows](../extensibility/managing-universal-windows-projects.md)  
  Explica como gerenciar projetos universais.  
   
-## <a name="related-sections"></a>Seções relacionadas
+## <a name="related-sections"></a>Seções Relacionadas

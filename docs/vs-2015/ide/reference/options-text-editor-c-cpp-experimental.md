@@ -41,7 +41,7 @@ Ao alterar essas opções, você pode alterar o comportamento relacionado ao Int
 
  **Habilitar a assinatura de alteração** Adicionar, reordenar e excluir parâmetros de uma função e propagar as alterações para todos os sites de chamada. Para acessar esse recurso, clique com botão direito do mouse em qualquer uso da função e selecione **Ações Rápidas** ou simplesmente pressione o atalho padrão Ctrl+Ponto [Ctrl+.].
 
-## <a name="text-editor"></a>Editor de Texto
+## <a name="text-editor"></a>{1&gt;Editor de Texto&lt;1}
  **Habilitar escopos de expansão** Se habilitada, você pode colocar o texto selecionado entre chaves digitando ' {' no editor de texto.
 
  **Habilitar precedência de expansão** Se habilitada, você pode colocar o texto selecionado entre parênteses digitando ' (' no editor de texto.

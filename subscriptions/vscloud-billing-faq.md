@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/28/2019
 ms.topic: conceptual
 description: Perguntas sobre cobrança para assinaturas de nuvem.
-ms.openlocfilehash: 961cd646ecf0ed9c34c734292491c5f3a8e67480
-ms.sourcegitcommit: bcdab788085bd9931d73883fe70cd5831317dca2
+ms.openlocfilehash: 12ff77a052e54520885642cb3cd6ed1dea31506b
+ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72816387"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74491269"
 ---
 # <a name="visual-studio-cloud-subscriptions-billing-faq"></a>Perguntas frequentes sobre cobrança de assinaturas de nuvem do Visual Studio
 [Compare os benefícios e os preços das assinaturas de nuvem](https://visualstudio.microsoft.com/vs/pricing/) para entender os benefícios de cada assinatura do Visual Studio, com comparações entre as assinaturas de nuvem e padrão do Visual Studio, detalhes sobre os benefícios do assinante e muito mais.
@@ -81,7 +81,7 @@ R: não, você não pode usar seu [crédito individual do Azure DevTest mensalme
 Antes de fazer compras, você precisará [remover seu limite de gastos](https://azure.microsoft.com/pricing/spending-limits/).
 
 ### <a name="q-whats-the-difference-between-annual-and-monthly-cloud-subscriptions"></a>P: Qual é a diferença entre as assinaturas de nuvem anuais e mensais?
-R: As assinaturas de nuvem mensais incluem o Visual Studio mais o uso do Azure DevOps Services e do TFS. As assinaturas de nuvem anuais também têm isso, mas incluem os benefícios do Assinante, incluindo o uso do Windows e de outros softwares da Microsoft para instalação e execução para desenvolvimento e teste, um crédito mensal do Azure DevTest indiviual para uso para experimentar com o Azure serviços e desenvolvimento e teste na nuvem, treinamento, suporte e muito mais.
+R: As assinaturas de nuvem mensais incluem o Visual Studio mais o uso do Azure DevOps Services e do TFS. As assinaturas de nuvem anuais também têm isso, mas incluem os benefícios do Assinante, incluindo o uso do Windows e de outros softwares da Microsoft para instalação e execução para desenvolvimento e teste, um crédito individual do Azure DevTest mensal a ser usado para experimentar com o Azure serviços e desenvolvimento e teste na nuvem, treinamento, suporte e muito mais.
 [Comparar os benefícios e os preços das assinaturas de nuvem](https://visualstudio.microsoft.com/vs/pricing/)
 
 ### <a name="q-do-i-get-new-versions-of-visual-studio-if-i-buy-a-visual-studio-cloud-subscription"></a>P: Posso obter as novas versões do Visual Studio se eu comprar uma assinatura de nuvem do Visual Studio?

@@ -72,7 +72,7 @@ Desenvolver aplicativos para plataformas modernas envolve muito mais atividades 
   
 3. Ativos binários em um projeto do Unity, como texturas ou arquivos de áudio, podem ocupar uma grande quantidade de armazenamento. Vários sistemas de controle do código-fonte, como Git, armazenam uma cópia única de um arquivo para cada alteração feita, mesmo que a alteração afete apenas uma pequena parte do arquivo. Isso pode fazer o repositório Git ficar inflado. Para resolver isso, os desenvolvedores do Unity geralmente optam por adicionar somente ativos finais ao repositório e usar uma maneira diferente de manter um histórico de trabalho de seus ativos, como OneDrive, DropBox ou git-annex. Essa abordagem funciona porque esses ativos geralmente não precisam ter controle de versão junto com as alterações do código-fonte. Os desenvolvedores normalmente também definem o Modo de Serialização de Ativo para Forçar Texto do editor do projeto para armazenar arquivos de cena no texto, em vez de no formato binário, o que permite mesclagens no controle do código-fonte. Para obter detalhes, consulte [Configurações do Editor](https://docs.unity3d.com/Manual/class-EditorManager.html) (documentação do Unity).  
   
-## <a name="build"></a>Build  
+## <a name="build"></a>{1&gt;Compilação&lt;1}  
  Link de referência: **[Build](/azure/devops/pipelines/index)**  
   
 |Recurso|Tem suporte com o Unity|Comentários Adicionais|  
@@ -91,7 +91,7 @@ Desenvolver aplicativos para plataformas modernas envolve muito mais atividades 
 |Planejando testes, criando casos de teste e organizando conjuntos de testes|Sim||  
 |Teste manual|Sim||  
 |Gerenciador de Teste (testes de gravação e reprodução)|Somente dispositivos Windows e emuladores Android||  
-|Cobertura de código|N/D|Não se aplica, uma vez que o teste de unidade acontece dentro do Unity e não no Visual Studio, consulte abaixo.|  
+|Cobertura de código|n/d|Não se aplica, uma vez que o teste de unidade acontece dentro do Unity e não no Visual Studio, consulte abaixo.|  
 |[Efetuar teste de unidade em seu código](../test/unit-test-your-code.md)|No Unity, mas não no Visual Studio|O Unity fornece a própria estrutura de teste de unidade como parte das [Ferramentas de Teste do Unity](https://www.assetstore.unity3d.com/en/#!/content/13802) (Unity Asset Store). Resultados de teste de unidade são relatados dentro do Unity e não aparecerão no Visual Studio.|  
 |[Usar automação de interface do usuário para testar código](../test/use-ui-automation-to-test-your-code.md)|Não|Testes de UI codificados dependem de controles legíveis na interface do usuário do aplicativo; aplicativos Unity são gráficos por natureza e, assim, o conteúdo não é legível pelas ferramentas de teste de IU codificado.|  
   

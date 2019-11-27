@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f9740da2674ad7e48f8863027fcb9a1acc8f1cb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9bd54e97535c281d50119fdc7aa759d0704fa9e1
+ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62842164"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74491552"
 ---
 # <a name="msbuild-reserved-and-well-known-properties"></a>Propriedades reservadas e conhecidas do MSBuild
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] fornece um conjunto de propriedades predefinidas que armazenam informações sobre o arquivo de projeto e os binários [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Essas propriedades são avaliadas da mesma maneira que outras propriedades [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Por exemplo, para usar a propriedade `MSBuildProjectFile`, digite `$(MSBuildProjectFile)`.
@@ -46,16 +46,16 @@ ms.locfileid: "62842164"
 | `MSBuildProjectFile` | Reservado | O nome de arquivo completo do arquivo de projeto, incluindo a extensão de nome de arquivo; por exemplo, *MyApp.proj*. |
 | `MSBuildProjectFullPath` | Reservado | O caminho absoluto e o nome de arquivo completo do arquivo de projeto, incluindo a extensão de nome de arquivo; por exemplo, *C:\MyCompany\MyProduct\MyApp.proj*. |
 | `MSBuildProjectName` | Reservado | O nome do arquivo de projeto sem a extensão de nome de arquivo; por exemplo, *MyApp*. |
-| `MSBuildRuntimeType` | Reservado | O tipo de tempo de execução que está sendo executado. Introduzido no MSBuild 15. O valor pode ser indefinido (antes do MSBuild 15), `Full` indicando que o MSBuild está em execução no .NET Framework da área de trabalho, `Core` indicando que o MSBuild está em execução no .NET Core ou `Mono` indicando que o MSBuild está sendo executado no Mono. |
+| `MSBuildRuntimeType` | Reservado | O tipo de runtime que está sendo executado. Introduzido no MSBuild 15. O valor pode ser indefinido (antes do MSBuild 15), `Full` indicando que o MSBuild está em execução no .NET Framework da área de trabalho, `Core` indicando que o MSBuild está em execução no .NET Core (por exemplo, no `dotnet build`) ou `Mono` indicando que o MSBuild está em execução no mono. |
 | `MSBuildStartupDirectory` | Reservado | O caminho absoluto da pasta em que [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] é chamado. Usando essa propriedade, você pode criar tudo abaixo de um ponto específico em uma árvore de projeto sem criar arquivos *\<dirs>.proj* em cada diretório. Em vez disso, você tem apenas um projeto – por exemplo, *c:\traversal.proj*, conforme mostrado aqui:<br /><br /> `<Project ...>     <ItemGroup>         <ProjectFiles              Include="$            (MSBuildStartupDirectory)            **\*.csproj"/>     </ItemGroup>     <Target Name="build">         <MSBuild             Projects="@(ProjectFiles)"/>     </Target> </Project>`<br /><br /> Para compilar em qualquer ponto da árvore, digite:<br /><br /> `msbuild c:\traversal.proj`<br /><br /> Não inclua a barra invertida final nessa propriedade. |
 | `MSBuildThisFile` | Reservado | O nome do arquivo e a parte da extensão do arquivo de `MSBuildThisFileFullPath`. |
 | `MSBuildThisFileDirectory` | Reservado | A parte do diretório de `MSBuildThisFileFullPath`.<br /><br /> Inclua a barra invertida final no caminho. |
 | `MSBuildThisFileDirectoryNoRoot` | Reservado | A parte do diretório de `MSBuildThisFileFullPath`, excluindo a unidade raiz.<br /><br /> Inclua a barra invertida final no caminho. |
 | `MSBuildThisFileExtension` | Reservado | A parte da extensão do nome de arquivo de `MSBuildThisFileFullPath`. |
-| `MSBuildThisFileFullPath` | Reservado | O caminho absoluto do projeto ou do arquivo de destinos que contém o destino que está sendo executado.<br /><br /> Dica: Especifique um caminho relativo em um arquivo de destino que seja relativo ao arquivo de destino e não relativo ao arquivo de projeto original. |
+| `MSBuildThisFileFullPath` | Reservado | O caminho absoluto do projeto ou do arquivo de destinos que contém o destino que está sendo executado.<br /><br /> Dica: você pode especificar um caminho relativo em um arquivo de destino que é relativo ao arquivo de destino e não relativo ao arquivo de projeto original. |
 | `MSBuildThisFileName` | Reservado | A parte do nome de arquivo de `MSBuildThisFileFullPath`, sem a extensão de nome de arquivo. |
 | `MSBuildToolsPath` | Reservado | O caminho de instalação da versão [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] associada ao valor de `MSBuildToolsVersion`.<br /><br /> Não inclua a barra invertida final no caminho.<br /><br /> Essa propriedade não pode ser substituída. |
-| `MSBuildToolsVersion` | Reservado | A versão do Conjunto de ferramentas [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] que é usado para compilar o projeto.<br /><br /> Observação: Um Conjunto de ferramentas do [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] consiste em tarefas, destinos e ferramentas que são usados para compilar um aplicativo. As ferramentas incluem compiladores, como *csc.exe* e *vbc.exe*. Para saber mais, confira [Conjunto de ferramentas (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md) e [Configurações padrão e personalizadas do conjunto de ferramentas](../msbuild/standard-and-custom-toolset-configurations.md). |
+| `MSBuildToolsVersion` | Reservado | A versão do Conjunto de ferramentas [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] que é usado para compilar o projeto.<br /><br /> Observação: um conjunto de ferramentas [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] consiste em tarefas, destinos e ferramentas que são usados para compilar um aplicativo. As ferramentas incluem compiladores, como *csc.exe* e *vbc.exe*. Para saber mais, confira [Conjunto de ferramentas (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md) e [Configurações padrão e personalizadas do conjunto de ferramentas](../msbuild/standard-and-custom-toolset-configurations.md). |
 | `MSBuildVersion` | Reservado | A versão do [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] usada para compilar o projeto. <br /><br/> Essa propriedade não pode ser substituída, caso contrário, a mensagem de erro `MSB4004 - The 'MSBuildVersion' property is reserved, and can not be modified.` é retornada. |
 
 ## <a name="names-that-conflict-with-msbuild-elements"></a>Nomes em conflito com elementos do MSBuild
@@ -65,14 +65,14 @@ Além do citado acima, os nomes que correspondem a elementos da linguagem do MSB
 * VisualStudioProject
 * Destino
 * GrupoPropriedade
-* Saída
+* Output
 * ItemGroup
 * UsingTask
 * ProjectExtensions
 * OnError
 * ImportGroup
 * Escolha
-* When
+* Quando
 * Otherwise
 
 ## <a name="see-also"></a>Consulte também

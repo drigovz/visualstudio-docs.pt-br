@@ -55,9 +55,9 @@ Você pode usar as ferramentas no [!INCLUDE[blend_first](../includes/blend-first
   
     Na caixa de diálogo **Novo Projeto**, é exibida uma lista de tipos de projetos no lado esquerdo. Quando você clica em um tipo de projeto, os modelos de projeto associados a ele aparecem do lado direito.  
   
-2. Na lista de tipos de projetos, clique em **XAML (Windows Store)** .  
+2. Na lista de tipos de projeto, clique em **XAML (Windows Store)** .  
   
-3. Na lista de modelos de projetos, clique em **Blank App**.  
+3. Na lista de modelos de projeto, clique em **aplicativo em branco**.  
   
 4. Na caixa de texto **nome** , digite `DebuggingSample`.  
   

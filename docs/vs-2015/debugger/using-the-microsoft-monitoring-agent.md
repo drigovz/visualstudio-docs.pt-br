@@ -100,9 +100,9 @@ Você pode monitorar localmente aplicativos Web do ASP.NET hospedados no IIS e o
   
   2. Na guia **Segurança**, escolha **Editar**, **Adicionar**.  
   
-  3. Verifique se **Entidades de segurança interna** é exibido na caixa **Selecione este tipo de objeto**. Se ele não estiver presente, escolha **Tipos de Objeto** para adicioná-lo.  
+  3. Verifique se **Entidades de segurança interna** é exibido na caixa **Selecione este tipo de objeto**. Se não estiver lá, escolha **tipos de objeto** para adicioná-lo.  
   
-  4. Verifique se o computador local é exibido na caixa **Deste local**. Se ele não estiver presente, escolha **Locais** para alterá-lo.  
+  4. Verifique se o computador local é exibido na caixa **Deste local**. Se não estiver lá, escolha os **locais** para alterá-lo.  
   
   5. Na caixa **Digite os nomes de objeto a serem selecionados**, adicione o pool de aplicativos do aplicativo Web ou do aplicativo do SharePoint.  
   

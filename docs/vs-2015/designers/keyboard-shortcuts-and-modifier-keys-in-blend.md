@@ -29,7 +29,7 @@ Atalhos de teclado podem acelerar seu trabalho reduzindo em um único atalho de 
 
 - **Teclas de atalho** Você pode usar teclas de atalho para realizar uma ação (como selecionar um comando de menu ou modificar o comportamento de uma ferramenta) pressionando um atalho de teclado.
 
-   A maioria dos atalhos de teclado é fácil de identificar na interface do usuário do [!INCLUDE[blend_subs](../includes/blend-subs-md.md)]. Esses atalhos são exibidos à direita de comandos de menu. Por exemplo, no menu **Arquivo**, o comando de menu **Abrir Projeto** inclui o atalho de teclado CTRL+SHIFT+A. Para ver as teclas de atalho para uma ferramenta no painel **Ferramentas**, focalize o ponteiro sobre a ferramenta.
+   A maioria dos atalhos de teclado é fácil de identificar na interface do usuário do [!INCLUDE[blend_subs](../includes/blend-subs-md.md)]. Esses atalhos são exibidos à direita de comandos de menu. Por exemplo, no menu **Arquivo**, o comando de menu **Abrir Projeto** inclui o atalho de teclado CTRL+SHIFT+A. Para ver as teclas de atalho para uma ferramenta no painel **Ferramentas**, passe o ponteiro sobre a ferramenta.
 
    ![](../designers/media/f147fc85-9fc5-4e8a-8039-bead80a3e595.png "f147fc85-9fc5-4e8a-8039-bead80a3e595")Teclas de atalho que aparecem ao lado de itens de menu que têm atalhos
 

@@ -37,10 +37,10 @@ O caminho para o arquivo de configuração de JSON que descreve os detalhes da i
 
 | Parâmetro | Valor padrão |
 | --- | --- |
-| Aliases |nenhum |
+| Aliases |none |
 | Necessário? |true |
-| Posição |nomeados |
-| Valor padrão |nenhum |
+| Posição |chamada |
+| Valor padrão |none |
 | Aceitar entrada do Pipeline? |false |
 | Aceitar caracteres curinga? |false |
 
@@ -49,10 +49,10 @@ O nome da assinatura do Azure na qual você deseja criar o site.
 
 | Parâmetro | Valor padrão |
 | --- | --- |
-| Aliases |nenhum |
+| Aliases |none |
 | Necessário? |false |
-| Posição |nomeados |
-| Valor padrão |nenhum |
+| Posição |chamada |
+| Valor padrão |none |
 | Aceitar entrada do Pipeline? |false |
 | Aceitar caracteres curinga? |false |
 
@@ -61,10 +61,10 @@ O caminho para o pacote de implantação Web a publicar no site. Você pode cria
 
 | Parâmetro | Valor padrão |
 | --- | --- |
-| Aliases |nenhum |
+| Aliases |none |
 | Necessário? |false |
-| Posição |nomeados |
-| Valor padrão |nenhum |
+| Posição |chamada |
+| Valor padrão |none |
 | Aceitar entrada do Pipeline? |false |
 | Aceitar caracteres curinga? |false |
 
@@ -73,10 +73,10 @@ O nome do administrador e a senha do Banco de Dados SQL no Azure.
 
 | Parâmetro | Valor padrão |
 | --- | --- |
-| Aliases |nenhum |
+| Aliases |none |
 | Necessário? |false |
-| Posição |nomeados |
-| Valor padrão |nenhum |
+| Posição |chamada |
+| Valor padrão |none |
 | Aceitar entrada do Pipeline? |false |
 | Aceitar caracteres curinga? |false |
 
@@ -85,9 +85,9 @@ Se seu valor for true, imprimir mensagens do script para o fluxo de saída.
 
 | Parâmetro | Valor padrão |
 | --- | --- |
-| Aliases |nenhum |
+| Aliases |none |
 | Necessário? |false |
-| Posição |nomeados |
+| Posição |chamada |
 | Valor padrão |false |
 | Aceitar entrada do Pipeline? |false |
 | Aceitar caracteres curinga? |false |

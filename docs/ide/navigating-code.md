@@ -82,7 +82,7 @@ Ir Para tem os seguintes comandos que estão disponíveis no menu **Editar** em 
 
 - **Ir para Arquivo** (**Ctrl**+**1**, **Ctrl**+**F**): mover para o arquivo especificado na solução.
 
-- **Go To Recent File** (**Ctrl**+**1**, **Ctrl**+**R**): Move to the specified, recently visited file in the solution.
+- **Ir para o arquivo recente** (**Ctrl**+**1**, **Ctrl**+**R**): mover para o arquivo especificado recentemente visitado na solução.
 
 - **Ir para Tipo** (**Ctrl**+**1**, **Ctrl**+**T**): mover para o tipo especificado na solução.
 
@@ -125,14 +125,14 @@ Entrada | Função
 **Teclado** | Coloque o cursor de texto em algum lugar dentro do nome do tipo e pressione **Ctrl**+**F12**
 **Mouse** | Clique com o botão direito do mouse no nome do tipo e selecione **Ir Para Implementação**
 
-## <a name="go-to-base"></a>Go To Base
+## <a name="go-to-base"></a>Ir para base
 
-Using Go To Base, you can navigate up the inheritance chain of the selected element. If there are multiple results, you will see them listed in the **Go To Base** window:
+Usando ir para base, você pode navegar até a cadeia de herança do elemento selecionado. Se houver vários resultados, você os verá listados na janela **ir para base** :
 
 Entrada | Função
 ------------ | ---
-**Teclado** | Place your text cursor somewhere inside the type name, and press **Alt**+**Home**
-**Mouse** | Right-click on the type name and select **Go To Base**
+**Teclado** | Coloque o cursor do texto em algum lugar dentro do nome do tipo e pressione **Alt**+**página inicial**
+**Mouse** | Clique com o botão direito do mouse no nome do tipo e selecione **ir para base**
 
 ## <a name="call-hierarchy"></a>Hierarquia de chamadas
 

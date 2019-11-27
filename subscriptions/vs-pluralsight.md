@@ -6,12 +6,12 @@ manager: lank
 ms.date: 11/18/2019
 ms.topic: conceptual
 description: Saiba mais sobre a assinatura de treinamento do Pluralsight incluída nas assinaturas do Visual Studio selecionadas.
-ms.openlocfilehash: 7db7858b95ca0b78ea54cebc394c3d57de53305a
-ms.sourcegitcommit: 5c9ca18eadc7ed0ed095cc5a3e1df40bbc13e70c
+ms.openlocfilehash: 26e9227fbd3852e4e9115e06e2882fe6358831a3
+ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74161964"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74491293"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Benefícios de treinamento do Pluralsight nas assinaturas do Visual Studio
 
@@ -52,7 +52,7 @@ A tabela a seguir fornece detalhes sobre quais benefícios de assinatura do Plur
 
 8. É só isso!  Agora você está pronto para começar a aprender com milhares de cursos do Pluralsight!
 
-## <a name="eligibility"></a>Qualificação
+## <a name="eligibility"></a>Elegibilidade
 
 |                          Nível de Assinatura                          |     Canais      |    Benefício    |   Renovável?   |
 |----------------------------------------------------------------------|-------------------|---------------|----------------|
@@ -78,7 +78,7 @@ Não tem certeza de qual assinatura você está usando?  Conecte-se ao [https://
 ## <a name="frequently-asked-questions"></a>Perguntas frequentes
 
 ### <a name="q-i-have-a-visual-studio-enterprise-subscription-but-i-dont-see-the-pluralsight-tile-on-the-benefits-page-whats-wrong"></a>P: Tenho uma assinatura do Visual Studio Enterprise, mas não vejo o bloco do Pluralsight na página Benefícios. Qual é o problema?
-R: Nem todas as assinaturas do Visual Studio Enterprise incluem os benefícios do Pluralsight.  Verifique a [tabela de qualificação](#eligibility) para ver se a sua assinatura está qualificada.
+R: Nem todas as assinaturas do Visual Studio Enterprise incluem os benefícios do Pluralsight.  Verifique a [tabela de qualificação](#eligibility) para ver se sua assinatura está qualificada.
 
 ### <a name="q-do-i-have-access-to-any-customized-learning--playlists-or-channels"></a>P: Tenho acesso a playlists ou canais de aprendizado personalizados?
 R: Sim. Como assinante do Visual Studio, você obtém acesso a canais especializados como parte de seu benefício de treinamento do Pluralsight. Esses canais foram especialmente coletados por especialistas da Microsoft e se destinam ao aprendizado nas áreas do .NET, Azure, DevOps e Mobility. Ative o benefício do Pluralsight por meio do portal de assinatura do Visual Studio [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) para obter acesso a esses canais em sua página de aterrissagem do Pluralsight –

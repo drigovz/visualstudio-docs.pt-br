@@ -257,7 +257,7 @@ Vá para os pontos específicos da execução do aplicativo quando você iniciar
 |**Coluna**|**Exibe**|  
 |----------------|-------------------|  
 |**Nome do Módulo**|Nome do arquivo do módulo|  
-|{1&gt;Caminho do Módulo&lt;1}|Local do disco onde o módulo foi carregado|  
+|**Caminho do Módulo**|Local do disco onde o módulo foi carregado|  
 |**ID do módulo**|O identificador exclusivo do módulo que é específico da versão e que contribui para os arquivos de símbolo (PDB) correspondentes. Consulte [localizando arquivos de símbolo (. pdb) e arquivos de origem](https://msdn.microsoft.com/05384c85-d264-4e18-abaa-aa482ab25470).|  
   
 ### <a name="where-can-i-get-more-information"></a>Onde posso obter mais informações?  
@@ -272,5 +272,5 @@ Vá para os pontos específicos da execução do aplicativo quando você iniciar
 #### <a name="forums"></a>Fóruns  
  [Depurador do Visual Studio](https://go.microsoft.com/fwlink/?LinkId=262263)  
   
-#### <a name="guidance"></a>Diretrizes  
+#### <a name="guidance"></a>{1&gt;Orientação&lt;1}  
  [Teste para entrega contínua com o Visual Studio 2012 – capítulo 6: uma caixa de ferramentas de teste](https://go.microsoft.com/fwlink/?LinkID=255203)

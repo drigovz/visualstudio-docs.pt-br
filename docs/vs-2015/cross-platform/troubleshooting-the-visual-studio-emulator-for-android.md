@@ -227,11 +227,11 @@ Este tópico contém informações para ajudá-lo a resolver problemas que podem
 
      - Driver de E/S do mapeador de descoberta de topologia de camada de link
 
-     - Respondente de descoberta de topologia de camada de link
+     - Dispositivo de resposta de descoberta da topologia de camada vinculada
 
-     - Protocolo IP versão 6 (TCP/IPv6)
+     - Versão 6 do protocolo da Internet (TCP/IPv6)
 
-     - Protocolo IP versão 4 (TCP/IPv4)
+     - Versão 4 do protocolo da Internet (TCP/IPv4)
 
   4. Cancele a seleção de todos os outros itens.
 

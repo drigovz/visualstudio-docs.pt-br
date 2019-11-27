@@ -447,7 +447,7 @@ Este artigo descreve usos típicos de anotações para parâmetros de função s
   
      O resultado deve ser válido em pós-Estado, mas pode ser nulo no estado de post. Aponta para um buffer válido de `s` bytes de elementos válidos.  
   
-## <a name="return-values"></a>Valores de Retorno  
+## <a name="return-values"></a>Valores de retorno  
  O valor de retorno de uma função é semelhante a um parâmetro `_Out_`, mas está em um nível diferente de de referência, e você não precisa considerar o conceito do ponteiro para o resultado.  Para as seguintes anotações, o valor de retorno é o objeto anotado — um escalar, um ponteiro para uma struct ou um ponteiro para um buffer. Essas anotações têm a mesma semântica que a anotação de `_Out_` correspondente.  
   
 |||  

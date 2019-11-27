@@ -77,7 +77,7 @@ A autenticação do usuário que solicitou a depuração foi impedida por um err
   
          A caixa de diálogo Controle de Acesso do Usuário aparecerá e solicitará para que a permissão continue.  
   
-    3. Clique em **Continue**.  
+    3. Clique em **Continuar**.  
   
          A caixa de diálogo Recursos do Windows é exibida.  
   

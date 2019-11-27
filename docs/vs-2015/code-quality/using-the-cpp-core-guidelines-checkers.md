@@ -97,7 +97,7 @@ int main()
 **c:\users\username\documents\visual Studio 2015 \ projects\corecheckexample\coreche**  
 **ckexample\corecheckexample.cpp (6): aviso C26494: a variável ' arr ' é uninitializ**  
 **Ed. sempre inicializar um objeto. (Type. 5: https://go.microsoft.com/fwlink/p/?Link**  
-**ID=620421)**  
+**ID = 620421)**  
 **c:\users\username\documents\visual Studio 2015 \ projects\corecheckexample\coreche**  
 **ckexample\corecheckexample.cpp (7): aviso C26485: expressão ' arr ': nenhuma matriz para**  
 **ponteiro decaimento. (limites. 3: https://go.microsoft.com/fwlink/p/?LinkID=620415)**  

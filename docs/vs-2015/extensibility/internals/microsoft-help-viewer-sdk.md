@@ -312,13 +312,13 @@ some F# code
 
    - Para sistemas operacionais de 32 bits:
 
-      HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Help\v2.1\Partner<em>\\<namespace\></em>
+      Namespace de <em>< de\\</em> de HKEY_LOCAL_MACHINE \software\microsoft\help\v2.1\partner\>
 
       "local" = "offline"
 
    - Para sistemas operacionais de 64 bits:
 
-      HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Help\v2.1\Partner<em>\\<namespace\></em>
+      Namespace de <em>< de\\</em> de HKEY_LOCAL_MACHINE \software\wow6432node\microsoft\help\v2.1\partner\>
 
       "local" = "offline"
 
@@ -432,17 +432,17 @@ some F# code
 
   Observação: as variáveis indicadas por "{n}" têm dependências de código – remover ou alterar esses valores causará erros e possivelmente falha do aplicativo. Os identificadores de localização (por exemplo _locID = "CodeSnippet. n") estão incluídos no pacote de identidade Visual Studio.
 
-  **Branding.xml**
+  **Identidade visual. xml**
 
 |||
 |-|-|
 |Recurso:|**CollapsibleArea**|
-|Utilizá|Expande recolhe o texto de controle de conteúdo|
+|Use:|Expande recolhe o texto de controle de conteúdo|
 |**Elemento**|**Value**|
-|ExpandText|Expandir|
-|CollapseText|Agrupa|
+|ExpandText|Expand|
+|CollapseText|Recolher|
 |Recurso:|**CodeSnippet**|
-|Utilizá|Texto de controle de trecho de código.  Observação: o conteúdo do trecho de código com espaço "não separável" será alterado para espaço.|
+|Use:|Texto de controle de trecho de código.  Observação: o conteúdo do trecho de código com espaço "não separável" será alterado para espaço.|
 |**Elemento**|**Value**|
 |CopyToClipboard|Copiar para a Área de Transferência|
 |ViewColorizedText|Exibir colorido|
@@ -450,7 +450,7 @@ some F# code
 |VBDeclaration|Declaração|
 |VBUsage|Uso|
 |Recurso:|**Comentários, rodapé e logotipo**|
-|Utilizá|Forneça um controle de comentários para que o cliente forneça comentários sobre o tópico atual por email.  Texto de direitos autorais do conteúdo.  Definição do logotipo.|
+|Use:|Forneça um controle de comentários para que o cliente forneça comentários sobre o tópico atual por email.  Texto de direitos autorais do conteúdo.  Definição do logotipo.|
 |**Elemento**|**Valor (essas cadeias de caracteres podem ser modificadas para atender à necessidade de conteúdo.)**|
 |Internacionais|© 2013 Microsoft Corporation. Todos os direitos reservados.|
 |SendFeedback|\<a href = "{0}" {1}> enviar comentários\</a > neste tópico para a Microsoft.|
@@ -459,7 +459,7 @@ some F# code
 |LogoFileName|vs_logo_bk.gif|
 |LogoFileNameHC|vs_logo_wh.gif|
 |Recurso:|**Enção**|
-|Utilizá|Um conjunto de isenções de responsabilidade específicas para conteúdo traduzido do computador.|
+|Use:|Um conjunto de isenções de responsabilidade específicas para conteúdo traduzido do computador.|
 |**Elemento**|**Value**|
 |MT_Editable|Este artigo foi traduzido por máquina. Se você tiver uma conexão com a Internet, selecione "exibir este tópico online" para exibir essa página no modo editável com o conteúdo original em inglês ao mesmo tempo.|
 |MT_NonEditable|Este artigo foi traduzido por máquina. Se você tiver uma conexão com a Internet, selecione "exibir este tópico online" para exibir essa página no modo editável com o conteúdo original em inglês ao mesmo tempo.|
@@ -467,15 +467,15 @@ some F# code
 |MT_QualityNonEditable|Este artigo foi traduzido manualmente. Se você tiver uma conexão com a Internet, selecione "exibir este tópico online" para exibir essa página no modo editável com o conteúdo original em inglês ao mesmo tempo.|
 |MT_BetaContents|Este artigo foi traduzido por máquina para uma versão preliminar. Se você tiver uma conexão com a Internet, selecione "exibir este tópico online" para exibir essa página no modo editável com o conteúdo original em inglês ao mesmo tempo.|
 |MT_BetaRecycledContents|Este artigo foi traduzido manualmente para uma versão preliminar. Se você tiver uma conexão com a Internet, selecione "exibir este tópico online" para exibir essa página no modo editável com o conteúdo original em inglês ao mesmo tempo.|
-|Recurso:|**LinkTable**|
-|Utilizá|Suporte para links de tópico online|
+|Recurso:|**Linktable**|
+|Use:|Suporte para links de tópico online|
 |**Elemento**|**Value**|
 |LinkTableTitle|Vincular tabela|
 |TopicEnuLinkText|Exiba a versão em inglês\</a > deste tópico que está disponível no seu computador.|
 |TopicOnlineLinkText|Exiba este tópico \<um href = "{0}" {1}> online\</a >|
 |OnlineText|Online|
 |Recurso:|**Controle de áudio de vídeo**|
-|Utilizá|Exibir elementos e texto para conteúdo de vídeo|
+|Use:|Exibir elementos e texto para conteúdo de vídeo|
 |**Elemento**|**Value**|
 |MultiMediaNotSupported|O Internet Explorer 9 ou superior deve estar instalado para dar suporte ao conteúdo de {0}.|
 |VideoText|exibindo vídeo|
@@ -483,25 +483,25 @@ some F# code
 |OnlineVideoLinkText|\<p > para exibir o vídeo associado a este tópico, clique em {0}\<um href = "{1}" >{2}aqui\</a >.\</p >|
 |OnlineAudioLinkText|\<p > para ouvir o áudio associado a este tópico, clique em {0}\<a href = "{1}" >{2}aqui\</a >.\</p >|
 |Recurso:|**Controle de conteúdo não instalado**|
-|Utilizá|Elementos de texto (cadeias de caracteres) usados para o processamento de contentnotinstalled. htm|
+|Use:|Elementos de texto (cadeias de caracteres) usados para o processamento de contentnotinstalled. htm|
 |**Elemento**|**Value**|
 |ContentNotInstalledTitle|Nenhum conteúdo foi encontrado no seu computador.|
 |ContentNotInstalledDownloadContentText|\<p > para baixar conteúdo em seu computador, \<um href = "{0}" {1}> clique na guia Gerenciar\</a >.\</p >|
 |ContentNotInstalledText|\<p > nenhum conteúdo está instalado em seu computador. Consulte o administrador para a instalação do conteúdo da ajuda local.\</p >|
 |Recurso:|**Controle de tópico não encontrado**|
-|Utilizá|Elementos de texto (cadeias de caracteres) usados para o processamento de topicnotfound. htm|
+|Use:|Elementos de texto (cadeias de caracteres) usados para o processamento de topicnotfound. htm|
 |**Elemento**|**Value**|
 |TopicNotFoundTitle|Não é possível localizar o tópico solicitado no seu computador.|
 |TopicNotFoundViewOnlineText|\<p > o tópico solicitado não foi encontrado no seu computador, mas você pode \<um href = "{0}" {1}> exibir o tópico online\</a >.\</p >|
 |TopicNotFoundDownloadContentText|\<p > consulte o painel de navegação para obter links para tópicos semelhantes ou \<a href = "{0}" {1}> clique na guia Gerenciar\</a > para baixar conteúdo para o seu computador.\</p >|
 |TopicNotFoundText|\<p > o tópico solicitado não foi encontrado no seu computador.\</p >|
 |Recurso:|**Tópico controle corrompido**|
-|Utilizá|Elementos de texto (cadeias de caracteres) usados para o processamento de topiccorrupted. htm|
+|Use:|Elementos de texto (cadeias de caracteres) usados para o processamento de topiccorrupted. htm|
 |**Elemento**|**Value**|
 |TopicCorruptedTitle|Não é possível exibir o tópico solicitado.|
 |TopicCorruptedViewOnlineText|\<p > o Visualizador da ajuda não pode exibir o tópico solicitado. Pode haver um erro no conteúdo do tópico ou em uma dependência de sistema subjacente.\</p >|
 |Recurso:|**Controle de página inicial**|
-|Utilizá|Texto que dá suporte à exibição do conteúdo do nó de nível superior do Help Viewer.|
+|Use:|Texto que dá suporte à exibição do conteúdo do nó de nível superior do Help Viewer.|
 |**Elemento**|**Value**|
 |HomePageTitle|Página inicial do Help Viewer|
 |HomePageIntroduction|\<p > bem-vindo ao Microsoft Help Viewer, uma fonte essencial de informações para todos que usam ferramentas, produtos, tecnologias e serviços da Microsoft. O Help Viewer fornece acesso a informações de instruções e referência, código de exemplo, artigos técnicos e muito mais. Para localizar o conteúdo de que você precisa, procure o Sumário, use a pesquisa de texto completo ou navegue pelo conteúdo usando o índice de palavra-chave.\</p >|
@@ -510,9 +510,9 @@ some F# code
 |HomePageNoBooksInstalled|Nenhum conteúdo foi encontrado no seu computador.|
 |HomePageHelpSettings|Configurações de conteúdo da ajuda|
 |HomePageHelpSettingsText|\<p > sua configuração atual é a ajuda local. O Visualizador da ajuda exibe o conteúdo que você instalou em seu computador.\<br/> para alterar a fonte do conteúdo da ajuda, na barra de menus do Visual Studio, escolha \<span Style = "{0}" > ajuda, defina preferência de ajuda\</span >.\<br/>\</p >|
-|MegaByte|MBS|
+|MegaByte|MB|
 
- **branding.js**
+ **branding. js**
 
  O arquivo Branding. js contém o JavaScript usado pelos elementos de identidade Visual Studio Help Viewer.  Abaixo está uma lista dos elementos de identidade visual e a função JavaScript de suporte.  Todas as cadeias de caracteres a serem localizadas para esse arquivo são definidas na seção "cadeias de caracteres localizáveis" na parte superior deste arquivo.  O arquivo ICL foi criado para as cadeias de caracteres Loc no arquivo de identidade visual. js.
 
