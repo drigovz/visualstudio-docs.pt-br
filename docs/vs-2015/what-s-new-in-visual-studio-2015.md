@@ -252,7 +252,7 @@ A seguir estão as ferramentas novas ou aprimoradas que executam diferentes tipo
 
  Basta clicar no rosto de Smiley amarelo na barra de título, nos dizer o que você gostou e clicar no botão **enviar um Smiley** .
 
- Isso é tudo! Vamos rotear seus comentários para a equipe correta onde eles se desaparecerão em seguida, começará rapidamente a pensar nas maneiras de fascinam-lo ainda mais.
+ E pronto! Vamos rotear seus comentários para a equipe correta onde eles se desaparecerão em seguida, começará rapidamente a pensar nas maneiras de fascinam-lo ainda mais.
 
 ### <a name="send-a-frown"></a>Enviar um Rosto Triste
  Ouvir onde precisamos fazer melhorias no produto nos ajuda a gerenciar nossa lista de pendências concentrando-se primeiro nas coisas mais importantes para nossos clientes. Se houver algo que esteja sendo depurado, conte-nos sobre ele usando o recurso **enviar um rosto triste** diretamente dentro do IDE. Também fizemos isso um processo extremamente simples:

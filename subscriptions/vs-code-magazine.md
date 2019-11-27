@@ -45,7 +45,7 @@ O processo para configurar sua assinatura da revista de código é simples.  Bas
 9. Clique em **fazer** para concluir sua assinatura.  
 Depois de concluir sua ordem de assinatura, você verá uma página de confirmação, incluindo um link que pode ser usado para ver quais problemas você recebeu: https://codemag.com/my/fulfillment. 
 
-## <a name="eligibility"></a>Elegibilidade
+## <a name="eligibility"></a>Qualificação
 | Nível de Assinatura                                                 |     Canais                                            | Benefício                                                          | Renovável?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | VL, Azure, Retail, NFR<sup>1</sup> selecionado | Disponível       |  Não          |
@@ -54,7 +54,7 @@ Depois de concluir sua ordem de assinatura, você verá uma página de confirma�
 | Visual Studio Professional com GitHub Enterprise | VL                                      | Disponível                                                            |  Não          |
 | Visual Studio Test Professional (Padrão)                         | VL, Retail                                              | Disponível                                             |  Não          |
 | Plataformas MSDN (Padrão)                                          | VL, Retail                                              | Disponível                                              |  Não          |
-| Visual Studio Enterprise, Visual Studio Professional (nuvem mensal) | Azure | Não disponível | N/D |
+| Visual Studio Enterprise, Visual Studio Professional (nuvem mensal) | Azure | Não disponível | N/A |
 
 <sup>1</sup>  *inclui: não para revenda (NFR), parceiro do setor do Visual Studio (VSIP), FTE, BizSpark, imagine Premium.  Exclui: Microsoft Partner Network (MPN), profissional mais valioso (MVP), diretor regional (RD), MCT software & Developer Services, MCT software & Services, imagine.*
 
