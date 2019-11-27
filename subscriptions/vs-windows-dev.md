@@ -6,12 +6,12 @@ manager: lank
 ms.date: 11/18/2019
 ms.topic: conceptual
 description: Saiba mais sobre a Conta de Desenvolvedor do Windows incluída em sua assinatura do Visual Studio.
-ms.openlocfilehash: 662dc6d911903a4c0d2c0a77382647639bb25d07
-ms.sourcegitcommit: 5c9ca18eadc7ed0ed095cc5a3e1df40bbc13e70c
+ms.openlocfilehash: 7ba77979c47d61cd230351a352d85baa7c1eae9a
+ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "74174111"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74491274"
 ---
 # <a name="windows-developer-account-in-visual-studio-subscriptions"></a>Conta de Desenvolvedor do Windows nas assinaturas do Visual Studio
 A Conta de Desenvolvedor para Windows, incluída com assinaturas selecionadas do Visual Studio, permite que você envie aplicativos do Windows gratuitos e pagos para a Windows Store.
@@ -19,7 +19,7 @@ A Conta de Desenvolvedor para Windows, incluída com assinaturas selecionadas do
 ## <a name="activation-steps"></a>Etapas de ativação
 Para usar a conta de desenvolvedor do Windows, será necessário configurar uma conta ou entrar usando uma conta existente.
 
-É recomendável criar uma janela do navegador "privada" para esse processo.  Por exemplo, no Google Chrome, crie uma nova janela "incógnita".  No Internet Explorer, crie uma janela "InPrivate".
+É recomendável criar uma janela do navegador "privada" para esse processo.  Por exemplo, no Google Chrome, crie uma nova janela "Incognito".  No Internet Explorer, crie uma janela "InPrivate".
 
 1. Entre no [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 2. Localize o bloco Conta de Desenvolvedor do Windows na seção de Ferramentas e clique no link **Obter Código** na parte inferior do bloco do benefício.  Copie o código para a área de transferência e, em seguida, clique em **Ativar**.
@@ -39,7 +39,7 @@ Para usar a conta de desenvolvedor do Windows, será necessário configurar uma 
 11. Examine as informações da conta, examine o Contrato de Desenvolvedor de Aplicativos e clique na caixa de seleção para indicar que você aceita os termos e condições.  Em seguida, clique em **Concluir**.
 12. Clique em **Acessar painel** para começar a usar sua conta de desenvolvedor do Windows!
 
-## <a name="eligibility"></a>Qualificação
+## <a name="eligibility"></a>Elegibilidade
 | Nível de Assinatura                                                 |     Canais                                            | Benefício                                                          | Renovável?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | VL, Azure, Retail, NFR<sup>1</sup> selecionado | Incluído       |  Sim|
@@ -51,7 +51,7 @@ Para usar a conta de desenvolvedor do Windows, será necessário configurar uma 
 | Visual Studio Enterprise, Visual Studio Professional (nuvem mensal) | Azure                                       | Não disponível                                                           |NA|
 ||
 
-<sup>1</sup>  *Includes:  Not for Resale (NFR), FTE, Visual Studio Industry Partner (VSIP), BizSpark, MCT Software & Services Developer. Excludes:  Microsoft Partner Network (MPN), Imagine, Most Valuable Professional (MVP), Regional Director (RD), MCT Software & Services.*
+<sup>1</sup>  *inclui: não para revenda (NFR), FTE, parceiro do setor do Visual Studio (VSIP), BizSpark, MCT software & Developer Services. Exclui: Microsoft Partner Network (MPN), imagine, profissional mais valioso (MVP), diretor regional (RD), MCT software & Services.*
 
 > [!NOTE]
 > A Microsoft não oferece mais assinaturas anuais do Visual Studio Professional e do Visual Studio Enterprise nas Assinaturas na Nuvem. Não haverá nenhuma alteração na experiência dos clientes existentes nem na capacidade de renovar, aumentar, diminuir ou cancelar suas assinaturas. Os novos clientes são incentivados a acessar [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) para explorar diferentes opções de compra do Visual Studio.

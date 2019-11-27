@@ -13,12 +13,12 @@ ms.assetid: ba237712-f8c4-4d13-854b-ab4a16afa309
 caps.latest.revision: 128
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 7eeb6b0ac3322090cf85e26ac6388aac76890d44
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: d7d488581aefee150b1a186eaba48576f0b8146d
+ms.sourcegitcommit: 08105865a9643fb20dce9b8b7580452cfbbe7ee7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297568"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74537955"
 ---
 # <a name="welcome-to-visual-studio-2015"></a>Bem-vindo ao Visual Studio de 2015
 [!INCLUDE[vs2017banner](includes/vs2017banner.md)]
@@ -81,7 +81,7 @@ Bem-vindo ao Visual Studio! Temos tudo o que você precisa para criar ótimos ap
 ### <a name="check-in-your-code"></a>Faça check-in do código
  Se você trabalha em uma equipe, você precisa compartilhar as versões mais recentes do código para que todos da equipe usem a mesma base de código. O Visual Studio integra-se perfeitamente ao Visual Studio Team Services ou ao Team Foundation Server para fornecer controle de versão com o Git ou o TFVC (Controle de Versão do Team Foundation). Use o Visual Studio Team Services para armazenar seu código na nuvem sem a manutenção de um servidor local. Use o Team Foundation Server se você quiser ter um servidor local. Sempre que você cria um projeto de código, você tem a opção de adicioná-lo ao controle de versão. Saiba mais sobre qual sistema de controle de versão é o melhor para as suas necessidades: [Usar o controle de versão](https://msdn.microsoft.com/library/33267cee-fe5f-4aa3-b2cd-6d22ceace314).
 
-### <a name="build-your-app"></a>Compile seu aplicativo
+### <a name="build-your-app"></a>Compilar seu aplicativo
  Você pode [compilar seu aplicativo localmente](./ide/compiling-and-building-in-visual-studio.md) e verificar se ele funciona de maneira correta. Em seguida, use as [ferramentas de depuração](./debugger/debugging-in-visual-studio.md) para corrigir os problemas com o aplicativo. Ou você pode compilar projetos em servidores de builds compartilhados ou na nuvem. Automatize o processo do build para compilar o código que os desenvolvedores de sua equipe fizeram check-in no controle de versão. Por exemplo, será possível criar um ou mais projetos à noite ou sempre que o check-in do código for feito.
 
 ### <a name="test-your-app"></a>Testar seu aplicativo
@@ -96,7 +96,7 @@ Bem-vindo ao Visual Studio! Temos tudo o que você precisa para criar ótimos ap
 
 |||||
 |-|-|-|-|
-|[Novidades no Visual Studio 2015](./what-s-new-in-visual-studio-2015.md)|[Novidades do Visual C++](https://msdn.microsoft.com/library/9f18dc26-27fa-4603-a639-b573f07a117b)|[O que há de novo para o .NET Framework 4,6](https://msdn.microsoft.com/library/1d971dd7-10fc-4692-8dac-30ca308fc0fa)|[Novidades do ALM](https://msdn.microsoft.com/54b98a53-6083-4303-869a-8063d8fae938)|
+|[Novidades no Visual Studio 2015](./what-s-new-in-visual-studio-2015.md)|[Novidades do Visual C++](https://msdn.microsoft.com/library/9f18dc26-27fa-4603-a639-b573f07a117b)|[O que há de novo para o .NET Framework 4,6](https://msdn.microsoft.com/library/1d971dd7-10fc-4692-8dac-30ca308fc0fa)|[Novidades do ALM](/azure/devops/server/whats-new)|
 |[O que há de novo paraC++](https://msdn.microsoft.com/library/1cc09fad-85a2-43c2-b022-bb99f5fe0ad7)|[Novidades do Visual Basic](https://msdn.microsoft.com/library/d7e97396-7f42-4873-a81c-4ebcc4b6ca02)|[O que há de novo no JavaScript](javascript/javascript-in-visual-studio.md#whats-new-in-javascript)||
 |[Python](./python/getting-started-with-python.md)||||
 

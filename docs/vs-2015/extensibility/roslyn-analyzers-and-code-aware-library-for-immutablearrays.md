@@ -102,7 +102,7 @@ Para que seu analisador seja exibido na interface do usuário do Visual Studio a
 internal const string Category = "Naming";
 ```
 
-Alteração `"Naming"` para `"API Guidance"`.
+Altere `"Naming"` para `"API Guidance"`.
 
 Em seguida, localize e abra o arquivo Resources. resx em seu projeto usando o **Gerenciador de soluções**. Você pode inserir uma descrição para seu analisador, título, etc. Você pode alterar o valor de todos eles para `“Don’t use ImmutableArray<T> constructor”` por enquanto. Você pode colocar argumentos de formatação de cadeia de caracteres em sua cadeia de caracteres ({0}, {1}, etc.) e, posteriormente, ao chamar `Diagnostic.Create()`, você pode fornecer uma matriz params de argumentos a serem passados.
 

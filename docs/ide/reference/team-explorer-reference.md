@@ -5,18 +5,18 @@ ms.topic: reference
 ms.author: kaelli
 author: KathrynEE
 ms.manager: jillfra
-ms.openlocfilehash: 6a7c1e9d0f5e8b8ef48a033d58038818d2d620e5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: b1a956579b527de9df9d24bd09dda6ae48eff961
+ms.sourcegitcommit: 08105865a9643fb20dce9b8b7580452cfbbe7ee7
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62945062"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74538571"
 ---
 # <a name="team-explorer-reference"></a>Referência do Team Explorer
 
 Este artigo fornece links para artigos do Azure DevOps sobre as várias funções no **Team Explorer**.
 
-Use a janela de ferramentas **Team Explorer** para coordenar seus esforços de codificação com outros membros da equipe para desenvolver um projeto e gerenciar o trabalho atribuído a você, sua equipe ou seus projetos. O **Team Explorer** conecta o Visual Studio a repositórios Git e GitHub, repositórios do TFVC (Controle de Versão do Team Foundation) e projetos hospedados no [Azure DevOps Services](/azure/devops/user-guide/what-is-azure-devops-services) ou em um [Azure DevOps Server](/tfs/index) local (anteriormente conhecido como TFS). Você pode gerenciar o código-fonte, itens de trabalho e builds.
+Use a janela de ferramentas **Team Explorer** para coordenar seus esforços de codificação com outros membros da equipe para desenvolver um projeto e gerenciar o trabalho atribuído a você, sua equipe ou seus projetos. O **Team Explorer** conecta o Visual Studio a repositórios Git e GitHub, repositórios do TFVC (Controle de Versão do Team Foundation) e projetos hospedados no [Azure DevOps Services](/azure/devops/user-guide/what-is-azure-devops-services) ou em um [Azure DevOps Server](/azure/devops/index-all) local (anteriormente conhecido como TFS). Você pode gerenciar o código-fonte, itens de trabalho e builds.
 
 ## <a name="home-page"></a>Home page
 

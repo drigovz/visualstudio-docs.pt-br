@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/28/2019
 ms.topic: conceptual
 description: Detalhes de quais assinaturas são oferecidas, quais regras se aplicam e quantas assinaturas são oferecidas no MPN.
-ms.openlocfilehash: e32ae547327c4e51b7d49f6dffe9130afa843c49
-ms.sourcegitcommit: bcdab788085bd9931d73883fe70cd5831317dca2
+ms.openlocfilehash: 8847d320ec950b6601f99875e2c35ca80105e5b4
+ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72816573"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74491674"
 ---
 # <a name="visual-studio-subscriptions-offered-to-partners-in-the-microsoft-partner-network-mpn"></a>Assinaturas do Visual Studio oferecidas aos parceiros no MPN (Microsoft Partner Network)
 
@@ -57,7 +57,7 @@ Com o Action Pack, o parceiro ganha **Três assinaturas do Visual Studio Profess
 
 Os assinantes do Visual Studio Professional (MPN) também podem baixar e usar softwares para desenvolvimento, incluindo o SQL Server Developer Edition.
 
-A assinatura do Visual Studio Professional (MPN) não inclui Azure DevOps Services benefícios, crédito do Azure DevTest individiaul, suporte técnico, treinamento ou outros benefícios do Assinante que estão disponíveis com as assinaturas do Visual Studio que são oferecido comercialmente.
+A assinatura do Visual Studio Professional (MPN) não inclui Azure DevOps Services benefícios, crédito individual do Azure DevTest, suporte técnico, treinamento ou outros benefícios do Assinante que estão disponíveis com as assinaturas do Visual Studio que são oferecidas comercialmente.
 
 ## <a name="internal-use-only-restriction"></a>Restrição somente para uso interno
 
@@ -73,7 +73,7 @@ Nas assinaturas de nuvem do Visual Studio oferecidas pelo MPN, o usuário licenc
 
 - [Guia do Administrador do Programa MPN](https://assets.microsoft.com/en-us/Program-Administrator-Guide-to-Software-and-Online-Services-Benefits_1.pdf) – inclui instruções de como atribuir assinaturas do Visual Studio para funcionários do MPN.
 - [Atribuir assinaturas do Visual Studio para funcionários do MPN](manage-mpn-subscriptions.md)
-- [Termos de uso](http://www.microsoft.com/useterms/) – as assinaturas do Visual Studio oferecidas por meio do MPN estão sujeitas aos termos de licença das assinaturas do Visual Studio NFR (Proibida a revenda).
+- [Termos de uso](https://www.microsoft.com/useterms/) – as assinaturas do Visual Studio oferecidas por meio do MPN estão sujeitas aos termos de licença das assinaturas do Visual Studio NFR (Proibida a revenda).
 
 ## <a name="next-steps"></a>Próximas etapas
 

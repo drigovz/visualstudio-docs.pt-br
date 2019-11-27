@@ -5,13 +5,13 @@ ms.author: lank
 manager: lank
 ms.date: 07/23/2019
 ms.topic: conceptual
-description: Saiba mais sobre a responsabilidade dos administradores de gerenciar assinaturas para grandes equipes, bem como para prestadores de serviço externos.
-ms.openlocfilehash: 91e507358084bcb878d2a9afc7aad4fe4a2b869c
-ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
-ms.translationtype: HT
+description: Saiba mais sobre a responsabilidade dos administradores de gerenciar assinaturas para equipes grandes, bem como para prestadores de gerenciamento externos.
+ms.openlocfilehash: 975db18e207f52db8e9d37aa190f9085d4069163
+ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68493347"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74491700"
 ---
 # <a name="large-teams-and-external-contractors"></a>Equipes grandes e prestadores de serviço externos
 Os administradores de assinaturas do Visual Studio são responsáveis por garantir que cada usuário que interage com software licenciado do Visual Studio seja licenciado adequadamente com sua própria assinatura do Visual Studio.
@@ -37,5 +37,5 @@ Os prestadores de serviço externos podem trazer licenças para se relacionar co
 Saiba mais as políticas dos administradores:
 - [Responsabilidades do administrador](admin-responsibilities.md)
 - [Inventário do ambiente de pré-produção](admin-inventory.md)
-- [Rastrear atribuições de usuário e processar pedidos](assignments-orders.md)
+- [Rastrear atribuição de usuário e processar pedidos](assignments-orders.md)
 - Utilizar o [Uso Máximo](maximum-usage.md) para rastrear os compromissos de compra

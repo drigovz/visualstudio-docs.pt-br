@@ -6,12 +6,12 @@ manager: lank
 ms.date: 11/14/2019
 ms.topic: conceptual
 description: Saiba como baixar e instalar o IDE do Visual Studio incluído em sua assinatura do Visual Studio.
-ms.openlocfilehash: 74f7de0272130f88c683dcabefaecccf1554ab12
-ms.sourcegitcommit: ca3bb6db949f5e405f6ffe1afa5f430662c1173f
+ms.openlocfilehash: fd140dfe1853e6799a960fd8e251a566954bf143
+ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "74099634"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74491596"
 ---
 # <a name="the-visual-studio-2019-benefit"></a>O benefício do Visual Studio 2019
 
@@ -57,16 +57,16 @@ Para baixar o IDE:
     > ![Começar a usar o Visual Studio Enterprise](_img/vs-ide-experience/vs-ide-start-cropped.png)
 
 
-## <a name="eligibility"></a>Qualificação
+## <a name="eligibility"></a>Elegibilidade
 
 | Nível de Assinatura                                                 |     Canais                                            | Benefício                                                          | Renovável?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard, nuvem mensal)   | VL, Azure, Retail, NFR<sup>1</sup> selecionado | Disponível       |  Sim          |
 | Visual Studio Enterprise com GitHub Enterprise   | VL | Disponível       |  Sim          |
 | Visual Studio Professional (Standard, nuvem mensal) | VL, Azure, Retail                                       | Disponível                                                            |  Sim          |
-| Visual Studio Professional com o GitHub Enterprise | VL   | Disponível              |  Sim          |
+| Visual Studio Professional com GitHub Enterprise | VL   | Disponível              |  Sim          |
 | Visual Studio Test Professional (Padrão)                         | VL, Retail                                              | Disponível                                             |  Sim         |
-| Plataformas MSDN (Padrão)                                          | VL, Retail                                              | Não disponível                                              |  N/A          |
+| Plataformas MSDN (Padrão)                                          | VL, Retail                                              | Não disponível                                              |  N/D          |
 
 <sup>1</sup>  *inclui: não para revenda (NFR), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (MPN), FTE, MCT software & Developer Services, BizSpark, imagine, profissional mais valioso (MVP), diretor regional (RD).  Exclusões: serviços de & de software do MCT.*
 

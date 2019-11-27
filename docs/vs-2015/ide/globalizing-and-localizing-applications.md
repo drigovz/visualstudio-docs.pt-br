@@ -37,7 +37,7 @@ Se você pretender distribuir o aplicativo para um público internacional, preci
 
  [Globalizando aplicativos](../ide/globalizing-applications.md) Fornece links para páginas sobre como criar aplicativos que dão suporte a várias culturas.
 
-## <a name="related-sections"></a>Seções relacionadas
+## <a name="related-sections"></a>Seções Relacionadas
  [Globalizando seu aplicativo (aplicativos da Windows Store usando JavaScript e HTML)](https://go.microsoft.com/fwlink/?LinkId=258266) Contém tópicos e diretrizes de instruções para ajudá-lo a globalizar e localizar seu [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] aplicativo criado usando JavaScript e HTML.
 
  [Globalizar seu aplicativo (aplicativos da Windows Store C#usandoC++ /vb/e XAML)](https://go.microsoft.com/fwlink/?LinkId=258267) contém tópicos de instruções e diretrizes para ajudá-lo a globalizar e localizar seu [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] aplicativo criado usando XAML C#e Visual, Visual Basic ou C++Visual.

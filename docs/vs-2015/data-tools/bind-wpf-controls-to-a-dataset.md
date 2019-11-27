@@ -101,9 +101,9 @@ Neste passo a passo, você criará um aplicativo WPF que contém controles de as
 
 7. Na página **Escolher Objetos do Banco de Dados**, expanda **Tabelas** e selecione a tabela **Produto (SalesLT)** .
 
-8. Clique em **Finalizar**.
+8. Clique em **Concluir**.
 
-     O Visual Studio adiciona um novo arquivo AdventureWorksLTDataSet.xsd ao projeto, e adiciona um item correspondente **AdventureWorksLTDataSet** à janela **Fontes de Dados**. O arquivo AdventureWorksLTDataSet.xsd define um conjunto de dados tipado nomeado `AdventureWorksLTDataSet` e um TableAdapter nomeado `ProductTableAdapter`. A seguir neste passo a passo, você usará o `ProductTableAdapter` para preencher o conjunto de dados com dados e salvar as alterações no banco de dados.
+     O Visual Studio adiciona um novo arquivo AdventureWorksLTDataSet. xsd ao projeto e adiciona um item **AdventureWorksLTDataSet** correspondente à janela fontes de **dados** . O arquivo AdventureWorksLTDataSet.xsd define um conjunto de dados tipado nomeado `AdventureWorksLTDataSet` e um TableAdapter nomeado `ProductTableAdapter`. A seguir neste passo a passo, você usará o `ProductTableAdapter` para preencher o conjunto de dados com dados e salvar as alterações no banco de dados.
 
 9. Compile o projeto.
 
@@ -112,11 +112,11 @@ Neste passo a passo, você criará um aplicativo WPF que contém controles de as
 
 #### <a name="to-load-product-rows-that-have-photos"></a>Para carregar as linhas de produtos que possuem fotos
 
-1. No **Gerenciador de Soluções**, clique duas vezes no arquivo AdventureWorksLTDataSet.xsd.
+1. Em **Gerenciador de soluções**, clique duas vezes no arquivo AdventureWorksLTDataSet. xsd.
 
      O designer de conjunto de dados é aberto.
 
-2. No designer, clique com o botão direito do mouse na consulta **Fill,GetData()** e selecione **Configurar**.
+2. No designer, clique com o botão direito do mouse na consulta **Fill, GetData ()** e selecione **Configurar**.
 
      O assistente **Configuração do TableAdapter** é aberto.
 
@@ -126,14 +126,14 @@ Neste passo a passo, você criará um aplicativo WPF que contém controles de as
     WHERE ThumbnailPhotoFileName <> 'no_image_available_small.gif'
     ```
 
-4. Clique em **Finalizar**.
+4. Clique em **Concluir**.
 
 ## <a name="define-the-user-interface"></a>Definir a interface do usuário
  Adicione vários botões à janela, modificando o XAML no WPF Designer. A seguir neste passo a passo, você adicionará o código que permite aos usuários navegar e salvar alterações nos registros de produtos, usando esses botões.
 
 #### <a name="to-define-the-user-interface-of-the-window"></a>Para definir a interface do usuário da janela
 
-1. No **Gerenciador de Soluções**, clique duas vezes em MainWindow.xaml.
+1. Em **Gerenciador de soluções**, clique duas vezes em MainWindow. XAML.
 
      A janela é aberta no WPF Designer.
 

@@ -84,7 +84,7 @@ wchar_t * wmemcpy(
 ### <a name="sal-basics"></a>Noções básicas sobre SAL  
  O SAL define quatro tipos básicos de parâmetros, que são categorizados por padrão de uso.  
   
-|Categoria|Anotação de parâmetro|Descrição|  
+|Category|Anotação de parâmetro|Descrição|  
 |--------------|--------------------------|-----------------|  
 |**Entrada para a função chamada**|`_In_`|Os dados são passados para a função chamada e são tratados como somente leitura.|  
 |**Entrada para a função chamada e saída para o chamador**|`_Inout_`|Os dados utilizáveis são passados para a função e potencialmente são modificados.|  

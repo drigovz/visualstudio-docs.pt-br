@@ -14,12 +14,12 @@ caps.latest.revision: 364
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 036ad2171c3b117049635247a980cd0f8411d887
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: ce064209ca96abda1f9e44825fa869c2ba250a32
+ms.sourcegitcommit: 08105865a9643fb20dce9b8b7580452cfbbe7ee7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297561"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74538980"
 ---
 # <a name="what39s-new-in-visual-studio-2015"></a>Novidades no Visual Studio 2015
 [!INCLUDE[vs2017banner](./includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ Bem-vindo ao Visual Studio 2015, um pacote integrado de ferramentas de produtivi
 
 Esta página realça alguns dos recursos mais importantes que são novos desde a Visual Studio 2013 RTM, incluindo os recursos introduzidos pela primeira vez em uma das atualizações de Visual Studio 2013. Para obter uma lista completa do que há de novo no Visual Studio 2015, consulte as [notas de versão](https://www.visualstudio.com/news/vs2015-vs).
 
-Para saber mais sobre os vários aprimoramentos e novos recursos do Visual Studio ALM, consulte [novidades do TFS 2015](/tfs/server/whats-new?view=vsts#tfs-2015-rtm).
+Para saber mais sobre os vários aprimoramentos e novos recursos do Visual Studio ALM, consulte [novidades do TFS 2015](/azure/devops/server/whats-new#tfs-2015).
 
 ## <a name="a-new-setup-experience"></a>Uma nova experiência de instalação
  [!INCLUDE[downloadvs](./includes/downloadvs-md.md)]
@@ -252,7 +252,7 @@ A seguir estão as ferramentas novas ou aprimoradas que executam diferentes tipo
 
  Basta clicar no rosto de Smiley amarelo na barra de título, nos dizer o que você gostou e clicar no botão **enviar um Smiley** .
 
- E pronto! Vamos rotear seus comentários para a equipe correta onde eles se desaparecerão em seguida, começará rapidamente a pensar nas maneiras de fascinam-lo ainda mais.
+ Isso é tudo! Vamos rotear seus comentários para a equipe correta onde eles se desaparecerão em seguida, começará rapidamente a pensar nas maneiras de fascinam-lo ainda mais.
 
 ### <a name="send-a-frown"></a>Enviar um Rosto Triste
  Ouvir onde precisamos fazer melhorias no produto nos ajuda a gerenciar nossa lista de pendências concentrando-se primeiro nas coisas mais importantes para nossos clientes. Se houver algo que esteja sendo depurado, conte-nos sobre ele usando o recurso **enviar um rosto triste** diretamente dentro do IDE. Também fizemos isso um processo extremamente simples:

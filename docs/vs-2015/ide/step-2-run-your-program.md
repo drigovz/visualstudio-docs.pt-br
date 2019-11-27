@@ -19,7 +19,7 @@ ms.locfileid: "74295780"
 # <a name="step-2-run-your-program"></a>Etapa 2: Executar o programa
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Ao criar uma nova solução, você na verdade cria um programa que é executado. Ainda não faz muita coisa—apenas exibe uma janela vazia que mostra **Form1** na barra de título. Mas se ela funciona, você está prestes a descobrir.
+Ao criar uma nova solução, você na verdade cria um programa que é executado. Ele não faz muita coisa — apenas exibe uma janela vazia que mostra **Form1** na barra de título. Mas se ela funciona, você está prestes a descobrir.
 
  ![link para vídeo](../data-tools/media/playvideo.gif "PlayVideo") Para obter uma versão de vídeo deste tópico, consulte [tutorial 1: criar um visualizador de imagens no Visual Basic-Video 1](https://go.microsoft.com/fwlink/?LinkId=205209) ou [tutorial 1: criar um visualizador C# de imagens em-vídeo 1](https://go.microsoft.com/fwlink/?LinkId=205199). Esses vídeos usam uma versão anterior do Visual Studio, portanto, existem pequenas diferenças em alguns comandos de menu e em outros elementos da interface do usuário. No entanto, os conceitos e procedimentos funcionam de maneiras semelhantes na versão atual do Visual Studio.
 
@@ -27,7 +27,7 @@ Ao criar uma nova solução, você na verdade cria um programa que é executado.
 
 1. Use um dos seguintes métodos para executar seu programa.
 
-    - Escolha a tecla **F5**.
+    - Pressione a tecla **F5**.
 
     - Na barra de menus, escolha **Depurar**, **Iniciar Depuração**.
 
@@ -45,7 +45,7 @@ Ao criar uma nova solução, você na verdade cria um programa que é executado.
 
 4. Use um dos seguintes métodos para pausar seu programa.
 
-    - Na barra de ferramentas, clique no botão **Parar depuração**.
+    - Na barra de ferramentas, clique no botão **Parar Depuração**.
 
     - Na barra de menus, escolha **Depurar**, **Parar Depuração**.
 

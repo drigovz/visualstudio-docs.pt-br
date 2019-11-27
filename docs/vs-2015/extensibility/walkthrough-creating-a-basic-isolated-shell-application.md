@@ -115,7 +115,7 @@ Este tutorial mostra como criar uma solução de shell isolada, personalizar a a
   
 2. Remova a marca de comentário da seguinte linha:  
   
-     [$RootKey$\Packages\\{87569308-4813-40a0-9cd0-d7a30838ca3f}]  
+     [$RootKey $ \Packages\\{87569308-4813-40a0-9cd0-d7a30838ca3f}]  
   
 3. Recompile a solução e inicie a depuração do Shell isolado. Abra um arquivo XML, por exemplo, \MyVSShellStub\MyVSShellStub\MyVSShellStubUI\MyVSShellStubUI.vsct. Verifique se as palavras-chave XML no arquivo não estão coloridas e se a digitação de "<" em uma linha não traz dicas de ferramenta XML.  
   

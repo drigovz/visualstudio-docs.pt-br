@@ -33,7 +33,7 @@ Se você usar o modo de estado de sessão padrão (em processo) para aplicativos
 
 Compartilhe suas ideias e comentários em [Comentários de análise de código do Azure](https://go.microsoft.com/fwlink/?LinkId=403771).
 
-### <a name="reason"></a>Motivo
+### <a name="reason"></a>Reason
 Por padrão, o modo de estado de sessão especificado no arquivo web.config está em processo. Além disso, se nenhuma entrada for especificada no arquivo de configuração, o modo de estado de sessão assume o padrão de em processo. O modo em processo armazena o estado de sessão na memória, no servidor Web. Quando uma instância é reiniciada ou uma nova instância é usada para balanceamento de carga ou suporte a failover, o estado de sessão armazenado na memória no servidor Web não é salvo. Essa situação impede que o aplicativo seja escalonável na nuvem.
 
 O estado de sessão ASP.NET dá suporte a várias opções de armazenamento diferentes para dados de estado de sessão: InProc, StateServer, SQLServer, personalizado e desativado. É recomendável que você use o modo Personalizado para hospedar dados em um armazenamento de estado da sessão externo, como [Provedor de estado de sessão do Azure para Redis](https://go.microsoft.com/fwlink/?LinkId=401521).
@@ -50,7 +50,7 @@ Crie métodos assíncronos (como [await](https://msdn.microsoft.com/library/hh15
 
 Compartilhe suas ideias e comentários em [Comentários de análise de código do Azure](https://go.microsoft.com/fwlink/?LinkId=403771).
 
-### <a name="reason"></a>Motivo
+### <a name="reason"></a>Reason
 A chamada de métodos assíncronos dentro do método [Run ()](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx) método faz com que o runtime do serviço de nuvem recicle a função de trabalho. Quando uma função de trabalho é iniciada, todas as execuções do programa ocorrem dentro do método [Run ()](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx) . Sair do método [Run ()](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx) faz com que a função de trabalho reinicie. Quando o runtime da função de trabalho atinge o método assíncrono, ele envia todas as operações posteriores ao método assíncrono e retorna. Isso faz com que a função de trabalho saia do método [[[[Run ()](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx)](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx)](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx)](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleentrypoint.run.aspx) e reinicialize. Na próxima iteração da execução, a função de trabalho atinge o método assíncrono novamente e reinicia, fazendo com que a função de trabalho seja reciclada novamente.
 
 ### <a name="solution"></a>Solução
@@ -95,7 +95,7 @@ Use SAS (Assinatura de Acesso Compartilhado) para autenticação. ACS (Serviço 
 
 Compartilhe suas ideias e comentários em [Comentários de análise de código do Azure](https://go.microsoft.com/fwlink/?LinkId=403771).
 
-### <a name="reason"></a>Motivo
+### <a name="reason"></a>Reason
 Para mais segurança, o Active Directory do Azure está substituindo a autenticação do ACS pela autenticação SAS. Consulte [Active Directory do Azure é o futuro do ACS](https://cloudblogs.microsoft.com/enterprisemobility/2013/06/22/azure-active-directory-is-the-future-of-acs/) para obter informações sobre o plano de transição.
 
 ### <a name="solution"></a>Solução
@@ -121,7 +121,7 @@ Para evitar o início de um "loop de recebimento" a chamada ao método **OnMessa
 
 Compartilhe suas ideias e comentários em [Comentários de análise de código do Azure](https://go.microsoft.com/fwlink/?LinkId=403771).
 
-### <a name="reason"></a>Motivo
+### <a name="reason"></a>Reason
 Ao chamar **OnMessage**, o cliente inicia uma bomba de mensagens internas que monitora constantemente a fila ou assinatura. Essa bomba de mensagens contém um loop infinito que emite uma chamada para receber mensagens. Se a chamada alcançar o tempo limite, ele emitirá uma nova chamada. O intervalo de tempo limite é determinado pelo valor da propriedade [OperationTimeout](https://msdn.microsoft.com/library/microsoft.servicebus.messaging.messagingfactorysettings.operationtimeout.aspx) do [MessagingFactory](https://msdn.microsoft.com/library/microsoft.servicebus.messaging.messagingfactory.aspx) que está sendo usado.
 
 A vantagem de usar o **OnMessage** em comparação com **Receive** é que os usuários não precisarão manualmente pesquisar mensagens, manipular exceções, processar várias mensagens em paralelo e concluir mensagens.
@@ -225,7 +225,7 @@ Use os métodos assíncronos do barramento de serviço para melhorar o desempenh
 
 Compartilhe suas ideias e comentários em [Comentários de análise de código do Azure](https://go.microsoft.com/fwlink/?LinkId=403771).
 
-### <a name="reason"></a>Motivo
+### <a name="reason"></a>Reason
 O uso de métodos assíncronos permite a simultaneidade do programa aplicativo porque a execução de cada chamada não bloqueia o thread principal. Ao usar os métodos de mensagens do Barramento de Serviço, a execução de uma operação (enviar, receber, excluir, etc.) leva tempo. Esse tempo inclui o processamento da operação pelo serviço do barramento de serviço, além da latência da solicitação e resposta. Para aumentar o número de operações por hora, elas devem ser executadas simultaneamente. Para obter mais informações, consulte [Práticas recomendadas para melhorias de desempenho usando o sistema de mensagens agenciado do Barramento de Serviço](https://msdn.microsoft.com/library/azure/hh528527.aspx).
 
 ### <a name="solution"></a>Solução
@@ -242,7 +242,7 @@ Particione filas e tópicos do barramento de serviço para um melhor desempenho 
 
 Compartilhe suas ideias e comentários em [Comentários de análise de código do Azure](https://go.microsoft.com/fwlink/?LinkId=403771).
 
-### <a name="reason"></a>Motivo
+### <a name="reason"></a>Reason
 O particionamento de tópicos e filas do barramento de serviço aumenta a taxa de transferência do desempenho e a disponibilidade do serviço porque a taxa de transferência geral de uma fila ou tópico particionado não é mais limitada pelo desempenho de um único agente ou repositório de mensagens. Além disso, uma falha temporária de um repositório de mensagens não torna uma fila ou tópico particionado indisponível. Para saber mais, confira [Particionamento de entidades de mensagens](https://msdn.microsoft.com/library/azure/dn520246.aspx).
 
 ### <a name="solution"></a>Solução
@@ -267,7 +267,7 @@ Você deve evitar usar SharedAccessStartTimeset para a hora atual para iniciar i
 
 Compartilhe suas ideias e comentários em [Comentários de análise de código do Azure](https://go.microsoft.com/fwlink/?LinkId=403771).
 
-### <a name="reason"></a>Motivo
+### <a name="reason"></a>Reason
 A sincronização do relógio causa uma pequena diferença de hora entre os data centers. Por exemplo, você pensaria logicamente que definir a hora de início de uma política SAS de armazenamento como a hora atual usando o método DateTime.Now ou semelhante faria com que a política SAS entrasse em vigor imediatamente. No entanto, as pequenas diferenças de horário entre data centers podem causar problemas com isso, já que alguns horários de data center podem ser ligeiramente posteriores ou anteriores à hora de início. Como resultado, a política de SAS pode expirar rapidamente (ou até mesmo imediatamente) se o tempo de vida da política definido for muito curto.
 
 Para orientação de como usar a assinatura de acesso compartilhado no armazenamento do Azure, consulte [Apresentando SAS (Assinatura de Acesso Compartilhado) de tabela, SAS de fila e atualização de SAS de blob - Blog da equipe de Armazenamento do Microsoft Azure - Home page do site - Blogs MSDN](https://blogs.msdn.microsoft.com/windowsazurestorage/2012/06/12/introducing-table-sas-shared-access-signature-queue-sas-and-update-to-blob-sas/).
@@ -299,7 +299,7 @@ Pode haver até cinco minutos de diferença em relógios dos data centers em loc
 
 Compartilhe suas ideias e comentários em [Comentários de análise de código do Azure](https://go.microsoft.com/fwlink/?LinkId=403771).
 
-### <a name="reason"></a>Motivo
+### <a name="reason"></a>Reason
 Data centers em locais diferentes no mundo sincronizam por um sinal de relógio. Como o sinal de relógio demora em viajar para locais diferentes, pode haver uma variação de tempo entre data centers em locais geográficos diferentes, embora supostamente tudo esteja sincronizado. Essa diferença de tempo pode afetar o intervalo de expiração e a hora de início da política de acesso compartilhado. Portanto, para garantir a política de acesso compartilhado entre em vigor imediatamente, não especifique a hora de início. Além disso, verifique se que a hora de expiração é de mais de 5 minutos para evitar antecipação do tempo limite.
 
 Para obter instruções sobre como usar assinatura de acesso compartilhado no armazenamento do Azure, consulte [Apresentando SAS (Assinatura de Acesso Compartilhado) de tabela, SAS de fila e atualização de SAS de blob - Blog da equipe de Armazenamento do Microsoft Azure - Home page do site - Blogs MSDN](https://blogs.msdn.microsoft.com/windowsazurestorage/2012/06/12/introducing-table-sas-shared-access-signature-queue-sas-and-update-to-blob-sas/).
@@ -349,7 +349,7 @@ O uso da classe [ConfigurationManager](https://msdn.microsoft.com/library/system
 
 Compartilhe suas ideias e comentários em [Comentários de análise de código do Azure](https://go.microsoft.com/fwlink/?LinkId=403771).
 
-### <a name="reason"></a>Motivo
+### <a name="reason"></a>Reason
 CloudConfigurationManager lê o arquivo de configuração apropriado para o ambiente do aplicativo.
 
 [CloudConfigurationManager](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.cloudconfigurationmanager.aspx)
@@ -386,7 +386,7 @@ Se você usar cadeias de conexão embutidas em código e precisar atualizá-las 
 
 Compartilhe suas ideias e comentários em [Comentários de análise de código do Azure](https://go.microsoft.com/fwlink/?LinkId=403771).
 
-### <a name="reason"></a>Motivo
+### <a name="reason"></a>Reason
 Cadeias de conexão hard-coding é uma prática ruim, porque apresenta problemas quando as cadeias de conexão precisam ser alteradas rapidamente. Além disso, se o projeto precisar ser verificado no controle do código-fonte, as cadeias de conexão embutidas em código introduzirão vulnerabilidades de segurança, já que podem ser exibidas no código-fonte.
 
 ### <a name="solution"></a>Solução
@@ -407,7 +407,7 @@ Em vez de definir as configurações de diagnóstico em seu código usando a API
 
 Compartilhe suas ideias e comentários em [Comentários de análise de código do Azure](https://go.microsoft.com/fwlink/?LinkId=403771).
 
-### <a name="reason"></a>Motivo
+### <a name="reason"></a>Reason
 Antes do SDK 2.5 do Azure (que usa o diagnóstico do Azure 1.3), o diagnóstico do Azure (WAD) podia ser configurado usando vários métodos diferentes: adicionando-o ao blob de configuração no armazenamento, usando código obrigatório, configuração declarativa ou a configuração padrão. No entanto, a maneira preferencial de configurar diagnósticos é usar um arquivo de configuração XML (diagnostics.wadcfg ou diagnostics.wadcfgx para o SDK 2.5 e posterior) no projeto de aplicativo. Nessa abordagem, o arquivo diagnostics.wadcfg define completamente a configuração e pode ser atualizado e reimplantado à vontade. Misturar o uso do arquivo de configuração Diagnostics. wadcfg com os métodos programáticos de configuração de configurações usando as classes [DiagnosticMonitor](https://msdn.microsoft.com/library/microsoft.windowsazure.diagnostics.diagnosticmonitor.aspx)ou [RoleInstanceDiagnosticManager](https://msdn.microsoft.com/library/microsoft.windowsazure.diagnostics.management.roleinstancediagnosticmanager.aspx) pode levar à confusão. Consulte [Inicializar ou alterar configuração de diagnóstico do Azure](https://msdn.microsoft.com/library/azure/hh411537.aspx) para obter mais informações.
 
 A partir do WAD 1.3 (incluído com o SDK 2.5 do Azure), não é possível usar o código para configurar diagnóstico. Como resultado, você só pode fornecer a configuração ao aplicar ou atualizar a extensão de diagnóstico.
@@ -419,7 +419,7 @@ Use o designer de configuração de diagnóstico para mover as configurações d
 2. Na seção **Diagnóstico**, verifique se a caixa de seleção **Habilitar Diagnóstico** está marcada.
 3. Escolha o botão **Configurar** .
 
-   ![Acessando a opção Habilitar Diagnóstico](./media/vs-azure-tools-optimizing-azure-code-in-visual-studio/IC796660.png)
+   ![Acessando a opção Habilitar diagnóstico](./media/vs-azure-tools-optimizing-azure-code-in-visual-studio/IC796660.png)
 
    Consulte [Configurando o diagnóstico para os serviços de nuvem do Azure e máquinas virtuais](vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines.md) para obter mais informações.
 
@@ -432,7 +432,7 @@ Para economizar memória, evite declarar objetos DbContext como estáticos.
 
 Compartilhe suas ideias e comentários em [Comentários de análise de código do Azure](https://go.microsoft.com/fwlink/?LinkId=403771).
 
-### <a name="reason"></a>Motivo
+### <a name="reason"></a>Reason
 Objetos DBContext mantêm os resultados da consulta de cada chamada. Os objetos estáticos DBContext não são descartados até que o domínio de aplicativo seja descarregado. Portanto, um objeto DBContext estático pode consumir grandes quantidades de memória.
 
 ### <a name="solution"></a>Solução

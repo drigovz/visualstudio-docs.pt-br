@@ -6,12 +6,12 @@ manager: lank
 ms.date: 10/13/2019
 ms.topic: conceptual
 description: Saiba mais sobre o benefício da revista de código incluído na sua assinatura do Visual Studio.
-ms.openlocfilehash: 6f120bae88a7d613873a9d350e411842904e700e
-ms.sourcegitcommit: ca3bb6db949f5e405f6ffe1afa5f430662c1173f
+ms.openlocfilehash: 341e21d3411afdd8402d223b455f60bcf39a4a40
+ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "74099599"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74491660"
 ---
 # <a name="code-magazine-included-in-visual-studio-subscriptions"></a>Revista de código incluída nas assinaturas do Visual Studio
 
@@ -39,13 +39,13 @@ O processo para configurar sua assinatura da revista de código é simples.  Bas
       > ![Detalhes da assinatura do CODE Magazine](_img/vs-code-magazine/vs-code-magazine-details.png "Detalhes e preço da assinatura")
 6. Em seguida, você precisará fornecer as informações do seu assinante e um endereço de entrega.  (O endereço de entrega é necessário até mesmo para assinaturas digitais, pois ele dá suporte a atendimento, seleção de oferta e processos de acesso digital.)
 7. Se você viver fora do Estados Unidos e optar por receber uma assinatura impressa da revista, você poderá ser solicitado a fornecer um endereço de cobrança e as informações de pagamento para cobrir os custos de envio. 
-8. Você pode aceitar o código HTML Newletter clicando na caixa de seleção.
+8. Você pode aceitar o boletim informativo HTML de código clicando na caixa de seleção.
    > [!div class="mx-imgBorder"]
    > ![Informações do assinante de CODE Magazine](_img/vs-code-magazine/vs-code-magazine-subscriber-info.png "Informações do assinante e endereço de entrega")
 9. Clique em **fazer** para concluir sua assinatura.  
 Depois de concluir sua ordem de assinatura, você verá uma página de confirmação, incluindo um link que pode ser usado para ver quais problemas você recebeu: https://codemag.com/my/fulfillment. 
 
-## <a name="eligibility"></a>Qualificação
+## <a name="eligibility"></a>Elegibilidade
 | Nível de Assinatura                                                 |     Canais                                            | Benefício                                                          | Renovável?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | VL, Azure, Retail, NFR<sup>1</sup> selecionado | Disponível       |  Não          |
@@ -54,7 +54,7 @@ Depois de concluir sua ordem de assinatura, você verá uma página de confirma�
 | Visual Studio Professional com GitHub Enterprise | VL                                      | Disponível                                                            |  Não          |
 | Visual Studio Test Professional (Padrão)                         | VL, Retail                                              | Disponível                                             |  Não          |
 | Plataformas MSDN (Padrão)                                          | VL, Retail                                              | Disponível                                              |  Não          |
-| Visual Studio Enterprise, Visual Studio Professional (nuvem mensal) | Azure | Não disponível | N/A |
+| Visual Studio Enterprise, Visual Studio Professional (nuvem mensal) | Azure | Não disponível | N/D |
 
 <sup>1</sup>  *inclui: não para revenda (NFR), parceiro do setor do Visual Studio (VSIP), FTE, BizSpark, imagine Premium.  Exclui: Microsoft Partner Network (MPN), profissional mais valioso (MVP), diretor regional (RD), MCT software & Developer Services, MCT software & Services, imagine.*
 

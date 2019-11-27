@@ -26,7 +26,7 @@ ms.locfileid: "74298280"
 
 Você pode depurar código C++ que está sendo executado na unidade de processamento gráfico (GPU). O suporte à depuração de GPU no Visual Studio inclui a detecção de concorrência, início de processos e anexação a eles, e a integração nas janelas de depuração.  
   
-## <a name="supported-platforms"></a>Plataformas compatíveis  
+## <a name="supported-platforms"></a>Plataformas com suporte  
  A depuração tem suporte no [!INCLUDE[win7](../includes/win7-md.md)], no [!INCLUDE[win8](../includes/win8-md.md)], no [!INCLUDE[winsvr08_r2](../includes/winsvr08-r2-md.md)] e no [!INCLUDE[winserver8](../includes/winserver8-md.md)]. Para depurar no emulador de software, é necessário o [!INCLUDE[win8](../includes/win8-md.md)] ou [!INCLUDE[winserver8](../includes/winserver8-md.md)]. Para depurar no hardware, você deve instalar os drivers para a sua placa gráfica. Nem todos os fornecedores de hardware implementam todos os recursos do depurador. Consulte a documentação do fornecedor para conhecer as restrições.  
   
 > [!NOTE]
@@ -63,7 +63,7 @@ Você pode depurar código C++ que está sendo executado na unidade de processam
 - [Como usar a janela Threads da GPU](../debugger/how-to-use-the-gpu-threads-window.md)  
   
 ## <a name="data-synchronization-exceptions"></a>Exceções de sincronização de dados  
- O depurador pode identificar várias condições de sincronização de dados durante a execução. Quando uma condição for detectada, o depurador entrará no estado de interrupção. Você tem duas opções: **Interromper** ou **Continuar**. Usando a caixa de diálogo **Exceções**, você pode configurar se o depurador detecta essas condições e também para quais condições ele interromperá. Para obter mais informações, consulte [Gerenciando exceções com o depurador](../debugger/managing-exceptions-with-the-debugger.md). Você também pode usar a caixa de diálogo **Opções** para especificar que o depurador deve ignorar exceções se os dados que são gravados não alterarem o valor dos dados. Para obter mais informações, consulte [geral, depuração, caixa de diálogo opções](../debugger/general-debugging-options-dialog-box.md).  
+ O depurador pode identificar várias condições de sincronização de dados durante a execução. Quando uma condição for detectada, o depurador entrará no estado de interrupção. Você tem duas opções: **Interromper** ou **Continuar**. Usando a caixa de diálogo **Exceções**, você pode configurar se o depurador detecta essas condições e também para quais condições ele interromperá. Para obter mais informações, consulte [Gerenciando exceções com o depurador](../debugger/managing-exceptions-with-the-debugger.md). Você também pode usar a caixa de diálogo **Opções** para especificar que o depurador deve ignorar exceções se os dados gravados não alterarem o valor dos dados. Para obter mais informações, consulte [geral, depuração, caixa de diálogo opções](../debugger/general-debugging-options-dialog-box.md).  
   
 ## <a name="troubleshooting"></a>Solução de problemas  
   

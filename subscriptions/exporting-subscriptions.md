@@ -6,15 +6,15 @@ manager: lank
 ms.date: 07/24/2019
 ms.topic: conceptual
 description: Saiba como exportar uma lista de assinantes e os detalhes de suas atribuições de assinatura.
-ms.openlocfilehash: f5fbdb69f9961c9ec80910387c0549cfbc182729
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
-ms.translationtype: HT
+ms.openlocfilehash: 46e5ae706383d2ed03a289844bc9e6fcc4a01a91
+ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68605580"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74491730"
 ---
-# <a name="export-subscription-information"></a>Exportar informações da assinatura
-No [portal de administração](https://manage.visualstudio.com) de assinaturas do Visual Studio, você pode exportar uma lista de assinantes e os detalhes das atribuições deles. Essas informações incluem nome, endereço de email, endereço de email alternativo, nível da assinatura, data de atribuição, status de ativação, data do término, campo de referência, se os downloads estão habilitados, país, idioma, status da assinatura e GUID da assinatura.  A lista é exportada como um arquivo CSV e pode ser facilmente aberta no Microsoft Excel para a criação de gráficos, tabelas dinâmicas e outros artefatos.
+# <a name="export-subscription-information"></a>Exportar informações de assinatura
+No [portal de administração](https://manage.visualstudio.com)das assinaturas do Visual Studio, você pode exportar uma lista de seus assinantes e detalhes sobre suas atribuições. Essas informações incluem nome, endereço de email, endereço de email alternativo, nível da assinatura, data de atribuição, status de ativação, data do término, campo de referência, se os downloads estão habilitados, país, idioma, status da assinatura e GUID da assinatura.  A lista é exportada como um arquivo CSV e pode ser facilmente aberta no Microsoft Excel para a criação de gráficos, tabelas dinâmicas e outros artefatos.
 
 Ter todas as informações do assinante em um único lugar pode ajudar você a fazer coisas como:
 - Obter uma visão geral de quais assinaturas estão sendo usadas pela equipe e/ou pelo local em sua organização.

@@ -115,7 +115,7 @@ HKLM\Software\Wow6432Node\Microsoft\GenericBootstrapper\11.0
   
  `%ProgramFiles%\Microsoft.NET\RedistList`  
   
- A lista redistribuível é um arquivo XML que você deve nomear usando o seguinte formato: *Nome da Empresa*.*Componente Nome*.RedistList.xml. Assim, por exemplo, se o componente for chamado de Datawidgets feito por Acme, use Acme.DataWidgets.RedistList.xml. Um exemplo de conteúdo da lista redistribuível pode ser semelhante a:  
+ A lista redistribuível é um arquivo XML que você deve nomear usando o seguinte formato: *nome da empresa*. *Nome do componente*. RedistList. xml. Assim, por exemplo, se o componente for chamado de Datawidgets feito por Acme, use Acme.DataWidgets.RedistList.xml. Um exemplo de conteúdo da lista redistribuível pode ser semelhante a:  
   
 ```  
 <?xml version="1.0" encoding="UTF-8"?>  

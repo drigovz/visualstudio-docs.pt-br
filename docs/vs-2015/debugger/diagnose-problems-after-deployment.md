@@ -237,7 +237,7 @@ Para diagnosticar problemas no seu aplicativo da web ASP.NET após a implantaç�
   
  Se estiver usando o TFS e essas informações não estiverem no manifesto de compilação (BuildInfo.config file), o Visual Studio procura pelo código-fonte e símbolos correspondentes em seu TFS conectado no momento. Você recebe uma solicitação para escolher um TFS diferente caso o Visual Studio não encontre o TFS correto ou o código-fonte correspondente.  
   
-#### <a name="InvalidConfigFile"></a> P: O log do IntelliTrace não contém todas as informações sobre meu aplicativo implantado. Por que isso ocorreu? O que devo fazer?  
+#### <a name="InvalidConfigFile"></a> P: O log do IntelliTrace não contém todas as informações sobre meu aplicativo implantado. Por que isso aconteceu? O que devo fazer?  
  Isso pode ter acontecer quando ao implantar do seu computador de desenvolvimento ou quando não está conectado ao TFS durante a implantação.  
   
 1. Vá para sua pasta de implantação do projeto.  

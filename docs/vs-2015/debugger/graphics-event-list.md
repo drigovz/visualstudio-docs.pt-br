@@ -44,9 +44,9 @@ Use a lista de eventos gráficos no Analisador de Gráficos do Visual Studio par
  O Direct3D 11 não expõe várias filas, portanto, os eventos não são codificados por cores na lista de eventos quando você está trabalhando com uma captura de um aplicativo do Direct3D 11.  
   
 ### <a name="event-list-views"></a>Exibições da lista de eventos  
- A lista de eventos oferece suporte a duas exibições diferentes que organizam eventos de gráficos de maneiras distintas para dar suporte ao fluxo de trabalho e às preferências. A primeira exibição é o *modo de exibição de chamadas de desenho*, que organiza eventos e seu estado associado de maneira hierárquica. A segunda exibição é o *modo de exibição da linha do tempo*, que organiza eventos cronologicamente, em uma lista plana.  
+ A lista de eventos oferece suporte a duas exibições diferentes que organizam eventos de gráficos de maneiras distintas para dar suporte ao fluxo de trabalho e às preferências. A primeira exibição é o *modo de exibição de chamadas de desenho* que organiza eventos e seu estado associado hierarquicamente. A segunda exibição é o *modo de exibição da linha do tempo*, que organiza eventos cronologicamente, em uma lista plana.  
   
- A exibição **Chamadas de Desenho**  
+ A exibição chamar **chamadas**  
  Exibe eventos capturados e seu estado em uma hierarquia. O nível superior da hierarquia é constituído de eventos como chamadas de desenho, limpezas, presentes e os que lidam com exibições. Na lista de eventos, é possível expandir chamadas de desenho para exibir o estado atual do dispositivo no momento da chamada de desenho. E você ainda pode expandir cada tipo de estado para exibir os eventos que definem seus valores. Nesse nível, também é possível ver se um determinado estado foi definido em um quadro anterior ou se ele foi definido mais de uma vez desde a chamada de desenho mais recente.  
   
  O modo de exibição de **Linha do tempo**  
@@ -54,7 +54,7 @@ Use a lista de eventos gráficos no Analisador de Gráficos do Visual Studio par
   
 ##### <a name="to-change-the-event-list-view-mode"></a>Para alterar o modo de exibição da lista de eventos  
   
-- Na janela **Lista de Eventos de Gráficos**, acima da lista de eventos, localize o menu suspenso **Exibir** e escolha a exibição **Linha do Tempo** ou **Chamadas de Desenho**.  
+- Na janela **lista de eventos de gráficos** , acima da lista de eventos, localize o menu suspenso **exibição** e escolha o modo de exibição de **linha do tempo** ou o modo de exibição **chamar chamadas** .  
   
 ### <a name="filtering-events"></a>Filtrando eventos  
  É possível usar a caixa Pesquisar, localizada no canto superior direito da janela **Lista de Eventos de Gráficos**, para filtrar a lista de eventos e incluir apenas eventos cujos nomes contenham palavras-chave específicas. Você pode especificar palavras-chave únicas, como `Vertex`, conforme mostrado na ilustração anterior — ou várias palavras-chave usando uma lista delimitada por ponto-e-vírgula, como `Draw;Primitive`— que corresponde a eventos que têm `Draw` ou `Primitive` em seus nomes. As pesquisas são sensíveis ao espaço em branco — por exemplo, `VSSet` e `VS Set` são pesquisas diferentes — portanto, certifique-se de formar pesquisas com cuidado.  

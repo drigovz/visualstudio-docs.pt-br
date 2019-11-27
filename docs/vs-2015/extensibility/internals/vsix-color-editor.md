@@ -67,7 +67,7 @@ A ferramenta Editor de cores de extensão do Visual Studio pode criar e Editar c
   
 - Ativo  
   
-- Inativo  
+- Inactive  
   
 - MouseOver  
   

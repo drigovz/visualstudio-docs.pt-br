@@ -42,26 +42,26 @@ Você pode usar a caixa de diálogo serviços conectados para se conectar aos se
 
         ![Conectando-se ao serviço móvel do Azure](./media/vs-azure-tools-connected-services-add-mobile-services/IC797635.png)
    * Para Apache Cordova projetos de aplicativo, abra o projeto no Visual Studio, abra o menu de contexto do nó do projeto no Gerenciador de Soluções e, em seguida, escolha **Adicionar serviço conectado**.
-3. Na caixa de diálogo **Adicionar serviço conectado** , escolha **serviços móveis do Azure**e, em seguida, escolha o botão **Configurar** . Você pode ser solicitado a fazer logon no Azure se ainda não tiver feito isso.
+3. Na caixa de diálogo **Adicionar Serviço conectado**, escolha **Serviços Móveis do Azure**e, em seguida, escolha o botão **Configurar**. Você pode ser solicitado a fazer logon no Azure se ainda não tiver feito isso.
 
     ![Adicionando um serviço móvel do Azure](./media/vs-azure-tools-connected-services-add-mobile-services/IC797636.png)
-4. Na caixa de diálogo **serviços móveis do Azure** , escolha um serviço móvel existente se você tiver um. Se você precisar criar um novo serviço móvel do Azure, siga o procedimento abaixo para fazer isso. Caso contrário, pule para a próxima etapa.
+4. Na caixa de diálogo **Serviços Móveis do Azure**, escolha um serviço móvel existente, se você possuir. Se você precisar criar um novo serviço móvel do Azure, siga o procedimento abaixo para fazer isso. Caso contrário, pule para a próxima etapa.
 
     Para criar uma nova conta de serviço móvel:
 
-   1. Escolha o link **Criar serviço** na parte inferior da caixa de diálogo.
+   1. Escolha o link **Criar Serviço** link na parte inferior da caixa de diálogo.
        ![adicionar novo serviço conectado móvel](./media/vs-azure-tools-connected-services-add-mobile-services/IC797637.png)
    2. Na caixa de diálogo **Criar serviço móvel** , você pode escolher um serviço móvel de back-end JavaScript ou um serviço móvel de back-end do .net na lista suspensa **tempo de execução** .
 
        ![Criando um serviço móvel](./media/vs-azure-tools-connected-services-add-mobile-services/IC797638.png)
 
-       Um serviço de back-end JavaScript é simples e poderoso. Se você criar um serviço móvel de back-end JavaScript, o código JavaScript do lado do servidor será armazenado na nuvem, mas você poderá editar scripts de servidor usando Gerenciador de Servidores ou o portal de gerenciamento do Azure.
+       Um serviço de back-end JavaScript é simples e poderoso. Se você criar um serviço móvel de back-end JavaScript, o código de JavaScript do lado do servidor é armazenado na nuvem, mas você pode editar scripts de servidor usando o Gerenciador de Servidores, ou o portal de gerenciamento do Azure.
 
        Um serviço móvel de back-end do .NET oferece todo o poder e a flexibilidade da API Web e Entity Framework. Se você criar um serviço móvel de back-end do .NET, um projeto será criado para você e adicionado à sua solução.
-   3. Escolha a **região** onde você deseja o serviço móvel e insira um nome de usuário e uma senha para o servidor.
-   4. Depois de inserir todas as informações necessárias, escolha o botão **criar** para criar o serviço móvel.
-   5. O novo serviço móvel deve aparecer na lista de serviços na caixa de diálogo **serviços móveis do Azure** . Escolha o novo serviço móvel na lista e, em seguida, escolha o botão **Adicionar** para adicionar o serviço ao seu projeto.
-5. Examine a página de introdução que aparece e descubra como o projeto foi modificado. Uma página Introdução aparece em seu navegador sempre que você adiciona um serviço conectado. Você pode examinar as próximas etapas sugeridas e os exemplos de código, ou alternar para a página o que aconteceu para ver quais referências foram adicionadas ao seu projeto e como seus arquivos de código e de configuração foram modificados.
+   3. Escolha a **Região** em que você deseja o serviço móvel e, em seguida, digite um nome de usuário e senha para o servidor.
+   4. Depois de inserir todas as informações necessárias, escolha o botão **Criar** para criar o serviço móvel.
+   5. O novo serviço móvel deve aparecer na lista de serviços na caixa de diálogo **serviços móveis do Azure** . Escolha o novo serviço móvel na lista e escolha o botão **Adicionar** para adicionar o serviço ao seu projeto.
+5. Examine a página de introdução que aparece e descubra como o projeto foi modificado. Uma página de Introdução será exibida no navegador sempre que você adicionar um serviço conectado. Você pode revisar as próximas etapas sugeridas e exemplos de código ou alternar para a página O que aconteceu para ver quais referências foram adicionadas ao seu projeto e como o seu código e arquivos de configuração foram modificados.
 6. Usando os exemplos de código como guia, comece a escrever código para acessar seu serviço móvel!
 
 ## <a name="how-your-project-is-modified"></a>Como o projeto é modificado

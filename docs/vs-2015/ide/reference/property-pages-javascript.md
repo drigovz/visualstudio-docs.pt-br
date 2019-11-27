@@ -42,7 +42,7 @@ As **Páginas de Propriedade** fornecem acesso às configurações do projeto. V
 
  **Plataforma** do Especifica as configurações de plataforma a serem exibidas ou modificadas. As configurações são **Qualquer CPU** (padrão para aplicativos [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)]), **x64**, **ARM**, **x86** ou uma plataforma definida pelo usuário. Para obter mais informações, consulte [Configurações de projeto de depuração e versão](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).
 
-## <a name="general-page"></a>Página geral
+## <a name="general-page"></a>Página Geral
  Use as seguintes opções para configurar propriedades gerais do projeto.
 
 > [!NOTE]

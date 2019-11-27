@@ -32,7 +32,7 @@ A partir do Azure SDK 2.7, você pode também usar o Cloud Explorer para exibir 
 
 ## <a name="view-and-manage-storage-resources-in-visual-studio"></a>Exibir e gerenciar recursos de armazenamento no Visual Studio
 
-O Gerenciador de Servidores automaticamente mostra uma lista de blobs, filas e tabelas na conta do emulador de armazenamento. A conta do emulador de armazenamento está listada no Gerenciador de Servidores no nó de **Armazenamento** como o nó de **Desenvolvimento**.
+O Gerenciador de Servidores mostra a lista de blobs, filas e tabelas em sua conta do emulador de armazenamento. A conta do emulador de armazenamento está listada no Gerenciador de Servidores no nó de **Armazenamento** como o nó de **Desenvolvimento**.
 
 Para ver os recursos da conta do emulador de armazenamento, expanda o nó **Desenvolvimento** . Se o emulador de armazenamento não é iniciado quando você expande o nó **Desenvolvimento**, ele será iniciado automaticamente. Esse processo pode levar vários minutos. Você pode continuar a trabalhar em outras áreas do Visual Studio enquanto o emulador de armazenamento é iniciado.
 
@@ -110,7 +110,7 @@ No Gerenciador de nuvem, use qualquer um dos seguintes métodos:
 * Escolha o nome do blob e selecione o botão **Abrir**.
 * Clique duas vezes no nome do blob.
 
-O andamento do download de um blob aparece na janela **Log de atividades do Azure** .
+O andamento do download de um blob é exibido na janela **Log de Atividades do Azure**.
 
 O blob é aberto no editor padrão desse tipo de arquivo. Se o sistema operacional reconhecer o tipo de arquivo, o arquivo será aberto em um aplicativo instalado localmente. Caso contrário, será solicitado que você escolha um aplicativo apropriado para o tipo de arquivo do blob. O arquivo local criado quando você baixa um blob está marcado como somente leitura.
 
@@ -177,7 +177,7 @@ O Armazenamento de Tabelas do Microsoft Azure armazena grandes quantidades de da
 1. Abra o nó de conta de armazenamento no qual está interessado e abra o nó **Tabelas** para ver uma lista de tabelas para a conta de armazenamento.
 1. Abra o menu de atalho para uma tabela e selecione **Exibir Tabela**.
 
-    ![Uma tabela do Azure no Gerenciador de Soluções](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC744165.png)
+    ![Uma tabela do Azure no Solution Explorer](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC744165.png)
 
 A tabela é organizada por entidades (mostradas nas linhas) e propriedades (mostradas nas colunas). Por exemplo, a próxima ilustração mostra entidades listadas no Designer de Tabela.
 
@@ -213,7 +213,7 @@ Você pode personalizar o conjunto de entidades que aparecem em uma tabela, se u
 1. Para abrir o construtor de consultas, abra uma tabela para exibir.
 1. Escolha o botão **Construtor de Consultas** na barra de ferramentas de exibição de tabela.
 
-    A caixa de diálogo **Construtor de Consultas** é exibida. A ilustração a seguir mostra uma consulta sendo criada no construtor de consultas.
+    A caixa de diálogo **Construtor de Consultas** aparece. A ilustração a seguir mostra uma consulta sendo criada no construtor de consultas.
 
     ![Construtor de consultas](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC652231.png)
 1. Após criar a consulta, feche a caixa de diálogo. O formulário de texto resultante da consulta aparece em uma caixa de texto como um filtro do WCF Data Services.
@@ -249,7 +249,7 @@ Escolha o nome da conta e selecione o botão **Atualizar** na barra de ferrament
 
 ## <a name="add-storage-accounts-by-using-server-explorer"></a>Adicionar contas de armazenamento usando o Gerenciador de Servidores
 
-Há duas maneiras de adicionar contas de armazenamento usando o Gerenciador de Servidores. Você pode criar uma conta de armazenamento na sua assinatura do Azure ou pode anexar uma conta de armazenamento existente.
+Há duas formas de adicionar contas de armazenamento usando o Gerenciador de Servidores. Você pode criar uma conta de armazenamento na sua assinatura do Azure ou pode anexar uma conta de armazenamento existente.
 
 ### <a name="to-create-a-storage-account-by-using-server-explorer"></a>Para criar uma conta de armazenamento usando o Gerenciador de Servidores
 
@@ -259,7 +259,7 @@ Há duas maneiras de adicionar contas de armazenamento usando o Gerenciador de S
 
    * A assinatura do Azure à qual você deseja adicionar a conta de armazenamento.
    * O nome que você deseja usar para a nova conta de armazenamento.
-   * A região ou o grupo de afinidade (como Oeste dos EUA ou Leste Asiático).
+   * A região ou o grupo de afinidade (como Oeste dos EUA ou Ásia Oriental).
    * O tipo de replicação que você deseja usar para a conta de armazenamento, tal como localmente redundante.
 
    ![Criar uma conta de armazenamento do Azure](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC744166.png)
@@ -277,13 +277,13 @@ A nova conta de armazenamento aparece na lista **Armazenamento** no Gerenciador 
 
    * O nome da conta de armazenamento existente que você deseja anexar.
    * A chave para a conta de armazenamento selecionado. Esse valor geralmente é fornecido para você quando seleciona uma conta de armazenamento. Se desejar que o Visual Studio se lembre da chave de conta de armazenamento, marque a caixa de seleção **Lembrar chave de conta**.
-   * O protocolo a ser usado para se conectar à conta de armazenamento, como HTTP, HTTPS ou um ponto de extremidade personalizado. Para obter mais informações sobre pontos de extremidade personalizados, consulte [Como configurar cadeias de conexão](https://msdn.microsoft.com/library/azure/ee758697.aspx).
+   * O protocolo a usar para se conectar à conta de armazenamento, como HTTP, HTTPS ou um ponto de extremidade personalizado. Para obter mais informações sobre pontos de extremidade personalizados, consulte [Como configurar cadeias de conexão](https://msdn.microsoft.com/library/azure/ee758697.aspx).
 
 ### <a name="to-view-the-secondary-endpoints"></a>Para exibir os pontos de extremidade secundários
 
 Se você criou uma conta de armazenamento usando a opção de replicação **Redundância Geográfica com Acesso de Leitura**, poderá exibir os pontos de extremidade secundários dela abrindo o menu de atalho do nome da conta e, em seguida, selecionando **Propriedades**.
 
-![Pontos de extremidade de armazenamento secundários](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC766040.png)
+![Pontos de extremidade secundários de armazenamento](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC766040.png)
 
 ### <a name="to-remove-a-storage-account-from-server-explorer"></a>Para remover uma conta de armazenamento do Gerenciador de Servidores
 

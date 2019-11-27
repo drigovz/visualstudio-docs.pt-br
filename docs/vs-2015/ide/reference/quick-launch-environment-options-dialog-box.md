@@ -34,12 +34,12 @@ Você pode usar o **Início Rápido** para pesquisar e executar rapidamente aç�
 
  É possível usar os seguintes atalhos para limitar a pesquisa a categorias específicas.
 
-|Categoria|Atalho|Descrição do atalho|
+|Category|Atalho|Descrição do atalho|
 |--------------|--------------|--------------------------|
 |Usados Recentemente|@mru<br /><br /> Por exemplo, `@mru font`|Exibe até cinco dos itens que foram **Usados Recentemente**.|
 |Menus|@menu<br /><br /> Por exemplo, `@menu font`|Limita a pesquisa a itens de menu.|
 |Opções|@opt<br /><br /> Por exemplo, `@opt font`|Limita a pesquisa a configurações na caixa de diálogo **Opções**.|
-|Documentos|@doc<br /><br /> Por exemplo, `@doc font`|Limita a pesquisa a nomes de arquivo e caminhos de documentos abertos para os critérios de pesquisa, mas não pesquisa o texto dentro dos próprios arquivos.|
+|{1&gt;Documentos&lt;1}|@doc<br /><br /> Por exemplo, `@doc font`|Limita a pesquisa a nomes de arquivo e caminhos de documentos abertos para os critérios de pesquisa, mas não pesquisa o texto dentro dos próprios arquivos.|
 
 > [!NOTE]
 > Você pode alterar as teclas de atalho na página **Geral**, **Teclado** na caixa de diálogo **Opções**.

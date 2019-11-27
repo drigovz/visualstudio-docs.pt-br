@@ -10,16 +10,16 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d40e88f123f397cfc77fe44757c2f72305390302
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a2cf385aaf24db2172a61ddbe7ecf77dcbe40f3c
+ms.sourcegitcommit: 08105865a9643fb20dce9b8b7580452cfbbe7ee7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72606546"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74537779"
 ---
 # <a name="enable-a-category-of-rules"></a>Habilitar uma categoria de regras
 
-Os pacotes do Analyzer podem incluir [EditorConfig](use-roslyn-analyzers.md#set-rule-severity-in-an-editorconfig-file) predefinidos e arquivos de [conjunto de regras](using-rule-sets-to-group-code-analysis-rules.md) que tornam rápido e fácil habilitar uma categoria de regras, como segurança ou regras de design. O pacote do [Microsoft. CodeAnalysis. FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) NuGet Analyzer inclui os dois conjuntos de regras (começando na versão 2.6.2) e os arquivos EditorConfig (a partir da versão 2.9.5). Ao habilitar uma categoria específica de regras, você pode identificar problemas direcionados e condições específicas.
+Os pacotes do Analyzer podem incluir [EditorConfig](use-roslyn-analyzers.md#rule-severity) predefinidos e arquivos de [conjunto de regras](using-rule-sets-to-group-code-analysis-rules.md) que tornam rápido e fácil habilitar uma categoria de regras, como segurança ou regras de design. O pacote do [Microsoft. CodeAnalysis. FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) NuGet Analyzer inclui os dois conjuntos de regras (começando na versão 2.6.2) e os arquivos EditorConfig (a partir da versão 2.9.5). Ao habilitar uma categoria específica de regras, você pode identificar problemas direcionados e condições específicas.
 
 > [!NOTE]
 > A habilitação das regras do analisador e a definição de sua gravidade usando um arquivo EditorConfig tem suporte a partir do Visual Studio 2019 versão 16,3.
@@ -53,13 +53,13 @@ Cada uma dessas categorias de regras tem um EditorConfig ou um arquivo de conjun
 
 ## <a name="predefined-editorconfig-files"></a>Arquivos EditorConfig predefinidos
 
-Os arquivos EditorConfig predefinidos para o pacote do analisador Microsoft. CodeAnalysis. FxCopAnalyzers estão localizados no *% USERPROFILE% \\. nuget\packages\microsoft.codeanalysis.fxcopanalyzers \\ \<version \> \editorconfig* de diretório. Por exemplo, o arquivo EditorConfig para habilitar todas as regras de segurança está localizado em *% USERPROFILE% \\. nuget\packages\microsoft.codeanalysis.fxcopanalyzers \\ \<version \> \editorconfig\securityrulesenabled \\. editorconfig*.
+Os arquivos EditorConfig predefinidos para o pacote do analisador Microsoft. CodeAnalysis. FxCopAnalyzers estão localizados no diretório *% USERPROFILE%\\. nuget\packages\microsoft.codeanalysis.fxcopanalyzers\\\<versão\>\editorconfig* . Por exemplo, o arquivo EditorConfig para habilitar todas as regras de segurança está localizado em *% USERPROFILE%\\. nuget\packages\microsoft.codeanalysis.fxcopanalyzers\\\<versão\>\editorconfig\SecurityRulesEnabled\\. EditorConfig*.
 
 Copie o arquivo. editorconfig escolhido para o diretório raiz do projeto.
 
 ## <a name="predefined-rule-sets"></a>Conjuntos de regras predefinidas
 
-Os arquivos de conjunto de regras predefinidos para o pacote do analisador Microsoft. CodeAnalysis. FxCopAnalyzers estão localizados no *% USERPROFILE% \\. nuget\packages\microsoft.codeanalysis.fxcopanalyzers \\ \<version \> \rulesets* active. Por exemplo, o arquivo de conjunto de regras para habilitar todas as regras de segurança está localizado em *% USERPROFILE% \\. nuget\packages\microsoft.codeanalysis.fxcopanalyzers \\ \<version \> \rulesets\securityrulesenabled.RuleSet*.
+Os arquivos de conjunto de regras predefinidos para o pacote do analisador Microsoft. CodeAnalysis. FxCopAnalyzers estão localizados no diretório *% USERPROFILE%\\. nuget\packages\microsoft.codeanalysis.fxcopanalyzers\\\<versão\>\rulesets* . Por exemplo, o arquivo de conjunto de regras para habilitar todas as regras de segurança está localizado em *% USERPROFILE%\\. nuget\packages\microsoft.codeanalysis.fxcopanalyzers\\\<versão\>\rulesets\SecurityRulesEnabled.RuleSet*.
 
 Copie um ou mais conjuntos de regras e cole-os no diretório que contém o projeto do Visual Studio ou diretamente no **Gerenciador de soluções**.
 
@@ -80,7 +80,7 @@ Para fazer com que uma regra defina o conjunto de regras ativas para análise no
 </PropertyGroup>
 ```
 
-#### <a name="net-framework"></a>.NET Framework
+#### <a name="net-framework"></a>{1&gt;.NET Framework&lt;1}
 
 Para fazer com que uma regra defina o conjunto de regras ativas para análise em projetos .NET Framework:
 

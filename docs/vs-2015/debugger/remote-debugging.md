@@ -44,7 +44,7 @@ Você pode baixar as ferramentas remotas diretamente no dispositivo ou servidor 
     |-|-|-|
     |Visual Studio 2015 Atualização 3|[Ferramentas remotas](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015)|Se solicitado, ingresse no grupo de Visual Studio Dev Essentials gratuito ou você pode apenas entrar com uma assinatura válida do Visual Studio. Em seguida, abra novamente o link, se necessário. Sempre baixar a versão correspondente ao sistema operacional do dispositivo (versão x86, x64 ou ARM)|
     |Visual Studio 2015 (mais antigo)|[Ferramentas remotas](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015)|Se solicitado, ingresse no grupo de Visual Studio Dev Essentials gratuito ou você pode apenas entrar com uma assinatura válida do Visual Studio. Em seguida, abra novamente o link, se necessário.|
-    |Visual Studio 2013|[Ferramentas remotas](https://msdn.microsoft.com/library/bt727f1t(v=vs.120).aspx#BKMK_Installing_the_Remote_Tools)|Página de download na documentação do Visual Studio 2013|
+    |{1&gt;{2&gt;Visual Studio 2013&lt;2}&lt;1}|[Ferramentas remotas](https://msdn.microsoft.com/library/bt727f1t(v=vs.120).aspx#BKMK_Installing_the_Remote_Tools)|Página de download na documentação do Visual Studio 2013|
     |Visual Studio 2012|[Ferramentas remotas](https://msdn.microsoft.com/library/bt727f1t(v=vs.110).aspx#BKMK_Installing_the_Remote_Tools)|Página de download na documentação do Visual Studio 2012|
   
 2. Na página de download, escolha a versão das ferramentas que corresponde ao seu sistema operacional (versão x86, x64 ou ARM) e baixe as ferramentas remotas.
@@ -166,7 +166,7 @@ Você pode encontrar o depurador remoto (**msvsmon. exe**) em um computador com 
   
 6. Se o serviço puder ser iniciado, você verá **que concluiu com êxito o assistente de configuração de depurador remoto do Visual Studio**. Se o serviço não puder ser iniciado, você verá **falha ao concluir o assistente de configuração de depurador remoto do Visual Studio**. A página também fornece algumas dicas a serem seguidas para que o serviço seja iniciado.  
   
-7. Clique em **Finalizar**.  
+7. Clique em **Concluir**.  
   
    Neste ponto, o depurador remoto está sendo executado como um serviço. Você pode verificar isso indo até **painel de controle/serviços** e procurando pelo **depurador remoto do Visual Studio 2015**.  
   
