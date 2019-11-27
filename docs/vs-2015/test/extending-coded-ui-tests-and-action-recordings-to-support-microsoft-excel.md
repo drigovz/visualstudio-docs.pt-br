@@ -28,7 +28,7 @@ A estrutura de teste para testes de IU codificados e gravações da ação não 
 
   ![Arquitetura de teste da interface do usuário](../test/media/ui-testarch.png "UI_TestArch") Visão geral da arquitetura
 
-## <a name="download-the-sample"></a>Baixar a amostra
+## <a name="download-the-sample"></a>Baixar o exemplo
  A amostra consiste de quatro projetos na solução `CodedUIExtensibilitySample.sln`:
 
 - CodedUIextensibilitySample

@@ -67,7 +67,7 @@ Para evitar bugs de simultaneidade em seu programa multithread, sempre siga uma 
 ## <a name="locking-annotations"></a>Anotações de bloqueio  
  A tabela a seguir lista as anotações de bloqueio.  
   
-|Anotação|Descrição|  
+|Annotation|Descrição|  
 |----------------|-----------------|  
 |`_Acquires_exclusive_lock_(expr)`|Anota uma função e indica que, no estado de post, a função é incrementada por uma contagem de bloqueios exclusiva do objeto de bloqueio nomeado por `expr`.|  
 |`_Acquires_lock_(expr)`|Anota uma função e indica que, no estado de post, a função é incrementada por uma contagem de bloqueios do objeto de bloqueio nomeado por `expr`.|  
@@ -91,7 +91,7 @@ Para evitar bugs de simultaneidade em seu programa multithread, sempre siga uma 
 ## <a name="sal-intrinsics-for-unexposed-locking-objects"></a>SAL intrínseco para objetos de bloqueio não expostos  
  Determinados objetos de bloqueio não são expostos pela implementação das funções de bloqueio associadas.  A tabela a seguir lista as variáveis intrínsecas SAL que habilitam anotações em funções que operam nesses objetos de bloqueio não expostos.  
   
-|Anotação|Descrição|  
+|Annotation|Descrição|  
 |----------------|-----------------|  
 |`_Global_cancel_spin_lock_`|Descreve o cancelamento do bloqueio de rotação.|  
 |`_Global_critical_region_`|Descreve a região crítica.|  
@@ -101,7 +101,7 @@ Para evitar bugs de simultaneidade em seu programa multithread, sempre siga uma 
 ## <a name="shared-data-access-annotations"></a>Anotações de acesso a dados compartilhados  
  A tabela a seguir lista as anotações para acesso a dados compartilhados.  
   
-|Anotação|Descrição|  
+|Annotation|Descrição|  
 |----------------|-----------------|  
 |`_Guarded_by_(expr)`|Anota uma variável e indica que sempre que a variável é acessada, a contagem de bloqueios do objeto de bloqueio nomeado por `expr` é pelo menos uma.|  
 |`_Interlocked_`|Anota uma variável e é equivalente a `_Guarded_by_(_Global_interlock_)`.|  

@@ -19,11 +19,11 @@ ms.lasthandoff: 11/21/2019
 ms.locfileid: "74300944"
 ---
 # <a name="how-to-use-the-expression-editor"></a>Como: Use o editor de expressão
-O editor de expressão é um controle de [!INCLUDE[wfd1](../includes/wfd1-md.md)] que é usado em muitas atividades de fluxo de trabalho como um meio de inserir e avaliar dessas expressões. O editor de expressão fornece IDE completo que a experiência de edição IntelliSense, que inclui coloração, ParamInfo, squiggles de erro, entre outros recursos. O compilador valida a expressão após está conectado. Se a expressão é inválido, um ícone de erro é exibido. O editor também pode ser aberto como uma caixa de diálogo **Editor de Expressão** .
+O editor de expressão é um controle de [!INCLUDE[wfd1](../includes/wfd1-md.md)] que é usado em muitas atividades de fluxo de trabalho como um meio de inserir e avaliar dessas expressões. O editor de expressão fornece IDE completo que a experiência de edição IntelliSense, que inclui coloração, ParamInfo, squiggles de erro, entre outros recursos. O compilador valida a expressão após está conectado. Se a expressão é inválido, um ícone de erro é exibido. O editor também pode ser aberto como uma caixa de diálogo **Editor de expressão** .
 
  As expressões são valores ou código literal de [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] associado aos argumentos ou propriedades. Elas contêm elementos de valor (por exemplo, variáveis, constantes, literais, Propriedades) que são combinadas com operações para gerar um novo valor. As expressões são escritas usando a sintaxe de VB.NET mesmo se o aplicativo estiver em um programa usando C#. Isso significa que a capitalização não importa, a comparação é executada usando um único sinal de igual ("=") em vez de ("= ="), os operadores boolianos são as palavras "and" e "or", em vez dos&#124;&#124;símbolos "& &" e "", e **nada** é usado em vez de **NULL**. Para obter mais informações sobre expressões e operadores no [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] e para alguns exemplos, consulte [operadores e expressões em Visual Basic](https://go.microsoft.com/fwlink/?LinkId=186818).
 
- {1&gt;Editor de Expressão&lt;1} Se comporta como segue:
+ O **Editor de expressões** se comporta da seguinte maneira:
 
 - Se o foco não estiver no editor de expressão, parece um controle normal TextBlock.
 
@@ -51,7 +51,7 @@ O editor de expressão é um controle de [!INCLUDE[wfd1](../includes/wfd1-md.md)
 
      Quando você terminar, selecione uma região ou uma área fora do editor de expressão para deslocar o foco a outra parte do designer. Isso fará com que o compilador validar a expressão como descrito anteriormente.
 
-     Entrada de maneira alternativa/edição uma expressão é clique nas reticências ao lado do nome da propriedade na grade de propriedade. Isso abrirá **Editor de Expressão** como a caixa de diálogo.
+     Entrada de maneira alternativa/edição uma expressão é clique nas reticências ao lado do nome da propriedade na grade de propriedade. Isso abrirá o **Editor de expressão** como caixa de diálogo.
 
 ## <a name="see-also"></a>Consulte também
  <xref:System.Activities.Presentation.View.ExpressionTextBox>

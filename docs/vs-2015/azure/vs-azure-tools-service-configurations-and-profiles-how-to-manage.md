@@ -27,7 +27,7 @@ Você pode criar várias configurações de serviço a usar para cada um dos seu
 
 Você pode adicionar, excluir, renomear e modificar essas configurações de serviço com base em suas necessidades. Você pode gerenciar essas configurações de serviço do Visual Studio, conforme mostrado na ilustração a seguir.
 
-![Gerenciar Configurações de Serviço](./media/vs-azure-tools-service-configurations-and-profiles-how-to-manage/manage-service-config.png)
+![Gerenciar configurações de serviço](./media/vs-azure-tools-service-configurations-and-profiles-how-to-manage/manage-service-config.png)
 
 Você também pode abrir a caixa de diálogo **Gerenciar Configurações** das páginas de propriedades da função. Para abrir as propriedades de uma função em seu projeto do Azure, abra o menu de atalho para essa função e, em seguida, escolha **Propriedades**. Na guia **Configurações**, expanda a lista **Configuração de Serviço** e selecione **Gerenciar** para abrir a caixa de diálogo **Gerenciar Configurações**.
 
@@ -74,7 +74,7 @@ Quando você executa o assistente pela primeira vez, um perfil padrão é criado
    
     A caixa de diálogo **Gerenciar perfis** é exibida, como mostra a ilustração a seguir.
    
-    ![Caixa de Diálogo Gerenciar Perfis](./media/vs-azure-tools-service-configurations-and-profiles-how-to-manage/manage-profiles.png)
+    ![Caixa de diálogo Gerenciar Perfis](./media/vs-azure-tools-service-configurations-and-profiles-how-to-manage/manage-profiles.png)
 4. Na lista **Nome**, escolha um perfil e selecione **Criar Cópia**.
 5. Escolha o botão **Fechar** .
    

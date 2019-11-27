@@ -43,9 +43,9 @@ Você pode implantar o Visual Studio 2015 em uma rede desde que cada computador 
 |Status da instalação|Reinicialização não necessária|Reinicialização necessária|Descrição|  
 |------------------|--------------------------|----------------------|-----------------|  
 |Êxito|0x00000000 [0]|0x00000bc2 [3010]|Instalação bem-sucedida.|  
-|Bloco|0x80044000 [-2147205120]|0x8004C000 [-2147172352]|Se o único bloco a ser relatado for "Reinicialização Pendente", o valor retornado será o valor Reinicialização Incompleta Necessária (0x80048bc7).|  
-|Cancelar|0x00000642 [1602]|0x80048642 [-2147187134]|Quando o valor de reinicialização é retornado, o código de retorno é 1602.|  
-|Reinicialização incompleta necessária|N/D|0x80048bc7 [-2147185721]|A reinicialização é necessária antes de continuar a instalação.|  
+|Bloquear|0x80044000 [-2147205120]|0x8004C000 [-2147172352]|Se o único bloco a ser relatado for "Reinicialização Pendente", o valor retornado será o valor Reinicialização Incompleta Necessária (0x80048bc7).|  
+|Cancel|0x00000642 [1602]|0x80048642 [-2147187134]|Quando o valor de reinicialização é retornado, o código de retorno é 1602.|  
+|Reinicialização incompleta necessária|{1&gt;N/A&lt;1}|0x80048bc7 [-2147185721]|A reinicialização é necessária antes de continuar a instalação.|  
 |Falha|0x00000643 [1603]|0x80048643 [-2147187133]|Quando o valor de reinicialização é retornado, o código de retorno é 1603.|  
   
 ## <a name="interactive-administrator-installer"></a>Instalador de administrador interativo  

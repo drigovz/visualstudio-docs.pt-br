@@ -30,7 +30,7 @@ ms.locfileid: "74300889"
 
 2. [Atualize o número de versão do pacote em Package.tt](#version). Você precisará fazer isso sempre que alterar o Commands.vsct
 
-3. {1&gt;Gravar métodos na classe CommandSet&lt;1} para tornar o comando visível e definir o que deseja que o comando faça.
+3. [Escreva métodos na classe commandSet](#CommandSet) para tornar o comando visível e definir o que você deseja que o comando faça.
 
    Para obter exemplos, consulte o [site do SDK de visualização e modelagem](https://go.microsoft.com/fwlink/?LinkID=185579).
 
@@ -61,7 +61,7 @@ ms.locfileid: "74300889"
 
 #### <a name="to-add-the-command"></a>Para adicionar o comando
 
-1. No **Gerenciador de Soluções**, no projeto **DslPackage**, abra Commands.vsct.
+1. No **Gerenciador de soluções**, no projeto **DslPackage** , abra Commands. vsct.
 
 2. No elemento `Commands`, defina um ou mais botões e um grupo. Um *botão* é um item no menu. Um *grupo* é uma seção no menu. Para definir esses itens, adicione os seguintes elementos:
 
@@ -117,7 +117,7 @@ ms.locfileid: "74300889"
     </Symbols>
     ```
 
-5. Substitua `{000...000}` por um GUID que identifica seus grupos e itens de menu. Para obter um novo GUID, use a ferramenta **Criar GUID** no menu **Ferramentas**.
+5. Substitua `{000...000}` por um GUID que identifica seus grupos e itens de menu. Para obter um novo GUID, use a ferramenta **Criar GUID** no menu **ferramentas** .
 
     > [!NOTE]
     > Se você adicionar mais grupos ou itens de menu, poderá usar o mesmo GUID. No entanto, você deve usar novos valores para o `IDSymbols`.
@@ -139,7 +139,7 @@ ms.locfileid: "74300889"
 
 #### <a name="to-update-the-packagett-file"></a>Para atualizar o arquivo Package.tt
 
-1. Em **Gerenciador de Soluções**, no projeto **DslPackage**, na pasta **GeneratedCode**, abra o arquivo Package.tt.
+1. No **Gerenciador de soluções**, no projeto **DslPackage** , na pasta **GeneratedCode** , abra o arquivo Package.tt.
 
 2. Localize o atributo `ProvideMenuResource`.
 
@@ -324,7 +324,7 @@ protected override IList<MenuCommand> GetMenuCommands()
 
 #### <a name="to-exercise-the-command"></a>Para exercitar o comando
 
-1. Na barra de ferramentas do **Gerenciador de Soluções**, clique em **Transformar Todos os Modelos**.
+1. Na barra de ferramentas **Gerenciador de soluções** , clique em **transformar todos os modelos**.
 
 2. Pressione **F5** para recompilar a solução e iniciar a depuração da linguagem específica do domínio na compilação experimental.
 
@@ -339,11 +339,11 @@ protected override IList<MenuCommand> GetMenuCommands()
 
 - Verifique se a sua amostra experimental tem a extensão de nome de arquivo correta para esta DSL. Para verificar a extensão do nome do arquivo, abra DslDefinition.dsl na instância principal do Visual Studio. Em seguida, no Gerenciador de DSL, clique com o botão direito do mouse no nó Editor e clique em Propriedades. Na janela Propriedades, examine a propriedade FileExtension.
 
-- Você [incrementou o número de versão do pacote](#version)?
+- Você [incrementa o número de versão do pacote](#version)?
 
 - Defina um ponto de interrupção no início do método OnStatus. Ele deve ser interrompido quando você clicar com o botão direito do mouse em qualquer parte do diagrama.
 
-   {1&gt;O método OnStatus não é chamado&lt;1}:
+   O **método OnStatus não é chamado**:
 
   - Verifique se os GUIDs e IDs em seu código CommandSet correspondem aos presentes na seção Símbolos de Commands.vsct.
 

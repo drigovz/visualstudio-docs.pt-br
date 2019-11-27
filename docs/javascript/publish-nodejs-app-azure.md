@@ -36,7 +36,7 @@ Neste tutorial, você aprenderá como:
 > * Criar um Serviço de Aplicativo do Linux no Azure
 > * Implantar no Linux
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Pré-requisitos
 
 * Você precisa ter o Visual Studio instalado e a carga de trabalho de desenvolvimento de Node.js.
 
@@ -57,7 +57,7 @@ Neste tutorial, você aprenderá como:
 
 ## <a name="create-a-nodejs-project-to-run-in-azure"></a>Criar um projeto Node.js para execução no Azure
 
-1. Abra o Visual Studio.
+1. {1&gt;Abra o Visual Studio.&lt;1}
 
 1. Criar um novo aplicativo TypeScript Express.
 
@@ -65,11 +65,11 @@ Neste tutorial, você aprenderá como:
     Pressione **Esc** para fechar a janela de início. Digite **Ctrl + Q** para abrir a caixa de pesquisa, digite **Node.js** e, em seguida, escolha **Criar um novo Aplicativo Básico Azure Node.js Express 4** (TypeScript). Na caixa de diálogo que aparece, escolha **Criar**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Na barra de menus superior, escolha **Arquivo** > **Novo** > **Projeto**. No painel esquerdo da caixa de diálogo **Novo Projeto**, expanda **TypeScript** e escolha **Node.js**. No painel central, escolha **Aplicativo Azure Node.js Express 4 básico** e, em seguida, **OK**.
+    Na barra de menus superior, escolha **Arquivo** > **Novo** > **Projeto**. No painel esquerdo da caixa de diálogo **Novo Projeto**, expanda **TypeScript** e escolha **Node.js**. No painel central, escolha **Aplicativo Azure Node.js Express 4 básico** e, em seguida, escolha **OK**.
 
     ![Criar um aplicativo TypeScript Express](../javascript/media/azure-ts-express-app.png)
     ::: moniker-end
-    Se você não vir o modelo de projeto **Aplicativo Azure Node.js Express 4 básico**, adicione a carga de trabalho de **desenvolvimento do Node.js**. Confira instruções detalhadas nos [Pré-requisitos](#prerequisites).
+    Se não vir o modelo de projeto **Aplicativo Azure Node.js Express 4 básico**, você deverá adicionar a carga de trabalho de **desenvolvimento do Node.js**. Confira instruções detalhadas nos. [Pré-requisitos](#prerequisites).
 
     O Visual Studio criará o projeto e o abrirá no Gerenciador de Soluções (painel direito).
 
@@ -125,12 +125,12 @@ Para configurar o GitHub para o Visual Studio:
 
 6. Após a implantação, acesse a seção **Configurações de aplicativo** e adicione uma configuração com o nome `SCM_SCRIPT_GENERATOR_ARGS` e o valor `--node`.
 
-    ![Configurações de aplicativo](../javascript/media/azure-script-generator-args.png)
+    ![Configurações do aplicativo](../javascript/media/azure-script-generator-args.png)
 
     > [!WARNING]
     > O processo de implantação do Serviço de Aplicativo usa um conjunto de heurísticas para determinar qual tipo de aplicativo ele deve tentar executar. Se um arquivo *.sln* for detectado no conteúdo implantado, ele presumirá que um projeto baseado no MSBuild está sendo implantado. A configuração adicionada acima substitui essa lógica e especifica explicitamente que se trata de um aplicativo Node.js. Sem essa configuração, o aplicativo Node.js não será implantado se o arquivo *.sln* fizer parte do repositório que está sendo implantado no Serviço de Aplicativo.
 
-7. Under **Application settings**, add another setting with a name of `WEBSITE_NODE_DEFAULT_VERSION` and a value of `8.9.0`.
+7. Em **configurações do aplicativo**, adicione outra configuração com um nome de `WEBSITE_NODE_DEFAULT_VERSION` e um valor de `8.9.0`.
 
 8. Após a implantação, abra o Serviço de Aplicativo e selecione **Opções de implantação**.
 

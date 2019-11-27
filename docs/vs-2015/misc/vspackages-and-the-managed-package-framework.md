@@ -35,7 +35,7 @@ Você pode reduzir o tempo de desenvolvimento criando um VSPackage com as classe
  [Classes da estrutura de pacote gerenciado](../misc/managed-package-framework-classes.md)  
  Descreve e lista os namespaces e arquivos DLL da classe MPF.  
   
-## <a name="related-sections"></a>Seções relacionadas  
+## <a name="related-sections"></a>Seções Relacionadas  
  [Walkthrough: Criando um comando de menu usando o modelo de pacote do Visual Studio](https://msdn.microsoft.com/library/1985fa7d-aad4-4866-b356-a125b6a246de)  
  Explica como criar um VSPackage gerenciado.  
   

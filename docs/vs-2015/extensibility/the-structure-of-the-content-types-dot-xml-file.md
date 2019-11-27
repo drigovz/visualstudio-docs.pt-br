@@ -75,7 +75,7 @@ Contém informações sobre os tipos de conteúdo em um pacote VSIX. O Visual St
 |htm ou HTML|texto/HTML|  
 |RTF|aplicativo/RTF|  
 |pdf|aplicativo/PDF|  
-|Gifs|imagem/GIF|  
+|Gifs|imagem/gif|  
 |jpg ou JPEG|imagem/jpg|  
 |formato|imagem/TIFF|  
 |vsix|aplicativo/zip|  

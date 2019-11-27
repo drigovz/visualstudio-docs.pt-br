@@ -28,8 +28,8 @@ Para obter a documentação mais recente sobre o Visual Studio, consulte [DA0001
   
 |||  
 |-|-|  
-|ID de regra|DA0001|  
-|Categoria|Uso do .NET Framework|  
+|Id da Regra|DA0001|  
+|Category|Uso do .NET Framework|  
 |Métodos de criação de perfil|Amostragem<br /><br /> Instrumentação|  
 |Mensagem|Considere o uso de StringBuilder para concatenações de cadeias de caracteres|  
 |Tipo de mensagem|Aviso|  

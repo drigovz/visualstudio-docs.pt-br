@@ -262,7 +262,7 @@ No Visual Studio, você pode desenhar um *diagrama de sequência* para mostrar u
 |**Para essa finalidade**|**Usar este formato**|
 |--------------------------|-------------------------|
 |Instância anônima de um tipo.<br /><br /> Use-a se você tiver apenas uma linha da vida de cada tipo.|*typeName*|
-|Instância nomeada de um tipo.<br /><br /> Use esta se desejar mostrar uma sequência que envolva mais de uma instância do mesmo tipo.|*objectName*:*typeName*|
+|Instância nomeada de um tipo.<br /><br /> Use esta se desejar mostrar uma sequência que envolva mais de uma instância do mesmo tipo.|*objectname*:*TypeName*|
 
 ### <a name="creating-lifelines-from-types"></a>Criando linhas de vida de tipos
  Você pode criar novas linhas de vida de classes que você já definiu, por exemplo, em um diagrama de classe.

@@ -37,35 +37,35 @@ Na janela **Propriedades** , caixas de diálogo ou designers, como o designer de
 
 #### <a name="to-select-a-value-or-reference-type-from-the-type-browser"></a>Para selecionar um valor ou uma referência digite de navegador de tipo
 
-1. Na caixa de **Nome de Tipo** , digite o nome do tipo que você deseja usar.
+1. Na caixa **nome do tipo** , digite o nome do tipo que você deseja usar.
 
-2. Realize um dos seguintes procedimentos:
+2. Siga um destes procedimentos:
 
-    - Uma vez que o nome do tipo que você deseja usar aparece na árvore na caixa de **Nome de Tipo** , clique duas vezes no tipo para selecioná-lo.
+    - Depois que o nome do tipo que você deseja usar aparecer na árvore na caixa nome do **tipo** , clique duas vezes no tipo para selecioná-lo.
 
-    - O tipo suficiente caracteres na caixa de **Nome de Tipo** para identificar exclusivamente o tipo que você deseja usar e então pressione ENTER para selecionar o tipo
+    - Digite caracteres suficientes na caixa **nome do tipo** para identificar exclusivamente o tipo que você deseja usar e pressione ENTER para selecionar o tipo
 
 #### <a name="to-select-a-generic-type-from-the-type-browser"></a>Para selecionar um tipo genérico de navegador de tipo
 
-1. Na caixa de **Nome de Tipo** , digite o nome do tipo que você deseja usar.
+1. Na caixa **nome do tipo** , digite o nome do tipo que você deseja usar.
 
-2. Uma vez que o nome do tipo que você deseja usar aparece na árvore na caixa de **Nome de Tipo** , clique no tipo para selecioná-lo para causar caixas suspensas aparece.
+2. Depois que o nome do tipo que você deseja usar aparecer na árvore na caixa nome do **tipo** , clique no tipo para selecioná-lo para fazer com que as caixas suspensas sejam exibidas.
 
-     Selecione o tipo que você deseja usar para fechar o genérico caixas suspensas, e clique em **OK**.
+     Selecione o tipo que você deseja usar para fechar o genérico nas caixas suspensas e clique em **OK**.
 
 ## <a name="types-displayed-in-the-type-browser"></a>Tipos exibidos no navegador de tipo
- Os tipos exibidos no navegador do tipo podem variar dependendo de como o navegador de tipo foi iniciado. Se o navegador de tipo foi iniciado de um projeto de fluxo de trabalho dentro de **vs2010**, por padrão qualquer tipo em assemblies referenciados e referenciou projetos são mostrados. Se o navegador de tipo foi iniciado fora de um sistema do projeto de **vs2010** (como em um aplicativo de fluxo de trabalho rehosted ou em um arquivo autônomo de fluxo de trabalho), então os tipos de todos os assemblies carregados em Appdomain são mostradas por padrão.
+ Os tipos exibidos no navegador do tipo podem variar dependendo de como o navegador de tipo foi iniciado. Se o navegador de tipos foi iniciado a partir de um projeto de fluxo de trabalho dentro de **VS2010**, por padrão, todos os tipos nos assemblies referenciados e nos projetos referenciados são mostrados. Se o navegador de tipos tiver sido iniciado fora de um sistema de projeto **VS2010** (como em um aplicativo de fluxo de trabalho rehospedado ou em um arquivo de fluxo de trabalho autônomo), por padrão, os tipos de todos os assemblies carregados no AppDomain serão mostrados.
 
  No navegador de tipo pode ser filtro por desenvolvedores do designer de atividade. Para quaisquer atividades determinada, você pode ver apenas um subconjunto dos tipos. Por exemplo, na atividade de <xref:System.Activities.Statements.TryCatch> , somente os tipos derivados de <xref:System.Exception> são mostrados no navegador do tipo.
 
 ## <a name="filtering-search-results-in-the-type-browser"></a>Resultados de pesquisa de filtragem no navegador de tipo
- A lista de tipos na caixa de **Nome de Tipo** obtém mais curto medida que você digita mais caracteres para encontrar uma correspondência. Somente tipos cujo nome totalmente qualificado começa com a cadeia de caracteres que você digitou ou tipos cujo nome curto começa com a cadeia de caracteres que você digitou aparecem na lista filtrada.
+ A lista de tipos na caixa **nome do tipo** fica mais curta à medida que você digita mais caracteres para encontrar uma correspondência. Somente tipos cujo nome totalmente qualificado começa com a cadeia de caracteres que você digitou ou tipos cujo nome curto começa com a cadeia de caracteres que você digitou aparecem na lista filtrada.
 
  Por exemplo:
 
-1. Digitando correspondências **mas não**de <xref:System.OperationCanceledException>Operação<xref:System.InvalidOperationException> . Para corresponder <xref:System.InvalidOperationException>, inicie digite System.I ou inválido.
+1. A **operação** de digitação corresponde a <xref:System.OperationCanceledException>, mas não <xref:System.InvalidOperationException>. Para corresponder <xref:System.InvalidOperationException>, inicie digite System.I ou inválido.
 
-2. Digitando correspondências **de**Genérica<xref:System.GenericUriParser> mas não tipos no namespace <xref:System.Collections.Generic> . Para procurar por tipos no namespace <xref:System.Collections.Generic> , digite o nome totalmente qualificado do namespace.
+2. Digitar **Generic** corresponde a <xref:System.GenericUriParser> mas não a tipos no namespace <xref:System.Collections.Generic>. Para procurar por tipos no namespace <xref:System.Collections.Generic> , digite o nome totalmente qualificado do namespace.
 
 ## <a name="selecting-a-service-contract-using-the-type-browser-dialog"></a>Selecionando um contrato de serviço usando a caixa de diálogo de navegador de tipo
  Ao selecionar um tipo de contrato de serviço, o navegador do tipo mostra somente os tipos que têm o atributo de <xref:System.ServiceModel.ServiceContractAttribute> .

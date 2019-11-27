@@ -23,7 +23,7 @@ ms.locfileid: "74302955"
 # <a name="legacy-workflow-activities"></a>Atividades herdados de fluxo de trabalho
 o [!INCLUDE[wf](../includes/wf-md.md)] inclui um conjunto padrão de atividades que fornecem funcionalidade para fluxo de controle, condições, manipulação de eventos, gerenciamento de estado e comunicação com aplicativos e serviços. Ao criar fluxos de trabalho, você pode usar sistema forneceu as atividades que são fornecidas por [!INCLUDE[wfd1](../includes/wfd1-md.md)], ou você pode criar suas próprias atividades personalizados.
 
- A tabela a seguir lista o conjunto de atividade de para fora da estrutura de [!INCLUDE[wf2](../includes/wf2-md.md)] . Muitas, mas não todas, essas atividades são representadas pelo designer de atividade que podem ser acessados de **Caixa de Ferramentas** de [!INCLUDE[wfd2](../includes/wfd2-md.md)]. Para criar uma atividade, arraste o designer de **Caixa de Ferramentas** e solte-o na superfície de design.
+ A tabela a seguir lista o conjunto de atividade de para fora da estrutura de [!INCLUDE[wf2](../includes/wf2-md.md)] . Muitas dessas atividades, mas não todas, são representadas por designers de atividade que podem ser acessadas na **caixa de ferramentas** do [!INCLUDE[wfd2](../includes/wfd2-md.md)]. Para criar uma atividade, arraste seu designer da **caixa de ferramentas** e solte-a na superfície de design.
 
 |Atividade|Descrição|
 |--------------|-----------------|

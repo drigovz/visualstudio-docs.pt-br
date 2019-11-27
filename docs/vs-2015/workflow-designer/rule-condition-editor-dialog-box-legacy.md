@@ -21,9 +21,9 @@ ms.lasthandoff: 11/21/2019
 ms.locfileid: "74302851"
 ---
 # <a name="rule-condition-editor-dialog-box-legacy"></a>Regra a caixa de diálogo editor de condição (o legados)
-Este tópico descreve como usar a caixa de diálogo **Editor de Condição de Regra** em [!INCLUDE[wfd1](../includes/wfd1-md.md)]herdado. Use [!INCLUDE[wfd2](../includes/wfd2-md.md)] herdado quando você precisa definir como alvo [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] ou [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].
+Este tópico descreve como usar a caixa de diálogo **Editor de condição de regra** no [!INCLUDE[wfd1](../includes/wfd1-md.md)]herdado. Use [!INCLUDE[wfd2](../includes/wfd2-md.md)] herdado quando você precisa definir como alvo [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] ou [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].
 
- Você pode criar e modificar condições declarativas de regra usando a caixa de diálogo **Editor de Condição de Regra** . Essas condições de regras são expostas como propriedades nas seguintes atividades de para fora da caixa do Windows Workflow Foundation:
+ Você cria e modifica condições declarativas de regra usando a caixa de diálogo **Editor de condição de regra** . Essas condições de regras são expostas como propriedades nas seguintes atividades de para fora da caixa do Windows Workflow Foundation:
 
 - [ConditionedActivityGroup](https://go.microsoft.com/fwlink?LinkID=65017)
 
@@ -39,12 +39,12 @@ Este tópico descreve como usar a caixa de diálogo **Editor de Condição de Re
 
   Você acessa a caixa de diálogo **Editor de condição de regra** usando a caixa de [diálogo Selecionar condição (herdada)](../workflow-designer/select-condition-dialog-box-legacy.md).
 
-  A tabela a seguir descreve os elementos de (UI) de interface de usuário da caixa de diálogo **Editor de Condição de Regra** .
+  A tabela a seguir descreve os elementos da interface do usuário da caixa de diálogo **Editor de condição de regra** .
 
-|Elemento da Interface do Usuário|Descrição|
+|Elemento da interface|Descrição|
 |----------------|-----------------|
 |**Problema**|Insira a expressão para a condição de regra.|
-|{1&gt;OK&lt;1}|Clique para salvar a condição de regra.|
+|**Okey**|Clique para salvar a condição de regra.|
 
 ## <a name="entering-condition-expressions"></a>Inserindo expressões de condição
  Expressões de condição estão inseridos como texto. Você pode digitar **isso.** no editor para fazer referência a campos, propriedades e métodos usados no fluxo de trabalho, usando um menu semelhante ao IntelliSense. Ou você pode digitar um nome de membro de fluxo de trabalho diretamente. Você pode adicionar operadores lógicos a condição, como AND, OU, e NOT. Você também pode adicionar predicados. Um predicado é um operador binário e dois operandos. Os operadores binários com suporte são **==** , **>** , **\<** , **>=** e **<=** . Os operandos são suportados valor constante, função aritmética, e membros públicos o escopo.

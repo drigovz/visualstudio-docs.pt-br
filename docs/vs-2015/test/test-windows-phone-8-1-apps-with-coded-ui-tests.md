@@ -70,7 +70,7 @@ Use este passo a passo para criar testes de interface do usuário para aplicativ
 
      ![Implantar o aplicativo Windows Phone](../test/media/cuit-phone-deploy.png "CUIT_Phone_Deploy")
 
-     O emulador é iniciado. Agora, o aplicativo está disponível para testes.
+     {1&gt;O emulador é iniciado.&lt;1} Agora, o aplicativo está disponível para testes.
 
      ![Aplicativo implantado no emulador](../test/media/cuit-phone-deployed.png "CUIT_Phone_Deployed")
 
@@ -88,7 +88,7 @@ Use este passo a passo para criar testes de interface do usuário para aplicativ
 
     ![Gerar teste de interface de usuário codificado&#45;usando a ferramenta de mira.](../test/media/cuit-phone-howgencodedialog.png "CUIT_Phone_HowGenCodeDialog")
 
-3. Use a ferramenta de fios para selecionar o aplicativo. Em seguida, copie o valor da propriedade **AutomationId** do aplicativo, que será usado depois para iniciar o aplicativo no teste.
+3. Use a ferramenta de fios para selecionar o aplicativo. Em seguida, copie o valor da propriedade **AutomationId** do aplicativo, que será usado posteriormente para iniciar o aplicativo no teste.
 
     ![Copiar o valor de AutomationId do aplicativo](../test/media/cuit-phone-getautomationid.png "CUIT_Phone_GetAutomationId")
 
@@ -345,7 +345,7 @@ public void DataDrivingDemo_MyTestMethod(int x, int y)
  **R**: Não. O compilador não os detectará.
 
 ### <a name="q-can-i-use-the-coded-ui-test-builder-to-map-controls-using-a-physical-phone-device"></a>P: Posso usar o compilador de teste de IU codificado para mapear controles usando um dispositivo telefônico físico?
- {1&gt;R&lt;1}: Não. O compilador só pode mapear os elementos da interface de usuário se o aplicativo tiver sido implantado no emulador.
+ **R**: Não. O compilador poderá mapear elementos de interface do usuário apenas se o aplicativo tiver sido implantado no emulador.
 
 ### <a name="q-why-cant-i-modify-the-code-in-the-uimapdesigner-file"></a>P: Por que não posso modificar o código do arquivo UIMap.Designer?
  **R**: Todas as alterações de código feitas no arquivo UIMapDesigner.cs serão substituídas sempre que você gerenciar o código usando o UIMap – Construtor de Teste de IU Codificado. Se você tiver de modificar um método gravado, copie-o para o arquivo UIMap.cs e renomeie-o. O arquivo UIMap.cs pode ser usado para substituir métodos e propriedades no arquivo UIMapDesigner.cs. Você deve remover a referência para o método original no arquivo Coded UITest.cs e substituí-la pelo nome do método renomeado.
@@ -377,8 +377,8 @@ public void DataDrivingDemo_MyTestMethod(int x, int y)
 |Destino da execução de testes|Computador local ou remoto. Você pode especificar os computadores remotos ao usar um caso de teste automatizado para executar os testes. Consulte [Automatizar um caso de teste no Microsoft Test Manager](https://msdn.microsoft.com/library/4e02568b-9cde-47cc-b41c-82726c177e42).|Emulador ou dispositivo. Consulte [P: Os testes só podem ser executados no emulador ou também posso usar um dispositivo físico?](#TestingPhoneAppsCodedUI_EmulatorDevice) neste tópico.|
 |Executar da linha de comando|Não é necessário usar o arquivo de configurações para especificar o destino.|O arquivo runsettings necessário para especificar o destino.|
 |Classes especializadas para controles do shell|[DirectUIControl](/previous-versions/dn248208(v=vs.140))|<xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl>|
-|Controle WebView em um aplicativo XAML|Compatível se você usa classes Html* especializadas para interagir com elementos HTML. Consulte <xref:Microsoft.VisualStudio.TestTools.UITesting.HtmlControls>.|Não há suporte.|
-|Executar testes automatizados do MTM|Com suporte.|Não há suporte.|
+|Controle WebView em um aplicativo XAML|Compatível se você usa classes Html* especializadas para interagir com elementos HTML. Consulte <xref:Microsoft.VisualStudio.TestTools.UITesting.HtmlControls>.|{1&gt;Sem suporte.&lt;1}|
+|Executar testes automatizados do MTM|Com suporte.|{1&gt;Sem suporte.&lt;1}|
 |Testes direcionados a dados|Consulte [Testes controlados por dados](../test/creating-a-data-driven-coded-ui-test.md) para obter informações sobre como usar fontes de dados externas e o atributo DataSource em um método de teste.|Os dados são especificados e embutidos com o uso do atributo DataRow em um método de teste. Consulte [Usar testes de IU codificados e controlados por dados em aplicativos Windows Phone](#TestingPhoneAppsCodedUI_DataDriven) neste tópico.|
 
 ## <a name="external-resources"></a>Recursos externos

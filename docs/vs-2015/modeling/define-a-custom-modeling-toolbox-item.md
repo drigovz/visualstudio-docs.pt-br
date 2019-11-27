@@ -129,7 +129,7 @@ Para facilitar a criação de um elemento ou grupo de elementos de acordo com um
 |---------------|-------------|
 |displayName|O nome do item da caixa de ferramentas.|
 |tabName|A guia caixa de ferramentas na qual o item deve aparecer. Você pode especificar o nome da guia regular para este tipo de diagrama ou um nome separado.|
-|imagem|O local do arquivo de bitmap ( **. bmp**), que deve ter altura e largura de 16 e uma intensidade de cor de 24 bits.|
+|image|O local do arquivo de bitmap ( **. bmp**), que deve ter altura e largura de 16 e uma intensidade de cor de 24 bits.|
 |f1Keyword|A palavra-chave que localiza um tópico da ajuda.|
 |dessa|Uma dica de ferramentas para esta ferramenta.|
 
@@ -191,7 +191,7 @@ Para facilitar a criação de um elemento ou grupo de elementos de acordo com um
 
     - **Caminho** = seu arquivo **. tbxinfo** , por exemplo, **MyTools. tbxinfo**
 
-8. Compile o projeto.
+8. Crie o projeto.
 
 9. **Para verificar se a extensão funciona**, pressione F5. A instância experimental do Visual Studio é iniciada.
 

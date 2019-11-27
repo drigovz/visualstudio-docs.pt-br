@@ -96,7 +96,7 @@ Neste tutorial, você criará um aplicativo WPF que exibe dados de tabelas de ba
 
       - ou -
 
-   - Clique em **Nova Conexão** e crie uma conexão com o banco de dados AdventureWorksLT.
+   - Clique em **nova conexão** e crie uma conexão com o banco de dados AdventureWorksLT.
 
      Verifique se a opção **salvar configurações de conexão de entidade na App. config como** está selecionada e clique em **Avançar**.
 
@@ -106,7 +106,7 @@ Neste tutorial, você criará um aplicativo WPF que exibe dados de tabelas de ba
 
    - **SalesOrderHeader**
 
-7. Clique em **Finalizar**.
+7. Clique em **Concluir**.
 
 8. Compile o projeto.
 
@@ -115,13 +115,13 @@ Neste tutorial, você criará um aplicativo WPF que exibe dados de tabelas de ba
 
 #### <a name="to-create-data-bound-controls-that-display-the-order-records"></a>Para criar controles vinculados a dados que exibem os registros de pedidos
 
-1. No **Gerenciador de Soluções**, clique duas vezes em MainWindow.xaml.
+1. Em **Gerenciador de soluções**, clique duas vezes em MainWindow. XAML.
 
     A janela é aberta no WPF Designer.
 
 2. Edite o XAML para que as propriedades **Height** e **Width** sejam definidas como 800
 
-3. Na janela **Fontes de Dados**, abra o menu da lista suspensa para o nó **SalesOrderHeaders** e selecione **Detalhes**.
+3. Na janela **fontes de dados** , clique no menu suspenso do nó **SalesOrderHeaders** e selecione **detalhes**.
 
 4. Expanda o nó **SalesOrderHeaders**.
 

@@ -105,10 +105,10 @@ Este manual contém diretrizes e práticas recomendadas para adotar o serviço d
 |||  
 |-|-|  
 |**Subelemento**|**Definição**|  
-|Importar|Importa os símbolos do arquivo de manifesto fornecido para uso no manifesto atual|  
-|GUID|O símbolo representa um GUID e deve corresponder à formatação do GUID|  
+|{1&gt;Importar&lt;1}|Importa os símbolos do arquivo de manifesto fornecido para uso no manifesto atual|  
+|Guid|O símbolo representa um GUID e deve corresponder à formatação do GUID|  
 |ID|O símbolo representa uma ID e deve ser um inteiro não negativo|  
-|Cadeia de Caracteres|O símbolo representa um valor de cadeia de caracteres arbitrária|  
+|String|O símbolo representa um valor de cadeia de caracteres arbitrária|  
 
  Os símbolos diferenciam maiúsculas de minúsculas e são referenciados usando a sintaxe $ (Symbol-Name):  
 
@@ -128,7 +128,7 @@ Este manual contém diretrizes e práticas recomendadas para adotar o serviço d
 |ManifestFolder|A pasta que contém o arquivo de manifesto|  
 |MyDocuments|O caminho completo da pasta meus documentos do usuário atual|  
 |ProgramFiles|O valor da variável de ambiente% ProgramFiles%|  
-|Sistema|A pasta Windows\System32|  
+|System|A pasta Windows\System32|  
 |WinDir|O valor da variável de ambiente% WinDir%|  
 
  **Image**  
@@ -147,7 +147,7 @@ Este manual contém diretrizes e práticas recomendadas para adotar o serviço d
 |||  
 |-|-|  
 |**Attribute**|**Definição**|  
-|GUID|Necessária A parte GUID do moniker da imagem|  
+|Guid|Necessária A parte GUID do moniker da imagem|  
 |ID|Necessária A parte de ID do moniker da imagem|  
 |AllowColorInversion|[Opcional, padrão verdadeiro] Indica se a imagem pode ter suas cores programaticamente invertidas quando usada em um plano de fundo escuro.|  
 
@@ -204,7 +204,7 @@ Este manual contém diretrizes e práticas recomendadas para adotar o serviço d
 |||  
 |-|-|  
 |**Attribute**|**Definição**|  
-|GUID|Necessária A parte GUID do moniker da imagem|  
+|Guid|Necessária A parte GUID do moniker da imagem|  
 |ID|Necessária A parte de ID do moniker da imagem|  
 |Externo|[Opcional, padrão false] Indica se o moniker da imagem faz referência a uma imagem no manifesto atual.|  
 
@@ -215,35 +215,35 @@ Este manual contém diretrizes e práticas recomendadas para adotar o serviço d
 ### <a name="first-steps-managed"></a>Primeiras etapas (gerenciadas)  
  Para usar o serviço de imagem, você precisa adicionar referências a alguns ou todos os assemblies a seguir ao seu projeto:  
 
-- **Microsoft.VisualStudio.ImageCatalog.dll**  
+- **Microsoft. VisualStudio. ImageCatalog. dll**  
 
   - Necessário se você usar o catálogo de imagens interno KnownMonikers  
 
-- **Microsoft.VisualStudio.Imaging.dll**  
+- **Microsoft. VisualStudio. Imaging. dll**  
 
   - Necessário se você usar **CrispImage** e **ImageThemingUtilities** em sua interface do usuário do WPF  
 
-- **Microsoft.VisualStudio.Imaging.Interop.14.0.DesignTime.dll**  
+- **Microsoft. VisualStudio. Imaging. Interop. 14.0. designtime. dll**  
 
   - Necessário se você usar os tipos **ImageMoniker** e **ImageAttributes**  
 
   - **EmbedInteropTypes** deve ser definido como true  
 
-- **Microsoft.VisualStudio.Shell.Interop.14.0.DesignTime**  
+- **Microsoft. VisualStudio. Shell. Interop. 14.0. designtime**  
 
   - Necessário se você usar o tipo **IVsImageService2**  
 
   - **EmbedInteropTypes** deve ser definido como true  
 
-- **Microsoft.VisualStudio.Utilities.dll**  
+- **Microsoft. VisualStudio. Utilities. dll**  
 
   - Necessário se você usar o **BrushToColorConverter** para o ImageThemingUtilities. **ImageBackgroundColor** em sua interface do usuário do WPF  
 
-- **Microsoft.VisualStudio.Shell.\<VSVersion>.0**  
+- **Microsoft. VisualStudio. Shell.\<VSVersion >. 0**  
 
   - Necessário se você usar o tipo **IVsUIObject**  
 
-- **Microsoft.VisualStudio.Shell.Interop.10.0.dll**  
+- **Microsoft. VisualStudio. Shell. Interop. 10.0. dll**  
 
   - Necessário se você usar os auxiliares de interface do usuário relacionados ao WinForms  
 
@@ -252,29 +252,29 @@ Este manual contém diretrizes e práticas recomendadas para adotar o serviço d
 ### <a name="first-steps-native"></a>Primeiras etapas (nativas)  
  Para usar o serviço de imagem, você precisa incluir alguns ou todos os cabeçalhos a seguir em seu projeto:  
 
-- **KnownImageIds.h**  
+- **KnownImageIds. h**  
 
   - Necessário se você usar o **KnownMonikers**do catálogo de imagens interno, mas não puder usar o tipo **ImageMoniker** , como ao retornar valores de chamadas **getguidproperty** ou **GetProperty** .  
 
-- **KnownMonikers.h**  
+- **KnownMonikers. h**  
 
   - Necessário se você usar o **KnownMonikers**do catálogo de imagens interno.  
 
-- **ImageParameters140.h**  
+- **ImageParameters140. h**  
 
   - Necessário se você usar os tipos **ImageMoniker** e **ImageAttributes** .  
 
-- **VSShell140.h**  
+- **VSShell140. h**  
 
   - Necessário se você usar o tipo **IVsImageService2** .  
 
-- **ImageThemingUtilities.h**  
+- **ImageThemingUtilities. h**  
 
   - Necessário se não for possível permitir que o serviço de imagem manipule-o para você.  
 
   - Não use esse cabeçalho se o serviço de imagem puder manipular sua imagem.  
 
-- **VSUIDPIHelper.h**  
+- **VSUIDPIHelper. h**  
 
   - Necessário se você usar os auxiliares de DPI para obter o DPI atual.  
 
@@ -962,7 +962,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
     |GlyphKeyword||IntellisenseKeyword|  
     |GlyphInformation||StatusInformation|  
     |GlyphReference||ClassMethodReference|  
-    |GlyphRecursion||Recursão|  
+    |GlyphRecursion||{1&gt;Recursão&lt;1}|  
     |GlyphXmlItem||Marca|  
     |GlyphJSharpProject||DocumentCollection|  
     |GlyphJSharpDocument||Documento|  

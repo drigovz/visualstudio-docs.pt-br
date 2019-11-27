@@ -23,9 +23,9 @@ ms.locfileid: "74297939"
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 A transformação de texto pode ser chamada como parte do processo de compilação de uma solução do Visual Studio. Há tarefas de compilação que são especializadas para a transformação de texto. As tarefas de compilação T4 executam modelos de texto de tempo de design e também compilam modelos de texto de tempo de execução (pré-processados).
 
-Há algumas diferenças em termos do que as tarefas de compilação podem fazer, dependendo do mecanismo de compilação que você usa. Quando você compila a solução no Visual Studio, um modelo de texto pode acessar a API do Visual Studio (EnvDTE) quando o atributo [hostspecific="true"](../modeling/t4-template-directive.md) é definido. Mas isso não ocorre quando você compila a solução a partir da linha de comando ou ao iniciar uma compilação do servidor com o Visual Studio. Nesses casos, a compilação é executada pelo MSBuild e um host T4 diferente é usado.
+Há algumas diferenças em termos do que as tarefas de compilação podem fazer, dependendo do mecanismo de compilação que você usa. Quando você cria a solução no Visual Studio, um modelo de texto pode acessar a API do Visual Studio (EnvDTE) se o atributo [hostspecific = "true"](../modeling/t4-template-directive.md) estiver definido. Mas isso não ocorre quando você compila a solução a partir da linha de comando ou ao iniciar uma compilação do servidor com o Visual Studio. Nesses casos, a compilação é executada pelo MSBuild e um host T4 diferente é usado.
 
-Isso significa que você não pode acessar itens como nomes de arquivo do projeto da mesma forma quando você cria um modelo de texto no MSBuild. Porém, você pode [passar informações do ambiente para modelos de texto e processadores de diretriz usando parâmetros de compilação](#parameters).
+Isso significa que você não pode acessar itens como nomes de arquivo do projeto da mesma forma quando você cria um modelo de texto no MSBuild. No entanto, você pode [passar informações de ambiente em modelos de texto e processadores de diretiva usando parâmetros de compilação](#parameters).
 
 ## <a name="buildserver"></a>Configurar seus computadores
 
@@ -57,9 +57,9 @@ Se [o servidor de compilação](https://msdn.microsoft.com/library/788443c3-0547
 
 Você precisará editar o arquivo do projeto para configurar alguns dos recursos no MSBuild.
 
-No Gerenciador de Soluções, escolha **Descarregar** no menu de contexto do projeto. Isso permite que você edite o arquivo .csproj ou .vbproj no editor de XML.
+No Gerenciador de soluções, escolha **descarregar** no menu de contexto do seu projeto. Isso permite que você edite o arquivo .csproj ou .vbproj no editor de XML.
 
-Quando você terminar de editar, escolha **Recarregar**.
+Quando terminar de editar, escolha **recarregar**.
 
 ## <a name="import-the-text-transformation-targets"></a>Importar os destinos da transformação de texto
 
@@ -128,7 +128,7 @@ Você pode usar curingas em TransformFile:
 
 `msbuild dsl.csproj /t:Transform /p:TransformFile="GeneratedCode\**\*.tt"`
 
-## <a name="source-control"></a>Controle do código-Fonte
+## <a name="source-control"></a>Controle do Código-Fonte
 
 Não há integração interna específica com um sistema de controle do código-fonte. No entanto, você pode adicionar suas próprias extensões, por exemplo, para fazer check-out e check-in de um arquivo gerado. Por padrão, a tarefa de transformação de texto impede que um arquivo seja marcado como somente leitura e, quando esse arquivo é localizado, um erro é registrado na lista de erros do Visual Studio e a tarefa falha.
 
@@ -226,7 +226,7 @@ Você pode definir valores de parâmetros no arquivo do projeto. Por exemplo, vo
 </ItemGroup>
 ```
 
-Em um modelo de texto, defina `hostspecific` na diretiva do modelo. Use a diretiva [parameter](../modeling/t4-parameter-directive.md) para obter os valores:
+Em um modelo de texto, defina `hostspecific` na diretiva do modelo. Use a diretiva de [parâmetro](../modeling/t4-parameter-directive.md) para obter valores:
 
 ```
 <#@template language="c#" hostspecific="true"#>

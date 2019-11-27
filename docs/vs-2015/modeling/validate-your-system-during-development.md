@@ -34,7 +34,7 @@ O Visual Studio pode ajudar a manter seu software consistente com os requisitos 
 |**Verifique se o software atende aos requisitos dos usuários**:<br /><br /> Você pode usar requisitos e modelos arquitetônicos para ajudá-lo a organizar os testes do seu sistema e seus componentes. Essa prática ajuda a garantir que você teste os requisitos que são importantes para os usuários e outros participantes e ajuda a atualizar os testes rapidamente quando os requisitos mudam.|-   [desenvolver testes a partir de um modelo](../modeling/develop-tests-from-a-model.md)|
 |**Certifique-se de que seu software permaneça consistente com o design pretendido do seu sistema:**<br /><br /> Os diagramas de camada descrevem as dependências pretendidas entre os componentes do seu aplicativo. Durante o desenvolvimento, você pode verificar se as dependências reais no código estão em conformidade com o design pretendido.|-   [criar diagramas de camada do seu código](../modeling/create-layer-diagrams-from-your-code.md)<br />-   [validar o código com diagramas de camada](../modeling/validate-code-with-layer-diagrams.md)|
 
-## <a name="external-resources"></a>Recursos externos
+## <a name="external-resources"></a>Recursos Externos
 
 |**Categoria**|**Vincule**|
 |------------------|---------------|

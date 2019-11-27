@@ -93,9 +93,9 @@ Quando você quiser entender as dependências em seu código, visualize-as crian
 
 ### <a name="CreateEmptyMap"></a>Para adicionar um novo mapa de código vazio à sua solução
 
-1. No **Gerenciador de Soluções**, abra o menu de atalho para o nó de solução de nível superior. Escolha **Adicionar** e escolha **novo item**.
+1. No **Gerenciador de soluções**, abra o menu de atalho para o nó de solução de nível superior. Escolha **Adicionar** e escolha **novo item**.
 
-2. Em **Instalado**, escolha **Geral**.
+2. Em **instalado**, escolha **geral**.
 
 3. No painel direito, escolha **documento gráfico direcionado** e, em seguida, escolha **Adicionar**.
 
@@ -109,7 +109,7 @@ Quando você quiser entender as dependências em seu código, visualize-as crian
 
 2. Abra o menu **arquivo** e escolha **novo** e, em seguida, escolha **arquivo**.
 
-3. Em **Instalado**, escolha **Geral**.
+3. Em **instalado**, escolha **geral**.
 
 4. No painel direito, escolha **documento gráfico direcionado** e, em seguida, escolha **abrir**.
 
@@ -129,7 +129,7 @@ Quando você quiser entender as dependências em seu código, visualize-as crian
 
     ![Grafo&#45;de dependência de nível superior de assemblies](../modeling/media/dependencygraph-toplevelassemblies.png "DependencyGraph_TopLevelAssemblies")
 
-    Esta solução de exemplo contém pastas de solução (**testes** e **componentes**), projetos de teste, projetos Web e assemblies. Por padrão, todas as relações de confinamento aparecem como *grupos*, que podem ser expandidas e recolhidas. O grupo **Externos** não contém nada fora da solução, inclusive dependências de plataforma. Os assemblies externos mostram apenas os itens usados. Por padrão, os tipos de base do sistema ficam ocultos no mapa para reduzir a desordem.
+    Esta solução de exemplo contém pastas de solução (**testes** e **componentes**), projetos de teste, projetos Web e assemblies. Por padrão, todas as relações de confinamento aparecem como *grupos*, que podem ser expandidas e recolhidas. O grupo **externo** contém qualquer coisa fora da sua solução, incluindo dependências de plataforma. Os assemblies externos mostram apenas os itens usados. Por padrão, os tipos de base do sistema ficam ocultos no mapa para reduzir a desordem.
 
 3. Para fazer uma busca detalhada no mapa, expanda os grupos que representam projetos e assemblies. Você pode expandir tudo pressionando **Ctrl + a** para selecionar todos os nós e, em seguida, escolhendo **Agrupar**, **expandir** no menu de atalho.
 
@@ -205,7 +205,7 @@ Quando você quiser entender as dependências em seu código, visualize-as crian
 
 ### <a name="see-specific-dependencies-in-your-solution"></a>Consulte as dependências específicas na solução
 
-1. Abra o **Gerenciador de Soluções**. Selecione os projetos, referências do assembly, pastas, arquivos, tipos e membros de seu interesse. Para localizar os itens que têm dependências em tipos ou membros, abra o atalho de membro ou de tipo no **Gerenciador de soluções**. Escolha o tipo de dependência e, em seguida, selecione os resultados.
+1. Abra o **Gerenciador de Soluções**. Selecione os projetos, referências do assembly, pastas, arquivos, tipos e membros de seu interesse. Para localizar itens que tenham dependências de tipos ou membros, abra o menu de atalho tipo ou membro em **Gerenciador de soluções**. Escolha o tipo de dependência e, em seguida, selecione os resultados.
 
 2. Mapeie seus itens e seus membros. Na barra de ferramentas **Gerenciador de soluções** , clique em **Mostrar no mapa de códigos**![criar novo grafo a partir do botão nós selecionados](../modeling/media/createnewgraphfromselectedbutton.gif "CreateNewGraphFromSelectedButton").
 
@@ -238,7 +238,7 @@ Quando você quiser entender as dependências em seu código, visualize-as crian
 
     |||
     |-|-|
-    |**Mostrar assemblies referenciados por este**|Adicione assemblies a que este assembly faz referência. Os assemblies externos são exibidos no grupo **Externos**.|
+    |**Mostrar assemblies referenciados por este**|Adicione assemblies a que este assembly faz referência. Os assemblies externos aparecem no grupo **externa** .|
     |**Mostrar assemblies que fazem referência a este**|Adicione assemblies na solução que fazem referência a este assembly.|
 
      Para um **namespace**, escolha **Mostrar assembly contendo**, se não estiver visível.
@@ -294,7 +294,7 @@ Quando você quiser entender as dependências em seu código, visualize-as crian
 
      ![Grafo de dependência para código nativo](../modeling/media/dependencygraphgeneral-nativecode.png "DependencyGraphGeneral_NativeCode")
 
-- Para ver as dependências entre os arquivos abertos atualmente, os arquivos de origem relacionados e os arquivos de cabeçalho, abra o arquivo de origem ou o arquivo de cabeçalho. Abra o menu de atalho do arquivo em qualquer lugar dentro do arquivo. Escolha **Gerar Gráfico de Arquivos de Inclusão**.
+- Para ver as dependências entre os arquivos abertos atualmente, os arquivos de origem relacionados e os arquivos de cabeçalho, abra o arquivo de origem ou o arquivo de cabeçalho. Abra o menu de atalho do arquivo em qualquer lugar dentro do arquivo. Escolha **gerar grafo de arquivos de inclusão**.
 
      ![Grafo&#45;de dependência de primeiro nível para arquivo. h](../modeling/media/dependencygraph-native-firstlevel.png "DependencyGraph_Native_FirstLevel")
 
@@ -303,7 +303,7 @@ Quando você quiser entender as dependências em seu código, visualize-as crian
 
 - Os tipos base não aparecem em mapas que incluem a hierarquia pai.
 
-- A maioria dos itens do menu **Mostrar** não está disponível para o código do C e do C++.
+- A **maioria dos** itens de menu não estão disponíveis C++ para C e code.
 
   Esses problemas podem ocorrer quando você cria mapas de código para C C++ e código:
 
@@ -311,8 +311,8 @@ Quando você quiser entender as dependências em seu código, visualize-as crian
 |---------------|------------------------|--------------------|
 |Falha ao gerar o mapa de códigos.|Nenhum projeto na solução foi compilado com êxito.|Corrija os erros de compilação que ocorreram e, em seguida, gere o mapa novamente.|
 |[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] deixa de responder quando você tenta gerar um mapa de código no menu **arquitetura** .|O arquivo de banco de dados do programa (.pdb) pode estar corrompido.<br /><br /> Um arquivo .pdb armazena informações de depuração, como o tipo, o método e as informações do arquivo de origem.|Recompile a solução e, em seguida, tente novamente.|
-|Determinadas configurações do banco de dados de navegação do IntelliSense estão desabilitadas.|Determinadas configurações do IntelliSense podem ser desabilitadas na caixa de diálogo [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]**Opções**.|Ative as configurações para habilitá-las.<br /><br /> Consulte [Opções, editor de texto, CC++/, avançado](../ide/reference/options-text-editor-c-cpp-advanced.md).|
-|A mensagem **Métodos Desconhecidos** é exibida em um nó de método.<br /><br /> Esse problema ocorre porque o nome do método não pode ser resolvido.|O arquivo binário não pode ter uma tabela de realocação de base.|Ative a opção **/Fixed:** no do vinculador.<br /><br /> Consulte [/Fixed (endereço base fixo)](https://msdn.microsoft.com/library/929bba5e-b7d8-40ed-943e-056aa3710fc5).|
+|Determinadas configurações do banco de dados de navegação do IntelliSense estão desabilitadas.|Determinadas configurações do IntelliSense podem ser desabilitadas na caixa de diálogo **Opções** de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|Ative as configurações para habilitá-las.<br /><br /> Consulte [Opções, editor de texto, CC++/, avançado](../ide/reference/options-text-editor-c-cpp-advanced.md).|
+|A mensagem **métodos desconhecidos** aparece em um nó de método.<br /><br /> Esse problema ocorre porque o nome do método não pode ser resolvido.|O arquivo binário não pode ter uma tabela de realocação de base.|Ative a opção **/Fixed:** no do vinculador.<br /><br /> Consulte [/Fixed (endereço base fixo)](https://msdn.microsoft.com/library/929bba5e-b7d8-40ed-943e-056aa3710fc5).|
 ||Talvez o arquivo de banco de dados do programa (.pdb) não tenha sido compilado.<br /><br /> Um arquivo .pdb armazena informações de depuração, como o tipo, o método e as informações do arquivo de origem.|Ative a opção **/debug** no vinculador.<br /><br /> Consulte [/debug (gerar informações de depuração)](https://msdn.microsoft.com/library/1af389ae-3f8b-4d76-a087-1cdf861e9103).|
 ||Não é possível abrir ou encontrar o arquivo .pdb em locais esperados.|Verifique se o arquivo .pdb existe nos locais esperados.|
 ||As informações de depuração foram removidas do arquivo .pdb.|Se a opção **/PDBSTRIPPED** foi usada no vinculador, inclua o arquivo. pdb completo.<br /><br /> Consulte [/PDBSTRIPPED (símbolos privados de faixa)](https://msdn.microsoft.com/library/9b9e0070-6a13-4142-8180-19c003fbbd55).|
@@ -329,13 +329,13 @@ Quando você quiser entender as dependências em seu código, visualize-as crian
 
 - Desative a adição automática de itens pai com o botão **incluir pais** na barra de ferramentas do mapa de códigos.
 
-- Edite o arquivo de mapa de código diretamente para remover nós e links desnecessários. A alteração do mapa não afeta o código subjacente. Consulte [Personalizar mapa de códigos editando os arquivos DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md).
+- Edite o arquivo de mapa de código diretamente para remover nós e links desnecessários. A alteração do mapa não afeta o código subjacente. Consulte [Personalizar mapas de código editando os arquivos DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md).
 
   ![Ignorar os botões criar e incluir pais](../modeling/media/codemapsfilterskipbuildicons.png "CodeMapsFilterSkipBuildIcons")
 
   Embora o Visual Studio possa ser executado com 1 GB de memória, recomendamos que seu computador tenha pelo menos 2 GB de memória para evitar longos atrasos enquanto o Visual Studio cria o índice de código e gera o mapa.
 
-  Pode levar mais tempo para criar mapas ou adicionar itens a um mapa de Gerenciador de Soluções quando a propriedade **copiar para o diretório de saída** de um item de projeto é definida como **copiar sempre**. Isso pode causar problemas em compilações incrementais e fazer o Visual Studio recompilar o projeto sempre. Para melhorar o desempenho, altere essa propriedade para **Copiar se for mais recente** ou `PreserveNewest`. Consulte [Builds incrementais](../msbuild/incremental-builds.md).
+  Pode levar mais tempo para criar mapas ou adicionar itens a um mapa de Gerenciador de Soluções quando a propriedade **copiar para o diretório de saída** de um item de projeto é definida como **copiar sempre**. Isso pode causar problemas em compilações incrementais e fazer o Visual Studio recompilar o projeto sempre. Para aumentar o desempenho, altere essa propriedade para **copiar se for mais recente** ou `PreserveNewest`. Consulte [Builds incrementais](../msbuild/incremental-builds.md).
 
   O mapa concluído mostrará dependências somente para código criado com êxito. Se ocorrerem erros de compilação para determinados componentes, esses erros aparecerão no mapa. Certifique-se de que um componente realmente cria e tem dependências nele antes de tomar decisões arquitetônicas com base no mapa.
 
@@ -357,7 +357,7 @@ Quando você quiser entender as dependências em seu código, visualize-as crian
 >
 > O erro a seguir pode ocorrer quando você salva um mapa que está em um projeto de modelagem ou foi copiado de um projeto de modelagem para outro local:
 >
-> "Não é possível salvar *fileName* fora do diretório do projeto. Itens vinculados não são compatíveis."
+> "Não é possível salvar o *nome de arquivo* fora do diretório do projeto. Itens vinculados não são compatíveis."
 >
 > O Visual Studio mostra o erro, mas cria a versão salva de qualquer maneira. Para evitar o erro, crie o mapa fora do projeto de modelagem. Em seguida, é possível salvá-lo no local desejado. Apenas copiar o arquivo para outro local na solução e, em seguida, tentar salvá-lo não funcionará.
 
@@ -373,7 +373,7 @@ Quando você quiser entender as dependências em seu código, visualize-as crian
 
 2. Navegue para onde você deseja salvar o arquivo.
 
-3. Nomeie o mapa de código. Verifique se a caixa **salvar como tipo** está definida como **arquivos XPS (\*. XPS)** . Escolha **Salvar**.
+3. Nomeie o mapa de código. Verifique se a caixa **salvar como tipo** está definida como **arquivos XPS (\*. XPS)** . Escolha **salvar**.
 
 ## <a name="what-else-can-i-do"></a>O que mais posso fazer?
 

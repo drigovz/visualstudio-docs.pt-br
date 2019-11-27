@@ -157,7 +157,7 @@ Uma exceção é uma indicação de um estado de erro que ocorre enquanto um pro
 ### <a name="adding-and-deleting-exceptions"></a>Adicionando e excluindo exceções  
  Você pode adicionar e excluir exceções. Você pode excluir qualquer tipo de exceção de qualquer categoria, selecionando a exceção e clicando no botão **excluir** (o sinal de subtração) na barra de ferramentas **configurações de exceção** ou clicando com o botão direito do mouse na exceção e selecionando **excluir** no menu de contexto. Excluir uma exceção tem o mesmo efeito que ter a exceção desmarcada, o que é que o depurador não será interrompido quando for gerado.  
   
- Para adicionar uma exceção: na janela **configurações de exceção** , selecione uma das categorias de exceção (por exemplo, **Common Language Runtime**) e clique no botão **Adicionar** . Digite o nome da exceção (por exemplo, **System.UriTemplateMatchException**). A exceção é adicionada à lista (em ordem alfabética) e é verificada automaticamente.  
+ Para adicionar uma exceção: na janela **configurações de exceção** , selecione uma das categorias de exceção (por exemplo, **Common Language Runtime**) e clique no botão **Adicionar** . Digite o nome da exceção (por exemplo, **System. UriTemplateMatchException**). A exceção é adicionada à lista (em ordem alfabética) e é verificada automaticamente.  
   
  Se desejar adicionar uma exceção às exceções de acesso à memória da GPU, às exceções de tempo de execução do JavaScript ou às categorias de exceções Win32, você precisará incluir o código de erro, bem como a descrição.  
   

@@ -101,7 +101,7 @@ O Visual Studio fornece ferramentas para trabalhar com Windows Communication Fou
 
  Para saber mais sobre o host de serviço WCF, consulte [host de serviço WCF (WcfSvcHost. exe)](https://msdn.microsoft.com/library/8643a63d-a357-4c39-bd6c-cdfdf71e370e).
 
-#### <a name="wcf-test-client"></a>Cliente de teste do WCF
+#### <a name="wcf-test-client"></a>Cliente de teste WCF
  A ferramenta de cliente de teste do WCF permite que você insira parâmetros de teste, envie essa entrada para um serviço WCF e exiba a resposta que o serviço envia de volta. Ele fornece uma experiência de teste de serviço conveniente quando você a combina com o host de serviço WCF. A ferramenta pode ser encontrada na pasta \Common7\IDE, que para o Visual Studio 2015 instalado na unidade C: está aqui: **c:\Arquivos de programas (x86) \Microsoft Visual Studio 14.0 \ Common7\IDE\\** .
 
  Quando você pressiona F5 para depurar um projeto de serviço WCF, o cliente de teste do WCF é aberto e exibe uma lista de pontos de extremidade de serviço que são definidos no arquivo de configuração. Você pode testar os parâmetros e iniciar o serviço e repetir esse processo para testar e validar continuamente seu serviço.

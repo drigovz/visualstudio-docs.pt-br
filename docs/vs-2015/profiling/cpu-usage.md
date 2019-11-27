@@ -53,7 +53,8 @@ Quando você precisa investigar problemas de desempenho no aplicativo, um bom co
   
    ![Parar coleta de dados os](../profiling/media/cpu-use-wt-stopcollection.png "CPU_USE_WT_StopCollection")  
   
-   A ferramenta Uso da CPU analisa os dados e exibe o relatório.  
+   {1&gt;&lt;1}
+  {3&gt;A ferramenta Uso da CPU analisa os dados e exibe o relatório.&lt;3}{4&gt;&lt;4}  
   
    ![Relatório de os](../profiling/media/cpu-use-wt-report.png "CPU_USE_WT_Report")  
   
@@ -67,9 +68,9 @@ Quando você precisa investigar problemas de desempenho no aplicativo, um bom co
   
 |||  
 |-|-|  
-|![Etapa 1](../profiling/media/procguid-1.png "ProcGuid_1")|O nó de nível superior nas árvores de chamada de uso da CPU é um pseudo-nó|  
+|![Etapa 1](../profiling/media/procguid-1.png "ProcGuid_1")|{1&gt;O nó de nível superior nas árvores de chamada de uso da CPU é um pseudonó&lt;1}|  
 |![Etapa 2](../profiling/media/procguid-2.png "ProcGuid_2")|Na maioria dos aplicativos, quando a opção **Mostrar Código Externo** está desabilitada, o nó de segundo nível é um nó **[Código Externo]** que contém o código do sistema e da estrutura que inicia e para o aplicativo, desenha a interface do usuário, controla o agendamento de thread e fornece ao aplicativo outros serviços de nível inferior.|  
-|![Etapa 3](../profiling/media/procguid-3.png "ProcGuid_3")|Os filhos do nó de segundo nível são métodos e rotinas assíncronas do código de usuário que são chamados ou criados pelo sistema de segundo nível e código do framework.|  
+|![Etapa 3](../profiling/media/procguid-3.png "ProcGuid_3")|{1&gt;Os filhos do nó de segundo nível são métodos e rotinas assíncronas do código de usuário que são chamados ou criados pelo sistema de segundo nível e código do framework.&lt;1}|  
 |![Etapa 4](../profiling/media/procguid-4.png "ProcGuid_4")|Os nós filhos de um método só contêm dados das chamadas do método pai. Quando **Mostrar Código Externo** é desabilitado, os métodos de aplicativo também podem conter um nó **[Código Externo]** .|  
   
 #### <a name="BKMK_External_Code"></a> Código externo  
@@ -91,11 +92,13 @@ Quando você precisa investigar problemas de desempenho no aplicativo, um bom co
   
 |||  
 |-|-|  
-|**CPU total (%)**|![Equação total de dados de %](../profiling/media/cpu-use-wt-totalpercentequation.png "CPU_USE_WT_TotalPercentEquation")<br /><br /> A porcentagem de atividade da CPU do aplicativo no intervalo de tempo selecionado que foi usado por chamadas para as funções e as funções chamadas pela função. Observe que isso é diferente do gráfico de linha de tempo **Utilização da CPU**, que compara a atividade total do aplicativo em um intervalo de tempo com a capacidade total disponível da CPU.|  
-|**CPU própria (%)**|![Equação % própria](../profiling/media/cpu-use-wt-selflpercentequation.png "CPU_USE_WT_SelflPercentEquation")<br /><br /> A porcentagem de atividade da CPU do aplicativo no intervalo de tempo selecionado que foi usada pelas chamadas para as funções, exceto a atividade das funções chamadas pela função.|  
-|**CPU total (ms)**|O número de milissegundos gastos em chamadas para a função no intervalo de tempo escolhido e as funções chamadas pela função.|  
-|**CPU própria (ms)**|O número de milissegundos gastos em chamadas para a função no intervalo de tempo escolhido e as funções chamadas pela função.|  
-|{1&gt;Módulo&lt;1}|O nome do módulo que contém a função ou o número de módulos que contêm as funções em um nó de [Código Externo].|  
+|**CPU total (%)**|![Equação total de dados de %](../profiling/media/cpu-use-wt-totalpercentequation.png "CPU_USE_WT_TotalPercentEquation")<br /><br /> {1&gt;&lt;1}
+  O percentual de atividade da CPU do aplicativo no intervalo de tempo selecionado que foi usado por chamadas para as funções e as funções chamadas pela função. Observe que isso é diferente do gráfico de linha de tempo **Utilização da CPU**, que compara a atividade total do aplicativo em um intervalo de tempo com a capacidade total disponível da CPU.|  
+|**CPU própria (%)**|![Equação % própria](../profiling/media/cpu-use-wt-selflpercentequation.png "CPU_USE_WT_SelflPercentEquation")<br /><br /> {1&gt;&lt;1}
+  {3&gt;O percentual de atividade da CPU do aplicativo no intervalo de tempo selecionado que foi usada pelas chamadas para as funções, exceto a atividade das funções chamadas pela função.&lt;3}|  
+|**CPU total (ms)**|{1&gt;O número de milissegundos gastos em chamadas para a função no intervalo de tempo escolhido e as funções chamadas pela função.&lt;1}|  
+|**CPU própria (ms)**|{1&gt;O número de milissegundos gastos em chamadas para a função no intervalo de tempo escolhido e as funções chamadas pela função.&lt;1}|  
+|**Módulo**|{1&gt;O nome do módulo que contém a função ou o número de módulos que contêm as funções em um nó de [Código Externo].&lt;1}|  
   
 ### <a name="BKMK_Asynchronous_functions_in_the_CPU_Usage_call_tree"></a> Funções assíncronas na árvore de chamadas de Uso da CPU  
  Quando o compilador encontra um método assíncrono, ele cria uma classe oculta para controlar o método de execução. Conceitualmente, a classe é uma máquina de estado que inclui uma lista de funções geradas pelo compilador que chamam corretamente as operações do método original de modo assíncrono, os retornos de chamadas, o agendador e os iteradores necessários a eles. Quando o método original é chamado por um método pai, o runtime remove o método do contexto de execução do pai e executa os métodos da classe oculta no contexto do código do sistema e do framework que controla a execução do aplicativo. Os métodos assíncronos são geralmente, mas nem sempre, executados em uma ou mais segmentos diferentes. Esse código é mostrado na árvore de chamadas de Uso da CPU como filhos do nó **[Código Externo]** logo abaixo do nó superior da árvore.  

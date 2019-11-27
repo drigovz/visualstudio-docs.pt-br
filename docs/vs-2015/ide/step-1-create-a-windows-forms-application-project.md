@@ -31,7 +31,7 @@ Ao criar um visualizador de imagens, a primeira etapa é criar um projeto de apl
 
 2. Escolha **Visual C#** ou **Visual Basic** na lista de **Modelos Instalados**.
 
-3. Na lista de modelos, escolha o ícone **Aplicativo de Windows Forms**. Dê o nome de **PictureViewer** ao novo formulário e escolha o botão **OK**.
+3. Na lista de modelos, escolha o ícone **Aplicativo do Windows Forms**. Dê o nome de **PictureViewer** ao novo formulário e escolha o botão **OK**.
 
      O Visual Studio cria uma solução para seu programa. Uma solução atua como um recipiente para todos os projetos e arquivos necessários pelo seu programa. Esses termos serão explicados em mais detalhes posteriormente neste tutorial.
 

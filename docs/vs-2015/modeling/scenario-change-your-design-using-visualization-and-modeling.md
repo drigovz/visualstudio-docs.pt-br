@@ -878,7 +878,7 @@ Verifique se o sistema de software atende às necessidades dos usuários usando 
 |Mapa de códigos|Visualize a organização e as relações no código existente.<br /><br /> Para criar camadas, gere um mapa de código e agrupe itens no mapa como camadas potenciais. Arraste os grupos do mapa para o diagrama de camada.<br /><br /> Consulte:<br /><br /> -   [mapear dependências em suas soluções](../modeling/map-dependencies-across-your-solutions.md)<br />-   [procurar e reorganizar mapas de código](../modeling/browse-and-rearrange-code-maps.md)|
 |Diagrama de componente|Descreva os componentes, suas interfaces e suas relações.<br /><br /> Para visualizar camadas, crie um diagrama de componente que descreva a funcionalidade de diferentes componentes no sistema.<br /><br /> Consulte:<br /><br /> -   [diagramas de componente UML: referência](../modeling/uml-component-diagrams-reference.md)<br />-   [diagramas de componentes UML: diretrizes](../modeling/uml-component-diagrams-guidelines.md)|
 
-## <a name="external-resources"></a>Recursos externos
+## <a name="external-resources"></a>Recursos Externos
 
 |**Categoria**|**Vincule**|
 |------------------|---------------|

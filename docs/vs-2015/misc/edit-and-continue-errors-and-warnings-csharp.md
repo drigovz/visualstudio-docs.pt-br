@@ -77,9 +77,9 @@ Você fez uma edição em uma seção do código que não é permitido em Editar
   
  Para obter mais informações sobre edições com suporte em Editar e continuar para [!INCLUDE[csharp_current_short](../includes/csharp-current-short-md.md)], consulte [alterações de códigoC#com suporte ()](../debugger/supported-code-changes-csharp.md). Se precisar de mais informações sobre um erro ou aviso específico, você poderá pesquisar ou postar no fórum do [msdn C# Visual IDE](https://go.microsoft.com/fwlink/?LinkId=214693).  
   
-### <a name="to-correct-this-error"></a>Para corrigir este erro  
+### <a name="to-correct-this-error"></a>Para corrigir esse erro  
   
-1. No menu **Depurar**, escolha **Desfazer** para desfazer a alteração.  
+1. No menu **depurar** , escolha **desfazer** para desfazer a alteração.  
   
      - ou -  
   

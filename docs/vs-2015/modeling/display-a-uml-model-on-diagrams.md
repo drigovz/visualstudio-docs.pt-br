@@ -45,7 +45,7 @@ Neste tópico:
 |Filho do classificador|Atributo, operação,<br /><br /> Parte, porta|Automático-nenhum código é necessário.<br /><br /> Ele é exibido como parte do pai.|
 |Comportamento|Interação (sequência),<br /><br /> Atividade|Associe o comportamento a um diagrama apropriado.<br /><br /> Cada comportamento pode ser associado a no máximo um diagrama por vez.<br /><br /> Por exemplo:<br /><br /> `sequenceDiagram.Bind(interaction);`<br /><br /> `activityDiagram.Bind(activity);`|
 |Filho do comportamento|Linhas de vida, mensagens, ações, nós de objeto|Automático-nenhum código é necessário.<br /><br /> Ele será exibido se o pai estiver associado a um diagrama.|
-|Relationship|Associação, generalização, fluxo, dependência|Automático-nenhum código é necessário.<br /><br /> Ele é exibido em todos os diagramas nos quais ambas as extremidades são exibidas.|
+|Relação|Associação, generalização, fluxo, dependência|Automático-nenhum código é necessário.<br /><br /> Ele é exibido em todos os diagramas nos quais ambas as extremidades são exibidas.|
 
 ## <a name="GetShapes"></a>Acessando as formas que representam um elemento
  A forma que representa um elemento pertence aos tipos:

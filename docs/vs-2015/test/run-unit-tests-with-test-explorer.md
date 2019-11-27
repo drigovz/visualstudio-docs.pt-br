@@ -60,7 +60,7 @@ Use o Gerenciador de Testes para executar testes de unidade do Visual Studio ou 
  ![Voltar ao](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [conteúdo](#BKMK_Contents) superior
 
 ### <a name="BKMK_Run_tests"></a> Executar testes
- Você pode executar todos os testes na solução, todos os testes em um grupo ou um conjunto de testes que você selecionar. Realize um dos seguintes procedimentos:
+ Você pode executar todos os testes na solução, todos os testes em um grupo ou um conjunto de testes que você selecionar. Siga um destes procedimentos:
 
 - Para executar todos os testes em uma solução, escolha **Executar Todos**.
 
@@ -97,17 +97,17 @@ Use o Gerenciador de Testes para executar testes de unidade do Visual Studio ou 
 
  O painel de detalhes de teste exibe as seguintes informações:
 
-- O nome do arquivo de origem e o número de linha do método de teste.
+- {1&gt;O nome do arquivo de origem e o número de linha do método de teste.&lt;1}
 
-- O status do teste.
+- {1&gt;O status do teste.&lt;1}
 
-- O tempo decorrido que o método de teste levou para ser executado.
+- {1&gt;O tempo decorrido que o método de teste levou para ser executado.&lt;1}
 
-  Se o teste falhar, o painel de detalhes também exibe:
+  {1&gt;Se o teste falhar, o painel de detalhes também exibe:&lt;1}
 
-- A mensagem retornada pela estrutura de teste de unidade para o teste.
+- {1&gt;A mensagem retornada pela estrutura de teste de unidade para o teste.&lt;1}
 
-- O rastreamento de pilha no momento em que o teste falhou.
+- {1&gt;O rastreamento de pilha no momento em que o teste falhou.&lt;1}
 
   ![Voltar ao](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [conteúdo](#BKMK_Contents) superior
 
@@ -133,7 +133,7 @@ Use o Gerenciador de Testes para executar testes de unidade do Visual Studio ou 
 |**Duração**|Agrupa teste pelo tempo de execução: **rápido**, **médio** e **lento**.|
 |**Resultado**|Agrupa testes por resultados da execução: **testes com falha**, **testes ignorados**, **testes aprovados**.|
 |**Características**|Agrupa teste por pares de categoria/valor que você define. A sintaxe para especificar valores e categorias de característica é definida pela estrutura de teste de unidade.|
-|{1&gt;Projeto&lt;1}|Agrupa teste por nome dos projetos.|
+|**Projeto**|Agrupa teste por nome dos projetos.|
 
  ![Voltar ao](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [conteúdo](#BKMK_Contents) superior
 
@@ -206,7 +206,7 @@ TEST_METHOD(Method1)
 |Qualificador|Descrição|
 |---------------|-----------------|
 |**Característica**|Procura categoria de característica e valor para correspondência. A sintaxe para especificar valores e categorias de característica é definida pela estrutura de teste de unidade.|
-|{1&gt;Projeto&lt;1}|Procura os nomes de projeto de teste para correspondências.|
+|**Projeto**|Procura os nomes de projeto de teste para correspondências.|
 |**Mensagem de erro**|Procura nas mensagens de erro definidas pelo usuário retornadas por falhas para encontrar correspondências.|
 |**Caminho do arquivo**|Procura o nome de arquivo totalmente qualificado dos arquivos de origem do teste para encontrar correspondências.|
 |**Nome Totalmente Qualificado**|Procura o nome de arquivo totalmente qualificado dos namespaces de teste, classes e métodos para encontrar correspondências.|
@@ -253,7 +253,7 @@ FullName:"MyClass" - FullName:"PerfTest"
 1. No editor do Visual Studio, defina um ponto de interrupção em um ou mais métodos de teste que deseje depurar.
 
    > [!NOTE]
-   > Como os métodos de teste podem ser executados em qualquer ordem, defina pontos de interrupção em todos os métodos de teste que deseje depurar.
+   > {1&gt;Como os métodos de teste podem ser executados em qualquer ordem, defina pontos de interrupção em todos os métodos de teste que deseje depurar.&lt;1}
 
 2. No Gerenciador de Testes, selecione os métodos de teste e escolha **Depurar Testes Selecionados** no menu de contexto.
 
@@ -281,7 +281,7 @@ FullName:"MyClass" - FullName:"PerfTest"
 
    - **Todos os testes** executa todos os métodos de teste na solução.
 
-   A janela Resultados de Cobertura do Código exibe a porcentagem dos blocos que foram exercidos por linha, função, classe, namespace e módulo de código do produto.
+   A janela Resultados de Cobertura de Código exibe o percentual dos blocos que foram exercidos por linha, função, classe, namespace e módulo de código do produto.
 
    Para obter mais informações, consulte [Usando cobertura de código para determinar quanto código está sendo testado](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md).
 

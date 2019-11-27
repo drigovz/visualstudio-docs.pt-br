@@ -507,7 +507,7 @@ Faça as alterações manuais necessárias em seus arquivos de projeto existente
 
 13. Substitua as tarefas de tipo de plano de fundo gattCharacteristicNotification e rfcommConnection por uma tarefa de tipo Bluetooth. Por exemplo:
 
-     **OLD:**
+     **ANTIGO**
 
     ```xml
     <Extension Category="windows.backgroundTasks" EntryPoint="Fabrikam.BackgroundTask" Executable="MyBackground.exe">
@@ -530,7 +530,7 @@ Faça as alterações manuais necessárias em seus arquivos de projeto existente
 
 14. Substitua os recursos de dispositivo Bluetooth Bluetooth. RFCOMM e Bluetooth. genericAttributeProfile por um recurso Bluetooth genérico. Por exemplo:
 
-     **OLD:**
+     **ANTIGO**
 
     ```xml
     <Capabilities>

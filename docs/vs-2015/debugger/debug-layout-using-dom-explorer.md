@@ -33,12 +33,12 @@ Aplica-se ao Windows e Windows Phone] (.. /Imagem/windows_and_phone_content. png
  A guia **layout** do explorador do dom mostra o [modelo de caixa CSS](https://go.microsoft.com/fwlink/?LinkID=238778) do elemento selecionado em um aplicativo [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)], Windows Phone aplicativo da loja ou um aplicativo criado usando ferramentas do Visual Studio para Apache Cordova. Você pode usar essa representação visual do modelo de caixa para identificar e modificar os valores relacionados a layout que afetam a aparência dos elementos.  
   
 > [!TIP]
-> As alterações feitas na guia **Layout** não são permanentes. Você pode fazer alterações permanentes em seu código-fonte e, em seguida, atualizar seu aplicativo usando o botão **Atualizar aplicativo do Windows** (somente para aplicativos da Windows Store e da Windows Phone Store) na barra de ferramentas Depurar. Dessa maneira, você pode evitar reiniciar o depurador.  
+> As alterações feitas na guia **layout** não são permanentes. Você pode fazer alterações permanentes em seu código-fonte e, em seguida, atualizar seu aplicativo usando o botão **Atualizar aplicativo do Windows** (somente para aplicativos da Windows Store e da Windows Phone Store) na barra de ferramentas Depurar. Dessa maneira, você pode evitar reiniciar o depurador.  
   
  Para usar o explorador do DOM para modificar aspectos de layout que não são mostrados no modelo de caixa, consulte [início rápido: Depurar HTML e CSS](../debugger/quickstart-debug-html-and-css.md) e [depurar estilos CSS usando o explorador do dom](../debugger/debug-css-styles-using-dom-explorer.md).  
   
 ## <a name="example-of-fixing-a-layout-issue"></a>Exemplo de correção de um problema de layout  
- Este exemplo mostra como escolher um elemento de lista no modelo Hub/Dinâmico, interpretar os valores do modelo de caixa que estão na guia **Layout** e mudar um dos valores de propriedade para corrigir um problema de layout.  
+ Este exemplo mostra como selecionar um elemento de lista no modelo de Hub/dinâmico, interpretar os valores de modelo de caixa que estão na guia **layout** e, em seguida, alterar um dos valores de propriedade para corrigir um problema de layout.  
   
 #### <a name="to-fix-the-layout-issue"></a>Para corrigir o problema de layout  
   
@@ -65,9 +65,9 @@ Aplica-se ao Windows e Windows Phone] (.. /Imagem/windows_and_phone_content. png
     }  
     ```  
   
-4. Selecione o projeto appName.WindowsPhone ou o appName.Windows no Gerenciador de Soluções, em seguida, escolha **Definir como Projeto de Inicialização** no menu de atalhos do projeto.  
+4. Selecione o projeto appName. WindowsPhone ou o projeto appName. Windows em Gerenciador de Soluções e, em seguida, escolha **definir como projeto de inicialização** no menu de atalho do projeto.  
   
-5. Dependendo do seu projeto de inicialização, escolha **Emulator 8.1 WVGA 4 inch 512MB** ou **Simulador** da lista suspensa na barra de ferramentas Depurar (**Computador Local** é o valor padrão).  
+5. Dependendo do projeto de inicialização, escolha **emulador 8,1 WVGA 4 polegada MB** ou **simulador** na lista suspensa na barra de ferramentas depurar (**computador local** é o valor padrão).  
   
      ![Selecionando um destino de depuração](../debugger/media/js-dom-debug-target-emu.png "JS_DOM_Debug_Target_Emu")  
   
@@ -80,7 +80,7 @@ Aplica-se ao Windows e Windows Phone] (.. /Imagem/windows_and_phone_content. png
   
      Quando a Seção 4 for carregada, você poderá ver que as imagens inferiores não aparecem corretamente. Cada imagem de item aparece cortada ao meio (com a metade esquerda ausente).  
   
-8. Alterne para o Visual Studio e escolha **Selecionar Elemento** no Explorador do DOM (ou pressione Ctrl+B). Isso altera o modo de seleção, permitindo que você selecione um item ao clicar nele, e traz o aplicativo para o primeiro plano. O modo é revertido após um único clique.  
+8. Alterne para o Visual Studio e escolha **selecionar elemento** no explorador do dom (ou pressione CTRL + B). Isso altera o modo de seleção, permitindo que você selecione um item ao clicar nele, e traz o aplicativo para o primeiro plano. O modo é revertido após um único clique.  
   
     > [!TIP]
     > Você também pode usar as teclas de seta ou outros métodos para selecionar os elementos HTML diretamente no Explorador do DOM. Para obter mais informações sobre como selecionar elementos, consulte [início rápido: Depurar HTML e CSS](../debugger/quickstart-debug-html-and-css.md).  
@@ -111,20 +111,20 @@ Aplica-se ao Windows e Windows Phone] (.. /Imagem/windows_and_phone_content. png
   
     - As caixas que mostram valores de 0 pixels (por exemplo, Borda e Preenchimento) sugerem que as propriedades de CSS correspondentes provavelmente não estão definidas.  
   
-11. Para ver como a regra margin-left é aplicada, escolha a guia **Computado** e veja abaixo da regra margin-left. Você pode ver que essa regra está definida com o valor 5em, mas o valor computado é 66,66 px ou 146,66 px, dependendo do dispositivo de destino.  
+11. Para ver como a regra de margem esquerda é aplicada, escolha a guia **computada** e examine a regra de margem esquerda. Você pode ver que essa regra está definida com o valor 5em, mas o valor computado é 66,66 px ou 146,66 px, dependendo do dispositivo de destino.  
   
     > [!TIP]
-    > A guia **Computado** mostra que a regra margin-left é definida no Seletor de CSS `..hubpage .hub. section4 .sub-image-row img`, encontrado em hub.css. Neste aplicativo de demonstração, é aqui que você precisa fazer a correção.  
+    > A guia **computada** mostra que a regra de margem esquerda está definida no seletor de `..hubpage .hub. section4 .sub-image-row img` CSS, encontrada em Hub. css. Neste aplicativo de demonstração, é aqui que você precisa fazer a correção.  
   
-     Você também pode usar a guia **Layout** para testar as modificações dos valores de layout.  
+     Você também pode usar a guia **layout** para testar modificações em valores de layout.  
   
-12. Na guia **Layout**, escolha **66,66** ou **146,66**, que aparece na caixa **Margem**, no lado esquerdo da caixa.  
+12. Na guia **layout** , escolha **66,66** ou **146,66**, que aparece na caixa de **margem** , no lado esquerdo da caixa.  
   
 13. Digite `0` e pressione Enter. (Você também pode usar as teclas de seta para cima e para baixo para alterar o valor.)  
   
 14. Selecione os outros elementos \<img > no explorador do DOM e altere os valores da margem esquerda para 0.  
   
-15. Alterne para Simulador ou Emulador do Windows Phone. Os valores margin-left atualizados foram aplicados às imagens da Seção 4. Esses valores também são atualizados na guia **Computado** sob a regra margin-left.  
+15. Alterne para Simulador ou Emulador do Windows Phone. Os valores margin-left atualizados foram aplicados às imagens da Seção 4. Esses valores também são atualizados na guia **computada** sob a regra Margin-Left.  
   
 ## <a name="see-also"></a>Consulte também  
  [Início rápido: Depurar HTML e CSS](../debugger/quickstart-debug-html-and-css.md)   

@@ -15,10 +15,10 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 11/21/2019
 ms.locfileid: "74301398"
 ---
-# <a name="using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing"></a>Usando stubs para isolar partes de seu aplicativo para teste de unidade
+# <a name="using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing"></a>Uso de Shims para isolar partes do seu aplicativo para testes de unidade
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Os tipos de stub* são uma das duas tecnologias fornecidas pelo Microsoft Fakes Framework para permitir que você isole com facilidade um componente que está sendo testado de outros componentes chamados. Um stub é um pequeno trecho de código que ocupa o lugar de outro componente durante o teste. A vantagem de usar um stub é que ele retorna resultados consistentes, tornando mais fácil escrever o teste. E você pode executar testes mesmo se os outros componentes não estiverem funcionando ainda.
+Os tipos de stub* são uma das duas tecnologias fornecidas pelo Microsoft Fakes Framework para permitir que você isole com facilidade um componente que está sendo testado de outros componentes chamados. Um stub é uma pequeno pedaço de código que assume o lugar de outro componente durante os testes. O benefício de usar um stub é que ele retorna resultados consistentes, tornando o teste mais fácil de escrever. E você pode executar testes mesmo se os outros componentes não estiverem funcionando ainda.
 
  Para obter uma visão geral e início rápido guia Fakes, confira [Isolamento de código em teste com Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md).
 
@@ -471,7 +471,7 @@ StubBehaviors.Current =
 
 ## <a name="external-resources"></a>Recursos externos
 
-### <a name="guidance"></a>Diretrizes
+### <a name="guidance"></a>{1&gt;Orientação&lt;1}
  [Testes de Entrega Contínua com o Visual Studio 2012 – Capítulo 2: Teste de Unidade: Testando o Interior](https://go.microsoft.com/fwlink/?LinkID=255188)
 
 ## <a name="see-also"></a>Consulte também

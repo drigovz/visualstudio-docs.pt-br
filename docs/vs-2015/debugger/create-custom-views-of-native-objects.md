@@ -445,7 +445,7 @@ A estrutura de Natvis do Visual Studio permite que você personalize a maneira c
 
  Agora você pode usar o operador de `[]` com uma expansão de `IndexListItems`, por exemplo `vector[i]`. O operador `[]` pode ser usado com qualquer visualização de uma matriz unidimensional que usa `ArrayItems` ou `IndexListItems`, mesmo que o próprio tipo não permita esse operador (por exemplo `CATLArray`).  
 
- A única diferença entre `ArrayItems` e `IndexListItems` é que `ValueNode` espera a expressão completa para o elemento iº com o parâmetro implícito <sup>.  
+ A única diferença entre `ArrayItems` e `IndexListItems` é que o `ValueNode` espera a expressão completa para<sup>o elemento i</sup> com o parâmetro de `$i` implícito.  
 
 #### <a name="BKMK_LinkedListItems_expansion"></a> Expansão de LinkedListItems  
  Se o tipo visualizado representa uma lista vinculada, o depurador pode exibir seus filhos usando um nó `LinkedListItems`. Veja a visualização do tipo `CAtlList` usando esse recurso:  
@@ -548,7 +548,7 @@ A estrutura de Natvis do Visual Studio permite que você personalize a maneira c
 
  ![expansão&#95;de&#60;ExpandedItem&#60;de&#62; &#62; vetor int de auto PTR](../debugger/media/dbg-natvis-expand-expandeditem-visualized.png "DBG_NATVIS_Expand_ExpandedItem_Visualized")  
 
- O exemplo a seguir mostra como agregar propriedades da classe base em uma classe derivada. Suponha que a classe `CPanel` seja derivada de `CFrameworkElement`. Em vez de repetir as propriedades provenientes da classe base `CFrameworkElement`, o nó `ExpandedItem` permite que essas propriedades sejam acrescentadas à lista filho da classe `CPanel`. O especificador de formato **nd** que desativa a correspondência de visualização da classe derivada é necessário aqui. Caso contrário, a expressão `*(CFrameworkElement*)this` fará com que a visualização `CPanel` seja aplicada novamente porque o tipo de visualização padrão correspondente às regras a considera mais apropriada. O uso do especificador de formato **nd** instrui o depurador a usar a visualização da classe base ou a expansão padrão da classe base se a classe base não tiver uma visualização.  
+ O exemplo a seguir mostra como agregar propriedades da classe base em uma classe derivada. Suponha que a classe `CPanel` seja derivada de `CFrameworkElement`. Em vez de repetir as propriedades provenientes da classe base `CFrameworkElement`, o nó `ExpandedItem` permite que essas propriedades sejam acrescentadas à lista filho da classe `CPanel`. O especificador de formato **ND** que desativa a correspondência de visualização para a classe derivada é necessário aqui. Caso contrário, a expressão `*(CFrameworkElement*)this` fará com que a visualização `CPanel` seja aplicada novamente porque o tipo de visualização padrão correspondente às regras a considera mais apropriada. O uso do especificador de formato **ND** instrui o depurador a usar a visualização da classe base ou a expansão padrão da classe base se a classe base não tiver uma visualização.  
 
 ```xml  
 <Type Name="CPanel">  

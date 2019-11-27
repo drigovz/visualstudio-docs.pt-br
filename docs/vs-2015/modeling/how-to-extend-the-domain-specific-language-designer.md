@@ -71,7 +71,7 @@ Você pode fazer extensões para o designer que você usa para Editar definiçõ
 
  Para implantar as extensões no principal [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]e em outros computadores, siga estas etapas:
 
-1. Localize o arquivo de instalação de VSIX, no seu projeto do VSIX na gaveta\\*\*\\\*.vsix
+1. Localize o arquivo de instalação do VSIX, em seu projeto VSIX no bin\\*\\\*. vsix
 
 2. Copie esse arquivo para o computador de destino e, em seguida, no Windows Explorer (ou no explorador de arquivos), clique duas vezes nele.
 

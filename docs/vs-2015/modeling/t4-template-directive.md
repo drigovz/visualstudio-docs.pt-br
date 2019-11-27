@@ -62,7 +62,7 @@ debug="true"
 
  Para modelos de tempo de design, o arquivo de código intermediário será gravado no diretório **% Temp%** .
 
- Para executar um modelo de tempo de design no depurador, salve o modelo de texto, abra o menu de atalho do modelo de texto no Gerenciador de Soluções e escolha **Depurar Modelo T4**.
+ Para executar um modelo de tempo de design no depurador, salve o modelo de texto, abra o menu de atalho do modelo de texto em Gerenciador de Soluções e escolha **depurar modelo T4**.
 
 ## <a name="hostspecific-attribute"></a>Atributo hostspecific
  Exemplo:
@@ -75,7 +75,7 @@ hostspecific="true"
 
  Se você definir o valor desse atributo como `true`, uma propriedade chamada `Host` será adicionado à classe gerada pelo modelo de texto. A propriedade é uma referência ao host do mecanismo de transformação e é declarada como [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110)). Se você definiu um host personalizado, pode convertê-lo no tipo de host personalizado.
 
- Como o tipo dessa propriedade depende do tipo de host, ele só é útil se você estiver gravando um modelo de texto que funciona somente com um host específico. É aplicável a [modelos de tempo de design](../modeling/design-time-code-generation-by-using-t4-text-templates.md), mas não a [modelos de tempo de execução](../modeling/run-time-text-generation-with-t4-text-templates.md).
+ Como o tipo dessa propriedade depende do tipo de host, ele só é útil se você estiver gravando um modelo de texto que funciona somente com um host específico. Ele é aplicável a [modelos de tempo de design](../modeling/design-time-code-generation-by-using-t4-text-templates.md), mas não [a modelos de tempo de execução](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
  Quando `hostspecific` for `true`, e você estiver usando [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], poderá converter `this.Host` em IServiceProvider para acessar recursos do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Você também pode usar `Host.ResolvePath(filename)` para obter o caminho absoluto de um arquivo no projeto. Por exemplo:
 

@@ -24,7 +24,7 @@ ms.locfileid: "74298714"
 
 No Visual Studio, você pode definir extensões para diagramas de modelagem. Dessa maneira, você pode adaptar os diagramas e modelos às suas próprias necessidades. Por exemplo, você pode definir comandos de menu, perfis UML, restrições de validação e itens de caixa de ferramentas. Você pode definir vários componentes em uma única extensão. Você também pode distribuir essas extensões para outros usuários do Visual Studio na forma de um [VSIX (extensão de integração do Visual Studio)](https://go.microsoft.com/fwlink/?LinkId=160780). Você pode criar um VSIX usando um projeto VSIX no Visual Studio.
 
-## <a name="requirements"></a>Requisitos
+## <a name="requirements"></a>{1&gt;{2&gt;Requisitos&lt;2}&lt;1}
  Consulte [requisitos](../modeling/extend-uml-models-and-diagrams.md#Requirements).
 
  Para ver quais versões do Visual Studio oferecem suporte a esse recurso, consulte [suporte de versão para ferramentas de arquitetura e modelagem](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
@@ -68,13 +68,13 @@ No Visual Studio, você pode definir extensões para diagramas de modelagem. Des
 
 7. Na guia **ativos** , adicione seus componentes à extensão do Visual Studio.
 
-    1. Escolha **Novo**.
+    1. Escolha **novo**.
 
     2. Para um componente com código, defina esses campos na caixa de diálogo **Adicionar novo ativo** :
 
         |||
         |-|-|
-        |**Tipo** =|**Microsoft.VisualStudio.MefComponent**|
+        |**Tipo** =|**Microsoft. VisualStudio. MefComponent**|
         |**Source** =|**Um projeto na solução atual**|
         | = do **projeto**|*Seu projeto de biblioteca de classes*|
         |**Inserir nesta pasta** =|*esvaziá*|
@@ -86,7 +86,7 @@ No Visual Studio, você pode definir extensões para diagramas de modelagem. Des
 
 |Tipo de extensão|Tópico|Como cada componente é normalmente declarado|
 |--------------------|-----------|----------------------------------------------|
-|Menu Comando|[Definir um comando de menu em um diagrama de modelagem](../modeling/define-a-menu-command-on-a-modeling-diagram.md)|`[ClassDesignerExtension]`<br /><br /> `// or other diagram types`<br /><br /> `[Export(typeof(ICommandExtension))]`<br /><br /> `public class MyCommand : ICommandExtension`<br /><br /> `{...`|
+|{1&gt;Menu Comando&lt;1}|[Definir um comando de menu em um diagrama de modelagem](../modeling/define-a-menu-command-on-a-modeling-diagram.md)|`[ClassDesignerExtension]`<br /><br /> `// or other diagram types`<br /><br /> `[Export(typeof(ICommandExtension))]`<br /><br /> `public class MyCommand : ICommandExtension`<br /><br /> `{...`|
 |Arraste e solte ou clique duas vezes em|[Definir um manipulador de gestos em um diagrama de modelagem](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md)|`[ClassDesignerExtension]`<br /><br /> `// or other diagram types`<br /><br /> `[Export(typeof(IGestureExtension))]`<br /><br /> `public class MyGesture : IGestureExtension`<br /><br /> `{...`|
 |Restrição de validação|[Definir restrições de validação para modelos UML](../modeling/define-validation-constraints-for-uml-models.md)|`[Export(typeof(     System.Action<ValidationContext, object>))]`<br /><br /> `[ValidationMethod(ValidationCategories.Save`<br /><br /> `&#124; ValidationCategories.Menu)]`<br /><br /> `public void ValidateSomething`<br /><br /> `(ValidationContext context, IClassifier elementToValidate)`<br /><br /> `{...}`|
 |Manipulador de eventos de link do item de trabalho|[Definir um manipulador de link de item de trabalho](../modeling/define-a-work-item-link-handler.md)|`[Export(typeof(ILinkedWorkItemExtension))]`<br /><br /> `public class MyWorkItemEventHandler : ILinkedWorkItemExtension`<br /><br /> `{...`|
@@ -107,7 +107,7 @@ No Visual Studio, você pode definir extensões para diagramas de modelagem. Des
 
      Sua extensão será carregada e executada.
 
-3. Se você usou **Iniciar sem depuração** , mas deseja usar o depurador, volte para a instância principal do Visual Studio. No menu **Depurar**, clique em **Anexar ao Processo**. Na caixa de diálogo, selecione a instância experimental do Visual Studio, que tem o nome do programa **devenv**.
+3. Se você usou **Iniciar sem depuração** , mas deseja usar o depurador, volte para a instância principal do Visual Studio. No menu **depurar** , clique em **anexar ao processo**. Na caixa de diálogo, selecione a instância experimental do Visual Studio, que tem o nome do programa **devenv**.
 
 ## <a name="Installing"></a>Instalando e desinstalando uma extensão
  Execute as etapas a seguir para executar sua extensão na instância principal do Visual Studio em seu próprio computador ou em outros computadores.
@@ -138,7 +138,7 @@ No Visual Studio, você pode definir extensões para diagramas de modelagem. Des
 
    Raramente, uma extensão defeituosa não carrega e cria um relatório na janela de erro, mas não aparece no Gerenciador de extensões. Nesse caso, você pode remover a extensão excluindo o arquivo do seguinte local em que *% LocalAppData%* normalmente é *driveName*: \Users\\*username*\AppData\Local:
 
-   *%LocalAppData%* **\Microsoft\VisualStudio\\[version]\Extensions**
+   *% LocalAppData%* **\Microsoft\VisualStudio\\[versão] \Extensions**
 
 ## <a name="see-also"></a>Consulte também
  [Definir um perfil para estender](../modeling/define-a-profile-to-extend-uml.md) [o UML defina um item da caixa de ferramentas de modelagem personalizado](../modeling/define-a-custom-modeling-toolbox-item.md) [definir restrições de validação para modelos UML](../modeling/define-validation-constraints-for-uml-models.md) [definir um comando de menu em um diagrama de modelagem](../modeling/define-a-menu-command-on-a-modeling-diagram.md)

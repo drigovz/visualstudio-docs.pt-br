@@ -39,7 +39,7 @@ ms.locfileid: "74297900"
 - [Compilar um jogo multiplataforma para Android, iOS e Windows usando as ferramentas do Visual Studio para Unity](#Unity)
 
 ## <a name="NET"></a> Compilar um aplicativo para o Android, iOS e Windows (.NET Framework)
- ![Dispositivos](../cross-platform/media/homedevices.png "HomeDevices")
+ ![Pseudodispositivos](../cross-platform/media/homedevices.png "HomeDevices")
 
  Com o Xamarin, é possível ter o Android, iOS e Windows como destino na mesma solução, compartilhando o código e até mesmo a interface do usuário.
 
@@ -95,7 +95,7 @@ ms.locfileid: "74297900"
 |[Migrar aplicativos para a UWP (Plataforma Universal do Windows)](../misc/migrate-apps-to-the-universal-windows-platform-uwp.md)|
 
 ## <a name="HTML"></a> Compilar um aplicativo para o Android, iOS e Windows (HTML/JavaScript)
- ![Dispositivos](../cross-platform/media/homedevices.png "HomeDevices")
+ ![Pseudodispositivos](../cross-platform/media/homedevices.png "HomeDevices")
 
  Se você for um desenvolvedor da Web e estiver familiarizado com HTML e JavaScript, poderá ter como destino o Windows, Android e iOS usando as Ferramentas do Visual Studio para Apache Cordova. Esses aplicativos podem se destinar a todas as três plataformas e você pode criá-los usando as habilidades e os processos com os quais você está mais familiarizado.
 

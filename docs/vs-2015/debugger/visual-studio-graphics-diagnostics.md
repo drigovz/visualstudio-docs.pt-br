@@ -79,7 +79,7 @@ O Visual Studio*diagnóstico de gráficos* é um conjunto de ferramentas para gr
  [Exemplos](../debugger/graphics-diagnostics-examples.md)  
  Vários exemplos demonstram como usar as ferramentas de Diagnóstico de Gráficos juntas para diagnosticar diferentes tipos de problemas de renderização.  
   
-## <a name="related-sections"></a>Seções relacionadas  
+## <a name="related-sections"></a>Seções Relacionadas  
   
 |Título|Descrição|  
 |-----------|-----------------|  

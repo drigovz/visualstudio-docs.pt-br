@@ -46,7 +46,7 @@ Você pode usar as ferramentas de visualização e modelagem no Visual Studio pa
 |**Descreva o design do sistema de alto nível e valide o código em relação a este design:**<br /><br /> Descreva o design do sistema de alto nível e suas dependências pretendidas Criando diagramas de camada. Valide o código em relação a esse design para garantir que as dependências no código permaneçam consistentes com o design.|-   [criar diagramas de camada do seu código](../modeling/create-layer-diagrams-from-your-code.md)<br />[diagramas de camada de -   : referência](../modeling/layer-diagrams-reference.md)<br />[diagramas de camada de -   : diretrizes](../modeling/layer-diagrams-guidelines.md)<br />-   [validar o código com diagramas de camada](../modeling/validate-code-with-layer-diagrams.md)|
 |**Comunique os requisitos e a arquitetura do usuário:**<br /><br /> Modele os requisitos de usuário e a arquitetura do seu sistema de software desenhando os seguintes diagramas UML: atividade, componente, classe, sequência e caso de uso.|-   [criar modelos para seu aplicativo](../modeling/create-models-for-your-app.md)<br />[requisitos de usuário do modelo](../modeling/model-user-requirements.md) de -   <br />-   [modelar a arquitetura de seu aplicativo](../modeling/model-your-app-s-architecture.md)|
 
-## <a name="external-resources"></a>Recursos externos
+## <a name="external-resources"></a>Recursos Externos
 
 |**Categoria**|**Vincule**|
 |------------------|---------------|

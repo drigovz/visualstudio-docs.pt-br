@@ -24,7 +24,7 @@ O Visual Studio inclui um conjunto de compiladores, linguagens, runtimes, ambien
 ## <a name="external-components-that-follow-a-lifecycle-policy-other-than-the-visual-studio-policy"></a>Componentes externos que seguem uma política de ciclo de vida que não seja a política do Visual Studio  
  A tabela a seguir lista os componentes da plataforma Microsoft que podem ser incluídos com o Visual Studio (dependendo da edição específica do software Visual Studio) e que estão sujeitos às suas próprias políticas de suporte e quadros de tempo.  
   
-|FAMÍLIA DE PRODUTOS|NOME EXTERNO|  
+|FAMÍLIA DE PRODUTOS|EXTERNAL NAME|  
 |--------------------|-------------------|  
 |[.NET 3.5](https://support.microsoft.com/lifecycle/search?sort=PN&alpha=net%20framework%203.5&Filter=FilterNO)|SDK do .NET 3.5<br /><br /> Windows Identity Foundation|  
 |[.NET 4.5](https://support.microsoft.com/lifecycle/search?sort=PN&alpha=net%20framework%204.5&Filter=FilterNO)|SDK do .NET 4.5|  

@@ -29,7 +29,7 @@ O modelo de controle de caixa de ferramentas de Windows Forms que está incluíd
   
 #### <a name="to-create-a-windows-forms-toolbox-control-project"></a>Para criar um projeto de controle de caixa de ferramentas de Windows Forms  
   
-1. No menu **Arquivo**, clique em **Novo** e clique em **Projeto**.  
+1. No menu **Arquivo**, clique em **Novo** e em **Projeto**.  
   
 2. Na caixa de diálogo **novo projeto** , em **modelos instalados**, clique no nó para sua linguagem de programação preferida e clique em **extensibilidade**. Na lista de tipos de projeto, selecione **Windows Forms controle caixa de ferramentas**.  
   

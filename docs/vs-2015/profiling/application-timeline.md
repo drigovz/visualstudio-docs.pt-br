@@ -61,7 +61,8 @@ Use o criador de perfil **Linha do Tempo de Aplicativo** para localizar e corrig
   
 5. Para interromper a criação de perfil, volte para a janela .diagsession e clique em **Parar** na parte superior da janela.  
   
-     O Visual Studio analisa os dados coletados e exibe os resultados.  
+     {5&gt;&lt;5}
+  {7&gt;O Visual Studio analisa os dados coletados e exibe os resultados.&lt;7}  
   
      ![Cronograma relatório do criador de perfil](../profiling/media/timeline-base.png "TIMELINE_Base")  
   
@@ -80,7 +81,7 @@ Use o criador de perfil **Linha do Tempo de Aplicativo** para localizar e corrig
   
  A régua na parte superior da página mostra a linha do tempo para informações com o perfil criado. Essa linha do tempo aplica-se ao gráfico **Utilização de thread de interface do usuário** e **Taxa de transferência visual**. Você pode restringir o escopo do relatório arrastando as barras de navegação na linha do tempo para selecionar um segmento da linha do tempo.  
   
- A linha do tempo também exibe todas as marcas de usuário inseridas e os eventos de ciclo de vida de ativação do aplicativo.  
+ {6&gt;A linha do tempo também exibe todas as marcas de usuário inseridas e os eventos de ciclo de vida de ativação do aplicativo.&lt;6}  
   
 ### <a name="BKMK_UI_thread_utilization_graph"></a> Gráfico de utilização de thread da interface do usuário  
  ![Gráfico de utilização da CPU](../profiling/media/timeline-cpuutilization.png "TIMELINE_CpuUtilization")  
@@ -88,7 +89,7 @@ Use o criador de perfil **Linha do Tempo de Aplicativo** para localizar e corrig
  O gráfico **Utilização do thread da interface do usuário (%)** é um gráfico de barras que exibe a quantidade relativa de tempo gasto em uma categoria durante um período de coleta.  
   
 ### <a name="BKMK_Visual_throughput_FPS_graph"></a> Gráfico de taxa de transferência visual (FPS)  
- {1&gt;Gráfico Taxa de Transferência Visual&lt;1}  
+ ![Grafo de produtividade Visual](../profiling/media/timeline-visualthroughput.png "TIMELINE_VisualThroughput")  
   
  O gráfico de linhas **Taxa de transferência visual (FPS)** mostra FPS (quadros por segundo) na interface do usuário e no thread de composição para o aplicativo.  
   

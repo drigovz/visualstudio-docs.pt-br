@@ -1,5 +1,5 @@
 ---
-title: Remote Debugger Port Assignments | Microsoft Docs
+title: Atribuições de porta do depurador remoto | Microsoft Docs
 ms.custom: ''
 ms.date: 05/18/2018
 ms.topic: reference
@@ -17,7 +17,7 @@ ms.lasthandoff: 11/20/2019
 ms.locfileid: "74239452"
 ---
 # <a name="remote-debugger-port-assignments"></a>Atribuições de porta do depurador remoto
-The Visual Studio Remote Debugger can run as an application or as a background service. When it runs as an application, it uses a port that is assigned by default as follows:
+O Depurador Remoto do Visual Studio pode ser executado como um aplicativo ou como um serviço em segundo plano. Quando ele é executado como um aplicativo, ele usa uma porta que é atribuída por padrão da seguinte maneira:
 ::: moniker range=">=vs-2019"
 - Visual Studio 2019: 4024
 ::: moniker-end
@@ -29,42 +29,42 @@ The Visual Studio Remote Debugger can run as an application or as a background s
 
 - Visual Studio 2012: 4016
 
-In other words, the number of the port assigned to the remote debugger is incremented by 2 for each release. You can set a different port number of you like. We will explain how to set port numbers in a later section.
+Em outras palavras, o número da porta atribuída ao depurador remoto é incrementado por 2 para cada versão. Você pode definir um número de porta diferente que desejar. Explicaremos como definir números de porta em uma seção posterior.
 
-## <a name="the-remote-debugger-port-on-32-bit-operating-systems"></a>The Remote Debugger Port on 32-bit Operating Systems
+## <a name="the-remote-debugger-port-on-32-bit-operating-systems"></a>A porta do depurador remoto em sistemas operacionais de 32 bits
 
 ::: moniker range=">=vs-2019"
- TCP 4024 (in Visual Studio 2019) is the main port, and is required for all scenarios. You can configure this from either the command line or the remote debugger window.
+ O TCP 4024 (no Visual Studio 2019) é a porta principal e é necessário para todos os cenários. Você pode configurá-lo na linha de comando ou na janela do depurador remoto.
 ::: moniker-end
 ::: moniker range="vs-2017"
- TCP 4022 (in Visual Studio 2017) is the main port, and is required for all scenarios. You can configure this from either the command line or the remote debugger window.
+ O TCP 4022 (no Visual Studio 2017) é a porta principal e é necessário para todos os cenários. Você pode configurá-lo na linha de comando ou na janela do depurador remoto.
 ::: moniker-end
 
- In the remote debugger window, click **Tools > Options**, and set the TCP/IP port number.
+ Na janela depurador remoto, clique em **ferramentas > opções**e defina o número da porta TCP/IP.
 
- On the command line, start the remote debugger with the **/port** switch: **msvsmon /port \<port number>** .
+ Na linha de comando, inicie o depurador remoto com a opção **/Port** : **msvsmon/Port \<número da porta >** .
 
- You can find all the remote debugger command line switches in the remote debugging help (press **F1** or click **Help > Usage** in the remote debugger window).
+ Você pode encontrar todas as opções de linha de comando do depurador remoto na ajuda da depuração remota (pressione **F1** ou clique em **Ajuda > uso** na janela do depurador remoto).
 
-## <a name="the-remote-debugger-port-on-64-bit-operating-systems"></a>The Remote Debugger Port on 64-bit Operating Systems
+## <a name="the-remote-debugger-port-on-64-bit-operating-systems"></a>A porta do depurador remoto em sistemas operacionais de 64 bits
 ::: moniker range=">=vs-2019"
- When the 64-bit version of the remote debugger is started, it uses the main port (4024) by default.  If you debug a 32-bit process, the 64-bit version of the remote debugger starts a 32-bit version of the remote debugger on port 4025 (the main port number incremented by 1). If you run the 32-bit remote debugger, it uses 4024, and 4025 is not used.
+ Quando a versão de 64 bits do depurador remoto é iniciada, ela usa a porta principal (4024) por padrão.  Se você depurar um processo de 32 bits, a versão de 64 bits do depurador remoto iniciará uma versão de 32 bits do depurador remoto na porta 4025 (o número da porta principal é incrementado em 1). Se você executar o depurador remoto de 32 bits, ele usará 4024 e 4025 não será usado.
 ::: moniker-end
 ::: moniker range="vs-2017"
- When the 64-bit version of the remote debugger is started, it uses the main port (4022) by default.  If you debug a 32-bit process, the 64-bit version of the remote debugger starts a 32-bit version of the remote debugger on port 4023 (the main port number incremented by 1). If you run the 32-bit remote debugger, it uses 4022, and 4023 is not used.
+ Quando a versão de 64 bits do depurador remoto é iniciada, ela usa a porta principal (4022) por padrão.  Se você depurar um processo de 32 bits, a versão de 64 bits do depurador remoto iniciará uma versão de 32 bits do depurador remoto na porta 4023 (o número da porta principal é incrementado em 1). Se você executar o depurador remoto de 32 bits, ele usará 4022 e 4023 não será usado.
 :::moniker-end
 
- This port is configurable from the command line: **Msvsmon /wow64port \<port number>** .
+ Essa porta é configurável na linha de comando: **msvsmon/wow64port \<número da porta >** .
 
-## <a name="the-discovery-port"></a>The Discovery Port
- UDP 3702 is used for finding running instances of the remote debugger on the network (for example, the **Find** dialog in the **Attach to Process** dialog). It is used only for discovering a machine running the remote debugger, so it is  optional if you have some other way of knowing the machine name or IP address of the target computer. This is a standard port for discovery, so the port number cannot be configured.
+## <a name="the-discovery-port"></a>A porta de descoberta
+ O UDP 3702 é usado para localizar instâncias em execução do depurador remoto na rede (por exemplo, a caixa de diálogo **Localizar** na caixa de diálogo **anexar ao processo** ). Ele é usado apenas para descobrir um computador que executa o depurador remoto, portanto, é opcional se você tiver alguma outra forma de saber o nome do computador ou o endereço IP de um dos computadores de destino. Essa é uma porta padrão para descoberta, portanto, o número da porta não pode ser configurado.
 
- If you do not want to enable discovery, you can start msvsmon from the command line with discovery disabled:  **Msvsmon /nodiscovery**.
+ Se não quiser habilitar a descoberta, você poderá iniciar o msvsmon na linha de comando com a descoberta desabilitada: **msvsmon/noDiscovery**.
 
-## <a name="remote-debugger-ports-on-azure"></a>Remote Debugger Ports on Azure
- The following ports are used by the remote debugger on Azure. The ports on the cloud service are mapped to the ports on the individual VM. All ports are TCP.
+## <a name="remote-debugger-ports-on-azure"></a>Portas do depurador remoto no Azure
+ As portas a seguir são usadas pelo depurador remoto no Azure. As portas no serviço de nuvem são mapeadas para as portas na VM individual. Todas as portas são TCP.
 
-|Conexão|Port on Cloud Service|Port on VM|
+|Conexão|Porta no serviço de nuvem|Porta na VM|
 |-|-|-|
 |Microsoft.WindowsAzure.Plugins.RemoteDebugger.Connector|30400|30398|
 |Microsoft.WindowsAzure.Plugins.RemoteDebugger.Forwarder|31400|31398|

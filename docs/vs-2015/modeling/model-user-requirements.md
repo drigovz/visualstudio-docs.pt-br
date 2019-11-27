@@ -51,7 +51,7 @@ O Visual Studio ajuda você a entender, discutir e comunicar as necessidades dos
 ## <a name="common-tasks"></a>Tarefas comuns
  Você pode criar várias exibições diferentes dos requisitos dos usuários.  Cada exibição fornece um tipo específico de informação.  Quando você cria essas exibições, é melhor movê-las com frequência de uma para outra. Você pode iniciar em qualquer modo de exibição.
 
-|Diagrama ou documento|O que ele descreve em um modelo de requisitos|Seção|
+|Diagrama ou documento|O que ele descreve em um modelo de requisitos|`Section`|
 |-------------------------|-----------------------------------------------|-------------|
 |Diagrama de caso de uso|Quem usa o sistema e o que eles fazem com ele.|[Descrevendo como o sistema é usado](#UseCases)|
 |Diagrama de classe conceitual|Glossário de tipos que são usados para descrever os requisitos; os tipos visíveis na interface do sistema.|[Definindo termos usados para descrever os requisitos](#RequirementsClasses)|
@@ -87,7 +87,7 @@ O Visual Studio ajuda você a entender, discutir e comunicar as necessidades dos
 
   Os tópicos a seguir fornecem mais informações:
 
-|Para saber mais sobre|Ler|
+|Para saber mais|Ler|
 |--------------------|----------|
 |Informações mais detalhadas sobre como criar casos de uso|[Diagramas de caso de uso UML: diretrizes](../modeling/uml-use-case-diagrams-guidelines.md)|
 |Elementos em um diagrama de caso de uso|[Diagramas de caso de uso UML: referência](../modeling/uml-use-case-diagrams-reference.md)|
@@ -132,7 +132,7 @@ O Visual Studio ajuda você a entender, discutir e comunicar as necessidades dos
 
   Os tópicos a seguir fornecem mais informações:
 
-|Para saber mais sobre|Ler|
+|Para saber mais|Ler|
 |--------------------|----------|
 |Informações mais detalhadas sobre como localizar classes de requisitos|[Diagramas de classe UML: diretrizes](../modeling/uml-class-diagrams-guidelines.md)|
 |Elementos em um diagrama de classe conceitual|[Diagramas de classe UML: referência](../modeling/uml-class-diagrams-reference.md)|
@@ -155,14 +155,14 @@ O Visual Studio ajuda você a entender, discutir e comunicar as necessidades dos
 
  Os tópicos a seguir fornecem mais informações:
 
-|Para saber mais sobre|Ler|
+|Para saber mais|Ler|
 |--------------------|----------|
 |Informações mais detalhadas sobre como localizar e registrar regras de negócio estáticos|[Diagramas de classe UML: diretrizes](../modeling/uml-class-diagrams-guidelines.md)|
 |Elementos em um diagrama de classe conceitual|[Diagramas de classe UML: referência](../modeling/uml-class-diagrams-reference.md)|
 |Como desenvolver código que siga as regras de negócio|[Modelar a arquitetura do aplicativo](../modeling/model-your-app-s-architecture.md)|
 
 ## <a name="QoSRequirements"></a>Descrevendo os requisitos de qualidade de serviço
- Há várias categorias de requisitos de qualidade de serviço. Elas incluem o seguinte:
+ Há várias categorias de requisitos de qualidade de serviço. Eles incluem o seguinte:
 
 - Desempenho
 
@@ -180,7 +180,7 @@ O Visual Studio ajuda você a entender, discutir e comunicar as necessidades dos
 
   Os tópicos a seguir fornecem mais informações:
 
-|Para saber mais sobre|Ler|
+|Para saber mais|Ler|
 |--------------------|----------|
 |Anexando documentos adicionais a casos de uso|[Vincular um caso de uso a documentos e diagramas](../modeling/link-a-use-case-to-documents-and-diagrams.md)|
 |Como desenvolver código que atenda aos requisitos de qualidade de serviço|[Modelar a arquitetura do aplicativo](../modeling/model-your-app-s-architecture.md)|
@@ -200,7 +200,7 @@ O Visual Studio ajuda você a entender, discutir e comunicar as necessidades dos
 
  Os tópicos a seguir fornecem mais informações:
 
-|Para saber mais sobre|Ler|
+|Para saber mais|Ler|
 |--------------------|----------|
 |Mais informações sobre como definir fluxos de trabalho corporativos|[Diagramas de atividade UML: diretrizes](../modeling/uml-activity-diagrams-guidelines.md)|
 |Elementos em um diagrama de atividade|[Diagramas de atividade UML: referência](../modeling/uml-activity-diagrams-reference.md)|
@@ -217,7 +217,7 @@ O Visual Studio ajuda você a entender, discutir e comunicar as necessidades dos
 
  Os tópicos a seguir fornecem mais informações:
 
-|Para saber mais sobre|Ler|
+|Para saber mais|Ler|
 |--------------------|----------|
 |Mais informações sobre como definir interações|[Diagramas de sequência UML: diretrizes](../modeling/uml-sequence-diagrams-guidelines.md)|
 |Elementos em um diagrama de sequência|[Diagramas de sequência UML: referência](../modeling/uml-sequence-diagrams-reference.md)|

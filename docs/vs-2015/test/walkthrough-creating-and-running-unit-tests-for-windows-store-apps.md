@@ -40,8 +40,8 @@ O Visual Studio inclui suporte para aplicativos do [!INCLUDE[win8_appname_long](
 
   Os procedimentos a seguir descrevem as etapas para criar, executar e depurar testes de unidade para aplicativos do [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] Windows 8 gerenciado .
 
-## <a name="prerequisites"></a>Pré-requisitos
- Visual Studio
+## <a name="prerequisites"></a>{1&gt;Pré-requisitos&lt;1}
+ {1&gt;Visual Studio&lt;1}
 
 ## <a name="CreateAndRunUnitTestWin8Tailored_Create"></a> Criar projetos de teste de unidade
 
@@ -136,7 +136,7 @@ O Visual Studio inclui suporte para aplicativos do [!INCLUDE[win8_appname_long](
 
      ![Teste do Gerenciador &#45; de testes de unidade concluído](../test/media/unit-test-win8-unittestexplorer-done.png "Unit_Test_Win8_UnitTestExplorer_Done")
 
-## <a name="external-resources"></a>Recursos externos
+## <a name="external-resources"></a>Recursos Externos
 
 ### <a name="videos"></a>Vídeos
  [Canal 9: teste de unidade dos aplicativos da Windows Store criados com XAML](https://go.microsoft.com/fwlink/?LinkId=226285)

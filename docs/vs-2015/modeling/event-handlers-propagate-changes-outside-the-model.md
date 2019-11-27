@@ -94,7 +94,7 @@ namespace Company.MusicLib
 ```
 
 ## <a name="using-events-to-make-undoable-adjustments-in-the-store"></a>Usando eventos para fazer ajustes desfeitos na loja
- Os eventos de armazenamento normalmente não são usados para propagar alterações no repositório, pois o manipulador de eventos é executado depois que a transação é confirmada. Em vez disso, você usaria uma regra de armazenamento. Para obter mais informações, consulte [propagam alterações dentro do modelo de regras](../modeling/rules-propagate-changes-within-the-model.md).
+ Os eventos de armazenamento normalmente não são usados para propagar alterações no repositório, pois o manipulador de eventos é executado depois que a transação é confirmada. Em vez disso, você usaria uma regra de armazenamento. Para obter mais informações, consulte [regras propagar alterações no modelo](../modeling/rules-propagate-changes-within-the-model.md).
 
  No entanto, você pode usar um manipulador de eventos para fazer atualizações adicionais na loja, se quiser que o usuário consiga desfazer as atualizações adicionais separadamente do evento original. Por exemplo, suponha que caracteres minúsculos sejam a Convenção comum para títulos de álbuns. Você poderia escrever um manipulador de eventos de armazenamento que corrija o título para letras minúsculas depois que o usuário o tiver digitado em letras maiúsculas. Mas o usuário pode usar o comando Desfazer para cancelar a correção, restaurando os caracteres em maiúsculas. Uma segunda desfazer removeria a alteração do usuário.
 

@@ -348,9 +348,9 @@ protected override void Dispose(bool disposing)
 
  Preencha o registro com dois valores:
 
-|Nome|Digite|Dados|Descrição|
+|Name|Digite|Dados|Descrição|
 |----------|----------|----------|-----------------|
-|Categoria|REG_SZ|GUID|Um GUID criado para identificar a categoria|
+|Category|REG_SZ|GUID|Um GUID criado para identificar a categoria|
 |Pacote|REG_SZ|GUID|O GUID do serviço VSPackage que dá suporte à categoria|
 
  O serviço especificado no registro deve fornecer uma implementação de [IVsFontAndColorDefaults](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolordefaults.aspx) para a categoria correspondente.
@@ -360,9 +360,9 @@ protected override void Dispose(bool disposing)
 
  Preencha o registro com dois valores:
 
-|Nome|Digite|Dados|Descrição|
+|Name|Digite|Dados|Descrição|
 |----------|----------|----------|-----------------|
-|Categoria|REG_SZ|GUID|Um GUID criado para identificar a categoria|
+|Category|REG_SZ|GUID|Um GUID criado para identificar a categoria|
 |Pacote|REG_SZ|GUID|O GUID do serviço VSPackage que dá suporte à categoria|
 
  O serviço especificado no registro deve fornecer uma implementação de **T:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup** para o grupo correspondente.

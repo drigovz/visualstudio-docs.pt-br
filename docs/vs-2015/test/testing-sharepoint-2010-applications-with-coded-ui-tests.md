@@ -137,7 +137,7 @@ uiGridKeyboardInputEdit.Text=value;
 
  [Índice de conteúdo para o teste de IU codificado](https://blogs.msdn.microsoft.com/mathew_aniyan/2013/02/18/content-index-for-coded-ui-test/)
 
-### <a name="guidance"></a>Diretrizes
+### <a name="guidance"></a>{1&gt;Orientação&lt;1}
  [Teste de entrega contínua com o Visual Studio 2012 – Capítulo 5: Automatizando testes do sistema](https://go.microsoft.com/fwlink/?LinkID=255196)
 
 ### <a name="forum"></a>Fórum

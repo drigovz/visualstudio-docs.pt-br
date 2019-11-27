@@ -85,7 +85,7 @@ Descreva a arquitetura do aplicativo em um alto nível criando *diagramas de cam
  Existirá uma dependência sempre que um artefato associado a uma camada tiver uma referência a um artefato associado a outra camada. Por exemplo, uma classe em uma camada declara uma variável que tem uma classe em outra camada. Você pode descobrir dependências existentes por meio da engenharia reversa.
 
 > [!NOTE]
-> As dependências não podem sofrer engenharia reversa para determinados tipos de artefatos. Por exemplo, nenhuma dependência sofrerá engenharia reversa de ou para uma camada vinculada a um arquivo de texto. Para ver quais artefatos têm dependências que você pode fazer engenharia reversa, clique com o botão direito do mouse em uma ou várias camadas e clique em **exibir links**. Em **Gerenciador de Camadas**, examine a coluna **Dá Suporte à Validação**. As dependências não sofrerão engenharia reversa para artefatos para os quais essa coluna mostra **Falso**.
+> As dependências não podem sofrer engenharia reversa para determinados tipos de artefatos. Por exemplo, nenhuma dependência sofrerá engenharia reversa de ou para uma camada vinculada a um arquivo de texto. Para ver quais artefatos têm dependências que você pode fazer engenharia reversa, clique com o botão direito do mouse em uma ou várias camadas e clique em **exibir links**. No **Gerenciador de camadas**, examine a coluna de **validação de suporte** . As dependências não serão criadas com engenharia reversa para artefatos para os quais essa coluna mostra **false**.
 
 #### <a name="to-reverse-engineer-existing-dependencies-between-layers"></a>Para fazer engenharia reversa de dependências existentes entre camadas
 
@@ -99,11 +99,11 @@ Descreva a arquitetura do aplicativo em um alto nível criando *diagramas de cam
 |**To**|**Execute estas etapas**|
 |------------|-----------------------------|
 |Excluir uma dependência que não deveria existir|Clique na dependência e pressione **delete**.|
-|Alterar ou restringir a direção de uma dependência|Defina sua propriedade **Direção**.|
-|Criar novas dependências|Use as ferramentas **Dependência** e **Dependência Bidirecional**.<br /><br /> Para desenhar várias dependências, clique duas vezes na ferramenta. Quando tiver terminado, clique na ferramenta **ponteiro** ou pressione a tecla **ESC** .|
-|Especificar que os artefatos associados a uma camada não dependem dos namespaces especificados|Digite os namespaces na propriedade **Dependências de Namespace Proibidas** da camada. Use um ponto-e-vírgula ( **;** ) para separar os namespaces.|
-|Especificar que os artefatos associados a uma camada não devem pertencer aos namespaces especificados|Digite os namespaces na propriedade **Namespaces Proibidos** da camada. Use um ponto-e-vírgula ( **;** ) para separar os namespaces.|
-|Especificar que os artefatos associados a uma camada devem pertencer a um dos namespaces especificados|Digite o namespace na propriedade **Namespaces Obrigatórios** da camada. Use um ponto-e-vírgula ( **;** ) para separar os namespaces.|
+|Alterar ou restringir a direção de uma dependência|Defina sua propriedade **Direction** .|
+|Criar novas dependências|Use as **ferramentas dependência e** **dependência bidirecional** .<br /><br /> Para desenhar várias dependências, clique duas vezes na ferramenta. Quando tiver terminado, clique na ferramenta **ponteiro** ou pressione a tecla **ESC** .|
+|Especificar que os artefatos associados a uma camada não dependem dos namespaces especificados|Digite os namespaces na propriedade **dependências de namespace proibido** da camada. Use um ponto-e-vírgula ( **;** ) para separar os namespaces.|
+|Especificar que os artefatos associados a uma camada não devem pertencer aos namespaces especificados|Digite os namespaces na propriedade de **namespaces proibidos** da camada. Use um ponto-e-vírgula ( **;** ) para separar os namespaces.|
+|Especificar que os artefatos associados a uma camada devem pertencer a um dos namespaces especificados|Digite o namespace na propriedade **namespaces obrigatórios** da camada. Use um ponto-e-vírgula ( **;** ) para separar os namespaces.|
 
 ### <a name="Improving"></a>Melhorando a estrutura do código
  As alterações de refatoração são melhorias que não afetam o comportamento do aplicativo, mas ajudam a facilitar a alteração e a extensão do código no futuro. O código bem estruturado tem um design que é fácil de abstrair para um diagrama de camadas.

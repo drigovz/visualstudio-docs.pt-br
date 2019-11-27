@@ -20,7 +20,7 @@ ms.locfileid: "74302055"
 
 Neste passo a passo, você criará um aplicativo simples do Windows Presentation Foundation (WPF) para demonstrar como criar, editar e manter um teste de IU codificado. O passo a passo fornece soluções para corrigir os testes que foram interrompidos por vários problemas de timing e refatoração de controle.
 
-## <a name="prerequisites"></a>Pré-requisitos
+## <a name="prerequisites"></a>{1&gt;Pré-requisitos&lt;1}
  Para este passo a passo, será necessário:
 
 - Visual Studio Enterprise
@@ -141,7 +141,7 @@ Neste passo a passo, você criará um aplicativo simples do Windows Presentation
 
 7. Selecione a opção **Gravar ações, editar o mapa de IU ou adicionar asserções** e escolha **OK**.
 
-     O UIMap – Construtor de Teste de IU Codificado é exibido e a janela do Visual Studio é minimizada.
+     O UIMap – Construtor de Teste de IU Codificado é exibido, e a janela do Visual Studio é minimizada.
 
      Para obter mais informações sobre as opções da caixa de diálogo, consulte [Criando testes de IU codificados](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate).
 
@@ -366,7 +366,7 @@ Neste passo a passo, você criará um aplicativo simples do Windows Presentation
 
      Dessa vez, o teste de IU codificado conclui com sucesso todas as etapas do teste.  Na janela Resultados do Teste, você verá o status de **Aprovado**.
 
-## <a name="external-resources"></a>Recursos externos
+## <a name="external-resources"></a>Recursos Externos
 
 ### <a name="videos"></a>Vídeos
  ![link para testes de](../data-tools/media/playvideo.gif "PlayVideo") [interface do usuário codificados em vídeo – DeepDive-Episode1-gettingstarted](https://go.microsoft.com/fwlink/?LinkID=230573)

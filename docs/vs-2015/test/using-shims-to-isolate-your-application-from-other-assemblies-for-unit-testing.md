@@ -18,9 +18,9 @@ ms.locfileid: "74301420"
 # <a name="using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing"></a>Usando shims para isolar seu aplicativo de outros assemblies para teste de unidade
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Os tipos de shim** são uma das duas tecnologias usadas pelo Microsoft Fakes Framework para permitir que você isole com facilidade componentes em teste do ambiente. Shims desviam chamadas a métodos específicos para o código que você está escrevendo como parte de seu teste. Muitos métodos retornam resultados diferentes dependendo das condições externas, mas um shim está sob controle do seu teste e pode retornar resultados consistentes em cada chamada. Isso facilita a escrita dos testes.
+Os tipos de shim** são uma das duas tecnologias usadas pelo Microsoft Fakes Framework para permitir que você isole com facilidade componentes em teste do ambiente. Shims desviam chamadas para métodos específicos para o código que você escreve como parte de seu teste. Muitos métodos retornam resultados diferentes dependendo das condições externas, mas um shim está sob controle do seu teste e pode retornar resultados consistentes em cada chamada. Isso deixa seus testes muito mais fáceis de escrever.
 
- Use shims para isolar o código de assemblies que não fazem parte de sua solução. Para isolar os componentes da solução uns dos outros, recomendamos que você use stubs.
+ Use Shims para isolar seu código de assemblies que não fazem parte de sua solução. Para isolar componentes da sua solução uns dos outros, recomendamos que você use stubs.
 
  Para obter uma visão geral e início rápido, confira [Isolamento de código em teste com o Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md)
 
@@ -503,7 +503,7 @@ ShimFile.WriteAllTextStringString = shim;
 
 ## <a name="external-resources"></a>Recursos externos
 
-### <a name="guidance"></a>Diretrizes
+### <a name="guidance"></a>{1&gt;Orientação&lt;1}
  [Testes de Entrega Contínua com o Visual Studio 2012 – Capítulo 2: Teste de Unidade: Testando o Interior](https://go.microsoft.com/fwlink/?LinkID=255188)
 
 ## <a name="see-also"></a>Consulte também

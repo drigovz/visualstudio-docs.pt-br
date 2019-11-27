@@ -87,15 +87,15 @@ Você pode estar usando uma versão do Visual Studio Enterprise anterior a 2012.
  *O que mais eu deveria saber?*
  **Dicas**
 
-- ![Dica](../test/media/tip.png "Dica") Se o janela Propriedades não for exibido, pressione e mantenha pressionada a **tecla Alt** enquanto pressiona **Enter**ou pressione **F4**.
+- ![Dica](../test/media/tip.png "{1&gt;Dica&lt;1}") Se o janela Propriedades não for exibido, pressione e mantenha pressionada a **tecla Alt** enquanto pressiona **Enter**ou pressione **F4**.
 
-- ![Dica](../test/media/tip.png "Dica") Para desfazer as alterações de propriedade feitas, selecione **desfazer** no menu **Editar** ou pressione CTRL + Z.
+- ![Dica](../test/media/tip.png "{1&gt;Dica&lt;1}") Para desfazer as alterações de propriedade feitas, selecione **desfazer** no menu **Editar** ou pressione CTRL + Z.
 
-- ![Dica](../test/media/tip.png "Dica") Você pode usar o botão **Localizar** na barra de ferramentas do editor de teste de interface do usuário codificado para abrir a ferramenta localizar e substituir no Visual Studio. Em seguida, será possível usar o controle Localizar para localizar uma ação de interface do usuário no Editor de Teste de IU Codificado. Por exemplo, você pode tentar localizar “Clique no botão ‘Logon’”. Isso pode ser útil em testes grandes. Não é possível utilizar a funcionalidade de substituição na ferramenta Localizar e Substituir no Editor de Teste de IU Codificado. Para obter mais informações, consulte o controle Localizar em [Localizando e Substituindo Texto](../ide/finding-and-replacing-text.md).
+- ![Dica](../test/media/tip.png "{1&gt;Dica&lt;1}") Você pode usar o botão **Localizar** na barra de ferramentas do editor de teste de interface do usuário codificado para abrir a ferramenta localizar e substituir no Visual Studio. Em seguida, será possível usar o controle Localizar para localizar uma ação de interface do usuário no Editor de Teste de IU Codificado. Por exemplo, você pode tentar localizar “Clique no botão ‘Logon’”. Isso pode ser útil em testes grandes. Não é possível utilizar a funcionalidade de substituição na ferramenta Localizar e Substituir no Editor de Teste de IU Codificado. Para obter mais informações, consulte o controle Localizar em [Localizando e Substituindo Texto](../ide/finding-and-replacing-text.md).
 
-- ![Dica](../test/media/tip.png "Dica") Às vezes, pode ser difícil visualizar onde os controles estão localizados na interface do usuário do aplicativo em teste. Um dos recursos do Editor de Teste de IU Codificado é a seleção de um controle listado no mapa de controle da interface do usuário e a exibição da localização desse controle no aplicativo em teste. [!INCLUDE[crdefault](../includes/crdefault-md.md)][Localizar um Controle de interface do usuário no aplicativo em Teste](#CodedUITestEditor_LocateUIControl) pode ser consultado mais adiante neste tópico.
+- ![Dica](../test/media/tip.png "{1&gt;Dica&lt;1}") Às vezes, pode ser difícil visualizar onde os controles estão localizados na interface do usuário do aplicativo em teste. Um dos recursos do Editor de Teste de IU Codificado é a seleção de um controle listado no mapa de controle da interface do usuário e a exibição da localização desse controle no aplicativo em teste. [!INCLUDE[crdefault](../includes/crdefault-md.md)][Localizar um Controle de interface do usuário no aplicativo em Teste](#CodedUITestEditor_LocateUIControl) pode ser consultado mais adiante neste tópico.
 
-- ![Dica](../test/media/tip.png "Dica") Pode ser necessário expandir o controle de contêiner que contém o controle que você deseja editar. [!INCLUDE[crdefault](../includes/crdefault-md.md)][Localizar um controle e seus descendentes](#CodedUITestEditor_LocateDecendants) pode ser consultado mais adiante neste tópico.
+- ![Dica](../test/media/tip.png "{1&gt;Dica&lt;1}") Pode ser necessário expandir o controle de contêiner que contém o controle que você deseja editar. [!INCLUDE[crdefault](../includes/crdefault-md.md)][Localizar um controle e seus descendentes](#CodedUITestEditor_LocateDecendants) pode ser consultado mais adiante neste tópico.
 
 ## <a name="CodedUITestEditor_DeleteUIActions"></a> Excluir ações de interface do usuário indesejadas
  É possível remover ações de interface do usuário indesejadas do teste de IU codificado facilmente.
@@ -122,9 +122,9 @@ Você pode estar usando uma versão do Visual Studio Enterprise anterior a 2012.
 
   **Dicas**
 
-- ![Dica](../test/media/tip.png "Dica") Para desfazer a divisão, escolha **desfazer** no menu **Editar** ou pressione CTRL + Z.
+- ![Dica](../test/media/tip.png "{1&gt;Dica&lt;1}") Para desfazer a divisão, escolha **desfazer** no menu **Editar** ou pressione CTRL + Z.
 
-- ![Dica](../test/media/tip.png "Dica") Você pode renomear o novo método. Selecione-o no painel Ações de interface do usuário e escolha o botão **Renomear** na barra de ferramentas do Editor de Teste de IU Codificado.
+- ![Dica](../test/media/tip.png "{1&gt;Dica&lt;1}") Você pode renomear o novo método. Selecione-o no painel Ações de interface do usuário e escolha o botão **Renomear** na barra de ferramentas do Editor de Teste de IU Codificado.
 
    - ou -
 
@@ -146,7 +146,7 @@ Você pode estar usando uma versão do Visual Studio Enterprise anterior a 2012.
 
   **Dicas**
 
-- ![Dica](../test/media/tip.png "Dica") Para desfazer a movimentação, selecione **desfazer** no menu **Editar** ou pressione CTRL + Z. No entanto, em seguida, será necessário remover manualmente o código do arquivo UIMap.cs ou UIMap.vb.
+- ![Dica](../test/media/tip.png "{1&gt;Dica&lt;1}") Para desfazer a movimentação, selecione **desfazer** no menu **Editar** ou pressione CTRL + Z. No entanto, em seguida, será necessário remover manualmente o código do arquivo UIMap.cs ou UIMap.vb.
 
 ## <a name="CodedUITestEditor_LocateUIControl"></a> Localizar um Controle de interface do usuário no aplicativo em teste
  Algumas vezes, pode ser difícil visualizar onde os controles estão localizados na interface do usuário do aplicativo em teste. Um dos recursos do Editor de Teste de IU Codificado é a seleção de um controle listado no mapa de controle da interface do usuário e a exibição da localização desse controle no aplicativo em teste. O recurso **Localizar o Controle de interface do usuário** no aplicativo em teste também pode ser usado para verificar modificações na propriedade de pesquisa de um controle.
@@ -164,7 +164,7 @@ Você pode estar usando uma versão do Visual Studio Enterprise anterior a 2012.
 
   **Dicas**
 
-- ![Dica](../test/media/tip.png "Dica") Como alternativa, você pode usar a opção **Localizar tudo** para verificar se todos os controles em um contêiner podem estar localizados corretamente. Essa opção será descrita na próxima seção.
+- ![Dica](../test/media/tip.png "{1&gt;Dica&lt;1}") Como alternativa, você pode usar a opção **Localizar tudo** para verificar se todos os controles em um contêiner podem estar localizados corretamente. Essa opção será descrita na próxima seção.
 
 ## <a name="CodedUITestEditor_LocateDecendants"></a> Localizar um controle e seus descendentes
  É possível verificar se todos os controles em um contêiner estão localizados corretamente na interface do usuário do aplicativo em teste. Isso pode ser útil para verificar alterações de propriedade de pesquisa realizadas no contêiner. Além disso, se houve alterações significativas na interface do usuário do aplicativo em teste, é possível validar se os controles de propriedades de pesquisa existentes ainda estão corretos.
@@ -198,11 +198,11 @@ Você pode estar usando uma versão do Visual Studio Enterprise anterior a 2012.
 
   **Dicas**
 
-- ![Dica](../test/media/tip.png "Dica") Se o janela Propriedades não for exibido, pressione e mantenha pressionada a tecla ALT enquanto pressiona ENTER ou, alternativamente, pressione F4.
+- ![Dica](../test/media/tip.png "{1&gt;Dica&lt;1}") Se o janela Propriedades não for exibido, pressione e mantenha pressionada a tecla ALT enquanto pressiona ENTER ou, alternativamente, pressione F4.
 
 ## <a name="external-resources"></a>Recursos externos
 
-### <a name="guidance"></a>Diretrizes
+### <a name="guidance"></a>{1&gt;Orientação&lt;1}
  [Testes de Entrega Contínua com o Visual Studio 2012 – Capítulo 2: Teste de Unidade: Testando o Interior](https://go.microsoft.com/fwlink/?LinkID=255188)
 
 ### <a name="faq"></a>Perguntas Frequentes

@@ -43,7 +43,7 @@ Para ajudar a manter o código estável ao longo de sucessivas alterações, rec
 
   Esses pontos são elaborados nas seguintes seções.
 
-## <a name="requirements"></a>Requisitos
+## <a name="requirements"></a>{1&gt;{2&gt;Requisitos&lt;2}&lt;1}
  Consulte [requisitos](../modeling/extend-uml-models-and-diagrams.md#Requirements).
 
  Para ver quais versões do Visual Studio oferecem suporte a esse recurso, consulte [suporte de versão para ferramentas de arquitetura e modelagem](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
@@ -68,7 +68,7 @@ Para ajudar a manter o código estável ao longo de sucessivas alterações, rec
         <CopyOutputSymbolsToOutputDirectory>true</CopyOutputSymbolsToOutputDirectory>
     ```
 
-     Para editar o arquivo .csproj como texto, clique em **Descarregar Projeto** no menu de atalho do projeto no Gerenciador de Soluções. Clique em **Editar... .csproj**. Depois de editar o texto, clique em **Recarregar Projeto**.
+     Para editar o arquivo. csproj como texto, escolha **descarregar projeto** no menu de atalho do projeto no Gerenciador de soluções. Em seguida, escolha **Editar.... csproj**. Depois de editar o texto, escolha **recarregar projeto**.
 
 4. Em seu projeto de extensão UML, adicione a seguinte linha a **Properties\AssemblyInfo.cs**. Isso permite que os testes de unidade acessem os métodos que você quer testar:
 
@@ -80,17 +80,17 @@ Para ajudar a manter o código estável ao longo de sucessivas alterações, rec
 
     - *Seu projeto de extensão UML*
 
-    - **EnvDTE.dll**
+    - **EnvDTE. dll**
 
-    - **Microsoft.VisualStudio.ArchitectureTools.Extensibility.dll**
+    - **Microsoft. VisualStudio. ArchitectureTools. Extensibility. dll**
 
-    - **Microsoft.VisualStudio.ComponentModelHost.dll**
+    - **Microsoft. VisualStudio. ComponentModelHost. dll**
 
-    - **Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll**
+    - **Microsoft. VisualStudio. QualityTools. UnitTestFramework. dll**
 
-    - **Microsoft.VisualStudio.Uml.Interfaces.dll**
+    - **Microsoft. VisualStudio. Uml. interfaces. dll**
 
-    - **Microsoft.VSSDK.TestHostFramework.dll**
+    - **Microsoft. VSSDK. TestHostFramework. dll**
 
 6. Prefixe o atributo `[HostType("VS IDE")]` para cada método de teste, incluindo os métodos de inicialização.
 

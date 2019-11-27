@@ -27,7 +27,7 @@ ms.locfileid: "74301403"
 
 Uma DSL (linguagem específica de domínio) é criada usando uma solução de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] especializada.
 
-## <a name="prerequisites"></a>Pré-requisitos
+## <a name="prerequisites"></a>{1&gt;Pré-requisitos&lt;1}
  Antes de iniciar este procedimento, você deve primeiro instalar estes componentes:
 
 |||
@@ -69,7 +69,7 @@ Uma DSL (linguagem específica de domínio) é criada usando uma solução de [!
 
    - Se você tiver usado a extensão de nome de arquivo em DSLs experimentais anteriores que não foram totalmente instaladas, você poderá limpá-las usando a ferramenta **redefinir a instância experimental** , que pode ser encontrada no menu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] SDK.
 
-   - Se outra extensão de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] que usa essa extensão de arquivo tiver sido totalmente instalada em seu computador, considere desinstalá-la. No menu **Ferramentas**, clique em **Gerenciador de Extensões**.
+   - Se outra extensão de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] que usa essa extensão de arquivo tiver sido totalmente instalada em seu computador, considere desinstalá-la. No menu **ferramentas** , clique em **Gerenciador de extensões**.
 
 4. Inspecione e, se necessário, ajuste, os campos nas páginas restantes do assistente. Quando estiver satisfeito com as configurações, clique em **concluir**. Para obter mais informações sobre as configurações, consulte [Designer de DSL páginas do assistente](#settings).
 
@@ -106,7 +106,7 @@ Digite uma nova extensão de arquivo.
 
      \- ou -
 
-- Se uma extensão de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] que usa essa extensão de arquivo tiver sido totalmente instalada em seu computador, desinstale-a. No menu **Ferramentas**, clique em **Gerenciador de Extensões**.
+- Se uma extensão de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] que usa essa extensão de arquivo tiver sido totalmente instalada em seu computador, desinstale-a. No menu **ferramentas** , clique em **Gerenciador de extensões**.
 
 ### <a name="product-settings-page"></a>Página de configurações do produto
  **Qual é o nome do produto ao qual a nova linguagem específica de domínio pertence?**

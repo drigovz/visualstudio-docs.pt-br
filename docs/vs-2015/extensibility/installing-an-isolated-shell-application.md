@@ -161,7 +161,7 @@ Para instalar um aplicativo de Shell, você deve executar as etapas a seguir.
     > [!NOTE]
     > As dependências necessárias para aplicativos de Shell (isolados) são: DebuggerProxy, MasterPkgDef, Resources (especialmente o arquivo. winprf), Application e PkgDefs.  
   
-### <a name="registry-entries"></a>Entradas do registro  
+### <a name="registry-entries"></a>Entradas do Registro  
  O modelo de projeto Shell (isolado) inclui um arquivo *ProjectName*. reg para chaves do registro a serem mescladas na instalação. Essas entradas de registro devem fazer parte do MSI para fins de instalação e limpeza. Você também deve criar blocos de registro correspondentes em ApplicationRegistry. wxs.  
   
 ##### <a name="to-integrate-registry-entries-into-the-msi"></a>Para integrar entradas de registro no MSI  
@@ -176,10 +176,10 @@ Para instalar um aplicativo de Shell, você deve executar as etapas a seguir.
   
 5. Para cada entrada de registro no *ProjectName*. reg, adicione um bloco de registro correspondente, como mostra os exemplos a seguir.  
   
-    |*ProjectName*.reg|ApplicationRegisty.wxs|  
+    |*ProjectName*. reg|ApplicationRegisty.wxs|  
     |-----------------------|----------------------------|  
-    |[HKEY_CLASSES_ROOT\CLSID\\{bb431796-a179-4df7-b65d-c0df6bda7cc6}]<br /><br /> @ = "Objeto DTE PhotoStudio"|\<RegistryKey ID = ' DteClsidRegKey ' root = ' HKCR ' Key = ' $ (var. DteClsidRegKey) ' action = ' createAndRemoveOnUninstall ' ><br /><br /> \<REGISTRYVALUE tipo = ' String ' name = ' @ ' value = ' $ (var. ShortProductName) objeto DTE '/><br /><br /> \</RegistryKey>|  
-    |[HKEY_CLASSES_ROOT\CLSID\\{bb431796-a179-4df7-b65d-c0df6bda7cc6}\LocalServer32]<br /><br /> @="$RootFolder$\PhotoStudio.exe"|\<RegistryKey ID = ' DteLocSrv32RegKey ' root = ' HKCR ' Key = ' $ (var. DteClsidRegKey) \LocalServer32 ' action = ' createAndRemoveOnUninstall ' ><br /><br /> \<REGISTRYVALUE tipo = ' String ' name = ' @ ' value = ' [INSTALLDIR] $ (var. ShortProductName). exe '/><br /><br /> \</RegistryKey>|  
+    |[HKEY_CLASSES_ROOT \CLSID\\{bb431796-A179-4df7-b65d-c0df6bda7cc6}]<br /><br /> @ = "Objeto DTE PhotoStudio"|\<RegistryKey ID = ' DteClsidRegKey ' root = ' HKCR ' Key = ' $ (var. DteClsidRegKey) ' action = ' createAndRemoveOnUninstall ' ><br /><br /> \<REGISTRYVALUE tipo = ' String ' name = ' @ ' value = ' $ (var. ShortProductName) objeto DTE '/><br /><br /> \</RegistryKey >|  
+    |[HKEY_CLASSES_ROOT \CLSID\\{bb431796-A179-4df7-b65d-c0df6bda7cc6} \LocalServer32]<br /><br /> @="$RootFolder$\PhotoStudio.exe"|\<RegistryKey ID = ' DteLocSrv32RegKey ' root = ' HKCR ' Key = ' $ (var. DteClsidRegKey) \LocalServer32 ' action = ' createAndRemoveOnUninstall ' ><br /><br /> \<REGISTRYVALUE tipo = ' String ' name = ' @ ' value = ' [INSTALLDIR] $ (var. ShortProductName). exe '/><br /><br /> \</RegistryKey >|  
   
      Neste exemplo, var. DteClsidRegKey resolve para a chave do registro na linha superior. Var. ShortProductName resolve para `PhotoStudio`.  
   
@@ -237,7 +237,7 @@ dwResult = ExecCmd("Vs_IsoShellLP.exe /norestart /q", TRUE);
 ### <a name="deciphering-return-values"></a>Decifrando valores de retorno  
  Em alguns sistemas operacionais, a instalação do shell do Visual Studio (isolado) exigirá uma reinicialização. Essa condição pode ser determinada pelo código de retorno da chamada para `ExecCmd`.  
   
-|Valor retornado|Descrição|  
+|Valor de retorno|Descrição|  
 |------------------|-----------------|  
 |ERROR_SUCCESS|Instalação concluída. Agora você pode instalar seu aplicativo.|  
 |ERROR_SUCCESS_REBOOT_REQUIRED|Instalação concluída. Você pode instalar o aplicativo após a reinicialização do computador.|  

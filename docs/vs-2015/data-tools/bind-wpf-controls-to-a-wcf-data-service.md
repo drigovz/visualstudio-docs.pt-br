@@ -107,7 +107,7 @@ Neste passo a passo, você criará um aplicativo WPF que contém controles de as
 
 7. Na página **Escolher Objetos do Banco de Dados**, expanda **Tabelas** e selecione a tabela **SalesOrderHeader**.
 
-8. Clique em **Finalizar**.
+8. Clique em **Concluir**.
 
 ## <a name="create-the-service"></a>Criar o serviço
  Crie um [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)] para expor os dados no Modelo de Dados de Entidade para um aplicativo WPF.
@@ -116,7 +116,7 @@ Neste passo a passo, você criará um aplicativo WPF que contém controles de as
 
 1. No menu **Projeto**, selecione **Adicionar Novo Item**.
 
-2. Na lista Modelos Instalados, clique em **Web** e selecione o item de projeto **Serviço de Dados WCF**.
+2. Na lista modelos instalados, clique em **Web**e selecione o item de projeto do **WCF Data Service** .
 
 3. Na caixa **nome** , digite `AdventureWorksService.svc`e clique em **Adicionar**.
 
@@ -180,7 +180,7 @@ Neste passo a passo, você criará um aplicativo WPF que contém controles de as
 
 #### <a name="to-create-the-window-layout"></a>Para criar o layout da janela
 
-1. No **Gerenciador de Soluções**, clique duas vezes em MainWindow.xaml.
+1. Em **Gerenciador de soluções**, clique duas vezes em MainWindow. XAML.
 
      A janela é aberta no WPF Designer.
 
@@ -273,7 +273,7 @@ Neste passo a passo, você criará um aplicativo WPF que contém controles de as
      [!code-vb[Data_WPFWCF#4](../snippets/visualbasic/VS_Snippets_ProTools/data_wpfwcf/vb/adventureworkssaleseditor/mainwindow.xaml.vb#4)]
 
 ## <a name="saving-changes-to-sales-records"></a>Salvando alterações em registros de vendas
- Adicione o código que permite aos usuários visualizar e salvar as alterações em registros de vendas ao usar o botão **Salvar alterações**.
+ Adicione o código que permite aos usuários exibir e salvar alterações em registros de vendas usando o botão **salvar alterações** .
 
 #### <a name="to-add-the-ability-to-save-changes-to-sales-records"></a>Para adicionar a capacidade de salvar as alterações em registros de vendas
 
@@ -291,7 +291,7 @@ Neste passo a passo, você criará um aplicativo WPF que contém controles de as
 
 #### <a name="to-test-the-application"></a>Para testar o aplicativo
 
-1. No menu **Compilar**, clique em **Compilar Solução**. Verifique se a solução é compilada sem erros.
+1. No menu **Compilar** , clique em **Compilar solução**. Verifique se a solução é compilada sem erros.
 
 2. Pressione **Ctrl + F5**.
 

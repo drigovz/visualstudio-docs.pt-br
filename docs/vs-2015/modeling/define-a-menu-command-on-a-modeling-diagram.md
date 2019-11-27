@@ -23,7 +23,7 @@ ms.locfileid: "74299262"
 
 No Visual Studio, você pode definir itens de menu adicionais nos menus de atalho de um diagrama UML. Você pode controlar se o comando de menu é exibido e está habilitado no menu de atalho de qualquer elemento no diagrama e pode escrever o código que é executado quando o usuário escolhe o item de menu. Você pode empacotar essas extensões em uma extensão de integração do Visual Studio ([VSIX](https://go.microsoft.com/fwlink/?LinkId=160780)) e distribuí-las a outros usuários do Visual Studio.
 
-## <a name="requirements"></a>Requisitos
+## <a name="requirements"></a>{1&gt;{2&gt;Requisitos&lt;2}&lt;1}
  Consulte [requisitos](../modeling/extend-uml-models-and-diagrams.md#Requirements).
 
  Para ver quais versões do Visual Studio oferecem suporte a esse recurso, consulte [suporte de versão para ferramentas de arquitetura e modelagem](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
@@ -271,7 +271,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>()) {...}
 
    Raramente, uma extensão defeituosa não carrega e cria um relatório na janela de erro, mas não aparece no Gerenciador de extensões. Nesse caso, você pode remover a extensão excluindo o arquivo de:
 
-   *%LocalAppData%* **\Local\Microsoft\VisualStudio\\[version]\Extensions**
+   *% LocalAppData%* **\Local\Microsoft\VisualStudio\\[versão] \Extensions**
 
 ## <a name="MenuExample"></a> Exemplo
  O exemplo a seguir mostra o código de um comando de menu que vai trocar os nomes de dois elementos em um diagrama de classe. Esse código deve ser compilado em um projeto de extensão [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] e instalado conforme descrito nas seções anteriores.

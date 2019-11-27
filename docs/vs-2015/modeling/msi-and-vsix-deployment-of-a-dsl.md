@@ -56,7 +56,7 @@ Você pode instalar uma linguagem específica de domínio em seu próprio comput
 
 #### <a name="to-uninstall-a-dsl-that-was-installed-by-using-vsx"></a>Para desinstalar uma DSL que foi instalada usando o VSX
 
-1. No menu **Ferramentas**, clique em **Gerenciador de Extensões**.
+1. No menu **ferramentas** , clique em **Gerenciador de extensões**.
 
 2. Expanda **extensões instaladas**.
 
@@ -93,7 +93,7 @@ Você pode instalar uma linguagem específica de domínio em seu próprio comput
 
        - Descrição
 
-       - Version
+       - {1&gt;{2&gt;Versão&lt;2}&lt;1}
 
    - Clique no nó do **Editor** e, na janela Propriedades, clique em **ícone**. Defina o valor para fazer referência a um arquivo de ícone em **DslPackage\Resources**, como **File. ico**
 
@@ -105,7 +105,7 @@ Você pode instalar uma linguagem específica de domínio em seu próprio comput
 
     [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] criará um arquivo chamado **CreateMsiSetupProject. vdproj**.
 
-6. No Windows Explorer, copie Dsl\\\*.vdproj para uma nova pasta denominada programa de instalação.
+6. No Windows Explorer, copie DSL\\*. vdproj para uma nova pasta chamada setup.
 
     (Se desejar, agora você pode excluir CreateMsiSetupProject.tt de seu projeto DSL.)
 

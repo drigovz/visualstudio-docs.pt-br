@@ -45,7 +45,7 @@ Este tutorial mostra como adicionar uma propriedade de rastreamento a um modelo 
 
 - Na janela **Propriedades** , quando a propriedade de rastreamento está no estado atualizado por usuário, seu valor é exibido em uma fonte em negrito.
 
-## <a name="prerequisites"></a>Pré-requisitos
+## <a name="prerequisites"></a>{1&gt;Pré-requisitos&lt;1}
  Antes de poder iniciar este passo a passos, você deve primeiro instalar estes componentes:
 
 |||
@@ -141,7 +141,7 @@ Este tutorial mostra como adicionar uma propriedade de rastreamento a um modelo 
 
 #### <a name="to-transform-the-text-templates"></a>Para transformar os modelos de texto
 
-1. Na barra de ferramentas do **Gerenciador de Soluções**, clique em **Transformar Todos os Modelos**.
+1. Na barra de ferramentas **Gerenciador de soluções** , clique em **transformar todos os modelos**.
 
 2. O sistema regenera o código para a solução e salva DslDefinition. DSL. Para obter informações sobre o formato XML dos arquivos de definição, consulte [o arquivo DslDefinition. DSL](../modeling/the-dsldefinition-dsl-file.md).
 
@@ -756,7 +756,7 @@ Este tutorial mostra como adicionar uma propriedade de rastreamento a um modelo 
 
 10. Salve a solução e, em seguida, feche a compilação experimental.
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>{1&gt;Próximas etapas&lt;1}
  Se você planeja usar mais de uma propriedade de controle ou implementar propriedades de rastreamento em mais de uma DSL, você pode criar um modelo de texto para gerar o código comum para dar suporte a cada propriedade de controle. Para obter mais informações sobre modelos de texto, consulte [geração de código e modelos de texto T4](../modeling/code-generation-and-t4-text-templates.md).
 
 ## <a name="see-also"></a>Consulte também
