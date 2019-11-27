@@ -52,7 +52,7 @@ A tabela a seguir fornece detalhes sobre quais benefícios de assinatura do Plur
 
 8. É só isso!  Agora você está pronto para começar a aprender com milhares de cursos do Pluralsight!
 
-## <a name="eligibility"></a>Elegibilidade
+## <a name="eligibility"></a>Qualificação
 
 |                          Nível de Assinatura                          |     Canais      |    Benefício    |   Renovável?   |
 |----------------------------------------------------------------------|-------------------|---------------|----------------|

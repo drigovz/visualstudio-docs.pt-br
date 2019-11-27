@@ -37,5 +37,5 @@ Os prestadores de serviço externos podem trazer licenças para se relacionar co
 Saiba mais as políticas dos administradores:
 - [Responsabilidades do administrador](admin-responsibilities.md)
 - [Inventário do ambiente de pré-produção](admin-inventory.md)
-- [Rastrear atribuição de usuário e processar pedidos](assignments-orders.md)
+- [Rastrear atribuições de usuário e processar pedidos](assignments-orders.md)
 - Utilizar o [Uso Máximo](maximum-usage.md) para rastrear os compromissos de compra

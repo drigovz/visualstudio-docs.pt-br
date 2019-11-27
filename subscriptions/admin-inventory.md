@@ -33,5 +33,5 @@ Aqui estão algumas maneiras para simplificar a realização do inventário do a
 Saiba mais as políticas dos administradores:
 - [Responsabilidades do administrador](admin-responsibilities.md)
 - [Gerenciar equipes grandes e prestadores de serviço externos](manage-teams.md)
-- [Rastrear atribuição de usuário e processar pedidos](assignments-orders.md)
+- [Rastrear atribuições de usuário e processar pedidos](assignments-orders.md)
 - Utilizar o [Uso Máximo](maximum-usage.md) para rastrear os compromissos de compra

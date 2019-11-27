@@ -132,7 +132,7 @@ As correções rápidas e refatorações comuns incluem:
 - Gerar Método
 - Mover Tipo para Arquivo
 - Adicionar Null-Check
-- Adicione o parâmetro
+- Adicionar Parâmetro
 - Remover usos desnecessários
 - Loop Foreach para uma consulta LINQ ou um método LINQ
 - Subir os membros

@@ -39,5 +39,5 @@ As assinaturas do Visual Studio permitem aos membros da equipe de desenvolviment
 Saiba mais as políticas dos administradores:
 - [Inventário do ambiente de pré-produção](admin-inventory.md)
 - [Gerenciar equipes grandes e prestadores de serviço externos](manage-teams.md)
-- [Rastrear atribuição de usuário e processar pedidos](assignments-orders.md)
+- [Rastrear atribuições de usuário e processar pedidos](assignments-orders.md)
 - Utilizar o [Uso Máximo](maximum-usage.md) para rastrear os compromissos de compra

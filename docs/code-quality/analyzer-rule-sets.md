@@ -80,7 +80,7 @@ Para fazer com que uma regra defina o conjunto de regras ativas para análise no
 </PropertyGroup>
 ```
 
-#### <a name="net-framework"></a>{1&gt;.NET Framework&lt;1}
+#### <a name="net-framework"></a>.NET Framework
 
 Para fazer com que uma regra defina o conjunto de regras ativas para análise em projetos .NET Framework:
 
