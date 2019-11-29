@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.date: 11/20/2019
 ms.technology: vs-azure
 ms.topic: conceptual
-ms.openlocfilehash: 6b96f23bc7bcd7e6d970025b23f89f572d07daf1
-ms.sourcegitcommit: e825d1223579b44ee2deb62baf4de0153f99242a
-ms.translationtype: HT
+ms.openlocfilehash: a2f837ba264a12391786f584cf2698e19250fb2e
+ms.sourcegitcommit: 6336c387388707da94a91060dc3f34d4cfdc0a7b
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "74473990"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74549952"
 ---
 # <a name="build-and-debug-containerized-apps-using-visual-studio-or-the-command-line"></a>Compilar e depurar aplicativos em contêineres usando o Visual Studio ou a linha de comando
 
@@ -60,27 +60,9 @@ ENTRYPOINT ["dotnet", "WebApplication43.dll"]
 
 O estágio final inicia novamente de `base`e inclui o `COPY --from=publish` para copiar a saída publicada para a imagem final. Esse processo possibilita que a imagem final seja muito menor, pois não precisa incluir todas as ferramentas de Build que estavam na imagem de `sdk`.
 
-## <a name="faster-builds-for-the-debug-configuration"></a>Builds mais rápidos para a configuração de depuração
-
-Há várias otimizações que o Visual Studio faz para ajudar com o desempenho do processo de compilação para projetos em contêineres. O processo de compilação para aplicativos em contêineres não é tão simples quanto a simples seguir as etapas descritas no Dockerfile. A criação de um contêiner é muito mais lenta do que a criação no computador local.  Portanto, quando você cria a configuração de **depuração** , o Visual Studio realmente cria seus projetos no computador local e compartilha a pasta de saída para o contêiner usando a montagem de volume. Uma compilação com essa otimização habilitada é chamada de compilação de modo *rápido* .
-
-No modo **rápido** , o Visual Studio chama `docker build` com um argumento que informa ao Docker para compilar apenas o estágio `base`.  O Visual Studio lida com o restante do processo sem considerar o conteúdo do Dockerfile. Portanto, quando você modifica seu Dockerfile, como para personalizar o ambiente de contêiner ou instalar dependências adicionais, você deve colocar suas modificações no primeiro estágio.  Quaisquer etapas personalizadas colocadas nos estágios `build`, `publish`ou `final` do Dockerfile não serão executadas.
-
-Essa otimização de desempenho ocorre apenas quando você cria na configuração de **depuração** . Na configuração da **versão** , a compilação ocorre no contêiner, conforme especificado no Dockerfile.
-
-Se você quiser desabilitar a otimização de desempenho e compilar como o Dockerfile especifica, defina a propriedade **ContainerDevelopmentMode** como **regular** no arquivo de projeto da seguinte maneira:
-
-```xml
-<PropertyGroup>
-   <ContainerDevelopmentMode>Regular</ContainerDevelopmentMode>
-</PropertyGroup>
-```
-
-Para restaurar a otimização de desempenho, remova a propriedade do arquivo de projeto.
-
 ## <a name="building-from-the-command-line"></a>Criando a partir da linha de comando
 
-Você pode usar `docker build` ou `MSBuild` para criar a partir da linha de comando.
+Se você quiser criar fora do Visual Studio, poderá usar `docker build` ou `MSBuild` para criar a partir da linha de comando.
 
 ### <a name="docker-build"></a>Build do Docker
 
@@ -90,7 +72,7 @@ Para criar uma solução em contêiner a partir da linha de comando, você geral
 docker build -f Dockerfile ..
 ```
 
-### <a name="msbuild"></a>MSBuild
+### <a name="msbuild"></a>{1&gt;MSBuild&lt;1}
 
 Dockerfiles criados pelo Visual Studio para projetos de .NET Framework (e para projetos do .NET Core criados com versões do Visual Studio anteriores ao Visual Studio 2017 atualização 4) não são Dockerfiles de vários estágios.  As etapas nesses Dockerfiles não compilam seu código.  Em vez disso, quando o Visual Studio cria um .NET Framework Dockerfile, ele primeiro compila seu projeto usando o MSBuild.  Quando isso for executado com sucesso, o Visual Studio criará o Dockerfile, que simplesmente copia a saída da compilação do MSBuild para a imagem do Docker resultante.  Como as etapas para compilar seu código não estão incluídas no Dockerfile, você não pode criar .NET Framework Dockerfiles usando `docker build` da linha de comando. Você deve usar o MSBuild para compilar esses projetos.
 
@@ -100,7 +82,7 @@ Para criar uma imagem para um único projeto de contêiner do Docker, você pode
 MSBuild MyProject.csproj /t:ContainerBuild /p:Configuration=Release
 ```
 
-Você verá uma saída semelhante à que você vê na janela de **saída** ao compilar sua solução no IDE do Visual Studio. Sempre use `/p:Configuration=Release`, já que, nos casos em que o Visual Studio usa a otimização de compilação de multiestágio, os resultados da criação da configuração de **depuração** podem não ser conforme o esperado.
+Você verá uma saída semelhante à que você vê na janela de **saída** ao compilar sua solução no IDE do Visual Studio. Sempre use `/p:Configuration=Release`, já que, nos casos em que o Visual Studio usa a otimização de compilação de multiestágio, os resultados da criação da configuração de **depuração** podem não ser conforme o esperado. Consulte [depuração](#debugging).
 
 Se você estiver usando um projeto Docker Compose, use o comando para criar imagens:
 
@@ -110,7 +92,7 @@ msbuild /p:SolutionPath=<solution-name>.sln /p:Configuration=Release docker-comp
 
 ## <a name="project-warmup"></a>Aquecimento do projeto
 
-Essas são uma sequência de etapas que ocorrem quando o perfil do Docker é selecionado para um projeto (ou seja, quando um projeto é carregado ou o suporte do Docker é adicionado) para melhorar o desempenho da execução subsequente (**F5** ou **Ctrl**+**F5**). Isso é configurável em **ferramentas** > **Opções** > **ferramentas de contêiner**. Aqui estão as tarefas que são executadas em segundo plano:
+O *projeto aquecimento* refere-se a uma série de etapas que ocorrem quando o perfil do Docker é selecionado para um projeto (ou seja, quando um projeto é carregado ou o suporte do Docker é adicionado) para melhorar o desempenho das execuções subsequentes (**F5** ou **Ctrl**+**F5**). Isso é configurável em **ferramentas** > **Opções** > **ferramentas de contêiner**. Aqui estão as tarefas que são executadas em segundo plano:
 
 - Verifique se o Docker Desktop está instalado e em execução.
 - Verifique se o Docker Desktop está definido para o mesmo sistema operacional que o projeto.
@@ -160,7 +142,23 @@ ASP.NET Core procura um certificado que corresponda ao nome do assembly na pasta
 
 Para obter mais informações sobre como usar o SSL com aplicativos ASP.NET Core em contêineres, consulte [hospedando imagens ASP.NET Core com o Docker sobre HTTPS](https://docs.microsoft.com/aspnet/core/security/docker-https).
 
-## <a name="debugging"></a>Depuração
+## <a name="debugging"></a>{1&gt;Depuração&lt;1}
+
+Ao criar na configuração de **depuração** , há várias otimizações que o Visual Studio faz para ajudar com o desempenho do processo de compilação para projetos em contêineres. O processo de compilação para aplicativos em contêineres não é tão simples quanto a simples seguir as etapas descritas no Dockerfile. A criação de um contêiner é muito mais lenta do que a criação no computador local.  Portanto, quando você cria a configuração de **depuração** , o Visual Studio realmente cria seus projetos no computador local e compartilha a pasta de saída para o contêiner usando a montagem de volume. Uma compilação com essa otimização habilitada é chamada de compilação de modo *rápido* .
+
+No modo **rápido** , o Visual Studio chama `docker build` com um argumento que informa ao Docker para compilar apenas o estágio `base`.  O Visual Studio lida com o restante do processo sem considerar o conteúdo do Dockerfile. Portanto, quando você modifica seu Dockerfile, como para personalizar o ambiente de contêiner ou instalar dependências adicionais, você deve colocar suas modificações no primeiro estágio.  Quaisquer etapas personalizadas colocadas nos estágios `build`, `publish`ou `final` do Dockerfile não serão executadas.
+
+Essa otimização de desempenho ocorre apenas quando você cria na configuração de **depuração** . Na configuração da **versão** , a compilação ocorre no contêiner, conforme especificado no Dockerfile.
+
+Se você quiser desabilitar a otimização de desempenho e compilar como o Dockerfile especifica, defina a propriedade **ContainerDevelopmentMode** como **regular** no arquivo de projeto da seguinte maneira:
+
+```xml
+<PropertyGroup>
+   <ContainerDevelopmentMode>Regular</ContainerDevelopmentMode>
+</PropertyGroup>
+```
+
+Para restaurar a otimização de desempenho, remova a propriedade do arquivo de projeto.
 
  Quando você inicia a depuração (**F5**), um contêiner iniciado anteriormente é reutilizado, se possível. Se você não quiser reutilizar o contêiner anterior, poderá usar os comandos **recriar** ou **limpar** no Visual Studio para forçar o Visual Studio a usar um contêiner novo.
 
@@ -182,11 +180,10 @@ O Visual Studio usa um ponto de entrada de contêiner personalizado dependendo d
 |-|-|
 | **Contêineres do Linux** | O ponto de entrada é `tail -f /dev/null`, que é uma espera infinita para manter o contêiner em execução. Quando o aplicativo é iniciado por meio do depurador, é o depurador que é responsável por executar o aplicativo (ou seja, `dotnet webapp.dll`). Se for iniciado sem depuração, as ferramentas executarão um `docker exec -i {containerId} dotnet webapp.dll` para executar o aplicativo.|
 | **Contêineres do Windows**| O ponto de entrada é algo como `C:\remote_debugger\x64\msvsmon.exe /noauth /anyuser /silent /nostatus` que executa o depurador, portanto, ele está escutando conexões. O mesmo se aplica que o depurador execute o aplicativo e um comando `docker exec` quando iniciado sem depuração. Para .NET Framework aplicativos Web, o ponto de entrada é ligeiramente diferente, em que `ServiceMonitor` é adicionado ao comando.|
-  
-> [!NOTE]
-> O ponto de entrada de contêiner só pode ser modificado em projetos de composição de Docker, não em projetos de contêiner único.
 
-## <a name="next-steps"></a>Próximas etapas
+O ponto de entrada de contêiner só pode ser modificado em projetos de composição de Docker, não em projetos de contêiner único.
+
+## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
 
 Saiba como personalizar ainda mais suas compilações definindo propriedades adicionais do MSBuild em seus arquivos de projeto. Consulte [Propriedades do MSBuild para projetos de contêiner](container-msbuild-properties.md).
 
