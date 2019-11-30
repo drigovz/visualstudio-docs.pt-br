@@ -18,12 +18,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: a97db7e6b81eb9e807902d1b9bd0ea8ee6efa55e
-ms.sourcegitcommit: 0bd63f3bc429ae059b9df6e45c6b8dcae6152940
-ms.translationtype: HT
+ms.openlocfilehash: 628d8fe5d8374d0cb203e6953f63bd63d77d0c58
+ms.sourcegitcommit: 3ba2968a4b44643482aadad4d50e1a55bb36b136
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/26/2019
-ms.locfileid: "70026484"
+ms.lasthandoff: 11/28/2019
+ms.locfileid: "74566991"
 ---
 # <a name="modify-visual-studio-by-adding-or-removing-workloads-and-components"></a>Modificar o Visual Studio adicionando ou removendo cargas de trabalho e componentes
 
@@ -46,7 +46,17 @@ Veja como.
 
 ## <a name="modify-workloads"></a>Modificar cargas de trabalho
 
- As [cargas de trabalho](https://visualstudio.microsoft.com/vs/visual-studio-workloads/) contêm os recursos necessários para a linguagem de programação ou a plataforma que está sendo usada. Use cargas de trabalho para modificar o Visual Studio para que ele dê suporte ao trabalho que você deseja fazer, quando desejar fazê-lo.
+::: moniker range="vs-2017"
+
+ As [cargas de trabalho](https://visualstudio.microsoft.com/vs/support/selecting-workloads-visual-studio-2017/) contêm os recursos necessários para a linguagem de programação ou a plataforma que está sendo usada. Use cargas de trabalho para modificar o Visual Studio para que ele dê suporte ao trabalho que você deseja fazer, quando desejar fazê-lo.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+ As cargas de trabalho contêm os recursos necessários para a linguagem de programação ou plataforma que você está usando. Use cargas de trabalho para modificar o Visual Studio para que ele dê suporte ao trabalho que você deseja fazer, quando desejar fazê-lo.
+
+::: moniker-end
 
 >[!NOTE]
 > O procedimento a seguir pressupõe que você tenha uma conexão de internet.
@@ -59,7 +69,7 @@ Veja como.
 
      Por exemplo, em um computador que executa o Windows 10, selecione **Iniciar** e, em seguida, role até a letra **I**, onde ele está listado como **Instalador do Visual Studio**.
 
-     ![Instalador do Visual Studio](media/vs2017-locate-the-visual-studio-installer.PNG "Localizar o Instalador do Microsoft Visual Studio")
+     ![Instalador do Visual Studio](media/vs2017-locate-the-visual-studio-installer.PNG "Localize o instalador do Microsoft Visual Studio")
 
      >[!TIP]
      >Em alguns computadores, o Instalador do Visual Studio poderá estar listado sob a letra **“M”** como **Instalador do Microsoft Visual Studio**.<br/><br/> Como alternativa, encontre o Instalador do Visual Studio no seguinte local: `C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe`
@@ -74,7 +84,7 @@ Veja como.
 
 1. Na tela **Cargas de Trabalho**, marque ou desmarque as cargas de trabalho que você deseja instalar ou desinstalar.
 
-    ![Caixa de diálogo Instalação do Visual Studio 2017](media/vs2017-modify-workloads.PNG "Escolher uma carga de trabalho no Visual Studio 2017")
+    ![Caixa de diálogo de instalação do Visual Studio 2017](media/vs2017-modify-workloads.PNG "Escolha uma carga de trabalho no Visual Studio 2017")
 
 1. Escolha **Modificar** novamente.
 
@@ -88,7 +98,7 @@ Veja como.
 
      Por exemplo, em um computador que executa o Windows 10, selecione **Iniciar** e, em seguida, role até a letra **I**, onde ele está listado como **Instalador do Visual Studio**.
 
-     ![Abrir o Instalador do Visual Studio no Windows](media/vs-2019/vs-installer-windows-start.png "Abrir o Instalador do Visual Studio")
+     ![Abrir o Instalador do Visual Studio do Windows](media/vs-2019/vs-installer-windows-start.png "Abra o Instalador do Visual Studio")
 
      > [!NOTE]
      > Também é possível encontrar o Instalador do Visual Studio no seguinte local:
@@ -103,11 +113,11 @@ Veja como.
 
 1. Na guia **Cargas de Trabalho**, selecione ou anule a seleção das cargas de trabalho que você deseja instalar ou desinstalar.
 
-    ![Caixa de diálogo de instalação do Visual Studio 2019](media/vs-2019/vs-installer-modify-workloads.png "Escolher uma carga de trabalho no Visual Studio 2019")
+    ![Caixa de diálogo de instalação do Visual Studio 2019](media/vs-2019/vs-installer-modify-workloads.png "Escolha uma carga de trabalho no Visual Studio 2019")
 
 1. Escolha se deseja aceitar a opção padrão **Instalar durante o download** ou a opção **Baixar tudo, depois instalar**.
 
-    ![Opções de instalação do Visual Studio 2019](media/vs-2019/vs-installer-choose-install-or-download.png "Escolher instalar durante o download ou baixar primeiro e instalar mais tarde")
+    ![Opções de instalação do Visual Studio 2019](media/vs-2019/vs-installer-choose-install-or-download.png "Escolha instalar durante o download ou para baixar primeiro e instalar mais tarde")
 
     A opção "Baixar tudo, depois instalar" é útil se você deseja baixar primeiro e instalar mais tarde.
 
@@ -119,13 +129,12 @@ Veja como.
 
 ## <a name="modify-individual-components"></a>Modificar componentes individuais
 
-Caso não deseje instalar [cargas de trabalho](https://visualstudio.microsoft.com/vs/visual-studio-workloads/) para personalizar sua instalação do Visual Studio, escolha a guia **Componentes Individuais** do Instalador do Visual Studio, selecione os itens desejados e, em seguida, siga as instruções.
+Se você não quiser instalar cargas de trabalho nem personalizar sua instalação do Visual Studio, escolha a guia **Componentes Individuais** do Instalador do Visual Studio, selecione o que deseja e siga os prompts.
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
 ## <a name="see-also"></a>Consulte também
 
-* [Saiba mais sobre as cargas de trabalho do Visual Studio](https://visualstudio.microsoft.com/vs/visual-studio-workloads/)
 * [Lista de IDs de componente e carga de trabalho do Visual Studio](workload-and-component-ids.md)
 * [Atualizar o Visual Studio](update-visual-studio.md)
 * [Atualizar uma instalação em rede do Visual Studio](update-a-network-installation-of-visual-studio.md)
