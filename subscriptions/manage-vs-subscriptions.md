@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/17/2019
 ms.topic: conceptual
 description: Saiba como aproveitar ao máximo as suas assinaturas do Visual Studio
-ms.openlocfilehash: dcbcbc9c11dc5c695a1ca2ed523ad982ff18f5c5
-ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
-ms.translationtype: HT
+ms.openlocfilehash: a8a58cd3fca2443ca84db712cbd2a356351d4499
+ms.sourcegitcommit: 49ebf69986713e440fd138fb949f1c0f47223f23
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68493351"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74706977"
 ---
 # <a name="managing-subscriptions"></a>Gerenciando assinaturas
 
@@ -43,12 +43,12 @@ Na página Benefícios, a assinatura em uso será exibida na faixa azul em desta
 ## <a name="renewing-my-subscriptions"></a>Renovando minhas assinaturas
 
 **Assinaturas padrão**
-- Microsoft Store: Se você comprou sua assinatura na [Microsoft Store](http://www.microsoft.com/store), você também pode renová-la nela.
-- Licença de volume:  Caso sua empresa compre assinaturas por meio de uma licença de volume, o administrador deverá contatar um revendedor para renovar suas assinaturas.
+- Microsoft Store: se você tiver comprado sua assinatura na [Microsoft Store](https://www.microsoft.com/store), você também poderá renová-la na Microsoft Store.
+- Licença de volume: se a sua empresa compra assinaturas por meio de uma Licença de Volume, o administrador deverá contatar um revendedor para renovar suas assinaturas.
 
-**Assinaturas na nuvem:**  As assinaturas na nuvem não precisam ser renovadas. Enquanto a sua assinatura estiver sendo paga, ela permanecerá ativa.
+**Assinaturas de nuvem:** as assinaturas de nuvem não precisam ser renovadas. Enquanto a sua assinatura estiver sendo paga, ela permanecerá ativa.
 
-**Assinaturas adquiridas por meio de programas:**  Se você receber sua assinatura por meio de um programa, ela estará vinculada à sua participação no programa. Fale com os seus contatos do programa para obter informações adicionais.
+**Assinaturas adquiridas por meio de programas:** se você receber sua assinatura por meio de um programa, ela estará vinculada à sua participação no programa. Fale com os seus contatos do programa para obter informações adicionais.
 
 - [Imagine](https://imagine.microsoft.com/about)
 - [BizSpark](https://bizspark.microsoft.com/About/Offers)
@@ -96,8 +96,8 @@ Depois de adicionar uma conta alternativa, você poderá atualizá-la ou removê
 
 ## <a name="frequently-asked-questions"></a>Perguntas frequentes
 
-### <a name="q-if-i-do-not-renew-my-subscription-how-long-will-microsoft-keep-my-data"></a>P: Se eu não renovar minha assinatura, por quanto tempo a Microsoft manterá meus dados?
-R: Dependendo do canal de compra, a Microsoft mantém os dados do cliente durante diferentes períodos de tempo.
+### <a name="q-if-i-do-not-renew-my-subscription-how-long-will-microsoft-keep-my-data"></a>P: se eu não renovar minha assinatura, por quanto tempo Microsoft manterá meus dados?
+R: dependendo do canal de compra, a Microsoft mantém os dados do cliente durante diferentes períodos de tempo.
 
 | Canal                                                | Duração (dias) |
 |--------------------------------------------------------|-----------------|

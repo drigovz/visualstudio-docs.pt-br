@@ -6,16 +6,16 @@ manager: lank
 ms.date: 12/28/2017
 ms.topic: conceptual
 description: Localize uma lista dos downloads de software incluídos com a sua assinatura do Visual Studio.
-ms.openlocfilehash: aba0af561559142c186d9bfa5728bd00b6f4d1dc
-ms.sourcegitcommit: 6993bcb0d2b0067b1b7b7899bfba52c31c70b7e7
+ms.openlocfilehash: e7c64b7718a0446e16cb562d30ddc607cb4ea1dc
+ms.sourcegitcommit: 49ebf69986713e440fd138fb949f1c0f47223f23
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71095274"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74706767"
 ---
 # <a name="what-software-is-available-for-download"></a>Qual software está disponível para download?
 
-A [lista de downloads de software](http://download.microsoft.com/download/1/5/4/15454442-CF17-47B9-A65D-DF84EF88511B/Visual_Studio_by_Subscription_Level.xlsx) disponíveis para você depende da assinatura que está usando.  Se tiver mais de uma assinatura associada ao mesmo endereço de entrada, você verá os downloads incluídos na assinatura de nível mais alto, independentemente da assinatura que você estiver exibindo.  Por exemplo, se você tiver uma assinatura Visual Studio Enterprise Standard e uma assinatura Visual Studio Professional, verá a lista completa de downloads disponíveis com sua assinatura corporativa.  Para ver a lista de suas assinaturas, visite [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs).
+A [lista de downloads de software](https://download.microsoft.com/download/1/5/4/15454442-CF17-47B9-A65D-DF84EF88511B/Visual_Studio_by_Subscription_Level.xlsx) disponíveis para você depende da assinatura que está usando.  Se tiver mais de uma assinatura associada ao mesmo endereço de entrada, você verá os downloads incluídos na assinatura de nível mais alto, independentemente da assinatura que você estiver exibindo.  Por exemplo, se você tiver uma assinatura Visual Studio Enterprise Standard e uma assinatura Visual Studio Professional, verá a lista completa de downloads disponíveis com sua assinatura corporativa.  Para ver a lista de suas assinaturas, visite [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs).
 
 Se você já tem uma assinatura do Visual Studio:
 1. Acesse [https://my.visualstudio.com/downloads](https://my.visualstudio.com/downloads?wt.mc_id=o~msft~docs)
@@ -27,7 +27,7 @@ Para localizar produtos rapidamente, use as funções de "Pesquisar" na parte su
 > [!TIP]
 > Se você estiver procurando as chaves do produto (Product Keys), clique na guia **Chaves do Produto (Product Keys)** na parte superior da página.
 
-Você também pode baixar uma planilha do Excel que contém uma lista extensa de [títulos de software disponíveis](http://download.microsoft.com/download/1/5/4/15454442-CF17-47B9-A65D-DF84EF88511B/Visual_Studio_by_Subscription_Level.xlsx) para cada tipo de assinatura.
+Você também pode baixar uma planilha do Excel que contém uma lista extensa de [títulos de software disponíveis](https://download.microsoft.com/download/1/5/4/15454442-CF17-47B9-A65D-DF84EF88511B/Visual_Studio_by_Subscription_Level.xlsx) para cada tipo de assinatura.
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
 É possível saber mais sobre como [baixar software](download-software.md) ou obter e gerenciar [chaves do produto (Product Keys)](product-keys.md).

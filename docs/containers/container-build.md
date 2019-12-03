@@ -6,16 +6,16 @@ ms.author: ghogen
 ms.date: 11/20/2019
 ms.technology: vs-azure
 ms.topic: conceptual
-ms.openlocfilehash: a2f837ba264a12391786f584cf2698e19250fb2e
-ms.sourcegitcommit: 6336c387388707da94a91060dc3f34d4cfdc0a7b
+ms.openlocfilehash: e1b2f332563503dcb4d63faf301000db83eed5ea
+ms.sourcegitcommit: 49ebf69986713e440fd138fb949f1c0f47223f23
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74549952"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74706829"
 ---
-# <a name="build-and-debug-containerized-apps-using-visual-studio-or-the-command-line"></a>Compilar e depurar aplicativos em contêineres usando o Visual Studio ou a linha de comando
+# <a name="how-visual-studio-builds-containerized-apps"></a>Como o Visual Studio cria aplicativos em contêineres
 
-Independentemente de você estar criando a partir do IDE do Visual Studio ou configurando uma compilação de linha de comando, você precisa saber como o Visual Studio compila usa o Dockerfile para criar seus projetos.  Por motivos de desempenho, o Visual Studio segue um processo especial para aplicativos em contêineres. Entender como o Visual Studio cria seus projetos é especialmente importante quando você personaliza o processo de compilação modificando o Dockerfile.
+Quer você esteja criando a partir do IDE do Visual Studio ou configurando uma compilação de linha de comando, você precisa saber como o Visual Studio usa o Dockerfile para criar seus projetos.  Por motivos de desempenho, o Visual Studio segue um processo especial para aplicativos em contêineres. Entender como o Visual Studio cria seus projetos é especialmente importante quando você personaliza o processo de compilação modificando o Dockerfile.
 
 Quando o Visual Studio cria um projeto que não usa contêineres do Docker, ele invoca o MSBuild no computador local e gera os arquivos de saída em uma pasta (normalmente `bin`) em sua pasta de solução local. No entanto, para um projeto em contêineres, o processo de compilação conta com as instruções do Dockerfile para criar o aplicativo em contêineres. O Dockerfile que o Visual Studio usa é dividido em vários estágios. Esse processo depende do recurso de Build de vários *estágios* do Docker.
 
@@ -84,7 +84,7 @@ MSBuild MyProject.csproj /t:ContainerBuild /p:Configuration=Release
 
 Você verá uma saída semelhante à que você vê na janela de **saída** ao compilar sua solução no IDE do Visual Studio. Sempre use `/p:Configuration=Release`, já que, nos casos em que o Visual Studio usa a otimização de compilação de multiestágio, os resultados da criação da configuração de **depuração** podem não ser conforme o esperado. Consulte [depuração](#debugging).
 
-Se você estiver usando um projeto Docker Compose, use o comando para criar imagens:
+Se você estiver usando um projeto Docker Compose, use este comando para criar imagens:
 
 ```cmd
 msbuild /p:SolutionPath=<solution-name>.sln /p:Configuration=Release docker-compose.dcproj
@@ -99,7 +99,7 @@ O *projeto aquecimento* refere-se a uma série de etapas que ocorrem quando o pe
 - Efetuar pull das imagens no primeiro estágio do Dockerfile (o estágio `base` na maioria dos Dockerfiles).  
 - Crie o Dockerfile e inicie o contêiner.
 
-O aquecimento só acontecerá no modo **rápido** , portanto, o contêiner em execução terá o volume da pasta do aplicativo montado e as alterações no aplicativo não deverão invalidar o contêiner. Isso, portanto, melhora significativamente o desempenho da depuração e diminui o tempo de espera para tarefas de longa duração, como a extração de imagens grandes.
+O aquecimento só acontecerá no modo **rápido** , portanto, o contêiner em execução terá a pasta de aplicativo montada em volume. Isso significa que qualquer alteração no aplicativo não invalidará o contêiner. Isso, portanto, melhora significativamente o desempenho da depuração e diminui o tempo de espera para tarefas de longa duração, como a extração de imagens grandes.
 
 ## <a name="volume-mapping"></a>Mapeamento de volume
 

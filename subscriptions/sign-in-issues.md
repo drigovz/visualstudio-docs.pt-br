@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/19/2019
 ms.topic: conceptual
 description: Saiba mais sobre problemas que podem surgir ao entrar em assinaturas do Visual Studio
-ms.openlocfilehash: b138e1aad5221a1fe7aacd7fc916e6dfffb08a47
-ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
-ms.translationtype: HT
+ms.openlocfilehash: dea81a57501f791ba9d40a95c5305f9aedcc3b49
+ms.sourcegitcommit: 49ebf69986713e440fd138fb949f1c0f47223f23
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68377806"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74706849"
 ---
 # <a name="issues-signing-in-to-visual-studio-subscriptions"></a>Problemas ao entrar em assinaturas do Visual Studio
 Para usar sua Assinatura do Visual Studio, primeiro é necessário entrar.  Dependendo da sua assinatura, talvez você a tenha configurado com uma identidade da MSA (conta Microsoft) ou do AAD (Azure Active Directory).  Este artigo discute alguns problemas que podem ser encontrados ao entrar em sua assinatura.
@@ -39,7 +39,7 @@ No entanto, se tentar se inscrever em um aplicativo da Microsoft compatível com
    > ![Contas corporativas/de estudante com suporte](_img/sign-in-issues/existing-account.png)
 
 ### <a name="are-existing-accounts-affected"></a>As contas existentes são afetadas?
-O bloco de inscrição descrito aqui impede apenas a criação de novas contas. Ele não tem impacto sobre usuários que já têm uma Conta Microsoft com um endereço de email de trabalho/estudante. Caso já esteja nessa situação, facilitamos a renomeação de uma conta Microsoft pessoal. Esse [artigo de suporte](http://windows.microsoft.com/en-US/Windows/rename-personal-microsoft-account) fornece orientações passo a passo simples. Renomear sua conta Microsoft pessoal significa alterar o nome de usuário e não afeta seu email de trabalho ou a maneira como você entra nos serviços empresariais, como o Office 365. Isso também não afeta suas coisas pessoais. Só muda a maneira como você entra nela. É possível usar outro endereço de email (pessoal), obter um novo endereço de email @outlook.com da Microsoft ou usar seu número de telefone como um novo nome de usuário.
+O bloco de inscrição descrito aqui impede apenas a criação de novas contas. Ele não tem impacto sobre usuários que já têm uma Conta Microsoft com um endereço de email de trabalho/estudante. Caso já esteja nessa situação, facilitamos a renomeação de uma conta Microsoft pessoal. Esse [artigo de suporte](https://windows.microsoft.com/en-US/Windows/rename-personal-microsoft-account) fornece orientações passo a passo simples. Renomear sua conta Microsoft pessoal significa alterar o nome de usuário e não afeta seu email de trabalho ou a maneira como você entra nos serviços empresariais, como o Office 365. Isso também não afeta suas coisas pessoais. Só muda a maneira como você entra nela. É possível usar outro endereço de email (pessoal), obter um novo endereço de email @outlook.com da Microsoft ou usar seu número de telefone como um novo nome de usuário.
 
 > [!NOTE]
 > Se o departamento de TI desejar que você crie uma conta Microsoft pessoal com seu email de trabalho/estudante, por exemplo, para acessar serviços empresariais da Microsoft como o Suporte Premier, converse com sua equipe de administração antes de renomear sua conta.
@@ -57,11 +57,11 @@ Dependendo do tipo de conta usado para entrar, é possível que as assinaturas d
 ### <a name="what-is-aliasing"></a>O que é um alias?
 O termo "alias" refere-se a usuários com identidades diferentes para entrar no Windows (ou no Active Directory) e para acessar o email.
 
-Os aliases podem ser encontrados quando a empresa tem um Serviço Online da Microsoft para a entrada no diretório, como JohnD@contoso.com, mas os usuários acessam as contas de email usando aliases ou nomes amigáveis, como John.Doe@contoso.com. Para muitos clientes que gerenciam as assinaturas por VLSC (Volume Licensing Service Center), isso pode resultar em uma experiência de logon malsucedida, pois o endereço de email fornecido (John.Doe@contoso.com) não coincide com o endereço do diretório (JohnD@contoso.com) necessário para a autenticação bem-sucedida por meio da opção "Conta corporativa ou de estudante".
+Os aliases podem ser encontrados quando a empresa tem um Serviço Online da Microsoft para a entrada no diretório, como JohnD@contoso.com, mas os usuários acessam as contas de email usando aliases ou nomes amigáveis, como John.Doe@contoso.com. Para muitos clientes que gerenciam suas assinaturas por meio do VLSC (centro de serviços de licenciamento por volume), isso pode resultar em uma experiência de entrada malsucedida, pois o endereço de email fornecido (John.Doe@contoso.com) não corresponde ao endereço de diretório (JohnD@contoso.com) necessário para a autenticação bem-sucedida por meio da opção "conta corporativa ou de estudante".
 
 ### <a name="what-options-do-i-have"></a>Quais as opções disponíveis?
 Da perspectiva do assinante, é importante primeiro trabalhar com o administrador para entender a configuração de identidade da empresa. Se necessário, o administrador poderá precisar atualizar as configurações de conta no portal de administração ou talvez seja necessário criar uma MSA (conta da Microsoft) usando o endereço de email corporativo. Antes de executar as etapas para criar uma MSA, fale com o administrador sobre quaisquer políticas ou problemas na execução desta ação. 
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
 - Saiba como [vincular contas MSA e AAD](/azure/active-directory/b2b/add-users-administrator) dentro do AAD.
 - Saiba mais sobre a [anonimização](anonymization.md).
