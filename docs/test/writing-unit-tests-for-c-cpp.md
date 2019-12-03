@@ -8,12 +8,12 @@ manager: markl
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 824b928c9f89b98f9026059b824fce84969bf69a
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 69b4f38ae43bacd5324b30a3970047b39c32fe99
+ms.sourcegitcommit: 669fc9e397476d7a1d2cda5999710d415f7d6e4f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189106"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74688853"
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>Gravar testes de unidade para C/C++ no Visual Studio
 
@@ -79,7 +79,7 @@ Para habilitar o código de teste a acessar as funções no projeto a ser testad
 
 ### <a name="link-to-object-or-library-files"></a>Vincular a arquivos de biblioteca ou objeto
 
-Se o código de teste não exportar as funções que você deseja testar, será possível adicionar os arquivos .obj ou .lib de saída para as dependências do projeto de teste. Consulte [Como vincular os testes aos arquivos de biblioteca ou objeto](how-to-use-microsoft-test-framework-for-cpp.md).
+Se o código de teste não exportar as funções que você deseja testar, será possível adicionar os arquivos .obj ou .lib de saída para as dependências do projeto de teste. Consulte [Como vincular os testes aos arquivos de biblioteca ou objeto](/visualstudio/test/how-to-use-microsoft-test-framework-for-cpp#same_project).
 
 ### <a name="add-include-directives-for-header-files"></a>Adicionar diretivas de inclusão aos arquivos de cabeçalho
 
@@ -87,7 +87,7 @@ Em seguida, no arquivo *.cpp* do teste de unidade, adicione uma diretiva `#inclu
 
 ![Adicionar diretivas de inclusão](media/cpp-add-includes-test-project.png)
 
-Para evitar a necessidade de digitar o caminho completo em cada instrução include no arquivo de origem, você pode adicionar as pastas necessárias nas **Propriedades** do **projeto** >  > **C/C++**  > **geral** > **inclusão adicional Diretórios**.
+Para evitar a necessidade de digitar o caminho completo em cada instrução include no arquivo de origem, você pode adicionar as pastas necessárias no **projeto** > **Propriedades** > **CC++ /**  > **geral** > **diretórios de inclusão adicionais**.
 
 ### <a name="write-test-methods"></a>Gravar métodos de teste
 
