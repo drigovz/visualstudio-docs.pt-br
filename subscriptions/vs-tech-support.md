@@ -6,12 +6,12 @@ manager: lank
 ms.date: 11/18/2019
 ms.topic: conceptual
 description: Saiba como ativar o benefício do suporte técnico incluído na assinatura do Visual Studio.
-ms.openlocfilehash: f88cf221f47f2b8aa89a733a4794e424ac938261
-ms.sourcegitcommit: 5c9ca18eadc7ed0ed095cc5a3e1df40bbc13e70c
+ms.openlocfilehash: f7c1353e9f9759b91a7d83d8296a036bb5b80dd7
+ms.sourcegitcommit: 49ebf69986713e440fd138fb949f1c0f47223f23
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74161976"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74706990"
 ---
 # <a name="activate-and-use-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Ativar e usar o benefício do Suporte Técnico em assinaturas do Visual Studio
 O benefício de Suporte Técnico em assinaturas do Visual Studio destina-se a resolver problemas de interrupção/reparo em **ambientes de não produção** para os produtos que ainda estão na fase de suporte base do [ciclo de vida de suporte](https://support.microsoft.com/lifecycle/search). As assinaturas de nuvem anual e padrão do Visual Studio Enterprise recebem quatro incidentes, enquanto as assinaturas de nuvem anual e padrão do Visual Studio Professional recebem dois incidentes, por até 1 ano a contar da ativação do benefício. A ativação do benefício precisa ocorrer enquanto a assinatura é atual.
@@ -54,7 +54,7 @@ Descrições de nível de produto: expanda **planos de suporte indisponíveis**.
 > Para ativar sua conta de suporte em um idioma diferente de inglês, escolha seu país [nesta lista](https://support.microsoft.com/help/14084/activate-support-contract).
 
 ## <a name="how-to-submit-an-incident-using-your-benefit"></a>Como enviar um incidente usando seu benefício
-Depois de configurar a **ID do Contrato** e a **ID de Acesso**, você poderá usá-las para enviar um incidente de Suporte Técnico [online](http://support.microsoft.com/oas/) (entrada necessária), por meio do [portal do Azure](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview) ou ligando para o número de suporte técnico de seu país. Se você enviar seu incidente online, terá a opção de receber uma chamada do analista de Suporte da Microsoft.
+Depois de configurar a **ID do Contrato** e a **ID de Acesso**, você poderá usá-las para enviar um incidente de Suporte Técnico [online](https://support.microsoft.com/oas/) (entrada necessária), por meio do [portal do Azure](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview) ou ligando para o número de suporte técnico de seu país. Se você enviar seu incidente online, terá a opção de receber uma chamada do analista de Suporte da Microsoft.
 
 ### <a name="already-have-your-contract-id-and-access-id-associated-with-the-account-used-to-sign-in-to-submit-a-tech-support-incident-online"></a>Já tem a ID do Contrato e a ID de Acesso associadas à conta usada na entrada para enviar um incidente de Suporte Técnico online?
 Ao enviar um incidente online, primeiro você deverá entrar. Entre com a conta que você sabe que está associada à ID do Contrato e à ID de Acesso. O benefício do Plano de Suporte existente associado à sua conta serão exibidos na Etapa 3 do fluxo de trabalho de suporte. Basta selecionar o plano e continuar para enviar seu caso. Você poderá enviar incidentes até o limite indicado no plano ou até a data do término do plano, o que ocorrer primeiro. Depois que os incidentes restantes mostrarem "0" ou se o plano expirar, ele não estará mais ativo.
@@ -107,9 +107,9 @@ Para usar o benefício de suporte técnico da assinatura do Visual Studio para p
 2. Na navegação à esquerda, clique em **Ajuda + Suporte**
 3. Em "Suporte", clique em **Nova Solicitação de Suporte**
 
-## <a name="eligibility"></a>Qualificação
+## <a name="eligibility"></a>Elegibilidade
 
-| Nível de Assinatura                                                 |     Canais                                            | Benefício                                                          | Renovável?    |
+| Nível de Assinatura                                                 |     Canais                                            | Benefícios do                                                          | Renovável?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | VL, Azure, Comercial, NFR selecionado<sup>1</sup> | 4 incidentes       |  Sim|
 | Visual Studio Enterprise com GitHub Enterprise | VL | 4 incidentes       |  Sim|
@@ -126,7 +126,7 @@ Para usar o benefício de suporte técnico da assinatura do Visual Studio para p
 
 Não tem certeza de qual assinatura você está usando?  Conecte-se ao [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) para ver todas as assinaturas atribuídas ao seu endereço de email. Se não vir todas as suas assinaturas, talvez você tenha uma ou mais atribuídas a outro endereço de email.  Você precisará entrar com esse endereço de email para ver as assinaturas.
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
 Certifique-se de ativar estes excelentes benefícios para aproveitar ao máximo sua assinatura do Visual Studio:
 - [Visual Studio](vs-ide-benefit.md)
 - [Azure DevOps](vs-azure-devops.md)

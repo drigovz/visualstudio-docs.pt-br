@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/29/2019
 ms.topic: conceptual
 description: Saiba mais sobre a disponibilidade de produtos em downloads de software para assinaturas do Visual Studio
-ms.openlocfilehash: 2b6e53ab959d91b269c4235a1438af36eae24e11
-ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
-ms.translationtype: HT
+ms.openlocfilehash: bf75f9638807b823fb72c4e23f69d0204fcec5de
+ms.sourcegitcommit: 49ebf69986713e440fd138fb949f1c0f47223f23
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68681688"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74706818"
 ---
 # <a name="product-availability-for-software-downloads-in-visual-studio-subscriptions"></a>Disponibilidade de produtos para downloads de software em assinaturas do Visual Studio
 Como parte de seus benefícios de assinante, você tem acesso a uma ampla variedade de downloads de software.
@@ -25,18 +25,18 @@ Há várias razões pelas quais determinados produtos podem não estar disponív
 - **O produto não está incluído em seu nível de assinatura ou programa.** [Saiba mais](https://visualstudio.microsoft.com/vs/pricing/) sobre o software e os benefícios disponíveis com a sua assinatura ou [baixe a lista completa](https://download.microsoft.com/download/1/5/4/15454442-CF17-47B9-A65D-DF84EF88511B/Products_by_Benefit_Level.xlsx) de produtos disponíveis por nível de assinatura. Alguns programas, como o [Microsoft Partner Network](https://partner.microsoft.com/), fornecem assinaturas do Visual Studio como parte de seus benefícios.  As assinaturas não incluem todos os produtos incluídos nas assinaturas do Visual Studio compradas. Os assinantes desses programas devem encaminhar suas dúvidas a disponibilidade dos downloads de produtos para as equipes de suporte desses programas.
 - **O produto não está incluído nas assinaturas.** Alguns produtos da Microsoft não estão incluídos nas assinaturas devido a termos de licenciamento especiais, restrições técnicas ou relevância do desenvolvedor. Se desejar sugerir que um produto seja adicionado à assinatura, envie um email para o [Atendimento ao Cliente](https://visualstudio.microsoft.com/subscriptions/support/) do Visual Studio.
 - **O produto está publicamente disponível.** Algumas ferramentas, SDKs, DDKs e service packs estão publicamente disponíveis no [Centro de Download da Microsoft](https://www.microsoft.com/download). Alguns desses produtos podem não estar publicados nos Downloads.
-- **O produto ainda não foi lançado.**  Muitas versões de pré-lançamento (beta) e Release Candidate estão disponíveis nos Downloads. Entretanto, nem todas as betas podem ser incluídas. Por exemplo, algumas betas exigem qualificação ou registros especiais. Para obter mais informações sobre programas técnicos beta abertos, acesse o [Microsoft Connect](http://connect.microsoft.com/).
+- **O produto ainda não foi lançado.**  Muitas versões de pré-lançamento (beta) e Release Candidate estão disponíveis nos Downloads. Entretanto, nem todas as betas podem ser incluídas. Por exemplo, algumas betas exigem qualificação ou registros especiais. Para obter mais informações sobre programas técnicos beta abertos, acesse o [Microsoft Connect](https://connect.microsoft.com/).
 - **O produto não está disponível no seu país.** Alguns produtos da Microsoft não estão disponíveis devido a restrições regionais.
 - **Software redundante.** Os downloads e as chaves do produto de determinados pacotes do Office e do Office autônomo não estão mais disponíveis nas assinaturas que incluem o Office. Os downloads e as chaves do produto estão disponíveis para o pacote do Office correspondente mais atual da mesma versão.  Por exemplo, se você pesquisar PowerPoint 2010, a pesquisa não retornará nenhum resultado.  No entanto, você poderá pesquisar Office 2010 – o pacote do Office que continha o PowerPoint 2010 – e baixar o pacote.
 
 ## <a name="what-do-i-get"></a>O que eu posso obter?
-O número e os tipos de downloads dependem do seu nível de assinatura e das suas associações ao programa.  Os assinantes com assinaturas padrão do Visual Studio Enterprise, por exemplo, podem ter downloads disponíveis diferentes dos de assinantes que obtêm suas assinaturas por meio de uma assinatura do programa Microsoft Partner Network ou BizSpark.  Para saber mais sobre quais downloads estão disponíveis para cada nível de assinatura, baixe a lista de [Produtos por nível de benefício](http://download.microsoft.com/download/1/5/4/15454442-CF17-47B9-A65D-DF84EF88511B/Visual_Studio_by_Subscription_Level.xlsx).
+O número e os tipos de downloads dependem do seu nível de assinatura e das suas associações ao programa.  Os assinantes com assinaturas padrão do Visual Studio Enterprise, por exemplo, podem ter downloads disponíveis diferentes dos de assinantes que obtêm suas assinaturas por meio de uma assinatura do programa Microsoft Partner Network ou BizSpark.  Para saber mais sobre quais downloads estão disponíveis para cada nível de assinatura, baixe a lista de [Produtos por nível de benefício](https://download.microsoft.com/download/1/5/4/15454442-CF17-47B9-A65D-DF84EF88511B/Visual_Studio_by_Subscription_Level.xlsx).
 
 > [!NOTE]
 > Se você tiver várias assinaturas associadas ao mesmo endereço de email, os títulos de software disponíveis serão determinados pela assinatura de nível **mais alto** que você tiver.  Por exemplo, se você tiver uma assinatura do Visual Studio Enterprise e uma assinatura do Visual Studio Test Professional, terá acesso aos títulos de software incluídos na assinatura do Visual Studio Enterprise, independentemente de qual assinatura está atualmente em uso no portal de assinaturas. 
 
 Não tem certeza de qual assinatura você está usando?  Conecte-se ao [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) para ver todas as assinaturas atribuídas ao seu endereço de email. Se não vir todas as suas assinaturas, talvez você tenha uma ou mais atribuídas a outro endereço de email.  Você precisará entrar com esse endereço de email para ver as assinaturas.
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
 - Alguns downloads de software podem exigir uma chave do produto (Product Key) para instalá-los e ativá-los.  Confira nosso artigo sobre [chaves do produto](product-keys.md) para obter detalhes sobre como obter e gerenciar suas chaves do produto. 
 - Etapas para [baixar o software](download-software.md).

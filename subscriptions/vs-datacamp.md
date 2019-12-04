@@ -6,12 +6,12 @@ manager: lank
 ms.date: 11/13/2019
 ms.topic: conceptual
 description: Saiba mais sobre a assinatura de treinamento do DataCamp incluída na assinatura do Visual Studio.
-ms.openlocfilehash: ea889814373fa7c970e905bb4a845d5ca67c92e7
-ms.sourcegitcommit: 6f25855de9db455e6d38bc105057d2ed1e7454b9
+ms.openlocfilehash: 4ddfe064539a2ff572a7c89b89d618dff84f63a0
+ms.sourcegitcommit: 49ebf69986713e440fd138fb949f1c0f47223f23
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74199877"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74706874"
 ---
 # <a name="the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>O benefício de treinamento do DataCamp em assinaturas do Visual Studio
 As assinaturas qualificadas do Visual Studio incluem assinaturas do DataCamp.  Com o DataCamp, você aprende todas as habilidades de ciência de dados necessárias no conforto do seu navegador. Você escolhe quando e o que aprender. Sem software para instalar e sem requisitos especiais de hardware, aprender ciência de dados é mais fácil do que nunca.
@@ -50,20 +50,20 @@ As assinaturas qualificadas do Visual Studio incluem assinaturas do DataCamp.  C
    > [!div class="mx-imgBorder"]
    > ![Introdução ao DataCamp](_img/vs-datacamp/vs-datacamp-getting-started.png)
 
-Você pode parar a qualquer momento e retomar seu treinamento na próxima sessão.  Basta acessar [http://www.datacamp.com](http://www.datacamp.com) e entrar.  O seu painel será exibido e você poderá retomar o treinamento exatamente onde parou. Basta clicar em **Continuar Treinamento**.
+Você pode parar a qualquer momento e retomar seu treinamento na próxima sessão.  Basta acessar [https://www.datacamp.com](https://www.datacamp.com) e entrar.  O seu painel será exibido e você poderá retomar o treinamento exatamente onde parou. Basta clicar em **Continuar Treinamento**.
 
 > [!div class="mx-imgBorder"]
-> ![Treinamento Contínuo no DataCamp](_img/vs-datacamp/vs-datacamp-continue-training.png)
+> ![de treinamento do datacamp continue](_img/vs-datacamp/vs-datacamp-continue-training.png)
 
 ## <a name="eligibility"></a>Elegibilidade
-| Nível de Assinatura                                                 |     Canais                                            | Benefício                                                          | Renovável?    |
+| Nível de Assinatura                                                 |     Canais                                            | Benefícios do                                                          | Renovável?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Standard)   | VL, Azure, Retail, | 3 meses       |  Não.  Disponível apenas para novos assinantes          |
-| Visual Studio Enterprise com GitHub Enterprise   | VL | 3 meses       |  Não.  Disponível apenas para novos assinantes          |
-| Visual Studio Professional (Standard) | VL, Azure, Retail                                       | 3 meses                                                            |  Não.  Disponível apenas para novos assinantes           |
-| Visual Studio Professional com GitHub Enterprise| VL | 3 meses                                                            |  Não.  Disponível apenas para novos assinantes           |
-| Visual Studio Test Professional (Padrão)                         | VL, Retail                                              | 3 meses                                             |  Não.  Disponível apenas para novos assinantes           |
-| Plataformas MSDN (Padrão)                                          | VL, Retail                                              | 3 meses                                              |  Não.  Disponível apenas para novos assinantes           |
+| Visual Studio Enterprise (Standard)   | VL, Azure, Retail, | 3 meses       |  No.  Disponível apenas para novos assinantes          |
+| Visual Studio Enterprise com GitHub Enterprise   | VL | 3 meses       |  No.  Disponível apenas para novos assinantes          |
+| Visual Studio Professional (Standard) | VL, Azure, Retail                                       | 3 meses                                                            |  No.  Disponível apenas para novos assinantes           |
+| Visual Studio Professional com GitHub Enterprise| VL | 3 meses                                                            |  No.  Disponível apenas para novos assinantes           |
+| Visual Studio Test Professional (Padrão)                         | VL, Retail                                              | 3 meses                                             |  No.  Disponível apenas para novos assinantes           |
+| Plataformas MSDN (Padrão)                                          | VL, Retail                                              | 3 meses                                              |  No.  Disponível apenas para novos assinantes           |
 | Visual Studio Enterprise (Standard)  | NFR<sup>1</sup> |Não disponível  | {1&gt;N/A&lt;1} |
 | Visual Studio Enterprise, Visual Studio Professional (nuvem mensal) | Azure | Não disponível | {1&gt;N/A&lt;1} |
 
