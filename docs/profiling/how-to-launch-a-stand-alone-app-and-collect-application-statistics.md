@@ -1,21 +1,22 @@
 ---
-title: 'Linha de comando do criador de perfil: Iniciar o aplicativo autônomo, obter estatísticas de aplicativo'
+title: 'Linha de comando do Profiler: iniciar aplicativo autônomo, obter estatísticas de aplicativo'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 52dcee2b-f178-4a76-bddc-e36c50bfcb78
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: c2544e2a9951fe6738b85b3bf9b9c31e69f2eb9b
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
-ms.translationtype: HT
+ms.openlocfilehash: fb6228592115091dc538dbe59c227a180e75aa10
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66261363"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74775407"
 ---
-# <a name="how-to-launch-a-stand-alone-application-with-the-profiler-and-collect-application-statistics-by-using-the-command-line"></a>Como: Iniciar um aplicativo autônomo com o criador de perfil e coletar estatísticas do aplicativo usando a linha de comando
+# <a name="how-to-launch-a-stand-alone-application-with-the-profiler-and-collect-application-statistics-by-using-the-command-line"></a>Como iniciar um aplicativo autônomo com o criador de perfil e coletar estatísticas do aplicativo usando a linha de comando
 Este tópico descreve como usar as ferramentas de linha de comando das Ferramentas de Criação de Perfil do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para iniciar um aplicativo autônomo (cliente) e coletar estatísticas de desempenho usando o método de amostragem.
 
 > [!NOTE]
@@ -37,9 +38,9 @@ Este tópico descreve como usar as ferramentas de linha de comando das Ferrament
 
 #### <a name="to-start-an-application-by-using-the-profiler"></a>Para iniciar um aplicativo usando o criador de perfil
 
-1. Abra uma janela do Prompt de Comando.
+1. {1&gt;Abra uma janela do Prompt de Comando. &lt;1}
 
-2. Inicie o criador de perfil. Tipo:
+2. {2&gt;Inicie o criador de perfil.&lt;2} Tipo:
 
     **VSPerfCmd /start:sample /output:** `OutputFile` [`Options`]
 
@@ -95,7 +96,7 @@ Este tópico descreve como usar as ferramentas de linha de comando das Ferrament
 
     - Feche o aplicativo de destino.
 
-         - ou -
+         \- ou -
 
     - Digite **VSPerfCmd /detach**
 
