@@ -1,5 +1,5 @@
 ---
-title: 'Como: Limitar a instrumentação a DLLs específicas | Microsoft Docs'
+title: Como limitar a instrumentação a DLLs específicas | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,16 +7,17 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: b39689219b113343162aa0e814cfa68e2422f08d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 066262a3fae35e82904b011165813e9dd75d9987
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62980909"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778811"
 ---
-# <a name="how-to-limit-instrumentation-to-specific-dlls"></a>Como: Limitar a instrumentação a DLLs específicas
+# <a name="how-to-limit-instrumentation-to-specific-dlls"></a>Como limitar a instrumentação a DLLs específicas
 
 Ao usar o método de criação de perfil de instrumentação, é possível limitar a coleta de dados de criação de perfil a uma ou mais DLLs em um aplicativo. Para criar o perfil de uma ou mais DLLs em um aplicativo, você deverá criar uma sessão de desempenho que inclua os arquivos .*dll* como destino. É possível especificar as DLLs que você deseja analisar como projetos em uma solução do Visual Studio ou como arquivos binários independentes.
 
@@ -28,7 +29,7 @@ Ao usar o método de criação de perfil de instrumentação, é possível limit
 
 3. Escolha **Instrumentação** como o método de criação de perfil e, em seguida, clique em **Avançar**.
 
-4. Em **Para quais dos seguintes destinos disponíveis você deseja criar o perfil?**, selecione o nome do projeto .*dll* e, em seguida, clique em **Avançar**.
+4. Em **Para quais dos seguintes destinos disponíveis você deseja criar o perfil?** , selecione o nome do projeto .*dll* e, em seguida, clique em **Avançar**.
 
 5. Clique em **Concluir** para sair do assistente e exibir a nova sessão de desempenho na janela **Gerenciador de Desempenho**.
 
@@ -42,11 +43,11 @@ Ao usar o método de criação de perfil de instrumentação, é possível limit
 
 ## <a name="to-specify-specific-dlls-to-profile-as-independent-binaries"></a>Para determinar DLLs específicas a serem analisadas como binários independentes
 
-1. Abra o Visual Studio.
+1. {1&gt;Abra o Visual Studio.&lt;1}
 
 2. No menu **Analisar**, selecione **Iniciar o Assistente de Desempenho**.
 
-3. Em **Para quais dos seguintes destinos disponíveis você deseja criar o perfil?**, selecione **Criar o perfil de uma biblioteca de vínculo dinâmico (.DLL)** e, em seguida, clique em **Avançar**.
+3. Em **Para quais dos seguintes destinos disponíveis você deseja criar o perfil?** , selecione **Criar o perfil de uma biblioteca de vínculo dinâmico (.DLL)** e, em seguida, clique em **Avançar**.
 
 4. Na segunda página do assistente, realize as seguintes etapas:
 
@@ -69,5 +70,5 @@ Ao usar o método de criação de perfil de instrumentação, é possível limit
 
 ## <a name="see-also"></a>Consulte também
 
-[Controlar a coleta de dados](../profiling/controlling-data-collection.md)
-[Como: Limitar a instrumentação a funções específicas](../profiling/how-to-limit-instrumentation-to-specific-functions.md)
+A [coleta de dados de controle](../profiling/controlling-data-collection.md)
+[como: limitar a instrumentação a funções específicas](../profiling/how-to-limit-instrumentation-to-specific-functions.md)

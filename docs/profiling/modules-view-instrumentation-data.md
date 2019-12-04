@@ -8,14 +8,15 @@ ms.assetid: 895b9589-1987-4160-916f-53b898a69cf0
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: be1c3b972397246823512f67e6fe2a0e2ecabbd5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: f6449ad30edf11d3d315532cc33db2a79c14f90b
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62830027"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778525"
 ---
 # <a name="modules-view---instrumentation-data"></a>Exibição Módulos – dados de instrumentação
 A exibição Módulos mostra dados de desempenho agrupados pelos módulos que estavam nos dados de criação de perfil. As funções do módulo são listadas abaixo do nó do módulo.

@@ -10,14 +10,15 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 37025177c026d0b6578644ca5765a6878be984ea
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 9accd3d0ab5ff1f7a3084d5973cace08e66396b9
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62552989"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779543"
 ---
 # <a name="cpu-and-windows-counters"></a>Contadores de CPU e do Windows
 
@@ -89,13 +90,13 @@ Para listar os contadores disponíveis em um computador na IDE do Visual Studio,
 
 1. No Gerenciador de Desempenho, clique com o botão direito do mouse na sessão de desempenho e clique em **Propriedades**.
 
-2. Realize um dos seguintes procedimentos:
+2. Siga um destes procedimentos:
 
    - Clique em **Amostragem** e, em seguida, selecione **Contador de desempenho** na lista de eventos **Amostra**. Os contadores da CPU são listados em **Contadores de desempenho disponíveis**.
 
       **Observação** Clique em **Cancelar** para retornar à configuração de amostragem anterior.
 
-     - ou -
+     \- ou -
 
    - Selecione **Contadores da CPU** e, em seguida, **Coletar Contadores da CPU**. Os contadores da CPU são listados em **Contadores disponíveis**.
 
@@ -111,7 +112,7 @@ Para listar os contadores disponíveis em um computador na IDE do Visual Studio,
 
 4. Na lista **Categoria de Contador**, selecione um grupo de contadores. O contador do Windows para o grupo é exibido na caixa de listagem.
 
-     **Observação:** Clique em **Cancelar** para retornar à configuração anterior de coleta de contadores.
+     **Observação:** Clique em **Cancelar** para retornar à configuração de coleta de contadores anterior.
 
 ### <a name="command-line"></a>Linha de comando
 
@@ -121,7 +122,7 @@ Com a ferramenta de linha de comando [VSPerfCmd](../profiling/vsperfcmd.md), é 
 
 1. Abra uma janela do prompt de comando.
 
-2. Tipo
+2. {1&gt;Tipo&lt;1}
 
      **\<Visual Studio Performance Tools Directory>\VSPerfCmd /querycounters**
 
@@ -130,6 +131,6 @@ Com a ferramenta de linha de comando [VSPerfCmd](../profiling/vsperfcmd.md), é 
 ## <a name="see-also"></a>Consulte também
 
 [Visões gerais](../profiling/overviews-performance-tools.md)
-[Como: Escolher eventos de amostragem](../profiling/how-to-choose-sampling-events.md)
-[Como: Coletar dados do contador da CPU](../profiling/how-to-collect-cpu-counter-data.md)
-[Como: Coletar dados de contadores do Windows](../profiling/how-to-collect-windows-counter-data.md)
+[como: escolher eventos de amostragem](../profiling/how-to-choose-sampling-events.md)
+[como coletar dados do contador de CPU](../profiling/how-to-collect-cpu-counter-data.md)
+[como coletar dados do contador do Windows](../profiling/how-to-collect-windows-counter-data.md)

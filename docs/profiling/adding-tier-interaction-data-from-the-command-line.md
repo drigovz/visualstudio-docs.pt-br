@@ -8,14 +8,15 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: b04b2d2c3c23b444d011d81002f7f22a12b1ebf0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 20b8438243382b28cccb510894d1674aa5872946
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62777852"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779864"
 ---
 # <a name="add-tier-interaction-data-from-the-command-line"></a>Adicionar dados de interação de camada por meio da linha de comando
 
@@ -31,7 +32,7 @@ A criação de perfil de interação de camadas pode ser coletada usando qualque
 
 **Coletar dados TIP em um computador remoto**
 
-Para coletar os dados de interação de camadas em um computador remoto, você precisa copiar o arquivo **vs_profiler\_**_\<Platform>_**\_**_\<Language>_**.exe** da pasta _%VSInstallDir%_**\Team Tools\Performance Tools\Setups** de um computador com o Visual Studio para o computador remoto e instalá-lo. Não é possível usar as ferramentas de criação de perfil no pacote de download da [Depuração Remota](../debugger/remote-debugging.md).
+Para coletar os dados de interação de camadas em um computador remoto, você precisa copiar o arquivo **vs_profiler\_** _\<Platform>_ **\_** _\<Language>_ **.exe** da pasta _%VSInstallDir%_ **\Team Tools\Performance Tools\Setups** de um computador com o Visual Studio para o computador remoto e instalá-lo. Não é possível usar as ferramentas de criação de perfil no pacote de download da [Depuração Remota](../debugger/remote-debugging.md).
 
 **Relatórios TIP**
 
@@ -58,7 +59,7 @@ No exemplo a seguir, um aplicativo de área de trabalho do Windows tem o perfil 
     vsperfclrenv /interactionon
     ```
 
-3. Inicie o criador de perfil. Digite o seguinte comando:
+3. {2&gt;Inicie o criador de perfil.&lt;2} Digite o seguinte comando:
 
     ```cmd
     vsperfcmd /start:trace /output:Desktop_tip.vsp
@@ -110,7 +111,7 @@ No exemplo a seguir, um serviço do Windows tem o perfil criado usando o método
 
 6. Abra uma janela de prompt de comando com privilégios de administrador.
 
-7. Inicie o criador de perfil. Digite o seguinte comando:
+7. {2&gt;Inicie o criador de perfil.&lt;2} Digite o seguinte comando:
 
     ```cmd
     vsperfcmd /start:trace /output:MiddleTier_tip.vsp /user:SYSTEM /crosssession

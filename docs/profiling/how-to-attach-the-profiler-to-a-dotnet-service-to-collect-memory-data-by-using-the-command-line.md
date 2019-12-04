@@ -7,16 +7,17 @@ ms.assetid: aeac39af-ad99-479f-aa36-4104356ca512
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: fa054367ee8953c433512b6c4bcb0964637a1b74
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
-ms.translationtype: HT
+ms.openlocfilehash: 94ea4f38ccebc1015419e2254b06033fa17a09a8
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66746295"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74777012"
 ---
-# <a name="how-to-attach-the-profiler-to-a-net-service-to-collect-memory-data-by-using-the-command-line"></a>Como: Anexar o criador de perfil a um serviço do .NET para coletar dados de memória usando a linha de comando
+# <a name="how-to-attach-the-profiler-to-a-net-service-to-collect-memory-data-by-using-the-command-line"></a>Como anexar o criador de perfil a um serviço do .NET para coletar dados da memória usando a linha de comando
 Este artigo descreve como usar as ferramentas de linha de comando das Ferramentas de Criação de Perfil do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para anexar o criador de perfil a um serviço .NET Framework e coletar dados de memória. É possível coletar dados sobre o número e tamanho das alocações de memória, bem como sobre o tempo de vida de objetos de memória.
 
 > [!NOTE]
@@ -57,7 +58,7 @@ Este artigo descreve como usar as ferramentas de linha de comando das Ferramenta
 
 6. Abra uma janela do prompt de comando. Se necessário, adicione o caminho do criador de perfil à variável de ambiente PATH.
 
-7. Inicie o criador de perfil. Tipo:
+7. {2&gt;Inicie o criador de perfil.&lt;2} Tipo:
 
     **VSPerfCmd**  [/start](../profiling/start.md) **:sample**  [/output](../profiling/output.md) **:** `OutputFile` [`Options`]
 
@@ -110,7 +111,7 @@ Este artigo descreve como usar as ferramentas de linha de comando das Ferramenta
 
     - Pare o serviço.
 
-         - ou -
+         \- ou -
 
     - Digite **VSPerfCmd /detach**
 

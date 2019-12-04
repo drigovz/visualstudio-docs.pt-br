@@ -1,21 +1,22 @@
 ---
-title: 'Linha de comando do criador de perfil: Instrumentar o aplicativo ASP.NET estático, obter dados de memória'
+title: 'Linha de comando do criador de perfil: Instrument estática ASP.NET app, obter dados de memória'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: ea1dcb7c-1dc3-49ff-9418-8795b5b3d3bc
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: d57dad9c23bf56f30155bc7cd4d848a368780f51
-ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
-ms.translationtype: HT
+ms.openlocfilehash: 98fac9f01219cd398f1d5ec462e3f5165f4638d7
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67032991"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74775425"
 ---
-# <a name="how-to-instrument-a-statically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line"></a>Como: Instrumentar um aplicativo Web ASP.NET compilado estaticamente e coletar dados de memória usando a linha de comando do criador de perfil
+# <a name="how-to-instrument-a-statically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line"></a>Como instrumentar um aplicativo Web ASP.NET compilado estaticamente e coletar dados de memória usando a linha de comando do criador de perfil
 Este artigo descreve como usar as ferramentas da linha de comando das Ferramentas de Criação de Perfil do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para instrumentar um componente Web ou site do [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] pré-compilado e coletar dados detalhados de alocação de memória do .NET, de tempo de vida do objeto e de tempo.
 
 > [!NOTE]
@@ -39,7 +40,7 @@ Este artigo descreve como usar as ferramentas da linha de comando das Ferramenta
 
     **VSPerfClrEnv /globaltracegc**
 
-    -ou-
+    \- ou -
 
     **VSPerfClrEnv /globaltracegclife**
 
@@ -51,7 +52,7 @@ Este artigo descreve como usar as ferramentas da linha de comando das Ferramenta
 
 5. Abra uma janela do prompt de comando.
 
-6. Inicie o criador de perfil. Em uma janela de prompt de comando, digite:
+6. {2&gt;Inicie o criador de perfil.&lt;2} Em uma janela de prompt de comando, digite:
 
     **VSPerfCmd /start:trace /output:** `OutputFile` [`Options`]
 
@@ -64,7 +65,7 @@ Este artigo descreve como usar as ferramentas da linha de comando das Ferramenta
    > [!NOTE]
    > Normalmente, as opções **/user** e **/crosssession** são necessárias para aplicativos ASP.NET.
 
-   | Opção | DESCRIÇÃO |
+   | Opção | Descrição |
    | - | - |
    | [/user](../profiling/user-vsperfcmd.md) **:** [`Domain` **\\** ]`UserName` | Especifica o domínio e o nome de usuário opcional da conta que possui o processo de trabalho do ASP.NET. Esta opção é necessária quando o processo é executado com um usuário diferente do usuário conectado. O nome é listado na coluna **Nome de Usuário** na guia **Processos** do Gerenciador de Tarefas do Windows. |
    | [/crosssession](../profiling/crosssession.md) | Habilita a criação de perfil de processos em outras sessões. Esta opção será necessária se o aplicativo estiver em execução em uma sessão diferente. A ID da sessão é listada na coluna ID da Sessão na guia **Processos** do Gerenciador de Tarefas do Windows. **/CS** pode ser especificado como uma abreviação de **/crosssession**. |
@@ -82,7 +83,7 @@ Este artigo descreve como usar as ferramentas da linha de comando das Ferramenta
 
 - Os pares de opções a seguir iniciam e interrompem a coleta de dados. Especifique cada opção em uma linha de comando separada. É possível ativar e desativar a coleta de dados várias vezes.
 
-    |Opção|DESCRIÇÃO|
+    |Opção|Descrição|
     |------------|-----------------|
     |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Inicia ( **/globalon**) ou interrompe ( **/globaloff**) a coleta de dados para todos os processos.|
     |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Inicia ( **/processon**) ou interrompe ( **/processoff**) a coleta de dados para o processo especificado pela ID de processo (`PID`).|

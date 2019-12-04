@@ -1,5 +1,5 @@
 ---
-title: 'Como: Coletar dados do contador do Windows | Microsoft Docs'
+title: Como coletar dados do contador do Windows | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,16 +12,17 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 730345edb42ff3d14608bdcce91bc7b97c4bb478
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: c85187fd54d61fdf40956c8aee3c0a222d95a313
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62973845"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74776313"
 ---
-# <a name="how-to-collect-windows-counter-data"></a>Como: Coletar dados de contadores do Windows
+# <a name="how-to-collect-windows-counter-data"></a>Como coletar dados do contador do Windows
 
 Os contadores do Windows são contadores de desempenho do sistema que podem ser coletados em intervalos definidos durante a criação de perfil. Na exibição de Marcas do relatório das Ferramentas de Criação de Perfil, uma linha é rotulada **AutoMark** para cada intervalo de coleta. A linha contém colunas que descrevem os valores do contador de desempenho nesse intervalo. Para restringir a análise para um período de tempo entre duas marcas específicas, selecione as marcas, clique com o botão direito do mouse e, em seguida, selecione **Filtrar por** > **Marcas** no menu de atalho.
 
@@ -36,7 +37,7 @@ Os contadores do Windows são contadores de desempenho do sistema que podem ser 
 
 3. Selecione a caixa de seleção **Coletar Contadores do Windows**.
 
-4. Na caixa de texto **Intervalo de coleta (ms)**, digite um intervalo de tempo.
+4. Na caixa de texto **Intervalo de coleta (ms)** , digite um intervalo de tempo.
 
 5. Selecione uma categoria da lista suspensa **Categoria de Contador**.
 

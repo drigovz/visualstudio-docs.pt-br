@@ -11,22 +11,23 @@ ms.assetid: ee8ba8b5-2313-46c9-b129-3f3a2a232898
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 5330ea0494636130f3bc28c28d0e46bfc524bfb8
-ms.sourcegitcommit: bb5425b9c6d8fd7135d9584c2963831754071347
+ms.openlocfilehash: 26819be7cd001e87a6f94ac97d29c8a5e67f3932
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73024657"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74777693"
 ---
 # <a name="da0007-avoid-using-exceptions-for-control-flow"></a>DA0007: evitar usar exceções no fluxo de controle
 
 |||
 |-|-|
-|ID de regra|DA0007|
+|Id da Regra|DA0007|
 |Categoria|Uso do .NET Framework|
-|Métodos de criação de perfil|Todos|
+|Métodos de criação de perfil|{1&gt;Todos&lt;1}|
 |Mensagem|Um número elevado de exceções está sendo gerado de forma consistente. Considere a redução do uso de exceções na lógica do programa.|
 |Tipo de mensagem|Aviso|
 

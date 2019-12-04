@@ -12,14 +12,15 @@ ms.assetid: 778bc105-7643-46c4-a338-f3620e31125a
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: c616564a8d9cc84b4ea85267ae6e2c4c735d16a3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 53378c3d210ef9666df251d68a3eec570f8caa2f
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62972337"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74777992"
 ---
 # <a name="vsperfcmd"></a>VSPerfCmd
 A ferramenta *VSPerfCmd.exe* é usada para iniciar e interromper a coleta de dados de desempenho. Ela usa a seguinte sintaxe:
@@ -58,11 +59,11 @@ VSPerfCmd [/U] [/options]
 
 |Opção|Descrição|
 |------------|-----------------|
-|[Launch](../profiling/launch.md) **:** *Executável*|Inicia o aplicativo especificado e começa a criação de perfil.|
-|[Args](../profiling/args.md) **:** *Argumentos*|Especifica argumentos de linha de comando a serem passados para o aplicativo iniciado.|
+|[Launch](../profiling/launch.md) **:** *Executable*|Inicia o aplicativo especificado e começa a criação de perfil.|
+|[Args](../profiling/args.md) **:** *Arguments*|Especifica argumentos de linha de comando a serem passados para o aplicativo iniciado.|
 |[Console](../profiling/console.md)|Inicia o comando especificado em uma nova janela de prompt de comando.|
 |[Attach](../profiling/attach.md) **:** *PID*[ **,** _PID_]|Inicia a criação de perfil dos processos especificados. Os processos podem ser identificados pela ID ou pelo nome do processo.|
-|[Detach](../profiling/detach.md)[ **:** _PID_[,_PID_]]|Para a criação de perfil dos processos especificados. Os processos podem ser identificados pela ID ou pelo nome do processo. Se nenhum processo for especificado, a criação de perfil será interrompida para todos os processos.|
+|[Desanexar](../profiling/detach.md)[ **:** _PID_[,_PID_]]|Para a criação de perfil dos processos especificados. Os processos podem ser identificados pela ID ou pelo nome do processo. Se nenhum processo for especificado, a criação de perfil será interrompida para todos os processos.|
 |[GC](../profiling/gc-vsperfcmd.md)[ **:** {**Allocation**`&#124;`**Lifetime**}]|Coleta dados de alocação de memória e de tempo de vida do objeto .NET. Use somente com a opção **VSPerfCmdLaunch**.|
 
 ### <a name="sample-interval-options"></a>Opções do intervalo de amostragem
@@ -83,8 +84,8 @@ VSPerfCmd [/U] [/options]
 |------------|-----------------|
 |**Admin:Security**, \<**ALLOW&#124;DENY**>, *Right*[ *Right*], \<*User*&#124;*Group*>|Permite ou nega o acesso do usuário ou grupo especificado aos serviços de criação de perfil.<br /><br /> `Right` pode ser:<br /><br /> CrossSession - dá ao usuário acesso ao serviço a fim de executar a criação cruzada de perfil.<br /><br /> SampleProfiling - dá ao usuário acesso ao driver para habilitar a criação de perfil de amostragem. Também é usado para acessar informações de transição de kernel durante a criação de perfil de rastreamento.<br /><br /> FullAccess - dá ao usuário acesso ao CrossSession e ao SampleProfiling.|
 |**Admin:Security, List**|Lista o estado atual dos serviços de criação de perfil e lista as permissões de usuário.|
-|**Admin:** \<*Serviço*&#124;*Driver*>\<**START**&#124;**STOP**&#124;**INSTALL**&#124;**UNINSTALL**>|Inicia, para, instala ou desinstala o componente de serviço de criação de perfil (serviço) ou o driver de dispositivo de modo kernel (driver).|
-|**Admin:** \<*Serviço*&#124;*Driver*>**AutoStart**\<**ON**&#124;**OFF**>|Habilita ou desabilita a inicialização automática do serviço de criação de perfil (serviço) ou driver de dispositivo de modo kernel (driver) após a reinicialização.|
+|**Admin:** \<*Service*&#124;*Driver*>\<**START**&#124;**STOP**&#124;**INSTALL**&#124;**UNINSTALL**>|Inicia, para, instala ou desinstala o componente de serviço de criação de perfil (serviço) ou o driver de dispositivo de modo kernel (driver).|
+|**Admin:** \<*Service*&#124;*Driver*>**AutoStart**\<**ON**&#124;**OFF**>|Habilita ou desabilita a inicialização automática do serviço de criação de perfil (serviço) ou driver de dispositivo de modo kernel (driver) após a reinicialização.|
 
 ## <a name="vsperfcmd-driver"></a>VSPerfCmd /Driver
  A opção **VSPerfCmd /Driver** está obsoleta. Use a opção **VsPerfCmd Admin** para essa funcionalidade.

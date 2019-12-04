@@ -11,20 +11,21 @@ ms.assetid: a7cc7613-ad5f-48c8-bd2b-56372cc12dfc
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: e3a83ad65232e75ffa74b66035e5c01a8491b426
-ms.sourcegitcommit: 3a19319e2599bd193fb2ca32020ca53942974bfd
+ms.openlocfilehash: 0d93de6ce901bfe4d72628f778b18420beb5ebee
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "73983699"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779500"
 ---
 # <a name="da0001-use-stringbuilder-for-concatenations"></a>DA0001: usar StringBuilder para concatenações
 
 |||
 |-|-|
-|ID de regra|DA0001|
+|Id da Regra|DA0001|
 |Categoria|Uso do .NET Framework|
 |Métodos de criação de perfil|Amostragem<br /><br /> Instrumentação|
 |Mensagem|Considere o uso de StringBuilder para concatenações de cadeias de caracteres|

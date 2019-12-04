@@ -1,5 +1,5 @@
 ---
-title: 'Passo a passo: Usando APIs do criador de perfil | Microsoft Docs'
+title: 'Passo a passo: Usar APIs do criador de perfil | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,16 +9,17 @@ ms.assetid: c2ae0b3e-a0ca-4967-b4df-e319008f520e
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 203952f712fb3b28b93d570f99e6d36f56b5f2b5
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
-ms.translationtype: HT
+ms.openlocfilehash: 81071a44b51b1441782b25741126873fc720ed7b
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68870283"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779877"
 ---
-# <a name="walkthrough-using-profiler-apis"></a>Passo a passo: Usando APIs do criador de perfil
+# <a name="walkthrough-using-profiler-apis"></a>Passo a passo: usando APIs do criador de perfil
 
 O passo a passo usa um aplicativo C# para demonstrar como usar as APIs de Ferramentas de criação de perfil do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Você usará as APIs do criador de perfil para limitar a quantidade de dados coletados durante a criação de perfil de instrumentação.
 
@@ -30,21 +31,18 @@ O passo a passo usa um aplicativo C# para demonstrar como usar as APIs de Ferram
 
  O criador de perfil do Visual Studio permite que você limite a coleta de dados. Este passo a passo oferece um exemplo de como limitar a coleta de dados usando as APIs do criador de perfil. O criador de perfil do Visual Studio fornece uma API para controlar a coleta de dados de dentro de um aplicativo.
 
- ::: moniker range=">=vs-2019"
- Para o código nativo, as APIs do criador de perfil do Visual Studio estão em *VSPerf.dll*. O arquivo de cabeçalho, *VSPerf.h*, e a biblioteca de importação, *VSPerf.lib*, estão localizados no diretório *Microsoft Visual Studio\2019\Team Tools\Performance Tools\PerfSDK*.  Para aplicativos de 64 bits, a pasta é *Microsoft Visual Studio\2019\Team Tools\Performance Tools\x64\PerfSDK*
- ::: moniker-end
  ::: moniker range="vs-2017"
  Para o código nativo, as APIs do criador de perfil do Visual Studio estão em *VSPerf.dll*. O arquivo de cabeçalho, *VSPerf.h*, e a biblioteca de importação, *VSPerf.lib*, estão localizados no diretório *Microsoft Visual Studio\2017\Team Tools\Performance Tools\PerfSDK*.  Para aplicativos de 64 bits, a pasta é *Microsoft Visual Studio\2017\Team Tools\Performance Tools\x64\PerfSDK*
  ::: moniker-end
 
  Para o código gerenciado, as APIs do criador de perfil estão na *Microsoft.VisualStudio.Profiler.dll*. Essa DLL é encontrada no diretório *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools*. Para aplicativos de 64 bits, a pasta é *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools\x64*. Para saber mais, confira [Profiler](/previous-versions/ms242704(v=vs.140)).
 
-## <a name="prerequisites"></a>Pré-requisitos
+## <a name="prerequisites"></a>{1&gt;{2&gt;Pré-requisitos&lt;2}&lt;1}
  Este passo a passo pressupõe que a escolha do ambiente de desenvolvimento está configurada para dar suporte à depuração e amostragem. Os tópicos a seguir fornecem uma visão geral desses pré-requisitos:
 
-- [Como: Escolher métodos de coleta](../profiling/how-to-choose-collection-methods.md)
+- [Como escolher métodos de coleta](../profiling/how-to-choose-collection-methods.md)
 
-- [Como: Referenciar informações de símbolo do Windows](../profiling/how-to-reference-windows-symbol-information.md)
+- [Como fazer referência a informações de símbolo do Windows](../profiling/how-to-reference-windows-symbol-information.md)
 
  Por padrão, quando o criador de perfil é iniciado, ele coleta dados no nível global. O código a seguir no início do programa desativa a criação de perfil global.
 
@@ -154,17 +152,17 @@ DataCollection.CurrentId);
 
      **VsPerfCLREnv /traceon**
 
-3. Digite o seguinte comando: **VSInstr \<nomedoarquivo>.exe**
+3. Digite este comando: **VSInstr \<filename>.exe**
 
-4. Digite o seguinte comando: **VSPerfCmd /start:trace /output:\<nomedoarquivo>.vsp**
+4. Digite este comando: **VSPerfCmd /start:trace /output:\<filename>.vsp**
 
-5. Digite o seguinte comando: **VSPerfCmd /globaloff**
+5. Digite este comando: **VSPerfCmd /globaloff**
 
 6. Execute seu programa.
 
-7. Digite o seguinte comando: **VSPerfCmd /shutdown**
+7. Digite este comando: **VSPerfCmd /shutdown**
 
-8. Digite o seguinte comando: **VSPerfReport /calltrace:\<nomedoarquivo>.vsp**
+8. Digite este comando: **VSPerfReport /calltrace:\<filename>.vsp**
 
      Um arquivo .*csv* é criado no diretório atual com os dados de desempenho resultantes.
 

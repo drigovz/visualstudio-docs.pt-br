@@ -6,14 +6,15 @@ ms.assetid: 294a6f9e-b49f-4c83-b322-5ac5411b66fb
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f0a63cfca8e06d999c585793fabdce627d4896d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 435393ac536eb70f2f3f6d38b16eaab645848704
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62968035"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778174"
 ---
 # <a name="sys-vsperfcmd"></a>Sys (VSPerfCmd)
 A opção **Sys** de *VSPerfCmd.exe* define o evento de criação de perfil cuja amostra é fornecida aos eventos de chamada do sistema (chamadas de função do aplicativo cujo perfil é criado para o sistema operacional) e, opcionalmente, altera o número de chamadas em um intervalo de amostragem do padrão de 10.
@@ -36,20 +37,20 @@ VSPerfCmd.exe {/Launch:AppName|Attach:PID} /Sys[:Events] [Options]
 ## <a name="required-options"></a>Opções obrigatórias
  **Sys** requer uma das opções a seguir.
 
- **Iniciar:** `AppName` Inicia o criador de perfil e o aplicativo especificado por `AppName`.
+ **Iniciar:** `AppName` inicia o criador de perfil e o aplicativo especificado por `AppName`.
 
- **Anexar:** `PID` Anexa o criador de perfil ao processo especificado por `PID`.
+ **Anexar:** `PID` anexa o criador de perfil ao processo especificado por `PID`.
 
 ## <a name="invalid-options"></a>Opções inválidas
  As opções a seguir não podem ser especificadas na mesma linha de comando de **Sys**.
 
- **PF**[**:**`Events`] Define o evento de amostragem como falhas de página e, opcionalmente, define o intervalo de amostragem como `Events`. O intervalo de PF padrão é 10.
+ **PF**[ **:** `Events`] Define o evento de amostragem como falhas de página e, opcionalmente, define o intervalo de amostragem como `Events`. O intervalo de PF padrão é 10.
 
- **Timer**[**:**`Cycles`] Define o evento de amostragem como ciclos do relógio do processador e, opcionalmente, define o intervalo de amostragem como `Cycles`. O intervalo do temporizador padrão é 10.000.000.
+ **Timer**[ **:** `Cycles`] Define o evento de amostragem como ciclos do relógio do processador e, opcionalmente, define o intervalo de amostragem como `Cycles`. O intervalo do temporizador padrão é 10.000.000.
 
  **Contador:** `Name`[`,Reload`[`,FriendlyName`]] Define o evento de amostragem como o contador de desempenho da CPU especificado por `Name` e define o intervalo de amostragem como `Reload`.
 
- **GC**[**:**{**Alocação**&#124;**Tempo de vida**}] coleta dados de memória do .NET. Por padrão (**Alocação**), os dados são coletados em todos os eventos de alocação da memória. Quando o parâmetro **Tempo de Vida** é especificado, os dados também são coletados em todos os eventos de coleta de lixo.
+ **GC**[ **:** {**Alocação**&#124;**Tempo de vida**}] coleta dados de memória do .NET. Por padrão (**Alocação**), os dados são coletados em todos os eventos de alocação da memória. Quando o parâmetro **Tempo de Vida** é especificado, os dados também são coletados em todos os eventos de coleta de lixo.
 
 ## <a name="example"></a>Exemplo
  Este exemplo demonstra como configurar o criador de perfil do evento de amostragem para chamadas do sistema e como definir o intervalo de amostragem de 20 chamadas por amostra.

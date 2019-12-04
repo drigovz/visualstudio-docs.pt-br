@@ -1,21 +1,22 @@
 ---
-title: 'Linha de comando do criador de perfil: Abrir o aplicativo .NET cliente, obter dados de simultaneidade'
+title: 'Linha de comando do Profiler: abrir aplicativo .NET cliente, obter dados de simultaneidade'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 17a48848-bd3e-44ef-9971-e39836ff1df2
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: effc29e0f66cc298ec7a5e281c83df0ccad968d9
-ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
-ms.translationtype: HT
+ms.openlocfilehash: 4a52c65f8a53d62edde42c26fafef9940046ba5d
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67032971"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74775386"
 ---
-# <a name="how-to-launch-a-stand-alone-net-framework-application-with-the-profiler-to-collect-concurrency-data-by-using-the-command-line"></a>Como: Iniciar um aplicativo independente do .NET Framework com o criador de perfil para coletar dados de simultaneidade usando a linha de comando
+# <a name="how-to-launch-a-stand-alone-net-framework-application-with-the-profiler-to-collect-concurrency-data-by-using-the-command-line"></a>Como iniciar um aplicativo do .NET Framework autônomo com o criador de perfil para coletar dados de simultaneidade usando a linha de comando
 Este tópico descreve como usar ferramentas de linha de comando das Ferramentas de Criação de Perfil do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para iniciar um aplicativo autônomo (cliente) do .NET Framework e coletar dados de simultaneidade de thread e processo
 
 > [!NOTE]
@@ -30,7 +31,7 @@ Este tópico descreve como usar ferramentas de linha de comando das Ferramentas 
 
 1. Abra uma janela do prompt de comando.
 
-2. Inicie o criador de perfil. Tipo:
+2. {2&gt;Inicie o criador de perfil.&lt;2} Tipo:
 
     [VSPerfCmd](../profiling/vsperfcmd.md) **/start:concurrency**[ **,** {**ResourceOnly**&#124;**ThreadOnly**}] **/output:** `OutputFile` [`Options`]
 
@@ -46,7 +47,7 @@ Este tópico descreve como usar ferramentas de linha de comando das Ferramentas 
 
      É possível usar qualquer uma das opções a seguir com a opção **/start:concurrency**.
 
-   | Opção | DESCRIÇÃO |
+   | Opção | Descrição |
    | - | - |
    | [/user](../profiling/user-vsperfcmd.md) **:** [`domain\`]`username` | Especifica o domínio e o nome de usuário opcional da conta que receberá acesso ao criador de perfil. |
    | [/crosssession](../profiling/crosssession.md) | Habilita a criação de perfil de processos em outras sessões de logon. |
@@ -60,7 +61,7 @@ Este tópico descreve como usar ferramentas de linha de comando das Ferramentas 
 
     É possível usar qualquer uma das opções a seguir com a opção **/launch**.
 
-   |Opção|DESCRIÇÃO|
+   |Opção|Descrição|
    |------------|-----------------|
    |[/args](../profiling/args.md) **:** `Arguments`|Especifica uma cadeia de caracteres que contém os argumentos de linha de comando a serem passados para o aplicativo de destino.|
    |[/console](../profiling/console.md)|Inicia o aplicativo de destino de linha de comando em uma janela separada.|
@@ -73,7 +74,7 @@ Este tópico descreve como usar ferramentas de linha de comando das Ferramentas 
 
 1. Os pares de opções do *VSPerfCmd.exe* a seguir iniciam e interrompem a coleta de dados. Especifica cada opção em uma linha de comando separada. É possível ativar e desativar a coleta de dados várias vezes.
 
-    |Opção|DESCRIÇÃO|
+    |Opção|Descrição|
     |------------|-----------------|
     |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Inicia ( **/globalon**) ou interrompe ( **/globaloff**) a coleta de dados para todos os processos.|
     |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Inicia ( **/processon**) ou interrompe ( **/processoff**) a coleta de dados para o processo especificado pela ID de processo (`PID`).|
@@ -88,7 +89,7 @@ Este tópico descreve como usar ferramentas de linha de comando das Ferramentas 
 
     - Feche o aplicativo de destino.
 
-         -ou-
+         \- ou -
 
     - Digite **VSPerfCmd /detach**
 

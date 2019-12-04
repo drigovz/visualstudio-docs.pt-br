@@ -8,14 +8,15 @@ ms.assetid: fbb6cb60-420b-4ca9-8306-2494f7d321fe
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8d05809d7d2c3c0c93044eee4d44603eac2bffec
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 76ea78f37cbc8c5e2b6df900aa0e3f320346300a
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62776797"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779760"
 ---
 # <a name="call-tree-view---net-memory-sampling-data"></a>Modo de exibição de árvore de chamadas – dados de amostragem de memória do .NET
 O modo de exibição de Árvore de Chamadas exibe os caminhos de execução de função que foram percorridos no aplicativo analisado. A raiz da árvore é o ponto de entrada do aplicativo ou do componente. Cada nó de função lista todas as funções que ele chamou e os dados de alocação de memória do .NET sobre essas chamadas de função.
@@ -44,7 +45,7 @@ O modo de exibição de Árvore de Chamadas exibe os caminhos de execução de f
 |**Alocações Inclusivas**|O número de objetos que foram alocados pelas instâncias desta função que foram chamadas pela função pai na árvore de chamada. Esse número inclui alocações feitas por funções filho.|
 |**% de Alocações Inclusivas**|O percentual de todos os objetos que foram criados na execução de criação de perfil que eram alocações inclusivas dessa função.|
 |**Alocações Exclusivas**|O número de objetos que foram alocados pelas instâncias desta função que foram chamadas pela função pai na árvore de chamada. Esse número não inclui alocações feitas por funções filho.|
-|**% de Alocações Exclusivas**|O percentual de todos os objetos que foram criados na execução da criação de perfil que eram alocações exclusivas das instâncias de função que foram chamadas pela função pai na árvore de chamada.|
+|**% de Alocações Exclusivas**|A porcentagem de todos os objetos que foram criados na execução da criação de perfil que eram alocações exclusivas das instâncias de função que foram chamadas pela função pai na árvore de chamada.|
 |**Bytes Inclusivos**|O número de bytes na memória que foram alocados pelas instâncias desta função que foram chamadas pela função pai na árvore de chamada. Esse número inclui alocações feitas por funções filho.|
 |**% de Bytes Inclusivos**|O percentual de todos os bytes de memória que foram alocados na execução de criação de perfil que eram alocações inclusivas dessa função.|
 |**Bytes Exclusivos**|O número de bytes na memória que foram alocados pelas instâncias desta função que foram chamadas pela função pai na árvore de chamada. Esse número não inclui alocações feitas por funções filho.|

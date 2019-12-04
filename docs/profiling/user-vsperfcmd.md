@@ -6,14 +6,15 @@ ms.assetid: ee1a478e-374d-4f30-ae28-d260b9d4723a
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 7039422a6934eb4dfa007d216fdc0a70e0da32e9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 7dbb1a155e8e0ffd2690b5850299b8075a63ea3d
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62830831"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779955"
 ---
 # <a name="user-vsperfcmd"></a>Usuário (VSPerfCmd)
 A opção **Usuário** especifica o domínio e o nome de usuário da conta que possui o processo com perfil. Esta opção é necessária apenas se o processo estiver sendo executado como um usuário diferente do usuário conectado. O proprietário do processo é listado na coluna Nome de Usuário na guia **Processos** do Gerenciador de Tarefas do Windows.
@@ -34,7 +35,7 @@ VSPerfCmd.exe /Start:Method /Output:FileName /User:[Domain\]UserName [Options]
 ## <a name="required-options"></a>Opções obrigatórias
  A opção **Usuário** só pode ser usada com a opção **Iniciar**.
 
- **Iniciar:** `Method` Inicializa o criador de perfil com o método de criação de perfil especificado.
+ **Iniciar:** `Method` Inicializa o criador de perfil para o método de criação de perfil especificado.
 
 ## <a name="example"></a>Exemplo
  O exemplo a seguir demonstra o uso da opção **Usuário**.

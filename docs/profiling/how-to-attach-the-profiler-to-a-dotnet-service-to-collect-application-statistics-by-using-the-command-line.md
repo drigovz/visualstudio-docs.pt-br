@@ -7,16 +7,17 @@ ms.assetid: a0046c47-26c8-4bec-96a0-81da05e5104a
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 32aa82654d55496c3d407f59712a8b7adba56b9a
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
-ms.translationtype: HT
+ms.openlocfilehash: 9294e9bf9ab35d75e0b06c620699c6e39babe1a3
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66261559"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779136"
 ---
-# <a name="how-to-attach-the-profiler-to-a-net-service-to-collect-application-statistics-by-using-the-command-line"></a>Como: Anexar o criador de perfil a um serviço do .NET para coletar estatísticas do aplicativo usando a linha de comando
+# <a name="how-to-attach-the-profiler-to-a-net-service-to-collect-application-statistics-by-using-the-command-line"></a>Como anexar o criador de perfil a um serviço do .NET para coletar estatísticas do aplicativo usando a linha de comando
 Este artigo descreve como usar as ferramentas de linha de comando das Ferramentas de Criação de Perfil do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para anexar o criador de perfil a um serviço do .NET Framework e coletar estatísticas de desempenho usando o método de amostragem.
 
 > [!NOTE]
@@ -50,7 +51,7 @@ Este artigo descreve como usar as ferramentas de linha de comando das Ferramenta
 
 5. Abra uma janela do prompt de comando.
 
-6. Inicie o criador de perfil. Tipo:
+6. {2&gt;Inicie o criador de perfil.&lt;2} Tipo:
 
     **VSPerfCmd**  [/start](../profiling/start.md) **:sample**  [/output](../profiling/output.md) **:** `OutputFile` [`Options`]
 
@@ -81,7 +82,7 @@ Este artigo descreve como usar as ferramentas de linha de comando das Ferramenta
 
      Por padrão, os dados de desempenho têm amostra obtida a cada 10.000.000 ciclos de relógio de processador não interrompidos. Significa aproximadamente 100 amostras por segundo em um processador 1GH. Você pode especificar uma das opções a seguir para alterar o intervalo de ciclo de relógio ou especificar um evento de amostragem diferente.
 
-   |Evento de Amostra|Descrição|
+   |Evento de exemplo|Descrição|
    |------------------|-----------------|
    |[/timer](../profiling/timer.md) **:** `Interval`|Altera o intervalo de amostragem para o número de ciclos de relógio não interrompidos especificados por `Interval`.|
    |[/pf](../profiling/pf.md)[ **:** `Interval`]|Altera o evento de amostragem para falhas de página. Se `Interval` for especificado, define o número de falhas de página entre as amostras. O padrão é 10.|
@@ -114,7 +115,7 @@ Este artigo descreve como usar as ferramentas de linha de comando das Ferramenta
 
     - Pare o serviço.
 
-         - ou -
+         \- ou -
 
     - Digite **VSPerfCmd /detach**
 

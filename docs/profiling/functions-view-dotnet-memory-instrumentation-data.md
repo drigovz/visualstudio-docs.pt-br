@@ -8,14 +8,15 @@ ms.assetid: cd45b379-394b-4b71-828c-92cd89e46ae0
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: a0699d74f67b3e43b65ab79d29acd4fb4e953666
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: eba1f0d1434d253aaca698d3ae582e3c507c2d23
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62969719"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779227"
 ---
 # <a name="functions-view---net-memory-instrumentation-data"></a>Exibição Funções – dados de instrumentação de memória do .NET
 A exibição Funções dos dados de criação de perfil de alocação de memória do .NET que foram coletados usando o método de instrumentação lista as funções que alocaram memória durante a execução da criação de perfil. Uma linha de função informa o tamanho e o número de alocações e dados de temporização para a função.
@@ -97,7 +98,7 @@ A exibição Funções dos dados de criação de perfil de alocação de memóri
 |**Tempo Exclusivo Mínimo do Aplicativo**|O tempo exclusivo mínimo do aplicativo de uma chamada para essa função.|
 
 ## <a name="see-also"></a>Consulte também
-- [Como: Personalizar as colunas da Exibição de Relatório](../profiling/how-to-customize-report-view-columns.md)
+- [Como: Personalizar colunas de exibição de relatório](../profiling/how-to-customize-report-view-columns.md)
 - [Exibição Funções – amostragem](../profiling/functions-view-dotnet-memory-sampling-data.md)
 - [Exibição Funções](../profiling/functions-view-instrumentation-data.md)
 - [Exibição Funções](../profiling/functions-view-sampling-data.md)

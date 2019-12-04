@@ -10,24 +10,25 @@ ms.assetid: ae0c8b2f-17b2-4f3d-a834-aa2f6371753b
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 43b4ddedf68d082c8de50a38f759c5db0a594d00
-ms.sourcegitcommit: bb5425b9c6d8fd7135d9584c2963831754071347
+ms.openlocfilehash: d8e0218b01a162a3af8c35009bc8e733f5c386ef
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73024672"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74777496"
 ---
 # <a name="da0038-high-rate-of-lock-contentions"></a>DA0038: taxa alta de contenções de bloqueio
 
 |||
 |-|-|
-|ID de regra|DA0038|
+|Id da Regra|DA0038|
 |Categoria|Uso do .NET Framework|
 |Método de criação de perfil|Amostragem<br /><br /> Instrumentação<br /><br /> Memória do .NET|
 |Mensagem|Uma alta taxa de contenções de Bloqueio do .NET está ocorrendo. Investigue o motivo dessa contenção de bloqueio executando um perfil de Simultaneidade.|
-|Tipo de regra|Informações|
+|Tipo de regra|Informações do|
 
  Ao criar o perfil usando a amostragem, a memória do .NET ou métodos de contenção de recursos, é necessário coletar pelo menos 25 amostras para disparar essa regra.
 

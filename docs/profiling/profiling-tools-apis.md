@@ -6,14 +6,15 @@ ms.assetid: bd9ca972-e5bf-45a6-9a5d-ac30a4d9ee02
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: e724b9d5891d9e716be064e0b3b9404455c770fc
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
-ms.translationtype: HT
+ms.openlocfilehash: ed4fef32c04d68f37df71101447a4e24f39eecba
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68870287"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74772071"
 ---
 # <a name="profiling-tools-apis"></a>APIs de ferramentas de criação de perfil
 
@@ -29,7 +30,7 @@ Descreve os métodos de ferramentas de criação de perfil do C++.
 
 Descreve os métodos de ferramentas de criação de perfil do .NET.
 
-[Passo a passo: Como usar as APIs do criador de perfil](../profiling/walkthrough-using-profiler-apis.md)
+[Passo a passo: usando APIs do criador de perfil](../profiling/walkthrough-using-profiler-apis.md)
 
 Saiba como usar os métodos das ferramentas de criação de perfil do .NET neste exemplo completo.
 
