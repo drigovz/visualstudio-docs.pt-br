@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/24/2019
 ms.topic: conceptual
 description: Saiba como os administradores podem atribuir licenças aos assinantes
-ms.openlocfilehash: 8125c5cbad2ff44dabbf1b0c5014c313d75d2e71
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
-ms.translationtype: HT
+ms.openlocfilehash: 8785d4d4253fa3217341c8200a94dab923ae4a5f
+ms.sourcegitcommit: af9bbf9116a63c0631ff2f4f3a878564aa63cd8c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68604722"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "74797376"
 ---
 # <a name="assign-licenses-in-the-visual-studio-subscriptions-administration-portal"></a>Atribuir licenças no portal de administração de assinaturas do Visual Studio
 Como administrador de assinaturas do Visual Studio, você pode usar o portal de administração para atribuir assinaturas a usuários individuais e grupos de usuários.
@@ -41,9 +41,10 @@ Veja a seguir como atribuir uma licença de assinatura do Visual Studio a um nov
    > [!div class="mx-imgBorder"]
    > ![Escolher o botão Adicionar](media/add-button.png)
 
-4. Depois que você adicionar o assinante, um Email de Atribuição será enviado automaticamente para o novo assinante com mais instruções. É possível enviar o Email de atribuição novamente a qualquer momento selecionando o assinante e clicando no botão **Reenviar** no menu superior.
+## <a name="resend-assignment-emails"></a>Reenviar emails de atribuição
+Depois de adicionar um assinante, um email de atribuição será enviado automaticamente para o novo assinante com mais instruções. Você pode enviar o email de atribuição novamente a qualquer momento selecionando o Assinante e clicando no botão **reenviar** no menu superior.  Para reenviar emails a vários usuários, mantenha pressionada a tecla **Ctrl** enquanto seleciona os assinantes.  Ao clicar no botão **reenviar** , você verá uma caixa de diálogo solicitando que você confirme que deseja reenviar para esses assinantes.  
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
 - Tem muitos usuários para adicionar?  Saiba como atribuir assinaturas a [vários assinantes](assign-license-bulk.md).
 - Precisa de ajuda?  Contate o [Suporte à administração e às assinaturas do Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs).
 
