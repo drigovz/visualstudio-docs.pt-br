@@ -7,16 +7,17 @@ ms.assetid: 3725ddbe-ce91-4469-991e-8c5ed048c618
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - aspnet
-ms.openlocfilehash: 4ff01635e754f2f615247e998aad765c1b366e69
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
-ms.translationtype: HT
+ms.openlocfilehash: 549e43f403b19d8832e00277f826cdc7b276b747
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66261431"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779071"
 ---
-# <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-application-statistics-by-using-the-command-line"></a>Como: Anexar o criador de perfil a um aplicativo Web ASP.NET para coletar estatísticas do aplicativo usando a linha de comando
+# <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-application-statistics-by-using-the-command-line"></a>Como anexar o criador de perfil a um aplicativo Web ASP.NET para coletar estatísticas do aplicativo usando a linha de comando
 Este artigo descreve como usar as ferramentas de linha de comando das Ferramentas de Criação de Perfil do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para anexar o criador de perfil a um aplicativo Web ASP.NET e coletar estatísticas de desempenho usando o método de amostragem.
 
 > [!NOTE]
@@ -48,7 +49,7 @@ Este artigo descreve como usar as ferramentas de linha de comando das Ferramenta
 
 3. Reinicie o computador.
 
-4. Inicie o criador de perfil. Digite:**VSPerfCmd** [/start](../profiling/start.md) **:sample** [/output](../profiling/output.md) **:** `OutputFile`[`Options`]
+4. {2&gt;Inicie o criador de perfil.&lt;2} Digite:**VSPerfCmd** [/start](../profiling/start.md) **:sample** [/output](../profiling/output.md) **:** `OutputFile`[`Options`]
 
    - A opção **/start:sample** inicializa o criador de perfil.
 
@@ -83,7 +84,7 @@ Este artigo descreve como usar as ferramentas de linha de comando das Ferramenta
    |[/counter](../profiling/counter.md) **:** `Config`|Altera o evento de amostragem e o intervalo para o contador de desempenho do processador e o intervalo especificado em `Config`.|
    |[/targetclr](../profiling/targetclr.md) **:** `Version`|Especifica a versão do CLR (Common Language Runtime) a ser analisada quando mais de uma versão de tempo de execução for carregada em um aplicativo.|
 
-   - **targetclr:** `Version` especifica a versão do CLR analisada quando mais de uma versão do tempo de execução for carregada em um aplicativo. Opcional.
+   - **targetclr:** `Version` especifica a versão do CLR analisada quando mais de uma versão do runtime for carregada em um aplicativo. Opcional.
 
 ## <a name="control-data-collection"></a>Controlar a coleta de dados
  Quando o aplicativo estiver em execução, você pode controlar a coleta de dados iniciando e parando a gravação de dados no arquivo usando as opções de *VSPerfCmd.exe*. Controlar a coleta de dados permite coletar dados de uma parte específica da execução do programa, como a inicialização ou o desligamento do aplicativo.
@@ -111,7 +112,7 @@ Este artigo descreve como usar as ferramentas de linha de comando das Ferramenta
 
    - Digite **VSPerfCmd /detach**
 
-      - ou -
+      \- ou -
 
    - Feche o processo de trabalho [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)].
 

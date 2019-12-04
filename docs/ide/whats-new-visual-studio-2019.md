@@ -2,7 +2,7 @@
 title: Novidades no Visual Studio 2019
 titleSuffix: ''
 description: Saiba mais sobre os novos recursos do Visual Studio 2019.
-ms.date: 09/24/2019
+ms.date: 12/03/2019
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -15,16 +15,16 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 5871e782ee84e49762d26a925380ad481e3623d1
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: eb4282941af9dff8619cb15510399b2e37e0c718
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71211337"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74777901"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Novidades no Visual Studio 2019
 
-**Atualizado para a [versão 16,3](/visualstudio/releases/2019/release-notes/)**
+**Atualizado para a [versão 16,4](/visualstudio/releases/2019/release-notes/)**
 
 >[!div class="button"]
 >[Baixar o Visual Studio 2019](https://visualstudio.microsoft.com/downloads)
@@ -33,15 +33,15 @@ O Visual Studio 2019 fornece os melhores serviços e ferramentas do mercado para
 
 Veja uma recapitulação de alto nível sobre as novidades:
 
-* **[Desenvolver](#develop)** : mantenha a concentração e aumente a produtividade com desempenho aperfeiçoado, limpeza instantânea de código e melhores resultados de pesquisa.
-* **[Colaborar](#collaborate)** : aproveite a colaboração natural por meio de um fluxo de trabalho do Git, depuração e edição em tempo real, e revisões de código diretamente no Visual Studio.
-* **[Depurar](#debug)** : realce e navegue para valores específicos, otimize o uso de memória e faça instantâneos automáticos da execução do aplicativo.
+* **[Desenvolver](#develop)** : Mantenha-se focado e produtivo com desempenho aprimorado, limpeza instantânea de código e melhores resultados da pesquisa.
+* **[Colaborar](#collaborate)** : Aproveite a colaboração natural por meio de um fluxo de trabalho do git, edição e depuração em tempo real e análises de código diretamente no Visual Studio.
+* **[Depurar](#debug)** : realçar e navegar para valores específicos, otimizar o uso da memória e obter instantâneos automáticos da execução do seu aplicativo.
 
 Para obter uma lista completa de todas as novidades incluídas nesta versão, confira as [notas de versão](/visualstudio/releases/2019/release-notes/).
 
 ## <a name="develop"></a>Desenvolver
 
-Veja o vídeo a seguir para saber mais sobre como economizar tempo com novos recursos. <br><br>*Duração do vídeo: 3 minutos*
+Veja o vídeo a seguir para saber mais sobre como economizar tempo com novos recursos. <br><br>*Tamanho do vídeo: 3, 0 minutos*
 
 > [!VIDEO https://www.youtube.com/embed/n5sJ4EewKGk]
 
@@ -104,19 +104,19 @@ Para saber mais, confira a postagem no blog [Better multi-monitor experience wit
 
 ### <a name="test-explorer"></a>Gerenciador de Testes
 
-**Novidades na 16.2**: Atualizamos o Gerenciador de Testes para fornecer melhor gerenciamento de conjuntos de testes grandes, filtragem mais fácil, comandos mais detectáveis, exibições de lista de reprodução com guias e colunas personalizáveis que permitem ajustar quais informações de testes são exibidas.
+**Novidade no 16,2**: atualizamos o Gerenciador de testes para fornecer melhor manipulação de grandes conjuntos de testes, filtragem mais fácil, comandos detectáveis, exibições com guias de playlist e colunas personalizáveis que permitem ajustar quais informações de teste são exibidas.
 
    ![Uma captura de tela que mostra os aprimoramentos da interface do usuário no Gerenciador de Testes](media/vs-2019/test-explorer-ui.png)
 
 ### <a name="net-core"></a>.NET Core
 
-**Novidades em 16,3**: Incluímos o suporte para o .NET Core 3,0. Entre plataformas,&mdash;software livre e com suporte total da Microsoft. 
+**Novidade no 16,3**: incluímos o suporte para o .net Core 3,0. Multiplataforma,&mdash;de código-fonte aberto e totalmente compatível com a Microsoft.
 
 Para obter mais informações, consulte a postagem no blog [anunciando o .NET Core 3,0](https://devblogs.microsoft.com/dotnet/announcing-net-core-3-0/) .
 
 ## <a name="collaborate"></a>Colaboração
 
-Veja o vídeo a seguir para saber mais sobre como trabalhar em equipe para resolver problemas. <br><br>*Duração do vídeo: 4,22 minutos*
+Veja o vídeo a seguir para saber mais sobre como trabalhar em equipe para resolver problemas. <br><br>*Tamanho do vídeo: 4,22 minutos*
 
 > [!VIDEO https://www.youtube.com/embed/dKLJsiK1QU8]
 
@@ -132,7 +132,7 @@ A janela de início apresenta várias opções para você começar a codificar r
 
 A janela de início também inclui opções para abrir projetos ou soluções, abrir pastas locais ou criar novos projetos.
 
-Para obter mais informações, confira a postagem no blog [Get to code: How we designed the new Visual Studio start window](https://devblogs.microsoft.com/visualstudio/get-to-code-how-we-designed-the-new-visual-studio-start-window/) (Direto ao código: como projetamos a nova janela de início do Visual Studio).
+Para obter mais informações, consulte a postagem de blog [obter código: como projetamos a nova janela inicial do Visual Studio](https://devblogs.microsoft.com/visualstudio/get-to-code-how-we-designed-the-new-visual-studio-start-window/) .
 
 ### <a name="live-share"></a>Live Share
 
@@ -152,9 +152,9 @@ Estamos introduzindo uma nova extensão que você pode baixar para usar com o Vi
 
 Para obter mais informações, consulte a postagem no blog [Revisões de código usando a extensão Solicitações de Pull do Visual Studio](https://devblogs.microsoft.com/visualstudio/code-reviews-using-the-visual-studio-pull-requests-extension/).
 
-## <a name="debug"></a>Depurar
+## <a name="debug"></a>Depuração
 
-Veja o vídeo a seguir para saber mais sobre como zerar com a segmentação precisa enquanto depura. <br><br>*Duração do vídeo: 3,54 minutos*
+Veja o vídeo a seguir para saber mais sobre como zerar com a segmentação precisa enquanto depura. <br><br>*Tamanho do vídeo: 3,54 minutos*
 
 > [!VIDEO https://www.youtube.com/embed/hr72Fs8n_9c]
 
@@ -178,7 +178,7 @@ Você também pode formatar o modo como um valor é exibido dentro das janelas I
 
    ![A nova janela Inspeção e o novo recurso de formatação de valores no Visual Studio 2019](media/search-watch-window.png)
 
-Para obter mais informações, confira [Aprimorado no Visual Studio 2019: Pesquisar Objetos e Propriedades na postagem de blog Janelas de Inspeção, Autos e Locais](https://devblogs.microsoft.com/visualstudio/enhanced-in-visual-studio-2019-search-for-objects-and-properties-in-the-watch-autos-and-locals-windows/).
+Para obter mais informações, consulte [aprimorado no Visual Studio 2019: Pesquisar objetos e propriedades na postagem do blog assistir, automático e locals do Windows](https://devblogs.microsoft.com/visualstudio/enhanced-in-visual-studio-2019-search-for-objects-and-properties-in-the-watch-autos-and-locals-windows/) .
 
 ### <a name="snapshot-debugger"></a>Depurador de instantâneo
 
@@ -192,9 +192,15 @@ Para saber mais, confira a página [Depurar aplicativos ASP.NET dinâmicos usand
 
 ### <a name="microsoft-edge-insider-support"></a>Suporte ao Microsoft Edge Insider
 
-**Novidades na 16.2**: Você pode definir um ponto de interrupção no aplicativo JavaScript e iniciar uma sessão de depuração usando o navegador [Microsoft Edge Insider](https://www.microsoftedgeinsider.com/). Ao fazê-lo, o Visual Studio abre uma nova janela do navegador com a depuração habilitada, que você pode então usar para percorrer o aplicativo JavaScript dentro do Visual Studio.
+**Novidade em 16,2**: você pode definir um ponto de interrupção em um aplicativo JavaScript e iniciar uma sessão de depuração usando o navegador do [Microsoft Edge Insider](https://www.microsoftedgeinsider.com/) . Ao fazê-lo, o Visual Studio abre uma nova janela do navegador com a depuração habilitada, que você pode então usar para percorrer o aplicativo JavaScript dentro do Visual Studio.
 
    ![Uma captura de tela que mostra a renderização de código JavaScript em um navegador](media/vs-2019/edge-chromium-breakpoint.png)
+
+### <a name="pinnable-properties-tool"></a>Ferramenta de propriedades fixas
+
+**Novidade no 16,4**: agora, é mais fácil identificar objetos por suas propriedades durante a depuração com a nova ferramenta fixas Properties. Basta focalizar o cursor sobre uma propriedade que você deseja exibir na janela do depurador das janelas inspeção, automáticos e locais, clicar no ícone fixar e ver imediatamente as informações que você está procurando na parte superior da janela!
+
+   ![Uma animação que mostra como fixar Propriedades no depurador do Visual Studio usando a ferramenta de propriedades fixas](media/vs-2019/debugger-pinnable-properties.gif)
 
 ## <a name="whats-next"></a>O que vem a seguir
 

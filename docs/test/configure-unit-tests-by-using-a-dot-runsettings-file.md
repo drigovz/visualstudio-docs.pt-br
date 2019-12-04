@@ -1,18 +1,18 @@
 ---
 title: Configurar testes de unidade com um arquivo .runsettings
-ms.date: 06/14/2019
+ms.date: 10/03/2019
 ms.topic: conceptual
 ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
 author: jillre
-ms.openlocfilehash: 22fe1de176819807c5cd60d746f381e325601799
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: aba7ea1c26d38db2f845b2e743aae7a3d90d4d53
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72665149"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74771472"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Configurar testes de unidade usando um *.runsettings*
 
@@ -24,7 +24,7 @@ Arquivos de configurações de execução são opcionais. Se você não precisar
 
 Os arquivos de configurações de execução podem ser usados para configurar os testes executados na [linha de comando](vstest-console-options.md), no IDE ou em um [fluxo de trabalho de build](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts) usando o Azure Test Plans ou o TFS (Team Foundation Server).
 
-### <a name="ide"></a>IDE
+### <a name="ide"></a>{1&gt;IDE&lt;1}
 
 ::: moniker range="vs-2017"
 
@@ -38,11 +38,52 @@ O arquivo será exibido no menu de Configurações do Teste e você poderá marc
 
 ::: moniker range=">=vs-2019"
 
-Para especificar um arquivo de configurações de execução no IDE, selecione **testar**  > **Selecione o arquivo de configurações**. Navegue até o arquivo *.runsettings* e selecione-o.
+#### <a name="visual-studio-2019-version-163-and-earlier"></a>Visual Studio 2019 versão 16,3 e anterior
+
+Para especificar um arquivo de configurações de execução no IDE, selecione **testar** > **Selecione o arquivo de configurações**. Navegue até o arquivo *.runsettings* e selecione-o.
 
 ![Selecionar o menu do arquivo de configurações do teste no Visual Studio 2019](media/vs-2019/select-settings-file.png)
 
 O arquivo aparece no menu teste e você pode selecioná-lo ou desselecioná-lo. Quando estiver marcado, o arquivo de configurações de execução se aplicará sempre que você selecionar **Analisar Cobertura de Código**.
+
+#### <a name="visual-studio-2019-version-164-and-later"></a>Visual Studio 2019 versão 16,4 e posterior
+
+Há três maneiras de especificar um arquivo de configurações de execução no Visual Studio 2019 versão 16,4 e posteriores:
+
+- Adicione uma propriedade de compilação a um projeto por meio do arquivo de projeto ou um arquivo Directory. Build. props. O arquivo de configurações de execução para um projeto é especificado pela propriedade **RunSettingsFilePath**. 
+
+    - Atualmente, há suporte para configurações de execução no C#nível de projeto C++no, F# vb, e projetos.
+    - Um arquivo especificado para um projeto substitui qualquer outro arquivo de configurações de execução especificado na solução.
+
+    Exemplo de especificação de um arquivo *. RunSettings* para um projeto:
+    
+    ```xml
+    <Project Sdk="Microsoft.NET.Sdk">
+      <PropertyGroup>
+        <RunSettingsFilePath>$(SolutionDir)\example.runsettings</RunSettingsFilePath>
+      </PropertyGroup>
+      ...
+    </Project>
+    ```
+
+- Coloque um arquivo de configurações de execução chamado ". RunSettings" na raiz da sua solução.
+
+  Se a detecção automática de arquivos de configurações de execução estiver habilitada, as configurações nesse arquivo serão aplicadas em todos os testes executados. Você pode ativar a detecção automática de arquivos RunSettings de dois locais:
+  
+    - **Ferramentas** > **opções** > **testar** > **detectar automaticamente arquivos RunSettings**
+
+      ![Opção de detecção automática de arquivo RunSettings no Visual Studio 2019](media/vs-2019/auto-detect-runsettings-tools-window.png)
+      
+    - **Testar** > **definir configurações de execução** > **detectar arquivos RunSettings automaticamente**
+    
+      ![Menu de detecção automática de arquivos do RunSettings no Visual Studio 2019](media/vs-2019/auto-detect-runsettings-menu.png)
+
+- No IDE, selecione **testar** > **definir configurações de execução** > **Selecionar arquivo de RunSettings de toda a solução**e, em seguida, selecione o arquivo *. RunSettings* .
+
+   ![Selecione o menu arquivo da solução de teste Wide RunSettings no Visual Studio 2019](media/vs-2019/select-solution-settings-file.png)
+      
+   - Esse arquivo substitui o arquivo ". RunSettings" na raiz da solução, se existir, e é aplicado em todos os testes executados.  
+   - Esta seleção de arquivo só persiste localmente. 
 
 ::: moniker-end
 
@@ -97,7 +138,7 @@ Para personalizar os testes usando um arquivo *.runsettings*, siga estas etapas:
 
 ::: moniker range=">=vs-2019"
 
-3. Para selecionar o arquivo de configurações de execução, escolha **testar**  > **Selecionar arquivo de configurações**. Procure o arquivo *.runsettings* que você criou e, em seguida, selecione **OK**.
+3. Para selecionar o arquivo de configurações de execução, escolha **testar** > **Selecionar arquivo de configurações**. Procure o arquivo *.runsettings* que você criou e, em seguida, selecione **OK**.
 
 ::: moniker-end
 
@@ -284,7 +325,7 @@ Para usar parâmetros de execução de teste, adicione um campo <xref:Microsoft.
 
 Essas configurações são específicas para o adaptador de teste que executa os métodos de teste que têm o atributo <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute>.
 
-|Configuração|Padrão|Valores|
+|Configuração do|Padrão|Valores|
 |-|-|-|
 |**ForcedLegacyMode**|false|No Visual Studio 2012, o adaptador MSTest foi otimizado para torná-lo mais rápido e mais escalonável. Alguns comportamentos, como a ordem em que os testes são executados, não podem ser exatamente iguais aos de edições anteriores do Visual Studio. Defina esse valor como **true** para usar o adaptador de teste mais antigo.<br /><br />Por exemplo, você poderá usar essa configuração se tiver um arquivo *app.config* especificado para um teste de unidade.<br /><br />Recomendamos que você considere refatorar seus testes para permitir o uso do adaptador mais recente.|
 |**IgnoreTestImpact**|false|O recurso de impacto de teste prioriza os testes que são afetados pelas alterações recentes, quando executados no MSTest ou no Microsoft Test Manager. Essa configuração desativa o recurso. Para obter mais informações, confira [Quais testes devem ser executados desde um build anterior](https://msdn.microsoft.com/library/dd286589).|

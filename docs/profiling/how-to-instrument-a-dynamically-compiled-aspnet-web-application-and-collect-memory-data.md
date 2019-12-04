@@ -1,21 +1,22 @@
 ---
-title: 'Linha de comando do criador de perfil: Instrumentar o aplicativo ASP.NET dinâmico, obter dados de memória'
+title: 'Linha de comando do criador de perfil: Instrument Dynamic ASP.NET app, obter dados de memória'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 2cdd9903-39db-47e8-93dd-5e6a21bc3435
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - aspnet
-ms.openlocfilehash: f784807a99c288663bee381bfc1e481dd9d5d8e4
-ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
-ms.translationtype: HT
+ms.openlocfilehash: 3378a45ebace942bb8696f2f67962365b5f57796
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67031983"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778876"
 ---
-# <a name="how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line"></a>Como: Instrumentar um aplicativo Web ASP.NET compilado dinamicamente e coletar dados de memória usando a linha de comando do criador de perfil
+# <a name="how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line"></a>Como instrumentar um aplicativo Web ASP.NET compilado dinamicamente e coletar dados de memória usando a linha de comando do criador de perfil
 Este tópico descreve como usar as ferramentas de linha de comando das Ferramentas de Criação de Perfil do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para coletar dados detalhados de alocação de memória do .NET e dados de tempo de vida do objeto de um aplicativo Web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] compilado dinamicamente usando o método de criação de perfil por instrumentação.
 
 > [!NOTE]
@@ -31,7 +32,7 @@ Este tópico descreve como usar as ferramentas de linha de comando das Ferrament
 
 #### <a name="to-configure-the-aspnet-web-application-and-the-web-server"></a>Para configurar o aplicativo Web ASP.NET e o servidor Web
 
-1. Modifique o arquivo *web.config* do aplicativo de destino. Confira [Como Modificar arquivos web.config para instrumentar e analisar aplicativos Web ASP.NET compilados dinamicamente](../profiling/how-to-modify-web-config-files-to-instrument-dynamically-compiled-aspnet-apps.md).
+1. Modifique o arquivo *web.config* do aplicativo de destino. Confira [Como modificar arquivos web.config para instrumentar e criar perfil de aplicativos Web ASP.NET compilados dinamicamente](../profiling/how-to-modify-web-config-files-to-instrument-dynamically-compiled-aspnet-apps.md).
 
 2. Abra uma janela de prompt de comando no computador que hospeda o aplicativo Web.
 
@@ -39,7 +40,7 @@ Este tópico descreve como usar as ferramentas de linha de comando das Ferrament
 
      **VSPerfClrEnv /globaltracegc**
 
-     -ou-
+     \- ou -
 
      **VSPerfClrEnv /globaltracegclife**
 
@@ -53,7 +54,7 @@ Este tópico descreve como usar as ferramentas de linha de comando das Ferrament
 
 #### <a name="to-profile-the-aspnet-web-application"></a>Para criar o perfil do aplicativo Web ASP.NET
 
-1. Inicie o criador de perfil. Tipo:
+1. {2&gt;Inicie o criador de perfil.&lt;2} Tipo:
 
     **VSPerfCmd** [/start](../profiling/start.md) **:trace** [/output](../profiling/output.md) **:** `OutputFile` [`Options`]
 
@@ -66,7 +67,7 @@ Este tópico descreve como usar as ferramentas de linha de comando das Ferrament
    > [!NOTE]
    > Normalmente, as opções **/user** e **/crosssession** são necessárias para aplicativos ASP.NET.
 
-   | Opção | DESCRIÇÃO |
+   | Opção | Descrição |
    | - | - |
    | [/user](../profiling/user-vsperfcmd.md) **:** [`Domain` **\\** ]`UserName` | Especifica o domínio e o nome de usuário opcional da conta que possui o processo de trabalho [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]. Esta opção será necessária se o processo estiver sendo executado como um usuário diferente do usuário conectado. O nome é listado na coluna **Nome de Usuário** na guia **Processos** do Gerenciador de Tarefas do Windows. |
    | [/crosssession](../profiling/crosssession.md) | Habilita a criação de perfil de processos em outras sessões. Esta opção será necessária se o aplicativo estiver em execução em uma sessão diferente. A ID da sessão é listada na coluna **ID da Sessão** na guia **Processos** do Gerenciador de Tarefas do Windows. **/CS** pode ser especificado como uma abreviação de **/crosssession**. |
@@ -85,7 +86,7 @@ Este tópico descreve como usar as ferramentas de linha de comando das Ferrament
 
 - Os pares de opções a seguir iniciam e interrompem a coleta de dados. Especifique cada opção em uma linha de comando separada. É possível ativar e desativar a coleta de dados várias vezes.
 
-    |Opção|DESCRIÇÃO|
+    |Opção|Descrição|
     |------------|-----------------|
     |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Inicia ( **/globalon**) ou interrompe ( **/globaloff**) a coleta de dados para todos os processos.|
     |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Inicia ( **/processon**) ou interrompe ( **/processoff**) a coleta de dados para o processo especificado pela ID de processo (`PID`).|

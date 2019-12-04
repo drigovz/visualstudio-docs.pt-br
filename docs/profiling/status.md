@@ -6,14 +6,15 @@ ms.assetid: ba656fa4-ef9d-4d8c-a3b6-739c3b5d23ae
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 25f452dcb473abf87d8992f36f5326973937e85e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: bf5e0fdf478e067f61b1d0e259cb1624380e4f02
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62967866"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778239"
 ---
 # <a name="status"></a>Status
 A opção **Status** de *VSPerfCmd.exe* exibe informações sobre o estado do criador de perfil e todos os processos cujos perfis estão sendo criados.
@@ -27,7 +28,7 @@ VSPerfCmd.exe /Status
 ```
 
 #### <a name="parameters"></a>Parâmetros
- Nenhum
+ {1&gt;Nenhum&lt;1}
 
 ## <a name="remarks"></a>Comentários
  A opção **Status** exibe as seguintes informações de estado para o criador de perfil.

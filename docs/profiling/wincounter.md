@@ -6,14 +6,15 @@ ms.assetid: ff319ffc-f249-4c3f-9eb2-06e392e3ae80
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e93cc526ad61916e2a8663caa9652842ce136c5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 9455d596e27526f6075ad3b667ac441b12511d58
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62960188"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779838"
 ---
 # <a name="wincounter"></a>WinCounter
 A opção **WinCounter** especifica um contador de desempenho do aplicativo ou do Windows para coletar em intervalos definidos durante o perfil de execução. Os contadores de desempenho do aplicativo e do Windows são listados como marcas no arquivo de dados de criação de perfil. Você pode especificar vários contadores de desempenho para coletar em opções separadas.
@@ -36,12 +37,12 @@ VSPerfCmd.exe /Start:Method /Wincounter:Path [/WinCounter:Path] [AutoMark:Millis
 ## <a name="required-options"></a>Opções obrigatórias
  A opção **WinCounter** só pode ser usada com a opção **Iniciar**.
 
- **Iniciar:** `Method` A opção **Iniciar** inicializa o criador de perfil com o método de criação de perfil especificado.
+ **Iniciar:** `Method` a opção **Iniciar** Inicializa o criador de perfil para o método de criação de perfil especificado.
 
 ## <a name="exclusive-options"></a>Opções exclusivas
  A opção **AutoMark** só pode ser usada com a opção **WinCounter**.
 
- **AutoMark:** `Milliseconds` Especifica o número de milissegundos entre a coleta de dados do contador de desempenho do Windows.
+ **Automarcar:** `Milliseconds` especifica o número de milissegundos entre a coleta de dados do contador de desempenho do Windows.
 
 ## <a name="example"></a>Exemplo
  No exemplo a seguir, dois contadores de desempenho do Windows são especificados para serem coletados em um intervalo de 1000 milissegundos.

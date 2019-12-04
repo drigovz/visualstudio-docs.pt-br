@@ -1,5 +1,5 @@
 ---
-title: 'DA0004: Alto uso de processador | Microsoft Docs'
+title: 'DA0004: alto uso de processador | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -11,24 +11,25 @@ ms.assetid: 2c4fb569-929e-4f1d-8c50-b590ee371351
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 7fcc468d3820e34db24edbbf311cbae17bda0732
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: b324d26d21920bae9f03f909b2eab0c1ce7ab419
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62936701"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74777719"
 ---
-# <a name="da0004-high-processor-usage"></a>DA0004: Uso do processador elevado
+# <a name="da0004-high-processor-usage"></a>DA0004: uso do processador elevado
 
 |||
 |-|-|
-|ID de regra|DA0004|
+|Id da Regra|DA0004|
 |Categoria|Uso das ferramentas de criação de perfil|
 |Métodos de criação de perfil|Instrumentação<br /><br /> Amostragem|
 |Mensagem|O uso do processador é consistentemente superior a 75%. Considere o uso do modo de Amostragem para aplicativos associados à CPU.|
-|Tipo de regra|Informações|
+|Tipo de regra|Informações do|
 
  Ao criar o perfil usando a amostragem, a memória do .NET ou métodos de contenção de recursos, é necessário coletar pelo menos 10 amostras para disparar essa regra.
 

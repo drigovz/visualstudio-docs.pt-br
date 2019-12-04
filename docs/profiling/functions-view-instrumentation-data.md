@@ -8,14 +8,15 @@ ms.assetid: 595d91c8-a42b-4644-85b8-39e8140a5dfe
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 34585e212acfd52186e12e8b38293178cc77c585
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 423b6d61af93c37e6fa83549ed3fa5d422128165
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62969687"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779214"
 ---
 # <a name="functions-view---instrumentation-data"></a>Exibição funções – dados de instrumentação
 A exibição de relatório de Funções lista dados de criação perfil segundo o nome da função.
@@ -82,7 +83,7 @@ A exibição de relatório de Funções lista dados de criação perfil segundo 
 |**Tempo Exclusivo Mínimo do Aplicativo**|O tempo exclusivo mínimo do aplicativo de uma chamada para essa função.|
 
 ## <a name="see-also"></a>Consulte também
-- [Como: Personalizar as colunas da Exibição de Relatório](../profiling/how-to-customize-report-view-columns.md)
+- [Como: Personalizar colunas de exibição de relatório](../profiling/how-to-customize-report-view-columns.md)
 - [Exibição Funções](../profiling/functions-view-sampling-data.md)
 - [Exibição Funções – amostragem](../profiling/functions-view-dotnet-memory-sampling-data.md)
 - [Exibição Funções – instrumentação](../profiling/functions-view-dotnet-memory-instrumentation-data.md)

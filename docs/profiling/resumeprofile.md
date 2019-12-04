@@ -8,14 +8,15 @@ ms.assetid: 876f145b-ec07-4240-ade6-4f6e44baadce
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e0d9db4660936629c1e9dd6a5b7ff9704a7e7e8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 3d65d5fcf8961493c2b780453f2143de788551a5
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62814092"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778304"
 ---
 # <a name="resumeprofile"></a>ResumeProfile
 O método `ResumeProfile` diminui o contador de suspender/retomar para o nível de criação de perfil especificado.
@@ -50,7 +51,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI ResumeProfile(
 |----------------|-----------------|
 |PROFILE_ERROR_ID_NOEXIST|A ID de elemento de criação de perfil não existe.|
 |PROFILE_ERROR_LEVEL_NOEXIST|O nível de criação de perfil especificado não existe.|
-|PROFILE_ERROR_MODE_NEVER|O modo de criação de perfil foi definido para NUNCA quando a função foi chamada.|
+|PROFILE_ERROR_MODE_NEVER|O modo de criação de perfil foi definido para NEVER (NUNCA) quando a função foi chamada.|
 |PROFILE_ERROR_NOT_YET_IMPLEMENTED|A chamada de função de criação de perfil, o nível de criação de perfil ou combinação de chamada e nível ainda não foi implementada.|
 |PROFILE_OK|A chamada foi bem-sucedida.|
 
@@ -65,7 +66,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI ResumeProfile(
  *Microsoft.VisualStudio.Profiler.dll*
 
 ## <a name="function-information"></a>Informações de função
- Cabeçalho: Declarado em *VSPerf.h*
+ Cabeçalho: declarado em *VSPerf.h*
 
  Biblioteca de importação: *VSPerf.lib*
 

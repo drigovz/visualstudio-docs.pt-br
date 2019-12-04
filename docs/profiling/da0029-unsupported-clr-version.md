@@ -1,5 +1,5 @@
 ---
-title: 'DA0029: Versão da CLR sem suporte | Microsoft Docs'
+title: 'DA0029: versão da CLR sem suporte | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,20 +13,21 @@ ms.assetid: 76247259-c6f3-44c4-b3f9-d8dac16b5e0d
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: a3855b8975684b088b2838a866db36e6ec19e665
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: dbc0bfcdb49557e56711b60dca11977a3504d907
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62936279"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74777509"
 ---
-# <a name="da0029-unsupported-clr-version"></a>DA0029: Versão de CLR não compatível
+# <a name="da0029-unsupported-clr-version"></a>DA0029: versão do CLR não compatível
 
 |||
 |-|-|
-|ID de regra|DA0029|
+|Id da Regra|DA0029|
 |Categoria|Uso das ferramentas de criação de perfil|
 |Método de criação de perfil|Criação de perfil da linha de comando|
 |Mensagem|Uma versão do CLR sem suporte foi detectada durante a coleta. Talvez os símbolos gerenciados não resolvam corretamente.|
@@ -39,4 +40,4 @@ ms.locfileid: "62936279"
  Você recebeu este aviso porque as ferramentas de criação de perfil são incapazes de resolver os símbolos para o código gerenciado em execução no aplicativo. As ferramentas de criação de perfil não podem resolver os símbolos de código gerenciado para aplicativos que estão executando o [!INCLUDE[net_v11_long](../profiling/includes/net_v11_long_md.md)].
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
- nenhuma.
+ Nenhuma.

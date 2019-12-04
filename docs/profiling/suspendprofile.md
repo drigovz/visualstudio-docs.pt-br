@@ -8,14 +8,15 @@ ms.assetid: 7c8de6e6-bb88-4353-92c3-ce7290310d61
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 85b05c5d6b477fffdb56377fe4a8d13dda6219cc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 1eb0d0f41b17c4f23c3898b044ad49182d47aae0
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62422985"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778187"
 ---
 # <a name="suspendprofile"></a>SuspendProfile
 O método `SuspendProfile` incrementa o contador de Suspender/Retomar do nível de criação de perfil especificado.
@@ -50,7 +51,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI SuspendProfile(
 |----------------|-----------------|
 |PROFILE_ERROR_ID_NOEXIST|A ID de elemento de criação de perfil não existe.|
 |PROFILE_ERROR_LEVEL_NOEXIST|O nível de criação de perfil especificado não existe.|
-|PROFILE_ERROR_MODE_NEVER|O modo de criação de perfil foi definido para NUNCA quando a função foi chamada.|
+|PROFILE_ERROR_MODE_NEVER|O modo de criação de perfil foi definido para NEVER (NUNCA) quando a função foi chamada.|
 |PROFILE_ERROR_NOT_YET_IMPLEMENTED|A chamada de função de criação de perfil, o nível de criação de perfil ou combinação de chamada e nível ainda não foi implementada.|
 |PROFILE_OK|A chamada foi bem-sucedida.|
 
@@ -65,7 +66,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI SuspendProfile(
  *Microsoft.VisualStudio.Profiler.dll*
 
 ## <a name="function-information"></a>Informações de função
- Cabeçalho: Declarado em *VSPerf.h*
+ Cabeçalho: declarado em *VSPerf.h*
 
  Biblioteca de importação: *VSPerf.lib*
 

@@ -10,24 +10,25 @@ ms.assetid: 36e71603-ece7-4000-85fc-9da4eed61bf2
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f5bebcaf9b6e69883f8876a10a99fefb81e6105
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: a181ecb66c3735eb34ab3c866c3c68b2397781f6
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911930"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779318"
 ---
 # <a name="da0504-maximum-working-set-in-bytes-for-the-process-being-profiled"></a>DA0504: conjunto de trabalho máximo em bytes para o processo com criação de perfil
 
 |||
 |-|-|
-|ID de regra|DA0504|
+|Id da Regra|DA0504|
 |Categoria|Gerenciamento de recursos|
-|Método de criação de perfil|Todos|
+|Método de criação de perfil|{1&gt;Todos&lt;1}|
 |Mensagem|Essas informações foram coletadas apenas para fins informativos. O contador Conjunto de trabalho do processo mede o uso de memória física do processo do qual está sendo criado o perfil. O valor relatado é o máximo observado em todos os intervalos de medição.|
-|Tipo de regra|Informações|
+|Tipo de regra|Informações do|
 
  Ao criar o perfil usando a amostragem, a memória do .NET ou métodos de contenção de recursos, é necessário coletar pelo menos 10 amostras para disparar essa regra.
 

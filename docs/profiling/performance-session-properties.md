@@ -9,14 +9,15 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c8a5058d52684ec08e13641953c789c244f2fa9
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: 1b3bafa976c8e57f468a3f3f59a3b6b19308fd1b
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72910143"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74772196"
 ---
 # <a name="performance-session-properties"></a>Propriedades da sessão de desempenho
 
@@ -32,7 +33,7 @@ A sessão de desempenho tem as seguintes páginas de propriedade:
 
 Essas configurações permitem que você selecione o método de criação de perfil para adicionar dados de tempo de vida e de coleção de objetos .NET e para especificar o local do relatório padrão e das convenções de nomenclatura.
 
-Para obter mais informações, consulte:
+Para obter mais informações, consulte .
 
 [Como escolher métodos de coleta](../profiling/how-to-choose-collection-methods.md)
 
@@ -40,7 +41,7 @@ Para obter mais informações, consulte:
 
 - [Como definir opções do nome do arquivo de dados de desempenho](../profiling/how-to-set-performance-data-file-name-options.md)
 
-## <a name="launch"></a>Inicializar
+## <a name="launch"></a>Inicie o
 
 Essas configurações permitem selecionar em uma lista de binários e especificar a ordem de inicialização dos binários.
 
@@ -71,7 +72,7 @@ Para obter mais informações, consulte [Coletando dados de interação entre ca
 
 Essas configurações permitem que coletar dados de desempenho de código JScript em páginas da Web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] e especificar qualquer evento de **Pré-instrumento** e **Pós-instrumento** que você deseja que ocorra antes ou depois do processo de instrumentação.
 
-Para obter mais informações, consulte:
+Para obter mais informações, consulte .
 
 [Como criar perfil de código JavaScript em páginas da Web](../profiling/how-to-profile-javascript-code-in-web-pages.md)
 
@@ -87,7 +88,7 @@ Para obter mais informações, confira [Como coletar dados do contador de CPU](.
 
 Durante a criação de perfil, você pode coletar dados de provedores de rastreamento de eventos. Você pode exibir os dados usando a opção `/calltrace` da ferramenta de linha de comando *VSPerfReport.exe*. Para obter mais informações sobre o ETW (Rastreamento de Eventos para Windows), consulte [Sobre o rastreamento de eventos](/windows/win32/etw/about-event-tracing).
 
-Para obter mais informações, consulte:
+Para obter mais informações, consulte .
 
 [Como coletar dados de ETW (Rastreamento de Eventos para Windows)](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)
 
@@ -103,9 +104,9 @@ Essa opção permite que você colete dados de contadores do Monitor de Desempen
 
 Essas configurações permitem que você adicione opções ao processo de instrumentação especificando uma ou mais opções da ferramenta de criação de perfil da linha de comando [VSInstr](../profiling/vsinstr.md). Você também pode especificar a versão do Common Runtime para análise quando o aplicativo estiver usando mais de uma versão.
 
-Para obter mais informações, consulte:
+Para obter mais informações, consulte .
 
-[Como especificar o tempo de execução do .NET Framework](../profiling/how-to-specify-the-dotnet-framework-runtime.md)
+[Como especificar o runtime do .NET Framework](../profiling/how-to-specify-the-dotnet-framework-runtime.md)
 
 [Como especificar opções de instrumentação adicionais](../profiling/how-to-specify-additional-instrumentation-options.md)
 

@@ -1,5 +1,5 @@
 ---
-title: 'Como: Pausar e retomar a coleta de dados de desempenho | Microsoft Docs'
+title: Como pausar e retomar a coleta de dados de desempenho | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,16 +8,17 @@ ms.assetid: b8e76363-65cd-424d-8173-3e2b5f54203b
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 281631332692d249ea30e747fa4a0fd69ca110f4
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
-ms.translationtype: HT
+ms.openlocfilehash: 3b6190dbc4545836e5fa7ea1b1ff6c5bfc3b2403
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67825674"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778785"
 ---
-# <a name="how-to-pause-and-resume-performance-data-collection"></a>Como: Pausar e retomar a coleta de dados de desempenho
+# <a name="how-to-pause-and-resume-performance-data-collection"></a>Como pausar e retomar a coleta de dados de desempenho
 Você pode controlar interativamente a coleta de dados de criação de perfil na janela da página de sessão de criação de perfil.
 
  O controle da coleta de dados permite reduzir o tamanho do arquivo de dados de análise e coletar somente dados das operações nas quais você está interessado. Você pode pausar e retomar a criação de perfil várias vezes em uma sessão de desempenho.
@@ -39,4 +40,4 @@ Você pode controlar interativamente a coleta de dados de criação de perfil na
 
 ## <a name="see-also"></a>Consulte também
 - [Controlar a coleta de dados](../profiling/controlling-data-collection.md)
-- [Como: Iniciar e encerrar a coleta de dados de desempenho](../profiling/how-to-start-and-end-performance-data-collection.md)
+- [Como: iniciar e terminar a coleta de dados de desempenho](../profiling/how-to-start-and-end-performance-data-collection.md)

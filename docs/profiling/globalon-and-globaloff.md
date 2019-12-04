@@ -6,14 +6,15 @@ ms.assetid: 24b0ed68-d19e-473e-9af3-252c11d82bcf
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 2ee29b677096e46d965e8191cf26a829587471dd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 518f41557809cdeaaae9f9e1ac79e3797a854395
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62969622"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74776960"
 ---
 # <a name="globalon-and-globaloff"></a>GlobalOn e GlobalOff
 As opções *VSPerfCmd.exe* **GlobalOff** e **GlobalOn** pausam e retomam a criação de perfil de todos os processos e threads em uma sessão de criação de perfil de linha de comando.
@@ -43,20 +44,20 @@ VSPerfCmd.exe {Launch:AppName|Attach:PID} /{GlobalOff|GlobalOn}[Options]
 ```
 
 #### <a name="parameters"></a>Parâmetros
- Nenhum
+ {1&gt;Nenhum&lt;1}
 
 ## <a name="valid-options"></a>Opções válidas
  **GlobalOn** e **GlobalOff** podem ser especificados em linhas de comando que também contêm as seguintes opções.
 
  **Iniciar:** `Method` Inicializa a sessão do criador de perfil de linha de comando e define o método de criação de perfil especificado.
 
- **Iniciar:** `AppName` Inicia o aplicativo especificado e inicia a criação de perfil com o método de amostragem.
+ **Iniciar:** `AppName` inicia o aplicativo especificado e começa a criação de perfil com o método de amostragem.
 
- **Anexar:** `PID` Inicia a criação de perfil do processo especificado.
+ **Attach:** `PID` começa a criação de perfil do processo especificado.
 
- {**ProcessOff**&#124;**ProcessOn**} **:** `PID` Interrompe ou inicia a criação de perfil para o processo especificado.
+ {**ProcessOff**&#124;**processize**} **:** `PID` para ou inicia a criação de perfil para o processo especificado.
 
- {**ThreadOff**&#124;**ThreadOn**} **:** `TID` Interrompe ou inicia a criação de perfil para o processo especificado (somente no método de instrumentação).
+ {**ThreadOff**&#124;**Threading**} **:** `TID` para ou inicia a criação de perfil para o processo especificado (somente método de instrumentação).
 
 ## <a name="example"></a>Exemplo
  Neste exemplo, as opções **GlobalOff** e **GlobalOn** são usadas para evitar a coleta de dados de criação de perfil para inicialização e desligamento do aplicativo.

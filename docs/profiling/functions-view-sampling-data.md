@@ -9,14 +9,15 @@ ms.assetid: 029d5ebb-e551-46b0-b64e-2c553d9dbb8e
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: fe79d236750c5f165468c95f7ffa320f83f86f18
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 70fda712a29ff07ee34a4ac76a06198cb5ead8a5
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436428"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74780020"
 ---
 # <a name="functions-view---sampling-data"></a>Exibição Funções – dados de amostragem
 O modo de exibição de relatório de Funções do método de perfil de amostragem lista as funções que foram amostradas durante a criação de perfil.
@@ -40,7 +41,7 @@ O modo de exibição de relatório de Funções do método de perfil de amostrag
 |**% de Amostras Exclusivas**|O percentual de todas as amostras na execução de criação de perfil que eram amostras exclusivas dessa função.|
 
 ## <a name="see-also"></a>Consulte também
-- [Como: Personalizar as colunas da Exibição de Relatório](../profiling/how-to-customize-report-view-columns.md)
+- [Como: Personalizar colunas de exibição de relatório](../profiling/how-to-customize-report-view-columns.md)
 - [Exibição Funções – instrumentação](../profiling/functions-view-dotnet-memory-instrumentation-data.md)
 - [Exibição Funções – amostragem](../profiling/functions-view-dotnet-memory-sampling-data.md)
 - [Exibição Funções](../profiling/functions-view-instrumentation-data.md)

@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 2f14a5f2255f7ba1b077ead60147a6df407970fc
-ms.sourcegitcommit: f9f389e72787de30eb869a55ef7725a10a4011f0
+ms.openlocfilehash: 321e8271806f8f9e2983e82db010cd2ffb49a3ee
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73636561"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74777940"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>Tutorial: Criar um aplicativo Node.js e React no Visual Studio
 
@@ -29,7 +29,7 @@ Neste tutorial, você aprenderá como:
 > * Adicionar pacotes npm
 > * Adicionar código React ao seu aplicativo
 > * Transcompilar JSX
-> * Anexar o depurador
+> * {1&gt;Anexar o depurador&lt;1}
 
 ## <a name="before-you-begin"></a>Antes de começar
 
@@ -55,7 +55,7 @@ O JSX é uma extensão da sintaxe de JavaScript, normalmente usada com o React p
 
 O webpack empacota arquivos JavaScript para que eles possam ser executados em um navegador. Ele também pode transformar ou empacotar outros recursos e ativos. Geralmente, é usado para especificar um compilador, como Babel ou TypeScript, para transcompilar código JSX ou TypeScript para JavaScript simples.
 
-## <a name="prerequisites"></a>{1&gt;Pré-requisitos&lt;1}
+## <a name="prerequisites"></a>{1&gt;{2&gt;Pré-requisitos&lt;2}&lt;1}
 
 * Você precisa ter o Visual Studio instalado e a carga de trabalho de desenvolvimento de Node.js.
 
@@ -80,7 +80,7 @@ O webpack empacota arquivos JavaScript para que eles possam ser executados em um
 
 Primeiro, crie um projeto de aplicativo Web Node.js.
 
-1. Abra o Visual Studio.
+1. {1&gt;Abra o Visual Studio.&lt;1}
 
 1. Crie um novo projeto.
 
@@ -90,7 +90,7 @@ Primeiro, crie um projeto de aplicativo Web Node.js.
     ::: moniker range="vs-2017"
     Na barra de menus superior, escolha **Arquivo** > **Novo** > **Projeto**. No painel esquerdo da caixa de diálogo **Novo Projeto**, expanda **JavaScript** e escolha **Node.js**. No painel central, escolha **Aplicativo Web Node.js em Branco**, digite o nome **NodejsWebAppBlank** e escolha **OK**.
     ::: moniker-end
-    Se não vir o modelo de projeto **Aplicativo Web Node.js em Branco**, instale a carga de trabalho de **desenvolvimento de Node.js**. Confira instruções detalhadas nos. [Pré-requisitos](#prerequisites).
+    Se não vir o modelo de projeto **Aplicativo Web Node.js em Branco**, instale a carga de trabalho de **desenvolvimento de Node.js**. Confira instruções detalhadas nos [Pré-requisitos](#prerequisites).
 
     O Visual Studio cria a nova solução e abre seu projeto.
 
@@ -400,6 +400,10 @@ Para este cenário, use o Chrome.
    Outras instâncias do navegador podem impedir que o navegador seja aberto com a depuração habilitada. (As extensões do navegador podem estar em execução e impedindo o modo de depuração completa, portanto, talvez seja necessário abrir o Gerenciador de tarefas para localizar instâncias inesperadas do Chrome.)
 
    ::: moniker range=">=vs-2019"
+   Para o Microsoft Edge (Chromium), também Desligue todas as instâncias do Chrome. Como ambos os navegadores compartilham a base de código Chromium, isso fornece os melhores resultados.
+   ::: moniker-end
+
+   ::: moniker range=">=vs-2019"
    Para o Microsoft Edge (Chromium), também Desligue todas as instâncias do Chrome. Como ambos os navegadores usam a base de código Chromium, isso fornece os melhores resultados.
    ::: moniker-end
 
@@ -478,7 +482,7 @@ Para este cenário, use o Chrome.
 5. Na caixa de diálogo **anexar ao processo** , obtenha uma lista filtrada de instâncias do navegador às quais você pode anexar.
 
     ::: moniker range=">=vs-2019"
-    No Visual Studio 2019, escolha o depurador correto para seu navegador de destino, **JavaScript (Chrome)** ou **JavaScript (Microsoft Edge-Chromium)** no campo **anexar a** , digite **Chrome** ou **Edge** na caixa de filtro para filtrar os resultados da pesquisa.
+    No Visual Studio 2019, escolha o depurador correto para seu navegador de destino, **JavaScript (Chrome)** ou **JavaScript (Microsoft Edge-Chromium)** no campo **anexar a** , digite **Chrome** ou **Edge** na caixa de filtro para filtrar o resultados da pesquisa.
     ::: moniker-end
     ::: moniker range="vs-2017"
     No Visual Studio 2017, escolha **código WebKit** no campo **anexar a** , digite **Chrome** na caixa de filtro para filtrar os resultados da pesquisa.
@@ -513,12 +517,11 @@ Para este cenário, use o Chrome.
       * Você fechou todas as instâncias de navegador, incluindo as extensões Chrome (usando o Gerenciador de tarefas), para que você possa executar o navegador no modo de depuração. Certifique-se de iniciar o navegador no modo de depuração.
 
       * Verifique se o arquivo de mapa de origem inclui uma referência a *./app.TSX* e não *webpack:///./app.TSX*, o que impede que o depurador do Visual Studio localize o *app. TSX*.
-
        Como alternativa, se você precisar dividir o código em *app. TSX* e não puder fazê-lo, tente usar a instrução `debugger;` no *app. TSX*ou defina os pontos de interrupção no Chrome ferramentas para desenvolvedores (ou as ferramentas F12 para o Microsoft Edge) em seu lugar.
 
    * Se você precisar dividir o código em *app-Bundle. js* e não puder fazê-lo, remova o arquivo do mapa de origem, *app-Bundle. js. map*.
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
 
 > [!div class="nextstepaction"]
 > [Implantar o aplicativo no Serviço de Aplicativo do Linux](../javascript/publish-nodejs-app-azure.md)

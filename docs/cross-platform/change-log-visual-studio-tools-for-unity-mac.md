@@ -1,7 +1,7 @@
 ---
 title: Log de alterações (Ferramentas do Visual Studio para Unity, Mac) | Microsoft Docs
 ms.custom: ''
-ms.date: 09/18/2019
+ms.date: 12/02/2019
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: 33a6ac54-d997-4308-b5a0-af7387460849
@@ -10,16 +10,64 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 897851055bd2eacc10edea9fdff2ab3ecd61b963
-ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
+ms.openlocfilehash: fe317d446ddc9196df02dfafcf0397f8815574c3
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71185967"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74771537"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-mac"></a>Log de alterações (Ferramentas do Visual Studio para Unity, Mac)
 
 Log de alterações de Ferramentas do Visual Studio para Unity.
+
+## <a name="2420"></a>2.4.2.0
+
+Lançado em 3 de dezembro de 2019
+
+### <a name="bug-fixes"></a>Correções de bug
+
+- **Integração:**
+
+  - Corrigido o diagnóstico com interfaces definidas pelo usuário.
+
+  - Correção de dicas de ferramenta rápidas com expressões malformadas.
+  
+## <a name="2410"></a>2.4.1.0
+
+Lançado em 6 de novembro de 2019
+
+### <a name="new-features"></a>Novos recursos
+
+- **Integração:**
+
+  - Suporte adicionado para processos em segundo plano do Unity. (O depurador é capaz de se conectar automaticamente ao processo principal em vez de um processo filho).
+
+  - Adicionada uma dica de ferramenta rápida para mensagens do Unity, exibindo a documentação associada.
+
+### <a name="bug-fixes"></a>Correções de bug
+
+- **Integração:**
+
+  - Correção do `UNT0002` analisador de comparação de marcas com expressões binárias e de invocação avançadas.
+
+### <a name="deprecated-features"></a>Recursos preteridos
+
+- **Integração:**
+
+  - No futuro, Ferramentas do Visual Studio para Unity dará suporte apenas ao Visual Studio 2017 +.
+
+## <a name="2400"></a>2.4.0.0
+
+Lançado em 15 de outubro de 2019
+
+### <a name="new-features"></a>Novos recursos
+
+- **Integração:**
+
+  - Adicionado um supressor para `IDE0060` (parâmetro não usado) para todas as mensagens do Unity.
+
+  - Adicionada uma dica de ferramenta rápida para campos marcados com `TooltipAttribute`. (Isso também funcionará para um acessador get simples usando esse campo).
 
 ## <a name="2330"></a>2.3.3.0
 
@@ -30,7 +78,7 @@ Lançado em 23 de setembro de 2019
 - **Integração:**
 
   - Foi adicionado um novo supressor para IDE0060, para impedir que o IDE mostre uma correção rápida para remover parâmetros não utilizados.
-    - `USP0005`para `IDE0060`: As mensagens do Unity são invocadas pelo tempo de execução do Unity.
+    - `USP0005` para `IDE0060`: as mensagens do Unity são invocadas pelo tempo de execução do Unity.
 
 ## <a name="2320"></a>2.3.2.0
 
@@ -40,42 +88,42 @@ Lançado em 16 de setembro de 2019
 
 - **Integração:**
 
-  - Nós aprofundamos a compreensão de que o Visual Studio tem para projetos do Unity adicionando novos diagnósticos específicos ao Unity. Também tornamos o IDE mais inteligente, suprimindo diagnósticos C# gerais que não se aplicam a projetos do Unity. Por exemplo, o IDE não mostrará uma correção rápida para alterar uma variável de Inspetor `readonly` para a qual impediria que você modificasse a variável no editor do Unity.
-    - `UNT0001`: as mensagens do Unity serão chamadas pelo tempo de execução mesmo se estiverem vazias. Não as declare para evitar o processamento de desnecessário pelo tempo de execução do Unity.
+  - Nós aprofundamos a compreensão de que o Visual Studio tem para projetos do Unity adicionando novos diagnósticos específicos ao Unity. Também tornamos o IDE mais inteligente, suprimindo diagnósticos C# gerais que não se aplicam a projetos do Unity. Por exemplo, o IDE não mostrará uma correção rápida para alterar uma variável de inspetor para `readonly`, o que impediria que você modificasse a variável no editor do Unity.
+    - `UNT0001`: as mensagens do Unity são chamadas pelo tempo de execução mesmo se estiverem vazias, não as declare para evitar o processamento de uncesseray pelo tempo de execução do Unity.
     - `UNT0002`: a comparação de marcas usando a igualdade de cadeia de caracteres é mais lenta do que o método CompareTag interno.
-    - `UNT0003`: o uso da forma genérica de GetComponent é preferencial para a segurança de tipos.
-    - `UNT0004`: a mensagem de atualização é dependente de taxa de quadros e deve usar Time.deltaTime em vez de Time.fixedDeltaTime.
-    - `UNT0005`: a mensagem FixedUpdate é independente de taxa de quadros e deve usar Time.fixedDeltaTime em vez de Time.deltaTime.
-    - `UNT0006`: Uma assinatura de método incorreta foi detectada para esta mensagem do Unity.
-    - `UNT0007`: o Unity substitui o operador de comparação nula para objetos do Unity que é incompatível com a união nula.
-    - `UNT0008`: o Unity substitui o operador de comparação nula para objetos do Unity que é incompatível com a propagação nula.
+    - `UNT0003`: o uso da forma genérica de GetComponent é preferencial para a segurança de tipo.
+    - `UNT0004`: a mensagem de atualização é dependente de taxa de quadros e deve usar time. deltaTime em vez de time. fixedDeltaTime.
+    - `UNT0005`: a mensagem FixedUpdate é independente de taxa de quadros e deve usar time. fixedDeltaTime em vez de time. deltaTime.
+    - `UNT0006`: uma assinatura de método incorreta foi detectada para esta mensagem do Unity.
+    - `UNT0007`: Unity substitui o operador de comparação NULL para objetos Unity que são incompatíveis com a União nula.
+    - `UNT0008`: Unity substitui o operador de comparação nulo para objetos Unity que é incompatível com a propagação nula.
     - `UNT0009`: ao aplicar o atributo InitializeOnLoad a uma classe, você precisa fornecer um construtor estático. O atributo InitializeOnLoad verifica se ele será chamado quando o editor for iniciado.
-    - `UNT0010`: MonoBehaviours só deve ser criado usando AddComponent(). O MonoBehaviour é um componente e precisa ser anexado a um GameObject.
-    - `UNT0011`: ScriptableObject só deve ser criado usando CreateInstance(). ScriptableObject precisa ser criado pelo mecanismo do Unity para manipular métodos de mensagem do Unity.
-    - `USP0001`para `IDE0029`: Os objetos do Unity não devem usar a União nula.
-    - `USP0002`para `IDE0031`: Os objetos do Unity não devem usar a propagação nula.
-    - `USP0003`para `IDE0051`: As mensagens do Unity são invocadas pelo tempo de execução do Unity.
-    - `USP0004`para `IDE0044`: Os campos com um atributo Serializefield não devem ser criados somente leitura.
+    - `UNT0010`: monocomportamento só deve ser criado usando addComponent (). O MonoBehaviour é um componente e precisa ser anexado a um GameObject.
+    - `UNT0011`: ScriptableObject só deve ser criado usando CreateInstance (). ScriptableObject precisa ser criado pelo mecanismo do Unity para manipular métodos de mensagem do Unity.
+    - `USP0001` para `IDE0029`: os objetos do Unity não devem usar a União nula.
+    - `USP0002` para `IDE0031`: os objetos do Unity não devem usar a propagação nula.
+    - `USP0003` para `IDE0051`: as mensagens do Unity são invocadas pelo tempo de execução do Unity.
+    - `USP0004` para `IDE0044`: os campos com um atributo Serializefield não devem se tornar ReadOnly.
 
 ## <a name="2310"></a>2.3.1.0
 
-lançado em 4 de setembro de 2019
+Lançado em 4 de setembro de 2019
 
 ### <a name="new-features"></a>Novos recursos
 
 - **Avaliação:**
 
-  - Adição de suporte para melhor exibição de tipo, `List<object>` ou seja `List'1[[System.Object, <corlib...>]]`, em vez de.
+  - Adição de suporte para melhor exibição de tipo, ou seja, `List<object>` em vez de `List'1[[System.Object, <corlib...>]]`.
 
-  - Suporte adicionado para acesso de membro de ponteiro, `p->data->member`ou seja,.
+  - Suporte adicionado para acesso de membro de ponteiro, ou seja, `p->data->member`.
 
-  - Suporte adicionado para conversões implícitas em inicializadores de matriz, ou `new byte [] {1,2,3,4}`seja,.
+  - Suporte adicionado para conversões implícitas em inicializadores de matriz, ou seja, `new byte [] {1,2,3,4}`.
 
   - Suporte adicionado para o editor hexadecimal ao inspecionar matrizes de bytes e cadeias de caracteres.
 
 ## <a name="2300"></a>2.3.0.0
 
-lançado em 13 de agosto de 2019
+Lançado em 13 de agosto de 2019
 
 ### <a name="bug-fixes"></a>Correções de bug
 
@@ -247,7 +295,7 @@ Lançado em 5 de março de 2019
 
 - **Integração:**
 
-  - A `ScriptableObject` API foi atualizada.
+  - API de `ScriptableObject` atualizada.
 
 ### <a name="bug-fixes"></a>Correções de bug
 
@@ -263,7 +311,7 @@ Lançado em 5 de março de 2019
 
 - **Geração do Projeto:**
 
-  - Campos públicos e serializados não irão mais gerar avisos. Suprimemos automaticamente os avisos de `CS0649` compilador `IDE0051` e em projetos do Unity que criaram essas mensagens.
+  - Campos públicos e serializados não irão mais gerar avisos. Suprimemos automaticamente o `CS0649` e `IDE0051` avisos do compilador em projetos do Unity que criaram essas mensagens.
 
 - **Integração:**
 
@@ -316,7 +364,7 @@ Lançado em 4 de dezembro de 2018
 
   - Substituição do NRefactory em favor do Roslyn para avaliação de expressão.
 
-  - Adicionado suporte para ponteiros: desreferenciamento, conversão e aritmética de ponteiro (tanto o Unity 2018.2+ quanto o novo tempo de execução são necessários para isso).
+  - Adicionado suporte para ponteiros: desreferenciamento, conversão e aritmética de ponteiro (tanto o Unity 2018.2+ quanto o novo runtime são necessários para isso).
 
   - Adicionado suporte para o modo de exibição de ponteiro de matriz (como no C++). Selecione uma expressão de ponteiro e acrescente uma vírgula e o número de elementos que você deseja ver.
 
@@ -386,7 +434,7 @@ Lançado em 26 de junho de 2018
 
   - Solução alternativa temporária para um bug de desempenho do Unity: armazenar em cache MonoIslands ao gerar projetos.
 
-  - Não converta mais um pdb portátil para mdb ao usar o novo tempo de execução do Unity.
+  - Não converta mais um pdb portátil para mdb ao usar o novo runtime do Unity.
 
 ## <a name="1502"></a>1.5.0.2
 

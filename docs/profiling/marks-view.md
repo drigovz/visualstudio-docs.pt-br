@@ -11,21 +11,22 @@ ms.assetid: b2773344-8081-4116-85a1-58f770448f6a
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: badb2266e47fcbf0bb20c5fd6fd2f7f25a167997
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: c9a0537e146ead1c163941a0f552bdea7a28b89c
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62830909"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74773962"
 ---
 # <a name="marks-view"></a>Exibição de marcas
 A exibição Marcas mostra os eventos de amostragem e ETW que foram inseridos no aplicativo.
 
  As marcas padrão que são pré-populadas no rótulo de relatório no início e no final do programa.
 
- Dados de contadores do Windows das marcas geradas automaticamente também são apresentadas nesta exibição. Para obter mais informações, confira [Como: Coletar dados de contadores do Windows](../profiling/how-to-collect-windows-counter-data.md).
+ Dados de contadores do Windows das marcas geradas automaticamente também são apresentadas nesta exibição. Para obter mais informações, confira [Como coletar dados de contadores do Windows](../profiling/how-to-collect-windows-counter-data.md).
 
  Para criar um filtro entre duas marcas, selecione a marca, clique com o botão direito do mouse clique em **Adicionar filtro por marcas** ou **Adicionar filtro por carimbo de data/hora**.
 
@@ -41,5 +42,5 @@ A exibição Marcas mostra os eventos de amostragem e ETW que foram inseridos no
 
 ## <a name="see-also"></a>Consulte também
 - [Visão geral do relatório de desempenho](../profiling/performance-report-overview.md)
-- [Como: Coletar dados de contadores do Windows](../profiling/how-to-collect-windows-counter-data.md)
+- [Como coletar dados do contador do Windows](../profiling/how-to-collect-windows-counter-data.md)
 - [&#91;NIB&#93; janela de controle de coleta de dados](https://msdn.microsoft.com/98d740d8-459f-4605-bf04-fb17aafaaa8f)

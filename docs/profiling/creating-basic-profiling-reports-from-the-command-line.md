@@ -6,14 +6,15 @@ ms.assetid: 6d73e21e-c04e-48ea-91cc-e517a5f2cd3f
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ac35f506aadfcceebcbcf0dd4f6ec5b6dc33107
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: cd9748d88a9398792274c386a42bdaa3ce48ba70
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62552857"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74777784"
 ---
 # <a name="create-basic-profiling-reports-from-the-command-line"></a>Criar relatórios básicos de criação de perfil por meio da linha de comando
 Este artigo descreve os comandos básicos do VSPerfReport que geram relatórios de valores separados por vírgula (.*csv*) com base em um arquivo de dados de criação de perfil .*vsp* ou .*vsps*. Para obter uma descrição de todas as opções de relatório, consulte [VSPerfReport](../profiling/vsperfreport.md).
@@ -23,14 +24,14 @@ Este artigo descreve os comandos básicos do VSPerfReport que geram relatórios 
 
  **VSPerfReport** `VSPFile` **/Summary:All** Gera todos os relatórios disponíveis para o arquivo .*vsp* ou .*vsps*.
 
- **VSPerfReport** `VSPFile` **/Summary:**`ReportType`[,`ReportType`...] Gera os tipos de relatório especificados.
+ **VSPerfReport** `VSPFile` **/Summary:** `ReportType`[,`ReportType`...] Gera os tipos de relatório especificados.
 
  **VSPerfReport** `VSPFile` **/CallTrace** Gera um relatório que lista cada evento de coleta de dados. Apenas instrumentação.
 
 ## <a name="summary-report-type-parameters"></a>Parâmetros de tipo de relatório de resumo
  A tabela a seguir descreve os relatórios são gerados pela opção de tipo de relatório especificado. As colunas de um relatório dependem do método de criação de perfil usado para coletar os dados.
 
-|Parâmetro de Resumo|Descrição do Relatório|Referência de Relatório|
+|Parâmetro de Resumo|Descrição do Relatório|Referência de relatório|
 |-----------------------|------------------------|----------------------|
 |**CallerCallee**|Representa os relacionamentos de pai/filho entre funções.|-   [Dados de amostragem](../profiling/caller-callee-view-sampling-data.md)<br />-   [Dados de instrumentação](../profiling/caller-callee-view-instrumentation-data.md)<br />-   [Dados de amostragem de memória do .NET](../profiling/caller-callee-view-dotnet-memory-sampling-data.md)<br />-   [Dados de instrumentação de memória do .NET](../profiling/caller-callee-view-net-memory-instrumentation-data.md)<br />-   [Dados de contenção](../profiling/caller-callee-view-contention-data.md)|
 |**Função**|Lista dados de criação de perfil por função.|-   [Dados de amostragem](../profiling/functions-view-sampling-data.md)<br />-   [Dados de instrumentação](../profiling/functions-view-instrumentation-data.md)<br />-   [Dados de amostragem de memória do .NET](../profiling/functions-view-dotnet-memory-sampling-data.md)<br />-   [Dados de instrumentação de memória do .NET](../profiling/functions-view-dotnet-memory-instrumentation-data.md)<br />-   [Dados de contenção](../profiling/functions-view-contention-data.md)|
@@ -39,10 +40,10 @@ Este artigo descreve os comandos básicos do VSPerfReport que geram relatórios 
 |**Ip**|Lista dados de criação de perfil por instrução.|-   [Dados de amostragem](../profiling/instruction-pointers-ips-view-sampling-data.md)<br />-   [Dados de amostragem de memória do .NET](../profiling/instruction-pointers-ips-view-dotnet-memory-sampling-data.md)<br />-   [Dados de contenção](../profiling/instruction-pointers-ips-view-contention-data.md)|
 |**Vida Útil**|Lista o tempo de vida de objetos alocados.|-   [Exibição do Tempo de Vida do Objeto](../profiling/object-lifetime-view.md)|
 |**Linha**|Lista dados de criação de perfil por linha de código-fonte.|-   [Dados de amostragem](../profiling/lines-view-sampling-data.md)<br />-   [Dados de amostragem de memória do .NET](../profiling/lines-view-dotnet-memory-sampling-data.md)<br />-   [Dados de Contenção](../profiling/lines-view-contention-data.md)|
-|**Cabeçalho**|Informações de cabeçalho do arquivo de dados de criação de perfil.|Específico ao arquivo.|
+|**Header**|Informações de cabeçalho do arquivo de dados de criação de perfil.|Específico ao arquivo.|
 |**Marca**|Marcas de criação de perfil coletadas na execução de criação de perfil.|-   [Exibição de Marcas](../profiling/marks-view.md)|
 |**Módulo**|Lista dados de criação de perfil para módulos.|-   [Dados de amostragem](../profiling/modules-view-sampling-data.md)<br />-   [Dados de instrumentação](../profiling/modules-view-instrumentation-data.md)<br />-   [Dados de amostragem de memória do .NET](../profiling/modules-view-dotnet-memory-sampling-data.md)<br />-   [Dados de Instrumentação de Memória do .NET](../profiling/modules-view-dotnet-memory-instrumentation-data.md)<br />-   [Dados de contenção](../profiling/modules-view-contention-data.md)|
-|**Processo**|Lista dados de criação de perfil para processos.|-   [Exibição do Processo](../profiling/process-view.md)<br />-   [Dados de contenção](../profiling/process-view-contention-data.md)|
+|**Process**|Lista dados de criação de perfil para processos.|-   [Exibição do Processo](../profiling/process-view.md)<br />-   [Dados de contenção](../profiling/process-view-contention-data.md)|
 |**Thread**|Lista dados de criação de perfil para threads.|-   [Exibição do Processo](../profiling/process-view.md)|
 |**Tipo**|Lista dados de criação de perfil de alocação por tipo.|-   [Exibição de Alocações](../profiling/dotnet-memory-allocations-view.md)|
 |**Contenção**|Contenções de recursos.|-   [Contenções de recursos](../profiling/resource-contentions-view-contention-data.md)|

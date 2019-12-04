@@ -1,5 +1,5 @@
 ---
-title: 'Como: Configurar redução de ruído em exibições de relatório | Microsoft Docs'
+title: Como configurar redução de ruído em exibições de relatório | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,16 +12,17 @@ ms.assetid: b07e0375-bb73-47e3-8d1d-b9b492fb16c9
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: b55587bfde894c6104d805d9aae291191d1200ae
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: ccfb9dab504bc3fa9405bb56c9fce82ed18820ac
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439153"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74776326"
 ---
-# <a name="how-to-configure-noise-reduction-in-report-views"></a>Como: Configurar a redução de ruído em exibições de relatório
+# <a name="how-to-configure-noise-reduction-in-report-views"></a>Como configurar a redução de ruído em visualizações de relatório
 Os relatórios de desempenho podem ser configurados para redução de ruído, limitando a quantidade de dados que são apresentados no modo de exibição de Árvore de Chamadas e na exibição de Alocação. Ao usar a redução de ruído, os problemas de desempenho serão mais proeminentes. Isso é útil ao analisar relatórios de desempenho.
 
  As opções de configuração de redução de ruído incluem as seguintes configurações:
@@ -78,6 +79,6 @@ Os relatórios de desempenho podem ser configurados para redução de ruído, li
 
 ## <a name="see-also"></a>Consulte também
 - [Personalizar as visualizações de relatório das ferramentas de desempenho](../profiling/customizing-performance-tools-report-views.md)
-- [Como: Excluir ou incluir funções curtas de instrumentação](../profiling/how-to-exclude-or-include-short-functions-from-instrumentation.md)
+- [Como excluir ou incluir funções curtas da instrumentação](../profiling/how-to-exclude-or-include-short-functions-from-instrumentation.md)
 - [Modo de exibição de árvore de Chamadas](../profiling/call-tree-view.md)
 - [Exibição de alocações](../profiling/dotnet-memory-allocations-view.md)

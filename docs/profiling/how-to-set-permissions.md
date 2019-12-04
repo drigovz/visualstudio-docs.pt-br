@@ -1,5 +1,5 @@
 ---
-title: 'Como: Definir permissões | Microsoft Docs'
+title: Como definir permissões | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,16 +11,17 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: e40438b6b14414371adaba6cb7eafc6377ae1187
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: c1ab7705c7ab46b07b08b707ce447f37c581036a
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62539179"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74774583"
 ---
-# <a name="how-to-set-permissions"></a>Como: Configurar permissões
+# <a name="how-to-set-permissions"></a>Como definir permissões
 
 Este artigo descreve como um Administrador de um computador concede as permissões de segurança necessárias para a criação de perfil para um usuário ou grupo que não tenha permissões de Administrador no computador.
 
@@ -69,7 +70,7 @@ Membros do grupo Usuários podem executar as ferramentas de criação de perfil 
 
 4. Clique no nome da conta do usuário na caixa **Nomes de usuário ou grupo**.
 
-5. Na caixa **Permissões para \<nome de usuário>**, marque a caixa de seleção **Controle Total**.
+5. Na caixa **Permissões para \<nome de usuário>** , marque a caixa de seleção **Controle Total**.
 
 6. Clique em **OK**.
 

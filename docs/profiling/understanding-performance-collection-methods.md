@@ -9,14 +9,15 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 018c71be69efa7b68f08cb0d320633b82be9832d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: ad451c6146593713b02901ac43423c76174d0684
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62821218"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778083"
 ---
 # <a name="understand-performance-collection-methods"></a>Entender os métodos de coleta de desempenho
 
@@ -121,7 +122,7 @@ O perfil de memória do .NET pode ser usado no modo de amostragem ou instrumenta
 
 Criação de perfil de interação de camadas adiciona informações a um arquivo de dados de criação de perfil sobre chamadas [!INCLUDE[vstecado](../data-tools/includes/vstecado_md.md)] síncronas entre uma [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] página ou em outro aplicativo e um [!INCLUDE[ssNoVersion](../data-tools/includes/ssnoversion_md.md)] banco de dados. Os dados incluem o número e a hora de chamadas e os tempos mínimos e máximos. Dados de interação de camadas podem ser adicionados para criação de perfil de dados que são coletados com a amostragem, instrumentação, memória do .NET ou métodos de simultaneidade.
 
-![Dados de perfil da interação entre camadas](../profiling/media/tierinteraction_profilingtools.png "TierInteraction_ProfilingTools")
+![Dados de perfil de interação de camada](../profiling/media/tierinteraction_profilingtools.png "TierInteraction_ProfilingTools")
 
 Dados de interação de camadas que são coletados por ferramentas de criação de perfil
 
@@ -131,5 +132,5 @@ Dados de interação de camadas que são coletados por ferramentas de criação 
 
 ## <a name="see-also"></a>Consulte também
 
-[Como: Coletar dados de desempenho para um site](../profiling/how-to-collect-performance-data-for-a-web-site.md)
-[Guia do iniciante à criação de perfil de desempenho](../profiling/beginners-guide-to-performance-profiling.md)
+[Como coletar dados de desempenho para um site](../profiling/how-to-collect-performance-data-for-a-web-site.md)
+[guia para iniciantes para criação de perfil de desempenho](../profiling/beginners-guide-to-performance-profiling.md)

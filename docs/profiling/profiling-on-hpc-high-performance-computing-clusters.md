@@ -17,20 +17,21 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 867350c1a786971a25256bbe8f60ac2bfca14a19
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: f2d3949194dedab6d7e7ea2faa1aea304d889bc4
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72910320"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74772114"
 ---
 # <a name="profile-on-hpc-high-performance-computing-clusters"></a>Criar perfil em clusters HPC (computação de alto desempenho)
 
 Você pode criar um perfil em nós de computação de clusters do Microsoft Windows HPC usando o método de amostragem das Ferramentas de Criação de Perfil do Visual Studio. Para obter mais informações sobre HPC, consulte [Windows HPC](https://azure.microsoft.com/solutions/big-compute/) no site da Microsoft.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>{1&gt;{2&gt;Pré-requisitos&lt;2}&lt;1}
 
 Para criar o perfil em um nó de computação do HPC, faça o seguinte:
 

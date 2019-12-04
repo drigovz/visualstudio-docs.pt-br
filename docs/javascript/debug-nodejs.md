@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 0405488f6f456f22711498e81789881ffc5a0a8a
-ms.sourcegitcommit: 308a2bdbea81df78bffc3a01afce4ab13131fabc
+ms.openlocfilehash: 95693261cebf26bb740861795f7faf5c56503daf
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/11/2019
-ms.locfileid: "73913002"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74777927"
 ---
 # <a name="debug-a-javascript-or-typescript-app-in-visual-studio"></a>Depurar um aplicativo JavaScript ou TypeScript no Visual Studio
 
@@ -111,7 +111,7 @@ Para anexar o depurador do Visual Studio e clicar em pontos de interrupção no 
 
     Para localizar o código específico em um arquivo transcompilado, use **Ctrl**+**F** (**editar** > **Localizar e substituir** > **localização rápida**).
 
-    Para o código do lado do cliente, para atingir um ponto de interrupção em um arquivo TypeScript ou JSX, o arquivo geralmente requer o uso de [mapas de origem](#generate_source_maps). Um mapa de origem deve ser configurado corretamente para dar suporte à depuração no Visual Studio.
+    Para o código do lado do cliente, para atingir um ponto de interrupção em um arquivo TypeScript, *. Vue*ou JSX normalmente requer o uso de [mapas de origem](#generate_source_maps). Um mapa de origem deve ser configurado corretamente para dar suporte à depuração no Visual Studio.
 
 2. Selecione o navegador de destino como o destino de depuração no Visual Studio e pressione **Ctrl**+**F5** (**depurar** > **Iniciar sem depuração**) para executar o aplicativo no navegador.
 
@@ -127,7 +127,6 @@ Para anexar o depurador do Visual Studio e clicar em pontos de interrupção no 
     > A partir do Visual Studio 2017, depois de anexar ao processo pela primeira vez seguindo estas etapas, você pode reanexar rapidamente ao mesmo processo escolhendo **Debug** > **reanexar para processar**.
 
 4. Na caixa de diálogo **anexar ao processo** , obtenha uma lista filtrada de instâncias do navegador às quais você pode anexar.
-
     ::: moniker range=">=vs-2019"
     No Visual Studio 2019, escolha o depurador correto para seu navegador de destino, **JavaScript (Chrome)** ou **JavaScript (Microsoft Edge-Chromium)** no campo **anexar a** , digite **Chrome** ou **Edge** na caixa de filtro para filtrar o resultados da pesquisa.
     ::: moniker-end

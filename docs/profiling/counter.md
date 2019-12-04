@@ -6,14 +6,15 @@ ms.assetid: aa4b4cdb-e6ea-433a-9579-56f3785e1385
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: e21e364d05641089fb7400fbbfa9873510037d62
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 9e2f1684257ed39560fa0ea049d3296a6e45cdd7
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62553078"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779474"
 ---
 # <a name="counter"></a>Contador
 A opção **Counter** coleta dados de contadores de desempenho do processador (hardware).
@@ -46,9 +47,9 @@ VSPerfCmd.exe /Start:Method /Counter:Name[,Reload[,FriendlyName]][/Counter:Name[
 
  **Iniciar:** `Trace` Inicializa o criador de perfil para usar o método de instrumentação.
 
- **Iniciar:** `AppName` Inicia o aplicativo e o criador de perfil especificados. O criador de perfil deve ser inicializado para usar o método de amostragem.
+ **Iniciar:** `AppName` inicia o aplicativo especificado e o criador de perfil. O criador de perfil deve ser inicializado para usar o método de amostragem.
 
- **Anexar:** `PID` Inicia o criador de perfil e anexa-o ao processo especificado pelo identificador do processo. O criador de perfil deve ser inicializado para usar o método de amostragem.
+ **Anexar:** `PID` inicia o criador de perfil e anexa-o ao processo especificado pela ID do processo. O criador de perfil deve ser inicializado para usar o método de amostragem.
 
 ## <a name="example"></a>Exemplo
  A amostra de método de amostragem demonstra como realizar a amostragem de um aplicativo a cada 1.000 ocorrências de NonHaltedCycles do contador genérico do criador de perfil.

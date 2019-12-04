@@ -13,21 +13,22 @@ ms.assetid: 513c6174-071d-48a4-9e25-04debbb63e5c
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 2dc3721c00816d7cab9af3a4c14e427f4218d15d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 7f066d6c9476f0a44a23e59ff2b715a6df9975ba
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62969674"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779188"
 ---
 # <a name="functions-view"></a>Exibição de funções
 A exibição Funções lista as funções que são chamadas durante a criação do perfil.
 
  Por padrão, as funções são listadas por nome. Para exibir as funções por módulo, clique com o botão direito do mouse na janela da exibição Funções e selecione **Mostrar na Exibição de Módulo**. A exibição Módulo será mostrada.
 
- Para adicionar ou remover colunas, clique com o botão direito do mouse na janela do relatório e, em seguida, selecione **Adicionar/Remover Colunas**. Ou clique no nome da coluna para classificar os dados. Para obter mais informações, confira [Como: Personalizar as colunas da exibição de relatório](../profiling/how-to-customize-report-view-columns.md).
+ Para adicionar ou remover colunas, clique com o botão direito do mouse na janela do relatório e, em seguida, selecione **Adicionar/Remover Colunas**. Além disso, você pode classificar os dados clicando em um nome de coluna. Para saber mais, confira [Como personalizar colunas de exibição de relatório](../profiling/how-to-customize-report-view-columns.md).
 
  As colunas que estão disponíveis na exibição Funções dependem do método de criação de perfil (amostragem ou instrumentação) usado para coletar os dados e se os dados de memória .NET foram coletados na execução da criação de perfil.
 

@@ -6,14 +6,15 @@ ms.assetid: 20c35949-1f29-4282-ac75-4e6c237d71bc
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 036b13a7fea5d64e23e2b7d5ccbd8a7b17f91176
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 3b6d01a95b7e0872d6bb36c6d9f3917bc6a05b3b
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62777044"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779812"
 ---
 # <a name="args"></a>Args
 A opção **Args** de VSPerfCmd.exe especifica uma lista de argumentos passados para o aplicativo de destino do subcomando **Launch**.
@@ -30,7 +31,7 @@ VSPerfCmd.exe /Launch:AppName /Args:Arguments [Options]
  `Arguments` Uma lista de argumentos para o aplicativo de destino do comando **Iniciar**.
 
 ## <a name="required-options"></a>Opções obrigatórias
- **Iniciar:** `AppName` Inicia o aplicativo especificado e inicia a criação de perfil com o método de amostragem.
+ **Iniciar:** `AppName` inicia o aplicativo especificado e começa a criação de perfil com o método de amostragem.
 
 ## <a name="example"></a>Exemplo
  O exemplo a seguir usa a opção **Args** para passar argumentos para TestApp.exe.

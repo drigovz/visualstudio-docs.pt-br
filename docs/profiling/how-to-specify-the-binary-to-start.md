@@ -1,5 +1,5 @@
 ---
-title: 'Como: Especificar o binário para iniciar | Microsoft Docs'
+title: Como especificar o binário para iniciar | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -11,16 +11,17 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: a03bf203e5078bdbdf6327ec7bda186613a25c03
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: fd3379b9769cfd6bfe1335b12545e635a9bde782
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62996135"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778681"
 ---
-# <a name="how-to-specify-the-binary-to-start"></a>Como: Especificar o binário a ser iniciado
+# <a name="how-to-specify-the-binary-to-start"></a>Como especificar o binário a ser iniciado
 
 Para analisar binários, como DLLs, você deve inserir informações na caixa de diálogo **\<Destino> Páginas de Propriedade**. Essa informação indica onde o projeto DLL pode localizar o aplicativo de chamada.
 

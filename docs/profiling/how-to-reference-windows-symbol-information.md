@@ -1,5 +1,5 @@
 ---
-title: 'Como: Fazer referência a informações de símbolo do Windows | Microsoft Docs'
+title: Como fazer referência a informações de símbolo do Windows | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,16 +11,17 @@ ms.assetid: b7c67318-6be2-4b1e-a161-077b1f4a7c30
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 91b5c90b2451780458982ba73a0e04672fa2e507
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 28bbd4b584d679c03c58ba8532ced3f28f16d6aa
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63422845"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74774907"
 ---
-# <a name="how-to-reference-windows-symbol-information"></a>Como: Referenciar informações de símbolo do Windows
+# <a name="how-to-reference-windows-symbol-information"></a>Como referenciar informações de símbolo do Windows
 As Ferramentas de Criação de Perfil do Visual Studio usam arquivos de símbolo (.*pdb*) para resolver nomes simbólicos como nomes de função em binários de programa. Siga estas etapas para baixar automaticamente e atualizar os arquivos .*pdb* corretos para a versão do Windows no computador local.
 
 > [!NOTE]
@@ -38,14 +39,14 @@ As Ferramentas de Criação de Perfil do Visual Studio usam arquivos de símbolo
 
 3. Expanda a árvore **Depuração** e, em seguida, clique em **Símbolos**.
 
-4. Em **Locais do arquivo de símbolo (.pdb)**, selecione **Servidores de Símbolos da Microsoft**
+4. Em **Locais do arquivo de símbolo (.pdb)** , selecione **Servidores de Símbolos da Microsoft**
 
 5. Em **Armazenar em cache os símbolos do servidor de símbolos para este diretório**, digite o caminho da pasta que foi criada na etapa 1, por exemplo:
 
      **C:\SymbolCache**
 
-     Você também pode clicar no botão de reticências (**...** ) e, em seguida, selecionar um diretório na caixa de diálogo **Procurar Pasta**.
+     Você também pode clicar no botão de reticências ( **...** ) e, em seguida, selecionar um diretório na caixa de diálogo **Procurar Pasta**.
 
 ## <a name="see-also"></a>Consulte também
 - [Configurar sessões de desempenho](../profiling/configuring-performance-sessions.md)
-- [Como: Serializar informações de símbolo](../profiling/how-to-serialize-symbol-information.md)
+- [Como serializar informações de símbolo](../profiling/how-to-serialize-symbol-information.md)

@@ -6,14 +6,15 @@ ms.assetid: 76082063-20ef-47ae-ad64-81b43b654865
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: b4de8aa278adab0127f3a39d9adcf105f906e152
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: ac671c3b0ba40c462403b2afa850c3936156d6d2
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62995337"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74774120"
 ---
 # <a name="lineoff"></a>LineOff
 Por padrão, o criador de perfil coleta os números de linha do código-fonte e dos dados de deslocamento quando o método de criação de perfil de amostragem estiver sendo usado. A opção **LineOff** do VSPerfCmd desabilita a coleta de dados de número de linha quando o VSPerfCmd é usado para iniciar o aplicativo. Quando o **LineOff** for especificado, os dados de criação de perfil serão coletados para o nível de função.
@@ -27,12 +28,12 @@ VSPerfCmd.exe /Launch:AppName /LineOff [Options]
 ```
 
 #### <a name="parameters"></a>Parâmetros
- Nenhum
+ {1&gt;Nenhum&lt;1}
 
 ## <a name="required-options"></a>Opções obrigatórias
  A opção **LineOff** pode ser usada apenas em uma linha de comando que contenha a opção **Inicializar**.
 
- **Iniciar:** `AppName` Inicia o aplicativo especificado e inicia a criação de perfil com o método de amostragem.
+ **Iniciar:** `AppName` inicia o aplicativo especificado e começa a criação de perfil com o método de amostragem.
 
 ## <a name="example"></a>Exemplo
  Esse exemplo inicia o aplicativo e o criador de perfil e desabilita a amostragem de nível de linha.

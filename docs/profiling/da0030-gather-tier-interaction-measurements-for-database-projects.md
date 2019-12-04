@@ -1,5 +1,5 @@
 ---
-title: 'DA0030: Coletar medições de interação de camada para projetos de banco de dados | Microsoft Docs'
+title: 'DA0030: coletar medições de interação de camada para projetos de banco de dados | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,24 +10,25 @@ ms.assetid: 42b2f69d-0cfa-4854-82c4-589c3d8b4557
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 12a554eae05d02dda57fe29b2c627f261ba10b89
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 26b0905882ef8ec2e3fcddc4cf699ecae7dbe7a4
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62936008"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74777470"
 ---
-# <a name="da0030-gather-tier-interaction-measurements-for-database-projects"></a>DA0030: Coletar medidas de interação de camadas para projetos de banco de dados
+# <a name="da0030-gather-tier-interaction-measurements-for-database-projects"></a>DA0030: coletar medidas de interação de camada para projetos de banco de dados
 
 |||
 |-|-|
-|ID de regra|DA0030|
+|Id da Regra|DA0030|
 |Categoria|Uso das ferramentas de criação de perfil|
 |Método de criação de perfil|Amostragem|
 |Mensagem|A coleta de medições de interação para aplicativos de várias camadas ajuda você a entender os padrões de uso do banco de dados e atrasos de acesso a dados de chave. Tente criar o perfil do aplicativo novamente com a opção Criação de Perfil de Interação de Camada habilitada.|
-|Tipo de regra|Informações|
+|Tipo de regra|Informações do|
 
 ## <a name="cause"></a>Causa
  Chamadas a métodos <xref:System.Data> são uma proporção significativa dos dados de criação de perfil e não foram coletados dados de interação de camada na execução de criação de perfil. Considere a criação de perfil novamente e a adição de dados de interação de camada.

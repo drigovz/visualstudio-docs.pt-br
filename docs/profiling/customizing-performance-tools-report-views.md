@@ -9,14 +9,15 @@ ms.assetid: 5224ac52-0fc2-4269-8eb2-ead7fda3afd4
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: de8eb3b0e56351e9da0af799db40a29721df5df6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 9479c0dc2af592271bc7f21db1cec0c71cc7e71d
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62552821"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74777758"
 ---
 # <a name="customize-performance-tools-report-views"></a>Personalizar exibições de relatório das ferramentas de desempenho
 Esta seção aborda como personalizar relatórios gerados com as Ferramentas de Criação de Perfil do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
@@ -25,9 +26,9 @@ Esta seção aborda como personalizar relatórios gerados com as Ferramentas de 
 
 |Tarefa|Conteúdo relacionado|
 |----------|---------------------|
-|**Adicionar, remover e classificar colunas em uma exibição de relatório:** É possível especificar as colunas que você deseja exibir em exibições baseada em tabela, bem como especificar a ordem na qual as colunas são exibidas. Também é possível classificar as linhas da tabela de relatório pelos valores da coluna.|-   [Como: Personalizar as colunas da exibição de relatório](../profiling/how-to-customize-report-view-columns.md)|
-|**Elimine funções pequenas do relatório:** É possível eliminar dos relatórios as funções que são menores do que o limite especificado.|-   [Como: Configurar a redução de ruído em exibições de relatório](../profiling/how-to-configure-noise-reduction-in-report-views.md)|
-|**Filtrar a data em uma exibição de relatório**: É possível limitar os dados exibidos em um relatório para um segmento de tempo da execução de criação de perfil. É possível especificar um segmento de tempo no gráfico de linha do tempo da Exibição de Resumo ou especificar o segmento de tempo em uma consulta definida no filtro de exibição de relatório. Também é possível filtrar os relatórios para mostrar apenas as funções definidas nos arquivos do código.|-   [Filtrar exibições de relatório](../profiling/filtering-report-views.md)<br />-   [Como: Filtrar as exibições de relatório da linha do tempo resumida](../profiling/how-to-filter-report-views-from-the-summary-timeline.md)<br />-   [Como: Filtrar exibições de relatório das Ferramentas de Criação de Perfil para exibir Apenas Meu Código](../profiling/how-to-filter-profiling-tools-report-views-to-display-just-my-code.md)<br />-   [Filtro de exibição de relatório de desempenho](../profiling/performance-report-view-filter.md)|
+|**Adicionar, remover e classificar colunas em uma exibição de relatório:** é possível especificar as colunas que você deseja exibir em exibições baseada em tabela, bem como especificar a ordem na qual as colunas são exibidas. Também é possível classificar as linhas da tabela de relatório pelos valores da coluna.|-   [Como personalizar as colunas de visualização de relatório](../profiling/how-to-customize-report-view-columns.md)|
+|**Eliminar funções pequenas do relatório:** é possível eliminar dos relatórios as funções que são menores do que o limite especificado.|-   [Como configurar a redução de ruído em exibições de relatório](../profiling/how-to-configure-noise-reduction-in-report-views.md)|
+|**Filtrar a data em uma exibição de relatório**: é possível limitar os dados exibidos em um relatório para um segmento de tempo da execução de criação de perfil. É possível especificar um segmento de tempo no gráfico de linha do tempo da Exibição de Resumo ou especificar o segmento de tempo em uma consulta definida no filtro de exibição de relatório. Também é possível filtrar os relatórios para mostrar apenas as funções definidas nos arquivos do código.|-   [Filtrar exibições de relatório](../profiling/filtering-report-views.md)<br />-   [Como filtrar exibições de relatório por meio da linha do tempo de resumo](../profiling/how-to-filter-report-views-from-the-summary-timeline.md)<br />-   [Como filtrar exibições de relatório das ferramentas de criação de perfil para exibir Apenas Meu Código](../profiling/how-to-filter-profiling-tools-report-views-to-display-just-my-code.md)<br />-   [Filtro de exibição de relatório de desempenho](../profiling/performance-report-view-filter.md)|
 
 ## <a name="related-sections"></a>Seções relacionadas
 - [Exibições do relatório de desempenho](../profiling/performance-report-views.md) Descreve as exibições que podem ser usadas para analisar os dados de criação de perfil.
