@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/29/2019
 ms.topic: conceptual
 description: Saiba como ativar o benefício de crédito individual do Azure DevTest incluído na sua assinatura do Visual Studio.
-ms.openlocfilehash: 25bb97675c65244258c217901a010ab2211554d0
-ms.sourcegitcommit: 3a19319e2599bd193fb2ca32020ca53942974bfd
+ms.openlocfilehash: 789548f50f7d631f3db190ce5e2638858e8c4707
+ms.sourcegitcommit: c222052906362bf1a3762ec4d4623170e4e06702
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "73983763"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "74810047"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Usar o Microsoft Azure nas assinaturas do Visual Studio
 Como assinante do Visual Studio, você pode usar o Microsoft Azure sem custo adicional.  Com o [crédito individual do Azure DevTest mensal](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/), o Azure é sua área restrita pessoal para desenvolvimento/teste.  Você pode provisionar máquinas virtuais, serviços de nuvem e outros recursos do Azure.  Os valores de crédito variam de acordo com o nível da assinatura.
@@ -38,8 +38,8 @@ Como assinante do Visual Studio, você pode usar o Microsoft Azure sem custo adi
 6. Marque o [Portal do Azure](https://portal.azure.com) para facilitar os próximos acessos.
 
 
-## <a name="eligibility"></a>Qualificação
-|                 Nível de Assinatura/Programa                 |           Benefício           |                         Renovável?                          |
+## <a name="eligibility"></a>Elegibilidade
+|                 Nível de Assinatura/Programa                 |           Benefícios do           |                         Renovável?                          |
 |--------------------------------------------------------------|-----------------------------|-------------------------------------------------------------|
 |              Visual Studio Enterprise Standard               |     Crédito mensal de US$150     |                             Sim                             |
 |              Visual Studio Enterprise com GitHub Enterprise               |     Crédito mensal de US$150     |                             Sim                             |
@@ -75,6 +75,9 @@ R: O envio de um incidente de suporte do Portal do Azure é um processo de três
 
 Visite a documentação do [Suporte Técnico](vs-tech-support.md) para encontrar os detalhes completos.
 
+### <a name="q-how-owns-the-intellectual-property-i-create-using-my-azure-devtest-individual-credit"></a>P: como é proprietário da propriedade intelectual que crio usando meu crédito individual do Azure DevTest?
+R: a propriedade intelectual produzida por um funcionário criado nos recursos fornecidos pela empresa é, portanto, a propriedade intelectual da empresa que fornece o recurso. Portanto, se você recebeu sua assinatura do Visual Studio por meio de seu empregador, suas políticas de propriedade intelectual seriam aplicáveis. 
+
 ### <a name="q-ive-received-a-message-stating-that-my-access-to-azure-will-end-soon--what-can-i-do-to-continue-using-azure"></a>P: Recebi uma mensagem informando que meu acesso ao Azure vai expirar em breve.  O que posso fazer para continuar usando o Azure?
 R: Você está recebendo este email porque usa o benefício do Azure associado à sua assinatura do Visual Studio, e essa assinatura expirou ou foi removida.  Para continuar a usar o Azure, você tem várias opções:
 
@@ -107,7 +110,7 @@ Se você acha que recebeu este email por engano, contate o [atendimento ao clien
 - Para obter assistência com vendas, assinaturas, contas e cobrança para Assinaturas do Visual Studio, entre em contato com o [Suporte a Assinaturas](https://visualstudio.microsoft.com/subscriptions/support/) do Visual Studio.
 - Tem alguma pergunta sobre o IDE do Visual Studio, o Azure DevOps Services ou outros produtos ou serviços do Visual Studio?  Acesse o [Suporte do Visual Studio](https://visualstudio.microsoft.com/support/).
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
 Para obter mais informações sobre ferramentas e serviços da Microsoft, confira a documentação do:
 - [Azure](/azure/)
 - [Azure DevOps](/azure/devops/)

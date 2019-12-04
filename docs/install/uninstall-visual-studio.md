@@ -16,12 +16,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 9e9212bc5dda2ea69f685077eb2cbe86470d4064
-ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
-ms.translationtype: HT
+ms.openlocfilehash: d15a20adeb3203687e4d940635551c33774953a5
+ms.sourcegitcommit: c222052906362bf1a3762ec4d4623170e4e06702
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68681359"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "74809669"
 ---
 # <a name="uninstall-visual-studio"></a>Desinstalar o Visual Studio
 
@@ -36,7 +36,7 @@ Esta página guia você pela desinstalação do Visual Studio, nosso pacote inte
 
      Por exemplo, em um computador que executa a Atualização de Aniversário do Windows 10 ou posterior, selecione **Iniciar** e role até a letra **V**, onde ele estará listado como **Instalador do Visual Studio**.
 
-     ![Instalador do Visual Studio](media/vs2017-locate-the-visual-studio-installer.PNG "Localizar o Instalador do Microsoft Visual Studio")
+     ![Instalador do Visual Studio](media/locate-the-visual-studio-installer.png "Localize o instalador do Microsoft Visual Studio")
 
    > [!NOTE]
    > Em alguns computadores, o Instalador do Visual Studio poderá estar listado sob a letra **“M”** como **Instalador do Microsoft Visual Studio**.<br/><br/> Como alternativa, encontre o Instalador do Visual Studio no seguinte local: `C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe`
@@ -82,7 +82,7 @@ Para remover completamente todas as instalações do Visual Studio 2017 e o Inst
 
 1. Clique em **OK** para confirmar sua escolha.
 
-     ![Confirmação de desinstalação do Visual Studio](media/vs-2019/uninstall-visualstudio-confirm.png "Confirme que você deseja desinstalar o Visual Studio 2019")
+     ![Desinstalar a confirmação do Visual Studio](media/vs-2019/uninstall-visualstudio-confirm.png "Confirme que você deseja desinstalar o Visual Studio 2019")
 
 Se você mudar de ideia posteriormente e quiser reinstalar o Visual Studio 2019, inicie novamente o Instalador do Visual Studio, escolha a guia **Disponível**, escolha a edição do Visual Studio que você deseja instalar e, em seguida, selecione **Instalar**.
 
