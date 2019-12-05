@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: eb4282941af9dff8619cb15510399b2e37e0c718
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.openlocfilehash: 975b9ca88a775e08b97cccf1d1580a96ac4d9d65
+ms.sourcegitcommit: c222052906362bf1a3762ec4d4623170e4e06702
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74777901"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "74810116"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Novidades no Visual Studio 2019
 
@@ -198,7 +198,7 @@ Para saber mais, confira a página [Depurar aplicativos ASP.NET dinâmicos usand
 
 ### <a name="pinnable-properties-tool"></a>Ferramenta de propriedades fixas
 
-**Novidade no 16,4**: agora, é mais fácil identificar objetos por suas propriedades durante a depuração com a nova ferramenta fixas Properties. Basta focalizar o cursor sobre uma propriedade que você deseja exibir na janela do depurador das janelas inspeção, automáticos e locais, clicar no ícone fixar e ver imediatamente as informações que você está procurando na parte superior da janela!
+**Novidade no 16,4**: agora, é mais fácil identificar objetos por suas propriedades durante a depuração com a nova ferramenta fixas Properties. Basta focalizar o cursor sobre uma propriedade que você deseja exibir na janela do depurador das janelas inspeção, automáticos e locais, selecionar o ícone de pino e ver imediatamente as informações que você está procurando na parte superior da janela!
 
    ![Uma animação que mostra como fixar Propriedades no depurador do Visual Studio usando a ferramenta de propriedades fixas](media/vs-2019/debugger-pinnable-properties.gif)
 
