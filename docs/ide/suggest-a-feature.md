@@ -8,14 +8,14 @@ ms.author: seiyer
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4da08c2a7fed28b7f4ca75770682673bf58e30c3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 3af6d0b7b9f211fb9d0aa0a4b9a96b618081b89e
+ms.sourcegitcommit: 2148f3fd69569d8ec54fd21a66370932ce610ce4
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62951081"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74853510"
 ---
-# <a name="overview-suggest-a-feature"></a>Visão geral: Sugerir uma funcionalidade
+# <a name="suggest-a-feature-for-visual-studio"></a>Sugerir uma funcionalidade para o Visual Studio
 
 Introduzimos uma nova experiência para envio de sugestão de funcionalidades, juntamente com a capacidade atual de relatar problemas na [Comunidade de Desenvolvedores do Visual Studio](https://developercommunity.visualstudio.com). Essa é uma nova maneira de ter mais autonomia para interagir diretamente com o fluxo de trabalho de engenharia do Visual Studio.
 

@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial: Depurar o código do Visual Basic'
+title: 'Tutorial: Depurar Visual Basic código'
 description: Saiba como iniciar o depurador do Visual Studio, executar o código em etapas e inspecionar os dados.
 ms.custom: debug-experiment, seodec18, get-started
 ms.date: 11/27/2018
@@ -15,14 +15,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e7ddccf321259ff8f4de2522404fdc42617a810
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
-ms.translationtype: HT
+ms.openlocfilehash: 9b38089a088186a30ebd13cae68d19ac23235bf9
+ms.sourcegitcommit: 697f2ab875fd789685811687387e9e8e471a38c4
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70180190"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74829979"
 ---
-# <a name="tutorial-learn-to-debug-visual-basic-code-using-visual-studio"></a>Tutorial: Aprenda a depurar o código do Visual Basic usando o Visual Studio
+# <a name="tutorial-learn-to-debug-visual-basic-code-using-visual-studio"></a>Tutorial: aprenda a depurar código do Visual Basic usando o Visual Studio
 
 Este artigo apresenta os recursos do depurador do Visual Studio passo a passo. Caso deseje obter uma exibição de nível superior das funcionalidades do depurador, confira [Introdução ao depurador](../../debugger/debugger-feature-tour.md). Quando você *depura seu aplicativo*, isso normalmente significa executar o aplicativo com o depurador anexado. Quando você faz isso, o depurador fornece várias maneiras de mostrar o que o código está fazendo enquanto é executado. Você pode percorrer o código e examinar os valores armazenados em variáveis, definir inspeções em variáveis para ver quando os valores mudam, examinar o caminho de execução do código, ver se um branch de código está em execução e assim por diante. Se esta for sua primeira tentativa de depurar um código, leia [Como depurar para iniciantes absolutos](../../debugger/debugging-absolute-beginners.md) antes continuar neste artigo.
 
@@ -34,7 +34,7 @@ Neste tutorial, você irá:
 > * Inspecionar variáveis em dicas de dados e janelas do depurador
 > * Examinar a pilha de chamadas
 
-## <a name="prerequisites"></a>Pré-requisitos
+## <a name="prerequisites"></a>{1&gt;{2&gt;Pré-requisitos&lt;2}&lt;1}
 
 ::: moniker range=">=vs-2019"
 
@@ -63,10 +63,10 @@ Caso precise instalar a carga de trabalho, mas já tiver o Visual Studio, acesse
 
 ## <a name="create-a-project"></a>Criar um projeto
 
-1. Abra o Visual Studio.
+1. {1&gt;Abra o Visual Studio.&lt;1}
 
     ::: moniker range=">=vs-2019"
-    Pressione **Esc** para fechar a janela de início. Digite **Ctrl + Q** para abrir a caixa de pesquisa, digite **visual basic**, escolha **Modelos** e, em seguida, escolha **Criar novo projeto de Aplicativo de Console (.NET Framework)** . Na caixa de diálogo que aparece, digite um nome como **iniciar-depuração** e, em seguida, escolha **Criar**.
+    Pressione **Esc** para fechar a janela de início. Digite **Ctrl + Q** para abrir a caixa de pesquisa, digite **Visual Basic**, escolha **modelos**e, em seguida, escolha **criar novo projeto de aplicativo de console (.NET Core)** ou **crie um novo projeto de aplicativo de console (.NET Framework)** . Na caixa de diálogo que aparece, digite um nome como **iniciar-depuração** e, em seguida, escolha **Criar**.
     ::: moniker-end
     ::: moniker range="vs-2017"
     Na barra de menus superior, escolha **Arquivo** > **Novo** > **Projeto**. No painel esquerdo da caixa de diálogo **Novo projeto**, em **Visual Basic**, escolha **Área de Trabalho do Windows** e, em seguida, no painel central, escolha **Aplicativo de Console (.NET Framework)** . Em seguida, digite um nome como **get-started-debugging** e clique em **OK**.
@@ -76,7 +76,7 @@ Caso precise instalar a carga de trabalho, mas já tiver o Visual Studio, acesse
 
     O Visual Studio cria o projeto.
 
-1. Em *Module1.vb*, substitua o código a seguir
+1. No *Module1. vb*, substitua todo o código padrão
 
     ```vb
     Module Module1
@@ -197,7 +197,7 @@ Caso precise instalar a carga de trabalho, mas já tiver o Visual Studio, acesse
 
 ## <a name="start-the-debugger"></a>Inicie o depurador.
 
-1. Pressione **F5** (**Depurar > Iniciar Depuração**) ou o botão **Iniciar Depuração** ![Iniciar Depuração](../../debugger/media/dbg-tour-start-debugging.png "Iniciar Depuração") na barra de ferramentas Depurar.
+1. Pressione **F5** (**Debug > Iniciar Depuração**) ou o botão **Iniciar Depuração** ![Iniciar Depuração](../../debugger/media/dbg-tour-start-debugging.png "Iniciar a depuração") na barra de ferramentas Depurar.
 
      **F5** inicia o aplicativo com o depurador anexado ao processo do aplicativo, mas nós ainda não fizemos nada de especial para examinar o código. Portanto, o aplicativo apenas é carregado e a saída do console é exibida.
 
@@ -212,7 +212,7 @@ Caso precise instalar a carga de trabalho, mas já tiver o Visual Studio, acesse
 
      Neste tutorial, vamos analisar melhor esse aplicativo usando o depurador e analisar os recursos do depurador.
 
-2. Pare o depurador pressionando o botão de parada vermelho ![Parar Depuração](../../debugger/media/dbg-tour-stop-debugging.png "Parar Depuração").
+2. Pare o depurador pressionando o botão vermelho parar ![parar depuração](../../debugger/media/dbg-tour-stop-debugging.png "Parar a depuração") .
 
 ## <a name="set-a-breakpoint-and-start-the-debugger"></a>Definir um ponto de interrupção e iniciar o depurador
 
@@ -226,7 +226,7 @@ Caso precise instalar a carga de trabalho, mas já tiver o Visual Studio, acesse
 
     Pontos de interrupção são o recurso mais básico e essencial da depuração confiável. Um ponto de interrupção indica quando o Visual Studio deve suspender o código em execução para que você possa examinar os valores das variáveis ou o comportamento de memória ou se uma ramificação de código está sendo executada ou não.
 
-2. Pressione **F5** ou o botão **Iniciar Depuração** ![Iniciar Depuração](../../debugger/media/dbg-tour-start-debugging.png "Iniciar Depuração"). O aplicativo será iniciado e o depurador executará a linha de código em que você definiu o ponto de interrupção.
+2. Pressione **F5** ou o botão **Iniciar Depuração** ![inicie a depuração](../../debugger/media/dbg-tour-start-debugging.png "Iniciar a depuração"), o aplicativo é iniciado e o depurador é executado na linha de código em que você define o ponto de interrupção.
 
     ![Atingir um ponto de interrupção](../visual-basic/media/get-started-hit-breakpoint-vb.png)
 
@@ -242,30 +242,30 @@ Geralmente, usamos atalhos de teclado aqui porque essa é uma boa maneira de exe
 
 1. Enquanto estiver em pausa na chamada de método `shape.Draw` na função `Main`, pressione **F11** (ou escolha **Depurar > Intervir**) para avançar no código até a classe `Rectangle`.
 
-     ![Usar F11 para intervir no código](../visual-basic/media/get-started-f11-vb.png "F11 Intervir")
+     ![Use F11 para entrar no código](../visual-basic/media/get-started-f11-vb.png "Depuração de F11 em")
 
-     F11 é o comando **Intervir**, que avança a execução do aplicativo uma instrução por vez. F11 é uma boa maneira de examinar o fluxo de execução com o máximo de detalhes. (Também vamos mostrar algumas outras opções para percorrer o código com mais rapidez.) Por padrão, o depurador ignora as partes do código que não são do usuário (se quiser saber mais detalhes, confira [Apenas Meu Código](../../debugger/just-my-code.md)).
+     F11 é o comando **Intervir**, que avança a execução do aplicativo uma instrução por vez. F11 é uma boa maneira de examinar o fluxo de execução com o máximo de detalhes. (Para mover-se mais rapidamente pelo código, mostraremos algumas outras opções também.) Por padrão, o depurador ignora o código que não é do usuário (se você quiser obter mais detalhes, consulte [apenas meu código](../../debugger/just-my-code.md)).
 
 2. Pressione **F10** (ou escolha **Depurar > Depuração Parcial**) algumas vezes até que o depurador pare na chamada de método `MyBase.Draw`. Em seguida, pressione **F10** mais uma vez.
 
-     ![Usar F10 para Depuração Parcial do código](../visual-basic/media/get-started-step-over-vb.png "F10 Depuração Parcial")
+     ![Use F10 para percorrer o código](../visual-basic/media/get-started-step-over-vb.png "Passo F10")
 
      Observe neste momento que o depurador não intervém no método `Draw` da classe base (`Shape`). **F10** avança o depurador sem intervir em funções ou métodos no código do aplicativo (o código ainda é executado). Pressionando **F10** na chamada do método `MyBase.Draw` (em vez de **F11**), ignoramos o código de implementação de `MyBase.Draw` (que, no momento, talvez não seja de nosso interesse).
 
 ## <a name="navigate-code-using-run-to-click"></a>Navegar usando Executar até o Clique
 
-1. No editor de códigos, role para baixo e passe o mouse sobre o método `Console.WriteLine` na classe `Triangle` até que o botão verde **Executar até o Clique** ![Executar até o Clique](../../debugger/media/dbg-tour-run-to-click.png "RunToClick") apareça à esquerda. A dica de ferramenta para o botão mostra "Realizar a execução até aqui".
+1. No editor de código, role para baixo e passe o mouse sobre o método `Console.WriteLine` na classe `Triangle` até que a **execução verde clique** no botão ![Executar para clicar à](../../debugger/media/dbg-tour-run-to-click.png "RunToClick") esquerda. A dica de ferramenta para o botão mostra "Realizar a execução até aqui".
 
-     ![Usar o recurso Executar até o Clique](../visual-basic/media/get-started-run-to-click-vb.png "Executar até o Clique")
+     ![Usar o recurso executar para clicar](../visual-basic/media/get-started-run-to-click-vb.png "Executar com um Clique")
 
    > [!NOTE]
    > O botão **Executar até o Clique** é novo no [!include[vs_dev15](../../misc/includes/vs_dev15_md.md)]. Se o botão de seta verde não for exibido, use **F11**, neste exemplo, para avançar o depurador até o lugar certo.
 
-2. Clique no botão **Executar até o Clique** ![Executar até o Clique](../../debugger/media/dbg-tour-run-to-click.png "RunToClick").
+2. Clique no botão **Executar para clicar** em ![Executar para clicar em](../../debugger/media/dbg-tour-run-to-click.png "RunToClick").
 
     O uso desse botão é semelhante à configuração de um ponto de interrupção temporário. **Executar até o Clique** é útil para abranger rapidamente uma região visível do código do aplicativo (você pode clicar em qualquer arquivo aberto).
 
-    O depurador avança para a implementação do método `Console.WriteLine` da classe `Triangle`.
+    O depurador avança para a implementação do método `Console.WriteLine` da classe `Triangle`. (Se o depurador pausar primeiro no ponto de interrupção que você definiu anteriormente, use **Executar para clicar** novamente para avançar o depurador até `Console.WriteLine`.)
 
     Durante a pausa, você poderá observar um erro de digitação! A saída "Drawing a trangle" contém um erro de digitação. Podemos corrigir isso aqui mesmo enquanto o aplicativo é executado no depurador.
 
@@ -286,11 +286,11 @@ Digamos que você termine de examinar o método `Draw` na classe `Triangle` e qu
 
      Este comando retoma a execução do aplicativo (e avança o depurador) até que a função atual retorne.
 
-     Você deve ter voltado ao loop `For Each` no método `Main`.
+     Você deve ter voltado ao loop `For Each` no método `Main`. Caso contrário, pressione **Shift** + **F11** uma segunda vez.
 
 ## <a name="restart-your-app-quickly"></a>Reinicie o aplicativo rapidamente
 
-Clique no botão **Reiniciar** ![Reiniciar Aplicativo](../../debugger/media/dbg-tour-restart.png "RestartApp") na barra de ferramentas Depurar (**Ctrl** + **Shift** + **F5**).
+Clique no botão **reiniciar** ![aplicativo de reinicialização](../../debugger/media/dbg-tour-restart.png "RestartApp") na barra de ferramentas depurar (**Ctrl** + **Shift** + **F5**).
 
 Ao pressionar **Reiniciar**, você economiza tempo em comparação com a opção de parar o aplicativo e reiniciar o depurador. O depurador é pausado no primeiro ponto de interrupção que é encontrado pela execução do código.
 
@@ -314,7 +314,7 @@ Os recursos que permitem que você inspecione variáveis são uns dos mais útei
 
 1. Examine a janela **Autos** na parte inferior do editor de códigos.
 
-     ![Inspecionar variáveis na janela Autos](../visual-basic/media/get-started-autos-window-vb.png "Janela Autos")
+     ![Inspecionar variáveis na janela de automóveis](../visual-basic/media/get-started-autos-window-vb.png "Janela de automóveis")
 
     Na janela **Autos**, veja as variáveis e seus valores atuais. A janela **Autos** mostra todas as variáveis usadas na linha atual ou a linha anterior (verifique a documentação para saber o comportamento específico a uma linguagem).
 
@@ -347,7 +347,7 @@ Os recursos que permitem que você inspecione variáveis são uns dos mais útei
 
     Você pode clicar duas vezes em uma linha de código para examinar esse código-fonte. Isso também altera o escopo atual que está sendo inspecionado pelo depurador. Essa ação não avança o depurador.
 
-    Você também pode usar os menus acessados ao clicar com o botão direito do mouse na janela **Pilha de Chamadas** para fazer outras coisas. Por exemplo, você pode inserir pontos de interrupção em funções especificadas, avançar o depurador usando **Executar até o Cursor** e examinar o código-fonte. Para obter mais informações, confira [Como: Examinar a pilha de chamadas](../../debugger/how-to-use-the-call-stack-window.md).
+    Você também pode usar os menus acessados ao clicar com o botão direito do mouse na janela **Pilha de Chamadas** para fazer outras coisas. Por exemplo, você pode inserir pontos de interrupção em funções especificadas, avançar o depurador usando **Executar até o Cursor** e examinar o código-fonte. Para obter mais informações, confira [Como examinar a pilha de chamadas](../../debugger/how-to-use-the-call-stack-window.md).
 
 ## <a name="change-the-execution-flow"></a>Alterar o fluxo de execução
 
@@ -366,7 +366,7 @@ Os recursos que permitem que você inspecione variáveis são uns dos mais útei
 
     Parabéns por concluir este tutorial.
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
 
 Neste tutorial, você aprendeu como iniciar o depurador, percorrer o código e inspecionar variáveis. Talvez você queira obter uma visão geral dos recursos do depurador, com links para mais informações.
 
