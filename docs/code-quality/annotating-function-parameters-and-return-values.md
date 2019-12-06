@@ -128,12 +128,12 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: 8437a18bf2b732ee3f12774b04baedf12003d554
-ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
+ms.openlocfilehash: 16e7ffb30dc7ec4ae1b78647a0964b81932617ab
+ms.sourcegitcommit: 174c992ecdc868ecbf7d3cee654bbc2855aeb67d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72806799"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "74879263"
 ---
 # <a name="annotating-function-parameters-and-return-values"></a>Anotando parâmetros de função e valores de retorno
 Este artigo descreve usos típicos de anotações para parâmetros de função simples – escalares e ponteiros para estruturas e classes – e a maioria dos tipos de buffers.  Este artigo também mostra padrões de uso comuns para anotações. Para anotações adicionais relacionadas a funções, consulte [anotando o comportamento da função](../code-quality/annotating-function-behavior.md).
@@ -167,45 +167,48 @@ Para as anotações na tabela a seguir, quando um parâmetro de ponteiro está s
 
      `_In_reads_bytes_(s)`
 
-     Um ponteiro para uma matriz, que é lido pela função.  A matriz é do tamanho `s`, e todas devem ser válidas.
+     Um ponteiro para uma matriz, que é lido pela função.  A matriz tem tamanho `s` elementos, que devem ser válidos.
 
      A variante de `_bytes_` fornece o tamanho em bytes em vez de elementos. Use-o somente quando o tamanho não puder ser expresso como elementos.  Por exemplo, `char` cadeias de caracteres usarão a variante de `_bytes_` somente se uma função semelhante que usa `wchar_t`.
 
 - `_In_reads_z_(s)`
 
-     Um ponteiro para uma matriz terminada em nulo e tem um tamanho conhecido. Os elementos até o terminador nulo — ou `s` se não houver um terminador nulo — devem ser válidos em pré-estado.  Se o tamanho for conhecido em bytes, dimensione `s` pelo tamanho do elemento.
+     Um ponteiro para uma matriz terminada em nulo e tem um tamanho conhecido. Os elementos até o terminador nulo — ou `s` se não houver um terminador nulo — devem ser válidos em pré-estado.  Se o tamanho for conhecido em bytes, a escala `s` pelo tamanho do elemento.
 
 - `_In_reads_or_z_(s)`
 
-     Um ponteiro para uma matriz terminada em nulo ou tem um tamanho conhecido, ou ambos. Os elementos até o terminador nulo — ou `s` se não houver um terminador nulo — devem ser válidos em pré-estado.  Se o tamanho for conhecido em bytes, dimensione `s` pelo tamanho do elemento.  (Usado para a família `strn`.)
+     Um ponteiro para uma matriz terminada em nulo ou tem um tamanho conhecido, ou ambos. Os elementos até o terminador nulo — ou `s` se não houver um terminador nulo — devem ser válidos em pré-estado.  Se o tamanho for conhecido em bytes, a escala `s` pelo tamanho do elemento.  (Usado para a família de `strn`.)
 
 - `_Out_writes_(s)`
 
      `_Out_writes_bytes_(s)`
 
-     Um ponteiro para uma matriz de elementos `s` (resp. bytes) que será gravado pela função.  Os elementos da matriz não precisam ser válidos em pré-estado e o número de elementos que são válidos no pós-Estado não é especificado.  Se houver anotações no tipo de parâmetro, elas serão aplicadas em pós-Estado. Por exemplo, considere o código a seguir.
+     Um ponteiro para uma matriz de elementos de `s` (resp. bytes) que será gravado pela função.  Os elementos da matriz não precisam ser válidos em pré-estado e o número de elementos que são válidos no pós-Estado não é especificado.  Se houver anotações no tipo de parâmetro, elas serão aplicadas em pós-Estado. Por exemplo, considere o código a seguir.
 
-     `typedef _Null_terminated_ wchar_t *PWSTR; void MyStringCopy(_Out_writes_ (size) PWSTR p1,    _In_ size_t size,    _In_ PWSTR p2);`
+     ```cpp
+     typedef _Null_terminated_ wchar_t *PWSTR;
+     void MyStringCopy(_Out_writes_(size) PWSTR p1, _In_ size_t size, _In_ PWSTR p2);
+     ```
 
-     Neste exemplo, o chamador fornece um buffer de elementos `size` para `p1`.  `MyStringCopy` torna alguns desses elementos válidos. O mais importante é que a anotação `_Null_terminated_` em `PWSTR` significa que `p1` é terminada em nulo no post-State.  Dessa forma, o número de elementos válidos ainda é bem definido, mas uma contagem de elementos específica não é necessária.
+     Neste exemplo, o chamador fornece um buffer de elementos de `size` para `p1`.  `MyStringCopy` torna alguns desses elementos válidos. O mais importante é que a anotação `_Null_terminated_` em `PWSTR` significa que `p1` é terminada em nulo no post-State.  Dessa forma, o número de elementos válidos ainda é bem definido, mas uma contagem de elementos específica não é necessária.
 
      A variante de `_bytes_` fornece o tamanho em bytes em vez de elementos. Use-o somente quando o tamanho não puder ser expresso como elementos.  Por exemplo, `char` cadeias de caracteres usarão a variante de `_bytes_` somente se uma função semelhante que usa `wchar_t`.
 
 - `_Out_writes_z_(s)`
 
-     Um ponteiro para uma matriz de elementos `s`.  Os elementos não precisam ser válidos em pré-estado.  No pós-Estado, os elementos acima do terminador nulo — que devem estar presentes — devem ser válidos.  Se o tamanho for conhecido em bytes, dimensione `s` pelo tamanho do elemento.
+     Um ponteiro para uma matriz de elementos de `s`.  Os elementos não precisam ser válidos em pré-estado.  No pós-Estado, os elementos acima do terminador nulo — que devem estar presentes — devem ser válidos.  Se o tamanho for conhecido em bytes, a escala `s` pelo tamanho do elemento.
 
 - `_Inout_updates_(s)`
 
      `_Inout_updates_bytes_(s)`
 
-     Um ponteiro para uma matriz, que é lido e gravado na função.  É do tamanho `s`, e é válido em pré e após o estado.
+     Um ponteiro para uma matriz, que é lido e gravado na função.  É do tamanho `s` elementos e é válido em pré e após o estado.
 
      A variante de `_bytes_` fornece o tamanho em bytes em vez de elementos. Use-o somente quando o tamanho não puder ser expresso como elementos.  Por exemplo, `char` cadeias de caracteres usarão a variante de `_bytes_` somente se uma função semelhante que usa `wchar_t`.
 
 - `_Inout_updates_z_(s)`
 
-     Um ponteiro para uma matriz terminada em nulo e tem um tamanho conhecido. Os elementos acima do terminador nulo — que devem estar presentes — devem ser válidos em pré e após o estado.  O valor no pós-Estado é presumido que seja diferente do valor no pré-estado; Isso inclui o local do terminador nulo. Se o tamanho for conhecido em bytes, dimensione `s` pelo tamanho do elemento.
+     Um ponteiro para uma matriz terminada em nulo e tem um tamanho conhecido. Os elementos acima do terminador nulo — que devem estar presentes — devem ser válidos em pré e após o estado.  O valor no pós-Estado é presumido que seja diferente do valor no pré-estado; Isso inclui o local do terminador nulo. Se o tamanho for conhecido em bytes, a escala `s` pelo tamanho do elemento.
 
 - `_Out_writes_to_(s,c)`
 
@@ -215,13 +218,14 @@ Para as anotações na tabela a seguir, quando um parâmetro de ponteiro está s
 
      `_Out_writes_bytes_all_(s)`
 
-     Um ponteiro para uma matriz de elementos `s`.  Os elementos não precisam ser válidos em pré-estado.  No pós-Estado, os elementos até o elemento `c`-ésimo devem ser válidos.  Se o tamanho for conhecido em bytes, dimensione `s` e `c` pelo tamanho do elemento ou use a variante `_bytes_`, que é definida como:
+     Um ponteiro para uma matriz de elementos de `s`.  Os elementos não precisam ser válidos em pré-estado.  No pós-Estado, os elementos até o elemento `c`-th devem ser válidos.  A variante `_bytes_` pode ser usada se o tamanho for conhecido em bytes em vez do número de elementos.
+     
+     Por exemplo:
 
-     `_Out_writes_to_(_Old_(s), _Old_(s))    _Out_writes_bytes_to_(_Old_(s), _Old_(s))`
-
-     Em outras palavras, todos os elementos que existem no buffer até `s` no pré-estado são válidos no pós-Estado.  Por exemplo:
-
-     `void *memcpy(_Out_writes_bytes_all_(s) char *p1,    _In_reads_bytes_(s) char *p2,    _In_ int s); void * wordcpy(_Out_writes_all_(s) DWORD *p1,     _In_reads_(s) DWORD *p2,    _In_ int s);`
+     ```cpp
+     void *memcpy(_Out_writes_bytes_all_(s) char *p1, _In_reads_bytes_(s) char *p2, _In_ int s); 
+     void *wordcpy(_Out_writes_all_(s) DWORD *p1, _In_reads_(s) DWORD *p2, _In_ int s);
+     ```
 
 - `_Inout_updates_to_(s,c)`
 
@@ -235,7 +239,7 @@ Para as anotações na tabela a seguir, quando um parâmetro de ponteiro está s
 
      `_Inout_updates_bytes_all_(s)`
 
-     Um ponteiro para uma matriz, que é lido e gravado pela função do tamanho `s` elementos. Definido como equivalente a:
+     Um ponteiro para uma matriz, que é lido e gravado pela função de tamanho `s` elementos. Definido como equivalente a:
 
      `_Inout_updates_to_(_Old_(s), _Old_(s))    _Inout_updates_bytes_to_(_Old_(s), _Old_(s))`
 
@@ -245,19 +249,24 @@ Para as anotações na tabela a seguir, quando um parâmetro de ponteiro está s
 
 - `_In_reads_to_ptr_(p)`
 
-     Um ponteiro para uma matriz para a qual a expressão `p` - `_Curr_` (ou seja, `p` menos `_Curr_`) é definido pelo padrão de idioma apropriado.  Os elementos anteriores à `p` devem ser válidos em pré-estado.
+     Um ponteiro para uma matriz para a qual `p - _Curr_` (ou seja, `p` menos `_Curr_`) é uma expressão válida.  Os elementos anteriores à `p` devem ser válidos em pré-estado.
+
+    Por exemplo:
+    ```cpp
+    int ReadAllElements(_In_reads_to_ptr_(EndOfArray) const int *Array, const int *EndOfArray);
+    ```
 
 - `_In_reads_to_ptr_z_(p)`
 
-     Um ponteiro para uma matriz terminada em nulo para o qual a expressão `p` - `_Curr_` (ou seja, `p` menos `_Curr_`) é definido pelo padrão de idioma apropriado.  Os elementos anteriores à `p` devem ser válidos em pré-estado.
+     Um ponteiro para uma matriz terminada em nulo para a qual a expressão `p - _Curr_` (ou seja, `p` menos `_Curr_`) é uma expressão válida.  Os elementos anteriores à `p` devem ser válidos em pré-estado.
 
 - `_Out_writes_to_ptr_(p)`
 
-     Um ponteiro para uma matriz para a qual a expressão `p` - `_Curr_` (ou seja, `p` menos `_Curr_`) é definido pelo padrão de idioma apropriado.  Os elementos anteriores à `p` não precisam ser válidos em pré-estado e devem ser válidos no pós-Estado.
+     Um ponteiro para uma matriz para a qual `p - _Curr_` (ou seja, `p` menos `_Curr_`) é uma expressão válida.  Os elementos anteriores à `p` não precisam ser válidos em estado predefinido e devem ser válidos no pós-Estado.
 
 - `_Out_writes_to_ptr_z_(p)`
 
-     Um ponteiro para uma matriz terminada em nulo para o qual a expressão `p` - `_Curr_` (ou seja, `p` menos `_Curr_`) é definido pelo padrão de idioma apropriado.  Os elementos anteriores à `p` não precisam ser válidos em pré-estado e devem ser válidos no pós-Estado.
+     Um ponteiro para uma matriz terminada em nulo para o qual `p - _Curr_` (ou seja, `p` menos `_Curr_`) é uma expressão válida.  Os elementos anteriores à `p` não precisam ser válidos em estado predefinido e devem ser válidos no pós-Estado.
 
 ## <a name="optional-pointer-parameters"></a>Parâmetros de ponteiro opcionais
 
@@ -361,7 +370,7 @@ Os parâmetros de ponteiro de saída exigem notação especial para desambiguar 
 
 ## <a name="output-reference-parameters"></a>Parâmetros de referência de saída
 
-Um uso comum do parâmetro de referência é para parâmetros de saída.  Para parâmetros de referência de saída simples — por exemplo, `int&`—`_Out_` fornece a semântica correta.  No entanto, quando o valor de saída é um ponteiro — por exemplo `int *&`— as anotações de ponteiro equivalentes, como `_Outptr_ int **` não fornecem a semântica correta.  Para expressar de forma concisa a semântica dos parâmetros de referência de saída para tipos de ponteiro, use estas anotações compostas:
+Um uso comum do parâmetro de referência é para parâmetros de saída.  Para parâmetros de referência de saída simples, como `int&`, `_Out_` fornece a semântica correta.  No entanto, quando o valor de saída é um ponteiro como `int *&`, as anotações de ponteiro equivalentes, como `_Outptr_ int **` não fornecem a semântica correta.  Para expressar de forma concisa a semântica dos parâmetros de referência de saída para tipos de ponteiro, use estas anotações compostas:
 
 **Anotações e descrições**
 
@@ -383,7 +392,7 @@ Um uso comum do parâmetro de referência é para parâmetros de saída.  Para p
 
 - `_Outref_result_buffer_to_(s, c)`
 
-     O resultado deve ser válido em pós-Estado e não pode ser nulo. Aponta para o buffer de elementos `s`, dos quais os primeiros `c` são válidos.
+     O resultado deve ser válido em pós-Estado e não pode ser nulo. Aponta para o buffer de elementos de `s`, dos quais o primeiro `c` são válidos.
 
 - `_Outref_result_bytebuffer_to_(s, c)`
 
@@ -407,7 +416,7 @@ Um uso comum do parâmetro de referência é para parâmetros de saída.  Para p
 
 - `_Outref_result_buffer_to_maybenull_(s, c)`
 
-     O resultado deve ser válido em pós-Estado, mas pode ser nulo no pós-Estado. Aponta para o buffer de elementos `s`, dos quais os primeiros `c` são válidos.
+     O resultado deve ser válido em pós-Estado, mas pode ser nulo no pós-Estado. Aponta para o buffer de elementos de `s`, dos quais o primeiro `c` são válidos.
 
 - `_Outref_result_bytebuffer_to_maybenull_(s,c)`
 
@@ -494,7 +503,7 @@ O valor de retorno de uma função é semelhante a um parâmetro `_Out_`, mas es
 
      `_Field_range_(low, hi)`
 
-     O parâmetro, o campo ou o resultado está no intervalo (inclusive) de `low` a `hi`.  Equivalente a `_Satisfies_(_Curr_ >= low && _Curr_ <= hi)` que é aplicado ao objeto anotado junto com as condições de pré-estado ou pós-Estado apropriadas.
+     O parâmetro, o campo ou o resultado está no intervalo (inclusive) de `low` para `hi`.  Equivalente a `_Satisfies_(_Curr_ >= low && _Curr_ <= hi)` que é aplicado ao objeto anotado junto com as condições de pré-estado ou pós-Estado apropriadas.
 
     > [!IMPORTANT]
     > Embora os nomes contenham "in" e "out", a semântica de `_In_` e `_Out_` **não** se aplicam a essas anotações.
@@ -511,7 +520,7 @@ O valor de retorno de uma função é semelhante a um parâmetro `_Out_`, mas es
 
      `typedef _Struct_size_bytes_(nSize) struct MyStruct {    size_t nSize;    ... };`
 
-     O tamanho do buffer em bytes de um parâmetro `pM` do tipo `MyStruct *` é então usado para ser:
+     O tamanho do buffer, em bytes de um parâmetro `pM` do tipo `MyStruct *`, é então usado como:
 
      `min(pM->nSize, sizeof(MyStruct))`
 

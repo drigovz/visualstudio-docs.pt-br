@@ -6,14 +6,15 @@ manager: lank
 ms.date: 08/07/2019
 ms.topic: conceptual
 description: Saiba como começar a gerenciar as assinaturas do Visual Studio de sua organização com o portal de administração de assinaturas.
-ms.openlocfilehash: 6ee33bfaf47452a1213cd5def206e47aee790fc3
-ms.sourcegitcommit: 5b34052a1c7d86179d7898ed532babb2d9dad4a3
-ms.translationtype: HT
+ms.openlocfilehash: 484ecdca3435ee725853932acd66e307c2eb3cbe
+ms.sourcegitcommit: 174c992ecdc868ecbf7d3cee654bbc2855aeb67d
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69490701"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "74879302"
 ---
-# <a name="overview-of-the-visual-studio-subscriptions-administration-portal"></a>Visão geral do Portal de Administração de Assinaturas do Visual Studio
+# <a name="overview-of-the-visual-studio-subscriptions-administrator-portal"></a>Visão geral do portal do administrador de assinaturas do Visual Studio
+
 O Portal de Administração de Assinaturas do Visual Studio fornece as ferramentas necessárias para gerenciar as assinaturas da sua organização em um único lugar. 
 
 ## <a name="important-considerations"></a>Considerações importantes
@@ -41,7 +42,7 @@ No lado esquerdo dessa página, são exibidas informações adicionais sobre o n
 > ![Página Assinantes do Portal de Administração de Assinaturas do Visual Studio](_img/using-admin-portal/subscribers-page.png)
 
 ## <a name="the-details-page"></a>A página Detalhes
-Para obter mais informações sobre o contrato exibido, selecione a guia Detalhes. Ela mostra o status do contrato, a conta da compra, os detalhes da organização, os superadministradores e outras informações pertinentes.
+Para obter mais informações sobre o contrato que você está exibindo, selecione a guia detalhes. Ele mostra o status do contrato, a conta de compra, os detalhes da organização, os superadministradores e outras informações pertinentes.
 > [!div class="mx-imgBorder"]
 > ![Página Detalhes do Portal de Administração de Assinaturas do Visual Studio](_img/using-admin-portal/details-page.png)
 
@@ -51,10 +52,10 @@ Para obter mais informações sobre o contrato exibido, selecione a guia Detalhe
 - [Comparar os recursos do IDE do Visual Studio](https://visualstudio.microsoft.com/vs/compare)
 - [Suporte à administração e às assinaturas do Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs)
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
 Saiba mais as políticas dos administradores:
 - [Visão geral das responsabilidades do administrador](admin-responsibilities.md)
 - [Inventário do ambiente de pré-produção](admin-inventory.md)
 - [Gerenciar equipes grandes e prestadores de serviço externos](manage-teams.md)
-- [Rastrear atribuições de usuário e processar pedidos](assignments-orders.md)
+- [Rastrear atribuição de usuário e processar pedidos](assignments-orders.md)
 - Utilizar o [Uso Máximo](maximum-usage.md) para rastrear os compromissos de compra
