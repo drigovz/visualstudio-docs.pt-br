@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e78594a98066dec6cedff6da6f3f1de823bec796
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: cc6782e4a83f259eb17632addec36c7804b27858
+ms.sourcegitcommit: 174c992ecdc868ecbf7d3cee654bbc2855aeb67d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985012"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "74879341"
 ---
 # <a name="walkthrough-create-a-site-column-content-type-and-list-for-sharepoint"></a>Walkthrough: criar uma coluna de site, um tipo de conteúdo e uma lista para o SharePoint
   Os procedimentos a seguir demonstram como criar colunas de site do SharePoint (ou *campos*) personalizados, bem como um tipo de conteúdo que usa as colunas do site. Ele também mostra como criar uma lista que usa o novo tipo de conteúdo.
@@ -41,10 +41,10 @@ ms.locfileid: "72985012"
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>{1&gt;{2&gt;Pré-requisitos&lt;2}&lt;1}
  Você precisa dos seguintes componentes para concluir esta instrução passo a passo:
 
-- Edições com suporte do Windows e do SharePoint.
+- Edições do Windows e do SharePoint com suporte.
 
 - [!INCLUDE[vsprvs-current](../sharepoint/includes/vsprvs-current-md.md)]
 
@@ -54,33 +54,48 @@ ms.locfileid: "72985012"
 #### <a name="to-create-the-project"></a>Para criar o projeto
 
 1. No menu [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] **arquivo** , escolha **novo** **projeto**de > .
+::: moniker range="=vs-2017"
+2. Na caixa de diálogo **novo projeto** , em **Visual C#**  ou **Visual Basic**, expanda o nó **Office/SharePoint** e, em seguida, selecione **soluções do SharePoint**.
 
-2. Na caixa de diálogo **novo projeto** , em **Visual C#**  ou **Visual Basic**, expanda o nó **SharePoint** e, em seguida, escolha **2010**.
+3. No painel **modelos** , escolha o **projeto vazio do SharePoint** para a versão específica do SharePoint que você instalou. Por exemplo, se você tiver a instalação do SharePoint 2016, selecione o modelo de **projeto 2016-vazio do SharePoint** .  
 
-3. No painel **modelos** , escolha **projeto do SharePoint 2010**, altere o nome do projeto para **clínica**e, em seguida, escolha o botão **OK** .
+4. Altere o nome do projeto para **clínica**e, em seguida, escolha o botão **OK** .
 
-     O modelo de projeto do SharePoint 2010 é um projeto vazio que é usado neste exemplo para conter colunas de site e outros itens de projeto que são adicionados posteriormente.
+5. Na caixa de diálogo **especificar o site e o nível de segurança para depuração** , insira a URL do site do SharePoint local ao qual você deseja adicionar o novo item de campo personalizado ou use o local padrão (`http://<``>/)`de *sistema* .
 
-4. Na página **especificar o site e o nível de segurança para depuração** , insira a URL do site do SharePoint local ao qual você deseja adicionar o novo item de campo personalizado ou use o local padrão (`http://<``>/)`do *sistema* .
+6. Na seção **o que é o nível de confiança para esta solução do SharePoint?** , use o valor padrão **implantar como uma solução de área restrita**.
+
+     Para obter mais informações sobre soluções de farm e área restrita, consulte [Considerações sobre a solução em área restrita](../sharepoint/sandboxed-solution-considerations.md).
+
+7. Escolha o botão **Concluir** . Agora, o projeto está listado em **Gerenciador de soluções**.
+::: moniker-end
+::: moniker range=">=vs-2019"
+2.  Na caixa de diálogo **criar um novo projeto** , selecione o **projeto vazio do SharePoint** para a versão específica do SharePoint que você instalou. Por exemplo, se você tiver a instalação do SharePoint 2016, selecione o modelo de **projeto 2016-vazio do SharePoint** .
+    [!INCLUDE[new-project-dialog-search](../sharepoint/includes/new-project-dialog-search-md.md)]
+
+3. Altere o nome do projeto para **clínica**e, em seguida, escolha o botão **criar** .
+
+4. Na caixa de diálogo **especificar o site e o nível de segurança para depuração** , insira a URL do site do SharePoint local ao qual você deseja adicionar o novo item de campo personalizado ou use o local padrão (`http://<``>/)`de *sistema* .
 
 5. Na seção **o que é o nível de confiança para esta solução do SharePoint?** , use o valor padrão **implantar como uma solução de área restrita**.
 
      Para obter mais informações sobre soluções de farm e área restrita, consulte [Considerações sobre a solução em área restrita](../sharepoint/sandboxed-solution-considerations.md).
 
-6. Escolha o botão **concluir** . Agora, o projeto está listado em **Gerenciador de soluções**.
+6. Escolha o botão **Concluir** . Agora, o projeto está listado em **Gerenciador de soluções**.
+::: moniker-end
 
 #### <a name="to-add-site-columns"></a>Para adicionar colunas de site
 
-1. Adicione uma nova coluna de site. Para fazer isso, em **Gerenciador de soluções**, abra o menu de atalho para a **clínica**e, em seguida, escolha **Adicionar** > **novo item**.
+1. Adicione uma nova coluna de site. Para fazer isso, em **Gerenciador de soluções**, clique com o botão direito do mouse no projeto da **clínica** e escolha **Adicionar** > **novo item**.
 
-2. Na caixa de diálogo **Adicionar novo item** , escolha **coluna do site**, altere o nome para **nome do paciente**e, em seguida, escolha o botão **Adicionar** .
+2. Na caixa de diálogo **Adicionar novo item** , escolha **coluna do site**, altere o nome para **pacientename**e, em seguida, escolha o botão **Adicionar** .
 
-3. No arquivo *Elements. xml* da coluna do site, deixe a configuração de **tipo** como **texto**e altere a configuração de **grupo** para colunas do **site de clínica**. Ao concluir, o arquivo *Elements. xml* da coluna do site deve ser semelhante ao exemplo a seguir.
+3. No arquivo *Elements. xml* da coluna do site, deixe a configuração de **tipo** como **texto**, altere a configuração de **grupo** para colunas do **site de clínica**. Ao concluir, o arquivo *Elements. xml* da coluna do site deve ser semelhante ao exemplo a seguir.
 
     ```xml
     <Field
          ID="{f9ba60d1-5631-41fb-b016-a38cf48eef63}"
-         Name="Clinic - Patient Name"
+         Name="PatientName"
          DisplayName="Patient Name"
          Type="Text"
          Required="FALSE"
@@ -88,7 +103,11 @@ ms.locfileid: "72985012"
     </Field>
     ```
 
-4. Usando o mesmo procedimento, adicione mais duas colunas do site ao projeto: **ID do paciente** (tipo = "inteiro") e **nome do doutor** (tipo = "texto"). Defina o valor do grupo como **colunas do site da clínica**.
+    > [!TIP]
+    > O Visual Studio adicionará automaticamente um espaço em DisplayName para você se usar o camel case no nome da coluna site.
+    > É recomendável não usar espaços no nome da coluna do site, pois isso pode causar problemas quando você tenta implantar a solução no SharePoint.
+
+4. Usando o mesmo procedimento, adicione mais duas colunas de site ao projeto: **pacienteid** (tipo = "inteiro") e **doutorname** (tipo = "texto"). Defina o valor do grupo como **colunas do site da clínica**.
 
 ## <a name="create-a-custom-content-type"></a>Criar um tipo de conteúdo personalizado
  Em seguida, crie um tipo de conteúdo — com base no tipo de conteúdo contatos — que inclui as colunas do site que você criou no procedimento anterior. Com base em um tipo de conteúdo em um tipo de conteúdo existente, você pode economizar tempo, pois o tipo de conteúdo base fornece várias colunas de site para uso no novo tipo de conteúdo.
@@ -133,11 +152,11 @@ ms.locfileid: "72985012"
 
 2. Na barra de menus, escolha **Projeto** > **Adicionar Novo Item**.
 
-3. Em **Visual C#**  ou **Visual Basic**, expanda o nó do **SharePoint** e escolha o nó **2010** .
+3. Em  **C# Visual** ou **Visual Basic**, expanda o nó do **SharePoint** .
 
 4. No painel **modelos** , escolha o modelo de **lista** , altere o nome para **pacientes**e, em seguida, escolha o botão **Adicionar** .
 
-5. Deixe a opção **Personalizar a lista com base na** configuração como **padrão (em branco)** e escolha o botão **concluir** .
+5. Deixe a opção **Personalizar a lista com base na** configuração como **padrão (lista personalizada)** e escolha o botão **concluir** .
 
 6. No designer de lista, escolha o botão **tipos de conteúdo** para exibir a caixa de diálogo Configurações de tipo de **conteúdo** .
 
@@ -151,13 +170,13 @@ ms.locfileid: "72985012"
 
     - Nome do paciente
 
-    - Telefone residencial
+    - Telefone Residencial
 
-    - Mensagens
+    - Email
 
     - Nome do doutor
 
-    - Comentários
+    - Comments
 
 9. Em **nome de exibição da coluna**, escolha uma linha vazia, adicione uma coluna de lista personalizada e nomeie-a como **hospital**. Deixe seu tipo de dados como **uma linha de texto**.
 
@@ -170,7 +189,7 @@ ms.locfileid: "72985012"
 
 10. Ao lado das caixas **ID do paciente** e nome do **paciente** , marque a caixa de seleção **necessário** .
 
-11. Na guia **exibições** , escolha uma linha vazia para criar uma exibição. Insira os **detalhes do paciente**.
+11. Na guia **exibições** , escolha uma linha vazia para criar uma exibição. Insira os **detalhes do paciente** em uma linha em branco na coluna nome da **exibição** .
 
      Na guia **modos de exibição** , você pode especificar as colunas que deseja que apareçam na lista do SharePoint.
 
@@ -184,15 +203,15 @@ ms.locfileid: "72985012"
 
     - Nome do paciente
 
-    - Telefone residencial
+    - Telefone Residencial
 
-    - Mensagens
+    - Email
 
     - Nome do doutor
 
     - Hospital
 
-    - Comentários
+    - Comments
 
 14. Na lista **Propriedades** , escolha a propriedade **classificar e agrupar** e, em seguida, escolha o ![ícone](../sharepoint/media/ellipsisicon.gif "Ícone de reticências") de reticências botão de reticências para exibir a caixa de diálogo **classificar e agrupar** .
 
@@ -224,4 +243,4 @@ ms.locfileid: "72985012"
 - [Desenvolver soluções do SharePoint](../sharepoint/developing-sharepoint-solutions.md)
 - [Como: criar um tipo de campo personalizado](/previous-versions/office/developer/sharepoint-2010/bb862248(v=office.14))
 - [Tipos de conteúdo](/previous-versions/office/developer/sharepoint-2010/ms479905(v=office.14))
-- [Columns](/previous-versions/office/developer/sharepoint-2010/ms196085(v=office.14))
+- [Colunas](/previous-versions/office/developer/sharepoint-2010/ms196085(v=office.14))
