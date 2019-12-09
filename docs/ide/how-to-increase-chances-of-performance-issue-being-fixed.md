@@ -5,12 +5,12 @@ author: seaniyer
 ms.author: seiyer
 ms.date: 11/19/2019
 ms.topic: reference
-ms.openlocfilehash: d61e7f47fde06c12b6b133ced76e5a8d72d220b0
-ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
+ms.openlocfilehash: 3bf61c1ecbed5a3da1fe7ec0bcf9c6d4b7580b8d
+ms.sourcegitcommit: 0b90e1197173749c4efee15c2a75a3b206c85538
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74528430"
+ms.lasthandoff: 12/07/2019
+ms.locfileid: "74903988"
 ---
 # <a name="how-to-increase-the-chances-of-a-performance-issue-being-fixed"></a>Como aumentar as chances de um problema de desempenho ser corrigido
 
@@ -116,9 +116,9 @@ Conforme descrito na seção correspondente sobre falhas, para problemas que pod
 **Falta de resposta desconhecida**
 
 Se uma falta de resposta se manifestar de maneira imprevisível, na próxima ocorrência, inicie uma nova instância do Visual Studio e relate um problema dessa instância.
-Na [tela "registro"](https://docs.microsoft.com/visualstudio/ide/how-to-report-a-problem-with-visual-studio?view=vs-2019#record-a-repro), certifique-se de selecionar a sessão do Visual Studio que está suspensa.
+Na [tela "registro"](https://docs.microsoft.com/visualstudio/ide/how-to-report-a-problem-with-visual-studio?view=vs-2019#record-a-repro), certifique-se de selecionar a sessão do Visual Studio que não está respondendo.
 
-Se a instância do Visual Studio que está suspensa foi iniciada no modo de administrador, a segunda instância também precisaria ser iniciada no modo de administrador.
+Se a instância do Visual Studio que não está respondendo foi iniciada no modo de administrador, a segunda instância também precisaria ser iniciada no modo de administrador.
 
 >[!NOTE] 
 > **Comentários mais valiosos:** Para esse caso, os comentários mais valiosos são o despejo de heap capturado no momento da falta de resposta.

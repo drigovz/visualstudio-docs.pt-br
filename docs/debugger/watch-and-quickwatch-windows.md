@@ -1,5 +1,5 @@
 ---
-title: Definir uma inspeção nas variáveis | Microsoft Docs
+title: Definir uma inspeção em variáveis | Microsoft Docs
 ms.custom: seodec18
 ms.date: 10/11/2018
 ms.topic: conceptual
@@ -17,26 +17,26 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d8cd119ab39939de6562adcb962679874d528283
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ea3d2a1e82e92473859fef29754fbb831cf3685b
+ms.sourcegitcommit: 0b90e1197173749c4efee15c2a75a3b206c85538
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62929293"
+ms.lasthandoff: 12/07/2019
+ms.locfileid: "74904035"
 ---
-# <a name="watch-variables-with-watch-windows-and-quickwatch"></a>Assista a variáveis com janelas de inspeção e QuickWatch
+# <a name="watch-variables-with-watch-windows-and-quickwatch"></a>Observar variáveis com janelas de inspeção e QuickWatch
 
-Enquanto você estiver depurando, você pode usar **Watch** windows e **QuickWatch** para inspecionar variáveis e expressões. Os windows estão disponíveis somente durante uma sessão de depuração.
+Enquanto estiver Depurando, você pode usar **Watch** Windows e **QuickWatch** para inspecionar variáveis e expressões. As janelas só estão disponíveis durante uma sessão de depuração.
 
-**Assista** windows podem exibir diversas variáveis de cada vez durante a depuração. O **QuickWatch** caixa de diálogo exibe uma única variável por vez e deve ser fechada antes de depuração de continuar.
+**Observe** que o Windows pode exibir várias variáveis por vez durante a depuração. A caixa de diálogo **QuickWatch** exibe uma única variável por vez e deve ser fechada antes que a depuração possa continuar.
 
-Se essa for a primeira vez que você tentou depurar o código, você talvez queira ler [depuração para iniciantes absolutos](../debugger/debugging-absolute-beginners.md) e [técnicas e ferramentas de depuração](../debugger/write-better-code-with-visual-studio.md) antes de prosseguir com este artigo.
+Se esta for a primeira vez que você tentou depurar o código, talvez você queira ler [depuração para iniciantes absolutos](../debugger/debugging-absolute-beginners.md) e [ferramentas e técnicas de depuração antes de](../debugger/write-better-code-with-visual-studio.md) passar por este artigo.
 
-## <a name="observe-variables-with-a-watch-window"></a>Observe as variáveis com uma janela Inspeção
+## <a name="observe-variables-with-a-watch-window"></a>Observar variáveis com um janela Inspeção
 
-Você pode abrir mais de um **Watch** janela e observar mais de uma variável em uma **inspeção** janela.
+Você pode abrir mais de uma janela de **inspeção** e observar mais de uma variável em uma janela de **inspeção** .
 
-Por exemplo, para definir os valores de um observador `a`, `b`, e `c` no código a seguir:
+Por exemplo, para definir uma inspeção sobre os valores de `a`, `b`e `c` no código a seguir:
 
 ```C++
 int main()
@@ -58,74 +58,85 @@ int main()
 
 ```
 
-1. Defina um ponto de interrupção a `c = a + b;` linha clicando na margem esquerda, selecionando **Debug** > **alternar ponto de interrupção**, ou pressionando **F9**.
+1. Defina um ponto de interrupção na linha `c = a + b;` clicando na margem esquerda, selecionando **depurar** > **alternar ponto de interrupção**ou pressionando **F9**.
 
-1. Iniciar a depuração, selecionando o verde **inicie** seta ou **Debug** > **iniciar depuração**, ou pressione **F5**. A execução pausa no ponto de interrupção.
+1. Inicie a depuração selecionando a seta de **início** verde ou **depurar** > **iniciar a depuração**ou pressione **F5**. A execução pausa no ponto de interrupção.
 
-1. Abra uma **Watch** janela selecionando **depurar** > **Windows** > **inspeção**  >   **Assista a 1**, ou pressionando **Ctrl**+**Alt**+**W** > **1**.
+1. Abra uma janela de **inspeção** selecionando **depurar** > **Windows** > **assistir** > **watch 1**ou pressionar **Ctrl**+**ALT**+**W** > **1**.
 
-   Você pode abrir adicionais **Watch** windows selecionando windows **2**, **3**, ou **4**.
+   Você pode abrir janelas de **inspeção** adicionais selecionando Windows **2**, **3**ou **4**.
 
-1. No **Watch** janela, selecione uma linha vazia e variável de tipo `a`. Faça o mesmo para `b` e `c`.
+1. Na janela **Watch** , selecione uma linha vazia e digite Variable `a`. Faça o mesmo para `b` e `c`.
 
-   ![Assista a variáveis](../debugger/media/watchvariables.png "WatchVariables")
+   ![Variáveis de inspeção](../debugger/media/watchvariables.png "WatchVariables")
 
-1. Continuar a depuração, selecionando **Debug** > **intervir** ou pressionando **F11** conforme necessário para Avançar. Os valores da variável na **Watch** janela alterar como você itera através de `for` loop.
+1. Continue a depuração selecionando **depurar** > **entrar** ou pressionar **F11** conforme necessário para avançar. Os valores de variáveis na janela **Watch** mudam conforme você itera através do loop `for`.
 
 >[!NOTE]
->Para C++
->- Talvez você precise qualificar o contexto de um nome de variável ou uma expressão que usa um nome de variável. O contexto é a função, arquivo de origem ou módulo onde se encontra uma variável. Se você tiver qualificar o contexto, use o [operador de contexto (C++)](../debugger/context-operator-cpp.md) sintaxe na **nome** no **Assista** janela.
+>Somente C++ para o,
+>- Talvez seja necessário qualificar o contexto de um nome de variável ou uma expressão que use um nome de variável. O contexto é a função, o arquivo de origem ou o módulo em que uma variável está localizada. Se você precisar qualificar o contexto, use a sintaxe do [operadorC++de contexto ()](../debugger/context-operator-cpp.md) no **nome** na janela de **Observação** .
 >
->- Você pode adicionar nomes de registro e nomes de variáveis usando  **$ \<registrar&nbsp;nome >** ou  **@ \<registrar&nbsp;nome >** para o **nome** no **inspeção** janela. Para obter mais informações, consulte [pseudovariáveis](../debugger/pseudovariables.md).
+>- Você pode adicionar nomes de registro e nomes de variáveis usando **$\<registrar&nbsp;nome >** ou **@\<registrar&nbsp;nome** > para o **nome** na janela de **Observação** . Para obter mais informações, consulte [Pseudovariables](../debugger/pseudovariables.md).
 
-## <a name="use-expressions-in-a-watch-window"></a>Usar expressões em uma janela Inspeção
+## <a name="use-expressions-in-a-watch-window"></a>Usar expressões em um janela Inspeção
 
-Você pode observar qualquer expressão válida reconhecida pelo depurador em um **inspeção** janela.
+Você pode observar qualquer expressão válida reconhecida pelo depurador em uma janela **Watch** .
 
-Por exemplo, para o código na seção anterior, você pode obter a média dos três valores, digitando `(a + b + c) / 3` no **inspeção** janela:
+Por exemplo, para o código na seção anterior, você pode obter a média dos três valores inserindo `(a + b + c) / 3` na janela **Watch** :
 
-![Expressão de inspeção](../debugger/media/watchexpression.png "expressão de inspeção")
+![Expressão de inspeção](../debugger/media/watchexpression.png "Expressão de inspeção")
 
-As regras para avaliar expressões na **inspeção** janela geralmente são as mesmas regras de avaliação de expressões na linguagem de código. Se a expressão não tem um erro de sintaxe, esperar que o erro do compilador mesmo como no editor de códigos. Por exemplo, um erro de digitação na expressão anterior gera esse erro no **inspeção** janela:
+As regras para avaliar expressões na janela **Watch** geralmente são as mesmas que as regras para avaliar expressões na linguagem de código. Se uma expressão tiver um erro de sintaxe, espere o mesmo erro do compilador que no editor de código. Por exemplo, uma grafia na expressão anterior produz esse erro na janela **Watch** :
 
-![Assista a erro de expressão](../debugger/media/watchexpressionerror.png "assistir o erro de expressão")
+![Erro de expressão de inspeção](../debugger/media/watchexpressionerror.png "Erro de expressão de inspeção")
 
-Um círculo com ícone de duas linhas onduladas pode aparecer na **inspeção** janela. Este ícone significa que o depurador não avalia a expressão devido à dependência potencial entre threads. Avaliar o código requer outros threads no seu aplicativo seja executado temporariamente, mas como você está no modo de interrupção, todos os threads em seu aplicativo geralmente são interrompidos. Permitir que outros threads sejam executados temporariamente pode ter efeitos inesperados no estado do seu aplicativo e o depurador podem ignorar eventos como pontos de interrupção e exceções nesses threads.
+Um círculo com duas linhas onduladas ícone pode aparecer na janela de **inspeção** . Esse ícone significa que o depurador não avalia a expressão devido a uma possível dependência entre threads. Avaliar o código requer que outros threads em seu aplicativo sejam executados temporariamente, mas como você está no modo de interrupção, todos os threads em seu aplicativo geralmente são interrompidos. Permitir que outros threads sejam executados temporariamente pode ter efeitos inesperados sobre o estado do seu aplicativo e o depurador pode ignorar eventos como pontos de interrupção e exceções nesses threads.
 
 ::: moniker range=">= vs-2019" 
-## <a name="search-in-the-watch-window"></a>Pesquisar na janela de inspeção
+## <a name="search-in-the-watch-window"></a>Pesquisar no janela Inspeção
 
-Você pode pesquisar por palavras-chave nas colunas de nome, valor e tipo de **inspeção** janela usando a barra de pesquisa acima de cada janela. Pressionar ENTER, ou selecione uma das setas para executar uma pesquisa. Para cancelar uma pesquisa em andamento, selecione o ícone "x" na barra de pesquisa.
+Você pode pesquisar palavras-chave nas colunas nome, valor e tipo da janela de **Observação** usando a barra de pesquisa acima de cada janela. Pressione ENTER ou selecione uma das setas para executar uma pesquisa. Para cancelar uma pesquisa em andamento, selecione o ícone "x" na barra de pesquisa.
 
-Use as setas à esquerda e direita (Shift + F3 e F3, respectivamente) navegar entre encontradas correspondências.
+Use as setas para a esquerda e para a direita (Shift + F3 e F3, respectivamente) para navegar entre as correspondências encontradas.
 
-![Pesquisa na janela inspeção](../debugger/media/ee-search-watch.png "pesquisa na janela Inspeção")
+![Pesquisar na janela de inspeção](../debugger/media/ee-search-watch.png "Pesquisar na janela de inspeção")
 
-Para tornar sua pesquisa mais ou menos completo, use o **pesquisa mais profunda** lista suspensa na parte superior das **inspeção** objetos aninhados de janela para selecionar quantos níveis de profundidade que você deseja pesquisar em. 
+Para tornar sua pesquisa mais ou menos completa, use a lista suspensa de **pesquisa mais profunda** na parte superior da janela de **Observação** para selecionar quantos níveis de profundidade você deseja pesquisar em objetos aninhados. 
+
+## <a name="pin-properties-in-the-watch-window"></a>Propriedades de PIN no janela Inspeção
+
+>[!NOTE]
+> Esse recurso tem suporte no .NET Core 3,0 ou superior.
+
+Você pode inspecionar objetos rapidamente por suas propriedades no janela Inspeção com a ferramenta de **Propriedades fixas** .  Para usar essa ferramenta, focalize uma propriedade e selecione o ícone de pino que aparece ou clique com o botão direito do mouse e selecione a opção **fixar membro como favorito** no menu de contexto resultante.  Isso faz com que essa propriedade apareça na parte superior da lista de propriedades do objeto e o nome e o valor da propriedade são exibidos na coluna **valor** .  Para Desafixar uma propriedade, selecione o ícone de fixação novamente ou selecione a opção **Desafixar membro como favorito** no menu de contexto.
+
+![Propriedades de PIN no janela Inspeção](../debugger/media/basic-pin-watch.gif "Propriedades de PIN no janela Inspeção")
+
+Você também pode alternar os nomes de propriedade e filtrar as propriedades não fixadas ao exibir a lista de propriedades do objeto na janela Inspeção.  Você pode acessar ambas as opções selecionando os botões na barra de ferramentas acima da janela Watch.
 
 ::: moniker-end
 
-### <a name="bkmk_refreshWatch"></a> Atualizar valores de inspeção
+### <a name="bkmk_refreshWatch"></a>Atualizar valores de inspeção
 
-Um ícone de atualização (seta circular) pode aparecer na **inspeção** janela quando uma expressão é avaliada. O ícone de atualização indica um erro ou um valor que está desatualizado.
+Um ícone de atualização (seta circular) pode aparecer na janela de **inspeção** quando uma expressão é avaliada. O ícone de atualização indica um erro ou um valor que está desatualizado.
 
-Para atualizar o valor, selecione o ícone de atualização, ou pressione a barra de espaços. O depurador tenta reavaliar a expressão. No entanto, não pode desejar ou conseguir reavaliar a expressão, dependendo por que o valor não foi avaliado.
+Para atualizar o valor, selecione o ícone de atualização ou pressione a barra de espaços. O depurador tenta reavaliar a expressão. No entanto, talvez você não queira ou consiga reavaliar a expressão, dependendo de por que o valor não foi avaliado.
 
-Passe o mouse sobre o ícone de atualização ou consulte os **valor** coluna para o motivo pelo qual a expressão não foi avaliada. Os motivos incluem:
+Focalize o ícone de atualização ou veja a coluna **valor** para o motivo pelo qual a expressão não foi avaliada. Os motivos incluem:
 
-- Ocorreu um erro como a expressão estava sendo avaliada, como no exemplo anterior. Um tempo limite pode ocorrer ou uma variável pode estar fora do escopo.
+- Ocorreu um erro porque a expressão estava sendo avaliada, como no exemplo anterior. Um tempo limite pode ocorrer ou uma variável pode estar fora do escopo.
 
-- A expressão tem uma chamada de função que pode disparar um efeito colateral no aplicativo. Ver [efeitos colaterais de expressão](#bkmk_sideEffects).
+- A expressão tem uma chamada de função que pode disparar um efeito colateral no aplicativo. Consulte [efeitos do lado da expressão](#bkmk_sideEffects).
 
-- A avaliação automática de propriedades e chamadas de função implícitas é desativada.
+- A avaliação automática de propriedades e chamadas de função implícitas está desabilitada.
 
-Se o ícone de atualização é exibida porque a avaliação automática de propriedades e chamadas de função implícitas é desativada, você pode habilitá-la selecionando **habilitar a avaliação de propriedade e outras chamadas de função implícitas** em **ferramentas**   >  **Opções** > **depuração** > **geral**.
+Se o ícone de atualização aparecer porque a avaliação automática de propriedades e chamadas de função implícitas está desabilitada, você pode habilitá-la selecionando **habilitar avaliação de propriedade e outras chamadas de função implícitas** em **ferramentas** > **Opções** > **depuração** > **geral**.
 
-Para demonstrar o uso o ícone de atualização:
+Para demonstrar o uso do ícone de atualização:
 
-1. Na **ferramentas** > **opções** > **depuração** > **geral**, desmarque o **Habilitar a avaliação de propriedade e outras chamadas de função implícitas** caixa de seleção.
+1. Em **ferramentas** > **opções** > **depuração** > **geral**, desmarque a caixa de seleção **habilitar avaliação de propriedade e outras chamadas de função implícitas** .
 
-1. Insira o código a seguir e, na **Watch** janela, definir uma inspeção no `list.Count` propriedade.
+1. Insira o código a seguir e, na janela **Watch** , defina uma inspeção na propriedade `list.Count`.
 
    ```csharp
    static void Main(string[] args)
@@ -136,36 +147,36 @@ Para demonstrar o uso o ícone de atualização:
    }
    ```
 
-1. Inicie a depuração. O **inspeção** janela mostra algo parecido com a seguinte mensagem:
+1. Inicie a depuração. A janela **Watch** mostra algo semelhante à seguinte mensagem:
 
-   ![Atualizar Watch](../debugger/media/refreshwatch.png "atualizar Watch")
+   ![Atualizar inspeção](../debugger/media/refreshwatch.png "Atualizar inspeção")
 
-1. Para atualizar o valor, selecione o ícone de atualização, ou pressione a barra de espaços. O depurador reavalia a expressão.
+1. Para atualizar o valor, selecione o ícone de atualização ou pressione a barra de espaços. O depurador reavalia a expressão.
 
-### <a name="bkmk_sideEffects"></a> Efeitos colaterais de expressão
+### <a name="bkmk_sideEffects"></a>Efeitos colaterais da expressão
 
-Avaliar algumas expressões pode alterar o valor de uma variável ou afetar o estado do seu aplicativo. Por exemplo, avaliar a expressão a seguir altera o valor de `var1`:
+Avaliar algumas expressões pode alterar o valor de uma variável ou, de outra forma, afetar o estado do seu aplicativo. Por exemplo, avaliar a expressão a seguir altera o valor de `var1`:
 
 ```csharp
 var1 = var2
 ```
 
-Esse código pode causar uma [efeito colateral](https://en.wikipedia.org/wiki/Side_effect_\(computer_science\)). Efeitos colaterais podem dificultar a depuração mais alterando a maneira como o aplicativo funciona.
+Esse código pode causar um [efeito colateral](https://en.wikipedia.org/wiki/Side_effect_\(computer_science\)). Os efeitos colaterais podem tornar a depuração mais difícil, alterando a maneira como seu aplicativo opera.
 
-Uma expressão com efeitos colaterais é avaliada apenas uma vez, quando você primeiro inseri-la. Depois disso, a expressão será exibido em cinza na **inspeção** janela e ainda mais as avaliações são desabilitados. A dica de ferramenta ou **valor** coluna explica que a expressão causa um efeito colateral. Você pode forçar a reavaliação selecionando o ícone de atualização que aparece ao lado do valor.
+Uma expressão com efeitos colaterais é avaliada apenas uma vez, quando você a insere primeiro. Depois disso, a expressão aparece esmaecida na janela **Watch** e outras avaliações são desabilitadas. A dica de ferramenta ou a coluna de **valor** explica que a expressão causa um efeito colateral. Você pode forçar a reavaliação selecionando o ícone de atualização que aparece ao lado do valor.
 
-Uma maneira de impedir a designação de efeitos colaterais é desativar a avaliação automática de funções. Na **ferramentas** > **opções** > **depuração** > **geral**, cancele a seleção de **Habilitar a avaliação de propriedade e outras chamadas de função implícitas**.
+Uma maneira de evitar a designação de efeitos colaterais é desativar a avaliação de função automática. Em **ferramentas** > **opções** > **depuração** > **geral**, desmarque **habilitar avaliação de propriedade e outras chamadas de função implícitas**.
 
-Para C# apenas, quando a avaliação de propriedades ou chamadas de função implícitas é desativada, você pode forçar a avaliação, adicionando o **CA** modificador de formato para uma variável **nome** no **Watch**  janela. Ver [especificadores em c# de formato](../debugger/format-specifiers-in-csharp.md).
+Somente C# para o, quando a avaliação de propriedades ou chamadas de função implícitas está desativada, você pode forçar a avaliação adicionando o modificador de formato **AC** a um **nome** de variável na janela **Watch** . Consulte [especificadores de formato C#em ](../debugger/format-specifiers-in-csharp.md).
 
-## <a name="bkmk_objectIds"></a> Usar IDs de objeto na janela de inspeção (C# e Visual Basic)
+## <a name="bkmk_objectIds"></a>Usar IDs de objeto no janela Inspeção (C# e Visual Basic)
 
-Às vezes você deseja observar o comportamento de um objeto específico. Por exemplo, você talvez queira controlar um objeto referenciado por uma variável local depois que essa variável tiver saído do escopo. No C# e Visual Basic, você pode criar IDs de objeto para instâncias específicas de tipos de referência e usá-los na **inspeção** janela e, em condições de ponto de interrupção. A ID de objeto é gerada pelo common language runtime (CLR) serviços de depuração e associada ao objeto.
+Às vezes, você deseja observar o comportamento de um objeto específico. Por exemplo, talvez você queira acompanhar um objeto referido por uma variável local depois que essa variável sair do escopo. No C# e Visual Basic, você pode criar IDs de objeto para instâncias específicas de tipos de referência e usá-las na janela **Watch** e nas condições de ponto de interrupção. A ID de objeto é gerada pelos serviços de depuração de Common Language Runtime (CLR) e associada ao objeto.
 
 > [!NOTE]
-> IDs de objeto criar referências fracas que não impedem que o objeto que está sendo coletado como lixo. Eles só são válidos para a sessão de depuração atual.
+> As IDs de objeto criam referências fracas que não impedem que o objeto seja coletado como lixo. Eles são válidos somente para a sessão de depuração atual.
 
-No código a seguir, o `MakePerson()` método cria um `Person` usando uma variável local:
+No código a seguir, o método `MakePerson()` cria um `Person` usando uma variável local:
 
 ```csharp
 class Person
@@ -200,53 +211,53 @@ public class Program
 }
 ```
 
-Para descobrir o nome da `Person` no `DoSomething()` método, você pode adicionar uma referência para o `Person` ID de objeto no **inspeção** janela.
+Para descobrir o nome do `Person` no método `DoSomething()`, você pode adicionar uma referência à ID do objeto `Person` na janela **Watch** .
 
-1. Defina um ponto de interrupção no código após o `Person` objeto foi criado.
+1. Defina um ponto de interrupção no código após a criação do objeto de `Person`.
 
 1. Inicie a depuração.
 
-1. Quando a execução pausa no ponto de interrupção, abra o **Locals** janela escolhendo **Debug** > **Windows** > **locais**.
+1. Quando a execução pausa no ponto de interrupção, abra a janela **locais** escolhendo **depurar** > **Windows** > **locais**.
 
-1. No **Locals** janela, com o botão direito do `Person` variável e selecione **criar ID de objeto**.
+1. Na janela **locais** , clique com o botão direito do mouse na variável `Person` e selecione **criar ID de objeto**.
 
-   Você verá um sinal de cifrão (**$**) e a um número no **locais** janela, que é a ID de objeto.
+   Você deve ver um sinal de dólar ( **$** ) mais um número na janela **locais** , que é a ID de objeto.
 
-1. Adicione a ID de objeto para o **Watch** janela clicando duas vezes a ID de objeto e selecionando **Adicionar inspeção**.
+1. Adicione a ID de objeto à janela de **inspeção** clicando com o botão direito do mouse na ID do objeto e selecionando **Adicionar inspeção**.
 
-1. Definir outro ponto de interrupção no `DoSomething()` método.
+1. Defina outro ponto de interrupção no método `DoSomething()`.
 
-1. Continue a depuração. Quando a execução pausa na `DoSomething()` método, o **inspeção** janela exibe o `Person` objeto.
+1. Continue a depuração. Quando a execução pausa no método `DoSomething()`, a janela **Watch** exibe o objeto `Person`.
 
    > [!NOTE]
-   > Se você deseja ver as propriedades do objeto, como `Person.Name`, você deve habilitar a avaliação da propriedade, selecionando **ferramentas** > **opções**  >   **Depurando** > **gerais** > **habilitar avaliação de propriedade e outras chamadas de função implícitas**.
+   > Se você quiser ver as propriedades do objeto, como `Person.Name`, deverá habilitar a avaliação de propriedade selecionando **ferramentas** > **opções** > **depuração** > **geral** > **habilitar a avaliação de propriedade e outras chamadas de função implícitas**.
 
-## <a name="dynamic-view-and-the-watch-window"></a>Modo de exibição dinâmico e a janela Inspeção
+## <a name="dynamic-view-and-the-watch-window"></a>Exibição dinâmica e o janela Inspeção
 
-Algumas linguagens de script (por exemplo, Python ou JavaScript) usam dinâmico ou [pato](https://en.wikipedia.org/wiki/Duck_typing) digitando e .NET versão 4.0 e posterior dá suporte a objetos que são difíceis de observar em janelas de depuração normais.
+Algumas linguagens de script (por exemplo, JavaScript ou Python) usam digitação dinâmica ou [pato](https://en.wikipedia.org/wiki/Duck_typing) , e o .net versão 4,0 e posterior dá suporte a objetos que são difíceis de observar nas janelas de depuração normais.
 
-O **Watch** janela exibe esses objetos como objetos dinâmicos, que são criados a partir de tipos que implementam o <xref:System.Dynamic.IDynamicMetaObjectProvider> interface. Nós de objeto dinâmico mostram os membros dinâmicos dos objetos dinâmicos, mas não permitem a edição dos valores de membro.
+A janela **Watch** exibe esses objetos como objetos dinâmicos, que são criados a partir de tipos que implementam a interface <xref:System.Dynamic.IDynamicMetaObjectProvider>. Nós de objetos dinâmicos mostram os membros dinâmicos dos objetos dinâmicos, mas não permitem a edição dos valores de membro.
 
-Para atualizar **modo de exibição dinâmico** valores, selecionadas o [ícone atualizar](#bkmk_refreshWatch) ao lado do nó de objeto dinâmico.
+Para atualizar os valores de **exibição dinâmica** , selecione o [ícone de atualização](#bkmk_refreshWatch) ao lado do nó de objeto dinâmico.
 
-Para exibir apenas o **modo de exibição dinâmico** para um objeto, adicione uma **dinâmico** especificador de formato após o nome de objeto dinâmico na **Assista** janela:
+Para exibir apenas a **exibição dinâmica** de um objeto, adicione um especificador de formato **dinâmico** após o nome do objeto dinâmico na janela **Watch** :
 
 - Para C#: `ObjectName, dynamic`
 - Para o Visual Basic: `$dynamic, ObjectName`
 
 >[!NOTE]
->- O C# depurador não reavalia automaticamente os valores de **modo de exibição dinâmico** quando você entrar para a próxima linha de código.
->- O depurador do Visual Basic é atualizada automaticamente expressões adicionadas por meio de **modo de exibição dinâmico**.
+>- O C# depurador não reavalia automaticamente os valores na **exibição dinâmica** quando você passar para a próxima linha de código.
+>- O depurador de Visual Basic atualiza automaticamente as expressões adicionadas por meio da **exibição dinâmica**.
 >- A avaliação dos membros de um **Modo de Exibição Dinâmico** pode ter [efeitos colaterais](https://en.wikipedia.org/wiki/Side_effect_\(computer_science\)).
 
-**Para inserir uma nova inspeção variável que converte um objeto em um objeto dinâmico:**
+**Para inserir uma nova variável Watch que converte um objeto em um objeto dinâmico:**
 
-1. Clique com botão direito qualquer filho de um **modo de exibição dinâmico**.
-1. Escolher **Adicionar inspeção**. O `object.name` se torna `((dynamic) object).name` e é exibido em uma nova **inspeção** janela.
+1. Clique com o botão direito do mouse em qualquer filho de uma **exibição dinâmica**.
+1. Escolha **Adicionar inspeção**. O `object.name` se torna `((dynamic) object).name` e aparece em uma nova janela de **inspeção** .
 
-O depurador também adiciona uma **modo de exibição dinâmico** nó filho do objeto para o **Autos** janela. Para abrir o **automóveis** janela, durante a depuração, selecione **Debug** > **Windows** > **Autos**.
+O depurador também adiciona um nó filho da **exibição dinâmica** do objeto à janela de **automóveis** . Para abrir a janela **automáticos** durante a depuração, selecione **depurar** > **automáticos**do **Windows** > .
 
-**Modo de exibição dinâmico** também melhora a depuração para objetos COM. Quando o depurador chega a um objeto COM encapsulado em **ComObject**, ele adiciona um **modo de exibição dinâmico** nó do objeto.
+A **exibição dinâmica** também aprimora a depuração de objetos com. Quando o depurador chega a um objeto COM encapsulado em **System. __ComObject**, ele adiciona um nó de **exibição dinâmica** para o objeto.
 
 ## <a name="observe-a-single-variable-or-expression-with-quickwatch"></a>Observar uma única variável ou expressão com QuickWatch
 
@@ -267,29 +278,29 @@ static void Main(string[] args)
 }
 ```
 
-Para observar o `a` variável,
+Para observar a variável `a`,
 
-1. Defina um ponto de interrupção a `a = a + b;` linha.
+1. Defina um ponto de interrupção na linha de `a = a + b;`.
 
 1. Inicie a depuração. A execução pausa no ponto de interrupção.
 
 1. Selecione a variável `a` no código.
 
-1. Selecione **Debug** > **QuickWatch**, pressione **Shift**+**F9**, ou clique com botão direito e selecione **QuickWatch**.
+1. Selecione **depurar** > **QuickWatch**, pressione **Shift**+**F9**ou clique com o botão direito do mouse e selecione **QuickWatch**.
 
-   O **QuickWatch** caixa de diálogo é exibida. O `a` variável está no **expressão** caixa com um **valor** de **1**.
+   A caixa de diálogo **QuickWatch** é exibida. A variável `a` está na caixa de **expressão** com um **valor** de **1**.
 
-   ![Variável QuickWatch](../debugger/media/quickwatchvariable.png "variável QuickWatch")
+   ![Variável QuickWatch](../debugger/media/quickwatchvariable.png "Variável QuickWatch")
 
-1. Para avaliar uma expressão usando a variável, digite uma expressão como `a + b` no **expressão** caixa e selecione **reavaliar**.
+1. Para avaliar uma expressão usando a variável, digite uma expressão como `a + b` na caixa **expressão** e selecione **reavaliar**.
 
-   ![Expressão QuickWatch](../debugger/media/quickwatchexpression.png "expressão QuickWatch")
+   ![Expressão QuickWatch](../debugger/media/quickwatchexpression.png "Expressão QuickWatch")
 
-1. Para adicionar a variável ou expressão de **QuickWatch** para o **inspeção** janela, selecione **Adicionar inspeção**.
+1. Para adicionar a variável ou expressão do **QuickWatch** à janela de **inspeção** , selecione **Adicionar inspeção**.
 
-1. Selecione **feche** para fechar o **QuickWatch** janela. (**QuickWatch** é uma caixa de diálogo modal, portanto, você não pode continuar a depuração, desde que ele está aberto.)
+1. Selecione **fechar** para fechar a janela **QuickWatch** . (**QuickWatch** é uma caixa de diálogo modal, portanto, você não pode continuar a depuração enquanto estiver aberta.)
 
-1. Continue a depuração. Você pode observar a variável na **inspeção** janela.
+1. Continue a depuração. Você pode observar a variável na janela **Watch** .
 
 ## <a name="see-also"></a>Consulte também
 - [O que é depuração?](../debugger/what-is-debugging.md)
