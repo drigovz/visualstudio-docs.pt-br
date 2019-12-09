@@ -3,17 +3,17 @@ title: 'Passo a passo: Criar um SDK usando JavaScript | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: a8c89d5d-5b78-4435-817f-c5f25ca6d715
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f15dc7ef3c5ab06857307081511f1c9aa2285566
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 61f18d2d7412b84827aaa9b6a229c80019716df4
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62796335"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66312546"
 ---
 # <a name="walkthrough-create-an-sdk-using-javascript"></a>Passo a passo: Criar um SDK usando JavaScript
 Este passo a passo ensina como usar JavaScript para criar uma matemática simples SDK como um Visual Studio VSIX (extensão).  O passo a passo é dividida nestas partes:
@@ -31,7 +31,7 @@ Este passo a passo ensina como usar JavaScript para criar uma matemática simple
 
 1. Na barra de menus, selecione **Arquivo** > **Novo** > **Projeto**.
 
-2. Na lista de categorias de modelo, sob **Visual c#**, selecione **extensibilidade**e, em seguida, selecione o **projeto VSIX** modelo.
+2. Na lista de categorias de modelo, sob **Visual c#** , selecione **extensibilidade**e, em seguida, selecione o **projeto VSIX** modelo.
 
 3. No **nome** texto, especifique `SimpleMathVSIX` e escolha o **Okey** botão.
 
@@ -96,7 +96,7 @@ Este passo a passo ensina como usar JavaScript para criar uma matemática simple
 
 14. No menu de atalho para o **\js\\**  pasta, escolha **Add** > **Novo Item**.
 
-15. Sob **itens do Visual c#**, selecione o **Web** categoria e, em seguida, selecione o **arquivo JavaScript** item. Nomeie o arquivo `arithmetic.js`e, em seguida, escolha o **Add** botão.
+15. Sob **itens do Visual c#** , selecione o **Web** categoria e, em seguida, selecione o **arquivo JavaScript** item. Nomeie o arquivo `arithmetic.js`e, em seguida, escolha o **Add** botão.
 
 16. Insira o seguinte código na *arithmetic.js*:
 
@@ -132,7 +132,7 @@ Este passo a passo ensina como usar JavaScript para criar uma matemática simple
 
 18. Na **Gerenciador de soluções**, no menu de atalho para o **SimpleMathVSIX** do projeto, escolha **Build**.
 
-19. Depois que a compilação for concluída com êxito, no menu de atalho do projeto, escolha **Abrir pasta no Explorador de arquivos**. Navegue até **\bin\debug\\**e execute `SimpleMathVSIX.vsix` para instalá-lo.
+19. Depois que a compilação for concluída com êxito, no menu de atalho do projeto, escolha **Abrir pasta no Explorador de arquivos**. Navegue até **\bin\debug\\** e execute `SimpleMathVSIX.vsix` para instalá-lo.
 
 20. Escolha o **instalar** botão e permitem a instalação completa.
 

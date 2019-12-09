@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugSymbolProvider::GetAddressesFromContext method
 ms.assetid: a3124883-a255-4543-a5ec-e1c7a97beb69
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a7b28010f117b1bb6616250f1e188bd5acb38cda
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: ff38d2bd286c0a1ff82aafc3526936447be69056
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62915854"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66335214"
 ---
 # <a name="idebugsymbolprovidergetaddressesfromcontext"></a>IDebugSymbolProvider::GetAddressesFromContext
 Esse método mapeia um contexto de documento em uma matriz de endereços de depuração.
@@ -42,22 +45,18 @@ int GetAddressesFromContext(
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `pDocContext`
+## <a name="parameters"></a>Parâmetros
+`pDocContext`\
+[in] O contexto do documento.
 
- [in] O contexto do documento.
+`fStatmentOnly`\
+[in] Se for TRUE, limita os endereços de depuração para uma única instrução.
 
- `fStatmentOnly`
+`ppEnumBegAddresses`\
+[out] Retorna um enumerador para os endereços iniciais de depuração associados com essa linha ou a instrução.
 
- [in] Se for TRUE, limita os endereços de depuração para uma única instrução.
-
- `ppEnumBegAddresses`
-
- [out] Retorna um enumerador para os endereços iniciais de depuração associados com essa linha ou a instrução.
-
- `ppEnumEndAddresses`
-
- [out] Retorna um [IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md) enumerador para os endereços de depuração final associados a essa linha ou a instrução.
+`ppEnumEndAddresses`\
+[out] Retorna um [IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md) enumerador para os endereços de depuração final associados a essa linha ou a instrução.
 
 ## <a name="return-value"></a>Valor de retorno
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c962a9bbdebe10b97c47b67b6ce0597027f2c25b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2bc097330e1585e34f308288f1933c2fa2d5b524
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62832339"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741941"
 ---
 # <a name="idiasessiongetenumdebugstreams"></a>IDiaSession::getEnumDebugStreams
 Recupera uma sequência enumerada de fluxos de dados de depuração.
@@ -33,9 +33,9 @@ HRESULT getEnumDebugStreams ( 
 #### <a name="parameters"></a>Parâmetros
  `ppEnumDebugStreams`
 
-[out] Retorna um [IDiaEnumDebugStreams](../../debugger/debug-interface-access/idiaenumdebugstreams.md) objeto que contém uma lista dos fluxos de depuração.
+fora Retorna um objeto [IDiaEnumDebugStreams](../../debugger/debug-interface-access/idiaenumdebugstreams.md) que contém uma lista de fluxos de depuração.
 
-## <a name="return-value"></a>Valor de retorno
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
 
 ## <a name="see-also"></a>Consulte também

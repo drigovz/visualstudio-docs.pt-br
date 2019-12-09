@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBinder::ResolveRuntimeType method
 ms.assetid: 6456ab3e-1c03-4f3c-91f9-16797ab7f5e7
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f1d4622e1de76406568cda4761005c5482f3169d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: b2954b5f2a1ac4dd14485a1b924423ba53fddcb7
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62877491"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66315161"
 ---
 # <a name="idebugbinderresolveruntimetype"></a>IDebugBinder::ResolveRuntimeType
 Este método determina o tipo de tempo de execução de um objeto.
@@ -38,14 +41,12 @@ int ResolveRuntimeType(
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `pObject`
+## <a name="parameters"></a>Parâmetros
+`pObject`\
+[in] O [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) sejam resolvidos.
 
- [in] O [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) sejam resolvidos.
-
- `ppResolved`
-
- [out] Retorna o tipo do objeto como um [IDebugField](../../../extensibility/debugger/reference/idebugfield.md).
+`ppResolved`\
+[out] Retorna o tipo do objeto como um [IDebugField](../../../extensibility/debugger/reference/idebugfield.md).
 
 ## <a name="return-value"></a>Valor de retorno
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.

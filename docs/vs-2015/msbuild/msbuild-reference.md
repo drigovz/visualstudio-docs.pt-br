@@ -16,12 +16,12 @@ caps.latest.revision: 28
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b80e0e7daed1c426ea30c3da9a4e2324d33f48bb
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 8dfa8314ffe8f174422519ba549d9949cc36b764
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59650294"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65683007"
 ---
 # <a name="msbuild-reference"></a>Referência do MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -72,7 +72,7 @@ ms.locfileid: "59650294"
  Lista os caracteres que podem ter “escapado” para serem interpretados corretamente. Uma sequência de escape é uma série de caracteres que indica que o que segue se trata de uma interpretação alternativa.  
   
 ## <a name="related-sections"></a>Seções relacionadas  
- [Visão geral do MSBuild](http://msdn.microsoft.com/e39f13f7-1e1d-4435-95ca-0c222bca071c) Apresenta o [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] e fornece links para tópicos que explicam como usá-lo para criar projetos.  
+ [Visão geral do MSBuild](https://msdn.microsoft.com/e39f13f7-1e1d-4435-95ca-0c222bca071c) Apresenta o [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] e fornece links para tópicos que explicam como usá-lo para criar projetos.  
   
  <xref:Microsoft.Build.Conversion>  
  Contém a referência ao namespace de conversão  

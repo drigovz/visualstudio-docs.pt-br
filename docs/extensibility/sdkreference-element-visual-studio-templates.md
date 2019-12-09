@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
 ms.assetid: 72c8b352-0b7a-42b3-ba5d-2a2d1e90c34b
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 692b8600d1de2cbbb17841dd174c4a18010c41d6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3cf1b3bed942894e20132ecd7b06c1884caa9a93
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62800245"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72720085"
 ---
 # <a name="sdkreference-element-visual-studio-templates"></a>Elemento SDKReference (Modelos do Visual Studio)
 Especifica que o modelo de item usa uma referência de SDK.
@@ -48,7 +48,7 @@ Especifica que o modelo de item usa uma referência de SDK.
  Um valor de texto é obrigatório.
 
 ## <a name="remarks"></a>Comentários
- Esse texto Especifica a referência SDK para adicionar a um projeto quando o modelo de item é instanciado.
+ Esse texto especifica a referência do SDK a ser adicionada a um projeto quando o modelo de item é instanciado.
 
 ```xml
 <VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Item">

@@ -1,5 +1,5 @@
 ---
-title: IDiaSymbol::get_numberOfAcceleratorPointerTags | Microsoft Docs
+title: 'IDiaSymbol:: get_numberOfAcceleratorPointerTags | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 283533b20614ea727be620669ea5ab66cf00e5ed
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 47c5827348c7b7cb450017a0e6176d71f555c841
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62835768"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739694"
 ---
-# <a name="idiasymbolgetnumberofacceleratorpointertags"></a>IDiaSymbol::get_numberOfAcceleratorPointerTags
-Retorna o número de marcas de ponteiro de acelerador em uma função de stub do C++ AMP.
+# <a name="idiasymbolget_numberofacceleratorpointertags"></a>IDiaSymbol::get_numberOfAcceleratorPointerTags
+Retorna o número de marcas do ponteiro do acelerador em uma C++ função de stub de amp.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -30,13 +30,13 @@ HRESULT get_numberOfAcceleratorPointerTags(
 #### <a name="parameters"></a>Parâmetros
  `count`
 
-[out] Um ponteiro para um `DWORD` que contém o número de acelerador de marcas de ponteiro em um C++ função de stub AMP.
+fora Um ponteiro para um `DWORD` que contém o número de marcas de ponteiro de aceleração em uma C++ função de stub de amp.
 
-## <a name="return-value"></a>Valor de retorno
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE` ou um código de erro.
 
 ## <a name="remarks"></a>Comentários
- Esse método é chamado em um `IDiaSymbol` interface que corresponde a uma função de stub do acelerador de C++ AMP.
+ Esse método é chamado em uma interface `IDiaSymbol` que corresponde a uma C++ função de stub do amp Accelerator.
 
 ## <a name="see-also"></a>Consulte também
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

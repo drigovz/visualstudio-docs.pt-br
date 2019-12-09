@@ -14,25 +14,25 @@ ms.assetid: b6a54a93-7fc9-459a-bdd6-f42d1ce40b5f
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6ec548ff629663e647d2d153ff87caa4edb1dd21
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 267dcc5af0870132a14c679c7fc26589d6b776c9
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63007133"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576582"
 ---
 # <a name="invalid-character-javascript"></a>Caractere inválido (JavaScript)
-É composto por um identificador usando um caractere (ou caracteres) não reconhecido como válido, o [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] compilador. Caracteres válidos usam as seguintes regras:  
+Você compostou um identificador usando um caractere (ou caracteres) não reconhecido como válido pelo compilador [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]. Os caracteres válidos usam as seguintes regras:  
   
-- O primeiro caractere deve ser uma letra ASCII (maiuscula ou minúscula) ou um sublinhado (_).  
+- O primeiro caractere deve ser uma letra ASCII (maiúsculas ou minúsculas) ou um sublinhado (_).  
   
-- Os caracteres subsequentes podem ser letras, números ou sublinhados ASCII.  
+- Os caracteres subsequentes podem ser letras ASCII, números ou sublinhados.  
   
 - O nome do identificador não pode ser uma palavra reservada.  
   
-### <a name="to-correct-this-error"></a>Para corrigir este erro  
+### <a name="to-correct-this-error"></a>Para corrigir esse erro  
   
-- Evite usar caracteres que não são parte do [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] definição de linguagem.  
+- Evite usar caracteres que não fazem parte da definição de linguagem [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)].  
   
 ## <a name="see-also"></a>Consulte também  
  [Variáveis](../../javascript/variables-javascript.md)   

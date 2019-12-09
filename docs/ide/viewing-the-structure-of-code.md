@@ -1,7 +1,7 @@
 ---
-title: Exibir a estrutura de código usando o modo de exibição de classe, hierarquia de chamadas, pesquisador de objetos e janela de definição de código
-ms.date: 05/18/2018
-ms.topic: conceptual
+title: Janela de modo de exibição de classe, hierarquia de chamada, pesquisador de objetos, definição de código
+ms.date: 09/19/2019
+ms.topic: reference
 f1_keywords:
 - vs.documentoutline.window
 - vs.objectbrowser
@@ -20,21 +20,21 @@ helpviewer_keywords:
 - Visual Studio, call hierarchy window
 - class view
 - object browser
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d1072e6e9a2b097d9d2f50cc372ee8ba621e3d3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 0fc7ade360ac586f09eb838057251172be5d0e81
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62582067"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647302"
 ---
 # <a name="view-the-structure-of-code-using-different-tool-windows"></a>Exibir a estrutura do código usando janelas de ferramentas diferentes
 
-Você pode examinar as classes e seus membros no Visual Studio usando várias janelas de ferramentas, incluindo **Modo de Exibição de Classe**, **Hierarquia de Chamadas**, **Pesquisador de Objetos** e **Definição de Código** (somente C++). Essas ferramentas podem examinar código em projetos do Visual Studio, componentes do .NET Framework, componentes COM, DLL (bibliotecas de vínculo dinâmico) e TLB (bibliotecas de tipos).
+Você pode examinar as classes e seus membros no Visual Studio usando várias janelas de ferramentas, incluindo **Modo de Exibição de Classe**, **Hierarquia de Chamadas**, **Pesquisador de Objetos** e **Definição de Código** (somente C++). Essas janelas de ferramentas podem examinar o código em projetos do Visual Studio, componentes .NET, componentes COM, DLL (bibliotecas de vínculo dinâmico) e TLB (bibliotecas de tipos).
 
 Também é possível usar o **Gerenciador de Soluções** para procurar os tipos e membros em seus projetos, pesquisar símbolos, exibir a hierarquia de chamada de um método, localizar referências de símbolos e muito mais, sem precisar mudar entre as várias janelas de ferramentas.
 
@@ -56,8 +56,8 @@ A barra de ferramentas **Modo de Exibição de Classe** contém os comandos a se
 
 |||
 |-|-|
-|**Nova Pasta**|Cria uma pasta ou subpasta virtual na qual você pode organizar os elementos usados com frequência. Eles são salvos no arquivo da solução ativa (*.suo*). Após você renomear ou excluir um elemento em seu código, ele pode aparecer em uma pasta virtual como um nó de erro. Para corrigir esse problema, exclua o nó de erro. Se tiver renomeado um elemento, você pode movê-lo da hierarquia do projeto para a pasta novamente.|
-|**Voltar**|Navega para o item selecionado anteriormente.|
+|**Nova Pasta**|Cria uma pasta ou subpasta virtual na qual você pode organizar os elementos usados com frequência. Eles são salvos no arquivo da solução ativa ( *.suo*). Após você renomear ou excluir um elemento em seu código, ele pode aparecer em uma pasta virtual como um nó de erro. Para corrigir esse problema, exclua o nó de erro. Se tiver renomeado um elemento, você pode movê-lo da hierarquia do projeto para a pasta novamente.|
+|**Atrás**|Navega para o item selecionado anteriormente.|
 |**Avançar**|Navega para o item selecionado seguinte.|
 |**Exibir em Diagrama de Classe** (somente em projetos de código gerenciado)|É disponibilizado quando você seleciona um namespace ou tipo no **Modo de Exibição de Classe**. Quando um namespace é selecionado, o diagrama de classe mostra todos os tipos contidos nele. Quando um tipo é selecionado, o diagrama de classe mostra apenas esse tipo.|
 
@@ -68,18 +68,17 @@ O botão **Configurações do Modo de Exibição de Classe** na barra de ferrame
 |||
 |-|-|
 |**Mostrar Tipos Base**|Tipos base são exibidos.|
-|**Mostrar Tipos Derivados**|Tipos derivados são exibidos.|
+|**Mostrar referências de projeto**|As referências de projeto são exibidas.|
 |**Mostrar Tipos e Membros Ocultos**|Tipos e membros ocultos (que não devem ser usados por clientes) são exibidos em texto cinza claro.|
 |**Mostrar Membros Públicos**|Membros públicos são exibidos.|
 |**Mostrar Membros Protegidos**|Membros protegidos são exibidos.|
 |**Mostrar Membros Particulares**|Membros particulares são exibidos.|
 |**Mostrar Outros Membros**|Outros tipos de membros são exibidos, incluindo membros internos (ou Amigos no Visual Basic).|
 |**Mostrar Membros Herdados**|Membros herdados são exibidos.|
-|**Mostrar Métodos de Extensão**|Métodos de extensão são exibidos.|
 
 ### <a name="class-view-shortcut-menu"></a>Menu de atalho do Modo de Exibição de Classe
 
-O menu de atalho no **Modo de Exibição de Classe** pode conter os seguintes comandos, dependendo do tipo de projeto selecionado:
+O menu de atalho (ou clique com o botão direito do mouse) no **modo de exibição de classe** pode conter os seguintes comandos, dependendo do tipo de projeto selecionado:
 
 |||
 |-|-|
@@ -157,7 +156,6 @@ Usar o botão **Configurações do Pesquisador de Objetos** na barra de ferramen
 |**Exibir Namespaces**|Exibe namespaces em vez de contêineres físicos, no painel esquerdo. Namespaces armazenados em vários contêineres físicos são mesclados.|
 |**Exibir Contêineres**|Exibe contêineres físicos em vez de namespaces, no painel esquerdo. As configurações **Exibir Namespaces** e **Exibir Contêineres** são mutuamente exclusivas.|
 |**Mostrar Tipos Base**|Exibe tipos de base.|
-|**Mostrar Tipos Derivados**|Exibe tipos derivados.|
 |**Mostrar Tipos e Membros Ocultos**|Exibe tipos e membros ocultos (que não devem ser usados por clientes) em texto cinza claro.|
 |**Mostrar Membros Públicos**|Exibe membros públicos.|
 |**Mostrar Membros Protegidos**|Exibe membros protegidos.|
@@ -168,7 +166,7 @@ Usar o botão **Configurações do Pesquisador de Objetos** na barra de ferramen
 
 ### <a name="object-browser-shortcut-menu-commands"></a>Comandos do menu de atalho do Pesquisador de Objetos
 
-O menu de atalho no **Pesquisador de Objetos** pode conter os seguintes comandos, dependendo do tipo de item selecionado:
+O menu de atalho (ou clique com o botão direito do mouse) no **pesquisador de objetos** pode conter os seguintes comandos, dependendo do tipo de item selecionado:
 
 |||
 |-|-|
@@ -197,7 +195,7 @@ Embora essa janela seja somente leitura, você pode definir pontos de interrupç
 
 ### <a name="code-definition-shortcut-menu"></a>Menu de atalho de Definição de Código
 
-O menu de atalho na Janela de **Definição de Código** pode conter os seguintes comandos:
+O menu de atalho (ou clique com o botão direito do mouse) na janela de **definição de código** pode conter os seguintes comandos:
 
 |||
 |-|-|

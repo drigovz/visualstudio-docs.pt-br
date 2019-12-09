@@ -1,65 +1,70 @@
 ---
 title: Criando e Editando Configurações de Build
 description: Este artigo descreve como criar configurações de build no Visual Studio para Mac
-author: conceptdev
-ms.author: crdun
-ms.date: 05/06/2018
+author: heiligerdankgesang
+ms.author: dominicn
+ms.date: 09/18/2019
 ms.assetid: CC1B72D6-12FF-4CCC-A9D4-00F2DC14589F
 ms.custom: video
-ms.openlocfilehash: 14a9ed8423779ad878fb5c304bbb6d28e1945a91
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 26f6e25bfe1284fc31bcd484b905bf5d75c2ba15
+ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62983294"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71128432"
 ---
 # <a name="creating-and-editing-build-configurations"></a>Criando e editando configurações de build
 
-Configurações de build podem ser criadas para projetos individuais ou para toda uma solução. Essas configurações oferecem um controle preciso sobre um build.
+As configurações de Build oferecem um controle preciso sobre uma compilação, permitindo que você crie configurações para atender a diferentes situações de teste e distribuição. Você pode criar configurações de compilação para projetos individuais ou em toda a solução.
 
-O menu de opções de projetos e soluções fornece uma área para criar e editar configurações novas e existentes.
+Você pode criar novas configurações e editar as existentes para projetos e soluções usando a caixa de diálogo opções do projeto.
 
-## <a name="creating-a-project-build-configurations"></a>Criar as configurações de build de um projeto
+>[!NOTE]
+>Este tópico se aplica ao Visual Studio para Mac. Para o Visual Studio no Windows, [consulte Como: Criar e editar configurações](/visualstudio/ide/how-to-create-and-edit-configurations).
 
-Para a configuração de build de um projeto, execute as seguintes etapas:
+## <a name="creating-a-project-build-configuration"></a>Criando uma configuração de compilação do projeto
 
-1. Clique com botão direito do mouse no nó do projeto e selecione **Opções**.
+Para criar uma configuração de compilação de projeto, siga estas etapas:
+
+1. Clique com botão direito do mouse no nó do projeto e selecione **Opções**. Você também pode clicar duas vezes no nó do projeto para abrir a caixa de diálogo opções do projeto.
 
 2. Na caixa de diálogo Opções do Projeto, selecione **Compilar > Configurações**:
 
     ![Gerenciador de configurações nas opções do projeto](media/create-and-edit-configurations-image2.png)
 
-3. Para criar uma nova configuração, selecione **Adicionar**. Outra opção é copiar uma das configurações existentes.
+3. Selecione **Adicionar** para criar uma nova configuração. Você também pode copiar qualquer uma das configurações existentes.
 
-Após criar a configuração, você pode usar a seção **Build** nas Opções do projeto para adaptar as propriedades adequadas para sua configuração:
+Depois de criar a configuração, você pode usar a seção **Build** nas opções de projeto para adaptar as propriedades apropriadas à sua configuração:
 
 ![Configurar opções de build](media/create-and-edit-configurations-image3.png)
 
 ## <a name="creating-a-solution-build-configuration"></a>Criando uma configuração de build da solução
 
-Para criar uma configuração de build de uma solução, execute as seguintes etapas:
+Para criar uma configuração de compilação de solução, siga estas etapas:
 
-1. Clique com botão direito do mouse no nó da Solução e selecione **Opções**.
+1. Clique com o botão direito do mouse no nó da solução e selecione **Opções**. Você também pode clicar duas vezes no nó da solução para abrir a caixa de diálogo opções de solução.
 
 2. Na caixa de diálogo Opções da Solução, selecione **Compilar > Configurações**:
 
     ![Gerenciador de configurações nas opções da solução](media/create-and-edit-configurations-image1.png)
 
-3. Para criar uma nova configuração, selecione **Adicionar**. Outra opção é copiar uma das configurações existentes.
+3. Selecione **Adicionar** para criar uma nova configuração. Você também pode copiar qualquer uma das configurações existentes.
 
-Após criar a configuração, você pode usar a seção **Build** nas opções de cada projeto para adaptar as propriedades adequadas para sua configuração:
+Depois de criar a configuração, você pode usar a seção **Build** da caixa de diálogo de opções do projeto para cada um dos seus projetos para adaptar as propriedades apropriadas à sua configuração:
 
 ![Configurar opções de build](media/create-and-edit-configurations-image3.png)
 
-## <a name="editing-a-build-configuration"></a>Editando uma configuração de build
+## <a name="renaming-a-build-configuration"></a>Renomeando uma configuração de compilação
 
-Para renomear uma configuração, selecione-a na lista de Configurações das Opções do Projeto ou da Solução:
+Para renomear uma configuração, selecione-a na lista de configuração navegando para **criar > configurações** nas opções de projeto ou solução:
 
 ![lista de configurações](media/create-and-edit-configurations-image4.png)
 
 Selecione o botão **Renomear**.
 
 ![renomear caixa de diálogo](media/create-and-edit-configurations-image5.png)
+
+Em seguida, clique em **OK** para confirmar.
 
 ## <a name="related-video"></a>Vídeo relacionados
 

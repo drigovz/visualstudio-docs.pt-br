@@ -6,29 +6,29 @@ ms.technology: vs-ide-modeling
 ms.topic: conceptual
 ms.assetid: be8f2ffe-a322-4ac0-9c9e-873bd28e5d5e
 caps.latest.revision: 4
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 6503efd0fa606042089e26b4cac23adcabdcb6e7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: a42ec6a762655589bfd589ae9dc0354e3a7d1cb5
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60041010"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72659313"
 ---
 # <a name="vs-shell-deployment"></a>Implantação do VS Shell
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Um shell isolado permite que você determine quais Visual Studio funcionalidade que você precisa interagir com sua linguagem específica do domínio e como essa solução deve ser exibidos. Para obter mais informações sobre o shell isolado do Visual Studio, consulte [personalizar o Shell isolado](../extensibility/customizing-the-isolated-shell.md). Você pode encontrar mais informações sobre como personalizar o shell isolado no [personalizar o Shell isolado](http://msdn.microsoft.com/d75463cd-1155-42e4-8b7a-046ed6becbbf).  
-  
-### <a name="to-set-a-visual-studio-shell-as-the-deployment-target"></a>Para definir um Shell do Visual Studio como o destino de implantação  
-  
-1. No **DslPackage** projeto, abra **source.extension.tt**.  
-  
-2. Sob `<SupportedProducts>` inserir:  
-  
-    ```  
-    <IsolatedShell Version="1.0">MyIsolatedShell</IsolatedShell>  
-    ```  
-  
-     Substitua *MyIsolatedShell* com o nome do seu pacote de shell isolado.
+Um shell isolado permite que você determine qual funcionalidade do Visual Studio você precisa para interagir com sua linguagem específica de domínio e como essa solução deve ser exibida. Para obter mais informações sobre o Shell isolado do Visual Studio, consulte [Personalizando o Shell isolado](../extensibility/customizing-the-isolated-shell.md). Você pode encontrar mais informações sobre como personalizar o Shell isolado na [personalização do Shell isolado](https://msdn.microsoft.com/d75463cd-1155-42e4-8b7a-046ed6becbbf).
+
+### <a name="to-set-a-visual-studio-shell-as-the-deployment-target"></a>Para definir um shell do Visual Studio como o destino de implantação
+
+1. No projeto **DslPackage** , abra **Source.Extension.tt**.
+
+2. Em `<SupportedProducts>` inserir:
+
+    ```
+    <IsolatedShell Version="1.0">MyIsolatedShell</IsolatedShell>
+    ```
+
+     Substitua *MyIsolatedShell* pelo nome do seu pacote de shell isolado.

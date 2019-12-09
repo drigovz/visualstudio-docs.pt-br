@@ -1,5 +1,5 @@
 ---
-title: Compilação condicional está desativada | Microsoft Docs
+title: A compilação condicional está desativada | Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -14,31 +14,31 @@ ms.assetid: 59a030b0-a6c6-47f2-b90e-c0ed204d5116
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8317121b840d82ab12d4a9e1ca50f6680eb1e21d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 56621d6f7fcc195a4ece7654adeafd1096c37e8b
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946570"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572934"
 ---
 # <a name="conditional-compilation-is-turned-off"></a>Compilação condicional está desativada
-Você tentou usar uma variável de compilação condicional sem primeiro compilação condicional de ativação no. Ativar a compilação condicional informa o [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] compilador a interpretar os identificadores que começam com como variáveis de compilação condicional. Você pode fazer isso, a partir de seu código condicional com a instrução:  
+Você tentou usar uma variável de compilação condicional sem primeiro ativar a compilação condicional. A ativação da compilação condicional diz ao compilador de [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] para interpretar identificadores começando com @ como variáveis de compilação condicional. Você faz isso iniciando o código condicional com a instrução:  
   
 ```js
 /*@cc_on @*/  
 ```  
   
-### <a name="to-correct-this-error"></a>Para corrigir este erro  
+### <a name="to-correct-this-error"></a>Para corrigir esse erro  
   
-- Adicione a seguinte instrução para o início do seu código condicional:  
+- Adicione a seguinte instrução ao início do seu código condicional:  
   
     ```JavaScript  
     /*@cc_on @*/  
     ```  
   
 ## <a name="see-also"></a>Consulte também  
- [Compilação condicional](../../javascript/advanced/conditional-compilation-javascript.md)   
+   de [compilação condicional](../../javascript/advanced/conditional-compilation-javascript.md)  
  [Variáveis de compilação condicional](../../javascript/advanced/conditional-compilation-variables-javascript.md)   
- [@cc_on Statement](../../javascript/reference/at-cc-on-statement-javascript.md)   
- [@if Statement](../../javascript/reference/at-if-statement-javascript.md)   
+ [instrução de@cc_on](../../javascript/reference/at-cc-on-statement-javascript.md)   
+ [instrução de@if](../../javascript/reference/at-if-statement-javascript.md)   
  [Instrução @set](../../javascript/reference/at-set-statement-javascript.md)

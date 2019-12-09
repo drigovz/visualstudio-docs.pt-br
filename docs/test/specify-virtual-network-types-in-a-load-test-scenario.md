@@ -9,15 +9,15 @@ helpviewer_keywords:
 - load tests, virtual networks
 - network mix
 ms.assetid: 3c4f7874-081a-4ec4-9510-4d6d7d863a11
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 8444fa5910658ab92643b2110483efc059560674
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: dbf5dbbd9f2726eee368a3066bda686f803d46fb
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62990662"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72659940"
 ---
 # <a name="specify-virtual-network-types-in-a-load-test-scenario"></a>Especificar tipos de rede virtual em um cenário de teste de carga
 
@@ -86,16 +86,16 @@ A emulação de rede verdadeira pode ser usada por desenvolvedores e testadores 
 
 ## <a name="about-the-mix-control"></a>Sobre o controle misto
 
- O controle misto permite que você ajuste a porcentagem de carga distribuída entre testes, tipos de navegador ou tipos de rede em um cenário de teste de carga. Para ajustar os valores da porcentagem, mova os controles deslizantes. O ajuste da combinação dos tipos de rede especifica a probabilidade de um usuário virtual executar um perfil de rede específico em um cenário de teste de carga.
+O controle misto permite que você ajuste a porcentagem de carga distribuída entre testes, tipos de navegador ou tipos de rede em um cenário de teste de carga. Para ajustar os valores da porcentagem, mova os controles deslizantes. O ajuste da combinação dos tipos de rede especifica a probabilidade de um usuário virtual executar um perfil de rede específico em um cenário de teste de carga.
 
- Quando você move um controle deslizante, os valores de porcentagem de todos os itens disponíveis mudam. Se você tiver mais de dois itens, a quantidade adicionada ou removida será distribuída por igual entre os outros itens. É possível substituir esse comportamento. Se marcar a caixa de seleção na coluna de cadeado de um item específico, você bloqueará o valor de porcentagem especificado do item. Então, quando você mover um controle deslizante, o valor adicionado ou removido só será aplicado aos itens desbloqueados restantes.
+Quando você move um controle deslizante, os valores de porcentagem de todos os itens disponíveis mudam. Se você tiver mais de dois itens, a quantidade adicionada ou removida será distribuída por igual entre os outros itens. É possível substituir esse comportamento. Se marcar a caixa de seleção na coluna de cadeado de um item específico, você bloqueará o valor de porcentagem especificado do item. Então, quando você mover um controle deslizante, o valor adicionado ou removido só será aplicado aos itens desbloqueados restantes.
 
- O botão **Distribuir** é usado para alocar igualmente os valores de percentual entre todos os itens. Por exemplo, se você tiver três itens, escolher **Distribuir** define os valores de percentual como 34, 33 e 33.
+O botão **Distribuir** é usado para alocar igualmente os valores de percentual entre todos os itens. Por exemplo, se você tiver três itens, escolher **Distribuir** define os valores de percentual como 34, 33 e 33.
 
 > [!WARNING]
 > O botão **Distribuir** substitui todos os itens bloqueados.
 
- Também é possível digitar os valores de percentual diretamente na coluna **%** em vez de usar os controles deslizantes. Se você inserir um valor de porcentagem diretamente, os outros itens não serão ajustados automaticamente.
+Também é possível digitar os valores de percentual diretamente na coluna **%** em vez de usar os controles deslizantes. Se você inserir um valor de porcentagem diretamente, os outros itens não serão ajustados automaticamente.
 
 > [!NOTE]
 > Os controles deslizantes serão desabilitados quando o total não for 100% ou quando os valores de percentual inseridos na coluna **%** forem decimais.

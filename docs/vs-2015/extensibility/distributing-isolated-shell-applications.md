@@ -9,13 +9,13 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: bf0d8a4cab8d30a56e84d1a6869c2c842b982aea
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58928890"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68204670"
 ---
-# <a name="distributing-isolated-shell-applications"></a>Distribuição de aplicativos de Shell isolado
+# <a name="distributing-isolated-shell-applications"></a>Distribuir aplicativos de Shell isolado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Você deve instalar o Visual Studio e SDK do Visual Studio para criar um aplicativo de shell isolado. Para distribuir o aplicativo para as máquinas de outros usuários ou clientes, você deve incluir um pacote redistribuível especial para o shell isolado.  

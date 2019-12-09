@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - ADDRESS_KIND enumeration
 ms.assetid: 3a12fbec-7088-4cf9-8f6f-ad8ddec6009a
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 71888e4e0b339b9b9b94946e8d9c49f8ffb1f84c
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: f80eb44c4f24340d26ab0b7aa1b5290760da6c77
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56696814"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66327335"
 ---
 # <a name="addresskind"></a>ADDRESS_KIND
 Especifica os tipos de endereços.
@@ -53,24 +56,33 @@ public enum enum_ADDRESS_KIND {
 };
 ```
 
-## <a name="terms"></a>Termos
-ADDRESS_KIND_NATIVE um endereço nativo, representado pela [NATIVE_ADDRESS](../../../extensibility/debugger/reference/native-address.md) estrutura.
+## <a name="fields"></a>Campos
+`ADDRESS_KIND_NATIVE`\
+Um endereço nativo, representado pela [NATIVE_ADDRESS](../../../extensibility/debugger/reference/native-address.md) estrutura.
 
-ADDRESS_KIND_UNMANAGED_THIS_RELATIVE um endereço não gerenciado relativo a um `this` (`Me` no Visual Basic) ponteiro e são representados pela [UNMANAGED_ADDRESS_THIS_RELATIVE](../../../extensibility/debugger/reference/unmanaged-address-this-relative.md) estrutura.
+`ADDRESS_KIND_UNMANAGED_THIS_RELATIVE`\
+Um endereço não gerenciado relativo a um `this` (`Me` no Visual Basic) ponteiro e são representados pela [UNMANAGED_ADDRESS_THIS_RELATIVE](../../../extensibility/debugger/reference/unmanaged-address-this-relative.md) estrutura.
 
-ADDRESS_KIND_UNMANAGED_PHYSICAL um endereço físico não gerenciado, representado pela [UNMANAGED_ADDRESS_PHYSICAL](../../../extensibility/debugger/reference/unmanaged-address-physical.md) estrutura.
+`ADDRESS_KIND_UNMANAGED_PHYSICAL`\
+Um endereço físico não gerenciado, representado pela [UNMANAGED_ADDRESS_PHYSICAL](../../../extensibility/debugger/reference/unmanaged-address-physical.md) estrutura.
 
-Método ADDRESS_KIND_METHOD um de uma classe, representado pela [METADATA_ADDRESS_METHOD](../../../extensibility/debugger/reference/metadata-address-method.md) estrutura.
+`ADDRESS_KIND_METHOD`\
+Um método de uma classe, representado pela [METADATA_ADDRESS_METHOD](../../../extensibility/debugger/reference/metadata-address-method.md) estrutura.
 
-Campo ADDRESS_KIND_FIELD um de uma classe, representado pela [METADATA_ADDRESS_FIELD](../../../extensibility/debugger/reference/metadata-address-field.md) estrutura.
+`ADDRESS_KIND_FIELD`\
+Um campo de uma classe, representado pela [METADATA_ADDRESS_FIELD](../../../extensibility/debugger/reference/metadata-address-field.md) estrutura.
 
-ADDRESS_KIND_LOCAL o endereço é para uma variável local e é representado pela [METADATA_ADDRESS_LOCAL](../../../extensibility/debugger/reference/metadata-address-local.md) estrutura.
+`ADDRESS_KIND_LOCAL`\
+O endereço é para uma variável local e é representado pela [METADATA_ADDRESS_LOCAL](../../../extensibility/debugger/reference/metadata-address-local.md) estrutura.
 
-ADDRESS_KIND_PARAM um método ou função de parâmetro, representado pela [METADATA_ADDRESS_PARAM](../../../extensibility/debugger/reference/metadata-address-param.md) estrutura.
+`ADDRESS_KIND_PARAM`\
+Um parâmetro de método ou função, representado pelo [METADATA_ADDRESS_PARAM](../../../extensibility/debugger/reference/metadata-address-param.md) estrutura.
 
-ADDRESS_KIND_ARRAYELEM um elemento de matriz, representado pela [METADATA_ADDRESS_ARRAYELEM](../../../extensibility/debugger/reference/metadata-address-arrayelem.md) estrutura.
+`ADDRESS_KIND_ARRAYELEM`\
+Um elemento de matriz, representado pela [METADATA_ADDRESS_ARRAYELEM](../../../extensibility/debugger/reference/metadata-address-arrayelem.md) estrutura.
 
-ADDRESS_KIND_RETVAL um valor de retorno, representado pela [METADATA_ADDRESS_RETVAL](../../../extensibility/debugger/reference/metadata-address-retval.md) estrutura.
+`ADDRESS_KIND_RETVAL`\
+Um valor de retorno, representado pela [METADATA_ADDRESS_RETVAL](../../../extensibility/debugger/reference/metadata-address-retval.md) estrutura.
 
 ## <a name="remarks"></a>Comentários
 O [GetAddress](../../../extensibility/debugger/reference/idebugaddress-getaddress.md) método retorna o [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) estrutura que contém uma união de estruturas possíveis, o [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) estrutura. O `dwKind` campo do `DEBUG_ADDRESS_UNION` estrutura mantém a `ADDRESS_KIND` de valor e descreve como interpretar o campo de união.

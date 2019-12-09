@@ -10,18 +10,18 @@ f1_keywords:
 ms.assetid: 289a7498-5127-453f-beb5-05f05b80d26f
 caps.latest.revision: 3
 author: steved0x
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 30281d8cd5d5ed94ed89a980006f9618292a778d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fc35aec714255b467431488936605fb37009db9d
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62951964"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72659014"
 ---
 # <a name="invokedelegate"></a>InvokeDelegate
 
-O **InvokeDelegate** designer é usado para criar e configurar um <xref:System.Activities.Statements.InvokeDelegate> atividade.
+O designer de **InvokeDelegate** é usado para criar e configurar uma atividade de <xref:System.Activities.Statements.InvokeDelegate>.
 
 ## <a name="the-invokedelegate-activity"></a>A atividade de InvokeDelegate
 
@@ -29,9 +29,9 @@ O **InvokeDelegate** designer é usado para criar e configurar um <xref:System.A
 
 ### <a name="using-the-invokedelegate-activity-designer"></a>Usando o designer de atividade de InvokeDelegate
 
-O **InvokeDelegate** designer de atividade pode ser encontrado na **primitivos** categoria da **caixa de ferramentas**, que é acessado clicando o **dacaixadeferramentas** guia [!INCLUDE[wfd2](../includes/wfd2-md.md)] (como alternativa, selecione **barra de ferramentas** do **exibição** menu, ou CRTL + ALT + X.)
+O designer de atividade do **InvokeDelegate** pode ser encontrado na categoria **primitivos** da **caixa de ferramentas**, que é acessada clicando na guia **caixa de ferramentas** [!INCLUDE[wfd2](../includes/wfd2-md.md)] (como alternativa, selecione barra de **ferramentas** no menu **Exibir** ou CRTL + ALT + X.)
 
-O **InvokeDelegate** designer de atividade pode ser arrastado da **caixa de ferramentas** e ser solto sobre a [!INCLUDE[wfd2](../includes/wfd2-md.md)] superfície em que nunca atividades são colocadas em geral, como em um <xref:System.Activities.Statements.Sequence>. Isso cria uma atividade de <xref:System.Activities.Statements.InvokeDelegate> com <xref:System.Activities.Activity.DisplayName%2A> padrão de InvokeDelegate. O <xref:System.Activities.Activity.DisplayName%2A> pode ser editado no cabeçalho do **InvokeDelegate** designer de atividade ou nos **DisplayName** caixa da grade de propriedade.
+O designer de atividade do **InvokeDelegate** pode ser arrastado da **caixa de ferramentas** e colocado na superfície de [!INCLUDE[wfd2](../includes/wfd2-md.md)], onde as atividades sempre são colocadas, como dentro de um <xref:System.Activities.Statements.Sequence>. Isso cria uma atividade de <xref:System.Activities.Statements.InvokeDelegate> com <xref:System.Activities.Activity.DisplayName%2A> padrão de InvokeDelegate. O <xref:System.Activities.Activity.DisplayName%2A> pode ser editado no cabeçalho do designer de atividade **InvokeDelegate** ou na caixa **DisplayName** da grade de propriedades.
 
 ### <a name="the-invokedelegate-properties"></a>As propriedades de InvokeDelegate
 
@@ -41,8 +41,8 @@ A tabela a seguir mostra as propriedades de <xref:System.Activities.Statements.I
 |-------------------|--------------|-----------|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|O nome amigável de atividade de <xref:System.Activities.Statements.InvokeDelegate> . O valor padrão é InvokeDelegate.<br /><br /> Embora não seja necessário <xref:System.Activities.Activity.DisplayName%2A> restrita, é uma prática recomendada usar um.|
 |<xref:System.Activities.Statements.InvokeDelegate.Delegate%2A>|verdadeiro|O nome de <xref:System.Activities.ActivityDelegate> a ser chamado quando a atividade executar. Esta propriedade pode ser editada na superfície de designer. Esta é uma propriedade imperativa.|
-|<<xref:System.Activities.Statements.InvokeDelegate.DelegateArguments%2A>|False|A coleção de argumento de representante chamado. As chaves são os nomes dos objetos de <xref:System.Activities.DelegateArgument> em <xref:System.Activities.ActivityDelegate> e valores são os argumentos cujas ambas as expressões são avaliadas e atribuídas a <xref:System.Activities.DelegateArgument> os objetos correspondentes. Na grade de propriedade, clique no botão de reticências na **DelegateArguments** campo, ele exibe a **DelegateArguments** caixa de diálogo para permitir que você definir essa propriedade. Clique o **criar argumento** campo para adicionar os argumentos.|
+|<<xref:System.Activities.Statements.InvokeDelegate.DelegateArguments%2A>|False|A coleção de argumento de representante chamado. As chaves são os nomes dos objetos de <xref:System.Activities.DelegateArgument> em <xref:System.Activities.ActivityDelegate> e valores são os argumentos cujas ambas as expressões são avaliadas e atribuídas a <xref:System.Activities.DelegateArgument> os objetos correspondentes. Na grade de propriedades, clique no botão de reticências no campo **DelegateArguments** , que exibe a caixa de diálogo **DelegateArguments** para permitir que você defina essa propriedade. Clique no campo **criar argumento** para adicionar os argumentos.|
 
 ## <a name="see-also"></a>Consulte também
 
-- [Como: definir e consumir representantes de atividade no Designer de Fluxo de Trabalho](../workflow-designer/how-to-define-and-consume-activity-delegates-in-the-workflow-designer.md)
+- [Como definir e consumir delegados de atividade no Designer de Fluxo de Trabalho](../workflow-designer/how-to-define-and-consume-activity-delegates-in-the-workflow-designer.md)

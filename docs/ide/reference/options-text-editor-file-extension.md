@@ -10,17 +10,17 @@ helpviewer_keywords:
 - Options dialog box
 - Editing Experience, selecting
 ms.assetid: 05298fc5-fc4e-4bb2-b942-1f7d2dcdff0f
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 412a8489c3d7092aa87803f7dd3af5c7495b17a7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: b023ad4b14d6c890c14726f645a2ebf3c99f6f7d
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778613"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666258"
 ---
 # <a name="options-text-editor-file-extension"></a>Opções, Editor de Texto, Extensão de Arquivo
 
@@ -36,7 +36,7 @@ Digite a extensão de arquivo cuja Experiência de Edição no IDE você deseja 
 
 **Editor**
 
- Selecione o editor ou o designer do IDE em que documentos com essa extensão de arquivo serão abertos. Quando você selecionar uma opção "com codificação", uma caixa de diálogo será exibida sempre que você abrir um documento desse tipo que permite a seleção de um esquema de codificação.
+Selecione o editor ou o designer do IDE em que documentos com essa extensão de arquivo serão abertos. Quando você selecionar uma opção "com codificação", uma caixa de diálogo será exibida sempre que você abrir um documento desse tipo que permite a seleção de um esquema de codificação.
 
 **Adicionar**
 
@@ -60,4 +60,4 @@ Fornece a mesma lista que o **Editor**. Selecione o editor ou o designer do IDE 
 
 ## <a name="see-also"></a>Consulte também
 
-- [Como: Gerenciar modos do editor](../../ide/how-to-manage-editor-modes.md)
+- [Como gerenciar modos do editor](../../ide/how-to-manage-editor-modes.md)

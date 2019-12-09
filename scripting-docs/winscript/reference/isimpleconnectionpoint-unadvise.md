@@ -1,5 +1,5 @@
 ---
-title: ISimpleConnectionPoint::Unadvise | Microsoft Docs
+title: 'ISimpleConnectionPoint:: Unadvise | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 189c07c10e93df9a61218b6a94a0b317999676d2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e00c172fd33eb0ccf27aaf28e0e2f692c1a353ab
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63001498"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571754"
 ---
 # <a name="isimpleconnectionpointunadvise"></a>ISimpleConnectionPoint::Unadvise
 Encerra uma conexão de consultoria estabelecida anteriormente por meio de `ISimpleConnectionPoint::Advise`.  
@@ -37,9 +37,9 @@ HRESULT Unadvise(
   
 #### <a name="parameters"></a>Parâmetros  
  `dwCookie`  
- [in] Token da conexão para encerrar, conforme retornado pelo `ISimpleConnectionPoint::Advise`.  
+ no Token da conexão a ser encerrado, conforme retornado de `ISimpleConnectionPoint::Advise`.  
   
-## <a name="return-value"></a>Valor de retorno  
+## <a name="return-value"></a>Valor retornado  
  O método retorna um `HRESULT`. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.  
   
 |Valor|Descrição|  
@@ -47,7 +47,7 @@ HRESULT Unadvise(
 |`S_OK`|O método foi bem-sucedido.|  
   
 ## <a name="remarks"></a>Comentários  
- Quando uma conexão de consultoria for encerrado, a conexão de ponto chamadas a `Release` método no ponteiro que foi salvo para a conexão durante o `ISimpleConnectionPoint::Advise` método. Essa chamada inverte a `AddRef` que foi executado durante o `ISimpleConnectionPoint::Advise` quando o ponto de conexão chama o coletor de consultoria `QueryInterface`.  
+ Quando uma conexão de consultoria é encerrada, o ponto de conexão chama o método `Release` no ponteiro que foi salvo para a conexão durante o método `ISimpleConnectionPoint::Advise`. Essa chamada inverte a `AddRef` que foi executada durante a `ISimpleConnectionPoint::Advise` quando o ponto de conexão chama o `QueryInterface` do coletor de consultoria.  
   
 ## <a name="see-also"></a>Consulte também  
  [Interface ISimpleConnectionPoint](../../winscript/reference/isimpleconnectionpoint-interface.md)

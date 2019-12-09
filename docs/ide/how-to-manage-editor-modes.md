@@ -19,24 +19,24 @@ helpviewer_keywords:
 - views, changing mode
 - views, outlining
 ms.assetid: 1fb48027-d870-439f-8b72-4a0321390748
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 57987b67a2fa081ebaa577f10de478b5fd250aca
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: fd3e238813c6cfd8674e5392d9ad20889e79c900
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62429776"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72645846"
 ---
-# <a name="how-to-manage-editor-modes"></a>Como: Gerenciar modos do editor
+# <a name="how-to-manage-editor-modes"></a>Como gerenciar modos do editor
 
 Você pode exibir o editor de código do Visual Studio em vários modos de exibição.
 
 > [!NOTE]
-> As caixas de diálogo e os comandos de menu que você vê podem ser diferentes dos descritos neste artigo, dependendo da sua edição ou das configurações ativas. Para alterar as configurações, por exemplo, para configurações **Gerais** ou do **Visual C++**, escolha **Ferramentas** > **Importar e Exportar Configurações** e, em seguida, escolha **Redefinir todas as configurações**.
+> As caixas de diálogo e os comandos de menu que você vê podem ser diferentes dos descritos neste artigo, dependendo da sua edição ou das configurações ativas. Para alterar as configurações, por exemplo, para configurações **Gerais** ou do **Visual C++** , escolha **Ferramentas** > **Importar e Exportar Configurações** e, em seguida, escolha **Redefinir todas as configurações**.
 
 ## <a name="enable-full-screen-mode"></a>Habilitar o modo de tela inteira
 
@@ -63,6 +63,5 @@ No modo **Espaço virtual**, os espaços são inseridos no final de cada linha d
 
 ## <a name="see-also"></a>Consulte também
 
-- [Personalizar o editor](../ide/customizing-the-editor.md)
 - [Personalizar layouts de janela no Visual Studio](../ide/customizing-window-layouts-in-visual-studio.md)
 - [Caixa de diálogo Fontes e Cores, Ambiente, Opções](../ide/reference/fonts-and-colors-environment-options-dialog-box.md)

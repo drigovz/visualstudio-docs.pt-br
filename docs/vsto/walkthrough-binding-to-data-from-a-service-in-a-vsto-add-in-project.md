@@ -1,5 +1,5 @@
 ---
-title: 'Passo a passo: Associar aos dados de um serviço em um projeto de suplemento do VSTO'
+title: Associar a dados do serviço no projeto de suplemento do VSTO
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,29 +14,29 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6ba36b62aa9f4330cc88eaa198d0488d7e43b341
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 75d984617b56525e640a74aa4badd6f520c0b892
+ms.sourcegitcommit: e82baa50bf5a65858c410882c2e86a552c2c1921
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62982072"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72381313"
 ---
-# <a name="walkthrough-bind-to-data-from-a-service-in-a-vsto-add-in-project"></a>Passo a passo: Associar aos dados de um serviço em um projeto de suplemento do VSTO
-  Você pode associar dados a controles de host em projetos de suplemento do VSTO. Este passo a passo demonstra como adicionar controles a um documento do Microsoft Office Word, ligar os controles a dados recuperados do serviço de conteúdo do MSDN e responder a eventos em tempo de execução.
+# <a name="walkthrough-bind-to-data-from-a-service-in-a-vsto-add-in-project"></a>Walkthrough: associar dados de um serviço em um projeto de suplemento do VSTO
+  Você pode associar dados a controles de host em projetos de suplemento do VSTO. Este tutorial demonstra como adicionar controles a um Microsoft Office documento do Word, associar os controles aos dados recuperados do serviço de conteúdo do MSDN e responder a eventos em tempo de execução.
 
- **Aplica-se a:** As informações neste tópico se aplicam a projetos no nível de aplicativo para Word 2010. Para obter mais informações, confira [Features Available by Office Application and Project Type](../vsto/features-available-by-office-application-and-project-type.md) (Funcionalidades disponibilizadas pelo aplicativo do Office e pelo tipo de projeto).
+ **Aplica-se a:** As informações neste tópico se aplicam a projetos de nível de aplicativo para o Word 2010. Para obter mais informações, confira [Features Available by Office Application and Project Type](../vsto/features-available-by-office-application-and-project-type.md) (Funcionalidades disponibilizadas pelo aplicativo do Office e pelo tipo de projeto).
 
  Esta explicação passo a passo ilustra as seguintes tarefas:
 
-- Adicionando um <xref:Microsoft.Office.Tools.Word.RichTextContentControl> controle a um documento em tempo de execução.
+- Adicionar um controle <xref:Microsoft.Office.Tools.Word.RichTextContentControl> a um documento em tempo de execução.
 
-- Associando a <xref:Microsoft.Office.Tools.Word.RichTextContentControl> controle aos dados de um serviço web.
+- Associar o controle <xref:Microsoft.Office.Tools.Word.RichTextContentControl> a dados de um serviço Web.
 
-- Responder para o <xref:Microsoft.Office.Tools.Word.ContentControlBase.Entering> eventos de um <xref:Microsoft.Office.Tools.Word.RichTextContentControl> controle.
+- Respondendo ao evento <xref:Microsoft.Office.Tools.Word.ContentControlBase.Entering> de um controle <xref:Microsoft.Office.Tools.Word.RichTextContentControl>.
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>Pré-requisitos
+## <a name="prerequisites"></a>Prerequisites
  Você precisa dos seguintes componentes para concluir esta instrução passo a passo:
 
 - [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
@@ -48,37 +48,37 @@ ms.locfileid: "62982072"
 
 ### <a name="to-create-a-new-project"></a>Para criar um novo projeto
 
-1. Criar um projeto de suplemento do VSTO do Word com o nome **serviço de conteúdo MTPS**, usando o Visual Basic ou c#.
+1. Crie um projeto de suplemento do VSTO do Word com o nome **MTPS Content Service**, usando Visual Basic ou C#.
 
-     Para obter mais informações, confira [Como: Criar projetos do Office no Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
+     Para obter mais informações, consulte [como: criar projetos do Office no Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
-     O Visual Studio abre o `ThisAddIn.vb` ou `ThisAddIn.cs` de arquivos e adiciona o projeto ao **Gerenciador de soluções**.
+     O Visual Studio abre o arquivo `ThisAddIn.vb` ou `ThisAddIn.cs` e adiciona o projeto a **Gerenciador de soluções**.
 
-## <a name="add-a-web-service"></a>Adicionar um serviço web
- Para este passo a passo, use um serviço web chamado serviço MTPS conteúdo. Esse serviço web retorna informações de um artigo do MSDN especificado na forma de uma cadeia de caracteres XML ou texto sem formatação. Uma etapa posterior mostra como exibir as informações retornadas em um controle de conteúdo.
+## <a name="add-a-web-service"></a>Adicionar um serviço Web
+ Para esta explicação, use um serviço Web chamado serviço de conteúdo MTPS. Esse serviço Web retorna informações de um artigo do MSDN especificado na forma de uma cadeia de caracteres XML ou texto sem formatação. Uma etapa posterior mostra como exibir as informações retornadas em um controle de conteúdo.
 
-### <a name="to-add-the-mtps-content-service-to-the-project"></a>Para adicionar o serviço MTPS de conteúdo para o projeto
+### <a name="to-add-the-mtps-content-service-to-the-project"></a>Para adicionar o serviço de conteúdo MTPS ao projeto
 
 1. No menu **Dados**, clique em **Adicionar Nova Fonte de Dados**.
 
-2. No **Data Source Configuration Wizard**, clique em **Service**e, em seguida, clique em **próxima**.
+2. No **Assistente de configuração da fonte de dados**, clique em **serviço**e em **Avançar**.
 
-3. No **endereço** campo, digite a seguinte URL:
+3. No campo **endereço** , digite a seguinte URL:
 
-     **http://services.msdn.microsoft.com/ContentServices/ContentService.asmx**
+   `http://services.msdn.microsoft.com/ContentServices/ContentService.asmx`
 
-4. Clique em **acesse**.
+4. Clique em **ir**.
 
-5. No **Namespace** , digite **ContentService**e clique em **Okey**.
+5. No campo **namespace** , digite **ContentService**e clique em **OK**.
 
-6. No **Assistente para adição de referência** caixa de diálogo, clique em **concluir**.
+6. Na caixa de diálogo **Assistente de adição de referência** , clique em **concluir**.
 
-## <a name="add-a-content-control-and-bind-to-data-at-runtime"></a>Adicione um controle de conteúdo e associar a dados em tempo de execução
- Em projetos de suplemento do VSTO, adicionar e associar os controles em tempo de execução. Para este passo a passo, configure o controle de conteúdo para recuperar dados do serviço da web quando um usuário clica dentro do controle.
+## <a name="add-a-content-control-and-bind-to-data-at-run-time"></a>Adicionar um controle de conteúdo e associar a dados em tempo de execução
+ Em projetos de suplemento do VSTO, você adiciona e associa controles em tempo de execução. Para esta explicação, configure o controle de conteúdo para recuperar dados do serviço Web quando um usuário clicar dentro do controle.
 
 ### <a name="to-add-a-content-control-and-bind-to-data"></a>Para adicionar um controle de conteúdo e associar a dados
 
-1. No `ThisAddIn` de classe, declare as variáveis para o serviço MTPS do conteúdo, o controle de conteúdo e a vinculação de dados.
+1. Na classe `ThisAddIn`, declare as variáveis para o serviço de conteúdo MTPS, o controle de conteúdo e a associação de dados.
 
      [!code-csharp[Trin_WordAddIn_BindingDataToContentControl#2](../vsto/codesnippet/CSharp/trin_wordaddin_bindingdatatocontentcontrol/ThisAddIn.cs#2)]
      [!code-vb[Trin_WordAddIn_BindingDataToContentControl#2](../vsto/codesnippet/VisualBasic/trin_wordaddin_bindingdatatocontentcontrol/ThisAddIn.vb#2)]
@@ -88,23 +88,23 @@ ms.locfileid: "62982072"
      [!code-csharp[Trin_WordAddIn_BindingDataToContentControl#4](../vsto/codesnippet/CSharp/trin_wordaddin_bindingdatatocontentcontrol/ThisAddIn.cs#4)]
      [!code-vb[Trin_WordAddIn_BindingDataToContentControl#4](../vsto/codesnippet/VisualBasic/trin_wordaddin_bindingdatatocontentcontrol/ThisAddIn.vb#4)]
 
-3. Adicione o seguinte método à classe `ThisAddIn`. Esse método inicializa os objetos necessários para criar e enviar uma solicitação para o serviço web.
+3. Adicione o seguinte método à classe `ThisAddIn`. Esse método inicializa os objetos necessários para criar e enviar uma solicitação para o serviço Web.
 
      [!code-csharp[Trin_WordAddIn_BindingDataToContentControl#6](../vsto/codesnippet/CSharp/trin_wordaddin_bindingdatatocontentcontrol/ThisAddIn.cs#6)]
      [!code-vb[Trin_WordAddIn_BindingDataToContentControl#6](../vsto/codesnippet/VisualBasic/trin_wordaddin_bindingdatatocontentcontrol/ThisAddIn.vb#6)]
 
-4. Crie um manipulador de eventos para recuperar o documento da biblioteca MSDN sobre o conteúdo de controles quando um usuário clica dentro do conteúdo de controle e associar os dados para o controle de conteúdo.
+4. Crie um manipulador de eventos para recuperar o documento da biblioteca MSDN sobre controles de conteúdo quando um usuário clicar dentro do controle de conteúdo e associar os dados ao controle de conteúdo.
 
      [!code-csharp[Trin_WordAddIn_BindingDataToContentControl#5](../vsto/codesnippet/CSharp/trin_wordaddin_bindingdatatocontentcontrol/ThisAddIn.cs#5)]
      [!code-vb[Trin_WordAddIn_BindingDataToContentControl#5](../vsto/codesnippet/VisualBasic/trin_wordaddin_bindingdatatocontentcontrol/ThisAddIn.vb#5)]
 
-5. Chame o `AddRichTextControlAtRange` e `InitializeServiceObjects` métodos a partir de `ThisAddIn_Startup` método. Para programadores de c#, adicione um manipulador de eventos.
+5. Chame os métodos `AddRichTextControlAtRange` e `InitializeServiceObjects` do método `ThisAddIn_Startup`. Para C# programadores, adicione um manipulador de eventos.
 
      [!code-csharp[Trin_WordAddIn_BindingDataToContentControl#3](../vsto/codesnippet/CSharp/trin_wordaddin_bindingdatatocontentcontrol/ThisAddIn.cs#3)]
      [!code-vb[Trin_WordAddIn_BindingDataToContentControl#3](../vsto/codesnippet/VisualBasic/trin_wordaddin_bindingdatatocontentcontrol/ThisAddIn.vb#3)]
 
 ## <a name="test-the-add-in"></a>Testar o suplemento
- Quando você abre o Word, o <xref:Microsoft.Office.Tools.Word.RichTextContentControl> controle aparece. O texto do controle muda quando você clica nele.
+ Quando você abre o Word, o controle <xref:Microsoft.Office.Tools.Word.RichTextContentControl> é exibido. O texto no controle é alterado quando você clica dentro dele.
 
 ### <a name="to-test-the-vsto-add-in"></a>Para testar o suplemento do VSTO
 
@@ -112,7 +112,7 @@ ms.locfileid: "62982072"
 
 2. Clique dentro do controle de conteúdo.
 
-     Informações são baixadas do serviço de conteúdo MTPS e exibidas dentro do controle de conteúdo.
+     As informações são baixadas do serviço de conteúdo do MTPS e exibidas dentro do controle de conteúdo.
 
 ## <a name="see-also"></a>Consulte também
 - [Associar dados a controles em soluções do Office](../vsto/binding-data-to-controls-in-office-solutions.md)

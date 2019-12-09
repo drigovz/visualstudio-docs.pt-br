@@ -6,50 +6,50 @@ ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: ec1395e0-d03c-4130-810d-f2db656937bd
 caps.latest.revision: 12
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 1d388db50ae935ef85b720177bd31c832a353d31
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 0e3a8563d5e2cd29c9c521761498d7ef87b7cbab
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60080549"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72656167"
 ---
 # <a name="searching-the-schema-set"></a>Procurando pelo conjunto de esquema
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-XML Schema Explorer permite que você procurar o esquema define as seguintes maneiras:  
-  
-- Pesquisa de palavras-chave.  
-  
-- Pesquisa Esquema- específica.  
-  
-## <a name="keyword-search"></a>Palavra-chave pesquisa  
- Executar pesquisas de palavra-chave inserindo uma subcadeia de caracteres a **pesquisa SchemaSet** caixa de texto da barra de ferramentas XML Schema Explorer.  
-  
- ![Pesquisa de palavra-chave do XML Schema Explorer](../xml-tools/media/schemaexplorersearch.gif "SchemaExplorerSearch")  
-  
- XML Schema Explorer procura o esquema definido pelo seguinte:  
-  
-- Alguns atributos de `name` ou de `ref` que corresponderem a palavra-chave especificada. Isso permite que você encontrar elementos, atributos, tipos, e assim por diante por nome.  
-  
-- Atributos de `schemaLocation` de incluem instruções.  
-  
-- Atributos de `namespace` de instruções de importação.  
-  
-## <a name="schema-specific-search"></a>Pesquisar esquema específico  
- XML Schema Explorer também inclui as pesquisas internos que você pode acessar usando o menu de contexto XML Schema Explorer. Para obter mais informações sobre menus de contexto disponíveis, consulte [Menus de contexto](../xml-tools/context-menus-xml-schema-explorer.md). Você também pode executar uma pesquisa específica do esquema da exibição inicial; Para obter mais informações, consulte a seção de "detalhes para esquema" na [exibição inicial](../xml-tools/start-view.md) tópico.  
-  
-## <a name="displaying-and-navigating-search-results"></a>Exibindo e navegando resultados de pesquisa  
- Depois que a pesquisa é concluída, o painel de resultados de resumo é adicionado à barra de ferramentas com os resultados da pesquisa. Os resultados de pesquisa também são realçadas em XML Schema Explorer e marcados por escalas na barra de rolagem vertical. Você pode navegar os resultados da pesquisa usando o **ir para próximo resultado da pesquisa** e **vá ao resultado da pesquisa anterior** botões no painel de resultados de resumo da barra de ferramentas XML Schema Explorer; usando as teclas do teclado F3 e SHIFT+F3; ou clicando-se as marcas de escala na barra de rolagem.  
-  
- Você pode adicionar os resultados da pesquisa para o espaço de trabalho clicando o **adicionar nós realçados ao espaço de trabalho** botão no painel de resultados de resumo.  
-  
- ![Resultado da pesquisa do XML Schema Explorer](../xml-tools/media/schemaexplorersearchresult.gif "SchemaExplorerSearchResult")  
-  
-## <a name="clearing-search-results"></a>Resultados da pesquisa de esclarecimento  
- Para limpar os resultados da pesquisa, clique o **x** botão no painel de resultados de resumo da barra de ferramentas XML Schema de pesquisa.  
-  
-## <a name="see-also"></a>Consulte também  
+XML Schema Explorer permite que você procurar o esquema define as seguintes maneiras:
+
+- Pesquisa de palavras-chave.
+
+- Pesquisa Esquema- específica.
+
+## <a name="keyword-search"></a>Palavra-chave pesquisa
+ Você executa pesquisas de palavra-chave inserindo uma subcadeia de caracteres na caixa de texto **Pesquisar schemaSet** da barra de ferramentas do Gerenciador de esquema XML.
+
+ ![Pesquisa de palavra-chave do Gerenciador de esquema XML](../xml-tools/media/schemaexplorersearch.gif "SchemaExplorerSearch")
+
+ XML Schema Explorer procura o esquema definido pelo seguinte:
+
+- Alguns atributos de `name` ou de `ref` que corresponderem a palavra-chave especificada. Isso permite que você encontrar elementos, atributos, tipos, e assim por diante por nome.
+
+- Atributos de `schemaLocation` de incluem instruções.
+
+- Atributos de `namespace` de instruções de importação.
+
+## <a name="schema-specific-search"></a>Pesquisar esquema específico
+ XML Schema Explorer também inclui as pesquisas internos que você pode acessar usando o menu de contexto XML Schema Explorer. Para obter mais informações sobre menus de contexto disponíveis, consulte [menus de contexto](../xml-tools/context-menus-xml-schema-explorer.md). Você também pode executar uma pesquisa específica de esquema do modo de exibição iniciar; para obter mais informações, consulte a seção "detalhes do conjunto de esquema" no tópico [Start View](../xml-tools/start-view.md) .
+
+## <a name="displaying-and-navigating-search-results"></a>Exibindo e navegando resultados de pesquisa
+ Depois que a pesquisa é concluída, o painel de resultados de resumo é adicionado à barra de ferramentas com os resultados da pesquisa. Os resultados de pesquisa também são realçadas em XML Schema Explorer e marcados por escalas na barra de rolagem vertical. Você pode navegar pelos resultados da pesquisa usando o botão **ir para o próximo resultado da pesquisa** e ir para os botões de **resultado da pesquisa anterior** no painel resultados do resumo da barra de ferramentas do Gerenciador de esquema XML; usando as teclas de teclado F3 e Shift + F3; ou clicando nas marcas de escala na barra de rolagem.
+
+ Você pode adicionar os resultados da pesquisa ao espaço de trabalho clicando no botão **adicionar nós realçados ao espaço de trabalho** no painel resultados do resumo.
+
+ ![Resultado da pesquisa do XML Schema Explorer](../xml-tools/media/schemaexplorersearchresult.gif "SchemaExplorerSearchResult")
+
+## <a name="clearing-search-results"></a>Resultados da pesquisa de esclarecimento
+ Para limpar os resultados da pesquisa, clique no botão **x** no painel resultados do resumo da barra de ferramentas de pesquisa do Gerenciador de esquema XML.
+
+## <a name="see-also"></a>Consulte também
  [XML Schema Explorer](../xml-tools/xml-schema-explorer.md)

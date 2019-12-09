@@ -7,14 +7,18 @@
     - name: Guia de Início Rápido
       expanded: true
       items:
-        - name: Ferramentas de contêiner no Visual Studio
+        - name: Aplicativo ASP.NET Core em um contêiner
           href: container-tools.md
+        - name: Aplicativo de página única do React.js em um contêiner
+          href: container-tools-react.md
+        - name: Desenvolvimento no Kubernetes com o Azure Dev Spaces >>
+          href: /azure/dev-spaces/quickstart-netcore-visualstudio
     - name: Tutoriais
       expanded: true
       items:
-        - name: Tutorial – aplicativo de vários contêineres com o Docker Compose
+        - name: aplicativo de vários contêineres com o Docker Compose
           href: tutorial-multicontainer.md
-        - name: Tutorial – Kubernetes no Visual Studio
+        - name: Kubernetes no Visual Studio
           href: tutorial-kubernetes-tools.md
     - name: Como
       items:
@@ -24,7 +28,23 @@
           href: hosting-web-apps-in-docker.md
         - name: Implantar no Serviço de Aplicativo do Azure
           href: deploy-app-service.md
+        - name: Implantar no Docker Hub
+          href: deploy-docker-hub.md
+        - name: Exibir e diagnosticar contêineres e imagens
+          href: view-and-diagnose-containers.md
         - name: Configurar Ferramentas de Contêiner
           href: container-tools-configure.md
+    - name: Conceitos
+      items:
+        - name: Como o Visual Studio cria aplicativos em contêineres
+          href: container-build.md
     - name: Solução de problemas
       href: troubleshooting-docker-errors.md
+    - name: Referência
+      items:
+        - name: Propriedades do MSBuild para projetos de contêiner
+          href: container-msbuild-properties.md
+        - name: Configurações para projetos do Docker Compose
+          href: docker-compose-properties.md
+        - name: Configurações de inicialização
+          href: container-launch-settings.md

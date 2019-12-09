@@ -1,5 +1,5 @@
 ---
-title: 'Como: Personalizar menus e barras de ferramentas'
+title: Como personalizar menus e barras de ferramentas
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -25,17 +25,17 @@ helpviewer_keywords:
 - toolbars [Visual Studio], customizing in the IDE
 ms.assetid: b570ae2f-5302-45dc-9cc9-8d4d1ad50603
 caps.latest.revision: 31
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 91223021ce6f05b91d47e7b7019fb0c5c02243db
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 500debe6faa62079c6a93185bac409e7a3bf2813
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63416793"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72667998"
 ---
-# <a name="how-to-customize-menus-and-toolbars-in-visual-studio"></a>Como: Personalizar menus e barras de ferramentas no Visual Studio
+# <a name="how-to-customize-menus-and-toolbars-in-visual-studio"></a>Como personalizar menus e barras de ferramentas no Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Para personalizar o Visual Studio, além de adicionar e remover barras de ferramentas e menus na barra de menus, você também pode adicionar e remover comandos em qualquer barra de ferramentas ou menu.
@@ -63,7 +63,7 @@ Para personalizar o Visual Studio, além de adicionar e remover barras de ferram
 
     - Para adicionar um menu, escolha o botão **Adicionar Novo Menu**, escolha o botão **Modificar Seleção** e nomeie o menu que você deseja adicionar.
 
-         ![Personalizar a caixa de diálogo mostrando como adicionar um menu](../ide/media/addmenu.png "AddMenu")
+         ![Caixa de diálogo Personalizar mostrando como adicionar um menu](../ide/media/addmenu.png "AddMenu")
 
     - Para remover um menu, selecione-o na lista **Controles** e escolha o botão **Excluir**.
 
@@ -79,7 +79,7 @@ Para personalizar o Visual Studio, além de adicionar e remover barras de ferram
 
     - Para adicionar uma barra de ferramentas, escolha o botão **Novo**, especifique um nome para a barra de ferramentas que você deseja adicionar e escolha o botão **OK**.
 
-         ![Personalizar a caixa de diálogo mostrando como adicionar uma barra de ferramentas](../ide/media/addtoolbar.png "AddToolbar")
+         ![Caixa de diálogo Personalizar mostrando como adicionar uma barra de ferramentas](../ide/media/addtoolbar.png "Subbarra de ferramentas")
 
     - Para remover uma barra de ferramentas personalizada, selecione-a na lista **Barras de Ferramentas** e escolha o botão **Excluir**.
 
@@ -91,7 +91,7 @@ Para personalizar o Visual Studio, além de adicionar e remover barras de ferram
          Você também pode arrastar uma barra de ferramentas pela sua borda esquerda para movê-la para qualquer lugar na área de encaixe principal.
 
         > [!NOTE]
-        > Para obter mais informações sobre como melhorar a usabilidade e a acessibilidade das barras de ferramentas, confira [Como: Definir opções de acessibilidade do IDE](../ide/reference/how-to-set-ide-accessibility-options.md).
+        > Para obter mais informações sobre como melhorar a usabilidade e a acessibilidade das barras de ferramentas, consulte [Como definir opções de acessibilidade do IDE](../ide/reference/how-to-set-ide-accessibility-options.md).
 
 ## <a name="bkmk_customize"></a> Personalizando um menu ou uma barra de ferramentas
 
@@ -107,7 +107,7 @@ Para personalizar o Visual Studio, além de adicionar e remover barras de ferram
 
          Na caixa de diálogo **Adicionar Comando**, escolha um item na lista **Categorias**, escolha um item na lista **Comandos** e escolha o botão **OK**.
 
-         ![Adicionar caixa de diálogo Comando no Visual Studio](../ide/media/addcommand.png "AddCommand")
+         ![Adicionar caixa de diálogo de comando no Visual Studio](../ide/media/addcommand.png "O AddCommand")
 
     - Para excluir um comando, escolha-o na lista **Controles** e escolha o botão **Excluir**.
 

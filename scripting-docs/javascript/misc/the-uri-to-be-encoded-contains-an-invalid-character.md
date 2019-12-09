@@ -1,5 +1,5 @@
 ---
-title: O URI a ser decodificado contém um caractere inválido | Microsoft Docs
+title: O URI a ser codificado contém um caractere inválido | Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -14,24 +14,24 @@ ms.assetid: a3f0fdbb-8d4b-41ae-a396-43dfc9483760
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f2f9111acf656bf882a3d506fe95b8361f3693ff
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 72fd550e27e64754fe8c4857e9aa4d25ae5711a6
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63006202"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572251"
 ---
 # <a name="the-uri-to-be-encoded-contains-an-invalid-character"></a>O URI a ser decodificado contém um caractere inválido
-Você tentou codificar uma cadeia de caracteres como um URI (Uniform Resource Identifier), mas ele continha caracteres inválidos. Embora a maioria dos caracteres são válidos dentro de cadeias de caracteres a ser convertido em URIs, algumas sequências de caracteres Unicode são ilegais.  
+Você tentou codificar uma cadeia de caracteres como um URI (Uniform Resource Identifier), mas ele continha caracteres inválidos. Embora a maioria dos caracteres sejam válidos dentro de cadeias para serem convertidas em URIs, algumas sequências de caracteres Unicode são ilegais.  
   
-### <a name="to-correct-this-error"></a>Para corrigir este erro  
+### <a name="to-correct-this-error"></a>Para corrigir esse erro  
   
-- Verifique se a cadeia de caracteres a ser decodificado contém somente sequências de Unicode válidas. Um URI completo é composto de uma sequência de componentes e separadores. Os nomes entre colchetes angulares representam os componentes e o ":", "/", ";" e "?" são caracteres reservados usados como separadores. O formato geral é:  
+- Verifique se a cadeia de caracteres a ser codificada contém apenas sequências Unicode válidas. Um URI completo é composto de uma sequência de componentes e separadores. Os nomes entre colchetes angulares representam componentes e ":", "/", ";" e "?" são caracteres reservados usados como separadores. A forma geral é:  
   
     ```JavaScript  
     <Scheme>:<first>/<second>;<third>?<fourth>  
     ```  
   
 ## <a name="see-also"></a>Consulte também  
- [Função encodeURI](../../javascript/reference/encodeuri-function-javascript.md)   
+ [função encodeURI](../../javascript/reference/encodeuri-function-javascript.md)   
  [Função encodeURIComponent](../../javascript/reference/encodeuricomponent-function-javascript.md)

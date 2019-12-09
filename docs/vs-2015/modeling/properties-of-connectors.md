@@ -8,49 +8,49 @@ helpviewer_keywords:
 - Domain-Specific Language, connectors
 ms.assetid: b1f24e8d-cdd7-4a5d-af37-1038f43b45c7
 caps.latest.revision: 23
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 50e88a37e9d22fa99752864d1acbbeb4d15e6dab
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 1ea629e504c3ba74d35f3ad8aa89bc22cfae30df
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58922710"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72652034"
 ---
 # <a name="properties-of-connectors"></a>Propriedades de conectores
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Os conectores representam as relações de domínio em um designer gerado.  
-  
- Para obter mais informações, consulte [como definir uma linguagem específica do domínio](../modeling/how-to-define-a-domain-specific-language.md). Para obter mais informações sobre como usar essas propriedades, consulte [personalizando e estendendo uma linguagem específica do domínio](../modeling/customizing-and-extending-a-domain-specific-language.md).  
-  
- Conectores têm as propriedades que são listadas na tabela a seguir.  
-  
-|Propriedade|Descrição|Padrão|  
-|--------------|-----------------|-------------|  
-|Cor|A cor deste conector.|Preto|  
-|Estilo de traço|O estilo de traço para a linha deste conector (sólido, traço, Dot, Traçoponto, Traçopontoponto ou personalizado).|Sólido|  
-|Estilo da extremidade de origem|O estilo da extremidade de origem para esse conector (HollowArrow, EmptyArrow, FilledArrow, EmptyDiamond, FilledDiamond ou nenhum).|Nenhum|  
-|Estilo da extremidade de destino|O estilo da extremidade de destino para esse conector (HollowArrow, EmptyArrow, FilledArrow, EmptyDiamond, FilledDiamond ou nenhum).|Nenhum|  
-|Cor do texto|A cor que é usada para os decoradores de texto que estão associados esse conector.|Preto|  
-|Espessura|A espessura da linha para esse conector, em polegadas.|0.03125|  
-|Modificador de acesso|O nível de acesso da classe (`public` ou `internal`).|Público|  
-|Atributos personalizados|Usado para adicionar atributos à classe de código de origem que é gerado a partir deste conector.|\<nenhum>|  
-|Gera dupla derivado|Se `True`, serão geradas uma classe base e uma classe parcial (para dar suporte à personalização por meio de substituições). Para obter mais informações, consulte [substituindo e estendendo as Classes geradas](../modeling/overriding-and-extending-the-generated-classes.md).|False|  
-|Tem um construtor personalizado|Se `True`, um construtor personalizado será fornecido no código-fonte. Para obter mais informações, consulte [substituindo e estendendo as Classes geradas](../modeling/overriding-and-extending-the-generated-classes.md).|False|  
-|Modificador de herança|Descreve o tipo de herança da classe de código fonte que é gerado a partir do conector (`none`, `abstract` ou `sealed`).|nenhum|  
-|Conector base|A classe base desse conector.|(nenhum)|  
-|Nome|O nome deste conector.|Nome atual|  
-|Namespace|O namespace associado com esse conector.|Namespace atual|  
-|Tipo de dica de ferramenta|Como a dica de ferramenta é definida (fixo, variável ou nenhum). Se fixo, em seguida, o valor da `Fixed Tooltip Text` propriedade é usada como a dica de ferramenta; se a variável, em seguida, a dica de ferramenta é definida no código personalizado.|\<nenhum>|  
-|Observações|Observações informais associadas esse conector.|\<nenhum>|  
-|Estilo de roteamento|O estilo que é usado para o conector de roteamento. Um `Rectilinear` conector torna ativa ângulo à direita conforme necessário; um `Straight` conector não faz.|Retilíneo|  
-|Cor exposto como propriedade<br /><br /> Estilo de traço expostos como propriedade<br /><br /> Espessura exposta como propriedade<br /><br /> Expõe a cor do texto|Se `True`, o usuário pode definir a propriedade indicada de uma forma. Para configurar isso, a definição de forma com o botão direito e clique em **adicionar exposto**.|False|  
-|Descrição|Usado para documentar o designer gerado.|\<nenhum>|  
-|Nome de Exibição|O nome que será exibido no designer gerado para esse conector.|\<nenhum>|  
-|Texto de dica de ferramenta fixa|O texto que é usado para uma dica de ferramenta fixa.|\<nenhum>|  
-|Palavra-chave de ajuda|A palavra-chave que é usada para indexar a Ajuda de F1 para este elemento.|\<nenhum>|  
-  
-## <a name="see-also"></a>Consulte também  
- [Glossário das Ferramentas de Linguagem Específica de Domínio](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+Os conectores representam relações de domínio em um designer gerado.
+
+ Para obter mais informações, consulte [como definir uma linguagem específica de domínio](../modeling/how-to-define-a-domain-specific-language.md). Para obter mais informações sobre como usar essas propriedades, consulte [Personalizando e estendendo uma linguagem específica de domínio](../modeling/customizing-and-extending-a-domain-specific-language.md).
+
+ Os conectores têm as propriedades listadas na tabela a seguir.
+
+|propriedade|Descrição|Padrão|
+|--------------|-----------------|-------------|
+|Cor|A cor deste conector.|Afasta|
+|Estilo do tracejado|O estilo de tracejado da linha para este conector (sólido, traço, ponto, travessão ponto, travessão ponto ponto ou personalizado).|Sólido|
+|Estilo de extremidade de origem|O estilo de extremidade de origem deste conector (HollowArrow, EmptyArrow, FilledArrow, EmptyDiamond, FilledDiamond ou None).|Nenhum|
+|Estilo final de destino|O estilo final de destino para esse conector (HollowArrow, EmptyArrow, FilledArrow, EmptyDiamond, FilledDiamond ou None).|Nenhum|
+|Cor do texto|A cor que é usada para decoradores de texto associados a esse conector.|Afasta|
+|Espessura|A espessura da linha para esse conector, medida em polegadas.|0, 3125|
+|Modificador de acesso|O nível de acesso da classe (`public` ou `internal`).|Público|
+|Atributos personalizados|Usado para adicionar atributos à classe de código-fonte gerada por esse conector.|\<nenhum>|
+|Gera derivação dupla|Se `True`, uma classe base e uma classe parcial (para dar suporte à personalização por meio de substituições) serão geradas. Para obter mais informações, consulte [substituindo e estendendo as classes geradas](../modeling/overriding-and-extending-the-generated-classes.md).|False|
+|Tem Construtor personalizado|Se `True`, um construtor personalizado será fornecido no código-fonte. Para obter mais informações, consulte [substituindo e estendendo as classes geradas](../modeling/overriding-and-extending-the-generated-classes.md).|False|
+|Modificador de herança|Descreve o tipo de herança da classe de código-fonte gerada a partir do conector (`none`, `abstract` ou `sealed`).|nenhum|
+|Conector base|A classe base deste conector.|(nenhum)|
+|Name|O nome deste conector.|Nome atual|
+|espaço de nome|O namespace que é afiliado a esse conector.|Namespace atual|
+|Tipo de dica de ferramenta|Como a dica de ferramenta é definida (fixa, variável ou nenhuma). Se for corrigido, o valor da propriedade `Fixed Tooltip Text` será usado como dica de ferramenta; Se for variável, a dica de ferramenta será definida no código personalizado.|\<nenhum>|
+|Anotações|Observações informais que estão associadas a este conector.|\<nenhum>|
+|Estilo de roteamento|O estilo usado para rotear o conector. Um conector de `Rectilinear` faz com que o ângulo direito seja ativado conforme necessário; um conector de `Straight` não.|Rectilinear|
+|Cor exposta como Propriedade<br /><br /> O estilo de traço exposto como Propriedade<br /><br /> Espessura exposta como Propriedade<br /><br /> Expõe a cor do texto|Se `True`, o usuário poderá definir a propriedade declarada de uma forma. Para definir isso, clique com o botão direito do mouse na definição de forma e clique em **Adicionar exposto**.|False|
+|Descrição|Usado para documentar o designer gerado.|\<nenhum>|
+|Nome de Exibição|O nome que será exibido no designer gerado para esse conector.|\<nenhum>|
+|Texto de dica de ferramenta fixo|O texto que é usado para uma dica de ferramenta fixa.|\<nenhum>|
+|Palavra-chave de ajuda|A palavra-chave usada para indexar a ajuda F1 para este elemento.|\<nenhum>|
+
+## <a name="see-also"></a>Consulte também
+ [Glossário das Ferramentas de Linguagem Específica de Domínio](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

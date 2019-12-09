@@ -8,17 +8,17 @@ helpviewer_keywords:
 - class diagrams, keyboard shortcuts
 - class diagrams, mouse shortcuts
 ms.assetid: c12d8dac-9902-4fde-b721-2a8116da53b7
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a867986f26037473f5a45341f8d454b560c586ff
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: a755de4df0cd7402debbc964d2f3f9c54802eb85
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975054"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188974"
 ---
 # <a name="keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window"></a>Atalhos de teclado e do mouse no Diagrama de Classe e na janela Detalhes da Classe
 
@@ -103,3 +103,6 @@ Usar as chaves a seguir para navegar na janela **Detalhes da Classe**:
 ## <a name="see-also"></a>Consulte também
 
 - [Criar e configurar membros de tipo](creating-and-configuring-type-members.md)
+- [Como usar exclusivamente o teclado](../reference/how-to-use-the-keyboard-exclusively.md)
+- [Atalhos de teclado padrão no Visual Studio](../default-keyboard-shortcuts-in-visual-studio.md)
+- [Atalhos de teclado no Blend](../../xaml-tools/keyboard-shortcuts-in-blend.md)

@@ -1,5 +1,5 @@
 ---
-title: Uso do Emulator Express para executar e depurar um serviço de nuvem do Azure em um computador local | Microsoft Docs
+title: Emulator Express para executar/depurar o serviço de nuvem do Azure em caixa local
 description: Usando o Emulator Express para executar e depurar um serviço de nuvem em um computador local
 author: mikejo5000
 manager: jillfra
@@ -8,14 +8,14 @@ ms.topic: conceptual
 ms.workload: azure-vs
 ms.date: 03/06/2017
 ms.author: mikejo
-ms.openlocfilehash: f2d055cf7bb5294095baeef6591ac88389a2fe2b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 2c9c4470d51718f5c7d4fa3f903fdcc063aa8d80
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62560748"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911827"
 ---
-# <a name="using-emulator-express-to-run-and-debug-an-azure-cloud-service-on-a-local-machine"></a>Uso do Emulator Express para executar e depurar um serviço de nuvem do Azure em um computador local
+# <a name="using-emulator-express-to-run-and-debug-an-azure-cloud-service-on-a-local-machine"></a>Usando o Emulator Express para executar e depurar um serviço de nuvem do Azure em um computador local
 Ao usar o Emulator Express, você poderá testar e depurar um serviço de nuvem sem executar o Visual Studio como um administrador. É possível definir as configurações do projeto para usar o Emulator Express ou o emulador completo, dependendo dos requisitos do seu serviço de nuvem. Para saber mais sobre o emulador completo, consulte [Executar um aplicativo Azure no emulador de computação](/azure/storage/common/storage-use-emulator).
 
 ## <a name="using-emulator-express-in-visual-studio"></a>Uso do Emulator Express no Visual Studio
@@ -45,7 +45,7 @@ Os seguintes problemas são limitações conhecidas do Emulator Express:
 - O Emulator Express não é compatível com o Servidor Web do IIS.
 - O serviço de nuvem pode conter várias funções, mas cada função é limitada a uma instância.
 - Você não pode acessar números de porta abaixo de 1000. Se você usar um provedor de autenticação que normalmente usa uma porta abaixo de 1000, talvez seja necessário alterar esse valor para um número de porta acima de 1000.
-- As limitações que se aplicam ao Emulador de Computação do Azure também se aplicam ao Emulator Express. Por exemplo, você não pode ter mais de 50 instâncias de função por implantação. Para saber mais sobre o Emulador de Computação do Azure, confira [Executar um aplicativo do Azure no Emulador de Computação](http://go.microsoft.com/fwlink/p/?LinkId=623050).
+- As limitações que se aplicam ao Emulador de Computação do Azure também se aplicam ao Emulator Express. Por exemplo, você não pode ter mais de 50 instâncias de função por implantação. Para saber mais sobre o Emulador de Computação do Azure, confira [Executar um aplicativo do Azure no Emulador de Computação](vs-azure-tools-performance-profiling-cloud-services.md).
 
 ## <a name="next-steps"></a>Próximas etapas
 [Depuração de serviços de nuvem do Azure](vs-azure-tools-debugging-cloud-services-overview.md)

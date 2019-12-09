@@ -1,5 +1,5 @@
 ---
-title: Argumento substituto inválido | Microsoft Docs
+title: Argumento de realocador inválido | Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -15,22 +15,22 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 46e01a4e6bb989fad2da6f979c79b7aba13df63a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9ba76a2121dfb3853e38bacbdf49c985103c2a35
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63007308"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573803"
 ---
 # <a name="invalid-replacer-argument"></a>Argumento substituto inválido
-Foi feita uma tentativa para invocar `JSON.stringify` com um argumento que não é válido. O `replacer` argumento deve ser uma função ou uma matriz.  
+Foi feita uma tentativa de invocar `JSON.stringify` com um argumento que não é válido. O argumento `replacer` deve ser uma função ou uma matriz.  
   
-### <a name="to-correct-this-error"></a>Para corrigir este erro  
+### <a name="to-correct-this-error"></a>Para corrigir esse erro  
   
-- Alterar o `replacer` argumento para uma função ou uma matriz.  
+- Altere o argumento `replacer` para uma função ou uma matriz.  
   
 ## <a name="example"></a>Exemplo  
- O código neste exemplo causa um erro de tempo de execução porque `memberfilter` é um objeto, em vez de uma função ou uma matriz.  
+ O código neste exemplo causa um erro de tempo de execução porque `memberfilter` é um objeto em vez de uma função ou matriz.  
   
 ```JavaScript  
 var contact = new Object();  
@@ -45,6 +45,6 @@ var jsontext = JSON.stringify(contact, memberfilter, "\t");
 ```  
   
 ## <a name="see-also"></a>Consulte também  
- [Objeto JSON](../../javascript/reference/json-object-javascript.md)   
- [Função JSON. Parse](../../javascript/reference/json-parse-function-javascript.md)   
+   de [objeto JSON](../../javascript/reference/json-object-javascript.md)  
+ [Função JSON. parse](../../javascript/reference/json-parse-function-javascript.md)   
  [Erros de tempo de execução JavaScript](../../javascript/reference/javascript-run-time-errors.md)

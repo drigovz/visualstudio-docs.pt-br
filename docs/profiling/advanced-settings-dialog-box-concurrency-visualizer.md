@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 33b36c648a0ab1c7df9d4f358d729e7f6b96212f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: fa9d6658ae14c4b84aae9361f73e4701e758f975
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62777991"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911216"
 ---
 # <a name="advanced-settings-dialog-box-concurrency-visualizer"></a>Caixa de diálogo Configurações Avançadas (Visualizador de Simultaneidade)
 Usando a caixa de diálogo **Configurações Avançadas** da Visualização Simultânea, você pode controlar como os rastreamentos são coletados.  A caixa de diálogo tem guias para símbolos, Apenas Meu Código, buffer, filtragem, eventos CLR, marcadores, provedores e arquivos.
@@ -29,7 +29,7 @@ Usando a caixa de diálogo **Configurações Avançadas** da Visualização Simu
  Os caminhos dos arquivos .*exe* e .*dll* são armazenados no arquivo de rastreamento quando o rastreamento é coletado.  A alteração dessa configuração não afeta nenhum rastreamento coletado anteriormente.
 
 ## <a name="buffering"></a>Buffer
- A Visualização Simultânea usa ETW (Rastreamento de Eventos para Windows) ao coletar um rastreamento.  O ETW usa diversos buffers conforme ele armazena eventos.  As configurações padrão de buffer ETW podem não ser ideais em todos os casos e, em alguns casos, podem causar problemas como eventos perdidos.  Você pode usar a guia armazenamento em buffer para definir as configurações de buffer ETW. Para obter mais informações, consulte [Rastreamento de eventos](http://go.microsoft.com/fwlink/?LinkId=234579) e [Estrutura EVENT_TRACE_PROPERTIES](http://go.microsoft.com/fwlink/?LinkId=234580).
+ A Visualização Simultânea usa ETW (Rastreamento de Eventos para Windows) ao coletar um rastreamento.  O ETW usa diversos buffers conforme ele armazena eventos.  As configurações padrão de buffer ETW podem não ser ideais em todos os casos e, em alguns casos, podem causar problemas como eventos perdidos.  Você pode usar a guia armazenamento em buffer para definir as configurações de buffer ETW. Para obter mais informações, consulte [Rastreamento de eventos](/windows/win32/etw/event-tracing-portal) e [Estrutura EVENT_TRACE_PROPERTIES](/windows/win32/api/evntrace/ns-evntrace-event_trace_properties).
 
 ## <a name="filter"></a>Filtro
  Na guia Filtro, você pode selecionar o conjunto de eventos que a Visualização Simultânea coleta. Selecionar um subconjunto de eventos limita os tipos de dados que são exibidos nos relatórios, reduz o tamanho de cada rastreamento e reduz o tempo necessário para processar rastreamentos.
@@ -41,7 +41,7 @@ Usando a caixa de diálogo **Configurações Avançadas** da Visualização Simu
  Por padrão, os eventos do CLR são coletados apenas quando um processo gerenciado é atribuído, porque eles normalmente são desnecessários para processos nativos.  Em alguns casos (por exemplo, quando um processo nativo está hospedando o CLR), você terá que coletar eventos do CLR para um processo nativo.  Se esse é o caso, selecione a caixa de seleção **Coletar Para Processos Nativos**.
 
 ### <a name="disable-rundown-events"></a>Desabilitar eventos de encerramento
- O CLR gera eventos de dois provedores: tempo de execução e encerramento.  Se você quiser coletar eventos de tempo de execução do CLR mas desejar evitar coletar eventos de encerramento, selecione a caixa de seleção **Desabilitar Eventos de Encerramento**.  Isso reduz o tamanho do arquivo de rastreamento que é gerado por coleta, mas algumas pilhas poderão não ser resolvidas. Para obter mais informações, consulte [Provedores ETW de CLR](/dotnet/framework/performance/clr-etw-providers)
+ O CLR gera eventos de dois provedores: runtime e encerramento.  Se você quiser coletar eventos de tempo de execução do CLR mas desejar evitar coletar eventos de encerramento, selecione a caixa de seleção **Desabilitar Eventos de Encerramento**.  Isso reduz o tamanho do arquivo de rastreamento que é gerado por coleta, mas algumas pilhas poderão não ser resolvidas. Para saber mais, confira [Provedores ETW no CLR](/dotnet/framework/performance/clr-etw-providers).
 
 ### <a name="sample-events"></a>Eventos de amostragem
  Você pode usar eventos de exemplo para coletar as pilhas de chamadas associadas à execução do thread. Esses eventos são coletados aproximadamente uma vez por milissegundo para threads em execução no processo atual. Se você desabilitar a coleta de eventos de exemplo, o tamanho do rastreamento coletado será reduzido, mas não será possível exibir nenhuma pilha de chamadas associada à execução do thread.

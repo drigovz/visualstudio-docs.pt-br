@@ -1,25 +1,25 @@
 ---
-title: Designer de fluxo de trabalho - Designer de atividade de TerminateWorkflow
+title: Designer de atividade Designer de Fluxo de Trabalho-TerminateWorkflow
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.TerminateWorkflow.UI
 ms.assetid: 08e632ed-0724-4fb4-9df1-f8d443eaf0ac
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 662366e3b0c0558170c117104d20a1bcb6417615
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 01003005e9f73138e5a430b21e538c5c241e7f9f
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62434027"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72649879"
 ---
 # <a name="terminateworkflow-activity-designer"></a>Designer de atividade de TerminateWorkflow
 
-O **TerminateWorkflow** designer de atividade é usado para criar e configurar um <xref:System.Activities.Statements.TerminateWorkflow> atividade.
+O designer de atividade **TerminateWorkflow** é usado para criar e configurar uma atividade de <xref:System.Activities.Statements.TerminateWorkflow>.
 
 ## <a name="the-terminateworkflow-activity"></a>A atividade de TerminateWorkflow
 
@@ -27,13 +27,13 @@ A atividade de <xref:System.Activities.Statements.TerminateWorkflow> finaliza a 
 
 ### <a name="using-the-terminateworkflow-activity-designer"></a>Usando o designer de atividade de TerminateWorkflow
 
-O **TerminateWorkflow** designer de atividade pode ser encontrado na **tempo de execução** categoria dos **caixa de ferramentas**, que é acessado clicando o **dacaixadeferramentas** guia (como alternativa, selecione **caixa de ferramentas** da **exibição** menu ou CTRL + ALT + X.)
+O designer de atividade do **TerminateWorkflow** pode ser encontrado na categoria **tempo de execução** da **caixa de ferramentas**, que é acessada clicando na guia caixa de **ferramentas** (como alternativa, selecione **caixa de ferramentas** no menu **Exibir** ou CTRL + ALT + X.)
 
-O **TerminateWorkflow** designer de atividade pode ser arrastado da **caixa de ferramentas** e ignorados sobre a superfície do Designer de fluxo de trabalho onde quer que as atividades são colocadas em geral, como em um <xref:System.Activities.Statements.Sequence>. Isso cria uma <xref:System.Activities.Statements.TerminateWorkflow> atividade com um padrão **DisplayName** de TerminateWorkflow. O <xref:System.Activities.Activity.DisplayName%2A> pode ser editado no cabeçalho do **TerminateWorkflow** designer de atividade ou nos **DisplayName** caixa da grade de propriedade.
+O designer de atividade do **TerminateWorkflow** pode ser arrastado da **caixa de ferramentas** e descartado para a superfície de designer de fluxo de trabalho sempre que as atividades são geralmente colocadas, como dentro de um <xref:System.Activities.Statements.Sequence>. Isso cria uma atividade de <xref:System.Activities.Statements.TerminateWorkflow> com um **DisplayName** padrão de TerminateWorkflow. O <xref:System.Activities.Activity.DisplayName%2A> pode ser editado no cabeçalho do designer de atividade **TerminateWorkflow** ou na caixa **DisplayName** da grade de propriedades.
 
 ### <a name="the-terminateworkflow-properties"></a>As propriedades de TerminateWorkflow
 
-A tabela a seguir mostra as propriedades de <xref:System.Activities.Statements.TerminateWorkflow> e descreve como elas são usadas no designer. Essas propriedades podem ser editadas na grade de propriedade e alguns deles podem ser editados na superfície do Designer de fluxo de trabalho.
+A tabela a seguir mostra as propriedades de <xref:System.Activities.Statements.TerminateWorkflow> e descreve como elas são usadas no designer. Essas propriedades podem ser editadas na grade de propriedades e algumas delas podem ser editadas na superfície Designer de Fluxo de Trabalho.
 
 |Nome da Propriedade|Necessária|Uso|
 |-|--------------|-|

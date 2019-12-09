@@ -1,5 +1,5 @@
 ---
-title: IScriptEntry::SetBody | Microsoft Docs
+title: 'IScriptEntry:: setBody | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 46ebccb57885480d34d79cbd27e99dc6a35b343d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1af865c8366481204ee413377a083b09d8c97383
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62787639"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575376"
 ---
 # <a name="iscriptentrysetbody"></a>IScriptEntry::SetBody
-Define o texto que está no corpo de uma `IScriptEntry` bloco de script ou um `IScriptScriptlet` scriptlet.  
+Define o texto que está no corpo de um bloco de script `IScriptEntry` ou um Scriptlet `IScriptScriptlet`.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -37,13 +37,13 @@ HRESULT SetBody(
   
 #### <a name="parameters"></a>Parâmetros  
  `psz`  
- [in] Para um `IScriptEntry` bloco de script, `psz` é o texto entre as marcas de script.  
+ no Para um bloco de script `IScriptEntry`, `psz` é o texto incluído nas marcas de script.  
   
- Para um `IScriptEntry` bloco de função, `psz` é o corpo da função.  
+ Para um bloco de função `IScriptEntry`, `psz` é o corpo da função.  
   
- Para um `IScriptScriptlet` objeto (que é derivada de `IScriptEntry`), `psz` é o texto do script do scriptlet.  
+ Para um objeto `IScriptScriptlet` (que deriva de `IScriptEntry`), `psz` é o texto do script do scriptlet.  
   
-## <a name="return-value"></a>Valor de retorno  
+## <a name="return-value"></a>Valor retornado  
  Um `HRESULT`. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.  
   
 |Valor|Descrição|  
@@ -53,5 +53,5 @@ HRESULT SetBody(
 ## <a name="remarks"></a>Comentários  
   
 ## <a name="see-also"></a>Consulte também  
- [Interface IScriptEntry](../../winscript/reference/iscriptentry-interface.md)   
+ @No__t_1 de [interface IScriptEntry](../../winscript/reference/iscriptentry-interface.md)  
  [IScriptEntry::GetBody](../../winscript/reference/iscriptentry-getbody.md)

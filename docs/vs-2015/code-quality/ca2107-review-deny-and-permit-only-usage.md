@@ -1,5 +1,5 @@
 ---
-title: 'CA2107: Revisar deny e permit somente uso | Microsoft Docs'
+title: 'CA2107: revisar a negação e permitir apenas o uso | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,17 +12,17 @@ helpviewer_keywords:
 - CA2107
 ms.assetid: 366f4a56-ae93-4882-81d0-bd0a55ebbc26
 caps.latest.revision: 21
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 7de14898c5fb2bb6f8e95a2af5fd6b39a54cdb1d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 32339852d67d4f3f28fedd204a056440ad49e075
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60082146"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72665963"
 ---
-# <a name="ca2107-review-deny-and-permit-only-usage"></a>CA2107: Examinar uso de deny e permit only
+# <a name="ca2107-review-deny-and-permit-only-usage"></a>CA2107: revisar uso de deny e permit only
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -36,48 +36,48 @@ ms.locfileid: "60082146"
  Um método contém uma verificação de segurança que especifica a ação de segurança PermitOnly ou Deny.
 
 ## <a name="rule-description"></a>Descrição da Regra
- O [usando o método PermitOnly](http://msdn.microsoft.com/8c7bdb7f-882f-45b7-908c-6cbaa1767649) e <xref:System.Security.CodeAccessPermission.Deny%2A?displayProperty=fullName> ações de segurança devem ser usadas apenas por aqueles que tenham um conhecimento avançado de [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] segurança. O código que usa essas ações de segurança deve passar por uma revisão de segurança.
+ O [uso do método PermitOnly e das](https://msdn.microsoft.com/8c7bdb7f-882f-45b7-908c-6cbaa1767649) ações de segurança <xref:System.Security.CodeAccessPermission.Deny%2A?displayProperty=fullName> deve ser usado somente por aqueles que têm um conhecimento avançado de [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] segurança. O código que usa essas ações de segurança deve passar por uma revisão de segurança.
 
- Negar altera o comportamento padrão, a movimentação de pilha ocorre em resposta a uma exigência de segurança. Ele permite que você especifique as permissões que não devem ser concedidas para a duração do método negando, independentemente das permissões reais dos chamadores na pilha de chamadas. Se a movimentação da pilha detecta um método que é protegido por Negar e se a permissão exigida é incluída nas permissões negadas, a movimentação da pilha falha. PermitOnly também altera o comportamento padrão do exame da pilha. Ele permite que o código especificar somente as permissões que podem ser concedidas, independentemente das permissões dos chamadores. Se a movimentação da pilha detecta um método que é protegido pelo PermitOnly, e se a permissão exigida não está incluída nas permissões que são especificadas pela PermitOnly, a movimentação da pilha falha.
+ Deny altera o comportamento padrão da movimentação de pilha que ocorre em resposta a uma demanda de segurança. Ele permite que você especifique permissões que não devem ser concedidas durante o método de negação, independentemente das permissões reais dos chamadores na pilha de chamadas. Se a movimentação da pilha detectar um método protegido por Deny e se a permissão solicitada estiver incluída nas permissões negadas, a movimentação da pilha falhará. PermitOnly também altera o comportamento padrão da movimentação da pilha. Ele permite que o código especifique somente as permissões que podem ser concedidas, independentemente das permissões dos chamadores. Se a movimentação da pilha detectar um método protegido por PermitOnly e se a permissão solicitada não estiver incluída nas permissões especificadas pelo PermitOnly, a movimentação da pilha falhará.
 
- Código que depende dessas ações deve ser avaliado cuidadosamente para vulnerabilidades de segurança devido à sua utilidade limitada e comportamento sutil. Considere o seguinte:
+ O código que depende dessas ações deve ser avaliado cuidadosamente quanto às vulnerabilidades de segurança devido à sua utilidade limitada e ao comportamento sutil. Considere o seguinte:
 
-- [Demandas de link](http://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) não são afetados por Deny ou PermitOnly.
+- As [demandas de link](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) não são afetadas por Deny ou PermitOnly.
 
-- Se o Deny ou PermitOnly ocorre no quadro de pilha como a demanda que faz com que a movimentação da pilha, as ações de segurança não terão efeito.
+- Se o Deny ou PermitOnly ocorrer no mesmo quadro de pilha que a demanda que causa a movimentação da pilha, as ações de segurança não terão nenhum efeito.
 
-- Valores que são usados para construir as permissões com base em caminho geralmente podem ser especificados de várias maneiras. Negar acesso a um formulário do caminho não nega acesso a todas as formas. Por exemplo, se um compartilhamento de arquivos \\\Server\Share é mapeado para uma unidade de rede x, para negar acesso a um arquivo no compartilhamento, você deve negar \\\Server\Share\File, X:\File e todos os caminhos que acessa o arquivo.
+- Os valores que são usados para construir permissões baseadas em caminho normalmente podem ser especificados de várias maneiras. Negar acesso a uma forma do caminho não nega o acesso a todos os formulários. Por exemplo, se um compartilhamento de arquivos \\ \Server\Share for mapeado para uma unidade de rede X:, para negar acesso a um arquivo no compartilhamento, você deverá negar \\ \Server\Share\File, X:\File e todos os outros caminhos que acessam o arquivo.
 
-- Um <xref:System.Security.CodeAccessPermission.Assert%2A?displayProperty=fullName> podem encerrar uma movimentação de pilha antes de atingir o Deny ou PermitOnly.
+- Um <xref:System.Security.CodeAccessPermission.Assert%2A?displayProperty=fullName> pode encerrar uma movimentação de pilha antes que Deny ou PermitOnly seja atingido.
 
-- Se um Deny tem qualquer efeito, ou seja, quando um chamador tiver uma permissão que está bloqueada por Deny, o chamador pode acessar o recurso protegido diretamente, ignorando a negar. Da mesma forma, se o chamador não tem a permissão negada, a movimentação da pilha falhará sem a negar.
+- Se uma negação tiver algum efeito, ou seja, quando um chamador tiver uma permissão bloqueada pela negação, o chamador poderá acessar o recurso protegido diretamente, ignorando a negação. Da mesma forma, se o chamador não tiver a permissão negada, a movimentação da pilha falhará sem a negação.
 
 ## <a name="how-to-fix-violations"></a>Como Corrigir Violações
- Qualquer uso das seguintes ações de segurança fará com que uma violação. Para corrigir uma violação, não use essas ações de segurança.
+ Qualquer uso dessas ações de segurança resultará em uma violação. Para corrigir uma violação, não use essas ações de segurança.
 
 ## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos
- Suprima um aviso nessa regra somente depois de concluir uma revisão de segurança.
+ Suprimir um aviso desta regra somente depois de concluir uma revisão de segurança.
 
 ## <a name="example"></a>Exemplo
- O exemplo a seguir demonstra algumas limitações de negar.
+ O exemplo a seguir demonstra algumas limitações de Deny.
 
- A seguinte biblioteca contém uma classe que tem dois métodos que são idênticos, exceto para as demandas de segurança que protegem-los.
+ A biblioteca a seguir contém uma classe que tem dois métodos que são idênticos, exceto pelas demandas de segurança que os protegem.
 
  [!code-csharp[FxCop.Security.PermitAndDeny#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Security.PermitAndDeny/cs/FxCop.Security.PermitAndDeny.cs#1)]
 
 ## <a name="example"></a>Exemplo
- O aplicativo a seguir demonstra os efeitos de negar sobre os métodos protegidos da biblioteca.
+ O aplicativo a seguir demonstra os efeitos de Deny nos métodos protegidos da biblioteca.
 
  [!code-csharp[FxCop.Security.TestPermitAndDeny#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Security.TestPermitAndDeny/cs/FxCop.Security.TestPermitAndDeny.cs#1)]
 
  Este exemplo gerencia a seguinte saída.
 
- **Por demanda: Deny do chamador não tem nenhum efeito sob demanda com a permissão declarada. ** 
- **LinkDemand: Deny do chamador não tem nenhum efeito em LinkDemand com a permissão declarada. ** 
- **LinkDemand: Deny do chamador não tem nenhum efeito com o código protegido por LinkDemand. ** 
- **LinkDemand: Este negar não tem nenhum efeito com o código protegido por LinkDemand.**
+ **Demanda: a negação do chamador não tem nenhum efeito sob demanda com a permissão declarada.** 
+**LinkDemand: o Deny do chamador não tem nenhum efeito em LinkDemand com a permissão declarada.** 
+**LinkDemand: o Deny do chamador não tem nenhum efeito com código protegido por LinkDemand.** 
+**LinkDemand: essa negação não tem efeito com Código protegido por LinkDemand.**
 ## <a name="see-also"></a>Consulte também
  <xref:System.Security.CodeAccessPermission.PermitOnly%2A?displayProperty=fullName> <xref:System.Security.CodeAccessPermission.Assert%2A?displayProperty=fullName>
  <xref:System.Security.CodeAccessPermission.Deny%2A?displayProperty=fullName>
  <xref:System.Security.IStackWalk.PermitOnly%2A?displayProperty=fullName>
- [Diretrizes de codificação segura](http://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177) [substituindo verificações de segurança](http://msdn.microsoft.com/4acdeff5-fc05-41bf-8505-7387cdbfca28) [usando o método PermitOnly](http://msdn.microsoft.com/8c7bdb7f-882f-45b7-908c-6cbaa1767649)
+ [Diretrizes de codificação seguras](https://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177) [substituindo verificações de segurança](https://msdn.microsoft.com/4acdeff5-fc05-41bf-8505-7387cdbfca28) [usando o método PermitOnly](https://msdn.microsoft.com/8c7bdb7f-882f-45b7-908c-6cbaa1767649)

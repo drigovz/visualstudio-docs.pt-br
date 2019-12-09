@@ -18,76 +18,57 @@ helpviewer_keywords:
 - editor settings
 ms.assetid: 90d4e522-6391-4571-927d-b466a9766342
 caps.latest.revision: 14
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 82c314870acfa3cbb836a7570d62a6f0c5ac8884
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 7a8ff19ab503efe58e207d36a87babb5b8a80b28
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59649063"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72645390"
 ---
 # <a name="text-editor-options-dialog-box"></a>Caixa de diálogo Opções do Editor de Texto
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-As opções do editor na caixa de diálogo **Opções** fornecem maneiras de personalizar a aparência e o comportamento do editor.  
-  
-## <a name="in-this-section"></a>Nesta seção  
- [Como: alterar fontes e cores no editor](../../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)  
- Explica como alterar as cores e as fontes do editor.  
-  
- [Como: gerenciar a quebra automática de linha no editor](../../ide/reference/how-to-manage-word-wrap-in-the-editor.md)  
- Explica as opções de quebra automática de linha.  
-  
- [Como: exibir números de linha no editor](../../ide/reference/how-to-display-line-numbers-in-the-editor.md)  
- Explica como ativar números de linha.  
-  
- [Como: exibir URLs como links no editor](../../ide/reference/how-to-display-urls-as-links-in-the-editor.md)  
- Explica como formatar URLs para que elas sejam exibidas como links.  
-  
- [Configurando opções do editor específicas a um idioma](../../ide/reference/setting-language-specific-editor-options.md)  
- Explica como definir as opções do editor que se aplicam somente a uma linguagem de desenvolvimento.  
-  
- [Opções, Editor de Texto, Geral](../../ide/reference/options-text-editor-general.md)  
- Explica as opções gerais do editor.  
-  
- [Opções, Editor de Texto, Extensão de Arquivo](../../ide/reference/options-text-editor-file-extension.md)  
- Explica as opções de extensão de arquivo.  
-  
- [Opções, Editor de Texto, Todas as Linguagens](../../ide/reference/options-text-editor-all-languages.md)  
- Explica as opções disponíveis para todas as linguagens.  
-  
- [Opções, Editor de Texto, Todas as Linguagens, Guias](../../ide/reference/options-text-editor-all-languages-tabs.md)  
- Explica as opções da guia disponíveis para todas as linguagens.  
-  
- [Opções, Editor de Texto, Básico (Visual Basic)](../../ide/reference/options-text-editor-basic-visual-basic.md)  
- Explica as opções do Visual Basic.  
-  
- [Opções, Editor de Texto, C/C++, Formatação](../../ide/reference/options-text-editor-c-cpp-formatting.md)  
- Explica as opções de formatação do C/C++.  
-  
- [Opções, Editor de Texto, C/C++, Avançado](../../ide/reference/options-text-editor-c-cpp-advanced.md)  
- Explica as opções avançadas do C/C++.  
-  
- [Opções, Editor de Texto, C#, Formatação](../../ide/reference/options-text-editor-csharp-formatting.md)  
- Explica as opções de formatação do C#.  
-  
- [Opções, Editor de Texto, C#, Avançado](../../ide/reference/options-text-editor-csharp-advanced.md)  
- Explica as opções avançadas do C#.  
-  
- [Opções, Editor de Texto, C#, IntelliSense](../../ide/reference/options-text-editor-csharp-intellisense.md)  
- Explica as opções do IntelliSense do C#.  
-  
- [Opções, Editor de Texto, JavaScript, Formatação](../../ide/reference/options-text-editor-javascript-formatting.md)  
- Explica as opções de formatação do JavaScript.  
-  
- [Opções, Editor de Texto, JavaScript, IntelliSense](../../ide/reference/options-text-editor-javascript-intellisense.md)  
- Explica as opções do IntelliSense do JavaScript.  
-  
- [Opções, Editor de Texto, XAML, Formatação](../../ide/reference/options-text-editor-xaml-formatting.md)  
- Explica as opções de formatação de XAML.  
-  
-## <a name="related-sections"></a>Seções relacionadas  
- [Escrevendo código](../../ide/writing-code-in-the-code-and-text-editor.md)  
- Descreve as diferentes maneiras de usar o Editor de Código.
+As opções do editor na caixa de diálogo **Opções** fornecem maneiras de personalizar a aparência e o comportamento do editor.
+
+## <a name="in-this-section"></a>Nesta seção
+ [Como alterar fontes e cores no editor](../../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md) Explica como alterar fontes e cores do editor.
+
+ [Como: gerenciar a quebra automática de texto no editor](../../ide/reference/how-to-manage-word-wrap-in-the-editor.md) Explica as opções de quebra automática de palavra.
+
+ [Como: exibir números de linha no editor](../../ide/reference/how-to-display-line-numbers-in-the-editor.md) Explica como ativar números de linha.
+
+ [Como exibir URLs como links no editor](../../ide/reference/how-to-display-urls-as-links-in-the-editor.md) Explica como formatar URLs para que elas apareçam como links.
+
+ [Configurando opções de editor específicas de idioma](../../ide/reference/setting-language-specific-editor-options.md) Explica como definir opções do editor que se aplicam somente a uma linguagem de desenvolvimento.
+
+ [Opções, editor de texto, geral](../../ide/reference/options-text-editor-general.md) Explica as opções gerais do editor.
+
+ [Opções, editor de texto, extensão de arquivo](../../ide/reference/options-text-editor-file-extension.md) Explica as opções de extensão de arquivo.
+
+ [Opções, editor de texto, todos os idiomas](../../ide/reference/options-text-editor-all-languages.md) Explica as opções disponíveis para todos os idiomas.
+
+ [Opções, editor de texto, todas as linguagens, guias](../../ide/reference/options-text-editor-all-languages-tabs.md) Explica as opções de guia disponíveis para todos os idiomas.
+
+ [Opções, editor de texto, básico (Visual Basic)](../../ide/reference/options-text-editor-basic-visual-basic.md) Explica Visual Basic opções.
+
+ [Opções, editor de texto, CC++/, formatação](../../ide/reference/options-text-editor-c-cpp-formatting.md) explica asC++ opções de c/formatação.
+
+ [Opções, editor de texto, CC++/, avançado](../../ide/reference/options-text-editor-c-cpp-advanced.md) explica asC++ opções c/avançado.
+
+ [Opções, editor de texto C#,, formatação](../../ide/reference/options-text-editor-csharp-formatting.md) explica C# as opções de formatação.
+
+ [Opções, editor de texto C#,, avançado](../../ide/reference/options-text-editor-csharp-advanced.md) explica C# as opções avançadas.
+
+ [Opções, editor de texto C#,,](../../ide/reference/options-text-editor-csharp-intellisense.md) o C# IntelliSense explica as opções do IntelliSense.
+
+ [Opções, editor de texto, JavaScript, formatação](../../ide/reference/options-text-editor-javascript-formatting.md) Explica as opções de formatação do JavaScript.
+
+ [Opções, editor de texto, JavaScript, IntelliSense](../../ide/reference/options-text-editor-javascript-intellisense.md) Explica as opções do JavaScript IntelliSense.
+
+ [Opções, editor de texto, XAML, formatação](../../ide/reference/options-text-editor-xaml-formatting.md) Explica as opções de formatação XAML.
+
+## <a name="related-sections"></a>Seções relacionadas
+ [Escrevendo código](../../ide/writing-code-in-the-code-and-text-editor.md) Descreve diferentes maneiras de usar o editor de código.

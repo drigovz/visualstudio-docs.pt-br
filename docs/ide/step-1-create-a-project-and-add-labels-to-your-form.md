@@ -1,7 +1,7 @@
 ---
 title: 'Etapa 1: Criar um projeto e adicionar rótulos ao formulário'
-ms.date: 11/04/2016
-ms.topic: conceptual
+ms.date: 10/15/2019
+ms.topic: tutorial
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 ms.assetid: f44e50be-a5f5-4d77-9cff-dd52374c3f74
@@ -10,31 +10,36 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d32ae922726a13416086e982679483ae36f2ad0e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 0fdda615ceea11434a4533fa2a5071a5a999c1c4
+ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62949107"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72516690"
 ---
 # <a name="step-1-create-a-project-and-add-labels-to-your-form"></a>Etapa 1: Criar um projeto e adicionar rótulos ao formulário
 
 Nas primeiras etapas do desenvolvimento deste teste, você o cria o projeto, e adiciona rótulos, um botão, e outros controles a um formulário. Você também define as propriedades para cada controle adicionado. O projeto conterá o formulário, controles e (posteriormente neste tutorial) o código. O botão inicia o teste, os rótulos mostram os problemas do teste e outros controles mostram as respostas dos teste e o tempo permanece para concluir o teste.
 
 > [!NOTE]
-> Esse tópico faz parte de uma série de tutoriais sobre conceitos de codificação básica. Para obter uma visão geral do tutorial, confira [Tutorial 2: Criar um teste de matemática temporizado](../ide/tutorial-2-create-a-timed-math-quiz.md).
+> Esse tópico faz parte de uma série de tutoriais sobre conceitos de codificação básica. 
+> - Para obter uma visão geral do tutorial, confira [Tutorial 2: criar um teste de matemática temporizado](../ide/tutorial-2-create-a-timed-math-quiz.md). 
+> - Para baixar uma versão completa do código, consulte [exemplo de tutorial de teste de matemática completo](https://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c).
 
-## <a name="to-create-a-project-and-set-properties-for-a-form"></a>Para criar um projeto e definir propriedades para um formulário
+## <a name="to-create-a-project-for-a-form"></a>Para criar um projeto para um formulário
 
 ::: moniker range="vs-2017"
 
 1. Na barra de menus, escolha **Arquivo** > **Novo** > **Projeto**.
 
-1. Na lista **Modelos Instalados** escolha **C#** ou **Visual Basic**.
+1. Escolha **Visual C#** ou **Visual Basic** no lado esquerdo da caixa de diálogo **Novo Projeto** e, em seguida, escolha **Windows Desktop**.
 
-1. Na lista de modelos, escolha o modelo de **Aplicativo do Windows Forms**, dê o nome **MathQuiz** a ele e, então, clique no botão **OK**.
+1. Na lista de modelos, escolha o modelo de **Aplicativo do Windows Forms (.NET Framework)** , dê o nome *MathQuiz* a ele e, então, clique no botão **OK**.
 
-     Um formulário chamado *Form1.cs* ou *Form1.vb* aparece, dependendo da linguagem de programação que você escolheu.
+    Um formulário chamado *Form1.cs* ou *Form1.vb* aparece, dependendo da linguagem de programação que você escolheu.
+
+   > [!NOTE]
+   > Se o modelo **Aplicativo do Windows Forms (.NET Framework)** não for exibido, use o Instalador do Visual Studio para instalar a carga de trabalho **Desenvolvimento para área de trabalho do .NET**.<br/><br/>![Carga de trabalho de desenvolvimento para carga de trabalho do .NET no Instalador do Visual Studio](../ide/media/dot-net-desktop-dev-workload.png)<br/><br/> Para obter mais informações, confira a página [Instalar o Visual Studio](../install/install-visual-studio.md).
 
 ::: moniker-end
 
@@ -42,15 +47,32 @@ Nas primeiras etapas do desenvolvimento deste teste, você o cria o projeto, e a
 
 1. Na tela Iniciar, selecione **Criar um novo projeto**.
 
-1. Na caixa de pesquisa, digite "WPF", escolha **aplicativo WPF (.NET Framework)** e, em seguida, escolha **Próxima**.
+   ![Exibir a janela 'Criar um novo projeto'](../get-started/media/vs-2019/create-new-project-dark-theme.png)
 
-   Se você não encontrar o modelo **Aplicativo do WPF (.NET Framework)**, use o Instalador do Visual Studio para instalar a carga de trabalho **desenvolvimento para área de trabalho do .NET**.
+1. Na janela **Criar um novo projeto**, insira ou digite *Windows Forms* na caixa de pesquisa. Em seguida, escolha **área de trabalho** na lista tipo de **projeto** .
 
-1. Dê um nome ao projeto, **MathQuiz**, e escolha **Criar**
+   Depois de aplicar o filtro de **tipo de projeto** , escolha o modelo **aplicativo de Windows Forms (.NET Framework)** para C# ou Visual Basic e, em seguida, escolha **Avançar**.
+
+   ![Escolha o modelo C# ou Visual Basic para o aplicativo Windows Forms (.NET Framework)](./media/create-new-project-search-winforms-filtered.png)
+
+   > [!NOTE]
+   > Se você não encontrar o modelo do **Aplicativo do Windows Forms (.NET Framework)** , poderá instalá-lo a partir da janela **Criar um novo projeto**. Na mensagem **Não encontrou o que precisa?** , escolha o link **Instalar mais ferramentas e recursos**.
+   >
+   > ![O link 'Instalar mais ferramentas e recursos' da mensagem 'Não encontrou o que precisa?' na janela 'Criar novo projeto'](../get-started/media/vs-2019/not-finding-what-looking-for.png)
+   >
+   > Em seguida, no Instalador do Visual Studio, escolha Escolher a carga de trabalho de **desenvolvimento de área de trabalho do .NET**.
+   >
+   > ![Carga de trabalho do .NET Core no Instalador do Visual Studio](../ide/media/install-dot-net-desktop-env.png)
+   >
+   > Depois disso, escolha o botão **Modificar** no Instalador do Visual Studio. Pode ser solicitado que você salve seu trabalho; nesse caso, faça isso. Em seguida, escolha **Continuar** para instalar a carga de trabalho.
+
+1. Na janela **Configurar seu novo projeto**, digite ou insira *MathQuiz* na caixa **Nome do projeto**. Em seguida, escolha **Criar**.
 
 ::: moniker-end
 
-1. Escolha o formulário e, em seguida, altere sua propriedade **Text** para **Teste de matemática**.
+## <a name="to-set-properties-for-a-form"></a>Para definir propriedades para um formulário
+
+1. No Visual Studio, escolha o formulário (*Form1.cs* ou *Form1.vb*, dependendo da linguagem de programação), e altere sua propriedade **Texto** para **Math Quiz**.
 
      A janela **Propriedades** contém propriedades para o formulário.
 
@@ -80,9 +102,9 @@ Nas primeiras etapas do desenvolvimento deste teste, você o cria o projeto, e a
 
 6. Na janela **Propriedades**, escolha a propriedade **Text** e pressione a tecla **Backspace** para apagar o seu valor.
 
-7. Escolha o sinal de mais (**+**) ao lado da propriedade **Font** e, em seguida, altere o valor da propriedade **Size** para **15,75**.
+7. Escolha o sinal de mais ( **+** ) ao lado da propriedade **Font** e, em seguida, altere o valor da propriedade **Size** para **15,75**.
 
-     É possível alterar várias propriedades de fonte, como mostra a imagem a seguir.
+     Você pode alterar várias propriedades de fonte, como mostra a captura de tela a seguir.
 
      ![Tamanho da fonte de exibição na janela Propriedades](../ide/media/express_setfontsize.png)
 
@@ -130,7 +152,7 @@ Nas primeiras etapas do desenvolvimento deste teste, você o cria o projeto, e a
 
 16. Altere o valor da propriedade **(Name)** do controle NumericUpDown para **sum**.
 
-     Você criou a primeira linha, como mostra a imagem a seguir.
+     Você criou a primeira linha, conforme mostrado na ilustração a seguir.
 
      ![A primeira linha do teste de matemática](../ide/media/express_firstrow.png)
 
@@ -180,7 +202,7 @@ Nas primeiras etapas do desenvolvimento deste teste, você o cria o projeto, e a
 
 7. Defina o valor da propriedade de **TabIndex** para o controle de soma NumericUpDown como **2**, o controle da diferença como **3**, o controle do produto como **4** e o controle do quociente como **5**.
 
-     O formulário deve parecer com a ilustração a seguir.
+     O formulário deve ser semelhante à captura de tela a seguir.
 
      ![Formulário inicial do teste de matemática](../ide/media/express_formlaidout.png)
 
@@ -188,6 +210,6 @@ Nas primeiras etapas do desenvolvimento deste teste, você o cria o projeto, e a
 
 ## <a name="to-continue-or-review"></a>Para continuar ou revisar
 
-- Para ir para a próxima etapa do tutorial, confira [Etapa 2: Criar um problema de adição aleatório](../ide/step-2-create-a-random-addition-problem.md).
+- Para ir para a próxima etapa do tutorial, consulte **[etapa 2: criar um problema de adição aleatória](../ide/step-2-create-a-random-addition-problem.md)** .
 
-- Para retornar ao tópico de visão geral, confira [Tutorial 2: Criar um teste de matemática temporizado](../ide/tutorial-2-create-a-timed-math-quiz.md).
+- Para retornar ao tópico de visão geral, veja [Tutorial 2: Criar um teste de matemática temporizado](../ide/tutorial-2-create-a-timed-math-quiz.md).

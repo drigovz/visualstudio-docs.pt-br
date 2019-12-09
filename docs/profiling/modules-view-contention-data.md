@@ -8,14 +8,15 @@ ms.assetid: 1a9aa122-2d8f-4a09-b503-92975aa6b648
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: f9d3cf030ca0e996365963e5dad419b19ff67596
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 2de844867e9c0a8d95abdaa13f860a6487254bfe
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62830056"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74780007"
 ---
 # <a name="modules-view---contention-data"></a>Exibição Módulos – dados de contenção
 O modo de exibição de módulos de dados de contenção exibe dados de simultaneidade agrupados pelos módulos que foram utilizados nos dados de criação de perfil. Cada módulo é a raiz de uma árvore hierárquica. As funções do módulo no qual os eventos de contenção ocorreram são listadas sob o nó do módulo.
@@ -43,7 +44,7 @@ O modo de exibição de módulos de dados de contenção exibe dados de simultan
 |**Arquivo de Origem**|O arquivo de origem que contém a definição dessa função.|
 
 ## <a name="see-also"></a>Consulte também
-- [Como: Personalizar as colunas da Exibição de Relatório](../profiling/how-to-customize-report-view-columns.md)
+- [Como: Personalizar colunas de exibição de relatório](../profiling/how-to-customize-report-view-columns.md)
 - [Exibição Módulos](../profiling/modules-view.md)
 - [Exibição Módulos – instrumentação](../profiling/modules-view-dotnet-memory-instrumentation-data.md)
 - [Exibição Módulos – amostragem](../profiling/modules-view-dotnet-memory-sampling-data.md)

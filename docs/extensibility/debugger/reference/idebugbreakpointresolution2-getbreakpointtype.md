@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBreakpointResolution2::GetBreakpointType
 ms.assetid: 2b707fb9-f703-4c78-91bf-7434f57790a0
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2ab8bc16da26b1c47ecdda79db361e24b68e2e82
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: a8e8d7c77b9020df577e611f8a27116fa7a7b6db
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62876882"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352891"
 ---
 # <a name="idebugbreakpointresolution2getbreakpointtype"></a>IDebugBreakpointResolution2::GetBreakpointType
 Obtém o tipo do ponto de interrupção representado por essa resolução.
@@ -36,10 +39,9 @@ int GetBreakpointType( 
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
-`pBPType`
-
- [out] Retorna um valor da [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md) enumeração que especifica o tipo de ponto de interrupção.
+## <a name="parameters"></a>Parâmetros
+`pBPType`\
+[out] Retorna um valor da [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md) enumeração que especifica o tipo de ponto de interrupção.
 
 ## <a name="return-value"></a>Valor de retorno
 Se for bem-sucedido, retornará `S_OK`; caso contrário, retornará um código de erro. Retornará E_FAIL se o `bpResLocation` campo associado [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) estrutura não é válida.

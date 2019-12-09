@@ -6,17 +6,17 @@ f1_keywords:
 - vs.codedUItest.testeditor
 helpviewer_keywords:
 - coded UI test, Coded UI Test Editor
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: 88002f4187883d55f22ec9f3dc80f3ceb65e7e48
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+author: jillre
+ms.openlocfilehash: 971b5d178a777b7a0021eda4bfccab06727981ee
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62784372"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72664997"
 ---
 # <a name="edit-coded-ui-tests-using-the-coded-ui-test-editor"></a>Editar testes de IU codificados usando o Editor de Teste de IU Codificado
 
@@ -24,7 +24,7 @@ o Editor de testes de interface de usuário codificada permite modificar facilme
 
 [!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
-**Requisitos**
+**Requirements**
 
 - Visual Studio Enterprise
 - Componente de teste de IU codificado
@@ -74,7 +74,7 @@ Por meio do Editor de Teste de IU Codificado, é possível localizar e exibir ra
 
 Para modificar as propriedades de uma ação de interface do usuário, no painel **Ações de interface do usuário**, expanda o método de teste que contém uma ação de IU cujas propriedades você deseja editar, selecione a ação de interface do usuário e, em seguida, modifique as propriedades usando a janela Propriedades.
 
-Por exemplo, se um servidor estiver indisponível e houver uma ação de interface do usuário associada ao navegador da Web com a instrução **Acessar página da Web "<http://Contoso1/default.aspx>"**, será possível alterar a URL para `'http://Contoso2/default.aspx'`.
+Por exemplo, se um servidor estiver indisponível e houver uma ação de interface do usuário associada ao navegador da Web com a instrução **Acessar página da Web "<http://Contoso1/default.aspx>"** , será possível alterar a URL para `'http://Contoso2/default.aspx'`.
 
 ![Propriedades de controle](../test/media/codeduitestcontrolprop.png)
 
@@ -125,7 +125,7 @@ Após a conclusão do método de divisão, salve as alterações no arquivo *UIM
 
 - É possível renomear o novo método. Selecione-o no painel **Ações de interface do usuário** e escolha o botão **Renomear** na barra de ferramentas do Editor de Teste de IU Codificado.
 
-   - ou -
+   \- ou -
 
    Abra o menu de atalho do novo método de teste e escolha **Renomear**.
 
@@ -195,4 +195,4 @@ Se for necessário garantir que um controle específico esteja disponível antes
 - [Usar a automação de interface do usuário para testar seu código](../test/use-ui-automation-to-test-your-code.md)
 - [Criar testes de IU codificados](../test/use-ui-automation-to-test-your-code.md)
 - [Criar um teste de IU codificado controlado por dados](../test/creating-a-data-driven-coded-ui-test.md)
-- [Passo a passo: Criação, edição e manutenção do teste de IU codificado](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
+- [Passo a passo: criar, editar e manter um teste de IU codificado](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)

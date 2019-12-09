@@ -9,19 +9,19 @@ helpviewer_keywords:
 - text, fonts
 - editors, text color
 ms.assetid: 3f7629d1-1cdf-4046-9a31-0632517f234d
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f0ebc1e4707b0240791524cb0b6b4ba75be897cd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 7aa359e9918cb808989bb1f0e65de516af422dc6
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62789586"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72668241"
 ---
-# <a name="how-to-change-fonts-and-colors-for-the-editor-in-visual-studio"></a>Como: Alterar as fontes e as cores do editor no Visual Studio
+# <a name="how-to-change-fonts-and-colors-for-the-editor-in-visual-studio"></a>Como: alterar fontes e cores para o editor no Visual Studio
 
 Altere o tipo da fonte padrão, ajuste o tamanho da fonte e altere as cores de primeiro plano e da tela de fundo de vários **Itens de exibição** de texto no editor de códigos. Ao alterar as configurações de fonte, lembre-se das seguintes informações:
 
@@ -33,9 +33,7 @@ Altere o tipo da fonte padrão, ajuste o tamanho da fonte e altere as cores de p
 
 ## <a name="change-the-default-font-face-size-and-colors"></a>Alterar o tipo da fonte padrão, o tamanho e as cores
 
-1. Selecione **Opções** no menu **Ferramentas** e, na pasta **Ambiente**, selecione **Fontes e Cores**.
-
-     A [caixa de diálogo Fontes e Cores, Ambiente, Opções](../../ide/reference/fonts-and-colors-environment-options-dialog-box.md) é aberta.
+1. Selecione **Opções** no menu **Ferramentas**. Em **ambiente**, selecione [fontes e cores](../../ide/reference/fonts-and-colors-environment-options-dialog-box.md).
 
 2. Em **Mostrar configurações de**, selecione **Editor de Texto**.
 
@@ -50,7 +48,5 @@ Altere o tipo da fonte padrão, ajuste o tamanho da fonte e altere as cores de p
 
 ## <a name="see-also"></a>Consulte também
 
-- [Personalizar o editor](../../ide/customizing-the-editor.md)
-- [Caixa de diálogo Opções do Editor de Texto](../../ide/reference/text-editor-options-dialog-box.md)
 - [Recursos do Editor de Códigos](../../ide/writing-code-in-the-code-and-text-editor.md)
-- [Como: Alterar fontes e cores no Visual Studio](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
+- [Como alterar fontes e cores no Visual Studio](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)

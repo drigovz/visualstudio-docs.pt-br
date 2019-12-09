@@ -1,52 +1,52 @@
 ---
 title: IDebugDocument2::GetDocumentClassID | Microsoft Docs
-ms.date: 11/15/2016
-ms.prod: visual-studio-dev14
-ms.technology: vs-ide-sdk
+ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - IDebugDocument2::GetDocumentClassID
 helpviewer_keywords:
 - IDebugDocument2::GetDocumentClassID
 ms.assetid: 111c2b85-ebfa-487f-b896-2ec4a3eac4d1
-caps.latest.revision: 11
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
-ms.openlocfilehash: 9e969d7c6f17aeaa8642b9988e741318ec1591d6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.workload:
+- vssdk
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 51a4ed842a2f65f37abf6f83ac70d6ce03b9a2e8
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62921522"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66310293"
 ---
 # <a name="idebugdocument2getdocumentclassid"></a>IDebugDocument2::GetDocumentClassID
-[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+Obtém o identificador de classe do documento.
 
-Obtém o identificador de classe do documento.  
-  
-## <a name="syntax"></a>Sintaxe  
-  
-```cpp#  
-HRESULT GetDocumentClassID(   
-   CLSID* pclsid  
-);  
-```  
-  
-```csharp  
-int GetDocumentClassID(   
-   out Guid pclsid  
-);  
-```  
-  
-#### <a name="parameters"></a>Parâmetros  
- `pclsid`  
- [out] Retorna um GUID que é a ID de classe do documento.  
-  
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.  
-  
-## <a name="remarks"></a>Comentários  
- O GUID de classe pode ser usado para instanciar classes individuais, cada um deles representa um documento.  
-  
-## <a name="see-also"></a>Consulte também  
- [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)
+## <a name="syntax"></a>Sintaxe
+
+```cpp
+HRESULT GetDocumentClassID( 
+   CLSID* pclsid
+);
+```
+
+```csharp
+int GetDocumentClassID( 
+   out Guid pclsid
+);
+```
+
+## <a name="parameters"></a>Parâmetros
+`pclsid` [out] Retorna um GUID que é a ID de classe do documento.
+
+## <a name="return-value"></a>Valor de retorno
+ Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
+
+## <a name="remarks"></a>Comentários
+ O GUID de classe pode ser usado para instanciar classes individuais, cada um deles representa um documento.
+
+## <a name="see-also"></a>Consulte também
+- [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)

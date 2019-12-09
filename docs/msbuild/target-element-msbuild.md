@@ -1,6 +1,6 @@
 ---
 title: Elemento Target (MSBuild) | Microsoft Docs
-ms.date: 03/13/2017
+ms.date: 06/13/2019
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#Target
@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e48d28f5270cd43da22d070f30706ce75a1655c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: e1748064482e13eba95e9aa83e9cb04c93b8066f
+ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62939294"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74491622"
 ---
 # <a name="target-element-msbuild"></a>Elemento Target (MSBuild)
 Contém um conjunto de tarefas para o [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] executar em sequência.
@@ -41,7 +41,7 @@ Contém um conjunto de tarefas para o [!INCLUDE[vstecmsbuild](../extensibility/i
         BeforeTargets="Targets"
         AfterTargets="Targets"
         DependsOnTargets="DependentTarget"
-        Condition="'String A' == 'String B'">
+        Condition="'String A' == 'String B'"
         Label="Label">
     <Task>... </Task>
     <PropertyGroup>... </PropertyGroup>
@@ -59,8 +59,8 @@ Contém um conjunto de tarefas para o [!INCLUDE[vstecmsbuild](../extensibility/i
 |---------------|-----------------|
 |`Name`|Atributo obrigatório.<br /><br /> O nome do destino.|
 |`Condition`|Atributo opcional.<br /><br /> A condição a ser avaliada. Se a condição for avaliada como `false`, o destino não executará o corpo dos destinos definidos no atributo `DependsOnTargets`. Para obter mais informações sobre condições, consulte [Condições](../msbuild/msbuild-conditions.md).|
-|`Inputs`|Atributo opcional.<br /><br /> Os arquivos que formam entradas nesse destino. Vários arquivos são separados por ponto e vírgula. Os carimbos de data/hora dos arquivos serão comparados com os dos arquivos em `Outputs` para determinar se o `Target` está atualizado. Para obter mais informações, veja [Builds incrementais](../msbuild/incremental-builds.md), [Como: Compilar incrementalmente](../msbuild/how-to-build-incrementally.md), e [Transformações](../msbuild/msbuild-transforms.md).|
-|`Outputs`|Atributo opcional.<br /><br /> Os arquivos que formam saídas nesse destino. Vários arquivos são separados por ponto e vírgula. Os carimbos de data/hora dos arquivos serão comparados com os dos arquivos em `Inputs` para determinar se o `Target` está atualizado. Para obter mais informações, veja [Builds incrementais](../msbuild/incremental-builds.md), [Como: Compilar incrementalmente](../msbuild/how-to-build-incrementally.md), e [Transformações](../msbuild/msbuild-transforms.md).|
+|`Inputs`|Atributo opcional.<br /><br /> Os arquivos que formam entradas nesse destino. Vários arquivos são separados por ponto e vírgula. Os carimbos de data/hora dos arquivos serão comparados com os dos arquivos em `Outputs` para determinar se o `Target` está atualizado. Para saber mais, confira [Compilações incrementais](../msbuild/incremental-builds.md), [Como compilar de forma incremental](../msbuild/how-to-build-incrementally.md) e [Transformações](../msbuild/msbuild-transforms.md).|
+|`Outputs`|Atributo opcional.<br /><br /> Os arquivos que formam saídas nesse destino. Vários arquivos são separados por ponto e vírgula. Os carimbos de data/hora dos arquivos serão comparados com os dos arquivos em `Inputs` para determinar se o `Target` está atualizado. Para saber mais, confira [Compilações incrementais](../msbuild/incremental-builds.md), [Como compilar de forma incremental](../msbuild/how-to-build-incrementally.md) e [Transformações](../msbuild/msbuild-transforms.md).|
 |`Returns`|Atributo opcional.<br /><br /> O conjunto de itens que será disponibilizado para tarefas que invocam esse destino, por exemplo, tarefas do MSBuild. Vários destinos são separados por ponto e vírgula. Se os destinos no arquivo não tiverem nenhum atributo `Returns`, os atributos de Saídas serão usados para essa finalidade.|
 |`KeepDuplicateOutputs`|Atributo booliano opcional.<br /><br /> Se for `true`, várias referências ao mesmo item nos Retornos do destino serão registradas.  Por padrão, esse atributo é `false`.|
 |`BeforeTargets`|Atributo opcional.<br /><br /> Uma lista separada por ponto e vírgula de nomes de destino.  Quando especificado, indica que esse destino deve ser executado antes dos destinos especificados. Isso permite que o autor do projeto estenda um conjunto existente de destinos sem modificá-los diretamente. Para saber mais, confira [Ordem de build de destino](../msbuild/target-build-order.md).|
@@ -85,6 +85,8 @@ Contém um conjunto de tarefas para o [!INCLUDE[vstecmsbuild](../extensibility/i
 
 ## <a name="remarks"></a>Comentários
  O primeiro destino a ser executado é especificado em tempo de execução. Os destinos podem ter dependências em outros destinos. Por exemplo, um destino de implantação depende de um destino de compilação. O mecanismo [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] executa dependências na ordem em que aparecem no atributo `DependsOnTargets`, da esquerda para a direita. Para obter mais informações, consulte [Destinos](../msbuild/msbuild-targets.md).
+
+ O MSBuild depende da ordem de importação, e a última definição de um destino com um atributo `Name` específico é a definição usada.
 
  Um destino é executado apenas uma vez durante um build, mesmo se mais de um destino tem uma dependência dele.
 

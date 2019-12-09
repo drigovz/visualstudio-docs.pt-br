@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramHost2::GetHostId
 ms.assetid: 7702e221-feb1-446b-a224-cb46c420987e
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1588b75d0bce3ad41c339b0e0e90a506ed91c6cf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 94ed7ae7b46fc9fbc3a37472bd3464f30c35acf8
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62870053"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66325192"
 ---
 # <a name="idebugprogramhost2gethostid"></a>IDebugProgramHost2::GetHostId
 Obtém o identificador de processo do processo que hospeda este programa.
@@ -36,10 +39,9 @@ int GetHostId( 
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `pdwId`
-
- [no, out] Uma [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) estrutura será preenchida com as informações de identificador de processo.
+## <a name="parameters"></a>Parâmetros
+`pdwId`\
+[no, out] Uma [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) estrutura será preenchida com as informações de identificador de processo.
 
 ## <a name="return-value"></a>Valor de retorno
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.

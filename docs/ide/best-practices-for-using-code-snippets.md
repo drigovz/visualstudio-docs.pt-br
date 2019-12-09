@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - code snippets, best practices
 - code snippets, security
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f106606ae00c8f22aa5948128afb8f7f27659a5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 8afb10d2fb5dcf99c63fb12ac624b904353d95b9
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975603"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647760"
 ---
 # <a name="best-practices-for-using-code-snippets"></a>Práticas recomendadas para usar snippets de código
 
@@ -23,7 +23,7 @@ O código em um snippet de código mostra somente a maneira mais simples de faze
 
 ## <a name="handling-exceptions"></a>Tratando exceções
 
-Normalmente, o snippet de código Try...Catch bloqueia a captura e gera todas as exceções novamente. Essa pode não ser a escolha certa para seu projeto. Para cada exceção, existem várias maneiras de responder. Para ver mais exemplos, veja [Como: Tratar uma exceção usando try/catch (C#)](/dotnet/csharp/programming-guide/exceptions/how-to-handle-an-exception-using-try-catch) e [Instrução Try...Catch...Finally (Visual Basic)](/dotnet/visual-basic/language-reference/statements/try-catch-finally-statement).
+Normalmente, o snippet de código Try...Catch bloqueia a captura e gera todas as exceções novamente. Essa pode não ser a escolha certa para seu projeto. Para cada exceção, existem várias maneiras de responder. Para obter exemplos, confira [Como manipular uma exceção usando try/catch (C#)](/dotnet/csharp/programming-guide/exceptions/how-to-handle-an-exception-using-try-catch) e [Instrução Try...Catch...Finally (Visual Basic)](/dotnet/visual-basic/language-reference/statements/try-catch-finally-statement).
 
 ## <a name="file-locations"></a>Locais de arquivo
 
@@ -31,7 +31,7 @@ Quando você adaptar locais de arquivo ao seu aplicativo, deverá considerar o s
 
 - Encontrando um local acessível. Os usuários poderão não ter acesso à pasta *Arquivos de Programas do computador*; portanto, armazenar arquivos com os arquivos do aplicativo pode não funcionar.
 
-- Encontrando um local seguro. Não é seguro armazenar arquivos na pasta raiz (*C:\\*). Para dados de aplicativo, recomendamos a pasta *Dados de Aplicativos*. Para dados individuais do usuário, o aplicativo pode criar um arquivo para cada usuário na pasta *Documentos*.
+- Encontrando um local seguro. Não é seguro armazenar arquivos na pasta raiz (*C:\\* ). Para dados de aplicativo, recomendamos a pasta *Dados de Aplicativos*. Para dados individuais do usuário, o aplicativo pode criar um arquivo para cada usuário na pasta *Documentos*.
 
 - Usando um nome de arquivo válido. Você pode usar os controles <xref:System.Windows.Forms.OpenFileDialog> e <xref:System.Windows.Forms.SaveFileDialog> para reduzir a probabilidade de nomes de arquivo inválidos. Lembre-se de que entre o momento em que o usuário seleciona um arquivo e o momento em que o código manipula o arquivo, o arquivo poderá ser excluído. Além disso, o usuário poderá não ter permissões para gravar no arquivo.
 
@@ -61,11 +61,11 @@ Os snippets de código do IntelliSense instalados pelo Visual Studio não são e
 
 - Abra todos os arquivos de snippet baixados no Bloco de notas ou no editor de XML do Visual Studio e examine-os cuidadosamente antes de instalá-los. Procure os seguintes problemas:
 
-    - O snippet de código poderá danificar o sistema se for executado. Leia atentamente o código-fonte antes de executá-lo.
+  - O snippet de código poderá danificar o sistema se for executado. Leia atentamente o código-fonte antes de executá-lo.
 
-    - O bloco URL de Ajuda do arquivo de snippet pode conter URLs que executam um arquivo de script mal-intencionado ou exibir um site ofensivo.
+  - O bloco URL de Ajuda do arquivo de snippet pode conter URLs que executam um arquivo de script mal-intencionado ou exibir um site ofensivo.
 
-    - O snippet pode conter referências que são adicionadas silenciosamente ao projeto e podem ser carregadas em qualquer lugar do sistema. Essas referências podem ter sido baixadas no computador em que você baixou o snippet. Depois, o snippet de código pode fazer uma chamada a um método na referência que executa um código mal-intencionado. Para se proteger contra um ataque desse tipo, examine os blocos Importações e Referências do arquivo de snippet.
+  - O snippet pode conter referências que são adicionadas silenciosamente ao projeto e podem ser carregadas em qualquer lugar do sistema. Essas referências podem ter sido baixadas no computador em que você baixou o snippet. Depois, o snippet de código pode fazer uma chamada a um método na referência que executa um código mal-intencionado. Para se proteger contra um ataque desse tipo, examine os blocos Importações e Referências do arquivo de snippet.
 
 ## <a name="see-also"></a>Consulte também
 

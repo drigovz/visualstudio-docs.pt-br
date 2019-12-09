@@ -4,19 +4,17 @@ description: Saiba mais sobre como publicar projetos de serviço de nuvem do Azu
 author: ghogen
 manager: jillfra
 assetId: 1a07b6e4-3678-4cbf-b37e-4520b402a3d9
-ms.prod: visual-studio-dev14
-ms.technology: vs-azure
 ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
-ms.openlocfilehash: 440e5198cf05168cffb43ba8c81453413e7754dd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: ae6449613d273c6e0f8302b8a0b604fe91ebc847
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62572293"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911749"
 ---
 # <a name="publishing-a-cloud-service-using-visual-studio"></a>Publicando um serviço de nuvem usando o Visual Studio
 
@@ -33,9 +31,9 @@ Use os procedimentos a seguir para publicar seu aplicativo do Azure e atualizar 
 
 Ao publicar seu aplicativo do Azure, você pode executar uma das seguintes tarefas:
 
-- Crie um pacote de serviço: Você pode usar este pacote e o arquivo de configuração de serviço para publicar seu aplicativo em um ambiente de implantação por meio do [portal do Azure](https://portal.azure.com).
+- Criar um pacote de serviço: você pode usar este pacote e o arquivo de configuração de serviço para publicar seu aplicativo em um ambiente de implantação do [portal do Azure](https://portal.azure.com).
 
-- Publique seu projeto do Azure por meio do Visual Studio: Para publicar seu aplicativo diretamente no Azure, use o Assistente de publicação. Para obter informações, consulte [Assistente de Publicação de Aplicativo do Azure](vs-azure-tools-publish-azure-application-wizard.md).
+- Publicar seu projeto do Azure do Visual Studio: para publicar seu aplicativo diretamente no Azure, use o assistente de publicação. Para obter informações, consulte [Assistente de Publicação de Aplicativo do Azure](vs-azure-tools-publish-azure-application-wizard.md).
 
 ### <a name="to-create-a-service-package-from-visual-studio"></a>Para criar um pacote de serviço do Visual Studio
 
@@ -69,13 +67,13 @@ Se a infraestrutura de back-end do aplicativo for estável, mas as funções Web
 
 ### <a name="requirements-for-using-web-deploy"></a>Requisitos para o uso da Implantação da Web
 
-- **Apenas para fins de desenvolvimento e teste**: as alterações são feitas diretamente na máquina virtual em que a função Web está em execução. Se essa máquina virtual precisar ser reciclada, as alterações serão perdidas porque o pacote original que você publicou é usado para recriar a máquina virtual para a função. Republique seu aplicativo para obter as alterações mais recentes para a função Web.
+- **Somente para fins de desenvolvimento e teste**: as alterações são feitas diretamente na máquina virtual onde a função Web está em execução. Se essa máquina virtual precisar ser reciclada, as alterações serão perdidas porque o pacote original que você publicou é usado para recriar a máquina virtual para a função. Republique seu aplicativo para obter as alterações mais recentes para a função Web.
 
-- **Apenas as funções Web podem ser atualizadas**: As funções de trabalho não podem ser atualizadas. Além disso, não é possível atualizar o `RoleEntryPoint` em `web role.cs`.
+- **Somente as funções Web podem ser atualizadas**: as funções de trabalho não podem ser atualizadas. Além disso, não é possível atualizar o `RoleEntryPoint` em `web role.cs`.
 
-- **Só há suporte para uma única instância de uma função Web**: não pode haver várias instâncias da função Web no ambiente de implantação. No entanto, há suporte para várias funções Web, cada com apenas uma instância.
+- **O só pode dar suporte a uma única instância de uma função Web**: você não pode ter várias instâncias de nenhuma função Web em seu ambiente de implantação. No entanto, há suporte para várias funções Web, cada com apenas uma instância.
 
-- **Habilitar conexões da área de trabalho remota**: esse requisito permite que a Implantação da Web use o usuário e a senha para conectar-se à máquina virtual para implantar as alterações no servidor que executa o IIS (Serviços de Informações da Internet). Além disso, talvez seja necessário conectar-se à máquina virtual para adicionar um certificado confiável ao IIS nessa máquina virtual. (Esse certificado garante que a conexão remota ao IIS usada pela Implantação da Web é segura).
+- **Habilitar conexões de área de trabalho remota**: esse requisito permite que implantação da Web Use o usuário e a senha para se conectar à máquina virtual para implantar as alterações no servidor que está executando o serviços de informações da Internet (IIS). Além disso, talvez seja necessário conectar-se à máquina virtual para adicionar um certificado confiável ao IIS nessa máquina virtual. (Esse certificado garante que a conexão remota ao IIS usada pela Implantação da Web é segura).
 
 O procedimento a seguir supõe que você esteja usando o assistente para **Publicar Aplicativo do Azure** .
 
@@ -122,7 +120,7 @@ O procedimento a seguir supõe que você esteja usando o assistente para **Publi
 
    a. Para se conectar à máquina virtual que está executando a função web, selecione a instância da função web em **Cloud Explorer** ou **Gerenciador de Servidores** e escolha o comando **Conectar-se usando a Área de Trabalho Remota**. Para obter etapas detalhadas de como se conectar à máquina virtual, consulte [Habilitar a Conexão de Área de Trabalho Remota para uma função nos Serviços de Nuvem do Azure usando o Visual Studio](/azure/cloud-services/cloud-services-role-enable-remote-desktop-visual-studio). O navegador solicitará que você baixe um arquivo `.rdp`.
 
-   b. Para adicionar um certificado SSL, abra o serviço de gerenciamento no Gerenciador do IIS. No Gerenciador do IIS, habilite o SSL abrindo o link **Ligações** no painel **Ação**. A caixa de diálogo **Adicionar Ligação do Site** é exibida. Escolha **Adicionar** e então escolha HTTPS na lista suspensa **Tipo**. Na lista **Certificado SSL**, escolha o certificado SSL que foi assinado por uma AC e que você carregou no portal do Azure. Para obter mais informações, consulte [Definir configurações de conexão para o serviço de gerenciamento](http://go.microsoft.com/fwlink/?LinkId=215824).
+   b. Para adicionar um certificado SSL, abra o serviço de gerenciamento no Gerenciador do IIS. No Gerenciador do IIS, habilite o SSL abrindo o link **Ligações** no painel **Ação**. A caixa de diálogo **Adicionar Ligação do Site** é exibida. Escolha **Adicionar** e então escolha HTTPS na lista suspensa **Tipo**. Na lista **Certificado SSL**, escolha o certificado SSL que foi assinado por uma AC e que você carregou no portal do Azure. Para obter mais informações, consulte [Definir configurações de conexão para o serviço de gerenciamento](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc770458(v=ws.10)).
 
       > [!NOTE]
       > Se você adicionar um certificado SSL confiável, o triângulo amarelo de aviso não será mais exibido no **Assistente de Publicação**.

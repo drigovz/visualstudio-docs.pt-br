@@ -1,25 +1,33 @@
 ---
 title: 'Etapa 2: Criar um problema de adição aleatório'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: tutorial
+ms.prod: visual-studio-windows
+ms.technology: vs-ide-general
+dev_langs:
+- CSharp
+- VB
 ms.assetid: 6461c4cf-f2aa-4bf5-91ed-06820a4f893d
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fd8af04bc320201ad5f17613c850e0140eb2596b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: bb6f0600d8bdfe8c736305ffd31788edb9d817a6
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430781"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576287"
 ---
 # <a name="step-2-create-a-random-addition-problem"></a>Etapa 2: Criar um problema de adição aleatório
+
 Na segunda parte deste tutorial, você deixa o teste desafiador adicionando problemas de matemática baseados em números aleatórios. Você também cria um método que nomeado como `StartTheQuiz()` e que preenche os problemas e inicia o timer de contagem regressiva. Posteriormente neste tutorial, você adicionará problemas de subtração, multiplicação, e de divisão.
 
 > [!NOTE]
-> Esse tópico faz parte de uma série de tutoriais sobre conceitos de codificação básica. Para obter uma visão geral do tutorial, confira [Tutorial 2: Criar um teste de matemática temporizado](../ide/tutorial-2-create-a-timed-math-quiz.md).
+> Esse tópico faz parte de uma série de tutoriais sobre conceitos de codificação básica.
+> - Para obter uma visão geral do tutorial, confira [Tutorial 2: criar um teste de matemática temporizado](../ide/tutorial-2-create-a-timed-math-quiz.md).
+> - Para baixar uma versão completa do código, consulte [exemplo de tutorial de teste de matemática completo](https://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c).
 
 ## <a name="to-create-a-random-addition-problem"></a>Para criar um problema aleatório de adição
 
@@ -33,6 +41,8 @@ Na segunda parte deste tutorial, você deixa o teste desafiador adicionando prob
 
      [!code-csharp[VbExpressTutorial3Step2#1](../ide/codesnippet/CSharp/step-2-create-a-random-addition-problem_1.cs)]
      [!code-vb[VbExpressTutorial3Step2#1](../ide/codesnippet/VisualBasic/step-2-create-a-random-addition-problem_1.vb)]
+
+     [!INCLUDE [devlang-control-csharp-vb](./includes/devlang-control-csharp-vb.md)]
 
      Você adicionou um objeto Random ao seu formulário e nomeou o objeto **randomizer**.
 
@@ -57,12 +67,13 @@ Na segunda parte deste tutorial, você deixa o teste desafiador adicionando prob
 
      Quando você digita o ponto (.) após `randomizer` no código, uma janela do IntelliSense é aberta e mostra todos os métodos do objeto Random que você pode chamar. Por exemplo, o IntelliSense lista o método `Next()`, como segue.
 
-     ![Próximo método](../ide/media/express_randomwhite.png) Próximo método
+     ![Próximo método](../ide/media/express_randomwhite.png)<br/>
+*Próximo método*
 
      Quando você inseri um ponto depois de um objeto, o IntelliSense exibe uma lista de membros do objeto, como propriedades, métodos e eventos.
 
     > [!NOTE]
-    > Quando você usa o método de `Next()` com o objeto de `Random`, como quando você chama `randomizer.Next(50)`, você obtém um número aleatório que é menor que 50 (de 0 a 49). Nesse exemplo, você chamou `randomizer.Next(51)`. Você usou 51 e não 50, portanto os dois números aleatórios serão adicionados a uma resposta entre 0 e 100. Se você passar 50 para o método de `Next()`, ele escolherá um número de 0 a 49, para que a resposta possível mais alta seja 98, não 100. Após as duas primeiras instruções no método serem executadas, cada uma das duas variáveis inteiras, **addend1** e **addend2**, conterá um número aleatório de 0 a 50. Essa tela mostra o código Visual C#, mas o trabalho do IntelliSense a mesma maneira para Visual Basic.
+    > Quando você usa o método de `Next()` com o objeto de `Random`, como quando você chama `randomizer.Next(50)`, você obtém um número aleatório que é menor que 50 (de 0 a 49). Nesse exemplo, você chamou `randomizer.Next(51)`. Você usou 51 e não 50, portanto os dois números aleatórios serão adicionados a uma resposta entre 0 e 100. Se você passar 50 para o método de `Next()`, ele escolherá um número de 0 a 49, para que a resposta possível mais alta seja 98, não 100. Após as duas primeiras instruções no método serem executadas, cada uma das duas variáveis inteiras, **addend1** e **addend2**, conterá um número aleatório de 0 a 50. Esta captura de C# tela mostra o código, mas o IntelliSense funciona da mesma maneira para Visual Basic.
 
      Confira de perto estas instruções.
 
@@ -84,14 +95,15 @@ Na segunda parte deste tutorial, você deixa o teste desafiador adicionando prob
 
 8. Salve seu código, execute-o e então escolha o botão **Iniciar**.
 
-     Um problema aleatório de adição aparece, conforme mostra a ilustração a seguir.
+     Um problema de adição aleatória é exibido, conforme mostrado na captura de tela a seguir.
 
-     ![Problema aleatório de adição](../ide/media/express_additionproblem.png) Problema aleatório de adição
+     ![Problema aleatório de adição](../ide/media/express_additionproblem.png)<br/>
+*Problema aleatório de adição*
 
      Na próxima etapa do tutorial, você adicionará o resultado.
 
 ## <a name="to-continue-or-review"></a>Para continuar ou revisar
 
-- Para ir para a próxima etapa do tutorial, confira [Etapa 3: Adicionar um temporizador de contagem regressiva](../ide/step-3-add-a-countdown-timer.md).
+- Para ir para a próxima etapa do tutorial, consulte **[etapa 3: adicionar um temporizador de contagem regressiva](../ide/step-3-add-a-countdown-timer.md)** .
 
-- Para retornar à etapa anterior do tutorial, confira [Etapa 1: Criar um projeto e adicionar rótulos ao formulário](../ide/step-1-create-a-project-and-add-labels-to-your-form.md).
+- Para retornar à etapa anterior do tutorial, veja [Etapa 1: Criar um projeto e adicionar rótulos ao formulário](../ide/step-1-create-a-project-and-add-labels-to-your-form.md).

@@ -1,6 +1,6 @@
 ---
 title: Comandos de navegação de código
-ms.date: 08/14/2018
+ms.date: 11/21/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - code editor, navigation
@@ -13,17 +13,17 @@ helpviewer_keywords:
 - peek definition
 - go to line
 - go to
-author: gewarren
-ms.author: gewarren
-manager: jillfra
+author: mikadumont
+ms.author: midumont
+manager: tglee
 ms.workload:
 - multiple
-ms.openlocfilehash: 792b3ccf09faf9983afcd72de9acc0f23540683d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: f5348fc0c36435e5760f3967a7e6c9be2aecb1b7
+ms.sourcegitcommit: b04c603ce73b993d042ebdf7f3722cf4fe2ef7f4
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62570056"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74316462"
 ---
 # <a name="navigate-code"></a>Navegue pelos códigos
 
@@ -31,7 +31,7 @@ O Visual Studio fornece várias maneiras de navegar no código usando o editor. 
 
 ## <a name="navigate-backward-and-navigate-forward-commands"></a>Comandos Navegar para trás e Navegar para frente
 
-Você pode usar os botões **Navegar para Trás** (**Ctrl**+**-**) e **Navegar para Frente** (**Ctrl**+**Shift**+**-**) na barra de ferramentas para mover o ponto de inserção para locais anteriores ou para retornar para um local mais recente do que um local anterior. Esses botões retém os últimos 20 locais do ponto de inserção. Esses comandos também estão disponíveis no menu **Exibir**, em **Navegar para Trás** e **Navegar para Frente**.
+Você pode usar os botões **Navegar para Trás** (**Ctrl**+ **-** ) e **Navegar para Frente** (**Ctrl**+**Shift**+ **-** ) na barra de ferramentas para mover o ponto de inserção para locais anteriores ou para retornar para um local mais recente do que um local anterior. Esses botões retém os últimos 20 locais do ponto de inserção. Esses comandos também estão disponíveis no menu **Exibir**, em **Navegar para Trás** e **Navegar para Frente**.
 
 ![Botões de navegação para frente e para trás](../ide/media/vs2017_nav_buttons.png)
 
@@ -39,7 +39,7 @@ Você pode usar os botões **Navegar para Trás** (**Ctrl**+**-**) e **Navegar p
 
 Você pode usar a **barra de navegação** (as caixas suspensas na parte superior da janela de código) para navegar para o código em uma base de código. É possível escolher um tipo ou membro para ir diretamente a ele. A barra de navegação é exibida ao editar códigos no Visual Basic, C# ou base de código C++. Em uma classe parcial, os membros definidos fora do arquivo de código atual podem estar desabilitados (aparecendo em cinza).
 
- ![Barra de navegação de código](../ide/media/vside_navigation_bar.png)
+![Barra de navegação de código](../ide/media/vside_navigation_bar.png)
 
 Você pode navegar nas caixas suspensas da seguinte maneira:
 
@@ -76,19 +76,19 @@ Quando você clica em um símbolo no código-fonte, todas as instâncias desse s
 
 Ir Para tem os seguintes comandos que estão disponíveis no menu **Editar** em **Ir Para**:
 
-- **Ir para a linha** (**Ctrl**+**G**): Mover para o número de linha especificado no documento ativo.
+- **Ir Para Linha** (**Ctrl**+**G**): mover para o número de linha especificado no documento ativo.
 
-- **Ir para todos** (**Ctrl**+**T** ou **Ctrl**+**,**): Mover para a linha, tipo, arquivo, membro ou símbolo especificado.
+- **Ir para Todos** (**Ctrl**+**T** ou **Ctrl**+ **,** ): mover para a linha, o tipo, o arquivo, o membro ou o símbolo especificado.
 
-- **Ir para arquivo** (**Ctrl**+**1**, **Ctrl**+**F**): Mover para o arquivo especificado na solução.
+- **Ir para Arquivo** (**Ctrl**+**1**, **Ctrl**+**F**): mover para o arquivo especificado na solução.
 
-- **Ir para arquivo recente** (**Ctrl**+**1**, **Ctrl**+**R**): Mova para o arquivo visitado recentemente especificado na solução.
+- **Ir para o arquivo recente** (**Ctrl**+**1**, **Ctrl**+**R**): mover para o arquivo especificado recentemente visitado na solução.
 
-- **Ir para tipo** (**Ctrl**+**1**, **Ctrl**+**T**): Mover para o tipo especificado na solução.
+- **Ir para Tipo** (**Ctrl**+**1**, **Ctrl**+**T**): mover para o tipo especificado na solução.
 
-- **Ir para membro** (**Ctrl**+**1**, **Ctrl**+**M**): Mover para o membro especificado na solução.
+- **Ir para Membro** (**Ctrl**+**1**, **Ctrl**+**M**): mover para o membro especificado na solução.
 
-- **Ir para símbolo** (**Ctrl**+**1**, **Ctrl**+**S**): Mover para o símbolo especificado na solução.
+- **Ir para Símbolo** (**Ctrl**+**1**, **Ctrl**+**S**): mover para o símbolo especificado na solução.
 
 No Visual Studio 2017 versão 15.8 e posteriores, os seguintes comandos de navegação **Ir Para** também estão disponíveis:
 
@@ -109,7 +109,7 @@ Entrada | Função
 
 ## <a name="peek-definition"></a>Inspecionar Definição
 
-Espiar Definição exibe a definição do elemento selecionado em uma janela sem sair do local atual no editor de código. Para obter mais informações, confira [Como: Exibir e editar o código usando Espiar Definição](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md) e [Ir para Definição e Espiar Definição](../ide/go-to-and-peek-definition.md).
+Espiar Definição exibe a definição do elemento selecionado em uma janela sem sair do local atual no editor de código. Para obter mais informações, confira [Como exibir e editar o código usando Espiar Definição](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md) e [Ir para Definição e Espiar Definição](../ide/go-to-and-peek-definition.md).
 
 Entrada | Função
 ------------ | ---
@@ -124,6 +124,15 @@ Entrada | Função
 ------------ | ---
 **Teclado** | Coloque o cursor de texto em algum lugar dentro do nome do tipo e pressione **Ctrl**+**F12**
 **Mouse** | Clique com o botão direito do mouse no nome do tipo e selecione **Ir Para Implementação**
+
+## <a name="go-to-base"></a>Ir para base
+
+Usando ir para base, você pode navegar até a cadeia de herança do elemento selecionado. Se houver vários resultados, você os verá listados na janela **ir para base** :
+
+Entrada | Função
+------------ | ---
+**Teclado** | Coloque o cursor do texto em algum lugar dentro do nome do tipo e pressione **Alt**+**página inicial**
+**Mouse** | Clique com o botão direito do mouse no nome do tipo e selecione **ir para base**
 
 ## <a name="call-hierarchy"></a>Hierarquia de chamadas
 
@@ -148,7 +157,7 @@ Para desabilitar as linhas da guia da estrutura, acesse **Ferramentas** > **Opç
 
 ## <a name="enhanced-scroll-bar"></a>Barra de rolagem avançada
 
-Você pode usar a barra de rolagem avançada em uma janela de código para obter uma visão geral do seu código. No modo de mapa, você pode acessar visualizações do código ao mover o cursor para cima e para baixo na barra de rolagem. Para obter mais informações, confira [Como: Acompanhar o código personalizando a barra de rolagem](../ide/how-to-track-your-code-by-customizing-the-scrollbar.md).
+Você pode usar a barra de rolagem avançada em uma janela de código para obter uma visão geral do seu código. No modo de mapa, você pode acessar visualizações do código ao mover o cursor para cima e para baixo na barra de rolagem. Para obter mais informações, confira [Como acompanhar o código personalizando a barra de rolagem](../ide/how-to-track-your-code-by-customizing-the-scrollbar.md).
 
 ## <a name="codelens-information"></a>Informações do CodeLens
 

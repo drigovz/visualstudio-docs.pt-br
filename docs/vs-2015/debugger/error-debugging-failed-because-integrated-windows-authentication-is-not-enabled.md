@@ -1,5 +1,5 @@
 ---
-title: 'Erro: Falha na depuração porque a autenticação integrada do Windows não está habilitada. | Microsoft Docs'
+title: 'Erro: falha na depuração porque a autenticação integrada do Windows não está habilitada | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -19,14 +19,14 @@ caps.latest.revision: 22
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 73fcc686b242109a65fce6befbbca5e2a357a25e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 4c8c83676c8f01891aed97e931581c65b799e61e
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60049315"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299781"
 ---
-# <a name="error-debugging-failed-because-integrated-windows-authentication-is-not-enabled"></a>Erro: Falha na depuração porque a Autenticação Integrada do Windows não está habilitada
+# <a name="error-debugging-failed-because-integrated-windows-authentication-is-not-enabled"></a>Erro: falha na depuração porque a autenticação integrada do Windows não está habilitada
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 A autenticação do usuário que solicitou a depuração foi impedida por um erro de autenticação. Isso pode ocorrer ao tentar entrar em um aplicativo Web ou serviço Web XML. Uma causa desse erro é que a autenticação integrada do Windows não está habilitada. Para habilitá-la, siga as etapas em “Para habilitar a autenticação integrada do Windows”.  
@@ -71,13 +71,13 @@ A autenticação do usuário que solicitou a depuração foi impedida por um err
   
 2. Ative a Autenticação do Windows e a Compatibilidade de Gerenciamento do II6, se você ainda não tiver feito isso anteriormente, seguindo estas etapas:  
   
-    1. Clique em **inicie**, clique em **painel de controle** e, em seguida, clique em **programas**.  
+    1. Clique em **Iniciar**, em **painel de controle** e em **programas**.  
   
     2. Em **Programas e Recursos**, clique em **Ativar ou desativar recursos do Windows**.  
   
          A caixa de diálogo Controle de Acesso do Usuário aparecerá e solicitará para que a permissão continue.  
   
-    3. Clique em **Continue**.  
+    3. Clique em **Continuar**.  
   
          A caixa de diálogo Recursos do Windows é exibida.  
   
@@ -101,7 +101,7 @@ A autenticação do usuário que solicitou a depuração foi impedida por um err
   
 4. Clique em **Exibição clássica** e clique duas vezes em **Ferramentas Administrativas**.  
   
-5. Clique na coluna **Nome** e clique duas vezes em **Gerenciador do IIS (Serviços de Informações da Internet)**.  
+5. Clique na coluna **Nome** e clique duas vezes em **Gerenciador do IIS (Serviços de Informações da Internet)** .  
   
 6. Na coluna **Conexões**, expanda o nó para o servidor.  
   
@@ -115,9 +115,9 @@ A autenticação do usuário que solicitou a depuração foi impedida por um err
   
 9. No painel **Autenticação**, na coluna **Nome**, clique com o botão direito do mouse em **Autenticação do Windows** e clique em **Habilitar**.  
   
-10. Feche a janela **Gerenciador do IIS (Serviços de Informações da Internet)**.  
+10. Feche a janela **Gerenciador do IIS (Serviços de Informações da Internet)** .  
   
 ## <a name="see-also"></a>Consulte também  
- [Depurando aplicativos Web: Erros e solução de problemas](../debugger/debugging-web-applications-errors-and-troubleshooting.md)   
- [Autenticação do Microsoft Digest](http://go.microsoft.com/fwlink/?LinkId=77938)   
- [Executando aplicativos da Web no Windows Vista com o IIS 7.0 e Visual Studio](http://msdn.microsoft.com/library/262a82ac-dd0e-4096-86c6-fb463e88be66)
+ [Depuração de aplicativos Web: erros e solução de problemas](../debugger/debugging-web-applications-errors-and-troubleshooting.md)   
+ [Autenticação do Microsoft Digest](https://go.microsoft.com/fwlink/?LinkId=77938)   
+ [Executando aplicativos Web no Windows Vista com o IIS 7,0 e o Visual Studio](https://msdn.microsoft.com/library/262a82ac-dd0e-4096-86c6-fb463e88be66)

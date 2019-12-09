@@ -1,16 +1,17 @@
 ---
 title: Contas de usuário
 description: Informações sobre como entrar e como habilitar assinaturas no Visual Studio para Mac
-author: conceptdev
-ms.author: crdun
-ms.date: 05/06/2018
+ms.topic: overview
+author: asb3993
+ms.author: amburns
+ms.date: 09/18/2019
 ms.assetid: 17AB4F31-4921-4B4E-8D9D-95FB84294521
-ms.openlocfilehash: 71233b609f2e68935b71e3044a9b6ec0f59091bb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: b8aa2a627754b8cbe81da665cadc4ae53ec8430d
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62966224"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71211485"
 ---
 # <a name="user-accounts"></a>Contas de usuário
 

@@ -1,5 +1,5 @@
 ---
-title: IDebugAsyncOperation::Abort | Microsoft Docs
+title: 'IDebugAsyncOperation:: Abort | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: be696f852f7038316141415494920c43580738c9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b9ca6c5e1498229c84dc28a13cda2cce77b58a4f
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62822093"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573305"
 ---
 # <a name="idebugasyncoperationabort"></a>IDebugAsyncOperation::Abort
 Cancela uma operação.  
@@ -36,7 +36,7 @@ HRESULT Abort();
 #### <a name="parameters"></a>Parâmetros  
  Esse método não usa parâmetros.  
   
-## <a name="return-value"></a>Valor de retorno  
+## <a name="return-value"></a>Valor retornado  
  O método retorna um `HRESULT`. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.  
   
 |Valor|Descrição|  
@@ -45,9 +45,9 @@ HRESULT Abort();
 |E_NOTIMPL|As operações não podem ser canceladas.|  
   
 ## <a name="remarks"></a>Comentários  
- Normalmente, esse método é chamado de dentro do thread depurador para cancelar uma operação sem resposta. Esse método faz com que o `InProgressAbort` método no `IDebugSyncOperation` objeto a ser chamado.  
+ Esse método é normalmente chamado de dentro do thread do depurador para cancelar uma operação sem resposta. Esse método faz com que o método `InProgressAbort` no objeto `IDebugSyncOperation` seja chamado.  
   
 ## <a name="see-also"></a>Consulte também  
- [Interface IDebugAsyncOperation](../../winscript/reference/idebugasyncoperation-interface.md)   
+   de [interface IDebugAsyncOperation](../../winscript/reference/idebugasyncoperation-interface.md)  
  [IDebugAsyncOperation::Start](../../winscript/reference/idebugasyncoperation-start.md)   
  [IDebugSyncOperation::InProgressAbort](../../winscript/reference/idebugsyncoperation-inprogressabort.md)

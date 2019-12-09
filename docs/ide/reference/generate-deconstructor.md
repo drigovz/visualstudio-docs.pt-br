@@ -9,12 +9,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2ca2d3a0c174fa4c7d0f66d3abc440b8c9aa93cf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5a3a89d15d05b44575fede98d3043d706b24c1d9
+ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62790284"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65531891"
 ---
 # <a name="generate-a-deconstructor-in-visual-studio"></a>Gerar um desconstrutor no Visual Studio
 
@@ -52,4 +52,4 @@ Esta geração de código aplica-se a:
 
 - [Geração de código](../code-generation-in-visual-studio.md)
 - [Visualizar alterações](../../ide/preview-changes.md)
-- [Dicas para desenvolvedores do .NET](../../ide/visual-studio-2017-for-dotnet-developers.md)
+- [Dicas para desenvolvedores do .NET](../csharp-developer-productivity.md)

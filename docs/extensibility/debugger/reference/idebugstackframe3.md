@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugStackFrame3 interface
 ms.assetid: 39af2f57-0a01-42b8-b093-b7fbc61e2909
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3d790c7b278d36395c0df5575ed3bc7c381753fe
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 0960f0f527d844afcc44947f1204db78d4d91a38
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63412560"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352067"
 ---
 # <a name="idebugstackframe3"></a>IDebugStackFrame3
 Essa interface estende [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) para lidar com exceções interceptadas.
@@ -45,7 +45,7 @@ IDebugStackFrame3 : IDebugStackFrame2
 ## <a name="remarks"></a>Comentários
  Uma exceção interceptada significa que um depurador pode processar uma exceção antes de quaisquer rotinas de manipulação de exceção normal são chamadas pelo tempo de execução. Interceptar uma exceção, essencialmente, significa fazer com que o tempo de execução fingir que há um manipulador de exceção presente até mesmo quando não existe.
 
-- [InterceptCurrentException](../../../extensibility/debugger/reference/idebugstackframe3-interceptcurrentexception.md) é chamado durante a todos os eventos de retorno de chamada de exceção normal (a única exceção é se você estiver depurando código de modo misto (gerenciado e código não gerenciado), caso em que a exceção não pode ser interceptada durante o última chance retorno de chamada). Se o DE implementar `IDebugStackFrame3`, ou o DE retorna um erro de IDebugStackFrame3::`InterceptCurrentException` (como `E_NOTIMPL`), em seguida, o depurador tratará a exceção normalmente.
+- [InterceptCurrentException](../../../extensibility/debugger/reference/idebugstackframe3-interceptcurrentexception.md) é chamado durante a todos os eventos de retorno de chamada de exceção normal (a única exceção é se você estiver depurando código de modo misto (gerenciado e código não gerenciado), caso em que a exceção não pode ser interceptada durante o última chance retorno de chamada). Se o DE não implementa `IDebugStackFrame3`, ou o DE retorna um erro de IDebugStackFrame3::`InterceptCurrentException` (como `E_NOTIMPL`), em seguida, o depurador tratará a exceção normalmente.
 
  Interceptando uma exceção, o depurador pode permitir que o usuário faça alterações para o estado do programa que está sendo depurado e, em seguida, retomar a execução no ponto onde a exceção foi lançada.
 

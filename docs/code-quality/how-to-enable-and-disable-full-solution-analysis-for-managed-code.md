@@ -1,49 +1,47 @@
 ---
-title: 'Como: Habilitar e desabilitar análise de solução completa para código gerenciado'
+title: Habilitar & desabilitar a análise completa da solução para o código gerenciado
 ms.date: 03/23/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - full solution analysis
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: dbd4cf06a5d51a668acc5c980e7e93a94f2992f2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3f7837b1e5ea5b84e1ee1197bf6f8c40d0863c3e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62816433"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72649454"
 ---
-# <a name="how-to-enable-and-disable-full-solution-analysis-for-managed-code"></a>Como: Habilitar e desabilitar análise de solução completa para código gerenciado
+# <a name="how-to-enable-and-disable-full-solution-analysis-for-managed-code"></a>Como habilitar e desabilitar a análise completa da solução para código gerenciado
 
-*Análise de solução completa* é um recurso do Visual Studio que permite que você veja problemas de análise de código somente em arquivos abertos de Visual c# ou Visual Basic em sua solução, ou também em código, arquivos que estão fechadas. Por padrão, a análise de solução completa é *habilitados* para o Visual Basic, e *desabilitada* do Visual c#.
+*Análise de solução completa* significa que a análise de código examina C# todos os arquivos de Visual Basic na solução, independentemente de eles estarem abertos ou não no editor. Por padrão, a análise de solução completa é *habilitada* para Visual Basic C#e *desabilitada* para.
 
-Pode ser útil ver todos os problemas em todos os arquivos, mas também pode ser distração. Ele desacelera Visual Studio se sua solução for muito grande ou tiver vários arquivos. Para limitar o número de problemas mostrados e melhorar o desempenho do Visual Studio, você pode desabilitar análise completa da solução. Você pode facilmente habilitar este recurso novamente se necessário.
+Pode ser útil ver todos os problemas em todos os arquivos, mas também pode ser confuso. Isso reduzirá o Visual Studio se sua solução for muito grande ou tiver muitos arquivos. Para limitar o número de problemas mostrados e melhorar o desempenho do Visual Studio, você pode desabilitar a análise completa da solução. Você pode reabilitar esse recurso facilmente, se necessário.
 
-## <a name="to-toggle-full-solution-analysis"></a>Para ativar/desativar a análise de solução completa
+Na imagem a seguir, a análise de solução completa está habilitada. Os problemas de análise de compilador e de código em todos os arquivos na solução são mostrados, mesmo que não estejam abertos.
 
-1. Para abrir o **opções** caixa de diálogo, na barra de menus no Visual Studio escolher **ferramentas** > **opções**.
+![Análise de solução completa habilitada.](../code-quality/media/fsa_enabled.png)
 
-1. No **opções** diálogo caixa, escolha **Editor de texto** > **c#** ou **básica**  >   **Advanced**.
+A imagem a seguir mostra os resultados da mesma solução depois de desabilitar a análise de solução completa. Somente erros de compilador e problemas de análise de código em arquivos de solução aberta aparecem no Lista de Erros.
 
-1. Selecione o **habilitar a análise de solução completa** caixa de seleção para habilitar a análise de solução completa, ou desmarque a caixa para desativá-lo. Escolher **Okey** quando você terminar.
+![Análise de solução completa desabilitada.](../code-quality/media/fsa_disabled.png)
 
-    ![Habilite a caixa de seleção de análise de solução completa.](../code-quality/media/options-enable-full-solution-analysis.png)
+## <a name="toggle-full-solution-analysis"></a>Alternar análise de solução completa
 
-## <a name="results-of-enabling-and-disabling-full-solution-analysis"></a>Resultados de habilitar e desabilitar análise de solução completa
+1. Para abrir a caixa de diálogo **Opções** , na barra de menus do Visual Studio, escolha **ferramentas** > **Opções**.
 
-Na seguinte captura de tela, você pode ver os resultados quando a análise de solução completa está habilitada. Todos os erros e problemas de análise de código em *todos os* dos arquivos na solução exibido, independentemente se os arquivos estão abertos ou não.
+1. Na caixa de diálogo **Opções** , escolha **o Editor** de**C#** texto  >  ou **Basic**  > **avançado**.
 
-![Análise completa da solução habilitada.](../code-quality/media/fsa_enabled.png)
+1. Marque a caixa de seleção **Habilitar análise de solução completa** para habilitar a análise completa da solução ou desmarque a caixa para desabilitá-la. Escolha **OK** quando terminar.
 
-Captura de tela a seguir mostra os resultados da mesma solução depois de desabilitar análise completa da solução. Somente os erros e problemas de análise de código em arquivos de solução aberta que aparecem na **Error List**.
+   ![Caixa de seleção Habilitar análise de solução completa.](../code-quality/media/options-enable-full-solution-analysis.png)
 
-![Análise de solução completa desabilitado.](../code-quality/media/fsa_disabled.png)
+## <a name="automatically-disable-full-solution-analysis"></a>Desabilitar automaticamente a análise completa da solução
 
-## <a name="automatically-disable-full-solution-analysis"></a>Desabilitar automaticamente a análise de solução completa
+Se o Visual Studio detectar que 200 MB ou menos de memória do sistema está disponível para ele, ele desabilitará automaticamente a análise completa da solução (e alguns outros recursos) se ela estiver habilitada. Se isso ocorrer, um alerta será exibido informando que o Visual Studio desabilitou alguns recursos. Um botão permite reabilitar A análise da solução completa, se desejar.
 
-Se o Visual Studio detectar que 200 MB ou menos da memória do sistema está disponível para ele, ele automaticamente desabilita a análise completa da solução (e alguns outros recursos) se ele estiver habilitado. Se isso ocorrer, um alerta será exibida informando que o Visual Studio desabilitou a alguns recursos. Um botão permite que você reabilitar se você quiser que a análise de solução completa.
-
-![Suspendendo a análise de solução completa de texto de alerta](../code-quality/media/fsa_alert.png)
+![Texto de alerta suspendendo análise de solução completa](../code-quality/media/fsa_alert.png)

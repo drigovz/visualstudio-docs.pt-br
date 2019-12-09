@@ -10,21 +10,21 @@ helpviewer_keywords:
 - code [Visual Studio], outlining
 - code [Visual Studio], hiding
 - outlining code
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d6451e835e44af23fbd41c9c1573e0bc5daed115
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 791663c04d1c1e79eebaed39d339d8d118ffeaae
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62811910"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748859"
 ---
 # <a name="outlining"></a>Estrutura de tópicos
 
-Você pode optar por ocultar a exibição de algum código recolhendo uma região do código para que ele apareça sob um sinal de adição (**+**). Você expande uma região recolhida clicando no sinal de adição. Se for um usuário de teclado, você poderá escolher **Ctrl**+**M**+**M** para recolher e expandir. Você também pode recolher uma região de estrutura de tópicos clicando duas vezes em qualquer linha na região na margem da estrutura de tópicos, que aparece à esquerda do código. Você pode ver o conteúdo de uma região recolhida como uma dica de ferramenta quando focaliza a região recolhida.
+Você pode optar por ocultar a exibição de algum código recolhendo uma região do código para que ele apareça sob um sinal de adição ( **+** ). Você expande uma região recolhida clicando no sinal de adição. Se for um usuário de teclado, você poderá escolher **Ctrl**+**M**+**M** para recolher e expandir. Você também pode recolher uma região de estrutura de tópicos clicando duas vezes em qualquer linha na região na margem da estrutura de tópicos, que aparece à esquerda do código. Você pode ver o conteúdo de uma região recolhida como uma dica de ferramenta quando focaliza a região recolhida.
 
 > [!NOTE]
 > Este tópico aplica-se ao Visual Studio no Windows. Para o Visual Studio para Mac, confira [Editor de código-fonte (Visual Studio para Mac)](/visualstudio/mac/source-editor).
@@ -48,10 +48,10 @@ Os comandos a seguir podem ser encontrados no submenu **Editar** > **Estrutura d
 |Interromper Estrutura de Tópicos|(**Ctrl**+**M**, **Ctrl**+**P**) – remove todas as informações de estrutura de tópicos do documento inteiro.|
 |Interromper Ocultação Atual|(**Ctrl**+**M**, **Ctrl**+**U**) – remove as informações de estrutura de tópicos da região definida pelo usuário selecionada no momento. Não disponível no Visual Basic.|
 |Recolher para Definições|(**Ctrl**+**M**, **Ctrl**+**O**) – recolhe os membros de todos os tipos.|
-|Recolher bloco:\<limite lógico>|(Visual C++) Recolhe uma região na função que contém o ponto de inserção. Por exemplo, se o ponto de inserção estiver dentro de um loop, o loop será ocultado.|
-|Recolher tudo: \<estruturas lógicas>|(Visual C++) Recolhe todas as estruturas de dentro da função.|
+|Recolher bloco:\<limite lógico>|(C++) Recolhe uma região na função que contém o ponto de inserção. Por exemplo, se o ponto de inserção estiver dentro de um loop, o loop será ocultado.|
+|Recolher tudo: \<estruturas lógicas>|(C++) Recolhe todas as estruturas dentro da função.|
 
-Você também pode usar o SDK do Visual Studio para definir as regiões de texto que deseja expandir ou recolher. Confira [Passo a passo: Estrutura de tópicos](../extensibility/walkthrough-outlining.md).
+Você também pode usar o SDK do Visual Studio para definir as regiões de texto que deseja expandir ou recolher. Consulte [Instruções passo a passo: estrutura de tópicos](../extensibility/walkthrough-outlining.md).
 
 ## <a name="see-also"></a>Consulte também
 

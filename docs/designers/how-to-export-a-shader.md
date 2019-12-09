@@ -1,21 +1,21 @@
 ---
-title: 'Como: Exportar um sombreador'
+title: Como exportar um sombreador
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 0bd48bf4-9792-4456-a545-e462a2be668d
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d0a962fe941f676369c4c3575647610df809d58
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: c05e40b76d60a5602cee1cb67b5c3094fb94d249
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62844391"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72635542"
 ---
-# <a name="how-to-export-a-shader"></a>Como: Exportar um sombreador
+# <a name="how-to-export-a-shader"></a>Como exportar um sombreador
 
 Este artigo demonstra como usar o **Designer de Sombreador** para exportar um sombreador da DGSL (Directed Graph Shader Language) para poder usá-lo em seu aplicativo.
 
@@ -23,9 +23,9 @@ Este artigo demonstra como usar o **Designer de Sombreador** para exportar um so
 
 Depois de criar um sombreador usando o Designer de Sombreador é necessário exportá-lo em um formato que seja compreendido pela API de gráficos antes de usá-lo em seu aplicativo. Você pode exportar um sombreador de maneiras diferentes para atender a necessidades diferentes.
 
-1. No Visual Studio, abra um arquivo do **Visual Shader Graph (.dgsl)**.
+1. No Visual Studio, abra um arquivo do **Visual Shader Graph (.dgsl)** .
 
-     Se você não tiver um arquivo **Visual Shader Graph (.dgsl)** para abrir, crie um conforme a descrição em [Como: Criar um sombreador de cores básico](../designers/how-to-create-a-basic-color-shader.md).
+     Se você não tiver um arquivo **Visual Shader Graph (.dgsl)** para abrir, crie um conforme a descrição em [Como criar um sombreador de cor básico](../designers/how-to-create-a-basic-color-shader.md).
 
 2. Na barra de ferramentas **Designer de Sombreador**, escolha **Avançado** > **Exportar** > **Exportar Como**. A caixa de diálogo **Exportar Sombreador** é exibida.
 
@@ -35,7 +35,7 @@ Depois de criar um sombreador usando o Designer de Sombreador é necessário exp
 
      **Sombreador de Pixel HLSL (\*.hlsl)** Exporta o sombreador como código-fonte HLSL (High Level Shader Language). Essa opção possibilita modificar o sombreador posteriormente, mesmo depois que ele for implantado em um aplicativo. Isso pode tornar mais fácil depurar e corrigir o código com base em problemas de usuários finais, mas também torna mais fácil para um usuário modificar o sombreador de formas indesejáveis, por exemplo, para obter uma vantagem injusta em um jogo de competição. Isso também pode aumentar o tempo de carregamento do sombreador.
 
-     **Sombreador de Pixel Compilado (\*.cso)** Exporta o sombreador como um código de bytes HLSL. Essa opção possibilita modificar o sombreador posteriormente, mesmo depois que ele for implantado em um aplicativo. Isso pode tornar mais fácil depurar e corrigir o código com base em problemas de usuários finais, mas como o sombreador é pré-compilado, ele não incorre em sobrecarga adicional de tempo de execução quando o sombreador é carregado pelo aplicativo. Usuários suficientemente habilidosos ainda podem modificar o sombreador de formas indesejáveis, mas a compilação do sombreador torna isso muito mais difícil.
+     **Sombreador de Pixel Compilado (\*.cso)** Exporta o sombreador como um código de bytes HLSL. Essa opção possibilita modificar o sombreador posteriormente, mesmo depois que ele for implantado em um aplicativo. Isso pode tornar mais fácil depurar e corrigir o código com base em problemas de usuários finais, mas como o sombreador é pré-compilado, ele não incorre em sobrecarga adicional de runtime quando o sombreador é carregado pelo aplicativo. Usuários suficientemente habilidosos ainda podem modificar o sombreador de formas indesejáveis, mas a compilação do sombreador torna isso muito mais difícil.
 
      **Cabeçalho C++ (\*.h)** Exporta o sombreador como um cabeçalho de estilo C que define uma matriz de bytes que contém o código de bytes HLSL. Essa opção pode fazer com que a depuração e correção do código com base em problemas do usuário final se tornem mais demoradas porque o aplicativo tem que ser recompilado para testar a correção. No entanto, como esta opção torna difícil, mas não impossível, a modificação do sombreador depois de ser implantado em um aplicativo, ela apresenta maior dificuldade para um usuário que deseja modificar o sombreador de formas indesejáveis.
 
@@ -43,5 +43,5 @@ Depois de criar um sombreador usando o Designer de Sombreador é necessário exp
 
 ## <a name="see-also"></a>Consulte também
 
-- [Como: Criar um sombreador de cores básico](../designers/how-to-create-a-basic-color-shader.md)
+- [Como criar um sombreador de cor básico](../designers/how-to-create-a-basic-color-shader.md)
 - [Designer de Sombreador](../designers/shader-designer.md)

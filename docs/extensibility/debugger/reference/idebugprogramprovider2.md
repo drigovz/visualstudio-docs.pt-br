@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramProvider2 interface
 ms.assetid: a9ec7b3e-a59c-4069-b2ee-6f45916eeb78
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 74604e0b3446e33962c6a8e69a69bfc400f0e3e2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a6f392e823d28440a73a1aaa606351c28c6e9c70
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62916691"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66343355"
 ---
 # <a name="idebugprogramprovider2"></a>IDebugProgramProvider2
 Essa interface registrado permite que a depuração de sessão (SDM) para obter informações sobre os programas que foram "publicados" por meio do Gerenciador de [IDebugProgramPublisher2](../../../extensibility/debugger/reference/idebugprogrampublisher2.md) interface.

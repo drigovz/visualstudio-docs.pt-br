@@ -12,11 +12,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: eb11467d8d59e7af11741d7719da2858ac1a784c
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59654029"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68192886"
 ---
 # <a name="incremental-builds"></a>Builds incrementais
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,5 +81,5 @@ Os builds incrementais são builds que são otimizados para que os destinos que 
   
  Isso cria a propriedade CompileRan e atribui a ela o valor `true`, mas apenas se o destino for executado. Se o destino for ignorado, CompileRan não será criado.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Veja também  
  [Destinos](../msbuild/msbuild-targets.md)

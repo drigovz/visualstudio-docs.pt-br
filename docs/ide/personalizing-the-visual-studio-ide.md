@@ -2,17 +2,17 @@
 title: Personalizar o IDE
 ms.date: 11/20/2017
 ms.topic: conceptual
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 62f2d98777f1fe87b67bdb28e6302f29f752f27f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: e6bf00573febda06aba4d12184a416341879bac7
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62953290"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666812"
 ---
 # <a name="personalize-the-visual-studio-ide"></a>Personalizar o IDE do Visual Studio
 
@@ -27,28 +27,28 @@ Escolha uma coleção padrão de configurações que otimiza o Visual Studio par
 
 ## <a name="general-environment-options"></a>Opções do ambiente geral
 
-Muitas opções de personalização são expostas pela caixa de diálogo [Opções de Ambiente](../ide/reference/environment-options-dialog-box.md). Há duas maneiras de acessar essa caixa de diálogo:
+Muitas opções de personalização são expostas pela caixa de diálogo [Opções de Ambiente](../ide/reference/general-environment-options-dialog-box.md). Há duas maneiras de acessar essa caixa de diálogo:
 
 - Na barra de menus, escolha **Ferramentas** > **Opções** e, se o nó **Ambiente** ainda não estiver expandido, expanda-o.
 
-- Pressione **Ctrl**+**Q**, digite **ambiente** na caixa de pesquisa e, em seguida, escolha **Ambiente--> Geral** nos resultados.
+- Pressione **Ctrl**+**Q**, digite **ambiente** na caixa de pesquisa e, em seguida, escolha **Ambiente > Geral** nos resultados.
 
 > [!TIP]
 > Quando a caixa de diálogo Opções for exibida, você poderá pressionar **F1** para obter ajuda sobre as diversas configurações nessa página.
 
 ## <a name="environment-color-themes"></a>Temas de cores do ambiente
 
-Para alterar o tema de cores entre claro, escuro e azul, digite **ambiente** na caixa de pesquisa e, em seguida, escolha **Ambiente --> Geral**. Na caixa de diálogo **Opções**, altere a opção **Tema de cores**.
+Para alterar o tema de cores entre claro, escuro e azul, digite **ambiente** na caixa de pesquisa e, em seguida, escolha **Ambiente > Geral**. Na caixa de diálogo **Opções**, altere a opção **Tema de cores**.
 
-Para alterar as opções de colorização no editor, digite **ambiente** na caixa de pesquisa e, em seguida, escolha **Ambiente --> Fontes e Cores**. Confira [Como Alterar fontes e cores](../ide/how-to-change-fonts-and-colors-in-visual-studio.md).
+Para alterar as opções de colorização no editor, digite **ambiente** na caixa de pesquisa e, em seguida, escolha **Ambiente > Fontes e Cores**. Consulte [How to: Change fonts and colors](../ide/how-to-change-fonts-and-colors-in-visual-studio.md) (Como alterar fontes e cores).
 
 ### <a name="main-menu-casing"></a>Maiúsculas e minúsculas do menu principal
 
-É possível alterar o uso de maiúsculas e minúsculas do menu principal optando por **Primeira letra de cada palavra em maiúscula** ("Arquivo") ou **Tudo em maiúscula** ("ARQUIVO"). Digite **ambiente** na caixa de pesquisa, selecione **Ambiente --> Geral** e, em seguida, altere a opção **Aplicar o estilo de capitalização de título à barra de menus**.
+É possível alterar o uso de maiúsculas e minúsculas do menu principal optando por **Primeira letra de cada palavra em maiúscula** ("Arquivo") ou **Tudo em maiúscula** ("ARQUIVO"). Digite **ambiente** na caixa de pesquisa, selecione **Ambiente > Geral** e, em seguida, altere a opção **Aplicar o estilo de capitalização de título à barra de menus**.
 
 ### <a name="customize-menus-and-toolbars"></a>Personalizar menus e barras de ferramentas
 
-Para adicionar ou remover itens do menu ou da barra de ferramentas, confira [Como: Personalizar menus e barras de ferramentas](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md).
+Para adicionar ou remover itens de menu ou de barra de ferramentas, consulte [Como personalizar menus e barras de ferramentas](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md).
 
 ::: moniker range="vs-2017"
 
@@ -70,5 +70,5 @@ Você pode definir e salvar vários layouts de janela e mudar entre eles. Por ex
 
 - [Configurações do ambiente](environment-settings.md)
 - [Visão geral do IDE do Visual Studio](../get-started/visual-studio-ide.md)
-- [Início Rápido: Introdução ao IDE do Visual Studio](../ide/quickstart-ide-orientation.md)
+- [Início rápido: Introdução ao IDE do Visual Studio](../ide/quickstart-ide-orientation.md)
 - [Personalizar o IDE do Visual Studio para Mac](/visualstudio/mac/customizing-the-ide)

@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugCustomAttribute::GetAttributeTypeField
 ms.assetid: d6ce26d5-42ba-44c1-8659-0516db5bc82d
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cbbf0d91b344f1a45eb09d480eb631ac1a159046
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 70168bb233cb061d7c01b9285c701920d54d7238
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62875913"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66315148"
 ---
 # <a name="idebugcustomattributegetattributetypefield"></a>IDebugCustomAttribute::GetAttributeTypeField
 Obtém o tipo de classe de atributo personalizado.
@@ -36,10 +39,9 @@ int GetAttributeTypeField(
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `ppCAType`
-
- [out] Retorna o [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) objeto que representa a classe da qual o atributo personalizado é uma instância.
+## <a name="parameters"></a>Parâmetros
+`ppCAType`\
+[out] Retorna o [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) objeto que representa a classe da qual o atributo personalizado é uma instância.
 
 ## <a name="return-value"></a>Valor de retorno
  Se for bem-sucedido, retornará S_OK; Caso contrário, retornará um código de erro.

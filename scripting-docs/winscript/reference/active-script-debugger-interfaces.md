@@ -1,5 +1,5 @@
 ---
-title: Interfaces do depurador de Script ativo | Microsoft Docs
+title: Interfaces do depurador de script ativo | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -14,21 +14,21 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ed8ff0361396deaaffd46f14ca1fc38869988593
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 477374d93e4d8d5139197dcd49fef0e930e5ff32
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63422457"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572708"
 ---
 # <a name="active-script-debugger-interfaces"></a>Interfaces do depurador de script ativo
-Os arquivos de cabeçalho activdbg.h e activdbg100.h fornecem as interfaces, enumerações e estruturas listadas nesta seção. Eles são para depuração de script.  
+Os arquivos de cabeçalho activdbg. h e activdbg100. h fornecem as interfaces, enumerações e estruturas listadas nesta seção. Eles são para depuração de script.  
   
 > [!NOTE]
-> O `IJSDebug*` interfaces e o `IEnumJsStackFrames` interface foram lançados pela primeira vez no Internet Explorer 11 para depurar o código nativo com script. O arquivo de cabeçalho para essas interfaces é jscript9diag.h.  
+> As interfaces `IJSDebug*` e a interface `IEnumJsStackFrames` foram lançadas primeiro no Internet Explorer 11 para depuração de código nativo com script. O arquivo de cabeçalho para essas interfaces é jscript9diag. h.  
   
 ## <a name="in-this-section"></a>Nesta seção  
- As seguintes interfaces permitem a depuração com neutralidade de idioma, neutralidade de host:  
+ As interfaces a seguir permitem a depuração neutra de idioma e de host neutro:  
   
 - [Constantes, enumerações e estruturas de depurador do script ativo](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)  
   

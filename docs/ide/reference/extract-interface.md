@@ -2,8 +2,8 @@
 title: Refatoração Extrair uma interface
 ms.date: 01/26/2018
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 f1_keywords:
 - vs.csharp.refactoring.extractinterface
@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 261ddf457ad117812be9971b630c2fcd3b75b550
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 15da8bdf1a3df60a7ad4816ce578ec5672c85ecf
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62791128"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72654425"
 ---
 # <a name="extract-an-interface-refactoring"></a>Refatoração Extrair uma interface
 
@@ -27,11 +27,11 @@ Esta refatoração aplica-se a:
 
 - Visual Basic
 
-**O quê:** Permite criar uma interface usando membros existentes de uma classe, um struct ou uma interface.
+**O que:** Permite criar uma interface usando membros existentes de uma classe, estrutura ou interface.
 
-**Quando:** Você tem membros em uma classe, um struct ou uma interface que podem ser herdados por outras classes, outros structs ou outras interfaces.
+**Quando:** Você tem membros em uma classe, struct ou interface que podem ser herdados por outras classes, estruturas ou interfaces.
 
-**Por que:** As interfaces são ótimos constructos para designs orientados a objeto. Imagine ter classes para vários animais (gato, cachorro, pássaro) que podem ter métodos comuns, como comer, beber, dormir. Usar uma interface como IAnimal permitiria que cachorro, gato e pássaro tivessem uma "assinatura" comum para esses métodos.
+**Por quê:** as interfaces são ótimos constructos para designs orientados a objetos. Imagine ter classes para vários animais (gato, cachorro, pássaro) que podem ter métodos comuns, como comer, beber, dormir. Usar uma interface como IAnimal permitiria que cachorro, gato e pássaro tivessem uma "assinatura" comum para esses métodos.
 
 ## <a name="extract-an-interface-refactoring"></a>Refatoração Extrair uma interface
 
@@ -49,7 +49,7 @@ Esta refatoração aplica-se a:
 
    - **Teclado**
       - Pressione **Ctrl+R**, em seguida, **Ctrl+I**. (O atalho de teclado pode ser diferente de acordo com o perfil selecionado.)
-      - Pressione **Ctrl**+**.** para disparar o menu **Ações Rápidas e Refatorações** e selecionar **Extrair Interface** no pop-up da janela Visualização.
+      - Pressione **Ctrl**+ **.** para disparar o menu **Ações Rápidas e Refatorações** e selecionar **Extrair Interface** no pop-up da janela Visualização.
    - **Mouse**
       - Selecione **Editar > Refatorar > Extrair Interface**.
       - Clique com o botão direito do mouse no nome da classe, selecione o menu **Ações Rápidas e Refatorações** e selecione **Extrair Interface** no pop-up da janela Visualização.
@@ -64,7 +64,7 @@ Esta refatoração aplica-se a:
    | **Nome do novo arquivo** | O nome do arquivo gerado que conterá a interface. Assim como ocorre com o nome da interface, esse nome usará como padrão I*ClassName*, em que *ClassName* é o nome da classe selecionada acima. Selecione também a opção para **Adicionar ao arquivo atual**. |
    | **Selecionar membros públicos para formar a interface** | Os itens a serem extraídos para a interface. Você pode selecionar quantos desejar. |
 
-4. Escolha **OK**.
+4. Clique em **OK**.
 
    A interface foi criada no arquivo com o nome especificado. Além disso, a classe que você selecionou implementa essa interface.
 
@@ -83,4 +83,4 @@ Esta refatoração aplica-se a:
 ## <a name="see-also"></a>Consulte também
 
 - [Refatoração](../refactoring-in-visual-studio.md)
-- [Dicas para desenvolvedores de .NET](../../ide/visual-studio-2017-for-dotnet-developers.md)
+- [Dicas para desenvolvedores de .NET](../csharp-developer-productivity.md)

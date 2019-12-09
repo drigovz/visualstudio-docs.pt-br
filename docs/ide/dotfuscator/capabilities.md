@@ -15,48 +15,48 @@ helpviewer_keywords:
 description: Conheça as funcionalidades da cópia gratuita do Dotfuscator Community, incluída no Visual Studio 2017.
 ms.assetid: 0ee89c58-c900-48fc-a6a2-65ace00e8bab
 author: Joe-Sewell-PreEmptive
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 5bf42ec3c706282adf2752d21c0c121f89c2ed5f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 249c039070246f27669f3a808cf607a649db1e59
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62557249"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747936"
 ---
 # <a name="capabilities-of-dotfuscator"></a>Funcionalidades do Dotfuscator
 
-Esta página apresenta as funcionalidades do Dotfuscator Community com algumas referências às opções avançadas disponíveis por meio de [atualizações][upgrades].
+Esta página enfoca os recursos da Comunidade Dotfuscator com algumas referências a opções avançadas disponíveis por meio de [atualizações][upgrades].
 
 O Dotfuscator Community é um sistema *pós-build* para aplicativos .NET.
-Com ele, os usuários do Visual Studio podem [ocultar assemblies][obfuscation] e injetar [medidas de defesa ativa no aplicativo][checks]. Tudo sem que o Dotfuscator precise acessar o código-fonte original.
+Com ele, os usuários do Visual Studio podem [ofuscar os assemblies][obfuscation] e injetar [medidas de defesa ativa][checks] no aplicativo, tudo sem Dotfuscator precisarem acessar o código-fonte original.
 O Dotfuscator protege seu aplicativo de várias maneiras, criando uma estratégia de proteção em camadas.
 
-O Dotfuscator Community dá suporte a uma ampla variedades de tipos de assembly e de aplicativo do .NET, incluindo [UWP (Plataforma Universal do Windows)][uwp] e [Xamarin][xamarin].
+A Comunidade Dotfuscator dá suporte a uma ampla variedade de tipos de aplicativos e assembly .NET, incluindo [plataforma universal do Windows (UWP)][uwp] e [Xamarin][xamarin].
 
 ## <a name="intellectual-property-protection"></a>Proteção de propriedade intelectual
 
 O design, o comportamento e a implementação do aplicativo são formas de IP (propriedade intelectual).
-No entanto, os aplicativos criados para o .NET Framework são basicamente manuais abertos; é muito fácil executar engenharia reversa dos assemblies do .NET, [pois eles contêm metadados de alto nível e código intermediário][assemblies].
+No entanto, os aplicativos criados para o .NET são essencialmente abertos. é fácil fazer a engenharia reversa de assemblies .NET, [pois eles contêm metadados de alto nível e código intermediário][assemblies].
 
-O Dotfuscator Community inclui a [ofuscação do .NET][obfuscation] básica na forma de [renomeação][renaming].
+A Comunidade Dotfuscator inclui [ofuscação][obfuscation] básica de .net na forma de [renomeação][renaming].
 A ofuscação do código com o Dotfuscator reduz o risco de acesso não autorizado ao código-fonte por meio de engenharia reversa, já que informações importantes de nomenclatura deixarão de ser públicas.
 A ofuscação também mostra um esforço de sua parte em proteger o código contra o exame – uma etapa importante em estabelecer que sua IP é legalmente protegida como segredo comercial.
 
 Muitos dos [recursos de proteção de integridade do aplicativo](#application-integrity-protection) do Dotfuscator Community impedem ainda mais a engenharia reversa.
 Por exemplo, um ator mal-intencionado pode tentar anexar um depurador a uma instância em execução do aplicativo para entender a lógica do programa.
-O Dotfuscator pode injetar um [comportamento antidepuração][debug] no aplicativo para impedir isso.
+O Dotfuscator pode injetar o [comportamento de antidepuração][debug] em seu aplicativo para obstruir isso.
 
 ## <a name="application-integrity-protection"></a>Proteção de integridade do aplicativo
 
 Além de proteger o código-fonte, também é importante garantir que o aplicativo seja usado como projetado.
 Os invasores podem tentar sequestrar o aplicativo para contornar políticas de licenciamento (ou seja, pirataria de software), roubar ou manipular dados confidenciais tratados pelo aplicativo ou alterar o comportamento do aplicativo.
 
-O Dotfuscator Community pode injetar um [código de validação do aplicativo][checks] nos assemblies, incluindo medidas [contra adulteração][tamper], [contra depuração][debug] e [contra dispositivos com raiz][root].
-Quando um estado de aplicativo inválido é detectado, o código de validação pode [chamar o código do aplicativo para resolver a situação de maneira apropriada][check-app].
-Ou, se preferir não gravar o código para manipular usos inválidos do aplicativo, o Dotfuscator também poderá injetar comportamentos de [resposta][check-action] sem precisar modificar o código-fonte.
+A Comunidade Dotfuscator pode injetar [código de validação de aplicativo][checks] em seus assemblies, incluindo medidas de dispositivo [antiadulteração][tamper], [antidepuração][debug]e [com raiz][root] .
+Quando um estado de aplicativo inválido é detectado, o código de validação pode [ser chamado no código do aplicativo para tratar a situação de forma apropriada][check-app].
+Ou, se você preferir não escrever código para lidar com usos inválidos do aplicativo, o Dotfuscator também poderá injetar comportamentos de [resposta][check-action] , sem a necessidade de qualquer modificação no código-fonte.
 
-Muitos desses mesmos métodos também podem ser usados para impor [datas limite de fim da vida útil][shelflife] para avaliação ou software de avaliação.
+Muitos desses mesmos métodos também podem ser usados para impor [prazos de fim de vida][shelflife] para avaliação ou software de avaliação.
 
 ## <a name="see-also"></a>Consulte também
 

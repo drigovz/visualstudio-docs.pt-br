@@ -7,17 +7,17 @@ helpviewer_keywords:
 - response times in load tests
 - load test results, response times
 ms.assetid: e61c49f3-3161-45b1-9220-08b5459065a2
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: ed1bd922b390d5b6e90c68b08683e1b9bdb46f32
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 5fbaa3f8f322bc6633e4f5081ba4cae38b581b95
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62821180"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653292"
 ---
-# <a name="how-to-view-web-page-response-time-in-a-load-test-using-the-load-test-analyzer"></a>Como: Exibir o tempo de resposta da página da Web em um teste de carga usando o Analisador de Teste de Carga
+# <a name="how-to-view-web-page-response-time-in-a-load-test-using-the-load-test-analyzer"></a>Como exibir o tempo de resposta da página da Web em um teste de carga usando o Analisador de Teste de Carga
 
 O tempo necessário para cada página da Web carregar é conhecido como *tempo de resposta*. Quando você cria um teste de desempenho na Web, pode definir uma meta de tempo de resposta para cada solicitação de página da Web no teste de desempenho na Web.
 
@@ -59,7 +59,7 @@ Se você executar o teste de desempenho na Web sob estresse em um teste de carga
    |**Max**|O tempo de resposta máximo da página.<br /><br /> Por padrão, esses dados não são coletados. Para coletar esses dados, no **Editor de Teste de Carga**, no nó **Configurações de Execução**, selecione o nó da configuração de execução a ser alterado. Na janela **Propriedades**, para a propriedade de **Armazenamento de Detalhes de Medição de Tempo**, selecione **AllIndividualDetails**.|
    |**Desvio padrão**|Por padrão, os dados de desvio padrão não são coletados. Para coletar esses dados, no **Editor de Teste de Carga**, no nó **Configurações de Execução**, selecione o nó da configuração de execução a ser alterado. Na janela **Propriedades**, para a propriedade de **Armazenamento de Detalhes de Medição de Tempo**, selecione **AllIndividualDetails**.|
    |**Tempo da Página**|O tempo médio de resposta para todas as solicitações feitas para a página da Web.|
-   |**Meta**|A meta de tempo da página. Esse é um valor constante para a página. **Observação:**  A Meta de Tempo da Página é exibida somente quando a meta é definida para a solicitação no teste de desempenho Web.|
+   |**Meta**|A meta de tempo da página. Esse é um valor constante para a página. **Observação:** a meta de tempo da página é exibida somente quando a meta é definida para a solicitação no teste de desempenho Web.|
    |**Meta da reunião %**|A porcentagem de solicitações feitas para a página da Web que atingiu a meta de tempo de resposta.|
 
    Para obter mais informações, consulte [Analisar resultados de teste de carga e erros na exibição Tabelas](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
@@ -84,7 +84,7 @@ Para exibir dados de tempo de resposta em um gráfico:
 
     Os dados são adicionado ao gráfico.
 
-7. (Opcional) Repita a etapa anterior para **Tempo Méd. Página**, **Meta de Tempo de Resposta da Página** e **Total de Páginas**.
+7. Adicional Repita a etapa anterior para **média de tempo de página**, **meta de tempo de resposta da página**e **total de páginas**.
 
    > [!NOTE]
    > A **Meta de Tempo de Resposta da Página** é constante.
@@ -94,5 +94,5 @@ Para exibir dados de tempo de resposta em um gráfico:
 ## <a name="see-also"></a>Consulte também
 
 - [Analisar resultados do teste de carga e erros na exibição Tabelas](../test/analyze-load-test-results-and-errors-in-the-tables-view.md)
-- [Como: Acessar os resultados do teste de carga para análise](../test/how-to-access-load-test-results-for-analysis.md)
-- [Analisar resultados do teste de carga](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
+- [Como acessar os resultados do teste de carga para análise](../test/how-to-access-load-test-results-for-analysis.md)
+- [Analisar resultados de teste de carga](../test/analyze-load-test-results-using-the-load-test-analyzer.md)

@@ -1,5 +1,5 @@
 ---
-title: 'CA1716: Identificadores não devem corresponder a palavras-chave | Microsoft Docs'
+title: 'CA1716: identificadores não devem corresponder a palavras-chave | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,33 +12,33 @@ helpviewer_keywords:
 - CA1716
 ms.assetid: 900cc8a1-1089-4069-a4ce-10b109ac4fab
 caps.latest.revision: 23
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 35a97e62e17895cb700a1420c7851878f329112a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f81aec5973d1915ba646c20c3b84186443678754
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58924578"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72669095"
 ---
-# <a name="ca1716-identifiers-should-not-match-keywords"></a>CA1716: Identificadores não devem corresponder a palavras-chave
+# <a name="ca1716-identifiers-should-not-match-keywords"></a>CA1716: os identificadores não devem corresponder a palavras-chave
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |NomeDoTipo|IdentifiersShouldNotMatchKeywords|
 |CheckId|CA1716|
-|Categoria|Microsoft.Naming|
+|Categoria|Microsoft. Naming|
 |Alteração Significativa|Quebra|
 
 ## <a name="cause"></a>Causa
- Um nome de um namespace, um tipo ou membro viritual ou interface corresponde a uma palavra-chave reservada em uma linguagem de programação.
+ Um nome de um namespace, um tipo ou um membro de interface ou viritual corresponde a uma palavra-chave reservada em uma linguagem de programação.
 
 ## <a name="rule-description"></a>Descrição da Regra
- Identificadores de namespaces, tipos e virtuais e os membros de interface não devem corresponder a palavras-chave que são definidas por linguagens que visam o common language runtime. Dependendo da linguagem que é usada e a palavra-chave, ambiguidades e erros do compilador podem dificultar a biblioteca usar.
+ Identificadores para namespaces, tipos e membros de interface e virtuais não devem corresponder a palavras-chave definidas por linguagens que se destinam ao Common Language Runtime. Dependendo do idioma usado e da palavra-chave, os erros e as ambiguidades do compilador podem tornar a biblioteca difícil de usar.
 
- Esta regra verifica em palavras-chave nos seguintes idiomas:
+ Esta regra verifica as palavras-chave nos seguintes idiomas:
 
 - Visual Basic
 
@@ -46,10 +46,10 @@ ms.locfileid: "58924578"
 
 - C++/CLI
 
-  Comparação de maiusculas e minúsculas é usada para [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] comparação diferencia maiusculas de minúsculas e palavras-chave é usada para os outros idiomas.
+  A comparação que não diferencia maiúsculas de minúsculas é usada para [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] palavras-chave e a comparação que diferencia maiúsculas de minúsculas é usada para os outros idiomas.
 
 ## <a name="how-to-fix-violations"></a>Como Corrigir Violações
- Selecione um nome que não aparece na lista de palavras-chave.
+ Selecione um nome que não apareça na lista de palavras-chave.
 
 ## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos
- Você pode suprimir um aviso nessa regra, se você estiver convencido de que o identificador não confundir os usuários da API, e que a biblioteca é utilizável em todos os idiomas disponíveis no [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].
+ Você pode suprimir um aviso dessa regra se estiver convencido de que o identificador não confundirá os usuários da API e que a biblioteca pode ser usada em todos os idiomas disponíveis no [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].

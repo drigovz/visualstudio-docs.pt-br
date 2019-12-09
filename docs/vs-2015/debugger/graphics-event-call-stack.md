@@ -12,11 +12,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8344050d26286263e0c33974b976e4ae25ff18de
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58927254"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68192749"
 ---
 # <a name="graphics-event-call-stack"></a>Pilha de chamadas de gráfico
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

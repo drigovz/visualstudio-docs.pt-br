@@ -1,5 +1,5 @@
 ---
-title: 'CA1811: Evitar código privado não chamado | Microsoft Docs'
+title: 'CA1811: evitar código particular não chamado | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,30 +12,30 @@ helpviewer_keywords:
 - AvoidUncalledPrivateCode
 ms.assetid: aadbba74-7821-475f-8980-34d17c0a0a8b
 caps.latest.revision: 22
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 373ccaa6552079a8995d61ef09bf6e0845c299d6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: ccc439e0d84d1fced4ba0359385a6964356d5df6
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60113515"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72668459"
 ---
-# <a name="ca1811-avoid-uncalled-private-code"></a>CA1811: Evitar código particular não chamado
+# <a name="ca1811-avoid-uncalled-private-code"></a>CA1811: evitar código privado não chamado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |NomeDoTipo|AvoidUncalledPrivateCode|
 |CheckId|CA1811|
-|Categoria|Microsoft.Performance|
-|Alteração Significativa|Não são significativas|
+|Categoria|Microsoft. performance|
+|Alteração Significativa|Sem interrupção|
 
 ## <a name="cause"></a>Causa
- Membro privado ou interno (nível de assembly) não tem chamadores no assembly, não é invocado pelo common language runtime e não é invocado por um delegado. Os seguintes membros não são verificados por essa regra:
+ Um membro privado ou interno (no nível do assembly) não tem chamadores no assembly, não é invocado pelo Common Language Runtime e não é invocado por um delegado. Os seguintes membros não são verificados por esta regra:
 
-- Membros de interface explícita.
+- Membros de interface explícitos.
 
 - Construtores estáticos.
 
@@ -46,17 +46,17 @@ ms.locfileid: "60113515"
 - Membros que são substituições.
 
 ## <a name="rule-description"></a>Descrição da Regra
- Essa regra pode relatar falsos positivos se houver pontos de entrada que não são identificados no momento pela lógica de regra. Além disso, um compilador pode emitir código noncallable em um assembly.
+ Essa regra pode relatar falsos positivos se ocorrerem pontos de entrada que não estão identificados atualmente pela lógica da regra. Além disso, um compilador pode emitir código não chamável em um assembly.
 
 ## <a name="how-to-fix-violations"></a>Como Corrigir Violações
- Para corrigir uma violação dessa regra, remova o código noncallable ou adicionar código que o chama.
+ Para corrigir uma violação dessa regra, remova o código não chamável ou adicione o código que o chama.
 
 ## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos
- É seguro suprimir um aviso nessa regra.
+ É seguro suprimir um aviso dessa regra.
 
 ## <a name="related-rules"></a>Regras relacionadas
- [CA1812: Evite classes internas sem instâncias](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)
+ [CA1812: evitar classes internas sem instâncias](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)
 
- [CA1801: Revisar parâmetros não utilizados](../code-quality/ca1801-review-unused-parameters.md)
+ [CA1801: examinar parâmetros não usados](../code-quality/ca1801-review-unused-parameters.md)
 
- [CA1804: Remover locais não usados](../code-quality/ca1804-remove-unused-locals.md)
+ [CA1804: remover locais não usados](../code-quality/ca1804-remove-unused-locals.md)

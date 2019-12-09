@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugExceptionEvent2::GetException
 ms.assetid: 7c98f41d-322b-4e72-a514-cbd4823eb70d
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 79385348aa9290f26a34b99dbd2d6f68cb92dc8a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 691df8f5a212f1d854d87076a215402c7ce0053c
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62920220"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66310504"
 ---
 # <a name="idebugexceptionevent2getexception"></a>IDebugExceptionEvent2::GetException
 Obtém uma descrição detalhada da exceção que disparou este evento.
@@ -36,10 +39,9 @@ int GetException( 
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `pExceptionInfo`
-
- [no, out] Uma [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) estrutura será preenchida com a descrição da exceção.
+## <a name="parameters"></a>Parâmetros
+`pExceptionInfo`\
+[no, out] Uma [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) estrutura será preenchida com a descrição da exceção.
 
 ## <a name="return-value"></a>Valor de retorno
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.

@@ -1,5 +1,5 @@
 ---
-title: IDebugApplicationThread::QueryIsDebuggerThread | Microsoft Docs
+title: 'IDebugApplicationThread:: QueryIsDebuggerThread | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5594973f64446c0c6818522ad2ce2b174ab02610
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: febce73e2c40d0df02acc42f6219eca30afb3f29
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62822148"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574541"
 ---
 # <a name="idebugapplicationthreadqueryisdebuggerthread"></a>IDebugApplicationThread::QueryIsDebuggerThread
-Determina se este segmento é o depurador.  
+Determina se este thread é o thread do depurador.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -36,16 +36,16 @@ HRESULT QueryIsDebuggerThread();
 #### <a name="parameters"></a>Parâmetros  
  Esse método não usa parâmetros.  
   
-## <a name="return-value"></a>Valor de retorno  
+## <a name="return-value"></a>Valor retornado  
  O método retorna um `HRESULT`. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.  
   
 |Valor|Descrição|  
 |-----------|-----------------|  
-|`S_OK`|O método foi bem-sucedido e esse é o thread do depurador.|  
-|`S_FALSE`|Isso não é o thread do depurador.|  
+|`S_OK`|O método foi bem-sucedido e este é o thread do depurador.|  
+|`S_FALSE`|Este não é o thread do depurador.|  
   
 ## <a name="remarks"></a>Comentários  
- Este método determina se este segmento é o depurador.  
+ Esse método determina se esse thread é o thread do depurador.  
   
 ## <a name="see-also"></a>Consulte também  
  [Interface IDebugApplicationThread](../../winscript/reference/idebugapplicationthread-interface.md)

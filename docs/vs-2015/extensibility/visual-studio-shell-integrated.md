@@ -1,5 +1,5 @@
 ---
-title: Visual Studio Shell (integrado) | Microsoft Docs
+title: Shell do Visual Studio (integrado) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,62 +11,62 @@ ms.assetid: 0b40d495-f17f-4bb9-ace8-b365a7172784
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 736031f1de24144f7b5f68ed44710e0c894df41a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 78ccba3ab8c2dda531614fa791eac3100813840a
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445732"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299695"
 ---
-# <a name="visual-studio-shell-integrated"></a>Visual Studio Shell (integrado)
+# <a name="visual-studio-shell-integrated"></a>Shell (integrado) do Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-O shell integrado do Visual Studio inclui o ambiente de desenvolvimento integrado (IDE), o depurador e a integração de controle do código-fonte. Nenhuma linguagem de programação é incluída. No entanto, o shell integrado fornecem uma estrutura que permite que você adicione linguagens de programação.  
+O Shell integrado do Visual Studio inclui o IDE (ambiente de desenvolvimento integrado), o depurador e a integração de controle do código-fonte. Nenhuma linguagem de programação está incluída. No entanto, o Shell integrado fornece uma estrutura que permite que você adicione linguagens de programação.  
   
- O shell integrado do Visual Studio é, na verdade, uma combinação do shell isolado do Visual Studio com uma instalação adicional que incluem componentes específicos do shell integrado.  Seu aplicativo de shell integrado deve incluir os dois o shell isolado pacote redistribuível do [pacote redistribuível do Microsoft Visual Studio Shell (isolado)](http://go.microsoft.com/fwlink/?LinkId=616022) , bem como o pacote redistribuível do shell integrado partir [Microsoft Visual Studio (integrado) pacote redistribuível do Shell](http://go.microsoft.com/fwlink/?LinkId=616021).  
+ O Shell integrado do Visual Studio é, na verdade, uma combinação do Shell isolado do Visual Studio, além de uma instalação adicional que inclui componentes específicos do Shell integrados.  O aplicativo de shell integrado deve incluir o pacote redistribuível do Shell isolado de [shell do Microsoft Visual Studio (isolado) pacote](https://go.microsoft.com/fwlink/?LinkId=616022) redistribuível, bem como o pacote redistribuível do Shell integrado do pacote redistribuível do [shell do Microsoft Visual Studio (integrado)](https://go.microsoft.com/fwlink/?LinkId=616021).  
   
 > [!NOTE]
-> Antes de poder acessar os pacotes redistribuíveis do shell isolado e integrado, será solicitado que você preencha uma breve pesquisa do cliente.  Depois de preencher a pesquisa, você será direcionado para uma página do Visual Studio Connect com links de download do pacote redistribuível.  Você pode encontrar os links de download em visitas subsequentes ao site do Visual Studio conectar-se na **programas &#124; VISUAL STUDIO 2015 integrado e ISOLADO SHELL** guia.  
+> Antes de poder acessar os pacotes redistribuíveis do Shell integrado e isolado, você será solicitado a preencher uma breve pesquisa do cliente.  Depois de preencher a pesquisa, você será direcionado para uma página do Visual Studio Connect com links de download de pacote redistribuível.  Você pode encontrar os links de download em visitas posteriores ao site do Visual Studio Connect na guia  **&#124; programas Visual Studio 2015 integrado e Shell isolado** .  
   
- Se você instalar o aplicativo de shell integrado no mesmo computador como uma versão completa do Visual Studio, componentes do seu aplicativo serão integrados diretamente no Visual Studio.  
+ Se você instalar o aplicativo de shell integrado no mesmo computador que uma versão completa do Visual Studio, os componentes do aplicativo serão integrados diretamente ao Visual Studio.  
   
-## <a name="features-in-the-integrated-shell"></a>Recursos do Shell integrado  
+## <a name="features-in-the-integrated-shell"></a>Recursos no Shell integrado  
   
 |||  
 |-|-|  
-|Área de recursos|Recurso|  
-|Suporte ao idioma|– None|  
-|IDE|<ul><li>Configurações<br /><br /> <ul><li>Criar configurações</li><li>Importar e exportar configurações</li><li>Redefinir configurações</li></ul></li><li>**Caixa de ferramentas** integração</li><li>**Lista de tarefas** integração</li><li>Integração da Ajuda</li><li>**Opções de** caixa de diálogo</li><li>Gerenciamento de fontes e cores</li><li>**Saída** janela</li><li>**Comando** janela</li><li>Gerenciamento de janelas</li><li>Associações de teclas, menus e comandos</li><li>Tempo de execução de linguagem específica do domínio (DSL)</li></ul>|  
-|Sistema de projeto e tipos de projeto|-Soluções e pastas de solução<br />-Gerenciador de configuração<br />-Gerenciamento item<br />-Projeto único e vários projetos de soluções<br />-Application Designer (Propriedades do projeto simplificado)<br />-Adicionar referência Web<br />-Adicionar referência de serviço<br />Projeto único<br />-Tipos de projeto de site da Web<br />-Projetos de aplicativos web|  
-|Build|-Etapas de build personalizado no IDE<br />-Pré-compilação para a proteção de propriedade intelectual (IP)<br />-Assinatura de código<br />     MSBuild|  
-|Editor|-Ferramentas (localização unificada, definição de fonte, herança) de navegação de código<br />-Navegação de código<br />-   IntelliSense<br />-   SmartTags<br />-Refactoring<br />-Listagem bonita<br />-Filtragem IntelliSense<br />-   **Definição de código** janela|  
-|Designer|-Windows Presentation Foundation Designer<br />-Windows Forms Designer<br />-Web Designer e Editor de HTML|  
-|Dados|-   **Gerenciador de servidores** (simplificado: somente os dados). Consulte a Observação 1.<br />-   **Fontes de dados** janela<br />-Todo o conjunto de controles de dados<br />-Editor de XML<br />-Dados associar a fonte de dados local (. Arquivos MDF ou. MDB)<br />-Associar dados objeto<br />-Data associar ao serviço Web<br />-Data ligar ao servidor de banco de dados local<br />-Data ligar ao servidor de banco de dados remoto<br />-Ferramentas DDL para dados remotos<br />-   **Gerenciador de servidores** extensibilidade ([!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] exemplos)|  
-|Depurador|-Depuração local. Consulte a Observação 2.<br />-Depuração gerenciada<br />-Depuração local<br />-Anexar ao processo local<br />-Anexar ao processo remoto<br />-Delegado anônimo<br />-Domínios de aplicativo<br />-Depuração ASPX<br />-Atributos<br />-Break durante Func eval<br />-Os pontos de interrupção<br />-Restrições de ponto de interrupção<br />-A pilha de chamadas<br />-   **Comando** janela<br />-Depuração thread cruzado<br />-Dicas de dados<br />-Visualizador de dados<br />-Suporte a depurador assistentes de depuração gerenciados (MDAs)<br />-Suporte do encaminhador de tipo depurador<br />-Suporte a DTEEvents OTB<br />-JMC escalonador<br />-Teste de AppID debugger (DBGCLR)<br />-Perfil depurador<br />-Ferramentas e opções de depurador<br />-Depuração de iterador<br />-Avaliação da expressão tempo de design<br />-C# o avaliador de expressão<br />-Desmontagem<br />-Editar e continuar<br />-Windows do avaliador de expressão (inspeção, locais, Autos)<br />-Auxiliar de exceção<br />-Exceções<br />-Execução<br />- Genéricos<br />-Introdução a fonte correta<br />-Depuração/Cluster HPC<br />-Multi-language depuração integrada<br />-Depuração interOp<br />-Depuração just-in-time<br />-Depuração local<br />-Depuração gerenciada<br />-Controle manual (janela de processos)<br />-Memória<br />-Suporte minidespejo<br />-Módulos<br />-Depuração de vários processos<br />-Depuração nativa<br />-Suporte ao mecanismo de depuração novo<br />-Depuração de código otimizado<br />-Para filtros do windows output<br />-Processo de hospedagem para depuração gerenciada<br />-Processos<br />-Quickwatch<br />-Registra<br />-Registros na pilha<br />-Depuração remota<br />-Valores de retorno<br />-Depuração de script<br />-Suporte do serviço origem<br />-Segurança<br />Side-by-side<br />-   SQL<br />-Servidor de símbolos<br />-Pontos de rastreamento<br />-Thread<br />-Visualizações<br />-Depurador extensível de folha de estilos XSLT (linguagem)|  
-|Suporte de 64 bits|-depuração de 64 bits para código gerenciado e nativo, todos os idiomas<br />-suporte a x64 nativo|  
-|Controle do código fonte (SCC)|-Integração do SCC básica. Consulte a Observação 3.<br />-Ferramentas e opções de verificação|  
+|Área do recurso|Recurso|  
+|Suporte ao idioma|-Nenhum|  
+|IDE|<ul><li>Configurações<br /><br /> <ul><li>Criar configurações</li><li>Configurações de importação e exportação</li><li>Redefinir configurações</li></ul></li><li>Integração da **caixa de ferramentas**</li><li>Integração do **lista de tarefas**</li><li>Integração da ajuda</li><li>Caixa de diálogo **Opções**</li><li>Gerenciamento de fontes e cores</li><li>Janela de **saída**</li><li>Janela de **comando**</li><li>Gerenciamento de janelas</li><li>Comandos, menus e associações de teclas</li><li>Tempo de execução de DSL (linguagem específica do domínio)</li></ul>|  
+|Sistema de projeto e tipos de projeto|-Soluções e pastas de solução<br />-Gerenciador de configurações de soluções<br />-Gerenciamento de item<br />– Soluções de projeto único e de vários projetos<br />-Designer de Aplicativos (Propriedades de projeto simplificadas)<br />-Adicionar referência Web<br />-Adicionar Referência de Serviço<br />-Projeto único<br />-Tipos de projeto de site<br />-Projetos de aplicativos Web|  
+|{1&gt;Compilação&lt;1}|-Etapas de compilação personalizadas no IDE<br />-Pré-compilação para proteção de propriedade intelectual (IP)<br />-Assinatura de código<br />     MSBuild|  
+|Editor|-Ferramentas de navegação de código (localização unificada, definição de origem, herança)<br />-Navegação de código<br />-IntelliSense<br />-   SmartTags<br />-Refatoração<br />-Lista de estilos<br />-Filtragem de IntelliSense<br />janela de **definição de código** de -   |  
+|Designer|-Windows Presentation Foundation designer<br />-Designer de Formulários do Windows<br />-Web designer e editor de HTML|  
+|Dados|-   **Gerenciador de servidores** (simplificado: somente dados). Consulte a observação 1.<br />-   janela de **fontes de dados**<br />-Conjunto completo de controles de dados<br />-Editor de XML<br />-Vinculação de dados à fonte de dados local (. MDF ou. MDB<br />-Vinculação de dados ao objeto<br />-Associação de dados ao serviço Web<br />-Ligação de dados com o servidor de banco local<br />-Ligação de dados com o servidor de banco remoto<br />-Ferramentas DDL para dados remotos<br />-   **Gerenciador de servidores** extensibilidade ([!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] amostras)|  
+|Depurador|-Depuração local. Consulte a observação 2.<br />-Depuração gerenciada<br />-Depuração local<br />-Anexar ao processo local<br />-Anexar ao processo remoto<br />-Delegado anônimo<br />-Domínios de aplicativo<br />-Depuração ASPX<br />-Atributos<br />-Interrupção durante Func-eval<br />-Pontos de interrupção<br />-Restrições de ponto de interrupção<br />-Pilha de chamadas<br />-   janela de **comando**<br />-Depuração entre threads<br />-Dicas de dados<br />-Visualizador de dados<br />-Suporte do depurador para assistentes de depuração gerenciada (MDAs)<br />-Suporte do depurador para encaminhador de tipo<br />-Suporte do DTEEvents para OTB<br />-JMC stepper<br />-Teste de AppID do depurador (DBGCLR)<br />-Perfil do depurador<br />-Ferramentas e opções do depurador<br />-Iterador de depuração<br />-Avaliação de expressão de tempo de design<br />- C# Avaliador de expressão<br />-Desmontagem<br />-Editar e continuar<br />-Janelas do avaliador de expressão (Watch, locais, Autoies)<br />-Auxiliar de exceção<br />-Exceções<br />-Execução<br />- Genéricos<br />-Obtendo fonte correta<br />-HPC/depuração de cluster<br />-Depuração de vários idiomas integrada<br />– Depuração de interoperabilidade<br />-Depuração Just-in-time<br />-Depuração local<br />-Depuração gerenciada<br />-Controle manual (janela Processes)<br />-Memória<br />-Suporte a minidespejo<br />-Módulos<br />-Depuração de vários processos<br />-Depuração nativa<br />-Novo suporte ao mecanismo de depuração<br />-Depuração de código otimizado<br />-Filtragem de saída do Windows<br />-Processo de hospedagem para depuração gerenciada<br />-Processos<br />-QuickWatch<br />-Registros<br />-Registros na pilha<br />-Depuração remota<br />-Valores de retorno<br />-Depuração de script<br />-Suporte ao serviço de origem<br />-Segurança<br />-Lado a lado<br />-   SQL<br />-Servidor de símbolos<br />-Pontos de rastreamento<br />-Thread<br />-Visualizações<br />-Depurador de transformações de linguagem de folha de estilos extensível (XSLT)|  
+|Suporte de 64 bits|-depuração de 64 bits para código gerenciado e nativo, todas as linguagens<br />-suporte nativo para x64|  
+|Controle do código-fonte (SCC)|-Integração básica de SCC. Consulte a observação 3.<br />-Verificação de ferramentas e opções|  
 |Extensibilidade|-Consumir componentes VSPackages e MEF|  
   
 ## <a name="notes"></a>Observações  
   
-#### <a name="1-data-tools"></a>1. Ferramentas de Dados  
- O shell integrado inclui ferramentas de desenvolvimento de banco de dados, como suporte à extensibilidade de dados e a simplificada **Gerenciador de soluções**. No entanto, Crystal Reports, relatórios SQL e SQL Server Express não estão incluído no shell integrado.  
+#### <a name="1-data-tools"></a>1. ferramentas de dados  
+ O Shell integrado inclui ferramentas de desenvolvimento de banco de dados, como o suporte à extensibilidade e o **Gerenciador de soluções**simplificado. No entanto, SQL Server Express, relatórios SQL e Crystal Reports não estão incluídos no Shell integrado.  
   
-#### <a name="2-debugging-support"></a>2. Depuração de suporte  
- O shell integrado inclui o mesmo mecanismo de depuração que está incluído na versão de comunidade do Visual Studio. O mecanismo de depuração inclui o depurador comuns para código gerenciado e também recursos relacionados, como a execução, anexação, definir ponto de interrupção, editar e continuar e outras pessoas. No entanto, o mecanismo de depuração não oferece suporte depuração de banco de dados do SQL Server.  
+#### <a name="2-debugging-support"></a>2. suporte à depuração  
+ O Shell integrado inclui o mesmo mecanismo de depuração incluído na versão da Comunidade do Visual Studio. O mecanismo de depuração inclui o depurador comum para código gerenciado e também recursos relacionados, como executar, anexar, definir ponto de interrupção, editar e continuar e outros. No entanto, o mecanismo de depuração não dá suporte à depuração de banco de dados SQL Server.  
   
- Embora o suporte para depuração nativa está incluído no pacote do depurador básico, você não pode estendê-lo para dar suporte a idiomas adicionais.  
+ Embora o suporte para depuração nativa esteja incluído no pacote do depurador básico, você não pode estendê-lo para dar suporte a idiomas adicionais.  
   
-#### <a name="3-source-code-control-integration"></a>3. Integração de controle do código-fonte  
- O shell integrado fornece APIs para implementar o controle do código-fonte (SCC) e para fornecer o controle de origem com base em MSSCCI comum componentes de integração.  
+#### <a name="3-source-code-control-integration"></a>3. integração de controle do código-fonte  
+ O Shell integrado fornece APIs para implementar o SCC (controle de código-fonte) e fornecer os componentes de integração de controle de origem comuns baseados em MSSCCI.  
   
- Embora a integração do SCC não é um recurso regular da edição Pro do Visual Studio, a integração do SCC é fornecida no shell integrado.  
+ Embora a integração com SCC não seja um recurso regular da edição pro do Visual Studio, a integração com SCC é fornecida no Shell integrado.  
   
-#### <a name="4-build-support"></a>4. Suporte ao build  
- O shell integrado fornece suporte de compilação. Você pode encontrar informações sobre compilações na [referência do MSBuild](../msbuild/msbuild-reference.md).  
+#### <a name="4-build-support"></a>4. suporte à compilação  
+ O Shell integrado fornece suporte à compilação. Você pode encontrar informações sobre compilações na [referência do MSBuild](../msbuild/msbuild-reference.md).  
   
 ## <a name="features-not-included-in-the-integrated-shell"></a>Recursos não incluídos no Shell integrado  
- A seguir está uma lista dos recursos que não estão incluídos no shell integrado:  
+ Veja a seguir uma lista de recursos que não estão incluídos no Shell integrado:  
   
 - Designer de Classe  
   
@@ -76,7 +76,7 @@ O shell integrado do Visual Studio inclui o ambiente de desenvolvimento integrad
   
 - VSHost  
   
-- Nenhum linguagens do Visual Studio ou em seus modelos de projeto associado ou modelos de item de projeto, são incluídos no shell integrado. Nenhum implementações específicas de idioma de outros recursos estão incluídas, para trechos de código do Visual Basic de exemplo.  
+- Nenhuma linguagem do Visual Studio ou seus modelos de projeto associados ou modelos de item de projeto estão incluídos no Shell integrado. Nenhuma implementação específica de idioma de outros recursos está incluída, por exemplo Visual Basic trechos de código.  
   
 ## <a name="see-also"></a>Consulte também  
- [Estendendo a visão geral do Visual Studio](http://msdn.microsoft.com/library/3e9078d7-2763-4cc4-8e20-fac69d747f59)
+ [Ampliando a visão geral do Visual Studio](https://msdn.microsoft.com/library/3e9078d7-2763-4cc4-8e20-fac69d747f59)

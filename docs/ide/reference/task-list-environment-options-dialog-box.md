@@ -17,19 +17,19 @@ helpviewer_keywords:
 - tokens, and the Task List
 - Task List, comment tasks
 ms.assetid: 88327e04-fa3e-48db-995b-ad89e0dc4ed2
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b2fc59a2f04dc30ef8b052e93fc6ffdf030e054
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: f2d0ba45ffea940ddb57a6da1e6df55e3da8867b
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62945021"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72644856"
 ---
-# <a name="options-dialog-box-environment--task-list"></a>Caixa de diálogo Opções: Ambiente \> Lista de Tarefas
+# <a name="options-dialog-box-environment--task-list"></a>Caixa de diálogo opções: ambiente \> Lista de Tarefas
 
 Esta página Opções permite a você adicionar, excluir e alterar os tokens de comentário que geram lembretes da **Lista de Tarefas**. Para exibir essas configurações, selecione **Opções** no menu **Ferramentas**, expanda a pasta **Ambiente** e escolha **Lista de Tarefas**.
 
@@ -63,6 +63,5 @@ Clique para fazer alterações em um token existente usando os valores inseridos
 
 ## <a name="see-also"></a>Consulte também
 
-- [Usando a Lista de Tarefas](../../ide/using-the-task-list.md)
-- [Configurando identificadores no código](../../ide/setting-bookmarks-in-code.md)
-- [Caixa de diálogo Opções do Ambiente](../../ide/reference/environment-options-dialog-box.md)
+- [Usar a Lista de Tarefas](../../ide/using-the-task-list.md)
+- [Definir indicadores no código](../../ide/setting-bookmarks-in-code.md)

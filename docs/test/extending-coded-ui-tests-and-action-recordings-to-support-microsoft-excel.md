@@ -2,17 +2,17 @@
 title: Estender testes de IU codificados e gravações da ação
 ms.date: 11/04/2016
 ms.topic: conceptual
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: 07cdc27cb47a6de46585f573d78b5af00631c2a2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+author: jillre
+ms.openlocfilehash: 3060014002b2e34443741dc654cf29df53278fe2
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63002405"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72664921"
 ---
 # <a name="extend-coded-ui-tests-and-action-recordings"></a>Estender testes de IU codificados e gravações da ação
 
@@ -33,7 +33,7 @@ Essa [postagem no blog](https://blogs.msdn.microsoft.com/gautamg/2010/01/05/3-in
 
 - <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider>
 - <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyElement>
-- <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter>
+- [UITestActionFilter](/previous-versions/visualstudio/visual-studio-2012/dd985757(v=vs.110))
 - <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage>
 - [Usar a automação de interface do usuário para testar seu código](../test/use-ui-automation-to-test-your-code.md)
 - [Práticas recomendadas para testes de IU codificados](../test/best-practices-for-coded-ui-tests.md)

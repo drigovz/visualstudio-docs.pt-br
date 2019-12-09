@@ -1,69 +1,67 @@
 ---
 title: IDebugCoreServer3::EnableAutoAttach | Microsoft Docs
-ms.date: 11/04/2016
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-sdk
 ms.topic: reference
 f1_keywords:
 - IDebugCoreServer3::EnableAutoAttach
 helpviewer_keywords:
 - IDebugCoreServer3::EnableAutoAttach
 ms.assetid: 06aa633b-263b-4e08-8844-9a52d5120b94
-author: gregvanl
+caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
-ms.workload:
-- vssdk
 ms.openlocfilehash: 45362c9456b99d6cec0af01dcb29844d02363a27
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 07/12/2019
 ms.locfileid: "62569754"
 ---
 # <a name="idebugcoreserver3enableautoattach"></a>IDebugCoreServer3::EnableAutoAttach
-Permite que a anexação automática para os mecanismos de depuração especificada.
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-## <a name="syntax"></a>Sintaxe
-
-```cpp
-HRESULT EnableAutoAttach(
-   GUID*     rgguidSpecificEngines,
-   DWORD     celtSpecificEngines,
-   LPCOLESTR pszStartPageUrl,
-   BSTR*     pbstrSessionId
-);
-```
-
-```csharp
-int EnableAutoAttach(
-   Guid[]     rgguidSpecificEngines,
-   uint       celtSpecificEngines,
-   string     pszStartPageUrl,
-   out string pbstrSessionId
-);
-```
-
-#### <a name="parameters"></a>Parâmetros
- `rgguidSpecificEngines`
-
- [in] Matriz de GUIDs para cada mecanismo de depuração para marcar como anexação automática.
-
- `celtSpecificEngines`
-
- [in] O número de mecanismos especificado em `rgguidSpecificEngines`.
-
- `pszStartPageUrl`
-
- [in] A URL inicial para usar ao anexar a automática.
-
- `pbstrSessionID`
-
- [out] ID da sessão que foi anexado automaticamente.
-
-## <a name="return-value"></a>Valor de retorno
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retornará o código de erro. Um código de erro é `E_AUTO_ATTACH_NOT_REGISTERED`, que indica se a fábrica de classes auto-attach não foi registrada.
-
-## <a name="remarks"></a>Comentários
- Quando um programa associado com a URL especificada é iniciado, os mecanismos de depuração especificada são iniciados automaticamente e anexados.
-
-## <a name="see-also"></a>Consulte também
-- [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)
+Permite que a anexação automática para os mecanismos de depuração especificada.  
+  
+## <a name="syntax"></a>Sintaxe  
+  
+```cpp#  
+HRESULT EnableAutoAttach(  
+   GUID*     rgguidSpecificEngines,  
+   DWORD     celtSpecificEngines,  
+   LPCOLESTR pszStartPageUrl,  
+   BSTR*     pbstrSessionId  
+);  
+```  
+  
+```csharp  
+int EnableAutoAttach(  
+   Guid[]     rgguidSpecificEngines,  
+   uint       celtSpecificEngines,  
+   string     pszStartPageUrl,  
+   out string pbstrSessionId  
+);  
+```  
+  
+#### <a name="parameters"></a>Parâmetros  
+ `rgguidSpecificEngines`  
+ [in] Matriz de GUIDs para cada mecanismo de depuração para marcar como anexação automática.  
+  
+ `celtSpecificEngines`  
+ [in] O número de mecanismos especificado em `rgguidSpecificEngines`.  
+  
+ `pszStartPageUrl`  
+ [in] A URL inicial para usar ao anexar a automática.  
+  
+ `pbstrSessionID`  
+ [out] ID da sessão que foi anexado automaticamente.  
+  
+## <a name="return-value"></a>Valor de retorno  
+ Se for bem-sucedido, retornará `S_OK`; caso contrário, retornará o código de erro. Um código de erro é `E_AUTO_ATTACH_NOT_REGISTERED`, que indica se a fábrica de classes auto-attach não foi registrada.  
+  
+## <a name="remarks"></a>Comentários  
+ Quando um programa associado com a URL especificada é iniciado, os mecanismos de depuração especificada são iniciados automaticamente e anexados.  
+  
+## <a name="see-also"></a>Consulte também  
+ [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)

@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b0f8910d35106574912e4a01f7995bfe0f503e3f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 43ab9598262ba8dd73d6c0725e7bc8450f6ec218
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62836232"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740148"
 ---
-# <a name="idiasymbolgetisoptimizedaway"></a>IDiaSymbol::get_isOptimizedAway
-Especifica se a variável é removido para otimização.
+# <a name="idiasymbolget_isoptimizedaway"></a>IDiaSymbol::get_isOptimizedAway
+Especifica se a variável é otimizada para fora.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -30,9 +30,9 @@ HRESULT get_isOptimizedAway(
 #### <a name="parameters"></a>Parâmetros
  `pRetVal`
 
-[out] Um ponteiro para um `BOOL` que especifica se a variável é removido para otimização.
+fora Um ponteiro para um `BOOL` que especifica se a variável é otimizada para fora.
 
-## <a name="return-value"></a>Valor de retorno
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE` ou um código de erro.
 
 ## <a name="see-also"></a>Consulte também

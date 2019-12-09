@@ -1,5 +1,5 @@
 ---
-title: 'Como: Gerenciar janelas do editor'
+title: Como gerenciar janelas do editor
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,19 +8,19 @@ helpviewer_keywords:
 - editors, windows management
 - Code Editor, windows management
 ms.assetid: 340143d4-8a71-490d-823e-162b276f4c6d
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: be0c11509dc72baf8ab34cf2ef850fec352a9877
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 3493a70bd1257194f8c95a58eb6c2890d83ed418
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62428993"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72645808"
 ---
-# <a name="how-to-manage-editor-windows"></a>Como: Gerenciar janelas do editor
+# <a name="how-to-manage-editor-windows"></a>Como gerenciar janelas do editor
 
 Você pode trabalhar com o código em vários locais ao mesmo tempo. Faça isso dividindo uma janela do editor ou abrindo várias instâncias de janelas do editor.
 
@@ -56,6 +56,5 @@ Também é possível criar várias instâncias de uma janela do editor. Esse rec
 
 ## <a name="see-also"></a>Consulte também
 
-- [Personalizar o editor](../ide/customizing-the-editor.md)
 - [Recursos do Editor de Códigos](../ide/writing-code-in-the-code-and-text-editor.md)
 - [Personalizar layouts de janela](../ide/customizing-window-layouts-in-visual-studio.md)

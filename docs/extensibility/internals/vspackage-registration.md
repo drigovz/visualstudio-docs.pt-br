@@ -1,59 +1,59 @@
 ---
-title: O VSPackage | Microsoft Docs
+title: Registro de VSPackage | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - registration, VSPackages
 - VSPackages, registering
 ms.assetid: ecd20da8-b04b-4141-a8f4-a2ef91dd597a
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f9fc6bf6b096cfc5f961164abeb4703e2a18f1d2
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 44114ccdc4a0873887d48c3d191506f10cc3eaf3
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63429535"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72721995"
 ---
 # <a name="vspackage-registration"></a>Registro do VSPackage
-Os VSPackages deverá avisar [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] se eles estão instalados e devem ser carregado. Esse processo é realizado gravando informações no registro. Esse é um trabalho típico de um instalador.
+VSPackages deve aconselhar [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] que eles estão instalados e devem ser carregados. Esse processo é realizado com a gravação de informações no registro. Esse é um trabalho típico de um instalador.
 
 > [!NOTE]
-> É uma prática aceita durante o desenvolvimento de VSPackage para usar o auto-registro. No entanto, [!INCLUDE[vsipprvsip](../../extensibility/includes/vsipprvsip_md.md)] parceiros não é possível entregar seus produtos usando o auto-registro como parte da instalação.
+> É uma prática aceita durante o desenvolvimento do VSPackage para usar o auto-registro. No entanto, os parceiros [!INCLUDE[vsipprvsip](../../extensibility/includes/vsipprvsip_md.md)] não podem enviar seus produtos usando o auto-registro como parte da instalação.
 
- Entradas do registro em um pacote do Windows Installer geralmente são feitas na tabela de registro. Você também pode registrar as extensões de arquivo na tabela de registro. No entanto, o Windows Installer fornece suporte interno por meio do identificador programático (ProgId), classe, extensão e tabelas do verbo. Para obter mais informações, consulte [tabelas de banco de dados](/windows/desktop/Msi/database-tables).
+ As entradas de registro em um pacote de Windows Installer são geralmente feitas na tabela de registro. Você também pode registrar extensões de arquivo na tabela do registro. No entanto, o Windows Installer fornece suporte interno por meio do identificador programático (ProgId), classe, extensão e tabelas de verbos. Para obter mais informações, consulte [tabelas de banco de dados](/windows/desktop/Msi/database-tables).
 
- Certifique-se de que as entradas do registro estão associadas com o componente que é apropriado para sua estratégia de lado a lado escolhida. Por exemplo, entradas do registro para um arquivo compartilhado devem ser associadas com o componente do Windows Installer do arquivo. Da mesma forma, entradas do registro para um arquivo específico da versão devem ser associadas a componente desse arquivo. Caso contrário, instalar ou desinstalar o VSPackage para uma versão do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] poderia interromper o VSPackage em outras versões. Para obter mais informações, consulte [que dão suporte a várias versões do Visual Studio](../../extensibility/supporting-multiple-versions-of-visual-studio.md)
+ Verifique se as entradas do registro estão associadas ao componente apropriado para sua estratégia lado a lado escolhida. Por exemplo, as entradas do registro para um arquivo compartilhado devem ser associadas ao componente Windows Installer do arquivo. Da mesma forma, as entradas do registro para um arquivo específico da versão devem ser associadas ao componente desse arquivo. Caso contrário, instalar ou desinstalar seu VSPackage para uma versão do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] poderá interromper o VSPackage em outras versões. Para obter mais informações, consulte [dando suporte a várias versões do Visual Studio](../../extensibility/supporting-multiple-versions-of-visual-studio.md).
 
 > [!NOTE]
-> A maneira mais fácil de gerenciar o registro é usar os mesmos dados nos mesmos arquivos para o registro do desenvolvedor e o registro durante a instalação. Por exemplo, algumas ferramentas de desenvolvimento do instalador podem consumir o arquivo no formato. reg no momento da compilação. Se os desenvolvedores mantêm arquivos. reg para seu próprio desenvolvimento diário e depuração, esses mesmos arquivos podem ser incluídos no instalador automaticamente. Se você não pode compartilhar automaticamente dados de registro, você deve garantir que a cópia do instalador dos dados de registro é atual.
+> A maneira mais fácil de gerenciar o registro é usar os mesmos dados nos mesmos arquivos para o registro do desenvolvedor e o registro de tempo de instalação. Por exemplo, algumas ferramentas de desenvolvimento de instalador podem consumir arquivo no formato. reg no momento da compilação. Se os desenvolvedores mantiverem arquivos. reg para seu próprio desenvolvimento diário e depuração, esses mesmos arquivos poderão ser incluídos no instalador automaticamente. Se você não puder compartilhar automaticamente os dados de registro, deverá garantir que a cópia dos dados de registro do instalador seja atual.
 
-## <a name="registering-unmanaged-vspackages"></a>Registrar VSPackages gerenciados
- VSPackages gerenciados (incluindo aquelas geradas pelo modelo de pacote do Visual Studio) usar arquivos. rgs do estilo ATL para armazenar informações de registro. O formato de arquivo. rgs é específico para ATL e geralmente não pode ser consumido como-é uma ferramenta de criação de instalação. Informações de registro para o instalador de VSPackage devem ser mantidas separadamente. Por exemplo, os desenvolvedores podem manter arquivos no formato. reg em sincronia com. rgs alterações de arquivo. Os arquivos. reg podem ser mesclados com RegEdit para trabalhos de desenvolvimento ou consumidos através de um instalador.
+## <a name="registering-unmanaged-vspackages"></a>Registrando VSPackages não gerenciados
+ Os VSPackages não gerenciados (incluindo aqueles gerados pelo modelo de pacote do Visual Studio) usam arquivos. rgs estilo ATL para armazenar informações de registro. O formato de arquivo. rgs é específico da ATL e, em geral, não pode ser consumido como está por uma ferramenta de criação de instalação. As informações de registro para o instalador do VSPackage devem ser mantidas separadamente. Por exemplo, os desenvolvedores podem manter arquivos no formato. reg em sincronia com as alterações de arquivo. rgs. Os arquivos. reg podem ser mesclados com o RegEdit para trabalho de desenvolvimento ou consumidos por um instalador.
 
-## <a name="registering-managed-vspackages"></a>Registrar VSPackages gerenciados
- A ferramenta de RegPkg lê os atributos de registro de um VSPackage gerenciado e qualquer um pode gravar as informações diretamente para o registro ou arquivos de formato. reg de gravação podem ser consumidos por um instalador.
+## <a name="registering-managed-vspackages"></a>Registrando VSPackages gerenciados
+ A ferramenta RegPkg lê os atributos de registro de um VSPackage gerenciado e pode gravar as informações diretamente no registro ou gravar arquivos. reg-Format que podem ser consumidos por um instalador.
 
 > [!NOTE]
 > A ferramenta RegPkg não é redistribuível e não pode ser usada para registrar um VSPackage no sistema de um usuário.
 
-## <a name="why-vspackages-should-not-self-register-at-install-time"></a>Por que o VSPackages não deve registrar automaticamente no momento da instalação
- Os VSPackage instaladores não devem depender de auto-registro. À primeira vista, manter os valores de registro de um VSPackage apenas o VSPackage em si parece ser uma boa ideia. Considerando que os desenvolvedores precisam os valores de registro disponíveis para seu trabalho de rotina e testes, faz sentido para evitar a manter uma cópia separada dos dados do registro no instalador. O instalador pode depender de VSPackage para gravar valores do registro.
+## <a name="why-vspackages-should-not-self-register-at-install-time"></a>Por que VSPackages não deve se registrar automaticamente no momento da instalação
+ Os instaladores do VSPackage não devem confiar no auto-registro. À primeira vista, manter os valores de registro de um VSPackage apenas na VSPackage em si parece uma boa ideia. Considerando que os desenvolvedores precisam dos valores de registro disponíveis para seu trabalho e teste de rotina, faz sentido evitar a manutenção de uma cópia separada dos dados do registro no instalador. O instalador pode contar com o próprio VSPackage para gravar valores de registro.
 
- Embora seja ideal, em teoria, o auto-registro tem várias falhas que o tornam inadequados para a instalação de VSPackage:
+ Embora seja bom, o Autoregistro tem várias falhas que o tornam inadequado para a instalação do VSPackage:
 
-- Corretamente que dão suporte a instalação, desinstalação, reversão da instalação e reversão de desinstalação exige que você crie quatro ações personalizadas para cada VSPackage gerenciado que registra automaticamente chamando RegPkg.
+- Com suporte correto para instalação, desinstalação, reversão de instalação e reversão de desinstalação exige que você crie quatro ações personalizadas para cada VSPackage gerenciada que se registra automaticamente chamando RegPkg.
 
-- Sua abordagem para o suporte lado a lado pode exigir que você cria quatro ações personalizadas que invocam RegSvr32 ou RegPkg para todas as versões com suporte do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
+- Sua abordagem para suporte lado a lado pode exigir que você crie quatro ações personalizadas que invoquem RegSvr32 ou RegPkg para cada versão com suporte do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
 
-- Uma instalação com módulos automaticamente registrados não pode revertida com segurança porque não há nenhuma maneira de dizer se as chaves automaticamente registradas são usadas por outro recurso ou aplicativo.
+- Uma instalação com módulos autoregistrados não pode ser revertida com segurança porque não há nenhuma maneira de informar se as chaves autoregistradas são usadas por outro recurso ou aplicativo.
 
-- DLLs automaticamente registrados, às vezes, vincule a auxiliares DLLs que não estão presentes ou são a versão errada. Por outro lado, o Windows Installer pode registrar DLLs usando as tabelas de registro sem dependência no estado atual do sistema.
+- DLLs autoregistradas às vezes se vinculam a DLLs auxiliares que não estão presentes ou estão na versão errada. Por outro lado, Windows Installer pode registrar DLLs usando as tabelas do registro sem dependência no estado atual do sistema.
 
-- Código de auto-registro pode ser negado acesso a recursos de rede, como bibliotecas de tipos, se um componente for especificado como executado a partir da origem tanto está listado na tabela SelfReg. Isso pode causar a instalação do componente falha durante uma instalação administrativa.
+- O código de Autoregistro pode ter o acesso negado aos recursos de rede, como bibliotecas de tipos, se um componente for especificado como execução da fonte e estiver listado na tabela SelfReg. Isso pode fazer com que a instalação do componente falhe durante uma instalação administrativa.
 
 ## <a name="see-also"></a>Consulte também
 - [Windows Installer](/windows/desktop/Msi/windows-installer-portal)

@@ -11,12 +11,12 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 123f01b2e4545545a380f5a37adcdaf883bc9e91
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: b7fb1e057ffd9f3824fa1fe49e353fd54694da91
+ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974716"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72888682"
 ---
 # <a name="install-visual-studio-versions-side-by-side"></a>Instalar versões do Visual Studio lado a lado
 
@@ -44,7 +44,7 @@ Antes de instalar as versões lado a lado, revise as seguintes condições:
 
 * Se você desinstalar uma versão do Visual Studio em um computador que tem mais de uma versão instalada, as associações de arquivo do Visual Studio serão removidas para todas as versões.
 
-* O Visual Studio não atualiza automaticamente extensões porque nem todas as extensões são compatíveis. Você deverá reinstalar as extensões do [Visual Studio Marketplace](http://go.microsoft.com/fwlink/?LinkId=178891) ou do fornecedor de software.
+* O Visual Studio não atualiza automaticamente extensões porque nem todas as extensões são compatíveis. Você deverá reinstalar as extensões do [Visual Studio Marketplace](https://marketplace.visualstudio.com/) ou do fornecedor de software.
 
 ## <a name="net-framework-versions-and-side-by-side-installations"></a>Versões do .NET Framework e instalações lado a lado
 
@@ -61,7 +61,7 @@ Para informações específicas do idioma, consulte o tópico apropriado na tabe
 | Visual Basic | [Página de Aplicativo, Designer de Projeto (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md?view=vs-2017) |
 | Visual C# | [Página Aplicativo, Designer de Projeto (C#)](../ide/reference/application-page-project-designer-csharp.md?view=vs-2017) |
 | Visual F# | [Desenvolver com o Visual F# no Visual Studio](../ide/fsharp-visual-studio.md?view=vs-2017) |
-|C++ | [Como: Modificar a estrutura de destino e o conjunto de ferramentas da plataforma](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset/) |
+|C++ | [Como modificar a estrutura de destino e o conjunto de ferramentas de plataforma](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset/) |
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
@@ -80,7 +80,7 @@ Para informações específicas do idioma, consulte o tópico apropriado na tabe
 | Visual Basic | [Página de Aplicativo, Designer de Projeto (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md) |
 | Visual C# | [Página Aplicativo, Designer de Projeto (C#)](../ide/reference/application-page-project-designer-csharp.md) |
 | Visual F# | [Desenvolver com o Visual F# no Visual Studio](../ide/fsharp-visual-studio.md) |
-| C++ | [Como: Modificar a estrutura de destino e o conjunto de ferramentas da plataforma](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset/) |
+| C++ | [Como modificar a estrutura de destino e o conjunto de ferramentas de plataforma](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset/) |
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

@@ -13,12 +13,12 @@ ms.assetid: 15c38159-660a-4ef4-9643-aa6fcfca82a9
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 538de61fed22f4bcfcb38022b41a81d1239f5f4e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 22cbe4fc34ae41f89709d5b20f2c1188edcd0de3
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58924121"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685295"
 ---
 # <a name="commandtable-element"></a>Elemento CommandTable
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,7 +63,7 @@ CommandTable é o elemento raiz do arquivo. VSCT. Esse é o arquivo que define o
 |[Element VisibilityConstraints](../extensibility/visibilityconstraints-element.md)|Opcional. Determina a visibilidade estática de comandos e barras de ferramentas.|  
 |[Elemento KeyBindings](../extensibility/keybindings-element.md)|Opcional. Especifica as combinações de teclas de atalho, se houver, para os comandos.|  
 |[Elemento UsedCommands](../extensibility/usedcommands-element.md)|Opcional. Permite que um VSPackage, opcionalmente, implementar sua própria versão da funcionalidade de outros VSPackages originalmente com suporte.|  
-|[Elemento Symbols](http://msdn.microsoft.com/f2ddd0aa-c3dd-439e-834d-28f136a27ffa)|Opcional. Contém os dados de símbolo – GUIDs, IDs e assim por diante – para o compilador.|  
+|[Elemento Symbols](https://msdn.microsoft.com/f2ddd0aa-c3dd-439e-834d-28f136a27ffa)|Opcional. Contém os dados de símbolo – GUIDs, IDs e assim por diante – para o compilador.|  
   
 ### <a name="parent-elements"></a>Elementos pai  
   

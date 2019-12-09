@@ -10,12 +10,12 @@ ms.assetid: 09991589-2300-430e-b6a4-7f2b95fe676f
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: cdb6aabe2e7379c063e7347389deb467d724be3b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7e45d5f252deaf1788ae5093048ef8afb900fbe4
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58928573"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704071"
 ---
 # <a name="project-type-essentials"></a>Conceitos básicos do tipo de projeto
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -52,9 +52,9 @@ ms.locfileid: "58928573"
   
 - Para obter mais informações sobre os recursos de tipos de projeto, consulte o seguinte:  
   
-- Tipos de projeto são objetos em um VSPackage que implementam o conjunto de interfaces [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] espera. Se você estiver usando C# para desenvolver um tipo de projeto, as classes do projeto de estrutura de pacote gerenciado implementam as interfaces necessárias para você e permitem que você herdar dessa implementação. Para obter mais informações, consulte [usando a estrutura de pacote gerenciado para implementar um tipo de projeto (C#)](../../extensibility/internals/using-the-managed-package-framework-to-implement-a-project-type-csharp.md).  
+- Tipos de projeto são objetos em um VSPackage que implementam o conjunto de interfaces [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] espera. Se você estiver usando c# para desenvolver um tipo de projeto, as classes do projeto de estrutura de pacote gerenciado implementam as interfaces necessárias para você e permitem que você herdar dessa implementação. Para obter mais informações, consulte [usando a estrutura de pacote gerenciado para implementar um tipo de projeto (c#)](../../extensibility/internals/using-the-managed-package-framework-to-implement-a-project-type-csharp.md).  
   
-- Para desenvolvedores de C++, as classes na biblioteca HierUtil funcionam de maneira semelhante. Para obter mais informações, consulte [não está em compilação: Usando Classes do projeto HierUtil7 para implementar um tipo de projeto (C++)](http://msdn.microsoft.com/a5c16a09-94a2-46ef-87b5-35b815e2f346).  
+- Para desenvolvedores de C++, as classes na biblioteca HierUtil funcionam de maneira semelhante. Para obter mais informações, consulte [não está em compilação: Usando Classes do projeto HierUtil7 para implementar um tipo de projeto (C++)](https://msdn.microsoft.com/a5c16a09-94a2-46ef-87b5-35b815e2f346).  
   
 - Tipos de projeto podem dar suporte a dados que não sejam arquivos código-fonte típico que se baseiam em um assembly .exe ou. dll. Por exemplo, [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] projetos de banco de dados contêm referências a arquivos de script e de consulta armazenados em disco e adicionar comandos ao **Gerenciador de soluções** para executar os scripts e consultas em um banco de dados, mas os projetos não dão suporte a Crie o comportamento. Para obter mais informações, consulte [abrindo e salvando itens de projeto](../../extensibility/internals/opening-and-saving-project-items.md).  
   

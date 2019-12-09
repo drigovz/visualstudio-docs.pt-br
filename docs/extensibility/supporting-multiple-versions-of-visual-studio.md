@@ -6,17 +6,17 @@ helpviewer_keywords:
 - Visual Studio, supporting multiple versions
 - VSPackages, side-by-side compatibility
 ms.assetid: 0047aa90-1ed4-40d3-8772-622b2719a4b1
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 566407f4d15fdaedaf9a89eb50648e555a370750
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: f7212445cd507a0d7d185bbd73fa2292e5b783f4
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434532"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745998"
 ---
 # <a name="supporting-multiple-versions-of-visual-studio"></a>Suporte a várias versões do Visual Studio
 O termo *side-by-side* significa que você pode instalar e manter várias versões de um produto no mesmo computador. VSPackages, isso significa que um usuário pode ter várias versões do Visual Studio instaladas no mesmo computador. No entanto, você não pode ter versões lado a lado de seu VSPackages carregados em uma única versão do Visual Studio.
@@ -36,7 +36,7 @@ O termo *side-by-side* significa que você pode instalar e manter várias versõ
    Para obter mais informações, consulte [instalando VSPackages com o Windows Installer](../extensibility/internals/installing-vspackages-with-windows-installer.md) e também [gerenciamento de componente](../extensibility/internals/component-management.md).
 
   > [!NOTE]
-  > Instalar uma versão do Visual Studio também instala uma versão correspondente do [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. Por exemplo, instalar o Visual Studio 2010 e o Visual Studio 2012 no mesmo computador também instala versões 4.0 e 4.5 do [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], respectivamente.
+  > Também instalar uma versão do Visual Studio instala uma versão correspondente do .NET Framework. Por exemplo, instalar o Visual Studio 2010 e o Visual Studio 2012 no mesmo computador também instala as versões 4.0 e 4.5 do .NET Framework, respectivamente.
 
 ## <a name="in-this-section"></a>Nesta seção
 - [Escolhendo entre compartilhados e com controle de versão VSPackages](../extensibility/choosing-between-shared-and-versioned-vspackages.md) explica como resolver problemas de lado a lado em seu VSPackage.

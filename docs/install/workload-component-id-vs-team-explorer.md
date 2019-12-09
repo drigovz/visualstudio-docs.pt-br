@@ -6,7 +6,7 @@ keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 03/01/2019
+ms.date: 12/03/2019
 ms.topic: reference
 helpviewer_keywords:
 - workload ID, Visual Studio
@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: c6ef9a3b-d13d-49b4-9faa-51fa06b21e1f
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 827933b3e42ad6b66a7d04eb5b091edb85c199b8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: a7667c5ad4a1b6de7427d00ef6a9591dc84c04f3
+ms.sourcegitcommit: af9bbf9116a63c0631ff2f4f3a878564aa63cd8c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62962360"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "74797317"
 ---
 # <a name="visual-studio-team-explorer-component-directory"></a>Diretório de componentes do Team Explorer para Visual Studio
 

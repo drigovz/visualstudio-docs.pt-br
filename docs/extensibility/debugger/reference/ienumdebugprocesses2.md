@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugProcesses2
 ms.assetid: 06a1368f-10f0-44eb-af61-e388c2327111
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d3f76746c29bff7dce76c2eda97fbd1287e5906a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0b32d2469c42931fa3dead4c5078e7d5b44b5d60
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62914264"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66334932"
 ---
 # <a name="ienumdebugprocesses2"></a>IEnumDebugProcesses2
 Essa interface enumera os processos em execução em uma porta de depuração.

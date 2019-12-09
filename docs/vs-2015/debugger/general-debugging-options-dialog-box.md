@@ -1,5 +1,5 @@
 ---
-title: Geral, depuração, caixa de diálogo de opções | Microsoft Docs
+title: Caixa de diálogo geral, depuração, opções | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -22,17 +22,17 @@ caps.latest.revision: 50
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cf4a3b699d3854ef2a502fb1bf1d7fb2d6204acb
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 6c53af4a8e0f42708ab94d7206a9c0cc54819798
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446484"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573547"
 ---
 # <a name="general-debugging-options-dialog-box"></a>Caixa de diálogo Geral, Depuração, Opções
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-O**Ferramentas / opções / depuração / geral** página permite que você defina as seguintes opções:  
+A página**ferramentas/opções/depuração/geral** permite definir as seguintes opções:  
   
  **Perguntar antes de excluir todos os pontos de interrupção**  
  Requer a confirmação antes de concluir o comando de **Excluir todos os pontos de interrupção**.  
@@ -40,149 +40,149 @@ O**Ferramentas / opções / depuração / geral** página permite que você defi
  **Interromper todos os processos quando um processo for interrompido**  
  Interrompe simultaneamente todos os processos ao qual o depurador é anexado, quando ocorre uma interrupção.  
   
- **Interromper quando exceções cruzarem AppDomain ou limites gerenciados/nativos**  
+ **Quebra quando as exceções cruzam AppDomain ou limites gerenciados/nativos**  
  Na depuração gerenciada ou de modo misto, o common language runtime pode capturar exceções que cruzem limites de domínio de aplicativo ou domínios gerenciados/nativos quando as seguintes condições forem verdadeiras:  
   
- 1\) quando o código nativo chama código gerenciado usando interoperabilidade COM e o código gerenciado gera uma exceção. Ver [Introdução à interoperabilidade COM](http://msdn.microsoft.com/library/8bd62e68-383d-407f-998b-29aa0ce0fd67).  
+ 1 \) quando o código nativo chama o código gerenciado usando a interoperabilidade COM e o código gerenciado gera uma exceção. Consulte [introdução à interoperabilidade com](https://msdn.microsoft.com/library/8bd62e68-383d-407f-998b-29aa0ce0fd67).  
   
- 2\) quando o código gerenciado em execução no domínio do aplicativo 1 chama o código gerenciado no domínio do aplicativo 2, e o código no domínio do aplicativo 2 gera uma exceção. Ver [programação com domínios do aplicativo](http://msdn.microsoft.com/bd36055b-56bd-43eb-b4d8-820c37172131).  
+ 2 \) quando o código gerenciado em execução no domínio do aplicativo 1 chama o código gerenciado no domínio 2 do aplicativo e o código no aplicativo domínio 2 gera uma exceção. Consulte [programação com domínios de aplicativo](https://msdn.microsoft.com/bd36055b-56bd-43eb-b4d8-820c37172131).  
   
- 3\) quando o código chama uma função por meio de reflexão e a função gerará uma exceção. Ver [reflexão](http://msdn.microsoft.com/library/d1a58e7f-fb39-4d50-bf84-e3b8f9bf9775).  
+ 3 \) quando o código chama uma função usando reflexão, e a função gera uma exceção. Consulte [reflexão](https://msdn.microsoft.com/library/d1a58e7f-fb39-4d50-bf84-e3b8f9bf9775).  
   
  Em 2) e 3), a exceção é às vezes detectada pelo código gerenciado em `mscorlib` em vez do common language runtime. Esta opção não afeta a quebra em exceções capturadas por `mscorlib`.  
   
- **Habilitar depuração no nível do endereço**  
+ **Habilitar depuração no nível de endereço**  
  Habilita recursos avançados para depurar a nível de endereço (a janela **Desmontagem**, a janela **Registros** e pontos de interrupção de endereço).  
   
- **Mostrar desmontagem se a fonte não está disponível**  
- Mostra automaticamente a **desmontagem** janela quando você tenta depurar o código para o qual fonte não está disponível.  
+ **Mostrar desmontagem se a origem não estiver disponível**  
+ Mostra automaticamente a janela de **desmontagem** quando você tenta Depurar o código para o qual a origem está indisponível.  
   
  **Habilitar filtros de ponto de interrupção**  
- Permite que você defina filtros em pontos de interrupção de modo que eles afetem somente processos, threads ou computadores específicos.  
+ Permite que você defina filtros em pontos de interrupção para que eles afetem apenas processos, threads ou computadores específicos.  
   
- **Habilitar o Assistente de exceção**  
- Somente para código gerenciado. Gerenciado exceções abrir a caixa de diálogo do Assistente de exceção.  Ver [Assistente de exceção](http://msdn.microsoft.com/library/992892ac-9d52-44cc-bf09-b44bfc5befeb).  
+ **Habilitar o assistente de exceção**  
+ Somente para código gerenciado. Exceções gerenciadas Abra a caixa de diálogo Assistente de exceção.  Consulte [Assistente de exceção](https://msdn.microsoft.com/library/992892ac-9d52-44cc-bf09-b44bfc5befeb).  
   
- **Desenrolar a pilha de chamadas em exceções não tratadas**  
+ **Desenrolar a pilha de chamadas em exceções sem tratamento**  
  Faz com que a janela **Pilha de Chamadas** reverta a pilha de chamadas ao ponto antes que a exceção sem tratamento ocorreu.  
   
  **Habilitar Apenas Meu Código**  
- O depurador exibe e as etapas no código do usuário ("meu código"), ignorando o código de sistema e outro código que é otimizado ou que não tem símbolos de depuração.  
+ O depurador exibe e percorre as etapas do código do usuário ("meu código") apenas, ignorando o código do sistema e outro código que é otimizado ou que não tem símbolos de depuração.  
   
- **Mostrar todos os membros dos objetos não usuário nas janelas de variáveis (somente Visual Basic)**  
+ **Mostrar todos os membros de objetos que não são de usuário em janelas de variáveis (somente Visual Basic)**  
  Ativa a exibição de membros não-públicos em objetos que são de código não usuário (não "My Code").  
   
- **Avisar se não houver código de usuário na inicialização**  
+ **Avisar se não houver nenhum código de usuário na inicialização**  
  Quando a depuração começa com o Just My Code ativado, esta opção advertirá você se não houver nenhum código de usuário ("My Code").  
   
- **Habilitar o .NET Framework depuração da origem**  
- Permite que o depurador entre na fonte do .NET Framework. Habilitar esta opção desativa automaticamente Apenas Meus Código dos símbolos do .NET Framework que serão baixados em um local do cache. Você pode alterar o local do cache na **opções** caixa de diálogo **depuração** categoria, **símbolos** página.  
+ **Habilitar a depuração de origem .NET Framework**  
+ Permite que o depurador entre na fonte do .NET Framework. Habilitar esta opção desativa automaticamente Apenas Meus Código dos símbolos do .NET Framework que serão baixados em um local do cache. Você pode alterar o local do cache na caixa de diálogo **Opções** , categoria **depuração** , página **símbolos** .  
   
- **Depurar propriedades e operadores (somente gerenciados)**  
+ **Percorrer Propriedades e operadores (somente gerenciado)**  
  Impede que o depurador entre em propriedades e operadores no código gerenciado.  
   
  **Habilitar a avaliação de propriedade e outras chamadas de função implícitas**  
  Ativa a classificação automática da propriedades e as chamadas de função implícitas nas janelas de variáveis e na caixa de diálogo **QuickWatch**.  
   
- **Chamar a função de conversão de cadeia de caracteres em objetos nas janelas de variáveis (c# e JavaScript apenas)**  
+ **Chamar função de conversão de cadeia de caracteres em objetosC# em janelas de variáveis (e somente JavaScript)**  
  Executa uma chamada de conversão de cadeia de caracteres implícita ao avaliar objetos em janelas de variáveis. Portanto, o resultado é exibido como uma cadeia de caracteres em vez do nome do tipo. Aplica-se somente à depuração no código em C. Essa configuração pode ser substituída pelo atributo DebuggerDisplay (consulte [usando o atributo DebuggerDisplay](../debugger/using-the-debuggerdisplay-attribute.md)).  
   
  **Habilitar suporte a servidor de origem**  
- Informe ao depurador do Visual Studio para obter os arquivos de origem dos servidores de origem que implementam o protocolo de SrcSrv (`srcsrv.dll`). O Team Foundation Server e as Ferramentas de Depuração para o Windows são dois servidores de origem que implementam o protocolo. Para obter mais informações sobre a configuração de SrcSrv, consulte a documentação Ferramentas de depuração para o Windows. Além disso, consulte [especificar arquivos de símbolo (. PDB) e código-fonte](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).  
+ Informe ao depurador do Visual Studio para obter os arquivos de origem dos servidores de origem que implementam o protocolo de SrcSrv (`srcsrv.dll`). O Team Foundation Server e as Ferramentas de Depuração para o Windows são dois servidores de origem que implementam o protocolo. Para obter mais informações sobre a configuração de SrcSrv, consulte a documentação Ferramentas de depuração para o Windows. Além disso, consulte [especificar símbolo (. pdb) e arquivos de origem](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).  
   
 > [!IMPORTANT]
 > Como ler arquivos .pdb pode executar o código arbitrário em arquivos, certifique-se de que você confia no servidor.  
   
- **Imprimir mensagens de diagnóstico de servidor de origem para a janela de saída**  
+ **Imprimir mensagens de diagnóstico do servidor de origem na janela de saída**  
  Quando o suporte do servidor de origem é ativado, esta configuração ativa ao diagnóstico.  
   
- **Permitir que o servidor de origem para os assemblies de confiança parcial (somente gerenciado)**  
+ **Permitir servidor de origem para assemblies de confiança parcial (somente gerenciado)**  
  Quando o suporte do servidor de origem é ativado, esta configuração substitui o comportamento padrão de não recuperar as fontes dos assemblies de confiança parcial.  
   
- **Realçar a linha inteira para pontos de interrupção e a instrução atual**  
+ **Realçar toda a linha para pontos de interrupção e a instrução atual**  
  Quando o depurador realça um ponto de interrupção ou uma declaração atual, realça a linha inteira.  
   
- **Exigir arquivos de origem correspondam exatamente à versão original**  
+ **Exigir que os arquivos de origem correspondam exatamente à versão original**  
  Informe ao depurador para verificar se um arquivo fonte corresponde à versão do código-fonte usado para criar o arquivo executável que você está depurando. Se a versão não corresponde, será solicitado que você localize uma origem correspondente. Se uma fonte compatível não for encontrada, o código-fonte não será exibido durante a depuração.  
   
- **Redirecionar todo o texto da janela Saída para a janela imediata**  
+ **Redirecionar todo o texto da janela de saída para a janela imediata**  
  Em vez disso, envia todas as mensagens do depurador que normalmente apareceriam na janela **Saída** para a janela **Imediato**.  
   
- **Mostrar estrutura bruta de objetos nas janelas de variáveis**  
- Desative todas as personalizações de exibição da estrutura do objeto. Para obter mais informações sobre personalizações de exibição, consulte [criar exibições personalizadas de objetos gerenciados](../debugger/create-custom-views-of-dot-managed-objects.md).  
+ **Mostrar estrutura bruta de objetos em janelas de variáveis**  
+ Desative todas as personalizações de exibição da estrutura do objeto. Para obter mais informações sobre as personalizações de exibição, consulte [criar exibições personalizadas de objetos gerenciados](../debugger/create-custom-views-of-managed-objects.md).  
   
- **Suprimir Otimização JIT no carregamento do módulo (somente gerenciado)**  
+ **Suprimir a otimização JIT na carga do módulo (somente gerenciado)**  
  Desativa a otimização JIT de código gerenciado quando um módulo é carregado e JIT é compilado enquanto o depurador é anexado. Desativar a otimização pode facilitar a depuração de alguns problemas, embora às custas de desempenho. Se você estiver usando Apenas Meu Código, a supressão da otimização de JIT poderá fazer com que código que não seja do usuário apareça como código do usuário ("Meu Código").  
   
- **Avisar se não houver símbolos na inicialização (somente nativo)**  
- Exibe uma caixa de diálogo de aviso quando você tenta depurar um programa para o qual o depurador não tem nenhuma informação de símbolo.  
+ **Avisar se nenhum símbolo for iniciado (somente nativo)**  
+ Exibe uma caixa de diálogo de aviso quando você tenta Depurar um programa para o qual o depurador não tem informações de símbolo.  
   
  **Avisar se a depuração de script estiver desabilitada na inicialização**  
  Exibe uma caixa de diálogo de aviso quando o depurador é iniciado com a depuração de script desabilitada.  
   
  **Carregar exportações de dll**  
- Carrega as tabelas de exportação de dll. Informações de símbolos das tabelas de exportação de dll podem ser úteis se você estiver trabalhando com mensagens do Windows, procedimentos do Windows (WindowProcs), objetos COM, ou marshaling, ou qualquer dll para a qual você não tem símbolos. A leitura das informações de exportação de dll gera certa sobrecarga. Desse modo, esse recurso é desativado por padrão.  
+ Carrega tabelas de exportação de dll. Informações de símbolos das tabelas de exportação de dll podem ser úteis se você estiver trabalhando com mensagens do Windows, procedimentos do Windows (WindowProcs), objetos COM, ou marshaling, ou qualquer dll para a qual você não tem símbolos. A leitura das informações de exportação de dll gera certa sobrecarga. Desse modo, esse recurso é desativado por padrão.  
   
- Para ver quais símbolos estão disponíveis na tabela de exportação de uma dll, use `dumpbin /exports`. Os símbolos estão disponíveis para qualquer dll de 32 bits do sistema. Ao ler a saída `dumpbin /exports`, você pode ver o nome exato da função, incluindo caracteres não alfanuméricos. Isso é útil para definir um ponto de interrupção em uma função. Os nomes de função de tabelas de exportação de dll podem aparecer truncados em qualquer outro lugar no depurador. As chamadas são listadas na ordem de chamada, com a função atual (a mais profundamente aninhada) na parte superior. Para obter mais informações, confira [dumpbin /exports](http://msdn.microsoft.com/library/2971ab7e-4ee6-478b-9c85-cda42a4ce1bf).  
+ Para ver quais símbolos estão disponíveis na tabela de exportação de uma dll, use `dumpbin /exports`. Os símbolos estão disponíveis para qualquer dll de 32 bits do sistema. Ao ler a saída `dumpbin /exports`, você pode ver o nome exato da função, incluindo caracteres não alfanuméricos. Isso é útil para definir um ponto de interrupção em uma função. Os nomes de função de tabelas de exportação de dll podem aparecer truncados em qualquer outro lugar no depurador. As chamadas são listadas na ordem de chamada, com a função atual (a mais profundamente aninhada) na parte superior. Para obter mais informações, consulte [dump bin/Exports](https://msdn.microsoft.com/library/2971ab7e-4ee6-478b-9c85-cda42a4ce1bf).  
   
- **Mostrar diagrama de pilhas paralelas baixo para cima**  
+ **Mostrar diagrama de pilhas paralelas de baixo para cima**  
  Controla a direção em que as pilhas são exibidas na janela **Pilhas Paralelas**.  
   
- **Ignorar as exceções de acesso de memória GPU, se os dados gravados não tiver alterado o valor**  
- Ignora as condições de corrida detectadas durante a depuração caso os dados não tenham sido alterados. Para obter mais informações, consulte [depurando código de GPU](../debugger/debugging-gpu-code.md).  
+ **Ignorar exceções de acesso à memória GPU se os dados gravados não alteraram o valor**  
+ Ignora as condições de corrida detectadas durante a depuração caso os dados não tenham sido alterados. Para obter mais informações, consulte [depuração de código de GPU](../debugger/debugging-gpu-code.md).  
   
- **Use o modo de compatibilidade gerenciado**  
+ **Usar modo de compatibilidade gerenciado**  
  Substitui o mecanismo de depuração padrão com uma versão herdada para habilitar estes cenários:  
   
 - Você está usando uma linguagem .NET Framework diferente de C#, VB ou F#, que fornece seu próprio Avaliador de Expressão (incluindo C++/CLI).  
   
-- Você deseja habilitar editar e continuar para projetos do C++ durante a depuração de modo misto.  
+- Você deseja habilitar editar e continuar para projetos C++ enquanto a depuração de modo misto.  
   
   Observe que escolher o modo Compatibilidade gerenciada desativa alguns recursos que são implementados somente no mecanismo de depuração padrão.  
   
-  **Use o modo de compatibilidade nativa**  
-  Quando essa opção é selecionada, o depurador usa o depurador nativo do Visual Studio 2010, em vez do novo depurador nativo.  
+  **Usar o modo de compatibilidade nativo**  
+  Quando essa opção é selecionada, o depurador usa o depurador nativo do Visual Studio 2010 em vez do novo depurador nativo.  
   
-  Você deve usar essa opção quando você estiver depurando o código C++ .NET, pois o novo mecanismo de depuração não dá suporte a expressões de avaliação C++ .NET. No entanto, a habilitação do modo de compatibilidade nativa desabilita muitos recursos que dependem da implementação atual do depurador para operar. Por exemplo, o mecanismo herdado não tem muitos visualizadores para tipos internos, como `std::string` em projetos do Visual Studio 2015.   Use projetos do Visual Studio 2013 para a melhor experiência de depuração nesses casos.  
+  Você deve usar essa opção quando estiver Depurando C++ o código .net, porque o novo mecanismo de depuração não oferece C++ suporte à avaliação de expressões .net. No entanto, habilitar o modo de compatibilidade nativa desabilita muitos recursos que dependem da implementação do depurador atual para operar. Por exemplo, o mecanismo herdado não tem muitos visualizadores para tipos internos como `std::string` em projetos do Visual Studio 2015.  Use Visual Studio 2013 projetos para a experiência de depuração ideal nesses casos.  
   
-  **Use os avaliadores de expressão c# e VB herdados**  
-  O depurador usará os avaliadores de expressão do Visual Studio 2013 C# /VB em vez dos avaliadores de expressão baseada em Roslyn de 2015 do Visual Studio.  
+  **Usar os avaliadores de expressão herdados C# e VB**  
+  O depurador usará os Visual Studio 2013 C#avaliadores de expressão/VB em vez dos avaliadores de expressão baseados em Roslyn do Visual Studio 2015.  
   
-  **Avisar ao usar os visualizadores do depurador personalizados contra processos potencialmente inseguros (somente gerenciado)**  
-  Visual Studio avisa você quando você estiver usando um visualizador de depurador personalizada que está executando o código do processo de depuração, porque ele pode estar executando o código não seguro.  
+  **Avisar ao usar visualizadores de depurador personalizados contra processos potencialmente não seguros (somente gerenciados)**  
+  O Visual Studio avisa quando você está usando um visualizador de depurador personalizado que está executando código no processo de depuração, pois ele poderia estar executando código não seguro.  
   
-  **Habilitar alocador de heap de depuração do Windows (somente nativo)**  
-  Permite que o heap de depuração do windows melhorar o diagnóstico de heap. Habilitar essa opção afetará o desempenho de depuração.  
+  **Habilitar o alocador de heap de depuração do Windows (somente nativo)**  
+  Habilita o heap de depuração do Windows para melhorar o diagnóstico de heap. Habilitar essa opção afetará o desempenho da depuração.  
   
-  **Habilitar ferramentas de depuração para XAML**  
-  A Live Visual Tree e os windows Live propriedade explorar aparecerá quando você iniciar a depuração (F5) um tipo de projeto com suporte. Para obter mais informações, consulte [propriedades de XAML de inspecionar durante a depuração](../debugger/inspect-xaml-properties-while-debugging.md).  
+  **Habilitar ferramentas de depuração de interface do usuário para XAML**  
+  A árvore visual ao vivo e a propriedade Live Explore o Windows aparecerão quando você iniciar a depuração (F5) de um tipo de projeto com suporte. Para obter mais informações, consulte [inspecionar propriedades XAML durante a depuração](../debugger/inspect-xaml-properties-while-debugging.md).  
   
-  **Visualizar os elementos selecionados na árvore Visual dinâmica**  
-  O elemento XAML cujo contexto é selecionado também está selecionado na **Live Visual Tree** janela.  
+  **Visualizar elementos selecionados na árvore visual dinâmica**  
+  O elemento XAML cujo contexto está selecionado também é selecionado na janela da **árvore visual ao vivo** .  
   
   **Mostrar ferramentas de tempo de execução no aplicativo**  
-  Mostra a **Live Visual Tree** comandos em uma barra de ferramentas na janela principal do aplicativo XAML que está sendo depurado. Essa opção foi introduzida no Visual Studio 2015 atualização 2.  
+  Mostra os comandos de **árvore visual ao vivo** em uma barra de ferramentas na janela principal do aplicativo XAML que está sendo depurado. Essa opção foi introduzida no Visual Studio 2015 atualização 2.  
   
-  **Habilitar ferramentas de diagnóstico durante a depuração**  
-  O **ferramentas de diagnóstico** janela é exibida enquanto você está depurando. Para obter mais informações, consulte [integradas ao depurador de criação de perfil](http://msdn.microsoft.com/library/a1f40370-7b61-42c2-afc4-0e13eba98859).  
+  **Habilitar Ferramentas de Diagnóstico durante a depuração**  
+  A janela de **ferramentas de diagnóstico** aparece enquanto você está depurando. Para obter mais informações, consulte [criação de perfil integrada ao depurador](/visualstudio/profiling/running-profiling-tools-with-or-without-the-debugger).  
   
-  **Mostrar tempo decorrido PerfTip durante a depuração**  
-  A janela de código exibe o tempo decorrido de uma chamada de método fornecido quando você estiver depurando.  
+  **Mostrar tempo decorrido dica durante a depuração**  
+  A janela de código exibe o tempo decorrido de uma determinada chamada de método quando você está depurando.  
   
-  **Habilitar Editar e continuar**  
-  Você pode usar o editar e continuar a funcionalidade durante a depuração.  
+  **Habilitar editar e continuar**  
+  Você pode usar a funcionalidade Editar e continuar durante a depuração.  
   
-  **Habilitar nativo editar e continuar**  
-  Você pode usar o editar e continuar a funcionalidade durante a depuração de código C++ nativo. Para obter mais informações, consulte [editar e continuar (Visual C++)](../debugger/edit-and-continue-visual-cpp.md).  
+  **Habilitar editar e continuar nativo**  
+  Você pode usar a funcionalidade Editar e continuar durante a depuração C++ de código nativo. Para obter mais informações, consulte [Editar e continuar ( C++Visual)](../debugger/edit-and-continue-visual-cpp.md).  
   
   **Aplicar alterações ao continuar (somente nativo)**  
-  Visual Studio automaticamente compila e aplica as alterações de código pendentes feitas ao continuar o processo de um estado de interrupção. Se não estiver selecionada, você pode optar por aplicar alterações usando o item de "Aplicar alterações de código" no menu Depurar.  
+  O Visual Studio compila e aplica automaticamente qualquer alteração de código pendente que você tenha feito ao continuar o processo de um estado de interrupção. Se não estiver selecionado, você poderá optar por aplicar as alterações usando o item "aplicar alterações de código" no menu Depurar.  
   
   **Avisar sobre código obsoleto (somente nativo)**  
   Obter avisos sobre código obsoleto.  
   
   **Permitir pré-compilação (somente nativo)**  
-  Pré-compilação é permitida.  
+  A pré-compilação é permitida.  
   
 ## <a name="see-also"></a>Consulte também  
  [Depurando no Visual Studio](../debugger/debugging-in-visual-studio.md)

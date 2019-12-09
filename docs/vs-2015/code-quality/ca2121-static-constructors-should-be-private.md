@@ -1,5 +1,5 @@
 ---
-title: 'CA2121: Construtores estáticos devem ser privados | Microsoft Docs'
+title: 'CA2121: construtores estáticos devem ser privados | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,17 +12,17 @@ helpviewer_keywords:
 - StaticConstructorsShouldBePrivate
 ms.assetid: ee93c620-8fc1-4e47-866c-d389c3ca9f2e
 caps.latest.revision: 18
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: d7894b4ec0039b28a579239605c22c2397c300f3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 9f28c1dadaef2dc88a3d728322dee1053ccdd69c
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58922655"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72663073"
 ---
-# <a name="ca2121-static-constructors-should-be-private"></a>CA2121: Construtores estáticos devem ser particulares
+# <a name="ca2121-static-constructors-should-be-private"></a>CA2121: os construtores estáticos devem ser privados
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -36,18 +36,18 @@ ms.locfileid: "58922655"
  Um tipo tem um construtor estático que não é privado.
 
 ## <a name="rule-description"></a>Descrição da Regra
- Um construtor estático, também conhecido como um construtor de classe é usado para inicializar um tipo. O sistema chama o construtor estático antes que a primeira instância do tipo seja criada ou que outros membros estáticos sejam referenciados. O usuário não tem controle sobre quando o construtor estático é chamado. Se não for privado, um construtor estático poderá ser chamado por um código diferente do sistema. Dependendo das operações realizadas no construtor, isso pode causar um comportamento inesperado.
+ Um construtor estático, também conhecido como Construtor de classe, é usado para inicializar um tipo. O sistema chama o construtor estático antes que a primeira instância do tipo seja criada ou que outros membros estáticos sejam referenciados. O usuário não tem controle sobre quando o construtor estático é chamado. Se não for privado, um construtor estático poderá ser chamado por um código diferente do sistema. Dependendo das operações realizadas no construtor, isso pode causar um comportamento inesperado.
 
- Essa regra é imposta pelos compiladores C# e Visual Basic .NET.
+ Essa regra é imposta pelos compiladores C# e Visual Basic .net.
 
 ## <a name="how-to-fix-violations"></a>Como Corrigir Violações
- Violações normalmente são causadas por uma das seguintes ações:
+ As violações geralmente são causadas por uma das seguintes ações:
 
-- Definido um construtor estático para o seu tipo e não faz privada.
+- Você definiu um construtor estático para seu tipo e não o tornaria privado.
 
-- O compilador de linguagem de programação adicionado um construtor estático padrão para seu tipo e não faz privada.
+- O compilador da linguagem de programação adicionou um construtor estático padrão ao seu tipo e não o torna particular.
 
-  Para corrigir o primeiro tipo de violação, faça seu construtor estático privado. Para corrigir o segundo tipo, adicione um construtor estático privado para seu tipo.
+  Para corrigir o primeiro tipo de violação, torne seu construtor estático privado. Para corrigir o segundo tipo, adicione um construtor estático privado ao seu tipo.
 
 ## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos
- Não suprima essas violações. Se o projeto de software requer uma chamada explícita para um construtor estático, é provável que o design contém falha grave e deve ser revisado.
+ Não suprime essas violações. Se o design de seu software exigir uma chamada explícita para um construtor estático, é provável que o design contenha falhas graves e seja revisado.

@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptErrorDebug::GetStackFrame | Microsoft Docs
+title: 'IActiveScriptErrorDebug:: GetStackFrame | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: aecda7be418f2a89fb39bc1d754c8e94cf1130bd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8542f83f926ba1a993527baecd6d5b667671b041
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62954935"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576317"
 ---
 # <a name="iactivescripterrordebuggetstackframe"></a>IActiveScriptErrorDebug::GetStackFrame
-Fornece o registro de ativação está em vigor para erros de tempo de execução.  
+Fornece o quadro de pilha que está em vigor para erros de tempo de execução.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -37,9 +37,9 @@ HRESULT GetStackFrame(
   
 #### <a name="parameters"></a>Parâmetros  
  `ppdsf`  
- [out] O quadro de pilha para o erro.  
+ fora O registro de ativação do erro.  
   
-## <a name="return-value"></a>Valor de retorno  
+## <a name="return-value"></a>Valor retornado  
  O método retorna um `HRESULT`. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.  
   
 |Valor|Descrição|  
@@ -47,7 +47,7 @@ HRESULT GetStackFrame(
 |`S_OK`|O método foi bem-sucedido.|  
   
 ## <a name="remarks"></a>Comentários  
- Esse método fornece o registro de ativação está em vigor para erros de tempo de execução.  
+ Esse método fornece o quadro de pilha que está em vigor para erros de tempo de execução.  
   
 ## <a name="see-also"></a>Consulte também  
  [IActiveScriptErrorDebug Interface](../../winscript/reference/iactivescripterrordebug-interface.md)

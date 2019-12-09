@@ -8,14 +8,15 @@ ms.assetid: 859b02d2-eddf-4ad3-95de-0df67ee2ab03
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 572400794af73ed70503ce39327d678c5ffa195a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 1dfcdf67c897c0c1565e536a69cc940b9df83390
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63000623"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778590"
 ---
 # <a name="lines-view---contention-data"></a>Exibição de Linhas – dados de contenção
 A exibição de Linhas de dados de contenção lista os dados de desempenho das instruções que estavam em execução quando as amostras foram coletadas na criação de perfil. Em um arquivo de origem, uma instrução pode abranger mais de uma linha em um arquivo de origem, e uma única linha pode incluir mais de uma instrução.
@@ -50,7 +51,7 @@ A exibição de Linhas de dados de contenção lista os dados de desempenho das 
 |**% de Tempo Bloqueado Inclusivo**|O percentual de todo o tempo bloqueado no processo de tempo bloqueado inclusivo da instrução.|
 |**Contenções Inclusivas**|O número de vezes que a execução da instrução e das funções que foram chamadas nela foi impedida.|
 |**% de Contenções Inclusivas**|O percentual de todos os eventos de contenção no processo que eram contenções inclusivas da instrução.|
-|**Nome da Linha**|Um identificador gerado pelo criador de perfil da linha. O identificador usa a seguinte sintaxe:`SourceFile`**;[**`LineNumberStart`**,**`CharacterStart`**]->;[**`LineNumberEnd`**,**`CharacterEnd`**]**|
+|**Nome da Linha**|Um identificador gerado pelo criador de perfil da linha. O identificador usa a seguinte sintaxe:`SourceFile` **;[** `LineNumberStart` **,** `CharacterStart` **]->;[** `LineNumberEnd` **,** `CharacterEnd` **]**|
 |**Número de linha da função**|O número de linha do início dessa função no arquivo de origem.|
 |**Nome do Módulo**|O nome do módulo que contém a instrução.|
 |**Caminho do Módulo**|O caminho do módulo que contém a instrução.|
@@ -63,7 +64,7 @@ A exibição de Linhas de dados de contenção lista os dados de desempenho das 
 |**Final da Linha de Origem**|O número da linha no arquivo de origem na qual a instrução termina.|
 
 ## <a name="see-also"></a>Consulte também
-- [Como: Personalizar as colunas da Exibição de Relatório](../profiling/how-to-customize-report-view-columns.md)
+- [Como: Personalizar colunas de exibição de relatório](../profiling/how-to-customize-report-view-columns.md)
 - [Exibição de Linhas](../profiling/lines-view.md)
 - [Exibição de linhas – amostragem](../profiling/lines-view-dotnet-memory-sampling-data.md)
 - [Exibição de Linhas](../profiling/lines-view-sampling-data.md)

@@ -1,5 +1,5 @@
 ---
-title: IActiveScript::GetScriptDispatch | Microsoft Docs
+title: 'IActiveScript:: GetScriptDispatch | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c329a4dbf42461369441b86f6d9ba18992916366
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ba53f2eccde18bd5b2d9c609ea680b50cb7261c9
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62935591"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575757"
 ---
 # <a name="iactivescriptgetscriptdispatch"></a>IActiveScript::GetScriptDispatch
-Recupera o `IDispatch` interface para os métodos e propriedades associadas com o script em execução no momento.  
+Recupera a interface `IDispatch` para os métodos e propriedades associados ao script em execução no momento.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -38,24 +38,24 @@ HRESULT GetScriptDispatch(
   
 #### <a name="parameters"></a>Parâmetros  
  `pstrItemName`  
- [in] Endereço de um buffer que contém o nome do item para o qual o chamador precisa de objeto de expedição associado. Se esse parâmetro for `NULL`, o objeto de expedição contém como seus membros de todas as propriedades e métodos globais definidas pelo script. Por meio de `IDispatch` interface e os respectivos `ITypeInfo` interface, o host pode invocar métodos de script ou exibir e modificar variáveis de script.  
+ no Endereço de um buffer que contém o nome do item para o qual o chamador precisa do objeto de expedição associado. Se esse parâmetro for `NULL`, o objeto de expedição conterá como seus membros todos os métodos globais e propriedades definidos pelo script. Por meio da interface de `IDispatch` e da interface `ITypeInfo` associada, o host pode invocar métodos de script ou exibir e modificar variáveis de script.  
   
  `ppdisp`  
- [out] Endereço de uma variável que recebe um ponteiro para o objeto associado com os métodos globais e as propriedades do script. Se o mecanismo de script não dá suporte a esse objeto, `NULL` será retornado.  
+ fora Endereço de uma variável que recebe um ponteiro para o objeto associado aos métodos e propriedades globais do script. Se o mecanismo de script não oferecer suporte a tal objeto, `NULL` será retornado.  
   
-## <a name="return-value"></a>Valor de retorno  
+## <a name="return-value"></a>Valor retornado  
  Retorna um dos seguintes valores:  
   
-|Valor de retorno|Significado|  
+|Valor retornado|Significado|  
 |------------------|-------------|  
 |`S_OK`|Êxito.|  
 |`E_INVALIDARG`|Um argumento era inválido.|  
 |`E_POINTER`|Um ponteiro inválido foi especificado.|  
 |`E_UNEXPECTED`|A chamada não era esperada (por exemplo, o mecanismo de script ainda não foi carregado ou inicializado).|  
-|`S_FALSE`|O mecanismo de script não dá suporte a um objeto de expedição; o `ppdisp` parâmetro for definido como NULL.|  
+|`S_FALSE`|O mecanismo de script não dá suporte a um objeto de expedição; o parâmetro `ppdisp` é definido como NULL.|  
   
 ## <a name="remarks"></a>Comentários  
- Porque os métodos e propriedades que podem ser adicionadas por meio da chamada a [IActiveScriptParse](../../winscript/reference/iactivescriptparse.md) interface, o `IDispatch` interface retornada por esse método dinamicamente pode dar suporte a novos métodos e propriedades. Da mesma forma, o `IDispatch::GetTypeInfo` método deverá retornar um novo, exclusivo `ITypeInfo` interface quando os métodos e propriedades são adicionadas. No entanto, observe que os mecanismos de linguagem não devem alterar o `IDispatch` interface em um modo incompatível com qualquer anterior `ITypeInfo` interface retornada. Por exemplo, isso implica que os DISPIDs nunca seja reutilizados.  
+ Como os métodos e as propriedades podem ser adicionados chamando a interface [IActiveScriptParse](../../winscript/reference/iactivescriptparse.md) , a interface `IDispatch` retornada por esse método pode dar suporte dinamicamente a novos métodos e propriedades. Da mesma forma, o método `IDispatch::GetTypeInfo` deve retornar uma interface de `ITypeInfo` nova e exclusiva quando métodos e propriedades forem adicionados. No entanto, observe que os mecanismos de linguagem não devem alterar a interface `IDispatch` de forma que seja incompatível com qualquer interface de `ITypeInfo` anterior retornada. Isso implica, por exemplo, que os DISPIDs nunca serão reutilizados.  
   
 ## <a name="see-also"></a>Consulte também  
  [IActiveScript](../../winscript/reference/iactivescript.md)

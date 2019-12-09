@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugPortSuppliers2::Next
 ms.assetid: e2a2d226-e70b-42c2-bf00-a936517940c8
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: eba9fbf986579ad43677677b8397995119211a24
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 6f86a547eac89b0c9c928f8697b95b6468c443da
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62914856"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66326400"
 ---
 # <a name="ienumdebugportsuppliers2next"></a>IEnumDebugPortSuppliers2::Next
 Retorna o próximo conjunto de elementos da enumeração.
@@ -40,18 +43,15 @@ int Next(
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `celt`
+## <a name="parameters"></a>Parâmetros
+`celt`\
+[in] O número de elementos a serem recuperados. Também especifica o tamanho máximo da `rgelt` matriz.
 
- [in] O número de elementos a serem recuperados. Também especifica o tamanho máximo da `rgelt` matriz.
+`rgelt`\
+[no, out] Matriz de [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md) elementos a serem preenchidos.
 
- `rgelt`
-
- [no, out] Matriz de [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md) elementos a serem preenchidos.
-
- `pceltFetched`
-
- [out] Retorna o número de elementos realmente retornados em `rgelt`.
+`pceltFetched`\
+[out] Retorna o número de elementos realmente retornados em `rgelt`.
 
 ## <a name="return-value"></a>Valor de retorno
  Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se menos do que o número solicitado de elementos podem ser retornados; caso contrário, retornará um código de erro.

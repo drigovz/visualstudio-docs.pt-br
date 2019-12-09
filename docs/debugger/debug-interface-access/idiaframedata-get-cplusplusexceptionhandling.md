@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 31b386ff2c31937efc352049f7db068f49e4ba19
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d6d1e66cc7358bd086088199bf07a7320a0c8d07
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62832755"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743633"
 ---
-# <a name="idiaframedatagetcplusplusexceptionhandling"></a>IDiaFrameData::get_cplusplusExceptionHandling
-Recupera um sinalizador que indica se o tratamento de exceções C++ está em vigor.
+# <a name="idiaframedataget_cplusplusexceptionhandling"></a>IDiaFrameData::get_cplusplusExceptionHandling
+Recupera um sinalizador que indica se C++ a manipulação de exceção está em vigor.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -33,13 +33,13 @@ HRESULT get_cplusplusExceptionHandling ( 
 #### <a name="parameters"></a>Parâmetros
  `pRetVal`
 
-[out] Retorna `TRUE` se C++ tratamento de exceções está em vigor; caso contrário, retorna `FALSE`.
+fora Retorna `TRUE` se C++ a manipulação de exceção estiver em vigor; caso contrário, retorna `FALSE`.
 
-## <a name="return-value"></a>Valor de retorno
- Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não há suporte para essa propriedade. Caso contrário, retornará um código de erro.
+## <a name="return-value"></a>Valor retornado
+ Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não houver suporte para essa propriedade. Caso contrário, retornará um código de erro.
 
 ## <a name="remarks"></a>Comentários
- Para determinar se a exceção estruturada manipulação está em vigor (que é muito diferente do C++ tratamento de exceção), chame o [idiaframedata:: Get_systemexceptionhandling](../../debugger/debug-interface-access/idiaframedata-get-systemexceptionhandling.md) método.
+ Para determinar se a manipulação de exceção estruturada está em vigor (que é C++ muito diferente da manipulação de exceção), chame o método [IDiaFrameData:: get_systemExceptionHandling](../../debugger/debug-interface-access/idiaframedata-get-systemexceptionhandling.md) .
 
 ## <a name="see-also"></a>Consulte também
 - [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

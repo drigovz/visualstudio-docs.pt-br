@@ -12,11 +12,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4455f850ad533f17cd9f6cb33e7e874621d0bb2c
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54787675"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68205895"
 ---
 # <a name="modules-view---instrumentation-data"></a>Exibição Módulos – dados de instrumentação
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ A exibição Módulos mostra dados de desempenho agrupados pelos módulos que es
 ## <a name="general"></a>Geral  
  As colunas gerais identificam a função em uma linha de exibição.  
   
-|Column|Descrição|  
+|Column|DESCRIÇÃO|  
 |------------|-----------------|  
 |**Nome**|O nome da função ou módulo.|  
 |**Número de linha da função**|O número de linha do início dessa função no arquivo de origem.|  
@@ -42,7 +42,7 @@ A exibição Módulos mostra dados de desempenho agrupados pelos módulos que es
 ## <a name="elapsed-inclusive-values"></a>Valores Inclusivos Decorridos  
  Os valores inclusivos decorridos indicam o tempo que uma função ficou na pilha de chamadas. O tempo inclui o tempo gasto em funções filho e em chamadas para o sistema operacional, como operações de entrada/saída e de mudanças de contexto.  
   
-|Column|Descrição|  
+|Column|DESCRIÇÃO|  
 |------------|-----------------|  
 |**Tempo Inclusivo Decorrido**|– Para uma função, o tempo gasto na função. Isso inclui o tempo gasto em funções filho e em chamadas para o sistema operacional, como operações de entrada/saída e de mudanças de contexto.<br />– Para um módulo, o tempo em que pelo menos uma função no módulo estava na pilha de chamadas.|  
 |**% de Tempo Inclusivo Decorrido**|O percentual do tempo inclusivo decorrido total da execução da criação de perfil que foi gasto no tempo inclusivo decorrido total desse módulo ou função.|  
@@ -53,7 +53,7 @@ A exibição Módulos mostra dados de desempenho agrupados pelos módulos que es
 ## <a name="elapsed-exclusive-values"></a>Valores Exclusivos Decorridos  
  Valores exclusivos decorridos indicam o tempo durante o qual uma função estava diretamente em execução no topo da pilha de chamadas. O tempo inclui o tempo gasto em chamadas para o sistema operacional, como operações de entrada/saída e de mudança de contexto, mas não inclui o tempo gasto em funções filho.  
   
-|Column|Descrição|  
+|Column|DESCRIÇÃO|  
 |------------|-----------------|  
 |**Tempo Exclusivo Decorrido**|– Para uma função, o tempo gasto no módulo ou função. Isso inclui chamadas para o sistema operacional, como mudanças de contexto e operações de entrada/saída, mas exclui o tempo que foi gasto em funções filho.<br />– Para um módulo, a soma dos tempos exclusivos decorridos das funções no módulo.|  
 |**% de Tempo Exclusivo Decorrido**|O percentual do tempo exclusivo decorrido total da execução da criação de perfil que foi gasto no tempo exclusivo decorrido total desse módulo ou função.|  
@@ -64,7 +64,7 @@ A exibição Módulos mostra dados de desempenho agrupados pelos módulos que es
 ## <a name="application-inclusive-values"></a>Valores Inclusivos do Aplicativo  
  Os valores inclusivos do aplicativo indicam o tempo que uma função ficou na pilha de chamadas. O tempo não inclui o tempo gasto em chamadas para o sistema operacional, como operações de entrada/saída e de mudança de contexto. No entanto, o tempo inclui o tempo gasto em funções filho.  
   
-|Column|Descrição|  
+|Column|DESCRIÇÃO|  
 |------------|-----------------|  
 |**Tempo Inclusivo do Aplicativo**|– Para uma função, o tempo gasto em chamadas para a função. Isso inclui o tempo gasto em funções filho, mas exclui as chamadas para o sistema operacional, como mudanças de contexto e operações de entrada/saída.<br />– Para um módulo, o tempo em que pelo menos uma função no módulo estava na pilha de chamadas. Isso exclui o tempo gasto em chamadas para o sistema operacional.|  
 |**% de Tempo Inclusivo do Aplicativo**|O percentual do tempo inclusivo decorrido total da execução da criação de perfil que foi gasto no tempo inclusivo do aplicativo desse módulo ou função.|  
@@ -75,7 +75,7 @@ A exibição Módulos mostra dados de desempenho agrupados pelos módulos que es
 ## <a name="application-exclusive-values"></a>Valores Exclusivos do Aplicativo  
  Valores exclusivos do aplicativo indicam o tempo gasto no módulo ou função. Isso exclui o tempo gasto em funções filho e também exclui as chamadas para o sistema operacional, como mudanças de contexto e operações de entrada/saída.  
   
-|Column|Descrição|  
+|Column|DESCRIÇÃO|  
 |------------|-----------------|  
 |**Tempo Exclusivo do Aplicativo**|O tempo exclusivo do aplicativo total de todas as chamadas para esse módulo ou função.|  
 |**% de Tempo Exclusivo do Aplicativo**|O percentual do tempo exclusivo decorrido total da execução da criação de perfil que foi gasto no tempo exclusivo do aplicativo desse módulo ou função.|  
@@ -83,7 +83,7 @@ A exibição Módulos mostra dados de desempenho agrupados pelos módulos que es
 |**Tempo Exclusivo Máximo do Aplicativo**|– Para uma função, o tempo exclusivo máximo do aplicativo de uma chamada para essa função.<br />– Para um módulo, o tempo exclusivo máximo do aplicativo de todas as chamadas para funções no módulo.|  
 |**Tempo Exclusivo Mínimo do Aplicativo**|– Para uma função, o tempo exclusivo mínimo do aplicativo de uma chamada para esse módulo ou função.<br />– Para um módulo, o tempo exclusivo mínimo do aplicativo de todas as chamadas para funções no módulo.|  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Veja também  
  [Exibição Módulos](../profiling/modules-view-sampling-data.md)   
  [Exibição Módulos – Instrumentação](../profiling/modules-view-dotnet-memory-instrumentation-data.md)   
  [Exibição Módulos – amostragem](../profiling/modules-view-dotnet-memory-sampling-data.md)

@@ -22,12 +22,12 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 88a8d30b6eff7f4d7d2754ea383f7b544cc615ee
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a84de037661992d1ee185bea2a70db74dac5e618
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63417063"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686348"
 ---
 # <a name="walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api"></a>Passo a passo: Baixando Assemblies satélite por demanda com a API de implantação do ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ Aplicativos do Windows Forms podem ser configurados para várias culturas com o 
   
  Conforme discutido em [localizando aplicativos do ClickOnce](../deployment/localizing-clickonce-applications.md), você pode incluir vários assemblies de satélite para várias culturas dentro do mesmo [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] implantação. Por padrão, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] baixará todos os assemblies de satélite em sua implantação para o computador cliente, embora um único cliente provavelmente exigirá apenas um assembly satélite.  
   
- Este passo a passo demonstra como marcar seus assemblies satélites como opcionais e baixar somente o assembly precisa de um computador cliente para suas configurações de cultura. O procedimento a seguir usa as ferramentas disponíveis no [!INCLUDE[winsdklong](../includes/winsdklong-md.md)]. Você também pode executar esta tarefa no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  Consulte também [passo a passo: Baixando Assemblies satélite por demanda com a API usando o Designer de implantação do ClickOnce](http://msdn.microsoft.com/library/ms366788\(v=vs.110\)) ou [passo a passo: Baixando Assemblies satélite por demanda com a implantação do ClickOnce usando o Designer de API](http://msdn.microsoft.com/library/ms366788\(v=vs.120\)).  
+ Este passo a passo demonstra como marcar seus assemblies satélites como opcionais e baixar somente o assembly precisa de um computador cliente para suas configurações de cultura. O procedimento a seguir usa as ferramentas disponíveis no [!INCLUDE[winsdklong](../includes/winsdklong-md.md)]. Você também pode executar esta tarefa no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  Consulte também [passo a passo: Baixando Assemblies satélite por demanda com a API usando o Designer de implantação do ClickOnce](https://msdn.microsoft.com/library/ms366788\(v=vs.110\)) ou [passo a passo: Baixando Assemblies satélite por demanda com a implantação do ClickOnce usando o Designer de API](https://msdn.microsoft.com/library/ms366788\(v=vs.120\)).  
   
 > [!NOTE]
 > Para fins de teste, o exemplo de código a seguir por meio de programação define a cultura para `ja-JP`. Consulte a seção "Próximas etapas" mais adiante neste tópico para obter informações sobre como ajustar esse código para um ambiente de produção.  
@@ -51,9 +51,9 @@ Aplicativos do Windows Forms podem ser configurados para várias culturas com o 
      [!code-csharp[ClickOnce.SatelliteAssembliesSDK#1](../snippets/csharp/VS_Snippets_Winforms/ClickOnce.SatelliteAssembliesSDK/CS/Program.cs#1)]
      [!code-vb[ClickOnce.SatelliteAssembliesSDK#1](../snippets/visualbasic/VS_Snippets_Winforms/ClickOnce.SatelliteAssembliesSDK/VB/Form1.vb#1)]  
   
-2. Gerar assemblies de satélite para o seu aplicativo usando o [Resgen.exe (gerador de arquivo de recurso)](http://msdn.microsoft.com/library/8ef159de-b660-4bec-9213-c3fbc4d1c6f4) ou [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+2. Gerar assemblies de satélite para o seu aplicativo usando o [Resgen.exe (gerador de arquivo de recurso)](https://msdn.microsoft.com/library/8ef159de-b660-4bec-9213-c3fbc4d1c6f4) ou [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
-3. Gerar um manifesto de aplicativo, ou abra o manifesto do aplicativo existente, usando MageUI.exe. Para obter mais informações sobre essa ferramenta, consulte [MageUI.exe (Manifest Generation and Editing Tool, cliente gráfico)](http://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14).  
+3. Gerar um manifesto de aplicativo, ou abra o manifesto do aplicativo existente, usando MageUI.exe. Para obter mais informações sobre essa ferramenta, consulte [MageUI.exe (Manifest Generation and Editing Tool, cliente gráfico)](https://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14).  
   
 4. Clique o **arquivos** guia.  
   

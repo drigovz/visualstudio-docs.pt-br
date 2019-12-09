@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugInterceptExceptionCompleteEvent2::GetInterceptCookie
 ms.assetid: 07b20866-e598-4783-9ecc-6aa8625c8804
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 400f0c6785a9cf9096caba9403886a2009905859
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 58967be9befc7061ea8005009b1628966a93de0f
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62919001"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66349501"
 ---
 # <a name="idebuginterceptexceptioncompleteevent2getinterceptcookie"></a>IDebugInterceptExceptionCompleteEvent2::GetInterceptCookie
 Chamado quando o processamento de uma exceção interceptada for concluída.
@@ -36,10 +39,9 @@ int GetInterceptCookie(
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `pqwCookie`
-
- [out] Valor exclusivo que está associado com a exceção que foi interceptada.
+## <a name="parameters"></a>Parâmetros
+`pqwCookie`\
+[out] Valor exclusivo que está associado com a exceção que foi interceptada.
 
 ## <a name="return-value"></a>Valor de retorno
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retornará o código de erro.

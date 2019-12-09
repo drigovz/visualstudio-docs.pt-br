@@ -20,11 +20,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: e6d527b00e8cbfe6a6f4ad5d112a23e46d4edb8e
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59656954"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68149537"
 ---
 # <a name="getframeworksdkpath-task"></a>Tarefa GetFrameworkSdkPath
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Recupera o caminho para o [!INCLUDE[winsdklong](../includes/winsdklong-md.md)].
 ## <a name="task-parameters"></a>Parâmetros da tarefa  
  A tabela a seguir descreve os parâmetros da tarefa `GetFrameworkSdkPath`.  
   
-|Parâmetro|Descrição|  
+|Parâmetro|DESCRIÇÃO|  
 |---------------|-----------------|  
 |`FrameworkSdkVersion20Path`|Parâmetro de saída opcional somente leitura `String`.<br /><br /> Retorna o caminho para o SDK do .NET versão 2.0, se presente. Caso contrário, retornará `String.Empty`.|  
 |`FrameworkSdkVersion35Path`|Parâmetro de saída opcional somente leitura `String`.<br /><br /> Retorna o caminho para o SDK do .NET versão 3.5, se presente. Caso contrário, retornará `String.Empty`.|  
@@ -60,6 +60,6 @@ Recupera o caminho para o [!INCLUDE[winsdklong](../includes/winsdklong-md.md)].
 </Project>  
 ```  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Veja também  
  [Tarefas](../msbuild/msbuild-tasks.md)   
  [Referência de tarefas](../msbuild/msbuild-task-reference.md)

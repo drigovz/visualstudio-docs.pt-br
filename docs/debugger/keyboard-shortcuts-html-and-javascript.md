@@ -1,33 +1,28 @@
 ---
-title: (HTML e JavaScript) de atalhos de teclado | Microsoft Docs
-ms.date: 03/28/2019
+title: Atalhos de teclado (HTML e JavaScript) | Microsoft Docs
+ms.date: 10/17/2019
 ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
 - FSharp
 - C++
-ms.assetid: 8d44425a-6584-477d-932e-4e10d5e79511
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 4af3ddb3d04b3a864a26149f88fa15960d2c2b2d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 824d0787de78ddc679d1060179e65043e0bf5299
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62905585"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72731491"
 ---
 # <a name="keyboard-shortcuts-html-and-javascript"></a>Atalhos de teclado (HTML e JavaScript)
 
-::: moniker range=">=vs-2019"
- Atalhos de teclado no Visual Studio para depurar aplicativos Node. js no Visual Studio com o **desenvolvimento do Node. js** carga de trabalho instalada.
-::: moniker-end
-::: moniker range="vs-2017"
- Atalhos de teclado no Visual Studio para depurar aplicativos UWP usando HTML e JavaScript.
-::: moniker-end
+Atalhos de teclado no Visual Studio para depurar aplicativos UWP usando HTML e JavaScript.
 
 ## <a name="general-shortcuts"></a>Atalhos gerais
 
@@ -64,6 +59,6 @@ ms.locfileid: "62905585"
 |Diminuir o valor de CSS escolhido em 1|Seta para Baixo|
 
 ## <a name="see-also"></a>Consulte também
-- [Comandos do Console JavaScript](../debugger/javascript-console-commands.md)
-- [Início Rápido: depurar HTML e CSS](../debugger/quickstart-debug-html-and-css.md?view=vs-2017)
-- [Início Rápido: Depurar em JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md?view=vs-2017)
+- [Comandos do Console JavaScript](../debugger/javascript-console-commands.md?view=vs-2017)
+- [Guia de início rápido: depurar HTML e CSS](../debugger/quickstart-debug-html-and-css.md?view=vs-2017)
+- [Guia de início rápido: depurar JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md?view=vs-2017)

@@ -6,11 +6,11 @@ ms.assetid: dedf0173-197e-4258-ae5a-807eb3abc952
 caps.latest.revision: 9
 ms.author: gregvanl
 ms.openlocfilehash: f59838913ed3f9bc6679336393f6db9181291e3d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60091662"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68204031"
 ---
 # <a name="how-to-use-asyncpackage-to-load-vspackages-in-the-background"></a>Como: Usar AsyncPackage para carregar VSPackages em segundo plano
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ Carregar e inicializar um VS package podem resultar em e/s de disco. Se tal e/s 
   
 4. Se você tiver a inicialização assíncrona de trabalho, você deve substituir <xref:Microsoft.VisualStudio.Shell.AsyncPackage.InitializeAsync%2A>. Remover o **Initialize ()** método fornecido pelo modelo do VSIX. (O **Initialize ()** método na **AsyncPackage** está lacrado). Você pode usar qualquer um do <xref:Microsoft.VisualStudio.Shell.AsyncPackage.AddService%2A> métodos para adicionar serviços assíncronos ao seu pacote.  
   
-    OBSERVAÇÃO: Para chamar **base. InitializeAsync()**, você pode alterar seu código-fonte para:  
+    OBSERVAÇÃO: Para chamar **base. InitializeAsync()** , você pode alterar seu código-fonte para:  
   
    ```csharp  
    await base.InitializeAsync(cancellationToken, progress);  

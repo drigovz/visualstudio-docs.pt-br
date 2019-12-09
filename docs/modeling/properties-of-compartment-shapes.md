@@ -6,54 +6,54 @@ f1_keywords:
 - vs.dsltools.dsldesigner.compartmentshape
 helpviewer_keywords:
 - Domain-Specific Language, compartment shape
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b44b32f98406e4692de97562bbf97e2656b3a7de
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6ad53866c1930edb01ccd163131ce5e23644929c
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62964281"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747508"
 ---
 # <a name="properties-of-compartment-shapes"></a>Propriedades de formas de compartimento
-Formas de compartimento são uma das formas que você pode usar para exibir uma classe de domínio em uma linguagem específica de domínio. Você pode expandir e recolher os compartimentos.
+As formas de compartimento são uma das formas que você pode usar para exibir uma classe de domínio em uma linguagem específica de domínio. Você pode expandir e recolher os compartimentos.
 
- Para obter mais informações, consulte [como definir uma linguagem específica do domínio](../modeling/how-to-define-a-domain-specific-language.md). Para obter mais informações sobre como usar essas propriedades, consulte [personalizando e estendendo uma linguagem específica do domínio](../modeling/customizing-and-extending-a-domain-specific-language.md).
+ Para obter mais informações, consulte [como definir uma linguagem específica de domínio](../modeling/how-to-define-a-domain-specific-language.md). Para obter mais informações sobre como usar essas propriedades, consulte [Personalizando e estendendo uma linguagem específica de domínio](../modeling/customizing-and-extending-a-domain-specific-language.md).
 
- Formas do compartimento têm as propriedades que são listadas na tabela a seguir.
+ As formas de compartimento têm as propriedades listadas na tabela a seguir.
 
-|Propriedade|Descrição|Padrão|
+|propriedade|Descrição|Padrão|
 |-|-|-|
-|Padrão expandir estado recolhido|Se `Expanded`, os compartimentos são mostrados na criação. Se `Collapsed`, eles não são.|Expandido|
+|Padrão expandir estado de recolhimento|Se `Expanded`, os compartimentos serão mostrados na criação. Se `Collapsed`, eles não serão.|Expandido|
 |Cor de preenchimento|A cor de preenchimento desta forma.|Branco|
-|Modo de gradiente de preenchimento|O modo gradiente de preenchimento desta forma.|Horizontal|
-|geometria|A geometria desta forma (retângulo ou um retângulo arredondado).|Retângulo|
-|Tem pontos de Conexão padrão|Se `True`, a forma usará superior, inferior, esquerda e pontos de conexão certa no designer gerado.|False|
-|Cabeçalho de compartimento único está visível|Se `False`e a forma tem um único compartimento, o cabeçalho do compartimento não será visível.|verdadeiro|
-|Cor do contorno|A cor do contorno desta forma.|Preto|
-|Estilo de contorno tracejado|O estilo de contorno tracejado desta forma (sólido, traço, Dot, Traçoponto, Traçopontoponto, personalizado).|Sólido|
-|Espessura do contorno|A espessura do contorno desta forma.|0.03125|
-|Cor do texto|A cor usada para os decoradores de texto que estão associados esta forma.|Preto|
-|Modificador de acesso|O nível de acesso de forma do compartimento (`public` ou `internal`).|Público|
-|Atributos personalizados|Usado para adicionar atributos à classe de código de origem que é gerado a partir desta forma de compartimento|\<nenhum>|
-|Gera dupla derivado|Se `True`, serão geradas uma classe base e uma classe parcial (para dar suporte à personalização por meio de substituições). Para obter mais informações, consulte [substituindo e estendendo as Classes geradas](../modeling/overriding-and-extending-the-generated-classes.md).|False|
-|Tem um construtor personalizado|Se `True`, um construtor personalizado será fornecido no código-fonte. Para obter mais informações, consulte [substituindo e estendendo as Classes geradas](../modeling/overriding-and-extending-the-generated-classes.md).|False|
-|Modificador de herança|Descreve o tipo de herança da classe de código de origem que é gerada de forma do compartimento (`none`, `abstract` ou `sealed`).|Nenhum|
-|Forma de compartimento base|A classe base dessa forma.|(nenhum)|
-|Nome|O nome desta forma.|Nome atual|
-|Namespace|O namespace que é afiliado desta forma.|Namespace atual|
-|Tipo de dica de ferramenta|Como a dica de ferramenta é definida (fixo, variável ou nenhum). Se fixo, em seguida, o valor da `Fixed Tooltip Text` propriedade é usada como a dica de ferramenta; se a variável, em seguida, a dica de ferramenta é definida no código personalizado.|nenhum|
-|Observações|Observações informais associadas esta forma.|\<nenhum>|
-|Altura inicial|A altura inicial desta forma em polegadas. Para formas de compartimento, essa é a altura da seção de cabeçalho somente e ela não pode ser redimensionada.|1|
-|Largura inicial|A largura inicial desta forma em polegadas.|1.5|
-|Cor de preenchimento expostos como propriedade<br /><br /> Modo de gradiente de preenchimento exposto<br /><br /> Exposto a cor do contorno como propriedade<br /><br /> Exposto o estilo de contorno tracejado como propriedade<br /><br /> Exposto como propriedade de espessura do contorno<br /><br /> Expõe a cor do texto|Se `True`, o usuário pode definir a propriedade indicada de uma forma. Para configurar isso, a definição de forma com o botão direito e clique em **adicionar exposto**.|False|
+|Preencher modo de gradiente|O modo de gradiente de preenchimento desta forma.|Horizontal|
+|Geometry|A geometria dessa forma (retângulo ou retângulo arredondado).|Retângulo|
+|Tem pontos de conexão padrão|Se `True`, a forma usará os pontos de conexão superior, inferior, esquerdo e direito no designer gerado.|False|
+|É um cabeçalho de compartimento único visível|Se `False` e a forma tiver um único compartimento, o cabeçalho do compartimento não será visível.|verdadeiro|
+|Cor do contorno|A cor da estrutura de tópicos desta forma.|Afasta|
+|Estilo do contorno tracejado|O estilo do contorno tracejado dessa forma (sólido, traço, ponto, travessão ponto, travessão ponto ponto, personalizado).|Sólido|
+|Espessura do contorno|A espessura da estrutura de tópicos desta forma.|0, 3125|
+|Cor do texto|A cor usada para decoradores de texto associados a esta forma.|Afasta|
+|Modificador de acesso|O nível de acesso da forma do compartimento (`public` ou `internal`).|Público|
+|Atributos personalizados|Usado para adicionar atributos à classe de código-fonte gerada a partir desta forma de compartimento|\<nenhum>|
+|Gera derivação dupla|Se `True`, uma classe base e uma classe parcial (para dar suporte à personalização por meio de substituições) serão geradas. Para obter mais informações, consulte [substituindo e estendendo as classes geradas](../modeling/overriding-and-extending-the-generated-classes.md).|False|
+|Tem Construtor personalizado|Se `True`, um construtor personalizado será fornecido no código-fonte. Para obter mais informações, consulte [substituindo e estendendo as classes geradas](../modeling/overriding-and-extending-the-generated-classes.md).|False|
+|Modificador de herança|Descreve o tipo de herança da classe de código-fonte gerada a partir da forma de compartimento (`none`, `abstract` ou `sealed`).|Nenhum|
+|Forma do compartimento de base|A classe base dessa forma.|(nenhum)|
+|Name|O nome desta forma.|Nome atual|
+|espaço de nome|O namespace que é afiliado a esta forma.|Namespace atual|
+|Tipo de dica de ferramenta|Como a dica de ferramenta é definida (fixa, variável ou nenhuma). Se for corrigido, o valor da propriedade `Fixed Tooltip Text` será usado como dica de ferramenta; Se for variável, a dica de ferramenta será definida no código personalizado.|nenhum|
+|Anotações|Observações informais associadas a esta forma.|\<nenhum>|
+|Altura inicial|A altura inicial dessa forma, em polegadas. Para as formas de compartimento, esta é a altura da seção de cabeçalho somente e não pode ser redimensionada.|1|
+|Largura inicial|A largura inicial dessa forma, em polegadas.|1.5|
+|Cor de preenchimento exposta como Propriedade<br /><br /> Modo de gradiente de preenchimento exposto<br /><br /> Cor da estrutura de tópicos exposta como Propriedade<br /><br /> Contorno exposto traço estilo como Propriedade<br /><br /> Espessura da estrutura de tópicos exposta como Propriedade<br /><br /> Expõe a cor do texto|Se `True`, o usuário poderá definir a propriedade declarada de uma forma. Para definir isso, clique com o botão direito do mouse na definição de forma e clique em **Adicionar exposto**.|False|
 |Descrição|Usado para documentar o designer gerado.|\<nenhum>|
-|Nome de Exibição|O nome que será exibido no designer gerado para esta forma.|\<nenhum>|
-|Texto de dica de ferramenta fixa|O texto que é usado para uma dica de ferramenta fixa.|\<nenhum>|
-|Palavra-chave de ajuda|A palavra-chave que é usada para indexar a Ajuda de F1 para esta forma.|\<nenhum>|
+|Nome de Exibição|O nome que será exibido no designer gerado para essa forma.|\<nenhum>|
+|Texto de dica de ferramenta fixo|O texto que é usado para uma dica de ferramenta fixa.|\<nenhum>|
+|Palavra-chave de ajuda|A palavra-chave usada para indexar a ajuda F1 para essa forma.|\<nenhum>|
 
 ## <a name="see-also"></a>Consulte também
 

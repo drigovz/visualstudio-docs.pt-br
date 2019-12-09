@@ -1,20 +1,21 @@
 ---
-title: 'Como: Instrumentar um aplicativo Web ASP.NET compilado dinamicamente e coletar dados de tempo detalhados com o criador de perfil usando a linha de comando | Microsoft Docs'
+title: 'Linha de comando do criador de perfil: Instrument Dynamic ASP.NET app, obter dados de tempo'
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - aspnet
-ms.openlocfilehash: 581c72ba7a43e3a7b31fa45e10067e33e15f4e35
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d8270c9948efe5f9c972f2e4f0eccb035c793953
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63386512"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74775451"
 ---
-# <a name="how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-detailed-timing-data-with-the-profiler-by-using-the-command-line"></a>Como: Instrumentar um aplicativo Web ASP.NET compilado dinamicamente e coletar dados de tempo detalhados com o criador de perfil usando a linha de comando
+# <a name="how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-detailed-timing-data-with-the-profiler-by-using-the-command-line"></a>Como instrumentar um aplicativo Web ASP.NET compilado dinamicamente e coletar dados de tempo detalhados com o criador de perfil usando a linha de comando
 
 Este tópico descreve como usar as ferramentas de linha de comando das Ferramentas de Criação de Perfil do Visual Studio para coletar dados de tempo detalhados para um aplicativo [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] compilado dinamicamente usando o método de criação de perfil por instrumentação.
 
@@ -27,9 +28,9 @@ Inicie o criador de perfil e, em seguida, execute o aplicativo de destino. Enqua
 
 ## <a name="configure-the-aspnet-web-application-and-the-web-server"></a>Configurar o aplicativo Web ASP.NET e o servidor Web
 
-1. Modifique o arquivo *web.config* do aplicativo de destino. Confira [Como Modificar arquivos web.config para instrumentar e analisar aplicativos Web ASP.NET compilados dinamicamente](../profiling/how-to-modify-web-config-files-to-instrument-dynamically-compiled-aspnet-apps.md).
+1. Modifique o arquivo *web.config* do aplicativo de destino. Confira [Como modificar arquivos web.config para instrumentar e criar perfil de aplicativos Web ASP.NET compilados dinamicamente](../profiling/how-to-modify-web-config-files-to-instrument-dynamically-compiled-aspnet-apps.md).
 
-2. Abra uma janela do Prompt de Comando.
+2. {1&gt;Abra uma janela do Prompt de Comando. &lt;1}
 
 3. Inicialize as variáveis de ambiente de criação de perfil. Tipo:
 
@@ -41,15 +42,15 @@ Inicie o criador de perfil e, em seguida, execute o aplicativo de destino. Enqua
 
 ## <a name="run-the-profiling-session"></a>Executar a sessão de criação de perfil
 
-1. Abra uma janela do Prompt de Comando.
+1. {1&gt;Abra uma janela do Prompt de Comando. &lt;1}
 
-2. Inicie o criador de perfil. Tipo:
+2. {2&gt;Inicie o criador de perfil.&lt;2} Tipo:
 
      **VSPerfCmd**  [/start](../profiling/start.md) **:trace**  [/output](../profiling/output.md) **:** `OutputFile` [`Options`]
 
    - A opção **/start:trace** inicializa o criador de perfil.
 
-   - A opção **/output:**`OutputFile` é necessária com **/start**. `OutputFile` especifica o nome e o local do arquivo de dados de criação de perfil (.*vsp*).
+   - A opção **/output:** `OutputFile` é necessária com **/start**. `OutputFile` especifica o nome e o local do arquivo de dados de criação de perfil (.*vsp*).
 
      É possível usar qualquer uma das opções a seguir com a opção **/start:trace**.
 
@@ -58,7 +59,7 @@ Inicie o criador de perfil e, em seguida, execute o aplicativo de destino. Enqua
 
      | Opção | Descrição |
      | - | - |
-     | [/user](../profiling/user-vsperfcmd.md) **:**[`Domain`**\\**]`UserName` | Especifica o domínio e o nome de usuário da conta proprietária do processo de trabalho ASP.NET analisado. Esta opção será necessária se o processo estiver sendo executado como um usuário diferente do usuário conectado. O proprietário do processo é listado na coluna **Nome de Usuário** na guia **Processos** do Gerenciador de Tarefas do Windows. |
+     | [/user](../profiling/user-vsperfcmd.md) **:** [`Domain` **\\** ]`UserName` | Especifica o domínio e o nome de usuário da conta proprietária do processo de trabalho ASP.NET analisado. Esta opção será necessária se o processo estiver sendo executado como um usuário diferente do usuário conectado. O proprietário do processo é listado na coluna **Nome de Usuário** na guia **Processos** do Gerenciador de Tarefas do Windows. |
      | [/crosssession](../profiling/crosssession.md) | Habilita a criação de perfil de processos em outras sessões de logon. Esta opção será necessária se o aplicativo ASP.NET estiver em execução em uma sessão diferente. O identificador da sessão é listado na coluna **ID da Sessão** na guia **Processos** do Gerenciador de Tarefas do Windows. **/CS** pode ser especificado como uma abreviação de **/crosssession**. |
      | [/globaloff](../profiling/globalon-and-globaloff.md) | Inicia o criador de perfil com a coleta de dados em pausa. Use [/globalon](../profiling/globalon-and-globaloff.md) para retomar a criação de perfil. |
      | [/counter](../profiling/counter.md) **:** `Config` | Coleta informações do contador de desempenho do processador que é especificado em `Config`. As informações do contador são adicionadas aos dados que são coletados em cada evento de criação de perfil. |
@@ -76,9 +77,9 @@ Enquanto o aplicativo de destino estiver em execução, você poderá controlar 
 
     |Opção|Descrição|
     |------------|-----------------|
-    |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Inicia (**/globalon**) ou interrompe (**/globaloff**) a coleta de dados para todos os processos.|
-    |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Inicia (**/processon**) ou interrompe (**/processoff**) a coleta de dados para o processo especificado pela ID de processo (`PID`).|
-    |[/threadon](../profiling/threadon-and-threadoff.md) **:** `TID` [/threadoff](../profiling/threadon-and-threadoff.md) **:** `TID`|Inicia (**/threadon**) ou interrompe (**/threadoff**) a coleta de dados para o thread especificado pela ID do thread (`TID`).|
+    |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Inicia ( **/globalon**) ou interrompe ( **/globaloff**) a coleta de dados para todos os processos.|
+    |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Inicia ( **/processon**) ou interrompe ( **/processoff**) a coleta de dados para o processo especificado pela ID de processo (`PID`).|
+    |[/threadon](../profiling/threadon-and-threadoff.md) **:** `TID` [/threadoff](../profiling/threadon-and-threadoff.md) **:** `TID`|Inicia ( **/threadon**) ou interrompe ( **/threadoff**) a coleta de dados para o thread especificado pela ID do thread (`TID`).|
 
 - Também é possível usar a opção **VSPerfCmd.exe**[/mark](../profiling/mark.md) para inserir uma marca de criação de perfil no arquivo de dados. O comando **/mark** adiciona um identificador, um carimbo de data/hora e uma cadeia de caracteres de texto opcional definida pelo usuário. As marcas podem ser usadas para filtrar dados em exibições de dados e relatórios do criador de perfil.
 

@@ -1,5 +1,5 @@
 ---
-title: Caixa de diálogo de páginas de propriedade do código-fonte arquivos, propriedades comuns, solução de depuração | Microsoft Docs
+title: Depurar arquivos de origem/Propriedades comuns/páginas de propriedades da solução
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -22,21 +22,21 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 83bed0588a0959ab85906d949e1b0752396223ae
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 735432db485277e2265479e625f5e8acaa2cc2e3
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62852920"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738395"
 ---
 # <a name="debug-source-files-common-properties-solution-property-pages-dialog-box"></a>Caixa de diálogo Depurar Arquivos de Origem, Propriedades Comuns, Páginas de Propriedades da Solução
 Esta página de propriedades especifica onde o depurador procurará arquivos de origem ao depurar a solução.
 
  Para acessar a página de propriedades **Depurar Arquivos de Origem**, clique com o botão direito do mouse na solução em **Gerenciador de Soluções** e selecione **Propriedades** no menu de atalho. Expanda a pasta **Propriedades Comuns** e clique na página **Depurar Arquivos de Origem**.
 
- **Diretórios que contêm o código-fonte** contém uma lista de diretórios em que o depurador procura por arquivos de origem ao depurar a solução. Os subdiretórios dos diretórios especificados também são pesquisados.
+ **Diretórios que contêm o código-fonte** Contém uma lista de diretórios nos quais o depurador pesquisa arquivos de origem ao depurar a solução. Os subdiretórios dos diretórios especificados também são pesquisados.
 
- **Não procurar por esses arquivos de origem** digite os nomes de todos os arquivos que você não deseja que o depurador leia. Se o depurador encontrar um desses arquivos em um dos diretórios especificados acima, ele o ignorará. Se a caixa de diálogo **Localizar Fonte** aparecer durante a depuração e você clicar em **Cancelar**, o arquivo que você procurava será adicionado a essa lista para que o depurador não continue a procurar o arquivo.
+ **Não procurar esses arquivos de origem** Insira os nomes dos arquivos que você não deseja que o depurador Leia. Se o depurador encontrar um desses arquivos em um dos diretórios especificados acima, ele o ignorará. Se a caixa de diálogo **Localizar Fonte** aparecer durante a depuração e você clicar em **Cancelar**, o arquivo que você procurava será adicionado a essa lista para que o depurador não continue a procurar o arquivo.
 
 ## <a name="see-also"></a>Consulte também
 

@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - PDB_TYPE structure
 ms.assetid: 1c1bb772-77d6-4870-90b2-fd9247d0004e
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5972a6da9422917ef61fb07c9124edca24032ee2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 3121106b84111d20bf2915c0f9398fa92807cfd9
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62865421"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66349906"
 ---
 # <a name="pdbtype"></a>PDB_TYPE
 
@@ -41,18 +44,15 @@ public struct PDB_TYPE {
 };
 ```
 
-## <a name="parameters"></a>Parâmetros
+## <a name="members"></a>Membros
 
-`ulAppDomainID`
-
+`ulAppDomainID`\
 ID do aplicativo do qual o símbolo foi originada. Isso é usado para identificar exclusivamente uma instância do aplicativo.
 
-`guidModule`
-
+`guidModule`\
 O GUID do módulo que contém esse campo.
 
-`symid`
-
+`symid`\
 A ID do símbolo que corresponde a esse campo.
 
 ## <a name="remarks"></a>Comentários

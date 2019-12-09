@@ -8,33 +8,32 @@ api_name:
 - XElement.Xml
 ms.assetid: 69ab2a33-4fe7-4cfa-97f8-eaf063decb18
 caps.latest.revision: 4
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 368b18e7524e0cff31139de67f8092f9069246bf
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: c794d79d62fc580001efc5cf16993d4ac5fef48b
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54779542"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72663842"
 ---
 # <a name="xml-xelement-dynamic-property"></a>XML (propriedade dinâmica de XElement)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Obtém o conteúdo sem formatação XML do elemento.  
-  
-## <a name="syntax"></a>Sintaxe  
-  
-```  
-elem.Xml  
-```  
-  
-## <a name="property-valuereturn-value"></a>Valor da propriedade/valor de retorno  
- <xref:System.String> que representa o conteúdo sem formatação XML do elemento.  
-  
-## <a name="remarks"></a>Comentários  
- Esta propriedade é equivalente ao método de <xref:System.Xml.Linq.XNode.ToString%28System.Xml.Linq.SaveOptions%29> da classe de <xref:System.Xml.Linq.XNode?displayProperty=fullName> , com o parâmetro de `SaveOptions` definido como <xref:System.Xml.Linq.SaveOptions>.  
-  
-## <a name="see-also"></a>Consulte também  
- [Propriedades Dinâmicas da Classe XElement](../designers/xelement-class-dynamic-properties.md)   
- [Valor](../designers/value-xelement-dynamic-property.md)
+Obtém o conteúdo sem formatação XML do elemento.
+
+## <a name="syntax"></a>Sintaxe
+
+```
+elem.Xml
+```
+
+## <a name="property-valuereturn-value"></a>Valor da propriedade/valor de retorno
+ <xref:System.String> que representa o conteúdo sem formatação XML do elemento.
+
+## <a name="remarks"></a>Comentários
+ Esta propriedade é equivalente ao método de <xref:System.Xml.Linq.XNode.ToString%28System.Xml.Linq.SaveOptions%29> da classe de <xref:System.Xml.Linq.XNode?displayProperty=fullName> , com o parâmetro de `SaveOptions` definido como <xref:System.Xml.Linq.SaveOptions>.
+
+## <a name="see-also"></a>Veja também
+ [Valor](../designers/value-xelement-dynamic-property.md) de [propriedades dinâmicas da classe XElement](../designers/xelement-class-dynamic-properties.md)

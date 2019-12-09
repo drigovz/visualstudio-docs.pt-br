@@ -17,64 +17,64 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1ca692e85396b11647c507b18c95ca095b3f8072
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 88695511d22e38262dc969d66e469441c9c3ac47
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438764"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985477"
 ---
 # <a name="visio-object-model-overview"></a>Visão geral do modelo de objeto do Visio
-  Para desenvolver soluções do Office para Microsoft Office Visio, você pode interagir com o modelo de objeto do Visio. Esse modelo de objeto consiste em classes e interfaces que são fornecidos no assembly de interoperabilidade primário do Visio e são definidos na `Microsoft.Office.Interop.Visio` namespace.
+  Para desenvolver soluções do Office para Microsoft Office Visio, você pode interagir com o modelo de objeto do Visio. Esse modelo de objeto consiste em classes e interfaces que são fornecidas no assembly de interoperabilidade primário para o Visio e são definidas no namespace `Microsoft.Office.Interop.Visio`.
 
- Este tópico fornece uma visão geral do modelo de objeto do Visio. Para obter informações sobre como usar o modelo de objeto do Visio para executar tarefas em projetos do Office, consulte os tópicos a seguir:
+ Este tópico fornece uma breve visão geral do modelo de objeto do Visio. Para obter informações sobre como usar o modelo de objeto do Visio para executar tarefas em projetos do Office, consulte os seguintes tópicos:
 
 - [Trabalhar com documentos do Visio](../vsto/working-with-visio-documents.md)
 
 - [Trabalhar com formas do Visio](../vsto/working-with-visio-shapes.md)
 
 ## <a name="understand-the-visio-object-model"></a>Entender o modelo de objeto do Visio
- O Visio fornece muitos objetos com os quais você pode interagir. Esses objetos são organizados em uma hierarquia que segue rigorosamente a interface do usuário. Na parte superior da hierarquia é o [Microsoft.Office.Interop.Visio.Application](/office/vba/api/Visio.Application) objeto. Este objeto representa a instância atual do Visio. O `Microsoft.Office.Interop.Visio.Application` objeto contém o `Microsoft.Office.Interop.Visio.Document` e `Microsoft.Office.Interop.Visio.Page` objetos, bem como a `Microsoft.Office.Interop.Visio.Documents` e `Microsoft.Office.Interop.Visio.Pages` coleções. Cada um desses objetos e coleções tem vários métodos e propriedades que você pode acessar para manipular e interagir com ele.
+ O Visio fornece muitos objetos com os quais você pode interagir. Esses objetos são organizados em uma hierarquia que segue de maneira mais próxima a interface do usuário. Na parte superior da hierarquia está o objeto [Microsoft. Office. Interop. Visio. Application](/office/vba/api/Visio.Application) . Esse objeto representa a instância atual do Visio. O objeto `Microsoft.Office.Interop.Visio.Application` contém os objetos `Microsoft.Office.Interop.Visio.Document` e `Microsoft.Office.Interop.Visio.Page`, bem como as coleções `Microsoft.Office.Interop.Visio.Documents` e `Microsoft.Office.Interop.Visio.Pages`. Cada um desses objetos e coleções tem muitos métodos e propriedades que você pode acessar para manipular e interagir com ele.
 
- Para obter mais informações, consulte a documentação de referência do VBA [Microsoft.Office.Interop.Visio.Application](/office/vba/api/Visio.Application), [Microsoft.Office.Interop.Visio.Document](/office/vba/api/Visio.Document), e [ Microsoft.Office.Interop.Visio.Page](/office/vba/api/Visio.Page) objetos e também a [Microsoft.Office.Interop.Visio.Documents](/office/vba/api/Visio.Documents) e [Microsoft.Office.Interop.Visio.Pages](/office/vba/api/Visio.Pages) coleções.
+ Para obter mais informações, consulte a documentação de referência do VBA para [Microsoft. Office. Interop. Visio. Application](/office/vba/api/Visio.Application), [Microsoft. Office. Interop. Visio. Document](/office/vba/api/Visio.Document)e [Microsoft. Office. Interop. Visio. Page](/office/vba/api/Visio.Page) Objects e também o [ Coleções Microsoft. Office. Interop. Visio. Documents](/office/vba/api/Visio.Documents) e [Microsoft. Office. Interop. Visio. Pages](/office/vba/api/Visio.Pages) .
 
  As seções a seguir descrevem brevemente os objetos de nível superior e como eles interagem entre si. Esses objetos incluem os seguintes objetos:
 
 - Objeto de aplicativo
 
-- Objeto de documento
+- Objeto Document
 
 - Objeto Page
 
 ### <a name="application-object"></a>Objeto de aplicativo
- O objeto Microsoft.Office.Interop.Visio.Application representa o aplicativo do Visio e é o pai de todos os outros objetos. Seus membros geralmente se aplicam para o Visio como um todo. Você pode usar as propriedades e métodos do Microsoft.Office.Interop.Visio.Application e o `Microsoft.Office.Interop.Visio.ApplicationSettings` objetos para controlar o ambiente do Visio.
+ O objeto Microsoft. Office. Interop. Visio. Application representa o aplicativo Visio e é o pai de todos os outros objetos. Seus membros geralmente se aplicam ao Visio como um todo. Você pode usar as propriedades e métodos do Microsoft. Office. Interop. Visio. Application e os objetos de `Microsoft.Office.Interop.Visio.ApplicationSettings` para controlar o ambiente do Visio.
 
- Em projetos de suplemento do VSTO, você pode acessar o objeto Microsoft.Office.Interop.Visio.Application usando o `Application` campo do `ThisAddIn` classe. Para obter mais informações, consulte [Programando a validação](../vsto/programming-vsto-add-ins.md).
+ Em projetos de suplemento do VSTO, você pode acessar o objeto Microsoft. Office. Interop. Visio. Application usando o campo `Application` da classe `ThisAddIn`. Para obter mais informações, consulte [Programando a validação](../vsto/programming-vsto-add-ins.md).
 
-### <a name="document-object"></a>Objeto de documento
- O objeto Microsoft.Office.Interop.Visio.Document é fundamental para programação do Visio. Ele representa um desenho, estêncil ou arquivo de modelo. Quando você abre um documento do Visio ou cria um novo documento, você cria um novo objeto Microsoft.Office.Interop.Visio.Document, que é adicionado à coleção do objeto Microsoft.Office.Interop.Visio.Application Microsoft.Office.Interop.Visio.Documents .
+### <a name="document-object"></a>Objeto Document
+ O objeto Microsoft. Office. Interop. Visio. Document é fundamental para programar o Visio. Ele representa um arquivo de desenho, estêncil ou modelo. Quando você abre um documento do Visio ou cria um novo documento, cria um novo objeto Microsoft. Office. Interop. Visio. Document, que é adicionado à coleção Microsoft. Office. Interop. Visio. Documents do objeto Microsoft. Office. Interop. Visio. Application .
 
- O documento que tem o foco é chamado o documento ativo. Ele é representado pelo `Microsoft.Office.Interop.Visio.Application.ActiveDocument` propriedade do objeto Microsoft.Office.Interop.Visio.Application.
+ O documento que tem o foco é chamado de documento ativo. Ele é representado pela propriedade `Microsoft.Office.Interop.Visio.Application.ActiveDocument` do objeto Microsoft. Office. Interop. Visio. Application.
 
 ### <a name="page-object"></a>Objeto Page
- O objeto Microsoft.Office.Interop.Visio.Page representa a área de desenho de uma página de primeiro plano ou uma página de fundo. Você pode usar o `Microsoft.Office.Interop.Visio.Page.Background` propriedade para determinar se uma página é uma página de primeiro plano ou segundo plano.
+ O objeto Microsoft. Office. Interop. Visio. Page representa a área de desenho de uma página de primeiro plano ou uma página de fundo. Você pode usar a propriedade `Microsoft.Office.Interop.Visio.Page.Background` para determinar se uma página é uma página de primeiro plano ou plano de fundo.
 
- Para criar formas, você pode usar métodos que incluem o `Microsoft.Office.Interop.Visio.Page.DrawSpline` e `Microsoft.Office.Interop.Visio.Page.DrawOval` métodos. Além disso, você pode recuperar os mestres de estênceis e colocar as formas em uma página usando o `Microsoft.Office.Interop.Visio.Page.Drop` ou `Microsoft.Office.Interop.Visio.Page.DropMany` métodos.
+ Para criar formas, você pode usar métodos que incluem os métodos `Microsoft.Office.Interop.Visio.Page.DrawSpline` e `Microsoft.Office.Interop.Visio.Page.DrawOval`. Além disso, você pode recuperar mestres de estênceis e posicionar as formas em uma página usando os métodos `Microsoft.Office.Interop.Visio.Page.Drop` ou `Microsoft.Office.Interop.Visio.Page.DropMany`.
 
-## <a name="use-the-visio-object-model-documentation"></a>Use a documentação do modelo de objeto do Visio
- Para obter informações completas sobre o modelo de objeto do Visio, consulte a referência de modelo de objeto do Visio VBA. A referência de modelo de objeto VBA documenta o modelo de objeto do Visio, conforme ele é exposto ao Visual Basic para código Applications (VBA). Para obter mais informações, consulte [referência de modelo de objeto do Visio 2010](http://go.microsoft.com/fwlink/?LinkId=199775).
+## <a name="use-the-visio-object-model-documentation"></a>Usar a documentação do modelo de objeto do Visio
+ Para obter informações completas sobre o modelo de objeto do Visio, você pode consultar a referência de modelo de objeto VBA do Visio. A referência do modelo de objeto do VBA documenta o modelo de objeto do Visio como ele é exposto ao código Visual Basic for Applications (VBA). Para obter mais informações, consulte [referência de modelo de objeto do Visio](/office/vba/api/overview/visio/object-model).
 
- Todos os objetos e membros na referência de modelo de objeto do VBA correspondem aos tipos e membros no Visio assembly de interoperabilidade primário (PIA). Por exemplo, o `Document` objeto na referência de modelo de objeto do VBA corresponde ao tipo Microsoft.Office.Interop.Visio.Document no PIA do Visio. Embora a referência de modelo de objeto VBA fornece exemplos de código para a maioria das propriedades, métodos e eventos, você deve converter o código VBA essa referência para o Visual Basic ou Visual c#, se você quiser usá-los em um projeto de suplemento VSTO do Visio que você cria usando o Visual Studio.
+ Todos os objetos e membros na referência do modelo de objeto do VBA correspondem a tipos e membros no PIA (assembly de interoperabilidade principal) do Visio. Por exemplo, o objeto `Document` na referência do modelo de objeto do VBA corresponde ao tipo Microsoft. Office. Interop. Visio. Document no PIA do Visio. Embora a referência de modelo de objeto do VBA Forneça exemplos de código para a maioria das propriedades, métodos e eventos, você deve converter o código VBA nesta referência C# para Visual Basic ou Visual se quiser usá-los em um projeto de suplemento do Visio VSTO criado usando o Visual Studio.
 
 > [!NOTE]
-> Neste momento, não há nenhuma documentação de referência para o assembly de interoperabilidade primária do Visio.
+> Neste momento, não há documentação de referência para o assembly de interoperabilidade primário do Visio.
 
- Para obter exemplos de código relacionadas e ferramentas adicionais para a criação de soluções do Visio, consulte [software development kit do Visio 2010](http://go.microsoft.com/fwlink/?LinkId=196501).
+ Para obter exemplos de código relacionados e ferramentas adicionais para criar soluções do Visio, consulte [visio 2010 Software Development Kit](https://www.microsoft.com/download/details.aspx?id=12365).
 
-### <a name="additional-types-in-primary-interop-assemblies"></a>Outros tipos em assemblies de interoperabilidade primários
- Você pode encontrar os tipos em assemblies de interoperabilidade primários que não são visíveis ao VBA devido às diferenças de implementação. VBA fornece uma exibição do modelo de objeto do Visio que inclui apenas os objetos e membros que você pode usar diretamente. Assemblies de interoperabilidade primários expõem o mesmo modelo de objeto, mas eles também incluem outras interfaces, classes e membros que convertem os objetos no modelo de objeto COM para código gerenciado. Esses itens adicionais não se destinam a ser usado diretamente em seu código.
+### <a name="additional-types-in-primary-interop-assemblies"></a>Tipos adicionais em assemblies de interoperabilidade primários
+ Você pode encontrar tipos nos assemblies de interoperabilidade primária que não são visíveis para o VBA devido a diferenças de implementação. O VBA fornece uma exibição do modelo de objeto do Visio que inclui somente os objetos e membros que você pode usar diretamente. Os assemblies de interoperabilidade primários expõem o mesmo modelo de objeto, mas também incluem outras interfaces, classes e membros que convertem objetos no modelo de objeto COM em código gerenciado. Esses itens adicionais não devem ser usados diretamente no seu código.
 
- Para obter mais informações, consulte [visão geral de classes e interfaces em assemblies de interoperabilidade primários do Office](http://go.microsoft.com/fwlink/?LinkId=189592) e [assemblies de interoperabilidade primários do Office](../vsto/office-primary-interop-assemblies.md).
+ Para obter mais informações, consulte [visão geral de classes e interfaces nos assemblies de interoperabilidade primária do Office](/previous-versions/office/office-12/ms247299(v=office.12)) e assemblies de [interoperabilidade primária do Office](../vsto/office-primary-interop-assemblies.md).
 
 ## <a name="see-also"></a>Consulte também
 - [Soluções do Visio](../vsto/visio-solutions.md)

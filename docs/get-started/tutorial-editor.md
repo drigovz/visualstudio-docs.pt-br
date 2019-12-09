@@ -4,19 +4,19 @@ ms.date: 11/30/2017
 ms.technology: vs-ide-general
 ms.custom: get-started
 ms.topic: tutorial
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 913a5a08dc467ea23d22c2a08a23abfe70b9a736
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: f78c3dcb8cadadd103eb6a09f956bff97a4a8f03
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62943907"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647844"
 ---
 # <a name="learn-to-use-the-code-editor"></a>Saiba como usar o editor de códigos
 
@@ -32,11 +32,11 @@ Nesta introdução de 10 minutos ao editor de código do Visual Studio, adiciona
 ::: moniker range="vs-2019"
 
 > [!TIP]
-> Se você ainda não tiver instalado o Visual Studio, acesse a página [Downloads do Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) para instalá-lo gratuitamente.
+> Se você ainda não tiver instalado o Visual Studio, acesse a página [Downloads do Visual Studio](https://visualstudio.microsoft.com/downloads) para instalá-lo gratuitamente.
 
 ::: moniker-end
 
-Este artigo considera que você já esteja familiarizado com uma linguagem de programação. Se não estiver, sugerimos que você confira um dos tutoriais de programação, por exemplo, como criar um aplicativo Web com [Python](../ide/quickstart-python.md) ou [C#](../get-started/csharp/tutorial-aspnet-core.md), ou criar um aplicativo de console com [Visual Basic](../ide/quickstart-visual-basic-console.md) ou [C++](../ide/getting-started-with-cpp-in-visual-studio.md).
+Este artigo considera que você já esteja familiarizado com uma linguagem de programação. Se não estiver, sugerimos que você confira um dos tutoriais de programação, por exemplo, como criar um aplicativo Web com [Python](../ide/quickstart-python.md) ou [C#](../get-started/csharp/tutorial-aspnet-core.md), ou criar um aplicativo de console com [Visual Basic](../ide/quickstart-visual-basic-console.md) ou [C++](/cpp/get-started/tutorial-console-cpp).
 
 ## <a name="create-a-new-code-file"></a>Criar um novo arquivo de código
 
@@ -128,7 +128,7 @@ O bloco de código é recolhido apenas na primeira linha, seguido por um sinal d
 
 ## <a name="view-symbol-definitions"></a>Exibir definições de símbolo
 
-O editor do Visual Studio facilita a inspeção da definição de um tipo, de um método, etc. Uma maneira é navegar até o arquivo que contém a definição, por exemplo, ao selecionar **Ir para Definição** em qualquer lugar em que o símbolo esteja referenciado. Uma maneira ainda mais rápida que não move o foco para fora do arquivo em que você está trabalhando é usar a opção [Inspecionar Definição](../ide/go-to-and-peek-definition.md#peek-definition). Vamos espiar a definição do tipo `string`.
+O editor do Visual Studio torna mais fácil inspecionar a definição de um tipo, método, etc. Uma maneira é navegar até o arquivo que contém a definição, por exemplo, escolhendo **ir para definição** em qualquer lugar em que o símbolo é referenciado. Uma maneira ainda mais rápida que não move o foco para fora do arquivo em que você está trabalhando é usar a opção [Inspecionar Definição](../ide/go-to-and-peek-definition.md#peek-definition). Vamos espiar a definição do tipo `string`.
 
 1. Clique com o botão direito do mouse em qualquer ocorrência de `string` e escolha **Espiar Definição** no menu de conteúdo. Se preferir, pressione **Alt**+**F12**.
 

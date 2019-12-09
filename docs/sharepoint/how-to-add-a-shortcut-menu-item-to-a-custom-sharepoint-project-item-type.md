@@ -1,5 +1,5 @@
 ---
-title: 'Como: Adicionar um Item de Menu de atalho a um tipo de Item de projeto personalizado do SharePoint | Microsoft Docs'
+title: Adicionar item de menu de atalho para o tipo de item de projeto personalizado do SharePoint
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7de1bf04137c0e799e19e658307d630ec3fa6a78
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 95c47cdc00fc9035870aed4ac2e0bee4d3c1c5af
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62967162"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401631"
 ---
 # <a name="how-to-add-a-shortcut-menu-item-to-a-custom-sharepoint-project-item-type"></a>Como: Adicionar um item de menu de atalho para um tipo de item de projeto personalizado do SharePoint
   Quando você define um tipo de item de projeto personalizado do SharePoint, você pode adicionar um item de menu de atalho para o item de projeto. O item de menu é exibido quando um usuário clica o item de projeto no **Gerenciador de soluções**.

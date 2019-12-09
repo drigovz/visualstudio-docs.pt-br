@@ -12,11 +12,11 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 79a8fafc748274015dac7f8f0938bba37ba5a8bc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58926892"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68194347"
 ---
 # <a name="menu-element"></a>Elemento Menu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,7 +52,7 @@ Define um item de menu. Estes são os seis tipos de menus: Contexto, Menu, MenuC
 |Elemento|Descrição|  
 |-------------|-----------------|  
 |Pai|Opcional. O elemento pai do item de menu.|  
-|CommandFlag|Necessário. Ver [comando sinalizador elemento](../extensibility/command-flag-element.md). Os valores válidos de CommandFlag para um Menu são da seguinte maneira:<br /><br /> -   **AlwaysCreate**<br />-   **DefaultDocked**<br />-   **DefaultInvisible** -esse sinalizador não afeta a exibição das barras de ferramentas.<br />-   **DontCache**<br />-   **DynamicVisibility** -esse sinalizador não afeta a exibição das barras de ferramentas.<br />-   **IconAndText**<br />-   **NoCustomize**<br />-   **NotInTBList**<br />-   **NoToolbarClose**<br />-   **TextChanges**<br />-   **TextIsAnchorCommand**|  
+|CommandFlag|Necessário. Ver [comando sinalizador elemento](../extensibility/command-flag-element.md). Os valores válidos de CommandFlag para um Menu são da seguinte maneira:<br /><br /> -   **AlwaysCreate**<br />-   **DefaultDocked**<br />-   **DefaultInvisible** -esse sinalizador não afeta a exibição das barras de ferramentas.<br />-   **DontCache**<br />-   **DynamicVisibility** -esse sinalizador não afeta a exibição das barras de ferramentas.<br />-   **IconAndText**<br />-   **NoCustomize**<br />-   **NotInTBList**<br />-   **NoToolbarClose**<br />-   **TextoAltera**<br />-   **TextIsAnchorCommand**|  
 |Cadeias de caracteres|Necessário. Ver [cadeias de caracteres de elemento](../extensibility/strings-element.md). O filho `ButtonText` elemento deve ser definido.|  
 |Anotação|Comentário opcional.|  
   

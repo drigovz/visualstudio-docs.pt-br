@@ -1,37 +1,37 @@
 ---
-title: Designer de fluxo de trabalho - Designer de atividade de relançar
+title: Designer de Fluxo de Trabalho-relançar o designer de atividade
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.Rethrow.UI
 ms.assetid: 9cfa2eda-395f-4cf3-9154-83fadd4f7452
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 558ff5a36d172b8cd1fef0b811d1eaa920b90c6d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4d015ad500537a17cfc2c48c8076df43a38534ea
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63009269"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650016"
 ---
 # <a name="rethrow-activity-designer"></a>Designer de atividade de Relançar
 
-O **relançar** designer de atividade é usado para criar e configurar um <xref:System.Activities.Statements.Rethrow> atividade.
+O designer de atividade **Rethrow** é usado para criar e configurar uma atividade de <xref:System.Activities.Statements.Rethrow>.
 
-## <a name="the-rethrow-activity"></a>A atividade de relançar
+## <a name="the-rethrow-activity"></a>A atividade Rethrow
 
 A atividade de <xref:System.Activities.Statements.Rethrow> lança uma exceção lançada anteriormente. Esta atividade somente pode ser usada em um manipulador de <xref:System.Activities.Statements.Catch> na atividade de <xref:System.Activities.Statements.TryCatch> .
 
-### <a name="use-the-rethrow-activity-designer"></a>Use o Designer de atividade de relançar
+### <a name="use-the-rethrow-activity-designer"></a>Usar o designer de atividade Rethrow
 
-Acesso a **relançar** designer de atividade na **tratamento de erros** categoria dos **caixa de ferramentas**. O **relançar** designer de atividade pode ser arrastado da **caixa de ferramentas** e ignorados sobre a superfície do Designer de fluxo de trabalho onde quer que as atividades são colocadas em geral, como em um <xref:System.Activities.Statements.Sequence>. Soltar o designer de atividade cria uma <xref:System.Activities.Statements.Rethrow> atividade com um padrão **DisplayName** throw. O <xref:System.Activities.Activity.DisplayName%2A> valor pode ser editado no cabeçalho do **relançar** designer de atividade, ou nos **DisplayName** caixa da grade de propriedade.
+Acesse o designer de atividade **Rethrow** na categoria **tratamento de erros** da **caixa de ferramentas**. O designer de atividade **Rethrow** pode ser arrastado da **caixa de ferramentas** e descartado para a superfície de designer de fluxo de trabalho sempre que as atividades são geralmente colocadas, como dentro de um <xref:System.Activities.Statements.Sequence>. Descartar o designer de atividade cria uma atividade de <xref:System.Activities.Statements.Rethrow> com um **DisplayName** padrão de Throw. O valor <xref:System.Activities.Activity.DisplayName%2A> pode ser editado no cabeçalho do designer de atividade **Rethrow** ou na caixa **DisplayName** da grade de propriedades.
 
-### <a name="the-rethrow-properties"></a>As propriedades de relançar
+### <a name="the-rethrow-properties"></a>As propriedades Rethrow
 
-A tabela a seguir mostra o <xref:System.Activities.Statements.Rethrow> propriedades e descreve como eles são usados no designer:
+A tabela a seguir mostra as propriedades de <xref:System.Activities.Statements.Rethrow> e descreve como elas são usadas no designer:
 
 |Nome da Propriedade|Necessária|Uso|
 |-|--------------|-|

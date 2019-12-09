@@ -2,8 +2,8 @@
 title: Refatorar um campo para uma propriedade
 ms.date: 01/26/2018
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 f1_keywords:
 - vs.csharp.refactoring.encapsulatefield
@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9030fd2ae85d12760d6f6a12be54492f3c14e12b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 0e47a62fcea8306c22564e50adde436b4f35e549
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62791264"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72654475"
 ---
 # <a name="encapsulate-a-field-refactoring"></a>Refatoração Encapsular um campo
 
@@ -27,11 +27,11 @@ Esta refatoração aplica-se a:
 
 - Visual Basic
 
-**O quê:** Permite transformar um campo em uma propriedade e atualizar todos os usos desse campo para usar a propriedade recém-criada.
+**O quê:** permite que você transforme um campo em uma propriedade e atualize todos os usos desse campo a fim de usar a propriedade recém-criada.
 
-**Quando:** Você deseja mover um campo para uma propriedade e atualizar todas as referências a esse campo.
+**Quando:** você quer mover um campo para uma propriedade e atualizar todas as referências a esse campo.
 
-**Por que:** Você deseja conceder a outras classes o acesso a um campo, mas não deseja que essas classes tenham acesso direto.  Ao encapsular o campo em uma propriedade, você pode escrever o código para verificar o valor que está sendo atribuído, por exemplo.
+**Por quê:** você quer conceder a outras classes o acesso a um campo, mas não quer que essas classes tenham acesso direto.  Ao encapsular o campo em uma propriedade, você pode escrever o código para verificar o valor que está sendo atribuído, por exemplo.
 
 ## <a name="how-to"></a>Como fazer
 
@@ -49,7 +49,7 @@ Esta refatoração aplica-se a:
 
    - **Teclado**
       - Pressione **Ctrl+R**, em seguida, **Ctrl+E**.  (Observe que o atalho de teclado pode ser diferente com base no perfil selecionado.)
-      - Pressione **Ctrl**+**.** para disparar o menu **Ações Rápidas e Refatorações** e selecione **Encapsular campo** no pop-up da janela Visualização.
+      - Pressione **Ctrl**+ **.** para disparar o menu **Ações Rápidas e Refatorações** e selecione **Encapsular campo** no pop-up da janela Visualização.
    - **Mouse**
       - Selecione **Editar > Refatorar > Encapsular Campo**.
       - Clique com o botão direito do mouse no código, selecione o menu **Ações Rápidas e Refatorações** e selecione **Encapsular campo** no pop-up da janela Visualização.

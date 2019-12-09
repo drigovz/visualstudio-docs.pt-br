@@ -1,5 +1,5 @@
 ---
-title: 'CA1047: Não declarar membros protegidos em tipos lacrados | Microsoft Docs'
+title: 'CA1047: não declarar membros protegidos em tipos lacrados | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,39 +12,39 @@ helpviewer_keywords:
 - DoNotDeclareProtectedMembersInSealedTypes
 ms.assetid: 829033b5-a9d8-4f26-a719-45494c9dd035
 caps.latest.revision: 18
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 6d949a756dfe3ff22ba43d172078d35bfe706e14
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ebc6732e559b70e753a44b14cf45b7de9fc150d4
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62535860"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72668178"
 ---
-# <a name="ca1047-do-not-declare-protected-members-in-sealed-types"></a>CA1047: Não declarar membros protegidos em tipos selados
+# <a name="ca1047-do-not-declare-protected-members-in-sealed-types"></a>CA1047: não declarar membros protegidos em tipos lacrados
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |NomeDoTipo|DoNotDeclareProtectedMembersInSealedTypes|
 |CheckId|CA1047|
-|Categoria|Microsoft.Design|
-|Alteração Significativa|Não são significativas|
+|Categoria|Microsoft. Design|
+|Alteração Significativa|Sem interrupção|
 
 ## <a name="cause"></a>Causa
- É um tipo público `sealed` (`NotInheritable` no Visual basic) e declara um membro protegido ou um tipo aninhado protegido. Essa regra não relata violações para <xref:System.Object.Finalize%2A> métodos, que devem seguir esse padrão.
+ Um tipo público é `sealed` (`NotInheritable` no Visual Basic) e declara um membro protegido ou um tipo aninhado protegido. Essa regra não relata violações para métodos de <xref:System.Object.Finalize%2A>, que devem seguir esse padrão.
 
 ## <a name="rule-description"></a>Descrição da Regra
- Os tipos declaram membros protegidos de forma que a herança de tipos possa acessar ou substituir o membro. Por definição, você não pode herdar de um tipo selado, o que significa que métodos em tipos lacrados protegidos não pode ser chamada.
+ Os tipos declaram membros protegidos de forma que a herança de tipos possa acessar ou substituir o membro. Por definição, você não pode herdar de um tipo lacrado, o que significa que métodos protegidos em tipos lacrados não podem ser chamados.
 
- O compilador c# emite um aviso para esse erro.
+ O C# compilador emite um aviso para esse erro.
 
 ## <a name="how-to-fix-violations"></a>Como Corrigir Violações
- Para corrigir uma violação dessa regra, altere o nível de acesso do membro particular ou tornar o tipo herdável.
+ Para corrigir uma violação dessa regra, altere o nível de acesso do membro para privado ou torne o tipo herdável.
 
 ## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos
- Não suprima um aviso nessa regra. Deixar o tipo em seu estado atual pode causar problemas de manutenção e não oferece nenhum benefício.
+ Não suprima um aviso nessa regra. Deixar o tipo em seu estado atual pode causar problemas de manutenção e não fornece nenhum benefício.
 
 ## <a name="example"></a>Exemplo
  O exemplo a seguir mostra um tipo que viola essa regra.

@@ -11,16 +11,16 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 188865b715c7c071222f7132c6f9bdd9b3dc596a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 1786c8c57c841744ed27b03e4969fe2bd21ce2c7
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62961717"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985190"
 ---
-# <a name="step-2-create-a-flask-app-with-views-and-page-templates"></a>Etapa 2: Criar um aplicativo do Flask com modos de exibição e modelos de página
+# <a name="step-2-create-a-flask-app-with-views-and-page-templates"></a>Etapa 2: Criar um aplicativo Flask com exibições e modelos de página
 
-**Etapa anterior: [Criar um projeto e uma solução do Visual Studio](learn-flask-visual-studio-step-01-project-solution.md)**
+**Etapa anterior: [Criar uma solução e um projeto do Visual Studio](learn-flask-visual-studio-step-01-project-solution.md)**
 
 Na etapa 1 deste tutorial, você tem um aplicativo Flask com uma página e todo o código em um único arquivo. Para permitir o desenvolvimento futuro, é melhor refatorar o código e criar uma estrutura para modelos de página. Em particular, separe o código para exibições do aplicativo de outros aspectos como o código de inicialização.
 
@@ -84,7 +84,7 @@ No código criado pelo modelo "Projeto Web em Branco do Flask", você tem um ún
 
 7. Selecione **Depurar** > **Iniciar Depuração** (**F5**) ou use o botão **Servidor Web** na barra de ferramentas (o navegador exibido poderá variar) para iniciar o aplicativo e abrir um navegador. Experimente as rotas de URL / e /home.
 
-8. Também é possível definir pontos de interrupção em várias partes do código e reiniciar o aplicativo para seguir a sequência de inicialização. Por exemplo, defina um ponto de interrupção nas primeiras linhas de *runserver.py* e *HelloFlask\_* init_*.py* e na linha `return "Hello Flask!"` de *views.py*. Em seguida, reinicie o aplicativo (**Depurar** > **Reiniciar**, **Ctrl**+**F5** ou o botão de barra de ferramentas mostrado abaixo) e execute o código em etapas (**F10**) ou execute-o em cada ponto de interrupção usando **F5**.
+8. Também é possível definir pontos de interrupção em várias partes do código e reiniciar o aplicativo para seguir a sequência de inicialização. Por exemplo, defina um ponto de interrupção nas primeiras linhas de *runserver.py* e *HelloFlask\_* init_ *.py* e na linha `return "Hello Flask!"` de *views.py*. Em seguida, reinicie o aplicativo (**Depurar** > **Reiniciar**, **Ctrl**+**F5** ou o botão de barra de ferramentas mostrado abaixo) e execute o código em etapas (**F10**) ou execute-o em cada ponto de interrupção usando **F5**.
 
     ![Botão de reinicialização na barra de ferramentas de depuração no Visual Studio](media/debugging-restart-toolbar-button.png)
 
@@ -98,13 +98,13 @@ Como você já fez alterações no seu código e as testou com êxito, agora é 
 
     ![Botão de alterações de controle do código-fonte na barra de status do Visual Studio](media/flask/step02-source-control-changes-button.png)
 
-1. No **Team Explorer**, digite uma mensagem de confirmação como "Refatorar código" e selecione **Confirmar Tudo**. Quando a confirmação for concluída, será exibida a mensagem **Confirmar \<hash> criada localmente. Sincronize para compartilhar as alterações com o servidor.** Se você quiser enviar alterações por push para o repositório remoto, selecione **Sincronizar**, depois selecione **Push** em **Confirmações de Saída**. Também é possível acumular várias confirmações locais antes de enviar para o repositório remoto.
+1. No **Team Explorer**, digite uma mensagem de confirmação como "Refatorar código" e selecione **Confirmar Tudo**. Quando a confirmação for concluída, você verá uma mensagem de **confirmação \<hash > criado localmente. Sincronizar para compartilhar suas alterações com o servidor.** Se você quiser enviar alterações por push para o repositório remoto, selecione **Sincronizar**, depois selecione **Push** em **Confirmações de Saída**. Também é possível acumular várias confirmações locais antes de enviar para o repositório remoto.
 
     ![Enviar confirmações por push para repositório remoto no Team Explorer](media/flask/step02-source-control-push-to-remote.png)
 
 ### <a name="question-how-frequently-should-one-commit-to-source-control"></a>Pergunta: Com que frequência é necessário fazer a confirmação no controle do código-fonte?
 
-Resposta: A confirmação de alterações no controle do código-fonte cria um registro no log de alterações e um ponto em que é possível reverter o repositório se necessário. Cada confirmação também pode ser examinada para suas alterações específicas. Como as confirmações no GIT não são caras, é melhor realizar confirmações frequentes do que acumular um grande número de alterações em uma única confirmação. Obviamente, não é necessário confirmar cada pequena alteração em arquivos individuais. Normalmente, você realiza uma confirmação ao adicionar uma funcionalidade, alterando uma estrutura como você fez nesta etapa, ou realizar alguma refatoração do código. Verifique também com outras pessoas da sua equipe para a granularidade de confirmações que funcionam melhor para todos.
+Resposta: A confirmação de alterações no controle do código-fonte cria um registro no log de alterações e um ponto em que é possível reverter o repositório, se necessário. Cada confirmação também pode ser examinada para suas alterações específicas. Como as confirmações no GIT não são caras, é melhor realizar confirmações frequentes do que acumular um grande número de alterações em uma única confirmação. Obviamente, não é necessário confirmar cada pequena alteração em arquivos individuais. Normalmente, você realiza uma confirmação ao adicionar uma funcionalidade, alterando uma estrutura como você fez nesta etapa, ou realizar alguma refatoração do código. Verifique também com outras pessoas da sua equipe para a granularidade de confirmações que funcionam melhor para todos.
 
 A frequência de confirmação e a frequência de envio de confirmações por push a um repositório remoto são duas preocupações diferentes. Você pode acumular várias confirmações no seu repositório local antes de enviá-las por push para o repositório remoto. Novamente, a frequência de confirmação depende de como sua equipe deseja gerenciar o repositório.
 
@@ -201,7 +201,7 @@ Resposta: Embora os modelos geralmente sejam mantidos em arquivos HTML separados
 
 ### <a name="question-must-templates-use-the-html-file-extension"></a>Pergunta: Os modelos precisam usar a extensão de arquivo .html?
 
-Resposta: A extensão *.html* para arquivos de modelo de página é totalmente opcional, porque você sempre identifica o caminho relativo exato para o arquivo no primeiro argumento para a função `render_template`. No entanto, o Visual Studio (e outros editores) costuma fornecer funcionalidades como preenchimento de código e coloração de sintaxe com arquivos *.html*, o que supera o fato de os modelos de página não serem estritamente HTML.
+Resposta: A extensão *.html* dos arquivos de modelo de página é totalmente opcional, porque você sempre identifica o caminho relativo exato para o arquivo no primeiro argumento para a função `render_template`. No entanto, o Visual Studio (e outros editores) costuma fornecer funcionalidades como preenchimento de código e coloração de sintaxe com arquivos *.html*, o que supera o fato de os modelos de página não serem estritamente HTML.
 
 De fato, quando você está trabalhando com um projeto do Flask, o Visual Studio detecta automaticamente quando o arquivo HTML que você está editando é, na verdade, um modelo do Flask e fornece algumas funcionalidades de preenchimento automático. Por exemplo, quando você começa a digitar um comentário no modelo de página do Flask, `{#`, o Visual Studio fornece automaticamente os caracteres de fechamento `#}`. Os comandos **Comentar Seleção** e **Remover Marca de Comentário da Seleção** (no menu **Editar** > **Avançado** e na barra de ferramentas) também usam comentários de modelo em vez de comentários em HTML.
 
@@ -220,5 +220,5 @@ Resposta: Sim. É possível usar subpastas e, em seguida, referir-se ao caminho 
 
 ## <a name="go-deeper"></a>Aprofunde-se um pouco mais
 
-- [Início rápido do Flask – Renderizando modelos](http://flask.pocoo.org/docs/1.0/quickstart/#rendering-templates) (flask.pocoo.org)
+- [Início rápido do Flask – Renderizando modelos](https://flask.palletsprojects.com/en/1.0.x/quickstart/#rendering-templates) (flask.pocoo.org)
 - Código-fonte do tutorial no GitHub: [Microsoft/python-sample-vs-learning-flask](https://github.com/Microsoft/python-sample-vs-learning-flask)

@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugStackFrame3::GetUnwindCodeContext method
 ms.assetid: b25f7e7d-2b24-48e4-93b3-829e61d73ebf
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cb0fc6511def34c1f15f91fca22fa9903daa08a9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: a63883b8c2f1f7e09070173281f5e9eeda528352
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62915940"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352098"
 ---
 # <a name="idebugstackframe3getunwindcodecontext"></a>IDebugStackFrame3::GetUnwindCodeContext
 Retorna o contexto de código que representa um local se a operação de desenrolamento de uma pilha ocorreu.
@@ -36,10 +39,9 @@ int GetUnwindCodeContext(
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `ppCodeContext`
-
- [out] Retorna um [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) objeto que representa o local do contexto de código se ocorrer um desenrolamento de pilha.
+## <a name="parameters"></a>Parâmetros
+`ppCodeContext`\
+[out] Retorna um [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) objeto que representa o local do contexto de código se ocorrer um desenrolamento de pilha.
 
 ## <a name="return-value"></a>Valor de retorno
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.

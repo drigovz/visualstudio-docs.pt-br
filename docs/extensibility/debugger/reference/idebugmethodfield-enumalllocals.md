@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugMethodField::EnumAllLocals method
 ms.assetid: 0bc7cc13-2628-4bd8-8c06-4d2aa6755ea8
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bbbc610dad6ab5915efe07718ad9a80592af4034
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: bd0bc879cccf2bc806d73bfac47bc4795749e0cf
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62872984"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66346940"
 ---
 # <a name="idebugmethodfieldenumalllocals"></a>IDebugMethodField::EnumAllLocals
 Cria um enumerador para todas as variáveis locais do método, inclusive aquelas geradas internamente por um compilador.
@@ -38,14 +41,12 @@ int EnumAllLocals(
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `pAddress`
+## <a name="parameters"></a>Parâmetros
+`pAddress`\
+[in] Uma [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) que representa um endereço de depuração dentro do método, que aponta para um determinado escopo ou contexto de objeto.
 
- [in] Uma [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) que representa um endereço de depuração dentro do método, que aponta para um determinado escopo ou contexto de objeto.
-
- `ppLocals`
-
- [out] Retorna um [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) objeto que representa a lista de todos os locais no escopo especificado; caso contrário, retornará um valor nulo que indica nenhuma locais.
+`ppLocals`\
+[out] Retorna um [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) objeto que representa a lista de todos os locais no escopo especificado; caso contrário, retornará um valor nulo que indica nenhuma locais.
 
 ## <a name="return-value"></a>Valor de retorno
  Se for bem-sucedido, Retorna S_OK ou retornará S_FALSE se não houver nenhum locais. Caso contrário, retornará um código de erro.

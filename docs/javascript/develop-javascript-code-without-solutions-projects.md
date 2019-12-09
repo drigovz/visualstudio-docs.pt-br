@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 3d6e3479fe27c5d88b58f096ab5405d75c6c98e3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 288cb11d3e6ae3917f5fcc6ec9ed242549908576
+ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62960562"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72888646"
 ---
 # <a name="develop-javascript-and-typescript-code-in-visual-studio-without-solutions-or-projects"></a>Desenvolver código JavaScript e TypeScript no Visual Studio sem projetos ou soluções
 
@@ -74,9 +74,10 @@ Você pode habilitar a integração de teste de unidade no Visual Studio especif
 
 O executor de teste enumera os pacotes instalados localmente para determinar a estrutura de teste a ser usada.
 Se nenhuma das estruturas com suporte for reconhecida, o executor de teste padrão será *ExportRunner*. As outras estruturas com suporte são:
-* Mocha ([mochajs.org](http://mochajs.org/))
+* Mocha ([mochajs.org](https://mochajs.org/))
 * Jasmine ([Jasmine.github.io](https://jasmine.github.io/))
 * Tape ([github.com/substack/tape](https://github.com/substack/tape))
+* Jest ([jestjs.io](https://jestjs.io/))
 
 Depois de abrir o Gerenciador de Testes (escolha **Teste** > **Windows** > **Gerenciador de Testes**), o Visual Studio detecta e exibe os testes.
 

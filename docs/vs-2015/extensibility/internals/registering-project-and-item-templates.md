@@ -15,11 +15,11 @@ caps.latest.revision: 28
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a06e7a292d960e675ad4b0de97499557542fef1c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58924725"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68185833"
 ---
 # <a name="registering-project-and-item-templates"></a>Registrando modelos de projeto e item
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -67,7 +67,7 @@ Tipos de projeto devem registrar os diretórios onde se encontram seus modelos d
 ### <a name="registering-file-filters"></a>Filtros de arquivo do registro  
  Opcionalmente, você pode registrar os filtros que [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] usa quando ele solicita para nomes de arquivo. Por exemplo, o [!INCLUDE[csprcs](../../includes/csprcs-md.md)] filtrar para o **abrir arquivo** caixa de diálogo é:  
   
- **Arquivos Visual C# (\*. cs,\*. resx,\*Settings,\*. xsd,\*. WSDL);\*. CS,\*. resx,\*Settings,\*. xsd,\*. WSDL)**  
+ **Arquivos Visual c# (\*. cs,\*. resx,\*Settings,\*. xsd,\*. WSDL);\*. CS,\*. resx,\*Settings,\*. xsd,\*. WSDL)**  
   
  Para dar suporte a registro de vários filtros, cada filtro é registrado em sua própria subchave sob HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\\<*versão*> \Projects\\{ \< *ProjectGUID*>} \Filters\\<*subchave*>. O nome da subchave é arbitrário; [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ignora o nome da subchave e usa apenas seus valores.  
   

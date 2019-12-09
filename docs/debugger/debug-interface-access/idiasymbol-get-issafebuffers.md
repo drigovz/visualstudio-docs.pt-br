@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_issafebuffers | Microsoft Docs'
+title: 'IDiaSymbol:: get_isSafeBuffers | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f5dd923b9f7244bb42fdf8defb70b8ed5dc82ed0
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 0f4c3ab653c0a5540410d8e3e0b5426c4d0bcde5
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63400098"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740085"
 ---
-# <a name="idiasymbolgetissafebuffers"></a>IDiaSymbol::get_isSafeBuffers
-Recupera um sinalizador que especifica se a diretiva de pré-processador para um buffer seguro é usada. Usado quando o [enumeração SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) é definido como `SymTagFunction`.
+# <a name="idiasymbolget_issafebuffers"></a>IDiaSymbol::get_isSafeBuffers
+Recupera um sinalizador que especifica se a diretiva de pré-processador para um buffer seguro é usada. Use quando a [Enumeração SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) for definida como `SymTagFunction`.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -33,20 +33,20 @@ HRESULT get_isSafeBuffers( 
 #### <a name="parameters"></a>Parâmetros
  `pRetVal`
 
-[out] Retorna `TRUE` se o ponteiro usa uma diretiva de pré-processador para um buffer seguro; caso contrário, retornará `FALSE`.
+fora Retorna `TRUE` se o ponteiro usa uma diretiva de pré-processador para um buffer seguro; caso contrário, retorna `FALSE`.
 
-## <a name="return-value"></a>Valor de retorno
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE` ou um código de erro.
 
 > [!NOTE]
-> Um valor de retorno `S_FALSE` significa que a propriedade não está disponível para o símbolo.
+> Um valor de retorno de `S_FALSE` significa que a propriedade não está disponível para o símbolo.
 
 ## <a name="remarks"></a>Comentários
 
 ## <a name="requirements"></a>Requisitos
- Cabeçalho: Dia2.h
+ Cabeçalho: dia2. h
 
- Biblioteca: diaguids.lib
+ Biblioteca: diaguids. lib
 
  DLL: msdia100.dll
 

@@ -12,11 +12,11 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 75d96098e8444aac9a4fc6f895099435b54f640b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58925790"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68180322"
 ---
 # <a name="keybinding-element"></a>Elemento KeyBinding
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ O elemento de associação de teclas Especifica atalhos de teclado para os coman
 |id|Necessário.|  
 |editor|Necessário. O GUID do editor indica o contexto de edição para o qual este atalho de teclado estará ativo. O valor de escopo de associação global é "guidVSStd97".|  
 |CHAVE1|Necessário. Os valores válidos incluem todos os caracteres alfanuméricos typable e também valores hexadecimais de dois dígitos precedidos por 0x e VK_constants.|  
-|mod1|Opcional. Qualquer combinação de CTRL, ALT e SHIFT separados por espaço.|  
+|Mod1|Opcional. Qualquer combinação de CTRL, ALT e SHIFT separados por espaço.|  
 |Key2|Opcional. Os valores válidos incluem todos os caracteres alfanuméricos typable e também valores hexadecimais de dois dígitos precedidos por 0x e VK_constants.|  
 |mod2|Opcional. Qualquer combinação de CTRL, ALT e SHIFT separados por espaço.|  
 |Emulador|Opcional.|  

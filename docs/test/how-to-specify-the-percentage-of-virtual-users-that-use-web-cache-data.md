@@ -1,21 +1,21 @@
 ---
-title: Especificar o percentual de usuários virtuais que usam dados de cache da Web para testes de carga
+title: 'Teste de carga: definir porcentagem de usuário virtual usando dados de cache da Web'
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - load tests, virtual users
 ms.assetid: f66d5d43-4121-4487-b27f-d0a0baaf7601
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 08f0bb9fb14c631f3bf1e5545a69663eb060e3e7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: bc8baf2586e0c0ce682436387bfd612af14e18bd
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62821124"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653375"
 ---
-# <a name="how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data"></a>Como: Especificar o percentual de usuários virtuais que usam dados de cache da Web
+# <a name="how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data"></a>Como especificar o percentual de usuários virtuais que usam dados de cache da Web
 
 Depois de criar seu teste de carga com o **Novo Assistente de Teste de Carga**, você poderá alterar as propriedades dos cenários de forma a atender suas necessidades e objetivos de teste usando o **Editor de Teste de Carga**. Para obter uma lista completa das propriedades de cenário de teste de carga e suas descrições, confira [Propriedades do cenário de teste de carga](../test/load-test-scenario-properties.md).
 
@@ -49,7 +49,7 @@ Se você estiver testando a carga de um site que tem um número significativo de
 ## <a name="see-also"></a>Consulte também
 
 - [Editar cenários de teste de carga](../test/edit-load-test-scenarios.md)
-- [Passo a passo: Criar e executar um teste de carga](../test/walkthrough-create-and-run-a-load-test.md)
+- [Passo a passo: criar e executar um teste de carga](../test/walkthrough-create-and-run-a-load-test.md)
 - [Controladores e agentes de teste](configure-test-agents-and-controllers-for-load-tests.md)
 - [Propriedades do cenário de teste de carga](../test/load-test-scenario-properties.md)
 - [Editar padrões de carga para modelar atividades de usuário virtual](../test/edit-load-patterns-to-model-virtual-user-activities.md)

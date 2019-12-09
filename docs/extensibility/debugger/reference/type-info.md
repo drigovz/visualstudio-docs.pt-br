@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - TYPE_INFO structure
 ms.assetid: d725cb68-a565-49d1-a16f-ff0445c587a0
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9af633c49538a2b74163647d537526b35f2aa048
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 86212a5ef6f417dae2ae345b1367e041c3cf9095
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63415788"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66316125"
 ---
 # <a name="typeinfo"></a>TYPE_INFO
 Essa estrutura especifica vários tipos de informações sobre o tipo de um campo.
@@ -43,27 +46,26 @@ public struct TYPE_INFO {
 };
 ```
 
-#### <a name="parameters"></a>Parâmetros
- valor dwKind A partir de [dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md) enumeração que determina como interpretar a união.
+## <a name="members"></a>Membros
+ `dwKind`\
+ Um valor a partir de [dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md) enumeração que determina como interpretar a união.
 
- type.typeMeta
-
+ `type.typeMeta`\
  [C++ somente] Contém uma [METADATA_TYPE](../../../extensibility/debugger/reference/metadata-type.md) estrutura se `dwKind` é `TYPE_KIND_METADATA`.
 
- type.typePdb
-
+ `type.typePdb`\
  [C++ somente] Contém uma [PDB_TYPE](../../../extensibility/debugger/reference/pdb-type.md) estrutura se `dwKind` é `TYPE_KIND_PDB`.
 
- type.typeBuilt
-
+ `type.typeBuilt`\
  [C++ somente] Contém uma [BUILT_TYPE](../../../extensibility/debugger/reference/built-type.md) estrutura se `dwKind` é `TYPE_KIND_BUILT`.
 
- preenchimento do Type.Unused não utilizados.
+ `type.unused`\
+ Preenchimento não utilizado.
 
- Digite o nome da união.
+ `type`\
+ Nome da união.
 
- unionmember
-
+ `unionmember`\
  [C# somente] Marshaling para o tipo de estrutura apropriada com base em `dwKind`.
 
 ## <a name="remarks"></a>Comentários

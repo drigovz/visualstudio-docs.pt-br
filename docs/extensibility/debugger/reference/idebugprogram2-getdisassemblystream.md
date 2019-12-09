@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgram2::GetDisassemblyStream
 ms.assetid: beda0da5-267e-4bf3-96c4-b659d29e2254
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bcc5032fe2fa080034cda3f63a0fb013e12c42e3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 71389ef210d50becaab4d25e29194c2a40000497
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62870387"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66308769"
 ---
 # <a name="idebugprogram2getdisassemblystream"></a>IDebugProgram2::GetDisassemblyStream
 Obtém o fluxo de desmontagem para este programa ou uma parte deste programa.
@@ -40,18 +43,15 @@ int GetDisassemblyStream( 
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `dwScope`
+## <a name="parameters"></a>Parâmetros
+`dwScope`\
+[in] Especifica um valor a partir de [DISASSEMBLY_STREAM_SCOPE](../../../extensibility/debugger/reference/disassembly-stream-scope.md) enumeração que define o escopo do fluxo de desmontagem.
 
- [in] Especifica um valor a partir de [DISASSEMBLY_STREAM_SCOPE](../../../extensibility/debugger/reference/disassembly-stream-scope.md) enumeração que define o escopo do fluxo de desmontagem.
+`pCodeContext`\
+[in] Uma [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) objeto que representa a posição de onde iniciar o fluxo de desmontagem.
 
- `pCodeContext`
-
- [in] Uma [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) objeto que representa a posição de onde iniciar o fluxo de desmontagem.
-
- `ppDisassemblyStream`
-
- [out] Retorna um [IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md) objeto que representa o fluxo de desmontagem.
+`ppDisassemblyStream`\
+[out] Retorna um [IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md) objeto que representa o fluxo de desmontagem.
 
 ## <a name="return-value"></a>Valor de retorno
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro. Retorna `E_DISASM_NOTSUPPORTED` se desmontagem não há suporte para essa arquitetura específica.

@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - JMC_CODE_SPEC structure
 ms.assetid: d89498f1-4234-46d9-b4e2-abbcbca5068a
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0fd27ee043e55b4dd43be956e41dd870be550562
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: b9bc6d5c57c3d3c53b043f1ff5140beb8055a8c0
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62865872"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66339257"
 ---
 # <a name="jmccodespec"></a>JMC_CODE_SPEC
 Essa estrutura é usada para definir as informações de JustMyCode para um módulo.
@@ -39,9 +42,11 @@ public struct JMC_CODE_SPEC {
 ```
 
 ## <a name="members"></a>Membros
-fIsUserCode diferente de zero (`TRUE`) se o módulo seja considerado código de usuário; caso contrário, zero (`FALSE`) se o módulo for sejam tratados como código externo e não a ser depurado.
+`fIsUserCode`\
+Diferente de zero (`TRUE`) se o módulo seja considerado código de usuário; caso contrário, zero (`FALSE`) se o módulo for sejam tratados como código externo e não a ser depurado.
 
-bstrModuleName nome do módulo em questão.
+`bstrModuleName`\
+Nome do módulo em questão.
 
 ## <a name="remarks"></a>Comentários
 Essa estrutura é passada como uma lista dessas estruturas para o [SetJustMyCodeState](../../../extensibility/debugger/reference/idebugengine3-setjustmycodestate.md) método.

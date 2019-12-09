@@ -63,7 +63,7 @@ ms.locfileid: "63438581"
 
 1. No menu **Projeto**, clique em **Adicionar Novo Item**.
 
-2. No **Adicionar Novo Item** caixa de diálogo, selecione **da faixa de opções (XML)**.
+2. No **Adicionar Novo Item** caixa de diálogo, selecione **da faixa de opções (XML)** .
 
 3. Altere o nome da nova faixa de opções para **MyRibbon**e clique em **Add**.
 

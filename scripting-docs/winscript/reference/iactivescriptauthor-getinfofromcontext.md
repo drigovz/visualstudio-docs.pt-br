@@ -17,15 +17,15 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e4fe885e116019608dd8d748c3cbdaff5d31dd2a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b8b9ad4677d580d495c72866be57712476d6a9c7
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62935380"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985318"
 ---
 # <a name="iactivescriptauthorgetinfofromcontext"></a>IActiveScriptAuthor::GetInfoFromContext
-Retorna informações e as posições de âncora para um determinado caractere de tipo em um bloco de código. Isso fornece informações de membro IntelliSense, listas globais e dicas de parâmetro.  
+Retorna informações de tipo e posições de ancoragem para um determinado caractere em um bloco de código. Isso fornece informações para IntelliSense de membro, listas globais e dicas de parâmetro.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -46,54 +46,54 @@ HRESULT GetInfoFromContext(
   
 #### <a name="parameters"></a>Parâmetros  
  `pszCode`  
- [in] O endereço da cadeia de caracteres de bloco de código usado para gerar os resultados de informações.  
+ no O endereço da cadeia de caracteres de bloco de código usada para gerar os resultados da informação.  
   
  `cchCode`  
- [in] O tamanho do bloco de código.  
+ no O comprimento do bloco de código.  
   
  `ichCurrentPosition`  
- [in] Posição do caractere em relação ao início do bloco.  
+ no A posição do caractere em relação ao início do bloco.  
   
  `dwListTypesRequested`  
- [in] Os tipos de lista solicitados. Pode ser uma combinação dos seguintes valores:  
+ no Os tipos de lista solicitados. Pode ser uma combinação dos seguintes valores:  
   
 |Constante|Valor|Descrição|  
 |--------------|-----------|-----------------|  
 |SCRIPT_CMPL_NOLIST|0x0000|Nenhuma lista.|  
 |SCRIPT_CMPL_MEMBERLIST|0x0001|Lista de membros.|  
-|SCRIPT_CMPL_ENUMLIST|0x0002|Lista de enumeração.|  
-|SCRIPT_CMPL_PARAMLIST|0x0004|Chame a lista de parâmetros de método.|  
+|SCRIPT_CMPL_ENUMLIST|0x0002|Lista de enums.|  
+|SCRIPT_CMPL_PARAMLIST|0x0004|Lista de parâmetros do método de chamada.|  
 |SCRIPT_CMPL_GLOBALLIST|0x0008|Lista global.|  
   
- O tipo SCRIPT_CMPL_GLOBALLIST é tratado como um item de preenchimento padrão que pode ser combinado usando o operador OR com outros itens de conclusão. O script do mecanismo de criação primeiro tenta preencher as informações de tipo para outros itens de lista de conclusão. Se isso falhar, o mecanismo preenche para SCRIPT_CMPL_GLOBALLIST.  
+ O tipo de SCRIPT_CMPL_GLOBALLIST é tratado como um item de conclusão padrão que pode ser combinado usando o operador OR com outros itens de conclusão. O mecanismo de criação de scripts primeiro tenta popular informações de tipo para outros itens de lista de conclusão. Se isso falhar, o mecanismo populará para SCRIPT_CMPL_GLOBALLIST.  
   
  `pdwListTypesProvided`  
- [out] O tipo de lista fornecida.  
+ fora O tipo de lista fornecido.  
   
  `pichListAnchorPosition`  
- [out] O índice inicial do contexto que contém a posição atual. O índice inicial é relativo ao início do bloco.  
+ fora O índice inicial do contexto que contém a posição atual. O índice inicial é relativo ao início do bloco.  
   
- Esse campo é preenchido somente quando `dwListTypesRequested` inclui SCRIPT_CMPL_MEMBERLIST, SCRIPT_CMPL_ENUMLIST ou SCRIPT_CMPL_GLOBALLIST. Para outros tipos de lista solicitada, o resultado será indefinido.  
+ Isso é preenchido somente quando o `dwListTypesRequested` inclui SCRIPT_CMPL_MEMBERLIST, SCRIPT_CMPL_ENUMLIST ou SCRIPT_CMPL_GLOBALLIST. Para outros tipos de lista solicitados, o resultado é indefinido.  
   
  `pichFuncAnchorPosition`  
- [out] O índice de início da chamada de função que contém a posição atual. O índice inicial é relativo ao início do bloco.  
+ fora O índice inicial da chamada de função que contém a posição atual. O índice inicial é relativo ao início do bloco.  
   
- Esse campo é preenchido somente quando o contexto que contém a posição atual é uma chamada de função e quando `dwListTypesRequested` inclui SCRIPT_CMPL_PARAMLIST. Caso contrário, o resultado será indefinido.  
+ Isso é preenchido somente quando o contexto que contém a posição atual é uma chamada de função e quando `dwListTypesRequested` inclui SCRIPT_CMPL_PARAMLIST. Caso contrário, o resultado será indefinido.  
   
  `pmemid`  
- [out] O MEMBERID da função, conforme definido por um tipo no `IProvideMultipleClassInfo``ppunk` parâmetro out.  
+ fora A MEMBERid da função, conforme definido por um tipo no parâmetro `IProvideMultipleClassInfo``ppunk` out.  
   
- Esse campo é preenchido somente quando `dwListTypesRequested` inclui SCRIPT_CMPL_PARAMLIST.  
+ Isso é preenchido somente quando o `dwListTypesRequested` inclui SCRIPT_CMPL_PARAMLIST.  
   
  `piCurrentParameter`  
- [out] O índice do parâmetro que contém a posição atual. Se a posição atual está no nome da função, -1 será retornado.  
+ fora O índice do parâmetro que contém a posição atual. Se a posição atual estiver no nome da função,-1 será retornado.  
   
- O `piCurrentParameter` valor é preenchido somente quando `dwListTypesRequested` inclui SCRIPT_CMPL_PARAMLIST.  
+ O valor `piCurrentParameter` é preenchido somente quando `dwListTypesRequested` inclui SCRIPT_CMPL_PARAMLIST.  
   
  `ppunk`  
- As informações de tipo, que são fornecidas na forma de um `IProvideMultipleClassInfo` objeto.  
+ As informações de tipo, que são fornecidas na forma de um objeto de `IProvideMultipleClassInfo`.  
   
-## <a name="return-value"></a>Valor de retorno  
+## <a name="return-value"></a>Valor retornado  
  Um `HRESULT`. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.  
   
 |Valor|Descrição|  
@@ -103,5 +103,5 @@ HRESULT GetInfoFromContext(
 ## <a name="remarks"></a>Comentários  
   
 ## <a name="see-also"></a>Consulte também  
- [Interface IProvideMultipleClassInfo](https://docs.microsoft.com/dotnet/api/microsoft.visualstudio.ole.interop.iprovidemultipleclassinfo)   
+   de [interface IProvideMultipleClassInfo](/dotnet/api/microsoft.visualstudio.ole.interop.iprovidemultipleclassinfo)  
  [IActiveScriptAuthor Interface](../../winscript/reference/iactivescriptauthor-interface.md)

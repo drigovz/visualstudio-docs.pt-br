@@ -6,15 +6,15 @@ helpviewer_keywords:
 - Load Test Editor
 - load tests, Load Test Editor
 ms.assetid: ba16ed02-137e-40bf-a4cb-45d87d922d37
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 130f7296985aa5c5e6115cd3e61b00efd90f25c7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 65cfdde84e0a0e2bb1aa28e9d4b96e2505a93a57
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62784031"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72665031"
 ---
 # <a name="edit-load-tests"></a>Editar testes de carga
 
@@ -50,5 +50,5 @@ Para saber mais, confira [Definir configurações de execução de teste de carg
 
 ## <a name="see-also"></a>Consulte também
 
-- [Analisar resultados do teste de carga](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
+- [Analisar resultados de teste de carga](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
 - [Analisar violações de regra de limite](../test/analyze-threshold-rule-violations-in-load-tests.md)

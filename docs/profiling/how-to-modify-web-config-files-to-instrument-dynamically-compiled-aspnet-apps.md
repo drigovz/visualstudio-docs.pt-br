@@ -1,21 +1,22 @@
 ---
-title: 'Como: Modificar arquivos web.config para instrumentar e analisar aplicativos Web ASP.NET compilados dinamicamente | Microsoft Docs'
+title: 'Arquivo Web. config: instrumento de & perfil aplicativo Web compilado dinâmico ASP.NET'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: a92e5692-2183-4ae3-9431-b067c6a7aab4
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - aspnet
-ms.openlocfilehash: 257d6142fd53914a15e8503121cab1215182ec04
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 6fb67a5b0da186bd87b9e5c39204e3acccc0529f
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63422929"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74775389"
 ---
-# <a name="how-to-modify-webconfig-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications"></a>Como: Modificar arquivos web.config para instrumentar e analisar aplicativos Web ASP.NET compilados dinamicamente
+# <a name="how-to-modify-webconfig-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications"></a>Como modificar arquivos Web.Config para instrumentar e criar perfil de Aplicativos Web ASP.NET compilados dinamicamente
 Você pode usar o método de instrumentação das Ferramentas de Criação de Perfil do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para coletar dados de tempo detalhados, dados de alocação de memória do .NET e dados de tempo de vida do objeto do .NET de aplicativos Web do [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] dinamicamente compilados.
 
  Este tópico descreve como modificar o arquivo de configuração *web.config* para habilitar a instrumentação e a criação de perfil de aplicativos Web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)].
@@ -45,7 +46,7 @@ Você pode usar o método de instrumentação das Ferramentas de Criação de Pe
 
 3. Adicione os seguintes nomes de atributo e valor ao elemento **assemblyBinding**:
 
-   | Nome do atributo | Valor do Atributo |
+   | Nome do Atributo | Valor do Atributo |
    |----------------|--------------------------------------|
    | **Xmlns** | **urn:schemas-microsoft-com:asm.v1** |
 
@@ -57,7 +58,7 @@ Você pode usar o método de instrumentação das Ferramentas de Criação de Pe
 
 6. Adicione os seguintes nomes de atributo e valores ao elemento **assemblyIdentity**:
 
-   | Nome do atributo | Valor do Atributo |
+   | Nome do Atributo | Valor do Atributo |
    |--------------------| - |
    | **name** | **Microsoft.VisualStudio.Enterprise.ASPNetHelper** |
    | **PublicKeyToken** | **b03f5f7f11d50a3a** |
@@ -67,7 +68,7 @@ Você pode usar o método de instrumentação das Ferramentas de Criação de Pe
 
 8. Adicione os seguintes nomes de atributo e valores ao elemento **codeBase**:
 
-   |Nome do atributo|Valor do Atributo|
+   |Nome do Atributo|Valor do Atributo|
    |--------------------|---------------------|
    |**version**|**10.0.0.0**|
    |**href**|`PathToASPNetHelperDll`|
@@ -106,7 +107,7 @@ Você pode usar o método de instrumentação das Ferramentas de Criação de Pe
 
 3. Remova todos os atributos existentes do elemento **compilation** e adicione os seguintes nomes de atributo e valor:
 
-    |Nome do atributo|Valor do Atributo|
+    |Nome do Atributo|Valor do Atributo|
     |--------------------|---------------------|
     |**assemblyPostProcessorType**|**Microsoft.VisualStudio.Enterprise.Common.AspPerformanceInstrumenter, Microsoft.VisualStudio.Enterprise.ASPNetHelper, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a**|
 
@@ -136,7 +137,7 @@ Você pode usar o método de instrumentação das Ferramentas de Criação de Pe
 
 3. Adicione os seguintes nomes de atributo e valores ao elemento **add**:
 
-   | Nome do atributo | Valor do Atributo |
+   | Nome do Atributo | Valor do Atributo |
    |----------------| - |
    | **key** | **Microsoft.VisualStudio.Enterprise.AspNetHelper.VsInstrLocation** |
    | **value** | `PerformanceToolsFolder` **\VSInstr.Exe** |
@@ -145,7 +146,7 @@ Você pode usar o método de instrumentação das Ferramentas de Criação de Pe
 
 5. Adicione os seguintes nomes de atributo e valores a esse elemento **add**:
 
-   |Nome do atributo|Valor do Atributo|
+   |Nome do Atributo|Valor do Atributo|
    |--------------------|---------------------|
    |**key**|**Microsoft.VisualStudio.Enterprise.AspNetHelper.VsInstrTools**|
    |**value**|`PerformanceToolsFolder`|
@@ -220,5 +221,5 @@ Você pode usar o método de instrumentação das Ferramentas de Criação de Pe
 ```
 
 ## <a name="see-also"></a>Consulte também
-- [Como: Instrumentar um aplicativo ASP.NET compilado dinamicamente e coletar dados de tempo detalhados](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-app-and-collect-timing-data.md)
-- [Como: Instrumentar um aplicativo ASP.NET compilado dinamicamente e coletar dados de memória](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data.md)
+- [Como instrumentar um aplicativo ASP.NET compilado dinamicamente e coletar dados de tempo detalhados](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-app-and-collect-timing-data.md)
+- [Como instrumentar um aplicativo do ASP.NET compilado dinamicamente e coletar dados de memória](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data.md)

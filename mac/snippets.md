@@ -1,20 +1,20 @@
 ---
 title: Snippets de código
 description: Como usar snippets de código para programar de forma eficiente no Visual Studio para Mac
-author: conceptdev
-ms.author: crdun
+author: cobey
+ms.author: cobey
 ms.date: 02/07/2019
 ms.assetid: 0FE27C0C-A861-4133-A74E-8D0505CF5342
-ms.openlocfilehash: 56f736aa1e32530b1db96ad301091151731b7d28
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1dacc935549d738ff1b5e84c3ac4420c343155fd
+ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62540009"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68787695"
 ---
 # <a name="code-snippets"></a>Snippets de código
 
-Snippets de código, geralmente chamados de _modelos de código_, são úteis para uma programação eficiente, já que permitem a inserção e a edição de blocos de código previamente escritos. O uso de snippets de código pode ser conveniente para adicionar rapidamente padrões comuns ou até mesmo para conhecer novos padrões quando, como desenvolvedor, você não tiver certeza sobre a sintaxe. Há modelos fornecidos para C#, F#, HTML, XML, Python e Razor.
+Snippets de código, geralmente chamados de _modelos de código_, são úteis para obter uma programação eficiente, já que permitem a inserção e a edição de blocos de código previamente escritos. O uso de snippets de código pode ser conveniente para adicionar rapidamente padrões comuns ou até mesmo para conhecer novos padrões quando, como desenvolvedor, você não tiver certeza sobre a sintaxe. Há modelos fornecidos para C#, F#, HTML, XML, Python e Razor.
 
 Esta seção explica como criar, inserir e usar snippets no código.
 
@@ -30,7 +30,7 @@ Há algumas maneiras de adicionar snippets de código, algumas das quais são de
 
   [![Snippets de código na Caixa de ferramentas](media/source-editor-image14-sml.png)](media/source-editor-image14.png#lightbox)
 
-- **Comando Inserir Modelos** &ndash; Atualmente, não há nenhuma associação de teclas definida para a inserção de modelos. Para criar uma, navegue até **Visual Studio > Preferências > Associações de teclas** e pesquise `template`. Isso permite adicionar a associação de teclas desejada no campo Editar Associação e, em seguida, clicar em **Aplicar**:
+- **Comando Inserir Modelos** &ndash; Atualmente, não há nenhuma associação de teclas definida para a inserção de modelos. Para criar uma, navegue até **Visual Studio > Preferências > Associações de teclas** e pesquise `template`. Isso permite adicionar a associação de teclas desejada no campo Editar associação e clicar em **Aplicar**:
 
   ![Comando Inserir Modelo](media/source-editor-image15.png)
 
@@ -85,8 +85,6 @@ Há duas palavras-chave reservadas que você pode usar em um snippet de código:
 - `$end$` &ndash; Quando o usuário concluir a edição de palavras-chave no snippet, o cursor será colocado no local da palavra-chave `$end$`.
 
 O snippet `for` da seção anterior é um exemplo de palavras-chave reservadas.
-
-Para saber mais, confira o tópico [Referência de snippets de código do Visual Studio](/visualstudio/ide/code-snippets-schema-reference#keywords).
 
 ## <a name="see-also"></a>Consulte também
 

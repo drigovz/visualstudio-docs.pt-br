@@ -61,14 +61,14 @@ A ferramenta de linha de comando **VSPerfASPNETCmd** permite analisar facilmente
   
  Você também pode usar a opção **/Trace** para incluir informações detalhadas de tempo com os dados de memória do .NET:  
   
- **vsperfaspnetcmd /memory**[**:lifetime**] **/trace**`websiteUrl`  
+ **vsperfaspnetcmd /memory**[ **:lifetime**] **/trace**`websiteUrl`  
   
 ## <a name="to-collect-tier-interaction-data"></a>Para coletar dados de interação entre camadas  
   
 > [!WARNING]
 > Os dados TIP (criação de perfil de interação entre camadas) podem ser coletados usando [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] ou [!INCLUDE[vs_pro_current_short](../includes/vs-pro-current-short-md.md)]. No entanto, os dados de criação de perfil de interação de camadas somente podem ser exibidos no [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)] e no [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)].  
 >   
-> Para coletar dados TIP no Windows 8 ou Windows Server 2012, você deve usar a opção de instrumentação (**/trace**).  
+> Para coletar dados TIP no Windows 8 ou Windows Server 2012, você deve usar a opção de instrumentação ( **/trace**).  
   
  Para coletar dados de interação entre camadas com os dados de amostragem:  
   
@@ -80,14 +80,14 @@ A ferramenta de linha de comando **VSPerfASPNETCmd** permite analisar facilmente
   
  Para coletar dados de interação entre camadas com os dados de memória de .NET:  
   
- **vsperfaspnetcmd /memory**[**:lifetime**] **/tip**_websiteUrl_  
+ **vsperfaspnetcmd /memory**[ **:lifetime**] **/tip**_websiteUrl_  
   
 ## <a name="UsingNoWait"></a> Usando a opção /NoWait  
  Por padrão, o prompt de comando não retorna após um comando **vsperfaspnetcmd**. Você pode usar a opção de sintaxe a seguir para forçar o prompt de comando a retornar. Em seguida, você pode executar outras operações na janela do prompt de comando. Para finalizar a criação de perfil, use a opção **/shutdown** em um comando **vsperfaspnetcmd**.  
   
  Para iniciar a criação de perfil:  
   
- **vsperfaspnetcmd** [*/Options*] **/nowait**_websiteUrl_  
+ **vsperfaspnetcmd** [ */Options*] **/nowait**_websiteUrl_  
   
  Para encerrar a criação de perfil:  
   

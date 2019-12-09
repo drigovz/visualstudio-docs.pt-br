@@ -9,12 +9,12 @@ ms.date: 11/13/2017
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 623aa21e94ff25b8190bae82ca836ed16f64bcaa
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: fb296346d54b0774bdd9a738581ee28fe99b1de0
+ms.sourcegitcommit: 57bc1c3887838d707c13feff72a677b3bad3be4b
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62548411"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72777477"
 ---
 # <a name="installation"></a>Instalação
 
@@ -37,14 +37,14 @@ Você pode fazer o download das ferramentas do [Visual Studio Marketplace](https
 
 ## <a name="prepare-your-local-machine"></a>Preparar seu computador local
 
-Antes de começar a treinar os modelos de aprendizagem profunda em seu computador local, verifique se você tem os pré-requisitos aplicáveis instalados. Isso inclui garantir que você tenha os drivers e as bibliotecas mais recentes para sua GPU NVIDIA (se tiver uma). Verifique também se tem o Python e suas bibliotecas instalados, como NumPy e SciPy, bem como as estruturas de aprendizagem profunda corretas, como o CNTK (Microsoft Cognitive Toolkit), TensorFlow, Caffe2, MXNet, Keras, Theano, PyTorch e Chainer, que você planeja usar em seu projeto.
+Antes de começar a treinar os modelos de aprendizagem profunda em seu computador local, verifique se você tem os pré-requisitos aplicáveis instalados. Isso inclui garantir que você tenha os drivers e as bibliotecas mais recentes para sua GPU NVIDIA (se tiver uma). Verifique também se o Python e suas bibliotecas estão instalados, como NumPy e SciPy, bem como as estruturas de aprendizado profundo corretas que você planeja usar em seu projeto, como CNTK (Microsoft Cognitive Toolkit), TensorFlow, Caffe2, MXNet, Keras, Theano, PyTorch e Chainer.
 
 > [!NOTE]
 > Nas subseções a seguir, a introdução aos software foi extraída de suas páginas iniciais.
 
 ### <a name="nvidia-gpu-driver"></a>Driver da GPU NVIDIA
 
-As estruturas de aprendizagem profunda aproveitam-se da GPU NVIDIA para permitir que computadores aprendam com velocidade, precisão e escala, em direção à verdadeira inteligência artificial. Se o computador tem cartões GPU NVIDIA, clique [aqui](http://www.nvidia.com/Download/index.aspx) ou tente atualizar o sistema operacional para instalar o driver mais recente.
+As estruturas de aprendizagem profunda aproveitam-se da GPU NVIDIA para permitir que computadores aprendam com velocidade, precisão e escala, em direção à verdadeira inteligência artificial. Se o computador tem placas GPU da NVIDIA, confira [Downloads de drivers NVIDIA](https://www.nvidia.com/Download/index.aspx) ou tente uma atualização do sistema operacional para instalar o driver mais recente.
 
 ### <a name="cuda"></a>CUDA
 
@@ -53,7 +53,7 @@ A [CUDA](https://developer.nvidia.com/cuda-zone) é uma plataforma de computaç�
 Para instalar a CUDA
 
 - Acesse este [site](https://developer.nvidia.com/cuda-80-ga2-download-archive), baixe a CUDA e instale-a.
-- Não se esqueça de instalar as bibliotecas de tempo de execução CUDA e, em seguida, adicionar o caminho binário CUDA à variável de ambiente %PATH% ou $Path.
+- Não se esqueça de instalar as bibliotecas de runtime CUDA e, em seguida, adicionar o caminho binário CUDA à variável de ambiente %PATH% ou $Path.
 - No Windows, esse caminho é "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\bin" por padrão.
 
 ![Instalar a CUDA no Windows](media/installation/install_cuda_win.png)
@@ -88,27 +88,27 @@ Em seguida, precisamos verificar se o Python 3.5 está instalado corretamente e 
 
 - **Windows**
 
-    ```cmd
-    C:\Users\test>python -V
-    Python 3.5.4
+  ```cmd
+  C:\Users\test>python -V
+  Python 3.5.4
 
-    C:\Users\test>pip3.5 -V
-    pip 9.0.1 from c:\users\test\appdata\local\programs\python\python35\lib\site-packages (python 3.5)
+  C:\Users\test>pip3.5 -V
+  pip 9.0.1 from c:\users\test\appdata\local\programs\python\python35\lib\site-packages (python 3.5)
 
-    C:\Users\test>python -m pip install -U pip
-    ```
+  C:\Users\test>python -m pip install -U pip
+  ```
 
 - **macOS**
 
-    ```bash
-    MyMac:~ test$ python3.5 -V
-    Python 3.5.4
+  ```bash
+  MyMac:~ test$ python3.5 -V
+  Python 3.5.4
 
-    MyMac:~ test$ pip3.5 -V
-    pip 9.0.1 from /Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages (python 3.5)
+  MyMac:~ test$ pip3.5 -V
+  pip 9.0.1 from /Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages (python 3.5)
 
-    MyMac:~ test$ python3.5 -m pip install -U pip
-    ```
+  MyMac:~ test$ python3.5 -m pip install -U pip
+  ```
 
 ### <a name="python-on-visual-studio"></a>Python no Visual Studio
 
@@ -137,11 +137,11 @@ O [Microsoft Cognitive Toolkit](https://cntk.ai) é um kit de ferramentas unific
 > [!NOTE]
 > Atualmente, não há suporte para macOS no CNTK.
 
-Para instalar o pacote em Python no CNTK, veja [como instalar o CNTK](https://docs.microsoft.com/cognitive-toolkit/Setup-CNTK-on-your-machine)
+Para instalar o pacote do CNTK em Python, confira [Como instalar o CNTK](https://docs.microsoft.com/cognitive-toolkit/Setup-CNTK-on-your-machine).
 
 ### <a name="tensorflow"></a>TensorFlow
 
-O [TensorFlow](https://www.tensorflow.org/) é uma biblioteca de software livre para computação numérica que usa grafos de fluxo de dados. Para saber mais detalhes sobre a instalação, clique [aqui](https://www.tensorflow.org/install/).
+O [TensorFlow](https://www.tensorflow.org/) é uma biblioteca de software livre para computação numérica que usa gráficos de fluxo de dados. Para saber mais detalhes sobre a instalação, clique [aqui](https://www.tensorflow.org/install/).
 
 > [!NOTE]
 > A partir da versão 1.2, o TensorFlow não terá mais suporte de GPU para macOS.
@@ -162,19 +162,19 @@ Para instalar o MXNet, execute o seguinte comando em um terminal:
 
 - Com a GPU
 
-    ```bash
-    pip3.5 install mxnet-cu80==0.12.0
-    ```
+  ```bash
+  pip3.5 install mxnet-cu80==0.12.0
+  ```
 
 - Sem a GPU
 
-    ```bash
-    pip3.5 install mxnet==0.12.0
-    ```
+  ```bash
+  pip3.5 install mxnet==0.12.0
+  ```
 
 ### <a name="keras"></a>Keras
 
-A [Keras](https://keras.io/) é uma API de redes neurais de alto nível escrita em Python, que pode ser executada sobre o CNTK, o TensorFlow ou o Theano. Ela foi desenvolvida com foco em habilitar uma experimentação rápida. Conseguir passar da ideia para o resultado com o mínimo de atraso é fundamental para uma boa pesquisa.
+[Keras](https://keras.io/) é uma API de redes neurais de alto nível escrita em Python, que pode ser executada sobre o CNTK, o TensorFlow ou o Theano. Ela foi desenvolvida com foco em habilitar uma experimentação rápida. Conseguir passar da ideia para o resultado com o mínimo de atraso é fundamental para uma boa pesquisa.
 
 Para instalar a Keras, execute o seguinte comando em um terminal:
 
@@ -194,7 +194,7 @@ pip3.5 install Theano==0.9.0
 
 ### <a name="pytorch"></a>PyTorch
 
-O [PyTorch](http://pytorch.org/) é um pacote em Python que oferece dois recursos de alto nível:
+O [PyTorch](https://pytorch.org/) é um pacote em Python que oferece dois recursos de alto nível:
 
 - Computação por tensores (como o NumPy) com forte aceleração de GPU
 - Redes Neurais Profundas criadas em um sistema autograd baseado em fita
@@ -203,33 +203,33 @@ Para instalar o PyTorch, execute o seguinte comando em um terminal:
 
 - **Windows**
 
-   Ainda não há nenhum pacote indicador oficial. Você pode baixar um pacote de terceiros da [Anaconda](https://anaconda.org/pytorch/repo?type=all) ou da [Universidade da Califórnia](https://www.lfd.uci.edu/~gohlke/pythonlibs/#pytorch).
+  Ainda não há nenhum pacote indicador oficial. Você pode baixar um pacote de terceiros da [Anaconda](https://anaconda.org/pytorch/repo?type=all) ou da [Universidade da Califórnia](https://www.lfd.uci.edu/~gohlke/pythonlibs/#pytorch).
 
-   - Descompacte-o em seu diretório base, por exemplo, *C:\Users\test\pytorch*.
-   - Adicione *C:\Users\test\pytorch\Lib\site-packages* à variável de ambiente %PYTHONPATH%.
+  - Descompacte-o em seu diretório base, por exemplo, *C:\Users\test\pytorch*.
+  - Adicione *C:\Users\test\pytorch\Lib\site-packages* à variável de ambiente %PYTHONPATH%.
 
-      ```bash
-      pip3 install http://download.pytorch.org/whl/cu80/torch-0.4.0-cp36-cp36m-win_amd64.whl
-      pip3 install torchvision
-      ```
+    ```bash
+    pip3 install http://download.pytorch.org/whl/cu80/torch-0.4.0-cp36-cp36m-win_amd64.whl
+    pip3 install torchvision
+    ```
 
 - **macOS**
 
-    ```bash
-    pip3.5 install http://download.pytorch.org/whl/torch-0.2.0.post3-cp35-cp35m-macosx_10_7_x86_64.whl
-    ```
+  ```bash
+  pip3.5 install http://download.pytorch.org/whl/torch-0.2.0.post3-cp35-cp35m-macosx_10_7_x86_64.whl
+  ```
 
-    > [!NOTE]
-    > Os binários macOS não tem suporte para CUDA, instale da fonte se o CUDA for necessário
+  > [!NOTE]
+  > Os binários macOS não tem suporte para CUDA, instale da fonte se o CUDA for necessário
 
 - **Linux**
 
-    ```bash
-    pip3.5 install http://download.pytorch.org/whl/cu80/torch-0.2.0.post3-cp35-cp35m-manylinux1_x86_64.whl
-    ```
+  ```bash
+  pip3.5 install http://download.pytorch.org/whl/cu80/torch-0.2.0.post3-cp35-cp35m-manylinux1_x86_64.whl
+  ```
 
-    > [!NOTE]
-    > Este pacote único é compatível com GPU e CPU.
+  > [!NOTE]
+  > Este pacote único é compatível com GPU e CPU.
 
 Por fim, instale o torchvision em não Windows:
 
@@ -239,7 +239,7 @@ pip3.5 install torchvision
 
 ### <a name="chainer"></a>Chainer
 
-O [Chainer](https://chainer.org/) é uma estrutura de aprendizagem profunda baseada em Python que tem como foco a flexibilidade. Ele oferece APIs de diferenciação automática baseadas na **abordagem definida pela execução** (conhecida também como grafos computacionais dinâmicos), bem como as APIs de alto nível orientadas a objeto para criar e treinar redes neurais.
+O [Chainer](https://chainer.org/) é uma estrutura de aprendizagem profunda baseada em Python que tem como foco a flexibilidade. Ele fornece APIs de diferenciação automática com base na abordagem de definição por execução (também conhecida como gráficos computacionais dinâmicos), além de APIs de alto nível orientadas a objeto para criar e treinar redes neurais.
 
 Para habilitar o suporte para CUDA, instale o [CuPy](https://github.com/cupy/cupy):
 

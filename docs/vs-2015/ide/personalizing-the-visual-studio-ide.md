@@ -6,15 +6,15 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.assetid: c2fec4ce-3885-4c4c-ace2-14c197e11079
 caps.latest.revision: 8
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: dbdeb2188580c9be67cbca992a8513c509d5514e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c01c034fb08315737c57ef8674230b837a9fa6de
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62540219"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72670334"
 ---
 # <a name="personalizing-the-visual-studio-ide"></a>Personalizando o IDE do Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,5 +44,5 @@ Esta seção descreve como personalizar o Visual Studio de várias maneiras para
 ### <a name="main-menu-casing"></a>Maiúsculas e minúsculas do menu principal
  Devido à demanda popular, você pode alterar as maiúsculas e minúsculas do menu principal entre **Capitalização de Título**, **TODAS EM MAIÚSCULA** digitando `environment` em **QuickLaunch** e escolhendo **Ambiente &#124; Geral**.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
  [Visual Studio IDE](../ide/visual-studio-ide.md)

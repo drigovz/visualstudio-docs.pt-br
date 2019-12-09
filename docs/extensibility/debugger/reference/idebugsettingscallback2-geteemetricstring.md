@@ -5,17 +5,20 @@ ms.topic: reference
 helpviewer_keywords:
 - IDebugSettingsCallback2::GetEEMetricString
 ms.assetid: 85e3c093-6a91-4101-ab32-d8ac6eed4918
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a2091cd052923fe375bf9ba90ffdad50c993f5b4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: cd4ac00a03204ac9104ea965145874ac950f7304
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62868940"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66322086"
 ---
 # <a name="idebugsettingscallback2geteemetricstring"></a>IDebugSettingsCallback2::GetEEMetricString
 Recupera a cadeia de caracteres do valor de uma métrica de avaliador de expressão dada seu nome.
@@ -40,22 +43,18 @@ private int GetEEMetricString(
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `guidLang`
+## <a name="parameters"></a>Parâmetros
+`guidLang`\
+[in] Identificador exclusivo da linguagem de programação.
 
- [in] Identificador exclusivo da linguagem de programação.
+`guidVendor`\
+[in] Identificador exclusivo do fornecedor.
 
- `guidVendor`
+`pszMetric`\
+[in] Nome da métrica.
 
- [in] Identificador exclusivo do fornecedor.
-
- `pszMetric`
-
- [in] Nome da métrica.
-
- `pbstrValue`
-
- [out] Retorna a cadeia de caracteres do valor de métrica.
+`pbstrValue`\
+[out] Retorna a cadeia de caracteres do valor de métrica.
 
 ## <a name="return-value"></a>Valor de retorno
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.

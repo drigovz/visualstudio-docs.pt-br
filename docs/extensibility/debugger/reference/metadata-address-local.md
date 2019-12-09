@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - METADATA_ADDRESS_LOCAL structure
 ms.assetid: 635f6bc5-c486-4e0e-83db-36f15e543843
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8ac19a3e59e70d0a1fb03b78e64036bd2ac23219
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: f8500d7ad1e03e08fa852afe9b8b77e49562f355
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62865830"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66345630"
 ---
 # <a name="metadataaddresslocal"></a>METADATA_ADDRESS_LOCAL
 
@@ -41,20 +44,17 @@ public struct METADATA_ADDRESS_LOCAL {
 }
 ```
 
-## <a name="terms"></a>Termos
+## <a name="members"></a>Membros
 
-`tokMethod`
-
+`tokMethod`\
 A ID do método ou da função variável local é parte do.
 
 [C++] `_mdToken` é um `typedef` de 32 bits `int`.
 
-`pLocal`
-
+`pLocal`\
 O token cujo endereço representa essa estrutura.
 
-`dwIndex`
-
+`dwIndex`\
 Pode ser o índice dessa variável local no método ou função ou algum outro valor (específico do idioma).
 
 ## <a name="remarks"></a>Comentários

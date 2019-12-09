@@ -15,23 +15,23 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 55884fe34fda7f29370439d8a792a595763292b0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 00af44212dd142dd94629f886a50b9646488af3b
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63004760"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747277"
 ---
 # <a name="msbuild-task-reference"></a>Referência de tarefas do MSBuild
 
-Tarefas fornecem o código que é executado durante o processo de compilação. As tarefas na lista a seguir são incluídas com [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Quando [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] é instalado, há tarefas adicionais disponíveis, que são usadas para compilar projetos [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]. Para saber mais, confira [Tarefas do Visual C++](../msbuild/msbuild-tasks-specific-to-visual-cpp.md).
+Tarefas fornecem o código que é executado durante o processo de compilação. As tarefas na lista a seguir são incluídas com [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Quando [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] é instalado, há tarefas adicionais disponíveis, que são usadas para compilar projetos [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]. Para obter mais informações, consulte [ C++ tarefas](../msbuild/msbuild-tasks-specific-to-visual-cpp.md).
 
 Além dos parâmetros listados nos tópicos nesta seção, cada tarefa também tem os parâmetros a seguir:
 
 | Parâmetro | Descrição |
 |-------------------| - |
 | `Condition` | Parâmetro `String` opcional.<br /><br /> A expressão `Boolean` que o mecanismo [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] usa para determinar se essa tarefa será executada. Para obter informações sobre as condições que são suportadas pelo [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], confira [Condições](../msbuild/msbuild-conditions.md). |
-| `ContinueOnError` | Parâmetro opcional. Pode conter um dos seguintes valores:<br /><br /> -   **WarnAndContinue** ou **true**. Quando uma tarefa falha, as tarefas subsequentes no elemento de [Destino](../msbuild/target-element-msbuild.md) e o build continuam em execução e todos os erros da tarefa são tratados como avisos.<br />-   **ErrorAndContinue**. Quando uma tarefa falha, as tarefas subsequentes no elemento de `Target` e o build continuam em execução e todos os erros da tarefa são tratados como erros.<br />-   **ErrorAndStop** ou **false** (padrão). Quando uma tarefa falha, as tarefas restantes do elemento de `Target` e o build não são executadas e todo o elemento de `Target` e o build são considerados como em falha.<br /><br /> As versões do .NET Framework antes da 4.5 ofereciam suporte somente aos valores `true` e `false`.<br /><br /> Para obter mais informações, confira [Como: Ignorar erros em tarefas](../msbuild/how-to-ignore-errors-in-tasks.md). |
+| `ContinueOnError` | Parâmetro opcional. Pode conter um dos seguintes valores:<br /><br /> -   **WarnAndContinue** ou **true**. Quando uma tarefa falha, as tarefas subsequentes no elemento de [Destino](../msbuild/target-element-msbuild.md) e o build continuam em execução e todos os erros da tarefa são tratados como avisos.<br />-   **ErrorAndContinue**. Quando uma tarefa falha, as tarefas subsequentes no elemento de `Target` e o build continuam em execução e todos os erros da tarefa são tratados como erros.<br />-   **ErrorAndStop** ou **false** (padrão). Quando uma tarefa falha, as tarefas restantes do elemento de `Target` e o build não são executadas e todo o elemento de `Target` e o build são considerados como em falha.<br /><br /> As versões do .NET Framework antes da 4.5 ofereciam suporte somente aos valores `true` e `false`.<br /><br /> Para saber mais, confira [Como ignorar erros em tarefas](../msbuild/how-to-ignore-errors-in-tasks.md). |
 
 ## <a name="in-this-section"></a>Nesta seção
 
@@ -169,7 +169,7 @@ Além dos parâmetros listados nos tópicos nesta seção, cada tarefa também t
 
 - [Tarefa GetFrameworkPath](../msbuild/getframeworkpath-task.md)
 
- Recupera o caminho para os assemblies [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].
+ Recupera o caminho para os assemblies .NET Framework.
 
 - [Tarefa GetFrameworkSdkPath](../msbuild/getframeworksdkpath-task.md)
 
@@ -189,7 +189,7 @@ Além dos parâmetros listados nos tópicos nesta seção, cada tarefa também t
 
 - [Tarefa Message](../msbuild/message-task.md)
 
- Registra uma mensagem durante a compilação.
+ Registra uma mensagem em log durante um build.
 
 - [Tarefa Move](../msbuild/move-task.md)
 

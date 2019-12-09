@@ -8,14 +8,15 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: f2668d5b60fba429613975cc24e751dbe07f87b7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 289f92deaceca32a44249ed77c17187743a34fa4
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62830857"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778044"
 ---
 # <a name="understand-sampling-data-values"></a>Noções básicas sobre valores de dados de amostragem
 
@@ -51,5 +52,5 @@ O percentual do número total de amostras exclusivas na criação de perfil que 
 
 ## <a name="see-also"></a>Consulte também
 
-[Como: Escolher métodos de coleta](../profiling/how-to-choose-collection-methods.md)
-[Analisar dados de ferramentas de desempenho](../profiling/analyzing-performance-tools-data.md)
+[Como: escolher métodos de coleção](../profiling/how-to-choose-collection-methods.md)
+[analisar dados de ferramentas de desempenho](../profiling/analyzing-performance-tools-data.md)

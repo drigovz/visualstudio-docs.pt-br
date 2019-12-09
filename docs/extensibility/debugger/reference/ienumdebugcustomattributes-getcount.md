@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugCustomAttributes::GetCount
 ms.assetid: fafe826f-4ebf-4572-b2a3-d5dd2916c12f
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8890e4260d59239a19328804d09518dd081337f5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: cfa138b31d78ad9035ba3ff2bd752d2f27243630
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62914869"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66324347"
 ---
 # <a name="ienumdebugcustomattributesgetcount"></a>IEnumDebugCustomAttributes::GetCount
 Obtém o número de atributos personalizados em um enumerador.
@@ -36,10 +39,9 @@ int GetCount(
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `pcelt`
-
- [out] Retorna o número de elementos na enumeração.
+## <a name="parameters"></a>Parâmetros
+`pcelt`\
+[out] Retorna o número de elementos na enumeração.
 
 ## <a name="return-value"></a>Valor de retorno
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.

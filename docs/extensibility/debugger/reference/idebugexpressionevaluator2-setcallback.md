@@ -6,17 +6,20 @@ helpviewer_keywords:
 - IDebugExpressionEvaluator2::SetCallback
 - SetCallback
 ms.assetid: 31e3a99e-e784-44a3-8b19-cc5ef31ed546
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d758d6c34563a2915e295514380cf07c847d86c4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: f347b687066578d5572a89a6e057fd2cb3b79e0b
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62919746"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66325495"
 ---
 # <a name="idebugexpressionevaluator2setcallback"></a>IDebugExpressionEvaluator2::SetCallback
 Permite que o avaliador de expressão (EE) especificar a interface de retorno de chamada que o mecanismo do depurador (DES) usará para ler as configurações de métrica.
@@ -35,10 +38,9 @@ int SetCallback (
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
-`pCallback`
-
- [in] Interface a ser usado para o retorno de chamada de configurações.
+## <a name="parameters"></a>Parâmetros
+`pCallback`\
+[in] Interface a ser usado para o retorno de chamada de configurações.
 
 ## <a name="return-value"></a>Valor de retorno
 Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.

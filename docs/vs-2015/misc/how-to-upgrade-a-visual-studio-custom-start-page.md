@@ -1,5 +1,5 @@
 ---
-title: 'Como: Atualizar uma página inicial personalizada | Microsoft Docs'
+title: Como atualizar uma página inicial personalizada | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -7,32 +7,32 @@ ms.topic: conceptual
 ms.assetid: 78342ce6-36c8-485b-a5f6-760e7a420a26
 caps.latest.revision: 8
 manager: jillfra
-ms.openlocfilehash: abe1013d37db43114f3970f12b1a0d1f08b07a4e
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a7854de705a961463b1e8435e7340548cfc23bf3
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446458"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74293375"
 ---
-# <a name="how-to-upgrade-a-visual-studio-custom-start-page"></a>Como: Atualizar uma página de início personalizados do Visual Studio
-Você pode atualizar um Visual Studio 2010 ou Visual Studio 2012 personalizado a página inicial para Visual Studio 2015, seguindo as etapas listadas abaixo.
+# <a name="how-to-upgrade-a-visual-studio-custom-start-page"></a>Como: atualizar uma página inicial personalizada do Visual Studio
+Você pode atualizar uma página inicial personalizada do Visual Studio 2010 ou do Visual Studio 2012 para o Visual Studio 2015 seguindo as etapas listadas abaixo.
 
 > [!WARNING]
-> A página inicial personalizada atualizada neste procedimento é aquele criado com o [página inicial personalizada](http://visualstudiogallery.msdn.microsoft.com/f655a5dc-1a2d-4eca-b774-76c352c03b87) modelo na Galeria do Visual Studio. Sua página inicial pode ter outros recursos que precisam ser atualizados.
+> A página inicial personalizada atualizada neste procedimento é aquela criada com o modelo de [página inicial personalizada](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.CustomStartPageProjectTemplate) na galeria do Visual Studio. Sua página inicial pode ter outros recursos que precisam ser atualizados.
 
 ### <a name="to-upgrade-a-custom-start-page-to-visual-studio-2015"></a>Para atualizar uma página inicial personalizada para o Visual Studio 2015
 
-1. Certifique-se de que o Visual Studio 2015 e o SDK do Visual Studio 2015 estão instalados. Você pode baixar do VSSDK [SDK do Microsoft Visual Studio 2013](https://my.visualstudio.com/Downloads?pid=1436).
+1. Verifique se o Visual Studio 2015 e o SDK do Visual Studio 2015 estão instalados. Você pode baixar o VSSDK do [SDK do Microsoft Visual Studio 2013](https://my.visualstudio.com/Downloads?pid=1436).
 
-2. Abra seu projeto de modelo personalizado. Você verá uma mensagem informando que o projeto deve ser atualizado. Clique em **Okey** e aguarde até que a atualização seja concluída.
+2. Abra seu projeto de modelo personalizado. Você verá uma mensagem notificando que o projeto deve ser atualizado. Clique em **OK** e aguarde a conclusão da atualização.
 
-3. Nas propriedades do projeto para o projeto de página de início e o projeto de controle, certifique-se de que a estrutura de destino é pelo menos .NET Framework 4.5.
+3. Nas propriedades do projeto para o projeto de página inicial e o projeto de controle, certifique-se de que a estrutura de destino seja pelo menos .NET Framework 4,5.
 
-4. Na categoria depuração das propriedades do projeto para o projeto de página inicial, defina o caminho para a versão do Visual Studio 2015 do devenv.exe.
+4. Na categoria depurar das propriedades do projeto para o projeto página inicial, defina o caminho para a versão do Visual Studio 2015 do devenv. exe.
 
-5. Nas referências do projeto para ambos os projetos, remova as referências para Microsoft.VisualStudio.Shell.11.0 e adicionar referências a Microsoft.VisualStudio.Shell.14.0.
+5. Nas referências de projeto para ambos os projetos, remova as referências a Microsoft. VisualStudio. Shell. 11.0 e adicione referências a Microsoft. VisualStudio. Shell. 14.0.
 
-6. Abra StartPage com o editor de XML e faça as seguintes alterações:
+6. Abra StartPage. XAML com o editor de XML e faça as seguintes alterações:
 
     1. Atualize os namespaces. Altere as seguintes linhas:
 
@@ -52,4 +52,4 @@ Você pode atualizar um Visual Studio 2010 ou Visual Studio 2012 personalizado a
         xmlns:vsfx="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.VisualStudio.Shell.14.0"
         ```
 
-7. Abra MyControl.xaml e altere a referência ao namespace `xmlns:vs="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.VisualStudio.Shell.11.0"` para `xmlns:vs="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.VisualStudio.Shell.14.0"` .
+7. Abra MyControl. XAML e altere a referência do namespace `xmlns:vs="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.VisualStudio.Shell.11.0"` para `xmlns:vs="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.VisualStudio.Shell.14.0"`.

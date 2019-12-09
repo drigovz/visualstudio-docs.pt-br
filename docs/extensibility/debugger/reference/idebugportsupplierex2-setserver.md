@@ -5,17 +5,20 @@ ms.topic: reference
 helpviewer_keywords:
 - IDebugPortSupplierEx2::SetServer
 ms.assetid: 0e8ef194-3a4f-4abf-8382-4607ab3005d1
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ca63b2941fc0c607af93772c21ca874b3d6b9031
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 2fda8acbf2c757478b838c11a88b21324420173b
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62871382"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66353337"
 ---
 # <a name="idebugportsupplierex2setserver"></a>IDebugPortSupplierEx2::SetServer
 Define o server core para o fornecedor de porta.
@@ -34,8 +37,9 @@ int SetServer(
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `pServer` Server Core a ser definido para o fornecedor de porta.
+## <a name="parameters"></a>Parâmetros
+`pServer`\
+Server Core a ser definido para o fornecedor de porta.
 
 ## <a name="return-value"></a>Valor de retorno
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.

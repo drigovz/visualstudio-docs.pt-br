@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugCustomViewer::DisplayValue
 ms.assetid: 7a538248-5ced-450e-97cd-13fabe35fb1c
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8734d97dfc8bcd7be2b12ce657071597deaea7a8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 9d6ff987e12e70a9d3dd443cfafc45d2698469b8
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62921614"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66335699"
 ---
 # <a name="idebugcustomviewerdisplayvalue"></a>IDebugCustomViewer::DisplayValue
 Esse método é chamado para exibir o valor especificado.
@@ -42,22 +45,18 @@ int DisplayValue(
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `hwnd`
+## <a name="parameters"></a>Parâmetros
+`hwnd`\
+[in] Janela pai
 
- [in] Janela pai
+`dwID`\
+[in] ID para visualizadores personalizados que dão suporte a mais de um tipo.
 
- `dwID`
+`pHostServices`\
+[in] Reservado. Sempre definido como null.
 
- [in] ID para visualizadores personalizados que dão suporte a mais de um tipo.
-
- `pHostServices`
-
- [in] Reservado. Sempre definido como null.
-
- `pDebugProperty`
-
- [in] Interface que pode ser usado para recuperar o valor a ser exibido.
+`pDebugProperty`\
+[in] Interface que pode ser usado para recuperar o valor a ser exibido.
 
 ## <a name="return-value"></a>Valor de retorno
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retornará o código de erro.

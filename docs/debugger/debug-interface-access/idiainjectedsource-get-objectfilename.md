@@ -1,44 +1,42 @@
 ---
 title: IDiaInjectedSource::get_objectFilename | Microsoft Docs
-ms.date: 11/15/2016
-ms.prod: visual-studio-dev14
-ms.technology: vs-ide-debug
-ms.topic: reference
+ms.date: 11/04/2016
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaInjectedSource::get_objectFilename method
 ms.assetid: 7c42847a-f0df-443a-a9fe-c495c1271ea8
-caps.latest.revision: 11
-author: MikeJo5000
+author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4bf9b325354bd95678969e5d1db4c13370d6d8b3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.workload:
+- multiple
+ms.openlocfilehash: f4c35a0f6473e2cc71079f8c453215d51494632c
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839882"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743353"
 ---
-# <a name="idiainjectedsourcegetobjectfilename"></a>IDiaInjectedSource::get_objectFilename
-[!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
+# <a name="idiainjectedsourceget_objectfilename"></a>IDiaInjectedSource::get_objectFilename
+Recupera o nome do arquivo de objeto para o qual a origem foi compilada.
 
-Recupera o nome do arquivo de objeto para o qual a fonte foi compilada.  
-  
-## <a name="syntax"></a>Sintaxe  
-  
-```cpp#  
-HRESULT get_objectFilename (   
-   BSTR* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parâmetros  
- `pRetVal`  
- [out] Retorna o nome do arquivo de objeto para o qual a fonte foi compilada.  
-  
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não há suporte para essa propriedade. Caso contrário, retornará um código de erro.  
-  
-## <a name="see-also"></a>Consulte também  
- [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)
+## <a name="syntax"></a>Sintaxe
+
+```C++
+HRESULT get_objectFilename ( 
+   BSTR* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parâmetros
+ `pRetVal`
+
+fora Retorna o nome do arquivo de objeto para o qual a origem foi compilada.
+
+## <a name="return-value"></a>Valor retornado
+ Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não houver suporte para essa propriedade. Caso contrário, retornará um código de erro.
+
+## <a name="see-also"></a>Consulte também
+- [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)

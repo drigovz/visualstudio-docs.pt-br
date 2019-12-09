@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3be16c2ccbd7cfe5d26507037e4238870e59d83b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 1a3875e508105bbe23b1d5cbdcd863a058592537
+ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63414697"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "67852182"
 ---
 # <a name="msbuild-transforms"></a>Transformações do MSBuild
 Uma transformação é uma conversão individual de uma lista de itens para outra. Além de habilitar um projeto para converter as lista de itens, uma transformação permite que um destino identifique um mapeamento direto entre suas entradas e saídas. Este tópico explica as transformações e como o [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] as utiliza na criação de projetos com mais eficiência.
@@ -63,7 +63,7 @@ Por exemplo, se os itens na lista @(RESXFile) *Form1.resx*, *Form2.resx* e *Form
 
 ## <a name="example"></a>Exemplo
 
-### <a name="description"></a>Descrição
+### <a name="description"></a>DESCRIÇÃO
  O exemplo a seguir mostra um arquivo de projeto [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] que usa transformações. Este exemplo supõe que haja apenas um arquivo *.xsd* no diretório *c:\sub0\sub1\sub2\sub3* e o diretório de trabalho é *c:\sub0*.
 
 ### <a name="code"></a>Código
@@ -92,11 +92,11 @@ Por exemplo, se os itens na lista @(RESXFile) *Form1.resx*, *Form2.resx* e *Form
 
 ```
 rootdir: C:\
-fullpath: C:\xmake\sub1\sub2\sub3\myfile.xsd
-rootdir + directory + filename + extension: C:\xmake\sub1\sub2\sub3\myfile.xsd
+fullpath: C:\sub0\sub1\sub2\sub3\myfile.xsd
+rootdir + directory + filename + extension: C:\sub0\sub1\sub2\sub3\myfile.xsd
 identity: sub1\sub2\sub3\myfile.xsd
 filename: myfile
-directory: xmake\sub1\sub2\sub3\
+directory: sub0\sub1\sub2\sub3\
 relativedir: sub1\sub2\sub3\
 extension: .xsd
 ```

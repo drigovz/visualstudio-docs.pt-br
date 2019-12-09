@@ -1,5 +1,5 @@
 ---
-title: Definir uma inspeção nas variáveis em Threads paralelos | Microsoft Docs
+title: Definir uma inspeção em variáveis em threads paralelos | Microsoft Docs
 ms.date: 04/25/2017
 ms.topic: conceptual
 f1_keywords:
@@ -17,26 +17,26 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6026ab6d0d59fb3a8f945e554fda26f10d98f952
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 0628e75c54cf0da10dc5aecdf243ae1dda3485fb
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63388470"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72732008"
 ---
-# <a name="set-a-watch-on-variables-in-parallel-threads-in-visual-studio-c-visual-basic-c"></a>Definir uma inspeção nas variáveis em Threads paralelos no Visual Studio (C#, Visual Basic, C++)
+# <a name="set-a-watch-on-variables-in-parallel-threads-in-visual-studio-c-visual-basic-c"></a>Definir uma inspeção em variáveis em threads paralelos no VisualC#Studio (, C++Visual Basic,)
 Na janela Inspeção Paralela, você pode exibir simultaneamente os valores que uma expressão mantém em vários threads. Cada linha representa um thread que está sendo executado em um aplicativo, mas um thread pode ser representado em várias linhas. Mais especificamente, cada linha representa uma chamada de função cuja assinatura de função corresponde à função no registro de ativação atual. Você pode classificar, reorganizar, remover e agrupar os itens que estão nas colunas. Você pode sinalizar, remover sinalização, congelar (suspender) e descongelar (retomar) threads. As colunas a seguir são exibidas na janela **Inspeção Paralela**:
 
 - A coluna do sinalizador, na qual você pode marcar um thread ao qual deseja prestar atenção especial.
 
-- A coluna atual do thread, no qual uma seta amarela indica que o thread atual (uma seta verde com uma parte final encaracolada indica que um thread não atual tem o contexto do depurador atual).
+- A coluna de thread atual, na qual uma seta amarela indica o thread atual (uma seta verde com uma parte inferior indica que um thread não atual tem o contexto do depurador atual).
 
 - Uma coluna configurável que pode exibir o computador, o processo, o bloco, a tarefa e o thread.
 
   > [!TIP]
-  > Para exibir informações sobre a tarefa na **inspeção paralela** , você deverá primeiro abrir os **tarefa** janela.
+  > Para exibir as informações da tarefa na janela de **inspeção paralela** , você deve primeiro abrir a janela de **tarefa** .
 
-- O espaço em branco *Adicionar inspeção* colunas, na qual você pode inserir expressões para assistir.
+- As colunas *Adicionar inspeção* em branco, nas quais você pode inserir expressões para observar.
 
   [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
@@ -50,19 +50,19 @@ Na janela Inspeção Paralela, você pode exibir simultaneamente os valores que 
 
 ### <a name="to-add-a-watch-expression"></a>Para adicionar uma expressão de inspeção
 
-- Selecione uma do espaço em branco *Adicionar inspeção* colunas e, em seguida, insira uma expressão de inspeção.
+- Selecione uma das colunas *Adicionar inspeção* em branco e, em seguida, insira uma expressão de inspeção.
 
 ### <a name="to-flag-or-unflag-a-thread"></a>Para sinalizar ou remover sinalização de um thread
 
-- Selecione a coluna do sinalizador da linha (primeira coluna), ou abra o menu de atalho para o thread e escolha **sinalizador** ou **Remover sinalização**.
+- Selecione a coluna sinalizador para a linha (primeira coluna) ou abra o menu de atalho para o thread e escolha **sinalizar** ou **desmarcar**.
 
 ### <a name="to-display-only-flagged-threads"></a>Para exibir somente threads sinalizados
 
-- Escolha o **Mostrar somente sinalizados** botão no canto superior esquerdo do **inspeção paralela** janela.
+- Escolha o botão **Mostrar somente sinalizado** no canto superior esquerdo da janela de **inspeção paralela** .
 
 ### <a name="to-switch-to-another-thread"></a>Para alternar para outro thread
 
-- Clique duas vezes a coluna de thread atual (segunda coluna). (Teclado: Selecione a linha e pressione Enter.)
+- Clique duas vezes na coluna thread atual (segunda coluna). (Teclado: selecione a linha e pressione Enter.)
 
 ### <a name="to-sort-a-column"></a>Para classificar uma coluna
 
@@ -86,5 +86,5 @@ Na janela Inspeção Paralela, você pode exibir simultaneamente os valores que 
 
 ## <a name="see-also"></a>Consulte também
 - [Depurar aplicativos multi-threaded](../debugger/debug-multithreaded-applications-in-visual-studio.md)
-- [Como: Usar a janela de Threads de GPU](../debugger/how-to-use-the-gpu-threads-window.md)
-- [Passo a passo: depurar um aplicativo C++ AMP](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application)
+- [Como usar a janela Threads da GPU](../debugger/how-to-use-the-gpu-threads-window.md)
+- [Passo a passo: depurando um aplicativo C++ AMP](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application)

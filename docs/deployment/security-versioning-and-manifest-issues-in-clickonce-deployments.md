@@ -1,5 +1,5 @@
 ---
-title: Segurança, controle de versão e problemas de manifesto em implantações do ClickOnce | Microsoft Docs
+title: Problemas de manifesto/de controle de versão de segurança na implantação do ClickOnce
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c87fc29b24b3c5ab4bd59d9cca25113f82895ff4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bb2ec5229132265feb1095c9ee921d73a1568dd2
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62928214"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745600"
 ---
 # <a name="security-versioning-and-manifest-issues-in-clickonce-deployments"></a>Problemas de segurança, controle de versão e manifesto em implantações do ClickOnce
 
@@ -59,7 +59,7 @@ Esse erro pode ocorrer somente se você estiver editando sua [!INCLUDE[ndpteccli
 
 ## <a name="specify-individual-net-framework-assemblies-in-the-manifest"></a>Especifique os assemblies do .NET Framework individuais no manifesto do
 
-O aplicativo falhará ao carregar se você tiver editado manualmente uma [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implantação para fazer referência a uma versão mais antiga de um [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] assembly. Por exemplo, se você adicionou uma referência ao assembly System.Net para obter uma versão de [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] antes da versão especificada no manifesto, em seguida, poderá ocorrer um erro. Em geral, você não deve tentar especificar referências ao indivíduo [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] assemblies, como a versão do [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] em relação a qual seu aplicativo é executado é especificado como uma dependência no manifesto do aplicativo.
+O aplicativo falhará ao carregar se você tiver editado manualmente um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implantação para fazer referência a uma versão mais antiga de um assembly do .NET Framework. Por exemplo, se você adicionou uma referência ao assembly para uma versão do .NET Framework anteriores à versão especificada no manifesto do System.Net, seria ocorrer um erro. Em geral, você não deve tentar especificar referências aos assemblies do .NET Framework individuais, como a versão do .NET Framework em relação ao qual seu aplicativo é executado é especificada como uma dependência no manifesto do aplicativo.
 
 ## <a name="manifest-parsing-issues"></a>Problemas de análise de manifesto
 
@@ -97,5 +97,5 @@ Se você deseja mover ou copiar um aplicativo, você também deverá atualizar o
 ## <a name="see-also"></a>Consulte também
 
 [Solucionar problemas de implantações do ClickOnce](../deployment/troubleshooting-clickonce-deployments.md)
-[aplicativos Securw ClickOnce](../deployment/securing-clickonce-applications.md)
+[aplicativos ClickOnce Secure](../deployment/securing-clickonce-applications.md)
 [escolher uma estratégia de implantação do ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md)

@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugArrayObject::GetElement method
 ms.assetid: 08b44341-7bf1-4a8c-8b79-98ae5785b195
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 735b92bb649344c055f7a645b961925e3cbd4d6e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 527302a2e6d6fc2884107e3773402adc56b881c7
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62924042"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66322215"
 ---
 # <a name="idebugarrayobjectgetelement"></a>IDebugArrayObject::GetElement
 Obtém um elemento da matriz.
@@ -38,14 +41,12 @@ int GetElement(
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `dwIndex`
+## <a name="parameters"></a>Parâmetros
+`dwIndex`\
+[in] O índice do elemento.
 
- [in] O índice do elemento.
-
- `ppElement`
-
- [out] Retorna um [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) interface que representa o elemento.
+`ppElement`\
+[out] Retorna um [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) interface que representa o elemento.
 
 ## <a name="return-value"></a>Valor de retorno
  Se for bem-sucedido, retornará S_OK; Caso contrário, retornará um código de erro.

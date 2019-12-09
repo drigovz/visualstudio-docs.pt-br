@@ -2,8 +2,8 @@
 title: Renomeação de refatoração
 ms.date: 01/26/2018
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 f1_keywords:
 - vs.csharp.refactoring.rename
@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 48e45373c41358ba3e9c2d70222ace07cdf1b59e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 2991227b3c8d742da360465e6c506e7123259e2c
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62812063"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72655615"
 ---
 # <a name="rename-a-code-symbol-refactoring"></a>Refatoração Renomear um símbolo de código
 
@@ -27,11 +27,11 @@ Esta refatoração aplica-se a:
 
 - Visual Basic
 
-**O quê:** Permite renomear identificadores para símbolos de código, como campos, variáveis locais, métodos, namespaces, propriedades e tipos.
+**O quê:** permite renomear identificadores para símbolos de código, como campos, variáveis locais, métodos, namespaces, propriedades e tipos.
 
-**Quando:** Você deseja renomear algo com segurança sem precisar localizar todas as instâncias e copiar/colar o novo nome.
+**Quando:** você deseja renomear algo com segurança sem a necessidade de localizar todas as instâncias e copiar/colar o novo nome.
 
-**Por que:** Copiar e colar o novo nome em um projeto inteiro provavelmente resultará em erros. Essa ferramenta de refatoração realizará com precisão a ação de renomeação.
+**Por quê:** copiar e colar o novo nome em um projeto inteiro provavelmente resultaria em erros. Essa ferramenta de refatoração realizará com precisão a ação de renomeação.
 
 ## <a name="how-to"></a>Como fazer
 
@@ -68,10 +68,17 @@ Esta refatoração aplica-se a:
 
 4. Quando estiver satisfeito com a alteração, escolha **Aplicar** ou pressione **Enter** e as alterações serão confirmadas.
 
-> [!NOTE]
-> Se você escolher um nome que já exista, o que causaria um conflito, a caixa **Renomear** o avisará.
->
-> ![Conflito de renomeação](media/rename-conflict-cs.png)
+## <a name="remarks"></a>Comentários
+
+- A partir do Visual Studio 2019 versão 16,3, quando você renomeia um tipo que corresponde ao nome do arquivo no qual ele está, uma caixa de seleção é exibida para permitir que você renomeie o arquivo ao mesmo tempo. Essa opção é exibida quando você renomeia uma classe, interface ou enumeração. Não há suporte para essa opção em tipos parciais com várias definições.
+
+   ![Renomear animação com arquivo-C#](media/rename-with-file-animated-cs.gif)
+
+- Se você escolher um nome que já exista, o que causaria um conflito, a caixa **Renomear** o avisará.
+
+   ![Conflito de renomeação](media/rename-conflict-cs.png)
+
+- Outra maneira de renomear um símbolo é alterar seu nome no editor. Depois, com o cursor no nome do símbolo, pressione **Ctrl**+ **.** ou apenas expanda o menu do ícone da lâmpada que aparece e escolha **Renomear \<nome antigo> para \<nome novo>** .
 
 ## <a name="see-also"></a>Consulte também
 

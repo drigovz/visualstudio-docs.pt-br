@@ -13,11 +13,11 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 5b5126758c60262564390f84b6278300a41660f5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58922806"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68187182"
 ---
 # <a name="idebugdisassemblystream2"></a>IDebugDisassemblyStream2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ IDebugDisassemblyStream2 : IUnknown
  O fluxo de desmontagem pode ser criado para representar o espaço de endereço inteiro ou apenas uma função ou módulo dentro do espaço. Cada instrução é representada por um [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) estrutura retornada por uma chamada para o [leitura](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md) método.  
   
 ## <a name="requirements"></a>Requisitos  
- Header: msdbg.h  
+ Cabeçalho: msdbg.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   

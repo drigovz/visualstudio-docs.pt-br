@@ -24,12 +24,12 @@ caps.latest.revision: 48
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 280160127cc147cddd91a79c4290f80a311ee792
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: da41524fcb231ea399dbbd2a2904afd935e5c4f8
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434854"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824251"
 ---
 # <a name="how-to-use-the-threads-window"></a>Como: Usar a janela Threads
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -72,11 +72,11 @@ No **Threads** janela, você pode examinar e trabalhar com threads no aplicativo
   
 - Execute uma das seguintes etapas:  
   
-    - Clique duas vezes em qualquer thread.  
-  
-    - Um thread com o botão direito e clique em **alternar para Thread**.  
-  
-         A seta amarela é exibida ao lado do novo thread ativo. O contorno cinza de uma seta identifica o thread onde a execução interrompe no depurador.  
+  - Clique duas vezes em qualquer thread.  
+
+  - Um thread com o botão direito e clique em **alternar para Thread**.  
+
+    A seta amarela é exibida ao lado do novo thread ativo. O contorno cinza de uma seta identifica o thread onde a execução interrompe no depurador.  
   
 ## <a name="grouping-and-sorting-threads"></a>Agrupando e classificando threads  
  Quando você agrupa threads, um título aparece na tabela para cada grupo. O título contém uma descrição do grupo, como “Thread de trabalho” ou “Threads sem sinalização” e um controle de árvore. Os threads de membro de cada grupo aparecem no cabeçalho do grupo. Se você quiser ocultar os threads de membro para um grupo, poderá usar o controle de árvore para recolher o grupo.  
@@ -116,18 +116,18 @@ No **Threads** janela, você pode examinar e trabalhar com threads no aplicativo
   
 - Na barra de ferramentas na parte superior da janela **Threads**, vá para a caixa **Pesquisar** e:  
   
-    - Digite uma cadeia de caracteres de pesquisa e pressione ENTER.  
-  
-         \- ou -  
-  
-    - Clique na lista suspensa ao lado de **pesquisa** caixa e selecione uma cadeia de caracteres de pesquisa de uma pesquisa anterior.  
+  - Digite uma cadeia de caracteres de pesquisa e pressione ENTER.  
+
+    \- ou -  
+
+  - Clique na lista suspensa ao lado de **pesquisa** caixa e selecione uma cadeia de caracteres de pesquisa de uma pesquisa anterior.  
   
 - (Opcional) Para incluir a pilha de chamadas inteira na pesquisa, selecione **Pesquisar Pilha de Chamadas**.  
   
 ## <a name="freezing-and-thawing-threads"></a>Congelando e descongelando threads  
  Quando você congela um thread, o sistema não iniciará a execução do thread mesmo se os recursos estiverem disponíveis.  
   
- No código nativo, você pode suspender ou retomar threads chamando as funções do Windows `SuspendThread` e `ResumeThread` ou as funções MFC [CWinThread::SuspendThread](http://msdn.microsoft.com/library/57189c7e-fd71-42e5-bc4b-3de7cd373d28) e [cwinthread:: ResumeThread](http://msdn.microsoft.com/library/d6f97a2f-5c9f-4ee1-b978-d74938784db5). Se você chamar `SuspendThread` ou `ResumeThread`, você altera o *contagem suspensa*, que aparece no **Threads** janela. Porém, se você congelar ou descongelar um thread nativo, não alterará a contagem suspensa. No código nativo, um thread não pode ser executado a menos que seja descongelado e tenha uma contagem suspensa de zero.  
+ No código nativo, você pode suspender ou retomar threads chamando as funções do Windows `SuspendThread` e `ResumeThread` ou as funções MFC [CWinThread::SuspendThread](https://msdn.microsoft.com/library/57189c7e-fd71-42e5-bc4b-3de7cd373d28) e [cwinthread:: ResumeThread](https://msdn.microsoft.com/library/d6f97a2f-5c9f-4ee1-b978-d74938784db5). Se você chamar `SuspendThread` ou `ResumeThread`, você altera o *contagem suspensa*, que aparece no **Threads** janela. Porém, se você congelar ou descongelar um thread nativo, não alterará a contagem suspensa. No código nativo, um thread não pode ser executado a menos que seja descongelado e tenha uma contagem suspensa de zero.  
   
  No código gerenciado, congelar ou descongelar um thread altera a contagem suspensa. No código gerenciado, um thread congelado tem uma contagem suspensa de 1. No código nativo, um thread congelado tem uma contagem suspensa de 0 a menos que o thread tenha sido suspenso por uma chamada `SuspendThread`.  
   

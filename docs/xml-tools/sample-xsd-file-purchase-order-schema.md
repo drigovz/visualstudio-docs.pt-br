@@ -1,21 +1,21 @@
 ---
-title: 'Arquivo de exemplo XSD: Esquema de ordem de compra'
+title: 'Arquivo XSD de exemplo: esquema de ordem de compra'
 ms.date: 11/04/2016
 ms.topic: sample
 ms.assetid: f92b63b5-ec61-43b5-ae1e-63432a7a7e30
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c3a799337c098a8ce04bbb5dff0eb3eb046b04f4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 9a81cae6bc91e480fb619afd647e8285b6efc410
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62810574"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72601807"
 ---
-# <a name="sample-xsd-file-purchase-order-schema"></a>Arquivo de exemplo XSD: Esquema de ordem de compra
+# <a name="sample-xsd-file-purchase-order-schema"></a>Arquivo XSD de exemplo: esquema de ordem de compra
 
 O arquivo XSD a seguir é usado em vários exemplos na documentação do Designer de Esquema XSD. Esse arquivo é um esquema de ordem de compra.
 
@@ -86,3 +86,6 @@ O arquivo XSD a seguir é usado em vários exemplos na documentação do Designe
   </xsd:complexType>
 </xsd:schema>
 ```
+
+> [!NOTE]
+> As empresas, as organizações, os produtos, os nomes de domínio, os endereços de email, os logotipos, as pessoas, os locais e os eventos de exemplo descritos aqui são fictícios. Nenhuma associação com nenhuma empresa, organização, produto, nome de domínio, endereço de email, logotipo, pessoa, locais ou eventos reais é intencional nem deve ser inferida.

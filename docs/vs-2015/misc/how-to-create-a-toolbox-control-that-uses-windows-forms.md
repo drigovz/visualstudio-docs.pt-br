@@ -1,5 +1,5 @@
 ---
-title: 'Como: Criar um controle de caixa de ferramentas que usa o Windows Forms | Microsoft Docs'
+title: 'Como: criar um controle de caixa de ferramentas que usa Windows Forms | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -11,83 +11,83 @@ helpviewer_keywords:
 ms.assetid: abbd3c3c-3a6e-4539-bd6c-a5891dead234
 caps.latest.revision: 12
 manager: jillfra
-ms.openlocfilehash: 33b4d8f1932429838f701df1f6ffaaceef321c4e
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 8436b8eee0193715e4ae886db18f91f7148dcb3b
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442914"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300431"
 ---
-# <a name="how-to-create-a-toolbox-control-that-uses-windows-forms"></a>Como: Criar um controle de caixa de ferramentas que usa o Windows Forms
-O modelo de controle de caixa de ferramentas do Windows Forms que está incluído na [!INCLUDE[vssdk_dev11_long](../includes/vssdk-dev11-long-md.md)] permite que você crie controles de formulários do Windows que são adicionados automaticamente para o **caixa de ferramentas** quando a extensão está instalada. Este tópico mostra como usar o modelo para criar uma **caixa de ferramentas** controle que você pode distribuir a outros usuários...  
+# <a name="how-to-create-a-toolbox-control-that-uses-windows-forms"></a>Como: criar um controle de caixa de ferramentas que usa Windows Forms
+O modelo de controle de caixa de ferramentas de Windows Forms que está incluído na [!INCLUDE[vssdk_dev11_long](../includes/vssdk-dev11-long-md.md)] permite criar controles de Windows Forms que são adicionados automaticamente à **caixa de ferramentas** quando a extensão é instalada. Este tópico mostra como usar o modelo para criar um controle de **caixa de ferramentas** que você pode distribuir para outros usuários..  
   
 > [!NOTE]
-> Para saber como baixar o SDK do Visual Studio, consulte [Visual Studio Extensibility Developer Center](http://go.microsoft.com/fwlink/?linkid=121964) no site do MSDN.  
+> Para saber como baixar o SDK do Visual Studio, consulte [Visual Studio Extensibility Developer Center](https://go.microsoft.com/fwlink/?linkid=121964) no site do MSDN.  
   
 ## <a name="creating-a-toolbox-control"></a>Criando um controle de caixa de ferramentas  
- Usar o modelo de controle de caixa de ferramentas do Windows Forms para criar o projeto e, em seguida, crie uma interface do usuário (IU) no designer.  
+ Use o modelo de controle caixa de ferramentas de Windows Forms para criar o projeto e, em seguida, crie uma interface do usuário (IU) no designer.  
   
-#### <a name="to-create-a-windows-forms-toolbox-control-project"></a>Para criar um projeto de controle de caixa de ferramentas do Windows Forms  
+#### <a name="to-create-a-windows-forms-toolbox-control-project"></a>Para criar um projeto de controle de caixa de ferramentas de Windows Forms  
   
-1. No menu **Arquivo**, clique em **Novo** e clique em **Projeto**.  
+1. No menu **Arquivo**, clique em **Novo** e em **Projeto**.  
   
-2. No **novo projeto** caixa de diálogo **modelos instalados**, clique no nó de linguagem de programação preferencial e, em seguida, clique em **extensibilidade**. Na lista de tipos de projeto, selecione **controle de caixa de ferramentas do Windows Forms**.  
+2. Na caixa de diálogo **novo projeto** , em **modelos instalados**, clique no nó para sua linguagem de programação preferida e clique em **extensibilidade**. Na lista de tipos de projeto, selecione **Windows Forms controle caixa de ferramentas**.  
   
-3. No **nome** , digite o nome que você deseja usar para o projeto. Clique em **OK**.  
+3. Na caixa **nome** , digite o nome que você deseja usar para o projeto. Clique em **OK**.  
   
-     O Visual Studio cria uma solução que contém um controle de usuário para colocar o controle um atributo de **caixa de ferramentas**, e de manifesto de um VSIX para implantação.  
+     O Visual Studio cria uma solução que contém um controle de usuário, um atributo para colocar o controle na **caixa de ferramentas**e um manifesto do VSIX para implantação.  
   
-#### <a name="to-build-the-control-ui"></a>Para criar o controle da interface do usuário  
+#### <a name="to-build-the-control-ui"></a>Para criar a interface do usuário do controle  
   
-1. Na **Gerenciador de soluções**, clique duas vezes em ToolboxControl.cs para abri-lo no designer.  
+1. Em **Gerenciador de soluções**, clique duas vezes em ToolboxControl.cs para abri-lo no designer.  
   
-2. Dos **caixa de ferramentas**, arraste os controles que você deseja para a superfície de design e organizá-los de acordo com seu design.  
+2. Na **caixa de ferramentas**, arraste os controles que você deseja para a superfície de design e organize-os de acordo com seu design.  
   
-3. No **propriedades** janela, defina as propriedades públicas no controle de usuário e no filho controles.  
+3. Na janela **Propriedades** , defina propriedades públicas no controle de usuário e nos controles filho.  
   
-## <a name="coding-the-control"></a>O controle de codificação  
- Por padrão, o controle será exibido na **caixa de ferramentas** como **ToolboxControl1** em um **caixa de ferramentas** grupo de item que tem o mesmo nome que sua solução. Você pode alterar esses nomes no arquivo ToolboxControl.cs.  
+## <a name="coding-the-control"></a>Codificando o controle  
+ Por padrão, seu controle aparecerá na **caixa de ferramentas** como **ToolboxControl1** em um grupo de itens da **caixa de ferramentas** que tem o mesmo nome que a sua solução. Você pode alterar esses nomes no arquivo ToolboxControl.cs.  
   
-#### <a name="to-code-the-control"></a>Para o controle do código  
+#### <a name="to-code-the-control"></a>Para codificar o controle  
   
-1. Na **Gerenciador de soluções**, clique com botão direito ToolboxControl.cs e, em seguida, clique em **Exibir código** para abrir o arquivo no modo de exibição de código.  
+1. Em **Gerenciador de soluções**, clique com o botão direito do mouse em ToolboxControl.cs e clique em **Exibir código** para abrir o arquivo na exibição de código.  
   
-2. A definição de classe parcial que implementa o controle, clique no nome de classe, clique em **refatorar**e, em seguida, clique em **Renomear**. Altere o nome da classe para o nome que você deseja exibir na **caixa de ferramentas** quando o controle está instalado.  
+2. Na definição da classe parcial que implementa o controle, clique com o botão direito do mouse no nome da classe, clique em **Refactor**e, em seguida, clique em **renomear**. Altere o nome da classe para o nome que você deseja exibir na **caixa de ferramentas** quando o controle estiver instalado.  
   
-3. Imediatamente acima da definição de classe, na `ProvideToolboxControl` declaração de atributo, altere o valor do primeiro parâmetro para o nome do grupo de itens que hospedará o controle em de **caixa de ferramentas**.  
+3. Imediatamente acima da definição de classe, na declaração de atributo `ProvideToolboxControl`, altere o valor do primeiro parâmetro para o nome do grupo de itens que hospedará o controle na **caixa de ferramentas**.  
   
-     A exemplo a seguir mostra a `ProvideToolboxControl` atributo e a definição de classe ajustado para um controle chamado `Counter` no `General` grupo de itens.  
+     O exemplo a seguir mostra o atributo `ProvideToolboxControl` e a definição de classe ajustada para um controle chamado `Counter` no grupo de itens `General`.  
   
      [!code-csharp[ToolboxControlWinForms#07](../snippets/csharp/VS_Snippets_VSSDK/toolboxcontrolwinforms/cs/toolboxcontrol.cs#07)]  
   
-4. Implemente as propriedades, métodos e eventos do controle.  
+4. Implemente as propriedades, os métodos e os eventos para o controle.  
   
 ## <a name="building-testing-and-deployment"></a>Criação, teste e implantação  
- Pressionando F5 compila o projeto, que inclui um arquivo de implantação. VSIX e abre uma segunda instância do Visual Studio que tem o controle instalado na **caixa de ferramentas**.  
+ Pressionar F5 compila o projeto, que inclui um arquivo de implantação. vsix, e abre uma segunda instância do Visual Studio que tem o controle instalado na **caixa de ferramentas**.  
   
 #### <a name="to-build-and-test-the-control"></a>Para compilar e testar o controle  
   
 1. Pressione F5.  
   
-2. Na nova instância do Visual Studio, crie um projeto de aplicativo do Windows Forms.  
+2. Na nova instância do Visual Studio, crie um projeto de aplicativo Windows Forms.  
   
-3. Localizar seu controle na **caixa de ferramentas** e arraste-o para a superfície de design.  
+3. Localize seu controle na **caixa de ferramentas** e arraste-o para a superfície de design.  
   
-4. No **propriedades** janela, verifique se suas propriedades aparecem conforme o esperado.  
+4. Na janela **Propriedades** , verifique se suas propriedades aparecem conforme o esperado.  
   
-5. Adicione qualquer código ou controles adicionais que são necessárias para testar seus métodos e eventos.  
+5. Adicione qualquer código ou controles adicionais necessários para testar seus métodos e eventos.  
   
-6. Pressione F5 para abrir o aplicativo de formulários do Windows.  
+6. Pressione F5 para abrir o aplicativo Windows Forms.  
   
-7. Verifique se que as propriedades, métodos e eventos do seu controle se comportar conforme o esperado.  
+7. Verifique se as propriedades, os métodos e os eventos do seu controle se comportam conforme o esperado.  
   
 #### <a name="to-deploy-the-control"></a>Para implantar o controle  
   
-1. Depois de compilar o projeto testado, abra a pasta de \bin\debug\ do projeto no Explorador de arquivos e localize o arquivo. VSIX.  
+1. Depois de criar o projeto testado, abra a pasta \bin\debug\ do projeto no explorador de arquivos e localize o arquivo. vsix.  
   
-2. Carregar o arquivo. VSIX para uma rede ou em um site da Web.  
+2. Carregue o arquivo. vsix em uma rede ou em um site da Web.  
   
-     Se você carregar o arquivo para o [Visual Studio Marketplace](https://marketplace.visualstudio.com/) site da Web, outros usuários podem usar **Gerenciador de extensões** no Visual Studio para localizar o controle e instalá-lo.  
+     Se você carregar o arquivo no site da [Visual Studio Marketplace](https://marketplace.visualstudio.com/) , outros usuários poderão usar o **Gerenciador de extensões** no Visual Studio para localizar o controle e instalá-lo.  
   
 ## <a name="see-also"></a>Consulte também  
  [Criar um controle de caixa de ferramentas do WPF](../extensibility/creating-a-wpf-toolbox-control.md)

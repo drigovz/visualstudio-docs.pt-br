@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProperty3::GetCustomViewerList
 ms.assetid: 74490fd8-6f44-4618-beea-dab64961bb8a
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7bf31379f99c9cde8b0050b080797f3a4e70acea
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 5d8a439863f577237699950b3d70eb15d75ec77a
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62916557"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66348864"
 ---
 # <a name="idebugproperty3getcustomviewerlist"></a>IDebugProperty3::GetCustomViewerList
 Obtém uma lista de visualizadores personalizados associados a essa propriedade.
@@ -42,22 +45,18 @@ int GetCustomViewerList(
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
-`celtSkip`
+## <a name="parameters"></a>Parâmetros
+`celtSkip`\
+[in] O número de visualizadores de ignorar.
 
- [in] O número de visualizadores de ignorar.
+`celtRequested`\
+[in] O número de visualizadores para recuperar (também especifica o tamanho do `rgViewers` matriz).
 
-`celtRequested`
+`rgViewers`\
+[no, out] Matriz de [DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md) estruturas a serem preenchidos.
 
- [in] O número de visualizadores para recuperar (também especifica o tamanho do `rgViewers` matriz).
-
-`rgViewers`
-
- [no, out] Matriz de [DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md) estruturas a serem preenchidos.
-
-`pceltFetched`
-
- [out] O número real de visualizadores é retornado.
+`pceltFetched`\
+[out] O número real de visualizadores é retornado.
 
 ## <a name="return-value"></a>Valor de retorno
 Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.

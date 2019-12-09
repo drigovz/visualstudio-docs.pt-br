@@ -1,5 +1,5 @@
 ---
-title: Coletar dados de simultaneidade para um aplicativo Web ASP.NET usando a linha de comando do criador de perfil | Microsoft Docs
+title: Linha de comando do criador de perfil para os obter os dados de simultaneidade do aplicativo Web do ASP.NET
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,14 +9,15 @@ ms.assetid: 0ba431c1-9eaf-4af9-8ce0-669c0835cdc2
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - aspnet
-ms.openlocfilehash: 7b1a99f3007a87738f55d0b13fa8943ded925266
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 4941e9fde651e9274eeafeffc4aefa27483f3730
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62960355"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779656"
 ---
 # <a name="collect-concurrency-data-for-an-aspnet-web-application-using-the-profiler-command-line"></a>Coletar dados de simultaneidade para um aplicativo Web do ASP.NET usando a linha de comando do criador de perfil
 O método de simultaneidade de Ferramentas de Criação de Perfil [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] permite coletar dados de contenção de recursos.
@@ -25,7 +26,7 @@ O método de simultaneidade de Ferramentas de Criação de Perfil [!INCLUDE[vspr
 
 |Tarefa|Conteúdo relacionado|
 |----------|---------------------|
-|Anexar o criador de perfil a um aplicativo ASP.NET em execução|-   [Como: Anexar o criador de perfil a um aplicativo ASP.NET para coletar dados de simultaneidade](../profiling/how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-concurrency-data-by-using-the-command-line.md)|
+|Anexar o criador de perfil a um aplicativo ASP.NET em execução|-   [How to: Attach the Profiler to an ASP.NET Application to Collect Concurrency Data (Como anexar o criador de perfil a um aplicativo ASP.NET para coletar dados de simultaneidade)](../profiling/how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-concurrency-data-by-using-the-command-line.md)|
 
 ## <a name="reference"></a>Referência
 - [Referência de ferramentas de criação de perfil de linha de comando](../profiling/command-line-profiling-tools-reference.md)

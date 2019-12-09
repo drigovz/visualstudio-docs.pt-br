@@ -3,21 +3,21 @@ title: Criar um esquema XML
 ms.date: 03/05/2019
 ms.topic: conceptual
 ms.assetid: 1d6700a9-fd67-4794-8997-399589e99bec
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0e93155f230ee4a564116f5d1357a97923706c36
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 73563d732aab48192892794c15750bc9e5d3eb6a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62783487"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72645957"
 ---
-# <a name="how-to-create-an-xml-schema-from-an-xml-document"></a>Como: Criar um esquema XML de um documento XML
+# <a name="how-to-create-an-xml-schema-from-an-xml-document"></a>Como: criar um esquema XML a partir de um documento XML
 
-O editor XML permite criar um esquema XSD (linguagem) de definição de esquema XML de um documento XML. O arquivo XML determina como o esquema é gerado da seguinte maneira:
+O editor de XML permite que você crie um esquema XSD (linguagem de definição de esquema XML) a partir de um documento XML. O arquivo XML determina como o esquema é gerado da seguinte maneira:
 
 - Se o documento XML não tiver nenhum esquema ou DTD (definição de tipo de documento) associado a ele, os dados no documento XML serão usados para inferir um novo esquema XML.
 
@@ -25,7 +25,7 @@ O editor XML permite criar um esquema XSD (linguagem) de definição de esquema 
 
 - Se o documento XML contiver dados internos com um esquema XDR reduzido de dados XML, o esquema XDR será convertido em um esquema XML correspondente.
 
-Os esquemas que são criados, em seguida, são usados para fornecer o IntelliSense para o arquivo XML.
+Os esquemas que são criados são usados para fornecer o IntelliSense para o arquivo XML.
 
 Para obter mais informações sobre o mecanismo de inferência de esquema, consulte [inferir um esquema XML](/dotnet/standard/data/xml/inferring-an-xml-schema).
 
@@ -33,7 +33,7 @@ Para obter mais informações sobre o mecanismo de inferência de esquema, consu
 
 1. Abra um arquivo XML no Visual Studio.
 
-2. Na barra de menus, escolha **XML** > **Create Schema**.
+2. Na barra de menus, escolha **XML**  > **criar esquema**.
 
    Um documento de esquema XML é criado e aberto para cada namespace encontrado no arquivo XML. Cada esquema é aberto como um arquivo variado temporário. Os esquemas podem ser salvos no disco, adicionados ao seu projeto ou descartados.
 

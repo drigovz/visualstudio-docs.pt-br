@@ -1,7 +1,7 @@
 ﻿---
 title: Selecionar e instalar interpretadores do Python
 description: Uma lista completa de interpretadores do Python que têm suporte no Visual Studio com instruções breves sobre onde localizar os instaladores.
-ms.date: 03/13/2019
+ms.date: 06/05/2019
 ms.topic: conceptual
 author: JoshuaPartlow
 ms.author: joshuapa
@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8e7648496e85b35d4f97fc9c85dc0bce6d17000e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: b91d18fe5924abe12240f31295b4853c1e932333
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62957400"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72984614"
 ---
 # <a name="install-python-interpreters"></a>Instalar interpretadores do Python
 
@@ -27,6 +27,11 @@ Como alternativa, você pode instalar interpretadores padrão do Python na caixa
 
 Você também pode instalar manualmente qualquer um dos interpretadores listados na tabela abaixo fora do instalador do Visual Studio. Por exemplo, se você instalar o Anaconda 3 antes de instalar o Visual Studio, não será necessário instalar novamente usando o instalador do Visual Studio. Você também pode instalar um interpretador manualmente se, por exemplo, houver uma versão mais recente disponível que ainda não aparece no instalador do Visual Studio.
 
+::: moniker range=">=vs-2019"
+> [!Note]
+> O Visual Studio dá suporte ao Python versão 2.7, bem como à versão 3.5 e posterior. Embora seja possível usar o Visual Studio para editar código escrito em outras versões do Python, essas versões não são oficialmente aceitas, e recursos como o IntelliSense e a depuração podem não funcionar.
+::: moniker-end
+
 Para o **Visual Studio 2015 e versões anteriores**, é necessário instalar manualmente um dos interpretadores.
 
 O Visual Studio (todas as versões) detecta automaticamente cada interpretador Python instalado e seu ambiente verificando o Registro, de acordo com o [PEP 514 – registro do Python no Registro do Windows](https://www.python.org/dev/peps/pep-0514/). Geralmente, as instalações do Python se encontram em **HKEY_LOCAL_MACHINE\SOFTWARE\Python** (32 bits) e **HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Python** (64 bits) e, em seguida, dentro de nós para a distribuição, como **PythonCore** (CPython) e **ContinuumAnalytics** (Anaconda).
@@ -37,11 +42,11 @@ O Visual Studio mostra todos os ambientes conhecidos na janela [**Ambientes do P
 
 | Interpretador | Descrição |
 | --- | --- |
-| [CPython](https://www.python.org/) | O interpretador “nativo” e mais usado, disponível em versões de 32 e 64 bits (o recomendado é 32 bits). Inclui os últimos recursos de linguagem, a compatibilidade máxima com pacotes do Python, suporte de depuração completo e interoperabilidade com o [IPython](https://ipython.org/). Confira também:  [Devo usar o Python 2 ou 3?](https://wiki,python.org/moin/Python2orPython3). Observe que o Visual Studio 2015 e os anteriores não dão suporte ao Python 3.6 ou posteriores e podem gerar erros, como **Python versão 3.6 sem suporte**. Use o Python 3.5 ou anteriores. |
+| [CPython](https://www.python.org/) | O interpretador “nativo” e mais usado, disponível em versões de 32 e 64 bits (o recomendado é 32 bits). Inclui os últimos recursos de linguagem, a compatibilidade máxima com pacotes do Python, suporte de depuração completo e interoperabilidade com o [IPython](https://ipython.org/). Consulte também: [Devo usar o Python 2 ou 3?](https://wiki,python.org/moin/Python2orPython3). Observe que o Visual Studio 2015 e os anteriores não dão suporte ao Python 3.6 ou posteriores e podem gerar erros, como **Python versão 3.6 sem suporte**. Use o Python 3.5 ou anteriores. |
 | [IronPython](https://github.com/IronLanguages/ironpython2) | Uma implementação do .NET do Python, disponível em versões de 32 e 64 bits, que fornece interoperabilidade do C#/F#/Visual Basic, acesso às APIs do .NET, depuração padrão do Python (mas não a depuração de modo misto do C++) e a depuração mista do IronPython/C#. No entanto, o IronPython não dá suporte a ambientes virtuais. |
 | [Anaconda](https://www.continuum.io) | Uma plataforma aberta de ciência de dados do Python, além de incluir a última versão do CPython e a maioria dos pacotes difíceis de serem instalados. Recomendamos usá-la, caso você esteja indeciso sobre qual plataforma deverá usar. |
 | [PyPy](https://www.pypy.org/) | Uma implementação JIT de rastreamento de alto desempenho do Python que é boa para programas de execução longa e situações em que é possível identificar problemas de desempenho, mas em que não é possível encontrar outras resoluções. Funciona com o Visual Studio, mas com suporte limitado para recursos de depuração avançados. |
-| [Jython](http://www.jython.org/) | Uma implementação do Python na JVM (Máquina Virtual Java). Semelhante ao IronPython, o código em execução no Jython pode interagir com classes e bibliotecas Java, mas poderá não usar várias bibliotecas destinadas ao CPython. Funciona com o Visual Studio, mas com suporte limitado para recursos de depuração avançados. |
+| [Jython](https://www.jython.org/) | Uma implementação do Python na JVM (Máquina Virtual Java). Semelhante ao IronPython, o código em execução no Jython pode interagir com classes e bibliotecas Java, mas poderá não usar várias bibliotecas destinadas ao CPython. Funciona com o Visual Studio, mas com suporte limitado para recursos de depuração avançados. |
 
 Para os desenvolvedores que desejam fornecer novas formas de detecção para ambientes do Python, consulte [Detecção para ambiente da PTVS](https://github.com/Microsoft/PTVS/wiki/Extensibility-Environments) (github.com).
 

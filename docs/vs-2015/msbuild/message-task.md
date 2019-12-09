@@ -20,11 +20,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 48e867cd0993106247f7105c1102f4e1407a4fed
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59662732"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68190899"
 ---
 # <a name="message-task"></a>Tarefa Message
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Registra uma mensagem durante a compilação.
 ## <a name="parameters"></a>Parâmetros  
  A tabela a seguir descreve os parâmetros da tarefa `Message`.  
   
-|Parâmetro|Descrição|  
+|Parâmetro|DESCRIÇÃO|  
 |---------------|-----------------|  
 |`Importance`|Parâmetro `String` opcional.<br /><br /> Especifica a importância da mensagem. Esse parâmetro pode ter um valor igual a `high`, `normal` ou `low`. O valor padrão é `normal`.|  
 |`Text`|Parâmetro `String` opcional.<br /><br /> O texto de erro do log.|  
@@ -61,6 +61,6 @@ Registra uma mensagem durante a compilação.
 </Project>  
 ```  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Veja também  
  [Referência de tarefas](../msbuild/msbuild-task-reference.md)   
  [Obtendo Logs de Build](../msbuild/obtaining-build-logs-with-msbuild.md)

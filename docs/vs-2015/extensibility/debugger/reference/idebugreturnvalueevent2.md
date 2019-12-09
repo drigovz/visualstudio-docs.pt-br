@@ -12,12 +12,12 @@ ms.assetid: 2daded43-e427-4fbb-a19e-f3834e3723af
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 7e65aeb2caab8793c8b5d3cd1656f9bbb41cbf57
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b3a6ece54b76d38891f99cc96afa52df72d7138a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58924294"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65676413"
 ---
 # <a name="idebugreturnvalueevent2"></a>IDebugReturnValueEvent2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ IDebugReturnValueEvent2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Observações para implementadores  
- O DE implementa essa interface para relatar o valor retornado de uma função que tem sido de nível de ou sobre. O [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) interface deve ser implementada no mesmo objeto como essa interface. Usa o SDM [QueryInterface](http://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) para acessar o `IDebugEvent2` interface.  
+ O DE implementa essa interface para relatar o valor retornado de uma função que tem sido de nível de ou sobre. O [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) interface deve ser implementada no mesmo objeto como essa interface. Usa o SDM [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) para acessar o `IDebugEvent2` interface.  
   
 ## <a name="notes-for-callers"></a>Observações para chamadores  
  O DE cria e envia esse objeto de evento para relatar o valor de retorno de uma função. O evento é enviado usando o [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) função de retorno de chamada que é fornecida pelo SDM quando ele é anexado ao programa que está sendo depurado.  

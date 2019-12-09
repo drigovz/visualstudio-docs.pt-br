@@ -13,12 +13,12 @@ author: bowdenk7
 ms.author: wilkelly
 manager: jillfra
 monikerRange: vs-2017
-ms.openlocfilehash: 58de705d90567723f98bfb472f808da7101a624e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 653b2576b0076d02f2e18cedc6f9f9890fd98fe5
+ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62553338"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72888658"
 ---
 # <a name="javascript-in-visual-studio-2017"></a>JavaScript no Visual Studio 2017
 
@@ -34,13 +34,13 @@ O Visual Studio agora dá suporte à sintaxe para atualizações da linguagem EC
 ### <a name="what-is-ecmascript-2015"></a>O que é ECMAScript 2015?
 
 O JavaScript ainda está em evolução enquanto uma linguagem de programação e [TC39](https://www.ecma-international.org/memento/tc39-m.htm) é o comitê responsável por fazer atualizações.
-ECMAScript 2015 é uma atualização para a linguagem JavaScript que traz novas sintaxes e funcionalidades úteis. Para um mergulho profundo nos recursos da ES6, confira [este](http://es6-features.org) site de referência.
+ECMAScript 2015 é uma atualização para a linguagem JavaScript que traz novas sintaxes e funcionalidades úteis. Para um mergulho profundo nos recursos da ES6, confira [este](http://es6-features.org/#Constants) site de referência.
 
 Além de suporte para ECMAScript 2015, o Visual Studio também dá suporte a ECMAScript 2016 e terá suporte para versões futuras do ECMAScript conforme elas forem lançadas. Para se manter atualizado com TC39 e as alterações mais recentes no ECMAScript, execute o trabalho no [GitHub](https://github.com/tc39).
 
 ### <a name="transpile-javascript"></a>Transcompilar JavaScript
 
-Um problema comum com o JavaScript é que você deseja usar os recursos de linguagem ES6+ mais recentes, porque eles lhe ajudam a ser mais produtivo, mas seus ambientes de tempo de execução (geralmente navegadores) ainda não dão suporte a esses novos recursos. Isso significa que você terá que manter o controle de quais navegadores dão suporte a quais recursos (o que pode ser entediante) ou você precisa de uma maneira de converter o código ES6 + em uma versão que seus tempos de execução de destino entendam (geralmente ES5). Convertendo seu código para uma versão que o tempo de execução entende que é conhecido como “transcompilação”.
+Um problema comum com o JavaScript é que você deseja usar os recursos de linguagem ES6+ mais recentes, porque eles lhe ajudam a ser mais produtivo, mas seus ambientes de runtime (geralmente navegadores) ainda não dão suporte a esses novos recursos. Isso significa que você terá que manter o controle de quais navegadores dão suporte a quais recursos (o que pode ser entediante) ou você precisa de uma maneira de converter o código ES6 + em uma versão que seus runtimes de destino entendam (geralmente ES5). Convertendo seu código para uma versão que o runtime entende que é conhecido como “transcompilação”.
 
 Um dos principais recursos do TypeScript é a capacidade de transcompilar código ES6+ para ES5 ou ES3 para que você possa escrever o código que lhe torna mais produtivo, sem deixar de poder executar seu código em qualquer plataforma. Já que o JavaScript em [!include[vs_dev15](../../docs/misc/includes/vs_dev15_md.md)] usa o mesmo serviço de linguagem que o TypeScript, ele também pode aproveitar a transcompilação do ES6+ para o ES5.
 
@@ -53,7 +53,7 @@ Para compilar arquivos JavaScript, um arquivo `tsconfig.json` deve ser adicionad
 As configurações necessárias para o arquivo tsconfig são as seguintes:
 
 - `allowJs`: esse valor deve ser definido como `true` para que os arquivos JavaScript sejam reconhecidos. O valor padrão é `false`, pois TypeScript é compilado em JavaScript e o compilador não deve incluir arquivos, ele apenas é compilado.
-- `outDir`: esse valor deve ser definido com um local não incluído no projeto, para que os arquivos JavaScript emitidos não sejam detectados e depois incluídos no projeto (confira `exclude`).
+- `outDir`: esse valor deve ser definido com um local não incluído no projeto, para que os arquivos JavaScript emitidos não sejam detectados e então incluídos no projeto (consulte `exclude`).
 - `module`: se estiver usando módulos, essa configuração informará ao compilador qual formato de módulo o código emitido deverá usar (por exemplo, `commonjs` para o Nó ou agregadores como Browserify).
 - `exclude`: essa configuração indica quais pastas não serão incluídas no projeto.
 O local de saída, bem como pastas não pertencentes ao projeto como `node_modules` ou `temp`, devem ser adicionados a essa configuração.
@@ -238,7 +238,7 @@ Adicione mais diretórios conforme considerar adequado. Alguns outros exemplos i
 Já que o [!include[vs_dev15](../../docs/misc/includes/vs_dev15_md.md)] apresenta um serviço de linguagem completamente novo, há alguns comportamentos que serão diferentes ou ausentes em relação à experiência anterior.
 As alterações mais importantes são a substituição de VSDoc com JSDoc, a remoção de extensões `.intellisense.js` personalizadas e IntelliSense limitado para padrões de código específico.
 
-### <a name="no-more-references-or-referencesjs"></a>Não há mais `///<references/>` nem `_references.js`
+### <a name="no-more-references-or-_referencesjs"></a>Não há mais `///<references/>` nem `_references.js`
 
 Anteriormente era muito difícil compreender, a qualquer momento, quais arquivos que estavam no seu escopo do IntelliSense. Às vezes era desejável ter todos os arquivos no escopo, outras vezes não era, e isso levava a configurações complexas envolvendo o gerenciamento manual de referências. No futuro, você não precisará pensar sobre gerenciamento de referência e, portanto, não precisará de comentários, referências ou arquivos `_references.js` com barras triplas.
 
@@ -247,7 +247,7 @@ Consulte a página [JavaScript IntelliSense](/visualstudio/ide/javascript-intell
 ### <a name="vsdoc"></a>VSDoc
 
 Comentários de documentação XML, também conhecidos como VSDocs, anteriormente podiam ser usados para decorar seu código-fonte usando dados adicionais que eram usados para melhorar os resultados do IntelliSense.
-Não há mais suporte para o VSDoc em favor do [JSDoc](http://usejsdoc.org/about-getting-started.html), que é mais fácil de escrever e é o padrão aceito para JavaScript.
+Não há mais suporte para o VSDoc em favor do [JSDoc](https://jsdoc.app/about-getting-started.html), que é mais fácil de escrever e é o padrão aceito para JavaScript.
 
 ### <a name="intellisensejs-extensions"></a>Extensões `.intellisense.js`
 

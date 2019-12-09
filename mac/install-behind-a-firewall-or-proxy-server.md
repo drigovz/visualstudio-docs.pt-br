@@ -1,25 +1,25 @@
 ---
 title: Instalar e usar o Visual Studio para Mac por trás de um firewall ou servidor proxy
-description: Este documento fornece uma lista de hosts que devem estar na lista de permissões no firewall para permitir que o Visual Studio para Mac (e suas cargas de trabalho, incluindo Xamarin) funcionem em um ambiente corporativo.
+description: Este documento fornece uma lista de hosts que precisam ser permitidos no firewall para que o Visual Studio para Mac (e suas cargas de trabalho, incluindo Xamarin) funcione em um ambiente corporativo.
 ms.topic: troubleshooting
 ms.assetid: 79C0F1A3-0C13-4E55-A820-1138A4082B77
 author: asb3993
 ms.author: amburns
-ms.date: 10/23/2018
-ms.openlocfilehash: bf12f8803fbdbbf1de31899501c31545a09d6b09
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.date: 09/18/2019
+ms.openlocfilehash: 3c5fce37b7cb26ef9aeceaba700e72e79e809d7d
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62982878"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71213641"
 ---
 # <a name="install-and-use-visual-studio-for-mac-behind-a-firewall-or-proxy-server"></a>Instalar e usar o Visual Studio para Mac por trás de um firewall ou servidor proxy
 
-Se você ou sua organização usa medidas de segurança como um firewall ou um servidor proxy, há URLs de domínio que você talvez queira adicionar à "lista de permissões" e portas e protocolos que talvez você queira abrir para que tenha a melhor experiência ao instalar e usar o Visual Studio para Mac e os Serviços do Azure.
+Se você ou sua organização usa medidas de segurança como um firewall ou um servidor proxy, há domínios que é recomendável adicionar a uma "lista de permissões", além de portas e protocolos que podem ser abertos para que você tenha a melhor experiência ao instalar e usar o Visual Studio para Mac e os Serviços do Azure.
 
-- [**Instalar o Visual Studio para Mac**](#install-visual-studio-for-mac): Essas tabelas incluem as URLs na lista de permissões para que você tenha acesso a todos os recursos e cargas de trabalho do Visual Studio para Mac.
+- [**Instalar o Visual Studio para Mac**](#install-visual-studio-for-mac): Essas tabelas incluem os domínios que precisam permitir conectividade para que você tenha acesso a todos os recursos e cargas de trabalho do Visual Studio para Mac.
 
-- [**Usar o Visual Studio para Mac**](#use-visual-studio-for-mac): Essas tabelas incluem as URLs na lista de permissões para que você tenha acesso a todos os serviços e recursos desejados.
+- [**Usar o Visual Studio para Mac**](#use-visual-studio-for-mac): Essas tabelas incluem domínios que precisam permitir a conectividade para que você tenha acesso aos recursos relacionados.
 
 ## <a name="install-visual-studio-for-mac"></a>Instalar o Visual Studio para Mac
 
@@ -38,6 +38,8 @@ Como o Instalador do Visual Studio para Mac baixa de vários domínios e servido
 | download.visualstudio.microsoft.com | Pacotes do Instalador|
 | xamarin.azureedge.net | Pacotes do Instalador|
 | developer.xamarin.com | Pacotes do Instalador|
+| static.xamarin.com | Pacotes do Instalador|
+| dl.xamarin.com | Pacotes do Instalador|
 | dc.services.visualstudio.com| Relatórios de Falhas |
 
 ### <a name="third-party-domains"></a>Domínios de terceiros
@@ -50,7 +52,7 @@ Como o Instalador do Visual Studio para Mac baixa de vários domínios e servido
 
 ## <a name="use-visual-studio-for-mac"></a>Usar o Visual Studio para Mac
 
-Para garantir que você tenha acesso a todos os recursos de que precisa no Visual Studio para Mac ao usar um proxy ou firewall, é recomendável adicionar à lista de permissões os domínios e portas a seguir.
+Para garantir que você tenha acesso a todos os recursos de que precisa no Visual Studio para Mac ao usar um proxy ou firewall, é recomendável adicionar à lista de acesso permitido os domínios e portas a seguir.
 
 ### <a name="general"></a>Geral
 

@@ -8,12 +8,12 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 0263afa4eeb9094802fe6272380b6b53106da4a2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: e8cd1868e61b0691be7ea639d8b5d826c608915d
+ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62810126"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72888542"
 ---
 # <a name="set-up-remote-workspaces"></a>Configurar workspaces remotos
 
@@ -26,7 +26,7 @@ Este artigo explica como configurar um servidor remoto com SSL e um serviço do 
 
 ## <a name="install-an-ssl-certificate"></a>Instalar um certificado SSL
 
-As RTVS requerem que todas as comunicações com um servidor remoto ocorram por HTTP, o que requer um certificado SSL no servidor. Você pode usar um certificado assinado por uma autoridade de certificação confiável (recomendado) ou um certificado autoassinado. (Um certificado autoassinado faz com que as RTVS emitam avisos quando conectadas.) Nas duas opções, você precisa instalá-lo no computador e permitir o acesso a sua chave privada.
+As RTVS requerem que todas as comunicações com um servidor remoto ocorram por HTTP, o que requer um certificado SSL no servidor. Você pode usar um certificado assinado por uma autoridade de certificação confiável (recomendado) ou um certificado autoassinado. (Um certificado autoassinado faz com que o RTVS emita avisos quando conectado.) Com um deles, você precisa instalá-lo no computador e permitir o acesso à sua chave privada.
 
 ### <a name="obtain-a-trusted-certificate"></a>Obter um certificado confiável
 
@@ -174,17 +174,17 @@ Para executar o código R, o computador remoto deve ter um interpretador de R in
 
 Com os serviços do R em execução no computador remoto, você também precisa criar contas de usuário, definir regras de firewall, configurar a rede do Azure e configurar o certificado SSL.
 
-1. Contas de usuário: Crie contas para cada usuário que acessa o computador remoto. Você pode criar contas de usuário local padrão (sem privilégios) ou pode ingressar o computador do servidor R em seu domínio e adicionar os grupos de segurança apropriados ao grupo de segurança `Users`.
+1. Contas de usuário: crie contas para cada usuário que acessa o computador remoto. Você pode criar contas de usuário local padrão (sem privilégios) ou pode ingressar o computador do servidor R em seu domínio e adicionar os grupos de segurança apropriados ao grupo de segurança `Users`.
 
-1. Regras de firewall: Por padrão, o `R Host Broker` escuta na porta TCP 5444. Portanto, verifique se há regras de firewall do Windows habilitadas para o tráfego de entrada e saída (a saída é necessária para instalar pacotes e cenários semelhantes).  O instalador de serviços do R define essas regras automaticamente para o firewall do Windows interno. No entanto, se você estiver usando um firewall de terceiros, abra manualmente a porta 5444 para o `R Host Broker`.
+1. Regras de firewall: por padrão, o `R Host Broker` escuta na porta TCP 5444. Portanto, verifique se há regras de firewall do Windows habilitadas para o tráfego de entrada e saída (a saída é necessária para instalar pacotes e cenários semelhantes).  O instalador de serviços do R define essas regras automaticamente para o firewall do Windows interno. No entanto, se você estiver usando um firewall de terceiros, abra manualmente a porta 5444 para o `R Host Broker`.
 
-1. Configuração do Azure: Se o computador remoto for uma máquina virtual no Azure, abra a porta 5444 para tráfego de entrada na rede do Azure, que é independente do firewall do Windows. Para obter detalhes, consulte [Filtrar o tráfego de rede com grupos de segurança de rede](https://docs.microsoft.com/azure/virtual-network/virtual-networks-nsg) na documentação do Azure.
+1. Configuração do Azure: se o computador remoto for uma máquina virtual no Azure, abra a porta 5444 para tráfego de entrada na rede do Azure, que é independente do firewall do Windows. Para obter detalhes, consulte [Filtrar o tráfego de rede com grupos de segurança de rede](/azure/virtual-network/virtual-networks-nsg) na documentação do Azure.
 
-1. Informar ao Agente de Host do R qual certificado SSL deve ser carregado: Se você estiver instalando o certificado em um servidor de Intranet, provavelmente o nome de domínio totalmente qualificado do servidor será o mesmo que seu nome NETBIOS. Nesse caso não há nada que você precise fazer, pois esse é o certificado padrão que é carregado.
+1. Informar ao Agente de Host do R qual certificado SSL deve ser carregado: se você estiver instalando o certificado em um servidor de Intranet, é provável que o nome de domínio totalmente qualificado do servidor seja o mesmo que seu nome NETBIOS. Nesse caso não há nada que você precise fazer, pois esse é o certificado padrão que é carregado.
 
     No entanto, se você estiver instalando o certificado em um servidor voltado para à Internet (como uma VM do Azure), use o FQDN (nome de domínio totalmente qualificado) do servidor, porque o FQDN de um servidor voltado à Internet nunca é o mesmo que seu nome NETBIOS.
 
-    Para usar o FQDN, navegue para o local em que o R Services está instalado (*%PROGRAM FILES%\R Remote Service for Visual Studio\1.0*, por padrão), abra o arquivo *Microsoft.R.Host.Broker.Config.json* em um editor de texto e substitua o conteúdo pelo seguinte, atribuindo o CN ao FQDN do servidor, como `foo.westus.cloudapp.azure.com`:
+    Para usar o FQDN, navegue para o local em que o R Services está instalado ( *%PROGRAM FILES%\R Remote Service for Visual Studio\1.0*, por padrão), abra o arquivo *Microsoft.R.Host.Broker.Config.json* em um editor de texto e substitua o conteúdo pelo seguinte, atribuindo o CN ao FQDN do servidor, como `foo.westus.cloudapp.azure.com`:
 
     ```json
     {
@@ -199,11 +199,11 @@ Com os serviços do R em execução no computador remoto, você também precisa 
 
 ## <a name="troubleshooting"></a>Solução de problemas
 
-**P. O computador do R Server não está respondendo. O que devo fazer?**
+**P. o computador do R Server não está respondendo, o que eu faço?**
 
 Tente executar ping para o computador remoto na linha de comando: `ping remote-machine-name`. Se o ping falhar, verifique se o computador está em execução.
 
-**P. A janela do R Interativo diz que o computador remoto está ativado, mas por que o serviço não está em execução?**
+**P. a janela interativa do R diz que o computador remoto está ligado, mas por que o serviço não está em execução?**
 
 Existem três motivos possíveis:
 
@@ -213,21 +213,21 @@ Existem três motivos possíveis:
 
 Reinicie o computador depois de fazer as alterações acima. Em seguida, verifique se `RHostBrokerService` e `RUserProfileService` estão em execução por meio do Gerenciador de Tarefas (guia serviços) ou de *services.msc*.
 
-**P. Por que a janela R Interativo disse "401 acesso negado" ao fazer a conexão com o servidor R?**
+**P. por que a janela interativa do R diz "acesso de 401 negado" ao se conectar ao servidor R?**
 
 Há dois motivos possíveis:
 
 - É muito provável que a conta `NETWORK SERVICE` não tenha acesso à chave privada do certificado SSL. Siga as instruções anteriores para conceder o acesso `NETWORK SERVICE` à chave privada.
 - Verifique se o serviço `seclogon` está em execução. Use *services.msc* para configurar `seclogon` para que ele seja iniciado automaticamente.
 
-**P. Por que a janela R Interativo disse "404 não encontrado" ao fazer a conexão com o servidor R?**
+**P. por que a janela interativa do R diz "404 não encontrado" ao se conectar ao servidor R?**
 
 Esse erro provavelmente ocorre devido à ausência de bibliotecas redistribuíveis do Visual C++. Verifique a janela do R Interativo para ver se há uma mensagem sobre a biblioteca (DLL) ausente. Verifique se o VS 2015 redistribuível está instalado e se o R está instalado também.
 
-**P. Não consigo acessar a Internet e os recursos da janela R Interativo, o que devo fazer?**
+**P. não consigo acessar a Internet/recurso da janela interativa do R, o que faço?**
 
 Verifique se as regras de firewall para `Microsoft.R.Host.Broker` e `Microsoft.R.Host` permitem acesso de saída na porta 5444. Reinicie o computador após a aplicação das alterações.
 
-**P. Eu tentei todas essas soluções e ainda não funciona. E agora?**
+**P. tentei todas essas soluções e ainda não funciona. E agora?**
 
-Examine os arquivos de log em *C:\Windows\ServiceProfiles\NetworkService\AppData\Local\Temp*. Essa pasta contém arquivos de log separados para cada instância do Serviço de Agente do R que foi executada. Um novo arquivo de log é criado sempre que o serviço é reiniciado. Verifique o arquivo de log mais recente para encontrar pistas sobre o que pode estar errado.
+Examine os arquivos de log em *C:\Windows\ServiceProfiles\NetworkService\AppData\Local\Temp*. Essa pasta contém arquivos de log separados para cada instância do serviço do agente do R que foi executado. Um novo arquivo de log é criado sempre que o serviço é reiniciado. Verifique o arquivo de log mais recente para encontrar pistas sobre o que pode estar errado.

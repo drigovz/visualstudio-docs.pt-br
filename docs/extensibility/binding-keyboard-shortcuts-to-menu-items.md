@@ -1,5 +1,5 @@
 ---
-title: Associando a atalhos de teclado a itens de Menu | Microsoft Docs
+title: Vinculando atalhos de teclado a itens de menu | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,59 +9,59 @@ helpviewer_keywords:
 - keyboard shortcuts
 - menu items
 ms.assetid: 19f483b6-4d3e-424e-9d68-dc129c788e47
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8dc28a64d42d2184734142c68aef95cbc3b1d245
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 98c0b6f5b26e7f423f2a89f680395ceaba7286bc
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63410103"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72982268"
 ---
-# <a name="bind-keyboard-shortcuts-to-menu-items"></a>Associar atalhos de teclado aos itens de menu
-Para associar um atalho de teclado a um comando de menu personalizado, basta adicionar uma entrada para o *VSCT* arquivo para o pacote. Este tópico explica como mapear um atalho de teclado para um botão personalizado, o item de menu ou o comando da barra de ferramentas e como aplicar o mapeamento de teclado no editor padrão ou limite-o a um editor personalizado.
+# <a name="bind-keyboard-shortcuts-to-menu-items"></a>Associar atalhos de teclado a itens de menu
+Para associar um atalho de teclado a um comando de menu personalizado, basta adicionar uma entrada ao arquivo *. vsct* do pacote. Este tópico explica como mapear um atalho de teclado para um botão personalizado, um item de menu ou um comando de barra de ferramentas e como aplicar o mapeamento de teclado no editor padrão ou limitá-lo a um editor personalizado.
 
- Para atribuir atalhos de teclado para os itens de menu existentes do Visual Studio, consulte [identificar e personalizar atalhos de teclado](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).
+ Para atribuir atalhos de teclado a itens de menu existentes do Visual Studio, consulte [identificar e personalizar atalhos de teclado](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).
 
 ## <a name="choose-a-key-combination"></a>Escolha uma combinação de teclas
- Muitos atalhos de teclado já são usados no Visual Studio. Você não deve atribuir o mesmo atalho para mais de um comando como ligações duplicadas são difíceis de detectar e também podem causar resultados imprevisíveis. Portanto, é uma boa ideia verificar a disponibilidade de um atalho antes de atribuí-lo.
+ Muitos atalhos de teclado já são usados no Visual Studio. Você não deve atribuir o mesmo atalho a mais de um comando porque associações duplicadas são difíceis de detectar e também podem causar resultados imprevisíveis. Portanto, é uma boa ideia verificar a disponibilidade de um atalho antes de atribuí-lo.
 
 ### <a name="to-verify-the-availability-of-a-keyboard-shortcut"></a>Para verificar a disponibilidade de um atalho de teclado
 
-1. No **ferramentas** > **opções** > **ambiente** janela, selecione **teclado**.
+1. Na janela **ferramentas** > **Opções** de > **ambiente** , selecione **teclado**.
 
-2. Certifique-se de que **usar novo atalho em** é definido como **Global**.
+2. Certifique-se de que **usar o novo atalho no** esteja definido como **global**.
 
-3. No **pressionar teclas de atalho** , digite o atalho de teclado que você deseja usar.
+3. Na caixa **pressione teclas de atalho** , digite o atalho de teclado que você deseja usar.
 
-    Se o atalho já é usado no Visual Studio, o **atalho usado atualmente por** caixa mostrará o comando que o atalho chama no momento.
+    Se o atalho já estiver sendo usado no Visual Studio, o **atalho usado no momento pelo** Box mostrará o comando que o atalho chama atualmente.
 
-4. Tente diferentes combinações de teclas até encontrar uma que não está mapeado.
+4. Tente combinações diferentes de chaves até encontrar uma que não esteja mapeada.
 
    > [!NOTE]
-   > Atalhos de teclado que usam **Alt** pode abrir um menu e não diretamente, executar um comando. Portanto, o **atalho usado atualmente por** caixa pode estar em branco quando você digita um atalho que inclui **Alt**. Você pode verificar o atalho não abre um menu ao fechar o **opções** caixa de diálogo e, em seguida, pressionando as teclas.
+   > Os atalhos de teclado que usam **ALT** podem abrir um menu e não executar diretamente um comando. Portanto, o **atalho usado atualmente pelo** box pode estar em branco quando você digita um atalho que inclui **ALT**. Você pode verificar se o atalho não abre um menu fechando a caixa de diálogo **Opções** e, em seguida, pressionando as teclas.
 
-   O procedimento a seguir pressupõe que você tenha um VSPackage existente com um comando de menu. Se você precisar de ajuda para fazer isso, dê uma olhada [criar uma extensão com um comando de menu](../extensibility/creating-an-extension-with-a-menu-command.md).
+   O procedimento a seguir pressupõe que você tenha um VSPackage existente com um comando de menu. Se precisar de ajuda para fazer isso, dê uma olhada em [criar uma extensão com um comando de menu](../extensibility/creating-an-extension-with-a-menu-command.md).
 
 ### <a name="to-assign-a-keyboard-shortcut-to-a-command"></a>Para atribuir um atalho de teclado a um comando
 
-1. Abra o *VSCT* arquivo do pacote.
+1. Abra o arquivo *. vsct* para seu pacote.
 
-2. Criar vazio `<KeyBindings>` seção após o `<Commands>` se ele não ainda estiver presente.
+2. Crie uma seção `<KeyBindings>` vazia após a `<Commands>` se ela ainda não estiver presente.
 
    > [!WARNING]
-   > Para obter mais informações sobre associações de teclas, consulte [Keybinding](../extensibility/keybinding-element.md).
+   > Para obter mais informações sobre associações de chave, consulte [KeyBinding](../extensibility/keybinding-element.md).
 
-    No `<KeyBindings>` seção, crie um `<KeyBinding>` entrada.
+    Na seção `<KeyBindings>`, crie uma entrada de `<KeyBinding>`.
 
-    Defina as `guid` e `id` atributos para os do comando que você deseja invocar.
+    Defina os atributos `guid` e `id` para aqueles do comando que você deseja invocar.
 
-    Defina as `mod1` de atributo para **controle**, **Alt**, ou **Shift**.
+    Defina o atributo `mod1` como **Control**, **ALT**ou **Shift**.
 
-    A seção de associações de teclas deve ter esta aparência:
+    A seção keybindings deve ser semelhante a esta:
 
    ```xml
    <KeyBindings>
@@ -71,18 +71,18 @@ Para associar um atalho de teclado a um comando de menu personalizado, basta adi
 
    ```
 
-   Se o atalho de teclado exigir mais de duas chaves, defina as `mod2` e `key2` atributos.
+   Se o atalho de teclado exigir mais de duas chaves, defina os atributos `mod2` e `key2`.
 
-   Na maioria das situações, **Shift** não deve ser usado sem um modificador segundo porque pressioná-lo já faz com que a maioria das teclas alfanuméricos digitar uma letra maiuscula ou um símbolo.
+   Na maioria das situações, **Shift** não deve ser usada sem um segundo modificador, pois pressioná-la já faz com que a maioria das chaves alfanuméricas digite uma letra maiúscula ou um símbolo.
 
-   Códigos de tecla virtual permite que você acesse chaves especiais que não têm um caractere associado a eles, por exemplo, as teclas de função e o **Backspace** chave. Para obter mais informações, consulte [códigos de tecla Virtual](https://docs.microsoft.com/windows/desktop/inputdev/virtual-key-codes).
+   Os códigos de chave virtual permitem que você acesse chaves especiais que não têm um caractere associado a elas, por exemplo, chaves de função e a tecla **Backspace** . Para obter mais informações, consulte [códigos-chave virtuais](/windows/desktop/inputdev/virtual-key-codes).
 
-   Para tornar o comando disponível no Visual Studio editor, defina as `editor` atributo `guidVSStd97`.
+   Para disponibilizar o comando no editor do Visual Studio, defina o atributo `editor` como `guidVSStd97`.
 
-   Para tornar o comando disponível somente em um editor personalizado, defina as `editor` de atributo para o nome do editor personalizado que foi gerado pelo [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] modelo de pacote quando você criou o VSPackage que inclui o editor personalizado. Para localizar o valor do nome, procure na `<Symbols>` seção para uma `<GuidSymbol>` nó cujo `name` atributo termina em "`editorfactory`." Esse é o nome do editor personalizado.
+   Para disponibilizar o comando somente em um editor personalizado, defina o atributo `editor` como o nome do editor personalizado que foi gerado pelo modelo de pacote de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] quando você criou o VSPackage que inclui o editor personalizado. Para localizar o valor do nome, procure na seção `<Symbols>` por um nó `<GuidSymbol>` cujo atributo `name` termina em "`editorfactory`". Este é o nome do editor personalizado.
 
 ## <a name="example"></a>Exemplo
- Este exemplo associa o atalho de teclado **Ctrl**+**Alt**+**C** para um comando chamado `cmdidMyCommand` em um pacote chamado `MyPackage`.
+ Este exemplo associa o atalho de teclado **Ctrl**+**ALT**+**C** a um comando chamado `cmdidMyCommand` em um pacote chamado `MyPackage`.
 
 ```
 <CommandTable>
@@ -99,11 +99,11 @@ Para associar um atalho de teclado a um comando de menu personalizado, basta adi
 ```
 
 ## <a name="example"></a>Exemplo
- Este exemplo associa o atalho de teclado **Ctrl**+**B** para um comando chamado `cmdidBold` em um projeto chamado `TestEditor`. O comando está disponível apenas no editor personalizado e não em outros editores.
+ Este exemplo associa o atalho de teclado **Ctrl**+**B** a um comando chamado `cmdidBold` em um projeto chamado `TestEditor`. O comando está disponível somente no editor personalizado e não em outros editores.
 
 ```xml
 <KeyBinding guid="guidVSStd97" id="cmdidBold" editor="guidTestEditorEditorFactory" key1="B" mod1="Control" />
 ```
 
 ## <a name="see-also"></a>Consulte também
-- [Ampliar menus e comandos](../extensibility/extending-menus-and-commands.md)
+- [Estendendo menus e comandos](../extensibility/extending-menus-and-commands.md)

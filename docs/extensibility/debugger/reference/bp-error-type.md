@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - BP_ERROR_TYPE enumeration
 ms.assetid: c483eaab-db29-46de-bfdb-5c2a9a9cfb68
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2964c833abfa25b57678680f8b821f992cb31de8
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 3dc51691d4d424ee4d1c1a450f1e4e32b78e0e6e
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56689181"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66319303"
 ---
 # <a name="bperrortype"></a>BP_ERROR_TYPE
 Especifica o tipo de erro de um ponto de interrupção.
@@ -57,28 +60,39 @@ public enum enum_BP_ERROR_TYPE {
 };
 ```
 
-## <a name="members"></a>Membros
-BPET_NONE não especifica que nenhum erro de ponto de interrupção.
+## <a name="fields"></a>Campos
+`BPET_NONE`\
+Não especifica que nenhum erro de ponto de interrupção.
 
-BPET_TYPE_WARNING Especifica um erro de ponto de interrupção de estilo de aviso.
+`BPET_TYPE_WARNING`\
+Especifica um erro de ponto de interrupção de estilo de aviso.
 
-BPET_TYPE_ERROR Especifica um erro de ponto de interrupção de estilo de erro.
+`BPET_TYPE_ERROR`\
+Especifica um erro de ponto de interrupção de estilo de erro.
 
-BPET_SEV_HIGH Especifica um erro de ponto de interrupção de alta gravidade.
+`BPET_SEV_HIGH`\
+Especifica um erro de ponto de interrupção de alta gravidade.
 
-BPET_SEV_GENERAL Especifica um erro de ponto de interrupção de severidade média.
+`BPET_SEV_GENERAL`\
+Especifica um erro de ponto de interrupção de severidade média.
 
-BPET_SEV_LOW Especifica um erro de ponto de interrupção de baixa severidade.
+`BPET_SEV_LOW`\
+Especifica um erro de ponto de interrupção de baixa severidade.
 
-BPET_TYPE_MASK Especifica um erro de ponto de interrupção de estilo de máscara.
+`BPET_TYPE_MASK`\
+Especifica um erro de ponto de interrupção de estilo de máscara.
 
-BPET_SEV_MASK Especifica um erro de ponto de interrupção de gravidade de máscara de estilo.
+`BPET_SEV_MASK`\
+Especifica um erro de ponto de interrupção de gravidade de máscara de estilo.
 
-BPET_GENERAL_WARNING Especifica um erro de ponto de interrupção de estilo de aviso geral.
+`BPET_GENERAL_WARNING`\
+Especifica um erro de ponto de interrupção de estilo de aviso geral.
 
-BPET_GENERAL_ERROR Especifica um erro de ponto de interrupção de estilo de erro geral.
+`BPET_GENERAL_ERROR`\
+Especifica um erro de ponto de interrupção de estilo de erro geral.
 
-BPET_ALL especifica todos os tipos de erros de ponto de interrupção.
+`BPET_ALL`\
+Especifica todos os tipos de erros de ponto de interrupção.
 
 ## <a name="remarks"></a>Comentários
 Esses valores podem ser combinados com um bit a bit `OR` e é usado para o `dwType` membro a [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) estrutura. Passado como um parâmetro para o [EnumErrorBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md) método.

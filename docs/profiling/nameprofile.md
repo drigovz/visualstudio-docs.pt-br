@@ -9,14 +9,15 @@ ms.assetid: 1bb05441-c4ff-4323-9fef-f3924fba4430
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: e0d4cdfd393961566a0aef0c649e6ff788fdc8ac
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d9f0c9a3259186e1581a4673cdc18d1554e92b3c
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63403604"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778486"
 ---
 # <a name="nameprofile"></a>NameProfile
 A função `NameProfile` atribui uma cadeia de caracteres ao thread ou processo especificado.
@@ -95,7 +96,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI NameProfile(
 |**Unicode**|Implementado como `NameProfileW` (Unicode) e `NameProfileA` (ANSI).|
 
 ## <a name="example"></a>Exemplo
- O código a seguir ilustra a chamada da função NameProfile. O exemplo pressupõe o uso de macros da cadeia de caracteres do Win32 e as configurações do compilador para ANSI para determinar se o código chama a função habilitada do ANSI.
+ O código a seguir ilustra a chamada da função NameProfile. O exemplo pressupõe o uso de macros de cadeia de caracteres do Win32 e as configurações de compilador para ANSI para determinar se o código chama a função habilitada por ANSI.
 
 ```cpp
 void ExerciseNameProfile()

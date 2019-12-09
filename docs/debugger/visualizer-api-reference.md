@@ -1,5 +1,5 @@
 ---
-title: Referência de API da visualização simultânea | Microsoft Docs
+title: Referência da API do Visualizador | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 79d417bcee4bb6e058ea90028a29a87a3527aa5c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d8479343634ca8afc647edde61eb8b1106954c83
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62929451"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73187217"
 ---
 # <a name="visualizer-api-reference"></a>Referência de API do visualizador
 
@@ -42,6 +42,6 @@ As APIs do Visualizador são fornecidas para os usuários que quiserem escrever 
 
 ## <a name="see-also"></a>Consulte também
 
-- [Passo a passo: Como escrever um visualizador em C#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)
-- [Como: Escrever um visualizador](/visualstudio/debugger/create-custom-visualizers-of-data)
+- [Passo a passo: escrevendo um visualizador em C#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)
+- [Como escrever um visualizador](create-custom-visualizers-of-data.md)
 - [Criar visualizadores personalizados](../debugger/create-custom-visualizers-of-data.md)

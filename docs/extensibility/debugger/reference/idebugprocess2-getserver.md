@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProcess2::GetServer
 ms.assetid: 8f73c530-cceb-4f1f-8c63-1cc0ccd4a310
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 33f9b513bcf336cac68af7d915880af0652b0954
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 20eed8cb3689ac58b1303f4dec7359d75d0c0f40
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62917759"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66343648"
 ---
 # <a name="idebugprocess2getserver"></a>IDebugProcess2::GetServer
 Obtém o que esse processo está em execução no servidor.
@@ -36,10 +39,9 @@ int GetServer( 
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `ppServer`
-
- [out] Retorna um [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md) objeto que representa o servidor em que esse processo é executado.
+## <a name="parameters"></a>Parâmetros
+`ppServer`\
+[out] Retorna um [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md) objeto que representa o servidor em que esse processo é executado.
 
 ## <a name="return-value"></a>Valor de retorno
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.

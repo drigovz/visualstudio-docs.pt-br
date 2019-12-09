@@ -7,21 +7,21 @@ f1_keywords:
 helpviewer_keywords:
 - WPF Components tab, Choose Toolbox Items dialog box
 - Choose Toolbox Items dialog box, WPF Components tab
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f09afb11708afb310a3dcd52490f5b2bcda9d79b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 9c3de8e1d83a5d74f518eda2d5ab59bd9845b45a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62790922"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72630872"
 ---
 # <a name="choose-toolbox-items-wpf-components"></a>Escolher itens da Caixa de Ferramentas, Componentes do WPF
 
-Essa guia da caixa de diálogo **Escolher Itens da Caixa de Ferramentas** exibe uma lista de controles do WPF (Windows Presentation Foundation) disponíveis no computador local. Para exibir essa lista, selecione **Escolher Itens da Caixa de Ferramentas** no menu **Ferramentas** para exibir a caixa de diálogo **Escolher Itens da Caixa de Ferramentas** e, em seguida, selecione a guia **Componentes do WPF**. Para classificar os componentes listados, selecione todo o título de coluna.
+Essa guia da caixa de diálogo **Escolher Itens da Caixa de Ferramentas** exibe uma lista de controles do WPF (Windows Presentation Foundation) disponíveis no computador local. Para exibir essa lista, selecione **escolher itens de caixa de ferramentas** no menu **ferramentas** para exibir a caixa de diálogo **escolher itens de caixa de ferramentas** e, em seguida, selecione sua guia **componentes do WPF** . Para classificar os componentes listados, selecione qualquer título de coluna.
 
 - Quando a caixa de seleção ao lado de um componente for selecionada, um ícone desse componente será exibido na **Caixa de ferramentas**.
 
@@ -31,7 +31,7 @@ Essa guia da caixa de diálogo **Escolher Itens da Caixa de Ferramentas** exibe 
 - Quando a caixa de seleção ao lado de um componente for desmarcada, o ícone correspondente será removido da **Caixa de Ferramentas**.
 
     > [!NOTE]
-    > Os componentes do .NET Framework instalados no computador permanecem disponíveis independentemente de seus ícones serem exibidos ou não na **Caixa de ferramentas**.
+    > Os componentes .NET instalados no computador permanecem disponíveis independentemente de seus ícones serem exibidos na **Caixa de ferramentas**.
 
 As colunas da guia **Componentes do WPF** contêm as seguintes informações:
 
@@ -41,15 +41,15 @@ Lista os nomes dos controles WPF para os quais existem entradas no Registro do c
 
 **Namespace**
 
-Exibe a hierarquia do namespace [API de classes do .NET Framework](/dotnet/api/?view=netframework-4.7) que define a estrutura do componente. Classifique essa coluna para listar os componentes disponíveis em cada namespace do .NET Framework instalado no computador.
+Exibe a hierarquia do namespace [API .NET](/dotnet/api/?view=netframework-4.7) que define a estrutura do componente. Classifique essa coluna para listar os componentes disponíveis em cada namespace .NET instalado no computador.
 
 **Nome do assembly**
 
-Exibe o nome do assembly do .NET Framework que inclui o namespace de cada componente. Classifique essa coluna para listar os namespaces contidos em cada assembly do .NET Framework instalado no computador.
+Exibe o nome do assembly .NET que inclui o namespace de cada componente. Classifique essa coluna para listar os namespaces contidos em cada assembly .NET instalado no computador.
 
 **Diretório**
 
-Exibe o local do assembly do .NET Framework. O local padrão para todos os assemblies é o cachê global de assemblies. Para obter mais informações sobre o Cache de Assembly Global, consulte [Trabalhando com assemblies e o cache de assembly global](/dotnet/framework/app-domains/working-with-assemblies-and-the-gac).
+Exibe a localização do assembly .NET. O local padrão para todos os assemblies é o cachê global de assemblies. Para saber mais sobre o Cache de Assembly Global, confira [Trabalhar com assemblies e o Cache de Assembly Global](/dotnet/framework/app-domains/working-with-assemblies-and-the-gac).
 
 ## <a name="uielement-list"></a>Lista UIElement
 
@@ -77,7 +77,7 @@ A adição de um controle personalizado ou um <xref:System.Windows.Controls.User
 
 - Não atualize corretamente ao alterar a configuração de solução de Depuração para Versão ou de Versão para Depuração. Isso ocorre porque a referência não é uma referência de projeto, mas refere-se ao assembly no disco. Se o controle fizer parte da solução atual, ao alterar de Depuração para Versão, o projeto continuará referenciando a versão de Depuração do controle.
 
-Além disso, se os metadados em tempo de design forem aplicados ao controle personalizado e esses metadados especificarem que o <xref:Microsoft.Windows.Design.ToolboxBrowsableAttribute> é definido como `false`, o controle não será exibido na Caixa de Ferramentas.
+Além disso, se os metadados em tempo de design são aplicados ao controle personalizado e esses metadados especificam que [Microsoft.Windows.Design.ToolboxBrowsableAttribute](/previous-versions/visualstudio/visual-studio-2010/bb547991(v=vs.100)) é definido como `false`, o controle não é exibido na Caixa de Ferramentas.
 
 É possível referenciar os controles diretamente no modo de exibição XAML, mapeando o namespace e o assembly do controle.
 

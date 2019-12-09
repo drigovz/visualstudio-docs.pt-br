@@ -1,5 +1,5 @@
 ---
-title: 'CA2211: Campos não constantes não devem ser visíveis | Microsoft Docs'
+title: 'CA2211: campos não constantes não devem ser visíveis | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,37 +12,37 @@ helpviewer_keywords:
 - CA2211
 ms.assetid: e1e42c40-0acd-4312-af29-70133739a304
 caps.latest.revision: 15
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 48d1a449301c422aa457346d1eb3d48d2f395f2a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: db2c667d0a3823460a084dc1e4806501d9b26693
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58927055"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72662964"
 ---
-# <a name="ca2211-non-constant-fields-should-not-be-visible"></a>CA2211: Campos não constantes não devem ser visíveis
+# <a name="ca2211-non-constant-fields-should-not-be-visible"></a>CA2211: os campos não constantes não devem estar visíveis
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |NomeDoTipo|NonConstantFieldsShouldNotBeVisible|
 |CheckId|CA2211|
-|Categoria|Microsoft.Usage|
+|Categoria|Microsoft. Usage|
 |Alteração Significativa|Quebra|
 
 ## <a name="cause"></a>Causa
- Um campo estático público ou protegido não é constante nem somente leitura.
+ Um campo estático ou público protegido não é constante nem é somente leitura.
 
 ## <a name="rule-description"></a>Descrição da Regra
- Os campos estáticos que não são constantes nem somente leitura não são thread-safe. O acesso a esse campo deve ser cuidadosamente controlado e exige técnicas de programação avançadas para sincronizar o acesso ao objeto de classe. Como esses são difíceis de habilidades para aprender e mestre e testes de tal objeto apresenta seus próprios desafios, campos estáticos são melhor usados para armazenar dados que não são alterados. Essa regra se aplica às bibliotecas; aplicativos não devem expor todos os campos.
+ Os campos estáticos que não são constantes nem somente leitura não são thread-safe. O acesso a esse campo deve ser cuidadosamente controlado e requer técnicas de programação avançadas para sincronizar o acesso ao objeto de classe. Como essas são habilidades difíceis de aprender e dominar e testar tal objeto representa seus próprios desafios, os campos estáticos são mais bem usados para armazenar dados que não são alterados. Esta regra se aplica a bibliotecas; os aplicativos não devem expor nenhum campo.
 
 ## <a name="how-to-fix-violations"></a>Como Corrigir Violações
- Para corrigir uma violação dessa regra, verifique o campo estático constantes ou somente leitura. Se isso não for possível, recrie o tipo para usar um mecanismo alternativo, como uma propriedade de thread-safe que gerencia o acesso thread-safe para o campo subjacente. Perceba que os problemas, como contenção de bloqueio e deadlocks podem afetar o desempenho e o comportamento da biblioteca.
+ Para corrigir uma violação dessa regra, torne a constante de campo estático ou somente leitura. Se isso não for possível, recrie o tipo para usar um mecanismo alternativo, como uma propriedade thread-safe, que gerencia o acesso seguro ao thread para o campo subjacente. Perceba que problemas como contenção de bloqueio e deadlocks podem afetar o desempenho e o comportamento da biblioteca.
 
 ## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos
- É seguro suprimir um aviso nessa regra, se você estiver desenvolvendo um aplicativo e, portanto, têm controle total sobre o acesso ao tipo que contém o campo estático. Designers de bibliotecas não devem suprimir um aviso nessa regra; campos estáticos de não constante pode fazer usando a biblioteca difícil para os desenvolvedores para usar corretamente.
+ É seguro suprimir um aviso dessa regra se você estiver desenvolvendo um aplicativo e, portanto, tiver controle total sobre o acesso ao tipo que contém o campo estático. Os designers de biblioteca não devem suprimir um aviso dessa regra; o uso de campos estáticos não constantes pode tornar o uso da biblioteca difícil para os desenvolvedores usarem corretamente.
 
 ## <a name="example"></a>Exemplo
  O exemplo a seguir mostra um tipo que viola essa regra.

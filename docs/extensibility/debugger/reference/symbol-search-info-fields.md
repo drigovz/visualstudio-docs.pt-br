@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - SYMBOL_SEARCH_INFO_FIELDS enumeration
 ms.assetid: bce35af0-722d-46d4-afa6-eaae598c51ff
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2621b88622e99ac95533e388197e483f2925f897
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 86a7fb7c891d0c22bc415920014e905cf3d9c6fa
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63420821"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66322361"
 ---
 # <a name="symbolsearchinfofields"></a>SYMBOL_SEARCH_INFO_FIELDS
 Especifica o tipo de informações de símbolo para recuperar.
@@ -42,10 +45,12 @@ public enum enum_SYMBOL_SEARCH_INFO_FIELDS
 
 ```
 
-## <a name="members"></a>Membros
- SSIF_NONE não indica nenhum sinalizador
+## <a name="fields"></a>Campos
+ `SSIF_NONE`\
+ Não indica nenhum sinalizador
 
- SSIF_VERBOSE_SEARCH_INFO retorna que todos os caminhos de pesquisa de usada para localizar símbolos
+ `SSIF_VERBOSE_SEARCH_INFO`\
+ Retorna que todos os caminhos de pesquisa de usada para localizar símbolos
 
 ## <a name="remarks"></a>Comentários
  Esses sinalizadores são passados como um parâmetro para o [GetSymbolInfo](../../../extensibility/debugger/reference/idebugmodule3-getsymbolinfo.md) retornado do método para determinar a quantidade de informações.

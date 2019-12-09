@@ -1,58 +1,59 @@
 ---
 title: IDebugSymbolProviderDirect::GetMetaDataImport | Microsoft Docs
-ms.date: 11/15/2016
-ms.prod: visual-studio-dev14
-ms.technology: vs-ide-sdk
+ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - GetMetaDataImport
 - IDebugSymbolProviderDirect::GetMetaDataImport
 ms.assetid: b51a492c-af00-4b08-93fb-6c19ee4916aa
-caps.latest.revision: 9
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
-ms.openlocfilehash: a68e6e0a8153aa3b1c97e4bc1f2c401e9ccbe550
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.workload:
+- vssdk
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 4a2cd79581487e7e407cc409c4b8496abc53bfa7
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62915634"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66347297"
 ---
 # <a name="idebugsymbolproviderdirectgetmetadataimport"></a>IDebugSymbolProviderDirect::GetMetaDataImport
-[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+Recupera as informações de importação de metadados.
 
-Recupera as informações de importação de metadados.  
-  
-## <a name="syntax"></a>Sintaxe  
-  
-```cpp#  
-HRESULT GetMetaDataImport (  
-    GUID*      guid,  
-    DWORD      appID,  
-    IUnknown** ppImport  
-);  
-```  
-  
-```csharp  
-int GetMetaDataImport (  
-    Guid       guid,  
-    uint       appID,  
-    out object ppImport  
-);  
-```  
-  
-#### <a name="parameters"></a>Parâmetros  
- `guid`  
- [in] Identificador exclusivo para o módulo.  
-  
- `appID`  
- [in] Identificador para o domínio do aplicativo.  
-  
- `ppImport`  
- [out] Retorna um objeto que contém os metadados de importar as informações.  
-  
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.  
-  
-## <a name="see-also"></a>Consulte também  
- [IDebugSymbolProviderDirect](../../../extensibility/debugger/reference/idebugsymbolproviderdirect.md)
+## <a name="syntax"></a>Sintaxe
+
+```cpp
+HRESULT GetMetaDataImport (
+    GUID*      guid,
+    DWORD      appID,
+    IUnknown** ppImport
+);
+```
+
+```csharp
+int GetMetaDataImport (
+    Guid       guid,
+    uint       appID,
+    out object ppImport
+);
+```
+
+## <a name="parameters"></a>Parâmetros
+`guid`\
+[in] Identificador exclusivo para o módulo.
+
+`appID`\
+[in] Identificador para o domínio do aplicativo.
+
+`ppImport`\
+[out] Retorna um objeto que contém os metadados de importar as informações.
+
+## <a name="return-value"></a>Valor de retorno
+ Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
+
+## <a name="see-also"></a>Consulte também
+- [IDebugSymbolProviderDirect](../../../extensibility/debugger/reference/idebugsymbolproviderdirect.md)

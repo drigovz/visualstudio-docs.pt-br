@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b1a583a9afd2a43d48399d5e2787369ab9bef95
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 114d9f7b00bbe5d322e7b6893e96fbbabec9d002
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63400619"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739977"
 ---
-# <a name="idiasymbolgetlength"></a>IDiaSymbol::get_length
-Recupera o número de bits ou de bytes de memória usada pelo objeto representado por este símbolo.
+# <a name="idiasymbolget_length"></a>IDiaSymbol::get_length
+Recupera o número de bits ou bytes de memória usados pelo objeto representado por esse símbolo.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -33,16 +33,16 @@ HRESULT get_length ( 
 #### <a name="parameters"></a>Parâmetros
  `pRetVal`
 
-[out] Retorna o número de bytes ou bits de memória usada pelo objeto representado por este símbolo.
+fora Retorna o número de bytes ou bits de memória usados pelo objeto representado por este símbolo.
 
-## <a name="return-value"></a>Valor de retorno
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE` ou um código de erro.
 
 > [!NOTE]
-> Um valor de retorno `S_FALSE` significa que a propriedade não está disponível para o símbolo.
+> Um valor de retorno de `S_FALSE` significa que a propriedade não está disponível para o símbolo.
 
 ## <a name="remarks"></a>Comentários
- Se o [enumeração LocationType](../../debugger/debug-interface-access/locationtype.md) do símbolo é `LocIsBitField`, o comprimento retornado por esse método é em bits; caso contrário, o comprimento é em bytes para todos os outros tipos de local.
+ Se a [Enumeração LocationType](../../debugger/debug-interface-access/locationtype.md) do símbolo for `LocIsBitField`, o comprimento retornado por esse método será em bits; caso contrário, o comprimento será em bytes para todos os outros tipos de local.
 
 ## <a name="example"></a>Exemplo
 
@@ -57,7 +57,7 @@ pSymbol->get_length( &length );
 |Requisito|Descrição|
 |-----------------|-----------------|
 |Cabeçalho:|dia2.h|
-|Versão:|DIA SDK v7.0|
+|Versão:|DIA SDK v 7.0|
 
 ## <a name="see-also"></a>Consulte também
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -7,15 +7,15 @@ helpviewer_keywords:
 - templates [Visual Studio], item
 - item templates [Visual Studio]
 - project templates [Visual Studio]
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 30a20e5810d5c361fddf8cd934863fcb1186b5d0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 1590317bf2749cc1aeef8a4c3bfbf2937c8404c7
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62793446"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72652602"
 ---
 # <a name="project-and-item-templates"></a>Modelos de projeto e de item
 
@@ -27,7 +27,7 @@ Vários modelos de itens e de projetos predefinidos são instalados com o Visual
 
 Esses modelos fornecem um ponto de partida para os usuários começarem a criar projetos ou expandir projetos existentes. Os modelos de projeto fornecem os arquivos que são necessários para um tipo de projeto específico, incluem referências de assembly padrão e definem opções de compilador e propriedades de projeto padrão. Os modelos de item podem variar em complexidade desde apenas um arquivo vazio com uma determinada extensão de arquivo até vários arquivos de código-fonte com código de stub, arquivos de informações de designer e recursos inseridos.
 
-Você pode usar modelos instalados, criar seus próprios modelos personalizados ou baixar e usar modelos criados pela comunidade. Para obter mais informações, confira [Como: Criar modelos de projeto](../ide/how-to-create-project-templates.md) e [Como: Criar modelos de item](../ide/how-to-create-item-templates.md).
+Você pode usar modelos instalados, criar seus próprios modelos personalizados ou baixar e usar modelos criados pela comunidade. Para obter mais informações, consulte [Como criar modelos de projeto](../ide/how-to-create-project-templates.md) e [Como criar modelos de item](../ide/how-to-create-item-templates.md).
 
 ## <a name="contents-of-a-template"></a>Conteúdo de um modelo
 
@@ -47,7 +47,7 @@ Todos os modelos de projeto e de item, sejam eles instalados com o Visual Studio
 
 ::: moniker-end
 
-   Para obter mais informações sobre arquivos *.vstemplate*, consulte [Parâmetros de modelo](../ide/template-parameters.md).
+   Para obter mais informações sobre arquivos *.vstemplate*, confira [Marcas de modelo](template-tags.md) e [Parâmetros de modelo](../ide/template-parameters.md).
 
 Quando esses arquivos são compactados em um arquivo *.zip* e colocados na pasta correta, o Visual Studio os exibe automaticamente nos seguintes locais:
 
@@ -65,12 +65,13 @@ Quando esses arquivos são compactados em um arquivo *.zip* e colocados na pasta
 
 - Os modelos de item aparecem na janela **Adicionar Novo Item**.
 
-Para obter mais informações sobre pastas de modelo, confira [Como: Localizar e organizar modelos](../ide/how-to-locate-and-organize-project-and-item-templates.md).
+Para obter mais informações sobre pastas de modelo, consulte [Como localizar e organizar modelos](../ide/how-to-locate-and-organize-project-and-item-templates.md).
 
 ## <a name="see-also"></a>Consulte também
 
-- [Como: Criar modelos de projeto](../ide/how-to-create-project-templates.md)
-- [Como: Criar modelos de item](../ide/how-to-create-item-templates.md)
+- [Como criar modelos de projeto](../ide/how-to-create-project-templates.md)
+- [Como criar modelos de item](../ide/how-to-create-item-templates.md)
+- [Marcas de modelo](template-tags.md)
 - [Parâmetros de modelo](../ide/template-parameters.md)
 - [Personalizar modelos](../ide/customizing-project-and-item-templates.md)
 - [Pacotes do NuGet em modelos do Visual Studio](/nuget/visual-studio-extensibility/visual-studio-templates)

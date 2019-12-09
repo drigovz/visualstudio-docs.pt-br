@@ -6,14 +6,15 @@ ms.assetid: 79614283-6733-4592-a53a-d428052271ad
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: f080957774b33ca00787f061708426a62bd7768f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 634169607a7d581de1b1332d78e8d5abde1a722e
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440289"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74773733"
 ---
 # <a name="attach"></a>Attach
 A opção **Attach** do *VSPerfCmd.exe* inicia a criação de perfil de exemplo do processo em execução especificado pela PID (ID do processo).
@@ -21,7 +22,7 @@ A opção **Attach** do *VSPerfCmd.exe* inicia a criação de perfil de exemplo 
  Para usar a opção **Anexar**, você deve especificar o método de **exemplo** na opção de início.
 
 > [!NOTE]
-> Se a opção **Iniciar** foi especificada com a opção **Crosssession**, todas as chamadas para **VSPerfCmd /Attach** ou **VSPerfCmd /Detach** também deverão especificar **Crosssession**.
+> Se a opção **Iniciar** foi especificada com a opção **Crosssession**, todas as chamadas para **VSPerfCmd /Attach** ou **VSPerfCmd /Detach** também devem especificar **Crosssession**.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -33,7 +34,7 @@ VSPerfCmd.exe /Attach:ProcessID [Options]
  `ProcessID` O PID (identificador do processo) do processo em execução. A PID de um processo em execução é listada na guia Processos do Gerenciador de Tarefas do Windows.
 
 ## <a name="valid-options"></a>Opções válidas
- As opções **VSPerfCmd** a seguir podem ser combinadas com a opção **Anexar** em uma única linha de comando.
+ As seguintes opções **VSPerfCmd** podem ser combinadas com a opção **Anexar** em uma única linha de comando.
 
  **Crosssession** Habilita aplicativos de criação de perfil em sessões que não seja a sessão de logon. Necessário se a opção **Iniciar** foi especificada com a opção **Crosssession**.
 
@@ -43,12 +44,12 @@ VSPerfCmd.exe /Attach:ProcessID [Options]
 
  **GlobalOn GlobalOff** Retoma (**GlobalOn**) ou pausa (**GlobalOff**) a criação de perfil, mas não encerra a sessão de criação de perfil.
 
- **ProcessOn:** `PID` **ProcessOff:** `PID` Retoma (**ProcessOn**) ou pausa (**ProcessOff**) a criação de perfil para o processo especificado.
+ **Processo:** `PID` **ProcessOff:** `PID` retoma a criação de perfil (**processize**) ou pausa (**ProcessOff**) para o processo especificado.
 
 ## <a name="interval-options"></a>Opções de intervalo
  Uma das seguintes opções de intervalo de amostragem pode ser especificada na linha de comando Anexar. O intervalo de amostragem padrão é 10.000.000 ciclos de relógio do processador.
 
- **Timer**[**:**`Cycles`]**PF**[**:**`Events`]**Sys**[<strong>:</strong>Eventos]**Contador**[**:**`Name`,`Reload`,`FriendlyName`] Especifica o número e o tipo de intervalo de amostragem.
+ **Timer**[ **:** `Cycles`]**PF**[ **:** `Events`]**Sys**[<strong>:</strong>Eventos]**Contador**[ **:** `Name`,`Reload`,`FriendlyName`] Especifica o número e o tipo de intervalo de amostragem.
 
 - **Temporizador** – exemplifica cada `Cycles` ciclo de relógio do processador. Se `Cycles` não for especificado, os 10.000.000 ciclos serão usados.
 

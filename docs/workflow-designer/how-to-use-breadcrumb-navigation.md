@@ -1,23 +1,23 @@
 ---
-title: 'Designer de fluxo de trabalho - como: Usar a navegação estrutural'
+title: 'Designer de Fluxo de Trabalho-como: usar a navegação por trilha'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 4a688056-37dc-406a-9071-be2141e192fe
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: de1004dd7a62fe4163147db4928783dd9a0dca98
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d7a851ea074a78349c9e52ef127bf2814d203bf5
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62949494"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650309"
 ---
-# <a name="how-to-use-breadcrumb-navigation"></a>Como: Usar a navegação estrutural
+# <a name="how-to-use-breadcrumb-navigation"></a>Como: Use a navegação de rastreamento
 
-Há três maneiras principais de alterar o conjunto de atividades que são exibidos no Designer de fluxo de trabalho:
+Há três maneiras principais de alterar o conjunto de atividades que são exibidas no Designer de Fluxo de Trabalho:
 
 1. Clique duas vezes para furar na uma atividade filho.
 
@@ -27,7 +27,7 @@ Há três maneiras principais de alterar o conjunto de atividades que são exibi
 
 ## <a name="using-breadcrumb-navigation"></a>Usando a navegação de rastreamento
 
-1. Clique duas vezes em uma atividade do Designer de fluxo de trabalho para alterar a atividade raiz para a atividade clicado. A atividade clicado, em seguida, é totalmente expandida na raiz e seus ancestrais são mostrados na barra de navegação estrutural. Isso é às vezes chamado perfuração ou de uma atividade.
+1. Clique duas vezes em uma atividade de Designer de Fluxo de Trabalho para alterar a atividade raiz para a atividade clicada. A atividade clicada é, então, totalmente expandida na raiz e seus ancestrais são mostrados na barra de navegação estrutural. Isso é às vezes chamado perfuração ou de uma atividade.
 
 2. Para navegar a um predecessor de atividade atual da raiz, clique na atividade na barra de rastreamento.
 
@@ -38,16 +38,16 @@ Há três maneiras principais de alterar o conjunto de atividades que são exibi
 2. Quando o estado do estado de expansão é alterado clicando no botão, o novo estado de expansão é salvo em XAML.
 
     > [!WARNING]
-    > Nem todas as atividades podem ser expandidos no lugar. Há dois casos quando uma atividade não pode ser expandida no local: ou o pai da atividade não permite seus filhos sejam expandidos no lugar, (por exemplo, as atividades em um fluxograma não podem ser expandidos no local), ou o designer de atividade não se permite que é expandido no lugar. Embora nenhum Designer de atividade incluído no Designer de fluxo de trabalho tem o último comportamento, algumas atividades personalizadas podem exibir esse comportamento.
+    > Nem todas as atividades podem ser expandidos no lugar. Há dois casos quando uma atividade não pode ser expandida no local: ou o pai da atividade não permite seus filhos sejam expandidos no lugar, (por exemplo, as atividades em um fluxograma não podem ser expandidos no local), ou o designer de atividade não se permite que é expandido no lugar. Embora nenhum dos designers de atividade incluídos no Designer de Fluxo de Trabalho tenha o último comportamento, algumas atividades personalizadas podem apresentar esse comportamento.
 
 ## <a name="expanding-all-or-collapsing-all-activities"></a>Tudo expandir ou recolher todas as atividades
 
-1. Use o **Expandir tudo** e **Recolher tudo** botões na interface do usuário para expandir ou recolher todas as atividades na raiz atual de rastreamento. Observe que expande todas e recolhe todo é estados globais. Isso significa que quando você altera a atividade raiz usando a navegação de trilha, expandir ou recolhe qualquer estado persiste até que você clique em **restaurar**.
+1. Use os botões **expandir tudo** e **recolher tudo** na interface do usuário para expandir ou recolher todas as atividades na raiz de navegação estrutural atual. Observe que expande todas e recolhe todo é estados globais. Isso significa que, quando você altera a atividade raiz usando a navegação estrutural, o estado expandir tudo ou recolher tudo persiste até que você clique em **restaurar**.
 
-2. Depois que você aplicou qualquer expandir ou recolhe qualquer estado, você pode clicar na **restaurar** botão que aparece para voltar para examinar o estado anteriormente aplicado a cada atividade.
-
-    > [!WARNING]
-    > Se uma atividade, como <xref:System.Activities.Statements.Flowchart>, optou fora de expanda local, a funcionalidade associada com o **Expandir tudo** e **Recolher tudo** botões está desabilitado no **fluxograma**  designer. Para obter mais informações sobre o **fluxograma** designer, consulte o [fluxograma](../workflow-designer/flowchart-activity-designer.md) tópico.
+2. Depois de aplicar um estado expandir tudo ou recolher tudo, você pode clicar no botão **restaurar** que aparece para voltar ao exame do estado aplicado anteriormente a cada atividade.
 
     > [!WARNING]
-    > Expandir tudo também tem um efeito especial **comutador** e **TryCatch** designers de atividade. Quando você clica em **Expandir tudo**, todos os casos de comutador e todos os blocos try/catch/finally são exibidos. Clicando em **restaurar** ou **Recolher tudo** retorna esses designers para seu estado padrão, no qual você pode clicar em um casos/bloco individuais para exibir seu conteúdo.
+    > Se uma atividade, como <xref:System.Activities.Statements.Flowchart>, tiver optado por expansão em vigor, a funcionalidade associada aos botões **expandir tudo** e **recolher tudo** será desabilitada no designer de **fluxograma** . Para obter mais informações sobre o designer de **fluxograma** , consulte o tópico [fluxograma](../workflow-designer/flowchart-activity-designer.md) .
+
+    > [!WARNING]
+    > Expandir tudo também tem um efeito especial nos designers de atividade **switch** e **TryCatch** . Quando você clica em **expandir tudo**, todos os casos de comutador e todos os blocos try/catch/finally são exibidos. Clicar em **restaurar** ou **recolher todos** retorna esses designers ao seu estado padrão, no qual você pode clicar em um caso/bloco individual para exibir seu conteúdo.

@@ -1,5 +1,5 @@
 ---
-title: 'CA2122: Não expor indiretamente métodos com demandas de link | Microsoft Docs'
+title: 'CA2122: não expõe indiretamente métodos com demandas de link | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,17 +12,17 @@ helpviewer_keywords:
 - CA2122
 ms.assetid: 3eda58e7-c6ec-41c3-8112-ae0841109c6a
 caps.latest.revision: 19
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 637fa666dbaba539b39fb3537df49fbd12baef3a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 099e5f3f9a09eef57ce1b888601f61e85ceb97c5
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58922653"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72643401"
 ---
-# <a name="ca2122-do-not-indirectly-expose-methods-with-link-demands"></a>CA2122: Não expor indiretamente métodos com demandas de link
+# <a name="ca2122-do-not-indirectly-expose-methods-with-link-demands"></a>CA2122: não expor indiretamente métodos com demandas de link
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -30,22 +30,22 @@ ms.locfileid: "58922653"
 |NomeDoTipo|DoNotIndirectlyExposeMethodsWithLinkDemands|
 |CheckId|CA2122|
 |Categoria|Microsoft.Security|
-|Alteração Significativa|Não separável|
+|Alteração Significativa|Sem interrupção|
 
 ## <a name="cause"></a>Causa
- Um membro público ou protegido tem um [demandas de Link](http://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) e é chamado por um membro que não executa nenhuma verificação de segurança.
+ Um membro público ou protegido tem uma [demanda de link](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) e é chamado por um membro que não executa nenhuma verificação de segurança.
 
 ## <a name="rule-description"></a>Descrição da Regra
- Uma exigência de vínculo verifica as permissões apenas do chamador imediato. Se um membro `X` não faz com que nenhum demandas de segurança de seus chamadores e chamadas de código protegido por uma demanda de link em um chamador sem a permissão necessária pode usar `X` para acessar o membro protegido.
+ Uma exigência de vínculo verifica as permissões apenas do chamador imediato. Se um membro `X` não fizer nenhuma demanda de segurança de seus chamadores e chamar o código protegido por uma demanda de link, um chamador sem a permissão necessária poderá usar `X` para acessar o membro protegido.
 
 ## <a name="how-to-fix-violations"></a>Como Corrigir Violações
- Adicionar uma segurança [dados e modelagem](http://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6) ou vincular a demanda para o membro para que ele não fornece mais acesso desprotegido para o membro protegido por demanda de link.
+ Adicione dados de segurança [e modelagem](https://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6) ou demanda de link ao membro para que ele não forneça mais acesso sem segurança ao membro protegido por demanda de link.
 
 ## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos
- Para suprimir com segurança um aviso nessa regra, certifique-se de que seu código não concede seus chamadores acesso a recursos que podem ser usados de forma destrutivas ou operações.
+ Para suprimir um aviso dessa regra com segurança, você deve certificar-se de que seu código não concede aos chamadores acesso a operações ou recursos que podem ser usados de maneira destrutiva.
 
 ## <a name="example"></a>Exemplo
- Os exemplos a seguir mostram uma biblioteca que viola a regra e um aplicativo que demonstra a desvantagem da biblioteca. A biblioteca de exemplo fornece dois métodos que juntos violam a regra. O `EnvironmentSetting` método é protegido por uma demanda de link para acesso irrestrito a variáveis de ambiente. O `DomainInformation` método não faz nenhuma demandas de segurança de seus chamadores antes de chamar `EnvironmentSetting`.
+ Os exemplos a seguir mostram uma biblioteca que viola a regra e um aplicativo que demonstra a fraqueza da biblioteca. A biblioteca de exemplo fornece dois métodos que juntos violam a regra. O método `EnvironmentSetting` é protegido por uma demanda de link para acesso irrestrito a variáveis de ambiente. O método `DomainInformation` não faz nenhuma demanda de segurança de seus chamadores antes de chamar `EnvironmentSetting`.
 
  [!code-csharp[FxCop.Security.UnsecuredDoNotCall#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Security.UnsecuredDoNotCall/cs/FxCop.Security.UnsecuredDoNotCall.cs#1)]
 
@@ -56,6 +56,6 @@ ms.locfileid: "58922653"
 
  Este exemplo gerencia a seguinte saída.
 
- **O valor do membro não seguro: seattle.corp.contoso.com**
+ **Valor de membro não seguro: seattle.corp.contoso.com**
 ## <a name="see-also"></a>Consulte também
- [Diretrizes de codificação segura](http://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177) [demandas de Link](http://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) [dados e modelagem](http://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6)
+ [Diretrizes de codificação seguras](https://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177) [link exige](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) [dados e modelagem](https://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6)

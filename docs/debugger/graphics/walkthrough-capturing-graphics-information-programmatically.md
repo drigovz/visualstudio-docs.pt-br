@@ -1,5 +1,5 @@
 ---
-title: 'Passo a passo: Capturando informações de gráficos de forma programática | Microsoft Docs'
+title: 'Walkthrough: capturando informações de gráficos programaticamente | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: mikejo5000
@@ -7,26 +7,26 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8fa8d750049d7d74d912e68544c91d5006252068
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e2036588fe04825b0fe1a1aa2db7ae8f7e0b5ad4
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62848527"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72734766"
 ---
-# <a name="walkthrough-capturing-graphics-information-programmatically"></a>Passo a passo: Como capturar informações de gráficos de forma programática
+# <a name="walkthrough-capturing-graphics-information-programmatically"></a>Instruções passo a passo: capturando informações de gráfico de forma programática
 É possível usar o Diagnóstico de Gráficos do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] para capturar de forma programática informações gráficas de um aplicativo Direct3D.
 
-Captura programática é útil em cenários como:
+A captura programática é útil em cenários como:
 
-- Iniciar captura programaticamente quando seu aplicativo de gráficos não usar swapchain presente, como quando ele processa para uma textura.
+- Inicie a captura programaticamente quando seu aplicativo de gráficos não usar SwapChain presente, como quando ele é renderizado para uma textura.
 
-- Iniciar captura programaticamente quando seu aplicativo não renderiza, como quando ele usa DirectCompute para executar cálculos.
+- Inicie a captura programaticamente quando seu aplicativo não renderizar, como quando ele usa DirectCompute para executar cálculos.
 
-- Chamar `CaptureCurrentFrame`quando um problema de renderização é difícil de prever e capturar em testes manuais, mas pode ser programaticamente previsto usando informações sobre o estado do aplicativo em tempo de execução.
+- A chamada `CaptureCurrentFrame`when um problema de renderização é difícil de prever e capturar em testes manuais, mas pode ser prevista programaticamente usando informações sobre o estado do aplicativo em tempo de execução.
 
-## <a name="CaptureDX11_2"></a> Captura programática no Windows 10
-Esta parte do passo a passo demonstra a captura programática em aplicativos que usam a API do DirectX 11.2 no Windows 10, que usa o método de captura robusta.
+## <a name="CaptureDX11_2"></a>Captura programática no Windows 10
+Esta parte do tutorial demonstra a captura programática em aplicativos que usam a API do DirectX 11,2 no Windows 10, que usa o método robusto de captura.
 
 Esta seção mostra como fazer estas tarefas:
 
@@ -37,10 +37,10 @@ Esta seção mostra como fazer estas tarefas:
 - Capturando informações de gráficos
 
 > [!NOTE]
-> As implementações anteriores da Captura programática dependiam das ferramentas remotas para Visual Studio para [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] para fornecer a funcionalidade de captura.
+> As implementações anteriores da captura programática se basearam em Ferramentas Remotas para Visual Studio para [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] para fornecer a funcionalidade de captura.
 
 ### <a name="preparing-your-app-to-use-programmatic-capture"></a>Preparando o aplicativo para usar a captura programática
-Para usar a captura programática em seu aplicativo, ele deve incluir os cabeçalhos necessários. Esses cabeçalhos são parte do SDK do Windows 10.
+Para usar a captura programática em seu aplicativo, ele deve incluir os cabeçalhos necessários. Esses cabeçalhos fazem parte do SDK do Windows 10.
 
 ##### <a name="to-include-programmatic-capture-headers"></a>Para incluir cabeçalhos de captura programática
 
@@ -54,16 +54,16 @@ Para usar a captura programática em seu aplicativo, ele deve incluir os cabeça
     ```
 
     > [!IMPORTANT]
-    > Não inclua a cabeçalho arquivo vsgcapture.h—which dá suporte à captura programática no Windows 8.0 e anterior — para realizar a captura programática em seus aplicativos do Windows 10. Esse cabeçalho não é compatível com o DirectX 11.2. Se esse arquivo for incluído depois que o cabeçalho d3d11_2.h for incluído, o compilador emite um aviso. Se houver vsgcapture antes d3d11_2.h, o aplicativo não será iniciado.
+    > Não inclua o arquivo de cabeçalho vsgcapture. h — que dá suporte à captura programática no Windows 8,0 e versões anteriores — para executar a captura programática em seus aplicativos do Windows 10. Esse cabeçalho não é compatível com o DirectX 11.2. Se esse arquivo estiver incluído depois que o cabeçalho d3d11_2. h for incluído, o compilador emitirá um aviso. Se vsgcapture. h for incluído antes de d3d11_2. h, o aplicativo não será iniciado.
 
     > [!NOTE]
-    > Se a junho de 2010 DirectX SDK está instalado em seu computador e o caminho de inclusão do seu projeto contém `%DXSDK_DIR%includex86`, mova-o ao final do caminho de inclusão. Faça o mesmo com o caminho da biblioteca.
+    > Se o SDK do DirectX de junho de 2010 estiver instalado em seu computador e o caminho de inclusão do seu projeto contiver `%DXSDK_DIR%includex86`, mova-o para o final do caminho de inclusão. Faça o mesmo com o caminho da biblioteca.
 
 ### <a name="getting-the-idxgraphicsanalysis-interface"></a>Obtendo a interface IDXGraphicsAnalysis
-Antes de capturar informações de gráficos do DirectX 11.2, você precisa obter a interface de depuração DXGI.
+Antes de capturar informações de gráficos do DirectX 11,2, você precisa obter a interface de depuração DXGI.
 
 > [!IMPORTANT]
-> Ao usar a captura programática, você ainda deve executar seu aplicativo em Diagnóstico de gráficos (ALT+F5 no [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]) ou o [ferramenta de captura de linha de comando](command-line-capture-tool.md).
+> Ao usar a captura programática, você ainda deve executar seu aplicativo em diagnóstico de gráficos (Alt + F5 no [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]) ou na [ferramenta de captura de linha de comando](command-line-capture-tool.md).
 
 ##### <a name="to-get-the-idxgraphicsanalysis-interface"></a>Para obter a interface IDXGraphicsAnalysis
 
@@ -74,7 +74,7 @@ Antes de capturar informações de gráficos do DirectX 11.2, você precisa obte
   HRESULT getAnalysis = DXGIGetDebugInterface1(0, __uuidof(pGraphicsAnalysis), reinterpret_cast<void**>(&pGraphicsAnalysis));
   ```
 
-  Certifique-se de verificar a `HRESULT` retornado por [DXGIGetDebugInterface1](/windows/desktop/api/dxgi1_3/nf-dxgi1_3-dxgigetdebuginterface1) para garantir que você tenha uma interface válida antes de você usá-lo:
+  Certifique-se de verificar o `HRESULT` retornado por [DXGIGetDebugInterface1](/windows/desktop/api/dxgi1_3/nf-dxgi1_3-dxgigetdebuginterface1) para garantir que você obtenha uma interface válida antes de usá-la:
 
   ```cpp
   if (FAILED(getAnalysis))
@@ -84,7 +84,7 @@ Antes de capturar informações de gráficos do DirectX 11.2, você precisa obte
   ```
 
   > [!NOTE]
-  > Se `DXGIGetDebugInterface1` retorna `E_NOINTERFACE` (`error: E_NOINTERFACE No such interface supported`), verifique se o aplicativo está em execução no diagnóstico de gráficos (ALT+F5 no [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]).
+  > Se `DXGIGetDebugInterface1` retornar `E_NOINTERFACE` (`error: E_NOINTERFACE No such interface supported`), verifique se o aplicativo está sendo executado sob o diagnóstico de gráficos (Alt + F5 no [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]).
 
 ### <a name="capturing-graphics-information"></a>Capturando informações de gráficos
 Agora que você tem uma interface `IDXGraphicsAnalysis` válida, é possível usar `BeginCapture` e `EndCapture` para capturar informações gráficas.
@@ -107,14 +107,14 @@ Agora que você tem uma interface `IDXGraphicsAnalysis` válida, é possível us
     ...
     ```
 
-- Após a chamada para `EndCapture`, liberar o objeto de elementos gráficos.
+- Após a chamada para `EndCapture`, solte o objeto Graphics.
 
 ## <a name="next-steps"></a>Próximas etapas
 Este passo a passo demonstrou como capturar informações gráficas de forma programática. Como próxima etapa, considere esta opção:
 
-- Aprenda a analisar informações gráficas capturadas usando as ferramentas de diagnóstico de gráficos. Ver [visão geral](overview-of-visual-studio-graphics-diagnostics.md).
+- Aprenda a analisar informações gráficas capturadas usando as ferramentas de diagnóstico de gráficos. Consulte [visão geral](overview-of-visual-studio-graphics-diagnostics.md).
 
 ## <a name="see-also"></a>Consulte também
-- [Passo a passo: Como capturar informações de gráficos](walkthrough-capturing-graphics-information.md)
+- [Passo a passo: capturando informações de gráficos](walkthrough-capturing-graphics-information.md)
 - [Capturando informações de gráficos](capturing-graphics-information.md)
 - [Ferramenta de captura de linha de comando](command-line-capture-tool.md)

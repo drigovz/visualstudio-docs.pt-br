@@ -1,33 +1,32 @@
 ---
 title: Publicar em uma pasta
 ms.date: 04/02/2019
-ms.topic: quickstart
 helpviewer_keywords:
-- deployment, website
+- deployment, website, console, publish
 ms.assetid: e963fb4b-6d32-4d45-86bb-ef7e4d3028b0
 author: sayedihashimi
 ms.author: sayedha
 manager: unniravindranathan
 ms.prod: visual-studio-mac
-ms.openlocfilehash: 8bff4b6079818a7e6d4e3500830a036ae6ab28cd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 5dfee3999eddd8c4dacdd6180e18a4a50e6535dc
+ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62937029"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73715901"
 ---
-# <a name="publish-a-web-app-to-a-folder-using-visual-studio-for-mac"></a>Publicar um aplicativo Web em uma pasta usando o Visual Studio para Mac
+# <a name="publish-to-a-folder-using-visual-studio-for-mac"></a>Publicar em uma pasta usando Visual Studio para Mac
 
-Você pode usar a ferramenta Publicar para publicar aplicativos do ASP.NET Core em uma pasta.
+Você pode usar a ferramenta de publicação para publicar o console do .NET Core ou os aplicativos ASP.NET Core em uma pasta.
 
-## <a name="prerequisites"></a>Pré-requisitos
+## <a name="prerequisites"></a>Prerequisites
 
-- [Visual Studio 2019 para Mac](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs4mac2019) instalado com o ASP.NET Core habilitado.
-- Um projeto ASP.NET Core. Se você ainda não tiver um projeto, [crie um](https://docs.microsoft.com/visualstudio/mac/create-new-projects?view=vsmac-2019).
+- O [Visual Studio 2019 para Mac](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs4mac2019) instalado com o .NET Core está habilitado.
+- Um console do .NET Core ou ASP.NET Core projeto. Se você ainda não tiver um projeto, [crie um](/visualstudio/mac/create-new-projects?view=vsmac-2019).
 
 ## <a name="publish-to-folder"></a>Publicar na Pasta
 
-Usando o Visual Studio para Mac, você pode publicar seus projetos do ASP.NET Core em uma pasta usando a ferramenta Publicar. Após a publicação em uma pasta, você poderá transferir os arquivos para o servidor Web para colocá-lo em um ambiente diferente. Para publicar uma pasta, siga estas etapas.
+Usando Visual Studio para Mac você pode publicar seus projetos do .NET Core em uma pasta usando a ferramenta de publicação. Depois de publicar em uma pasta, você pode transferir os arquivos para um ambiente diferente. Para publicar uma pasta, siga estas etapas.
 
  1. No Painel de Soluções, clique com o botão direito do mouse no projeto e escolha **Publicar**.
 

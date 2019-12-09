@@ -1,5 +1,5 @@
 ---
-title: 'CA1702: Palavras compostas devem ter maiusculas e minúsculas corretamente | Microsoft Docs'
+title: 'CA1702: palavras compostas devem ser maiúsculas e minúsculas corretamente | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,49 +12,48 @@ helpviewer_keywords:
 - CompoundWordsShouldBeCasedCorrectly
 ms.assetid: 05481245-7ad8-48c3-a456-3aa44b6160a6
 caps.latest.revision: 21
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: d62053381e4d42c50a5d15a85afaef3ed816491d
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 76ce346430a249b562f00e17c3173e79128d1708
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59658325"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72669251"
 ---
-# <a name="ca1702-compound-words-should-be-cased-correctly"></a>CA1702: Palavras compostas devem ter maiúsculas e minúsculas corretas
+# <a name="ca1702-compound-words-should-be-cased-correctly"></a>CA1702: palavras compostas devem ter maiúsculas e minúsculas corretas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Para a documentação mais recente do Visual Studio, consulte [CA1702: Palavras compostas devem ter maiusculas e minúsculas corretamente](https://docs.microsoft.com/visualstudio/code-quality/ca1702-compound-words-should-be-cased-correctly).  
-  
-|||  
-|-|-|  
-|NomeDoTipo|CompoundWordsShouldBeCasedCorrectly|  
-|CheckId|CA1702|  
-|Categoria|Microsoft.Naming|  
-|Alteração Significativa|Quebra quando acionado em assemblies.<br /><br /> Sem quebra - quando disparado em parâmetros de tipo.|  
-  
-## <a name="cause"></a>Causa  
- O nome de um identificador contém várias palavras e pelo menos uma das palavras parece ser uma palavra composta que não é maiusculas e minúsculas corretas.  
-  
-## <a name="rule-description"></a>Descrição da Regra  
- O nome do identificador é dividido em palavras que são baseadas em maiusculas. Cada combinação de duas palavras contígua é verificada pela biblioteca do verificador ortográfico da Microsoft. Se ele for reconhecido, o identificador produz uma violação da regra. São exemplos de palavras compostas que fazem com que uma violação "CheckSum" e "MultiPart", que deve ter maiusculas e minúsculas como "Checksum" e "Multipart", respectivamente. Devido ao uso anterior de comuns, várias exceções são incorporadas a regra e várias palavras únicas são sinalizadas, como "Ferramentas" e "Filename", que deve ter a grafia duas palavras distintas (nesse caso, "Ferramentas" e "FileName").  
-  
- Convenções de nomenclatura de fornecem uma aparência comum para bibliotecas que direcionam o common language runtime. Isso reduz a curva de aprendizado que é necessário para novas bibliotecas de software e aumenta a confiança do cliente que a biblioteca foi desenvolvida por alguém que tenha experiência em desenvolvimento de código gerenciado.  
-  
-## <a name="how-to-fix-violations"></a>Como Corrigir Violações  
- Altere o nome, de modo que ele é maiusculas e minúsculas corretas.  
-  
-## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos  
- É seguro suprimir um aviso nessa regra, se ambas as partes da palavra composta são reconhecidas pelo dicionário de ortografia e a intenção é usar duas palavras.  
-  
-## <a name="related-rules"></a>Regras relacionadas  
- [CA1701: Palavras compostas da cadeia de caracteres de recurso devem ter maiusculas e minúsculas corretamente](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)  
-  
- [CA1709: Identificadores devem ter maiusculas e minúsculas corretamente](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)  
-  
- [CA1708: Identificadores devem ser diferentes de maiusculas e minúsculas](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)  
-  
-## <a name="see-also"></a>Consulte também  
- [Diretrizes de nomenclatura](http://msdn.microsoft.com/library/fc076d66-9b5f-42d3-aa65-61d970c794a3)   
- [Convenções de maiúsculas e minúsculas](http://msdn.microsoft.com/library/4c4ea526-9203-486f-b72d-29d61c5b3c6d)
+Para obter a documentação mais recente sobre o Visual Studio, consulte [CA1702: as palavras compostas devem estar em maiúsculas e minúsculas](https://docs.microsoft.com/visualstudio/code-quality/ca1702-compound-words-should-be-cased-correctly).
+
+|||
+|-|-|
+|NomeDoTipo|CompoundWordsShouldBeCasedCorrectly|
+|CheckId|CA1702|
+|Categoria|Microsoft. Naming|
+|Alteração Significativa|Quebra-quando acionada em assemblies.<br /><br /> Não separável-quando acionado em parâmetros de tipo.|
+
+## <a name="cause"></a>Causa
+ O nome de um identificador contém várias palavras e, pelo menos, uma das palavras parece ser uma palavra composta que não está em maiúsculas corretamente.
+
+## <a name="rule-description"></a>Descrição da Regra
+ O nome do identificador é dividido em palavras baseadas em maiúsculas e minúsculas. Cada combinação de duas palavras contígua é verificada pela biblioteca do verificador ortográfico da Microsoft. Se for reconhecido, o identificador produzirá uma violação da regra. Exemplos de palavras compostas que causam uma violação são "CheckSum" e "MultiPart", que devem ser totais como "Checksum" e "multipart", respectivamente. Devido ao uso comum anterior, várias exceções são incorporadas à regra, e várias palavras únicas são sinalizadas, como "barra de ferramentas" e "nome do arquivo", que devem ser maiúsculas e minúsculas (neste caso, "barra de ferramentas" e "nome do arquivo").
+
+ As convenções de nomenclatura fornecem uma aparência comum para as bibliotecas direcionadas ao Common Language Runtime. Isso reduz a curva de aprendizado necessária para novas bibliotecas de software e aumenta a confiança do cliente de que a biblioteca foi desenvolvida por alguém que tenha experiência no desenvolvimento de código gerenciado.
+
+## <a name="how-to-fix-violations"></a>Como Corrigir Violações
+ Altere o nome para que ele esteja em maiúsculas e minúsculas.
+
+## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos
+ É seguro suprimir um aviso dessa regra se ambas as partes da palavra composta forem reconhecidas pelo dicionário ortográfico e a intenção for usar duas palavras.
+
+## <a name="related-rules"></a>Regras relacionadas
+ [CA1701: as palavras compostas da cadeia de caracteres de recurso devem ter maiúsculas e minúsculas corretas](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
+
+ [CA1709: os identificadores devem ter maiúsculas e minúsculas corretas](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
+
+ [CA1708: os identificadores devem ser diferentes além de maiúsculas de minúsculas](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
+
+## <a name="see-also"></a>Consulte também
+ [Diretrizes de nomenclatura](https://msdn.microsoft.com/library/fc076d66-9b5f-42d3-aa65-61d970c794a3) [convenções de capitalização](https://msdn.microsoft.com/library/4c4ea526-9203-486f-b72d-29d61c5b3c6d)

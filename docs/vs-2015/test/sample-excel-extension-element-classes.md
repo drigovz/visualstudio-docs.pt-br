@@ -1,55 +1,54 @@
 ---
-title: 'Extensão do Excel de exemplo: Classes de elemento | Microsoft Docs'
+title: 'Extensão do Excel de amostra: classes de elemento | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.assetid: 7c251098-00aa-49cf-9e37-5717c0c6b3f1
 caps.latest.revision: 11
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 052ef261270b2cd6e66d71bbbb0c9cc3d12696eb
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 21c7777be710f0175708629eb9507b34f0d70be2
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54796035"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72660446"
 ---
-# <a name="sample-excel-extension-element-classes"></a>Extensão do Excel de exemplo: Classes de elemento
+# <a name="sample-excel-extension-element-classes"></a>Extensão do Excel de amostra: classes de elemento
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A extensão usa classes derivadas de <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyElement> e representam o controle de Planilha e o controle de Célula no [!INCLUDE[ofprexcel](../includes/ofprexcel-md.md)].  
-  
- O elemento base para essa extensão é o `ExcelElement`. As classes `ExcelWorksheetElement` e `ExcelCellElement` herdam desse elemento  
-  
-## <a name="element-and-elementinformation-classes"></a>Classes Element e ElementInformation  
- A `Element` é a classe base de todos os elementos de interface do usuário para a extensão do Excel e é herdada da classe <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyElement>. `ElementInformation` é a classe base para o elemento de classes de informações na amostra e não tem nenhum membro.  
-  
-#### <a name="simple-properties-and-methods"></a>Propriedades e métodos simples  
- Esses membros retornam valores simples, como o valor da propriedade `Name` ou da `ClassName` e o código é claro e fácil de ler. Alguns valores são retornados usando a classe `Utility`, que será discutido mais tarde. Outros retornam `null` porque não são relevantes para esta extensão de amostra. Dois membros são mais interessantes que os outros: a <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyElement.QueryId%2A> propriedade e o método <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyElement.CacheProperties%2A>.  
-  
-#### <a name="queryid-property"></a>QueryId Property  
- Essa propriedade retornará uma condição que consiste em pares de nome-valor de propriedade que identificam exclusivamente o controle durante a reprodução. Para cada classe de controle derivada, o desenvolvedor deve substituir essa propriedade para retornar um objeto <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.IQueryElement> que o Framework pode usar para localizar o controle na interface do usuário.  
-  
-#### <a name="cacheproperties-method"></a>Método CacheProperties  
- Este método é chamado pela estrutura de teste durante o processo de gravação para dizer ao elemento para salvar um instantâneo das propriedades importantes. Isso mantém as propriedades disponíveis, mesmo quando o controle de interface do usuário real não está mais na tela.  
-  
-## <a name="worksheetelement-and-worksheetinformation-classes"></a>Classes WorksheetElement e WorksheetInformation  
- A classe `WorksheetElement` representa uma planilha do Excel na estrutura de testes e herda a classe base `Element`. Três propriedades são substituídas para fornecer informações específicas sobre o objeto Planilha do Excel: <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyElement.ClassName%2A>, <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyElement.ControlTypeName%2A> e <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyElement.Name%2A>.  
-  
- O <xref:System.Runtime.InteropServices.ComVisibleAttribute> também é aplicado a essa classe para torná-la visível ao COM.  
-  
- A classe `WorksheetInformation` representa informações sobre uma planilha do Excel. Ela tem apenas um membro, a propriedade `SheetName`, que é suficiente para este amostra.  
-  
-## <a name="cellelement-and-cellinformation-classes"></a>Classes CellElement e CellInformation  
- A classe `CellElement` representa uma célula do Excel, herdada da classe base `Element`. O único membro substituído é a propriedade <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyElement.QueryId%2A>, que retorna um <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.IQueryElement> que usa as propriedades `RowIndex` e `ColumnIndex` para identificar a célula.  
-  
-## <a name="utilities-and-excelutilities-classes"></a>Classes Utilities e ExcelUtilities  
- A classe `ExcelUtilities` interna fornece alguns valores de constantes, tal como o nome da tecnologia e um método que determina se o identificador de janela fornecido representa uma planilha do Excel.  
-  
- A classe `Utilities` tem métodos auxiliares que retornam uma variedade de informações sobre a interface do usuário. Alguns métodos usam chamadas diretas em DLLs do sistema externo, como **USER32.DLL** e **OLEACC.DLL**, para obter os identificadores de janela da interface do usuário<strong>.</strong>  
-  
-## <a name="see-also"></a>Consulte também  
- <xref:System.Runtime.InteropServices.ComVisibleAttribute>   
- <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.IQueryElement>   
+A extensão usa classes derivadas de <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyElement> e representam o controle de Planilha e o controle de Célula no [!INCLUDE[ofprexcel](../includes/ofprexcel-md.md)].
+
+ O elemento base para essa extensão é o `ExcelElement`. As classes `ExcelWorksheetElement` e `ExcelCellElement` herdam desse elemento
+
+## <a name="element-and-elementinformation-classes"></a>Classes Element e ElementInformation
+ A `Element` é a classe base de todos os elementos de interface do usuário para a extensão do Excel e é herdada da classe <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyElement>. `ElementInformation` é a classe base para o elemento de classes de informações na amostra e não tem nenhum membro.
+
+#### <a name="simple-properties-and-methods"></a>Propriedades e métodos simples
+ Esses membros retornam valores simples, como o valor da propriedade `Name` ou da `ClassName` e o código é claro e fácil de ler. Alguns valores são retornados usando a classe `Utility`, que será discutido mais tarde. Outros retornam `null` porque não são relevantes para esta extensão de amostra. Dois membros são mais interessantes que os outros: a <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyElement.QueryId%2A> propriedade e o método <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyElement.CacheProperties%2A>.
+
+#### <a name="queryid-property"></a>QueryId Property
+ Essa propriedade retornará uma condição que consiste em pares de nome-valor de propriedade que identificam exclusivamente o controle durante a reprodução. Para cada classe de controle derivada, o desenvolvedor deve substituir essa propriedade para retornar um objeto <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.IQueryElement> que o Framework pode usar para localizar o controle na interface do usuário.
+
+#### <a name="cacheproperties-method"></a>Método CacheProperties
+ Este método é chamado pela estrutura de teste durante o processo de gravação para dizer ao elemento para salvar um instantâneo das propriedades importantes. Isso mantém as propriedades disponíveis, mesmo quando o controle de interface do usuário real não está mais na tela.
+
+## <a name="worksheetelement-and-worksheetinformation-classes"></a>Classes WorksheetElement e WorksheetInformation
+ A classe `WorksheetElement` representa uma planilha do Excel na estrutura de testes e herda a classe base `Element`. Três propriedades são substituídas para fornecer informações específicas sobre o objeto Planilha do Excel: <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyElement.ClassName%2A>, <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyElement.ControlTypeName%2A> e <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyElement.Name%2A>.
+
+ O <xref:System.Runtime.InteropServices.ComVisibleAttribute> também é aplicado a essa classe para torná-la visível ao COM.
+
+ A classe `WorksheetInformation` representa informações sobre uma planilha do Excel. Ela tem apenas um membro, a propriedade `SheetName`, que é suficiente para este amostra.
+
+## <a name="cellelement-and-cellinformation-classes"></a>Classes CellElement e CellInformation
+ A classe `CellElement` representa uma célula do Excel, herdada da classe base `Element`. O único membro substituído é a propriedade <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyElement.QueryId%2A>, que retorna um <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.IQueryElement> que usa as propriedades `RowIndex` e `ColumnIndex` para identificar a célula.
+
+## <a name="utilities-and-excelutilities-classes"></a>Classes Utilities e ExcelUtilities
+ A classe `ExcelUtilities` interna fornece alguns valores de constantes, tal como o nome da tecnologia e um método que determina se o identificador de janela fornecido representa uma planilha do Excel.
+
+ A classe `Utilities` tem métodos auxiliares que retornam uma variedade de informações sobre a interface do usuário. Alguns métodos usam chamadas diretas em DLLs do sistema externo, como **USER32.DLL** e **OLEACC.DLL**, para obter os identificadores de janela da interface do usuário<strong>.</strong>
+
+## <a name="see-also"></a>Consulte também
+ <xref:System.Runtime.InteropServices.ComVisibleAttribute> <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.IQueryElement>
  [Estendendo testes de IU codificados e gravações da ação para dar suporte ao Microsoft Excel](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)

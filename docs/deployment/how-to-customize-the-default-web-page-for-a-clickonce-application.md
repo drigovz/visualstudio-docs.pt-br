@@ -1,5 +1,5 @@
 ---
-title: 'Como: Personalizar a página da Web padrão para um aplicativo ClickOnce | Microsoft Docs'
+title: Personalizar a página da web padrão para o aplicativo ClickOnce
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e132ea3592f18aad9b7b96bb32e8d7b6dac712cf
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 66d304be4e2435b6ec1ecafe8aeb473b83fa1033
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63406974"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263326"
 ---
 # <a name="how-to-customize-the-default-web-page-for-a-clickonce-application"></a>Como: Personalizar a página da Web padrão para um aplicativo ClickOnce
 Ao publicar um aplicativo ClickOnce para a Web, uma página da Web é gerada automaticamente e publicada com o aplicativo. A página padrão contém o nome do aplicativo e links para instalar o aplicativo, instale os pré-requisitos ou acessar a Ajuda no MSDN.

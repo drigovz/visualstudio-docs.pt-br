@@ -1,5 +1,5 @@
 ---
-title: Entendendo a alocação de memória e os valores de dados de tempo de vida do objeto| Microsoft Docs
+title: Entender a alocação de memória e os valores de dados de tempo de vida do objeto
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,14 +8,15 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 9fc9dd62c3d264d3b502845cb4d0f3e9c2a8fa78
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 6eec0c4bc5fc27e07bc04a8445ca14ce538ac376
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62821863"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779994"
 ---
 # <a name="understand-memory-allocation-and-object-lifetime-data-values"></a>Entender a alocação de memória e os valores de dados de tempo de vida do objeto
 

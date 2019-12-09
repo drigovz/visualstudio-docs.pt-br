@@ -6,14 +6,14 @@ ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.assetid: 0fa335fd-e442-448f-913f-25a19df90a93
 caps.latest.revision: 8
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: ef42f7710598906310b77bd834adf04b21d6bfc2
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: e8b3ea10b96a63bd18098030dc884ac3f3383353
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445859"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72657193"
 ---
 # <a name="using-microsoftvisualstudiotesttoolsunittesting-members-in-unit-tests"></a>Usando membros do Microsoft.VisualStudio.TestTools.UnitTesting em testes de unidade
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ A Estrutura de Teste de Unidade dá suporte a testes de unidade no [!INCLUDE[vsp
 > `[TestClassAttribute()]`
 
 ### <a name="elements-used-for-data-driven-testing"></a>Elementos Usados Para Teste Controlado por Dados
- Use os seguintes elementos para configurar testes de unidade controlados por dados. Para obter mais informações, consulte [How To: Criar um teste de unidade controlado por dados](../test/how-to-create-a-data-driven-unit-test.md) e [passo a passo: Usando um arquivo de configuração para definir uma fonte de dados](../test/walkthrough-using-a-configuration-file-to-define-a-data-source.md).
+ Use os seguintes elementos para configurar testes de unidade controlados por dados. Para obter mais informações, consulte [Como Criar um Teste de Unidade Controlado por Dados](../test/how-to-create-a-data-driven-unit-test.md) e [Passo a Passo: Usando um Arquivo de Configuração para Definir uma Fonte de Dados](../test/walkthrough-using-a-configuration-file-to-define-a-data-source.md).
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataAccessMethod>
 
@@ -41,7 +41,7 @@ A Estrutura de Teste de Unidade dá suporte a testes de unidade no [!INCLUDE[vsp
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceElementCollection>
 
 ## <a name="attributes-used-to-establish-a-calling-order"></a>Atributos Usados para Estabelecer uma Ordem de Chamada
- Um elemento de código decorado com um dos seguintes atributos é chamado no momento em especificado por você. Para obter mais informações, consulte [Anatomia de um Teste de Unidade](http://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144).
+ Um elemento de código decorado com um dos seguintes atributos é chamado no momento em especificado por você. Para obter mais informações, consulte [Anatomia de um Teste de Unidade](https://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144).
 
 ### <a name="for-assemblies"></a>Para Assemblies
  AssemblyInitialize e AssemblyCleanup são chamados logo após o assembly ser carregado e logo antes de seu assembly ser descarregado.
@@ -64,7 +64,7 @@ A Estrutura de Teste de Unidade dá suporte a testes de unidade no [!INCLUDE[vsp
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestCleanupAttribute>
 
 ## <a name="attributes-used-to-identify-test-classes-and-methods"></a>Atributos Usados para Identificar Classes de Teste e Métodos
- Cada classe de teste deve ter o atributo TestClass e cada método de teste deve ter o atributo TestMethod. Para obter mais informações, consulte [Anatomia de um Teste de Unidade](http://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144).
+ Cada classe de teste deve ter o atributo TestClass e cada método de teste deve ter o atributo TestMethod. Para obter mais informações, consulte [Anatomia de um Teste de Unidade](https://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144).
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute>
 
@@ -106,7 +106,7 @@ A Estrutura de Teste de Unidade dá suporte a testes de unidade no [!INCLUDE[vsp
 
 ## <a name="test-configuration-classes"></a>Classes de Configuração de Teste
 
-- <xref:Microsoft.TeamFoundation.TestManagement.Client.ObjectTypes>
+- [ObjectTypes](/previous-versions/visualstudio/visual-studio-2013/dd987428(v=vs.120))
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestConfigurationSection>
 
@@ -118,7 +118,7 @@ A Estrutura de Teste de Unidade dá suporte a testes de unidade no [!INCLUDE[vsp
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.CssProjectStructureAttribute>
 
 ## <a name="classes-used-with-private-accessors"></a>Classes Usadas com Acessadores Particulares
- Conforme descrito em [Usar o Publicize para Criar um Acessador Particular](http://msdn.microsoft.com/2056c6a7-6672-42a7-8f53-fead33c56deb), é possível gerar um teste de unidade para um método particular. Essa geração cria uma classe de acessador particular, que instancia um objeto da classe PrivateObject. A classe PrivateObject é uma classe wrapper que usa reflexão como parte do processo do acessador particular. A classe PrivateType é semelhante, mas é usada para chamar métodos estáticos privados em vez de chamar os métodos de instância privada.
+ Conforme descrito em [Usar o Publicize para Criar um Acessador Particular](https://msdn.microsoft.com/2056c6a7-6672-42a7-8f53-fead33c56deb), é possível gerar um teste de unidade para um método particular. Essa geração cria uma classe de acessador particular, que instancia um objeto da classe PrivateObject. A classe PrivateObject é uma classe wrapper que usa reflexão como parte do processo do acessador particular. A classe PrivateType é semelhante, mas é usada para chamar métodos estáticos privados em vez de chamar os métodos de instância privada.
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.PrivateObject>
 

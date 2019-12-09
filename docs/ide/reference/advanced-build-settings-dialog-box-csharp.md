@@ -1,27 +1,28 @@
 ---
 title: Caixa de diálogo Configurações de Build Avançadas (C#)
-ms.date: 06/20/2017
+ms.date: 08/05/2019
+ms.technology: vs-ide-compile
 ms.topic: reference
 f1_keywords:
 - cs.AdvancedBuildSettings
 helpviewer_keywords:
 - Build options [C#], advanced
 ms.assetid: 141f2dee-1563-4ce6-ba37-32920b082519
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d42087b023718cd31528a2e5d60e2a43e34097c4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 78817f65197c2dd295a6f2202f913c48b54e1ed9
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62792212"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748815"
 ---
-# <a name="advanced-build-settings-dialog-box-c"></a>Caixa de diálogo Configurações de Build Avançadas (C#)
+# <a name="advanced-build-settings-dialog-box-c"></a>Caixa de diálogo Configurações avançadas deC#compilação ()
 
-Use a caixa de diálogo **Configurações de Build Avançadas** do **Designer de Projeto** para especificar as propriedades de configuração de build avançadas do projeto. Essa caixa de diálogo se aplica somente a projetos [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)].
+Use a caixa de diálogo **Configurações de Build Avançadas** do **Designer de Projeto** para especificar as propriedades de configuração de build avançadas do projeto. Esta caixa de diálogo aplica C# -se somente a projetos.
 
 ## <a name="general"></a>Geral
 
@@ -29,19 +30,19 @@ As opções a seguir permitem definir configurações gerais avançadas.
 
 **Versão da Linguagem**
 
-Especifica a versão da linguagem a ser usada. O conjunto de recursos é diferente em cada versão e, portanto, essa opção pode ser usada para forçar o compilador a permitir somente um subconjunto dos recursos implementados ou permitir somente os recursos compatíveis com um padrão existente. Essa configuração tem as seguintes opções:
+::: moniker range=">=vs-2019"
 
-- **default**
+Links para [/langversion (C# opções de compilador)](/dotnet/csharp/language-reference/compiler-options/langversion-compiler-option), que fornece informações sobre como uma versão de idioma padrão é escolhida com base na estrutura de destino de um projeto.
 
-   Define a versão atual como destino.
+::: moniker-end
 
-- **ISO-1** e **ISO-2**
+::: moniker range="vs-2017"
 
-   Define como destino os recursos padrão ISO-1 e ISO-2, respectivamente.
+Especifica a versão da linguagem a ser usada. O conjunto de recursos é diferente em cada versão e, portanto, essa opção pode ser usada para forçar o compilador a permitir somente um subconjunto dos recursos implementados ou permitir somente os recursos compatíveis com um padrão existente.
 
-- **C# [número de versão]**
+O valor padrão é C# 7,0.
 
-   Define como destino uma versão específica do C#. Para obter mais informações, consulte [/langversion (opções do compilador C#)](/dotnet/csharp/language-reference/compiler-options/langversion-compiler-option).
+::: moniker-end
 
 **Relatório de erros do compilador interno**
 
@@ -91,9 +92,9 @@ Especifica o tamanho das seções no arquivo de saída. Os valores válidos são
 
 **Endereço básico da biblioteca**
 
-Especifica o endereço básico preferencial no qual uma DLL será carregada. O endereço básico padrão para uma DLL é definido pelo Common Language Runtime de [!INCLUDE[dnprdnshort](../../code-quality/includes/dnprdnshort_md.md)]. Para obter mais informações, consulte [/baseaddress (opções do compilador C#)](/dotnet/csharp/language-reference/compiler-options/baseaddress-compiler-option).
+Especifica o endereço básico preferencial no qual uma DLL será carregada. O endereço básico padrão de uma DLL é definido pelo Common Language Runtime do .NET Framework. Para obter mais informações, consulte [/baseaddress (opções do compilador C#)](/dotnet/csharp/language-reference/compiler-options/baseaddress-compiler-option).
 
 ## <a name="see-also"></a>Consulte também
 
-- [Opções do compilador de C#](/dotnet/csharp/language-reference/compiler-options/index)
-- [Página de Build, Designer de Projeto (C#)](../../ide/reference/build-page-project-designer-csharp.md)
+- [Opções do compilador do C#](/dotnet/csharp/language-reference/compiler-options/index)
+- [Página de build, Designer de Projeto (C#)](../../ide/reference/build-page-project-designer-csharp.md)

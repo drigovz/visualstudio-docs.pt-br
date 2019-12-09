@@ -8,18 +8,19 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 759a1cbf711b4264478c1e7fc44a65b86328ce32
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: fff2486c4197cbbe28c3b5deb0099e264805e12b
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431971"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74771686"
 ---
 # <a name="rapid-web-site-profiling-with-vsperfaspnetcmd"></a>Criação rápida de perfil de site com VSPerfASPNETCmd
 
-A ferramenta de linha de comando **VSPerfASPNETCmd** permite criar facilmente o perfil de aplicativos Web do [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]. Em comparação com a ferramenta de linha de comando [VSPerfCmd](../profiling/vsperfcmd.md), as opções são reduzidas, nenhuma variável de ambiente precisa ser definida e não é necessário reinicializar o computador. Usar **VSPerfASPNETCmd** é o método preferencial para a criação de perfil com o criador de perfil autônomo. Para obter mais informações, confira [Como: Instalar o criador de perfil independente](../profiling/how-to-install-the-stand-alone-profiler.md).
+A ferramenta de linha de comando **VSPerfASPNETCmd** permite criar facilmente o perfil de aplicativos Web do [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]. Em comparação com a ferramenta de linha de comando [VSPerfCmd](../profiling/vsperfcmd.md), as opções são reduzidas, nenhuma variável de ambiente precisa ser definida e não é necessário reinicializar o computador. Usar **VSPerfASPNETCmd** é o método preferencial para a criação de perfil com o criador de perfil autônomo. Para obter mais informações, confira [Como instalar o criador de perfil independente](../profiling/how-to-install-the-stand-alone-profiler.md).
 
 > [!NOTE]
 > Os recursos de segurança aprimorados no Windows 8 e no Windows Server 2012 exigiram alterações significativas na maneira como o criador de perfil do Visual Studio coleta dados nessas plataformas. Os aplicativos UWP também requerem novas técnicas de coleta. Consulte [Ferramentas de desempenho em aplicativos do Windows 8 e do Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).
@@ -41,6 +42,8 @@ Para criar o perfil de um aplicativo Web [!INCLUDE[vstecasp](../code-quality/inc
 
  **vsperfaspnetcmd**  *websiteUrl*
 
+ Um exemplo de *websiteUrl* hospedado no servidor local pode ser *http://localhost/MySite/default.aspx* . Um exemplo de site externo é *http://www.contoso.com* . Para obter mais informações, confira as URLs de exemplo em [Para criar o perfil de um site sem abrir um projeto no Visual Studio](how-to-collect-performance-data-for-a-web-site.md#to-profile-a-web-site-without-opening-a-project-in-visual-studio).
+
 ## <a name="to-collect-detailed-timing-data-by-using-the-instrumentation-method"></a>Para coletar dados de tempo detalhados usando o método de instrumentação
 
 Use a seguinte linha de comando para coletar dados de tempo detalhados de um aplicativo Web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] compilado dinamicamente:
@@ -61,14 +64,14 @@ A opção **/Memory** coleta dados sobre a alocação de objetos na memória do 
 
  Você também pode usar a opção **/Trace** para incluir informações detalhadas de tempo com os dados de memória do .NET:
 
- **vsperfaspnetcmd /memory**[**:lifetime**] **/trace**`websiteUrl`
+ **vsperfaspnetcmd /memory**[ **:lifetime**] **/trace**`websiteUrl`
 
 ## <a name="to-collect-tier-interaction-data"></a>Para coletar dados de interação entre camadas
 
 > [!WARNING]
 > Os dados de TIP (criação de perfil de interação de camadas) podem ser coletados usando qualquer edição do Visual Studio. No entanto, os dados de criação de perfil de interação de camadas só podem ser exibidos no Visual Studio Enterprise.
 >
-> Para coletar dados TIP no Windows 8 ou Windows Server 2012, você deve usar a opção de instrumentação (**/trace**).
+> Para coletar dados TIP no Windows 8 ou Windows Server 2012, você deve usar a opção de instrumentação ( **/trace**).
 
 Para coletar dados de interação entre camadas com os dados de amostragem:
 
@@ -80,7 +83,7 @@ Para coletar dados de interação entre camadas com os dados de instrumentação
 
 Para coletar dados de interação entre camadas com os dados de memória de .NET:
 
-**vsperfaspnetcmd /memory**[**:lifetime**] **/tip**_websiteUrl_
+**vsperfaspnetcmd /memory**[ **:lifetime**] **/tip**_websiteUrl_
 
 ## <a name="use-the-nowait-option"></a>Use a opção /NoWait
 
@@ -88,7 +91,7 @@ Por padrão, o prompt de comando não retorna após um comando **vsperfaspnetcmd
 
 Para iniciar a criação de perfil:
 
-**vsperfaspnetcmd** [*/Options*] **/nowait**_websiteUrl_
+**vsperfaspnetcmd** [ */Options*] **/nowait**_websiteUrl_
 
 Para encerrar a criação de perfil:
 

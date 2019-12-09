@@ -4,17 +4,17 @@ ms.date: 04/01/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - unit testing, create unit test plans
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a01f08d430e9812283c3f5179e08d20f98a687a4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 5ecddad721547fdb5689a26a192cf0580ddb44cb
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63003203"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72664909"
 ---
 # <a name="get-started-with-unit-testing"></a>Introdução ao teste de unidade
 
@@ -166,6 +166,8 @@ Para criar testes de unidade que usam [NUnit](https://nunit.org/):
 
 4. Adicione uma referência do projeto de teste ao projeto que contém o código que você deseja testar.
 
+   Clique com o botão direito do mouse no projeto no **Gerenciador de Soluções** e selecione **Adicionar** > **Referência**. (Também é possível adicionar uma referência no menu do botão direito do nó **Referências** ou **Dependências**.)
+
 5. Adicione código ao método de teste.
 
    ![Adicionar o código ao arquivo de código do teste de unidade](media/vs-2019/unit-test-method.png)
@@ -174,7 +176,7 @@ Para criar testes de unidade que usam [NUnit](https://nunit.org/):
 
 ## <a name="see-also"></a>Consulte também
 
-* [Passo a passo: Criar e executar testes de unidade para código gerenciado](walkthrough-creating-and-running-unit-tests-for-managed-code.md)
+* [Passo a passo: criar e executar testes de unidade para código gerenciado](walkthrough-creating-and-running-unit-tests-for-managed-code.md)
 * [Criar comando de Testes de Unidade](create-unit-tests-menu.md)
 * [Gerar testes com IntelliTest](generate-unit-tests-for-your-code-with-intellitest.md)
 * [Executar testes com o Gerenciador de Testes](run-unit-tests-with-test-explorer.md)

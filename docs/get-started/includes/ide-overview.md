@@ -2,16 +2,16 @@
 ms.date: 03/19/2019
 ms.technology: vs-ide-general
 ms.custom: vs-get-started
-ms.author: gewarren
-author: gewarren
+ms.author: jillfra
+author: jillre
 manager: jillfra
 ms.topic: include
-ms.openlocfilehash: 9a8fd8ca5081e3353cdbb488da5d43f54275d8da
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 973af983d0f07b0aceeedfc865280deea115f179
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62952165"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72632445"
 ---
 O *ambiente de desenvolvimento integrado* do Visual Studio é um painel de inicialização criativo que você pode usar para editar, depurar e compilar o código e, em seguida, publicar um aplicativo. Um IDE (ambiente de desenvolvimento integrado) é um programa repleto de recursos que pode ser usado por muitos aspectos do desenvolvimento de software. Além do editor e do depurador padrão fornecidos pela maioria dos IDEs, o Visual Studio inclui compiladores, ferramentas de preenchimento de código, designers gráficos e muitos outros recursos para facilitar o processo de desenvolvimento de software.
 
@@ -23,7 +23,7 @@ O *ambiente de desenvolvimento integrado* do Visual Studio é um painel de inici
 
 ::: moniker range="vs-2019"
 
-[![](../media/vs-2019/ide-overview.png "O IDE do Visual Studio")](../media/vs-2019/ide-overview.png#lightbox)
+[![O IDE do Visual Studio 2019](../media/vs-2019/ide-overview.png)](../media/vs-2019/ide-overview.png#lightbox)
 
 ::: moniker-end
 
@@ -152,7 +152,7 @@ Para começar, [baixe o Visual Studio](https://visualstudio.microsoft.com/vs/old
 
 ::: moniker range=">=vs-2019"
 
-Para começar, [baixe o Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) e instale-o no sistema. O instalador modular permite escolher e instalar *cargas de trabalho*, que são grupos de recursos necessários para a linguagem de programação ou para a plataforma de sua preferência. Para seguir as etapas de [criação de um programa](#create-a-program), selecione a carga de trabalho **Desenvolvimento multiplataforma do .NET Core** durante a instalação.
+Para começar, [baixe o Visual Studio](https://visualstudio.microsoft.com/downloads) e instale-o no sistema. O instalador modular permite escolher e instalar *cargas de trabalho*, que são grupos de recursos necessários para a linguagem de programação ou para a plataforma de sua preferência. Para seguir as etapas de [criação de um programa](#create-a-program), selecione a carga de trabalho **Desenvolvimento multiplataforma do .NET Core** durante a instalação.
 
 ::: moniker-end
 
@@ -174,7 +174,7 @@ Vamos nos aprofundar e criar um programa simples.
 
    A caixa de diálogo **Novo Projeto** mostra vários *modelos* de projeto. Um modelo contém as configurações e os arquivos básicos necessários para um tipo de projeto fornecido.
 
-1. Escolha a categoria de modelo **.NET Core** em **Visual C#** e escolha o modelo **Aplicativo de Console (.NET Core)**. Na caixa de texto **Nome**, digite **HelloWorld** e, em seguida, selecione o botão **OK**.
+1. Escolha a categoria de modelo **.NET Core** em **Visual C#** e escolha o modelo **Aplicativo de Console (.NET Core)** . Na caixa de texto **Nome**, digite **HelloWorld** e, em seguida, selecione o botão **OK**.
 
    ![Modelo de aplicativo .NET Core](../media/overview-new-project-dialog.png)
 
@@ -197,7 +197,7 @@ Vamos nos aprofundar e criar um programa simples.
 
    ![Menu Depurar > Iniciar Sem Depuração](../media/overview-start-without-debugging.png)
 
-   O Visual Studio compila o aplicativo e uma janela do console é aberta com a mensagem **Olá, Mundo!**. Agora você tem um aplicativo em execução.
+   O Visual Studio compila o aplicativo e uma janela do console é aberta com a mensagem **Olá, Mundo!** . Agora você tem um aplicativo em execução.
 
    ![Janela do console](../media/overview-console-window.png)
 
@@ -266,7 +266,7 @@ Vamos nos aprofundar e criar um programa simples.
 
    ![Menu Depurar > Iniciar Sem Depuração](../media/overview-start-without-debugging.png)
 
-   O Visual Studio compila o aplicativo e uma janela do console é aberta com a mensagem **Olá, Mundo!**. Agora você tem um aplicativo em execução.
+   O Visual Studio compila o aplicativo e uma janela do console é aberta com a mensagem **Olá, Mundo!** . Agora você tem um aplicativo em execução.
 
    ![Janela do console](../media/vs-2019/overview-console-window.png)
 
@@ -313,7 +313,7 @@ Primeiro, vamos renomear a variável `name`:
 
 ::: moniker range="vs-2017"
 
-3. Selecione o ícone de lâmpada para mostrar as [Ações Rápidas](../../ide/quick-actions.md) disponíveis. Selecione **Renomear 'name' como 'username'**.
+3. Selecione o ícone de lâmpada para mostrar as [Ações Rápidas](../../ide/quick-actions.md) disponíveis. Selecione **Renomear 'name' como 'username'** .
 
    ![Ação de renomeação no Visual Studio](../media/rename-quick-action.png)
 
@@ -325,7 +325,7 @@ Primeiro, vamos renomear a variável `name`:
 
 ::: moniker range=">=vs-2019"
 
-3. Selecione o ícone de lâmpada para mostrar as [Ações Rápidas](../../ide/quick-actions.md) disponíveis. Selecione **Renomear 'name' como 'username'**.
+3. Selecione o ícone de lâmpada para mostrar as [Ações Rápidas](../../ide/quick-actions.md) disponíveis. Selecione **Renomear 'name' como 'username'** .
 
    ![Ação de renomeação no Visual Studio](../media/vs-2019/rename-quick-action.png)
 
@@ -339,7 +339,7 @@ Primeiro, vamos renomear a variável `name`:
 
    ![O IntelliSense lista membros no Visual Studio](../media/intellisense-list-members.png)
 
-5. Selecione o membro chamado **Now**, que é uma propriedade da classe, clicando duas vezes nele ou pressionando **Tab**. Complete a linha de código adicionando um ponto-e-vírgula ao final.
+5. Selecione o membro chamado **Now**, que é uma propriedade da classe, clicando duas vezes nele ou pressionando **Tab**. Conclua a linha de código adicionando um ponto-e-vírgula ao final.
 
 6. Abaixo disso, digite ou cole as seguintes linhas de código:
 

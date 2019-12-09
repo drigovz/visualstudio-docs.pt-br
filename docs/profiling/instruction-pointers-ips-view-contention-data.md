@@ -8,14 +8,15 @@ ms.assetid: f5e49c24-d4cf-4f87-977d-37e3223d1196
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: d41f48594e50e9d5ae0c6f67aabab673a9f112a3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: f37fb451238ec7ce6f48d8a4d3b91efa9ce04db7
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62995395"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74774306"
 ---
 # <a name="instruction-pointers-ips-view---contention-data"></a>Exibição de IPs (ponteiros de instrução) – dados de contenção
 O modo de exibição de IPs dos dados de contenção lista dados para as instruções de assembly cuja execução foi bloqueada na execução da criação de perfil.
@@ -43,7 +44,7 @@ O modo de exibição de IPs dos dados de contenção lista dados para as instru�
 |**Final da Linha de Origem**|O número de linha no arquivo de origem em que esta instrução termina.|
 
 ## <a name="see-also"></a>Consulte também
-- [Como: Personalizar as colunas da exibição de relatório](../profiling/how-to-customize-report-view-columns.md)
+- [Como: Personalizar colunas de exibição de relatório](../profiling/how-to-customize-report-view-columns.md)
 - [Exibição de IPs (ponteiros de instrução)](../profiling/instruction-pointers-ips-view.md)
 - [Exibição de IPs (ponteiros de instrução) – amostragem](../profiling/instruction-pointers-ips-view-dotnet-memory-sampling-data.md)
 - [Exibição de IPs (ponteiros de instrução)](../profiling/instruction-pointers-ips-view-sampling-data.md)

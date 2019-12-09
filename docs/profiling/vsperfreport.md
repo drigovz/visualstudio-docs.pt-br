@@ -13,14 +13,15 @@ ms.assetid: dbfd8d91-4430-4b82-81b9-97ac61412a6c
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: eb1e20b019e4d32aff1ed71d3e4483a1bd9bd143
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 282bb801625429d639e625a0a5edb02a8fb4da25
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62581257"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74777979"
 ---
 # <a name="vsperfreport"></a>VSPerfReport
 Ferramenta de linha de comando VSPerfReport é usada para criar relatórios usando [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ferramentas de criação de perfil de arquivos de dados de criação de perfil. O formato de relatório padrão é um arquivo .*csv*.
@@ -42,7 +43,7 @@ VSPerfReport [/U] /diff vspfilename1 vspfilename2 [/options]
  `vspfilename1 and vspfilename2` precisam ser arquivos .*vsp* ou .*vsps* válidos.
 
 ## <a name="symbol-files"></a>Arquivos de símbolo
- Para exibir informações de símbolo como nomes de função e números de linha, o VSPerfReport necessita de acesso aos arquivos de símbolo (.PDB) dos componentes analisados e aos arquivos de símbolo do Windows. Para obter mais informações, confira [Como: Especificar locais de arquivo de símbolo da linha de comando](../profiling/how-to-specify-symbol-file-locations-from-the-command-line.md).
+ Para exibir informações de símbolo como nomes de função e números de linha, o VSPerfReport necessita de acesso aos arquivos de símbolo (.PDB) dos componentes analisados e aos arquivos de símbolo do Windows. Para saber mais, confira [Como especificar locais de arquivos de símbolo na linha de comando](../profiling/how-to-specify-symbol-file-locations-from-the-command-line.md).
 
 ## <a name="general-report-options"></a>Opções de relatório geral
  A tabela a seguir descreve o opções e as opções que selecionar os dados a serem relatados de formatação do relatório geral.
@@ -50,7 +51,7 @@ VSPerfReport [/U] /diff vspfilename1 vspfilename2 [/options]
 |Opções|Descrição|
 |-------------|-----------------|
 |**U**|A saída de relatório e a saída redirecionada do console são gravadas como Unicode. Deve ser a primeira opção especificada.|
-|**Resumo:**[*types*]|Cria um ou mais tipos de relatórios.<br /><br /> -   `All` - todos os tipos de relatório gerados.<br />-   `CallerCallee` - relações pai/filho entre funções.<br />-   `Function` - funções chamadas.<br />-   `CallTree` - hierarquia de funções chamadas.<br />-   `Counter` - todas as marcações juntas com os valores de contador de desempenho do Windows.<br />-   `Ip` - instruções perfiladas.<br />-   `Life` - tempo de vida dos objetos alocados (disponíveis quando os dados de alocação foram coletados).<br />-   `Line` dados de perfil de linha de código-fonte.<br />-   `Header` - o relatório contém informações de cabeçalho do arquivo.<br />-   `Mark` todas as marcas.<br />-   `Module` - módulos perfilados.<br />-   `Process` - processos perfilados.<br />-   `Thread` - segmentos perfilados.<br />-   `Type` - tipos alocados.<br />-   `Contention` - contenções de recurso.<br />-   `RuleWarnings` - problemas de regra de desempenho<br />-   `ETW` - todos os eventos de Rastreamento de Eventos para Windows (ETW) coletados na execução da criação de perfil. O arquivo de dados .etl deve estar em seu local original ou no diretório que contém o arquivo .vsp ou .vsps.|
+|**Resumo:** [*types*]|Cria um ou mais tipos de relatórios.<br /><br /> -   `All` - todos os tipos de relatório gerados.<br />-   `CallerCallee` - relações pai/filho entre funções.<br />-   `Function` - funções chamadas.<br />-   `CallTree` - hierarquia de funções chamadas.<br />-   `Counter` - todas as marcações juntas com os valores de contador de desempenho do Windows.<br />-   `Ip` - instruções perfiladas.<br />-   `Life` - tempo de vida dos objetos alocados (disponíveis quando os dados de alocação foram coletados).<br />-   `Line` dados de perfil de linha de código-fonte.<br />-   `Header` - o relatório contém informações de cabeçalho do arquivo.<br />-   `Mark` todas as marcas.<br />-   `Module` - módulos perfilados.<br />-   `Process` - processos perfilados.<br />-   `Thread` - segmentos perfilados.<br />-   `Type` - tipos alocados.<br />-   `Contention` - contenções de recurso.<br />-   `RuleWarnings` - problemas de regra de desempenho<br />-   `ETW` - todos os eventos de Rastreamento de Eventos para Windows (ETW) coletados na execução da criação de perfil. O arquivo de dados .etl deve estar em seu local original ou no diretório que contém o arquivo .vsp ou .vsps.|
 |**Xml**|Relatório de saída no formato XML.|
 |**CallTrace**|Cria uma lista de entradas e saídas da função, eventos ETW e marcas.|
 |**ClearPackedSymbols**|Remove símbolos inseridos anteriormente de um arquivo de dados do criador de perfil. Execute esse comando antes de executar PackSymbols uma segunda vez.|
@@ -69,14 +70,14 @@ VSPerfReport [/U] /diff vspfilename1 vspfilename2 [/options]
 
 |Opções|Descrição|
 |-------------|-----------------|
-|**JustMyCode**[**:**[`caller`][,`callee`]]|Mostrar somente chamadas de função de aplicativo do usuário; ocultar chamadas do sistema.<br /><br /> - Sem parâmetros - ocultar todas as funções do sistema.<br />-   `caller` - mostrar um nível de funções do sistema que chamam funções de aplicativo.<br />-   `callee` - mostrar um nível de funções do sistema que são chamadas por funções de aplicativo do usuário.|
-|**StartTime:**[*value*]|Mostrar apenas os dados coletados depois do valor (em milissegundos).|
-|**EndTime:**[*value*]|Mostrar apenas os dados coletados antes do valor (em milissegundos).|
+|**JustMyCode**[ **:** [`caller`][,`callee`]]|Mostrar somente chamadas de função de aplicativo do usuário; ocultar chamadas do sistema.<br /><br /> - Sem parâmetros - ocultar todas as funções do sistema.<br />-   `caller` - mostrar um nível de funções do sistema que chamam funções de aplicativo.<br />-   `callee` - mostrar um nível de funções do sistema que são chamadas por funções de aplicativo do usuário.|
+|**StartTime:** [*value*]|Mostrar somente dados coletados após o valor (em milésimos de segundos.)|
+|**EndTime:** [*value*]|Mostrar apenas dados coletados antes do valor (em milésimos de segundos.)|
 |**FilterFile:** `VSPFFile`|Especifica o local de um arquivo de filtro que foi gerado a partir da janela do relatório de desempenho do Visual Studio.|
-|**MsFilter:**[*starttime,duration*]|Mostrar apenas os dados de `starttime` até a duração de `duration` (em milissegundos).|
-|**Process:**[*pid*]|Mostrar somente os dados do processo especificado.|
-|**Thread:**[*threadid*]|Mostra apenas os dados do thread especificado.|
-|**Thread:**[*threadid,processid*]|Mostra apenas os dados do thread especificado associado ao processo especificado.|
+|**MsFilter:** [*starttime,duration*]|Mostrar somente os dados de `starttime` até a duração de `duration` (em milésimos de segundos).|
+|**Process:** [*pid*]|Mostrar somente os dados do processo especificado.|
+|**Thread:** [*threadid*]|Mostrar somente os dados do thread especificado.|
+|**Thread:** [*threadid,processid*]|Mostra apenas os dados do thread especificado associado ao processo especificado.|
 
 ## <a name="difference-report-options"></a>Opções de relatório de diferenças
  A tabela a seguir descreve as opções para comparar arquivos de relatório.
@@ -84,9 +85,9 @@ VSPerfReport [/U] /diff vspfilename1 vspfilename2 [/options]
 |Opções|Descrição|
 |-------------|-----------------|
 |**Diff**  `vspfile1 vspfile2`|Compara dois arquivos de relatório (.*vsp* ou .*vsps*). As opções de resumo serão ignoradas usando a opção diff.|
-|**Diff:**[*value*]|A diferença entre dois valores será desconsiderada abaixo desse valor de limite. Além disso, os novos dados com valores sob esse limite não serão exibidos.|
-|**DiffTable:**[*tablename*]|Use essa tabela específica para comparar arquivos. O padrão é a tabela de funções.|
-|**DiffColumn:**[*columnname*]|Use estes valores de comparação de colunas específicos. O padrão é a coluna de porcentagem de amostras exclusivas.|
+|**Diff:** [*value*]|A diferença entre dois valores será desconsiderada abaixo desse valor de limite. Além disso, os novos dados com valores sob esse limite não serão exibidos.|
+|**DiffTable:** [*tablename*]|Use essa tabela específica para comparar arquivos. O padrão é a tabela de funções.|
+|**DiffColumn:** [*columnname*]|Use estes valores de comparação de colunas específicos. O padrão é a coluna de porcentagem de amostras exclusivas.|
 |**QueryDiffTables**|Liste as tabelas e as colunas válidas para os dois arquivos de relatório fornecidos.|
 
 ## <a name="see-also"></a>Consulte também

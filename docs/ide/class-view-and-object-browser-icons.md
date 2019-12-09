@@ -11,17 +11,17 @@ helpviewer_keywords:
 - icons, IntelliSense
 - symbols, Object Browser icons
 - Object Browser, icons in Class View
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9814b03d0a8cd8733c9fd48b4e49c2cf306a8a44
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 589ec840b49d250591e2c477989d4422273cac31
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62976183"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647632"
 ---
 # <a name="class-view-and-object-browser-icons"></a>Ícones do Pesquisador de Objetos e do Modo de Exibição de Classe
 
@@ -29,9 +29,9 @@ ms.locfileid: "62976183"
 
 |Ícone|Descrição|Ícone|Descrição|
 |----------|-----------------|----------|-----------------|
-|![Símbolo de namespace](../ide/media/vxnamespace_icon.gif)|Namespace|![Símbolo de declaração](../ide/media/vxmethod_icon.gif)|Método ou função|
-|![Ícone de classe](../ide/media/vxclass_icon.gif)|Classe|![Símbolo de operador](../ide/media/vxoperator_icon.gif)|Operador|
-|![Símbolo de interface pirulito](../ide/media/vxinterface_icon.gif)|Interface|![Símbolo de propriedade](../ide/media/vxproperty_icon.gif)|Propriedade|
+|![Símbolo de namespace](../ide/media/vxnamespace_icon.gif)|espaço de nome|![Símbolo de declaração](../ide/media/vxmethod_icon.gif)|Método ou função|
+|![Ícone de classe](../ide/media/vxclass_icon.gif)|Class|![Símbolo de operador](../ide/media/vxoperator_icon.gif)|Operador|
+|![Símbolo de interface pirulito](../ide/media/vxinterface_icon.gif)|Interface|![Símbolo de propriedade](../ide/media/vxproperty_icon.gif)|propriedade|
 |![Símbolo de estrutura](../ide/media/vxstruct_icon.gif)|Estrutura|![Ícone de campo](../ide/media/vxfield_icon.gif)|Campo ou variável|
 |![Símbolo de união](../ide/media/vxunion_icon.gif)|União|![Símbolo de evento](../ide/media/vxevent_icon.gif)|evento|
 |![Símbolo de enumeração](../ide/media/vxenum_icon.gif)|Enum|![Ícone constante](../ide/media/vxconstant_icon.gif)|Constante|

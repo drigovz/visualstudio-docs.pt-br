@@ -2,20 +2,20 @@
 title: Isolando código em teste com falsificação da Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-author: gewarren
+author: jillre
 dev_langs:
 - VB
 - CSharp
-ms.openlocfilehash: 89d072c7f9643c5991ec098f87d7ec35a295bbe1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: bf00c35868ac5b4df34f2453f046232a91387085
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62971298"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653109"
 ---
 # <a name="isolate-code-under-test-with-microsoft-fakes"></a>Isolar o código em teste com elementos fictícios da Microsoft
 
@@ -29,7 +29,7 @@ O Fakes vem em duas versões:
 
 ![As falsificações substituem outros componentes](../test/media/fakes-2.png)
 
-**Requisitos**
+**Requirements**
 
 - Visual Studio Enterprise
 - Um projeto do .NET Framework
@@ -69,9 +69,7 @@ Para obter uma descrição mais detalhada, confira [Usar stubs para isolar parte
      Em vez disso, defina uma interface que possa ser implementada pelo outro componente, e que também possa ser implementada por um stub para fins de teste:
 
     ```csharp
-    public int GetContosoPrice(IStockFeed feed)
-    { return feed.GetSharePrice("COOO"); }
-
+    public int GetContosoPrice(IStockFeed feed) => feed.GetSharePrice("COOO");
     ```
 
     ```vb
@@ -247,8 +245,8 @@ System.IO.Fakes.ShimFile.AllInstances.ReadToEnd = ...
 Você também pode criar shims para instâncias específicas, para construtores e propriedades. Para obter mais informações, confira [Usar shims para isolar o aplicativo de outros assemblies para teste de unidade](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md).
 
 ## <a name="in-this-section"></a>Nesta seção
- [Usar stubs para isolar partes do aplicativo para teste de unidade](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md)
+[Usar stubs para isolar partes do aplicativo para teste de unidade](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md)
 
- [Usar shims para isolar seu aplicativo de outros assemblies para teste de unidade](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md)
+[Usar shims para isolar seu aplicativo de outros assemblies para teste de unidade](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md)
 
- [Convenções de nomenclatura, geração de código e compilação no Microsoft Fakes](../test/code-generation-compilation-and-naming-conventions-in-microsoft-fakes.md)
+[Convenções de nomenclatura, geração de código e compilação no Microsoft Fakes](../test/code-generation-compilation-and-naming-conventions-in-microsoft-fakes.md)

@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9de3c3aed6b40ace1b841d2dac5c175963b1fecb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: b9f3889cf1d9088f39b4efc4e4d01197ffaaaa77
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62842253"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72912065"
 ---
 # <a name="msbuild-reference"></a>Referência do MSBuild
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] é o sistema de build para [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Os links a seguir levam a tópicos que contêm informações de referência [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].
@@ -83,9 +83,9 @@ ms.locfileid: "62842253"
 ## <a name="see-also"></a>Consulte também
 
 - [Visão geral do MSBuild](../msbuild/msbuild.md)
-- [Microsoft.Build.Evaluation](https://docs.microsoft.com/dotnet/api/microsoft.build.evaluation)
-- [Microsoft.Build.Execution](https://docs.microsoft.com/dotnet/api/microsoft.build.execution)
-- [Microsoft.Build.Framework](https://docs.microsoft.com/dotnet/api/microsoft.build.framework)
-- [Microsoft.Build.Logging](https://docs.microsoft.com/dotnet/api/microsoft.build.logging)
-- [Microsoft.Build.Tasks](https://docs.microsoft.com/dotnet/api/microsoft.build.tasks)
-- [Microsoft.Build.Utilities](https://docs.microsoft.com/dotnet/api/microsoft.build.utilities)
+- [Microsoft.Build.Evaluation](/dotnet/api/microsoft.build.evaluation)
+- [Microsoft.Build.Execution](/dotnet/api/microsoft.build.execution)
+- [Microsoft.Build.Framework](/dotnet/api/microsoft.build.framework)
+- [Microsoft.Build.Logging](/dotnet/api/microsoft.build.logging)
+- [Microsoft.Build.Tasks](/dotnet/api/microsoft.build.tasks)
+- [Microsoft.Build.Utilities](/dotnet/api/microsoft.build.utilities)

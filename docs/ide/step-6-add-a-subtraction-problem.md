@@ -1,19 +1,24 @@
 ---
 title: 'Etapa 6: Adicionar um problema de subtração'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: tutorial
+ms.prod: visual-studio-windows
+ms.technology: vs-ide-general
+dev_langs:
+- CSharp
+- VB
 ms.assetid: 59204ef9-24bd-4f81-b85f-e3168e518a3e
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6eb94423150a8a3a43183020ee87d52494355aed
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 4789248a129bcd41452af1184418f9f59ede7595
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62996658"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72562572"
 ---
 # <a name="step-6-add-a-subtraction-problem"></a>Etapa 6: Adicionar um problema de subtração
 Na sexta parte deste tutorial, você adicionará um problema de subtração e aprenderá a executar as seguintes tarefas:
@@ -26,12 +31,19 @@ Na sexta parte deste tutorial, você adicionará um problema de subtração e ap
 
 - Atualize o manipulador de eventos de escala do temporizador <xref:System.Windows.Forms.Timer.Tick> de modo que ele preencha a resposta correta quando o tempo de execução se esgotar.
 
+> [!NOTE]
+> Esse tópico faz parte de uma série de tutoriais sobre conceitos de codificação básica.
+> - Para obter uma visão geral do tutorial, confira [Tutorial 2: criar um teste de matemática temporizado](../ide/tutorial-2-create-a-timed-math-quiz.md).
+> - Para baixar uma versão completa do código, consulte [exemplo de tutorial de teste de matemática completo](https://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c).
+
 ## <a name="to-add-a-subtraction-problem"></a>Para adicionar um problema de subtração
 
 1. Adicione duas variáveis inteiras para o problema de subtração ao formulário, entre as variáveis inteiras para o problema de adição e o timer. O código deve se parecer com o seguinte.
 
      [!code-vb[VbExpressTutorial3Step5_6#12](../ide/codesnippet/VisualBasic/step-6-add-a-subtraction-problem_1.vb)]
      [!code-csharp[VbExpressTutorial3Step5_6#12](../ide/codesnippet/CSharp/step-6-add-a-subtraction-problem_1.cs)]
+
+     [!INCLUDE [devlang-control-csharp-vb](./includes/devlang-control-csharp-vb.md)]
 
      Os nomes das novas variáveis de inteiro — **minuendo** e **subtraendo** — não são termos de programação. São os nomes tradicionais em aritmética para o número sendo subtraído (o subtraendo) e o número de que o subtraendo está sendo subtraído (o minuendo). A diferença é o minuendo menos o subtraendo. É possível usar outros nomes, pois seu programa não exige nomes específicos para variáveis, controles, componentes ou métodos. Você deve seguir as regras como não iniciar nomes com os dígitos, mas geralmente é possível usar nomes como x1, x2, x3 e x4. No entanto, os nomes genéricos dificultam a leitura do código e tornam os problemas quase impossíveis de rastrear. Para manter nomes de variável exclusivas e úteis, você usará os nomes tradicionais para multiplicação (multiplicando x multiplicador = produto) e a divisão (dividendo ÷ divisor = quociente) posteriormente neste tutorial.
 
@@ -49,12 +61,13 @@ Na sexta parte deste tutorial, você adicionará um problema de subtração e ap
 
      Você pode chamar o método de `Next()` da classe Random, que você nomeou como "randomizer" anteriormente neste tutorial, de várias maneiras. Os métodos que você pode chamar em mais de uma maneira são conhecidos como sobrecarregados, e você pode usar o IntelliSense para explorá-los. Procure novamente na dica de ferramenta da janela do IntelliSense pelo método de `Next()`.
 
-     ![Dica de ferramenta de janela do IntelliSense](../ide/media/express_overloads.png)
-Dica de ferramenta de janela do**IntelliSense**
+     ![IntelliSense dica de ferramenta de janela ](../ide/media/express_overloads.png)<br/>
+*Dica de ferramenta* do IntelliSense da janela
 
-     A dica de ferramenta exibe **(+ 2 sobrecarga(s))**, o que significa que você pode chamar o método `Next()` de outras duas maneiras. As sobrecargas contêm números ou tipos diferentes de argumentos, para que funcionem ligeiramente diferentes um do outro. Por exemplo, um método pode levar um único argumento inteiro e uma de suas sobrecargas pode levar um inteiro e uma cadeia de caracteres. Você escolhe a sobrecarga correta com base no que você deseja fazer. Quando você adiciona código ao método de `StartTheQuiz()`, mais informações aparecem na janela do IntelliSense para você inserir `randomizer.Next(`. Para percorrer as sobrecargas, escolha as teclas de **seta para cima** e **seta para baixo** como mostrado na ilustração a seguir:
+     A dica de ferramenta exibe **(+ 2 sobrecarga(s))** , o que significa que você pode chamar o método `Next()` de outras duas maneiras. As sobrecargas contêm números ou tipos diferentes de argumentos, para que funcionem ligeiramente diferentes um do outro. Por exemplo, um método pode levar um único argumento inteiro e uma de suas sobrecargas pode levar um inteiro e uma cadeia de caracteres. Você escolhe a sobrecarga correta com base no que você deseja fazer. Quando você adiciona código ao método de `StartTheQuiz()`, mais informações aparecem na janela do IntelliSense para você inserir `randomizer.Next(`. Para percorrer as sobrecargas, escolha as teclas de **seta para cima** e **seta para baixo** como mostrado na ilustração a seguir:
 
-     ![Sobrecarga para o método Next&#40;&#41; no IntelliSense](../ide/media/express_nextoverload.png) Sobrecarga para o método **Next()** no **IntelliSense**
+     ![Sobrecarga para o método Next&#40;&#41; no IntelliSense](../ide/media/express_nextoverload.png)<br/>
+*Sobrecarga para* o método ***Next ()*** *no* ***IntelliSense***
 
      Nesse caso, você deseja escolher a última sobrecarga, porque você pode especificar valores mínimo e máximo.
 
@@ -63,7 +76,7 @@ Dica de ferramenta de janela do**IntelliSense**
      [!code-vb[VbExpressTutorial3Step5_6#14](../ide/codesnippet/VisualBasic/step-6-add-a-subtraction-problem_4.vb)]
      [!code-csharp[VbExpressTutorial3Step5_6#14](../ide/codesnippet/CSharp/step-6-add-a-subtraction-problem_4.cs)]
 
-     No Visual C#, `&&` é o operador `logical and`. No Visual Basic, o operador equivalente é `AndAlso`. Esses operadores indicam "Se a soma da addend1 e addend2 for igual ao valor da soma NumericUpDown e o minuendo menos o subtraendo for igual ao valor da diferença NumericUpDown". O `CheckTheAnswer()` método retorna `true` somente se as respostas para os problemas de adição e subtração estiverem corretas.
+     No C#, `&&` é o operador de `logical and`. No Visual Basic, o operador equivalente é `AndAlso`. Esses operadores indicam "Se a soma da addend1 e addend2 for igual ao valor da soma NumericUpDown e o minuendo menos o subtraendo for igual ao valor da diferença NumericUpDown". O `CheckTheAnswer()` método retorna `true` somente se as respostas para os problemas de adição e subtração estiverem corretas.
 
 4. Substitua a parte mais recente do manipulador de eventos de escala do timer pelo código a seguir, de modo que preencha a resposta correta quando o tempo de execução se esgotar.
 
@@ -74,11 +87,11 @@ Dica de ferramenta de janela do**IntelliSense**
 
      Seu programa inclui um problema de subtração, como mostra a ilustração a seguir:
 
-     ![Teste de matemática com problema de subtração](../ide/media/express_addsubtract.png)
-**Tste de matemática** com problema de subtração
+     ![Teste de matemática com problema de subtração](../ide/media/express_addsubtract.png)<br/>
+***Teste de matemática*** *com problema de subtração*
 
 ## <a name="to-continue-or-review"></a>Para continuar ou revisar
 
-- Para ir para a próxima etapa do tutorial, confira [Etapa 7: Adicionar problemas de multiplicação e divisão](../ide/step-7-add-multiplication-and-division-problems.md).
+- Para ir para a próxima etapa do tutorial, consulte **[etapa 7: Adicionar problemas de multiplicação e divisão](../ide/step-7-add-multiplication-and-division-problems.md)** .
 
-- Para retornar à etapa anterior do tutorial, confira [Etapa 5: Adicionar manipuladores de eventos de inserção aos controles NumericUpDown](../ide/step-5-add-enter-event-handlers-for-the-numericupdown-controls.md).
+- Para retornar à etapa anterior do tutorial, veja [Etapa 5: Adicionar manipuladores de eventos Enter para os controles NumericUpDown](../ide/step-5-add-enter-event-handlers-for-the-numericupdown-controls.md).

@@ -11,12 +11,12 @@ ms.assetid: 497e479b-add8-4644-870a-917f15306b97
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 516deb626bd8c6056612fcc481b9d530da504b9d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 4693654e12dc37209cb92e3e2ba95bde8bd13e77
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437265"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687674"
 ---
 # <a name="windows-installer-basics"></a>Noções básicas do Windows Installer
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -47,19 +47,19 @@ O Windows Installer instala e desinstala aplicativos ou produtos de software no 
  Arquivos, chaves do registro, atalhos, ou e assim por diante que pode ser instalado em um computador. Esses recursos são agrupados logicamente em componentes do Windows Installer.  
   
  Component (WIC) do Windows Installer  
- A unidade básica de instalação que representa um agrupamento lógico de recursos relacionados que são instalados e desinstalados como uma unidade. Componentes do Windows Installer são identificados por uma ID exclusiva do componente ou um GUID. Além disso, o Windows Installer mantém sua referência de contagem no nível do WIC. Para obter flexibilidade máxima do controle de versão, inclua não mais de um recurso principal, tal como uma DLL, em um determinado WIC. Observe que, depois de identificar e preencher um WIC, dê a ele um GUID e implantá-lo, você não pode alterar sua composição. Para obter mais informações, consulte [organizando aplicativos em componentes](http://msdn.microsoft.com/library/aa370561.aspx).  
+ A unidade básica de instalação que representa um agrupamento lógico de recursos relacionados que são instalados e desinstalados como uma unidade. Componentes do Windows Installer são identificados por uma ID exclusiva do componente ou um GUID. Além disso, o Windows Installer mantém sua referência de contagem no nível do WIC. Para obter flexibilidade máxima do controle de versão, inclua não mais de um recurso principal, tal como uma DLL, em um determinado WIC. Observe que, depois de identificar e preencher um WIC, dê a ele um GUID e implantá-lo, você não pode alterar sua composição. Para obter mais informações, consulte [organizando aplicativos em componentes](https://msdn.microsoft.com/library/aa370561.aspx).  
   
  Pacote (pacote de redistribuição)  
  Uma unidade de implantação que consiste em um arquivo. msi e arquivos de origem externa à qual esse arquivo pode apontar. Um pacote contém todas as informações que o Windows Installer precisa para executar a interface do usuário e para instalar ou desinstalar o aplicativo.  
   
  arquivo. msi  
- Um arquivo de armazenamento estruturado em COM que contém as instruções e os dados necessários para instalar um aplicativo. Cada pacote contém pelo menos um arquivo. msi. O arquivo. msi contém o banco de dados do instalador, um fluxo de informações de resumo e, possivelmente, uma ou mais transformações e os arquivos de origem interna. Arquivos a serem instalados podem ser compactados em um gabinete e armazenados em um fluxo no arquivo. msi ou armazenados, compactados ou descompactados, fora do arquivo. msi na mídia de origem. Para obter mais informações, consulte [extensões de arquivos do Windows Installer](http://msdn.microsoft.com/library/aa372842\(VS.85\).aspx).  
+ Um arquivo de armazenamento estruturado em COM que contém as instruções e os dados necessários para instalar um aplicativo. Cada pacote contém pelo menos um arquivo. msi. O arquivo. msi contém o banco de dados do instalador, um fluxo de informações de resumo e, possivelmente, uma ou mais transformações e os arquivos de origem interna. Arquivos a serem instalados podem ser compactados em um gabinete e armazenados em um fluxo no arquivo. msi ou armazenados, compactados ou descompactados, fora do arquivo. msi na mídia de origem. Para obter mais informações, consulte [extensões de arquivos do Windows Installer](https://msdn.microsoft.com/library/aa372842\(VS.85\).aspx).  
   
 ## <a name="windows-installer-rules-enforcement"></a>Imposição de regras do Windows Installer  
  Dois conjuntos de regras determinam a implantação de recursos por meio de componentes do seu programa de instalação. Um conjunto de regras é mantido pelo instalador do Windows em si, enquanto você deve aplicar o segundo conjunto como autor da instalação.  
   
 > [!NOTE]
-> A imposição de regras do Windows Installer ocorre somente se você executar uma validação de seu arquivo. msi. No entanto, são evitaram para tratar essas regras como as práticas recomendadas. Para obter mais informações, consulte [validação de um banco de dados de instalação](http://msdn.microsoft.com/library/aa372477\(VS.85\).aspx) e [validação de pacote](http://msdn.microsoft.com/library/aa370569\(VS.85\).aspx).  
+> A imposição de regras do Windows Installer ocorre somente se você executar uma validação de seu arquivo. msi. No entanto, são evitaram para tratar essas regras como as práticas recomendadas. Para obter mais informações, consulte [validação de um banco de dados de instalação](https://msdn.microsoft.com/library/aa372477\(VS.85\).aspx) e [validação de pacote](https://msdn.microsoft.com/library/aa370569\(VS.85\).aspx).  
   
 #### <a name="installer-enforced-rules"></a>Regras aplicadas pelo instalador  
   
@@ -69,9 +69,9 @@ O Windows Installer instala e desinstala aplicativos ou produtos de software no 
   
 #### <a name="component-provider-responsibilities"></a>Responsabilidades do provedor de componente  
   
-- Quaisquer dois recursos que podem ser enviado separadamente em versões subsequentes devem existir em componentes separados. Recursos devem ser agrupados no mesmo componente somente quando você tiver certeza de que esses recursos nunca serão fornecida separadamente. Na verdade, é recomendável que todos os principais recursos (por exemplo, DLLs) sempre existe no WICs separados. Para obter mais informações, consulte [definindo componentes do instalador](http://msdn.microsoft.com/library/aa368269\(VS.85\).aspx).  
+- Quaisquer dois recursos que podem ser enviado separadamente em versões subsequentes devem existir em componentes separados. Recursos devem ser agrupados no mesmo componente somente quando você tiver certeza de que esses recursos nunca serão fornecida separadamente. Na verdade, é recomendável que todos os principais recursos (por exemplo, DLLs) sempre existe no WICs separados. Para obter mais informações, consulte [definindo componentes do instalador](https://msdn.microsoft.com/library/aa368269\(VS.85\).aspx).  
   
 - Nenhum recurso com versão nunca deve enviar em mais de um WIC.  
   
 ## <a name="see-also"></a>Consulte também  
- [O que acontece se as regras de componente são interrompidas?](http://msdn.microsoft.com/library/aa372795\(VS.85\).aspx)
+ [O que acontece se as regras de componente são interrompidas?](https://msdn.microsoft.com/library/aa372795\(VS.85\).aspx)

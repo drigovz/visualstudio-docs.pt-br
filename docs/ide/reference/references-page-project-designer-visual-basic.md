@@ -10,21 +10,21 @@ helpviewer_keywords:
 - References page in Project Designer
 - Project Designer, References page
 ms.assetid: 5a47c595-e084-401c-86e1-74e0bf74fd86
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 88bd7571179d7841cc239052b7bf9f410761174c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 2ca3d54a7e2643baebe44e0f2756d6ae65eb228d
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62956447"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747794"
 ---
 # <a name="references-page-project-designer-visual-basic"></a>Página Referências, Designer de Projeto (Visual Basic)
 
-Use a página **Referências** do **Designer de Projeto** para gerenciar referências, referências Web e namespaces importados em seu projeto. Os projetos podem conter referências a componentes COM, serviços Web XML, assemblies ou bibliotecas de classes do .NET Framework ou outras bibliotecas de classes. Para obter mais informações sobre o uso de referências, consulte [Gerenciando referências em um projeto](../../ide/managing-references-in-a-project.md).
+Use a página **Referências** do **Designer de Projeto** para gerenciar referências, referências Web e namespaces importados em seu projeto. Os projetos podem conter referências a componentes COM, serviços Web XML, assemblies ou bibliotecas .NET ou outras bibliotecas de classes. Para obter mais informações sobre o uso de referências, consulte [Gerenciando referências em um projeto](../../ide/managing-references-in-a-project.md).
 
 Para acessar a página **Referências**, escolha um nó de projeto (não o nó **Solução**) no **Gerenciador de Soluções**. Em seguida, escolha **Projeto**, **Propriedades** na barra de menus. Quando o Designer de Projeto for exibido, clique na guia **Referências**.
 
@@ -46,41 +46,41 @@ Clique neste botão para acessar a caixa de diálogo **Caminhos de Referência**
 
  **Referências**
 
- Esta lista mostra todas as referências no projeto, utilizadas ou não utilizadas.
+Esta lista mostra todas as referências no projeto, utilizadas ou não utilizadas.
 
  **Adicionar**
 
- Clique neste botão para adicionar uma referência ou uma referência Web à lista **Referências**.
+Clique neste botão para adicionar uma referência ou uma referência Web à lista **Referências**.
 
- Escolha **Referência** para adicionar uma referência ao seu projeto usando a caixa de diálogo Adicionar Referência.
+Escolha **Referência** para adicionar uma referência ao seu projeto usando a caixa de diálogo Adicionar Referência.
 
- Escolha **Referência Web** para adicionar uma referência Web ao seu projeto usando a caixa de diálogo **Adicionar Referência Web**.
+Escolha **Referência Web** para adicionar uma referência Web ao seu projeto usando a caixa de diálogo **Adicionar Referência Web**.
 
  **Removerr**
 
- Selecione uma ou mais referências na lista **Referências** e clique nesse botão para excluí-las.
+Selecione uma ou mais referências na lista **Referências** e clique nesse botão para excluí-las.
 
  **Atualizar Referência Web**
 
- Selecione uma referência Web na lista **Referências** e clique nesse botão para atualizá-la.
+Selecione uma referência Web na lista **Referências** e clique nesse botão para atualizá-la.
 
  **Namespaces importados**
 
- Você pode digitar seu próprio namespace nesta caixa e clicar em **Adicionar Importação de Usuário** para adicioná-lo à lista de namespaces.
+Você pode digitar seu próprio namespace nesta caixa e clicar em **Adicionar Importação de Usuário** para adicioná-lo à lista de namespaces.
 
- Você pode criar aliases para namespaces importados pelo usuário. Para fazer isso, digite o alias e o namespace no formato *alias*=*namespace*. Isso é útil se você estiver usando namespaces longos, por exemplo: `Http= MyOrg.ObjectLib.Internet.WebRequestMethods.Http`.
+Você pode criar aliases para namespaces importados pelo usuário. Para fazer isso, digite o alias e o namespace no formato *alias*=*namespace*. Isso é útil se você estiver usando namespaces longos, por exemplo: `Http= MyOrg.ObjectLib.Internet.WebRequestMethods.Http`.
 
  **Adicionar Importação de Usuário**
 
- Clique neste botão para adicionar o namespace especificado na caixa **Namespaces importados** à lista de namespaces importados. O botão fica ativo somente se o namespace especificado ainda não estiver na lista.
+Clique neste botão para adicionar o namespace especificado na caixa **Namespaces importados** à lista de namespaces importados. O botão fica ativo somente se o namespace especificado ainda não estiver na lista.
 
  **Lista de namespaces**
 
- Esta lista mostra todos os namespaces disponíveis. As caixas de seleção dos namespaces incluídos em seu projeto são selecionadas.
+Esta lista mostra todos os namespaces disponíveis. As caixas de seleção dos namespaces incluídos em seu projeto são selecionadas.
 
  **Atualizar Importação de Usuário**
 
- Selecione um namespace especificado pelo usuário na lista de namespaces, digite o nome com o qual deseja substituí-lo na caixa **Namespaces importados** e, em seguida, clique neste botão para alterar para o novo namespace. O botão fica ativo somente se o namespace selecionado for aquele que você adicionou à lista usando o botão **Adicionar Importação de Usuário**. Você pode adicionar:
+Selecione um namespace especificado pelo usuário na lista de namespaces, digite o nome com o qual deseja substituí-lo na caixa **Namespaces importados** e, em seguida, clique neste botão para alterar para o novo namespace. O botão fica ativo somente se o namespace selecionado for aquele que você adicionou à lista usando o botão **Adicionar Importação de Usuário**. Você pode adicionar:
 
 - Classes ou namespaces, como <xref:System.Math?displayProperty=fullName>.
 
@@ -91,5 +91,5 @@ Clique neste botão para acessar a caixa de diálogo **Caminhos de Referência**
 ## <a name="see-also"></a>Consulte também
 
 - [Gerenciando referências em um projeto](../../ide/managing-references-in-a-project.md)
-- [Como: Adicionar ou remover namespaces importados (Visual Basic)](../../ide/how-to-add-or-remove-imported-namespaces-visual-basic.md)
+- [Como adicionar ou remover namespaces importados (Visual Basic)](../../ide/how-to-add-or-remove-imported-namespaces-visual-basic.md)
 - [Instrução Imports (Namespace de XML)](/dotnet/visual-basic/language-reference/statements/imports-statement-xml-namespace)

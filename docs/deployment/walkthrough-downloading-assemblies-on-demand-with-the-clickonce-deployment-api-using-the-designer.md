@@ -1,5 +1,5 @@
 ---
-title: 'Passo a passo: Baixando Assemblies sob demanda com a implantação do ClickOnce usando o Designer de API | Microsoft Docs'
+title: Baixar assemblies por demanda com o ClickOnce usando o designer
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3388e275385f94b4fcd9a1f0091de6ada2d85108
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 5a8c5def5c4ebdf8f34efef50dca8dc4656bbd7d
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63406067"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263433"
 ---
 # <a name="walkthrough-download-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer"></a>Passo a passo: Baixar assemblies sob demanda com a implantação do ClickOnce usando o Designer de API
 Por padrão, todos os assemblies incluídos em um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo são baixadas quando o aplicativo é executado pela primeira vez. No entanto, pode haver partes do seu aplicativo que são usados por um pequeno conjunto de usuários. Nesse caso, você deseja baixar um assembly somente quando você cria um de seus tipos. A instrução a seguir demonstra como marcar determinados assemblies em seu aplicativo como "opcional", e como baixá-los usando as classes no <xref:System.Deployment.Application> namespace quando o common language runtime requê-los.

@@ -1,5 +1,5 @@
 ---
-title: 'Como: Adicionar ou remover namespaces importados (Visual Basic)'
+title: Como adicionar ou remover namespaces importados (Visual Basic)
 ms.date: 06/21/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,23 +9,23 @@ helpviewer_keywords:
 - imported namespaces [Visual Studio]
 - references [Visual Studio], imported namespaces
 ms.assetid: 44cebec3-0ea0-47c2-8406-4edeab6a997e
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 201702c794d70c32c0aeef410ad981d891d25d05
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 8ff6ad1a07440b27b679fa3f749c24a6d3157dbd
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438205"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72654647"
 ---
-# <a name="how-to-add-or-remove-imported-namespaces-visual-basic"></a>Como: Adicionar ou remover namespaces importados (Visual Basic)
+# <a name="how-to-add-or-remove-imported-namespaces-visual-basic"></a>Como adicionar ou remover namespaces importados (Visual Basic)
 
 Importar um namespace permite que você use elementos deste namespace em seu código sem qualificar totalmente o elemento. Por exemplo, se quiser acessar o método `Create` na classe `System.Messaging.MessageQueue`, você pode importar o namespace `System.Messaging` e apenas se referir ao elemento necessário em código como `MessageQueue.Create`.
 
- Namespaces importados são gerenciados na página **Referências** do **Designer de Projeto**. As importações que você especificar na caixa de diálogo são passadas diretamente ao compilador (*/imports*) e se aplicam a todos os arquivos em seu projeto. Use a demonstrativo `Imports` para utilizar um namespace em um arquivo de código-fonte único.
+Namespaces importados são gerenciados na página **Referências** do **Designer de Projeto**. As importações que você especificar na caixa de diálogo são passadas diretamente ao compilador ( */imports*) e se aplicam a todos os arquivos em seu projeto. Use a demonstrativo `Imports` para utilizar um namespace em um arquivo de código-fonte único.
 
 ### <a name="to-add-an-imported-namespace"></a>Para adicionar um namespace importado
 
@@ -47,9 +47,9 @@ Importar um namespace permite que você use elementos deste namespace em seu có
 3. Na lista **Namespaces Importados**, desmarque a caixa de seleção do namespace que você deseja remover.
 
 ## <a name="user-imports"></a>Importações de usuário
- Importações de usuário permitem importar uma classe específica dentro de um namespace, em vez de todo o namespace. Por exemplo, seu aplicativo pode ter uma importação para o namespace <xref:System.Diagnostics>, mas a única classe dentro do namespace em que você tem interesse é a classe `Debug`. Você pode definir <xref:System.Diagnostics.Debug> como uma importação de usuário e, em seguida, remover a importação de <xref:System.Diagnostics>.
+Importações de usuário permitem importar uma classe específica dentro de um namespace, em vez de todo o namespace. Por exemplo, seu aplicativo pode ter uma importação para o namespace <xref:System.Diagnostics>, mas a única classe dentro do namespace em que você tem interesse é a classe `Debug`. Você pode definir <xref:System.Diagnostics.Debug> como uma importação de usuário e, em seguida, remover a importação de <xref:System.Diagnostics>.
 
- Se posteriormente mudar de ideia e decidir que realmente precisava da classe `EventLog`, você pode inserir <xref:System.Diagnostics.EventLog> como uma importação de usuário e substituir <xref:System.Diagnostics.Debug> usando a funcionalidade de atualização.
+Se posteriormente mudar de ideia e decidir que realmente precisava da classe `EventLog`, você pode inserir <xref:System.Diagnostics.EventLog> como uma importação de usuário e substituir <xref:System.Diagnostics.Debug> usando a funcionalidade de atualização.
 
 ### <a name="to-add-a-user-import"></a>Para adicionar uma importação de usuário
 

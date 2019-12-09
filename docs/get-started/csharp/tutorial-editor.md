@@ -5,19 +5,19 @@ ms.custom: seodec18, get-started
 ms.date: 11/20/2018
 ms.technology: vs-ide-general
 ms.topic: tutorial
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5abd287533f2489346b41cdbae5526ed946aa746
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 1b5fb79430b081986764f0ee1789f68471667498
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62971063"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189072"
 ---
 # <a name="learn-to-use-the-code-editor"></a>Saiba como usar o editor de códigos
 
@@ -33,7 +33,7 @@ Nesta introdução de 10 minutos ao editor de código do Visual Studio, adiciona
 ::: moniker range="vs-2019"
 
 > [!TIP]
-> Se você ainda não tiver instalado o Visual Studio, acesse a página [Downloads do Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) para instalá-lo gratuitamente.
+> Se você ainda não tiver instalado o Visual Studio, acesse a página [Downloads do Visual Studio](https://visualstudio.microsoft.com/downloads) para instalá-lo gratuitamente.
 
 ::: moniker-end
 
@@ -58,7 +58,7 @@ Comece criando um novo arquivo e adicionando códigos nele.
 
 ::: moniker-end
 
-2. No menu **Arquivo** na barra de menus, escolha **Novo** > **Arquivo**.
+2. No menu **arquivo** na barra de menus, escolha **novo**  > **arquivo** ou pressione **Ctrl** +**N**.
 
 3. Na caixa de diálogo **Novo Arquivo**, na categoria **Geral**, escolha **Classe do Visual C#** e, então, selecione **Abrir**.
 
@@ -80,7 +80,7 @@ O Visual Studio fornece *snippets de código* úteis que você pode usar para ge
 
    Você verá que a assinatura do método `static void Main()` será adicionada ao arquivo. O método [Main()](/dotnet/csharp/programming-guide/main-and-command-args/) é o ponto de entrada para aplicativos C#.
 
-Os snippets de código disponíveis variam em linguagens de programação diferentes. Examine os snippets de código disponíveis para a linguagem escolhendo **Editar** > **IntelliSense** > **Inserir Snippet** e, em seguida, escolhendo a pasta da linguagem. Para o C#, a lista tem este aspecto:
+Os snippets de código disponíveis variam em linguagens de programação diferentes. Você pode examinar os trechos de código disponíveis para sua linguagem escolhendo **editar**  > **IntelliSense**  > **inserir trecho** ou pressionar **Ctrl** +**K**, **Ctrl** +**X**e, em seguida, escolher a pasta de seu idioma. Para o C#, a lista tem este aspecto:
 
 ![Lista de snippet de código de C#](../media/tutorial-code-snippet-list.png)
 
@@ -132,7 +132,7 @@ O bloco de código é recolhido apenas na primeira linha, seguido por um sinal d
 
 ## <a name="view-symbol-definitions"></a>Exibir definições de símbolo
 
-O editor do Visual Studio facilita a inspeção da definição de um tipo, de um método, etc. Uma maneira é navegar para o arquivo que contém a definição, por exemplo, escolhendo **Ir para Definição** ou pressionando **F12** em qualquer lugar em que o símbolo esteja referenciado. Uma maneira ainda mais rápida que não move o foco para fora do arquivo em que você está trabalhando é usar a opção [Inspecionar Definição](../../ide/go-to-and-peek-definition.md#peek-definition). Vamos espiar a definição do tipo `string`.
+O editor do Visual Studio torna mais fácil inspecionar a definição de um tipo, método, etc. Uma maneira é navegar até o arquivo que contém a definição, por exemplo, escolhendo **ir para definição** ou pressionando **F12** em qualquer lugar em que o símbolo é referenciado. Uma maneira ainda mais rápida que não move o foco para fora do arquivo em que você está trabalhando é usar a opção [Inspecionar Definição](../../ide/go-to-and-peek-definition.md#peek-definition). Vamos espiar a definição do tipo `string`.
 
 1. Clique com o botão direito do mouse em qualquer ocorrência de `string` e escolha **Espiar Definição** no menu de conteúdo. Se preferir, pressione **Alt**+**F12**.
 
@@ -186,7 +186,7 @@ Ninguém obtém o código correto na primeira vez e uma das coisas que talvez vo
 ## <a name="next-steps"></a>Próximas etapas
 
 > [!div class="nextstepaction"]
-> [Saiba mais sobre projetos e soluções](tutorial-projects-solutions.md)
+> [Saiba mais sobre projetos e soluções](../tutorial-projects-solutions.md)
 
 ## <a name="see-also"></a>Consulte também
 

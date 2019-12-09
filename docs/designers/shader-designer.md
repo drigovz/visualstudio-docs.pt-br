@@ -6,17 +6,17 @@ f1_keywords:
 - vs.graphics.designer.effectdesigner
 - vs.graphics.shaderdesigner
 ms.assetid: 5db09a16-b82c-4ba3-8ec9-630cdc109397
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1703d867a529496bb5c524b62ae56ef8d25904b4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: fd82a5c8bee50c778b87927f1074d71a38a21e9f
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62892990"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72635049"
 ---
 # <a name="shader-designer"></a>Designer de Sombreador
 
@@ -46,13 +46,13 @@ Esta seção descreve como adicionar um sombreador DGSL ao seu projeto do Visual
 
 1. Verifique se você tem o componente necessário do Visual Studio instalado para trabalhar com gráficos. O componente é chamado de **Editores de imagens e modelos 3D**.
 
-   Para instalá-lo, abra o Instalador do Visual Studio, selecionando **Ferramentas** > **Obter Ferramentas e Recursos** na barra de menus e selecione a guia **Componentes individuais**. Selecione o componente **Editores de imagens e modelos 3D** na categoria **Jogos e Elementos Gráficos**, depois selecione **Modificar**.
+   Para instalá-lo, abra Instalador do Visual Studio selecionando **ferramentas**  > **obter ferramentas e recursos** na barra de menus e, em seguida, selecione a guia **componentes individuais** . Selecione o componente **imagem e editores de modelo 3D** sob a  **Categoria jogos e gráficos** e, em seguida, selecione **Modificar**.
 
    ![Componente Editores de imagens e modelos 3D](media/image-3d-model-editors-component.png)
 
 2. No **Gerenciador de Soluções**, abra o menu de atalho do projeto do C++ ao qual deseja adicionar o sombreador e escolha **Adicionar** > **Novo Item**.
 
-3. Na caixa de diálogo **Adicionar Novo Item**, em **Instalado**, selecione **Gráficos** e **Visual Shader Graph (.dgsl)**.
+3. Na caixa de diálogo **Adicionar Novo Item**, em **Instalado**, selecione **Gráficos** e **Visual Shader Graph (.dgsl)** .
 
    > [!NOTE]
    > Se a categoria **Elementos Gráficos** não aparece na caixa de diálogo **Adicionar Novo Item** e você tem o componente **Editores de imagens e modelos 3D** instalado, não há suporte para os itens de gráficos desse tipo de projeto.
@@ -96,7 +96,7 @@ Esta tabela descreve os itens na barra de ferramentas **Modo do Designer de Somb
 |**Visualizar com plano**|Quando habilitado, um modelo de um plano é usado para visualizar o sombreador. Só é possível habilitar uma forma de visualização por vez.|
 |**Caixa de Ferramentas**|De modo alternado, mostra ou oculta a **Caixa de Ferramentas**.|
 |**Propriedades**|De modo alternado, mostra ou oculta a janela **Propriedades**.|
-|**Avançado**|Contém comandos e opções avançados.<br /><br /> **Exportar**: Permite a exportação de um sombreador em vários formatos.<br /><br /> **Exportar Como**: Exporta o sombreador como o código-fonte HLSL ou código de bytes do sombreador compilado. Para obter mais informações sobre como exportar sombreadores, confira [Como: Exportar um sombreador](../designers/how-to-export-a-shader.md).<br /><br /> **Mecanismos Gráficos**: Permite a seleção do renderizador que é usado para exibir a superfície de design.<br /><br /> **Renderizar com o D3D11**: Usa o Direct3D 11 para renderizar a superfície de design do Designer de Sombreador.<br /><br /> **Renderizar com o D3D11WARP**: Usa a WARP (Direct3D 11 Windows Advanced Rasterization Platform) para renderizar a superfície de design do Designer de Sombreador.<br /><br /> **Exibir**: Permite a seleção de informações adicionais sobre o Designer de Sombreador.<br /><br /> **Taxa de Quadros**: Quando habilitada, exibe a taxa de quadros no canto superior direito da superfície de design. A taxa de quadros é o número de quadros desenhados por segundo. Essa opção é útil quando você habilita a opção **Modo de Renderização em Tempo Real**.|
+|**Avançado**|Contém comandos e opções avançados.<br /><br /> **Exportar**: permite a exportação de um sombreador em vários formatos.<br /><br /> **Exportar Como**: exporta o sombreador como o código-fonte HLSL ou código de bytes do sombreador compilado. Para obter mais informações sobre como exportar sombreadores, confira [Como exportar um sombreador](../designers/how-to-export-a-shader.md).<br /><br /> **Mecanismos Gráficos**: permite a seleção do renderizador que é usado para exibir a superfície de design.<br /><br /> **Renderizar com D3D11**: usa o Direct3D 11 para renderizar a superfície de design do Designer de Sombreador.<br /><br /> **Renderizar com D3D11WARP**: usa a WARP (Direct3D 11 Windows Advanced Rasterization Platform) para renderizar a superfície de design do Designer de Sombreador.<br /><br /> **Exibir**: permite a seleção de informações adicionais sobre o Designer de Sombreador.<br /><br /> **Taxa de Quadros**: quando habilitada, exibe a taxa de quadros no canto superior direito da superfície de design. A taxa de quadros é o número de quadros desenhados por segundo. Essa opção é útil quando você habilita a opção **Modo de Renderização em Tempo Real**.|
 
 > [!TIP]
 > Você pode escolher o botão **Avançado** para executar novamente o último comando.
@@ -109,17 +109,17 @@ Use o modo **Selecionar** para adicionar, remover, reposicionar, conectar e conf
 
 - Veja como:
 
-   - Para adicionar um nó ao grafo, selecione-o na **Caixa de Ferramentas** e mova-o para a superfície de design.
+  - Para adicionar um nó ao grafo, selecione-o na **Caixa de Ferramentas** e mova-o para a superfície de design.
 
-   - Para remover um nó do grafo, selecione-o e, em seguida, pressione **Delete**.
+  - Para remover um nó do grafo, selecione-o e, em seguida, pressione **Delete**.
 
-   - Para reposicionar um nó, selecione-o e, em seguida, mova-o para um novo local.
+  - Para reposicionar um nó, selecione-o e, em seguida, mova-o para um novo local.
 
-   - Para conectar dois nós, mova um terminal de saída de um nó para um terminal de entrada do outro nó. Somente terminais de tipos compatíveis podem ser conectados. Uma linha entre os terminais mostra a conexão.
+  - Para conectar dois nós, mova um terminal de saída de um nó para um terminal de entrada do outro nó. Somente terminais de tipos compatíveis podem ser conectados. Uma linha entre os terminais mostra a conexão.
 
-   - Para remover uma conexão, no menu de atalho para qualquer um dos terminais conectados, escolha **Quebrar Links**.
+  - Para remover uma conexão, no menu de atalho para qualquer um dos terminais conectados, escolha **Quebrar Links**.
 
-   - Para configurar as propriedades de um nó, selecione o nó e, em seguida, na janela **Propriedades**, especifique novos valores para as propriedades.
+  - Para configurar as propriedades de um nó, selecione o nó e, em seguida, na janela **Propriedades**, especifique novos valores para as propriedades.
 
 ### <a name="preview-shaders"></a>Visualizar sombreadores
 
@@ -145,12 +145,12 @@ A tabela a seguir mostra os parâmetros de sombreador que você pode modificar:
 
 |Parâmetro|Propriedades|
 |---------------|----------------|
-|**Textura 1** - **Textura 8**|**Acesso**:                             **Public** para permitir que esta propriedade possa ser configurada pelo Editor de Modelo; caso contrário, **Private**.<br /><br /> **Filename**: O caminho completo do arquivo de textura que está associado com o registro de textura.|
-|**Material Ambiente**|**Acesso**:                             **Public** para permitir que esta propriedade possa ser configurada pelo Editor de Modelo; caso contrário, **Private**.<br /><br /> **Valor**: A cor difusa do pixel atual devido à luz indireta, ou seja, a luz ambiente.|
-|**Material Difuso**|**Acesso**: **Public** para permitir que esta propriedade possa ser configurada pelo Editor de Modelo; caso contrário, **Private**.<br /><br /> **Valor**:  Uma cor que descreve como o pixel atual difunde a iluminação direta.|
-|**Material Emissivo**|**Acesso**:                              **Public** para permitir que esta propriedade possa ser configurada pelo Editor de Modelo; caso contrário, **Private**.<br /><br /> **Valor**: A contribuição de cor do pixel atual é devido à iluminação própria.|
-|**Material Especular**|**Acesso**:                              **Public** para permitir que esta propriedade possa ser configurada pelo Editor de Modelo; caso contrário, **Private**.<br /><br /> **Valor**: Uma cor que descreve como o pixel atual reflete a iluminação direta.|
-|**Material Energia Especular**|**Acesso**:                             **Public** para permitir que esta propriedade possa ser configurada pelo Editor de Modelo; caso contrário, **Private**.<br /><br /> **Valor**: O expoente que define a intensidade dos realces especulares no pixel atual.|
+|**Textura 1** - **Textura 8**|**Access**:                             **Public** para permitir que esta propriedade possa ser configurada pelo Editor de Modelo; caso contrário, **Private**.<br /><br /> **Filename**: o caminho completo do arquivo de textura que está associado com o registro de textura.|
+|**Material Ambiente**|**Access**:                             **Public** para permitir que esta propriedade possa ser configurada pelo Editor de Modelo; caso contrário, **Private**.<br /><br /> **Valor**: a cor difusa do pixel atual devido à luz indireta, ou seja, a luz ambiente.|
+|**Material Difuso**|**Access**: **Public** para permitir que esta propriedade possa ser configurada pelo Editor de Modelo; caso contrário, **Private**.<br /><br /> **Valor**: uma cor que descreve como o pixel atual difunde a iluminação direta.|
+|**Material Emissivo**|**Access**:                              **Public** para permitir que esta propriedade possa ser configurada pelo Editor de Modelo; caso contrário, **Private**.<br /><br /> **Valor**: a contribuição de cor do pixel atual é devido à iluminação própria.|
+|**Material Especular**|**Access**:                              **Public** para permitir que esta propriedade possa ser configurada pelo Editor de Modelo; caso contrário, **Private**.<br /><br /> **Valor**: uma cor que descreve como o pixel atual reflete a iluminação direta.|
+|**Material Energia Especular**|**Access**:                             **Public** para permitir que esta propriedade possa ser configurada pelo Editor de Modelo; caso contrário, **Private**.<br /><br /> **Valor**: o expoente que define a intensidade dos realces especulares no pixel atual.|
 
 #### <a name="time-based-effects"></a>Efeitos de tempo
 
@@ -168,9 +168,9 @@ Para girar a forma, pressione e mantenha pressionada a tecla **Alt** e, em segui
 
 Antes de usar um sombreador em seu aplicativo, você precisa exportá-lo em um formato compatível com o DirectX.
 
-Você pode exportar sombreadores como código-fonte HLSL ou código de bytes do sombreador compilado. O código-fonte HLSL é exportado para um arquivo de texto que tem uma extensão de nome de arquivo *.hlsl*. O código de bytes do sombreador pode ser exportado para um arquivo binário bruto que tenha uma extensão de nome de arquivo *.cso* ou para um arquivo de cabeçalho (*.h*) C++ que codifique o código de bytes do sombreador em uma matriz.
+Você pode exportar sombreadores como código-fonte HLSL ou código de bytes do sombreador compilado. O código-fonte HLSL é exportado para um arquivo de texto que tem uma extensão de nome de arquivo *.hlsl*. O código de bytes do sombreador pode ser exportado para um arquivo binário bruto que tenha uma extensão de nome de arquivo *.cso* ou para um arquivo de cabeçalho ( *.h*) C++ que codifique o código de bytes do sombreador em uma matriz.
 
-Para obter mais informações sobre como exportar sombreadores, confira [Como: Exportar um sombreador](../designers/how-to-export-a-shader.md).
+Para obter mais informações sobre como exportar sombreadores, confira [Como exportar um sombreador](../designers/how-to-export-a-shader.md).
 
 ## <a name="keyboard-shortcuts"></a>Atalhos de teclado
 
@@ -182,8 +182,8 @@ Para obter mais informações sobre como exportar sombreadores, confira [Como: E
 |Selecionar tudo|**Ctrl**+**A**|
 |Excluir a seleção atual|**Excluir**|
 |Cancelar a seleção atual|**Escape** (**Esc**)|
-|Ampliar|**Ctrl**+**Botão de rolagem do mouse para frente**<br /><br /> Sinal de adição (**+**)|
-|Reduzir|**Ctrl**+**Botão de rolagem do mouse para trás**<br /><br /> Sinal de subtração (**-**)|
+|Ampliar|**Ctrl**+**Botão de rolagem do mouse para frente**<br /><br /> Sinal de adição ( **+** )|
+|Reduzir|**Ctrl**+**Botão de rolagem do mouse para trás**<br /><br /> Sinal de subtração ( **-** )|
 |Deslocar para cima na superfície de design|**Botão de rolagem do mouse para trás**<br /><br /> **PageDown**|
 |Deslocar para baixo na superfície de design|**Botão de rolagem do mouse para frente**<br /><br /> **PageUp**|
 |Deslocar para a esquerda na superfície de design|**Shift**+**Botão de rolagem do mouse para trás**<br /><br /> **Botão de rolagem do mouse para a esquerda**<br /><br /> **Shift**+**PageDown**|

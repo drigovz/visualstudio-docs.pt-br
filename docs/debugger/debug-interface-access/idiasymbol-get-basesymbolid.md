@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8880d207a41418e12cab4374578fea4f3c4f338c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3248721afd14ce46745e1eab40a3c4b4f9fbe76a
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62837709"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740930"
 ---
-# <a name="idiasymbolgetbasesymbolid"></a>IDiaSymbol::get_baseSymbolId
-Recupera a ID de símbolo do qual o ponteiro se baseia.
+# <a name="idiasymbolget_basesymbolid"></a>IDiaSymbol::get_baseSymbolId
+Recupera a ID do símbolo do qual o ponteiro se baseia.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -30,9 +30,9 @@ HRESULT get_baseSymbolId(
 #### <a name="parameters"></a>Parâmetros
  `pRetVal`
 
-[out] Um ponteiro para um `DWORD` que contém a ID de símbolo do qual o ponteiro se baseia.
+fora Um ponteiro para um `DWORD` que contém a ID do símbolo do qual o ponteiro se baseia.
 
-## <a name="return-value"></a>Valor de retorno
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE` ou um código de erro.
 
 ## <a name="see-also"></a>Consulte também

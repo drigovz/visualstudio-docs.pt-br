@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptAuthorProcedure::ParseProcedureText | Microsoft Docs
+title: IActiveScriptAuthorProcedure::P arseProcedureText | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c513b105a483d0f80510dff9c91fa2c3f09e0523
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 11a34843f30274ec78f1652c5ed5cd4dbcf2884a
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62955153"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572824"
 ---
 # <a name="iactivescriptauthorprocedureparseproceduretext"></a>IActiveScriptAuthorProcedure::ParseProcedureText
-Analisa um procedimento de código, adiciona o texto do procedimento de código para o mecanismo de criação de script e cria um `IScriptEntry` objeto que corresponde ao procedimento de código.  
+Analisa um procedimento de código, adiciona o texto do procedimento de código ao mecanismo de criação de script e cria um objeto `IScriptEntry` que corresponde ao procedimento de código.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -44,30 +44,30 @@ HRESULT ParseProcedureText(
   
 #### <a name="parameters"></a>Parâmetros  
  `pszCode`  
- [in] O texto do script para analisar.  
+ no O texto do script a ser analisado.  
   
  `pszFormalParams`  
- [in] O endereço dos nomes de parâmetro formal para o procedimento. Os nomes de parâmetro devem ser separados pelos delimitadores apropriados para o mecanismo de criação de script. Os nomes não deverão ser incluídos em parênteses.  
+ no O endereço dos nomes de parâmetro formais para o procedimento. Os nomes de parâmetro devem ser separados pelos delimitadores apropriados para o mecanismo de criação de scripts. Os nomes não devem ser colocados entre parênteses.  
   
  `pszProcedureName`  
- [in] O endereço do nome do procedimento a ser analisado.  
+ no O endereço do nome do procedimento a ser analisado.  
   
  `pszItemName`  
- [in] O endereço do buffer que contém o nome do item associado com o `IScriptEntry` objeto.  
+ no O endereço de buffer que contém o nome do item associado ao objeto `IScriptEntry`.  
   
  `pszDelimiter`  
- [in] O endereço do delimitador de fim do bloco de script. Quando `pszCode` é analisado de um fluxo de texto, o host normalmente usa um delimitador (como duas aspas simples), para detectar o fim do bloco de script. Defina esse parâmetro como NULL se não houver nenhum delimitador para marcar o fim do bloco de script.  
+ no O endereço do delimitador de bloco de fim do script. Quando `pszCode` é analisada a partir de um fluxo de texto, o host normalmente usa um delimitador (como duas aspas simples) para detectar o final do bloco de script. Defina esse parâmetro como NULL se não houver nenhum delimitador para marcar o final do bloco de script.  
   
  `dwCookie`  
- [in] Um valor definido pelo aplicativo que está associado com o novo `IScriptEntry` objeto.  
+ no Um valor definido pelo aplicativo que está associado ao novo objeto `IScriptEntry`.  
   
  `dwFlags`  
- [in] Não usado.  
+ no Não usado.  
   
  `pdispFor`  
- [in] Não usado.  
+ no Não usado.  
   
-## <a name="return-value"></a>Valor de retorno  
+## <a name="return-value"></a>Valor retornado  
  Um `HRESULT`. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.  
   
 |Valor|Descrição|  
@@ -75,7 +75,7 @@ HRESULT ParseProcedureText(
 |`S_OK`|O método foi bem-sucedido.|  
   
 ## <a name="remarks"></a>Comentários  
- Atual [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] mecanismo não implementa esse método.  
+ O mecanismo de [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] atual não implementa esse método.  
   
 ## <a name="see-also"></a>Consulte também  
  [IActiveScriptAuthorProcedure Interface](../../winscript/reference/iactivescriptauthorprocedure-interface.md)

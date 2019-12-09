@@ -5,15 +5,15 @@ ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.XML.Miscellaneous
 ms.assetid: b6538cbe-badd-4313-a1fb-39e906736bbe
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d3421580251a6a871adba311fd609e881e088ebd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 58de904e1697a820a2f4bc6f88fbff5237cabc30
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62969209"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666587"
 ---
 # <a name="options-text-editor-xml-miscellaneous"></a>Opções, Editor de texto, XML, Diversos
 
@@ -27,7 +27,7 @@ O editor de texto adiciona marcas de fechamento ao criar elementos XML. Se uma m
 
 **Aspas de atributo**
 
-Ao criar atributos XML, o editor insere os caracteres `="` e `"` e posiciona o acento circunflexo (**^**) dentro de aspas duplas. Por padrão, a caixa de seleção fica marcada.
+Ao criar atributos XML, o editor insere os caracteres `="` e `"` e posiciona o acento circunflexo ( **^** ) dentro de aspas duplas. Por padrão, a caixa de seleção fica marcada.
 
 **Declarações de namespace**
 

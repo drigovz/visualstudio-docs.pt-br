@@ -1,5 +1,5 @@
 ---
-title: 'Como: Usar o ClickOnce para implantar aplicativos que podem ser executados em várias versões do .NET Framework | Microsoft Docs'
+title: Usar o ClickOnce para implantar aplicativos multitarget
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,18 +16,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: e7e7d79dd1fc3d6c988701d0aa88cb4d0d299c2d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 38418a1ca11c23ab12d64deadfb91079bc957493
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63406717"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747489"
 ---
 # <a name="how-to-use-clickonce-to-deploy-applications-that-can-run-on-multiple-versions-of-the-net-framework"></a>Como: Usar o ClickOnce para implantar aplicativos que podem ser executados em várias versões do .NET Framework
 Você pode implantar um aplicativo destinado a várias versões do .NET Framework usando a tecnologia de implantação do ClickOnce. Isso exige que você deseja gerar e atualizar os manifestos do aplicativo e implantação.
 
 > [!NOTE]
-> Antes de alterar o aplicativo para direcionar a várias versões do .NET Framework, você deve garantir que seu aplicativo é executado com várias versões do .NET Framework. O versão common language runtime é diferente entre [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] em comparação com o .NET Framework 2.0, .NET Framework 3.0 e 3.5 do .NET Framework.
+> Antes de alterar o aplicativo para direcionar a várias versões do .NET Framework, você deve garantir que seu aplicativo é executado com várias versões do .NET Framework. Versão common language runtime é diferente entre o .NET Framework 4 em comparação com o .NET Framework 2.0, .NET Framework 3.0 e 3.5 do .NET Framework.
 
  Esse processo exige as seguintes etapas:
 
@@ -88,7 +88,7 @@ Você pode implantar um aplicativo destinado a várias versões do .NET Framewor
    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true" group="framework">
    ```
 
-3. Atualizar o número de versão a `<assemblyIdentity>` elemento para Microsoft.Windows.CommonLanguageRuntime ao número de versão para o .NET Framework que é o menor denominador comum. Por exemplo, se o aplicativo for destinado ao .NET Framework 3.5 e [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)], use o 2.0.50727.0 número de versão e o XML devem ser semelhante ao seguinte:
+3. Atualizar o número de versão a `<assemblyIdentity>` elemento para Microsoft.Windows.CommonLanguageRuntime ao número de versão para o .NET Framework que é o menor denominador comum. Por exemplo, se o aplicativo for destinado ao .NET Framework 3.5 e .NET Framework 4, use o 2.0.50727.0 número de versão e o XML devem ser semelhante ao seguinte:
 
    ```xml
    <dependency>

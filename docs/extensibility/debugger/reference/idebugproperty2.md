@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProperty2 interface
 ms.assetid: a7d5c70f-a1a5-4120-9f70-184e01c25bff
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3e13233950940c01c758a0faf07611c1426475e8
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: ef390f3f67a0c0678854020e33725b2f88439ff9
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63412682"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66308915"
 ---
 # <a name="idebugproperty2"></a>IDebugProperty2
 Essa interface representa uma propriedade de quadro de pilha, uma propriedade de documento do programa ou outra propriedade. A propriedade é geralmente o resultado de uma avaliação de expressão.

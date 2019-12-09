@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProperty3::GetStringCharLength
 ms.assetid: 89a8676b-6da9-4358-91c2-039bf33f99e4
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fdfb437b079fd3c7b5657a369402bfbe4de047e8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 2d8cedb7ceb5b1b73a86e9c1b93aaa2ae54da579
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62916544"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66348785"
 ---
 # <a name="idebugproperty3getstringcharlength"></a>IDebugProperty3::GetStringCharLength
 Retorna o número de caracteres na cadeia de caracteres da propriedade associada.
@@ -36,7 +39,7 @@ int GetStringCharLength(
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
+## <a name="parameters"></a>Parâmetros
 
 |Parâmetro|Descrição|
 |---------------|-----------------|

@@ -1,19 +1,20 @@
 ---
-title: Coletando dados de simultaneidade para um serviço usando a linha de comando do criador de perfil | Microsoft Docs
+title: Usar a linha de comando do criador de perfil para obter dados de simultaneidade para o serviço
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 275aacba-b2af-4d34-8931-ee30d777a256
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 5df8fa1b0e0d9c76595c29958641de628e5e8b78
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 4b7b60ad871f40e06e2a8fbf6782773ce6596f31
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440214"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779669"
 ---
 # <a name="collect-concurrency-data-for-a-service-by-using-the-profiler-command-line"></a>Coletar dados de simultaneidade para um serviço usando a linha de comando do criador de perfil
 O método de simultaneidade das Ferramentas de Criação de Perfil [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] permite coletar dados de contenção de recursos e dados de atividade do thread que mostram a utilização da CPU, contenção e migração do thread, atrasos na sincronização, áreas de ES sobrepostas e outros eventos do sistema.
@@ -25,9 +26,9 @@ O método de simultaneidade das Ferramentas de Criação de Perfil [!INCLUDE[vsp
 
 |Tarefa|Conteúdo relacionado|
 |----------|---------------------|
-|**Attach to a running .NET service (Anexar a um serviço do .NET em execução)**|-   [Como: Anexar o criador de perfil a um serviço do .NET para coletar dados de simultaneidade](../profiling/how-to-attach-the-profiler-to-a-dotnet-service-to-collect-concurrency-data-by-using-the-command-line.md)|
+|**Attach to a running .NET service (Anexar a um serviço do .NET em execução)**|-   [Como anexar o criador de perfil a um serviço do .NET para coletar dados de simultaneidade](../profiling/how-to-attach-the-profiler-to-a-dotnet-service-to-collect-concurrency-data-by-using-the-command-line.md)|
 |**Add tier-interaction data (Adicionar dados de interação de camada)**|-   [Coletar dados de interação entre camadas](../profiling/adding-tier-interaction-data-from-the-command-line.md)|
-|**Anexar a um serviço do C/C++ em execução**|-   [Como: Anexar o criador de perfil a um serviço nativo para coletar dados de simultaneidade](../profiling/how-to-attach-the-profiler-to-a-native-service-to-collect-concurrency-data-by-using-the-command-line.md)|
+|**Anexar a um serviço do C/C++ em execução**|-   [Como anexar o criador de perfil a um serviço nativo para coletar dados de simultaneidade](../profiling/how-to-attach-the-profiler-to-a-native-service-to-collect-concurrency-data-by-using-the-command-line.md)|
 
 ## <a name="related-tasks"></a>Tarefas relacionadas
 

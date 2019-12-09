@@ -1,22 +1,22 @@
 ---
-title: Atalhos de teclado padrão no Visual Studio para Mac
+title: Atalhos de teclado padrão
 description: Este artigo lista os atalhos de teclado padrão no Visual Studio para Mac
 ms.date: 03/14/2019
-author: bytesguy
-ms.author: adhartle
+author: asb3993
+ms.author: amburns
 ms.assetid: 48E06A61-7294-4EC8-A09D-1763C32AD910
-ms.openlocfilehash: a19c63b2ce32095a3af4aa4586b8ab0d604a14dc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: b569887005d22a4eab7289c4ab940c9d9539d040
+ms.sourcegitcommit: 528178a304e66c0cb7ab98b493fe3c409f87493a
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62982715"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71273325"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio-for-mac"></a>Atalhos de teclado padrão no Visual Studio para Mac
 
-Confira mais informações sobre acessibilidade de teclado em [Como usar a navegação por teclado](~/accessibility.md#how-to-use-keyboard-navigation).
+Confira mais informações sobre acessibilidade de teclado em [Como usar a navegação por teclado](~/accessibility-keyboard.md).
 
-Você pode acessar uma variedade de comandos no Visual Studio para Mac usando o atalho de teclado apropriado. Este documento lista os atalhos padrão do esquema de associação de teclas do **Visual Studio**. Confira mais informações sobre como alterar o esquema de associação de teclas em [Personalizar o IDE](~/customizing-the-ide.md#key-bindings). Também é possível personalizar os atalhos para um comando usando o item de menu **Visual Studio para Mac** > **Preferências** e selecionando **Ambiente** > **Associações de teclas** na janela **Preferências**.
+Você pode acessar uma variedade de comandos no Visual Studio para Mac usando o atalho de teclado apropriado. Este documento lista os atalhos padrão para o esquema de associação de chave **Visual Studio para Mac** . Confira mais informações sobre como alterar o esquema de associação de teclas em [Personalizar o IDE](~/customizing-the-ide.md#key-bindings). Também é possível personalizar os atalhos para um comando usando o item de menu **Visual Studio para Mac** > **Preferências** e selecionando **Ambiente** > **Associações de teclas** na janela **Preferências**.
 
 > [!TIP]
 > Os atalhos de teclado exibidos neste documento e as preferências de associação de teclas no Visual Studio para Mac são apresentados usando os símbolos mais usados no macOS. Se não tiver certeza de um símbolo, confira a [Tabela de pesquisa de símbolos de teclas do macOS](#macos-key-symbols-lookup).
@@ -36,7 +36,7 @@ Você pode acessar uma variedade de comandos no Visual Studio para Mac usando o 
 
 |Comandos|Atalhos de teclado|
 |-|-|
-|Habilitar ou desabilitar ponto de interrupção|**⌥⌘/**, **⌘F9**|
+|Habilitar ou desabilitar ponto de interrupção|**⌥⌘/** , **⌘F9**|
 |Pausar|**⌥⌘P**, **⌥⌘L5**|
 |Remover todos os pontos de interrupção|**⇧⌘F9**|
 |Executar até o cursor|**⌘F10**|
@@ -45,7 +45,7 @@ Você pode acessar uma variedade de comandos no Visual Studio para Mac usando o 
 |Entrar em|**⇧⌘I**, **⌘F11**|
 |Depuração Circular|**⇧⌘U**, **⇧⌘F11**|
 |Depuração Parcial|**⇧⌘O**, **F10**|
-|Ativar/desativar pontos de interrupção|**⌘\\**, **F9**|
+|Ativar/desativar pontos de interrupção|**⌘\\** , **F9**|
 |Exibir pontos de interrupção|**⌥⌘B**|
 
 ## <a name="designer"></a>Designer
@@ -95,7 +95,7 @@ Você pode acessar uma variedade de comandos no Visual Studio para Mac usando o 
 |-|-|
 |Fechar tudo|**⇧⌘W**|
 |Fechar arquivo|**⌘W**|
-|Fechar espaço de trabalho|**⌥⌘W**|
+|Fechar workspace|**⌥⌘W**|
 |Novo arquivo|**⌘N**|
 |Nova solução|**⇧⌘N**|
 |Abrir|**⌘O**|
@@ -225,8 +225,8 @@ Você pode acessar uma variedade de comandos no Visual Studio para Mac usando o 
 |Mostrar próximo|**⌥⌘↓**, **F8**|
 |Mostrar anterior|**⌥⌘↑**, **⇧F8**|
 |Duas colunas de editor|**⌥⌘2**|
-|Ampliar|**⌘ +**, **⌘ =**|
-|Reduzir|**⌘-**, **⌘_**|
+|Ampliar|**⌘ +** , **⌘ =**|
+|Reduzir|**⌘-** , **⌘_**|
 
 ## <a name="window"></a>Janela
 
@@ -244,8 +244,8 @@ Você pode acessar uma variedade de comandos no Visual Studio para Mac usando o 
 |Ocultar outros|**⌥⌘H**|
 |Ocultar o Visual Studio|**⌘H**|
 |Minimizar|**⌘M**|
-|Próximo documento|**⌘}**, **⌘F6**|
-|Documento anterior|**⌘{**, **⇧⌘F6**|
+|Próximo documento|**⌘}** , **⌘F6**|
+|Documento anterior|**⌘{** , **⇧⌘F6**|
 |Alternar para o próximo documento|**⌃⇥**|
 |Alternar para o próximo painel|**⌃⌥⇥**|
 |Alternar para o documento anterior|**⌃⇧⇥**|

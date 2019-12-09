@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3e19cdb633528c3304d500fe268a583c542f1e4d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 913984bcc5f9546589421d66d95b6bfb2740b870
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63001025"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72912022"
 ---
 # <a name="concurrency-visualizer"></a>Visualizador de Simultaneidade
 
@@ -29,7 +29,7 @@ ms.locfileid: "63001025"
 >
 > - Baixe a extensão [Visualização Simultânea para Visual Studio 2017](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.ConcurrencyVisualizer2017#overview).
 > - Baixe a extensão [Visualização Simultânea para Visual Studio 2015](https://marketplace.visualstudio.com/items?itemName=Diagnostics.ConcurrencyVisualizerforVisualStudio2015).
-> - Baixe a [Coleção de Ferramentas da Visualização Simultânea para Visual Studio 2015](http://www.microsoft.com/download/details.aspx?id=49103).
+> - Baixe a [Coleção de Ferramentas da Visualização Simultânea para Visual Studio 2015](https://www.microsoft.com/download/details.aspx?id=49103).
 >
 > O [CVCollectionCmd (Utilitário de Linha de Comando Visualização Simultânea)](../profiling/concurrency-visualizer-command-line-utility-cvcollectioncmd.md) permite coletar rastreamentos na linha de comando que podem ser exibidos na Visualização Simultânea para Visual Studio 2015. A ferramenta pode ser usada em computadores que não tenham o Visual Studio instalado.
 
@@ -38,7 +38,7 @@ ms.locfileid: "63001025"
 > [!NOTE]
 > A Visualização Simultânea não oferece suporte a projetos Web.
 
-A Visualização Simultânea conta com a funcionalidade [Rastreamento de Eventos para Windows](http://go.microsoft.com/fwlink/?LinkId=234579).
+A Visualização Simultânea conta com a funcionalidade [Rastreamento de Eventos para Windows](/windows/win32/etw/event-tracing-portal).
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -48,12 +48,12 @@ A Visualização Simultânea conta com a funcionalidade [Rastreamento de Eventos
 |[Exibição de Threads](../profiling/threads-view-parallel-performance.md)|Descreve como analisar as interações entre threads no programa.|
 |[Exibição de núcleos](../profiling/cores-view.md)|Descreve como analisar a migração de thread entre núcleos.|
 |[Padrões comuns para aplicativos multi-threaded com mau comportamento](../profiling/common-patterns-for-poorly-behaved-multithreaded-applications.md)|Descreve diversos padrões em comum e mostra como eles são exibidos na Visualização Simultânea.|
-|[Desenvolvimento paralelo no blog do Visual Studio](http://go.microsoft.com/fwlink/?LinkId=235385)|Dá dicas e práticas recomendadas para a Visualização Simultânea.|
+|[Desenvolvimento paralelo no blog do Visual Studio](https://blogs.msdn.microsoft.com/visualizeparallel/)|Dá dicas e práticas recomendadas para a Visualização Simultânea.|
 |[Exibições de relatório de desempenho](../profiling/performance-report-views.md)|Fornece informações de referência sobre os relatórios e as exibições das Ferramentas de Criação de Perfil do Visual Studio.|
 |[SDK da Visualização Simultânea](../profiling/concurrency-visualizer-sdk.md)|Descreve como instrumentalizar o código-fonte para exibir informações adicionais na Visualização Simultânea.|
 |[Utilitário de linha de comando da Visualização Simultânea (CVCollectionCmd)](../profiling/concurrency-visualizer-command-line-utility-cvcollectioncmd.md)|Descreve como usar o utilitário de linha de comando Visualização Simultânea (CVCollectionCmd.exe) para coletar e processar rastreamentos em máquinas que não tenham o Visual Studio.|
 
 ## <a name="see-also"></a>Consulte também
 
-- [Criação de perfis no Visual Studio](../profiling/index.md)
+- [Criação de perfis no Visual Studio](../profiling/index.yml)
 - [Introdução às ferramentas de criação de perfil](../profiling/profiling-feature-tour.md)

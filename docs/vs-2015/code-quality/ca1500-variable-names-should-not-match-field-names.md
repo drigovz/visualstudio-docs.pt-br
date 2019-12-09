@@ -1,5 +1,5 @@
 ---
-title: 'CA1500: Nomes de variáveis não devem corresponder aos nomes de campo | Microsoft Docs'
+title: 'CA1500: nomes de variáveis não devem corresponder a nomes de campos | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,42 +12,42 @@ helpviewer_keywords:
 - CA1500
 ms.assetid: fa0e5029-79e9-4a33-8576-787ac3c26c39
 caps.latest.revision: 25
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 8dc15c95398ed45954c3830d1c558a6653a4346f
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: b46594a53e6562c2c6a069a9a25d58b3e32865eb
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59649961"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72607935"
 ---
-# <a name="ca1500-variable-names-should-not-match-field-names"></a>CA1500: Nomes de variável não devem corresponder a nomes de campo
+# <a name="ca1500-variable-names-should-not-match-field-names"></a>CA1500: os nomes de variável não devem corresponder aos nomes de campo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Para a documentação mais recente do Visual Studio, consulte [CA1500: Nomes de variáveis não devem corresponder aos nomes de campo](https://docs.microsoft.com/visualstudio/code-quality/ca1500-variable-names-should-not-match-field-names).  
-  
-|||  
-|-|-|  
-|NomeDoTipo|VariableNamesShouldNotMatchFieldNames|  
-|CheckId|CA1500|  
-|Categoria|Microsoft.Maintainability|  
-|Alteração Significativa|Quando disparado em um parâmetro que tem o mesmo nome como um campo:<br /><br /> Sem quebra - se o campo e o método que declara o parâmetro não podem ser vistos fora do assembly, independentemente da alteração feita.<br />-Quebrando - se você alterar o nome do campo e pode ser vistos fora do assembly.<br />-Quebrando - se você alterar o nome do parâmetro e o método que declara que ele pode ser visto de fora do assembly.<br /><br /> Quando acionado em uma variável local que tem o mesmo nome como um campo:<br /><br /> Sem quebra - se o campo não pode ser visto de fora do assembly, independentemente da alteração feita.<br />Sem quebra - se você alterar o nome da variável local e não altere o nome do campo.<br />-Quebrando - se você alterar o nome do campo e ele pode ser visto de fora do assembly.|  
-  
-## <a name="cause"></a>Causa  
- Um método de instância declara um parâmetro ou uma variável local cujo nome corresponde a um campo de instância do tipo declarativo. Para capturar as variáveis locais que violam a regra, o assembly testado deve ser criado usando as informações de depuração e o arquivo de banco de dados (. PDB) do programa associado deve estar disponível.  
-  
-## <a name="rule-description"></a>Descrição da Regra  
- Quando o nome de um campo de instância corresponde a um parâmetro ou um nome de variável local, o campo de instância é acessado usando o `this` (`Me` em [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]) palavra-chave quando dentro do corpo de método. Durante a manutenção de código, é fácil esquecer essa diferença e pressupõem que a variável de parâmetro/local se refere ao campo de instância, o que leva a erros. Isso vale especialmente para corpos de método demorado.  
-  
-## <a name="how-to-fix-violations"></a>Como Corrigir Violações  
- Para corrigir uma violação dessa regra, renomeie o parâmetro/variável ou o campo.  
-  
-## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos  
- Não suprima um aviso nessa regra.  
-  
-## <a name="example"></a>Exemplo  
- O exemplo a seguir mostra dois violações da regra.  
-  
+Para obter a documentação mais recente sobre o Visual Studio, consulte [CA1500: nomes de variáveis não devem corresponder a nomes de campos](https://docs.microsoft.com/visualstudio/code-quality/ca1500-variable-names-should-not-match-field-names).
+
+|||
+|-|-|
+|NomeDoTipo|VariableNamesShouldNotMatchFieldNames|
+|CheckId|CA1500|
+|Categoria|Microsoft. Maintainabilidade|
+|Alteração Significativa|Quando acionado em um parâmetro que tem o mesmo nome de um campo:<br /><br /> -Não separável – se o campo e o método que declara o parâmetro não puderem ser vistos fora do assembly, independentemente da alteração feita.<br />-Separável-se você alterar o nome do campo e puder ser visto fora do assembly.<br />-Quebra-se você alterar o nome do parâmetro e o método que o declara pode ser visto fora do assembly.<br /><br /> Quando acionado em uma variável local que tem o mesmo nome de um campo:<br /><br /> -Não separável – se o campo não puder ser visto fora do assembly, independentemente da alteração feita.<br />-Não separável – se você alterar o nome da variável local e não alterar o nome do campo.<br />-Quebra-se você alterar o nome do campo e ele pode ser visto fora do assembly.|
+
+## <a name="cause"></a>Causa
+ Um método de instância declara um parâmetro ou uma variável local cujo nome corresponde a um campo de instância do tipo declarativo. Para capturar variáveis locais que violam a regra, o assembly testado deve ser criado usando informações de depuração e o arquivo de banco de dados do programa (. pdb) associado deve estar disponível.
+
+## <a name="rule-description"></a>Descrição da Regra
+ Quando o nome de um campo de instância corresponde a um parâmetro ou a um nome de variável local, o campo de instância é acessado usando a palavra-chave `this` (`Me` no [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]) quando estiver dentro do corpo do método. Ao manter o código, é fácil esquecer essa diferença e assumir que a variável de parâmetro/local se refere ao campo de instância, que leva a erros. Isso é verdadeiro especialmente para corpos de métodos longos.
+
+## <a name="how-to-fix-violations"></a>Como Corrigir Violações
+ Para corrigir uma violação dessa regra, renomeie o parâmetro/variável ou o campo.
+
+## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos
+ Não suprima um aviso nessa regra.
+
+## <a name="example"></a>Exemplo
+ O exemplo a seguir mostra duas violações da regra.
+
  [!code-csharp[FxCop.Maintainability.VarMatchesField#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Maintainability.VarMatchesField/cs/FxCop.Maintainability.VarMatchesField.cs#1)]
  [!code-vb[FxCop.Maintainability.VarMatchesField#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Maintainability.VarMatchesField/vb/FxCop.Maintainability.VarMatchesField.vb#1)]

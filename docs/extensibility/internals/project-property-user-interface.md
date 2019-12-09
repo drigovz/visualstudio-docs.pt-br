@@ -1,5 +1,5 @@
 ---
-title: Interface de usuário de propriedades do projeto | Microsoft Docs
+title: Interface do usuário da Propriedade do projeto | Microsoft Docs
 ms.date: 03/22/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,55 +7,55 @@ helpviewer_keywords:
 - projects [Visual Studio SDK], properties UI
 - project properties UI
 ms.assetid: b6aec634-8533-476c-9ebd-36536a2288e2
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 056913d779f34ce197e1397563caac43ebf8b619
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a83e5c9fb633322da536e62f1ba03484b965b162
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62859319"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71252351"
 ---
 # <a name="project-property-user-interface"></a>Interface do usuário de propriedades do projeto
 
-Um subtipo de projeto pode usar os itens no projeto **páginas de propriedade** caixa de diálogo como eles são fornecidos pelo projeto base, ocultar ou tornar somente leitura de controles e páginas inteiras como fornecidos ou adicionar páginas de subtipo específico de projeto para o **Páginas de propriedade** caixa de diálogo.
+Um subtipo de projeto pode usar os itens na caixa de diálogo **páginas de propriedades** do projeto, pois eles são fornecidos pelo projeto base, ocultar ou fazer controles somente leitura e páginas inteiras conforme fornecido ou adicionar páginas específicas de subtipo de projeto à caixa de diálogo **páginas de propriedades** quadro.
 
 ## <a name="extending-the-project-property-dialog-box"></a>Estendendo a caixa de diálogo de propriedades do projeto
 
-Um subtipo de projeto implementa extensores de automação e procurar objetos de configuração do projeto. Implementam esses extensores o <xref:EnvDTE.IFilterProperties> interface para tornar as propriedades específicas ocultos ou somente leitura. O **páginas de propriedade** honra de caixa de diálogo do projeto base, implementado pelo projeto base, a filtragem executada pelos extensores de automação.
+Um subtipo de projeto implementa extensores de automação e objetos de procura de configuração de projeto. Esses extensores implementam <xref:EnvDTE.IFilterProperties> a interface para tornar as propriedades específicas ocultas ou somente leitura. A caixa de diálogo **páginas de propriedades** do projeto base, implementada pelo projeto base, honra a filtragem executada pelos extensores de automação.
 
-O processo de estender uma **propriedade do projeto** caixa de diálogo é descrita a seguir:
+O processo de estender uma caixa de diálogo de **Propriedades do projeto** é descrito abaixo:
 
-- O projeto base recupera os Extensores do subtipo de projeto, Implementando o <xref:EnvDTE80.IInternalExtenderProvider> interface. A procura, automação de projeto e objetos de procura de configuração de projeto do projeto base todos os implementam essa interface.
+- O projeto base recupera os extensores do subtipo projeto implementando a <xref:EnvDTE80.IInternalExtenderProvider> interface. Os objetos procurar, automação do projeto e configuração do projeto procuram o projeto base todos implementam essa interface.
 
-- A implementação de <xref:EnvDTE80.IInternalExtenderProvider> para o objeto de navegação do projeto e o objeto de automação de projeto representante para o <xref:EnvDTE80.IInternalExtenderProvider> implementação do agregador de subtipo de projeto (ou seja, eles `QueryInterface` para <xref:EnvDTE80.IInternalExtenderProvider> sobre o <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> objeto de projeto).
+- A implementação de <xref:EnvDTE80.IInternalExtenderProvider> para o objeto procurar no projeto e o objeto de automação do projeto <xref:EnvDTE80.IInternalExtenderProvider> delegam para a implementação do agregador de subtipo do projeto `QueryInterface` ( <xref:EnvDTE80.IInternalExtenderProvider> ou seja <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> , para no objeto Project).
 
-- O objeto de procura de configuração do projeto base também implementa <xref:EnvDTE80.IInternalExtenderProvider> ligar diretamente no extensor de automação do objeto de configuração do subtipo de projeto. Sua implementação delega para o <xref:EnvDTE80.IInternalExtenderProvider> interface implementada pelo agregador do subtipo de projeto.
+- O objeto de busca de configuração de projeto <xref:EnvDTE80.IInternalExtenderProvider> base também implementa para conectar diretamente o extensor de automação do objeto de configuração de subtipo do projeto. Sua implementação delega para a <xref:EnvDTE80.IInternalExtenderProvider> interface implementada pelo agregador de subtipo de projeto.
 
-- <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgBrowseObject.GetProjectItem%2A>, implementadas pelo objeto de procura de configuração de projeto, retorna o <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> objeto.
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgBrowseObject.GetProjectItem%2A>, implementado pelo objeto de procura de configuração do projeto, <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> retorna o objeto.
 
-- <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgBrowseObject.GetCfg%2A>, também é implementado pelo objeto de procura de configuração de projeto, retorna o <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfg> objeto.
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgBrowseObject.GetCfg%2A>, também implementado pelo objeto Browse de configuração do projeto, retorna <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfg> o objeto.
 
-- Um subtipo de projeto pode determinar as CATIDs apropriados para os diversos objetos extensíveis do projeto base no tempo de execução, recuperando o seguinte <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2> valores:
+- Um subtipo de projeto pode determinar os CATIDs apropriados para os vários objetos extensíveis do projeto base em tempo de execução, recuperando os seguintes <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2> valores:
 
-    - <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2.VSHPROPID_ExtObjectCATID>
+  - <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2.VSHPROPID_ExtObjectCATID>
 
-    - <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2.VSHPROPID_BrowseObjectCATID>
+  - <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2.VSHPROPID_BrowseObjectCATID>
 
-    - <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2.VSHPROPID_CfgBrowseObjectCATID>
+  - <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2.VSHPROPID_CfgBrowseObjectCATID>
 
-Para determinar as CATIDs do escopo do projeto, o subtipo de projeto recupera as propriedades acima para [VSITEMID. Raiz](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID#Microsoft_VisualStudio_VSConstants_VSITEMID_Root>) do `VSITEMID typedef`. Um subtipo de projeto talvez também queira controlar quais **páginas de propriedade** páginas da caixa de diálogo são exibidas para o projeto, configuração dependente e independentes da configuração. Alguns subtipos de projeto, talvez seja necessário remover páginas internas e adicionar a páginas específicas do subtipo de projeto. Para habilitar isso, as chamadas de projeto de cliente gerenciado a <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> método para as seguintes propriedades:
+Para determinar os CATIDs para o escopo do projeto, o subtipo do projeto recupera as propriedades acima para [VSITEMID. Raiz](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID#Microsoft_VisualStudio_VSConstants_VSITEMID_Root>) do `VSITEMID typedef`. Um subtipo de projeto também pode querer controlar quais páginas da caixa de diálogo **páginas de propriedades** são exibidas para o projeto, tanto a configuração dependente quanto a configuração independente. Alguns subtipos de projeto talvez precisem remover páginas internas e adicionar páginas específicas de subtipo de projeto. Para habilitar isso, o projeto cliente gerenciado chama o <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> método para as seguintes propriedades:
 
-- `VSHPROPID_PropertyPagesCLSIDList` — uma lista delimitada por ponto e vírgula de CLSIDs de páginas de propriedades de configuração independente.
+- `VSHPROPID_PropertyPagesCLSIDList`— uma lista delimitada por ponto-e-vírgula de CLSIDs de páginas de propriedades independentes de configuração.
 
-- `VSHPROPID_CfgPropertyPagesCLSIDList —` uma lista delimitada por ponto e vírgula de CLSIDs de páginas de propriedades de configuração dependente.
+- `VSHPROPID_CfgPropertyPagesCLSIDList —`uma lista delimitada por ponto-e-vírgula de CLSIDs de páginas de propriedades dependentes de configuração.
 
-Porque o projeto de agregações de subtipo de <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> do objeto, ele pode substituir a definição dessas propriedades para controlar quais **páginas de propriedade** caixas de diálogo são exibidas. O subtipo de projeto pode recuperar essas propriedades do projeto base interno e, em seguida, adicionar ou remover CLSIDs conforme necessário.
+Como o subtipo de projeto agrega o <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> objeto, ele pode substituir a definição dessas propriedades para controlar quais caixas de diálogo de **páginas de propriedades** são exibidas. O subtipo do projeto pode recuperar essas propriedades do projeto base interno e, em seguida, adicionar ou remover CLSIDs conforme necessário.
 
-Novas páginas de propriedades adicionadas por um subtipo de projeto são entregues a um objeto de procura de configuração de projeto da implementação do projeto base. Esse objeto de procura de configuração de projeto dá suporte a extensores de automação. Para obter mais informações sobre AutomationExtenders, consulte [implementando e usando extensores de automação](https://msdn.microsoft.com/Library/0d5c218c-f412-4b28-ab0c-33a611f62356). As páginas de propriedades implementadas pela chamada de subtipo de projeto <xref:EnvDTE.Project.Extender%2A> para recuperar seu próprio objeto de procura de configuração de subtipo de projeto que estende o objeto de configuração de navegação do projeto base.
+Novas páginas de propriedades adicionadas por um subtipo de projeto são enviadas por um objeto de navegação de configuração de projeto da implementação do projeto base. Este objeto de procura de configuração de projeto dá suporte a extensores de automação. Para obter mais informações sobre o AutomationExtenders, consulte [implementando e usando extensores de automação](https://msdn.microsoft.com/Library/0d5c218c-f412-4b28-ab0c-33a611f62356). As páginas de propriedades implementadas pela chamada <xref:EnvDTE.Project.Extender%2A> de subtipo de projeto para recuperar seu próprio projeto de pesquisa de configuração de subtipo, que estende o objeto de procura de configuração do projeto base.
 
 ## <a name="see-also"></a>Consulte também
 

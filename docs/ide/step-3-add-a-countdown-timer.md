@@ -1,25 +1,33 @@
 ---
 title: 'Etapa 3: Adicionar um temporizador de contagem regressiva'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: tutorial
+ms.prod: visual-studio-windows
+ms.technology: vs-ide-general
+dev_langs:
+- CSharp
+- VB
 ms.assetid: 62670a2b-efdc-45c6-9646-9b17eeb33dcb
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d99987a16d0e4f6ff67e92fdb900600cd7943a6
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: f5ee65126fb89f2725b69d196e0659c622d9c389
+ms.sourcegitcommit: 98b02f87c7aa1f5eb7f0d1c86bfa36efa8580c57
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430759"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72314110"
 ---
 # <a name="step-3-add-a-countdown-timer"></a>Etapa 3: Adicionar um temporizador de contagem regressiva
+
 Na terceira parte deste tutorial, você adicionará um timer de contagem regressiva para controlar o número de segundos restantes até o término do teste.
 
 > [!NOTE]
-> Esse tópico faz parte de uma série de tutoriais sobre conceitos de codificação básica. Para obter uma visão geral do tutorial, confira [Tutorial 2: Criar um teste de matemática temporizado](../ide/tutorial-2-create-a-timed-math-quiz.md).
+> Esse tópico faz parte de uma série de tutoriais sobre conceitos de codificação básica.
+> - Para obter uma visão geral do tutorial, confira [Tutorial 2: criar um teste de matemática temporizado](../ide/tutorial-2-create-a-timed-math-quiz.md).
+> - Para baixar uma versão completa do código, consulte [exemplo de tutorial de teste de matemática completo](https://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c).
 
 ## <a name="to-add-a-countdown-timer"></a>Para adicionar um timer de contagem regressiva
 
@@ -27,6 +35,8 @@ Na terceira parte deste tutorial, você adicionará um timer de contagem regress
 
      [!code-vb[VbExpressTutorial3Step3#5](../ide/codesnippet/VisualBasic/step-3-add-a-countdown-timer_1.vb)]
      [!code-csharp[VbExpressTutorial3Step3#5](../ide/codesnippet/CSharp/step-3-add-a-countdown-timer_1.cs)]
+
+     [!INCLUDE [devlang-control-csharp-vb](./includes/devlang-control-csharp-vb.md)]
 
      Agora você precisa de um método que realmente conte os segundos, assim como um timer, que gera um evento após a quantidade de tempo que você especificar.
 
@@ -54,7 +64,7 @@ Na terceira parte deste tutorial, você adicionará um timer de contagem regress
      Você adicionou uma instrução de `if else`, que é como você informa os programas a tomar decisões. Uma instrução de `if else` se parece com o seguinte.
 
     > [!NOTE]
-    > O exemplo a seguir é somente para ilustração – não o adicione ao seu projeto.
+    > O exemplo a seguir é apenas para demonstração – não o adicione ao seu projeto.
 
     ```vb
     If (something that your program will check) Then
@@ -99,10 +109,11 @@ Na terceira parte deste tutorial, você adicionará um timer de contagem regress
 
      O temporizador inicia a contagem regressiva. Quando o tempo se esgota, o teste termina e a resposta aparece. A ilustração a seguir mostra o teste em andamento.
 
-     ![Teste de matemática em andamento](../ide/media/express_addcountdown.png) Teste de matemática em andamento
+     ![Teste de matemática em andamento](../ide/media/express_addcountdown.png)<br/>
+*Teste de matemática em andamento*
 
 ## <a name="to-continue-or-review"></a>Para continuar ou revisar
 
-- Para ir para a próxima etapa do tutorial, confira [Etapa 4: Adicionar o método CheckTheAnswer()](../ide/step-4-add-the-checktheanswer-parens-method.md).
+- Para ir para a próxima etapa do tutorial, consulte **[etapa 4: Adicionar o método CheckTheAnswer ()](../ide/step-4-add-the-checktheanswer-parens-method.md)** .
 
-- Para retornar à etapa anterior do tutorial, confira [Etapa 2: Criar um problema de adição aleatório](../ide/step-2-create-a-random-addition-problem.md).
+- Para retornar à etapa anterior do tutorial, veja [Etapa 2: Criar um problema de adição aleatório](../ide/step-2-create-a-random-addition-problem.md).

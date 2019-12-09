@@ -13,18 +13,18 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c6cd466a41c61da929e9acc1619f384a3621f9c0
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58999898"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68204337"
 ---
 # <a name="fullclassname-element-visual-studio-template-wizard-extension"></a>Elemento FullClassName (Extensão do Assistente de Modelo do Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 O nome totalmente qualificado da classe que implementa o `IWizard` interface.  
   
- \<VSTemplate>  
+ \<VSTemplate >  
  \<WizardExtension >  
  ...  
  \<FullClassName>  
@@ -92,4 +92,4 @@ O nome totalmente qualificado da classe que implementa o `IWizard` interface.
 ## <a name="see-also"></a>Consulte também  
  [Referência de esquema de modelo do Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
  [Criando modelos de projeto e de item](../ide/creating-project-and-item-templates.md)   
- [Como: Usar assistentes com modelos de projeto](../extensibility/how-to-use-wizards-with-project-templates.md)
+ [Como: usar assistentes com modelos de projeto](../extensibility/how-to-use-wizards-with-project-templates.md)

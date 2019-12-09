@@ -1,44 +1,42 @@
 ---
 title: IDiaSectionContrib::get_notCached | Microsoft Docs
-ms.date: 11/15/2016
-ms.prod: visual-studio-dev14
-ms.technology: vs-ide-debug
-ms.topic: reference
+ms.date: 11/04/2016
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaSectionContrib::get_notCached method
 ms.assetid: 5408ea53-f64c-431e-9f62-62819026b038
-caps.latest.revision: 11
-author: MikeJo5000
+author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: dd58933146cea4a953c0c4290cebb0d12af8f199
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.workload:
+- multiple
+ms.openlocfilehash: 210f923c894c423fbdba75b1deb503ea83068a0d
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839661"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742592"
 ---
-# <a name="idiasectioncontribgetnotcached"></a>IDiaSectionContrib::get_notCached
-[!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
+# <a name="idiasectioncontribget_notcached"></a>IDiaSectionContrib::get_notCached
+Recupera um sinalizador que indica se a seção não pode ser armazenada em cache.
 
-Recupera um sinalizador que indica se a seção não pode ser armazenados em cache.  
-  
-## <a name="syntax"></a>Sintaxe  
-  
-```cpp#  
-HRESULT get_notCached (   
-   BOOL* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parâmetros  
- `pRetVal`  
- [out] Retorna `TRUE` se a seção não pode ser armazenado em cache; caso contrário, retornará `FALSE`.  
-  
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não há suporte para essa propriedade. Caso contrário, retornará um código de erro.  
-  
-## <a name="see-also"></a>Consulte também  
- [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)
+## <a name="syntax"></a>Sintaxe
+
+```C++
+HRESULT get_notCached ( 
+   BOOL* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parâmetros
+ `pRetVal`
+
+fora Retornará `TRUE` se a seção não puder ser armazenada em cache; caso contrário, retorna `FALSE`.
+
+## <a name="return-value"></a>Valor retornado
+ Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não houver suporte para essa propriedade. Caso contrário, retornará um código de erro.
+
+## <a name="see-also"></a>Consulte também
+- [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

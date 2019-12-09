@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugFunctionObject::CreateObject method
 ms.assetid: c4c99dd5-609a-4e7c-8f29-eb728f57e995
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 54d1e6c21cdf4e16db69cbad0947e864e7c1847e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: dc0632f429a547d4b17fe57bec4582fea623ee24
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62919408"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66320942"
 ---
 # <a name="idebugfunctionobjectcreateobject"></a>IDebugFunctionObject::CreateObject
 Cria um objeto usando um construtor.
@@ -42,22 +45,18 @@ int CreateObject(
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `pConstructor`
+## <a name="parameters"></a>Parâmetros
+`pConstructor`\
+[in] Uma [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) objeto que representa o construtor do objeto a ser criado.
 
- [in] Uma [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) objeto que representa o construtor do objeto a ser criado.
+`dwArgs`\
+[in] O número de parâmetros no `pArg` matriz. Representa o número de parâmetros passados para o construtor.
 
- `dwArgs`
+`pArg`\
+[in] Uma matriz de [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) objetos que representam os parâmetros passados para o construtor.
 
- [in] O número de parâmetros no `pArg` matriz. Representa o número de parâmetros passados para o construtor.
-
- `pArg`
-
- [in] Uma matriz de [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) objetos que representam os parâmetros passados para o construtor.
-
- `ppObject`
-
- [out] Retorna um `IDebugObject` que representa o objeto recém-criado.
+`ppObject`\
+[out] Retorna um `IDebugObject` que representa o objeto recém-criado.
 
 ## <a name="return-value"></a>Valor de retorno
  Se for bem-sucedido, retornará S_OK; Caso contrário, retornará um código de erro.

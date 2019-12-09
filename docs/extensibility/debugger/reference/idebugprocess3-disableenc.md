@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProcess3::DisableENC
 ms.assetid: cffdbdac-4d76-4aeb-aa55-5d0410db99f1
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2cc26c9d2dae65d8bab0126be5a62b144ebf42b7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: a3ee29540a11248a299d65c32cf2c8396b1fa2ef
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63413292"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66314056"
 ---
 # <a name="idebugprocess3disableenc"></a>IDebugProcess3::DisableENC
 Esse método explicitamente desabilita editar e continuar sobre esse processo (e todos os programas que ele contém). Um fornecedor de porta personalizado deve sempre retornar `E_NOTIMPL`.
@@ -35,10 +38,9 @@ HRESULT DisableENC(
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `reason`
-
- [in] Um valor a partir de [EncUnavailableReason](../../../extensibility/debugger/reference/encunavailablereason.md) enumeração.
+## <a name="parameters"></a>Parâmetros
+`reason`\
+[in] Um valor a partir de [EncUnavailableReason](../../../extensibility/debugger/reference/encunavailablereason.md) enumeração.
 
 ## <a name="return-value"></a>Valor de retorno
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retornará o código de erro.

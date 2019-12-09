@@ -7,17 +7,17 @@ helpviewer_keywords:
 - toolbars [Visual Studio], adding icons to commands
 - commands [Visual Studio], adding icons
 ms.assetid: 362a0c7e-5729-4297-a83f-1aba1a37fd44
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a0d6a6cfeb3cb222d2ef58233b072f80e50c8d9e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d1c54ee6b448e5830b478f10029a0d2d958e7699
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62891885"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352371"
 ---
 # <a name="add-icons-to-menu-commands"></a>Adicionar ícones a comandos de menu
 Comandos podem aparecer nos menus e barras de ferramentas. Na barra de ferramentas, é comum para um comando a ser exibido com apenas um ícone (para economizar espaço) ao mesmo tempo nos menus de que um comando normalmente aparece com um ícone e o texto.
@@ -57,7 +57,7 @@ Comandos podem aparecer nos menus e barras de ferramentas. Na barra de ferrament
 
     - Defina as `guid` valor para o nome da `<GuidSymbol>` elemento que você criou na etapa anterior.
 
-    - Defina as `href` valor para o caminho relativo do arquivo de bitmap (nesse caso **recursos\\< nome do arquivo de ícone\>**.
+    - Defina as `href` valor para o caminho relativo do arquivo de bitmap (nesse caso **recursos\\< nome do arquivo de ícone\>** .
 
     - Defina o `usedList` valor para o IDSymbol que você criou anteriormente. Esse atributo especifica uma lista delimitada por vírgulas dos ícones para ser usado em um VSPackage. Ícones não está na lista são excluídos do formulário de compilação.
 

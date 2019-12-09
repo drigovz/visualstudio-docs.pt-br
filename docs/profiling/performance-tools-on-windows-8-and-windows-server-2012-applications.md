@@ -1,18 +1,19 @@
 ---
-title: Ferramentas de Desempenho em aplicativos do Windows 8 e Windows Server 2012 | Microsoft Docs
+title: Ferramentas de desempenho em aplicativos do Windows 8 e do Windows Server 2012
 ms.date: 06/19/2017
 ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 8258c259b7f065e28ba7a6e199ddddb432dfb4b6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 3938e7dc1b3ec33c8a4cf74b6957067bbdfd6185
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62798201"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778421"
 ---
 # <a name="performance-tools-on-windows-8-and-windows-server-2012-applications"></a>Ferramentas de desempenho em aplicativos do Windows 8 e do Windows Server 2012
 
@@ -37,7 +38,7 @@ Não há suporte para esses recursos e opções de criação de perfil ao criar 
 
 Para saber mais sobre a criação de perfil de aplicativos UWP, veja os seguintes artigos:
 
-- [Executar aplicativos UWP no computador local](/visualstudio/debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml)
+- [Executar aplicativos UWP no computador local](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)
 - [Executar aplicativos UWP em um computador remoto](../debugger/run-windows-store-apps-on-a-remote-machine.md)
 - [Introdução às ferramentas de criação de perfil](profiling-feature-tour.md)
 - [Memória JavaScript](../profiling/javascript-memory.md)
@@ -72,7 +73,7 @@ Ambas as ferramentas são instaladas com o Visual Studio para uso no computador 
 
 Para analisar aplicativos em dispositivos que não têm o Visual Studio instalado, faça o seguinte:
 
-- Baixe as ferramentas como parte das Ferramentas Remotas para Visual Studio do [site do MSDN](http://go.microsoft.com/fwlink/?LinkID=219549).
+- Baixe as ferramentas como parte das Ferramentas Remotas para Visual Studio do [site do MSDN](https://visualstudio.microsoft.com/#downloads+d-additional-software).
 
 - Copie e execute o programa de instalação de ferramentas do criador de perfil autônomo do seu computador do Visual Studio. Para obter o caminho para as ferramentas de criação de perfil, confira [Especificar o caminho para ferramentas de linha de comando](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Escolha o programa de instalação do sistema operacional (x86/x64) do computador remoto.
 
@@ -109,7 +110,7 @@ Você deve adicionar a opção de coleta de dados de interação entre camadas p
 
 **Coletando dados TIP em um computador remoto**
 
-Para coletar os dados de interação de camadas em um computador remoto, você precisa copiar o arquivo **vs\_profiler\_**_\<Platform>_**\_**_\<Language>_**.exe** da pasta *%VSInstallDir%\Team Tools\Performance Tools\Setups* de um computador com o Visual Studio para o computador remoto e instalá-lo. Não é possível usar as ferramentas de criação de perfil no pacote de download da [Depuração Remota](../debugger/remote-debugging.md).
+Para coletar os dados de interação de camadas em um computador remoto, você precisa copiar o arquivo **vs\_profiler\_** _\<Platform>_ **\_** _\<Language>_ **.exe** da pasta *%VSInstallDir%\Team Tools\Performance Tools\Setups* de um computador com o Visual Studio para o computador remoto e instalá-lo. Não é possível usar as ferramentas de criação de perfil no pacote de download da [Depuração Remota](../debugger/remote-debugging.md).
 
 Você pode usar [VSPerfCmd](../profiling/vsperfcmd.md) ou [VSPerfASPNetCmd](../profiling/vsperfaspnetcmd.md) para coletar dados de criação de perfil.
 

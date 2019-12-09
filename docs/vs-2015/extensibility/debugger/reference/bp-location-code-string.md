@@ -13,11 +13,11 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 50c48098aee3b1077edec99210e7ab624d2a8d6c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58924139"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68153458"
 ---
 # <a name="bplocationcodestring"></a>BP_LOCATION_CODE_STRING
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ typedef struct _BP_LOCATION_CODE_STRING { 
  Essa estrutura é um membro do [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) estrutura como parte de uma união.  
   
 ## <a name="requirements"></a>Requisitos  
- Header: msdbg.h  
+ Cabeçalho: msdbg.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   

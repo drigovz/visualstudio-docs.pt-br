@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c97290f878a8b3b0835c7e3ac33aa2ebecfb019
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: c0dfee1fd4dfda2c70da1061fed89ed8864153e0
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63400587"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738886"
 ---
-# <a name="idiasymbolgetvirtualbaseclass"></a>IDiaSymbol::get_virtualBaseClass
+# <a name="idiasymbolget_virtualbaseclass"></a>IDiaSymbol::get_virtualBaseClass
 Recupera um sinalizador que especifica se o tipo de dados definido pelo usuário é uma classe base virtual.
 
 ## <a name="syntax"></a>Sintaxe
@@ -33,13 +33,13 @@ HRESULT get_virtualBaseClass ( 
 #### <a name="parameters"></a>Parâmetros
  `pRetVal`
 
-[out] Retorna `TRUE` se o tipo de dados definido pelo usuário é uma classe base virtual; caso contrário, retornará `FALSE`.
+fora Retorna `TRUE` se o tipo de dados definido pelo usuário for uma classe base virtual; caso contrário, retorna `FALSE`.
 
-## <a name="return-value"></a>Valor de retorno
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE` ou um código de erro.
 
 > [!NOTE]
-> Um valor de retorno `S_FALSE` significa que a propriedade não está disponível para o símbolo.
+> Um valor de retorno de `S_FALSE` significa que a propriedade não está disponível para o símbolo.
 
 ## <a name="see-also"></a>Consulte também
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

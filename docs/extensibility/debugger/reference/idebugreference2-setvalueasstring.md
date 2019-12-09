@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugReference2::SetValueAsString
 ms.assetid: 9a508ced-fd54-44f5-bb42-ec15c80384d7
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 67e3ac6bda70a25baf7546c709849c650372c649
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 2cb58326f36e88768ab9144f08ded8c85410e1c9
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62869003"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66339824"
 ---
 # <a name="idebugreference2setvalueasstring"></a>IDebugReference2::SetValueAsString
 Define o valor de uma referência de uma cadeia de caracteres. Reservado para uso futuro.
@@ -40,18 +43,15 @@ int SetValueAsString ( 
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `pszValue`
+## <a name="parameters"></a>Parâmetros
+`pszValue`\
+[in] O valor como uma cadeia de caracteres.
 
- [in] O valor como uma cadeia de caracteres.
+`dwRadix`\
+[in] A base a ser usada na formatação de todas as informações numéricas.
 
- `dwRadix`
-
- [in] A base a ser usada na formatação de todas as informações numéricas.
-
- `dwTimeout`
-
- [in] Tempo máximo, em milissegundos, para aguardar antes de retornar do método. Use `INFINITE` para aguardar indefinidamente.
+`dwTimeout`\
+[in] Tempo máximo, em milissegundos, para aguardar antes de retornar do método. Use `INFINITE` para aguardar indefinidamente.
 
 ## <a name="return-value"></a>Valor de retorno
  Sempre retorna `E_NOTIMPL`.

@@ -1,61 +1,61 @@
 ---
-title: Modos de exibição únicos e com várias guias | Microsoft Docs
+title: Exibições únicas e de várias guias | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], custom - single and multi-tab views
 ms.assetid: e3611704-349f-4323-b03c-f2b0a445d781
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3676a19b5b5b7a4050a7d48385e76954ad0bcc96
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c651bda042524b2ed3188fef880f848bb0087433
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62432825"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72720068"
 ---
 # <a name="single-and-multi-tab-views"></a>Exibição de guia única e multiguias
-Um editor pode criar diferentes tipos de modos de exibição. Um exemplo é uma janela do editor de código, outra é um designer de formulários.
+Um editor pode criar diferentes tipos de exibições. Um exemplo é uma janela do editor de código, outra é um designer de formulários.
 
- Uma exibição com várias guias é uma exibição que tem várias guias. Por exemplo, o editor de HTML possui duas guias na parte inferior: **Design** e **origem**, cada uma exibição lógica. O modo de design exibe uma página da web processada, enquanto o outro exibe o HTML que inclui a página da web.
+ Uma exibição com várias guias é uma exibição com várias guias. Por exemplo, o editor de HTML tem duas guias na parte inferior: **design** e **origem**, cada uma das exibições lógicas. A exibição Design exibe uma página da Web renderizada, enquanto a outra exibe o HTML que compõe a página da Web.
 
 ## <a name="accessing-physical-views"></a>Acessando exibições físicas
- Modos de exibição físicos hospedam objetos de exibição de documento, cada um representando uma exibição dos dados no buffer, como o código ou um formulário. Da mesma forma, cada objeto de exibição de documento tem uma exibição física (identificado por algo conhecido como uma cadeia de caracteres de exibição física) e, em geral, uma única visualização lógica.
+ As exibições físicas hospedam objetos de exibição de documento, cada um representando uma exibição dos dados no buffer, como um código ou um formulário. De acordo, cada objeto de exibição de documento tem uma exibição física (identificada por algo conhecido como uma cadeia de caracteres de exibição física) e, geralmente, uma única exibição lógica.
 
- Em alguns casos, no entanto, um modo de exibição físico pode ter dois ou mais modos de exibição lógicos. Alguns exemplos são um editor que tem uma janela dividida com modos de exibição lado a lado, ou um designer de formulários que tem um modo de exibição de design/GUI e um modo de exibição de código behind-o formulário.
+ No entanto, em alguns casos, uma exibição física pode ter duas ou mais exibições lógicas. Alguns exemplos são um editor que tem uma janela dividida com exibições lado a lado ou um designer de formulários que tem um modo de exibição de GUI/design e uma exibição de código por trás do formulário.
 
- Para habilitar seu editor acessar todas as exibições de físicas disponíveis, você deve criar uma cadeia de caracteres de exibição física exclusivo para cada tipo de objeto de exibição de documento que pode criar a sua fábrica de editor. Por exemplo, o [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] fábrica de editor pode criar documento objetos de exibição para uma janela de código e uma janela de designer de formulários.
+ Para permitir que o editor acesse todas as exibições físicas disponíveis, você deve criar uma cadeia de caracteres de exibição física exclusiva para cada tipo de objeto de exibição de documento que sua fábrica de editor pode criar. Por exemplo, a fábrica do editor de [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] pode criar objetos de exibição de documento para uma janela de código e uma janela do designer de formulários.
 
-## <a name="creating-multi-tabbed-views"></a>Criando modos de exibição com várias guias
- Embora um objeto de exibição de documento deve ser associado uma exibição física por meio de uma cadeia de caracteres de exibição física exclusivo, você pode colocar várias guias dentro da exibição física para ativar a visualização de dados de maneiras diferentes. Nessa configuração com várias guias, todas as guias estão associadas com a mesma cadeia de caracteres de exibição física, mas cada guia é fornecido uma GUID de exibição lógica diferente.
+## <a name="creating-multi-tabbed-views"></a>Criando exibições com várias guias
+ Embora um objeto de exibição de documento deva ser associado a uma exibição física por meio de uma cadeia de caracteres de exibição física exclusiva, você pode inserir várias guias na exibição física para habilitar a exibição de dados de diferentes maneiras. Nessa configuração com várias guias, todas as guias são associadas à mesma cadeia de caracteres de exibição física, mas cada guia recebe um GUID de exibição lógica diferente.
 
- Para criar uma exibição com várias guias para um editor, implemente a <xref:Microsoft.VisualStudio.Shell.Interop.IVsMultiViewDocumentView> da interface e, em seguida, associar uma exibição lógica diferente GUID (<xref:Microsoft.VisualStudio.Shell.Interop.LogicalViewID>) com cada guia que você cria.
+ Para criar uma exibição com várias guias para um editor, implemente a interface <xref:Microsoft.VisualStudio.Shell.Interop.IVsMultiViewDocumentView> e associe um GUID de exibição lógica diferente (<xref:Microsoft.VisualStudio.Shell.Interop.LogicalViewID>) a cada guia que você criar.
 
- O editor de HTML do Visual Studio é um exemplo de um editor com um modo de exibição com várias guia. Ele tem **Design** e **origem** guias. Para habilitar isso, uma exibição lógica diferente está associada com cada guia `LOGICALVIEWID_TextView` para o **Design** guia e `LOGICALVIEWID_Code` para o **origem** guia.
+ O editor de HTML do Visual Studio é um exemplo de um editor com uma exibição de várias guias. Ele tem guias de **design** e **origem** . Para habilitar isso, uma exibição lógica diferente é associada a cada guia, `LOGICALVIEWID_TextView` para a guia **design** e `LOGICALVIEWID_Code` para a guia **origem** .
 
- Ao especificar o modo de exibição lógico apropriado, um VSPackage pode acessar o modo de exibição que corresponde a uma finalidade específica, como criação de um formulário, edição de código ou depurar o código. No entanto, uma das janelas deve ser identificada pela cadeia de caracteres nula, e isso deve corresponder da exibição lógica primária (`LOGVIEWID_Primary`).
+ Ao especificar a exibição lógica apropriada, um VSPackage pode acessar a exibição que corresponde a uma finalidade específica, como a criação de um formulário, edição de código ou depuração de código. No entanto, uma das janelas deve ser identificada pela cadeia de caracteres nula e deve corresponder à exibição lógica primária (`LOGVIEWID_Primary`).
 
- A tabela a seguir lista os valores de exibição lógico disponível e seu uso.
+ A tabela a seguir lista os valores de exibição lógica disponíveis e seu uso.
 
 |GUID DE LOGVIEWID|Uso recomendado|
 |--------------------|---------------------|
-|`LOGVIEWID_Primary`|Modo de exibição padrão/primário da fábrica de editor.<br /><br /> Todas as fábricas de editor devem dar suporte a esse valor. Este modo de exibição deve usar a cadeia de caracteres nula como sua cadeia de caracteres de exibição física. Pelo menos uma exibição lógica deve ser definida para esse valor.|
-|`LOGVIEWID_Debugging`|Depuração de modo de exibição. Normalmente, `LOGVIEWID_Debugging` mapeia para a mesma exibição da `LOGVIEWID_Code`.|
-|`LOGVIEWID_Code`|Modo iniciado pelos **Exibir código** comando.|
-|`LOGVIEWID_Designer`|Modo iniciado pelos **Exibir formulário** comando.|
-|`LOGVIEWID_TextView`|Exibição do editor de texto. Esta é a exibição que retorna <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow>, na qual você pode acessar <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>.|
-|`LOGVIEWID_UserChooseView`|Solicita que o usuário escolha qual modo de exibição para usar.|
-|`LOGVIEWID_ProjectSpecificEditor`|Passado pela **abrir com** caixa de diálogo<br /><br /> <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject.OpenItem%2A><br /><br /> Quando o usuário escolhe a entrada "(editor padrão do projeto)".|
+|`LOGVIEWID_Primary`|Exibição padrão/primária da fábrica do editor.<br /><br /> Todas as fábricas de editor devem dar suporte a esse valor. Esta exibição deve usar a cadeia de caracteres nula como sua cadeia de caracteres de exibição física. Pelo menos uma exibição lógica deve ser definida para esse valor.|
+|`LOGVIEWID_Debugging`|Modo de depuração. Normalmente, `LOGVIEWID_Debugging` mapeia para a mesma exibição que `LOGVIEWID_Code`.|
+|`LOGVIEWID_Code`|Exibição iniciada pelo comando **View Code** .|
+|`LOGVIEWID_Designer`|Exibição iniciada pelo comando **Exibir formulário** .|
+|`LOGVIEWID_TextView`|Exibição do editor de texto. Esta é a exibição que retorna <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow>, da qual você pode acessar <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>.|
+|`LOGVIEWID_UserChooseView`|Solicita que o usuário escolha qual exibição deve ser usada.|
+|`LOGVIEWID_ProjectSpecificEditor`|Passado pela caixa de diálogo **abrir com** para<br /><br /> <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject.OpenItem%2A><br /><br /> Quando o usuário escolhe a entrada "(editor padrão do projeto)".|
 
- Embora o modo de exibição lógico GUIDs são extensíveis, você pode usar apenas os GUIDs de modo de exibição lógico definidos no seu VSPackage.
+ Embora os GUIDs de exibição lógica sejam extensíveis, você pode usar apenas os GUIDs de exibição lógica definidos em seu VSPackage.
 
- Durante o desligamento, o Visual Studio mantém o GUID da fábrica de editor e as cadeias de caracteres de exibição física associadas com a janela do documento para que possa ser usado para abrir novamente as janelas do documento quando a solução for aberta novamente. Apenas as janelas que estão abertas quando uma solução é fechada são persistidas no arquivo de solução (. suo). Esses valores correspondem do `VSFPROPID_guidEditorType` e `VSFPROPID_pszPhysicalView` valores passados no `propid` parâmetro no <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.GetProperty%2A> método.
+ Durante o desligamento, o Visual Studio retém o GUID da fábrica do editor e as cadeias de caracteres de exibição física associadas à janela do documento para que ela possa ser usada para reabrir janelas de documentos quando a solução é aberta novamente. Somente as janelas abertas quando uma solução é fechada são mantidas no arquivo da solução (. suo). Esses valores correspondem ao `VSFPROPID_guidEditorType` e `VSFPROPID_pszPhysicalView` valores passados no parâmetro `propid` no método <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.GetProperty%2A>.
 
 ## <a name="example"></a>Exemplo
- Este trecho de código ilustra como o <xref:Microsoft.VisualStudio.Shell.Interop.LogicalViewID.TextView> objeto é usado para acessar uma exibição que implementa `IVsCodeWindow`. Nesse caso, o <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShellOpenDocument> service é usado para chamar <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenDocumentViaProject%2A> e a solicitação `LOGVIEWID_TextView`, que obtém um ponteiro para um quadro de janela. Um ponteiro para o objeto de exibição de documento é obtido chamando <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.GetProperty%2A> e especificando um valor de `VSFPROPID_DocView`. Do objeto de visualização de documento `QueryInterface` é chamado para `IVsCodeWindow`. A expectativa nesse caso é que um editor de texto é retornado, e então o objeto de exibição de documento retornado no <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.GetProperty%2A> método é uma janela de código.
+ Este trecho de código ilustra como o objeto <xref:Microsoft.VisualStudio.Shell.Interop.LogicalViewID.TextView> é usado para acessar uma exibição que implementa `IVsCodeWindow`. Nesse caso, o serviço <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShellOpenDocument> é usado para chamar <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenDocumentViaProject%2A> e solicitar `LOGVIEWID_TextView`, que obtém um ponteiro para um quadro de janela. Um ponteiro para o objeto de exibição de documento é obtido chamando <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.GetProperty%2A> e especificando um valor de `VSFPROPID_DocView`. No objeto de exibição de documento, `QueryInterface` é chamado para `IVsCodeWindow`. Nesse caso, a expectativa é que um editor de texto seja retornado e, portanto, o objeto de exibição de documento retornado no método <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.GetProperty%2A> é uma janela de código.
 
 ```cpp
 HRESULT CFindTool::GotoFileLocation(const WCHAR * szFile, long iLine, long iStart, long iLen)
@@ -114,5 +114,5 @@ Error:
 
 ## <a name="see-also"></a>Consulte também
 - [Suporte a várias exibições de documento](../extensibility/supporting-multiple-document-views.md)
-- [Como: anexar exibições a dados de documento](../extensibility/how-to-attach-views-to-document-data.md)
+- [Como anexar exibições para dados de documentos](../extensibility/how-to-attach-views-to-document-data.md)
 - [Criar designers e editores personalizados](../extensibility/creating-custom-editors-and-designers.md)

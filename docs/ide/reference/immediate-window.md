@@ -11,17 +11,17 @@ helpviewer_keywords:
 - Immediate window
 - first-chance exception notifications
 ms.assetid: d33e7937-73f3-4c69-9df0-777a8713c6f2
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e3a8315b087e259e7e1e37dfa8ab30d476bea308
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: fa5f804c22090fa79586549db00b13d824a54690
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62995253"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72662535"
 ---
 # <a name="immediate-window"></a>Janela Imediata
 
@@ -78,7 +78,7 @@ Você pode usar a janela **Imediato** para executar uma função ou sub-rotina e
 
     A janela **Imediato** executa `MyFunction` e exibe `4`.
 
-Se a função ou a sub-rotina contiverem um ponto de interrupção, o Visual Studio interromperá a execução no ponto apropriado. Então, você poderá usar o depurador do Windows para examinar o estado do programa. Para obter mais informações, confira [Passo a passo: Depuração em tempo de design](../../debugger/walkthrough-debugging-at-design-time.md).
+Se a função ou a sub-rotina contiverem um ponto de interrupção, o Visual Studio interromperá a execução no ponto apropriado. Então, você poderá usar o depurador do Windows para examinar o estado do programa. Para obter mais informações, consulte [Walkthrough: Depurando em tempo de design](../../debugger/walkthrough-debugging-at-design-time.md).
 
 Não é possível usar a avaliação de expressão em tempo de design em tipos de projetos que exigem a inicialização de um ambiente de execução, incluindo projetos do Visual Studio Tools para Office, projetos Web, projetos de Dispositivo Inteligente e projetos do SQL.
 
@@ -134,6 +134,6 @@ Em algumas configurações, notificações de exceção de primeira tentativa s�
 - [Navegar pelo Código com o Depurador](../../debugger/navigating-through-code-with-the-debugger.md)
 - [Janela Comando](../../ide/reference/command-window.md)
 - [Introdução ao depurador](../../debugger/debugger-feature-tour.md)
-- [Passo a passo: Depuração em tempo de design](../../debugger/walkthrough-debugging-at-design-time.md)
+- [Passo a passo: depuração em tempo de design](../../debugger/walkthrough-debugging-at-design-time.md)
 - [Aliases de comando do Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
 - [Usando expressões regulares no Visual Studio](../../ide/using-regular-expressions-in-visual-studio.md)

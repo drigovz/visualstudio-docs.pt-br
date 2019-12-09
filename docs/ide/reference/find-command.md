@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Find command
 - Edit.Find command
 ms.assetid: f0c705dc-2b97-423d-abbf-5584d4827208
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9cd4a50ebf4c27213d288cbab33647931c4a399d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 9ab914d62053b5cbefe92ee0ce8356c10dad82e6
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62790268"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748755"
 ---
 # <a name="find-command"></a>Comando Localizar
 Pesquisa arquivos usando um subconjunto das opções disponíveis na guia **Localizar nos Arquivos** da janela **Localizar e Substituir**.
@@ -31,35 +31,47 @@ Edit.Find findwhat [/case] [/doc | /proc | /open | /sel]
 ```
 
 ## <a name="arguments"></a>Arguments
- `findwhat` Necessário. O texto a ser correspondido.
+`findwhat` Necessário. O texto a ser correspondido.
 
 ## <a name="switches"></a>Opções
- /case ou /c Opcional. As correspondências ocorrerão somente se os caracteres maiúsculos e minúsculos corresponderem exatamente aos especificados no argumento `findwhat`.
+/case ou /c\
+Opcional. As correspondências ocorrerão somente se os caracteres maiúsculos e minúsculos corresponderem exatamente aos especificados no argumento `findwhat`.
 
- /doc ou /d Opcional. Pesquisa apenas o documento atual. Especifique apenas um dos escopos de pesquisa disponíveis, `/doc`, `/proc`, `/open` ou `/sel`.
+/doc ou /d\
+Opcional. Pesquisa apenas o documento atual. Especifique apenas um dos escopos de pesquisa disponíveis, `/doc`, `/proc`, `/open` ou `/sel`.
 
- /markall ou /m Opcional. Insere um gráfico em cada linha que contém uma correspondência de pesquisa no documento atual.
+/markall ou /m\
+Opcional. Insere um gráfico em cada linha que contém uma correspondência de pesquisa no documento atual.
 
- /open ou /o Opcional. Pesquisa todos os documentos abertos como se fossem um documento. Especifique apenas um dos escopos de pesquisa disponíveis, `/doc`, `/proc`, `/open` ou `/sel`.
+/open ou /o\
+Opcional. Pesquisa todos os documentos abertos como se fossem um documento. Especifique apenas um dos escopos de pesquisa disponíveis, `/doc`, `/proc`, `/open` ou `/sel`.
 
- /options ou /t Opcional. Exibe uma lista das configurações atuais da opção de localização e não realiza uma pesquisa.
+/options ou /t\
+Opcional. Exibe uma lista das configurações atuais da opção de localização e não realiza uma pesquisa.
 
- /proc ou /p Opcional. Pesquisa apenas o procedimento atual. Especifique apenas um dos escopos de pesquisa disponíveis, `/doc`, `/proc`, `/open` ou `/sel`.
+/proc ou /p\
+Opcional. Pesquisa apenas o procedimento atual. Especifique apenas um dos escopos de pesquisa disponíveis, `/doc`, `/proc`, `/open` ou `/sel`.
 
- /reset ou /e Opcional. Retorna as opções de localização para suas configurações padrão e não realiza uma pesquisa.
+/reset ou /e\
+Opcional. Retorna as opções de localização para suas configurações padrão e não realiza uma pesquisa.
 
- /sel ou /s Opcional. Pesquisa apenas a seleção atual. Especifique apenas um dos escopos de pesquisa disponíveis, `/doc`, `/proc`, `/open` ou `/sel`.
+/sel ou /s\
+Opcional. Pesquisa apenas a seleção atual. Especifique apenas um dos escopos de pesquisa disponíveis, `/doc`, `/proc`, `/open` ou `/sel`.
 
- /up ou /u Opcional. Pesquisa desde o local atual no arquivo até o início do arquivo. Por padrão, as pesquisas iniciam-se no local atual no arquivo e vão até o final do arquivo.
+/up ou /u\
+Opcional. Pesquisa desde o local atual no arquivo até o início do arquivo. Por padrão, as pesquisas iniciam-se no local atual no arquivo e vão até o final do arquivo.
 
- /regex ou /r Opcional. Usa caracteres especiais predefinidos no argumento `findwhat` como notações que representam padrões de texto, em vez de caracteres literais. Para obter uma lista completa de caracteres de expressão regular, consulte [Expressões Regulares](../../ide/using-regular-expressions-in-visual-studio.md).
+/regex ou /r\
+Opcional. Usa caracteres especiais predefinidos no argumento `findwhat` como notações que representam padrões de texto, em vez de caracteres literais. Para obter uma lista completa de caracteres de expressão regular, consulte [Expressões Regulares](../../ide/using-regular-expressions-in-visual-studio.md).
 
- /wild ou /l Opcional. Usa caracteres especiais predefinidos no argumento `findwhat` como notações para representar um caractere ou uma sequência de caracteres.
+/wild ou /l\
+Opcional. Usa caracteres especiais predefinidos no argumento `findwhat` como notações para representar um caractere ou uma sequência de caracteres.
 
- /word ou /w Opcional. Pesquisa somente palavras inteiras.
+/word ou /w\
+Opcional. Pesquisa somente palavras inteiras.
 
 ## <a name="example"></a>Exemplo
- Este exemplo realiza uma pesquisa que diferencia maiúsculas de minúsculas para a palavra "somestring" na seção de código selecionada no momento.
+Este exemplo realiza uma pesquisa que diferencia maiúsculas de minúsculas para a palavra "somestring" na seção de código selecionada no momento.
 
 ```cmd
 >Edit.Find somestring /sel /case

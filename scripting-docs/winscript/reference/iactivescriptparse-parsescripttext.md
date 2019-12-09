@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptParse::ParseScriptText | Microsoft Docs
+title: IActiveScriptParse::P arseScriptText | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3396aee8c044ee9b84d7d6256c6ad69a99965170
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b4f35b398a7348f4e2bdbaaa9ab3e322bf69ddb6
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62954876"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72561614"
 ---
 # <a name="iactivescriptparseparsescripttext"></a>IActiveScriptParse::ParseScriptText
-Analisa o scriptlet de código fornecido, adicionando declarações no namespace e avaliando o código conforme apropriado.  
+Analisa o scriptlet de código fornecido, adicionando declarações ao namespace e avaliando o código conforme apropriado.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -47,46 +47,46 @@ HRESULT ParseScriptText(
   
 |||  
 |-|-|  
-|`pstrCode`|[in] Endereço do texto de scriptlet para avaliar. A interpretação dessa cadeia de caracteres depende da linguagem de script.|  
-|`pstrItemName`|[in] Endereço do nome do item que fornece o contexto no qual o scriptlet deve ser avaliada. Se esse parâmetro for NULL, o código é avaliado no contexto de global do mecanismo de script.|  
-|`punkContext`|[in] Endereço do objeto de contexto. Esse objeto é reservado para uso em um ambiente de depuração, em que tal contexto pode ser fornecido pelo depurador para representar um contexto de tempo de execução ativo. Se esse parâmetro for NULL, o mecanismo usa `pstrItemName` para identificar o contexto.|  
-|`pstrDelimiter`|[in] Endereço do delimitador final do scriptlet. Quando `pstrCode` é analisado de um fluxo de texto, o host normalmente usa um delimitador, como duas aspas ("), para detectar o final do scriptlet. Esse parâmetro especifica o delimitador que o host usou, permitindo que o mecanismo de script forneça algum pré-processamento primitivo condicional (por exemplo, substituindo uma aspa simples ['] por duas aspas simples para uso como um delimitador). Exatamente como (e se) o script faz mecanismo usa essas informações depende o mecanismo de script. Definir esse parâmetro como `NULL` se o host não usou um delimitador para marcar o final do scriptlet.|  
-|`dwSourceContextCookie`|[in] Cookie usado para fins de depuração.|  
-|`ulStartingLineNumber`|[in] Valor com base em zero que especifica em qual linha a análise começará.|  
-|`dwFlags`|[in] Sinalizadores associados com o scriptlet. Pode ser uma combinação desses valores:|  
+|`pstrCode`|no Endereço do texto de scriptlet a ser avaliado. A interpretação dessa cadeia de caracteres depende da linguagem de script.|  
+|`pstrItemName`|no Endereço do nome do item que fornece o contexto no qual o scriptlet deve ser avaliado. Se esse parâmetro for nulo, o código será avaliado no contexto global do mecanismo de script.|  
+|`punkContext`|no Endereço do objeto de contexto. Esse objeto é reservado para uso em um ambiente de depuração, onde tal contexto pode ser fornecido pelo depurador para representar um contexto de tempo de execução ativo. Se esse parâmetro for nulo, o mecanismo usará `pstrItemName` para identificar o contexto.|  
+|`pstrDelimiter`|no Endereço do delimitador de fim do scriptlet. Quando `pstrCode` é analisada a partir de um fluxo de texto, o host geralmente usa um delimitador, como duas aspas simples (' '), para detectar o final do scriptlet. Esse parâmetro especifica o delimitador usado pelo host, permitindo que o mecanismo de script forneça algum pré-processamento primitivo condicional (por exemplo, substituindo uma aspa simples ['] por duas aspas simples para uso como um delimitador). Exatamente como (e se) o mecanismo de script usa essas informações depende do mecanismo de script. Defina esse parâmetro como `NULL` se o host não usou um delimitador para marcar o final do scriptlet.|  
+|`dwSourceContextCookie`|no Cookie usado para fins de depuração.|  
+|`ulStartingLineNumber`|no Valor de base zero que especifica em qual linha a análise será iniciada.|  
+|`dwFlags`|no Sinalizadores associados ao scriptlet. Pode ser uma combinação desses valores:|  
   
 |Valor|Significado|  
 |-----------|-------------|  
-|SCRIPTTEXT_ISEXPRESSION|Se a diferença entre uma expressão computacional e uma instrução for importante mas sintaticamente ambígua a linguagem de script, esse sinalizador Especifica que o scriptlet deve ser interpretado como uma expressão, em vez de uma instrução ou uma lista de instruções. Por padrão, as instruções são assumidas a menos que a opção correta pode ser determinada a partir da sintaxe do texto de scriptlet.|  
-|SCRIPTTEXT_ISPERSISTENT|Indica que o código adicionado durante esta chamada deve ser salvo se o mecanismo de script é salvo (por exemplo, por meio de uma chamada para `IPersist*::Save`), ou se o mecanismo de script for redefinido por uma transição de volta ao estado inicializado.|  
-|SCRIPTTEXT_ISVISIBLE|Indica que o texto do script deve ser visível (e, portanto, pode ser chamado por nome) como um método global no espaço para nome do script.|  
+|SCRIPTTEXT_ISEXPRESSION|Se a distinção entre uma expressão computacional e uma instrução for importante, mas sintaticamente ambígua na linguagem de script, esse sinalizador especificará que o scriptlet deve ser interpretado como uma expressão, em vez de uma instrução ou uma lista de instruções. Por padrão, são presumidas instruções a menos que a escolha correta possa ser determinada a partir da sintaxe do texto do scriptlet.|  
+|SCRIPTTEXT_ISPERSISTENT|Indica que o código adicionado durante essa chamada deve ser salvo se o mecanismo de script for salvo (por exemplo, por meio de uma chamada para `IPersist*::Save`) ou se o mecanismo de script for redefinido por meio de uma transição de volta para o estado inicializado.|  
+|SCRIPTTEXT_ISVISIBLE|Indica que o texto do script deve estar visível (e, portanto, pode ser chamado por nome) como um método global no espaço de nome do script.|  
   
 |||  
 |-|-|  
-|`pvarResult`|[out] Endereço de um buffer que recebe os resultados do processamento de scriptlet, ou `NULL` se o chamador não espera resultados (ou seja, o valor de SCRIPTTEXT_ISEXPRESSION não está definido).|  
-|`pexcepinfo`|[out] Endereço de uma estrutura que recebe informações de exceção. Essa estrutura é preenchida se `IActiveScriptParse::ParseScriptText` retorna DISP_E_EXCEPTION.|  
+|`pvarResult`|fora Endereço de um buffer que recebe os resultados do processamento de scriptlet ou `NULL` se o chamador não espera nenhum resultado (ou seja, o valor de SCRIPTTEXT_ISEXPRESSION não está definido).|  
+|`pexcepinfo`|fora Endereço de uma estrutura que recebe informações de exceção. Essa estrutura será preenchida se `IActiveScriptParse::ParseScriptText` retornar DISP_E_EXCEPTION.|  
   
-## <a name="return-value"></a>Valor de retorno  
+## <a name="return-value"></a>Valor retornado  
  Retorna um dos seguintes valores:  
   
-|Valor de retorno|Significado|  
+|Valor retornado|Significado|  
 |------------------|-------------|  
 |`S_OK`|Êxito.|  
-|`DISP_E_EXCEPTION`|Uma exceção durante o processamento do scriptlet. O `pexcepinfo` parâmetro contém informações sobre a exceção.|  
+|`DISP_E_EXCEPTION`|Ocorreu uma exceção no processamento do scriptlet. O parâmetro `pexcepinfo` contém informações sobre a exceção.|  
 |`E_INVALIDARG`|Um argumento era inválido.|  
 |`E_POINTER`|Um ponteiro inválido foi especificado.|  
-|`E_NOTIMPL`|Não há suporte para o método. O mecanismo de script não oferece suporte a tempo de execução de avaliação de expressões ou instruções.|  
-|`E_UNEXPECTED`|A chamada não era esperada (por exemplo, o mecanismo de script está no estado não inicializado ou fechado, ou o sinalizador SCRIPTTEXT_ISEXPRESSION foi definido e o mecanismo de script está no estado inicializado).|  
+|`E_NOTIMPL`|Não há suporte para o método. O mecanismo de script não dá suporte à avaliação em tempo de execução de expressões ou instruções.|  
+|`E_UNEXPECTED`|A chamada não era esperada (por exemplo, o mecanismo de script está no estado não inicializado ou fechado, ou o sinalizador SCRIPTTEXT_ISEXPRESSION foi definido e o mecanismo de script está no estado Initialized).|  
 |`OLESCRIPT_E_SYNTAX`|Ocorreu um erro de sintaxe não especificado no scriptlet.|  
   
 ## <a name="remarks"></a>Comentários  
- Se o mecanismo de script estiver no estado inicializado, nenhum código será realmente avaliado durante esta chamada; em vez disso, esse código é na fila e executado quando o mecanismo de script é uma transição em (ou por meio de) o estado iniciado. Como a execução não é permitida no estado inicializado, ele é um erro para chamar esse método com o sinalizador SCRIPTTEXT_ISEXPRESSION quando estiver no estado inicializado.  
+ Se o mecanismo de script estiver no estado inicializado, nenhum código será realmente avaliado durante essa chamada; em vez disso, esse código é colocado em fila e executado quando o mecanismo de script é transferido para (ou até) o estado iniciado. Como a execução não é permitida no estado inicializado, é um erro chamar esse método com o sinalizador SCRIPTTEXT_ISEXPRESSION quando estiver no estado Initialized.  
   
- O scriptlet pode ser uma expressão, uma lista de instruções ou qualquer coisa permitida pela linguagem de script. Por exemplo, esse método é usado na avaliação do HTML \<SCRIPT > marca, que permite que as instruções sejam executadas como a página HTML sendo construída, em vez de apenas compilá-las no estado de script.  
+ O scriptlet pode ser uma expressão, uma lista de instruções ou qualquer coisa permitida pela linguagem de script. Por exemplo, esse método é usado na avaliação da marca HTML \<SCRIPT >, que permite que as instruções sejam executadas à medida que a página HTML está sendo construída, em vez de apenas compilá-las no estado do script.  
   
- O código passado para esse método deve ser uma parte válida e completa do código. Por exemplo, no VBScript é ilegal chamar este método uma vez com Sub Function (x) e, em seguida, uma segunda vez com `End Sub`. O analisador não deve esperar a segunda chamada para concluir a sub-rotina, mas em vez disso, deve gerar um erro de análise porque uma declaração de sub-rotina foi iniciada, mas não concluída.  
+ O código passado para esse método deve ser uma parte válida e completa do código. Por exemplo, no VBScript, é ilegal chamar esse método uma vez com sub function (x) e, em seguida, uma segunda vez com `End Sub`. O analisador não deve aguardar a segunda chamada para concluir a sub-rotina, mas, em vez disso, deve gerar um erro de análise porque uma declaração de sub-rotina foi iniciada, mas não foi concluída.  
   
- Para obter mais informações sobre estados de script, consulte a seção de estados de mecanismo de Script do [mecanismos de Script do Windows](../../winscript/windows-script-engines.md).  
+ Para obter mais informações sobre os Estados de script, consulte a seção Estados de mecanismo de script dos [mecanismos de script do Windows](../../winscript/windows-script-engines.md).  
   
 ## <a name="see-also"></a>Consulte também  
  [IActiveScriptParse](../../winscript/reference/iactivescriptparse.md)

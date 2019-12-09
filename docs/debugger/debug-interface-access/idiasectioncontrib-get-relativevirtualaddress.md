@@ -1,44 +1,42 @@
 ---
 title: IDiaSectionContrib::get_relativeVirtualAddress | Microsoft Docs
-ms.date: 11/15/2016
-ms.prod: visual-studio-dev14
-ms.technology: vs-ide-debug
-ms.topic: reference
+ms.date: 11/04/2016
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaSectionContrib::get_relativeVirtualAddress method
 ms.assetid: 32f9674d-94f1-4590-99de-a2eb60da4af8
-caps.latest.revision: 12
-author: MikeJo5000
+author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5469bcf8b40dffad0e8a84446d11e3e5eb71e0d0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.workload:
+- multiple
+ms.openlocfilehash: 933bdba22b3f8456d96d11de9a809622028bf5b1
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62827710"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742553"
 ---
-# <a name="idiasectioncontribgetrelativevirtualaddress"></a>IDiaSectionContrib::get_relativeVirtualAddress
-[!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
+# <a name="idiasectioncontribget_relativevirtualaddress"></a>IDiaSectionContrib::get_relativeVirtualAddress
+Recupera o endereço virtual relativo da imagem (RVA) da contribuição.
 
-Recupera o imagem endereço virtual relativo (RVA) da contribuição.  
-  
-## <a name="syntax"></a>Sintaxe  
-  
-```cpp#  
-HRESULT get_relativeVirtualAddress (   
-   DWORD* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parâmetros  
- `pRetVal`  
- [out] Retorna a imagem RVA de contribuição.  
-  
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não há suporte para essa propriedade. Caso contrário, retornará um código de erro.  
-  
-## <a name="see-also"></a>Consulte também  
- [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)
+## <a name="syntax"></a>Sintaxe
+
+```C++
+HRESULT get_relativeVirtualAddress ( 
+   DWORD* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parâmetros
+ `pRetVal`
+
+fora Retorna o RVA da imagem da contribuição.
+
+## <a name="return-value"></a>Valor retornado
+ Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não houver suporte para essa propriedade. Caso contrário, retornará um código de erro.
+
+## <a name="see-also"></a>Consulte também
+- [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

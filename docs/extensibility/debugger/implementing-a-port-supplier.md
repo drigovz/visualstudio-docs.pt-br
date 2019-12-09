@@ -6,17 +6,17 @@ helpviewer_keywords:
 - debugging [Debugging SDK], implementing port suppliers
 - port suppliers, implementing
 ms.assetid: 6b8579df-58df-4c7f-8112-6015993e8765
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5d6875baf72d94494a1abaea9260e344b236f83c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: dd5ba2a96b94cce65dc901a523232b1c3e0a45b9
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62925579"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66349983"
 ---
 # <a name="implement-a-port-supplier"></a>Implementar um fornecedor de porta
 Um fornecedor de porta fornece portas de solicitação para o Gerenciador de sessão de depuração (SDM). Um fornecedor de porta deve ser implementado durante a depuração de uma máquina não-DCOM ou quando um novo dispositivo necessita de suporte. Por exemplo, para fornecer um telefone celular de depuração, você pode configurar um fornecedor de porta que fornece as portas, o qual conectar-se para o telefone celular (talvez por meio do IR ou uma conexão de célula) e enumera os processos e programas em execução no telefone.

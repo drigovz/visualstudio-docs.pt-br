@@ -4,19 +4,19 @@ ms.date: 03/19/2019
 ms.technology: vs-ide-general
 ms.custom: get-started
 ms.topic: conceptual
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9ba78c7ee3cd723fdb89b833df7974d700337c38
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 4a8ea7977f73be2a38a8ac7a417c6794b567e600
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62952164"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189118"
 ---
 # <a name="welcome-to-the-visual-studio-ide--c"></a>Bem-vindo ao IDE do Visual Studio | C\#
 
@@ -46,7 +46,7 @@ Explore ainda mais o Visual Studio seguindo um dos seguintes artigos introdutór
 > [Saiba como usar o editor de códigos](tutorial-editor.md)
 
 > [!div class="nextstepaction"]
-> [Saiba mais sobre projetos e soluções](tutorial-projects-solutions.md)
+> [Saiba mais sobre projetos e soluções](../tutorial-projects-solutions.md)
 
 ## <a name="see-also"></a>Consulte também
 

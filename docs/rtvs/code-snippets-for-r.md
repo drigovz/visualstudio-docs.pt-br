@@ -19,7 +19,7 @@ ms.locfileid: "62969432"
 
 Os snippets de código no Visual Studio fornecem atalhos para inserir rapidamente os blocos de código de comprimento arbitrário, ajudando a evitar a necessidade de digitar novamente códigos semelhantes. As RTVS (Ferramentas do R para Visual Studio) adicionam dezenas de snippets do R úteis na coleção do Visual Studio.
 
-Para inserir um trecho, digite o nome abreviado do trecho (o IntelliSense é fornecido), em seguida, pressione **Tab** para inserir.
+Para inserir um snippet, digite o nome abreviado do snippet (o IntelliSense é fornecido), em seguida, pressione **Tab** para inserir.
 
 Alguns exemplos simples:
 
@@ -30,13 +30,13 @@ Snippets podem ser muito mais do que apenas preenchimento de caracteres. Um snip
 
 ![Animação do uso de um snippet de código para inserir uma chamada de read.csv](media/code-snippet-expansion.gif)
 
-Nesse caso, à medida que você digita `readc`, o IntelliSense exibe uma lista de conclusão. Selecionar essa conclusão no menu suspenso e pressionar **Tab** seleciona `readc` e pressionar **Tab** novamente expande o trecho. (Por esse motivo, a expansão de snippet geralmente é considerada como "digitar o snippet e pressionar a tecla Tab duas vezes"). Na maioria dos casos, a primeira Tab preenche a seleção do IntelliSense e a segunda Tab dispara a expansão.
+Nesse caso, à medida que você digita `readc`, o IntelliSense exibe uma lista de conclusão. Selecionar essa conclusão no menu suspenso e pressionar **Tab** seleciona `readc` e pressionar **Tab** novamente expande o snippet. (Por esse motivo, a expansão de snippet geralmente é considerada como "digitar o snippet e pressionar a tecla Tab duas vezes"). Na maioria dos casos, a primeira Tab preenche a seleção do IntelliSense e a segunda Tab dispara a expansão.
 
-Para ver todos os trechos disponíveis, abra a caixa de diálogo **Ferramentas** > **Gerenciador de Trechos de Código** (**Ctrl**+**K**,**B**) e selecione **R** para **Linguagem**. Expanda os grupos e selecione snippets individuais para ver uma descrição e o texto de atalho:
+Para ver todos os snippets disponíveis, abra a caixa de diálogo **Ferramentas** > **Gerenciador de Snippets de Código** (**Ctrl**+**K**,**B**) e selecione **R** para **Linguagem**. Expanda os grupos e selecione snippets individuais para ver uma descrição e o texto de atalho:
 
 ![Caixa de diálogo de snippets de código para R](media/code-snippet-dialog.png)
 
-Para criar trechos de código personalizados, siga as instruções em [Passo a passo: Criar um snippet de código](../ide/walkthrough-creating-a-code-snippet.md). Por fim, um snippet de código é apenas um arquivo XML. Por exemplo, o código a seguir é o snippet de código para a operação de pipe (atalho `>`):
+Para criar snippets de código personalizados, siga as instruções em [Passo a passo: Criar um snippet de código](../ide/walkthrough-creating-a-code-snippet.md). Por fim, um snippet de código é apenas um arquivo XML. Por exemplo, o código a seguir é o snippet de código para a operação de pipe (atalho `>`):
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>

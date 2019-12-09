@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 93e3c6b02477097bd9dfe3fa0cf4292c3a8723f7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 524d6b36cc163c0bbce1a3eb27497d4c63edd50b
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62832806"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743667"
 ---
-# <a name="idiaframedatagetaddresssection"></a>IDiaFrameData::get_addressSection
-Recupera a parte da seção do endereço de código para o quadro.
+# <a name="idiaframedataget_addresssection"></a>IDiaFrameData::get_addressSection
+Recupera a parte da seção do endereço do código para o quadro.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -33,10 +33,10 @@ HRESULT get_addressSection ( 
 #### <a name="parameters"></a>Parâmetros
  `pRetVal`
 
-[out] Retorna a parte da seção do endereço de código para o quadro.
+fora Retorna a parte da seção do endereço do código do quadro.
 
-## <a name="return-value"></a>Valor de retorno
- Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não há suporte para essa propriedade. Caso contrário, retornará um código de erro.
+## <a name="return-value"></a>Valor retornado
+ Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não houver suporte para essa propriedade. Caso contrário, retornará um código de erro.
 
 ## <a name="see-also"></a>Consulte também
 - [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

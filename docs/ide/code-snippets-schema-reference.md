@@ -8,17 +8,17 @@ helpviewer_keywords:
 - code snippets [Visual Studio], schema reference
 - IntelliSense Code Snippets, XML Schema
 ms.assetid: 58a60621-725f-4763-93b7-62ea5424ef88
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 034fd1f31b24dce2d8ecc3d805b78c35c8498d6c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: ff2004f11cac6d3ae44fdc61745c9e8cbab231f1
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974976"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72631111"
 ---
 # <a name="code-snippets-schema-reference"></a>Referência de esquema dos snippets de código
 
@@ -40,7 +40,7 @@ O valor de texto do elemento **Assembly** é o nome de texto amigável do assemb
 | - |-----------------|
 |[Elemento Reference](../ide/code-snippets-schema-reference.md#reference-element)|Contém informações sobre referências de assembly exigidas pelo snippet de código.|
 
- Um valor de texto é obrigatório. Esse texto especifica o assembly ao qual o snippet de código faz referência.
+Um valor de texto é obrigatório. Esse texto especifica o assembly ao qual o snippet de código faz referência.
 
 ## <a name="author-element"></a>Elemento Author
 
@@ -56,7 +56,7 @@ Especifica o nome do autor do snippet. O **Gerenciador de Snippets de Código** 
 | - |-----------------|
 |[Elemento Header](../ide/code-snippets-schema-reference.md#header-element)|Contém informações gerais sobre o snippet de código.|
 
- Um valor de texto é obrigatório. Esse texto especifica o autor do snippet de código.
+Um valor de texto é obrigatório. Esse texto especifica o autor do snippet de código.
 
 ## <a name="code-element"></a>Elemento de código
 
@@ -121,7 +121,7 @@ Há três atributos disponíveis para o Elemento de código:
    |`SQL`|Identifica um snippet de código SQL.|
    |`HTML`|Identifica um snippet de código HTML.|
 
-- **Kind** - Atributo _opcional_ que especifica o tipo de código que o snippet de código contém e o local em que um snippet de código deve ser inserido para ser compilado. O valor pode ser um dos seguintes:
+- O atributo **Tipo** - _Opcional_ que especifica o tipo de código que o snippet contém. O valor pode ser um dos seguintes:
 
    |Valor|Descrição|
    |-----|-----------|
@@ -212,7 +212,7 @@ Especifica o valor padrão do literal ou do objeto para um Snippet de Código In
 |[Elemento Literal](../ide/code-snippets-schema-reference.md#literal-element)|Define os campos de literal do snippet de código que você pode editar.|
 |[Elemento Object](../ide/code-snippets-schema-reference.md#object-element)|Define os campos de objeto do snippet de código que você pode editar.|
 
- Um valor de texto é obrigatório. Esse texto especifica o valor padrão do literal ou do objeto que preenche os campos do snippet de código que você pode editar.
+Um valor de texto é obrigatório. Esse texto especifica o valor padrão do literal ou do objeto que preenche os campos do snippet de código que você pode editar.
 
 ## <a name="description-element"></a>Elemento Description
 
@@ -228,7 +228,7 @@ Especifica as informações descritivas sobre o conteúdo de um Snippet de Códi
 | - |-----------------|
 |[Elemento Header](../ide/code-snippets-schema-reference.md#header-element)|Contém informações gerais sobre o snippet de código.|
 
- Um valor de texto é obrigatório. Esse texto descreve o snippet de código.
+Um valor de texto é obrigatório. Esse texto descreve o snippet de código.
 
 ## <a name="function-element"></a>Elemento Function
 
@@ -248,7 +248,7 @@ Especifica uma função a ser executada quando o literal ou o objeto receber foc
 |[Elemento Literal](../ide/code-snippets-schema-reference.md#literal-element)|Define os campos de literal do snippet de código que você pode editar.|
 |[Elemento Object](../ide/code-snippets-schema-reference.md#object-element)|Define os campos de objeto do snippet de código que você pode editar.|
 
- Um valor de texto é obrigatório. Esse texto especifica uma função a ser executada quando o campo de literal ou objeto recebe foco no Visual Studio.
+Um valor de texto é obrigatório. Esse texto especifica uma função a ser executada quando o campo de literal ou objeto recebe foco no Visual Studio.
 
 ## <a name="header-element"></a>Elemento Header
 
@@ -270,7 +270,7 @@ Especifica informações gerais sobre o Snippet de Código IntelliSense.
 |-------------------|-----------------|
 |[Elemento Author](../ide/code-snippets-schema-reference.md#author-element)|Elemento opcional. O nome da pessoa ou da empresa que criou o snippet de código. Pode ser que não haja nenhum ou um elemento `Author` em um elemento `Header`.|
 |[Elemento Description](../ide/code-snippets-schema-reference.md#description-element)|Elemento opcional. Uma descrição do snippet de código. Pode ser que não haja nenhum ou um elemento `Description` em um elemento `Header`.|
-|[Elemento HelpUrl](../ide/code-snippets-schema-reference.md#helpurl-element)|Elemento opcional. Uma URL que contém mais informações sobre o snippet de código. Pode ser que não haja nenhum ou um elemento `HelpURL` em um elemento Header. **Observação:**  O Visual Studio não usa o elemento `HelpUrl`. O elemento faz parte do esquema XML do Snippet de Código IntelliSense e qualquer snippet de código que contenha o elemento será válido, mas o valor do elemento nunca será usado.|
+|[Elemento HelpUrl](../ide/code-snippets-schema-reference.md#helpurl-element)|Elemento opcional. Uma URL que contém mais informações sobre o snippet de código. Pode ser que não haja nenhum ou um elemento `HelpURL` em um elemento Header. **Observação:** o Visual Studio não usa o elemento `HelpUrl`. O elemento faz parte do esquema XML do Snippet de Código IntelliSense e qualquer snippet de código que contenha o elemento será válido, mas o valor do elemento nunca será usado.|
 |[Elemento Keywords](../ide/code-snippets-schema-reference.md#keywords-element)|Elemento opcional. Agrupa elementos `Keyword`. Pode ser que não haja nenhum ou um elemento `Keywords` em um elemento `Header`.|
 |[Elemento Shortcut](../ide/code-snippets-schema-reference.md#shortcut-element)|Elemento opcional. Especifica o texto de atalho que pode ser usado para inserir o snippet. Pode ser que não haja nenhum ou um elemento `Shortcut` em um elemento `Header`.|
 |[Elemento SnippetTypes](../ide/code-snippets-schema-reference.md#snippettypes-element)|Elemento opcional. Agrupa elementos `SnippetType`. Pode ser que não haja nenhum ou um elemento `SnippetTypes` em um elemento `Header`. Se não houver nenhum elemento `SnippetTypes`, o snippet de código sempre será válido.|
@@ -518,7 +518,7 @@ Especifica o texto do atalho usado para inserir o snippet. O valor de texto de u
 | - |-----------------|
 |[Elemento Header](../ide/code-snippets-schema-reference.md#header-element)|Contém informações gerais sobre o snippet de código.|
 
- Um valor de texto é opcional. Esse texto é usado como um atalho para inserção do snippet de código.
+Um valor de texto é opcional. Esse texto é usado como um atalho para inserção do snippet de código.
 
 ## <a name="snippet-element"></a>Elemento Snippet
 
@@ -599,7 +599,7 @@ Especifica o título do snippet de código. O título armazenado no elemento `Ti
 | - |-----------------|
 |[Elemento Header](../ide/code-snippets-schema-reference.md#header-element)|Especifica informações gerais sobre o snippet de código.|
 
- Um valor de texto é obrigatório. Esse texto especifica o título do snippet de código.
+Um valor de texto é obrigatório. Esse texto especifica o título do snippet de código.
 
 ## <a name="tooltip-element"></a>Elemento ToolTip
 
@@ -616,7 +616,7 @@ Descreve o valor esperado e o uso de um literal ou um objeto em um snippet de c�
 |[Elemento Literal](../ide/code-snippets-schema-reference.md#literal-element)|Define os campos de literal do snippet de código que você pode editar.|
 |[Elemento Object](../ide/code-snippets-schema-reference.md#object-element)|Define os campos de objeto do snippet de código que você pode editar.|
 
- Um valor de texto é obrigatório. Esse texto especifica a descrição da Dica de Ferramenta a ser associada ao objeto ou literal no snippet de código.
+Um valor de texto é obrigatório. Esse texto especifica a descrição da Dica de Ferramenta a ser associada ao objeto ou literal no snippet de código.
 
 ## <a name="type-element"></a>Elemento Type
 
@@ -632,7 +632,11 @@ Especifica o tipo do objeto. O elemento `Object` é usado para identificar um it
 | - |-----------------|
 |[Elemento Object](../ide/code-snippets-schema-reference.md#object-element)|Define os campos de objeto do snippet de código que você pode editar.|
 
- Um valor de texto é obrigatório. Esse texto especifica o tipo do objeto.
+Um valor de texto é obrigatório. Esse texto especifica o tipo do objeto. Por exemplo:
+
+```xml
+<Type>System.Data.SqlClient.SqlConnection</Type>
+```
 
 ## <a name="url-element"></a>Elemento Url
 

@@ -1,5 +1,5 @@
 ---
-title: IDebugApplication::RemoveStackFrameSniffer | Microsoft Docs
+title: 'IDebugApplication:: RemoveStackFrameSniffer | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1462ff1382f3ccb844ccc98c6e6eec676a86c669
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 605daf51214ba5af9d6010b28be9569453ca7962
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62990783"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571117"
 ---
 # <a name="idebugapplicationremovestackframesniffer"></a>IDebugApplication::RemoveStackFrameSniffer
-Remove um provedor de enumerador de quadro de pilha desse aplicativo.  
+Remove um provedor de enumerador de quadros de pilha deste aplicativo.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -37,9 +37,9 @@ HRESULT RemoveStackFrameSniffer(
   
 #### <a name="parameters"></a>Parâmetros  
  `dwCookie`  
- [in] O cookie retornado pelo `AddStackFrameSniffer` método quando o provedor de enumerador de quadro de pilha foi adicionado.  
+ no O cookie retornado pelo método `AddStackFrameSniffer` quando o provedor de enumerador de quadros de pilha foi adicionado.  
   
-## <a name="return-value"></a>Valor de retorno  
+## <a name="return-value"></a>Valor retornado  
  O método retorna um `HRESULT`. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.  
   
 |Valor|Descrição|  
@@ -47,9 +47,9 @@ HRESULT RemoveStackFrameSniffer(
 |`S_OK`|O método foi bem-sucedido.|  
   
 ## <a name="remarks"></a>Comentários  
- O `RemoveStackFrameSniffer` método Remove um provedor de enumerador de quadro de pilha desse aplicativo.  
+ O método `RemoveStackFrameSniffer` remove um provedor de enumerador de quadros de pilha deste aplicativo.  
   
 ## <a name="see-also"></a>Consulte também  
  [IDebugApplication::AddStackFrameSniffer](../../winscript/reference/idebugapplication-addstackframesniffer.md)   
- [Interface IDebugApplication](../../winscript/reference/idebugapplication-interface.md)   
+   de [interface IDebugApplication](../../winscript/reference/idebugapplication-interface.md)  
  [Interface IDebugStackFrameSniffer](../../winscript/reference/idebugstackframesniffer-interface.md)

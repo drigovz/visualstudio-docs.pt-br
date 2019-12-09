@@ -22,17 +22,17 @@ caps.latest.revision: 31
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3e2140f15000b3ba270605af29ee36665c0137ee
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: ad496bb55bae8d9e08035408059e454430ab4e39
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60092963"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705541"
 ---
 # <a name="walkthrough-debugging-a-parallel-application"></a>Passo a passo: Depurando um aplicativo paralelo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Este passo a passo descreve como usar as janelas **Tarefas Paralelas** e **Pilhas Paralelas** para depurar um aplicativo paralelo. Essas janelas ajudarão-lo a compreender e verificar o comportamento de tempo de execução do código que usa o [tarefa TPL (biblioteca paralela)](http://msdn.microsoft.com/library/b8f99f43-9104-45fd-9bff-385a20488a23) ou o [tempo de execução de simultaneidade](http://msdn.microsoft.com/library/874bc58f-8dce-483e-a3a1-4dcc9e52ed2c). Este passo a passo fornece código de exemplo que tem pontos de interrupção internos. Após a interrupção do código, este passo a passo mostra como usar as janelas **Tarefas Paralelas** e **Pilhas Paralelas** para examiná-lo.  
+Este passo a passo descreve como usar as janelas **Tarefas Paralelas** e **Pilhas Paralelas** para depurar um aplicativo paralelo. Essas janelas ajudarão-lo a compreender e verificar o comportamento de tempo de execução do código que usa o [tarefa TPL (biblioteca paralela)](https://msdn.microsoft.com/library/b8f99f43-9104-45fd-9bff-385a20488a23) ou o [tempo de execução de simultaneidade](https://msdn.microsoft.com/library/874bc58f-8dce-483e-a3a1-4dcc9e52ed2c). Este passo a passo fornece código de exemplo que tem pontos de interrupção internos. Após a interrupção do código, este passo a passo mostra como usar as janelas **Tarefas Paralelas** e **Pilhas Paralelas** para examiná-lo.  
   
  Este passo a passo ensina estas tarefas:  
   
@@ -47,7 +47,7 @@ Este passo a passo descreve como usar as janelas **Tarefas Paralelas** e **Pilha
 - Como as janelas lidam com a escala por agrupamento, zoom e outros recursos relacionados.  
   
 ## <a name="prerequisites"></a>Pré-requisitos  
- Este passo a passo pressupõe que **Just My Code** está habilitado. No menu **Ferramentas**, clique em **Opções**, expanda o nó **Depuração**, selecione **Geral** e **Habilitar Apenas Meu Código (somente Gerenciado)**. Se você não definir esse recurso, ainda poderá usar este passo a passo, mas os resultados poderão ser diferentes das ilustrações.  
+ Este passo a passo pressupõe que **Just My Code** está habilitado. No menu **Ferramentas**, clique em **Opções**, expanda o nó **Depuração**, selecione **Geral** e **Habilitar Apenas Meu Código (somente Gerenciado)** . Se você não definir esse recurso, ainda poderá usar este passo a passo, mas os resultados poderão ser diferentes das ilustrações.  
   
 ## <a name="c-sample"></a>Exemplo do C#  
  Se você usar o exemplo do C#, este passo a passo também pressuporá que o código externo está oculto. Para ativar ou desativar a exibição do código externo, clique com o botão direito do mouse no cabeçalho de tabela **Nome** da janela **Pilha de Chamadas** e, depois, marque ou desmarque **Mostrar Código Externo**. Se você não definir esse recurso, ainda poderá usar este passo a passo, mas os resultados poderão ser diferentes das ilustrações.  
@@ -308,7 +308,7 @@ Este passo a passo descreve como usar as janelas **Tarefas Paralelas** e **Pilha
  [Depurar aplicativos multithread](../debugger/walkthrough-debugging-a-parallel-application.md)   
  [Noções básicas do depurador](../debugger/debugger-basics.md)   
  [Depurando código gerenciado](../debugger/debugging-managed-code.md)   
- [Programação paralela](http://msdn.microsoft.com/library/4d83c690-ad2d-489e-a2e0-b85b898a672d)   
- [Tempo de Execução de Simultaneidade](http://msdn.microsoft.com/library/874bc58f-8dce-483e-a3a1-4dcc9e52ed2c)   
+ [Programação paralela](https://msdn.microsoft.com/library/4d83c690-ad2d-489e-a2e0-b85b898a672d)   
+ [Tempo de Execução de Simultaneidade](https://msdn.microsoft.com/library/874bc58f-8dce-483e-a3a1-4dcc9e52ed2c)   
  [Usando a janela Pilhas Paralelas](../debugger/using-the-parallel-stacks-window.md)   
  [Usando a janela Tarefas](../debugger/using-the-tasks-window.md)

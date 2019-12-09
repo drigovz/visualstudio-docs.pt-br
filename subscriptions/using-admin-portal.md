@@ -1,59 +1,30 @@
 ---
-title: Usando o portal do administrador | Visual Studio Marketplace
+title: Introdução ao portal de administração de assinaturas | Visual Studio Marketplace
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 10/03/2017
+ms.author: lank
+manager: lank
+ms.date: 08/07/2019
 ms.topic: conceptual
-description: Saiba como gerenciar as assinaturas do Visual Studio da sua organização com o portal do administrador.
-searchscope: VS Subscription
-ms.openlocfilehash: 4c8d3aa20138e7ebe56d5b51472ecc54abcf32f9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+description: Saiba como começar a gerenciar as assinaturas do Visual Studio de sua organização com o portal de administração de assinaturas.
+ms.openlocfilehash: 484ecdca3435ee725853932acd66e307c2eb3cbe
+ms.sourcegitcommit: 174c992ecdc868ecbf7d3cee654bbc2855aeb67d
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62427831"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "74879302"
 ---
-# <a name="using-the-visual-studio-subscriptions-administrator-portal"></a>Usando o portal do administrador de assinaturas do Visual Studio
+# <a name="overview-of-the-visual-studio-subscriptions-administrator-portal"></a>Visão geral do portal do administrador de assinaturas do Visual Studio
 
-Lembre-se disto ao usar o Portal de Administração de Assinaturas do Visual Studio:
+O Portal de Administração de Assinaturas do Visual Studio fornece as ferramentas necessárias para gerenciar as assinaturas da sua organização em um único lugar. 
 
+## <a name="important-considerations"></a>Considerações importantes
+Lembre-se desses pontos ao usar o Portal de Administração de Assinaturas do Visual Studio:
 - **As assinaturas do Visual Studio são licenciadas por usuário.** Cada assinante pode usar o software em quantos computadores forem necessários para desenvolvimento e teste.
 - **Atribua apenas um nível de assinatura para cada assinante**, correspondente à assinatura do Visual Studio comprada pela sua organização. Se houver assinantes com mais de um nível de assinatura atribuído, edite as configurações para que eles fiquem com apenas uma.
 - **O nível de assinatura de um assinante precisará ser atualizado** quando a assinatura for atualizada (após a compra de um licença de “step-up”) ou renovada para um nível inferior.
-- **Não compartilhe assinaturas entre assinantes.** Você deverá atribuir uma assinatura a qualquer pessoa que usar completa ou parcialmente os benefícios da assinatura (software para desenvolvimento e teste, Microsoft Azure, e-learning, etc.).
+- **Não compartilhe assinaturas entre assinantes.** As assinaturas devem ser atribuídas a indivíduos nomeados.  A atribuição de assinaturas a equipes não é permitida.  Você deverá atribuir uma assinatura a qualquer pessoa que usar completa ou parcialmente os benefícios da assinatura (software para desenvolvimento e teste, Microsoft Azure, e-learning, etc.).
 
-## <a name="administrator-roles"></a>Funções de administrador
-
-Há duas funções diferentes no novo Portal de Administração de Assinaturas do Visual Studio para clientes do Volume Licensing. Essas funções são como a função de contato principal/para notificações e a função de gerenciador de assinaturas que existem atualmente no VLSC.
-
-**Superadministradores:** Ao configurar uma organização pela primeira vez, o Contato Principal ou para Notificações torna-se um superadministrador por padrão. O contato principal ou para notificações pode optar por atribuir superadministradores ou administradores adicionais. Um superadministrador pode adicionar e remover outros administradores e também assinantes. Se houver mais de dois superadministradores no sistema, um superadministrador poderá excluir todos, exceto os dois últimos por segurança.
-
-**Administradores:** Um administrador só pode ser configurado por um superadministrador. Um administrador pode gerenciar os assinantes nos contratos que o superadministrador atribui a ele.
-
-## <a name="getting-started"></a>Introdução
-
-Para usar o portal do administrador para gerenciar as assinaturas da organização, primeiro você deve integrar a organização ao portal.  Depois de concluir a integração, você poderá se familiarizar com as páginas de Detalhes e de Assinantes, pois nelas estarão as ferramentas e as informações necessárias para executar suas tarefas de gerenciamento de assinatura.
-
-### <a name="onboarding"></a>Integração
-
-Quando sua organização estiver pronta para ser integrada ao Portal de Administração de Assinaturas do Visual Studio, um email será enviado para os Contatos Principal e para Notificações convidando-os para concluir o processo de integração. Os detalhes abaixo são as etapas necessárias para realizar a integração no novo portal. Se você desejar um passo a passo do processo, confira este [vídeo de integração para o administrador](https://channel9.msdn.com/Series/Visual-Studio-Subscriptions-Administration/Onboarding-your-organization-to-the-new-Visual-Studio-Subscription-Administration-Portal-and-setting) ou este [artigo de suporte](https://support.microsoft.com/help/4013931/visual-studio-subscriptions-administrator-migration-process "Processo de migração do administrador de assinaturas do Visual Studio").
-
-1. **Localizando o PCN e entrando:**
-    - No email, os contatos principal e para notificações recebem um link exclusivo e os três últimos dígitos do PCN (Número do Cliente Público). * 
-    - Para obter o PCN inteiro, o Contato principal precisará entrar no VLSC (instruções para localizar o PCN podem ser encontradas lá). 
-    - Depois de obter o PCN, ele precisará selecionar o link exclusivo que permitirá sua entrada. Ele poderá entrar usando uma conta corporativa ou de estudante (se sua organização estiver no AAD) ou uma conta MSA (conta da Microsoft) se sua organização não estiver no AAD. 
-    - Em seguida, será necessário inserir o PCN. 
-2. **Configure seus administradores.** Depois de inserir o PCN, ele será registrado como um superadministrador no novo sistema e poderá adicionar outros superadministradores e administradores (conhecidos anteriormente como gerentes de assinatura). Para evitar a perda do acesso, isso deverá ser concluído antes da data de migração da organização. 
-3. **Acessando o novo portal de gerenciamento de assinaturas.**  Depois da migração da organização, serão enviados emails para os superadministradores e administradores recém-adicionados convidando-os para acessar o novo portal e começar a gerenciar assinaturas.  
-
-> [!NOTE]
-> Se os Contatos Principais ou para Notificações receberem mais de um email, isso significará que eles têm mais de um PCN. Será necessário concluir o processo usando o link exclusivo para o PCN referenciado em cada email.*
-
-Se você precisar ser adicionado no novo Portal de Administração de Assinaturas do Visual Studio e não souber quem é seu contato principal/para notificações, você poderá encontrar essa informação depois de entrar no [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx). Confira o tópico [Localizar seu Contato Principal](find-primary-contact.md) para obter as etapas para localizar seu Contato Principal/para Notificações no Centro de Empresas da Microsoft.
-Se você já foi configurado como administrador, acesse diretamente o [Portal de Administração de Assinaturas do Visual Studio](https://manage.visualstudio.com).
-
-### <a name="understanding-the-subscribers-page"></a>Noções básicas sobre a página de Assinantes
+## <a name="the-subscribers-page"></a>A página Assinantes
 Depois que você atribuir as assinaturas, a guia Assinantes fornecerá informações detalhadas sobre seus assinantes, incluindo:
 - O nome e o sobrenome de cada assinante.
 - O endereço de email deste usuário.
@@ -70,7 +41,21 @@ No lado esquerdo dessa página, são exibidas informações adicionais sobre o n
 > [!div class="mx-imgBorder"]
 > ![Página Assinantes do Portal de Administração de Assinaturas do Visual Studio](_img/using-admin-portal/subscribers-page.png)
 
-### <a name="understanding-the-details-page"></a>Noções básicas sobre a página de Detalhes
-Para obter mais informações sobre o contrato exibido, selecione a guia Detalhes. Ela mostra o status do contrato, a conta da compra, os detalhes da organização, os contatos principais (do VLSC), os superadministradores (caso haja) e outras informações pertinentes.
+## <a name="the-details-page"></a>A página Detalhes
+Para obter mais informações sobre o contrato que você está exibindo, selecione a guia detalhes. Ele mostra o status do contrato, a conta de compra, os detalhes da organização, os superadministradores e outras informações pertinentes.
 > [!div class="mx-imgBorder"]
 > ![Página Detalhes do Portal de Administração de Assinaturas do Visual Studio](_img/using-admin-portal/details-page.png)
+
+## <a name="resources"></a>Recursos
+- [White paper de licenciamento do Visual Studio](https://aka.ms/vslicensing)
+- [Comparar opções e preços de assinatura](https://visualstudio.microsoft.com/vs/pricing)
+- [Comparar os recursos do IDE do Visual Studio](https://visualstudio.microsoft.com/vs/compare)
+- [Suporte à administração e às assinaturas do Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs)
+
+## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
+Saiba mais as políticas dos administradores:
+- [Visão geral das responsabilidades do administrador](admin-responsibilities.md)
+- [Inventário do ambiente de pré-produção](admin-inventory.md)
+- [Gerenciar equipes grandes e prestadores de serviço externos](manage-teams.md)
+- [Rastrear atribuição de usuário e processar pedidos](assignments-orders.md)
+- Utilizar o [Uso Máximo](maximum-usage.md) para rastrear os compromissos de compra

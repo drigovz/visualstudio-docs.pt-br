@@ -9,17 +9,17 @@ helpviewer_keywords:
 - list source command
 - ListSource command
 ms.assetid: e45f08d2-f4a3-49c3-9452-aa60508e2f74
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8dcecdaa206964e6c8a5aebcadc958fe2c1ee1e5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 6c211773f20ab4643b62c8c71fc6ae6581a91987
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946850"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747898"
 ---
 # <a name="list-source-command"></a>Comando Listar Origem
 Exibe as linhas de código-fonte especificadas.
@@ -32,28 +32,28 @@ Debug.ListSource [/Count:number] [/Current] [/File:filename]
 ```
 
 ## <a name="switches"></a>Opções
- /Count:`number`
+/Count:`number`
 
- Opcional. Especifica o número de linhas que serão mostradas.
+Opcional. Especifica o número de linhas que serão mostradas.
 
- /Current
+/Current
 
- Opcional. Mostra a linha atual.
+Opcional. Mostra a linha atual.
 
- /File:`filename`
+/File:`filename`
 
- Opcional. Caminho do arquivo a ser exibido. Se nenhum nome de arquivo for especificado, o comando mostrará o código-fonte da linha da instrução atual.
+Opcional. Caminho do arquivo a ser exibido. Se nenhum nome de arquivo for especificado, o comando mostrará o código-fonte da linha da instrução atual.
 
- /Line:`number`
+/Line:`number`
 
- Opcional. Mostra um número de linha específico.
+Opcional. Mostra um número de linha específico.
 
- /ShowLineNumbers:`yes|no`
+/ShowLineNumbers:`yes|no`
 
- Opcional. Especifica se os números de linha devem ser exibidos.
+Opcional. Especifica se os números de linha devem ser exibidos.
 
 ## <a name="example"></a>Exemplo
- Este exemplo lista o código-fonte da linha 4 do arquivo Form1.vb, com números de linha visíveis.
+Este exemplo lista o código-fonte da linha 4 do arquivo Form1.vb, com números de linha visíveis.
 
 ```
 Debug.ListSource /File:"C:\Visual Studio Projects\Form1.vb" /Line:4 /ShowLineNumbers:yes

@@ -6,17 +6,20 @@ helpviewer_keywords:
 - ReplaceSymbols
 - IDebugComPlusSymbolProvider::ReplaceSymbols
 ms.assetid: 82fbc8db-c4b1-432f-bec9-1a9dc09570be
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e863d6af1ed78fc0fe3c4d683386826708c39708
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 15af82459df5b2c8406280287115fbe345a63788
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62922443"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352817"
 ---
 # <a name="idebugcomplussymbolproviderreplacesymbols"></a>IDebugComPlusSymbolProvider::ReplaceSymbols
 Substitui os símbolos de depuração atual com aqueles no fluxo de dados especificado.
@@ -39,18 +42,15 @@ int ReplaceSymbols(
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
-`ulAppDomainID`
+## <a name="parameters"></a>Parâmetros
+`ulAppDomainID`\
+[in] Identificador do domínio do aplicativo.
 
- [in] Identificador do domínio do aplicativo.
+`guidModule`\
+[in] Identificador exclusivo do módulo.
 
-`guidModule`
-
- [in] Identificador exclusivo do módulo.
-
-`pStream`
-
- [in] Fluxo de dados que contém os símbolos de novo.
+`pStream`\
+[in] Fluxo de dados que contém os símbolos de novo.
 
 ## <a name="return-value"></a>Valor de retorno
 Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.

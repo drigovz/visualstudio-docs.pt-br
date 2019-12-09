@@ -19,16 +19,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6a4bf5545deecccb647b5113c4335539c6acb488
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 8206e199acc3ccb76cf89603d48bed0173129218
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63408584"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746053"
 ---
 # <a name="application-deployment-prerequisites"></a>Pré-requisitos de implantação do aplicativo
 
-Para que seu aplicativo para instalar e executar com êxito, primeiro instale todos os componentes dos quais seu aplicativo é dependente no computador de destino. Por exemplo, a maioria dos aplicativos criados usando [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] têm uma dependência de [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. Nesse caso, a versão correta do common language runtime deve estar presente no computador de destino antes do aplicativo está instalado.
+Para que seu aplicativo para instalar e executar com êxito, primeiro instale todos os componentes dos quais seu aplicativo é dependente no computador de destino. Por exemplo, a maioria dos aplicativos criados usando [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] têm uma dependência no .NET Framework. Nesse caso, a versão correta do common language runtime deve estar presente no computador de destino antes do aplicativo está instalado.
 
  Você pode selecionar esses pré-requisitos a **caixa de diálogo de pré-requisitos** e instalar o .NET Framework e quaisquer outros redistribuíveis como parte de sua instalação. Essa prática é conhecida como *inicialização*. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] gera um programa executável do Windows chamado *Setup.exe*, também conhecido como um *bootstrapper*. O bootstrapper é responsável pela instalação desses pré-requisitos antes de executar o aplicativo. Para obter mais informações sobre como selecionar esses pré-requisitos, consulte [caixa de diálogo de pré-requisitos](../ide/reference/prerequisites-dialog-box.md).
 
@@ -76,7 +76,7 @@ Para que seu aplicativo para instalar e executar com êxito, primeiro instale to
 | **-?, -h, -help** | Exibe uma caixa de diálogo de Ajuda. |
 | **-url, -componentsurl** | Mostra a URL armazenada e a URL dos componentes para esta configuração. |
 | **-url=** `location` | Configura a URL em que *Setup.exe* procurará o aplicativo [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]. |
-| **-componentsurl=** `location` | Configura a URL em que *Setup.exe* procurará as dependências, como o [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. |
+| **-componentsurl=** `location` | Define a URL em que *Setup.exe* procurará as dependências, como o .NET Framework. |
 | **-homesite=** `true` **&#124;** `false` | Quando `true`, baixa as dependências do local preferido no site do fornecedor. Essa configuração substitui o **- componentsurl** configuração. Quando `false`, baixe as dependências da URL especificada por **- componentsurl**. |
 
 ## <a name="operating-system-support"></a>Suporte a sistemas operacionais

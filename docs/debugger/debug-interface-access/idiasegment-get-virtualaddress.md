@@ -1,44 +1,42 @@
 ---
-title: 'Idiasegment:: Get_virtualaddress | Microsoft Docs'
-ms.date: 11/15/2016
-ms.prod: visual-studio-dev14
-ms.technology: vs-ide-debug
-ms.topic: reference
+title: 'IDiaSegment:: get_virtualAddress | Microsoft Docs'
+ms.date: 11/04/2016
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaSegment::get_virtualAddress method
 ms.assetid: 30073dd0-c864-4c4a-8863-80f243419f6c
-caps.latest.revision: 13
-author: MikeJo5000
+author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a7daec26817638be5338eb10dce83b59a1283d15
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.workload:
+- multiple
+ms.openlocfilehash: 94958fb51f6742bf07cc5a4cd34da059c05adc23
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839394"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742366"
 ---
-# <a name="idiasegmentgetvirtualaddress"></a>IDiaSegment::get_virtualAddress
-[!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
+# <a name="idiasegmentget_virtualaddress"></a>IDiaSegment::get_virtualAddress
+Recupera o endereço virtual (VA) do início da seção.
 
-Recupera o endereço virtual (VA) do início da seção.  
-  
-## <a name="syntax"></a>Sintaxe  
-  
-```cpp#  
-HRESULT get_virtualAddress (   
-   ULONGLONG* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parâmetros  
- `pRetVal`  
- [out] Retorna a VA do início da seção.  
-  
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não há suporte para essa propriedade. Caso contrário, retornará um código de erro.  
-  
-## <a name="see-also"></a>Consulte também  
- [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)
+## <a name="syntax"></a>Sintaxe
+
+```C++
+HRESULT get_virtualAddress ( 
+   ULONGLONG* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parâmetros
+ `pRetVal`
+
+fora Retorna o VA do início da seção.
+
+## <a name="return-value"></a>Valor retornado
+ Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não houver suporte para essa propriedade. Caso contrário, retornará um código de erro.
+
+## <a name="see-also"></a>Consulte também
+- [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)

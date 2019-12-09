@@ -17,19 +17,23 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 36d280cd62420b9805d0a4359df1b72ae452236d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: f5dd3b1dc758a9b4f7634d4b6e73ab294289d6cd
+ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62777658"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71128304"
 ---
 # <a name="measure-application-performance-by-analyzing-cpu-usage"></a>Medir o desempenho do aplicativo analisando o uso da CPU
-Você pode usar as ferramentas de criação de perfil do Visual Studio para analisar problemas de desempenho em seu aplicativo. Este procedimento mostra como usar a guia **Uso de CPU** das Ferramentas de Diagnóstico para obter dados de desempenho do seu aplicativo. As Ferramentas de Diagnóstico têm suporte para desenvolvimento de .NET no Visual Studio, incluindo o ASP.NET e para desenvolvimento nativo/C++.
+
+Você pode usar as ferramentas de criação de perfil do Visual Studio para analisar problemas de desempenho em seu aplicativo. Este procedimento mostra como usar a guia **Uso de CPU** das Ferramentas de Diagnóstico para obter dados de desempenho do seu aplicativo.
 
 Quando o depurador pausa, a ferramenta **Uso de CPU** coleta informações sobre as funções que estão em execução no aplicativo. A ferramenta lista as funções que estavam executando o trabalho e fornece um gráfico de linha do tempo que você pode usar para se concentrar em segmentos específicos da sessão de amostragem.
 
 O Hub de diagnósticos oferece várias outras opções para executar e gerenciar sua sessão de diagnóstico. Se **Uso de CPU** não fornecer os dados que você precisa, as [outras ferramentas de criação de perfil](../profiling/profiling-feature-tour.md) fornecem diferentes tipos de informações que poderão ser úteis. Em muitos casos, o gargalo de desempenho do aplicativo pode ser causado por algo que não seja a CPU, como memória, interface do usuário de renderização ou tempo de solicitação de rede. O Hub de diagnósticos oferece várias outras opções para registrar e analisar esse tipo de dados.
+
+> [!Important]
+> As Ferramentas de Diagnóstico têm suporte para desenvolvimento de .NET no Visual Studio, incluindo o ASP.NET e para desenvolvimento nativo/C++.
 
 Neste artigo, abordaremos a análise do uso de CPU no fluxo de trabalho de depuração normal. Você também pode analisar o uso da CPU sem um depurador conectado ou direcionando um aplicativo em execução. Para saber mais, confira [Coletar dados de criação de perfil sem depuração](../profiling/running-profiling-tools-with-or-without-the-debugger.md#collect-profiling-data-without-debugging) em [Executando ferramentas de criação de perfil com ou sem o depurador](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
 
@@ -133,7 +137,7 @@ Recomendamos que você comece a analisar os dados examinando a lista de funçõe
     |![Etapa 1](../profiling/media/ProcGuid_1.png "ProcGuid_1")|O nó de nível superior nas árvores de chamada de uso da CPU é um pseudo-nó|
     |![Etapa 2](../profiling/media/ProcGuid_2.png "ProcGuid_2")|Na maioria dos aplicativos, quando a opção [Mostrar Código Externo](#view-external-code) está desabilitada, o nó de segundo nível é um nó **[Código Externo]** que contém o código do sistema e da estrutura que inicia e para o aplicativo, desenha a interface do usuário, controla o agendamento de thread e fornece ao aplicativo outros serviços de nível inferior.|
     |![Etapa 3](../profiling/media/ProcGuid_3.png "ProcGuid_3")|Os filhos do nó de segundo nível são métodos e rotinas assíncronas do código de usuário que são chamados ou criados pelo sistema de segundo nível e código do framework.|
-    |![Etapa 4](../profiling/media/ProcGuid_4.png "ProcGuid_4")|Os nós filhos de um método só contêm dados das chamadas do método pai. Quando **Mostrar Código Externo** é desabilitado, os métodos de aplicativo também podem conter um nó **[Código Externo]**.|
+    |![Etapa 4](../profiling/media/ProcGuid_4.png "ProcGuid_4")|Os nós filhos de um método só contêm dados das chamadas do método pai. Quando **Mostrar Código Externo** é desabilitado, os métodos de aplicativo também podem conter um nó **[Código Externo]** .|
 
     Aqui há mais informações sobre os valores de coluna:
 
@@ -149,9 +153,12 @@ Recomendamos que você comece a analisar os dados examinando a lista de funçõe
     ![Afunilamento das Ferramentas de Diagnóstico](../profiling/media/vs-2019/diag-tools-hot-path.png "DiagToolsHotPath")
     ::: moniker-end
 
+    > [!NOTE]
+    > Se você visualizar o código na árvore de chamadas marcado como código "interrompido" ou "pilha inexplorável", isso indica que os eventos ETW (Rastreamento de Eventos para Windows) provavelmente foram descartados. Tente coletar o mesmo rastreamento uma segunda vez para resolver o problema.
+
 ## <a name="view-external-code"></a>Exibir código externo
 
-O código externo são funções nos componentes do sistema e da estrutura executadas pelo código escrito. O código externo inclui funções que iniciam e param o aplicativo, elaboram a interface do usuário, controlam a segmentação e fornecem ao aplicativo outros serviços de nível inferior. Na maioria dos casos, você não está interessado em código externo, portanto, a ferramenta Uso de CPU reúne as funções externas de um método de usuário em um nó **[External Code]**.
+O código externo são funções nos componentes do sistema e da estrutura executadas pelo código escrito. O código externo inclui funções que iniciam e param o aplicativo, elaboram a interface do usuário, controlam a segmentação e fornecem ao aplicativo outros serviços de nível inferior. Na maioria dos casos, você não está interessado em código externo, portanto, a ferramenta Uso de CPU reúne as funções externas de um método de usuário em um nó **[External Code]** .
 
 Se você quiser exibir os caminhos de chamada do código externo, escolha **Mostrar Código Externo** na lista **Filtrar exibição** e, em seguida, escolha **Aplicar**.
 

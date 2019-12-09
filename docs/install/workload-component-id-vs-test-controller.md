@@ -6,7 +6,7 @@ keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 03/01/2019
+ms.date: 12/03/2019
 ms.topic: reference
 helpviewer_keywords:
 - workload ID, Visual Studio
@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: fbbda9c8-d2c6-474d-b52d-a95227d52fe7
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: a555f6b0659615251e68ac97c0b2d2438ec3e4e7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: e401cffd1dd9e94684742f51103873d3c570ba9c
+ms.sourcegitcommit: af9bbf9116a63c0631ff2f4f3a878564aa63cd8c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62962569"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "74797348"
 ---
 # <a name="visual-studio-test-controller-component-directory"></a>Diretório de componentes do Test Controller do Visual Studio
 

@@ -1,18 +1,17 @@
 ---
 title: Benefício desktop profissional Parasoft Virtualize/SOAtest | Microsoft Docs
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 12/19/2018
+ms.author: lank
+manager: lank
+ms.date: 11/18/2019
 ms.topic: conceptual
 description: Saiba como ativar a assinatura do Parasoft Virtualize/SOA Test Professional incluída em sua assinatura do Visual Studio.
-searchscope: VS Subscription
-ms.openlocfilehash: c5b17bd0509ebca05f49ec5a411ea632676e6342
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 036b265f9ca1accc7027477abfc27ce4e66c4033
+ms.sourcegitcommit: 5c9ca18eadc7ed0ed095cc5a3e1df40bbc13e70c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62947246"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74161932"
 ---
 # <a name="parasoft-virtualizesoatest-professional-desktop-in-visual-studio-subscriptions"></a>Parasoft Virtualize/SOAtest Professional Desktop em assinaturas do Visual Studio
 
@@ -28,7 +27,10 @@ Teste antes e com mais frequência.  Simule e teste o comportamento de aplicativ
 
 3. Você será direcionado ao site da Parasoft, no qual criará uma conta.  Basta fornecer suas informações de contato e clicar em **Enviar**.
    > [!div class="mx-imgBorder"]
-   > ![Criar conta do benefício Parasoft](_img/vs-parasoft/vs-parasoft-account-cropped.png)
+   > ![Criar conta do benefício Parasoft](_img/vs-parasoft/vs-parasoft-new-account.png)
+
+   > [!Note]
+   > A tabela da página mostra os preços de um ano inteiro, além de um desconto para o Visual Studio. Esse preço será aplicável DEPOIS que você usar sua assinatura de seis meses.  
 
 4. Depois de criar sua conta, será exibida uma notificação de que foi enviado um email para você com instruções de download.  (Lembre-se de verificar suas pastas de spam ou de lixo eletrônico, se o email não estiver na caixa de entrada.)
 
@@ -57,14 +59,12 @@ Teste antes e com mais frequência.  Simule e teste o comportamento de aplicativ
 14. Especifique onde deseja inserir o atalho para o aplicativo instalado e clique em **Avançar**.
 
 15. O Certificado de Autoridade de Certificação Raiz da Web do SOAtest é necessário para determinados testes funcionais em sites HTTPS.  Escolha se deseja instalar o Certificado de Autoridade de Certificação Raiz e clique em **Avançar**.
-    > [!div class="mx-imgBorder"]
-    > ![Certificado de autoridade de certificação raiz do benefício Parasoft](_img/vs-parasoft/vs-parasoft-install-root-ca.png)
+    > [!NOTE]
+    > A Parasoft recomenda que você opte por instalar o certificado.
 
 16. Escolha se deseja que os ícones da área de trabalho e de Início Rápido sejam criados durante a instalação e clique em **Avançar**.
 
 17. Confirme as opções que você selecionou e clique em **Instalar** para começar a instalar o software.
-    > [!div class="mx-imgBorder"]
-    > ![Benefício Parasoft pronto para ser instalado](_img/vs-parasoft/vs-parasoft-ready-to-install.png)
 
 18. Quando a instalação for concluída, clique em **Concluir**. Agora você está pronto para começar a usar o benefício desktop profissional Parasoft Virtualize/SOAtest!
 
@@ -73,20 +73,25 @@ Teste antes e com mais frequência.  Simule e teste o comportamento de aplicativ
 | Nível de Assinatura                                                 |     Canais                                            | Benefício                                                          | Renovável?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | VL, Azure, Retail, NFR<sup>1</sup> selecionado | Seis meses       |  Sim       |
+| Visual Studio Enterprise com GitHub Enterprise | VL | Seis meses       |  Sim       |
 | Visual Studio Professional (Standard) | VL, Azure, Retail                                       | Não disponível                                                           |NA         |
+| Visual Studio Professional com GitHub Enterprise | VL                                      | Não disponível                                                           |NA         |
 | Visual Studio Test Professional (Padrão)                         | VL, Retail                                              | Não disponível                                                           |NA         |
 | Plataformas MSDN (Padrão)                                          | VL, Retail                                              | Não disponível                                                           |NA         |
-| Visual Studio Dev Essentials | NA  | Não disponível|NA |
 | Visual Studio Enterprise, Visual Studio Professional (nuvem mensal) | Azure                                       | Não disponível                                                           |NA|
+||
 
-<sup>1</sup> *Inclui: Microsoft Partner Network (Enterprise).  Exclui:  NFR (Proibida a revenda), VSIP (Visual Studio Industry Partner), FTE, MCT Software & Services Developer, BizSpark, Imagine, MVP (Most Valuable Professional) e RD (Diretor Regional).  MCT Software & Services.*
+<sup>1</sup>  *inclui: Microsoft Partner Network (Enterprise).  Exclusões: não para revenda (NFR), parceiro do setor do Visual Studio (VSIP), FTE, MCT software & Services Developer, BizSpark, imagine, Most Valuable Professional (MVP), diretor regional (RD).  MCT software & Services.*
 
 > [!NOTE]
 > A Microsoft não oferece mais assinaturas anuais do Visual Studio Professional e do Visual Studio Enterprise nas Assinaturas na Nuvem. Não haverá nenhuma alteração na experiência dos clientes existentes nem na capacidade de renovar, aumentar, diminuir ou cancelar suas assinaturas. Os novos clientes são incentivados a acessar [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) para explorar diferentes opções de compra do Visual Studio.
 
 ## <a name="support-resources"></a>Recursos de suporte
 - Precisa de ajuda com produtos Parasoft?  Confira estes recursos:
-    - Suporte técnico: https://www.parasoft.com/support/
-    - Central de Recursos da Parasoft: https://www.parasoft.com/resources/
+  - Suporte técnico: https://www.parasoft.com/support/
+  - Central de Recursos da Parasoft: https://www.parasoft.com/resources/
 - Para obter assistência com vendas, assinaturas, contas e cobrança para Assinaturas do Visual Studio, entre em contato com o [Suporte a Assinaturas](https://visualstudio.microsoft.com/subscriptions/support/) do Visual Studio.
 - Tem alguma pergunta sobre o IDE do Visual Studio, o Azure DevOps Services ou outros produtos ou serviços do Visual Studio?  Acesse o [Suporte do Visual Studio](https://visualstudio.microsoft.com/support/).
+
+## <a name="next-steps"></a>Próximas etapas
+Aproveite sua própria área restrita de desenvolvimento ativando seu [crédito individual do Azure DevTest](vs-azure.md). 

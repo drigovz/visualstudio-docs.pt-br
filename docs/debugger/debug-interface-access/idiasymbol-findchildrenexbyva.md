@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 85dc2d62134d57faf40162ff61b193b80b045e29
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d9cc9f540b200ff6fdf4736b6a0bf64175a5ee3e
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62837960"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741241"
 ---
 # <a name="idiasymbolfindchildrenexbyva"></a>IDiaSymbol::findChildrenExByVA
 Recupera os filhos do símbolo que são válidos em um endereço virtual especificado.
@@ -37,34 +37,34 @@ HRESULT findChildrenExByVA ( 
 #### <a name="parameters"></a>Parâmetros
  `symtag`
 
-[in] Especifica as marcas de símbolo dos filhos a serem recuperados, conforme definido na [enumeração SymTagEnum](../../debugger/debug-interface-access/symtagenum.md). Definido como `SymTagNull` para todos os filhos a serem recuperados.
+no Especifica as marcas de símbolo dos filhos a serem recuperados, conforme definido na [Enumeração SymTagEnum](../../debugger/debug-interface-access/symtagenum.md). Defina como `SymTagNull` para todos os filhos a serem recuperados.
 
  `name`
 
-[in] Especifica o nome dos filhos a serem recuperados. Definido como `NULL` para todos os filhos a serem recuperados.
+no Especifica o nome dos filhos a serem recuperados. Defina como `NULL` para todos os filhos a serem recuperados.
 
  `compareFlags`
 
-[in] Especifica as opções de comparação a ser aplicado à correspondência de nomes. Os valores do [enumeração NameSearchOptions](../../debugger/debug-interface-access/namesearchoptions.md) enumeração pode ser usada sozinho ou em combinação.
+no Especifica as opções de comparação a serem aplicadas à correspondência de nomes. Os valores da enumeração de [Enumeração NameSearchOptions](../../debugger/debug-interface-access/namesearchoptions.md) podem ser usados sozinhos ou em combinação.
 
  `address`
 
-[in] Especifica o endereço virtual.
+no Especifica o endereço virtual.
 
  `ppResult`
 
-[out] Retorna um [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md) recuperado do objeto que contém uma lista dos símbolos de filho.
+fora Retorna um objeto [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md) que contém uma lista dos símbolos filho recuperados.
 
-## <a name="return-value"></a>Valor de retorno
- Retorna `S_OK` se pelo menos um filho do símbolo foi encontrado ou retorna `S_FALSE` se nenhum filho foram encontrado; caso contrário, retornará um código de erro.
+## <a name="return-value"></a>Valor retornado
+ Retorna `S_OK` se pelo menos um filho do símbolo foi encontrado ou retorna `S_FALSE` se nenhum filho foi encontrado; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários
- Os símbolos de locais que são retornados incluem informações de intervalo em tempo real.
+ Os símbolos locais retornados incluem informações de intervalo ao vivo.
 
 ## <a name="requirements"></a>Requisitos
- Cabeçalho: Dia2.h
+ Cabeçalho: dia2. h
 
- Biblioteca: diaguids.lib
+ Biblioteca: diaguids. lib
 
  DLL: msdia100.dll
 

@@ -2,19 +2,19 @@
 title: Conectar-se a projetos no Team Explorer
 ms.date: 12/04/2018
 ms.topic: conceptual
-ms.author: gewarren
-author: gewarren
+ms.author: jillfra
+author: jillre
 ms.manager: jillfra
-ms.openlocfilehash: d65ea17ad642ea882820bc04f5d217e6290a8a6d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: c442ec22080a5f3533776e9d581aa1e7ef0e52ee
+ms.sourcegitcommit: 08105865a9643fb20dce9b8b7580452cfbbe7ee7
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62976687"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74538669"
 ---
 # <a name="connect-to-projects-in-team-explorer"></a>Conectar-se a projetos no Team Explorer
 
-Use a janela de ferramentas **Team Explorer** para coordenar seus esforços de codificação com outros membros da equipe para desenvolver um projeto e gerenciar o trabalho atribuído a você, sua equipe ou seus projetos. O **Team Explorer** conecta o Visual Studio a repositórios Git e GitHub, repositórios do TFVC (Controle de Versão do Team Foundation) e projetos hospedados no [Azure DevOps Services](/azure/devops/user-guide/what-is-azure-devops-services) ou em um [Azure DevOps Server](/tfs/index) local (anteriormente conhecido como TFS). Você pode gerenciar o código-fonte, itens de trabalho e builds.
+Use a janela de ferramentas **Team Explorer** para coordenar seus esforços de codificação com outros membros da equipe para desenvolver um projeto e gerenciar o trabalho atribuído a você, sua equipe ou seus projetos. O **Team Explorer** conecta o Visual Studio a repositórios Git e GitHub, repositórios do TFVC (Controle de Versão do Team Foundation) e projetos hospedados no [Azure DevOps Services](/azure/devops/user-guide/what-is-azure-devops-services) ou em um [Azure DevOps Server](/azure/devops/index-all) local (anteriormente conhecido como TFS). Você pode gerenciar o código-fonte, itens de trabalho e builds.
 
 ![Home page do Team Explorer no Visual Studio](media/team-explorer/team-explorer.png)
 

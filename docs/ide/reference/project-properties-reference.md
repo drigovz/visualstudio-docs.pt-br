@@ -6,19 +6,20 @@ helpviewer_keywords:
 - user interface [Visual Studio], projects
 - projects [Visual Studio], user interface
 ms.assetid: eec49aec-5474-48a7-889d-709045b9a475
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d998eee1965b9b28c1b8fde26c9232770d69f751
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: f3b5c5f79b4ecfcac3e70b6be125c57bcc738199
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62969222"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72655800"
 ---
 # <a name="project-properties-reference"></a>Referência de propriedades de projeto
+
 Saiba mais sobre como configurar e personalizar as propriedades do projeto.
 
 ## <a name="project-properties-pages"></a>Páginas de propriedades do projeto

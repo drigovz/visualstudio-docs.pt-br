@@ -1,53 +1,27 @@
 ---
 title: Benefício do EMS | Microsoft Docs
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 12/19/2018
+ms.author: lank
+manager: lank
+ms.date: 11/13/2019
 ms.topic: conceptual
 description: Saiba mais sobre o benefício Enterprise Mobility + Security incluído em sua assinatura do Visual Studio.
-searchscope: VS Subscription
-ms.openlocfilehash: d670db0d083c4b8f32f970c790859a7c82e5dff1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: a8ea7cba0c23129e9dd7669c474f54675a12e619
+ms.sourcegitcommit: ca3bb6db949f5e405f6ffe1afa5f430662c1173f
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62948851"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "74099540"
 ---
 # <a name="enterprise-mobility--security-ems-in-visual-studio-subscriptions"></a>Benefício do EMS (Enterprise Mobility + Security) nas assinaturas do Visual Studio
 
-As assinaturas anuais padrão e de nuvem do Visual Studio Enterprise incluem o EMS (Enterprise Mobility + Security).  Proteja e gerencie identidades, dispositivos, aplicativos e dados com o EMS – Azure Active Directory, Microsoft Intune, Proteção de Informações do Azure, Microsoft Advanced Threat Analytics e Microsoft Cloud App Security.
+As assinaturas anuais padrão e de nuvem do Visual Studio Enterprise incluem o EMS (Enterprise Mobility + Security).  Proteja e gerencie identidades, dispositivos, aplicativos e dados com o EMS – Azure Active Directory, Microsoft Intune, Proteção de Informações do Azure, Microsoft Advanced Threat Analytics e Microsoft Cloud App Security. 
 
-> [!NOTE]
-> Se você comprar uma assinatura de vários anos por meio do licenciamento por volume, tenha em mente que o benefício do EMS atualmente está disponível somente no primeiro ano.
-
-## <a name="activation-steps"></a>Etapas de Ativação
-
-Para usar o EMS, você precisará configurar uma conta ou entrar usando uma conta existente.
-
-1. Entre no [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
-
-2. Localize o bloco Enterprise Mobility & Security na seção de Ferramentas e clique no link **Obter Código** na parte inferior do bloco.   Você receberá uma notificação de que o código foi recuperado com êxito.  Clique em **Ativar**.
-   > [!div class="mx-imgBorder"]
-   > ![Bloco do benefício EMS](_img/vs-ems/vs-ems-tile.png)
-
-3. Na página do Microsoft Enterprise Mobility + Security E5, você pode entrar com uma assinatura existente ou criar uma nova.  Para criar uma nova, preencha as informações solicitadas e clique em **Avançar**.
-   > [!div class="mx-imgBorder"]
-   > ![Criar conta do benefício EMS](_img/vs-ems/vs-ems-create-account-cropped.png)
-
-4. Crie sua ID de usuário e senha.  Clique em **Criar minha conta** para continuar.
-   > [!div class="mx-imgBorder"]
-   > ![Criar ID de usuário do benefício EMS](_img/vs-ems/vs-ems-userID-cropped.png)
-
-5. Em seguida, forneça um número de telefone para receber um código de verificação por telefone ou texto.  Insira o código e clique em **Avançar**.
-   > [!div class="mx-imgBorder"]
-   > ![Verificação do benefício EMS](_img/vs-ems/vs-ems-robot-cropped.png)
-
-6. A próxima página exibirá a página de conexão e sua ID de usuário.  Salve essas informações para uso posterior.  Clicar em **Você está pronto para começar…**
-   > [!div class="mx-imgBorder"]
-   > ![Conta de benefício EMS criada](_img/vs-ems/vs-ems-save-info-cropped.png)
-
-7. O EMS requer acesso ao [Portal do Microsoft Azure](https://azure.microsoft.com).  Siga as três etapas na página de aterrissagem do EMS para ativar sua assinatura do Azure, adicionar usuários e configurar o EMS.
+## <a name="who-should-install-ems"></a>Quem deve instalar o EMS?
+Se você já tiver um locatário do Office 365 Developer (E3), instale o EMS.  Caso contrário, você deve instalar o [Microsoft 365](vs-m365.md), que inclui o EMS e o Office 365 Developer (E5), bem como:
+- Análise avançada com Power BI
+- Proteção avançada contra ameaças do Office 365
+- Azure Active Directory para criar soluções avançadas de gerenciamento de identidade e acesso
 
 ## <a name="eligibility"></a>Qualificação
 
@@ -55,12 +29,11 @@ Para usar o EMS, você precisará configurar uma conta ou entrar usando uma cont
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | VL, Azure, Retail, NFR<sup>1</sup> selecionado | Disponível       |  Sim          |
 | Visual Studio Professional (Standard<sup>2</sup>) | VL, Azure, Retail                                       | Disponível                                                            |  Sim          |
-| Visual Studio Test Professional (Padrão)                         | VL, Retail                                              | Não disponível                                             |  N/D          |
-| Plataformas MSDN (Padrão)                                          | VL, Retail                                              | Não disponível                                              |  N/D          |
-| Visual Studio Enterprise, Visual Studio Professional (nuvem mensal) | Azure | Não disponível | N/D |
-| Visual Studio Dev Essentials | N/D  | Não disponível |N/D |
+| Visual Studio Test Professional (Padrão)                         | VL, Retail                                              | Não disponível                                             |  N/A          |
+| Plataformas MSDN (Padrão)                                          | VL, Retail                                              | Não disponível                                              |  N/A          |
+| Visual Studio Enterprise, Visual Studio Professional (nuvem mensal) | Azure | Não disponível | N/A |
 
-<sup>1</sup> *Inclui:  NFR (Proibida a revenda), VSIP (Visual Studio Industry Partner), MPN (Microsoft Partner Network), FTE, MCT Software & Services Developer e BizSpark.  Exclui: MVP (Most Valuable Professional), RD (Diretor Regional), MCT Software & Services, Imagine e Microsoft Partner Network (Professional).*
+<sup>1</sup>  *inclui: não para revenda (NFR), parceiro do setor do Visual Studio (VSIP), Microsoft Partner Network (MPN), FTE, MCT software & Developer Services, BizSpark.  Exclusões: profissional mais valioso (MVP), diretor regional (RD), MCT software & Services, imagine, Microsoft Partner Network (Professional).*
 
 <sup>2</sup> *Exclui: Microsoft Partner Network (Professional)*
 
@@ -74,3 +47,8 @@ Não tem certeza de qual assinatura você está usando?  Conecte-se ao [https://
 - Para obter suporte técnico com qualquer componente do EMS, visite as [Perguntas frequentes de suporte do EMS](https://docs.microsoft.com/enterprise-mobility-security/solutions/ems-support-faq) para encontrar o suporte certo para sua pergunta.
 - Para obter assistência com vendas, assinaturas, contas e cobrança para Assinaturas do Visual Studio, entre em contato com o [Suporte a Assinaturas](https://visualstudio.microsoft.com/subscriptions/support/) do Visual Studio.
 - Tem alguma pergunta sobre o IDE do Visual Studio, o Azure DevOps Services ou outros produtos ou serviços do Visual Studio?  Acesse o [Suporte do Visual Studio](https://visualstudio.microsoft.com/support/).
+
+## <a name="next-steps"></a>Próximas etapas
+Se você ainda não ativou o benefício de crédito individual do Azure DevTest que vem com sua assinatura, visite [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) e clique no bloco Azure na categoria ferramentas para configurar sua assinatura do Azure e resgatar seu crédito individual do Azure DevTest.
+
+Confira o restante dos ótimos benefícios incluídos na sua assinatura. Visite [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).

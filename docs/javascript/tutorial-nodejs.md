@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 62f919551a13060bfd2b2d12726164902004d1bb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: ecc14e4dc98caa17ac3849e9231ab17491f2acc8
+ms.sourcegitcommit: 2f64b3b231900018fceafb72b5a1c65140213a18
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62995103"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73428777"
 ---
 # <a name="tutorial-create-a-nodejs-and-express-app-in-visual-studio"></a>Tutorial: Criar um aplicativo Node.js e Express no Visual Studio
 
@@ -30,7 +30,7 @@ Se você ainda não tiver instalado o Visual Studio, acesse a página [Downloads
 
 ::: moniker range="vs-2019"
 
-Se você ainda não tiver instalado o Visual Studio, acesse a página [Downloads do Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) para instalá-lo gratuitamente.
+Se você ainda não tiver instalado o Visual Studio, acesse a página [Downloads do Visual Studio](https://visualstudio.microsoft.com/downloads) para instalá-lo gratuitamente.
 
 ::: moniker-end
 
@@ -48,7 +48,7 @@ Aqui está algumas perguntas frequentes rápidas para apresentar alguns conceito
 
 ### <a name="what-is-nodejs"></a>O que é o Node.js?
 
-O Node.js é um ambiente de tempo de execução do JavaScript do servidor que executa o JavaScript no servidor.
+O Node.js é um ambiente de runtime do JavaScript do servidor que executa o JavaScript no servidor.
 
 ### <a name="what-is-npm"></a>O que é o npm?
 
@@ -58,7 +58,7 @@ npm é o gerenciador de pacotes padrão do Node.js. O gerenciador de pacotes fac
 
 O Express é uma estrutura de aplicativo Web, usada como uma estrutura de servidor do Node.js para criação de aplicativos Web. O Express permite que você use e escolha diferentes estruturas front-end para criar uma interface do usuário, como o Pug (anteriormente chamado de Jade). O Pug é usado neste tutorial.
 
-## <a name="prerequisites"></a>Pré-requisitos
+## <a name="prerequisites"></a>{1&gt;Pré-requisitos&lt;1}
 
 * Você precisa ter o Visual Studio instalado e a carga de trabalho de desenvolvimento de Node.js.
 
@@ -69,13 +69,13 @@ O Express é uma estrutura de aplicativo Web, usada como uma estrutura de servid
     Se você ainda não instalou o Visual Studio 2017, acesse a página  [Downloads do Visual Studio](https://visualstudio.microsoft.com/downloads/)  para instalá-lo gratuitamente.
     ::: moniker-end
 
-    Caso precise instalar a carga de trabalho, mas já tiver o Visual Studio, acesse **Ferramentas** > **Obter Ferramentas e Funcionalidades...**, que abre o Instalador do Visual Studio. Escolha a carga de trabalho **Desenvolvimento de Node.js** e, em seguida, selecione **Modificar**.
+    Caso precise instalar a carga de trabalho, mas já tiver o Visual Studio, acesse **Ferramentas** > **Obter Ferramentas e Funcionalidades...** , que abre o Instalador do Visual Studio. Escolha a carga de trabalho **Desenvolvimento de Node.js** e, em seguida, selecione **Modificar**.
 
     ![Carga de trabalho Node.js no instalador do VS](../ide/media/quickstart-nodejs-workload.png)
 
-* Você precisa ter o tempo de execução do Node.js instalado.
+* Você precisa ter o runtime do Node.js instalado.
 
-    Se não o tiver instalado, instale a versão LTS do site do [Node.js](https://nodejs.org/en/download/). Em geral, o Visual Studio detecta automaticamente o tempo de execução do Node.js instalado. Se ele não detectar um tempo de execução instalado, você poderá configurar seu projeto para fazer referência ao tempo de execução instalado na página de propriedades (depois de criar um projeto, clique com botão direito do mouse no nó do projeto e escolha **Propriedades**).
+    Se não o tiver instalado, instale a versão LTS do site do [Node.js](https://nodejs.org/en/download/). Em geral, o Visual Studio detecta automaticamente o runtime do Node.js instalado. Se ele não detectar um runtime instalado, você poderá configurar seu projeto para fazer referência ao runtime instalado na página de propriedades (depois de criar um projeto, clique com botão direito do mouse no nó do projeto e escolha **Propriedades**).
 
     Este tutorial foi testado com o Node.js 8.10.0.
 
@@ -93,9 +93,9 @@ Neste tutorial, você começará com um projeto simples que contém o código pa
     Pressione **Esc** para fechar a janela de início. Digite **Ctrl + Q** para abrir a caixa de pesquisa, digite **Node.js** e, em seguida, escolha **Criar um novo Aplicativo Básico Azure Node.js Express 4** (JavaScript). Na caixa de diálogo que aparece, escolha **Criar**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Na barra de menus superior, escolha **Arquivo** > **Novo** > **Projeto**. No painel esquerdo da caixa de diálogo **Novo Projeto**, expanda **JavaScript** e escolha **Node.js**. No painel central, escolha **Aplicativo Azure Node.js Express 4 básico** e, em seguida, **OK**.
+    Na barra de menus superior, escolha **Arquivo** > **Novo** > **Projeto**. No painel esquerdo da caixa de diálogo **Novo Projeto**, expanda **JavaScript** e escolha **Node.js**. No painel central, escolha **Aplicativo Azure Node.js Express 4 básico** e, em seguida, escolha **OK**.
     ::: moniker-end
-    Se você não vir o modelo de projeto **Aplicativo Azure Node.js Express 4 básico**, adicione a carga de trabalho de **desenvolvimento do Node.js**. Confira instruções detalhadas nos. [Pré-requisitos](#prerequisites).
+    Se não vir o modelo de projeto **Aplicativo Azure Node.js Express 4 básico**, você deverá adicionar a carga de trabalho de **desenvolvimento do Node.js**. Confira instruções detalhadas nos. [Pré-requisitos](#prerequisites).
 
     O Visual Studio cria a solução e abre o projeto no painel direito. O arquivo de projeto *app.js* é aberto no editor (painel esquerdo).
 
@@ -183,6 +183,8 @@ O IntelliSense é uma ferramenta do Visual Studio que ajuda você na codificaç�
 1. Coloque o cursor após a cadeia de caracteres `data`, digite `: get` e o IntelliSense mostrará a função `getData` definida anteriormente no código. Selecione `getData`.
 
     ![Usar o IntelliSense](../javascript/media/tutorial-nodejs-intellisense.png)
+
+1. Adicione os parênteses para torná-lo uma chamada de função, `getData()`.
 
 1. Remova a vírgula (`,`) antes de `"data"` e você verá o realce de sintaxe verde na expressão. Passe o mouse sobre o realce de sintaxe.
 

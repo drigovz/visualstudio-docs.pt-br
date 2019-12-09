@@ -24,11 +24,11 @@ ms.locfileid: "62988135"
   Em geral, compilando e depurando soluções do SharePoint é o mesmo que a compilação e depuração de outros tipos de projetos em [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Os tópicos nesta seção explicam as diferenças que existem.
 
 ## <a name="project-output-for-sharepoint-solutions"></a>Saída do projeto para soluções do SharePoint
- Criação de soluções do SharePoint cria assemblies e um pacote de solução (*. wsp*) arquivos. A tabela a seguir mostra os locais desses arquivos durante uma compilação.
+ Criação de soluções do SharePoint cria assemblies e um pacote de solução ( *. wsp*) arquivos. A tabela a seguir mostra os locais desses arquivos durante uma compilação.
 
 |Criar item|Pasta de saída|
 |----------------|-------------------|
-|Assembly, o banco de dados do programa (*. PDB*), e *wsp* arquivos.|*\<ProjectName > \bin\debug* ou  *\<ProjectName > \bin\Release.*|
+|Assembly, o banco de dados do programa ( *. PDB*), e *wsp* arquivos.|*\<ProjectName > \bin\debug* ou  *\<ProjectName > \bin\Release.*|
 |Arquivos de item de projeto do SharePoint.|*\<ProjectName > \pkg\debug* ou  *\<ProjectName > \pkg\release*|
 |Crie arquivos intermediários.|*\<ProjectName > \obj\debug* ou  *\<ProjectName > \obj\release*|
 |Arquivos intermediários do pacote.|*\<ProjectName > \pkgobj\debug* ou  *\<ProjectName > \pkgobj\release*|

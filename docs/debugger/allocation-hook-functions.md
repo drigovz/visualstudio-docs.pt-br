@@ -22,15 +22,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 406647ae086285df8dfdfc00daf4b62be66e74a2
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: f684c6c66448fdab2ee7607a81ff7ed769a5e607
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63402690"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745817"
 ---
 # <a name="allocation-hook-functions"></a>Funções de gancho da alocação
-Uma função de gancho de alocação, instalada usando [crtsetallochook](/cpp/c-runtime-library/reference/crtsetallochook), é chamado sempre que a memória é alocada, realocada ou liberada. Você pode usar esse tipo de gancho para muitas finalidades diferentes. Usá-lo para testar como um aplicativo trata situações de memória insuficiente, por exemplo, para examinar padrões de alocação ou registrar informações de alocação para análise posterior.
+Uma função de gancho de alocação, instalada usando [_CrtSetAllocHook](/cpp/c-runtime-library/reference/crtsetallochook), é chamada toda vez que a memória é alocada, realocada ou liberada. Você pode usar esse tipo de gancho para várias finalidades diferentes. Use-o para testar como um aplicativo lida com situações de memória insuficientes, como para examinar padrões de alocação ou informações de alocação de log para análise posterior.
 
 > [!NOTE]
 > Lembre-se da restrição sobre as funções da biblioteca em tempo de execução C em uma função de gancho de alocação, descrita em [Ganchos de alocação e alocações de memória de tempo de execução C](../debugger/allocation-hooks-and-c-run-time-memory-allocations.md).
@@ -50,7 +50,7 @@ typedef int (__cdecl * _CRT_ALLOC_HOOK)
     (int, void *, size_t, int, long, const unsigned char *, int);
 ```
 
- Quando a biblioteca de tempo de execução chama seu gancho, o *nAllocType* argumento indica quais alocação operação está prestes a ser realizada (**hook_alloc**, **hook_realloc**, ou **Hook_free**). Em um livre ou em uma realocação, `pvData` tem um ponteiro para o artigo de usuário do bloco para ser liberado. No entanto para uma alocação, esse ponteiro é null, porque a alocação ainda não ocorreu. Os argumentos restantes contêm o tamanho da alocação em questão, seu tipo de bloco, o número sequencial da solicitação associada com ele e um ponteiro para o nome do arquivo. Se estiver disponível, os argumentos também incluem o número da linha na qual a alocação foi feita. Depois que a função de gancho executar as análises e outras tarefas que o autor desejar, ela deverá retornar **TRUE**, indicando que a operação de alocação pode continuar ou **FALSE**, indicando que a operação falhará. Um gancho simples desse tipo poderá verificar a quantidade de memória alocada até o momento e retornar **FALSE** se essa quantidade exceder um limite pequeno. O aplicativo apresentaria o tipo de erros de alocação que ocorreriam normalmente apenas quando a memória disponível estivesse muito baixa. Ganchos mais complexos podem controlar os padrões de alocação, analisar o uso de memória ou reportar quando as situações específicas surgem.
+ Quando a biblioteca de tempo de execução chama seu gancho, o argumento *nAllocType* indica qual operação de alocação está prestes a ser feita ( **_HOOK_ALLOC**, **_HOOK_REALLOC**ou **_HOOK_FREE**). Em uma realocação gratuita ou em uma realocação, `pvData` tem um ponteiro para o artigo do usuário do bloco a ser liberado. No entanto, para uma alocação, esse ponteiro é nulo porque a alocação não ocorreu. Os argumentos restantes contêm o tamanho da alocação em questão, seu tipo de bloco, o número de solicitação sequencial associado a ele e um ponteiro para o nome do arquivo. Se disponível, os argumentos também incluem o número de linha no qual a alocação foi feita. Depois que a função de gancho executar as análises e outras tarefas que o autor desejar, ela deverá retornar **TRUE**, indicando que a operação de alocação pode continuar ou **FALSE**, indicando que a operação falhará. Um gancho simples desse tipo poderá verificar a quantidade de memória alocada até o momento e retornar **FALSE** se essa quantidade exceder um limite pequeno. O aplicativo apresentaria o tipo de erros de alocação que ocorreriam normalmente apenas quando a memória disponível estivesse muito baixa. Ganchos mais complexos podem controlar os padrões de alocação, analisar o uso de memória ou reportar quando as situações específicas surgem.
 
 ## <a name="see-also"></a>Consulte também
 

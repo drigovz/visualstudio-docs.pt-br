@@ -17,12 +17,12 @@ caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d8a71ea8a6e9061ecb03b30fc61b23a9f5750e41
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 6b95ac29f3084bf8899249039ffbaa7da8c2294f
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60082601"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67890465"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-c"></a>Passo a passo: Escrevendo um visualizador em C\#
 
@@ -31,7 +31,7 @@ ms.locfileid: "60082601"
 Este passo a passo mostra como escrever um visualizador simples usando C#. O visualizador que você criará neste passo a passo exibe o conteúdo de uma cadeia de caracteres usando uma caixa de mensagem do Windows Forms. Esse visualizador simples de cadeia de caracteres não é especialmente útil em si mesmo, mas mostra as etapas básicas a seguir para criar visualizadores mais úteis para outros tipos de dados.
 
 > [!NOTE]
-> As caixas de diálogo e os comandos do menu que você vê podem ser diferentes dos descritos na Ajuda, dependendo da edição ou das configurações ativas. Para alterar as configurações, vá para o menu **Ferramentas** e escolha **Importar e Exportar Configurações**. Para obter mais informações, consulte [Personalizando configurações de desenvolvimento no Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+> As caixas de diálogo e os comandos do menu que você vê podem ser diferentes dos descritos na Ajuda, dependendo da edição ou das configurações ativas. Para alterar as configurações, vá para o menu **Ferramentas** e escolha **Importar e Exportar Configurações**. Para obter mais informações, consulte [Personalizando configurações de desenvolvimento no Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
 O código do visualizador deve ser colocado em uma DLL, que será lido pelo depurador. Consequentemente, a primeira etapa é criar um projeto da Biblioteca de Classes para a DLL.
 
@@ -39,7 +39,7 @@ O código do visualizador deve ser colocado em uma DLL, que será lido pelo depu
 
 1. Sobre o **arquivo** menu, escolha **New** e, em seguida, clique em **novo projeto**.
 
-2. No **novo projeto** caixa de diálogo **tipo de projeto**s, selecione **Visual c#**.
+2. No **novo projeto** caixa de diálogo **tipo de projeto**s, selecione **Visual c#** .
 
 3. No **modelos** , escolha **biblioteca de classes**.
 
@@ -196,7 +196,8 @@ O código do visualizador deve ser colocado em uma DLL, que será lido pelo depu
 
 2. Edite o nome de Program.cs para algo mais significativo, por exemplo, TestConsole.cs.
 
-    **Observação** [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] automaticamente altera a declaração de classe em TestConsole.cs para corresponder ao novo nome de arquivo.
+    > [!NOTE]
+    > O [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] automaticamente altera a declaração de classes em TestConsole.cs para corresponder ao novo nome do arquivo.
 
 3. Em TestConsole.cs, adicione o seguinte código às instruções `using`:
 
@@ -234,7 +235,7 @@ O código do visualizador deve ser colocado em uma DLL, que será lido pelo depu
 
 1. No menu **Arquivo**, escolha **Adicionar** e clique em **Novo Projeto**.
 
-2. No **adicionar novo projeto** caixa de diálogo **tipo de projeto**s, selecione **Visual c#**.
+2. No **adicionar novo projeto** caixa de diálogo **tipo de projeto**s, selecione **Visual c#** .
 
 3. No **modelos** , escolha **biblioteca de classes**.
 

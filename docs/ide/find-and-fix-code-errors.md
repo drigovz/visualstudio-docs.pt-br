@@ -4,17 +4,17 @@ description: Este artigo descreve algumas maneiras básicas pelas quais o Visual
 ms.date: 05/02/2018
 ms.topic: conceptual
 ms.assetid: c3a14d28-d811-4ff3-bd09-21dce14025ca
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a43be698fd908737c96f9de3cf346b48e84f27fc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: b0be3965ea8343317cf570ae752109b50fa80dd4
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62798634"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650850"
 ---
 # <a name="make-code-work-in-visual-studio"></a>Fazer o código funcionar no Visual Studio
 
@@ -40,7 +40,7 @@ Quando o build for bem-sucedido, você verá os resultados desta maneira na jane
 
 ## <a name="review-the-error-list"></a>Examinar a Lista de Erros
 
-A menos que não tenha feito nenhuma modificação no código compilado com êxito anteriormente, provavelmente haverá um erro. Se você não estiver familiarizado com a codificação, provavelmente haverá muitos deles. Às vezes os erros são óbvios, como um erro de sintaxe simples ou um nome de variável incorreto e às vezes eles são difíceis de entender, com apenas um código confuso para orientá-lo. Para uma exibição mais clara dos problemas, navegue até o final da janela **Saída** do build e clique na guia **Lista de Erros**. Isso leva a uma exibição mais organizada dos erros e avisos para o projeto e oferece algumas opções adicionais também.
+A menos que não tenha feito nenhuma modificação no código compilado com êxito anteriormente, provavelmente haverá um erro. Se você não estiver familiarizado com a codificação, provavelmente haverá muitos deles. Às vezes os erros são óbvios, como um erro de sintaxe simples ou um nome de variável incorreto e às vezes eles são difíceis de entender, com apenas um código confuso para orientá-lo. Para obter uma exibição mais limpa dos problemas, navegue até a parte inferior da janela de **saída** da compilação e clique na guia **lista de erros** . Isso o levará a uma exibição mais organizada dos erros e avisos do seu projeto e também fornecerá algumas opções extras.
 
 ![Lista de Erros e Saída do Visual Studio](../ide/media/vs_ide_gs_debug_bad_build_error_list.png)
 
@@ -74,7 +74,7 @@ Os analisadores de código procuram problemas comuns de código que podem levar 
 
 ### <a name="c-and-visual-basic-code-analysis"></a>Análise de código do C# e do Visual Basic
 
-O Visual Studio inclui um conjunto interno de [analisadores do .NET Compiler Platform](../code-quality/roslyn-analyzers-overview.md) que examinam o código C# e Visual Basic durante a digitação. Instale outros analisadores como uma extensão do Visual Studio, ou como um pacote NuGet. Se forem encontradas violações de regras, elas serão relatadas no editor de códigos como uma linha ondulada sob o código transgressor e na **Lista de Erros**.
+O Visual Studio inclui um conjunto interno de [analisadores do .NET Compiler Platform](../code-quality/roslyn-analyzers-overview.md) que examinam o código C# e Visual Basic durante a digitação. Instale outros analisadores como uma extensão do Visual Studio, ou como um pacote NuGet. Se violações de regra forem encontradas, elas serão relatadas na Lista de Erros e no editor de códigos como um rabisco no código incorreto.
 
 ### <a name="c-code-analysis"></a>Análise de código C++
 
@@ -98,7 +98,19 @@ As Ações Rápidas podem ser usadas sempre que os analisadores de código deter
 
 ![Texto "Nenhuma ação rápida disponível aqui"](../ide/media/vs_ide_gs_debug_light_bulb_no_options.png)
 
-Com experiência, você poderá usar rapidamente as teclas de direção e **Ctrl**+**.** para verificar se há oportunidades fáceis de refatoração e limpar seu código.
+Com experiência, você poderá usar rapidamente as teclas de direção e **Ctrl**+ **.** para verificar se há oportunidades fáceis de refatoração e limpar seu código.
+
+::: moniker range="vs-2019"
+
+## <a name="run-code-cleanup"></a>Executar limpeza de código
+
+O Visual Studio fornece [formatação sob demanda do arquivo C# de código](code-styles-and-code-cleanup.md#apply-code-styles), incluindo preferências de estilo de código, por meio do botão de **limpeza de código** na parte inferior do editor.
+
+![Botão de Limpeza de código no Visual Studio 2019](media/execute-code-cleanup.png)
+
+Além de Formatar o arquivo em busca de espaços, recuos, et etc, a **limpeza de código** também aplica um conjunto de convenções de estilo de código que você define. Suas preferências para cada estilo de código são lidas no [arquivo EditorConfig](code-styles-and-code-cleanup.md#code-styles-in-editorconfig-files), caso tenha um para o projeto ou das [configurações de estilo de código](code-styles-and-code-cleanup.md#code-styles-in-the-options-dialog-box) na caixa de diálogo **Opções**.
+
+::: moniker-end
 
 ## <a name="debug-your-running-code"></a>Depurar seu código em execução
 
@@ -106,7 +118,7 @@ Agora que você compilou seu código com êxito e fez uma limpeza rápida, execu
 
 ![Janelas Automáticas e Pilha de Chamadas do Visual Studio](../ide/media/vs_ide_gs_debug_autos_and_call_stack.png)
 
-Pare o aplicativo pressionando **Shift**+**F5** ou clicando no botão **Parar**. Se preferir, apenas feche a janela principal do aplicativo (ou a caixa de diálogo da linha de comando).
+Pare o aplicativo pressionando **Shift**+**F5** ou clicando no botão **Parar**. Ou você pode simplesmente fechar a janela principal do aplicativo (ou a caixa de diálogo de linha de comando).
 
 Se seu código for executado perfeitamente e exatamente como esperado, parabéns! No entanto, se ele tiver parado, falhado ou fornecido alguns resultados estranhos, você precisará localizar a origem desses problemas e corrigir os bugs.
 
@@ -157,5 +169,5 @@ Para saber mais sobre testes de unidade no Visual Studio e como eles podem ajud�
 ## <a name="see-also"></a>Consulte também
 
 - [Introdução ao depurador](../debugger/debugger-feature-tour.md)
-- [Saiba mais sobre como usar o depurador](../debugger/index.md)
+- [Saiba mais sobre como usar o depurador](../debugger/index.yml)
 - [Gerar e corrigir um código](../ide/code-generation-in-visual-studio.md)

@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial: Criar um aplicativo Web ASP.NET Core com Entity Framework e Visual Studio 2019'
+title: Aplicativo Web ASP.NET Core com Entity Framework e Visual Studio 2019
 titleSuffix: ''
 description: Como primeira etapa antes de criar um aplicativo Web ASP.NET Core, aprenda como instalar o Visual Studio 2019 com este tutorial em vídeo e instruções passo a passo.
 ms.custom: get-started
@@ -17,12 +17,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 711082c70c6174bdf3363ddb12d233ceb3f78f0d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 1851c497579d45aa45c36dc1cd20945ce2b9c1e1
+ms.sourcegitcommit: 6c55c40da74ed8969dcba56acbd30458fdb69c5a
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62838917"
+ms.lasthandoff: 09/13/2019
+ms.locfileid: "70977459"
 ---
 # <a name="tutorial-create-your-first-aspnet-core-app-using-entity-framework-with-visual-studio-2019"></a>Tutorial: Criar seu primeiro aplicativo ASP.NET Core usando Entity Framework com Visual Studio 2019
 
@@ -58,7 +58,7 @@ O Visual Studio pode ser usado para muitos tipos diferentes de desenvolvimento, 
 
 ![Escolher cargas de trabalho no Visual Studio 2019](media/vs-2019/vs2019-choose-workloads.png)
 
-## <a name="install"></a>Instalar o
+## <a name="install"></a>Instalar
 
 Clique em **Instalar** e permitir que o instalador baixe e instale o Visual Studio.
 
@@ -88,7 +88,7 @@ Para a maioria dos modelos de projeto, também é possível habilitar o suporte 
 - Contas corporativas ou de estudante. Essa opção usa o Active Directory, Azure AD ou Office 365 para autenticação.
 - Autenticação do Windows. Adequada para aplicativos da intranet.
 
-Selecione o modelo de aplicativo Web padrão Sem autenticação e clique em **Ok**.
+Selecione o modelo de aplicativo Web padrão sem autenticação e clique em **criar**.
 
 ![Escolher opções de projeto ASP.NET Core no Visual Studio 2019](media/vs-2019/vs2019-choose-aspnetcore-project.png)
 

@@ -9,22 +9,22 @@ helpviewer_keywords:
 - WizardExtension element [Visual Studio Templates]
 - <WizardExtension> element [Visual Studio Templates]
 ms.assetid: d54b01c1-50f5-4b65-828c-686e2321cc8c
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e5e398125f467f4e5211573e96cd53bc0bc8d6dd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cfd46573f70b31559f9d6c4749c142d763537764
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62553724"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748942"
 ---
 # <a name="wizardextension-element-visual-studio-templates"></a>Elemento WizardExtension (modelos do Visual Studio)
-Contém os elementos de registro para personalizar o Assistente de modelo.
+Contém os elementos de registro para personalizar o assistente de modelo.
 
- \<VSTemplate >... \<WizardExtension>
+ \<VSTemplate >... \<WizardExtension >
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -45,20 +45,20 @@ Contém os elementos de registro para personalizar o Assistente de modelo.
 
 |Elemento|Descrição|
 |-------------|-----------------|
-|[Assembly](../extensibility/assembly-element-visual-studio-template-wizard-extension.md)|Elemento obrigatório.<br /><br /> Especifica o nome ou o nome forte de um assembly que é exibido no cache de assembly global. Deve haver pelo menos um `Assembly` elemento em um `WizardExtension` elemento.|
-|[FullClassName](../extensibility/fullclassname-element-visual-studio-template-wizard-extension.md)|Elemento obrigatório.<br /><br /> O nome totalmente qualificado da classe que implementa o `IWizard` interface. Deve haver pelo menos um `FullClassName` elemento em um `WizardExtension` elemento.|
+|[Assembly](../extensibility/assembly-element-visual-studio-template-wizard-extension.md)|Elemento obrigatório.<br /><br /> Especifica o nome ou nome forte de um assembly que aparece no cache de assembly global. Deve haver pelo menos um elemento `Assembly` em um elemento `WizardExtension`.|
+|[FullClassName](../extensibility/fullclassname-element-visual-studio-template-wizard-extension.md)|Elemento obrigatório.<br /><br /> O nome totalmente qualificado da classe que implementa a interface `IWizard`. Deve haver pelo menos um elemento `FullClassName` em um elemento `WizardExtension`.|
 
 ### <a name="parent-elements"></a>Elementos pai
 
 |Elemento|Descrição|
 |-------------|-----------------|
-|[VSTemplate](../extensibility/vstemplate-element-visual-studio-templates.md)|Contém todos os metadados para o modelo de projeto, o modelo de item ou o starter kit para.|
+|[VSTemplate](../extensibility/vstemplate-element-visual-studio-templates.md)|Contém todos os metadados do modelo de projeto, modelo de item ou kit do iniciante.|
 
 ## <a name="remarks"></a>Comentários
  O `WizardExtension` é um elemento filho opcional de `VSTemplate`.
 
 ## <a name="example"></a>Exemplo
- O exemplo a seguir ilustra os metadados para o modelo de projeto padrão para um [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] aplicativo do Windows.
+ O exemplo a seguir ilustra os metadados para o modelo de projeto padrão para um aplicativo [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] Windows.
 
 ```
 <VSTemplate Version="3.0.0" Type="Item"
@@ -91,4 +91,4 @@ Contém os elementos de registro para personalizar o Assistente de modelo.
 ## <a name="see-also"></a>Consulte também
 - [Referência de esquema do modelo do Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Criando modelos de projeto e de item](../ide/creating-project-and-item-templates.md)
-- [Como: usar assistentes com modelos de projeto](../extensibility/how-to-use-wizards-with-project-templates.md)
+- [Como usar assistentes com modelos do projeto](../extensibility/how-to-use-wizards-with-project-templates.md)

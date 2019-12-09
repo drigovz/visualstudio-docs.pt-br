@@ -16,20 +16,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 02ca94704d09288d1e29f6a530ae818053a9d368
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 92349fe14aef8204c67b88ad0f6a4b34346d2347
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62851761"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738071"
 ---
 # <a name="debugging-wcf-services"></a>Depurando serviços WCF
 ## <a name="in-this-section"></a>Nesta seção
- [Limitações na depuração de WCF](../debugger/limitations-on-wcf-debugging.md) descreve as restrições de depuração de WCF.
+ [Limitações na depuração do WCF](../debugger/limitations-on-wcf-debugging.md) Descreve as restrições na depuração do WCF.
 
- [Como: Intervir em serviços WCF](../debugger/how-to-step-into-wcf-services.md) explica o suporte do depurador para entrar em um serviço WCF.
+ [Como: entrar em serviços WCF](../debugger/how-to-step-into-wcf-services.md) Explica o suporte do depurador para depuração em um serviço WCF.
 
- [Como: Depurar um serviço do WCF auto-hospedado](../debugger/how-to-debug-a-self-hosted-wcf-service.md) descreve como depurar um serviço WCF executado fora do IIS ou o [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Development server.
+ [Como depurar um serviço WCF auto-hospedado](../debugger/how-to-debug-a-self-hosted-wcf-service.md) Descreve como depurar um serviço WCF que é executado fora do IIS ou do [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] o servidor de desenvolvimento.
 
 ## <a name="see-also"></a>Consulte também
 - [Segurança do depurador](../debugger/debugger-security.md)

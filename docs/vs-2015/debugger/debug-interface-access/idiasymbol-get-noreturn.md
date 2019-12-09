@@ -13,17 +13,17 @@ caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 81f60361e1c582d1e7016ba36a1c2b776339607c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 094c095b5d9e25ebe4a12f8f44b1e13555b0c249
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435765"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "65698217"
 ---
 # <a name="idiasymbolgetnoreturn"></a>IDiaSymbol::get_noReturn
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Recupera um sinalizador que especifica se a função foi marcada como de retorno nunca com o [noreturn](http://msdn.microsoft.com/library/9c6517e5-22d7-4051-9974-3d2200ae4d1d) atributo.  
+Recupera um sinalizador que especifica se a função foi marcada como de retorno nunca com o [noreturn](https://msdn.microsoft.com/library/9c6517e5-22d7-4051-9974-3d2200ae4d1d) atributo.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -52,4 +52,4 @@ HRESULT get_noReturn(
   
 ## <a name="see-also"></a>Consulte também  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [noreturn](http://msdn.microsoft.com/library/9c6517e5-22d7-4051-9974-3d2200ae4d1d)
+ [noreturn](https://msdn.microsoft.com/library/9c6517e5-22d7-4051-9974-3d2200ae4d1d)

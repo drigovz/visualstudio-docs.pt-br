@@ -1,5 +1,5 @@
 ---
-title: Habilitando recursos de depuração no Visual C++ (-D_DEBUG) | Microsoft Docs
+title: Habilitando recursos de C++ depuração em projetos (-D_DEBUG) | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -24,14 +24,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 295bdc7b220f8977c85dd1b359f99af2f8d5d72a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 19d341cba47e0a3d2259cc57d239c63420095347
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62850965"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72737952"
 ---
-# <a name="enabling-debug-features-in-visual-c-ddebug"></a>Habilitando funcionalidades de depuração no Visual C++ (/D_DEBUG)
+# <a name="enabling-debug-features-in-c-projects-d_debug"></a>Habilitando recursos de C++ depuração em projetos (/D_DEBUG)
 No [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)], os recursos de depuração como asserções são habilitados quando você compila seu programa com o símbolo **_DEBUG** definido. Há duas maneiras de definir **_DEBUG**:
 
 - Especifique **#define _DEBUG** no código-fonte ou

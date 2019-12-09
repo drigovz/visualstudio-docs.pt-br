@@ -1,18 +1,18 @@
 ---
 title: Personalizando análise de cobertura de código
-ms.date: 11/04/2016
+ms.date: 08/21/2019
 ms.topic: conceptual
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: 8749cd7757796a1b716b1ac9db086d3155f94694
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+author: jillre
+ms.openlocfilehash: 7392397748d26224a0fba0d5510fccb6655d7642
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62965539"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72665072"
 ---
 # <a name="customize-code-coverage-analysis"></a>Personalizar a análise de cobertura de código
 
@@ -30,22 +30,42 @@ Para personalizar a cobertura de código, siga estas etapas:
 
 1. Adicione um arquivo de configurações de execução à sua solução. Na **Gerenciador de Soluções**, no menu de atalho da solução, escolha **Adicionar** > **Novo Item** e selecione **arquivo XML**. Salve o arquivo com um nome como *CodeCoverage.runsettings*.
 
-1. Adicione o conteúdo do arquivo de exemplo no final deste artigo e personalize-o de acordo com suas necessidades, conforme descrito nas seções a seguir.
+2. Adicione o conteúdo do arquivo de exemplo no final deste artigo e personalize-o de acordo com suas necessidades, conforme descrito nas seções a seguir.
 
-1. Para selecionar o arquivo de configurações de execução, no menu **Testar**, escolha **Testar Configurações** > **Selecionar Arquivo de Configurações do Teste**. Para especificar um arquivo de configurações de execução para executar testes usando a linha de comando ou em um fluxo de trabalho de build, confira [Configurar testes de unidade usando um arquivo *.runsettings*](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md#specify-a-run-settings-file).
+::: moniker range="vs-2017"
+
+3. Para selecionar o arquivo de configurações de execução, no menu **Testar**, escolha **Testar Configurações** > **Selecionar Arquivo de Configurações do Teste**. Para especificar um arquivo de configurações de execução para executar testes na linha de comando, confira [Configurar testes de unidade](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md#command-line).
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+3. Para selecionar o arquivo de configurações de execução, no menu **testar** , escolha **Selecionar arquivo de configurações**. Para especificar um arquivo de configurações de execução para executar testes na linha de comando, confira [Configurar testes de unidade](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md#command-line).
+
+::: moniker-end
 
    Quando você seleciona **Analisar Cobertura de Código**, as informações de configuração são lidas no arquivo de configurações de execução.
 
    > [!TIP]
    > Os resultados da cobertura de código e a coloração de código anteriores não são ocultados automaticamente quando você executa testes ou atualiza o código.
 
-Para ativar ou desativar as configurações personalizadas, desmarque ou selecione o arquivo no menu **Teste** > **Configurações de Teste**.
+::: moniker range="vs-2017"
 
-![Menu de configurações de teste com o arquivo de configurações personalizadas](../test/media/codecoverage-settingsfile.png)
+Para ativar ou desativar as configurações personalizadas, marque ou desmarque o arquivo no menu **Teste** > **Configurações do Teste**.
 
-### <a name="specify-symbol-search-paths"></a>Especificar caminhos de pesquisa de símbolo
+![Menu de configurações do teste com o arquivo de configurações personalizadas no Visual Studio 2017](../test/media/codecoverage-settingsfile.png)
 
-A cobertura de código exige arquivos de símbolo (arquivos *.pdb*) para assemblies. Para assemblies compilados por sua solução, os arquivos de símbolos estão geralmente presentes nos arquivos binários e a cobertura de código funciona automaticamente. Mas, em alguns casos, você pode incluir os assemblies referenciados na análise de cobertura de código. Nesses casos, os arquivos *.pdb* podem não estar adjacentes aos binários, mas você pode especificar o caminho de pesquisa de símbolos no arquivo *.runsettings*.
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Para desativar e ativar as configurações personalizadas, desmarque ou selecione o arquivo no menu de **teste** .
+
+::: moniker-end
+
+## <a name="symbol-search-paths"></a>Caminhos de pesquisa de símbolo
+
+A cobertura de código exige arquivos de símbolo (arquivos *.pdb*) para assemblies. Para assemblies compilados por sua solução, os arquivos de símbolos estão geralmente presentes nos arquivos binários e a cobertura de código funciona automaticamente. Em alguns casos, o ideal é incluir os assemblies referenciados na análise de cobertura de código. Nesses casos, os arquivos *.pdb* podem não estar adjacentes aos binários, mas você pode especificar o caminho de pesquisa de símbolos no arquivo *.runsettings*.
 
 ```xml
 <SymbolSearchPaths>
@@ -55,11 +75,13 @@ A cobertura de código exige arquivos de símbolo (arquivos *.pdb*) para assembl
 ```
 
 > [!NOTE]
-> A resolução de símbolos pode ser demorada, especialmente ao usar um local de arquivo remoto com muitos assemblies. Portanto, considere copiar os arquivos *.pdb* no mesmo local que os arquivos binários (*.dll* e *.exe*).
+> A resolução de símbolos pode ser demorada, especialmente ao usar um local de arquivo remoto com muitos assemblies. Portanto, considere copiar os arquivos *.pdb* no mesmo local que os arquivos binários ( *.dll* e *.exe*).
 
-### <a name="exclude-and-include"></a>Excluir e incluir
+## <a name="include-or-exclude-assemblies-and-members"></a>Incluir ou excluir assemblies e membros
 
-Você pode excluir os assemblies especificados da análise de cobertura de código. Por exemplo:
+Você pode incluir ou excluir assemblies ou tipos específicos e membros da análise de cobertura de código. Se a seção **include** estiver vazia ou omitida, todos os assemblies carregados e que tiverem arquivos PDB associados serão incluídos. Se um assembly ou membro corresponder a uma cláusula na seção **Exclude** , ele será excluído da cobertura de código. A seção **Exclude** tem precedência sobre a seção **include** : se um assembly estiver listado em **include** e **Exclude**, ele não será incluído na cobertura de código.
+
+Por exemplo, o XML a seguir exclui um único assembly especificando seu nome:
 
 ```xml
 <ModulePaths>
@@ -70,7 +92,7 @@ Você pode excluir os assemblies especificados da análise de cobertura de códi
 </ModulePaths>
 ```
 
-Como alternativa, você pode especificar que assemblies devem ser incluídos. Esta abordagem tem a desvantagem de que, ao adicionar mais assemblies à solução, você tem que se lembrar de adicioná-los à lista:
+O exemplo a seguir especifica que apenas um único assembly deve ser incluído na cobertura de código:
 
 ```xml
 <ModulePaths>
@@ -81,17 +103,24 @@ Como alternativa, você pode especificar que assemblies devem ser incluídos. Es
 </ModulePaths>
 ```
 
-Se **Incluir** estiver vazio, o processamento de cobertura de código incluirá todos os assemblies que são carregados e para os quais os arquivos *.pdb* podem ser encontrados. A cobertura de código não inclui itens que correspondem a uma cláusula em uma lista **Excluir**.
+A tabela a seguir mostra as várias maneiras pelas quais os assemblies e membros podem ser combinados para inclusão ou exclusão da cobertura de código.
 
-**Incluir** é processado antes de **Excluir**.
+| Elemento XML | O que ele corresponde |
+| - | - |
+| ModulePath | Corresponde aos assemblies especificados pelo nome do assembly ou pelo caminho do arquivo. |
+| CompanyName | Faz a correspondência de assemblies pelo atributo **Company** . |
+| PublicKeyToken | Faz a correspondência de assemblies assinados pelo token de chave pública. |
+| Origem | Faz a correspondência de elementos pelo nome do caminho do arquivo de origem no qual eles são definidos. |
+| Atributo | Corresponde aos elementos que têm o atributo especificado. Especifique o nome completo do atributo, por exemplo, `<Attribute>^System\.Diagnostics\.DebuggerHiddenAttribute$</Attribute>`.<br/><br/>Se você excluir o atributo <xref:System.Runtime.CompilerServices.CompilerGeneratedAttribute>, o código que usa recursos de linguagem, como `async`, `await`, `yield return` e as propriedades implementadas automaticamente serão excluídas da análise de cobertura de código. Para excluir o código verdadeiramente gerado, exclua apenas o atributo <xref:System.CodeDom.Compiler.GeneratedCodeAttribute>. |
+| Função | Faz a correspondência de procedimentos, funções ou métodos por nome totalmente qualificado, incluindo a lista de parâmetros. Você também pode corresponder a parte do nome usando uma [expressão regular](#regular-expressions).<br/><br/>Exemplos:<br/><br/>`Fabrikam.Math.LocalMath.SquareRoot(double);` (C#)<br/><br/>`Fabrikam::Math::LocalMath::SquareRoot(double)` (C++) |
 
 ### <a name="regular-expressions"></a>Expressões regulares
 
-Os nós de inclusão e exclusão usam expressões regulares. Para obter mais informações, confira [Usar expressões regulares no Visual Studio](../ide/using-regular-expressions-in-visual-studio.md). As expressões regulares não são o mesmo que curingas. Em particular:
+Os nós de inclusão e exclusão usam expressões regulares, que não são iguais aos curingas. Todas as correspondências não diferenciam maiúsculas de minúsculas. Alguns exemplos são:
 
-- **.\\*** corresponde a uma cadeia de quaisquer caracteres
+- **.\*** corresponde a uma cadeia de quaisquer caracteres
 
-- **\\.** corresponde a um ponto ".")
+- **\\.** corresponde a um ponto "."
 
 - **\\(   \\)** corresponde a parênteses "(  )"
 
@@ -101,9 +130,7 @@ Os nós de inclusão e exclusão usam expressões regulares. Para obter mais inf
 
 - **$** corresponde ao final da cadeia de caracteres
 
-Todas as correspondências não diferenciam maiúsculas de minúsculas.
-
-Por exemplo:
+O XML a seguir mostra como incluir e excluir assemblies específicos usando expressões regulares:
 
 ```xml
 <ModulePaths>
@@ -120,45 +147,27 @@ Por exemplo:
 </ModulePaths>
 ```
 
+O XML a seguir mostra como incluir e excluir funções específicas usando expressões regulares:
+
+```xml
+<Functions>
+  <Include>
+    <!-- Include methods in the Fabrikam namespace: -->
+    <Function>^Fabrikam\..*</Function>
+    <!-- Include all methods named EqualTo: -->
+    <Function>.*\.EqualTo\(.*</Function>
+  </Include>
+  <Exclude>
+    <!-- Exclude methods in a class or namespace named UnitTest: -->
+    <Function>.*\.UnitTest\..*</Function>
+  </Exclude>
+</Functions>
+```
+
 > [!WARNING]
 > Se houver um erro em uma expressão regular, como um parêntese sem correspondência ou sem escape, a análise de cobertura de código não será executada.
 
-### <a name="other-ways-to-include-or-exclude-elements"></a>Outras maneiras de incluir ou excluir elementos
-
-- **ModulePath** – corresponde aos assemblies especificados pelo caminho de arquivo do assembly.
-
-- **CompanyName** – corresponde aos assemblies pelo atributo **Company**.
-
-- **PublicKeyToken**– correspondências aos assemblies assinados pelo token de chave pública.
-
-- **Source** – corresponde aos elementos pelo nome do caminho do arquivo de origem no qual eles são definidos.
-
-- **Attribute** – corresponde aos elementos aos quais um atributo específico está anexado. Especifique o nome completo do atributo e inclua "Attribute" no final do nome.
-
-- **Function** – corresponde a procedimentos, funções ou métodos pelo nome totalmente qualificado. Para corresponder a um nome de função, a expressão regular precisa corresponder ao nome totalmente qualificado da função, incluindo o namespace, o nome de classe, o nome do método e a lista de parâmetros. Por exemplo:
-
-   ```csharp
-   Fabrikam.Math.LocalMath.SquareRoot(double);
-   ```
-
-   ```cpp
-   Fabrikam::Math::LocalMath::SquareRoot(double)
-   ```
-
-   ```xml
-   <Functions>
-     <Include>
-       <!-- Include methods in the Fabrikam namespace: -->
-       <Function>^Fabrikam\..*</Function>
-       <!-- Include all methods named EqualTo: -->
-       <Function>.*\.EqualTo\(.*</Function>
-     </Include>
-     <Exclude>
-       <!-- Exclude methods in a class or namespace named UnitTest: -->
-       <Function>.*\.UnitTest\..*</Function>
-     </Exclude>
-   </Functions>
-   ```
+Para obter mais informações sobre expressões regulares, consulte [usar expressões regulares no Visual Studio](../ide/using-regular-expressions-in-visual-studio.md).
 
 ## <a name="sample-runsettings-file"></a>Arquivo .runsettings de exemplo
 
@@ -223,9 +232,8 @@ Included items must then not match any entries in the exclude list to remain inc
                 <!-- Don't forget "Attribute" at the end of the name -->
                 <Attribute>^System\.Diagnostics\.DebuggerHiddenAttribute$</Attribute>
                 <Attribute>^System\.Diagnostics\.DebuggerNonUserCodeAttribute$</Attribute>
-                <Attribute>^System\.Runtime\.CompilerServices.CompilerGeneratedAttribute$</Attribute>
-                <Attribute>^System\.CodeDom\.Compiler.GeneratedCodeAttribute$</Attribute>
-                <Attribute>^System\.Diagnostics\.CodeAnalysis.ExcludeFromCodeCoverageAttribute$</Attribute>
+                <Attribute>^System\.CodeDom\.Compiler\.GeneratedCodeAttribute$</Attribute>
+                <Attribute>^System\.Diagnostics\.CodeAnalysis\.ExcludeFromCodeCoverageAttribute$</Attribute>
               </Exclude>
             </Attributes>
 
@@ -262,9 +270,14 @@ Included items must then not match any entries in the exclude list to remain inc
             </PublicKeyTokens>
 
             <!-- We recommend you do not change the following values: -->
+
+            <!-- Set this to True to collect coverage information for functions marked with the "SecuritySafeCritical" attribute. Instead of writing directly into a memory location from such functions, code coverage inserts a probe that redirects to another function, which in turns writes into memory. -->
             <UseVerifiableInstrumentation>True</UseVerifiableInstrumentation>
+            <!-- When set to True, collects coverage information from child processes that are launched with low-level ACLs, for example, UWP apps. -->
             <AllowLowIntegrityProcesses>True</AllowLowIntegrityProcesses>
+            <!-- When set to True, collects coverage information from child processes that are launched by test or production code. -->
             <CollectFromChildProcesses>True</CollectFromChildProcesses>
+            <!-- When set to True, restarts the IIS process and collects coverage information from it. -->
             <CollectAspDotNet>False</CollectAspDotNet>
 
           </CodeCoverage>

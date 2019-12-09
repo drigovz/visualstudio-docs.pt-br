@@ -12,7 +12,7 @@ ms.workload:
 - data-science
 ms.openlocfilehash: a2848f04e2765c23f60de041e865e7684901b924
 ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "62962597"
@@ -97,7 +97,7 @@ A janela **Pilha de Chamadas** mostra os registros de ativação nativo e do Pyt
 
 ![Pilha de chamadas combinada com a depuração de modo misto](media/mixed-mode-debugging-call-stack.png)
 
-As transições serão exibidas como **[Código Externo]**, sem especificar a direção da transição, se a opção **Ferramentas** > **Opções** > **Depuração** > **Geral** > **Habilitar Apenas Meu Código** estiver definida.
+As transições serão exibidas como **[Código Externo]** , sem especificar a direção da transição, se a opção **Ferramentas** > **Opções** > **Depuração** > **Geral** > **Habilitar Apenas Meu Código** estiver definida.
 
 Clicar duas vezes em um quadro de chamada o torna ativo e abre o código-fonte apropriado, se possível. Se o código-fonte não estiver disponível, o quadro ainda ficará ativo e as variáveis locais poderão ser inspecionadas.
 
@@ -107,7 +107,7 @@ Ao usar os comandos **Intervir** (**F11**) ou **Depuração Circular** (**Shift*
 
 ### <a name="pyobject-values-view-in-native-code"></a>Exibição de valores PyObject no código nativo
 
-Quando um quadro nativo (C ou C++) está ativo, suas variáveis locais são mostradas na janela **Locais** do depurador. Nos módulos de extensão nativos do Python, muitas dessas variáveis são do tipo `PyObject` (que é um typedef de `_object`) ou alguns outros tipos fundamentais do Python (consulte a lista abaixo). Na depuração de modo misto, esses valores apresentam um nó filho adicional rotulado **[exibição do Python]**. Quando expandido, esse nó mostra a representação do Python da variável, idêntica a que você veria se uma variável local referenciando o mesmo objeto estivesse presente em um quadro do Python. Os filhos desse nó são editáveis.
+Quando um quadro nativo (C ou C++) está ativo, suas variáveis locais são mostradas na janela **Locais** do depurador. Nos módulos de extensão nativos do Python, muitas dessas variáveis são do tipo `PyObject` (que é um typedef de `_object`) ou alguns outros tipos fundamentais do Python (consulte a lista abaixo). Na depuração de modo misto, esses valores apresentam um nó filho adicional rotulado **[exibição do Python]** . Quando expandido, esse nó mostra a representação do Python da variável, idêntica a que você veria se uma variável local referenciando o mesmo objeto estivesse presente em um quadro do Python. Os filhos desse nó são editáveis.
 
 ![Exibição do Python na janela Locais](media/mixed-mode-debugging-python-view.png)
 
@@ -140,7 +140,7 @@ Uma opção alternativa (e melhor) é seguir o [PEP 3123](https://www.python.org
 
 ### <a name="native-values-view-in-python-code"></a>Exibição de valores Nativos no código do Python
 
-Semelhante à seção anterior, habilite uma **[Exibição do C++]** para valores nativos na janela **Locais** quando um quadro do Python estiver ativo. Esse recurso não está habilitado por padrão; portanto, ative-o clicando com o botão direito do mouse na janela **Locais** e ativando/desativando a opção de menu **Python** > **Mostrar Nós de Exibição do C++**.
+Semelhante à seção anterior, habilite uma **[Exibição do C++]** para valores nativos na janela **Locais** quando um quadro do Python estiver ativo. Esse recurso não está habilitado por padrão; portanto, ative-o clicando com o botão direito do mouse na janela **Locais** e ativando/desativando a opção de menu **Python** > **Mostrar Nós de Exibição do C++** .
 
 ![Habilitando a Exibição do C++ na janela Locais](media/mixed-mode-debugging-enable-cpp-view.png)
 
@@ -150,7 +150,7 @@ O nó **[exibição do C++]** fornece uma representação da estrutura subjacent
 
 Se um campo filho de um objeto for do tipo `PyObject` ou um dos outros tipos compatíveis, ele terá um nó de representação **[exibição do Python]** (se essas representações estiverem habilitadas), possibilitando a navegação por grafos de objeto em que os links não são diretamente expostos ao Python.
 
-Ao contrário dos nós **[exibição do Python]**, que usam metadados de objeto do Python para determinar o tipo do objeto, não há nenhum mecanismo similarmente confiável para a **[exibição do C++]**. Em termos gerais, considerando um valor do Python (ou seja, uma referência `PyObject`), não é possível determinar com confiança qual estrutura do C/C++ está dando suporte a ele. O depurador de modo misto tenta adivinhar esse tipo, observando vários campos do tipo de objeto (como o `PyTypeObject` referenciado por seu campo `ob_type`) que têm tipos de ponteiro de função. Se um desses ponteiros de função referenciar uma função que pode ser resolvida e essa função tiver um parâmetro `self` com um tipo mais específico que `PyObject*`, esse tipo será considerado como o tipo de suporte. Por exemplo, se `ob_type->tp_init` de um objeto especificado apontar para a seguinte função:
+Ao contrário dos nós **[exibição do Python]** , que usam metadados de objeto do Python para determinar o tipo do objeto, não há nenhum mecanismo similarmente confiável para a **[exibição do C++]** . Em termos gerais, considerando um valor do Python (ou seja, uma referência `PyObject`), não é possível determinar com confiança qual estrutura do C/C++ está dando suporte a ele. O depurador de modo misto tenta adivinhar esse tipo, observando vários campos do tipo de objeto (como o `PyTypeObject` referenciado por seu campo `ob_type`) que têm tipos de ponteiro de função. Se um desses ponteiros de função referenciar uma função que pode ser resolvida e essa função tiver um parâmetro `self` com um tipo mais específico que `PyObject*`, esse tipo será considerado como o tipo de suporte. Por exemplo, se `ob_type->tp_init` de um objeto especificado apontar para a seguinte função:
 
 ```c
 static int FobObject_init(FobObject* self, PyObject* args, PyObject* kwds) {

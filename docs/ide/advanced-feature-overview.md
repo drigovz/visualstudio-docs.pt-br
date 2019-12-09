@@ -2,17 +2,17 @@
 title: Recursos avançados
 ms.date: 06/01/2018
 ms.topic: conceptual
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ac716c3268709cdf168a379b2df6cd40b727f51
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 2283da7c212102ac948ea368bb95315344d2274e
+ms.sourcegitcommit: 4f82de3fb0cfae226aef1abb40c47e63d2036a5c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62793772"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72919109"
 ---
 # <a name="features-of-visual-studio"></a>Funcionalidades do Visual Studio
 
@@ -30,7 +30,7 @@ Se você ainda não tiver instalado o Visual Studio, acesse a página [Downloads
 
 ::: moniker range=">=vs-2019"
 
-Se você ainda não tiver instalado o Visual Studio, acesse a página [Downloads do Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) para instalá-lo gratuitamente.
+Se você ainda não tiver instalado o Visual Studio, acesse a página [Downloads do Visual Studio](https://visualstudio.microsoft.com/downloads) para instalá-lo gratuitamente.
 
 ::: moniker-end
 
@@ -68,7 +68,7 @@ Para obter mais informações, confira [Move to the cloud With Visual Studio and
 
 ## <a name="create-apps-for-the-web"></a>Criar aplicativos para a Web
 
-A Internet impulsiona nosso mundo moderno e o Visual Studio pode ajudá-lo a escrever aplicativos para ele. É possível criar aplicativos Web usando ASP.NET, Node.js, Python, JavaScript e TypeScript. O Visual Studio reconhece estruturas Web como Angular, jQuery, Express e muito mais. O ASP.NET Core e o .NET Core são executados nos sistemas operacionais Windows, Mac e Linux. O [ASP.NET Core](http://www.asp.net/core/overview) é uma atualização importante para MVC, WebAPI e SignalR e é executado no Windows, no Mac e no Linux.  O ASP.NET Core foi projetado desde o princípio para fornecer a você uma pilha .NET enxuta e combinável para compilar serviços e aplicativos Web modernos baseados em nuvem.
+A Internet impulsiona nosso mundo moderno e o Visual Studio pode ajudá-lo a escrever aplicativos para ele. É possível criar aplicativos Web usando ASP.NET, Node.js, Python, JavaScript e TypeScript. O Visual Studio reconhece estruturas Web como Angular, jQuery, Express e muito mais. O ASP.NET Core e o .NET Core são executados nos sistemas operacionais Windows, Mac e Linux. O [ASP.NET Core](https://dotnet.microsoft.com/learn/aspnet/what-is-aspnet-core) é uma atualização importante para MVC, WebAPI e SignalR e é executado no Windows, no Mac e no Linux.  O ASP.NET Core foi projetado desde o princípio para fornecer a você uma pilha .NET enxuta e combinável para compilar serviços e aplicativos Web modernos baseados em nuvem.
 
 Para obter mais informações, consulte [Ferramentas da Web modernas](https://visualstudio.microsoft.com/vs/modern-web-tooling/).
 

@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b7dee579f726a1edfc81e1f3e1ec62bf7d8beba4
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: b2e827b180ae218f3dd42b124500e01260e72d82
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437950"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297397"
 ---
 # <a name="gpu-usage"></a>Uso de GPU
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ Use a ferramenta Uso de GPU no Hub de Desempenho e Diagnóstico do Visual Studio
   
  Esta é a janela **Relatório de Uso de GPU**:  
   
- ![O relatório Uso de GPU, com as linhas do tempo CPU e GPU](../debugger/media/gfx-diag-gpu-usage-report.png "gfx_diag_gpu_usage_report")  
+ ![O relatório uso de GPU, com cronogramas de CPU e GPU](../debugger/media/gfx-diag-gpu-usage-report.png "gfx_diag_gpu_usage_report")  
   
 ## <a name="requirements"></a>Requisitos  
  Veja a seguir os requisitos para o uso da ferramenta Uso de GPU, além dos requisitos do Diagnóstico de Gráficos.  
@@ -40,7 +40,7 @@ Use a ferramenta Uso de GPU no Hub de Desempenho e Diagnóstico do Visual Studio
   
 #### <a name="to-start-the-gpu-usage-tool"></a>Para iniciar a ferramenta Uso de GPU:  
   
-1. No menu principal, escolha **Depurar** e, em seguida, **Desempenho e Diagnóstico** (teclado: Pressione Alt + F2).  
+1. No menu principal, escolha **Depurar** e, em seguida, **Desempenho e Diagnóstico** (teclado: pressione Alt + F2).  
   
 2. No hub Desempenho e Diagnóstico, marque a caixa ao lado de **Uso de GPU**. Opcionalmente, marque as caixas ao lado de outras ferramentas de seu interesse. É possível executar várias ferramentas de Desempenho e Diagnóstico simultaneamente para obter uma visão mais completa do desempenho do aplicativo.  
   
@@ -63,15 +63,15 @@ Use a ferramenta Uso de GPU no Hub de Desempenho e Diagnóstico do Visual Studio
   
 1. Na parte inferior da janela da sessão de diagnóstico, escolha o link **Parar Coleta** ou pressione **Parar** no canto superior esquerdo.  
   
-    ![Colete informações de intervalo de GPU e CPU.](../debugger/media/gfx-diag-gpu-usage-collect.png "gfx_diag_gpu_usage_collect")  
+    ![Coletar informações de tempo da GPU e da CPU.](../debugger/media/gfx-diag-gpu-usage-collect.png "gfx_diag_gpu_usage_collect")  
   
 2. Na parte superior do relatório, selecione uma seção de um dos gráficos que mostra o problema que você deseja investigar. A seleção pode ser feita em até 3 segundos; seções mais longas serão truncadas no início.  
   
-    ![Pós&#45;coleta, selecionar um intervalo para exibir os detalhes](../debugger/media/gfx-diag-gpu-usage-select1.png "gfx_diag_gpu_usage_select1")  
+    ![Postar&#45;coleção, selecione um intervalo para exibir detalhes](../debugger/media/gfx-diag-gpu-usage-select1.png "gfx_diag_gpu_usage_select1")  
   
 3. Na parte inferior do relatório, escolha o link **Exibir detalhes** na mensagem **... Clique aqui para exibir detalhes de uso de GPU para esse intervalo** para exibir uma linha do tempo detalhada da seleção.  
   
-    ![Pós&#45;coleção, com o intervalo selecionado](../debugger/media/gfx-diag-gpu-usage-select2.png "gfx_diag_gpu_usage_select2")  
+    ![Pós&#45;-coleção, com intervalo selecionado](../debugger/media/gfx-diag-gpu-usage-select2.png "gfx_diag_gpu_usage_select2")  
   
    Isso abrirá um novo documento com guias que contém o relatório. O relatório Uso de GPU ajuda você a ver quando um evento de gráficos é iniciado na CPU, quando ele atinge a GPU e quanto tempo a GPU leva para executá-lo. Essas informações podem ajudá-lo a identificar gargalos e oportunidades de aumento de paralelismo no código.  
   
@@ -82,7 +82,7 @@ Use a ferramenta Uso de GPU no Hub de Desempenho e Diagnóstico do Visual Studio
   
  Esta é a janela **Relatório de Uso de GPU**:  
   
- ![O relatório Uso de GPU, com as linhas do tempo CPU e GPU](../debugger/media/gfx-diag-gpu-usage-report.png "gfx_diag_gpu_usage_report")  
+ ![O relatório uso de GPU, com cronogramas de CPU e GPU](../debugger/media/gfx-diag-gpu-usage-report.png "gfx_diag_gpu_usage_report")  
   
  A seleção de um dos eventos na parte inferior do relatório coloca um marcador nos eventos correspondentes nas linhas do tempo relevantes, geralmente, um evento em um thread de CPU que representa a chamada à API e outro evento em uma das linhas do tempo da GPU que representa a hora em que a GPU concluiu a tarefa. Da mesma forma, a seleção de um dos eventos em uma linha do tempo realça o evento correspondente na parte inferior do relatório. Quando reduzidos nas linhas de tempo da parte superior do relatório, somente os eventos mais demorados são visíveis. Para ver os eventos que têm uma duração menor, amplie as linhas do tempo usando Ctrl + roda no dispositivo apontador ou o controle de colocação em escala no canto inferior esquerdo do painel superior. Também é possível arrastar o conteúdo do painel de linha do tempo para percorrer os eventos registrados.  
   
@@ -92,15 +92,15 @@ Use a ferramenta Uso de GPU no Hub de Desempenho e Diagnóstico do Visual Studio
   
 |Controle de filtro|Descrição|  
 |--------------------|-----------------|  
-|**Processo**|O nome do processo de seu interesse. Todos os processos que usaram a GPU durante a sessão de diagnóstico são incluídos nessa lista suspensa. A cor associada ao processo nessa lista suspensa é a cor da atividade do thread nas linhas do tempo abaixo.|  
+|**Process**|O nome do processo de seu interesse. Todos os processos que usaram a GPU durante a sessão de diagnóstico são incluídos nessa lista suspensa. A cor associada ao processo nessa lista suspensa é a cor da atividade do thread nas linhas do tempo abaixo.|  
 |**Thread**|A ID do thread de seu interesse. Em um aplicativo com multi-thread, isso pode ajudá-lo a isolar threads específicos que pertencem ao processo de seu interesse. Os eventos associados ao thread selecionado são realçados em cada linha do tempo.|  
-|**Vídeo**|O número do vídeo cuja taxa de atualização é exibida **Observação:**  Alguns drivers podem ser configurados para apresentar vários vídeos físicos como um único vídeo virtual grande. Talvez você veja apenas um vídeo listado, mesmo se o computador tiver vários vídeos anexados.|  
+|**Vídeo**|O número do vídeo cuja taxa de atualização é exibida **Observação:** alguns drivers podem ser configurados para apresentar vários vídeos físicos como um único vídeo virtual grande. Talvez você veja apenas um vídeo listado, mesmo se o computador tiver vários vídeos anexados.|  
 |**Filtrar**|Palavras-chave de seu interesse. Os eventos na parte inferior do relatório incluirão apenas aqueles que correspondem a uma palavra-chave, no todo ou em parte. É possível especificar várias palavras-chave separando-as com um ponto-e-vírgula (;).|  
 |**Classificação de Hierarquia**|Uma caixa de seleção que indica se as hierarquias de eventos – definidas por meio de marcadores do usuário – são preservadas ou ignoradas.|  
   
  A lista de eventos na parte inferior do Relatório de Uso de GPU exibe os detalhes de cada evento.  
   
-|Column|Descrição|  
+|Coluna|Descrição|  
 |------------|-----------------|  
 |**Nome do Evento**|O nome do evento de gráficos. Normalmente, um evento corresponde a um evento em uma linha do tempo do thread da CPU e a um evento em uma linha do tempo da GPU.<br /><br /> Os nomes de eventos podem ser “não atribuídos” se o Uso de GPU não pôde determinar o nome de um evento. Para obter mais informações, consulte a observação abaixo desta tabela.|  
 |**Início da CPU (ns)**|A hora em que o evento foi iniciado na CPU com uma chamada a uma API do Direct3D. O tempo é medido em nanossegundos, relativo à hora de início do aplicativo.|  
@@ -117,13 +117,13 @@ Use a ferramenta Uso de GPU no Hub de Desempenho e Diagnóstico do Visual Studio
   
 #### <a name="to-postpone-profiling-from-the-start-of-the-app"></a>Para adiar a criação de perfil após a inicialização do aplicativo:  
   
-1. No menu principal, escolha **Depurar** e, em seguida, **Desempenho e Diagnóstico** (teclado: Pressione Alt + F2).  
+1. No menu principal, escolha **Depurar** e, em seguida, **Desempenho e Diagnóstico** (teclado: pressione Alt + F2).  
   
 2. No hub Desempenho e Diagnóstico, siga o link **Configurações** ao lado de **Uso de GPU**.  
   
 3. Em **Configuração de Criação de Perfil da GPU**, na página de propriedades **Geral**, desmarque a caixa de seleção **Iniciar a criação de perfil após a inicialização do aplicativo** para adiar a criação de perfil.  
   
-     ![Configurar o início da coleta de Uso de GPU](../debugger/media/gfx-diag-gpu-usage-config.png "gfx_diag_gpu_usage_config")  
+     ![Configurar quando a coleta de uso da GPU for iniciada](../debugger/media/gfx-diag-gpu-usage-config.png "gfx_diag_gpu_usage_config")  
   
 > [!IMPORTANT]
 > Não há suporte para o adiamento da criação de perfil em aplicativos Direct3D 12.  
@@ -133,9 +133,9 @@ Use a ferramenta Uso de GPU no Hub de Desempenho e Diagnóstico do Visual Studio
 ## <a name="hwsupport"></a> Suporte de hardware e driver  
  Há suporte para os seguintes hardware e drivers de GPU:  
   
-|Fornecedor|Descrição da GPU|Versão de driver necessária|  
+|Console|Descrição da GPU|Versão de driver necessária|  
 |------------|---------------------|-----------------------------|  
-|Intel®|Processadores Intel® Core da 4ª geração (“Haswell”)<br /><br /> -   Intel® HD Graphics (GT1)<br />-   Intel® HD Graphics 4200 (GT2)<br />-   Intel® HD Graphics 4400 (GT2)<br />-   Intel® HD Graphics 4600 (GT2)<br />-   Intel® HD Graphics P4600 (GT2)<br />-   Intel® HD Graphics P4700 (GT2)<br />-   Intel® HD Graphics 5000 (GT3)<br />-   Intel® Iris™ Graphics 5100 (GT3)<br />-   Intel® Iris™ Pro Graphics 5200 (GT3e)|- (usar os últimos drivers)|  
+|Intel®|Processadores Intel® Core da 4ª geração (“Haswell”)<br /><br /> -   Intel® HD Graphics (GT1)<br />-   Intel® HD Graphics 4200 (GT2)<br />-   Intel® HD Graphics 4400 (GT2)<br />-   Intel® HD Graphics 4600 (GT2)<br />-   Intel® HD Graphics P4600 (GT2)<br />-   Intel® HD Graphics P4700 (GT2)<br />-   Intel® HD Graphics 5000 (GT3)<br />-   Intel® Iris™ Graphics 5100 (GT3)<br />-   Intel® Iris™ Pro Graphics 5200 (GT3e)|\- (usar os últimos drivers)|  
 |AMD®|A maioria, a partir da AMD Radeon™ HD série 7000 (excluindo AMD Radeon™ HD 7350-7670)<br /><br /> Aceleradores de GPUs AMD Radeon™, AMD FirePro™ e AMD FirePro com a arquitetura GCN (Graphics Core Next).<br /><br /> APUs (Unidades de Processamento Acelerado) AMD® série E e AMD série A com a arquitetura GCN (Graphics Core Next) (“Kaveri”, “Kabini”, “Temash”, “Beema”, “Mullins”)|14.7 RC3 ou superior|  
 |NVIDIA®|A maioria, a partir da NVIDIA® GeForce® série 400.<br /><br /> Aceleradores de GPUs NVIDIA® GeForce®, NVIDIA Quadro® e NVIDIA® Tesla™ com a arquitetura Fermi™, Kepler™ ou Maxwell™.|343.37 ou superior|  
   
@@ -143,10 +143,10 @@ Use a ferramenta Uso de GPU no Hub de Desempenho e Diagnóstico do Visual Studio
   
 ## <a name="see-also"></a>Consulte também  
   
-- [Resolver problemas difíceis de elementos gráficos no jogo usando as ferramentas do DirectX (vídeo)](http://channel9.msdn.com/Events/GDC/GDC-2015/Solve-the-Tough-Graphics-Problems-with-your-Game-Using-DirectX-Tools)  
+- [Resolver problemas difíceis de elementos gráficos no jogo usando as ferramentas do DirectX (vídeo)](https://channel9.msdn.com/Events/GDC/GDC-2015/Solve-the-Tough-Graphics-Problems-with-your-Game-Using-DirectX-Tools)  
   
-- [Ferramenta Uso de GPU no Visual Studio (vídeo)](http://channel9.msdn.com/Events/Visual-Studio/Connect-event-2014/715)  
+- [Ferramenta Uso de GPU no Visual Studio (vídeo)](https://channel9.msdn.com/Events/Visual-Studio/Connect-event-2014/715)  
   
-- [Ferramenta Uso de GPU no Visual Studio 2013 Atualização 4 CTP1 (blog)](http://blogs.msdn.com/b/vcblog/archive/2014/09/05/gpu-usage-tool-in-visual-studio-2013-update-4-ctp1.aspx)  
+- [Ferramenta Uso de GPU no Visual Studio 2013 Atualização 4 CTP1 (blog)](https://devblogs.microsoft.com/cppblog/gpu-usage-tool-in-visual-studio-2013-update-4-ctp1/)  
   
-- [Uso de GPU para o DirectX no Visual Studio (blog)](http://blogs.msdn.com/b/ianhu/archive/2014/12/16/gpu-usage-for-directx-in-visual-studio.aspx)
+- [Uso de GPU para o DirectX no Visual Studio (blog)](https://blogs.msdn.microsoft.com/ianhu/2014/12/16/gpu-usage-for-directx-in-visual-studio/)

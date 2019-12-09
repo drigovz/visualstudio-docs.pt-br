@@ -1,21 +1,22 @@
 ---
-title: 'Como: Iniciar um aplicativo independente do .NET Framework com o criador de perfil para coletar dados de memória usando a linha de comando | Microsoft Docs'
+title: 'Linha de comando do Profiler: abrir o aplicativo .NET Framework cliente, obter dados de memória'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 3bc53041-91b7-4ad0-8413-f8bf2c4b3f5e
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: d6600444d5fb991bce0500c587cb66b9baefdd22
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: c9ee0ae59fd32394e31acc75184d0e55aaae872d
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63386055"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74775345"
 ---
-# <a name="how-to-launch-a-stand-alone-net-framework-application-with-the-profiler-to-collect-memory-data-by-using-the-command-line"></a>Como: Iniciar um aplicativo independente do .NET Framework com o criador de perfil para coletar dados de memória usando a linha de comando
+# <a name="how-to-launch-a-stand-alone-net-framework-application-with-the-profiler-to-collect-memory-data-by-using-the-command-line"></a>Como iniciar um aplicativo .NET Framework autônomo com o criador de perfil para coletar dados de memória usando a linha de comando
 Este tópico descreve como usar as ferramentas de linha de comando das Ferramentas de Criação de Perfil do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para iniciar um aplicativo autônomo (cliente) do .NET Framework e coletar dados de memória.
 
  Uma sessão de criação de perfil tem três partes:
@@ -36,15 +37,15 @@ Este tópico descreve como usar as ferramentas de linha de comando das Ferrament
 
 #### <a name="to-start-an-application-by-using-the-profiler"></a>Para iniciar um aplicativo usando o criador de perfil
 
-1. Abra uma janela do Prompt de Comando.
+1. {1&gt;Abra uma janela do Prompt de Comando. &lt;1}
 
-2. Inicie o criador de perfil. Tipo:
+2. {2&gt;Inicie o criador de perfil.&lt;2} Tipo:
 
     **VSPerfCmd /start:sample /output:** `OutputFile` [`Options`]
 
-   - A opção [/start](../profiling/start.md)**:sample** inicializa o criador de perfil.
+   - A opção [/start](../profiling/start.md) **:sample** inicializa o criador de perfil.
 
-   - A opção [/output](../profiling/output.md)**:**`OutputFile` é necessária com **/start**. `OutputFile` especifica o nome e o local do arquivo de dados de criação de perfil (.vsp).
+   - A opção [/output](../profiling/output.md) **:** `OutputFile` é necessária com **/start**. `OutputFile` especifica o nome e o local do arquivo de dados de criação de perfil (.vsp).
 
      É possível usar qualquer uma das opções a seguir com a opção **/start:sample**.
 
@@ -55,9 +56,9 @@ Este tópico descreve como usar as ferramentas de linha de comando das Ferrament
 
 3. Inicie o aplicativo de destino. Tipo:
 
-    **VSPerfCmd**  [/launch](../profiling/launch.md) **:** `appName` **/gc:**{**allocation**&#124;**lifetime**}[`Options`]
+    **VSPerfCmd**  [/launch](../profiling/launch.md) **:** `appName` **/gc:** {**allocation**&#124;**lifetime**}[`Options`]
 
-   - A opção [/gc](../profiling/gc-vsperfcmd.md)**:**`Keyword` é necessária para coletar dados de memória do .NET Framework. O parâmetro de palavra-chave especifica se serão coletados dados de alocação de memória ou se serão coletados dados de alocação de memória e dados de tempo de vida do objeto.
+   - A opção [/gc](../profiling/gc-vsperfcmd.md) **:** `Keyword` é necessária para coletar dados de memória do .NET Framework. O parâmetro de palavra-chave especifica se serão coletados dados de alocação de memória ou se serão coletados dados de alocação de memória e dados de tempo de vida do objeto.
 
      |Palavra-chave|Descrição|
      |-------------|-----------------|
@@ -82,8 +83,8 @@ Este tópico descreve como usar as ferramentas de linha de comando das Ferrament
 
     |Opção|Descrição|
     |------------|-----------------|
-    |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Inicia (**/globalon**) ou interrompe (**/globaloff**) a coleta de dados para todos os processos.|
-    |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [processoff](../profiling/processon-and-processoff.md) **:** `PID`|Inicia (**/processon**) ou interrompe (**/processoff**) a coleta de dados para o processo especificado pela ID de processo (`PID`).|
+    |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Inicia ( **/globalon**) ou interrompe ( **/globaloff**) a coleta de dados para todos os processos.|
+    |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [processoff](../profiling/processon-and-processoff.md) **:** `PID`|Inicia ( **/processon**) ou interrompe ( **/processoff**) a coleta de dados para o processo especificado pela ID de processo (`PID`).|
     |[/attach](../profiling/attach.md) **:** `PID` [/detach](../profiling/detach.md)|**/attach** começa a coletar dados para o processo que é especificado pela `PID` (a ID do processo). **/detach** interrompe a coleta de dados para todos os processos.|
 
 - Também é possível usar a opção **VSPerfCmd.exe**[/mark](../profiling/mark.md) para inserir uma marca de criação de perfil no arquivo de dados. O comando **/mark** adiciona um identificador, um carimbo de data/hora e uma cadeia de caracteres de texto opcional definida pelo usuário. As marcas podem ser usadas para filtrar os dados.
@@ -97,7 +98,7 @@ Este tópico descreve como usar as ferramentas de linha de comando das Ferrament
 
     - Feche o aplicativo de destino.
 
-         - ou -
+         \- ou -
 
     - Digite **VSPerfCmd /detach**
 

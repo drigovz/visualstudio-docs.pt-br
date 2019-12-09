@@ -1,21 +1,21 @@
 ---
-title: 'Arquivo de exemplo XSD: Relações'
+title: 'Arquivo XSD de exemplo: Relações'
 ms.date: 11/04/2016
 ms.topic: sample
 ms.assetid: 60126510-b7dd-4cb4-92d3-9883590b92f2
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e643ab6566818df7cdfee2bc4e5b256ecf065b5a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 0d5342bece15fff25ba970270456aed96c5dc7f2
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62955560"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72601761"
 ---
-# <a name="sample-xsd-file-relationships"></a>Arquivo de exemplo XSD: Relações
+# <a name="sample-xsd-file-relationships"></a>Arquivo XSD de exemplo: relações
 
 O arquivo XSD a seguir é usado em vários exemplos na documentação do Designer de Esquema XSD. Este arquivo é um esquema de ordem de compra com anotações e documentação.
 
@@ -63,3 +63,6 @@ O arquivo XSD a seguir é usado em vários exemplos na documentação do Designe
 
 </xs:schema>
 ```
+
+> [!NOTE]
+> As empresas, as organizações, os produtos, os nomes de domínio, os endereços de email, os logotipos, as pessoas, os locais e os eventos de exemplo descritos aqui são fictícios. Nenhuma associação com nenhuma empresa, organização, produto, nome de domínio, endereço de email, logotipo, pessoa, locais ou eventos reais é intencional nem deve ser inferida.

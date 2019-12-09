@@ -9,11 +9,11 @@ caps.latest.revision: 33
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1312d61b2d287a5dd8cb757b73e818a9e9cb2241
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60110031"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68202065"
 ---
 # <a name="walkthrough-creating-an-sdk-using-c"></a>Passo a passo: Criando um SDK usando C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Este passo a passo mostra como criar uma biblioteca C++ nativa matemática SDK, 
   
 1. Na barra de menus, escolha **Arquivo**, **Novo**, **Projeto**.  
   
-2. Na lista de modelos, expanda **Visual C++**, **Windows Store**e, em seguida, selecione o **DLL (aplicativos da Windows Store)** modelo. No **nome** , especifique `NativeMath`e, em seguida, escolha o **Okey** botão.  
+2. Na lista de modelos, expanda **Visual C++** , **Windows Store**e, em seguida, selecione o **DLL (aplicativos da Windows Store)** modelo. No **nome** , especifique `NativeMath`e, em seguida, escolha o **Okey** botão.  
   
 3. Atualize NativeMath.h para coincidir com o código a seguir.  
   
@@ -61,7 +61,7 @@ Este passo a passo mostra como criar uma biblioteca C++ nativa matemática SDK, 
   
 1. Na **Gerenciador de soluções**, abra o menu de atalho **solução 'NativeMath'** e, em seguida, escolha **Add**, **novo projeto**.  
   
-2. Na lista de modelos, expanda **Visual c#**, **extensibilidade**e, em seguida, selecione **pacote VSIX**. No **nome** , especifique **NativeMathVSIX**e, em seguida, escolha o **Okey** botão.  
+2. Na lista de modelos, expanda **Visual c#** , **extensibilidade**e, em seguida, selecione **pacote VSIX**. No **nome** , especifique **NativeMathVSIX**e, em seguida, escolha o **Okey** botão.  
   
 3. Quando o designer de manifesto do VSIX for exibida, feche-o.  
   
@@ -73,7 +73,7 @@ Este passo a passo mostra como criar uma biblioteca C++ nativa matemática SDK, 
   
 6. Na **Gerenciador de soluções**, abra o menu de atalho para o **NativeMathVSIX** do projeto e, em seguida, escolha **Add**, **Novo Item**.  
   
-7. Na lista de **itens do Visual c#**, expanda **dados**e, em seguida, selecione **arquivo XML**. No **nome** , especifique `SDKManifest.xml`e, em seguida, escolha o **Okey** botão.  
+7. Na lista de **itens do Visual c#** , expanda **dados**e, em seguida, selecione **arquivo XML**. No **nome** , especifique `SDKManifest.xml`e, em seguida, escolha o **Okey** botão.  
   
 8. Use esse XML para substituir o conteúdo do arquivo:  
   
@@ -145,7 +145,7 @@ Este passo a passo mostra como criar uma biblioteca C++ nativa matemática SDK, 
   
 1. Na barra de menus, escolha **Arquivo**, **Novo**, **Projeto**.  
   
-2. Na lista de modelos, expanda **Visual C++**, **Windows Store**e, em seguida, selecione **aplicativo em branco**. No **nome** , especifique **NativeMathSDKSample**e, em seguida, escolha o **Okey** botão.  
+2. Na lista de modelos, expanda **Visual C++** , **Windows Store**e, em seguida, selecione **aplicativo em branco**. No **nome** , especifique **NativeMathSDKSample**e, em seguida, escolha o **Okey** botão.  
   
 3. Na **Gerenciador de soluções**, abra o menu de atalho para o **NativeMathSDKSample** do projeto e, em seguida, escolha **Add**, **referência**.  
   

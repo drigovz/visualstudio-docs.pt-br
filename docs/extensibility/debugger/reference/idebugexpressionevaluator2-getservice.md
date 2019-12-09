@@ -6,17 +6,20 @@ helpviewer_keywords:
 - IDebugExpressionEvaluator2::GetService
 - GetService
 ms.assetid: f8988a9e-9d18-42af-84a7-55f41e9adf63
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ac6f73e31e7e15a2ffd86e2d969f98a686fbd004
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 42a4027b4153f262eb8164a915f229f04c7cbed4
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62842926"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66325559"
 ---
 # <a name="idebugexpressionevaluator2getservice"></a>IDebugExpressionEvaluator2::GetService
 Recupera um objeto de serviço recebe seu identificador exclusivo.
@@ -37,14 +40,12 @@ int GetService (
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `uid`
+## <a name="parameters"></a>Parâmetros
+`uid`\
+[in] Identificador exclusivo do serviço a ser recuperado.
 
- [in] Identificador exclusivo do serviço a ser recuperado.
-
- `ppService`
-
- [out] Retorna um objeto que representa o serviço.
+`ppService`\
+[out] Retorna um objeto que representa o serviço.
 
 ## <a name="return-value"></a>Valor de retorno
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.

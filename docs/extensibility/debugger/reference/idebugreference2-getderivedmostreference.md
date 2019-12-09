@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugReference2::GetDerivedMostReference
 ms.assetid: 07253b74-7d39-48e0-8e85-ac8dfd919f6e
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0d10c265ba8b77dc8cc434fd8a9c688f1c7188a8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 8775087b9ec212f7e7d7e1547d01a5f175c4dc22
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62869191"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66329819"
 ---
 # <a name="idebugreference2getderivedmostreference"></a>IDebugReference2::GetDerivedMostReference
 Obtém a referência do mais derivado de uma referência. Reservado para uso futuro.
@@ -36,10 +39,9 @@ int GetDerivedMostReference( 
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `ppDerivedMost`
-
- [out] Retorna um [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) objeto que representa a propriedade mais derivado.
+## <a name="parameters"></a>Parâmetros
+`ppDerivedMost`\
+[out] Retorna um [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) objeto que representa a propriedade mais derivado.
 
 ## <a name="return-value"></a>Valor de retorno
  Sempre retorna `E_NOTIMPL`.

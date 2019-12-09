@@ -8,15 +8,15 @@ helpviewer_keywords:
 - load tests, adding browsers
 - load tests, removing browsers
 ms.assetid: 47f981d9-3038-45cc-a486-82b9daf9a9a1
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 4da3fc51593cc877e09ca6f46db70303186b293e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: b3f80da91181e4cb555d0ce96a5b4d2fb797eb0d
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62783829"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72664982"
 ---
 # <a name="edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario"></a>Editar a combinação de testes para especificar os tipos de navegadores da Web em um cenário de teste de carga
 
@@ -65,21 +65,21 @@ Depois de especificar uma combinação de navegadores, posteriormente, você pod
 
 ## <a name="about-the-mix-control"></a>Sobre o controle misto
 
- O controle misto permite que você ajuste a porcentagem de carga distribuída entre testes, tipos de navegador ou tipos de rede em um cenário de teste de carga. Você ajusta os valores de porcentagem movendo controles deslizantes. O ajuste da combinação dos tipos de navegador especifica a probabilidade de um usuário virtual executar um tipo de navegador específico em um cenário de teste de carga.
+O controle misto permite que você ajuste a porcentagem de carga distribuída entre testes, tipos de navegador ou tipos de rede em um cenário de teste de carga. Você ajusta os valores de porcentagem movendo controles deslizantes. O ajuste da combinação dos tipos de navegador especifica a probabilidade de um usuário virtual executar um tipo de navegador específico em um cenário de teste de carga.
 
- Quando você move um controle deslizante, os valores de porcentagem de todos os itens disponíveis mudam. Se você tiver mais de dois itens, a quantidade adicionada ou removida será distribuída por igual entre os outros itens. É possível substituir esse comportamento. Se marcar a caixa de seleção na coluna de cadeado de um item específico, você bloqueará o valor de porcentagem especificado do item. Então, quando você mover um controle deslizante, o valor adicionado ou removido só será aplicado aos itens desbloqueados restantes.
+Quando você move um controle deslizante, os valores de porcentagem de todos os itens disponíveis mudam. Se você tiver mais de dois itens, a quantidade adicionada ou removida será distribuída por igual entre os outros itens. É possível substituir esse comportamento. Se marcar a caixa de seleção na coluna de cadeado de um item específico, você bloqueará o valor de porcentagem especificado do item. Então, quando você mover um controle deslizante, o valor adicionado ou removido só será aplicado aos itens desbloqueados restantes.
 
- O botão **Distribuir** é usado para alocar igualmente os valores de percentual entre todos os itens. Por exemplo, se você tiver três itens, escolher **Distribuir** define os valores de percentual como 34, 33 e 33.
+O botão **Distribuir** é usado para alocar igualmente os valores de percentual entre todos os itens. Por exemplo, se você tiver três itens, escolher **Distribuir** define os valores de percentual como 34, 33 e 33.
 
 > [!WARNING]
 > O botão **Distribuir** substitui todos os itens bloqueados.
 
- Também é possível digitar os valores de percentual diretamente na coluna **%** em vez de usar os controles deslizantes. Se você inserir um valor de porcentagem diretamente, os outros itens não serão ajustados automaticamente.
+Também é possível digitar os valores de percentual diretamente na coluna **%** em vez de usar os controles deslizantes. Se você inserir um valor de porcentagem diretamente, os outros itens não serão ajustados automaticamente.
 
 > [!NOTE]
 > Os controles deslizantes serão desabilitados quando o total não for 100% ou quando os valores de percentual inseridos na coluna **%** forem decimais.
 
- Ao inserir valores de porcentagem manualmente, você deve ter certeza de que a soma de todos os itens seja 100%. Ao salvar uma combinação, se a soma não for 100%, você deverá aceitar os valores de porcentagem como estão ou voltar e ajustá-los. Se você optar por aceitá-los como estão, eles serão rateados em 100%.  Por exemplo, se você tiver dois itens e defini-los manualmente como 80% e 40%, o primeiro item será definido como 66,67% (80 dividido por 120) e o segundo item será definido como 33,33% (40 dividido por 120).
+Ao inserir valores de porcentagem manualmente, você deve ter certeza de que a soma de todos os itens seja 100%. Ao salvar uma combinação, se a soma não for 100%, você deverá aceitar os valores de porcentagem como estão ou voltar e ajustá-los. Se você optar por aceitá-los como estão, eles serão rateados em 100%.  Por exemplo, se você tiver dois itens e defini-los manualmente como 80% e 40%, o primeiro item será definido como 66,67% (80 dividido por 120) e o segundo item será definido como 33,33% (40 dividido por 120).
 
 ## <a name="see-also"></a>Consulte também
 

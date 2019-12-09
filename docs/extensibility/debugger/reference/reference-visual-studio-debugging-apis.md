@@ -7,17 +7,17 @@ helpviewer_keywords:
 - debugging [Debugging SDK], reference
 - Debugging SDK, reference
 ms.assetid: 9810fc50-43c7-4916-9916-1cf333037b51
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d2f4a1c30542db5446c6f39054eb8ef4eaae19bf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0badd30653dfee4ae7002fb094fc30af40de80b3
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62913434"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66336306"
 ---
 # <a name="reference-visual-studio-debugging-apis"></a>Referência (APIs de depuração no Visual Studio)
 

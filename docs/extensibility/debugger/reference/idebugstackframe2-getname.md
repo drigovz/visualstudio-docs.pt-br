@@ -1,52 +1,53 @@
 ---
 title: IDebugStackFrame2::GetName | Microsoft Docs
-ms.date: 11/15/2016
-ms.prod: visual-studio-dev14
-ms.technology: vs-ide-sdk
+ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - IDebugStackFrame2::GetName
 helpviewer_keywords:
 - IDebugStackFrame2::GetName
 ms.assetid: 069d4f96-363f-404e-9c89-5318c4c9821b
-caps.latest.revision: 11
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
-ms.openlocfilehash: 076e744be4e97cc8c58d5b5f7578f1701f39d711
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.workload:
+- vssdk
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 3d50fc1b711c673d8582be0d1208bc1d56e0f38b
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62915966"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352101"
 ---
 # <a name="idebugstackframe2getname"></a>IDebugStackFrame2::GetName
-[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+Obtém o nome do quadro de pilha.
 
-Obtém o nome do quadro de pilha.  
-  
-## <a name="syntax"></a>Sintaxe  
-  
-```cpp#  
-HRESULT GetName (   
-   BSTR* pbstrName  
-);  
-```  
-  
-```csharp  
-int GetName (   
-   out string pbstrName  
-);  
-```  
-  
-#### <a name="parameters"></a>Parâmetros  
- `pbstrName`  
- [out] Retorna o nome do quadro de pilha.  
-  
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.  
-  
-## <a name="remarks"></a>Comentários  
- Normalmente, o nome de um quadro de pilha é o nome do método que está sendo executado.  
-  
-## <a name="see-also"></a>Consulte também  
- [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)
+## <a name="syntax"></a>Sintaxe
+
+```cpp
+HRESULT GetName ( 
+   BSTR* pbstrName
+);
+```
+
+```csharp
+int GetName ( 
+   out string pbstrName
+);
+```
+
+## <a name="parameters"></a>Parâmetros
+`pbstrName`\
+[out] Retorna o nome do quadro de pilha.
+
+## <a name="return-value"></a>Valor de retorno
+ Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
+
+## <a name="remarks"></a>Comentários
+ Normalmente, o nome de um quadro de pilha é o nome do método que está sendo executado.
+
+## <a name="see-also"></a>Consulte também
+- [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)

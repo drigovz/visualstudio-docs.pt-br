@@ -1,5 +1,5 @@
 ---
-title: 'Como: Alterar entre notação de membro e notação de associação (Designer de Classe)'
+title: Alterar entre notação de membro e associação (Designer de Classe)
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,24 +8,24 @@ helpviewer_keywords:
 - member notation
 - notation, association
 ms.assetid: 65881c5a-d251-4a36-ad0d-73d088436092
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ff63e6cca9deebbfcfa5960b41d85f9425f7a73
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: fd1bb86e13fb5f5b654ad4f4e1ee7fe7a243f1f1
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975503"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647741"
 ---
-# <a name="how-to-change-between-member-notation-and-association-notation-in-class-designer"></a>Como: Alterar entre notação de membro e notação de associação no Designer de Classe
+# <a name="how-to-change-between-member-notation-and-association-notation-in-class-designer"></a>Como alterar entre notação de membro e notação de associação no Designer de Classe
 
 No **Designer de Classe**, você pode alterar a maneira que o diagrama de classe representa uma relação de associação entre dois tipos de notação de membro para notação de associação e vice-versa. Membros exibidos como linhas de associação geralmente fornecem uma visualização útil de como os tipos estão relacionados.
 
 > [!NOTE]
-> Os relacionamentos de associação podem ser representados como um campo ou uma propriedade de membro. Para alterar notação de membro para notação de associação, um tipo deve ter um membro de outro tipo. Para alterar notação de associação para a notação de membro, os dois tipos devem estar conectados por uma linha de associação. Para obter mais informações, confira [Como: Criar associações entre tipos](how-to-create-associations-between-types.md). Se o projeto contiver vários diagramas de classe, as alterações feitas na forma como um diagrama exibe os relacionamentos de associação afetarão somente esse diagrama. Para alterar a maneira como outro diagrama exibe os relacionamentos de associação, abra ou exiba esse diagrama e execute estas etapas.
+> Os relacionamentos de associação podem ser representados como um campo ou uma propriedade de membro. Para alterar notação de membro para notação de associação, um tipo deve ter um membro de outro tipo. Para alterar notação de associação para a notação de membro, os dois tipos devem estar conectados por uma linha de associação. Para obter mais informações, confira [Como criar associações entre tipos](how-to-create-associations-between-types.md). Se o projeto contiver vários diagramas de classe, as alterações feitas na forma como um diagrama exibe os relacionamentos de associação afetarão somente esse diagrama. Para alterar a maneira como outro diagrama exibe os relacionamentos de associação, abra ou exiba esse diagrama e execute estas etapas.
 
 ## <a name="to-change-member-notation-to-association-notation"></a>Para alterar de notação de membro para notação de associação
 
@@ -44,7 +44,7 @@ No diagrama de classe, clique com o botão direito do mouse na linha de associa�
 
 ## <a name="see-also"></a>Consulte também
 
-- [Como: Criar herança entre tipos](how-to-create-inheritance-between-types.md)
-- [Como: Exibir herança entre tipos](how-to-view-inheritance-between-types.md)
+- [Como criar herança entre tipos](how-to-create-inheritance-between-types.md)
+- [Como exibir herança entre tipos](how-to-view-inheritance-between-types.md)
 - [Exibindo tipos e relações](designing-and-viewing-classes-and-types.md)
-- [Como: Visualizar uma associação de coleção](how-to-visualize-a-collection-association.md)
+- [Como visualizar uma associação de coleção](how-to-visualize-a-collection-association.md)

@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - SccPopulateDirList function
 ms.assetid: dfff634b-b155-498b-a356-6eb252ac4fad
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a74d6008db15cc8cd89daf4882d8952006dc547d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f13c674e6374e826dc45343e5cd1f7edcc1f8100
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62433078"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72720891"
 ---
 # <a name="sccpopulatedirlist-function"></a>Função SccPopulateDirList
-Esta função determina quais diretórios e (opcionalmente) arquivos são armazenados no controle do código-fonte, dada uma lista de diretórios para examinar.
+Essa função determina quais diretórios e (opcionalmente) os arquivos são armazenados no controle do código-fonte, dadas uma lista de diretórios a serem examinados.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -38,38 +38,38 @@ SCCRTN SccPopulateDirList(
 #### <a name="parameters"></a>Parâmetros
  pContext
 
-[in] O ponteiro de contexto de plug-in de controle do código-fonte.
+no O ponteiro de contexto do plug-in de controle do código-fonte.
 
  nDirs
 
-[in] Número de caminhos de diretório no `lpDirPaths` matriz.
+no Número de caminhos de diretório na matriz de `lpDirPaths`.
 
  lpDirPaths
 
-[in] Matriz de caminhos de diretório para examinar.
+no Matriz de caminhos de diretório a serem examinados.
 
  pfnPopulate
 
-[in] Função de retorno de chamada a ser chamada para cada caminho de diretório e (opcionalmente) no nome do arquivo `lpDirPaths` (consulte [POPDIRLISTFUNC](../extensibility/popdirlistfunc.md) para obter detalhes).
+no Função de retorno de chamada para chamar cada caminho de diretório e (opcionalmente) nome de arquivo em `lpDirPaths` (consulte [POPDIRLISTFUNC](../extensibility/popdirlistfunc.md) para obter detalhes).
 
  pvCallerData
 
-[in] Valor a ser passados inalterados para a função de retorno de chamada.
+no Valor que deve ser passado inalterado para a função de retorno de chamada.
 
  fOptions
 
-[in] Uma combinação de valores que controlam como os diretórios são processados (consulte a seção "PopulateDirList sinalizadores" [sinalizadores de bit usados por comandos específicos](../extensibility/bitflags-used-by-specific-commands.md) para possíveis valores).
+no Uma combinação de valores que controlam como os diretórios são processados (consulte a seção "sinalizadores de PopulateDirList" do [Bitflags usado por comandos específicos](../extensibility/bitflags-used-by-specific-commands.md) para os valores possíveis).
 
-## <a name="return-value"></a>Valor de retorno
- A implementação de plug-in de controle do código-fonte desta função deve retornar um dos seguintes valores:
+## <a name="return-value"></a>Valor retornado
+ Espera-se que a implementação de plug-in de controle do código-fonte dessa função retorne um dos seguintes valores:
 
 |Valor|Descrição|
 |-----------|-----------------|
-|SCC_OK|A operação foi concluída com êxito.|
+|SCC_OK|Operação concluída com êxito.|
 |SCC_E_UNKNOWNERROR|Ocorreu um erro.|
 
 ## <a name="remarks"></a>Comentários
- Somente os diretórios e (opcionalmente) os nomes de arquivo que realmente estão no repositório de controle de origem são passados para a função de retorno de chamada.
+ Somente os diretórios e (opcionalmente) os nomes de arquivo que estão na verdade no repositório do controle do código-fonte são passados para a função de retorno de chamada.
 
 ## <a name="see-also"></a>Consulte também
 - [Funções de API do plug-in de controle do código-fonte](../extensibility/source-control-plug-in-api-functions.md)

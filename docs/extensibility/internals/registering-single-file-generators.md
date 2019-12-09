@@ -1,31 +1,31 @@
 ---
-title: Registrar geradores de arquivo único | Microsoft Docs
+title: Registrando geradores de arquivo único | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - registration, custom tools
 - custom tools, defining registry settings
 ms.assetid: db7592c0-1273-4843-9617-6e2ddabb6ca8
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3d5d9e4cd0baa2343a68a3d86a96110c97b6cbb7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: e9026da08272d69bac246f98ae741a47527d627f
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63426811"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72724560"
 ---
 # <a name="registering-single-file-generators"></a>Registrando geradores de arquivo único
-Para disponibilizar uma ferramenta personalizada no [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], você deve registrá-lo tão [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] pode instanciá-la e a associa a um tipo de projeto específico.
+Para disponibilizar uma ferramenta personalizada no [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], você deve registrá-la para que [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] possa instanciá-la e a associe a um tipo de projeto específico.
 
 ### <a name="to-register-a-custom-tool"></a>Para registrar uma ferramenta personalizada
 
-1. Registrar a DLL de ferramenta personalizada ou no [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] registro local ou no registro do sistema, sob HKEY_CLASSES_ROOT.
+1. Registre a DLL de ferramenta personalizada no registro local [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ou no registro do sistema, em HKEY_CLASSES_ROOT.
 
-    Por exemplo, eis aqui as informações de registro gerenciado MSDataSetGenerator ferramenta personalizada, que vem com [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]:
+    Por exemplo, aqui estão as informações de registro da ferramenta personalizada MSDataSetGenerator gerenciada, que vem com [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]:
 
    ```
    [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\14.0\CLSID\{E76D53CC-3D4F-40A2-BD4D-4F3419755476}]
@@ -36,7 +36,7 @@ Para disponibilizar uma ferramenta personalizada no [!INCLUDE[vsprvs](../../code
    "Assembly"="Microsoft.VSDesigner, Version=14.0.0.0, Culture=Neutral, PublicKeyToken=b03f5f7f11d50a3a"
    ```
 
-2. Criar uma chave do registro no desejado [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] hive em geradores\\*GUID* onde *GUID* é o GUID definido pelo sistema de projeto específico do idioma ou o serviço. O nome da chave se torna o nome programático da sua ferramenta personalizada. A chave de ferramenta personalizada tem os seguintes valores:
+2. Crie uma chave do registro no [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Hive desejado em geradores \\*GUID* , em que *GUID* é o GUID definido pelo serviço ou sistema de projeto do idioma específico. O nome da chave se torna o nome programático de sua ferramenta personalizada. A chave de ferramenta personalizada tem os seguintes valores:
 
    - (Padrão)
 
@@ -48,7 +48,7 @@ Para disponibilizar uma ferramenta personalizada no [!INCLUDE[vsprvs](../../code
 
    - GeneratesDesignTimeSource
 
-        Necessário. Indica se os tipos de arquivos gerados por essa ferramenta personalizada são disponibilizados aos designers visuais. O valor desse parâmetro precisa ser (zero) 0 para tipos não disponíveis aos designers visuais ou 1 (um) para os tipos disponíveis para designers visuais.
+        Necessário. Indica se os tipos de arquivos produzidos por essa ferramenta personalizada são disponibilizados para designers visuais. O valor desse parâmetro precisa ser (zero) 0 para tipos não disponíveis para designers visuais ou (um) 1 para tipos disponíveis para designers visuais.
 
    > [!NOTE]
    > Você deve registrar a ferramenta personalizada separadamente para cada idioma para o qual você deseja que a ferramenta personalizada esteja disponível.

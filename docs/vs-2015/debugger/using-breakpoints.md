@@ -41,12 +41,12 @@ caps.latest.revision: 63
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: fa7f571a797df6ecd7a2967ba1cefa3d99a0463b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: cadaf069bb53c9d212e6de5ebd6ea2cf9efe7bb1
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60064564"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65684518"
 ---
 # <a name="using-breakpoints"></a>Usando pontos de interrupção
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -167,7 +167,7 @@ Você pode definir pontos de interrupção quando você deseja interromper a exe
    A condição pode ser qualquer expressão válida que seja reconhecida pelo depurador. Para obter mais informações sobre expressões válidas, consulte [expressões no depurador](../debugger/expressions-in-the-debugger.md).  
   
 ## <a name="using-object-ids-in-breakpoint-conditions-c-and-f"></a>Usando IDs de objeto em condições de ponto de interrupção (C# e F#)  
- Há vezes quando você deseja observar o comportamento de um objeto específico; Por exemplo, você talvez queira saber por que um objeto foi inserido mais de uma vez em uma coleção. No C# e F#, você pode criar IDs de objeto para instâncias específicas de [tipos de referência](http://msdn.microsoft.com/library/801cf030-6e2d-4a0d-9daf-1431b0c31f47) e usá-los em condições de ponto de interrupção. A ID de objeto é gerada pelo common language runtime (CLR) serviços de depuração e associada ao objeto.  Para criar uma ID de objeto, faça o seguinte:  
+ Há vezes quando você deseja observar o comportamento de um objeto específico; Por exemplo, você talvez queira saber por que um objeto foi inserido mais de uma vez em uma coleção. No C# e F#, você pode criar IDs de objeto para instâncias específicas de [tipos de referência](https://msdn.microsoft.com/library/801cf030-6e2d-4a0d-9daf-1431b0c31f47) e usá-los em condições de ponto de interrupção. A ID de objeto é gerada pelo common language runtime (CLR) serviços de depuração e associada ao objeto.  Para criar uma ID de objeto, faça o seguinte:  
   
 1. Defina um ponto de interrupção no código de algum tempo depois que o objeto foi criado.  
   

@@ -1,106 +1,107 @@
 ---
 title: IDebugComPlusSymbolProvider::GetFunctionLineOffset | Microsoft Docs
-ms.date: 11/15/2016
-ms.prod: visual-studio-dev14
-ms.technology: vs-ide-sdk
+ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugComPlusSymbolProvider::GetFunctionLineOffset
 - GetFunctionLineOffset
 ms.assetid: 51460f5a-4e98-427a-8315-27246e24fb61
-caps.latest.revision: 10
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
-ms.openlocfilehash: 73bd3184396ec020e8337efe6397503263be5359
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.workload:
+- vssdk
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: c1edec584cfd11e469db8a3f1468dcdfc5768e01
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62876675"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66336774"
 ---
 # <a name="idebugcomplussymbolprovidergetfunctionlineoffset"></a>IDebugComPlusSymbolProvider::GetFunctionLineOffset
-[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+Recupera o endereço dentro de uma função que representa o deslocamento de linha determinada.
 
-Recupera o endereço dentro de uma função que representa o deslocamento de linha determinada.  
-  
-## <a name="syntax"></a>Sintaxe  
-  
-```cpp#  
-HRESULT GetFunctionLineOffset(  
-   IDebugAddress*  pAddress,   
-   DWORD           dwLine,   
-   IDebugAddress** ppNewAddress   
-);  
-```  
-  
-```csharp  
-int GetFunctionLineOffset(  
-   IDebugAddress     pAddress,   
-   uint              dwLine,   
-   out IDebugAddress ppNewAddress  
-);  
-```  
-  
-#### <a name="parameters"></a>Parâmetros  
- `pAddress`  
- [in] Endereço que representa a função.  
-  
- `dwLine`  
- [in] Linha de deslocamento do início da função.  
-  
- `ppNewAddress`  
- [out] Novo endereço que representa o deslocamento a partir do início da função de linha.  
-  
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.  
-  
-## <a name="example"></a>Exemplo  
- O exemplo a seguir mostra como implementar esse método para um **CDebugSymbolProvider** objeto que expõe a [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) interface.  
-  
-```cpp#  
-HRESULT CDebugSymbolProvider::GetFunctionLineOffset(  
-    IDebugAddress *pAddress,  
-    DWORD dwLine,  
-    IDebugAddress **ppNewAddress  
-)  
-{  
-    HRESULT hr = S_OK;  
-    CDEBUG_ADDRESS address;  
-    CComPtr<CModule> pModule;  
-    DWORD dwOffset;  
-    CDebugAddress* paddr = NULL;  
-  
-    METHOD_ENTRY(CDebugSymbolProvider::GetFunctionLineOffset);  
-  
-    IfFalseGo( pAddress, S_FALSE );  
-    IfFailGo( pAddress->GetAddress( &address ) );  
-  
-    ASSERT(address.addr.dwKind == ADDRESS_KIND_METADATA_METHOD);  
-    IfFalseGo( address.addr.dwKind == ADDRESS_KIND_METADATA_METHOD, S_FALSE );  
-  
-    IfFailGo( GetModule( address.GetModule(), &pModule) );  
-  
-    // Find the first offset for dwLine in the function  
-  
-    IfFailGo( pModule->GetFunctionLineOffset( address.addr.addr.addrMethod.tokMethod,  
-              address.addr.addr.addrMethod.dwVersion,  
-              dwLine,  
-              &dwOffset ) );  
-  
-    // Create the new Address  
-  
-    address.addr.addr.addrMethod.dwOffset = dwOffset;  
-    IfNullGo( paddr = new CDebugAddress(address), E_OUTOFMEMORY );  
-    IfFailGo( paddr->QueryInterface( __uuidof(IDebugAddress),  
-                                     (void**) ppNewAddress ) );  
-  
-Error:  
-  
-    METHOD_EXIT(CDebugSymbolProvider::GetFunctionLineOffset, hr);  
-    RELEASE( paddr );  
-    return hr;  
-}  
-```  
-  
-## <a name="see-also"></a>Consulte também  
- [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)
+## <a name="syntax"></a>Sintaxe
+
+```cpp
+HRESULT GetFunctionLineOffset(
+    IDebugAddress*  pAddress,
+    DWORD           dwLine,
+    IDebugAddress** ppNewAddress
+);
+```
+
+```csharp
+int GetFunctionLineOffset(
+    IDebugAddress     pAddress,
+    uint              dwLine,
+    out IDebugAddress ppNewAddress
+);
+```
+
+## <a name="parameters"></a>Parâmetros
+`pAddress`\
+[in] Endereço que representa a função.
+
+`dwLine`\
+[in] Linha de deslocamento do início da função.
+
+`ppNewAddress`\
+[out] Novo endereço que representa o deslocamento a partir do início da função de linha.
+
+## <a name="return-value"></a>Valor de retorno
+Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
+
+## <a name="example"></a>Exemplo
+O exemplo a seguir mostra como implementar esse método para um **CDebugSymbolProvider** objeto que expõe a [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) interface.
+
+```cpp
+HRESULT CDebugSymbolProvider::GetFunctionLineOffset(
+    IDebugAddress *pAddress,
+    DWORD dwLine,
+    IDebugAddress **ppNewAddress
+)
+{
+    HRESULT hr = S_OK;
+    CDEBUG_ADDRESS address;
+    CComPtr<CModule> pModule;
+    DWORD dwOffset;
+    CDebugAddress* paddr = NULL;
+
+    METHOD_ENTRY(CDebugSymbolProvider::GetFunctionLineOffset);
+
+    IfFalseGo( pAddress, S_FALSE );
+    IfFailGo( pAddress->GetAddress( &address ) );
+
+    ASSERT(address.addr.dwKind == ADDRESS_KIND_METADATA_METHOD);
+    IfFalseGo( address.addr.dwKind == ADDRESS_KIND_METADATA_METHOD, S_FALSE );
+
+    IfFailGo( GetModule( address.GetModule(), &pModule) );
+
+    // Find the first offset for dwLine in the function
+
+    IfFailGo( pModule->GetFunctionLineOffset( address.addr.addr.addrMethod.tokMethod,
+              address.addr.addr.addrMethod.dwVersion,
+              dwLine,
+              &dwOffset ) );
+
+    // Create the new Address
+
+    address.addr.addr.addrMethod.dwOffset = dwOffset;
+    IfNullGo( paddr = new CDebugAddress(address), E_OUTOFMEMORY );
+    IfFailGo( paddr->QueryInterface( __uuidof(IDebugAddress),
+                                     (void**) ppNewAddress ) );
+
+Error:
+
+    METHOD_EXIT(CDebugSymbolProvider::GetFunctionLineOffset, hr);
+    RELEASE( paddr );
+    return hr;
+}
+```
+
+## <a name="see-also"></a>Consulte também
+- [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

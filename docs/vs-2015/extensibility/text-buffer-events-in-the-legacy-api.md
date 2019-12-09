@@ -11,13 +11,13 @@ caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: e82fa31ca435d0c850a4d9e75e927cff9613b046
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58928121"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68186411"
 ---
-# <a name="text-buffer-events-in-the-legacy-api"></a>Eventos de Buffer de texto na API herdada
+# <a name="text-buffer-events-in-the-legacy-api"></a>Eventos de buffer de texto na API herdada
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 O objeto de buffer de texto emite vários eventos diferentes que permitem que você responda às situações diferentes.  
@@ -53,4 +53,4 @@ O objeto de buffer de texto emite vários eventos diferentes que permitem que vo
   
 ## <a name="see-also"></a>Consulte também  
  [Acessando o Buffer de texto usando a API herdada](../extensibility/accessing-the-text-buffer-by-using-the-legacy-api.md)   
- [Como: Registre-se para eventos de Buffer de texto com a API herdada](../extensibility/how-to-register-for-text-buffer-events-with-the-legacy-api.md)
+ [Como: registrar para eventos de buffer de texto com a API herdada](../extensibility/how-to-register-for-text-buffer-events-with-the-legacy-api.md)

@@ -8,14 +8,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cb56f7ef08241aed2e109e6845af8fb596cb42e4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 835e2cec19e36418091e094abd2ec76bd6403398
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62895353"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72734837"
 ---
-# <a name="vsgdefaultrunfilename"></a>VSG_DEFAULT_RUN_FILENAME
+# <a name="vsg_default_run_filename"></a>VSG_DEFAULT_RUN_FILENAME
 Define o nome de arquivo padrão do arquivo de log de gráficos.
 
 ## <a name="syntax"></a>Sintaxe
@@ -25,19 +25,19 @@ Define o nome de arquivo padrão do arquivo de log de gráficos.
 ```
 
 #### <a name="parameters"></a>Parâmetros
- `filename` O nome do arquivo fornecido por padrão para o arquivo de log de gráficos quando informações de gráficos são capturadas por meio de programação.
+ `filename` o nome de arquivo fornecido por padrão ao arquivo de log de gráficos quando as informações gráficas são capturadas programaticamente.
 
 ## <a name="value"></a>Valor
- Arquivo de log de uma cadeia de caracteres literal que representa o nome de arquivo dos elementos gráficos. Por padrão, L"default.vsglog".
+ Um literal de cadeia de caracteres que representa o nome de arquivo do arquivo de log de gráficos. Por padrão, L "default. vsglog".
 
 ```C++
 #define VSG_DEFAULT_FILENAME L"default.vsglog"
 ```
 
 ## <a name="remarks"></a>Comentários
- Se o símbolo do pré-processador `DONT_SAVE_VSGLOG_TO_TEMP` é definido, em seguida, o nome do arquivo é relativo ao diretório atual do aplicativo capturado, ou é um caminho absoluto; caso contrário, ele é relativo ao diretório de arquivos temporários do usuário e não pode ser um caminho absoluto.
+ Se o símbolo de pré-processador `DONT_SAVE_VSGLOG_TO_TEMP` for definido, o nome do arquivo será relativo ao diretório atual do aplicativo capturado, ou será um caminho absoluto; caso contrário, ele é relativo ao diretório de arquivos temporários do usuário e não pode ser um caminho absoluto.
 
- Para alterar o nome do arquivo definidos, você deve redefini-la antes de incluir `vsgcapture.h` em seu programa.
+ Para alterar o nome de arquivo definido, você deve redefini-lo antes de incluir `vsgcapture.h` em seu programa.
 
 ## <a name="example"></a>Exemplo
  Este exemplo mostra como alterar o nome de arquivo padrão do arquivo de captura:

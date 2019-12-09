@@ -13,11 +13,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.openlocfilehash: fb72389364c75716d8a77ca479dcda0f033f3630
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
+ms.openlocfilehash: bccfb9eee59aba9397f57b773cb06c3d2de89f9f
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38944339"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "72735698"
 ---
 [Baixe o Visual Studio Community](https://visualstudio.microsoft.com/vs/#downloadvs) ou [compare as edições do Visual Studio](https://visualstudio.microsoft.com/vs/compare/)

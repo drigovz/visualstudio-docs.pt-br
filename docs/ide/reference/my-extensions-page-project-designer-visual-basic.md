@@ -8,37 +8,37 @@ helpviewer_keywords:
 - Project Designer, My Extensions page
 - My Extensions page in Project Designer
 ms.assetid: 2f08494e-84c1-444b-872b-900fbbcf0364
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d366ed403eba6fbfab4aec22f4542ee5362962f2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 894d425d934043b7ed06b29bc3d6fa19115ccf17
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62540605"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748678"
 ---
 # <a name="my-extensions-page-project-designer-visual-basic"></a>Página Minhas Extensões, Designer de Projeto (Visual Basic)
 Use a página **Minhas Extensões** do **Designer de Projeto** para gerenciar `My` extensões do namespace em seu projeto. Extensões do namespace `My` permitem personalizar o namespace `My` para adicionar seus próprios membros personalizados. Para obter informações sobre a criação de extensões personalizadas do namespace `My`, consulte [Estendendo Meu Namespace no Visual Basic](/dotnet/visual-basic/developing-apps/customizing-extending-my/extending-the-my-namespace).
 
- Para acessar a página **Minhas Extensões**, clique duas vezes em **Meu Projeto** para o nó do projeto no **Gerenciador de Soluções**. Quando o **Designer de Projeto** aparecer, clique na guia **Minhas Extensões**.
+Para acessar a página **Minhas Extensões**, clique duas vezes em **Meu Projeto** para o nó do projeto no **Gerenciador de Soluções**. Quando o **Designer de Projeto** aparecer, clique na guia **Minhas Extensões**.
 
 ## <a name="uielement-list"></a>Lista UIElement
- As opções a seguir permitem adicionar ou remover extensões do namespace `My` em seu projeto. Uma extensão do namespace `My` deve ser instalada primeiro como um modelo de item do Visual Studio para estar disponível para ser adicionada. Para obter informações sobre a publicação e a instalação de extensões do namespace `My`, consulte [Empacotando e implantando Minhas Extensões personalizadas](/dotnet/visual-basic/developing-apps/customizing-extending-my/packaging-and-deploying-custom-my-extensions).
+As opções a seguir permitem adicionar ou remover extensões do namespace `My` em seu projeto. Uma extensão do namespace `My` deve ser instalada primeiro como um modelo de item do Visual Studio para estar disponível para ser adicionada. Para obter informações sobre a publicação e a instalação de extensões do namespace `My`, consulte [Empacotando e implantando Minhas Extensões personalizadas](/dotnet/visual-basic/developing-apps/customizing-extending-my/packaging-and-deploying-custom-my-extensions).
 
  **Minhas Extensões do Namespace**
 
- Esta lista mostra todas as extensões do namespace `My` instaladas no projeto.
+Esta lista mostra todas as extensões do namespace `My` instaladas no projeto.
 
  **Adicionar Extensão**
 
- Clique nesse botão para adicionar uma extensão do namespace `My` instalada a seu projeto. Uma lista de todas as possíveis extensões do namespace `My` é exibida. Selecione a extensão do namespace `My` que você deseja adicionar ao seu projeto e clique em **OK** para adicioná-la.
+Clique nesse botão para adicionar uma extensão do namespace `My` instalada a seu projeto. Uma lista de todas as possíveis extensões do namespace `My` é exibida. Selecione a extensão do namespace `My` que você deseja adicionar ao seu projeto e clique em **OK** para adicioná-la.
 
  **Remover Extensão**
 
- Selecione uma ou mais referências na lista **Minhas extensões do namespace** e, em seguida, clique nesse botão para remover a extensão do namespace `My` do projeto.
+Selecione uma ou mais referências na lista **Minhas extensões do namespace** e, em seguida, clique nesse botão para remover a extensão do namespace `My` do projeto.
 
 ## <a name="see-also"></a>Consulte também
 

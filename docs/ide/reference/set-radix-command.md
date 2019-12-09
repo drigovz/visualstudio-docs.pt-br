@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Set Radix command
 - Debug.SetRadix command
 ms.assetid: 6ffd1554-7530-4da4-b5f5-e276a5034f3b
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 70b61dff4ebe7486c2e04e4fd3061cd4110feca1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: f920311301b722c11bea4a9f4eb90e9aa7663d80
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62952029"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747729"
 ---
 # <a name="set-radix-command"></a>Comando Definir Base
 Define ou retorna a base numérica usada para exibir valores inteiros.
@@ -30,12 +30,12 @@ Debug.SetRadix [10 | 16 | hex | dec]
 ```
 
 ## <a name="arguments"></a>Arguments
- `10` ou `16` ou `hex` ou `dec`
+`10` ou `16` ou `hex` ou `dec`
 
- Opcional. Indica o decimal (10 ou dez) ou hexadecimal (16 ou hexa). Se um argumento for omitido, o valor base atual será retornado.
+Opcional. Indica o decimal (10 ou dez) ou hexadecimal (16 ou hexa). Se um argumento for omitido, o valor base atual será retornado.
 
 ## <a name="example"></a>Exemplo
- Este exemplo define o ambiente para exibir valores inteiros em formato hexadecimal.
+Este exemplo define o ambiente para exibir valores inteiros em formato hexadecimal.
 
 ```cmd
 >Debug.SetRadix hex

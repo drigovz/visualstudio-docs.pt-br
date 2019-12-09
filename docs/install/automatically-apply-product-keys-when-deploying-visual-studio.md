@@ -1,7 +1,7 @@
 ---
 title: Aplicar automaticamente as chaves do produto (Product Keys)
 description: Saiba como aplicar chaves de produto de forma programática quando você implanta o Visual Studio.
-ms.date: 04/10/2019
+ms.date: 09/24/2019
 ms.custom: seodec18
 ms.topic: conceptual
 ms.assetid: d79260be-6234-4fd3-89b5-a9756b4a93c1
@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 3f1cdc3d8516271cd397c1d22118ca21a92f78cd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 4c3e8313e1357095a9732c9304a695dd3b13b465
+ms.sourcegitcommit: 0554b59a2a251661e56824fb9cd6e9b1f326cef1
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974209"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "71831841"
 ---
 # <a name="automatically-apply-product-keys-when-deploying-visual-studio"></a>Aplicar chaves do produto (Product Keys) durante a implantação do Visual Studio
 
@@ -98,6 +98,9 @@ Se `StorePID.exe` aplicar a chave do produto (Product Key) com êxito, ele retor
 | `PID_ACTION_INUSE`        | 4    |
 | `PID_ACTION_FAILURE`      | 5    |
 | `PID_ACTION_NOUPGRADE`    | 6    |
+
+> [!NOTE]
+> Quando você executa uma instância virtual do Visual Studio, certifique-se de também virtualizar a pasta AppData local e o registro. Para solucionar problemas de instâncias virtuais, execute `C:\Program Files (x86)\Microsoft Visual Studio\<version>\Common7\IDE\DDConfigCA.exe`.  
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

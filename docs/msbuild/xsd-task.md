@@ -12,20 +12,20 @@ dev_langs:
 - C++
 - jsharp
 helpviewer_keywords:
-- XSD task (MSBuild (Visual C++))
-- MSBuild (Visual C++), XSD task
+- XSD task (MSBuild (C++))
+- MSBuild (C++), XSD task
 ms.assetid: 15c99f5c-7124-4bbc-bc03-70c7bcce8893
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 742b2b1660b5a1776edca0a4b64c56222cd1c163
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: ec51406aec9aec8981e5517480e4cd07bc80ffb1
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62777633"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748022"
 ---
 # <a name="xsd-task"></a>tarefa XSD
 Encapsula a ferramenta de definição de esquema XML (*xsd.exe*), a qual gera arquivos de classe ou de esquema com base em uma origem.
@@ -44,15 +44,15 @@ Encapsula a ferramenta de definição de esquema XML (*xsd.exe*), a qual gera ar
 
 - **GenerateFromSchema**
 
-     Parâmetro **String** opcional.
+  Parâmetro **String** opcional.
 
-     Especifica os tipos gerados com base no esquema especificado.
+  Especifica os tipos gerados com base no esquema especificado.
 
-     Especifique um dos valores a seguir, cada um dos quais correspondente a uma opção XSD.
+  Especifique um dos valores a seguir, cada um dos quais correspondente a uma opção XSD.
 
-    - **classes** - **/classes**
+  - **classes** -  **/classes**
 
-    - **dataset** - **/dataset**
+  - **dataset** -  **/dataset**
 
 - **Linguagem**
 
@@ -66,7 +66,7 @@ Encapsula a ferramenta de definição de esquema XML (*xsd.exe*), a qual gera ar
 
      Parâmetro **String** opcional.
 
-     Especifica o namespace de tempo de execução para os tipos gerados.
+     Especifica o namespace de runtime para os tipos gerados.
 
 - **Sources**
 

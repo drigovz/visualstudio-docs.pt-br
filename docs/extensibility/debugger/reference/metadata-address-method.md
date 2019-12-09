@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - METADATA_ADDRESS_METHOD structure
 ms.assetid: fc0e5370-1b4f-4867-837f-0d63c4b9dd09
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f6d6ad6fdb995c80043a831bd08aa1294f0fb33e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 03a8e4850a2a18ec55655934618ba42a694b412d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62913904"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66347357"
 ---
 # <a name="metadataaddressmethod"></a>METADATA_ADDRESS_METHOD
 Essa estrutura representa o endereço de um método de uma classe.
@@ -40,19 +43,16 @@ public struct METADATA_ADDRESS_METHOD {
 }
 ```
 
-## <a name="terms"></a>Termos
- tokMethod
-
+## <a name="members"></a>Membros
+ `tokMethod`\
  A ID do método.
 
  [C++] `_mdToken` é um `typedef` de 32 bits `int`.
 
- dwOffset
-
+ `dwOffset`\
  O deslocamento desde o início da classe para esse método (pode representar o deslocamento em vtable).
 
- dwVersion
-
+ `dwVersion`\
  A versão do método (esse valor é exclusivo para o provedor de símbolos).
 
 ## <a name="remarks"></a>Comentários

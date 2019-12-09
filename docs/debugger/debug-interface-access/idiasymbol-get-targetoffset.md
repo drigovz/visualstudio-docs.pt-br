@@ -1,47 +1,45 @@
 ---
 title: IDiaSymbol::get_targetOffset | Microsoft Docs
-ms.date: 11/15/2016
-ms.prod: visual-studio-dev14
-ms.technology: vs-ide-debug
-ms.topic: reference
+ms.date: 11/04/2016
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaSymbol::get_targetOffset method
 ms.assetid: 7d141223-132a-409c-a5a4-94f97340313c
-caps.latest.revision: 11
-author: MikeJo5000
+author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6a356eafb2afbd63613c0fe6be6b794822e5f91e
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.workload:
+- multiple
+ms.openlocfilehash: 3e7cb1ccc2a3b0208bf34ef06a12324f38913c45
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63401322"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739215"
 ---
-# <a name="idiasymbolgettargetoffset"></a>IDiaSymbol::get_targetOffset
-[!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
+# <a name="idiasymbolget_targetoffset"></a>IDiaSymbol::get_targetOffset
+Recupera a seção de deslocamento de um destino de conversão.
 
-Recupera a seção de deslocamento de um destino da conversão.  
-  
-## <a name="syntax"></a>Sintaxe  
-  
-```cpp#  
-HRESULT get_targetOffset (   
-   DWORD* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parâmetros  
- `pRetVal`  
- [out] Retorna a parte do deslocamento de um endereço de destino da conversão.  
-  
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE` ou um código de erro.  
-  
+## <a name="syntax"></a>Sintaxe
+
+```C++
+HRESULT get_targetOffset ( 
+   DWORD* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parâmetros
+ `pRetVal`
+
+fora Retorna a parte de deslocamento de um endereço de destino de conversão.
+
+## <a name="return-value"></a>Valor retornado
+ Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE` ou um código de erro.
+
 > [!NOTE]
-> Um valor de retorno `S_FALSE` significa que a propriedade não está disponível para o símbolo.  
-  
-## <a name="see-also"></a>Consulte também  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+> Um valor de retorno de `S_FALSE` significa que a propriedade não está disponível para o símbolo.
+
+## <a name="see-also"></a>Consulte também
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

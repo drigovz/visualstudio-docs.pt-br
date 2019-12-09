@@ -1,23 +1,24 @@
 ---
 title: Caixa de diálogo Configurações de Compilador Avançadas (Visual Basic)
 ms.date: 11/04/2016
+ms.technology: vs-ide-compile
 ms.topic: reference
 f1_keywords:
 - vb.ProjectPropertiesAdvancedCompile
 helpviewer_keywords:
 - Advanced Compiler Settings dialog box
 ms.assetid: 1f81133a-293f-4dba-bc1c-8baafb01d857
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c8aec1862424be0182e99285ac3772cc9c4bb19f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0cb77021818fd77205a598f54a4a64a1929348f2
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62792225"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68919352"
 ---
 # <a name="advanced-compiler-settings-dialog-box-visual-basic"></a>Caixa de diálogo Configurações de Compilador Avançadas (Visual Basic)
 
@@ -37,7 +38,7 @@ Use a caixa de diálogo **Configurações Avançadas do Compilador** do **Design
 
 ## <a name="optimizations"></a>Otimizações
 
- As opções a seguir especificam otimizações que podem, em alguns casos, diminuir um arquivo de programa, fazer um programa executar mais rapidamente ou acelerar o processo de build.
+As opções a seguir especificam otimizações que podem, em alguns casos, diminuir um arquivo de programa, fazer um programa executar mais rapidamente ou acelerar o processo de build.
 
 **Remover verificações de estouro de inteiro**
 
@@ -51,11 +52,11 @@ Por padrão, essa caixa de seleção está desmarcada para desabilitar as otimiz
 
  **Endereço básico de DLL**
 
- Essa caixa de texto exibe o endereço básico de DLL padrão em formato hexadecimal. Em projetos de Biblioteca de Classes e Biblioteca de Controle, você pode usar essa caixa de texto para especificar o endereço básico a ser usado quando a DLL é criada.
+Essa caixa de texto exibe o endereço básico de DLL padrão em formato hexadecimal. Em projetos de Biblioteca de Classes e Biblioteca de Controle, você pode usar essa caixa de texto para especificar o endereço básico a ser usado quando a DLL é criada.
 
  **Gerar informações de depuração**
 
- Selecione **Nenhum**, **Completo** ou **Somente pdb** na lista. **Nenhum** especifica que nenhuma informação de depuração deve ser gerada. **Completo** especifica que informações de depuração completas devem ser geradas e **Somente pdb** especifica que apenas as informações de depuração de PDB devem ser geradas. O valor padrão desta opção é **Completo**.
+Selecione **Nenhum**, **Completo** ou **Somente pdb** na lista. **Nenhum** especifica que nenhuma informação de depuração deve ser gerada. **Completo** especifica que informações de depuração completas devem ser geradas e **Somente pdb** especifica que apenas as informações de depuração de PDB devem ser geradas. O valor padrão desta opção é **Completo**.
 
 ## <a name="compilation-constants"></a>Constantes de Compilação
 
@@ -63,15 +64,15 @@ Constantes de compilação condicional têm um efeito semelhante ao de usar uma 
 
  **Definir a constante DEBUG**
 
- Por padrão, essa caixa de seleção é marcada, especificando que uma constante DEBUG deve ser definida.
+Por padrão, essa caixa de seleção é marcada, especificando que uma constante DEBUG deve ser definida.
 
  **Definir a constante TRACE**
 
- Por padrão, essa caixa de seleção é marcada, especificando que uma constante TRACE deve ser definida.
+Por padrão, essa caixa de seleção é marcada, especificando que uma constante TRACE deve ser definida.
 
  **Constantes personalizadas**
 
- Insira quaisquer constantes personalizadas para seu aplicativo nessa caixa de texto. As entradas devem ser delimitadas por vírgulas, usando este formato: **Nome1="Valor1",Nome2="Valor2",Nome3="Valor3"**.
+Insira quaisquer constantes personalizadas para seu aplicativo nessa caixa de texto. As entradas devem ser delimitadas por vírgulas, usando este formato: **Nome1="Valor1",Nome2="Valor2",Nome3="Valor3"** .
 
 ## <a name="other-settings"></a>Outras configurações
 

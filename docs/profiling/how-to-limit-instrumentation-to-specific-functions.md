@@ -1,5 +1,5 @@
 ---
-title: 'Como: Limitar a instrumentação a funções específicas | Microsoft Docs'
+title: Como limitar a instrumentação a funções específicas | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,16 +8,17 @@ ms.assetid: bd98d6bf-2560-4eba-b063-2facb09f87c4
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 826031c2030c2ed8662ff98517a36c1a7ade3cde
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 34a63645933a173e449cf4292cc3d014cc3ec740
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63386646"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74775313"
 ---
-# <a name="how-to-limit-instrumentation-to-specific-functions"></a>Como: Limitar a instrumentação a funções específicas
+# <a name="how-to-limit-instrumentation-to-specific-functions"></a>Como limitar a instrumentação a funções específicas
 Você pode limitar a instrumentação e a coleta de dados a uma ou mais funções ao definir opções na página **Avançado** da **Sessão de Desempenho** ou nas páginas de propriedades de binário de destino:
 
 - Se você especificar as funções na página de propriedades de sessão de desempenho, somente aquelas funções serão instrumentadas em todos os binários instrumentados da sessão.
@@ -41,7 +42,7 @@ Você pode limitar a instrumentação e a coleta de dados a uma ou mais funçõe
 
     **/include:** `FuncSpec` **[;** `FuncSpec` **]** `...`
 
-    `FuncSpec` é o nome do namespace e da função. Ele tem o formato `Namespace`**::**`FunctionName`. Use um ponto e vírgula para separar várias funções. Use um asterisco (\*) para especificar um curinga para um ou mais caracteres. Por exemplo, **/include:MyNS::\\*** especifica todas as funções no namespace MyNS.
+    `FuncSpec` é o nome do namespace e da função. Ele tem o formato `Namespace` **::** `FunctionName`. Use um ponto e vírgula para separar várias funções. Use um asterisco (\*) para especificar um curinga para um ou mais caracteres. Por exemplo, **/include:MyNS::\\** * especifica todas as funções no namespace MyNS.
 
    > [!NOTE]
    > Para listar as funções em um binário, abra uma janela do prompt de comando no diretório de instalação das Ferramentas de Criação de Perfil (confira [Especificar o caminho para ferramentas de linha de comando](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)) e, em seguida, digite **vsinstr /DumpFuncs**
@@ -60,12 +61,12 @@ Você pode limitar a instrumentação e a coleta de dados a uma ou mais funçõe
 
     **/include:** `FuncSpec` **[;** `FuncSpec` **]** `...`
 
-    `FuncSpec` é o nome do namespace e da função. Ele tem o formato `Namespace`**::**`FunctionName`. Use um ponto e vírgula para separar várias funções. Use um asterisco (\*) para especificar um curinga para um ou mais caracteres. Por exemplo, **/include:MyNS::\\*** especifica todas as funções no namespace MyNS.
+    `FuncSpec` é o nome do namespace e da função. Ele tem o formato `Namespace` **::** `FunctionName`. Use um ponto e vírgula para separar várias funções. Use um asterisco (\*) para especificar um curinga para um ou mais caracteres. Por exemplo, **/include:MyNS::\\** * especifica todas as funções no namespace MyNS.
 
    > [!NOTE]
    > Para listar as funções em um binário, abra uma janela do prompt de comando no diretório de instalação das Ferramentas de Criação de Perfil (confira [Especificar o caminho para ferramentas de linha de comando](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)) e, em seguida, digite **vsinstr /DumpFuncs**
 
 ## <a name="see-also"></a>Consulte também
 - [Controlar a coleta de dados](../profiling/controlling-data-collection.md)
-- [Como: Limitar a instrumentação a DLLs específicas](../profiling/how-to-limit-instrumentation-to-specific-dlls.md)
-- [Como: Especificar opções de instrumentação adicionais](../profiling/how-to-specify-additional-instrumentation-options.md)
+- [Como limitar a instrumentação a DLLs específicas](../profiling/how-to-limit-instrumentation-to-specific-dlls.md)
+- [Como especificar opções de instrumentação adicionais](../profiling/how-to-specify-additional-instrumentation-options.md)

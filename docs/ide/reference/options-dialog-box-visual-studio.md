@@ -10,17 +10,17 @@ helpviewer_keywords:
 - Options dialog box, development environment
 - tools [Visual Studio], customizing
 ms.assetid: 02b09877-1df1-4531-a0d1-a4ca17c7f857
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f2b4b30607d5d0c677f7ef5e2401bc55c2398eb0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 4bf14fc4fec2d10f4bf7f9b8b26814680a9f42ba
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62945575"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666389"
 ---
 # <a name="options-dialog-box-visual-studio"></a>Caixa de diálogo Opções (Visual Studio)
 
@@ -45,4 +45,4 @@ Marcar ou desmarcar **Mostrar todas as configurações** aplica todas as altera�
 
 ## <a name="see-also"></a>Consulte também
 
-- [Personalizando o editor](../../ide/customizing-the-editor.md)
+- [Personalizando o editor](../how-to-change-text-case-in-the-editor.md)

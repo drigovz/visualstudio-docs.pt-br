@@ -9,38 +9,38 @@ helpviewer_keywords:
 - Option Compare statement, setting in the IDE
 - Option Strict statement, setting in the IDE
 ms.assetid: 2465cd9d-18b6-4c4a-b1ea-86dbab23fc79
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5aedaf5c31eca900ec1730622dfc7ff6f026a61a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: d9e260bc6d290729ae470ca906e9ab5c3d219112
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62789129"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748557"
 ---
 # <a name="visual-basic-defaults-projects-options-dialog-box"></a>Caixa de diálogo Padrões do Visual Basic, Projetos, Opções
 Especifica as configurações padrão para opções de projeto do Visual Basic. Quando um novo projeto é criado, as instruções da opção especificada serão adicionadas ao cabeçalho do projeto no Editor de Códigos. As opções se aplicam a todos os projetos do Visual Basic.
 
- Para acessar essa caixa de diálogo, no menu **Ferramentas**, clique em **Opções**, expanda a pasta **Projetos e Soluções** e clique em **Padrões de VB**.
+Para acessar essa caixa de diálogo, no menu **Ferramentas**, clique em **Opções**, expanda a pasta **Projetos e Soluções** e clique em **Padrões de VB**.
 
  **Opção Explícita**
 
- Define o padrão do compilador para que declarações explícitas de variáveis sejam necessárias. Por padrão, **Opção Explicit** fica definido como **Ativado**. Para obter mais informações, consulte [/optionexplicit](/dotnet/visual-basic/reference/command-line-compiler/optionexplicit).
+Define o padrão do compilador para que declarações explícitas de variáveis sejam necessárias. Por padrão, **Opção Explicit** fica definido como **Ativado**. Para obter mais informações, consulte [/optionexplicit](/dotnet/visual-basic/reference/command-line-compiler/optionexplicit).
 
  **Opção Estrita**
 
- Define o padrão do compilador para que as conversões de estreitamento explícitas sejam obrigatórias e as associações tardias não sejam permitidas. Por padrão, **Opção Strict** fica definido como **Desativado**. Para obter mais informações, veja [/optionstrict](/dotnet/visual-basic/reference/command-line-compiler/optionstrict).
+Define o padrão do compilador para que as conversões de estreitamento explícitas sejam obrigatórias e as associações tardias não sejam permitidas. Por padrão, **Opção Strict** fica definido como **Desativado**. Para obter mais informações, veja [/optionstrict](/dotnet/visual-basic/reference/command-line-compiler/optionstrict).
 
  **Opção Comparar**
 
- Define o padrão do compilador para comparações de cadeia de caracteres: binário (diferencia maiúsculas de minúsculas) ou texto (não diferencia maiúsculas de minúsculas). Por padrão, **Opção Compare** fica definido como **Binário**. Para obter mais informações, consulte [/optioncompare](/dotnet/visual-basic/reference/command-line-compiler/optioncompare).
+Define o padrão do compilador para comparações de cadeias de caracteres: Binary (diferencia maiúsculas de minúsculas) ou texto (não diferencia maiúsculas de minúsculas.) Por padrão, a **opção Compare** é definida como **Binary**. Para obter mais informações, consulte [/optioncompare](/dotnet/visual-basic/reference/command-line-compiler/optioncompare).
 
  **Opção Inferir**
 
- Define o padrão do compilador para inferência de tipo de variável local. Por padrão, **Opção Infer** é definido como **Ativado** para projetos criados recentemente e como **Desativado** para projetos migrados criados em versões anteriores do Visual Basic. Para obter mais informações, consulte [/optioninfer](/dotnet/visual-basic/reference/command-line-compiler/optioninfer).
+Define o padrão do compilador para inferência de tipo de variável local. Por padrão, **Opção Infer** é definido como **Ativado** para projetos criados recentemente e como **Desativado** para projetos migrados criados em versões anteriores do Visual Basic. Para obter mais informações, consulte [/optioninfer](/dotnet/visual-basic/reference/command-line-compiler/optioninfer).
 
 ## <a name="see-also"></a>Consulte também
 

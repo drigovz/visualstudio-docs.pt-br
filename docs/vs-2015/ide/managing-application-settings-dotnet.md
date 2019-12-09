@@ -10,21 +10,21 @@ helpviewer_keywords:
 - application settings [Visual Studio]
 ms.assetid: 35254321-ad14-47d9-b8c6-39ab3203c5d9
 caps.latest.revision: 27
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 84a2449e9686f71cfd932a2bf6047ed0208da1d0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 85cc90170b2dc665bcdd5acd97860c47ef5a14c4
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114802"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74293870"
 ---
 # <a name="managing-application-settings-net"></a>Gerenciando configurações de aplicativo (.NET)
 
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-As configurações de aplicativo permitem armazenar informações do aplicativo dinamicamente. As configurações permitem que você armazene informações no computador cliente que não devem ser incluídas no código do aplicativo (por exemplo, uma cadeia de conexão), as preferências do usuário e outras informações necessárias em tempo de execução.
+As configurações de aplicativo permitem armazenar informações do aplicativo dinamicamente. As configurações permitem que você armazene informações no computador cliente que não devem ser incluídas no código do aplicativo (por exemplo, uma cadeia de conexão), as preferências do usuário e outras informações necessárias em runtime.
 
 As configurações de aplicativo substituem as propriedades dinâmicas usadas em versões anteriores do Visual Studio.
 
@@ -59,7 +59,7 @@ Quando você cria uma configuração de escopo do usuário (por exemplo, fonte p
 >
 > Se você obtiver as informações de cadeia de conexão de uma fonte externa, como um usuário fornecendo uma ID de usuário e senha, deverá ter cuidado para garantir que os valores usados para construir a cadeia de conexão não contêm parâmetros de cadeia de conexão adicionais que alteram o comportamento da conexão.
 >
-> Considere usar o recurso Configuração Protegida para criptografar informações confidenciais no arquivo de configuração. Consulte [Protegendo informações de conexão](http://msdn.microsoft.com/library/1471f580-bcd4-4046-bdaf-d2541ecda2f4) para obter mais informações.
+> Considere usar o recurso Configuração Protegida para criptografar informações confidenciais no arquivo de configuração. Consulte [Protegendo informações de conexão](https://msdn.microsoft.com/library/1471f580-bcd4-4046-bdaf-d2541ecda2f4) para obter mais informações.
 
 > [!NOTE]
 > Como não há nenhum modelo de arquivo de configuração para bibliotecas de classes, as configurações de aplicativo não se aplicam a projetos de biblioteca de classes. A exceção é um projeto de DLL das Ferramentas do Visual Studio para Office, que pode ter um arquivo de configuração.
@@ -74,7 +74,7 @@ O Designer de Configurações primeiro pesquisa o arquivo Settings.settings que 
 
 ## <a name="accessing-or-changing-application-settings-at-run-time-in-visual-basic"></a>Acessando ou alterando as configurações de aplicativo em tempo de execução no Visual Basic
 
-Em projetos [!INCLUDE[vbprvb](../includes/vbprvb-md.md)], você pode acessar as configurações de aplicativo em tempo de execução usando o objeto `My.Settings`. Na página **Configurações**, clique no botão **Exibir código** para exibir o arquivo Settings.vb. Settings.vb define a classe `Settings`, que permite que você manipule esses eventos nas classes de configurações <xref:System.Configuration.ApplicationSettingsBase.SettingChanging>, <xref:System.Configuration.ApplicationSettingsBase.PropertyChanged>, <xref:System.Configuration.ApplicationSettingsBase.SettingsLoaded> e <xref:System.Configuration.ApplicationSettingsBase.SettingsSaving>. Observe que a classe `Settings` no Settings.vb é uma classe parcial que mostra apenas o código de propriedade do usuário, não toda a classe gerada. Para obter mais informações sobre como acessar as configurações de aplicativo usando o objeto `My.Settings`, consulte [Acessando configurações de aplicativo](http://msdn.microsoft.com/library/e38d0cc7-247a-46ca-ba04-f2913f0adb2e).
+Em projetos [!INCLUDE[vbprvb](../includes/vbprvb-md.md)], você pode acessar as configurações de aplicativo em tempo de execução usando o objeto `My.Settings`. Na página **Configurações**, clique no botão **Exibir código** para exibir o arquivo Settings.vb. Settings.vb define a classe `Settings`, que permite que você manipule esses eventos nas classes de configurações <xref:System.Configuration.ApplicationSettingsBase.SettingChanging>, <xref:System.Configuration.ApplicationSettingsBase.PropertyChanged>, <xref:System.Configuration.ApplicationSettingsBase.SettingsLoaded> e <xref:System.Configuration.ApplicationSettingsBase.SettingsSaving>. Observe que a classe `Settings` no Settings.vb é uma classe parcial que mostra apenas o código de propriedade do usuário, não toda a classe gerada. Para obter mais informações sobre como acessar as configurações de aplicativo usando o objeto `My.Settings`, consulte [Acessando configurações de aplicativo](https://msdn.microsoft.com/library/e38d0cc7-247a-46ca-ba04-f2913f0adb2e).
 
 Os valores de quaisquer configurações de escopo do usuário que o usuário alterar em tempo de execução (por exemplo, a posição de um formulário) são armazenados em um arquivo user.config. Observe que os valores padrão ainda são salvos no app.config.
 
@@ -98,8 +98,8 @@ Você deve explicitamente chamar o método `Save` dessa classe wrapper para pers
 Properties.Settings.Default.Save();
 ```
 
-Para obter informações gerais sobre como acessar as configurações de aplicativo por meio da classe `Settings`, consulte [Visão geral sobre configurações de aplicativo](http://msdn.microsoft.com/library/0dd8bca5-a6bf-4ac4-8eec-5725d08b38dc). Para obter informações sobre como fazer a iteração por meio das configurações, consulte esta [postagem no fórum](http://social.msdn.microsoft.com/Forums/vstudio/40fbb470-f1e8-4a02-a4a0-9f62b54d0fc4/is-this-possible-propertiessettingsdefault?forum=csharpgeneral).
+Para obter informações gerais sobre como acessar as configurações de aplicativo por meio da classe `Settings`, consulte [Visão geral sobre configurações de aplicativo](https://msdn.microsoft.com/library/0dd8bca5-a6bf-4ac4-8eec-5725d08b38dc). Para obter informações sobre como fazer a iteração por meio das configurações, consulte esta [postagem no fórum](https://social.msdn.microsoft.com/Forums/en-US/40fbb470-f1e8-4a02-a4a0-9f62b54d0fc4/is-this-possible-propertiessettingsdefault?forum=csharpgeneral).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
-- [Acessando configurações de aplicativo](http://msdn.microsoft.com/library/e38d0cc7-247a-46ca-ba04-f2913f0adb2e)
+- [Acessando configurações de aplicativo](https://msdn.microsoft.com/library/e38d0cc7-247a-46ca-ba04-f2913f0adb2e)

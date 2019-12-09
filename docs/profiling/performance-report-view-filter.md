@@ -9,14 +9,15 @@ ms.assetid: 35f89d86-4683-4db1-aa0c-ae0ce65fa524
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: ae4c5281386cb43d4dddb55db8578aea7515dce1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 9a5642a8e153a4dfc7705d91d933397b6f8acb37
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62793975"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778448"
 ---
 # <a name="performance-report-view-filter"></a>Filtro de exibição de relatório de desempenho
 A janela **Filtro de Exibição de Relatório do Criador de Perfil** está localizada na parte superior da janela **Relatório de Desempenho**. Se não estiver visível, clique no botão **Mostrar Filtro**.
@@ -25,10 +26,10 @@ A janela **Filtro de Exibição de Relatório do Criador de Perfil** está local
 
 |Filtrar item|Descrição|
 |-----------------|-----------------|
-|And/Or|Escolha **And** se essa cláusula e a próxima devem ambas ser verdadeiras para corresponder a um resultado. Escolha **Or** se essa cláusula ou a próxima podem ser verdadeiras para corresponder a um resultado.|
+|E/Ou|Escolha **And** se essa cláusula e a próxima devem ambas ser verdadeiras para corresponder a um resultado. Escolha **Or** se essa cláusula ou a próxima podem ser verdadeiras para corresponder a um resultado.|
 |Campo|Selecione o campo a ser usado na cláusula de filtro da lista de campos de dados que estão disponíveis no arquivo de relatório atual.|
 |Operador|Escolha o operador que especifica a relação entre o campo e o valor desejado.<br /><br /> =    É igual a<br /><br /> <>  Não é igual a<br /><br /> <    Menor que<br /><br /> >    Maior que<br /><br /> <=  Menor ou igual a<br /><br /> >= Maior ou igual a|
-|Valor|Selecione ou insira o valor a ser procurado. Alguns campos listam os valores disponíveis para o campo.|
+|Value|Selecione ou insira o valor a ser procurado. Alguns campos listam os valores disponíveis para o campo.|
 
  Você pode adicionar cláusulas ao filtro até achar que ele fornecem os melhores resultados. Clique em **Executar Filtro** para aplicar o filtro ao arquivo de dados.
 

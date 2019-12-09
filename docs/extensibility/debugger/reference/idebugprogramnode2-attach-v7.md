@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramNode2::Attach_V7
 - IDebugProgramNode2::Attach
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 02022a4276da39fb863ccfed8ed02aa9d20f9c5c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: a90b162476872700ee0ec69a3bb9e6e575e7862a
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62916982"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66351180"
 ---
 # <a name="idebugprogramnode2attachv7"></a>IDebugProgramNode2::Attach_V7
 
@@ -42,19 +45,16 @@ int Attach_V7 (
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
+## <a name="parameters"></a>Parâmetros
 
-`pMDMProgram`
+`pMDMProgram`\
+[in] O [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) interface que representa o programa anexar.
 
- [in] O [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) interface que representa o programa anexar.
+`pCallback`\
+[in] O [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) interface a ser usada para enviar eventos de depuração para o SDM.
 
- `pCallback`
-
- [in] O [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) interface a ser usada para enviar eventos de depuração para o SDM.
-
- `dwReason`
-
- [in] Um valor a partir de [ATTACH_REASON](../../../extensibility/debugger/reference/attach-reason.md) enumeração que especifica o motivo para anexar.
+`dwReason`\
+[in] Um valor a partir de [ATTACH_REASON](../../../extensibility/debugger/reference/attach-reason.md) enumeração que especifica o motivo para anexar.
 
 ## <a name="return-value"></a>Valor de retorno
 

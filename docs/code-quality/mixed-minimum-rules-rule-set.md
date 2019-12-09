@@ -3,20 +3,23 @@ title: Conjunto de regras mínimas misto
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: bc8df61c-19af-40ab-a871-315807e5f4bf
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a7bf9830e71abef04348307af4d841e7029afc4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 37c72b9526e667216a6791470353ce78132c2a0a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62820592"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72649226"
 ---
 # <a name="mixed-minimum-rules-rule-set"></a>Conjunto de regras mínimas misto
-A Microsoft misto mínimo regras enfocam os problemas mais críticos em seus projetos do C++ que dão suporte a Common Language Runtime, inclusive falhas potenciais de segurança e falhas do aplicativo. Você deve incluir essa regra definida em qualquer conjunto personalizado que você criar para seus projetos em C++ que dão suporte a Common Language Runtime.
+
+As regras mínimas mistas da Microsoft concentram-se C++ nos problemas mais críticos em projetos que dão suporte ao Common Language Runtime, incluindo falhas potenciais de segurança e falhas do aplicativo.
+
+Inclua esse conjunto de regras em qualquer conjunto personalizado de regras que você C++ criar para seus projetos que dão suporte ao Common Language Runtime.
 
 |Regra|Descrição|
 |----------|-----------------|
@@ -68,7 +71,7 @@ A Microsoft misto mínimo regras enfocam os problemas mais críticos em seus pro
 |[C6518](../code-quality/c6518.md)|Tamanho gravável em buffer não gravável|
 |[C6522](../code-quality/c6522.md)|Tipo de cadeia de caracteres de tamanho inválido|
 |[C6525](../code-quality/c6525.md)|Local inatingível da cadeia de caracteres inválido|
-|[C6527](../code-quality/c6527.md)|Anotação inválida: Propriedade 'NeedsRelease' não pode ser usada em valores do tipo void|
+|[C6527](../code-quality/c6527.md)|Anotação inválida: A propriedade 'NeedsRelease' não pode ser utilizada em valores de tipo void|
 |[C6530](../code-quality/c6530.md)|Estilo de cadeia de caracteres de formato não reconhecido|
 |[C6540](../code-quality/c6540.md)|O uso de anotações de atributo nesta função irá invalidar todas as anotações __declspec existentes na função|
 |[C6551](../code-quality/c6551.md)|Especificação de tamanho inválido: expressão não analisável|
@@ -83,13 +86,13 @@ A Microsoft misto mínimo regras enfocam os problemas mais críticos em seus pro
 |[C28182](../code-quality/c28182.md)|Desreferenciando ponteiro nulo. O ponteiro contém o mesmo valor NULO que outro ponteiro tinha.|
 |[C28202](../code-quality/c28202.md)|Referência inválida para membro não estático|
 |[C28203](../code-quality/c28203.md)|Referência ambígua ao membro de classe.|
-|[C28205](../code-quality/c28205.md)|\_Sucesso\_ ou \_nos\_falha\_ usado em um contexto ilegal|
+|[C28205](../code-quality/c28205.md)|\_Success \_ ou \_On \_failure \_ usados em um contexto ilegal|
 |[C28206](../code-quality/c28206.md)|O operando da esquerda aponta para um struct, use '->'|
 |[C28207](../code-quality/c28207.md)|O operando da esquerda é um struct, use '.'|
 |[C28210](../code-quality/c28210.md)|Anotações para o contexto __on_failure não devem estar no pré-contexto explícito|
 |[C28211](../code-quality/c28211.md)|Nome esperado do contexto estático para SAL_context|
 |[C28212](../code-quality/c28212.md)|Expressão de ponteiro esperada para anotação|
-|[C28213](../code-quality/c28213.md)|O \_uso\_decl\_anotações\_ anotação deve ser usada para fazer referência, sem modificações, uma declaração prévia.|
+|[C28213](../code-quality/c28213.md)|O \_Use \_decl \_annotations anotação \_ deve ser usado para fazer referência, sem modificação, uma declaração anterior.|
 |[C28214](../code-quality/c28214.md)|Os nomes do parâmetro de atributo devem ser p1...p9|
 |[C28215](../code-quality/c28215.md)|O typefix não pode ser aplicado a um parâmetro que já tem um typefix|
 |[C28216](../code-quality/c28216.md)|A anotação checkReturn se aplica apenas a pós-condições para o parâmetro da função específica.|
@@ -131,7 +134,7 @@ A Microsoft misto mínimo regras enfocam os problemas mais críticos em seus pro
 |[C28267](../code-quality/c28267.md)|Foi encontrado um erro de sintaxe nas anotações da função.|
 |[C28272](../code-quality/c28272.md)|A anotação para função, parâmetro quando examinar for inconsistente com a declaração da função|
 |[C28273](../code-quality/c28273.md)|Para função, os indícios são inconsistentes com a declaração da função|
-|[C28275](../code-quality/c28275.md)|O parâmetro para \_Macro\_valor\_ é nulo|
+|[C28275](../code-quality/c28275.md)|O parâmetro para \_Macro \_value \_ é nulo|
 |[C28279](../code-quality/c28279.md)|Para símbolo, um 'início' foi encontrado sem um 'fim' correspondente|
 |[C28280](../code-quality/c28280.md)|Para símbolo, um 'fim' foi encontrado sem um 'início' correspondente|
 |[C28282](../code-quality/c28282.md)|Cadeias de caracteres de formato devem estar em pré-condições|
@@ -139,7 +142,7 @@ A Microsoft misto mínimo regras enfocam os problemas mais críticos em seus pro
 |[C28286](../code-quality/c28286.md)|Para função, erro de sintaxe perto do fim|
 |[C28287](../code-quality/c28287.md)|Para função, Erro de sintaxe na anotação \_At\_() (nome de parâmetro não reconhecido)|
 |[C28288](../code-quality/c28288.md)|Para função, Erro de sintaxe na anotação \_At\_() (nome de parâmetro inválido)|
-|[C28289](../code-quality/c28289.md)|Para a função: ReadableTo ou WritableTo não tinha uma especificação de limite como um parâmetro|
+|[C28289](../code-quality/c28289.md)|Para função: ReadableTo ou WritableTo não tinha uma especificação de limite como parâmetro|
 |[C28290](../code-quality/c28290.md)|a anotação para função contém mais Externos que o número real de parâmetros|
 |[C28291](../code-quality/c28291.md)|pós null/notnull em deref nível 0 não tem sentido para a função.|
 |[C28300](../code-quality/c28300.md)|Operandos da expressão de tipos incompatíveis para o operador|
@@ -150,7 +153,7 @@ A Microsoft misto mínimo regras enfocam os problemas mais críticos em seus pro
 |[C28305](../code-quality/c28305.md)|Foi encontrado um erro durante a análise de um token.|
 |[C28350](../code-quality/c28350.md)|A anotação descreve uma situação que não é aplicável condicionalmente.|
 |[C28351](../code-quality/c28351.md)|A anotação descreve onde um valor dinâmico (uma variável) não pode ser usado na condição.|
-|[CA1001](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)|Tipos com campos descartáveis devem ser descartáveis|
-|[CA1821](../code-quality/ca1821-remove-empty-finalizers.md)|Remover finalizadores vazios|
-|[CA2213](../code-quality/ca2213-disposable-fields-should-be-disposed.md)|Campos descartáveis devem ser descartados|
-|[CA2231](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)|Sobrecarregar operador equals ao substituir ValueType.Equals|
+|[CA1001](../code-quality/ca1001.md)|Tipos com campos descartáveis devem ser descartáveis|
+|[CA1821](../code-quality/ca1821.md)|Remover finalizadores vazios|
+|[CA2213](../code-quality/ca2213.md)|Campos descartáveis devem ser descartados|
+|[CA2231](../code-quality/ca2231.md)|Sobrecarregar operador equals ao substituir ValueType.Equals|

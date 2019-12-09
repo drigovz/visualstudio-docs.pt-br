@@ -23,15 +23,15 @@ helpviewer_keywords:
 - XML documentation comments [JavaScript]
 ms.assetid: af1a3171-c9d8-45a3-9c96-a763e3b163ef
 caps.latest.revision: 67
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 84a630a679e95d8a6848592b183749c2ace3ea86
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: e367ff6d6abbf40cdf7efebed04aee6fc74a384c
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63412305"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300744"
 ---
 # <a name="javascript-intellisense"></a>JavaScript IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -127,7 +127,7 @@ O IntelliSense ajuda a escrever código mais rapidamente e com menos erros forne
 ### <a name="UserDefined"></a> Variáveis, funções e objetos definidos pelo usuário
  Quando você altera um arquivo JavaScript, o [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] examina documentos abertos e referenciados para determinar todos os recursos de código disponíveis. Isso inclui variáveis, funções e objetos que você criou. Esses recursos são então disponibilizados para o JavaScript IntelliSense.
 
- Para saber mais sobre variáveis, funções e objetos definidos pelo usuário, consulte [Como criar seus próprios objetos](http://go.microsoft.com/fwlink/?LinkId=108671) no site do MSDN.
+ Para saber mais sobre variáveis, funções e objetos definidos pelo usuário, consulte [Como criar seus próprios objetos](https://go.microsoft.com/fwlink/?LinkId=108671) no site do MSDN.
 
 ### <a name="External"></a> Referências de arquivo externo
  Você pode incluir vários tipos de referências de arquivo externo para obter o suporte do IntelliSense em seu código. As referências de arquivo externo podem ser referências de script, diretivas de referência ou podem ser especificadas usando grupos de referência.
@@ -157,7 +157,7 @@ O IntelliSense ajuda a escrever código mais rapidamente e com menos erros forne
 </asp:ScriptManager>
 ```
 
- O IntelliSense também oferece suporte a arquivos de script que são inseridos como recursos em um assembly nos aplicativos Web AJAX ASP.NET. Para saber mais sobre recursos de script inseridos, confira [Passo a passo: Como inserir um arquivo JavaScript como recurso em um assembly](http://msdn.microsoft.com/library/d8cb78cd-95a9-4dc6-92df-391866817e89).
+ O IntelliSense também oferece suporte a arquivos de script que são inseridos como recursos em um assembly nos aplicativos Web AJAX ASP.NET. Para saber mais sobre recursos de script inseridos, confira [Passo a passo: Como inserir um arquivo JavaScript como recurso em um assembly](https://msdn.microsoft.com/library/d8cb78cd-95a9-4dc6-92df-391866817e89).
 
 #### <a name="ReferenceDirectives"></a> Diretivas de referência
  Uma diretiva `reference` permite que o [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] estabeleça uma relação entre o script que você está editando no momento e outros scripts. A diretiva `reference` permite incluir um arquivo de script no contexto de script do arquivo de script atual. Isso permite que o IntelliSense faça referência a funções, tipos e campos definidos externamente enquanto você codifica.
@@ -233,7 +233,7 @@ O IntelliSense ajuda a escrever código mais rapidamente e com menos erros forne
   Na maioria dos cenários, não é preciso modificar grupos de referência. No entanto, se desejar fazer alterações, você poderá usar opções de configuração do Editor de Códigos do JavaScript para especificar os arquivos incluídos nos grupos de referência. Para obter instruções sobre como usar este recurso, confira [Opções, Editor de texto, JavaScript, IntelliSense](../ide/reference/options-text-editor-javascript-intellisense.md).
 
 > [!TIP]
-> Geralmente, as referências do IntelliSense são usadas para oferecer suporte a objetos globais e a [extensões](#Extensibility) do IntelliSense. Também é possível usar esse recurso para scripts que devem ser carregados no tempo de execução usando o carregador de scripts.
+> Geralmente, as referências do IntelliSense são usadas para oferecer suporte a objetos globais e a [extensões](#Extensibility) do IntelliSense. Também é possível usar esse recurso para scripts que devem ser carregados no runtime usando o carregador de scripts.
 
 ### <a name="remote-file-references"></a>Referências de arquivo remoto
  Você pode orientar o Visual Studio a baixar arquivos JavaScript remotos que são referenciados em um arquivo JavaScript para fornecer suporte ao arquivo remoto ou à biblioteca do IntelliSense. Quando você usa esse recurso, os arquivos são baixados quando são incluídos como uma referência no seu arquivo JavaScript.
@@ -277,12 +277,12 @@ O IntelliSense ajuda a escrever código mais rapidamente e com menos erros forne
 
 - A janela Saída mostra referências que não foram carregadas.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 - [Usando o IntelliSense](../ide/using-intellisense.md)
 - [Criar comentários de documentação XML](../ide/create-xml-documentation-comments-for-javascript-intellisense.md)
 - [Estendendo o JavaScript IntelliSense](../ide/extending-javascript-intellisense.md)
 - [Preenchimento de declaração para identificadores](../ide/statement-completion-for-identifiers.md)
 - [Comentários da documentação XML](../ide/xml-documentation-comments-javascript.md)
-- [Sobre o modelo de objeto DHTML](http://go.microsoft.com/fwlink/?LinkID=92344)
-- [Listar Membros](http://msdn.microsoft.com/1b9cc469-9cd4-4d42-9999-1f9479635ff8)
-- [Atributo SRC &#124; Propriedade src](http://go.microsoft.com/fwlink/?LinkId=92345)
+- [Sobre o modelo de objeto DHTML](https://go.microsoft.com/fwlink/?LinkID=92344)
+- [Listar Membros](https://msdn.microsoft.com/1b9cc469-9cd4-4d42-9999-1f9479635ff8)
+- [Atributo SRC &#124; Propriedade src](https://go.microsoft.com/fwlink/?LinkId=92345)

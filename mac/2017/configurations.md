@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 04/14/2017
 ms.assetid: 78107CFA-9308-4293-A92A-9B552A259E15
-ms.openlocfilehash: 7f130f5dec77e0a1965c68cf71e642fdb636832f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 9902b62b7d62ae2490bc8c32848ffea657f0963d
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62932980"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824411"
 ---
 # <a name="understanding-build-configurations"></a>Noções sobre configurações de build
 
@@ -22,7 +22,7 @@ Cada plataforma tem configurações específicas para seu build.
 
 ## <a name="solution-configurations"></a>Configurações da solução
 
-Semelhante às configurações de projeto, as configurações da solução são usadas para criar configurações personalizadas para um projeto inteiro. Usando a guia **Mapeamentos de Configuração** no item **Build > Configurações** , você pode atribuir uma configuração de destino para cada item da solução, conforme ilustrado na imagem abaixo:
+Semelhante às configurações de projeto, as configurações da solução são usadas para criar configurações personalizadas para um projeto inteiro. Usando a guia **Mapeamentos de Configuração** no item **Build > Configurações**, você pode atribuir uma configuração de destino para cada item da solução, conforme a imagem abaixo:
 
 ![Opções de mapeamento de configuração](media/projects-and-solutions-image3.png)
 
@@ -36,7 +36,7 @@ No Visual Studio para Mac, em vez de configurar um projeto de inicialização, �
 
 ![Lista suspensa Configuração de execução](media/projects-and-solutions-image8.png)
 
-Uma configuração de execução é um conjunto de opções com um nome e várias configurações que são definidas em um projeto para finalidades diferentes. Configurações de execução são definidas no nível de projeto e um padrão será criado automaticamente para cada projeto executável, embora seja possível adicionar tantos quantos forem necessários. Certos tipos de projeto geram configurações de execução adicionais automaticamente. Por exemplo, os projetos watchOS podem gerar  _configurações de Visão geral e de Notificação._
+Uma configuração de execução é um conjunto de opções com um nome e várias configurações que são definidas em um projeto para finalidades diferentes. Configurações de execução são definidas no nível de projeto e um padrão será criado automaticamente para cada projeto executável, embora seja possível adicionar tantos quantos forem necessários. Certos tipos de projeto geram configurações de execução adicionais automaticamente. Por exemplo, projetos watchOS podem gerar _Configurações de visão rápida e de notificação._
 
 As configurações podem ser compartilhadas com outros desenvolvedores (nesse caso elas serão armazenadas no arquivo .csproj) ou mantidas localmente (nesse caso elas serão armazenados em um arquivo .user).
 
@@ -51,21 +51,21 @@ Atividades além de `MainLauncher` precisarão ter `Exported=true` adicionado ao
 A lista a seguir fornece alguns exemplos de dados que podem ser incluídos em configurações de execução:
 
 * Projeto .NET regular
-    * Aplicativo de inicialização alternativo
-    * Argumentos iniciais
-    * Diretório de trabalho
-    * Variáveis de ambiente
-    * Opções de tempo de execução mono (deve ser usado somente quando em execução no Mono)
+  * Aplicativo de inicialização alternativo
+  * Argumentos iniciais
+  * Diretório de trabalho
+  * Variáveis de ambiente
+  * Opções de tempo de execução mono (deve ser usado somente quando em execução no Mono)
 * Projeto do Android
-    * Ponto de entrada (atividade, serviço, receptor)
-    * Dados e os argumentos de intenção
+  * Ponto de entrada (atividade, serviço, receptor)
+  * Dados e os argumentos de intenção
 * Projeto do iOS
-    * Modo (Normal, Fetch em segundo plano)
+  * Modo (Normal, Fetch em segundo plano)
 * Projeto de extensão de iOS
-    * Aplicativo de inicialização: padrão ou personalizada
+  * Aplicativo de inicialização: padrão ou personalizada
 * Projeto do WatchKit
-    * Modo (Visão rápida, Notificação)
-    * Conteúdo da notificação
+  * Modo (Visão rápida, Notificação)
+  * Conteúdo da notificação
 
 ## <a name="see-also"></a>Consulte também
 

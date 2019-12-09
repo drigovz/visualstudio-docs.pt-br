@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cef843a2e214dbf66107a5ac7462ae6a2672fafe
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 5967a13596b5fad99f0f14277ea0e9505e222a41
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63400598"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738794"
 ---
-# <a name="idiasymbolgetvolatiletype"></a>IDiaSymbol::get_volatileType
+# <a name="idiasymbolget_volatiletype"></a>IDiaSymbol::get_volatileType
 Recupera um sinalizador que especifica se o tipo de dados definido pelo usuário (UDT) é volátil.
 
 ## <a name="syntax"></a>Sintaxe
@@ -33,16 +33,16 @@ HRESULT get_volatileType ( 
 #### <a name="parameters"></a>Parâmetros
  `pRetVal`
 
-[out] Retorna `TRUE` se o UDT for voláteis; caso contrário, retornará `FALSE`.
+fora Retorna `TRUE` se o UDT for volátil; caso contrário, retorna `FALSE`.
 
-## <a name="return-value"></a>Valor de retorno
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE` ou um código de erro.
 
 > [!NOTE]
-> Um valor de retorno `S_FALSE` significa que a propriedade não está disponível para o símbolo.
+> Um valor de retorno de `S_FALSE` significa que a propriedade não está disponível para o símbolo.
 
 ## <a name="remarks"></a>Comentários
- No C++, um UDT pode ser marcado com o `volatile` palavra-chave, que indica que o seu conteúdo não é possível supor existente de um acesso para a próxima.
+ No C++, um UDT pode ser marcado com a palavra-chave `volatile`, indicando que seu conteúdo não pode ser considerado para existir de um acesso ao próximo.
 
 ## <a name="see-also"></a>Consulte também
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

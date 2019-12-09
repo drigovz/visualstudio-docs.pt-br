@@ -1,39 +1,39 @@
 ---
-title: 'Como: Adicionar validação a classes de entidade'
+title: Como adicionar validação a classes de entidade
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
 ms.assetid: 61107da9-7fa3-4dba-b101-ae46536f52c4
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: b91fc7fb356ebd0db4a0bd7960ac060e7d152ec1
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 83c6addb7aa6cf0b54398db351bee5825bc2d6f2
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63402840"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72648405"
 ---
-# <a name="how-to-add-validation-to-entity-classes"></a>Como: Adicionar validação a classes de entidade
+# <a name="how-to-add-validation-to-entity-classes"></a>Como adicionar validação a classes de entidade
 *Validar* classes de entidade é o processo que confirma que os valores inseridos em objetos de dados estão de acordo com as restrições do esquema de um objeto e também as regras estabelecidas para o aplicativo. Validar dados antes de enviar atualizações para o base de dados subjacente é uma boa prática que reduz erros. Também reduz o número potencial de processamentos entre um aplicativo e o base de dados.
 
- O [LINQ to SQL das ferramentas no Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) fornece os métodos parciais que permitem aos usuários estender o código gerado pelo designer que é executado durante inserções, atualizações e exclusões de entidades completos e também durante e após a coluna individual alterações.
+As [ferramentas de LINQ to SQL no Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) fornecem métodos parciais que permitem aos usuários estender o código gerado pelo designer que é executado durante inserções, atualizações e exclusões de entidades completas e também durante e após alterações de coluna individuais.
 
 > [!NOTE]
-> Este tópico fornece as etapas básicas para adicionar validação a classes de entidade usando o **Relational Designer**. Porque ele pode ser difícil seguir essas etapas genéricos sem se referir a uma classe de entidade específica, é fornecida um passo a passo que usa dados reais.
+> Este tópico fornece as etapas básicas para adicionar a validação a classes de entidade usando o o **/R Designer**. Como pode ser difícil seguir essas etapas genéricas sem referir-se a uma classe de entidade específica, um passo a passos que usa dados reais é fornecido.
 
-## <a name="add-validation-for-changes-to-the-value-in-a-specific-column"></a>Adicionar validação para alterações ao valor em uma coluna específica
- Este procedimento mostra como validar dados quando o valor em uma coluna é alterado. Uma vez que a validação é executada na definição de classe (em vez de na interface do usuário), será lançada uma exceção se o valor causar a falha da validação. Implementar manipulação de erro para o código em seu aplicativo que tenta alterar os valores de coluna.
+## <a name="add-validation-for-changes-to-the-value-in-a-specific-column"></a>Adicionar validação para alterações no valor em uma coluna específica
+Este procedimento mostra como validar dados quando o valor em uma coluna é alterado. Uma vez que a validação é executada na definição de classe (em vez de na interface do usuário), será lançada uma exceção se o valor causar a falha da validação. Implementar manipulação de erro para o código em seu aplicativo que tenta alterar os valores de coluna.
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
 ### <a name="to-validate-data-during-a-columns-value-change"></a>Para validar dados durante o valor de uma coluna alterar
 
-1. Abra ou crie um novo arquivo LINQ to SQL Classes (**dbml** arquivo) na **Relational Designer**. (Clique duas vezes no arquivo **.dbml** em **Gerenciador de Soluções**.)
+1. Abra ou crie um novo arquivo de classes de LINQ to SQL (arquivo **. dbml** ) no o **/R Designer**. (Clique duas vezes no arquivo **.dbml** em **Gerenciador de Soluções**.)
 
 2. No **Designer Relacional de Objetos**, clique com o botão direito do mouse na classe para qual você deseja adicionar validação e clique em **Exibir Código**.
 
@@ -45,7 +45,7 @@ ms.locfileid: "63402840"
 
     1. Expanda a lista **Nome do Método**.
 
-    2. Localize o **OnCOLUMNNAMEChanging** método para a coluna que você deseja adicionar validação a.
+    2. Localize o método **OnCOLUMNNAMEChanging** para a coluna à qual você deseja adicionar a validação.
 
     3. Um método `OnCOLUMNNAMEChanging` é adicionado à classe parcial.
 
@@ -62,7 +62,7 @@ ms.locfileid: "63402840"
 
     Para projetos C#:
 
-    Porque os projetos c# não gerenciar automaticamente manipuladores de eventos, você pode usar o IntelliSense para criar os métodos parciais de alteração de coluna. Tipo `partial` e um espaço para acessar a lista de métodos parciais disponíveis. Clique no método de alteração para a coluna que você deseja adicionar validação para. O seguinte código lembra o código que é gerado quando você seleciona um método parcial de alteração de coluna:
+    Como C# os projetos não geram automaticamente manipuladores de eventos, você pode usar o IntelliSense para criar os métodos parciais de alteração de coluna. Tipo `partial` e um espaço para acessar a lista de métodos parciais disponíveis. Clique no método de alteração para a coluna que você deseja adicionar validação para. O código a seguir é semelhante ao código que é gerado quando você seleciona um método parcial de alteração de coluna:
 
     ```csharp
     partial void OnCOLUMNNAMEChanging(COLUMNDATATYPE value)
@@ -71,15 +71,15 @@ ms.locfileid: "63402840"
         }
     ```
 
-## <a name="add-validation-for-updates-to-an-entity-class"></a>Adicionar validação para atualizações a uma classe de entidade
- Além de verificar valores alterações pendentes, você também pode validar dados quando é feita uma tentativa de atualizar uma classe completa de entidade. A validação durante uma atualização tentada permite que você comparar valores em várias colunas se as regras comerciais exigem esta. O procedimento a seguir mostra como validar quando é feita uma tentativa de atualizar uma classe completa de entidade.
+## <a name="add-validation-for-updates-to-an-entity-class"></a>Adicionar validação para atualizações em uma classe de entidade
+Além de verificar valores alterações pendentes, você também pode validar dados quando é feita uma tentativa de atualizar uma classe completa de entidade. A validação durante uma atualização tentada permite que você comparar valores em várias colunas se as regras comerciais exigem esta. O procedimento a seguir mostra como validar quando é feita uma tentativa de atualizar uma classe completa de entidade.
 
 > [!NOTE]
 > O código de validação para que as atualizações terminem classes de entidade é executado na classe parcial de <xref:System.Data.Linq.DataContext> (em vez de na classe parcial de uma classe específica de entidade).
 
 ### <a name="to-validate-data-during-an-update-to-an-entity-class"></a>Para validar dados durante uma atualização para uma entidade
 
-1. Abra ou crie um novo arquivo LINQ to SQL Classes (**dbml** arquivo) na **Relational Designer**. (Clique duas vezes no arquivo **.dbml** em **Gerenciador de Soluções**.)
+1. Abra ou crie um novo arquivo de classes de LINQ to SQL (arquivo **. dbml** ) no o **/R Designer**. (Clique duas vezes no arquivo **.dbml** em **Gerenciador de Soluções**.)
 
 2. Clique com o botão direito do mouse em uma área vazia no **Designer Relacional de Objetos** e clique em **Exibir Código**.
 
@@ -106,7 +106,7 @@ ms.locfileid: "63402840"
 
     Para projetos C#:
 
-    Porque os projetos c# não gerenciar automaticamente manipuladores de eventos, você pode usar o IntelliSense para criar parcial `UpdateCLASSNAME` método. Tipo `partial` e um espaço para acessar a lista de métodos parciais disponíveis. Clique no método de atualização para a classe na qual você deseja adicionar validação. O seguinte código lembra o código que é gerado quando você seleciona um `UpdateCLASSNAME` método parcial:
+    Como C# os projetos não geram automaticamente manipuladores de eventos, você pode usar o IntelliSense para criar o método de `UpdateCLASSNAME` parcial. Tipo `partial` e um espaço para acessar a lista de métodos parciais disponíveis. Clique no método Update para a classe na qual você deseja adicionar a validação. O código a seguir é semelhante ao código que é gerado quando você seleciona um `UpdateCLASSNAME` método parcial:
 
     ```csharp
     partial void UpdateCLASSNAME(CLASSNAME instance)

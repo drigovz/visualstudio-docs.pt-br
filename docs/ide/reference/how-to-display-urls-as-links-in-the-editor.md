@@ -1,5 +1,5 @@
 ---
-title: 'Como: Exibir URLs como links no Editor'
+title: Como exibir URLs como links no Editor
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,19 +7,19 @@ helpviewer_keywords:
 - Code Editor, displaying URLs
 - editors, displaying URLs
 ms.assetid: 7c673953-476e-4897-9c2d-1fc15556c172
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 250f222dcc3f2645c53a97416cc379a3066c45ac
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 9814614ae752a670a8b707e6fd701a5fa151f481
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62789599"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72668589"
 ---
-# <a name="how-to-display-urls-as-links-in-the-editor"></a>Como: Exibir URLs como links no Editor
+# <a name="how-to-display-urls-as-links-in-the-editor"></a>Como exibir URLs como links no Editor
 
 É possível optar por fazer o Editor de Código tratar URLs (Uniform Resource Locators) em seu código como links ativos. Quando você usa esse recurso, as URLs:
 
@@ -45,6 +45,4 @@ ms.locfileid: "62789599"
 
 ## <a name="see-also"></a>Consulte também
 
-- [Personalizando o editor](../../ide/customizing-the-editor.md)
-- [Caixa de diálogo Opções do Editor de Texto](../../ide/reference/text-editor-options-dialog-box.md)
 - [Recursos do Editor de Códigos](../../ide/writing-code-in-the-code-and-text-editor.md)

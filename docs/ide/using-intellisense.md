@@ -10,21 +10,21 @@ helpviewer_keywords:
 - Complete word
 - List members
 - IntelliSense [Visual Studio]
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 38c621a09c6a000c9e3c7e52caa99569f7e5d781
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 011542bc45680f6fb5b7bd2b83283605922189ee
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62821664"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647350"
 ---
 # <a name="intellisense-in-visual-studio"></a>IntelliSense no Visual Studio
 
-O IntelliSense é um recurso de preenchimento de código que inclui uma série de funcionalidades: Listar Membros, Informações de Parâmetro, Informações Rápidas e Completar Palavra. Essas funcionalidades ajudam você a aprender mais sobre o código que está usando, a manter o acompanhamento dos parâmetros que está digitando e a adicionar chamadas a métodos e propriedades pressionando apenas algumas teclas.
+O IntelliSense é uma ajuda de preenchimento de código que inclui inúmeras funcionalidades: Listar Membros, Informações do Parâmetro, Informações Rápidas e Completar Palavra. Essas funcionalidades ajudam você a aprender mais sobre o código que está usando, a manter o acompanhamento dos parâmetros que está digitando e a adicionar chamadas a métodos e propriedades pressionando apenas algumas teclas.
 
 Vários aspectos do IntelliSense são específicos do idioma. Para obter mais informações sobre o IntelliSense para diferentes idiomas, consulte os tópicos listados na seção [Consulte também](#see-also).
 
@@ -70,7 +70,7 @@ Quando você seleciona um membro na caixa **Listar Membros**, as Informações R
 
 Se uma função estiver sobrecarregada, o IntelliSense não poderá exibir informações de todos os formulários da sobrecarga.
 
-É possível invocar desativar as informações rápidas para o código C++ ao navegar em **Ferramentas** > **Opções** > **Editor de Texto** > **C/C++** > **Avançado** e configurar as **Informações Rápidas Automáticas** para `false`.
+É possível invocar desativar as informações rápidas para o código C++ ao navegar em **Ferramentas** > **Opções** > **Editor de Texto** > **C/C++**  > **Avançado** e configurar as **Informações Rápidas Automáticas** para `false`.
 
 ## <a name="complete-word"></a>Completar Palavra
 
@@ -79,6 +79,17 @@ Completar Palavra completa o restante de uma variável, um comando ou um nome de
 ## <a name="intellisense-options"></a>Opções do IntelliSense
 
 As opções do IntelliSense são ativadas por padrão. Para desativá-las, escolha **Ferramentas** > **Opções** > **Editor de Texto** e desmarque a seleção **Informações do parâmetro** ou **Listar membros automaticamente** se você não deseja o recurso Listar Membros.
+
+## <a name="intellisense-icons"></a>Ícones do IntelliSense
+Os ícones no IntelliSense podem transmitir significado adicional com modificadores de ícone. Esses são estrelas, corações e cadeados sobrepostos ao ícone do objeto e que transmitem, respectivamente, os significados de protegido, interno ou privado.
+
+|    Ícone    |    Acessibilidade    |    Descrição    |
+|------------|--------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ![Modificador de ícone público](../ide/media/intellisensePublicNoModifier.png)       |    Classe pública    |    O acesso não é restrito.   |
+| ![Modificador de ícone protegido](../ide/media/intellisenseProtectedModifier.png)       |    Classe protegida    |    O acesso é limitado à classe que os contém ou aos tipos derivados da classe que os contém.    |
+| ![Modificador de ícone interno protegido](../ide/media/intellisenseProtectedInternalModifier.png)       |    Classe interna protegida    |    O acesso é limitado ao assembly atual ou aos tipos derivados da classe que os contém.    |
+| ![Modificador de ícone interno](../ide/media/intellisenseInternalModifier.png)       |    Classe interna    |    O acesso é limitado ao assembly atual.    |
+|![Modificador de ícone privado](../ide/media/intellisensePrivateModifier.png)        |    Classe privada    |    O acesso é limitado à classe que o contém ou a tipos derivados da classe que o contém no assembly atual. (Disponível desde o C# 7.2.)    |
 
 ## <a name="troubleshoot-intellisense"></a>Solução de problemas do IntelliSense
 

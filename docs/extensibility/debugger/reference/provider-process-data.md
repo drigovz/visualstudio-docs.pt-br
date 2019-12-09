@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - PROVIDER_PROCESS_DATA structure
 ms.assetid: ec2362ed-4a0c-4a09-9d66-8ff04e4f41ee
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d021efe197fcc15c99a1138d75e1343fc092efde
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 18b60d68b8c36c1d0c4fcd2a90e25732108460ee
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62865048"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66347247"
 ---
 # <a name="providerprocessdata"></a>PROVIDER_PROCESS_DATA
 Essa estrutura fornece informações sobre processos em execução em um computador.
@@ -41,11 +44,14 @@ public struct PROVIDER_PROCESS_DATA {
 ```
 
 ## <a name="members"></a>Membros
- Campos de uma combinação de sinalizadores do [PROVIDER_FIELDS](../../../extensibility/debugger/reference/provider-fields.md) enumeração, que indica quais campos são preenchidos.
+ `Fields`\
+ Uma combinação de sinalizadores do [PROVIDER_FIELDS](../../../extensibility/debugger/reference/provider-fields.md) enumeração, que indica quais campos são preenchidos.
 
- A ProgramNodes [PROGRAM_NODE_ARRAY](../../../extensibility/debugger/reference/program-node-array.md) estrutura que contém uma matriz de nós de programa.
+ `ProgramNodes`\
+ Um [PROGRAM_NODE_ARRAY](../../../extensibility/debugger/reference/program-node-array.md) estrutura que contém uma matriz de nós de programa.
 
- fIsDebuggerPresent Nonzero (`TRUE`) se o [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] depurador está em execução, zero (`FALSE`) se não for.
+ `fIsDebuggerPresent`\
+ Diferente de zero (`TRUE`) se o [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] depurador está em execução, zero (`FALSE`) se não for.
 
 ## <a name="remarks"></a>Comentários
  Essa estrutura é passada para o [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md) método onde ele é preenchido.

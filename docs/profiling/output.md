@@ -6,14 +6,15 @@ ms.assetid: 5e286e61-4548-42cf-a635-e608c5edbe2b
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 78d5b39908bc0ffa39533c22ea4effcbe97397b7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: ab01f67d44e8c6e0cc13eaf9b0046695a0132e65
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62794211"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778499"
 ---
 # <a name="output"></a>Saída
 A opção **Saída** especifica o nome do arquivo de dados de criação de perfil para a sessão de desempenho. **Saída** deve ser usado com a opção **Iniciar**.
@@ -30,7 +31,7 @@ VSPerfCmd.exe /Start:Method /Output:FileName [Options]
 ## <a name="required-options"></a>Opções obrigatórias
  A opção **Saída** deve ser usada com a opção **Iniciar**.
 
- **Iniciar:** `Method` Especifica o nome do arquivo de saída.
+ **Iniciar:** `Method` especifica o nome do arquivo de saída.
 
 ## <a name="example"></a>Exemplo
  No exemplo a seguir, o arquivo de dados de criação de perfil é criado no diretório atual.

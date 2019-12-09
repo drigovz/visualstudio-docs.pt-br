@@ -3,17 +3,17 @@ title: Suporte a NGen no VSIX v3 | Microsoft Docs
 ms.date: 11/09/2016
 ms.topic: conceptual
 ms.assetid: 1472e884-c74e-4c23-9d4a-6d8bdcac043b
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: eafa07afa26744e3c5be3e1fe3d588b2a43ebfd8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 24f1b0a26875bbbf8dfc4ac7db1049f7309d9aa2
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62433664"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67891111"
 ---
 # <a name="ngen-support-in-vsix-v3"></a>Suporte a NGen no VSIX v3
 
@@ -55,9 +55,10 @@ Isso adicionará os metadados para a referência de projeto dentro do projeto do
     <NgenArchitecture>X86</NgenArchitecture>
     <NgenPriority>2</NgenPriority>
 </ProjectReference>
- ```
+```
 
- >**Observação:** Você pode editar o arquivo. csproj diretamente, se você preferir.
+> [!NOTE]
+> Você pode editar o arquivo. csproj diretamente, se você preferir.
 
 ## <a name="extra-information"></a>Informações adicionais
 

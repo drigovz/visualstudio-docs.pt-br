@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplication::EnumGlobalExpressionContexts | Microsoft Docs
+title: 'IRemoteDebugApplication:: EnumGlobalExpressionContexts | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 92ab12dc9944c328e744c7f39252facb8e91a3f7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 594dc2c09a76cd6027a9abcb38b5951768cceef9
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62944277"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576819"
 ---
 # <a name="iremotedebugapplicationenumglobalexpressioncontexts"></a>IRemoteDebugApplication::EnumGlobalExpressionContexts
 Enumera os contextos de expressão global para todos os idiomas em execução neste aplicativo.  
@@ -37,9 +37,9 @@ HRESULT EnumGlobalExpressionContexts(
   
 #### <a name="parameters"></a>Parâmetros  
  `ppedec`  
- [out] Enumerador que lista os contextos de expressão global para todos os idiomas em execução neste aplicativo.  
+ fora Enumerador que lista os contextos de expressão global para todos os idiomas em execução neste aplicativo.  
   
-## <a name="return-value"></a>Valor de retorno  
+## <a name="return-value"></a>Valor retornado  
  O método retorna um `HRESULT`. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.  
   
 |Valor|Descrição|  

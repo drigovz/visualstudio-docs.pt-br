@@ -1,5 +1,5 @@
 ---
-title: 'CA1058: Tipos não devem estender determinados tipos de base | Microsoft Docs'
+title: 'CA1058: tipos não devem estender determinados tipos base | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,28 +12,28 @@ helpviewer_keywords:
 - TypesShouldNotExtendCertainBaseTypes
 ms.assetid: 8446ee40-beb1-49fa-8733-4d8e813471c0
 caps.latest.revision: 26
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 1ce67a70b6cbe955ef13bf6475a672bcbb687d95
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 9a4663fe3bc09b27bad9eeec05e325f07a3de6f3
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60046533"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72603062"
 ---
-# <a name="ca1058-types-should-not-extend-certain-base-types"></a>CA1058: Tipos não devem estender determinados tipos base
+# <a name="ca1058-types-should-not-extend-certain-base-types"></a>CA1058: os tipos não devem estender determinados tipos base
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |NomeDoTipo|TypesShouldNotExtendCertainBaseTypes|
 |CheckId|CA1058|
-|Categoria|Microsoft.Design|
+|Categoria|Microsoft. Design|
 |Alteração Significativa|Quebra|
 
 ## <a name="cause"></a>Causa
- Um tipo visível externamente estende determinados tipos de base. No momento, esta regra relata tipos que derivam de tipos a seguir:
+ Um tipo visível externamente estende determinados tipos de base. Atualmente, essa regra relata os tipos que derivam dos seguintes tipos:
 
 - <xref:System.ApplicationException?displayProperty=fullName>
 
@@ -52,12 +52,12 @@ ms.locfileid: "60046533"
 - <xref:System.Collections.Stack?displayProperty=fullName>
 
 ## <a name="rule-description"></a>Descrição da Regra
- Para [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] versão 1, era recomendável para derivar novas exceções de <xref:System.ApplicationException>. A recomendação foi alterada e novas exceções devem derivar <xref:System.Exception?displayProperty=fullName> ou uma de suas subclasses no <xref:System> namespace.
+ Para [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] versão 1, era recomendável derivar novas exceções de <xref:System.ApplicationException>. A recomendação foi alterada e as novas exceções devem derivar de <xref:System.Exception?displayProperty=fullName> ou de uma de suas subclasses no namespace <xref:System>.
 
- Não crie uma subclasse de <xref:System.Xml.XmlDocument> se você deseja criar uma exibição XML de uma fonte de dados ou modelo de objeto subjacente.
+ Não crie uma subclasse de <xref:System.Xml.XmlDocument> se desejar criar uma exibição XML de um modelo de objeto subjacente ou fonte de dados.
 
 ### <a name="non-generic-collections"></a>Coleções não genéricas
- Usar e/ou estender coleções genéricas, sempre que possível. Não estenda coleções não genéricas no seu código, a menos que você o enviados anteriormente.
+ Use e/ou estenda coleções genéricas sempre que possível. Não estenda coleções não genéricas em seu código, a menos que você as tenha enviado anteriormente.
 
  **Exemplos de uso incorreto**
 
@@ -87,4 +87,4 @@ public class MyReadOnlyCollection : ReadOnlyCollection<T>
  Para corrigir uma violação dessa regra, derive o tipo de um tipo base diferente ou uma coleção genérica.
 
 ## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos
- Não suprimir um aviso nessa regra quanto a violações sobre <xref:System.ApplicationException>. É seguro suprimir um aviso nessa regra quanto a violações sobre <xref:System.Xml.XmlDocument>. É seguro suprimir um aviso sobre uma coleção não genéricas se o código foi lançado anteriormente.
+ Não suprimir um aviso desta regra para violações sobre <xref:System.ApplicationException>. É seguro suprimir um aviso dessa regra em busca de violações sobre <xref:System.Xml.XmlDocument>. É seguro suprimir um aviso sobre uma coleção não genérica se o código tiver sido liberado anteriormente.

@@ -1,5 +1,5 @@
 ---
-title: 'Como: Implantar, publicar e atualizar soluções do SharePoint em um servidor remoto | Microsoft Docs'
+title: Implantar, publicar e atualizar soluções do SharePoint remotamente
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fdaebbc8901330236769331453501bebdd3f98a3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c8e9c46a9acaf8c70fa434514785276f9ba343d4
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62813937"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401441"
 ---
 # <a name="how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server"></a>Como: Implantar, publicar e atualizar soluções do SharePoint em um servidor remoto
   Além de implantar soluções do SharePoint para o sistema local, você pode publicar soluções em área restrita do SharePoint em locais remotos ou sites locais do SharePoint. As cópias de processo de publicação remoto a *. wsp* arquivo para o servidor do SharePoint instala a solução e, em seguida, permite que você ative a solução. Você também pode atualizar uma instalação remota de solução do SharePoint depois que forem feitas alterações a ele.
@@ -35,9 +35,9 @@ ms.locfileid: "62813937"
 
 4. Escolha o **publicar** botão.
 
-5. Faça logon no servidor remoto se a autenticação do usuário é necessária.
+5. Entre no servidor remoto se a autenticação do usuário é necessária.
 
-     O andamento da publicação é exibido no Visual Studio **saída** janela. Quando o processo for concluído, a solução (*. wsp*) arquivo é instalado no servidor do SharePoint remoto. No entanto, ele ainda deve ser ativado antes que ele pode ser usado no SharePoint.
+     O andamento da publicação é exibido no Visual Studio **saída** janela. Quando o processo for concluído, a solução ( *. wsp*) arquivo é instalado no servidor do SharePoint remoto. No entanto, ele ainda deve ser ativado antes que ele pode ser usado no SharePoint.
 
 6. Sobre o **Galeria de soluções** página, selecione o aplicativo do SharePoint e, em seguida, na faixa de opções, escolha o **ativar** botão.
 
@@ -62,7 +62,7 @@ ms.locfileid: "62813937"
 
 7. Escolha o **publicar** botão.
 
-8. Faça logon no servidor remoto se a autenticação do usuário é necessária.
+8. Entre no servidor remoto se a autenticação do usuário é necessária.
 
      Se você conectado ao servidor remoto recentemente, a autenticação não pode ser necessária.
 

@@ -9,11 +9,11 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0cab24a373595ca1257cbdaa50c009eefa713ea7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58927753"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68148834"
 ---
 # <a name="walkthrough-creating-a-view-adornment-commands-and-settings-column-guides"></a>Passo a passo: Criando um adorno de exibição, comandos e configurações (guias de coluna)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ Primeiro você irá criar um projeto VSIX, adicionar um adorno de exibição do 
 - Há um pacote do VSIP é necessário se você tiver os comandos do usuário, mas é apenas um código clichê que inicializa o objeto de implementação de comandos.
 - Há um `ColumnGuideCommands` objeto que implementa os comandos de usuário e conecta os manipuladores de comando para comandos declarado no arquivo. VSCT.
   
-  **VSIX**. Use **arquivo &#124; novo...** comando para criar um projeto. Escolha o nó extensibilidade em C# no painel de navegação esquerdo e escolha **VSIX Project** no painel direito. Insira o nome ColumnGuides e escolha **Okey** para criar o projeto.
+  **VSIX**. Use **arquivo &#124; novo...** comando para criar um projeto. Escolha o nó extensibilidade em c# no painel de navegação esquerdo e escolha **VSIX Project** no painel direito. Insira o nome ColumnGuides e escolha **Okey** para criar o projeto.
   
   **Exibir adornos**. Pressione o botão direito do ponteiro no nó do projeto no Gerenciador de soluções. Escolha o **adicionar &#124; Novo Item...** comando para adicionar um novo item do adorno de exibição. Escolher **extensibilidade &#124; Editor** no painel de navegação à esquerda e escolha **Editor de visor adorno** no painel direito. Insira o nome ColumnGuideAdornment como o nome do item e escolha **adicionar** para adicioná-lo.
   

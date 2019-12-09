@@ -1,52 +1,52 @@
 ---
 title: IDiaEnumDebugStreams::Next | Microsoft Docs
-ms.date: 11/15/2016
-ms.prod: visual-studio-dev14
-ms.technology: vs-ide-debug
-ms.topic: reference
+ms.date: 11/04/2016
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaEnumDebugStreams::Next method
 ms.assetid: eb8eae5a-be27-45f4-a7bd-6e4ef0652385
-caps.latest.revision: 10
-author: MikeJo5000
+author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a1b7819c90804933795c220c4d47f288d29abfe1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.workload:
+- multiple
+ms.openlocfilehash: 63b66729192c9c976ecd226ab21aad73b94bf9f2
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62838292"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744725"
 ---
 # <a name="idiaenumdebugstreamsnext"></a>IDiaEnumDebugStreams::Next
-[!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
+Recupera um número especificado de fluxos de depuração na sequência de enumeração.
 
-Recupera um número especificado de fluxos de depuração na sequência de enumeração.  
-  
-## <a name="syntax"></a>Sintaxe  
-  
-```cpp#  
-HRESULT Next (   
-   ULONG                     celt,   
-   IDiaEnumDebugStreamData** rgelt,  
-   ULONG*                    pceltFetched  
-);  
-```  
-  
-#### <a name="parameters"></a>Parâmetros  
- celt  
- [in] O número de fluxos de depuração no enumerador a ser recuperado.  
-  
- rgelt  
- [out] Retorna uma matriz de [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md) objetos que representa a depuração fluxos que estão sendo recuperados.  
-  
- pceltFetched  
- [out] Retorna o número de fluxos de depuração retornados.  
-  
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não houver nenhum mais fluxos. Caso contrário, retornará um código de erro.  
-  
-## <a name="see-also"></a>Consulte também  
- [IDiaEnumDebugStreams](../../debugger/debug-interface-access/idiaenumdebugstreams.md)
+## <a name="syntax"></a>Sintaxe
+
+```C++
+HRESULT Next ( 
+   ULONG                     celt,
+   IDiaEnumDebugStreamData** rgelt,
+   ULONG*                    pceltFetched
+);
+```
+
+#### <a name="parameters"></a>Parâmetros
+ celt
+
+no O número de fluxos de depuração no enumerador a serem recuperados.
+
+ rgelt
+
+fora Retorna uma matriz de objetos [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md) que representa os fluxos de depuração que estão sendo recuperados.
+
+ pceltFetched
+
+fora Retorna o número de fluxos de depuração retornados.
+
+## <a name="return-value"></a>Valor retornado
+ Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não houver mais fluxos. Caso contrário, retornará um código de erro.
+
+## <a name="see-also"></a>Consulte também
+- [IDiaEnumDebugStreams](../../debugger/debug-interface-access/idiaenumdebugstreams.md)

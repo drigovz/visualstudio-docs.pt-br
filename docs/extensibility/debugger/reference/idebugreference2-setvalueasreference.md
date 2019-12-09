@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugReference2::SetValueAsReference
 ms.assetid: 94a545d2-16b9-45e9-b2e7-4e49ff90aad0
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c4af17f49e95818ed664e74aab53687540f653ba
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 108061d4957b03d049897985da849ab86563ea47
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62916318"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66339758"
 ---
 # <a name="idebugreference2setvalueasreference"></a>IDebugReference2::SetValueAsReference
 Define o valor de uma referência de outra referência. Reservado para uso futuro.
@@ -42,22 +45,18 @@ int SetValueAsReference ( 
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `rgpArgs`
+## <a name="parameters"></a>Parâmetros
+`rgpArgs`\
+[in] Uma matriz de [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) objetos usados para determinar como definir o valor de referência.
 
- [in] Uma matriz de [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) objetos usados para determinar como definir o valor de referência.
+`dwArgCount`\
+[in] O número de referências na matriz.
 
- `dwArgCount`
+`pValue`\
+[in] Uma [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) objeto do qual definir o valor da propriedade.
 
- [in] O número de referências na matriz.
-
- `pValue`
-
- [in] Uma [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) objeto do qual definir o valor da propriedade.
-
- `dwTimeout`
-
- [in] Tempo máximo, em milissegundos, para aguardar antes de retornar do método. Use `INFINITE` para aguardar indefinidamente.
+`dwTimeout`\
+[in] Tempo máximo, em milissegundos, para aguardar antes de retornar do método. Use `INFINITE` para aguardar indefinidamente.
 
 ## <a name="return-value"></a>Valor de retorno
  Sempre retorna `E_NOTIMPL`.

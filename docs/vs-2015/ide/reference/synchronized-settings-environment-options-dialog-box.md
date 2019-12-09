@@ -8,20 +8,20 @@ f1_keywords:
 - VS.ToolsOptionsPages.Environment.RoamingSettings
 ms.assetid: 3cfe09d2-1120-46e8-b882-f7056acb778b
 caps.latest.revision: 6
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 41362b237892b59b505313cbc9fafa10326a9ecf
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 2bb2f163855196a0580cd1d5a8ddc33b16cbd8f7
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59652950"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72651017"
 ---
 # <a name="synchronized-settings-environment-options-dialog-box"></a>Caixa de diálogo de configurações sincronizadas, ambiente, opções
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Use esta página para especificar se deseja sincronizar (usar perfil móvel) suas configurações em vários computadores. Para obter mais informações, consulte [Synchronized Settings (Configurações sincronizadas)](../../ide/synchronized-settings-in-visual-studio.md).  
-  
-## <a name="see-also"></a>Consulte também  
+Use esta página para especificar se deseja sincronizar (usar perfil móvel) suas configurações em vários computadores. Para obter mais informações, consulte [Synchronized Settings (Configurações sincronizadas)](../../ide/synchronized-settings-in-visual-studio.md).
+
+## <a name="see-also"></a>Consulte também
  [Caixa de diálogo Opções do Ambiente](../../ide/reference/environment-options-dialog-box.md)

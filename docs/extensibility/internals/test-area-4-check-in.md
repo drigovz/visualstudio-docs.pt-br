@@ -1,70 +1,70 @@
 ---
-title: 'Área de teste 4: Fazer Check-In | Microsoft Docs'
+title: 'Área de teste 4: fazer check-in | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], checking items in
 - source control plug-ins, checking items in
 ms.assetid: d0329fa8-7a8d-4d30-b67b-6f2a97b75a30
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 34d988f88787efc2f40b663ef2f22e6273055533
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9144bf3aa677a2478bce81634d22d6446e77626b
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62908820"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72722517"
 ---
-# <a name="test-area-4-check-in"></a>Área de teste 4: Fazer check-in
-Essa área de plug-in de teste de controle de origem aborda enviar itens atualizados para o armazenamento de versão por meio de **Fazer Check-In** comando.
+# <a name="test-area-4-check-in"></a>Área de teste 4: fazer check-in
+Esta área de teste de plug-in de controle de origem aborda o envio de itens atualizados para o repositório de versão por meio do comando **check-in** .
 
-## <a name="command-menu-access"></a>Acesso ao Menu de comando
- O seguinte [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] caminhos de menu de ambiente de desenvolvimento integrado são usados nos casos de teste.
+## <a name="command-menu-access"></a>Acesso ao menu de comando
+ Os seguintes [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] caminhos de menu do ambiente de desenvolvimento integrado são usados nos casos de teste.
 
 ##### <a name="check-in"></a>Fazer Check-in:
- **Arquivo**, **controle de origem**, **Fazer Check-In**.
+ **Arquivo**, **controle do código-fonte**, **check-in**.
 
- **Arquivo**, **Check-In**.
+ **Arquivo**, **faça check-in**.
 
- Menu de atalho **Fazer Check-In**.
+ Menu de atalho, **faça check-in**.
 
-## <a name="common-expected-behavior"></a>Comportamento esperado comuns
+## <a name="common-expected-behavior"></a>Comportamento comum esperado
 
-- Projetos e arquivos adicionados a uma solução ou projeto sob controle do código-fonte aparecem na **Fazer Check-In** caixa de diálogo e o **check-ins pendentes** janela.
+- Projetos e arquivos adicionados a uma solução ou projeto sob controle do código-fonte aparecem na caixa de diálogo **check-in** e na janela **check-ins pendentes** .
 
-- Após o check-in, os itens adicionados são exibidos no controle de origem.
+- Após o check-in, os itens adicionados aparecem no controle do código-fonte.
 
-- Após o check-in, itens atualizados estão corretamente com controle de versão no repositório.
+- Após o check-in, os itens atualizados têm controle de versão correto na loja.
 
 ## <a name="test-cases"></a>Casos de teste
- Estes são os casos de teste específicos para a área de teste de check-in.
+ Veja a seguir os casos de teste específicos para a área de teste de check-in.
 
-### <a name="case-4a-modified-items"></a>Caso 4a: Itens modificados
- Descreve como usar a verificação em ação para atualizar um arquivo sob controle do código-fonte que tenha sido modificado.
-
-|Ação|Etapas de teste|Resultados esperados para verificar|
-|------------|----------------|--------------------------------|
-|Modificar um arquivo de texto que foi feito check-out, check-in somente o arquivo (**Fazer Check-In** caixa de diálogo)|1.  Crie um novo projeto com um arquivo de texto.<br />2.  Adicione a solução ao controle de origem.<br />3.  Fazer check-out e modificar o arquivo de texto.<br />4.  Fazer check-in por meio da caixa de diálogo Fazer Check-In (**arquivo**, **controle do código-fonte**, **Fazer Check-In**).|Comportamento esperado comuns.|
-|Modificar um arquivo de texto que foi feito check-out, Check-in somente o arquivo (**check-ins pendentes** janela)|1.  Crie um novo projeto com um arquivo de texto.<br />2.  Adicione a solução ao controle de origem.<br />3.  Fazer check-out e modificar o arquivo de texto.<br />4.  Fazer check-in por meio de **check-ins pendentes** janela.|Comportamento esperado comuns.|
-
-### <a name="case-4b-adding-files"></a>Caso 4b: Adicionando arquivos
- Ao adicionar um arquivo a um projeto ou um item a uma solução, o projeto ou solução deve alterar também. Assim, o arquivo pai também check-out e deve ser verificado para concluir a adição.
+### <a name="case-4a-modified-items"></a>Caso 4a: itens modificados
+ Descreve como usar a ação de check-in para atualizar um arquivo sob controle do código-fonte que foi modificado.
 
 |Ação|Etapas de teste|Resultados esperados para verificar|
 |------------|----------------|--------------------------------|
-|Adicione um arquivo de texto e fazer check-in de tudo (**Fazer Check-In** caixa de diálogo)|1.  Crie um novo projeto.<br />2.  Adicione a solução ao controle de origem.<br />3.  Adicione um arquivo de texto ao projeto.<br />4.  Se solicitado, aceite check-out do projeto.<br />5.  Selecione a solução no **Gerenciador de soluções**.<br />6.  Fazer check-in do **Fazer Check-In** caixa de diálogo.|Comportamento esperado comuns.|
-|Adicione um arquivo de texto e fazer check-in de tudo (**check-ins pendentes** janela)|1.  Crie um novo projeto.<br />2.  Adicione a solução ao controle de origem.<br />3.  Adicione um arquivo de texto ao projeto.<br />4.  Se solicitado, aceite check-out do projeto.<br />5.  Fazer check-in da solução a partir **check-ins pendentes** janela.|Comportamento esperado comuns|
+|Modificar um arquivo de texto cujo check-out foi feito, faça check-in somente do arquivo (caixa**de diálogo check-in** )|1. Crie um novo projeto com um arquivo de texto.<br />2. Adicione a solução ao controle do código-fonte.<br />3. fazer check-out e modificar o arquivo de texto.<br />4. faça check-in por meio da caixa de diálogo check-in (**arquivo**, **controle do código-fonte**, **check-in**).|Comportamento esperado comum.|
+|Modificar um arquivo de texto cujo check-out foi feito, faça check-in somente do arquivo (janela**check-ins pendentes** )|1. Crie um novo projeto com um arquivo de texto.<br />2. Adicione a solução ao controle do código-fonte.<br />3. fazer check-out e modificar o arquivo de texto.<br />4. faça check-in por meio da janela **check-ins pendentes** .|Comportamento esperado comum.|
 
-### <a name="case-4c-adding-projects"></a>Caso 4c: Adicionando projetos
- Ao adicionar um projeto a uma solução, a solução deve alterar também. Assim, o arquivo de solução também check-out e deve ser verificado para concluir a adição.
+### <a name="case-4b-adding-files"></a>4B de caso: Adicionando arquivos
+ Ao adicionar um arquivo a um projeto ou a um item a uma solução, o projeto ou a solução também deve ser alterada. Portanto, o check-out do arquivo pai também é necessário e deve ser feito o check-in para concluir a adição.
 
 |Ação|Etapas de teste|Resultados esperados para verificar|
 |------------|----------------|--------------------------------|
-|Adicionar um projeto a uma solução em branco sob controle do código-fonte (**Fazer Check-In** caixa de diálogo)|1.  Crie uma solução em branco.<br />2.  Adicione a solução ao controle de origem.<br />3.  Adicione um novo projeto.<br />4.  Aceite check-out da solução, se solicitado.<br />5.  Fazer check-in do **Fazer Check-In** caixa de diálogo.|Comportamento esperado comuns.|
-|Adicionar um projeto a uma solução em branco sob controle do código-fonte (**check-ins pendentes** janela)|1.  Crie uma solução em branco.<br />2.  Adicione a solução ao controle de origem.<br />3.  Adicione um novo projeto.<br />4.  Aceite check-out da solução, se solicitado.<br />5.  Fazer check-in da solução a partir **check-ins pendentes** janela.|Comportamento esperado comuns.|
+|Adicionar um arquivo de texto e fazer check-in de tudo (caixa**de diálogo check-in** )|1. Crie um novo projeto.<br />2. Adicione a solução ao controle do código-fonte.<br />3. Adicione um arquivo de texto ao projeto.<br />4. aceitar check-out do projeto, se solicitado.<br />5. Selecione a solução em **Gerenciador de soluções**.<br />6. faça check-in na caixa de diálogo **check-in** .|Comportamento esperado comum.|
+|Adicionar um arquivo de texto e fazer check-in de tudo (janela**check-ins pendentes** )|1. Crie um novo projeto.<br />2. Adicione a solução ao controle do código-fonte.<br />3. Adicione um arquivo de texto ao projeto.<br />4. aceitar check-out do projeto, se solicitado.<br />5. fazer check-in da solução na janela **check-ins pendentes** .|Comportamento comum esperado|
+
+### <a name="case-4c-adding-projects"></a>4C de caso: Adicionando projetos
+ Ao adicionar um projeto a uma solução, a solução também deve ser alterada. Portanto, o arquivo de solução também é submetido a check-out e deve ser verificado para concluir a adição.
+
+|Ação|Etapas de teste|Resultados esperados para verificar|
+|------------|----------------|--------------------------------|
+|Adicionar um projeto a uma solução em branco no controle do código-fonte (caixa**de diálogo check-in** )|1. Crie uma solução em branco.<br />2. Adicione a solução ao controle do código-fonte.<br />3. adicionar um novo projeto.<br />4. aceitar check-out da solução se solicitado.<br />5. faça check-in na caixa de diálogo **check-in** .|Comportamento esperado comum.|
+|Adicionar um projeto a uma solução em branco sob controle do código-fonte (janela**check-ins pendentes** )|1. Crie uma solução em branco.<br />2. Adicione a solução ao controle do código-fonte.<br />3. adicionar um novo projeto.<br />4. aceitar check-out da solução se solicitado.<br />5. fazer check-in da solução na janela **check-ins pendentes** .|Comportamento esperado comum.|
 
 ## <a name="see-also"></a>Consulte também
 - [Guia de teste para plug-ins de controle do código-fonte](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)

@@ -1,5 +1,5 @@
 ---
-title: IDiaPropertyStorage::ReadLONG | Microsoft Docs
+title: 'IDiaPropertyStorage:: ReadLONG | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2fb277368e23cf51a4d3d3b69226ee6bf093d6c3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: af9d65c571c5e0a281b968d922c9b5170bd1c561
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839609"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742900"
 ---
 # <a name="idiapropertystoragereadlong"></a>IDiaPropertyStorage::ReadLONG
 Lê `LONG` valores em um conjunto de propriedades.
@@ -34,17 +34,17 @@ HRESULT ReadDLONG ( 
 #### <a name="parameters"></a>Parâmetros
  `id`
 
-[in] Identificador da propriedade a ser lido (`PROPID` é definido em wtypes. H como um `ULONG`).
+no Identificador da propriedade a ser lida (`PROPID` é definido em WTypes. h como um `ULONG`).
 
  `pValue`
 
-[out] Retorna o valor da propriedade.
+fora Retorna o valor da propriedade.
 
-## <a name="return-value"></a>Valor de retorno
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retornará um código de erro. Retorna `E_INVALIDARG` se a propriedade não é do tipo `LONG`.
+## <a name="return-value"></a>Valor retornado
+ Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro. Retornará `E_INVALIDARG` se a propriedade não for do tipo `LONG`.
 
 ## <a name="remarks"></a>Comentários
- Um `LONG` é definido pelo Windows como um inteiro com sinal de 32 bits.
+ Uma `LONG` é definida pelo Windows como um inteiro com sinal de 32 bits.
 
 ## <a name="see-also"></a>Consulte também
 - [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)

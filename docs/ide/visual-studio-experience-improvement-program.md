@@ -8,18 +8,20 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a1e4f59b672049ee8148c94dbbf51e560e22c31e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: b6c785b755b64f0dd7e367a01d9c05c1981ea558
+ms.sourcegitcommit: d3e423a9a4ed773a54d14b247e1b5bfc95de8816
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62581990"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "71693010"
 ---
 # <a name="visual-studio-customer-experience-improvement-program"></a>Programa de Aperfeiçoamento da Experiência do Usuário do Visual Studio
 
 O VSCEIP (Programa de Aperfeiçoamento da Experiência do Usuário do Visual Studio) foi projetado para ajudar a Microsoft a aperfeiçoar o Visual Studio ao longo do tempo. Esse programa [coleta informações sobre erros](../ide/diagnostic-data-collection.md), hardware do computador e como as pessoas usam o Visual Studio, sem interromper os usuários em suas tarefas no computador. As informações coletadas ajudam a Microsoft a identificar quais funcionalidades devem ser aprimoradas. Este documento aborda como aceitar ou recusar o VSCEIP.
 
 [!INCLUDE [gdpr-hybrid-note](../misc/includes/gdpr-hybrid-note.md)]
+> [!NOTE]
+> As configurações de aceitação ou saída de telemetria do VSCEIP não se aplicam a ' relatar um problema ' no Visual Studio. Quando você relata um problema, os logs são coletados e enviados à Microsoft somente quando você fornece permissão clicando em ' enviar '. Se você estiver interessado em gerenciar logs antes de enviar para ' relatar um problema ', consulte a [privacidade dos dados de comentários](./developer-community-privacy.md) para obter mais detalhes.
 
 ## <a name="opt-in-or-out"></a>Aceitar ou recusar
 
@@ -70,7 +72,7 @@ Para obter mais informações sobre as informações coletadas, processadas ou t
 ## <a name="see-also"></a>Consulte também
 
 * [Informações de diagnóstico coletadas pelo Visual Studio](diagnostic-data-collection.md)
-* [Fale conosco](../ide/talk-to-us.md)
+* [Opções de comentários do Visual Studio](../ide/feedback-options.md)
 * [Como relatar um problema com o Visual Studio](../ide/how-to-report-a-problem-with-visual-studio.md)
 * [Comunidade de Desenvolvedores do Visual Studio](https://developercommunity.visualstudio.com/)
 * [Política de privacidade da Microsoft](https://privacy.microsoft.com/privacystatement)

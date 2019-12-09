@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4fc1e4365deea4a3981d9cf457a2c0af37edcd43
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 99aa03470b49d02ee9f0ac1548bd1f8e27d0ab34
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62979247"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72562492"
 ---
 # <a name="idebughelpercreatepropertybrowser"></a>IDebugHelper::CreatePropertyBrowser
-Retorna um navegador de propriedade que encapsula uma VARIANTE.  
+Retorna um navegador de propriedades que encapsula uma variante.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -40,18 +40,18 @@ HRESULT CreatePropertyBrowser(
   
 #### <a name="parameters"></a>Parâmetros  
  `pvar`  
- [in] Variante de raiz para procurar.  
+ no Variante de raiz para procurar.  
   
  `bstrName`  
- [in] Nome a ser atribuído a raiz.  
+ no Nome para dar a raiz.  
   
  `pdat`  
- [in] Thread no qual as propriedades da solicitação. Se esse parâmetro for NULL, nenhum empacotamento é executada.  
+ no Thread no qual as propriedades de solicitação são solicitadas. Se esse parâmetro for NULL, nenhum marshaling será executado.  
   
  `ppdob`  
- [out] O navegador de propriedade.  
+ fora O navegador de propriedades.  
   
-## <a name="return-value"></a>Valor de retorno  
+## <a name="return-value"></a>Valor retornado  
  O método retorna um `HRESULT`. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.  
   
 |Valor|Descrição|  
@@ -59,9 +59,9 @@ HRESULT CreatePropertyBrowser(
 |`S_OK`|O método foi bem-sucedido.|  
   
 ## <a name="remarks"></a>Comentários  
- Esse método retorna um navegador de propriedade que encapsula uma VARIANTE.  
+ Esse método retorna um navegador de propriedades que encapsula uma variante.  
   
 ## <a name="see-also"></a>Consulte também  
  [IDebugHelper::CreatePropertyBrowserEx](../../winscript/reference/idebughelper-createpropertybrowserex.md)   
- [Interface IDebugHelper](../../winscript/reference/idebughelper-interface.md)   
+   de [interface IDebugHelper](../../winscript/reference/idebughelper-interface.md)  
  [Interface IDebugProperty](../../winscript/reference/idebugproperty-interface.md)

@@ -1,5 +1,5 @@
 ---
-title: 'Como: Personalizar um pacote de solução do SharePoint usando destinos do MSBuild | Microsoft Docs'
+title: Personalizar o pacote de solução do SharePoint usando destinos do MSBuild
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 80c29cab77cffcb46da8913ccd6e050ec4181c54
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 71665f6ccf22ace264ff39831521538a335aed93
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62814011"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401503"
 ---
 # <a name="how-to-customize-a-sharepoint-solution-package-by-using-msbuild-targets"></a>Como: Personalizar um pacote de solução do SharePoint usando destinos do MSBuild
-  Usando destinos do MSBuild no prompt de comando, você pode personalizar como o Visual Studio cria arquivos de pacote do SharePoint (*. wsp*). Por exemplo, você pode personalizar as propriedades do MSBuild para alterar o diretório intermediário de empacotamento e os grupos de itens do MSBuild que especificam os arquivos enumerados.
+  Usando destinos do MSBuild no prompt de comando, você pode personalizar como o Visual Studio cria arquivos de pacote do SharePoint ( *. wsp*). Por exemplo, você pode personalizar as propriedades do MSBuild para alterar o diretório intermediário de empacotamento e os grupos de itens do MSBuild que especificam os arquivos enumerados.
 
 ## <a name="customize-and-run-msbuild-targets"></a>Personalizar e executar os destinos do MSBuild
  Se você personalizar as metas de BeforeLayout e AfterLayout, você pode executar tarefas antes do layout do pacote, como adicionando, removendo ou modificando os arquivos que serão empacotados.

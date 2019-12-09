@@ -1,9 +1,7 @@
 ---
 title: ManagedType | Microsoft Docs
-ms.date: 11/15/2016
-ms.prod: visual-studio-dev14
-ms.technology: vs-ide-debug
-ms.topic: reference
+ms.date: 11/04/2016
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -11,30 +9,29 @@ helpviewer_keywords:
 - managed type symbol
 - ManagedType symbol
 ms.assetid: 5db99e2a-4f2e-4796-89b7-b401b151826f
-caps.latest.revision: 18
-author: MikeJo5000
+author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0c121e996972b47a91a018d910a5d3677cb4cffa
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.workload:
+- dotnet
+ms.openlocfilehash: bf61dce9940279b490d9270420cc45baf0b82dc0
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62855205"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738652"
 ---
 # <a name="managedtype"></a>ManagedType
-[!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
+Um tipo gerenciado (qualquer símbolo definido por metadados ou nativo para a funcionalidade de gerenciamento de memória e de recursos de linguagens, como C#) é identificado por um símbolo de `SymTagManagedType`.
 
-Um tipo gerenciado (qualquer símbolo definido por metadados, ou do modo nativo para a funcionalidade de gerenciamento de memória e recursos de linguagens como c#) é identificado por um `SymTagManagedType` símbolo.  
-  
-## <a name="properties"></a>Propriedades  
- A tabela a seguir mostra as propriedades adicionais de válido para esse tipo de símbolo.  
-  
-|Propriedade|Tipo de dados|Descrição|  
-|--------------|---------------|-----------------|  
-|[IDiaSymbol::get_name](../../debugger/debug-interface-access/idiasymbol-get-name.md)|`BSTR`|Nome do símbolo gerenciado.|  
-|[IDiaSymbol::get_symIndexId](../../debugger/debug-interface-access/idiasymbol-get-symindexid.md)|`DWORD`|ID de índice de símbolo.|  
-|[IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)|`DWORD`|Retorna `SymTagManagedType` (um dos [enumeração SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) valores).|  
-  
-## <a name="see-also"></a>Consulte também  
- [Hierarquia de classes de tipos de símbolo](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md)
+## <a name="properties"></a>Propriedades
+ A tabela a seguir mostra as propriedades válidas adicionais para esse tipo de símbolo.
+
+|propriedade|Tipo de dados|Descrição|
+|--------------|---------------|-----------------|
+|[IDiaSymbol::get_name](../../debugger/debug-interface-access/idiasymbol-get-name.md)|`BSTR`|Nome do símbolo gerenciado.|
+|[IDiaSymbol::get_symIndexId](../../debugger/debug-interface-access/idiasymbol-get-symindexid.md)|`DWORD`|ID do índice do símbolo.|
+|[IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)|`DWORD`|Retorna `SymTagManagedType` (um dos valores de [Enumeração SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) ).|
+
+## <a name="see-also"></a>Consulte também
+- [Hierarquia de classes de tipos de símbolo](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md)

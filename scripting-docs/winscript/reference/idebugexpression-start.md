@@ -1,5 +1,5 @@
 ---
-title: IDebugExpression::Start | Microsoft Docs
+title: 'IDebugExpression:: iniciar | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e80f3fb8087d39c76f59cf5c6bc8719c1cbaf5e4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1c8c3666adfc83f3ad60b942cd3f7fe9eedfccba
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62978517"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576436"
 ---
 # <a name="idebugexpressionstart"></a>IDebugExpression::Start
-Começa a avaliação da expressão.  
+Inicia a avaliação da expressão.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -37,9 +37,9 @@ HRESULT Start(
   
 #### <a name="parameters"></a>Parâmetros  
  `pdecb`  
- [in] Retorno de chamada para indicar quando a avaliação da expressão for concluída. Se esse parâmetro for `NULL`, nenhum evento é acionado e o cliente deve sondar o estado de expressão usando `QueryIsComplete`.  
+ no Retorno de chamada para indicar quando a avaliação da expressão foi concluída. Se esse parâmetro for `NULL`, nenhum evento será acionado e o cliente deverá sondar o estado da expressão usando `QueryIsComplete`.  
   
-## <a name="return-value"></a>Valor de retorno  
+## <a name="return-value"></a>Valor retornado  
  O método retorna um `HRESULT`. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.  
   
 |Valor|Descrição|  
@@ -47,8 +47,8 @@ HRESULT Start(
 |`S_OK`|O método foi bem-sucedido.|  
   
 ## <a name="remarks"></a>Comentários  
- Esse método começa a avaliação da expressão.  
+ Esse método inicia a avaliação da expressão.  
   
 ## <a name="see-also"></a>Consulte também  
- [IDebugExpression::Abort](../../winscript/reference/idebugexpression-abort.md)   
+ [IDebugExpression:: Abort](../../winscript/reference/idebugexpression-abort.md)   
  [Interface IDebugExpression](../../winscript/reference/idebugexpression-interface.md)

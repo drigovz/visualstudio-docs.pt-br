@@ -20,12 +20,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d7ea0ea688ae9702c7107b33ff87437ebd3656e5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: efd6d9a6628c5d5052d2195e08074e7688a71f92
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58929660"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704154"
 ---
 # <a name="edit-and-continue-dialog-box-c"></a>Caixa de diálogo Editar e Continuar (C++)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,4 +35,4 @@ Editar e Continuar não poderiam aplicar as alterações feitas ao seu código n
  Você pode editar o código para corrigir o erro durante a depuração ainda, pare a depuração e corrigir o código, ou ignorar o erro e continuar a depuração. Se você continuar sem fazer a correção, suas alterações de código não serão aplicadas imediatamente.  
   
 ## <a name="see-also"></a>Consulte também  
- [Caixa de diálogo Editar e Continuar, Depuração, Opções](http://msdn.microsoft.com/library/009d225f-ef65-463f-a146-e4c518f86103)
+ [Caixa de diálogo Editar e Continuar, Depuração, Opções](https://msdn.microsoft.com/library/009d225f-ef65-463f-a146-e4c518f86103)

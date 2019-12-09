@@ -3,40 +3,44 @@ title: Opções, Editor de Texto, Geral
 ms.date: 01/18/2019
 ms.topic: reference
 f1_keywords:
-- VS.ToolsOptionsPages.Text_Editor.RDL_Expression.General
-- VS.ToolsOptionsPages.Text_Editor.SQL.General
-- vs.toolsoptionspages.text_editor
-- VS.ToolsOptionsPages.Text_Editor.T-SQL80.General
-- VS.ToolsOptionsPages.Text_Editor.SQL_Script.General
-- VS.ToolsOptionsPages.Text_Editor.T-SQL7.General
-- VS.ToolsOptionsPages.Text_Editor.T-SQL.General
-- VS.ToolsOptionsPages.Text_Editor.PL/SQL.General
 - VS.ToolsOptionsPages.Text_Editor
-- VS.ToolsOptionsPages.Text_Editor.XOML.General
-- VS.ToolsOptionsPages.Text_Editor.SQL
-- VS.ToolsOptionsPages.Text_Editor.SQL_Script
+- vs.toolsoptionspages.text_editor
+- VS.ToolsOptionsPages.Text_Editor.CSharp.Formatting
+- VS.ToolsOptionsPages.Text_Editor.CSharp.Outlining
 - VS.ToolsOptionsPages.Text_Editor.General
+- VS.ToolsOptionsPages.Text_Editor.PL/SQL
+- VS.ToolsOptionsPages.Text_Editor.PL/SQL.General
 - VS.ToolsOptionsPages.Text_Editor.Python
 - VS.ToolsOptionsPages.Text_Editor.R
+- VS.ToolsOptionsPages.Text_Editor.RDL_Expression.General
+- VS.ToolsOptionsPages.Text_Editor.SQL
+- VS.ToolsOptionsPages.Text_Editor.SQL.General
+- VS.ToolsOptionsPages.Text_Editor.SQL_Script
+- VS.ToolsOptionsPages.Text_Editor.SQL_Script.General
+- VS.ToolsOptionsPages.Text_Editor.T-SQL
+- VS.ToolsOptionsPages.Text_Editor.T-SQL.General
+- VS.ToolsOptionsPages.Text_Editor.T-SQL7.General
+- VS.ToolsOptionsPages.Text_Editor.T-SQL80
+- VS.ToolsOptionsPages.Text_Editor.T-SQL80.General
 helpviewer_keywords:
 - Text Editor Options dialog box
 - Code Editor
 - Text Editor [Visual Studio]
 - editors, global settings
 ms.assetid: 4ac21e48-3243-4141-9058-7eaf12b3cde7
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a7bcf7b57c6cdc7e0ff4ff5a851397b7c96b345
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: ee7d7ebab51a3edfeb84a95609c6bdad581b6753
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778641"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666205"
 ---
-# <a name="options-text-editor-general"></a>Opções, Editor de Texto, Geral
+# <a name="options-dialog-box-text-editor--general"></a>Caixa de diálogo opções: editor de texto \> geral
 
 Essa caixa de diálogo permite alterar as configurações globais do editor de texto e código do Visual Studio. Para exibir essa caixa de diálogo, selecione **Opções** no menu **Ferramentas**, expanda a pasta **Editor de Texto** e selecione **Geral**.
 
@@ -96,5 +100,5 @@ Quando essa opção estiver selecionada, as linhas verticais serão exibidas no 
 - [Opções, Editor de Texto, Todas as Linguagens, Guias](../../ide/reference/options-text-editor-all-languages-tabs.md)
 - [Opções, Editor de Texto, Extensão de Arquivo](../../ide/reference/options-text-editor-file-extension.md)
 - [Identificando e personalizando atalhos de teclado](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)
-- [Personalizando o editor](../../ide/customizing-the-editor.md)
+- [Personalizando o editor](../how-to-change-text-case-in-the-editor.md)
 - [Usando o IntelliSense](../../ide/using-intellisense.md)

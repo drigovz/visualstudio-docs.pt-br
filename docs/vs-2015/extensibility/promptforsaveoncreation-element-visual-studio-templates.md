@@ -12,12 +12,12 @@ ms.assetid: 75174674-0c3c-4b57-b2fd-6ea8e817b67d
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 9e9e6ece0d683d08521a76286671c944e57206c6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a523190a9e5c143667355c222e0fbe9441cc231a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58926492"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675366"
 ---
 # <a name="promptforsaveoncreation-element-visual-studio-templates"></a>Elemento PromptForSaveOnCreation (modelos do Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +57,7 @@ Especifica se o usuário é solicitado para um projeto local por meio de salvame
 ## <a name="remarks"></a>Comentários  
  `PromptForSaveOnCreation` é um elemento opcional. O valor padrão é `false`.  
   
- Projetos temporários são projetos que você pode criar e modificar sem salvar o conteúdo desse projeto no disco. Para obter mais informações, consulte [os projetos temporários NIB](http://msdn.microsoft.com/9cf1944c-7045-44cc-8701-7b0eb4099f2b).  
+ Projetos temporários são projetos que você pode criar e modificar sem salvar o conteúdo desse projeto no disco. Para obter mais informações, consulte [os projetos temporários NIB](https://msdn.microsoft.com/9cf1944c-7045-44cc-8701-7b0eb4099f2b).  
   
 ## <a name="example"></a>Exemplo  
  O exemplo a seguir define o valor da `PromptForSaveOnCreation` igual a `false`, que especifica para permitir que o projeto a ser criado como um projeto temporário.  

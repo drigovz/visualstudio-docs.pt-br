@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEnumField::GetValueFromString method
 ms.assetid: 1ef8ac5e-a3e0-4078-b876-7f5615aedcbb
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e714e6b2028605eb9c820f904cedf9ed4c23eab8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 81b74ecc780e2fd9df3cad5516c25f8a1fa657ec
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62920396"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66345128"
 ---
 # <a name="idebugenumfieldgetvaluefromstring"></a>IDebugEnumField::GetValueFromString
 Esse método retorna o valor associado com o nome de uma constante de enumeração.
@@ -38,14 +41,12 @@ int GetValueFromString(
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `pszValue`
+## <a name="parameters"></a>Parâmetros
+`pszValue`\
+[in] Uma cadeia de caracteres especificando o nome para o qual obter o valor. Observe que, para C++, isso é uma cadeia de caracteres largos.
 
- [in] Uma cadeia de caracteres especificando o nome para o qual obter o valor. Observe que, para C++, isso é uma cadeia de caracteres largos.
-
- `pValue`
-
- [out] Retorna o valor numérico associado.
+`pValue`\
+[out] Retorna o valor numérico associado.
 
 ## <a name="return-value"></a>Valor de retorno
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE`, se o nome não é parte de enumeração ou um código de erro.

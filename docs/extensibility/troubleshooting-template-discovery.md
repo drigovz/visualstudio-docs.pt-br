@@ -2,17 +2,17 @@
 title: Solucionar problemas de descoberta de modelo no Visual Studio | Microsoft Docs
 ms.date: 01/02/2018
 ms.topic: conceptual
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a1ea74d3c5f3fed961a956e9a55a4930d009d530
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b3c5558079772a8ddc4c4826ba68d1866c220ba2
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62432077"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823978"
 ---
 # <a name="troubleshooting-template-installation"></a>Instalação do modelo de solução de problemas
 
@@ -59,9 +59,9 @@ O arquivo de log contém as seguintes colunas:
 
 - **FullPathToTemplate**, que tem os seguintes valores:
 
-    - 1 para implantação baseada em manifesto
+  - 1 para implantação baseada em manifesto
 
-    - 0 para implantação baseada em disco
+  - 0 para implantação baseada em disco
 
 - **TemplateFileName**
 

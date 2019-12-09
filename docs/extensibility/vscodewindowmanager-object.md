@@ -8,26 +8,24 @@ helpviewer_keywords:
 - VsCodeWindowManager object
 - views [Visual Studio SDK], VSCodeWindowManager object
 ms.assetid: e313add5-afdb-4d8d-abd1-764e1fc10c44
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3fa291eace866dd7c65aaa8263f036dbe388a475
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c67fb719c6ec87e7707a406e2e7f67cd71569b39
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62950935"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189039"
 ---
 # <a name="vscodewindowmanager-object"></a>Objeto VSCodeWindowManager
-O serviço de linguagem implementa o Gerenciador de janelas de código e é responsável por gerenciar adornos (por exemplo, a barra de menu suspenso). Para obter mais informações, consulte [Personalizando o Windows de código usando a API herdada](../extensibility/customizing-code-windows-by-using-the-legacy-api.md).
 
- A tabela a seguir mostra as interfaces no `VSCodeWindowManager` objeto.
+O serviço de linguagem implementa o Gerenciador de janelas de código e é responsável por gerenciar adornos (por exemplo, a barra suspensa). Para obter mais informações, consulte [Personalizando janelas de código usando a API herdada](/visualstudio/extensibility/customizing-code-windows-by-using-the-legacy-api?view=vs-2015).
+
+A tabela a seguir mostra as interfaces no objeto `VSCodeWindowManager`.
 
 |Interface|Descrição|
 |---------------|-----------------|
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager>|Permite que os adornos (como barras de menu suspenso) a ser adicionado ou removido de uma janela de código.|
-
-## <a name="see-also"></a>Consulte também
-- [Personalizando o windows de código usando a API herdada](../extensibility/customizing-code-windows-by-using-the-legacy-api.md)
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager>|Permite que adorners (como barras suspensas) sejam adicionados ou removidos de uma janela de código.|

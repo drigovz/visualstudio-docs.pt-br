@@ -1,8 +1,8 @@
 ---
 title: Importar ou exportar configurações de instalação
 titleSuffix: ''
-description: Saiba como usar o recurso de configuração de importação/exportação no Visual Studio
-ms.date: 04/19/2019
+description: Saiba como exportar sua configuração de instalação para um arquivo .vsconfig para compartilhar com outras pessoas e como importá-lo para clonar.
+ms.date: 05/18/2019
 ms.topic: conceptual
 f1_keywords:
 - vs.about
@@ -18,16 +18,16 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: facbbf5903d683ea3a13bdd875dfe2b6c63b6367
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8150aa3369eb385ebad865d261f9e8c2d71d7dbe
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62786351"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65849028"
 ---
 # <a name="import-or-export-installation-configurations"></a>Importar ou exportar configurações de instalação
 
-Você pode configurar o Visual Studio em sua organização usando um arquivo de configuração de instalação. Para fazer isso, basta exportar as informações de componente e da carga de trabalho para um arquivo .vsconfig usando o instalador do Visual Studio. Em seguida, você pode importar a configuração em instalações novas ou existentes.
+Você pode configurar o Visual Studio em sua organização usando arquivos de configuração de instalação. Para fazer isso, basta exportar as informações de componente e da carga de trabalho para um arquivo .vsconfig usando o instalador do Visual Studio. Em seguida, você pode importar a configuração em instalações novas ou existentes e compartilhá-la com outras pessoas.
 
 Veja como.
 
@@ -48,7 +48,7 @@ Você pode optar por exportar um arquivo de configuração de instalação de um
 
    ![Exportar configuração do cartão de produto no instalador do Visual Studio](../install/media/vs-2019/vs-installer-export-config.png)
 
-1. Procure ou digite o local no qual deseja salvar seu arquivo .vconfig e escolha **Revisar detalhes**.
+1. Procure ou digite o local no qual deseja salvar seu arquivo .vsconfig e, em seguida, escolha **Examinar detalhes**.
 
    ![Exportar a configuração do instalador do Visual Studio](../install/media/vs-2019/export-configuration-confirmation.png)
 
@@ -62,7 +62,7 @@ Quando estiver pronto para importar um arquivo de configuração de instalação
 
 1. No cartão do produto, escolha o botão **Mais** e selecione **Importar configuração**.
 
-1. Localize o arquivo .vconfig que deseja importar e escolha **Revisar detalhes**.
+1. Localize o arquivo .vsconfig que você deseja importar e, em seguida, escolha **Examinar detalhes**.
 
 1. Verifique se você tem as cargas de trabalho e os componentes que deseja e escolha **Fechar**.
 

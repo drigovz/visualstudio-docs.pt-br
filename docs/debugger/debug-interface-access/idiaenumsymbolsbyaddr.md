@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 96ed66156fae24e22c549fffb6eb982a45e7e3f5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7d8cddaa39635be534e2247b48a370ed88b29ab4
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62830364"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743820"
 ---
 # <a name="idiaenumsymbolsbyaddr"></a>IDiaEnumSymbolsByAddr
-Enumera os vários símbolos contidos na fonte de dados por endereço.
+Enumera por endereço os vários símbolos contidos na fonte de dados.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -28,26 +28,26 @@ Enumera os vários símbolos contidos na fonte de dados por endereço.
 IDiaEnumSymbolsByAddr : IUnknown
 ```
 
-## <a name="methods-in-vtable-order"></a>Métodos na ordem de Vtable
+## <a name="methods-in-vtable-order"></a>Métodos em ordem vtable
 A tabela a seguir mostra os métodos de `IDiaEnumSymbolsByAddr`.
 
 |Método|Descrição|
 |------------|-----------------|
-|[IDiaEnumSymbolsByAddr::symbolByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr-symbolbyaddr.md)|Posiciona o enumerador ao executar uma pesquisa pela seção e deslocamento.|
-|[IDiaEnumSymbolsByAddr::symbolByRVA](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr-symbolbyrva.md)|Posiciona o enumerador ao executar uma pesquisa por endereço virtual relativo (RVA).|
-|[IDiaEnumSymbolsByAddr::symbolByVA](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr-symbolbyva.md)|Posiciona o enumerador ao executar uma pesquisa por endereço virtual (VA).|
-|[IDiaEnumSymbolsByAddr::Next](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr-next.md)|Recupera os símbolos Avançar na ordem pelo endereço. Atualiza a posição de enumerador pelo número de elementos buscada.|
-|[IDiaEnumSymbolsByAddr::Prev](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr-prev.md)|Recupera os símbolos anteriores na ordem pelo endereço. Atualiza a posição de enumerador pelo número de elementos buscada.|
+|[IDiaEnumSymbolsByAddr::symbolByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr-symbolbyaddr.md)|Posiciona o enumerador executando uma pesquisa por seção e deslocamento.|
+|[IDiaEnumSymbolsByAddr::symbolByRVA](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr-symbolbyrva.md)|Posiciona o enumerador executando uma pesquisa pelo endereço virtual relativo (RVA).|
+|[IDiaEnumSymbolsByAddr::symbolByVA](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr-symbolbyva.md)|Posiciona o enumerador executando uma pesquisa por endereço virtual (VA).|
+|[IDiaEnumSymbolsByAddr::Next](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr-next.md)|Recupera os próximos símbolos no endereço de ordenação. Atualiza a posição do enumerador por número de elementos buscados.|
+|[IDiaEnumSymbolsByAddr::Prev](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr-prev.md)|Recupera os símbolos anteriores no endereço de ordenação. Atualiza a posição do enumerador por número de elementos buscados.|
 |[IDiaEnumSymbolsByAddr::Clone](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr-clone.md)|Faz uma cópia de um objeto.|
 
 ## <a name="remarks"></a>Comentários
-Essa interface fornece símbolos agrupados por endereço. Para trabalhar com símbolos agrupados por tipo, por exemplo `SymTagUDT` (tipo definido pelo usuário) ou `SymTagBaseClass`, use o [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md) interface.
+Essa interface fornece símbolos agrupados por endereço. Para trabalhar com símbolos agrupados por tipo, por exemplo `SymTagUDT` (tipo definido pelo usuário) ou `SymTagBaseClass`, use a interface [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md) .
 
 ## <a name="notes-for-callers"></a>Observações para chamadores
-Obtenha essa interface por meio da chamada a [idiasession:: Getsymbolsbyaddr](../../debugger/debug-interface-access/idiasession-getsymbolsbyaddr.md) método.
+Obtenha essa interface chamando o método [IDiaSession:: getSymbolsByAddr](../../debugger/debug-interface-access/idiasession-getsymbolsbyaddr.md) .
 
 ## <a name="example"></a>Exemplo
-Esta função exibe o nome e endereço de todos os símbolos, ordenados pelo endereço virtual relativo.
+Essa função exibe o nome e o endereço de todos os símbolos ordenados pelo endereço virtual relativo.
 
 ```C++
 void ShowSymbolsByAddress(IDiaSession *pSession)
@@ -94,9 +94,9 @@ void ShowSymbolsByAddress(IDiaSession *pSession)
 ```
 
 ## <a name="requirements"></a>Requisitos
-Cabeçalho: Dia2.h
+Cabeçalho: dia2. h
 
-Biblioteca: diaguids.lib
+Biblioteca: diaguids. lib
 
 DLL: msdia80.dll
 

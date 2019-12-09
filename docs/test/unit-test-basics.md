@@ -1,20 +1,20 @@
 ---
-title: Noções básicas de teste de unidade
-ms.date: 01/07/2016
+title: Conceitos básicos sobre o teste de unidade
+ms.date: 08/07/2019
 ms.topic: conceptual
 f1_keywords:
 - vs.UnitTest.CreateUnitTest
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a464103d38a9ba0d2215f53a593809b6136aa3d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 25e594136fe79d38268999099231791364d1082a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62990292"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72659887"
 ---
 # <a name="unit-test-basics"></a>Noções básicas de teste de unidade
 
@@ -30,7 +30,7 @@ O Gerenciador de Testes também pode executar estruturas de teste de unidade de 
 
 Para obter uma introdução ao teste de unidade que leva você diretamente para a parte de codificação, confira um destes tópicos:
 
-- [Passo a passo: Criar e executar testes de unidade para código gerenciado](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)
+- [Passo a passo: criar e executar testes de unidade para código gerenciado](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)
 
 - [Início Rápido: Desenvolvimento orientado por testes com o Gerenciador de Testes](../test/quick-start-test-driven-development-with-test-explorer.md)
 
@@ -40,7 +40,12 @@ Para obter uma introdução ao teste de unidade que leva você diretamente para 
 
 Neste artigo, usamos o desenvolvimento de um aplicativo fictício chamado `MyBank` como exemplo. Você não precisa do código real para seguir as explicações neste tópico. Os métodos de teste são gravados em C# e apresentados usando o Microsoft Unit Testing Framework para Código Gerenciado. No entanto, os conceitos podem ser facilmente transferidos para outros idiomas e estruturas.
 
+::: moniker range="vs-2017"
 ![Solução MyBank](../test/media/ute_mybanksolution.png)
+::: moniker-end
+::: moniker range=">=vs-2019"
+![Solução MyBank 2019](../test/media/vs-2019/basics-mybank-solution.png)
+::: moniker-end
 
 Nossa primeira tentativa de um projeto para o aplicativo `MyBank` inclui um componente de contas, que representa uma conta individual e suas transações com o banco, e um componente de banco de dados, que representa a funcionalidade de agregação e gerenciamento das contas individuais.
 
@@ -69,7 +74,7 @@ public void Withdraw(double amount)
     }
     else
     {
-        throw new ArgumentException(amount, "Withdrawal exceeds balance!")
+        throw new ArgumentException(nameof(amount), "Withdrawal exceeds balance!");
     }
 }
 ```
@@ -78,24 +83,34 @@ Agora que temos alguns códigos, é hora de testar.
 
 ## <a name="create-unit-test-projects-and-test-methods"></a>Criar projetos de teste de unidade e métodos de teste
 
-Geralmente é mais rápido gerar o projeto de teste de unidade e os stubs de teste de unidade no seu código. Ou você pode optar por criar o projeto de teste de unidade e os testes manualmente, dependendo dos seus requisitos. Se você quiser criar testes de unidade com uma estrutura de terceiros, você precisará ter uma das seguintes extensões instalada: [NUnit](https://marketplace.visualstudio.com/items?itemName=NUnitDevelopers.TestGeneratorNUnitextension-18371) ou [xUnit](https://marketplace.visualstudio.com/items?itemName=YowkoTsai.xUnitnetTestGenerator).
+Geralmente é mais rápido gerar o projeto de teste de unidade e os stubs de teste de unidade no seu código. Ou você pode optar por criar o projeto de teste de unidade e os testes manualmente, dependendo dos seus requisitos. Se você quiser criar testes de unidade com uma estrutura de terceiros, precisará de uma dessas extensões instaladas: [NUnit](https://marketplace.visualstudio.com/items?itemName=NUnitDevelopers.TestGeneratorNUnitextension-18371) ou [xUnit](https://marketplace.visualstudio.com/items?itemName=YowkoTsai.xUnitnetTestGenerator).
 
 ### <a name="generate-unit-test-project-and-unit-test-stubs"></a>Gerar o projeto de teste de unidade e os stubs de teste de unidade
 
 1. Na janela do editor de código, clique com o botão direito do mouse e escolha [**Criar Testes de Unidade**](create-unit-tests-menu.md) no menu do clique com o botão direito.
 
+   ::: moniker range="vs-2017"
    ![Na janela do editor, exiba o menu de contexto](../test/media/createunittestsrightclick.png)
+   ::: moniker-end
+   ::: moniker range=">=vs-2019"
+   ![Na janela do editor, exiba o menu de contexto](../test/media/vs-2019/basics-create-unit-tests.png)
+   ::: moniker-end
 
    > [!NOTE]
    > O comando de menu **Criar Testes de Unidade** está disponível somente para código gerenciado direcionado ao .NET Framework (mas não ao .NET Core).
 
 2. Clique em **OK** para aceitar os padrões e criar os testes de unidade ou altere os valores usados para criar e nomear o projeto de teste de unidade e os testes de unidade. Você pode selecionar o código que é adicionado por padrão aos métodos de teste de unidade.
 
-    ![Caixa de diálogo Criar Testes de Unidade no Visual Studio](../test/media/create-unit-tests.png)
+   ![Caixa de diálogo Criar Testes de Unidade no Visual Studio](../test/media/create-unit-tests.png)
 
 3. Os stubs de teste de unidade são criados em um novo projeto de teste de unidade para todos os métodos na classe.
 
-    ![Os testes de unidade são criados](../test/media/createunittestsstubs.png)
+   ::: moniker range="vs-2017"
+   ![Os testes de unidade são criados](../test/media/createunittestsstubs.png)
+   ::: moniker-end
+   ::: moniker range=">=vs-2019"
+   ![Os testes de unidade são criados](../test/media/vs-2019/basics-test-stub.png)
+   ::: moniker-end
 
 4. Agora, avance para saber como [adicionar código aos métodos de teste de unidade](#write-your-tests) a fim de fazer o teste de unidade ser relevante ou outros testes de unidade extra que você queira adicionar para testar seu código.
 
@@ -165,26 +180,24 @@ public void Withdraw_ValidAmount_ChangesBalance()
     double withdrawal = 1.0;
     double expected = 9.0;
     var account = new CheckingAccount("JohnDoe", currentBalance);
+
     // act
     account.Withdraw(withdrawal);
-    double actual = account.Balance;
+
     // assert
-    Assert.AreEqual(expected, actual);
+    Assert.AreEqual(expected, account.Balance);
 }
 
 [TestMethod]
-[ExpectedException(typeof(ArgumentException))]
 public void Withdraw_AmountMoreThanBalance_Throws()
 {
     // arrange
     var account = new CheckingAccount("John Doe", 10.0);
-    // act
-    account.Withdraw(20.0);
-    // assert is handled by the ExpectedException
+
+    // act and assert
+    Assert.ThrowsException<System.ArgumentException>(() => account.Withdraw(20.0));
 }
 ```
-
-Observe que `Withdraw_ValidAmount_ChangesBalance` usa uma instrução `Assert` explícita para determinar se o método de teste é aprovado ou reprovado, ao passo que `Withdraw_AmountMoreThanBalance_Throws` usa o atributo `ExpectedException` para determinar o êxito do método de teste. Nos bastidores, uma estrutura de teste de unidade encapsula os métodos de teste em instruções try/catch. Na maioria dos casos, se uma exceção é detectada, o método de teste falha e a exceção é ignorada. O atributo `ExpectedException` faz com que o método de teste seja aprovado se a exceção for gerada.
 
 Para saber mais sobre as estruturas de testes de unidade da Microsoft, confira um dos seguintes tópicos:
 
@@ -196,7 +209,7 @@ Para saber mais sobre as estruturas de testes de unidade da Microsoft, confira u
 
 ## <a name="set-timeouts-for-unit-tests"></a>Definir tempos limite para testes de unidade
 
-Para definir um tempo limite em um método de teste individual:
+Se estiver usando a estrutura do MSTest, use o <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TimeoutAttribute> para definir um tempo limite em um método de teste individual:
 
 ```csharp
 [TestMethod]
@@ -220,9 +233,14 @@ public void My_Test ()
 
 Quando você cria o projeto de teste, os testes são exibidos no **Gerenciador de Testes**. Se o **Gerenciador de Testes** não estiver visível, escolha **Teste** no menu do Visual Studio, **Windows** e, em seguida, **Gerenciador de Testes**.
 
+::: moniker range="vs-2017"
 ![Gerenciador de Testes de Unidade](../test/media/ute_failedpassednotrunsummary.png)
+::: moniker-end
+::: moniker range=">=vs-2019"
+![Gerenciador de Testes de Unidade](../test/media/vs-2019/basics-test-explorer.png)
+::: moniker-end
 
-Conforme você executa, escreve e executa novamente os testes, a exibição padrão do **Gerenciador de Testes** mostra os resultados em grupos de **Testes Reprovados**, **Testes Aprovados**, **Testes Ignorados** e **Testes Não Executados**. Escolha um cabeçalho de grupo para abrir a exibição que mostra todos os testes do grupo.
+Conforme você executa, grava e executa novamente os testes, o **Gerenciador de Testes** pode exibir os resultados nos grupos **Testes com Falha**, **Testes Aprovados**, **Testes Ignorados** e **Testes Não Executados**. Você pode escolher diferentes opções de agrupamento na barra de ferramentas.
 
 Você também pode filtrar os testes em qualquer modo de exibição correspondendo o texto na caixa de pesquisa em nível global ou selecionando um dos filtros predefinidos. Você pode executar uma seleção de testes a qualquer momento. Os resultados de uma execução de teste aparecem imediatamente na barra de aprovação/reprovação na parte superior da janela do Gerenciador. Os detalhes do resultado de um método de teste são exibidos quando você seleciona o teste.
 
@@ -230,36 +248,66 @@ Você também pode filtrar os testes em qualquer modo de exibição corresponden
 
 A barra de ferramentas do **Gerenciador de Testes** ajuda você a descobrir, organizar e executar os testes desejados.
 
+::: moniker range="vs-2017"
 ![Executar testes na barra de ferramentas do Gerenciador de Testes](../test/media/ute_toolbar.png)
+::: moniker-end
+::: moniker range=">=vs-2019"
+![Executar testes na barra de ferramentas do Gerenciador de Testes](../test/media/vs-2019/test-explorer-toolbar-diagram-16-2.png)
+::: moniker-end
 
-Você pode escolher **Executar Tudo** para executar todos os testes ou **Executar** para escolher um subconjunto de testes a serem executados. Depois que você executa um conjunto de testes, um resumo da execução de teste é exibido na parte inferior da janela **Gerenciador de Testes**. Selecione um teste para exibir seus detalhes no painel inferior. Escolha **Abrir Teste** no menu do clique com o botão direito (teclado: **F12**) para exibir o código-fonte do teste selecionado.
+Você pode escolher **Executar Tudo** para executar todos os testes ou **Executar** para escolher um subconjunto de testes a serem executados. Selecione um teste para exibir os detalhes no painel de detalhes do teste. Escolha **abrir teste** no menu do botão direito do mouse (teclado: **F12**) para exibir o código-fonte do teste selecionado.
+
+::: moniker range="vs-2017"
 
 Se os testes individuais não tiverem dependências que os impeçam de serem executados em qualquer ordem, ative a execução de teste em paralelo com o ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) botão de alternância na barra de ferramentas. Isso pode reduzir consideravelmente o tempo necessário para executar todos os testes.
 
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Se os testes individuais não tiverem dependências que os impeçam de serem executados em qualquer ordem, ative a execução de teste em paralelo no menu de configurações da barra de ferramentas. Isso pode reduzir consideravelmente o tempo necessário para executar todos os testes.
+
+::: moniker-end
+
 ### <a name="run-tests-after-every-build"></a>Executar testes depois de cada compilação
 
-> [!WARNING]
-> A execução de testes de unidade após cada compilação só tem suporte no Visual Studio Enterprise.
+::: moniker range="vs-2017"
 
 |Botão|Descrição|
 |-|-|
-|![Executar após o build](../test/media/ute_runafterbuild_btn.png)|Para executar os testes de unidade após cada build local, escolha **Teste** no menu padrão e **Executar Testes após Build** na barra de ferramentas do **Gerenciador de Testes**.|
+|![Executar após o build](../test/media/ute_runafterbuild_btn.png)|Para executar os testes de unidade após cada build local, escolha **Teste** no menu padrão e, em seguida, **Executar Testes após Build** na barra de ferramentas do **Gerenciador de Testes**.|
+
+> [!NOTE]
+> Executar testes de unidade após cada build requer o Visual Studio 2017 edição Enterprise ou o Visual Studio 2019. No Visual Studio 2019, o recurso está disponível nas edições Community e Professional, além da edição Enterprise.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Para executar os testes de unidade após cada build local, abra o ícone de configurações na barra de ferramentas do Gerenciador de Testes e selecione **Executar Testes após Build**.
+
+::: moniker-end
 
 ### <a name="filter-and-group-the-test-list"></a>Filtrar e agrupar a lista de teste
 
-Quando você tiver um grande número de testes, digite **Gerenciador de Testes** na caixa de pesquisa para filtrar a lista pela cadeia de caracteres especificada. Você pode restringir seu evento de filtro ainda mais escolhendo na lista de filtros.
+Quando houver um grande número de testes, você poderá digitar na caixa de pesquisa do **Gerenciador de Testes** para filtrar a lista por uma cadeia de caracteres especificada. Você pode restringir seu evento de filtro ainda mais escolhendo na lista de filtros.
 
+::: moniker range="vs-2017"
 ![Pesquisar categorias de filtro](../test/media/ute_searchfilter.png)
+::: moniker-end
+::: moniker range=">=vs-2019"
+![Pesquisar categorias de filtro](../test/media/vs-2019/test-explorer-search-filter-16-2.png)
+::: moniker-end
 
 |Botão|Descrição|
 |-|-|
 |![Botão de grupo do Gerenciador de Testes](../test/media/ute_groupby_btn.png)|Para agrupar testes por categoria, escolha o botão **Agrupar por**.|
 
-Para obter mais informações, consulte [Executar testes de unidade com o Gerenciador de Testes](../test/run-unit-tests-with-test-explorer.md)
+Para obter mais informações, consulte [Executar testes de unidade com o Gerenciador de Testes](../test/run-unit-tests-with-test-explorer.md).
 
 ## <a name="qa"></a>PERGUNTAS E RESPOSTAS
 
-**P: Como fazer para depurar testes de unidade?**
+**P: como posso depurar testes de unidade?**
 
 **R:** Use o **Gerenciador de Testes** para iniciar uma sessão de depuração para os testes. Passar pelo código com o depurador do Visual Studio permite-lhe navegar facilmente entre os testes de unidade e o projeto sendo testado. Para iniciar a depuração:
 
@@ -272,13 +320,18 @@ Para obter mais informações, consulte [Executar testes de unidade com o Gerenc
 
 Obter mais detalhes sobre [como depurar testes de unidade](../debugger/debugger-feature-tour.md).
 
-**P: Se eu estiver usando o TDD, como fazer para gerar o código em meus testes?**
+**P: se estou usando TDD, como faço para gerar código de meus testes?**
 
-**R:** Use o IntelliSense para gerar classes e métodos no código do projeto. Escreva uma instrução em um método de teste que chama a classe ou o método que você deseja gerar e abra o menu do IntelliSense na chamada. Se a chamada é um construtor da nova classe, escolha **Gerar novo tipo** no menu e siga o assistente para inserir a classe em seu projeto de código. Se a chamada é para um método, escolha **Gerar novo método** no menu IntelliSense.
+**R:** Use ações rápidas para gerar classes e métodos no código do projeto. Grave uma instrução em um método de teste que chame a classe ou o método que você deseja gerar e abra o menu de lâmpada exibido abaixo do erro. Se a chamada for a um construtor da nova classe, escolha **Gerar tipo** no menu e siga o assistente para inserir a classe em seu projeto de código. Se a chamada for a um método, escolha **Gerar método** no menu IntelliSense.
 
-![Gerar o menu do IntelliSense de stub do método](../test/media/ute_generatemethodstubintellisense.png)
+::: moniker range="vs-2017"
+![Gerar menu de ação rápida do stub do método](../test/media/ute_generatemethodstubintellisense.png)
+::: moniker-end
+::: moniker range=">=vs-2019"
+![Gerar menu de ação rápida do stub do método](../test/media/vs-2019/basics-generate-method-tdd.png)
+::: moniker-end
 
-**P: Posso criar testes de unidade que usam vários conjuntos de dados como entrada para executar o teste?**
+**P: posso criar testes de unidade que usam vários conjuntos de dados como entrada para executar o teste?**
 
 **R:** Sim. Os *métodos de teste voltados para dados* permitem que você teste um intervalo de valores com um método de teste de unidade. Use um atributo `DataSource` para o método de teste que especifica a fonte de dados e a tabela que contém os valores de variáveis que você deseja testar.  No corpo do método, atribua os valores de linha às variáveis usando o indexador `TestContext.DataRow[`*ColumnName*`]`.
 
@@ -310,13 +363,13 @@ O método atribuído é executado uma vez para cada linha na tabela. O **Gerenci
 
 Saiba mais sobre [testes de unidade voltados para dados](../test/how-to-create-a-data-driven-unit-test.md).
 
-**P: Posso exibir a quantidade de código que foi testada pelos meus testes de unidade?**
+**P: posso exibir quanto do meu código é testado pelos meus testes de unidade?**
 
-**R:** Sim. Você pode determinar a quantidade de código que realmente está sendo testada por seus testes de unidade usando a ferramenta de cobertura de código do Visual Studio. Há suporte para idiomas nativos e gerenciados e todas as estruturas de teste de unidade que podem ser executadas pela estrutura de teste de unidade.
+**R:** Sim. Você pode determinar a quantidade de código que realmente está sendo testada por seus testes de unidade usando a ferramenta de cobertura de código do Visual Studio no Visual Studio Enterprise. Há suporte para idiomas nativos e gerenciados e todas as estruturas de teste de unidade que podem ser executadas pela estrutura de teste de unidade.
 
 Você pode executar a cobertura de código em testes selecionados ou em todos os testes em uma solução. A janela **Resultados da Cobertura de Código** exibe o percentual dos blocos de código de produto que foram exercidos por linha, função, classe, namespace e módulo.
 
-Para executar a cobertura de código para métodos de teste em uma solução, escolha **Testes** no menu do Visual Studio e escolha **Analisar cobertura de código**.
+Para executar a cobertura de código para métodos de teste em uma solução, escolha **testar**  > **analisar cobertura de código para todos os testes**.
 
 Os resultados da cobertura são exibidos na janela **Resultados da Cobertura de Código**.
 
@@ -324,7 +377,7 @@ Os resultados da cobertura são exibidos na janela **Resultados da Cobertura de 
 
 Saiba mais sobre [cobertura de código](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md).
 
-**P: Posso testar métodos em meu código que têm dependências externas?**
+**P: posso testar métodos no meu código que possuem dependências externas?**
 
 **R:** Sim. Se você tiver o Visual Studio Enterprise, o Microsoft Fakes pode ser usado com método de teste que você escrever usando estruturas de teste de unidade para código gerenciado.
 
@@ -338,7 +391,7 @@ Em ambas as abordagens, você pode usar os representantes de chamadas gerados pa
 
 Saiba mais sobre [como isolar métodos de teste de unidade com o Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md).
 
-**P: Posso usar outras estruturas de teste de unidade para criar testes de unidade?**
+**P: posso usar outras estruturas de teste de unidade para criar testes de unidade?**
 
 **R:** Sim, siga estas etapas para [encontrar e instalar outras estruturas](../test/install-third-party-unit-test-frameworks.md). Depois de reiniciar o Visual Studio, reabra a solução para criar testes de unidade e selecione suas estruturas instaladas aqui:
 

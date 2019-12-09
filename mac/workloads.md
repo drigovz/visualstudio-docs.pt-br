@@ -1,16 +1,17 @@
 ---
 title: Cargas de trabalho do Visual Studio para Mac
 description: Este artigo descreve as diversas cargas de trabalho que podem ser usadas no Visual Studio para Mac, incluindo aplicativos móveis do Xamarin, o ASP.NET Core e o Unity para jogos.
-author: conceptdev
-ms.author: crdun
-ms.date: 04/02/2019
+ms.topic: overview
+author: therealjohn
+ms.author: johmil
+ms.date: 06/18/2019
 ms.assetid: DDC39599-8C5D-4CB9-8DA5-229E085384CA
-ms.openlocfilehash: 609f96f959b59184016093cdf2ba7a69bc6c0292
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: b4c5b460670a438b1aeaeb11cd8ae540b39cf9b7
+ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62809364"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73714414"
 ---
 # <a name="visual-studio-for-mac-workloads"></a>Cargas de trabalho do Visual Studio para Mac
 
@@ -30,7 +31,7 @@ Para obter informações sobre como usar o Xamarin no Visual Studio para Mac, co
 
 ## <a name="mac-desktop-applications"></a>Aplicativos Mac de área de trabalho
 
-Você pode criar aplicativos Mac com [Xamarin.Mac](https://docs.microsoft.com/xamarin/mac/) usando a estrutura de interface do usuário do Cocoa e [Xamarin.Forms no Mac](https://docs.microsoft.com/xamarin/xamarin-forms/platform/other/mac) para criar aplicativos que compartilham o código e a interface do usuário com outras plataformas.
+Você pode criar aplicativos Mac com [Xamarin.Mac](/xamarin/mac/) usando a estrutura de interface do usuário do Cocoa e [Xamarin.Forms no Mac](/xamarin/xamarin-forms/platform/other/mac) para criar aplicativos que compartilham o código e a interface do usuário com outras plataformas.
 
 ## <a name="net-core-applications"></a>Aplicativos .NET Core
 

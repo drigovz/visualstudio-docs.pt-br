@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEngine2::DestroyProgram
 ms.assetid: 0c9e2698-c70f-4770-a7bb-39650e9c3a1f
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f626005621604d367f5878e36899aa2ff46114ee
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: c20459329eeb9e61447c707ef6c95adf01945e5d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62875230"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66330083"
 ---
 # <a name="idebugengine2destroyprogram"></a>IDebugEngine2::DestroyProgram
 Informa um mecanismo de depuração (DES) que o programa especificado foi encerrado atypically e que o DE deve limpar todas as referências para o programa e enviar um programa destruir o evento.
@@ -36,10 +39,9 @@ int DestroyProgram( 
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `pProgram`
-
- [in] Uma [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) objeto que representa o programa que atypically foi encerrado.
+## <a name="parameters"></a>Parâmetros
+`pProgram`\
+[in] Uma [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) objeto que representa o programa que atypically foi encerrado.
 
 ## <a name="return-value"></a>Valor de retorno
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.

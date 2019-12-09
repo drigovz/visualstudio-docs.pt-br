@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ef151b369c18863b8a87944cdbf69fed9aeb0840
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c2d754c144ad876890b89ea217bf0ac55ad60b24
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62833383"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743930"
 ---
 # <a name="idiaenumsymbolsnext"></a>IDiaEnumSymbols::Next
 Recupera um número especificado de símbolos na sequência de enumeração.
@@ -35,18 +35,18 @@ HRESULT Next ( 
 #### <a name="parameters"></a>Parâmetros
  celt
 
-[in] O número de símbolos no enumerador a ser recuperado.
+no O número de símbolos no enumerador a ser recuperado.
 
  rgelt
 
-[out] Uma matriz que deve ser preenchido com o [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) objetos que representam os símbolos desejados.
+fora Uma matriz que deve ser preenchida com os objetos [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) que representam os símbolos desejados.
 
  pceltFetched
 
-[out] Retorna o número de símbolos no enumerador buscado.
+fora Retorna o número de símbolos no enumerador obtido.
 
-## <a name="return-value"></a>Valor de retorno
- Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não houver nenhum símbolo de mais. Caso contrário, retornará um código de erro.
+## <a name="return-value"></a>Valor retornado
+ Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não houver mais símbolos. Caso contrário, retornará um código de erro.
 
 ## <a name="example"></a>Exemplo
 

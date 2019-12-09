@@ -1,63 +1,63 @@
 ---
-title: 'Como: Impor um código de fácil manutenção com uma política de check-in de análise de código'
+title: Usar uma política de check-in de análise de código
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - code analysis, check-in policies
 ms.assetid: d1b3b04f-4dd9-40e6-b2d4-b414d33fb647
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7139c952b40957a564fcd4074b1c931817dfb851
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1b5a165d2f0f3c17a91775d2d37eadf32307d248
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62815807"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72649419"
 ---
-# <a name="how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy"></a>Como: Impor um código com uma política de check-in do análise código
+# <a name="how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy"></a>Como impor código passível de manutenção com uma política de check-in de análise de código
 
-Os desenvolvedores podem usar a ferramenta de avaliação de código para medir a complexidade e facilidade de manutenção de seu código, mas você não pode invocar as métricas de código como parte de uma política de check-in. No entanto, você pode habilitar as regras de análise de código que verificam a conformidade do seu código com os padrões de métricas de código e impor as regras por meio de políticas de check-in. Para obter mais informações sobre as métricas de código, consulte [valores de métricas de código](../code-quality/code-metrics-values.md).
+Os desenvolvedores podem usar a ferramenta de métricas de código para medir a complexidade e a manutenção de seu código, mas você não pode invocar as métricas de código como parte de uma política de check-in. No entanto, você pode habilitar regras de análise de código que verificam a conformidade do seu código com padrões de métricas de código e impõem as regras por meio de políticas de check-in. Para obter mais informações sobre métricas de código, consulte [valores de métricas de código](../code-quality/code-metrics-values.md).
 
-Você pode habilitar a profundidade de herança, acoplamento de classe, o índice de facilidade de manutenção e regras de complexidade para impor um código por meio de uma política de check-in de análise de código. Todos os quatro dessas regras são encontrados na categoria "Regras de facilidade de manutenção" no editor de política de análise de código.
+Você pode habilitar a profundidade de herança, acoplamento de classes, índice de manutenção e regras de complexidade para impor o código passível de manutenção por meio de uma política de check-in de análise de código. Todas as quatro regras são encontradas na categoria "regras de manutenção" no editor de política de análise de código.
 
-Os administradores de controle de versão do Team Foundation podem adicionar as regras de facilidade de manutenção de análise de código para os requisitos de política de check-in. Eles check-in políticas exigem que os desenvolvedores executar a análise de código de acordo com essas alterações de regra antes de iniciar um check-in.
+Os administradores do controle de versão do Team Foundation podem adicionar as regras de manutenção da análise de código aos requisitos da política de check-in. Essas políticas de check-in exigem que os desenvolvedores executem a análise de código com base nessas alterações de regra antes de iniciar um check-in.
 
-## <a name="to-open-the-code-analysis-policy-editor"></a>Para abrir o editor de política de análise de código
+## <a name="to-open-the-code-analysis-policy-editor"></a>Para abrir o editor de políticas de análise de código
 
-1. Na **Team Explorer**, clique com botão direito no projeto, clique em **configurações do projeto**e, em seguida, clique em **controle de origem**.
+1. Em **Team Explorer**, clique com o botão direito do mouse no projeto, clique em **configurações do projeto**e clique em **controle do código-fonte**.
 
-     O **controle de origem** caixa de diálogo é exibida.
+     A caixa de diálogo **controle do código-fonte** é exibida.
 
-2. Sobre o **política de Check-in** guia e, em seguida, clique em **Add**.
+2. Na guia **política de check-in** e clique em **Adicionar**.
 
-     O **adicionar política de Check-in** caixa de diálogo é exibida.
+     A caixa de diálogo **Adicionar política de check-in** é exibida.
 
-3. No **política de Check-in** lista, selecione o **análise de código** caixa de seleção e, em seguida, clique em **Okey**.
+3. Na lista **política de check-in** , marque a caixa de seleção **análise de código** e clique em **OK**.
 
-     O **Editor de política de análise de código** caixa de diálogo é exibida.
+     A caixa de diálogo **Editor de políticas de análise de código** é exibida.
 
-## <a name="to-enable-code-analysis-maintainability-rules"></a>Para habilitar regras de facilidade de manutenção de análise de código
+## <a name="to-enable-code-analysis-maintainability-rules"></a>Para habilitar regras de manutenção da análise de código
 
-1. No **Editor de política de análise de código** caixa de diálogo **configurações de regra**, expanda o **regras de facilidade de manutenção** nó.
+1. Na caixa de diálogo **Editor de políticas de análise de código** , em configurações de **regra**, expanda o nó **regras de manutenção** .
 
 2. Marque as caixas de seleção para as seguintes regras:
 
-   - Profundidade de herança: **CA1501 AvoidExcessiveInheritance** -limite: Aviso em mais de 5 níveis de profundidade
+   - Profundidade de herança: **CA1501 AvoidExcessiveInheritance** -Threshold: aviso em mais de 5 níveis de profundidade
 
-   - Complexidade: **CA1502 AvoidExcessiveComplexity** -limite: Aviso em mais de 25
+   - Complexidade: **CA1502 AvoidExcessiveComplexity** -Threshold: aviso em mais de 25
 
-   - Índice de facilidade de manutenção: **CA1505 AvoidUnmaintainableCode** -limite: Aviso em menos de 20
+   - Índice de facilidade de manutenção: **CA1505 AvoidUnmaintainableCode** -Threshold: aviso em menos de 20
 
-   - Acoplamento de classes: **CA1506 AvoidExcessiveClassCoupling** -limite: Aviso em mais de 80 para uma classe e mais de 30 para um método
+   - Acoplamento de classe: **CA1506 AvoidExcessiveClassCoupling** -Threshold: aviso em mais de 80 para uma classe e mais de 30 para um método
 
-     Além disso, se você quiser uma violação de regra para impedir que uma compilação bem-sucedida, selecione a **tratar aviso como um erro** caixa de seleção ao lado da descrição da regra.
+     Além disso, se você quiser uma violação de regra para impedir uma compilação bem-sucedida, marque a caixa de seleção **tratar aviso como um erro** ao lado da descrição da regra.
 
-3. Clique em **OK**. A nova política de check-in agora se aplica ao check-ins futuras.
+3. Clique em **OK**. A nova política de check-in agora se aplica a check-ins futuros.
 
 ## <a name="see-also"></a>Consulte também
 
 - [Valores de métricas de código](../code-quality/code-metrics-values.md)
-- [Criando e usando políticas do check-in de análise de código](../code-quality/how-to-create-or-update-standard-code-analysis-check-in-policies.md)
+- [Criando e usando políticas de check-in de análise de código](../code-quality/how-to-create-or-update-standard-code-analysis-check-in-policies.md)

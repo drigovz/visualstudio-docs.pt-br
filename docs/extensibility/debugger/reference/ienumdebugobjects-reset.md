@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugObjects::Reset method
 ms.assetid: 4a245e47-cc39-4177-b83d-083ea0e3190f
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ebeef5502787ad5ab745d72e42205d86320a8f20
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: c5a9e8e08c19e7d4f2a8b47ad0124115743522a8
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62914461"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66339546"
 ---
 # <a name="ienumdebugobjectsreset"></a>IEnumDebugObjects::Reset
 Este método redefine a enumeração para o primeiro elemento.
@@ -32,7 +35,7 @@ HRESULT Reset(void);
 int Reset();
 ```
 
-#### <a name="parameters"></a>Parâmetros
+## <a name="parameters"></a>Parâmetros
  Nenhum
 
 ## <a name="return-value"></a>Valor de retorno

@@ -1,5 +1,5 @@
 ---
-title: 'Como: Analisar código JavaScript em páginas da Web | Microsoft Docs'
+title: Como analisar código JavaScript em páginas da Web | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,16 +9,17 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d8e4c2b8b5f557f9f7eff26972593c4f40146be
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 07c628b3c1f0be1c7ecc615dcae44f7736aa884e
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62539353"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74775300"
 ---
-# <a name="how-to-profile-javascript-code-in-web-pages"></a>Como: Criar perfil de código JavaScript em páginas da Web
+# <a name="how-to-profile-javascript-code-in-web-pages"></a>Como criar perfil de código JavaScript em páginas da Web
 
 As Ferramentas de Criação de Perfil do Visual Studio podem coletar dados de desempenho do código JavaScript que é executado em um aplicativo Web do [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], em uma página da Web arbitrária ou em um aplicativo JavaScript usando o método de criação de perfil por instrumentação. Exige o Internet Explorer 8 ou posterior.
 
@@ -53,7 +54,7 @@ Ao especificar criação de perfil JavaScript, o código JavaScript que é execu
 
 ### <a name="to-profile-javascript-in-individual-web-pages-or-a-javascript-applications"></a>Para criar o perfil do JavaScript em páginas da Web ou em aplicativos JavaScript individuais
 
-1. Abra o Visual Studio.
+1. {1&gt;Abra o Visual Studio.&lt;1}
 
 2. No menu **Analisar**, clique em **Iniciar o Assistente de Desempenho**.
 

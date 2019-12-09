@@ -1,5 +1,5 @@
 ---
-title: 'Passo a passo: Sincronizar um painel de tarefas personalizado com um botão da faixa de opções'
+title: Sincronizar o painel de tarefas personalizado com o botão da faixa de opções
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -23,12 +23,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fb74c56536a749629def4654f90206808e3b87e3
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: ad910f94c6b6a4345f6973e84e02c85d4fe1f0e4
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443974"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67328332"
 ---
 # <a name="walkthrough-synchronize-a-custom-task-pane-with-a-ribbon-button"></a>Passo a passo: Sincronizar um painel de tarefas personalizado com um botão da faixa de opções
   Este passo a passo demonstra como criar um painel de tarefas personalizado que os usuários podem ocultar ou exibir clicando em um botão de alternância na faixa de opções. Você sempre deve criar um elemento de interface do usuário do usuário, como um botão, o que os usuários podem clicar para exibir ou ocultar o painel de tarefas, porque os aplicativos do Microsoft Office não fornecem uma maneira padrão para os usuários mostrar ou ocultar painéis de tarefas personalizados.
@@ -71,7 +71,7 @@ ms.locfileid: "63443974"
 
 1. No menu **Projeto**, clique em **Adicionar Novo Item**.
 
-2. No **Adicionar Novo Item** caixa de diálogo, selecione **faixa de opções (Visual Designer)**.
+2. No **Adicionar Novo Item** caixa de diálogo, selecione **faixa de opções (Visual Designer)** .
 
 3. Altere o nome da nova faixa de opções para **ManageTaskPaneRibbon**e clique em **Add**.
 

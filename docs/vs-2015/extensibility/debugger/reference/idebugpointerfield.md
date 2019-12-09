@@ -12,12 +12,12 @@ ms.assetid: d51bd5b2-f18e-4e27-b4fb-e6f652fbf635
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 2c22d2570311885a3717190c871f0cca2d90756b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 9d92b1b4d6efda1b8f05c594368a05bd833c9f34
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58924834"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705822"
 ---
 # <a name="idebugpointerfield"></a>IDebugPointerField
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ IDebugPointerField : IDebugContainerField
  O provedor de símbolo implementa essa interface para representar um ponteiro.  
   
 ## <a name="notes-for-callers"></a>Observações para chamadores  
- Use [QueryInterface](http://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) para obter essa interface da [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) interface se [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) retorna `FIELD_TYPE_POINTER`.  
+ Use [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) para obter essa interface da [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) interface se [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) retorna `FIELD_TYPE_POINTER`.  
   
 ## <a name="methods-in-vtable-order"></a>Métodos na ordem de Vtable  
  Além dos métodos na `IDebugField` e `IDebugContainerField` interfaces, essa interface implementa o método a seguir:  

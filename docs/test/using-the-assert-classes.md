@@ -6,17 +6,17 @@ helpviewer_keywords:
 - Assert classes
 - Assert methods
 - unit tests, Assert classes
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: d9d02ee375a5b9e6069a94cd7b534b871792088a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+author: jillre
+ms.openlocfilehash: 41be3aaa4967e4c5f975b43f7d8fec982f04c9b9
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62961997"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72659728"
 ---
 # <a name="use-assert-classes-for-unit-testing"></a>Use as classes Assert para teste de unidade
 
@@ -45,7 +45,7 @@ A <xref:Microsoft.VisualStudio.TestTools.UnitTesting.AssertInconclusiveException
 
 Se você gravar uma nova classe de exceção assert, herde da classe base <xref:Microsoft.VisualStudio.TestTools.UnitTesting.UnitTestAssertException> para facilitar a identificação da exceção como uma falha de asserção em vez de uma exceção inesperada gerada pelo código de teste ou de produção.
 
-Decore um método de teste com o atributo <xref:Microsoft.VisualStudio.TestTools.UnitTesting.ExpectedExceptionAttribute> quando desejar que o método de teste verifique se uma exceção que você espera que seja gerada por um método no código do aplicativo, realmente é gerada.
+Para verificar se uma exceção que você espera que seja gerada por um método no código do aplicativo é realmente gerada, use o método <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.ThrowsException%2A?displayProperty=nameWithType>.
 
 ## <a name="see-also"></a>Consulte também
 

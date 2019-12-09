@@ -11,11 +11,11 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 8483068ae03c9a57fc67b528393e5d6830c3ec33
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58924960"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68180287"
 ---
 # <a name="legacy-interfaces-in-the-editor"></a>Interfaces herdadas no Editor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,9 +31,9 @@ Você pode acessar o editor do Visual Studio de interfaces herdadas. O SDK do Vi
 |[Dentro do editor principal](../extensibility/inside-the-core-editor.md)|Descreve os diferentes componentes de versões anteriores do editor.|  
 |[Criando uma instância do editor principal usando a API herdada](../extensibility/instantiating-the-core-editor-by-using-the-legacy-api.md)|Explica como usar a API herdada para instanciar o editor de núcleo.|  
 |[Fábricas de editor](../extensibility/editor-factories.md)|Explica como usar as fábricas de editor com a API herdada.|  
-|[Como: Tipos de arquivo do Editor de registro](../extensibility/how-to-register-editor-file-types.md)|Explica como vincular uma extensão de nome de arquivo para o seu editor.|  
-|[Passo a passo: Criar um Editor de núcleo e registrar um tipo de arquivo do Editor](../extensibility/walkthrough-creating-a-core-editor-and-registering-an-editor-file-type.md)|Explica como criar um núcleo de editor e vinculá-lo uma extensão de nome de arquivo.|  
-|[Como: Fornecer contexto para editores](../extensibility/how-to-provide-context-for-editors.md)|Explica como fornecer contexto para o seu editor.|  
+|[Como: registrar os tipos de arquivo do editor](../extensibility/how-to-register-editor-file-types.md)|Explica como vincular uma extensão de nome de arquivo para o seu editor.|  
+|[Passo a passo: criar um editor principal e registrar um tipo de arquivo do editor](../extensibility/walkthrough-creating-a-core-editor-and-registering-an-editor-file-type.md)|Explica como criar um núcleo de editor e vinculá-lo uma extensão de nome de arquivo.|  
+|[Como: fornecer contexto para editores](../extensibility/how-to-provide-context-for-editors.md)|Explica como fornecer contexto para o seu editor.|  
 |[Serviços de linguagem e o editor principal](../extensibility/language-services-and-the-core-editor.md)|Explica as interações entre um serviço de linguagem e um editor.|  
 |[Acessando o buffer de texto usando a API herdada](../extensibility/accessing-the-text-buffer-by-using-the-legacy-api.md)|Explica como acessar o buffer de texto usando a API herdada.|  
 |[Acessando a exibição de texto usando a API herdada](../extensibility/accessing-thetext-view-by-using-the-legacy-api.md)|Explica como acessar a exibição de texto usando a API herdada.|  
@@ -42,8 +42,8 @@ Você pode acessar o editor do Visual Studio de interfaces herdadas. O SDK do Vi
 |[Usando marcadores de texto com a API herdada](../extensibility/using-text-markers-with-the-legacy-api.md)|Explica como adicionar marcadores de texto usando a API herdada.|  
 |[Personalizando menus e controles do editor usando a API herdada](../extensibility/customizing-editor-controls-and-menus-by-using-the-legacy-api.md)|Explica como personalizar controles de editor usando a API herdada.|  
 |[Gerenciamento de desfazer e refazer, usando a API herdada](../extensibility/managing-undo-and-redo-by-using-the-legacy-api.md)|Explica como gerenciar desfazer e refazer, usando a API herdada.|  
-|[Como: Implementar o localizar e substituir o mecanismo](../extensibility/how-to-implement-the-find-and-replace-mechanism.md)|Explica como gerenciar a localizar e substituir, usando a API herdada.|  
-|[Como: Suprimir notificações de alteração de arquivo](../extensibility/how-to-suppress-file-change-notifications.md)|Explica como suprimir as notificações de alteração de arquivo usando a API herdada.|  
+|[Como: implementar o mecanismo de localizar e substituir](../extensibility/how-to-implement-the-find-and-replace-mechanism.md)|Explica como gerenciar a localizar e substituir, usando a API herdada.|  
+|[Como: suprimir notificações de alteração de arquivo](../extensibility/how-to-suppress-file-change-notifications.md)|Explica como suprimir as notificações de alteração de arquivo usando a API herdada.|  
 |[Criar designers e editores personalizados](../extensibility/creating-custom-editors-and-designers.md)|Explica como criar designers e editores personalizados.|  
 |[Desenvolver um serviço de linguagem herdado](../extensibility/internals/developing-a-legacy-language-service.md)|Fornece links para documentos sobre os recursos que fornecem recursos de personalização para o [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] editor de núcleo, adicionando suporte para um serviço de linguagem.|  
 |[Usando fontes e cores](../extensibility/using-fonts-and-colors.md)|Explica como usar fontes e cores com interfaces legadas.|

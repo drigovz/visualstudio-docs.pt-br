@@ -5,17 +5,17 @@ ms.topic: reference
 helpviewer_keywords:
 - vstest.console.exe
 - command-line tests
-ms.author: gewarren
-author: gewarren
+ms.author: jillfra
+author: jillre
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 95ed8806844781bdaab4d97d63cb1b7ef324dd7b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: e46cd6f3589e50959ee521552bb66878147cf604
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62976249"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72659708"
 ---
 # <a name="vstestconsoleexe-command-line-options"></a>Opções da linha de comando de VSTest.Console.exe
 
@@ -35,16 +35,16 @@ A tabela a seguir lista todas as opções para o *VSTest.Console.exe*, além de 
 |**[*nomes dos arquivos de teste*]**|Executa testes dos arquivos especificados. Separa vários nomes de arquivo de teste com espaços.<br />Exemplos: `mytestproject.dll`, `mytestproject.dll myothertestproject.exe`|
 |**/Settings:[*nome do arquivo*]**|Execute testes com configurações adicionais, como coletores de dados.<br />Exemplo: `/Settings:Local.RunSettings`|
 |**/Tests:[*nome do teste*]**|Executa testes com nomes que contêm os valores fornecidos. Para fornecer vários valores, separe-os por vírgulas.<br />Exemplo: `/Tests:TestMethod1,testMethod2`<br />A opção de linha de comando **/Tests** não pode ser usada com a opção de linha de comando **/TestCaseFilter**.|
-|**/Parallel**|Especifica que os testes sejam executados em paralelo. Por padrão, todos os núcleos disponíveis no computador podem ser usados. O número de núcleos a serem usados pode ser configurado usando um arquivo de configurações.|
+|**/Parallel**|Especifica que os testes sejam executados em paralelo. Por padrão, todos os núcleos disponíveis no computador podem ser usados. Você pode configurar o número de núcleos a serem usados em um arquivo de configurações.|
 |**/Enablecodecoverage**|Permite o adaptador de diagnóstico de dados CodeCoverage na execução de teste.<br />As configurações padrão serão usadas se não forem especificadas usando o arquivo de configurações.|
 |**/InIsolation**|Executa os testes em um processo isolado.<br />Esse isolamento torna o processo *vstest.console.exe* menos suscetível a ser interrompido acidentalmente nos testes. Entretanto, os testes podem ser executados mais lentamente.|
 |**/UseVsixExtensions**|Essa opção faz com que o processo *vstest.console.exe* use ou ignore as extensões VSIX instaladas (se houver) na execução de teste.<br />Essa opção foi preterida. A partir da próxima versão principal do Visual Studio, essa opção poderá ser removida. A migração para o consumo de extensões foi disponibilizada como um pacote NuGet.<br />Exemplo: `/UseVsixExtensions:true`|
 |**/TestAdapterPath:[*caminho*]**|Força o processo *vstest.console.exe* a usar adaptadores de teste personalizados de um caminho especificado (se houver) na execução de teste.<br />Exemplo: `/TestAdapterPath:[pathToCustomAdapters]`|
 |**/Platform:[*tipo de plataforma*]**|Arquitetura da plataforma de destino a ser usada para a execução de teste.<br />Os valores válidos são x86, x64 e ARM.|
-|**/Framework: [*versão do framework*]**|Versão do .NET Framework de destino a ser usada na execução de teste.<br />Os valores válidos são Framework35, Framework40, Framework45 e FrameworkUap10.<br />Se a estrutura de destino for especificada como **Framework35**, os testes serão executados no "modo de compatibilidade" do CLR 4.0.<br />Exemplo: `/Framework:framework40`|
+|**/Framework: [*versão do framework*]**|Versão do .NET de destino a ser usada na execução do teste.<br />Exemplos de valores são `Framework35`, `Framework40`, `Framework45`, `FrameworkUap10` e `.NETCoreApp,Version=v1.1`.<br />Se a estrutura de destino for especificada como **Framework35**, os testes serão executados no "modo de compatibilidade" do CLR 4.0.<br />Exemplo: `/Framework:framework40`|
 |**/TestCaseFilter:[*expressão*]**|Execute testes que correspondam à expressão fornecida.<br /><Expressão\> é do formato <propriedade\>=<valor\>[\|<Expressão\>].<br />Exemplo: `/TestCaseFilter:"Priority=1"`<br />Exemplo: `/TestCaseFilter:"TestCategory=Nightly|FullyQualifiedName=Namespace.ClassName.MethodName"`<br />A opção de linha de comando **/TestCaseFilter** não pode ser usada com a opção de linha de comando **/Tests**. <br />Para obter informações sobre como criar e usar expressões, confira [Filtro TestCase](https://github.com/Microsoft/vstest-docs/blob/master/docs/filter.md).|
 |**/?**|Exibe informações de uso.|
-|**/Logger:[*uri/nome_amigável*]**|Especificar um agente para resultados do teste.<br />Exemplo: Para registrar em log os resultados em um Arquivo de Resultados de Teste do Visual Studio (TRX), use **/Logger:trx**.<br />Exemplo: Para publicar resultados do teste no Team Foundation Server, use TfsPublisher:<br />**/logger:TfsPublisher;**<br />**Collection=<URL do projeto\>;**<br />**BuildName=<nome do build\>;**<br />**TeamProject=<nome do projeto\>;**<br />**[;Platform=<Defaults to "Any CPU">]**<br />**[;Flavor=<Defaults to "Debug">]**<br />**[;RunTitle=<título\>]**|
+|**/Logger:[*uri/nome_amigável*]**|Especificar um agente para resultados do teste.<br />Exemplo: para registrar em log os resultados em um Arquivo de Resultados do Teste do Visual Studio (TRX), use **/Logger:trx**.<br />Exemplo: para publicar resultados do teste no Team Foundation Server, use TfsPublisher:<br />**/logger:TfsPublisher;**<br />**Collection=<URL do projeto\>;**<br />**BuildName=<nome do build\>;**<br />**TeamProject=<nome do projeto\>;**<br />**[;Platform=\<O padrão é "Any CPU">]**<br />**[;Flavor=\<O padrão é "Debug">]**<br />**[;RunTitle=<título\>]**|
 |**/ListTests:[*nome do arquivo*]**|Lista testes descobertos do contêiner de teste fornecido.|
 |**/ListDiscoverers**|Lista detectores de testes instalados.|
 |**/ListExecutors**|Lista executores de testes instalados.|
@@ -53,7 +53,7 @@ A tabela a seguir lista todas as opções para o *VSTest.Console.exe*, além de 
 |**/Blame**|Acompanha os testes durante sua execução e, em caso de falha do processo de host de teste, emite os nomes de testes em sua sequência de execução até e incluindo o teste específico que estava em execução no momento da falha. Essa saída facilita o isolamento do teste incorreto e o diagnóstico adicional. [Mais informações](https://github.com/Microsoft/vstest-docs/blob/master/docs/extensions/blame-datacollector.md).|
 |**/Diag:[*nome do arquivo*]**|Grava os logs de rastreamento de diagnóstico no arquivo especificado.|
 |**/ResultsDirectory:[*caminho*]**|O diretório de resultados de teste será criado no caminho especificado, se não existir.<br />Exemplo: `/ResultsDirectory:<pathToResultsDirectory>`|
-|**/ParentProcessId:[*IDProcessoPai*]**|O ID do Processo Pai responsável por iniciar o processo atual.|
+|**/ParentProcessId:[*IDProcessoPai*]**|ID do Processo Pai responsável por iniciar o processo atual.|
 |**/Port:[*porta*]**|A porta para a conexão de soquete e recebimento das mensagens do evento.|
 |**/Collect:[*NomeAmigável ColetorDados*]**|Habilita o coletor de dados para a execução de teste. [Mais informações](https://aka.ms/vstest-collect).|
 

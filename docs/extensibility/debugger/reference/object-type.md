@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - OBJECT_TYPE enumeration
 ms.assetid: c4d246f9-8a98-44ec-b2bb-ff5c684f668e
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7f0aafc5b41d9020c80cd2b86c9048db1d333bfd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 726e4978ac2c474b1f23b90f409f25b8a58aceab
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62865422"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66349927"
 ---
 # <a name="objecttype"></a>OBJECT_TYPE
 Especifica o tipo de um objeto do avaliador de expressão.
@@ -65,36 +68,51 @@ public enum enum_OBJECT_TYPE { 
 };
 ```
 
-## <a name="members"></a>Membros
- OBJECT_TYPE_BOOLEAN indica que o objeto é um valor booliano.
+## <a name="fields"></a>Campos
+ `OBJECT_TYPE_BOOLEAN`\
+ Indica que o objeto é um valor booliano.
 
- OBJECT_TYPE_CHAR indica que o objeto é um caractere.
+ `OBJECT_TYPE_CHAR`\
+ Indica que o objeto é um caractere.
 
- OBJECT_TYPE_I1 indica que o objeto é um inteiro com sinal de um byte.
+ `OBJECT_TYPE_I1`\
+ Indica que o objeto é um inteiro com sinal de um byte.
 
- OBJECT_TYPE_U1 indica que o objeto é um inteiro sem sinal de um byte.
+ `OBJECT_TYPE_U1`\
+ Indica que o objeto é um inteiro sem sinal de um byte.
 
- OBJECT_TYPE_I2 indica que o objeto é um inteiro com sinal de dois bytes.
+ `OBJECT_TYPE_I2`\
+ Indica que o objeto é um inteiro com sinal de dois bytes.
 
- OBJECT_TYPE_U2 indica que o objeto é um inteiro sem sinal de dois bytes.
+ `OBJECT_TYPE_U2`\
+ Indica que o objeto é um inteiro sem sinal de dois bytes.
 
- OBJECT_TYPE_I4 indica que o objeto é um inteiro com sinal de quatro bytes.
+ `OBJECT_TYPE_I4`\
+ Indica que o objeto é um inteiro com sinal de quatro bytes.
 
- OBJECT_TYPE_U4 indica que o objeto é um inteiro sem sinal de quatro bytes.
+ `OBJECT_TYPE_U4`\
+ Indica que o objeto é um inteiro sem sinal de quatro bytes.
 
- OBJECT_TYPE_I8 indica que o objeto é um inteiro com sinal de oito bytes.
+ `OBJECT_TYPE_I8`\
+ Indica que o objeto é um inteiro com sinal de oito bytes.
 
- OBJECT_TYPE_U8 indica que o objeto é um inteiro sem sinal de oito bytes.
+ `OBJECT_TYPE_U8`\
+ Indica que o objeto é um inteiro sem sinal de oito bytes.
 
- OBJECT_TYPE_R4 indica que o objeto é um número de ponto flutuante de quatro bytes.
+ `OBJECT_TYPE_R4`\
+ Indica que o objeto é um número de ponto flutuante de quatro bytes.
 
- OBJECT_TYPE_R8 indica que o objeto é um número de ponto flutuante de oito bytes.
+ `OBJECT_TYPE_R8`\
+ Indica que o objeto é um número de ponto flutuante de oito bytes.
 
- OBJECT_TYPE_OBJECT indica que o objeto é um objeto.
+ `OBJECT_TYPE_OBJECT`\
+ Indica que o objeto é um objeto.
 
- OBJECT_TYPE_NULL indica que o objeto é nulo.
+ `OBJECT_TYPE_NULL`\
+ Indica que o objeto é nulo.
 
- OBJECT_TYPE_CLASS indica que o objeto é uma classe.
+ `OBJECT_TYPE_CLASS`\
+ Indica que o objeto é uma classe.
 
 ## <a name="remarks"></a>Comentários
  Passado como um argumento para o [CreatePrimitiveObject](../../../extensibility/debugger/reference/idebugfunctionobject-createprimitiveobject.md) e [CreateArrayObject](../../../extensibility/debugger/reference/idebugfunctionobject-createarrayobject.md) métodos.

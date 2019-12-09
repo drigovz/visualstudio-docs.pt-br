@@ -1,5 +1,5 @@
 ---
-title: IDebugApplication::FIsAutoJitDebugEnabled | Microsoft Docs
+title: 'IDebugApplication:: FIsAutoJitDebugEnabled | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f594c5ce48ebd31a265ed438db176c5707d9b079
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9bf97a4d3985dd3dd32e582c689fde0ecd6f52e1
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62990871"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574986"
 ---
 # <a name="idebugapplicationfisautojitdebugenabled"></a>IDebugApplication::FIsAutoJitDebugEnabled
-Determina se um depurador do just-in-time (JIT) está registrado para hosts burros de depuração automática.  
+Determina se um depurador just-in-time (JIT) está registrado para depurar hosts de forma automática.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -36,11 +36,11 @@ BOOL FIsAutoJitDebugEnabled();
 #### <a name="parameters"></a>Parâmetros  
  Esse método não usa parâmetros.  
   
-## <a name="return-value"></a>Valor de retorno  
- Se o método for bem-sucedido e um depurador JIT está registrado para hosts burros de depuração automática, o método retorna `TRUE`. Caso contrário, retornará `FALSE`.  
+## <a name="return-value"></a>Valor retornado  
+ Se o método for bem sucedido e um depurador JIT estiver registrado para depurar hosts de forma automática, o método retornará `TRUE`. Caso contrário, retornará `FALSE`.  
   
 ## <a name="remarks"></a>Comentários  
- Este método determina se um depurador JIT está registrado para hosts burros de depuração automática.  
+ Esse método determina se um depurador JIT está registrado para depurar hosts de forma automática.  
   
 ## <a name="see-also"></a>Consulte também  
  [IDebugApplication Interface](../../winscript/reference/idebugapplication-interface.md)

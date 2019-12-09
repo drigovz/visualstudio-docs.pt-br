@@ -1,37 +1,33 @@
 ---
 title: Caixa de diálogo Geral, Ambientes, Opções
-ms.date: 03/28/2019
+ms.date: 07/26/2019
 ms.topic: reference
 f1_keywords:
-- VS.Message.0x800a002e
-- VS.ToolsOptionsPages.Environment.General
 - VS.Environment.General
+- VS.Message.0x800a002e
+- VS.OptionsDialog.Environment
+- VS.ToolsOptionsPages.Environment
+- VS.ToolsOptionsPages.Environment.General
 helpviewer_keywords:
-- MRU lists
-- windows, customizing
-- MDI, environment options
-- speed, environment animation
-- File menu
-- menus, customizing
-- Windows menu customizing
-- status bars, displaying
-- IDE, startup options
-- editors, autocompletion
+- recently used file lists
+- Windows menu, customizing
+- status bar, displaying
 - Options dialog box, General Environment
 - General Environment Options dialog box
-author: gewarren
-ms.author: gewarren
+- Environment Options dialog box
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a2f860293669ddab035ddd1c53e09dbb9962df01
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 36e7efa9176b2e685463330b3ca8dbd714ec4555
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62790129"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72660043"
 ---
-# <a name="options-dialog-box-environment--general"></a>Caixa de diálogo Opções: Ambiente \> Geral
+# <a name="options-dialog-box-environment--general"></a>Caixa de diálogo opções: ambiente \> geral
 
 Use esta página para alterar temas de cores, configurações de barra de status e associações de extensões de arquivo, entre outras coisas, para o IDE (ambiente de desenvolvimento integrado). Você pode acessar a caixa de diálogo **Opções** abrindo o menu **Ferramentas**, escolhendo **Opções**, abrindo a pasta **Ambiente** e, em seguida, escolhendo a página **Geral**. Se essa página não aparecer na lista, marque a caixa de seleção **Mostrar todas as configurações** na caixa de diálogo **Opções**.
 
@@ -66,7 +62,7 @@ Especifica se o Visual Studio ajusta automaticamente a experiência visual ou se
 ::: moniker range="vs-2017"
 
 > [!TIP]
-> O Windows 10 tem uma configuração que diz **Permitir que o Windows tente corrigir aplicativos para que eles não fiquem desfocados**. É recomendável **ativar** essa configuração se o Visual Studio ficar desfocado no monitor. Considere atualizar para o [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019), que melhorou significativamente a nitidez de exibição por ser um aplicativo com suporte a pontos por polegada por monitor.
+> O Windows 10 tem uma configuração que diz **Permitir que o Windows tente corrigir aplicativos para que eles não fiquem desfocados**. É recomendável **ativar** essa configuração se o Visual Studio ficar desfocado no monitor. Considere atualizar para o [Visual Studio 2019](https://visualstudio.microsoft.com/downloads), que melhorou significativamente a nitidez de exibição por ser um aplicativo com suporte a pontos por polegada por monitor.
 
 ::: moniker-end
 
@@ -102,5 +98,4 @@ Especifica que, quando o botão **Ocultar Automaticamente** é acionado, somente
 
 ## <a name="see-also"></a>Consulte também
 
-- [Caixa de diálogo Opções do Ambiente](../../ide/reference/environment-options-dialog-box.md)
-- [Personalizando layouts de janela](../../ide/customizing-window-layouts-in-visual-studio.md)
+- [Personalizar layouts de janela](../../ide/customizing-window-layouts-in-visual-studio.md)

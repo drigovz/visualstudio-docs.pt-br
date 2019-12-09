@@ -9,17 +9,17 @@ f1_keywords:
 helpviewer_keywords:
 - solutions [Visual Studio], creating
 - projects [Visual Studio], creating
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f6f6bd03a47500c127360afd2d2a6ae6b62ee2e5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: abe2cbd18e87c7045d44e597e3a5bb93a64a1c35
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62793524"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747960"
 ---
 # <a name="create-solutions-and-projects"></a>Criar soluções e projetos
 
@@ -30,7 +30,7 @@ Os *projetos* armazenam os itens necessários para criação do aplicativo no Vi
 > [!NOTE]
 > Este tópico aplica-se ao Visual Studio no Windows. Para o Visual Studio para Mac, confira [Criar projetos no Visual Studio para Mac](/visualstudio/mac/create-new-projects).
 
-Você pode exibir suas soluções e projetos em uma janela de ferramentas chamada **Gerenciador de Soluções**. A seguinte captura de tela mostra uma solução de exemplo no **Gerenciador de Soluções** (**BikeSharing.Xamarin-UWP**) que contém dois projetos: **BikeSharing.Clients.Core** e **BikeSharing.Clients.Windows**. Cada projeto contém vários arquivos, pastas e referências. O nome do projeto em negrito é o *projeto de inicialização*, ou seja, o projeto que é iniciado quando você executa o aplicativo. Você pode especificar qual projeto é o projeto de inicialização.
+Você pode exibir suas soluções e projetos em uma janela de ferramentas chamada **Gerenciador de Soluções**. A captura de tela a seguir mostra uma solução de exemplo no **Gerenciador de Soluções** (**BikeSharing.Xamarin-UWP**) que contém dois projetos: **BikeSharing.Clients.Core** e **BikeSharing.Clients.Windows**. Cada projeto contém vários arquivos, pastas e referências. O nome do projeto em negrito é o *projeto de inicialização*, ou seja, o projeto que é iniciado quando você executa o aplicativo. Você pode especificar qual projeto é o projeto de inicialização.
 
 ![Gerenciador de Soluções com projetos](./media/vside-solution-explorer-projects.png)
 
@@ -53,7 +53,7 @@ Se você tem uma coleção de arquivos de origem de código, é possível adicio
 1. No assistente, navegue até o local dos arquivos e, em seguida, insira um nome para o novo projeto na caixa **Nome**. Quando terminar, escolha o botão **Concluir**.
 
 > [!NOTE]
-> Essa opção funciona melhor para uma coleção relativamente simples de arquivos. Atualmente, somente os tipos de projeto do Visual C++, Apache Cordova, Visual Basic e C# são compatíveis.
+> Essa opção funciona melhor para uma coleção relativamente simples de arquivos. Atualmente, há C++suporte apenas para os tipos Apache Cordova C# , Visual Basic e Project.
 
 ## <a name="add-files-to-a-solution"></a>Adicionar arquivos a uma solução
 
@@ -61,11 +61,11 @@ Se você tem um arquivo que se aplica a vários projetos, como um arquivo Leiame
 
 ## <a name="create-a-net-project-that-targets-a-specific-version-of-the-net-framework"></a>Criar um projeto .NET que direciona uma versão específica do .NET Framework
 
-Ao criar um projeto, você pode determinar uma versão específica do .NET Framework que você deseja que o projeto use.
+Ao criar um projeto .NET Framework, você pode determinar uma versão específica do .NET Framework que deseja usar no projeto. (Ao criar um projeto .NET Core, você não especifica uma versão de estrutura.)
 
 ::: moniker range="vs-2017"
 
-Para especificar uma versão do .NET Framework, escolha o menu suspenso da **Framework** na caixa de diálogo **Novo Projeto**.
+Para especificar uma versão do .NET Framework, escolha o menu suspenso **Framework** na caixa de diálogo **Novo Projeto**.
 
 ![A lista suspensa Estrutura na caixa de diálogo Novo Projeto](./media/vside-newproject-framework.png)
 
@@ -76,7 +76,7 @@ Para especificar uma versão do .NET Framework, escolha o menu suspenso da **Fra
 
 ::: moniker range=">=vs-2019"
 
-Para especificar uma versão do .NET Framework, escolha o menu suspenso **Framework** na página **Criar um novo projeto**.
+Para especificar uma versão do .NET Framework, escolha o menu suspenso **Framework** na página **Criar um projeto**.
 
 ![Seletor de Framework em configurar um novo projeto](media/vs-2019/configure-new-project-framework.png)
 

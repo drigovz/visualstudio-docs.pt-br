@@ -1,5 +1,5 @@
 ---
-title: 'Como: Escolher métodos de coleta | Microsoft Docs'
+title: Como escolher métodos de coleta | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,16 +9,17 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 344af8760dad3c66c32590b7d2d665bef833e583
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 3c633e12b2e0bf157ffd94ef06a5898fdc3ec830
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974110"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74776339"
 ---
-# <a name="how-to-choose-collection-methods"></a>Como: Escolher os métodos de coleta
+# <a name="how-to-choose-collection-methods"></a>Como escolher métodos de coleta
 
 As Ferramentas de Criação de Perfil do Visual Studio dão suporte a três métodos de coleta de dados de desempenho: amostragem, instrumentação e simultaneidade. Você também pode usar o método de amostragem ou instrumentação para coletar dados de tempo de vida e de alocação de memória do .NET.
 
@@ -34,7 +35,7 @@ Você pode usar a propriedade **Método** da sessão de desempenho para especifi
 |----------------------------| - |
 | **Amostragem de CPU** | Coleta estatísticas de aplicativo que são úteis para a análise inicial e para analisar problemas de utilização de CPU. |
 | **Instrumentação** | Coleta dados de tempo detalhados que são úteis para análise concentrada e para analisar problemas de desempenho de entrada/saída. |
-| **Alocação de memória do .NET** | Coleta dados de alocação de memória do [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] usando o método de criação de perfil de amostragem. |
+| **Alocação de memória do .NET** | Coleta dados de alocação de memória do .NET Framework usando o método de criação de perfil de amostragem. |
 | **Simultaneidade** | Coleta dados de contenção de recursos numéricos. |
 
 ## <a name="performance-explorer"></a>Performance Explorer
@@ -75,7 +76,7 @@ Você pode usar a propriedade **Método** da sessão de desempenho para especifi
 
 4. Clique em **Amostragem** ou **Instrumentação**.
 
-5. Clique em **Coletar informações de alocação de objeto do .NET** para coletar o tamanho e o número de alocações de objeto do [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].
+5. Clique em **Coletar informações de alocação de objeto .NET** para coletar o tamanho e o número de alocações de objeto do .NET Framework.
 
 6. (Opcional) Clique em **Também coletar informações de tempo de vida do objeto .NET** para coletar dados sobre as gerações de coleta de lixo nas quais a memória do objeto foi recuperada.
 

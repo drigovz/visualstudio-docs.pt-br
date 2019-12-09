@@ -1,5 +1,5 @@
 ---
-title: Analisando resultados de teste de carga na exibição de gráficos do Analisador de Teste de Carga
+title: Analisar resultados do teste de carga na exibição Grafos do Analisador de Teste de Carga
 ms.date: 10/19/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,15 +12,15 @@ helpviewer_keywords:
 - load tests, using graphs
 - load test results, graphs
 ms.assetid: 4a919cd8-541c-40ee-be3b-352fabc56140
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: c48fe67c8d52f962589c9f8628ff49f12f7770c5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 4efedd7fc7672331f04440f09d49b9339d90bdb2
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62822996"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72665372"
 ---
 # <a name="analyze-load-test-results-in-the-graphs-view-of-the-load-test-analyzer"></a>Analisar resultados do teste de carga na exibição Grafos do Analisador de Teste de Carga
 
@@ -32,7 +32,7 @@ Para exibir os resultados do teste como grafos, escolha **Grafos** na barra de f
 
 Até quatro painéis de gráfico podem ser exibidos por vez. Você pode alternar entre diferentes layouts de painel usando o botão de barra de ferramentas **layout do painel**.
 
-Vários gráficos internos são fornecidos. Você pode usar os gráficos internos como estão ou pode personalizá-los. Além disso, também é possível criar seus próprios gráficos. Para obter mais informações, confira [Como: Adicionar e excluir contadores em grafos](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md) e [Como: Criar grafos personalizados](../test/how-to-create-custom-graphs-in-load-test-results.md).
+Vários gráficos internos são fornecidos. Você pode usar os gráficos internos como estão ou pode personalizá-los. Além disso, também é possível criar seus próprios gráficos. Para obter mais informações, confira [Como adicionar e excluir contadores em grafos](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md) e [Como criar grafos personalizados](../test/how-to-create-custom-graphs-in-load-test-results.md).
 
 ## <a name="built-in-graphs"></a>Grafos internos
 
@@ -47,20 +47,20 @@ A tabela a seguir lista os gráficos internos que estão disponíveis para anali
 |Controlador e Agentes|Informações sobre os computadores nos quais os testes de carga são executados. Isso inclui dados sobre uso da memória, do processador, do disco físico, dos processos.<br /><br /> Por padrão, os contadores Apenas os Mbytes Disponíveis e Tempo de Processador são coletados.|
 |Tempo de Resposta de Transação|O tempo médio de resposta para transações que ocorrem durante o teste de carga.|
 
- Você pode exibir diferentes contadores no gráfico, no tempo de execução e depois que um teste for executado.
+Você pode exibir diferentes contadores no gráfico, no tempo de execução e depois que um teste for executado.
 
 > [!NOTE]
 > Apenas os contadores de desempenho de tempo de resposta podem ser adicionados a um gráfico de tempo de resposta gerado automaticamente.
 
- As informações do contador são exibidas no gráfico e na legenda abaixo dos gráficos. Também é possível ampliar uma seção do gráfico. Para obter mais informações, confira [Como: Ampliar uma região do grafo](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md).
+As informações do contador são exibidas no gráfico e na legenda abaixo dos gráficos. Também é possível ampliar uma seção do gráfico. Para saber mais, confira [Como ampliar uma região do grafo](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md).
 
 ## <a name="counters-displayed-in-graphs"></a>Contadores exibidos em grafos
 
- Os gráficos exibem *contadores*. Os contadores referem-se aos dados coletados durante um teste de carga, como testes por segundo ou tempo médio de teste. Para obter mais informações sobre contadores, confira [Especificando os conjuntos de contadores e as regras de limite para computadores em um teste de carga](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md).
+Os gráficos exibem *contadores*. Os contadores referem-se aos dados coletados durante um teste de carga, como testes por segundo ou tempo médio de teste. Para obter mais informações sobre contadores, confira [Especificando os conjuntos de contadores e as regras de limite para computadores em um teste de carga](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md).
 
- A legenda dos contadores que são exibidos nos gráficos mostra várias colunas de dados úteis sobre a execução do teste de carga. Para desativar a exibição de qualquer dado no gráfico, desmarque a caixa de seleção na linha da legenda.
+A legenda dos contadores que são exibidos nos gráficos mostra várias colunas de dados úteis sobre a execução do teste de carga. Para desativar a exibição de qualquer dado no gráfico, desmarque a caixa de seleção na linha da legenda.
 
- A legenda contém as seguintes colunas:
+A legenda contém as seguintes colunas:
 
 |Contador|O nome do contador|
 |-|-|
@@ -78,23 +78,23 @@ A tabela a seguir lista os gráficos internos que estão disponíveis para anali
 
 |Tarefas|Tópicos associados|
 |-|-|
-|**Personalizar os grafos usando a legenda:** A legenda da exibição de Grafos exibe informações de cada contador de desempenho associado a um grafo. Você pode usar a legenda para remover os contadores de desempenho, realçar contadores de desempenho no gráfico e personalizar as opções de plotagem.|-   [Usando a legenda da exibição Grafos para analisar testes de carga](../test/use-the-graphs-view-legend-to-analyze-load-tests.md)|
-|**Exibir contadores em grafos:** Você pode adicionar diferentes tipos de dados a um grafo de resultados do teste de carga colocando contadores no grafo.|-   [Como: Adicionar e excluir contadores em grafos](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md)|
-|**Ampliar grafos:** Após a conclusão de um teste de carga, você poderá usar as barras de zoom para ampliar e rolar para uma região do gráfico. Ao ampliar, você pode examinar detalhadamente os dados que foram gerados durante uma execução de teste de carga.|-   [Como: Ampliar uma região do grafo](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md)|
-|**Organizar grafos lado a lado:** Você pode organizar gráficos de resultados de testes de carga em qualquer um dos diversos padrões. Você pode organizar até quatro grafos lado a lado.||
-|**Criar grafos personalizados:** Você pode projetar gráficos que exibam informações específicas sobre resultados de teste de carga. Você cria um gráfico personalizado especificando os contadores de teste de carga que o gráfico exibirá.|-   [Como: Criar grafos personalizados](../test/how-to-create-custom-graphs-in-load-test-results.md)|
-|**Exportar os dados de contadores de desempenho no grafo:** Você pode exportar os dados do grafo para o Microsoft Excel usando o botão **Exportar Dados do Grafo para o Excel** na barra de ferramentas do **Analisador de Teste de Carga** enquanto estiver na exibição **Grafos**.||
+|**Personalizar os gráficos usando a legenda:** a legenda da exibição de Gráficos exibe informações sobre cada contador de desempenho que é associado a um gráfico. Você pode usar a legenda para remover os contadores de desempenho, realçar contadores de desempenho no gráfico e personalizar as opções de plotagem.|-   [Usando a legenda da exibição Grafos para analisar testes de carga](../test/use-the-graphs-view-legend-to-analyze-load-tests.md)|
+|**Exibir contadores em gráficos:** você pode adicionar diferentes tipos de dados a um grafo de resultados de testes de carga colocando contadores no gráfico.|-   [Como adicionar e excluir contadores em gráficos](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md)|
+|**Ampliar gráficos:** após a conclusão de um teste de carga, você poderá usar as barras de zoom para ampliar e rolar para uma região do gráfico. Ao ampliar, você pode examinar detalhadamente os dados que foram gerados durante uma execução de teste de carga.|-   [Como ampliar uma região do grafo](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md)|
+|**Organizar gráficos lado a lado:** você pode organizar grafos de resultados de testes de carga em qualquer um dos diversos padrões. Você pode organizar até quatro grafos lado a lado.||
+|**Criar gráficos personalizados:** você pode projetar gráficos que exibam informações específicas sobre resultados de testes de carga. Você cria um gráfico personalizado especificando os contadores de teste de carga que o gráfico exibirá.|-   [Como criar gráficos personalizados](../test/how-to-create-custom-graphs-in-load-test-results.md)|
+|**Exportar os dados de contadores de desempenho no grafo:** você pode exportar os dados do grafo para o Microsoft Excel usando o botão **Exportar Dados do Gráfico para o Excel** na barra de ferramentas do **Analisador de Teste de Carga** enquanto está na exibição **Grafos**.||
 
 ## <a name="related-tasks"></a>Tarefas relacionadas
 
- [Analisar resultados do teste de carga e erros na exibição Tabelas](../test/analyze-load-test-results-and-errors-in-the-tables-view.md)
+[Analisar resultados do teste de carga e erros na exibição Tabelas](../test/analyze-load-test-results-and-errors-in-the-tables-view.md)
 
- [Como: Acessar os resultados do teste de carga para análise](../test/how-to-access-load-test-results-for-analysis.md)
+[Como acessar os resultados do teste de carga para análise](../test/how-to-access-load-test-results-for-analysis.md)
 
- [Analisar resultados do teste de carga](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
+[Analisar resultados de teste de carga](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
 
 ## <a name="see-also"></a>Consulte também
 
-- [Como: Adicionar e excluir contadores em grafos](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md)
-- [Como: Criar grafos personalizados](../test/how-to-create-custom-graphs-in-load-test-results.md)
-- [Como: Ampliar uma região do grafo](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md)
+- [Como adicionar e excluir contadores em grafos](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md)
+- [Como criar gráficos personalizados](../test/how-to-create-custom-graphs-in-load-test-results.md)
+- [Como ampliar uma região do grafo](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md)

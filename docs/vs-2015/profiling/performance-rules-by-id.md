@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 021927c9ff109e74956507b993c1c7192d109852
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 3dd28cad3036aaca1445cba7b4531580a2a44812
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54756485"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65691692"
 ---
 # <a name="performance-rules-by-id"></a>Regras de desempenho por ID
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Aviso|Descrição|
 |[DA0006: Substituir Equals() por tipos de valor](../profiling/da0006-override-equals-parens-for-value-types.md)|Chamadas para o método Equals ou os operadores de igualdade de um tipo de valor público são uma parte significativa dos dados de criação de perfil. Considere a implementação de um método mais eficiente.|  
 |[DA0007: Evitar usar exceções no fluxo de controle](../profiling/da0007-avoid-using-exceptions-for-control-flow.md)|Uma alta taxa de manipuladores de exceção do .NET Framework foram chamados nos dados de criação de perfil. Considere o uso de outra lógica de fluxo de controle para reduzir o número de exceções geradas.|  
 |[DA0008: Poucas amostras coletadas](../profiling/da0008-few-samples-collected.md)|Apenas algumas amostras foram coletadas na execução de criação de perfil. Considere uma execução mais longa ou uma taxa de amostragem mais rápida para obter resultados mais significativos.|  
-|[DA0009: % de tempo alta em JIT](http://msdn.microsoft.com/b60c1767-515c-41d9-81c2-c70d0b7024fd)|Um percentual significativo de tempo de execução do aplicativo foi gasta no compilador apenas em Tempo (JIT).|  
+|[DA0009: % de tempo alta em JIT](https://msdn.microsoft.com/b60c1767-515c-41d9-81c2-c70d0b7024fd)|Um percentual significativo de tempo de execução do aplicativo foi gasta no compilador apenas em Tempo (JIT).|  
 |[DA0010: Função GetHashCode dispendiosa](../profiling/da0010-expensive-gethashcode.md)|As chamadas para o método GetHashCode do tipo são uma parte significativa dos dados de criação de perfil ou do método de alocação de memória.|  
 |[DA0011: Função CompareTo dispendiosa](../profiling/da0011-expensive-compareto.md)|O método CompareTo de tipo é dispendioso ou aloca memória.|  
 |[DA0012: Volume significativo de reflexão](../profiling/da0012-significant-amount-of-reflection.md)|Chamadas aos métodos System.Reflection como InvokeMember e GetMember ou a métodos Type como MemberInvoke são uma proporção significativa dos dados de criação de perfil. Quando possível, considere a substituição desses métodos pela associação antecipada aos métodos de assemblies dependentes.|  

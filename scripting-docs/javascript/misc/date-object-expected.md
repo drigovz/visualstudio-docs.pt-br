@@ -1,5 +1,5 @@
 ---
-title: Objeto de data esperado | Microsoft Docs
+title: Objeto Date esperado | Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -14,15 +14,15 @@ ms.assetid: d6ab82e6-ca64-46b4-a06c-5c6b0aa057cb
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2767ffc16b637c6b1e7bdf51cb0815d71f58edac
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 10af48c4804df3b5513df71578b948abe73ff8c2
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946375"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572893"
 ---
 # <a name="date-object-expected"></a>Objeto de data esperado
-Você tentou invocar o **Date.prototype.toString** ou **Date.prototype.valueOf** método em um objeto de um tipo diferente de `Date`. O objeto desse tipo de invocação deve ser do tipo `Date`. Por exemplo:  
+Você tentou invocar o método **Date. prototype. ToString** ou **Date. prototype. valueOf** em um objeto de um tipo diferente de `Date`. O objeto desse tipo de invocação deve ser do tipo `Date`. Por exemplo:  
   
 ```JavaScript  
 var o = new Object;  
@@ -30,11 +30,11 @@ o.f = Date.prototype.toString;
 o.f();  
 ```  
   
-### <a name="to-correct-this-error"></a>Para corrigir este erro  
+### <a name="to-correct-this-error"></a>Para corrigir esse erro  
   
-- Invoque apenas o **Date.prototype.toString** ou **Date.prototype.valueOf** métodos em objetos do tipo `Date`.  
+- Invocar apenas os métodos **Date. prototype. ToString** ou **Date. prototype. valueOf** em objetos do tipo `Date`.  
   
 ## <a name="see-also"></a>Consulte também  
  [Objeto Date](../../javascript/reference/date-object-javascript.md)   
- [Método getDate (Date)](../../javascript/reference/getdate-method-date-javascript.md)   
+ [método GETDATE (Date)](../../javascript/reference/getdate-method-date-javascript.md)   
  [Objetos intrínsecos](../../javascript/intrinsic-objects-javascript.md)

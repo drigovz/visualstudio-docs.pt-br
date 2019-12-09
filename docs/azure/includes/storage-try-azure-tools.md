@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 9584a26883b48ffb27a2e040784e997c2d9ed036
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: fbaef2430183841098d8c3eb53b3712322204c27
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62427605"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911702"
 ---
 > [!TIP]
 > 
@@ -12,4 +12,4 @@ ms.locfileid: "62427605"
 > 
 > O [Armazenamento do Microsoft Azure](/azure/vs-azure-tools-storage-manage-with-storage-explorer) é um aplicativo autônomo gratuito da Microsoft. Você pode usá-lo para trabalhar visualmente com dados do Armazenamento do Azure no Linux, no Windows e no macOS.
 > 
-> 
+>

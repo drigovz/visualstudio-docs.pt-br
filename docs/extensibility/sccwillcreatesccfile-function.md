@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - SccWillCreateSccFile function
 ms.assetid: 0d7542f0-4351-41b3-b24c-960ab99c05a1
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1fa85c8a96f17508d2e2e53a8d14444dd857dad0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2ac7657258b79b2e53bee8138bc5b2728f618eac
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62800283"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72720114"
 ---
 # <a name="sccwillcreatesccfile-function"></a>Função SccWillCreateSccFile
-Esta função determina se o plug-in de controle do código-fonte suporta a criação do MSSCCPRJ. Arquivos SCC para cada um dos arquivos de determinado.
+Essa função determina se o plug-in de controle do código-fonte dá suporte à criação do MSSCCPRJ. Arquivo SCC para cada um dos arquivos fornecidos.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -36,22 +36,22 @@ SCCRTN SccWillCreateSccFile(
 #### <a name="parameters"></a>Parâmetros
  pContext
 
-[in] O ponteiro de contexto de plug-in de controle do código-fonte.
+no O ponteiro de contexto do plug-in de controle do código-fonte.
 
  nFiles
 
-[in] O número de nomes de arquivos incluídos na `lpFileNames` matriz, bem como o comprimento do `pbSccFiles` matriz.
+no O número de nomes de arquivo incluídos na matriz de `lpFileNames`, bem como o comprimento da matriz de `pbSccFiles`.
 
  lpFileNames
 
-[in] Uma matriz de nomes de arquivo totalmente qualificado para verificar (matriz deve ser alocada pelo chamador).
+no Uma matriz de nomes de arquivos totalmente qualificados a serem verificados (a matriz deve ser alocada pelo chamador).
 
  pbSccFiles
 
-[no, out] Matriz na qual armazenar os resultados.
+[entrada, saída] Matriz na qual armazenar os resultados.
 
-## <a name="return-value"></a>Valor de retorno
- A implementação de plug-in de controle do código-fonte desta função deve retornar um dos seguintes valores:
+## <a name="return-value"></a>Valor retornado
+ Espera-se que a implementação de plug-in de controle do código-fonte dessa função retorne um dos seguintes valores:
 
 |Valor|Descrição|
 |-----------|-----------------|
@@ -60,7 +60,7 @@ SCCRTN SccWillCreateSccFile(
 |SCC_E_NONSPECIFICERROR|Falha não específica.|
 
 ## <a name="remarks"></a>Comentários
- Essa função é chamada com uma lista de arquivos para determinar se o plug-in de controle do código-fonte fornece suporte no MSSCCPRJ. Arquivos SCC para cada um dos arquivos de determinado (para obter mais informações sobre o MSSCCPRJ. Arquivos SCC, consulte [MSSCCPRJ. Arquivos SCC](../extensibility/mssccprj-scc-file.md)). Plug-ins de controle de origem pode declarar se eles têm a capacidade de criar MSSCCPRJ. Arquivos SCC, declarando `SCC_CAP_SCCFILE` durante a inicialização. O plug-in retorna `TRUE` ou `FALSE` por arquivo no `pbSccFiles` matriz para indicar quais arquivos de determinado têm MSSCCPRJ. Suporte do SCC. Se o plug-in retorna um código de êxito da função, os valores na matriz de retorno são respeitados. Em caso de falha, a matriz é ignorada.
+ Essa função é chamada com uma lista de arquivos para determinar se o plug-in de controle do código-fonte fornece suporte no MSSCCPRJ. Arquivo SCC para cada um dos arquivos fornecidos (para obter mais informações sobre o MSSCCPRJ. Arquivo SCC, consulte [MSSCCPRJ. Arquivo SCC](../extensibility/mssccprj-scc-file.md)). Plug-ins de controle do código-fonte podem declarar se eles têm a capacidade de criar MSSCCPRJ. Arquivos SCC declarando `SCC_CAP_SCCFILE` durante a inicialização. O plug-in retorna `TRUE` ou `FALSE` por arquivo na matriz de `pbSccFiles` para indicar quais dos arquivos determinados têm MSSCCPRJ. Suporte a SCC. Se o plug-in retornar um código de êxito da função, os valores na matriz de retorno serão respeitados. Em caso de falha, a matriz é ignorada.
 
 ## <a name="see-also"></a>Consulte também
 - [Funções de API do plug-in de controle do código-fonte](../extensibility/source-control-plug-in-api-functions.md)

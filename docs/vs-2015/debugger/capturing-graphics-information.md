@@ -13,12 +13,12 @@ caps.latest.revision: 44
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9fbdaf845d780935b238bac2ba2c2e7cb0c53b59
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 1b78492ccd5c2666da5ffc503cdf126842431478
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437824"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65702548"
 ---
 # <a name="capturing-graphics-information"></a>Capturando informações de gráficos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -79,7 +79,7 @@ Capture informações gráficas de seu aplicativo Direct3D para que você possa 
 ## <a name="capturing-graphics-information-remotely"></a>Capturando informações de gráficos remotamente  
  As informações de gráficos podem ser capturadas de um aplicativo que está em execução no computador local, de um dispositivo ou computador remoto. A captura remota tem suporte em computadores com [!INCLUDE[winblue_client_2](../includes/winblue-client-2-md.md)] e dispositivos com [!INCLUDE[winblue_winrt_2](../includes/winblue-winrt-2-md.md)]. Para capturar informações de gráficos de um aplicativo que está em execução remotamente, configure seu projeto para depuração remota e execute o aplicativo em Diagnóstico de Gráficos, como descrito anteriormente. O aplicativo é executado no computador remoto e as informações de gráficos capturadas são gravadas no computador de desenvolvimento.  
   
- Como você configura o projeto para depuração remota depende do tipo de aplicativo que está sendo desenvolvido e da linguagem de programação que está sendo usada. Para obter informações sobre como configurar a depuração remota para um aplicativo da Windows Store, consulte [aplicativos de execução Windows Store em um computador remoto](../debugger/run-windows-store-apps-on-a-remote-machine.md). Para obter informações sobre como configurar a depuração remota para um aplicativo de desktop do Windows, consulte [Set Up Remote Debugging para um projeto do Visual Studio](http://msdn.microsoft.com/library/ec332dc4-400a-498b-a0e6-c8dcf10fef8a).  
+ Como você configura o projeto para depuração remota depende do tipo de aplicativo que está sendo desenvolvido e da linguagem de programação que está sendo usada. Para obter informações sobre como configurar a depuração remota para um aplicativo da Windows Store, consulte [aplicativos de execução Windows Store em um computador remoto](../debugger/run-windows-store-apps-on-a-remote-machine.md). Para obter informações sobre como configurar a depuração remota para um aplicativo de desktop do Windows, consulte [Set Up Remote Debugging para um projeto do Visual Studio](https://msdn.microsoft.com/library/ec332dc4-400a-498b-a0e6-c8dcf10fef8a).  
   
  Posteriormente, você pode usar um dispositivo ou computador remoto para reproduzir informações de gráficos, independentemente de onde as informações foram capturadas. Para obter mais informações, confira [Como: Alterar o computador de reprodução de Diagnóstico de Gráficos](../debugger/how-to-change-the-graphics-diagnostics-playback-machine.md).  
   

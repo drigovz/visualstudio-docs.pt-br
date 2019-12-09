@@ -1,5 +1,5 @@
 ---
-title: Esperado '}' | Microsoft Docs
+title: Esperado '} ' | Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -14,20 +14,20 @@ ms.assetid: dff04495-9a6e-4604-9231-e40433fec152
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 02d6772a6bfe8d71c65fb866f097d3f2da97f86a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d19d1cc24928e070ae3569858d6db83a1b59a36d
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62935005"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577555"
 ---
 # <a name="expected-"></a>'}' esperado
-Você não incluir a chave à direita que marca o final do corpo da função, o loop, o bloco de código, ou inicializador de objeto. Um exemplo desse erro seria uma **para** loop com apenas a chave à esquerda marcando o corpo do loop.  
+Você não incluiu a chave direita que marca o final do corpo da função, loop, bloco de código ou inicializador de objeto. Um exemplo desse erro seria um loop **for** apenas com a chave esquerda marcando o corpo do loop.  
   
 ### <a name="to-correct-this-error"></a>Para corrigir este erro  
   
-- Adicione a chave à direita que marca o término da função, o loop, o bloco ou o inicializador de objeto.  
+- Adicione a chave direita que marca o final da função, loop, bloco ou inicializador de objeto.  
   
 ## <a name="see-also"></a>Consulte também  
- [Objeto de função](../../javascript/reference/function-object-javascript.md)   
+ @No__t_1 de [objeto de função](../../javascript/reference/function-object-javascript.md)  
  [Controlar o fluxo de programas](../../javascript/controlling-program-flow-javascript.md)

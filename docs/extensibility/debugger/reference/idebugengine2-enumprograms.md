@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEngine2::EnumPrograms
 ms.assetid: 56bf98eb-beec-4e5f-9ebe-46c922e54c56
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c424dca7b20e6abe1afd419e9c156a400583b5cb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 05146e92f9f1174d747dbd73488c59f8950c7395
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62875444"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66330076"
 ---
 # <a name="idebugengine2enumprograms"></a>IDebugEngine2::EnumPrograms
 Recupera uma lista de todos os programas sendo depurado por um mecanismo de depuração (DES).
@@ -36,10 +39,9 @@ int EnumPrograms( 
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `ppEnum`
-
- [out] Retorna um [IEnumDebugPrograms2](../../../extensibility/debugger/reference/ienumdebugprograms2.md) que contém uma lista de todos os programas sendo depurado por um DE objeto.
+## <a name="parameters"></a>Parâmetros
+`ppEnum`\
+[out] Retorna um [IEnumDebugPrograms2](../../../extensibility/debugger/reference/ienumdebugprograms2.md) que contém uma lista de todos os programas sendo depurado por um DE objeto.
 
 ## <a name="return-value"></a>Valor de retorno
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.

@@ -4,49 +4,49 @@ ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - Domain-Specific Language, domain properties
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 23bac93b6e5892e8a4d4680e6829240fed9a03d8
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 44fcc45191d6c1e42256a503e98f753b54535e5f
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443127"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748311"
 ---
 # <a name="properties-of-domain-properties"></a>Propriedades de propriedades de domínio
-Um *propriedade de domínio* é um recurso de um elemento de modelo que pode conter um valor. Por exemplo, a classe de domínio `Person` poderia ter as propriedades `Name` e `BirthDate`. Em Definição de DSL, as propriedades de domínio são listadas na caixa de classe de domínio no diagrama e sob a classe de domínio no Gerenciador de DSL. Para obter mais informações, consulte [como definir uma linguagem específica do domínio](../modeling/how-to-define-a-domain-specific-language.md).
+Uma *propriedade de domínio* é um recurso de um elemento de modelo que pode conter um valor. Por exemplo, a classe de domínio `Person` poderia ter as propriedades `Name` e `BirthDate`. Em Definição de DSL, as propriedades de domínio são listadas na caixa de classe de domínio no diagrama e sob a classe de domínio no Gerenciador de DSL. Para obter mais informações, consulte [como definir uma linguagem específica de domínio](../modeling/how-to-define-a-domain-specific-language.md).
 
 > [!NOTE]
-> A palavra "propriedade" possui dois usos. Um *propriedade de domínio* é um recurso que você define em uma classe de domínio. Por outro lado, muitos elementos de uma DSL têm *propriedades*, que são listadas na **propriedades** janela na definição de DSL. Por exemplo, cada propriedade de domínio tem um conjunto de propriedades, que são descritas neste tópico.
+> A palavra "propriedade" possui dois usos. Uma *propriedade de domínio* é um recurso que você define em uma classe de domínio. Por outro lado, muitos elementos de uma DSL têm *Propriedades*, que são listadas na janela **Propriedades** na definição de DSL. Por exemplo, cada propriedade de domínio tem um conjunto de propriedades, que são descritas neste tópico.
 
  No momento da execução, quando um usuário cria instâncias da classe de domínio, os valores das propriedades de domínio podem ser vistos na janela Propriedades e exibidos nas formas.
 
  A maioria das propriedades de domínio é implementada como propriedades CLR comuns. No entanto, do ponto de vista da programação, as propriedades de domínio têm funcionalidade mais rica do que as propriedades de programa comuns:
 
-- Você pode definir regras e eventos que monitoram o estado de uma propriedade. Para obter mais informações, consulte [respondendo a e propagando alterações](../modeling/responding-to-and-propagating-changes.md).
+- Você pode definir regras e eventos que monitoram o estado de uma propriedade. Para obter mais informações, consulte [respondendo e propagando alterações](../modeling/responding-to-and-propagating-changes.md).
 
-- As transações ajudam a impedir estados inconsistentes. Para obter mais informações, consulte [Navegando e atualizando um modelo no código do programa](../modeling/navigating-and-updating-a-model-in-program-code.md).
+- As transações ajudam a impedir estados inconsistentes. Para obter mais informações, consulte [navegando e atualizando um modelo no código do programa](../modeling/navigating-and-updating-a-model-in-program-code.md).
 
-  Quando você seleciona uma Propriedade de Domínio em um diagrama ou no Gerenciador de DSL, pode ver os itens a seguir na janela Propriedades. Para obter mais informações sobre como usar esses itens, consulte [personalizando e estendendo uma linguagem específica do domínio](../modeling/customizing-and-extending-a-domain-specific-language.md).
+  Quando você seleciona uma Propriedade de Domínio em um diagrama ou no Gerenciador de DSL, pode ver os itens a seguir na janela Propriedades. Para obter mais informações sobre como usar esses itens, consulte [Personalizando e estendendo uma linguagem específica de domínio](../modeling/customizing-and-extending-a-domain-specific-language.md).
 
-|Propriedade|Descrição|Valor padrão|
+|propriedade|Descrição|Valor padrão|
 |-|-|-|
 |**Descrição**|A descrição usada para documentar a interface do usuário (IU) do designer gerado.|\<nenhum>|
 |**Nome de exibição**|O nome que será exibido no designer gerado para essa propriedade de domínio. Ele pode conter espaços e pontuação, por exemplo "Título da Música".|\<nenhum>|
-|**Nome do provedor de elemento**|Só será aplicável se você tiver configurado `Is Element Name` como `true`. Você pode escrever código que fornece um nome para um novo elemento de uma classe de domínio, substituindo o comportamento padrão.<br /><br /> Em um arquivo de código no projeto DSL, crie uma classe derivada de <xref:Microsoft.VisualStudio.Modeling.ElementNameProvider>.<br /><br /> Depois, no Gerenciador de DSL, clique com o botão direito do mouse na raiz do DSL e clique em Adicionar Tipo Externo. Insira o nome da sua classe.<br /><br /> Escolha essa propriedade de domínio novamente e escolha o nome da classe na lista suspensa.|\<nenhum>|
-|**Getter Access Modifier**|O nível de acesso da classe de domínio (`public` ou `internal`). Controla o escopo no qual o código do programa pode acessar a propriedade.|`public`|
-|**Palavra-chave ajuda**|A palavra-chave opcional usada para indexar a ajuda F1 desta propriedade de domínio.|\<nenhum>|
-|**É navegável**|Se `True`, a propriedade de domínio será exibida para o usuário na janela de propriedades quando modelos deste DSL forem abertos.<br /><br /> Se `False`, a propriedade de domínio ficará oculta na interface do usuário.<br /><br /> Se você quiser tornar a propriedade de domínio visível, mas somente leitura, defina **é IU somente leitura**.|`True`|
-|**É o nome do elemento**|Se `True`, esta propriedade de domínio será exibida como o nome do seu elemento modelo no Gerenciador de DSL.<br /><br /> Novos elementos do modelo receberão um valor padrão único para esta propriedade. Se você quiser controlar como esses valores são gerados, defina **provedor de nomes de elemento**.|`False`|
-|**É IU somente leitura**|Se `True`, o valor da propriedade de domínio não poderá ser alterada usando a IU. Ele ainda pode ser definido por programas e estará visível na janela Propriedades.<br /><br /> Se você quiser ocultar a propriedade de domínio do usuário, defina **é navegável**. Se você quiser controlar o acesso por programas, defina **modificador de acesso Setter**.|`False`|
-|**Kind**|O tipo da propriedade de domínio (`Normal`, `Calculated` ou `CustomStorage`). Para obter mais informações, consulte [Calculated e propriedades de armazenamento personalizado](../modeling/calculated-and-custom-storage-properties.md).|`Normal`|
-|**Nome**|O nome da propriedade do domínio. Ele deve ser um identificador válido, por exemplo **SongTitle**.|\<nenhum>|
+|**Provedor de nome de elemento**|Só será aplicável se você tiver configurado `Is Element Name` como `true`. Você pode escrever código que fornece um nome para um novo elemento de uma classe de domínio, substituindo o comportamento padrão.<br /><br /> Em um arquivo de código no projeto DSL, crie uma classe derivada de <xref:Microsoft.VisualStudio.Modeling.ElementNameProvider>.<br /><br /> Depois, no Gerenciador de DSL, clique com o botão direito do mouse na raiz do DSL e clique em Adicionar Tipo Externo. Insira o nome da sua classe.<br /><br /> Escolha essa propriedade de domínio novamente e escolha o nome da classe na lista suspensa.|\<nenhum>|
+|**Modificador de acesso getter**|O nível de acesso da classe de domínio (`public` ou `internal`). Controla o escopo no qual o código do programa pode acessar a propriedade.|`public`|
+|**Palavra-chave Help**|A palavra-chave opcional usada para indexar a ajuda F1 desta propriedade de domínio.|\<nenhum>|
+|**É navegável**|Se `True`, a propriedade de domínio será exibida para o usuário na janela de propriedades quando modelos deste DSL forem abertos.<br /><br /> Se `False`, a propriedade de domínio ficará oculta na interface do usuário.<br /><br /> Se você quiser tornar a propriedade de domínio visível, mas somente leitura, definir **é somente leitura da interface do usuário**.|`True`|
+|**É nome do elemento**|Se `True`, esta propriedade de domínio será exibida como o nome do seu elemento modelo no Gerenciador de DSL.<br /><br /> Novos elementos do modelo receberão um valor padrão único para esta propriedade. Se você quiser controlar como esses valores são gerados, defina **provedor de nome de elemento**.|`False`|
+|**É somente leitura da interface do usuário**|Se `True`, o valor da propriedade de domínio não poderá ser alterada usando a IU. Ele ainda pode ser definido por programas e estará visível na janela Propriedades.<br /><br /> Se você quiser ocultar a propriedade de domínio do usuário, defina **é navegável**. Se você quiser controlar o acesso por programas, defina **modificador de acesso setter**.|`False`|
+|**Quase**|O tipo da propriedade de domínio (`Normal`, `Calculated` ou `CustomStorage`). Para obter mais informações, consulte [Propriedades de armazenamento calculadas e personalizadas](../modeling/calculated-and-custom-storage-properties.md).|`Normal`|
+|**Nome**|O nome da propriedade do domínio. Ele deve ser um identificador válido, por exemplo, **SongTitle**.|\<nenhum>|
 |**Observações**|Notas informais associadas a esta propriedade de domínio.|\<nenhum>|
-|**Setter Access Modifier**|O modificador de acesso do setter. Controla o escopo no qual o código do programa pode definir a propriedade.|`public`|
-|**Tipo**|O tipo de propriedade. Para adicionar à lista de tipos disponíveis, clique com botão direito a raiz do DSL no Gerenciador de DSL e clique em **Adicionar tipo externo**.|`String`|
+|**Modificador de acesso setter**|O modificador de acesso do setter. Controla o escopo no qual o código do programa pode definir a propriedade.|`public`|
+|**Tipo**|O tipo de propriedade. Para adicionar à lista de tipos disponíveis, clique com o botão direito do mouse na raiz da DSL no Gerenciador de DSL e clique em **Adicionar tipo externo**.|`String`|
 
 ## <a name="see-also"></a>Consulte também
 

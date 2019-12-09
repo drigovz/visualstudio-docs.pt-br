@@ -9,14 +9,15 @@ ms.assetid: 02085214-a8e4-40fd-9b26-32391a7a7082
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 2602996e6c823888b272129ea0c2414534a4e1f7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: faba7a6d2e698e919c0f0adca6fa574838b8b3c4
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62969661"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779201"
 ---
 # <a name="getting-started-with-performance-tools"></a>Introdução às ferramentas de desempenho
 
@@ -26,9 +27,9 @@ O Visual Studio oferece várias maneiras de coletar, exibir e analisar dados de 
 
 - Os relatórios de desempenho fornecem exibições em diferentes níveis da estrutura, linhas de código-fonte e processos do seu aplicativo. Relatórios de desempenho mostram dados de execução do aplicativo, da chamada e funções chamadas de uma função específica à árvore de chamadas de todo o aplicativo.
 
-Para criar o perfil de um projeto, aplicativo ou site do ASP.NET rapidamente, selecione **Depurar** > **Criador de Perfil de Desempenho** e selecione **Assistente de Desempenho**. Para obter instruções detalhadas, veja [Guia do iniciante à criação de perfil do desempenho](../profiling/beginners-guide-to-cpu-sampling.md) e [Como: Coletar dados de desempenho para um site da Web](../profiling/how-to-collect-performance-data-for-a-web-site.md).
+Para criar o perfil de um projeto, aplicativo ou site do ASP.NET rapidamente, selecione **Depurar** > **Criador de Perfil de Desempenho** e selecione **Assistente de Desempenho**. Para obter instruções detalhadas, confira [Guia do iniciante à criação de perfil do desempenho](../profiling/beginners-guide-to-cpu-sampling.md) e [Como: coletar dados de desempenho de um Site da Web](../profiling/how-to-collect-performance-data-for-a-web-site.md).
 
-Para especificar e configurar uma sessão de criação de perfil de desempenho manualmente, selecione **Depurar** > **Criador de Perfil** > **Gerenciador de Desempenho**. Use a pasta **Destinos** e as páginas **Propriedades** no **Gerenciador de Desempenho** para configurar sessões. Para obter instruções, veja [Como: Criar sessões de desempenho manualmente](../profiling/how-to-manually-create-performance-sessions.md).
+Para especificar e configurar uma sessão de criação de perfil de desempenho manualmente, selecione **Depurar** > **Criador de Perfil** > **Gerenciador de Desempenho**. Use a pasta **Destinos** e as páginas **Propriedades** no **Gerenciador de Desempenho** para configurar sessões. Para obter instruções, confira [How to: Manually create performance sessions](../profiling/how-to-manually-create-performance-sessions.md) (Como criar sessões de desempenho manualmente).
 
 **Confira também:**
 

@@ -12,12 +12,12 @@ caps.latest.revision: 24
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 2223ab7dfbf37a0be1c9600065ddaad8ea4dfd19
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 11e739fc1b0516c2b6e34421ecee7a329830de14
+ms.sourcegitcommit: 3a19319e2599bd193fb2ca32020ca53942974bfd
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60098722"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "73983790"
 ---
 # <a name="how-to-locate-the-visual-studio-product-key"></a>Como localizar a chave do produto do Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,11 +28,13 @@ Talvez seja conveniente localizar a chave do produto do [!INCLUDE[vsprvs](../inc
 
 - Procure a chave do produto em um destes locais:
 
-    - Na mídia de instalação (se aplicável).
+  - Na mídia de instalação (se aplicável).
 
-    - No site do [My.VisualStudio.com](https://my.visualstudio.com/productkeys).
+  - No site do [My.VisualStudio.com](https://my.visualstudio.com/productkeys).
 
-    - Documentação ou outros comunicados do fornecedor do qual você comprou o software.
+  - Documentação ou outros comunicados do fornecedor do qual você comprou o software.
 
-## <a name="see-also"></a>Consulte também
- [Como fazer upgrade de uma edição de avaliação do Visual Studio](../install/how-to-upgrade-from-a-trial-edition-of-visual-studio.md) [Instalar o Visual Studio](../install/install-visual-studio-2015.md) [White paper sobre licenciamento para Visual Studio e MSDN](http://go.microsoft.com/fwlink/?LinkId=191417)
+## <a name="see-also"></a>Veja também
+ * [Como atualizar de uma edição para avaliação do Visual Studio](../install/how-to-upgrade-from-a-trial-edition-of-visual-studio.md)
+ * [Instalar o Visual Studio](../install/install-visual-studio-2015.md)
+ * [White paper de licenciamento do Visual Studio](https://www.microsoft.com/download/details.aspx?id=13350)

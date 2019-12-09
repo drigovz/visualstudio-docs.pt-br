@@ -1,22 +1,25 @@
 ---
-title: IDebugComPlusSymbolProvider2::LoadSymbolsFromStreamWithCorModule | Microsoft Docs
+title: IDebugComPlusSymbolProvider2::LoadSymbolsFromStreamWithCorModule
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugComPlusSymbolProvider2::LoadSymbolsFromStreamWithCorModule
 - LoadSymbolsFromStreamWithCorModule
 ms.assetid: f79b894f-52c4-43c2-9a68-c71536451f6c
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 472a83212bdd71bd1747fa54e4bf3d2bda51434e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 682786df1d676391cc1ec838e739cb03983ebb66
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62876338"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66334665"
 ---
 # <a name="idebugcomplussymbolprovider2loadsymbolsfromstreamwithcormodule"></a>IDebugComPlusSymbolProvider2::LoadSymbolsFromStreamWithCorModule
 Carregar símbolos de depuração de um fluxo de dados que recebe o **ICorDebugModule** objeto.
@@ -45,30 +48,24 @@ int LoadSymbolsFromStreamWithCorModule(
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
-`ulAppDomainID`
+## <a name="parameters"></a>Parâmetros
+`ulAppDomainID`\
+[in] Identificador do domínio do aplicativo.
 
- [in] Identificador do domínio do aplicativo.
+`guidModule`\
+[in] Identificador exclusivo do módulo.
 
-`guidModule`
+`baseAddress`\
+[in] Endereço de memória de base.
 
- [in] Identificador exclusivo do módulo.
+`pUnkMetadataImport`\
+[in] Objeto que contém os metadados de símbolo.
 
-`baseAddress`
+`pUnkCorDebugModule`\
+[in] Objeto que implementa o [ICorDebugModule Interface](/dotnet/framework/unmanaged-api/debugging/icordebugmodule-interface).
 
- [in] Endereço de memória de base.
-
-`pUnkMetadataImport`
-
- [in] Objeto que contém os metadados de símbolo.
-
-`pUnkCorDebugModule`
-
- [in] Objeto que implementa o [ICorDebugModule Interface](/dotnet/framework/unmanaged-api/debugging/icordebugmodule-interface).
-
-`pStream`
-
- [in] Fluxo de dados que contém os símbolos de depuração para carregar.
+`pStream`\
+[in] Fluxo de dados que contém os símbolos de depuração para carregar.
 
 ## <a name="return-value"></a>Valor de retorno
 Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.

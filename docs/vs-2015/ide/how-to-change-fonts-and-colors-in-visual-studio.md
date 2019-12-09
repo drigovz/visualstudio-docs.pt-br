@@ -1,5 +1,5 @@
 ---
-title: 'Como: Alterar fontes e cores'
+title: Como alterar fontes e cores
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -9,23 +9,23 @@ helpviewer_keywords:
 - color themes, Visual Studio
 ms.assetid: 60d91ba1-244b-4c43-847f-60b744f1352a
 caps.latest.revision: 16
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 4defa140d7ec855a10ae1e921afce78e97d69702
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 0312846431f670ae136fdadfc8647c4096348941
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439238"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300134"
 ---
-# <a name="how-to-change-fonts-and-colors-in-visual-studio"></a>Como: Alterar fontes e cores no Visual Studio
+# <a name="how-to-change-fonts-and-colors-in-visual-studio"></a>Como alterar fontes e cores no Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 É possível personalizar a cor do quadro e das janelas de ferramentas do IDE no Visual Studio de diversas maneiras.
 
 > [!TIP]
-> Para obter informações sobre como alterar as cores do editor de códigos, confira [Como: Alterar fontes e cores no editor](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md).
+> Para obter mais informações sobre como alterar as cores do editor de código, consulte [How to: Change Fonts and Colors in the Editor (Como alterar fontes e cores no editor)](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md).
 
 ### <a name="change-the-color-theme-of-the-ide"></a>Alterar o tema de cores do IDE
 
@@ -38,7 +38,7 @@ ms.locfileid: "63439238"
     > [!IMPORTANT]
     > Ao alterar um tema de cores, o texto no IDE é revertido para as fontes e os tamanhos padrão ou personalizados anteriormente.
     >
-    >  Se você tiver o Visual Studio Professional, Visual Studio Premium ou Visual Studio Ultimate, é possível instalar outros temas de cores predefinidos e criar seu próprio baixando e instalando o [Editor de Tema de Cores do Visual Studio 2013](http://visualstudiogallery.msdn.microsoft.com/9e08e5d3-6eb4-4e73-a045-6ea2a5cbdabe).
+    >  Se você tiver o Visual Studio Professional, Visual Studio Premium ou Visual Studio Ultimate, é possível instalar outros temas de cores predefinidos e criar seu próprio baixando e instalando o [Editor de Tema de Cores do Visual Studio 2013](https://marketplace.visualstudio.com/items?itemName=MatthewJohnsonMSFT.VisualStudio2013ColorThemeEditor).
 
 ### <a name="use-windows-high-contrast-colors"></a>Usar as cores de alto contraste do Windows
 
@@ -59,11 +59,11 @@ ms.locfileid: "63439238"
 3. Na lista **Mostrar configurações de**, escolha **Fonte do Ambiente**.
 
     > [!TIP]
-    > Se você desejar alterar apenas a fonte das janelas de ferramentas, na lista **Mostrar configurações de**, escolha **[Todas as janelas de ferramentas de texto]**.
+    > Se você desejar alterar apenas a fonte das janelas de ferramentas, na lista **Mostrar configurações de**, escolha **[Todas as janelas de ferramentas de texto]** .
 
 4. Na lista **Fonte**, escolha uma fonte.
 
 5. Na lista **Tamanho**, escolha um tamanho de texto e, em seguida, escolha o botão **OK**.
 
 ## <a name="see-also"></a>Consulte também
- [Recursos de acessibilidade do Visual Studio](../ide/reference/accessibility-features-of-visual-studio.md) [como: alterar fontes e cores no editor](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)
+ [Recursos de acessibilidade do Visual Studio](../ide/reference/accessibility-features-of-visual-studio.md) [como: Alterar fontes e cores no editor](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)

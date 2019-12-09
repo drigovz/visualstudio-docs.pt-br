@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fa4478788c820485ac3284e9533987ceb8e3492f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b9a2a433c33d46215168238e9956ce0427171b24
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62832112"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741564"
 ---
-# <a name="idiastackframegettype"></a>IDiaStackFrame::get_type
+# <a name="idiastackframeget_type"></a>IDiaStackFrame::get_type
 Recupera o tipo de quadro.
 
 ## <a name="syntax"></a>Sintaxe
@@ -33,10 +33,10 @@ HRESULT get_type ( 
 #### <a name="parameters"></a>Parâmetros
  `pRetVal`
 
-[out] Retorna um valor da [enumeração StackFrameTypeEnum](../../debugger/debug-interface-access/stackframetypeenum.md) enumeração.
+fora Retorna um valor da enumeração de [Enumeração StackFrameTypeEnum](../../debugger/debug-interface-access/stackframetypeenum.md) .
 
-## <a name="return-value"></a>Valor de retorno
- Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não há suporte para a propriedade. Caso contrário, retornará um código de erro.
+## <a name="return-value"></a>Valor retornado
+ Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se a propriedade não tiver suporte. Caso contrário, retornará um código de erro.
 
 ## <a name="see-also"></a>Consulte também
 - [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)

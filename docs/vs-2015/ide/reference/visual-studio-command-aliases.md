@@ -14,15 +14,15 @@ helpviewer_keywords:
 - command aliases
 ms.assetid: de8bb378-8c1c-4087-a9a5-537fa8314c19
 caps.latest.revision: 24
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 573c120aafdf520b137e3fb50251ed8606f5c43a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 7e9419e64cd211490fc1d3785045b5de117d392e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59654367"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72657845"
 ---
 # <a name="visual-studio-command-aliases"></a>Aliases de comando do Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -71,7 +71,7 @@ Aliases fornecem um meio de inserir um comando na caixa **Localizar/Comando** ou
 |[Comando Start](../../ide/reference/start-command.md)|g|Debug.Start|
 |[Comando Go To](../../ide/reference/go-to-command.md)|GotoLn|Edit.GoTo|
 |Ir para Chave|GotoBrace|Edit.GotoBrace|
-|F1Help|Help|Help.F1Help|
+|F1Help|Ajuda|Help.F1Help|
 |Modo Imediato|immed|Tools.ImmediateMode|
 |Inserir Arquivo como Texto|InsertFile|Edit.InsertFileAsText|
 |[Comando List Call Stack](../../ide/reference/list-call-stack-command.md)|kb|Debug.ListCallStack|
@@ -100,7 +100,7 @@ Aliases fornecem um meio de inserir um comando na caixa **Localizar/Comando** ou
 |Indicador Anterior|PrevBook|Edit.PreviousBookmark|
 |Imprimir arquivo|imprimir|File.Print|
 |Janela Propriedades|props|View.PropertiesWindow|
-|Stop|q|Debug.StopDebugging|
+|Parar|q|Debug.StopDebugging|
 |Refazer|refazer|Edit.Redo|
 |Janela Registros|registros|Debug.Registers|
 |Executar até o cursor|rtc|Debug.RunToCursor|
@@ -128,4 +128,4 @@ Aliases fornecem um meio de inserir um comando na caixa **Localizar/Comando** ou
 |[Comando List Threads](../../ide/reference/list-threads-command.md)|~ ~*k ~\*kb|Debug.ListThreads Debug.ListTheads /AllThreads|
 
 ## <a name="see-also"></a>Consulte também
- [Comandos do Visual Studio](../../ide/reference/visual-studio-commands.md) [janela comando](../../ide/reference/command-window.md) [caixa Localizar/comando](../../ide/find-command-box.md)
+ [Janela de comando](../../ide/reference/command-window.md) de [comandos do Visual Studio](../../ide/reference/visual-studio-commands.md) [localizar/caixa de comando](../../ide/find-command-box.md)

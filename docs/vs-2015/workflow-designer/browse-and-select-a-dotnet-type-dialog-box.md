@@ -1,5 +1,5 @@
 ---
-title: Procure e selecione uma caixa de diálogo de tipo de .NET | Microsoft Docs
+title: Caixa de diálogo Procurar e selecionar um tipo .NET | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-workflow-designer
@@ -9,66 +9,66 @@ f1_keywords:
 - ActivityTypeResolver.UI
 ms.assetid: 864b60b6-a070-4e5c-aa5b-a25341b57ea6
 caps.latest.revision: 13
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: e7a4169d57cd5b004ded9fbc9b8a16bf7537754b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d8e25ad181202a2c7994c116e2220426ca3d8509
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63417560"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297615"
 ---
 # <a name="browse-and-select-a-net-type-dialog-box"></a>Procurar e selecione uma caixa de diálogo de tipo do .NET
-No **propriedades** designers como o designer variável, quando você seleciona, caixas de diálogo ou janela **procurar tipos...** em uma lista de tipos de dados, é o **navegue e selecione um tipo .NET** caixa de diálogo (conhecida na forma abreviada, como o tipo "navegador"). Na caixa de diálogo, você pode escolher um tipo de um modo de exibição de árvore de assemblies e de projetos.  
-  
- Esta caixa de diálogo é empregada em um número de cenários do usuário, incluindo o seguinte:  
-  
-- Ao definir o tipo de uma variável ou um argumento.  
-  
-- Ao selecionar um tipo para uma atividade genérico.  
-  
-- Para adicionar uma captura na atividade de <xref:System.Activities.Statements.TryCatch> .  
-  
+Na janela **Propriedades** , caixas de diálogo ou designers, como o designer de variável, quando você seleciona **procurar tipos...** de uma lista de tipos de dados, é a caixa de diálogo **procurar e selecionar um tipo .net** (referenciada em um formulário abreviado como "navegador de tipo"). Na caixa de diálogo, você pode escolher um tipo de um modo de exibição de árvore de assemblies e de projetos.
+
+ Esta caixa de diálogo é empregada em um número de cenários do usuário, incluindo o seguinte:
+
+- Ao definir o tipo de uma variável ou um argumento.
+
+- Ao selecionar um tipo para uma atividade genérico.
+
+- Para adicionar uma captura na atividade de <xref:System.Activities.Statements.TryCatch> .
+
 > [!NOTE]
-> O navegador do tipo pode exibir tipos de jagged array Visual Basic, mas não tipos de matriz multidimensional. Ver [matrizes denteadas](http://go.microsoft.com/fwlink/?LinkId=195226) e [matrizes multidimensionais](http://go.microsoft.com/fwlink/?LinkId=195227) para obter detalhes.  
-  
-## <a name="selecting-a-value-or-reference-type-from-the-type-browser"></a>Selecionando um tipo de valor ou tipo de referência de navegador de tipo  
-  
-#### <a name="to-select-a-value-or-reference-type-from-the-type-browser"></a>Para selecionar um valor ou uma referência digite de navegador de tipo  
-  
-1. No **nome do tipo** , digite o nome do tipo que você deseja usar.  
-  
-2. Realize um dos seguintes procedimentos:  
-  
-    - Depois que o nome do tipo que você deseja usar aparece na árvore na **nome do tipo** caixa, clique duas vezes o tipo para selecioná-lo.  
-  
-    - Tipo suficiente caracteres na **nome do tipo** caixa para identificar exclusivamente o tipo que você deseja usar e, em seguida, pressione enter para selecionar o tipo  
-  
-#### <a name="to-select-a-generic-type-from-the-type-browser"></a>Para selecionar um tipo genérico de navegador de tipo  
-  
-1. No **nome do tipo** caixa, digite o nome do tipo que você deseja usar.  
-  
-2. Depois que o nome do tipo que você deseja usar aparece na árvore na **nome do tipo** caixa, clique no tipo para selecioná-lo para causar caixas suspensas aparecem.  
-  
-     Selecione o tipo que você deseja usar para fechar o genérico caixas de lista suspensa e, em seguida, clique em **Okey**.  
-  
-## <a name="types-displayed-in-the-type-browser"></a>Tipos exibidos no navegador de tipo  
- Os tipos exibidos no navegador do tipo podem variar dependendo de como o navegador de tipo foi iniciado. Se o navegador de tipo foi iniciado em um projeto de fluxo de trabalho dentro de **vs2010**, por padrão, todos os tipos em assemblies referenciados e referenciou projetos são mostrados. Se o navegador de tipo foi iniciado fora de um **vs2010** (como em um aplicativo de fluxo de trabalho rehosted ou em um arquivo de fluxo de trabalho autônomo), sistema de projeto, por padrão, os tipos de todos os assemblies carregados no AppDomain são mostradas .  
-  
- No navegador de tipo pode ser filtro por desenvolvedores do designer de atividade. Para quaisquer atividades determinada, você pode ver apenas um subconjunto dos tipos. Por exemplo, na atividade de <xref:System.Activities.Statements.TryCatch> , somente os tipos derivados de <xref:System.Exception> são mostrados no navegador do tipo.  
-  
-## <a name="filtering-search-results-in-the-type-browser"></a>Resultados de pesquisa de filtragem no navegador de tipo  
- A lista de tipos na **nome do tipo** caixa obtém mais curta, conforme você digita mais caracteres para localizar uma correspondência. Somente tipos cujo nome totalmente qualificado começa com a cadeia de caracteres que você digitou ou tipos cujo nome curto começa com a cadeia de caracteres que você digitou aparecem na lista filtrada.  
-  
- Por exemplo:  
-  
-1. Digitação **operação** corresponde a <xref:System.OperationCanceledException> mas não <xref:System.InvalidOperationException>. Para corresponder <xref:System.InvalidOperationException>, inicie digite System.I ou inválido.  
-  
-2. Digitação **genérico** corresponde a <xref:System.GenericUriParser> mas não tipos no <xref:System.Collections.Generic> namespace. Para procurar por tipos no namespace <xref:System.Collections.Generic> , digite o nome totalmente qualificado do namespace.  
-  
-## <a name="selecting-a-service-contract-using-the-type-browser-dialog"></a>Selecionando um contrato de serviço usando a caixa de diálogo de navegador de tipo  
- Ao selecionar um tipo de contrato de serviço, o navegador do tipo mostra somente os tipos que têm o atributo de <xref:System.ServiceModel.ServiceContractAttribute> .  
-  
-## <a name="see-also"></a>Consulte também  
+> O navegador do tipo pode exibir tipos de jagged array Visual Basic, mas não tipos de matriz multidimensional. Consulte [matrizes denteadas](https://go.microsoft.com/fwlink/?LinkId=195226) e [matrizes multidimensionais](https://go.microsoft.com/fwlink/?LinkId=195227) para obter detalhes.
+
+## <a name="selecting-a-value-or-reference-type-from-the-type-browser"></a>Selecionando um tipo de valor ou tipo de referência de navegador de tipo
+
+#### <a name="to-select-a-value-or-reference-type-from-the-type-browser"></a>Para selecionar um valor ou uma referência digite de navegador de tipo
+
+1. Na caixa **nome do tipo** , digite o nome do tipo que você deseja usar.
+
+2. Siga um destes procedimentos:
+
+    - Depois que o nome do tipo que você deseja usar aparecer na árvore na caixa nome do **tipo** , clique duas vezes no tipo para selecioná-lo.
+
+    - Digite caracteres suficientes na caixa **nome do tipo** para identificar exclusivamente o tipo que você deseja usar e pressione ENTER para selecionar o tipo
+
+#### <a name="to-select-a-generic-type-from-the-type-browser"></a>Para selecionar um tipo genérico de navegador de tipo
+
+1. Na caixa **nome do tipo** , digite o nome do tipo que você deseja usar.
+
+2. Depois que o nome do tipo que você deseja usar aparecer na árvore na caixa nome do **tipo** , clique no tipo para selecioná-lo para fazer com que as caixas suspensas sejam exibidas.
+
+     Selecione o tipo que você deseja usar para fechar o genérico nas caixas suspensas e clique em **OK**.
+
+## <a name="types-displayed-in-the-type-browser"></a>Tipos exibidos no navegador de tipo
+ Os tipos exibidos no navegador do tipo podem variar dependendo de como o navegador de tipo foi iniciado. Se o navegador de tipos foi iniciado a partir de um projeto de fluxo de trabalho dentro de **VS2010**, por padrão, todos os tipos nos assemblies referenciados e nos projetos referenciados são mostrados. Se o navegador de tipos tiver sido iniciado fora de um sistema de projeto **VS2010** (como em um aplicativo de fluxo de trabalho rehospedado ou em um arquivo de fluxo de trabalho autônomo), por padrão, os tipos de todos os assemblies carregados no AppDomain serão mostrados.
+
+ No navegador de tipo pode ser filtro por desenvolvedores do designer de atividade. Para quaisquer atividades determinada, você pode ver apenas um subconjunto dos tipos. Por exemplo, na atividade de <xref:System.Activities.Statements.TryCatch> , somente os tipos derivados de <xref:System.Exception> são mostrados no navegador do tipo.
+
+## <a name="filtering-search-results-in-the-type-browser"></a>Resultados de pesquisa de filtragem no navegador de tipo
+ A lista de tipos na caixa **nome do tipo** fica mais curta à medida que você digita mais caracteres para encontrar uma correspondência. Somente tipos cujo nome totalmente qualificado começa com a cadeia de caracteres que você digitou ou tipos cujo nome curto começa com a cadeia de caracteres que você digitou aparecem na lista filtrada.
+
+ Por exemplo:
+
+1. A **operação** de digitação corresponde a <xref:System.OperationCanceledException>, mas não <xref:System.InvalidOperationException>. Para corresponder <xref:System.InvalidOperationException>, inicie digite System.I ou inválido.
+
+2. Digitar **Generic** corresponde a <xref:System.GenericUriParser> mas não a tipos no namespace <xref:System.Collections.Generic>. Para procurar por tipos no namespace <xref:System.Collections.Generic> , digite o nome totalmente qualificado do namespace.
+
+## <a name="selecting-a-service-contract-using-the-type-browser-dialog"></a>Selecionando um contrato de serviço usando a caixa de diálogo de navegador de tipo
+ Ao selecionar um tipo de contrato de serviço, o navegador do tipo mostra somente os tipos que têm o atributo de <xref:System.ServiceModel.ServiceContractAttribute> .
+
+## <a name="see-also"></a>Consulte também
  [Usando os designers de atividade](../workflow-designer/using-the-activity-designers.md)

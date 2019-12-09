@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugThread2::SetNextStatement
 ms.assetid: 9e2834dd-4ecf-45af-8e6c-f9318ebdac06
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 896167d3655c5234f56f3b70e4369706250973c5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 87a5ba19eed0c0ee4d78feeb755b50db428d77d9
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62915526"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66320082"
 ---
 # <a name="idebugthread2setnextstatement"></a>IDebugThread2::SetNextStatement
 Define o ponteiro de instrução atual para o contexto de código fornecida.
@@ -38,12 +41,12 @@ int SetNextStatement ( 
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `pStackFrame` Reservado para uso futuro; definido como um valor nulo.
+## <a name="parameters"></a>Parâmetros
+`pStackFrame`\
+Reservado para uso futuro; definido como um valor nulo.
 
- `pCodeContext`
-
- [in] Uma [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) objeto que descreve o local do código prestes a ser executada e seu contexto.
+`pCodeContext`\
+[in] Uma [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) objeto que descreve o local do código prestes a ser executada e seu contexto.
 
 ## <a name="return-value"></a>Valor de retorno
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro. A tabela a seguir mostra os outros valores possíveis.

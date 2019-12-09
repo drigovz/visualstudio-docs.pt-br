@@ -13,11 +13,11 @@ caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 77e4701d3d8ec54fd37d6483f55b10a28af65b15
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58922348"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68194057"
 ---
 # <a name="popdirlistfunc"></a>POPDIRLISTFUNC
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ typedef BOOL (*POPDIRLISTFUNC)(
  pvCallerData  
  [in] Valor de usuário atribuído ao [SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md).  
   
- bFolder  
+ bOpções de pasta  
  [in] `TRUE` se o nome no `lpDirectoryOrFileName` é um diretório; caso contrário, o nome é um nome de arquivo.  
   
  lpDirectoryOrFileName  

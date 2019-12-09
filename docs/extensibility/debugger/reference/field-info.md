@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - FIELD_INFO structure
 ms.assetid: bfafef6d-0c83-43d7-a779-1f0d24b166a1
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 83cdacae192ad1286203139432a0eacd632b8511
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 352e4bdf6c79dc67f0bf396cb1164e96e80fbf5f
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56694218"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66337695"
 ---
 # <a name="fieldinfo"></a>FIELD_INFO
 Essa estrutura descreve uma variável local, parâmetro ou outro campo.
@@ -45,15 +48,20 @@ public struct FIELD_INFO {
 ```
 
 ## <a name="members"></a>Membros
-dwFields uma combinação de sinalizadores dos [FIELD_INFO_FIELDS](../../../extensibility/debugger/reference/field-info-fields.md) enumeração que especifica quais membros são preenchidos.
+`dwFields`\
+Uma combinação de sinalizadores do [FIELD_INFO_FIELDS](../../../extensibility/debugger/reference/field-info-fields.md) enumeração que especifica quais membros são preenchidos.
 
-bstrFullName o nome completo do campo.
+`bstrFullName`\
+O nome completo do campo.
 
-o nome curto do campo de bstrName.
+`bstrName`\
+O nome curto do campo.
 
-bstrType o tipo do campo.
+`bstrType`\
+O tipo do campo.
 
-dwModifiers uma combinação de sinalizadores dos [FIELD_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md) enumeração que descreve o campo.
+`dwModifiers`\
+Uma combinação de sinalizadores do [FIELD_MODIFIERS](../../../extensibility/debugger/reference/field-modifiers.md) enumeração que descreve o campo.
 
 ## <a name="remarks"></a>Comentários
 Essa estrutura é passada para o [GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md) método onde ele é preenchido.

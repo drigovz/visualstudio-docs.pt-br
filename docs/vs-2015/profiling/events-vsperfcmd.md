@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: dae5bb86cd7f9da6151920a8020d71452bf8863f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 265dc7f84fbd1ec19b520e2e30d3554e2c66683b
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444005"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74302129"
 ---
 # <a name="events-vsperfcmd"></a>Eventos (VSPerfCmd)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ VSPerfCmd.exe /events {On|Off} {Guid|ProviderName} [,Flags[,Level]
   
  A opção **Eventos** compreende as seguintes palavras-chave kernel como nomes de provedor:  
   
- **Processo**  
+ **Process**  
  Eventos de processos  
   
  **Thread**  
@@ -86,7 +86,7 @@ C:\<path>VSPerfCmd -events on, \".NET Common Language Runtime\", 0x7fffffff, 5
 ```  
   
 > [!IMPORTANT]
-> Se você não excluir os eventos de inicialização, como tais eventos não são listados no arquivo MOF (Managed Object Format), eles aparecerão como GUIDs no relatório. Para obter mais informações, confira esta página no site da Microsoft: [Gerenciado de exemplo de arquivo de formato (MOF) do objeto](http://go.microsoft.com/fwlink/?linkid=37118).  
+> Se você não excluir os eventos de inicialização, como tais eventos não são listados no arquivo MOF (Managed Object Format), eles aparecerão como GUIDs no relatório. Para obter mais informações, consulte esta página no site da Microsoft: [Arquivo MOF (Managed Object Format) de exemplo](https://go.microsoft.com/fwlink/?linkid=37118).  
   
 ## <a name="see-also"></a>Consulte também  
  [VSPerfCmd](../profiling/vsperfcmd.md)   

@@ -1,44 +1,42 @@
 ---
 title: IDiaEnumDebugStreams::Skip | Microsoft Docs
-ms.date: 11/15/2016
-ms.prod: visual-studio-dev14
-ms.technology: vs-ide-debug
-ms.topic: reference
+ms.date: 11/04/2016
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaEnumDebugStreams::Skip method
 ms.assetid: 6ec7753c-d7af-4879-b107-1b3442e0b025
-caps.latest.revision: 11
-author: MikeJo5000
+author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 90bf6b41400143d7a6703db24c031cb3ed31de2c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.workload:
+- multiple
+ms.openlocfilehash: 25fb1cb952c41d412df72ff7c0f0ad90e56ee6c0
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62838178"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744697"
 ---
 # <a name="idiaenumdebugstreamsskip"></a>IDiaEnumDebugStreams::Skip
-[!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
+Ignora um número especificado de fluxos de depuração em uma sequência de enumeração.
 
-Ignora um número especificado de fluxos de depuração em uma sequência de enumeração.  
-  
-## <a name="syntax"></a>Sintaxe  
-  
-```cpp#  
-HRESULT Skip (   
-   ULONG celt  
-);  
-```  
-  
-#### <a name="parameters"></a>Parâmetros  
- `celt`  
- [in] O número de fluxos de depuração na sequência de enumeração para ignorar.  
-  
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE` se não houver nenhum mais registros a serem ignorados.  
-  
-## <a name="see-also"></a>Consulte também  
- [IDiaEnumDebugStreams](../../debugger/debug-interface-access/idiaenumdebugstreams.md)
+## <a name="syntax"></a>Sintaxe
+
+```C++
+HRESULT Skip ( 
+   ULONG celt
+);
+```
+
+#### <a name="parameters"></a>Parâmetros
+ `celt`
+
+no O número de fluxos de depuração na sequência de enumeração a serem ignorados.
+
+## <a name="return-value"></a>Valor retornado
+ Se for bem-sucedido, retornará `S_OK`; caso contrário, retornará `S_FALSE` se não houver mais registros a serem ignorados.
+
+## <a name="see-also"></a>Consulte também
+- [IDiaEnumDebugStreams](../../debugger/debug-interface-access/idiaenumdebugstreams.md)

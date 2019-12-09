@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - UNMANAGED_ADDRESS_PHYSICAL structure
 ms.assetid: fed09686-caa6-4efc-851e-a0432019e9d0
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a3b1feed9c32746c662131ba613fa19ca1aac0ae
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 93f6d1094a490041cd04a47fa073d2e75b8d2e23
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62864593"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66316114"
 ---
 # <a name="unmanagedaddressphysical"></a>UNMANAGED_ADDRESS_PHYSICAL
 Essa estrutura representa um endereço físico.
@@ -36,8 +39,9 @@ public struct UNMANAGED_ADDRESS_PHYSICAL {
 }
 ```
 
-## <a name="terms"></a>Termos
- deslocamento de um de 64 bits em um espaço de endereço físico de deslocamento.
+## <a name="members"></a>Membros
+ `offset`\
+ Um deslocamento de 64 bits em um espaço de endereço físico.
 
 ## <a name="remarks"></a>Comentários
  Essa estrutura é parte da união na [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) estrutura quando o `dwKind` campo dos `DEBUG_ADDRESS_UNION` estrutura é definida como `ADDRESS_KIND_UNMANAGED_PHYSICAL` (um valor da [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) enumeração).

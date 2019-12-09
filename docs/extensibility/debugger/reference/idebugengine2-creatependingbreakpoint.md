@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEngine2::CreatePendingBreakpoint
 ms.assetid: 92e85b90-a931-48d9-89a7-a6edcb83ae5a
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 72719a2dc6d424487c0fdd6b5850ff7f1d1e29aa
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: fdd7fde0540754df3b152eb38d729576a7b9fe26
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62920887"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66333310"
 ---
 # <a name="idebugengine2creatependingbreakpoint"></a>IDebugEngine2::CreatePendingBreakpoint
 Cria um ponto de interrupção pendente no mecanismo de depuração (DES).
@@ -38,14 +41,12 @@ int CreatePendingBreakpoint(
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
-`pBPRequest`
+## <a name="parameters"></a>Parâmetros
+`pBPRequest`\
+[in] Uma [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md) objeto que descreve o ponto de interrupção pendente para criar.
 
- [in] Uma [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md) objeto que descreve o ponto de interrupção pendente para criar.
-
-`ppPendingBP`
-
- [out] Retorna um [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) objeto que representa o ponto de interrupção pendente.
+`ppPendingBP`\
+[out] Retorna um [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) objeto que representa o ponto de interrupção pendente.
 
 ## <a name="return-value"></a>Valor de retorno
 Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro. Normalmente retorna `E_FAIL` se o `pBPRequest` parâmetro não corresponde a qualquer linguagem compatível com o dos se o `pBPRequest` parâmetro é inválido ou incompleto.

@@ -8,14 +8,15 @@ ms.assetid: 54dac8c8-c8ee-4023-af27-b25466e3a6ec
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d7640b4f846dd4fa5a9f8b16ead7019ca3ba821
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: f53b51f9e78e2cb5d327abd3a79ebf2faa3a9204
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430933"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778564"
 ---
 # <a name="markprofile"></a>MarkProfile
 O método `MarkProfile` insere uma marca de perfil no arquivo .*vsp*. A criação de perfil para o thread que contém a função `MarkProfile` deve ser ON para a marca a ser inserida.
@@ -49,7 +50,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI MarkProfile( long lMarker );
 
  Marcas de perfis são globais no escopo. Por exemplo, uma marca de perfil inserida em um thread pode ser usada para marcar o início ou término de um segmento de dados em um thread no arquivo .*vsp*.
 
- O estado de criação de perfil para o thread que contém a função de perfil de marca deve estar ligado quando as marcas e os comentários são inseridos com o comando Mark ou com as funções da API (CommentMarkAtProfile, CommentMarkProfile ou MarkProfile).
+ O estado de criação de perfil para o thread que contém a função de perfil de marca deve estar ativo quando marcas e comentários são inseridos com o comando Mark ou com funções API (CommentMarkAtProfile, CommentMarkProfile ou MarkProfile).
 
 > [!IMPORTANT]
 > O método MarkProfile deve ser usado somente com criação de perfil por instrumentação.
@@ -58,7 +59,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI MarkProfile( long lMarker );
  *Microsoft.VisualStudio.Profiler.dll*
 
 ## <a name="function-information"></a>Informações de função
- Cabeçalho: Declarado em *VSPerf.h*
+ Cabeçalho: declarado em *VSPerf.h*
 
  Biblioteca de importação: *VSPerf.lib*
 

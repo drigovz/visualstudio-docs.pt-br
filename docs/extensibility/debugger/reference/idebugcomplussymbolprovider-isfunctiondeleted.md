@@ -5,17 +5,20 @@ ms.topic: reference
 helpviewer_keywords:
 - IDebugComPlusSymbolProvider::IsFunctionDeleted
 ms.assetid: b276bd25-6658-4898-bc36-04ecdf92aa2f
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0d056b14da0b41cf26278fc1e8cd0087332b682f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 0c16b4e89e89477a5dd11a7d358f441c62f13db8
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62922668"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66336552"
 ---
 # <a name="idebugcomplussymbolproviderisfunctiondeleted"></a>IDebugComPlusSymbolProvider::IsFunctionDeleted
 Determina que a função no endereço especificado de depuração seja excluída.
@@ -34,10 +37,9 @@ int IsFunctionDeleted(
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
-`pAddress`
-
- [in] O endereço de depuração é representado por um [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interface. Esse endereço deve ser um METHOD_ADDRESS.
+## <a name="parameters"></a>Parâmetros
+`pAddress`\
+[in] O endereço de depuração é representado por um [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interface. Esse endereço deve ser um METHOD_ADDRESS.
 
 ## <a name="return-value"></a>Valor de retorno
 Retorna se a função for excluída, `S_OK`. Se a função for existir, retornará `S_FALSE`.

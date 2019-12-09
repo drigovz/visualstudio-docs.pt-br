@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e54f800b5843a17e0617b57de21bfcdd4616cef4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 66c7a05ef6b8e90eda2b29bdbb7d33fcf25a2af2
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62841634"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739263"
 ---
-# <a name="idiasymbolgetsubtypeid"></a>IDiaSymbol::get_subTypeId
-Recupera a ID do tipo sub.
+# <a name="idiasymbolget_subtypeid"></a>IDiaSymbol::get_subTypeId
+Recupera a ID do subtipo.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -30,9 +30,9 @@ HRESULT get_subTypeId(
 #### <a name="parameters"></a>Parâmetros
  `pRetVal`
 
-[out] Um ponteiro para um `DWORD` que contém a ID do tipo sub.
+fora Um ponteiro para um `DWORD` que contém a ID de subtipo.
 
-## <a name="return-value"></a>Valor de retorno
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE` ou um código de erro.
 
 ## <a name="see-also"></a>Consulte também

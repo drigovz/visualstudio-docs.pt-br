@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c71983dd5f1273679351bc45c1db2df62757d153
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: da436308c71a66d3070d42128d8da03ae88d2935
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62977650"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573908"
 ---
 # <a name="imachinedebugmanagercookieaddapplication"></a>IMachineDebugManagerCookie::AddApplication
-Adiciona um aplicativo para a execução lista de aplicativos.  
+Adiciona um aplicativo à lista de aplicativos em execução.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -39,15 +39,15 @@ HRESULT AddApplication(
   
 #### <a name="parameters"></a>Parâmetros  
  `pda`  
- [in] Aplicativo para a execução lista de aplicativos.  
+ no Aplicativo para a lista de aplicativos em execução.  
   
  `dwDebugAppCookie`  
- [in] Um cookie que identifica o aplicativo de depuração.  
+ no Um cookie que identifica o aplicativo de depuração.  
   
  `pdwAppCookie`  
- [out] Um cookie que é usado para remover o aplicativo do Gerenciador de depuração de máquina.  
+ fora Um cookie que é usado para remover o aplicativo do Machine Debug Manager.  
   
-## <a name="return-value"></a>Valor de retorno  
+## <a name="return-value"></a>Valor retornado  
  O método retorna um `HRESULT`. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.  
   
 |Valor|Descrição|  
@@ -55,9 +55,9 @@ HRESULT AddApplication(
 |`S_OK`|O método foi bem-sucedido.|  
   
 ## <a name="remarks"></a>Comentários  
- Esse método é chamado pelo Gerenciador de depuração do processo sempre que `IProcessDebugManager::AddApplication` é chamado.  
+ Esse método é chamado pelo Gerenciador de depuração de processo sempre que `IProcessDebugManager::AddApplication` é chamado.  
   
 ## <a name="see-also"></a>Consulte também  
- [Interface IMachineDebugManagerCookie](../../winscript/reference/imachinedebugmanagercookie-interface.md)   
+   de [interface IMachineDebugManagerCookie](../../winscript/reference/imachinedebugmanagercookie-interface.md)  
  [IMachineDebugManagerCookie::RemoveApplication](../../winscript/reference/imachinedebugmanagercookie-removeapplication.md)   
  [IProcessDebugManager::AddApplication](../../winscript/reference/iprocessdebugmanager-addapplication.md)

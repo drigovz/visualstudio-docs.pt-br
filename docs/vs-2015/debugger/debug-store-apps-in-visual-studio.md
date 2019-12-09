@@ -14,12 +14,12 @@ caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f1f8824000c56fbd74f6ca069eb0535559698bf4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2be61a066157b203e4d09ff5f5dff5340dc0ec67
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58928993"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74298331"
 ---
 # <a name="debug-store-apps-in-visual-studio"></a>Depurar aplicativos da Store no Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,13 +30,13 @@ O depurador do Visual Studio permite que você controle a execução de um progr
 
 |||
 |-|-|
-|[Iniciar uma sessão de depuração (JavaScript)](../debugger/start-a-debugging-session-for-store-apps-in-visual-studio-javascript.md)|A sessão Como iniciar uma depuração descreve diferentes opções para configurar e iniciar uma sessão de depuração para um aplicativo JavaScript.|
+|[Iniciar uma sessão de depuração (JavaScript)](../debugger/start-a-debugging-session-for-store-apps-in-visual-studio-javascript.md)|{1&gt;A sessão Como iniciar uma depuração descreve diferentes opções para configurar e iniciar uma sessão de depuração para um aplicativo JavaScript.&lt;1}|
 |[Controlar a execução em uma sessão de depuração (JavaScript)](../debugger/control-execution-of-a-store-app-in-a-visual-studio-debug-session-for-windows-store-apps-javascript.md)|A navegação pelo depurador leva você através de um aplicativo simples que demonstra como iniciar e parar a depuração, como navegar através do código e como visualizar o estado do programa.|
-|[Início Rápido: depurar HTML e CSS](../debugger/quickstart-debug-html-and-css.md)|Depurar HTML e CSS mostra como depurar um aplicativo JavaScript interativamente usando ferramentas de DOM ativas para visualizar e modificar HTML e CSS.|
-|[Início Rápido: Depurar em JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)|Depurar JavaScript usando o console mostra como depurar interativamente um aplicativo JavaScript usando [comandos do JavaScript Console](../debugger/javascript-console-commands.md).|
+|[Guia de início rápido: depurar HTML e CSS](../debugger/quickstart-debug-html-and-css.md)|Depurar HTML e CSS mostra como depurar um aplicativo JavaScript interativamente usando ferramentas de DOM ativas para visualizar e modificar HTML e CSS.|
+|[Guia de início rápido: depurar JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)|Depurar JavaScript usando o console mostra como depurar interativamente um aplicativo JavaScript usando comandos do [console do JavaScript](../debugger/javascript-console-commands.md).|
 |[Iniciar uma sessão de depuração (VB, C#, C++ e XAML)](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)|A sessão Como iniciar uma depuração (Visual C++, Visual C# e Visual Basic) descreve diferentes opções para configurar e iniciar uma sessão de depuração para um aplicativo gravado com Visual C++, Visual C# ou Visual Basic.|
 |[Navegar em uma sessão de depuração (XAML e C#)](../debugger/navigate-a-debugging-session-in-visual-studio-xaml-and-csharp.md)|A navegação pelo depurador leva você através de um aplicativo simples que demonstra como iniciar e parar a depuração, como navegar através do código e como visualizar e mudar o estado do programa.|
-|[Disparar eventos de suspensão, retomada e segundo plano para a Windows Store)](../debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md)|O depurador desativa eventos do Gerenciamento de Vida Útil de Processos (PLM) do Windows que suspendem, retomam e encerram aplicativos. Você pode acionar esses eventos da barra de ferramentas do depurador.<br /><br /> Tarefas em segundo plano permitem que você realize operações importantes, mesmo quando seu aplicativo foi suspenso. O depurador permite que você inicie e depure essas tarefas em segundo plano.|
+|[Disparar eventos de suspensão, retomada e segundo plano para a Windows Store)](../debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md)|O depurador desabilita eventos do Gerenciamento do Tempo de Vida do Processo (PLM) do Windows que suspendem, retomam e encerram aplicativos. Você pode acionar esses eventos da barra de ferramentas do depurador.<br /><br /> Tarefas em segundo plano permitem que você realize operações importantes, mesmo quando seu aplicativo foi suspenso. O depurador permite iniciar e depurar essas tarefas em segundo plano.|
 
 ## <a name="see-also"></a>Consulte também
- [Depuração no Visual Studio (na biblioteca MSDN)](http://go.microsoft.com/fwlink/?LinkID=226896)
+ [Depuração no Visual Studio (na biblioteca MSDN)](https://go.microsoft.com/fwlink/?LinkID=226896)

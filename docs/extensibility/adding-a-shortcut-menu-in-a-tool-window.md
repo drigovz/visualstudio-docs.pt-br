@@ -1,5 +1,5 @@
 ---
-title: Adicionar um Menu de atalho em uma janela de ferramentas | Microsoft Docs
+title: Adicionando um menu de atalho em uma janela de ferramentas | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,38 +8,38 @@ helpviewer_keywords:
 - shortcut menus, adding to tool windows
 - tool windows, adding context menus
 ms.assetid: 50234537-9e95-4b7e-9cb7-e5cf26d6e9d2
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: eede5f76a9689f79e769d23572a1d92f3ae3a867
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ef3ba3e9a59ac1289803260b5894b05927205a20
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62891898"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72633429"
 ---
-# <a name="add-a-shortcut-menu-in-a-tool-window"></a>Adicionar um menu de atalho em uma janela de ferramenta
-Este passo a passo coloca um menu de atalho em uma janela de ferramentas. Um menu de atalho é um menu que aparece quando um usuário clica um botão, a caixa de texto ou o plano de fundo da janela. Comandos em um menu de atalho se comportam da mesma maneira como os comandos em outros menus ou barras de ferramentas. Para dar suporte a um menu de atalho, especifique-a na *VSCT* de arquivo e exibi-la na resposta para o botão direito do mouse.
+# <a name="add-a-shortcut-menu-in-a-tool-window"></a>Adicionar um menu de atalho em uma janela de ferramentas
+Este tutorial coloca um menu de atalho em uma janela de ferramentas. Um menu de atalho é um menu que aparece quando um usuário clica com o botão direito do mouse em um botão, caixa de texto ou plano de fundo da janela. Os comandos em um menu de atalho se comportam da mesma forma que comandos em outros menus ou barras de ferramentas. Para dar suporte a um menu de atalho, especifique-o no arquivo *. vsct* e exiba-o em resposta ao clique com o botão direito do mouse.
 
 Uma janela de ferramentas consiste em um controle de usuário do WPF em uma classe de janela de ferramenta personalizada que herda de <xref:Microsoft.VisualStudio.Shell.ToolWindowPane>.
 
-Este passo a passo mostra como criar um menu de atalho como um menu do Visual Studio, declarando os itens de menu na *VSCT* de arquivo e, em seguida, usando a estrutura de pacote gerenciado para implementá-los na classe que define a janela da ferramenta. Essa abordagem facilita o acesso a comandos do Visual Studio, elementos de interface do usuário e o modelo de objeto de automação.
+Este tutorial mostra como criar um menu de atalho como um menu do Visual Studio, declarando itens de menu no arquivo *. vsct* e, em seguida, usando a estrutura de pacote gerenciado para implementá-los na classe que define a janela de ferramentas. Essa abordagem facilita o acesso aos comandos do Visual Studio, aos elementos da interface do usuário e ao modelo de objeto de automação.
 
-Como alternativa, se seu menu de atalho não for acessar a funcionalidade do Visual Studio, você pode usar o <xref:System.Windows.FrameworkElement.ContextMenu%2A> propriedade de um elemento XAML no controle de usuário. Para obter mais informações, consulte [ContextMenu](/dotnet/framework/wpf/controls/contextmenu).
+Como alternativa, se o menu de atalho não acessar a funcionalidade do Visual Studio, você poderá usar a propriedade <xref:System.Windows.FrameworkElement.ContextMenu%2A> de um elemento XAML no controle de usuário. Para obter mais informações, consulte [ContextMenu](/dotnet/framework/wpf/controls/contextmenu).
 
-## <a name="prerequisites"></a>Pré-requisitos
-A partir do Visual Studio 2015, você não instale o SDK do Visual Studio no Centro de download. Ele é incluído como um recurso opcional na instalação do Visual Studio. Você também pode instalar o SDK do VS mais tarde. Para obter mais informações, consulte [instalando o SDK do Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
+## <a name="prerequisites"></a>Prerequisites
+A partir do Visual Studio 2015, você não instala o SDK do Visual Studio a partir do centro de download. Ele é incluído como um recurso opcional na instalação do Visual Studio. Você também pode instalar o SDK do VS mais tarde. Para obter mais informações, consulte [instalando o SDK do Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
 
-## <a name="create-the-tool-window-shortcut-menu-package"></a>Criar o pacote de menu de atalho de janela de ferramenta
+## <a name="create-the-tool-window-shortcut-menu-package"></a>Criar o pacote do menu de atalho da janela de ferramentas
 
-1. Crie um projeto do VSIX chamado `TWShortcutMenu` e adicione um modelo de janela de ferramenta denominado **MenuDeAtalho** a ele. Para obter mais informações sobre como criar uma janela de ferramentas, consulte [criar uma extensão com uma janela de ferramentas](../extensibility/creating-an-extension-with-a-tool-window.md).
+1. Crie um projeto VSIX chamado `TWShortcutMenu` e adicione um modelo de janela de ferramentas chamado **ShortcutMenu** a ele. Para obter mais informações sobre como criar uma janela de ferramentas, consulte [criar uma extensão com uma janela de ferramentas](../extensibility/creating-an-extension-with-a-tool-window.md).
 
 ## <a name="specifying-the-shortcut-menu"></a>Especificando o menu de atalho
-Um menu de atalho, como mostrado neste passo a passo permite que o usuário selecionar em uma lista de cores que são usados para preencher a tela de fundo da janela de ferramentas.
+Um menu de atalho como aquele mostrado neste passo a passos permite que o usuário selecione em uma lista de cores que são usadas para preencher o plano de fundo da janela de ferramentas.
 
-1. Na *ShortcutMenuPackage.vsct*, localize no elemento GuidSymbol chamado guidShortcutMenuPackageCmdSet e declare o menu de atalho, grupo de menus de atalho e opções de menu. O elemento GuidSymbol agora deve ser assim:
+1. Em *ShortcutMenuPackage. vsct*, localize no elemento GuidSymbol chamado guidShortcutMenuPackageCmdSet e declare o menu de atalho, o grupo de menus de atalho e as opções de menu. O elemento GuidSymbol agora deve ser assim:
 
     ```xml
     <GuidSymbol name="guidShortcutMenuPackageCmdSet" value="{00000000-0000-0000-0000-0000}"> // your GUID here
@@ -52,7 +52,7 @@ Um menu de atalho, como mostrado neste passo a passo permite que o usuário sele
     </GuidSymbol>
     ```
 
-2. Logo antes do elemento de botões, crie um elemento de Menus e, em seguida, defina o menu de atalho nele.
+2. Logo antes do elemento Buttons, crie um elemento menus e, em seguida, defina o menu de atalho nele.
 
     ```vb
     <Menus>
@@ -65,9 +65,9 @@ Um menu de atalho, como mostrado neste passo a passo permite que o usuário sele
     </Menus>
     ```
 
-    Um menu de atalho não tem um pai porque ele não é parte de um menu ou barra de ferramentas.
+    Um menu de atalho não tem um pai porque ele não faz parte de um menu ou barra de ferramentas.
 
-3. Criar um elemento de grupos com um elemento de grupo que contém os itens de menu de atalho e associe o grupo de menu de atalho.
+3. Crie um elemento groups com um elemento Group que contém os itens de menu de atalho e associe o grupo ao menu de atalho.
 
     ```xml
     <Groups>
@@ -77,7 +77,7 @@ Um menu de atalho, como mostrado neste passo a passo permite que o usuário sele
     </Groups>
     ```
 
-4. O elemento de botões, define os comandos individuais que serão exibido no menu de atalho. O elemento de botões deve ter esta aparência:
+4. No elemento Buttons, defina os comandos individuais que serão exibidos no menu de atalho. O elemento Buttons deve ser assim:
 
     ```xml
     <Buttons>
@@ -112,7 +112,7 @@ Um menu de atalho, como mostrado neste passo a passo permite que o usuário sele
     </Buttons>
     ```
 
-5. Na *ShortcutMenuCommand.cs*, adicione as definições para o comando do conjunto de itens de menu, o menu de atalho e GUID.
+5. No *ShortcutMenuCommand.cs*, adicione as definições para o GUID do conjunto de comandos, o menu de atalho e os itens de menu.
 
     ```csharp
     public const string guidShortcutMenuPackageCmdSet = "00000000-0000-0000-0000-00000000"; // your GUID will differ
@@ -122,21 +122,21 @@ Um menu de atalho, como mostrado neste passo a passo permite que o usuário sele
     public const int cmdidBlue = 0x104;
     ```
 
-    Essas são as mesmas IDs de comando que estão definidas na seção símbolos do *ShortcutMenuPackage.vsct* arquivo. O grupo de contexto não é incluído aqui porque ela é necessária apenas a *VSCT* arquivo.
+    Essas são as mesmas IDs de comando que são definidas na seção Symbols do arquivo *ShortcutMenuPackage. vsct* . O grupo de contexto não está incluído aqui porque é necessário apenas no arquivo *. vsct* .
 
 ## <a name="implementing-the-shortcut-menu"></a>Implementando o menu de atalho
  Esta seção implementa o menu de atalho e seus comandos.
 
-1. Na *ShortcutMenu.cs*, a janela da ferramenta pode obter o serviço de comando de menu, mas não é o controle que ele contém. As etapas a seguir mostram como disponibilizar o serviço de comando de menu para o controle de usuário.
+1. No *ShortcutMenu.cs*, a janela de ferramentas pode obter o serviço de comando de menu, mas o controle que ele contém não pode. As etapas a seguir mostram como tornar o serviço de comando de menu disponível para o controle de usuário.
 
-2. Na *ShortcutMenu.cs*, adicione as seguintes instruções using:
+2. No *ShortcutMenu.cs*, adicione as seguintes diretivas using:
 
     ```csharp
     using Microsoft.VisualStudio.Shell;
     using System.ComponentModel.Design;
     ```
 
-3. Substitua método de Initialize () da janela de ferramentas para obter o serviço de comando de menu e adicionar o controle, passando o serviço de comando de menu para o construtor:
+3. Substitua o método Initialize () da janela da ferramenta para obter o serviço de comando de menu e adicione o controle, passando o serviço de comando de menu para o construtor:
 
     ```csharp
     protected override void Initialize()
@@ -146,7 +146,7 @@ Um menu de atalho, como mostrado neste passo a passo permite que o usuário sele
     }
     ```
 
-4. No construtor de janela de ferramenta MenuDeAtalho, remova a linha que adiciona o controle. Agora, o construtor deve ser assim:
+4. No construtor da janela de ferramentas ShortcutMenu, remova a linha que adiciona o controle. O Construtor agora deve ser assim:
 
     ```csharp
     public ShortcutMenu() : base(null)
@@ -157,7 +157,7 @@ Um menu de atalho, como mostrado neste passo a passo permite que o usuário sele
     }
     ```
 
-5. Na *ShortcutMenuControl.xaml.cs*, adicione um campo particular para o serviço de comando de menu e altere o construtor de controle para aproveitar o serviço de comando de menu. Em seguida, use o serviço de comando de menu para adicionar os comandos de menu de contexto. O construtor ShortcutMenuControl agora deve parecer com o código a seguir. O manipulador de comandos será definido posteriormente.
+5. No *ShortcutMenuControl.XAML.cs*, adicione um campo particular para o serviço de comando de menu e altere o construtor de controle para obter o serviço de comando de menu. Em seguida, use o serviço de comando de menu para adicionar os comandos do menu de contexto. O Construtor ShortcutMenuControl agora deve se parecer com o código a seguir. O manipulador de comando será definido mais tarde.
 
     ```csharp
     public ShortcutMenuControl(OleMenuCommandService service)
@@ -183,7 +183,7 @@ Um menu de atalho, como mostrado neste passo a passo permite que o usuário sele
     }
     ```
 
-6. Na *ShortcutMenuControl.xaml*, adicione uma <xref:System.Windows.UIElement.MouseRightButtonDown> eventos para o nível superior <xref:System.Windows.Controls.UserControl> elemento. O arquivo XAML agora deve ser assim:
+6. Em *ShortcutMenuControl. XAML*, adicione um evento de <xref:System.Windows.UIElement.MouseRightButtonDown> ao elemento de <xref:System.Windows.Controls.UserControl> de nível superior. O arquivo XAML agora deve ser assim:
 
     ```vb
     <UserControl x:Class="TWShortcutMenu.ShortcutMenuControl"
@@ -205,7 +205,7 @@ Um menu de atalho, como mostrado neste passo a passo permite que o usuário sele
     </UserControl>
     ```
 
-7. Na *ShortcutMenuControl.xaml.cs*, adicione um stub para o manipulador de eventos.
+7. No *ShortcutMenuControl.XAML.cs*, adicione um stub para o manipulador de eventos.
 
     ```csharp
     private void MyToolWindow_MouseRightButtonDown(object sender, MouseButtonEventArgs e)
@@ -214,7 +214,7 @@ Um menu de atalho, como mostrado neste passo a passo permite que o usuário sele
     }
     ```
 
-8. Adicione o seguinte usando instruções para o mesmo arquivo:
+8. Adicione as seguintes diretivas using ao mesmo arquivo:
 
     ```csharp
     using Microsoft.VisualStudio.Shell;
@@ -224,7 +224,7 @@ Um menu de atalho, como mostrado neste passo a passo permite que o usuário sele
     using System.Windows.Media;
     ```
 
-9. Implementar o `MyToolWindowMouseRightButtonDown` evento da seguinte maneira.
+9. Implemente o evento `MyToolWindowMouseRightButtonDown` da seguinte maneira.
 
     ```csharp
     private void MyToolWindow_MouseRightButtonDown(object sender, MouseButtonEventArgs e)
@@ -240,7 +240,7 @@ Um menu de atalho, como mostrado neste passo a passo permite que o usuário sele
     }
     ```
 
-    Isso cria uma <xref:System.ComponentModel.Design.CommandID> objeto para o menu de atalho, identifica o local do clique do mouse e abre o menu de atalho no local usando o <xref:Microsoft.VisualStudio.Shell.OleMenuCommandService.ShowContextMenu%2A> método.
+    Isso cria um objeto <xref:System.ComponentModel.Design.CommandID> para o menu de atalho, identifica o local do clique do mouse e abre o menu de atalho nesse local usando o método <xref:Microsoft.VisualStudio.Shell.OleMenuCommandService.ShowContextMenu%2A>.
 
 10. Implemente o manipulador de comandos.
 
@@ -264,18 +264,18 @@ Um menu de atalho, como mostrado neste passo a passo permite que o usuário sele
     }
     ```
 
-    Nesse caso, apenas um método trata os eventos para todos os itens de menu, identificando o <xref:System.ComponentModel.Design.CommandID> e definindo a cor do plano de fundo adequadamente. Se os itens de menu continha comandos relacionadas, você teria criado um manipulador de eventos separado para cada comando.
+    Nesse caso, apenas um método manipula eventos para todos os itens de menu identificando o <xref:System.ComponentModel.Design.CommandID> e definindo a cor do plano de fundo de acordo. Se os itens de menu contivessem comandos não relacionados, você teria criado um manipulador de eventos separado para cada comando.
 
-## <a name="test-the-tool-window-features"></a>Testar os recursos da janela de ferramenta
+## <a name="test-the-tool-window-features"></a>Testar os recursos da janela de ferramentas
 
 1. Compile o projeto e comece a depuração. A instância experimental é exibida.
 
-2. Na instância experimental, clique em **exibição / Windows outras**e, em seguida, clique em **MenuDeAtalho**. Isso deve exibir a janela de ferramenta.
+2. Na instância experimental, clique em **Exibir/outras janelas**e, em seguida, clique em **ShortcutMenu**. Fazer isso deve exibir a janela da ferramenta.
 
-3. Clique com botão direito no corpo da janela de ferramenta. Deve ser exibido um menu de atalho que tem uma lista de cores.
+3. Clique com o botão direito do mouse no corpo da janela de ferramentas. Um menu de atalho que tem uma lista de cores deve ser exibido.
 
-4. Clique em uma cor no menu de atalho. A cor de plano de fundo da janela de ferramenta deverá ser alterada para a cor selecionada.
+4. Clique em uma cor no menu de atalho. A cor do plano de fundo da janela de ferramentas deve ser alterada para a cor selecionada.
 
 ## <a name="see-also"></a>Consulte também
 - [Comandos, menus e barras de ferramentas](../extensibility/internals/commands-menus-and-toolbars.md)
-- [Usar e fornecer serviços](../extensibility/using-and-providing-services.md)
+- [Usando e fornecendo serviços](../extensibility/using-and-providing-services.md)

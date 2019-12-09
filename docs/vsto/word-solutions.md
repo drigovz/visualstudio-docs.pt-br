@@ -1,6 +1,6 @@
 ---
 title: Soluções do Word
-ms.date: 02/02/2017
+ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -26,81 +26,80 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0c34ea0489801a563745047b920e38afe58aec1c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: c2d3b9ea3257db11eed766079b169a7bc81fe28a
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445500"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985375"
 ---
 # <a name="word-solutions"></a>Soluções do Word
-  Visual Studio fornece modelos de projeto, que você pode usar para criar personalizações em nível de documento e suplementos do VSTO para o Microsoft Office Word. Você pode usar essas soluções para automatizar o Word, estender os recursos do Word e personalizar a interface do usuário do Word (UI). Para obter mais informações sobre as diferenças entre personalizações no nível de documento e suplementos do VSTO, consulte [visão geral de desenvolvimento de soluções do Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).
+  O Visual Studio fornece modelos de projeto que você pode usar para criar personalizações em nível de documento e suplementos do VSTO para o Microsoft Office Word. Você pode usar essas soluções para automatizar o Word, estender os recursos do Word e personalizar a interface do usuário do Word. Para obter mais informações sobre as diferenças entre as personalizações em nível de documento e os suplementos do VSTO, consulte [visão &#40;geral&#41;do desenvolvimento de soluções do Office VSTO](../vsto/office-solutions-development-overview-vsto.md).
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
 
-> [!NOTE]
-> Interessado em desenvolver soluções que estendem a experiência do Office em toda [várias plataformas](https://dev.office.com/add-in-availability)? Confira a nova [modelo de suplementos do Office](https://dev.office.com/docs/add-ins/overview/office-add-ins). Suplementos do Office têm uma superfície pequena em comparação com soluções e suplementos do VSTO, e você pode criá-los usando quase qualquer tecnologia, como HTML5, JavaScript, CSS3 e XML de programação da web.
+[!include[Add-ins note](includes/addinsnote.md)]
 
  Este tópico fornece as seguintes informações:
 
 - [Automatizar o Word](#automating).
 
-- [Desenvolver personalizações no nível de documento para Word](#doclevel).
+- [Desenvolva personalizações em nível de documento para o Word](#doclevel).
 
-- [Desenvolver suplementos do VSTO para Word](#applevel).
+- [Desenvolva suplementos do VSTO para o Word](#applevel).
 
-- [Personalizar a interface do usuário do Word](#UI).
+- [Personalize a interface do usuário do Word](#UI).
 
-## <a name="automating"></a> Automatizar o Word
- O modelo de objeto do Word expõe vários tipos que você pode usar para automatizar o Word. Por exemplo, você pode programaticamente criar tabelas, documentos de formato e definir o texto em intervalos e os parágrafos. Para obter mais informações, consulte [visão geral do modelo de objeto Word](../vsto/word-object-model-overview.md).
+## <a name="automating"></a>Automatizar o Word
+ O modelo de objeto do Word expõe muitos tipos que você pode usar para automatizar o Word. Por exemplo, você pode criar programaticamente tabelas, formatar documentos e definir o texto em intervalos e parágrafos. Para obter mais informações, consulte [visão geral do modelo de objeto do Word](../vsto/word-object-model-overview.md).
 
- Ao desenvolver soluções do Word no Visual Studio, você também pode usar *hospedar itens* e *hospedar controles* em suas soluções. Esses são objetos que estendem alguns objetos comumente usados no modelo de objeto do Word, como o <xref:Microsoft.Office.Interop.Word.Document> e <xref:Microsoft.Office.Interop.Word.ContentControl> objetos. Objetos estendidos se comportam como os objetos do Word se baseiam, mas adicionar eventos adicionais e recursos de ligação de dados para os objetos. Para obter mais informações, consulte [automatizar o Word usando objetos estendidos](../vsto/automating-word-by-using-extended-objects.md).
+ Ao desenvolver soluções do Word no Visual Studio, você também pode usar *itens de host* e controles de *host* em suas soluções. Esses são objetos que estendem determinados objetos comumente usados no modelo de objeto do Word, como os objetos <xref:Microsoft.Office.Interop.Word.Document> e <xref:Microsoft.Office.Interop.Word.ContentControl>. Os objetos estendidos se comportam como os objetos do Word em que se baseiam, mas adicionam eventos adicionais e recursos de associação de dados aos objetos. Para obter mais informações, consulte [automatizar o Word usando objetos estendidos](../vsto/automating-word-by-using-extended-objects.md).
 
-## <a name="doclevel"></a> Desenvolver personalizações no nível de documento para Word
- Uma personalização no nível de documento para o Microsoft Office Word consiste em um assembly que está associado um documento específico. O assembly estende o documento normalmente, personalizando a interface do usuário e automatizando o Word. Ao contrário de um suplemento VSTO, que é associado com a palavra propriamente dita, funcionalidade que você implementa em uma personalização está disponível somente quando o documento associado é aberto no Word.
+## <a name="doclevel"></a>Desenvolver personalizações em nível de documento para o Word
+ Uma personalização no nível do documento para o Microsoft Office Word consiste em um assembly associado a um documento específico. O assembly normalmente estende o documento Personalizando a interface do usuário e automatizando o Word. Ao contrário de um suplemento do VSTO, que está associado ao próprio Word, a funcionalidade que você implementa em uma personalização está disponível somente quando o documento associado é aberto no Word.
 
- Para criar um projeto de personalização de nível de documento para Word, use os modelos de projeto de documento do Word ou o modelo do Word na **novo projeto** caixa de diálogo do Visual Studio. Para obter mais informações, confira [Como: Criar projetos do Office no Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
+ Para criar um projeto de personalização no nível do documento do Word, use o documento do Word ou modelos de projeto de modelo do Word na caixa de diálogo **novo projeto** do Visual Studio. Para obter mais informações, consulte [como: criar projetos do Office no Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
- Para obter mais informações sobre como funcionam as personalizações no nível do documento como, [arquitetura de personalizações no nível do documento](../vsto/architecture-of-document-level-customizations.md).
+ Para obter mais informações sobre como as personalizações no nível de documento funcionam, [arquitetura de personalizações em nível de documento](../vsto/architecture-of-document-level-customizations.md).
 
-### <a name="word-customization-programming-model"></a>Personalização do modelo de programação do Word
- Quando você cria um projeto de nível de documento para Word, o Visual Studio gera uma classe, chamada `ThisDocument`, que é a base da sua solução. Essa classe representa o documento que está associado com sua solução e fornece um ponto de partida para escrever seu código.
+### <a name="word-customization-programming-model"></a>Modelo de programação de personalização do Word
+ Quando você cria um projeto de nível de documento para o Word, o Visual Studio gera uma classe chamada `ThisDocument`, que é a base da sua solução. Essa classe representa o documento associado à sua solução e fornece um ponto de partida para escrever seu código.
 
- Para obter mais informações sobre o `ThisDocument` classe e outros recursos que você pode usar em um projeto de nível de documento, consulte [personalizações no nível de documento do programa](../vsto/programming-document-level-customizations.md).
+ Para obter mais informações sobre a classe `ThisDocument` e outros recursos que você pode usar em um projeto de nível de documento, consulte [programar personalizações em nível de documento](../vsto/programming-document-level-customizations.md).
 
-## <a name="applevel"></a> Desenvolver suplementos do VSTO para Word
- Um suplemento do VSTO para o Microsoft Office Word consiste em um assembly que é carregado pelo Word. O assembly estende o Word normalmente, personalizando a interface do usuário e automatizando o Word. Ao contrário de uma personalização no nível de documento, que está associada um documento específico, a funcionalidade que você implementa em um suplemento do VSTO não está restrita a nenhum documento.
+## <a name="applevel"></a>Desenvolver suplementos do VSTO para o Word
+ Um suplemento do VSTO para o Microsoft Office Word consiste em um assembly que é carregado pelo Word. O assembly normalmente estende o Word Personalizando a interface do usuário e automatizando o Word. Ao contrário de uma personalização em nível de documento, que é associada a um documento específico, a funcionalidade que você implementa em um suplemento do VSTO não é restrita a nenhum documento único.
 
- Para criar um projeto de suplemento do VSTO para Word, use os modelos de projeto do suplemento do Word na **novo projeto** caixa de diálogo do Visual Studio. Para obter mais informações, confira [Como: Criar projetos do Office no Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
+ Para criar um projeto de suplemento do VSTO para o Word, use os modelos de projeto do suplemento do Word na caixa de diálogo **novo projeto** do Visual Studio. Para obter mais informações, consulte [como: criar projetos do Office no Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
- Para obter informações gerais sobre o funcionamento do VSTO Add-ins, consulte [arquitetura do VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md).
+ Para obter informações gerais sobre como funcionam os suplementos do VSTO, consulte [arquitetura de suplementos do VSTO](../vsto/architecture-of-vsto-add-ins.md).
 
-### <a name="word-add-in-programming-model"></a>Word Add-in do modelo de programação
- Quando você cria um projeto de suplemento do VSTO do Word, o Visual Studio gera uma classe, chamada `ThisAddIn`, que é a base da sua solução. Essa classe fornece um ponto de partida para escrever seu código, e ele também expõe o modelo de objeto do Word para seu suplemento do VSTO.
+### <a name="word-add-in-programming-model"></a>Modelo de programação de suplemento do Word
+ Quando você cria um projeto de suplemento do Word VSTO, o Visual Studio gera uma classe, chamada `ThisAddIn`, que é a base da sua solução. Essa classe fornece um ponto de partida para escrever seu código e também expõe o modelo de objeto do Word para seu suplemento do VSTO.
 
- Para obter mais informações sobre o `ThisAddIn` classe e outros recursos que você pode usar em um suplemento VSTO, consulte [suplementos do VSTO do programa](../vsto/programming-vsto-add-ins.md).
+ Para obter mais informações sobre a classe `ThisAddIn` e outros recursos que você pode usar em um suplemento do VSTO, consulte [programar suplementos do VSTO](../vsto/programming-vsto-add-ins.md).
 
-## <a name="UI"></a> Personalizar a interface do usuário do Word
- Há várias maneiras diferentes de personalizar a interface do usuário do Word. Algumas opções estão disponíveis a todos os tipos de projeto e outras opções estão disponíveis somente para personalizações no nível do documento ou de suplementos do VSTO.
+## <a name="UI"></a>Personalizar a interface do usuário do Word
+ Há várias maneiras diferentes de personalizar a interface do usuário do Word. Algumas opções estão disponíveis para todos os tipos de projeto e outras opções estão disponíveis somente para suplementos do VSTO ou personalizações em nível de documento.
 
 ### <a name="options-for-all-project-types"></a>Opções para todos os tipos de projeto
- A tabela a seguir lista as opções de personalização que estão disponíveis para personalizações no nível de documento e suplementos do VSTO.
+ A tabela a seguir lista as opções de personalização disponíveis para as personalizações no nível do documento e os suplementos do VSTO.
 
 |Tarefa|Para obter mais informações|
 |----------|--------------------------|
-|Personalize a faixa de opções.|[Visão geral da faixa de opções](../vsto/ribbon-overview.md)|
-|Adicione controles dos Windows Forms ou controles estendidos do Word à documentos personalizados (para uma personalização no nível de documento) ou a qualquer documento aberto (para um suplemento VSTO).|[Como: Adicionar controles dos Windows Forms a documentos do Office](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)<br /><br /> [Como: Adicionar controles content a documentos do Word](../vsto/how-to-add-content-controls-to-word-documents.md)<br /><br /> [Como: Adicionar controles de indicador a documentos do Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md)|
+|Personalize a faixa de faixas.|[Visão geral da faixa de faixas](../vsto/ribbon-overview.md)|
+|Adicione controles de Windows Forms ou controles de palavra estendidos ao documento personalizado (para uma personalização em nível de documento) ou a qualquer documento aberto (para um suplemento do VSTO).|[Como: adicionar controles de Windows Forms a documentos do Office](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)<br /><br /> [Como: adicionar controles de conteúdo a documentos do Word](../vsto/how-to-add-content-controls-to-word-documents.md)<br /><br /> [Como: adicionar controles de indicador a documentos do Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md)|
 
-### <a name="options-for-document-level-customizations"></a>Opções para personalizações no nível do documento
- A tabela a seguir lista as opções de personalização que ficam disponíveis somente para personalizações no nível do documento.
+### <a name="options-for-document-level-customizations"></a>Opções para personalizações em nível de documento
+ A tabela a seguir lista as opções de personalização disponíveis apenas para personalizações em nível de documento.
 
 |Tarefa|Para obter mais informações|
 |----------|--------------------------|
-|Adicione um painel de ações para o documento.|[Visão geral do painel de ações](../vsto/actions-pane-overview.md)<br /><br /> [Como: Adicionar um painel de ações a documentos do Word ou pastas de trabalho do Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)|
-|Adicione controles XMLNode e XMLNodes estendidos à superfície do documento.|[Como: Adicionar controles XMLNode a documentos do Word](../vsto/how-to-add-xmlnode-controls-to-word-documents.md)<br /><br /> [Como: Adicionar controles XMLNodes a documentos do Word](../vsto/how-to-add-xmlnodes-controls-to-word-documents.md)|
+|Adicione um painel Ações ao documento.|[Visão geral do painel Ações](../vsto/actions-pane-overview.md)<br /><br /> [Como: adicionar um painel de ações a documentos do Word ou a pastas de trabalho do Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)|
+|Adicione controles de XMLNode e XMLNodes estendidos à superfície do documento.|[Como: adicionar controles XMLNode a documentos do Word](../vsto/how-to-add-xmlnode-controls-to-word-documents.md)<br /><br /> [Como: adicionar controles de XMLNodes a documentos do Word](../vsto/how-to-add-xmlnodes-controls-to-word-documents.md)|
 
-### <a name="options-for-vsto-add-ins"></a>Opções para suplementos VSTO
- A tabela a seguir lista as opções de personalização que ficam disponíveis somente para suplementos do VSTO.
+### <a name="options-for-vsto-add-ins"></a>Opções para suplementos do VSTO
+ A tabela a seguir lista as opções de personalização disponíveis apenas para os suplementos do VSTO.
 
 |Tarefa|Para obter mais informações|
 |----------|--------------------------|
@@ -110,10 +109,10 @@ ms.locfileid: "63445500"
 
 |Título|Descrição|
 |-----------|-----------------|
-|[Visão geral do modelo de objeto do Word](../vsto/word-object-model-overview.md)|Fornece uma visão geral dos principais tipos fornecidos pelo modelo de objeto do Word.|
-|[Automatizar o Word usando objetos estendidos](../vsto/automating-word-by-using-extended-objects.md)|Fornece informações sobre os objetos estendidos (fornecidos pelo [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]) que você pode usar em soluções do Word.|
-|[Controles de formulários do Windows na visão geral de documentos do Office](../vsto/windows-forms-controls-on-office-documents-overview.md)|Descreve como você pode adicionar controles dos Windows Forms a documentos do Word.|
-|[Passo a passo: Criar a primeira personalização no nível de documento para Word](../vsto/walkthrough-creating-your-first-document-level-customization-for-word.md)|Demonstra como criar uma personalização no nível de documento básica para o Word.|
-|[Passo a passo: Criar seu primeiro suplemento VSTO para Word](../vsto/walkthrough-creating-your-first-vsto-add-in-for-word.md)|Demonstra como criar um básico suplemento VSTO para Word.|
-|[Passo a passo: Adicionar controles a um documento em tempo de execução em um suplemento do VSTO](../vsto/walkthrough-adding-controls-to-a-document-at-run-time-in-a-vsto-add-in.md)|Demonstra como adicionar um Windows Forms de botão e um <xref:Microsoft.Office.Tools.Word.RichTextContentControl> a um documento em tempo de execução usando um suplemento do VSTO.|
-|[Word 2010 no desenvolvimento do Office](http://go.microsoft.com/fwlink/?LinkId=199020)|Fornece links para artigos e documentação de referência sobre como desenvolver soluções do Word (não específicas para desenvolvimento do Office usando o Visual Studio).|
+|[Visão geral do modelo de objeto do Word](../vsto/word-object-model-overview.md)|Fornece uma visão geral dos tipos principais fornecidos pelo modelo de objeto do Word.|
+|[Automatizar o Word usando objetos estendidos](../vsto/automating-word-by-using-extended-objects.md)|Fornece informações sobre objetos estendidos (fornecidos pelo [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]) que você pode usar em soluções do Word.|
+|[Visão geral dos controles de Windows Forms em documentos do Office](../vsto/windows-forms-controls-on-office-documents-overview.md)|Descreve como você pode adicionar controles de Windows Forms a documentos do Word.|
+|[Walkthrough: criar sua primeira personalização em nível de documento para o Word](../vsto/walkthrough-creating-your-first-document-level-customization-for-word.md)|Demonstra como criar uma personalização básica no nível do documento para o Word.|
+|[Walkthrough: criar seu primeiro suplemento do VSTO para Word](../vsto/walkthrough-creating-your-first-vsto-add-in-for-word.md)|Demonstra como criar um suplemento do VSTO básico para o Word.|
+|[Walkthrough: adicionar controles a um documento em tempo de execução em um suplemento do VSTO](../vsto/walkthrough-adding-controls-to-a-document-at-run-time-in-a-vsto-add-in.md)|Demonstra como adicionar um botão de Windows Forms e um <xref:Microsoft.Office.Tools.Word.RichTextContentControl> a um documento em tempo de execução usando um suplemento do VSTO.|
+|[Word 2010 no desenvolvimento do Office](/previous-versions/office/developer/office-2010/ff601860(v=office.14))|Fornece links para artigos e documentação de referência sobre como desenvolver soluções de palavras (não específicas do desenvolvimento do Office usando o Visual Studio).|

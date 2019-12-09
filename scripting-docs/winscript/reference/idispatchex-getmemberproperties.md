@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f607e06fe3c898a6839c0bbd2d51edee1f0ffb2c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8016eef7b6e0da9b9fc88695db845cba7f608ff3
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63000804"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574092"
 ---
 # <a name="idispatchexgetmemberproperties"></a>IDispatchEx::GetMemberProperties
-Recupera as propriedades do membro.  
+Recupera as propriedades de um membro.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -42,7 +42,7 @@ HRESULT GetMemberProperties(
  Identifica o membro. Usa `GetDispID` ou `GetNextDispID` para obter o identificador de expedição.  
   
  `grfdexFetch`  
- Determina quais propriedades a serem recuperadas. Isso pode ser uma combinação dos valores listados na `pgrfdex` e/ou uma combinação dos seguintes valores:  
+ Determina quais propriedades recuperar. Isso pode ser uma combinação dos valores listados em `pgrfdex` e/ou uma combinação dos seguintes valores:  
   
 |Valor|Significado|  
 |-----------|-------------|  
@@ -57,21 +57,21 @@ HRESULT GetMemberProperties(
 |Valor|Significado|  
 |-----------|-------------|  
 |fdexPropCanGet|O membro pode ser obtido usando DISPATCH_PROPERTYGET.|  
-|fdexPropCannotGet|O membro não pode ser obtido usando DISPATCH_PROPERTYGET.|  
+|fdexPropCannotGet|Não é possível obter o membro usando DISPATCH_PROPERTYGET.|  
 |fdexPropCanPut|O membro pode ser definido usando DISPATCH_PROPERTYPUT.|  
 |fdexPropCannotPut|O membro não pode ser definido usando DISPATCH_PROPERTYPUT.|  
 |fdexPropCanPutRef|O membro pode ser definido usando DISPATCH_PROPERTYPUTREF.|  
 |fdexPropCannotPutRef|O membro não pode ser definido usando DISPATCH_PROPERTYPUTREF.|  
-|fdexPropNoSideEffects|O membro não tem nenhum efeito colateral. Por exemplo, um depurador pode com segurança get/set/chamada esse membro sem alterar o estado do script que está sendo depurado.|  
+|fdexPropNoSideEffects|O membro não tem nenhum efeito colateral. Por exemplo, um depurador pode obter/definir/chamar esse membro com segurança sem alterar o estado do script que está sendo depurado.|  
 |fdexPropDynamicType|O membro é dinâmico e pode ser alterado durante o tempo de vida do objeto.|  
 |fdexPropCanCall|O membro pode ser chamado como um método usando DISPATCH_METHOD.|  
 |fdexPropCannotCall|O membro não pode ser chamado como um método usando DISPATCH_METHOD.|  
 |fdexPropCanConstruct|O membro pode ser chamado como um construtor usando DISPATCH_CONSTRUCT.|  
 |fdexPropCannotConstruct|O membro não pode ser chamado como um construtor usando DISPATCH_CONSTRUCT.|  
 |fdexPropCanSourceEvents|O membro pode acionar eventos.|  
-|fdexPropCannotSourceEvents|O membro não é possível disparar eventos.|  
+|fdexPropCannotSourceEvents|O membro não pode acionar eventos.|  
   
-## <a name="return-value"></a>Valor de retorno  
+## <a name="return-value"></a>Valor retornado  
  Retorna um dos seguintes valores:  
   
 |||  
@@ -97,6 +97,6 @@ BSTR bstrName;
 ```  
   
 ## <a name="see-also"></a>Consulte também  
- [IDispatchEx Interface](../../winscript/reference/idispatchex-interface.md)   
+   de [interface IDispatchEx](../../winscript/reference/idispatchex-interface.md)  
  [IDispatchEx::GetDispID](../../winscript/reference/idispatchex-getdispid.md)   
  [IDispatchEx::GetNextDispID](../../winscript/reference/idispatchex-getnextdispid.md)

@@ -4,17 +4,17 @@ ms.date: 10/24/2017
 ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.assetid: eac59cb6-f12e-4a77-9953-6d62b164a643
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: f0bd256f293cefc037a8950bdecd3615fad483f3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: c3c5d648a5880da43d96e6741656da1023f7cf7f
+ms.sourcegitcommit: 57bc1c3887838d707c13feff72a677b3bad3be4b
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62819555"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72777757"
 ---
 # <a name="develop-apps-for-the-universal-windows-platform-uwp"></a>Desenvolver aplicativos para a UWP (Plataforma Universal do Windows)
 
@@ -22,7 +22,7 @@ Com a Plataforma Universal do Windows e nosso único núcleo do Windows, é poss
 
 ![Plataforma Universal do Windows](../cross-platform/media/uwp_coreextensions.png)
 
-Execute seu aplicativo em um telefone Windows 10, área de trabalho do Windows 10 ou Xbox. O pacote do aplicativo é o mesmo! Com a introdução do núcleo único e unificado do Windows 10, um pacote do aplicativo pode ser executado em todas as plataformas. Várias plataformas têm SDKs de extensão que podem ser adicionados ao aplicativo para aproveitar comportamentos específicos da plataforma. Por exemplo, o SDK de uma extensão para dispositivos móveis manipula o botão Voltar pressionado em um Windows Phone. Se você referenciar um SDK de extensão em seu projeto, bastará adicionar verificações de tempo de execução para testar se esse SDK está disponível nessa plataforma. É assim que você pode usar o mesmo pacote do aplicativo para todas as plataformas!
+Execute seu aplicativo em um telefone Windows 10, área de trabalho do Windows 10 ou Xbox. O pacote do aplicativo é o mesmo! Com a introdução do núcleo único e unificado do Windows 10, um pacote do aplicativo pode ser executado em todas as plataformas. Várias plataformas têm SDKs de extensão que podem ser adicionados ao aplicativo para aproveitar comportamentos específicos da plataforma. Por exemplo, o SDK de uma extensão para dispositivos móveis manipula o botão Voltar pressionado em um Windows Phone. Se você referenciar um SDK de extensão em seu projeto, bastará adicionar verificações de runtime para testar se esse SDK está disponível nessa plataforma. É assim que você pode usar o mesmo pacote do aplicativo para todas as plataformas!
 
 **O que é o núcleo do Windows?**
 
@@ -40,7 +40,7 @@ Esta é a lista de software de que você precisa:
 
 ::: moniker range="vs-2017"
 
-- [Windows 10](http://windows.microsoft.com/windows/downloads). O Visual Studio 2017 dá suporte ao desenvolvimento de UWP somente no Windows 10. Para obter mais detalhes, confira [Direcionamento para plataformas](/visualstudio/productinfo/vs2017-compatibility-vs) e [Requisitos de sistema](/visualstudio/productinfo/vs2017-system-requirements-vs) do Visual Studio.
+- [Windows 10](https://support.microsoft.com/help/17777/downloads-for-windows). O Visual Studio 2017 dá suporte ao desenvolvimento de UWP somente no Windows 10. Para obter mais detalhes, confira [Direcionamento para plataformas](/visualstudio/productinfo/vs2017-compatibility-vs) e [Requisitos de sistema](/visualstudio/productinfo/vs2017-system-requirements-vs) do Visual Studio.
 
 - [Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download). Você também precisará da carga de trabalho de desenvolvimento da Plataforma Universal do Windows opcional.
 
@@ -50,9 +50,9 @@ Esta é a lista de software de que você precisa:
 
 ::: moniker range="vs-2019"
 
-- [Windows 10](http://windows.microsoft.com/windows/downloads). O Visual Studio 2019 dá suporte ao desenvolvimento de UWP somente no Windows 10. Para obter mais detalhes, confira [Direcionamento para plataformas](/visualstudio/releases/2019/compatibility/) e [Requisitos de sistema](/visualstudio/releases/2019/system-requirements/) do Visual Studio.
+- [Windows 10](https://support.microsoft.com/help/17777/downloads-for-windows). O Visual Studio 2019 dá suporte ao desenvolvimento de UWP somente no Windows 10. Para obter mais detalhes, confira [Direcionamento para plataformas](/visualstudio/releases/2019/compatibility/) e [Requisitos de sistema](/visualstudio/releases/2019/system-requirements/) do Visual Studio.
 
-- [Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019). Você também precisará da carga de trabalho de desenvolvimento da Plataforma Universal do Windows opcional.
+- [Visual Studio](https://visualstudio.microsoft.com/downloads). Você também precisará da carga de trabalho de desenvolvimento da Plataforma Universal do Windows opcional.
 
      ![Carga de trabalho da UWP](media/uwp_workload.png)
 

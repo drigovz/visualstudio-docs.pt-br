@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugErrorEvent2::GetErrorMessage
 ms.assetid: 9e3b0d74-a2dd-4eaa-bd95-21b2f9c79409
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 95b94dca9ef948a07b5c6458a9c8c53c8612eddd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 049f7a78a414df8202d64c1f25eaba854818c88d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62920159"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66327723"
 ---
 # <a name="idebugerrorevent2geterrormessage"></a>IDebugErrorEvent2::GetErrorMessage
 Retorna informações que permite a construção de uma mensagem de erro legível por humanos.
@@ -46,30 +49,24 @@ int GetErrorMessage(
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `pMessageType`
+## <a name="parameters"></a>Parâmetros
+`pMessageType`\
+[out] Retorna um valor da [MESSAGETYPE](../../../extensibility/debugger/reference/messagetype.md) enumeração, que descreve o tipo de mensagem.
 
- [out] Retorna um valor da [MESSAGETYPE](../../../extensibility/debugger/reference/messagetype.md) enumeração, que descreve o tipo de mensagem.
+`pbstrErrorFormat`\
+[out] O formato da mensagem para o usuário final (consulte "Comentários" para obter detalhes).
 
- `pbstrErrorFormat`
+`hrErrorReason`\
+[out] O código de erro, a mensagem é sobre.
 
- [out] O formato da mensagem para o usuário final (consulte "Comentários" para obter detalhes).
+`pdwType`\
+[out] Severidade do erro (usar constantes para MB_XXX `MessageBox`; por exemplo, `MB_EXCLAMATION` ou `MB_WARNING`).
 
- `hrErrorReason`
+`pbstrHelpFileName`\
+[out] Caminho para um arquivo de Ajuda (definido como um valor nulo se não houver nenhum arquivo de Ajuda).
 
- [out] O código de erro, a mensagem é sobre.
-
- `pdwType`
-
- [out] Severidade do erro (usar constantes para MB_XXX `MessageBox`; por exemplo, `MB_EXCLAMATION` ou `MB_WARNING`).
-
- `pbstrHelpFileName`
-
- [out] Caminho para um arquivo de Ajuda (definido como um valor nulo se não houver nenhum arquivo de Ajuda).
-
- `pdwHelpId`
-
- [out] ID do tópico da Ajuda para exibir (definido como 0 se não houver nenhum tópico da Ajuda).
+`pdwHelpId`\
+[out] ID do tópico da Ajuda para exibir (definido como 0 se não houver nenhum tópico da Ajuda).
 
 ## <a name="return-value"></a>Valor de retorno
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.

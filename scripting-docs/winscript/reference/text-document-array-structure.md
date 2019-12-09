@@ -13,15 +13,15 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9d188729b68f8086da62d40ca28fc29945c8be7f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b52b382aa1e91e509672728a3c8f931bfeae27a9
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62840051"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572977"
 ---
-# <a name="textdocumentarray-structure"></a>Estrutura TEXT_DOCUMENT_ARRAY
-Uma matriz de [IDebugDocumentText Interface](../../winscript/reference/idebugdocumenttext-interface.md) objetos. Os membros são alocados com CoTaskMemAlloc.  
+# <a name="text_document_array-structure"></a>Estrutura TEXT_DOCUMENT_ARRAY
+Uma matriz de objetos de [interface IDebugDocumentText](../../winscript/reference/idebugdocumenttext-interface.md) . Os membros são alocados com CoTaskMemAlloc.  
   
 ## <a name="syntax"></a>Sintaxe  
   

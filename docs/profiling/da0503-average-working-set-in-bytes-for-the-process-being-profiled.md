@@ -1,5 +1,5 @@
 ---
-title: 'DA0503: Conjunto de trabalho médio em bytes para o processo do qual o perfil está sendo criado | Microsoft Docs'
+title: 'DA0503: conjunto de trabalho médio em bytes para o processo do qual o perfil está sendo criado | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,24 +10,25 @@ ms.assetid: 9047a494-eaaf-4679-b422-c64e8bde77a4
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e2453b73d7dae0a6a53130156cdb1ce35d38d43
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 8c9d309d7bf10cee07cc30c4568d2dfa59d1be56
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62935982"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74777444"
 ---
-# <a name="da0503-average-working-set-in-bytes-for-the-process-being-profiled"></a>DA0503: Média de Conjunto de Trabalho em Bytes para o Processo cujo perfil está sendo criado
+# <a name="da0503-average-working-set-in-bytes-for-the-process-being-profiled"></a>DA0503: conjunto de trabalho médio em bytes para o processo que está sendo analisado
 
 |||
 |-|-|
-|ID de regra|DA0503|
+|Id da Regra|DA0503|
 |Categoria|Monitoramento de recursos|
-|Método de criação de perfil|Todos|
+|Método de criação de perfil|{1&gt;Todos&lt;1}|
 |Mensagem|Essas informações foram coletadas apenas para fins informativos. O contador Conjunto de trabalho do processo mede o uso de memória física do processo do qual está sendo criado o perfil. O valor relatado é a média calculada de todos os intervalos de medição.|
-|Tipo de regra|Informações|
+|Tipo de regra|Informações do|
 
  Ao criar o perfil usando a amostragem, a memória do .NET ou métodos de contenção de recursos, é necessário coletar pelo menos 10 amostras para disparar essa regra.
 
@@ -40,7 +41,7 @@ ms.locfileid: "62935982"
 
  O tamanho do conjunto de trabalho do processo reflete a quantidade de memória virtual que o processo está usando de forma ativa. Ele também é afetado pela quantidade de memória física (ou RAM) disponível para executar o aplicativo e a contenção para a memória física de outros processos em execução. Se a memória física for restrita, o valor do conjunto de trabalho do processo estará apto a variar de forma considerável, conforme o sistema operacional tenta equilibrar o uso de memória entre os processos ativos cortando periodicamente as páginas razoavelmente inativas dos conjuntos de trabalho do processo.
 
- Para obter mais informações sobre conjuntos de trabalho do processo, consulte [Conjunto de trabalho](http://go.microsoft.com/fwlink/?LinkId=177830) na documentação do Gerenciamento de memória do Windows do MSDN.
+ Para obter mais informações sobre conjuntos de trabalho do processo, consulte [Conjunto de trabalho](/windows/win32/memory/working-set) na documentação do Gerenciamento de memória do Windows do MSDN.
 
 ## <a name="how-to-use-rule-data"></a>Como usar dados de regra
  Use o valor da regra para comparar o desempenho de diferentes versões ou compilações do programa ou para entender o desempenho do aplicativo em diferentes cenários de criação de perfil.

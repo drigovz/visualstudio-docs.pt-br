@@ -14,21 +14,21 @@ helpviewer_keywords:
 - Help Viewer, navigating
 - toolbar [Help Viewer]
 ms.assetid: 74e41666-2ce8-4ac0-a0e5-3723d1e322c2
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ca207f06640d5ef2df02d966b733d3065c80fce6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9c9c9bf7e6447f222b63ad9a07c0e27ce4567374
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975688"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824870"
 ---
 # <a name="microsoft-help-viewer"></a>Microsoft Help Viewer
 
-Você pode instalar e exibir o conteúdo de vários produtos e tecnologias em seu computador local usando o Microsoft Help Viewer. Esses produtos incluem o Visual Studio, o .NET Framework, a referência da linguagem, o SQL Server e o Desenvolvimento para Windows. O Help Viewer, permite que você:
+Você pode instalar e exibir o conteúdo de vários produtos e tecnologias em seu computador local usando o Microsoft Help Viewer. Esses produtos incluem o Visual Studio, o .NET, a referência da linguagem, o SQL Server e o Desenvolvimento para Windows. O Help Viewer, permite que você:
 
 - Baixe conjuntos de conteúdo, que também são chamados de livros. Isso é útil quando você precisa trabalhar "offline" e ainda ter acesso à documentação.
 
@@ -53,7 +53,7 @@ Você pode localizar informações no conteúdo instalado usando as guias de nav
 
 ### <a name="navigation-tabs"></a>Guias de navegação
 
-|Tabulação|Descrição|
+|Tabulação|DESCRIÇÃO|
 |---|-----------|
 |Conteúdo|Exibe o conteúdo instalado como uma hierarquia (sumário). Você pode especificar critérios para filtrar os títulos que aparecem.|
 |Índice|Exibe uma lista alfabética de termos indexados. Você pode pesquisar no índice, especificar critérios para filtrar as entradas e exigir que entradas de índice contenham ou comecem com o texto que você especificar.|

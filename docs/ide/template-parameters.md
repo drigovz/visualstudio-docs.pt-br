@@ -7,15 +7,15 @@ helpviewer_keywords:
 - template parameters [Visual Studio]
 - project templates, parameters
 - item templates, parameters
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 7442eebcd566470616382367fbdaad5cce774155
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 445a4fa7847ea5c9a5cb64da09cf54c763e86d16
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62950336"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647396"
 ---
 # <a name="template-parameters"></a>Parâmetros de modelo
 
@@ -57,10 +57,11 @@ A tabela a seguir lista os parâmetros de modelo reservados que podem ser usados
 |projectname|O nome fornecido pelo usuário quando o projeto foi criado.|
 |registeredorganization|O valor da chave do Registro de HKLM\Software\Microsoft\Windows NT\CurrentVersion\RegisteredOrganization.|
 |rootnamespace|O namespace raiz do projeto atual. Esse parâmetro se aplica somente a modelos de item.|
-|safeitemname|O mesmo que `itemname`, mas com todos os caracteres desprotegidos e espaços removidos.|
+|safeitemname|O mesmo que `itemname`, mas com todos os caracteres desprotegidos e os espaços substituídos por caracteres de sublinhado.|
+|safeitemrootname|Mesmo que `safeitemname`.|
 |safeprojectname|O nome fornecido pelo usuário quando o projeto foi criado, mas com todos os caracteres desprotegidos e espaços removidos.|
-|hora|A hora atual no formato DD/MM/AAAA 00:00:00.|
-|SpecificSolutionName|O nome da solução. Quando "criar diretório da solução" estiver marcado, `SpecificSolutionName` terá o nome da solução. Quando "criar diretório da solução" não estiver marcado, `SpecificSolutionName` estará em branco.|
+|time|A hora atual no formato DD/MM/AAAA 00:00:00.|
+|specifiedSolutionName|O nome da solução. Quando "criar diretório da solução" estiver marcado, `specifiedSolutionName` terá o nome da solução. Quando "criar diretório da solução" não estiver marcado, `specifiedSolutionName` estará em branco.|
 |userdomain|O domínio do usuário atual.|
 |username|O nome de usuário atual.|
 |webnamespace|O nome do site atual. Este parâmetro é usado no modelo de formulário da Web para garantir nomes de classe exclusivos. Se o site estiver no diretório raiz do servidor Web, esse parâmetro de modelo será resolvido para o diretório raiz do servidor Web.|
@@ -73,7 +74,7 @@ A tabela a seguir lista os parâmetros de modelo reservados que podem ser usados
 
 Você pode especificar seus próprios valores e parâmetros de modelo, além dos parâmetros de modelo reservados padrão, que são usados durante a substituição de parâmetros. Para obter mais informações, consulte [Elemento CustomParameters (modelos do Visual Studio)](../extensibility/customparameters-element-visual-studio-templates.md).
 
-## <a name="example-use-the-project-name-for-a-file-name"></a>Exemplo: Usar o nome do projeto para um nome de arquivo
+## <a name="example-use-the-project-name-for-a-file-name"></a>Exemplo: usar o nome do projeto para um nome de arquivo
 
 Você pode especificar nomes de arquivo variáveis para itens de projeto usando um parâmetro no atributo `TargetFileName`.
 
@@ -90,7 +91,7 @@ O exemplo a seguir especifica que o nome de um arquivo executável usa o nome do
 </TemplateContent>
 ```
 
-## <a name="example-use-the-safe-project-name-for-the-namespace-name"></a>Exemplo: Usar o nome seguro do projeto para o nome do namespace
+## <a name="example-use-the-safe-project-name-for-the-namespace-name"></a>Exemplo: usar o nome seguro do projeto para o nome do namespace
 
 Para usar o nome seguro do projeto para o namespace em um arquivo de classe C#, use a seguinte sintaxe:
 
@@ -118,7 +119,7 @@ No arquivo *.vstemplate* do modelo de projeto, inclua o atributo `ReplaceParamet
 
 ## <a name="see-also"></a>Consulte também
 
-- [Como: Substituir parâmetros em um modelo](how-to-substitute-parameters-in-a-template.md)
+- [Como substituir parâmetros em um modelo](how-to-substitute-parameters-in-a-template.md)
 - [Personalizar modelos](../ide/customizing-project-and-item-templates.md)
-- [Como: Criar modelos de projeto](../ide/how-to-create-project-templates.md)
+- [Como criar modelos de projeto](../ide/how-to-create-project-templates.md)
 - [Referência de esquema de modelo](../extensibility/visual-studio-template-schema-reference.md)

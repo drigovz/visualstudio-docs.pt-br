@@ -8,21 +8,21 @@ f1_keywords:
 - VS.CHOOSEITEMS.UniversalWindowsComponents
 helpviewer_keywords:
 - Toolbox, Components tab
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 24f5e486d49dca8290c9063625132f673bf79c3c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: bd9c6bf4d24a681c426a20f490dba2cc1d5080fc
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62944953"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72644602"
 ---
 # <a name="toolbox-components-tab"></a>Caixa de Ferramentas, guia Componentes
 
-Exibe os componentes que podem ser adicionados a designers do Visual Basic e C# do Windows Forms. Além dos componentes do .NET Framework incluídos no Visual Studio, como os componentes <xref:System.Messaging.MessageQueue> e <xref:System.Diagnostics.EventLog>, é possível adicionar seus próprios componentes ou os componentes de terceiros a essa guia.
+Exibe os componentes que podem ser adicionados a designers do Visual Basic e C# do Windows Forms. Além dos componentes .NET incluídos no Visual Studio, como os componentes <xref:System.Messaging.MessageQueue> e <xref:System.Diagnostics.EventLog>, é possível adicionar seus próprios componentes ou componentes de terceiros a essa guia.
 
 Para exibir essa guia, abra um designer do Windows Forms. Selecione **Modo de Exibição** > **Caixa de Ferramentas**. Em **Caixa de ferramentas**, selecione a guia **Componentes**.
 
@@ -68,7 +68,7 @@ Cria uma instância do componente <xref:System.Messaging.MessageQueue>, que pode
 
 Cria uma instância do componente <xref:System.Diagnostics.PerformanceCounter>, que pode ser usada para interagir com contadores de desempenho do Windows, incluindo a criação de novas categorias e instâncias, a leitura de valores de contadores e a execução de cálculos nos dados do contador.
 
-**Processo**
+**Process**
 
 Cria uma instância do componente <xref:System.Diagnostics.Process>, que pode ser usada para interromper, iniciar e manipular os dados associados a processos no sistema.
 

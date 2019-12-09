@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugQueryEngine2::GetEngineInterface
 ms.assetid: ed84aa98-7ec7-48f3-97ae-821090bc3664
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5b5ac40af5f508a00b010025f9851ee2a8933dfa
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: c720ac348179ec979ba1ffbc1488244ca69246c4
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62869236"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66339924"
 ---
 # <a name="idebugqueryengine2getengineinterface"></a>IDebugQueryEngine2::GetEngineInterface
 Obtém uma interface de (DES) do mecanismo de depuração personalizado.
@@ -36,10 +39,9 @@ int GetEngineInterface( 
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `ppUnk`
-
- [out] Retorna um `IUnknown` objeto representa o mecanismo de depuração (DE) e que pode ser consultado para qualquer outra interface válido associado com a DE (por exemplo [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md) ou [IDebugEngineLaunch2](../../../extensibility/debugger/reference/idebugenginelaunch2.md)).
+## <a name="parameters"></a>Parâmetros
+`ppUnk`\
+[out] Retorna um `IUnknown` objeto representa o mecanismo de depuração (DE) e que pode ser consultado para qualquer outra interface válido associado com a DE (por exemplo [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md) ou [IDebugEngineLaunch2](../../../extensibility/debugger/reference/idebugenginelaunch2.md)).
 
 ## <a name="return-value"></a>Valor de retorno
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.

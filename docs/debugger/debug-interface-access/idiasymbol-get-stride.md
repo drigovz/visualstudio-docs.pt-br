@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c581668668a208a9bcf35a1b39d1b3d384a4f8a3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b1ff294e45404d312d445c4b76f05cc3e0d7dd95
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62841608"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739298"
 ---
-# <a name="idiasymbolgetstride"></a>IDiaSymbol::get_stride
-Recupera a distância da matriz strided ou matriz.
+# <a name="idiasymbolget_stride"></a>IDiaSymbol::get_stride
+Recupera o stride da matriz ou da matriz substituída.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -30,9 +30,9 @@ HRESULT get_stride(
 #### <a name="parameters"></a>Parâmetros
  `pRetVal`
 
-[out] Um ponteiro para um `DWORD` que mantém a distância.
+fora Um ponteiro para um `DWORD` que contém o Stride.
 
-## <a name="return-value"></a>Valor de retorno
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE` ou um código de erro.
 
 ## <a name="see-also"></a>Consulte também

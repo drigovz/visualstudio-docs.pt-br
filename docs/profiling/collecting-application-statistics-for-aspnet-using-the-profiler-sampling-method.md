@@ -9,14 +9,15 @@ ms.assetid: f8383ab1-eb49-4d3f-8608-d8b4d51a81be
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - aspnet
-ms.openlocfilehash: 6ff7f1596d9b3336cb7fdbc02de7d1bc10172f94
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a2cae807a8d833cf2653ea23616eeb819673229e
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63405759"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74773238"
 ---
 # <a name="collect-statistics-for-aspnet-web-apps"></a>Coletar estatísticas para aplicativos Web ASP.NET
 
@@ -32,7 +33,7 @@ Esta seção descreve os procedimentos e as opções para coletar estatísticas 
 
 |Tarefa|Conteúdo relacionado|
 |----------|---------------------|
-|**Attach the profiler to an ASP.NET application (Anexar o criado de perfil a um aplicativo ASP.NET)**|-   [Como: Anexar o criador de perfil a um aplicativo Web ASP.NET para coletar estatísticas do aplicativo](../profiling/how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-application-statistics-by-using-the-command-line.md)|
+|**Attach the profiler to an ASP.NET application (Anexar o criado de perfil a um aplicativo ASP.NET)**|-   [How to: Attach the Profiler to an ASP.NET Web Application to Collect Application Statistics (Como anexar o criador de perfil a um aplicativo Web ASP.NET para coletar estatísticas do aplicativo)](../profiling/how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-application-statistics-by-using-the-command-line.md)|
 
 ## <a name="related-tasks"></a>Tarefas relacionadas
 

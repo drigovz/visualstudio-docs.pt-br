@@ -12,12 +12,12 @@ ms.assetid: 784bd5b1-4a3f-4455-b313-c4c9a82555a5
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f8e92ecd6e99f9fe369157c92dd4d964f86da97a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: bc4ac1f3a8d9b470fbb3734f822601a7dce08a44
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58924056"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696679"
 ---
 # <a name="idebugcanstopevent2"></a>IDebugCanStopEvent2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ IDebugCanStopEvent2 : IUknown
 ```  
   
 ## <a name="notes-for-implementers"></a>Observações para implementadores  
- O mecanismo de depuração (DES) implementa essa interface para dar suporte a percorrer o código-fonte. O [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) interface deve ser implementada no mesmo objeto como essa interface (usa o SDM [QueryInterface](http://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) para acessar o `IDebugEvent2` interface).  
+ O mecanismo de depuração (DES) implementa essa interface para dar suporte a percorrer o código-fonte. O [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) interface deve ser implementada no mesmo objeto como essa interface (usa o SDM [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) para acessar o `IDebugEvent2` interface).  
   
  A implementação dessa interface deve se comunicar a chamada do SDM [CanStop](../../../extensibility/debugger/reference/idebugcanstopevent2-canstop.md) para o mecanismo de depuração. Por exemplo, isso pode ser feito com uma mensagem publicada em um thread de manipulação de mensagens do mecanismo de depuração ou o objeto que implementa essa interface pode conter uma referência para o mecanismo de depuração e retornou a chamada para o mecanismo de depuração com o sinalizador passado para `IDebugCanStopEvent2::CanStop`.  
   

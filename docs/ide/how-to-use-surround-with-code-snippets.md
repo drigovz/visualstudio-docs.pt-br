@@ -5,21 +5,21 @@ ms.topic: conceptual
 helpviewer_keywords:
 - surround-with snippets
 - snippets [C#], surround with
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0bf279502c52c47a68ea7eb5fb5c193e7d31e4d6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 3550efde20dbacb0afb17665a2ef1c811ac39946
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62428203"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72656510"
 ---
-# <a name="how-to-use-surround-with-code-snippets"></a>Como: Usar snippets de código surround-with
+# <a name="how-to-use-surround-with-code-snippets"></a>Como usar snippets de código de “Envolver com”
 
-Os procedimentos a seguir descrevem como usar snippets de código surround-with. Trechos de código Surround-with estão disponíveis de três maneiras: por um atalho de teclado, pelo menu **Editar** e pelo menu do clique com o botão direito ou menu de contexto.
+Os procedimentos a seguir descrevem como usar snippets de código surround-with. Snippets de código Surround-with estão disponíveis de três maneiras: por um atalho de teclado, pelo menu **Editar** e pelo menu do clique com o botão direito ou menu de contexto.
 
 ## <a name="to-use-surround-with-code-snippets-through-keyboard-shortcut"></a>Para usar snippets de código surround-with por meio do atalho de teclado
 

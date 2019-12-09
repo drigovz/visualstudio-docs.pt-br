@@ -8,14 +8,15 @@ ms.assetid: da624c06-8741-4afb-aad1-f8c0002f3de2
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 49b46c9d5fc3ee24b845e488752c15e70082c833
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 3c51f4bc1e823f565670bf1f6df77553ff4658d6
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62777057"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779721"
 ---
 # <a name="callercallee-view---net-memory-instrumentation-data"></a>Exibição do Chamador/Receptor – dados de instrumentação da memória do .NET
 O modo de exibição de Chamador/Computador Chamado dos dados de criação de perfil de memória do .NET coletados usando o método de instrumentação exibe dados de alocação e de tempo para uma função selecionada e as funções pai e filho da função selecionada. A exibição de Chamador/Computador Chamado contém três grades.
@@ -104,7 +105,7 @@ O modo de exibição de Chamador/Computador Chamado dos dados de criação de pe
 |**Tempo Exclusivo Mínimo do Aplicativo**|O tempo exclusivo mínimo do aplicativo de uma chamada para essa função nesse contexto.|
 
 ## <a name="see-also"></a>Consulte também
-- [Como: Personalizar as colunas da exibição de relatório](../profiling/how-to-customize-report-view-columns.md)
+- [Como: Personalizar colunas de exibição de relatório](../profiling/how-to-customize-report-view-columns.md)
 - [Exibição Chamador/Receptor – dados de amostragem de memória do .NET](../profiling/caller-callee-view-dotnet-memory-sampling-data.md)
 - [Exibição do Chamador/Receptor – dados de instrumentação](../profiling/caller-callee-view-instrumentation-data.md)
 - [Exibição do chamador/chamado – dados de amostragem](../profiling/caller-callee-view-sampling-data.md)

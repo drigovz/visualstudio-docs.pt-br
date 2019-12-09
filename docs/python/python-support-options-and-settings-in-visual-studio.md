@@ -17,12 +17,12 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d917f0211a0888fa2a712b0c010cf6177823c223
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 08501d71400a0df139022f04e68573d0dd1449d1
+ms.sourcegitcommit: 77ef1dcc71057cd5fdc4733ff0cb6085bd6113e0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62430907"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73661916"
 ---
 # <a name="options-for-python-in-visual-studio"></a>Opções para o Python no Visual Studio
 
@@ -51,7 +51,7 @@ Também há opções adicionais específicas do Python na guia **Editor de Texto
 | **Mostrar barra de notificações para criar ambientes** | On | *Somente Visual Studio 2019.* Quando essa opção é configurada e o usuário abre um projeto que contém um arquivo *requirements.txt* ou *environment.yml*, o Visual Studio exibe uma barra de informações com sugestões para criar um ambiente virtual ou ambiente conda, respectivamente, em vez de usar o ambiente global padrão. |
 | **Mostrar barra de notificações para instalar pacotes** | On | *Somente Visual Studio 2019.* Quando essa opção é configurada e o usuário abre um projeto que contém um arquivo *requirements.txt* (e não está usando o ambiente global padrão), o Visual Studio compara esses requisitos com pacotes instalados no ambiente atual. Se houver pacotes ausentes, o Visual Studio exibirá um prompt para instalar essas dependências. |
 | **Sempre executar gerenciadores de pacotes como administrador** | Off | Sempre eleva `pip install` e operações semelhantes de gerenciador de pacote para todos os ambientes. Ao instalar pacotes, o Visual Studio solicitará privilégios de administrador se o ambiente estiver localizado em uma área protegida do sistema de arquivos como *c:\Program Files*. Nesse prompt, você pode optar por sempre elevar o comando de instalação apenas para esse ambiente específico. Confira [guia Pacotes](python-environments-window-tab-reference.md#packages-tab). |
-| **Gerar automaticamente o BD de conclusão no primeiro uso** | On | *Aplica-se ao Visual Studio 2017 versão 15.5 e anteriores e a versões posteriores ao usar um banco de dados do IntelliSense.* Prioriza a conclusão do banco de dados para uma biblioteca quando você escreve código que a usa. Confira mais informações na [guia IntelliSense](python-environments-window-tab-reference.md#intellisense-tab). |
+| **Gerar automaticamente o BD de conclusão no primeiro uso** | On | *Aplica-se ao Visual Studio 2017 versão 15.5 e anteriores e a versões posteriores ao usar um banco de dados do IntelliSense.* Prioriza a conclusão do banco de dados para uma biblioteca quando você escreve código que a usa. Confira mais informações na [guia IntelliSense](python-environments-window-tab-reference.md?view=vs-2017#intellisense-tab). |
 | **Ignorar variáveis PYTHONPATH de todo o sistema** | On | PYTHONPATH é ignorado por padrão porque o Visual Studio fornece um meio mais direto para especificar caminhos de pesquisa em projetos e ambientes. Confira [Caminhos de pesquisa](search-paths.md) para obter detalhes. |
 | **Atualizar os caminhos de pesquisa ao adicionar arquivos vinculados** | On | Quando definido, adicionar um [arquivo vinculado](managing-python-projects-in-visual-studio.md#linked-files) a um projeto atualiza os [caminhos de pesquisa](search-paths.md) para que o IntelliSense possa incluir o conteúdo da pasta do arquivo vinculado em seu banco de dados de conclusão. Desmarque esta opção para excluir o conteúdo do banco de dados de conclusão. |
 | **Avisar quando o módulo importado não puder ser encontrado** | On | Desmarque esta opção para suprimir avisos quando você sabe que um módulo importado não está disponível no momento, mas não afeta a operação do código de outra forma. |

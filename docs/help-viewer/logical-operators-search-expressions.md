@@ -1,22 +1,22 @@
 ---
-title: Operadores lógicos e operadores avançados em expressões de pesquisa (Help Viewer)
+title: Operadores lógicos/avançados em expressões de pesquisa (Help Viewer)
 ms.date: 11/02/2017
 ms.topic: reference
 helpviewer_keywords:
 - Help Viewer, logical operators in search
 - logical operators in search [Help Viewer]
 ms.assetid: 0c38ae7d-3e20-4d47-a020-9677cd285916
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dc27a5206b7939cd55fc95878d2cc8968ae8bf39
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0e241df6c32fc1b0a8e88942fe5d0d178c37b9bf
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974391"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824906"
 ---
 # <a name="logical-and-advanced-operators-in-search-expressions"></a>Operadores lógicos e avançados em expressões de pesquisa
 

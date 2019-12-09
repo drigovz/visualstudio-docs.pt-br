@@ -6,7 +6,7 @@ keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 03/01/2019
+ms.date: 12/03/2019
 ms.topic: reference
 helpviewer_keywords:
 - workload ID, Visual Studio
@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 5719032b-2c2e-416e-a281-a4573ec74e38
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: dae12dcd6dd2182bd7f23a5ed9385e07f28a2e04
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 48410a40518fdd1d94b8415987b04f76de4cc0b3
+ms.sourcegitcommit: af9bbf9116a63c0631ff2f4f3a878564aa63cd8c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62960878"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "74797269"
 ---
 # <a name="visual-studio-professional-component-directory"></a>Diretório de componentes do Visual Studio Professional
 

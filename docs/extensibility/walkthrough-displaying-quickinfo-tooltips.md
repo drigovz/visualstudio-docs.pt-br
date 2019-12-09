@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - QuickInfo
 ms.assetid: 23fb8384-4f12-446f-977f-ce7910347947
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ef70f9a776163419819e2283a031261c6e84a159
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b7cb51edb41109d9664e5aeda0a5393d2cd34f38
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62965200"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66312429"
 ---
 # <a name="walkthrough-display-quickinfo-tooltips"></a>Passo a passo: Exibir dicas de ferramenta de QuickInfo
 QuickInfo é um recurso IntelliSense, que exibe as assinaturas de método e descrições de quando um usuário move o ponteiro sobre um nome de método. Você pode implementar recursos de baseada na linguagem, como QuickInfo definindo os identificadores para o qual você deseja fornecer descrições de QuickInfo e, em seguida, criando uma dica de ferramenta para exibir o conteúdo. Você pode definir QuickInfo no contexto de um serviço de linguagem, ou você pode definir seu próprio tipo de conteúdo e a extensão de nome do arquivo e exibir o QuickInfo para apenas esse tipo, ou você pode exibir QuickInfo para um tipo de conteúdo existente (como "texto"). Este passo a passo mostra como exibir QuickInfo para o tipo de conteúdo "text".

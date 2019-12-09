@@ -1,5 +1,5 @@
 ---
-title: 'Erro: Falha no Logon remoto do grupo de trabalho | Microsoft Docs'
+title: 'Erro: falha de logon remoto do grupo de trabalho | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 f1_keywords:
@@ -18,14 +18,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d9142e92367dd10653bb8fdaaf86c34f3f17b84
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 9d1ee0cfbd021eb7d6a03a791713d187d3c8877c
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63399226"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72736267"
 ---
-# <a name="error-workgroup-remote-logon-failure"></a>Erro: Falha de logon remoto do grupo de trabalho
+# <a name="error-workgroup-remote-logon-failure"></a>Erro: falha no logon remoto do grupo de trabalho
 Este erro é:
 
  Falha de logon: usuário desconhecido ou senha inválida
@@ -55,7 +55,7 @@ Este erro é:
 
 4. Na coluna **Política**, clique duas vezes em **Depurar programas** para exibir as atribuições locais atual da política de grupo na caixa de diálogo **Configuração de Política de Segurança Local**.
 
-     ![Direitos de usuário de política de segurança local](../debugger/media/dbg_err_localsecuritypolicy_userrightsdebugprograms.png "DBG_ERR_LocalSecurityPolicy_UserRightsDebugPrograms")
+     ![Direitos de usuário da política de segurança local](../debugger/media/dbg_err_localsecuritypolicy_userrightsdebugprograms.png "DBG_ERR_LocalSecurityPolicy_UserRightsDebugPrograms")
 
 5. Para adicionar novos usuários, clique no botão **Adicionar Usuário ou Grupo**.
 
@@ -67,9 +67,9 @@ Este erro é:
 
 3. Clique em **Opções de Segurança**.
 
-4. No **diretiva** coluna, clique duas vezes em **acesso à rede: Modelo de compartilhamento e segurança para contas locais**.
+4. Na coluna **Política**, clique duas vezes em **Acesso à rede: modelo de compartilhamento e segurança para contas locais**.
 
-5. No **acesso à rede: Modelo de compartilhamento e segurança para contas locais** caixa de diálogo, altere o valor a ser **Clássico - os usuários locais são autenticados como eles próprios** e clique no **aplicar** botão.
+5. Na caixa de diálogo **Acesso à rede: modelo de compartilhamento e segurança para contas locais**, altere o valor para **Clássico – os usuários locais são autenticados como eles próprios** e clique no botão **Aplicar**.
 
      ![Opções de segurança da política de segurança local](../debugger/media/dbg_err_localsecuritypolicy_securityoptions_networkaccess.png "DBG_ERR_LocalSecurityPolicy_SecurityOptions_NetworkAccess")
 

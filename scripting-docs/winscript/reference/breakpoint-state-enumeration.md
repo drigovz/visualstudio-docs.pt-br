@@ -17,14 +17,14 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: faca5ef7bc89bc16d646f66fb897f1dc44eb831a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8c56a8b135a0aa9a4f8ddf91e146d4d64367bb2b
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62955354"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572641"
 ---
-# <a name="breakpointstate-enumeration"></a>Enumeração BREAKPOINT_STATE
+# <a name="breakpoint_state-enumeration"></a>Enumeração BREAKPOINT_STATE
 Indica o estado de um ponto de interrupção.  
   
 ## <a name="syntax"></a>Sintaxe  

@@ -18,129 +18,129 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c22da2a31be1389ca0b60df6cc64ac6c9155ad69
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 898eb0eb1489d83e97ec9f0a5b38b475bda0199d
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62852495"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72450416"
 ---
 # <a name="debug-dlls-in-visual-studio-c-c-visual-basic-f"></a>Depurar DLLs no Visual Studio (C#, C++, Visual Basic, F#)
 
-Uma DLL (biblioteca de vínculo dinâmico) é uma biblioteca que contém o código e dados que podem ser usados por mais de um aplicativo. Você pode usar o Visual Studio para criar, compilar, configurar e depurar DLLs.
+Uma DLL (biblioteca de vínculo dinâmico) é uma biblioteca que contém código e dados que podem ser usados por mais de um aplicativo. Você pode usar o Visual Studio para criar, compilar, configurar e depurar DLLs.
 
 ## <a name="create-a-dll"></a>Criar uma DLL
 
 Os seguintes modelos de projeto do Visual Studio podem criar DLLs:
 
-- C#, Visual Basic, ou F# biblioteca de classes
-- C#ou a biblioteca de controles (WCF) de formulários do Windows do Visual Basic
-- C++ Dynamic-Link Library (DLL)
+- C#, Visual Basic ou F# biblioteca de classes
+- C#ou Visual Basic biblioteca de controle de Windows Forms (WCF)
+- C++Biblioteca de vínculo dinâmico (DLL)
 
 Para obter mais informações, consulte [técnicas de depuração do MFC](../debugger/mfc-debugging-techniques.md).
 
-Depuração de uma biblioteca de WCF é semelhante à depuração de uma biblioteca de classes. Para obter detalhes, consulte [controles dos Windows Forms](/dotnet/framework/winforms/controls/index).
+A depuração de uma biblioteca WCF é semelhante à depuração de uma biblioteca de classes. Para obter detalhes, consulte [controles de Windows Forms](/dotnet/framework/winforms/controls/index).
 
-Você geralmente chama uma DLL de outro projeto. Quando você depura o projeto de chamada, dependendo da configuração de DLL, você pode intervir e depurar o código da DLL.
+Normalmente, você chama uma DLL de outro projeto. Ao depurar o projeto de chamada, dependendo da configuração de DLL, você pode entrar e depurar o código de DLL.
 
-## <a name="vxtskdebuggingdllprojectschangingdefaultconfigurations"></a> Configuração de depuração da DLL
+## <a name="vxtskdebuggingdllprojectschangingdefaultconfigurations"></a>Configuração de depuração de DLL
 
-Quando você usa um modelo de projeto do Visual Studio para criar um aplicativo, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] cria automaticamente as configurações necessárias para as configurações de compilação de depuração e versão. Você pode alterar essas configurações, se necessário. Para obter mais informações, confira os seguintes artigos:
+Quando você usa um modelo de projeto do Visual Studio para criar um aplicativo, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] cria automaticamente as configurações necessárias para depurar e liberar as configurações de compilação. Você pode alterar essas configurações, se necessário. Para obter mais informações, confira os seguintes artigos:
 
 - [Configurações do projeto para uma configuração de depuração de C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)
 - [Configurações do projeto para configurações de depuração do C#](../debugger/project-settings-for-csharp-debug-configurations.md)
 - [Definições do projeto para uma configuração de depuração do Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)
-- [Como: Definir as configurações de depuração e de versão](../debugger/how-to-set-debug-and-release-configurations.md)
+- [Como definir configurações de depuração e versão](../debugger/how-to-set-debug-and-release-configurations.md)
 
-### <a name="set-c-debuggableattribute"></a>Definir DebuggableAttribute C++
+### <a name="set-c-debuggableattribute"></a>Definir C++ DebuggableAttribute
 
-Para que o depurador anexar a uma DLL do C++, o código de C++ deve emitir `DebuggableAttribute`.
+Para que o depurador seja anexado a C++ uma dll, C++ o código deve emitir `DebuggableAttribute`.
 
 **Para definir `DebuggableAttribute`:**
 
-1. Selecione o projeto de DLL do C++ no **Gerenciador de soluções** e selecione o **Properties** ícone, ou clique com botão direito no projeto e selecione **propriedades**.
+1. Selecione o C++ projeto de DLL no **Gerenciador de soluções** , selecione o ícone **Propriedades** ou clique com o botão direito do mouse no projeto e selecione **Propriedades**.
 
-1. No **propriedades** painel, em **vinculador** > **depuração**, selecione **Sim (/ /ASSEMBLYDEBUG)** para  **Assembly Depurável**.
+1. No painel **Propriedades** , em **vinculador** > **depuração**, selecione **Sim (/ASSEMBLYDEBUG)** para o **assembly depurável**.
 
 Para obter mais informações, consulte [/ASSEMBLYDEBUG](/cpp/build/reference/assemblydebug-add-debuggableattribute).
 
-### <a name="vxtskdebuggingdllprojectsexternal"></a> Definir locais de arquivo do DLL de C/C++
+### <a name="vxtskdebuggingdllprojectsexternal"></a>Definir locais deC++ arquivo C/DLL
 
-Para depurar uma DLL externo, um projeto de chamada deve ser capaz de localizar a DLL, sua [arquivo. PDB](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)e quaisquer outros arquivos que requer que a DLL. Você pode criar uma tarefa de compilação personalizada para copiar esses arquivos para seus  *\<pasta do projeto > \Debug* pasta de saída, ou você pode copiar os arquivos neles manualmente.
+Para depurar uma DLL externa, um projeto de chamada deve ser capaz de localizar a DLL, seu [arquivo. pdb](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)e todos os outros arquivos necessários para a dll. Você pode criar uma tarefa de compilação personalizada para copiar esses arquivos para a *pasta\<projeto >* pasta de saída \debug ou pode copiar os arquivos manualmente.
 
-Para projetos do C/C++, você pode definir o cabeçalho e locais de arquivos do LIB nas páginas de propriedade do projeto, em vez de copiá-los para a pasta de saída.
+Para C/C++ Projects, você pode definir os locais de arquivo de cabeçalho e lib nas páginas de propriedades do projeto, em vez de copiá-los para a pasta de saída.
 
-**Para definir o C/C++ de cabeçalho e LIB arquivos locais:**
+**Para definir os locaisC++ do arquivo C/Header e lib:**
 
-1. Selecione o projeto de DLL de C/C++ no **Gerenciador de soluções** e selecione o **Properties** ícone, ou clique com botão direito no projeto e selecione **propriedades**.
+1. Selecione o projeto CC++ /DLL no **Gerenciador de soluções** , selecione o ícone **Propriedades** ou clique com o botão direito do mouse no projeto e selecione **Propriedades**.
 
-1. Na parte superior a **propriedades** painel, em **Configuration**, selecione **todas as configurações de**.
+1. Na parte superior do painel **Propriedades** , em **configuração**, selecione **todas as configurações**.
 
-1. Sob **C/C++** > **geral** > **diretórios de inclusão adicionais**, especifique a pasta que contém arquivos de cabeçalho.
+1. Em **C/C++**  > **geral** > **diretórios de inclusão adicionais**, especifique a pasta que tem os arquivos de cabeçalho.
 
-1. Sob **vinculador** > **geral** > **diretórios de bibliotecas adicionais**, especifique a pasta que contém os arquivos LIB.
+1. Em **vinculador** > **geral** > **diretórios de bibliotecas adicionais**, especifique a pasta que tem os arquivos lib.
 
-1. Sob **vinculador** > **entrada** > **dependências adicionais**, especifique o caminho completo e nome de arquivo para os arquivos LIB.
+1. Em **vinculador** > **entrada** > **dependências adicionais**, especifique o caminho completo e o nome do arquivo para os arquivos lib.
 
 1. Selecione **OK**.
 
-Para obter mais informações sobre configurações de projeto do C++, consulte [páginas de propriedade (Visual C++)](/cpp/ide/property-pages-visual-cpp).
+Para obter mais informações C++ sobre as configurações do projeto, consulte [referência da página de C++ Propriedades do Windows](/cpp/build/reference/property-pages-visual-cpp).
 
-## <a name="vxtskdebuggingdllprojectsbuildingadebugversion"></a> Criar uma versão de depuração
+## <a name="vxtskdebuggingdllprojectsbuildingadebugversion"></a>Compilar uma versão de depuração
 
-Certifique-se de criar uma versão de depuração da DLL antes de iniciar a depuração. Para depurar uma DLL, um aplicativo de chamada deve ser capaz de encontrar sua [arquivo. PDB](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md) e quaisquer outros arquivos que requer que a DLL.
+Certifique-se de criar uma versão de depuração da DLL antes de iniciar a depuração. Para depurar uma DLL, um aplicativo de chamada deve ser capaz de encontrar seu [arquivo. pdb](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md) e quaisquer outros arquivos necessários para a dll.
 
-Você pode criar uma tarefa de compilação personalizada para copiar os arquivos DLL para seu  *\<chamar a pasta do projeto > \Debug* pasta de saída, ou você pode copiar os arquivos neles manualmente.
+Você pode criar uma tarefa de compilação personalizada para copiar os arquivos DLL para o *\<a pasta de projeto de chamada >* pasta de saída \debug ou pode copiar os arquivos manualmente.
 
-Certifique-se de chamar a DLL no local correto. Isso pode parecer óbvio, mas se um aplicativo de chamada localiza e carrega uma cópia diferente da DLL, o depurador nunca atingirá os pontos de interrupção que você definir.
+Certifique-se de chamar a DLL em seu local correto. Isso pode parecer óbvio, mas se um aplicativo de chamada encontrar e carregar uma cópia diferente da DLL, o depurador nunca atingirá os pontos de interrupção que você definir.
 
-## <a name="vxtskdebuggingdllprojectswaystodebugthedll"></a> Depurar uma DLL
+## <a name="vxtskdebuggingdllprojectswaystodebugthedll"></a>Depurar uma DLL
 
-É possível executar uma DLL diretamente. Ele deve ser chamado por um aplicativo, normalmente um *.exe* arquivo. Para obter mais informações, consulte [criar e gerenciar projetos do Visual C++](/cpp/ide/creating-and-managing-visual-cpp-projects).
+Você não pode executar uma DLL diretamente. Ele deve ser chamado por um aplicativo, geralmente um arquivo *. exe* . Para obter mais informações, consulte [projetos do Visual C++Studio- ](/cpp/ide/creating-and-managing-visual-cpp-projects).
 
-Para depurar uma DLL, você pode [iniciar a depuração de aplicativo de chamada](#vxtskdebuggingdllprojectsthecallingapplication), ou [debug do projeto de DLL](how-to-debug-from-a-dll-project.md) especificando seu aplicativo de chamada. Você também pode usar o depurador [janela imediata](#vxtskdebuggingdllprojectstheimmediatewindow) para avaliar os métodos ou funções de DLL em tempo de design, sem usar um aplicativo de chamada.
+Para depurar uma DLL, você pode [iniciar a depuração do aplicativo de chamada](#vxtskdebuggingdllprojectsthecallingapplication)ou [depurar a partir do projeto de dll](how-to-debug-from-a-dll-project.md) especificando seu aplicativo de chamada. Você também pode usar a janela do depurador [imediato](#vxtskdebuggingdllprojectstheimmediatewindow) para avaliar funções ou métodos de dll em tempo de design, sem usar um aplicativo de chamada.
 
-Para obter mais informações, consulte [primeiro, examine o depurador](../debugger/debugger-feature-tour.md).
+Para obter mais informações, consulte [primeira olhada no depurador](../debugger/debugger-feature-tour.md).
 
-### <a name="vxtskdebuggingdllprojectsthecallingapplication"></a> Iniciar a depuração de aplicativo de chamada
+### <a name="vxtskdebuggingdllprojectsthecallingapplication"></a>Iniciar a depuração do aplicativo de chamada
 
 O aplicativo que chama uma DLL pode ser:
 
-- Um aplicativo a partir um [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projeto na mesma ou em uma solução diferente da DLL.
-- Um aplicativo existente que já esteja implantado e em execução em um computador de teste ou produção.
+- Um aplicativo de um projeto [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] no mesmo ou em uma solução diferente da DLL.
+- Um aplicativo existente que já está implantado e em execução em um computador de teste ou de produção.
 - Localizado na Web e acessado por meio de uma URL.
-- Um aplicativo web com uma página da web que insere a DLL.
+- Um aplicativo Web com uma página da Web que incorpora a DLL.
 
 Para depurar uma DLL de um aplicativo de chamada, você pode:
 
-- Abra o projeto para o aplicativo de chamada e iniciar a depuração, selecionando **Debug** > **iniciar depuração** ou pressionando **F5**.
+- Abra o projeto para o aplicativo de chamada e inicie a depuração selecionando **Debug** > **iniciar a depuração** ou pressionar **F5**.
 
   ou
 
-- Anexe a um aplicativo que já esteja implantado e em execução em um computador de teste ou produção. Use esse método para DLLs em sites ou em aplicativos web. Para obter mais informações, confira [Como: Anexar a um processo em execução](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).
+- Anexe a um aplicativo que já está implantado e em execução em um computador de teste ou de produção. Use esse método para DLLs em sites ou em aplicativos Web. Para obter mais informações, consulte [como: anexar a um processo em execução](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).
 
-Antes de começar a depurar o aplicativo de chamada, defina um ponto de interrupção na DLL. Ver [usando pontos de interrupção](../debugger/using-breakpoints.md). Quando o ponto de interrupção DLL for atingido, você pode percorrer o código, observando a ação em cada linha. Para obter mais informações, consulte [navegar pelo código no depurador](../debugger/navigating-through-code-with-the-debugger.md).
+Antes de iniciar a depuração do aplicativo de chamada, defina um ponto de interrupção na DLL. Consulte [usando pontos de interrupção](../debugger/using-breakpoints.md). Quando o ponto de interrupção da DLL é atingido, você pode percorrer o código, observando a ação em cada linha. Para obter mais informações, consulte [navegar no código no depurador](../debugger/navigating-through-code-with-the-debugger.md).
 
-Durante a depuração, você pode usar o **módulos** para verificar as DLLs e *.exe* o aplicativo seja carregado de arquivos. Para abrir o **módulos** janela, durante a depuração, selecione **Debug** > **Windows** > **módulos**. Para obter mais informações, confira [Como: Usar a janela Módulos](../debugger/how-to-use-the-modules-window.md).
+Durante a depuração, você pode usar a janela **módulos** para verificar os arquivos DLLs e *. exe* que o aplicativo carrega. Para abrir a janela **módulos** , durante a depuração, selecione **depurar** > **módulos**de > do **Windows** . Para obter mais informações, consulte [como: usar a janela módulos](../debugger/how-to-use-the-modules-window.md).
 
-### <a name="vxtskdebuggingdllprojectstheimmediatewindow"></a> Usar a janela imediata
+### <a name="vxtskdebuggingdllprojectstheimmediatewindow"></a>Usar a janela imediata
 
-Você pode usar o **imediato** janela para avaliar os métodos ou funções de DLL em tempo de design. O **imediato** janela desempenha a função de um aplicativo de chamada.
+Você pode usar a janela **imediata** para avaliar funções de dll ou métodos em tempo de design. A janela **imediata** desempenha a função de um aplicativo de chamada.
 
 >[!NOTE]
->Você pode usar o **imediato** janela em tempo de design com a maioria dos tipos de projeto. Não há suporte para SQL, projetos da web ou script.
+>Você pode usar a janela **imediata** em tempo de design com a maioria dos tipos de projeto. Não há suporte para SQL, projetos Web ou script.
 
 Por exemplo, para testar um método chamado `Test` na classe `Class1`:
 
-1. Com o projeto DLL aberto, abra o **Immediate** janela selecionando **Debug** > **Windows** > **imediato**ou pressionando **Ctrl**+**Alt**+**eu**.
+1. Com o projeto da DLL aberto, abra a janela **imediata** selecionando **depurar** > o **Windows** > **imediato** ou pressionando **Ctrl**+**ALT**+**I**.
 
-1. Instanciar um objeto do tipo `Class1` digitando o seguinte C# de código no **imediato** janela e pressionando a tecla **Enter**. Esse código gerenciado funciona para C# e Visual Basic, com alterações de sintaxe apropriadas:
+1. Crie uma instância de um objeto do tipo `Class1` digitando o código a seguir C# na janela **imediata** e pressionando **Enter**. Esse código gerenciado funciona para C# o e o Visual Basic, com as alterações de sintaxe apropriadas:
 
    ```csharp
    Class1 obj = new Class1();
    ```
 
-   No C#, todos os nomes devem ser totalmente qualificados. Todos os métodos ou variáveis devem ser o escopo atual e o contexto de quando o serviço de linguagem tenta avaliar a expressão.
+   No C#, todos os nomes devem ser totalmente qualificados. Quaisquer métodos ou variáveis devem estar no escopo atual e no contexto quando o serviço de linguagem tentar avaliar a expressão.
 
 1. Supondo que `Test` aceite um parâmetro `int`, avalie `Test` usando a janela **Imediato**:
 
@@ -148,21 +148,21 @@ Por exemplo, para testar um método chamado `Test` na classe `Class1`:
    ?obj.Test(10);
    ```
 
-   O resultado é impressa na **imediato** janela.
+   O resultado é impresso na janela **imediata** .
 
 1. Você pode continuar a depuração do `Test` colocando um ponto de interrupção dentro dele e avaliando a função novamente.
 
-   O ponto de interrupção será atingido e você pode percorrer `Test`. Após a execução do `Test`, o Depurador voltará ao modo Design.
+   O ponto de interrupção será atingido e você poderá percorrer `Test`. Após a execução do `Test`, o Depurador voltará ao modo Design.
 
 ## <a name="vxtskdebuggingdllprojectsmixedmodedebugging"></a> Depuração de modo misto
 
-Você pode escrever um aplicativo de chamada para uma DLL de com em código gerenciado ou nativo. Se seu aplicativo nativo chama uma DLL gerenciada e você quiser depurar os dois, você pode habilitar os depuradores gerenciados e nativos nas propriedades do projeto. O processo exato depende se você deseja iniciar a depuração de projeto de DLL ou o projeto de aplicativo de chamada. Para obter mais informações, confira [Como: Depurar no modo misto](../debugger/how-to-debug-in-mixed-mode.md).
+Você pode escrever um aplicativo de chamada para uma DLL em código gerenciado ou nativo. Se seu aplicativo nativo chama uma DLL gerenciada e você deseja depurar ambos, você pode habilitar os depuradores gerenciados e nativos nas propriedades do projeto. O processo exato depende se você deseja iniciar a depuração do projeto de DLL ou o projeto de aplicativo de chamada. Para obter mais informações, consulte [como depurar em modo misto](../debugger/how-to-debug-in-mixed-mode.md).
 
-Você também pode depurar uma DLL nativa de um projeto de chamada gerenciada. Para obter mais informações, consulte [como depurar código gerenciado e nativo](how-to-debug-managed-and-native-code.md).
+Você também pode depurar uma DLL nativa de um projeto de chamada gerenciado. Para obter mais informações, consulte [como depurar código gerenciado e nativo](how-to-debug-managed-and-native-code.md).
 
 ## <a name="see-also"></a>Consulte também
 - [Depurar código gerenciado](../debugger/debugging-managed-code.md)
-- [Tipos de projeto do Visual C++](../debugger/debugging-preparation-visual-cpp-project-types.md)
+- [Preparar para depurar C++ projetos](../debugger/debugging-preparation-visual-cpp-project-types.md)
 - [Tipos de projeto C#, F# e Visual Basic](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)
 - [Definições do projeto para uma configuração de depuração do C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)
 - [Definições do projeto para configurações de depuração do C#](../debugger/project-settings-for-csharp-debug-configurations.md)

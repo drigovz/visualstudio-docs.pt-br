@@ -8,42 +8,49 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ff626078296c61d5f2588434942d4016cba0c1e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 837e07518ff9d4be875a52b4f1eb2929d10ff9df
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63004631"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189445"
 ---
 # <a name="msbuild-target-framework-and-target-platform"></a>Estrutura de destino e plataforma de destino do MSBuild
 Um projeto pode ser compilado para executar tanto em uma *estrutura de destino*, que é uma versão específica do .NET Framework, quanto em uma *plataforma de destino*, que é uma arquitetura de software específico.  Por exemplo, você pode direcionar um aplicativo para execução no .NET Framework 2.0 em uma plataforma de 32 bits compatível com a família de processadores 802x86 ("x86"). A combinação de estrutura de destino e plataforma de destino é conhecida como o *contexto de destino*.
 
+> [!IMPORTANT]
+> Este artigo mostra a maneira antiga de especificar uma estrutura de destino. Os projetos no estilo SDK permitem TargetFrameworks diferentes, como o netstandard. Para obter mais informações, confira [Estruturas de destino](/dotnet/standard/frameworks).
+
 ## <a name="target-framework-and-profile"></a>Perfil e estrutura de destino
- Uma estrutura de destino é a versão específica do [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] no qual seu projeto é criado para ser executado. A especificação de uma estrutura de destino é necessária porque ela habilita funcionalidades do compilador e referências do assembly são exclusivas para essa versão da estrutura.
+ Uma estrutura de destino é a versão específica do .NET Framework na qual o projeto foi criado para ser executado. A especificação de uma estrutura de destino é necessária porque ela habilita funcionalidades do compilador e referências do assembly são exclusivas para essa versão da estrutura.
 
  Atualmente, as seguintes versões do .NET Framework estão disponíveis para uso:
 
-- O [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 2.0 (incluído no Visual Studio 2005)
+- O .NET Framework 2.0 (incluído no Visual Studio 2005)
 
-- O [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 3.0 (incluído no [!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)])
+- O .NET Framework 3.0 (incluído no [!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)])
 
-- O [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 3.5 (incluído no [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)])
+- O .NET Framework 3.5 (incluído no [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)])
 
-- O [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 4.5.2
+- O .NET Framework 4.5.2
 
-- O [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 4.6 (incluído no [!INCLUDE[vs_dev14](../misc/includes/vs_dev14_md.md)])
+- O .NET Framework 4.6 (incluído no [!INCLUDE[vs_dev14](../misc/includes/vs_dev14_md.md)])
 
-- O [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 4.6.1
+- O .NET Framework 4.6.1
 
-- O [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 4.6.2
+- O .NET Framework 4.6.2
 
-- O [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 4.7
+- O .NET Framework 4.7
 
-- O [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 4.7.1
+- O .NET Framework 4.7.1
+
+- O .NET Framework 4.7.2
+
+- O .NET Framework 4.8
 
 As versões do .NET Framework são diferentes entre si na lista de assemblies que cada uma torna disponível para fazer referência. Por exemplo, você não pode compilar aplicativos Windows Presentation Foundation (WPF) a menos que seu projeto seja direcionado para o .NET Framework versão 3.0 ou superior.
 
-A estrutura de destino é especificada na propriedade `TargetFrameworkVersion` no arquivo de projeto. Você pode alterar a estrutura de destino para um projeto usando as páginas de propriedades do projeto no IDE (ambiente de desenvolvimento integrado) do Visual Studio. Para obter mais informações, confira [Como: Definir uma versão do .NET Framework como destino](../ide/how-to-target-a-version-of-the-dotnet-framework.md). Os valores disponíveis para `TargetFrameworkVersion` são `v2.0`, `v3.0`, `v3.5`, `v4.5.2`, `v4.6`, `v4.6.1`, `v4.6.2`, `v4.7` e `v4.7.1`.
+A estrutura de destino é especificada na propriedade `TargetFrameworkVersion` no arquivo de projeto. Você pode alterar a estrutura de destino para um projeto usando as páginas de propriedades do projeto no IDE (ambiente de desenvolvimento integrado) do Visual Studio. Para obter mais informações, consulte [Como direcionar a uma versão do .NET Framework](../ide/visual-studio-multi-targeting-overview.md). Os valores disponíveis para `TargetFrameworkVersion` são `v2.0`, `v3.0`, `v3.5`, `v4.5.2`, `v4.6`, `v4.6.1`, `v4.6.2`, `v4.7`, `v4.7.1`, `v4.7.2` e `v4.8`.
 
 ```xml
 <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
@@ -51,7 +58,10 @@ A estrutura de destino é especificada na propriedade `TargetFrameworkVersion` n
 
  Um *perfil de destino* é um subconjunto de uma estrutura de destino. Por exemplo, o .NET Framework 4 Client Profile não inclui referências aos assemblies do MSBuild.
 
- O perfil de destino é especificada na propriedade `TargetFrameworkProfile` em um arquivo de projeto. Você pode alterar o perfil de destino usando o controle de estrutura de destino nas páginas de propriedades do projeto no IDE. Para obter mais informações, confira [Como: Definir uma versão do .NET Framework como destino](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
+ > [!NOTE]
+ > Os perfis de destino se aplicam somente a [bibliotecas de classes portáteis](/dotnet/standard/cross-platform/cross-platform-development-with-the-portable-class-library).
+
+ O perfil de destino é especificada na propriedade `TargetFrameworkProfile` em um arquivo de projeto. Você pode alterar o perfil de destino usando o controle de estrutura de destino nas páginas de propriedades do projeto no IDE.
 
 ```xml
 <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>

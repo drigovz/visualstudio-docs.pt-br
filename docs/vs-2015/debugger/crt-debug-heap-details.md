@@ -75,12 +75,12 @@ caps.latest.revision: 22
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e43175ace465abdece5ec1f06aeda10ecddb9a14
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 158aff0f14886ea5d714c35456bf53d5768f57b8
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60057450"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697864"
 ---
 # <a name="crt-debug-heap-details"></a>Detalhes da pilha de depuração CRT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -105,7 +105,7 @@ Este tópico fornece um aspecto detalhado na heap de depuração de CRT.
 ## <a name="BKMK_Find_buffer_overruns_with_debug_heap"></a> Localizar estouros de buffer com heap de depuração  
  Dois dos problemas intratáveis mais comuns que os programadores encontram estão substituindo o final de um buffer alocado e os vazamentos de memória (não liberam alocações depois que não são mais necessários.) O heap de depuração fornece ferramentas avançadas para resolver problemas de alocação de memória desse tipo.  
   
- As versões de depuração de funções heap chamam o padrão ou as versões de base usadas nas compilações da release. Quando você solicita um bloco de memória, o gerenciador da heap de depuração aloca um bloco de memória ligeiramente maior do que o solicitado da heap de base e retorna um ponteiro para sua parte desse bloco. Por exemplo, suponha que seu aplicativo contém a chamada: `malloc( 10 )`. Em um build de versão [malloc](http://msdn.microsoft.com/library/144fcee2-be34-4a03-bb7e-ed6d4b99eea0) chamaria a rotina de alocação de heap de base solicitando uma alocação de 10 bytes. Em uma compilação de depuração, no entanto, `malloc` chamaria [malloc_dbg](http://msdn.microsoft.com/library/c97eca51-140b-4461-8bd2-28965b49ecdb), que, em seguida, chamaria a rotina de alocação de heap de base solicitando uma alocação de 10 bytes mais aproximadamente 36 bytes de memória adicional. Todos os blocos de memória resultantes no heap de depuração estão conectados em uma única lista vinculada, ordenados de acordo com a data em que foram alocados.  
+ As versões de depuração de funções heap chamam o padrão ou as versões de base usadas nas compilações da release. Quando você solicita um bloco de memória, o gerenciador da heap de depuração aloca um bloco de memória ligeiramente maior do que o solicitado da heap de base e retorna um ponteiro para sua parte desse bloco. Por exemplo, suponha que seu aplicativo contém a chamada: `malloc( 10 )`. Em um build de versão [malloc](https://msdn.microsoft.com/library/144fcee2-be34-4a03-bb7e-ed6d4b99eea0) chamaria a rotina de alocação de heap de base solicitando uma alocação de 10 bytes. Em uma compilação de depuração, no entanto, `malloc` chamaria [malloc_dbg](https://msdn.microsoft.com/library/c97eca51-140b-4461-8bd2-28965b49ecdb), que, em seguida, chamaria a rotina de alocação de heap de base solicitando uma alocação de 10 bytes mais aproximadamente 36 bytes de memória adicional. Todos os blocos de memória resultantes no heap de depuração estão conectados em uma única lista vinculada, ordenados de acordo com a data em que foram alocados.  
   
  Memória adicional alocada por rotinas da heap de depuração é usada para informações de contabilidade, para ponteiros que vinculam blocos de memória de depuração juntos, e para buffers pequenos em ambos os lados de seus dados para capturar substituições da região alocada.  
   
@@ -150,10 +150,10 @@ typedef struct _CrtMemBlockHeader
  ![Voltar ao início](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Conteúdo](#BKMK_Contents)  
   
 ## <a name="BKMK_Types_of_blocks_on_the_debug_heap"></a> Tipos de blocos na heap de depuração  
- Cada bloco de memória no heap de depuração é atribuído a um dos cinco tipos de alocação. Esses tipos são controlados e relatados de maneira diferente para fins de relatórios de estado e de detecção de vazamento. Você pode especificar o tipo de bloco atribuindo-o e usando uma chamada direta para uma das funções de alocação do heap de depuração como [_malloc_dbg](http://msdn.microsoft.com/library/c97eca51-140b-4461-8bd2-28965b49ecdb). Os cinco tipos de blocos de memória no heap de depuração (definido no membro de **nBlockUse** da estrutura de **_CrtMemBlockHeader**) são:  
+ Cada bloco de memória no heap de depuração é atribuído a um dos cinco tipos de alocação. Esses tipos são controlados e relatados de maneira diferente para fins de relatórios de estado e de detecção de vazamento. Você pode especificar o tipo de bloco atribuindo-o e usando uma chamada direta para uma das funções de alocação do heap de depuração como [_malloc_dbg](https://msdn.microsoft.com/library/c97eca51-140b-4461-8bd2-28965b49ecdb). Os cinco tipos de blocos de memória no heap de depuração (definido no membro de **nBlockUse** da estrutura de **_CrtMemBlockHeader**) são:  
   
  **_NORMAL_BLOCK**  
- Uma chamada para [malloc](http://msdn.microsoft.com/library/144fcee2-be34-4a03-bb7e-ed6d4b99eea0) ou [calloc](http://msdn.microsoft.com/library/17bb79a1-98cf-4096-90cb-1f9365cd6829) cria um bloco Normal. Se pretender usar somente os blocos Normais e não tiver necessidade de blocos Clientes, defina [_CRTDBG_MAP_ALLOC](http://msdn.microsoft.com/library/435242b8-caea-4063-b765-4a608200312b), que fará com que todas as chamadas de alocação de heap sejam mapeadas para os equivalentes de depuração em builds de depuração. Isso permitirá que informações de número de linha e de nome de arquivo sobre cada chamada de alocação sejam armazenadas no cabeçalho de bloco correspondente.  
+ Uma chamada para [malloc](https://msdn.microsoft.com/library/144fcee2-be34-4a03-bb7e-ed6d4b99eea0) ou [calloc](https://msdn.microsoft.com/library/17bb79a1-98cf-4096-90cb-1f9365cd6829) cria um bloco Normal. Se pretender usar somente os blocos Normais e não tiver necessidade de blocos Clientes, defina [_CRTDBG_MAP_ALLOC](https://msdn.microsoft.com/library/435242b8-caea-4063-b765-4a608200312b), que fará com que todas as chamadas de alocação de heap sejam mapeadas para os equivalentes de depuração em builds de depuração. Isso permitirá que informações de número de linha e de nome de arquivo sobre cada chamada de alocação sejam armazenadas no cabeçalho de bloco correspondente.  
   
  `_CRT_BLOCK`  
  Os blocos de memória alocados internamente por muitas funções da biblioteca em tempo de execução são marcados como blocos de CRT para que possam ser tratados separadamente. Como resultado, a detecção de escape e outras operações não precisam ser afetadas por eles. Uma alocação nunca deve atribuir, realocar ou liberar qualquer bloco do tipo CRT.  
@@ -166,7 +166,7 @@ typedef struct _CrtMemBlockHeader
 freedbg(pbData, _CLIENT_BLOCK|(MYSUBTYPE<<16));  
 ```  
   
- Uma função de cliente fornecida pelo cliente para despejar objetos armazenados em blocos de clientes pode ser instalada usando [_CrtSetDumpClient](http://msdn.microsoft.com/library/f3dd06d0-c331-4a12-b68d-25378d112033) e será chamada sempre que um bloco do cliente for despejado por uma função de depuração. Além disso, [_CrtDoForAllClientObjects](http://msdn.microsoft.com/library/d0fdb835-3cdc-45f1-9a21-54208e8df248) pode ser usado para chamar uma função determinada fornecida pelo aplicativo para cada bloco de cliente no heap de depuração.  
+ Uma função de cliente fornecida pelo cliente para despejar objetos armazenados em blocos de clientes pode ser instalada usando [_CrtSetDumpClient](https://msdn.microsoft.com/library/f3dd06d0-c331-4a12-b68d-25378d112033) e será chamada sempre que um bloco do cliente for despejado por uma função de depuração. Além disso, [_CrtDoForAllClientObjects](https://msdn.microsoft.com/library/d0fdb835-3cdc-45f1-9a21-54208e8df248) pode ser usado para chamar uma função determinada fornecida pelo aplicativo para cada bloco de cliente no heap de depuração.  
   
  **_FREE_BLOCK**  
  Normalmente, os blocos liberados são removidos da lista. Para verificar se a memória liberada ainda não está sendo gravada ou para simular condições de memória baixa, você optar por manter os blocos liberados na lista vinculada, marcados como livres e preenchidos com um valor conhecido de byte (atualmente 0xDD).  
@@ -174,7 +174,7 @@ freedbg(pbData, _CLIENT_BLOCK|(MYSUBTYPE<<16));
  **_IGNORE_BLOCK**  
  É possível desativar as operações de heap de depuração por um período. Durante este momento, blocos de memória são mantidos na lista, mas marcados como blocos Ignorar.  
   
- Para determinar o tipo e o subtipo de um bloco determinado, use a função [_CrtReportBlockType](http://msdn.microsoft.com/library/0f4b9da7-bebb-4956-9541-b2581640ec6b) e as macros **_BLOCK_TYPE** e **_BLOCK_SUBTYPE**. As macros são definidas (em crtdbg.h), como a seguir:  
+ Para determinar o tipo e o subtipo de um bloco determinado, use a função [_CrtReportBlockType](https://msdn.microsoft.com/library/0f4b9da7-bebb-4956-9541-b2581640ec6b) e as macros **_BLOCK_TYPE** e **_BLOCK_SUBTYPE**. As macros são definidas (em crtdbg.h), como a seguir:  
   
 ```  
 #define _BLOCK_TYPE(block)          (block & 0xFFFF)  
@@ -187,10 +187,10 @@ freedbg(pbData, _CLIENT_BLOCK|(MYSUBTYPE<<16));
  Vários dos recursos da heap de depuração devem ser acessados de dentro de seu código. A seção a seguir descreve alguns dos recursos e como usá-los.  
   
  `_CrtCheckMemory`  
- Você pode usar uma chamada para [_CrtCheckMemory](http://msdn.microsoft.com/library/457cc72e-60fd-4177-ab5c-6ae26a420765), por exemplo, para verificar a integridade do heap a qualquer momento. Essa função inspeciona cada bloco de memória na heap, verifica se as informações de cabeçalho do bloco de memória são válidas, e confirma que os buffers não foram alterados.  
+ Você pode usar uma chamada para [_CrtCheckMemory](https://msdn.microsoft.com/library/457cc72e-60fd-4177-ab5c-6ae26a420765), por exemplo, para verificar a integridade do heap a qualquer momento. Essa função inspeciona cada bloco de memória na heap, verifica se as informações de cabeçalho do bloco de memória são válidas, e confirma que os buffers não foram alterados.  
   
  `_CrtSetDbgFlag`  
- Você pode controlar como o heap de depuração acompanha as alocações usando um sinalizador interno, [_crtDbgFlag](http://msdn.microsoft.com/library/9e7adb47-8ab9-4e19-81d5-e2f237979973), que pode ser lido e definido usando a função [_CrtSetDbgFlag](http://msdn.microsoft.com/library/b5657ffb-6178-4cbf-9886-1af904ede94c). Alterando este sinalizador, você pode instruir o heap de depuração para verificar vazamentos de memória quando o programa encerra e relata todos os vazamentos detectados. Da mesma forma, você pode especificar se blocos de memória liberados não serão removidos da lista vinculada, para simular situações de memória baixa. Quando a heap é verificada, esses blocos liberados são inspecionados em sua totalidade para garantir que não estão perturbados.  
+ Você pode controlar como o heap de depuração acompanha as alocações usando um sinalizador interno, [_crtDbgFlag](https://msdn.microsoft.com/library/9e7adb47-8ab9-4e19-81d5-e2f237979973), que pode ser lido e definido usando a função [_CrtSetDbgFlag](https://msdn.microsoft.com/library/b5657ffb-6178-4cbf-9886-1af904ede94c). Alterando este sinalizador, você pode instruir o heap de depuração para verificar vazamentos de memória quando o programa encerra e relata todos os vazamentos detectados. Da mesma forma, você pode especificar se blocos de memória liberados não serão removidos da lista vinculada, para simular situações de memória baixa. Quando a heap é verificada, esses blocos liberados são inspecionados em sua totalidade para garantir que não estão perturbados.  
   
  O sinalizador **_crtDbgFlag** contém os seguintes campos de bits:  
   
@@ -306,11 +306,11 @@ typedef struct _CrtMemState
   
 |Função|Descrição|  
 |--------------|-----------------|  
-|[_CrtMemCheckpoint](http://msdn.microsoft.com/library/f1bacbaa-5a0c-498a-ac7a-b6131d83dfbc)|Salva um instantâneo da heap em uma estrutura de **_CrtMemState** fornecida pelo aplicativo.|  
-|[_CrtMemDifference](http://msdn.microsoft.com/library/0f327278-b551-482f-958b-76941f796ba4)|Compara duas estruturas de estado de memória, salva a diferença entre elas em uma estrutura de estado e retorna VERDADEIRO se os dois estados forem diferentes.|  
-|[_CrtMemDumpStatistics](http://msdn.microsoft.com/library/27b9d731-3184-4a2d-b9a7-6566ab28a9fe)|Despeja uma determinada estrutura **_CrtMemState**. A estrutura pode conter um instantâneo de estado da heap de depuração em um determinado momento ou a diferença entre os dois instantâneos.|  
-|[_CrtMemDumpAllObjectsSince](http://msdn.microsoft.com/library/c48a447a-e6bb-475c-9271-a3021182a0dc)|Despeja informações sobre todos os objetos atribuídos como um instantâneo determinado extraído do heap do início de execução. Cada vez que despeja um bloco **_CLIENT_BLOCK**, uma função de hook fornecida pelo aplicativo é chamada se instalada usando **_CrtSetDumpClient**.|  
-|[_CrtDumpMemoryLeaks](http://msdn.microsoft.com/library/71b2eab4-7f55-44e8-a55a-bfea4f32d34c)|Determina se qualquer vazamento de memória ocorreu desde o início da execução do programa e, em caso afirmativo, despeja todos os objetos atribuídos. Cada vez que **_CrtDumpMemoryLeaks** despeja um bloco **_CLIENT_BLOCK**, uma função de hook fornecida pelo aplicativo é chamada se instalada usando **_CrtSetDumpClient**.|  
+|[_CrtMemCheckpoint](https://msdn.microsoft.com/library/f1bacbaa-5a0c-498a-ac7a-b6131d83dfbc)|Salva um instantâneo da heap em uma estrutura de **_CrtMemState** fornecida pelo aplicativo.|  
+|[_CrtMemDifference](https://msdn.microsoft.com/library/0f327278-b551-482f-958b-76941f796ba4)|Compara duas estruturas de estado de memória, salva a diferença entre elas em uma estrutura de estado e retorna VERDADEIRO se os dois estados forem diferentes.|  
+|[_CrtMemDumpStatistics](https://msdn.microsoft.com/library/27b9d731-3184-4a2d-b9a7-6566ab28a9fe)|Despeja uma determinada estrutura **_CrtMemState**. A estrutura pode conter um instantâneo de estado da heap de depuração em um determinado momento ou a diferença entre os dois instantâneos.|  
+|[_CrtMemDumpAllObjectsSince](https://msdn.microsoft.com/library/c48a447a-e6bb-475c-9271-a3021182a0dc)|Despeja informações sobre todos os objetos atribuídos como um instantâneo determinado extraído do heap do início de execução. Cada vez que despeja um bloco **_CLIENT_BLOCK**, uma função de hook fornecida pelo aplicativo é chamada se instalada usando **_CrtSetDumpClient**.|  
+|[_CrtDumpMemoryLeaks](https://msdn.microsoft.com/library/71b2eab4-7f55-44e8-a55a-bfea4f32d34c)|Determina se qualquer vazamento de memória ocorreu desde o início da execução do programa e, em caso afirmativo, despeja todos os objetos atribuídos. Cada vez que **_CrtDumpMemoryLeaks** despeja um bloco **_CLIENT_BLOCK**, uma função de hook fornecida pelo aplicativo é chamada se instalada usando **_CrtSetDumpClient**.|  
   
  ![Voltar ao início](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Conteúdo](#BKMK_Contents)  
   
@@ -321,7 +321,7 @@ typedef struct _CrtMemState
   
  A maneira mais simples de identificar a chamada específica de alocação da heap que não foi bem-sucedida é aproveitar o número exclusivo de solicitação de alocação associado com cada bloco na heap de depuração. Quando as informações sobre um bloco são relatadas por uma das funções de despejo, esse número de solicitação de alocação é colocado entre chaves (por exemplo, "{36}").  
   
- Depois que souber o número de solicitação de alocação de um bloco alocado inadequado, você pode passar este número para [_CrtSetBreakAlloc](http://msdn.microsoft.com/library/33bfc6af-a9ea-405b-a29f-1c2d4d9880a1) para criar um ponto de interrupção. A execução será interrompida logo após a alocação do bloco, e é possível voltar de modo a determinar que rotina foi responsável pela chamada incorreta. Para evitar recompilar, é possível fazer a mesma coisa no depurador definindo **_crtBreakAlloc** para o número de solicitação de alocação que você está interessado.  
+ Depois que souber o número de solicitação de alocação de um bloco alocado inadequado, você pode passar este número para [_CrtSetBreakAlloc](https://msdn.microsoft.com/library/33bfc6af-a9ea-405b-a29f-1c2d4d9880a1) para criar um ponto de interrupção. A execução será interrompida logo após a alocação do bloco, e é possível voltar de modo a determinar que rotina foi responsável pela chamada incorreta. Para evitar recompilar, é possível fazer a mesma coisa no depurador definindo **_crtBreakAlloc** para o número de solicitação de alocação que você está interessado.  
   
  **Criando versões de depuração de suas rotinas de alocação**  
   

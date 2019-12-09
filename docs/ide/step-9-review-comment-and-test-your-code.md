@@ -1,30 +1,38 @@
 ---
-title: 'Etapa 9: Examinar, comentar e testar o código'
-ms.date: 11/04/2016
-ms.topic: conceptual
+title: 'Etapa 9: Revisar, comentar e testar o código'
+ms.date: 08/30/2019
 ms.assetid: f26f79ba-c91b-4164-b87f-679a1b231c09
+ms.topic: tutorial
+ms.prod: visual-studio-windows
+ms.technology: vs-ide-general
+dev_langs:
+- CSharp
+- VB
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 899b4ffee17849bf1165def3025506eb75d940a0
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 39be6feffb70dd43823af2af0fce719daafc6f78
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435427"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572476"
 ---
-# <a name="step-9-review-comment-and-test-your-code"></a>Etapa 9: Examinar, comentar e testar o código
-Em seguida, adicione um comentário ao seu código. Um comentário é uma observação que não modifica a maneira que o programa se comporta. Facilita para alguém que esteja lendo o código para entender o que ele faz. Recomendamos que você tenha o hábito de adicionar comentários ao seu código. No Visual C#, duas barras (//) marcam uma linha como um comentário. No Visual Basic, aspas simples (') são usadas para marcar uma linha como um comentário. Após adicionar um comentário, teste seu programa. É uma prática recomendável executar e testar seu código com frequência enquanto trabalha em seus projetos e, portanto, você pode capturar e corrigir os problemas no início, antes que o código fique mais complicado. Isso é chamado de *teste iterativo*.
+# <a name="step-9-review-comment-and-test-your-code"></a>Etapa 9: Revisar, comentar e testar o código
 
- Você acabou de criar algo que funciona e que, embora ainda não esteja pronto, já pode carregar uma imagem. Antes de adicionar um comentário ao seu código e testá-lo, leva tempo para examinar os conceitos de código, pois você usará esses conceitos frequentemente:
+Em seguida, adicione um comentário ao seu código. Um comentário é uma observação que não altera a maneira como o aplicativo se comporta. Facilita para alguém que esteja lendo o código para entender o que ele faz. Recomendamos que você tenha o hábito de adicionar comentários ao seu código.
+
+No C#, duas barras "//" (//) marcam uma linha como um comentário. No Visual Basic, aspas simples (') são usadas para marcar uma linha como um comentário. Depois de adicionar um comentário, você testará seu aplicativo. É uma prática recomendável executar e testar seu código com frequência enquanto trabalha em seus projetos e, portanto, você pode capturar e corrigir os problemas no início, antes que o código fique mais complicado. Isso é chamado de *teste iterativo*.
+
+Você acabou de criar algo que funciona e que, embora ainda não esteja pronto, já pode carregar uma imagem. Antes de adicionar um comentário ao seu código e testá-lo, leva tempo para examinar os conceitos de código, pois você usará esses conceitos frequentemente:
 
 - Quando você clica duas vezes no botão **Mostrar uma imagem** no **Designer de Formulários do Windows**, o IDE adiciona automaticamente um *método* ao código do seu programa.
 
-- Métodos são o modo como você organiza seu código: É como seu código é agrupado.
+- Os métodos são a forma como você organiza seu código: é como o código é agrupado.
 
-- Na maioria das vezes, um método faz um pequeno número de coisas em uma ordem específica, como a forma como o seu método `showButton_Click()` mostra uma caixa de diálogo e carrega uma imagem.
+- Na maioria das vezes, um método faz um pequeno número de coisas em uma ordem específica, como o método `showButton_Click()` (ou `ShowButton_Click()`) mostra uma caixa de diálogo e, em seguida, carrega uma imagem.
 
 - Um método é composto por *declarações* de código, ou linhas de código. Pense em um método como uma maneira de empacotar as instruções de código juntas.
 
@@ -33,61 +41,65 @@ Em seguida, adicione um comentário ao seu código. Um comentário é uma observ
    A seguir veja um exemplo de uma declaração.
 
   ```csharp
-  pictureBox1.Load(openFileDialog1.FileName);
+  PictureBox1.Load(openFileDialog1.FileName);
   ```
 
   ```vb
   pictureBox1.Load(openFileDialog1.FileName)
   ```
 
-   As instruções fazem com que seus programas funcionem. No Visual C#, uma instrução sempre termina em um ponto-e-vírgula. No Visual Basic, o final de uma linha é o fim de uma declaração. (Nenhuma vírgula é necessária no Visual Basic.) A instrução anterior diz ao controle <xref:System.Windows.Forms.PictureBox> para carregar o arquivo que o usuário selecionou com o componente **OpenFileDialog**.
-
-  ![link para vídeo](../data-tools/media/playvideo.gif) Para obter uma versão em vídeo deste tópico, confira [Tutorial 1: Criar um visualizador de imagens no Visual Basic – Vídeo 5](http://go.microsoft.com/fwlink/?LinkId=205216) ou [Tutorial 1: Criar um visualizador de imagens em C# – Vídeo 5](http://go.microsoft.com/fwlink/?LinkId=205206). Esses vídeos usam uma versão anterior do Visual Studio, portanto, existem pequenas diferenças em alguns comandos de menu e em outros elementos da interface do usuário. No entanto, os conceitos e procedimentos funcionam de maneiras semelhantes na versão atual do Visual Studio.
+   As instruções fazem com que seus programas funcionem. No C#, uma instrução sempre termina em um ponto e vírgula. No Visual Basic, o final de uma linha é o fim de uma declaração. (Não é necessário um ponto e vírgula no Visual Basic.) A instrução anterior informa o controle <xref:System.Windows.Forms.PictureBox> para carregar o arquivo selecionado pelo usuário com o componente **OpenFileDialog** .
 
 ## <a name="to-add-comments"></a>Para adicionar comentários
 
 1. Adicione o seguinte comentário ao seu código.
 
-     [!code-vb[VbExpressTutorial1Step9_10#1](../ide/codesnippet/VisualBasic/step-9-review-comment-and-test-your-code_1.vb)]
+     [!INCLUDE [devlang-control-csharp-vb](./includes/devlang-control-csharp-vb.md)]
+
      [!code-csharp[VbExpressTutorial1Step9_10#1](../ide/codesnippet/CSharp/step-9-review-comment-and-test-your-code_1.cs)]
 
-    > [!NOTE]
-    > O manipulador de eventos do botão **showButton** <xref:System.Windows.Forms.Control.Click> foi concluído e funciona. Você começou a escrever código, começando com uma instrução `if`. Uma instrução `if` é como você dizer a seu programa, "Verifique isso, e se for verdadeiro, faça o seguinte". Nesse caso, você informa o programa para abrir a caixa de diálogo **Abrir Arquivo** e, se o usuário escolher um arquivo e o botão **OK**, carregue o arquivo na **PictureBox**.
+     [!code-vb[VbExpressTutorial1Step9_10#1](../ide/codesnippet/VisualBasic/step-9-review-comment-and-test-your-code_1.vb)]
+
+    O manipulador de eventos do botão **showButton** <xref:System.Windows.Forms.Control.Click> foi concluído e funciona. Você começou a escrever código, começando com uma instrução `if`. Uma instrução `if` é como você diz ao seu aplicativo, "Marque esta coisa e, se for verdadeira, execute estas ações". Nesse caso, você informa ao aplicativo para abrir a caixa de diálogo **Abrir arquivo** e, se o usuário selecionar um arquivo e escolher o botão **OK** , carregará esse arquivo em **PictureBox**.
 
     > [!TIP]
     > O IDE foi criado para facilitar o processo de escrever código, e os *snippets de código* são uma maneira de fazer isso. Um snippet é um atalho que é expandido em um pequeno bloco de código.
     >
-    >  Você pode ver todos os snippets disponíveis. Na barra de menus, escolha **Ferramentas** > **Gerenciador de Snippets de Código**. Para o Visual C#, o snippet `if` está no **Visual C#**. Para o Visual Basic, os snippets `if` estão em **Condicionais e Loops** > **Padrões de Código**. Você pode usar esse aplicativo para procurar por snippets existentes ou para adicionar seus próprios snippets.
+    >  Você pode ver todos os snippets disponíveis. Na barra de menus, escolha **Ferramentas** > **Gerenciador de Snippets de Código**. Para C#, o trecho de `if` está **no C# Visual** . Por Visual Basic, os trechos de `if` estão em **padrões de código**  > **condicionais e loops**. Você pode usar esse aplicativo para procurar por snippets existentes ou para adicionar seus próprios snippets.
     >
     >  Para ativar um snippet ao digitar o código, digite-o e pressione a tecla **Tab**. Muitos snippets aparecem na janela **IntelliSense** e é por isso que você escolhe a tecla **Tab** duas vezes: primeiro para marcar o snippet na janela do **IntelliSense** e, depois, para mandar o IDE para usar o snippet. (O IntelliSense oferece suporte a snippets de `if`, mas não a snippets de `ifelse`.)
 
-2. Antes de executar o programa, salve seu programa clicando no botão **Salvar Todos** na barra de ferramentas, que aparece da seguinte forma.
+1. Antes de executar o aplicativo, salve o aplicativo escolhendo o botão de barra de ferramentas **salvar tudo** , que deve ser semelhante à captura de tela a seguir.
 
-     ![Botão de barra de ferramentas Salvar Tudo](../ide/media/express_iconsaveall.png)
-Botão **Salvar Tudo**
+     ![Botão de barra de ferramentas Salvar Todos](../ide/media/express_iconsaveall.png)<br>
+*Botão* ***salvar tudo***
 
-     Como alternativa para salvar seu programa, na barra de menus, escolha **Arquivo** > **Salvar Todos**. É uma prática recomendada salvar no início e com frequência.
+     Como alternativa, para salvar seu aplicativo, escolha **arquivo** > **salvar tudo** na barra de menus (ou pressione **Ctrl**+**Shift**+**S**). É uma prática recomendada salvar no início e com frequência.
 
-     Quando estiver em execução, seu programa deve estar como a imagem a seguir.
+     Quando estiver em execução, seu programa deverá ser semelhante à imagem a seguir.
 
-     ![Visualizador de imagens](../ide/media/express_pictureviewerdonerun.png)
-**Visualizador de imagens**
+     ![Visualizador de imagem](../ide/media/express_pictureviewerdonerun.png)<br>***Visualizador de imagem***
 
-## <a name="to-test-your-program"></a>Para testar o programa
+## <a name="to-test-your-app"></a>Para testar seu aplicativo
 
 1. Escolha a tecla **F5** ou escolha o botão da barra de ferramentas **Iniciar Depuração**.
 
-2. Escolha o botão **Mostrar uma imagem** para executar o código que você acabou de escrever. Primeiro, o programa abre uma caixa de diálogo **Abrir Arquivo**. Verifique se seus filtros aparecem na lista suspensa **Arquivos de tipo** na parte inferior da caixa de diálogo. Em seguida, navegue para uma imagem e abra-a. Geralmente você pode localizar as imagens de exemplo fornecidas com o sistema operacional Windows em sua pasta de *Meus Documentos*, dentro da pasta *My Pictures\Sample Pictures*.
+1. Escolha o botão **Mostrar uma imagem** para executar o código que você acabou de escrever. Primeiro, o aplicativo abre uma caixa de diálogo **Abrir arquivo** . Verifique se seus filtros aparecem na lista suspensa **Arquivos de tipo** na parte inferior da caixa de diálogo. Em seguida, navegue para uma imagem e abra-a. Geralmente você pode localizar as imagens de exemplo fornecidas com o sistema operacional Windows em sua pasta de *Meus Documentos*, dentro da pasta *My Pictures\Sample Pictures*.
 
-    > [!NOTE]
+    > [!TIP]
     > Se você não vir imagens na caixa de diálogo **Selecione um arquivo de imagem**, verifique se o filtro **Todos os arquivos (*.\*)** está marcado na lista suspensa no canto inferior direito da caixa de diálogo.
 
-3. Carregue uma imagem e ela aparecerá em sua PictureBox. Tente redimensionar o formulário arrastando suas bordas. Como você tem seu PictureBox encaixado em um TableLayoutPanel, que está encaixado no formulário, sua área de imagem se redimensionará de modo que seja tão larga quando o formulário, e preencherá 90% da parte superior do formulário. É por isso que você usou os contêineres <xref:System.Windows.Forms.TableLayoutPanel> e <xref:System.Windows.Forms.FlowLayoutPanel>: Eles mantêm seu formato dimensionado corretamente quando o usuário o redimensiona.
+1. Carregue uma imagem e ela aparecerá em sua PictureBox. Tente redimensionar o formulário arrastando suas bordas. Como você tem seu PictureBox encaixado em um TableLayoutPanel, que está encaixado no formulário, sua área de imagem se redimensionará de modo que seja tão larga quando o formulário, e preencherá 90% da parte superior do formulário. É por isso que você usou os contêineres <xref:System.Windows.Forms.TableLayoutPanel> e <xref:System.Windows.Forms.FlowLayoutPanel>: eles mantêm seu formato dimensionado corretamente quando o usuário o redimensiona.
 
      Agora, imagens maiores vão além das bordas do visualizador de imagens. Na próxima etapa, você adicionará código para fazer as imagens caberem na janela.
 
 ## <a name="to-continue-or-review"></a>Para continuar ou revisar
 
-- Para ir para a próxima etapa do tutorial, confira [Etapa 10: Escrever o código dos botões adicionais e de uma caixa de seleção](../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md).
+- Para ir para a próxima etapa do tutorial, consulte **[etapa 10: escrever código para botões adicionais e uma caixa de seleção](../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md)** .
 
-- Para retornar à etapa anterior do tutorial, confira [Etapa 8: Escrever o código do manipulador de eventos do botão Mostrar uma Imagem](../ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md).
+- Para voltar à etapa anterior do tutorial, confira [Etapa 8: Escrever código para o manipulador de eventos do botão Mostrar uma Imagem](../ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md).
+
+## <a name="see-also"></a>Consulte também
+
+* [Tutorial 2: criar um teste de matemática cronometrado](tutorial-2-create-a-timed-math-quiz.md)
+* [Tutorial 3: criar um jogo de correspondência](tutorial-3-create-a-matching-game.md)

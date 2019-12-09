@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 91d6097fd558ee3fd4e61485eb53cd25a0b7c6a2
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d417b0c75db1b2153e9a43eb2e45f3d9550971d1
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63399259"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739602"
 ---
-# <a name="idiasymbolgetoemid"></a>IDiaSymbol::get_oemId
-Recupera o valor de ID do fabricante original do equipamento (OEM) do símbolo.
+# <a name="idiasymbolget_oemid"></a>IDiaSymbol::get_oemId
+Recupera o valor da ID do OEM (fabricante original do equipamento) do símbolo.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -33,16 +33,16 @@ HRESULT get_oemId ( 
 #### <a name="parameters"></a>Parâmetros
  `pRetVal`
 
-[out] Retorna um valor exclusivo que identifica um OEM.
+fora Retorna um valor exclusivo que identifica um OEM.
 
-## <a name="return-value"></a>Valor de retorno
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE` ou um código de erro.
 
 > [!NOTE]
-> Um valor de retorno `S_FALSE` significa que a propriedade não está disponível para o símbolo.
+> Um valor de retorno de `S_FALSE` significa que a propriedade não está disponível para o símbolo.
 
 ## <a name="remarks"></a>Comentários
- Essa propriedade se aplica apenas aos símbolos com um [enumeração SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) tipo de `SymTagCustomType`.
+ Essa propriedade só se aplica a símbolos com um tipo de [Enumeração SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) de `SymTagCustomType`.
 
 ## <a name="see-also"></a>Consulte também
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -8,15 +8,15 @@ helpviewer_keywords:
 - load tests, test mix
 - load tests, removing tests
 ms.assetid: 303e1d70-5d98-424a-b51e-e0898e16d3f8
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: e1c58cae9983cc14878ba548177bf9ba6ad44255
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 9a2c882d912cb46e4f61bd03b9949aaf9fd135d6
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62783963"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72665016"
 ---
 # <a name="edit-the-test-mix-to-specify-which-web-performance-unit-and-coded-ui-tests-to-include-in-a-load-test-scenario"></a>Editar a combinação de testes para especificar quais testes de IU codificados, de desempenho Web e de unidade incluir em um cenário de teste de carga
 
@@ -56,7 +56,7 @@ Você pode adicionar mais testes de unidade e desempenho na Web à combinação 
 5. (Opcional) Ajuste o controle misto para especificar a distribuição de teste. Para saber mais, confira [Sobre o controle misto](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md).
 
 ## <a name="remove-tests-from-a-scenario"></a>Remover testes de um cenário
- ![Removendo um teste de um teste de carga existente](../test/media/ltest_removetest.png)
+![Removendo um teste de um teste de carga existente](../test/media/ltest_removetest.png)
 
 ### <a name="to-remove-tests-from-a-scenario"></a>Para remover testes de um cenário
 
@@ -72,21 +72,21 @@ Você pode adicionar mais testes de unidade e desempenho na Web à combinação 
 4. Quando terminar a remoção dos testes, escolha **OK**.
 
 ## <a name="EditingTestMixAboutMixControl"></a> Sobre o controle misto
- O controle misto permite que você ajuste a porcentagem de carga distribuída entre testes, tipos de navegador ou tipos de rede em um cenário de teste de carga. Você ajusta os valores de porcentagem movendo controles deslizantes. O ajuste da combinação de testes especifica a probabilidade de um usuário virtual executar um teste específico em um cenário de teste de carga.
+O controle misto permite que você ajuste a porcentagem de carga distribuída entre testes, tipos de navegador ou tipos de rede em um cenário de teste de carga. Você ajusta os valores de porcentagem movendo controles deslizantes. O ajuste da combinação de testes especifica a probabilidade de um usuário virtual executar um teste específico em um cenário de teste de carga.
 
- Quando você move um controle deslizante, os valores de porcentagem de todos os itens disponíveis mudam. Se você tiver mais de dois itens, a quantidade adicionada ou removida será distribuída por igual entre os outros itens. É possível substituir esse comportamento. Se marcar a caixa de seleção na coluna de cadeado de um item específico, você bloqueará o valor de porcentagem especificado do item. Então, quando você mover um controle deslizante, o valor adicionado ou removido só será aplicado aos itens desbloqueados restantes.
+Quando você move um controle deslizante, os valores de porcentagem de todos os itens disponíveis mudam. Se você tiver mais de dois itens, a quantidade adicionada ou removida será distribuída por igual entre os outros itens. É possível substituir esse comportamento. Se marcar a caixa de seleção na coluna de cadeado de um item específico, você bloqueará o valor de porcentagem especificado do item. Então, quando você mover um controle deslizante, o valor adicionado ou removido só será aplicado aos itens desbloqueados restantes.
 
- O botão **Distribuir** é usado para alocar igualmente as porcentagens entre todos os itens. Por exemplo, se você tiver três itens, escolher **Distribuir** define os valores de percentual como 34, 33 e 33.
+O botão **Distribuir** é usado para alocar igualmente as porcentagens entre todos os itens. Por exemplo, se você tiver três itens, escolher **Distribuir** define os valores de percentual como 34, 33 e 33.
 
 > [!WARNING]
 > O botão **Distribuir** substitui todos os itens bloqueados.
 
- Também é possível digitar os valores de percentual diretamente na coluna **%** em vez de usar os controles deslizantes. Se você inserir um valor de porcentagem diretamente, os outros itens não serão ajustados automaticamente.
+Também é possível digitar os valores de percentual diretamente na coluna **%** em vez de usar os controles deslizantes. Se você inserir um valor de porcentagem diretamente, os outros itens não serão ajustados automaticamente.
 
 > [!NOTE]
 > Os controles deslizantes serão desabilitados quando o total não for 100% ou quando os valores de percentual inseridos na coluna **%** forem decimais.
 
- Ao inserir valores de porcentagem manualmente, você deve ter certeza de que a soma de todos os itens seja 100%. Ao salvar uma combinação, se a soma não for 100%, você deverá aceitar os valores de porcentagem como estão ou voltar e ajustá-los. Se você optar por aceitá-los como estão, eles serão rateados em 100%.  Por exemplo, se você tiver dois itens e defini-los manualmente como 80% e 40%, o primeiro item será definido como 66,67% (80 dividido por 120) e o segundo item será definido como 33,33% (40 dividido por 120).
+Ao inserir valores de porcentagem manualmente, você deve ter certeza de que a soma de todos os itens seja 100%. Ao salvar uma combinação, se a soma não for 100%, você deverá aceitar os valores de porcentagem como estão ou voltar e ajustá-los. Se você optar por aceitá-los como estão, eles serão rateados em 100%.  Por exemplo, se você tiver dois itens e defini-los manualmente como 80% e 40%, o primeiro item será definido como 66,67% (80 dividido por 120) e o segundo item será definido como 33,33% (40 dividido por 120).
 
 ## <a name="see-also"></a>Consulte também
 

@@ -3,25 +3,23 @@ title: O benefício CloudPilot para as assinaturas do Visual Studio | Microsoft 
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 12/19/2018
+ms.date: 11/13/2019
 ms.topic: conceptual
 description: Saiba mais sobre o benefício do CloudPilot disponível nas assinaturas do Visual Studio selecionadas
-searchscope: VS Subscription
-ms.openlocfilehash: f251073337c862e0d96fb3550b163da29ce8f42e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 253a1b1c3b6996a200a236661d621c43975cb1ed
+ms.sourcegitcommit: ca3bb6db949f5e405f6ffe1afa5f430662c1173f
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62948357"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "74099626"
 ---
 # <a name="the-cloudpilot-benefit-in-visual-studio-subscriptions"></a>O benefício CloudPilot nas assinaturas do Visual Studio
+Mova seus aplicativos para o Microsoft Azure em poucas etapas simples. Em minutos, identifique todas as alterações de código necessárias à linha de código para a migração bem-sucedida para: Contêineres, VMs, Serviços de Aplicativos, SQL do Azure e/ou MI do SQL. Em seguida, migre os aplicativos para o Azure usando assistentes e aproveitando o ASR, o AMD e o DMS.
 
-Mova seus aplicativos para o Microsoft Azure em poucas etapas simples. Em minutos, identifique todas as alterações de código necessárias até a linha de código para fazer uma migração bem-sucedida para: Contêineres, VMs, Serviços de Aplicativos, SQL Azure e/ou MI do SQL. Em seguida, migre os aplicativos para o Azure usando assistentes e aproveitando o ASR, o AMD e o DMS.
-
+## <a name="overview"></a>Visão Geral
 O CloudPilot, da UnifyCloud, foi projetado para ajudar os desenvolvedores a mover aplicativos para o Azure de modo rápido e fácil.  Em uma fração do tempo que uma avaliação manual levaria, o CloudPilot determina os custos de migração do Azure PaaS e IaaS com precisão e fornece recomendações detalhadas, até a linha de código, sobre quais alterações de código precisam ser feitas para que o aplicativo seja executado na nuvem. O CloudPilot auxilia na avaliação inicial do esforço de migração na nuvem e no planejamento de desenvolvimento, no processo de refatoração, oferecendo alterações detalhadas do nível de código para a nuvem e, por fim, nos testes finais relativos a controles de tecnologia empresarial e políticas.
 
 ## <a name="activation-steps"></a>Etapas de ativação
-
 1. Entre no [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
 2. Localize o bloco do benefício do CloudPilot na categoria "Ferramentas" e clique em **Obter código**.
@@ -61,14 +59,15 @@ O CloudPilot, da UnifyCloud, foi projetado para ajudar os desenvolvedores a move
 | Nível de Assinatura                                                 |     Canais                                            | Benefício                                                          | Renovável?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | VL, Azure, Retail, | 2 licenças, 90 dias, verificações ilimitadas       |  Nº  Disponível apenas para novos assinantes          |
+| Visual Studio Enterprise com GitHub Enterprise   | VL | 2 licenças, 90 dias, verificações ilimitadas       |  Nº  Disponível apenas para novos assinantes          |
 | Visual Studio Professional (Standard) | VL, Azure, Retail                                       | 1 licença, 30 dias, uma verificação                                                            |  Nº  Disponível apenas para novos assinantes           |
-| Visual Studio Test Professional (Padrão)                         | VL, Retail                                              | Não disponível                                             |  N/D           |
-| Plataformas MSDN (Padrão)                                          | VL, Retail                                              | Não disponível                                              |  N/D          |
-| Visual Studio Dev Essentials | N/D  | Não disponível | N/D |
-| Visual Studio Enterprise (Standard)  | NFR<sup>1</sup> |Não disponível  | N/D |
-| Visual Studio Enterprise, Visual Studio Professional (nuvem mensal) | Azure | Não disponível | N/D |
+| Visual Studio Professional com GitHub Enterprise | VL | 1 licença, 30 dias, uma verificação                                                            |  Nº  Disponível apenas para novos assinantes           |
+| Visual Studio Test Professional (Padrão)                         | VL, Retail                                              | Não disponível                                             |  N/A           |
+| Plataformas MSDN (Padrão)                                          | VL, Retail                                              | Não disponível                                              |  N/A          |
+| Visual Studio Enterprise (Standard)  | NFR<sup>1</sup> |Não disponível  | N/A |
+| Visual Studio Enterprise, Visual Studio Professional (nuvem mensal) | Azure | Não disponível | N/A |
 
-<sup>1</sup> *Inclui:  NFR (Proibida a revenda), FTE, MVP (Most Valuable Professional), RD (Diretor Regional), MPN (Microsoft Partner Network), VSIP (Visual Studio Industry Partner), Microsoft Certified Trainer, BizSpark e Imagine*
+<sup>1</sup>  *inclui: não para revenda (NFR), FTE, profissional mais valioso (MVP), diretor regional (RD), Microsoft Partner Network (MPN), parceiro do setor do Visual Studio (VSIP), Microsoft Certified Trainer, BizSpark, imagine*
 
 > [!NOTE]
 > A Microsoft não oferece mais assinaturas anuais do Visual Studio Professional e do Visual Studio Enterprise nas Assinaturas na Nuvem. Não haverá nenhuma alteração na experiência dos clientes existentes nem na capacidade de renovar, aumentar, diminuir ou cancelar suas assinaturas. Os novos clientes são incentivados a acessar [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) para explorar diferentes opções de compra do Visual Studio.
@@ -77,13 +76,13 @@ Não tem certeza de qual assinatura você está usando?  Conecte-se ao [https://
 
 ## <a name="support-resources"></a>Recursos de suporte
 - Precisa de ajuda para usar o CloudPilot?  Confira estes recursos:
-    - [Entre em contato com UnifyCloud](https://www.unifycloud.com/contacts/) para consultas sobre produtos UnifyCloud.
-    - [Manual do usuário do CloudPilot](https://www.cloudatlasinc.com/cloudpilot/doc/CloudPilot-User-Manual.pdf )
-    - [Enviar uma solicitação de suporte](https://support.datacamp.com/hc/requests/new)
+  - [Entre em contato com UnifyCloud](https://www.unifycloud.com/contacts/) para consultas sobre produtos UnifyCloud.
+  - [Manual do usuário do CloudPilot](https://www.cloudatlasinc.com/cloudpilot/doc/CloudPilot-User-Manual.pdf )
+  - [Enviar uma solicitação de suporte](https://support.datacamp.com/hc/requests/new)
 
 - Para obter assistência com vendas, assinaturas, contas e cobrança para Assinaturas do Visual Studio, entre em contato com o [Suporte a Assinaturas](https://visualstudio.microsoft.com/subscriptions/support/) do Visual Studio.
 - Tem alguma pergunta sobre o IDE do Visual Studio, o Azure DevOps Services ou outros produtos ou serviços do Visual Studio?  Acesse o [Suporte do Visual Studio](https://visualstudio.microsoft.com/support/).
 
 ## <a name="next-steps"></a>Próximas etapas
 
-Se você ainda não ativou o benefício do Azure que vem com sua assinatura, visite [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) e clique no bloco do Azure na categoria Ferramentas para configurar sua assinatura do Azure e resgatar seus créditos gratuitos do Azure.
+Se você ainda não ativou o benefício de crédito individual do Azure DevTest que vem com sua assinatura, visite [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) e clique no bloco Azure na categoria ferramentas para configurar sua assinatura do Azure e resgatar seu crédito individual do Azure DevTest.

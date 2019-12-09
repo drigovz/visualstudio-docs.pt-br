@@ -3,17 +3,17 @@ title: Padrões comuns de controle para o Visual Studio | Microsoft Docs
 ms.date: 04/26/2017
 ms.topic: conceptual
 ms.assetid: 3e893949-6398-42f1-9eab-a8d8c2b7f02d
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c89babf7dc9f90b4042d917bf5843a0703628883
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 33becb67adb0453adef111ca2c8fb0d2b2e6edfc
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62799199"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67890967"
 ---
 # <a name="common-control-patterns-for-visual-studio"></a>Padrões comuns de controle para o Visual Studio
 ## <a name="BKMK_CommonControls"></a> Controles comuns
@@ -274,7 +274,7 @@ Em alguns casos, botões podem ser usados na interface do usuário com estilo e 
 
 Quando usar o botão curto somente reticências:
 
-- Se houver mais de um longo **[procurar...]**  botão na caixa de diálogo, como quando vários campos permitem para navegação. Usar curto **[...]**  botão de cada um para evitar as chaves de acesso confuso criadas por essa situação (**& navegue** e **p & rocurar** na mesma caixa de diálogo).
+- Se houver mais de um longo **[procurar...]**  botão na caixa de diálogo, como quando vários campos permitem para navegação. Usar curto **[...]**  botão de cada um para evitar as chaves de acesso confuso criadas por essa situação ( **& navegue** e **p & rocurar** na mesma caixa de diálogo).
 
 - Em uma caixa de diálogo estreita, ou quando não há nenhum lugar razoável para colocar o botão longo.
 
@@ -296,7 +296,8 @@ Diretrizes para usar o botão:
 #### <a name="graphical-buttons"></a>Botões gráficos
 Alguns botões devem sempre usar uma imagem gráfica e nunca inclua texto para conservar o espaço e evitar problemas de localização. Geralmente, eles são usados no seletor de campo e outras listas classificável.
 
-> **Observação:** Os usuários precisam pressionar tab até esses botões (não há nenhuma chave de acesso), portanto, colocá-los em uma ordem adequada. Mapa de `name` propriedade do botão para a ação que leva para que os leitores de tela interpretam corretamente a ação do botão.
+> [!NOTE]
+> Os usuários precisam pressionar tab até esses botões (não há nenhuma chave de acesso), portanto, colocá-los em uma ordem adequada. Mapa de `name` propriedade do botão para a ação que leva para que os leitores de tela interpretam corretamente a ação do botão.
 
 | Função | Botão |
 | --- | --- |
@@ -317,7 +318,7 @@ Dimensionamento para botões gráfica é da mesma maneira que uma versão abrevi
 Os hiperlinks são adequados para ações com base em navegação, como abrir um tópico da Ajuda, a caixa de diálogo modal ou o assistente. Se um hiperlink é usado para um comando, ele sempre deve exibir uma alteração perceptível e visível na interface do usuário. Em geral, as ações que confirme para uma ação (como salvar, cancelar e excluir) são comunicadas melhor usando um botão.
 
 #### <a name="writing-style"></a>Estilo de escrita
-Siga as [diretrizes de área de trabalho do Windows para o texto da interface do usuário](/windows/desktop/uxguide/text-ui). Não use "Saiba mais sobre," "Diga-me mais sobre" ou a frase "Get help com isso". Frase em vez disso, o texto do link de Ajuda em termos da pergunta principal respondida pelo conteúdo da Ajuda. Por exemplo, "**como adicionar um servidor para o Gerenciador de servidores?**"
+Siga as [diretrizes de área de trabalho do Windows para o texto da interface do usuário](/windows/desktop/uxguide/text-ui). Não use "Saiba mais sobre," "Diga-me mais sobre" ou a frase "Get help com isso". Frase em vez disso, o texto do link de Ajuda em termos da pergunta principal respondida pelo conteúdo da Ajuda. Por exemplo, "**como adicionar um servidor para o Gerenciador de servidores?** "
 
 #### <a name="visual-style"></a>Estilo Visual
 
@@ -383,7 +384,7 @@ Um controle trid é um controle complexo que contém uma exibição de árvore e
 
 - **Seta para a direita:** Expanda um nó. Depois que o nó é expandido, ele deve continuar navegando até a coluna mais próxima à direita. Deve interromper a navegação no final da linha.
 
-- **Tab:** Navega para a célula mais próxima à direita.  No final da linha, a navegação continua para a próxima linha.
+- **Guia:** Navega para a célula mais próxima à direita.  No final da linha, a navegação continua para a próxima linha.
 
 - **Shift + Tab:** Navega para a célula mais próxima à esquerda.  No início da linha, a navegação continua para a célula mais à direita na linha anterior.
 

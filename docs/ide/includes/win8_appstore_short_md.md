@@ -14,10 +14,10 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.openlocfilehash: f4e848e7af41aed8939e2ec0584bbb41781827e7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975745"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68822381"
 ---
 Store

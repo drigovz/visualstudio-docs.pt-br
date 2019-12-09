@@ -17,14 +17,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b9467ce7001f0061c20a5097220bd93b24937db
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 98f3eb98024e20350151904f297f7e7b4d6f1fea
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62894028"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72733382"
 ---
-# <a name="how-to-examine-system-code-after-an-exception"></a>Como: Examinar o código do sistema após uma exceção
+# <a name="how-to-examine-system-code-after-an-exception"></a>Como examinar um código de sistema após uma exceção
 Quando uma exceção ocorre, você poderá precisar examinar o código dentro de uma chamada do sistema para determinar a causa da exceção. O procedimento a seguir explica como fazer isso se você não tiver os símbolos carregados para o código do sistema ou se Just My Code estiver habilitado.
 
 ### <a name="to-examine-system-code-following-an-exception"></a>Para examinar o código do sistema após uma exceção

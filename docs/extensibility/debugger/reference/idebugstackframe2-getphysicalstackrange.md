@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugStackFrame2::GetPhysicalStackRange
 ms.assetid: 2f6992e2-ac1c-433f-83b7-a7f83a4ce63d
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7c325ab6cb12813000c981e978e728c251b06c55
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 2cf0db9fa776116f1536ae137444160385a8b6a1
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62868725"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66347709"
 ---
 # <a name="idebugstackframe2getphysicalstackrange"></a>IDebugStackFrame2::GetPhysicalStackRange
 Obtém uma representação depende do computador do intervalo de endereços físicos associados a um quadro de pilha.
@@ -38,14 +41,12 @@ int GetPhysicalStackRange ( 
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `paddrMin`
+## <a name="parameters"></a>Parâmetros
+`paddrMin`\
+[out] Retorna o endereço físico mais baixo associado deste quadro de pilhas.
 
- [out] Retorna o endereço físico mais baixo associado deste quadro de pilhas.
-
- `paddrMax`
-
- [out] Retorna o endereço físico mais alto associado deste quadro de pilhas.
+`paddrMax`\
+[out] Retorna o endereço físico mais alto associado deste quadro de pilhas.
 
 ## <a name="return-value"></a>Valor de retorno
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.

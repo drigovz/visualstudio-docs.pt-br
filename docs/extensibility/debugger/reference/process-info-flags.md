@@ -6,17 +6,20 @@ f1_keywords:
 - PROCESS_INFO_FLAGS
 helpviewer_keywords:
 - PROCESS_INFO_FLAGS enumeration
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 42a596eb8d720a273d89586427232dcf833f8595
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: e0694d83409a492a1d950a17ac5e2298ba9b8578
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62864974"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66309395"
 ---
 # <a name="processinfoflags"></a>PROCESS_INFO_FLAGS
 
@@ -43,15 +46,19 @@ enum enum_PROCESS_INFO_FLAGS { 
 };
 ```
 
-## <a name="members"></a>Membros
+## <a name="fields"></a>Campos
 
-PIFLAG_SYSTEM_PROCESS indica que o processo é um processo do sistema.
+`PIFLAG_SYSTEM_PROCESS`\
+Indica que o processo é um processo do sistema.
 
-PIFLAG_DEBUGGER_ATTACHED indica que o processo está sendo depurado por um depurador. Pode ser um [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] depurador, ou ele pode ser de alguns outro depurador, por exemplo, o WinDbg.
+`PIFLAG_DEBUGGER_ATTACHED`\
+Indica que o processo está sendo depurado por um depurador. Pode ser um [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] depurador, ou ele pode ser de alguns outro depurador, por exemplo, o WinDbg.
 
-PIFLAG_PROCESS_STOPPED indica que o processo é interrompido. Válido somente se `PIFLAG_DEBUGGER_ATTACHED` também for especificado. Disponível no Visual Studio 2005 e versões posteriores.
+`PIFLAG_PROCESS_STOPPED`\
+Indica que o processo é interrompido. Válido somente se `PIFLAG_DEBUGGER_ATTACHED` também for especificado. Disponível no Visual Studio 2005 e versões posteriores.
 
-PIFLAG_PROCESS_RUNNING indica que o processo está em execução. Válido somente se `PIFLAG_DEBUGGER_ATTACHED` também for especificado. Disponível no Visual Studio 2005 e versões posteriores.
+`PIFLAG_PROCESS_RUNNING`\
+Indica que o processo está em execução. Válido somente se `PIFLAG_DEBUGGER_ATTACHED` também for especificado. Disponível no Visual Studio 2005 e versões posteriores.
 
 ## <a name="remarks"></a>Comentários
 

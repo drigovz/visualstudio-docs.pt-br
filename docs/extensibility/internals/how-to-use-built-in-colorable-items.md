@@ -6,24 +6,24 @@ helpviewer_keywords:
 - colorable items
 - language services, built-in colorable items
 ms.assetid: 5e5f3436-6bad-4fd2-8823-6a30353ba648
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8d8994270ece639cc7d22a27af6339d525ff3618
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: ae1c327c14ed2b349ee02566c5cdfd38b9a07859
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63420502"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66311961"
 ---
 # <a name="how-to-use-built-in-colorable-items"></a>Como: Usar itens de coloração internos
 Antes de usar os itens de coloração internos, você deve primeiro sinalizar para o ambiente de desenvolvimento integrado (IDE) que você não está fornecendo seus próprios itens de coloração personalizados, que nesse caso, seria <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems> objetos. Você pode fazer isso definindo uma entrada de registro para o serviço de linguagem.
 
 ## <a name="to-use-built-in-colorable-items"></a>Usar itens de coloração internos
 
-1. Sob **HKEY_LOCAL_MACHINE\VisualStudio\\< x. y > Serviços de \Languages\Language\\< nome do idioma\>**, onde \<x. y > é uma versão de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] e \<Nome do idioma > é o nome do seu idioma, crie um valor de entrada de Registro DWORD denominado **RequestStockColors**.
+1. Sob **HKEY_LOCAL_MACHINE\VisualStudio\\< x. y > Serviços de \Languages\Language\\< nome do idioma\>** , onde \<x. y > é uma versão de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] e \<Nome do idioma > é o nome do seu idioma, crie um valor de entrada de Registro DWORD denominado **RequestStockColors**.
 
 2. Defina as **RequestStockColors** valor de entrada de registro para *1*.
 

@@ -1,5 +1,5 @@
 ---
-title: 'DA0001: Usar StringBuilder para concatenações | Microsoft Docs'
+title: 'DA0001: usar StringBuilder para concatenações | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,22 +14,22 @@ caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 386eda282364ccc4ab9841f126bb10944477df18
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: cb8da704832031d69156eee8863b689e7956f025
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59659144"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74295955"
 ---
-# <a name="da0001-use-stringbuilder-for-concatenations"></a>DA0001: Usar StringBuilder para concatenações
+# <a name="da0001-use-stringbuilder-for-concatenations"></a>DA0001: usar StringBuilder para concatenações
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Para a documentação mais recente do Visual Studio, consulte [DA0001: Use StringBuilder para concatenações](https://docs.microsoft.com/visualstudio/profiling/da0001-use-stringbuilder-for-concatenations).  
+Para obter a documentação mais recente sobre o Visual Studio, consulte [DA0001: usar StringBuilder para concatenações](https://docs.microsoft.com/visualstudio/profiling/da0001-use-stringbuilder-for-concatenations).  
   
 |||  
 |-|-|  
-|ID de regra|DA0001|  
-|Categoria|Uso do .NET Framework|  
+|Id da Regra|DA0001|  
+|Category|Uso do .NET Framework|  
 |Métodos de criação de perfil|Amostragem<br /><br /> Instrumentação|  
 |Mensagem|Considere o uso de StringBuilder para concatenações de cadeias de caracteres|  
 |Tipo de mensagem|Aviso|  
@@ -45,4 +45,4 @@ Para a documentação mais recente do Visual Studio, consulte [DA0001: Use Strin
 ## <a name="how-to-investigate-a-warning"></a>Como investigar um aviso  
  Clique duas vezes na mensagem da janela Lista de Erros para navegar para a [Exibição de Detalhes da Função](../profiling/function-details-view.md) dos dados de perfil de amostragem. Encontre as seções do programa que fazem o uso mais frequente da concatenação de cadeia de caracteres. Use a classe StringBuilder para manipulações de cadeias de caracteres complexas, incluindo operações de concatenação de cadeia de caracteres frequentes.  
   
- Para obter mais informações sobre como trabalhar com cadeias de caracteres, consulte a seção [String Operations](http://go.microsoft.com/fwlink/?LinkId=177816) (Operações de cadeia de caracteres) de [Chapter 5 — Improving Managed Code Performance](http://go.microsoft.com/fwlink/?LinkId=177817) (Capítulo 5 – Melhorando o desempenho de código gerenciado) na biblioteca Microsoft Patterns and Practices (Padrões e Práticas da Microsoft).
+ Para obter mais informações sobre como trabalhar com cadeias de caracteres, consulte a seção [String Operations](https://go.microsoft.com/fwlink/?LinkId=177816) (Operações de cadeia de caracteres) de [Chapter 5 — Improving Managed Code Performance](https://go.microsoft.com/fwlink/?LinkId=177817) (Capítulo 5 – Melhorando o desempenho de código gerenciado) na biblioteca Microsoft Patterns and Practices (Padrões e Práticas da Microsoft).

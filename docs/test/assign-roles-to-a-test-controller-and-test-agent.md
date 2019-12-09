@@ -1,5 +1,5 @@
 ---
-title: Atribuir Funções a um Controlador de teste e Agente de teste para Testes automatizados
+title: Funções de controlador e agente de testes para testes automatizados
 ms.date: 10/20/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,23 +9,23 @@ helpviewer_keywords:
 - test controller, walkthrough
 - walkthroughs, test controller and test agents
 ms.assetid: 57ed43ae-4e67-4139-8aec-3e9fceb0a745
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 322b7d2baeca80f076c33879b52a650f31f8872b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 9ae46db2d99024b598ff655452ca748298b528a0
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62822789"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72665300"
 ---
 # <a name="assign-roles-to-a-test-controller-and-test-agent"></a>Atribuir funções a um controlador de teste e a um agente de teste
 
-Este passo a passo demonstra como criar e definir uma configuração de teste que usa um controlador de teste e um agente de teste para distribuir testes em vários computadores usando o Visual Studio. Além disso, esta explicação passo a passo demonstra como adicionar adaptadores de diagnóstico e dados à configuração de teste.
+Este artigo demonstra como criar e definir uma configuração de teste que usa um controlador de teste e um agente de teste para distribuir testes em vários computadores usando o Visual Studio. Ele também demonstra como adicionar adaptadores de diagnóstico e de dados à configuração de teste.
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
-## <a name="prerequisites"></a>Pré-requisitos
+## <a name="prerequisites"></a>Prerequisites
 
 - Crie testes de unidade ou testes de IU codificados para executar com a configuração de teste.
 
@@ -49,10 +49,7 @@ Este passo a passo demonstra como criar e definir uma configuração de teste qu
 
      Agora você pode editar e salvar valores das configurações de teste.
 
-    > [!NOTE]
-    > Cada configuração de teste que você cria é listada como uma escolha para as opções **Selecionar Configurações de Teste Ativo** e **Editar Configurações de Teste** no menu **Teste**.
-
-5. Em **Nome**, digite o nome para as configurações de teste.
+5. Em **Nome**, digite o nome das configurações de teste.
 
 6. Em **Descrição**, digite **Configurações de teste distribuído**.
 
@@ -98,7 +95,17 @@ Este passo a passo demonstra como criar e definir uma configuração de teste qu
 
 7. Escolha **Fechar**.
 
-8. No menu Teste, escolha **Selecionar configurações de teste ativo** e, em seguida, selecione **TestSettingDistributedTestWalkthrough.testsettings**.
+::: moniker range="vs-2017"
+
+8. No menu **testar** , selecione **configurações de teste** > **Selecione arquivo de configurações de teste** e, em seguida, escolha o arquivo *TestSettingDistributedTestWalkthrough. testsettings* .
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+8. No menu **testar** , escolha **Selecionar arquivo de configurações**. Navegue até o arquivo *TestSettingDistributedTestWalkthrough.testsettings* e selecione-o.
+
+::: moniker-end
 
 9. Execute o teste normalmente.
 

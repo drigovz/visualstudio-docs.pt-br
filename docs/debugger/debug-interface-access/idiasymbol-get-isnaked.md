@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e45306a831c8767b93e3c1baad0171fcfb60ba6b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 684fd10b7899e0ed82b4b93a6182eea2a2447e0e
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63400494"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740170"
 ---
-# <a name="idiasymbolgetisnaked"></a>IDiaSymbol::get_isNaked
-Recupera um sinalizador que especifica se a função tem o [naked](/cpp/cpp/naked-cpp) atributo (ou seja, a função não tem nenhum código de prólogo ou epílogo adicionado pelo compilador).
+# <a name="idiasymbolget_isnaked"></a>IDiaSymbol::get_isNaked
+Recupera um sinalizador que especifica se a função tem o atributo [Naked](/cpp/cpp/naked-cpp) (ou seja, a função não tem um prólogo ou código epílogo adicionado pelo compilador).
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -33,20 +33,20 @@ HRESULT get_isNaked(
 #### <a name="parameters"></a>Parâmetros
  `pFlag`
 
-[out] Retorna `TRUE` se a função tem o `naked` atributo; caso contrário, retornará `FALSE`.
+fora Retorna `TRUE` se a função tiver o atributo `naked`; caso contrário, retorna `FALSE`.
 
-## <a name="return-value"></a>Valor de retorno
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE` ou um código de erro.
 
 > [!NOTE]
-> Um valor de retorno `S_FALSE` significa que a propriedade não está disponível para o símbolo.
+> Um valor de retorno de `S_FALSE` significa que a propriedade não está disponível para o símbolo.
 
 ## <a name="requirements"></a>Requisitos
 
 |Requisito|Descrição|
 |-----------------|-----------------|
 |Cabeçalho:|dia2.h|
-|Versão:|V DIA SDK 8.0|
+|Versão:|DIA SDK v 8.0|
 
 ## <a name="see-also"></a>Consulte também
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

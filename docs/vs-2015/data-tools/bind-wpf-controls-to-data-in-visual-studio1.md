@@ -19,29 +19,29 @@ helpviewer_keywords:
 - data binding, WPF
 ms.assetid: e05a1e0c-5082-479d-bbc9-d395b0bc6580
 caps.latest.revision: 39
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 16a3868f564f39d4908adf74a6b1a44ae83ebc9d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 12aad1f22fdc4badc024c62fbc302eef8e3937e4
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437051"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72670074"
 ---
 # <a name="bind-wpf-controls-to-data-in-visual-studio"></a>Associar controles WPF a dados no Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-É possível exibir dados para usuários do aplicativo associando-se dados a controles [!INCLUDE[TLA#tla_titlewinclient](../includes/tlasharptla-titlewinclient-md.md)]. Para criar esses controles ligados a dados, você pode arrastar itens dos **fontes de dados** janela para o [!INCLUDE[wpfdesigner_current_short](../includes/wpfdesigner-current-short-md.md)] em [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Este tópico descreve algumas das tarefas, ferramentas e classes mais comuns que é possível usar para criar aplicativos [!INCLUDE[TLA#tla_titlewinclient](../includes/tlasharptla-titlewinclient-md.md)] de associação de dados.
+É possível exibir dados para usuários do aplicativo associando-se dados a controles [!INCLUDE[TLA#tla_titlewinclient](../includes/tlasharptla-titlewinclient-md.md)]. Para criar esses controles associados a dados, você pode arrastar itens da janela **fontes de dados** para a [!INCLUDE[wpfdesigner_current_short](../includes/wpfdesigner-current-short-md.md)] em [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Este tópico descreve algumas das tarefas, ferramentas e classes mais comuns que é possível usar para criar aplicativos [!INCLUDE[TLA#tla_titlewinclient](../includes/tlasharptla-titlewinclient-md.md)] de associação de dados.
 
- Para obter informações gerais sobre como criar controles associados a dados no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], consulte [associar controles a dados no Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md). Para obter mais informações sobre vinculação de dados [!INCLUDE[TLA#tla_titlewinclient](../includes/tlasharptla-titlewinclient-md.md)], confira [Visão geral de vinculação de dados](http://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211).
+ Para obter informações gerais sobre como criar controles vinculados a dados no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], consulte [ligar controles a dados no Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md). Para obter mais informações sobre vinculação de dados [!INCLUDE[TLA#tla_titlewinclient](../includes/tlasharptla-titlewinclient-md.md)], confira [Visão geral de vinculação de dados](https://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211).
 
 ## <a name="tasks-involved-in-binding-wpf-controls-to-data"></a>Tarefas envolvidas na associação de controles WPF a dados
  A tabela a seguir lista as tarefas que podem ser realizadas arrastando-se itens da janela **Fontes de Dados** para o [!INCLUDE[wpfdesigner_current_short](../includes/wpfdesigner-current-short-md.md)].
 
 |Tarefa|Mais informações|
 |----------|----------------------|
-|Crie novos controles de associação de dados.<br /><br /> Associe controles existentes a dados.|[Associar controles WPF a dados no Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio2.md) [WPF associar controles a um conjunto de dados](../data-tools/bind-wpf-controls-to-a-dataset.md)|
+|Crie novos controles de associação de dados.<br /><br /> Associe controles existentes a dados.|[Associar controles do WPF a dados no Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio2.md) [associar controles do WPF a um DataSet](../data-tools/bind-wpf-controls-to-a-dataset.md)|
 |Crie controles que exibam dados relacionados em uma relação pai-filho: quando o usuário seleciona um registro de dados pai em um controle, outro controle exibe dados filho relacionados ao registro selecionado.|[Exibir dados relacionados em aplicativos WPF](../data-tools/display-related-data-in-wpf-applications.md)|
 |Crie uma *tabela de pesquisa* que exiba informações de uma tabela com base no valor de um campo de chave estrangeira em outra tabela.|[Criar tabelas de pesquisa em aplicativos do WPF](../data-tools/create-lookup-tables-in-wpf-applications.md)|
 |Associe um controle a uma imagem em um banco de dados.|[Associar controles a imagens de um banco de dados](../data-tools/bind-controls-to-pictures-from-a-database.md)|
@@ -50,9 +50,9 @@ ms.locfileid: "63437051"
  É possível arrastar itens na janela **Fontes de Dados** apenas para reproduções automáticas válidas no [!INCLUDE[wpfdesigner_current_short](../includes/wpfdesigner-current-short-md.md)]. Existem dois tipos principais de destinos depósitos válidos: contêineres e controles. Um contêiner é um elemento de interface do usuário que normalmente contém controles. Por exemplo, uma grade é um contêiner, assim como uma janela.
 
 ## <a name="generated-xaml-and-code"></a>XAML e código gerados
- Quando você arrasta um item a partir de **fontes de dados** janela para o [!INCLUDE[wpfdesigner_current_short](../includes/wpfdesigner-current-short-md.md)], [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] gera [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] que define um novo controle de associação de dados (ou associa um controle existente para a fonte de dados). Para algumas fontes de dados, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] também gera código no arquivo code-behind que preenche a fonte de dados com dados.
+ Quando você arrasta um item da janela **fontes de dados** para a [!INCLUDE[wpfdesigner_current_short](../includes/wpfdesigner-current-short-md.md)], [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] gera [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] que define um novo controle vinculado a dados (ou associa um controle existente à fonte de dados). Para algumas fontes de dados, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] também gera código no arquivo code-behind que preenche a fonte de dados com dados.
 
- A seguinte tabela lista os [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] e o código [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] gera para cada tipo de fonte de dados a **fontes de dados** janela.
+ A tabela a seguir lista os [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] e o código que [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] gera para cada tipo de fonte de dados na janela **fontes de dados** .
 
 |Fonte de dados|Gerar XAML que associa um controle à fonte de dados|Gerar código que preenche a fonte de dados com dados|
 |-----------------|-----------------------------------------------------------|--------------------------------------------------------|
@@ -62,7 +62,7 @@ ms.locfileid: "63437051"
 |Objeto|Sim|Não|
 
 ### <a name="datasets"></a>Conjuntos de dados
- Quando você arrasta uma tabela ou coluna do **fontes de dados** janela para o designer [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] gera [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] que faz o seguinte:
+ Quando você arrasta uma tabela ou coluna da janela **fontes de dados** para o designer, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] gera [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] que faz o seguinte:
 
 - Adiciona o conjunto de dados e um novo <xref:System.Windows.Data.CollectionViewSource> aos recursos do contêiner arrastados para o item. O <xref:System.Windows.Data.CollectionViewSource> é um objeto que pode ser usado para navegar e exibir os dados no conjunto de dados.
 
@@ -70,35 +70,35 @@ ms.locfileid: "63437051"
 
   [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] também faz as seguintes alterações no arquivo code-behind:
 
-- Cria um manipulador de eventos <xref:System.Windows.FrameworkElement.Loaded> para o elemento [!INCLUDE[TLA2#tla_ui](../includes/tla2sharptla-ui-md.md)] que contém o controle. O manipulador de eventos preenche a tabela com dados, recupera o <xref:System.Windows.Data.CollectionViewSource> dos recursos do contêiner e, em seguida, torna o primeiro item dados o item atual. Se um <xref:System.Windows.FrameworkElement.Loaded> já existe um manipulador de eventos, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] adiciona este código ao manipulador de eventos existente.
+- Cria um manipulador de eventos <xref:System.Windows.FrameworkElement.Loaded> para o elemento [!INCLUDE[TLA2#tla_ui](../includes/tla2sharptla-ui-md.md)] que contém o controle. O manipulador de eventos preenche a tabela com dados, recupera o <xref:System.Windows.Data.CollectionViewSource> dos recursos do contêiner e, em seguida, torna o primeiro item dados o item atual. Se um manipulador de eventos <xref:System.Windows.FrameworkElement.Loaded> já existir, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] adicionará esse código ao manipulador de eventos existente.
 
 ### <a name="entity-data-models"></a>Modelos de dados de entidade
- Quando você arrasta uma entidade ou uma propriedade de entidade do **fontes de dados** janela para o designer [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] gera [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] que faz o seguinte:
+ Quando você arrasta uma entidade ou uma propriedade de entidade da janela **fontes de dados** para o designer, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] gera [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] que faz o seguinte:
 
 - Adiciona um novo <xref:System.Windows.Data.CollectionViewSource> aos recursos do contêiner arrastados para o item. O <xref:System.Windows.Data.CollectionViewSource> é um objeto que pode ser usado para navegar e exibir os dados na entidade.
 
-- Cria uma associação de dados para um controle. Se você arrastar o item para um controle existente no designer, o [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] associará o controle ao item. Se você arrastar o item para um contêiner, o [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] cria o controle que foi selecionado para o item arrastado e associará o controle ao item. O controle é criado dentro de um novo <xref:System.Windows.Controls.Grid>.
+- Cria uma associação de dados para um controle. Se você arrastar o item para um controle existente no designer, o [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] associará o controle ao item. Se você arrastar o item para um contêiner, o [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] criará o controle que foi selecionado para o item arrastado e associará o controle ao item. O controle é criado dentro de um novo <xref:System.Windows.Controls.Grid>.
 
   O Visual Studio também faz as seguintes alterações no arquivo code-behind:
 
-- Adiciona um novo método que retorna uma consulta para a entidade arrastada para o designer (ou a entidade que contém a propriedade que você arrastou para o designer). O novo método tem o nome Get*EntityName*consulta, onde *EntityName* é o nome da entidade.
+- Adiciona um novo método que retorna uma consulta para a entidade arrastada para o designer (ou a entidade que contém a propriedade que você arrastou para o designer). O novo método tem o nome obter a consulta*EntityName*, em que *EntityName* é o nome da entidade.
 
-- Cria um manipulador de eventos <xref:System.Windows.FrameworkElement.Loaded> para o elemento [!INCLUDE[TLA2#tla_ui](../includes/tla2sharptla-ui-md.md)] que contém o controle. O manipulador de eventos chama Get*EntityName*consultar o método para preencher a entidade com dados, recupera o <xref:System.Windows.Data.CollectionViewSource> do contêiner recursos e, em seguida, torna o primeiro item dados o item atual. Se um <xref:System.Windows.FrameworkElement.Loaded> já existe um manipulador de eventos, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] adiciona este código ao manipulador de eventos existente.
+- Cria um manipulador de eventos <xref:System.Windows.FrameworkElement.Loaded> para o elemento [!INCLUDE[TLA2#tla_ui](../includes/tla2sharptla-ui-md.md)] que contém o controle. O manipulador de eventos chama o método get*EntityName*para preencher a entidade com dados, recupera o <xref:System.Windows.Data.CollectionViewSource> dos recursos do contêiner e, em seguida, torna o primeiro item de dados o item atual. Se um manipulador de eventos <xref:System.Windows.FrameworkElement.Loaded> já existir, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] adicionará esse código ao manipulador de eventos existente.
 
 ### <a name="services"></a>Serviços
- Quando você arrasta um objeto de serviço ou uma propriedade do **fontes de dados** janela para o designer [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] gera [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] que cria um controle associado a dados (ou associa um controle existente para o objeto ou propriedade). No entanto, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] não gera o código que preenche o objeto de serviço do proxy com dados. Você deve gravar esse código sozinho. Para obter um exemplo que demonstra como fazer isso, consulte [controles de WPF associar a um WCF data service](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md).
+ Quando você arrasta um objeto de serviço ou uma propriedade da janela **fontes de dados** para o designer, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] gera [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] que cria um controle associado a dados (ou associa um controle existente ao objeto ou à propriedade). No entanto, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] não gera o código que preenche o objeto de serviço do proxy com dados. Você deve gravar esse código sozinho. Para obter um exemplo que demonstra como fazer isso, consulte [associar controles WPF a um serviço de dados WCF](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md).
 
  O Visual Studio gera XAML, que faz o seguinte:
 
 - Adiciona um novo <xref:System.Windows.Data.CollectionViewSource> aos recursos do contêiner arrastados para o item. O <xref:System.Windows.Data.CollectionViewSource> é um objeto que pode ser usado para navegar e exibir os dados no objeto retornado pelo serviço.
 
-- Cria uma associação de dados para um controle. Se você arrastar o item para um controle existente no designer, o [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] associará o controle ao item. Se você arrastar o item para um contêiner, o [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] cria o controle que foi selecionado para o item arrastado e associará o controle ao item. O controle é criado dentro de um novo <xref:System.Windows.Controls.Grid>.
+- Cria uma associação de dados para um controle. Se você arrastar o item para um controle existente no designer, o [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] associará o controle ao item. Se você arrastar o item para um contêiner, o [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] criará o controle que foi selecionado para o item arrastado e associará o controle ao item. O controle é criado dentro de um novo <xref:System.Windows.Controls.Grid>.
 
 ### <a name="objects"></a>Objetos
- Quando você arrasta um objeto ou propriedade do **fontes de dados** janela para o designer [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] gera [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] que cria um controle associado a dados (ou associa um controle existente para o objeto ou propriedade). No entanto, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] não gera código para preencher o objeto com dados. Você deve gravar esse código sozinho.
+ Quando você arrasta um objeto ou uma propriedade da janela **fontes de dados** para o designer, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] gera [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] que cria um controle associado a dados (ou associa um controle existente ao objeto ou à propriedade). No entanto, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] não gera código para preencher o objeto com dados. Você deve gravar esse código sozinho.
 
 > [!NOTE]
-> Classes personalizadas devem ser públicos e, por padrão, tem um construtor sem parâmetros. Eles não podem ser classes aninhadas que têm "dot" na sua sintaxe. Para obter mais informações, consulte [XAML e Classes personalizadas para WPF](http://msdn.microsoft.com/library/e7313137-581e-4a64-8453-d44e15a6164a).
+> As classes personalizadas devem ser públicas e, por padrão, têm um construtor sem parâmetros. Eles não podem ser classes aninhadas que tenham um "ponto" em sua sintaxe. Para obter mais informações, consulte [XAML e classes personalizadas para WPF](https://msdn.microsoft.com/library/e7313137-581e-4a64-8453-d44e15a6164a).
 
  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] gera [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] que faz o seguinte:
 

@@ -1,5 +1,5 @@
 ---
-title: 'Como: Depurar em um Cluster de alto desempenho | Microsoft Docs'
+title: 'Como: Depurar em um cluster de alto desempenho | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,20 +16,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 550008a0bf77ee11feb047b953798ed6a8276396
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d95c6eeadfdf1bb90471997712299ae03a945be8
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62894320"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72733662"
 ---
-# <a name="how-to-debug-on-a-high-performance-cluster-c-visual-basic-c"></a>Como: Depurar em um Cluster de alto desempenho (C#, Visual Basic, C++)
+# <a name="how-to-debug-on-a-high-performance-cluster-c-visual-basic-c"></a>Como: Depurar em um cluster de alto desempenho (C#, Visual Basic,) C++
 
 A depuração de um programa com vários processamentos em um cluster de alto desempenho é semelhante à depuração de um programa comum em um computador remoto. No entanto, há algumas considerações adicionais. Para requisitos gerais de configuração remota, consulte [depuração remota](../debugger/remote-debugging.md).
 
  Ao depurar em um cluster de alto desempenho, você pode usar todas as janelas e técnicas de depuração do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] que estiverem disponíveis para a depuração remota. Como você está depurando remotamente, no entanto, a janela do console externo não está disponível.
 
- A janela **Threads** e a janela **Processos** são úteis especificamente para depurar aplicativos paralelos. Para obter dicas sobre como usar essas janelas, consulte [como: Use a janela de processos](/previous-versions/visualstudio/visual-studio-2010/7h8h5sdw(v=vs.100)) e [passo a passo: Depurar usando a janela Threads](../debugger/how-to-use-the-threads-window.md).
+ A janela **Threads** e a janela **Processos** são úteis especificamente para depurar aplicativos paralelos. Para obter dicas sobre como usar essas janelas, consulte [como: Use a janela de processos](/previous-versions/visualstudio/visual-studio-2010/7h8h5sdw(v=vs.100)) e [passo a passo: Depuração com a janela Threads](../debugger/how-to-use-the-threads-window.md).
 
  Os procedimentos a seguir mostram algumas técnicas que são muito úteis para depurar em um conjunto de alto desempenho.
 
@@ -99,7 +99,7 @@ A depuração de um programa com vários processamentos em um cluster de alto de
 ## <a name="see-also"></a>Consulte também
 - [Depurar aplicativos multi-threaded](../debugger/debug-multithreaded-applications-in-visual-studio.md)
 - [Depuração remota](../debugger/remote-debugging.md)
-- [Como: Use a janela processos](/previous-versions/visualstudio/visual-studio-2010/7h8h5sdw(v=vs.100))
+- [Como: usar a janela de processos](/previous-versions/visualstudio/visual-studio-2010/7h8h5sdw(v=vs.100))
 - [Introdução à depuração de aplicativos multithread](../debugger/get-started-debugging-multithreaded-apps.md)
 - [Threads e processos](/previous-versions/visualstudio/visual-studio-2010/ms164740(v=vs.100))
 - [Usando pontos de interrupção](../debugger/using-breakpoints.md)

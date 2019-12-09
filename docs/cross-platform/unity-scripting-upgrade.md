@@ -8,37 +8,37 @@ ms.assetid: E2C9420F-A5D5-4472-9020-2B63FB27A133
 ms.technology: vs-unity-tools
 ms.workload:
 - unity
-ms.openlocfilehash: 82556ea0ed043c11cb9098383daf912ff17372ef
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 01363ab1588507f31dc74800c85b159039c9bab6
+ms.sourcegitcommit: 9c7d8693108ecd2042a70c04cebe3c44af657baf
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62818384"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74239427"
 ---
 # <a name="using-net-4x-in-unity"></a>Usar o .NET 4.x no Unity
 
-C# e .NET, as tecnologias subjacentes ao script do Unity, continuam a receber atualizações, uma vez que a Microsoft as lançou originalmente em 2002. Mas os desenvolvedores do Unity podem não estar cientes do fluxo constante de novos recursos adicionados à linguagem C# e ao .NET Framework. Isso ocorre porque antes do Unity 2017.1, o Unity tem usado um tempo de execução de script equivalente ao .NET 3.5, que ficou anos sem atualizações.
+C# e .NET, as tecnologias subjacentes ao script do Unity, continuam a receber atualizações, uma vez que a Microsoft as lançou originalmente em 2002. Mas os desenvolvedores do Unity podem não estar cientes do fluxo constante de novos recursos adicionados à linguagem C# e ao .NET Framework. Isso ocorre porque antes do Unity 2017.1, o Unity tem usado um runtime de script equivalente ao .NET 3.5, que ficou anos sem atualizações.
 
-Com o lançamento do Unity 2017.1, o Unity introduziu uma versão experimental do seu tempo de execução de script atualizado para uma versão compatível com o .NET 4.6 e o C# 6. No Unity 2018.1, o tempo de execução equivalente ao .NET 4.x não é mais considerado experimental, enquanto o tempo de execução equivalente ao .NET 3.5 mais antigo agora é considerado como a versão herdada. E com o lançamento do Unity 2018.3, o Unity está projetando tornar o tempo de execução de script atualizado a seleção padrão, além de atualizar mais, para o C# 7. Para obter mais informações e as atualizações mais recentes sobre este roteiro, leia a [postagem de blog](https://blogs.unity3d.com/2018/07/11/scripting-runtime-improvements-in-unity-2018-2/) do Unity ou acesse seu [Fórum de visualizações de script experimental](https://forum.unity.com/forums/experimental-scripting-previews.107/). Enquanto isso, confira as seções abaixo para saber mais sobre os novos recursos disponíveis com o tempo de execução de script do .NET 4.x.
+Com o lançamento do Unity 2017.1, o Unity introduziu uma versão experimental do seu runtime de script atualizado para uma versão compatível com o .NET 4.6 e o C# 6. No Unity 2018.1, o runtime equivalente ao .NET 4.x não é mais considerado experimental, enquanto o runtime equivalente ao .NET 3.5 mais antigo agora é considerado como a versão herdada. E com o lançamento do Unity 2018.3, o Unity está projetando tornar o runtime de script atualizado a seleção padrão, além de atualizar mais, para o C# 7. Para obter mais informações e as atualizações mais recentes sobre este roteiro, leia a [postagem de blog](https://blogs.unity3d.com/2018/07/11/scripting-runtime-improvements-in-unity-2018-2/) do Unity ou acesse seu [Fórum de visualizações de script experimental](https://forum.unity.com/forums/experimental-scripting-previews.107/). Enquanto isso, confira as seções abaixo para saber mais sobre os novos recursos disponíveis com o runtime de script do .NET 4.x.
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
 * [Unity 2017.1 ou superior](https://unity3d.com/) (2018.2 recomendado)
 * [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)
 
-## <a name="enabling-the-net-4x-scripting-runtime-in-unity"></a>Habilitar o tempo de execução de script do .NET 4.x no Unity
+## <a name="enabling-the-net-4x-scripting-runtime-in-unity"></a>Habilitar o runtime de script do .NET 4.x no Unity
 
-Para habilitar o tempo de execução de script do .NET 4.x, execute as seguintes etapas:
+Para habilitar o runtime de script do .NET 4.x, execute as seguintes etapas:
 
 1. Abra as PlayerSettings no Inspetor do Unity, selecionando **Editar > Configurações do projeto > Player**.
 
-1. No cabeçalho **Configuração**, clique no menu suspenso **Versão do Tempo de Execução de Script** e selecione **Equivalente ao .NET 4.x**. Será solicitado que você reinicie o Unity.
+1. No cabeçalho **Configuração**, clique no menu suspenso **Versão do Runtime de Script** e selecione **Equivalente ao .NET 4.x**. Será solicitado que você reinicie o Unity.
 
 ![Selecionar o equivalente do .NET 4.x](media/vstu_scripting-runtime-version.png)
 
 ## <a name="choosing-between-net-4x-and-net-standard-20-profiles"></a>Escolher entre perfis do .NET 4.x e do .NET Standard 2.0
 
-Depois de mudar para o tempo de execução de script equivalente ao .NET 4.x, você pode especificar o **Nível de compatibilidade de API** usando o menu suspenso nas PlayerSettings (**Editar > Configurações do projeto > Player**). Existem duas opções:
+Depois de mudar para o runtime de script equivalente ao .NET 4.x, você pode especificar o **Nível de compatibilidade de API** usando o menu suspenso nas PlayerSettings (**Editar &gt; Configurações do projeto &gt; Player**). Há duas opções:
 
 * **.NET Standard 2.0**. Esse perfil corresponde ao [perfil do .NET Standard 2.0](https://github.com/dotnet/standard/blob/master/docs/versions/netstandard2.0.md) publicado pela .NET Foundation. O Unity recomenda o .NET Standard 2.0 para novos projetos. Ele é menor do que o .NET 4.x, o que é vantajoso para plataformas com restrições de tamanho. Além disso, o Unity se comprometeu a dar suporte a esse perfil em todas as plataformas compatíveis com o Unity.
 
@@ -66,7 +66,7 @@ O Visual Studio regenera os arquivos .csproj e .sln para projetos do Unity cada 
 
 ## <a name="taking-advantage-of-net-compatibility"></a>Aproveitando a compatibilidade do .NET
 
-Além dos novos recursos de linguagem de programação e de sintaxe do C#, o tempo de execução de script do .NET 4.x oferece aos usuários do Unity acesso a uma enorme biblioteca de pacotes do .NET que são incompatíveis com o tempo de execução de script do .NET 3.5 herdado.
+Além dos novos recursos de linguagem de programação e de sintaxe do C#, o runtime de script do .NET 4.x oferece aos usuários do Unity acesso a uma enorme biblioteca de pacotes do .NET que são incompatíveis com o runtime de script do .NET 3.5 herdado.
 
 ### <a name="add-packages-from-nuget-to-a-unity-project"></a>Adicionar pacotes do NuGet a um projeto do Unity
 
@@ -130,11 +130,11 @@ Esse é um exemplo simples do uso de uma biblioteca sem dependências. Quando os
 
 ## <a name="new-syntax-and-language-features"></a>Novos recursos de linguagem e de sintaxe
 
-Usar o tempo de execução de script atualizado dá aos desenvolvedores do Unity acesso a C# 6 e a uma série de novos recursos de linguagem e de sintaxe.
+Usar o runtime de script atualizado dá aos desenvolvedores do Unity acesso a C# 6 e a uma série de novos recursos de linguagem e de sintaxe.
 
 ### <a name="auto-property-initializers"></a>Inicializadores de propriedade automática
 
-No tempo de execução de script do Unity .NET 3.5, a sintaxe de propriedade automática torna mais fácil definir rapidamente as propriedades não inicializadas, mas a inicialização precisa ocorrer em outro lugar no seu script. Agora, com o tempo de execução .NET 4.x, é possível inicializar as propriedades automáticas na mesma linha:
+No runtime de script do Unity .NET 3.5, a sintaxe de propriedade automática torna mais fácil definir rapidamente as propriedades não inicializadas, mas a inicialização precisa ocorrer em outro lugar no seu script. Agora, com o runtime .NET 4.x, é possível inicializar as propriedades automáticas na mesma linha:
 
 ```csharp
 // .NET 3.5
@@ -146,7 +146,7 @@ public int Health { get; set; } = 100;
 
 ### <a name="string-interpolation"></a>Interpolação de cadeias de caracteres
 
-Com o tempo de execução mais antigo do .NET 3.5, a concatenação de cadeia de caracteres exigia uma sintaxe estranha. Agora, com o tempo de execução .NET 4.x, o recurso de [interpolação de cadeia de caracteres de `$`](https://docs.microsoft.com/dotnet/csharp/language-reference/tokens/interpolated) permite que as expressões sejam inseridas em cadeias de caracteres em uma sintaxe mais legível e direta:
+Com o runtime mais antigo do .NET 3.5, a concatenação de cadeia de caracteres exigia uma sintaxe estranha. Agora, com o runtime .NET 4.x, o recurso de [interpolação de cadeia de caracteres de `$`](https://docs.microsoft.com/dotnet/csharp/language-reference/tokens/interpolated) permite que as expressões sejam inseridas em cadeias de caracteres em uma sintaxe mais legível e direta:
 
 ```csharp
 // .NET 3.5
@@ -159,7 +159,7 @@ Debug.Log($"Player health: {Health}");
 
 ### <a name="expression-bodied-members"></a>Membros aptos para expressão
 
-Com a mais nova sintaxe C# disponível no tempo de execução do .NET 4.x, [expressões lambda](https://docs.microsoft.com/dotnet/csharp/programming-guide/statements-expressions-operators/lambda-expressions) podem substituir o corpo de funções para torná-las mais sucintas:
+Com a mais nova sintaxe C# disponível no runtime do .NET 4.x, [expressões lambda](https://docs.microsoft.com/dotnet/csharp/programming-guide/statements-expressions-operators/lambda-expressions) podem substituir o corpo de funções para torná-las mais sucintas:
 
 ```csharp
 // .NET 3.5
@@ -278,19 +278,19 @@ Os [atributos de informações do chamador](https://docs.microsoft.com/dotnet/cs
 
 ```csharp
 private void Start ()
-    {
-        ShowCallerInfo("Something happened.");
-    }
-    public void ShowCallerInfo(string message,
-            [System.Runtime.CompilerServices.CallerMemberName] string memberName = "",
-            [System.Runtime.CompilerServices.CallerFilePath] string sourceFilePath = "",
-            [System.Runtime.CompilerServices.CallerLineNumber] int sourceLineNumber = 0)
-    {
-        Debug.Log($"message: {message}");
-        Debug.Log($"member name: {memberName}");
-        Debug.Log($"source file path: {sourceFilePath}");
-        Debug.Log($"source line number: {sourceLineNumber}");
-    }
+{
+    ShowCallerInfo("Something happened.");
+}
+public void ShowCallerInfo(string message,
+        [System.Runtime.CompilerServices.CallerMemberName] string memberName = "",
+        [System.Runtime.CompilerServices.CallerFilePath] string sourceFilePath = "",
+        [System.Runtime.CompilerServices.CallerLineNumber] int sourceLineNumber = 0)
+{
+    Debug.Log($"message: {message}");
+    Debug.Log($"member name: {memberName}");
+    Debug.Log($"source file path: {sourceFilePath}");
+    Debug.Log($"source line number: {sourceLineNumber}");
+}
 // Output:
 // Something happened
 // member name: Start
@@ -335,7 +335,7 @@ public class UsingStaticExample: MonoBehaviour
 
 Ao exportar seu jogo para plataformas como iOS, o Unity usará seu mecanismo IL2CPP para "transcompilar" o IL para código C++ que é então compilado usando o compilador nativo da plataforma de destino. Nesse cenário, há vários recursos do .NET que não são compatíveis, tais como partes de reflexão e o uso da palavra-chave `dynamic`. Embora você possa controlar o uso desses recursos em seu próprio código, você pode encontrar problemas ao usar DLLs de terceiros e SDKs que não foram escritos com o Unity e o IL2CPP em mente. Para obter mais informações sobre esse tópico, veja a documentação sobre [restrições de script](https://docs.unity3d.com/Manual/ScriptingRestrictions.html) no site do Unity.
 
-Além disso, conforme mencionado no exemplo de Json.NET acima, o Unity tentará retirar o código não utilizado durante o processo de exportação de IL2CPP.  Embora isso normalmente não seja um problema, com bibliotecas que usam a Reflexão, isso pode acidentalmente retirar propriedades ou métodos que são chamados em tempo de execução e que não podem ser determinados em tempo de exportação.  Para corrigir esses problemas, adicione um arquivo **link.xml** ao seu projeto que contém uma lista de assemblies e namespaces nos quais não executar o processo de remoção.  Para obter detalhes completos, veja a [documentação do Unity sobre a remoção de código de bytes](https://docs.unity3d.com/Manual/IL2CPP-BytecodeStripping.html).
+Além disso, conforme mencionado no exemplo de Json.NET acima, o Unity tentará retirar o código não utilizado durante o processo de exportação de IL2CPP.  Embora isso normalmente não seja um problema, com bibliotecas que usam reflexão, ele pode remover acidentalmente Propriedades ou métodos que serão chamados em tempo de execução que não podem ser determinados no momento da exportação.  Para corrigir esses problemas, adicione um arquivo **link.xml** ao seu projeto que contém uma lista de assemblies e namespaces nos quais não executar o processo de remoção.  Para obter detalhes completos, veja a [documentação do Unity sobre a remoção de código de bytes](https://docs.unity3d.com/Manual/IL2CPP-BytecodeStripping.html).
 
 ## <a name="net-4x-sample-unity-project"></a>Projeto do Unity de exemplo do .NET 4.x
 
@@ -343,7 +343,7 @@ A amostra contém exemplos de vários recursos do .NET 4.x. Você pode baixar o 
 
 ## <a name="additional-resources"></a>Recursos adicionais
 
-* [Blog do Unity – aprimoramentos de tempo de execução de script no Unity 2018.2](https://blogs.unity3d.com/2018/07/11/scripting-runtime-improvements-in-unity-2018-2/)
+* [Blog do Unity – aprimoramentos de runtime de script no Unity 2018.2](https://blogs.unity3d.com/2018/07/11/scripting-runtime-improvements-in-unity-2018-2/)
 * [Histórico da linguagem C#](https://docs.microsoft.com/dotnet/csharp/whats-new/csharp-version-history)
 * [Novidades no C# 6](https://docs.microsoft.com/dotnet/csharp/whats-new/csharp-6)
 * [Programação assíncrona no Unity, usando co-rotina e TAP](https://blogs.msdn.microsoft.com/appconsult/2017/09/01/unity-coroutine-tap)

@@ -1,49 +1,50 @@
 ---
 title: IDebugProperty2::GetSize | Microsoft Docs
-ms.date: 11/15/2016
-ms.prod: visual-studio-dev14
-ms.technology: vs-ide-sdk
+ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - IDebugProperty2::GetSize
 helpviewer_keywords:
 - IDebugProperty2::GetSize
 ms.assetid: 0deb8ec5-d6fb-4622-bb14-0c46b9459cc6
-caps.latest.revision: 11
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
-ms.openlocfilehash: 5b55e6663ac1d9d679c2cdf524fbd7d1848dc22b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.workload:
+- vssdk
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: b76a6a563a4a9ecd63c81c897a1ba21b3a977b80
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62869423"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66314643"
 ---
 # <a name="idebugproperty2getsize"></a>IDebugProperty2::GetSize
-[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+Obtém o tamanho, em bytes, do valor da propriedade.
 
-Obtém o tamanho, em bytes, do valor da propriedade.  
-  
-## <a name="syntax"></a>Sintaxe  
-  
-```cpp#  
-HRESULT GetSize (   
-   DWORD* pdwSize  
-);  
-```  
-  
-```csharp  
-int GetSize (   
-   out uint pdwSize  
-);  
-```  
-  
-#### <a name="parameters"></a>Parâmetros  
- `pdwSize`  
- [out] Retorna o tamanho, em bytes, do valor da propriedade.  
-  
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retornará o código de erro. Retorna `S_GETSIZE_NO_SIZE` se a propriedade não tem nenhum tamanho.  
-  
-## <a name="see-also"></a>Consulte também  
- [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)
+## <a name="syntax"></a>Sintaxe
+
+```cpp
+HRESULT GetSize ( 
+   DWORD* pdwSize
+);
+```
+
+```csharp
+int GetSize ( 
+   out uint pdwSize
+);
+```
+
+## <a name="parameters"></a>Parâmetros
+`pdwSize`\
+[out] Retorna o tamanho, em bytes, do valor da propriedade.
+
+## <a name="return-value"></a>Valor de retorno
+ Se for bem-sucedido, retornará `S_OK`; caso contrário, retornará o código de erro. Retorna `S_GETSIZE_NO_SIZE` se a propriedade não tem nenhum tamanho.
+
+## <a name="see-also"></a>Consulte também
+- [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)

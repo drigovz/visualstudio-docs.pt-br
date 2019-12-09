@@ -17,12 +17,12 @@ caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4bb7245e57dedf6f94ce7766fcfae24ac930f608
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: f4487b168c3d405b2449bcfb9515e60f0ea67ed1
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117534"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65702686"
 ---
 # <a name="how-to-debug-on-a-high-performance-cluster"></a>Como: Depurar em um cluster de alto desempenho
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ A depuração de um programa com vários processamentos em um cluster de alto de
   
  Ao depurar em um cluster de alto desempenho, você pode usar todas as janelas e técnicas de depuração do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] que estiverem disponíveis para a depuração remota. Como você está depurando remotamente, no entanto, a janela do console externo não está disponível.  
   
- A janela **Threads** e a janela **Processos** são úteis especificamente para depurar aplicativos paralelos. Para obter dicas sobre como usar essas janelas, consulte [como: Use a janela de processos](http://msdn.microsoft.com/0207ce2f-8ceb-4fe7-b2b5-4dd35b035ed7) e [como: Usar a janela Threads](../debugger/how-to-use-the-threads-window.md).  
+ A janela **Threads** e a janela **Processos** são úteis especificamente para depurar aplicativos paralelos. Para obter dicas sobre como usar essas janelas, consulte [como: Use a janela de processos](https://msdn.microsoft.com/0207ce2f-8ceb-4fe7-b2b5-4dd35b035ed7) e [como: Usar a janela Threads](../debugger/how-to-use-the-threads-window.md).  
   
  Os procedimentos a seguir mostram algumas técnicas que são muito úteis para depurar em um conjunto de alto desempenho.  
   
@@ -103,7 +103,7 @@ A depuração de um programa com vários processamentos em um cluster de alto de
 ## <a name="see-also"></a>Consulte também  
  [Depurar aplicativos multi-threaded](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
  [Depuração remota](../debugger/remote-debugging.md)   
- [Como: Use a janela processos](http://msdn.microsoft.com/0207ce2f-8ceb-4fe7-b2b5-4dd35b035ed7)   
+ [Como: Use a janela processos](https://msdn.microsoft.com/0207ce2f-8ceb-4fe7-b2b5-4dd35b035ed7)   
  [Como: Usar a janela Threads](../debugger/how-to-use-the-threads-window.md)   
- [Threads e processos](http://msdn.microsoft.com/73d87480-9af3-4d1b-baf5-397d5d876ae6)   
+ [Threads e processos](https://msdn.microsoft.com/73d87480-9af3-4d1b-baf5-397d5d876ae6)   
  [Usando pontos de interrupção](../debugger/using-breakpoints.md)

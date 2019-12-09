@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugReferenceInfo2::Next
 ms.assetid: 70b31a57-1701-4757-9e7e-63ec60a71b3c
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a49e5c250b1df196ad2a2607c1518ed7411cbe3e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 0860210a2ed80374346268012ae98cf5704b4c7a
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62865985"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66322642"
 ---
 # <a name="ienumdebugreferenceinfo2next"></a>IEnumDebugReferenceInfo2::Next
 Retorna o próximo conjunto de elementos da enumeração.
@@ -40,18 +43,15 @@ int Next(
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `celt`
+## <a name="parameters"></a>Parâmetros
+`celt`\
+[in] O número de elementos a serem recuperados. Também especifica o tamanho máximo da `rgelt` matriz.
 
- [in] O número de elementos a serem recuperados. Também especifica o tamanho máximo da `rgelt` matriz.
+`rgelt`\
+[no, out] Matriz de [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) elementos a serem preenchidos.
 
- `rgelt`
-
- [no, out] Matriz de [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) elementos a serem preenchidos.
-
- `pceltFetched`
-
- [out] Retorna o número de elementos realmente retornados em `rgelt`.
+`pceltFetched`\
+[out] Retorna o número de elementos realmente retornados em `rgelt`.
 
 ## <a name="return-value"></a>Valor de retorno
  Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se menos do que o número solicitado de elementos podem ser retornados; caso contrário, retornará um código de erro.

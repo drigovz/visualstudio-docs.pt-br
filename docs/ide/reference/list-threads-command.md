@@ -9,17 +9,17 @@ helpviewer_keywords:
 - list threads command
 - Debug.ListThreads command
 ms.assetid: 34b665c0-d46f-4c1a-a066-b678eba5ac54
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 44c66eab323f42ba3aa5392fed657e3afd3a6e5c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 8c89f4e38d21e7dd66f53b8e768019a3e53c7a39
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946824"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747881"
 ---
 # <a name="list-threads-command"></a>Comando Listar Threads
 Exibe uma lista dos threads no programa atual.
@@ -31,12 +31,12 @@ Debug.ListThreads [index]
 ```
 
 ## <a name="arguments"></a>Arguments
- `index`
+`index`
 
- Opcional. Seleciona um thread pelo seu índice para o thread atual.
+Opcional. Seleciona um thread pelo seu índice para o thread atual.
 
 ## <a name="remarks"></a>Comentários
- Quando especificado, o argumento `index` marca o thread indicado como o thread atual. Um asterisco (*) é exibido na lista ao lado do thread atual.
+Quando especificado, o argumento `index` marca o thread indicado como o thread atual. Um asterisco (*) é exibido na lista ao lado do thread atual.
 
 ## <a name="example"></a>Exemplo
 

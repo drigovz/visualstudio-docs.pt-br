@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3390a2b38e82fc89a73a5ced82ef96d7c638a95a
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54785668"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68161983"
 ---
 # <a name="performance-report-views"></a>Exibições do relatório de desempenho
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,5 +47,5 @@ Essa seção fornece informações de referência sobre os relatórios e as exib
  [Exibição de Interações de Camada](../profiling/tier-interactions-view.md)  
  Informações de referência para a exibição Interação e relatórios de arquivos de dados de criação de perfil que incluem dados de interação entre camadas.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Veja também  
  [Analisando dados de ferramentas de desempenho](../profiling/analyzing-performance-tools-data.md)

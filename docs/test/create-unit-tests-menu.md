@@ -4,24 +4,24 @@ ms.date: 04/01/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - unit testing, create unit tests
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e7eb72f104560991f1bb191e62641041879df071
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 3edd4694688011722b9975d299bd09cfb3832a9e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62965453"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72665076"
 ---
 # <a name="create-unit-test-method-stubs-with-the-create-unit-tests-command"></a>Criar stubs de método de teste de unidade com o comando Criar Testes de Unidade
 
 O comando **Criar Testes de Unidade** cria os stubs de método de teste de unidade. Esse recurso permite a configuração fácil de um projeto de teste, da classe de teste e do stub do método de teste dentro dele.
 
 > [!NOTE]
-> O comando de menu **Criar Testes de Unidade** está disponível somente para código gerenciado direcionado ao .NET Framework (mas não ao .NET Core).
+> O comando de menu **Criar Testes de Unidade** está disponível somente para o código gerenciado direcionado ao .NET Framework (mas não ao .NET Core).
 
 O comando de menu **Criar Testes de Unidade** é extensível e pode ser usado para gerar testes para MSTest, MSTest V2, NUnit e xUnit.
 

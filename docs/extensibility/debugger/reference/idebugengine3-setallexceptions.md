@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEngine3::SetAllExceptions
 ms.assetid: 8f03a6ac-a854-42f7-933c-a2df1b351975
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 33735e047f0ac0266648afd2ffb4de0cbc908a25
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 77c34ec86eb9c06b844803765319730313cffd9e
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62920919"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352479"
 ---
 # <a name="idebugengine3setallexceptions"></a>IDebugEngine3::SetAllExceptions
 Esse método define o estado de todas as exceções pendentes.
@@ -36,10 +39,9 @@ int SetAllExceptions(
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `dwState`
-
- [in] Um dos [EXCEPTION_STATE](../../../extensibility/debugger/reference/exception-state.md) valores.
+## <a name="parameters"></a>Parâmetros
+`dwState`\
+[in] Um dos [EXCEPTION_STATE](../../../extensibility/debugger/reference/exception-state.md) valores.
 
 ## <a name="return-value"></a>Valor de retorno
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retornará o código de erro.

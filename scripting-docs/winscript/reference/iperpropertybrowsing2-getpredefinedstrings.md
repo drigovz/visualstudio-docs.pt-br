@@ -1,5 +1,5 @@
 ---
-title: IPerPropertyBrowsing2::GetPredefinedStrings | Microsoft Docs
+title: 'IPerPropertyBrowsing2:: GetPredefinedStrings | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5a5f71ba91c65a8d99d831c777fc47fe9233fc18
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 55ade724dd9ee5d59feb9d04c5b525ca839a9cec
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62944862"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576768"
 ---
 # <a name="iperpropertybrowsing2getpredefinedstrings"></a>IPerPropertyBrowsing2::GetPredefinedStrings
-Permite que o chamador preencher uma caixa de listagem com uma matriz contada de ponteiros de cadeia de caracteres que representam os valores possíveis para essa propriedade.  
+Permite que o chamador Preencha uma caixa de listagem com uma matriz contada de ponteiros de cadeia de caracteres que representam valores potenciais para essa propriedade.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -39,16 +39,16 @@ HRESULT GetPredefinedStrings(
   
 #### <a name="parameters"></a>Parâmetros  
  `dispid`  
- [in] Identificador de expedição da propriedade para o qual o chamador está solicitando a lista de cadeia de caracteres.  
+ no Identificador de expedição da propriedade para a qual o chamador está solicitando a lista de cadeias de caracteres.  
   
  `pCaStrings`  
- [out] Ponteiro para uma estrutura de matriz alocada pelo chamador, contado que contém a contagem de elemento e o endereço de uma matriz alocada pelo método de ponteiros de cadeia de caracteres. Se o método falhar, nenhuma memória é alocada, e o conteúdo da estrutura é indefinido.  
+ fora Ponteiro para uma estrutura de matriz contada e alocada pelo chamador que contém a contagem de elementos e o endereço de uma matriz alocada por método de ponteiros de cadeia de caracteres. Se o método falhar, nenhuma memória será alocada e o conteúdo da estrutura será indefinido.  
   
  `pCaCookies`  
- [out] Ponteiro para a estrutura de matriz alocada pelo chamador, contado que contém a contagem de elemento e o endereço de uma matriz alocada pelo método de DWORDs. Se o método falhar, nenhuma memória é alocada, e o conteúdo da estrutura é indefinido.  
+ fora Ponteiro para a estrutura de matriz contada, atribuída pelo chamador, que contém a contagem de elementos e o endereço de uma matriz de DWORDs alocada por método. Se o método falhar, nenhuma memória será alocada e o conteúdo da estrutura será indefinido.  
   
-## <a name="return-value"></a>Valor de retorno  
- Retorna um válidas `HRESULT`, normalmente `S_OK`.  
+## <a name="return-value"></a>Valor retornado  
+ Retorna um `HRESULT` válido, geralmente `S_OK`.  
   
 ## <a name="see-also"></a>Consulte também  
  [Interface 1 IPerPropertyBrowsing2](../../winscript/reference/iperpropertybrowsing2-interface-1.md)

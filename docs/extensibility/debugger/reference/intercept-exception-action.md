@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - INTERCEPT_EXCEPTION_ACTION enumeration
 ms.assetid: e647f1eb-2932-4447-8c78-3b0d706fb972
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0cac3e4fb6c072a26ede753213f6546c2ff50afa
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 265ed30272c959b6ee812a83f748888a5af15cab
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62914055"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66350241"
 ---
 # <a name="interceptexceptionaction"></a>INTERCEPT_EXCEPTION_ACTION
 Especifica quais ações a serem tomadas ao interceptar exceções.
@@ -39,8 +42,10 @@ public enum enum_INTERCEPT_EXCEPTION_ACTION
 }
 ```
 
-#### <a name="parameters"></a>Parâmetros
-IEA_INTERCEPT permite interceptar a exceção atual. Isso é o único valor com suporte no momento e deve ser especificado.
+## <a name="parameters"></a>Parâmetros
+
+`IEA_INTERCEPT`\
+Permite interceptar a exceção atual. Isso é o único valor com suporte no momento e deve ser especificado.
 
 ## <a name="remarks"></a>Comentários
 Esses valores são passados para o [InterceptCurrentException](../../../extensibility/debugger/reference/idebugstackframe3-interceptcurrentexception.md) método.

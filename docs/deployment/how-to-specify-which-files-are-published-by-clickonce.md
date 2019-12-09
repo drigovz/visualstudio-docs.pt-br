@@ -29,15 +29,15 @@ Ao publicar um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]
 
  Arquivos para um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo são gerenciadas na **arquivos de aplicativo** caixa de diálogo, acessível a partir o **publicar** página do **Designer de projeto**.
 
- Inicialmente, há um grupo de arquivo único chamado **(obrigatório)**. Você pode criar grupos de arquivos adicionais e atribuir arquivos neles. Não é possível alterar o **grupo de Download** para arquivos que são necessários para a execução do aplicativo. Por exemplo, o aplicativo .exe ou arquivos marcado como arquivos de dados devem pertencer à **(obrigatório)** grupo.
+ Inicialmente, há um grupo de arquivo único chamado **(obrigatório)** . Você pode criar grupos de arquivos adicionais e atribuir arquivos neles. Não é possível alterar o **grupo de Download** para arquivos que são necessários para a execução do aplicativo. Por exemplo, o aplicativo .exe ou arquivos marcado como arquivos de dados devem pertencer à **(obrigatório)** grupo.
 
- Status de publicação padrão valor de um arquivo é marcada com **(automática)**. Por exemplo, .exe do aplicativo tem um status de publicação dos **incluir (Auto)** por padrão.
+ Status de publicação padrão valor de um arquivo é marcada com **(automática)** . Por exemplo, .exe do aplicativo tem um status de publicação dos **incluir (Auto)** por padrão.
 
  Arquivos com o **ação de compilação** propriedade definida como **conteúdo** são designados como arquivos de aplicativo e será marcado como incluído por padrão. Eles podem ser incluídos, excluídos ou marcados como arquivos de dados. As exceções são da seguinte maneira:
 
 - Arquivos de dados como banco de dados SQL (*mdf* e *. mdb*) arquivos e arquivos XML serão marcados como arquivos de dados por padrão.
 
-- Referências aos assemblies (*. dll* arquivos) são designados como a seguir quando você adiciona a referência: Se **Copy Local** é **falso**, ele é marcado por padrão como um assembly de pré-requisito (**pré-requisito (Auto)**) que devem estar presentes no GAC, antes do aplicativo está instalado. Se **Copy Local** é **verdadeiro**, o assembly é marcado por padrão como um assembly de aplicativo (**incluir (Auto)**) e será copiada para a pasta do aplicativo durante a instalação. Uma referência COM aparecerá na **arquivos de aplicativo** caixa de diálogo (como um *. ocx* arquivo) somente se seu **isolado** propriedade é definida como **True**. Por padrão, ele será incluído.
+- Referências aos assemblies ( *. dll* arquivos) são designados como a seguir quando você adiciona a referência: Se **Copy Local** é **falso**, ele é marcado por padrão como um assembly de pré-requisito (**pré-requisito (Auto)** ) que devem estar presentes no GAC, antes do aplicativo está instalado. Se **Copy Local** é **verdadeiro**, o assembly é marcado por padrão como um assembly de aplicativo (**incluir (Auto)** ) e será copiada para a pasta do aplicativo durante a instalação. Uma referência COM aparecerá na **arquivos de aplicativo** caixa de diálogo (como um *. ocx* arquivo) somente se seu **isolado** propriedade é definida como **True**. Por padrão, ele será incluído.
 
 ### <a name="to-add-files-to-the-application-files-dialog-box"></a>Para adicionar arquivos à caixa de diálogo arquivos do aplicativo
 
@@ -77,7 +77,7 @@ Ao publicar um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]
 
 3. Clique o **arquivos de aplicativo** para abrir o **arquivos de aplicativo** caixa de diálogo.
 
-4. No **arquivos de aplicativo** caixa de diálogo, selecione o assembly do aplicativo (*. dll* arquivo) que você deseja marcar como um pré-requisito. Observe que o seu aplicativo deve ter uma referência ao assembly do aplicativo para que ele apareça na lista.
+4. No **arquivos de aplicativo** caixa de diálogo, selecione o assembly do aplicativo ( *. dll* arquivo) que você deseja marcar como um pré-requisito. Observe que o seu aplicativo deve ter uma referência ao assembly do aplicativo para que ele apareça na lista.
 
 5. No **Status da publicação** campo, selecione **pré-requisito** na lista suspensa.
 

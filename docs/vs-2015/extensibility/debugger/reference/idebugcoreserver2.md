@@ -13,11 +13,11 @@ caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c0bca6ccd3738518df339084b0f6463be181e52d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58922860"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68192911"
 ---
 # <a name="idebugcoreserver2"></a>IDebugCoreServer2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ IDebugCoreServer2 : IUknown
  Essa interface também é usada pelo Visual Studio para navegar os processos em execução em computadores na rede.  
   
 ## <a name="requirements"></a>Requisitos  
- Header: msdbg.h  
+ Cabeçalho: msdbg.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
@@ -63,6 +63,6 @@ IDebugCoreServer2 : IUknown
   
 ## <a name="see-also"></a>Consulte também  
  [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)   
- [Event](../../../extensibility/debugger/reference/idebugportevents2-event.md)   
+ [Evento](../../../extensibility/debugger/reference/idebugportevents2-event.md)   
  [GetServer](../../../extensibility/debugger/reference/idebugdefaultport2-getserver.md)   
  [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)

@@ -8,14 +8,15 @@ ms.assetid: 6631ab87-0e62-4c76-a063-4ea7222b07da
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: c654bbcc9db696d78e651414bfa89d6ad1e2f3e3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 503b3753f4f4fdc98f39804ec767277d7685d0d7
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63000073"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74774074"
 ---
 # <a name="lines-view---net-memory-sampling-data"></a>Exibição de linhas – dados de amostragem de memória do .NET
 A exibição de Linhas dos dados de criação de perfil de alocação de memória do .NET que usa o método de amostragem lista as instruções que alocaram memória durante o processo de criação de perfil. As colunas também incluem o tamanho e o número de alocações.
@@ -54,7 +55,7 @@ A exibição de Linhas dos dados de criação de perfil de alocação de memóri
 |**Final da Linha de Origem**|O número de linha final no arquivo de origem em que a alocação ocorreu.|
 |**Início do Caractere de Origem**|O deslocamento do caractere inicial na linha do arquivo de origem em que a alocação ocorreu.|
 |**Final do Caractere de Origem**|O deslocamento do caractere final na linha do arquivo de origem em que a alocação ocorreu.|
-|**Nome da Linha**|Um identificador gerado pelo criador de perfil da linha com a seguinte sintaxe: `Source File`**;[**`Line Number Start`**,**`Character Start`**]->;[**`Line Number Start,Character Start`**]**|
+|**Nome da Linha**|Um identificador gerado pelo criador de perfil da linha com a seguinte sintaxe: `Source File` **;[** `Line Number Start` **,** `Character Start` **]->;[** `Line Number Start,Character Start` **]**|
 |**Alocações Exclusivas**|O número total de objetos que foram criados nessa linha.|
 |**% de Alocações Exclusivas**|O percentual de todos os objetos criados na criação de perfil que foram alocados nessa linha.|
 |**Bytes Exclusivos**|O percentual de todos os bytes de memória alocados na criação de perfil que foram alocados nessa linha.|

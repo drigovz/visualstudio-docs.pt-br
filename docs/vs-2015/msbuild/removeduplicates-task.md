@@ -20,11 +20,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 73ad829c86305ff4d9a54025467e262d56e24dbc
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59654510"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68159252"
 ---
 # <a name="removeduplicates-task"></a>Tarefa RemoveDuplicates
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Remove itens duplicados da coleção do item especificado.
 ## <a name="parameters"></a>Parâmetros  
  A tabela a seguir descreve os parâmetros da tarefa `RemoveDuplicates`.  
   
-|Parâmetro|Descrição|  
+|Parâmetro|DESCRIÇÃO|  
 |---------------|-----------------|  
 |`Filtered`|Parâmetro de saída <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Contém uma coleção de itens com todos os itens duplicados removidos.|  
 |`Inputs`|Parâmetro opcional <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Coleção de itens do qual remover itens duplicados.|  
@@ -69,7 +69,7 @@ Remove itens duplicados da coleção do item especificado.
 </Project>  
 ```  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Veja também  
  [Referência de tarefas](../msbuild/msbuild-task-reference.md)   
  [Conceitos do MSBuild](../msbuild/msbuild-concepts.md)   
  [Tarefas](../msbuild/msbuild-tasks.md)

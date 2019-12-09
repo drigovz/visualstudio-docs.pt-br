@@ -4,37 +4,41 @@ ms.date: 04/04/2018
 ms.topic: reference
 helpviewer_keywords:
 - code analysis, rule sets reference
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eeb6f4842bab5586cdea1db8ae2d2dd914c88b3c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 96b2c0410e9e1934e8e0a3c9c31c568f1e832c0e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62825358"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72649094"
 ---
 # <a name="code-analysis-rule-set-reference"></a>Referência do conjunto de regras da análise de código
 
-Quando você configura a análise de código estático para projetos de código gerenciado no Visual Studio, você pode escolher entre uma lista dos internas *conjuntos de regra*. Você pode usar um desses conjuntos de regra interna, ou você pode [personalizar um conjunto de regras](../code-quality/how-to-create-a-custom-rule-set.md) para atender às suas necessidades de projeto.
-
-Os tópicos nesta seção descrevem a regra interna conjuntos e as regras (ou avisos) que eles contêm.
+Quando você configura a análise herdada para projetos de código gerenciado no Visual Studio, pode escolher em uma lista de *conjuntos de regras*internos. Algumas regras são incluídas em mais de um dos conjuntos de regras internos, por exemplo, o conjunto de regras básicas de regras de correção inclui regras que estão no conjunto de regras de regra recomendadas gerenciadas.
 
 > [!NOTE]
-> Os conjuntos de regras nesta seção referem-se à análise de código estático. Para obter informações sobre conjuntos de regras disponíveis para os pacotes de analisador Roslyn, consulte [usar conjuntos de regras com analisadores de Roslyn](analyzer-rule-sets.md).
+> Os conjuntos de regras nesta seção pertencem à análise herdada. Para obter informações sobre conjuntos de regras disponíveis para pacotes do Code Analyzer, consulte [usar conjuntos de regras com analisadores de código](analyzer-rule-sets.md).
 
-- [Conjunto de regras Todas as Regras](all-rules-rule-set.md)
-- [Conjunto de regras básicas de correção para código gerenciado](basic-correctness-rules-rule-set-for-managed-code.md)
-- [Conjunto de regras básicas de diretrizes de design para código gerenciado](basic-design-guideline-rules-rule-set-for-managed-code.md)
-- [Conjunto de regras de correção estendido para código gerenciado](extended-correctness-rules-rule-set-for-managed-code.md)
-- [Conjunto de regras estendidas de diretrizes de design para código gerenciado](extended-design-guidelines-rules-rule-set-for-managed-code.md)
-- [Conjunto de regras de globalização para código gerenciado](globalization-rules-rule-set-for-managed-code.md)
-- [Gerenciado mínimo conjunto de regras para código gerenciado](managed-minimum-rules-rule-set-for-managed-code.md)
-- [Conjunto de regras recomendadas gerenciado para código gerenciado](managed-recommended-rules-rule-set-for-managed-code.md)
-- [Conjunto de regras mínimas misto](mixed-minimum-rules-rule-set.md)
-- [Conjunto de regras recomendadas misto](mixed-recommended-rules-rule-set.md)
-- [Conjunto de regras mínimas nativo](native-minimum-rules-rule-set.md)
-- [Conjunto de regras recomendadas nativo](native-recommended-rules-rule-set.md)
-- [Conjunto de regras de segurança para código gerenciado](security-rules-rule-set-for-managed-code.md)
+Você pode usar um desses conjuntos de regras internos ou pode [Personalizar um conjunto de regras](../code-quality/how-to-create-a-custom-rule-set.md) para se adequar aos requisitos do projeto. Se você incluir vários conjuntos de regras que contêm a mesma regra em um conjunto de regras personalizadas, essa regra aparecerá apenas uma vez no conjunto de regras personalizadas.
+
+Os tópicos nesta seção descrevem os conjuntos de regras internos e as regras (ou avisos) que eles contêm.
+
+| Conjunto de regras | Regras incluídas |
+| - | - |
+| [Todas as regras](all-rules-rule-set.md) | Contém todas as regras e C++ gerenciadas disponíveis |
+| [Regras básicas de correção](basic-correctness-rules-rule-set-for-managed-code.md) | Inclui regras gerenciadas recomendadas, além de regras para erros lógicos e uso de estrutura |
+| [Regras de correção estendida](extended-correctness-rules-rule-set-for-managed-code.md) | Inclui regras básicas de correção (que inclui regras recomendadas gerenciadas) mais regras para erros de lógica e uso de estrutura |
+| [Regras básicas de diretriz de design](basic-design-guideline-rules-rule-set-for-managed-code.md) | Inclui regras gerenciadas recomendadas, além de regras para garantir que o código seja fácil de ler, compreender e manter |
+| [Regras de diretrizes de design estendidas](extended-design-guidelines-rules-rule-set-for-managed-code.md) | Inclui regras básicas de diretrizes de design (que incluem regras recomendadas gerenciadas) e mais regras de manutenção que se concentram na nomenclatura |
+| [Regras de globalização](globalization-rules-rule-set-for-managed-code.md) | Inclui regras para problemas de globalização |
+| [Regras mínimas gerenciadas](managed-minimum-rules-rule-set-for-managed-code.md) | Inclui quatro regras para problemas críticos de código gerenciado |
+| [Regras recomendadas gerenciadas](managed-recommended-rules-rule-set-for-managed-code.md) | Inclui regras mínimas gerenciadas e mais regras para problemas críticos de código gerenciado |
+| [Regras mínimas mistas](mixed-minimum-rules-rule-set.md) | Inclui regras para problemas críticos no C++ código para CLR |
+| [Regras recomendadas mistas](mixed-recommended-rules-rule-set.md) | Inclui regras mínimas mistas mais regras para problemas críticos C++ no código para CLR |
+| [Regras mínimas nativas](native-minimum-rules-rule-set.md) | Inclui regras para problemas críticos em código nativo |
+| [Regras nativas recomendadas](native-recommended-rules-rule-set.md) | Inclui regras mínimas nativas e mais regras para problemas críticos no código nativo |
+| [Regras de segurança](security-rules-rule-set-for-managed-code.md) | Inclui regras para localizar vulnerabilidades de segurança |

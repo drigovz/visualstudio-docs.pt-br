@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramNodeAttach2::OnAttach
 ms.assetid: 5fe52761-a508-4ab5-abdb-334fb6590334
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c79f15102b5adae2112f4abdeeb68b80962895e8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 01958b26b5b381bdbe51c2648d2751e822002e6b
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62916793"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66325049"
 ---
 # <a name="idebugprogramnodeattach2onattach"></a>IDebugProgramNodeAttach2::OnAttach
 Anexa ao programa associado ou adia o processo de anexação para o [Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md) método.
@@ -36,10 +39,9 @@ int OnAttach(
 };
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `guidProgramId`
-
- [in] `GUID` para atribuir ao programa associado.
+## <a name="parameters"></a>Parâmetros
+`guidProgramId`\
+[in] `GUID` para atribuir ao programa associado.
 
 ## <a name="return-value"></a>Valor de retorno
  Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se o [Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md) método não deve ser chamado. Caso contrário, retornará um código de erro.

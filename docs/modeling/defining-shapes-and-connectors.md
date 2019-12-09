@@ -2,25 +2,25 @@
 title: Definindo formas e conectores
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a24e447e5ec0b65635f7184bd0ae19b305edfdf8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d715f6ac9fe2ac06f0f1f35c9319093d8257dc8d
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62994614"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653911"
 ---
 # <a name="define-shapes-and-connectors"></a>Definir formas e conectores
 
 Há diversos tipos básicos de formas possíveis de serem usados para exibir informações em um diagrama em uma linguagem específica do domínio (DSL).
 
-## <a name="shapeTypes"></a> Tipos básicos de formas e conectores
+## <a name="shapeTypes"></a>Tipos básicos de formas e conectores
 
-Um diagrama DSL mostra uma coleção de *formas* interconectadas por linhas ou *conectores*. Geralmente, mas não sempre:
+Um diagrama de DSL mostra uma coleção de *formas* interligadas por linhas ou *conectores*. Geralmente, mas não sempre:
 
 - As formas são representações visíveis dos elementos de modelo.
 
@@ -36,13 +36,13 @@ Os seguintes tipos de formas estão disponíveis:
 
 |Tipo de forma|Descrição|
 |-|-|
-|Forma geométrica|Forma retangular ou elíptica de propósito geral. É possível exibir o texto e os decoradores de ícones em posições específicas relativas aos limites da forma. Você também pode aninhar formas dentro das formas geométricas.|
+|Forma geométrica|Forma retangular ou elíptica de propósito geral. É possível exibir o texto e os decoradores de ícones em posições específicas relativas aos limites da forma. Você também pode aninhar formas dentro de formas geométricas.|
 |Forma do compartimento|Retângulo contendo um cabeçalho e compartimentos, com uma classe UML. Cada compartimento pode conter uma lista de linhas de texto.<br /><br /> As linhas geralmente representam elementos incorporados sob o elemento representado pela forma. Por exemplo, criar uma DSL a partir de um modelo de solução de Diagramas de Classe.|
 |Forma da imagem|Forma que exibe uma imagem.|
 |Forma da porta|Um pequeno retângulo projetado para anexar o esboço de outra forma. Geralmente usado em modelos do componente.<br /><br /> O elemento de modelo representado por uma porta normalmente é incorporado sob o elemento representado pela forma pai. Por exemplo, criar uma DSL usando o modelo de solução de Componentes.<br /><br /> Por padrão, uma forma de porta pode deslizar ao longo das laterais de seu pai. É possível definir uma Regra de Associação para restringi-la a uma determinada posição.<br /><br /> Fazendo uma forma de porta muito pequena e transparente, é possível usá-la para fornecer um ponto de conexão fixo na superfície da sua forma pai.|
 |Raias|Partição de raias de um diagrama em segmentos horizontais ou verticais. A raia sempre permanece abaixo de outras formas no diagrama.<br /><br /> Geralmente, os elementos de modelo da raia são criados na raiz do modelo e outros elementos são criados neles. Por exemplo, criar uma DSL a partir de um modelo de solução de Fluxo de Tarefa.|
 |Conectores|As linhas desenhadas entre as formas normalmente representam relações de referência. É possível ajustar opções para tornar um conector reto ou retilíneo e para ter diferentes tipos de seta.|
 
-## <a name="shape-inheritance"></a>Herança da forma
+## <a name="shape-inheritance"></a>Herança de forma
 
 Uma forma pode ser herdeira de outra forma. No entanto, as formas devem ser do mesmo tipo. Por exemplo, somente uma forma geométrica pode ser herdeira de uma forma geométrica. Formas herdadas possuem os compartimentos e decoradores de sua forma de base. Os conectores podem ser herdeiros dos conectores.

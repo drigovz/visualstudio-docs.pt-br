@@ -1,5 +1,5 @@
 ---
-title: 'Como: Especificar configurações do depurador | Microsoft Docs'
+title: Como especificar configurações do depurador | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -19,14 +19,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b109fd995f54ede3aa2c8a6381cb9e6296a6970
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 66e9d0fb5b7d63402c9add3ddf06b3997bc0d7d9
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62847504"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72732720"
 ---
-# <a name="how-to-specify-debugger-settings"></a>Como: Especificar as configurações do depurador
+# <a name="how-to-specify-debugger-settings"></a>Como especificar configurações do depurador
 No [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], você pode especificar várias configurações para o comportamento de depurador, inclusive como as variáveis são exibidas, se determinados avisos são apresentados, como os pontos de interrupção são definidos e como a interrupção afeta os programas em execução. Você especifica as configurações do depurador na caixa de diálogo **Opções**.
 
 ### <a name="to-set-debugger-options"></a>Para definir as opções de depurador
@@ -37,7 +37,7 @@ No [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], você pode especif
 
 3. Na pasta **Depuração**, escolha a categoria de opções que você deseja.
 
-     As opções mais comuns são localizadas na categoria **Geral**. Para obter mais informações, consulte [geral, depuração, caixa de diálogo Opções](../debugger/general-debugging-options-dialog-box.md).
+     As opções mais comuns são localizadas na categoria **Geral**. Para obter mais informações, consulte [geral, depuração, caixa de diálogo opções](../debugger/general-debugging-options-dialog-box.md).
 
 4. Selecionar ou limpar a opção ou as opções desejadas. Pressione F1 para obter ajuda sobre as opções.
 
@@ -45,4 +45,4 @@ No [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], você pode especif
 - [Caixa de diálogo Geral, Depuração, Opções](../debugger/general-debugging-options-dialog-box.md)
 - [Caixa de diálogo Editar e Continuar, Depuração, Opções](https://msdn.microsoft.com/library/bcew296c.aspx)
 - [Preparação e configurações do depurador](../debugger/debugger-settings-and-preparation.md)
-- [Macros comuns para compilar comandos e propriedades](/cpp/ide/common-macros-for-build-commands-and-properties)
+- [Macros comuns para compilar comandos e propriedades](/cpp/build/reference/common-macros-for-build-commands-and-properties)

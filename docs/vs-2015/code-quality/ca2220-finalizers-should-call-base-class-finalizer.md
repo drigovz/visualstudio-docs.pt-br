@@ -1,5 +1,5 @@
 ---
-title: 'CA2220: Os finalizadores devem chamar o finalizador da classe base | Microsoft Docs'
+title: 'CA2220: os finalizadores devem chamar o finalizador de classe base | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,42 +12,42 @@ helpviewer_keywords:
 - FinalizersShouldCallBaseClassFinalizer
 ms.assetid: 48329f42-170d-45ee-a381-e33f55a240c5
 caps.latest.revision: 16
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 432d973a64c7ee7f4264841e2a1277f66c9259da
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 1a4538c66d351956da8168d4f84c1895190ab453
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58922374"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72663582"
 ---
-# <a name="ca2220-finalizers-should-call-base-class-finalizer"></a>CA2220: Os finalizadores devem chamar o finalizador de classe base
+# <a name="ca2220-finalizers-should-call-base-class-finalizer"></a>CA2220: os finalizadores devem chamar o finalizador da classe base
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |NomeDoTipo|FinalizersShouldCallBaseClassFinalizer|
 |CheckId|CA2220|
-|Categoria|Microsoft.Usage|
-|Alteração Significativa|Não separável|
+|Categoria|Microsoft. Usage|
+|Alteração Significativa|Sem interrupção|
 
 ## <a name="cause"></a>Causa
- Um tipo que substitui <xref:System.Object.Finalize%2A?displayProperty=fullName> não chama o <xref:System.Object.Finalize%2A> método na sua classe base.
+ Um tipo que substitui <xref:System.Object.Finalize%2A?displayProperty=fullName> não chama o método <xref:System.Object.Finalize%2A> em sua classe base.
 
 ## <a name="rule-description"></a>Descrição da Regra
- A finalização deve ser propagada em toda a hierarquia de herança. Para garantir isso, os tipos devem chamar sua classe base <xref:System.Object.Finalize%2A> método de dentro de seus próprios <xref:System.Object.Finalize%2A> método. O compilador C# adiciona a chamada para o finalizador da classe base automaticamente.
+ A finalização deve ser propagada em toda a hierarquia de herança. Para garantir isso, os tipos devem chamar sua classe base <xref:System.Object.Finalize%2A> método de dentro de seu próprio método <xref:System.Object.Finalize%2A>. O C# compilador adiciona automaticamente a chamada ao finalizador de classe base.
 
 ## <a name="how-to-fix-violations"></a>Como Corrigir Violações
- Para corrigir uma violação dessa regra, chame o tipo base <xref:System.Object.Finalize%2A> método de sua <xref:System.Object.Finalize%2A> método.
+ Para corrigir uma violação dessa regra, chame o método de <xref:System.Object.Finalize%2A> do tipo base do método <xref:System.Object.Finalize%2A>.
 
 ## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos
- Não suprima um aviso nessa regra. Alguns compiladores que direcionam o common language runtime inserir uma chamada para o finalizador do tipo base em Microsoft intermediate language (MSIL). Se um aviso nessa regra for relatado, o compilador não insere a chamada e você deve adicioná-lo ao seu código.
+ Não suprima um aviso nessa regra. Alguns compiladores que se destinam ao Common Language Runtime inserir uma chamada para o finalizador do tipo base na MSIL (Microsoft Intermediate Language). Se um aviso dessa regra for relatado, o compilador não inserirá a chamada e você deverá adicioná-la ao seu código.
 
 ## <a name="example"></a>Exemplo
- O exemplo de Visual Basic a seguir mostra um tipo `TypeB` que chama corretamente o <xref:System.Object.Finalize%2A> método na sua classe base.
+ O exemplo a seguir Visual Basic mostra um tipo `TypeB` que chama corretamente o método <xref:System.Object.Finalize%2A> em sua classe base.
 
  [!code-vb[FxCop.Usage.IDisposableBaseCalled#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Usage.IDisposableBaseCalled/vb/FxCop.Usage.IDisposableBaseCalled.vb#1)]
 
 ## <a name="see-also"></a>Consulte também
- [Padrão de descarte](http://msdn.microsoft.com/library/31a6c13b-d6a2-492b-9a9f-e5238c983bcb)
+ [Padrão de descarte](https://msdn.microsoft.com/library/31a6c13b-d6a2-492b-9a9f-e5238c983bcb)

@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 93771033dd83ae988340ed355066992990f22f50
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 5e9220df4f9abdb806495e6108fb6039b28e0b7b
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62961796"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71254375"
 ---
 # <a name="step-6-use-the-polls-django-web-project-template"></a>Etapa 6: Usar o modelo de projeto Web Votações do Django
 
@@ -112,9 +112,9 @@ class Choice(models.Model):
         return self.text
 ```
 
-Como você pode ver, uma Pesquisa mantém uma descrição em seu campo `text` e uma data de publicação no `pub_date`. Esses campos são os únicos que existem para a Votação no banco de dados; o campo `total_votes` é calculado em tempo de execução.
+Como você pode ver, uma Pesquisa mantém uma descrição em seu campo `text` e uma data de publicação no `pub_date`. Esses campos são os únicos que existem para a pesquisa no banco de dados; o `total_votes` campo é calculado em tempo de execução.
 
-Uma Opção está relacionada a uma Pesquisa por meio do campo `poll`, contém uma descrição no `text`e mantém uma contagem para aquela opção no `votes`. O campo `votes_percentage` é calculado em tempo de execução e não foi encontrado no banco de dados.
+Uma Opção está relacionada a uma Pesquisa por meio do campo `poll`, contém uma descrição no `text`e mantém uma contagem para aquela opção no `votes`. O `votes_percentage` campo é calculado em tempo de execução e não é encontrado no banco de dados.
 
 A lista completa de tipos de campo é `CharField` (texto limitado) `TextField` (texto ilimitado), `EmailField`, `URLField`, `DateTimeField`, `IntegerField`, `DecimalField`, `BooleanField`, `ForeignKey` e `ManyToMany`. Cada campo utiliza alguns atributos, como `max_length`. O atributo `blank=True` significa que o campo é opcional; `null=true` significa que um valor é opcional. Também há um atributo `choices` que limita valores a valores em uma matriz de tuplas de valor de dados/valor de exibição. (Veja a [Referência de campo de modelo](https://docs.djangoproject.com/en/2.0/ref/models/fields/) na documentação do Django).
 
@@ -183,7 +183,7 @@ Para ver o efeito de alterar um modelo, tente as seguintes etapas:
     ```
 
 1. Salve o arquivo e, em seguida, no **Gerenciador de Soluções**, clique com o botão direito do mouse no projeto **DjangoPolls** e selecione o comando **Python** > **Django Make Migrations**.
-1. Selecione o comando **Projeto** > **Mostrar Todos os Arquivos** para ver o script recém-gerado na pasta **migrations**, cujo nome começa com **002_auto_**. Clique com o botão direito no arquivo e selecione **Include In Project**. Você pode selecionar **Project** > **Show All Files** novamente para restaurar o modo de exibição original. (Veja a segunda pergunta abaixo para obter detalhes sobre esta etapa).
+1. Selecione o comando **Projeto** > **Mostrar Todos os Arquivos** para ver o script recém-gerado na pasta **migrations**, cujo nome começa com **002_auto_** . Clique com o botão direito no arquivo e selecione **Include In Project**. Você pode selecionar **Project** > **Show All Files** novamente para restaurar o modo de exibição original. (Veja a segunda pergunta abaixo para obter detalhes sobre esta etapa).
 1. Se desejar, abra o arquivo para examinar como os scripts do Django são alterados do estado de modelo anterior para o novo estado.
 1. Clique com o botão direito no projeto do Visual Studio novamente e selecione **Python** > **Django Migrate** para aplicar as alterações ao banco de dados.
 1. Se desejar, abra o banco de dados em um visualizador apropriado para confirmar a alteração.
@@ -192,7 +192,7 @@ Em geral, o recurso de migração do Django significa que você nunca precisa ge
 
 ### <a name="question-what-happens-if-i-forget-to-run-the-migrate-command-after-making-changes-to-models"></a>Pergunta: O que acontecerá se eu esquecer de executar o comando de migração depois de fazer alterações nos modelos?
 
-Resposta: Se os modelos não corresponderem ao que está no banco de dados, o Django falhará em tempo de execução com as exceções adequadas. Por exemplo, se você esquecer de migrar a alteração do modelo mostrada na seção anterior, verá o erro **no such column: app_poll.author**:
+Resposta: Se os modelos não corresponderem ao que há no banco de dados, o Django falhará em tempo de execução com as exceções apropriadas. Por exemplo, se você esquecer de migrar a alteração do modelo mostrada na seção anterior, verá o erro **no such column: app_poll.author**:
 
 ![Erro mostrado quando uma alteração de modelo não tiver sido migrada](media/django/step06-exception-when-forgetting-to-migrate.png).
 
@@ -374,6 +374,6 @@ A execução de um aplicativo Web no computador de desenvolvimento é apenas uma
 
 - Escreva testes de unidade em *tests.py*; os modelos de projeto do Visual Studio fornecem pontos iniciais para eles e mais informações podem ser encontradas em [Escrevendo seu primeiro aplicativo do Django, parte 5 – teste](https://docs.djangoproject.com/en/2.0/intro/tutorial05/) e [Testando no Django](https://docs.djangoproject.com/en/2.0/topics/testing/) na documentação do Django.
 
-- Altere o aplicativo de SQLite para um repositório de dados de nível de produção como PostgreSQL, MySQL e SQL Server (que pode ser hospedado no Azure). Conforme descrito em [Quando usar o SQLite](https://www.sqlite.org/whentouse.html) (sqlite.org), o SQLite funciona bem para sites de tráfego baixo a médio com menos de 100 mil acessos por dia, mas não é recomendado para volumes maiores. Também é limitado a um único computador, de modo que ele não pode ser usado em qualquer cenário de vários servidores, como balanceamento de carga e replicação geográfica. Para obter informações sobre o suporte do Django para outros bancos de dados, veja [Instalação do banco de dados](https://docs.djangoproject.com/en/2.0/intro/tutorial02/#database-setup). Você também pode usar o [SDK do Azure para Python](/python/azure/?view=azure-python) para trabalhar com serviços de armazenamento do Azure como tabelas e blobs.
+- Altere o aplicativo de SQLite para um repositório de dados de nível de produção como PostgreSQL, MySQL e SQL Server (que pode ser hospedado no Azure). Conforme descrito em [Quando usar o SQLite](https://www.sqlite.org/whentouse.html) (sqlite.org), o SQLite funciona bem para sites de tráfego baixo a médio com menos de 100 mil acessos por dia, mas não é recomendado para volumes maiores. Também é limitado a um único computador, de modo que ele não pode ser usado em qualquer cenário de vários servidores, como balanceamento de carga e replicação geográfica. Para obter informações sobre o suporte do Django para outros bancos de dados, veja [Instalação do banco de dados](https://docs.djangoproject.com/en/2.0/intro/tutorial02/#database-setup). Você também pode usar o [SDK do Azure para Python](/azure/python/) para trabalhar com serviços de armazenamento do Azure como tabelas e blobs.
 
 - Configure um pipeline de integração contínua/implantação contínua em um serviço como o Azure DevOps. Além de trabalhar com o controle do código-fonte (por meio do Azure Repos, do GitHub ou em outro local), você pode configurar um projeto do Azure DevOps para executar automaticamente os testes de unidade como um pré-requisito para o lançamento, bem como configurar o pipeline para implantação em um servidor de preparo para testes adicionais antes de implantar na produção. O Azure DevOps, além disso, integra-se às soluções de monitoramento, como o App Insights e fecha o ciclo de inteiro com ferramentas ágeis de planejamento. Para saber mais, confira [Criar um pipeline de CI/CD para Python com o projeto do Azure DevOps](/azure/devops-project/azure-devops-project-python?view=vsts) e também a [documentação geral do Azure DevOps](/azure/devops/?view=vsts).

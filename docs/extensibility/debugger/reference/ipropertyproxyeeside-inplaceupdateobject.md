@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IPropertyProxyEESide::InPlaceUpdateObject
 ms.assetid: abf89411-1853-4f23-b244-d5e0afa197b1
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8617dd6f37d7e90d23c3ed454ef56122b36f6b75
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 6ce2826aa0bd75638d6f5ee8086cbcce96517ce7
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62913943"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66329419"
 ---
 # <a name="ipropertyproxyeesideinplaceupdateobject"></a>IPropertyProxyEESide::InPlaceUpdateObject
 Atualiza os dados do objeto com o objeto de dados fornecido e retorna um novo objeto de dados que representa os dados do objeto novo.
@@ -38,14 +41,12 @@ int InPlaceUpdateObject(
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `dataIn`
+## <a name="parameters"></a>Parâmetros
+`dataIn`\
+[in] Uma [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) objeto que contém os novos dados.
 
- [in] Uma [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) objeto que contém os novos dados.
-
- `dataOut`
-
- [out] Retorna um novo `IEEDataStorage` objeto que contém os dados substituídos.
+`dataOut`\
+[out] Retorna um novo `IEEDataStorage` objeto que contém os dados substituídos.
 
 ## <a name="return-value"></a>Valor de retorno
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.

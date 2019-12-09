@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - developer community privacy
 - privacy, developer community
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c45f4b374e553115462a010c4a61cc2d4a0a3e9c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: d1856d6421dc61ada2f3040e4fdeed880a6ab201
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62978388"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72652482"
 ---
 # <a name="developer-community-data-privacy"></a>Privacidade de dados da Comunidade de Desenvolvedores
 
@@ -54,34 +54,36 @@ Quando a ação **Relatar um problema** é iniciada com o Visual Studio, nós co
 
 - Arquivo de log de atividades na memória do Visual Studio
 
-- Arquivos do PerfWatson, quando a coleta do Watson está habilitada, da pasta *VSFeedbackPerfWatsonData*
+- Arquivos do PerfWatson, se a coleção do Watson estiver habilitada
 
-- Arquivos de log do LiveShare, caso existam, da pasta *VSFeedbackVSRTCLogs*
+- Arquivos de log do LiveShare, caso existam
 
-- Arquivos de log do Xamarin, caso existam, de *%LOCALAPPDATA%\Xamarin\Logs*
+- Arquivos de log do Xamarin, caso existam
 
-- Arquivos de log do NuGet, caso existam, de *%TEMP%\NuGetScratch\nuget-dg\nugetSpec.dg*
+- Arquivos de log do Nuget, caso existam
 
-- Arquivos de log do depurador da Web, caso existam:
+- Arquivos de log do depurador da Web, caso existam
 
-   - *%TEMP%\vscode-chrome-debug.txt*
+- Logs do hub de serviço e logs de erro da MEF, caso existam
 
-   - *%TEMP%\vscode-node-debug2.txt*
+- Logs do Python, caso existam
 
-   - *%TEMP%\vscode-edge-debug.txt*
+- Windows Forms logs, se existirem
 
 - Uma captura de tela, caso você escolha incluí-la
 
 - Dados de gravação, caso você escolha incluir gravações, como:
 
-   - Etapas para reproduzir o problema
+  - Etapas para reproduzir o problema
 
-   - Arquivo de rastreamento de ETL
+  - Arquivo de rastreamento de ETL
 
-   - Arquivo de despejo
+  - Arquivo de despejo
 
-    > [!NOTE]
-    > Antes do envio do relatório, você pode excluir os dados de gravação que não deseja enviar.
+> [!NOTE]
+> Arquivos de log, capturas de tela e dados de gravação são enviados à Microsoft somente quando você fornece permissão enviando o relatório de problema com o qual eles são incluídos. Você pode ver quais arquivos estão incluídos na etapa ' Resumo ' da janela ' relatar um problema ' (consulte a captura de tela incluída nesta nota). Os logs coletados e os arquivos são armazenados na pasta% Temp% e são limpos regularmente e após cada carregamento. Se você não quiser incluir um log em seu relatório de problema, exclua o arquivo da pasta% Temp% antes de enviar o relatório.
+  > ![Report um problema-Resumo dos logs coletados ](media/report-a-problem-logs-collected.png)
+
 
 ## <a name="see-also"></a>Consulte também
 

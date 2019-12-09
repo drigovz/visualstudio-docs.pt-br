@@ -1,5 +1,5 @@
 ---
-title: Compile aplicativos com interface do usuário nativa usando o Xamarin
+title: Compilar aplicativos com interface do usuário nativa usando o Xamarin
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: tgt-pltfrm-cross-plat
@@ -8,19 +8,19 @@ ms.assetid: 30f137e6-595d-4ce7-b8f5-415b07c1caa2
 caps.latest.revision: 33
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 8a719a1420d4d2e64438865a41cc24da114fbc2d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 7a0284ab6b8d2e89e1c0129c2bc98fb486918f90
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443058"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297921"
 ---
 # <a name="build-apps-with-native-ui-using-xamarin-in-visual-studio"></a>Criar aplicativos com interface do usuário nativa usando o Xamarin no Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Depois de concluir as etapas em [Configuração e instalação](../cross-platform/setup-and-install.md) e [Verificar seu ambiente Xamarin](../cross-platform/verify-your-xamarin-environment.md), este passo a passo mostra como criar um aplicativo Xamarin básico (mostrado abaixo) com as camadas de interface do usuário nativas. Com a interface do usuário nativa, o código compartilhado reside em uma PCL (biblioteca de classes portátil) e os projetos de plataforma individuais contêm as definições de interface do usuário.
 
- ![Aplicativo Xamarin no Android e no Windows Phone](../cross-platform/media/cross-plat-xamarin-build-1.png "Xamarin Multiplataformas Build 1")
+ ![Aplicativo Xamarin no Android e Windows Phone](../cross-platform/media/cross-plat-xamarin-build-1.png "Plat do Xamarin de versão 1")
 
  Você executará as seguintes ações para compilar:
 
@@ -37,7 +37,7 @@ Depois de concluir as etapas em [Configuração e instalação](../cross-platfor
 > [!TIP]
 > Você pode encontrar o código-fonte completo para esse projeto no [repositório de amostras móveis no GitHub](https://github.com/xamarin/mobile-samples/tree/master/Weather).
 >
-> Se você tiver dificuldades ou encontrar erros, publique perguntas em [forums.xamarin.com](http://forums.xamarin.com). Muitos erros podem ser resolvidos atualizando para os SDKs mais recentes exigidos pelo Xamarin, que são descritos em [Notas de Versão do Xamarin](https://developer.xamarin.com/releases/) para cada plataforma.
+> Se você tiver dificuldades ou encontrar erros, publique perguntas em [forums.xamarin.com](https://forums.xamarin.com/). Muitos erros podem ser resolvidos atualizando para os SDKs mais recentes exigidos pelo Xamarin, que são descritos em [Notas de Versão do Xamarin](https://developer.xamarin.com/) para cada plataforma.
 >
 > [!NOTE]
 > A documentação do desenvolvedor do Xamarin também oferece várias instruções passo a passo com seções de Início Rápido e de Aprofundamento conforme listado abaixo. Em todas essas páginas, certifique-se de que "Visual Studio" esteja selecionado no canto superior direito da página para ver instruções passo a passo específicas do Visual Studio.
@@ -46,7 +46,7 @@ Depois de concluir as etapas em [Configuração e instalação](../cross-platfor
 >
 >   - [Olá, Android](https://developer.xamarin.com/guides/android/getting_started/hello,android/) (aplicativo simples com uma tela)
 >   - [Olá, Android multitela](https://developer.xamarin.com/guides/android/getting_started/hello,android_multiscreen/) (aplicativo com navegação entre telas)
->   - [Passo a passo de fragmentos do Android](http://developer.xamarin.com/guides/android/platform_features/fragments/fragments_walkthrough/) (usado para telas mestre/detalhadas, entre outros elementos)
+>   - [Passo a passo de fragmentos do Android](https://docs.microsoft.com/xamarin/android/platform/fragments/implementing-with-fragments/) (usado para telas mestre/detalhadas, entre outros elementos)
 >   - [Hello, iOS](https://developer.xamarin.com/guides/ios/getting_started/hello,_iOS/)
 >   - [Multitela Hello, iOS](https://developer.xamarin.com/guides/ios/getting_started/hello,_iOS_multiscreen/)
 >   - Aplicativos Xamarin com Xamarin.Forms (interface do usuário compartilhada)
@@ -63,19 +63,19 @@ Depois de concluir as etapas em [Configuração e instalação](../cross-platfor
 
 2. Depois de clicar em OK para criar a solução, você terá vários projetos individuais:
 
-   - **WeatherApp (Portátil)**: a PCL em que você escreverá o código que é compartilhado entre plataformas, incluindo lógica de negócios comum e código de interface do usuário com Xamarin.Forms.
+   - **WeatherApp (Portátil)** : a PCL em que você escreverá o código que é compartilhado entre plataformas, incluindo lógica de negócios comum e código de interface do usuário com Xamarin.Forms.
 
    - **WeatherApp.Droid**: o projeto que contém o código nativo do Android. É definido como o projeto de inicialização padrão.
 
    - **WeatherApp.iOS**: o projeto que contém o código iOS nativo.
 
-   - **WeatherApp.WinPhone (Windows Phone 8.1)**: o projeto que contém o código nativo do Windows Phone.
+   - **WeatherApp.WinPhone (Windows Phone 8.1)** : o projeto que contém o código nativo do Windows Phone.
 
      Dentro de cada projeto nativo, você tem acesso ao designer nativo para a plataforma correspondente e pode implementar telas específicas da plataforma.
 
 3. Adicione o pacote **Newtonsoft.Json** e o pacote NuGet ao projeto PCL, que você usará para processar as informações recuperadas de um serviço de dados de clima:
 
-   - Clique com botão direito do mouse em **Solução 'WeatherApp'** no Gerenciador de Soluções e selecione **Gerenciar Pacotes NuGet para Solução…**.
+   - Clique com botão direito do mouse em **Solução 'WeatherApp'** no Gerenciador de Soluções e selecione **Gerenciar Pacotes NuGet para Solução…** .
 
         Na janela do NuGet, selecione a guia **Procurar** e pesquise **Newtonsoft**.
 
@@ -87,7 +87,7 @@ Depois de concluir as etapas em [Configuração e instalação](../cross-platfor
 
    - Clique em **Instalar**.
 
-   - ![Localizando e instalando o pacote do NuGet Newtonsoft.Json](../cross-platform/media/crossplat-xamarin-formsguide-5.png "CrossPlat Xamarin FormsGuide 5")
+   - ![Localizando e instalando o pacote NuGet Newtonsoft. JSON](../cross-platform/media/crossplat-xamarin-formsguide-5.png "CrossPlat Xamarin FormsGuide 5")
 
 4. Repita a etapa 3 para localizar e instalar o pacote **Microsoft.Net.Http**.
 
@@ -98,9 +98,9 @@ Depois de concluir as etapas em [Configuração e instalação](../cross-platfor
 
  As etapas a seguir então adicionam código para o PCL acessar e armazenar dados de serviço de clima:
 
-1. Para executar este exemplo, primeiro você precisa se inscrever para obter uma chave de API gratuita em [http://openweathermap.org/appid](http://openweathermap.org/appid).
+1. Para executar este exemplo, primeiro você precisa se inscrever para obter uma chave de API gratuita em [http://openweathermap.org/appid](https://openweathermap.org/appid).
 
-2. Clique com botão direito do mouse no projeto **WeatherApp** e selecione **Adicionar > Classe…**. Na caixa de diálogo **Adicionar Novo Item**, dê ao arquivo o nome **Weather.cs**. Você usará essa classe para armazenar dados do serviço de dados de clima.
+2. Clique com botão direito do mouse no projeto **WeatherApp** e selecione **Adicionar > Classe…** . Na caixa de diálogo **Adicionar Novo Item**, dê ao arquivo o nome **Weather.cs**. Você usará essa classe para armazenar dados do serviço de dados de clima.
 
 3. Substitua todo o conteúdo de **Weather.cs** pelo seguinte:
 
@@ -227,10 +227,10 @@ Depois de concluir as etapas em [Configuração e instalação](../cross-platfor
 
 ### <a name="design-the-look-and-feel-of-your-app"></a>Criar a aparência de seu aplicativo
 
-1. Em **Gerenciador de Soluções**, expanda a pasta **WeatherApp.Droid**>**Recursos**>**layout** e abra **Main.axml**. Isso abre o arquivo no designer visual. (Se for exibido um erro relacionado a Java, consulte esta [postagem de blog](http://forums.xamarin.com/discussion/32365/connection-to-the-layout-renderer-failed-in-xs-5-7-and-xamarinvs-3-9).)
+1. Em **Gerenciador de Soluções**, expanda a pasta **WeatherApp.Droid**>**Recursos**>**layout** e abra **Main.axml**. Isso abre o arquivo no designer visual. (Se for exibido um erro relacionado a Java, consulte esta [postagem de blog](https://forums.xamarin.com/discussion/32365/connection-to-the-layout-renderer-failed-in-xs-5-7-and-xamarinvs-3-9).)
 
     > [!TIP]
-    > Há muitos outros arquivos no projeto. Explorá-los está além do escopo deste tópico, mas se você quiser aprofundar-se na estrutura de um projeto Android um pouco mais, consulte a [Part 2 Deep Dive](http://developer.xamarin.com/guides/android/getting_started/hello,android/hello,android_deepdive/) (Parte 2, Aprofundamento) do tópico Hello Android (Olá, Android) em xamarin.com.
+    > Há muitos outros arquivos no projeto. Explorá-los está além do escopo deste tópico, mas se você quiser aprofundar-se na estrutura de um projeto Android um pouco mais, consulte a [Part 2 Deep Dive](https://docs.microsoft.com/xamarin/android/get-started/hello-android/hello-android-deepdive?pivots=windows) (Parte 2, Aprofundamento) do tópico Hello Android (Olá, Android) em xamarin.com.
 
 2. Selecione e exclua o botão padrão que aparece no designer.
 
@@ -256,9 +256,9 @@ Depois de concluir as etapas em [Configuração e instalação](../cross-platfor
     |**textStyle**|`bold`|
 
     > [!TIP]
-    > Observe que muitas propriedades não contêm uma lista suspensa de valores que você pode selecionar.  Pode ser difícil adivinhar qual valor de cadeia de caracteres usar para qualquer propriedade específica. Para obter sugestões, tente pesquisar o nome de uma propriedade na página [R.attr](http://developer.android.com/reference/android/R.attr.html).
+    > Observe que muitas propriedades não contêm uma lista suspensa de valores que você pode selecionar.  Pode ser difícil adivinhar qual valor de cadeia de caracteres usar para qualquer propriedade específica. Para obter sugestões, tente pesquisar o nome de uma propriedade na página [R.attr](https://developer.android.com/reference/android/R.attr.html).
     >
-    >  Além disso, uma pesquisa rápida na Web geralmente leva a uma página no [http://stackoverflow.com/](http://stackoverflow.com/) na qual outras pessoas já usaram a mesma propriedade.
+    >  Além disso, uma pesquisa rápida na Web geralmente leva a uma página no [http://stackoverflow.com/](https://stackoverflow.com/) na qual outras pessoas já usaram a mesma propriedade.
 
      Para referência, se você mudar para a exibição **Fonte**, deverá ver o seguinte código para esse elemento:
 
@@ -343,7 +343,7 @@ Depois de concluir as etapas em [Configuração e instalação](../cross-platfor
         android:width="165dp" />
     ```
 
-12. Agora você tem experiência suficiente para criar uma interface do usuário básica usando o designer Android. Você também pode criar uma interface do usuário adicionando marcação diretamente ao arquivo .asxml da página. Para criar o restante da interface do usuário dessa maneira, mude para a exibição Fonte no designer, então cole a seguinte marcação *abaixo* da marca `</RelativeLayout>` (sim, está abaixo da marca... esses elementos não estão contidos no ReleativeLayout).
+12. Agora você tem experiência suficiente para criar uma interface do usuário básica usando o Android Designer. Você também pode criar uma interface do usuário adicionando marcação diretamente ao arquivo .asxml da página. Para criar o restante da interface do usuário dessa maneira, mude para a exibição Fonte no designer, então cole a seguinte marcação *abaixo* da marca `</RelativeLayout>` (sim, está abaixo da marca... esses elementos não estão contidos no ReleativeLayout).
 
     ```xml
     <TextView
@@ -518,9 +518,9 @@ Depois de concluir as etapas em [Configuração e instalação](../cross-platfor
 
 2. Selecione um destino de emulador ou dispositivo apropriado e inicie o aplicativo pressionando a tecla F5.
 
-3. No dispositivo ou no emulador, digite um CEP válido dos Estados Unidos na caixa de edição (por exemplo: 60601) e pressione **obter clima**. Dados de clima para aquela região então são exibidos nos controles.
+3. No dispositivo ou no emulador, digite um CEP dos Estados Unidos válido na caixa de edição (por exemplo: 60601) e pressione **Obter Clima**. Dados de clima para aquela região então são exibidos nos controles.
 
-     ![Aplicativo de clima para Android e Windows Phone](../cross-platform/media/xamarin-getstarted-results.png "Xamarin_GetStarted_Results")
+     ![Aplicativo meteorológico para Android e Windows Phone](../cross-platform/media/xamarin-getstarted-results.png "Xamarin_GetStarted_Results")
 
 > [!TIP]
 > O código-fonte completo para esse projeto está no [repositório de amostras móveis no GitHub](https://github.com/xamarin/mobile-samples/tree/master/Weather).
@@ -585,7 +585,7 @@ Depois de concluir as etapas em [Configuração e instalação](../cross-platfor
 
 1. No designer, selecione o botão **Obter Clima**.
 
-2. Na janela **Propriedades**, escolha o botão de manipulador de eventos (![ícone Manipuladores de Eventos do Visual Studio](../cross-platform/media/blend-vs-eventhandlers-icon.png "blend_VS_EventHandlers_icon")).
+2. Na janela **Propriedades** , escolha o botão manipulador de eventos (ícone manipuladores de![eventos do Visual Studio](../cross-platform/media/blend-vs-eventhandlers-icon.png "blend_VS_EventHandlers_icon")).
 
      Esse ícone é exibido no canto superior da janela **Propriedades**.
 
@@ -624,7 +624,7 @@ Depois de concluir as etapas em [Configuração e instalação](../cross-platfor
 
 2. Inicie o aplicativo pressionando a tecla F5.
 
-3. No emulador do Windows Phone, digite um CEP válido dos Estados Unidos, na caixa de edição (por exemplo: 60601) e pressione **obter clima**. Dados de clima para aquela região então são exibidos nos controles.
+3. No emulador do Windows Phone, digite um CEP dos Estados Unidos válido na caixa de edição (por exemplo: 60601) e pressione **Obter Clima**. Dados de clima para aquela região então são exibidos nos controles.
 
      ![Versão do Windows do aplicativo em execução](../cross-platform/media/xamarin-getstarted-results-windows.png "Xamarin_GetStarted_Results_Windows")
 
@@ -636,11 +636,11 @@ Depois de concluir as etapas em [Configuração e instalação](../cross-platfor
 
  Estenda este exemplo adicionando a interface do usuário nativa para iOS. Para isso, você precisará conectar-se a um Mac na sua rede local que tenha o Xcode e o Xamarin instalados. Depois de fazer isso, você poderá usar o designer de iOS diretamente no Visual Studio. Consulte o [repositório de amostras móveis no GitHub](https://github.com/xamarin/mobile-samples/tree/master/Weather) para um aplicativo completo.
 
- Consulte também o passo a passo [Hello, iOS](http://developer.xamarin.com/guides/ios/getting_started/hello,_iOS/hello,iOS_quickstart/) (Olá, iOS) (xamarin.com). Nesta página, garanta que "Visual Studio" esteja selecionado no canto superior direito das páginas em xamarin.com para que o conjunto correto de instruções seja exibido.
+ Consulte também o passo a passo [Hello, iOS](https://docs.microsoft.com/xamarin/ios/get-started/hello-ios/hello-ios-quickstart?pivots=windows) (Olá, iOS) (xamarin.com). Nesta página, garanta que "Visual Studio" esteja selecionado no canto superior direito das páginas em xamarin.com para que o conjunto correto de instruções seja exibido.
 
  **Adicionar código específico da plataforma em um projeto compartilhado**
 
- O código compartilhado em uma PCL é neutro em termos de plataforma, pois a PCL é compilada uma vez e incluída em cada pacote do aplicativo específico da plataforma. Se você quiser escrever código compartilhado que use compilação condicional para isolar o código específico da plataforma, poderá usar um projeto *compartilhado*. Para obter mais detalhes, consulte [Opções de compartilhamento ode](http://developer.xamarin.com/guides/cross-platform/application_fundamentals/building_cross_platform_applications/sharing_code_options/) (xamarin.com).
+ O código compartilhado em uma PCL é neutro em termos de plataforma, pois a PCL é compilada uma vez e incluída em cada pacote do aplicativo específico da plataforma. Se você quiser escrever código compartilhado que use compilação condicional para isolar o código específico da plataforma, poderá usar um projeto *compartilhado*. Para obter mais detalhes, consulte [Opções de compartilhamento ode](https://docs.microsoft.com/xamarin/cross-platform/app-fundamentals/code-sharing) (xamarin.com).
 
 ## <a name="see-also"></a>Consulte também
- [Site de desenvolvedor do Xamarin](http://developer.xamarin.com/) [Centro de desenvolvimento do Windows](https://dev.windows.com/en-us) [Swift e C# pôster de referência rápida](https://aka.ms/scposter)
+ [Site de desenvolvedores do Xamarin](https://docs.microsoft.com/xamarin/) [centro de desenvolvimento Windows](https://dev.windows.com/en-us) [Swift e cartaz de C# referência rápida](https://aka.ms/scposter)

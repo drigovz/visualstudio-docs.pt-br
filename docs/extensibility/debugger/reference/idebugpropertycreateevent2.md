@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPropertyCreateEvent2 interface
 ms.assetid: 33b3082b-a42e-488a-a1e4-dadf506f922c
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3c5afdd5b1c3c8eaf62f9cd15ab2ea9474f9c040
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 83a7e0aaae01e21c67a6d030caebb476779779f7
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62869269"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66348619"
 ---
 # <a name="idebugpropertycreateevent2"></a>IDebugPropertyCreateEvent2
 Essa interface é enviada pelo mecanismo de depuração (DE) para o Gerenciador de sessão de depuração (SDM) quando ele cria uma propriedade que está associada um documento específico.

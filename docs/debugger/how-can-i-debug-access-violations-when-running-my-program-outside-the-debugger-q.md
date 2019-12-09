@@ -1,5 +1,5 @@
 ---
-title: Depurar violações de acesso ao executar um aplicativo fora do depurador | Microsoft Docs
+title: Depurar violações de acesso ao executar o aplicativo fora do depurador
 ms.custom: seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 657d8730f923d144d0691afe921ad5eaf9337a42
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f5009bae2d7679081e29ae8f46d72455beac7e11
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62895085"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72734579"
 ---
 # <a name="how-can-i-debug-access-violations-when-running-my-program-outside-the-debugger"></a>Como posso depurar violações de acesso ao executar meu programa fora do depurador?
 

@@ -1,18 +1,17 @@
 ---
 title: Benefício do App Center do Visual Studio em assinaturas do Visual Studio | Microsoft Docs
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 12/19/2018
+ms.author: lank
+manager: lank
+ms.date: 11/18/2019
 ms.topic: conceptual
 description: Saiba mais sobre o benefício Visual Studio App Center incluído em assinaturas do Visual Studio.
-searchscope: VS Subscription
-ms.openlocfilehash: 0d9f673e0b78b708883beb797809eac1303e2ff6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 243d277a5f6e143f472398538d025c18180d088d
+ms.sourcegitcommit: 5c9ca18eadc7ed0ed095cc5a3e1df40bbc13e70c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62810826"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74161923"
 ---
 # <a name="visual-studio-app-center-in-visual-studio-subscriptions"></a>Visual Studio App Center em assinaturas do Visual Studio
 
@@ -43,12 +42,14 @@ O App Center é o controle de missões para aplicativos.
 | Nível de Assinatura                                                 |     Canais                                            | Benefício                                                          | Renovável?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard, nuvem mensal)   | VL, Azure, Retail,  NFR<sup>1</sup> | Incluído       |  Sim          |
+| Visual Studio Enterprise com GitHub Enterprise  | VL | Incluído       |  Sim          |
 | Visual Studio Professional (Standard, nuvem mensal) | VL, Azure, Retail                                       | Incluído                                                            |Sim |
+| Visual Studio Professional com GitHub Enterprise | VL                                      | Incluído                                                            |Sim |
 | Visual Studio Test Professional (Padrão)                         | VL, Retail                                              | Incluído                                                            |Sim |
 | Plataformas MSDN (Padrão)                                          | VL, Retail                                              | Incluído                                                            |Sim |
-| Visual Studio Dev Essentials | NA  | Incluído                                                            |Sim |
+||
 
-<sup>1</sup> *Inclui:  NFR (Proibida a revenda), FTE, VSIP (Visual Studio Industry Partner), Imagine, MPN (Microsoft Partner Network), MCT Software & Services, MCT Software & Services Developer, BizSpark, MVP (Most Valuable Professional) e RD (Diretor Regional).*
+<sup>1</sup>  *inclui: não para revenda (NFR), FTE, Visual Studio Industry Partner (VSIP), imagine, Microsoft Partner Network (MPN), MCT software & Services, MCT software & Services Developer, BizSpark, profissional mais valioso (MVP), diretor regional (RD).*
 
 > [!NOTE]
 > A Microsoft não oferece mais assinaturas anuais do Visual Studio Professional e do Visual Studio Enterprise nas Assinaturas na Nuvem. Não haverá nenhuma alteração na experiência dos clientes existentes nem na capacidade de renovar, aumentar, diminuir ou cancelar suas assinaturas. Os novos clientes são incentivados a acessar [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) para explorar diferentes opções de compra do Visual Studio.
@@ -57,8 +58,8 @@ Não tem certeza de qual assinatura você está usando?  Conecte-se ao [https://
 
 ## <a name="frequently-asked-questions"></a>Perguntas frequentes
 
-### <a name="q--i-get-an-error-that-my-browser-is-unsupported--whats-wrong"></a>P:  Recebo um erro indicando que não há suporte para meu navegador.  Qual é o problema?
-R:  O App Center exige funcionalidades mais recentes que podem não ser fornecidas por alguns navegadores mais antigos.  Se o navegador não tiver suporte, siga estas etapas:
+### <a name="q--i-get-an-error-that-my-browser-is-unsupported--whats-wrong"></a>P: Eu recebo um erro de que meu navegador não tem suporte.  Qual é o problema?
+R: O App Center requer recursos mais recentes que podem não ser fornecidos por alguns navegadores mais antigos.  Se o navegador não tiver suporte, siga estas etapas:
 1. Abra um navegador diferente, como o Microsoft Edge ou as versões mais recentes do Google Chrome, do Firefox ou do Safari.
 2. Conecte-se ao Visual Studio [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) e entre.
 3. Agora, clique no link **Introdução** no bloco do App Center do Visual Studio.
@@ -67,7 +68,13 @@ Agora você deve ser capaz de acessar o portal do App Center e criar a conta.
 
 ## <a name="support-resources"></a>Recursos de suporte
 - Precisa de ajuda com o App Center?
-    - Obtenha orientação e respostas da Equipe do App Center no [Centro de Ajuda do App Center](https://intercom.help/appcenter/).
-    - Confira a [documentação completa do App Center](/appcenter/)
+  - Obtenha orientação e respostas da Equipe do App Center no [Centro de Ajuda do App Center](https://intercom.help/appcenter/).
+  - Confira a [documentação completa do App Center](/appcenter/)
 - Para obter assistência com vendas, assinaturas, contas e cobrança para Assinaturas do Visual Studio, entre em contato com o [Suporte a Assinaturas](https://visualstudio.microsoft.com/subscriptions/support/) do Visual Studio.
 - Tem alguma pergunta sobre o IDE do Visual Studio, o Azure DevOps Services ou outros produtos ou serviços do Visual Studio?  Acesse o [Suporte do Visual Studio](https://visualstudio.microsoft.com/support/).
+
+## <a name="next-steps"></a>Próximas etapas
+Certifique-se de ativar estes excelentes benefícios para aproveitar ao máximo sua assinatura do Visual Studio:
+- [Visual Studio](vs-ide-benefit.md)
+- [Azure DevOps](vs-azure-devops.md)
+- [Crédito individual do Azure DevTest](vs-azure.md)

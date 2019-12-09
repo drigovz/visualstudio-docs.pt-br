@@ -8,15 +8,15 @@ f1_keywords:
 - VS.ToolsOptionsPages.Environment.RoamingSettings
 ms.assetid: a3d2ea29-be5d-4012-9820-44b06adbb7dd
 caps.latest.revision: 13
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 54d7bac2db7b1fb2a0a9e8b830a13646acd5300d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 6459b6f65fd1e29fbadb01f6aa2fc51520b726b8
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63428263"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72646822"
 ---
 # <a name="synchronized-settings-in-visual-studio"></a>Configurações sincronizadas no Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,21 +26,21 @@ Quando usa a mesma conta de personalização para entrar no Visual Studio em vá
 ## <a name="synchronized-settings"></a>Configurações sincronizadas
  Por padrão, as seguintes configurações são definidas.
 
-- As configurações de desenvolvimento (você precisa selecionar um conjunto de configurações durante a primeira execução do Visual Studio, mas você pode alterar a seleção a qualquer momento. Para obter mais informações, consulte [Personalizando configurações de desenvolvimento no Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).)
+- As configurações de desenvolvimento (você precisa selecionar um conjunto de configurações durante a primeira execução do Visual Studio, mas você pode alterar a seleção a qualquer momento. Para obter mais informações, consulte [Personalizando configurações de desenvolvimento no Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).)
 
 - As seguintes opções nas páginas **Ferramentas &#124; Opções**:
 
-    - **Tema** e configurações de uso de maiúsculas da barra de menus, na página de opções **Ambiente**, **Geral**
+  - **Tema** e configurações de uso de maiúsculas da barra de menus, na página de opções **Ambiente**, **Geral**
 
-    - Todas as configurações da página de opções **Ambiente**, **Fontes e Cores**
+  - Todas as configurações da página de opções **Ambiente**, **Fontes e Cores**
 
-    - Todos os atalhos de teclado, na página de opções **Ambiente**, **Teclado**
+  - Todos os atalhos de teclado, na página de opções **Ambiente**, **Teclado**
 
-    - Todas as configurações da página de opções **Ambiente, Guias e Janelas**
+  - Todas as configurações da página de opções **Ambiente, Guias e Janelas**
 
-    - Todas as configurações da página de opções **Ambiente**, **Inicialização**
+  - Todas as configurações da página de opções **Ambiente**, **Inicialização**
 
-    - Todas as configurações das páginas de opções **Editor de Texto**
+  - Todas as configurações das páginas de opções **Editor de Texto**
 
 - Todas as configurações das páginas de opções Designer XAML
 
@@ -57,5 +57,5 @@ Quando usa a mesma conta de personalização para entrar no Visual Studio em vá
 > [!WARNING]
 > As configurações não são sincronizadas entre o Visual Studio 2013 e o Visual Studio 2015. Quando você abre o Visual Studio 2015 pela primeira vez, suas configurações do Visual Studio 2013 são migradas, mas não é possível migrá-las de volta ao Visual Studo 2013.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
  [Personalizando o IDE](../ide/personalizing-the-visual-studio-ide.md)

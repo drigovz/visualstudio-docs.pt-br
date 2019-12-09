@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - MODULE_SYMBOL_SEARCH_INFO structure
 ms.assetid: 432aff03-08a5-4c5a-b2d5-e212090fc70a
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6886373e521c411c3823b9f15138c8f798a373f4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: c521ebe321813013b83a951d4d2aa5f60fd1646d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62913811"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66346624"
 ---
 # <a name="modulesymbolsearchinfo"></a>MODULE_SYMBOL_SEARCH_INFO
 
@@ -40,14 +43,12 @@ public struct MODULE_SYMBOL_SEARCH_INFO {
 }
 ```
 
-## <a name="parameters"></a>Parâmetros
+## <a name="members"></a>Membros
 
-`dwValidFields`
-
+`dwValidFields`\
 Uma combinação de sinalizadores do [SYMBOL_SEARCH_INFO_FIELDS](../../../extensibility/debugger/reference/symbol-search-info-fields.md) enumeração que especifica o tipo de informações de pesquisa descritos nessa estrutura.
 
-`bstrVerboseSearchInfo`
-
+`bstrVerboseSearchInfo`\
 Caminho de pesquisa e os resultados concatenados em uma única cadeia de caracteres.
 
 ## <a name="remarks"></a>Comentários

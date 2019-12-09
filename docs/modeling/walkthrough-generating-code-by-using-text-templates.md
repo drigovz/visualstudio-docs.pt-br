@@ -1,36 +1,36 @@
 ---
-title: 'Passo a passo: Geração de código usando modelos de texto'
+title: 'Instruções passo a passo: gerenciando código usando modelos de texto'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - walkthroughs [text templates], generating application code
 - walkthroughs [text templates]
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 042d6b6c59489abcfbdcdd4dd10055ea4dedfff5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9d24a2ea1b614cb0ca82bdcf1c4954aba9a9174c
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62934333"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72984413"
 ---
-# <a name="walkthrough-generate-code-by-using-text-templates"></a>Passo a passo: Gerar código usando modelos de texto
+# <a name="walkthrough-generate-code-by-using-text-templates"></a>Passo a passo: gerar código usando modelos de texto
 
-Geração de código permite que você gerar o código do programa que é fortemente tipado e ainda pode ser facilmente alterado quando o modelo de origem é alterado. Compare isso com a técnica alternativa de escrever um programa completamente genérico que aceita um arquivo de configuração, que é mais flexível, mas os resultados no código que não é tão fácil de ler e alterar, nem tem tal bom desempenho. Este passo a passo demonstra esse benefício.
+A geração de código permite que você produza um código de programa fortemente tipado e, ainda assim, pode ser facilmente alterado quando o modelo de origem é alterado. Compare isso com a técnica alternativa de escrever um programa totalmente genérico que aceita um arquivo de configuração, que é mais flexível, mas resulta em código que não é tão fácil de ler e alterar, nem tem um bom desempenho. Este tutorial demonstra esse benefício.
 
-## <a name="typed-code-for-reading-xml"></a>Código digitado para a leitura de XML
+## <a name="typed-code-for-reading-xml"></a>Código digitado para ler XML
 
-O namespace System. XML fornece ferramentas abrangentes para carregar um documento XML e navegando-lo livremente na memória. Infelizmente, todos os nós têm o mesmo tipo, XmlNode. Portanto, é muito fácil cometer erros de programação, como esperando que o tipo de nó filho ou atributos errados errado.
+O namespace System. XML fornece ferramentas abrangentes para carregar um documento XML e, em seguida, navegar livremente na memória. Infelizmente, todos os nós têm o mesmo tipo, XmlNode. Portanto, é muito fácil fazer erros de programação, como esperar o tipo errado de nó filho ou os atributos incorretos.
 
-Neste projeto de exemplo, um modelo lê um arquivo XML de exemplo e gera classes que correspondem a cada tipo de nó. No código escrito manualmente, você pode usar essas classes para navegar o arquivo XML. Você também pode executar seu aplicativo em todos os outros arquivos que usam os mesmos tipos de nó. A finalidade do arquivo XML de exemplo é fornecer exemplos de todos os tipos de nó que você deseja que seu aplicativo para lidar com.
+Neste projeto de exemplo, um modelo lê um arquivo XML de exemplo e gera classes que correspondem a cada tipo de nó. No código escrito manualmente, você pode usar essas classes para navegar pelo arquivo XML. Você também pode executar seu aplicativo em qualquer outro arquivo que use os mesmos tipos de nó. A finalidade do arquivo XML de exemplo é fornecer exemplos de todos os tipos de nó com os quais você deseja que seu aplicativo lide.
 
 > [!NOTE]
-> O aplicativo [xsd.exe](http://go.microsoft.com/fwlink/?LinkId=178765), que está incluído no Visual Studio, pode gerar classes com rigidez de tipos de arquivos XML. O modelo mostrado aqui é fornecido como um exemplo.
+> O aplicativo [XSD. exe](/dotnet/standard/serialization/xml-schema-definition-tool-xsd-exe), que está incluído no Visual Studio, pode gerar classes fortemente tipadas a partir de arquivos XML. O modelo mostrado aqui é fornecido como um exemplo.
 
-Aqui está o arquivo de exemplo:
+Este é o arquivo de exemplo:
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -45,7 +45,7 @@ Aqui está o arquivo de exemplo:
 </catalog>
 ```
 
-No projeto que constrói este passo a passo, você pode escrever código como o seguinte e o IntelliSense mostrará os nomes de atributo e filho corretos enquanto você digita:
+No projeto que esta instrução constrói, você pode escrever um código como o seguinte, e o IntelliSense solicita o atributo e os nomes filho corretos conforme você digita:
 
 ```csharp
 Catalog catalog = new Catalog(xmlDocument);
@@ -59,7 +59,7 @@ foreach (Artist artist in catalog.Artist)
 }
 ```
 
-Compare isso com o código sem tipo que você pode escrever sem o modelo:
+Compare com o código não tipado que você pode escrever sem o modelo:
 
 ```csharp
 XmlNode catalog = xmlDocument.SelectSingleNode("catalog");
@@ -73,37 +73,37 @@ foreach (XmlNode artist in catalog.SelectNodes("artist"))
 }
 ```
 
-Na versão fortemente tipada, uma alteração ao esquema XML resulta em alterações para as classes. O compilador realça as partes do código do aplicativo que deve ser alterada. Na versão não tipado que usa o código XML genérico, não há nenhum tal suporte.
+Na versão com rigidez de tipos, uma alteração no esquema XML resulta em alterações nas classes. O compilador realça as partes do código do aplicativo que devem ser alteradas. Na versão não tipada que usa o código XML genérico, não há esse suporte.
 
-Neste projeto, um único arquivo de modelo é usado para gerar as classes que possibilitam a versão tipada.
+Neste projeto, um único arquivo de modelo é usado para gerar as classes que tornam a versão de tipo possível.
 
 ## <a name="set-up-the-project"></a>Configurar o projeto
 
-### <a name="create-or-open-a-c-project"></a>Criar ou abrir um projeto c#
+### <a name="create-or-open-a-c-project"></a>Criar ou abrir um C# projeto
 
-Você pode aplicar essa técnica para qualquer projeto de código. Este passo a passo usa um projeto c#, e para fins de teste, usamos um aplicativo de console.
+Você pode aplicar essa técnica a qualquer projeto de código. Este passo a passos C# usa um projeto e, para fins de teste, usamos um aplicativo de console.
 
-1. Sobre o **arquivo** menu, clique em **New** e, em seguida, clique em **projeto**.
+1. No menu **arquivo** , clique em **novo** e em **projeto**.
 
-2. Clique o **Visual c#** nó e, em seguida, no **modelos** painel, clique em **aplicativo de Console.**
+2. Clique no **nó C# Visual** e, no painel **modelos** , clique em **aplicativo de console.**
 
-### <a name="add-a-prototype-xml-file-to-the-project"></a>Adicionar um arquivo XML de protótipo para o projeto
+### <a name="add-a-prototype-xml-file-to-the-project"></a>Adicionar um arquivo XML de protótipo ao projeto
 
-A finalidade desse arquivo é fornecer exemplos dos tipos de nó XML que você deseja que o aplicativo seja capaz de ler. Pode ser um arquivo que será usado para testar seu aplicativo. O modelo produzirá uma classe c# para cada tipo de nó nesse arquivo.
+A finalidade desse arquivo é fornecer exemplos dos tipos de nó XML que você deseja que seu aplicativo possa ler. Pode ser um arquivo que será usado para testar seu aplicativo. O modelo produzirá uma C# classe para cada tipo de nó neste arquivo.
 
-O arquivo deve ser parte do projeto para que o modelo possa lê-lo, mas ele não será compilado no aplicativo compilado.
+O arquivo deve fazer parte do projeto para que o modelo possa lê-lo, mas ele não será compilado no aplicativo compilado.
 
-1. Na **Gerenciador de soluções**, clique com botão direito no projeto, clique em **Add** e, em seguida, clique em **Novo Item**.
+1. Em **Gerenciador de soluções**, clique com o botão direito do mouse no projeto, clique em **Adicionar** e em **novo item**.
 
-2. No **Adicionar Novo Item** caixa de diálogo, selecione **arquivo XML** do **modelos** painel.
+2. Na caixa de diálogo **Adicionar novo item** , selecione **arquivo XML** no painel **modelos** .
 
-3. Adicione seu conteúdo de exemplo para o arquivo.
+3. Adicione o conteúdo de exemplo ao arquivo.
 
-4. Para este passo a passo, nomeie o arquivo `exampleXml.xml`. Defina o conteúdo do arquivo a ser o XML mostrado na seção anterior.
+4. Para este passo a passos, nomeie o arquivo `exampleXml.xml`. Defina o conteúdo do arquivo como o XML mostrado na seção anterior.
 
 ### <a name="add-a-test-code-file"></a>Adicionar um arquivo de código de teste
 
-Adicione um arquivo c# ao seu projeto e escrever em um exemplo do código que você deseja ser capaz de gravar. Por exemplo:
+Adicione um C# arquivo ao seu projeto e grave-o em um exemplo do código que você deseja que seja capaz de escrever. Por exemplo:
 
 ```csharp
 using System;
@@ -123,47 +123,47 @@ namespace MyProject
 } } } } }
 ```
 
-Nesse estágio, esse código não será compilado. Conforme você escreve o modelo, você irá gerar classes que permitem que ele seja bem-sucedida.
+Neste estágio, esse código não será compilado. À medida que você escreve o modelo, você vai gerar classes que permitem que ele seja bem sucedido.
 
-Um teste mais abrangente, foi possível verificar a saída dessa função de teste baseada no conteúdo de conhecidos do arquivo XML de exemplo. Mas neste passo a passo, podemos estará satisfeitos quando o método de teste é compilado.
+Um teste mais abrangente pode verificar a saída dessa função de teste em relação ao conteúdo conhecido do arquivo XML de exemplo. Mas, neste guia de instruções, será satisfeita quando o método de teste for compilado.
 
-### <a name="add-a-text-template-file"></a>Adicione um arquivo de modelo de texto
+### <a name="add-a-text-template-file"></a>Adicionar um arquivo de modelo de texto
 
-Adicione um arquivo de modelo de texto e a extensão de saída do conjunto *. CS*.
+Adicione um arquivo de modelo de texto e defina a extensão de saída para *. cs*.
 
-1. Na **Gerenciador de soluções**, clique com botão direito no projeto, clique em **Add**e, em seguida, clique em **Novo Item**.
+1. Em **Gerenciador de soluções**, clique com o botão direito do mouse no projeto, clique em **Adicionar**e em **novo item**.
 
-2. No **Adicionar Novo Item** caixa de diálogo, selecione **modelo de texto** do **modelos** painel.
+2. Na caixa de diálogo **Adicionar novo item** , selecione **modelo de texto** no painel **modelos** .
 
     > [!NOTE]
-    > Certifique-se de que você adicione um modelo de texto e não um pré-processado modelo de texto.
+    > Certifique-se de adicionar um modelo de texto e não um modelo de texto pré-processado.
 
-3. No arquivo, na diretiva do modelo, altere o `hostspecific` atributo `true`.
+3. No arquivo, na diretiva de modelo, altere o atributo `hostspecific` para `true`.
 
-     Essa alteração permitirá que o código de modelo acessar os serviços do Visual Studio.
+     Essa alteração permitirá que o código do modelo tenha acesso aos serviços do Visual Studio.
 
-4. Na diretiva de saída, altere o atributo de extensão para ". cs", para que o modelo gera um arquivo c#. Em um projeto do Visual Basic, você alteraria-lo para "vb".
+4. Na diretiva de saída, altere o atributo de extensão para ". cs", para que o modelo gere C# um arquivo. Em um projeto Visual Basic, você o alteraria para ". vb".
 
-5. Salve o arquivo. Nesse estágio, o arquivo de modelo de texto deve conter estas linhas:
+5. Salve o arquivo. Neste estágio, o arquivo de modelo de texto deve conter estas linhas:
 
     ```
     <#@ template debug="false" hostspecific="true" language="C#" #>
     <#@ output extension=".cs" #>
     ```
 
-Observe que um arquivo. cs aparece no Gerenciador de soluções como uma subsidiária do arquivo de modelo. Você pode vê-lo clicando [+] ao lado do nome do arquivo de modelo. Esse arquivo é gerado a partir do arquivo de modelo sempre que você salve ou mova o foco para fora do arquivo de modelo. O arquivo gerado será compilado como parte do seu projeto.
+Observe que um arquivo. cs aparece em Gerenciador de Soluções como uma subsidiária do arquivo de modelo. Você pode vê-lo clicando em [+] ao lado do nome do arquivo de modelo. Esse arquivo é gerado a partir do arquivo de modelo sempre que você salva ou move o foco para longe do arquivo de modelo. O arquivo gerado será compilado como parte do seu projeto.
 
-Para sua conveniência, enquanto você desenvolve o arquivo de modelo, organize as janelas do arquivo de modelo e o arquivo gerado, de modo que você pode vê-los próximos uns dos outros. Isso permite que você veja imediatamente a saída do seu modelo. Você também observará que, quando o seu modelo gera o código c# inválido, erros serão exibidos na janela de mensagem de erro.
+Para sua conveniência enquanto você desenvolve o arquivo de modelo, organize as janelas do arquivo de modelo e o arquivo gerado para que você possa vê-las ao lado umas das outras. Isso permite que você veja imediatamente a saída do modelo. Você também observará que quando seu modelo gera código C# inválido, os erros aparecerão na janela de mensagem de erro.
 
-Todas as edições que você execute diretamente no arquivo gerado serão perdidas sempre que você salvar o arquivo de modelo. Você deve, portanto, evite editar o arquivo gerado ou editá-lo somente para testes curtos. Às vezes é útil tentar um curto fragmento de código no arquivo gerado, em que o IntelliSense está em operação, e, em seguida, copie-o para o arquivo de modelo.
+Qualquer edição que você executar diretamente no arquivo gerado será perdida sempre que você salvar o arquivo de modelo. Portanto, você deve evitar editar o arquivo gerado ou editá-lo apenas para experimentos curtos. Às vezes, é útil tentar um fragmento curto de código no arquivo gerado, em que o IntelliSense está em operação e, em seguida, copiá-lo para o arquivo de modelo.
 
 ## <a name="develop-the-text-template"></a>Desenvolver o modelo de texto
 
-Seguindo o melhor conselho sobre o desenvolvimento ágil, desenvolveremos o modelo no passo a passo, limpar alguns dos erros a cada incremento, até que o código de teste compila e executa corretamente.
+Seguindo o melhor conselho sobre o desenvolvimento ágil, desenvolveremos o modelo em etapas pequenas, limpando alguns dos erros em cada incremento, até que o código de teste seja compilado e executado corretamente.
 
-### <a name="prototype-the-code-to-be-generated"></a>O código a ser gerado de protótipo
+### <a name="prototype-the-code-to-be-generated"></a>Protótipo do código a ser gerado
 
-O código de teste requer uma classe para cada nó no arquivo. Portanto, alguns dos erros de compilação desaparecerá se você acrescentar essas linhas para o modelo e, em seguida, salvá-lo:
+O código de teste requer uma classe para cada nó no arquivo. Portanto, alguns dos erros de compilação desaparecerão se você acrescentar essas linhas ao modelo e, em seguida, salvá-las:
 
 ```csharp
 class Catalog {}
@@ -171,11 +171,11 @@ class Artist {}
 class Song {}
 ```
 
-Isso ajuda você a ver o que é necessário, mas as declarações devem ser geradas a partir de tipos de nós no arquivo XML de exemplo. Exclua essas linhas experimentais do modelo.
+Isso ajuda a ver o que é necessário, mas as declarações devem ser geradas a partir dos tipos de nó no arquivo XML de exemplo. Exclua essas linhas experimentais do modelo.
 
-### <a name="generate-application-code-from-the-model-xml-file"></a>Gerar o código do aplicativo do arquivo XML de modelo
+### <a name="generate-application-code-from-the-model-xml-file"></a>Gerar código do aplicativo a partir do arquivo XML do modelo
 
-Para ler o arquivo XML e gerar declarações de classe, substitua o modelo de conteúdo com o código de modelo a seguir:
+Para ler o arquivo XML e gerar declarações de classe, substitua o conteúdo do modelo pelo seguinte código de modelo:
 
 ```
 <#@ template debug="false" hostspecific="true" language="C#" #>
@@ -195,21 +195,21 @@ Para ler o arquivo XML e gerar declarações de classe, substitua o modelo de co
 #>
 ```
 
-Substitua o caminho do arquivo com o caminho correto para seu projeto.
+Substitua o caminho do arquivo pelo caminho correto do seu projeto.
 
-Observe os delimitadores de bloco de código `<#...#>`. Esses delimitadores de colchete um fragmento de código do programa que gera o texto. Os delimitadores de bloco expressão `<#=...#>` uma expressão que pode ser avaliada como uma cadeia de caracteres entre colchetes.
+Observe os delimitadores de bloco de código `<#...#>`. Esses delimitadores têm um fragmento do código do programa que gera o texto. Os delimitadores de bloco de expressão `<#=...#>` uma expressão que pode ser avaliada como uma cadeia de caracteres.
 
-Quando você estiver gravando um modelo que gera o código-fonte para seu aplicativo, você está lidando com dois textos de programa separado. O programa dentro dos delimitadores de bloco de código é executado sempre que você salva o modelo ou move o foco para outra janela. O texto que é gerada, que aparece fora os delimitadores, é copiado para o arquivo gerado e se torna parte do código do aplicativo.
+Ao escrever um modelo que gera código-fonte para seu aplicativo, você está lidando com dois textos de programa separados. O programa dentro dos delimitadores de bloco de código é executado toda vez que você salva o modelo ou move o foco para outra janela. O texto que ele gera, que aparece fora dos delimitadores, é copiado para o arquivo gerado e torna-se parte do código do aplicativo.
 
-O `<#@assembly#>` diretiva se comporta como uma referência, disponibilizando o assembly para o código de modelo. A lista de assemblies visto pelo modelo é separada da lista de referências no projeto de aplicativo.
+A diretiva `<#@assembly#>` se comporta como uma referência, tornando o assembly disponível para o código do modelo. A lista de assemblies vistos pelo modelo é separada da lista de referências no projeto de aplicativo.
 
-O `<#@import#>` diretiva atua como um `using` instrução, permitindo que você use os nomes curtos de classes no namespace importado.
+A diretiva `<#@import#>` atua como uma instrução `using`, permitindo que você use os nomes curtos de classes no namespace importado.
 
-Infelizmente, embora esse modelo gera o código, ele produz uma declaração de classe para cada nó no arquivo XML de exemplo, para que se houver várias instâncias do `<song>` nó, várias declarações da música classe serão exibida.
+Infelizmente, embora esse modelo gere código, ele produz uma declaração de classe para cada nó no arquivo XML de exemplo, de forma que, se houver várias instâncias do nó `<song>`, várias declarações da classe Song serão exibidas.
 
 ### <a name="read-the-model-file-then-generate-the-code"></a>Ler o arquivo de modelo e, em seguida, gerar o código
 
-Muitos modelos de texto seguem um padrão no qual a primeira parte do modelo lê o arquivo de origem e a segunda parte gera o modelo. Precisamos ler todo o arquivo de exemplo para resumir os tipos de nó que ele contém e, em seguida, gerar as declarações de classe. Outro `<#@import#>` é necessária para que podemos usar `Dictionary<>:`
+Muitos modelos de texto seguem um padrão no qual a primeira parte do modelo lê o arquivo de origem e a segunda parte gera o modelo. Precisamos ler todo o arquivo de exemplo para resumir os tipos de nó que ele contém e, em seguida, gerar as declarações de classe. Outra `<#@import#>` é necessária para que possamos usar `Dictionary<>:`
 
 ```
 <#@ template debug="false" hostspecific="true" language="C#" #>
@@ -237,11 +237,11 @@ Muitos modelos de texto seguem um padrão no qual a primeira parte do modelo lê
 #>
 ```
 
-### <a name="add-an-auxiliary-method"></a>Adicione um método auxiliar
+### <a name="add-an-auxiliary-method"></a>Adicionar um método auxiliar
 
-Um bloco de controle de recurso de classe é um bloco no qual você pode definir métodos auxiliares. O bloco é delimitado por `<#+...#>` e ele deve aparecer como o último bloco no arquivo.
+Um bloco de controle de recurso de classe é um bloco no qual você pode definir métodos auxiliares. O bloco é delimitado por `<#+...#>` e deve aparecer como o último bloco no arquivo.
 
-Se você preferir que os nomes de classe para começar com uma letra maiuscula, você pode substituir a última parte do modelo com o código de modelo a seguir:
+Se você preferir que os nomes de classe comecem com uma letra maiúscula, poderá substituir a última parte do modelo pelo seguinte código de modelo:
 
 ```
 // Generate the code
@@ -258,7 +258,7 @@ Se você preferir que os nomes de classe para começar com uma letra maiuscula, 
 #>
 ```
 
-Nesse estágio, gerado *. CS* arquivo contém as declarações a seguir:
+Nesse estágio, o arquivo *. cs* gerado contém as seguintes declarações:
 
 ```csharp
 public partial class Catalog {}
@@ -266,11 +266,11 @@ public partial class Artist {}
 public partial class Song {}
 ```
 
-Para obter mais detalhes, como as propriedades para os nós filho, atributos e texto interno podem ser adicionados usando a mesma abordagem.
+Mais detalhes, como propriedades para os nós filho, atributos e texto interno, podem ser adicionados usando a mesma abordagem.
 
 ### <a name="access-the-visual-studio-api"></a>Acessar a API do Visual Studio
 
-Definindo o `hostspecific` atributo do `<#@template#>` diretiva permite que o modelo obter acesso para a API do Visual Studio. O modelo pode usar isso para obter o local dos arquivos de projeto, para evitar o uso de um caminho de arquivo absoluto no código do modelo.
+Definir o atributo `hostspecific` da diretiva `<#@template#>` permite que o modelo obtenha acesso à API do Visual Studio. O modelo pode usar isso para obter o local dos arquivos de projeto, para evitar o uso de um caminho de arquivo absoluto no código do modelo.
 
 ```
 <#@ template debug="false" hostspecific="true" language="C#" #>
@@ -286,7 +286,7 @@ doc.Load(System.IO.Path.Combine(dte.ActiveDocument.Path, "exampleXml.xml"));
 
 ## <a name="complete-the-text-template"></a>Concluir o modelo de texto
 
-O conteúdo de modelo a seguir gera o código que permite que o código de teste compilar e executar.
+O conteúdo do modelo a seguir gera código que permite que o código de teste seja compilado e executado.
 
 ```
 <#@ template debug="false" hostspecific="true" language="C#" #>
@@ -380,9 +380,9 @@ using System;using System.Collections.Generic;using System.Linq;using System.Xml
 #>
 ```
 
-### <a name="run-the-test-program"></a>Execute o programa de teste
+### <a name="run-the-test-program"></a>Executar o programa de teste
 
-No principal do aplicativo de console, as linhas a seguir executará o método de teste. Pressione F5 para executar o programa no modo de depuração:
+Na principal do aplicativo de console, as linhas a seguir executarão o método de teste. Pressione F5 para executar o programa no modo de depuração:
 
 ```csharp
 using System;
@@ -402,31 +402,31 @@ namespace MyProject
 
 ### <a name="write-and-update-the-application"></a>Gravar e atualizar o aplicativo
 
-O aplicativo agora pode ser escrito em estilo fortemente tipado, usando as classes geradas em vez de usar o código XML genérico.
+O aplicativo agora pode ser escrito em estilo fortemente tipado, usando as classes geradas em vez de usar código XML genérico.
 
-Quando o esquema XML é alterada, novas classes podem ser geradas com facilidade. O compilador informa o desenvolvedor em que o código do aplicativo deve ser atualizado.
+Quando o esquema XML é alterado, novas classes podem ser facilmente geradas. O compilador informará ao desenvolvedor onde o código do aplicativo deve ser atualizado.
 
-Para regenerar as classes, quando o arquivo XML de exemplo é alterado, clique em **transformar todos os modelos** na **Gerenciador de soluções** barra de ferramentas.
+Para regenerar as classes quando o arquivo XML de exemplo for alterado, clique em **transformar todos os modelos** na barra de ferramentas **Gerenciador de soluções** .
 
 ## <a name="conclusion"></a>Conclusão
 
-Este passo a passo demonstra várias técnicas e os benefícios da geração de código:
+Este tutorial demonstra várias técnicas e benefícios da geração de código:
 
-- *Geração de código* é a criação de parte do código-fonte do aplicativo de um *modelo*. O modelo contém as informações em um formato adequado para o domínio do aplicativo e pode mudar ao longo do tempo de vida do aplicativo.
+- *Geração de código* é a criação de parte do código-fonte do seu aplicativo a partir de um *modelo*. O modelo contém informações em um formulário adequado ao domínio do aplicativo e pode ser alterado durante o tempo de vida do aplicativo.
 
-- Tipagem forte é uma vantagem da geração de código. Enquanto o modelo representa as informações em um formato mais adequado para o usuário, o código gerado permite que outras partes do aplicativo para lidar com as informações usando um conjunto de tipos.
+- A tipagem forte é um benefício da geração de código. Embora o modelo represente informações em um formulário mais adequado para o usuário, o código gerado permite que outras partes do aplicativo lidem com as informações usando um conjunto de tipos.
 
-- IntelliSense e o compilador ajudam você a criar código que adota o esquema do modelo, ao escrever novo código e quando o esquema é atualizado.
+- O IntelliSense e o compilador ajudam a criar códigos que aderem ao esquema do modelo, quando você escreve um novo código e quando o esquema é atualizado.
 
-- A adição de um único pouco complicadas, arquivo de modelo a um projeto pode fornecer esses benefícios.
+- A adição de um único arquivo de modelo incomplicado a um projeto pode fornecer esses benefícios.
 
-- Um modelo de texto pode ser desenvolvido e testado rapidamente e de forma incremental.
+- Um modelo de texto pode ser desenvolvido e testado de forma rápida e incremental.
 
-Neste passo a passo, o código do programa, na verdade, é gerado de uma instância do modelo, um exemplo representativo dos arquivos XML que o aplicativo processará. Em uma abordagem mais formal, o esquema XML seria a entrada para o modelo, na forma de um arquivo. xsd ou uma definição de linguagem específica do domínio. Essa abordagem tornaria mais fácil para o modelo determinar características como a multiplicidade de uma relação.
+Neste tutorial, o código do programa é realmente gerado a partir de uma instância do modelo, um exemplo representativo dos arquivos XML que o aplicativo processará. Em uma abordagem mais formal, o esquema XML seria a entrada para o modelo, na forma de um arquivo. xsd ou uma definição de linguagem específica de domínio. Essa abordagem tornaria mais fácil para o modelo determinar características como a multiplicidade de uma relação.
 
-## <a name="troubleshoot-the-text-template"></a>Solucionar problemas de modelo de texto
+## <a name="troubleshoot-the-text-template"></a>Solucionar problemas do modelo de texto
 
-Se você já viu os erros de compilação ou transformação de modelo na **lista de erros**, ou se o arquivo de saída não foi gerado corretamente, você pode solucionar o modelo de texto com as técnicas descritas [gerando Arquivos com o utilitário TextTransform](../modeling/generating-files-with-the-texttransform-utility.md).
+Se você tiver visto o modelo de transformação ou erros de compilação no **lista de erros**, ou se o arquivo de saída não tiver sido gerado corretamente, você poderá solucionar o problema do modelo de texto com as técnicas descritas em [gerando arquivos com o TextTransform Utilitário](../modeling/generating-files-with-the-texttransform-utility.md).
 
 ## <a name="see-also"></a>Consulte também
 

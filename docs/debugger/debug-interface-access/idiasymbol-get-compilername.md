@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 076b2fbcd4a1f65de56e52ffbf8b565ca122ffe1
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 3fd64d2f1a18df2d41a7d39f4ce474d601e194c7
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63402112"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740809"
 ---
-# <a name="idiasymbolgetcompilername"></a>IDiaSymbol::get_compilerName
-Retorna o nome do compilador usado para gerar a [Compiland](../../debugger/debug-interface-access/compiland.md).
+# <a name="idiasymbolget_compilername"></a>IDiaSymbol::get_compilerName
+Retorna o nome do compilador usado para gerar o [compiland](../../debugger/debug-interface-access/compiland.md).
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -31,13 +31,13 @@ HRESULT get_compilerName (
 ```
 
 #### <a name="parameters"></a>Parâmetros
- `pName` Ponteiro para um BSTR que conterá o nome do Unicode do compilador.
+ `pName` ponteiro para um BSTR que conterá o nome Unicode do compilador.
 
-## <a name="return-value"></a>Valor de retorno
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE` ou um código de erro.
 
 > [!NOTE]
-> Um valor de retorno `S_FALSE` significa que a propriedade não está disponível para o símbolo.
+> Um valor de retorno de `S_FALSE` significa que a propriedade não está disponível para o símbolo.
 
 ## <a name="remarks"></a>Comentários
 
@@ -46,7 +46,7 @@ HRESULT get_compilerName (
 |Requisito|Descrição|
 |-----------------|-----------------|
 |Cabeçalho:|dia2.h|
-|Versão:|V DIA SDK 8.0|
+|Versão:|DIA SDK v 8.0|
 
 ## <a name="see-also"></a>Consulte também
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

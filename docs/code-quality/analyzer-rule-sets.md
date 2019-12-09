@@ -1,61 +1,111 @@
 ---
-title: Conjuntos de regras do analisador
-ms.date: 04/22/2019
+title: Conjuntos de regras e arquivos editorconfig do FxCop Analyzer
+ms.date: 10/08/2019
 ms.topic: conceptual
 helpviewer_keywords:
-- analyzers, rule sets
+- analyzer packages, rule sets
 - rule sets for analyzers
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 32ed328cb399f0cd3e9a2a147d29fad56b845399
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a2cf385aaf24db2172a61ddbe7ecf77dcbe40f3c
+ms.sourcegitcommit: 08105865a9643fb20dce9b8b7580452cfbbe7ee7
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63387691"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74537779"
 ---
-# <a name="rule-sets-for-roslyn-analyzers"></a>Conjuntos de regras para analisadores de Roslyn
+# <a name="enable-a-category-of-rules"></a>Habilitar uma categoria de regras
 
-Conjuntos de regras predefinidas são incluídos com alguns pacotes NuGet do analisador. Por exemplo, os conjuntos de regras que são incluídos com o [fxcopanalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) pacote do NuGet analyzer (começando na versão 2.6.2) habilitar ou desabilitar regras com base em sua categoria, como segurança, nomenclatura, ou desempenho. Usando conjuntos de regras torna mais fácil ver rapidamente apenas essas violações de regra que pertencem a uma determinada categoria de regra.
+Os pacotes do Analyzer podem incluir [EditorConfig](use-roslyn-analyzers.md#rule-severity) predefinidos e arquivos de [conjunto de regras](using-rule-sets-to-group-code-analysis-rules.md) que tornam rápido e fácil habilitar uma categoria de regras, como segurança ou regras de design. O pacote do [Microsoft. CodeAnalysis. FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) NuGet Analyzer inclui os dois conjuntos de regras (começando na versão 2.6.2) e os arquivos EditorConfig (a partir da versão 2.9.5). Ao habilitar uma categoria específica de regras, você pode identificar problemas direcionados e condições específicas.
 
-Se você estiver migrando de análise de código estático "FxCop" herdada para analisadores de Roslyn, esses conjuntos de regras permitem que você continue usando as mesmas configurações de regra que você usou anteriormente.
+> [!NOTE]
+> A habilitação das regras do analisador e a definição de sua gravidade usando um arquivo EditorConfig tem suporte a partir do Visual Studio 2019 versão 16,3.
 
-## <a name="use-analyzer-rule-sets"></a>Usar conjuntos de regras do analisador
+O pacote NuGet Analyzer do FxCop inclui conjuntos de regras predefinidos e arquivos EditorConfig para as seguintes categorias de regra:
 
-Depois que você [instalar um pacote do NuGet analyzer](install-roslyn-analyzers.md), localize a conjunto de regras predefinidas seus *rulesets* directory. Por exemplo, se você fez referência a `Microsoft.CodeAnalysis.FxCopAnalyzers` analisador de pacote e em seguida, você pode localizar seu diretório de rulesets em *% USERPROFILE %\\.nuget\packages\microsoft.codeanalysis.fxcopanalyzers\\\<versão \>\rulesets*. A partir daí, você pode arrastar e soltar, ou copiar e colar, um ou mais dos conjuntos de regras ao seu projeto do Visual Studio no **Gerenciador de soluções**.
+- Todas as regras
+- Fluxos de dados
+- Design
+- Documentação
+- Globalização
+- Interoperabilidade
+- Manutenção
+- Nomenclatura
+- Desempenho
+- Portado do FxCop
+- Confiabilidade
+- Segurança
+- Uso
 
-Para tornar uma regra para definir a regra ativa definido para análise, clique com botão direito no projeto no **Gerenciador de soluções** e escolha **propriedades**. Nas páginas de propriedade do projeto, selecione a **análise de código** guia. Sob **executar este conjunto de regras**, selecione **procurar**e, em seguida, selecione o conjunto de regras desejado que você copiou para o diretório do projeto. Agora, você verá somente as violações de regra para as regras que estão habilitadas no conjunto de regras selecionado.
+Cada uma dessas categorias de regras tem um EditorConfig ou um arquivo de conjunto de regras para:
 
-Você também pode [personalizar um conjunto de regras predefinidas](how-to-create-a-custom-rule-set.md#create-a-custom-rule-set) com sua preferência. Por exemplo, você pode alterar a gravidade de uma ou mais regras para que sejam exibidos violações como erros ou avisos na **Error List**.
+- Habilitar todas as regras na categoria (e desabilitar todas as outras regras)
+- usar a configuração de gravidade e a habilitação padrão de cada regra (e desabilitar todas as outras regras)
 
-## <a name="available-rule-sets"></a>Conjuntos de regras disponíveis
+> [!TIP]
+> A categoria "todas as regras" tem um EditorConfig adicional ou um arquivo de conjunto de regras para desabilitar todas as regras. Use esse arquivo para eliminar rapidamente qualquer erro ou aviso do analisador em um projeto.
 
-Os conjuntos de regra do analisador predefinido incluem três conjuntos de regras que afetam todas as regras no pacote&mdash;que permite que todos eles, que desabilita todas elas e um que respeita as configurações de habilitação e a gravidade de cada da regra padrão:
+> [!TIP]
+> Se você estiver migrando da análise "FxCop" herdada para a análise de código baseada em .NET Compiler Platform, os arquivos de conjunto de regras e EditorConfig permitem que você continue usando configurações de regra semelhantes [àquelas usadas anteriormente](rule-set-reference.md).
 
-- AllRulesEnabled.ruleset
-- AllRulesDisabled.ruleset
-- AllRulesDefault.ruleset
+## <a name="predefined-editorconfig-files"></a>Arquivos EditorConfig predefinidos
 
-Além disso, há dois conjuntos de regras para cada categoria de regras no pacote, como desempenho ou segurança. Um conjunto de regras permite que todas as regras para a categoria e um conjunto de regras respeita as configurações de severidade e habilitação de padrão para cada regra na categoria.
+Os arquivos EditorConfig predefinidos para o pacote do analisador Microsoft. CodeAnalysis. FxCopAnalyzers estão localizados no diretório *% USERPROFILE%\\. nuget\packages\microsoft.codeanalysis.fxcopanalyzers\\\<versão\>\editorconfig* . Por exemplo, o arquivo EditorConfig para habilitar todas as regras de segurança está localizado em *% USERPROFILE%\\. nuget\packages\microsoft.codeanalysis.fxcopanalyzers\\\<versão\>\editorconfig\SecurityRulesEnabled\\. EditorConfig*.
 
-O [fxcopanalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) pacote do NuGet do analisador inclui conjuntos de regras para as seguintes categorias, que correspondem aos conjuntos de regras disponíveis para análise de código estático "FxCop" herdados:
+Copie o arquivo. editorconfig escolhido para o diretório raiz do projeto.
 
-- design
-- documentação
-- facilidade de manutenção
-- nomenclatura
-- desempenho
-- confiabilidade
-- segurança
-- uso
+## <a name="predefined-rule-sets"></a>Conjuntos de regras predefinidas
+
+Os arquivos de conjunto de regras predefinidos para o pacote do analisador Microsoft. CodeAnalysis. FxCopAnalyzers estão localizados no diretório *% USERPROFILE%\\. nuget\packages\microsoft.codeanalysis.fxcopanalyzers\\\<versão\>\rulesets* . Por exemplo, o arquivo de conjunto de regras para habilitar todas as regras de segurança está localizado em *% USERPROFILE%\\. nuget\packages\microsoft.codeanalysis.fxcopanalyzers\\\<versão\>\rulesets\SecurityRulesEnabled.RuleSet*.
+
+Copie um ou mais conjuntos de regras e cole-os no diretório que contém o projeto do Visual Studio ou diretamente no **Gerenciador de soluções**.
+
+Você também pode [Personalizar um conjunto de regras predefinidas](how-to-create-a-custom-rule-set.md) para sua preferência. Por exemplo, você pode alterar a severidade de uma ou mais regras para que as violações apareçam como erros ou avisos no **lista de erros**.
+
+### <a name="set-the-active-rule-set"></a>Definir o conjunto de regras ativas
+
+O processo de configuração do conjunto de regras ativo é um pouco diferente, dependendo se você tem um projeto padrão .NET Core/. NET ou um projeto .NET Framework.
+
+#### <a name="net-core"></a>.NET Core
+
+Para fazer com que uma regra defina o conjunto de regras ativas para análise no .NET Core ou .NET Standard projetos, adicione manualmente a propriedade **CodeAnalysisRuleSet** ao seu arquivo de projeto. Por exemplo, o trecho de código a seguir define `HelloWorld.ruleset` como o conjunto de regras ativo.
+
+```xml
+<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+  ...
+  <CodeAnalysisRuleSet>HelloWorld.ruleset</CodeAnalysisRuleSet>
+</PropertyGroup>
+```
+
+#### <a name="net-framework"></a>.NET Framework
+
+Para fazer com que uma regra defina o conjunto de regras ativas para análise em projetos .NET Framework:
+
+- Clique com o botão direito do mouse no projeto em **Gerenciador de soluções** e escolha **Propriedades**.
+
+- Nas páginas de propriedades do projeto, selecione a guia **análise de código** .
+
+::: moniker range="vs-2017"
+
+- Em **executar este conjunto de regras**, selecione **procurar**e, em seguida, selecione o conjunto de regras desejado que você copiou para o diretório do projeto.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+- Em **regras ativas**, selecione **procurar**e selecione o conjunto de regras desejado que você copiou para o diretório do projeto.
+
+::: moniker-end
+
+   Agora você só vê violações de regra para as regras que estão habilitadas no conjunto de regras selecionado.
 
 ## <a name="see-also"></a>Consulte também
 
 - [Perguntas frequentes sobre analisadores](analyzers-faq.md)
 - [Visão geral dos analisadores do .NET Compiler Platform](roslyn-analyzers-overview.md)
 - [Instalar analisadores](install-roslyn-analyzers.md)
-- [Usar analisadores](use-roslyn-analyzers.md)
+- [Configurar analisadores](use-roslyn-analyzers.md)
 - [Usar conjuntos de regras para agrupar regras de análise de código](using-rule-sets-to-group-code-analysis-rules.md)

@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c6c8e3523a49bd4fc22a86c9ec86b1e8cd2038e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8d9b27cee1c8df3eb26d64f4f860c33e0d4bf45f
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839245"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742030"
 ---
 # <a name="idiasessionfindsymbolbyrvaex"></a>IDiaSession::findSymbolByRVAEx
-Recupera um tipo de símbolo especificado que contém ou está mais próximo de um endereço especificado virtual relativo (RVA) e o deslocamento.
+Recupera um tipo de símbolo especificado que contém ou está mais próximo de um endereço virtual relativo (RVA) e deslocamento específico.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -36,21 +36,21 @@ HRESULT findSymbolByRVAEx ( 
 #### <a name="parameters"></a>Parâmetros
  `rva`
 
-[in] Especifica o RVA.
+no Especifica o RVA.
 
  `symtag`
 
-[in] Tipo de símbolo a ser localizada. Valores são tirados de [enumeração SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) enumeração.
+no Tipo de símbolo a ser encontrado. Os valores são obtidos da enumeração de [Enumeração SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) .
 
  `ppSymbol`
 
-[out] Retorna um [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) recuperado do objeto que representa o símbolo.
+fora Retorna um objeto [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) que representa o símbolo recuperado.
 
  `displacement`
 
-[out] Retorna um valor que especifica um deslocamento do endereço virtual relativo especificado em `rva`.
+fora Retorna um valor que especifica um deslocamento do endereço virtual relativo especificado em `rva`.
 
-## <a name="return-value"></a>Valor de retorno
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
 
 ## <a name="example"></a>Exemplo

@@ -3,17 +3,17 @@ title: Não é possível criar uma associação – os tipos de propriedade não
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 97ec5a04-6e23-45a2-9226-d77ead854392
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: b97903e0167ba2aba83ea0cfecdd6084c9270e85
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d7b2e0d777f0d499ca6fbf76b52aa028c940b2df
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62818132"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72648702"
 ---
 # <a name="cannot-create-an-association-ltassociation-namegt---property-types-do-not-match"></a>Não é possível criar uma associação &lt;nome da associação&gt; – os tipos de propriedade não correspondem
 
@@ -35,6 +35,5 @@ As propriedades listadas na mensagem não têm os mesmos tipos de dados.
 
 ## <a name="see-also"></a>Consulte também
 
-- [Mensagens do O/R Designer](../data-tools/o-r-designer-messages.md)
 - [Ferramentas do LINQ to SQL no Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
-- [Como: Criar uma associação entre classes LINQ to SQL (O/R Designer)](../data-tools/how-to-create-an-association-relationship-between-linq-to-sql-classes-o-r-designer.md)
+- [Como: criar uma associação entre classes de LINQ to SQL (O/R Designer)](../data-tools/how-to-create-an-association-relationship-between-linq-to-sql-classes-o-r-designer.md)

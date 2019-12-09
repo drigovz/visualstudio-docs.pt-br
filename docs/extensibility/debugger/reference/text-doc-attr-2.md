@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - TEXT_DOC_ATTR_2 enumeration
 ms.assetid: 2333b33b-042b-4ac6-9ebe-e66f95f52f51
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 20d8a92e7fcd8c02ee659b997bc4530c8570d3fa
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 24c5bc4a25bae6da1831f242501fdf0d6b66ca26
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63415906"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66322309"
 ---
 # <a name="textdocattr2"></a>TEXT_DOC_ATTR_2
 Descreve os atributos de um documento.
@@ -34,7 +37,8 @@ public const uint TEXT_DOC_ATTR_READONLY_2 = 0x00000001;
 ```
 
 ## <a name="members"></a>Membros
- TEXT_DOC_ATTR_READONLY_2 indica que o documento é somente leitura.
+ `TEXT_DOC_ATTR_READONLY_2`\
+ Indica que o documento é somente leitura.
 
 ## <a name="remarks"></a>Comentários
 

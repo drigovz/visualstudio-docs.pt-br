@@ -1,5 +1,5 @@
 ---
-title: Depurando aplicativos ClickOnce que usam System.Deployment.Application | Microsoft Docs
+title: Depurar aplicativos ClickOnce que usam System.Deployment.Application
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1efa919349535a2cb73ca80f2015ef0d0df93cd7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d70697e3523fcb12384cb51415f73ebd210f45c9
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62928996"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66262008"
 ---
 # <a name="debug-clickonce-applications-that-use-systemdeploymentapplication"></a>Depurar aplicativos ClickOnce que usam System.Deployment.Application
 Na [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)], [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implantação permite que você configure como um aplicativo é atualizado. No entanto, se você precisar usar e personalizar advanced [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] recursos de implantação, você precisará acessar o modelo de objeto de implantação fornecido pelo <xref:System.Deployment.Application>. Você pode usar o <xref:System.Deployment.Application> APIs para tarefas avançadas, como:

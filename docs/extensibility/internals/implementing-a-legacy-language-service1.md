@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - language services, managed
 ms.assetid: df638f24-166d-4b80-be82-c9c39ca7a556
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2fe405ea62562a9e7eb90948d92fcd5075887c8d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 626838b0e82846f66b817465fca2df353af42dd5
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63420492"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66315641"
 ---
 # <a name="implementing-a-legacy-language-service"></a>Implementando um serviço de linguagem herdado
 Você pode usar classes do framework de pacote gerenciado (MPF) para implementar um serviço de linguagem herdada que dá suporte a uma ampla variedade de recursos, como realce de sintaxe, correspondência de chaves e preenchimento do IntelliSense.

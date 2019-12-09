@@ -1,5 +1,5 @@
 ---
-title: 'CA2103: Revisar segurança imperativa | Microsoft Docs'
+title: 'CA2103: examinar a segurança imperativa | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,17 +12,17 @@ helpviewer_keywords:
 - ReviewImperativeSecurity
 ms.assetid: d24fde71-bdf6-46c0-8965-9a73dc33c1aa
 caps.latest.revision: 20
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 9d6fb1b40a63608aaa4ae92029c3a60a56157650
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b4abf0b15a4fbba1abc61572da8a2f6126c754f2
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58926461"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72652154"
 ---
-# <a name="ca2103-review-imperative-security"></a>CA2103: Examinar a segurança imperativa
+# <a name="ca2103-review-imperative-security"></a>CA2103: revisar segurança obrigatória
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -36,15 +36,15 @@ ms.locfileid: "58926461"
  Um método usa segurança obrigatória e pode construir a permissão usando as informações de estado ou os valores de retorno que podem ser alterados desde que a demanda esteja ativa.
 
 ## <a name="rule-description"></a>Descrição da Regra
- Segurança imperativa usa objetos gerenciados para especificar as permissões e as ações de segurança durante a execução de código, em comparação comparada a segurança declarativa, que usa atributos para armazenar as permissões e as ações nos metadados. Segurança obrigatória é muito flexível, pois você pode definir o estado de um objeto de permissão e selecione as ações de segurança usando as informações que não estão disponíveis até que o tempo de execução. Junto com que a flexibilidade vem o risco de que as informações de tempo de execução que você usa para determinar que o estado de uma permissão não permanece inalteradas desde que a ação está em vigor.
+ A segurança imperativa usa objetos gerenciados para especificar permissões e ações de segurança durante a execução do código, em comparação com a segurança declarativa, que usa atributos para armazenar permissões e ações em metadados. A segurança imperativa é muito flexível porque você pode definir o estado de um objeto de permissão e selecionar ações de segurança usando informações que não estão disponíveis até o tempo de execução. Junto com essa flexibilidade vem o risco de que as informações de tempo de execução usadas para determinar o estado de uma permissão não permaneçam inalteradas, desde que a ação esteja em vigor.
 
- Use a segurança declarativa sempre que possível. As solicitações declarativas são mais fáceis de entender.
+ Use a segurança declarativa sempre que possível. As demandas declarativas são mais fáceis de entender.
 
 ## <a name="how-to-fix-violations"></a>Como Corrigir Violações
- Examine as demandas de segurança obrigatória para certificar-se de que o estado da permissão não se baseia nas informações que podem ser alterados desde que a permissão está sendo usada.
+ Examine as demandas de segurança imperativas para garantir que o estado da permissão não dependa de informações que podem ser alteradas desde que a permissão esteja sendo usada.
 
 ## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos
- É seguro suprimir um aviso nessa regra, se a permissão não se baseia na alteração de dados. No entanto, é melhor alterar a demanda imperativa para seu equivalente declarativo.
+ É seguro suprimir um aviso dessa regra se a permissão não depender da alteração de dados. No entanto, é melhor alterar a demanda imperativa para seu equivalente declarativo.
 
 ## <a name="see-also"></a>Consulte também
- [Diretrizes de codificação segura](http://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177) [dados e modelagem](http://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6)
+ [Dados e modelagem de diretrizes de](https://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6) [codificação segura](https://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177)

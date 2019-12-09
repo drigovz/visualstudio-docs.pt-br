@@ -11,11 +11,11 @@ caps.latest.revision: 28
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 987536af051de4a66b3eccadb105fd98455ddf06
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60085890"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68196855"
 ---
 # <a name="designing-xml-command-table-vsct-files"></a>Criando tabela de comando XML (. Arquivos de VSCT)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -119,7 +119,7 @@ Um arquivo de tabela (. VSCT) do comando XML descreve o layout e aparência de i
   
  Durante o desenvolvimento, é possível que vários projetos de VSPackage seja criado e registrado na seção do registro experimental que pode levar a bagunça confusa no IDE. Para corrigir isso, você pode redefinir o hive experimental para as configurações padrão para remover todos os VSPackages e as alterações que fez o IDE. Para redefinir o hive experimental, use a ferramenta de CreateExpInstance.exe que vem com o SDK do Visual Studio. Você pode encontrá-lo em  
   
- **%PROGRAMFILES(x86)%\Visual Studio \<version> SDK\VisualStudioIntegration\Tools\Bin\CreateExpInstance.exe**  
+ **% PROGRAMFILES (x86) %\Visual Studio \<versão > SDK\VisualStudioIntegration\Tools\Bin\CreateExpInstance.exe**  
   
  Execute a ferramenta usando a linha de comando **CreateExpInstance /Reset**. Lembre-se de que essa ferramenta remove do hive experimental todos os os VSPackages registrados não são normalmente instalados com [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
   

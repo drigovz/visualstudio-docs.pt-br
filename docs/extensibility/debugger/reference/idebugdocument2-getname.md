@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDocument2::GetName
 ms.assetid: 6f09ff09-b0cf-4472-8fc8-143991f0ceb1
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3f1ef243afd607a565e2c7a8e6f557f0b9906c86
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 31eddcc07adc181e179c3f3edba669fff85fa565
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62875728"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66310272"
 ---
 # <a name="idebugdocument2getname"></a>IDebugDocument2::GetName
 Obtém o nome do documento em uma das várias formas.
@@ -38,14 +41,12 @@ int GetName( 
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `gnType`
+## <a name="parameters"></a>Parâmetros
+`gnType`\
+[in] Um valor a partir de [GETNAME_TYPE](../../../extensibility/debugger/reference/getname-type.md) enumeração que determina o tipo de nome a ser retornado.
 
- [in] Um valor a partir de [GETNAME_TYPE](../../../extensibility/debugger/reference/getname-type.md) enumeração que determina o tipo de nome a ser retornado.
-
- `pbstrFileName`
-
- [out] Retorna uma cadeia de caracteres que contém o nome do documento.
+`pbstrFileName`\
+[out] Retorna uma cadeia de caracteres que contém o nome do documento.
 
 ## <a name="return-value"></a>Valor de retorno
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.

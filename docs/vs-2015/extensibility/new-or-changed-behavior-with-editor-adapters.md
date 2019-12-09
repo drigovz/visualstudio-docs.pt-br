@@ -11,13 +11,13 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: fc7ddaf7ec67a1e33248d5ce424868849200d3e6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60073612"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68194174"
 ---
-# <a name="new-or-changed-behavior-with-editor-adapters"></a>Comportamento de novo ou alterado com adaptadores de Editor
+# <a name="new-or-changed-behavior-with-editor-adapters"></a>Comportamento novo ou alterado com adaptadores do Editor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Se você estiver atualizando o código escrito em relação a versões anteriores do editor de núcleo do Visual Studio, e você planeja usar o editor adaptadores (ou correções) em vez de usar a nova API, você deve estar ciente das seguintes diferenças no comportamento dos adaptadores de editor em relação ao editor principal do anterior.  

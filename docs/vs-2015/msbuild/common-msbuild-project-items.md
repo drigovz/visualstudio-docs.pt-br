@@ -17,11 +17,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8e36d5e50b15a5ede425715ec756f05ab8d014de
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59655802"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68160410"
 ---
 # <a name="common-msbuild-project-items"></a>Itens de projeto comuns do MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Em [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], um item é uma refe
 ### <a name="reference"></a>Referência  
  Representa uma referência de assembly (gerenciado) no projeto.  
   
-|Nome do Item|Descrição|  
+|Nome do Item|DESCRIÇÃO|  
 |---------------|-----------------|  
 |HintPath|Cadeia de caracteres opcional. O caminho relativo ou absoluto do assembly.|  
 |Nome|Cadeia de caracteres opcional. O nome de exibição do assembly, por exemplo, “System.Windows.Forms.”|  
@@ -46,7 +46,7 @@ Em [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], um item é uma refe
 ### <a name="comreference"></a>COMReference  
  Representa uma referência a um componente COM (não gerenciado) no projeto.  
   
-|Nome do Item|Descrição|  
+|Nome do Item|DESCRIÇÃO|  
 |---------------|-----------------|  
 |Nome|Cadeia de caracteres opcional. O nome de exibição do componente.|  
 |Guid|Cadeia de caracteres opcional. Um GUID para o componente, no formato {12345678-1234-1234-1234-1234567891234}.|  
@@ -59,14 +59,14 @@ Em [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], um item é uma refe
 ### <a name="comfilereference"></a>COMFileReference  
  Representa uma lista de bibliotecas de tipo que alimentam o destino ResolvedComreference.  
   
-|Nome do Item|Descrição|  
+|Nome do Item|DESCRIÇÃO|  
 |---------------|-----------------|  
 |WrapperTool|Cadeia de caracteres opcional. O nome da ferramenta wrapper usada no componente, por exemplo, “tlbimp”.|  
   
 ### <a name="nativereference"></a>NativeReference  
  Representa um arquivo de manifesto nativo ou uma referência a esse arquivo.  
   
-|Nome do Item|Descrição|  
+|Nome do Item|DESCRIÇÃO|  
 |---------------|-----------------|  
 |Nome|Cadeia de caracteres obrigatória. O nome de base do arquivo de manifesto.|  
 |HintPath|Cadeia de caracteres obrigatória. O caminho relativo do arquivo de manifesto.|  
@@ -74,7 +74,7 @@ Em [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], um item é uma refe
 ### <a name="projectreference"></a>ProjectReference  
  Representa uma referência a outro projeto.  
   
-|Nome do Item|Descrição|  
+|Nome do Item|DESCRIÇÃO|  
 |---------------|-----------------|  
 |Nome|Cadeia de caracteres opcional. O nome de exibição da referência.|  
 |Projeto|Cadeia de caracteres opcional. Um GUID para a referência, no formato {12345678-1234-1234-1234-1234567891234}.|  
@@ -83,7 +83,7 @@ Em [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], um item é uma refe
 ### <a name="compile"></a>Compilar  
  Representa os arquivos de origem do compilador.  
   
-|Nome do Item|Descrição|  
+|Nome do Item|DESCRIÇÃO|  
 |---------------|-----------------|  
 |DependentUpon|Cadeia de caracteres opcional. Especifica o arquivo do qual esse arquivo depende para compilar corretamente.|  
 |AutoGen|Booliano opcional. Indica se o arquivo foi gerado para o projeto pelo ambiente de desenvolvimento integrado (IDE) [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|  
@@ -94,7 +94,7 @@ Em [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], um item é uma refe
 ### <a name="embeddedresource"></a>EmbeddedResource  
  Representa os recursos a serem inseridos no assembly gerado.  
   
-|Nome do Item|Descrição|  
+|Nome do Item|DESCRIÇÃO|  
 |---------------|-----------------|  
 |DependentUpon|Cadeia de caracteres opcional. Especifica o arquivo do qual esse arquivo depende para compilar corretamente|  
 |Gerador|Cadeia de caracteres obrigatória. O nome de qualquer gerador de arquivo executado nesse item.|  
@@ -108,7 +108,7 @@ Em [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], um item é uma refe
 ### <a name="content"></a>Conteúdo  
  Representa os arquivos não compilados no projeto, mas pode ser inserido ou publicado junto com ele.  
   
-|Nome do Item|Descrição|  
+|Nome do Item|DESCRIÇÃO|  
 |---------------|-----------------|  
 |DependentUpon|Cadeia de caracteres opcional. Especifica o arquivo do qual esse arquivo depende para compilar corretamente.|  
 |Gerador|Cadeia de caracteres obrigatória. O nome de qualquer gerador de arquivo executado nesse item.|  
@@ -123,7 +123,7 @@ Em [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], um item é uma refe
 ### <a name="none"></a>Nenhum  
  Representa arquivos que não devem ter função no processo de build.  
   
-|Nome do Item|Descrição|  
+|Nome do Item|DESCRIÇÃO|  
 |---------------|-----------------|  
 |DependentUpon|Cadeia de caracteres opcional. Especifica o arquivo do qual esse arquivo depende para compilar corretamente.|  
 |Gerador|Cadeia de caracteres obrigatória. O nome de qualquer gerador de arquivo executado nesse item.|  
@@ -142,5 +142,5 @@ Em [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], um item é uma refe
 ### <a name="import"></a>Importar  
  Representa assemblies cujos namespaces devem ser importados pelo compilador [!INCLUDE[vbprvb](../includes/vbprvb-md.md)].  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Veja também  
  [Propriedades de projeto comuns do MSBuild](../msbuild/common-msbuild-project-properties.md)

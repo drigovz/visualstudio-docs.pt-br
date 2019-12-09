@@ -9,12 +9,12 @@ caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e5ff4290d0cffa99a9f476c543626c5aa15be87a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: e08a2f8fc93f91cafe40d2dc5e9bdb8b49770b3b
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436920"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67692840"
 ---
 # <a name="how-to-specify-symbol-file-locations-from-the-command-line"></a>Como: Especificar locais de arquivo de símbolo na linha de comando
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +48,7 @@ Para exibir informações de símbolo como nomes de função e números de linha
   
 2. Use a sintaxe a seguir para definir a variável de ambiente **_NT_SYMBOL_PATH** ou a opção /SymbolPath da VSPerfReport:  
   
-    **srv\\*** *LocalStore* **\*http://msdl.microsoft.com/downloads/symbols**  
+    **srv\*** *LocalStore* **\*http://msdl.microsoft.com/downloads/symbols**  
   
     em que *LocalStore* é o caminho do diretório local que você criou.  
   

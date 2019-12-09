@@ -13,11 +13,11 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c406e66b1008f0bb2aad95a427e1329d4269f1f6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58924150"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68158057"
 ---
 # <a name="opening-and-saving-project-items"></a>Abrindo e salvando itens de projeto
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,13 +31,13 @@ Quando você adiciona um novo tipo de projeto, você deve gerenciar a abertura e
  [Exibir arquivos usando o comando Abrir com](../../extensibility/internals/displaying-files-by-using-the-open-with-command.md)  
  Fornece uma explicação detalhada, passo a passo de como o IDE manipula a **abrir com** comando, solicitando a abertura de um arquivo que tem algumas opções de editores padrão.  
   
- [Como: Editores abertos específicos do projeto](../../extensibility/how-to-open-project-specific-editors.md)  
+ [Como: abrir editores específicos a um projeto](../../extensibility/how-to-open-project-specific-editors.md)  
  Fornece instruções passo a passo para especificar se os arquivos de um tipo específico em seu projeto devem ser abertos usando um editor específico do projeto.  
   
- [Como: Abrir editores padrão](../../extensibility/how-to-open-standard-editors.md)  
+ [Como: abrir editores padrão](../../extensibility/how-to-open-standard-editors.md)  
  Fornece instruções passo a passo para especificar como habilitar o IDE abrir um editor padrão para arquivos em seu tipo de projeto.  
   
- [Como: Abrir editores para documentos abertos](../../extensibility/how-to-open-editors-for-open-documents.md)  
+ [Como: abrir editores para documentos abertos](../../extensibility/how-to-open-editors-for-open-documents.md)  
  Fornece instruções passo a passo para abrir um editor específico do projeto para um arquivo aberto.  
   
  [Salvar um documento padrão](../../extensibility/internals/saving-a-standard-document.md)  

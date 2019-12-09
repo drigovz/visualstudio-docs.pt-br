@@ -1,5 +1,5 @@
 ---
-title: IDebugPort2::GetPortName | Microsoft Docs
+title: 'IDebugPort2:: getportname | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPort2::GetPortName
 ms.assetid: 4478b3d5-aa30-4105-8d05-e3bae2f8917a
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 412e1565c62a623e20c250b6d0937cd8ff58d67f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 0a382a77693fc8839721c0cdd139af2dd5208c69
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62871771"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72727717"
 ---
 # <a name="idebugport2getportname"></a>IDebugPort2::GetPortName
 Obtém o nome da porta.
@@ -40,11 +40,10 @@ int GetPortName( 
 ```
 
 ## <a name="parameters"></a>Parâmetros
- `pbstrName`\
+`pbstrName`\
+fora Retorna o nome da porta.
 
- [out] Retorna o nome da porta.
-
-## <a name="return-value"></a>Valor de retorno
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
 
 ## <a name="see-also"></a>Consulte também

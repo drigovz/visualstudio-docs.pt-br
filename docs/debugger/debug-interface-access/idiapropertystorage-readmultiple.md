@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ec66de4feea1a59ca1ef71f48bae49ed5ac2232
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9cd1e419e1d08120274fc627a672eb52331ca50f
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839531"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742881"
 ---
 # <a name="idiapropertystoragereadmultiple"></a>IDiaPropertyStorage::ReadMultiple
-Leituras especificada de propriedades do conjunto de propriedade atual.
+Lê as propriedades especificadas do conjunto de propriedades atual.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -35,21 +35,21 @@ HRESULT ReadMultiple( 
 #### <a name="parameters"></a>Parâmetros
  `cpspec`
 
-[in] Contagem de propriedades especificadas no `rgpspec` matriz. Se for zero, o método não retorna nenhuma propriedade, mas retornar `S_OK` como um código de êxito.
+no Contagem de propriedades especificadas na matriz de `rgpspec`. Se for zero, o método não retornará nenhuma propriedade, mas retornará `S_OK` como um código de êxito.
 
  `rgpspec`
 
-[in] Uma matriz de propriedades a serem lidos. Propriedades podem ser especificadas por uma ID de propriedade ou por um nome de cadeia de caracteres opcional. Não é necessário especificar as propriedades em uma ordem específica na matriz. A matriz pode conter propriedades duplicadas, resultando em valores de propriedade duplicados no retorno para propriedades simples. Propriedades simples não devem retornar o acesso negado em uma tentativa para abri-los em uma segunda vez. A matriz pode conter uma mistura de IDs de propriedade e IDs de cadeia de caracteres. Essa matriz deve ter pelo menos `cpspec` número de valores de propriedade.
+no Uma matriz de propriedades a ser lida. As propriedades podem ser especificadas por uma ID de propriedade ou por um nome de cadeia de caracteres opcional. Não é necessário especificar propriedades em qualquer ordem específica na matriz. A matriz pode conter Propriedades duplicadas, resultando em valores de propriedade duplicados no retorno para propriedades simples. As propriedades não simples devem retornar acesso negado em uma tentativa de abri-las uma segunda vez. A matriz pode conter uma mistura de IDs de propriedade e IDs de cadeia de caracteres. Essa matriz deve ter pelo menos `cpspec` número de valores de propriedade.
 
  `rgvar`
 
-[no, out] Uma matriz de `PROPVARIANT` estruturas (no namespace Microsoft.VisualStudio.OLE.Interop) a ser preenchida com valores para cada propriedade. A matriz deve ser pelo menos `cpspec` elementos de tamanho. O chamador não precisar inicializar os valores na matriz.
+[entrada, saída] Uma matriz de estruturas de `PROPVARIANT` (no namespace Microsoft. VisualStudio. OLE. Interop) a ser preenchida com valores para cada propriedade. A matriz deve ter pelo menos `cpspec` elementos de tamanho. O chamador não precisa inicializar os valores na matriz.
 
-## <a name="return-value"></a>Valor de retorno
- Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se um ou mais das propriedades não foi encontrado. Caso contrário, retornará um código de erro.
+## <a name="return-value"></a>Valor retornado
+ Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se uma ou mais das propriedades não foram encontradas. Caso contrário, retornará um código de erro.
 
 ## <a name="remarks"></a>Comentários
- Se uma propriedade não foi encontrado, a entrada correspondente na `rgvar` matriz contém uma `VARIANT` com o tipo de `VT_EMPTY`.
+ Se uma propriedade não for encontrada, a entrada correspondente na matriz de `rgvar` conterá um `VARIANT` com o tipo de `VT_EMPTY`.
 
 ## <a name="see-also"></a>Consulte também
 - [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)

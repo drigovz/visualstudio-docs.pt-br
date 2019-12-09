@@ -1,5 +1,5 @@
 ---
-title: Escrever uma função de relatório de erro de tempo de execução | Microsoft Docs
+title: Gravar uma função de relatório de erros em tempo de execução | Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -18,14 +18,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ff16a1443b05dc7021406cde03a4153f3234602
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b145e34b0dfeafbb7fde436dd561721962a89f3b
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62905896"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72731803"
 ---
-# <a name="how-to-write-a-run-time-error-reporting-function-c"></a>Como: Escrever uma função de relatório de erro em tempo de execução (C++)
+# <a name="how-to-write-a-run-time-error-reporting-function-c"></a>Como escrever uma função de relatório de erro em tempo de execução (C++)
 Uma função personalizada de relatório para erros em tempo de execução deve ter a mesma declaração que `_CrtDbgReportW`. Deve retornar um valor de 1 para o depurador.
 
 O exemplo a seguir mostra como definir uma função personalizada de relatório.
@@ -62,7 +62,7 @@ int MyErrorFunc(int errorType, const wchar_t *filename,
 ```
 
 ## <a name="example"></a>Exemplo
-O exemplo a seguir mostra uma função personalizada de relatório mais complexa. Neste exemplo, a instrução switch trata vários tipos de erro, conforme definido pelo parâmetro `reportType` de `_CrtDbgReportW`. Como você está substituindo `_CrtDbgReportW`, não poderá usar `_CrtSetReportMode`. A função deve tratar a saída. O primeiro argumento variável nessa função usa um número de erro em tempo de execução. Para obter mais informações, consulte [RTC_SetErrorType](/cpp/c-runtime-library/reference/rtc-seterrortype).
+O exemplo a seguir mostra uma função personalizada de relatório mais complexa. Neste exemplo, a instrução switch trata vários tipos de erro, conforme definido pelo parâmetro `reportType` de `_CrtDbgReportW`. Como você está substituindo `_CrtDbgReportW`, não poderá usar `_CrtSetReportMode`. A função deve tratar a saída. O primeiro argumento variável nessa função usa um número de erro em tempo de execução. Para obter mais informações, consulte [_RTC_SetErrorType](/cpp/c-runtime-library/reference/rtc-seterrortype).
 
 ```cpp
 #include <windows.h>

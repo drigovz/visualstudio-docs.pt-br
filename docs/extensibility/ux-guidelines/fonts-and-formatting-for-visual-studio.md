@@ -3,17 +3,17 @@ title: Fontes e formatação para o Visual Studio | Microsoft Docs
 ms.date: 04/26/2017
 ms.topic: conceptual
 ms.assetid: c3c3df69-83b4-4fd0-b5b1-e18c33f39376
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c0f451ed2ddb6b619e896a664e5592496e4af4de
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8634ab15a10b59fc21de390e0633d6d91793616d
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62431908"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67891032"
 ---
 # <a name="fonts-and-formatting-for-visual-studio"></a>Fontes e formatação para o Visual Studio
 ## <a name="BKMK_TheEnvironmentFont"></a> A fonte de ambiente
@@ -90,7 +90,8 @@ window.ShowModal()
 ### <a name="BKMK_Formatting"></a> Formatação de referência (dimensionamento/negrito)
  Algumas caixas de diálogo exigem um determinado texto em negrito ou um tamanho diferente de fonte de ambiente. Anteriormente, as fontes maiores do que a fonte de ambiente tivesse sido codificadas como "`environment font +2`" ou semelhantes. Usar os trechos de código fornecido, dar suporte a monitores com alto DPI e certifique-se de que o texto de exibição sempre aparece no peso (como Light ou Semilight) e no tamanho correto.
 
-> **Observação: Antes de aplicar formatação, verifique se você estiver seguindo as diretrizes encontradas nas [estilo de texto](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TextStyle).**
+> [!NOTE]
+> Antes de aplicar formatação, verifique se você estiver seguindo as diretrizes encontradas nas [estilo de texto](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TextStyle). * *
 
  Para dimensionar a fonte de ambiente, defina o estilo do TextBlock ou rótulo conforme indicado. Cada um desses trechos de código, quando usados corretamente, irá gerar a fonte correta, incluindo as variações de tamanho e peso apropriadas.
 
@@ -394,11 +395,11 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 
 - Títulos maiores (fonte de ambiente x 155% ou maior) podem ser coloridos para essas finalidades:
 
-    - Para fornecer o apelo visual a assinatura de IU do Visual Studio
+  - Para fornecer o apelo visual a assinatura de IU do Visual Studio
 
-    - Para chamar a atenção para uma área específica
+  - Para chamar a atenção para uma área específica
 
-    - Para oferecer alívio de cor do texto padrão ambiente/preto a cinza-escuro
+  - Para oferecer alívio de cor do texto padrão ambiente/preto a cinza-escuro
 
 - Cor nos títulos deve utilizar o Visual Studio marca cores existentes, principalmente a principal roxa, #FF68217A.
 
@@ -482,5 +483,5 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 
 ## <a name="see-also"></a>Consulte também
 
-- [MSDN: Fonts (Windows)](/windows/desktop/uxguide/vis-fonts)
+- [MSDN: Fontes (Windows)](/windows/desktop/uxguide/vis-fonts)
 - [MSDN: Texto da Interface do usuário (Windows)](/windows/desktop/uxguide/text-ui)

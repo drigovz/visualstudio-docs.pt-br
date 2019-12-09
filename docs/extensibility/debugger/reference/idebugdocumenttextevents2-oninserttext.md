@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDocumentTextEvents2::onInsertText
 ms.assetid: 6040181f-7288-4a42-953c-d23f74200431
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a8eee7a9225a54bb5ca965845b66aaa9adcdbe05
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: e0185e4f6c3accc4225dbfb9be4ce9311f8d7115
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62875306"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66330519"
 ---
 # <a name="idebugdocumenttextevents2oninserttext"></a>IDebugDocumentTextEvents2::onInsertText
 Notifica o pacote de depuração que o texto foi inserido no documento.
@@ -38,14 +41,12 @@ int onInsert( 
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `pos`
+## <a name="parameters"></a>Parâmetros
+`pos`\
+[in] Um [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) estrutura que indica onde o texto foi inserido.
 
- [in] Um [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) estrutura que indica onde o texto foi inserido.
-
- `dwNumToInsert`
-
- [in] Especifica o número de caracteres de texto que foram inseridas.
+`dwNumToInsert`\
+[in] Especifica o número de caracteres de texto que foram inseridas.
 
 ## <a name="return-value"></a>Valor de retorno
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.

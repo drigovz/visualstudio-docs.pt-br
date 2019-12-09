@@ -1,33 +1,33 @@
 ---
-title: 'Como: Dividir uma classe em classes parciais (Designer de Classe)'
+title: Como dividir uma classe em classes parciais (Designer de Classe)
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Class Designer, partial classes
 - partial classes, Class Designer
 ms.assetid: 6f6b0b30-3996-4569-9200-20482b3adf90
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 32ac7dc37787a91504988fc43636d49d2b3c9ce0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 42d2cf5c0fa5c08c51ebfbc94d9a03221df46788
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975145"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647700"
 ---
-# <a name="how-to-split-a-class-into-partial-classes-in-class-designer"></a>Como: Dividir uma classe em classes parciais no Designer de Classe
+# <a name="how-to-split-a-class-into-partial-classes-in-class-designer"></a>Como dividir uma classe em classes parciais no Designer de Classe
 
 Você pode usar a palavra-chave `partial` (`Partial` em Visual Basic) para dividir a declaração de uma classe ou estrutura entre várias declarações. Você pode usar quantas declarações parciais desejar.
 
 As declarações podem estar em um ou em vários arquivos de origem. Todas as declarações precisam estar no mesmo assembly e no mesmo namespace.
 
-Classes parciais são úteis em várias situações. Em um projeto grande, por exemplo, a separação de uma classe em vários arquivos permite que mais de um programador trabalhe no projeto ao mesmo tempo. Quando você está trabalhando com o código que o Visual Studio gera, é possível alterar a classe sem precisar recriar o arquivo de origem. (Exemplos de códigos gerados pelo Visual Studio incluem código de wrapper do serviço Web e do Windows Forms). Portanto, você pode criar um código que usa classes geradas automaticamente sem precisar modificar o arquivo que o Visual Studio cria.
+Classes parciais são úteis em várias situações. Em um projeto grande, por exemplo, a separação de uma classe em vários arquivos permite que mais de um programador trabalhe no projeto ao mesmo tempo. Quando você está trabalhando com o código que o Visual Studio gera, é possível alterar a classe sem precisar recriar o arquivo de origem. (Exemplos de código que o Visual Studio gera incluem Windows Forms e o código do wrapper do serviço Web.) Portanto, você pode criar código que usa classes geradas automaticamente sem precisar modificar o arquivo criado pelo Visual Studio.
 
 Existem dois tipos de métodos parciais. No C#, eles são chamados de declarar e implementar. No Visual Basic, são chamados de declaração e implementação.
 

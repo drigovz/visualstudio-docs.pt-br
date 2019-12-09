@@ -22,7 +22,7 @@ As RTVS (Ferramentas do R para Visual Studio) versão 1.3+, juntamente com uma i
 
 ## <a name="create-a-container"></a>Criar um contêiner
 
-1. Selecione o botão **Contêineres** no canto superior direito da janela **Espaços de trabalho** (**Ferramentas do R** > **Windows** > **Espaços de trabalho**). A janela informará se você não tiver instalado o Docker para Windows e fornecerá um link para o download. A instalação do Docker pode exigir uma reinicialização do computador.
+1. Selecione o botão **Contêineres** no canto superior direito da janela **Workspaces** (**Ferramentas do R** > **Windows** > **Workspaces**). A janela informará se você não tiver instalado o Docker para Windows e fornecerá um link para o download. A instalação do Docker pode exigir uma reinicialização do computador.
 
     ![Janela Workspaces nas Ferramentas do R para Visual Studio (VS2017) com o comando Contêineres](media/container-workspaces-window.png)
 

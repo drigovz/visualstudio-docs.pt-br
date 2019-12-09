@@ -8,14 +8,15 @@ ms.assetid: 9bd4bde2-2ca3-446c-9ccc-7421522e03ae
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 969945260ee453e84ae2aeec0f28559ca11933a0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: e91e231f72b006d2020c8b4d5d96c7e24fa1dd9c
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62777005"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779773"
 ---
 # <a name="call-tree-view---contention-data"></a>Modo de exibição de árvore de chamadas - Dados de contenção
 O modo de exibição de Árvore de Chamadas exibe os caminhos de execução de função que foram percorridos no aplicativo analisado. A raiz da árvore é o ponto de entrada do aplicativo ou do componente. Cada nó de função lista todas as funções que chamou, o número de vezes que a função foi bloqueada e por quanto tempo a função esteve bloqueada porque estava competindo por um recurso com outros threads ou processos.
@@ -53,7 +54,7 @@ O modo de exibição de Árvore de Chamadas exibe os caminhos de execução de f
 |**Arquivo de Origem**|O arquivo de origem que contém a definição dessa função.|
 
 ## <a name="see-also"></a>Consulte também
-- [Como: Personalizar as colunas da exibição de relatório](../profiling/how-to-customize-report-view-columns.md)
+- [Como: Personalizar colunas de exibição de relatório](../profiling/how-to-customize-report-view-columns.md)
 - [Modo de exibição de árvore de chamadas](../profiling/call-tree-view.md)
 - [Modo de exibição de árvore de chamadas – instrumentação](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)
 - [Modo de exibição de árvore de chamadas – amostragem](../profiling/call-tree-view-dotnet-memory-sampling-data.md)

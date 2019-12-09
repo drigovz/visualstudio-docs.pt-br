@@ -3,17 +3,17 @@ title: Extensões carregadas automaticamente de modo sincrônico
 ms.date: 02/16/2019
 ms.topic: conceptual
 ms.assetid: 822e3cf8-f723-4ff1-8467-e0fb42358a1f
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ad3831fb06d23f622f85a55f5efd0a5650ca5e47
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8b18642269326c516c2af0baef57cb306f60ae6a
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62799026"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66316709"
 ---
 # <a name="synchronously-autoloaded-extensions"></a>Extensões carregadas automaticamente de modo sincrônico
 
@@ -29,7 +29,7 @@ Os usuários podem:
 
 - Clique em **não mostrar esta mensagem novamente** para ignorar a notificação. Escolher essa opção também impede que todas as notificações futuras de forma síncrona carregado automaticamente extensões. Os usuários continuarão a receber notificações sobre outros recursos do Visual Studio.
 
-### <a name="performance-manager-dialog"></a>Caixa de diálogo Gerenciador de desempenho
+## <a name="performance-manager-dialog"></a>Caixa de diálogo Gerenciador de desempenho
 
 ![caixa de diálogo de Gerenciador de desempenho](media/performance-manager.png)
 
@@ -39,3 +39,17 @@ Todas as extensões de forma síncrona carregados todos os pacotes em todas as s
 * Os usuários podem contate seus fornecedores de extensão para o andamento da migração.
 
 Os autores de extensão podem encontrar instruções sobre como migrar pacotes para autoload assíncrono no [migrar para o AsyncPackage](https://github.com/Microsoft/VSSDK-Extensibility-Samples/tree/master/AsyncPackageMigration).
+
+## <a name="specify-synchronous-autoload-settings-using-group-policy"></a>Especificar configurações de autoload síncrona usando diretiva de grupo
+
+Iniciando o Visual Studio 2019 Update 1, por padrão, o autoload síncrona de blocos de instalação Visual Studio. Quando você habilita a política de grupo, você pode configurar o Visual Studio para permitir o autoload síncrona em computadores individuais. Para fazer isso, defina uma política baseada no Registro na seguinte chave:
+
+**HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\VisualStudio\SynchronousAutoload**
+
+Entrada = **permitido**
+
+Valor = (DWORD)
+* **0** autoload síncrona não é permitido
+* **1** é síncrona autoload permitido
+
+Para obter mais informações sobre as configurações de autoload síncrona na atualização 1 do Visual Studio de 2019, consulte o [comportamento síncrono de Autoload](https://aka.ms/AA52xzw) página.

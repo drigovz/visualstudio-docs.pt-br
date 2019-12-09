@@ -11,17 +11,17 @@ helpviewer_keywords:
 - Output window
 - Toolbox, removing controls
 ms.assetid: d8931d88-250e-4db4-963f-2c5b3e99b45f
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 45a88ccb599ce709cae5e58b4fd2678b34706362
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 442cac32e0a7103dc573cad707b53ced936c9907
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62969105"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72655765"
 ---
 # <a name="output-window"></a>janela Saída
 
@@ -65,9 +65,9 @@ Para exibir a Janela de **Saída** sempre que você criar um projeto, na caixa d
 
 Determinados recursos e comandos do IDE invocados na [janela Comando](../../ide/reference/command-window.md) fornecem sua saída para a janela de **Saída**. A saída de ferramentas externas como arquivos *.bat* e *.com*, que normalmente é exibida na janela de comando, é roteada para um painel de **Saída** quando você seleciona a opção **Usar Janela de Saída** em [Gerenciar ferramentas externas](../../ide/managing-external-tools.md). Muitos outros tipos de mensagens também podem ser exibidos em painéis **Saída**. Por exemplo, quando a sintaxe Transact-SQL em um procedimento armazenado é verificada em um banco de dados de destino, os resultados são exibidos na Janela de **Saída**.
 
-Você também pode programar seus próprios aplicativos para gravar mensagens de diagnóstico em tempo de execução em um painel **Saída**. Para fazer isso, use os membros da classe <xref:System.Diagnostics.Debug> ou <xref:System.Diagnostics.Trace> no namespace <xref:System.Diagnostics> da biblioteca de classes do .NET Framework. Os membros da classe <xref:System.Diagnostics.Debug> exibem a saída quando você compila as configurações de Depuração da solução ou do projeto; os membros da classe <xref:System.Diagnostics.Trace> exibem a saída quando você compila as configurações de Depuração ou de Versão. Para obter mais informações, confira [Mensagens de diagnóstico na Janela de Saída](../../debugger/diagnostic-messages-in-the-output-window.md).
+Você também pode programar seus próprios aplicativos para gravar mensagens de diagnóstico em tempo de execução em um painel **Saída**. Para fazer isso, use membros da classe <xref:System.Diagnostics.Debug> ou <xref:System.Diagnostics.Trace> no namespace <xref:System.Diagnostics> da API .NET. Os membros da classe <xref:System.Diagnostics.Debug> exibem a saída quando você compila as configurações de Depuração da solução ou do projeto; os membros da classe <xref:System.Diagnostics.Trace> exibem a saída quando você compila as configurações de Depuração ou de Versão. Para obter mais informações, confira [Mensagens de diagnóstico na Janela de Saída](../../debugger/diagnostic-messages-in-the-output-window.md).
 
-No C++, é possível criar etapas de build e eventos de build personalizados cujos avisos e erros são exibidos e contados no painel de **Saída**. Pressionando **F1** em uma linha de saída, você pode exibir um tópico da Ajuda apropriado. Para obter mais informações, confira [Formatar a saída de uma etapa de build personalizada](/cpp/ide/formatting-the-output-of-a-custom-build-step-or-build-event).
+No C++, é possível criar etapas de build e eventos de build personalizados cujos avisos e erros são exibidos e contados no painel de **Saída**. Pressionando **F1** em uma linha de saída, você pode exibir um tópico da Ajuda apropriado. Para obter mais informações, confira [Formatar a saída de uma etapa de build personalizada](/cpp/build/formatting-the-output-of-a-custom-build-step-or-build-event).
 
 ## <a name="scroll-behavior"></a>Comportamento de rolagem
 
@@ -76,7 +76,7 @@ Se você usar a rolagem automática na Janela de **Saída** e, em seguida, naveg
 ## <a name="see-also"></a>Consulte também
 
 - [Mensagens de diagnóstico na Janela de Saída](../../debugger/diagnostic-messages-in-the-output-window.md)
-- [Como: Controlar a Janela de Saída](https://msdn.microsoft.com/Library/91aebd15-8854-4a7a-9f7d-57376fb4e858)
+- [Como controlar a Janela de Saída](https://msdn.microsoft.com/Library/91aebd15-8854-4a7a-9f7d-57376fb4e858)
 - [Compilação e build](../../ide/compiling-and-building-in-visual-studio.md)
 - [Compreender configurações de build](../../ide/understanding-build-configurations.md)
 - [Visão geral da biblioteca de classes](/dotnet/standard/class-library-overview)

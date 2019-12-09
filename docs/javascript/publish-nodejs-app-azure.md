@@ -1,7 +1,7 @@
 ---
 title: Publicar um aplicativo Node.js no Serviço de Aplicativo do Linux
 description: Publique aplicativos Node.js criados no Visual Studio no Serviço de Aplicativo do Linux no Azure
-ms.date: 11/1/2018
+ms.date: 11/22/2019
 ms.topic: tutorial
 ms.devlang: javascript
 author: mikejo5000
@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: a06f2e530472756e2620c84cd872895dfc6fa453
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: c304aca5171e1addab9a941105f11fb534eaa5ff
+ms.sourcegitcommit: e825d1223579b44ee2deb62baf4de0153f99242a
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62841333"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "74474022"
 ---
 # <a name="publish-a-nodejs-application-to-azure-linux-app-service"></a>Publicar um aplicativo Node.js no Azure (Serviço de Aplicativo do Linux)
 
@@ -47,17 +47,17 @@ Neste tutorial, você aprenderá como:
     Se você ainda não instalou o Visual Studio 2017, acesse a página  [Downloads do Visual Studio](https://visualstudio.microsoft.com/downloads/)  para instalá-lo gratuitamente.
     ::: moniker-end
 
-    Caso precise instalar a carga de trabalho, mas já tiver o Visual Studio, acesse **Ferramentas** > **Obter Ferramentas e Funcionalidades...**, que abre o Instalador do Visual Studio. Escolha a carga de trabalho **Desenvolvimento de Node.js** e, em seguida, selecione **Modificar**.
+    Caso precise instalar a carga de trabalho, mas já tiver o Visual Studio, acesse **Ferramentas** > **Obter Ferramentas e Funcionalidades...** , que abre o Instalador do Visual Studio. Escolha a carga de trabalho **Desenvolvimento de Node.js** e, em seguida, selecione **Modificar**.
 
     ![Carga de trabalho Node.js no instalador do VS](../ide/media/quickstart-nodejs-workload.png)
 
-* Você precisa ter o tempo de execução do Node.js instalado.
+* Você precisa ter o runtime do Node.js instalado.
 
-    Se não o tiver instalado, instale a versão LTS do site do [Node.js](https://nodejs.org/en/download/). Em geral, o Visual Studio detecta automaticamente o tempo de execução do Node.js instalado. Se ele não detectar um tempo de execução instalado, você poderá configurar seu projeto para fazer referência ao tempo de execução instalado na página de propriedades (depois de criar um projeto, clique com botão direito do mouse no nó do projeto e escolha **Propriedades**).
+    Se não o tiver instalado, instale a versão LTS do site do [Node.js](https://nodejs.org/en/download/). Em geral, o Visual Studio detecta automaticamente o runtime do Node.js instalado. Se ele não detectar um runtime instalado, você poderá configurar seu projeto para fazer referência ao runtime instalado na página de propriedades (depois de criar um projeto, clique com botão direito do mouse no nó do projeto e escolha **Propriedades**).
 
 ## <a name="create-a-nodejs-project-to-run-in-azure"></a>Criar um projeto Node.js para execução no Azure
 
-1. Abra o Visual Studio.
+1. {1&gt;Abra o Visual Studio.&lt;1}
 
 1. Criar um novo aplicativo TypeScript Express.
 
@@ -65,11 +65,11 @@ Neste tutorial, você aprenderá como:
     Pressione **Esc** para fechar a janela de início. Digite **Ctrl + Q** para abrir a caixa de pesquisa, digite **Node.js** e, em seguida, escolha **Criar um novo Aplicativo Básico Azure Node.js Express 4** (TypeScript). Na caixa de diálogo que aparece, escolha **Criar**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Na barra de menus superior, escolha **Arquivo** > **Novo** > **Projeto**. No painel esquerdo da caixa de diálogo **Novo Projeto**, expanda **TypeScript** e escolha **Node.js**. No painel central, escolha **Aplicativo Azure Node.js Express 4 básico** e, em seguida, **OK**.
+    Na barra de menus superior, escolha **Arquivo** > **Novo** > **Projeto**. No painel esquerdo da caixa de diálogo **Novo Projeto**, expanda **TypeScript** e escolha **Node.js**. No painel central, escolha **Aplicativo Azure Node.js Express 4 básico** e, em seguida, escolha **OK**.
 
     ![Criar um aplicativo TypeScript Express](../javascript/media/azure-ts-express-app.png)
     ::: moniker-end
-    Se não vir o modelo de projeto **Aplicativo Azure Node.js Express 4 básico**, você deverá adicionar a carga de trabalho de **desenvolvimento do Node.js**. Confira instruções detalhadas nos [Pré-requisitos](#prerequisites).
+    Se não vir o modelo de projeto **Aplicativo Azure Node.js Express 4 básico**, você deverá adicionar a carga de trabalho de **desenvolvimento do Node.js**. Confira instruções detalhadas nos. [Pré-requisitos](#prerequisites).
 
     O Visual Studio criará o projeto e o abrirá no Gerenciador de Soluções (painel direito).
 
@@ -115,7 +115,7 @@ Para configurar o GitHub para o Visual Studio:
 
 3. Se necessário, crie um Grupo de Recursos e um plano do Serviço de Aplicativo para hospedar o novo aplicativo.
 
-4. Defina o **Sistema Operacional** como **Linux** e a **Pilha de Tempo de Execução** como a versão necessária do Node.js, conforme mostrado na ilustração.
+4. Defina o **Sistema Operacional** como **Linux** e a **Pilha de Runtime** como a versão necessária do Node.js, conforme mostrado na ilustração.
 
     ![Criar um Serviço de Aplicativo do Linux](../javascript/media/azure-create-appservice-annotated.png)
 
@@ -125,20 +125,22 @@ Para configurar o GitHub para o Visual Studio:
 
 6. Após a implantação, acesse a seção **Configurações de aplicativo** e adicione uma configuração com o nome `SCM_SCRIPT_GENERATOR_ARGS` e o valor `--node`.
 
-    ![Configurações de aplicativo](../javascript/media/azure-script-generator-args.png)
+    ![Configurações do aplicativo](../javascript/media/azure-script-generator-args.png)
 
     > [!WARNING]
     > O processo de implantação do Serviço de Aplicativo usa um conjunto de heurísticas para determinar qual tipo de aplicativo ele deve tentar executar. Se um arquivo *.sln* for detectado no conteúdo implantado, ele presumirá que um projeto baseado no MSBuild está sendo implantado. A configuração adicionada acima substitui essa lógica e especifica explicitamente que se trata de um aplicativo Node.js. Sem essa configuração, o aplicativo Node.js não será implantado se o arquivo *.sln* fizer parte do repositório que está sendo implantado no Serviço de Aplicativo.
 
-7. Após a implantação, abra o Serviço de Aplicativo e selecione **Opções de implantação**.
+7. Em **configurações do aplicativo**, adicione outra configuração com um nome de `WEBSITE_NODE_DEFAULT_VERSION` e um valor de `8.9.0`.
+
+8. Após a implantação, abra o Serviço de Aplicativo e selecione **Opções de implantação**.
 
     ![Opções de implantação](../javascript/media/azure-deployment-options.png)
 
-8. Clique em **Escolher fonte** e, em seguida, escolha **GitHub** e configure as permissões necessárias.
+9. Clique em **Escolher fonte** e, em seguida, escolha **GitHub** e configure as permissões necessárias.
 
     ![Permissões do GitHub](../javascript/media/azure-choose-source.png)
 
-9. Selecione o repositório e o branch a serem publicados e, em seguida, selecione **OK**.
+10. Selecione o repositório e o branch a serem publicados e, em seguida, selecione **OK**.
 
     ![Publicar no Serviço de Aplicativo do Linux](../javascript/media/azure-repo-and-branch.png)
 
@@ -173,7 +175,7 @@ Para configurar o GitHub para o Visual Studio:
 * Se o processo do node.exe se tornar inativo (ou seja, uma exceção sem tratamento ocorrer), o contêiner será reinicializado.
 * Quando o contêiner for iniciado, ele percorrerá várias heurísticas para descobrir como iniciar o processo do Node.js. Veja os detalhes da implementação em [generateStartupCommand.js](https://github.com/Azure-App-Service/node/blob/master/8.9.4/startup/generateStartupCommand.js).
 * Conecte-se ao contêiner em execução por meio do SSH para fazer investigações. Faça isso com facilidade usando o portal do Azure. Selecione o Serviço de Aplicativo e role a lista de ferramentas para baixo até chegar a **SSH**, na seção **Ferramentas de Desenvolvimento**.
-* Para ajudar com a solução de problemas, vá para as configurações de **Logs de diagnóstico** do Serviço de Aplicativo e altere a configuração de **Log de contêiner do Docker** de **Desativado** para **Sistema de Arquivos**. Os logs são criados no contêiner em */home/LogFiles/*_docker.log* e podem ser acessados na caixa usando o SSH ou FTP(S).
+* Para ajudar com a solução de problemas, vá para as configurações de **Logs de diagnóstico** do Serviço de Aplicativo e altere a configuração de **Log de contêiner do Docker** de **Desativado** para **Sistema de Arquivos**. Os logs são criados no contêiner em */home/LogFiles/* _docker.log* e podem ser acessados na caixa usando o SSH ou FTP(S).
 * Um nome de domínio personalizado pode ser atribuído ao site, em vez da URL *.azurewebsites.net atribuída por padrão. Para obter mais detalhes, confira o tópico [Mapear domínio personalizado](/azure/app-service/app-service-web-tutorial-custom-domain).
 * A implantação em um site de preparo para a execução de testes adicionais antes da migração para a produção é uma melhor prática. Para obter detalhes sobre como configurar isso, confira o tópico [Criar ambientes de preparo](/azure/app-service/web-sites-staged-publishing).
 * Confira as [Perguntas frequentes sobre o Serviço de Aplicativo do Linux](/azure/app-service/containers/app-service-linux-faq) para ver mais perguntas frequentes.

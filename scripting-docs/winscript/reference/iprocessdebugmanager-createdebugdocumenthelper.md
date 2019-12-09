@@ -1,5 +1,5 @@
 ---
-title: IProcessDebugManager::CreateDebugDocumentHelper | Microsoft Docs
+title: 'IProcessDebugManager:: CreateDebugDocumentHelper | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 38de1e828ccd1715fb83cc76c06ba837818d2af0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a009fa5174ab897116c02b91e376e2dc41d67600
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63002351"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577102"
 ---
 # <a name="iprocessdebugmanagercreatedebugdocumenthelper"></a>IProcessDebugManager::CreateDebugDocumentHelper
 Cria um novo auxiliar de documento de depuração para este aplicativo.  
@@ -38,12 +38,12 @@ HRESULT CreateDebugDocumentHelper(
   
 #### <a name="parameters"></a>Parâmetros  
  `punkOuter`  
- [in] Se o objeto retornado deve ser agregada, `punkOuter` é um ponteiro de interface para o controle `IUnknown`. Caso contrário, ele é um ponteiro nulo.  
+ no Se o objeto retornado for agregado, `punkOuter` será um ponteiro de interface para o `IUnknown` de controle. Caso contrário, é um ponteiro nulo.  
   
  `pddh`  
- [out] O objeto documento auxiliar de depuração para este aplicativo.  
+ fora O objeto auxiliar de documento de depuração para este aplicativo.  
   
-## <a name="return-value"></a>Valor de retorno  
+## <a name="return-value"></a>Valor retornado  
  O método retorna um `HRESULT`. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.  
   
 |Valor|Descrição|  

@@ -13,11 +13,11 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 24a1a1942031dac71ddad7b528f0e5df161c629e
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58923144"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68148622"
 ---
 # <a name="idebugprogramcreateevent2"></a>IDebugProgramCreateEvent2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ IDebugProgramCreateEvent2 : IUnknown
  O fornecedor de porta personalizada ou DE publica uma nova [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) interface chamando [PublishProgramNode](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogramnode.md).  
   
 ## <a name="requirements"></a>Requisitos  
- Header: msdbg.h  
+ Cabeçalho: msdbg.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   

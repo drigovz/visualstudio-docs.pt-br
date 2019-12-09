@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/11/2017
 ms.author: ghogen
-ms.openlocfilehash: d1e21642f8ff707c81dcf2e493e0784c1c04b7ed
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bcc290bfd9d646355479c2a9fe83a48f43dfa432
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62576269"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74298035"
 ---
 # <a name="how-to-manage-service-configurations-and-profiles"></a>Como gerenciar perfis e configurações de serviço
 ## <a name="overview"></a>Visão geral
@@ -27,7 +27,7 @@ Você pode criar várias configurações de serviço a usar para cada um dos seu
 
 Você pode adicionar, excluir, renomear e modificar essas configurações de serviço com base em suas necessidades. Você pode gerenciar essas configurações de serviço do Visual Studio, conforme mostrado na ilustração a seguir.
 
-![Gerenciar Configurações de Serviço](./media/vs-azure-tools-service-configurations-and-profiles-how-to-manage/manage-service-config.png)
+![Gerenciar configurações de serviço](./media/vs-azure-tools-service-configurations-and-profiles-how-to-manage/manage-service-config.png)
 
 Você também pode abrir a caixa de diálogo **Gerenciar Configurações** das páginas de propriedades da função. Para abrir as propriedades de uma função em seu projeto do Azure, abra o menu de atalho para essa função e, em seguida, escolha **Propriedades**. Na guia **Configurações**, expanda a lista **Configuração de Serviço** e selecione **Gerenciar** para abrir a caixa de diálogo **Gerenciar Configurações**.
 
@@ -58,7 +58,7 @@ Você também pode abrir a caixa de diálogo **Gerenciar Configurações** das p
     O nome do arquivo de configuração de serviço é modificado no projeto do Azure no Gerenciador de Soluções.
 
 ### <a name="to-change-a-service-configuration"></a>Para alterar uma configuração de serviço
-* Se você quiser alterar uma configuração de serviço, abra o menu de atalho da função específica que você deseja alterar no projeto do Azure e selecione **Propriedades**. Confira [Como configurar as funções de um serviço de nuvem do Azure com o Visual Studio](vs-azure-tools-configure-roles-for-cloud-service.md) para obter mais informações.
+* Se você quiser alterar uma configuração de serviço, abra o menu de atalho da função específica que você deseja alterar no projeto do Azure e selecione **Propriedades**. Consulte [como: configurar as funções para um serviço de nuvem do Azure com o Visual Studio](vs-azure-tools-configure-roles-for-cloud-service.md) para obter mais informações.
 
 ## <a name="make-different-setting-combinations-by-using-profiles"></a>Fazer diferentes combinações de configurações usando perfis
 Usando um perfil, você pode preencher automaticamente o **Assistente de Publicação** com diferentes combinações de configurações para diferentes finalidades. Por exemplo, você pode ter um perfil para depuração e outro para compilações de versão. Nesse caso, o perfil **Depurar** teria a opção **IntelliTrace** habilitada e a configuração **Depurar** selecionada; seu perfil **Versão** teria a opção **IntelliTrace** desabilitada e a configuração **Versão** selecionada. Você também pode usar perfis diferentes para implantar um serviço usando uma conta de armazenamento diferente.
@@ -74,13 +74,13 @@ Quando você executa o assistente pela primeira vez, um perfil padrão é criado
    
     A caixa de diálogo **Gerenciar perfis** é exibida, como mostra a ilustração a seguir.
    
-    ![Caixa de Diálogo Gerenciar Perfis](./media/vs-azure-tools-service-configurations-and-profiles-how-to-manage/manage-profiles.png)
+    ![Caixa de diálogo Gerenciar Perfis](./media/vs-azure-tools-service-configurations-and-profiles-how-to-manage/manage-profiles.png)
 4. Na lista **Nome**, escolha um perfil e selecione **Criar Cópia**.
 5. Escolha o botão **Fechar** .
    
     O novo perfil aparece na lista Perfil de destino.
 6. Na lista **Perfil de destino** , selecione o perfil que você acabou de criar. As configurações do Assistente de Publicação são preenchidas com as opções do perfil selecionado.
-7. Selecione os botões **Anterior** e **Próximo** para exibir cada página do Assistente de Publicação e personalize as configurações desse perfil. Confira [Assistente de Publicação de Aplicativo do Azure](http://go.microsoft.com/fwlink/p/?LinkID=623085) .
+7. Selecione os botões **Anterior** e **Próximo** para exibir cada página do Assistente de Publicação e personalize as configurações desse perfil. Confira [Assistente de Publicação de Aplicativo do Azure](https://go.microsoft.com/fwlink/p/?LinkID=623085) .
 8. Depois de concluir a personalização das configurações, clique em **Próximo** para voltar para a página Configurações. O perfil é salvo quando você publica o serviço usando essas configurações ou se você seleciona **Salvar** ao lado da lista de perfis.
 
 ### <a name="to-rename-or-delete-a-profile"></a>Para renomear ou excluir um perfil
@@ -93,9 +93,9 @@ Quando você executa o assistente pela primeira vez, um perfil padrão é criado
 ### <a name="to-change-a-profile"></a>Para alterar um perfil
 1. Abra o menu de atalho do projeto do Azure e selecione **Publicar**.
 2. Na lista **Perfil de destino** , selecione o perfil que você deseja alterar.
-3. Selecione os botões **Anterior** e **Próximo** para exibir cada página do Assistente de Publicação e altere as configurações desejadas. Confira [Assistente de Publicação de Aplicativo do Azure](http://go.microsoft.com/fwlink/p/?LinkID=623085) .
+3. Selecione os botões **Anterior** e **Próximo** para exibir cada página do Assistente de Publicação e altere as configurações desejadas. Confira [Assistente de Publicação de Aplicativo do Azure](https://go.microsoft.com/fwlink/p/?LinkID=623085) .
 4. Depois de concluir a alteração das configurações, selecione **Próximo** para voltar para a página **Configurações**.
 5. (Opcional) Selecione **Publicar** para publicar o serviço de nuvem usando as novas configurações. Se você não deseja publicar seu serviço de nuvem no momento e você fecha o Assistente de Publicação, o Visual Studio pergunta se você deseja salvar as alterações feitas ao perfil.
 
 ## <a name="next-steps"></a>Próximas etapas
-Para obter informações sobre como configurar outras partes do seu projeto do Azure do Visual Studio, consulte [Configurando um projeto do Azure](http://go.microsoft.com/fwlink/p/?LinkID=623075)
+Para obter informações sobre como configurar outras partes do seu projeto do Azure do Visual Studio, consulte [Configurando um projeto do Azure](https://go.microsoft.com/fwlink/p/?LinkID=623075)

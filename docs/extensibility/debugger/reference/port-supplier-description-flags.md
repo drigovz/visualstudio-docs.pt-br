@@ -5,17 +5,20 @@ ms.topic: reference
 helpviewer_keywords:
 - PORT_SUPPLIER_DESCRIPTION_FLAGS enumeration
 ms.assetid: 5acee0ee-3a20-41c9-a7dc-0dadae6a5ba5
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1ca6f9dc8c2801a36cab5e90227df201f50d3d93
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 01cf70b473d2c430741df2021d27b3047e782b79
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62864951"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66309480"
 ---
 # <a name="portsupplierdescriptionflags"></a>PORT_SUPPLIER_DESCRIPTION_FLAGS
 
@@ -38,10 +41,9 @@ public enum enum_PORT_SUPPLIER_DESCRIPTION_FLAGS
 };
 ```
 
-## <a name="terms"></a>Termos
+## <a name="fields"></a>Campos
 
-`PSDFLAG_SHOW_WARNING_ICON`
-
+`PSDFLAG_SHOW_WARNING_ICON`\
 Se selecionado, o ícone de aviso será exibido na interface do usuário.
 
 ## <a name="remarks"></a>Comentários

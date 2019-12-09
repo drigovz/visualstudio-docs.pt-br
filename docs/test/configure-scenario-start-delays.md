@@ -5,15 +5,15 @@ ms.topic: conceptual
 helpviewer_keywords:
 - load tests, scenarios, start delays
 ms.assetid: 2f634fba-8dfa-4c7a-a8b9-be867b78d16a
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: e053ee01d60d1ce3dcae10e044bb642e11f90dd7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: d6144312741b2ef75d0b06979495571d97baf0b7
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62963774"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72665181"
 ---
 # <a name="configure-scenario-start-delays-in-load-tests"></a>Configurar atrasos de início do cenário em testes de carga
 
@@ -32,9 +32,9 @@ Você pode especificar um atraso antes do início de um cenário em um teste de 
 > [!NOTE]
 > Para obter uma lista completa das propriedades de cenário de teste de carga e suas descrições, confira [Propriedades do cenário de teste de carga](../test/load-test-scenario-properties.md).
 
- Um exemplo de situação em que você talvez queira usar a propriedade **Atrasar tempo de início** é quando precisa que um cenário comece a produzir itens consumidos por outro cenário. Você pode atrasar o cenário de consumo para habilitar o cenário de produção a fim de popular alguns dados.
+Um exemplo de situação em que você talvez queira usar a propriedade **Atrasar tempo de início** é quando precisa que um cenário comece a produzir itens consumidos por outro cenário. Você pode atrasar o cenário de consumo para habilitar o cenário de produção a fim de popular alguns dados.
 
- Outro exemplo é que você talvez tenha um cenário executado apenas em uma determinada hora do dia. Assim, você deseja atrasar o início do cenário para simular isso.
+Outro exemplo é que você talvez tenha um cenário executado apenas em uma determinada hora do dia. Assim, você deseja atrasar o início do cenário para simular isso.
 
 > [!NOTE]
 > Para obter uma lista completa das propriedades das configurações de execução e suas descrições, confira [Propriedades do cenário de teste de carga](../test/load-test-scenario-properties.md).
@@ -62,7 +62,7 @@ Você pode especificar um atraso antes do início de um cenário em um teste de 
 
 A propriedade **Desabilitar durante o aquecimento** é definida usando a janela **Propriedades**. A edição das propriedades do cenário de teste da carga é definida pelo Editor de testes de carga.
 
- A propriedade **Desabilitar durante aquecimento** é usada para indicar se o cenário deve ou não ser executado durante o período de aquecimento especificado na propriedade **Atrasar tempo de início**. Para obter mais informações, examine o procedimento anterior [Especificar o tempo de início do atraso de um cenário](#specify-the-delay-start-time-of-a-scenario).
+A propriedade **Desabilitar durante aquecimento** é usada para indicar se o cenário deve ou não ser executado durante o período de aquecimento especificado na propriedade **Atrasar tempo de início**. Para obter mais informações, examine o procedimento anterior [Especificar o tempo de início do atraso de um cenário](#specify-the-delay-start-time-of-a-scenario).
 
 > [!NOTE]
 > Para obter uma lista completa das propriedades das configurações de execução e suas descrições, confira [Propriedades do cenário de teste de carga](../test/load-test-scenario-properties.md).

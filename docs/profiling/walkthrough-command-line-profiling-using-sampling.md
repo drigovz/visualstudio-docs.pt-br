@@ -9,16 +9,17 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c76fd1d18b41073bf92ed18dadeeeb3a90c9209
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 09272c8cf2dff02d3be024b9c3eeab8b51f56df7
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433607"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74777966"
 ---
-# <a name="walkthrough-command-line-profiling-using-sampling"></a>Passo a passo: Criação de perfil de linha de comando usando amostragem
+# <a name="walkthrough-command-line-profiling-using-sampling"></a>Passo a passo: criação de perfil de linha de comando usando amostragem
 
 Este passo a passo demonstra como criar um perfil de um aplicativo usando ferramentas de linha de comando e amostragem para identificar problemas de desempenho.
 
@@ -29,11 +30,11 @@ Neste passo a passo, você seguirá estas etapas:
 - Crie o perfil de um aplicativo usando ferramentas de linha de comando e amostragem.
 - Analise os resultados da criação de perfil amostrada para localizar e corrigir problemas de desempenho.
 
-## <a name="prerequisites"></a>Pré-requisitos
+## <a name="prerequisites"></a>{1&gt;{2&gt;Pré-requisitos&lt;2}&lt;1}
 
 - Compreensão intermediária de [!INCLUDE[csharp_current_short](../misc/includes/csharp_current_short_md.md)]
 - Compreensão intermediária para trabalhar com ferramentas de linha de comando
-- Uma cópia de [amostra do PeopleTrax](/visualstudio/profiling/performance-explorer)
+- Uma cópia de [amostra do PeopleTrax](performance-explorer.md)
 - Para trabalhar com as informações fornecidas pela criação de perfil, é bom ter as informações de símbolo de depuração disponíveis.
 
 ## <a name="command-line-profiling-using-the-sampling-method"></a>Criação de perfil de linha de comando usando o método de amostragem

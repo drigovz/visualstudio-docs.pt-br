@@ -47,15 +47,15 @@ helpviewer_keywords:
 - miscellaneous files
 ms.assetid: aeaf56cb-c2dd-47f6-b012-23b84b7a7254
 caps.latest.revision: 41
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: cd93fdc527e38b820bc7df6387ca6f8e9078bfd6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 0b1783adadd1bfab32bfbbdcfb5ae28df7c0aae4
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045323"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661192"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Soluções e projetos no Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -70,17 +70,17 @@ Quando você cria um app, aplicativo, site da Web, aplicativo Web, script, plug-
 
  O diagrama a seguir mostra a relação entre projetos e soluções e os itens que eles contêm logicamente.
 
- ![Soluções e projetos do Visual Studio](../ide/media/vs2015-project-diagram.png "vs2015_project_diagram")
+ ![Projetos e soluções do Visual Studio](../ide/media/vs2015-project-diagram.png "|::ref1::|")
 
  Também é possível criar modelos de item e de projeto personalizados. Para obter mais informações, consulte [Criando modelos de item e de projeto](../ide/creating-project-and-item-templates.md).
 
 ## <a name="creating-new-projects"></a>Criando novos projetos
- A maneira mais fácil de criar um novo projeto é começar com um modelo de projeto predefinido, que consiste em um conjunto básico de arquivos de código, arquivos de configuração, configurações e ativos gerados previamente que permitem que você comece a criar um tipo específico de aplicativo ou site em uma linguagem de programação específica. Esses modelos são o que você vê na **caixa de diálogo Novo Projeto** quando você escolhe **Arquivo &#124; Novo &#124; Projeto** ou **Arquivo &#124; Novo &#124; Site** no menu principal e, em seguida, navega. Para obter mais informações, consulte [Criando soluções e projetos](../ide/creating-solutions-and-projects.md) e [NIB Criando projetos de modelos](http://msdn.microsoft.com/7c36d86a-6b79-4480-8228-0f925f1204b2).
+ A maneira mais fácil de criar um novo projeto é começar com um modelo de projeto predefinido, que consiste em um conjunto básico de arquivos de código, arquivos de configuração, configurações e ativos gerados previamente que permitem que você comece a criar um tipo específico de aplicativo ou site em uma linguagem de programação específica. Esses modelos são o que você vê na **caixa de diálogo Novo Projeto** quando você escolhe **Arquivo &#124; Novo &#124; Projeto** ou **Arquivo &#124; Novo &#124; Site** no menu principal e, em seguida, navega. Para obter mais informações, consulte [Criando soluções e projetos](../ide/creating-solutions-and-projects.md) e [NIB Criando projetos de modelos](https://msdn.microsoft.com/7c36d86a-6b79-4480-8228-0f925f1204b2).
 
 ## <a name="managing-projects-in-solution-explorer"></a>Gerenciamento de projetos no Gerenciador de Soluções
  Depois de criar um novo projeto, você usa o **Gerenciador de Soluções** para exibir e gerenciar projetos e soluções e seus itens associados. A ilustração a seguir mostra o Gerenciador de Servidores com uma solução em C# que contém dois projetos.
 
- ![Gerenciador de Soluções](../ide/media/vs2015-solution-explorer.png "vs2015_solution_explorer")
+ ![Gerenciador de Soluções](../ide/media/vs2015-solution-explorer.png "|::ref2::|")
 
 ## <a name="in-this-section"></a>Nesta seção
 
@@ -102,5 +102,5 @@ Quando você cria um app, aplicativo, site da Web, aplicativo Web, script, plug-
 
 - [Criando modelos de projeto e de item](../ide/creating-project-and-item-templates.md)
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
  [Visual Studio IDE](../ide/visual-studio-ide.md)

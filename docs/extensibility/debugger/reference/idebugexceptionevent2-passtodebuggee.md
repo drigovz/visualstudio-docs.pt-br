@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugExceptionEvent2::PassToDebuggee
 ms.assetid: a20d0f0b-2ca0-4437-bd22-9213c81d2738
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cae097b5ce02993fc125aafaffded32a35dde0a5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: ca6c35b3d4a238404b92b50de486a7671bfc4726
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62874572"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66326109"
 ---
 # <a name="idebugexceptionevent2passtodebuggee"></a>IDebugExceptionEvent2::PassToDebuggee
 Especifica se a exceção deve ser passada para o programa que está sendo depurado quando a execução é retomada, ou se a exceção deve ser descartada.
@@ -36,10 +39,9 @@ int PassToDebuggee(
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `fPass`
-
- [in] Diferente de zero (`TRUE`) se a exceção deve ser passada para o programa que está sendo depurado quando a execução é retomada, ou zero (`FALSE`) se a exceção deve ser descartada.
+## <a name="parameters"></a>Parâmetros
+`fPass`\
+[in] Diferente de zero (`TRUE`) se a exceção deve ser passada para o programa que está sendo depurado quando a execução é retomada, ou zero (`FALSE`) se a exceção deve ser descartada.
 
 ## <a name="return-value"></a>Valor de retorno
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.

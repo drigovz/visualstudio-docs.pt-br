@@ -12,12 +12,12 @@ caps.latest.revision: 26
 author: mikeblome
 ms.author: mblome
 manager: jillfra
-ms.openlocfilehash: 198a848f953881af5a7ac4b042c74b368d202d06
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: b33b1b47ad4c32aabe09aae5a66fe3f02aeb1487
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63425894"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300376"
 ---
 # <a name="how-to-upgrade-visual-c-projects-to-visual-studio-2015"></a>Como: atualizar projetos do Visual C++ para o Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,12 +36,12 @@ Quando você abre primeiro um projeto do Visual C++ que foi criado em uma versã
 
 - Se o projeto (.vcxproj) tiver sido criado no [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)], no [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] ou no [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], haverá duas opções:
 
-    - Você pode pular a atualização. [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] carregará o projeto sem fazer nenhuma alteração se ele tiver acesso às ferramentas Visual C++ no [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] com SP1, no [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] ou no [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]. Para fornecer este acesso, instale a versão do Visual Studio com a qual o projeto foi criado, no mesmo computador que tenha o [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)]. Para saber mais, veja [Como instalar as versões do Visual Studio lado a lado](../install/install-visual-studio-versions-side-by-side.md).
+  - Você pode pular a atualização. [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] carregará o projeto sem fazer nenhuma alteração se ele tiver acesso às ferramentas Visual C++ no [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] com SP1, no [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] ou no [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]. Para fornecer este acesso, instale a versão do Visual Studio com a qual o projeto foi criado, no mesmo computador que tenha o [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)]. Para saber mais, veja [Como instalar as versões do Visual Studio lado a lado](../install/install-visual-studio-versions-side-by-side.md).
 
-    - Você pode atualizar o projeto permitindo que o [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] faça as alterações que são descritas posteriormente neste tópico. Se você tiver mais de um projeto do Visual C++ em sua solução, deverá atualizar todos eles.
+  - Você pode atualizar o projeto permitindo que o [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] faça as alterações que são descritas posteriormente neste tópico. Se você tiver mais de um projeto do Visual C++ em sua solução, deverá atualizar todos eles.
 
-        > [!NOTE]
-        > Se você recusar a atualização quando solicitado pela primeira vez, poderá atualizar o projeto mais tarde escolhendo **Atualizar projeto do VC++** no menu **Projeto**. Se o comando não aparecer, a atualização não será necessária.
+    > [!NOTE]
+    > Se você recusar a atualização quando solicitado pela primeira vez, poderá atualizar o projeto mais tarde escolhendo **Atualizar projeto do VC++** no menu **Projeto**. Se o comando não aparecer, a atualização não será necessária.
 
 ## <a name="upgrading-a-visual-c-project"></a>Atualizando um projeto do Visual C++
  Se você permitir que [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] atualize automaticamente o projeto, estas alterações serão feitas:
@@ -51,7 +51,7 @@ Quando você abre primeiro um projeto do Visual C++ que foi criado em uma versã
 - Para projetos do [!INCLUDE[cppcli](../includes/cppcli-md.md)], alteração de TargetFrameworkVersion para .NET Framework 4.5.2.
 
 ## <a name="continuing-to-work-with-a-custom-platformtoolset"></a>Continuação do trabalho com um PlatformToolset personalizado
- Se você desejar continuar a trabalhar com um Conjunto de Ferramentas de Plataforma no [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)], o conjunto de ferramentas deverá ser colocado em %ProgramFiles%\MSBuild\Microsoft.Cpp\v4.0\Platforms\Win32\PlatformToolsets\ em uma máquina x86, ou em %ProgramFiles (x86)%\MSBuild\Microsoft.Cpp\v4.0\Platforms\Win32\PlatformToolsets\ em uma máquina x64. Para obter informações de como criar um PlatformToolset personalizado, confira [Multiplataforma nativa C++](http://go.microsoft.com/fwlink/?LinkId=248587) no blog da equipe do Visual C++.
+ Se você desejar continuar a trabalhar com um Conjunto de Ferramentas de Plataforma no [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)], o conjunto de ferramentas deverá ser colocado em %ProgramFiles%\MSBuild\Microsoft.Cpp\v4.0\Platforms\Win32\PlatformToolsets\ em uma máquina x86, ou em %ProgramFiles (x86)%\MSBuild\Microsoft.Cpp\v4.0\Platforms\Win32\PlatformToolsets\ em uma máquina x64. Para obter informações de como criar um PlatformToolset personalizado, confira [Multiplataforma nativa C++](https://go.microsoft.com/fwlink/?LinkId=248587) no blog da equipe do Visual C++.
 
-## <a name="see-also"></a>Consulte também
- [Guia de portabilidade e atualização do Visual C++](http://msdn.microsoft.com/library/f5fbcc3d-aa72-41a6-ad9a-a706af2166fb) [Portabilidade, migração e atualização de projetos do Visual Studio](../porting/porting-migrating-and-upgrading-visual-studio-projects.md)
+## <a name="see-also"></a>Veja também
+ [Guia de portabilidade e atualização do Visual C++](https://msdn.microsoft.com/library/f5fbcc3d-aa72-41a6-ad9a-a706af2166fb) [Portabilidade, migração e atualização de projetos do Visual Studio](../porting/porting-migrating-and-upgrading-visual-studio-projects.md)

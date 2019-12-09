@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5c357fa5587d4fc5bf8c1752e20e7e0aa9df9835
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d079d9089dbc47ac272388c680fa585a3532eea8
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62944785"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576533"
 ---
 # <a name="iprocessdebugmanagerremoveapplication"></a>IProcessDebugManager::RemoveApplication
-Remove um aplicativo de execução de lista de aplicativos.  
+Remove um aplicativo da lista de aplicativos em execução.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -37,9 +37,9 @@ HRESULT RemoveApplication(
   
 #### <a name="parameters"></a>Parâmetros  
  `dwAppCookie`  
- [in] O cookie fornecido pelo `IProcessDebugManager::AddApplication` quando o aplicativo foi adicionado à lista de aplicativos.  
+ no O cookie fornecido pelo `IProcessDebugManager::AddApplication` quando o aplicativo foi adicionado à lista de aplicativos.  
   
-## <a name="return-value"></a>Valor de retorno  
+## <a name="return-value"></a>Valor retornado  
  O método retorna um `HRESULT`. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.  
   
 |Valor|Descrição|  
@@ -47,7 +47,7 @@ HRESULT RemoveApplication(
 |`S_OK`|O método foi bem-sucedido.|  
   
 ## <a name="remarks"></a>Comentários  
- Esse método Remove um aplicativo de execução de lista de aplicativos.  
+ Esse método Remove um aplicativo da lista de aplicativos em execução.  
   
 ## <a name="see-also"></a>Consulte também  
  [IProcessDebugManager::AddApplication](../../winscript/reference/iprocessdebugmanager-addapplication.md)   

@@ -6,17 +6,17 @@ helpviewer_keywords:
 - glossary [Debugging SDK]
 - debugging [Debugging SDK], glossary
 ms.assetid: 4a2cfaab-1fbd-4a23-bd00-9ac4cc50d7fd
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8bca908957a98dfa9fa12b0e420a727a2798b4fc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d968b5c0d18c7ba74e1bd5ea541fdfe080dc4f78
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62864884"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66316072"
 ---
 # <a name="visual-studio-debugger-glossary"></a>Glossário do depurador do Visual Studio
 Estes são os termos usados no [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] SDK de depuração.

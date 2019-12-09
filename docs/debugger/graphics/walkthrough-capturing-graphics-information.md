@@ -1,5 +1,5 @@
 ---
-title: 'Passo a passo: Capturando informações de gráficos | Microsoft Docs'
+title: 'Walkthrough: capturando informações de gráficos | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 48f12f6e-57b4-48ec-a145-89fa71a42424
@@ -8,55 +8,55 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fd7136367bfb883cfc5d962a1373fec738413fc6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: aab86d42cd158ad64ebb16497b8d2d9f5a7002df
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62897658"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72734733"
 ---
-# <a name="walkthrough-capturing-graphics-information"></a>Passo a passo: Capturando informações de gráficos
-Este passo a passo demonstra como usar o [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] diagnóstico de gráficos para capturar manualmente as informações gráficas de um aplicativo Direct3D.
+# <a name="walkthrough-capturing-graphics-information"></a>Passo a passo: capturando informações de gráficos
+Este tutorial demonstra como usar o [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Diagnóstico de Gráficos para capturar manualmente informações de gráficos de um aplicativo do Direct3D.
 
- Este passo a passo ilustra essas tarefas:
+ Este tutorial ilustra essas tarefas:
 
-- Vinculando o diagnóstico de gráficos para seu aplicativo
+- Vinculando Diagnóstico de Gráficos ao seu aplicativo
 
 - Capturando informações de gráficos
 
 ## <a name="capturing-graphics-information"></a>Capturando informações de gráficos
- Para usar as ferramentas de diagnóstico de gráficos, primeiro, você precisa capturar as informações gráficas nas quais ele confia. Para habilitar a captura, use o **iniciar diagnóstico** comando para conectar o diagnóstico de gráficos para seu aplicativo quando ele é iniciado.
+ Para usar as ferramentas de diagnóstico de gráficos, primeiro, você precisa capturar as informações gráficas nas quais ele confia. Para habilitar a captura, use o comando **Iniciar diagnóstico** para conectar diagnóstico de gráficos ao seu aplicativo quando ele for iniciado.
 
-#### <a name="to-enable-the-capture-of-graphics-information-after-a-project-or-solution-is-loaded"></a>Para habilitar a captura de informações de gráfico depois de um projeto ou solução é carregada
+#### <a name="to-enable-the-capture-of-graphics-information-after-a-project-or-solution-is-loaded"></a>Para habilitar a captura de informações gráficas após o carregamento de um projeto ou solução
 
-1. No [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], carregar um arquivo de projeto ou solução para o aplicativo que você deseja capturar informações de gráficos.
+1. Em [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], carregue um arquivo de projeto ou de solução para o aplicativo do qual você deseja capturar informações sobre elementos gráficos.
 
-2. Na barra de ferramentas de diagnóstico de gráficos, escolha **iniciar diagnóstico**.
+2. Na barra de ferramentas Diagnóstico de Gráficos, escolha **Iniciar diagnóstico**.
 
-#### <a name="to-enable-the-capture-of-graphics-information-without-loading-a-project-or-solution"></a>Para habilitar a captura de informações de gráficos sem carregar um projeto ou solução
+#### <a name="to-enable-the-capture-of-graphics-information-without-loading-a-project-or-solution"></a>Para habilitar a captura de informações gráficas sem carregar um projeto ou uma solução
 
-1. Na barra de menus, escolha **Arquivo**, **Abrir**, **Projeto/Solução**. O **Abrir projeto** caixa de diálogo é exibida.
+1. Na barra de menus, escolha **Arquivo**, **Abrir**, **Projeto/Solução**. A caixa de diálogo **Abrir projeto** é exibida.
 
-2. Em vez de um arquivo de projeto ou solução, especifique o arquivo executável para o aplicativo que você deseja capturar informações de gráficos e, em seguida, escolha **aberto**.
+2. Em vez de um arquivo de projeto ou de solução, especifique o arquivo executável do aplicativo do qual você deseja capturar informações de elementos gráficos e, em seguida, escolha **abrir**.
 
 3. Na barra de menus, escolha **Depurar**, **Gráficos**, **Iniciar Diagnóstico**.
 
-   Depois de iniciar o aplicativo e é quadros de renderização, você pode capturar informações gráficas.
+   Depois que você iniciar o aplicativo e ele estiver renderizando quadros, você poderá capturar informações de gráficos.
 
 #### <a name="to-capture-graphics-information"></a>Para capturar informações gráficas
 
-- Na barra de ferramentas de diagnóstico de gráficos, escolha o **capturar** botão. ![Ícone do botão de captura de elementos gráficos](media/debuggingdirectxgraphics.png "DebuggingDirectXGraphics")
+- Na barra de ferramentas Diagnóstico de Gráficos, escolha o botão **capturar** . ![Ícone do botão de captura de gráficos](media/debuggingdirectxgraphics.png "DebuggingDirectXGraphics")
 
-   - ou -
+   \- ou -
 
-   Com o aplicativo no foco, pressionar **Print Screen**.
+   Com o aplicativo em foco, pressione a **tela de impressão**.
 
-  Cada vez que você capturar informações sobre um quadro, o diagnóstico de gráficos registra os eventos de Direct3D e o estado associado e adiciona esses dados para um log de gráficos. Um novo log de gráficos é criado para cada sessão de diagnóstico de gráficos. Para obter informações sobre logs de gráficos, consulte [visão geral](overview-of-visual-studio-graphics-diagnostics.md).
+  Cada vez que você captura informações sobre um quadro, Diagnóstico de Gráficos registra os eventos do Direct3D e o estado associado e adiciona esses dados a um log de gráficos. Um novo log de gráficos é criado para cada sessão de Diagnóstico de Gráficos. Para obter informações sobre logs de gráficos, consulte [visão geral](overview-of-visual-studio-graphics-diagnostics.md).
 
 ## <a name="next-steps"></a>Próximas etapas
- Este passo a passo demonstrou como capturar informações gráficas manualmente. Como próxima etapa, considere esta opção:
+ Este tutorial demonstrou como capturar informações gráficas manualmente. Como próxima etapa, considere esta opção:
 
-- Aprenda a analisar informações gráficas capturadas usando as ferramentas de diagnóstico de gráficos. Ver [visão geral](overview-of-visual-studio-graphics-diagnostics.md).
+- Saiba como analisar as informações de gráficos capturadas usando as ferramentas de Diagnóstico de Gráficos. Consulte [visão geral](overview-of-visual-studio-graphics-diagnostics.md).
 
 ## <a name="see-also"></a>Consulte também
 - [Capturando informações de gráficos](capturing-graphics-information.md)

@@ -9,18 +9,18 @@ helpviewer_keywords:
 - searching IDE
 - IDE, searching
 ms.assetid: 4200f297-d065-4723-9a30-d91ff2e26c9d
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: a67e909dc43f17e12dd63b7a8a3b2e8a4afacc5e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: f0cc6bcb59bf98a7416221115dbeeef8f24a5e74
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62969040"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72655664"
 ---
 # <a name="quick-launch-environment-options-dialog-box"></a>Caixa de diálogo de início rápido, ambiente, opções
 
@@ -30,7 +30,7 @@ O **Início Rápido** é habilitado por padrão quando você instala o Visual St
 
 ## <a name="category-list"></a>Lista de Categorias
 
-Os resultados da pesquisa do Início Rápido são exibidos em quatro categorias: **Usados Recentemente**, **Menus**, **Opções** e **Documentos Abertos**, juntamente com o número de itens na categoria. Para percorrer os resultados da pesquisa por categoria, escolha as teclas **Ctrl**+**Q** para exibir todos os resultados da categoria seguinte. Depois que a última categoria aparecer, pressionar **Ctrl**+**Q** exibirá alguns resultados de cada categoria. Pressione **Ctrl**+**Shift**+**Q** para navegar pelas categorias na ordem oposta. Para exibir todos os resultados da pesquisa em uma categoria, escolha o nome da categoria.
+Os resultados da pesquisa do Início Rápido aparecem em quatro categorias: **Usados Recentemente**, **Menus**, **Opções** e **Documentos Abertos**, em conjunto com o número de itens na categoria. Para percorrer os resultados da pesquisa por categoria, escolha as teclas **Ctrl**+**Q** para exibir todos os resultados da categoria seguinte. Depois que a última categoria aparecer, pressionar **Ctrl**+**Q** exibirá alguns resultados de cada categoria. Pressione **Ctrl**+**Shift**+**Q** para navegar pelas categorias na ordem oposta. Para exibir todos os resultados da pesquisa em uma categoria, escolha o nome da categoria.
 
 É possível usar os seguintes atalhos para limitar a pesquisa a categorias específicas.
 
@@ -47,7 +47,3 @@ Os resultados da pesquisa do Início Rápido são exibidos em quatro categorias:
 ## <a name="show-previous-results"></a>Mostrar resultados anteriores
 
 Por padrão, o termo de pesquisa que você inserir não persiste entre sessões de pesquisa. A cadeia de caracteres de pesquisa é apagada se você pesquisar um termo, mover o cursor para fora da área de **Início Rápido** e, depois, voltar. Para manter os resultados da pesquisa, acesse a caixa de diálogo **Opções**, escolha **Início Rápido** e, em seguida, marque a caixa de seleção **Mostrar resultados da pesquisa anterior quando o Início Rápido estiver ativado.** . Na próxima vez em que fizer uma pesquisa, deixe a área de Início Rápido e volte, o Início Rápido manterá o termo de pesquisa usado pela última vez e mostrará os resultados da pesquisa.
-
-## <a name="see-also"></a>Consulte também
-
-- [Caixa de diálogo Opções do Ambiente](../../ide/reference/environment-options-dialog-box.md)

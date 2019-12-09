@@ -3,21 +3,21 @@ title: Instalando fora da pasta de extensões VSIX v3 | Microsoft Docs
 ms.date: 11/09/2016
 ms.topic: conceptual
 ms.assetid: 913c3745-8aa9-4260-886e-a05aecfb2225
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 09b3b23a89450bb1abac4f8ebb10d00396a251b2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2d5fc36c1244edd0988b6b76f8106020369cd90b
+ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62433122"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "67852191"
 ---
-# <a name="installing-outside-the-extensions-folder"></a>Instalando fora da pasta de extensões
+# <a name="install-outside-the-extensions-folder"></a>Instalar fora da pasta de extensões
 
-Começando com o Visual Studio 2017 e VSIX v3 (versão 3), agora há suporte para a instalação de ativos de extensão fora da pasta extensões. Atualmente, os locais a seguir são habilitados como locais de instalação válida (onde [INSTALLDIR] é mapeado para o diretório de instalação da instância do Visual Studio):
+Começando com o Visual Studio 2017 e VSIX v3 ativos de extensão (versão 3), pode ser instalado fora da pasta extensões. Atualmente, os locais a seguir são habilitados como locais de instalação válida (onde [INSTALLDIR] é mapeado para o diretório de instalação da instância do Visual Studio):
 
 * [INSTALLDIR]\MSBuild
 * [INSTALLDIR]\Xml\Schemas
@@ -25,9 +25,10 @@ Começando com o Visual Studio 2017 e VSIX v3 (versão 3), agora há suporte par
 * [INSTALLDIR]\Licenses
 * [INSTALLDIR]\Common7\IDE\ReferenceAssemblies
 * [INSTALLDIR]\Common7\IDE\RemoteDebugger
-* [INSTALLDIR]\Common7\IDE\VC\VCTargets
+* \Common7\IDE\VC\VCTargets [INSTALLDIR] (apenas com suporte para Visual Studio 2017; preteridas para Visual Studio de 2019 e posterior)
 
->**Observação:** O formato VSIX não permite que você instale fora da estrutura de pasta de instalação do VS.
+> [!NOTE]
+> O formato VSIX não permite que você instale fora a estrutura de pasta de instalação do Visual Studio. 
 
 Para dar suporte à instalação para esses diretórios, VSIX deve ser instalado "por instância por máquina". Isso pode ser habilitado marcando a caixa de seleção de "todos os usuários" no designer de vsixmanifest:
 
@@ -49,7 +50,8 @@ Isso adicionará alguns metadados para os respectivos `ProjectReference` proprie
  </ProjectReference>
 ```
 
->**Observação:** Você pode editar o arquivo. csproj diretamente, se você preferir.
+> [!NOTE]
+> Você pode editar o arquivo. csproj diretamente, se você preferir.
 
 ## <a name="how-to-set-a-subpath-under-the-installroot"></a>Como definir um subcaminho sob a InstallRoot
 

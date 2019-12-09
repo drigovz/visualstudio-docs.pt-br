@@ -6,14 +6,15 @@ ms.assetid: b85d0fe9-f67a-4b7c-8d48-7eecf3f2dfe9
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: e85c589866aba54e856afb066cec253c7057aaad
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: df3ccda9730be02bafb7f7d069a26193a4528d1e
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62979673"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778265"
 ---
 # <a name="start"></a>Início
 A opção **Start** é uma opção de *VSPerfCmd.exe* que inicializa o criador de perfil para o método de criação de perfil especificado.
@@ -38,14 +39,14 @@ VSPerfCmd.exe /Start:Method /Output:FileName [Options]
 ## <a name="required-options"></a>Opções obrigatórias
  A opção **Output** deverá ser especificada quando **Start** for especificada na linha de comando.
 
- **Saída:** `filename` Especifica o nome do arquivo de saída.
+ **Saída:** `filename` especifica o nome do arquivo de saída.
 
 ## <a name="exclusive-options"></a>Opções exclusivas
  As opções a seguir só podem ser usadas com a opção **Start** em uma linha de comando.
 
  **CrossSession**&#124;**CS** Habilita a criação de perfil entre processos. Há suporte para ambos os nomes de opção **CrossSession** e **CS**.
 
- **Usuário:**[`domain\`]`username` Habilita o acesso do cliente ao monitor por meio da conta especificada.
+ **Usuário:** [`domain\`]`username` Habilita o acesso do cliente ao monitor por meio da conta especificada.
 
  **WinCounter:** `Path` [**AutoMark**:`n`] **WinCounter** especifica um contador de desempenho do Windows a ser incluído como uma marca no arquivo de dados de criação de perfil. **AutoMark** especifica o intervalo em milissegundos entre as coletas do arquivo de dados.
 
@@ -54,7 +55,7 @@ VSPerfCmd.exe /Start:Method /Output:FileName [Options]
 
  **Status** O **Status** aplica-se aos processos analisados. Ela lista processos e threads e seu estado de perfil atual (Ligado/Desligado). Por exemplo, se um processo for interrompido, **Status** não indicará isso no relatório. **Status** mostrará se perfil do processo foi criado ou não.
 
- **Desligamento**[**:**`Timeout`] Desliga o criador de perfil.
+ **Desligamento**[ **:** `Timeout`] Desliga o criador de perfil.
 
 ## <a name="example"></a>Exemplo
  O exemplo a seguir demonstra como usar a opção **Start** de *VSPerfCmd.exe* para inicializar o criador de perfil.

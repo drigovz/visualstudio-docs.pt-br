@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugThread2::GetThreadProperties
 ms.assetid: 304403fd-f4f8-4096-ac2c-bd3b59663aad
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b32ec64123ef8db4724c7646c54af790fc7500a1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: a325e8798f54d8ec78ad0ec5318e9162b16774b1
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62868301"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66320108"
 ---
 # <a name="idebugthread2getthreadproperties"></a>IDebugThread2::GetThreadProperties
 Obtém as propriedades que descrevem esse thread.
@@ -38,14 +41,12 @@ int GetThreadProperties (
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
-`dwFields`
+## <a name="parameters"></a>Parâmetros
+`dwFields`\
+[in] Uma combinação de sinalizadores do [THREADPROPERTY_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md) enumeração que determina quais campos de `ptp` devem ser preenchidos.
 
- [in] Uma combinação de sinalizadores do [THREADPROPERTY_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md) enumeração que determina quais campos de `ptp` devem ser preenchidos.
-
-`ptp`
-
- [no, out] Um [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md) estrutura será preenchida com as propriedades do thread.
+`ptp`\
+[no, out] Um [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md) estrutura será preenchida com as propriedades do thread.
 
 ## <a name="return-value"></a>Valor de retorno
 Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.

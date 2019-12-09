@@ -8,11 +8,11 @@ author: corob-msft
 ms.author: corob
 manager: jillfra
 ms.openlocfilehash: 4faa2ecae7f53d29e6aad92723ca6d12e50e2812
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59652040"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68150955"
 ---
 # <a name="import-an-xcode-project"></a>Importar um projeto do XCode
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ O Microsoft Visual C++ para Desenvolvimento Móvel Multiplataforma inclui o supo
   
     ![Painel Destinos do assistente Importar do XCode](../cross-platform/media/cppmdd-u2-importxcode-destination.jpg "CPPMDD_U2_ImportXCode_Destination")  
   
-    Para cada destino selecionado em **Destinos para importar**, o assistente detecta automaticamente os arquivos de código C++ que podem ser divididos em um projeto de biblioteca estática separado e os coloca na seção **Itens de projeto C++**. Outros recursos e código são deixados na seção **Itens do projeto do XCode**. Elas se tornam projetos de aplicativo e biblioteca estática separados no Visual Studio quando o assistente conclui o processo de importação. Por padrão, os destinos de estrutura e unidade de teste não são separados em projetos diferentes no assistente.  
+    Para cada destino selecionado em **Destinos para importar**, o assistente detecta automaticamente os arquivos de código C++ que podem ser divididos em um projeto de biblioteca estática separado e os coloca na seção **Itens de projeto C++** . Outros recursos e código são deixados na seção **Itens do projeto do XCode**. Elas se tornam projetos de aplicativo e biblioteca estática separados no Visual Studio quando o assistente conclui o processo de importação. Por padrão, os destinos de estrutura e unidade de teste não são separados em projetos diferentes no assistente.  
   
     Para alterar quais arquivos estão em cada projeto, use os botões para cima e para baixo. Quando estiver satisfeito com os arquivos em cada projeto, escolha **Avançar** para continuar.  
   
@@ -54,7 +54,7 @@ O Microsoft Visual C++ para Desenvolvimento Móvel Multiplataforma inclui o supo
   
     ![Painel Propriedades Globais de Importar do XCode](../cross-platform/media/cppmdd-u2-importxcode-global.jpg "CPPMDD_U2_ImportXCode_Global")  
   
-    Esses caminhos globais também podem ser definidos no Visual Studio na caixa de diálogo **Opções**. Para encontrá-los, no menu **Ferramentas**, selecione **Opções**. Na caixa de diálogo **Opções**, expanda **Plataforma Cruzada**, **C++**, **iOS**, **Propriedades Globais**.  
+    Esses caminhos globais também podem ser definidos no Visual Studio na caixa de diálogo **Opções**. Para encontrá-los, no menu **Ferramentas**, selecione **Opções**. Na caixa de diálogo **Opções**, expanda **Plataforma Cruzada**, **C++** , **iOS**, **Propriedades Globais**.  
   
     Escolha **Avançar** para continuar.  
   

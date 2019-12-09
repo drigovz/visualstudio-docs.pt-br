@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_bitposition | Microsoft Docs'
+title: 'IDiaSymbol:: get_bitPosition | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7752e5f6bc7cb09fb80668aed8c3f8bc2bbeb312
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 709bb7e57ee6260ffcd7d8b1421526d3dd41052a
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63402150"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740906"
 ---
-# <a name="idiasymbolgetbitposition"></a>IDiaSymbol::get_bitPosition
-Recupera a posição de bit do local. Usado quando o [enumeração LocationType](../../debugger/debug-interface-access/locationtype.md) é `LocIsBitField`.
+# <a name="idiasymbolget_bitposition"></a>IDiaSymbol::get_bitPosition
+Recupera a posição do bit do local. Usado quando a [Enumeração LocationType](../../debugger/debug-interface-access/locationtype.md) é `LocIsBitField`.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -33,20 +33,20 @@ HRESULT get_bitPosition ( 
 #### <a name="parameters"></a>Parâmetros
  `pRetVal`
 
-[out] Retorna a posição de bit do local.
+fora Retorna a posição de bits do local.
 
-## <a name="return-value"></a>Valor de retorno
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE` ou código de erro.
 
 > [!NOTE]
-> Um valor de retorno `S_FALSE` significa que a propriedade não está disponível para o símbolo.
+> Um valor de retorno de `S_FALSE` significa que a propriedade não está disponível para o símbolo.
 
 ## <a name="requirements"></a>Requisitos
 
 |Requisito|Descrição|
 |-----------------|-----------------|
 |Cabeçalho:|dia2.h|
-|Versão:|DIA SDK v7.0|
+|Versão:|DIA SDK v 7.0|
 
 ## <a name="see-also"></a>Consulte também
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

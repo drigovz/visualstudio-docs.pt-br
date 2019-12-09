@@ -1,7 +1,7 @@
 ---
 title: Depurar aplicativos UWP | Microsoft Docs
-ms.custom: seodec18
-ms.date: 03/28/2019
+ms.custom: ''
+ms.date: 10/22/2019
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -13,22 +13,24 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 972f52583704b3116066114986948af643069a0d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 73b9b78be6a6325a422c945db8c51caa7a11b487
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62851674"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188274"
 ---
-# <a name="debug-universal-windows-apps-uwp-in-visual-studio"></a>Depurar aplicativos do Universal do Windows (UWP) no Visual Studio
+# <a name="debug-universal-windows-apps-uwp-in-visual-studio"></a>Depurar aplicativos universais do Windows (UWP) no Visual Studio
 
-O depurador do Visual Studio fornece suporte completo para depurar aplicativos UWP. Consulte os seguintes artigos para tarefas de depuração UWP.
+O depurador do Visual Studio fornece suporte completo para depurar aplicativos UWP. Consulte os seguintes artigos para tarefas de depuração do UWP.
 
 |Tarefa de depuração|Artigo|
 |-|-|
-|Execute aplicativos UWP em um computador local, remoto ou conectado um dispositivo ou simulador de aplicativos.|[Iniciar uma sessão de depuração para um aplicativo UWP](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)|
-|Depure aplicativos implantados, locais e remotos.|[Depurar pacote de aplicativo instalado](../debugger/debug-installed-app-package.md)|
-|Analise o efeito da classe ContentPrefetcher nos aplicativos UWP.|[Realizar pré-busca de conteúdo para aplicativos UWP](../debugger/prefetch-content-for-windows-store-apps.md)|
+|Executar aplicativos UWP em um computador local, dispositivo remoto ou conectado ou simulador de aplicativo.|[Iniciar uma sessão de depuração para um aplicativo UWP](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)|
+|Depurar aplicativos implantados, locais e remotos.|[Depurar pacote de aplicativo instalado](../debugger/debug-installed-app-package.md)|
+| [Gravar e depurar o código XAML em execução](../xaml-tools/xaml-hot-reload.md) | Você pode usar o Hot recarregamento de XAML para explorar a árvore visual de um objeto XAML do UWP e exibir as propriedades de dependência dos objetos nessa árvore. Este tópico descreve como usar o Hot recarregamento de XAML. |
+| [Inspecione as propriedades XAML durante a depuração](../xaml-tools/xaml-hot-reload.md) | Você pode usar a árvore visual ao vivo para explorar a árvore visual de um objeto XAML do UWP e exibir as propriedades de dependência dos objetos nessa árvore. |
+|Analise o efeito da classe ContentPrefetcher em aplicativos UWP.|[Conteúdo de pré-busca para aplicativos UWP](../debugger/prefetch-content-for-windows-store-apps.md)|
 
 ## <a name="see-also"></a>Consulte também
-- [Analisar a qualidade do código usando a análise de código estático](/visualstudio/code-quality/code-analysis-for-managed-code-overview)
+- [Analisar a qualidade do código usando a análise de código estático](../code-quality/code-analysis-for-managed-code-overview.md)

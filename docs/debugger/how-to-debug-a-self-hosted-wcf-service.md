@@ -1,5 +1,5 @@
 ---
-title: 'Como: Depurar um serviço WCF auto-hospedado | Microsoft Docs'
+title: Como depurar um serviço WCF auto-hospedado | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,14 +17,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8440c1bae9d9e405fd0bf0e1462467e7a51dad5e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 12654a6aa1abb34c9813e8d29c7608814021a3f0
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62848023"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72733976"
 ---
-# <a name="how-to-debug-a-self-hosted-wcf-service"></a>Como: Depurar um serviço WCF auto-hospedado
+# <a name="how-to-debug-a-self-hosted-wcf-service"></a>Como depurar um serviço WCF auto-hospedado
 Um *serviço auto-hospedado* é um serviço WCF que não é executado dentro do IIS, do Host de Serviço WCF ou do [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Development Server. A maneira mais fácil de depurar um WCF auto-hospedado é configurar o [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para iniciar o cliente e o servidor quando você escolher **Iniciar Depuração** no menu **Depurar**.
 
  Se o serviço WCF está sendo auto-hospedado internamente ou é um processo que não pode ser iniciado dessa maneira, como serviço do NT, você não pode usar este método. Em vez disso, execute um destes procedimentos:
@@ -33,7 +33,7 @@ Um *serviço auto-hospedado* é um serviço WCF que não é executado dentro do 
 
      – ou —
 
-- Inicie a depuração do cliente e inspecione uma chamada para o serviço. Isso requer que você habilite a depuração no arquivo app.config. Para obter mais informações, [limitações na depuração de WCF](../debugger/limitations-on-wcf-debugging.md).
+- Inicie a depuração do cliente e inspecione uma chamada para o serviço. Isso requer que você habilite a depuração no arquivo app.config. Para obter mais informações, [limitações na depuração do WCF](../debugger/limitations-on-wcf-debugging.md).
 
 ### <a name="to-start-both-client-and-host-from-visual-studio"></a>Para iniciar o cliente e o host do Visual Studio
 
@@ -45,7 +45,7 @@ Um *serviço auto-hospedado* é um serviço WCF que não é executado dentro do 
 
    2. Clique em **Definir Projetos de Inicialização**.
 
-   3. Na caixa de diálogo **Propriedades da Solução \<nome>**, selecione **Vários Projetos de Inicialização**.
+   3. Na caixa de diálogo **Propriedades da Solução \<nome>** , selecione **Vários Projetos de Inicialização**.
 
    4. Na grade **Vários Projetos de Inicialização**, na linha que corresponde ao projeto do servidor, clique em **Ação** e escolha **Iniciar**.
 
@@ -56,4 +56,4 @@ Um *serviço auto-hospedado* é um serviço WCF que não é executado dentro do 
 ## <a name="see-also"></a>Consulte também
 - [Depurando serviços WCF](../debugger/debugging-wcf-services.md)
 - [Limitações da depuração de WCF](../debugger/limitations-on-wcf-debugging.md)
-- [Como: Intervir nos serviços WCF](../debugger/how-to-step-into-wcf-services.md)
+- [Como intervir em serviços WCF](../debugger/how-to-step-into-wcf-services.md)

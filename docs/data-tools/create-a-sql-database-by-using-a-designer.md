@@ -1,177 +1,186 @@
 ---
-title: Crie um arquivo de banco de dados e usar o designer de tabela
-description: Tutorial que descreve como adicionar tabelas e chaves estrangeiras para um banco de dados usando o Designer de tabela no Visual Studio. Ele também mostra como adicionar dados por meio da interface gráfica.
-ms.date: 11/03/2017
+title: Criar um arquivo de banco de dados e usar o designer de tabela
+description: Tutorial que descreve como adicionar tabelas e chaves estrangeiras a um banco de dados usando Designer de Tabela no Visual Studio. Ele também mostra como adicionar dados por meio da interface gráfica.
+ms.date: 09/19/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - database tables, creating
 - database files, creating
 - table designer
 ms.assetid: 99c2b06f-47aa-414e-8057-a3453712fd23
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: afb73b316dd54284073c3d878fb35b4bb6090e08
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 14d30a366c7400b05a713f146e602ae9ccd7e766
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62569950"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72648671"
 ---
 # <a name="create-a-database-and-add-tables-in-visual-studio"></a>Criar um banco de dados e adicionar tabelas no Visual Studio
 
-Você pode usar o Visual Studio para criar e atualizar um arquivo de banco de dados local no SQL Server Express LocalDB. Você também pode criar um banco de dados executando instruções Transact-SQL no **SQL Server Object Explorer** janela de ferramentas no Visual Studio. Neste tópico, vamos criar uma *mdf* arquivo e adicione as tabelas e chaves usando o Designer de tabela.
+Você pode usar o Visual Studio para criar e atualizar um arquivo de banco de dados local no SQL Server Express LocalDB. Você também pode criar um banco de dados executando instruções Transact-SQL na janela de ferramentas do **pesquisador de objetos do SQL Server** no Visual Studio. Neste tópico, vamos criar um arquivo *. MDF* e adicionar tabelas e chaves usando o designer de tabela.
 
-## <a name="prerequisites"></a>Pré-requisitos
+## <a name="prerequisites"></a>Prerequisites
 
-Para concluir este passo a passo, você deve ter opcional **armazenamento de dados e processamento** carga de trabalho instalada no Visual Studio. Para instalá-lo, abra **instalador do Visual Studio** e escolha **mais** > **modificar** ao lado da versão do Visual Studio que você deseja modificar (se você tiver mais de uma versão instalada). Sobre o **cargas de trabalho** guia, em **Web e nuvem**, escolha **processamento e armazenamento de dados**e, em seguida, clique em **modificar** para adicionar a carga de trabalho Visual Studio.
+Para concluir este passo a passos, você precisará do **desenvolvimento de área de trabalho do .net** e de armazenamento de **dados e** cargas de trabalho de processamento instalados no Visual Studio. Para instalá-los, abra **instalador do Visual Studio** e escolha **Modificar** (ou **mais**  > **Modificar**) ao lado da versão do Visual Studio que você deseja modificar.
 
 ## <a name="create-a-project-and-a-local-database-file"></a>Criar um projeto e um arquivo de banco de dados local
 
-1. Criar um novo **aplicativo do Windows Forms** do projeto e denomine- **SampleDatabaseWalkthrough**.
+1. Crie um novo projeto de **aplicativo Windows Forms** e nomeie-o **SampleDatabaseWalkthrough**.
 
-2. Na barra de menus, selecione **Project** > **Adicionar Novo Item**.
+2. Na barra de menus, selecione **projeto**  > **Adicionar novo item**.
 
 3. Na lista de modelos de item, role para baixo e selecione **banco de dados baseado em serviço**.
 
-     ![Caixa de diálogo de modelos de item](../data-tools/media/raddata-vsitemtemplates.png)
+   ![Caixa de diálogo modelos de item](../data-tools/media/raddata-vsitemtemplates.png)
 
-4. Nomeie o banco de dados **SampleDatabase**e, em seguida, clique em **Add**.
+4. Nomeie o banco de dados **SampleDatabase**e clique em **Adicionar**.
 
 ### <a name="add-a-data-source"></a>Adicionar uma fonte de dados
 
-1. Se o **fontes de dados** janela não estiver aberta, abra-o pressionando **Shift**+**Alt**+**1!d** ou selecionando **Modo de exibição** > **Other Windows** > **fontes de dados** na barra de menus.
+1. Se a **janela fontes de dados** não estiver aberta, abra-a pressionando **Shift** +**ALT** +**D** ou selecionando **Exibir**  >  outras**fontes de dados** do**Windows**  >  na barra de menus.
 
-1. No **fontes de dados** janela, selecione a **Add New Data Source** link.
+1. Na janela **fontes de dados** , selecione **Adicionar nova fonte de dados**.
+
+   ![Adicionar nova fonte de dados no Visual Studio](media/add-new-data-source.png)
 
    O **Assistente de Configuração de Fonte de Dados** é aberto.
 
-1. Sobre o **escolher um tipo de fonte de dados** , escolha **banco de dados** e, em seguida, escolha **próxima**.
+1. Na página **escolher um tipo de fonte de dados** , escolha **Database** e, em seguida, escolha **Avançar**.
 
-1. Sobre o **escolha um modelo de banco de dados** , escolha **próxima** para aceitar o padrão (conjunto de dados).
+1. Na página **escolher um modelo de banco de dados** , escolha **Avançar** para aceitar o padrão (DataSet).
 
-1. No **escolha sua Conexão de dados** página, selecione o **SampleDatabase** file na lista suspensa e, em seguida, escolha **próxima**.
+1. Na página **escolher sua conexão de dados** , selecione o arquivo **SampleDatabase. MDF** na lista suspensa e escolha **Avançar**.
 
-1. Sobre o **salvar a cadeia de Conexão no arquivo de configuração de aplicativo** , escolha **próxima**.
+1. Na página **salvar a cadeia de conexão no arquivo de configuração do aplicativo** , escolha **Avançar**.
 
-1. Um a **Choose your Database Objects** página, você verá uma mensagem informando que o banco de dados não contém todos os objetos. Escolha **Concluir**.
+1. Na página **escolher seus objetos de banco de dados** , você verá uma mensagem dizendo que o banco de dados não contém nenhum objeto. Escolha **Concluir**.
 
-### <a name="view-properties-of-the-data-connection"></a>Exibir propriedades de conexão de dados
+### <a name="view-properties-of-the-data-connection"></a>Exibir as propriedades da conexão de dados
 
-Você pode exibir a cadeia de caracteres de conexão para o *SampleDatabase* arquivo abrindo a janela de propriedades de conexão de dados:
+Você pode exibir a cadeia de conexão para o arquivo *SampleDatabase. MDF* abrindo o janela Propriedades da conexão de dados:
 
-- Selecione **modo de exibição** > **SQL Server Object Explorer** para abrir o **Pesquisador de objetos do SQL Server** janela. Expandir **(localdb) \MSSQLLocalDB** > **bancos de dados**e, em seguida, clique duas vezes em *SampleDatabase* e selecione **propriedades**.
+- Selecione **exibir**  > **pesquisador de objetos do SQL Server** para abrir a janela **pesquisador de objetos do SQL Server** . Expanda **(LocalDB) \MSSQLLocalDB**  > **bancos de dados**e clique com o botão direito do mouse em *SampleDatabase. MDF* e selecione **Propriedades**.
 
-- Como alternativa, você pode selecionar **modo de exibição** > **Gerenciador de servidores**, se essa janela não estiver aberta. Abra a janela Propriedades, expandindo a **conexões de dados** abrindo o menu de atalho do nó *SampleDatabase*e, em seguida, selecionando **propriedades**.
+- Como alternativa, você pode selecionar **exibir**  > **Gerenciador de servidores**, se essa janela ainda não estiver aberta. Abra o janela Propriedades expandindo o nó **conexões de dados** , clicando com o botão direito do mouse em *SampleDatabase. MDF*e, em seguida, selecionando **Propriedades**.
 
-## <a name="create-tables-and-keys-by-using-table-designer"></a>Criar tabelas e chaves usando o Designer de tabela
+  > [!TIP]
+  > Se você não puder expandir o nó conexões de dados, ou se a conexão SampleDatabase. MDF não estiver listada, selecione o botão **conectar ao Database** na barra de ferramentas Gerenciador de servidores. Na caixa de diálogo **Adicionar conexão** , certifique-se de que **Microsoft SQL Server arquivo de banco** de dados esteja selecionado em **fonte de dados**e, em seguida, navegue até e selecione o arquivo SampleDatabase. MDF. Conclua a adição da conexão selecionando **OK**.
+
+## <a name="create-tables-and-keys-by-using-table-designer"></a>Criar tabelas e chaves usando Designer de Tabela
 
 Nesta seção, você criará duas tabelas, uma chave primária em cada tabela e algumas linhas de dados de exemplo. Você também criará uma chave estrangeira para especificar como os registros em uma tabela correspondem aos registros na outra tabela.
 
-### <a name="create-the-customers-table"></a>Criar a tabela de clientes
+### <a name="create-the-customers-table"></a>Criar a tabela Customers
 
-1. Na **Gerenciador de servidores**, expanda o **conexões de dados** nó e, em seguida, expanda o **SampleDatabase** nó.
+1. Em **Gerenciador de servidores**, expanda o nó **conexões de dados** e expanda o nó **SampleDatabase. MDF** .
 
-2. Abra o menu de atalho **tabelas**e, em seguida, selecione **adicionar nova tabela**.
+   Se você não puder expandir o nó conexões de dados, ou se a conexão SampleDatabase. MDF não estiver listada, selecione o botão **conectar ao Database** na barra de ferramentas Gerenciador de servidores. Na caixa de diálogo **Adicionar conexão** , certifique-se de que **Microsoft SQL Server arquivo de banco** de dados esteja selecionado em **fonte de dados**e, em seguida, navegue até e selecione o arquivo SampleDatabase. MDF. Conclua a adição da conexão selecionando **OK**.
 
-     O **Designer de Tabela** é aberto e mostra uma grade com uma linha padrão, que representa uma única coluna na tabela que você está criando. Adicionando linhas à grade, você adicionará colunas na tabela.
+2. Clique com o botão direito do mouse em **tabelas** e selecione **Adicionar nova tabela**.
+
+   O Designer de Tabela é aberto e mostra uma grade com uma linha padrão, que representa uma única coluna na tabela que você está criando. Adicionando linhas à grade, você adicionará colunas na tabela.
 
 3. Na grade, adicione uma linha para cada uma das seguintes entradas:
 
-    |Nome da coluna|Tipo de dados|Permitir nulos|
-    |-----------------|---------------|-----------------|
-    |`CustomerID`|`nchar(5)`|Falso (desmarcado)|
-    |`CompanyName`|`nvarchar(50)`|Falso (desmarcado)|
-    |`ContactName`|`nvarchar (50)`|Verdadeiro (marcado)|
-    |`Phone`|`nvarchar (24)`|Verdadeiro (marcado)|
+   |Nome da coluna|Tipo de dados|Permitir nulos|
+   |-----------------|---------------|-----------------|
+   |`CustomerID`|`nchar(5)`|Falso (desmarcado)|
+   |`CompanyName`|`nvarchar(50)`|Falso (desmarcado)|
+   |`ContactName`|`nvarchar (50)`|Verdadeiro (marcado)|
+   |`Phone`|`nvarchar (24)`|Verdadeiro (marcado)|
 
-4. Abra o menu de atalho para o `CustomerID` de linha e, em seguida, selecione **definir chave primária**.
+4. Clique com o botão direito do mouse na linha `CustomerID` e selecione **definir chave primária**.
 
-5. Abra o menu de atalho da linha padrão e, em seguida, selecione **excluir**.
+5. Clique com o botão direito do mouse na linha padrão (`Id`) e selecione **excluir**.
 
 6. Nomeie a tabela Clientes atualizando a primeira linha no painel de script de acordo com o seguinte exemplo:
 
-    ```sql
-    CREATE TABLE [dbo].[Customers]
-    ```
+   ```sql
+   CREATE TABLE [dbo].[Customers]
+   ```
 
-    Você deve ver algo parecido com isso:
+   Você deve ver algo parecido com isso:
 
-    ![Designer de Tabela](../data-tools/media/raddata-table-designer.png)
+   ![Designer de Tabela](../data-tools/media/table-designer.png)
 
-7. No canto superior esquerdo do **Designer de tabela**, selecione **atualização**.
+7. No canto superior esquerdo da **Designer de tabela**, selecione **Atualizar**.
 
-8. No **atualizações de banco de dados de visualização** caixa de diálogo, selecione **Atualizar banco de dados**.
+8. Na caixa de diálogo **Visualizar atualizações do banco de dados** , selecione **Atualizar banco de dados**.
 
-    As alterações são salvas no arquivo do banco de dados local.
+   A tabela Customers é criada no arquivo de banco de dados local.
 
-### <a name="create-the-orders-table"></a>Criar a tabela Orders
+### <a name="create-the-orders-table"></a>Criar a tabela de pedidos
 
 1. Adicione outra tabela e uma linha para cada entrada na seguinte tabela:
 
-    |Nome da coluna|Tipo de dados|Permitir nulos|
-    |-----------------|---------------|-----------------|
-    |`OrderID`|`int`|Falso (desmarcado)|
-    |`CustomerID`|`nchar(5)`|Falso (desmarcado)|
-    |`OrderDate`|`datetime`|Verdadeiro (marcado)|
-    |`OrderQuantity`|`int`|Verdadeiro (marcado)|
+   |Nome da coluna|Tipo de dados|Permitir nulos|
+   |-----------------|---------------|-----------------|
+   |`OrderID`|`int`|Falso (desmarcado)|
+   |`CustomerID`|`nchar(5)`|Falso (desmarcado)|
+   |`OrderDate`|`datetime`|Verdadeiro (marcado)|
+   |`OrderQuantity`|`int`|Verdadeiro (marcado)|
 
-2. Definir **OrderID** como a chave primária e, em seguida, exclui a linha padrão.
+2. Defina **OrderID** como a chave primária e, em seguida, exclua a linha padrão.
 
 3. Nomeie a tabela Orders atualizando a primeira linha no painel de script de acordo com o seguinte exemplo:
 
-    ```sql
-    CREATE TABLE [dbo].[Orders]
-    ```
+   ```sql
+   CREATE TABLE [dbo].[Orders]
+   ```
 
-4. No canto superior esquerdo dos **Designer de tabela**, selecione o **atualização** botão.
+4. No canto superior esquerdo da **Designer de tabela**, selecione **Atualizar**.
 
-5. No **atualizações de banco de dados de visualização** caixa de diálogo, selecione o **Atualizar banco de dados** botão.
+5. Na caixa de diálogo **Visualizar atualizações do banco de dados** , selecione **Atualizar banco de dados**.
 
-    As alterações são salvas no arquivo do banco de dados local.
+   A tabela Orders é criada no arquivo de banco de dados local. Se você expandir o nó **tabelas** no Gerenciador de servidores, verá as duas tabelas:
+
+   ![Nó de tabelas expandido no Gerenciador de Servidores](media/server-explorer-tables-node.png)
 
 ### <a name="create-a-foreign-key"></a>Criar uma chave estrangeira
 
-1. No painel de contexto no lado direito da grade, abra o menu de atalho **chaves estrangeiras**e, em seguida, selecione **adicionar nova chave estrangeira**, como mostra a ilustração a seguir.
+1. No painel de contexto no lado direito da grade de Designer de Tabela da tabela Orders, clique com o botão direito do mouse em **chaves estrangeiras** e selecione **Adicionar nova chave estrangeira**.
 
-     ![Adicionar uma chave estrangeira no Designer de tabela](../data-tools/media/foreignkey.png)
+   ![Adicionar uma chave estrangeira em Designer de Tabela no Visual Studio](../data-tools/media/add-foreign-key.png)
 
-2. Na caixa de texto exibida, substitua **ToTable** por **Clientes**.
+2. Na caixa de texto exibida, substitua o texto pela **tabela** por **clientes**.
 
-3. No painel de T-SQL, atualize a última linha para coincidir com o exemplo a seguir:
+3. No painel T-SQL, atualize a última linha para corresponder ao exemplo a seguir:
 
-    ```sql
-    CONSTRAINT [FK_Orders_Customers] FOREIGN KEY ([CustomerID]) REFERENCES [Customers]([CustomerID])
-    ```
+   ```sql
+   CONSTRAINT [FK_Orders_Customers] FOREIGN KEY ([CustomerID]) REFERENCES [Customers]([CustomerID])
+   ```
 
-4. No canto superior esquerdo dos **Designer de tabela**, selecione o **atualização** botão.
+4. No canto superior esquerdo da **Designer de tabela**, selecione **Atualizar**.
 
-5. No **atualizações de banco de dados de visualização** caixa de diálogo, selecione o **Atualizar banco de dados** botão.
+5. Na caixa de diálogo **Visualizar atualizações do banco de dados** , selecione **Atualizar banco de dados**.
 
-    As alterações são salvas no arquivo do banco de dados local.
+   A chave estrangeira é criada.
 
 ## <a name="populate-the-tables-with-data"></a>Preencher as tabelas com dados
 
-1. Na **Gerenciador de servidores** ou **SQL Server Object Explorer**, expanda o nó para o banco de dados de exemplo.
+1. Em **Gerenciador de servidores** ou **pesquisador de objetos do SQL Server**, expanda o nó do banco de dados de exemplo.
 
-2. Abra o menu de atalho para o **tabelas** nó, selecione **atualize**e, em seguida, expanda o **tabelas** nó.
+2. Abra o menu de atalho para o nó **tabelas** , selecione **Atualizar**e, em seguida, expanda o nó **tabelas** .
 
-3. Abra o menu de atalho para a tabela clientes e, em seguida, selecione **Mostrar dados da tabela**.
+3. Abra o menu de atalho da tabela clientes e selecione **Mostrar dados da tabela**.
 
-4. Adicione os dados que quiser para alguns clientes.
+4. Adicione quaisquer dados desejados para alguns clientes.
 
     É possível especificar cinco caracteres desejados como IDs de cliente, mas escolha pelo menos um do qual é possível se lembrar para uso posteriormente neste procedimento.
 
-5. Abra o menu de atalho da tabela Orders e, em seguida, selecione **Mostrar dados da tabela**.
+5. Abra o menu de atalho da tabela pedidos e selecione **Mostrar dados da tabela**.
 
 6. Adicione dados para alguns pedidos.
 
     > [!IMPORTANT]
     > Verifique se todas as IDs e as quantidades de pedido são inteiros e se cada ID do cliente corresponde a um valor especificado na coluna **CustomerID** da tabela Clientes.
 
-7. Na barra de menus, selecione **arquivo** > **Salvar tudo**.
+7. Na barra de menus, selecione **arquivo**  > **salvar tudo**.
 
 ## <a name="see-also"></a>Consulte também
 

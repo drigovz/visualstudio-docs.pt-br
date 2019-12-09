@@ -14,20 +14,20 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ae0f361d4bbfe48b3133e50c360f66387d555814
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: deb6d8f759080caf1933c75f1f3f05428d3cff9d
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54770767"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300301"
 ---
 # <a name="da0012-significant-amount-of-reflection"></a>DA0012: volume significativo de reflexão
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Id da regra | DA0012 |  
-| Categoria de |. Uso do .NET Framework |  
+ID da regra | DA0012 |  
+| Categoria |. Uso do .NET Framework |  
 | Métodos de criação de perfil | Amostragem |  
-| Mensagem | Você pode estar usando o reflexo excessivamente. Essa é uma operação cara.|  
+| Mensagem | Você pode estar usando reflexão excessivamente. Essa é uma operação cara.|  
 | Tipo de regra | Aviso |  
   
 ## <a name="cause"></a>Causa  
@@ -36,7 +36,7 @@ Id da regra | DA0012 |
 ## <a name="rule-description"></a>Descrição da Regra  
  A reflexão é um recurso flexível do .NET Framework que pode ser usado para realizar a associação tardia do aplicativo a um Assembly dependente em tempo de execução ou para criar e executar dinamicamente novos tipos durante o tempo de execução. No entanto, essas técnicas podem diminuir o desempenho se forem usadas com frequência ou chamadas em loops estreitos.  
   
- Para obter mais informações, consulte a seção [Reflection and Late Binding](http://go.microsoft.com/fwlink/?LinkId=177826) (Reflexão e associação tardia) de Chapter 5 — Improving Managed Code Performance (Capítulo 5 – Melhorando o desempenho de código gerenciado) no volume Improving .NET Application Performance and Scalability (Melhorando o desempenho e a escalabilidade de aplicativos .NET) na biblioteca Microsoft Patterns and Practices (Padrões e Práticas da Microsoft) no MSDN.  
+ Para obter mais informações, consulte a seção [Reflection and Late Binding](https://go.microsoft.com/fwlink/?LinkId=177826) (Reflexão e associação tardia) de Chapter 5 — Improving Managed Code Performance (Capítulo 5 – Melhorando o desempenho de código gerenciado) no volume Improving .NET Application Performance and Scalability (Melhorando o desempenho e a escalabilidade de aplicativos .NET) na biblioteca Microsoft Patterns and Practices (Padrões e Práticas da Microsoft) no MSDN.  
   
 ## <a name="how-to-investigate-a-warning"></a>Como investigar um aviso  
  Clique duas vezes na mensagem da janela Lista de Erros para navegar para a [Exibição de Detalhes da Função](../profiling/function-details-view.md) dos dados de criação de perfil. Examine as funções de chamada do método System.Type ou System.Reflection para encontrar as seções do programa que fazem o uso mais frequente de APIs de Reflexão do .NET. Evite usar métodos que retornam metadados. Quando o desempenho do aplicativo for crítico, talvez seja necessário evitar o uso da associação tardia e a criação de tipos dinamicamente em tempo de execução.

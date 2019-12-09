@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9250382284fffbc3f1761f8143903327fa845832
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: f87513a8124b728568f78bee9efdf48fb35a5301
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436866"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926380"
 ---
 # <a name="msbuild-toolset-toolsversion"></a>MSBuild Toolset (ToolsVersion)
 
@@ -48,7 +48,7 @@ O MSBuild usa um conjunto de ferramentas de tarefas, metas e ferramentas para co
 
 ## <a name="how-the-toolsversion-attribute-works"></a>Como funciona o atributo ToolsVersion
 
- Ao criar um projeto no Visual Studio ou atualizar um projeto existente, um atributo chamado `ToolsVersion` é automaticamente incluído no arquivo de projeto e seu valor corresponde à versão do MSBuild incluída na edição do Visual Studio. Para saber mais, confira [Direcionar a uma versão específica do .NET Framework](../ide/visual-studio-multi-targeting-overview.md).
+ Ao criar um projeto no Visual Studio ou atualizar um projeto existente, um atributo chamado `ToolsVersion` é automaticamente incluído no arquivo de projeto e seu valor corresponde à versão do MSBuild incluída na edição do Visual Studio. Para obter mais informações, confira [Visão geral do direcionamento de estrutura](../ide/visual-studio-multi-targeting-overview.md).
 
  Quando um valor `ToolsVersion` é definido em um arquivo do projeto, o MSBuild usa esse valor para determinar os valores das propriedades do conjunto de ferramentas que estão disponíveis para o projeto. Uma propriedade do conjunto de ferramentas é `$(MSBuildToolsPath)`, que especifica o caminho das ferramentas do .NET Framework. Só essa propriedade do conjunto de ferramentas (ou o `$(MSBuildBinPath)`) é necessária.
 
@@ -60,7 +60,7 @@ O MSBuild usa um conjunto de ferramentas de tarefas, metas e ferramentas para co
 <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 ```
 
- É possível modificar o valor do `MSBuildToolsPath` ao definir um conjunto de ferramentas personalizado. Para saber mais, confira [Configurações padrão e personalizadas do Conjunto de Ferramentas](../msbuild/standard-and-custom-toolset-configurations.md)
+ É possível modificar o valor do `MSBuildToolsPath` ao definir um conjunto de ferramentas personalizado. Para saber mais, confira [Configurações padrão e personalizadas do Conjunto de Ferramentas](../msbuild/standard-and-custom-toolset-configurations.md).
 
  Quando você compila uma solução na linha de comando e especifica um `ToolsVersion` para *msbuild.exe*, todos os projetos e suas dependências projeto a projeto são compilados de acordo com o `ToolsVersion`, mesmo que cada projeto na solução especifique seu próprio `ToolsVersion`. Para definir o valor `ToolsVersion` em uma base por projeto, consulte [Substituir as configurações de ToolsVersion](../msbuild/overriding-toolsversion-settings.md).
 
@@ -106,7 +106,7 @@ Você também pode determinar o conjunto de ferramentas programaticamente, chama
 
 - <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFrameworkSdkFile%2A> retorna o caminho de um arquivo, que normalmente está localizado na pasta das ferramentas gerenciadas.
 
-- <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToBuildTools%2A> retorna o caminho das ferramentas de compilação.
+- [GetPathToBuildTools](/previous-versions/visualstudio/visual-studio-2013/dn251121(v=vs.121)) retorna o caminho das ferramentas de compilação.
 
 ### <a name="sub-toolsets"></a>Subconjunto de ferramentas
 

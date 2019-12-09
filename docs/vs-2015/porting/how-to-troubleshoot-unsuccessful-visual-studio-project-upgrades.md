@@ -1,5 +1,5 @@
 ---
-title: 'Como: Solucionar problemas de atualizações de projeto malsucedidas | Microsoft Docs'
+title: Como solucionar problemas de atualizações de projeto malsucedidas | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -18,17 +18,17 @@ caps.latest.revision: 31
 author: kraigb
 ms.author: kraigb
 manager: jillfra
-ms.openlocfilehash: 194dae93e3a013da366d454582b531a2cc4ff8b6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 16232a72cd37f8d1d68760f032b6050e0bdf74c5
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096329"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300353"
 ---
-# <a name="how-to-troubleshoot-unsuccessful-visual-studio-project-upgrades"></a>Como: Solucionar problemas de atualizações de projeto do Visual Studio malsucedidas
+# <a name="how-to-troubleshoot-unsuccessful-visual-studio-project-upgrades"></a>Como solucionar problemas de atualizações de projeto do Visual Studio malsucedidas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Às vezes, o Visual Studio não pode converter totalmente um projeto de uma versão anterior do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Se as dicas nas seções a seguir não resolverem seu problema específico, você poderá encontrar mais informações sobre o TechNet [Wiki: Portal de desenvolvimento](http://go.microsoft.com/fwlink/?LinkId=254808).
+Às vezes, o Visual Studio não pode converter totalmente um projeto de uma versão anterior do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Se as dicas nas seções a seguir não resolverem o problema específico, você poderá encontrar mais informações no wiki do TechNet [: portal de desenvolvimento](https://go.microsoft.com/fwlink/?LinkId=254808).
 
 ## <a name="the-project-does-not-run-because-files-are-not-found"></a>O projeto não será executado porque os arquivos não foram localizados
  Um arquivo de projeto contém os caminhos de arquivo codificados que o [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] usa para executar o projeto quando você pressiona F5. Esses caminhos podem incluir o local do devenv.exe e outros arquivos necessários. Em uma versão atualizada do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], os caminhos desses arquivos podem ter sido alterados.
@@ -57,4 +57,4 @@ ms.locfileid: "60096329"
    Se você quiser que seu projeto seja executado na versão atualizada do [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], deverá atualizar as referências do projeto, e também atualizar todas as instruções de `Imports` ou `Using` que chamam as referências. Se o projeto for carregado no IDE, você poderá atualizar as referências usando o **Gerenciador de Soluções** ou a caixa de diálogo **Gerenciador de Referências**.
 
 ## <a name="see-also"></a>Consulte também
- [/ Atualização (devenv.exe)](../ide/reference/upgrade-devenv-exe.md) [convertendo para o ASP.NET 4](http://msdn.microsoft.com/library/790147c6-36c1-41b5-a52d-30b9ccd2bd10)
+ [/Upgrade (devenv. exe)](../ide/reference/upgrade-devenv-exe.md) [convertendo para ASP.NET 4](https://msdn.microsoft.com/library/790147c6-36c1-41b5-a52d-30b9ccd2bd10)

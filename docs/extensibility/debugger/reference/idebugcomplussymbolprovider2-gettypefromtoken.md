@@ -6,17 +6,20 @@ helpviewer_keywords:
 - IDebugComPlusSymbolProvider2::GetTypeFromToken
 - GetTypeFromToken
 ms.assetid: 4452bc5d-0225-40e0-a467-c472a5c7c4ee
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 360ee8cb970dd4a1c181061e4ed99d9c6e06b452
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 5212fe733e3590a7b15b5ade55d2bfd2aa4048dc
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62876481"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "66326160"
 ---
 # <a name="idebugcomplussymbolprovider2gettypefromtoken"></a>IDebugComPlusSymbolProvider2::GetTypeFromToken
 Recupera um tipo de dado seu token.
@@ -41,22 +44,18 @@ int GetTypeFromToken(
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
-`appDomain`
+## <a name="parameters"></a>Parâmetros
+`appDomain`\
+[in] Identificador do domínio do aplicativo.
 
- [in] Identificador do domínio do aplicativo.
+`guidModule`\
+[in] Identificador exclusivo do módulo.
 
-`guidModule`
+`tdToken`\
+[in] Token do tipo a ser recuperado.
 
- [in] Identificador exclusivo do módulo.
-
-`tdToken`
-
- [in] Token do tipo a ser recuperado.
-
-`ppField`
-
- [out] Retorna o tipo que é representado pela [IDebugField](../../../extensibility/debugger/reference/idebugfield.md).
+`ppField`\
+[out] Retorna o tipo que é representado pela [IDebugField](../../../extensibility/debugger/reference/idebugfield.md).
 
 ## <a name="return-value"></a>Valor de retorno
 Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.

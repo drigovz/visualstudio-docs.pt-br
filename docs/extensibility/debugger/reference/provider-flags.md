@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - PROVIDER_FLAGS enumeration
 ms.assetid: 8cbd2312-ed2f-4477-b192-c3f25c6098c3
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 803d9569c611e3c4cd70f2c82ecd525716d8ddb3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 8408481efbcaa67ce60d2dbfc9166b5dd0fd5223
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62913521"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66350022"
 ---
 # <a name="providerflags"></a>PROVIDER_FLAGS
 Especifica as propriedades desejadas para serem obtidas de um provedor de programa.
@@ -49,20 +52,27 @@ public enum enum_PROVIDER_FLAGS {
 };
 ```
 
-## <a name="members"></a>Membros
- Sinalizadores de PFLAG_NONE não especificados.
+## <a name="fields"></a>Campos
+ `PFLAG_NONE`\
+ Não há sinalizadores especificados.
 
- O chamador de PFLAG_REMOTE_PORT deseja uma lista de programas em um computador diferente de [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)].
+ `PFLAG_REMOTE_PORT`\
+ Chamador quiser uma lista de programas em um computador diferente de [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)].
 
- PFLAG_DEBUGGEE o processo está sendo depurado no momento por esta instância do [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)].
+ `PFLAG_DEBUGGEE`\
+ O processo está sendo depurado no momento por esta instância do [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)].
 
- PFLAG_ATTACH_TODEBUGGEE [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] é anexado ao programa que está sendo depurado, mas não foi iniciado.
+ `PFLAG_ATTACH_TODEBUGGEE`\
+ [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] é anexado ao programa que está sendo depurado, mas não foi iniciado.
 
- PFLAG_REASON_WATCH [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] está observando para eventos.
+ `PFLAG_REASON_WATCH`\
+ [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] assistir a eventos.
 
- PFLAG_GET_PROGRAM_NODES chamador deseja que o `ProgramNodes` campo do [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md) estrutura.
+ `PFLAG_GET_PROGRAM_NODES`\
+ Chamador deseja que o `ProgramNodes` campo do [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md) estrutura.
 
- PFLAG_GET_IS_DEBUGGER_PRESENT chamador deseja que o `fIsTheDebuggerPresent` campo do `PROVIDER_PROCESS_DATA` estrutura.
+ `PFLAG_GET_IS_DEBUGGER_PRESENT`\
+ Chamador deseja que o `fIsTheDebuggerPresent` campo do `PROVIDER_PROCESS_DATA` estrutura.
 
 ## <a name="remarks"></a>Comentários
  Esses sinalizadores são passados para os seguintes métodos:

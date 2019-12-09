@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - Web performance tests, custom HTTP body editor
 ms.assetid: a0b2d8ff-3e2a-487e-9172-90047174f336
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 2a90d0e02d5ae3ce3ce2e91d4d152244b06fd049
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 357114ad623494a26d98d3b190ed50847a0b27cd
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62950261"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72664789"
 ---
-# <a name="how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor"></a>Como: Criar um editor de corpo HTTP personalizado para o Editor de Testes de Desempenho Web
+# <a name="how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor"></a>Como criar um editor de corpo HTTP personalizado para o Editor de Testes de Desempenho Web
 
 Você pode criar um editor de conteúdo personalizado que permite editar o conteúdo do corpo da cadeia de caracteres ou o conteúdo binário do corpo de uma solicitação de serviço Web, por exemplo, SOAP, REST, asmx, wcf, RIA e outros tipos de solicitação de serviço Web.
 
@@ -43,7 +43,7 @@ Essas interfaces estão contidas no namespace <xref:Microsoft.VisualStudio.TestT
 
 1. Em **Propriedades**, selecione a guia **Aplicativo**.
 
-1. Na lista suspensa **Estrutura de destino**, selecione **.NET Framework 4**.
+1. Na lista suspensa **Estrutura de destino**, selecione .NET Framework 4 (ou posterior).
 
 1. A caixa de diálogo **Alteração da Estrutura de Destino** é exibida.
 
@@ -117,9 +117,9 @@ O MessageEditorControl <xref:System.Windows.Forms.UserControl> criado no primeir
 private MessageEditorControl messageEditorControl
 ```
 
- A instância do messageEditorControl é hospedada na caixa de diálogo de plug-in que é criada pelo método <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin.CreateEditor*>. Além disso, <xref:System.Windows.Forms.RichTextBox> de messageEditorControl é preenchido com o conteúdo em <xref:Microsoft.VisualStudio.TestTools.WebTesting.IHttpBody>. No entanto, a criação do plug-in não pode ocorrer a menos que <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin.SupportsContentType*> retorne `true`. No caso deste editor, <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin.SupportsContentType*> retorna `true` se <xref:Microsoft.VisualStudio.TestTools.WebTesting.IHttpBody.ContentType*> em <xref:Microsoft.VisualStudio.TestTools.WebTesting.IHttpBody> contiver "xml".
+A instância do messageEditorControl é hospedada na caixa de diálogo de plug-in que é criada pelo método <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin.CreateEditor*>. Além disso, <xref:System.Windows.Forms.RichTextBox> de messageEditorControl é preenchido com o conteúdo em <xref:Microsoft.VisualStudio.TestTools.WebTesting.IHttpBody>. No entanto, a criação do plug-in não pode ocorrer a menos que <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin.SupportsContentType*> retorne `true`. No caso deste editor, <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin.SupportsContentType*> retorna `true` se <xref:Microsoft.VisualStudio.TestTools.WebTesting.IHttpBody.ContentType*> em <xref:Microsoft.VisualStudio.TestTools.WebTesting.IHttpBody> contiver "xml".
 
- Quando a edição do corpo da cadeia de caracteres terminar e o usuário clicar em **OK** na caixa de diálogo de plug-in, <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin.GetNewValue*> será chamado para obter o texto editado como uma cadeia de caracteres e atualizar **Corpo da string** na solicitação no Editor de desempenho de teste na Web.
+Quando a edição do corpo da cadeia de caracteres terminar e o usuário clicar em **OK** na caixa de diálogo de plug-in, <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin.GetNewValue*> será chamado para obter o texto editado como uma cadeia de caracteres e atualizar **Corpo da string** na solicitação no Editor de desempenho de teste na Web.
 
 ### <a name="create-a-class-and-implement-the-istringhttpbodyeditorplugin-interface"></a>Criar uma classe e implementar a interface IStringHttpBodyEditorPlugin
 
@@ -264,7 +264,7 @@ Quando a edição do corpo da cadeia de caracteres terminar e o usuário clicar 
 
 ## <a name="build-and-deploy-the-plug-ins"></a>Compilar e implantar os plug-ins
 
-1. No menu **Build**, escolha **Compilar \<nome do projeto da Biblioteca de Controles do Windows Form>**.
+1. No menu **Build**, escolha **Compilar \<nome do projeto da Biblioteca de Controles do Windows Form>** .
 
 2. Feche todas as instâncias do Visual Studio.
 
@@ -285,7 +285,7 @@ Quando a edição do corpo da cadeia de caracteres terminar e o usuário clicar 
 
 3. Quando terminar a gravação, no Editor de Testes de Desempenho Web, expanda a solicitação para o serviço Web e selecione **Corpo da string** ou um **Corpo binário**.
 
-4. Na janela **Propriedades**, selecione Corpo da Cadeia de Caracteres ou Corpo Binário e escolha as reticências **(…)**.
+4. Na janela **Propriedades**, selecione Corpo da Cadeia de Caracteres ou Corpo Binário e escolha as reticências **(…)** .
 
    A caixa de diálogo **Editar corpo de dados HTTP** é exibida.
 
@@ -305,9 +305,9 @@ Para obter mais informações, confira [Página Aplicativo, Designer de Projeto 
 - <xref:System.Windows.Forms.UserControl>
 - <xref:System.Windows.Forms.RichTextBox>
 - [Criar código personalizado e plug-ins para testes de carga](../test/create-custom-code-and-plug-ins-for-load-tests.md)
-- [Como: Criar um plug-in de solicitação](../test/how-to-create-a-request-level-plug-in.md)
+- [Como criar um plug-in no nível da solicitação](../test/how-to-create-a-request-level-plug-in.md)
 - [Codificar uma regra de extração personalizada para um teste de desempenho Web](../test/code-a-custom-extraction-rule-for-a-web-performance-test.md)
 - [Codificar uma regra de validação personalizada para um teste de desempenho Web](../test/code-a-custom-validation-rule-for-a-web-performance-test.md)
-- [Como: Criar um plug-in de teste de carga](../test/how-to-create-a-load-test-plug-in.md)
+- [Como criar um plug-in de teste de carga](../test/how-to-create-a-load-test-plug-in.md)
 - [Gerar e executar um teste de desempenho Web codificado](../test/generate-and-run-a-coded-web-performance-test.md)
-- [Como: Criar um suplemento do Visual Studio para o Visualizador de Resultados do Teste de Desempenho Web](../test/how-to-create-an-add-in-for-the-web-performance-test-results-viewer.md)
+- [Como criar um suplemento do Visual Studio para o Visualizador de Resultados de Teste de Desempenho Web](../test/how-to-create-an-add-in-for-the-web-performance-test-results-viewer.md)

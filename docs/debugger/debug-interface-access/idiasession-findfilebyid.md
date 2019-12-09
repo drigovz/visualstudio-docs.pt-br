@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e3454ff5ef087b67dda5d48849d4a6c4eceb7e52
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: aafdd2270606ba6e56713e9166dbae2b8c635b41
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839349"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742270"
 ---
 # <a name="idiasessionfindfilebyid"></a>IDiaSession::findFileById
-Recupera um arquivo de origem pelo identificador de arquivo de origem.
+Recupera um arquivo de origem por identificador de arquivo de origem.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -34,17 +34,17 @@ HRESULT findFileById ( 
 #### <a name="parameters"></a>Parâmetros
  `uniqueId`
 
-[in] Especifica o identificador de arquivo de origem.
+no Especifica o identificador do arquivo de origem.
 
  `ppResult`
 
-[out] Retorna um [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md) recuperado do objeto que representa o arquivo de origem.
+fora Retorna um objeto [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md) que representa o arquivo de origem recuperado.
 
-## <a name="return-value"></a>Valor de retorno
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários
- O identificador de arquivo de origem é um valor exclusivo usado internamente para o DIA SDK para tornar exclusiva a todos os arquivos de origem. Esse método normalmente é usada internamente para o DIA SDK.
+ O identificador do arquivo de origem é um valor exclusivo usado internamente para a DIA SDK para tornar todos os arquivos de origem exclusivos. Normalmente, esse método é usado internamente para a DIA SDK.
 
 ## <a name="see-also"></a>Consulte também
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)

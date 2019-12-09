@@ -37,19 +37,19 @@ helpviewer_keywords:
 - line numbers
 - virtual space
 ms.assetid: 49ee7306-9d46-4170-850f-a1716171752d
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2ef04af4fda717d3f2fa6a90ba6b9ffdc681d5a6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 22ab23911baab30c7617525d318795b1be708bb9
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62817842"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747846"
 ---
-# <a name="options-text-editor-all-languages"></a>Opções, Editor de Texto, Todos os Idiomas
+# <a name="options-dialog-box-text-editor--all-languages"></a>Caixa de diálogo opções: editor de texto \> todos os idiomas
 
 Esta caixa de diálogo permite alterar o comportamento padrão do Editor de Código. Essas configurações também se aplicam a outros editores baseados no Editor de código, como o modo de exibição de Fonte do Designer de HTML. Para abrir essa caixa de diálogo, selecione **Opções** no menu **Ferramentas**. Dentro da pasta **Editor de Texto**, expanda a subpasta **Todos os Idiomas** e, em seguida, escolha **Geral**.
 

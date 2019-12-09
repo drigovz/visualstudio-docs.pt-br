@@ -1,5 +1,5 @@
 ---
-title: 'Como: Criar um controle de usuário para uma página de aplicativo do SharePoint ou Web Part | Microsoft Docs'
+title: Criar um controle de usuário para a parte de web ou a página de aplicativo do SharePoint
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 17f8acd38df810d0ea7e5c0da2293a5de31eb281
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 3a88a59e9b87a193329433e5eb0625afa1428026
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446513"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401487"
 ---
 # <a name="how-to-create-a-user-control-for-a-sharepoint-application-page-or-web-part"></a>Como: Criar um controle de usuário para uma página ou web part de aplicativo do SharePoint
   Você pode criar controles de usuário personalizados que fornecem funcionalidade personalizada para sua solução do SharePoint, e você pode reutilizar essa funcionalidade dentro de seu projeto. Você pode incluir os controles de usuário em uma web part ou um aplicativo de página, adicione outros controles do ASP.NET e controles do SharePoint e definir propriedades e métodos para o controle. Para obter mais informações sobre controles de usuário, consulte [criem controles reutilizáveis para web parts ou páginas de aplicativo](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md) e [controles de usuário e controles de servidor no SharePoint](https://blogs.msdn.microsoft.com/kaevans/2011/04/28/user-controls-and-server-controls-in-sharepoint/).
@@ -37,7 +37,7 @@ ms.locfileid: "63446513"
 
 4. No **Installed** painel, escolha o **Office/SharePoint** nó.
 
-5. Na lista de modelos do SharePoint, escolha **controle de usuário (somente solução de Farm)**.
+5. Na lista de modelos do SharePoint, escolha **controle de usuário (somente solução de Farm)** .
 
     > [!NOTE]
     > Controles de usuário funcionam somente em soluções de farm.

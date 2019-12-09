@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEngine2::Attach
 ms.assetid: 173dcbda-5019-4c5e-bca9-a071838b5739
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ab1ea05511369d36b881afcaf7c161f796fd4925
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: bc70b27793e722db4a07107d419b383a76207322
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62875320"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66330164"
 ---
 # <a name="idebugengine2attach"></a>IDebugEngine2::Attach
 Anexa um mecanismo de depuração (DE) para um programa ou programas. Chamado pelo Gerenciador de depuração de sessão (SDM) quando o DE estiver em execução no processo para o SDM.
@@ -44,26 +47,21 @@ int Attach( 
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `pProgram`
+## <a name="parameters"></a>Parâmetros
+`pProgram`\
+[in] Uma matriz de [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) objetos que representam os programas a serem anexados à. Esses são programas de porta.
 
- [in] Uma matriz de [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) objetos que representam os programas a serem anexados à. Esses são programas de porta.
+`rgpProgramNodes`\
+[in] Uma matriz de [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) objetos que representam nós de programa, um para cada programa. Os nós de programa nesta matriz representam os mesmos programas como em `pProgram`. Os nós de programa são fornecidos para que o DE possa identificar os programas para anexar a.
 
- `rgpProgramNodes`
+`celtPrograms`\
+[in] Número de programas e/ou nós de programa na `pProgram` e `rgpProgramNodes` matrizes.
 
- [in] Uma matriz de [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) objetos que representam nós de programa, um para cada programa. Os nós de programa nesta matriz representam os mesmos programas como em `pProgram`. Os nós de programa são fornecidos para que o DE possa identificar os programas para anexar a.
+`pCallback`\
+[in] O [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) objeto a ser usado para enviar eventos de depuração para o SDM.
 
- `celtPrograms`
-
- [in] Número de programas e/ou nós de programa na `pProgram` e `rgpProgramNodes` matrizes.
-
- `pCallback`
-
- [in] O [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) objeto a ser usado para enviar eventos de depuração para o SDM.
-
- `dwReason`
-
- [in] Um valor a partir de [ATTACH_REASON](../../../extensibility/debugger/reference/attach-reason.md) enumeração que especifica o motivo para anexar a esses programas. Para obter mais informações, consulte a seção Comentários.
+`dwReason`\
+[in] Um valor a partir de [ATTACH_REASON](../../../extensibility/debugger/reference/attach-reason.md) enumeração que especifica o motivo para anexar a esses programas. Para obter mais informações, consulte a seção Comentários.
 
 ## <a name="return-value"></a>Valor de retorno
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.

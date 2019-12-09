@@ -1,46 +1,42 @@
 ---
-title: Introdução ao Live Unit Testing
+title: Introdução Live Unit Testing
 description: Saiba mais sobre as vantagens do Live Unit Testing e como usá-lo ao testar as unidades dos seus projetos.
 ms.date: 09/11/2017
 ms.topic: conceptual
 helpviewer_keywords:
-- Visual Studio ALM
 - Live Unit Testing
-author: rpetrusha
-ms.author: ronpet
+author: jillre
+ms.author: jillfra
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a5acf1857309236727cd0bab4d9d981d814292b9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: a3bcc86f8d423422eafeb3101bf8512e7341d3b7
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62786075"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653023"
 ---
-# <a name="live-unit-testing-introduction"></a>Introdução ao Live Unit Testing
+# <a name="live-unit-testing-overview"></a>Visão geral de Live Unit Testing
 
-O Live Unit Testing é uma tecnologia que foi introduzida no Visual Studio 2017. Ele executa os testes de unidade automaticamente em tempo real conforme você faz alterações de código.
+Live Unit Testing executa seus testes de unidade automaticamente e em tempo real à medida que você faz alterações de código. Isso permite Refatorar e alterar o código com maior confiança. Live Unit Testing executa automaticamente todos os testes impactados à medida que você edita seu código para garantir que suas alterações não introduzam regressões.
 
-Live Unit Testing:
+Live Unit Testing indica se seus testes de unidade abrangem adequadamente seu código. Ele descreve graficamente a cobertura de código em tempo real. Você pode ver rapidamente quantos testes abrangem cada linha de código e quais linhas não são cobertas por nenhum teste de unidade.
 
-- Permite refatorar e alterar o código com maior confiança. O Live Unit Testing executa automaticamente todos os testes afetados conforme você edita o código para garantir que as alterações não prejudiquem os testes.
-
-- Indica se os testes de unidade cobrem o código adequadamente e mostra o código que não está coberto pelos testes de unidade. O Live Unit Testing representa graficamente a cobertura de código em tempo real para que você possa ver rapidamente quantos testes cobrem cada linha de código e quantas linhas não estão cobertas por nenhum teste de unidade.
-
-Caso tenha uma solução que inclua um ou mais projetos de teste de unidade, habilite o Live Unit Testing selecionando **Teste** > **Live Unit Testing** > **Iniciar** no menu de nível superior do Visual Studio.
+Se você tiver uma solução que inclui um ou mais projetos de teste de unidade, poderá habilitar Live Unit Testing selecionando  >  de **teste** **Live Unit Testing**  > **Iniciar** na barra de menus de nível superior no Visual Studio.
 
 > [!NOTE]
-> O Live Unit Testing está disponível somente na edição do Visual Studio Enterprise.
+> Live Unit Testing só está disponível na edição Visual Studio Enterprise.
 
 Para saber mais sobre o Live Unit Testing:
 
-- Confira o tutorial de introdução, [Introdução ao Live Unit Testing](live-unit-testing-start.md).
+- Experimente um tutorial introdutório: [introdução ao Live Unit Testing](live-unit-testing-start.md).
 
-- Leia a documentação detalhada [Usar o Live Unit Testing no Visual Studio Enterprise Edition](live-unit-testing.md).
+- Leia a documentação detalhada: [Use Live Unit Testing com Visual Studio Enterprise Edition](live-unit-testing.md).
 
-- Leia as [Perguntas frequentes sobre o Live Unit Testing](live-unit-testing-faq.md) para saber as novidades do Live Unit Testing e ler sobre dicas e técnicas.
+- Leia as [perguntas frequentes Live Unit Testing](live-unit-testing-faq.md) para saber o que há de novo no Live Unit Testing, bem como dicas e técnicas.
 
-- Assista ao vídeo do Channel 9 para obter uma visão geral dos Live Unit Testing e de seus recursos. </p>
+- Assista ao vídeo do Channel 9 para obter uma visão geral dos Live Unit Testing e de seus recursos.</p>
 
    > [!VIDEO https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/T105/player]
 

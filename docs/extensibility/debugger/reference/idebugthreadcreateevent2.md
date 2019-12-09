@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugThreadCreateEvent2
 ms.assetid: aee34a14-4f9c-4ad3-845f-c96ee938cefd
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cf213de90d9ec543e24ae2b3f2c0c0b3aed3a84c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c2bff87f7d8bef0c548b973492c15a549430c1e1
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62915480"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66320023"
 ---
 # <a name="idebugthreadcreateevent2"></a>IDebugThreadCreateEvent2
 Essa interface é enviada pelo mecanismo de depuração (DE) para o Gerenciador de sessão de depuração (SDM) quando um thread é criado em um programa que está sendo depurado.

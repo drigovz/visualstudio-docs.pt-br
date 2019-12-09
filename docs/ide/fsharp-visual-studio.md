@@ -5,17 +5,17 @@ ms.date: 07/11/2018
 ms.topic: reference
 helpviewer_keywords:
 - F# features [Visual Studio]
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: dc3a49c586b7a8f5a67d6c1a3a77d00772698389
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 176504ceb7c80a36028e7d5f1806aa598cdf708e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62793378"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72645362"
 ---
 # <a name="develop-with-visual-f-in-visual-studio"></a>Desenvolver com o Visual F# no Visual Studio
 
@@ -41,14 +41,14 @@ Para obter mais informações sobre os modelos de item para acesso a dados, conf
 
 A seguinte tabela resume os recursos nas propriedades do projeto para o F#:
 
-|Configuração do projeto|Compatível com o F#?|Observações|
+|Configuração do projeto|Compatível com o F#?|Anotações|
 |---------------|----------------|-----|
 |Arquivos de recurso|Sim||
 |Configurações de build, depuração e referência|Sim||
 |Multiplataforma|Sim||
 |Ícone e manifesto|Não|Disponível por meio das opções da linha de comando do compilador.|
 |Serviços de Cliente ASP.NET|Não||
-|ClickOnce|Não|Use um projeto de cliente em outra linguagem do .NET Framework, se aplicável.|
+|ClickOnce|Não|Use um projeto de cliente em outra linguagem .NET, se aplicável.|
 |Nomenclatura forte|Não|Disponível por meio das opções da linha de comando do compilador.|
 |Publicação e controle de versão de assembly|Não||
 |Análise de código|Não|As ferramentas de análise de código podem ser executadas manualmente ou como parte de um comando pós-build.|
@@ -60,13 +60,13 @@ O **Designer de Projeto** consiste no agrupamento de várias páginas de proprie
 
 |Página do Designer de Projeto|Links relacionados|Descrição|
 | - |-------------|-----------|
-|Aplicativo|[Página Aplicativo, Designer de Projeto](reference/application-page-project-designer-csharp.md)|Permite que você especifique configurações e propriedades no nível do aplicativo, como se estivesse criando uma biblioteca ou um arquivo executável, qual é a versão de destino do .NET Framework para o aplicativo e informações sobre o local de armazenamento dos arquivos de recurso usados pelo aplicativo.|
+|Aplicativo|[Página Aplicativo, Designer de Projeto](reference/application-page-project-designer-csharp.md)|Permite que você especifique configurações e propriedades no nível do aplicativo, como se estivesse criando uma biblioteca ou um arquivo executável, qual é a versão de destino do .NET para o aplicativo e informações sobre o local de armazenamento dos arquivos de recurso usados pelo aplicativo.|
 |Build|[Página de build, Designer de Projeto](reference/build-page-project-designer-csharp.md)|Permite que você controle como o código é compilado.|
 |Compilar Eventos|[Página Eventos de Build, Designer de Projeto](reference/build-events-page-project-designer-csharp.md)|Permite que você especifique os comandos a serem executados antes ou depois de uma compilação.|
 |Depurar|[Página de Depuração, Designer de Projeto](reference/debug-page-project-designer.md)|Permite que você controle como o aplicativo é executado durante a depuração. Isso inclui os comandos a serem usados e o diretório inicial do aplicativo, bem como os modos de depuração especiais que você deseja habilitar, como o código nativo e o SQL.|
-|Pacote (somente SDK do .NET)|N/D|Permite que você defina metadados do Pacote NuGet durante a publicação como um pacote NuGet.|
+|Pacote (somente SDK do .NET)|N/A|Permite que você defina metadados do Pacote NuGet durante a publicação como um pacote NuGet.|
 |Caminhos de referência|[Gerenciar referências em um projeto](managing-references-in-a-project.md)|Permite que você especifique o local em que pesquisar assemblies dos quais o código depende.|
-|Recursos (somente SDK do .NET)|N/D|Permite que você gere e gerencie um arquivo de recurso padrão.|
+|Recursos (somente SDK do .NET)|N/A|Permite que você gere e gerencie um arquivo de recurso padrão.|
 
 ### <a name="f-specific-settings"></a>Configurações específicas do F#
 
@@ -89,7 +89,7 @@ Há suporte para os seguintes recursos dos editores de código e de texto do Vis
 |Alterar recuo|Recua ou desfaz o recuo das linhas selecionadas.|Sim|
 |Recuo inteligente|Recua e desfaz o recuo do cursor automaticamente, de acordo com as regras de escopo do F#.|Sim|
 |[Localizar e substituir texto](finding-and-replacing-text.md)|Permite que você faça pesquisas em um arquivo, um projeto ou uma solução e, potencialmente, altere o texto.|Sim|
-|Ir para definição de API do .NET Framework|Quando o cursor estiver posicionado em uma API do .NET Framework, essa configuração mostrará o código gerado com base nos metadados do .NET Framework.|Não|
+|Ir para definição da API .NET|Quando o cursor estiver posicionado em uma API .NET, essa configuração mostrará o código gerado com base nos metadados .NET.|Não|
 |Ir para definição de API definida pelo usuário|Quando o cursor estiver em uma entidade de programa definida, essa configuração moverá o cursor para o local no código em que a entidade foi definida.|Sim|
 |Ir para a linha|Permite que você vá para uma linha específica em um arquivo, por número de linha.|Sim|
 |Barras de navegação na parte superior do arquivo|Permite que você vá para locais no código, por exemplo, por nome da função.|Sim|
@@ -146,7 +146,7 @@ A seguinte tabela resume os recursos disponíveis ao depurar o código F#:
 |Entrar em|Permite que você avance a execução e passe para qualquer chamada de função.|Sim|
 |Depuração Parcial|Permite que você avance a execução no registro de ativação atual e passe por qualquer chamada de função.|Sim|
 
-Para obter informações gerais sobre o depurador do Visual Studio, confira [Depuração no Visual Studio](../debugger/index.md).
+Para obter informações gerais sobre o depurador do Visual Studio, confira [Depuração no Visual Studio](../debugger/index.yml).
 
 ## <a name="additional-tools"></a>Ferramentas adicionais
 

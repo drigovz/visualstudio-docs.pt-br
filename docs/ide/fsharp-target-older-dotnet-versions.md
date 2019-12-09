@@ -3,17 +3,18 @@ title: Usar como destino as versões anteriores do .NET Framework no F#
 description: Saiba mais sobre como usar como destino a versão mais antiga do .NET Framework ao usar o F# no Visual Studio.
 ms.date: 07/11/2018
 ms.topic: troubleshooting
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3572e48328317634f036e8c1301d81c38314a21c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+monikerRange: vs-2017
+ms.openlocfilehash: df263ee4b2bd6ec7b6239826725a85c26f0acf80
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62547878"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72603536"
 ---
 # <a name="target-older-versions-of-net-f"></a>Usar como destino as versões mais antigas do .NET (F#)
 
@@ -29,7 +30,7 @@ Esse erro costuma ocorrer na seguinte combinação de condições:
 
 - O projeto é direcionado ao .NET Framework 2.0, 3.0 ou 3.5.
 
-Quando você instala o Visual Studio, ele detecta as versões instaladas do .NET Framework. O Visual Studio instala o tempo de execução do F# 2.0 somente se o .NET Framework 3.5 está instalado e habilitado.
+Quando você instala o Visual Studio, ele detecta as versões instaladas do .NET Framework. O Visual Studio instala o runtime do F# 2.0 somente se o .NET Framework 3.5 está instalado e habilitado.
 
 ## <a name="resolve-the-error"></a>Resolver o erro
 
@@ -37,7 +38,7 @@ Para resolver esse erro, você pode:
 
 - Usar como destino uma versão mais recente do .NET Framework.
 
-- Habilitar o .NET Framework 3.5 no Windows 8.1 e, em seguida, instalar o tempo de execução do F# 2.0 ao reparar a instalação do Visual Studio. Veja a seguir as etapas para fazer isso.
+- Habilitar o .NET Framework 3.5 no Windows 8.1 e, em seguida, instalar o runtime do F# 2.0 ao reparar a instalação do Visual Studio. Veja a seguir as etapas para fazer isso.
 
 ### <a name="to-enable-the-net-framework-35-on-windows-81"></a>Para habilitar o .NET Framework 3.5 no Windows 8.1
 
@@ -51,7 +52,7 @@ Para resolver esse erro, você pode:
 
    O .NET Framework 3.5 será habilitado, caso ainda não estivesse.
 
-### <a name="to-install-the-f-20-runtime"></a>Para instalar o tempo de execução do F# 2.0
+### <a name="to-install-the-f-20-runtime"></a>Para instalar o runtime do F# 2.0
 
 Siga as [etapas para reparar o Visual Studio](../install/repair-visual-studio.md).
 

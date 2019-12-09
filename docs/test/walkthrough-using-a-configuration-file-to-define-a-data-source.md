@@ -1,22 +1,22 @@
 ---
-title: 'Passo a passo: Usando um arquivo de configuração para definir uma fonte de dados'
+title: Usar o arquivo de configuração para definir a fonte de dados
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - configuration files [Visual Studio ALM], defining data sources
 - unit tests, walkthrough
 - data sources, defining with configuration files
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a64d6e46a674ad068c2a90eaf6b011a038d2e46e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 7ba7ee908a96675a77997902fc96cea72309b747
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62976201"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72659593"
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>Passo a passo: Usando um arquivo de configuração para definir uma fonte de dados
 
@@ -32,7 +32,7 @@ Este passo a passo ilustra como usar uma fonte de dados definida em um arquivo *
 
 - Acessando as fontes de dados usando a classe <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute>.
 
-## <a name="prerequisites"></a>Pré-requisitos
+## <a name="prerequisites"></a>Prerequisites
 
 Para concluir esta explicação passo a passo, será necessário:
 
@@ -62,16 +62,16 @@ Examine o arquivo *app.config*. Ele contém pelo menos a declaração XML e um e
 
 2. Dentro do elemento **configSections**, crie um elemento **section**.
 
-3. No elemento **section**, adicione um atributo chamado `name` e atribua a ele um valor igual a `microsoft.visualstudio.testtools`. Adicione outro atributo chamado `type` e atribua a ele um valor igual a `Microsoft.VisualStudio.TestTools.UnitTesting.TestConfigurationSection, Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a`.
+3. No elemento **section**, adicione um atributo chamado `name` e atribua a ele um valor igual a `microsoft.visualstudio.testtools`. Adicione outro atributo chamado `type` e atribua a ele um valor igual a `Microsoft.VisualStudio.TestTools.UnitTesting.TestConfigurationSection, Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions`.
 
 O elemento **section** deverá ser parecido com este:
 
 ```xml
-<section name="microsoft.visualstudio.testtools" type="Microsoft.VisualStudio.TestTools.UnitTesting.TestConfigurationSection, Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"/>
+<section name="microsoft.visualstudio.testtools" type="Microsoft.VisualStudio.TestTools.UnitTesting.TestConfigurationSection, Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions" />
 ```
 
 > [!NOTE]
-> O nome do assembly deve corresponder ao build do Microsoft Visual Studio .NET Framework que você está usando. Defina a versão para 9.0.0.0 se você estiver usando o Visual Studio .NET Framework 3.5. Se você estiver usando o Visual Studio .NET Framework 2.0, defina a versão para 8.0.0.0.
+> O nome do assembly precisa corresponder à versão que está sendo usada.
 
 ## <a name="define-connection-strings"></a>Definir cadeias de conexão
 
@@ -196,7 +196,7 @@ Agora que um arquivo *app.config* foi definido, você criará um teste de unidad
 
 3. Crie dois campos em `MyDataTable` chamados `Arg1` e `Arg2` usando o tipo de dados `Number`.
 
-4. Adicione cinco entidades a `MyDataTable` com os seguintes valores para `Arg1` e `Arg2`, respectivamente: (10,50), (3,2), (6,0), (0,8) e (12312,1000).
+4. Adicione cinco entidades em `MyDataTable` com os seguintes valores para `Arg1` e `Arg2`, respectivamente: (10,50), (3,2), (6,0), (0,8) e (12312,1000).
 
 5. Salve e feche o banco de dados.
 
@@ -210,7 +210,7 @@ Agora que um arquivo *app.config* foi definido, você criará um teste de unidad
 
 3. Crie dois cabeçalhos de coluna e nomeie-os como `Val1` e `Val2` em `Sheet1`.
 
-4. Adicione cinco entidades a `Sheet1` com os seguintes valores para `Val1` e `Val2`, respectivamente: (1,1), (2,2), (3,3), (4,4) e (5,0).
+4. Adicione cinco entidades em `Sheet1` com os seguintes valores para `Val1` e `Val2`, respectivamente: (1,1), (2,2), (3,3), (4,4) e (5,0).
 
 5. Salve e feche a planilha.
 
@@ -270,4 +270,4 @@ Agora que um arquivo *app.config* foi definido, você criará um teste de unidad
 ## <a name="see-also"></a>Consulte também
 
 - [Efetuar teste de unidade em seu código](../test/unit-test-your-code.md)
-- [Como: Criar um teste de unidade controlado por dados](../test/how-to-create-a-data-driven-unit-test.md)
+- [Como criar um teste de unidade controlado por dados](../test/how-to-create-a-data-driven-unit-test.md)

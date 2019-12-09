@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ec4e48bdd1a7f8701f46ed84296f7aad4490d08a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0dce682aad7ab0d049488a6da9b8ab4f3b444d88
+ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62977398"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65531703"
 ---
 # <a name="import-element-msbuild"></a>Elemento Import (MSBuild)
 Importa o conteúdo de um arquivo de projeto para outro arquivo de projeto.
@@ -46,6 +46,7 @@ Importa o conteúdo de um arquivo de projeto para outro arquivo de projeto.
 |---------------|-----------------|
 |`Project`|Atributo obrigatório.<br /><br /> O caminho do arquivo de projeto para importar. O caminho pode incluir caracteres curinga. Os arquivos correspondentes são importados na ordem de classificação. Usando esse recurso, você pode adicionar o código a um projeto simplesmente adicionando o arquivo de código para um diretório.|
 |`Condition`|Atributo opcional.<br /><br /> Uma condição a ser avaliada. Para obter mais informações, consulte [Condições](../msbuild/msbuild-conditions.md).|
+|`Sdk`| Atributo opcional.<br /><br /> Faz referência a um projeto do SDK.|
 
 ### <a name="child-elements"></a>Elementos filho
  Nenhum

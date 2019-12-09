@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugFields::Next | Microsoft Docs
+title: 'IEnumDebugFields:: Next | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugFields::Next method
 ms.assetid: 22c177a2-af81-4234-812b-f9b47be245a2
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a39725f316e63b8c6768471164b69feb47c05728
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 216ce9d49ba9de33307ad692787d6e6d36ee15c3
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62867232"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72727656"
 ---
 # <a name="ienumdebugfieldsnext"></a>IEnumDebugFields::Next
 Esse método retorna o próximo conjunto de elementos da enumeração.
@@ -40,21 +43,18 @@ int Next(
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `celt`
+## <a name="parameters"></a>Parâmetros
+`celt`\
+no O número de elementos a serem recuperados. Também especifica o tamanho máximo da matriz de `rgelt`.
 
- [in] O número de elementos a serem recuperados. Também especifica o tamanho máximo da `rgelt` matriz.
+`rgelt`\
+[entrada, saída] Matriz de elementos [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) a ser preenchida.
 
- `rgelt`
+`pceltFetched`\
+fora Retorna o número de elementos realmente retornados em `rgelt`.
 
- [no, out] Matriz de [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) elementos a serem preenchidos.
-
- `pceltFetched`
-
- [out] Retorna o número de elementos realmente retornados em `rgelt`.
-
-## <a name="return-value"></a>Valor de retorno
- Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se menos do que o número solicitado de elementos podem ser retornados; caso contrário, retornará um código de erro.
+## <a name="return-value"></a>Valor retornado
+ Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se menos do que o número solicitado de elementos puder ser retornado; caso contrário, retorna um código de erro.
 
 ## <a name="see-also"></a>Consulte também
 - [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)

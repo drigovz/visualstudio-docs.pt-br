@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugCodeContexts2::GetCount
 ms.assetid: 74c52fcf-688c-40df-9acd-29b3b84e6216
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f9cf2aef80f833961b9af13da4fa9f9b97e43435
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: a39cf8f75bbe1a606817fbf065fb488bc76a07b8
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62914987"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66322734"
 ---
 # <a name="ienumdebugcodecontexts2getcount"></a>IEnumDebugCodeContexts2::GetCount
 Retorna o número de elementos na enumeração.
@@ -36,10 +39,9 @@ int GetCount(
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `pcelt`
-
- [out] Retorna o número de elementos na enumeração.
+## <a name="parameters"></a>Parâmetros
+`pcelt`\
+[out] Retorna o número de elementos na enumeração.
 
 ## <a name="return-value"></a>Valor de retorno
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.

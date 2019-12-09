@@ -1,61 +1,63 @@
 ---
-title: 'Etapa 11: Executar o programa e experimentar outros recursos'
-ms.date: 11/04/2016
-ms.topic: conceptual
+title: 'Etapa 11: Execute o aplicativo visualizador de imagens e tente outros recursos'
+ms.date: 09/11/2019
 ms.assetid: 656614d0-4fe7-4a67-8edc-c10919377d09
+ms.topic: tutorial
+ms.prod: visual-studio-windows
+ms.technology: vs-ide-general
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ee62d8c5b9a657b09feda01d6275a79ee91b487d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: ad0489cce76642df0dd069e0a05e1e50b55d5d8f
+ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430817"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71118791"
 ---
-# <a name="step-11-run-your-program-and-try-other-features"></a>Etapa 11: Executar o programa e experimentar outros recursos
-O programa é concluído e pronto para ser executado. Você pode executar o programa e definir a cor do plano de fundo de <xref:System.Windows.Forms.PictureBox>. Para saber mais, tente melhorar o programa alterando a cor do formulário, personalizando os botões e a caixa de seleção, e modificando as propriedades do formulário.
+# <a name="step-11-run-your-picture-viewer-app-and-try-other-features"></a>Etapa 11: Execute o aplicativo visualizador de imagens e tente outros recursos
 
- Para baixar uma versão concluída do exemplo, veja [Exemplo de tutorial completo do Visualizador de Imagens](https://code.msdn.microsoft.com/Complete-Picture-Viewer-7d91d3a8).
+Seu aplicativo visualizador de imagens foi concluído e está pronto para ser executado. Você pode executar seu aplicativo e definir a cor do plano de <xref:System.Windows.Forms.PictureBox>fundo do. Para saber mais, tente melhorar o aplicativo alterando a cor do formulário, personalizando os botões e a caixa de seleção e alterando as propriedades do formulário.
 
- ![link para vídeo](../data-tools/media/playvideo.gif) Para obter uma versão em vídeo deste tópico, confira [Tutorial 1: Criar um visualizador de imagens no Visual Basic – Vídeo 5](http://go.microsoft.com/fwlink/?LinkId=205216) ou [Tutorial 1: Criar um visualizador de imagens em C# – Vídeo 5](http://go.microsoft.com/fwlink/?LinkId=205206). Esses vídeos usam uma versão anterior do Visual Studio, portanto, existem pequenas diferenças em alguns comandos de menu e em outros elementos da interface do usuário. No entanto, os conceitos e procedimentos funcionam de maneiras semelhantes na versão atual do Visual Studio.
-
-## <a name="to-run-your-program-and-set-the-background-color"></a>Para executar o programa e definir a cor do plano de fundo
+## <a name="how-to-run-your-app-and-set-the-background-color"></a>Como executar seu aplicativo e definir a cor do plano de fundo
 
 1. Selecione **F5** ou, na barra de menus, selecione **Depurar** > **Iniciar Depuração**.
 
-2. Antes de abrir uma imagem, clique no botão **Definir a cor da tela de fundo**. A caixa de diálogo **Cor** é aberta.
+1. Antes de abrir uma imagem, clique no botão **Definir a cor da tela de fundo**. A caixa de diálogo **Cor** é aberta.
 
-     ![Caixa de diálogo Cor](../ide/media/express_colordialog.png)
-Caixa de diálogo **Cor**
+     ![Caixa de diálogo Cor](../ide/media/express_colordialog.png)<br/>
+***Cor*** do *caixa de diálogo*
 
-3. Escolha uma cor para definir a cor do plano de fundo de PictureBox. Examine cuidadosamente o método `backgroundButton_Click()` para compreender como ele funciona.
+1. Escolha uma cor para definir a cor do plano de fundo de PictureBox. Examine com mais detalhes `backgroundButton_Click()` o método ( `BackgroundButton_Click()`ou,) para entender como ele funciona.
 
     > [!NOTE]
     > Você pode carregar uma imagem da Internet colando sua URL na caixa de diálogo **Abrir Arquivo**. Tente localizar uma imagem com um plano de fundo transparente, para que sua cor do plano de fundo seja exibida.
 
-4. Escolha o botão **Limpar a imagem** para certificar-se de que ela desaparece. Em seguida, sai do programa escolhendo o botão **Fechar**.
+1. Escolha o botão **Limpar a imagem** para certificar-se de que ela desaparece. Em seguida, saia do aplicativo escolhendo o botão **fechar** .
 
-## <a name="to-try-other-features"></a>Para testar outros recursos
+## <a name="try-other-features"></a>Experimentar outros recursos
 
-- Altere a cor do formulário e os botões usando a propriedade **BackColor**.
+* Altere a cor do formulário e os botões usando a propriedade **BackColor**.
 
-- Personalize seus botões e sua caixa de seleção usando as propriedades **Font** e **ForeColor**.
+* Personalize seus botões e sua caixa de seleção usando as propriedades **Font** e **ForeColor**.
 
-- Altere as propriedades **FormBorderStyle** e **ControlBox** do formulário.
+* Altere as propriedades **FormBorderStyle** e **ControlBox** do formulário.
 
-- Use as propriedades **AcceptButton** e **CancelButton** do formulário de modo que os botões sejam escolhidos automaticamente quando o usuário escolher as teclas **Enter** ou **Esc**. Faça o programa abrir a caixa de diálogo **Abrir Arquivo** quando o usuário escolher **Enter** e fechar a caixa quando o usuário escolher **Esc**.
+* Use as propriedades **AcceptButton** e **CancelButton** do formulário de modo que os botões sejam escolhidos automaticamente quando o usuário escolher as teclas **Enter** ou **Esc**. Faça com que o aplicativo Abra a caixa de diálogo **Abrir arquivo** quando o usuário escolher **Enter** e fechar a caixa quando o usuário escolher **ESC**.
 
-## <a name="to-continue-or-review"></a>Para continuar ou revisar
+## <a name="next-steps"></a>Próximas etapas
 
-- Para aprender sobre programação no Visual Studio, veja [Conceitos de programação](https://msdn.microsoft.com/Library/65c12cca-af4f-4017-886e-2dbc00a189d6).
+Para saber mais, continue com o tutorial a seguir:
 
-- Para saber mais sobre o Visual Basic, veja [Desenvolver aplicativos com o Visual Basic](/dotnet/visual-basic/developing-apps/index).
+> [!div class="nextstepaction"]
+> [Tutorial 2: Criar um teste de matemática cronometrado](../ide/tutorial-2-create-a-timed-math-quiz.md)
 
-- Para saber mais sobre o Visual [Introdução à linguagem C# e ao .NET Framework](/dotnet/csharp/getting-started/introduction-to-the-csharp-language-and-the-net-framework).
+Para retornar à etapa anterior do tutorial, confira [Etapa 10: Escrever o código dos botões adicionais e de uma caixa de seleção](../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md).
 
-- Para passar para o próximo tutorial, confira [Tutorial 2: Criar um teste de matemática temporizado](../ide/tutorial-2-create-a-timed-math-quiz.md).
+## <a name="see-also"></a>Consulte também
 
-- Para retornar à etapa anterior do tutorial, confira [Etapa 10: Escrever o código dos botões adicionais e de uma caixa de seleção](../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md).
+* [Mais C# tutoriais](/visualstudio/get-started/csharp/)
+* [Mais tutoriais Visual Basic](/visualstudio/get-started/visual-basic/)
+* [C++destina](/cpp/get-started/tutorial-console-cpp)

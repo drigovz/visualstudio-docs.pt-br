@@ -3,75 +3,75 @@ title: Visão geral do Designer Relacional de Objetos
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 45e477c0-5c6b-41f9-b2d0-2808fb4f6537
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4105a93d4ad459c8bc1cb3a7a20b37c69f311c12
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c02dbc42d629385671403de7131b27a449313591
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62566378"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72648295"
 ---
 # <a name="linq-to-sql-tools-in-visual-studio"></a>Ferramentas do LINQ to SQL no Visual Studio
 
-O LINQ to SQL foi a primeira tecnologia de mapeamento relacional de objeto lançada pela Microsoft. Ele funciona bem em cenários básicos e continua a ter suporte no Visual Studio, mas ele não está mais sob desenvolvimento ativo. Use o LINQ to SQL durante a manutenção de um aplicativo herdado que já está usando, ou em aplicativos simples que usam o SQL Server e não exigem mapeamento de várias tabela. Em geral, os novos aplicativos devem usar o Entity Framework quando uma camada de mapeador relacional de objeto é necessária.
+LINQ to SQL foi a primeira tecnologia de mapeamento relacional de objeto lançada pela Microsoft. Ele funciona bem em cenários básicos e continua a ter suporte no Visual Studio, mas não está mais sob o desenvolvimento ativo. Use LINQ to SQL ao manter um aplicativo herdado que já o esteja usando, ou em aplicativos simples que usam SQL Server e não exigem mapeamento de várias tabelas. Em geral, novos aplicativos devem usar o Entity Framework quando uma camada de mapeador relacional de objeto é necessária.
 
-No Visual Studio, você cria classes LINQ to SQL que representam tabelas SQL usando o **Object Relational Designer** (**Relational Designer**).
+No Visual Studio, você cria LINQ to SQL classes que representam tabelas SQL usando o **Object Relational Designer** (**o/R Designer**).
 
-O **Relational Designer** tem duas áreas distintas na superfície de design: o painel das entidades à esquerda e o painel de métodos à direita. O painel das entidades é a principal superfície de design que exibe as classes de entidade, as associações, e hierarquias de herança. O painel de métodos é a superfície de design que exibe os métodos do <xref:System.Data.Linq.DataContext> que são mapeados para os procedimentos armazenados e as funções.
+O o **/R Designer** tem duas áreas distintas em sua superfície de design: o painel entidades à esquerda e o painel métodos à direita. O painel das entidades é a principal superfície de design que exibe as classes de entidade, as associações, e hierarquias de herança. O painel de métodos é a superfície de design que exibe os métodos do <xref:System.Data.Linq.DataContext> que são mapeados para os procedimentos armazenados e as funções.
 
-O **Relational Designer** fornece uma superfície de design visual para a criação [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index) classes de entidade e associações (relações) que são baseadas em objetos em um banco de dados. Em outras palavras, o **Relational Designer** cria um modelo de objeto em um aplicativo que mapeia para objetos em um banco de dados. Ele também gera um tipo mais acentuado <xref:System.Data.Linq.DataContext> que envia e recebe dados entre as classes de entidade e o banco de dados. O **Relational Designer** também fornece funcionalidade para mapear procedimentos armazenados e funções para <xref:System.Data.Linq.DataContext> métodos para retornar dados e preencher classes de entidade. Por fim, o **Relational Designer** fornece a capacidade de criar relações de herança entre classes de entidade.
+O o **/R Designer** fornece uma superfície de Design Visual para criar [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index) classes de entidade e associações (relações) que se baseiam em objetos em um banco de dados. Em outras palavras, o **/R Designer** cria um modelo de objeto em um aplicativo que mapeia para objetos em um banco de dados. Ele também gera um <xref:System.Data.Linq.DataContext> fortemente tipado que envia e recebe dados entre as classes de entidade e o banco de dado. O o **/R Designer** também fornece funcionalidade para mapear procedimentos armazenados e funções para <xref:System.Data.Linq.DataContext> métodos para retornar dados e preencher classes de entidade. Por fim, o o **/R Designer** fornece a capacidade de projetar relações de herança entre classes de entidade.
 
-## <a name="open-the-or-designer"></a>Abra o designer relacional de objetos
+## <a name="open-the-or-designer"></a>Abrir o o/R Designer
 
-Para adicionar um LINQ no modelo de entidade do SQL ao seu projeto, escolha **Project** > **Adicionar Novo Item**e, em seguida, selecione **Classes LINQ to SQL** da lista de itens de projeto:
+Para adicionar um modelo de entidade LINQ to SQL ao seu projeto, escolha **projeto**  > **Adicionar novo item**e, em seguida, selecione **LINQ to SQL classes** na lista de itens de projeto:
 
 ![Classes do LINQ to SQL](../data-tools/media/raddata-linq-to-sql-classes.png)
 
-O Visual Studio cria uma *dbml* de arquivo e o adiciona à sua solução. Este é o arquivo de mapeamento de XML e seus arquivos de código relacionadas.
+O Visual Studio cria um arquivo *. dbml* e o adiciona à sua solução. Este é o arquivo de mapeamento XML e seus arquivos de código relacionados.
 
-![Classes LINQ to SQL no Gerenciador de soluções](../data-tools/media/raddata-linq-to-sql-classes-in-solution-explorer.png)
+![LINQ to SQL classes no Gerenciador de Soluções](../data-tools/media/raddata-linq-to-sql-classes-in-solution-explorer.png)
 
-Quando você seleciona o *dbml* do arquivo, o Visual Studio mostra o **Relational Designer** superfície que permite que você crie visualmente o modelo. A ilustração a seguir mostra o designer após o Northwind `Customers` e `Orders` foram arrastadas de tabelas **Gerenciador de servidores**. Observe a relação entre as tabelas.
+Quando você seleciona o arquivo *. dbml* , o Visual Studio mostra a superfície **o/R Designer** que permite que você crie visualmente o modelo. A ilustração a seguir mostra o designer após a `Customers` Northwind e `Orders` tabelas foram arrastadas de **Gerenciador de servidores**. Observe a relação entre as tabelas.
 
 ![Designer do LINQ to SQL](../data-tools/media/raddata-linq-to-sql-designer.png)
 
 > [!IMPORTANT]
-> O **Relational Designer** é um mapeador relacional de objeto simples, pois suporta apenas as relações de mapeamento de 1:1. Em outras palavras, uma classe de entidade pode ter apenas uma relação de mapeamento de 1:1 com uma tabela ou exibição de banco de dados. Não há suporte para o mapeamento complexo, como o mapeamento de uma classe de entidade associado a uma tabela, Use o Entity Framework para o mapeamento complexo. Além disso, o designer é um gerador de código unidirecional. Isso significa que somente as alterações feitas à superfície de designer são refletidas no arquivo de código. Alterações manuais ao arquivo de código não são refletidas na **Relational Designer**. As alterações que você fizer manualmente no arquivo de código são substituídas quando o designer é salvo e o código for gerado novamente. Para obter informações sobre como adicionar código de usuário e estender as classes geradas pela **Relational Designer**, consulte [como: Estender o código gerado pelo Designer relacional de objetos](../data-tools/how-to-extend-code-generated-by-the-o-r-designer.md).
+> O o **/R Designer** é um mapeador relacional de objeto simples, pois dá suporte apenas a relações de mapeamento 1:1. Em outras palavras, uma classe de entidade pode ter apenas uma relação de mapeamento de 1:1 com uma tabela ou exibição de banco de dados. Não há suporte para mapeamento complexo, como mapear uma classe de entidade para uma tabela unida; Use o Entity Framework para mapeamento complexo. Além disso, o designer é um gerador de código unidirecional. Isso significa que somente as alterações feitas à superfície de designer são refletidas no arquivo de código. As alterações manuais no arquivo de código não são refletidas no **designer o/R**. As alterações feitas manualmente no arquivo de código são substituídas quando o designer é salvo e o código é regenerado. Para obter informações sobre como adicionar código de usuário e estender as classes geradas pela **Relational Designer**, consulte [como: Estender o código gerado pelo Designer Relacional de Objetos](../data-tools/how-to-extend-code-generated-by-the-o-r-designer.md).
 
 ## <a name="create-and-configure-the-datacontext"></a>Criar e configurar o DataContext
 
-Depois de adicionar um **Classes LINQ to SQL** item a um projeto e abrir os **Relational Designer**, a superfície de design vazio representa vazio <xref:System.Data.Linq.DataContext> pronto para ser configurado. O <xref:System.Data.Linq.DataContext> é configurado com as informações de conexão fornecidas pelo primeiro item que é arrastado para a superfície de design. Portanto, o <xref:System.Data.Linq.DataContext> é configurado usando as informações de conexão do primeiro item solto na superfície de design. Para obter mais informações sobre o <xref:System.Data.Linq.DataContext> classe, consulte [métodos de DataContext (Designer relacional de objetos)](../data-tools/datacontext-methods-o-r-designer.md).
+Depois de adicionar um item de **classes de LINQ to SQL** a um projeto e abrir o o **/R Designer**, a superfície de design vazia representa um <xref:System.Data.Linq.DataContext> vazio pronto para ser configurado. O <xref:System.Data.Linq.DataContext> é configurado com as informações de conexão fornecidas pelo primeiro item que é arrastado para a superfície de design. Portanto, o <xref:System.Data.Linq.DataContext> é configurado usando as informações de conexão do primeiro item solto na superfície de design. Para obter mais informações sobre a classe <xref:System.Data.Linq.DataContext>, consulte [métodos DataContext (o/R Designer)](../data-tools/datacontext-methods-o-r-designer.md).
 
-## <a name="create-entity-classes-that-map-to-database-tables-and-views"></a>Criar classes de entidade que são mapeados para tabelas de banco de dados e exibições
+## <a name="create-entity-classes-that-map-to-database-tables-and-views"></a>Criar classes de entidade que são mapeadas para exibições e tabelas de banco de dados
 
-Você pode criar classes de entidade mapeadas para tabelas e exibições arrastando tabelas de banco de dados e exibições da **Gerenciador de servidores** ou **Database Explorer** até o **Relational Designer**. Conforme indicado na seção anterior, o <xref:System.Data.Linq.DataContext> é configurado com as informações de conexão fornecidas pelo primeiro item que é arrastado para a superfície de design. Se um item subsequente que usa uma conexão diferente é adicionado para o **Relational Designer**, você pode alterar a conexão para o <xref:System.Data.Linq.DataContext>. Para obter mais informações, confira [Como: Criar classes LINQ to SQL mapeadas para tabelas e exibições (Designer Relacional de Objetos)](../data-tools/how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md).
+Você pode criar classes de entidade mapeadas para tabelas e exibições arrastando tabelas e exibições de banco de dados de **Gerenciador de servidores** ou **Gerenciador de banco de dados** para o o **/R Designer**. Conforme indicado na seção anterior, a <xref:System.Data.Linq.DataContext> é configurada com as informações de conexão fornecidas pelo primeiro item que é arrastado para a superfície de design. Se um item subsequente que usa uma conexão diferente for adicionado ao o **/R Designer**, você poderá alterar a conexão para o <xref:System.Data.Linq.DataContext>. Para obter mais informações, consulte [como: criar classes de LINQ to SQL mapeadas para tabelas e exibições (O/R Designer)](../data-tools/how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md).
 
-## <a name="create-datacontext-methods-that-call-stored-procedures-and-functions"></a>Criar métodos DataContext que chamam procedimentos armazenados e funções
+## <a name="create-datacontext-methods-that-call-stored-procedures-and-functions"></a>Criar métodos DataContext que chamam procedimentos e funções armazenados
 
-Você pode criar <xref:System.Data.Linq.DataContext> métodos que chamam (são mapeados) procedimentos armazenados e funções arrastando-as da **Gerenciador de servidores** ou **Gerenciador de banco de dados** até a **O/R Designer** . Procedimentos armazenados e funções são adicionadas para o **Relational Designer** como métodos do <xref:System.Data.Linq.DataContext>.
+Você pode criar <xref:System.Data.Linq.DataContext> métodos que chamam (são mapeados para) procedimentos armazenados e funções arrastando-os de **Gerenciador de servidores** ou **Gerenciador de banco de dados** para o o **/R Designer**. Os procedimentos armazenados e funções são adicionados ao o **/R Designer** como métodos do <xref:System.Data.Linq.DataContext>.
 
 > [!NOTE]
-> Quando você arrasta procedimentos armazenados e funções do **Gerenciador de servidores** ou **Database Explorer** até o **Relational Designer**, o tipo de retorno de gerado <xref:System.Data.Linq.DataContext> método difere dependendo de onde você solta o item. Para obter mais informações, consulte [métodos de DataContext (Designer relacional de objetos)](../data-tools/datacontext-methods-o-r-designer.md).
+> Quando você arrasta procedimentos armazenados e funções de **Gerenciador de servidores** ou **Gerenciador de banco de dados** para o o **/R Designer**, o tipo de retorno do método de <xref:System.Data.Linq.DataContext> gerado difere dependendo de onde você solta o item. Para obter mais informações, consulte [métodos DataContext (O/R Designer)](../data-tools/datacontext-methods-o-r-designer.md).
 
-## <a name="configure-a-datacontext-to-use-stored-procedures-to-save-data-between-entity-classes-and-a-database"></a>Configurar um DataContext para usar procedimentos armazenados para salvar os dados entre as classes de entidade e um banco de dados
+## <a name="configure-a-datacontext-to-use-stored-procedures-to-save-data-between-entity-classes-and-a-database"></a>Configurar um DataContext para usar procedimentos armazenados a fim de salvar dados entre classes de entidade e um banco de dados
 
-Conforme observado anteriormente, você pode criar os métodos de <xref:System.Data.Linq.DataContext> que chamam procedimentos armazenados e funções. Além disso, você também pode atribuir procedimentos armazenados que são usados para o padrão LINQ para o comportamento de tempo de execução SQL, que executa inserções, atualizações e exclusões. Para obter mais informações, confira [Como: Atribuir procedimentos armazenados para executar atualizações, inserções e exclusões (Designer Relacional de Objetos)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md).
+Conforme observado anteriormente, você pode criar os métodos de <xref:System.Data.Linq.DataContext> que chamam procedimentos armazenados e funções. Além disso, você também pode atribuir procedimentos armazenados que são usados para o comportamento padrão LINQ to SQL tempo de execução, que executa inserções, atualizações e exclusões. Para obter mais informações, consulte [como: atribuir procedimentos armazenados para executar atualizações, inserções e exclusões (O/R Designer)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md).
 
 ## <a name="inheritance-and-the-or-designer"></a>Herança e Designer Relacional de Objetos
 
-Como outros objetos, classes LINQ to SQL pode usar a herança e ser derivado de outras classes. Em uma base de dados, as relações de herança são criadas de várias maneiras. O **Relational Designer** suporta o conceito de herança de tabela única como geralmente é implementado em sistemas relacionais. Para obter mais informações, confira [Como: Configurar a herança usando o Designer Relacional de Objetos](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md).
+Assim como outros objetos, LINQ to SQL classes podem usar a herança e serem derivadas de outras classes. Em uma base de dados, as relações de herança são criadas de várias maneiras. O o **/R Designer** dá suporte ao conceito de herança de tabela única, pois ela geralmente é implementada em sistemas relacionais. Para obter mais informações, consulte [como: configurar a herança usando o o/R Designer](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md).
 
 ## <a name="linq-to-sql-queries"></a>Consultas do LINQ to SQL
 
-As classes de entidade criadas pelo **Relational Designer** são projetados para uso com [Language-Integrated query (LINQ)](/dotnet/csharp/linq/). Para obter mais informações, confira [Como: Consultar informações](/dotnet/framework/data/adonet/sql/linq/how-to-query-for-information).
+As classes de entidade criadas pelo o **/R Designer** são projetadas para uso com [LINQ (consulta integrada à linguagem)](/dotnet/csharp/linq/). Para obter mais informações, consulte [como consultar informações](/dotnet/framework/data/adonet/sql/linq/how-to-query-for-information).
 
-## <a name="separate-the-generated-datacontext-and-entity-class-code-into-different-namespaces"></a>Separar o código da classe DataContext e de entidade gerado em namespaces diferentes
+## <a name="separate-the-generated-datacontext-and-entity-class-code-into-different-namespaces"></a>Separar o DataContext gerado e o código de classe de entidade em namespaces diferentes
 
-O **Relational Designer** fornece o **Namespace de contexto** e **Namespace da entidade** propriedades no <xref:System.Data.Linq.DataContext>. Essas propriedades que determinam o namespace <xref:System.Data.Linq.DataContext> e o código de classe de entidade são gerados. Por padrão, essas propriedades são vazios e <xref:System.Data.Linq.DataContext> e classes de entidade são gerados no namespace do aplicativo. Para gerar código em um namespace diferente do namespace do aplicativo, insira um valor nas propriedades do **Namespace do Contexto** e/ou do **Namespace da Entidade**.
+O o **/R Designer** fornece as propriedades de namespace de **contexto** e de **namespace de entidade** no <xref:System.Data.Linq.DataContext>. Essas propriedades que determinam o namespace <xref:System.Data.Linq.DataContext> e o código de classe de entidade são gerados. Por padrão, essas propriedades são vazios e <xref:System.Data.Linq.DataContext> e classes de entidade são gerados no namespace do aplicativo. Para gerar código em um namespace diferente do namespace do aplicativo, insira um valor nas propriedades do **Namespace do Contexto** e/ou do **Namespace da Entidade**.
 
 ## <a name="reference-content"></a>Conteúdo de referência
 

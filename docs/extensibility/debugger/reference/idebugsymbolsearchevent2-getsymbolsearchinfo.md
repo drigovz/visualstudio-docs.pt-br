@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugSymbolSearchEvent2::GetSymbolSearchInfo
 ms.assetid: ae9eb72b-f2aa-43b8-87ca-da19d2e78d17
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d917a3f33d0c4339420c048fe20184245bb8dac1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 9dcd584e600849ad30f83adef768671dc8f2ab57
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62868401"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66320393"
 ---
 # <a name="idebugsymbolsearchevent2getsymbolsearchinfo"></a>IDebugSymbolSearchEvent2::GetSymbolSearchInfo
 Chamado por um manipulador de eventos para recuperar os resultados de um processo de carregamento de símbolo.
@@ -40,21 +43,18 @@ int GetSymbolSearchInfo(
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `pModule`
+## <a name="parameters"></a>Parâmetros
+`pModule`\
+[out] Um objeto IDebugModule3 que representa o módulo para o qual os símbolos foram carregados.
 
- [out] Um objeto IDebugModule3 que representa o módulo para o qual os símbolos foram carregados.
-
- `pbstrDebugMessage`
-
- [no, out] Retorna uma cadeia de caracteres que contém todas as mensagens de erro do módulo. Se não houver nenhum erro, essa cadeia de caracteres conterá apenas o nome do módulo, mas nunca está vazia.
+`pbstrDebugMessage`\
+[no, out] Retorna uma cadeia de caracteres que contém todas as mensagens de erro do módulo. Se não houver nenhum erro, essa cadeia de caracteres conterá apenas o nome do módulo, mas nunca está vazia.
 
 > [!NOTE]
 > [C++] `pbstrDebugMessage` não pode ser `NULL` e deve ser liberado com `SysFreeString`.
 
- `pdwModuleInfoFlags`
-
- [out] Uma combinação de sinalizadores do [MODULE_INFO_FLAGS](../../../extensibility/debugger/reference/module-info-flags.md) enumeração que indica se todos os símbolos foram carregados.
+`pdwModuleInfoFlags`\
+[out] Uma combinação de sinalizadores do [MODULE_INFO_FLAGS](../../../extensibility/debugger/reference/module-info-flags.md) enumeração que indica se todos os símbolos foram carregados.
 
 ## <a name="return-value"></a>Valor de retorno
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retornará um código de erro.

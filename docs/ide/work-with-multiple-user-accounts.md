@@ -1,18 +1,18 @@
 ---
 title: Trabalhar com várias contas de usuário
-ms.date: 12/10/2018
+ms.date: 07/23/2019
 ms.topic: conceptual
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 371cdc85648b8b058267540b305162adf371c4f6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 5993d550d85cdc0bd1c9ce6b72553eda6fc280e5
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62581813"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647073"
 ---
 # <a name="work-with-multiple-user-accounts"></a>Trabalhar com várias contas de usuário
 
@@ -33,7 +33,7 @@ Entre no Visual Studio com uma conta da Microsoft ou uma conta organizacional. V
 
 ### <a name="access-your-azure-account-in-server-explorer"></a>Acessar sua conta do Azure no Gerenciador de Servidores
 
-Pressione **Ctrl**+**Alt**+**S** para abrir o **Gerenciador de Servidores**. Expanda o nó **Azure** e observe que ele contém os recursos disponíveis na conta do Azure associada à conta que você usou para entrar no Visual Studio. Ele é semelhante à seguinte imagem:
+Para abrir o Gerenciador de Servidores, escolha **Exibir** > **Gerenciador de Servidores** (ou, se você está usando as [configurações de ambiente](../ide/environment-settings.md) "Geral", pressione **Ctrl**+**Alt**+**S**). Expanda o nó **Azure** e observe que ele contém os recursos disponíveis na conta do Azure associada à conta que você usou para entrar no Visual Studio. Ele é semelhante à seguinte imagem:
 
 ![Gerenciador de Servidores com o nó do Azure expandido](../ide/media/work-with-multiple-user-accounts/server-explorer.png)
 
@@ -55,7 +55,19 @@ Na próxima vez que você abrir o **Gerenciador de Servidores**, os recursos des
 
 O AAD (Azure Active Directory) habilita o suporte para logon único do usuário final em aplicativos Web ASP.NET MVC ou a autenticação do AD em serviços de API Web. A autenticação de domínio é diferente da autenticação de conta de usuário individual. Os usuários que têm acesso ao domínio do Active Directory podem usar suas contas existentes do AAD para se conectarem aos aplicativos Web. Os aplicativos do Office 365 também podem usar a autenticação de domínio.
 
-Para ver isso em ação, crie um projeto de **Aplicativo Web ASP.NET**. Na caixa de diálogo **Novo Projeto ASP.NET**, escolha **Alterar Autenticação**. O assistente de autenticação aparece e habilita você a escolher o tipo de autenticação a ser usado em seu aplicativo.
+::: moniker range="vs-2017"
+
+Para ver isso em ação, crie um projeto de **Aplicativo Web ASP.NET Core**. Na caixa de diálogo **Novo Aplicativo Web ASP.NET Core**, escolha o modelo **Aplicativo Web** e escolha **Alterar Autenticação**.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Para ver isso em ação, crie um projeto de **Aplicativo Web ASP.NET Core**. Na página **Criar um Aplicativo Web do ASP.NET Core**, escolha o modelo **Aplicativo Web** e escolha **Alterar** em **Autenticação**.
+
+::: moniker-end
+
+A caixa de diálogo **Alterar Autenticação** aparece e nela você pode escolher o tipo de autenticação a ser usado no aplicativo.
 
 ![Caixa de diálogo Alterar autenticação para ASP.NET](../ide/media/vs2015_change_authentication.png)
 

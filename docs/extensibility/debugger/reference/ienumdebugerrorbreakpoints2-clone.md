@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugErrorBreakpoints2::Clone
 ms.assetid: f6fb4985-8dd6-4a9b-98e0-15dbc64cc9ec
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ce1b25c032dcdd7b2b9d1b2908904d1eaee6cd9e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 4955048f82d14c56e832ce7312e630b647d6b32d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62867284"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66336535"
 ---
 # <a name="ienumdebugerrorbreakpoints2clone"></a>IEnumDebugErrorBreakpoints2::Clone
 Retorna uma cópia da enumeração atual como um objeto separado.
@@ -36,10 +39,9 @@ int Clone(
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `ppEnum`
-
- [out] Retorna uma cópia dessa enumeração como um objeto separado.
+## <a name="parameters"></a>Parâmetros
+`ppEnum`\
+[out] Retorna uma cópia dessa enumeração como um objeto separado.
 
 ## <a name="return-value"></a>Valor de retorno
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.

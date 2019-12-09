@@ -1,5 +1,5 @@
 ---
-title: 'Como: Configurar propriedades do projeto de fluxo de trabalho (herdado) | Microsoft Docs'
+title: 'Como: configurar propriedades do projeto de fluxo de trabalho (Herdado) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-workflow-designer
@@ -12,28 +12,28 @@ helpviewer_keywords:
 - projects, configuring properties
 ms.assetid: 850f5c96-8e5b-4126-bc16-fd2c26e6e656
 caps.latest.revision: 5
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: f551b868b415eaf600a9345aff4ac4f0d61ff234
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 850e9314e4cccfa09903638dab91eaca7334cee5
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62931068"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72663428"
 ---
-# <a name="how-to-configure-workflow-project-properties-legacy"></a>Como: Configurar propriedades do projeto de fluxo de trabalho (herdado)
-Siga estas etapas para exibir ou alterar as propriedades que são associadas com projetos de fluxo de trabalho.  
-  
-### <a name="to-view-or-modify-workflow-project-properties"></a>Para exibir ou alterar as propriedades do projeto de fluxo de trabalho  
-  
-1. Se **Gerenciador de soluções** janela não estiver visível, selecione **Gerenciador de soluções** sobre o **exibição** menu.  
-  
-2. No **Gerenciador de Soluções**, selecione um projeto.  
-  
-3. Se **propriedades** janela não estiver visível, selecione **janela propriedades** sobre o **exibição** menu.  
-  
-4. No projeto **propriedades** janela, exibir e modificar as propriedades que você deseja alterar.  
-  
-## <a name="see-also"></a>Consulte também  
+# <a name="how-to-configure-workflow-project-properties-legacy"></a>Como: Configurar propriedades de Projeto de fluxo de trabalho (o legados)
+Siga estas etapas para exibir ou alterar as propriedades que são associadas com projetos de fluxo de trabalho.
+
+### <a name="to-view-or-modify-workflow-project-properties"></a>Para exibir ou alterar as propriedades do projeto de fluxo de trabalho
+
+1. Se **Gerenciador de soluções** janela não estiver visível, selecione **Gerenciador de soluções** no menu **Exibir** .
+
+2. No **Gerenciador de Soluções**, selecione um projeto.
+
+3. Se a janela **Propriedades** não estiver visível, selecione **janela Propriedades** no menu **Exibir** .
+
+4. Na janela **Propriedades** do projeto, exiba e modifique as propriedades que você deseja alterar.
+
+## <a name="see-also"></a>Consulte também
  [Criando projetos herdados de fluxo de trabalho](../workflow-designer/creating-legacy-workflow-projects.md)

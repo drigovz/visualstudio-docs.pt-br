@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 69dac79a040a8eff68c36c82b9a85935d969b5ec
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: e4254a121ce29578438f4ee7264345aa30bafd7e
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63399186"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739617"
 ---
-# <a name="idiasymbolgetobjectpointertype"></a>IDiaSymbol::get_objectPointerType
-Recupera o tipo do ponteiro do objeto para um método de classe.
+# <a name="idiasymbolget_objectpointertype"></a>IDiaSymbol::get_objectPointerType
+Recupera o tipo do ponteiro de objeto para um método de classe.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -33,16 +33,16 @@ HRESULT get_objectPointerType ( 
 #### <a name="parameters"></a>Parâmetros
  `pRetVal`
 
-[out] Retorna um [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) objeto que representa o ponteiro de objeto para um método de classe.
+fora Retorna um objeto [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) que representa o ponteiro de objeto para um método de classe.
 
-## <a name="return-value"></a>Valor de retorno
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE` ou um código de erro.
 
 > [!NOTE]
-> Um valor de retorno `S_FALSE` significa que a propriedade não está disponível para o símbolo.
+> Um valor de retorno de `S_FALSE` significa que a propriedade não está disponível para o símbolo.
 
 ## <a name="remarks"></a>Comentários
- Essa propriedade se aplica apenas aos símbolos com um [enumeração SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) tipo de `SymTagFunctionType`.
+ Essa propriedade só se aplica a símbolos com um tipo de [Enumeração SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) de `SymTagFunctionType`.
 
 ## <a name="see-also"></a>Consulte também
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -6,17 +6,20 @@ helpviewer_keywords:
 - IDebugCustomAttributeQuery::IsCustomAttributeDefined
 - IsCustomAttributeDefined
 ms.assetid: c7425db6-4347-4f69-8f88-337ddaa34fa6
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8a907d6460a9bf31e501ed4c2239cb31112a39f5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 5f4359d2360f1186404229397bbb00f916fbcea8
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62876031"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66346070"
 ---
 # <a name="idebugcustomattributequeryiscustomattributedefined"></a>IDebugCustomAttributeQuery::IsCustomAttributeDefined
 Determina se o atributo personalizado especificado é definido.
@@ -35,10 +38,9 @@ int IsCustomAttributeDefined(
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
-`pszCustomAttributeName`
-
- [in] Nome do atributo personalizado.
+## <a name="parameters"></a>Parâmetros
+`pszCustomAttributeName`\
+[in] Nome do atributo personalizado.
 
 ## <a name="return-value"></a>Valor de retorno
 Se o atributo personalizado é definido, retornará `S_OK`; caso contrário, retorna `S_FALSE`.

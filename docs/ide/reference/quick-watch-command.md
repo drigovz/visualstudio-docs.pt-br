@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Quick Watch command
 - Debug.Quickwatch command
 ms.assetid: 9670ac3a-8f2f-4874-974d-cb87d3b0cde1
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e45a6c63cb1f886c1440b93d58f944458f61290
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 1de6841f25bcc6f6c45bde93fdd4cf2cb49481ab
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62811694"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747814"
 ---
 # <a name="quick-watch-command"></a>Comando Inspeção Rápida
 Exibe o texto selecionado ou especificado no campo Expressão da janela [QuickWatch](../../debugger/watch-and-quickwatch-windows.md). Você pode usar essa caixa de diálogo para calcular o valor atual de uma variável ou expressão reconhecida pelo depurador ou o conteúdo de um registro. Além disso, você pode alterar o valor de qualquer variável não const ou o conteúdo de qualquer registro.
@@ -30,12 +30,13 @@ Debug.QuickWatchq [text]
 ```
 
 ## <a name="arguments"></a>Arguments
- `text`
 
- Opcional. O texto a ser adicionado à caixa de diálogo **Inspeção Rápida**.
+`text`\
+Opcional. O texto a ser adicionado à caixa de diálogo **Inspeção Rápida**.
 
 ## <a name="remarks"></a>Comentários
- Se `text` for omitido, o texto selecionado atualmente ou a palavra no cursor é adicionada à janela Inspeção.
+
+Se `text` for omitido, o texto selecionado atualmente ou a palavra no cursor é adicionada à janela Inspeção.
 
 ## <a name="example"></a>Exemplo
 

@@ -12,11 +12,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9c43ba87fea6af474975c759cc18dab74b12e8eb
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54782485"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68145654"
 ---
 # <a name="callercallee-view---net-memory-sampling-data"></a>Exibição Chamador/Receptor da Chamada – dados de amostragem da memória do .NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ A exibição de Chamador/Computador Chamado exibe dados de criação de perfil d
   
  Clique duas vezes em uma linha de função de chamador ou computador chamado para tornar essa linha a função atual.  
   
-|Column|Descrição|  
+|Column|DESCRIÇÃO|  
 |------------|-----------------|  
 |**ID do Processo**|A ID de processo (PID) da criação de perfil.|  
 |**Nome do Processo**|O nome do processo.|  
@@ -52,7 +52,7 @@ A exibição de Chamador/Computador Chamado exibe dados de criação de perfil d
 |**Bytes Exclusivos**|–   Para a função atual, o número de bytes de memória que foram alocados pela função na execução de criação de perfil. Esse número não inclui memória alocada por funções chamadas pela função atual.<br />–   Para uma função do chamador, o número de bytes exclusivos da função atual que foram gerados por chamadas da função do chamador.<br />–   Para uma função do computador chamado, o número de bytes alocados por instâncias da função que foram gerados por chamadas da função atual. O número não inclui os bytes alocados por funções chamadas pela função do computador chamado.|  
 |**% de Bytes Exclusivos**|O percentual de todos os bytes de memória que foram alocados na execução de criação de perfil que eram alocações exclusivas dessa função.|  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Veja também  
  [Como personalizar as colunas de exibição do relatório](../profiling/how-to-customize-report-view-columns.md)   
  [Exibição Chamador/Receptor da Chamada – dados de instrumentação da memória do .NET](../profiling/caller-callee-view-net-memory-instrumentation-data.md)   
  [Exibição de chamador/computador chamado – dados de amostragem](../profiling/caller-callee-view-sampling-data.md)   

@@ -11,12 +11,12 @@ helpviewer_keywords:
 ms.assetid: 262ada44-7689-44d8-bacb-9c6d33834d4e
 caps.latest.revision: 11
 manager: jillfra
-ms.openlocfilehash: f9d930765a427d32836f464a424b5cd898090ac5
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 5046a35cbc681ede4aff85023feeccd71a61b5b2
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436543"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65693821"
 ---
 # <a name="upgrading-custom-projects"></a>Atualizando projetos personalizados
 Se você alterar as informações mantidas no arquivo de projeto entre diferentes versões do Visual Studio do seu produto, em seguida, você precisa dar suporte à atualização de seu arquivo de projeto do ambiente antigo para a nova versão. Para dar suporte à atualização que permite que você participe de **Assistente de conversão do Visual Studio**, implementar o <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> interface. Essa interface contém o único mecanismo disponível para a atualização da cópia. A atualização do projeto ocorre como parte da solução é aberta. O <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> interface é implementada pela fábrica de projeto ou pelo menos deve ser obtido da fábrica de projeto.  
@@ -109,7 +109,7 @@ Se você alterar as informações mantidas no arquivo de projeto entre diferente
   4. As chamadas de ambiente `IVsProjectUpgrade::UpgradeProject` pela segunda vez determinar se o objeto de projeto deve ser atualizado. No entanto, essa chamada é feita em um novo em segundo lugar, a instância do projeto, Projeto2. Esse é o projeto que é aberto na solução.  
   
       > [!NOTE]
-      > Na instância do seu primeiro projeto, Projeto1, é colocado no estado inativo, em seguida, você deve retornar <xref:Microsoft.VisualStudio.VSConstants.S_OK> da primeira chamada para seu <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade.UpgradeProject%2A> implementação. Ver [projeto básico](http://msdn.microsoft.com/385fd2a3-d9f1-4808-87c2-a3f05a91fc36) para a implementação de `IVsProjectUpgrade::UpgradeProject`.  
+      > Na instância do seu primeiro projeto, Projeto1, é colocado no estado inativo, em seguida, você deve retornar <xref:Microsoft.VisualStudio.VSConstants.S_OK> da primeira chamada para seu <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade.UpgradeProject%2A> implementação. Ver [projeto básico](https://msdn.microsoft.com/385fd2a3-d9f1-4808-87c2-a3f05a91fc36) para a implementação de `IVsProjectUpgrade::UpgradeProject`.  
   
   5. Você chama <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> e passar um valor de <xref:Microsoft.VisualStudio.Shell.Interop.tagVSQueryEditFlags> para o `rgfQueryEdit` parâmetro.  
   
@@ -118,6 +118,6 @@ Se você alterar as informações mantidas no arquivo de projeto entre diferente
   Se você não conseguir atualizar, retorne <xref:Microsoft.VisualStudio.Shell.Interop.VSErrorCodes> de `IVsProjectUpgrade::UpgradeProject`. Se nenhuma atualização é necessária ou se você optar por não atualizar, trate o `IVsProjectUpgrade::UpgradeProject` chamar como inoperante. Se você retornar <xref:Microsoft.VisualStudio.Shell.Interop.VSErrorCodes>, um nó de espaço reservado é adicionado à solução para seu projeto.  
   
 ## <a name="see-also"></a>Consulte também  
- [Assistente de conversão do Visual Studio](http://msdn.microsoft.com/4acfd30e-c192-4184-a86f-2da5e4c3d83c)   
+ [Assistente de conversão do Visual Studio](https://msdn.microsoft.com/4acfd30e-c192-4184-a86f-2da5e4c3d83c)   
  [Atualizando itens de projeto](../misc/upgrading-project-items.md)   
  [Projetos](../extensibility/internals/projects.md)

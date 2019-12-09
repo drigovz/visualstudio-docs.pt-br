@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8860668452a22413db8c6fc3d0fdc664c7ba36dd
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 5675239e35ab3bef809e3d54544d87d7a9e8bb75
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63401382"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740389"
 ---
-# <a name="idiasymbolgetinlspec"></a>IDiaSymbol::get_InlSpec
-Essa função recupera um sinalizador que indica se a função foi marcada como embutido (usando um dos [inline, inline, \__forceinline](/cpp/cpp/inline-functions-cpp) atributos).
+# <a name="idiasymbolget_inlspec"></a>IDiaSymbol::get_InlSpec
+Essa função recupera um sinalizador que indica se a função foi marcada como embutida (usando um dos atributos [inline, __inline, \__forceinline](/cpp/cpp/inline-functions-cpp) ).
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -33,20 +33,20 @@ HRESULT get_inlSpec(
 #### <a name="parameters"></a>Parâmetros
  `pRetVal`
 
-[out] Retorna `TRUE` se a função foi marcada como embutido; caso contrário, retornará `FALSE`.
+fora Retorna `TRUE` se a função foi marcada como embutida; caso contrário, retorna `FALSE`.
 
-## <a name="return-value"></a>Valor de retorno
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE` ou código de erro.
 
 > [!NOTE]
-> Um valor de retorno `S_FALSE` significa que a propriedade não está disponível para o símbolo.
+> Um valor de retorno de `S_FALSE` significa que a propriedade não está disponível para o símbolo.
 
 ## <a name="requirements"></a>Requisitos
 
 |Requisito|Descrição|
 |-----------------|-----------------|
 |Cabeçalho:|dia2.h|
-|Versão:|V DIA SDK 8.0|
+|Versão:|DIA SDK v 8.0|
 
 ## <a name="see-also"></a>Consulte também
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

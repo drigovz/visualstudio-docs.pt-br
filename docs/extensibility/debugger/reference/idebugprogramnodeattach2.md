@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramNodeAttach2 interface
 ms.assetid: 46b37ac9-a026-4ad3-997b-f19e2f8deb73
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 255d057154b9814cb81325a737324c18de470bc8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0d42b204ee0c36bc4c006704e663f41c87a83a60
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62869783"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66325153"
 ---
 # <a name="idebugprogramnodeattach2"></a>IDebugProgramNodeAttach2
 Permite que um nó de programa ser notificado de uma tentativa de anexar ao programa associado.

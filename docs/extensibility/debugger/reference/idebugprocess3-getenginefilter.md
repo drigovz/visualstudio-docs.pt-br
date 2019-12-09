@@ -6,17 +6,20 @@ helpviewer_keywords:
 - GetEngineFilter
 - IDebugProcess3::GetEngineFilter
 ms.assetid: ccb7ecb0-f189-4e80-b5b2-221a095e01f5
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 30dfd7b9605cf26f5cc562e6768d1f035f6b484e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: e2b468f28e50b77edf4b35fbb7274767f773bd56
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62917670"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66313922"
 ---
 # <a name="idebugprocess3getenginefilter"></a>IDebugProcess3::GetEngineFilter
 Recupera uma matriz de identificadores exclusivos de mecanismos de depuração disponíveis.
@@ -35,10 +38,9 @@ public int GetEngineFilter(
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `pEngineArray`
-
- [out] Referência a uma estrutura que contém identificadores exclusivos para mecanismos de depuração.
+## <a name="parameters"></a>Parâmetros
+`pEngineArray`\
+[out] Referência a uma estrutura que contém identificadores exclusivos para mecanismos de depuração.
 
 ## <a name="return-value"></a>Valor de retorno
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.

@@ -1,5 +1,5 @@
 ---
-title: Personalizar como o Visual Studio 2015 cria legendas para controles ligados a dados | Microsoft Docs
+title: Personalizar como o Visual Studio 2015 cria legendas para controles vinculados a dados | Microsoft Docs
 titleSuffix: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -17,114 +17,114 @@ helpviewer_keywords:
 - Data Sources Window, label captions
 ms.assetid: 6d4d15f8-4d78-42fd-af64-779ae98d62c8
 caps.latest.revision: 15
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 960100db5a257ab30431c1edee2bce9ded21d46d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 04f32fa0426039f50c0a0352ef0b04900d705a98
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431175"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72657436"
 ---
 # <a name="customize-how-visual-studio-creates-captions-for-data-bound-controls"></a>Personalizar como o Visual Studio cria legendas para controles associados a dados
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Quando você arrasta itens dos [janela fontes de dados](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992) para o Designer de formulários do Windows, uma consideração especial entra em ação: os nomes de coluna nos rótulos de legenda são reformatados para uma cadeia de caracteres mais legível quando duas ou mais palavras são encontrado para ser concatenados. Você pode personalizar a maneira na qual esses rótulos são criados, definindo o **SmartCaptionExpression**, **SmartCaptionReplacement**, e **SmartCaptionSuffix** valores em o **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\10.0\Data Designers** chave do registro.
+Quando você arrasta itens da [janela fontes de dados](https://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992) para a designer de formulários do Windows, uma consideração especial entra em cena: os nomes de coluna nos rótulos de legenda são reformatados em uma cadeia de caracteres mais legível quando duas ou mais palavras são encontradas como concatenadas Unido. Você pode personalizar a maneira como esses rótulos são criados, definindo os valores **SmartCaptionExpression**, **SmartCaptionReplacement**e **SmartCaptionSuffix** no **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\ 10.0 \** chave do registro de data designers.
 
 > [!NOTE]
-> Essa chave do registro não existe até que você criá-lo.
+> Essa chave do registro não existe até que você a crie.
 
- Títulos inteligentes são controlados pela expressão regular inserida no valor da **SmartCaptionExpression** valor. Adicionando o **Designers de dados** chave do Registro substitui a expressão regular padrão que controla os rótulos de legenda. Para obter mais informações sobre expressões regulares, consulte [usando expressões regulares no Visual Studio](../ide/using-regular-expressions-in-visual-studio.md).
+ A legenda inteligente é controlada pela expressão regular inserida no valor do valor **SmartCaptionExpression** . A adição da chave do registro dos **Data designers** substitui a expressão regular padrão que controla os rótulos de legenda. Para obter mais informações sobre expressões regulares, consulte [usando expressões regulares no Visual Studio](../ide/using-regular-expressions-in-visual-studio.md).
 
- A tabela a seguir descreve os valores do registro que controlam os rótulos de legenda.
+ A tabela a seguir descreve os valores de registro que controlam os rótulos de legenda.
 
 |Item do registro|Descrição|
 |-------------------|-----------------|
-|**SmartCaptionExpression**|A expressão regular usada para corresponder aos seus padrões.|
-|**SmartCaptionReplacement**|O formato para exibir quaisquer grupos correspondidos na **SmartCaptionExpression**.|
-|**SmartCaptionSuffix**|Uma cadeia de caracteres opcional para acrescentar ao final da legenda.|
+|**SmartCaptionExpression**|A expressão regular usada para corresponder seus padrões.|
+|**SmartCaptionReplacement**|O formato para exibir todos os grupos correspondentes na **SmartCaptionExpression**.|
+|**SmartCaptionSuffix**|Uma cadeia de caracteres opcional a ser acrescentada ao final da legenda.|
 
- A tabela a seguir lista as configurações padrão interno para esses valores do registro.
+ A tabela a seguir lista as configurações padrão internas para esses valores de registro.
 
 |Item do registro|Valor padrão|Explicação|
 |-------------------|-------------------|-----------------|
-|**SmartCaptionExpression**|(\\\p{Ll})(\\\p{Lu})&#124;_+|Corresponde a um caractere minúsculo seguido por um caractere maiusculo ou um sublinhado.|
-|**SmartCaptionReplacement**|$1 $2|$1 representa quaisquer caracteres correspondidos no primeiro parênteses da expressão e US $2 representa quaisquer caracteres correspondidos no segundo parênteses. A substituição é a primeira correspondência, um espaço e, em seguida, a segunda correspondência.|
-|**SmartCaptionSuffix**|:|Representa um caractere acrescentado à cadeia de caracteres retornada. Por exemplo, se a legenda for `Company Name`, o sufixo torna `Company Name:`|
+|**SmartCaptionExpression**|(\\ \p{Ll}) (\\ \p{Lu}) &#124;_+|Corresponde a um caractere minúsculo seguido por um caractere maiúsculo ou um sublinhado.|
+|**SmartCaptionReplacement**|$1 $2|O $1 representa os caracteres correspondentes nos primeiros parênteses da expressão, e o $2 representa os caracteres correspondidos no segundo parênteses. A substituição é a primeira correspondência, um espaço e a segunda correspondência.|
+|**SmartCaptionSuffix**|:|Representa um caractere acrescentado à cadeia de caracteres retornada. Por exemplo, se a legenda for `Company Name`, o sufixo a tornará `Company Name:`|
 
 > [!CAUTION]
-> Você deve ser muito cuidado ao fazer qualquer coisa no Editor do registro. Faça backup do registro antes de editá-lo. Se você usar o Editor do Registro incorretamente, você pode causar sérios problemas que talvez exijam a reinstalação do sistema operacional. A Microsoft não garante que os problemas que causam usando o Editor do Registro incorretamente podem ser resolvidos. Use o Editor do Registro por sua conta e risco.
+> Você deve ter muito cuidado ao fazer qualquer coisa no editor do registro. Faça backup do registro antes de editá-lo. Se você usar o editor do registro incorretamente, poderá causar sérios problemas que podem exigir a reinstalação do sistema operacional. A Microsoft não garante que os problemas que você causa usando o editor do registro incorretamente possam ser resolvidos. Use o Editor do Registro por sua conta e risco.
 >
-> O seguinte artigo da Base de conhecimento contém instruções para fazer backup, edição e a restauração do registro: [Descrição do registro do Microsoft Windows](http://support.microsoft.com/default.aspx?scid=kb;en-us;256986) (http://support.microsoft.com/default.aspx?scid=kb; en-us; 256986)
+> O artigo da base de conhecimento a seguir contém instruções para fazer backup, editar e restaurar o registro: [Descrição do registro do Microsoft Windows](http://support.microsoft.com/default.aspx?scid=kb;en-us;256986) (http://support.microsoft.com/default.aspx?scid=kb; en-us; 256986)
 
-### <a name="to-modify-the-smart-captioning-behavior-of-the-data-sources-window"></a>Para modificar o comportamento de Legendagem oculta inteligente da janela fontes de dados
+### <a name="to-modify-the-smart-captioning-behavior-of-the-data-sources-window"></a>Para modificar o comportamento de legenda inteligente da janela fontes de dados
 
-1. Abra uma janela de comando clicando **inicie** e, em seguida **executar**.
+1. Abra uma janela de comando clicando em **Iniciar** e em **executar**.
 
-2. Tipo de `regedit` no **execute** caixa de diálogo e clique em **Okey**.
+2. Digite `regedit` na caixa de diálogo **executar** e clique em **OK**.
 
-3. Expanda o **HKEY_CURRENT_USER** nó.
+3. Expanda o nó **HKEY_CURRENT_USER** .
 
-4. Expanda o **Software** nó.
+4. Expanda o nó **software** .
 
-5. Expanda o **Microsoft** nó.
+5. Expanda o nó **Microsoft** .
 
-6. Expanda o **VisualStudio** nó.
+6. Expanda o nó **VisualStudio** .
 
-7. Clique com botão direito do **10.0** nó e crie um novo **chave** chamado `Data Designers`.
+7. Clique com o botão direito do mouse no nó **10,0** e crie uma nova **chave** chamada `Data Designers`.
 
-8. Com o botão direito do **Designers de dados** nó e crie um novo **valor de cadeia de caracteres** chamado `SmartCaptionExpression`.
+8. Clique com o botão direito do mouse no nó **Data designers** e crie um novo **valor de cadeia de caracteres** chamado `SmartCaptionExpression`.
 
-9. Com o botão direito do **Designers de dados** nó e crie um novo **valor de cadeia de caracteres** chamado `SmartCaptionReplacement`.
+9. Clique com o botão direito do mouse no nó **Data designers** e crie um novo **valor de cadeia de caracteres** chamado `SmartCaptionReplacement`.
 
-10. Com o botão direito do **Designers de dados** nó e crie um novo **valor de cadeia de caracteres** chamado `SmartCaptionSuffix`.
+10. Clique com o botão direito do mouse no nó **Data designers** e crie um novo **valor de cadeia de caracteres** chamado `SmartCaptionSuffix`.
 
-11. Clique com botão direito do **SmartCaptionExpression** item e, em seguida, selecione **modificar**.
+11. Clique com o botão direito do mouse no item **SmartCaptionExpression** e selecione **Modificar**.
 
-12. Insira a expressão regular que você deseja que o **fontes de dados** janela a ser usado.
+12. Insira a expressão regular que você deseja que a janela **fontes de dados** use.
 
-13. Clique com botão direito do **SmartCaptionReplacement** item e, em seguida, selecione **modificar**.
+13. Clique com o botão direito do mouse no item **SmartCaptionReplacement** e selecione **Modificar**.
 
-14. Insira a substituição de cadeia de caracteres formatada da maneira que você deseja exibir os padrões de correspondência em sua expressão regular.
+14. Insira a cadeia de caracteres de substituição formatada da maneira que você deseja exibir os padrões correspondentes em sua expressão regular.
 
-15. Clique com botão direito do **SmartCaptionSuffix** item e, em seguida, selecione **modificar**.
+15. Clique com o botão direito do mouse no item **SmartCaptionSuffix** e selecione **Modificar**.
 
-16. Insira qualquer caractere que você deseja que apareça no final da legenda.
+16. Insira os caracteres que você deseja que apareçam no final da legenda.
 
-     Na próxima vez que você arrasta itens dos **fontes de dados** janela, os rótulos de legenda são criados usando os novos valores de registro fornecidos.
+     Na próxima vez que você arrastar itens da janela **fontes de dados** , os rótulos de legenda serão criados usando os novos valores de registro fornecidos.
 
-### <a name="to-turn-off-the-smart-captioning-feature"></a>Para desativar o recurso de Legendagem oculta inteligente
+### <a name="to-turn-off-the-smart-captioning-feature"></a>Para desativar o recurso de legenda inteligente
 
-1. Abra uma janela de comando clicando **inicie** e, em seguida **executar**.
+1. Abra uma janela de comando clicando em **Iniciar** e em **executar**.
 
-2. Tipo de `regedit` no **execute** caixa de diálogo e clique em **Okey**.
+2. Digite `regedit` na caixa de diálogo **executar** e clique em **OK**.
 
-3. Expanda o **HKEY_CURRENT_USER** nó.
+3. Expanda o nó **HKEY_CURRENT_USER** .
 
-4. Expanda o **Software** nó.
+4. Expanda o nó **software** .
 
-5. Expanda o **Microsoft** nó.
+5. Expanda o nó **Microsoft** .
 
-6. Expanda o **VisualStudio** nó.
+6. Expanda o nó **VisualStudio** .
 
-7. Clique com botão direito do **10.0** nó e crie um novo **chave** chamado `Data Designers`.
+7. Clique com o botão direito do mouse no nó **10,0** e crie uma nova **chave** chamada `Data Designers`.
 
-8. Com o botão direito do **Designers de dados** nó e crie um novo **valor de cadeia de caracteres** chamado `SmartCaptionExpression`.
+8. Clique com o botão direito do mouse no nó **Data designers** e crie um novo **valor de cadeia de caracteres** chamado `SmartCaptionExpression`.
 
-9. Com o botão direito do **Designers de dados** nó e crie um novo **valor de cadeia de caracteres** chamado `SmartCaptionReplacement`.
+9. Clique com o botão direito do mouse no nó **Data designers** e crie um novo **valor de cadeia de caracteres** chamado `SmartCaptionReplacement`.
 
-10. Com o botão direito do **Designers de dados** nó e crie um novo **valor de cadeia de caracteres** chamado `SmartCaptionSuffix`.
+10. Clique com o botão direito do mouse no nó **Data designers** e crie um novo **valor de cadeia de caracteres** chamado `SmartCaptionSuffix`.
 
-11. Clique com botão direito do **SmartCaptionExpression** item e, em seguida, selecione **modificar**.
+11. Clique com o botão direito do mouse no item **SmartCaptionExpression** e selecione **Modificar**.
 
 12. Insira `(.*)` para o valor. Isso corresponderá à cadeia de caracteres inteira.
 
-13. Clique com botão direito do **SmartCaptionReplacement** item e, em seguida, selecione **modificar**.
+13. Clique com o botão direito do mouse no item **SmartCaptionReplacement** e selecione **Modificar**.
 
-14. Insira `$1` para o valor. Isso substitui a cadeia de caracteres com o valor correspondente, que é a cadeia de caracteres inteira para que ela permanecerá inalterada.
+14. Insira `$1` para o valor. Isso substitui a cadeia de caracteres pelo valor correspondente, que é a cadeia de caracteres inteira para que ela permaneça inalterada.
 
-     Na próxima vez que você arrasta itens dos **fontes de dados** janela, os rótulos de legenda são criados com legendas não modificadas.
+     Na próxima vez que você arrastar itens da janela **fontes de dados** , os rótulos de legenda serão criados com legendas não modificadas.
 
 ## <a name="see-also"></a>Consulte também
  [Associar controles a dados no Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)

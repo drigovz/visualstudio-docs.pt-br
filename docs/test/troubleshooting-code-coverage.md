@@ -2,21 +2,21 @@
 title: Solução de problemas de cobertura de código
 ms.date: 11/04/2016
 ms.topic: troubleshooting
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: 8721d85c7fb3aba513a15fe276adbb2b17496351
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+author: jillre
+ms.openlocfilehash: 9a7e90310df3e9e2e73b653fdc651ba266e679ae
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62990493"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72659874"
 ---
 # <a name="troubleshoot-code-coverage"></a>Solução de problemas de cobertura de código
 
-A ferramenta de análise da cobertura de código no Visual Studio coleta dados para assemblies nativos e gerenciados (arquivos *.dll* ou *.exe*). No entanto, em alguns casos, a janela **Resultados da Cobertura de Código** exibe um erro semelhante a "Resultados vazios gerados: ..." Há várias razões pelas quais você pode obter resultados vazios. Este artigo ajuda você a resolver esses problemas.
+A ferramenta de análise da cobertura de código no Visual Studio coleta dados para assemblies nativos e gerenciados (arquivos *.dll* ou *.exe*). No entanto, em alguns casos, a janela **resultados da cobertura de código** exibe um erro semelhante a "resultados vazios gerados:...." Há várias razões pelas quais você pode obter resultados vazios. Este artigo ajuda você a resolver esses problemas.
 
 ## <a name="what-you-should-see"></a>O que você deve ver
 
@@ -29,7 +29,8 @@ Para obter mais informações, confira [Usar a cobertura de código para determi
 ## <a name="possible-reasons-for-seeing-no-results-or-old-results"></a>Possíveis motivos para não ver resultados ou ver resultados anteriores
 
 ### <a name="do-you-have-the-right-edition-of-visual-studio"></a>Você tem a edição certa do Visual Studio?
- Você precisa do Visual Studio Enterprise.
+
+Você precisa do Visual Studio Enterprise.
 
 ### <a name="no-tests-were-executed"></a>Nenhum teste foi executado
 
@@ -43,7 +44,7 @@ Resolução&mdash;No Gerenciador de Testes, escolha **Executar Tudo** para verif
 
 Quando você modificar e reexecutar os testes, um resultado anterior da cobertura de código poderá permanecer visível, inclusive a coloração de código com base nessa execução anterior.
 
-1. Executar Analisar Cobertura de Código.
+1. Execute **analisar cobertura de código**.
 
 2. Não se esqueça de selecionar o conjunto de resultados mais recente na janela **Resultados da Cobertura de Código**.
 
@@ -56,6 +57,8 @@ Explicação – O mecanismo de cobertura de código exige que todo assembly ten
 O arquivo *.pdb* precisa ser gerado do mesmo build dos arquivos *.dll* ou *.exe*.
 
 Resolução – Garanta que as configurações de build gerem o arquivo *.pdb*. Se os arquivos *.pdb* não forem atualizados quando o projeto for compilado, abra as propriedades do projeto, selecione a página **Build**, escolha **Avançado** e inspecione **Informações de Depuração**.
+
+Para C++ projetos, verifique se os arquivos. pdb gerados têm informações de depuração completas. Abra as propriedades do projeto e verifique se o **vinculador**  > **depuração**  > **gerar informações de depuração** está definido para **gerar informações de depuração otimizadas para compartilhamento e publicação (/debug: Full)** .
 
 Se os arquivos *.pdb* e *.dll* ou *.exe* estiverem em locais diferentes, copie o arquivo *.pdb* para o mesmo diretório. Também é possível configurar o mecanismo de cobertura de código para pesquisar arquivos *.pdb* em outro local. Para obter mais informações, confira [Personalizar a análise de cobertura de código](../test/customizing-code-coverage-analysis.md).
 
@@ -97,11 +100,11 @@ Resolução&mdash;Existem dois tipos possíveis de falhas:
 
 - **Erro na expressão regular**
 
-     Cada cadeia de caracteres no arquivo é uma expressão regular. Examine cada um em busca de erros e, em especial, procure:
+  Cada cadeia de caracteres no arquivo é uma expressão regular. Examine cada um em busca de erros e, em especial, procure:
 
-    - Parênteses incompatíveis (...) ou parênteses sem escape \\(…\\). Se quiser corresponder um parêntese na cadeia de pesquisa, você deverá usar o escape. Por exemplo, para realizar a correspondência de uma função, use: `.*MyFunction\(double\)`
+  - Parênteses incompatíveis (...) ou parênteses sem escape \\(…\\). Se quiser corresponder um parêntese na cadeia de pesquisa, você deverá usar o escape. Por exemplo, para realizar a correspondência de uma função, use: `.*MyFunction\(double\)`
 
-    - Asterisco ou sinal de adição no início de uma expressão. Para comparar qualquer cadeia de caracteres, use um ponto seguido de um asterisco: `.*`
+  - Asterisco ou sinal de adição no início de uma expressão. Para comparar qualquer cadeia de caracteres, use um ponto seguido de um asterisco: `.*`
 
 ### <a name="custom-runsettings-file-with-incorrect-exclusions"></a>Arquivo .runsettings personalizado com exclusões incorretas
 

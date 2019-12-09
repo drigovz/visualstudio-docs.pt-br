@@ -1,5 +1,5 @@
 ---
-title: 'Como: Depurar um controle ActiveX | Microsoft Docs'
+title: Como depurar um controle ActiveX | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -24,14 +24,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c76167468d9eb6fbe93c3bef0c4ae8c15634fc5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 75abf76516d3827a748e1b896d4c2e8c93bb34da
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62894424"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72733876"
 ---
-# <a name="how-to-debug-an-activex-control"></a>Como: Depurar um controle ActiveX
+# <a name="how-to-debug-an-activex-control"></a>Como depurar um controle ActiveX
 
 > [!NOTE]
 > As caixas de diálogo e os comandos de menu que você vê podem ser diferentes dos descritos na Ajuda, dependendo da sua edição ou das configurações ativas. Para alterar as configurações, escolha Importar e Exportar Configurações no menu Ferramentas. Para obter mais informações, confira [Redefinir as configurações](../ide/environment-settings.md#reset-settings).
@@ -42,7 +42,7 @@ Para depurar seu controle ActiveX, você deverá especificar um contêiner (exec
 
 1. No Gerenciador de Soluções, selecione o projeto.
 
-2. Dos **modo de exibição** menu, escolha **páginas de propriedade**.
+2. No menu **Exibir** , escolha **páginas de propriedades**.
 
 3. Na caixa de diálogo **Páginas de Propriedades de Projeto**, abra a pasta **Propriedades de Configuração** e selecione **Depurando**.
 
@@ -61,5 +61,5 @@ Para depurar seu controle ActiveX, você deverá especificar um contêiner (exec
 - [Controles ActiveX](/cpp/mfc/activex-controls)
 - [Testando propriedades e eventos com contêiner de teste](/cpp/mfc/testing-properties-and-events-with-test-container)
 - [Depuração de COM e ActiveX](../debugger/com-and-activex-debugging.md)
-- [Depurando no Visual Studio](../debugger/index.md)
+- [Depurando no Visual Studio](../debugger/index.yml)
 - [Introdução ao depurador](../debugger/debugger-feature-tour.md)

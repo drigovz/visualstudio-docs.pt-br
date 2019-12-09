@@ -1,5 +1,5 @@
 ---
-title: Solução de problemas de erros específicos nas implantações do ClickOnce | Microsoft Docs
+title: Solucionando problemas de erros específicos em implantações do ClickOnce | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -19,122 +19,122 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c2d337a1ed97524dc04c8154fe2b074baf0921ca
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: eb04154ed71fa581abe30d74113c2f7caa54bccc
+ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62927451"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72806857"
 ---
 # <a name="troubleshoot-specific-errors-in-clickonce-deployments"></a>Solucionar erros específicos em implantações do ClickOnce
-Este artigo lista os seguintes erros comuns que podem ocorrer quando você implanta um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo e fornece etapas para resolver cada problema.
+Este artigo lista os seguintes erros comuns que podem ocorrer quando você implanta um aplicativo [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] e fornece etapas para resolver cada problema.
 
 ## <a name="general-errors"></a>Erros gerais
 
-#### <a name="when-you-try-to-locate-an-application-file-nothing-occurs-or-xml-renders-in-internet-explorer-or-you-receive-a-run-or-save-as-dialog-box"></a>Quando você tentar localizar um arquivo de aplicativo, nada ocorre, renderiza o XML no Internet Explorer ou você receberá uma caixa de diálogo Executar ou salvar como
- Esse erro provavelmente é causado por tipos de conteúdo (também conhecido como tipos de MIME) não está sendo registrados corretamente no servidor ou cliente.
+#### <a name="when-you-try-to-locate-an-application-file-nothing-occurs-or-xml-renders-in-internet-explorer-or-you-receive-a-run-or-save-as-dialog-box"></a>Quando você tenta localizar um arquivo de aplicativo, nada acontece ou renderizações XML no Internet Explorer, ou você recebe uma caixa de diálogo Executar ou salvar como
+ Esse erro é provavelmente causado por tipos de conteúdo (também conhecidos como tipos MIME) que não estão sendo registrados corretamente no servidor ou cliente.
 
- Primeiro, certifique-se de que o servidor está configurado para associar o *. Application* extensão com o conteúdo do tipo "application/x-ms-application."
+ Primeiro, verifique se o servidor está configurado para associar a extensão *. Application* ao tipo de conteúdo "application/x-MS-Application".
 
- Se o servidor está configurado corretamente, verifique se o [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] está instalado no seu computador. Se o [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] estiver instalado, e você ainda estiver vendo esse problema, tente desinstalar e reinstalar o [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] para registrar novamente o tipo de conteúdo no cliente.
+ Se o servidor estiver configurado corretamente, verifique se o .NET Framework 2,0 está instalado no computador. Se o .NET Framework 2,0 estiver instalado e você ainda estiver vendo esse problema, tente desinstalar e reinstalar o .NET Framework 2,0 para registrar novamente o tipo de conteúdo no cliente.
 
-#### <a name="error-message-says-unable-to-retrieve-application-files-missing-in-deployment-or-application-download-has-been-interrupted-check-for-network-errors-and-try-again-later"></a>Mensagem de erro afirma, "não é possível recuperar o aplicativo. Arquivos ausentes na implantação"ou"download do aplicativo foi interrompido, verifique se há erros de rede e tente novamente mais tarde"
- Esta mensagem indica que um ou mais arquivos que está sendo referenciados pelo [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifestos não podem ser baixados. A maneira mais fácil para depurar esse erro é tentar baixar a URL que [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] diz que ele não é possível baixar. Aqui estão algumas das possíveis causas:
+#### <a name="error-message-says-unable-to-retrieve-application-files-missing-in-deployment-or-application-download-has-been-interrupted-check-for-network-errors-and-try-again-later"></a>Mensagem de erro informa "não é possível recuperar o aplicativo. Arquivos ausentes na implantação "ou" o download do aplicativo foi interrompido, verifique se há erros de rede e tente novamente mais tarde "
+ Essa mensagem indica que um ou mais arquivos sendo referenciados pelos manifestos [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] não podem ser baixados. A maneira mais fácil de depurar esse erro é tentar baixar a URL que [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] diz que não é possível baixar. Aqui estão algumas causas possíveis:
 
-- Se o arquivo de log diz "(403) proibido" ou "(404) não é encontrada," Verifique se o servidor Web é configurado para que ele não bloqueia o download deste arquivo. Para obter mais informações, consulte [Problemas de configuração de servidor e cliente em implantações do ClickOnce](../deployment/server-and-client-configuration-issues-in-clickonce-deployments.md).
+- Se o arquivo de log disser "(403) proibido" ou "(404) não encontrado", verifique se o servidor Web está configurado para que ele não bloqueie o download desse arquivo. Para obter mais informações, consulte [Problemas de configuração de servidor e cliente em implantações do ClickOnce](../deployment/server-and-client-configuration-issues-in-clickonce-deployments.md).
 
-- Se o *. config* arquivo está sendo bloqueado pelo servidor, consulte a seção "Erro de Download quando você tenta instalar um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo que tem um arquivo. config" mais adiante neste artigo.
+- Se o arquivo *. config* estiver sendo bloqueado pelo servidor, consulte a seção "erro de download ao tentar instalar um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo que tenha um arquivo. config", mais adiante neste artigo.
 
-- Determinar se esse erro ocorreu porque o `deploymentProvider` URL no manifesto de implantação está apontando para um local diferente que a URL usada para ativação.
+- Determine se esse erro ocorreu porque a URL de `deploymentProvider` no manifesto de implantação está apontando para um local diferente da URL usada para ativação.
 
-- Certifique-se de que todos os arquivos estão presentes no servidor. o [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] log deve informar a qual arquivo não foi encontrado.
+- Verifique se todos os arquivos estão presentes no servidor; o log de [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] deve informar qual arquivo não foi encontrado.
 
-- Se houver problemas de conectividade de rede; Você pode receber essa mensagem se o computador cliente ficou offline durante o download.
+- Veja se há problemas de conectividade de rede; Você poderá receber essa mensagem se o computador cliente ficou offline durante o download.
 
-#### <a name="download-error-when-you-try-to-install-a-clickonce-application-that-has-a-config-file"></a>Erro de download quando você tenta instalar um aplicativo ClickOnce que tem um arquivo. config
- Por padrão, um aplicativo baseado em Windows do Visual Basic inclui um arquivo App. config. Haverá um problema quando um usuário tenta instalar a partir de um servidor Web que usa o Windows Server 2003, porque esse sistema operacional bloqueia a instalação do *. config* arquivos por motivos de segurança. Para habilitar o *. config* arquivo a ser instalado, clique em **usar a extensão de arquivo. Deploy"** no **opções de publicação** caixa de diálogo.
+#### <a name="download-error-when-you-try-to-install-a-clickonce-application-that-has-a-config-file"></a>Erro de download ao tentar instalar um aplicativo ClickOnce que tem um arquivo. config
+ Por padrão, um aplicativo baseado no Windows Visual Basic inclui um arquivo app. config. Haverá um problema quando um usuário tentar instalar a partir de um servidor Web que usa o Windows Server 2003, porque esse sistema operacional bloqueia a instalação de arquivos *. config* por motivos de segurança. Para habilitar o arquivo *. config* a ser instalado, clique em **usar extensão de arquivo ". Deploy"** na caixa de diálogo **Opções de publicação** .
 
- Você também deve definir os tipos de conteúdo (também conhecido como tipos de MIME) adequadamente para arquivos. Deploy,. Application e. manifest. Para obter mais informações, consulte a documentação do servidor Web.
+ Você também deve definir os tipos de conteúdo (também conhecidos como tipos MIME) adequadamente para os arquivos. Application,. manifest e. Deploy. Para obter mais informações, consulte a documentação do seu servidor Web.
 
- Para obter mais informações, consulte "Windows Server 2003: Bloqueado tipos de conteúdo" [problemas de configuração de servidor e cliente em implantações do ClickOnce](../deployment/server-and-client-configuration-issues-in-clickonce-deployments.md).
+ Para obter mais informações, consulte "Windows Server 2003: tipos de conteúdo bloqueados" em [problemas de configuração de servidor e cliente em implantações do ClickOnce](../deployment/server-and-client-configuration-issues-in-clickonce-deployments.md).
 
-#### <a name="error-message-application-is-improperly-formatted-log-file-contains-xml-signature-is-invalid"></a>Mensagem de erro: "Aplicativo está formatado incorretamente;" Arquivo de log contém "assinatura XML é inválida"
- Certifique-se de que você atualizou o arquivo de manifesto e assinado novamente. Republique o aplicativo usando [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ou use Mage para assinar o aplicativo novamente.
+#### <a name="error-message-application-is-improperly-formatted-log-file-contains-xml-signature-is-invalid"></a>Mensagem de erro: "o aplicativo está formatado incorretamente;" O arquivo de log contém "a assinatura XML é inválida"
+ Verifique se você atualizou o arquivo de manifesto e o assinou novamente. Republique o aplicativo usando [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ou use o Mage para assinar o aplicativo novamente.
 
 #### <a name="you-updated-your-application-on-the-server-but-the-client-does-not-download-the-update"></a>Você atualizou seu aplicativo no servidor, mas o cliente não baixa a atualização
- Esse problema poderá ser resolvido executando uma das seguintes tarefas:
+ Esse problema pode ser resolvido com a conclusão de uma das seguintes tarefas:
 
-- Examinar o `deploymentProvider` URL no manifesto de implantação. Certifique-se de que você está atualizando os bits no mesmo local que `deploymentProvider` aponta.
+- Examine a URL do `deploymentProvider` no manifesto de implantação. Verifique se você está atualizando os bits no mesmo local para o qual `deploymentProvider` aponta.
 
-- Verifique se o intervalo de atualização no manifesto de implantação. Se esse intervalo é definido para um intervalo periódico, como uma vez a cada seis horas, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] não examinará uma atualização até que esse intervalo tenha passado. Você pode alterar o manifesto para procurar uma atualização sempre que o aplicativo for iniciado. Alterar o intervalo de atualização é uma opção conveniente durante o tempo de desenvolvimento para verificar se estão sendo instaladas atualizações, mas ele desacelera a ativação do aplicativo.
+- Verifique o intervalo de atualização no manifesto de implantação. Se esse intervalo for definido como um intervalo periódico, como uma vez a cada seis horas, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] não verificará se há uma atualização até que esse intervalo tenha passado. Você pode alterar o manifesto para verificar se há uma atualização toda vez que o aplicativo for iniciado. A alteração do intervalo de atualização é uma opção conveniente durante o tempo de desenvolvimento para verificar se as atualizações estão sendo instaladas, mas reduz a ativação do aplicativo.
 
-- Tente reiniciar o aplicativo no menu Iniciar. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] pode ter detectado a atualização em segundo plano, mas solicitará que você instale os bits na próxima ativação.
+- Tente iniciar o aplicativo novamente no menu iniciar. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] pode ter detectado a atualização em segundo plano, mas solicitará que você instale os bits na próxima ativação.
 
-#### <a name="during-update-you-receive-an-error-that-has-the-following-log-entry-the-reference-in-the-deployment-does-not-match-the-identity-defined-in-the-application-manifest"></a>Durante a atualização, você recebe um erro com a seguinte entrada de log: "A referência na implantação não coincide com a identidade definida no manifesto do aplicativo"
- Esse erro pode ocorrer porque você editar manualmente os manifestos de implantação e o aplicativo e ter causado a descrição da identidade de um assembly em um manifesto para que fiquem fora de sincronia com as outras. A identidade de um assembly consiste em seu nome, versão, cultura e token de chave pública. Examine as descrições de identidade em seus manifestos e corrigir quaisquer diferenças.
+#### <a name="during-update-you-receive-an-error-that-has-the-following-log-entry-the-reference-in-the-deployment-does-not-match-the-identity-defined-in-the-application-manifest"></a>Durante a atualização, você recebe um erro com a seguinte entrada de log: "a referência na implantação não corresponde à identidade definida no manifesto do aplicativo"
+ Esse erro pode ocorrer porque você editou manualmente a implantação e os manifestos do aplicativo, e fez com que a descrição da identidade de um assembly em um manifesto fique fora de sincronia com a outra. A identidade de um assembly consiste em seu nome, versão, cultura e token de chave pública. Examine as descrições de identidade em seus manifestos e corrija as diferenças.
 
-#### <a name="first-time-activation-from-local-disk-or-cd-rom-succeeds-but-subsequent-activation-from-start-menu-does-not-succeed"></a>Primeira vez que a ativação do CD-ROM ou disco local for bem-sucedida, mas subsequente ativação do Menu Iniciar não tiver êxito
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] usa a URL do provedor de implantação para receber atualizações para o aplicativo. Verifique se o local que aponta para a URL está correto.
+#### <a name="first-time-activation-from-local-disk-or-cd-rom-succeeds-but-subsequent-activation-from-start-menu-does-not-succeed"></a>A ativação pela primeira vez do disco local ou do CD-ROM é realizada com sucesso, mas a ativação subsequente do menu Iniciar não é concluída
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] usa a URL do provedor de implantação para receber atualizações para o aplicativo. Verifique se o local ao qual a URL está apontando está correto.
 
-#### <a name="error-cannot-start-the-application"></a>Erro: "Não é possível iniciar o aplicativo"
- Essa mensagem de erro geralmente indica que há um problema ao instalar esse aplicativo para o [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] armazenar. O aplicativo tem um erro ou o repositório está corrompido. O arquivo de log pode informar onde ocorreu o erro.
+#### <a name="error-cannot-start-the-application"></a>Erro: "não é possível iniciar o aplicativo"
+ Essa mensagem de erro geralmente indica que há um problema ao instalar esse aplicativo no repositório de [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]. O aplicativo tem um erro ou o repositório está corrompido. O arquivo de log pode informar onde ocorreu o erro.
 
  Você deve fazer o seguinte:
 
-- Verifique se a identidade do manifesto de implantação, identidade do manifesto de aplicativo e identidade do aplicativo principal EXE são exclusivos.
+- Verifique se a identidade do manifesto de implantação, a identidade do manifesto do aplicativo e a identidade do aplicativo EXE principal são exclusivas.
 
-- Verifique se seus caminhos de arquivo não estão mais de 100 caracteres. Se seu aplicativo contém os caminhos de arquivo que são muito longos, você poderá exceder as limitações do caminho máximo que você pode armazenar. Tente encurtar os caminhos e reinstale.
+- Verifique se os caminhos de arquivo não têm mais de 100 caracteres. Se seu aplicativo contiver caminhos de arquivo que são muito longos, você poderá exceder as limitações no caminho máximo que você pode armazenar. Tente encurtar os caminhos e reinstalar.
 
-#### <a name="privatepath-settings-in-application-config-file-are-not-honored"></a>PrivatePath configurações no arquivo de configuração de aplicativo não são consideradas
- Para usar PrivatePath (caminhos de investigação do Fusion), o aplicativo deve solicitar permissão de confiança total. Tente alterar o manifesto do aplicativo para solicitar confiança total e, em seguida, tente novamente.
+#### <a name="privatepath-settings-in-application-config-file-are-not-honored"></a>As configurações de PrivatePath no arquivo de configuração de aplicativo não são respeitadas
+ Para usar PrivatePath (caminhos de investigação de fusão), o aplicativo deve solicitar a permissão de confiança total. Tente alterar o manifesto do aplicativo para solicitar confiança total e tente novamente.
 
-#### <a name="during-uninstall-a-message-appears-saying-failed-to-uninstall-application"></a>Durante a desinstalação será exibida uma mensagem dizendo, "Falha ao desinstalar o aplicativo"
- Essa mensagem geralmente indica que o aplicativo já foi removido ou o repositório está corrompido. Depois de clicar em **Okey**, o **adicionar ou remover programa** entrada será removida.
+#### <a name="during-uninstall-a-message-appears-saying-failed-to-uninstall-application"></a>Durante a desinstalação, aparece uma mensagem dizendo "falha ao desinstalar o aplicativo"
+ Essa mensagem geralmente indica que o aplicativo já foi removido ou o repositório está corrompido. Depois de clicar em **OK**, a entrada **Adicionar/remover programa** será removida.
 
-#### <a name="during-installation-a-message-appears-that-says-that-the-platform-dependencies-are-not-installed"></a>Durante a instalação, será exibida uma mensagem que diz que as dependências de plataforma não estão instaladas
- Falta um pré-requisito no GAC (cache de assembly global) que o aplicativo precisa para executar.
+#### <a name="during-installation-a-message-appears-that-says-that-the-platform-dependencies-are-not-installed"></a>Durante a instalação, aparece uma mensagem dizendo que as dependências de plataforma não estão instaladas
+ Você não tem um pré-requisito no GAC (cache de assembly global) que o aplicativo precisa para ser executado.
 
-## <a name="publishing-with-visual-studio"></a>Publicação com o Visual Studio
+## <a name="publishing-with-visual-studio"></a>Publicando com o Visual Studio
 
-#### <a name="publishing-in-visual-studio-fails"></a>Falha de publicação no Visual Studio
- Certifique-se de que você tenha o direito de publicar no servidor de destino. Por exemplo, se você está conectado a um computador de servidor de terminal como um usuário comum, não como um administrador, você provavelmente não terá os direitos necessários para publicar no servidor Web local.
+#### <a name="publishing-in-visual-studio-fails"></a>Falha na publicação no Visual Studio
+ Verifique se você tem o direito de publicar no servidor de destino. Por exemplo, se você estiver conectado a um computador do Terminal Server como um usuário comum, e não como um administrador, provavelmente não terá os direitos necessários para publicar no servidor Web local.
 
- Se você estiver publicando com uma URL, certifique-se de que o computador de destino tem o FrontPage Server Extensions habilitado.
+ Se você estiver publicando com uma URL, verifique se o computador de destino tem as extensões de servidor do FrontPage habilitadas.
 
-#### <a name="error-message-unable-to-create-the-web-site-site-the-components-for-communicating-with-frontpage-server-extensions-are-not-installed"></a>Mensagem de erro: Não é possível criar o site da Web '\<site >'. Os componentes para se comunicar com as extensões FrontPage Server Extensions não estão instalados.
- Certifique-se de que você tenha o Microsoft Visual Studio Web criação componente instalado no computador em que você está publicando da. Para usuários do Express, esse componente não está instalado por padrão. Para obter mais informações, consulte [http://go.microsoft.com/fwlink/?LinkId=102310](http://go.microsoft.com/fwlink/?LinkId=102310).
+#### <a name="error-message-unable-to-create-the-web-site-site-the-components-for-communicating-with-frontpage-server-extensions-are-not-installed"></a>Mensagem de erro: não é possível criar o site '\<site > '. Os componentes para comunicação com as extensões de servidor do FrontPage não estão instalados.
+ Verifique se você tem o Microsoft Visual Studio Web Authoring Component instalado no computador do qual você está publicando. Para usuários expressos, esse componente não é instalado por padrão. Para obter mais informações, consulte [http://go.microsoft.com/fwlink/?LinkId=102310](https://support.microsoft.com/help/945358).
 
-#### <a name="error-message-could-not-find-file-microsoftwindowscommon-controls-version6000-culture-publickeytoken6595b64144ccf1df-processorarchitecture-typewin32"></a>Mensagem de erro: Could not find file 'Microsoft.Windows.Common-Controls, Version=6.0.0.0, Culture=*, PublicKeyToken=6595b64144ccf1df, ProcessorArchitecture=\*, Type=win32'
- Essa mensagem de erro aparece quando você tentar publicar um aplicativo WPF com estilos visuais habilitados. Para resolver esse problema, consulte [como: Publicar um aplicativo WPF com estilos visuais habilitados](../deployment/how-to-publish-a-wpf-application-with-visual-styles-enabled.md).
+#### <a name="error-message-could-not-find-file-microsoftwindowscommon-controls-version6000-culture-publickeytoken6595b64144ccf1df-processorarchitecture-typewin32"></a>Mensagem de erro: não foi possível encontrar o arquivo ' Microsoft. Windows. Common-Controls, Version = 6.0.0.0, cultura = *, PublicKeyToken = 6595b64144ccf1df, ProcessorArchitecture =\*, Type = Win32 '
+ Essa mensagem de erro é exibida quando você tenta publicar um aplicativo WPF com estilos visuais habilitados. Para resolver esse problema, consulte [como: publicar um aplicativo WPF com estilos visuais habilitados](../deployment/how-to-publish-a-wpf-application-with-visual-styles-enabled.md).
 
 ## <a name="using-mage"></a>Usando o Mage
 
-#### <a name="you-tried-to-sign-with-a-certificate-in-your-certificate-store-and-a-received-blank-message-box"></a>Você tentou entrar com um certificado no repositório de certificados e uma caixa de mensagem em branco recebidos
- No **Signing** caixa de diálogo, você deve:
+#### <a name="you-tried-to-sign-with-a-certificate-in-your-certificate-store-and-a-received-blank-message-box"></a>Você tentou assinar com um certificado em seu repositório de certificados e uma caixa de mensagem em branco recebida
+ Na caixa de diálogo **assinatura** , você deve:
 
-- Selecione **assinar com um certificado armazenado**, e
+- Selecione **assinar com um certificado armazenado**e
 
 - Selecione um certificado da lista; o primeiro certificado não é a seleção padrão.
 
-#### <a name="clicking-the-dont-sign-button-causes-an-exception"></a>Clicar no botão "Entrar não" faz com que uma exceção
- Esse problema é um bug conhecido. Todos os [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifestos são necessários a serem assinados. Basta selecionar uma das opções de assinatura e, em seguida, clique em **Okey**.
+#### <a name="clicking-the-dont-sign-button-causes-an-exception"></a>Clicar no botão "não assinar" causa uma exceção
+ Esse problema é um bug conhecido. Todos os manifestos [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] precisam ser assinados. Basta selecionar uma das opções de assinatura e clicar em **OK**.
 
-## <a name="additional-errors"></a>Outros erros
- A tabela a seguir mostra algumas mensagens de erro comuns que um usuário do computador cliente pode receber quando o usuário instala um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo. Cada mensagem de erro é listada ao lado de uma descrição do que a causa mais provável do erro.
+## <a name="additional-errors"></a>Erros adicionais
+ A tabela a seguir mostra algumas mensagens de erro comuns que um usuário do computador cliente pode receber quando o usuário instala um aplicativo [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]. Cada mensagem de erro é listada ao lado de uma descrição da causa mais provável para o erro.
 
 | Mensagem de erro | Descrição |
 | - | - |
-| Aplicativo não pode ser iniciado. Entre em contato com o Editor do aplicativo.<br /><br /> Não é possível iniciar o aplicativo. Para obter assistência, entre em contato com o fornecedor do aplicativo. | Essas são mensagens de erro genérico que ocorrem quando o aplicativo não pode ser iniciado, e nenhum outro motivo específico pode ser encontrado. Com frequência isso significa que o aplicativo está corrompido de alguma forma, ou que o [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] repositório está corrompido. |
-| Não é possível continuar. O aplicativo está formatado incorretamente. Para obter assistência, entre em contato com o Editor do aplicativo.<br /><br /> Validação de aplicativo não foi bem-sucedida. Não é possível continuar.<br /><br /> Não é possível recuperar arquivos do aplicativo. Arquivos corrompidos na implantação. | Um dos arquivos de manifesto na implantação sintaticamente não é válido ou contém um hash que não pode ser reconciliado com o arquivo correspondente. Esse erro também pode indicar que o manifesto inserido dentro de um assembly está corrompido. Crie novamente sua implantação e recompilar seu aplicativo, ou encontrar e corrigir os erros manualmente em seus manifestos. |
-| Não é possível recuperar o aplicativo. Erro de autenticação.<br /><br /> Instalação do aplicativo não foi bem-sucedida. Não é possível localizar arquivos de aplicativos no servidor. Entre em contato com o Editor do aplicativo ou o administrador para obter assistência. | Não não possível baixar um ou mais arquivos na implantação porque você não tem permissão para acessá-los. Isso pode ser causado por um erro proibido 403, que está sendo retornado por um servidor Web, que pode ocorrer se um dos arquivos em sua implantação terminar com uma extensão que faz com que o servidor Web tratá-lo como um arquivo protegido. Além disso, um diretório que contém um ou mais dos arquivos do aplicativo pode exigir um nome de usuário e senha para acessar. |
-| Não é possível baixar o aplicativo. O aplicativo não tem os arquivos necessários. Entre em contato com o fornecedor do aplicativo ou o administrador do sistema para obter assistência. | Um ou mais dos arquivos listados no manifesto do aplicativo não podem ser encontrado no servidor. Verifique se você carregou todos os arquivos de implantação dependentes e tente novamente. |
-| Download do aplicativo não foi bem-sucedida. Verifique sua conexão de rede ou contate o administrador do sistema ou o provedor de serviços de rede. | [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] não é possível estabelecer uma conexão de rede para o servidor. Examine a disponibilidade do servidor e o estado da sua rede. |
-| URLDownloadToCacheFile falhou com HRESULT '\<número >'. Ocorreu um erro ao tentar baixar '\<arquivo >'. | Se um usuário tiver definido a opção de segurança avançada do Internet Explorer "Avisar se a alteração entre o modo de segurança" no computador de destino de implantação, e se a URL de instalação do aplicativo ClickOnce que está sendo instalado é redirecionada do não seguro para um site seguro (ou vice-versa), a instalação falhará porque o aviso do Internet Explorer interrompe-lo.<br /><br /> Para resolver esse erro, você pode fazer uma das seguintes tarefas:<br /><br /> – Desmarque a opção de segurança.<br />-Certifique-se de que a URL de instalação não é redirecionada de forma que altera os modos de segurança.<br />-Remova o redirecionamento completamente e apontar para a URL de instalação real. |
-| Ocorreu um erro gravando no disco rígido. Pode haver espaço suficiente disponível no disco. Entre em contato com o fornecedor do aplicativo ou o administrador do sistema para obter assistência. | Isso pode indicar um espaço em disco insuficiente para armazenar o aplicativo, mas ele também pode indicar um erro de e/s mais geral, quando você está tentando salvar os arquivos de aplicativo para a unidade. |
-| Não é possível iniciar o aplicativo. Não há espaço suficiente disponível no disco. | O disco rígido está cheio. Limpar espaço e tente executar o aplicativo novamente. |
-| Número excessivo de ativações implantadas estão tentando carregar ao mesmo tempo. | [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] limita o número de aplicativos diferentes que pode começar ao mesmo tempo. Isso é basicamente para ajudar a proteger contra tentativas mal-intencionadas de que haja ataques de negação de serviço contra local [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] serviço; os usuários que tentem iniciar o mesmo aplicativo várias vezes, em sucessão rápida, só acabará com uma única instância das aplicativo. |
-| Atalhos não podem ser ativados pela rede. | Atalhos para um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo só pode ser iniciado no disco rígido local. Eles não podem ser iniciados, abrindo uma URL que aponta para um arquivo de atalho em um servidor remoto. |
-| O aplicativo é muito grande para ser executado online em confiança parcial. Entre em contato com o fornecedor do aplicativo ou o administrador do sistema para obter assistência. | Um aplicativo executado em confiança parcial não pode ser maior do que a metade do tamanho da cota de aplicativo online, que é de 250 MB por padrão. |
+| Não é possível iniciar o aplicativo. Contate o editor do aplicativo.<br /><br /> Não é possível iniciar o aplicativo. Contate o fornecedor do aplicativo para obter assistência. | Essas são mensagens de erro genéricas que ocorrem quando o aplicativo não pode ser iniciado, e nenhum outro motivo específico pode ser encontrado. Frequentemente, isso significa que o aplicativo está de alguma forma corrompido ou que o repositório de [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] está corrompido. |
+| Não é possível continuar. O aplicativo está formatado incorretamente. Contate o editor de aplicativos para obter assistência.<br /><br /> A validação do aplicativo não teve sucesso. Não é possível continuar.<br /><br /> Não é possível recuperar os arquivos do aplicativo. Arquivos corrompidos na implantação. | Um dos arquivos de manifesto na implantação é sintaticamente inválido ou contém um hash que não pode ser reconciliado com o arquivo correspondente. Esse erro também pode indicar que o manifesto inserido dentro de um assembly está corrompido. Recrie a implantação e recompile seu aplicativo, ou localize e corrija os erros manualmente em seus manifestos. |
+| Não é possível recuperar o aplicativo. Erro de autenticação.<br /><br /> A instalação do aplicativo não teve sucesso. Não é possível localizar os arquivos de aplicativos no servidor. Contate o editor do aplicativo ou o administrador para obter assistência. | Um ou mais arquivos na implantação não podem ser baixados porque você não tem permissão para acessá-los. Isso pode ser causado por um erro proibido 403 sendo retornado por um servidor Web, o que pode ocorrer se um dos arquivos em sua implantação terminar com uma extensão que faz com que o servidor Web o trate como um arquivo protegido. Além disso, um diretório que contém um ou mais arquivos do aplicativo pode exigir um nome de usuário e uma senha para acessar o. |
+| Não é possível baixar o aplicativo. Os arquivos necessários estão ausentes no aplicativo. Contate o fornecedor do aplicativo ou o administrador do sistema para obter assistência. | Um ou mais dos arquivos listados no manifesto do aplicativo não podem ser encontrados no servidor. Verifique se você carregou todos os arquivos dependentes da implantação e tente novamente. |
+| O download do aplicativo não teve sucesso. Verifique sua conexão de rede ou contate o administrador do sistema ou o provedor de serviços de rede. | [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] não pode estabelecer uma conexão de rede com o servidor. Examine a disponibilidade do servidor e o estado da sua rede. |
+| URLDownloadToCacheFile falhou com HRESULT '\<number > '. Erro ao tentar baixar '\<arquivo > '. | Se um usuário tiver definido a opção de segurança avançada do Internet Explorer "avisar se estiver mudando entre o modo seguro e não seguro" no computador de destino da implantação, e se a URL de instalação do aplicativo ClickOnce que está sendo instalado for redirecionada de um site não seguro para um seguro (ou vice-versa), a instalação falhará porque o aviso do Internet Explorer irá interrompê-la.<br /><br /> Para resolver esse erro, você pode executar uma das seguintes tarefas:<br /><br /> -Desmarque a opção de segurança.<br />-Certifique-se de que a URL de instalação não seja redirecionada de forma que altere os modos de segurança.<br />-Remova completamente o redirecionamento e aponte para a URL de instalação real. |
+| Ocorreu um erro ao gravar no disco rígido. Pode haver espaço insuficiente disponível no disco. Contate o fornecedor do aplicativo ou o administrador do sistema para obter assistência. | Isso pode indicar espaço em disco insuficiente para armazenar o aplicativo, mas ele também pode indicar um erro de e/s mais geral quando você estiver tentando salvar os arquivos de aplicativo na unidade. |
+| Não é possível iniciar o aplicativo. Não há espaço disponível suficiente no disco. | O disco rígido está cheio. Desmarque o espaço e tente executar o aplicativo novamente. |
+| Muitas ativações implantadas estão tentando carregar de uma vez. | [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] limita o número de aplicativos diferentes que podem ser iniciados ao mesmo tempo. Isso é amplamente útil para ajudar a proteger contra tentativas mal-intencionadas de instigar ataques de negação de serviço contra o serviço de [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] local; os usuários que tentarem iniciar o mesmo aplicativo repetidamente, em sucessão rápida, só acabarão com uma única instância do aplicativo. |
+| Os atalhos não podem ser ativados pela rede. | Os atalhos para um aplicativo [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] só podem ser iniciados no disco rígido local. Eles não podem ser iniciados abrindo uma URL que aponta para um arquivo de atalho em um servidor remoto. |
+| O aplicativo é muito grande para ser executado online em confiança parcial. Contate o fornecedor do aplicativo ou o administrador do sistema para obter assistência. | Um aplicativo que é executado em confiança parcial não pode ser maior que metade do tamanho da cota do aplicativo online, que por padrão é 250 MB. |
 
 ## <a name="see-also"></a>Consulte também
 - [Segurança e implantação do ClickOnce](../deployment/clickonce-security-and-deployment.md)

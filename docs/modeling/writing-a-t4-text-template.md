@@ -6,32 +6,32 @@ helpviewer_keywords:
 - text templates, syntax
 - text templates, guide
 - text templates, functions that generate text
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2549ad27f0f05d3425dd6625e9d48fdfab4db3a6
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: df653dbd449429b6995c987328a401866751fd5e
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63386073"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72981245"
 ---
 # <a name="writing-a-t4-text-template"></a>Gravando um modelo de texto T4
-Um modelo de texto contém o texto que será gerado a partir dele. Por exemplo, um modelo que cria uma página da web conterá "\<html >..." e todas as outras partes padrão de uma página HTML. Inserido no modelo são *blocos de controle*, que são fragmentos de código do programa. Os blocos de controle fornecem valores variáveis​e permitem que partes do texto sejam condicionadas e repetidas.
+Um modelo de texto contém o texto que será gerado a partir dele. Por exemplo, um modelo que cria uma página da Web conterá "\<html >..." e todas as outras partes padrão de uma página HTML. Inseridos no modelo são *blocos de controle*, que são fragmentos de código do programa. Os blocos de controle fornecem valores variáveis​e permitem que partes do texto sejam condicionadas e repetidas.
 
  Essa estrutura facilita o desenvolvimento de um modelo, porque você pode começar com um protótipo do arquivo gerado e inserir, gradativamente, blocos de controle que variam o resultado.
 
  Os modelos de texto são compostos das seguintes partes:
 
-- **Diretivas** -elementos que controlam como o modelo é processado.
+- **Diretivas** – elementos que controlam como o modelo é processado.
 
-- **Blocos de texto** – conteúdo que é copiado diretamente para a saída.
+- **Blocos de texto** -conteúdo copiado diretamente para a saída.
 
-- **Blocos de controle** -código de programa que insere valores de variáveis no texto e controla partes condicionais ou repetidas do texto.
+- **Blocos de controle** -código do programa que insere valores variáveis no texto e controla partes condicionais ou repetidas do texto.
 
-Para testar os exemplos neste tópico, copiá-los em um arquivo de modelo conforme descrito em [geração de código de tempo de Design usando modelos de texto T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md). Depois de editar o arquivo de modelo, salvá-lo e, em seguida, inspecione a saída **. txt** arquivo.
+Para testar os exemplos neste tópico, copie-os em um arquivo de modelo conforme descrito em [geração de código em tempo de design usando modelos de texto T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md). Depois de editar o arquivo de modelo, salve-o e inspecione o arquivo output **. txt** .
 
 ## <a name="directives"></a>Diretivas
  As diretivas de modelo de texto fornecem instruções gerais ao mecanismo de modelagem de texto sobre como gerar o código de transformação e o arquivo de saída.
@@ -94,7 +94,7 @@ Hello!
  Você pode inserir um bloco de texto sempre que uma instrução `Write();` for permitida no código.
 
 > [!NOTE]
-> Quando você inserir um bloco de texto dentro de uma instrução composta, como um loop ou condicional, sempre use chaves {...} para conter o bloco de texto.
+> Quando você insere um bloco de texto em uma instrução composta, como um loop ou condicional, sempre usa chaves {...} para conter o bloco de texto.
 
 ### <a name="expression-control-blocks"></a>Blocos de controle de expressão
  Um bloco de controle de expressão avalia uma expressão e a converte em uma cadeia de caracteres. Essa cadeia é inserida no arquivo de saída.
@@ -107,7 +107,7 @@ Hello!
 <#= 2 + 3 #>
 ```
 
- Observe que o símbolo de abertura tem três caracteres "< #=".
+ Observe que o símbolo de abertura tem três caracteres "< # =".
 
  A expressão pode incluir qualquer variável que esteja no escopo. Por exemplo, este bloco imprime linhas com números:
 
@@ -124,7 +124,7 @@ This is hello number <#= i+1 #>: Hello!
 ```
 
 ### <a name="class-feature-control-blocks"></a>Blocos de controle de recurso de classe
- Um bloco de controle de recurso de classe define propriedades, métodos ou qualquer outro código que não deveria ser incluído na transformação principal. Os blocos de recurso de classe são usados com frequência para funções auxiliares.  Normalmente, os blocos de recurso de classe são colocados em arquivos separados para que eles possam ser [incluídos](#Include) por mais de um modelo de texto.
+ Um bloco de controle de recurso de classe define propriedades, métodos ou qualquer outro código que não deveria ser incluído na transformação principal. Os blocos de recurso de classe são usados com frequência para funções auxiliares.  Normalmente, os blocos de recursos de classe são colocados em arquivos separados para que possam ser [incluídos](#Include) por mais de um modelo de texto.
 
  Os blocos de controle de recurso de classe são delimitados pelos símbolos `<#+ ... #>`
 
@@ -152,7 +152,7 @@ private int Square(int i)
 
  Os recursos de classe devem ser colocados no final do arquivo em que são gravados. Entretanto, você pode `<#@include#>` um arquivo que contenha um recurso de classe, mesmo que a diretiva `include` seja seguida por blocos de texto comum ou de controle padrão.
 
- Para obter mais informações sobre os blocos de controle, consulte [blocos de controle de modelo de texto](../modeling/text-template-control-blocks.md).
+ Para obter mais informações sobre blocos de controle, consulte [blocos de controle de modelo de texto](../modeling/text-template-control-blocks.md).
 
 ### <a name="class-feature-blocks-can-contain-text-blocks"></a>Blocos de recurso de classe podem conter blocos de texto
  Você pode gravar um método que gera texto. Por exemplo:
@@ -191,9 +191,9 @@ private void WriteSquareLine(int i)
 <#@ assembly name="$(SolutionDir)library\MyAssembly.dll" #>
 ```
 
- A diretiva de assembly não tem nenhum efeito um [modelo de texto pré-processado](../modeling/run-time-text-generation-with-t4-text-templates.md).
+ A diretiva de assembly não tem nenhum efeito em um [modelo de texto pré-processado](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
- Para obter mais informações, consulte [diretiva de Assembly T4](../modeling/t4-assembly-directive.md).
+ Para obter mais informações, consulte [diretiva de assembly T4](../modeling/t4-assembly-directive.md).
 
 ### <a name="namespaces"></a>Namespaces
  A diretiva de importação é a mesma que a cláusula `using` em C# ou a cláusula `imports` em Visual Basic. Ela permite que você consulte tipos em seu código sem usar um nome totalmente qualificado:
@@ -206,7 +206,7 @@ private void WriteSquareLine(int i)
 
  Para obter mais informações, consulte [diretiva de importação T4](../modeling/t4-import-directive.md).
 
-### <a name="Include"></a> Incluindo código e texto
+### <a name="Include"></a>Incluindo código e texto
  A diretiva `include` insere o texto de outro arquivo de modelo. Por exemplo, esta diretiva insere o conteúdo de `test.txt`.
 
 ```
@@ -215,33 +215,33 @@ private void WriteSquareLine(int i)
 
  O conteúdo incluído é processado quase como se fizesse parte do modelo de texto de inclusão. Entretanto, você pode incluir um arquivo que contenha um bloco de recursos de classe `<#+...#>` mesmo se a diretiva include for seguida por blocos de texto comum ou de controle padrão.
 
- Para obter mais informações, consulte [diretiva Include do T4](../modeling/t4-include-directive.md).
+ Para obter mais informações, consulte [diretiva de inclusão T4](../modeling/t4-include-directive.md).
 
 ### <a name="utility-methods"></a>Métodos de utilitários
  Existem vários métodos, tal como `Write()`, que estão sempre disponíveis para você em um bloco de controle. Eles incluem métodos para ajudá-lo a recuar a saída e relatar erros.
 
  Você pode escrever também seu próprio conjunto de métodos de utilitários.
 
- Para obter mais informações, consulte [métodos de utilitário de modelo de texto](../modeling/text-template-utility-methods.md).
+ Para obter mais informações, consulte [métodos do utilitário de modelo de texto](../modeling/text-template-utility-methods.md).
 
 ## <a name="transforming-data-and-models"></a>Transformando dados e modelos
  A aplicação mais útil para um modelo de texto é gerar material com base no conteúdo de uma fonte, tal como um modelo, banco de dados ou arquivo de dados. Seu modelo extrai e formata os dados. Uma coleção de modelos pode transformar essa fonte em vários arquivos.
 
  Existem várias abordagens para a leitura do arquivo de origem.
 
- **Ler um arquivo de modelo de texto**. Esta é a maneira mais simples de colocar dados no modelo:
+ **Ler um arquivo no modelo de texto**. Esta é a maneira mais simples de colocar dados no modelo:
 
 ```
 <#@ import namespace="System.IO" #>
 <# string fileContent = File.ReadAllText(@"C:\myData.txt"); ...
 ```
 
- **Carregar um arquivo como um modelo navegável**. Um método mais eficiente é ler os dados como um modelo, pelo qual o código do modelo de texto pode navegar. Por exemplo, você pode carregar um arquivo XML e navegá-lo com expressões XPath. Você também pode usar [xsd.exe](http://go.microsoft.com/fwlink/?LinkId=178765) para criar um conjunto de classes com o qual você pode ler os dados XML.
+ **Carregar um arquivo como um modelo navegável**. Um método mais eficiente é ler os dados como um modelo, pelo qual o código do modelo de texto pode navegar. Por exemplo, você pode carregar um arquivo XML e navegá-lo com expressões XPath. Você também pode usar [XSD. exe](/dotnet/standard/serialization/xml-schema-definition-tool-xsd-exe) para criar um conjunto de classes com os quais você pode ler os dados XML.
 
- **Edite o arquivo de modelo em um diagrama ou formulário.** [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] fornece ferramentas que permitem editar um modelo como um diagrama ou formulário do Windows. Isso facilita discutir o modelo com os usuários do aplicativo gerado. [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] também cria um conjunto de classes fortemente tipado que reflete a estrutura do modelo. Para obter mais informações, consulte [código de geração de uma linguagem específica do domínio](../modeling/generating-code-from-a-domain-specific-language.md).
+ **Edite o arquivo de modelo em um diagrama ou formulário.** [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] fornece ferramentas que permitem editar um modelo como um diagrama ou um formulário do Windows. Isso facilita discutir o modelo com os usuários do aplicativo gerado. [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] também cria um conjunto de classes fortemente tipado que reflete a estrutura do modelo. Para obter mais informações, consulte [gerando código de uma linguagem específica de domínio](../modeling/generating-code-from-a-domain-specific-language.md).
 
 ### <a name="relative-file-paths-in-design-time-templates"></a>Caminhos de arquivo relativos em modelos de tempo de design
- Em um [modelo de texto de tempo de design](../modeling/design-time-code-generation-by-using-t4-text-templates.md), se você quiser referenciar um arquivo em um local relativo ao modelo de texto, use `this.Host.ResolvePath()`. Você também pode definir `hostspecific="true"` na diretiva `template`:
+ Em um [modelo de texto de tempo de design](../modeling/design-time-code-generation-by-using-t4-text-templates.md), se você quiser fazer referência a um arquivo em um local relativo ao modelo de texto, use `this.Host.ResolvePath()`. Você também pode definir `hostspecific="true"` na diretiva `template`:
 
 ```
 <#@ template hostspecific="true" language="C#" #>
@@ -255,16 +255,16 @@ Content of MyFile.txt is:
 <#= myFile #>
 ```
 
-Você também pode obter outros serviços fornecidos pelo host. Para obter mais informações, consulte [acessando o Visual Studio ou outros Hosts de um modelo](/previous-versions/visualstudio/visual-studio-2010/gg604090\(v\=vs.100\)).
+Você também pode obter outros serviços fornecidos pelo host. Para obter mais informações, consulte [acessando o Visual Studio ou outros hosts de um modelo](/previous-versions/visualstudio/visual-studio-2010/gg604090\(v\=vs.100\)).
 
 ### <a name="design-time-text-templates-run-in-a-separate-appdomain"></a>Modelos de texto em tempo de design executados em um AppDomain separado
 
- Você deve estar ciente que uma [modelo de texto de tempo de design](../modeling/design-time-code-generation-by-using-t4-text-templates.md) é executado em um AppDomain separado do aplicativo principal. Na maioria dos casos, isso não é importante, mas você pode descobrir restrições em certos casos complexos. Por exemplo, se você quiser passar dados dentro ou fora do modelo a partir de um serviço separado, o serviço deve fornecer uma API serializável.
+ Você deve estar ciente de que um [modelo de texto de tempo de design](../modeling/design-time-code-generation-by-using-t4-text-templates.md) é executado em um AppDomain separado do aplicativo principal. Na maioria dos casos, isso não é importante, mas você pode descobrir restrições em certos casos complexos. Por exemplo, se você quiser passar dados dentro ou fora do modelo a partir de um serviço separado, o serviço deve fornecer uma API serializável.
 
- (Isso não é verdadeiro para um [modelo de texto de tempo de execução](../modeling/run-time-text-generation-with-t4-text-templates.md), que fornece o código compilado junto com o restante do seu código.)
+ (Isso não é verdade de um [modelo de texto de tempo de execução](../modeling/run-time-text-generation-with-t4-text-templates.md), que fornece código que é compilado junto com o restante do seu código.)
 
 ## <a name="editing-templates"></a>Editando modelos
- Editores de modelo de texto especializados podem ser baixados da Galeria Online do Gerenciador de Extensões. Sobre o **ferramentas** menu, clique em **Gerenciador de extensões**. Clique em **Galeria Online**e, em seguida, use a ferramenta de pesquisa.
+ Editores de modelo de texto especializados podem ser baixados da Galeria Online do Gerenciador de Extensões. No menu **ferramentas** , clique em **Gerenciador de extensões**. Clique em **galeria online**e, em seguida, use a ferramenta de pesquisa.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 

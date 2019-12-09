@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: 852B6A9D-AEFA-4EF4-A5DD-94A506019D20
 ms.custom: video
-ms.openlocfilehash: ba98312617aaf636ee388ec97f47c14ede75507d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2d18ef3d693c3906c1312cfecb8da605c6a27226
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62986690"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67692972"
 ---
 # <a name="working-with-git"></a>Trabalhando com Git
 
@@ -59,13 +59,13 @@ Elas permitem executar as seguintes ações:
 
 ## <a name="switching-branches"></a>Alternar os branches
 
-Por padrão, o primeiro branch criado em um repositório é conhecido como o branch **Mestre** . Tecnicamente não há nada diferente entre o branch mestre e os demais, porém o branch mestre é aquele que geralmente é considerado “dinâmico” ou “produção” pelas equipes de desenvolvimento.
+Por padrão, o primeiro branch criado em um repositório é conhecida como o branch **Mestre**. Tecnicamente não há nada diferente entre o branch mestre e os demais, porém o branch mestre é aquele que geralmente é considerado “dinâmico” ou “produção” pelas equipes de desenvolvimento.
 
 Uma linha independente de desenvolvimento pode ser criada derivando-a do Mestre (ou de qualquer outro branch). Isso fornece uma nova versão pontual do branch mestre, permitindo desenvolvimento independentemente de qual deles é “dinâmico”. É comum usar branches dessa forma para recursos no desenvolvimento de software
 
 Os usuários podem criar tantos branches quanto desejarem para cada repositório, porém é recomendado que, após terminar de usar um branch, ele seja excluído para manter o repositório organizado.
 
-Branches são exibidos no Visual Studio para Mac navegando para **Controle de versão > Gerenciar branches e remotos...**:
+Branches são exibidos no Visual Studio para Mac navegando para **Controle de versão > Gerenciar branches e remotos...** :
 
 ![Exibição Branches](media/version-control-gitBranch2.png)
 

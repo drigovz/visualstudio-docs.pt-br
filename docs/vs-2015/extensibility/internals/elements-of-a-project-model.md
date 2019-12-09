@@ -12,12 +12,12 @@ ms.assetid: a1dbe0dc-68da-45d7-8704-5b43ff7e4fc4
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: d4e47712df1f76556ced8c69abb8bf5af085d01e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0f3b07068939e34b5c9e9487761177c0e12f5654
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58922328"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65700137"
 ---
 # <a name="elements-of-a-project-model"></a>Elementos de um modelo de projeto
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ As interfaces e implementações de todos os projetos em [!INCLUDE[vsprvs](../..
   
 - Cada projeto deve ter um arquivo de modelo ou o Assistente para inicializar o novo arquivo de projeto quando um usuário cria um novo projeto por meio de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] interface do usuário. Por exemplo, o [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] modelos inicializar o que eventualmente se tornarem arquivos. vcproj.  
   
-  A ilustração a seguir mostra as interfaces principais, serviços e objetos que compõem uma implementação típica do projeto. Você pode usar o auxiliar de aplicativo, HierUtil7, para criar os objetos subjacentes e outro clichê de programação. Para obter mais informações sobre o auxiliar de aplicativo HierUtil7, consulte [não está em compilação: Usando Classes do projeto HierUtil7 para implementar um tipo de projeto (C++)](http://msdn.microsoft.com/a5c16a09-94a2-46ef-87b5-35b815e2f346).  
+  A ilustração a seguir mostra as interfaces principais, serviços e objetos que compõem uma implementação típica do projeto. Você pode usar o auxiliar de aplicativo, HierUtil7, para criar os objetos subjacentes e outro clichê de programação. Para obter mais informações sobre o auxiliar de aplicativo HierUtil7, consulte [não está em compilação: Usando Classes do projeto HierUtil7 para implementar um tipo de projeto (C++)](https://msdn.microsoft.com/a5c16a09-94a2-46ef-87b5-35b815e2f346).  
   
   ![Gráfico de modelo de projeto do Studio Visual](../../extensibility/internals/media/vsprojectmodel.gif "vsProjectModel")  
   Modelo de projeto  
@@ -45,7 +45,7 @@ As interfaces e implementações de todos os projetos em [!INCLUDE[vsprvs](../..
   
 ## <a name="see-also"></a>Consulte também  
  [Lista de verificação: Criação de novos tipos de projeto](../../extensibility/internals/checklist-creating-new-project-types.md)   
- [Não está em compilação: Usando Classes do projeto HierUtil7 para implementar um tipo de projeto (C++)](http://msdn.microsoft.com/a5c16a09-94a2-46ef-87b5-35b815e2f346)   
+ [Não está em compilação: Usando Classes do projeto HierUtil7 para implementar um tipo de projeto (C++)](https://msdn.microsoft.com/a5c16a09-94a2-46ef-87b5-35b815e2f346)   
  [Componentes de núcleo do modelo de projeto](../../extensibility/internals/project-model-core-components.md)   
  [Criar instâncias de projetos usando fábricas de projeto](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)   
  [Como: Obtenha um serviço](../../extensibility/how-to-get-a-service.md)   

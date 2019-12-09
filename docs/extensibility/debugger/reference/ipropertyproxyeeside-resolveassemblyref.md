@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IPropertyProxyEESide::ResolveAssemblyRef
 ms.assetid: 662ca0a6-dad0-4c00-a718-bb3bbc5bd9da
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3294c19455b5ddf36ebecff52dab4908be84afab
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 3d2fd21b39e171238319c857ad0384db1d7635d7
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62865791"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66353457"
 ---
 # <a name="ipropertyproxyeesideresolveassemblyref"></a>IPropertyProxyEESide::ResolveAssemblyRef
 Determina o local da referência de assembly gerenciado especificado.
@@ -44,26 +47,21 @@ int ResolveAssemblyRef(
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `assemName`
+## <a name="parameters"></a>Parâmetros
+`assemName`\
+[in] Nome do assembly para resolver.
 
- [in] Nome do assembly para resolver.
+`assemBytes`\
+[out] Retorna um [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) contendo os bytes de assembly associados à referência de objeto.
 
- `assemBytes`
+`assemPdb`\
+[out] Retorna um `IEEDataStorage` objeto que contém o símbolo de armazena os dados associados a esta referência.
 
- [out] Retorna um [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) contendo os bytes de assembly associados à referência de objeto.
+`assemLocation`\
+[out] Retorna o local do caminho dessa referência.
 
- `assemPdb`
-
- [out] Retorna um `IEEDataStorage` objeto que contém o símbolo de armazena os dados associados a esta referência.
-
- `assemLocation`
-
- [out] Retorna o local do caminho dessa referência.
-
- `alr`
-
- [out] Retorna um valor da [ASSEMBLYLOCRESOLUTION](../../../extensibility/debugger/reference/assemblylocresolution.md) enumeração que indica o local do assembly dessa referência.
+`alr`\
+[out] Retorna um valor da [ASSEMBLYLOCRESOLUTION](../../../extensibility/debugger/reference/assemblylocresolution.md) enumeração que indica o local do assembly dessa referência.
 
 ## <a name="return-value"></a>Valor de retorno
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.

@@ -21,12 +21,12 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 44f25085edcc8b492946d54c7853f8ec32deb0c2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 0c9dcc0d09887cacca7e6cdaa2e4f2b719c6451c
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114958"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67826241"
 ---
 # <a name="xsd-task"></a>Tarefa XSD
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,19 +40,19 @@ Encapsula a ferramenta de definição de esquema XML (xsd.exe), a qual gera arqu
   
      Parâmetro **String** opcional.  
   
-     Uma lista de opções, conforme especificado na linha de comando. Por exemplo, "*/option1 /option2 /option#*". Use esse parâmetro para especificar opções não representadas por nenhum outro parâmetro da tarefa **XSD**.  
+     Uma lista de opções, conforme especificado na linha de comando. Por exemplo, " */option1 /option2 /option#* ". Use esse parâmetro para especificar opções não representadas por nenhum outro parâmetro da tarefa **XSD**.  
   
 - **GenerateFromSchema**  
   
-     Parâmetro **String** opcional.  
-  
-     Especifica os tipos gerados com base no esquema especificado.  
-  
-     Especifique um dos valores a seguir, cada um dos quais correspondente a uma opção XSD.  
-  
-    - **classes** - **/classes**  
-  
-    - **dataset** - **/dataset**  
+  Parâmetro **String** opcional.  
+
+  Especifica os tipos gerados com base no esquema especificado.  
+
+  Especifique um dos valores a seguir, cada um dos quais correspondente a uma opção XSD.  
+
+  - **classes** -  **/classes**  
+
+  - **dataset** -  **/dataset**  
   
 - **Linguagem**  
   
@@ -86,5 +86,5 @@ Encapsula a ferramenta de definição de esquema XML (xsd.exe), a qual gera arqu
   
      Especifica o diretório do log de rastreamento.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Veja também  
  [Referência de tarefas](../msbuild/msbuild-task-reference.md)

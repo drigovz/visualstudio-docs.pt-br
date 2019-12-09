@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 81d1a256b4300510ed31c163d92cea89df884aac
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2de57f0d3bd44e4d46f19ee74484380bf0e6f2ae
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62832719"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742838"
 ---
 # <a name="idiapropertystorage"></a>IDiaPropertyStorage
-Permite que você leia as propriedades persistentes de um conjunto de propriedades do DIA.
+Permite que você leia as propriedades persistentes de um conjunto de propriedades de DIA.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -28,25 +28,25 @@ Permite que você leia as propriedades persistentes de um conjunto de propriedad
 IDiaPropertyStorage : IUnknown
 ```
 
-## <a name="methods-in-vtable-order"></a>Métodos na ordem de Vtable
+## <a name="methods-in-vtable-order"></a>Métodos em ordem vtable
 A tabela a seguir mostra os métodos de `IDiaPropertyStorage`.
 
 |Método|Descrição|
 |------------|-----------------|
-|[IDiaPropertyStorage::Enum](../../debugger/debug-interface-access/idiapropertystorage-enum.md)|Obtém um ponteiro para um enumerador para as propriedades nesse conjunto.|
+|[IDiaPropertyStorage::Enum](../../debugger/debug-interface-access/idiapropertystorage-enum.md)|Obtém um ponteiro para um enumerador para propriedades dentro deste conjunto.|
 |[IDiaPropertyStorage::ReadBOOL](../../debugger/debug-interface-access/idiapropertystorage-readbool.md)|Lê `BOOL` valores em um conjunto de propriedades.|
 |[IDiaPropertyStorage::ReadBSTR](../../debugger/debug-interface-access/idiapropertystorage-readbstr.md)|Lê `BSTR` valores em um conjunto de propriedades.|
 |[IDiaPropertyStorage::ReadDWORD](../../debugger/debug-interface-access/idiapropertystorage-readdword.md)|Lê `DWORD` valores em um conjunto de propriedades.|
 |[IDiaPropertyStorage::ReadLONG](../../debugger/debug-interface-access/idiapropertystorage-readlong.md)|Lê `LONG` valores em um conjunto de propriedades.|
-|[IDiaPropertyStorage::ReadMultiple](../../debugger/debug-interface-access/idiapropertystorage-readmultiple.md)|Lê os valores de propriedade em um conjunto de propriedades.|
-|[IDiaPropertyStorage::ReadPropertyNames](../../debugger/debug-interface-access/idiapropertystorage-readpropertynames.md)|Obtém correspondente de nomes de cadeia de caracteres para receber identificadores de propriedade.|
+|[IDiaPropertyStorage::ReadMultiple](../../debugger/debug-interface-access/idiapropertystorage-readmultiple.md)|Lê valores de propriedade em um conjunto de propriedades.|
+|[IDiaPropertyStorage::ReadPropertyNames](../../debugger/debug-interface-access/idiapropertystorage-readpropertynames.md)|Obtém os nomes de cadeia de caracteres correspondentes para os identificadores de propriedade fornecidos.|
 |[IDiaPropertyStorage::ReadULONGLONG](../../debugger/debug-interface-access/idiapropertystorage-readulonglong.md)|Lê `ULONGLONG` valores em um conjunto de propriedades.|
 
 ## <a name="remarks"></a>Comentários
-Cada propriedade dentro de um conjunto de propriedades é identificada por um identificador de propriedade (ID), quatro bytes `ULONG` valor exclusivo para esse conjunto. As propriedades expostas por meio de `IDiaPropertyStorage` interface correspondem às propriedades disponíveis na interface do pai. Por exemplo, as propriedades do [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) interface pode ser acessada por nome por meio de `IDiaPropertyStorage` interface (no entanto, observe que, mesmo que a propriedade possa ser acessada, isso não significa a propriedade é válida para um particular `IDiaSymbol` objeto).
+Cada propriedade dentro de um conjunto de propriedades é identificada por um identificador de propriedade (ID), um valor de `ULONG` de quatro bytes exclusivo para esse conjunto. As propriedades expostas por meio da interface `IDiaPropertyStorage` correspondem às propriedades disponíveis na interface pai. Por exemplo, as propriedades da interface [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) podem ser acessadas pelo nome por meio da interface `IDiaPropertyStorage` (Observe, porém, que, embora a propriedade possa estar acessível, isso não significa que a propriedade é válida para um objeto `IDiaSymbol` específico).
 
 ## <a name="notes-for-callers"></a>Observações para chamadores
-Obtenha essa interface ao chamar o `QueryInterface` método na interface do outro. As interfaces a seguir podem ser consultadas quanto a `IDiaPropertyStorage` interface:
+Obtenha essa interface chamando o método `QueryInterface` em outra interface. As seguintes interfaces podem ser consultadas para a interface de `IDiaPropertyStorage`:
 
 - [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)
 
@@ -63,7 +63,7 @@ Obtenha essa interface ao chamar o `QueryInterface` método na interface do outr
 - [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)
 
 ## <a name="example"></a>Exemplo
-Este exemplo mostra uma função que exibe todas as propriedades expostas pelo `IDiaPropertyStorage` objeto. Consulte a [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md) interface para obter um exemplo de como o `IDiaPropertyStorage` interface é obtida a [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md) interface.
+Este exemplo mostra uma função que exibe todas as propriedades expostas pelo objeto `IDiaPropertyStorage`. Consulte a interface [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md) para obter um exemplo de como a interface de `IDiaPropertyStorage` é obtida da interface [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md) .
 
 ```C++
 void PrintPropertyStorage(IDiaPropertyStorage* pPropertyStorage)
@@ -120,9 +120,9 @@ void PrintPropertyStorage(IDiaPropertyStorage* pPropertyStorage)
 ```
 
 ## <a name="requirements"></a>Requisitos
-Cabeçalho: Dia2.h
+Cabeçalho: dia2. h
 
-Biblioteca: diaguids.lib
+Biblioteca: diaguids. lib
 
 DLL: msdia80.dll
 

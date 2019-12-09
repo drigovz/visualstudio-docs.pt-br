@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugFields interface
 ms.assetid: 403c2a51-3ba5-431f-a1dd-2f3b2046c00c
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9f557b722a36665b20f5e06093027f8085a014ed
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 50d80242ca516c5fa7f3ad297250e25c782664d0
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62914705"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66350377"
 ---
 # <a name="ienumdebugfields"></a>IEnumDebugFields
 Essa interface representa uma coleção de objetos que implementam o [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) interface.

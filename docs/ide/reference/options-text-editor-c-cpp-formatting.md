@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: cb6f1cbb-5305-48da-a8e8-33fd70775d46
 author: mikeblome
 ms.author: mblome
-manager: wpickett
+manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 95683c93558f67457f0868a76f52d1334e7a6712
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b866d09dbd448950a641ebb59501c13c3bf35188
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62817605"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461813"
 ---
 # <a name="options-text-editor-cc-formatting"></a>Opções, Editor de Texto, C/C++, Formatação
 
@@ -56,7 +56,7 @@ A página também tem opções para configurar o suporte para o [ClangFormat](ht
 
 O suporte a ClangFormat está habilitado por padrão. Você pode escolher quais dessas convenções de formatação comuns serão aplicadas a todos os seus projetos: LLVM, Google, Chromium, Mozilla ou WebKit. Você também pode criar um arquivo .clang-format ou _clang-format de definição de formato personalizado. Quando esse arquivo está presente em uma pasta de projeto, o Visual Studio o usa para formatar todos os arquivos de código-fonte nessa pasta e em suas subpastas.
 
-Por padrão, o Visual Studio executa o clangformat.exe em segundo plano e aplica a formatação à medida que você digita. Você também pode especificar que ele seja executado somente para comandos de formatação invocados manualmente **Formatar Documento (Ctrl + K, Ctrl + D)** ou **Formatar Seleção (Ctrl + K, Ctrl + F)**.
+Por padrão, o Visual Studio executa o clangformat.exe em segundo plano e aplica a formatação à medida que você digita. Você também pode especificar que ele seja executado somente para comandos de formatação invocados manualmente **Formatar Documento (Ctrl + K, Ctrl + D)** ou **Formatar Seleção (Ctrl + K, Ctrl + F)** .
 
 ## <a name="indentation-new-lines-spacing-wrapping-pages"></a>Páginas de Recuo, Novas Linhas, Disposição de Espaçamento
 

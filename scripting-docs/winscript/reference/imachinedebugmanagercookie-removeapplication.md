@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4d920bcc348266d4aa9f0c4a4e297506f008e859
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d829262245c8c14b83ce4016f103ecae68895bd9
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62977750"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576788"
 ---
 # <a name="imachinedebugmanagercookieremoveapplication"></a>IMachineDebugManagerCookie::RemoveApplication
-Remove um aplicativo de execução de lista de aplicativos.  
+Remove um aplicativo da lista de aplicativos em execução.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -38,12 +38,12 @@ HRESULT RemoveApplication(
   
 #### <a name="parameters"></a>Parâmetros  
  `dwDebugAppCookie`  
- [in] Um cookie que identifica o aplicativo de depuração.  
+ no Um cookie que identifica o aplicativo de depuração.  
   
  `dwAppCookie`  
- [in] O cookie fornecido quando o aplicativo foi adicionado à lista de aplicativos.  
+ no O cookie fornecido quando o aplicativo foi adicionado à lista de aplicativos.  
   
-## <a name="return-value"></a>Valor de retorno  
+## <a name="return-value"></a>Valor retornado  
  O método retorna um `HRESULT`. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.  
   
 |Valor|Descrição|  
@@ -51,9 +51,9 @@ HRESULT RemoveApplication(
 |`S_OK`|O método foi bem-sucedido.|  
   
 ## <a name="remarks"></a>Comentários  
- Esse método é chamado pelo Gerenciador de depuração do processo sempre que `IProcessDebugManager::RemoveApplication` é chamado.  
+ Esse método é chamado pelo Gerenciador de depuração de processo sempre que `IProcessDebugManager::RemoveApplication` é chamado.  
   
 ## <a name="see-also"></a>Consulte também  
  [IMachineDebugManagerCookie::AddApplication](../../winscript/reference/imachinedebugmanagercookie-addapplication.md)   
- [Interface IMachineDebugManagerCookie](../../winscript/reference/imachinedebugmanagercookie-interface.md)   
+   de [interface IMachineDebugManagerCookie](../../winscript/reference/imachinedebugmanagercookie-interface.md)  
  [IProcessDebugManager::RemoveApplication](../../winscript/reference/iprocessdebugmanager-removeapplication.md)

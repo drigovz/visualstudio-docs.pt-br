@@ -7,19 +7,19 @@ helpviewer_keywords:
 - editors, text viewing
 - Code Editor, word wrap
 ms.assetid: 442f33ef-9f52-4515-b55f-fb816d664645
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b4d2a6195fc2357eecc6f9e011a1a7a4c3fff789
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 30bfe549100a06df6b9a8163cad1e3d519c3a91b
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62789478"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72663114"
 ---
-# <a name="how-to-manage-word-wrap-in-the-editor"></a>Como: Gerenciar a quebra automática de linha no editor
+# <a name="how-to-manage-word-wrap-in-the-editor"></a>Como gerenciar a quebra automática de linha no editor
 
 É possível definir e desmarcar a opção **Quebra automática de linha**. Quando essa opção for definida, a parte de uma linha longa que se estender além da largura atual da janela Editor de Código será exibida na próxima linha. Quando essa opção estiver desmarcada, por exemplo, para facilitar o uso de numeração de linha, será possível rolar para a direita para ver os finais das linhas longas.
 
@@ -55,6 +55,4 @@ Se você estiver familiarizado com a quebra automática de linha no Notepad++, S
 
 ## <a name="see-also"></a>Consulte também
 
-- [Personalizando o editor](../../ide/customizing-the-editor.md)
-- [Caixa de diálogo Opções do Editor de Texto](../../ide/reference/text-editor-options-dialog-box.md)
 - [Recursos do Editor de Códigos](../../ide/writing-code-in-the-code-and-text-editor.md)

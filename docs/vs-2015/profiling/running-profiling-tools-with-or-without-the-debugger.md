@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 806eeba9b3dfee8dc45c90f0a6d2f99ed0772ec7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: b242bd0eec4f7faa3f7a27923de289c494ccf798
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054060"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74298207"
 ---
 # <a name="running-profiling-tools-with-or-without-the-debugger"></a>Executando ferramentas de criação de perfil com ou sem o depurador
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +51,7 @@ O Visual Studio agora oferece a opção de ferramentas de desempenho, algumas da
   
     O gráfico a seguir mostra a janela **Ferramentas de Diagnóstico** no Visual Studio 2015 Atualização 1:  
   
-    ![DiagnosticTools&#45;Update1](../profiling/media/diagnostictools-update1.png "DiagnosticTools-Update1")  
+    ![DiagnosticTools&#45;atualização1](../profiling/media/diagnostictools-update1.png "DiagnosticTools-Atualização1")  
   
 4. Você pode optar por ver **Uso de Memória** ou **Utilização de CPU** (ou ambos) com as configurações **Selecionar Ferramentas** na barra de ferramentas. Se você estiver executando o Visual Studio Enterprise, poderá habilitar ou desabilitar o IntelliTrace em **Ferramentas / Opções / IntelliTrace**.  
   
@@ -67,18 +67,18 @@ O Visual Studio agora oferece a opção de ferramentas de desempenho, algumas da
   
    ![DiagnosticEventFilter](../profiling/media/diagnosticeventfilter.png "DiagnosticEventFilter")  
   
-   Para obter mais informações, consulte [Pesquisando e filtrando a guia de Eventos na janela de Ferramentas de Diagnóstico](http://blogs.msdn.com/b/visualstudioalm/archive/2015/11/12/searching-and-filtering-the-events-tab-of-the-diagnostic-tools-window.aspx).  
+   Para obter mais informações, consulte [Pesquisando e filtrando a guia de Eventos na janela de Ferramentas de Diagnóstico](https://devblogs.microsoft.com/devops/searching-and-filtering-the-events-tab-of-the-diagnostic-tools-window/).  
   
 ## <a name="collect-profiling-data-without-debugging"></a>Coletar dados de criação de perfil sem depuração  
  Algumas ferramentas de criação de perfil requerem privilégios de administrador para serem executadas. Você pode abrir o Visual Studio como administrador ou optar por executar as ferramentas como administrador ao iniciar a sessão de diagnóstico.  
   
-1. Abra o projeto no Visual Studio.  
+1. {1&gt;Abra o projeto no Visual Studio.&lt;1}  
   
-2. No menu **Depurar**, escolha **Criador de Perfil de Desempenho...** (Tecla de atalho: Alt + F2).  
+2. No menu **depurar** , escolha **criador de perfil de desempenho...** (tecla de atalho: Alt + F2).  
   
 3. Na página de inicialização de diagnóstico, escolha uma ou mais ferramentas para executar na sessão. São exibidas apenas as ferramentas que são aplicáveis ao tipo de projeto, o sistema operacional e à linguagem de programação. Quando você escolhe uma ferramenta de diagnóstico, as seleções de ferramentas que não podem ser executadas na mesma sessão de diagnóstico são desabilitadas. Veja aqui suas possíveis suas escolhas para um aplicativo Universal do Windows C#:  
   
-    ![Selecionar as ferramentas de diagnóstico](../profiling/media/diag-selecttool.png "DIAG_SelectTool")  
+    ![Selecione as ferramentas de diagnóstico](../profiling/media/diag-selecttool.png "DIAG_SelectTool")  
   
 4. Para iniciar a sessão de diagnóstico, clique em **Iniciar**.  
   
@@ -86,7 +86,7 @@ O Visual Studio agora oferece a opção de ferramentas de desempenho, algumas da
   
     Durante a execução da sessão, algumas ferramentas exibem gráficos de dados em tempo real na página de início das ferramentas de diagnóstico.  
   
-    ![Coletar dados sobre o Desempenho e o Diagnóstico pag](../profiling/media/pdhub-collectdata.png "PDHUB_CollectData")  
+    ![Coletar dados sobre o desempenho e diagnóstico pag](../profiling/media/pdhub-collectdata.png "PDHUB_CollectData")  
   
 6. Para encerrar a sessão de diagnóstico, clique em **Parar a coleta**.  
   
@@ -101,17 +101,17 @@ O Visual Studio agora oferece a opção de ferramentas de desempenho, algumas da
   
 |||  
 |-|-|  
-|![Etapa 1](../profiling/media/procguid-1.png "ProcGuid_1")|A linha de tempo mostra a duração da sessão de criação de perfil, os eventos de ativação de ciclo de vida do aplicativo e as marcas de usuário.|  
-|![Etapa 2](../profiling/media/procguid-2.png "ProcGuid_2")|Você pode restringir o relatório a uma parte da linha do tempo arrastando as barras azuis para selecionar uma região da linha do tempo.|  
-|![Etapa 3](../profiling/media/procguid-3.png "ProcGuid_3")|Uma ferramenta exibe um ou mais grafos mestres. Se sua sessão de diagnóstico for criada com várias ferramentas, todos os grafos mestres serão exibidos.|  
-|![Etapa 4](../profiling/media/procguid-4.png "ProcGuid_4")|Você pode recolher e expandir os gráficos individuais.|  
-|![Etapa 5](../profiling/media/procguid-6.png "ProcGuid_6")|Quando seus dados incluem informações de várias ferramentas, os detalhes da ferramenta são coletados sob as guias.|  
+|![Etapa 1](../profiling/media/procguid-1.png "ProcGuid_1")|{1&gt;A linha de tempo mostra a duração da sessão de criação de perfil, os eventos de ativação de ciclo de vida do aplicativo e as marcas de usuário.&lt;1}|  
+|![Etapa 2](../profiling/media/procguid-2.png "ProcGuid_2")|{1&gt;Você pode restringir o relatório a uma parte da linha do tempo arrastando as barras azuis para selecionar uma região da linha do tempo.&lt;1}|  
+|![Etapa 3](../profiling/media/procguid-3.png "ProcGuid_3")|Uma ferramenta exibe um ou mais gráficos mestres. Se sua sessão de diagnóstico for criada com várias ferramentas, todos os gráficos mestres serão exibidos.|  
+|![Etapa 4](../profiling/media/procguid-4.png "ProcGuid_4")|{1&gt;Você pode recolher e expandir os gráficos individuais.&lt;1}|  
+|![Etapa 5](../profiling/media/procguid-6.png "ProcGuid_6")|{1&gt;Quando seus dados incluem informações de várias ferramentas, os detalhes da ferramenta são coletados sob as guias.&lt;1}|  
 |![Etapa 6](../profiling/media/procguid-6a.png "ProcGuid_6a")|Uma ferramenta poder ter uma ou mais exibições de detalhes. A exibição é filtrada pela região selecionada da linha do tempo.|  
   
 ## <a name="setting-the-analysis-target-to-another-device"></a>Configurando o destino da análise para outro dispositivo  
- Além de iniciar o aplicativo a partir do projeto do Visual Studio, você também pode executar sessões de diagnóstico em destinos alternativos. Por exemplo, você pode diagnosticar problemas de desempenho em uma versão de seu aplicativo que foi instalado por meio da Windows Store.  
+ Além de iniciar o aplicativo no projeto do Visual Studio, você também pode executar sessões de diagnóstico em destinos alternativos. Por exemplo, você pode diagnosticar problemas de desempenho em uma versão de seu aplicativo que foi instalado por meio da Windows Store.  
   
- ![Escolha o destino da análise de ferramentas de diagnóstico](../profiling/media/pdhub-chooseanalysistarget.png "PDHUB_ChooseAnalysisTarget")  
+ ![Escolher destino de análise de ferramentas de diagnóstico](../profiling/media/pdhub-chooseanalysistarget.png "PDHUB_ChooseAnalysisTarget")  
   
  Você pode iniciar aplicativos já instalados em um dispositivo ou pode anexar as ferramentas de diagnóstico a alguns aplicativos que já estão em execução. Ao escolher **Aplicativo em Execução** ou **Aplicativo Instalado**, você seleciona o aplicativo em uma lista que descobre os aplicativos no destino de implantação especificado.  
   
@@ -125,18 +125,18 @@ O Visual Studio agora oferece a opção de ferramentas de desempenho, algumas da
  Executar uma sessão de diagnóstico em um computador ou tablet remoto exige que as Ferramentas Remotas do Visual Studio estejam instaladas e em execução no destino remoto. Para aplicativos de área de trabalho, consulte [Depuração remota](../debugger/remote-debugging.md).  Para aplicativos Windows Universal, consulte [Executar aplicativos da Windows Store em um computador remoto](../debugger/run-windows-store-apps-on-a-remote-machine.md).  
   
 ## <a name="blog-posts-and-msdn-articles-from-the-diagnostics-development-team"></a>Postagens em blogs e artigos do MSDN da equipe de desenvolvimento de Diagnóstico  
- [MSDN Magazine: Análise do desempenho durante a depuração no Visual Studio 2015](https://msdn.microsoft.com/magazine/dn973013.aspx)  
+ [MSDN Magazine: análise do desempenho durante a depuração no Visual Studio 2015](https://msdn.microsoft.com/magazine/dn973013.aspx)  
   
- [MSDN Magazine: Uso do IntelliTrace para diagnosticar problemas com mais rapidez](https://msdn.microsoft.com/magazine/dn973014.aspx)  
+ [MSDN Magazine: uso do IntelliTrace para diagnosticar problemas com mais rapidez](https://msdn.microsoft.com/magazine/dn973014.aspx)  
   
- [Postagem no blog: Diagnosticar vazamentos de manipulador de eventos com a ferramenta de Uso de Memória no Visual Studio 2015](http://blogs.msdn.com/b/visualstudioalm/archive/2015/04/29/diagnosing-event-handler-leaks-with-the-memory-usage-tool-in-visual-studio-2015.aspx)  
+ [Postagem do blog: diagnosticar vazamentos de manipulador de eventos com a ferramenta de Uso de Memória no Visual Studio 2015](https://devblogs.microsoft.com/devops/diagnosing-event-handler-leaks-with-the-memory-usage-tool-in-visual-studio-2015/)  
   
- [Vídeo: Depuração histórica com o IntelliTrace no Microsoft Visual Studio Ultimate 2015](https://channel9.msdn.com/Events/Ignite/2015/BRK3716)  
+ [Vídeo: depuração histórica com o IntelliTrace no Microsoft Visual Studio Ultimate 2015](https://channel9.msdn.com/Events/Ignite/2015/BRK3716)  
   
- [Vídeo: Depurar problemas de desempenho usando o Visual Studio 2015](https://channel9.msdn.com/Events/Build/2015/3-731)  
+ [Vídeo: depurar problemas de desempenho usando o Visual Studio 2015](https://channel9.msdn.com/Events/Build/2015/3-731)  
   
- [PerfTips: Performance Information at-a-glance while Debugging with Visual Studio ("Visão rápida de informações de desempenho durante a depuração com o Visual Studio")](http://blogs.msdn.com/b/visualstudioalm/archive/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio.aspx)  
+ [PerfTips: informações de desempenho imediatas durante depuração com o Visual Studio](https://devblogs.microsoft.com/devops/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio/)  
   
- [Janela do depurador Ferramentas de Diagnóstico no Visual Studio 2015](http://blogs.msdn.com/b/visualstudioalm/archive/2015/01/16/diagnostic-tools-debugger-window-in-visual-studio-2015.aspx)  
+ [Janela do depurador Ferramentas de Diagnóstico no Visual Studio 2015](https://devblogs.microsoft.com/devops/diagnostic-tools-debugger-window-in-visual-studio-2015/)  
   
- [IntelliTrace no Visual Studio Enterprise 2015](http://blogs.msdn.com/b/visualstudioalm/archive/2015/01/16/intellitrace-in-visual-studio-ultimate-2015.aspx)
+ [IntelliTrace no Visual Studio Enterprise 2015](https://devblogs.microsoft.com/devops/intellitrace-in-visual-studio-ultimate-2015/)

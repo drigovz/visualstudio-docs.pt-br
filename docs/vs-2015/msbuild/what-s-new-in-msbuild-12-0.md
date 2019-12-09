@@ -9,20 +9,20 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9746b156d2ec959f2ffb5bbff41b3891516d130f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 9d088844a3d8c1137b762b541b0393f939cdc194
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60074106"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301293"
 ---
 # <a name="what39s-new-in-msbuild-120"></a>Novidades do MSBuild 12.0
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-O MSBuild agora é instalado como parte do Visual Studio e não como parte do .NET Framework. O número de versão atual do MSBuild é 12.0. Se desejar instalar o MSBuild separadamente, baixe o pacote de instalação em [MSBuild Download](http://go.microsoft.com/fwlink/?LinkId=309745) (Download do MSBuild).  
+O MSBuild agora é instalado como parte do Visual Studio e não como parte do .NET Framework. O número de versão atual do MSBuild é 12.0. Se desejar instalar o MSBuild separadamente, baixe o pacote de instalação em [MSBuild Download](https://go.microsoft.com/fwlink/?LinkId=309745) (Download do MSBuild).  
   
 ## <a name="changed-path"></a>Caminho alterado  
- O MSBuild agora é instalado diretamente em *%ProgramFiles%*, por exemplo, em C:\Arquivos de Programas\MSBuild\\.  
+ O MSBuild agora é instalado diretamente em *%ProgramFiles%* , por exemplo, em C:\Arquivos de Programas\MSBuild\\.  
   
 ## <a name="changed-properties"></a>Propriedades alteradas  
  As seguintes propriedades do MSBuild foram alteradas no novo número de versão:  
@@ -41,5 +41,5 @@ O MSBuild agora é instalado como parte do Visual Studio e não como parte do .N
   
 - `MSBuildToolsPath` e `MSBuildFrameworkToolsPath` têm equivalentes de 32 bits – `MSBuildToolsPath32` e `MSBuildFrameworkToolsPath32`– que sempre apontam para o local de 32 bits, independentemente se está sendo usado o MSBuild de 32 bits ou o de 64 bits.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 [MSBuild](msbuild.md)

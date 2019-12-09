@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEEVisualizerDataProvider::GetObjectForVisualizer method
 ms.assetid: bd5376fc-13b4-40b7-9a5d-7ba8289f1b24
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f73b08d4a8a5380fb72cdd64db3865afafefda87
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: a10630ee8c74af333958e7115c660872ac26f78f
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62915233"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66350218"
 ---
 # <a name="ieevisualizerdataprovidergetobjectforvisualizer"></a>IEEVisualizerDataProvider::GetObjectForVisualizer
 Esse método obtém o objeto que representa este visualizador.
@@ -36,10 +39,9 @@ int GetObjectForVisualizer(
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `ppObject`
-
- [out] O objeto que está sendo representado por esse visualizador
+## <a name="parameters"></a>Parâmetros
+`ppObject`\
+[out] O objeto que está sendo representado por esse visualizador
 
 ## <a name="return-value"></a>Valor de retorno
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.

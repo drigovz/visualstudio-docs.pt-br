@@ -1,44 +1,42 @@
 ---
 title: IDiaEnumTables::Clone | Microsoft Docs
-ms.date: 11/15/2016
-ms.prod: visual-studio-dev14
-ms.technology: vs-ide-debug
-ms.topic: reference
+ms.date: 11/04/2016
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaEnumTables::Clone method
 ms.assetid: beb21109-b12c-44d8-8c1f-a332216b3713
-caps.latest.revision: 11
-author: MikeJo5000
+author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2f9fc227983818aa1d1c91e147a5dce650844ad8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.workload:
+- multiple
+ms.openlocfilehash: 522ac4080331c869c32585dfed789378b1271542
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62832808"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743789"
 ---
 # <a name="idiaenumtablesclone"></a>IDiaEnumTables::Clone
-[!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
+Cria um enumerador que contém o mesmo estado de enumeração que o enumerador atual.
 
-Cria um enumerador que contém o mesmo estado de enumeração que o enumerador atual.  
-  
-## <a name="syntax"></a>Sintaxe  
-  
-```cpp#  
-HRESULT Clone (   
-   IDiaEnumTables** ppenum  
-);  
-```  
-  
-#### <a name="parameters"></a>Parâmetros  
- `ppenum`  
- [out] Retorna um [IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md) objeto que contém uma duplicata do enumerador. As tabelas não são duplicadas, apenas o enumerador.  
-  
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.  
-  
-## <a name="see-also"></a>Consulte também  
- [IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md)
+## <a name="syntax"></a>Sintaxe
+
+```C++
+HRESULT Clone ( 
+   IDiaEnumTables** ppenum
+);
+```
+
+#### <a name="parameters"></a>Parâmetros
+ `ppenum`
+
+fora Retorna um objeto [IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md) que contém uma duplicata do enumerador. As tabelas não são duplicadas, somente o enumerador.
+
+## <a name="return-value"></a>Valor retornado
+ Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
+
+## <a name="see-also"></a>Consulte também
+- [IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md)

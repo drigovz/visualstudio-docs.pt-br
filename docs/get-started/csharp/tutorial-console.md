@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial: criar um aplicativo de console simples em C#'
+title: 'Tutorial: criar um aplicativo C# de console simples'
 description: Saiba como criar aplicativos de console em C# do Visual Basic no Visual Studio, passo a passo.
 ms.custom: seodec18, get-started
 ms.date: 03/23/2019
@@ -15,14 +15,14 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 80b5021af7047725f4b8cb31f55bcbfea800cf93
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 740968740306bed4c2cf52191c4ff661b6247bd0
+ms.sourcegitcommit: 697f2ab875fd789685811687387e9e8e471a38c4
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62971550"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74830005"
 ---
-# <a name="tutorial-create-a-simple-c-console-app-in-visual-studio"></a>Tutorial: Criar um aplicativo de console simples em C# no Visual Studio
+# <a name="tutorial-create-a-simple-c-console-app-in-visual-studio"></a>Tutorial: criar um aplicativo C# de console simples no Visual Studio
 
 Neste tutorial do C#, você usará o Visual Studio para criar e executar um aplicativo de console e explorar alguns recursos do IDE (ambiente de desenvolvimento integrado) do Visual Studio durante esse processo.
 
@@ -34,7 +34,7 @@ Se você ainda não tiver instalado o Visual Studio, acesse a página [Downloads
 
 ::: moniker range="vs-2019"
 
-Se você ainda não tiver instalado o Visual Studio, acesse a página [Downloads do Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) para instalá-lo gratuitamente.
+Se você ainda não tiver instalado o Visual Studio, acesse a página [Downloads do Visual Studio](https://visualstudio.microsoft.com/downloads) para instalá-lo gratuitamente.
 
 ::: moniker-end
 
@@ -49,7 +49,7 @@ Para começar, criaremos um projeto de aplicativo em C#. O tipo de projeto inclu
 2. Na barra de menus superior, escolha **Arquivo** > **Novo** > **Projeto**.
    (Alternativamente, pressione **Ctrl**+**Shift**+**N**).
 
-3. No painel esquerdo da caixa de diálogo **Novo Projeto**, expanda **C#** e, em seguida, escolha **.NET Core**. No painel central, escolha **Aplicativo de Console (.NET Core)**. Em seguida, nomeie o arquivo como ***Calculator***.
+3. No painel esquerdo da caixa de diálogo **Novo Projeto**, expanda **C#** e, em seguida, escolha **.NET Core**. No painel central, escolha **Aplicativo de Console (.NET Core)** . Em seguida, nomeie o arquivo como ***Calculator***.
 
    ![Modelo de projeto do aplicativo do console (.NET Core) na caixa de diálogo Novo projeto no IDE do Visual Studio](./media/new-project-csharp-calculator-console-app.png)
 
@@ -57,7 +57,7 @@ Para começar, criaremos um projeto de aplicativo em C#. O tipo de projeto inclu
 
 Se o modelo de projeto **Aplicativo do Console (.NET Core)** não for exibido, você poderá obtê-lo adicionando a carga de trabalho **Desenvolvimento .NET Core de multiplataforma**. Veja como.
 
-#### <a name="option-1-use-the-new-project-dialog-box"></a>Opção 1: Usar a caixa de diálogo Novo Projeto
+#### <a name="option-1-use-the-new-project-dialog-box"></a>Opção 1: usar a caixa de diálogo Novo Projeto
 
 1. Selecione o link **Abrir o Instalador do Visual Studio** no painel esquerdo da caixa de diálogo **Novo Projeto**.
 
@@ -65,9 +65,9 @@ Se o modelo de projeto **Aplicativo do Console (.NET Core)** não for exibido, v
 
 1. O Instalador do Visual Studio é iniciado. Escolha a carga de trabalho **Desenvolvimento multiplaforma do .NET Core** e, em seguida, selecione **Modificar**.
 
-   ![Carga de trabalho de desenvolvimento multiplataforma do .NET Core no Instalador do Visual Studio](./media/dot-net-core-xplat-dev-workload.png)
+   ![Carga de trabalho de desenvolvimento multiplaforma do .NET Core no Instalador do Visual Studio](./media/dot-net-core-xplat-dev-workload.png)
 
-#### <a name="option-2-use-the-tools-menu-bar"></a>Opção 2: Usar a barra de menus Ferramentas
+#### <a name="option-2-use-the-tools-menu-bar"></a>Opção 2: usar a barra de menus Ferramentas
 
 1. Cancele a caixa de diálogo **Novo Projeto**; em seguida, vá até a barra de menus superior e escolha **Ferramentas** > **Obter Ferramentas e Recursos**.
 
@@ -90,13 +90,13 @@ Se o modelo de projeto **Aplicativo do Console (.NET Core)** não for exibido, v
    ![Escolha o modelo de C# para o Aplicativo de Console (.NET Framework)](./media/vs-2019/csharp-create-new-project-search-console-net-core-filtered.png)
 
    > [!NOTE]
-   > Se não vir o modelo **Aplicativo de Console (.NET Core)**, você poderá instalá-lo da janela **Criar um novo projeto**. Na mensagem **Não encontrou o que precisa?**, escolha o link **Instalar mais ferramentas e recursos**.
+   > Se não vir o modelo **Aplicativo de Console (.NET Core)** , você poderá instalá-lo da janela **Criar um novo projeto**. Na mensagem **Não encontrou o que precisa?** , escolha o link **Instalar mais ferramentas e recursos**.
    >
    > ![O link 'Instalar mais ferramentas e recursos' da mensagem 'Não encontrou o que precisa?' na janela 'Criar novo projeto'](../../get-started/media/vs-2019/not-finding-what-looking-for.png) 
    > 
    > Em seguida, no Instalador do Visual Studio, escolha a carga de trabalho de **desenvolvimento multiplataforma do .NET Core**.
    >
-   > ![Carga de trabalho de desenvolvimento multiplataforma do .NET Core no Instalador do Visual Studio](./media/dot-net-core-xplat-dev-workload.png)
+   > ![Carga de trabalho de desenvolvimento multiplaforma do .NET Core no Instalador do Visual Studio](./media/dot-net-core-xplat-dev-workload.png)
    >
    > Depois disso, escolha o botão **Modificar** no Instalador do Visual Studio. Pode ser solicitado que você salve seu trabalho; nesse caso, faça isso. Em seguida, escolha **Continuar** para instalar a carga de trabalho. Em seguida, retorne para a etapa 2 deste procedimento para "[Criar um projeto](#create-a-project)".
 
@@ -136,7 +136,7 @@ Vamos começar com alguns cálculos matemáticos básicos de inteiro em C#.
 
     ![Animação de código de matemática de inteiro que mostra o recurso de preenchimento automático do IntelliSense no IDE do Visual Studio](./media/integer-math-intellisense.gif)
 
-1. Escolha **Calculadora** para executar seu programa ou pressione **F5**.
+1. Escolha o botão **início** verde ao lado da **calculadora** para compilar e executar o programa ou pressione **F5**.
 
    ![Escolha o botão Calculadora para executar o aplicativo na barra de ferramentas](./media/csharp-console-calculator-button.png)
 
@@ -165,22 +165,22 @@ Vamos continuar com a adição de um conjunto mais complexo de código de calcul
         {
             static void Main(string[] args)
             {
-                // Declare variables and then initialize to zero
+                // Declare variables and then initialize to zero.
                 int num1 = 0; int num2 = 0;
 
-                // Display title as the C# console calculator app
+                // Display title as the C# console calculator app.
                 Console.WriteLine("Console Calculator in C#\r");
                 Console.WriteLine("------------------------\n");
 
-                // Ask the user to type the first number
+                // Ask the user to type the first number.
                 Console.WriteLine("Type a number, and then press Enter");
                 num1 = Convert.ToInt32(Console.ReadLine());
 
-                // Ask the user to type the second number
+                // Ask the user to type the second number.
                 Console.WriteLine("Type another number, and then press Enter");
                 num2 = Convert.ToInt32(Console.ReadLine());
 
-                // Ask the user to choose an option
+                // Ask the user to choose an option.
                 Console.WriteLine("Choose an option from the following list:");
                 Console.WriteLine("\ta - Add");
                 Console.WriteLine("\ts - Subtract");
@@ -188,7 +188,7 @@ Vamos continuar com a adição de um conjunto mais complexo de código de calcul
                 Console.WriteLine("\td - Divide");
                 Console.Write("Your option? ");
 
-                // Use a switch statement to do the math
+                // Use a switch statement to do the math.
                 switch (Console.ReadLine())
                 {
                     case "a":
@@ -204,7 +204,7 @@ Vamos continuar com a adição de um conjunto mais complexo de código de calcul
                         Console.WriteLine($"Your result: {num1} / {num2} = " + (num1 / num2));
                         break;
                 }
-                // Wait for the user to respond before closing
+                // Wait for the user to respond before closing.
                 Console.Write("Press any key to close the Calculator console app...");
                 Console.ReadKey();
             }
@@ -288,7 +288,7 @@ Vamos alterar o código para tratar esse erro.
 1. Substitua-o pelo seguinte código:
 
    ```csharp
-            // Ask the user to enter a non-zero divisor until they do so
+            // Ask the user to enter a non-zero divisor until they do so.
                 while (num2 == 0)
                 {
                     Console.WriteLine("Enter a non-zero divisor: ");
@@ -303,7 +303,7 @@ Vamos alterar o código para tratar esse erro.
 
    ![A seção alterada e revisada no editor de códigos do Visual Studio](./media/csharp-console-calculator-switch-code.png)
 
-Agora, quando você dividir qualquer número por zero, o aplicativo solicitará outro número. Melhor ainda: Ele não parará de perguntar enquanto você não fornecer um número diferente de zero.
+Agora, quando você dividir qualquer número por zero, o aplicativo solicitará outro número. Melhor ainda: não irá parar de perguntar até que você forneça um número diferente de zero.
 
    ![O editor de códigos do Visual Studio mostra o erro de divisão por zero](./media/csharp-console-calculator-dividebyzero.png)
 
@@ -317,9 +317,9 @@ Para corrigir esse erro, precisamos refatorar o código que inserimos anteriorme
 
 #### <a name="revise-the-code"></a>Revisar o código
 
-Em vez de depender da classe `program` para tratar todo o código, dividiremos nosso aplicativo em duas classes: `calculator` e `program`.
+Em vez de depender da classe `program` para tratar todo o código, dividiremos nosso aplicativo em duas classes: `Calculator` e `Program`.
 
-A classe `calculator` fará a maior parte do trabalho de cálculo e a classe `program` cuidará do trabalho de captura de erros e da interface do usuário.
+A classe `Calculator` fará a maior parte do trabalho de cálculo e a classe `Program` cuidará do trabalho de captura de erros e da interface do usuário.
 
 Vamos começar.
 
@@ -334,16 +334,16 @@ Vamos começar.
 
     ```
 
-1. Depois, adicione uma nova classe `calculator`, da seguinte maneira:
+1. Depois, adicione uma nova classe `Calculator`, da seguinte maneira:
 
     ```csharp
     class Calculator
     {
         public static double DoOperation(double num1, double num2, string op)
         {
-            double result = double.NaN; // Default value is "not-a-number" which we use if an operation, such as division, could result in an error
+            double result = double.NaN; // Default value is "not-a-number" which we use if an operation, such as division, could result in an error.
 
-            // Use a switch statement to do the math
+            // Use a switch statement to do the math.
             switch (op)
             {
                 case "a":
@@ -356,13 +356,13 @@ Vamos começar.
                     result = num1 * num2;
                     break;
                 case "d":
-                    // Ask the user to enter a non-zero divisor
+                    // Ask the user to enter a non-zero divisor.
                     if (num2 != 0)
                     {
                         result = num1 / num2;
                     }
                     break;
-                // Return text for an incorrect option entry
+                // Return text for an incorrect option entry.
                 default:
                     break;
             }
@@ -372,7 +372,7 @@ Vamos começar.
 
     ```
 
-1. Em seguida, adicione uma nova classe `program`, da seguinte maneira:
+1. Em seguida, adicione uma nova classe `Program`, da seguinte maneira:
 
     ```csharp
     class Program
@@ -380,18 +380,18 @@ Vamos começar.
         static void Main(string[] args)
         {
             bool endApp = false;
-            // Display title as the C# console calculator app
+            // Display title as the C# console calculator app.
             Console.WriteLine("Console Calculator in C#\r");
             Console.WriteLine("------------------------\n");
 
             while (!endApp)
             {
-                // Declare variables and set to empty
+                // Declare variables and set to empty.
                 string numInput1 = "";
                 string numInput2 = "";
                 double result = 0;
 
-                // Ask the user to type the first number
+                // Ask the user to type the first number.
                 Console.Write("Type a number, and then press Enter: ");
                 numInput1 = Console.ReadLine();
 
@@ -402,7 +402,7 @@ Vamos começar.
                     numInput1 = Console.ReadLine();
                 }
 
-                // Ask the user to type the second number
+                // Ask the user to type the second number.
                 Console.Write("Type another number, and then press Enter: ");
                 numInput2 = Console.ReadLine();
 
@@ -413,7 +413,7 @@ Vamos começar.
                     numInput2 = Console.ReadLine();
                 }
 
-                // Ask the user to choose an operator
+                // Ask the user to choose an operator.
                 Console.WriteLine("Choose an operator from the following list:");
                 Console.WriteLine("\ta - Add");
                 Console.WriteLine("\ts - Subtract");
@@ -439,11 +439,11 @@ Vamos começar.
 
                 Console.WriteLine("------------------------\n");
 
-                // Wait for the user to respond before closing
+                // Wait for the user to respond before closing.
                 Console.Write("Press 'n' and Enter to close the app, or press any other key and Enter to continue: ");
                 if (Console.ReadLine() == "n") endApp = true;
 
-                Console.WriteLine("\n"); // Friendly linespacing
+                Console.WriteLine("\n"); // Friendly linespacing.
             }
             return;
         }
@@ -486,9 +486,9 @@ namespace Calculator
     {
         public static double DoOperation(double num1, double num2, string op)
         {
-            double result = double.NaN; // Default value is "not-a-number" which we use if an operation, such as division, could result in an error
+            double result = double.NaN; // Default value is "not-a-number" which we use if an operation, such as division, could result in an error.
 
-            // Use a switch statement to do the math
+            // Use a switch statement to do the math.
             switch (op)
             {
                 case "a":
@@ -501,13 +501,13 @@ namespace Calculator
                     result = num1 * num2;
                     break;
                 case "d":
-                    // Ask the user to enter a non-zero divisor
+                    // Ask the user to enter a non-zero divisor.
                     if (num2 != 0)
                     {
                         result = num1 / num2;
                     }
                     break;
-                // Return text for an incorrect option entry
+                // Return text for an incorrect option entry.
                 default:
                     break;
             }
@@ -520,18 +520,18 @@ namespace Calculator
         static void Main(string[] args)
         {
             bool endApp = false;
-            // Display title as the C# console calculator app
+            // Display title as the C# console calculator app.
             Console.WriteLine("Console Calculator in C#\r");
             Console.WriteLine("------------------------\n");
 
             while (!endApp)
             {
-                // Declare variables and set to empty
+                // Declare variables and set to empty.
                 string numInput1 = "";
                 string numInput2 = "";
                 double result = 0;
 
-                // Ask the user to type the first number
+                // Ask the user to type the first number.
                 Console.Write("Type a number, and then press Enter: ");
                 numInput1 = Console.ReadLine();
 
@@ -542,7 +542,7 @@ namespace Calculator
                     numInput1 = Console.ReadLine();
                 }
 
-                // Ask the user to type the second number
+                // Ask the user to type the second number.
                 Console.Write("Type another number, and then press Enter: ");
                 numInput2 = Console.ReadLine();
 
@@ -553,7 +553,7 @@ namespace Calculator
                     numInput2 = Console.ReadLine();
                 }
 
-                // Ask the user to choose an operator
+                // Ask the user to choose an operator.
                 Console.WriteLine("Choose an operator from the following list:");
                 Console.WriteLine("\ta - Add");
                 Console.WriteLine("\ts - Subtract");
@@ -579,11 +579,11 @@ namespace Calculator
 
                 Console.WriteLine("------------------------\n");
 
-                // Wait for the user to respond before closing
+                // Wait for the user to respond before closing.
                 Console.Write("Press 'n' and Enter to close the app, or press any other key and Enter to continue: ");
                 if (Console.ReadLine() == "n") endApp = true;
 
-                Console.WriteLine("\n"); // Friendly linespacing
+                Console.WriteLine("\n"); // Friendly linespacing.
             }
             return;
         }
@@ -592,7 +592,7 @@ namespace Calculator
 
 ```
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
 
 Parabéns por concluir este tutorial. Para saber ainda mais, acompanhe os tutoriais a seguir.
 

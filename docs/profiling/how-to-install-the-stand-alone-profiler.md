@@ -1,5 +1,5 @@
 ---
-title: 'Como: Instalar o criador de perfil independente | Microsoft Docs'
+title: Como instalar o criador de perfil autônomo | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,16 +9,17 @@ ms.assetid: cae81c95-83cd-4ab6-8a98-84ef977a2f6d
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 2ac7a0ace5c4d6e31516d372baabec9883603300
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 05611b74049307fc0d7c038ecdb275f70c983501
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63426838"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778915"
 ---
-# <a name="how-to-install-the-stand-alone-profiler"></a>Como: Instalar o criador de perfil autônomo
+# <a name="how-to-install-the-stand-alone-profiler"></a>Como instalar o criador de perfil autônomo
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] fornece uma linha de comando baseada no criador de perfil autônomo que pode ser executado sem instalar o IDE [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Essa situação ocorre quando um computador não tiver ou não puder ter um ambiente de desenvolvimento instalado. Por exemplo, você não deve instalar um ambiente de desenvolvimento em um servidor Web de produção.
 
 > [!NOTE]
@@ -42,18 +43,18 @@ ms.locfileid: "63426838"
 
 4. Configure o servidor de símbolos definindo sua variável **NT_SYMBOL_PATH** como **symsrv\*symsrv.dll\*c:\localcache\*http://msdl.microsoft.com/download/symbols**
 
-5. Depois de configurar o servidor de símbolo usando as variáveis de ambiente do sistema, execute as ferramentas do criador de perfil de linha de comando em um novo prompt de comando. Isso permite que as novas variáveis de ambiente entrem em vigor. Na janela de prompt de comando, digite o seguinte comando:
+5. Depois de configurar o servidor de símbolo usando as variáveis de ambiente do sistema, execute as ferramentas do criador de perfil de linha de comando em um novo prompt de comando. Isso permite que as novas variáveis de ambiente entrem em vigor. Na janela do prompt de comando, digite o seguinte comando:
 
     **start %COMSPEC%**
 
    > [!NOTE]
-   > Para obter instruções detalhadas sobre como configurar o pacote do servidor de símbolos, confira [Como: Referenciar informações de símbolo do Windows](../profiling/how-to-reference-windows-symbol-information.md).
+   > Para obter instruções detalhadas de como configurar o pacote do servidor de símbolos, confira [Como referenciar informações de símbolo do Windows](../profiling/how-to-reference-windows-symbol-information.md).
 
 6. Use a ferramenta [VSPerfReport](../profiling/vsperfreport.md) para serializar os símbolos no arquivo de dados (.vsp) de criação de perfil. Use a opção **VSPerfReport /summary:all /packsymbols**. Se você não tiver símbolos inseridos no arquivo de dados, certifique-se de que tenha o conjunto de variáveis de ambiente NT_SYMBOL_PATH.
 
 ## <a name="see-also"></a>Consulte também
 - [Criar perfil da linha de comando](../profiling/using-the-profiling-tools-from-the-command-line.md)
-- [Passo a passo: Criação de perfil de linha de comando usando amostragem](../profiling/walkthrough-command-line-profiling-using-sampling.md)
-- [Passo a passo: Criação de perfil de linha de comando usando instrumentação](/visualstudio/profiling/command-line-profiling-of-stand-alone-applications)
-- [Como: Referenciar informações de símbolo do Windows](../profiling/how-to-reference-windows-symbol-information.md)
+- [Walkthrough: criação de perfil de linha de comando usando amostragem](../profiling/walkthrough-command-line-profiling-using-sampling.md)
+- [Passo a passo: criação de perfil de linha de comando usando instrumentação](command-line-profiling-of-stand-alone-applications.md)
+- [Como fazer referência a informações de símbolo do Windows](../profiling/how-to-reference-windows-symbol-information.md)
 - [VSPerfReport](../profiling/vsperfreport.md)

@@ -1,31 +1,31 @@
 ---
-title: Trabalhando com código do Visual C++ (Designer de Classe)
+title: Trabalhando com C++ código (Designer de classe)
 ms.date: 06/21/2017
 ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.cpplimitation
 helpviewer_keywords:
-- Visual C++, Class Designer
-- Class Designer, Visual C++ support
+- C++, Class Designer
+- Class Designer, C++ support
 - Class Designer, limitations
-- Class Designer, tasks in Visual C++
-- Visual C++, class diagrams
+- Class Designer, tasks in C++
+- C++, class diagrams
 - C++, class diagrams
 - C++, Class Designer
 ms.assetid: f5b40921-2ef7-4de0-b595-45b44c79ffa6
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 16dbcbecece0e8ec38e3f38391ca5063e2e3d36c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 228785c218b1c55a1af817761821acbe11a51c8d
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974999"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188955"
 ---
-# <a name="work-with-visual-c-code-in-class-designer"></a>Trabalhar com código do Visual C++ no Designer de Classe
+# <a name="work-with-c-code-in-class-designer"></a>Trabalhar com C++ código no designer de classe
 
 O **Designer de Classe** exibe uma superfície de design visual chamada de *diagrama de classe* que fornece uma representação visual dos elementos de código no projeto. É possível usar diagramas de classe para criar e visualizar classes e outros tipos em um projeto.
 
@@ -46,7 +46,7 @@ O **Designer de Classe** é compatível com os seguintes elementos de código C+
 - DefTipo
 
 > [!NOTE]
-> Isso não é o mesmo que o diagrama de classe UML, que pode ser criado em um Projeto de Modelagem. Para obter mais informações, confira [Diagramas de classe UML: Referência](../../modeling/create-uml-modeling-projects-and-diagrams.md).
+> Isso não é o mesmo que o diagrama de classe UML, que pode ser criado em um Projeto de Modelagem. Para obter mais informações, consulte [Diagramas de classe UML: Referência](../../modeling/what-s-new-for-design-in-visual-studio.md).
 
 ## <a name="troubleshoot-type-resolution-and-display-issues"></a>Solucionar problemas de exibição e resolução de tipo
 
@@ -56,7 +56,7 @@ O **Designer de Classe** não mantém um controle sobre a localização dos arqu
 
 ### <a name="update-and-performance-issues"></a>Problemas de atualização e de desempenho
 
-Para projetos do Visual C++, pode levar de 30 a 60 segundos para que uma alteração no arquivo de origem seja exibida no diagrama de classe. Esse atraso também pode fazer com que o **Designer de Classe** gere o erro **Não foi encontrado nenhum tipo na seleção**. Se você receber um erro como esse, clique em **Cancelar** na mensagem de erro e espere até que o elemento de código seja exibido no **Modo de Exibição de Classe**. Depois de fazer isso, o **Designer de Classe** deverá exibir o tipo.
+Para C++ projetos, pode levar de 30 a 60 segundos para que uma alteração no arquivo de origem apareça no diagrama de classe. Esse atraso também pode fazer com que o **Designer de Classe** gere o erro **Não foi encontrado nenhum tipo na seleção**. Se você receber um erro como esse, clique em **Cancelar** na mensagem de erro e espere até que o elemento de código seja exibido no **Modo de Exibição de Classe**. Depois de fazer isso, o **Designer de Classe** deverá exibir o tipo.
 
 Se um diagrama de classe não for atualizado com as alterações feitas no código, talvez seja necessário fechar o diagrama e abri-lo novamente.
 
@@ -74,7 +74,7 @@ O **Designer de Classe** pode não conseguir resolver tipos pelos seguintes moti
 
 - Verifique se o **Designer de Classe** é compatível com o tipo inserido. Consulte [Limitações de elementos de código C++](#limitations-for-c-code-elements).
 
-O erro que provavelmente você receberá para um problema de resolução de tipo é **O código não pôde ser encontrado em uma ou mais formas no diagrama de classe '\<element>'**. Essa mensagem de erro não indica necessariamente que o código tem um erro. Ela indica apenas que o designer de classe não pôde exibir o código. Tente as seguintes medidas:
+O erro que provavelmente você receberá para um problema de resolução de tipo é **O código não pôde ser encontrado em uma ou mais formas no diagrama de classe '\<element>'** . Essa mensagem de erro não indica necessariamente que o código tem um erro. Ela indica apenas que o designer de classe não pôde exibir o código. Tente as seguintes medidas:
 
 - Verifique se o tipo existe. Verifique se você não comentou nem excluiu o código-fonte acidentalmente.
 
@@ -84,15 +84,15 @@ O erro que provavelmente você receberá para um problema de resolução de tipo
 
 ### <a name="troubleshoot-other-error-messages"></a>Solucionar problemas de outras mensagens de erro
 
-Você pode obter ajuda com a solução de erros e avisos nos fóruns públicos do Microsoft Developer Network (MSDN). Visite o [Fórum do Designer de Classe do Visual Studio](http://go.microsoft.com/fwlink/?linkid=160754).
+Você pode obter ajuda com a solução de erros e avisos nos fóruns públicos do Microsoft Developer Network (MSDN). Visite o [Fórum do Designer de Classe do Visual Studio](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsclassdesigner).
 
 ## <a name="limitations-for-c-code-elements"></a>Limitações para elementos de código C++
 
-- Quando um projeto do Visual C++ é carregado, o **Designer de Classe** funciona em modo somente leitura. É possível alterar o diagrama de classe, mas não é possível salvar alterações do diagrama de classe de volta no código-fonte.
+- Quando um C++ projeto é carregado, o **Designer de classe** funciona de maneira somente leitura. É possível alterar o diagrama de classe, mas não é possível salvar alterações do diagrama de classe de volta no código-fonte.
 
-- O **Designer de Classe** é compatível com somente a semântica nativa do C++. Para projetos do Visual C++ compilados em código gerenciado, o **Designer de Classe** visualizará apenas os elementos de código que forem tipos nativos. Portanto, é possível adicionar um diagrama de classe a um projeto, mas o **Designer de Classe** não permitirá a visualização de elementos nos quais a propriedade `IsManaged` esteja definida como `true` (ou seja, tipos de valor e tipos de referência).
+- O **Designer de Classe** é compatível com somente a semântica nativa do C++. Para C++ projetos que são compilados em código gerenciado, **Designer de classe** visualizarão apenas elementos de código que são tipos nativos. Portanto, é possível adicionar um diagrama de classe a um projeto, mas o **Designer de Classe** não permitirá a visualização de elementos nos quais a propriedade `IsManaged` esteja definida como `true` (ou seja, tipos de valor e tipos de referência).
 
-- Para projetos do Visual C++, o **Designer de Classe** lê somente a definição do tipo. Por exemplo, suponha que você defina um tipo em um arquivo de cabeçalho (.h) e defina seus membros em um arquivo de implementação (.cpp). Se você invocar “Exibir Diagrama de Classe” no arquivo de implementação (.cpp), o **Designer de Classe** não exibirá nada. Como outro exemplo, se você invocar “Exibir Diagrama de Classe” em um arquivo .cpp que use uma instrução `#include` para incluir outros arquivos, mas que não contenha nenhuma definição de classe real, o **Designer de Classe** não exibirá nada novamente.
+- Para C++ projetos, o **Designer de classe** lê apenas a definição do tipo. Por exemplo, suponha que você defina um tipo em um arquivo de cabeçalho (.h) e defina seus membros em um arquivo de implementação (.cpp). Se você invocar “Exibir Diagrama de Classe” no arquivo de implementação (.cpp), o **Designer de Classe** não exibirá nada. Como outro exemplo, se você invocar “Exibir Diagrama de Classe” em um arquivo .cpp que use uma instrução `#include` para incluir outros arquivos, mas que não contenha nenhuma definição de classe real, o **Designer de Classe** não exibirá nada novamente.
 
 - Arquivos IDL (.idl), que definem interfaces COM e bibliotecas de tipo, não exibem diagramas, a menos que sejam compilados para o código C++ nativo.
 
@@ -112,7 +112,7 @@ Você pode obter ajuda com a solução de erros e avisos nos fóruns públicos d
 
 - [Projetando e exibindo classes e tipos](designing-and-viewing-classes-and-types.md)
 - [Informações adicionais sobre erros do Designer de Classe](additional-information-about-errors.md)
-- [Classes do Visual C++ no Designer de Classe](visual-cpp-classes.md)
-- [Estruturas do Visual C++ no Designer de Classe](visual-cpp-structures.md)
-- [Enumerações do Visual C++ no Designer de Classe](visual-cpp-enumerations.md)
-- [Typedefs do Visual C++ no Designer de Classe](visual-cpp-typedefs.md)
+- [C++Classes no Designer de Classe](visual-cpp-classes.md)
+- [C++Estruturas no Designer de Classe](visual-cpp-structures.md)
+- [C++Enumerações no Designer de Classe](visual-cpp-enumerations.md)
+- [C++TYPEDEFs em Designer de Classe](visual-cpp-typedefs.md)

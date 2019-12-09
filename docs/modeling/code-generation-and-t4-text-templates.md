@@ -10,27 +10,27 @@ helpviewer_keywords:
 - code generation
 - text templates
 - generating code
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 125ddff4bded1a58a7e68e6c8058d24ff16b2be1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b8d3684ac79ce0dde8641e11a455238d927f2adb
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62423072"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748516"
 ---
 # <a name="code-generation-and-t4-text-templates"></a>Geração de código e modelos de texto T4
 
-No Visual Studio, uma *modelo de texto T4* é uma mistura de blocos de texto e a lógica de controle que pode gerar um arquivo de texto. A lógica de controle é escrita como fragmentos de código de programa na [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] ou [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]. No Visual Studio 2015 atualização 2 e posterior, você pode usar os recursos de versão 6.0 do c# nas diretivas de modelos T4. O arquivo gerado pode ser texto de qualquer tipo, como uma página da web, um arquivo de recurso ou código de origem do programa em qualquer idioma.
+No Visual Studio, um *modelo de texto T4* é uma mistura de blocos de texto e lógica de controle que pode gerar um arquivo de texto. A lógica de controle é escrita como fragmentos de código de programa em [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] ou [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]. No Visual Studio 2015 atualização 2 e posterior, você pode usar C# os recursos da versão 6,0 em diretivas de modelos T4. O arquivo gerado pode ser um texto de qualquer tipo, como uma página da Web, um arquivo de recurso ou um código-fonte do programa em qualquer idioma.
 
 Há dois tipos de modelos de texto T4: tempo de execução e tempo de design.
 
 ## <a name="run-time-t4-text-templates"></a>Modelos de texto T4 de tempo de execução
 
-Também conhecido como 'pré-processado' modelos, modelos de tempo de execução são executados em seu aplicativo para produzir cadeias de caracteres de texto, normalmente como parte de sua saída. Por exemplo, você pode criar um modelo para definir uma página HTML:
+Também conhecidos como modelos ' pré-processados ', os modelos de tempo de execução são executados em seu aplicativo para produzir cadeias de caracteres de texto, normalmente como parte de sua saída. Por exemplo, você pode criar um modelo para definir uma página HTML:
 
 ```
 <html><body>
@@ -38,27 +38,27 @@ Também conhecido como 'pré-processado' modelos, modelos de tempo de execução
 </body></html>
 ```
 
-Observe que o modelo é semelhante a saída gerada. A semelhança do modelo para a saída resultante ajuda a evitar erros quando você deseja alterá-lo.
+Observe que o modelo se assemelha à saída gerada. A similaridade do modelo para a saída resultante ajuda a evitar erros quando você deseja alterá-lo.
 
-Além disso, o modelo contém fragmentos de código do programa. Você pode usar esses fragmentos repetir seções de texto, para tornar as seções condicionais e para mostrar os dados do seu aplicativo.
+Além disso, o modelo contém fragmentos do código do programa. Você pode usar esses fragmentos para repetir seções de texto, para fazer seções condicionais e para mostrar dados de seu aplicativo.
 
-Para gerar a saída, o aplicativo chama uma função que é gerada pelo modelo. Por exemplo:
+Para gerar a saída, seu aplicativo chama uma função que é gerada pelo modelo. Por exemplo:
 
 ```csharp
 string webResponseText = new MyTemplate().TransformText();
 ```
 
-Seu aplicativo pode ser executado em um computador que não tenha instalado o Visual Studio.
+Seu aplicativo pode ser executado em um computador que não tem o Visual Studio instalado.
 
-Para criar um modelo de tempo de execução, adicione uma **modelo de texto de pré-processado** ao seu projeto. Como alternativa, você pode adicionar um arquivo de texto sem formatação e defina suas **Custom Tool** propriedade **TextTemplatingFilePreprocessor**.
+Para criar um modelo de tempo de execução, adicione um arquivo de **modelo de texto pré-processado** ao seu projeto. Como alternativa, você pode adicionar um arquivo de texto sem formatação e definir sua propriedade de **ferramenta personalizada** como **TextTemplatingFilePreprocessor**.
 
-Para obter mais informações, consulte [geração de texto de tempo de execução com modelos de texto T4](../modeling/run-time-text-generation-with-t4-text-templates.md). Para obter mais informações sobre a sintaxe de modelos, consulte [gravando um modelo de texto T4](../modeling/writing-a-t4-text-template.md).
+Para obter mais informações, consulte [geração de texto em tempo de execução com modelos de texto T4](../modeling/run-time-text-generation-with-t4-text-templates.md). Para obter mais informações sobre a sintaxe de modelos, consulte [escrevendo um modelo de texto T4](../modeling/writing-a-t4-text-template.md).
 
 ## <a name="design-time-t4-text-templates"></a>Modelos de texto T4 de tempo de design
 
-Modelos de tempo de design definem parte do código-fonte e outros recursos do seu aplicativo. Normalmente você usar vários modelos que ler os dados em um único arquivo de entrada ou o banco de dados e gerar alguns dos seus *. CS*, *. vb*, ou outros arquivos de origem. Cada modelo gera um arquivo. Eles são executados dentro do Visual Studio ou o MSBuild.
+Os modelos de tempo de design definem parte do código-fonte e outros recursos do seu aplicativo. Normalmente, você usa vários modelos que lêem os dados em um único arquivo de entrada ou banco de dado e geram alguns dos seus arquivos *. cs*, *. vb*ou outros. Cada modelo gera um arquivo. Eles são executados dentro do Visual Studio ou do MSBuild.
 
-Por exemplo, os dados de entrada pode ser um arquivo XML de dados de configuração. Sempre que você edite o arquivo XML durante o desenvolvimento, os modelos de texto regenerar parte do código do aplicativo. Um dos modelos poderia se parecer com o exemplo a seguir:
+Por exemplo, os dados de entrada podem ser um arquivo XML de dados de configuração. Sempre que você editar o arquivo XML durante o desenvolvimento, os modelos de texto regenerarão parte do código do aplicativo. Um dos modelos pode ser semelhante ao exemplo a seguir:
 
 ```
 <#@ output extension=".cs" #>
@@ -72,7 +72,7 @@ namespace Fabrikam.<#= configurationData.SelectSingleNode("jobName").Value #>
 }
 ```
 
-Dependendo dos valores no arquivo XML gerado *. CS* arquivo seria semelhante ao seguinte:
+Dependendo dos valores no arquivo XML, o arquivo *. cs* gerado seria semelhante ao seguinte:
 
 ```
 namespace Fabrikam.FirstJob
@@ -81,18 +81,18 @@ namespace Fabrikam.FirstJob
 }
 ```
 
-Como outro exemplo, a entrada poderia ser um diagrama de fluxo de trabalho em uma atividade de negócios. Quando os usuários alterarem seu fluxo de trabalho de negócios ou quando você começa a trabalhar com novos usuários que têm um fluxo de trabalho diferente, é fácil gerar novamente o código de acordo com o novo modelo.
+Como outro exemplo, a entrada pode ser um diagrama de fluxo de trabalho em uma atividade de negócios. Quando os usuários alteram seu fluxo de trabalho de negócios, ou quando você começa a trabalhar com novos usuários que têm um Workflow diferente, é fácil regenerar o código para se ajustar ao novo modelo.
 
-Modelos de tempo de design torná-lo mais rápido e confiável para alterar a configuração, quando os requisitos são alterados. Normalmente, a entrada é definida em termos de requisitos de negócios, como no exemplo de fluxo de trabalho. Isso torna mais fácil discutir as alterações com seus usuários. Modelos de tempo de design são, portanto, uma ferramenta útil em um processo de desenvolvimento do agile.
+Os modelos de tempo de design tornam mais rápido e mais confiável alterar a configuração quando os requisitos mudam. Normalmente, a entrada é definida em termos de requisitos de negócios, como no exemplo de fluxo de trabalho. Isso facilita a discussão sobre as alterações com seus usuários. Os modelos de tempo de design são, portanto, uma ferramenta útil em um processo de desenvolvimento ágil.
 
-Para criar um modelo de tempo de design, adicione uma **modelo de texto** ao seu projeto. Como alternativa, você pode adicionar um arquivo de texto sem formatação e defina suas **Custom Tool** propriedade **TextTemplatingFileGenerator**.
+Para criar um modelo de tempo de design, adicione um arquivo de **modelo de texto** ao seu projeto. Como alternativa, você pode adicionar um arquivo de texto sem formatação e definir sua propriedade de **ferramenta personalizada** como **TextTemplatingFileGenerator**.
 
-Para obter mais informações, consulte [geração de código de tempo de Design usando modelos de texto T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md). Para obter mais informações sobre a sintaxe de modelos, consulte [gravando um modelo de texto T4](../modeling/writing-a-t4-text-template.md).
+Para obter mais informações, consulte [geração de código em tempo de design usando modelos de texto T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md). Para obter mais informações sobre a sintaxe de modelos, consulte [escrevendo um modelo de texto T4](../modeling/writing-a-t4-text-template.md).
 
 > [!NOTE]
-> O termo *modelo* , às vezes, é usado para descrever dados lidos por um ou mais modelos. O modelo pode estar em qualquer formato, em qualquer tipo de arquivo ou banco de dados. Ele não precisa ser um modelo UML ou um modelo de linguagem específica do domínio. 'Model' indica apenas que os dados podem ser definidos em termos de conceitos de negócios, em vez de que se assemelha o código.
+> O termo *modelo* é, às vezes, usado para descrever os dados lidos por um ou mais modelos. O modelo pode estar em qualquer formato, em qualquer tipo de arquivo ou banco de dados. Ele não precisa ser um modelo UML ou um modelo de linguagem específico de domínio. ' Model ' indica apenas que os dados podem ser definidos em termos dos conceitos comerciais, em vez de se lembrar do código.
 
-O recurso de transformação do modelo de texto é denominado *T4*.
+O recurso de transformação de modelo de texto se chama *T4*.
 
 ## <a name="see-also"></a>Consulte também
 

@@ -1,5 +1,5 @@
 ---
-title: 'Como: Definir um nome de Thread em código nativo | Microsoft Docs'
+title: Como definir um nome de thread em código nativo | Microsoft Docs
 ms.date: 12/17/2018
 ms.topic: conceptual
 dev_langs:
@@ -16,32 +16,32 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d37a028fb5af099484d81374e52cfd12af727f94
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1e719563c831c50cc325d70d0de431f4be1bf514
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62847532"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911422"
 ---
-# <a name="how-to-set-a-thread-name-in-native-code"></a>Como: Definir um nome de thread em código nativo
-A nomeação de thread é possível em qualquer edição do Visual Studio. Nomeação de thread é útil para identificar threads de seu interesse na **Threads** janela ao depurar um processo em execução. Ter chamado recognizably threads também pode ser útil ao executar por meio de inspeção de despejo de pane e analisar o desempenho da captura usando várias ferramentas de depuração de post-mortem.
+# <a name="how-to-set-a-thread-name-in-native-code"></a>Como definir um nome de thread em código nativo
+A nomeação de thread é possível em qualquer edição do Visual Studio. A nomenclatura de threads é útil para identificar threads de interesse na janela **threads** durante a depuração de um processo em execução. Ter threads com nomes reconhecidos também pode ser útil ao executar a depuração de post-mortem por meio da inspeção de despejo de memória e ao analisar capturas de desempenho usando várias ferramentas.
 
 ## <a name="ways-to-set-a-thread-name"></a>Maneiras de definir um nome de thread
 
-Há duas maneiras de definir um nome de thread. A primeira é por meio de [SetThreadDescription](https://docs.microsoft.com/windows/desktop/api/processthreadsapi/nf-processthreadsapi-setthreaddescription) função. A segunda é lançando uma exceção específica, enquanto o depurador do Visual Studio é anexado ao processo. Cada abordagem tem vantagens e limitações.
+Há duas maneiras de definir um nome de thread. A primeira é por meio da função [SetThreadDescription](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-setthreaddescription) . A segunda é lançar uma exceção específica enquanto o depurador do Visual Studio é anexado ao processo. Cada abordagem tem benefícios e limitações. O uso de `SetThreadDescription` tem suporte a partir do Windows 10, versão 1607 ou Windows Server 2016.
 
-Vale a pena observar que _ambos_ abordagens podem ser usadas em conjunto, se desejado, uma vez que os mecanismos pelos quais eles funcionam são independentes uns dos outros.
+Vale a pena observar que _ambas as_ abordagens podem ser usadas juntas, se desejado, já que os mecanismos pelos quais eles trabalham são independentes uns dos outros.
 
 ### <a name="set-a-thread-name-by-using-setthreaddescription"></a>Definir um nome de thread usando `SetThreadDescription`
 
 Benefícios:
-* Nomes de thread são visíveis durante a depuração no Visual Studio, independentemente de estarem ou não o depurador foi anexado ao processo no momento em que SetThreadDescription é invocado.
-* Nomes de thread são visíveis ao realizar a depuração de post-mortem carregando um despejo de memória no Visual Studio.
-* Nomes de thread também são visíveis quando usar outras ferramentas, como o [WinDbg](https://docs.microsoft.com/windows-hardware/drivers/debugger/debugger-download-tools) depurador e o [Windows Performance Analyzer](https://docs.microsoft.com/windows-hardware/test/wpt/windows-performance-analyzer) analisador de desempenho.
+* Os nomes de thread são visíveis durante a depuração no Visual Studio, independentemente de o depurador ter sido anexado ou não ao processo no momento em que SetThreadDescription é invocado.
+* Os nomes de thread são visíveis ao executar a depuração de post-mortem carregando um despejo de memória no Visual Studio.
+* Os nomes de thread também são visíveis ao usar outras ferramentas, como o depurador do [windbg](/windows-hardware/drivers/debugger/debugger-download-tools) e o analisador de desempenho do [analisador de desempenho do Windows](/windows-hardware/test/wpt/windows-performance-analyzer) .
 
 Restrições:
-* Nomes de thread visíveis apenas no Visual Studio 2017 versão 15.6 e versões posteriores.
-* Quando o arquivo de despejo de depuração de uma falha de post-mortem, nomes de thread são visíveis apenas se a falha foi criada no Windows 10 versão 1607, Windows Server 2016 ou versões posteriores do Windows.
+* Os nomes de thread só são visíveis no Visual Studio 2017 versão 15,6 e versões posteriores.
+* Quando o post-mortem a depuração de um arquivo de despejo de memória, os nomes de thread só ficam visíveis se a falha foi criada no Windows 10 versão 1607, no Windows Server 2016 ou em versões posteriores do Windows.
 
 *Exemplo:*
 
@@ -63,18 +63,18 @@ int main()
 
 ### <a name="set-a-thread-name-by-throwing-an-exception"></a>Definir um nome de thread lançando uma exceção
 
-Outra maneira de definir um nome de thread em seu programa é comunicar-se o nome do thread desejado para o depurador do Visual Studio, lançando uma exceção especialmente configurado.
+Outra maneira de definir um nome de thread em seu programa é comunicar o nome de thread desejado para o depurador do Visual Studio lançando uma exceção especialmente configurada.
 
 Benefícios:
 * Funciona em todas as versões do Visual Studio.
 
 Restrições:
-* Só funcionará se o depurador está anexado no momento em que o método baseado em exceção é usado.
-* Nomes de thread definidos usando esse método não estará disponíveis em despejos de memória ou ferramentas de análise de desempenho.
+* Só funcionará se o depurador estiver anexado no momento em que o método baseado em exceção for usado.
+* Os nomes de thread definidos usando esse método não estarão disponíveis em despejos ou ferramentas de análise de desempenho.
 
 *Exemplo:*
 
-O `SetThreadName` função mostrada a seguir demonstra essa abordagem baseada em exceções. Observe que o nome do thread será copiado automaticamente para o thread, para que a memória para o `threadName` parâmetro pode ser liberado após a `SetThreadName` chamada ser concluída.
+A função `SetThreadName` mostrada abaixo demonstra essa abordagem baseada em exceção. Observe que o nome do thread será copiado automaticamente para o thread, de modo que a memória para o parâmetro `threadName` possa ser liberada após a conclusão da chamada `SetThreadName`.
 
 ```C++
 //
@@ -111,4 +111,4 @@ void SetThreadName(DWORD dwThreadID, const char* threadName) {
 ## <a name="see-also"></a>Consulte também
 - [Depurar aplicativos multi-threaded](../debugger/debug-multithreaded-applications-in-visual-studio.md)
 - [Exibindo dados no depurador](../debugger/viewing-data-in-the-debugger.md)
-- [Como: Definir o nome de um thread no código gerenciado](../debugger/how-to-set-a-thread-name-in-managed-code.md)
+- [Como definir um nome de thread em código gerenciado](../debugger/how-to-set-a-thread-name-in-managed-code.md)

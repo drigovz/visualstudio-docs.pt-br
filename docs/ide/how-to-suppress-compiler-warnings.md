@@ -3,21 +3,21 @@ title: Suprimir avisos do compilador para projetos e pacotes NuGet
 ms.date: 01/24/2018
 ms.technology: vs-ide-compile
 ms.topic: conceptual
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2d3f207190fed7c01dd851d809e12e6032549ff3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: aec3dfb45471a3349e14419671ef1fb3b5e05db5
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62549281"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747956"
 ---
-# <a name="how-to-suppress-compiler-warnings"></a>Como: Suprimir avisos do compilador
+# <a name="how-to-suppress-compiler-warnings"></a>Como suprimir avisos do compilador
 
-Você pode organizar um log de build filtrando um ou mais tipos de avisos do compilador. Por exemplo, talvez você queira analisar apenas parte da saída gerada quando define o nível de detalhes de log de build como **Normal**, **Detalhado** ou **Diagnóstico**. Para obter mais informações sobre os detalhes, confira [Como: Exibir, salvar e configurar arquivos de log de build](../ide/how-to-view-save-and-configure-build-log-files.md).
+Você pode organizar um log de build filtrando um ou mais tipos de avisos do compilador. Por exemplo, talvez você queira analisar apenas parte da saída gerada quando define o nível de detalhes de log de build como **Normal**, **Detalhado** ou **Diagnóstico**. Para saber mais sobre detalhamento, consulte [Como exibir, salvar e configurar arquivos de log de build](../ide/how-to-view-save-and-configure-build-log-files.md).
 
 ## <a name="suppress-specific-warnings-for-visual-c-or-f"></a>Suprimir avisos específicos para o Visual C# ou F\#
 
@@ -33,7 +33,7 @@ Use a página de propriedades **Build** para suprimir avisos específicos para p
 
 1. Recompile a solução.
 
-## <a name="suppress-specific-warnings-for-visual-c"></a>Suprimir avisos específicos para o Visual C++
+## <a name="suppress-specific-warnings-for-c"></a>Suprimir avisos específicos paraC++
 
 Use a página **Propriedades da Configuração** para suprimir avisos específicos para projetos em C++.
 
@@ -132,6 +132,6 @@ Em alguns casos, convém suprimir avisos do compilador NuGet para um único paco
 
 ## <a name="see-also"></a>Consulte também
 
-- [Passo a passo: Criar um aplicativo](../ide/walkthrough-building-an-application.md)
-- [Como: Exibir, salvar e configurar arquivos de log de build](../ide/how-to-view-save-and-configure-build-log-files.md)
+- [Passo a passo: Compilar um aplicativo](../ide/walkthrough-building-an-application.md)
+- [Como exibir, salvar e configurar arquivos de log de build](../ide/how-to-view-save-and-configure-build-log-files.md)
 - [Compilação e build](../ide/compiling-and-building-in-visual-studio.md)

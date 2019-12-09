@@ -1,19 +1,14 @@
 ---
-title: Misto de código e informações ausentes na janela pilha de chamadas | Microsoft Docs
-ms.date: 11/15/2016
-ms.prod: visual-studio-dev14
-ms.technology: vs-ide-debug
-ms.topic: conceptual
+title: Código misto e informações ausentes na janela pilha de chamadas | Microsoft Docs
+ms.date: 11/04/2016
+ms.topic: troubleshooting
 dev_langs:
-- FSharp
-- VB
 - CSharp
+- VB
+- FSharp
 - C++
 - JScript
 - SQL
-- VB
-- CSharp
-- C++
 helpviewer_keywords:
 - managed code, stepping
 - Call Stack window, mixed-mode debugging
@@ -23,27 +18,26 @@ helpviewer_keywords:
 - mixed-mode debugging, call stack
 - stepping, out of managed code
 ms.assetid: dd628427-e8d6-4fc2-b524-9d6393ea5376
-caps.latest.revision: 23
-author: MikeJo5000
+author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 025591ffea4d6746f87e5f1240cd226fa291d116
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.workload:
+- multiple
+ms.openlocfilehash: 25fb7bc54899d8c9a079d3f2706065d690904540
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62905503"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73187542"
 ---
 # <a name="mixed-code-and-missing-information-in-the-call-stack-window"></a>Código misto e informações ausentes na janela Pilha de Chamadas
-[!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+Devido às diferenças entre as pilhas de chamadas para código gerenciado e nativo, o depurador nem sempre pode mostrar a pilha de chamadas completa quando os tipos de código são misturados. Quando o código nativo chama o código gerenciado, você pode observar as seguintes discrepâncias na janela **Pilha de Chamadas**:
 
-Devido às diferenças entre as pilhas de chamadas para código gerenciado e nativo, o depurador nem sempre pode mostrar a pilha de chamadas completa quando os tipos de código são misturados. Quando o código nativo chama o código gerenciado, você pode observar as seguintes discrepâncias na janela **Pilha de Chamadas**:  
-  
-- O quadro nativo imediatamente acima do código gerenciado pode estar ausente da janela **Pilha de Chamadas**. Para obter mais informações, confira [Como: Sair do código gerenciado quando quadros nativos estiverem ausentes na janela Pilha de Chamadas](../debugger/how-to-step-out-of-managed-code-when-native-frames-are-missing-from-the-call-stack-window.md).  
-  
-- Para os aplicativos de modo misto iniciados fora do depurador, a janela **Pilha de Chamadas** pode exibir somente o código gerenciado e nenhum dos quadros nativos estarão visíveis.  
-  
-  Ambos os casos são razoavelmente incomuns. Na maioria das chamadas nativas para o código gerenciado, as pilhas de chamadas são exibidas corretamente.  
-  
-## <a name="see-also"></a>Consulte também  
- [Como: Usar a janela de pilha de chamadas](../debugger/how-to-use-the-call-stack-window.md)
+- O quadro nativo imediatamente acima do código gerenciado pode estar ausente da janela **Pilha de Chamadas**. Para obter mais informações, consulte [como: sair do código gerenciado quando quadros nativos estão ausentes na janela pilha de chamadas](how-to-use-the-call-stack-window.md).
+
+- Para os aplicativos de modo misto iniciados fora do depurador, a janela **Pilha de Chamadas** pode exibir somente o código gerenciado e nenhum dos quadros nativos estarão visíveis.
+
+  Ambos os casos são razoavelmente incomuns. Na maioria das chamadas nativas para o código gerenciado, as pilhas de chamadas são exibidas corretamente.
+
+## <a name="see-also"></a>Consulte também
+- [Como usar a janela Pilha de Chamadas](../debugger/how-to-use-the-call-stack-window.md)

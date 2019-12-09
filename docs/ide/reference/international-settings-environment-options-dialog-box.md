@@ -12,19 +12,19 @@ helpviewer_keywords:
 - Options dialog box, international settings
 - languages, specifying default
 ms.assetid: e3a8815c-6995-4099-8e88-34f91fad55b2
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 64e65894fffd9c6786c19a337fc386f45fb9d203
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 8e55c0e81877c2735571705a2b2d2529b0fa3a74
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62540661"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666998"
 ---
-# <a name="options-dialog-box-environment--international-settings"></a>Caixa de diálogo Opções: Ambiente \> Configurações Internacionais
+# <a name="options-dialog-box-environment--international-settings"></a>Caixa de diálogo opções: ambiente \> configurações internacionais
 
 A página Configurações Internacionais permite alterar o idioma padrão quando você tem mais de uma versão de idioma do IDE (ambiente de desenvolvimento integrado) instalada em seu computador. Você pode acessar essa caixa de diálogo selecionando **Opções** no menu **Ferramentas** e, em seguida, escolhendo **Configurações Internacionais** na pasta **Ambiente**.
 
@@ -38,4 +38,3 @@ Lista os idiomas disponíveis para as versões de idioma do produto instalado. S
 ### <a name="see-also"></a>Consulte também
 
 - [Instalar pacotes de idiomas](../../install/install-visual-studio.md#step-6---install-language-packs-optional)
-- [Caixa de diálogo Opções do Ambiente](../../ide/reference/environment-options-dialog-box.md)

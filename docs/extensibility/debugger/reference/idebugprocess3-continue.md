@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProcess3::Continue
 ms.assetid: 57506242-5763-4c08-adb9-8a78ce02cebb
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3ac97d97c17bd09882bc347116c2aec44db3f28a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: a7d20a375644cbbac975f62db216377f271a2675
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63413366"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66314039"
 ---
 # <a name="idebugprocess3continue"></a>IDebugProcess3::Continue
 Continua a execução desse processo de um estado parado. Qualquer estado de execução anterior (por exemplo, uma etapa) é preservado, e o processo inicia a execução novamente.
@@ -39,10 +42,9 @@ int Continue(
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `pThread`
-
- [in] Uma [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) objeto que representa o thread a ser continuado.
+## <a name="parameters"></a>Parâmetros
+`pThread`\
+[in] Uma [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) objeto que representa o thread a ser continuado.
 
 ## <a name="return-value"></a>Valor de retorno
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retornará o código de erro.

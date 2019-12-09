@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBreakpointRequest3::GetRequestInfo2
 ms.assetid: 33942e4a-0a0a-49e8-a693-004954f6d38a
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 06458649d091be104c5509e37aa35029a119c84f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 86e687a02e434c12c6386df57462cdb578250cdd
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62876994"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66324205"
 ---
 # <a name="idebugbreakpointrequest3getrequestinfo2"></a>IDebugBreakpointRequest3::GetRequestInfo2
 Esse método obtém as informações de solicitação de ponto de interrupção que descreve esta solicitação de ponto de interrupção.
@@ -38,14 +41,12 @@ int GetRequestInfo2(
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `dwFields`
+## <a name="parameters"></a>Parâmetros
+`dwFields`\
+[in] Uma combinação de sinalizadores do [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md) enumeração que determinam quais campos de `pBPRequestInfo` devem ser preenchidos.
 
- [in] Uma combinação de sinalizadores do [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md) enumeração que determinam quais campos de `pBPRequestInfo` devem ser preenchidos.
-
- `bBPRequestInfo`
-
- [out] O [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) estrutura a ser preenchido.
+`bBPRequestInfo`\
+[out] O [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) estrutura a ser preenchido.
 
 ## <a name="return-value"></a>Valor de retorno
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retornará o código de erro.

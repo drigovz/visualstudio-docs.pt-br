@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProperty2::GetDerivedMostProperty
 ms.assetid: cc86b461-62d1-4340-8209-c65037fd8b02
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1227cb697dc78a8833e304d775fb4b1af85a2a69
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 6b08ca2ad569935a117b8b1255bc740bf395c2ed
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62916626"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66343155"
 ---
 # <a name="idebugproperty2getderivedmostproperty"></a>IDebugProperty2::GetDerivedMostProperty
 Obtém a propriedade mais derivado de uma propriedade.
@@ -36,10 +39,9 @@ int GetDerivedMostProperty ( 
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `ppDerivedMost`
-
- [out] Retorna um [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) objeto que representa a propriedade mais derivado.
+## <a name="parameters"></a>Parâmetros
+`ppDerivedMost`\
+[out] Retorna um [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) objeto que representa a propriedade mais derivado.
 
 ## <a name="return-value"></a>Valor de retorno
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retornará o código de erro. Retorna `S_GETDERIVEDMOST_NO_DERIVED_MOST` se não houver nenhuma propriedade mais derivado para recuperar.

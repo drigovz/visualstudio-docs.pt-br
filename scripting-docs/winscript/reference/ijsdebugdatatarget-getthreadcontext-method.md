@@ -1,5 +1,5 @@
 ---
-title: 'Método ijsdebugdatatarget:: Getthreadcontext | Microsoft Docs'
+title: 'Método IJsDebugDataTarget:: GetThreadContext | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,15 +15,15 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d7904ef81eb900c6466069267101f30d89e362a1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: da5722553b448605129adcf32cfaa52e2dc76352
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62582827"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577654"
 ---
 # <a name="ijsdebugdatatargetgetthreadcontext-method"></a>Método IJsDebugDataTarget::GetThreadContext
-Recupera o contexto para o thread fornecido.  
+Recupera o contexto para determinado thread.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -38,21 +38,21 @@ HRESULT GetThreadContext(
   
 #### <a name="parameters"></a>Parâmetros  
  `threadId`  
- [in] Thread em execução no processo de destino.  
+ no Thread em execução no processo de destino.  
   
  `contextFlags`  
- [in] Especifica os sinalizadores de contexto. Isso é o mesmo que o campo ContextFlags de CONTEXT (para obter mais informações, consulte Winnt. h, pesquise por CONTEXT_ALL).  
+ no Especifica os sinalizadores de contexto. Isso é o mesmo que o campo ContextFlags do contexto (para obter mais informações, consulte Winnt. h, pesquise por CONTEXT_ALL).  
   
  `contextSize`  
- [in] O tamanho do buffer especificado pelo pContext.  
+ no O tamanho do buffer especificado por pContext.  
   
  `pContext`  
- [out] Recebe a estrutura de contexto específicas da plataforma do buffer especificado pelo pContext.  
+ fora Recebe a estrutura de contexto específica da plataforma no buffer especificado por pContext.  
   
-## <a name="return-value"></a>Valor de retorno  
+## <a name="return-value"></a>Valor retornado  
   
 ## <a name="requirements"></a>Requisitos  
- **Cabeçalho:** jscript9diag.h  
+ **Cabeçalho:** jscript9diag. h  
   
 ## <a name="see-also"></a>Consulte também  
  [Interface IJsDebugDataTarget](../../winscript/reference/ijsdebugdatatarget-interface.md)

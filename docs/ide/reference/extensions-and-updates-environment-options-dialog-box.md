@@ -5,19 +5,19 @@ ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Environment.ExtensionManager
 ms.assetid: c73859eb-3c33-4f39-86bf-6788387b5937
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d7c49cc7946f9fea988c57a4ba782ec93a6294fa
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 3d2c40e0f3d7cd1f4f86c10aace502796d6d00bc
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62790844"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72654402"
 ---
-# <a name="options-dialog-box-environment--extensions"></a>Caixa de diálogo Opções: Ambiente \> Extensões
+# <a name="options-dialog-box-environment--extensions"></a>Caixa de diálogo opções: extensões de \> de ambiente
 
 Use esta página para definir opções de como o Visual Studio executa atualizações e como extensões são atualizadas e descobertas.
 
@@ -36,7 +36,3 @@ Para obter mais informações, consulte [Localizando e usando extensões do Visu
 ## <a name="additional-extension-galleries"></a>Galerias de Extensões Adicionais
 
 Um recurso do Enterprise que habilita o suporte para galerias de extensões proprietárias. Saiba mais em [Galerias privadas](../../extensibility/private-galleries.md).
-
-## <a name="see-also"></a>Consulte também
-
-- [Caixa de diálogo Opções do Ambiente](../../ide/reference/environment-options-dialog-box.md)

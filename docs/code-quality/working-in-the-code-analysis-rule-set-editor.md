@@ -1,87 +1,87 @@
 ---
-title: Use o Editor de conjunto de regras de análise de código
+title: Usar o editor de conjunto de regras de análise de código
 ms.date: 04/04/2018
 ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.ruleseteditor
 ms.assetid: 370c97bf-bb29-4b2f-b9ae-ba125bce7b2d
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 719d8f1e11365de0b864f41f54546fb4bfc64cd2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6e23bf15796a8ff581a8a017687f90084c338e74
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62820308"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72649007"
 ---
-# <a name="use-the-code-analysis-rule-set-editor"></a>Use o editor de conjunto de regras de análise de código
+# <a name="use-the-code-analysis-rule-set-editor"></a>Usar o editor de conjunto de regras de análise de código
 
-A regra de análise de código definido editor permite a que você especifica as regras que estão incluídas em uma regra personalizada definida e definir a gravidade das violações de regra.
+O editor de conjunto de regras de análise de código permite especificar as regras incluídas em um conjunto de regras personalizadas e definir a gravidade das violações de regra.
 
 A tabela a seguir mostra as opções de gravidade:
 
 |Ação (severidade)|Descrição|
 |-|-|
-|Aviso|Gera um aviso na **Error List** e também no momento da compilação.|
-|Erro|Gera um erro no **Error List** e também no momento da compilação.|
-|Info|Gera uma mensagem na **Error List**.|
-|Hidden|A violação não é visível para o usuário. O IDE é notificado da violação, no entanto.|
-|Nenhum|A regra será suprimida. O comportamento é o mesmo como se a regra foi removida do conjunto de regras.|
+|Aviso|Gera um aviso no **lista de erros** e também no momento da compilação.|
+|Erro|Gera um erro na **lista de erros** e também no momento da compilação.|
+|Info|Gera uma mensagem no **lista de erros**.|
+|Hidden|A violação não é visível para o usuário. No entanto, o IDE é notificado sobre a violação.|
+|Nenhum|A regra foi suprimida. O comportamento é o mesmo que se a regra foi removida do conjunto de regras.|
 
-O editor exibe as regras em uma estrutura de árvore que grupos de regras por uma regra de conjunto de campo que você especificar. Para adicionar ou remover as regras de um conjunto de regras, execute uma ou mais das seguintes etapas:
+O editor exibe as regras em uma estrutura de árvore que agrupa as regras por um campo de conjunto de regras que você especificar. Para adicionar ou remover regras de um conjunto de regras, execute uma ou mais das seguintes etapas:
 
-- Marque ou desmarque a caixa de seleção do nó de grupo para adicionar ou remover todas as regras do grupo. Quando você seleciona um grupo, todas as regras são definidas o **aviso** ação.
+- Marque ou desmarque a caixa de seleção do nó de grupo para adicionar ou remover todas as regras no grupo. Quando você seleciona um grupo, todas as regras são definidas para a ação de **aviso** .
 
    > [!TIP]
-   > Você pode alterar como as regras são agrupadas na **Group by** lista suspensa.
+   > Você pode alterar o modo como as regras são agrupadas na lista suspensa **Agrupar por** .
 
-- Clique o **ação** campo de um grupo e, em seguida, especifique a ação a ser aplicado a todas as regras do grupo.
+- Clique no campo **ação** de um grupo e especifique a ação a ser aplicada a todas as regras no grupo.
 
-- Marque ou desmarque a caixa de seleção de uma regra individual. Quando você seleciona a caixa de seleção para uma regra, a regra é definida como a ação de aviso.
+- Marque ou desmarque a caixa de seleção de uma regra individual. Quando você marca a caixa de seleção para uma regra, a regra é definida como a ação de aviso.
 
 ## <a name="toolbar"></a>Barra de ferramentas
 
-Você pode usar a barra de ferramentas do editor de conjunto de regras para agrupar, filtrar e pesquisar os dados que aparecem na grade de conjunto de regras.
+Você pode usar a barra de ferramentas do editor de conjunto de regras para agrupar, filtrar e Pesquisar os dados que aparecem na grade conjunto de regras.
 
 A tabela a seguir descreve os controles na barra de ferramentas do editor de conjunto de regras.
 
-|Controle de barra de ferramentas|Descrição|
+|Controle ToolBar|Descrição|
 |---------------------|-----------------|
 |**Expandir Tudo**|Mostra as regras em todos os grupos.|
 |**Recolher tudo**|Oculta as regras em todos os grupos.|
-|**Group By**|Especifica o campo pelo qual as regras são agrupadas. Clique em  **\<None >** para mostrar as regras sem grupos.|
-|**Opções de coluna**|Especifica os campos de regra a serem exibidos.|
-|**Ocultar as regras que não se aplicam à solução atual**|Mostra ou oculta as regras que não são do mesmo tipo de destino como a solução.|
-|**Mostrar regras que podem gerar erros de análise de código**|Mostra ou oculta as regras que são atribuídas a ação de erro.|
-|**Mostrar regras que podem gerar avisos de análise de código**|Mostra ou oculta as regras que são atribuídas a ação de aviso.|
-|**Mostrar regras que não estão habilitadas**|Mostra ou oculta as regras que são atribuídas a nenhuma ação.|
-|**Adicionar ou remover conjuntos de regras filho**|Adiciona ou remove as regras nos conjuntos de regra selecionada.|
-|**Pesquisar regras**|Pesquisa todos os valores de campo para a cadeia de caracteres que você especificar.|
+|**Group By**|Especifica o campo pelo qual as regras são agrupadas. Clique em **\<None >** para mostrar as regras sem grupos.|
+|**Opções de Coluna**|Especifica os campos de regra a serem exibidos.|
+|**Ocultar regras que não se aplicam à solução atual**|Mostra ou oculta regras que não são do mesmo tipo de destino que a solução.|
+|**Mostrar regras que podem gerar erros de análise de código**|Mostra ou oculta as regras que são atribuídas à ação de erro.|
+|**Mostrar regras que podem gerar avisos de análise de código**|Mostra ou oculta as regras que são atribuídas à ação de aviso.|
+|**Mostrar regras que não estão habilitadas**|Mostra ou oculta as regras que são atribuídas à ação None.|
+|**Adicionar ou remover conjuntos de regras filho**|Adiciona ou remove as regras nos conjuntos de regras selecionados.|
+|**Regras de pesquisa**|Pesquisa todos os valores de campo para a cadeia de caracteres que você especificar.|
 
-## <a name="rule-set-fields"></a>Campos do conjunto de regras
+## <a name="rule-set-fields"></a>Campos de conjunto de regras
 
-Campos de conjunto de regra exibem informações sobre um conjunto de regras e podem ser usados para classificar e agrupar a lista de regras. Para exibir ou ocultar campos, selecione **opções de coluna** na regra de conjunto de ferramentas do editor e, em seguida, marque ou desmarque as caixas de seleção dos campos para mostrar ou ocultar.
+Os campos de conjunto de regras exibem informações sobre um conjunto de regras e podem ser usados para classificar e agrupar a lista de regras. Para exibir ou ocultar campos, selecione **Opções de coluna** na barra de ferramentas do editor de conjunto de regras e marque ou desmarque as caixas de seleção dos campos a serem mostrados ou ocultados.
 
 A tabela a seguir descreve os campos de um conjunto de regras:
 
 |Campo|Descrição|
 |-----------|-----------------|
 |**ID**|O identificador da regra.|
-|**Categoria**|Além de sua participação em conjuntos de regras, regras de análise de código também são agrupadas por categoria. Para obter mais informações, consulte [avisos de análise de código](../code-quality/code-analysis-for-managed-code-warnings.md).|
+|**Categoria**|Além de sua associação em conjuntos de regras, as regras de análise de código também são agrupadas por categoria. Para obter mais informações, consulte [avisos de análise de código](../code-quality/code-analysis-for-managed-code-warnings.md).|
 |**Nome**|O título da regra.|
 |**Namespace**|O namespace da regra.|
-|**Tipo de destino**|Indica se a regra é para nativo, gerenciado ou código de banco de dados.|
-|**Ação**|A ação executada quando a regra é violada em uma execução de análise de código. Você pode editar a **ação** campo.|
-|**Conjuntos de regras de código-fonte**|O conjunto de regras que contém a regra.|
+|**Tipo de destino**|Indica se a regra é para código nativo, gerenciado ou de banco de dados.|
+|**Ação**|A ação realizada quando a regra é violada em uma execução de análise de código. Você pode editar o campo de **ação** .|
+|**Conjuntos de regras de origem**|O conjunto de regras que contém a regra.|
 
 ## <a name="sort-and-filter-rule-sets"></a>Classificar e filtrar conjuntos de regras
 
-Os cabeçalhos de coluna da grade de conjunto de regras, você pode classificar e filtrar as regras pelos valores do campo.
+Nos cabeçalhos de coluna da grade de conjunto de regras, você pode classificar e filtrar as regras pelos valores do campo.
 
-- Para classificar a lista de conjunto de regra, clique no cabeçalho da coluna do campo pelo qual você deseja classificar. Se os conjuntos de regras são agrupados, cada grupo é classificado individualmente.
+- Para classificar as listas de conjuntos de regras, clique no cabeçalho de coluna do campo pelo qual você deseja classificar. Se os conjuntos de regras forem agrupados, cada grupo será classificado individualmente.
 
 - Para filtrar os conjuntos de regras pelo valor de um campo, clique no botão de filtro no cabeçalho da coluna do campo pelo qual você deseja filtrar. Marque as caixas de seleção dos valores que você deseja mostrar e desmarque as caixas de seleção dos valores que você deseja ocultar.
 

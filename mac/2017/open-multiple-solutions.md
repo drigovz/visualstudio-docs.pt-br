@@ -1,17 +1,17 @@
 ---
-title: 'Como: abrir várias soluções no Visual Studio para Mac'
+title: 'Como: Abrir várias soluções'
 description: Saiba como abrir mais de uma solução no Visual Studio para Mac e como abrir mais de uma instância do aplicativo.
 author: conceptdev
 ms.author: crdun
 ms.date: 07/19/2018
 ms.assetid: 592BA4E3-8DEF-4FCD-8BA0-519A4CEEE03E
 ms.custom: video
-ms.openlocfilehash: cdbe02cf3d60b460252f09764521afd240551115
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8fe8f8506bdd332553cffaed45951219c7904bc3
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62988207"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68872285"
 ---
 # <a name="open-multiple-solutions-or-instances-of-visual-studio-for-mac"></a>Abrir várias soluções ou instâncias do Visual Studio para Mac
 
@@ -37,9 +37,9 @@ Para abrir uma segunda solução junto com a primeira solução, use as seguinte
 
     ![Captura de tela do Visual Studio para Mac, com o arquivo .sln e Opções realçados](media/open-multiple-solutions-image3.png)
 
-4. Desmarque a caixa **Fechar área de trabalho atual**:
+4. Desmarque a caixa **Fechar workspace atual**:
 
-    ![Captura de tela da caixa de diálogo Opções, com a caixa Fechar área de trabalho atual desmarcada](media/open-multiple-solutions-image1.png)
+    ![Captura de tela da caixa de diálogo Opções, com a caixa Fechar workspace atual desmarcada](media/open-multiple-solutions-image1.png)
 
 5. Selecione **Abrir** para abrir a segunda solução no Painel de Soluções.
 

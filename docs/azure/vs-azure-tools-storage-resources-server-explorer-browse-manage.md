@@ -9,18 +9,18 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/24/2017
 ms.author: ghogen
-ms.openlocfilehash: f4cfa0abb9a6b61bdb5c27d3dd4243250162aa37
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: ad7d2ca7738d4ba0e05e3a75a2a4b6b155e46dbd
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62427621"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911712"
 ---
 # <a name="browse-and-manage-storage-resources-by-using-server-explorer"></a>Procurar e gerenciar recursos de armazenamento usando o Gerenciador de Servidores
 
 [!INCLUDE [storage-try-azure-tools](./includes/storage-try-azure-tools.md)]
 
-## <a name="overview"></a>Visão geral
+## <a name="overview"></a>Visão Geral
 
 Se você instalou as ferramentas do Azure para Microsoft Visual Studio, você pode exibir dados de blob, de fila e de tabela de suas contas de armazenamento do Azure. O nó de **Armazenamento** do Azure no Gerenciador de Servidores mostra os dados que estão em sua conta do emulador de armazenamento local e outras contas de armazenamento do Azure.
 
@@ -74,7 +74,7 @@ Você pode executar as seguintes operações com blobs usando os botões no cant
 
 1. Escolha o contêiner de blob no Cloud Explorer. Na janela do contêiner, selecione o botão **Carregar blob**.
 
-1. Na caixa de diálogo **Carregar Novo Arquivo**, selecione o botão **Procurar** para especificar o arquivo que você deseja carregar e digite o nome da pasta na caixa **Pasta (opcional)**.
+1. Na caixa de diálogo **Carregar Novo Arquivo**, selecione o botão **Procurar** para especificar o arquivo que você deseja carregar e digite o nome da pasta na caixa **Pasta (opcional)** .
 
    ![Carregar um arquivo em uma pasta de blob](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC766037.png)
 
@@ -94,7 +94,7 @@ Como as pastas nos contêineres de blob são pastas virtuais, você não pode cr
 
 Você pode filtrar os blobs que são exibidos especificando um prefixo comum.
 
-Por exemplo, se você inserir o prefixo **hello** na caixa de texto do filtro e, em seguida, selecionar o botão **Executar** (**!**), serão exibidos apenas os blobs que começam com "hello".
+Por exemplo, se você inserir o prefixo **hello** na caixa de texto do filtro e, em seguida, selecionar o botão **Executar** ( **!** ), serão exibidos apenas os blobs que começam com "hello".
 
 ![Caixa de texto de filtro](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC519076.png)
 
@@ -120,7 +120,7 @@ Por padrão, um blob é baixado para um diretório temporário. Para baixar blob
 
 Para carregar os blobs, selecione o botão **Carregar Blob** quando o contêiner for aberto para visualização na exibição do contêiner de blob.
 
-Você pode escolher um ou mais arquivos para carregar e pode carregar arquivos de qualquer tipo. A janela **Log de Atividades do Azure** mostra o andamento do upload. Para saber mais sobre como trabalhar com os dados de blob, consulte [Como usar o Armazenamento de Blobs do Azure no .NET](http://go.microsoft.com/fwlink/p/?LinkId=267911).
+Você pode escolher um ou mais arquivos para carregar e pode carregar arquivos de qualquer tipo. A janela **Log de Atividades do Azure** mostra o andamento do upload. Para saber mais sobre como trabalhar com os dados de blob, consulte [Como usar o Armazenamento de Blobs do Azure no .NET](/azure/storage/blobs/storage-quickstart-blobs-dotnet).
 
 ### <a name="to-view-logs-transferred-to-blobs"></a>Para exibir os logs transferidos para os blobs
 
@@ -155,10 +155,10 @@ A imagem a seguir mostra uma fila que contém duas mensagens:
 
 ![Exibindo uma fila](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC651470.png)
 
-Para obter mais informações sobre a manipulação de filas no código, consulte a [Introdução ao Armazenamento de Filas do Azure usando o .NET](http://go.microsoft.com/fwlink/?LinkID=264702). Para saber mais sobre o serviço Web para filas de serviços de armazenamento, consulte [Conceitos do serviço Fila](http://go.microsoft.com/fwlink/?LinkId=264788). Para saber mais sobre como enviar mensagens a uma fila de serviços de armazenamento usando o Visual Studio, consulte [Enviando mensagens para uma fila de serviços de armazenamento](https://docs.microsoft.com/azure/visual-studio/vs-storage-cloud-services-getting-started-queues).
+Para obter mais informações sobre a manipulação de filas no código, consulte a [Introdução ao Armazenamento de Filas do Azure usando o .NET](/azure/storage/queues/storage-dotnet-how-to-use-queues). Para saber mais sobre o serviço Web para filas de serviços de armazenamento, consulte [Conceitos do serviço Fila](/rest/api/storageservices/Queue-Service-Concepts). Para saber mais sobre como enviar mensagens a uma fila de serviços de armazenamento usando o Visual Studio, consulte [Enviando mensagens para uma fila de serviços de armazenamento](/azure/visual-studio/vs-storage-cloud-services-getting-started-queues).
 
 > [!NOTE]
-> Filas de serviços de armazenamento são diferentes de filas do Barramento de Serviço do Azure. Para obter mais informações sobre filas do barramento de serviço, consulte [Filas do barramento de serviço, tópicos e assinaturas](https://docs.microsoft.com/azure/service-bus-messaging/service-bus-queues-topics-subscriptions).
+> Filas de serviços de armazenamento são diferentes de filas do Barramento de Serviço do Azure. Para obter mais informações sobre filas do barramento de serviço, consulte [Filas do barramento de serviço, tópicos e assinaturas](/azure/service-bus-messaging/service-bus-queues-topics-subscriptions).
 
 ## <a name="work-with-table-resources"></a>Trabalhar com recursos de tabela
 
@@ -183,7 +183,7 @@ A tabela é organizada por entidades (mostradas nas linhas) e propriedades (most
 
 No Designer de Tabela, abra o menu de atalho de uma entidade (uma única linha) ou uma propriedade (uma única célula) e selecione **Editar**.
 
-    ![Add or edit a table entity](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC656238.png)
+![Adicionar ou editar uma entidade de tabela](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC656238.png)
 
 Entidades em uma única tabela não precisam ter o mesmo conjunto de propriedades (colunas). Tenha em mente as seguintes restrições ao exibir e editar dados da tabela:
 
@@ -225,7 +225,7 @@ A ilustração a seguir mostra um exemplo de uma cadeia de caracteres de filtro 
 
 ## <a name="refresh-storage-data"></a>Atualizar dados de armazenamento
 
-Quando o Gerenciador de Servidores é conectado ou obtém dados de uma conta de armazenamento, a operação pode levar até um minuto para ser concluída. Se o Gerenciador de Servidores não conseguir conectar, a operação poderá atingir o tempo limite. Enquanto os dados são recuperados, você pode continuar a trabalhar em outras partes do Visual Studio. Para cancelar a operação se demorar muito, selecione o botão **Parar Atualização** na barra de ferramentas do Gerenciador de Servidores.
+Quando o Gerenciador de Servidores é conectado ou obtém dados de uma conta de armazenamento, a operação pode levar até um minuto para ser concluída. Se Gerenciador de Servidores não puder se conectar, a operação poderá atingir o tempo limite. Enquanto os dados são recuperados, você pode continuar trabalhando em outras partes do Visual Studio. Para cancelar a operação se demorar muito, selecione o botão **Parar Atualização** na barra de ferramentas do Gerenciador de Servidores.
 
 ### <a name="to-refresh-blob-container-data"></a>Para atualizar dados de contêiner de blob
 

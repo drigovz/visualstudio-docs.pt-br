@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eecde0bc5e488cd91632a45406c621ce45bd4447
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 9918a2de67693c0232c94a736f12c7af0a0b959c
+ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63407741"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67043322"
 ---
 # <a name="remote-debugging"></a>Depuração remota
 Você pode depurar um aplicativo do Visual Studio que tenha sido implantado em um computador diferente. Para fazer isso, você deve usar o depurador remoto do Visual Studio.
@@ -93,7 +93,7 @@ Você pode alterar alguns aspectos da configuração do depurador remoto depois 
      > [!IMPORTANT]
      > Você pode executar o depurador remoto em uma conta de usuário é diferente da conta de usuário que você está usando no computador do Visual Studio, mas você deve adicionar a conta de usuário diferente para permissões de usuário do depurador remoto.
 
-     Como alternativa, você pode iniciar o depurador remoto na linha de comando com o **/Allow \<nome de usuário >** parâmetro: **msvsmon / permitir \< username@computer>**.
+     Como alternativa, você pode iniciar o depurador remoto na linha de comando com o **/Allow \<nome de usuário >** parâmetro: **msvsmon / permitir \< username@computer>** .
 
 - Se você precisar alterar o modo de autenticação ou o número da porta ou especificar um valor de tempo limite para as ferramentas remotas: escolha **Ferramentas > Opções**.
 

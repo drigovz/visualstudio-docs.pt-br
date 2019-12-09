@@ -6,15 +6,15 @@ ms.prod: visual-studio-dev14
 ms.topic: conceptual
 ms.assetid: 24ecb76e-b7ad-432d-88ab-d9849963465d
 caps.latest.revision: 15
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d8cedd5ab26539d5ebe32aee8df272691dd0a779
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: e75215d2693b5fe2bf879c4b293ae853b42905e7
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60083643"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72651778"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-2015"></a>How to Report a Problem with Visual Studio 2015 (Como relatar um problema com o Visual Studio 2015)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ A Microsoft respeita sua privacidade. Para obter informações sobre como tratam
 
 Clique no ícone de comentários do usuário ao lado de **Início Rápido** na barra de título ou clique em **Ajuda > Enviar Comentários > Relatar um Problema**.
 
-![Item de menu Relatar um Problema](../ide/media/report-a-problem-menu-item.png "Item de menu Relatar um Problema")
+![Relatar um item de menu com problema](../ide/media/report-a-problem-menu-item.png "|::ref1::|")
 
 ## <a name="describe-the-problem"></a>Descrever o problema
 
@@ -41,7 +41,7 @@ Clique no ícone de comentários do usuário ao lado de **Início Rápido** na b
 
 3. Escolha uma área de problema no menu suspenso. Se você não tiver certeza, faça a melhor suposição.
 
-   ![Caixa de diálogo Relatar um Problema](../ide/media/report-a-problem-dialog.png "Caixa de diálogo Relatar um Problema")
+   ![Relatar uma caixa de diálogo de problema](../ide/media/report-a-problem-dialog.png "|::ref2::|")
 
 ## <a name="provide-a-screenshot-optional"></a>Fornecer uma captura de tela (opcional)
 
@@ -59,7 +59,7 @@ Escolha **Incluir uma captura de tela** para enviar sua tela atual à Microsoft.
 
 4. Aguarde alguns minutos para o Visual Studio coletar e compactar as informações gravadas. A caixa de diálogo terá uma aparência semelhante a essa quando o processo de coleção for concluído:
 
-     ![Gravar um arquivo de rastreamento](../ide/media/record-a-trace-file.png "Gravar um arquivo de rastreamento")
+     ![Registrar um arquivo de rastreamento](../ide/media/record-a-trace-file.png "|::ref3::|")
 
 ## <a name="describe-the-workaround-if-there-is-one"></a>Descrever a solução alternativa, se houver uma
 
@@ -69,6 +69,6 @@ Se você conseguir contornar o problema, descreva a solução alternativa na cai
 
 Clique no botão Enviar para enviar seu relatório, juntamente com as imagens e os arquivos de despejo ou de rastreamento. Se o botão **Enviar** estiver esmaecido, certifique-se de que você forneceu um título e uma descrição.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Fale conosco](../ide/talk-to-us.md)

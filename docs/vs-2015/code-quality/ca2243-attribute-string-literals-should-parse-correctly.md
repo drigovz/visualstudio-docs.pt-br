@@ -1,5 +1,5 @@
 ---
-title: 'CA2243: Literais de cadeia de caracteres de atributo devem ser analisados corretamente | Microsoft Docs'
+title: 'CA2243: literais de cadeia de caracteres de atributo devem ser analisados corretamente | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,41 +12,41 @@ helpviewer_keywords:
 - CA2243
 ms.assetid: bfadb366-379d-4ee4-b17b-c4a09bf1106b
 caps.latest.revision: 12
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: f23db8a9674de621090be70067a555ef4fca2b99
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 62a2adc6f01e5cb26a6af26d71a124f8b81e07fb
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061411"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72671973"
 ---
-# <a name="ca2243-attribute-string-literals-should-parse-correctly"></a>CA2243: Literais de cadeias de caracteres de atributo devem ser analisados corretamente
+# <a name="ca2243-attribute-string-literals-should-parse-correctly"></a>CA2243: os literais da cadeia de caracteres de atributo devem ser analisados corretamente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |NomeDoTipo|AttributeStringLiteralsShouldParseCorrectly|
 |CheckId|CA2243|
-|Categoria|Microsoft.Usage|
-|Alteração Significativa|Não separável|
+|Categoria|Microsoft. Usage|
+|Alteração Significativa|Sem interrupção|
 
 ## <a name="cause"></a>Causa
- Parâmetro literal de cadeia de caracteres de um atributo não é analisado corretamente para uma URL, GUID ou versão.
+ O parâmetro literal da cadeia de caracteres de um atributo não é analisado corretamente para uma URL, GUID ou versão.
 
 ## <a name="rule-description"></a>Descrição da Regra
- Uma vez que os atributos derivados <xref:System.Attribute?displayProperty=fullName>e os atributos são usados em tempo de compilação, somente valores constantes que podem ser passados para seus construtores. Parâmetros de atributo que devem representar URLs, os GUIDs e as versões não podem ser digitados como <xref:System.Uri?displayProperty=fullName>, <xref:System.Guid?displayProperty=fullName>, e <xref:System.Version?displayProperty=fullName>, porque esses tipos não podem ser representados como constantes. Em vez disso, eles devem ser representados por cadeias de caracteres.
+ Como os atributos são derivados de <xref:System.Attribute?displayProperty=fullName>, e os atributos são usados no momento da compilação, somente valores constantes podem ser passados para seus construtores. Os parâmetros de atributo que devem representar URLs, GUIDs e versões não podem ser digitados como <xref:System.Uri?displayProperty=fullName>, <xref:System.Guid?displayProperty=fullName> e <xref:System.Version?displayProperty=fullName>, pois esses tipos não podem ser representados como constantes. Em vez disso, eles devem ser representados por cadeias de caracteres.
 
- Como o parâmetro é tipado como uma cadeia de caracteres, é possível que um parâmetro formatado incorretamente pode ser passado em tempo de compilação.
+ Como o parâmetro é digitado como uma cadeia de caracteres, é possível que um parâmetro formatado incorretamente possa ser passado no momento da compilação.
 
- Essa regra usa uma heurística de nomenclatura para localizar parâmetros que representam um uniform resource identifier (URI), um identificador de GUID (global exclusivo) ou uma versão e verifica se o valor passado está correto.
+ Essa regra usa uma heurística de nomenclatura para localizar parâmetros que representam um URI (Uniform Resource Identifier), um GUID (identificador global exclusivo) ou uma versão e verifica se o valor passado está correto.
 
 ## <a name="how-to-fix-violations"></a>Como Corrigir Violações
- Altere a cadeia de caracteres do parâmetro para uma URL, GUID ou versão está formado corretamente.
+ Altere a cadeia de caracteres do parâmetro para uma URL, GUID ou versão formada corretamente.
 
 ## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos
- É seguro suprimir um aviso nessa regra, se o parâmetro não representar uma URL, GUID ou versão.
+ É seguro suprimir um aviso dessa regra se o parâmetro não representar uma URL, GUID ou versão.
 
 ## <a name="example"></a>Exemplo
  O exemplo a seguir mostra o código para o AssemblyFileVersionAttribute que viola essa regra.
@@ -55,11 +55,11 @@ ms.locfileid: "60061411"
 
  A regra é disparada pelo seguinte:
 
-- Parâmetros que contêm 'version' e não podem ser analisados para Version.
+- Parâmetros que contêm ' version ' e não podem ser analisados para System. Version.
 
-- Parâmetros que contêm 'guid' e não podem ser analisados para GUID.
+- Parâmetros que contêm ' GUID ' e não podem ser analisados como System. GUID.
 
-- Parâmetros que contêm 'uri', 'urn' ou 'url' e não podem ser analisados para System. URI.
+- Parâmetros que contêm ' URI ', ' urn ' ou ' URL ' e não podem ser analisados para System. Uri.
 
 ## <a name="see-also"></a>Consulte também
- [CA1054: Parâmetros de URI não devem ser cadeias de caracteres](../code-quality/ca1054-uri-parameters-should-not-be-strings.md)
+ [CA1054: os parâmetros de URI não devem ser cadeias de caracteres](../code-quality/ca1054-uri-parameters-should-not-be-strings.md)

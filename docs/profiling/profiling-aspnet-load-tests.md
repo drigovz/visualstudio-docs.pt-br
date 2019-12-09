@@ -6,21 +6,22 @@ ms.assetid: c3f5c363-be79-40b5-bfa7-db8d21378d8d
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - aspnet
-ms.openlocfilehash: e78aa662d8bd90f3b2d11766d3a43f42dc1bbccf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 0871be57934b8a970efbca413fae4d1e3d90a625
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62994971"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74772127"
 ---
 # <a name="profile-aspnet-load-tests"></a>Testes de carga do ASP.NET de perfil
 Você pode coletar dados de criação de perfil de testes da Web [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)] automatizados executados em projetos de sites da Web ASP.NET. Você pode coletar dados de amostragem e interação entre camadas. Para mais informações, consulte os seguintes tópicos:
 
-- [(NIB) Como: Executar uma sessão de desempenho em um aplicativo Web do Editor de Testes de Desempenho Web](https://msdn.microsoft.com/d14e0a27-33cc-4e4e-8792-fe03e50d51e1)
+- [(NIB) Como executar uma sessão de desempenho em um aplicativo Web do Editor de Testes de Desempenho Web](https://msdn.microsoft.com/d14e0a27-33cc-4e4e-8792-fe03e50d51e1)
 
-- [Como: Configurar o criador de perfil do ASP.NET para testes de carga usando configurações de teste no Visual Studio](https://msdn.microsoft.com/Library/6832fe39-04d5-4d94-8a18-3e2730bad423)
+- [Como configurar o Criador de Perfil do ASP.NET para carregar testes usando configurações de teste no Visual Studio](https://msdn.microsoft.com/Library/6832fe39-04d5-4d94-8a18-3e2730bad423)
 
 ## <a name="see-also"></a>Consulte também
 - [Noções básicas sobre valores de dados de amostragem](../profiling/understanding-sampling-data-values.md)

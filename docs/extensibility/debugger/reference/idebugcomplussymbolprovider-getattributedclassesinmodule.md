@@ -6,17 +6,20 @@ helpviewer_keywords:
 - IDebugComPlusSymbolProvider::GetAttributedClassesinModule
 - GetAttributedClassesinModule
 ms.assetid: d8b087f3-1d32-4570-9eb0-7e0f7b051bc8
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4bd4a1a93a1dd7e4049efd886d5eca1f292d561b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 7aaff6ee7b770ce55a2ad08ff3d8f4f392375576
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62876731"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66336929"
 ---
 # <a name="idebugcomplussymbolprovidergetattributedclassesinmodule"></a>IDebugComPlusSymbolProvider::GetAttributedClassesinModule
 Recupera as classes com o atributo especificado em um determinado módulo.
@@ -41,22 +44,18 @@ int GetAttributedClassesinModule (
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
-`ulAppDomainID`
+## <a name="parameters"></a>Parâmetros
+`ulAppDomainID`\
+[in] Identificador do domínio do aplicativo.
 
- [in] Identificador do domínio do aplicativo.
+`guidModule`\
+[in] Identificador exclusivo do módulo.
 
-`guidModule`
+`pstrAttribute`\
+[in] A cadeia de caracteres do atributo.
 
- [in] Identificador exclusivo do módulo.
-
-`pstrAttribute`
-
- [in] A cadeia de caracteres do atributo.
-
-`ppEnum`
-
- [out] Retorna uma enumeração das classes atribuídas.
+`ppEnum`\
+[out] Retorna uma enumeração das classes atribuídas.
 
 ## <a name="return-value"></a>Valor de retorno
 Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.

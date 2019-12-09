@@ -1,23 +1,23 @@
 ---
-title: Designer de fluxo de trabalho - Designer de atividade de fluxo de controle
+title: Designers de atividade de fluxo de controle de Designer de Fluxo de Trabalho
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: ba74af23-5398-4e62-bd90-c50612e3bfef
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a3bcbf5ee70b90a0606c7e4cb3d691d28298c2d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 36c2790378f91c4217dbca2cf190ae6e649a03c3
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62949859"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189769"
 ---
 # <a name="control-flow-activity-designers"></a>Designer de atividade de fluxo de controle
 
-Designer de fluxo de trabalho inclui um número de sistema forneceu atividades que você pode usar ao construir os fluxos de trabalho. Esta seção contém sistema forneceu as atividades usadas para controlar o fluxo em um fluxo de trabalho. Os tópicos a seguir descrevem essas atividades e fornecem orientação sobre como usá-los.
+O Designer de Fluxo de Trabalho inclui várias atividades fornecidas pelo sistema que você pode usar ao construir seus fluxos de trabalho. Esta seção contém sistema forneceu as atividades usadas para controlar o fluxo em um fluxo de trabalho. Os tópicos a seguir descrevem essas atividades e fornecem orientação sobre como usá-los.
 
 ## <a name="reference"></a>Referência
 
@@ -45,9 +45,9 @@ Designer de fluxo de trabalho inclui um número de sistema forneceu atividades q
 
 ## <a name="related-sections"></a>Seções relacionadas
 
-Para outros tipos de designers de atividade, consulte os tópicos a seguir:
+Para outros tipos de designers de atividade, consulte os seguintes tópicos:
 
- [Usando os designers de atividade](../workflow-designer/using-the-activity-designers.md)
+ [Usando os designers de atividade](control-flow-activity-designers.md)
 
  [Fluxograma](../workflow-designer/flowchart-activity-designers.md)
 
@@ -59,10 +59,10 @@ Para outros tipos de designers de atividade, consulte os tópicos a seguir:
 
  [Transação](../workflow-designer/transaction-activity-designers.md)
 
- [Coleção](../workflow-designer/collection-activity-designers.md)
+ [Coleta](../workflow-designer/collection-activity-designers.md)
 
  [Tratamento de erro](../workflow-designer/error-handling-activity-designers.md)
 
 ## <a name="external-resources"></a>Recursos externos
 
-- [Usando os designers de atividade](../workflow-designer/using-the-activity-designers.md)
+- [Usando os designers de atividade](control-flow-activity-designers.md)

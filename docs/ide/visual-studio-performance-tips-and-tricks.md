@@ -2,17 +2,17 @@
 title: Dicas para melhorar o desempenho
 ms.date: 08/14/2018
 ms.topic: conceptual
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7fccae7d42d9e8f99c78fd55f74466e2f83e5dfa
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: ccf785cec859290cac0ebcf5c9685861bd2887e4
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62581774"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647144"
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Dicas e truques de desempenho do Visual Studio
 
@@ -57,7 +57,7 @@ Se você tem ficado com pouca memória durante as sessões de depuração normal
 
 - **Especificar os símbolos a serem carregados**
 
-    Para depuração nativa, o carregamento de arquivos de símbolo (*.pdb*) é caro em termos de recursos de memória. Você pode definir as configurações de símbolo de depuração para economizar memória. Normalmente, você pode configurar a solução para carregar somente os módulos do seu projeto.
+    Para depuração nativa, o carregamento de arquivos de símbolo ( *.pdb*) é caro em termos de recursos de memória. Você pode definir as configurações de símbolo de depuração para economizar memória. Normalmente, você pode configurar a solução para carregar somente os módulos do seu projeto.
 
     Para especificar o carregamento de símbolos, escolha **Ferramentas** > **Opções** > **Depuração** > **Símbolos**.
 
@@ -88,7 +88,7 @@ Para obter mais informações sobre as considerações de desempenho do .NET Com
 
     O Visual Studio executa a análise em toda a sua solução para proporcionar uma experiência avançada sobre os erros antes de invocar um build. Esse recurso é útil para identificar erros assim que possível. No entanto, para soluções grandes, esse recurso pode consumir recursos significativos de memória. Se você estiver tendo problemas semelhantes ou pressão de memória, desabilite essa experiência para liberar esses recursos. Por padrão, essa opção é habilitada para o Visual Basic e desabilitada para C#.
 
-    Para desabilitar a **Análise Completa da Solução**, escolha **Ferramentas** > **Opções** > **Editor de Texto** e selecione **Visual Basic** ou **C#**. Escolha **Avançado** e desmarque **Habilitar análise de solução completa**.
+    Para desabilitar a **Análise Completa da Solução**, escolha **Ferramentas** > **Opções** > **Editor de Texto** e selecione **Visual Basic** ou **C#** . Escolha **Avançado** e desmarque **Habilitar análise de solução completa**.
 
 - **Desabilitar CodeLens**
 
@@ -125,13 +125,13 @@ Para obter mais informações sobre as considerações de desempenho do .NET Com
 
 - **Remover as cargas de trabalho**
 
-    Você pode usar o Instalador do Visual Studio para remover as cargas de trabalho que não são mais usadas. Esta ação pode simplificar o custo de inicialização e do tempo de execução ignorando pacotes e assemblies que não são mais necessários.
+    Você pode usar o Instalador do Visual Studio para remover as cargas de trabalho que não são mais usadas. Esta ação pode simplificar o custo de inicialização e do runtime ignorando pacotes e assemblies que não são mais necessários.
 
 ## <a name="force-a-garbage-collection"></a>Forçar uma coleta de lixo
 
 O CLR usa um sistema de gerenciamento de memória de coleta de lixo. Nesse sistema, às vezes a memória é usada pelos objetos que não são mais necessários. Esse estado é temporário. O coletor de lixo liberará esta memória com base em seu desempenho e a heurística de uso de recursos. Você pode forçar o CLR a coletar a memória não utilizada usando uma tecla de atalho no Visual Studio. Se houver uma quantidade significativa de lixo aguardando a coleta e você forçar uma coleta de lixo, você deverá ver o uso de memória do processo *devenv.exe* ser deixado no **Gerenciador de Tarefas**. Raramente é necessário usar esse método. No entanto, após uma operação cara (como um build completo, sessão de depuração ou um evento de abertura de solução), ele pode ajudar a determinar a quantidade de memória que realmente está sendo usado pelo processo. Como o Visual Studio é misto (gerenciado e nativo), geralmente é possível que o alocador nativo e o coletor de lixo disputem pelos recursos de memória limitada. Em condições de alto uso de memória, pode ser útil forçar o coletor de lixo a ser executado.
 
-Para forçar uma coleta de lixo, use a tecla de atalho: **Ctrl**+**Alt**+**Shift**+**F12**, **Ctrl**+**Alt**+**Shift**+**F12** (pressione duas vezes).
+Para forçar uma coleta de lixo, use a tecla de acesso: **Ctrl**+**Alt**+**Shift**+**F12**, **Ctrl**+**Alt**+**Shift**+**F12** (pressione-a duas vezes).
 
 Se forçar a coleta de lixo de forma confiável faz seu cenário funcionar, relate isso na ferramenta de comentários do Visual Studio, pois esse comportamento provavelmente trata-se de um bug.
 

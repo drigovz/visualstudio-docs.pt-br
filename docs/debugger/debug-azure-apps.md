@@ -1,5 +1,5 @@
 ---
-title: Depurar os serviços do Azure | Microsoft Docs
+title: Depurar serviços do Azure | Microsoft Docs
 ms.date: 09/14/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,29 +10,29 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - azure
-ms.openlocfilehash: 9cf5752c43e22f2df73fa6701374805cf4770a82
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e7c7ba163010a14102aa3e1b0160e1c3cf294db1
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62563354"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745559"
 ---
-# <a name="debug-azure-services-in-visual-studio"></a>Depurar os serviços do Azure no Visual Studio
+# <a name="debug-azure-services-in-visual-studio"></a>Depurar serviços do Azure no Visual Studio
 
-Você pode usar o Visual Studio para depurar os serviços do Azure em cenários diferentes:
+Você pode usar o Visual Studio para depurar os serviços do Azure em diferentes cenários:
 
-- Para depurar um aplicativo de produção hospedado no serviço de aplicativo do Azure, consulte [Debug live ASP.NET apps usando o depurador de instantâneo](../debugger/debug-live-azure-applications.md).
+- Para depurar um aplicativo de produção hospedado no serviço Azure App, consulte [depurar aplicativos ASP.net ao vivo usando o depurador de instantâneos](../debugger/debug-live-azure-applications.md).
 
-- Para depurar um aplicativo de produção hospedado em uma máquina virtual do Azure ou o conjunto de dimensionamento de máquina virtual do Azure, consulte [depuração ASP.NET Azure máquinas virtuais e máquinas virtuais do Azure usando o depurador de instantâneo de conjuntos de dimensionamento](../debugger/debug-live-azure-virtual-machines.md).
+- Para depurar um aplicativo de produção hospedado em uma máquina virtual do Azure ou em um conjunto de dimensionamento de máquinas virtuais do Azure, consulte [depurar máquinas virtuais do azure ASP.net e conjuntos de dimensionamento de máquinas virtuais do Azure usando o depurador de instantâneos](../debugger/debug-live-azure-virtual-machines.md).
 
-- Para depurar um aplicativo de produção hospedado no serviço Kubernetes do Azure, consulte [serviços de Kubernetes do Azure do ASP.NET usando o depurador de instantâneo ao vivo de depuração](../debugger/debug-live-azure-kubernetes.md).
+- Para depurar um aplicativo de produção hospedado no serviço kubernetes do Azure, consulte [depurar live ASP.net Azure kubernetes Services usando o depurador de instantâneos](../debugger/debug-live-azure-kubernetes.md).
 
-- Para depurar um aplicativo de produção usando o Application Insights e hospedado no serviço de aplicativo do Azure ou o Service Fabric, consulte [depurar instantâneos em exceções em aplicativos .NET](/azure/application-insights/app-insights-snapshot-debugger).
+- Para depurar um aplicativo de produção usando Application Insights e hospedado no serviço Azure App ou Service Fabric, consulte [depurar instantâneos em exceções em aplicativos .net](/azure/application-insights/app-insights-snapshot-debugger).
 
-- A depuração remota ASP.NET no IIS (serviço de aplicativo do Azure ou uma VM do Azure), consulte [ASP.NET de depuração remota no Azure](remote-debugging-azure.md).
+- Para depuração remota ASP.NET no IIS (serviço Azure App ou uma VM do Azure), consulte [depuração remota ASP.net no Azure](remote-debugging-azure.md).
 
-- A depuração remota ASP.NET no Azure Service Fabric, consulte [depurar um aplicativo do Service Fabric remoto](/azure/service-fabric/service-fabric-debugging-your-application#debug-a-remote-service-fabric-application)
+- Para depurar remotamente o ASP.NET no Azure Service Fabric, consulte [depurar um aplicativo de Service Fabric remoto](/azure/service-fabric/service-fabric-debugging-your-application#debug-a-remote-service-fabric-application)
 
 ## <a name="see-also"></a>Consulte também
 
-- [Depurando no Visual Studio](../debugger/index.md)
+- [Depurando no Visual Studio](../debugger/index.yml)

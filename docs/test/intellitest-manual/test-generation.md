@@ -4,17 +4,17 @@ ms.date: 05/02/2017
 ms.topic: conceptual
 helpviewer_keywords:
 - IntelliTest, Test generation
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: ee6b01e2c154ddebf71f5ae2511ccfe693506db6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+author: jillre
+ms.openlocfilehash: 3dbcbed0c336ff931971e0a4a6a939e681c6948b
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62812825"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653119"
 ---
 # <a name="test-generation"></a>Geração de teste
 
@@ -116,7 +116,7 @@ public partial class ListTest {
 
 O IntelliTest fornece vários atributos de validação para ajudar na triagem de exceções em exceções esperadas e exceções inesperadas.
 
-As exceções esperadas geram casos de teste negativos com a anotação apropriada, como **ExpectedException(typeof(*xxx*))**, enquanto exceções inesperadas geram casos de teste com falha.
+As exceções esperadas geram casos de teste negativos com a anotação apropriada, como **ExpectedException(typeof(*xxx*))** , enquanto exceções inesperadas geram casos de teste com falha.
 
 ```csharp
 [PexMethod, PexAllowedException(typeof(ArgumentNullException))]
@@ -136,7 +136,7 @@ Os validadores são:
 O IntelliTest pode "testar" tipos internos, desde que ele pode vê-los. Para o IntelliTest ver os tipos, o seguinte atributo é adicionado ao seu projeto de teste ou produto pelos assistentes do IntelliTest do Visual Studio:
 
 ```csharp
-[assembly: InternalsVisibleTo("Microsoft.Pex, PublicKey=002400000480000094000000060200000024000052534131000400000100010007d1fa57c4aed9f0a32e84aa0faefd0de9e8fd6aec8f87fb03766c834c99921eb23be79ad9d5dcc1dd9ad236132102900b723cf980957fc4e177108fc607774f29e8320e92ea05ece4e821c0a5efe8f1645c4c0c93c1ab99285d622caa652c1dfad63d745d6f2de5f17e5eaf0fc4963d261c8a12436518206dc093344d5ad293
+[assembly: InternalsVisibleTo("Microsoft.Pex, PublicKey=002400000480000094000000060200000024000052534131000400000100010007d1fa57c4aed9f0a32e84aa0faefd0de9e8fd6aec8f87fb03766c834c99921eb23be79ad9d5dcc1dd9ad236132102900b723cf980957fc4e177108fc607774f29e8320e92ea05ece4e821c0a5efe8f1645c4c0c93c1ab99285d622caa652c1dfad63d745d6f2de5f17e5eaf0fc4963d261c8a12436518206dc093344d5ad293")]
 ```
 
 <a name="assumptions-and-assertions"></a>

@@ -1,49 +1,28 @@
 ---
-title: Gravando o Store de configurações do usuário | Microsoft Docs
-ms.date: 11/04/2016
+title: Gravando no repositório de configurações do usuário | Microsoft Docs
+ms.date: 05/23/2019
 ms.topic: conceptual
 ms.assetid: efd27f00-7fe5-45f8-9b97-371af732be97
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5741b286af454493f543b2c39c894341c87df1b1
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 80b525fe896c59503cac55c9f7cab79a11b481f1
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444903"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647886"
 ---
 # <a name="writing-to-the-user-settings-store"></a>Gravando no repositório de configurações do usuário
-Configurações de usuário são graváveis como aquelas na **Ferramentas / opções** caixa de diálogo, janelas Propriedades e determinadas outras caixas de diálogo. Extensões do Visual Studio podem usar estes para armazenar pequenas quantidades de dados. Este passo a passo mostra como adicionar o bloco de notas para o Visual Studio como uma ferramenta externa, leitura e gravação para o repositório de configurações do usuário.
-
-### <a name="backing-up-your-user-settings"></a>Fazendo backup de suas configurações de usuário
-
-1. Você deve ser capaz de redefinir as configurações de ferramentas externas para que você possa depurar e repita o procedimento. Para fazer isso, você deve salvar as configurações originais para que você pode restaurá-los conforme necessário.
-
-2. Abra Regedit.exe.
-
-3. Navegue até ferramentas HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0Exp\External\\.
-
-    > [!NOTE]
-    > Certifique-se de que você está vendo a chave que contém \14.0Exp\ e não \14.0\\. Quando você executa a instância experimental do Visual Studio, as configurações de usuário estão no hive do Registro "14.0Exp".
-
-4. Clique com botão direito na subchave \External Tools\ e, em seguida, clique em **exportar**. Certifique-se de que **ramificação selecionada** está selecionado.
-
-5. Salve o arquivo externo Tools.reg resultante.
-
-6. Posteriormente, quando você deseja redefinir as configurações de ferramentas externas, selecione a chave do registro Tools HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0Exp\External \ e clique em **excluir** no menu de contexto.
-
-7. Quando o **Confirmar exclusão da chave** caixa de diálogo for exibida, clique em **Sim**.
-
-8. O arquivo Tools.reg externo que você salvou anteriormente com o botão direito, clique em **abrir com**e, em seguida, clique em **Editor do registro**.
+As configurações de usuário são configurações graváveis, como aquelas na caixa de diálogo **ferramentas/opções** , janelas de propriedades e algumas outras caixas de diálogo. As extensões do Visual Studio podem usá-las para armazenar pequenas quantidades de dados. Este tutorial mostra como adicionar o bloco de notas ao Visual Studio como uma ferramenta externa, lendo e gravando no repositório de configurações do usuário.
 
 ## <a name="writing-to-the-user-settings-store"></a>Gravando no repositório de configurações do usuário
 
-1. Crie um projeto VSIX chamado UserSettingsStoreExtension e, em seguida, adicione um comando personalizado chamado UserSettingsStoreCommand. Para obter mais informações sobre como criar um comando personalizado, consulte [criando uma extensão com um comando de Menu](../extensibility/creating-an-extension-with-a-menu-command.md)
+1. Crie um projeto VSIX chamado UserSettingsStoreExtension e, em seguida, adicione um comando personalizado chamado UserSettingsStoreCommand. Para obter mais informações sobre como criar um comando personalizado, consulte [criando uma extensão com um comando de menu](../extensibility/creating-an-extension-with-a-menu-command.md)
 
-2. No UserSettingsStoreCommand.cs, adicione as seguintes instruções using:
+2. No UserSettingsStoreCommand.cs, adicione as seguintes diretivas using:
 
     ```csharp
     using System.Collections.Generic;
@@ -51,7 +30,7 @@ Configurações de usuário são graváveis como aquelas na **Ferramentas / opç
     using Microsoft.VisualStudio.Shell.Settings;
     ```
 
-3. No MenuItemCallback, exclua o corpo do método e obter o usuário armazenam as configurações, da seguinte maneira:
+3. No MenuItemCallback, exclua o corpo do método e obtenha o armazenamento de configurações do usuário, da seguinte maneira:
 
     ```csharp
     private void MenuItemCallback(object sender, EventArgs e)
@@ -61,7 +40,7 @@ Configurações de usuário são graváveis como aquelas na **Ferramentas / opç
     }
     ```
 
-4. Agora, descubra se o bloco de notas já está definido como uma ferramenta externa. Você precisa iterar por todas as ferramentas externas para determinar se a configuração ToolCmd é "Notepad", da seguinte maneira:
+4. Agora descubra se o bloco de notas já está definido como uma ferramenta externa. Você precisa iterar em todas as ferramentas externas para determinar se a configuração ToolCmd é "notepad", da seguinte maneira:
 
     ```csharp
     private void MenuItemCallback(object sender, EventArgs e)
@@ -85,7 +64,7 @@ Configurações de usuário são graváveis como aquelas na **Ferramentas / opç
 
     ```
 
-5. Se o bloco de notas não foi definido como uma ferramenta externa, defina-o da seguinte maneira:
+5. Se o bloco de notas não tiver sido definido como uma ferramenta externa, defina-o da seguinte maneira:
 
     ```vb
     private void MenuItemCallback(object sender, EventArgs e)
@@ -123,8 +102,8 @@ Configurações de usuário são graváveis como aquelas na **Ferramentas / opç
 
 6. Teste o código. Lembre-se de que ele adiciona o bloco de notas como uma ferramenta externa, portanto, você deve reverter o registro antes de executá-lo uma segunda vez.
 
-7. Compilar o código e iniciar a depuração.
+7. Compile o código e inicie a depuração.
 
-8. Sobre o **ferramentas** menu, clique em **UserSettingsStoreCommand invocar**. Isso adicionará o bloco de notas para o **ferramentas** menu.
+8. No menu **ferramentas** , clique em **invocar UserSettingsStoreCommand**. Isso adicionará o bloco de notas ao menu **ferramentas** .
 
-9. Agora você deve ver o bloco de notas no menu Ferramentas / opções de menu e clicando em **bloco de notas** deve abrir uma instância do bloco de notas.
+9. Agora você deve ver o bloco de notas no menu ferramentas/opções e clicar em **bloco** de notas deve exibir uma instância do bloco de notas.

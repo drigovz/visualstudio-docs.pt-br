@@ -3,14 +3,14 @@ title: Usando as Ferramentas do Visual Studio para Mac para Unity
 description: Este guia descreve como usar a extensão das Ferramentas do Visual Studio para Mac para Unity
 author: therealjohn
 ms.author: johmil
-ms.date: 04/02/2019
+ms.date: 06/18/2019
 ms.assetid: 83FDD7A3-5D16-4B4B-9080-078E3FB5C623
-ms.openlocfilehash: 56050de063dcbc86bfa469ee9f466a8e87bba973
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: daffb7721164ae49888a894bec7cad3ac74801a4
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62965949"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67692215"
 ---
 # <a name="using-visual-studio-for-mac-tools-for-unity"></a>Usando as Ferramentas do Visual Studio para Mac para Unity
 
@@ -26,7 +26,7 @@ Outra opção é abrir o Visual Studio para Mac sem nenhum script no editor de c
 
 ## <a name="unity-documentation-access"></a>Acesso de documentação do Unity
 
-As Ferramentas do Visual Studio para Mac para Unity inclui um atalho para acessar a documentação da API do Unity. Para acessar a documentação da API do Unity no Visual Studio para Mac, posicione o cursor sobre a API do Unity você deseja conhecer e pressione o **comando ⌘ + ‘**.
+As Ferramentas do Visual Studio para Mac para Unity inclui um atalho para acessar a documentação da API do Unity. Para acessar a documentação da API do Unity no Visual Studio para Mac, posicione o cursor sobre a API do Unity você deseja conhecer e pressione o **comando ⌘ + ‘** .
 
 ## <a name="intellisense-for-unity-messages"></a>IntelliSense para mensagens do Unity
 O mecanismo Unity transmite mensagens para scripts MonoBehaviour, permitindo que os desenvolvedores escrevam código que reage a mensagens como OnMouseDown, OnTriggerEnter, etc. Como eles não são métodos virtuais na classe base MonoBehaviour, alguns IDEs como MonoDevelop não têm a funcionalidade de preenchimento de código para mensagens Unity.
@@ -61,7 +61,7 @@ No entanto, as Ferramentas do Visual Studio para Mac para Unity estende sua func
 
 ## <a name="adding-new-unity-files-and-folders"></a>Adicionar novos arquivos e pastas Unity
 
-Embora sempre seja possível adicionar novos arquivos a um projeto do Unity no editor do Unity, o Visual Studio para Mac permite criar facilmente novos scripts, sombreadores e pastas do Unity no Visual Studio.
+Embora sempre seja possível adicionar novos arquivos a um projeto do Unity no editor do Unity, o Visual Studio para Mac permite criar facilmente novos scripts, sombreadores, structs, enumerações e pastas do Unity no Visual Studio.
 
 ### <a name="add-a-new-c-monobehaviour-script"></a>Adicionar um novo script MonoBehaviour C#
 
@@ -80,7 +80,7 @@ Para adicionar uma nova pasta, **clique com o botão direito do mouse na pasta A
 Essas adições são refletidas na janela Projeto do editor do Unity.
 
 ### <a name="to-rename-a-file-or-folder"></a>Renomear um arquivo ou pasta
-**Clique com botão direito do mouse** no item a ser renomeado no Painel de Soluções e selecione **Renomear...**.
+**Clique com botão direito do mouse** no item a ser renomeado no Painel de Soluções e selecione **Renomear...** .
 
 > [!NOTE]
 > Se você tiver um novo projeto do Unity sem nenhum script e a pasta Ativos não for mostrada no Painel de Soluções no Visual Studio para Mac, adicione um script C# inicial de dentro do editor do Unity.

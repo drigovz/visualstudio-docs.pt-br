@@ -11,11 +11,11 @@ caps.latest.revision: 25
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 94703f13eba0c58aad24597bc65beeea862e79e5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60076819"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68179222"
 ---
 # <a name="core-interfaces"></a>Interfaces principais
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -119,7 +119,7 @@ As seguintes interfaces são interfaces principais para estender o depurador, us
 |[IDebugEngine3](../../../extensibility/debugger/reference/idebugengine3.md)|DE|Representa um mecanismo de depuração personalizado que oferece suporte ao carregamento de símbolos, JustMyCode e exceções.|  
 |[IDebugEngineCreateEvent2](../../../extensibility/debugger/reference/idebugenginecreateevent2.md)|DE|Enviado por cada nova instância da DE para indicar que ele está pronto para lidar com tarefas de depuração.|  
 |[IDebugEngineLaunch2](../../../extensibility/debugger/reference/idebugenginelaunch2.md)|DE|Representa um mecanismo de depuração personalizado que dá suporte a programas de inicialização.|  
-|[IDebugProgramEngines2](../../../extensibility/debugger/reference/idebugprogramengines2.md)|DE, PS|Representa um nó de programa que lida com vários mecanismos de depuração.|  
+|[IDebugProgramEngines2](../../../extensibility/debugger/reference/idebugprogramengines2.md)|ALEMANHA, PS|Representa um nó de programa que lida com vários mecanismos de depuração.|  
 |[IDebugQueryEngine2](../../../extensibility/debugger/reference/idebugqueryengine2.md)|DE|Fornece uma maneira para o SDM obter uma interface para o mecanismo de depuração de um thread, o programa ou o quadro de pilha.|  
   
 ## <a name="Documents"></a> Documentos  
@@ -130,7 +130,7 @@ As seguintes interfaces são interfaces principais para estender o depurador, us
 |[IDebugActivateDocumentEvent2](../../../extensibility/debugger/reference/idebugactivatedocumentevent2.md)|DE|Enviado por DE solicitar um documento a ser aberto.|  
 |[IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md)|DE|Representa um fluxo de instruções desmontados de um documento.|  
 |[IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)|VS, DE|Representa um documento fornecido pelo DE, especificando um nome e uma classe CLSID (ID).|  
-|[IDebugDocumentChecksum2](../../../extensibility/debugger/reference/idebugdocumentchecksum2.md)|DE, EE|Representa uma soma de verificação para um documento de depuração e permite passar a soma de verificação entre componentes.|  
+|[IDebugDocumentChecksum2](../../../extensibility/debugger/reference/idebugdocumentchecksum2.md)|ALEMANHA, EE|Representa uma soma de verificação para um documento de depuração e permite passar a soma de verificação entre componentes.|  
 |[IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)|VS, DE|Representa um contexto de documento, uma posição dentro de um documento correspondente a um determinado contexto de instrução e o código.|  
 |[IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md)|VS, DE|Representa uma posição geral dentro de um documento.|  
 |[IDebugDocumentPositionOffset2](../../../extensibility/debugger/reference/idebugdocumentpositionoffset2.md)|VS|Representa uma posição em um arquivo de origem como um deslocamento de caractere.|  
@@ -154,7 +154,7 @@ As seguintes interfaces são interfaces principais para estender o depurador, us
 |[IDebugEngineCreateEvent2](../../../extensibility/debugger/reference/idebugenginecreateevent2.md)|DE|Enviado por cada nova instância da DE para indicar que ele está pronto para lidar com tarefas de depuração.|  
 |[IDebugEntryPointEvent2](../../../extensibility/debugger/reference/idebugentrypointevent2.md)|DE|Enviado por DE para indicar que o programa que está sendo depurado está pronto para executar a primeira instrução.|  
 |[IDebugErrorEvent2](../../../extensibility/debugger/reference/idebugerrorevent2.md)|DE|Uma interface que é usada por outras interfaces de evento, que podem retornar um erro, para fornecer mensagens de erro legível por humanos.|  
-|[IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)|DE, PS|Interface base da qual todos os outros eventos interfaces são derivadas.|  
+|[IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)|ALEMANHA, PS|Interface base da qual todos os outros eventos interfaces são derivadas.|  
 |[IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)|VS|Representa uma interface implementada pelo SDM para o qual os eventos (expressados como objetos que implementam uma interface de eventos específico) são enviados.|  
 |[IDebugExceptionEvent2](../../../extensibility/debugger/reference/idebugexceptionevent2.md)|DE|Enviado por DE quando ocorreu uma exceção no programa que está sendo depurado.|  
 |[IDebugExpressionEvaluationCompleteEvent2](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md)|DE|Enviado por DE quando uma avaliação de expressão assíncrona for concluída.|  
@@ -166,10 +166,10 @@ As seguintes interfaces são interfaces principais para estender o depurador, us
 |[IDebugNoSymbolsEvent2](../../../extensibility/debugger/reference/idebugnosymbolsevent2.md)|DE|Sinaliza o [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] da interface do usuário para avisar o usuário que símbolos não pôde ser localizados para o executável iniciado do depurador.|  
 |[IDebugOutputStringEvent2](../../../extensibility/debugger/reference/idebugoutputstringevent2.md)|DE|Enviado por ter a exibição IDE DE uma cadeia de caracteres arbitrária.|  
 |[IDebugPortEvents2](../../../extensibility/debugger/reference/idebugportevents2.md)|VS, DE|Enviado por uma porta para se comunicar os eventos de porta para qualquer ouvinte.|  
-|[IDebugProcessCreateEvent2](../../../extensibility/debugger/reference/idebugprocesscreateevent2.md)|DE, PS|Enviado pela porta ou DE quando um processo foi criado.|  
-|[IDebugProcessDestroyEvent2](../../../extensibility/debugger/reference/idebugprocessdestroyevent2.md)|DE, PS|Enviado pela porta ou DE quando um processo foi destruído.|  
-|[IDebugProgramCreateEvent2](../../../extensibility/debugger/reference/idebugprogramcreateevent2.md)|DE, PS|Enviado pela porta ou DE quando um programa tiver sido criado.|  
-|[IDebugProgramDestroyEvent2](../../../extensibility/debugger/reference/idebugprogramdestroyevent2.md)|DE, PS|Enviado pela porta ou DE quando um programa foi destruído.|  
+|[IDebugProcessCreateEvent2](../../../extensibility/debugger/reference/idebugprocesscreateevent2.md)|ALEMANHA, PS|Enviado pela porta ou DE quando um processo foi criado.|  
+|[IDebugProcessDestroyEvent2](../../../extensibility/debugger/reference/idebugprocessdestroyevent2.md)|ALEMANHA, PS|Enviado pela porta ou DE quando um processo foi destruído.|  
+|[IDebugProgramCreateEvent2](../../../extensibility/debugger/reference/idebugprogramcreateevent2.md)|ALEMANHA, PS|Enviado pela porta ou DE quando um programa tiver sido criado.|  
+|[IDebugProgramDestroyEvent2](../../../extensibility/debugger/reference/idebugprogramdestroyevent2.md)|ALEMANHA, PS|Enviado pela porta ou DE quando um programa foi destruído.|  
 |[IDebugProgramDestroyEventFlags2](../../../extensibility/debugger/reference/idebugprogramdestroyeventflags2.md)|DE|Permite que um mecanismo de depuração substituir o comportamento padrão do [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] interface do usuário quando você encerrar uma sessão de depuração.|  
 |[IDebugProgramNameChangedEvent2](../../../extensibility/debugger/reference/idebugprogramnamechangedevent2.md)|DE|Enviado do mecanismo de depuração (DE) para o Gerenciador de sessão de depuração (SDM) quando altera o nome de um programa.|  
 |[IDebugPropertyCreateEvent2](../../../extensibility/debugger/reference/idebugpropertycreateevent2.md)|DE|Enviado por DE quando uma nova propriedade (representado pelo `IDebugProperty2` interface) foi criado.|  
@@ -235,10 +235,10 @@ As seguintes interfaces são interfaces principais para estender o depurador, us
   
 |Interface|Implementado por|Descrição|  
 |---------------|--------------------|-----------------|  
-|[IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)|PS, DE|Representa um processo que está em execução em um computador.|  
-|[IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)|PS, DE|Representa um processo que ativamente dá suporte a depuração (usado para substituir a etapa, continuar e executar métodos na [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) interface).|  
-|[IDebugProcessCreateEvent2](../../../extensibility/debugger/reference/idebugprocesscreateevent2.md)|DE, PS|Enviado pela porta ou DE quando um processo foi criado.|  
-|[IDebugProcessDestroyEvent2](../../../extensibility/debugger/reference/idebugprocessdestroyevent2.md)|DE, PS|Enviado pela porta ou DE quando um processo foi destruído.|  
+|[IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)|PS, ALEMANHA|Representa um processo que está em execução em um computador.|  
+|[IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)|PS, ALEMANHA|Representa um processo que ativamente dá suporte a depuração (usado para substituir a etapa, continuar e executar métodos na [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) interface).|  
+|[IDebugProcessCreateEvent2](../../../extensibility/debugger/reference/idebugprocesscreateevent2.md)|ALEMANHA, PS|Enviado pela porta ou DE quando um processo foi criado.|  
+|[IDebugProcessDestroyEvent2](../../../extensibility/debugger/reference/idebugprocessdestroyevent2.md)|ALEMANHA, PS|Enviado pela porta ou DE quando um processo foi destruído.|  
 |[IDebugProcessEx2](../../../extensibility/debugger/reference/idebugprocessex2.md)|PS|Representa um processo que deve rastrear qual sessão está anexado a ele.|  
 |[IEnumDebugProcesses2](../../../extensibility/debugger/reference/ienumdebugprocesses2.md)|PS|Representa uma enumeração de um conjunto de processos em uma porta.|  
   
@@ -248,18 +248,18 @@ As seguintes interfaces são interfaces principais para estender o depurador, us
 |Interface|Implementado por|Descrição|  
 |---------------|--------------------|-----------------|  
 |[IDebugEngineProgram2](../../../extensibility/debugger/reference/idebugengineprogram2.md)|DE|Representa uma [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) que precisa para trabalhar em conjunto com outros programas que está sendo depurados ao mesmo tempo.|  
-|[IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)|DE, PS|Representa uma unidade lógica de execução.|  
-|[IDebugProgramCreateEvent2](../../../extensibility/debugger/reference/idebugprogramcreateevent2.md)|DE, PS|Enviado pela porta ou DE quando um programa tiver sido criado.|  
-|[IDebugProgramDestroyEvent2](../../../extensibility/debugger/reference/idebugprogramdestroyevent2.md)|DE, PS|Enviado pela porta ou DE quando um programa foi destruído.|  
-|[IDebugProgramEngines2](../../../extensibility/debugger/reference/idebugprogramengines2.md)|DE, PS|Representa uma [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) que podem ser manipulados por vários mecanismos de depuração.|  
+|[IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)|ALEMANHA, PS|Representa uma unidade lógica de execução.|  
+|[IDebugProgramCreateEvent2](../../../extensibility/debugger/reference/idebugprogramcreateevent2.md)|ALEMANHA, PS|Enviado pela porta ou DE quando um programa tiver sido criado.|  
+|[IDebugProgramDestroyEvent2](../../../extensibility/debugger/reference/idebugprogramdestroyevent2.md)|ALEMANHA, PS|Enviado pela porta ou DE quando um programa foi destruído.|  
+|[IDebugProgramEngines2](../../../extensibility/debugger/reference/idebugprogramengines2.md)|ALEMANHA, PS|Representa uma [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) que podem ser manipulados por vários mecanismos de depuração.|  
 |[IDebugProgramEx2](../../../extensibility/debugger/reference/idebugprogramex2.md)|PS|Representa uma [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) que deve ser capaz de rastrear qual sessão está anexado a ele.|  
-|[IDebugProgramHost2](../../../extensibility/debugger/reference/idebugprogramhost2.md)|DE, PS|Representa uma [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) que pode retornar informações sobre o processo no qual ele está em execução.|  
-|[IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)|DE, PS|Representa um programa que pode ser depurado.|  
-|[IDebugProgramNodeAttach2](../../../extensibility/debugger/reference/idebugprogramnodeattach2.md)|DE, PS|Permite que um nó de programa ser notificado de uma tentativa de anexar ao programa associado.|  
+|[IDebugProgramHost2](../../../extensibility/debugger/reference/idebugprogramhost2.md)|ALEMANHA, PS|Representa uma [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) que pode retornar informações sobre o processo no qual ele está em execução.|  
+|[IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)|ALEMANHA, PS|Representa um programa que pode ser depurado.|  
+|[IDebugProgramNodeAttach2](../../../extensibility/debugger/reference/idebugprogramnodeattach2.md)|ALEMANHA, PS|Permite que um nó de programa ser notificado de uma tentativa de anexar ao programa associado.|  
 |[IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md)|DE|Fornece uma maneira para o SDM consultar a DE sobre os programas controlados por essa DE.|  
 |[IDebugProgramPublisher2](../../../extensibility/debugger/reference/idebugprogrampublisher2.md)|VS|Usado pelo DEs para registrar os programas com o SDM para mostrar que eles estão sendo depurados.|  
-|[IDebugProviderProgramNode2](../../../extensibility/debugger/reference/idebugproviderprogramnode2.md)|DE, PS|Representa uma [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) que pode realizar marshaling de interfaces entre limites de thread ou processo.|  
-|[IEnumDebugPrograms2](../../../extensibility/debugger/reference/ienumdebugprograms2.md)|DE, PS|Representa uma enumeração de um conjunto de programas.|  
+|[IDebugProviderProgramNode2](../../../extensibility/debugger/reference/idebugproviderprogramnode2.md)|ALEMANHA, PS|Representa uma [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) que pode realizar marshaling de interfaces entre limites de thread ou processo.|  
+|[IEnumDebugPrograms2](../../../extensibility/debugger/reference/ienumdebugprograms2.md)|ALEMANHA, PS|Representa uma enumeração de um conjunto de programas.|  
   
 ## <a name="Properties"></a> Propriedades  
  Essas interfaces representam propriedades, um valor associado a um contexto específico, geralmente o resultado de uma avaliação de expressão.  

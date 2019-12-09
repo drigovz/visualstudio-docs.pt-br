@@ -1,30 +1,30 @@
 ---
-title: Definir o .NET Framework como destino
+title: Estruturas .NET de destino
 ms.date: 02/06/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - targeting .NET Framework [Visual Studio]
-- multi-targeting [Visual Studio]
-- multitargeting [Visual Studio]
 - framework targeting [Visual Studio]
 - .NET framework targeting [Visual Studio]
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 451464cd2576c1dd70c7b8235cead327b2f05ca2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: f393061b249fc2eb10a348bb0d2da68f4a30c4f3
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62582106"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647180"
 ---
-# <a name="visual-studio-multi-targeting-overview"></a>Visão geral de multiplataforma no Visual Studio
+# <a name="framework-targeting-overview"></a>Visão geral do direcionamento de estrutura
 
-No Visual Studio, é possível especificar a versão ou o perfil do .NET Framework que você deseja que o projeto tenha como destino. Para que um aplicativo seja executado em outro computador, a versão do Framework de destino do aplicativo deve ser compatível com a versão do Framework instalada no computador.
+No Visual Studio, é possível especificar a versão do .NET que você deseja que o projeto tenha como destino. O direcionamento de estrutura ajuda a garantir que o aplicativo use apenas a funcionalidade disponível na versão da estrutura especificada. Para que os aplicativos .NET Framework sejam executados em outro computador, a versão da estrutura de destino do aplicativo precisa ser compatível com a versão da estrutura instalada no computador.
 
-Também é possível criar uma solução que contém projetos que têm como destino versões diferentes da estrutura. A definição de destino da estrutura ajuda a assegurar que o aplicativo use apenas a funcionalidade disponível na versão especificada da estrutura.
+Uma solução do Visual Studio pode conter projetos destinados a diferentes versões do .NET.
+
+Para obter mais informações sobre estruturas de destino, confira [Estruturas de destino](/dotnet/standard/frameworks).
 
 > [!TIP]
 > Também é possível definir aplicativos como destino para plataformas diferentes. Para obter mais informações, consulte [Multiplataforma](../msbuild/msbuild-multitargeting-overview.md).
@@ -33,23 +33,25 @@ Também é possível criar uma solução que contém projetos que têm como dest
 
 A definição de destino da estrutura inclui os seguintes recursos:
 
-- Ao abrir um projeto que tem como destino uma versão anterior do [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], o Visual Studio pode fazer upgrade dele ou deixar o destino no estado em que se encontra.
+- Quando você abre um projeto direcionado a uma versão de estrutura anterior, o Visual Studio pode atualizar o projeto automaticamente ou deixar o destino no estado em que se encontra.
 
-- Ao criar um projeto, é possível especificar a versão do .NET Framework que você deseja definir como destino.
+- Ao criar um projeto .NET Framework, especifique a versão do .NET Framework que deseja definir como destino.
 
-- É possível alterar a versão do .NET Framework que um projeto existente tem como destino.
+- Você pode [ter várias estruturas de destino](/dotnet/standard/frameworks#how-to-specify-target-frameworks) em um único projeto.
 
-- É possível definir como destino uma versão diferente do .NET Framework em cada um dos vários projetos na mesma solução.
+- É possível definir outra versão do .NET como destino em cada um dos vários projetos na mesma solução.
 
-- Ao alterar a versão do .NET Framework que um projeto tem como destino, o [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] faz as alterações necessárias nas referências e nos arquivos de configuração.
+- Altere a versão do .NET que um projeto existente tem como destino.
 
-Ao trabalhar em um projeto que tem como destino uma versão anterior do [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], o Visual Studio altera dinamicamente o ambiente de desenvolvimento, da seguinte maneira:
+   Ao alterar a versão do .NET que um projeto tem como destino, o Visual Studio faz as alterações necessárias nas referências e nos arquivos de configuração.
+
+Quando você trabalha em um projeto direcionado a uma versão de estrutura anterior, o Visual Studio altera dinamicamente o ambiente de desenvolvimento da seguinte maneira:
 
 - Ele filtra os itens das caixas de diálogo **Adicionar Novo Item**, **Adicionar Nova Referência** e **Adicionar Referência de Serviço** para omitir as opções que não estão disponíveis na versão de destino.
 
 - Ele filtra os controles personalizados da **Caixa de ferramentas** para remover aqueles que não estão disponíveis na versão de destino e mostrar somente os controles mais atualizados quando vários controles estão disponíveis.
 
-- Ele filtra o **IntelliSense** para omitir os recursos de idioma que não estão disponíveis na versão de destino.
+- Ele filtra o **IntelliSense** para omitir as funcionalidades de linguagem que não estão disponíveis na versão de destino.
 
 - Ele filtra as propriedades na janela **Propriedades** para omitir aquelas que não estão disponíveis na versão de destino.
 
@@ -58,11 +60,12 @@ Ao trabalhar em um projeto que tem como destino uma versão anterior do [!INCLUD
 - Para builds, ele usa a versão do compilador e as opções do compilador apropriadas para a versão de destino.
 
 > [!NOTE]
-> A definição de destino da estrutura não assegura que o aplicativo será executado corretamente. É necessário testar o aplicativo para ter certeza de que ele é executado na versão de destino. Não é possível definir como destino versões de estrutura anteriores ao .NET Framework 2.0.
+> - A definição de destino da estrutura não assegura que o aplicativo será executado corretamente. É necessário testar o aplicativo para ter certeza de que ele é executado na versão de destino.
+> - Não é possível ter versões de estrutura de destino abaixo do .NET Framework 2.0.
 
 ## <a name="select-a-target-framework-version"></a>Selecionar uma versão de estrutura de destino
 
-Ao criar um projeto, selecione a versão do .NET Framework de destino após você selecionar um modelo de projeto. A lista de estruturas disponíveis inclui as versões da estrutura instalada que são aplicáveis para o tipo de modelo selecionado. Para os tipos de modelo que não exigem o .NET Framework, por exemplo modelos do .NET Core, a lista suspensa **Estrutura** está oculta.
+Ao criar um projeto .NET Framework, selecione a versão do .NET Framework de destino depois de selecionar um modelo de projeto. A lista de estruturas disponíveis inclui as versões da estrutura instalada que são aplicáveis para o tipo de modelo selecionado. Para modelos de projeto que não são do .NET Framework, por exemplo, modelos do .NET Core, a lista suspensa **Estrutura** não é exibida.
 
 ::: moniker range="vs-2017"
 
@@ -76,13 +79,40 @@ Ao criar um projeto, selecione a versão do .NET Framework de destino após voc�
 
 ::: moniker-end
 
-Em um projeto existente, é possível alterar a versão do .NET Framework de destino na caixa de diálogo das propriedades do projeto. Para obter mais informações, confira [Como: Definir uma versão do .NET Framework como destino](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
+## <a name="change-the-target-framework"></a>Alterar a estrutura de destino
+
+Em um projeto existente do Visual Basic, C# ou F#, você altera a versão do .NET de destino na caixa de diálogo das propriedades do projeto. Para saber mais sobre como alterar a versão de destino de projetos do C++, confira [Como modificar a estrutura de destino e o conjunto de ferramentas da plataforma](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset).
+
+1. No **Gerenciador de Soluções**, abra o menu de contexto do projeto que você deseja alterar e, em seguida, escolha **Propriedades**.
+
+1. Na coluna esquerda da janela **Propriedades**, escolha a guia **Aplicativo**.
+
+   ![Guia Aplicativo das propriedades do projeto](../ide/media/vs_slnexplorer_properties_applicationtab.png)
+
+   > [!NOTE]
+   > Depois de criar um aplicativo UWP, você não poderá alterar a versão de destino do Windows ou do .NET.
+
+1. Na lista **Estrutura de Destino**, escolha a versão desejada.
+
+1. Na caixa de diálogo de verificação exibida, escolha o botão **Sim**.
+
+   O projeto é descarregado. Quando ele é recarregado, ele é direcionado à versão do .NET recém-escolhida.
+
+> [!NOTE]
+> Se o código contiver referências a outra versão do .NET que não seja a que você o direcionou, poderão ser exibidas mensagens de erro quando você compilar ou executar o código. Para resolver esses erros, modifique as referências. Confira [Solução de problemas de erros de direcionamento do .NET](../msbuild/troubleshooting-dotnet-framework-targeting-errors.md).
+
+> [!TIP]
+> Dependendo da estrutura de destino, ele pode ser representado das seguintes maneiras no arquivo de projeto:
+>
+> - Para um aplicativo .NET Core: `<TargetFramework>netcoreapp2.1</TargetFramework>`
+> - Para um aplicativo .NET Standard: `<TargetFramework>netstandard2.0</TargetFramework>`
+> - Para um aplicativo .NET Framework: `<TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>`
 
 ## <a name="resolve-system-and-user-assembly-references"></a>Resolver referências de assembly do sistema e do usuário
 
-Para definir uma versão do .NET Framework como destino, é necessário primeiro instalar as referências de assembly apropriadas. É possível baixar pacotes de desenvolvedor para diferentes versões do .NET Framework na página de [downloads do .NET](https://www.microsoft.com/net/download/windows).
+Para definir uma versão do .NET como destino, é necessário primeiro instalar as referências de assembly apropriadas. Baixe pacotes de desenvolvedor para diferentes versões do .NET na página de [downloads do .NET](https://www.microsoft.com/net/download/windows).
 
-A caixa de diálogo **Adicionar Referência** desabilita assemblies do sistema que não pertencem à versão do .NET Framework de destino, para que eles não possam ser adicionados a um projeto acidentalmente. (Assemblies do sistema são arquivos *.dll* incluídos em uma versão do .NET Framework.) As referências que pertencem a uma versão do Framework posterior à versão de destino não serão resolvidas e os controles que dependem dessa referência não podem ser adicionados. Se você desejar habilitar essa referência, redefina o destino do .NET Framework do projeto para um que inclua a referência.  Para obter mais informações, confira [Como: Definir uma versão do .NET Framework como destino](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
+Para projetos .NET Framework, a caixa de diálogo **Adicionar Referência** desabilita os assemblies do sistema que não pertencem à versão do .NET Framework de destino, de modo que eles não possam ser adicionados a um projeto acidentalmente. (Os assemblies do sistema são arquivos *. dll* incluídos em uma versão do .NET Framework.) As referências que pertencem a uma versão de estrutura superior à versão de destino não serão resolvidas e os controles que dependem dessa referência não poderão ser adicionados. Se você desejar habilitar essa referência, redefina o destino do .NET Framework do projeto para um que inclua a referência.
 
 Para obter mais informações sobre referências de assembly, consulte [Resolver assemblies em tempo de design](../msbuild/resolving-assemblies-at-design-time.md).
 
@@ -92,5 +122,6 @@ Ao direcionar ao .NET Framework 3.5 ou posterior, uma referência ao **System.Co
 
 ## <a name="see-also"></a>Consulte também
 
+- [Estruturas de destino](/dotnet/standard/frameworks)
 - [Multiplataforma (MSBuild)](../msbuild/msbuild-multitargeting-overview.md)
-- [Como: Modificar a estrutura de destino e o conjunto de ferramentas da plataforma (C++)](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset)
+- [Como modificar a estrutura de destino e o conjunto de ferramentas da plataforma (C++)](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset)

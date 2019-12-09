@@ -14,18 +14,18 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 06fbc7f8574a5b66e731bb2e7975203866f3eb72
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54805375"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68195510"
 ---
 # <a name="per-thread-summary-report"></a>Relatório de resumo por thread
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Este gráfico de barras mostra a proporção de tempo que cada thread não oculta gasta em cada categoria de atividade durante o intervalo de tempo visível no momento. “Execução” significa que o thread está em execução; todas as outras categorias significam que o thread está aguardando algo.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Veja também  
  [Tempo de execução (exibição de threads)](../profiling/execution-time-threads-view.md)   
  [Tempo de E/S (exibição de threads)](../profiling/i-o-time-threads-view.md)   
  [Hora de gerenciamento da memória](../profiling/memory-management-time.md)   

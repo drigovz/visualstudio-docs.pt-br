@@ -3,17 +3,17 @@ title: A cadeia de conexão contém credenciais com uma senha de texto não crip
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 501d85af-92e0-4471-b280-8a59c0688575
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 960f5a3d51ee4bad60126c124edd6ba659ba391d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0a8cb18e84263d7b7144764d007a2928956fc77b
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62566966"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72641020"
 ---
 # <a name="the-connection-string-contains-credentials-with-a-clear-text-password-and-is-not-using-integrated-security"></a>A cadeia de conexão contém credenciais com uma senha de texto não criptografado e não estiver usando segurança integrada
 
@@ -24,17 +24,16 @@ Ao trabalhar com conexões de dados que incluem informações confidenciais (sen
 > [!WARNING]
 > Explicitamente definindo a propriedade de **Configurações do Aplicativo** propriedades de **Conexão** a **False** adicionará a senha para o arquivo DBML.
 
-## <a name="save-options"></a>Opções de salvamento
+## <a name="save-options"></a>Salvar opções
 
-- Para salvar a cadeia de caracteres de conexão com as informações confidenciais, escolha **Sim**.
+- Para salvar a cadeia de conexão com as informações confidenciais, escolha **Sim**.
 
    A cadeia de conexão é armazenada como uma configuração de aplicativo. A cadeia de conexão inclui informações sigilosas em texto sem formatação. O arquivo DBML não contém informações sigilosas.
 
-- Para salvar a cadeia de caracteres de conexão sem as informações confidenciais, escolha **não**.
+- Para salvar a cadeia de conexão sem as informações confidenciais, escolha **não**.
 
    A cadeia de conexão é armazenada como uma configuração de aplicativo, mas a senha não é incluído.
 
 ## <a name="see-also"></a>Consulte também
 
-- [Mensagens do O/R Designer](../data-tools/o-r-designer-messages.md)
 - [Ferramentas do LINQ to SQL no Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

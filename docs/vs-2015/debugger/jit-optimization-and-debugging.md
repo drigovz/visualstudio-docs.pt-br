@@ -17,12 +17,12 @@ caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b4a0cf53dcc9870b5d0c93d2fcaaf2d942fd9959
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 56b010a01ccd7e40e696653e13dd7c972c97a9cb
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58924254"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65690532"
 ---
 # <a name="jit-optimization-and-debugging"></a>Otimização e depuração JIT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,4 +41,4 @@ Quando você depura um aplicativo gerenciado, [!INCLUDE[vsprvs](../includes/vspr
  [Depurando código gerenciado](../debugger/debugging-managed-code.md)   
  [Navegar pelo código com o depurador](../debugger/navigating-through-code-with-the-debugger.md)   
  [Anexar a processos em execução](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)   
- [Processo de execução gerenciada](http://msdn.microsoft.com/library/476b03dc-2b12-49a7-b067-41caeaa2f533)
+ [Processo de execução gerenciada](https://msdn.microsoft.com/library/476b03dc-2b12-49a7-b067-41caeaa2f533)

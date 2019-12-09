@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3064f387c0a6233b1cd38c4ed81680ef7991abd4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a6dfbc8c57ff2e78bf0c6ebbd4e9899c372d7084
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62901147"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73187164"
 ---
 # <a name="visualizer-architecture"></a>Arquitetura do visualizador
 A arquitetura de um visualizador de depurador tem duas partes:
@@ -86,8 +86,8 @@ A arquitetura de um visualizador de depurador tem duas partes:
 |<xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.TransferData%2A><br /><br /> —ou—<br /><br /> <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.TransferObject%2A>|<xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource.TransferData%2A>|
 
 ## <a name="see-also"></a>Consulte também
-- [Como: Escrever um visualizador](/visualstudio/debugger/create-custom-visualizers-of-data)
-- [Passo a passo: Como escrever um visualizador em C#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)
-- [Passo a passo: Como escrever um visualizador em Visual Basic](../debugger/walkthrough-writing-a-visualizer-in-visual-basic.md)
-- [Passo a passo: Como escrever um visualizador em Visual Basic](../debugger/walkthrough-writing-a-visualizer-in-visual-basic.md)
+- [Como escrever um visualizador](create-custom-visualizers-of-data.md)
+- [Passo a passo: escrevendo um visualizador em C#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)
+- [Passo a passo: escrevendo um visualizador em Visual Basic](../debugger/walkthrough-writing-a-visualizer-in-visual-basic.md)
+- [Passo a passo: escrevendo um visualizador em Visual Basic](../debugger/walkthrough-writing-a-visualizer-in-visual-basic.md)
 - [Considerações de segurança do visualizador](../debugger/visualizer-security-considerations.md)

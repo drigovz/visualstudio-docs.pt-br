@@ -6,17 +6,17 @@ helpviewer_keywords:
 - load tests, reporting
 - load tests, creating Word reports
 ms.assetid: 3b864c75-2699-48c1-a2b4-9651f108c267
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: a82479fabda0cd64e977af01f87492563a02853f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 715086a2c0d9196680dd1f332ee9b5122e144e5b
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62950066"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653488"
 ---
-# <a name="how-to-manually-create-a-load-test-performance-report-using-microsoft-word"></a>Como: Criar manualmente um relatório de desempenho de teste de carga usando o Microsoft Word
+# <a name="how-to-manually-create-a-load-test-performance-report-using-microsoft-word"></a>Como criar manualmente um relatório de desempenho de teste de carga usando o Microsoft Word
 
 Você pode criar manualmente relatórios de teste de carga do Microsoft Word copiando e colando dados da exibição de gráficos e da exibição resumida Resultados de Teste de Carga. Os dados que são apresentados na exibição resumida e na exibição de gráficos são aplicados no formato HTML quando são copiados.
 
@@ -26,7 +26,7 @@ Você pode criar manualmente relatórios de teste de carga do Microsoft Word cop
 > Você pode copiar texto sem formatação da exibição de tabelas e de capturas de tela da exibição de detalhes no Microsoft Word, mas o texto não é aplicado no formato HTML e exigirá formatação e edição adicionais.
 
 > [!TIP]
-> Também é possível gerar relatórios organizados do Microsoft Excel automaticamente. Para obter mais informações, confira [Como: Criar relatórios de desempenho de teste de carga usando o Microsoft Excel](../test/how-to-create-load-test-performance-reports-using-microsoft-excel.md).
+> Também é possível gerar relatórios organizados do Microsoft Excel automaticamente. Para obter mais informações, confira [Como criar relatórios de desempenho de teste de carga usando o Microsoft Excel](../test/how-to-create-load-test-performance-reports-using-microsoft-excel.md).
 
 ## <a name="copy-summary-view-data"></a>Copiar dados da exibição resumida
 
@@ -44,7 +44,7 @@ Você pode criar manualmente relatórios de teste de carga do Microsoft Word cop
 
 1. Se a exibição de grafos não estiver sendo mostrada nos **Resultados do Teste de Carga**, escolha **Grafos** na barra de ferramentas.
 
-2. (Opcional) Amplie o gráfico específico que você deseja copiar no documento do Microsoft Word, conforme mostrado na ilustração a seguir. Para obter mais informações, confira [Como: Ampliar uma região do grafo](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md).
+2. (Opcional) Amplie o gráfico específico que você deseja copiar no documento do Microsoft Word, conforme mostrado na ilustração a seguir. Para saber mais, confira [Como ampliar uma região do grafo](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md).
 
      ![Controle de zoom da exibição de grafo](../test/media/ltest_zoomcontrol.png)
 
@@ -58,4 +58,4 @@ Você pode criar manualmente relatórios de teste de carga do Microsoft Word cop
 ## <a name="see-also"></a>Consulte também
 
 - [Relatar resultados do teste de carga para comparações de testes ou análise de tendências](../test/compare-load-test-results.md)
-- [Como: Criar relatórios de desempenho de teste de carga usando o Microsoft Excel](../test/how-to-create-load-test-performance-reports-using-microsoft-excel.md)
+- [Como criar relatórios de desempenho de teste de carga usando o Microsoft Excel](../test/how-to-create-load-test-performance-reports-using-microsoft-excel.md)

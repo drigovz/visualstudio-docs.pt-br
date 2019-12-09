@@ -13,12 +13,12 @@ ms.assetid: b0449111-8b48-45a1-a031-ea24b765e969
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c20e0402f49b9c1d069b89bc972d8d3179f2ceb2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a6ee9f5d4a162f994cfea4fb3fe620599c1627b3
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58928961"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65681325"
 ---
 # <a name="projecttemplatelink-element-visual-studio-templates"></a>Elemento ProjectTemplateLink (modelos do Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,7 +52,7 @@ Especifica o caminho para o arquivo .vstemplate de um projeto em um modelo de v�
 |Atributo|Descrição|  
 |---------------|-----------------|  
 |`ProjectName`|Atributo opcional.<br /><br /> Especifica o nome de cada projeto individual em um modelo de vários projetos. O **novo projeto** caixa de diálogo não é possível atribuir nomes a projetos individuais.|  
-|`CopyParameters`|Permite que todas as variáveis no modelo de grupo principal sejam copiadas em cada um dos modelos vinculados.<br /><br /> Os parâmetros nos modelos vinculados têm um prefixo `"$ext_*$"`. Por exemplo, se no modelo de grupo pai o parâmetro `$projectname$` tem um valor **ExampleProject1**, quando o modelo vinculado obtém sua vez para ser executado, ele adquire um parâmetro `$ext_projectname$`, que é uma cópia do `$projectname$`parâmetro de modelo de grupo pai.<br /><br /> Isso permite que modelos vinculados compartilhem alguns parâmetros comuns, que podem ser convenientemente criados somente no modelo de grupo pai.<br /><br /> Esse atributo é opcional e padronizado automaticamente para `false` quando não é incluído.<br /><br /> Introduzido no Visual Studio 2013 Atualização 2. Para fazer referência a versão correta do produto, consulte [Referenciando Assemblies entregues no Visual Studio 2013 SDK Update 2](http://msdn.microsoft.com/42b65c3e-e42b-4c39-98c8-bea285f25ffb).|  
+|`CopyParameters`|Permite que todas as variáveis no modelo de grupo principal sejam copiadas em cada um dos modelos vinculados.<br /><br /> Os parâmetros nos modelos vinculados têm um prefixo `"$ext_*$"`. Por exemplo, se no modelo de grupo pai o parâmetro `$projectname$` tem um valor **ExampleProject1**, quando o modelo vinculado obtém sua vez para ser executado, ele adquire um parâmetro `$ext_projectname$`, que é uma cópia do `$projectname$`parâmetro de modelo de grupo pai.<br /><br /> Isso permite que modelos vinculados compartilhem alguns parâmetros comuns, que podem ser convenientemente criados somente no modelo de grupo pai.<br /><br /> Esse atributo é opcional e padronizado automaticamente para `false` quando não é incluído.<br /><br /> Introduzido no Visual Studio 2013 Atualização 2. Para fazer referência a versão correta do produto, consulte [Referenciando Assemblies entregues no Visual Studio 2013 SDK Update 2](https://msdn.microsoft.com/42b65c3e-e42b-4c39-98c8-bea285f25ffb).|  
   
 ### <a name="child-elements"></a>Elementos filho  
  nenhuma.  

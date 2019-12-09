@@ -1,5 +1,5 @@
 ---
-title: IActiveScript::GetScriptSite | Microsoft Docs
+title: 'IActiveScript:: GetScriptSite | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b57c4282b7ec77eb4af2ffa983479ae77388e1c9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 567c7b5c1ead5388e6ec9c67d6ab6f9f580adf20
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62935765"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575739"
 ---
 # <a name="iactivescriptgetscriptsite"></a>IActiveScript::GetScriptSite
-Recupera o objeto de site associado com o mecanismo de Script do Windows.  
+Recupera o objeto do site associado ao mecanismo de script do Windows.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -38,21 +38,21 @@ HRESULT GetScriptSite(
   
 #### <a name="parameters"></a>Parâmetros  
  `iid`  
- [in] Identificador da interface solicitada.  
+ no Identificador da interface solicitada.  
   
  `ppvSiteObject`  
- [out] Endereço do local que recebe o ponteiro de interface para o objeto de site do host.  
+ fora Endereço do local que recebe o ponteiro de interface para o objeto do site do host.  
   
-## <a name="return-value"></a>Valor de retorno  
+## <a name="return-value"></a>Valor retornado  
  Retorna um dos seguintes valores:  
   
-|Valor de retorno|Significado|  
+|Valor retornado|Significado|  
 |------------------|-------------|  
 |`S_OK`|Êxito.|  
 |`E_INVALIDARG`|Um argumento era inválido.|  
 |`E_NOINTERFACE`|Não há suporte para a interface especificada.|  
 |`E_POINTER`|Um ponteiro inválido foi especificado.|  
-|`S_FALSE`|Não há nenhum site tiver sido definido; o `ppvSiteObject` parâmetro é definido como `NULL`.|  
+|`S_FALSE`|Nenhum site foi definido; o parâmetro `ppvSiteObject` é definido como `NULL`.|  
   
 ## <a name="see-also"></a>Consulte também  
  [IActiveScript](../../winscript/reference/iactivescript.md)

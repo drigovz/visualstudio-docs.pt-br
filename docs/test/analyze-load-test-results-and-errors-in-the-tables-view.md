@@ -18,15 +18,15 @@ helpviewer_keywords:
 - Load Test Viewer, tables
 - load tests, results tables
 ms.assetid: 0a84bda3-6051-45eb-9c7f-d57419e1f97d
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 98e54e8e1bec7502e7401dc6a13a639e92c1a881
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: f6410129d32e521adeda4b31e4b3a0f6aca903fd
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62823035"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72665394"
 ---
 # <a name="analyze-load-test-results-and-errors-in-the-tables-view-of-the-load-test-analyzer"></a>Analisar resultados do teste de carga e erros na exibição Tabelas do Analisador de Teste de Carga
 
@@ -53,7 +53,7 @@ A tabela a seguir lista as tabelas que estão disponíveis para analisar execuç
 |Nome da tabela|Descrição|
 |-|-|
 |Erros|Exibe uma lista de erros ocorridos durante a execução do teste de carga. Para obter mais informações, confira [A tabela de erros](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-errors-table) neste tópico e [Analisar resultados do teste de carga](../test/analyze-load-test-results-using-the-load-test-analyzer.md).|
-|Pages (Páginas)|Exibe uma lista de páginas acessadas durante a execução do teste de carga. Alguns dados nessa tabela só estarão disponíveis depois que um teste de carga for concluído. Para obter mais informações, confira [Como: Exibir a resposta da página da Web](../test/how-to-view-web-page-response-time-in-a-load-test.md).|
+|Pages (Páginas)|Exibe uma lista de páginas acessadas durante a execução do teste de carga. Alguns dados nessa tabela só estarão disponíveis depois que um teste de carga for concluído. Para obter mais informações, confira [Como exibir a resposta da página da Web](../test/how-to-view-web-page-response-time-in-a-load-test.md).|
 |Solicitações|Exibe detalhes de solicitações individuais emitidas durante um teste de carga. Isso inclui todas as solicitações HTTP e as solicitações dependentes como imagens. Para obter mais informações, confira [A tabela Solicitações](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-requests-table) neste tópico.|
 |Rastreamento SQL|Exibe os resultados do rastreamento do SQL. Essa tabela só estará disponível depois que um teste de carga for concluído, e apenas se o rastreamento do SQL tiver sido usado durante o teste. Para obter mais informações, confira [A tabela de dados Rastreamento do SQL](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-sql-trace-data-table) neste tópico.|
 |Testes|Exibe detalhes de testes individuais durante um teste de carga. Para obter mais informações, confira [A tabela Testes](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-tests-table) neste tópico.|
@@ -64,13 +64,13 @@ A tabela a seguir lista as tabelas que estão disponíveis para analisar execuç
 
 ## <a name="collect-percentile-data"></a>Coletar dados de percentil
 
- Algumas tabelas de teste de carga podem conter colunas adicionais, que incluem dados de percentil e tempos de resposta divididos em grupos baseados na emulação de rede. Por padrão, esses dados não são coletados. Dados percentuais só estão disponíveis ao salvar resultados em um banco de dados, não ao salvar localmente. Para obter mais informações, confira [Gerenciando resultados do teste no Repositório de Resultados do Teste de Carga](../test/manage-load-test-results-in-the-load-test-results-repository.md). Além disso, para coletar esses dados, no **Editor de Teste de Carga**, sob o nó **Configurações de Execução**, selecione o nó da configuração de execução específico a ser alterado. Na janela **Propriedades**, para a propriedade **Armazenamento de Detalhes de Medição de Tempo**, selecione **StatisticsOnly** ou **AllIndividualDetails**. Para obter mais informações, confira [Como: Exibir a resposta da página da Web](../test/how-to-view-web-page-response-time-in-a-load-test.md).
+Algumas tabelas de teste de carga podem conter colunas adicionais, que incluem dados de percentil e tempos de resposta divididos em grupos baseados na emulação de rede. Por padrão, esses dados não são coletados. Dados percentuais só estão disponíveis ao salvar resultados em um banco de dados, não ao salvar localmente. Para obter mais informações, confira [Gerenciando resultados do teste no Repositório de Resultados do Teste de Carga](../test/manage-load-test-results-in-the-load-test-results-repository.md). Além disso, para coletar esses dados, no **Editor de Teste de Carga**, sob o nó **Configurações de Execução**, selecione o nó da configuração de execução específico a ser alterado. Na janela **Propriedades**, para a propriedade **Armazenamento de Detalhes de Medição de Tempo**, selecione **StatisticsOnly** ou **AllIndividualDetails**. Para obter mais informações, confira [Como exibir a resposta da página da Web](../test/how-to-view-web-page-response-time-in-a-load-test.md).
 
 ## <a name="the-requests-table"></a>A tabela Solicitações
 
- A tabela **Solicitações** exibe detalhes de solicitações individuais emitidas durante um teste de carga. Isso inclui todas as solicitações HTTP e as solicitações dependentes como imagens. A tabela lista solicitações por teste e cenário, porque uma solicitação pode ser incluída em muitos testes e cenários.
+A tabela **Solicitações** exibe detalhes de solicitações individuais emitidas durante um teste de carga. Isso inclui todas as solicitações HTTP e as solicitações dependentes como imagens. A tabela lista solicitações por teste e cenário, porque uma solicitação pode ser incluída em muitos testes e cenários.
 
- A seguinte tabela lista as colunas na tabela **Solicitações**:
+A seguinte tabela lista as colunas na tabela **Solicitações**:
 
 |Column|Descrição|Visível por padrão|
 |-|-|-|
@@ -90,9 +90,9 @@ A tabela a seguir lista as tabelas que estão disponíveis para analisar execuç
 
 ## <a name="the-tests-table"></a>A tabela Testes
 
- A tabela **Testes** exibe detalhes de testes individuais executados durante um teste de carga. A tabela lista testes por teste e cenário, porque um teste pode ser incluído em muitos cenários.
+A tabela **Testes** exibe detalhes de testes individuais executados durante um teste de carga. A tabela lista testes por teste e cenário, porque um teste pode ser incluído em muitos cenários.
 
- A seguinte tabela lista as colunas na tabela **Testes**.
+A seguinte tabela lista as colunas na tabela **Testes**.
 
 |Column|Descrição|Visível por padrão|
 |-|-|-|
@@ -111,12 +111,12 @@ A tabela a seguir lista as tabelas que estão disponíveis para analisar execuç
 
 ## <a name="the-transactions-table"></a>A tabela Transações
 
- A tabela **Transações** exibe uma lista de transações ocorridas durante uma execução de teste de carga. As transações se referem às transações definidas em um teste de desempenho na Web ou a temporizadores definidos em um teste da unidade. A transação não se refere a transações de banco de dados.
+A tabela **Transações** exibe uma lista de transações ocorridas durante uma execução de teste de carga. As transações se referem às transações definidas em um teste de desempenho na Web ou a temporizadores definidos em um teste da unidade. A transação não se refere a transações de banco de dados.
 
- A seguinte tabela lista as colunas na tabela **Transações**.
+A seguinte tabela lista as colunas na tabela **Transações**.
 
 > [!NOTE]
-> Para exibir todas as colunas, você deve habilitar a propriedade Armazenamento de Detalhes de Medição de Tempo associada à configuração de execução ativa. Para obter mais informações, confira [Como: Especificar a propriedade de armazenamento de detalhes de tempo](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md).
+> Para exibir todas as colunas, você deve habilitar a propriedade Armazenamento de Detalhes de Medição de Tempo associada à configuração de execução ativa. Para saber mais, confira [Como especificar a propriedade de armazenamento de detalhes de tempo](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md).
 
 |Column|Descrição|Visível sem detalhes de tempo|
 |-|-|-|
@@ -126,32 +126,32 @@ A tabela a seguir lista as tabelas que estão disponíveis para analisar execuç
 |**Total**|O número total de transações emitidas durante a execução do teste de carga.|Sim|
 |**Tempo de transação**|O tempo de execução da transação durante uma execução do teste de carga. Para testes de desempenho na Web, o tempo de raciocínio é incluído no cálculo. As unidades estão em segundos.|Não|
 |**Tempo de resposta**|O tempo de resposta da transação do teste de desempenho na Web em uma execução do teste de carga. Tempo de Resposta é diferente do Tempo da Transação porque Tempo de Resposta não inclui tempo de raciocínio ocorrido durante a transação. As unidades estão em segundos.|Não|
-|**Tempo méd. de transação**|O tempo médio da transação. Esse tempo inclui tempos de raciocínio. Por exemplo, se você tiver três solicitações e cada uma tiver um tempo de raciocínio, esse tempo incluirá esses tempos de raciocínio e a hora real para executar solicitações.|Não|
-|**Tempo méd. de resposta**|O tempo médio de resposta de uma transação do teste de desempenho na Web em uma execução do teste de carga. Tempo de Resposta é diferente do Tempo da Transação porque Tempo de Resposta não inclui tempo de raciocínio ocorrido durante a transação. As unidades estão em segundos.|Não|
+|**Tempo da transação ave**|O tempo médio da transação. Esse tempo inclui tempos de raciocínio. Por exemplo, se você tiver três solicitações e cada uma tiver um tempo de raciocínio, esse tempo incluirá esses tempos de raciocínio e a hora real para executar solicitações.|Não|
+|**Tempo de resposta ave**|O tempo médio de resposta de uma transação do teste de desempenho na Web em uma execução do teste de carga. Tempo de Resposta é diferente do Tempo da Transação porque Tempo de Resposta não inclui tempo de raciocínio ocorrido durante a transação. As unidades estão em segundos.|Não|
 |**Tempo de resposta mínimo**|Isso não inclui tempos de raciocínio.|Não|
 |**Tempo máximo de resposta**|Isso não inclui tempos de raciocínio.|Não|
 |**Mediana do tempo de resposta**|Isso não inclui tempos de raciocínio.|Não|
-|**Tempo de resposta 90%**|O 90º valor de percentil para Tempo de Transação. Isso não inclui tempos de raciocínio. **Observação:**  Isso é diferente do Agente de Teste de Carga do Visual Studio Team System 2008, que usou o valor **Tempo de Transação de 90%**.|Não|
-|**Tempo de resposta 95%**|O 95º valor de percentil para Tempo de Transação. Isso não inclui tempos de raciocínio. **Observação:**  Isso é diferente do Agente de Teste de Carga do Visual Studio Team System 2008, que usou o valor **Tempo de Transação de 95%**.|Não|
+|**Tempo de resposta 90%**|O 90º valor de percentil para Tempo de Transação. Isso não inclui tempos de raciocínio. **Observação:** isso é diferente do Visual Studio Team System 2008 Test Load Agent, que usou o valor **Tempo de transação de 90%** .|Não|
+|**Tempo de resposta 95%**|O 95º valor de percentil para Tempo de Transação. Isso não inclui tempos de raciocínio. **Observação:** isso é diferente do Visual Studio Team System 2008 Test Load Agent, que usou o valor **Tempo de transação de 95%** .|Não|
 |**Tempo de resposta 99%**|O 99º valor de percentil para Tempo de Transação. Isso não inclui tempos de raciocínio.|Não|
 |**Desvio padrão do tempo de resposta**|Isso não inclui tempos de raciocínio.|Não|
 
 ## <a name="the-errors-table"></a>A tabela Erros
 
- Ao executar um teste de carga, você pode analisar erros ocorridos. A análise de erros e o ajuste dos testes são partes importantes do processo de teste da carga. Se tiver ocorrido qualquer erro, um hiperlink **erros** será exibido na barra de status do teste de carga e especificará o número de erros ocorridos. Para exibir a tabela de erros, escolha o hiperlink.
+Ao executar um teste de carga, você pode analisar erros ocorridos. A análise de erros e o ajuste dos testes são partes importantes do processo de teste da carga. Se tiver ocorrido qualquer erro, um hiperlink **erros** será exibido na barra de status do teste de carga e especificará o número de erros ocorridos. Para exibir a tabela de erros, escolha o hiperlink.
 
- A tabela de erros agrupa os erros ocorridos durante um teste de carga pelo tipo e pelo subtipo do erro. Também há uma linha **total** na tabela que especifica a contagem total de todos os erros ocorridos.
+A tabela de erros agrupa os erros ocorridos durante um teste de carga pelo tipo e pelo subtipo do erro. Também há uma linha **total** na tabela que especifica a contagem total de todos os erros ocorridos.
 
- A tabela de erros contém as seguintes colunas:
+A tabela de erros contém as seguintes colunas:
 
 |Column|Descrição|Visível por padrão|
 |-|-|-|
-|Tipo|O tipo do erro. Por exemplo, HttpError.|Sim|
+|Digite|O tipo do erro. Por exemplo, HttpError.|Sim|
 |SubType|O subtipo do erro. Por exemplo, LoadTestException.|Sim|
 |Contagem|O número de erros desse tipo ocorridos durante o teste de carga. As entradas nessa coluna são exibidas como hiperlinks. É possível escolher qualquer hiperlink para exibir uma lista dos erros individuais.|Sim|
 |Última mensagem|Uma mensagem que descreve o erro. Por exemplo, 404 - NotFound.|Sim|
 
- Para saber mais, confira [Trabalhando com tabelas de teste de carga](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
+Para saber mais, confira [Trabalhando com tabelas de teste de carga](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
 
 ### <a name="drill-down-to-the-error-list"></a>Fazer drill down até a lista de erros
 
@@ -241,8 +241,8 @@ Na exibição de tabela, é possível exibir até quatro tabelas por vez sem sob
 
 ## <a name="see-also"></a>Consulte também
 
-- [Analisar resultados do teste de carga](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
-- [Como: Acessar os resultados do teste de carga para análise](../test/how-to-access-load-test-results-for-analysis.md)
+- [Analisar resultados de teste de carga](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
+- [Como acessar os resultados do teste de carga para análise](../test/how-to-access-load-test-results-for-analysis.md)
 - [Analisar resultados do teste de carga na exibição Grafos](../test/analyze-load-test-results-in-the-graphs-view.md)
 - [Analisar violações de regra de limite](../test/analyze-threshold-rule-violations-in-load-tests.md)
 - [Gerenciar resultados do teste de carga no repositório de Resultados do Teste de Carga](../test/manage-load-test-results-in-the-load-test-results-repository.md)

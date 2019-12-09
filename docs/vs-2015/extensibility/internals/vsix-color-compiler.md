@@ -7,11 +7,11 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: e1607ec4863c7e2b21cd69dd57ca4203e3cf4dbf
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60063667"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68147938"
 ---
 # <a name="vsix-color-compiler"></a>Compilador de cores do VSIX
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -111,7 +111,7 @@ A ferramenta do compilador de cor de extensão do Visual Studio é um aplicativo
 |-|-|  
 |**Atributo**|**Definição**|  
 |Tipo|[Obrigatório] O tipo da cor. Ele pode ser um dos seguintes:<br /><br /> *CT_INVALID:* A cor é inválido ou não foi definida.<br /><br /> *CT_RAW:* Um valor ARGB bruto.<br /><br /> *CT_COLORINDEX:* NÃO USE.<br /><br /> *CT_SYSCOLOR:* Uma cor de sistema do Windows em SysColor.<br /><br /> *CT_VSCOLOR:* Uma cor do Visual Studio em __VSSYSCOLOREX.<br /><br /> *CT_AUTOMATIC:* A cor automática.<br /><br /> *CT_TRACK_FOREGROUND:* NÃO USE.<br /><br /> *CT_TRACK_BACKGROUND:* NÃO USE.|  
-|Source|[Obrigatório] O valor da cor em hexadecimal|  
+|Origem|[Obrigatório] O valor da cor em hexadecimal|  
   
  Todos os valores com suporte pela enumeração __VSCOLORTYPE são compatíveis com o esquema no atributo de tipo. No entanto, é recomendável que você use apenas CT_RAW e CT_SYSCOLOR.  
   
@@ -142,7 +142,7 @@ A ferramenta do compilador de cor de extensão do Visual Studio é um aplicativo
 |-|-|-|  
 |**Nome do comutador**|**Observações**|**Obrigatório ou opcional**|  
 |Sem nome (arquivo. xml)|Isso é o primeiro parâmetro sem nome e é o caminho para o arquivo XML a ser convertido.|Necessária|  
-|Sem nome (arquivo. pkgdef)|Isso é o segundo parâmetro sem nome e é o caminho de saída para o arquivo. pkgdef gerado.<br /><br /> Padrão: \<XML Filename>.pkgdef|Opcional|  
+|Sem nome (arquivo. pkgdef)|Isso é o segundo parâmetro sem nome e é o caminho de saída para o arquivo. pkgdef gerado.<br /><br /> Padrão: \<Nome do arquivo XML >. pkgdef|Opcional|  
 |/noLogo|Definir esse sinalizador interrompe as informações de produto e os direitos autorais de impressão.|Opcional|  
 |/?|Imprima informações de Ajuda.|Opcional|  
 |/help|Imprima informações de Ajuda.|Opcional|  

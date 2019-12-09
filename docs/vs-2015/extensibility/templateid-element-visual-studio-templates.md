@@ -14,20 +14,20 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f1a52b360994c53eef69ceafa45828ec1020be16
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58929243"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68186419"
 ---
 # <a name="templateid-element-visual-studio-templates"></a>Elemento TemplateID (modelos do Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Especifica um identificador para um modelo de item é categorizado em um grupo de modelos de item, o [TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md) elemento.  
   
- \<VSTemplate>  
- \<TemplateData>  
- \<TemplateID>  
+ \<VSTemplate >  
+ \<TemplateData >  
+ \<TemplateID >  
   
 ## <a name="syntax"></a>Sintaxe  
   

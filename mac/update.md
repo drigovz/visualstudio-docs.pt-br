@@ -1,17 +1,17 @@
 ---
 title: Atualizando o Visual Studio para Mac
 description: Instruções para atualizar o Visual Studio para Mac e acessar as versões prévias.
-author: conceptdev
-ms.author: crdun
-ms.date: 04/02/2019
+author: asb3993
+ms.author: amburns
+ms.date: 09/18/2019
 ms.technology: vs-ide-install
 ms.assetid: DB8DC9FE-FF21-4061-8A96-3F9FC08A4F8F
-ms.openlocfilehash: 8cadbeba73afadbffb32aeaca04ad3de4df8733b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 383bf38b26b4961df61dca2a1bf1d4efda335d81
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62827471"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71211505"
 ---
 # <a name="update-visual-studio-for-mac"></a>Atualizar o Visual Studio para Mac
 
@@ -44,7 +44,7 @@ Para alterar o canal, selecione-o na lista de canais suspensa e pressione o **Tr
 
 Trocar canais inicia imediatamente o processo de download de nova atualizações.
 
-Se você tiver selecionado a opção para **Verificar automaticamente**, a caixa do atualizador exibirá um pop-up quando o Visual Studio para Mac for aberto para informar que há novas atualizações disponíveis. Ele também oferecerá a opção de começar a baixá-las.
+Se você tiver selecionado a opção para **Verificar automaticamente**, a caixa do atualizador exibirá um pop-up quando o Visual Studio para Mac for aberto para informar que há novas atualizações disponíveis. Novos downloads começarão a baixar automaticamente para o seu computador quando essa caixa for exibida.
 
 Para começar a instalar as atualizações, selecione o botão **Reiniciar e instalar atualizações**:
 

@@ -8,17 +8,17 @@ helpviewer_keywords:
 - cascading submenus
 - menus, creating cascading submenus
 ms.assetid: 692600cb-d052-40e2-bdae-4354ae7c6c84
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7ae0fa20b110f67ac23b7b6013444021dffc468c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 32a69a260aff2163deb02a67fb011d50f138c601
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62843859"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66309877"
 ---
 # <a name="add-a-submenu-to-a-menu"></a>Adicionar um Submenu a um Menu
 Este passo a passo se baseia a demonstração no [adicionar um Menu a barra de menus do Visual Studio](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md) , mostrando como adicionar um submenu para o **TestMenu** menu.
@@ -128,7 +128,7 @@ Este passo a passo se baseia a demonstração no [adicionar um Menu a barra de m
     ```csharp
     private void SubItemCallback(object sender, EventArgs e)
     {
-        IVsUIShell uiShell = (IVsUIShell)this.ServiceProvider.GetService(typeof(SVsUIShell));
+        IVsUIShell uiShell = (IVsUIShell)this.ServiceProvider.GetServiceAsync(typeof(SVsUIShell));
         Guid clsid = Guid.Empty;
         int result;
         uiShell.ShowMessageBox(

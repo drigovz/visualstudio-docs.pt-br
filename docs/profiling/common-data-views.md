@@ -9,20 +9,21 @@ ms.assetid: ee5e964c-1222-496d-b825-166443a89d2b
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: b71271213e10c460c0b1744ba079ec034aa9d118
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 39af1975dc3bcb0f5df729579ca1af38fa60160f
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63001045"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74777823"
 ---
 # <a name="common-data-views"></a>Exibições de dados comuns
 Esta seção contém informações de referência sobre as exibições e os relatórios dos arquivos de dados do criador de perfil comuns a todos os métodos de criação de perfil.
 
 ## <a name="in-this-section"></a>Nesta seção
-- [Exibição de Resumo](../profiling/summary-view.md)
+- [Exibição de resumo](../profiling/summary-view.md)
 
  Descreve o modo de exibição e o relatório de Resumo. As colunas de dados dependem do método de criação de perfil.
 

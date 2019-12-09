@@ -1,59 +1,59 @@
 ---
 title: IDebugCustomAttribute::GetAttributeBytes | Microsoft Docs
-ms.date: 11/04/2016
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-sdk
 ms.topic: reference
 f1_keywords:
 - IDebugCustomAttribute::GetAttributeBytes
 helpviewer_keywords:
 - IDebugCustomAttribute::GetAttributeBytes
 ms.assetid: cf34583b-6530-4dcc-89f8-eb27e4e8d594
-author: gregvanl
+caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
-ms.workload:
-- vssdk
 ms.openlocfilehash: b7813e8e3131b04dc7174b5b666950dd68a6060a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 07/12/2019
 ms.locfileid: "62569062"
 ---
 # <a name="idebugcustomattributegetattributebytes"></a>IDebugCustomAttribute::GetAttributeBytes
-Obtém as informações de atributo como um blob de bytes.
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-## <a name="syntax"></a>Sintaxe
-
-```cpp
-HRESULT GetAttributeBytes( 
-   BYTE*  ppBlob,
-   DWORD* pdwLen
-);
-```
-
-```csharp
-int GetAttributeBytes(
-   ref byte[] ppBlob,
-   ref uint   pdwLen
-);
-```
-
-#### <a name="parameters"></a>Parâmetros
- `ppBlob`
-
- [no, out] Uma matriz que é preenchida com os bytes de atributo.
-
- `pdwLen`
-
- [no, out] Especifica o número máximo de bytes a serem retornados no `ppBlob` de matriz e retorna o número de bytes realmente gravados na matriz.
-
-## <a name="return-value"></a>Valor de retorno
- Se for bem-sucedido, retornará S_OK; Caso contrário, retornará um código de erro.
-
-## <a name="remarks"></a>Comentários
- Defina o `ppBlob` atributos de parâmetro para um valor null para retornar o número de bytes disponíveis. Em seguida, aloque uma matriz e passar a matriz em para o `ppBlob` parâmetro.
-
- Os bytes de atributo representam os dados brutos do atributo personalizado.
-
-## <a name="see-also"></a>Consulte também
-- [IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md)
+Obtém as informações de atributo como um blob de bytes.  
+  
+## <a name="syntax"></a>Sintaxe  
+  
+```cpp#  
+HRESULT GetAttributeBytes(   
+   BYTE*  ppBlob,  
+   DWORD* pdwLen  
+);  
+```  
+  
+```csharp  
+int GetAttributeBytes(  
+   ref byte[] ppBlob,   
+   ref uint   pdwLen  
+);  
+```  
+  
+#### <a name="parameters"></a>Parâmetros  
+ `ppBlob`  
+ [no, out] Uma matriz que é preenchida com os bytes de atributo.  
+  
+ `pdwLen`  
+ [no, out] Especifica o número máximo de bytes a serem retornados no `ppBlob` de matriz e retorna o número de bytes realmente gravados na matriz.  
+  
+## <a name="return-value"></a>Valor de retorno  
+ Se for bem-sucedido, retornará S_OK; Caso contrário, retornará um código de erro.  
+  
+## <a name="remarks"></a>Comentários  
+ Defina o `ppBlob` atributos de parâmetro para um valor null para retornar o número de bytes disponíveis. Em seguida, aloque uma matriz e passar a matriz em para o `ppBlob` parâmetro.  
+  
+ Os bytes de atributo representam os dados brutos do atributo personalizado.  
+  
+## <a name="see-also"></a>Consulte também  
+ [IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md)

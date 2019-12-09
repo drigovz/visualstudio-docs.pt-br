@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugStackFrame2::GetDocumentContext
 ms.assetid: 69e81439-1238-4f18-9028-6fd1c1ba5e4a
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f4fecae2fe2398f1814b0948fd6639f234353390
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: b7b89c8114c65e25153beb6c66845ef66014fbf7
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62915979"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352134"
 ---
 # <a name="idebugstackframe2getdocumentcontext"></a>IDebugStackFrame2::GetDocumentContext
 Obtém o contexto do documento para este registro de ativação.
@@ -36,10 +39,9 @@ int GetDocumentContext ( 
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `ppCxt`
-
- [out] Retorna um [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) objeto que representa a posição atual em um documento de origem.
+## <a name="parameters"></a>Parâmetros
+`ppCxt`\
+[out] Retorna um [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) objeto que representa a posição atual em um documento de origem.
 
 ## <a name="return-value"></a>Valor de retorno
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.

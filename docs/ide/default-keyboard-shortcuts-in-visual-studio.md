@@ -8,27 +8,29 @@ helpviewer_keywords:
 - Help [Visual Studio], shortcut keys
 - keyboard shortcuts [Visual Studio], keyboard binding schemes
 - keyboard shortcuts
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e8cea36eeed3e09f1d88ad08f95f816d5206d65
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: cda0e5895f7846a5c2aff6abef816548dd0a74a0
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62962035"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72652493"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Atalhos de teclado padrão no Visual Studio
 
-Para obter mais informações sobre acessibilidade de teclado, confira [Dicas e truques de acessibilidade](../ide/reference/accessibility-tips-and-tricks.md) e [Como: Usar exclusivamente o teclado](../ide/reference/how-to-use-the-keyboard-exclusively.md).
+Você pode acessar uma variedade de [comandos](reference/visual-studio-commands.md) e janelas no Visual Studio escolhendo o atalho de teclado apropriado. Essa página lista os atalhos de comando padrão para o perfil **Geral**, que você pode ter escolhido quando instalou o Visual Studio. Não importa qual o perfil escolhido, é possível [identificar o atalho](identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md) de um comando abrindo a caixa de diálogo **Opções**, expandindo o nó **Ambiente** e escolhendo **Teclado**. Também é possível personalizar seus atalhos atribuindo um atalho diferente a qualquer comando.
 
-Você pode acessar uma variedade de comandos e janelas no Visual Studio escolhendo o atalho de teclado apropriado. Este tópico lista os atalhos padrão para o perfil Desenvolvimento Geral, que você pode ter escolhido quando instalou o Visual Studio. Não importa qual o perfil escolhido, é possível identificar o atalho de um comando abrindo a caixa de diálogo **Opções**, expandindo o nó **Ambiente** e escolhendo **Teclado**. Também é possível personalizar seus atalhos atribuindo um atalho diferente a qualquer comando.
+Para obter uma lista dos atalhos de teclado comuns e outras informações sobre produtividade, confira:
 
-Para obter uma lista dos atalhos de teclado comuns e outras informações sobre produtividade, confira [Atalhos de teclado padrão para comandos usados com frequência no Visual Studio](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md), [Dicas de teclado](../ide/tips-and-tricks-for-visual-studio.md) e [Dicas de produtividade](../ide/productivity-tips-for-visual-studio.md).
+- [Atalhos de teclado para comandos usados com frequência](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md)
+- [Dicas de teclado](../ide/productivity-shortcuts.md)
+- [Dicas de produtividade](../ide/productivity-features.md).
 
-As seções na tabela a seguir incluem comandos que são globais e, desse modo, você pode acessar de qualquer lugar no Visual Studio usando os atalhos de teclado:
+Para obter mais informações sobre acessibilidade no Visual Studio, consulte [dicas e truques de acessibilidade](../ide/reference/accessibility-tips-and-tricks.md) e [como: usar o teclado exclusivamente](../ide/reference/how-to-use-the-keyboard-exclusively.md).
 
 |||||
 |-|-|-|-|
@@ -36,11 +38,13 @@ As seções na tabela a seguir incluem comandos que são globais e, desse modo, 
 |[Arquitetura](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_architecture)|[Menus de Contexto do Editor](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_editorContext)|[Menus de Contexto de Projeto e Solução](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_projectContext)|[Gerenciador de Testes](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_testexplorerGLOBAL)|
 |[Build](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_build)|[Arquivo](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_file)|[Refatoração](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_refactor)|[Ferramentas](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_tools)|
 |[Menus de Contexto do Modo de Exibição de Classe](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_classview)|[Ajuda](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_help)|[Gerenciador de Soluções](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_solutionexplorerGLOBAL)|[Exibir](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_view)|
-|[Depurar](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_debug)|[Teste de carga](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_loadtest)|[Equipe](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_team)|[Janela](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_window)|
+|[Depuração](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_debug)|[Teste de Carga](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_loadtest)|[Equipe](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_team)|[Janela](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_window)|
 |[Menus de Contexto do Depurador](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_debugger)|[Outros Menus de Contexto](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_otherContext)|[Menus de Contexto do Team Foundation](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_TFcontext)|[Azure](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_windowsazure)|
 |[Hub de Diagnóstico](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_diagnostics)||||
 
-## <a name="bkmk_global"></a> Global
+## <a name="global-shortcuts"></a>Atalhos globais
+
+Esses atalhos de teclado são *globais*, o que significa que você pode usá-los quando qualquer janela do Visual Studio estiver em foco.
 
 ### <a name="bkmk_analyze"></a> Analisar
 
@@ -59,6 +63,7 @@ As seções na tabela a seguir incluem comandos que são globais e, desse modo, 
 
 |Comandos|Atalhos de teclado|
 |--------------| - |
+|Build.BuildSelection|**Ctrl+B** (Visual Studio 2019)|
 |Build.BuildSolution|**Ctrl+Shift+B**|
 |Build.Cancel|**Ctrl+Break**|
 |Build.Compile|**Ctrl+F7**|
@@ -77,7 +82,6 @@ As seções na tabela a seguir incluem comandos que são globais e, desse modo, 
 |Debug.ApplyCodeChanges|**Alt+F10**|
 |Debug.Autos|**Ctrl+Alt+V, A**|
 |Debug.BreakAll|**Ctrl+Alt+Break**|
-|Debug.BreakatFunction|**Ctrl+B**|
 |Debug.Breakpoints|**Ctrl+Alt+B**|
 |Debug.CallStack|**Ctrl+Alt+C**|
 |Debug.DeleteAllBreakpoints|**Ctrl+Shift+F9**|
@@ -86,6 +90,7 @@ As seções na tabela a seguir incluem comandos que são globais e, desse modo, 
 |Debug.DOMExplorer|**Ctrl+Alt+V, D**|
 |Debug.EnableBreakpoint|**Ctrl+F9**|
 |Debug.Exceptions|**Ctrl+Alt+E**|
+|Debug.FunctionBreakpoint|**Ctrl+K, B** (Visual Studio 2019)<br />**Ctrl**+**B** (Visual Studio 2017)|
 |Debug.GoToPreviousCallorIntelliTraceEvent|**Ctrl+Shift+F11**|
 |Debug.Graphics.StartDiagnostics|**Alt+F5**|
 |Debug.Immediate|**Ctrl+Alt+I**|
@@ -109,7 +114,7 @@ As seções na tabela a seguir incluem comandos que são globais e, desse modo, 
 |Debug.ParallelWatch3|**Ctrl+Shift+D, 3**|
 |Debug.ParallelWatch4|**Ctrl+Shift+D, 4**|
 |Debug.Processes|**Ctrl+Alt+Z**|
-|Debug.QuickWatch|**Shift+F9**<br /><br /> ou<br /><br /> **Ctrl+Alt+Q**|
+|Debug.QuickWatch|**Shift+F9** ou **Ctrl+Alt+Q**|
 |Debug.RefreshWindowsapp|**Ctrl+Shift+R**|
 |Debug.Registers|**Ctrl+Alt+G**|
 |Debug.Restart|**Ctrl+Shift+F5**|
@@ -125,7 +130,8 @@ As seções na tabela a seguir incluem comandos que são globais e, desse modo, 
 |Debug.StepIntoSpecific|**Shift+Alt+F11**|
 |Debug.StepOut|**Shift+F11**|
 |Debug.StepOutCurrentProcess|**Ctrl+Shift+Alt+F11**|
-|Debug.StepOver|**F10**|
+|Debug.StepOver|**F10** (ao depurar: executa uma etapa sobre a ação)|
+|Debug.StepOver|**F10** (quando não estiver Depurando: inicia a depuração e pára na primeira linha do código do usuário)|
 |Debug.StepOverCurrentProcess|**Ctrl+Alt+F10**|
 |Debug.StopDebugging|**Shift+F5**|
 |Debug.StopPerformanceAnalysis|**Shift+Alt+F2**|
@@ -160,6 +166,7 @@ As seções na tabela a seguir incluem comandos que são globais e, desse modo, 
 |Edit.Cut|**Ctrl+X**<br /><br /> ou<br /><br /> **Shift+Delete**|
 |Edit.CycleClipboardRing|**Ctrl+Shift+V**<br /><br /> ou<br /><br /> **Ctrl+Shift+Ins**|
 |Edit.Delete|**Excluir**|
+|Edit.Duplicate|**Ctrl+D**|
 |Edit.Find|**Ctrl+F**|
 |Edit.FindAllReferences|**Shift+F12**|
 |Edit.FindinFiles|**Ctrl+Shift+F**|
@@ -169,11 +176,12 @@ As seções na tabela a seguir incluem comandos que são globais e, desse modo, 
 |Edit.FindPreviousSelected|**Ctrl+Shift+F3**|
 |Edit.GenerateMethod|**Ctrl+K, Ctrl+M**|
 |Edit.GoTo|**Ctrl+G**|
+|Edit.GoToAll|**Ctrl+,** ou **Ctrl+T**|
 |Edit.GoToDeclaration|**Ctrl+F12**|
 |Edit.GoToDefinition|**F12**|
-|Edit.GoToFindCombo|**Ctrl+D**|
-|Edit.GoToNextLocation|**F8**|
-|Edit.GoToPrevLocation|**Shift+F8**|
+|Edit.GoToMember|**Ctrl+1, Ctrl+M** ou **Ctrl+1, M** ou **Alt+\\**|
+|Edit.GoToNextLocation|**F8** (próximo erro na Lista de Erros ou na janela Saída)|
+|Edit.GoToPrevLocation|**Shift+F8** (erro anterior na Lista de Erros ou na janela Saída)|
 |Edit.InsertSnippet|**Ctrl+K, Ctrl+X**|
 |Edit.MoveControlDown|**Ctrl+Seta para baixo**|
 |Edit.MoveControlDownGrid|**Seta para Baixo**|
@@ -183,10 +191,9 @@ As seções na tabela a seguir incluem comandos que são globais e, desse modo, 
 |Edit.MoveControlRightGrid|**Seta para a direita**|
 |Edit.MoveControlUp|**Ctrl+seta para cima**|
 |Edit.MoveControlUpGrid|**Seta para Cima**|
-|Edit.NavigateTo|**Ctrl+,**|
 |Edit.NextBookmark|**Ctrl+K, Ctrl+N**|
 |Edit.NextBookmarkInFolder|**Ctrl+Shift+K, Ctrl+Shift+N**|
-|Edit.OpenFile|**Ctrl+Shift+G**|
+|Edit.OpenFile|**Ctrl+Shift+G** (abre o nome do arquivo sob o cursor)|
 |Edit.Paste|**Ctrl+V**<br /><br /> ou<br /><br /> **Shift+Ins**|
 |Edit.PreviousBookmark|**Ctrl+K, Ctrl+P**|
 |Edit.PreviousBookmarkInFolder|**Ctrl+Shift+K, Ctrl+Shift+P**|
@@ -293,9 +300,9 @@ As seções na tabela a seguir incluem comandos que são globais e, desse modo, 
 
 |Comandos|Atalhos de teclado|
 |--------------| - |
-|SolutionExplorer.OpenFilesFilter|**Ctrl+[**, **O** (letra "O")<br /><br /> ou<br /><br /> **Ctrl+[**, **Ctrl+O** (letra "O")|
-|SolutionExplorer.PendingChangesFilter|**Ctrl+[**, **P**<br /><br /> ou<br /><br /> **Ctrl+[**, **Ctrl+P**|
-|SolutionExplorer.SyncWithActiveDocument|**Ctrl+[**, **S**<br /><br /> ou<br /><br /> **Ctrl+[**, **Ctrl+S**|
+|SolutionExplorer.OpenFilesFilter|**Ctrl+[** , **O** (letra "O")<br /><br /> ou<br /><br /> **Ctrl+[** , **Ctrl+O** (letra "O")|
+|SolutionExplorer.PendingChangesFilter|**Ctrl+[** , **P**<br /><br /> ou<br /><br /> **Ctrl+[** , **Ctrl+P**|
+|SolutionExplorer.SyncWithActiveDocument|**Ctrl+[** , **S**<br /><br /> ou<br /><br /> **Ctrl+[** , **Ctrl+S**|
 
 ### <a name="bkmk_team"></a> Equipe
 
@@ -334,9 +341,13 @@ As seções na tabela a seguir incluem comandos que são globais e, desse modo, 
 |--------------| - |
 |TestExplorer.DebugAllTests|**Ctrl+R, Ctrl+A**|
 |TestExplorer.DebugAllTestsInContext|**Ctrl+R, Ctrl+T**|
+|TestExplorer.DebugLastRun|**CTRL + R, D**|
 |TestExplorer.RepeatLastRun|**Ctrl+R, L**|
 |TestExplorer.RunAllTests|**Ctrl+R, A**|
 |TestExplorer.RunAllTestsInContext|**Ctrl+R, T**|
+|TestExplorer.ShowTestExplorer|**CTRL + E, T**|
+|LiveUnitTesting.OpenTab|**CTRL + E, L**|
+|Test. CodeCoverageResults|**Ctrl+E, C**|
 
 ### <a name="bkmk_tools"></a> Ferramentas
 
@@ -345,7 +356,6 @@ As seções na tabela a seguir incluem comandos que são globais e, desse modo, 
 |Tools.AttachtoProcess|**Ctrl+Alt+P**|
 |Tools.CodeSnippetsManager|**Ctrl+K, Ctrl+B**|
 |Tools.ForceGC|**Ctrl+Shift+Alt+F12, Ctrl+Shift+Alt+F12**|
-|Tools.GoToCommandLine|**Ctrl+/**|
 
 ### <a name="bkmk_view"></a> Modo de Exibição
 
@@ -353,7 +363,7 @@ As seções na tabela a seguir incluem comandos que são globais e, desse modo, 
 |--------------| - |
 |View.AllWindows|**Shift+Alt+M**|
 |View.ArchitectureExplorer|**Ctrl+\\, Ctrl+R**|
-|View.Backward|**Alt+Seta para a esquerda**|
+|View.Backward|**Alt+Seta para a esquerda** (funciona de maneira diferente do View.NavigateBackward no editor de texto)|
 |View.BookmarkWindow|**Ctrl+K, Ctrl+W**|
 |View.BrowseNext|**Ctrl+Shift+1**|
 |View.BrowsePrevious|**Ctrl+Shift+2**|
@@ -368,7 +378,7 @@ As seções na tabela a seguir incluem comandos que são globais e, desse modo, 
 |View.ErrorList|**Ctrl+\\, E**<br /><br /> ou<br /><br /> **Ctrl+\\, Ctrl+E**|
 |View.F#Interactive|**Ctrl+Alt+F**|
 |View.FindSymbolResults|**Ctrl+Alt+F12**|
-|View.Forward|**Alt+Seta para a direita**|
+|View.Forward|**Alt+Seta para a direita** (funciona de maneira diferente do View.NavigateForward no editor de texto)|
 |View.ForwardBrowseContext|**Ctrl+Shift+7**|
 |View.FullScreen|**Shift+Alt+Enter**|
 |View.NavigateBackward|**Ctrl+-**|
@@ -378,7 +388,7 @@ As seções na tabela a seguir incluem comandos que são globais e, desse modo, 
 |View.ObjectBrowser|**Ctrl+Alt+J**|
 |View.ObjectBrowserGoToSearchCombo|**Ctrl+K, Ctrl+R**|
 |View.Output|**Ctrl+Alt+O** (letra "O")|
-|View.PopBrowseContex|**Ctrl+Shift+8**|
+|View.PopBrowseContext|**Ctrl+Shift+8** (somente C++)|
 |View.PropertiesWindow|**F4**|
 |View.PropertyPages|**Shift+F4**|
 |View.ResourceView|**Ctrl+Shift+E**|
@@ -395,6 +405,7 @@ As seções na tabela a seguir incluem comandos que são globais e, desse modo, 
 |View.WebBrowser|**Ctrl+Alt+R**|
 |View.ZoomIn|**Ctrl+Shift+.**|
 |View.ZoomOut|**Ctrl+Shift+,**|
+|TestExplorer.ShowTestExplorer|**CTRL + E, T**|
 
 ### <a name="bkmk_window"></a> Janela
 
@@ -778,12 +789,12 @@ As seções na tabela a seguir incluem comandos que são globais e, desse modo, 
 | Edit.CharRight | **Seta para a direita** |
 | Edit.CharRightExtend | **Shift+Seta para a direita** |
 | Edit.CharRightExtendColumn | **Shift+Alt+Seta para a direita** |
-| Edit.CharTranspose | **Ctrl+T** |
 | Edit.ClearBookmarks | **Ctrl+K, Ctrl+L** |
 | Edit.CollapseAllOutlining | **Ctrl+M, Ctrl+A** |
 | Edit.CollapseCurrentRegion | **Ctrl+M, Ctrl+S** |
 | Edit.CollapseTag | **Ctrl+M, Ctrl+T** |
 | Edit.CollapseToDefinitions | **Ctrl+M, Ctrl+O** (letra "O") |
+| Edit.ContractSelection | **Shift+Alt+-** |
 | Edit.CommentSelection | **Ctrl+K, Ctrl+C** |
 | Edit.CompleteWord | **Ctrl+Espaço**<br /><br /> ou<br /><br /> **Alt+Seta para a direita** |
 | Edit.CopyParameterTip | **Ctrl+Shift+Alt+C** |
@@ -796,6 +807,8 @@ As seções na tabela a seguir incluem comandos que são globais e, desse modo, 
 | Edit.DocumentStartExtend | **Ctrl+Shift+Home** |
 | Edit.ExpandAllOutlining | **Ctrl+M, Ctrl+X** |
 | Edit.ExpandCurrentRegion | **Ctrl+M, Ctrl+E** |
+| Edit.ExpandSelection | **Shift+Alt+=** |
+| Edit.ExpandSelectiontoContainingBlock | **Shift+Alt+]** |
 | Edit.FormatDocument | **Ctrl+K, Ctrl+D** |
 | Edit.FormatSelection | **Ctrl+K, Ctrl+F** |
 | Edit.GotoAll | **Ctrl+T**<br /><br /> ou<br /><br /> **Ctrl+,** |
@@ -803,7 +816,7 @@ As seções na tabela a seguir incluem comandos que são globais e, desse modo, 
 | Edit.GotoBraceExtend | **Ctrl+Shift+]** |
 | Edit.GotoRecent | **Ctrl+T,R** |
 | Edit.GotoNextIssueinFile | **Alt+PgDn** |
-| Edit.GotoPreviousIssueinFile  **Alt+PgUp** |
+| Edit.GotoPreviousIssueinFile | **Alt+PgUp** |
 | Edit.HideSelection | **Ctrl+M, Ctrl+H** |
 | Edit.IncreaseFilterLevel | **Alt+.** |
 | Edit.IncrementalSearch | **Ctrl+I** |
@@ -1149,5 +1162,4 @@ As seções na tabela a seguir incluem comandos que são globais e, desse modo, 
 
 ## <a name="see-also"></a>Consulte também
 
-- [Editor de imagens para ícones](/cpp/windows/image-editor-for-icons)
-- [Usando o IntelliSense](../ide/using-intellisense.md)
+- [Comandos do Visual Studio](reference/visual-studio-commands.md)

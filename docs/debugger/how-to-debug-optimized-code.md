@@ -1,5 +1,5 @@
 ---
-title: 'Como: Depurar o código otimizado | Microsoft Docs'
+title: 'Como: depurar código otimizado | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -21,22 +21,22 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b498bdb491e3a15dddf005d43435d84b837fcd0
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 590925a894f1bf9bfe70d9dd1bf6142fcb6a2e34
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63387752"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72430671"
 ---
-# <a name="how-to-debug-optimized-code"></a>Como: Depurar o código otimizado
+# <a name="how-to-debug-optimized-code"></a>Como depurar o código otimizado
 
 > [!NOTE]
 > As caixas de diálogo e os comandos de menu que você vê podem ser diferentes dos descritos na Ajuda, dependendo da sua edição ou das configurações ativas. Para alterar as configurações, escolha Importar e Exportar Configurações no menu Ferramentas. Para obter mais informações, confira [Redefinir as configurações](../ide/environment-settings.md#reset-settings).
 
 > [!NOTE]
-> O [/Zo (aprimorar otimizado de depuração)](/cpp/build/reference/zo-enhance-optimized-debugging)opção de compilador (apresentada na atualização 3 do Visual Studio) gera informações de depuração mais avançadas para código otimizado (projetos que não são criados com o **/Od** opção de compilador. Ver [/O opções (otimizar código)](/cpp/build/reference/o-options-optimize-code)). Isso inclui suporte aprimorado para as funções embutidas e variáveis locais de depuração.
+> A opção de compilador [/zo (aprimorar a depuração otimizada)](/cpp/build/reference/zo-enhance-optimized-debugging)(introduzida na atualização 3 do Visual Studio) gera informações de depuração mais avançadas para código otimizado (projetos que não são criados com a opção de compilador **/OD** . Veja [opções/o (otimizar código)](/cpp/build/reference/o-options-optimize-code)). Isso inclui suporte aprimorado para depuração de variáveis locais e funções embutidas.
 >
-> [Editar e continuar](../debugger/edit-and-continue-visual-csharp.md) é desabilitada quando o **/Zo** ocompiler opção é usada.
+> [Editar e continuar](../debugger/edit-and-continue-visual-csharp.md) é desabilitado quando a opção **/zo** ocompiler é usada.
 
  Quando o compilador otimiza o código, ele reposiciona e reclassifica instruções. Isso resulta em um código compilado mais eficiente. Devido a esse rearranjo, o depurador nem sempre pode identificar o código-fonte que corresponde a um conjunto de instruções.
 
@@ -52,7 +52,7 @@ ms.locfileid: "63387752"
 
   As variáveis globais e estáticas são sempre mostradas corretamente. Da mesma forma que o layout da estrutura. Se você tiver um ponteiro para uma estrutura e o valor do ponteiro estiver correto, cada variável de membro da estrutura mostrará o valor correto.
 
-  Devido a essas restrições, você deverá depurar usando uma versão não otimizada do programa se isso for possível. Por padrão, a otimização está desativada na configuração de Depuração de um programa do Visual C++ e ativada na configuração de Versão.
+  Devido a essas restrições, você deverá depurar usando uma versão não otimizada do programa se isso for possível. Por padrão, a otimização é desativada na configuração de depuração C++ de um programa e ativada na configuração da versão.
 
   No entanto, um bug pode aparecer somente em uma versão otimizada de um programa. Nesse caso, você deverá depurar o código otimizado.
 
@@ -66,20 +66,20 @@ ms.locfileid: "63387752"
 
 4. Na caixa de diálogo **Páginas de Propriedades**, verifique se `Debug` está selecionado na lista suspensa **Configuração**.
 
-5. Na exibição da pasta à esquerda, selecione a pasta **C/C++**.
+5. Na exibição da pasta à esquerda, selecione a pasta **C/C++** .
 
-6. Na pasta **C++**, selecione `Optimization`.
+6. Na pasta **C++** , selecione `Optimization`.
 
 7. Na lista de propriedades à direita, localize `Optimization`. A configuração ao lado provavelmente informa `Disabled (`[/Od](/cpp/build/reference/od-disable-debug)`)`. Escolha uma dessas opções (`Minimum Size``(`[O1](/cpp/build/reference/o1-o2-minimize-size-maximize-speed)`)`, `Maximum Speed``(`[/O2](/cpp/build/reference/o1-o2-minimize-size-maximize-speed)`)`, `Full Optimization``(`[/Ox](/cpp/build/reference/ox-full-optimization)`)` ou `Custom`).
 
 8. Se você escolher a opção `Custom` para `Optimization`, agora poderá definir opções para qualquer uma das outras propriedades mostradas na lista de propriedades.
 
-9. Selecione as propriedades de configuração, C/C++, nó de linha de comando da página de propriedades do projeto e adicione `(` [/Zo](/cpp/build/reference/zo-enhance-optimized-debugging) `)` para o **opções adicionais** caixa de texto.
+9. Selecione as propriedades de configuração, CC++/, nó de linha de comando da página de propriedades do projeto e adicione `(`[/zo](/cpp/build/reference/zo-enhance-optimized-debugging)`)` à caixa de texto **Opções adicionais** .
 
     > [!WARNING]
-    > `/Zo` requer o Visual Studio 2013 atualização 3 ou posterior.
+    > `/Zo` requer Visual Studio 2013 atualização 3 ou uma versão posterior.
     >
-    >  Adicionando `/Zo` desabilitará [editar e continuar](../debugger/edit-and-continue-visual-csharp.md).
+    >  Adicionar `/Zo` desabilitará [Editar e continuar](../debugger/edit-and-continue-visual-csharp.md).
 
    Quando você depura o código otimizado, use a janela **Desmontagem** para ver quais instruções de fato estão criadas e executadas. Quando você define pontos de interrupção, precisa saber que o ponto de interrupção pode mover junto com uma instrução. Por exemplo, considere o seguinte código:
 

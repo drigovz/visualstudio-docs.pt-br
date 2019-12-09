@@ -1,5 +1,5 @@
 ---
-title: IScriptNode::GetParent | Microsoft Docs
+title: 'IScriptNode:: GetParent | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1c990b5ba5c3d03d319e0eeced282c92cfbb5281
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 58ef5f88f4404d57a7edad3590fba1d2614faec6
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62786850"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572563"
 ---
 # <a name="iscriptnodegetparent"></a>IScriptNode::GetParent
-Retorna o `IScriptNode` objeto que é o pai de um objeto.  
+Retorna o objeto `IScriptNode` que é o pai de um objeto.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -37,13 +37,13 @@ HRESULT GetParent(
   
 #### <a name="parameters"></a>Parâmetros  
  `ppsnParent`  
- [out] O endereço de uma variável que recebe um ponteiro para o `IScriptNode` interface da instância pai.  
+ fora O endereço de uma variável que recebe um ponteiro para a interface de `IScriptNode` da instância pai.  
   
- Se a classe implementa `IScriptEntry` ou `IScriptScriptlet`, um `IScriptNode` objeto é retornado.  
+ Se a classe implementar `IScriptEntry` ou `IScriptScriptlet`, um objeto `IScriptNode` será retornado.  
   
- Se a classe implementa `IScriptNode` (que representa uma página da Web), NULL será retornado.  
+ Se a classe implementa `IScriptNode` (representando uma página da Web), NULL é retornado.  
   
-## <a name="return-value"></a>Valor de retorno  
+## <a name="return-value"></a>Valor retornado  
  Um `HRESULT`. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.  
   
 |Valor|Descrição|  

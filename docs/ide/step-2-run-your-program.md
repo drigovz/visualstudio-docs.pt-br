@@ -1,61 +1,69 @@
 ---
-title: 'Etapa 2: Executar o programa'
-ms.date: 11/04/2016
-ms.topic: conceptual
+title: 'Etapa 2: executar o aplicativo visualizador de imagens'
+ms.date: 09/06/2019
 ms.assetid: 9a8fe90e-c97b-4e98-b6c8-0c6b3962c49d
+ms.topic: tutorial
+ms.prod: visual-studio-windows
+ms.technology: vs-ide-general
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c205a3c8e88603153ec4bfabaa2545d8ae8c62d3
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: f31153dab172451681b5e1eb8292f505141c2ff9
+ms.sourcegitcommit: 6ae0a289f1654dec63b412bfa22035511a2ef5ad
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430790"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71950723"
 ---
-# <a name="step-2-run-your-program"></a>Etapa 2: Executar o programa
-Ao criar uma nova solução, você na verdade cria um programa que é executado. Ele não faz muita coisa — apenas exibe uma janela vazia que mostra **Form1** na barra de título. Mas se ela funciona, você está prestes a descobrir.
+# <a name="step-2-run-your-picture-viewer-app"></a>Etapa 2: executar o aplicativo visualizador de imagens
 
- ![link para vídeo](../data-tools/media/playvideo.gif) Para obter uma versão em vídeo deste tópico, confira [Tutorial 1: Criar um visualizador de imagens em Visual Basic – Vídeo 1](http://go.microsoft.com/fwlink/?LinkId=205209) ou [Tutorial 1: Criar um visualizador de imagens em C# – Vídeo 1](http://go.microsoft.com/fwlink/?LinkId=205199). Esses vídeos usam uma versão anterior do Visual Studio, portanto, existem pequenas diferenças em alguns comandos de menu e em outros elementos da interface do usuário. No entanto, os conceitos e procedimentos funcionam de maneiras semelhantes na versão atual do Visual Studio.
+Ao criar um projeto de aplicativo Windows Forms, você realmente cria um programa que executa o. Neste tutorial, seu aplicativo visualizador de imagens ainda não faz muito&mdash;embora seja. Por enquanto, ele exibe uma janela vazia que mostra o **Form1** na barra de título.
 
-## <a name="to-run-your-program"></a>Para executar o programa
+Veja como executar seu aplicativo. 
 
-1. Use um dos seguintes métodos para executar seu programa.
+1. Escolha um dos seguintes métodos:
 
     - Pressione a tecla **F5**.
 
     - Na barra de menus, escolha **Depurar** > **Iniciar Depuração**.
 
-    - Na barra de ferramentas, clique no botão **Iniciar Depuração**, que aparece da seguinte maneira.
+    - Na barra de ferramentas, escolha o botão **Iniciar Depuração** , que aparece da seguinte maneira:
 
-         ![Botão de barra de ferramentas Iniciar Depuração](../ide/media/express_icondebug.png)
-Botão de barra de ferramentas **Iniciar Depuração**
+      ![Botão de barra de ferramentas Iniciar Depuração](../ide/media/express_icondebug.png)<br>
+      *Botão de barra de ferramentas* ***Iniciar Depuração***
 
-2. O Visual Studio executa o seu programa e uma janela chamada **Form1** aparece. O diagrama a seguir mostra o programa que você acabou de criar. O programa está em execução e logo você o fará adições a ele.
+1. O Visual Studio executa seu aplicativo e uma janela chamada **Form1** é exibida. A captura de tela a seguir mostra o aplicativo que você acabou de criar. O aplicativo está em execução e, em breve, você adicionará a ele.
 
-     ![Programa do aplicativo Windows Form em execução](../ide/media/express_firstrun.png)
-Programa do aplicativo **Windows Forms** em execução
+     ![Windows Forms aplicativo em execução](../ide/media/express_firstrun.png)<br>
+***Windows Forms aplicativo***, *em execução*
 
-3. Volte para o ambiente de desenvolvimento integrado do Visual Studio (IDE) e examine a nova barra de ferramentas. Outros botões aparecem na barra de ferramentas quando você executa um programa. Esses botões permitem fazer coisas como parar e iniciar seu programa, e ajudam você a rastrear erros (bugs) que ele pode ter. Para este exemplo, estamos simplesmente usando-o para iniciar e parar o programa.
+1. Volte para o IDE (ambiente de desenvolvimento integrado) do Visual Studio e, em seguida, examine a nova barra de ferramentas. Botões adicionais aparecem na barra de ferramentas quando você executa um aplicativo. Esses botões permitem que você faça coisas como parar e iniciar seu aplicativo e ajudá-lo a rastrear quaisquer erros (bugs) que possa ter. Para este exemplo, estamos usando-o para iniciar e parar o aplicativo.
 
-     ![Barra de ferramentas Depuração](../ide/media/express_debugtoolbar.png)
-Barra de ferramentas **Depuração**
+     ![Barra de ferramentas de depuração](../ide/media/express_debugtoolbar.png)<br>
+*Barra de ferramentas* de depuração
 
-4. Use um dos seguintes métodos para pausar seu programa.
+1. Use um dos seguintes métodos para interromper seu aplicativo:
 
     - Na barra de ferramentas, clique no botão **Parar Depuração**.
 
     - Na barra de menus, escolha **Depurar** > **Parar Depuração**.
 
+    - Use o teclado e pressione **Shift**+**F5**.
+
     - Clique no botão **X** no canto superior da janela **Form1**.
 
     > [!NOTE]
-    > Ao executar o programa dentro do IDE, isso é chamado de depuração porque normalmente você faz isso para localizar e corrigir bugs (erros) no programa. Embora esse programa seja pequeno e ainda não faça realmente nada, ainda é um programa real. Você segue o mesmo procedimento para executar e depurar outros programas. Para saber mais sobre depuração, confira [Introdução ao depurador](../debugger/debugger-feature-tour.md).
+    > Quando você executa seu aplicativo de dentro do IDE, ele é chamado de depuração porque você normalmente faz isso para localizar e corrigir bugs (erros) no aplicativo. Embora esse aplicativo seja pequeno e ainda não faça muito, ele ainda é um programa real. Você segue o mesmo procedimento para executar e depurar outros programas. Para saber mais sobre depuração, confira [Introdução ao depurador](../debugger/debugger-feature-tour.md).
 
-## <a name="to-continue-or-review"></a>Para continuar ou revisar
+## <a name="next-steps"></a>Próximas etapas
 
-- Para ir para a próxima etapa do tutorial, confira [Etapa 3: Definir as propriedades do formulário](../ide/step-3-set-your-form-properties.md).
+* Para ir para a próxima etapa do tutorial, consulte **[etapa 3: definir suas propriedades de formulário](../ide/step-3-set-your-form-properties.md)** .
 
-- Para retornar à etapa anterior do tutorial, confira [Etapa 1: Criar um projeto de aplicativo do Windows Forms](../ide/step-1-create-a-windows-forms-application-project.md).
+* Para retornar à etapa anterior do tutorial, consulte [etapa 1: criar um projeto de aplicativo Windows Forms](../ide/step-1-create-a-windows-forms-application-project.md).
+
+## <a name="see-also"></a>Consulte também
+
+* [Tutorial 2: criar um teste de matemática cronometrado](tutorial-2-create-a-timed-math-quiz.md)
+* [Tutorial 3: criar um jogo de correspondência](tutorial-3-create-a-matching-game.md)

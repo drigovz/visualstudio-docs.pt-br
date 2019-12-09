@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentHelper::BringDocumentContextToTop | Microsoft Docs
+title: 'IDebugDocumentHelper:: BringDocumentContextToTop | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 41452331d03fdca53c8c7048a24adfd349c128ad
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 63b55844c260f693ab5d89ecd564ed6b6ecd32d6
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62783082"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577013"
 ---
 # <a name="idebugdocumenthelperbringdocumentcontexttotop"></a>IDebugDocumentHelper::BringDocumentContextToTop
-Traz um contexto deste documento para a parte superior da interface de usuário do depurador.  
+Coloca um contexto deste documento na parte superior da interface do usuário do depurador.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -37,9 +37,9 @@ HRESULT BringDocumentContextToTop(
   
 #### <a name="parameters"></a>Parâmetros  
  `pddc`  
- Contexto de documento para trazer para a parte superior da interface de usuário do depurador.  
+ Contexto do documento para trazer para a parte superior na interface do usuário do depurador.  
   
-## <a name="return-value"></a>Valor de retorno  
+## <a name="return-value"></a>Valor retornado  
  O método retorna um `HRESULT`. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.  
   
 |Valor|Descrição|  
@@ -47,7 +47,7 @@ HRESULT BringDocumentContextToTop(
 |`S_OK`|O método foi bem-sucedido.|  
   
 ## <a name="remarks"></a>Comentários  
- Esse método traz um contexto deste documento para a parte superior da interface de usuário do depurador.  
+ Esse método traz um contexto deste documento para a parte superior da interface do usuário do depurador.  
   
 ## <a name="see-also"></a>Consulte também  
  [IDebugDocumentHelper Interface](../../winscript/reference/idebugdocumenthelper-interface.md)

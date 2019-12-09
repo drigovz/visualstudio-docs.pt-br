@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3bf5a994d173a11a8515e166c3b0bc3044bdc587
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 7ac1a2812cb86108d32d769595affd53fc402ff4
+ms.sourcegitcommit: 57bc1c3887838d707c13feff72a677b3bad3be4b
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63402889"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72777718"
 ---
 # <a name="visual-studio-emulator-for-android"></a>Emulador do Visual Studio para Android
 
@@ -68,7 +68,7 @@ O Emulador do Visual Studio para Android é um aplicativo de área de trabalho q
 
   Para compreender os recursos de conexão de rede do emulador, pense nele como sendo semelhante a uma conexão Wi-Fi de seu telefone Android na mesma rede. Se um aplicativo em execução em seu telefone puder acessar um recurso de rede pela sua conexão Wi-Fi, um aplicativo em execução no emulador também poderá acessar o mesmo recurso de rede.
 
-  Para saber mais sobre requisitos de rede, confira [Requisitos de sistema para o Emulador do Visual Studio para Android](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md)
+  Para saber mais sobre requisitos de rede, confira [Requisitos do sistema para o Emulador do Visual Studio para Android](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md).
 
   Para saber mais sobre como solucionar problemas de rede, consulte [Solução de problemas do Emulador do Visual Studio para Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md).
 
@@ -77,7 +77,7 @@ O Emulador do Visual Studio para Android é um aplicativo de área de trabalho q
 
  No Visual Studio 2015, você pode instalar, desinstalar e iniciar os perfis de dispositivo usando o Gerenciador de Emulador. Acesse o Gerenciador de Emulador escolhendo **Ferramentas**, **Emulador do Visual Studio para Android**.
 
- ![O Gerenciador do Emulador do Visual Studio para Android](../cross-platform/media/android_emu_manager.png "Android_Emu_Manager")
+ ![O emulador do Visual Studio para o Gerenciador do Android](../cross-platform/media/android_emu_manager.png "Android_Emu_Manager")
 
  Por padrão, há quatro perfis de dispositivo previamente instalados (configurações KitKat e Lollipop para telefone 5" e tablets de 7"), conforme indicado pelo texto em branco e ícones. Outros perfis na lista aparecerão esmaecidos até que você escolha o botão **Instalar Perfil** e a instalação seja concluída. Você pode filtrar a lista por Nível de API e clicar na seta de detalhes no lado inferior direito de um perfil para exibir todos os detalhes da configuração.
 
@@ -100,7 +100,7 @@ O Emulador do Visual Studio para Android é um aplicativo de área de trabalho q
 ## <a name="Support"></a> Recursos de suporte
  Se o computador host atender aos requisitos do sistema e você encontrar um problema não abordado neste guia de solução de problemas:
 
-- Faça uma pergunta no StackOverflow usando o [emulador do android](http://stackoverflow.com/questions/tagged/android-emulator) e a marca visual-studio.
+- Faça uma pergunta no StackOverflow usando o [emulador do android](https://stackoverflow.com/questions/tagged/android-emulator) e a marca visual-studio.
 
 - Relate um problema usando a ferramenta Enviar um Smiley no Visual Studio ou no Gerenciador de emulador.
 

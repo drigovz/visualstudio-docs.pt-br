@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 98db3475c7d83427eb516f696731a738e34bd7a1
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 7d754cc2bb7931cdcbdb42abeddd554390ba320c
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63399298"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72737915"
 ---
 # <a name="error-aspnet-not-installed"></a>Erro: ASP.NET não instalado
 Esse erro ocorre quando o [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] não está instalado corretamente no computador que você está tentando depurar. Isso pode significar que o [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] nunca foi instalado ou que o [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] foi instalado primeiro e o IIS foi instalado posteriormente.
@@ -37,7 +37,7 @@ Esse erro ocorre quando o [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_
    \WINDOWS\Microsoft.NET\Framework\version\aspnet_regiis -i
    ```
 
-    em que *versão* representa o número de versão do .NET Framework instalado no seu computador, por exemplo, v1.0.370. Você pode determinar a versão do framework examinando o `\WINDOWS\Microsoft.NET\Framework` directory.
+    em que *versão* representa o número de versão do .NET Framework instalado no computador, como v 1.0.370. Você pode determinar a versão do Framework examinando o diretório `\WINDOWS\Microsoft.NET\Framework`.
 
    > [!NOTE]
    > Com o Windows Server 2003, você pode instalar o [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] usando **Adicionar ou Remover Programas** no Painel de Controle.

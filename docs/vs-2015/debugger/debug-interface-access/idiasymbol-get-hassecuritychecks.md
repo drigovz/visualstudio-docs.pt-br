@@ -13,17 +13,17 @@ caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5e1096e137d3b8e634d404dd5e7158d37478d6fe
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: de270abfede0b128e63999ae8654a2ea72e073f0
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63410424"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "65703795"
 ---
 # <a name="idiasymbolgethassecuritychecks"></a>IDiaSymbol::get_hasSecurityChecks
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Recupera um sinalizador que especifica se o compiland ou a função foi compilada com verificações de segurança de saturação de buffer (por exemplo, o [/GS (Buffer Security Check)](http://msdn.microsoft.com/library/8d8a5ea1-cd5e-42e1-bc36-66e1cd7e731e) comutador de compilador).  
+Recupera um sinalizador que especifica se o compiland ou a função foi compilada com verificações de segurança de saturação de buffer (por exemplo, o [/GS (Buffer Security Check)](https://msdn.microsoft.com/library/8d8a5ea1-cd5e-42e1-bc36-66e1cd7e731e) comutador de compilador).  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -52,4 +52,4 @@ HRESULT get_hasSecurityChecks(
   
 ## <a name="see-also"></a>Consulte também  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [/GS (verificação de segurança do buffer)](http://msdn.microsoft.com/library/8d8a5ea1-cd5e-42e1-bc36-66e1cd7e731e)
+ [/GS (verificação de segurança do buffer)](https://msdn.microsoft.com/library/8d8a5ea1-cd5e-42e1-bc36-66e1cd7e731e)

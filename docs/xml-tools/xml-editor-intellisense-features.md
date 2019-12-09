@@ -3,29 +3,29 @@ title: Recursos do IntelliSense do editor de XML
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 2b26f214-cc3a-46bf-b260-14eb8e599182
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 312c304855a450a648b000b8306b80ade969c785
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5a44af076e8663e525e33727a24aa93f9391f4b5
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62807954"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72603958"
 ---
 # <a name="xml-editor-intellisense-features"></a>Recursos do IntelliSense o editor XML
 
-O editor XML fornece os recursos do IntelliSense comparáveis a outros editores de idioma fornecidos no Visual Studio. Esta seção explica como você pode usar o IntelliSense com a linguagem de definição de esquema XML (XSD) e documentos XSLT.
+O editor de XML fornece recursos do IntelliSense completos comparáveis a outros editores de linguagem fornecidos no Visual Studio. Esta seção explica como você pode usar o IntelliSense com a linguagem de definição de esquema XML (XSD) e documentos XSLT.
 
 ## <a name="intellisense-in-an-xsd-document"></a>IntelliSense em um documento XSD
 
-Depois que um esquema está associado com seu documento, você obtém uma lista suspensa de elementos esperados quando você digita `"<"` ou clique em de **exibir uma lista de membros do objeto** na barra de ferramentas do editor XML.
+Depois que um esquema estiver associado ao documento, você obterá uma lista suspensa dos elementos esperados sempre que digitar `"<"` ou clicar no botão **exibir uma lista de membros do objeto** na barra de ferramentas do editor de XML.
 
-![Botão de lista de membro de objeto de exibição](media/display-object-member-list-xml.png)
+![Botão exibir lista de membros do objeto](media/display-object-member-list-xml.png)
 
-Para obter informações sobre como associar esquemas com documentos XML, consulte [validação de documento XML](../xml-tools/xml-document-validation.md).
+Para obter informações sobre como associar esquemas a documentos XML, consulte validação de [documento XML](../xml-tools/xml-document-validation.md).
 
 Quando você digita o ESPAÇO de dentro de uma marca inicial, você também obtém uma lista suspensa que mostra todos os atributos que podem ser adicionados ao elemento atual.
 
@@ -49,7 +49,7 @@ Após adicionar um modelo nomeado ou um atributo para o documento de fonte, voc�
 
 - Nomes de parâmetro para um modelo chamado determinado.
 
-Para obter mais informações, confira [Passo a passo: Usando XSLT IntelliSense](../xml-tools/walkthrough-using-xslt-intellisense.md) tópico.
+Para obter mais informações, consulte [Walkthrough: using XSLT IntelliSense](../xml-tools/walkthrough-using-xslt-intellisense.md) tópico.
 
 ## <a name="auto-completion"></a>Preenchimento automático
 
@@ -57,7 +57,7 @@ O editor XML também facilita editando XML preenchendo na sintaxe XML necessári
 
 `<book>`
 
-O editor XML preenche a marca de fim e posicionar o cursor após a marca inicial. A seguir está um exemplo disso (o "&#124;" observa a posição do cursor):
+O editor XML preenche a marca de fim e posicionar o cursor após a marca inicial. Veja a seguir um exemplo disso (o "&#124;" anota a posição do cursor):
 
 `<book>`&#124;`</book>`
 
@@ -79,7 +79,7 @@ Da mesma forma, o editor XML também insere a seguinte sintaxe XML automaticamen
 
 - Termina uma declaração de DTD: `>`
 
-O editor XML também tem a capacidade de inserir um namespace se você selecionar um elemento qualificado namespace ou atributo de uma lista do IntelliSense e o namespace para esse elemento ou atributo ainda não está no escopo de declaração.
+O editor de XML também tem a capacidade de inserir uma declaração de namespace se você selecionar um atributo ou elemento qualificado de namespace de uma lista do IntelliSense e o namespace para esse elemento ou atributo ainda não estiver no escopo.
 
 Por exemplo, se você selecionar o elemento de `e:Book` de lista do IntelliSense onde o prefixo é associado ao namespace de `http://books` que não foi declarada no documento, o editor XML insere a declaração de namespace necessário para você. O seguinte é o texto resultante XML:
 
@@ -87,13 +87,13 @@ Por exemplo, se você selecionar o elemento de `e:Book` de lista do IntelliSense
 
 ## <a name="brace-matching"></a>Correspondência de chaves
 
-O editor XML fornece a chave realçando para fornecer feedback imediato em elementos que apenas se você tiver fechado. Você também pode usar o atalho de teclado (**Ctrl**+**]**) para saltar de uma chave para a chave correspondente.
+O editor XML fornece a chave realçando para fornecer feedback imediato em elementos que apenas se você tiver fechado. Você também pode usar o atalho de teclado (**Ctrl** + **]** ) para saltar de uma chave para a chave correspondente.
 
 O editor XML faz isso para os seguintes itens:
 
 - Início correspondente e marcas de fim.
 
-- Qualquer par de "\<" ou ">" colchetes angulares.
+- Qualquer par de colchetes angulares "\<" ou ">".
 
 - Início e fim de comentários.
 
@@ -107,11 +107,11 @@ O editor XML faz isso para os seguintes itens:
 
 ## <a name="modify-the-intellisense-options"></a>Modificar as opções do IntelliSense
 
-Os recursos do IntelliSense e de preenchimento automático são ativados por padrão. No entanto, você pode alterar isso modificando suas **ferramentas** > **opções** configurações.
+Os recursos do IntelliSense e de preenchimento automático são ativados por padrão. No entanto, você pode alterar isso modificando suas **ferramentas**  >  configurações de**Opções** .
 
-O **AutoInserção** seção o **diversos** página controla o comportamento a seguir:
+A seção **inserção automática** da página **diversos** controla o seguinte comportamento:
 
-|Nome|Descrição|
+|Name|Descrição|
 |-|-----------------|
 |Fechar marcas|Insere fechar marcas para novos elementos.|
 |Aspas de atributo|O valor do atributo das inserções que quando você digite um novo nome de atributo.|
@@ -121,9 +121,9 @@ O **AutoInserção** seção o **diversos** página controla o comportamento a s
 
 1. Selecione **Opções** no menu **Ferramentas**.
 
-2. Expandir **Editor de texto**, expanda **XML**e selecione **diversos**.
+2. Expanda **Editor de texto**, expanda **XML**e selecione **diversos**.
 
-3. Fazer alterações para o **AutoInserção** seção e clique em **Okey**.
+3. Faça as alterações na seção **inserção automática** e clique em **OK**.
 
 ## <a name="see-also"></a>Consulte também
 

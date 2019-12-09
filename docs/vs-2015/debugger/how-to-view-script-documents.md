@@ -17,11 +17,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 88f923ab0447f1ac7d57e84d94f0ab442d912d67
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104195"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68189598"
 ---
 # <a name="how-to-view-script-documents"></a>Como: Exibir documentos de script
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,11 +32,11 @@ Em versões anteriores do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], os arqui
   
  Os arquivos de script do lado do cliente são visíveis apenas quando você está no modo de depuração ou modo de interrupção. Eles aparecem no nó **Documentos de Script**.  
   
- Os arquivos de script do lado do servidor são sempre visíveis. Eles aparecem no nó **\<<Nome do caminho do site>**. O nome do nó é semelhante a este exemplo: `c:\...\Website2\`  
+ Os arquivos de script do lado do servidor são sempre visíveis. Eles aparecem no nó **\<<Nome do caminho do site>** . O nome do nó é semelhante a este exemplo: `c:\...\Website2\`  
   
 ### <a name="to-view-a-server-side-script-document"></a>Para exibir um documento de script do lado do servidor  
   
-1. No **Gerenciador de Soluções**, abra o nó **\<<Nome do caminho do site>**.  
+1. No **Gerenciador de Soluções**, abra o nó **\<<Nome do caminho do site>** .  
   
 2. Clique duas vezes no arquivo de script que deseja exibir.  
   

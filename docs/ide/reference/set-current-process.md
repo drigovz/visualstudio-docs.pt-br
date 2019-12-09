@@ -6,17 +6,17 @@ helpviewer_keywords:
 - Debug.SetCurrentProcess command
 - Set Current Process command
 ms.assetid: 1e016ebd-aadd-411f-a606-03bf69d3f8aa
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 24f4c08147f72168f5207418a51d7a9cfa8a2b51
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 1d8c313eebc8623156dd7a575060397ee6e16a9d
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62934565"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748643"
 ---
 # <a name="set-current-process"></a>Definir processo atual
 Define o processo especificado como o processo ativo no depurador.
@@ -28,12 +28,12 @@ Debug.SetCurrentProcess index
 ```
 
 ## <a name="arguments"></a>Arguments
- `index`
+`index`
 
- Necessário. O índice do processo.
+Necessário. O índice do processo.
 
 ## <a name="remarks"></a>Comentários
- Você pode se conectar a vários processos quando está depurando, mas somente um processo está ativo no depurador em um determinado momento. Você pode usar o comando `SetCurrentProcess` para definir o processo ativo.
+Você pode se conectar a vários processos quando está depurando, mas somente um processo está ativo no depurador em um determinado momento. Você pode usar o comando `SetCurrentProcess` para definir o processo ativo.
 
 ## <a name="example"></a>Exemplo
 

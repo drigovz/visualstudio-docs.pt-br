@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 08/15/2017
 ms.assetid: 2C4AAC2E-3B4A-4496-8BE0-1F5A7F81D1CA
-ms.openlocfilehash: f90f5fca9d68ed00162fd746ddf291343c8d51f7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 19104cb090ff2a115afefe994bd53c93d2baaf5d
+ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62988371"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73714427"
 ---
 # <a name="accessibility"></a>Acessibilidade
 
@@ -44,7 +44,7 @@ defaults write com.microsoft.visual-studio com.monodevelop.AccessibilityEnabled 
 
 Depois de ativar a acessibilidade, você precisa reiniciar o Visual Studio.
 
-## <a name="how-to-use-keyboard-navigation"></a>Como: Usar a navegação por teclado
+## <a name="how-to-use-keyboard-navigation"></a>Como usar a Navegação por Teclado
 
 A navegação por teclado pode ser habilitada configurando a opção Acesso Completo por Teclado em **Preferências do Sistema > Teclado > Atalhos** como **Todos os Controles**:
 
@@ -58,24 +58,24 @@ A configuração de acesso completo por teclado ativa o retângulo de foco. Em s
 
 Pressionar a barra de espaço ativa o controle com foco.
 
-## <a name="how-to-enable-and-use-voice-over"></a>Como: Habilitar e usar o VoiceOver
+## <a name="how-to-enable-and-use-voice-over"></a>Como habilitar e usar o VoiceOver
 
 Para ativar ou desativar o VoiceOver pressione **Cmd+F5**
 
 Para navegar pelos comandos da interface do usuário do VoiceOver, use os seguintes comandos:
 
-- Mova o cursor do VoiceOver entre Controles: **Ctrl + Alt + seta para a esquerda/seta para a direita**
+- Mova o cursor do VoiceOver entre Controles: **Ctrl+ Alt+Seta para a esquerda/Seta para a direita**
 
    O VoiceOver lê o nome dos controles, alguns detalhes sobre eles e o que pode ser feito com eles.
 
-- Insira Grupos e controles (como o Painel de Soluções, Caixa de ferramentas e outros Painéis): **Ctrl + Alt + Shift + Seta para Baixo**
+- Insira Grupos e controles (como o Painel de Soluções, Caixa de ferramentas e outros Painéis): **Ctrl+Alt+Shift+Seta para baixo**
 
    Quando estiver dentro do controle, use **Ctrl+Alt+Setas** para se movimentar dentro dele.
 
 Para obter informações gerais sobre como usar o VoiceOver no macOS, confira os guias a seguir:
 
 - [Introdução ao VoiceOver](https://help.apple.com/voiceover/info/guide/10.12/)
-- [Comandos de VoiceOver no macOS](http://lab.dotjay.com/notes/voiceover-commands/)
+- [Comandos de VoiceOver no macOS](https://lab.dotjay.com/notes/voiceover-commands/)
 
 ## <a name="see-also"></a>Consulte também
 

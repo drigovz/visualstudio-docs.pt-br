@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugSymbolProvider::GetMethodFieldsByName method
 ms.assetid: 1f781320-81ef-4037-b068-f1864b271258
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8609452919b5f2c2c3f94a7ef3853e1559b33e77
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 02b6947b36439610e41ec0a9e33ebc3f599a6c92
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62915736"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66347590"
 ---
 # <a name="idebugsymbolprovidergetmethodfieldsbyname"></a>IDebugSymbolProvider::GetMethodFieldsByName
 Esse método obtém o campo que representa um nome de método totalmente qualificado.
@@ -40,18 +43,15 @@ int GetMethodFieldsByName(
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `pszFullName`
+## <a name="parameters"></a>Parâmetros
+`pszFullName`\
+[in] O nome do método.
 
- [in] O nome do método.
+`nameMatch`\
+[in] Seleciona o tipo de correspondência, por exemplo, diferencia maiusculas de minúsculas.
 
- `nameMatch`
-
- [in] Seleciona o tipo de correspondência, por exemplo, diferencia maiusculas de minúsculas.
-
- `ppEnum`
-
- [out] Retorna um [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) enumerador para os campos associados a esse método.
+`ppEnum`\
+[out] Retorna um [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) enumerador para os campos associados a esse método.
 
 ## <a name="return-value"></a>Valor de retorno
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.

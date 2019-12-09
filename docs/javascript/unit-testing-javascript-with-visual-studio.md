@@ -11,21 +11,22 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 7ad0105cffc99894134dc58af7c71c9f95bceace
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 90a440ce88690c12792c17729e93f9fa287dabb6
+ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62840477"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72888637"
 ---
 # <a name="unit-testing-javascript-and-typescript-in-visual-studio"></a>Teste de unidade em JavaScript e TypeScript no Visual Studio
 
 As Ferramentas Node.js para Visual Studio permitem que você escreva e execute testes de unidade usando algumas das estruturas mais populares do JavaScript, sem a necessidade de alternar para um prompt de comando.
 
 As estruturas compatíveis são:
-* Mocha ([mochajs.org](http://mochajs.org/))
+* Mocha ([mochajs.org](https://mochajs.org/))
 * Jasmine ([Jasmine.github.io](https://jasmine.github.io/))
 * Tape ([github.com/substack/tape](https://github.com/substack/tape))
+* Jest ([jestjs.io](https://jestjs.io/))
 * Executor de Exportação (essa estrutura é específica das Ferramentas Node.js para Visual Studio)
 
 > [!WARNING]
@@ -90,7 +91,7 @@ Execute os testes clicando no link **Executar Tudo** no Gerenciador de Testes. O
 > [!NOTE]
 > No momento, não damos suporte à criação de perfil de testes nem à cobertura de código.
 
-### <a name="run-tests-from-the-command-line"></a>Executar testes na linha de comando
+### <a name="run-tests-from-the-command-line"></a>Executar testes da linha de comando
 
 Execute os testes no [Prompt de Comando do Desenvolvedor](/dotnet/framework/tools/developer-command-prompt-for-vs) do Visual Studio 2017 usando o seguinte comando:
 
@@ -164,5 +165,11 @@ Para habilitar isso, clique com o botão direito do mouse no nó do projeto no G
 
 Em seguida, adicione seus testes à pasta raiz de teste especificada por você e eles ficarão disponíveis para execução na janela do Gerenciador de Testes. Se eles não aparecerem inicialmente, você precisará recompilar o projeto.
 
-> [!NOTE]
-> Atualmente, isso não funciona para projetos do .NET Standard e do .NET Core.
+### <a name="unit-test-net-core-and-net-standard"></a>Teste de unidade no .NET Core e no .NET Standard
+Além das propriedades acima, também será necessário instalar o pacote [Microsoft.JavaScript.UnitTest](https://www.nuget.org/packages/Microsoft.JavaScript.UnitTest/) do NuGet e definir a propriedade:
+
+```xml
+<PropertyGroup>
+    <GenerateProgramFile>false</GenerateProgramFile>
+</PropertyGroup>
+```

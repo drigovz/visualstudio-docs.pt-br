@@ -1,50 +1,48 @@
 ---
 title: IDiaSymbol::get_packed | Microsoft Docs
-ms.date: 11/15/2016
-ms.prod: visual-studio-dev14
-ms.technology: vs-ide-debug
-ms.topic: reference
+ms.date: 11/04/2016
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaSymbol::get_packed method
 ms.assetid: e42ff368-56c4-49a2-8676-f80e349efa21
-caps.latest.revision: 11
-author: MikeJo5000
+author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 91e99da7832bb2a0e067de6eb3c09f90255eaf32
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.workload:
+- multiple
+ms.openlocfilehash: 420ba5b56342b4b1d5b8e4c2756aa828e5fe53b4
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63400644"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739531"
 ---
-# <a name="idiasymbolgetpacked"></a>IDiaSymbol::get_packed
-[!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
+# <a name="idiasymbolget_packed"></a>IDiaSymbol::get_packed
+Recupera um sinalizador que especifica se o tipo de dados definido pelo usuário (UDT) está embalado.
 
-Recupera um sinalizador que especifica se o tipo de dados definido pelo usuário (UDT) é empacotado.  
-  
-## <a name="syntax"></a>Sintaxe  
-  
-```cpp#  
-HRESULT get_packed (   
-   BOOL* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parâmetros  
- `pRetVal`  
- [out] Retorna `TRUE` se o UDT é fornecido; caso contrário, retornará `FALSE`.  
-  
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE` ou um código de erro.  
-  
+## <a name="syntax"></a>Sintaxe
+
+```C++
+HRESULT get_packed ( 
+   BOOL* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parâmetros
+ `pRetVal`
+
+fora Retorna `TRUE` se o UDT for embalado; caso contrário, retorna `FALSE`.
+
+## <a name="return-value"></a>Valor retornado
+ Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE` ou um código de erro.
+
 > [!NOTE]
-> Um valor de retorno `S_FALSE` significa que a propriedade não está disponível para o símbolo.  
-  
-## <a name="remarks"></a>Comentários  
- Empacotado significa que todos os membros da UDT são posicionados tão próximas quanto possível, sem nenhum preenchimento intermediário para alinhar aos limites de memória.  
-  
-## <a name="see-also"></a>Consulte também  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+> Um valor de retorno de `S_FALSE` significa que a propriedade não está disponível para o símbolo.
+
+## <a name="remarks"></a>Comentários
+ Embalado significa que todos os membros do UDT estão posicionados o mais próximo possível, sem nenhum preenchimento intermediário para alinhar aos limites de memória.
+
+## <a name="see-also"></a>Consulte também
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPropertyField::GetPropertySetter method
 ms.assetid: 744d76fd-2bcc-4917-a040-ce4cc714ef61
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a661fb9bea0f04b8fc0114473ccedc46e1e478ce
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 29772ad76df6538ec5093d2fb34427a7fa89c5ff
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62869342"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66345689"
 ---
 # <a name="idebugpropertyfieldgetpropertysetter"></a>IDebugPropertyField::GetPropertySetter
 Obtém o método que define a propriedade.
@@ -36,10 +39,9 @@ int GetPropertySetter(
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `ppField`
-
- [out] Retorna um [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md) que representa o método que define a propriedade do objeto.
+## <a name="parameters"></a>Parâmetros
+`ppField`\
+[out] Retorna um [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md) que representa o método que define a propriedade do objeto.
 
 ## <a name="return-value"></a>Valor de retorno
  Se for bem-sucedido, retornará S_OK; Caso contrário, retornará um código de erro.

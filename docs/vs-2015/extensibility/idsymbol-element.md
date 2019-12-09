@@ -12,11 +12,11 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 7db4e686b5e105b0ea0aa80783137093679d4cad
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58924849"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68203961"
 ---
 # <a name="idsymbol-element"></a>Elemento IDSymbol
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ O `IDSymbol` elemento contém a ID do par GUID:ID que representa um menu, um gru
 |Atributo|Descrição|  
 |---------------|-----------------|  
 |name|Necessário. Nome do símbolo de ID.|  
-|Valor |Necessário. Valor numérico da ID do símbolo de ID.|  
+|Valor|Necessário. Valor numérico da ID do símbolo de ID.|  
   
 ### <a name="child-elements"></a>Elementos filho  
  nenhuma.  

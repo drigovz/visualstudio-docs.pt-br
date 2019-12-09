@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugBoundBreakpoints2::GetCount
 ms.assetid: 5a572eeb-beb7-4fc7-8259-792d277069be
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 38ad4f947577d24e62ba50e530e783c5fc5ecc98
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 25d781f9f0c619ba7cef905f09f0f9368c53528f
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62915000"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66353710"
 ---
 # <a name="ienumdebugboundbreakpoints2getcount"></a>IEnumDebugBoundBreakpoints2::GetCount
 Retorna o número de elementos na enumeração.
@@ -36,10 +39,9 @@ int GetCount(
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `pcelt`
-
- [out] Retorna o número de elementos na enumeração.
+## <a name="parameters"></a>Parâmetros
+`pcelt`\
+[out] Retorna o número de elementos na enumeração.
 
 ## <a name="return-value"></a>Valor de retorno
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.

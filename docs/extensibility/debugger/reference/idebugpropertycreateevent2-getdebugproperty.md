@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPropertyCreateEvent2::GetDebugProperty
 ms.assetid: d7e43183-444c-4417-af19-82e28229f83a
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a289707110aed49cbd5e9f8b68ce5579ec92223f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 0c71b0db573c6f777c10e09f6d809708979970fb
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62916485"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66348657"
 ---
 # <a name="idebugpropertycreateevent2getdebugproperty"></a>IDebugPropertyCreateEvent2::GetDebugProperty
 Obtém a nova propriedade.
@@ -36,10 +39,9 @@ int GetDebugProperty ( 
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `ppProperty`
-
- [out] Retorna um [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) objeto que representa a nova propriedade.
+## <a name="parameters"></a>Parâmetros
+`ppProperty`\
+[out] Retorna um [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) objeto que representa a nova propriedade.
 
 ## <a name="return-value"></a>Valor de retorno
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.

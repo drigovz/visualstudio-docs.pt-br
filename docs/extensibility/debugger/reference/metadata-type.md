@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - METADATA_TYPE structure
 ms.assetid: 2d8b78f6-0aef-4d79-809a-cff9b2c24659
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0a39ce54d1cb1fb1a3773b4241be35214421f08a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 3d608e4e9bf9987eb1dd430a9e22660c1da6a90a
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62865671"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746694"
 ---
 # <a name="metadatatype"></a>METADATA_TYPE
 Essa estrutura Especifica informações sobre um tipo de campo tirado de metadados.
@@ -40,17 +43,14 @@ public struct METADATA_TYPE {
 };
 ```
 
-#### <a name="parameters"></a>Parâmetros
- ulAppDomainID
-
+## <a name="parameters"></a>Parâmetros
+ `ulAppDomainID`\
  ID do aplicativo do qual o símbolo foi originada. Isso é usado para identificar exclusivamente uma instância do aplicativo.
 
- guidModule
-
+ `guidModule`\
  O GUID do módulo que contém esse campo.
 
- tokClass
-
+ `tokClass`\
  A ID do token metadados desse tipo.
 
  [C++] `_mdToken` é um `typedef` de 32 bits `int`.
@@ -58,7 +58,7 @@ public struct METADATA_TYPE {
 ## <a name="remarks"></a>Comentários
  Essa estrutura é exibido como parte da união na [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md) estrutura quando o `dwKind` campo dos `TYPE_INFO` estrutura é definida como `TYPE_KIND_METADATA` (um valor da [dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md) enumeração).
 
- O `tokClass` valor é um token de metadados que identifica exclusivamente um tipo. Para obter detalhes sobre como interpretar os bits superiores do que a ID do token de metadados, consulte a `CorTokenType` enumeração no arquivo corhdr. h no [!INCLUDE[dnprdnshort](../../../code-quality/includes/dnprdnshort_md.md)] SDK.
+ O `tokClass` valor é um token de metadados que identifica exclusivamente um tipo. Para obter detalhes sobre como interpretar os bits superiores do que a ID do token de metadados, consulte o `CorTokenType` enumeração no arquivo corhdr. h no SDK do .NET Framework.
 
 ## <a name="requirements"></a>Requisitos
  Header: sh.h

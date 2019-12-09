@@ -7,12 +7,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 03353225507dca8700daa71b5dd0331c782e78ae
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: a891f6d18657bad65a1cf087da975849642b7aec
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62950313"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72912045"
 ---
 # <a name="update-an-existing-application-for-msbuild-15"></a>Atualizar um aplicativo existente para o MSBuild 15
 
@@ -38,7 +38,7 @@ O mecanismo para alterar o projeto para evitar carregar o MSBuild de um local ce
 
 #### <a name="use-nuget-packages-preferred"></a>Usar pacotes NuGet (preferencial)
 
-Essas instruções pressupõem que você esteja usando [referências de NuGet de estilo PackageReference](https://docs.microsoft.com/nuget/consume-packages/package-references-in-project-files).
+Essas instruções pressupõem que você esteja usando [referências de NuGet de estilo PackageReference](/nuget/consume-packages/package-references-in-project-files).
 
 Altere os arquivos de projeto para fazer referência a assemblies de MSBuild de seus pacotes NuGet. Especifique `ExcludeAssets=runtime` para informar ao NuGet que os assemblies são necessários somente no momento da compilação, e não devem ser copiados para o diretório de saída.
 
@@ -49,7 +49,7 @@ Por exemplo, você pode usar este XML:
 ```xml
 <ItemGroup>
   <PackageReference Include="Microsoft.Build" Version="15.1.548" ExcludeAssets="runtime" />
-  <PackageReference Include="Microsoft.Build.Utilities" Version="15.1.548" ExcludeAssets="runtime" />
+  <PackageReference Include="Microsoft.Build.Utilities.Core" Version="15.1.548" ExcludeAssets="runtime" />
 </ItemGroup>
 ```
 
@@ -65,21 +65,23 @@ Se você não puder usar pacotes NuGet, poderá fazer referência aos assemblies
 
 #### <a name="binding-redirects"></a>Redirecionamentos de associação
 
-Faça referência ao pacote do Microsoft.Build.Locator para assegurar que seu aplicativo use automaticamente os redirecionamentos de associação necessários de todas as versões de assemblies do MSBuild para a versão `15.1.0.0`.
+Referencie o pacote Microsoft. Build. Locator para garantir que seu aplicativo use automaticamente os redirecionamentos de associação necessários para a versão 15.1.0.0. Os redirecionamentos de associação para essa versão dão suporte ao MSBuild 15 e ao MSBuild 16.
 
 ### <a name="ensure-output-is-clean"></a>Garantir uma saída limpa
 
 Compile o projeto e inspecione o diretório de saída para ter certeza de que ele não contenha assemblies *Microsoft.Build.\*.dll* diferentes de *Microsoft.Build.Locator.dll*, adicionado na próxima etapa.
 
-### <a name="add-package-reference"></a>Adicionar referência de pacote
+### <a name="add-package-reference-for-microsoftbuildlocator"></a>Adicionar referência de pacote para o Microsoft.Build.Locator
 
-Adicione uma referência de pacote NuGet para [Microsoft.Build.Locator](https://www.nuget.org/packages/Microsoft.Build.Locator/).
+Adicione uma referência de pacote NuGet para o [Microsoft.Build.Locator](https://www.nuget.org/packages/Microsoft.Build.Locator/).
 
 ```xml
     <PackageReference Include="Microsoft.Build.Locator">
       <Version>1.1.2</Version>
     </PackageReference>
 ```
+
+Não especifique `ExcludeAssets=runtime` para o pacote do Microsoft.Build.Locator.
 
 ### <a name="register-instance-before-calling-msbuild"></a>Registre a instância antes de chamar o MSBuild
 

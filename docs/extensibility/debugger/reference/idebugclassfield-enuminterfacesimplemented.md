@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugClassField::EnumInterfacesImplemented method
 ms.assetid: e5523e45-d350-491e-a92c-fe0ca97d2052
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bffae40f1e5212132c89b6b71b7fc83cca6ebb42
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: a5c951ac4f6f33495dad4136a1a09c11e639e029
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62876946"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66335359"
 ---
 # <a name="idebugclassfieldenuminterfacesimplemented"></a>IDebugClassField::EnumInterfacesImplemented
 Cria um enumerador para as interfaces implementadas por esta classe.
@@ -36,10 +39,9 @@ int EnumInterfacesImplemented(
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `ppEnum`
-
- [out] Retorna um [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) objeto que representa a lista de interfaces implementadas. Retorna um valor nulo se não houver nenhuma interface.
+## <a name="parameters"></a>Parâmetros
+`ppEnum`\
+[out] Retorna um [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) objeto que representa a lista de interfaces implementadas. Retorna um valor nulo se não houver nenhuma interface.
 
 ## <a name="return-value"></a>Valor de retorno
  Se for bem-sucedido, Retorna S_OK ou retornará S_FALSE se não houver nenhuma interface implementado nesta classe. Caso contrário, retornará um código de erro.

@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramNode2::GetEngineInfo
 ms.assetid: 664e7fe5-9100-4b7d-9dc5-e5a4dd0d0451
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 421eea42c169f586657998e5d4cd57c4c797b71e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 9d49bbaf4ca4b4d85d198eeb51b2eb4d13508d39
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62916898"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66351154"
 ---
 # <a name="idebugprogramnode2getengineinfo"></a>IDebugProgramNode2::GetEngineInfo
 Obtém o nome e o identificador do mecanismo de depuração (DES) executando um programa.
@@ -38,14 +41,12 @@ int GetEngineInfo(
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `pbstrEngine`
+## <a name="parameters"></a>Parâmetros
+`pbstrEngine`\
+[out] Retorna o nome do DE execução do programa (C++-específico: isso pode ser um ponteiro nulo, indicando que o chamador não está interessado no nome do mecanismo de).
 
- [out] Retorna o nome do DE execução do programa (C++-específico: isso pode ser um ponteiro nulo, indicando que o chamador não está interessado no nome do mecanismo de).
-
- `pguidEngine`
-
- [out] Retorna o identificador global exclusivo do DE execução do programa (C++-específico: isso pode ser um ponteiro nulo, indicando que o chamador não está interessado no GUID do mecanismo de).
+`pguidEngine`\
+[out] Retorna o identificador global exclusivo do DE execução do programa (C++-específico: isso pode ser um ponteiro nulo, indicando que o chamador não está interessado no GUID do mecanismo de).
 
 ## <a name="return-value"></a>Valor de retorno
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.

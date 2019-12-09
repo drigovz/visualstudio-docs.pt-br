@@ -13,11 +13,11 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: fb6344885e9e30c056982b15b8323eef3ef467b5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58928496"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68165188"
 ---
 # <a name="idebugaddress"></a>IDebugAddress
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ IDebugAddress : IUnknown
  O provedor de símbolo retorna essa interface para representar um objeto e sua localização dentro de um escopo específico (por exemplo, função, método ou classe). Essa interface é retornada do e passada para vários métodos do provedor de símbolo e expressão avaliador. Normalmente, o provedor de símbolo é a única entidade que precisa para interpretar o conteúdo desta interface.  
   
 ## <a name="requirements"></a>Requisitos  
- Header: sh.h  
+ Cabeçalho: sh.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   

@@ -8,15 +8,15 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.C\C++.View
 author: mikeblome
 ms.author: mblome
-manager: wpickett
+manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9f4705b6326a3a2968084ecbd1bd385954528017
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: b867d81e4f0719ebf239bc89a6200fe833bc27b1
+ms.sourcegitcommit: 4f82de3fb0cfae226aef1abb40c47e63d2036a5c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62817759"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72919026"
 ---
 # <a name="options-text-editor-cc-view"></a>Opções, Editor de Texto, C/C++, Exibição
 
@@ -57,4 +57,4 @@ Para acessar essa página de propriedades, escolha **Ferramentas** > **Opções*
 ## <a name="see-also"></a>Consulte também
 
 - [Configurando opções do editor específicas a um idioma](../../ide/reference/setting-language-specific-editor-options.md)
-- [Refatoração em C++ (VC Blog)](http://blogs.msdn.com/b/vcblog/archive/2014/11/14/all-about-c-refactoring-in-visual-studio-2015-preview.aspx)
+- [Refatoração em C++ (VC Blog)](https://devblogs.microsoft.com/cppblog/all-about-c-refactoring-in-visual-studio-2015-preview/)

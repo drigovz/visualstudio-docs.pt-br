@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBreakpointRequest2::GetRequestInfo
 ms.assetid: 5defd8d7-6daa-479b-8909-fcc4ae0b357a
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 90e813bd12a5dbdbe98f2cd0032e6c79ada37159
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 3523c72fa1a7ea14fbf1b4a69caf04cfebb82911
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62876823"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352893"
 ---
 # <a name="idebugbreakpointrequest2getrequestinfo"></a>IDebugBreakpointRequest2::GetRequestInfo
 Obtém as informações de solicitação de ponto de interrupção que descreve esta solicitação de ponto de interrupção.
@@ -38,14 +41,12 @@ int GetRequestInfo( 
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `dwFields`
+## <a name="parameters"></a>Parâmetros
+`dwFields`\
+[in] Uma combinação de sinalizadores do [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md) enumeração que determina quais campos no `pBPRequestInfo` parâmetro devem ser preenchidos.
 
- [in] Uma combinação de sinalizadores do [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md) enumeração que determina quais campos no `pBPRequestInfo` parâmetro devem ser preenchidos.
-
- `pBPRequestInfo`
-
- [out] Especifica o [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) estrutura a ser preenchida com a descrição da solicitação de ponto de interrupção.
+`pBPRequestInfo`\
+[out] Especifica o [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) estrutura a ser preenchida com a descrição da solicitação de ponto de interrupção.
 
 ## <a name="return-value"></a>Valor de retorno
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.

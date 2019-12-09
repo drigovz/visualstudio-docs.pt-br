@@ -11,19 +11,19 @@ ms.assetid: a8e2765c-cfb5-47b5-a414-6e48b434e0c2
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 638c9c0f0d024830124445485dcf9991678bd4d7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 0a2042ef9a96eed99636ea0a2f5f09d99cd35ea2
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63429006"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65699161"
 ---
 # <a name="adding-visual-studio-commands-to-a-start-page"></a>Adicionando comandos do Visual Studio a uma página inicial
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Quando você cria uma página inicial personalizada, você pode adicionar comandos do Visual Studio a ele. Este documento discute as diferentes maneiras de associar comandos do Visual Studio a objetos XAML em uma página de início.  
   
- Para obter mais informações sobre os comandos no XAML, consulte [visão geral dos comandos](http://msdn.microsoft.com/library/bc208dfe-367d-426a-99de-52b7e7511e81)  
+ Para obter mais informações sobre os comandos no XAML, consulte [visão geral dos comandos](https://msdn.microsoft.com/library/bc208dfe-367d-426a-99de-52b7e7511e81)  
   
 ## <a name="adding-commands-from-the-command-well"></a>Adição dos comandos do comando também  
  A página inicial criado na [criando uma página de início personalizada](../extensibility/creating-a-custom-start-page.md) adicionado a <xref:Microsoft.VisualStudio.PlatformUI?displayProperty=fullName> e <xref:Microsoft.VisualStudio.Shell?displayProperty=fullName> namespaces, da seguinte maneira.  
@@ -94,7 +94,7 @@ xmlns:vscom="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.Visua
 ## <a name="adding-commands-with-the-dte-object"></a>Adicionando comandos com o objeto DTE  
  Você pode acessar o objeto DTE de uma página inicial, na marcação e no código.  
   
- Na marcação, você pode acessá-lo usando o [extensão de marcação Binding](http://msdn.microsoft.com/library/83d6e2a4-1b0c-4fc8-bd96-b5e98800ab63) sintaxe para chamar o <xref:EnvDTE.DTE> objeto. Você pode usar essa abordagem para associar a propriedades simples, como aqueles que retornam coleções, mas você não pode associar a métodos ou serviços. A exemplo a seguir mostra um <xref:System.Windows.Controls.TextBlock> controle que está associado a <xref:EnvDTE._DTE.Name%2A> propriedade e um <xref:System.Windows.Controls.ListBox> controle que enumera os <xref:EnvDTE.Window.Caption%2A> propriedades da coleção que é retornado pelo <xref:EnvDTE._DTE.Windows%2A> propriedade.  
+ Na marcação, você pode acessá-lo usando o [extensão de marcação Binding](https://msdn.microsoft.com/library/83d6e2a4-1b0c-4fc8-bd96-b5e98800ab63) sintaxe para chamar o <xref:EnvDTE.DTE> objeto. Você pode usar essa abordagem para associar a propriedades simples, como aqueles que retornam coleções, mas você não pode associar a métodos ou serviços. A exemplo a seguir mostra um <xref:System.Windows.Controls.TextBlock> controle que está associado a <xref:EnvDTE._DTE.Name%2A> propriedade e um <xref:System.Windows.Controls.ListBox> controle que enumera os <xref:EnvDTE.Window.Caption%2A> propriedades da coleção que é retornado pelo <xref:EnvDTE._DTE.Windows%2A> propriedade.  
   
 ```xml  
 <TextBlock Text="{Binding Path=DTE.Name}" FontSize="12" HorizontalAlignment="Center"/>  

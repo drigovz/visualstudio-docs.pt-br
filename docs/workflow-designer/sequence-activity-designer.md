@@ -1,31 +1,31 @@
 ---
-title: Designer de fluxo de trabalho - Designer de atividade de sequência
+title: Designer de atividade de Designer de Fluxo de Trabalho sequência
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.Sequence.UI
 ms.assetid: 51c8d3cb-4d43-458f-9631-b63755f9ac94
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: abbffa44ee7fa4db2a03e5f46820f707cae8d4fb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 116e8c31a6d7cad2e5c6da95bc66e34a0d11163a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62434067"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72649945"
 ---
 # <a name="sequence-activity-designer"></a>Arranje seqüencialmente o designer de atividades
 
 A atividade de <xref:System.Activities.Statements.Sequence> contém uma coleção ordenada de atividades filhos que executa em ordem.
 
-Outra maneira de executar um conjunto de atividades em ordem é usar uma atividade de <xref:System.Activities.Statements.Flowchart> . Considere o uso de [fluxograma](../workflow-designer/flowchart-activity-designer.md) quando você tiver uma ramificação simples ou um loop de fluxo do programa que você deseja modelagem esquematicamente.
+Outra maneira de executar um conjunto de atividades em ordem é usar uma atividade de <xref:System.Activities.Statements.Flowchart> . Considere usar o [fluxograma](../workflow-designer/flowchart-activity-designer.md) quando você tiver um fluxo de programa de ramificação simples ou de looping que você deseja modelar diagramaticamente.
 
 ## <a name="using-the-sequence-activity-designer"></a>Usando o designer de atividade de sequência
 
-Para adicionar um <xref:System.Activities.Statements.Sequence> atividade, arraste o **sequência** designer de atividade dos **caixa de ferramentas** e solte-o para a superfície do Designer de fluxo de trabalho. Para adicionar uma atividade filho para esta <xref:System.Activities.Statements.Sequence> atividade, arraste alguma outra atividade do **caixa de ferramentas** e solte-a no triângulo na caixa com o texto de dica "Descartar atividade aqui".
+Para adicionar uma atividade de <xref:System.Activities.Statements.Sequence>, arraste o designer de atividade de **sequência** da **caixa de ferramentas** e solte-o na superfície de designer de fluxo de trabalho. Para adicionar uma atividade filho a essa atividade de <xref:System.Activities.Statements.Sequence>, arraste alguma outra atividade da caixa de **ferramentas** e solte-a no triângulo, no quadro, com o texto de dica "soltar atividade aqui".
 
 ### <a name="sequence-activity-properties-in-the-workflow-designer"></a>Propriedades de atividade da sequência em Designer de Fluxo de Trabalho
 

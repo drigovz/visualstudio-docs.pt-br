@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugReturnValueEvent2
 ms.assetid: 2daded43-e427-4fbb-a19e-f3834e3723af
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a2ce15c905ee12e1c3f45db5e5044b171db3527d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 03f3a46c7213a48b527f2756e5a4915ca59e48f8
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62916367"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66345651"
 ---
 # <a name="idebugreturnvalueevent2"></a>IDebugReturnValueEvent2
 Essa interface é enviada pelo mecanismo de depuração (DE) para o Gerenciador de sessão de depuração (SDM) após a revisão de ou em uma função.

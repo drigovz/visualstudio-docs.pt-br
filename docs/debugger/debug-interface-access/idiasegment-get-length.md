@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e7f559c76bdaf4ca363a374566f4f820cc47dc14
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 74b4e0d96013504a0fd03b7350c58f1987903ad0
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839479"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742412"
 ---
-# <a name="idiasegmentgetlength"></a>IDiaSegment::get_length
+# <a name="idiasegmentget_length"></a>IDiaSegment::get_length
 Recupera o número de bytes no segmento.
 
 ## <a name="syntax"></a>Sintaxe
@@ -33,10 +33,10 @@ HRESULT get_ length ( 
 #### <a name="parameters"></a>Parâmetros
  `pRetVal`
 
-[out] Retorna o número de bytes no segmento.
+fora Retorna o número de bytes no segmento.
 
-## <a name="return-value"></a>Valor de retorno
- Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não há suporte para essa propriedade. Caso contrário, retornará um código de erro.
+## <a name="return-value"></a>Valor retornado
+ Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não houver suporte para essa propriedade. Caso contrário, retornará um código de erro.
 
 ## <a name="see-also"></a>Consulte também
 - [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)

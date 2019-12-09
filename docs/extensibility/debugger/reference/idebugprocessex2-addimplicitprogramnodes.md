@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProcessEx2::AddImplicitProgramNodes method
 ms.assetid: 8b491b00-f9e7-45b3-9115-fe58c3464289
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6203b12defbe70d3807508953d85f39ff725a746
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: b75ef50107b44de8de6f65c5c4c9c6827e13426e
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62917598"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66309495"
 ---
 # <a name="idebugprocessex2addimplicitprogramnodes"></a>IDebugProcessEx2::AddImplicitProgramNodes
 Esse método adiciona um nó de programa para cada mecanismo de depuração (DES) especificado.
@@ -40,18 +43,15 @@ int AddImplicitProgramNodes(
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `guidLaunchingEngine`
+## <a name="parameters"></a>Parâmetros
+`guidLaunchingEngine`\
+[in] O `GUID` de a DE que deve ser usada para iniciar programas (e é considerada como para adicionar seus próprios nós de programa).
 
- [in] O `GUID` de a DE que deve ser usada para iniciar programas (e é considerada como para adicionar seus próprios nós de programa).
+`rgguidSpecificEngines`\
+[in] Matriz de `GUID`s de DEs para qual programa nós serão adicionados.
 
- `rgguidSpecificEngines`
-
- [in] Matriz de `GUID`s de DEs para qual programa nós serão adicionados.
-
- `celtSpecificEngines`
-
- [in] O número de `GUID`s no `rgguidSpecificEngines` matriz.
+`celtSpecificEngines`\
+[in] O número de `GUID`s no `rgguidSpecificEngines` matriz.
 
 ## <a name="return-value"></a>Valor de retorno
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.

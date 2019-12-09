@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugThreads2
 ms.assetid: 1854f078-3b49-42c2-b65b-33e3b506fd63
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: db9a7eae6a0a37f8bd1f530afe067f4766197591
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a6d8f869e519d9500f1ea8f3bb33a3ee098f5cfd
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62914101"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66325414"
 ---
 # <a name="ienumdebugthreads2"></a>IEnumDebugThreads2
-Essa interface do enumera os threads em execução na sessão de depuração atual.
+Essa interface enumera os threads em execução na sessão de depuração atual.
 
 ## <a name="syntax"></a>Sintaxe
 

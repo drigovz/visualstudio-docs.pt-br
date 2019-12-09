@@ -1,5 +1,5 @@
 ---
-title: 'Passo a passo: Alterar a formatação da planilha usando controles CheckBox'
+title: Alterar a formatação da planilha usando controles CheckBox
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e2a7cd6143b9c97bbcd06337d38ae169dfa94305
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 42d2c46f6fd61d74476933cfda3dea8c62b00c95
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438620"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67328696"
 ---
 # <a name="walkthrough-change-worksheet-formatting-using-checkbox-controls"></a>Passo a passo: Alterar a formatação da planilha usando controles CheckBox
   Este passo a passo mostra as Noções básicas de como usar caixas de seleção em uma planilha do Microsoft Office Excel para alterar a formatação. Você usará as ferramentas de desenvolvimento do Office no Visual Studio para criar e adicionar código ao seu projeto. Para ver o resultado como um exemplo completo, consulte o exemplo de controles do Excel em [exemplos de desenvolvimento do Office e instruções passo a passo](../vsto/office-development-samples-and-walkthroughs.md).

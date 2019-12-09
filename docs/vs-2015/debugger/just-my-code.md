@@ -14,12 +14,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 560ab40811bc53c97e7097e510144d62aeddfbb2
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: efcabf9c7dc201f95515cd24bf3a14727f7149fe
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63421822"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823950"
 ---
 # <a name="just-my-code"></a>Apenas Meu Código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,7 +64,7 @@ Os desenvolvedores que usam as linguagens do .NET Framework estão familiarizado
 ### <a name="BKMK_NET_Exception_behavior"></a> Comportamento de exceção  
  Se uma exceção sem tratamento ocorre no código de não usuário, o depurador é interrompido na linha do código de usuário na qual a exceção foi gerada.  
   
- Se as exceções de primeira opção estiverem habilitadas para a exceção, a linha do código de usuário será realçada em verde. A pilha de chamadas exibe um quadro anotado rotulado **[código externo]**.  
+ Se as exceções de primeira opção estiverem habilitadas para a exceção, a linha do código de usuário será realçada em verde. A pilha de chamadas exibe um quadro anotado rotulado **[código externo]** .  
   
 ## <a name="BKMK_C___Just_My_Code"></a> Apenas Meu Código do C++  
   
@@ -222,9 +222,9 @@ Os desenvolvedores que usam as linguagens do .NET Framework estão familiarizado
   
 - Se o `debugger` palavra-chave é encontrada em:  
   
-    - **LibraryCode** código, o depurador sempre interromperá.  
-  
-    - **UnrelatedCode** código, o depurador não será interrompido.  
+  - **LibraryCode** código, o depurador sempre interromperá.  
+
+  - **UnrelatedCode** código, o depurador não será interrompido.  
   
 ### <a name="BKMK_JS_Exception_behavior"></a> Comportamento de exceção  
  Se ocorrer uma exceção não tratada em:  

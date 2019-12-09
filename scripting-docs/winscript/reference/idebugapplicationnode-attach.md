@@ -1,5 +1,5 @@
 ---
-title: IDebugApplicationNode::Attach | Microsoft Docs
+title: 'IDebugApplicationNode:: Attach | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c41d06c116c7c15ad308ce2ace837ea01d90ab1d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 30d4e189ec878def1cfd88517654955cd2d1aa12
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62990482"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574781"
 ---
 # <a name="idebugapplicationnodeattach"></a>IDebugApplicationNode::Attach
-Adiciona este nó do aplicativo para a árvore de projeto especificado.  
+Adiciona este nó de aplicativo à árvore de projeto especificada.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -37,9 +37,9 @@ HRESULT Attach(
   
 #### <a name="parameters"></a>Parâmetros  
  `pdanParent`  
- [in] A árvore de projeto em que este nó do aplicativo deve ser adicionado.  
+ no A árvore de projeto onde este nó de aplicativo deve ser adicionado.  
   
-## <a name="return-value"></a>Valor de retorno  
+## <a name="return-value"></a>Valor retornado  
  O método retorna um `HRESULT`. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.  
   
 |Valor|Descrição|  
@@ -47,7 +47,7 @@ HRESULT Attach(
 |`S_OK`|O método foi bem-sucedido.|  
   
 ## <a name="remarks"></a>Comentários  
- Esse método adiciona este nó do aplicativo para o projeto de árvore, usando `pdanParent` como pai. Se `pdanParent` é `NULL`, esse nó do aplicativo será o nó de nível superior.  
+ Esse método adiciona este nó de aplicativo à árvore do projeto, usando `pdanParent` como o pai. Se `pdanParent` for `NULL`, esse nó de aplicativo será o nó de nível superior.  
   
 ## <a name="see-also"></a>Consulte também  
  [IDebugApplicationNode::Detach](../../winscript/reference/idebugapplicationnode-detach.md)   

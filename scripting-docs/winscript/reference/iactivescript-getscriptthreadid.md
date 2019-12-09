@@ -1,5 +1,5 @@
 ---
-title: IActiveScript::GetScriptThreadID | Microsoft Docs
+title: 'IActiveScript:: GetScriptThreadID | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d329e08e6a17d9edcdf26e14b468c3c56f036c00
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2a0fb1eebfcb6ed100056289fab6bce662f86a7b
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62935686"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575701"
 ---
 # <a name="iactivescriptgetscriptthreadid"></a>IActiveScript::GetScriptThreadID
-Recupera um identificador de script-mecanismo-definidas para o thread associado o determinado thread Win32.  
+Recupera um identificador definido por mecanismo de script para o thread associado ao thread Win32 fornecido.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -37,25 +37,25 @@ HRESULT GetScriptThreadID(
 ```  
   
 #### <a name="parameters"></a>Parâmetros  
- `dwWin32ThreadID` ,  
- [in] Identificador de thread de um thread do Win32 em execução no processo atual. Use o [IActiveScript::GetCurrentScriptThreadID](../../winscript/reference/iactivescript-getcurrentscriptthreadid.md) função para recuperar o identificador de thread do thread em execução no momento.  
+ `dwWin32ThreadID`,  
+ no Identificador de thread de um Thread Win32 em execução no processo atual. Use a função [IActiveScript:: GetCurrentScriptThreadID](../../winscript/reference/iactivescript-getcurrentscriptthreadid.md) para recuperar o identificador de thread do thread em execução no momento.  
   
- `pstidThread` ,  
- [out] Endereço de uma variável que recebe o identificador de thread de script associado o determinado thread do Win32. A interpretação desse identificador é deixada para o mecanismo de script, mas ele pode ser apenas uma cópia do identificador de thread do Windows. Observe que, se o thread do Win32 for encerrado, este identificador se torna não atribuído e, posteriormente, pode ser atribuído a outro thread.  
+ `pstidThread`,  
+ fora Endereço de uma variável que recebe o identificador de thread de script associado ao thread Win32 fornecido. A interpretação desse identificador é deixada para o mecanismo de script, mas pode ser apenas uma cópia do identificador de thread do Windows. Observe que, se o Thread Win32 for encerrado, esse identificador se tornará não atribuído e poderá ser atribuído posteriormente a outro thread.  
   
-## <a name="return-value"></a>Valor de retorno  
+## <a name="return-value"></a>Valor retornado  
  Retorna um dos seguintes valores:  
   
-|Valor de retorno|Significado|  
+|Valor retornado|Significado|  
 |------------------|-------------|  
 |`S_OK`|Êxito.|  
 |`E_POINTER`|Um ponteiro inválido foi especificado.|  
-|`E_UNEXPECTED`|A chamada não era esperada (por exemplo, o mecanismo de script ainda não foi carregado ou inicializado) e, portanto, com falha.|  
+|`E_UNEXPECTED`|A chamada não era esperada (por exemplo, o mecanismo de script ainda não foi carregado ou inicializado) e, portanto, falhou.|  
   
 ## <a name="remarks"></a>Comentários  
- O identificador recuperado pode ser usado em chamadas subsequentes para métodos de controle de execução de thread de script, como o [IActiveScript:: Interruptscriptthread](../../winscript/reference/iactivescript-interruptscriptthread.md) método.  
+ O identificador recuperado pode ser usado em chamadas subsequentes para métodos de controle de execução de thread de script, como o método [IActiveScript:: InterruptScriptThread](../../winscript/reference/iactivescript-interruptscriptthread.md) .  
   
- Esse método pode ser chamado de threads não base sem resultando em um balão não base para objetos de host ou o [IActiveScript:: Interruptscriptthread](../../winscript/reference/iactivescript-interruptscriptthread.md) interface.  
+ Esse método pode ser chamado de threads não base sem resultar em um texto explicativo não base para hospedar objetos ou para a interface [IActiveScript:: InterruptScriptThread](../../winscript/reference/iactivescript-interruptscriptthread.md) .  
   
 ## <a name="see-also"></a>Consulte também  
  [IActiveScript](../../winscript/reference/iactivescript.md)

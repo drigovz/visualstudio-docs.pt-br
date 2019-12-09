@@ -12,11 +12,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 65890bf31a1257c3a41bc1fd7ed3f732c50eda14
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60068089"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68185951"
 ---
 # <a name="how-to-collect-line-level-sampling-data"></a>Como: Coletar dados de amostragem de nível de linha
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,7 +56,7 @@ A amostragem de nível de linha é a capacidade do criador de perfil para determ
   
      – ou —  
   
-- Ao iniciar um aplicativo, digite **VSPerfCmd /lineoff \<outros argumentos>**.  
+- Ao iniciar um aplicativo, digite **VSPerfCmd /lineoff \<outros argumentos>** .  
   
 ## <a name="see-also"></a>Consulte também  
  [Configurando sessões de desempenho](../profiling/configuring-performance-sessions.md)   

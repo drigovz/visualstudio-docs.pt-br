@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugErrorBreakpoints2
 ms.assetid: ffdad73d-969a-45ef-9ad1-7f5d3b814018
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 568257f3ffb38329a95499815e8d7853a2fdb19f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d204b29b46e257d4ca0b8c4102c3a64e9e78adf1
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62914741"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66317236"
 ---
 # <a name="ienumdebugerrorbreakpoints2"></a>IEnumDebugErrorBreakpoints2
 Essa interface enumera os pontos de interrupção de erro associados com um ponto de interrupção pendente.

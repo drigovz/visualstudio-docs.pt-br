@@ -1,5 +1,5 @@
 ---
-title: IDebugStackFrame::GetDebugProperty | Microsoft Docs
+title: 'IDebugStackFrame:: getdebugproperty | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c6c8726474bee28a0022e0d86a7c051dbfda308d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 452c08bb0319167c0dfc1de86bf38a993e3cbad8
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62934671"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574276"
 ---
 # <a name="idebugstackframegetdebugproperty"></a>IDebugStackFrame::GetDebugProperty
-Retorna um navegador de propriedade para o quadro atual.  
+Retorna um navegador de propriedades para o quadro atual.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -37,9 +37,9 @@ HRESULT GetDebugProperty(
   
 #### <a name="parameters"></a>Parâmetros  
  `ppDebugProp`  
- [out] Um navegador de propriedade para o quadro atual.  
+ fora Um navegador de propriedades para o quadro atual.  
   
-## <a name="return-value"></a>Valor de retorno  
+## <a name="return-value"></a>Valor retornado  
  O método retorna um `HRESULT`. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.  
   
 |Valor|Descrição|  
@@ -47,7 +47,7 @@ HRESULT GetDebugProperty(
 |`S_OK`|O método foi bem-sucedido.|  
   
 ## <a name="remarks"></a>Comentários  
- Esse método retorna um navegador de propriedade para o quadro atual.  
+ Esse método retorna um navegador de propriedades para o quadro atual.  
   
 ## <a name="see-also"></a>Consulte também  
  [Interface IDebugStackFrame](../../winscript/reference/idebugstackframe-interface.md)

@@ -5,17 +5,20 @@ ms.topic: reference
 helpviewer_keywords:
 - IDebugSettingsCallback2::GetMetricDword
 ms.assetid: 831a5a1a-c4af-4520-9fdf-3a731aeff85c
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 85451229b9b34f63150b315521621368c60cb1ac
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: fc685d043b405fbd78a446722e41df4ca584b8e3
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62916269"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66322033"
 ---
 # <a name="idebugsettingscallback2getmetricdword"></a>IDebugSettingsCallback2::GetMetricDword
 Recupera o valor de uma métrica, dado seu nome.
@@ -40,22 +43,18 @@ private int GetMetricDword(
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `pszType`
+## <a name="parameters"></a>Parâmetros
+`pszType`\
+[in] Tipo de métrica.
 
- [in] Tipo de métrica.
+`guidSection`\
+[in] Identificador exclusivo da seção.
 
- `guidSection`
+`pszMetric`\
+[in] Nome da métrica.
 
- [in] Identificador exclusivo da seção.
-
- `pszMetric`
-
- [in] Nome da métrica.
-
- `pdwValue`
-
- [out] Retorna o valor da métrica.
+`pdwValue`\
+[out] Retorna o valor da métrica.
 
 ## <a name="return-value"></a>Valor de retorno
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.

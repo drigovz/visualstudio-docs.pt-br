@@ -4,17 +4,17 @@ ms.date: 05/02/2017
 ms.topic: reference
 helpviewer_keywords:
 - IntelliTest, Attribute glossary
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: 7c5f1883a5d8c09713d520aa934f91b32cbaf388
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+author: jillre
+ms.openlocfilehash: dce8d33f876ee34e18812cb744d7d3d6f53a5506
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62978977"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653242"
 ---
 # <a name="attribute-glossary"></a>Glossário do atributo
 
@@ -25,7 +25,7 @@ ms.locfileid: "62978977"
   * [PexClass](#pexclass)
   * [PexGenericArguments](#pexgenericarguments)
   * [PexMethod](#pexmethod)
-     - [PexExplorationAttributeBase](#pexexplorationattributebase)
+    * [PexExplorationAttributeBase](#pexexplorationattributebase)
 
 * **Microsoft.Pex.Framework.Settings**
   * [PexAssemblySettings](#pexassemblysettings)
@@ -152,7 +152,7 @@ Este atributo pode ser definido no nível de assembly para substituir os valores
 ```csharp
 using Microsoft.Pex.Framework;
 // overriding the test framework selection
-[assembly: PexAssemblySettings(TestFramework = "Naked")]
+[assembly: PexAssemblySettings(TestFramework = "MSTestv2")]
 ```
 
 <a name="pexassemblyundertest"></a>

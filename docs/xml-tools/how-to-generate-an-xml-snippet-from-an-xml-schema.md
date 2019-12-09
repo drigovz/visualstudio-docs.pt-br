@@ -1,23 +1,23 @@
 ---
-title: 'Como: Gerar um snippet de XML de um esquema XML'
+title: 'Como: Gerencia um snippet de um esquema XML'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 2c128d2a-aaa6-4814-aa95-e07056afe338
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b2c3aad870112b580078f2dbb849f9ee1a771ed0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ae55428b61053fbd255446833cb20aec3da79b6e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63001916"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72645376"
 ---
-# <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>Como: Gerar um trecho XML a partir de um esquema XML
+# <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>Como gerar um trecho XML a partir de um esquema XML
 
-O editor XML tem a capacidade de gerar trechos de código XML a partir de um esquema XSD (linguagem) de definição de esquema XML. Por exemplo, porque você está criando um arquivo XML, quando posicionado próximo ao nome do elemento, você pode pressionar **guia** para preencher o elemento com os dados XML gerados de informações de esquema para esse elemento.
+O editor de XML tem a capacidade de gerar trechos de código XML a partir de um esquema XSD (linguagem de definição de esquema XML). Por exemplo, como você está criando um arquivo XML, enquanto posicionado ao lado do nome do elemento, você pode pressionar **Tab** para preencher o elemento com os dados XML gerados com base nas informações de esquema para esse elemento.
 
 Este recurso está disponível somente nos elementos. As seguintes regras também se aplicam:
 
@@ -25,11 +25,11 @@ Este recurso está disponível somente nos elementos. As seguintes regras també
 
 - O elemento atual no editor deve ser deixado sem atributos. Por exemplo, todos os seguintes são válidos
 
-    - `<Account`
+  - `<Account`
 
-    - `<Account>`
+  - `<Account>`
 
-    - `<Account></Account>`
+  - `<Account></Account>`
 
 - O cursor deve ser localizado imediatamente à direita do nome do elemento.
 
@@ -43,28 +43,28 @@ Os valores padrão são gerados e observados como valores editáveis. Se o esque
 
 ## <a name="example"></a>Exemplo
 
- As etapas nesta seção mostram como usar o recurso de trecho de código gerado pelo esquema XML do editor de XML.
+As etapas nesta seção mostram como usar o recurso de trecho XML gerado pelo esquema do editor de XML.
 
 > [!NOTE]
 > Antes de iniciar estes procedimentos, salve o arquivo de esquema para o seu computador local.
 
 ### <a name="to-create-a-new-xml-file-and-associate-it-with-an-xml-schema"></a>Para criar um novo arquivo XML e associá-lo a um esquema XML
 
-1. Sobre o **arquivo** , aponte para **New**e clique em **arquivo**.
+1. No menu **arquivo** , aponte para **novo**e clique em **arquivo**.
 
-2. Selecione **arquivo XML** na **modelos** painel e clique em **abrir**.
+2. Selecione **arquivo XML** no painel **modelos** e clique em **abrir**.
 
      Um novo arquivo é aberto no editor. O arquivo contém uma declaração XML padrão, `<?xml version="1.0" encoding="utf-8">`.
 
-3. Na janela de propriedades do documento, clique no botão Procurar (**...** ) sobre o **esquemas** campo.
+3. Na janela Propriedades do documento, clique no botão procurar ( **...** ) no campo **esquemas** .
 
-     O **esquemas XSD** caixa de diálogo é exibida.
+     A caixa de diálogo **esquemas XSD** é exibida.
 
 4. Clique em **Adicionar**.
 
-     O **abrir esquema XSD** caixa de diálogo é exibida.
+     A caixa de diálogo **abrir esquema XSD** é exibida.
 
-5. Selecione o arquivo de esquema e clique em **aberto**.
+5. Selecione o arquivo de esquema e clique em **abrir**.
 
 6. Clique em **OK**.
 
@@ -76,23 +76,23 @@ Os valores padrão são gerados e observados como valores editáveis. Se o esque
 
 2. A lista de membros exibe os itens possíveis:
 
-     **! –** para adicionar um comentário.
+     **!--** adicionar um comentário.
 
      **! DOCTYPE** para adicionar um tipo de documento.
 
-     **?** Para adicionar uma instrução de processamento.
+     **?** para adicionar uma instrução de processamento.
 
-     **Entre em contato com** para adicionar o elemento raiz.
+     **Contate** para adicionar o elemento raiz.
 
-3. Selecione **entre em contato com** na lista de membros e pressione **Enter**.
+3. Selecione **contato** na lista de membros e pressione **Enter**.
 
      O editor adiciona a tag de início `<Contact` e posicionar o cursor após o nome do elemento.
 
-4. Pressione **guia** para gerar dados XML para o `Contact` elemento com base em suas informações de esquema.
+4. Pressione **Tab** para gerar dados XML para o elemento `Contact` com base em suas informações de esquema.
 
 ## <a name="input"></a>Entrada
 
- O seguinte arquivo de esquema é usado por passo a passo.
+O seguinte arquivo de esquema é usado por passo a passo.
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -141,7 +141,7 @@ Os valores padrão são gerados e observados como valores editáveis. Se o esque
 
 ### <a name="output"></a>Saída
 
- A seguir estão os dados XML que são gerados com base nas informações de esquema associada com o elemento de `Contact` . Itens marcados como `bold` designar campos editáveis no trecho XML.
+A seguir estão os dados XML que são gerados com base nas informações de esquema associada com o elemento de `Contact` . Os itens marcados como `bold` designam campos editáveis no trecho XML.
 
 ```xml
 <Contact>
@@ -157,4 +157,4 @@ Os valores padrão são gerados e observados como valores editáveis. Se o esque
 ## <a name="see-also"></a>Consulte também
 
 - [Trechos de código XML](../xml-tools/xml-snippets.md)
-- [Como: Usar trechos de código XML](../xml-tools/how-to-use-xml-snippets.md)
+- [Como: usar trechos XML](../xml-tools/how-to-use-xml-snippets.md)

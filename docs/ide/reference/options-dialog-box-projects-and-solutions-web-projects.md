@@ -5,17 +5,17 @@ ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Projects.WebProjects
 ms.assetid: ea813046-1ae6-4c9f-9784-dc41494101b9
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f0d645d8c1c204105f5e505cd34386a1fcc19b46
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: bae8a8679a3295f665a15cc6b088cc93aaababd9
+ms.sourcegitcommit: 4f82de3fb0cfae226aef1abb40c47e63d2036a5c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62945643"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72919200"
 ---
 # <a name="options-dialog-box-projects-and-solutions-web-projects"></a>Caixa de diálogo Opções, Projetos e Soluções, Projetos Web
 
@@ -27,7 +27,7 @@ Por padrão, executar um projeto Web no Visual Studio usa o Visual Studio Develo
 
 **Usar a versão de 64 bits do IIS Express para sites e projetos**
 
-Selecione esta opção para usar o IIS Express, em vez do Visual Studio Development Server. Para obter mais informações, consulte [Apresentando o IIS Express](http://go.microsoft.com/?linkid=9747914) e [visão geral do IIS Express](http://go.microsoft.com/?linkid=9747915).
+Selecione esta opção para usar o IIS Express, em vez do Visual Studio Development Server. Para obter mais informações, consulte [Apresentando o IIS Express](https://weblogs.asp.net/scottgu/introducing-iis-express) e [visão geral do IIS Express](/iis/extensions/introduction-to-iis-express/iis-express-overview).
 
 **Avisar antes de executar aplicativos Web quando houver erros na lista de erros**
 

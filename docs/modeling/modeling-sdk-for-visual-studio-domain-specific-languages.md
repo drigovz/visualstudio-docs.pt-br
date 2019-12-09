@@ -6,23 +6,23 @@ ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language Tools
 - Domain-Specific Language
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b028655c0654bc5332264c3bcc0fced01480b69f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e9e58de3737acaae01939eb2e29242e02888235d
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62815031"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72658391"
 ---
 # <a name="modeling-sdk-for-visual-studio---domain-specific-languages"></a>SDK de Modelagem para Visual Studio - linguagens específicas ao domínio
 
-Usando o SDK de modelagem para Visual Studio, você pode criar ferramentas de desenvolvimento baseado em modelo avançadas que podem ser integradas ao Visual Studio. Da mesma forma, você pode criar uma ou mais definições de modelo e integrá-las em um conjunto de ferramentas.
+Usando o SDK de modelagem para o Visual Studio, você pode criar poderosas ferramentas de desenvolvimento com base em modelos que podem ser integradas ao Visual Studio. Da mesma forma, você pode criar uma ou mais definições de modelo e integrá-las em um conjunto de ferramentas.
 
-No centro do MSDK está a definição de um modelo que você cria para representar conceitos em sua área de negócios. Você pode cercar o modelo com uma variedade de ferramentas, como uma exibição diagramática, a capacidade de gerar o código e outros artefatos, comandos para transformar o modelo e a capacidade de interagir com o código e outros objetos no Visual Studio. À medida que o modelo é desenvolvido, você pode combiná-lo com outros modelos e ferramentas para formar um conjunto de ferramentas avançadas centradas em seu desenvolvimento.
+No centro do MSDK está a definição de um modelo que você cria para representar conceitos em sua área de negócios. Você pode colocar o modelo com uma variedade de ferramentas, como uma exibição diagramáticas, a capacidade de gerar código e outros artefatos, comandos para transformar o modelo e a capacidade de interagir com código e outros objetos no Visual Studio. À medida que o modelo é desenvolvido, você pode combiná-lo com outros modelos e ferramentas para formar um conjunto de ferramentas avançadas centradas em seu desenvolvimento.
 
 O MSDK permite desenvolver rapidamente um modelo na forma de uma linguagem específica do domínio (DSL). Você começa ao usar um editor especializado para definir um esquema ou sintaxe abstrata junto com uma notação gráfica. Dessa definição, o VMSDK gera:
 
@@ -40,39 +40,4 @@ Você pode personalizar e estender todos esses recursos. Suas extensões são in
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
-[Postagens de blogs relacionadas](https://devblogs.microsoft.com/devops/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/)
-
-Para obter orientação sobre técnicas avançadas e solução de problemas, visite [Fórum de extensibilidade de ferramentas de modelagem & de DSL do Visual Studio](http://go.microsoft.com/fwlink/?LinkID=186074).
-
-## <a name="in-this-section"></a>Nesta seção
- [Introdução às linguagens específicas de domínio](../modeling/getting-started-with-domain-specific-languages.md)
-
- [Noções básicas sobre modelos, classes e relações](../modeling/understanding-models-classes-and-relationships.md)
-
- [Como definir uma linguagem específica de domínio](../modeling/how-to-define-a-domain-specific-language.md)
-
- [Personalizando e estendendo uma linguagem específica de domínio](../modeling/customizing-and-extending-a-domain-specific-language.md)
-
- [Validação em uma linguagem específica de domínio](../modeling/validation-in-a-domain-specific-language.md)
-
- [Escrevendo código para personalizar uma linguagem específica de domínio](../modeling/writing-code-to-customise-a-domain-specific-language.md)
-
- [Gerando código com base em uma linguagem específica de domínio](../modeling/generating-code-from-a-domain-specific-language.md)
-
- [Noções básicas do código DSL](../modeling/understanding-the-dsl-code.md)
-
- [Personalizando o armazenamento de arquivos e a serialização XML](../modeling/customizing-file-storage-and-xml-serialization.md)
-
- [Implantando soluções de linguagem específica de domínio](../modeling/deploying-domain-specific-language-solutions.md)
-
- [Criando uma linguagem específica de domínio baseada no Windows Forms](../modeling/creating-a-windows-forms-based-domain-specific-language.md)
-
- [Criando uma linguagem específica de domínio baseada no WPF](../modeling/creating-a-wpf-based-domain-specific-language.md)
-
- [Como: Estender o Designer de Linguagem Específica de Domínio](../modeling/how-to-extend-the-domain-specific-language-designer.md)
-
- [Edições do Visual Studio com suporte pelo SDK de Visualização e Modelagem](../modeling/supported-visual-studio-editions-for-visualization-amp-modeling-sdk.md)
-
- [Como: Migrar uma linguagem específica de domínio para uma nova versão](../modeling/how-to-migrate-a-domain-specific-language-to-a-new-version.md)
-
- [Referência de API do SDK de Modelagem para Visual Studio](../modeling/api-reference-for-modeling-sdk-for-visual-studio.md)
+[Postagens de blog relacionadas](https://devblogs.microsoft.com/devops/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/)

@@ -13,12 +13,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: aac43a88a62182a33ea3b340c5520e921d681cd7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 922edcd45dd42c8da5a9ec4dc8d3e8f450ceea09
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60089539"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823605"
 ---
 # <a name="resource-details-view---contention-data"></a>Exibição de detalhes do recurso – Dados de contenção
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,10 +39,10 @@ A exibição de Detalhes do Recurso apresenta um gráfico de linha do tempo dos 
   
 - Execute uma das seguintes etapas:  
   
-    - Clique em **Reduzir** para retornar ao nível de zoom anterior.  
-  
-    - Clique em **Redefinir Zoom** para mostrar toda a linha do tempo na exibição.  
-  
+  - Clique em **Reduzir** para retornar ao nível de zoom anterior.  
+
+  - Clique em **Redefinir Zoom** para mostrar toda a linha do tempo na exibição.  
+
 #### <a name="to-view-the-call-stack-of-an-event"></a>Para exibir a pilha de chamadas de um evento  
   
 - No gráfico de linha do tempo, clique na barra de eventos.  

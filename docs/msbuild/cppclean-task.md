@@ -11,23 +11,23 @@ dev_langs:
 - jsharp
 - C++
 helpviewer_keywords:
-- MSBuild (Visual C++), CPPClean task
-- CPPClean task (MSBuild (Visual C++))
+- MSBuild (C++), CPPClean task
+- CPPClean task (MSBuild (C++))
 ms.assetid: b62a482e-8fb5-4999-b50b-6605a078e291
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 674d3408de10cee51179c125d69bcaf8a457908d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 6d6e893dcf289c5060f519523b18b53b701f8055
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62939112"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748119"
 ---
 # <a name="cppclean-task"></a>Tarefa CPPClean
-Exclui os arquivos temporários criados pelo MSBuild quando projeto do Visual C++ é compilado. O processo de exclusão de arquivos de build é conhecido como *limpeza*.
+Exclui os arquivos temporários que o MSBuild cria C++ quando um projeto é compilado. O processo de exclusão de arquivos de build é conhecido como *limpeza*.
 
 ## <a name="parameters"></a>Parâmetros
  A tabela a seguir descreve os parâmetros da tarefa **CPPClean**.

@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2625a8d4caa7dd53e9ce86395a98622f91d686b3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58925832"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68155704"
 ---
 # <a name="building-clickonce-applications-from-the-command-line"></a>Compilando aplicativos ClickOnce a partir da linha de comando
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ No [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)], você pode 
   
  "target" é um indicador para o MSBuild sobre como processar o comando. Os destinos de chave são o destino de "build" e o destino de "Publicar". O destino de build é o equivalente a selecionar a compilação comando (ou pressionando F5) no IDE. Se você quiser criar seu projeto, pode fazer isso digitando `msbuild`. Esse comando funciona porque o destino de compilação é o destino padrão para todos os projetos gerados pelo [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]. Isso significa que você explicitamente não precisa especificar o destino de build. Portanto, digitando `msbuild` é a mesma operação que digitar `msbuild /target:build`.  
   
- O `/target:publish` comando informa ao MSBuild para invocar o destino de publicação. O destino de publicação depende do destino de build. Isso significa que a operação de publicação é um superconjunto da operação de compilação. Por exemplo, se você fez uma alteração em um dos seus arquivos de origem do Visual Basic ou C#, o assembly correspondente automaticamente ser recriado por operação de publicação.  
+ O `/target:publish` comando informa ao MSBuild para invocar o destino de publicação. O destino de publicação depende do destino de build. Isso significa que a operação de publicação é um superconjunto da operação de compilação. Por exemplo, se você fez uma alteração em um dos seus arquivos de origem do Visual Basic ou c#, o assembly correspondente automaticamente ser recriado por operação de publicação.  
   
  Para obter informações sobre como gerar uma completa [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] implantação usando a ferramenta de linha de comando Mage.exe para criar sua [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifesto, consulte [passo a passo: Como implantar manualmente aplicativos ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
   
@@ -81,7 +81,7 @@ No [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)], você pode 
 ## <a name="publishing-properties"></a>Propriedades de publicação  
  Quando você publica o aplicativo em procedimentos anteriores, as propriedades a seguir são inseridas no seu arquivo de projeto, o Assistente de publicação. Essas propriedades influenciam diretamente como o [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicativo é produzido.  
   
- In CmdLineDemo.vbproj / CmdLineDemo.csproj:  
+ No CmdLineDemo.vbproj / CmdLineDemo.csproj:  
   
 ```  
 <AssemblyOriginatorKeyFile>WindowsApplication3.snk</AssemblyOriginatorKeyFile>  

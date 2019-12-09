@@ -2,17 +2,17 @@
 title: Definir as fontes e o tema de cores
 ms.date: 11/20/2017
 ms.topic: quickstart
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a43ade295d14934f452123407f9896eebdaf26c7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 039e48dec17ce902932e2d0df26ebb336c396985
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62953360"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72667793"
 ---
 # <a name="personalize-the-visual-studio-ide-and-editor"></a>Personalizar o Editor e o IDE do Visual Studio
 
@@ -26,7 +26,7 @@ Se você ainda não tiver instalado o Visual Studio, acesse a página [Downloads
 
 ::: moniker range=">=vs-2019"
 
-Se você ainda não tiver instalado o Visual Studio, acesse a página [Downloads do Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) para instalá-lo gratuitamente.
+Se você ainda não tiver instalado o Visual Studio, acesse a página [Downloads do Visual Studio](https://visualstudio.microsoft.com/downloads) para instalá-lo gratuitamente.
 
 ::: moniker-end
 
@@ -117,5 +117,5 @@ Exploramos apenas duas maneiras de personalizar as cores no Visual Studio. Esper
 
 ## <a name="see-also"></a>Consulte também
 
-- [Personalizar o editor](../ide/customizing-the-editor.md)
+- [Personalizar o editor](../ide/how-to-change-text-case-in-the-editor.md)
 - [Visão geral do Visual Studio IDE](../get-started/visual-studio-ide.md)

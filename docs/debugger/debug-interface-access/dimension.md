@@ -12,25 +12,25 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 97b03f1a3ceb8424cc3e533512f6d0d3e034f791
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0e6c5e956ddc3c03caf2fa27d31d7aafa4bea158
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62554799"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745247"
 ---
 # <a name="dimension"></a>Dimensão
-Cada matriz FORTRAN tem uma dimensão que é identificada por um `SymTagDimension` símbolo.
+Cada matriz FORTRAN tem uma dimensão identificada por um símbolo de `SymTagDimension`.
 
 ## <a name="properties"></a>Propriedades
- A tabela a seguir mostra as propriedades adicionais de válido para esse tipo de símbolo.
+ A tabela a seguir mostra as propriedades válidas adicionais para esse tipo de símbolo.
 
-|Propriedade|Tipo de dados|Descrição|
+|propriedade|Tipo de dados|Descrição|
 |--------------|---------------|-----------------|
 |[IDiaSymbol::get_lowerBound](../../debugger/debug-interface-access/idiasymbol-get-lowerbound.md)|`IDiaSymbol*`|Limite inferior de uma dimensão de matriz FORTRAN.|
 |[IDiaSymbol::get_lowerBoundId](../../debugger/debug-interface-access/idiasymbol-get-lowerboundid.md)|`DWORD`|ID do símbolo de limite inferior.|
-|[IDiaSymbol::get_symIndexId](../../debugger/debug-interface-access/idiasymbol-get-symindexid.md)|`DWORD`|ID de índice de símbolo.|
-|[IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)|`DWORD`|Retorna `SymTagDimension` (um dos [enumeração SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) valores).|
+|[IDiaSymbol::get_symIndexId](../../debugger/debug-interface-access/idiasymbol-get-symindexid.md)|`DWORD`|ID do índice do símbolo.|
+|[IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)|`DWORD`|Retorna `SymTagDimension` (um dos valores de [Enumeração SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) ).|
 |[IDiaSymbol::get_upperBound](../../debugger/debug-interface-access/idiasymbol-get-upperbound.md)|`IDiaSymbol*`|Limite superior de uma dimensão de matriz FORTRAN.|
 |[IDiaSymbol::get_upperBoundId](../../debugger/debug-interface-access/idiasymbol-get-upperboundid.md)|`DWORD`|ID do símbolo de limite superior.|
 

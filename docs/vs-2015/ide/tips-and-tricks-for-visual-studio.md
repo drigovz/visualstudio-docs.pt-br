@@ -6,15 +6,15 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.assetid: 20489db9-7441-4f8b-97de-c72070d569b1
 caps.latest.revision: 14
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 24c876edafaee848a050099fdb031f4637436f22
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 432a0eddece867972e5c5159f734b4589c22e218
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62430309"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299927"
 ---
 # <a name="tips-and-tricks-for-visual-studio"></a>Dicas e truques sobre o Visual Studio
 
@@ -141,9 +141,8 @@ Você pode navegar no Visual Studio de maneira mais fácil usando os atalhos nes
 
 Veja [Atalhos de teclado: Visual Studio Online, portal da Web do TFS e Team Explorer](/azure/devops/project/navigation/keyboard-shortcuts?view=vsts).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
-- [Blog do Visual Studio](http://blogs.msdn.com/b/visualstudio)
-- [Blog de dicas e truques sobre o Visual Studio](http://blogs.msdn.com/b/zainnab)
-- [Caixa de Ferramentas do Visual Studio no Canal 9](http://channel9.msdn.com/Shows/Visual-Studio-Toolbox)
-- [Visual Studio UserVoice](http://visualstudio.uservoice.com/forums/121579-visual-studio)
+- [Blog do Visual Studio](https://devblogs.microsoft.com/visualstudio/)
+- [Blog de dicas e truques sobre o Visual Studio](https://blogs.msdn.microsoft.com/zainnab/)
+- [Caixa de Ferramentas do Visual Studio no Canal 9](https://channel9.msdn.com/Shows/Visual-Studio-Toolbox)

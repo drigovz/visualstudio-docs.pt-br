@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: eefe0160328f1eb6b3fe841742547efe8be50ec1
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59664824"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68158270"
 ---
 # <a name="property-element-msbuild"></a>Elemento Property (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ Contém um nome e valor de propriedade definidos pelo usuário. Cada propriedade
   
 ### <a name="attributes"></a>Atributos  
   
-|Atributo|Descrição|  
+|Atributo|DESCRIÇÃO|  
 |---------------|-----------------|  
 |`Condition`|Atributo opcional.<br /><br /> Condição a ser avaliada. Para obter mais informações, consulte [Condições](../msbuild/msbuild-conditions.md).|  
   
@@ -54,7 +54,7 @@ Contém um nome e valor de propriedade definidos pelo usuário. Cada propriedade
   
 ### <a name="parent-elements"></a>Elementos pai  
   
-|Elemento|Descrição|  
+|Elemento|DESCRIÇÃO|  
 |-------------|-----------------|  
 |[PropertyGroup](../msbuild/propertygroup-element-msbuild.md)|Elemento de agrupamento para propriedades.|  
   
@@ -76,6 +76,6 @@ Contém um nome e valor de propriedade definidos pelo usuário. Cada propriedade
 </PropertyGroup>  
 ```  
   
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 [Propriedades MSBuild](msbuild-properties1.md)  
  [Referência do esquema de arquivos de projeto](../msbuild/msbuild-project-file-schema-reference.md)

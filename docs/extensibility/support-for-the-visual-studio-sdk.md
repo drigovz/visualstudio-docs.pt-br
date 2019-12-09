@@ -9,62 +9,59 @@ helpviewer_keywords:
 - newsgroups, Visual Studio SDK support
 - Web sites, Visual Studio SDK support
 ms.assetid: d9011f5a-cb53-418f-9d8f-74b15b9fc5f5
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 941ba0a890e854f449647977162183cbcac1bab8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2c939d15375696aeef47754eec31f63d15b4371a
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62432428"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72982423"
 ---
 # <a name="support-for-the-visual-studio-sdk"></a>Suporte para o SDK do Visual Studio
-Várias opções de suporte estão disponíveis para clientes que tenham dúvidas sobre como estender o ambiente de desenvolvimento integrado (IDE) do Visual Studio.
+Várias opções de suporte estão disponíveis para clientes que têm dúvidas sobre como estender o IDE (ambiente de desenvolvimento integrado) do Visual Studio.
 
 ## <a name="free-support"></a>Suporte gratuito
 
-### <a name="msdn-development-center"></a>Centro de desenvolvimento do MSDN
- O [Visual Studio Extensibility Developer Center](http://go.microsoft.com/fwlink/?LinkID=84381) no MSDN contém recursos que ajudam a responder a perguntas sobre como estender o Visual Studio. Por exemplo, há vários links para blogs de desenvolvedores VSIP.
-
-### <a name="microsoft-newsgroups"></a>Microsoft Newsgroups
- Membros da equipe de desenvolvimento do Visual Studio e outros desenvolvedores que estendem o Visual Studio geralmente participarem no grupo de notícias do vstudio. Esse grupo de notícias é um grupo de notícias gerenciado. Se você for um assinante do MSDN Universal, certifique-se de que você registre um alias não seja de spam para que seja possível para a Microsoft responder.
+### <a name="microsoft-newsgroups"></a>Grupos de notícias da Microsoft
+ Os membros da equipe de desenvolvimento do Visual Studio e outros desenvolvedores que estendem o Visual Studio Geralmente participam do grupo de notícias Microsoft. Public. vstudio. Extensibility. Este grupo de notícias é um grupo de notícias gerenciado. Se você for um assinante universal do MSDN, certifique-se de registrar um alias de não-spam para possibilitar que a Microsoft responda.
 
 ### <a name="msdn-forums"></a>Fóruns do MSDN
- O [fóruns do MSDN](http://go.microsoft.com/fwlink/?LinkID=76632) apresentar outra forma de bate-papo com colegas e especialistas. A interface gráfica do usuário (IU) dos fóruns é projetada para torná-los mais fáceis de usar do que grupos de notícias. O [Visual Studio Extensibility Forum](http://go.microsoft.com/fwlink/?LinkID=121964) é um bom lugar para começar a procurar respostas para perguntas de extensibilidade. Pesquise sempre antes de fazer uma pergunta porque outra pessoa pode já ter feito a mesma pergunta.
+ Os [fóruns do MSDN](https://social.msdn.microsoft.com/Forums/en-US/home) fornecem outra maneira de conversar com colegas e especialistas. A interface gráfica do usuário dos fóruns é projetada para torná-los mais fáceis de usar do que os grupos de notícias. O [Fórum de extensibilidade do Visual Studio](/azure/devops/integrate/index?view=azure-devops&viewFallbackFrom=vsts) é um bom lugar para começar a procurar respostas para perguntas de extensibilidade. Sempre pesquise antes de fazer uma pergunta porque outra pessoa pode já ter feito a mesma pergunta.
 
 ### <a name="visual-studio-gallery"></a>Galeria do Visual Studio
- O [Visual Studio Marketplace](https://marketplace.visualstudio.com/) é o lugar para extensões e código de exemplo. Você pode encontrar a experiência de ferramentas que aumentam a produtividade e o usuário com o Visual Studio, aplicativos de exemplo que mostram como usar os VSPackages e a estrutura de MEF (Managed Extensibility) e outros tipos de exemplos.
+ O [Visual Studio Marketplace](https://marketplace.visualstudio.com/) é o lugar para extensões e código de exemplo. Você pode encontrar ferramentas que melhoram sua produtividade e experiência do usuário com o Visual Studio, aplicativos de exemplo que mostram como usar VSPackages e o Managed Extensibility Framework (MEF) e outros tipos de exemplos.
 
-### <a name="visual-studio-sdk-samples"></a>Exemplos SDK do Visual Studio
+### <a name="visual-studio-sdk-samples"></a>Exemplos do SDK do Visual Studio
 
-Você pode encontrar exemplos de código-fonte aberto de extensões do SDK do VS no GitHub em [exemplos do Visual Studio](https://github.com/Microsoft/VSSDK-Extensibility-Samples). Esse repositório do GitHub contém exemplos que ilustram diversos recursos extensíveis no Visual Studio.
+Você pode encontrar exemplos de software livre de extensões do SDK do VS no GitHub em [exemplos do Visual Studio](https://github.com/Microsoft/VSSDK-Extensibility-Samples). Este repositório GitHub contém exemplos que ilustram vários recursos extensíveis no Visual Studio.
 
 ## <a name="included-support"></a>Suporte incluído
 
-### <a name="visual-studio-product-support"></a>Suporte de produto do Visual Studio
- Algum suporte está incluído com a compra de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] produtos. Para obter mais informações, consulte [suporte do Visual Studio](http://msdn.microsoft.com/vstudio/cc136615.aspx). A Microsoft mantém uma equipe dedicada para responder a perguntas sobre [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] extensibilidade.
+### <a name="visual-studio-product-support"></a>Suporte ao produto Visual Studio
+ Alguns suporte estão incluídos na compra de produtos [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Para obter mais informações, consulte [suporte do Visual Studio](https://msdn.microsoft.com/vstudio/cc136615.aspx). A Microsoft mantém uma equipe de suporte dedicada para responder a perguntas sobre a extensibilidade de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
 
-### <a name="msdn-subscription-support"></a>Suporte de assinatura do MSDN
- Pacotes de assinatura do MSDN também podem incluir algum suporte. Para obter mais informações, consulte [suporte ao assinante MSDN](https://msdn.microsoft.com/subscriptions/aa718661.aspx).
+### <a name="msdn-subscription-support"></a>Suporte a assinaturas do MSDN
+ Os pacotes de assinatura do MSDN também podem incluir algum suporte. Para obter mais informações, consulte [suporte a assinantes do MSDN](https://msdn.microsoft.com/subscriptions/aa718661.aspx).
 
 ## <a name="paid-support"></a>Suporte pago
 
-### <a name="developer-tools-support"></a>Suporte de ferramentas de desenvolvedor
+### <a name="developer-tools-support"></a>Suporte a Ferramentas para Desenvolvedores
 
-O suporte também pode ser adquirido. Uma variedade de ofertas de suporte estão disponíveis na categoria ferramentas de desenvolvedor no [Microsoft Help e centros de suporte](https://support.microsoft.com/supportforbusiness/productselection?fltadd=sps-business-1&sapId=4fd4947b-15ea-ce01-080f-97f2ca3c76e8).
+O suporte também pode ser adquirido. Uma variedade de ofertas de suporte está disponível na categoria Ferramentas para Desenvolvedores nos [centros de ajuda e suporte da Microsoft](https://support.microsoft.com/supportforbusiness/productselection?fltadd=sps-business-1&sapId=4fd4947b-15ea-ce01-080f-97f2ca3c76e8).
 
-Os clientes que desejam usar o [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] desenvolver pacotes complexos pode optar por adquirir um contrato de suporte Premier com a Microsoft. Para obter mais informações, consulte [suporte Microsoft Premier](https://support.microsoft.com/premier). Para empresas de pequeno [suporte avançado para parceiros](https://partner.microsoft.com/support/advanced-cloud-support) pode ser uma alternativa atraente para uma oferta de suporte Premier tradicional.
+Os clientes que desejam usar o [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] para desenvolver pacotes complexos podem considerar a compra de um contrato de Suporte Premier com a Microsoft. Para obter mais informações, consulte [Microsoft suporte Premier](https://support.microsoft.com/premier). Para pequenas empresas, o [suporte avançado para parceiros](https://partner.microsoft.com/support/advanced-cloud-support) pode ser uma alternativa atraente para uma oferta de suporte Premier tradicional.
 
 > [!NOTE]
-> Suporte padrão não pode ser usado para consulta ou para obter conselhos.
+> O suporte standard não pode ser usado para consulta ou para obter conselhos.
 
-Perguntas sobre as ofertas de suporte Premier em conjunto com o Programa VSIP podem ser enviadas a [ vsipsvs@microsoft.com ](mailto:vsipsvs@microsoft.com). Perguntas sobre o novo programa vantagens do parceiro podem ser enviadas a [ advantg@microsoft.com ](mailto:advantg@microsoft.com).
+Perguntas sobre Suporte Premier ofertas em conjunto com o programa VSIP podem ser enviadas para [vsipsvs@microsoft.com](mailto:vsipsvs@microsoft.com). As perguntas sobre o novo programa de benefícios do parceiro podem ser enviadas para [advantg@microsoft.com](mailto:advantg@microsoft.com).
 
-Informações sobre solicitações de suporte individual podem ser encontradas em [solicitações de suporte Individual](http://go.microsoft.com/fwlink/?LinkID=82385).
+Informações sobre solicitações de suporte individual podem ser encontradas em [solicitações de suporte individuais](https://support.microsoft.com/supportforbusiness/productselection).
 
 ## <a name="see-also"></a>Consulte também
 
-- [Fale conosco](../ide/talk-to-us.md)
+- [Fale conosco](../ide/feedback-options.md)

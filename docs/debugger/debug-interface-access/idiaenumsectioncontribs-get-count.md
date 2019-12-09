@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b7cd47426e08cf9dfbf0ceb7abe166e35499856c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1d12bf9190e8413d12998df24d95d2b14c1222a6
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62553956"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744337"
 ---
-# <a name="idiaenumsectioncontribsgetcount"></a>IDiaEnumSectionContribs::get_Count
+# <a name="idiaenumsectioncontribsget_count"></a>IDiaEnumSectionContribs::get_Count
 Recupera o número de contribuições de seção.
 
 ## <a name="syntax"></a>Sintaxe
@@ -33,9 +33,9 @@ HRESULT get_Count ( 
 #### <a name="parameters"></a>Parâmetros
  `pRetVal`
 
-[out] Retorna o número de contribuições de seção.
+fora Retorna o número de contribuições de seção.
 
-## <a name="return-value"></a>Valor de retorno
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
 
 ## <a name="see-also"></a>Consulte também

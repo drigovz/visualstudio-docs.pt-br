@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fb34098f8d69d3c8618c406eff9666d52eace1f2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7526ba6e62c9df22a2338adc80f5d56578502cdb
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62554138"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744935"
 ---
 # <a name="idiadatasourceloaddatafrompdb"></a>IDiaDataSource::loadDataFromPdb
-Abre e prepara um arquivo de banco de dados (. PDB) do programa como uma fonte de dados de depuração.
+Abre e prepara um arquivo de banco de dados do programa (. pdb) como uma fonte de dado de depuração.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -33,26 +33,26 @@ HRESULT loadDataFromPdb (
 #### <a name="parameters"></a>Parâmetros
 pdbPath
 
-[in] O caminho para o arquivo. PDB.
+no O caminho para o arquivo. pdb.
 
-## <a name="return-value"></a>Valor de retorno
-Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro. A tabela a seguir mostra os possíveis valores retornados para esse método.
+## <a name="return-value"></a>Valor retornado
+Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro. A tabela a seguir mostra os possíveis valores de retorno para esse método.
 
 |Valor|Descrição|
 |-----------|-----------------|
-|E_PDB_NOT_FOUND|Falha ao abrir o arquivo ou determinado que o arquivo tem um formato inválido.|
+|E_PDB_NOT_FOUND|Falha ao abrir o arquivo ou foi determinado que o arquivo tem um formato inválido.|
 |E_PDB_FORMAT|Tentativa de acessar um arquivo com um formato obsoleto.|
 |E_INVALIDARG|Parâmetro inválido.|
-|E_UNEXPECTED|Fonte de dados já foi preparada.|
+|E_UNEXPECTED|A fonte de dados já foi preparada.|
 
 ## <a name="remarks"></a>Comentários
-Esse método carrega os dados de depuração diretamente de um arquivo. PDB.
+Esse método carrega os dados de depuração diretamente de um arquivo. pdb.
 
-Para validar o arquivo. PDB em relação a critérios específicos, use o [idiadatasource:: Loadandvalidatedatafrompdb](../../debugger/debug-interface-access/idiadatasource-loadandvalidatedatafrompdb.md) método.
+Para validar o arquivo. pdb em relação a critérios específicos, use o método [IDiaDataSource:: loadAndValidateDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loadandvalidatedatafrompdb.md) .
 
-Para obter acesso para o processo de carregamento de dados (por meio de um mecanismo de retorno de chamada), use o [idiadatasource:: Loaddataforexe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) método.
+Para obter acesso ao processo de carregamento de dados (por meio de um mecanismo de retorno de chamada), use o método [IDiaDataSource:: loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) .
 
-Para carregar um arquivo. PDB diretamente da memória, use o [idiadatasource:: Loaddatafromistream](../../debugger/debug-interface-access/idiadatasource-loaddatafromistream.md) método.
+Para carregar um arquivo. pdb diretamente da memória, use o método [IDiaDataSource:: loadDataFromIStream](../../debugger/debug-interface-access/idiadatasource-loaddatafromistream.md) .
 
 ## <a name="example"></a>Exemplo
 

@@ -1,5 +1,5 @@
 ---
-title: 'Como: Especificar opções de instrumentação adicionais | Microsoft Docs'
+title: Como especificar opções de instrumentação adicionais | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -11,16 +11,17 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: c95add435824663e798d226e0be11ddbe06b8aba
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 2d1f7e912ed5960c52e3f0bfa40fe9b87e91a2e6
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62539134"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778694"
 ---
-# <a name="how-to-specify-additional-instrumentation-options"></a>Como: Especificar opções de instrumentação adicionais
+# <a name="how-to-specify-additional-instrumentation-options"></a>Como especificar opções de instrumentação adicionais
 
 Você pode instrumentar binários usando o IDE do Visual Studio ou usando ferramentas de linha de comando. Se você instrumentar um binário do IDE, será possível controlar o volume de dados coletados durante a instrumentação, especificando opções de instrumentação adicionais para a ferramenta [VSInstr](../profiling/vsinstr.md). Essas opções estão disponíveis no nível de sessão ou de destino. Por exemplo, para incluir ou excluir funções específicas durante o processo de instrumentação, use a opção adicional de instrumentação no nível de destino.
 

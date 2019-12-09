@@ -6,17 +6,17 @@ helpviewer_keywords:
 - shortcut keys [Help Viewer]
 - Help Viewer, shortcut keys
 ms.assetid: ec14c85d-7efb-441c-a46b-bee34a227e39
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5da8de5c392862c196fa03a69806ffb877af881c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: da8a90be59199abd569c37b43a61728c00695fa9
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975615"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821970"
 ---
 # <a name="shortcut-keys-in-help-viewer"></a>Teclas de atalho no Help Viewer
 
@@ -59,7 +59,7 @@ Você pode navegar no **Microsoft Help Viewer** usando as teclas de atalho na ta
 |Tópico|**Ctrl**+**Tab**|Mude entre guias da esquerda para a direita.|
 |Tópico|**Ctrl**+**Shift**+**Tab**|Mude entre guias da direita para a esquerda.|
 |Tópico|**Ctrl**+**W**|Feche a guia atual.|
-|Tópico|**Ctrl**+**_Número_**|Mude para uma guia específica, em que o **_Número_** está entre 1 e 9 e indica qual guia da sequência.|
+|Tópico|**Ctrl**+ **_Número_**|Mude para uma guia específica, em que o **_Número_** está entre 1 e 9 e indica qual guia da sequência.|
 |Tópico|**Ctrl**+**Alt**+**F4**|Feche outras guias de conteúdo.|
 |Tópico|**Ctrl**+**Shift**+**Sinal de adição**|Aumente o zoom em 10%.|
 |Tópico|**Ctrl**+**Sinal de subtração**|Diminua o zoom em 10%.|

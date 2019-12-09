@@ -1,5 +1,5 @@
 ---
-title: 'Erro: Depuração de modo misto é tem suporte apenas ao usar o Microsoft .NET Framework 2.0 ou mais recente | Microsoft Docs'
+title: 'Erro: há suporte para a depuração de modo misto somente ao usar o Microsoft .NET Framework 2,0 ou superior | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 f1_keywords:
@@ -14,19 +14,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2fb4d0dfaeb944700757c9ceec222dbd62dab9dd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c85dac85146c59d8aeba9f9cf85351b5bc17a81c
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62850675"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72737620"
 ---
-# <a name="error-mixed-mode-debugging-is-supported-only-when-using-microsoft-net-framework-20-or-greater"></a>Erro: Só há suporte para a depuração de modo misto quando o Microsoft .NET Framework 2.0 ou superior é usado
-Para depurar código nativo e gerenciado misto, você deverá ter o [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] versão 2.0, 3.0. 3.5 ou 4.0. A depuração de modo misto com versões mais recentes do [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] não é compatível.
+# <a name="error-mixed-mode-debugging-is-supported-only-when-using-microsoft-net-framework-20-or-greater"></a>Erro: a depuração de modo misto só é suportada durante o uso do Microsoft .NET Framework 2.0 ou superior
+Para depurar código nativo e gerenciado Misto, você deve ter .NET Framework versão 2,0, 3,0. 3.5 ou 4.0. Não há suporte para a depuração de modo misto com versões anteriores do .NET Framework.
 
 ### <a name="to-correct-this-error"></a>Para corrigir este erro
 
-- Atualizar o [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] para a versão 2.0, 3.0, 3.5 ou 4.0.
+- Atualize o .NET Framework para a versão 2,0, 3,0, 3,5 ou 4,0.
 
 ## <a name="see-also"></a>Consulte também
 - [Depuração remota](../debugger/remote-debugging.md)

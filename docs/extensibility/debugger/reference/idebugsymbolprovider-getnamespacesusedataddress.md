@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugSymbolProvider::GetNamespacesUsedAtAddress method
 ms.assetid: 392de54b-9af0-4567-953b-1b41acd1e05c
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d016dd475effa099ac4471e8bc9716f1965b569f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: adf78f67d9da92c0024b34ec53fc10f772b66ca1
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62915782"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66347540"
 ---
 # <a name="idebugsymbolprovidergetnamespacesusedataddress"></a>IDebugSymbolProvider::GetNamespacesUsedAtAddress
 Esse método cria um enumerador para os namespaces associados com o endereço de depuração.
@@ -38,14 +41,12 @@ int GetNamespacesUsedAtAddress(
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `pAddress`
+## <a name="parameters"></a>Parâmetros
+`pAddress`\
+[in] O endereço de depuração.
 
- [in] O endereço de depuração.
-
- `ppEnum`
-
- [out] Retorna um [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) enumerador para os namespaces.
+`ppEnum`\
+[out] Retorna um [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) enumerador para os namespaces.
 
 ## <a name="return-value"></a>Valor de retorno
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.

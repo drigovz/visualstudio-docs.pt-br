@@ -13,17 +13,17 @@ helpviewer_keywords:
 - Shell, launching exe files
 - Visual Studio, executables from
 ms.assetid: 737fda23-b852-45c4-a9fe-41cbce6ba70f
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 98163080c44a46330a4ba792f2ddde680c75b074
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 502bb7b1ab6236fd88c7c6dbc789737e50686d89
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62990046"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747737"
 ---
 # <a name="shell-command"></a>Comando Shell
 Inicia programas executáveis de dentro do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
@@ -35,31 +35,31 @@ Tools.Shell [/command] [/output] [/dir:folder] path [args]
 ```
 
 ## <a name="arguments"></a>Arguments
- `path`
+`path`
 
- Necessário. O caminho e o nome do arquivo a ser executado ou o documento a ser aberto. Será necessário um caminho completo se o arquivo especificado não estiver em um dos diretórios na variável de ambiente PATH.
+Necessário. O caminho e o nome do arquivo a ser executado ou o documento a ser aberto. Será necessário um caminho completo se o arquivo especificado não estiver em um dos diretórios na variável de ambiente PATH.
 
- `args`
+`args`
 
- Opcional. Quaisquer argumentos a serem passados para o programa invocado.
+Opcional. Quaisquer argumentos a serem passados para o programa invocado.
 
 ## <a name="switches"></a>Opções
- /commandwindow [ou] /command [ou] /c [ou] /cmd
+/commandwindow [ou] /command [ou] /c [ou] /cmd
 
- Opcional. Especifica que a saída para o executável é exibida na janela **Comando**.
+Opcional. Especifica que a saída para o executável é exibida na janela **Comando**.
 
- /dir:`folder` [ou] /d: `folder`
+/dir:`folder` [ou] /d: `folder`
 
- Opcional. Especifica o diretório de trabalho a ser definido quando o programa é executado.
+Opcional. Especifica o diretório de trabalho a ser definido quando o programa é executado.
 
- /outputwindow [ou] /output [ou] /out [ou] /o
+/outputwindow [ou] /output [ou] /out [ou] /o
 
- Opcional. Especifica que a saída para o executável é exibida na Janela de **Saída**.
+Opcional. Especifica que a saída para o executável é exibida na Janela de **Saída**.
 
 ## <a name="remarks"></a>Comentários
- As opções /dir /o /c devem ser especificadas imediatamente após `Tools.Shell`. Qualquer coisa especificada após o nome do executável é passada para ele como argumentos de linha de comando.
+As opções /dir /o /c devem ser especificadas imediatamente após `Tools.Shell`. Qualquer coisa especificada após o nome do executável é passada para ele como argumentos de linha de comando.
 
- O alias predefinido `Shell` pode ser usado no lugar de `Tools.Shell`.
+O alias predefinido `Shell` pode ser usado no lugar de `Tools.Shell`.
 
 > [!CAUTION]
 > Se o argumento `path` fornecer o caminho de diretório, bem como o nome de arquivo, é necessário colocar o nome do caminho inteiro em aspas literais ("""), conforme o seguinte:
@@ -68,7 +68,7 @@ Tools.Shell [/command] [/output] [/dir:folder] path [args]
 Tools.Shell """C:\Program Files\SomeFile.exe"""
 ```
 
- Cada conjunto de três aspas duplas (""") é interpretado pelo processador `Shell` como um único caractere de aspas duplas. Portanto, o exemplo anterior, na verdade, passa a seguinte cadeia de caracteres de caminho para o comando `Shell`:
+Cada conjunto de três aspas duplas (""") é interpretado pelo processador `Shell` como um único caractere de aspas duplas. Portanto, o exemplo anterior, na verdade, passa a seguinte cadeia de caracteres de caminho para o comando `Shell`:
 
 ```cmd
 "C:\Program Files\SomeFile.exe"
@@ -78,7 +78,7 @@ Tools.Shell """C:\Program Files\SomeFile.exe"""
 > Se você não colocar a cadeia de caracteres de caminho em aspas literais ("""), o Windows usará somente a parte da cadeia de caracteres que vai até o primeiro espaço. Por exemplo, se a cadeia de caracteres de caminho acima não tivesse sido colocada adequadamente entre aspas, Windows pareceria um arquivo denominado “Programa” localizado no diretório raiz C:\. Se um arquivo executável C:\Program.exe estivesse mesmo disponível, e inclusive tivesse sido instalado por adulteração ilícita, o Windows tentaria executar esse programa no lugar do programa “c:\Arquivos de Programas\SomeFile.exe”.
 
 ## <a name="example"></a>Exemplo
- O comando a seguir usa xcopy.exe para copiar o arquivo `MyText.txt` para a pasta `Text`. A saída de xcopy.exe é exibida na **Janela Comando** e na Janela de **Saída**.
+O comando a seguir usa xcopy.exe para copiar o arquivo `MyText.txt` para a pasta `Text`. A saída de xcopy.exe é exibida na **Janela Comando** e na Janela de **Saída**.
 
 ```cmd
 >Tools.Shell /o /c xcopy.exe c:\MyText.txt c:\Text\MyText.txt

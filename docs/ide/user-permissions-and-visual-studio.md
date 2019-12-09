@@ -7,17 +7,17 @@ helpviewer_keywords:
 - user permissions
 - administrative privileges
 - permissions
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 229b1606a8a7de18da7354852e3e5adb9123f5b5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 6086485ef20330de7971297f52a112d5183ee4a2
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62821637"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647344"
 ---
 # <a name="user-permissions-and-visual-studio"></a>Permissões de usuário e o Visual Studio
 
@@ -33,14 +33,15 @@ Você pode fazer quase tudo no IDE do Visual Studio como um usuário normal. Voc
 |Instalação|Instale o Visual Studio.|[Instalar o Visual Studio](../install/install-visual-studio.md)|
 ||Instalar, atualizar ou remover conteúdo da Ajuda local.|[Instalar e gerenciar o conteúdo da Ajuda local](../help-viewer/install-manage-local-content.md)|
 |Caixa de Ferramentas|Adicionar controles COM clássicos à **Caixa de ferramentas**.|[Caixa de Ferramentas](../ide/reference/toolbox.md)|
-|Compilação|Usar eventos de pós-build que registram um componente.|[Noções básicas sobre etapas e eventos de build personalizados](/cpp/ide/understanding-custom-build-steps-and-build-events)|
+|Compilação|Usar eventos de pós-build que registram um componente.|[Noções básicas sobre etapas e eventos de build personalizados](/cpp/build/understanding-custom-build-steps-and-build-events)|
 ||Incluir uma etapa de registro ao criar projetos C++.||
 |Depuração|Depurar aplicativos executados com permissões elevadas.|[Preparação e configurações do depurador](../debugger/debugger-settings-and-preparation.md)|
 ||Depurar aplicativos que são executados em uma conta de usuário diferente, como sites do ASP.NET.|[Depurar aplicativos ASP.NET e AJAX](../debugger/how-to-enable-debugging-for-aspnet-applications.md)|
 ||Depurar na zona para XBAP (aplicativos de navegador XAML).|[Host do WPF (PresentationHost.exe)](/dotnet/framework/wpf/app-development/wpf-host-presentationhost-exe)|
 ||Usar o emulador para depurar projetos de serviço de nuvem do Microsoft Azure.|[Depurar um serviço de nuvem no Visual Studio](/azure/vs-azure-tools-debug-cloud-services-virtual-machines)|
 ||Configurar um firewall para depuração remota.|[Depuração remota](../debugger/remote-debugging.md)|
-|Ferramentas de desempenho|Criar perfil de um aplicativo.|[Guia do iniciante à criação de perfil de desempenho](../profiling/beginners-guide-to-performance-profiling.md)|
+|Ferramentas de desempenho|Anexação a um aplicativo com privilégios elevados.|[Guia do iniciante à criação de perfil de desempenho](../profiling/beginners-guide-to-performance-profiling.md)|
+||Use o Criador de Perfil de GPU.|[Criação de perfil de GPU](../profiling/gpu-usage.md)|
 |Implantação|Implantar um aplicativo Web para o IIS (Serviços de Informações da Internet) em um computador local.|[Implantar um aplicativo Web ASP.NET usando o Visual Studio](/aspnet/web-forms/overview/older-versions-getting-started/deployment-to-a-hosting-provider/)|
 
 ## <a name="run-visual-studio-as-an-administrator"></a>Executar o Visual Studio como administrador

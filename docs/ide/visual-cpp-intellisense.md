@@ -4,15 +4,15 @@ ms.date: 10/08/2018
 ms.topic: conceptual
 author: mikeblome
 ms.author: mblome
-manager: wpickett
+manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6f92a1c9e39013c9c9cc0a320169f12e0c075b5a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7a0acaea4cf01d9c0158dfbf6d9feab37238f88f
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62582632"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461699"
 ---
 # <a name="visual-c-intellisense-features"></a>Funcionalidades do Visual C++ IntelliSense
 
@@ -22,7 +22,7 @@ Este artigo fornece uma visão geral dos recursos C++ IntelliSense. Para obter i
 
 ## <a name="intellisense-features-in-c"></a>Recursos do IntelliSense em C++
 
-IntelliSense é um nome dado a um conjunto de recursos que tornam a codificação mais conveniente. Uma vez que pessoas diferentes têm ideias diferentes sobre o que é conveniente, praticamente todos os recursos do IntelliSense podem ser habilitados ou desabilitados na caixa de diálogo **Opções**, em **Editor de Texto** > **C/C++** > **Avançado**. A caixa de diálogo **Opções** está disponível no menu **Ferramentas** na barra de menus.
+IntelliSense é um nome dado a um conjunto de recursos que tornam a codificação mais conveniente. Uma vez que pessoas diferentes têm ideias diferentes sobre o que é conveniente, praticamente todos os recursos do IntelliSense podem ser habilitados ou desabilitados na caixa de diálogo **Opções**, em **Editor de Texto** > **C/C++**  > **Avançado**. A caixa de diálogo **Opções** está disponível no menu **Ferramentas** na barra de menus.
 
 ![Caixa de diálogo Opções de Ferramentas](../ide/media/sintellisensecpptoolsoptions.PNG)
 
@@ -38,19 +38,19 @@ Para obter uma lista de ícones e seus significados, consulte [Modo de Exibiçã
 
 ![Janela Completar Palavra do Visual C&#43;&#43;](../ide/media/vs2015_cpp_complete_word.png)
 
-Na primeira vez que você invoca a lista de membros, ela mostra apenas membros acessíveis para o contexto atual. Se você pressionar **Ctrl**+**J** depois disso, ela mostrará todos os membros, independentemente da acessibilidade. Se você invocá-la uma terceira vez, uma lista ainda maior de elementos do programa será mostrada. Você pode desativar a lista de membros na caixa de diálogo **Opções**, em **Editor de Texto** > **C/C++** > **Geral** > **Listar membros automaticamente**.
+Na primeira vez que você invoca a lista de membros, ela mostra apenas membros acessíveis para o contexto atual. Se você pressionar **Ctrl**+**J** depois disso, ela mostrará todos os membros, independentemente da acessibilidade. Se você invocá-la uma terceira vez, uma lista ainda maior de elementos do programa será mostrada. Você pode desativar a lista de membros na caixa de diálogo **Opções**, em **Editor de Texto** > **C/C++**  > **Geral** > **Listar membros automaticamente**.
 
 ![Lista de membros do Visual C&#43;&#43;](../ide/media/vs2015_cpp_list_members.png)
 
 ## <a name="parameter-help"></a>Ajuda do parâmetro
 
-Quando você digita uma chave de abertura de uma chamada de função ou colchete angular em uma declaração de variável de modelo de classe, o editor mostra uma pequena janela com tipos de parâmetro para cada sobrecarga da função ou do construtor. O parâmetro "atual"&mdash;com base no local do cursor&mdash;está em negrito. Você pode desativar as informações de parâmetro na caixa de diálogo **Opções**, em **Editor de Texto** > **C/C++** > **Geral** > **Informações de parâmetro**.
+Quando você digita uma chave de abertura de uma chamada de função ou colchete angular em uma declaração de variável de modelo de classe, o editor mostra uma pequena janela com tipos de parâmetro para cada sobrecarga da função ou do construtor. O parâmetro "atual"&mdash;com base no local do cursor&mdash;está em negrito. Você pode desativar as informações de parâmetro na caixa de diálogo **Opções**, em **Editor de Texto** > **C/C++**  > **Geral** > **Informações de parâmetro**.
 
 ![Ajuda de parâmetro do Visual C&#43;&#43;](../ide/media/vs_2015_cpp_param_help.png)
 
 ## <a name="quick-info"></a>Informação Rápida
 
-Quando você passa o cursor do mouse sobre uma variável, aparece uma pequena janela embutida que mostra as informações de tipo e o cabeçalho no qual o tipo é definido. Passe o cursor do mouse sobre uma chamada de função para ver a assinatura da função. Você pode desativar as Informações Rápidas na caixa de diálogo **Opções**, em **Editor de Texto** > **C/C++** > **Avançado** > **Informações Rápidas Automáticas**.
+Quando você passa o cursor do mouse sobre uma variável, aparece uma pequena janela embutida que mostra as informações de tipo e o cabeçalho no qual o tipo é definido. Passe o cursor do mouse sobre uma chamada de função para ver a assinatura da função. Você pode desativar as Informações Rápidas na caixa de diálogo **Opções**, em **Editor de Texto** > **C/C++**  > **Avançado** > **Informações Rápidas Automáticas**.
 
 ![QuickInfo do Visual C&#43;&#43;](../ide/media/vs2015_cpp_quickinfo.png)
 
@@ -90,7 +90,7 @@ Se você alterar o projeto ativo para Android, as linhas onduladas mudarão:
 
 ## <a name="intellisense-for-stand-alone-files"></a>IntelliSense para arquivos autônomos
 
-Ao abrir um arquivo único fora de qualquer projeto, você ainda obtém o IntelliSense. Você pode habilitar ou desabilitar os recursos do IntelliSense específicos na caixa de diálogo **Opções**, em **Editor de Texto** > **C/C++** > **Avançado**. Para configurar o IntelliSense para arquivos únicos que não fazem parte de um projeto, procure a seção **IntelliSense e navegação para arquivos que não são de projeto**.
+Ao abrir um arquivo único fora de qualquer projeto, você ainda obtém o IntelliSense. Você pode habilitar ou desabilitar os recursos do IntelliSense específicos na caixa de diálogo **Opções**, em **Editor de Texto** > **C/C++**  > **Avançado**. Para configurar o IntelliSense para arquivos únicos que não fazem parte de um projeto, procure a seção **IntelliSense e navegação para arquivos que não são de projeto**.
 
 ![IntelliSense de arquivo único do Visual C&#43;&#43;](../ide/media/vs2015_cpp_single_file_intellisense.png)
 
@@ -100,7 +100,7 @@ Por padrão, IntelliSense de arquivo único usa apenas diretórios de inclusão 
 
 ## <a name="enable-or-disable-features"></a>Habilitar ou desabilitar funcionalidades
 
-Uma vez que pessoas diferentes têm ideias diferentes sobre o que é conveniente, praticamente todos os recursos do IntelliSense podem ser habilitados ou desabilitados na caixa de diálogo **Opções**, em **Editor de Texto** > **C/C++** > **Avançado**. A caixa de diálogo **Opções** está disponível no menu **Ferramentas** na barra de menus.
+Uma vez que pessoas diferentes têm ideias diferentes sobre o que é conveniente, praticamente todos os recursos do IntelliSense podem ser habilitados ou desabilitados na caixa de diálogo **Opções**, em **Editor de Texto** > **C/C++**  > **Avançado**. A caixa de diálogo **Opções** está disponível no menu **Ferramentas** na barra de menus.
 
 ![Caixa de diálogo Opções de Ferramentas](../ide/media/sintellisensecpptoolsoptions.PNG)
 

@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugCustomAttribute::GetParentField
 ms.assetid: bcdfdf37-bfcf-4988-a7b8-4c731d0af1b0
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 158887e9f2d7d7b250b435570d6780e460508816
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 6a99310520109dad6a1b8084405119e0a106ad89
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62921653"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66350055"
 ---
 # <a name="idebugcustomattributegetparentfield"></a>IDebugCustomAttribute::GetParentField
 Obtém o campo ao qual o atributo personalizado está anexado.
@@ -36,10 +39,9 @@ int GetParentField(
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `ppField`
-
- [out] Retorna o [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) objeto que representa o campo ao qual o atributo personalizado está anexado.
+## <a name="parameters"></a>Parâmetros
+`ppField`\
+[out] Retorna o [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) objeto que representa o campo ao qual o atributo personalizado está anexado.
 
 ## <a name="return-value"></a>Valor de retorno
  Se for bem-sucedido, retornará S_OK; Caso contrário, retornará um código de erro.

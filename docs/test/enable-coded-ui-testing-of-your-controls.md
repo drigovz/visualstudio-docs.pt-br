@@ -2,17 +2,17 @@
 title: Habilitar testes de IU codificado dos controles
 ms.date: 11/04/2016
 ms.topic: conceptual
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: 6f4ec35c79bd71351d830428cce39b41b7308cf7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+author: jillre
+ms.openlocfilehash: ea58dc703c5ad860683017c39d9d37d9b5cccd04
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62783540"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72664954"
 ---
 # <a name="enable-coded-ui-testing-of-your-controls"></a>Habilitar testes de IU codificado dos controles
 
@@ -26,16 +26,16 @@ Implemente o suporte à estrutura de teste de IU codificado para que seu control
 
 O construtor de teste de IU codificado captura informações sobre os controles que ele encontra durante uma gravação e, em seguida, gera código para repetir essa sessão. Se o controle não der suporte à acessibilidade, o teste de IU codificado capturará ações (como cliques do mouse) usando coordenadas da tela. Quando o teste é executado, o código gerado emite as ações nas mesmas coordenadas de tela. Se o controle for exibido em um local diferente na tela quando o teste for reproduzido, o código gerado falhará ao executar a ação. Se não implementar a acessibilidade para o controle, talvez você veja falhas de teste se o teste for reproduzido em configurações de tela diferentes, em ambientes diferentes ou quando o layout da IU for alterada.
 
- ![CUIT&#95;RecordNoSupport](../test/media/cuit_recordnosupport.png)
+![CUIT&#95;RecordNoSupport](../test/media/cuit_recordnosupport.png)
 
- Se você implementar a acessibilidade, o construtor de teste de IU codificado usará isso para capturar informações sobre seu controle quando registrar um teste. Em seguida, quando você executar o teste, o código gerado reproduzirá esses eventos em relação ao seu controle, mesmo que ele esteja em outro lugar na interface do usuário. Os autores do teste também podem criar asserções usando as propriedades básicas do controle.
+Se você implementar a acessibilidade, o construtor de teste de IU codificado usará isso para capturar informações sobre seu controle quando registrar um teste. Em seguida, quando você executar o teste, o código gerado reproduzirá esses eventos em relação ao seu controle, mesmo que ele esteja em outro lugar na interface do usuário. Os autores do teste também podem criar asserções usando as propriedades básicas do controle.
 
- ![CUIT&#95;Record](../test/media/cuit_record.png)
+![CUIT&#95;Record](../test/media/cuit_record.png)
 
 ### <a name="to-support-record-and-playback-property-validation-and-navigation-for-a-windows-forms-control"></a>Para dar suporte à gravação e reprodução, validação de propriedade e navegação para controle do Windows Forms
- Implemente a acessibilidade para seu controle conforme descrito no procedimento a seguir e explicado em detalhes em <xref:System.Windows.Forms.AccessibleObject>.
+Implemente a acessibilidade para seu controle conforme descrito no procedimento a seguir e explicado em detalhes em <xref:System.Windows.Forms.AccessibleObject>.
 
- ![CUIT&#95;Accessible](../test/media/cuit_accessible.png)
+![CUIT&#95;Accessible](../test/media/cuit_accessible.png)
 
 1. Implemente uma classe que seja derivada de <xref:System.Windows.Forms.Control.ControlAccessibleObject> e substitua a propriedade <xref:System.Windows.Forms.Control.AccessibilityObject%2A> para retornar um objeto da sua classe.
 
@@ -75,7 +75,7 @@ O construtor de teste de IU codificado captura informações sobre os controles 
 
 Depois de implementar o suporte básico para registro e reprodução e validação de propriedade, você poderá disponibilizar as propriedades personalizadas do controle para testes de IU codificados implementando um plug-in <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider>. Por exemplo, o procedimento a seguir cria um provedor de propriedade que permite que os testes de IU codificados acessem a propriedade State dos controles filho de CurveLegend do controle do gráfico:
 
- ![CUIT&#95;CustomProps](../test/media/cuit_customprops.png)
+![CUIT&#95;CustomProps](../test/media/cuit_customprops.png)
 
 ### <a name="to-support-custom-property-validation"></a>Para dar suporte à validação de propriedade personalizada
 
@@ -159,15 +159,15 @@ Se você já implementou um provedor de propriedade para conceder acesso às pro
 
 ## <a name="support-intent-aware-actions-by-implementing-an-action-filter"></a>Suporte a ações com reconhecimento de intenção com a implementação de um filtro de ação
 
- Quando o Visual Studio registra um teste, ele captura cada evento do mouse e do teclado. No entanto, em alguns casos, a intenção da ação pode ser perdida na série de eventos de mouse e de teclado. Por exemplo, se o controle dá suporte ao preenchimento automático, o mesmo conjunto de eventos de mouse e teclado podem resultar em um valor diferente quando o teste é reproduzido em um ambiente diferente. Você pode adicionar um plug-in de filtro de ação que substitui a série de eventos de teclado e mouse por uma única ação. Dessa forma, você pode substituir a série de eventos de mouse e de teclado que selecionam um valor com uma única ação que define o valor. Isso protege os testes de UI codificados contra as diferenças no preenchimento automático de um ambiente para outro.
+Quando o Visual Studio registra um teste, ele captura cada evento do mouse e do teclado. No entanto, em alguns casos, a intenção da ação pode ser perdida na série de eventos de mouse e de teclado. Por exemplo, se o controle dá suporte ao preenchimento automático, o mesmo conjunto de eventos de mouse e teclado podem resultar em um valor diferente quando o teste é reproduzido em um ambiente diferente. Você pode adicionar um plug-in de filtro de ação que substitui a série de eventos de teclado e mouse por uma única ação. Dessa forma, você pode substituir a série de eventos de mouse e de teclado que selecionam um valor com uma única ação que define o valor. Isso protege os testes de UI codificados contra as diferenças no preenchimento automático de um ambiente para outro.
 
 ### <a name="to-support-intent-aware-actions"></a>Para dar suporte a ações com reconhecimento de intenção
 
 ![CUIT&#95;Actions](../test/media/cuit_actions.png)
 
-1. Implemente uma classe de filtro de ação que seja derivada de <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter>, substituindo as propriedades <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.ApplyTimeout%2A>, <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.Category%2A>, <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.Enabled%2A>, <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.FilterType%2A>, <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.Group%2A> e <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.Name%2A>.
+1. Implemente uma classe de filtro de ação derivada de [UITestActionFilter](/previous-versions/visualstudio/visual-studio-2012/dd985757(v=vs.110)), substituindo as propriedades [ApplyTimeout](/previous-versions/visualstudio/visual-studio-2012/dd984649%28v%3dvs.110%29), [Category](/previous-versions/visualstudio/visual-studio-2012/dd986905(v=vs.110)), [Enabled](/previous-versions/visualstudio/visual-studio-2012/dd985633(v=vs.110)), [FilterType](/previous-versions/visualstudio/visual-studio-2012/dd778726(v=vs.110)), [Group](/previous-versions/visualstudio/visual-studio-2012/dd779219(v=vs.110)) e [Name](/previous-versions/visualstudio/visual-studio-2012/dd998334(v=vs.110)).
 
-1. Substitua <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.ProcessRule%2A>. Esse exemplo substitui uma ação de clicar duas vezes por uma ação de clique único.
+1. Substitua [ProcessRule](/previous-versions/visualstudio/visual-studio-2012/dd987281(v=vs.110)). Esse exemplo substitui uma ação de clicar duas vezes por uma ação de clique único.
 
 1. Adicione o filtro de ação ao método <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage.GetService%2A> do seu pacote de extensão.
 

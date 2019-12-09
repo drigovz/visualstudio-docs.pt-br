@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptParse32::AddScriptlet | Microsoft Docs
+title: 'IActiveScriptParse32:: AddScriptlet | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -10,15 +10,15 @@ ms.assetid: fcf11eb2-8e71-4cca-afda-a91791c243ff
 caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
-ms.openlocfilehash: b5a680eea5f5695d3a7253b9cf722af6ebf537c6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b48d89ce2c49bd971fe298d2b4773aad8b65e8c3
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62954877"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72561701"
 ---
 # <a name="iactivescriptparse32addscriptlet"></a>IActiveScriptParse32::AddScriptlet
-Adiciona um scriptlet de código ao script. Esse método é usado em ambientes onde o estado persistente do script está entremeado com o documento de host e o host é responsável por restaurar o script, em vez de por meio um `IPersist*` interface. Os exemplos primários são linguagens de script HTML que permitem miniscripts de código inserido no documento HTML a ser anexado a eventos intrínsecos (por exemplo, ONCLICK="button1.text='Exit'").  
+Adiciona um Scriptlet de código ao script. Esse método é usado em ambientes em que o estado persistente do script é entrelaçado com o documento host e o host é responsável por restaurar o script, em vez de uma interface `IPersist*`. Os exemplos principais são linguagens de script HTML que permitem que scriptlets de código inserido no documento HTML seja anexado a eventos intrínsecos (por exemplo, OnClick = "Button1. Text = ' Exit '").  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -40,55 +40,55 @@ HRESULT AddScriptlet(
   
 #### <a name="parameters"></a>Parâmetros  
  `pstrDefaultName`  
- [in] Endereço de um nome padrão para associar o scriptlet. Se o scriptlet não contiver informações de nomeação (como no exemplo ONCLICK acima), esse nome será usado para identificar o scriptlet. Se esse parâmetro for `NULL`, o mecanismo de script fabrica um nome exclusivo, se necessário.  
+ no Endereço de um nome padrão a ser associado ao scriptlet. Se o scriptlet não contiver informações de nomenclatura (como no exemplo OnClick acima), esse nome será usado para identificar o scriptlet. Se esse parâmetro for `NULL`, o mecanismo de script fabricará um nome exclusivo, se necessário.  
   
  `pstrCode`  
- [in] Endereço do texto de scriptlet a ser adicionado. A interpretação dessa cadeia de caracteres depende da linguagem de script.  
+ no Endereço do texto de scriptlet a ser adicionado. A interpretação dessa cadeia de caracteres depende da linguagem de script.  
   
  `pstrItemName`  
- [in] Endereço de um buffer que contém o nome do item associado a este scriptlet. Esse parâmetro, além de `pstrSubItemName`, identifica o objeto para o qual o scriptlet é um manipulador de eventos.  
+ no Endereço de um buffer que contém o nome do item associado a este scriptlet. Esse parâmetro, além de `pstrSubItemName`, identifica o objeto para o qual o scriptlet é um manipulador de eventos.  
   
  `pstrSubItemName`  
- [in] Endereço de um buffer que contém o nome de um `subobject` do item nomeado com a qual este scriptlet está associado; esse nome deve ser encontrado nas informações de tipo do item nomeado. Esse parâmetro é NULL se o scriptlet deve ser associado ao item nomeado, em vez de um `subitem`. Esse parâmetro, além de `pstrItemName`, identifica o objeto específico para o qual o scriptlet é um manipulador de eventos.  
+ no Endereço de um buffer que contém o nome de um `subobject` do item nomeado ao qual este scriptlet está associado; Esse nome deve ser encontrado nas informações de tipo do item nomeado. Esse parâmetro será nulo se o scriptlet for associado ao item nomeado em vez de um `subitem`. Esse parâmetro, além de `pstrItemName`, identifica o objeto específico para o qual o scriptlet é um manipulador de eventos.  
   
  `pstrEventName`  
- [in] Endereço de um buffer que contém o nome do evento para o qual o scriptlet é um manipulador de eventos.  
+ no Endereço de um buffer que contém o nome do evento para o qual o scriptlet é um manipulador de eventos.  
   
  `pstrDelimiter`  
- [in] Endereço do delimitador final do scriptlet. Quando o `pstrCode` parâmetro é analisado a partir de um fluxo de texto, o host normalmente usa um delimitador, como duas aspas ("), para detectar o final do scriptlet. Esse parâmetro especifica o delimitador que o host usou, permitindo que o mecanismo de script forneça algum pré-processamento primitivo condicional (por exemplo, substituindo uma aspa simples ['] por duas aspas simples para uso como um delimitador). Exatamente como (e se) o script faz mecanismo usa essas informações depende o mecanismo de script. Defina esse parâmetro como NULL se o host não usou um delimitador para marcar o final do scriptlet.  
+ no Endereço do delimitador de fim do scriptlet. Quando o parâmetro `pstrCode` é analisado a partir de um fluxo de texto, o host geralmente usa um delimitador, como duas aspas simples (' '), para detectar o final do scriptlet. Esse parâmetro especifica o delimitador usado pelo host, permitindo que o mecanismo de script forneça algum pré-processamento primitivo condicional (por exemplo, substituindo uma aspa simples ['] por duas aspas simples para uso como um delimitador). Exatamente como (e se) o mecanismo de script usa essas informações depende do mecanismo de script. Defina esse parâmetro como NULL se o host não tiver usado um delimitador para marcar o final do scriptlet.  
   
  `dwSourceContextCookie`  
- [in] Valor definido pelo aplicativo que é usado para fins de depuração.  
+ no Valor definido pelo aplicativo que é usado para fins de depuração.  
   
  `ulStartingLineNumber`  
- [in] Valor com base em zero que especifica em qual linha a análise começará.  
+ no Valor de base zero que especifica em qual linha a análise será iniciada.  
   
  `dwFlags`  
- [in] Sinalizadores associados com o scriptlet. Pode ser uma combinação dos seguintes valores:  
+ no Sinalizadores associados ao scriptlet. Pode ser uma combinação dos seguintes valores:  
   
-|Valor de retorno|Significado|  
+|Valor retornado|Significado|  
 |------------------|-------------|  
-|SCRIPTTEXT_ISVISIBLE|Indica que o texto do script deve ser visível (e, portanto, pode ser chamado por nome) como um método global no espaço para nome do script.|  
-|SCRIPTTEXT_ISPERSISTENT|Indica que o código adicionado durante esta chamada deve ser salvo se o mecanismo de script é salvo (por exemplo, por meio de uma chamada para `IPersist*::Save`), ou se o mecanismo de script for redefinido por uma transição de volta ao estado inicializado. Para obter mais informações sobre esse estado, consulte estados de mecanismo de Script.|  
+|SCRIPTTEXT_ISVISIBLE|Indica que o texto do script deve estar visível (e, portanto, pode ser chamado por nome) como um método global no espaço de nome do script.|  
+|SCRIPTTEXT_ISPERSISTENT|Indica que o código adicionado durante essa chamada deve ser salvo se o mecanismo de script for salvo (por exemplo, por meio de uma chamada para `IPersist*::Save`) ou se o mecanismo de script for redefinido por meio de uma transição de volta para o estado inicializado. Para obter mais informações sobre esse Estado, consulte script engine Statess.|  
   
- `pbstrName` ,  
- [out] Nome real usado para identificar o scriptlet. Isso é para estar na ordem de preferência: um nome especificado explicitamente no texto de scriptlet, o nome padrão fornecido no `pstrDefaultName`, ou um nome exclusivo sintetizadas pelo mecanismo de script.  
+ `pbstrName`,  
+ fora Nome real usado para identificar o scriptlet. Isso deve ser em ordem de preferência: um nome especificado explicitamente no texto do scriptlet, o nome padrão fornecido em `pstrDefaultName` ou um nome exclusivo sintetizado pelo mecanismo de script.  
   
- `pexcepinfo` ,  
- [out] Endereço de uma estrutura que contém informações de exceção. Essa estrutura deve ser preenchida se DISP_E_EXCEPTION for retornado.  
+ `pexcepinfo`,  
+ fora Endereço de uma estrutura que contém informações de exceção. Essa estrutura deve ser preenchida se DISP_E_EXCEPTION for retornado.  
   
-## <a name="return-value"></a>Valor de retorno  
+## <a name="return-value"></a>Valor retornado  
  Retorna um dos seguintes valores:  
   
-|Valor de retorno|Significado|  
+|Valor retornado|Significado|  
 |------------------|-------------|  
 |`S_OK`|Êxito.|  
-|`DISP_E_EXCEPTION`|Ocorreu uma exceção na análise do scriptlet. O `pexcepinfo` parâmetro contém informações sobre a exceção.|  
+|`DISP_E_EXCEPTION`|Ocorreu uma exceção na análise do scriptlet. O parâmetro `pexcepinfo` contém informações sobre a exceção.|  
 |`E_INVALIDARG`|Um argumento era inválido.|  
-|`E_NOTIMPL`|Não há suporte para esse método; o mecanismo de script não oferece suporte à inclusão de miniscripts recepção de evento.|  
+|`E_NOTIMPL`|Não há suporte para esse método; o mecanismo de script não dá suporte à adição de scriptlets de coletor de eventos.|  
 |`E_POINTER`|Um ponteiro inválido foi especificado.|  
-|`E_UNEXPECTED`|A chamada não era esperada (por exemplo, o mecanismo de script ainda não foi carregado ou inicializado) e, portanto, com falha.|  
-|`OLESCRIPT_E_INVALIDNAME`|O nome padrão fornecido é inválido nessa linguagem de script.|  
+|`E_UNEXPECTED`|A chamada não era esperada (por exemplo, o mecanismo de script ainda não foi carregado ou inicializado) e, portanto, falhou.|  
+|`OLESCRIPT_E_INVALIDNAME`|O nome padrão fornecido é inválido nesta linguagem de script.|  
 |`OLESCRIPT_E_SYNTAX`|Ocorreu um erro de sintaxe não especificado no scriptlet.|  
   
 ## <a name="see-also"></a>Consulte também  

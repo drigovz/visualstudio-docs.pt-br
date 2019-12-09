@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - GETNAME_TYPE enumeration
 ms.assetid: 2f9f1679-e9e8-4c9c-ac90-aa07bfe69914
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ae68c77e2d6a41adfff6b49e55bbc6df4393fec7
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 1bdcbc4171c8a481ee0c45456ef5600f5150c6d0
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56701713"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66317577"
 ---
 # <a name="getnametype"></a>GETNAME_TYPE
 Especifica o tipo de nome de arquivos a serem recuperados.
@@ -49,20 +52,27 @@ public enum enum_GETNAME_TYPE {
 };
 ```
 
-## <a name="members"></a>Membros
-GN_NAME Especifica um nome amigável do documento ou do contexto.
+## <a name="fields"></a>Campos
+`GN_NAME`\
+Especifica um nome amigável do documento ou do contexto.
 
-GN_FILENAME Especifica o caminho completo do documento ou do contexto.
+`GN_FILENAME`\
+Especifica o caminho completo do documento ou do contexto.
 
-GN_BASENAME Especifica um nome de arquivo base, em vez de um caminho completo do documento ou do contexto.
+`GN_BASENAME`\
+Especifica um nome de arquivo base, em vez de um caminho completo do documento ou do contexto.
 
-GN_MONIKERNAME Especifica um nome exclusivo do documento ou no contexto na forma de um moniker.
+`GN_MONIKERNAME`\
+Especifica um nome exclusivo do documento ou no contexto na forma de um moniker.
 
-GN_URL Especifica um nome de URL do documento ou do contexto.
+`GN_URL`\
+Especifica um nome de URL do documento ou do contexto.
 
-GN_TITLE Especifica um título do documento, se houver.
+`GN_TITLE`\
+Especifica um título do documento, se houver.
 
-Processa a GN_STARTPAGEURL obtém a URL para o início da página.
+`GN_STARTPAGEURL`\
+Obtém a URL da página inicial para processos.
 
 ## <a name="remarks"></a>Comentários
 Esses valores são passados como parâmetros para o [GetName](../../../extensibility/debugger/reference/idebugdocument2-getname.md), [GetName](../../../extensibility/debugger/reference/idebugdocumentcontext2-getname.md), e [GetName](../../../extensibility/debugger/reference/idebugprocess2-getname.md) métodos para especificar que tipo de nome a ser retornado.

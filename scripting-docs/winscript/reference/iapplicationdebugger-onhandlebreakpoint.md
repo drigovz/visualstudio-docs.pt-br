@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: edf8816cd646596ce1f897dfd9d949790d52b7b1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3796ea1f50f0c4bcf945dbc10592c048db22757b
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62991336"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577837"
 ---
 # <a name="iapplicationdebuggeronhandlebreakpoint"></a>IApplicationDebugger::onHandleBreakPoint
 Manipula um evento de ponto de interrupção.  
@@ -39,15 +39,15 @@ HRESULT onHandleBreakPoint(
   
 #### <a name="parameters"></a>Parâmetros  
  `prpt`  
- [in] O thread em que o ponto de interrupção ocorreu.  
+ no O thread em que ocorreu o ponto de interrupção.  
   
  `br`  
- [in] O motivo para o ponto de interrupção.  
+ no O motivo do ponto de interrupção.  
   
  `pError`  
- [in] Informações de erro de tempo de execução, fornecida quando o valor de `br` é breakreason_error ter.  
+ no Informações de erro de tempo de execução, fornecidas quando o valor de `br` é BREAKREASON_ERROR.  
   
-## <a name="return-value"></a>Valor de retorno  
+## <a name="return-value"></a>Valor retornado  
  O método retorna um `HRESULT`. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.  
   
 |Valor|Descrição|  
@@ -57,10 +57,10 @@ HRESULT onHandleBreakPoint(
 ## <a name="remarks"></a>Comentários  
  Esse método é chamado quando um ponto de interrupção é atingido e `IDebugApplication::HandleBreakPoint` é chamado.  
   
- O aplicativo permanecerá suspenso até que o IDE de depurador chama `IRemoteDebugApplication::ResumeFromBreakPoint`.  
+ O aplicativo permanecerá suspenso até que o IDE do depurador chame `IRemoteDebugApplication::ResumeFromBreakPoint`.  
   
 ## <a name="see-also"></a>Consulte também  
- [Interface IApplicationDebugger](../../winscript/reference/iapplicationdebugger-interface.md)   
+   de [interface IApplicationDebugger](../../winscript/reference/iapplicationdebugger-interface.md)  
  [IDebugApplication::HandleBreakPoint](../../winscript/reference/idebugapplication-handlebreakpoint.md)   
  [IRemoteDebugApplication::ResumeFromBreakPoint](../../winscript/reference/iremotedebugapplication-resumefrombreakpoint.md)   
  [BREAKREASON Enumeration](../../winscript/reference/breakreason-enumeration.md)

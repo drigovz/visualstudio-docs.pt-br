@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eac1b6d88917ca94db82a3e4e8c20c4be3060560
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 16287d83c19ef01f5ba59127ce49bec4b7312b4b
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62833191"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744217"
 ---
-# <a name="idiaenumsegmentsgetcount"></a>IDiaEnumSegments::get_Count
+# <a name="idiaenumsegmentsget_count"></a>IDiaEnumSegments::get_Count
 Recupera o número de segmentos.
 
 ## <a name="syntax"></a>Sintaxe
@@ -34,7 +34,7 @@ HRESULT get_Count ( 
  pRetVal
 - [out, retval] Retorna o número de segmentos.
 
-## <a name="return-value"></a>Valor de retorno
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
 
 ## <a name="see-also"></a>Consulte também

@@ -12,13 +12,13 @@ caps.latest.revision: 30
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6d8050ea7447a67f50f42157d57c17d3f1f8a329
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60038626"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68160594"
 ---
-# <a name="starting-to-develop-visual-studio-extensions"></a>Começando a desenvolver extensões do Visual Studio
+# <a name="starting-to-develop-visual-studio-extensions"></a>Começar a desenvolver extensões do Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Se você nunca escreveu uma extensão do Visual Studio antes, você provavelmente terá algumas perguntas. Apresentaremos alguns dos mais comuns aqui. Se você não vir as informações que você está procurando, use os botões de comentários (**esta página foi útil?** na parte inferior da tela) para fazer o que você deseja.
@@ -77,7 +77,7 @@ Se você nunca escreveu uma extensão do Visual Studio antes, você provavelment
 
 - Modelo de projeto do VSIX: [Introdução ao modelo de projeto do VSIX](../extensibility/getting-started-with-the-vsix-project-template.md)
 
-- Shell isolado do Visual Studio: [Passo a passo: Criando um aplicativo básico de Shell isolado](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)
+- Shell isolado do Visual Studio: [Passo a passo: criar um aplicativo básico de Shell isolado](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)
 
 ## <a name="how-do-i-get-my-extension-to-look-like-visual-studio"></a>Como obtenho minha extensão para se parecer com o Visual Studio?
  Obtenha ótimas dicas para projetar a interface do usuário para a sua extensão em [diretrizes de experiência de usuário do Visual Studio](../extensibility/ux-guidelines/visual-studio-user-experience-guidelines.md).

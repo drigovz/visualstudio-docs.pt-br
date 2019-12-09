@@ -10,11 +10,11 @@ author: mikeblome
 ms.author: mblome
 manager: jillfra
 ms.openlocfilehash: e8361ec9f93ff150d3fd29bce315f635bd00048b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60068633"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68142144"
 ---
 # <a name="using-rule-sets-to-specify-the-c-rules-to-run"></a>Usando conjuntos de regras para especificar as regras do C++ para execução
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,7 +63,7 @@ Na [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] e [!INCLUDE[vsUltShort](
   
 - Para recolher as regras em todos os grupos, escolha **Recolher tudo**.  
   
-- Para alterar o campo que as regras são agrupadas por, escolha o campo do **Group By** lista. Para exibir as regras não agrupadas, escolha  **\<None >**.  
+- Para alterar o campo que as regras são agrupadas por, escolha o campo do **Group By** lista. Para exibir as regras não agrupadas, escolha  **\<None >** .  
   
 - Para adicionar ou remover campos nas colunas de regra, escolha **opções de coluna**.  
   

@@ -6,14 +6,15 @@ ms.assetid: d3dc6a7e-bc0f-48a6-a4ec-f386348bb296
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: ab218f8dabb2b4360c1be17d809399a752f7cc2c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 62c16c2d578a38187b4a58958466597a5e4d297d
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62972403"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778382"
 ---
 # <a name="processon-and-processoff"></a>ProcessOn e ProcessOff
 Os subcomandos VSPerfCmd.exe **ProcessOff** e **ProcessOn** pausam e retomam a criação de perfil para o processo especificado em uma sessão de criação de perfil de linha de comando. **ProcessOff** interrompe o processo de criação de perfil e **ProcessOn** inicia o processo de criação de perfil.
@@ -41,20 +42,20 @@ VSPerfCmd.exe /{ProcessOff|ProcessOn}:PID [Options]
  `PID` O identificador inteiro do processo a ser iniciado ou interrompido. As IDs de processo são listadas na guia **Processo** do Gerenciador de Tarefas do Windows.
 
 ## <a name="required-subcommands"></a>Subcomandos necessários
- Nenhum
+ {1&gt;Nenhum&lt;1}
 
 ## <a name="valid-subcommands"></a>Subcomandos válidos
  **ProcessOn** e **ProcessOff** podem ser especificados em linhas de comando que também contêm os subcomandos a seguir.
 
  **Iniciar:** `Method` Inicializa a sessão de criação de perfil de linha de comando e define o método de criação de perfil especificado.
 
- **Iniciar:** `AppName` Inicia o aplicativo especificado e inicia a criação de perfil com o método de amostragem.
+ **Iniciar:** `AppName` inicia o aplicativo especificado e começa a criação de perfil com o método de amostragem.
 
- **Anexar:** `PID` Inicia a criação de perfil do processo especificado.
+ **Attach:** `PID` começa a criação de perfil do processo especificado.
 
  **GlobalOff**&#124;**GlobalOn** Interrompe ou inicia a criação de perfil para todos os processos em uma sessão de criação de perfil de linha de comando.
 
- {**ThreadOff**&#124;**ThreadOn**}**:**`TID` Interrompe ou inicia a criação de perfil para o thread especificado (somente no método de instrumentação).
+ {**ThreadOff**&#124;**Threading**} **:** `TID` para ou inicia a criação de perfil para o thread especificado (somente método de instrumentação).
 
 ## <a name="example"></a>Exemplo
  Neste exemplo, o subcomando **ProcessOff** é usado para coletar dados de criação de inicialização do aplicativo.

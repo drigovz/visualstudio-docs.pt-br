@@ -8,23 +8,23 @@ f1_keywords:
 - vs.dsltools.dsldesigner.selectcursordialog
 helpviewer_keywords:
 - Domain-Specific Language, toolbox
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 37bba294dde27fad19122ee281057607f6abc6c8
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 8099773dbbfdd06e4ce806401400bf3d2443b57f
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445788"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747602"
 ---
 # <a name="customizing-tools-and-the-toolbox"></a>Personalizando ferramentas e a caixa de ferramentas
 
 É necessário definir os itens da caixa de ferramentas para os elementos que deseja disponibilizar para os usuários adicionarem aos seus modelos. Há dois tipos de ferramentas: ferramentas de elemento e ferramentas de conexão. No designer gerado, um usuário pode selecionar uma ferramenta do elemento para arrastar formas para o diagrama e pode selecionar uma ferramenta de conexão para desenhar links entre as formas. Em geral, as ferramentas do elemento permitem aos usuários adicionarem instâncias de classe de domínio aos seus modelos e as ferramentas de conexão permitem que eles adicionem instâncias de relações de domínio.
 
-## <a name="ToolboxDef"></a> Como a caixa de ferramentas é definida
+## <a name="ToolboxDef"></a>Como a caixa de ferramentas é definida
  No DSL Explorer, expanda o nó do Editor e o nó abaixo dele. Geralmente aparecerá uma hierarquia que lembra isto:
 
 ```
@@ -49,13 +49,13 @@ Nessa parte do DSL Explorer, é possível:
 - Exclua guias e ferramentas.
 
 > [!IMPORTANT]
-> Para adicionar ou colar itens em um DSL Explorer, clique com o botão direito no avô do novo nó. Por exemplo, para adicionar uma ferramenta, clique com botão direito na guia e não a **ferramentas** nó. Para adicionar uma guia, clique com botão direito do **Editor** nó.
+> Para adicionar ou colar itens em um DSL Explorer, clique com o botão direito no avô do novo nó. Por exemplo, para adicionar uma ferramenta, clique com o botão direito do mouse na guia e não no nó **ferramentas** . Para adicionar uma guia, clique com o botão direito do mouse no nó do **Editor** .
 
-O **ícone da caixa de ferramentas** propriedade de cada ferramenta faz referência a um arquivo de bitmap de 16 x 16. Geralmente, esses arquivos são mantidos na **Dsl\Resources** pasta.
+A propriedade **ícone da caixa de ferramentas** de cada ferramenta faz referência a um arquivo de bitmap 16x16. Esses arquivos geralmente são mantidos na pasta **Dsl\Resources** .
 
-O **classe** propriedade de uma ferramenta de elemento refere-se a uma classe de domínio concreta. Por padrão, a ferramenta criará instâncias dessa classe. No entanto, é possível escrever um código para a ferramenta criar grupos de elementos ou elementos de diferentes tipos.
+A propriedade **Class** de uma ferramenta Element refere-se a uma classe de domínio concreto. Por padrão, a ferramenta criará instâncias dessa classe. No entanto, é possível escrever um código para a ferramenta criar grupos de elementos ou elementos de diferentes tipos.
 
-O **construtor de Conexão** propriedade de uma ferramenta de conexão faz referência a um construtor de conexão, que define quais tipos de elementos a ferramenta pode se conectar e que relações isso cria entre eles. Os construtores de conexão são definidos como nós no DSL Explorer. Construtores de conexão são criados automaticamente ao definir relações de domínio, mas é possível escrever códigos para personalizá-los.
+A propriedade do **Construtor de conexões** de uma ferramenta de conexão refere-se a um construtor de conexões, que define quais tipos de elementos a ferramenta pode se conectar e quais relações ele cria entre eles. Os construtores de conexão são definidos como nós no DSL Explorer. Construtores de conexão são criados automaticamente ao definir relações de domínio, mas é possível escrever códigos para personalizá-los.
 
 #### <a name="to-add-a-tool-to-the-toolbox"></a>Para adicionar uma ferramenta à caixa de ferramentas
 
@@ -63,41 +63,41 @@ O **construtor de Conexão** propriedade de uma ferramenta de conexão faz refer
 
      Normalmente, uma ferramenta de conector é criada depois de ter criado uma classe de conector e a ter mapeado em uma relação de referência.
 
-2. No DSL Explorer, expanda o **Editor** nó e o **guias da caixa de ferramentas** nó.
+2. No Gerenciador de DSL, expanda o nó do **Editor** e o nó **guias da caixa de ferramentas** .
 
-     Um nó de guia de caixa de ferramentas com o botão direito e, em seguida, clique em **adicionar nova ferramenta do elemento** ou **adicionar uma nova ferramenta de Conexão**.
+     Clique com o botão direito do mouse em um nó da guia caixa de ferramentas e clique em **Adicionar nova ferramenta de elemento** ou **Adicionar nova ferramenta de conexão**.
 
-3. Defina as **ícone da caixa de ferramentas** propriedade para se referir a um bitmap 16 x 16.
+3. Defina a propriedade do **ícone da caixa de ferramentas** como referência a um bitmap de 16x16.
 
-     Se você quiser definir um novo ícone, crie um arquivo de bitmap no Gerenciador de soluções na **Dsl\Resources** pasta. O arquivo deve ter os seguintes valores de propriedade: **Ação de Build** = **conteúdo**; **Copy to Output Directory** = **não copiar**.
+     Se você quiser definir um novo ícone, crie um arquivo de bitmap em Gerenciador de Soluções na pasta **Dsl\Resources** O arquivo deve ter os seguintes valores de propriedade: **criar ação**  = **conteúdo**; **Copiar para o diretório de saída**  =  não**copiar**.
 
-4. **Para uma ferramenta de elemento:** Defina as **classe** propriedade da ferramenta para se referir a uma classe de domínio concreta que é mapeada para uma forma.
+4. **Para uma ferramenta de elemento:** Defina a propriedade **Class** da ferramenta como referência a uma classe de domínio concreto mapeada para uma forma.
 
-     **Para uma ferramenta de conector:** Defina as **construtor de Conexão** propriedade da ferramenta para um dos itens que são oferecidos na lista suspensa. Os construtores de conexão são criados automaticamente ao mapear um conector para uma relação de domínio. Se tiver criado recentemente um conector, normalmente selecionaria o construtor de conexão associado.
+     **Para uma ferramenta de conector:** Defina a propriedade do **Construtor de conexões** da ferramenta como um dos itens que são oferecidos na lista suspensa. Os construtores de conexão são criados automaticamente ao mapear um conector para uma relação de domínio. Se tiver criado recentemente um conector, normalmente selecionaria o construtor de conexão associado.
 
-5. Para testar o DSL, pressione F5 ou CTRL+F5 e na instância experimental do Visual Studio, abra um arquivo de modelo de exemplo. A nova ferramenta deve aparecer na caixa de ferramentas. Arraste-a para o diagrama para verificar se ela criou um novo elemento.
+5. Para testar a DSL, pressione F5 ou CTRL + F5 e, na instância experimental do Visual Studio, abra um arquivo de modelo de exemplo. A nova ferramenta deve aparecer na caixa de ferramentas. Arraste-a para o diagrama para verificar se ela criou um novo elemento.
 
-     Se a ferramenta não aparecer, pare o experimental do Visual Studio. No Windows **inicie** menu, execute **redefinir a instância Microsoft Visual Studio 2010 Experimental**. No menu **Compilar**, clique em **Recompilar Solução**. Em seguida, teste o DSL novamente.
+     Se a ferramenta não for exibida, pare o Visual Studio experimental. No menu **Iniciar** do Windows, execute **redefinir a instância Experimental do Microsoft Visual Studio 2010**. No menu **Compilar**, clique em **Recompilar Solução**. Em seguida, teste o DSL novamente.
 
-## <a name="customizing"></a> Personalizando ferramentas de elemento
+## <a name="customizing"></a>Personalizando ferramentas de elemento
  Por padrão, a ferramenta criará uma única instância da classe especificada, mas é possível variar isso de duas maneiras:
 
 - Defina as Diretivas de Mescla de Elemento em outras classes, permitindo-lhes aceitar novas instâncias dessa classe e permitindo-lhes criar links adicionais quando o novo elemento é criado. Por exemplo, é possível permitir ao usuário soltar um Comentário em outro elemento, criando dessa maneira um link de referência entre os dois.
 
      Essas personalizações também afetam o que ocorre quando o usuário cola ou arrasta e solta um elemento.
 
-     Para obter mais informações, consulte [Personalizando a criação de elemento e a movimentação](../modeling/customizing-element-creation-and-movement.md).
+     Para obter mais informações, consulte [Personalizando a criação e movimentação do elemento](../modeling/customizing-element-creation-and-movement.md).
 
 - Escreva um código para personalizar a ferramenta para que ela possa criar grupos de elementos. A ferramenta é inicializada por métodos no ToolboxHelper.cs que podem ser substituídos. Para obter mais informações, consulte [criando grupos de elementos de uma ferramenta](#groups).
 
-## <a name="groups"></a> Criando grupos de elementos de uma ferramenta
+## <a name="groups"></a>Criando grupos de elementos de uma ferramenta
  Cada ferramenta do elemento contém um protótipo de elementos que ela deve criar. Por padrão, cada ferramenta do elemento cria um único elemento, mas também é possível criar um grupo de objetos relacionados a uma ferramenta. Para isso, é necessário inicializar a ferramenta com um <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> que contém os itens relacionados.
 
  O exemplo a seguir é tomado de um DSL no qual há um Transistor de tipo. Cada Transistor possui três Terminais nomeados. A ferramenta do elemento dos Transistores armazena um protótipo contendo quatro elementos de modelo e três links de relacionamento. Quando o usuário arrasta a ferramenta no diagrama, o protótipo é instalado e conectado à raiz do modelo.
 
  Esse código substitui um método que é definido em **Dsl\GeneratedCode\ToolboxHelper.cs**.
 
- Para obter mais informações sobre como personalizar o modelo usando o código do programa, consulte [Navegando e atualizando um modelo no código do programa](../modeling/navigating-and-updating-a-model-in-program-code.md).
+ Para obter mais informações sobre como personalizar o modelo usando o código do programa, consulte [navegando e atualizando um modelo no código do programa](../modeling/navigating-and-updating-a-model-in-program-code.md).
 
 ```
 using Microsoft.VisualStudio.Modeling;
@@ -139,7 +139,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 }  }    }
 ```
 
-## <a name="connections"></a> Personalizando ferramentas de Conexão
+## <a name="connections"></a>Personalizando ferramentas de conexão
  Normalmente, é criada uma ferramenta de elemento ao criar uma nova classe do conector. Como alternativa, é possível sobrecarregar uma ferramenta permitindo que os tipos das duas extremidades determinem o tipo de relação. Por exemplo, é possível definir uma ferramenta de conexão que poderia criar relações pessoa-pessoa e relações pessoa-cidade.
 
  As ferramentas de conexão invocam os construtores de conexão. Use construtores de conexão para especificar como os usuários podem conectar elementos no designer gerado. Os construtores de conexão especificam os elementos que podem ser conectados e o tipo de link que é criada entre eles.
@@ -151,52 +151,52 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
  Também é possível escrever códigos personalizados para os construtores de conexão especificarem as classes de fonte e de destino para a conexão, definir o tipo de conexão a ser feita e tomar outras ações associadas com a criação de uma conexão.
 
 ### <a name="the-structure-of-connection-builders"></a>A estrutura dos construtores de conexão
- Os construtores de conexão contêm um ou mais diretivas de conexão de link, que especificam a relação de domínio e os elementos de fonte e de destino. Por exemplo, no modelo de solução de fluxo de tarefa, você pode ver os **CommentReferencesSubjectsBuilder** na **Gerenciador de DSL**. Esse construtor de conexão contém um link chamada de diretiva de conexão **CommentReferencesSubjects**, que é mapeada para a relação de domínio **CommentReferencesSubjects**. Essa diretiva de conexão de link contém uma diretiva da função de fonte que indica a classe de domínio `Comment` e uma diretiva de função de destino que indica a classe de domínio `FlowElement`.
+ Os construtores de conexão contêm um ou mais diretivas de conexão de link, que especificam a relação de domínio e os elementos de fonte e de destino. Por exemplo, no modelo de solução de fluxo de tarefas, você pode ver o **CommentReferencesSubjectsBuilder** no **Gerenciador de DSL**. Esse construtor de conexões contém uma diretiva de conexão de link chamada **CommentReferencesSubjects**, que é mapeada para a relação de domínio **CommentReferencesSubjects**. Essa diretiva de conexão de link contém uma diretiva da função de fonte que indica a classe de domínio `Comment` e uma diretiva de função de destino que indica a classe de domínio `FlowElement`.
 
 ### <a name="using-connection-builders-to-restrict-source-and-target-roles"></a>Uso dos construtores de conexão para restringir as funções da fonte e do destino
- É possível usar os construtores de conexão para restringir a ocorrência de determinadas classes na função de fonte ou de destino de uma determinada relação de domínio. Por exemplo, você pode ter uma classe de domínio de base que tenha uma relação de domínio com outra classe de domínio, mas pode não desejar que todas as classes derivadas da classe base tenham as mesmas funções nessa relação. A solução de fluxo de tarefa, há quatro classes de domínio concreto (**StartPoint**, **ponto de extremidade**, **MergeBranch**, e **sincronização**) que herdam diretamente da classe de domínio abstrata **FlowElement**, e duas classes de domínio de concretas (**tarefa** e **ObjectInState**) que herdam indiretamente dela. Há também uma **fluir** relação leva de referência **FlowElement** classes de domínio na sua função de origem e a função de destino. No entanto, uma instância de um **ponto de extremidade** classe de domínio não deve ser a fonte de uma instância de uma **fluxo** relação, nem deve uma instância de um **StartPoint** classe ser o destino de uma instância de um **fluxo** relação. O **FlowBuilder** construtor de conexão tem um link chamada de diretiva de conexão **fluxo** que especifica quais classes de domínio podem desempenhar a função de origem (**tarefa**,  **MergeBranch**, **StartPoint**, e **sincronização**) e que pode desempenhar a função de destino (**MergeBranch**,  **Ponto de extremidade**, e **sincronização**).
+ É possível usar os construtores de conexão para restringir a ocorrência de determinadas classes na função de fonte ou de destino de uma determinada relação de domínio. Por exemplo, você pode ter uma classe de domínio de base que tenha uma relação de domínio com outra classe de domínio, mas pode não desejar que todas as classes derivadas da classe base tenham as mesmas funções nessa relação. Na solução de fluxo de tarefas, há quatro classes de domínio concretos (**StartPoint**, **Endpoint**, **MergeBranch**e **Synchronization**) que herdam diretamente do **fluxo**de classe de domínio abstrato e dois concretos classes de domínio (**Task** e **objectinst**) que herdam indiretamente dela. Há também uma relação de referência de **fluxo** que usa classes de domínio **flowelement** em ambas as funções de origem e de destino. No entanto, uma instância de uma classe de domínio de **ponto de extremidade** não deve ser a origem de uma instância de uma relação de **fluxo** , nem uma instância de uma classe **StartPoint** é o destino de uma instância de uma relação de **fluxo** . O construtor de conexões do **FlowBuilder** tem uma diretiva de conexão de link chamada **Flow** que especifica quais classes de domínio podem executar a função de origem (**Task**, **MergeBranch**, **StartPoint**e **Synchronization**) e quais pode executar a função de destino (**MergeBranch**, **Endpoint**e **Synchronization**).
 
 ### <a name="connection-builders-with-multiple-link-connect-directives"></a>Construtores de conexão com diversas diretivas de conexão de link
- É possível adicionar mais de uma diretiva de conexão de link a um construtor de conexão. Isso pode ajudar você a ocultar algumas das complexidades do modelo de domínio dos usuários e manter o **caixa de ferramentas** fique muito confusa. É possível adicionar diretivas de conexão de link de várias relações de domínio diferentes a um único construtor de conexão. No entanto, é necessário combinar as relações de domínio quando elas realizam aproximadamente a mesma função.
+ É possível adicionar mais de uma diretiva de conexão de link a um construtor de conexão. Isso pode ajudá-lo a ocultar algumas das complexidades do modelo de domínio dos usuários e impedir que a **caixa de ferramentas** fique muito obstruída. É possível adicionar diretivas de conexão de link de várias relações de domínio diferentes a um único construtor de conexão. No entanto, é necessário combinar as relações de domínio quando elas realizam aproximadamente a mesma função.
 
- Na solução de fluxo de tarefa, o **fluxo** ferramenta de conexão é usada para desenhar instâncias de ambos o **fluxo** e o **ObjectFlow** as relações de domínio. O **FlowBuilder** tem construtor de conexão, além para o **fluxo** descrita anteriormente de diretiva de conexão de link, chamadas de diretivas de conexão de link dois **ObjectFlow**. Essas diretivas especificam que uma instância de um **ObjectFlow** relação pode ser estabelecida entre instâncias do **ObjectInState** classe de domínio, ou de uma instância de um **ObjectInState**  a uma instância de um **tarefa**, mas não entre duas instâncias de um **tarefa**, ou de uma instância de um **tarefa** a uma instância de um **ObjectInState**. No entanto, uma instância de um **fluir** relação pode ser estabelecida entre duas instâncias de uma **tarefa**. Se você compilar e executa a solução de fluxo de tarefa, você pode ver que desenho um **fluxo** de uma instância de um **ObjectInState** a uma instância de um **tarefa** cria uma instância de um **ObjectFlow**, desenho, mas um **fluxo** entre duas instâncias de um **tarefa** cria uma instância de um **fluxo**.
+ Na solução de fluxo de tarefas, a ferramenta de conexão de **fluxo** é usada para desenhar instâncias do **fluxo** e das relações de domínio do **objectflow** . O construtor de conexões do **FlowBuilder** tem, além da diretiva de conexão de link de **fluxo** descrita anteriormente, duas diretivas de conexão de link chamadas **objectflow**. Essas diretivas especificam que uma instância de uma relação de **objectflow** pode ser desenhada entre instâncias da classe de domínio **objectinstr** ou de uma instância de um **objectinst** para uma instância de uma **tarefa**, mas não entre duas instâncias de uma **tarefa**ou de uma instância de uma **tarefa** para uma instância de um **objectinstr**. No entanto, uma instância de uma relação de **fluxo** pode ser desenhada entre duas instâncias de uma **tarefa**. Se você compilar e executar a solução de fluxo de tarefas, poderá ver que desenhar **um fluxo** de uma instância de **um objectinst** para uma instância de uma **tarefa** cria uma instância de um **objectflow**, mas desenhando um **fluxo** entre duas instâncias de uma **tarefa** cria uma instância de um **fluxo**.
 
 ### <a name="custom-code-for-connection-builders"></a>Código personalizado para construtores de conexão
  Existem quatro caixas de seleção na interface do usuário que definem diferentes tipos de personalização dos construtores de conexão:
 
-- o **aceitação personalizada** caixa de seleção em uma diretiva de função de origem ou destino
+- a caixa de seleção de **aceitação personalizada** em uma diretiva de função de origem ou de destino
 
-- o **conexão personalizada** caixa de seleção em uma diretiva de função de origem ou destino
+- a caixa de seleção **conexão personalizada** em uma diretiva de função de origem ou de destino
 
-- o **usar a conexão** caixa de seleção em uma diretiva de conexão
+- a caixa de seleção **usa conexão personalizada** em uma diretiva Connect
 
-- o **personalizado é** propriedade do construtor de conexão
+- a propriedade **personalizada is** do construtor de conexões
 
   É necessário fornecer algum código de programa para fazer essas personalizações. Para descobrir qual código é necessário fornecer, verifique uma dessas caixas, clique em Transformar Todos os Modelos e, em seguida, construa sua solução. O resultado será um relatório de erro. Clique duas vezes no relatório de erro para visualizar um comentário que explique qual código deve ser adicionado.
 
 > [!NOTE]
-> Para adicionar o código personalizado, crie uma definição de classe parcial em um arquivo de código separado dos arquivos de códigos nas pastas GeneratedCode. Para evitar a perda de seu trabalho, é necessário que os arquivos de códigos gerados não sejam editados. Para obter mais informações, consulte [substituindo e estendendo as Classes geradas](../modeling/overriding-and-extending-the-generated-classes.md).
+> Para adicionar o código personalizado, crie uma definição de classe parcial em um arquivo de código separado dos arquivos de códigos nas pastas GeneratedCode. Para evitar a perda de seu trabalho, é necessário que os arquivos de códigos gerados não sejam editados. Para obter mais informações, consulte [substituindo e estendendo as classes geradas](../modeling/overriding-and-extending-the-generated-classes.md).
 
 #### <a name="creating-custom-connection-code"></a>Criação de uma conexão personalizada
- Em cada link de diretiva de conexão a **diretivas de função de origem** guia define de quais tipos é podem arrastar. Da mesma forma, o **diretivas de função de destino** definem para quais tipos é podem arrastar. Para cada tipo, você pode ainda mais especificar se deseja permitir a conexão (por diretiva de conexão de link) definindo o **aceitação personalizada** sinalizar e, em seguida, fornecendo o código extra.
+ Em cada diretiva de conexão de link, a guia **diretivas de função de origem** define de quais tipos você pode arrastar. Da mesma forma, a guia **diretivas de função de destino** define para quais tipos você pode arrastar. Para cada tipo, você pode especificar se deseja permitir a conexão (para essa diretiva de conexão de link) definindo o sinalizador de **aceitação personalizada** e, em seguida, fornecendo o código extra.
 
  Também é possível personalizar o que ocorre quando a conexão é feita. Por exemplo, é possível personalizar apenas o caso onde o arrasto ocorre para ou de uma determinada classe, todos os casos que um diretiva de conexão de link regula ou o construtor de conexão FlowBuilder todo. Para cada uma dessas opções, é possível ajustar sinalizadores personalizados no nível apropriado. Quando transformar todos os modelos e tentar compilar a solução, as mensagens de erro irão direcioná-lo para os comentários que estão no código gerado. Esses comentários identificam o que deve ser fornecido.
 
- No exemplo de Diagrama de Componentes, o construtor de conexão da relação do domínio de Conexão é personalizado para restringir as conexões que podem ser feitas entre as portas. As ilustrações a seguir mostram que é possível fazer conexões somente a partir dos elementos da `OutPort` para os elementos `InPort`, mas é possível aninhar os componentes dentro uns aos outros. 
+ No exemplo de Diagrama de Componentes, o construtor de conexão da relação do domínio de Conexão é personalizado para restringir as conexões que podem ser feitas entre as portas. As ilustrações a seguir mostram que é possível fazer conexões somente a partir dos elementos da `OutPort` para os elementos `InPort`, mas é possível aninhar os componentes dentro uns aos outros.
 
- **Conexão vir para uma OutPort de um componente aninhado**
+ **Conexão entrando em uma porta de um componente aninhado**
 
- ![Construtor de Conexão](../modeling/media/connectionbuilder_3.png)
+ ![Construtor de conexões](../modeling/media/connectionbuilder_3.png)
 
- Portanto, pode ser desejável especificar que uma conexão pode vir de um componente aninhado para uma OutPort. Para especificar tal uma conexão, defina **usos da aceitação personalizada** sobre o **InPort** tipo como função de origem e o **OutPort** tipo como função de destino no **detalhes de DSL**  janela, conforme mostrado nas ilustrações a seguir:
+ Portanto, pode ser desejável especificar que uma conexão pode vir de um componente aninhado para uma OutPort. Para especificar essa conexão, você define **usa a aceitação personalizada** no tipo de **inporta** como função de origem e o tipo de **porta** como função de destino na janela **detalhes de DSL** , conforme mostrado nas seguintes ilustrações:
 
- **Diretiva no Gerenciador de DSL de conexão de link**
+ **Diretiva de conexão de link no Gerenciador de DSL**
 
- ![Imagem do construtor de Conexão](../modeling/media/connectionbuilder_4a.png)
+ ![Imagem do construtor de conexões](../modeling/media/connectionbuilder_4a.png)
 
- **Diretiva na janela de detalhes DSL de conexão de link**
+ **Diretiva de conexão de link na janela de detalhes de DSL**
 
- ![](../modeling/media/connectionbuilder_4b.png)
+ ![Diretiva de conexão de link na janela de detalhes de DSL](../modeling/media/connectionbuilder_4b.png)
 
  É necessário fornecer métodos na classe ConnectionBuilder:
 
@@ -221,21 +221,21 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 // And similar for OutPorts...
 ```
 
- Para obter mais informações sobre como personalizar o modelo usando o código do programa, consulte [Navegando e atualizando um modelo no código do programa](../modeling/navigating-and-updating-a-model-in-program-code.md).
+ Para obter mais informações sobre como personalizar o modelo usando o código do programa, consulte [navegando e atualizando um modelo no código do programa](../modeling/navigating-and-updating-a-model-in-program-code.md).
 
- É possível usar códigos semelhantes, por exemplo, para impedir que os usuários criem loops com links pai-filho. Essas restrições são consideradas restrições 'duras', porque os usuários não podem violá-las a qualquer momento. Você também pode criar verificações de validação 'suaves' que os usuários podem ignorar temporariamente criando configurações inválidas que eles não é possível salvar.
+ É possível usar códigos semelhantes, por exemplo, para impedir que os usuários criem loops com links pai-filho. Essas restrições são consideradas restrições ' rígidas ' porque os usuários não podem viola-las a qualquer momento. Você também pode criar verificações de validação ' soft ' que os usuários podem ignorar temporariamente criando configurações inválidas que não podem salvar.
 
 ### <a name="good-practice-in-defining-connection-builders"></a>Boas práticas na definição dos construtores de conexão
  É necessário definir um construtor de conexão para criar diferentes tipos de relações, apenas se elas estão relacionadas conceitualmente. No exemplo de fluxo de tarefas, é possível usar o mesmo construtor para criar fluxos entre tarefas e também entre tarefas e objetos. No entanto, seria confuso usar o mesmo construtor para criar relações entre tarefas e comentários.
 
  Se um construtor de conexão for definido para vários tipos de relações, é necessário garantir que ele não possa corresponder a mais de um tipo do mesmo par de objetos de fonte e de destino. Caso contrário, os resultados seriam imprevisíveis.
 
- Usar código personalizado para aplicar restrições 'duras', mas você deve considerar se os usuários devem ser capazes de fazer temporariamente conexões inválidas. Se o devem, é possível modificar as restrições para que as conexões não são validadas até que os usuários tentem salvar as alterações.
+ Você usa código personalizado para aplicar restrições "rígidas", mas deve considerar se os usuários devem ser capazes de fazer conexões inválidas temporariamente. Se o devem, é possível modificar as restrições para que as conexões não são validadas até que os usuários tentem salvar as alterações.
 
 ## <a name="see-also"></a>Consulte também
 
 - [Personalizando a criação e o movimento de elementos](../modeling/customizing-element-creation-and-movement.md)
 - [Personalizando o comportamento de cópia](../modeling/customizing-copy-behavior.md)
-- [Como: Adicionar um manipulador do tipo "arrastar e soltar"](../modeling/how-to-add-a-drag-and-drop-handler.md)
+- [Como adicionar um manipulador de evento do tipo "arrastar e soltar"](../modeling/how-to-add-a-drag-and-drop-handler.md)
 - [Navegando por um modelo no código do programa e atualizando-o](../modeling/navigating-and-updating-a-model-in-program-code.md)
-- [Exemplo de diagramas de circuito DSL](https://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
+- [Diagramas de circuito de exemplo DSL](https://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)

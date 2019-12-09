@@ -12,11 +12,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 9a2553396614cacbc22925f8f7f3a61d56c50541
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54771022"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68157357"
 ---
 # <a name="modules-view---contention-data"></a>Modo de Exibição de Módulos – Dados de Contenção
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ O modo de exibição de módulos de dados de contenção exibe dados de simultan
   
  A tabela a seguir descreve os valores das colunas na exibição de módulos de dados de contenção.  
   
-|Column|Descrição|  
+|Column|DESCRIÇÃO|  
 |------------|-----------------|  
 |**Tempo Bloqueado Exclusivo**|-Para uma função, a hora em que essa função foi impedida de executar o código no corpo da função. Não inclui o tempo bloqueado nas funções que foram chamadas pela função.<br />– Para um módulo, a soma do tempo de bloqueio exclusivo das funções no módulo.<br />- Para uma linha ou uma instrução, a hora em que esta linha ou instrução foi impedida de executar.|  
 |**% de Tempo Bloqueado Exclusivo**|-Para uma função ou um módulo, a porcentagem de tempo bloqueado todos na criação de perfil que era o tempo bloqueado exclusivo dessa função ou módulo.<br />– Para uma linha ou instrução, o percentual de todo o tempo bloqueado na execução de criação de perfil em que essa linha ou instrução teve sua execução bloqueada.|  
@@ -45,7 +45,7 @@ O modo de exibição de módulos de dados de contenção exibe dados de simultan
 |**Nome do Processo**|O nome do processo.|  
 |**Arquivo de Origem**|O arquivo de origem que contém a definição dessa função.|  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Veja também  
  [Como personalizar as colunas de exibição do relatório](../profiling/how-to-customize-report-view-columns.md)   
  [Exibição Módulos](../profiling/modules-view.md)   
  [Exibição Módulos – Instrumentação](../profiling/modules-view-dotnet-memory-instrumentation-data.md)   

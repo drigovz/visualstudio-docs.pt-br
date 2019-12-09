@@ -6,34 +6,34 @@ keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 04/02/2019
+ms.date: 12/03/2019
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: 3543953495c35748d41f1eb5c8d52e66eb470285
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 8918f1424c227d73ff5280fe6a5ae18d92a2e852
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62962361"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74795822"
 ---
 ## <a name="visual-studio-core-editor-included-with-visual-studio-team-explorer-2019"></a>Editor principal do Visual Studio (incluído no Team Explorer para Visual Studio 2019)
 
 **ID:** Microsoft.VisualStudio.Workload.CoreEditor
 
-**Descrição:** A experiência do shell do núcleo do Visual Studio, incluindo edição de código com reconhecimento de sintaxe, controle do código-fonte e gerenciamento de itens de trabalho.
+**Descrição:** a experiência de shell do Visual Studio Core, incluindo a edição de código com reconhecimento de sintaxe, controle do código-fonte e gerenciamento de itens de trabalho.
 
 ### <a name="components-included-by-this-workload"></a>Componentes incluídos por essa carga de trabalho
 
-ID do componente | Nome | Versão | Tipo de dependência
+ID do componente | Name | Versão do | Tipo de dependência
 --- | --- | --- | ---
-Microsoft.VisualStudio.Component.CoreEditor | Editor do Visual Studio Core | 16.0.28315.86 | Necessária
+Microsoft.VisualStudio.Component.CoreEditor | Editor do Visual Studio Core | 16.1.28811.260 | Necessário
 Microsoft.VisualStudio.Component.StartPageExperiment.Cpp | Página inicial do Visual Studio para usuários C++ | 16.0.28315.86 | Opcional
 
 ## <a name="unaffiliated-components"></a>Componentes não afiliados
 
 Estes são os componentes que não são incluídos com nenhuma carga de trabalho, mas que podem ser selecionados como um componente individual.
 
-ID do componente | Nome | Versão
+ID do componente | Name | Versão do
 --- | --- | ---
 N/D | N/D | N/D

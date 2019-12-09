@@ -1,18 +1,18 @@
 ---
-title: Usando membros do Microsoft.VisualStudio.TestTools.UnitTesting em testes de unidade
+title: Usar o Microsoft.VisualStudio.TestTools.UnitTesting em testes de unidade
 ms.date: 03/02/2018
 ms.topic: reference
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: 12c1b35288ac5857ac2971ffc6cbdddd40aa5c40
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+author: jillre
+ms.openlocfilehash: c69950e478fc8a35d46257876a84a28129bf1baa
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62776672"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72659761"
 ---
 # <a name="use-the-mstest-framework-in-unit-tests"></a>Usar a estrutura de MSTest em testes de unidades
 
@@ -81,6 +81,8 @@ Testes de unidade podem verificar comportamentos específicos do aplicativo pelo
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert>
 
+- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.ThrowsException%2A?displayProperty=nameWithType>
+
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.CollectionAssert>
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.StringAssert>
@@ -90,8 +92,6 @@ Testes de unidade podem verificar comportamentos específicos do aplicativo pelo
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.AssertInconclusiveException>
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.UnitTestAssertException>
-
-- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.ExpectedExceptionAttribute>
 
 ## <a name="the-testcontext-class"></a>A classe TestContext
 
@@ -113,7 +113,7 @@ Os seguintes atributos e os valores atribuídos a eles aparecem na janela Propri
 
 ## <a name="test-configuration-classes"></a>Classes de configuração de teste
 
-- <xref:Microsoft.TeamFoundation.TestManagement.Client.ObjectTypes>
+- [ObjectTypes](/previous-versions/visualstudio/visual-studio-2013/dd987428(v=vs.120))
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestConfigurationSection>
 

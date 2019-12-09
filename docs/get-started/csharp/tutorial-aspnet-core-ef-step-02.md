@@ -1,5 +1,5 @@
 ---
-title: 'Etapa 2: Criar seu primeiro aplicativo Web ASP.NET Core'
+title: 'Etapa 2: criando seu primeiro aplicativo Web ASP.NET Core'
 description: Crie seu primeiro aplicativo Web ASP.NET Core com este tutorial em vídeo e instruções passo a passo.
 ms.custom: get-started
 ms.date: 03/31/2019
@@ -16,14 +16,14 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 5e9cc4f579b5913d5be3030828cad1a799efcd72
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 21959c4a0cc2b961eca43ab9724369c7aea8444b
+ms.sourcegitcommit: ab18c9d850192fc9ccec10961f1126e8b0cba8da
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62840393"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73061126"
 ---
-# <a name="step-2-create-your-first-aspnet-core-web-app"></a>Etapa 2: Criar seu primeiro aplicativo Web ASP.NET Core
+# <a name="step-2-create-your-first-aspnet-core-web-app"></a>Etapa 2: criar seu primeiro aplicativo Web ASP.NET Core
 
 Crie seu primeiro aplicativo Web ASP.NET Core com este tutorial em vídeo e instruções passo a passo.
 
@@ -33,9 +33,12 @@ _Assista a este vídeo e siga as etapas para criar seu primeiro aplicativo ASP.N
 
 ## <a name="start-visual-studio-2019-and-create-a-new-project"></a>Iniciar o Visual Studio 2019 e criar um projeto
 
-Inicie o Visual Studio 2019 e clique em **Criar um projeto**. Escolha **Aplicativo Web ASP.NET Core**. Escolha o modelo **Aplicativo Web** e mantenha o nome e local padrão do projeto. Clique em **Criar**. Para obter instruções mais detalhadas, consulte o [vídeo anterior nesta série de tutoriais](tutorial-aspnet-core-ef-step-01.md).
+Inicie o Visual Studio 2019 e clique em **Criar um projeto**. Escolha **Aplicativo Web ASP.NET Core**. Escolha o modelo **Aplicativo Web** e mantenha o nome e local padrão do projeto. No menu suspenso com a versão ASP.NET Core, escolha **ASP.NET Core 2,1** ou **ASP.NET Core 2,2**. Clique em **Criar**. Para obter instruções mais detalhadas, consulte o [vídeo anterior nesta série de tutoriais](tutorial-aspnet-core-ef-step-01.md).
 
 ![Escolher opções de projeto ASP.NET Core no Visual Studio 2019](media/vs-2019/vs2019-choose-aspnetcore-project.png)
+
+> [!WARNING]
+> Certifique-se de escolher ASP .NET Core 2,1 ou ASP.NET Core 2,2. Este tutorial não é compatível com o ASP.NET Core 3. x.
 
 ## <a name="explore-the-new-project"></a>Explorar o novo projeto
 
@@ -112,14 +115,17 @@ public void OnGet()
 
 Agora você deve ver o tempo real do servidor no navegador quando você navega para o aplicativo.
 
+> [!NOTE]
+> Sua saída pode diferir da imagem, já que o formato de saída de ToShortDateTimeString depende da configuração de cultura atual. Consulte <xref:System.DateTime.ToShortTimeString>.
+
 ![Projeto do ASP.NET Core no Visual Studio 2019 no navegador](media/vs-2019/vs2019-app-fixed-in-browser.png)
 
 ## <a name="next-steps"></a>Próximas etapas
 
 No próximo vídeo, você aprenderá como adicionar suporte a dados em seu aplicativo.
 
-[Tutorial: como trabalhar com dados em um aplicativo ASP.NET Core](tutorial-aspnet-core-ef-step-03.md)
+[Tutorial: trabalhando com dados em seu aplicativo ASP.NET Core](tutorial-aspnet-core-ef-step-03.md)
 
 ## <a name="see-also"></a>Consulte também
 
-- [Tutorial: criar um aplicativo Web de Razor Pages com o ASP.NET Core](/aspnet/core/tutorials/razor-pages/?view=aspnetcore-2.1)
+- [Tutorial: criar um aplicativo Web Razor Pages com ASP.NET Core](/aspnet/core/tutorials/razor-pages/?view=aspnetcore-2.1)

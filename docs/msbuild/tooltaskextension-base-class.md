@@ -2,8 +2,6 @@
 title: Classe base de ToolTaskExtension | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
-f1_keywords:
-- MSBuild.ToolTask.ToolCommandFailed
 dev_langs:
 - VB
 - CSharp
@@ -15,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 061d78a1e6415d6e7386fdc4de76aa1dd8ddd6d6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 7734f852da997836cf2f42fd3f6b96e9decdf8dd
+ms.sourcegitcommit: 628eb202a1153ebfe69c668f966f821b98b34b34
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62938909"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "71720566"
 ---
 # <a name="tooltaskextension-base-class"></a>Classe base ToolTaskExtension
 Muitas tarefas são herdadas da classe <xref:Microsoft.Build.Tasks.ToolTaskExtension>, que é herdada da classe <xref:Microsoft.Build.Utilities.ToolTask>, que é herdada da classe <xref:Microsoft.Build.Utilities.Task>. Esta cadeia de herança adiciona vários parâmetros nas tarefas que derivam deles. Esses parâmetros são listados neste documento.

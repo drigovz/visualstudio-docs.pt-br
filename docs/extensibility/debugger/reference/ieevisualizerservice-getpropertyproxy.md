@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEEVisualizerService::GetPropertyProxy method
 ms.assetid: 748750f4-76e7-4580-9da2-afba07681b37
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 543d05e9d0917305f9f898cdae8e7add2c5949fb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 117cffcaffc44b37f977aa0d2a195047449edb02
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62867827"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66350130"
 ---
 # <a name="ieevisualizerservicegetpropertyproxy"></a>IEEVisualizerService::GetPropertyProxy
 Esse método retorna um proxy para um objeto de propriedade.
@@ -38,14 +41,12 @@ int GetPropertyProxy(
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `dwID`
+## <a name="parameters"></a>Parâmetros
+`dwID`\
+[in] ID do proxy de propriedade para recuperar.
 
- [in] ID do proxy de propriedade para recuperar.
-
- `proxy`
-
- [out] Desejado proxy implementado em uma [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md) interface.
+`proxy`\
+[out] Desejado proxy implementado em uma [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md) interface.
 
 ## <a name="return-value"></a>Valor de retorno
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.

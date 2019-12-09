@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - REFERENCE_COMPARE enumeration
 ms.assetid: e31cdc78-f621-498b-9ca4-aefa790b9f6f
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b518e9bcfd77f489dd38a96eb8e378610841feb5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: d166917ec9770e3f8d1f41f3774676278b894724
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62913459"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66322352"
 ---
 # <a name="referencecompare"></a>REFERENCE_COMPARE
 Especifica o tipo de comparação para referências.
@@ -41,12 +44,15 @@ public enum enum_REFERENCE_COMPARE { 
 };
 ```
 
-## <a name="members"></a>Membros
- REF_COMPARE_EQUAL Especifica uma comparação igual a.
+## <a name="fields"></a>Campos
+ `REF_COMPARE_EQUAL`\
+ Especifica uma comparação igual a.
 
- REF_COMPARE_LESS_THAN Especifica um menor-que a comparação.
+ `REF_COMPARE_LESS_THAN`\
+ Especifica um menor-que a comparação.
 
- REF_COMPARE_GREATER_THAN Especifica um maior-comparação.
+ `REF_COMPARE_GREATER_THAN`\
+ Especifica um maior-comparação.
 
 ## <a name="remarks"></a>Comentários
  Passado como um argumento para o [comparar](../../../extensibility/debugger/reference/idebugreference2-compare.md) método.

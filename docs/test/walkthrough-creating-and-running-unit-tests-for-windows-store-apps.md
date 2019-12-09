@@ -7,34 +7,58 @@ helpviewer_keywords:
 - unit tests
 - unit tests, UWP apps
 - unit tests, running
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - uwp
-author: gewarren
-ms.openlocfilehash: 1284dc529e4f150b282dcab2d919e027c9b606c4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+author: jillre
+ms.openlocfilehash: aa3b4b06fa1a1a1dfe21ec690e158bb955f416c0
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62976371"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72659668"
 ---
-# <a name="walkthrough-create-and-run-unit-tests-for-uwp-apps"></a>Passo a passo: Criar e executar testes de unidade para aplicativos UWP
+# <a name="walkthrough-create-and-run-unit-tests-for-uwp-apps"></a>Passo a passo: criar e executar testes de unidade para aplicativos UWP
 
-O Visual Studio dá suporte para realizar testes de unidade em aplicativos da UWP (Plataforma Universal do Windows). Ele inclui modelos do projeto de teste de unidade para Visual C#, Visual Basic e Visual C++.
+O Visual Studio dá suporte para realizar testes de unidade em aplicativos da UWP (Plataforma Universal do Windows). O Visual Studio fornece modelos de projeto de C#teste de unidade para C++, Visual Basic e.
 
 > [!TIP]
 > Para obter mais informações sobre como desenvolver aplicativos da UWP, consulte [Introdução aos aplicativos UWP](/windows/uwp/get-started/).
 
-Os procedimentos a seguir descrevem as etapas para criar, executar e depurar testes de unidade para um aplicativo da UWP.
+Os procedimentos a seguir descrevem as etapas para criar, executar e depurar testes de unidade para um aplicativo UWP.
 
 ## <a name="create-a-unit-test-project-for-a-uwp-app"></a>Criar um projeto de teste de unidade para um aplicativo da UWP
 
+::: moniker range=">=vs-2019"
+
+1. Abra o Visual Studio. Na tela Iniciar, selecione **Criar um novo projeto**.
+
+2. Na caixa de pesquisa da página **criar um novo projeto** , insira o **teste de unidade**.
+
+   A lista de modelos filtra para os testes de unidade.
+
+3. Selecione o modelo **aplicativo de teste de unidade (universal do Windows)** para o C# ou Visual Basic e, em seguida, selecione **Avançar**.
+
+   ![Criar novo aplicativo de teste de unidade UWP no Visual Studio](media/vs-2019/new-uwp-unit-test-app.png)
+
+4. Opcionalmente, altere o nome do projeto ou da solução e o local e, em seguida, selecione **criar**.
+
+5. Opcionalmente, altere o destino e as versões de plataforma mínimas e, em seguida, selecione **OK**.
+
+Depois de concluir essas etapas, o projeto de teste de unidade é criado e exibido no Gerenciador de Soluções.
+
+![Projeto de teste de unidade UWP no Gerenciador de Soluções](media/vs-2019/uwp-unit-test-project-solution-explorer.png)
+
+::: moniker-end
+
+::: moniker range="vs-2017"
+
 1. No menu **Arquivo**, escolha **Novo**.
 
-     A caixa de diálogo **Novo Projeto** é exibida.
+   A caixa de diálogo **Novo Projeto** é exibida.
 
-2. Em Modelos, escolha a linguagem de programação com a qual você quer criar os testes de unidade e escolha a biblioteca de testes de unidade associada da Plataforma Universal do Windows. Por exemplo, escolha **Visual C#**, depois escolha **Windows Universal** e, em seguida, escolha **Biblioteca de Teste de Unidade (Universal Windows)**.
+2. Em Modelos, escolha a linguagem de programação com a qual você quer criar os testes de unidade e escolha a biblioteca de testes de unidade associada da Plataforma Universal do Windows. Por exemplo, escolha **Visual C#** , depois escolha **Windows Universal** e, em seguida, escolha **Biblioteca de Teste de Unidade (Universal Windows)** .
 
 3. (Opcional) Na caixa de texto **Nome**, digite o nome que você quer usar para o projeto.
 
@@ -44,65 +68,60 @@ Os procedimentos a seguir descrevem as etapas para criar, executar e depurar tes
 
 6. Deixe a opção **Criar diretório para solução** selecionada e escolha o botão **OK**.
 
-     ![Biblioteca de teste de unidade adaptada](../test/media/unit_test_win8_1.png)
+   ![Biblioteca de teste de unidade adaptada](../test/media/unit_test_win8_1.png)
 
-     O **Gerenciador de Soluções** é populado com o projeto de teste de unidade UWP e o editor de código exibe o teste de unidade padrão intitulado UnitTest1.
+   O **Gerenciador de Soluções** é populado com o projeto de teste de unidade UWP e o editor de código exibe o teste de unidade padrão intitulado UnitTest1.
 
-     ![Novo projeto de teste de unidade adaptado](../test/media/unit_test_win8_unittestexplorer_newprojectcreated.png)
+   ![Novo projeto de teste de unidade adaptado](../test/media/unit_test_win8_unittestexplorer_newprojectcreated.png)
+
+::: moniker-end
 
 ## <a name="edit-the-unit-test-projects-uwp-application-manifest-file"></a>Editar o arquivo de manifesto do aplicativo da UWP do projeto de teste de unidade
 
 1. No **Gerenciador de Soluções**, clique com o botão direito do mouse no arquivo *Package.appxmanifest* e escolha **Abrir**.
 
-     O **Designer de Manifesto** é exibido para edição.
-
 2. No **Designer de Manifesto**, escolha a guia **Funcionalidades**.
 
 3. Na lista em **Funcionalidades**, selecione as funcionalidades que seu teste de unidade e o código testado precisam. Por exemplo, marque a caixa de seleção **Internet** se o teste de unidade precisar e se o código testado precisar ter a capacidade de acessar a internet.
 
-    > [!NOTE]
-    > As funcionalidades selecionadas devem incluir somente o necessário para o funcionamento correto do teste de unidade.
+   > [!NOTE]
+   > As funcionalidades selecionadas devem incluir somente o necessário para o funcionamento correto do teste de unidade.
 
-     ![Manifesto do teste de unidade](../test/media/unit_test_win8_.png)
+   ![Manifesto do teste de unidade](../test/media/unit_test_win8_.png)
 
 ## <a name="code-the-unit-test-for-a-uwp-app"></a>Codificar o teste de unidade para um aplicativo UWP
 
-No **Editor de Códigos**, edite o teste de unidade e adicione as declarações e a lógica necessárias ao teste.
+No editor de código, edite o teste de unidade e adicione as declarações e a lógica necessárias para seu teste.
 
 ## <a name="run-unit-tests"></a>Executar testes de unidade
 
-### <a name="to-build-the-solution-and-run-the-unit-test-using-test-explorer"></a>Para compilar a solução e executar o teste de unidade usando o Gerenciador de Testes
+Para compilar a solução e executar o teste de unidade usando o Gerenciador de testes:
 
 1. No menu **Teste**, escolha **Windows** e **Gerenciador de Testes**.
 
-     O **Gerenciador de Testes** é exibido sem o teste listado.
-
 2. No menu **Compilação**, escolha **Compilar Solução**.
 
-     Agora seu teste de unidade está listado.
+   O teste de unidade agora é mostrado no Gerenciador de testes.
 
-    > [!NOTE]
-    > Você deve compilar a solução para atualizar a lista de testes de unidade no Gerenciador de Testes.
+   > [!NOTE]
+   > Você deve compilar a solução para atualizar a lista de testes de unidade no Gerenciador de Testes.
 
 3. No **Gerenciador de Testes**, escolha o teste de unidade criado.
 
-    > [!TIP]
-    > O Gerenciador de Testes fornece um link para o código-fonte ao lado de **Fonte:**.
-
 4. Escolha **Executar Todos**.
 
-     ![Gerenciador de Testes de Unidade &#45; executar teste de unidade](../test/media/unit_test_win8_unittestexplorer_contextmenurun.png)
+   ![Gerenciador de Testes de Unidade &#45; executar teste de unidade](../test/media/unit_test_win8_unittestexplorer_contextmenurun.png)
 
-    > [!TIP]
-    > Selecione um ou mais testes de unidade listados no Gerenciador, clique com botão direito e escolha **Executar Testes Selecionados**.
-    >
-    > Além disso, você pode optar por **Depurar os Testes Selecionados**, **Abrir Teste**e usar a opção **Propriedades**.
-    >
-    > ![Gerenciador de Testes de Unidade &#8211; menu de contexto de teste de unidade](../test/media/unit_test_win8_unittestexplorer_contextmenu.png)
+   > [!TIP]
+   > Você pode selecionar um ou mais testes de unidade listados no Gerenciador de testes e clicar com o botão direito do mouse e escolher **executar testes selecionados**.
+   >
+   > Além disso, você pode optar por **Depurar os Testes Selecionados**, **Abrir Teste**e usar a opção **Propriedades**.
+   >
+   > ![Menu de contexto &#45; de teste de unidade do Gerenciador de testes de unidade](../test/media/unit_test_win8_unittestexplorer_contextmenu.png)
 
-    O teste de unidade é executado. Após a conclusão, o **Gerenciador de Testes** exibirá o status do teste, o tempo decorrido e fornecerá um link para a fonte.
+   O teste de unidade é executado. Após a conclusão, o Gerenciador de testes exibirá o status do teste e o tempo decorrido e fornecerá um link para a origem.
 
-    ![Gerenciador de Testes de Unidade &#45; teste concluído](../test/media/unit_test_win8_unittestexplorer_done.png)
+   ![Gerenciador de Testes de Unidade &#45; teste concluído](../test/media/unit_test_win8_unittestexplorer_done.png)
 
 ## <a name="see-also"></a>Consulte também
 

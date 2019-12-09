@@ -1,5 +1,5 @@
 ---
-title: 'Idiasymbol:: Get_virtualaddress | Microsoft Docs'
+title: 'IDiaSymbol:: get_virtualAddress | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3aa09e0e40250d1e7d40ec0f85adca617852919f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: ee1c5e989c4e4d9937fad4ba23c261437b4009b4
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63401283"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738902"
 ---
-# <a name="idiasymbolgetvirtualaddress"></a>IDiaSymbol::get_virtualAddress
-Recupera o endereço virtual (VA) do local. Usado quando o [enumeração LocationType](../../debugger/debug-interface-access/locationtype.md) é definido como `LocIsStatic`.
+# <a name="idiasymbolget_virtualaddress"></a>IDiaSymbol::get_virtualAddress
+Recupera o endereço virtual (VA) do local. Use quando a [Enumeração LocationType](../../debugger/debug-interface-access/locationtype.md) for definida como `LocIsStatic`.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -33,13 +33,13 @@ HRESULT get_virtualAddress ( 
 #### <a name="parameters"></a>Parâmetros
  `pRetVal`
 
-[out] Retorna o endereço virtual do local.
+fora Retorna o endereço virtual do local.
 
-## <a name="return-value"></a>Valor de retorno
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE` ou um código de erro.
 
 > [!NOTE]
-> Um valor de retorno `S_FALSE` significa que a propriedade não está disponível para o símbolo.
+> Um valor de retorno de `S_FALSE` significa que a propriedade não está disponível para o símbolo.
 
 ## <a name="see-also"></a>Consulte também
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

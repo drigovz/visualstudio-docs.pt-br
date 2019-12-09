@@ -1,27 +1,27 @@
 ---
-title: Atualizando a Interface do usuário | Microsoft Docs
+title: Atualizando a interface do usuário | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - user interfaces, updating
 - commands, updating UI
 ms.assetid: 376e2f56-e7bf-4e62-89f5-3dada84a404b
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d3745cd73e09031b747b6bd17973abb97196ce46
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bf41a41e68aa73e07bdcafe8bcdcd335fff6e6eb
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62798417"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72718795"
 ---
 # <a name="updating-the-user-interface"></a>Atualizando a interface do usuário
-Depois de implementar um comando, você pode adicionar código para atualizar a interface do usuário com o estado de seus novos comandos.
+Depois de implementar um comando, você pode adicionar código para atualizar a interface do usuário com o estado dos novos comandos.
 
- Em um aplicativo típico do Win32, o conjunto de comandos pode ser sondado continuamente e o estado de comandos individuais pode ser ajustado conforme o usuário vê-los. No entanto, porque o [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] shell pode hospedar um número ilimitado de VSPackages, sondagem extenso pode diminuir a capacidade de resposta, especialmente de sondagem em assemblies de interoperabilidade entre código gerenciado e COM.
+ Em um aplicativo Win32 típico, o conjunto de comandos pode ser sondado continuamente e o estado de comandos individuais pode ser ajustado conforme o usuário os exibe. No entanto, como o [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] shell pode hospedar um número ilimitado de VSPackages, a sondagem extensiva pode diminuir a capacidade de resposta, especialmente sondando entre assemblies de interoperabilidade entre código gerenciado e COM.
 
 ### <a name="to-update-the-ui"></a>Para atualizar a interface do usuário
 
@@ -29,7 +29,7 @@ Depois de implementar um comando, você pode adicionar código para atualizar a 
 
     - Chame o método <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.UpdateCommandUI%2A>.
 
-         Uma <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell> interface pode ser obtido o <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell> de serviço, da seguinte maneira.
+         Uma interface <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell> pode ser obtida do serviço <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell>, da seguinte maneira.
 
         ```csharp
         void UpdateUI(Microsoft.VisualStudio.Shell.ServiceProvider sp)
@@ -44,11 +44,11 @@ Depois de implementar um comando, você pode adicionar código para atualizar a 
 
         ```
 
-         Se o parâmetro do <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.UpdateCommandUI%2A> for diferente de zero (`TRUE`), em seguida, a atualização é executada de forma síncrona e imediatamente. É recomendável que você passe zero (`FALSE`) para esse parâmetro ajudar a manter um bom desempenho. Se você quiser evitar o armazenamento em cache, aplique o `DontCache` sinalizador quando você cria o comando no arquivo. VSCT. No entanto, use o sinalizador com cuidado, ou pode diminuir o desempenho. Para obter mais informações sobre os sinalizadores de comando, consulte o [elemento Command Flag](../extensibility/command-flag-element.md) documentação.
+         Se o parâmetro do <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.UpdateCommandUI%2A> for diferente de zero (`TRUE`), a atualização será executada de forma síncrona e imediata. Recomendamos que você passe zero (`FALSE`) para esse parâmetro para ajudar a manter um bom desempenho. Se você quiser evitar o cache, aplique o sinalizador `DontCache` ao criar o comando no arquivo. vsct. No entanto, use o sinalizador com cuidado ou o desempenho pode diminuir. Para obter mais informações sobre sinalizadores de comando, consulte a documentação do [elemento de sinalizador de comando](../extensibility/command-flag-element.md) .
 
-    - Em VSPackages que hospedam um controle ActiveX por meio do modelo de ativação no local em uma janela, pode ser mais conveniente usar o <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponentUIManager.UpdateUI%2A> método. O <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.UpdateCommandUI%2A> método na <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell> interface e o <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponentUIManager.UpdateUI%2A> método no <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponentUIManager> interface são funcionalmente equivalentes. Ambos fazem com que o ambiente consultar novamente o estado de todos os comandos. Normalmente, uma atualização não é executada imediatamente. Em vez disso, uma atualização é atrasada até o tempo ocioso. O shell armazena em cache o estado do comando para ajudar a manter um bom desempenho. Se você quiser evitar o armazenamento em cache, aplique o `DontCache` sinalizador quando você cria o comando no arquivo. VSCT. No entanto, use o sinalizador com cuidado porque pode diminuir o desempenho.
+    - No VSPackages que hospeda um controle ActiveX usando o modelo de ativação in-loco em uma janela, pode ser mais conveniente usar o método <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponentUIManager.UpdateUI%2A>. O método <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.UpdateCommandUI%2A> na interface <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell> e o método <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponentUIManager.UpdateUI%2A> na interface <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponentUIManager> são funcionalmente equivalentes. Ambos fazem com que o ambiente consulte novamente o estado de todos os comandos. Normalmente, uma atualização não é executada imediatamente. Em vez disso, uma atualização é atrasada até o tempo ocioso. O Shell armazena em cache o estado do comando para ajudar a manter um bom desempenho. Se você quiser evitar o cache, aplique o sinalizador `DontCache` ao criar o comando no arquivo. vsct. No entanto, use o sinalizador com cuidado porque o desempenho pode diminuir.
 
-         Observe que você pode obter o <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponentUIManager> interface chamando o `QueryInterface` método em um <xref:Microsoft.VisualStudio.Shell.Interop.IOleComponentUIManager> do objeto ou por Obtendo a interface do <xref:Microsoft.VisualStudio.Shell.Interop.SOleComponentUIManager> service.
+         Observe que você pode obter a interface <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponentUIManager> chamando o método `QueryInterface` em um objeto <xref:Microsoft.VisualStudio.Shell.Interop.IOleComponentUIManager> ou obtendo a interface do serviço <xref:Microsoft.VisualStudio.Shell.Interop.SOleComponentUIManager>.
 
 ## <a name="see-also"></a>Consulte também
 - [Como os VSPackages adicionam elementos da interface do usuário](../extensibility/internals/how-vspackages-add-user-interface-elements.md)

@@ -1,6 +1,7 @@
 ---
 title: Caixa de diálogo da linha de comando do evento de pré-build/evento de pós-build
 ms.date: 11/04/2016
+ms.technology: vs-ide-compile
 ms.topic: reference
 f1_keywords:
 - cs.ProjectPropertiesBuildEventsBuilder
@@ -28,48 +29,51 @@ helpviewer_keywords:
 - $(ProjectName)
 - build events, macros
 ms.assetid: d49b2c57-24bf-4fb2-8351-5c4b6cca938f
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 977bd72b478d2106f687d3666aad574a63ca68ec
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d5671a75a847d81caedeffc17ea436eade060f3e
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62969053"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461313"
 ---
-# <a name="pre-build-eventpost-build-event-command-line-dialog-box"></a>Caixa de diálogo Evento de Pré-build/Linha de Comando do Evento de Pós-build
+# <a name="pre-build-eventpost-build-event-command-line-dialog-box"></a>Caixa de diálogo da linha de comando do evento de pré-build/evento de pós-build
+
 Você pode digitar eventos de pré ou de pós-build para a [Página de Eventos de Build, Designer de Projeto (C#)](../../ide/reference/build-events-page-project-designer-csharp.md) diretamente na caixa Editar, ou pode selecionar macros pré e pós-build em uma lista de macros disponíveis.
 
 > [!NOTE]
 > Eventos de pré-build não serão executados se o projeto estiver atualizado e nenhum build será disparado.
 
 ## <a name="ui-element-list"></a>Lista de elementos da interface de usuário
- **Caixa de edição de linha de comando**
 
- Contém os eventos a serem executados para pré ou pós-build.
+**Caixa de edição de linha de comando**
+
+Contém os eventos a serem executados para pré ou pós-build.
 
 > [!NOTE]
 > Adicione uma instrução `call` antes de todos os comandos pós-build que executam arquivos .bat. Por exemplo, `call C:\MyFile.bat` ou `call C:\MyFile.bat call C:\MyFile2.bat`.
 
- **Macros**
+**Macros**
 
- Expande a caixa de edição para exibir uma lista de macros para inserir na caixa de edição de linha de comando.
+Expande a caixa de edição para exibir uma lista de macros para inserir na caixa de edição de linha de comando.
 
- **Tabela de macros**
+**Tabela de macros**
 
- Lista as macros disponíveis e o valor delas. Consulte Macros abaixo para obter uma descrição de cada uma. Você pode selecionar somente uma macro por vez para inserir na caixa de edição de linha de comando.
+Lista as macros disponíveis e o valor delas. Consulte Macros abaixo para obter uma descrição de cada uma. Você pode selecionar somente uma macro por vez para inserir na caixa de edição de linha de comando.
 
- **Inserir**
+**Inserir**
 
- Insere na caixa de edição de inserções na linha de comando a macro selecionada na tabela de macros.
+Insere na caixa de edição de inserções na linha de comando a macro selecionada na tabela de macros.
 
 ### <a name="macros"></a>Macros
- Você pode usar qualquer uma dessas macros para especificar locais de arquivos ou obter o nome real do arquivo de entrada no caso de várias seleções. Essas macros não diferenciam maiúsculas de minúsculas.
 
-|Macro|Descrição|
+Você pode usar qualquer uma dessas macros para especificar locais de arquivos ou obter o nome real do arquivo de entrada no caso de várias seleções. Essas macros não diferenciam maiúsculas de minúsculas.
+
+|Macro|DESCRIÇÃO|
 |-----------|-----------------|
 |`$(ConfigurationName)`|O nome da configuração do projeto atual, por exemplo, “Depurar”.|
 |`$(OutDir)`|Caminho para o diretório do arquivo de saída com relação ao diretório do projeto. Isso é resolvido para o valor da propriedade Diretório de Saída. Inclui a barra invertida “\\”.|

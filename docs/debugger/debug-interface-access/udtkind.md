@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 511beae100529f0db555eca0a8ddb995d7a335d1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 45ed43bf65c38890ca7ebda1a6b1719532697eae
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62853518"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738452"
 ---
 # <a name="udtkind"></a>UdtKind
-Descreve a variedade de tipo definido pelo usuário (UDT).
+Descreve a variedade de UDT (tipo definido pelo usuário).
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -38,15 +38,15 @@ UdtStruct UDT é uma estrutura.
 
 UdtClass UDT é uma classe.
 
-UdtUnion UDT é uma união.
+UdtUnion UDT é uma União.
 
 UdtInterface UDT é uma interface.
 
 ## <a name="remarks"></a>Comentários
-Os valores nesta enumeração são retornados pelo [idiasymbol:: Get_udtkind](../../debugger/debug-interface-access/idiasymbol-get-udtkind.md) método.
+Os valores nessa enumeração são retornados pelo método [IDiaSymbol:: get_udtKind](../../debugger/debug-interface-access/idiasymbol-get-udtkind.md) .
 
 ## <a name="requirements"></a>Requisitos
-Cabeçalho: cvconst.h
+Cabeçalho: cvconst. h
 
 ## <a name="see-also"></a>Consulte também
 - [Enumerações e estruturas](../../debugger/debug-interface-access/enumerations-and-structures.md)

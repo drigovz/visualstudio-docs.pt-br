@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ce251da3c1cb7b1da00971d46cc0801ad24b8985
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6618440cab9b9042ec371383f6c809ca1d0d11f7
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839817"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743087"
 ---
 # <a name="idialoadcallbacknotifydebugdir"></a>IDiaLoadCallback::NotifyDebugDir
-Chamado quando um diretório de depuração foi encontrado no arquivo .exe.
+Chamado quando um diretório de depuração foi encontrado no arquivo. exe.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -35,25 +35,25 @@ HRESULT NotifyDebugDir ( 
 #### <a name="parameters"></a>Parâmetros
  `fExecutable`
 
-[in] `TRUE` se o diretório de depuração é lido a partir de um executável (em vez de um arquivo. dbg).
+[in] `TRUE` se o diretório de depuração for lido a partir de um executável (em vez de um arquivo. dbg).
 
  `cbData`
 
-[in] Contagem de bytes de dados no diretório de depuração.
+no Contagem de bytes de dados no diretório de depuração.
 
  `data[]`
 
-[in] Uma matriz que é preenchida com o diretório de depuração.
+no Uma matriz que é preenchida com o diretório de depuração.
 
-## <a name="return-value"></a>Valor de retorno
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro. O código de retorno normalmente é ignorado.
+## <a name="return-value"></a>Valor retornado
+ Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro. O código de retorno é normalmente ignorado.
 
 ## <a name="remarks"></a>Comentários
- O [idiadatasource:: Loaddataforexe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) método invoca esse retorno de chamada quando ele encontra um diretório de depuração ao processar o arquivo executável.
+ O método [IDiaDataSource:: loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) invoca esse retorno de chamada quando ele encontra um diretório de depuração durante o processamento do arquivo executável.
 
- Esse método remove a necessidade do cliente para o arquivo executável e/ou a depuração de engenharia reversa para dar suporte a informações de depuração que não seja encontrado no arquivo. PDB. Com esses dados, o cliente pode reconhecer o tipo de informações de depuração disponíveis e se ele reside no arquivo executável ou o arquivo. dbg.
+ Esse método remove a necessidade do cliente de fazer a engenharia reversa do arquivo executável e/ou de depuração para dar suporte a informações de depuração diferentes das encontradas no arquivo. pdb. Com esses dados, o cliente pode reconhecer o tipo de informações de depuração disponíveis e se ele reside no arquivo executável ou no arquivo. dbg.
 
- A maioria dos clientes não precisarão esse retorno de chamada porque o `IDiaDataSource::loadDataForExe` método transparentemente abre os arquivos. PDB e. dbg quando necessário, para servir de símbolos.
+ A maioria dos clientes não precisará desse retorno de chamada, pois o método `IDiaDataSource::loadDataForExe` abre de forma transparente os arquivos. PDB e. dbg quando necessário para atender aos símbolos.
 
 ## <a name="see-also"></a>Consulte também
 - [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)

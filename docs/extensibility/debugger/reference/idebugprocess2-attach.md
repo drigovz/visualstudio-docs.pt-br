@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProcess2::Attach
 ms.assetid: 40d78417-fde2-45c3-96c9-16e06bd9008d
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f700a6f6ff06fb37660419c46a394a0449d976bf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 24a83c13d8953e3725a5fc5a4e55153b9ade88c4
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62871283"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66353245"
 ---
 # <a name="idebugprocess2attach"></a>IDebugProcess2::Attach
 O Gerenciador de sessão de depuração (SDM) é anexado ao processo.
@@ -42,22 +45,18 @@ int Attach( 
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `pCallback`
+## <a name="parameters"></a>Parâmetros
+`pCallback`\
+[in] Uma [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) objeto que é usado para notificação de eventos de depuração.
 
- [in] Uma [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) objeto que é usado para notificação de eventos de depuração.
+`rgguidSpecificEngines`\
+[in] Uma matriz de GUIDs de mecanismos de depuração a ser usado para depurar programas em execução no processo. Esse parâmetro pode ser um valor nulo. Consulte os comentários para obter detalhes.
 
- `rgguidSpecificEngines`
+`celtSpecificEngines`\
+[in] O número de depuração mecanismos na `rgguidSpecificEngines` matriz e o tamanho do `rghrEngineAttach` matriz.
 
- [in] Uma matriz de GUIDs de mecanismos de depuração a ser usado para depurar programas em execução no processo. Esse parâmetro pode ser um valor nulo. Consulte os comentários para obter detalhes.
-
- `celtSpecificEngines`
-
- [in] O número de depuração mecanismos na `rgguidSpecificEngines` matriz e o tamanho do `rghrEngineAttach` matriz.
-
- `rghrEngineAttach`
-
- [no, out] Uma matriz de códigos HRESULT retornado pelos mecanismos de depuração. O tamanho dessa matriz é especificado no `celtSpecificEngines` parâmetro. Cada código é normalmente `S_OK` ou `S_ATTACH_DEFERRED`. O último indica que o DE está atualmente conectado a nenhum programa.
+`rghrEngineAttach`\
+[no, out] Uma matriz de códigos HRESULT retornado pelos mecanismos de depuração. O tamanho dessa matriz é especificado no `celtSpecificEngines` parâmetro. Cada código é normalmente `S_OK` ou `S_ATTACH_DEFERRED`. O último indica que o DE está atualmente conectado a nenhum programa.
 
 ## <a name="return-value"></a>Valor de retorno
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro. A tabela a seguir mostra os outros valores possíveis.

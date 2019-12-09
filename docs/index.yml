@@ -1,0 +1,75 @@
+### YamlMime:Hub
+title: Documentação da família de produtos do Visual Studio
+summary: Explore a documentação da família de produtos do Visual Studio.
+brand: visual-studio
+metadata:
+  title: Documentação da família de produtos do Visual Studio
+  description: Explore a documentação da família de produtos do Visual Studio.
+  ms.topic: hub-page
+  ms.date: 11/13/2019
+  searchScope: []
+  titleSuffix: ''
+  ms.author: ghogen
+  author: ghogen
+  ms.manager: jillfra
+  monikerRange: '>=vs-2017'
+  hide_bc: true
+  ms.openlocfilehash: b36b1835f38a4ce6fe46d72935dc8cfc144561c3
+  ms.sourcegitcommit: 890ae10c8ea3bff8306ed25b06256578dee08397
+  ms.translationtype: HT
+  ms.contentlocale: pt-BR
+  ms.lasthandoff: 11/15/2019
+  ms.locfileid: "74118969"
+productDirectory:
+  items:
+  - title: Visual Studio
+    imageSrc: ./media/vs-ide-2019.svg
+    links:
+    - url: /visualstudio/windows?view=vs-2019
+      text: Visual Studio 2019 (atual)
+    - url: /visualstudio/windows?view=vs-2017
+      text: Visual Studio 2017
+    - url: https://docs.microsoft.com/previous-versions/visualstudio/
+      text: Versões anteriores
+    - url: https://docs.microsoft.com/visualstudio/releases/2019/release-notes
+      text: Notas de Versão
+    - url: https://visualstudio.microsoft.com/
+      text: Página do produto
+  - title: Visual Studio para Mac
+    imageSrc: ./media/vs-mac-2019.svg
+    links:
+    - url: https://docs.microsoft.com/visualstudio/mac
+      text: Visual Studio 2019 para Mac (atual)
+    - url: https://docs.microsoft.com/visualstudio/mac/?view=vsmac-2017
+      text: Visual Studio 2017 para Mac
+    - url: https://docs.microsoft.com/visualstudio/releasenotes/vs2019-mac-relnotes
+      text: Notas de Versão
+    - url: https://visualstudio.microsoft.com/vs/mac/
+      text: Página do produto
+  - title: Visual Studio Code
+    imageSrc: ./media/vs-code-logo.svg
+    links:
+    - url: https://code.visualstudio.com/docs
+      text: Documentação
+    - url: https://code.visualstudio.com/updates
+      text: Notas de Versão
+    - url: https://code.visualstudio.com
+      text: Página do produto
+  - title: Centro de Aplicativos do Visual Studio
+    imageSrc: ./media/vs-mobile-center.svg
+    links:
+    - url: https://docs.microsoft.com/appcenter
+      text: Documentação
+    - url: https://visualstudio.microsoft.com/app-center/
+      text: Portal
+  - title: Assinaturas do Visual Studio
+    imageSrc: ./media/vs-subscription-temp.svg
+    links:
+    - url: https://docs.microsoft.com/visualstudio/subscriptions
+      text: Documentação
+    - url: https://visualstudio.microsoft.com/subscriptions
+      text: Informações em visualstudio.com
+    - url: https://my.visualstudio.com
+      text: Portal
+    - url: https://manage.visualstudio.com
+      text: Administração

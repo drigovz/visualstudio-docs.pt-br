@@ -2,17 +2,17 @@
 title: Gerenciar propriedades do projeto e da solução
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9279257f238adf92ad560d2f2e1aa7f769905305
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 99786cc2b646c011a0398e973e0fd3d4dd97583f
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62537360"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72603437"
 ---
 # <a name="manage-project-and-solution-properties"></a>Gerenciar propriedades do projeto e da solução
 
@@ -48,7 +48,7 @@ Projetos em C++ e JavaScript têm uma interface do usuário diferente para geren
 
 ![Propriedades de projeto do Visual C&#43;&#43;](../ide/media/vs2015_projprops_cpp.png)
 
-Para obter informações sobre as propriedades do projeto C++, confira [Trabalhar com propriedades do projeto (C++)](/cpp/ide/working-with-project-properties). Para obter mais informações sobre as propriedades do JavaScript, confira [Páginas de propriedades, JavaScript](../ide/reference/property-pages-javascript.md).
+Para obter informações sobre as propriedades do projeto C++, confira [Trabalhar com propriedades do projeto (C++)](/cpp/build/working-with-project-properties). Para obter mais informações sobre as propriedades do JavaScript, confira [Páginas de propriedades, JavaScript](../ide/reference/property-pages-javascript.md).
 
 ## <a name="solution-properties"></a>Propriedades da solução
 

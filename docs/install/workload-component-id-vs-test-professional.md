@@ -5,7 +5,7 @@ description: Usar IDs de carga de trabalho e de componente do Visual Studio para
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 03/01/2019
+ms.date: 09/23/2019
 ms.topic: reference
 helpviewer_keywords:
 - workload ID, Visual Studio
@@ -15,12 +15,12 @@ ms.assetid: 70c03438-8434-4921-ada0-c172519af431
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 monikerRange: vs-2017
-ms.openlocfilehash: 354fce02944b62e1ea9ea96e66f6fa34af8616fc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: d61105a16919e8384aad961d62a81ff3a8688b25
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62960668"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71213656"
 ---
 # <a name="visual-studio-test-professional-component-directory"></a>Diretório de componentes do Visual Studio Test Professional
 

@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Set Current Stack Frame command
 - Debug.SetCurrentStackFrame command
 ms.assetid: 3dcf52c0-6781-4598-bac2-0094dce67c20
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9eea69dc4d2931f66d4c6769667e23bdfb4eecf1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 088fe9871b54e69b015ffdc9dcdaf23de3d98e0e
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62934523"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747753"
 ---
 # <a name="set-current-stack-frame-command"></a>Comando Definir Quadro de Pilha Atual
 Permite definir um registro de ativação específico.
@@ -30,9 +30,9 @@ Debug.SetCurrentStackFrame index
 ```
 
 ## <a name="arguments"></a>Arguments
- `index`
+`index`
 
- Necessário. Seleciona um registro de ativação pelo seu índice.
+Necessário. Seleciona um registro de ativação pelo seu índice.
 
 ## <a name="example"></a>Exemplo
 

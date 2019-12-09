@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplicationEvents::OnBreakFlagChange | Microsoft Docs
+title: 'IRemoteDebugApplicationEvents:: OnBreakFlagChange | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: eb19b6cfc423a1305276441305ef854c70f2d896
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 71e9a29b6dcc5cd6864ce4edffe9e5f96b64ba9e
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62943797"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72561713"
 ---
 # <a name="iremotedebugapplicationeventsonbreakflagchange"></a>IRemoteDebugApplicationEvents::OnBreakFlagChange
-Manipula um evento quando alterar os sinalizadores de quebra.  
+Manipula um evento quando os sinalizadores de interrupção são alterados.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -38,12 +38,12 @@ HRESULT OnBreakFlagChange(
   
 #### <a name="parameters"></a>Parâmetros  
  `abf`  
- [in] Os sinalizadores de interrupção atual para o aplicativo.  
+ no Os sinalizadores de quebra atuais do aplicativo.  
   
  `prdatSteppingThread`  
- [in] O thread em execução no momento.  
+ no O thread atualmente em execução.  
   
-## <a name="return-value"></a>Valor de retorno  
+## <a name="return-value"></a>Valor retornado  
  O método retorna um `HRESULT`. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.  
   
 |Valor|Descrição|  
@@ -51,8 +51,8 @@ HRESULT OnBreakFlagChange(
 |`S_OK`|O método foi bem-sucedido.|  
   
 ## <a name="remarks"></a>Comentários  
- Esse método manipula o evento quando o sinalizador de interrupção são alterados.  
+ Esse método trata o evento quando o sinalizador de interrupção é alterado.  
   
 ## <a name="see-also"></a>Consulte também  
- [Interface IRemoteDebugApplicationEvents](../../winscript/reference/iremotedebugapplicationevents-interface.md)   
+ @No__t_1 de [interface IRemoteDebugApplicationEvents](../../winscript/reference/iremotedebugapplicationevents-interface.md)  
  [APPBREAKFLAGS Enumeration](../../winscript/reference/appbreakflags-enumeration.md)

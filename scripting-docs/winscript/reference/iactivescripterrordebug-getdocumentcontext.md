@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptErrorDebug::GetDocumentContext | Microsoft Docs
+title: 'IActiveScriptErrorDebug:: GetDocumentContext | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 380ee3b993408c21119da1494f4a0e005b994399
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9e1a6e2502e9329a7a56a7359e11a934f0ae5985
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63009710"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576327"
 ---
 # <a name="iactivescripterrordebuggetdocumentcontext"></a>IActiveScriptErrorDebug::GetDocumentContext
-Fornece o contexto de documento para esse erro.  
+Fornece o contexto do documento para este erro.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -37,9 +37,9 @@ HRESULT GetDocumentContext(
   
 #### <a name="parameters"></a>Parâmetros  
  `ppssc`  
- [out] O contexto de documento para esse erro.  
+ fora O contexto do documento para este erro.  
   
-## <a name="return-value"></a>Valor de retorno  
+## <a name="return-value"></a>Valor retornado  
  O método retorna um `HRESULT`. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.  
   
 |Valor|Descrição|  
@@ -47,7 +47,7 @@ HRESULT GetDocumentContext(
 |`S_OK`|O método foi bem-sucedido.|  
   
 ## <a name="remarks"></a>Comentários  
- Intervalo de posição do caractere de contexto do documento deve incluir todos os caracteres correspondentes ao erro.  
+ O intervalo de posição de caracteres do contexto do documento deve incluir todos os caracteres correspondentes ao erro.  
   
 ## <a name="see-also"></a>Consulte também  
  [IActiveScriptErrorDebug Interface](../../winscript/reference/iactivescripterrordebug-interface.md)

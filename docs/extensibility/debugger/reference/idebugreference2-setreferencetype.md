@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugReference2::SetReferenceType
 ms.assetid: 5854a172-ea82-481c-97d9-c7fc16923d44
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 53404ae46771472bbbaa4de996b332d3d75f0d0c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: add8a7c8243cd9754c30e38b5fac8fcf715a63da
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62868973"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66339830"
 ---
 # <a name="idebugreference2setreferencetype"></a>IDebugReference2::SetReferenceType
 Define o tipo de referência. Reservado para uso futuro.
@@ -36,10 +39,9 @@ int SetReferenceType ( 
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `dwRefType`
-
- [in] Um valor a partir de [REFERENCE_TYPE](../../../extensibility/debugger/reference/reference-type.md) enumeração que especifica o tipo de referência.
+## <a name="parameters"></a>Parâmetros
+`dwRefType`\
+[in] Um valor a partir de [REFERENCE_TYPE](../../../extensibility/debugger/reference/reference-type.md) enumeração que especifica o tipo de referência.
 
 ## <a name="return-value"></a>Valor de retorno
  Sempre retorna `E_NOTIMPL`.

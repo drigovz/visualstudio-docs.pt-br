@@ -2,85 +2,89 @@
 title: Usando conjuntos de regras para especificar as regras do C++ para execução
 ms.date: 04/28/2018
 ms.topic: conceptual
+f1_keywords:
+- vs.codeanalysis.rulesets.native
 author: mikeblome
 ms.author: mblome
-manager: wpickett
+manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d4d7dfc1f010b860653edbe14fa7af9050bddba4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8e25e28c2ff20a628058d5dfa71de0368fbe9249
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62820367"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72445616"
 ---
-# <a name="use-rule-sets-to-specify-the-c-rules-to-run"></a>Use conjuntos de regras para especificar as regras do C++ para execução
+# <a name="use-rule-sets-to-specify-the-c-rules-to-run"></a>Usar conjuntos de regras para especificar C++ as regras a serem executadas
 
-No Visual Studio, você pode criar e modificar um personalizado *conjunto de regras* para atender às necessidades específicas do projeto associadas com a análise de código. Os conjuntos de regras padrão são armazenados em `%VSINSTALLDIR%\Team Tools\Static Analysis Tools\Rule Sets`.
+No Visual Studio, você pode criar e modificar um *conjunto de regras* personalizadas para atender às necessidades específicas do projeto associadas à análise de código. Os conjuntos de regras padrão são armazenados em `%VSINSTALLDIR%\Team Tools\Static Analysis Tools\Rule Sets`.
 
-**Visual Studio 2017 versão 15.7 e posterior** você pode criar conjuntos de regra personalizada usando qualquer texto editor e aplicá-las em compilações de linha de comando não importa o que cria o sistema que você está usando. Para obter mais informações, consulte [/ANALYZE: ruleset](/cpp/build/reference/analyze-code-analysis).
+**Visual Studio 2017 versão 15,7 e posterior:** Você pode criar conjuntos de regras personalizados usando qualquer editor de texto e aplicá-los em compilações de linha de comando, independentemente do sistema de compilação que você está usando. Para obter mais informações, consulte [/analyze: RuleSet](/cpp/build/reference/analyze-code-analysis).
 
-Para criar uma regra de C++ personalizada definida no Visual Studio, um projeto C/C++ deve ser aberto no IDE do Visual Studio. Você, em seguida, abra um conjunto de regras padrão no editor de conjunto de regras e, em seguida, adicionar ou remove regras específicas e, opcionalmente, altere a ação que ocorre quando a análise de código determina que uma regra foi violada.
+Para criar um conjunto C++ de regras personalizado no Visual Studio, um CC++ /projeto deve estar aberto no IDE do Visual Studio. Em seguida, abra um conjunto de regras padrão no editor de conjunto de regras e adicione ou remova regras específicas e, opcionalmente, altere a ação que ocorre quando a análise de código determina que uma regra foi violada.
 
-Para criar uma nova regra personalizada definida, você pode salvá-lo usando um novo nome de arquivo. O conjunto de regras personalizado é atribuído automaticamente ao projeto.
+Para criar um novo conjunto de regras personalizadas, salve-o usando um novo nome de arquivo. O conjunto de regras personalizadas é atribuído automaticamente ao projeto.
 
-## <a name="to-create-a-custom-rule-from-a-single-existing-rule-set"></a>Para criar uma regra personalizada de um único conjunto de regras existente
+## <a name="to-create-a-custom-rule-from-a-single-existing-rule-set"></a>Para criar uma regra personalizada com base em um único conjunto de regras existente
 
-1. No Gerenciador de soluções, abra o menu de atalho para o projeto e, em seguida, escolha **propriedades**.
+1. No Gerenciador de Soluções, abra o menu de atalho do projeto e, em seguida, escolha **Propriedades**.
 
-2. Sobre o **propriedades** guia, escolha **análise de código**.
+2. Na guia **Propriedades** , escolha **análise de código**.
 
-3. No **do conjunto de regras** lista suspensa, siga um destes procedimentos:
+3. Na lista suspensa **conjunto de regras** , siga um destes procedimentos:
 
    - Escolha o conjunto de regras que você deseja personalizar.
 
      \- ou -
 
-   - Escolher  **\<procurar... >** especificar uma regra existente definida que não está na lista.
+   - Escolha **\<Browse... >** especificar um conjunto de regras existente que não esteja na lista.
 
-4. Escolher **abrir** para exibir as regras no editor de conjunto de regras.
+4. Escolha **abrir** para exibir as regras no editor de conjunto de regras.
 
-## <a name="to-modify-a-rule-set-in-the-rule-set-editor"></a>Para modificar uma regra definida no editor de conjunto de regras
+## <a name="to-modify-a-rule-set-in-the-rule-set-editor"></a>Para modificar um conjunto de regras no editor de conjunto de regras
 
-- Para alterar o nome de exibição do conjunto de regras na **modo de exibição** menu, escolha **janela propriedades**. Insira o nome de exibição na **nome** caixa. Observe que o nome de exibição pode ser diferente do nome do arquivo.
+- Para alterar o nome de exibição do conjunto de regras, no menu **Exibir** , escolha **janela de propriedades**. Insira o nome de exibição na caixa **nome** . Observe que o nome de exibição pode ser diferente do nome do arquivo.
 
 - Para adicionar todas as regras do grupo a um conjunto de regras personalizadas, marque a caixa de seleção do grupo. Para remover todas as regras do grupo, desmarque a caixa de seleção.
 
-- Para adicionar uma regra específica para o conjunto de regras personalizadas, marque a caixa de seleção da regra. Para remover a regra do conjunto de regras, desmarque a caixa de seleção.
+- Para adicionar uma regra específica ao conjunto de regras personalizadas, marque a caixa de seleção da regra. Para remover a regra do conjunto de regras, desmarque a caixa de seleção.
 
-- Para alterar a ação executada quando uma regra é violada em uma análise de código, escolha o **ação** do campo para a regra e, em seguida, escolha um dos seguintes valores:
+- Para alterar a ação realizada quando uma regra é violada em uma análise de código, escolha o campo de **ação** para a regra e, em seguida, escolha um dos seguintes valores:
 
-     **Avisar** -gera um aviso.
+     **Aviso** -gera um aviso.
 
      **Erro** -gera um erro.
+     
+     **Informações** – gera uma mensagem.
 
-     **Nenhum** -desabilita a regra. Essa ação é o mesmo que remover a regra do conjunto de regras.
+     **Nenhum** – desabilita a regra. Essa ação é a mesma que remover a regra do conjunto de regras.
 
-## <a name="to-group-filter-or-change-the-fields-in-the-rule-set-editor-by-using-the-rule-set-editor-toolbar"></a>Para agrupar, filtrar ou alterar os campos no editor de conjunto de regras usando a barra de ferramentas do editor de conjunto de regra
+## <a name="to-group-filter-or-change-the-fields-in-the-rule-set-editor-by-using-the-rule-set-editor-toolbar"></a>Para agrupar, filtrar ou alterar os campos no editor de conjunto de regras usando a barra de ferramentas do editor de conjunto de regras
 
-- Para expandir as regras em todos os grupos, escolha **Expandir tudo**.
+- Para expandir as regras em todos os grupos, escolha **expandir tudo**.
 
-- Para recolher as regras em todos os grupos, escolha **Recolher tudo**.
+- Para recolher as regras em todos os grupos, escolha **recolher tudo**.
 
-- Para alterar o campo que as regras são agrupadas por, escolha o campo do **Group By** lista. Para exibir as regras não agrupadas, escolha  **\<None >**.
+- Para alterar o campo pelo qual as regras são agrupadas, escolha o campo na lista **Agrupar por** . Para exibir as regras desagrupadas, escolha **\<None >** .
 
-- Para adicionar ou remover campos nas colunas de regra, escolha **opções de coluna**.
+- Para adicionar ou remover campos em colunas de regra, escolha **Opções de coluna**.
 
-- Para ocultar as regras que não se aplicam à solução atual, escolha **ocultar as regras que não se aplicam à solução atual**.
+- Para ocultar regras que não se aplicam à solução atual, escolha **ocultar regras que não se aplicam à solução atual**.
 
-- Para alternar entre mostrar e ocultar as regras que são atribuídas a ação de erro, escolha **Mostrar regras que podem gerar erros de análise de código**.
+- Para alternar entre mostrar e ocultar regras que são atribuídas à ação de erro, escolha **Mostrar regras que podem gerar erros de análise de código**.
 
-- Para alternar entre mostrar e ocultar as regras que são atribuídas a ação de aviso, escolha **Mostrar regras que podem gerar avisos de análise de código**.
+- Para alternar entre mostrar e ocultar regras que recebem a ação de aviso, escolha **Mostrar regras que podem gerar avisos de análise de código**.
 
-- Para alternar entre mostrar e ocultar as regras que são atribuídas a **None** ação, escolha **Mostrar regras que não estão habilitadas**.
+- Para alternar entre mostrar e ocultar regras que são atribuídas à ação **nenhum** , escolha **Mostrar regras que não estão habilitadas**.
 
-- Para adicionar ou remover Microsoft conjuntos de regras do padrão para o conjunto de regras atual, escolha **adicionar ou remover conjuntos de regras filho**.
+- Para adicionar ou remover conjuntos de regras padrão da Microsoft para o conjunto de regras atual, escolha **Adicionar ou remover conjuntos de regras filho**.
 
-## <a name="to-create-a-rule-set-in-a-text-editor"></a>Para criar uma regra definida em um editor de texto
+## <a name="to-create-a-rule-set-in-a-text-editor"></a>Para criar um conjunto de regras em um editor de texto
 
-Você pode criar um conjunto de regras personalizado no texto de um editor, armazená-lo em qualquer local com um `.ruleset` extensão e aplicam-se com o [/ANALYZE: ruleset](/cpp/build/reference/analyze-code-analysis) opção de compilador.
+Você pode criar um conjunto de regras personalizado em um editor de texto, armazená-lo em qualquer local com uma extensão `.ruleset` e aplicá-lo com a opção de compilador [/analyze: RuleSet](/cpp/build/reference/analyze-code-analysis) .
 
-O exemplo a seguir mostra que uma regra básica de definir o arquivo que você pode usar como ponto de partida:
+O exemplo a seguir mostra um arquivo de conjunto de regras básico que você pode usar como um ponto de partida:
 
 ::: moniker range="vs-2017"
 

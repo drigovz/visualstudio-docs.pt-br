@@ -6,17 +6,17 @@ helpviewer_keywords:
 - deploy packages
 - publish extension
 ms.assetid: b6c82167-e2a5-4cff-8c8b-2d72e2a9092c
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 972b0b777cda837b246de4a208337c4e369139c4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cc2600a6c72e13ba7d894dab84f0b8a171d5a43e
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62953134"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66322835"
 ---
 # <a name="vsix-project-template"></a>Modelo de projeto do VSIX
 
@@ -80,7 +80,7 @@ Você pode empacotar uma extensão existente ou uma extensão que ainda não ten
 
 8. Compile a solução.
 
-    [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] cria uma *. VSIX* arquivo que contém um arquivo de manifesto do VSIX, [Content_Types]*. XML* arquivo e todos os ativos de extensão que você adicionou ao projeto.
+    [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] cria uma *. VSIX* arquivo que contém um arquivo de manifesto do VSIX, [Content_Types] *. XML* arquivo e todos os ativos de extensão que você adicionou ao projeto.
 
 ## <a name="see-also"></a>Consulte também
 

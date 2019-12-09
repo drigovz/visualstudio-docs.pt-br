@@ -34,12 +34,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: dd61ea128093735a69ad9b1f30cddc593b5856a4
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: f12d6cde30dec9062dd67a18558bd0571e6fe6b1
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440435"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685196"
 ---
 # <a name="start-a-debugging-session-for-a-store-app-in-visual-studio-vb-c-c-and-xaml"></a>Iniciar uma sessão de depuração de um aplicativo da Store no Visual Studio (VB, C#, C++ e XAML)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -285,7 +285,7 @@ Aplica-se ao Windows e Windows Phone] (... /Image/windows_and_phone_content.png 
 
 #### <a name="BKMK_Set_the_app_to_run_in_debug_mode"></a> Defina o aplicativo seja executado no modo de depuração
 
-1. Instale as Ferramentas Remotas do Visual Studio no dispositivo em que o aplicativo está instalado. Ver [instalando as ferramentas remotas](http://msdn.microsoft.com/library/windows/apps/hh441469.aspx#BKMK_Installing_the_Remote_Tools).
+1. Instale as Ferramentas Remotas do Visual Studio no dispositivo em que o aplicativo está instalado. Ver [instalando as ferramentas remotas](https://msdn.microsoft.com/library/windows/apps/hh441469.aspx#BKMK_Installing_the_Remote_Tools).
 
 2. Na tela inicial, procure por `Debuggable Package Manager` e inicie-o.
 

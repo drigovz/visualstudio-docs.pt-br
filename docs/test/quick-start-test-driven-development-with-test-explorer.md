@@ -1,81 +1,36 @@
 ---
-title: Desenvolvimento orientado por testes com o Gerenciador de Testes
-ms.date: 11/04/2016
+title: Passo a passo de desenvolvimento controlado por teste
+ms.date: 07/24/2019
 ms.topic: conceptual
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: cd80739f887a42c62af55bc06cfb65704f4755ef
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+author: jillre
+ms.openlocfilehash: d62989ffe5444f94cf3b062cde16399c08322b16
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63002168"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72646664"
 ---
-# <a name="quickstart-test-driven-development-with-test-explorer"></a>Início Rápido: Desenvolvimento orientado por testes com o Gerenciador de Testes
+# <a name="walkthrough-test-driven-development-using-test-explorer"></a>Walkthrough: desenvolvimento orientado por testes usando o Gerenciador de testes
 
-É recomendável que você crie testes de unidade para ajudar a manter seu código funcionando corretamente muitas etapas incrementais de desenvolvimento. Há várias estruturas que você pode usar para escrever testes de unidade, incluindo alguns desenvolvidos por terceiros. Algumas estruturas de teste são especializadas para testes em diferentes idiomas ou plataformas. O Gerenciador de Testes fornece uma interface única para testes de unidade em qualquer uma dessas estruturas. Adaptadores estão disponíveis para as estruturas comumente usadas e você pode escrever seus próprios adaptadores para outras estruturas.
+Crie testes de unidade para ajudar a manter seu código funcionando corretamente por meio de alterações de código incrementais. Há várias estruturas que você pode usar para escrever testes de unidade, incluindo alguns desenvolvidos por terceiros. Algumas estruturas de teste são especializadas para testes em diferentes idiomas ou plataformas. O Gerenciador de Testes fornece uma interface única para testes de unidade em qualquer uma dessas estruturas. Para saber mais sobre como usar o **Gerenciador de Testes**, confira [Executar testes de unidade com o Gerenciador de Testes](run-unit-tests-with-test-explorer.md) e [Perguntas Frequentes do Gerenciador de Testes](test-explorer-faq.md).
 
-O Gerenciador de Testes substitui as janelas de teste de unidade encontradas em edições anteriores do Visual Studio. Suas vantagens incluem:
+Este passo a passo demonstra como desenvolver um método testado em C# usando a MSTest (estrutura de teste da Microsoft). Você pode adaptá-lo facilmente para outros idiomas e usar outras estruturas de teste como a NUnit. Para saber mais, consulte [Instalar estruturas de teste de unidade de terceiros](install-third-party-unit-test-frameworks.md).
 
-- Executar o .NET, não gerenciado, o banco de dados e outros tipos de testes usando uma única interface.
+## <a name="create-a-test-and-generate-code"></a>Criar um teste e gerar código
 
-- Use a estrutura de teste de unidade de sua escolha, como NUnit ou MSTest estruturas.
+1. Crie um projeto de **Biblioteca de Classes (.NET Standard)** do C#. Esse projeto conterá o código que queremos testar. Nomeie o projeto **MyMath**.
 
-- Consulte todas as informações que você precisa em uma janela.
+2. Na mesma solução, adicione um novo **projeto de teste do MSTest (.NET Core)** . Nomeie esse projeto de teste **MathTests**.
 
-## <a name="use-test-explorer"></a>Usar o Gerenciador de Testes
+   ![Novos projetos de teste e código](../test/media/test-driven-development-ide.png)
 
-![Gerenciador de Testes mostrando o botão Executar Todos](../test/media/unittestexplorer-beta-.png)
-
-### <a name="to-run-unit-tests-by-using-test-explorer"></a>Para executar testes de unidade usando o Gerenciador de Testes
-
-1. Crie testes de unidade que usam as estruturas de teste de sua escolha. Por exemplo, para criar um teste que usa a estrutura MSTest:
-
-   1. Crie um **Projeto de Teste de Unidade** do C#, Visual Basic ou C++.
-
-   2. Grave cada teste de unidade como um método. Prefixe cada método de teste com o atributo `[TestMethod]`.
-
-2. Se os testes individuais não tiverem dependências que os impeçam de serem executados em qualquer ordem, ative a execução de teste em paralelo com o ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) botão de alternância na barra de ferramentas. Isso pode reduzir consideravelmente o tempo necessário para executar todos os testes.
-
-3. Na barra de menus, escolha **Teste** > **Executar Testes de Unidade** > **Todos os Testes**.
-
-    A solução é criada e os testes são executados.
-
-    O Gerenciador de Testes abre e exibe um resumo dos resultados.
-
-   **Para ver uma lista completa de testes:** Escolha **Mostrar Tudo** em qualquer categoria.
-
-   **Para ver os detalhes de um resultado do teste:** Selecione o teste no Gerenciador de Testes para exibir detalhes como mensagens de exceção no painel de detalhes.
-
-   **Para navegar para o código de um teste:** Clique duas vezes no teste no Gerenciador de Testes ou escolha **Abrir Teste** no menu de atalho.
-
-   **Para depurar um teste:** Abra o menu de atalho de um ou mais testes e, em seguida, escolha **Depurar Testes Selecionados**.
-
-> [!IMPORTANT]
-> Os resultados que são exibidos são para as execuções mais recentes. A barra colorida de resultados mostra somente os resultados dos testes que foram executados. Por exemplo, se você executar vários testes e alguns deles falharem e executar apenas os testes com sucesso, a barra de resultados mostrará todos na cor verde.
-
-> [!NOTE]
-> Se nenhum teste for exibido, certifique-se de que você tenha instalado um adaptador para conectar o Gerenciador de Testes a estruturas de teste que você está usando. Para saber mais, consulte [Instalar estruturas de teste de unidade de terceiros](install-third-party-unit-test-frameworks.md).
-
-## <a name="walkthrough-using-unit-tests-to-develop-a-method"></a>Passo a passo: Usando testes de unidade para desenvolver um método
-
-Este passo a passo demonstra como desenvolver um método testado em C# usando a estrutura de teste de unidade da Microsoft. Você pode adaptá-lo facilmente para outros idiomas e usar outras estruturas de teste como NUnit. Para saber mais, consulte [Instalar estruturas de teste de unidade de terceiros](install-third-party-unit-test-frameworks.md).
-
-### <a name="create-the-test-and-method"></a>Criar o teste e o método
-
-1. Crie um projeto de **Biblioteca de Classes** do C#. Esse projeto conterá o código que queremos fornecer. Neste exemplo, o nome usado é `MyMath`.
-
-2. Crie um **Projeto de Teste de Unidade**.
-
-   ![Novos projetos de teste e código](../test/media/unittestexplorerwalk1.png)
-
-3. Escreva um método de teste básico. Verifique o resultado obtido para uma entrada específica:
+3. Escreva um método de teste simples que verifique o resultado obtido para uma entrada específica. Adicione o seguinte código à classe `UnitTest1`:
 
    ```csharp
-
    [TestMethod]
    public void BasicRooterTest()
    {
@@ -87,98 +42,93 @@ Este passo a passo demonstra como desenvolver um método testado em C# usando a 
      // Run the method under test:
      double actualResult = rooter.SquareRoot(input);
      // Verify the result:
-     Assert.AreEqual(expectedResult, actualResult,
-         delta: expectedResult / 100);
+     Assert.AreEqual(expectedResult, actualResult, delta: expectedResult / 100);
    }
    ```
 
-4. Gere o método do teste.
+4. Gere um tipo com base no código de teste.
 
-   1. Coloque o cursor em `Rooter` e, em seguida, no menu de atalho, escolha **Gerar** > **Novo Tipo**.
+   1. Coloque o cursor sobre `Rooter` e, no menu de lâmpada, escolha **Gerar tipo 'Rooter'**  > **Gerar novo tipo**.
 
-   2. Na caixa de diálogo **Gerar Novo Tipo**, defina **Projeto** para o projeto de biblioteca de classes. Neste exemplo, é `MyMath`.
+      ![Ação rápida Gerar novo tipo](media/test-driven-development-generate-new-type.png)
 
-   3. Coloque o cursor em `SquareRoot` e, em seguida, no menu de atalho, escolha **Gerar** > **Stub do Método**.
+   2. Na caixa de diálogo **Gerar Tipo**, defina **Projeto** para **MyMath**, o projeto de biblioteca de classes, depois escolha **OK**.
 
-5. Execute o teste de unidade.
+      ![Caixa de diálogo Gerar Tipo no Visual Studio 2019](media/test-driven-development-generate-type-dialog.png)
 
-   1. No menu **Teste**, escolha **Executar Testes de Unidade** > **Todos os Testes**.
+5. Gere um método com base no código de teste. Coloque o cursor sobre `SquareRoot` e, no menu de lâmpada, escolha **Gerar método 'Rooter.SquareRoot'** .
 
-        A solução é criada e executada.
+6. Execute o teste de unidade.
 
-        O Gerenciador de Testes abre e exibe os resultados.
+   1. Para abrir o **Gerenciador de Testes**, no menu **Teste**, escolha **Windows** > **Gerenciador de Testes**.
 
-        Se um teste aparecer sob **Testes com Falha**.
+   2. No **Gerenciador de Testes**, escolha o botão **Executar Todos** para executar o teste.
 
-6. Selecione o nome do teste.
+   A solução é compilada, o teste é executado e falha.
 
-    Os detalhes do teste são exibidos na parte inferior do Gerenciador de Testes.
+7. Selecione o nome do teste.
 
-7. Selecione os itens em **Rastreamento de pilha** para ver onde o teste falhou.
+   Os detalhes do teste aparecem no painel **Resumo dos Detalhes do Teste**.
 
-   ![Gerenciador de Testes de Unidade mostrando teste com falha.](../test/media/unittestexplorerwalkthrough2.png)
+   ![Resumo dos Detalhes do Teste no Gerenciador de Testes](media/test-driven-development-test-detail-summary.png)
 
-   Neste ponto, você criou um teste e um stub que você modificará para que o teste seja aprovado.
+8. Selecione o link superior em **Rastreamento de Pilha** para ir para o local em que o teste falhou.
 
-#### <a name="after-every-change-make-all-the-tests-pass"></a>Após cada alteração, faça todos os testes serem aprovados
+Neste ponto, você criou um teste e um stub que você pode modificar para que o teste seja aprovado.
 
-1. Em *MyMath\Rooter.cs*, melhore o código de `SquareRoot`:
+## <a name="verify-a-code-change"></a>Verificar uma alteração de código
+
+1. No arquivo *Class1.cs*, melhore o código de `SquareRoot`:
 
     ```csharp
     public double SquareRoot(double input)
-     {
-       return input / 2;
-     }
+    {
+        return input / 2;
+    }
     ```
 
-2. No Gerenciador de Testes, escolha **Executar Todos**.
+2. No **Gerenciador de Testes**, escolha **Executar Todos**.
 
-     Compila o código e o teste é executado.
+   A solução é compilada, o teste é executado e passa.
 
-     O teste é aprovado.
+   ![Gerenciador de Testes mostrando teste aprovado](../test/media/test-driven-development-passed-test.png)
 
-     ![Gerenciador de Testes de Unidade mostrando teste aprovado.](../test/media/unittestexplorerwalkthrough3.png)
+## <a name="extend-the-range-of-inputs"></a>Estender o intervalo de entradas
 
-#### <a name="add-tests-to-extend-the-range-of-inputs"></a>Adicionar testes para estender o intervalo de entradas
+Para aumentar nossa confiança que o código funciona em todos os casos, adicione testes que experimentem uma variedade maior de valores de entrada.
 
-1. Para aumentar sua confiança que seu código funciona em todos os casos, adicione os testes que tente uma variedade maior de valores de entrada.
+> [!TIP]
+> Evite alterar testes existentes que foram aprovados. Em vez disso, adicione novos testes. Altere os testes existentes somente quando os requisitos de usuário forem alterados. Essa política ajuda a garantir que você não perca a funcionalidade existente enquanto trabalha para estender o código.
 
-    > [!TIP]
-    > Evite alterar testes existentes que foram aprovados. Em vez disso, adicione novos testes. Altere os testes existentes somente quando os requisitos de usuário forem alterados. Essa política ajuda a garantir que você não perca a funcionalidade existente enquanto trabalha para estender o código.
-
-     Na classe de teste, adicione o seguinte teste, que tenta um intervalo de valores de entrada:
+1. Na classe de teste, adicione o teste a seguir, que experimenta um intervalo de valores de entrada:
 
     ```csharp
     [TestMethod]
     public void RooterValueRange()
     {
-      // Create an instance to test:
-      Rooter rooter = new Rooter();
-      // Try a range of values:
-      for (double expectedResult = 1e-8;
-          expectedResult < 1e+8;
-          expectedResult = expectedResult * 3.2)
-      {
-        RooterOneValue(rooter, expectedResult);
-      }
+        // Create an instance to test.
+        Rooter rooter = new Rooter();
+
+        // Try a range of values.
+        for (double expected = 1e-8; expected < 1e+8; expected *= 3.2)
+        {
+            RooterOneValue(rooter, expected);
+        }
     }
 
     private void RooterOneValue(Rooter rooter, double expectedResult)
     {
-      double input = expectedResult * expectedResult;
-      double actualResult = rooter.SquareRoot(input);
-      Assert.AreEqual(expectedResult, actualResult,
-          delta: expectedResult / 1000);
+        double input = expectedResult * expectedResult;
+        double actualResult = rooter.SquareRoot(input);
+        Assert.AreEqual(expectedResult, actualResult, delta: expectedResult / 1000);
     }
     ```
 
-2. No Gerenciador de Testes, escolha **Executar Todos**.
+2. No **Gerenciador de Testes**, escolha **Executar Todos**.
 
-     O novo teste falha, embora o primeiro teste ainda seja aprovado.
+   O novo teste falha, embora o primeiro teste ainda tenha sido aprovado. Para encontrar o ponto de falha, selecione o teste com falha e examine os detalhes no painel **Resumo dos Detalhes do Teste**.
 
-     Para localizar o ponto de falha, selecione o teste com falha e, em seguida, na parte inferior do Gerenciador de Testes, selecione o item superior do **Rastreamento de pilha**.
-
-3. Inspecione o método sob teste para ver o que pode estar errado. Na classe `MyMath.Rooter`, reescreva o código:
+3. Inspecione o método sob teste para ver o que pode estar errado. Altere o código `SquareRoot` conforme demonstrado a seguir:
 
     ```csharp
     public double SquareRoot(double input)
@@ -194,89 +144,86 @@ Este passo a passo demonstra como desenvolver um método testado em C# usando a 
     }
     ```
 
-4. No Gerenciador de Testes, escolha **Executar Todos**.
+4. No **Gerenciador de Testes**, escolha **Executar Todos**.
 
-     Ambos os testes agora foram aprovados.
+   Ambos os testes agora foram aprovados.
 
-#### <a name="add-tests-for-exceptional-cases"></a>Adicionar testes para casos excepcionais
+## <a name="add-tests-for-exceptional-cases"></a>Adicionar testes para casos excepcionais
 
-1. Adicione um teste para entradas negativas:
+1. Adicione um novo teste para entradas negativas:
 
     ```csharp
     [TestMethod]
-     public void RooterTestNegativeInputx()
-     {
-         Rooter rooter = new Rooter();
-         try
-         {
-             rooter.SquareRoot(-10);
-         }
-         catch (ArgumentOutOfRangeException e)
-         {
-             return;
-         }
-         Assert.Fail();
-     }
+    public void RooterTestNegativeInputx()
+    {
+        Rooter rooter = new Rooter();
+        try
+        {
+            rooter.SquareRoot(-10);
+        }
+        catch (System.ArgumentOutOfRangeException)
+        {
+            return;
+        }
+        Assert.Fail();
+    }
     ```
 
-2. No Gerenciador de Testes, escolha **Executar Todos**.
+2. No **Gerenciador de Testes**, escolha **Executar Todos**.
 
-     O método sob teste é executado em loop e deve ser cancelado manualmente.
+   O método sob teste é executado em loop e deve ser cancelado manualmente.
 
-3. Escolha **Cancelar**.
+3. Escolha **Cancelar** na barra de ferramentas do **Gerenciador de Testes**.
 
-     O teste para após 10 segundos.
+   A execução do teste é interrompida.
 
-4. Corrija o código do método:
+4. Corrija o código `SquareRoot` adicionando a seguinte instrução `if` no início do método:
 
     ```csharp
-
     public double SquareRoot(double input)
     {
-      if (input <= 0.0)
-      {
-        throw new ArgumentOutOfRangeException();
-      }
-    ...
-    ```
-
-5. No Gerenciador de Testes, escolha **Executar Todos**.
-
-     Dessa vez os testes são aprovados.
-
-#### <a name="refactor-without-changing-tests"></a>Faça refatoração sem alterar os testes
-
-1. Simplifique o código, mas não altere os testes.
-
-    > [!TIP]
-    > Uma *refatoração* é uma alteração que é destinada para fazer o código funcionar melhor ou para tornar o código mais fácil de entender. Não deve alterar o comportamento do código e, portanto, os testes não são alterados.
-    >
-    > É recomendável que você execute etapas de refatoração separadamente das etapas que estendem a funcionalidade. Manter os testes inalterados proporciona confiança que você não acidentalmente introduziu bugs durante a refatoração.
-
-    ```csharp
-    public class Rooter
-    {
-      public double SquareRoot(double input)
-      {
         if (input <= 0.0)
         {
-          throw new ArgumentOutOfRangeException();
+            throw new ArgumentOutOfRangeException();
         }
+        ...
+    ```
+
+5. No **Gerenciador de Testes**, escolha **Executar Todos**.
+
+   Dessa vez os testes são aprovados.
+
+## <a name="refactor-the-code-under-test"></a>Refatorar o código em teste
+
+Refatore o código, mas não altere os testes.
+
+> [!TIP]
+> Uma *refatoração* é uma alteração que é destinada para fazer o código funcionar melhor ou torná-lo mais fácil de entender. Não deve alterar o comportamento do código e, portanto, os testes não são alterados.
+>
+> É recomendável que você execute etapas de refatoração separadamente das etapas que estendem a funcionalidade. Manter os testes inalterados proporciona confiança que você não acidentalmente introduziu bugs durante a refatoração.
+
+1. Altere a linha que calcula `result` no método `SquareRoot` da seguinte maneira:
+
+    ```csharp
+    public double SquareRoot(double input)
+    {
+        if (input <= 0.0)
+        {
+            throw new ArgumentOutOfRangeException();
+        }
+
         double result = input;
         double previousResult = -input;
         while (Math.Abs(previousResult - result) > result / 1000)
         {
-          previousResult = result;
-          result = (result + input / result) / 2;
-          //was: result = result - (result * result - input) / (2*result);
+            previousResult = result;
+            result = (result + input / result) / 2;
+            //was: result = result - (result * result - input) / (2*result);
         }
         return result;
-      }
     }
     ```
 
-2. Escolha **Executar Todos**.
+2. Escolha **Executar Tudo** e verifique se todos os testes ainda são aprovados.
 
-     Todos os testes ainda são aprovados.
-
-     ![Gerenciador de Testes de Unidade mostrando 3 testes aprovados.](../test/media/unittestexplorerwalkthrough4.png)
+   ![O Gerenciador de Testes mostrando três testes aprovados](../test/media/test-driven-development-three-passed-tests.png)

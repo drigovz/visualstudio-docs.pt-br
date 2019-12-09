@@ -11,15 +11,15 @@ caps.latest.revision: 3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6aab63989d1ae02f7c75fc9c20a14d59e8a05078
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 802a9f31cc7e3497c5e5fc54395d988552f75e84
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62840196"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574372"
 ---
 # <a name="scriptlanguageversion-enumeration"></a>Enumeração SCRIPTLANGUAGEVERSION
-Especifica os possíveis versões de script.  
+Especifica as versões de script possíveis.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -32,8 +32,8 @@ typedef enum tagSCRIPTLANGUAGEVERSION{    SCRIPTLANGUAGEVERSION_DEFAULT = 0,    
 |||  
 |-|-|  
 |SCRIPTLANGUAGEVERSION_DEFAULT|A versão padrão. O valor inteiro é 0.|  
-|SCRIPTLANGUAGEVERSION_5_7|A versão 5.7 de script do Windows. O valor inteiro é 1.|  
-|SCRIPTLANGUAGEVERSION_5_8|A versão 5.8 de script do Windows. O valor inteiro é 2.|  
+|SCRIPTLANGUAGEVERSION_5_7|Windows scripting versão 5,7. O valor inteiro é 1.|  
+|SCRIPTLANGUAGEVERSION_5_8|Windows scripting versão 5,8. O valor inteiro é 2.|  
 |SCRIPTLANGUAGEVERSION_MAX|A versão máxima. O valor inteiro é 255.|  
   
 ## <a name="see-also"></a>Consulte também  

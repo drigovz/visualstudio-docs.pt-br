@@ -11,12 +11,12 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ab699ad2a70a63fe3f8124cc87960f104a3b4cc2
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 0cef64ae0b1aa5c6fee6422675e10b65c4713d2c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59663304"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703248"
 ---
 # <a name="msbuild-concepts"></a>Conceitos do MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ O [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] fornece um esquema XM
 |[Tarefas](../msbuild/msbuild-tasks.md)|Mostra como criar uma unidade do código executável que pode ser usado por [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] para realizar operações de build atômicas.|  
 |[Comparando propriedades e itens](../msbuild/comparing-properties-and-items.md)|Compara itens e propriedades do MSBuild. Ambos são usados para passar informações para tarefas, avaliar condições e armazenar os valores que podem ser referenciadas em todo o arquivo de projeto.|  
 |[Caracteres especiais do MSBuild](../msbuild/msbuild-special-characters.md)|Explica como escapar alguns caracteres que o [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] reserva para uso especial em contextos específicos.|  
-|[Passo a passo: Criando um arquivo de projeto do MSBuild do zero](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md)|Mostra como criar um arquivo de projeto básico de forma incremental, usando somente um editor de texto.|  
+|[Passo a passo: criando um arquivo de projeto do MSBuild do zero](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md)|Mostra como criar um arquivo de projeto básico de forma incremental, usando somente um editor de texto.|  
 |[Passo a passo: Usando o MSBuild](../msbuild/walkthrough-using-msbuild.md)|Apresenta os blocos de construção do MSBuild e mostra como escrever, manipular e depurar projetos do MSBuild sem fechar o IDE (ambiente de desenvolvimento integrado) do Visual Studio.|  
 |[Referência do MSBuild](../msbuild/msbuild-reference.md)|Links para documentos que contêm informações de referência.|  
-|[MSBuild](http://msdn.microsoft.com/e39f13f7-1e1d-4435-95ca-0c222bca071c)|Apresenta uma visão geral do esquema XML para um arquivo de projeto e mostra como ele controla os processos que compilam o software.|
+|[MSBuild](https://msdn.microsoft.com/e39f13f7-1e1d-4435-95ca-0c222bca071c)|Apresenta uma visão geral do esquema XML para um arquivo de projeto e mostra como ele controla os processos que compilam o software.|

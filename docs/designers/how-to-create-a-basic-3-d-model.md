@@ -1,21 +1,21 @@
 ---
-title: 'Como: Criar um modelo 3D básico'
+title: Como criar um modelo 3D básico
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: a0d97966-2df8-449b-a8cf-5a19684dc773
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1be8af11dd9b03b8c63d34b60e6af3c3c8147b48
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 604847e5f9bf6111d548b9d3bbdc0a0e10301784
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62894179"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72636730"
 ---
-# <a name="how-to-create-a-basic-3d-model"></a>Como: Criar um modelo 3D básico
+# <a name="how-to-create-a-basic-3d-model"></a>Como criar um modelo 3D básico
 
 Este artigo demonstra como usar o Editor de Modelo para criar um modelo 3D básico. As seguintes atividades são abordadas:
 
@@ -30,13 +30,13 @@ Este artigo demonstra como usar o Editor de Modelo para criar um modelo 3D bási
 - Uso do comando **Triangular**
 
 ## <a name="create-a-basic-3d-model"></a>Criar um modelo 3D básico
- Você pode usar o Editor de Modelo para criar e modificar modelos e cenas 3D para seu jogo ou aplicativo. As etapas a seguir mostram como usar o Editor de Modelos para criar um modelo 3D simplificado de uma casa. Um modelo simplificado pode ser usado como um substituto para ativos de arte final que ainda estão sendo criados, como uma malha para detecção de colisão ou como um modelo de nível baixo de detalhes a ser usado quando o objeto que ele representa está muito longe tirar proveito de uma renderização mais detalhada.
+Você pode usar o Editor de Modelo para criar e modificar modelos e cenas 3D para seu jogo ou aplicativo. As etapas a seguir mostram como usar o Editor de Modelos para criar um modelo 3D simplificado de uma casa. Um modelo simplificado pode ser usado como um substituto para ativos de arte final que ainda estão sendo criados, como uma malha para detecção de colisão ou como um modelo de nível baixo de detalhes a ser usado quando o objeto que ele representa está muito longe tirar proveito de uma renderização mais detalhada.
 
- Ao terminar, o modelo deve ter esta aparência:
+Ao terminar, o modelo deve ter esta aparência:
 
- ![O modelo concluído da casa simplificada](../designers/media/gfx_model_demo_house_final.png)
+![O modelo concluído da casa simplificada](../designers/media/gfx_model_demo_house_final.png)
 
- Antes de começar, verifique se a janela **Propriedades** e a **Caixa de Ferramentas** estão sendo exibidas.
+Antes de começar, verifique se a janela **Propriedades** e a **Caixa de Ferramentas** estão sendo exibidas.
 
 ### <a name="to-create-a-simplified-3d-model-of-a-house"></a>Para criar um modelo 3D simplificado de uma casa
 
@@ -70,10 +70,10 @@ Este artigo demonstra como usar o Editor de Modelo para criar um modelo 3D bási
 
    ![O modelo concluído da casa simplificada](../designers/media/gfx_model_demo_house_final.png)
 
-   Como uma próxima etapa, você pode aplicar um sombreador a esse modelo 3D. Para obter mais informações, veja [Como: Aplicar um sombreador a um modelo 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
+   Como uma próxima etapa, você pode aplicar um sombreador a esse modelo 3D. Para obter informações, confira [Como aplicar um sombreador a um modelo 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
 
 ## <a name="see-also"></a>Consulte também
 
-- [Como: Modelar um terreno 3D](../designers/how-to-model-3-d-terrain.md)
+- [Como modelar um terreno 3D](../designers/how-to-model-3-d-terrain.md)
 - [Editor de modelos](../designers/model-editor.md)
 - [Designer de sombreador](../designers/shader-designer.md)

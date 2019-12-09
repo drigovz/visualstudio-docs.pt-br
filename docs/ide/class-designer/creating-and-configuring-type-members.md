@@ -24,17 +24,17 @@ helpviewer_keywords:
 - Class Details window
 - Class Details window, member creation
 ms.assetid: 42af8738-3738-4ca7-82ff-edf573a68f96
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 39932fe8d4afa31c66d6daa4af33d963b5612eb2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 0a842ccb936c755a27ab28287f9da8d6355e92fc
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975539"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647750"
 ---
 # <a name="create-and-configure-type-members-in-class-designer"></a>Criar e configurar membros de tipo no Designer de Classe
 
@@ -42,7 +42,7 @@ ms.locfileid: "62975539"
 
 |**Tipo**|**Membros que pode conter**|
 |--------------| - |
-|Classe|método, propriedade (para C# e Visual Basic), campo, evento (para C# e Visual Basic), construtor (método), destruidor (método), constante|
+|Class|método, propriedade (para C# e Visual Basic), campo, evento (para C# e Visual Basic), construtor (método), destruidor (método), constante|
 |Enum|membro|
 |Interface|método, propriedade, evento (para C# e Visual Basic)|
 |Classe Abstrata|método, propriedade (para C# e Visual Basic), campo, evento (para C# e Visual Basic), construtor (método), destruidor (método), constante|
@@ -57,8 +57,8 @@ ms.locfileid: "62975539"
 
 |Tarefa|Conteúdo de suporte|
 |----------| - |
-|**Introdução:** Antes de criar e configurar membros de tipo, você precisará abrir a Janela **Detalhes da Classe**.|- [Abrir a janela Detalhes da Classe](creating-and-configuring-type-members.md#open-the-class-details-window)<br />- [Observações sobre uso de detalhes da classe](creating-and-configuring-type-members.md#class-details-usage-notes)<br />- [Exibição de informações somente leitura](creating-and-configuring-type-members.md#display-of-read-only-information)<br />- [Atalhos de teclado e do mouse no Diagrama de Classe e na janela Detalhes da Classe](keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window.md)|
-|**Criar e modificar membros de tipo:** Crie membros, modifique-os e adicione parâmetros a um método usando a Janela **Detalhes da Classe**.|- [Criar membros](creating-and-configuring-type-members.md#create-members)<br />- [Modificar membros de tipo](creating-and-configuring-type-members.md#modify-type-members)<br />- [Adicionar parâmetros a métodos](creating-and-configuring-type-members.md#add-parameters-to-methods)|
+|**Introdução:** antes de criar e configurar membros de tipo, você precisa abrir a janela **Detalhes da Classe**.|- [Abrir a janela Detalhes da Classe](creating-and-configuring-type-members.md#open-the-class-details-window)<br />- [Observações sobre uso de detalhes da classe](creating-and-configuring-type-members.md#class-details-usage-notes)<br />- [Exibição de informações somente leitura](creating-and-configuring-type-members.md#display-of-read-only-information)<br />- [Atalhos de teclado e do mouse no Diagrama de Classe e na janela Detalhes da Classe](keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window.md)|
+|**Criar e modificar membros de tipo:** você pode criar membros, modificar membros e adicionar parâmetros a um método usando a janela **Detalhes da Classe**.|- [Criar membros](creating-and-configuring-type-members.md#create-members)<br />- [Modificar membros de tipo](creating-and-configuring-type-members.md#modify-type-members)<br />- [Adicionar parâmetros a métodos](creating-and-configuring-type-members.md#add-parameters-to-methods)|
 
 ## <a name="open-the-class-details-window"></a>Abra a janela Detalhes da Classe
 
@@ -114,7 +114,7 @@ Você pode criar um membro usando qualquer uma das ferramentas a seguir:
 
      O tipo obtém foco e seu conteúdo é exibido na janela **Detalhes da Classe**.
 
-2. Na janela **Detalhes da Classe**, na seção que contém o tipo de membro que você deseja adicionar, clique em **\<adicionar membro>**. Por exemplo, se quiser adicionar um campo, clique em **\<adicionar campo>**.
+2. Na janela **Detalhes da Classe**, na seção que contém o tipo de membro que você deseja adicionar, clique em **\<adicionar membro>** . Por exemplo, se quiser adicionar um campo, clique em **\<adicionar campo>** .
 
 3. Digite o nome do membro que deseja criar e pressione Enter.
 
@@ -122,7 +122,8 @@ Você pode criar um membro usando qualquer uma das ferramentas a seguir:
 
 4. Se preferir, especifique outros detalhes sobre o membro, como seu tipo.
 
-     **Observação:** Use também atalhos de teclado para criar membros. Para obter mais informações, confira [Atalhos de teclado e do mouse no Diagrama de Classe e na janela Detalhes da Classe](keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window.md).
+    > [!NOTE]
+    > Use também atalhos de teclado para criar membros. Para obter mais informações, confira [Atalhos de teclado e do mouse no Diagrama de Classe e na janela Detalhes da Classe](keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window.md).
 
 ## <a name="modify-type-members"></a>Modificar membros de tipo
 
@@ -150,7 +151,7 @@ Cada linha de membro exibe os seguintes elementos:
 
 - **Modificador do membro**
 
-     Altere o modificador de visibilidade de um membro para `Public` (`public`), `Private` (`private`), `Friend` (`internal`) `Protected` (`protected`), `Protected``Friend` (`protected``internal`) ou `Default`.
+     Altere o modificador de visibilidade de um membro para `Public` (`public`), `Private` (`private`), `Friend` (`internal`) `Protected` (`protected`), `Protected Friend` (`protected internal`) ou `Default`.
 
 - **\<adicionar membro>**
 
@@ -207,7 +208,7 @@ As linhas de parâmetro contém os seguintes itens:
 
      A última linha de parâmetro de um membro contém o texto **<adicionar parâmetro\>** na célula **Nome**. Clicar nessa célula permite criar um novo parâmetro. Para obter mais informações, consulte [Para adicionar um parâmetro a um método](creating-and-configuring-type-members.md#add-parameters-to-methods).
 
-A janela **Propriedades** exibe as mesmas propriedades de parâmetro exibidas na Janela **Detalhes da Classe**: **Nome**, **Tipo**, **Modificador**, **Resumo**, bem como a propriedade **Padrão Opcional**. Alterar uma propriedade em um local atualiza o valor da propriedade globalmente, incluindo a exibição de seu valor em outro local.
+A janela **Propriedades** exibe as mesmas propriedades de parâmetro exibidas na janela **Detalhes da Classe**: **Nome**, **Tipo**, **Modificador**, **Resumo** e também a propriedade **Padrão Opcional**. Alterar uma propriedade em um local atualiza o valor da propriedade globalmente, incluindo a exibição de seu valor em outro local.
 
 > [!NOTE]
 > Para adicionar um parâmetro a um representante, consulte [Criar membros](creating-and-configuring-type-members.md#create-members).
@@ -225,7 +226,7 @@ A janela **Propriedades** exibe as mesmas propriedades de parâmetro exibidas na
 
      Uma linha de parâmetro recuada é exibida, contendo apenas um par de parênteses e as palavras **\<adicionar parâmetro>.**
 
-3. Clique em **\<adicionar parâmetro>**, digite o nome do novo parâmetro e pressione **Enter**.
+3. Clique em **\<adicionar parâmetro>** , digite o nome do novo parâmetro e pressione **Enter**.
 
      O novo parâmetro é adicionado ao método e ao código do método. Ele é exibido na janela **Detalhes da Classe** e na janela Propriedades.
 
@@ -241,7 +242,7 @@ A janela **Propriedades** exibe as mesmas propriedades de parâmetro exibidas na
 
      Uma linha de parâmetro recuada é exibida, contendo apenas um par de parênteses e as palavras **\<adicionar parâmetro>.**
 
-3. Clique em **\<adicionar parâmetro>**, digite o nome do novo parâmetro e pressione **Enter**.
+3. Clique em **\<adicionar parâmetro>** , digite o nome do novo parâmetro e pressione **Enter**.
 
      O novo parâmetro é adicionado ao método e ao código do método. Ele é exibido na janela **Detalhes da Classe** e na janela Propriedades.
 
@@ -308,7 +309,7 @@ Se você tentar salvar um projeto que contém um tipo cujo arquivo do código-fo
 
 Se um arquivo de código contiver um erro de sintaxe, as formas que exibem o código nesse arquivo serão somente leitura temporariamente até que o erro de sintaxe seja corrigido. As formas nesse estado exibem texto em vermelho e um ícone vermelho que exibe uma dica de ferramenta onde se lê "O arquivo do código-fonte contém um erro de análise".
 
-Um tipo referenciado (como um tipo do .NET Framework), que existe sob outro nó do projeto ou sob um nó de assembly referenciado, é indicado na superfície de design de Designer de Classe como somente leitura. Um tipo local, que existe no projeto que você abriu, é leitura/gravação e sua forma na superfície de design de Designer de Classe é indicada como tal.
+Um tipo referenciado (como um tipo .NET), que existe sob outro nó do projeto ou sob um nó de assembly referenciado, é indicado na área de design do Designer de Classe como somente leitura. Um tipo local, que existe no projeto que você abriu, é leitura/gravação e sua forma na superfície de design de Designer de Classe é indicada como tal.
 
 Os indexadores são de leitura/gravação no código e na janela **Detalhes da Classe**, mas o nome do indexador é somente leitura.
 

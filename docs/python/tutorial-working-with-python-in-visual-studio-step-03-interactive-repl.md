@@ -11,22 +11,25 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 14015c01b487bfe7963d36154ff2dc9b599d7c49
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 51723d22cd72de8333fca9b83c1643117a7413e5
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62430803"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72986223"
 ---
-# <a name="step-3-use-the-interactive-repl-window"></a>Etapa 3: Usar a janela Interativa REPL
+# <a name="step-3-use-the-interactive-repl-window"></a>Etapa 3: usar a janela interativa REPL
 
-**Etapa anterior: [Escrever e executar o código](tutorial-working-with-python-in-visual-studio-step-02-writing-code.md)**
+**Etapa anterior: [Gravar e executar código](tutorial-working-with-python-in-visual-studio-step-02-writing-code.md)**
 
 A janela **Interativa** do Visual Studio para Python oferece uma experiência avançada de REPL (leitura-avaliação-impressão-loop), que reduz consideravelmente o ciclo comum de edição-build-depuração. A janela **Interativa** fornece todos os recursos da experiência de REPL da linha de comando do Python. Ela também facilita a troca de código com arquivos de origem no editor do Visual Studio, o que seria difícil com a linha de comando.
 
-1. Abra a janela **Interativa** clicando com o botão direito do mouse no ambiente de projeto do Python no **Gerenciador de Soluções** (como **Python 3.6 (32 bits)**, mostrado em um gráfico anterior) e selecionando **Abrir Janela Interativa**. Como alternativa, você pode selecionar **Exibir** > **Outras Janelas** > **Janelas Interativas do Python** no menu principal do Visual Studio.
+> [!NOTE]
+> Para problemas com REPL, verifique se os pacotes `ipython` e `ipykernel` estão instalados e, para obter ajuda na instalação dos pacotes, confira a [guia de pacotes de ambientes Python](/en-us/visualstudio/python/python-environments-window-tab-reference#packages-tab).
 
-1. A janela **Interativa** abre-se abaixo do editor com o prompt padrão de REPL do Python **>>>**. A lista suspensa **Ambiente** permite selecionar um intérprete específico com o qual trabalhar. Se você também quiser deixar a janela **Interativa** maior, arraste o separador entre as duas janelas:
+1. Abra a janela **Interativa** clicando com o botão direito do mouse no ambiente de projeto do Python no **Gerenciador de Soluções** (como **Python 3.6 (32 bits)** , mostrado em um gráfico anterior) e selecionando **Abrir Janela Interativa**. Como alternativa, você pode selecionar **Exibir** > **Outras Janelas** > **Janelas Interativas do Python** no menu principal do Visual Studio.
+
+1. A janela **Interativa** abre-se abaixo do editor com o prompt padrão de REPL do Python **>>>** . A lista suspensa **Ambiente** permite selecionar um intérprete específico com o qual trabalhar. Se você também quiser deixar a janela **Interativa** maior, arraste o separador entre as duas janelas:
 
     ![Janela interativa Python: arrastando para redimensionar](media/vs-getting-started-python-11-interactive1b.png)
 
@@ -51,7 +54,7 @@ A janela **Interativa** do Visual Studio para Python oferece uma experiência av
         return ' ' * int(20 * cos(radians(x)) + 20) + 'o'
     ```
 
-1. Selecione apenas as instruções `import` e `from` no arquivo *.py*, clique com o botão direito do mouse e selecione **Enviar para Interactive** (ou pressione **Ctrl**+**Enter**). O fragmento de código será imediatamente colado na janela **Interativa** e executado. Agora selecione a função `make_dot_string` e repita o mesmo comando, que executa novamente esse fragmento de código. Como o código define uma função, é possível testar essa função rapidamente chamando-a algumas vezes:
+1. Selecione as instruções de função `import`, `from`e `make_dot_string` no arquivo *. py* , clique com o botão direito do mouse e selecione **Enviar para interativo** (ou pressione **Ctrl**+**Enter**). O fragmento de código será imediatamente colado na janela **Interativa** e executado. Como o código definiu uma função, você pode testar rapidamente essa função chamando-a algumas vezes:
 
     ![Enviando o código para a janela interativa e testando-o](media/vs-getting-started-python-14-interactive4.png)
 

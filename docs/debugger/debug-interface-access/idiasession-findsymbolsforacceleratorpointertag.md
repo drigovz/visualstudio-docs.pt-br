@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 72510e9e82c1ec6983075880d4335dee8c0ad23c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: da795770ad0f6f57697bc17a4ee8cf936cfc1183
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839232"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741970"
 ---
 # <a name="idiasessionfindsymbolsforacceleratorpointertag"></a>IDiaSession::findSymbolsForAcceleratorPointerTag
-Retorna uma enumeração de símbolos para que o valor da marca especificado corresponde à variável na função de stub do acelerador pai.
+Retorna uma enumeração de símbolos para a variável para a qual o valor de marca especificado corresponde na função de stub do acelerador pai.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -33,17 +33,17 @@ HRESULT findSymbolsForAcceleratorPointerTag ( 
 #### <a name="parameters"></a>Parâmetros
  `parent`
 
-[in] Um IDiaSymbol que corresponde à função de stub Acelerador a ser pesquisado.
+no Um IDiaSymbol que corresponde à função de stub do acelerador a ser pesquisada.
 
  `tagValue`
 
-[in] O valor de marca do ponteiro.
+no O valor da marca do ponteiro.
 
  `ppResult`
 
-[out] Um ponteiro para um `IDiaEnumSymbols` ponteiro de interface que é inicializado com o resultado.
+fora Um ponteiro para um ponteiro de interface `IDiaEnumSymbols` que é inicializado com o resultado.
 
-## <a name="return-value"></a>Valor de retorno
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
 
 ## <a name="see-also"></a>Consulte também

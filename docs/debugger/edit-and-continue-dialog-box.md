@@ -17,17 +17,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fdf515e5ca4aeb20cd9fce0b2a2ea829ad3d2e10
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e9de4e43346c0c7261bbd834349f09619b262e17
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62851327"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72737939"
 ---
 # <a name="edit-and-continue-dialog-box"></a>Caixa de diálogo Editar e Continuar
 (Apenas Nativo) Essa caixa de diálogo aparece quando você edita o código durante a depuração e **Editar e Continuar** reconhece que pode aplicar alterações do código. Para obter mais informações, confira [Editar e Continuar](../debugger/edit-and-continue.md).
 
- **Nunca mostrar essa caixa de diálogo novamente** se você selecionar esta caixa de seleção **editar e continuar** aplicará as alterações de código sem solicitar permissão no futuro. Você pode ativar esse aviso novamente indo em **Opções** na caixa de diálogo, abrindo a pasta **Depuração**, clicando na página **Editar e Continuar** e selecionando **Chamado por comandos de depuração** e **Pergunte-me primeiro**.
+ **Nunca mostrar esta caixa de diálogo novamente** Se você marcar essa caixa de seleção, **Editar e continuar** aplicarão alterações de código sem pedir permissão no futuro. Você pode ativar esse aviso novamente indo em **Opções** na caixa de diálogo, abrindo a pasta **Depuração**, clicando na página **Editar e Continuar** e selecionando **Chamado por comandos de depuração** e **Pergunte-me primeiro**.
 
 ## <a name="see-also"></a>Consulte também
 - [Segurança do depurador](../debugger/debugger-security.md)

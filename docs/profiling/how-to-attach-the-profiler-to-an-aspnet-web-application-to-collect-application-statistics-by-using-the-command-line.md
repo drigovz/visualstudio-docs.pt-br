@@ -1,5 +1,5 @@
 ---
-title: Anexar o criador de perfil a um aplicativo Web ASP.NET para coletar estatísticas do aplicativo
+title: Anexar o criador de perfil no aplicativo web ASP.NET para obter estatísticas de aplicativo
 ms.custom: seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -7,16 +7,17 @@ ms.assetid: 3725ddbe-ce91-4469-991e-8c5ed048c618
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - aspnet
-ms.openlocfilehash: 15c8fad4971e81ae91aebc8ad56be13ff0e33754
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 549e43f403b19d8832e00277f826cdc7b276b747
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439550"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779071"
 ---
-# <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-application-statistics-by-using-the-command-line"></a>Como: Anexar o criador de perfil a um aplicativo Web ASP.NET para coletar estatísticas do aplicativo usando a linha de comando
+# <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-application-statistics-by-using-the-command-line"></a>Como anexar o criador de perfil a um aplicativo Web ASP.NET para coletar estatísticas do aplicativo usando a linha de comando
 Este artigo descreve como usar as ferramentas de linha de comando das Ferramentas de Criação de Perfil do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para anexar o criador de perfil a um aplicativo Web ASP.NET e coletar estatísticas de desempenho usando o método de amostragem.
 
 > [!NOTE]
@@ -40,7 +41,7 @@ Este artigo descreve como usar as ferramentas de linha de comando das Ferramenta
 
 2. Inicialize as variáveis de ambiente de criação de perfil. Tipo:
 
-    **VSPerfClrEnv /globalsampleon** [**/samplelineoff**]
+    **VSPerfClrEnv /globalsampleon** [ **/samplelineoff**]
 
    - **/globalsampleon** habilita a amostragem.
 
@@ -48,11 +49,11 @@ Este artigo descreve como usar as ferramentas de linha de comando das Ferramenta
 
 3. Reinicie o computador.
 
-4. Inicie o criador de perfil. Digite:**VSPerfCmd** [/start](../profiling/start.md)**:sample** [/output](../profiling/output.md)**:**`OutputFile`[`Options`]
+4. {2&gt;Inicie o criador de perfil.&lt;2} Digite:**VSPerfCmd** [/start](../profiling/start.md) **:sample** [/output](../profiling/output.md) **:** `OutputFile`[`Options`]
 
    - A opção **/start:sample** inicializa o criador de perfil.
 
-   - A opção **/output:**`OutputFile` é necessária com **/start**. `OutputFile` especifica o nome e o local do arquivo de dados de criação de perfil (.vsp).
+   - A opção **/output:** `OutputFile` é necessária com **/start**. `OutputFile` especifica o nome e o local do arquivo de dados de criação de perfil (.vsp).
 
      É possível usar qualquer uma das opções a seguir com a opção **/start:sample**.
 
@@ -61,7 +62,7 @@ Este artigo descreve como usar as ferramentas de linha de comando das Ferramenta
 
    | Opção | Descrição |
    | - | - |
-   | [/user](../profiling/user-vsperfcmd.md) **:**[`Domain`**\\**]`UserName` | Especifica o domínio e o nome de usuário da conta proprietária do processo de trabalho ASP.NET analisado. Esta opção será necessária se o processo estiver sendo executado como um usuário diferente do usuário conectado. O proprietário do processo é listado na coluna **Nome de Usuário** na guia **Processos** do Gerenciador de Tarefas do Windows. |
+   | [/user](../profiling/user-vsperfcmd.md) **:** [`Domain` **\\** ]`UserName` | Especifica o domínio e o nome de usuário da conta proprietária do processo de trabalho ASP.NET analisado. Esta opção será necessária se o processo estiver sendo executado como um usuário diferente do usuário conectado. O proprietário do processo é listado na coluna **Nome de Usuário** na guia **Processos** do Gerenciador de Tarefas do Windows. |
    | [/crosssession](../profiling/crosssession.md) | Habilita a criação de perfil de processos em outras sessões de logon. Esta opção será necessária se o aplicativo ASP.NET estiver em execução em uma sessão diferente. O identificador da sessão é listado na coluna ID da Sessão na guia Processos do Gerenciador de Tarefas do Windows. **/CS** pode ser especificado como uma abreviação de **/crosssession**. |
    | [/wincounter](../profiling/wincounter.md) **:** `WinCounterPath` | Especifica um contador de desempenho do Windows que deve ser coletado durante a criação de perfil. |
    | [/automark](../profiling/automark.md) **:** `Interval` | Use somente com **/wincounter**. Especifica o número de milissegundos entre eventos de coleta do contador de desempenho do Windows. O padrão é 500 ms. |
@@ -69,7 +70,7 @@ Este artigo descreve como usar as ferramentas de linha de comando das Ferramenta
 
 5. Inicie o aplicativo Web ASP .NET normalmente.
 
-6. Anexe o criador de perfil ao processo de trabalho do ASP.NET. Digite:**VSPerfCmd** [/attach](../profiling/attach.md)**:**{`PID`&#124;`ProcName`} [`Sample Event`] [[/targetclr](../profiling/targetclr.md)**:**`Version`]
+6. Anexe o criador de perfil ao processo de trabalho do ASP.NET. Digite:**VSPerfCmd** [/attach](../profiling/attach.md) **:** {`PID`&#124;`ProcName`} [`Sample Event`] [[/targetclr](../profiling/targetclr.md) **:** `Version`]
 
    - `PID` especifica a ID de processo do processo de trabalho do ASP.NET; `ProcName` especifica o nome do processo de trabalho. É possível exibir as IDs de processo e nomes de todos os processos em execução no Gerenciador de Tarefas do Windows.
 
@@ -78,12 +79,12 @@ Este artigo descreve como usar as ferramentas de linha de comando das Ferramenta
    |Evento de amostra|Descrição|
    |------------------|-----------------|
    |[/timer](../profiling/timer.md) **:** `Interval`|Altera o intervalo de amostragem para o número de ciclos de relógio não interrompidos especificados pelo `Interval`.|
-   |[/pf](../profiling/pf.md)[**:**`Interval`]|Altera o evento de amostragem para falhas de página. Se `Interval` for especificado, define o número de falhas de página entre as amostras. O padrão é 10.|
+   |[/pf](../profiling/pf.md)[ **:** `Interval`]|Altera o evento de amostragem para falhas de página. Se `Interval` for especificado, define o número de falhas de página entre as amostras. O padrão é 10.|
    |[/sys](../profiling/sys-vsperfcmd.md)[`:``Interval`]|Altera o evento de amostragem para chamadas do sistema do processo para o kernel do sistema operacional (syscalls). Se `Interval` for especificado, define o número de chamadas entre as amostras. O padrão é 10.|
    |[/counter](../profiling/counter.md) **:** `Config`|Altera o evento de amostragem e o intervalo para o contador de desempenho do processador e o intervalo especificado em `Config`.|
    |[/targetclr](../profiling/targetclr.md) **:** `Version`|Especifica a versão do CLR (Common Language Runtime) a ser analisada quando mais de uma versão de tempo de execução for carregada em um aplicativo.|
 
-   - **targetclr:** `Version` especifica a versão do CLR analisada quando mais de uma versão do tempo de execução for carregada em um aplicativo. Opcional.
+   - **targetclr:** `Version` especifica a versão do CLR analisada quando mais de uma versão do runtime for carregada em um aplicativo. Opcional.
 
 ## <a name="control-data-collection"></a>Controlar a coleta de dados
  Quando o aplicativo estiver em execução, você pode controlar a coleta de dados iniciando e parando a gravação de dados no arquivo usando as opções de *VSPerfCmd.exe*. Controlar a coleta de dados permite coletar dados de uma parte específica da execução do programa, como a inicialização ou o desligamento do aplicativo.
@@ -94,9 +95,9 @@ Este artigo descreve como usar as ferramentas de linha de comando das Ferramenta
 
     |Opção|Descrição|
     |------------|-----------------|
-    |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Inicia (**/globalon**) ou interrompe (**/globaloff**) a coleta de dados para todos os processos.|
-    |[/processon](../profiling/processon-and-processoff.md) **:** `PID` **/processoff:** `PID`|Inicia (**/processon**) ou interrompe (**/processoff**) a coleta de dados para o processo especificado pelo `PID`.|
-    |[/attach](../profiling/attach.md) **:**{`PID`&#124;`ProcName`} [/detach](../profiling/detach.md)[**:**{`PID`&#124;`ProcName`}]|**/attach** começa a coletar dados para o processo especificado por `PID` ou pelo nome de processo (ProcName). **/detach** interrompe a coleta de dados para o processo especificado ou para todos os processos se nenhum processo específico for especificado.|
+    |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Inicia ( **/globalon**) ou interrompe ( **/globaloff**) a coleta de dados para todos os processos.|
+    |[/processon](../profiling/processon-and-processoff.md) **:** `PID` **/processoff:** `PID`|Inicia ( **/processon**) ou interrompe ( **/processoff**) a coleta de dados para o processo especificado pelo `PID`.|
+    |[/attach](../profiling/attach.md) **:** {`PID`&#124;`ProcName`} [/detach](../profiling/detach.md)[ **:** {`PID`&#124;`ProcName`}]|**/attach** começa a coletar dados para o processo especificado por `PID` ou pelo nome de processo (ProcName). **/detach** interrompe a coleta de dados para o processo especificado ou para todos os processos se nenhum processo específico for especificado.|
 
 ## <a name="end-the-profiling-session"></a>Encerrar a sessão de criação de perfil
  Para terminar uma sessão de criação de perfil, feche o aplicativo Web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] e use os o comando **IISReset** do IIS (Serviços de Informações da Internet) para fechar o processo de trabalho do [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]. Chame a opção **VSPerfCmd** [/shutdown](../profiling/shutdown.md) para desligar o criador de perfil e fechar o arquivo de dados de criação de perfil.
@@ -111,7 +112,7 @@ Este artigo descreve como usar as ferramentas de linha de comando das Ferramenta
 
    - Digite **VSPerfCmd /detach**
 
-      - ou -
+      \- ou -
 
    - Feche o processo de trabalho [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)].
 

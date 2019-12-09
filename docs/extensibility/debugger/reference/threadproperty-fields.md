@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - THREADPROPERTY_FIELDS enumeration
 ms.assetid: 5b88acb9-03ea-4c29-a788-f0087dccbe23
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 641687dbcfa6bf50ba9e848de589662d282d0c7b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 9da7b995826b905af7faf6cac3fa0fc3d5ceba5e
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62864567"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66316200"
 ---
 # <a name="threadpropertyfields"></a>THREADPROPERTY_FIELDS
 Especifica quais informações sobre um thread deve ser recuperado.
@@ -49,20 +52,27 @@ public enum enum_THREADPROPERTY_FIELDS { 
 };
 ```
 
-## <a name="members"></a>Membros
- TPF_ID Initialize/usar o `dwThreadId` campo do [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md) estrutura.
+## <a name="fields"></a>Campos
+ `TPF_ID`\
+ Inicialização/usar o `dwThreadId` campo do [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md) estrutura.
 
- TPF_SUSPENDCOUNT Initialize/usar o `dwSuspendCount` campo do `THREADPROPERTIE`estrutura.
+ `TPF_SUSPENDCOUNT`\
+ Inicialização/usar o `dwSuspendCount` campo do `THREADPROPERTIE`estrutura.
 
- TPF_STATE Initialize/usar o `dwThreadState` campo do `THREADPROPERTIE`estrutura.
+ `TPF_STATE`\
+ Inicialização/usar o `dwThreadState` campo do `THREADPROPERTIE`estrutura.
 
- TPF_PRIORITY Initialize/usar o `bstrPriority` campo do `THREADPROPERTIE`estrutura.
+ `TPF_PRIORITY`\
+ Inicialização/usar o `bstrPriority` campo do `THREADPROPERTIE`estrutura.
 
- TPF_NAME Initialize/usar o `bstrName` campo do `THREADPROPERTIE`estrutura.
+ `TPF_NAME`\
+ Inicialização/usar o `bstrName` campo do `THREADPROPERTIE`estrutura.
 
- TPF_LOCATION Initialize/usar o `bstrLocation` campo do `THREADPROPERTIE`estrutura.
+ `TPF_LOCATION`\
+ Inicialização/usar o `bstrLocation` campo do `THREADPROPERTIE`estrutura.
 
- TPF_ALLFIELDS especifica todos os campos.
+ `TPF_ALLFIELDS`\
+ Especifica todos os campos.
 
 ## <a name="remarks"></a>Comentários
  Esses valores são passados como um argumento para o [GetThreadProperties](../../../extensibility/debugger/reference/idebugthread2-getthreadproperties.md) método para indicar quais campos da [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md) são de estrutura a ser inicializado.

@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplication::CauseBreak | Microsoft Docs
+title: 'IRemoteDebugApplication:: CauseBreak | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ce0ebe3b32b11bdd79884504233b3f4e09a035f8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8107d7f8450df759b53175505c8d7fc2b6bde641
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62944333"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571489"
 ---
 # <a name="iremotedebugapplicationcausebreak"></a>IRemoteDebugApplication::CauseBreak
-Faz com que o aplicativo para invadir o depurador na primeira oportunidade.  
+Faz com que o aplicativo quebre no depurador na primeira oportunidade.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -36,7 +36,7 @@ HRESULT CauseBreak();
 #### <a name="parameters"></a>Parâmetros  
  Esse método não usa parâmetros.  
   
-## <a name="return-value"></a>Valor de retorno  
+## <a name="return-value"></a>Valor retornado  
  O método retorna um `HRESULT`. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.  
   
 |Valor|Descrição|  
@@ -44,7 +44,7 @@ HRESULT CauseBreak();
 |`S_OK`|O método foi bem-sucedido.|  
   
 ## <a name="remarks"></a>Comentários  
- Chamar esse método não faz com que um aplicativo seja imediatamente interrompido. Se o aplicativo não está executando código de script, um longo tempo pode decorrer antes do aplicativo realmente interrompido.  
+ Chamar esse método não faz com que um aplicativo seja interrompido imediatamente. Se o aplicativo não estiver executando o código de script no momento, um longo tempo pode decorrer antes de o aplicativo ser realmente interrompido.  
   
 ## <a name="see-also"></a>Consulte também  
  [IRemoteDebugApplication Interface](../../winscript/reference/iremotedebugapplication-interface.md)

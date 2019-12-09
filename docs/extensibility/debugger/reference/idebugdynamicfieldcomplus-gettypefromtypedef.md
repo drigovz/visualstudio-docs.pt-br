@@ -6,17 +6,20 @@ helpviewer_keywords:
 - GetTypeFromTypeDef
 - IDebugDynamicFieldCOMPlus::GetTypeFromTypeDef
 ms.assetid: 7f6cd3d3-f4da-4893-be91-8dd104be8010
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fe6226ddf0104f434dbd15c29f779a524de33422
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 1d8c869447f13774f975cbebcba35792cf05b8cb
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62875407"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66320915"
 ---
 # <a name="idebugdynamicfieldcomplusgettypefromtypedef"></a>IDebugDynamicFieldCOMPlus::GetTypeFromTypeDef
 Recupera um tipo de dado seu token.
@@ -41,22 +44,18 @@ int GetTypeFromTypeDef(
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `ulAppDomainID`
+## <a name="parameters"></a>Parâmetros
+`ulAppDomainID`\
+[in] Identificador do domínio do aplicativo.
 
- [in] Identificador do domínio do aplicativo.
+`guidModule`\
+[in] Identificador exclusivo do módulo.
 
- `guidModule`
+`tokClass`\
+[in] Que representa o tipo de token.
 
- [in] Identificador exclusivo do módulo.
-
- `tokClass`
-
- [in] Que representa o tipo de token.
-
- `ppType`
-
- [out] Retorna um [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) objeto que contém o tipo.
+`ppType`\
+[out] Retorna um [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) objeto que contém o tipo.
 
 ## <a name="return-value"></a>Valor de retorno
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.

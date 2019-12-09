@@ -1,5 +1,5 @@
 ---
-title: Variante de formato de destino de renderização de 16 bpp | Microsoft Docs
+title: Variante de formato de destino de renderização 16bpp | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 24b22ad9-5ad0-4161-809a-9b518eb924bf
@@ -8,42 +8,42 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 94775b717a3095d54d3fa52e3d2a5325dc3d21c5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8a63261a4ef8a6304bec8c2bdde1d9ec9113405e
+ms.sourcegitcommit: 8530d15aa72fe058ee3a3b4714c36b8638f8b494
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62896417"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "74188587"
 ---
-# <a name="16-bpp-render-target-format-variant"></a>Renderizar destino formato variantes de 16 bpp
+# <a name="16-bpp-render-target-format-variant"></a>Variante de formato de destino de renderização de 16 BPP
 Define o formato de pixel como DXGI_FORMAT_B5G6R5_UNORM para todos os destinos de renderização e buffers de fundo.
 
 ## <a name="interpretation"></a>Interpretação
- Destino de renderização ou buffer de fundo geralmente usa um formato de 32 bpp (32 bits por pixel), como B8G8R8A8_UNORM. formatos de 32 bpp podem consumir uma grande quantidade de largura de banda de memória. Como o formato B5G6R5_UNORM é um formato de 16 bpp é metade do tamanho dos formatos de 32 bpp, usá-lo pode aliviar a pressão de largura de banda de memória, mas fiel às cores.
+ Um destino de renderização ou um buffer de fundo geralmente usa um formato de 32 bpp (32 bits por pixel), como B8G8R8A8_UNORM. os formatos 32-bpp podem consumir uma grande quantidade de largura de banda de memória. Como o formato de B5G6R5_UNORM é um formato de 16-bpp que é metade do tamanho dos formatos 32-bpp, usá-lo pode aliviar a pressão na largura de banda da memória, mas ao custo da fidelidade de cor reduzida.
 
- Se essa variante tiver um ganho de desempenho considerável, é provável que o aplicativo consuma muita largura de banda da memória. Você pode obter melhorias significativas de desempenho, especialmente quando o quadro analisado tiver uma quantidade significativa de excedentes ou combinação alfa.
+ Se essa variante tiver um ganho de desempenho considerável, é provável que o aplicativo consuma muita largura de banda da memória. Você pode obter uma melhoria significativa no desempenho, especialmente quando o quadro com perfil tem uma quantidade significativa de sobreempates ou de mistura de alfa.
 
-Um formato de destino de renderização de 16 bpp pode reduzir a banda de memória com o uso quando seu aplicativo tem as seguintes condições:
-- Não exige a reprodução de cores de alta fidelidade.
+Um formato de destino de renderização de 16-bpp pode reduzir a banda de memória com uso quando o aplicativo tem as seguintes condições:
+- Não requer reprodução de cores de alta fidelidade.
 - Não requer um canal alfa.
-- Ofent não tem os gradientes suaves (que são suscetíveis aos artefatos de faixas em fidelidade de cor reduzida).
+- Geralmente não tem gradientes suaves (que são suscetíveis a artefatos de faixa sob fidelidade de cor reduzida).
 
-Outras estratégias para reduzir a largura de banda de memória incluem:
-- Reduza a quantidade de excedentes ou combinação alfa.
-- Reduza as dimensões do buffer de quadro.
-- Reduza as dimensões de recursos de textura.
-- Reduza compressões de recursos de textura.
+Outras estratégias para reduzir a largura de banda da memória incluem:
+- Reduza a quantidade de excesso de empates ou de mistura de alfa.
+- Reduza as dimensões do buffer de quadros.
+- Reduza dimensões de recursos de textura.
+- Reduza a compactação de recursos de textura.
 
 Como sempre, você precisa levar em consideração as concessões em termos de qualidade de imagem que acompanham todas essas otimizações.
 
-Aplicativos que fazem parte de uma cadeia de troca tem um formato de buffer de fundo (DXGI_FORMAT_B5G6R5_UNORM) que não oferece suporte a 16 bpp. Essas cadeias de troca criadas usando `D3D11CreateDeviceAndSwapChain` ou `IDXGIFactory::CreateSwapChain`. Para contornar essa limitação, execute as seguintes etapas:
-1. Criar um destino de renderização do formato B5G6R5_UNORM usando `CreateTexture2D` e renderizar a esse destino.
-2. Copie o destino de renderização para o buffer de fundo da cadeia de troca desenhando um quadrupleto de tela inteira com o destino de renderização como textura de origem.
-3. Chame Present na cadeia de swap.
+Os aplicativos que fazem parte de uma cadeia de permuta têm um formato de buffer de fundo (DXGI_FORMAT_B5G6R5_UNORM) que não dá suporte a 16 BPP. Essas cadeias de permuta são criadas usando `D3D11CreateDeviceAndSwapChain` ou `IDXGIFactory::CreateSwapChain`. Para contornar essa limitação, execute as seguintes etapas:
+1. Crie um destino de renderização de formato B5G6R5_UNORM usando `CreateTexture2D` e renderizar para esse destino.
+2. Copie o destino de renderização para o BackBuffer de cadeia de permuta desenhando um quádruplo de tela inteira com o destino de renderização como sua textura de origem.
+3. Chame presente na sua cadeia de permuta.
 
-   Se essa estratégia economiza largura de banda mais do que é consumido, copiando o destino de renderização para o buffer de fundo da cadeia de troca, desempenho de renderização é aprimorado.
+   Se essa estratégia salvar mais largura de banda do que é consumida copiando o destino de renderização para o BackBuffer de cadeia de permuta, o desempenho de renderização será melhorado.
 
-   Arquiteturas de GPU que usam técnicas de renderização lado a lado podem ver os benefícios significativos de desempenho usando um formato de buffer de quadro de 16 bpp. Essa melhoria é porque uma porção maior do que o buffer de quadro pode caber no cache de buffer de quadro de local de cada bloco. As arquiteturas de renderização lado a lado podem ser encontradas em GPUs de dispositivos móveis e tablet. Elas raramente são encontradas em outros tipos de dispositivos.
+   As arquiteturas de GPU que usam técnicas de renderização de ladrilhos podem ver benefícios de desempenho significativos usando um formato de buffer de quadro de 16 BPP. Essa melhoria ocorre porque uma parte maior do buffer de quadro pode se ajustar ao cache de buffer de quadro local de cada bloco. As arquiteturas de renderização lado a lado podem ser encontradas em GPUs de dispositivos móveis e tablet. Elas raramente são encontradas em outros tipos de dispositivos.
 
 ## <a name="remarks"></a>Comentários
  O formato do destino de renderização é redefinido como DXGI_FORMAT_B5G6R5_UNORM em todas as chamadas de `ID3D11Device::CreateTexture2D` que criam um destino de renderização. O formato é substituído especificamente quando o objeto D3D11_TEXTURE2D_DESC apresentado a pDesc descreve um destino de renderização, ou seja:
@@ -58,7 +58,7 @@ Aplicativos que fazem parte de uma cadeia de troca tem um formato de buffer de f
  Como o formato B5G6R5 não tem um canal alfa, o conteúdo alfa não é preservado por essa variante. Se a renderização do aplicativo necessitar de um canal alfa no destino de renderização, você não poderá simplesmente alternar para o formato B5G6R5.
 
 ## <a name="example"></a>Exemplo
- O **formato de destino de renderização de 16 bpp** variante pode ser reproduzida para destinos de renderização criados usando `CreateTexture2D` usando código como este:
+ A variante de **formato de destino de renderização de 16 bpp** pode ser reproduzida para destinos de renderização criados usando o `CreateTexture2D` usando um código como este:
 
 ```cpp
 D3D11_TEXTURE2D_DESC target_description;

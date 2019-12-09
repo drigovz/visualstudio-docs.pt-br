@@ -14,15 +14,15 @@ ms.assetid: 67a86df7-49f9-43cb-99c6-99b1a427827a
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 82f020b5f3b82ab2ce3545102be83a5cd41c6069
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: f6672046e0f7bf5e39c334dc0ba30f22eaff6e9a
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446517"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573380"
 ---
 # <a name="expected-hexadecimal-digit"></a>Dígito hexadecimal esperado
-Você criou uma sequência de escape Unicode incorreta. Sequências de escape Unicode começam com \u, seguido por exatamente quatro dígitos hexadecimais (nem mais, nem menos). Dígitos hexadecimais de Unicode podem conter apenas os números de 0 a 9, as letras maiusculas A-F e a letras minúsculas letras a-f. O exemplo a seguir demonstra uma sequência de escape Unicode está formada corretamente.  
+Você criou uma sequência de escape Unicode incorreta. As seqüências de escape Unicode começam com \u, seguida de exatamente quatro dígitos hexadecimais (não mais e não menos). Os dígitos hexadecimais Unicode podem conter apenas os números 0-9, as letras maiúsculas a-F e as letras minúsculas a-f. O exemplo a seguir demonstra uma sequência de escape Unicode formada corretamente.  
   
 ```JavaScript  
 z = "\u1A5F";  
@@ -30,10 +30,10 @@ z = "\u1A5F";
   
 ### <a name="to-correct-this-error"></a>Para corrigir este erro  
   
-- Certifique-se de que seu dígitos hexadecimais de Unicode começam com \u, contém apenas os números de 0 a 9, as letras maiusculas A-F, a minúscula letras a-f; e são agrupados em quatro dígitos.  
+- Verifique se os dígitos hexadecimais Unicode começam com \u, contém apenas os números 0-9, as letras maiúsculas a-F, as letras minúsculas a-f; e são agrupados em quatro dígitos.  
   
     > [!NOTE]
-    > Se você quiser usar o \u texto literal em uma cadeia de caracteres e, em seguida, use duas barras invertidas - (\\\u)-um para a primeira barra invertida de escape.  
+    > Se você quiser usar o texto literal \u em uma cadeia de caracteres, use duas barras invertidas-(\\ \u)-uma para escapar a primeira barra invertida.  
   
 ## <a name="see-also"></a>Consulte também  
  [Tipos de Dados](../../javascript/data-types-javascript.md)

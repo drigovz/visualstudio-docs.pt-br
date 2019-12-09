@@ -1,22 +1,22 @@
 ---
-title: 'Como: Alterar o tipo de retorno de um método DataContext (Designer Relacional de Objetos)'
+title: Alterar O tipo de retorno do método DataContext (O-R Designer)
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: c5b66bff-6dbb-43c0-bffa-317133ca5b9e
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 03e24c11e18f092823ad8dd8c4479b50e531b78b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 304cd62e83ae2e256e40cdbb8f046b637cbd8d58
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63402815"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72648377"
 ---
-# <a name="how-to-change-the-return-type-of-a-datacontext-method-or-designer"></a>Como: Alterar o tipo de retorno de um método DataContext (Designer Relacional de Objetos)
-O tipo de retorno de um <xref:System.Data.Linq.DataContext> (criado com base em um procedimento armazenado ou função) do método difere dependendo de onde você descarte o procedimento armazenado ou função em de **Relational Designer**. Se você soltar um item diretamente em uma classe existente de entidade, um método de <xref:System.Data.Linq.DataContext> que tem o tipo de retorno de classe de entidade é criado (se o esquema dos dados retornados por correspondências armazenadas do procedimento ou função a forma de classe de entidade). Se você soltar um item em uma área vazia do **Relational Designer**, um <xref:System.Data.Linq.DataContext> método que retorna um tipo gerado automaticamente é criado. Você pode alterar o tipo de retorno de um método de <xref:System.Data.Linq.DataContext> depois de adicioná-lo ao painel de métodos. Verificar ou altere o tipo de retorno de um método de <xref:System.Data.Linq.DataContext>, selecione-o e clique na propriedade de **Tipo de Retorno** na janela **Propriedades**.
+# <a name="how-to-change-the-return-type-of-a-datacontext-method-or-designer"></a>Como alterar o tipo de retorno de um método DataContext (Designer Relacional de Objetos)
+O tipo de retorno de um método de <xref:System.Data.Linq.DataContext> (criado com base em um procedimento armazenado ou função) difere dependendo de onde você solta o procedimento armazenado ou a função no o **/R Designer**. Se você soltar um item diretamente em uma classe existente de entidade, um método de <xref:System.Data.Linq.DataContext> que tem o tipo de retorno de classe de entidade é criado (se o esquema dos dados retornados por correspondências armazenadas do procedimento ou função a forma de classe de entidade). Se você soltar um item em uma área vazia do o **/R Designer**, um método <xref:System.Data.Linq.DataContext> que retorna um tipo gerado automaticamente será criado. Você pode alterar o tipo de retorno de um método de <xref:System.Data.Linq.DataContext> depois de adicioná-lo ao painel de métodos. Verificar ou altere o tipo de retorno de um método de <xref:System.Data.Linq.DataContext>, selecione-o e clique na propriedade de **Tipo de Retorno** na janela **Propriedades**.
 
 > [!NOTE]
 > Você não pode reverter os métodos de <xref:System.Data.Linq.DataContext> que tem um tipo de retorno definida como uma classe de entidade para retornar o tipo gerado automaticamente usando a janela **Propriedades**. Para reverter um método de <xref:System.Data.Linq.DataContext> para retornar um tipo gerado automaticamente, você deve arraste o objeto de banco de dados original no **Designer Relacional de Objetos** novamente.
@@ -27,7 +27,7 @@ O tipo de retorno de um <xref:System.Data.Linq.DataContext> (criado com base em 
 
 1. Selecione o método de <xref:System.Data.Linq.DataContext> no painel de métodos.
 
-2. Selecione **Tipo de Retorno** na janela **Propriedades** e então selecione uma classe de entidade disponível na lista de **Tipo de Retorno**. Se a classe de entidade desejada não estiver na lista, adicioná-lo ou criá-lo na **Relational Designer** para adicioná-lo à lista.
+2. Selecione **Tipo de Retorno** na janela **Propriedades** e então selecione uma classe de entidade disponível na lista de **Tipo de Retorno**. Se a classe de entidade desejada não estiver na lista, adicione-a ou crie-a no **Designer de o/R** para adicioná-la à lista.
 
 3. Salve o arquivo *.dbml*.
 
@@ -35,7 +35,7 @@ O tipo de retorno de um <xref:System.Data.Linq.DataContext> (criado com base em 
 
 1. Selecione o método de <xref:System.Data.Linq.DataContext> no painel **Métodos** e exclua-o.
 
-2. Arraste o objeto de banco de dados da **Gerenciador de servidores** ou **Database Explorer** em uma área vazia do **Relational Designer**.
+2. Arraste o objeto de banco de dados de **Gerenciador de servidores** ou **Gerenciador de banco de dados** para uma área vazia do o **/R Designer**.
 
 3. Salve o arquivo *.dbml*.
 
@@ -44,4 +44,4 @@ O tipo de retorno de um <xref:System.Data.Linq.DataContext> (criado com base em 
 - [Ferramentas do LINQ to SQL no Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)
 - [Métodos DataContext (Designer Relacional de Objetos)](../data-tools/datacontext-methods-o-r-designer.md)
-- [Como: Criar métodos DataContext mapeados para procedimentos armazenados e funções (Designer Relacional de Objetos)](../data-tools/how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-o-r-designer.md)
+- [Como criar métodos DataContext mapeados para procedimentos armazenados e funções (Designer Relacional de Objetos)](../data-tools/how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-o-r-designer.md)

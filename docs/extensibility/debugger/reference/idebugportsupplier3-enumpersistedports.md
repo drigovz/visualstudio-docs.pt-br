@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPortSupplier3::EnumPersistedPorts
 ms.assetid: 1c3dead3-5d6c-4067-8418-4015f0b0dd07
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c646974a1d1303482785ffd0240b3374e2ed071f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 269a49a21fdf2c42c716fba1ab3c8cb293e15a1a
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62871543"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66340046"
 ---
 # <a name="idebugportsupplier3enumpersistedports"></a>IDebugPortSupplier3::EnumPersistedPorts
 Esse método recupera um objeto que permite a enumeração da lista de portas persistentes.
@@ -38,14 +41,12 @@ int EnumPersistedPorts(
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `PortNames`
+## <a name="parameters"></a>Parâmetros
+`PortNames`\
+[in] Um [BSTR_ARRAY](../../../extensibility/debugger/reference/bstr-array.md) estrutura que contém uma lista de nomes de porta para encontrar e retornar entre as portas persistentes. Somente as portas persistentes com esses nomes serão retornadas.
 
- [in] Um [BSTR_ARRAY](../../../extensibility/debugger/reference/bstr-array.md) estrutura que contém uma lista de nomes de porta para encontrar e retornar entre as portas persistentes. Somente as portas persistentes com esses nomes serão retornadas.
-
- `ppEnum`
-
- [out] Um objeto que implementa o [IEnumDebugPorts2](../../../extensibility/debugger/reference/ienumdebugports2.md) interface.
+`ppEnum`\
+[out] Um objeto que implementa o [IEnumDebugPorts2](../../../extensibility/debugger/reference/ienumdebugports2.md) interface.
 
 ## <a name="return-value"></a>Valor de retorno
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.

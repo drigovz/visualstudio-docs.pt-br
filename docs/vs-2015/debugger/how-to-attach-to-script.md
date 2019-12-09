@@ -19,12 +19,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: db5f46fdea66647131557b3d2cff2619e99aabc7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 719654916087e7c7f4249ff52abbed628a2c56a2
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437325"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704502"
 ---
 # <a name="how-to-attach-to-script"></a>Como: Anexar ao script
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ Este tópico explica como anexar manualmente o depurador do Visual Studio para u
   
 2. Na caixa de diálogo **Anexar ao Processo**, procure a lista **Processos Disponíveis** e localize o processo de script ao qual você quer anexar. Você pode identificar processos de script consultando a coluna **Tipo**.  
   
-   1. Se o processo que você quiser depurar estiver sendo executado em outro computador, você primeiro deverá selecionar o computador remoto. Para obter mais informações, confira [Como: Selecionar um computador remoto](http://msdn.microsoft.com/4332ba8e-2f0b-4f62-b96a-e762b9f3c3ba).  
+   1. Se o processo que você quiser depurar estiver sendo executado em outro computador, você primeiro deverá selecionar o computador remoto. Para obter mais informações, confira [Como: Selecionar um computador remoto](https://msdn.microsoft.com/4332ba8e-2f0b-4f62-b96a-e762b9f3c3ba).  
   
    2. Se o processo estiver sendo executado em uma conta de usuário diferente, marque a caixa de seleção **Mostrar processos de todos os usuários**.  
   
@@ -59,7 +59,7 @@ Este tópico explica como anexar manualmente o depurador do Visual Studio para u
   
    A lista **Processos Disponíveis** é exibida automaticamente quando você abre a caixa de diálogo **Processos**. Os processos podem iniciar e parar em segundo plano quando a caixa de diálogo está aberta. Consequentemente, o conteúdo pode não estar atualizado. Você pode atualizar a lista a qualquer momento para ver a lista atual de processos pressionando o botão **Atualizar**.  
   
-   Você pode estar associado a vários programas enquanto depura, mas somente um programa está ativo no depurador em um determinado momento. Você pode definir o programa ativo na barra de ferramentas Local de Depuração. Para obter mais informações, confira [Como: Definir o processo atual](http://msdn.microsoft.com/7e1d7fa5-0e40-44cf-8c41-d3dba31c969e).  
+   Você pode estar associado a vários programas enquanto depura, mas somente um programa está ativo no depurador em um determinado momento. Você pode definir o programa ativo na barra de ferramentas Local de Depuração. Para obter mais informações, confira [Como: Definir o processo atual](https://msdn.microsoft.com/7e1d7fa5-0e40-44cf-8c41-d3dba31c969e).  
   
    Todos os comandos de execução no menu **Depurar** afetam o programa ativo. Você pode interromper qualquer programa depurado da caixa de diálogo processos. Ver [usando pontos de interrupção](../debugger/using-breakpoints.md).  
   

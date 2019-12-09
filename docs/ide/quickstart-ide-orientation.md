@@ -3,19 +3,19 @@ title: Tour do IDE do Visual Studio
 titleSuffix: ''
 ms.date: 02/21/2019
 ms.topic: quickstart
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: da6c19341a1e1ab37b38ae4f5379ee5aaace5b87
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 072233bde233712024d01fa315e11c679d39e9e5
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62954176"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72667800"
 ---
-# <a name="quickstart-first-look-at-the-visual-studio-ide"></a>Início Rápido: Introdução ao IDE do Visual Studio
+# <a name="quickstart-first-look-at-the-visual-studio-ide"></a>Início rápido: Introdução ao IDE do Visual Studio
 
 Nesta introdução de 5 a 10 minutos ao IDE (Ambiente de Desenvolvimento Integrado) do Visual Studio, faremos um tour em algumas janelas, menus e em outros recursos de interface do usuário.
 
@@ -27,7 +27,7 @@ Se você ainda não tiver instalado o Visual Studio, acesse a página [Downloads
 
 ::: moniker range=">=vs-2019"
 
-Se você ainda não tiver instalado o Visual Studio, acesse a página [Downloads do Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) para instalá-lo gratuitamente.
+Se você ainda não tiver instalado o Visual Studio, acesse a página [Downloads do Visual Studio](https://visualstudio.microsoft.com/downloads) para instalá-lo gratuitamente.
 
 ::: moniker-end
 
@@ -51,7 +51,7 @@ Se você fechar a **Página Inicial** e desejar vê-la novamente, será possíve
 
 A primeira coisa que você verá depois de abrir o Visual Studio é a janela de início. A janela de início foi projetada para ajudar você a "acessar o código" mais rapidamente. Ela tem opções para clonar o código ou fazer check-out dele, abrir um projeto ou uma solução existente, criar um projeto ou simplesmente abrir uma pasta que contenha alguns arquivos de código.
 
-[![](media/vs-2019/start-window-labeled.png "A janela de início no Visual Studio 2019")](media/vs-2019/start-window-labeled.png#lightbox)
+[![Janela de início no Visual Studio 2019](media/vs-2019/start-window-labeled.png)](media/vs-2019/start-window-labeled.png#lightbox)
 
 Se essa for a primeira vez que você estiver usando o Visual Studio, sua lista de projetos recentes estará vazia.
 
@@ -71,7 +71,7 @@ Para continuar explorando os recursos do Visual Studio, vamos criar um projeto.
 
    ![Pesquisar modelos de projeto na Página Inicial do Visual Studio](media/start-page-search-templates.png)
 
-   O Visual Studio fornece vários tipos de modelos de projeto que ajudam você a começar a codificar rapidamente. Escolha um modelo de projeto **Aplicativo de Console (.NET Framework)** C#. (Como alternativa, se você for um desenvolvedor de Visual Basic, C++, JavaScript ou outra linguagem, fique à vontade para criar um projeto em uma dessas linguagens. A interface do usuário que veremos é semelhante em todas as linguagens de programação.)
+   O Visual Studio fornece vários tipos de modelos de projeto que ajudam você a começar a codificar rapidamente. Escolha um modelo de projeto de **Aplicativo de console (.NET Core)** do C#. (Como alternativa, se você for um desenvolvedor de Visual Basic, C++, JavaScript ou outra linguagem, fique à vontade para criar um projeto em uma dessas linguagens. A interface do usuário que veremos é semelhante em todas as linguagens de programação.)
 
 1. Na caixa de diálogo **Novo Projeto** exibida, aceite o nome de projeto padrão e escolha **OK**.
 
@@ -87,13 +87,13 @@ Para continuar explorando os recursos do Visual Studio, vamos criar um projeto.
 
    ![Caixa de diálogo Novo Projeto no Visual Studio 2019](media/vs-2019/create-a-new-project.png)
 
-1. Se você tiver selecionado C#, Visual Basic ou F# como linguagem, selecione o modelo **Aplicativo de Console (.NET Framework)** e, em seguida, escolha **Avançar**. (Se você tiver selecionado uma linguagem diferente, escolha qualquer modelo. A interface do usuário que veremos é semelhante em todas as linguagens de programação.)
+1. Se você tiver selecionado C#, Visual Basic ou F# como linguagem, selecione o modelo **Aplicativo de Console (.NET Core)** e, em seguida, escolha **Avançar**. (Se você tiver selecionado uma linguagem diferente, escolha qualquer modelo. A interface do usuário que veremos é semelhante em todas as linguagens de programação.)
 
 1. Na página **Configurar seu novo projeto**, aceite o nome de projeto e o local padrão e escolha **Criar**.
 
 ::: moniker-end
 
-   O projeto é criado e um arquivo chamado *Program.cs* é aberto na janela **Editor**. O **Editor** mostra o conteúdo dos arquivos e é onde você fará a maior parte do trabalho de codificação no Visual Studio.
+   O projeto é criado e um arquivo chamado *Program.cs* é aberto na janela **Editor**. O **Editor** mostra o conteúdo dos arquivos e é nele que você fará a maior parte do trabalho de codificação no Visual Studio.
 
    ![Editor no Visual Studio](media/editor.png)
 

@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cd81117c11eb42dbccf22e55ee5e294ad9c3c96a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9f28dc5e60343cc6aacdf456d5475afbfc7db5e9
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62834358"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738790"
 ---
 # <a name="idiasymbolgetsrclineontypedefn"></a>IDiaSymbol::getSrcLineOnTypeDefn
-Recupera o número de arquivo e de linha de código-fonte que indicam onde um tipo especificado definido pelo usuário é definido.
+Recupera o arquivo de origem e o número de linha que indicam onde um tipo definido pelo usuário especificado é definido.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -30,9 +30,9 @@ HRESULT getSrcLineOnTypeDefn(
 #### <a name="parameters"></a>Parâmetros
  `ppResult`
 
-[out] Um `IDiaLineNumber` objeto que contém o número de arquivo e linha do código-fonte em que o definido pelo usuário.
+fora Um objeto `IDiaLineNumber` que contém o arquivo de origem e o número de linha em que o usuário definiu.
 
-## <a name="return-value"></a>Valor de retorno
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE` ou um código de erro.
 
 ## <a name="see-also"></a>Consulte também

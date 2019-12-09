@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugArrayField::GetElementType method
 ms.assetid: c46bf625-0a48-4cbb-8f1f-286356f2c065
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bd80c54d436698e14db69bb356bd0cca61aa6ea3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 13dabbf61999e8558fe08ecb65169dd43302d98f
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62923976"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66320952"
 ---
 # <a name="idebugarrayfieldgetelementtype"></a>IDebugArrayField::GetElementType
 Obtém o tipo de elemento na matriz.
@@ -36,10 +39,9 @@ int GetElementType(
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `ppType`
-
- [out] Retorna um [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) objeto que descreve o tipo de elemento.
+## <a name="parameters"></a>Parâmetros
+`ppType`\
+[out] Retorna um [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) objeto que descreve o tipo de elemento.
 
 ## <a name="return-value"></a>Valor de retorno
  Se for bem-sucedido, retornará S_OK; Caso contrário, retornará um código de erro.

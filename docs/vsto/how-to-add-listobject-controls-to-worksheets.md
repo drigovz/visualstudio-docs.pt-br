@@ -13,15 +13,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5e7f82f667fffec09894ab65e277cea09d137a9b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d4f6ca2544f64433746f6aa57c9456fee11459db
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62826703"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71254687"
 ---
 # <a name="how-to-add-listobject-controls-to-worksheets"></a>Como: Adicionar controles ListObject a planilhas
-  Você pode adicionar <xref:Microsoft.Office.Tools.Excel.ListObject> controles a uma planilha do Microsoft Office Excel em tempo de design e em tempo de execução em projetos de nível de documento.
+  Você pode adicionar <xref:Microsoft.Office.Tools.Excel.ListObject> controles a uma Microsoft Office planilha do Excel em tempo de design e em tempo de execução em projetos de nível de documento.
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 
@@ -35,63 +35,63 @@ ms.locfileid: "62826703"
 
 - [Adicionar controles ListObject em tempo de execução em um projeto de suplemento do VSTO](#runtimeaddin)
 
-  Para obter mais informações sobre <xref:Microsoft.Office.Tools.Excel.ListObject> controles, consulte [controle ListObject](../vsto/listobject-control.md).
+  Para obter mais informações <xref:Microsoft.Office.Tools.Excel.ListObject> sobre controles, consulte o [controle ListObject](../vsto/listobject-control.md).
 
-## <a name="designtime"></a> Adicionar controles ListObject em tempo de design
- Há várias maneiras de adicionar <xref:Microsoft.Office.Tools.Excel.ListObject> controles a uma planilha em um projeto de nível de documento em tempo de design: De dentro do Excel, do Visual Studio **caixa de ferramentas**e para o **fontes de dados** janela.
+## <a name="designtime"></a>Adicionar controles ListObject em tempo de design
+ Há várias maneiras de adicionar <xref:Microsoft.Office.Tools.Excel.ListObject> controles a uma planilha em um projeto de nível de documento em tempo de design: No Excel, na **caixa de ferramentas**do Visual Studio e na janela **fontes de dados** .
 
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
-### <a name="to-use-the-ribbon-in-excel"></a>Usar a faixa de opções no Excel
+### <a name="to-use-the-ribbon-in-excel"></a>Para usar a faixa de faixas no Excel
 
-1. Sobre o **inserir** guia da **tabelas** , clique em **tabela**.
+1. Na guia **Inserir** , no grupo **tabelas** , clique em **tabela**.
 
-2. Selecione a célula ou células que você deseja incluir na lista e clique em **Okey**.
+2. Selecione a célula ou células que você deseja incluir na lista e clique em **OK**.
 
 #### <a name="to-use-the-toolbox"></a>Para usar a caixa de ferramentas
 
-1. Dos **controles do Excel** guia da **caixa de ferramentas**, arraste um <xref:Microsoft.Office.Tools.Excel.ListObject> à planilha.
+1. Na guia **controles do Excel** da **caixa de ferramentas**, arraste <xref:Microsoft.Office.Tools.Excel.ListObject> um para a planilha.
 
-     O **adicionar controle do ListObject** caixa de diálogo é exibida.
+     A caixa de diálogo **Adicionar controle ListObject** é exibida.
 
-2. Selecione a célula ou células que você deseja incluir na lista e clique em **Okey**.
+2. Selecione a célula ou células que você deseja incluir na lista e clique em **OK**.
 
-     Se você não deseja manter o nome padrão, você pode alterar o nome na **propriedades** janela.
+     Se você não quiser manter o nome padrão, poderá alterar o nome na janela **Propriedades** .
 
-#### <a name="to-use-the-data-sources-window"></a>Usar a janela fontes de dados
+#### <a name="to-use-the-data-sources-window"></a>Para usar a janela fontes de dados
 
-1. Abra o **fontes de dados** janela e criar uma fonte de dados para seu projeto. Para obter mais informações, consulte [adicionar novas conexões](../data-tools/add-new-connections.md).
+1. Abra a janela **Data Sources** e crie uma fonte de dados para seu projeto. Para obter mais informações, consulte [adicionar novas conexões](../data-tools/add-new-connections.md).
 
-2. Arraste uma tabela das **fontes de dados** janela à sua planilha.
+2. Arraste uma tabela da janela **fontes de dados** para sua planilha.
 
-     Uma associação de dados <xref:Microsoft.Office.Tools.Excel.ListObject> controle é adicionado à planilha. Para obter mais informações, consulte [vinculação de dados e o Windows Forms](/dotnet/framework/winforms/data-binding-and-windows-forms).
+     Um controle associado <xref:Microsoft.Office.Tools.Excel.ListObject> a dados é adicionado à planilha. Para obter mais informações, consulte [vinculação de dados e Windows Forms](/dotnet/framework/winforms/data-binding-and-windows-forms).
 
-## <a name="runtimedoclevel"></a> Adicionar controles ListObject em tempo de execução em um projeto de nível de documento
- Você pode adicionar o <xref:Microsoft.Office.Tools.Excel.ListObject> controle dinamicamente em tempo de execução. Isso permite que você crie os controles de host em resposta a eventos. Lista criada dinamicamente objetos não são mantidos na planilha que os controles de host quando a planilha é fechada. Para obter mais informações, consulte [adicionar controles a documentos do Office em tempo de execução](../vsto/adding-controls-to-office-documents-at-run-time.md).
+## <a name="runtimedoclevel"></a>Adicionar controles ListObject em tempo de execução em um projeto de nível de documento
+ Você pode adicionar o <xref:Microsoft.Office.Tools.Excel.ListObject> controle dinamicamente em tempo de execução. Isso permite que você crie os controles de host em resposta a eventos. Os objetos de lista criados dinamicamente não são mantidos na planilha como controles de host quando a planilha é fechada. Para obter mais informações, consulte [Adicionar controles a documentos do Office em tempo de execução](../vsto/adding-controls-to-office-documents-at-run-time.md).
 
 #### <a name="to-add-a-listobject-control-to-a-worksheet-programmatically"></a>Para adicionar um controle ListObject a uma planilha programaticamente
 
-1. No <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> manipulador de eventos do `Sheet1`, insira o código a seguir para adicionar um <xref:Microsoft.Office.Tools.Excel.ListObject> controle às células **A1** por meio de **A4**.
+1. <xref:Microsoft.Office.Tools.Excel.ListObject> `Sheet1` <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> No manipulador de eventos de, insira o código a seguir para adicionar um controle às células **a1** a **a4**.
 
      [!code-csharp[Trin_VstcoreHostControlsExcel#2](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#2)]
      [!code-vb[Trin_VstcoreHostControlsExcel#2](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#2)]
 
-## <a name="runtimeaddin"></a> Adicionar controles ListObject em tempo de execução em um projeto de suplemento do VSTO
- Você pode adicionar um <xref:Microsoft.Office.Tools.Excel.ListObject> controle programaticamente para qualquer planilha aberta em um projeto de suplemento do VSTO. Lista criada dinamicamente objetos não são mantidos na planilha que os controles de host quando a planilha for salvo e, em seguida, fechada. Para obter mais informações, consulte [documentos de estender o Word e pastas de trabalho do Excel em suplementos do VSTO em tempo de execução](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).
+## <a name="runtimeaddin"></a>Adicionar controles ListObject em tempo de execução em um projeto de suplemento do VSTO
+ Você pode adicionar um <xref:Microsoft.Office.Tools.Excel.ListObject> controle programaticamente a qualquer planilha aberta em um projeto de suplemento do VSTO. Os objetos de lista criados dinamicamente não são mantidos na planilha como controles de host quando a planilha é salva e fechada. Para obter mais informações, consulte [estender documentos do Word e pastas de trabalho do Excel em suplementos do VSTO em tempo de execução](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).
 
 #### <a name="to-add-a-listobject-control-to-a-worksheet-programmatically"></a>Para adicionar um controle ListObject a uma planilha programaticamente
 
-1. O código a seguir gera um item de host de planilha que se baseia na planilha de aberto e, em seguida, adiciona uma <xref:Microsoft.Office.Tools.Excel.ListObject> controle às células **A1** por meio **A4**.
+1. O código a seguir gera um item de host de planilha baseado na planilha aberta e, em seguida, <xref:Microsoft.Office.Tools.Excel.ListObject> adiciona um controle às células **a1** a **a4**.
 
      [!code-csharp[Trin_Excel_Dynamic_Controls#8](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/ThisAddIn.cs#8)]
      [!code-vb[Trin_Excel_Dynamic_Controls#8](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/ThisAddIn.vb#8)]
 
 ## <a name="see-also"></a>Consulte também
-- [Estender documentos do Word e pastas de trabalho do Excel em suplementos do VSTO em tempo de execução](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
+- [Estenda documentos do Word e pastas de trabalho do Excel em suplementos do VSTO em tempo de execução](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
 - [Controles em documentos do Office](../vsto/controls-on-office-documents.md)
 - [Controle ListObject](../vsto/listobject-control.md)
 - [Automatizar o Excel usando objetos estendidos](../vsto/automating-excel-by-using-extended-objects.md)
-- [Visão geral dos controles de host e de itens de host](../vsto/host-items-and-host-controls-overview.md)
+- [Visão geral de itens de host e controles de host](../vsto/host-items-and-host-controls-overview.md)
 - [Como: Redimensionar controles ListObject](../vsto/how-to-resize-listobject-controls.md)
 - [Associar dados a controles em soluções do Office](../vsto/binding-data-to-controls-in-office-solutions.md)
 - [Limitações programáticas de itens de host e controles de host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)

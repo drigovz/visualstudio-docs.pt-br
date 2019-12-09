@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IEEDataStorage interface
 ms.assetid: 704e932d-2325-410e-89c4-ce88c6ec19da
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: eeb34d9574a6070b2d1f658575d345d74aa72972
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ab42216df5c7d5f3d2d349ccf07e595ab3fc616c
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62915246"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66335630"
 ---
 # <a name="ieedatastorage"></a>IEEDataStorage
 Essa interface representa uma matriz de bytes.

@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 34efc198b1237028c84e86e8cb34db9270b6d646
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 8c72b6749dcba857d9a5059a36adc0fae6e0bacf
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63426656"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71254609"
 ---
 # <a name="measure-memory-usage-in-visual-studio"></a>Medir o uso de memória no Visual Studio
 
@@ -29,7 +29,7 @@ Embora você possa coletar instantâneos de memória a qualquer momento na ferra
 Você também pode usar a ferramenta de memória fora do depurador. Confira [Uso de memória sem depuração](../profiling/memory-usage-without-debugging2.md). Você pode usar as ferramentas de criação de perfil sem nenhum depurador anexado, com o Windows 7 e posteriores. O Windows 8 ou posterior é necessário para executar ferramentas de criação de perfil com o depurador (janela **Ferramentas de Diagnóstico**).
 
 > [!NOTE]
-> **Suporte de alocador personalizado** O criador de perfil de memória nativa funciona com a coleta de dados de evento [ETW](/windows-hardware/drivers/devtest/event-tracing-for-windows--etw-) de alocação emitidos durante o tempo de execução.  Os alocadores no CRT e no SDK do Windows foram anotados no nível de origem para que seus dados de alocação possam ser capturados.  Se você estiver escrevendo seus próprios alocadores, todas as funções que retornarem um ponteiro para uma memória heap recém-alocada poderão ser decoradas com [__declspec](/cpp/cpp/declspec)(allocator), como visto neste exemplo de myMalloc:
+> **Suporte a alocador personalizado** O criador de perfil de memória nativa funciona coletando dados de eventos [ETW](/windows-hardware/drivers/devtest/event-tracing-for-windows--etw-) de alocação emitidos durante o tempo de execução.  Os alocadores no CRT e no SDK do Windows foram anotados no nível de origem para que seus dados de alocação possam ser capturados. Se você estiver escrevendo seus próprios alocadores, todas as funções que retornarem um ponteiro para uma memória heap recém-alocada poderão ser decoradas com [__declspec](/cpp/cpp/declspec)(allocator), como visto neste exemplo de myMalloc:
 >
 > `__declspec(allocator) void* myMalloc(size_t size)`
 
@@ -104,7 +104,7 @@ Para analisar o uso da memória, clique em um dos links que abre um relatório d
 - Para exibir detalhes da diferença entre o instantâneo atual e o instantâneo anterior, escolha o link de alteração à esquerda da seta (![Aumento do Uso de Memória](../profiling/media/prof-tour-mem-usage-up-arrow.png "Aumento do Uso de Memória")). Uma seta vermelha indica um aumento no uso de memória e uma seta verde indica uma diminuição.
 
 > [!TIP]
-> Para ajudar a identificar problemas de memória mais rapidamente, os relatórios de comparação são classificados pelos tipos de objeto que mais aumentaram no número geral (clique no link de alteração na coluna **Objetos (Comparação)**) ou que mais aumentaram quanto ao tamanho geral do heap (clique no link de alteração na coluna **Tamanho do Heap (Comparação)**).
+> Para ajudar a identificar problemas de memória mais rapidamente, os relatórios de comparação são classificados pelos tipos de objeto que mais aumentaram no número geral (clique no link de alteração na coluna **Objetos (Comparação)** ) ou que mais aumentaram quanto ao tamanho geral do heap (clique no link de alteração na coluna **Tamanho do Heap (Comparação)** ).
 
 - Para exibir detalhes apenas do instantâneo selecionado, clique no link que não é de alteração.
 
@@ -156,7 +156,7 @@ Para analisar o uso da memória, clique em um dos links que abre um relatório d
 
    ![Escolher um instantâneo na lista Comparar com](../profiling/media/dbgdiag_mem_choosecompareto.png "DBGDIAG_MEM_ChooseCompareTo")
 
-O relatório de comparação adiciona colunas (marcadas com **(Diff)**) ao relatório base que mostra a diferença entre o valor do instantâneo base e o do instantâneo de comparação. Veja como pode ser a aparência de um relatório de comparação Exibição de Tipo Nativo:
+O relatório de comparação adiciona colunas (marcadas com **(Diff)** ) ao relatório base que mostra a diferença entre o valor do instantâneo base e o do instantâneo de comparação. Veja como pode ser a aparência de um relatório de comparação Exibição de Tipo Nativo:
 
 ![Exibição de comparação de tipos nativos](../profiling/media/dbgdiag_mem_native_typesviewdiff.png "DBGDIAG_MEM_Native_TypesViewDiff")
 

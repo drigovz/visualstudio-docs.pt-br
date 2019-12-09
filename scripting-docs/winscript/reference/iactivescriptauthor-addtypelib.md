@@ -17,15 +17,15 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b5967438c620a89df98c74c8824809b8fdaf739a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0f4bbcc694b24ffafd4333f635c7cdf0c67793a7
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62935478"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985334"
 ---
 # <a name="iactivescriptauthoraddtypelib"></a>IActiveScriptAuthor::AddTypeLib
-Adiciona uma biblioteca de tipos para o namespace para o script.  
+Adiciona uma biblioteca de tipos ao namespace para o script.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -40,18 +40,18 @@ HRESULT AddTypeLib(
   
 #### <a name="parameters"></a>Parâmetros  
  `rguidTypeLib`  
- [in] O CLSID (identificador de classe) da biblioteca de tipos a ser adicionado.  
+ no O CLSID (identificador de classe) da biblioteca de tipos a ser adicionada.  
   
  `dwMajor`  
- [in] O número de versão principal.  
+ no O número de versão principal.  
   
  `dwMinor`  
- [in] O número de versão secundária.  
+ no O número da versão secundária.  
   
  `dwFlags`  
- [in] Não usado.  
+ no Não usado.  
   
-## <a name="return-value"></a>Valor de retorno  
+## <a name="return-value"></a>Valor retornado  
  Um `HRESULT`. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.  
   
 |Valor|Descrição|  
@@ -59,9 +59,9 @@ HRESULT AddTypeLib(
 |`S_OK`|O método foi bem-sucedido.|  
   
 ## <a name="remarks"></a>Comentários  
- Este método chama `LoadTypeLib` para carregar a biblioteca de tipos. Após o êxito, este método chama `IActiveScriptAuthor::AddNamedItem` para adicionar informações de tipo.  
+ Esse método chama `LoadTypeLib` para carregar a biblioteca de tipos. Após o êxito, esse método chama `IActiveScriptAuthor::AddNamedItem` para adicionar informações de tipo.  
   
 ## <a name="see-also"></a>Consulte também  
- [Interface IActiveScriptAuthor](../../winscript/reference/iactivescriptauthor-interface.md)   
+   de [interface IActiveScriptAuthor](../../winscript/reference/iactivescriptauthor-interface.md)  
  [IActiveScriptAuthor::AddNamedItem](../../winscript/reference/iactivescriptauthor-addnameditem.md)   
- [LoadTypeLib](https://docs.microsoft.com/previous-versions/windows/desktop/api/oleauto/nf-oleauto-loadtypelib)
+ [LoadTypeLib](/previous-versions/windows/desktop/api/oleauto/nf-oleauto-loadtypelib)

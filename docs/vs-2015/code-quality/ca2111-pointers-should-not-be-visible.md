@@ -1,5 +1,5 @@
 ---
-title: 'CA2111: Ponteiros não devem ser visíveis | Microsoft Docs'
+title: 'CA2111: os ponteiros não devem ser visíveis | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,17 +12,17 @@ helpviewer_keywords:
 - PointersShouldNotBeVisible
 ms.assetid: b3a8d466-895b-43bc-a2df-5d7058fe915f
 caps.latest.revision: 16
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 8497433088e4c49868a76dd3281d02a5e79babe5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a0d5546c6f6a2f5dbd0c6063f4a1dfd40ce1d7bb
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58928684"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72658732"
 ---
-# <a name="ca2111-pointers-should-not-be-visible"></a>CA2111: Ponteiros não devem ser visíveis
+# <a name="ca2111-pointers-should-not-be-visible"></a>CA2111: os ponteiros não devem estar visíveis
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -33,28 +33,28 @@ ms.locfileid: "58928684"
 |Alteração Significativa|Quebra|
 
 ## <a name="cause"></a>Causa
- Um público ou protegido <xref:System.IntPtr?displayProperty=fullName> ou <xref:System.UIntPtr?displayProperty=fullName> campo não é somente leitura.
+ Um campo <xref:System.IntPtr?displayProperty=fullName> ou <xref:System.UIntPtr?displayProperty=fullName> protegido ou público não é somente leitura.
 
 ## <a name="rule-description"></a>Descrição da Regra
- <xref:System.IntPtr> e <xref:System.UIntPtr> são tipos de ponteiro que são usados para acessar a memória não gerenciada. Se um ponteiro não for privado, interno ou somente leitura, o código mal-intencionado pode alterar o valor do ponteiro, potencialmente permitindo o acesso a locais arbitrários na memória ou causando falhas no aplicativo ou sistema.
+ <xref:System.IntPtr> e <xref:System.UIntPtr> são tipos de ponteiro que são usados para acessar a memória não gerenciada. Se um ponteiro não for privado, interno ou somente leitura, o código mal-intencionado poderá alterar o valor do ponteiro, potencialmente permitindo o acesso a locais arbitrários na memória ou causando falhas de aplicativo ou sistema.
 
- Se você pretender para proteger o acesso para o tipo que contém o campo de ponteiro, consulte [CA2112: Tipos seguros não devem expor campos](../code-quality/ca2112-secured-types-should-not-expose-fields.md).
+ Se você pretende proteger o acesso ao tipo que contém o campo ponteiro, consulte [CA2112: tipos protegidos não devem expor campos](../code-quality/ca2112-secured-types-should-not-expose-fields.md).
 
 ## <a name="how-to-fix-violations"></a>Como Corrigir Violações
- Proteger o ponteiro, tornando-o somente leitura, interno ou privado.
+ Proteja o ponteiro tornando-o somente leitura, interno ou privado.
 
 ## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos
- Suprima um aviso nessa regra, se você não confie no valor do ponteiro.
+ Suprimir um aviso dessa regra se você não depender do valor do ponteiro.
 
 ## <a name="example"></a>Exemplo
- O código a seguir mostra os ponteiros que violam e atendem à regra. Observe que os ponteiros não privados também violam a regra [CA1051: Não declarar campos de instância visíveis](../code-quality/ca1051-do-not-declare-visible-instance-fields.md).
+ O código a seguir mostra os ponteiros que violam e satisfazem a regra. Observe que os ponteiros não privados também violam a regra [CA1051: Não declare campos de instância visíveis](../code-quality/ca1051-do-not-declare-visible-instance-fields.md).
 
  [!code-csharp[FxCop.Security.PointersArePrivate#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Security.PointersArePrivate/cs/FxCop.Security.PointersArePrivate.cs#1)]
 
 ## <a name="related-rules"></a>Regras relacionadas
- [CA2112: Tipos seguros não devem expor campos](../code-quality/ca2112-secured-types-should-not-expose-fields.md)
+ [CA2112: os tipos seguros não devem expor campos](../code-quality/ca2112-secured-types-should-not-expose-fields.md)
 
- [CA1051: Não declarar campos de instância visíveis](../code-quality/ca1051-do-not-declare-visible-instance-fields.md)
+ [CA1051: não declarar campos de instância visíveis](../code-quality/ca1051-do-not-declare-visible-instance-fields.md)
 
 ## <a name="see-also"></a>Consulte também
  <xref:System.IntPtr?displayProperty=fullName> <xref:System.UIntPtr?displayProperty=fullName>

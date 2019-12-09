@@ -1,5 +1,5 @@
 ---
-title: 'Como: Atualize a exibição | Microsoft Docs'
+title: Como atualizar a exibição | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,21 +10,21 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 485c9e7152b3ed533c08e3f4f48409455849c43e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 683aca32921d73c07bcf4905015f0198f3e7e826
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62847715"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72733010"
 ---
-# <a name="how-to-refresh-the-view"></a>Como: Atualizar a exibição
-Spy + + tira um "instantâneo" das tabelas do sistema e atualiza uma exibição com base nessas informações. É importante que você atualize periodicamente seus modos de exibição do sistema. Se você tiver um modo de exibição Spy + + abra e não tiver atualizado para o modo de exibição, você não verá esses processos, threads e windows que são criados posteriormente. Além disso, você poderá ver os itens que não existem mais. O **Refresh** comando está disponível para todos os modos de exibição, exceto o modo de exibição de mensagens.
+# <a name="how-to-refresh-the-view"></a>Como atualizar a exibição
+O Spy + + usa um "instantâneo" das tabelas do sistema e atualiza uma exibição com base nessas informações. É importante que você atualize periodicamente as exibições do sistema. Se você tiver uma exibição do Spy + + aberta e não tiver atualizado a exibição, não verá esses processos, threads e janelas subsequentemente criados. Além disso, você pode ver itens que não existem mais. O comando **Atualizar** está disponível para todas as exibições, exceto para a exibição mensagens.
 
-### <a name="to-refresh-the-currently-active-view"></a>Para atualizar a exibição ativa no momento
+### <a name="to-refresh-the-currently-active-view"></a>Para atualizar o modo de exibição atualmente ativo
 
-- Escolha **Refresh** da **janela** menu, ou clique no **atualizar** botão na barra de ferramentas.
+- Escolha **Atualizar** no menu **janela** ou clique no botão **Atualizar** na barra de ferramentas.
 
 ## <a name="see-also"></a>Consulte também
 - [Usando Spy++](../debugger/using-spy-increment.md)
-- [Exibições SSpy + +](../debugger/spy-increment-views.md)
+- [Modos de exibição SSpy + +](../debugger/spy-increment-views.md)
 - [Referência a Spy++](../debugger/spy-increment-reference.md)

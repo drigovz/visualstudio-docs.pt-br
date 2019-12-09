@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptErrorDebug110::GetExceptionThrownKind | Microsoft Docs
+title: 'IActiveScriptErrorDebug110:: GetExceptionThrownKind | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -13,18 +13,18 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a58add60560f22681f18225d844814e3547b671f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d50ef1dfa3492fdc43a5010b624dae296c692722
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436065"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575051"
 ---
 # <a name="iactivescripterrordebug110getexceptionthrownkind"></a>IActiveScriptErrorDebug110::GetExceptionThrownKind
 Retorna um valor que indica o tipo de exceção lançada.  
   
 > [!IMPORTANT]
-> [Interface IActiveScriptErrorDebug110](../../winscript/reference/iactivescripterrordebug110-interface.md) é implementada pelo PDM versão 11.0 ou superior. Localizado em. activdbg100.h.  
+> A [interface IActiveScriptErrorDebug110](../../winscript/reference/iactivescripterrordebug110-interface.md) é implementada pelo PDM versão 11,0 e superior. Localizado em. activdbg100.h.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -36,9 +36,9 @@ HRESULT GetExceptionThrownKind(
   
 #### <a name="parameters"></a>Parâmetros  
  `pExceptionKind`  
- [out] O tipo de exceção que é lançada (por exemplo, primeira tentativa ou sem tratamento), representado por um [enumeração SCRIPT_ERROR_DEBUG_EXCEPTION_THROWN_KIND](../../winscript/reference/script-error-debug-exception-thrown-kind-enumeration.md) valor de enumeração.  
+ fora O tipo de exceção que é lançada (por exemplo, First-chance ou sem tratamento), representado por um valor de enumeração de [Enumeração SCRIPT_ERROR_DEBUG_EXCEPTION_THROWN_KIND](../../winscript/reference/script-error-debug-exception-thrown-kind-enumeration.md) .  
   
-## <a name="return-value"></a>Valor de retorno  
+## <a name="return-value"></a>Valor retornado  
  O método retorna um `HRESULT`. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.  
   
 |Valor|Descrição|  

@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b1d42f4d8a06e51c35387d07ecd21fa4970decc9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5efcc41a82cab32172aa395b488535f2777b9e13
+ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62817368"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68681166"
 ---
 # <a name="message-task"></a>tarefa de mensagem
 Registra uma mensagem durante a compilação.
@@ -31,7 +31,7 @@ Registra uma mensagem durante a compilação.
 ## <a name="parameters"></a>Parâmetros
  A tabela a seguir descreve os parâmetros da tarefa `Message`.
 
-|Parâmetro|Descrição|
+|Parâmetro|DESCRIÇÃO|
 |---------------|-----------------|
 |`Importance`|Parâmetro `String` opcional.<br /><br /> Especifica a importância da mensagem. Esse parâmetro pode ter um valor igual a `high`, `normal` ou `low`. O valor padrão é `normal`.|
 |`Text`|Parâmetro `String` opcional.<br /><br /> O texto de erro do log.|
@@ -41,7 +41,7 @@ Registra uma mensagem durante a compilação.
 
  Se o parâmetro `Condition` avaliar para o `true`, o valor do parâmetro `Text` será registrado e a compilação dará continuidade à execução. Se um parâmetro `Condition` não existir, o texto da mensagem será registrado. Para saber mais sobre o log, confira [Obter logs de build](../msbuild/obtaining-build-logs-with-msbuild.md).
 
- Por padrão, a mensagem é enviada para o agente de log de console do MSBuild. Isso pode ser alterado configurando o parâmetro <xref:Microsoft.Build.Tasks.TaskExtension.Log%2A>. O agente de log interpreta o parâmetro `Importance`.
+ Por padrão, a mensagem é enviada para o agente de log de console do MSBuild. Isso pode ser alterado configurando o parâmetro <xref:Microsoft.Build.Tasks.TaskExtension.Log%2A>. O agente de log interpreta o parâmetro `Importance`. Normalmente, uma mensagem definida como `high` é enviada quando o detalhe do agente está definido como <xref:Microsoft.Build.Framework.LoggerVerbosity>`Minimal` ou superior. Uma mensagem definida como `low` é enviada quando o detalhamento do agente está definido como <xref:Microsoft.Build.Framework.LoggerVerbosity>`Detailed`.
 
  Além dos parâmetros listados acima, essa tarefa herda parâmetros da classe <xref:Microsoft.Build.Tasks.TaskExtension>, que herda da classe <xref:Microsoft.Build.Utilities.Task>. Para obter uma lista desses parâmetros adicionais e suas descrições, confira [Classe base TaskExtension](../msbuild/taskextension-base-class.md).
 

@@ -1,30 +1,38 @@
 ---
-title: Xamarin no Visual Studio para Mac
+title: Xamarin
 description: 'Usar o Xamarin no Visual Studio para Mac permite que você crie aplicativos multiplataforma voltados para iOS, Mac, Android, tvOS e watchOS '
-author: conceptdev
-ms.author: crdun
-ms.date: 02/12/2019
+author: therealjohn
+ms.author: johmil
+ms.date: 06/18/2019
 ms.assetid: 339F6051-5F90-48DC-8237-EBBC8A03A32B
-ms.openlocfilehash: 1a7ba3101713c4461f3d3558a97cdbea37eac604
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 31fb7fa4c2a87820285809d24b98fe8e59a6be01
+ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62809936"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73714471"
 ---
 # <a name="xamarin-mobile-app-development"></a>Desenvolvimento de aplicativos móveis do Xamarin
 
 O suporte de primeira classe para o [Xamarin](/xamarin) permite que você desenvolva experiências nativas avançadas para Android, macOS, iOS, tvOS e watchOS. Os aplicativos de plataforma cruzada Xamarin.Forms o ajudam a compartilhar o código de interface do usuário baseado em XAML entre macOS, iOS e Android sem limitar o acesso à funcionalidade nativa.
 
+## <a name="xamarinforms"></a>Xamarin.Forms
+
+O Hot recarregamento de XAML para Xamarin. Forms é integrado ao Visual Studio para Mac na versão 8,3 e posteriores. Com esse recurso, as alterações habilitadas são refletidas instantaneamente em seu aplicativo em execução sempre que você salvar o arquivo.
+
+O Hot recarregamento de XAML pode ser habilitado marcando a caixa de seleção **habilitar o WebLoad do xamarin** no **Visual Studio > preferências > projetos > Xamarin Hot recarregar**.
+
+Para obter mais informações sobre a recarga a quente, consulte o [Guia de Hot recarregamento de XAML para Xamarin. Forms](/xamarin/xamarin-forms/xaml/hot-reload) na documentação.
+
 ## <a name="android"></a>Android
 
 O Visual Studio para Mac tem seu próprio gerenciador de SDK do Android integrado, permitindo que você acesse os SDKs aos quais deseja que seu aplicativo se destine.
 
-Para aplicativos Android, o Visual Studio para Mac inclui seu próprio designer, que funciona com arquivos Android `.axml` para construir visualmente interfaces do usuário. O Visual Studio para Mac abrirá esses arquivos no seu Designer Android, conforme mostrado nesta imagem:
+Para aplicativos Android, o Visual Studio para Mac inclui seu próprio designer, que funciona com arquivos Android `.axml` para construir visualmente interfaces do usuário. O Visual Studio para Mac abrirá esses arquivos no seu Android Designer, conforme mostrado nesta imagem:
 
 ![Designer de Interface do Usuário Android](media/intro-image31.png)
 
-Para saber mais sobre o Designer Android, veja o guia [Visão geral do Designer Xamarin.Android](/xamarin/android/user-interface/android-designer/index).
+Para saber mais sobre o Android Designer, veja o guia [Visão geral do Xamarin.Android Designer](/xamarin/android/user-interface/android-designer/index).
 
 ## <a name="ios"></a>iOS
 
@@ -32,7 +40,7 @@ O iOS Designer está totalmente integrado com o Visual Studio para Mac e permite
 
 ![Designer de Storyboard do iOS](media/intro-image30.png)
 
-Para obter mais informações sobre como usar o Designer do iOS, consulte os guias do [Designer](https://docs.microsoft.com/xamarin/ios/user-interface/designer/?tabs=macos).
+Para obter mais informações sobre como usar o Designer do iOS, consulte os guias do [Designer](/xamarin/ios/user-interface/designer/?tabs=macos).
 
 ### <a name="mac"></a>Mac
 
@@ -55,6 +63,6 @@ O Xamarin Inspector fornece um console C# interativo com ferramentas para os usu
 
 ![Xamarin Inspector](media/intro-inspector.png)
 
-Ele consiste em um aplicativo autônomo que fornece um console C# avançado para várias plataformas de programação (Android, iOS, Mac e Windows), além de integrar-se no fluxo de trabalho de depuração de seus IDEs. 
+Ele consiste em um aplicativo autônomo que fornece um console C# avançado para várias plataformas de programação (Android, iOS, Mac e Windows), além de integrar-se no fluxo de trabalho de depuração de seus IDEs.
 
 Para saber mais, consulte o guia do [Xamarin Inspector](/xamarin/tools/inspector/).

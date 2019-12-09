@@ -25,12 +25,12 @@ caps.latest.revision: 29
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7d564162a92976037729c4ad638136d7c1e827c4
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 70914da9be4046589a0ca3b8e5fd4ae13210ca51
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438298"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65689258"
 ---
 # <a name="how-to-enable-and-disable-edit-and-continue"></a>Como: Habilitar e desabilitar editem e continuar
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ Você pode desabilitar ou habilitar editar e continuar na **opções** caixa de 
 3. Para habilitar, selecione a **habilitar editar e continuar** caixa de seleção. Para desabilitar, desmarque a caixa de seleção.  
   
    > [!NOTE]
-   > Se IntelliTrace estiver habilitado e você coletar eventos de IntelliTrace e informações de chamada, Editar e Continuar estará desabilitado. Para obter mais informações, consulte [configurar o IntelliTrace](http://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e).  
+   > Se IntelliTrace estiver habilitado e você coletar eventos de IntelliTrace e informações de chamada, Editar e Continuar estará desabilitado. Para obter mais informações, consulte [configurar o IntelliTrace](https://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e).  
   
 4. Clique em **OK**.  
   

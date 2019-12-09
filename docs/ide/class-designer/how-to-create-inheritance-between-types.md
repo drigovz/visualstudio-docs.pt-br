@@ -1,5 +1,5 @@
 ---
-title: 'Como: Criar herança entre tipos (Designer de Classe)'
+title: Como criar herança entre tipos (Designer de Classe)
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -8,19 +8,19 @@ helpviewer_keywords:
 - inheritance, relationship defining
 - relationships, defining inheritance
 ms.assetid: 3786a21c-8022-4bf5-9d13-740fd354e93c
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c1a4f8db08ec80714fe2cd74e4d1300d68a56e5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: e8a7d7f3facf1408f87ef23dfa8ed8462195c172
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975366"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647726"
 ---
-# <a name="how-to-create-inheritance-between-types-in-class-designer"></a>Como: Criar herança entre tipos no Designer de Classe
+# <a name="how-to-create-inheritance-between-types-in-class-designer"></a>Como criar herança entre tipos no Designer de Classe
 
 Para criar uma relação de herança entre dois tipos em um diagrama de classe usando o **Designer de Classe**, conecte o tipo base ao seu tipo ou aos tipos derivados. Você pode ter uma relação de herança entre duas classes, entre uma classe e uma interface ou entre duas interfaces.
 
@@ -28,7 +28,7 @@ Para criar uma relação de herança entre dois tipos em um diagrama de classe u
 
 1. Em seu projeto no **Gerenciador de Soluções**, abra um arquivo de diagrama de classe (.cd).
 
-     Se você não possuir um diagrama de classes, crie um. Confira [Como Adicionar diagramas de classe a projetos](how-to-add-class-diagrams-to-projects.md).
+     Se você não possuir um diagrama de classes, crie um. Consulte [Como adicionar diagramas de classe a projetos](how-to-add-class-diagrams-to-projects.md).
 
 2. Na **Caixa de Ferramentas**, no **Designer de Classe**, clique em **Herança**.
 
@@ -51,5 +51,5 @@ Para criar uma relação de herança entre dois tipos em um diagrama de classe u
 
 - [Herança](/dotnet/csharp/programming-guide/classes-and-structs/inheritance)
 - [Noções Básicas de Herança](/dotnet/visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics)
-- [Como: Exibir herança entre tipos](how-to-view-inheritance-between-types.md)
+- [Como exibir herança entre tipos](how-to-view-inheritance-between-types.md)
 - [Classes do Visual C++ no Designer de Classe](visual-cpp-classes.md)

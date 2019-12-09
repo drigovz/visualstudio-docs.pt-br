@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugErrorBreakpoint2::GetBreakpointResolution
 ms.assetid: 1c2324ed-2a11-4e63-8f3a-f420c7a4018b
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1b1ba346a24c22a01039736b53568a89684af92c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 88109cce680852549bbbfda9c30cd0f809f9e723
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62874736"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66344952"
 ---
 # <a name="idebugerrorbreakpoint2getbreakpointresolution"></a>IDebugErrorBreakpoint2::GetBreakpointResolution
 Obtém a resolução de erro de ponto de interrupção que descreve o erro.
@@ -36,10 +39,9 @@ int GetBreakpointResolution( 
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `ppErrorResolution`
-
- [out] Retorna um [IDebugErrorBreakpointResolution2](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2.md) objeto que descreve o erro.
+## <a name="parameters"></a>Parâmetros
+`ppErrorResolution`\
+[out] Retorna um [IDebugErrorBreakpointResolution2](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2.md) objeto que descreve o erro.
 
 ## <a name="return-value"></a>Valor de retorno
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.

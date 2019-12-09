@@ -1,5 +1,5 @@
 ---
-title: 'Como: Exibir informações de rastreamento do WPF | Microsoft Docs'
+title: Como exibir informações de rastreamento do WPF | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,14 +16,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 55b818940a8e2a779c7bbc0e17dec5cd891a2d88
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 82c3f193c32b4e6a67bb0fe5540aa9d0020e77ea
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62848114"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72733464"
 ---
-# <a name="how-to-display-wpf-trace-information"></a>Como: Exibir informações de rastreamento do WPF
+# <a name="how-to-display-wpf-trace-information"></a>Como exibir informações de acompanhamento WPF
 O [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] pode receber informações de rastreamento de depuração de aplicativos do WPF e exibir essas informações na janela de **Saída**. Para exibir informações de rastreamento de depuração, o rastreamento do WPF deve estar habilitado.
 
  Você pode habilitar o rastreamento do WPF no arquivo App.config ou programaticamente usando a classe <xref:System.Diagnostics.PresentationTraceSources>. Uma forma mais fácil de habilitar o rastreamento do WPF é usando a janela **Opções**. O rastreamento do WPF para aplicativos Web não tem suporte.
@@ -46,7 +46,7 @@ O [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]�
 
      Um controle de lista suspensa aparece na coluna Configurações ao lado de **Associação de Dados** ou de qualquer categoria que você tiver clicado.
 
-8. Clique na lista suspensa e selecione o tipo de informações de rastreamento que você deseja ver: **Todos os**, **críticas**, **erro**, **aviso**, **informações**, **detalhado**, ou **ActivityTracing**.
+8. Clique na lista suspensa e selecione o tipo de informações de rastreamento que você quer consultar: **Tudo**, **Crítico**, **Erro**, **Aviso**, **Informações**, **Detalhado** ou **ActivityTracing**.
 
      **Crítico** habilita o rastreamento apenas de eventos Críticos.
 

@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEEVisualizerService::GetCustomViewerList method
 ms.assetid: 249d26ca-914f-43af-a400-8162477223f4
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 00a7928b203d00e0f9b43250a463a8fb272ce755
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 4fa71a731843f1deed1cfe9a464cc4ab716a8a43
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62915178"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66350168"
 ---
 # <a name="ieevisualizerservicegetcustomviewerlist"></a>IEEVisualizerService::GetCustomViewerList
 Esse método retorna uma lista de visualizadores de tipo que esse serviço conhece.
@@ -42,22 +45,18 @@ int GetCustomViewerList(
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `celtSkip`
+## <a name="parameters"></a>Parâmetros
+`celtSkip`\
+[in] Número de visualizadores de ignorar.
 
- [in] Número de visualizadores de ignorar.
+`celRequested`\
+[in] Número de visualizadores para recuperar (também especifica o tamanho do `rgViewers` matriz).
 
- `celRequested`
+`rgViewers`\
+[no, out] Matriz de [DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md) estruturas a serem preenchidos.
 
- [in] Número de visualizadores para recuperar (também especifica o tamanho do `rgViewers` matriz).
-
- `rgViewers`
-
- [no, out] Matriz de [DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md) estruturas a serem preenchidos.
-
- `pceltFetched`
-
- [out] Número de visualizadores realmente recuperados.
+`pceltFetched`\
+[out] Número de visualizadores realmente recuperados.
 
 ## <a name="return-value"></a>Valor de retorno
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.

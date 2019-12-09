@@ -4,17 +4,17 @@ ms.date: 05/02/2017
 ms.topic: conceptual
 helpviewer_keywords:
 - IntelliTest, Visual Studio IntelliTest developer testing tool
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: 94a52d81dd5e3b15340a2d58702600388b150001
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+author: jillre
+ms.openlocfilehash: 94bd67ecb4646e3b8079d2d1aadda097c655af4c
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62999765"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653166"
 ---
 # <a name="overview-of-microsoft-intellitest"></a>Visão geral do Microsoft IntelliTest
 
@@ -78,7 +78,7 @@ Depois de compilado e executado, o IntelliTest gera um conjunto de testes, como 
 7. "Olá\0Mundo!"
 8. "Olá, Mundo!"
 
-Leia [Gerar testes de unidade para seu código com IntelliTest](../../test/generate-unit-tests-for-your-code-with-intellitest.md) para entender onde os testes gerados são salvos. O código de teste gerado deve incluir um teste como o código a seguir:
+Leia [Gerar testes de unidade com IntelliTest](../../test/generate-unit-tests-for-your-code-with-intellitest.md) para entender onde os testes gerados são salvos. O código de teste gerado deve incluir um teste como o código a seguir:
 
 ```csharp
 [TestMethod]
@@ -115,8 +115,7 @@ Nesse sentido, os resultados de chamadas para código não gerenciado ou não in
 
 Além disso, o programa é considerado não determinístico se os valores das fontes externas mudam ao executar o programa novamente. Em tais casos o IntelliTest perde o controle sobre a execução do programa e a pesquisa se torna ineficiente.
 
-Às vezes, não é óbvio quando isso acontece.
-Considere os exemplos a seguir:
+Às vezes, não é óbvio quando isso acontece. Considere os exemplos a seguir:
 
 * O resultado do método **GetHashCode()** é fornecido pelo código não gerenciado e não é previsível.
 * A classe **System.Random** usa a hora atual do sistema para entregar valores verdadeiramente aleatórios.
@@ -137,7 +136,7 @@ A solução alternativa sugerida é ter um modo de teste em que esses métodos e
 
 O IntelliTest tem suporte apenas no .NET Framework X86 de 32 bits.
 
-### <a name="language"></a>Idioma
+### <a name="language"></a>Linguagem
 
 Em princípio, o IntelliTest pode analisar programas .NET arbitrários, gravados em qualquer linguagem .NET. No entanto, no Visual Studio ele dá suporte apenas a C#.
 

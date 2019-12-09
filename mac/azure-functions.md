@@ -1,18 +1,17 @@
 ---
 title: Introdução ao Azure Functions
 description: Usando o Azure Functions no Visual Studio para Mac.
-author: conceptdev
-ms.author: crdun
+author: sayedihashimi
+ms.author: sayedha
 ms.date: 04/02/2019
-ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 25CD47A4-5B32-4734-8EF3-E24A02AABF29
-ms.openlocfilehash: db25a9cbc647e399da86781d155a7b55d8e3802e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: dac6a1c53cea8982a75c7b12661c98f2feb37f83
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62985095"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189666"
 ---
 # <a name="introduction-to-azure-functions"></a>Introdução ao Azure Functions
 
@@ -22,7 +21,7 @@ O Azure Functions é uma maneira de criar e executar snippets de código control
 
 As ferramentas do Azure Functions estão incluídas no **Visual Studio para Mac 7.5** e posterior.
 
-Para criar e implantar funções, você também precisará de uma assinatura do Azure, que está disponível gratuitamente em [https://azure.com/free](https://azure.com/free).
+Para criar e implantar funções, você também precisa de uma assinatura do Azure. Se você não tiver uma conta do Azure, poderá se inscrever hoje gratuitamente e receber 12 meses de serviços populares gratuitos, $200 de crédito gratuito e mais de 25 serviços sempre gratuitos-> [https://azure.com/free](https://azure.com/free/dotnet).
 
 ## <a name="creating-your-first-azure-functions-project"></a>Criando seu primeiro projeto do Azure Functions
 
@@ -81,7 +80,7 @@ Com o suporte para Azure Functions no Visual Studio para Mac, você pode testar 
 
 Modelos de função permitem que você crie rapidamente novas funções usando os gatilhos e modelos mais comuns. Para criar outro tipo de função, faça o seguinte:
 
-1. Para adicionar uma nova função, clique com o botão direito do mouse no nome do projeto e selecione **Adicionar > Adicionar Função...**:
+1. Para adicionar uma nova função, clique com o botão direito do mouse no nome do projeto e selecione **Adicionar > Adicionar Função...** :
 
     ![Ação de contexto para adicionar nova função](media/azure-functions-addnew.png)
 
@@ -95,10 +94,10 @@ Você pode usar o procedimento acima para adicionar mais funções ao seu projet
 
 ## <a name="publish-to-azure"></a>Publicar no Azure
 
-1. Clique com o botão direito do mouse no nome do projeto e selecione **Publicar > Publicar no Azure**:  ![Opção de menu Publicar no Azure](media/azure-functions-image5.png)
+1. Clique com o botão direito do mouse no nome do projeto e selecione **Publicar > Publicar no Azure**: ![opção de menu Publicar no Azure](media/azure-functions-image5.png)
 2. Se você já conectou conta do Azure ao Visual Studio para Mac, uma lista de serviços de aplicativo disponíveis é exibida. Se você ainda não tiver feito logon, será solicitado que o faça.
 3. Na caixa de diálogo **Publicar no Serviço de Aplicativo do Azure**, você pode selecionar um serviço de aplicativo existente ou crie um novo clicando em **Novo**.
-4. Na caixa de diálogo **Criar novo Serviço de Aplicativo**, insira as configurações:  ![Opção de menu Publicar no Azure](media/azure-functions-image7.png)
+4. Na caixa de diálogo **Criar novo serviço de aplicativo**, insira as configurações: ![opção de menu Publicar no Azure](media/azure-functions-image7.png)
 
     |Configuração  |Descrição  |
     |---------|---------|
@@ -138,14 +137,14 @@ Desse ponto em diante, você pode definir as configurações do aplicativo para 
 ## <a name="available-function-templates"></a>Modelos de função disponíveis
 
 - **Gatilho do GitHub** – Responda a eventos que ocorrerem em seus repositórios do GitHub. Para obter mais informações, consulte o [Artigo do Azure Functions sobre o GitHub](/azure/azure-functions/functions-create-github-webhook-triggered-function)
-    - Autor de comentários do GitHub – Esta função será executada quando receber um webhook do GitHub para uma solicitação de pull ou emissão e adicionará um comentário.
-    - WebHook do GitHub – Esta função será executada sempre que receber um webhook do GitHub.
+  - Autor de comentários do GitHub – Esta função será executada quando receber um webhook do GitHub para uma solicitação de pull ou emissão e adicionará um comentário.
+  - WebHook do GitHub – Esta função será executada sempre que receber um webhook do GitHub.
 
 - **HTTP** – Dispare a execução de seu código usando uma solicitação HTTP. Há modelos explícitos para os gatilhos HTTP a seguir:
-    - Gatilho Http
-    - Http GET CRUD
-    - Http POST CRUD
-    - Gatilho Http com parâmetros
+  - Gatilho Http
+  - Http GET CRUD
+  - Http POST CRUD
+  - Gatilho Http com parâmetros
 
 - **Temporizador** – Execute a limpeza ou outras tarefas em lote seguindo um cronograma predefinido. Esse modelo tem dois campos: um nome e um cronograma, que é uma expressão CRON de seis campos. Para obter mais informações, consulte o [Artigo do Azure Functions sobre o Temporizador](/azure/azure-functions/functions-create-scheduled-function)
 
@@ -159,4 +158,4 @@ Desse ponto em diante, você pode definir as configurações do aplicativo para 
 
 - **Redimensionador de imagem** – Esta função cria imagens redimensionadas sempre que um blob é adicionado a um contêiner. O modelo usa a cadeia de conexão e o caminho para o gatilho, uma saída de imagem pequena e uma saída de imagem média.
 
-- **Token SAS** – Esta função gera um token SAS para um determinado contêiner do Armazenamento do Azure e um nome de blob. Além do nome da função, esse modelo também tem uma propriedade de conexão e de caminho. A propriedade de caminho é o caminho em sua conta de armazenamento que o gatilho monitorará. A conta de conexão é o nome da configuração do aplicativo que contém a cadeia de conexão da sua conta de armazenamento. Os **Direitos de acesso** também precisam ser definidos. O nível de autorização controla se a função requer uma chave de API e qual chave deve ser usada; Função usa uma tecla de função; Admin usa a chave mestra. Para obter mais informações, consulte o exemplo de [Função do Azure em C# para gerar tokens SAS](https://azure.microsoft.com/resources/samples/functions-dotnet-sas-token/).
+- **Token SAS** – Esta função gera um token SAS para um determinado contêiner do Armazenamento do Azure e um nome de blob. Além do nome da função, esse modelo também tem uma propriedade de conexão e de caminho. A propriedade de caminho é o caminho em sua conta de armazenamento que o gatilho monitorará. A conta de conexão é o nome da configuração do aplicativo que contém a cadeia de conexão da sua conta de armazenamento. Os **Direitos de acesso** também precisam ser definidos. O nível de autorização controla se a função requer uma chave de API e qual chave deve ser usada; Função usa uma tecla de função; Admin usa a chave mestra. Para obter mais informações, consulte o exemplo de [Função do Azure em C# para gerar tokens SAS](https://github.com/Azure-Samples/functions-dotnet-sas-token/).

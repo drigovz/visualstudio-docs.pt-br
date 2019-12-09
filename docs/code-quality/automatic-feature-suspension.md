@@ -7,49 +7,49 @@ helpviewer_keywords:
 - performance
 - low-memory
 ms.assetid: 572c15aa-1fd0-468c-b6be-9fa50e170914
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fbe86e085e50dc0e72c00b7bbe7a313e689e0ee5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: dd399d78ac43085d89958ba358954f9e6cefe521
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62571519"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72606533"
 ---
 # <a name="automatic-feature-suspension"></a>Suspensão automática de recursos
 
-Se a memória disponível no sistema cai a 200 MB ou menos, o Visual Studio exibe a mensagem a seguir no editor de código:
+Se a memória do sistema disponível cair em 200 MB ou menos, o Visual Studio exibirá a seguinte mensagem no editor de código:
 
-![Suspendendo a análise de solução completa de texto de alerta](../code-quality/media/fsa_alert.png)
+![Texto de alerta suspendendo análise de solução completa](../code-quality/media/fsa_alert.png)
 
-Quando o Visual Studio detecta uma condição de pouca memória, ele suspende automaticamente determinados recursos avançados para ajudá-lo a permanecer estável. O Visual Studio continua a funcionar como antes, mas seu desempenho é degradado.
+Quando o Visual Studio detecta uma condição de memória insuficiente, ele suspende automaticamente determinados recursos avançados para ajudá-lo a permanecer estável. O Visual Studio continua a funcionar como antes, mas seu desempenho está degradado.
 
-Em uma condição de pouca memória, as seguintes ações ocorrem:
+Em uma condição de memória insuficiente, ocorrem as seguintes ações:
 
-- Análise de solução completa para o Visual C# e Visual Basic está desabilitado.
+- A análise de solução completa C# para Visual e Visual Basic está desabilitada.
 
-- [Coleta de lixo](/dotnet/standard/garbage-collection/index) modo de baixa latência (GC) para Visual C# e Visual Basic está desabilitado.
+- O modo de baixa latência de GC ( [coleta](/dotnet/standard/garbage-collection/index) de lixo C# ) para Visual e Visual Basic está desabilitado.
 
-- Caches do Visual Studio são liberados.
+- Os caches do Visual Studio são liberados.
 
 ## <a name="improve-visual-studio-performance"></a>Melhorar o desempenho do Visual Studio
 
-Para obter dicas e truques sobre como melhorar o desempenho do Visual Studio ao lidar com grandes soluções ou condições de memória baixa, consulte [considerações sobre desempenho para grandes soluções](https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions).
+Para obter dicas e truques sobre como melhorar o desempenho do Visual Studio ao lidar com soluções grandes ou condições de memória insuficiente, consulte [considerações de desempenho para soluções grandes](https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions).
 
-## <a name="full-solution-analysis-suspended"></a>Análise de solução completa suspenso
+## <a name="full-solution-analysis-suspended"></a>Análise de solução completa suspensa
 
-Por padrão, análise de solução completa é habilitado para o Visual Basic e desabilitada para o Visual C#. No entanto, em uma condição de pouca memória, análise de solução completa é automaticamente desabilitada para Visual Basic e Visual C#, independentemente de suas definições na caixa de diálogo Opções. No entanto, você pode habilitar novamente a análise de solução completa, escolhendo a **reabilitar** botão nas informações da barra quando ele for exibido, selecionando a **habilitar análise de solução completa** caixa de seleção na caixa de diálogo Opções, ou, reiniciar o Visual Studio. A caixa de diálogo Opções sempre mostra a atual solução completa as configurações de análise. Para obter mais informações, confira [Como: Habilitar e desabilitar análise completa da solução](../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md).
+Por padrão, a análise de solução completa é habilitada para Visual Basic e C#desabilitada para Visual. No entanto, em uma condição de memória insuficiente, a análise de solução completa é desabilitada automaticamente para Visual Basic e Visual C#, independentemente de suas configurações na caixa de diálogo opções. No entanto, você pode reabilitar a análise de solução completa escolhendo o botão **reabilitar** na barra de informações quando ela for exibida, marcando a caixa de seleção **Habilitar análise de solução completa** no diálogo opções ou reiniciando o Visual Studio. A caixa de diálogo opções sempre mostra as configurações de análise de solução completas atuais. Para obter mais informações, consulte [como habilitar e desabilitar a análise completa da solução](../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md).
 
-## <a name="gc-low-latency-disabled"></a>GC baixa latência desabilitada
+## <a name="gc-low-latency-disabled"></a>Baixa latência de GC desabilitada
 
-Para habilitar o modo de baixa latência de GC novamente, reinicie o Visual Studio. Por padrão, o Visual Studio habilita o modo de baixa latência de GC sempre que você está digitando para garantir que sua digitação não impeça que quaisquer operações de GC. No entanto, se uma condição de pouca memória faz com que o Visual Studio exibir o aviso de suspensão automática, o modo de baixa latência de GC está desabilitado para a sessão. Reiniciar o Visual Studio habilita novamente o comportamento de GC padrão. Para obter mais informações, consulte <xref:System.Runtime.GCLatencyMode>.
+Para reabilitar o modo de baixa latência do GC, reinicie o Visual Studio. Por padrão, o Visual Studio habilita o modo de baixa latência do GC sempre que você está digitando para garantir que a digitação não bloqueie nenhuma operação GC. No entanto, se uma condição de memória insuficiente fizer com que o Visual Studio exiba o aviso de suspensão automática, o modo de baixa latência do GC será desabilitado para essa sessão. Reiniciar o Visual Studio habilita novamente o comportamento padrão do GC. Para obter mais informações, consulte <xref:System.Runtime.GCLatencyMode>.
 
-## <a name="visual-studio-caches-flushed"></a>Caches do Studio Visual liberados
+## <a name="visual-studio-caches-flushed"></a>Caches do Visual Studio liberados
 
-Se você continuar sua sessão de desenvolvimento atual ou reinicie o Visual Studio, todos os caches do Visual Studio são removidos imediatamente, mas começa a preencher novamente. Os caches liberados incluem caches para os seguintes recursos:
+Se você continuar a sessão de desenvolvimento atual ou reiniciar o Visual Studio, todos os caches do Visual Studio serão imediatamente esvaziados, mas começarão a ser repopulados. Os caches liberados incluem caches para os seguintes recursos:
 
 - Localizar todas as referências
 
@@ -60,10 +60,10 @@ Se você continuar sua sessão de desenvolvimento atual ou reinicie o Visual Stu
 Além disso, os caches usados para operações internas do Visual Studio também são desmarcados.
 
 > [!NOTE]
-> O aviso de suspensão do recurso automático ocorre apenas uma vez em uma base por solução, não em uma base por sessão. Isso significa que, se você alterna do Visual Basic para Visual C# (ou vice-versa) e executar em outra condição de pouca memória, você pode, possivelmente, obter outro aviso de suspensão automática de recursos.
+> O aviso de suspensão de recurso automático ocorre apenas uma vez por solução, não por sessão. Isso significa que, se você alternar de Visual Basic para C# Visual (ou vice-versa) e executar outra condição de memória insuficiente, poderá obter outro aviso de suspensão de recurso automático.
 
 ## <a name="see-also"></a>Consulte também
 
-- [Como: Habilitar e desabilitar análise de solução completa](../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md)
+- [Como habilitar e desabilitar a análise de solução completa](../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md)
 - [Conceitos básicos da coleta de lixo](/dotnet/standard/garbage-collection/fundamentals)
-- [Considerações sobre desempenho para grandes soluções](https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions)
+- [Considerações de desempenho para soluções grandes](https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions)

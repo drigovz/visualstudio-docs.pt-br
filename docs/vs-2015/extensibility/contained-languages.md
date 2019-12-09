@@ -11,13 +11,13 @@ caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0920999eee7460c8bf697e245bae55a3641b8e18
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60101165"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184283"
 ---
-# <a name="contained-languages"></a>Idiomas independentes
+# <a name="contained-languages"></a>Linguagens contidas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)] 
 
 *Contido idiomas* são linguagens que são contidas por outras linguagens. Por exemplo, o HTML no [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] páginas podem conter [!INCLUDE[csprcs](../includes/csprcs-md.md)] ou [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] scripts. Uma arquitetura de linguagem dual é necessária para o editor de arquivo. aspx fornecer o IntelliSense, coloração e outros recursos de edição para o HTML e a linguagem de script.  

@@ -30,12 +30,12 @@ caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f66abbb72e707381b30c88f88e999f502e3c7da9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 831cae8d83bc26e05b80d6948a3168a6e6a387c4
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58929479"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65682432"
 ---
 # <a name="finding-memory-leaks-using-the-crt-library"></a>Localizando perdas de memória usando a biblioteca CRT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +57,7 @@ Vazamentos de memória, definidos como a falha em desalocar corretamente a memó
   
  Para que as funções CRT funcionem corretamente, as instruções `#include` devem seguir a ordem mostrada aqui.  
   
- Incluindo crtdbg. h mapeia o `malloc` e o [livre](http://msdn.microsoft.com/library/74ded9cf-1863-432e-9306-327a42080bb8) funções em suas versões de depuração, [malloc_dbg](http://msdn.microsoft.com/library/c97eca51-140b-4461-8bd2-28965b49ecdb) e `free`, quais rastrear a alocação de memória e desalocação. Esse mapeamento ocorre apenas em compilações de depuração, que tem `_DEBUG`. Compilações lançadas usam as funções `malloc` e `free`.  
+ Incluindo crtdbg. h mapeia o `malloc` e o [livre](https://msdn.microsoft.com/library/74ded9cf-1863-432e-9306-327a42080bb8) funções em suas versões de depuração, [malloc_dbg](https://msdn.microsoft.com/library/c97eca51-140b-4461-8bd2-28965b49ecdb) e `free`, quais rastrear a alocação de memória e desalocação. Esse mapeamento ocorre apenas em compilações de depuração, que tem `_DEBUG`. Compilações lançadas usam as funções `malloc` e `free`.  
   
  A declaração de `#define` mapeia uma versão de base de funções heap de CRT para a versão de depuração correspondente. Se você omitir a instrução `#define`, o despejo de vazamento de memória será menos detalhado.  
   
@@ -67,7 +67,7 @@ Vazamentos de memória, definidos como a falha em desalocar corretamente a memó
 _CrtDumpMemoryLeaks();  
 ```  
   
- Se seu aplicativo tiver várias saídas, não será necessário posicionar manualmente uma chamada para [crtdumpmemoryleaks](http://msdn.microsoft.com/library/71b2eab4-7f55-44e8-a55a-bfea4f32d34c) em cada ponto de saída. Uma chamada para `_CrtSetDbgFlag` no início do seu aplicativo causará uma chamada automática para `_CrtDumpMemoryLeaks` em cada ponto de saída. Você deve definir os dois campos de bits mostrados aqui:  
+ Se seu aplicativo tiver várias saídas, não será necessário posicionar manualmente uma chamada para [crtdumpmemoryleaks](https://msdn.microsoft.com/library/71b2eab4-7f55-44e8-a55a-bfea4f32d34c) em cada ponto de saída. Uma chamada para `_CrtSetDbgFlag` no início do seu aplicativo causará uma chamada automática para `_CrtDumpMemoryLeaks` em cada ponto de saída. Você deve definir os dois campos de bits mostrados aqui:  
   
 ```  
 _CrtSetDbgFlag ( _CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF );  
@@ -82,7 +82,7 @@ _CrtSetReportMode( _CRT_ERROR, _CRTDBG_MODE_DEBUG );
 ```  
   
 ## <a name="interpreting-the-memory-leak-report"></a>Interpretando o relatório de vazamento de memória  
- Se seu aplicativo não definir `_CRTDBG_MAP_ALLOC`, [crtdumpmemoryleaks](http://msdn.microsoft.com/library/71b2eab4-7f55-44e8-a55a-bfea4f32d34c) exibe um relatório de vazamento de memória que se parece com isso:  
+ Se seu aplicativo não definir `_CRTDBG_MAP_ALLOC`, [crtdumpmemoryleaks](https://msdn.microsoft.com/library/71b2eab4-7f55-44e8-a55a-bfea4f32d34c) exibe um relatório de vazamento de memória que se parece com isso:  
   
 ```  
 Detected memory leaks!  
@@ -109,7 +109,7 @@ Object dump complete.
   
 - O número de alocação de memória, que é `18` nesse exemplo  
   
-- O [tipo de bloco](http://msdn.microsoft.com/e2f42faf-0687-49e7-aa1f-916038354f97), que é `normal` neste exemplo.  
+- O [tipo de bloco](https://msdn.microsoft.com/e2f42faf-0687-49e7-aa1f-916038354f97), que é `normal` neste exemplo.  
   
 - O número de alocação de memória hexadecimal, que é `0x00780E80` nesse exemplo.  
   

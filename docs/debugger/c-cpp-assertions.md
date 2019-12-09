@@ -1,5 +1,5 @@
 ---
-title: Asserções C/C++ | Microsoft Docs
+title: C/C++ asserções | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -28,17 +28,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8e2d416bd932f1334468bfb3d43e050b3e71d2ec
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f7ac27b46252582b3982082a2a9a90a09223574f
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62564106"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911612"
 ---
 # <a name="cc-assertions"></a>Asserções C/C++
 Uma instrução de declaração especifica uma condição que você espera ser verdadeira em um ponto específico em seu programa. Se essa condição não for verdadeira, a asserção falhará, a execução do programa será interrompida e a [caixa de diálogo Falha na Asserção](../debugger/assertion-failed-dialog-box.md) será exibida.
 
-O Visual C++ dá suporte a instruções de declaração baseadas nestes constructos:
+O Visual Studio C++ oferece suporte a instruções de asserção baseadas nas seguintes construções:
 
 - Asserções MFC para programas MFC.
 
@@ -90,7 +90,7 @@ Quando adicionar asserções ao seu código, verifique se elas não têm efeitos
 ASSERT(nM++ > 0); // Don't do this!
 ```
 
-Como a expressão `ASSERT` não é avaliada na versão de liberação do programa, `nM` terá valores diferentes nas versões de depuração e de liberação. Para evitar esse problema no MFC, você pode usar o [VERIFY](/cpp/mfc/reference/diagnostic-services#verify) macro em vez de `ASSERT`. `VERIFY` avalia a expressão em todas as versões, mas não verifica o resultado na versão de lançamento.
+Como a expressão `ASSERT` não é avaliada na versão de liberação do programa, `nM` terá valores diferentes nas versões de depuração e de liberação. Para evitar esse problema no MFC, você pode usar a macro [Verify](/cpp/mfc/reference/diagnostic-services#verify) em vez de `ASSERT`. `VERIFY` avalia a expressão em todas as versões, mas não verifica o resultado na versão de lançamento.
 
 Tenha cuidado especial quando usar chamadas de função em instruções de declaração, porque a avaliação de uma função pode ter efeitos colaterais inesperados.
 
@@ -169,7 +169,7 @@ int x = SomeFunc(y);
 ASSERT(x >= 0);   //  Assertion fails if x is negative
 ```
 
-Você pode usar ASSERT com a função [IsKindOf](https://docs.microsoft.com/cpp/mfc/reference/cobject-class#iskindof) para fornecer a verificação de tipo dos argumentos da função:
+Você pode usar ASSERT com a função [IsKindOf](/cpp/mfc/reference/cobject-class#iskindof) para fornecer a verificação de tipo dos argumentos da função:
 
 ```cpp
 ASSERT( pObject1->IsKindOf( RUNTIME_CLASS( CPerson ) ) );
@@ -178,7 +178,7 @@ ASSERT( pObject1->IsKindOf( RUNTIME_CLASS( CPerson ) ) );
 A macro `ASSERT` não produz nenhum código na versão de liberação. Se for necessário avaliar a expressão na versão de liberação, use a macro [VERIFY](https://msdn.microsoft.com/library/s8c29sw2.aspx#verify) em vez de ASSERT.
 
 ### <a name="BKMK_MFC_ASSERT_VALID_and_CObject__AssertValid"></a> MFC ASSERT_VALID e CObject::AssertValid
-O método [CObject::AssertValid](https://docs.microsoft.com/cpp/mfc/reference/cobject-class#assertvalid) fornece verificações de tempo de execução do estado interno de um objeto. Embora não seja necessário substituir `AssertValid` quando você deriva a sua classe de `CObject`, é possível tornar sua classe mais confiável fazendo isso. `AssertValid` deve executar asserções em todas as variáveis de membro do objeto para verificar se contêm valores válidos. Por exemplo, ela deve verificar se as variáveis de membro do ponteiro não são NULL.
+O método [CObject::AssertValid](/cpp/mfc/reference/cobject-class#assertvalid) fornece verificações de tempo de execução do estado interno de um objeto. Embora não seja necessário substituir `AssertValid` quando você deriva a sua classe de `CObject`, é possível tornar sua classe mais confiável fazendo isso. `AssertValid` deve executar asserções em todas as variáveis de membro do objeto para verificar se contêm valores válidos. Por exemplo, ela deve verificar se as variáveis de membro do ponteiro não são NULL.
 
 O exemplo a seguir mostra como declarar uma função `AssertValid`:
 
@@ -280,7 +280,7 @@ Ou você pode incluir uma asserção de CRT como esta:
 _ASSERT(numMols >= 0);
 ```
 
-Essas instruções não fazem nada se seu programa está funcionando corretamente. Se um erro lógico fizer com que `numMols` para ser menor que zero, no entanto, a asserção paralisa a execução do seu programa e exibe as [caixa de diálogo de falha de asserção](../debugger/assertion-failed-dialog-box.md).
+Essas instruções não fazem nada se seu programa está funcionando corretamente. Se um erro lógico fizer com que `numMols` seja menor que zero, no entanto, a asserção interromperá a execução do programa e exibirá a [caixa de diálogo Falha na asserção](../debugger/assertion-failed-dialog-box.md).
 
 [Neste tópico](#BKMK_In_this_topic)
 
@@ -320,7 +320,7 @@ ASSERT(!myErr); -- MFC version
 _ASSERT(!myErr); -- CRT version
 ```
 
-Se o código de tratamento de erros funcionar corretamente, o erro será tratado e `myErr` será redefinido como zero antes que a asserção seja atingida. Se `myErr` possui outro valor, a asserção falhará, o programa será interrompido e a [caixa de diálogo de falha de asserção](../debugger/assertion-failed-dialog-box.md) é exibida.
+Se o código de tratamento de erros funcionar corretamente, o erro será tratado e `myErr` será redefinido como zero antes que a asserção seja atingida. Se `myErr` tiver outro valor, a asserção falhará, o programa será interrompido e a [caixa de diálogo Falha na asserção](../debugger/assertion-failed-dialog-box.md) aparecerá.
 
 Apesar disso, as instruções de declaração não substituem o código de tratamento de erros. O exemplo a seguir mostra uma instrução de declaração que pode resultar em problemas no código da versão de liberação final:
 

@@ -11,11 +11,11 @@ caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 563f38cd2dc3854918fe637fdc11afe1d1a49b64
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58928439"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184373"
 ---
 # <a name="command-handling"></a>Manipulação de comando
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ O editor pode definir novos comandos. Normalmente, os comandos são exibidos em 
   
  \<Guid de menu = "guidCustomEditorCmdSet" id = "IDMX_RTF" prioridade = "0x0000" type = "Contexto" >  
   
- \<Parent guid="guidCustomEditorCmdSet" id="0"/>  
+ \<Guid pai = "guidCustomEditorCmdSet" id = "0" / >  
   
  \<Cadeias de caracteres >  
   

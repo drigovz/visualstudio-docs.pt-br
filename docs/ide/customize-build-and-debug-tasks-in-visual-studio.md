@@ -8,18 +8,17 @@ helpviewer_keywords:
 - customize codebases [Visual Studio]
 - tasks.vs.json file [Visual Studio]
 - launch.vs.json file [Visual Studio]
-- vsworkspacesettings.json file [Visual Studio]
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 23888809dd4dfd05058ed71ba8a82e8e532d7e61
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 6a9101db18c8c61f249d9f0b818a75024270a079
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62962939"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72652571"
 ---
 # <a name="customize-build-and-debug-tasks-for-open-folder-development"></a>Personalizar tarefas de compilação e depuração para desenvolvimento de "Pasta Aberta"
 
@@ -33,7 +32,6 @@ Personalizar sua base de código sem projeto usando os seguintes arquivos *.json
 |-|-|
 |*tasks.vs.json*|Especifique os comandos de compilação personalizados e as opções do compilador, além de tarefas arbitrárias (sem relação com a compilação).<br>Acessado por meio do item **Configurar Tarefas** no menu do clique com o botão direito no **Gerenciador de Soluções**.|
 |*launch.vs.json*|Especifica argumentos de linha de comando para depuração.<br>Acessado por meio do item **Configurações de Depuração e Inicialização** no menu do clique com o botão direito no **Gerenciador de Soluções**.|
-|*VSWorkspaceSettings.json*|Configurações genéricas que podem afetar as tarefas e a inicialização. Por exemplo, a definição de `envVars` em *VSWorkspaceSettings.json* adiciona as variáveis de ambiente especificadas para executar os comandos externamente.<br>Crie esse arquivo manualmente.|
 
 Esses arquivos *.json* estão localizados em uma pasta oculta chamada *.vs* na pasta raiz de sua base de código. Os arquivos *tasks.vs.json* e *launch.vs.json* são criados pelo Visual Studio conforme a necessidade quando você escolhe **Configurar Tarefas** ou **Configurações de Depuração e de Inicialização** em um arquivo ou pasta no **Gerenciador de Soluções**. Esses arquivos *.json* ficam ocultos porque a maioria dos usuários geralmente não deseja inclui-los no controle do código-fonte. No entanto, se você quiser a possibilidade de inclui-los no controle do código-fonte, arraste os arquivos para a raiz da base de código, onde eles ficarão visíveis.
 
@@ -193,7 +191,7 @@ Vários arquivos *tasks.vs.json* podem existir na raiz e em subdiretórios de um
 - Diretório pai do diretório atual, até o diretório raiz.
 - Arquivos de configuração no diretório raiz.
 
-Essas regras de agregação se aplicam aos arquivos *tasks.vs.json* e *VSWorkspaceSettings.json*. Para saber mais sobre como as configurações em outro arquivo são agregadas, veja a seção correspondente desse arquivo neste artigo.
+Essas regras de agregação se aplicam a *tasks.vs.json*. Para saber mais sobre como as configurações em outro arquivo são agregadas, veja a seção correspondente desse arquivo neste artigo.
 
 ### <a name="properties-for-tasksvsjson"></a>Propriedades para tasks.vs.json
 
@@ -259,6 +257,9 @@ Você pode criar tarefas para qualquer arquivo ou pasta especificando seu nome n
 
    Quando você escolhe **F5**, o depurador é iniciado, e é interrompido em qualquer ponto de interrupção já criado. Todas as janelas conhecidas do depurador ficam disponíveis e funcionais.
 
+   > [!IMPORTANT]
+   > Para obter detalhes adicionais sobre a compilação personalizada e tarefas C++ de depuração em projetos de pasta aberta, consulte [abrir pasta suporte para C++ sistemas de compilação no Visual Studio](/cpp/build/open-folder-projects-cpp).
+
 ### <a name="specify-arguments-for-debugging"></a>Especificar argumentos para depuração
 
 Você pode especificar argumentos de linha de comando para passar para depuração no arquivo *launch.vs.json*. Adicione os argumentos à matriz `args`, conforme mostra o exemplo a seguir:
@@ -290,10 +291,6 @@ Quando você salva esse arquivo, o nome da nova configuração aparece na lista 
 > [!NOTE]
 > A propriedade da matriz `configurations` em *launch.vs.json* é lida em dois locais de arquivo &mdash;o diretório raiz da base de código, e o diretório *.vs*. Se houver um conflito, a prioridade será dada ao valor em *.vs\launch.vs.json*.
 
-## <a name="define-workspace-settings-in-vsworkspacesettingsjson"></a>Definir configurações de workspace em VSWorkspaceSettings.json
-
-Você pode especificar configurações genéricas que podem afetar as tarefas e iniciar no arquivo *VSWorkspaceSettings.json*. Por exemplo, se você definir `envVars` no *VSWorkspaceSettings.json*, o Visual Studio adicionará as variáveis de ambiente especificadas aos comandos executados externamente. Para usar esse arquivo, você deverá criá-lo manualmente.
-
 ## <a name="additional-settings-files"></a>Arquivos de configurações adicionais
 
 Além dos três arquivos *.json* descritos neste tópico, o Visual Studio também lê configurações de alguns arquivos adicionais, se eles existirem em sua base de código.
@@ -313,7 +310,7 @@ As configurações lidas no arquivo *.gitignore* são aplicadas ao seu diretóri
 ## <a name="see-also"></a>Consulte também
 
 - [Desenvolver código sem projetos ou soluções](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)
-- [Projetos de pasta aberta para C++](/cpp/ide/non-msbuild-projects)
-- [Projetos CMake em C++](/cpp/ide/cmake-tools-for-visual-cpp)
-- [Referência a NMAKE](/cpp/build/nmake-reference)
+- [Projetos de pasta aberta para C++](/cpp/build/open-folder-projects-cpp)
+- [Projetos do CMake para C++](/cpp/build/cmake-projects-in-visual-studio)
+- [Referência a NMAKE](/cpp/build/reference/nmake-reference)
 - [Recursos do Editor de Códigos](../ide/writing-code-in-the-code-and-text-editor.md)

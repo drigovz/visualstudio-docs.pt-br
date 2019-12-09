@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 34faf217f77bd30ba707f5ae17886b05dac8ab4f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: b1bd7e4963796858e7055667c1ae6a9557c77205
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63401352"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739039"
 ---
-# <a name="idiasymbolgetudtkind"></a>IDiaSymbol::get_udtKind
+# <a name="idiasymbolget_udtkind"></a>IDiaSymbol::get_udtKind
 Recupera a variedade de um tipo definido pelo usuário (UDT).
 
 ## <a name="syntax"></a>Sintaxe
@@ -33,13 +33,13 @@ HRESULT get_udtKind ( 
 #### <a name="parameters"></a>Parâmetros
  `pRetVal`
 
-[out] Retorna um valor da [enumeração UdtKind](../../debugger/debug-interface-access/udtkind.md) enumeração que especifica o tipo de um UDT: estrutura, classe ou união.
+fora Retorna um valor da enumeração de [Enumeração UdtKind](../../debugger/debug-interface-access/udtkind.md) que especifica o tipo de uma UDT: estrutura, classe ou União.
 
-## <a name="return-value"></a>Valor de retorno
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE` ou código de erro.
 
 > [!NOTE]
-> Um valor de retorno `S_FALSE` significa que a propriedade não está disponível para o símbolo.
+> Um valor de retorno de `S_FALSE` significa que a propriedade não está disponível para o símbolo.
 
 ## <a name="see-also"></a>Consulte também
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

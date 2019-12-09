@@ -8,17 +8,17 @@ helpviewer_keywords:
 - CommandTable element (VSCT XML schema)
 - VSCT XML schema elements, CommandTable
 ms.assetid: 15c38159-660a-4ef4-9643-aa6fcfca82a9
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9942df0084924543149eb78f245a996559d594ee
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9bb10232c725eb2f538df73f6a7ca98e534a4c14
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62926646"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66341813"
 ---
 # <a name="commandtable-element"></a>Elemento CommandTable
 CommandTable é o elemento raiz do *VSCT* arquivo. Esse é o arquivo que define o layout real e o tipo dos comandos a um VSPackage fornece ao IDE. Comandos podem incluir itens de menu, menus, barras de ferramentas e caixas de combinação. Para obter mais informações, consulte [arquivos de tabela (. VSCT) de comando do Visual Studio](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).

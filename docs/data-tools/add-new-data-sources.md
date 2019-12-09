@@ -8,83 +8,83 @@ helpviewer_keywords:
 - data [Visual Studio], data sources
 - data sources
 ms.assetid: ed28c625-bb89-4037-bfde-cfa435d182a2
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 05a07fc3cb72f923d28ff907c9aec69620cbd40d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 99e9d9d466ae32d86b64b17738c96c245bda8f96
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62824861"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72648893"
 ---
 # <a name="add-new-data-sources"></a>Adicionar novas fontes de dados
 
-No contexto das ferramentas de dados do .NET no Visual Studio, o termo *fonte de dados* refere-se aos objetos .NET que se conectam a um armazenamento de dados e disponibilizar os dados a um aplicativo .NET. Os designers do Visual Studio podem consumir a saída da fonte de dados para gerar o código clichê que associa os dados a formas quando você arrasta e solta os objetos de banco de dados a partir de **fontes de dados** janela. Esse tipo de fonte de dados pode ser:
+No contexto do .NET Data Tools no Visual Studio, o termo *fonte de dados* refere-se a objetos .NET que se conectam a um armazenamento de dados e disponibilizam os dados para um aplicativo .net. Os designers do Visual Studio podem consumir a saída da fonte de dados para gerar o código clichê que associa os dados a formulários quando você arrasta e solta objetos de banco de **dados da janela Data Sources** . Esse tipo de fonte de dados pode ser:
 
-- Uma classe em um modelo do Entity Framework que está associado a algum tipo de banco de dados.
+- Uma classe em um modelo de Entity Framework que está associado a algum tipo de banco de dados.
 
-- Um conjunto de dados que está associado a algum tipo de banco de dados.
+- Um DataSet associado a algum tipo de banco de dados.
 
-- Uma classe que representa um serviço de rede como um serviço de dados do Windows Communication Foundation (WCF) ou um serviço REST.
+- Uma classe que representa um serviço de rede, como um serviço de dados Windows Communication Foundation (WCF) ou um serviço REST.
 
 - Uma classe que representa um serviço do SharePoint.
 
-- Uma classe ou uma coleção em sua solução.
+- Uma classe ou coleção em sua solução.
 
 > [!NOTE]
-> Se você não estiver usando recursos de vinculação de dados, conjuntos de dados, o Entity Framework, LINQ to SQL, WCF ou o SharePoint, o conceito de uma "fonte de dados" não se aplica. Basta conectar-se diretamente ao banco de dados usando os objetos SQLCommand e se comunicar diretamente com o banco de dados.
+> Se você não estiver usando recursos de vinculação de dados, DataSets, Entity Framework, LINQ to SQL, WCF ou SharePoint, o conceito de uma "fonte de dados" não se aplicará. Basta conectar-se diretamente ao banco de dados usando os objetos SQLCommand e se comunicar diretamente com o banco de dados.
 
-Você cria e edita fontes de dados usando o **Data Source Configuration Wizard** em um aplicativo Windows Forms ou Windows Presentation Foundation. Para o Entity Framework, primeiro crie as classes de entidade e, em seguida, iniciar o assistente, selecionando **Project** > **Add New Data Source** (descrito mais detalhadamente neste artigo).
+Você cria e edita fontes de dados usando o **Assistente de configuração de fonte de dados** em um aplicativo Windows Forms ou Windows Presentation Foundation. Para Entity Framework, primeiro crie suas classes de entidade e inicie o assistente selecionando **projeto**  > **Adicionar nova fonte de dados** (descrita em mais detalhes posteriormente neste artigo).
 
 ![Assistente para Configuração da Fonte de Dados](../data-tools/media/data-source-configuration-wizard.png)
 
 ## <a name="data-sources-window"></a>janela Fontes de Dados
 
-Depois de criar uma fonte de dados, ele aparece na **fontes de dados** janela da ferramenta.
+Depois de criar uma fonte de dados, ela aparece na janela de ferramentas de **fontes de dados** .
 
 > [!TIP]
-> Para abrir o **fontes de dados** , verifique se seu projeto está aberto e, em seguida, pressione **Shift**+**Alt**+**1!d**ou escolha **modo de exibição** > **Other Windows** > **fontes de dados**.
+> Para abrir a **janela fontes de dados** , verifique se o projeto está aberto e pressione **Shift** +**ALT** +**D** ou escolha **Exibir**  >  outras**fontes de dados**do**Windows**  > .
 
-Você pode arrastar uma fonte de dados do **fontes de dados** window em uma superfície de design do formulário ou controle. Isso faz com que o código clichê a ser gerado que exibe os dados do armazenamento de dados.
+Você pode arrastar uma fonte de dados da janela **fontes de dados** para um controle ou superfície de design de formulário. Isso faz com que o código clichê seja gerado, exibindo os dados do armazenamento de dados.
 
-A ilustração a seguir mostra um conjunto de dados foi descartado em um formulário do Windows. Se você selecionar **F5** no aplicativo, os dados do banco de dados subjacente é exibida nos controles do formulário.
+A ilustração a seguir mostra um conjunto de um DataSet que foi descartado em um formulário do Windows. Se você selecionar **F5** no aplicativo, os dados do banco de dado subjacente aparecerão nos controles do formulário.
 
-![Operação de arrastar do código-fonte de dados](../data-tools/media/raddata-data-source-drag-operation.png)
+![Operação de arrastar da fonte de dados](../data-tools/media/raddata-data-source-drag-operation.png)
 
-## <a name="data-source-for-a-database-or-a-database-file"></a>Fonte de dados para um banco de dados ou um arquivo de banco de dados
+## <a name="data-source-for-a-database-or-a-database-file"></a>Fonte de dados para um banco de dado ou um arquivo de banco
 
-Você pode criar um conjunto de dados ou um modelo do Entity Framework para usar como uma fonte de dados para um banco de dados ou arquivo de banco de dados.
+Você pode criar um conjunto de dados ou um modelo de Entity Framework para usar como uma fonte de dado para um banco de dados ou arquivo de banco de dados.
 
 ### <a name="dataset"></a>Conjunto de dados
 
-Para criar um conjunto de dados como uma fonte de dados, execute as **Data Source Configuration Wizard** selecionando **Project** > **Add New Data Source**. Escolha o **banco de dados** fonte de dados de tipo e siga os prompts para especificar uma conexão de banco de dados novo ou existente, ou um arquivo de banco de dados.
+Para criar um DataSet como uma fonte de dados, execute o **Assistente de configuração da fonte de dados** selecionando **projeto**  > **Adicionar nova fonte de dados**. Escolha o tipo de fonte de dados **Database** e siga os prompts para especificar uma conexão de banco de dado nova ou existente, ou um arquivo de banco de dados.
 
 ### <a name="entity-classes"></a>Classes de entidade
 
-Para criar um modelo do Entity Framework como uma fonte de dados:
+Para criar um modelo de Entity Framework como uma fonte de dados:
 
-1. Execute o **Assistente de modelo de dados de entidade** para criar as classes de entidade. Selecione **Project** > **Adicionar Novo Item** > **modelo de dados de entidade ADO.NET**.
+1. Execute o **Assistente de modelo de dados de entidade** para criar as classes de entidade. Selecione **projeto**  > **adicionar novo Item**  > **ADO.NET modelo de dados de entidade**.
 
-   ![Novo item de projeto de modelo do Entity Framework](../data-tools/media/raddata-new-entity-framework-model-project-item.png)
+   ![Novo item de projeto de modelo de Entity Framework](../data-tools/media/raddata-new-entity-framework-model-project-item.png)
 
-1. Escolha o método que você deseja gerar o modelo por.
+1. Escolha o método pelo qual você deseja gerar o modelo.
 
-   ![Assistente de modelo de dados de entidade](../data-tools/media/raddata-entity-data-model-wizard.png)
+   ![Assistente de Modelo de Dados de Entidade](../data-tools/media/raddata-entity-data-model-wizard.png)
 
-1. Adicione o modelo como uma fonte de dados. As classes geradas aparecem na **Data Source Configuration Wizard** quando você escolhe a **objetos** categoria.
+1. Adicione o modelo como uma fonte de dados. As classes geradas aparecem no **Assistente de configuração da fonte de dados** quando você escolhe a categoria **objetos** .
 
-   ![Assistente de configuração de fonte de dados com Classes de entidade](../data-tools/media/raddata-data-source-configuration-wizard-with-entity-classes.png)
+   ![Assistente de configuração de fonte de dados com classes de entidade](../data-tools/media/raddata-data-source-configuration-wizard-with-entity-classes.png)
 
 ## <a name="data-source-for-a-service"></a>Fonte de dados para um serviço
 
-Para criar uma fonte de dados de um serviço, execute as **Data Source Configuration Wizard** e escolha o **Service** tipo de fonte de dados. Isso é apenas um atalho para o **adicionar referência de serviço** caixa de diálogo, você também pode acessar clicando com o projeto no **Gerenciador de soluções** e selecionando **adicionar referência de serviço**.
+Para criar uma fonte de dados de um serviço, execute o **Assistente de configuração de fonte de dados** e escolha o tipo de fonte de dados de **serviço** . Esse é apenas um atalho para a caixa de diálogo **Adicionar referência de serviço** , que você também pode acessar clicando com o botão direito do mouse no projeto em **Gerenciador de soluções** e selecionando **Adicionar referência de serviço**.
 
-Quando você cria uma fonte de dados de um serviço, o Visual Studio adiciona uma referência de serviço ao seu projeto. Visual Studio também cria objetos de proxy que correspondem aos objetos que o serviço retorna. Por exemplo, um serviço que retorna um conjunto de dados é representado no seu projeto como um conjunto de dados; um serviço que retorna que um tipo específico é representado no seu projeto como o tipo retornado.
+Quando você cria uma fonte de dados de um serviço, o Visual Studio adiciona uma referência de serviço ao seu projeto. O Visual Studio também cria objetos proxy que correspondem aos objetos que o serviço retorna. Por exemplo, um serviço que retorna um conjunto de um DataSet é representado em seu projeto como um conjunto de um. um serviço que retorna um tipo específico é representado em seu projeto como o tipo retornado.
 
-Você pode criar uma fonte de dados entre os seguintes tipos de serviços:
+Você pode criar uma fonte de dados dos seguintes tipos de serviços:
 
 - [WCF Data Services](/dotnet/framework/data/wcf/wcf-data-services-overview)
 
@@ -93,25 +93,25 @@ Você pode criar uma fonte de dados entre os seguintes tipos de serviços:
 - Serviços da Web
 
     > [!NOTE]
-    > Os itens que aparecem na **fontes de dados** janela são dependentes dos dados que o serviço retorna. Alguns serviços podem não fornecer informações suficientes para o **Assistente de Configuração de Fonte de Dados** criar objetos associáveis. Por exemplo, se o serviço retorna um conjunto de dados não tipado, nenhum item aparecerá na **fontes de dados** janela quando você concluir o assistente. Isso ocorre porque os conjuntos de dados não tipados não fornecem um esquema e, portanto, o assistente não tem informações suficientes para criar a fonte de dados.
+    > Os itens que aparecem na janela **Data Sources** são dependentes dos dados que o serviço retorna. Alguns serviços podem não fornecer informações suficientes para o **Assistente de Configuração de Fonte de Dados** criar objetos associáveis. Por exemplo, se o serviço retornar um conjunto de dados não tipado, nenhum item aparecerá na janela **fontes de dados** quando você concluir o assistente. Isso ocorre porque os conjuntos de dados não tipados não fornecem um esquema e, portanto, o assistente não tem informações suficientes para criar a fonte de dados.
 
 ## <a name="data-source-for-an-object"></a>Fonte de dados para um objeto
 
-Você pode criar uma fonte de dados de qualquer objeto que expõe uma ou mais propriedades públicas executando o **Data Source Configuration Wizard** e, em seguida, selecionando a **objeto** tipo de fonte de dados. Todas as propriedades públicas de um objeto são exibidas na **fontes de dados** janela. Se você estiver usando o Entity Framework e gerou um modelo, isso é onde você pode encontrar as classes de entidade que são as fontes de dados para seu aplicativo.
+Você pode criar uma fonte de dados de qualquer objeto que expõe uma ou mais propriedades públicas executando o **Assistente de configuração da fonte de dados** e selecionando o tipo de fonte de dados do **objeto** . Todas as propriedades públicas de um objeto são exibidas na janela **fontes de dados** . Se você estiver usando Entity Framework e tiver gerado um modelo, é aqui que você encontrará as classes de entidade que são as fontes de dados para seu aplicativo.
 
-Sobre o **selecione os objetos de dados** página, expanda os nós na exibição de árvore para localizar os objetos que você deseja associar a. O modo de exibição de árvore contém nós de seu projeto e para assemblies e outros projetos que são referenciados pelo seu projeto.
+Na página **selecionar os objetos de dados** , expanda os nós na exibição de árvore para localizar os objetos que você deseja associar. O modo de exibição de árvore contém nós para seu projeto e para assemblies e outros projetos que são referenciados por seu projeto.
 
-Se você deseja associar a um objeto em um assembly ou projeto que não aparece na exibição de árvore, clique em **adicionar referência** e usar o **caixa de diálogo Adicionar referência** para adicionar uma referência ao assembly ou projeto. Depois de adicionar a referência, o assembly ou projeto é adicionado à exibição em árvore.
-
-> [!NOTE]
-> Você precisará criar o projeto que contém os objetos antes dos objetos aparecem na exibição de árvore.
+Se você quiser associar a um objeto em um assembly ou projeto que não é exibido no modo de exibição de árvore, clique em **Adicionar referência** e use a **caixa de diálogo Adicionar referência** para adicionar uma referência ao assembly ou ao projeto. Depois de adicionar a referência, o assembly ou projeto é adicionado ao modo de exibição de árvore.
 
 > [!NOTE]
-> Para dar suporte à vinculação de dados de arrastar e soltar, objetos que implementam o <xref:System.ComponentModel.ITypedList> ou <xref:System.ComponentModel.IListSource> interface deve ter um construtor padrão. Caso contrário, o Visual Studio não é possível instanciar o objeto de fonte de dados, e ele exibirá um erro quando você arrasta o item para a superfície de design.
+> Talvez seja necessário compilar o projeto que contém os objetos antes que os objetos apareçam no modo de exibição de árvore.
+
+> [!NOTE]
+> Para dar suporte à vinculação de dados do tipo "arrastar e soltar", os objetos que implementam a interface <xref:System.ComponentModel.ITypedList> ou <xref:System.ComponentModel.IListSource> devem ter um construtor padrão. Caso contrário, o Visual Studio não pode instanciar o objeto de fonte de dados e ele exibirá um erro quando você arrastar o item para a superfície de design.
 
 ## <a name="data-source-for-a-sharepoint-list"></a>Fonte de dados para uma lista do SharePoint
 
-Você pode criar uma fonte de dados de uma lista do SharePoint, executando o **Data Source Configuration Wizard** e selecionando o **SharePoint** tipo de fonte de dados. SharePoint expõe os dados por meio do WCF Data Services, portanto, criando uma fonte de dados do SharePoint é o mesmo que criar uma fonte de dados de um serviço. Selecionando o **SharePoint** item o **Data Source Configuration Wizard** abre o **Add Service Reference** caixa de diálogo, em que você se conectar ao serviço de dados do SharePoint Por que aponta para o servidor do SharePoint. Isso requer o SDK do SharePoint.
+Você pode criar uma fonte de dados de uma lista do SharePoint executando o **Assistente de configuração da fonte de dados** e selecionando o tipo de fonte de dados do **SharePoint** . O SharePoint expõe dados por meio de WCF Data Services, portanto, criar uma fonte de dados do SharePoint é o mesmo que criar uma fonte de dados de um serviço. A seleção do item do **SharePoint** no **Assistente de configuração da fonte de dados** abre a caixa de diálogo **Adicionar referência de serviço** , em que você se conecta ao serviço de dados do SharePoint apontando para o servidor do SharePoint. Isso requer o SDK do SharePoint.
 
 ## <a name="see-also"></a>Consulte também
 

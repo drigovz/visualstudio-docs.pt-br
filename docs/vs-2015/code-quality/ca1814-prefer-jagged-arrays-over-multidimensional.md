@@ -1,5 +1,5 @@
 ---
-title: 'CA1814: Prefira matrizes denteadas multidimensionais | Microsoft Docs'
+title: 'CA1814: prefira matrizes denteadas em multidimensionais | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,24 +12,24 @@ helpviewer_keywords:
 - CA1814
 ms.assetid: b1ccf563-2ec8-42e5-b89c-731a9de1ea1d
 caps.latest.revision: 16
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 73b20ef9a93e59f3fae30407deda8d21befc57f5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f0ac183321bd2a3070b1f1ddc54402b74c8fb823
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58928673"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72668413"
 ---
-# <a name="ca1814-prefer-jagged-arrays-over-multidimensional"></a>CA1814: Preferir matrizes denteadas a matrizes multidimensionais
+# <a name="ca1814-prefer-jagged-arrays-over-multidimensional"></a>CA1814: preferir matrizes denteadas em relação às multidimensionais
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |NomeDoTipo|PreferJaggedArraysOverMultidimensional|
 |CheckId|CA1814|
-|Categoria|Microsoft.Performance|
+|Categoria|Microsoft. performance|
 |Alteração Significativa|Quebra|
 
 ## <a name="cause"></a>Causa
@@ -42,10 +42,10 @@ ms.locfileid: "58928673"
  Para corrigir uma violação dessa regra, altere a matriz multidimensional para uma matriz denteada.
 
 ## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos
- Suprima um aviso nessa regra, se a matriz multidimensional não perde espaço.
+ Suprimir um aviso dessa regra se a matriz multidimensional não perder espaço.
 
 ## <a name="example"></a>Exemplo
- O exemplo a seguir mostra declarações de matrizes denteadas e multidimensionais.
+ O exemplo a seguir mostra declarações para matrizes denteadas e multidimensionais.
 
  [!code-csharp[FxCop.Performance.JaggedArrays#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Performance.JaggedArrays/cs/FxCop.Performance.JaggedArrays.cs#1)]
  [!code-vb[FxCop.Performance.JaggedArrays#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Performance.JaggedArrays/vb/FxCop.Performance.JaggedArrays.vb#1)]

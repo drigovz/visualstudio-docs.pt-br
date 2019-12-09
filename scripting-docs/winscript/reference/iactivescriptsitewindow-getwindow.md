@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptSiteWindow::GetWindow | Microsoft Docs
+title: 'IActiveScriptSiteWindow:: GetWindow | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7b6efa066765339375a8315695aa9c1de2f9c46b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d8263db447c7692ec7b0982127d63b4bea588a4b
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62992061"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574348"
 ---
 # <a name="iactivescriptsitewindowgetwindow"></a>IActiveScriptSiteWindow::GetWindow
 Recupera o identificador para uma janela que pode atuar como o proprietário de uma janela pop-up que o mecanismo de script deve exibir.  
@@ -37,13 +37,13 @@ HRESULT GetWindow(
   
 #### <a name="parameters"></a>Parâmetros  
  `phwnd`  
- [out] Endereço de uma variável que recebe o identificador de janela.  
+ fora Endereço de uma variável que recebe o identificador de janela.  
   
-## <a name="return-value"></a>Valor de retorno  
- Retorna `S_OK` se for bem-sucedido, ou `E_FAIL` se ocorreu um erro.  
+## <a name="return-value"></a>Valor retornado  
+ Retorna `S_OK` se tiver êxito ou `E_FAIL` se ocorreu um erro.  
   
 ## <a name="remarks"></a>Comentários  
- Esse método é semelhante ao `IOleWindow::GetWindow` método.  
+ Esse método é semelhante ao método `IOleWindow::GetWindow`.  
   
 ## <a name="see-also"></a>Consulte também  
  [IActiveScriptSiteWindow](../../winscript/reference/iactivescriptsitewindow.md)

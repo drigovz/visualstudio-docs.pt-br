@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugObject2::CreateAlias method
 ms.assetid: 54a05920-5d13-4f67-962b-d1a7f013dff9
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 226d584a2773a342b8247ff337e686be2da6bf9b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: efab749b7850cc3c7e3a29a62240ce9502f99843
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62843029"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66317405"
 ---
 # <a name="idebugobject2createalias"></a>IDebugObject2::CreateAlias
 Cria uma ID exclusiva ou um alias para esse objeto ou retorna um alias existente.
@@ -36,10 +39,9 @@ int CreateAlias(
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `ppAlias`
-
- [out] O alias de novo (ou existente).
+## <a name="parameters"></a>Parâmetros
+`ppAlias`\
+[out] O alias de novo (ou existente).
 
 ## <a name="return-value"></a>Valor de retorno
  Se for bem-sucedido, retornará S_OK; Caso contrário, retornará um código de erro.

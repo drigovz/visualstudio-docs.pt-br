@@ -11,12 +11,12 @@ ms.assetid: 1313adb4-add4-4e74-90e2-f4be522f5259
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 98b3892d10b003d6236ae9ccfbebb83a602a5877
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: cde3b86e19788c41df6e8f1c79a6bf829f491170
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58922862"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675254"
 ---
 # <a name="visual-studio-command-table-vsct-files"></a>Arquivos .Vsct (Visual Studio Command Table)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,14 +29,14 @@ Um arquivo de configuração da tabela de comando é um arquivo de texto que des
  [Projetar arquivos da tabela de comandos XML (.Vsct)](../../extensibility/internals/designing-xml-command-table-dot-vsct-files.md)  
  Descreve como criar arquivos. VSCT.  
   
- [Como: Criar um. Arquivo VSCT](../../extensibility/internals/how-to-create-a-dot-vsct-file.md)  
+ [Como: criar um arquivo .Vsct](../../extensibility/internals/how-to-create-a-dot-vsct-file.md)  
  Compara os métodos para a criação de um arquivo. VSCT. Descreve o processo de criação manual de um novo arquivo. VSCT.  
   
 ## <a name="related-sections"></a>Seções relacionadas  
  [Referência do esquema XML do VSCT](../../extensibility/vsct-xml-schema-reference.md)  
  Fornece detalhes sobre cada seção do arquivo de configuração do XML do comando tabela.  
   
- [Configuração da tabela de comando (. Arquivos CTC)](http://msdn.microsoft.com/3413dda1-f372-4669-bcf0-c64d3463842c)  
+ [Configuração da tabela de comando (. Arquivos CTC)](https://msdn.microsoft.com/3413dda1-f372-4669-bcf0-c64d3463842c)  
  Apresenta uma visão geral do formato de arquivo. ctc preterido.  
   
  [Como os VSPackages adicionam elementos da interface do usuário](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)  

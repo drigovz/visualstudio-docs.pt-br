@@ -1,18 +1,18 @@
 ---
 title: Arquivo de inclusão
-description: incluir arquivo
+description: Arquivo de inclusão
 ms.custom: include file
 author: ghogen
 ms.author: ghogen
 ms.date: 11/15/2016
 ms.topic: include
 manager: jillfra
-ms.openlocfilehash: d16cdc30788ad8b05f5e794241be2f4b3fc5dba6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d71f84899bc3d49b11c5e28c1298364505f63367
+ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63767692"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "70197090"
 ---
 > [!Note]
-> Este artigo se aplica ao Visual Studio 2015. Se você estiver procurando a documentação mais recente do Visual Studio, use o seletor de versão na parte superior esquerda. É recomendável atualizar para o Visual Studio 2019. [Baixe-o aqui](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)
+> Este artigo se aplica ao Visual Studio 2015. Se você estiver procurando a documentação mais recente do Visual Studio, use o seletor de versão na parte superior esquerda. É recomendável atualizar para o Visual Studio 2019. [Baixe-o aqui](https://visualstudio.microsoft.com/downloads)

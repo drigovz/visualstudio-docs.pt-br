@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - signature help/parameter info
 ms.assetid: 4a6a884b-5730-4b54-9264-99684f5b523c
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 89d81ee2e860dead62352cc14cef95e21536c29d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 403009367f6cdf8a9fd1ebb750ee9bb020690685
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62965161"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66312413"
 ---
 # <a name="walkthrough-display-signature-help"></a>Passo a passo: Exibir a Ajuda de assinatura
 Ajuda da assinatura (também conhecido como *informações de parâmetro*) exibe a assinatura de um método em uma dica de ferramenta quando um usuário digita o caractere de início da lista de parâmetro (normalmente um parêntese de abertura). Como um parâmetro e o separador de parâmetro (geralmente uma vírgula) são digitadas, a dica de ferramenta é atualizada para mostrar o próximo parâmetro em negrito. Você pode definir a Ajuda de assinatura das seguintes maneiras: no contexto de um serviço de linguagem, definir sua própria extensão de nome de arquivo e o tipo de conteúdo e exibir a Ajuda de assinatura para apenas esse tipo ou exibir a Ajuda de assinatura para um tipo de conteúdo existente (por exemplo, "texto"). Este passo a passo mostra como exibir a Ajuda de assinatura para o tipo de conteúdo "text".

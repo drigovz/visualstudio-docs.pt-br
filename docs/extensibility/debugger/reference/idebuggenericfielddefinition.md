@@ -1,45 +1,43 @@
 ---
 title: IDebugGenericFieldDefinition | Microsoft Docs
-ms.date: 11/15/2016
-ms.prod: visual-studio-dev14
-ms.technology: vs-ide-sdk
+ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - IDebugGenericFieldDefinition interface
 ms.assetid: b5a853b7-221e-4d62-8948-07423089d75d
-caps.latest.revision: 8
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
-ms.openlocfilehash: ea197cf5b6207117007c5d6d95b742e3a892223b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.workload:
+- vssdk
+ms.openlocfilehash: 2887333789a9a4eae89a9f3f7538cf5b29ba02e7
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62919161"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66351246"
 ---
 # <a name="idebuggenericfielddefinition"></a>IDebugGenericFieldDefinition
-[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+Representa a definição de um campo para um tipo genérico do código gerenciado.
 
-Representa a definição de um campo para um tipo genérico do código gerenciado.  
-  
-## <a name="syntax"></a>Sintaxe  
-  
-```  
-IDebugGenericFieldDefinition : IUnknown  
-```  
-  
-## <a name="methods"></a>Métodos  
- Essa interface implementa os métodos a seguir:  
-  
-|Método|Descrição|  
-|------------|-----------------|  
-|[ConstructInstantiation](../../../extensibility/debugger/reference/idebuggenericfielddefinition-constructinstantiation.md)|Constrói uma instância do campo considerando uma matriz de argumentos de tipo.|  
-|[GetFormalTypeParams](../../../extensibility/debugger/reference/idebuggenericfielddefinition-getformaltypeparams.md)|Recupera os parâmetros de tipo dado o número de parâmetros.|  
-|[TypeParamCount](../../../extensibility/debugger/reference/idebuggenericfielddefinition-typeparamcount.md)|Recupera o número de parâmetros de tipo associado ao campo genérico.|  
-  
-## <a name="requirements"></a>Requisitos  
- Cabeçalho: Sh.h  
-  
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
-  
+## <a name="syntax"></a>Sintaxe
+
+```
+IDebugGenericFieldDefinition : IUnknown
+```
+
+## <a name="methods"></a>Métodos
+ Essa interface implementa os métodos a seguir:
+
+|Método|Descrição|
+|------------|-----------------|
+|[ConstructInstantiation](../../../extensibility/debugger/reference/idebuggenericfielddefinition-constructinstantiation.md)|Constrói uma instância do campo considerando uma matriz de argumentos de tipo.|
+|[GetFormalTypeParams](../../../extensibility/debugger/reference/idebuggenericfielddefinition-getformaltypeparams.md)|Recupera os parâmetros de tipo dado o número de parâmetros.|
+|[TypeParamCount](../../../extensibility/debugger/reference/idebuggenericfielddefinition-typeparamcount.md)|Recupera o número de parâmetros de tipo associado ao campo genérico.|
+
+## <a name="requirements"></a>Requisitos
+ Cabeçalho: Sh.h
+
+ Namespace: Microsoft.VisualStudio.Debugger.Interop
+
  Assembly: Microsoft.VisualStudio.Debugger.Interop.dll

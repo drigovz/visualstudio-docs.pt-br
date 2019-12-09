@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - Settings page in Project Designer
 - Project Designer, Settings page
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d7422b87d0f812de2d99d59c2932e9aa2b9e6315
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 11f6f787d3799813aa526395a7137fd68e5c573d
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62989957"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72645258"
 ---
 # <a name="settings-page-project-designer"></a>Página de configurações, Designer de Projeto
 
@@ -57,7 +57,7 @@ Para projetos do Visual C#, o modificador de acesso pode ser **Interno** ou **P�
 
 Para projetos do Visual Basic, o modificador de acesso pode ser **Amigo** ou **Público**.
 
-Por padrão, a configuração é **Interno** em C# e **Amigo** em Visual Basic. Quando o Visual Studio gera classes auxiliares como **Interno** ou **Amigo**, os aplicativos executáveis (*.exe*) não podem acessar os recursos e as configurações que você adiciona às bibliotecas de classes (arquivos *.dll*). Se você precisar compartilhar recursos e configurações de uma biblioteca de classes, defina o modificador de acesso como **Público**.
+Por padrão, a configuração é **Interno** em C# e **Amigo** em Visual Basic. Quando o Visual Studio gera classes auxiliares como **Interno** ou **Amigo**, os aplicativos executáveis ( *.exe*) não podem acessar os recursos e as configurações que você adiciona às bibliotecas de classes (arquivos *.dll*). Se você precisar compartilhar recursos e configurações de uma biblioteca de classes, defina o modificador de acesso como **Público**.
 
 Para obter mais informações sobre as classes auxiliares de configurações, confira [Gerenciar configurações de aplicativo](../managing-application-settings-dotnet.md).
 
@@ -81,7 +81,7 @@ As configurações no escopo do aplicativo, como as cadeias de conexão, são as
 
 As configurações no escopo do usuário, como fontes do sistema, devem ser usadas para as preferências do usuário. Os usuários podem alterá-las no tempo de execução.
 
-**Valor**
+**Value**
 
 Os dados ou o valor associado à configuração de aplicativo. Por exemplo, se a configuração for uma fonte, seu valor poderá ser **Verdana, 9.75pt, style=Bold**.
 

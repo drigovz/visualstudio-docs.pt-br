@@ -1,5 +1,5 @@
 ---
-title: IDebugFormatter::GetStringForVarType | Microsoft Docs
+title: 'IDebugFormatter:: GetStringForVarType | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3d83df97ac9cb6c38d989470b71da93aceb5d50b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b9b498f5b37a9fc34b0926d9c0a5601d89dde7c7
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62979208"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576354"
 ---
 # <a name="idebugformattergetstringforvartype"></a>IDebugFormatter::GetStringForVarType
-Retorna uma cadeia de caracteres que representa o valor VARTYPE especificado.  
+Retorna uma cadeia de caracteres que representa o valor de VARTYPE fornecido.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -39,15 +39,15 @@ HRESULT GetStringForVarType(
   
 #### <a name="parameters"></a>Parâmetros  
  `vt`  
- [in] VARTYPE para ser representado como uma cadeia de caracteres.  
+ no VARTYPE para representar como uma cadeia de caracteres.  
   
  `ptdescArrayType`  
- [in] Matriz de estruturas que descreve os tipos.  
+ no Matriz de estruturas que descreve os tipos.  
   
  `pbstr`  
- [out] Cadeia de caracteres que representa `vt`.  
+ fora Cadeia de caracteres que representa `vt`.  
   
-## <a name="return-value"></a>Valor de retorno  
+## <a name="return-value"></a>Valor retornado  
  O método retorna um `HRESULT`. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.  
   
 |Valor|Descrição|  
@@ -55,7 +55,7 @@ HRESULT GetStringForVarType(
 |`S_OK`|O método foi bem-sucedido.|  
   
 ## <a name="remarks"></a>Comentários  
- O método retorna uma cadeia de caracteres que representa o valor VARTYPE especificado.  
+ O método retorna uma cadeia de caracteres que representa o valor de VARTYPE fornecido.  
   
 ## <a name="see-also"></a>Consulte também  
  [Interface IDebugFormatter](../../winscript/reference/idebugformatter-interface.md)

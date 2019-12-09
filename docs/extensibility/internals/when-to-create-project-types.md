@@ -5,59 +5,59 @@ ms.topic: conceptual
 helpviewer_keywords:
 - project types, conditions for creating
 ms.assetid: 26adc860-ee4a-4f5c-95e1-e41b207dd7e6
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: eaf8982afb01ee07eb8c2d672f351c6e917620a6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ff29843965c220c505266a9cd973e5695c0b9dab
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62907594"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72721564"
 ---
 # <a name="when-to-create-project-types"></a>Quando criar tipos de projeto
-Criar um novo tipo de projeto oferece uma base para a personalização [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] para seus usuários. No entanto, criar um novo tipo de projeto não é necessário para todos os [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] personalizações. As diretrizes a seguir devem ajudá-lo a determinar se um novo tipo de projeto é necessário para seu cenário.
+A criação de um novo tipo de projeto fornece uma base para personalizar [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] para seus usuários. No entanto, a criação de um novo tipo de projeto não é necessária para todas as [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] personalizações. As diretrizes a seguir devem ajudá-lo a determinar se um novo tipo de projeto é necessário para seu cenário.
 
 ## <a name="create-a-new-project-type"></a>Criar um novo tipo de projeto
- Você deve criar um tipo de projeto se você quiser personalizar [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] para atuar em uma ou mais das seguintes maneiras:
+ Você deve criar um tipo de projeto se desejar personalizar [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] para atuar em uma ou mais das seguintes maneiras:
 
-- Participa na compilação, implantar, configurações e controle de origem.
+- Participe de compilação, implantação, configurações e controle do código-fonte.
 
-- Oferecem suporte à depuração.
+- Oferecer suporte à depuração.
 
 - Exibir itens de projeto no **Gerenciador de soluções**.
 
-- Use o **Abrir projeto** ou **novo projeto** caixa de diálogo.
+- Use a caixa de diálogo **Abrir projeto** ou **novo projeto** .
 
-- Suporte a aninhamento de projeto.
+- Suporte a aninhamento de projetos.
 
 ## <a name="extend-an-existing-project-type"></a>Estender um tipo de projeto existente
- Você talvez queira criar um novo tipo de projeto que pode usar [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] das seguintes maneiras para modificar ou estender o comportamento de um tipo de projeto existente, por exemplo, modificando o processo de compilação para [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] projetos:
+ Talvez você queira criar um novo tipo de projeto que possa usar [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] das seguintes maneiras para modificar ou estender o comportamento de um tipo de projeto existente, por exemplo, modificar o processo de compilação para projetos de [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)]:
 
-- Trabalhar com vários arquivos como uma única unidade.
+- Trabalhe com vários arquivos como uma única unidade.
 
-- Exiba um único arquivo como uma hierarquia de subitens.
+- Exibir um único arquivo como uma hierarquia de subitens.
 
-- Exiba um contexto de comando em torno de editores.
+- Exiba um contexto de comando em volta de editores.
 
-- Exiba um contexto de serviço para os editores.
+- Exibir um contexto de serviço para editores.
 
 ## <a name="use-an-existing-project-type"></a>Usar um tipo de projeto existente
- Criar um novo projeto, às vezes, não é necessário. A tabela a seguir mostra as tarefas que você não precisa criar um tipo de projeto para.
+ Às vezes, a criação de um novo projeto não é necessária. A tabela a seguir mostra as tarefas para as quais você não precisa criar um tipo de projeto.
 
 |Tarefa|Descrição|
 |----------|-----------------|
-|Manipulando comandos|Qualquer VSPackage pode lidar com comandos.|
-|Criação de um editor|Editores personalizados podem ser registrados. Para obter mais informações, consulte [editores e documentos Windows](https://msdn.microsoft.com/library/603625e1-62b6-413a-bc44-089346e166bc).|
-|Proprietário do windows|Você pode criar janelas de ferramenta e o documento sem adicionar um novo tipo de projeto.|
-|Expondo propriedades na janela Propriedades|Todos os objetos podem expor propriedades.|
+|Manipulando comandos|Qualquer VSPackage pode manipular comandos.|
+|Criando um editor|Editores personalizados podem ser registrados. Para obter mais informações, consulte [janelas de documentos e editores](https://msdn.microsoft.com/library/603625e1-62b6-413a-bc44-089346e166bc).|
+|Janelas proprietárias|Você pode criar as janelas de ferramentas e de documentos sem adicionar um novo tipo de projeto.|
+|Expondo Propriedades no janela Propriedades|Todos os objetos podem expor propriedades.|
 
 ## <a name="create-a-project-subtype"></a>Criar um subtipo de projeto
- Você pode usar os subtipos de projeto para estender um tipo de projeto gerenciado sem precisar criar um novo tipo de projeto. Subtipos de projeto usam agregação COM para estender projetos gerenciados escritos em Microsoft [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] ou [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]. Com a agregação de COM, você pode reutilizar grande parte da implementação do sistema de projeto gerenciado e ainda personalizar para um cenário específico por meio de agregação e o uso de interfaces de suporte. Para obter mais informações sobre os subtipos de projeto, consulte [subtipos do projeto](../../extensibility/internals/project-subtypes.md).
+ Você pode usar subtipos de projeto para estender um tipo de projeto gerenciado sem precisar criar um novo tipo de projeto. Os subtipos de projeto usam agregação COM para estender projetos gerenciados gravados no Microsoft [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] ou [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]. Com a agregação COM, você pode reutilizar grande parte da implementação do sistema de projeto gerenciado e ainda Personalizar para um cenário específico por meio da agregação e do uso de interfaces de suporte. Para obter mais informações sobre subtipos de projeto, consulte [subtipos de projeto](../../extensibility/internals/project-subtypes.md).
 
 ## <a name="see-also"></a>Consulte também
-- [Windows de documento e editores](https://msdn.microsoft.com/library/603625e1-62b6-413a-bc44-089346e166bc)
-- [Lista de verificação: criação de novos tipos de projeto](../../extensibility/internals/checklist-creating-new-project-types.md)
+- [Documentar janelas e editores](https://msdn.microsoft.com/library/603625e1-62b6-413a-bc44-089346e166bc)
+- [Lista de verificação: criar novos tipos de projeto](../../extensibility/internals/checklist-creating-new-project-types.md)
 - [Hierarquias no Visual Studio](../../extensibility/internals/hierarchies-in-visual-studio.md)

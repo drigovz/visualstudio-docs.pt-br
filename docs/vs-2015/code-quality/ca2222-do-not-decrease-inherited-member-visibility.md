@@ -1,5 +1,5 @@
 ---
-title: 'CA2222: Não diminuir a visibilidade de membro herdado | Microsoft Docs'
+title: 'CA2222: não diminua a visibilidade do membro herdada | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,34 +12,34 @@ helpviewer_keywords:
 - CA2222
 ms.assetid: 066c8675-381f-43cc-956c-d757cc494028
 caps.latest.revision: 16
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: ee6228359e84687023a713ee866ebfbb760b206b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3dda56e6980133b0e33893fbb814c4a3a7008c49
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58927480"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72656055"
 ---
-# <a name="ca2222-do-not-decrease-inherited-member-visibility"></a>CA2222: Não diminuir a visibilidade dos membros herdados
+# <a name="ca2222-do-not-decrease-inherited-member-visibility"></a>CA2222: não diminuir a visibilidade de membro herdada
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |NomeDoTipo|DoNotDecreaseInheritedMemberVisibility|
 |CheckId|CA2222|
-|Categoria|Microsoft.Usage|
-|Alteração Significativa|Não separável|
+|Categoria|Microsoft. Usage|
+|Alteração Significativa|Sem interrupção|
 
 ## <a name="cause"></a>Causa
- Um método privado em um tipo não selado tem uma assinatura que é idêntica a um método público declarado em um tipo base. O método particular não é final.
+ Um método particular em um tipo sem lacre tem uma assinatura que é idêntica a um método público declarado em um tipo base. O método particular não é final.
 
 ## <a name="rule-description"></a>Descrição da Regra
- Você não deve alterar o modificador de acesso para membros herdados. A alteração de um membro herdado para particular não impede que os chamadores acessem a implementação da classe base do método. Se o membro é privado e o tipo é sem lacre, a herança de tipos pode chamar a implementação de pública último do método na hierarquia de herança. Se você precisar alterar o modificador de acesso, o método deve ser marcado como final ou seu tipo deve ser lacrado para impedir que o método que está sendo substituído.
+ Você não deve alterar o modificador de acesso para membros herdados. A alteração de um membro herdado para particular não impede que os chamadores acessem a implementação da classe base do método. Se o membro for tornado privado e o tipo não for lacrado, a herança de tipos poderá chamar a última implementação pública do método na hierarquia de herança. Se você precisar alterar o modificador de acesso, o método deverá ser marcado como final ou seu tipo deve ser lacrado para impedir que o método seja substituído.
 
 ## <a name="how-to-fix-violations"></a>Como Corrigir Violações
- Para corrigir uma violação dessa regra, altere o acesso para ser não privado. Como alternativa, se sua linguagem de programação der suporte a ele, você pode tornar o método final.
+ Para corrigir uma violação dessa regra, altere o acesso para não privado. Como alternativa, se a linguagem de programação oferecer suporte a ela, você poderá tornar o método final.
 
 ## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos
  Não suprima um aviso nessa regra.

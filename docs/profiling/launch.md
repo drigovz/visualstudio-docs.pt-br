@@ -6,16 +6,17 @@ ms.assetid: f81bde5c-3394-4b79-a315-c2f6491689b3
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: c105f5176948271c832330f01d0d03d270e69a97
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 9834c10c58fb343de0707fa0b805586a6cdebcb3
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62995315"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778603"
 ---
-# <a name="launch"></a>Inicializar
+# <a name="launch"></a>Inicie o
 A opção **Inicializar** inicia o criador de perfil usando o método de amostragem e também inicia o aplicativo especificado.
 
  Para usar a opção **Inicializar**, você deve especificar o método de **Amostragem** na opção **Iniciar**.
@@ -36,7 +37,7 @@ VSPerfCmd.exe /Launch:AppName [Options]
 
  **GlobalOn** e **GlobalOff** Retoma (**GlobalOn**) ou pausa (**GlobalOff**) a criação de perfil, mas não encerra a sessão de criação de perfil.
 
- **ProcessOn:** `PID` e **ProcessOff**:`PID` Retoma (**ProcessOn**) ou pausa (**ProcessOff**) a criação de perfil para o processo especificado.
+ **Processo:** `PID` e **ProcessOff**:`PID` retoma a criação de perfil (**processize**) ou pausa (**ProcessOff**) para o processo especificado.
 
  **TargetCLR** Especifica a versão do CLR (Common Language Runtime) do .NET Framework a ser analisada quando mais de uma versão for carregada em uma sessão de criação de perfil. Por padrão, a primeira versão carregada é analisada.
 
@@ -45,14 +46,14 @@ VSPerfCmd.exe /Launch:AppName [Options]
 
  **TargetCLR** Inicia o aplicativo de linha de comando especificado em uma nova janela.
 
- **Args:** `ArgList` Especifica a lista de argumentos a serem passados para o aplicativo.
+ **Args:** `ArgList` especifica a lista de argumentos a serem passados para o aplicativo.
 
  **LineOff** Desabilita a coleta de dados de criação de perfil no nível de linha.
 
 ## <a name="sampling-options"></a>Opções de amostragem
  Uma das seguintes opções de intervalo de amostragem pode ser especificada na linha de comando **Inicializar**. O intervalo de amostragem padrão é 10.000.000 ciclos de relógio do processador.
 
- **Timer**[**:**`Cycles`]**PF**[**:**`Events`]**Sys**[**:**`Events`]**Contador**[**:**`Name`,`Reload`,`FriendlyName`]**GC**[:**alocação**&#124;**tempo de vida**] Especifica o número e o tipo de intervalo de amostragem.
+ **Timer**[ **:** `Cycles`]**PF**[ **:** `Events`]**Sys**[ **:** `Events`]**Contador**[ **:** `Name`,`Reload`,`FriendlyName`]**GC**[:**alocação**&#124;**tempo de vida**] Especifica o número e o tipo de intervalo de amostragem.
 
 - **Temporizador** – exemplifica cada ciclo de relógio do processador `Cycles` não interrompido. Se `Cycles` não for especificado, os 10.000.000 ciclos serão usados.
 

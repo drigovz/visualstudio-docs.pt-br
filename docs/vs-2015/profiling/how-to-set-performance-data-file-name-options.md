@@ -10,13 +10,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: faaa78d34c71d1f0b436b861ccb1ac4892267e9b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60057830"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68205792"
 ---
-# <a name="how-to-set-performance-data-file-name-options"></a>Como: Configurar opções de nome de arquivo de dados de desempenho
+# <a name="how-to-set-performance-data-file-name-options"></a>Como: Configurar as opções de nome de arquivo de dados de desempenho
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Por padrão, um arquivo de dados de criação de perfil (.vsp) é salvo usando a sintaxe a seguir:  

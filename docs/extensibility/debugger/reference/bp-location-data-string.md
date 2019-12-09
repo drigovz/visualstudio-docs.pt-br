@@ -7,17 +7,19 @@ f1_keywords:
 helpviewer_keywords:
 - BP_LOCATION_DATA_STRING structure
 ms.assetid: 445d6f3f-95b0-47ac-85e2-51b778240687
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 056b7efc01b9536184c3e443156e27e328bdd2b3
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+ms.openlocfilehash: cf8e2958f55ca13ab050302a24ad9e5ae185d81a
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56689090"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66353087"
 ---
 # <a name="bplocationdatastring"></a>BP_LOCATION_DATA_STRING
 Usada para definir pontos de interrupção de dados se baseiam em uma cadeia de caracteres que o usuário pode inserir do ambiente de desenvolvimento integrado (IDE).
@@ -34,13 +36,17 @@ typedef struct _BP_LOCATION_DATA_STRING {
 ```
 
 ## <a name="members"></a>Membros
-`pThread` O [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) objeto que representa o thread em que o ponto de interrupção ocorre.
+`pThread`\
+O [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) objeto que representa o thread em que o ponto de interrupção ocorre.
 
-`bstrContext` O contexto do ponto de interrupção dentro do código, geralmente, um nome de método ou função, como visto em uma pilha de chamadas.
+`bstrContext`\
+O contexto do ponto de interrupção dentro do código, geralmente, um nome de método ou função, como visto em uma pilha de chamadas.
 
-`bstrDataExpr` A cadeia de caracteres de dados que o usuário insere para definir o ponto de interrupção.
+`bstrDataExpr`\
+A cadeia de caracteres de dados que o usuário insere para definir o ponto de interrupção.
 
-`dwNumElements` O número de elementos na cadeia de caracteres de dados no qual o ponto de interrupção ocorre.
+`dwNumElements`\
+O número de elementos na cadeia de caracteres de dados no qual o ponto de interrupção ocorre.
 
 ## <a name="remarks"></a>Comentários
 Essa estrutura é um membro do [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) estrutura como parte de uma união.

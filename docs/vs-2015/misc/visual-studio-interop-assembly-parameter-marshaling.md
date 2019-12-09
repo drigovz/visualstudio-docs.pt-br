@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 89123eae-0fef-46d5-bd36-3d2a166b14e3
 caps.latest.revision: 24
 manager: jillfra
-ms.openlocfilehash: b0ad8fce0fc582b42cc64944677f7b680aa96541
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: ac95c40b356c542da323a3ea3744827087f2d840
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436519"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686919"
 ---
 # <a name="visual-studio-interop-assembly-parameter-marshaling"></a>Parâmetro de Assembly de interoperabilidade do Visual Studio de Marshaling
-Os VSPackages são escritos em código gerenciado pode ter que chamar ou ser chamado pelo código COM não gerenciado. Normalmente, os argumentos de método são transformados ou marshaling, automaticamente pelo marshaler de interoperabilidade. No entanto, às vezes, argumentos não podem ser transformados de uma maneira simples. Nesses casos, os parâmetros de protótipo do método de assembly de interoperabilidade são usados para corresponder ao máximo os parâmetros da função COM. Para obter mais informações, consulte [Marshaling de interoperabilidade](http://msdn.microsoft.com/library/115f7a2f-d422-4605-ab36-13a8dd28142a).  
+Os VSPackages são escritos em código gerenciado pode ter que chamar ou ser chamado pelo código COM não gerenciado. Normalmente, os argumentos de método são transformados ou marshaling, automaticamente pelo marshaler de interoperabilidade. No entanto, às vezes, argumentos não podem ser transformados de uma maneira simples. Nesses casos, os parâmetros de protótipo do método de assembly de interoperabilidade são usados para corresponder ao máximo os parâmetros da função COM. Para obter mais informações, consulte [Marshaling de interoperabilidade](https://msdn.microsoft.com/library/115f7a2f-d422-4605-ab36-13a8dd28142a).  
   
 ## <a name="general-suggestions"></a>Sugestões gerais  
   
@@ -123,7 +123,7 @@ else
  Métodos gerenciados que chamam as interfaces desse tipo devem obter o primeiro elemento da matriz [out]. Esse elemento pode ser tratado como se fosse um `retval` retornar valor de interface COM correspondente.  
   
 ## <a name="see-also"></a>Consulte também  
- [Marshaling de interoperabilidade](http://msdn.microsoft.com/a95fdb76-7c0d-409e-a77e-0349b1ea1490)   
- [Marshaling de interoperabilidade](http://msdn.microsoft.com/library/115f7a2f-d422-4605-ab36-13a8dd28142a)   
- [Solucionando problemas de interoperabilidade](http://msdn.microsoft.com/library/b324cc1e-b03c-4f39-aea6-6a6d5bfd0e37)   
+ [Marshaling de interoperabilidade](https://msdn.microsoft.com/a95fdb76-7c0d-409e-a77e-0349b1ea1490)   
+ [Marshaling de interoperabilidade](https://msdn.microsoft.com/library/115f7a2f-d422-4605-ab36-13a8dd28142a)   
+ [Solucionando problemas de interoperabilidade](https://msdn.microsoft.com/library/b324cc1e-b03c-4f39-aea6-6a6d5bfd0e37)   
  [VSPackages gerenciados](../misc/managed-vspackages.md)

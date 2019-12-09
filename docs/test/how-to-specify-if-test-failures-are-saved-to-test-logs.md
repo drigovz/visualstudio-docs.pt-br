@@ -6,19 +6,19 @@ helpviewer_keywords:
 - load tests, scenarios
 - load tests, logging
 ms.assetid: 08a7fe98-a7f7-4b8d-94a3-ec82b65a2aaf
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: ef80a10954e9cf58db04e46f11934ffd86974bea
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: cdae6abf3af71967357319addd755a31721053ca
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62786098"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653412"
 ---
-# <a name="how-to-specify-if-test-failures-are-saved-to-test-logs-using-the-load-test-editor"></a>Como: Especificar se as falhas de teste são salvas em logs de teste usando o Editor de Teste de Carga
+# <a name="how-to-specify-if-test-failures-are-saved-to-test-logs-using-the-load-test-editor"></a>Como especificar se as falhas de teste são salvas em logs de teste usando o Editor de Teste de Carga
 
-Depois de criar seu teste de carga com o **Novo Assistente de Teste de Carga**, você poderá usar o **Editor de Teste de Carga** para alterar as propriedades do teste de carga para que elas atendam às suas metas e necessidades de teste. Confira [Passo a passo: Criar e executar um teste de carga](../test/walkthrough-create-and-run-a-load-test.md). Você pode especificar se deseja que o log de teste seja salvo se um teste falhar em um teste de carga alterando a propriedade **Salvar log em caso de falha do teste**.
+Depois de criar seu teste de carga com o **Novo Assistente de Teste de Carga**, você poderá usar o **Editor de Teste de Carga** para alterar as propriedades do teste de carga para que elas atendam às suas metas e necessidades de teste. Consulte [Passo a passo: criar e executar um teste de carga](../test/walkthrough-create-and-run-a-load-test.md). Você pode especificar se deseja que o log de teste seja salvo se um teste falhar em um teste de carga alterando a propriedade **Salvar log em caso de falha do teste**.
 
 > [!NOTE]
 > Para obter uma lista completa das propriedades de configurações de execução e suas descrições, confira [Propriedades de configurações de execução de teste de carga](../test/load-test-run-settings-properties.md).
@@ -46,4 +46,4 @@ Depois de criar seu teste de carga com o **Novo Assistente de Teste de Carga**, 
 ## <a name="see-also"></a>Consulte também
 
 - [Editar cenários de teste de carga](../test/edit-load-test-scenarios.md)
-- [Passo a passo: Criar e executar um teste de carga](../test/walkthrough-create-and-run-a-load-test.md)
+- [Passo a passo: criar e executar um teste de carga](../test/walkthrough-create-and-run-a-load-test.md)

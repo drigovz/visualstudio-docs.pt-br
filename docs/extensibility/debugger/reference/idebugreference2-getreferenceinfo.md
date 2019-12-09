@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugReference2::GetReferenceInfo
 ms.assetid: ae611714-f114-4cf2-b5bb-37461e6ff289
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d0e6db00c6c09b52e635e141d9e9a18ff3df6466
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: c1ad9a3f23037a4413811e0d98304ceedf0620ac
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62869051"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66345641"
 ---
 # <a name="idebugreference2getreferenceinfo"></a>IDebugReference2::GetReferenceInfo
 Obtém o [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) estrutura que descreve uma referência. Reservado para uso futuro.
@@ -46,30 +49,24 @@ int GetReferenceInfo ( 
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `dwFields`
+## <a name="parameters"></a>Parâmetros
+`dwFields`\
+[in] Uma combinação de sinalizadores do [DEBUGREF_INFO_FLAGS](../../../extensibility/debugger/reference/debugref-info-flags.md) enumeração que determinam os campos a serem preenchidos na [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) estrutura.
 
- [in] Uma combinação de sinalizadores do [DEBUGREF_INFO_FLAGS](../../../extensibility/debugger/reference/debugref-info-flags.md) enumeração que determinam os campos a serem preenchidos na [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) estrutura.
+`nRadix`\
+[in] A base a ser usada na formatação de todas as informações numéricas.
 
- `nRadix`
+`dwTimeout`\
+[in] Tempo máximo, em milissegundos, para aguardar antes de retornar do método. Use `INFINITE` para aguardar indefinidamente.
 
- [in] A base a ser usada na formatação de todas as informações numéricas.
+`rgpArgs`\
+[in] Uma matriz de [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) objetos. Reservado para uso futuro; definido como um valor nulo.
 
- `dwTimeout`
+`dwArgCount`\
+[in] O número de argumentos de referência no `rgpArgs` matriz. Reservado para uso futuro; Defina como 0.
 
- [in] Tempo máximo, em milissegundos, para aguardar antes de retornar do método. Use `INFINITE` para aguardar indefinidamente.
-
- `rgpArgs`
-
- [in] Uma matriz de [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) objetos. Reservado para uso futuro; definido como um valor nulo.
-
- `dwArgCount`
-
- [in] O número de argumentos de referência no `rgpArgs` matriz. Reservado para uso futuro; Defina como 0.
-
- `pReferenceInfo`
-
- [out] Um [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) estrutura será preenchida com uma descrição da propriedade.
+`pReferenceInfo`\
+[out] Um [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) estrutura será preenchida com uma descrição da propriedade.
 
 ## <a name="return-value"></a>Valor de retorno
  Sempre retorna `E_NOTIMPL`.

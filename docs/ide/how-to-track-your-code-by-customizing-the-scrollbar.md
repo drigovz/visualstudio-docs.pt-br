@@ -2,19 +2,19 @@
 title: Modo de mapa e modo de barra da barra de rolagem
 ms.date: 09/25/2018
 ms.topic: conceptual
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 77f7db396b814eb9163c055b8fadb8793432acee
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 997f44fede7b31fe44b1e2ea28186ad52d39f443
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62548256"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72656575"
 ---
-# <a name="how-to-customize-the-scroll-bar"></a>Como: Personalizar a barra de rolagem
+# <a name="how-to-customize-the-scroll-bar"></a>Como: personalizar a barra de rolagem
 
 Quando se trabalha com longos arquivos de código, às vezes torna-se difícil manter o controle de onde está tudo no arquivo. É possível personalizar a barra de rolagem do editor de código para ter um panorama geral do que está acontecendo no código.
 
@@ -50,14 +50,14 @@ A barra de rolagem tem dois modos: o modo de barra e o modo de mapa.
 
 ### <a name="bar-mode"></a>Modo de barra
 
-O *modo de barra* exibe indicadores de anotação na barra de rolagem. Clicar na barra de rolagem rola a página para cima ou para baixo, mas não avança para aquele local no arquivo.
+O *modo de barra* exibe indicadores de anotação na barra de rolagem. Clicando na barra de rolagem é possível rolar a página para cima ou para baixo, mas não ir para aquele local no arquivo.
 
 ### <a name="map-mode"></a>Modo de mapa
 
-No *modo de mapa*, quando você clica em um local na barra de rolagem, o cursor avança para aquele local no arquivo em vez de simplesmente rolar para cima ou para baixo em uma página. As linhas de código são mostradas em miniatura na barra de rolagem. É possível escolher a largura da coluna do mapa selecionando um valor em **Visão geral do Código-fonte**. Para habilitar uma visualização maior do código quando você parar o ponteiro no mapa, selecione a opção **Mostrar Dica de Ferramenta de Visualização**. As regiões recolhidas ficam sombreadas de forma diferente e são expandidas quando você clica duas vezes nelas.
+No *modo de mapa*, quando você clica em um local na barra de rolagem, o cursor vai para aquele local no arquivo em vez de simplesmente rolar para cima ou para baixo em uma página. As linhas de código são mostradas em miniatura na barra de rolagem. É possível escolher a largura da coluna do mapa selecionando um valor em **Visão geral do Código-fonte**. Para habilitar uma visualização maior do código quando você parar o ponteiro no mapa, selecione a opção **Mostrar Dica de Ferramenta de Visualização**. As regiões recolhidas ficam sombreadas de forma diferente e são expandidas quando você clica duas vezes nelas.
 
 > [!TIP]
-> Você pode desabilitar a exibição de código em miniatura no modo de mapa definindo a opção **Visão geral do código-fonte** como **Desabilitada**. Se a opção **Mostrar dica de ferramenta de visualização** estiver selecionada, você ainda verá uma visualização do código nesse local ao passar o ponteiro do mouse sobre a barra de rolagem, e o cursor ainda avançará para esse local no arquivo quando você clicar.
+> Você pode desabilitar a exibição de código em miniatura no modo de mapa definindo a opção **Visão geral do código-fonte** como **Desabilitada**. Se a opção **Mostrar Dica de Ferramenta de Visualização** estiver selecionada, você ainda verá uma visualização do código nesse local ao passar o ponteiro do mouse sobre a barra de rolagem e, o cursor ainda o levará para esse local no arquivo quando você clicar.
 
 A imagem a seguir mostra o exemplo de pesquisa quando o modo de mapa está ativado e a largura está definida como **Média**:
 

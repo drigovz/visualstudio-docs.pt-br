@@ -1,5 +1,5 @@
 ---
-title: 'Como: Definir a sessão atual | Microsoft Docs'
+title: Como definir a sessão atual | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,16 +13,17 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: ad917a67ab03a4cb6c1e265ec2dafcbe6e2ee421
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 70f33888be5097d2682133cda363099bb815c5b0
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62823563"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778746"
 ---
-# <a name="how-to-set-the-current-session"></a>Como: Configurar a sessão atual
+# <a name="how-to-set-the-current-session"></a>Como definir a sessão atual
 
 Você pode abrir várias sessões de desempenho no **Gerenciador de Desempenho** e, em seguida, pode selecionar uma das sessões de desempenho visível para ser definida como a sessão atual.
 

@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fb3caa5574605864a0dd16b59b6f451530b8e631
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 007477d3f0de3767b0c5ef0af977f969505884ed
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62827794"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742305"
 ---
 # <a name="idiasessionfindacceleratorinlineesbyname"></a>IDiaSession::findAcceleratorInlineesByName
-Retorna uma enumeração de símbolos para quadros embutidos correspondente ao nome da função especificados em linha.
+Retorna uma enumeração de símbolos para quadros embutidos correspondentes ao nome da função embutida especificada.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -33,21 +33,21 @@ HRESULT findAcceleratorInlineeLinesByName ( 
 #### <a name="parameters"></a>Parâmetros
  `name`
 
-[in] O nome da função de item embutido a ser pesquisado.
+no O nome da função embutida a ser pesquisada.
 
  `option`
 
-[in] As opções de pesquisa de nome a ser usado ao pesquisar embutido quadros que correspondem aos `name`. Para obter mais informações, consulte [enumeração NameSearchOptions](../../debugger/debug-interface-access/namesearchoptions.md).
+no As opções de pesquisa de nome a serem usadas ao pesquisar quadros embutidos que correspondam a `name`. Para obter mais informações, consulte [Enumeração NameSearchOptions](../../debugger/debug-interface-access/namesearchoptions.md).
 
  `ppResult`
 
-[out] Um ponteiro para um `IDiaEnumSymbols` ponteiro de interface que é inicializado com o resultado.
+fora Um ponteiro para um ponteiro de interface `IDiaEnumSymbols` que é inicializado com o resultado.
 
-## <a name="return-value"></a>Valor de retorno
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários
- Essa função pesquisa itens embutidos somente em funções de stub do acelerador. Ele ignora os registros de procedimento de C++ nativos.
+ Essa função procura Inlines apenas nas funções de stub do acelerador. Ele ignora os registros C++ de procedimento nativo.
 
 ## <a name="see-also"></a>Consulte também
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)

@@ -23,12 +23,12 @@ caps.latest.revision: 25
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4f98441afbe8056fa01a11d7265447a293cd10fa
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: f1ec1c18fe92409a72994e4544215da01325d209
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446163"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687526"
 ---
 # <a name="project-settings-for--c-debug-configurations"></a>Definições do projeto para configurações de depuração do C#
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,10 +43,10 @@ Você pode alterar as configurações de projeto para uma configuração de depu
 |**Configuração**|**Descrição**|  
 |-----------------|---------------------|  
 |**Configuração**|Define o modo para compilar o aplicativo. Escolha entre **Ativo (depuração)**, **Depuração**, **Versão**, **Todas as Configurações**.|  
-|**Iniciar ação**|Esse grupo de controles especifica a ação que ocorrerá quando você escolhe Iniciar do menu Depurar.<br /><br /> -   **Iniciar projeto** é o padrão e inicia o projeto de inicialização da depuração. Para obter mais informações, consulte [escolhendo o projeto de inicialização](http://msdn.microsoft.com/222e3f32-a6fe-4941-bf37-6b2a921129fd).<br />-   **Iniciar programa externo** permite que você inicie e anexe a um programa que não faz parte de um projeto [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Para obter mais informações, consulte [anexar a um programa em execução](http://msdn.microsoft.com/636d0a52-4bfd-48d2-89ad-d7b9ca4dc4f4).<br />-   **Iniciar navegador na URL** permite que você depure um aplicativo Web.|  
+|**Iniciar ação**|Esse grupo de controles especifica a ação que ocorrerá quando você escolhe Iniciar do menu Depurar.<br /><br /> -   **Iniciar projeto** é o padrão e inicia o projeto de inicialização da depuração. Para obter mais informações, consulte [escolhendo o projeto de inicialização](https://msdn.microsoft.com/222e3f32-a6fe-4941-bf37-6b2a921129fd).<br />-   **Iniciar programa externo** permite que você inicie e anexe a um programa que não faz parte de um projeto [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Para obter mais informações, consulte [anexar a um programa em execução](https://msdn.microsoft.com/636d0a52-4bfd-48d2-89ad-d7b9ca4dc4f4).<br />-   **Iniciar navegador na URL** permite que você depure um aplicativo Web.|  
 |**Argumentos de linha de comando**|Especifica argumentos de linha de comando para o programa ser depurado. O nome do comando é o nome do programa especificado em Iniciar programa externo. Se Iniciar Ação for definida para iniciar URL, os argumentos de linha de comando não podem ser especificados.|  
 |**Diretório de trabalho**|Especifica o diretório de trabalho do programa que está sendo depurado. No [!INCLUDE[csprcs](../includes/csprcs-md.md)], o diretório de trabalho é o diretório a partir do qual o aplicativo é iniciado de \bin\debug por padrão.|  
-|**Usar computador remoto**|O nome de um computador remoto no qual o aplicativo executará para fins de depuração ou um [nome do servidor Msvsmon](http://msdn.microsoft.com/library/55b60ce7-834b-4e83-a10e-fe4248260a4c). O local do EXE no computador remoto é especificado pela propriedade Caminho da Saída na pasta Propriedades de Configuração, categoria Compilação. O local deve ser um diretório compartilhável no computador remoto.|  
+|**Usar computador remoto**|O nome de um computador remoto no qual o aplicativo executará para fins de depuração ou um [nome do servidor Msvsmon](https://msdn.microsoft.com/library/55b60ce7-834b-4e83-a10e-fe4248260a4c). O local do EXE no computador remoto é especificado pela propriedade Caminho da Saída na pasta Propriedades de Configuração, categoria Compilação. O local deve ser um diretório compartilhável no computador remoto.|  
 |**Habilitar depuração de código não gerenciado**|Permite depurar chamadas para código Win32 nativo (não gerenciado) a partir do seu aplicativo gerenciado.|  
 |**Habilitar depuração do SQL Server**|Permite depuração de objetos de banco de dados do SQL Server.|  
   

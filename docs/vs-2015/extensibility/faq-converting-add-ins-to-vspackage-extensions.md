@@ -52,7 +52,7 @@ Suplementos agora são preteridos. Para fazer uma nova extensão do Visual Studi
   
      Uma segunda instância do Visual Studio é exibida. A segunda instância é chamada de instância experimental e não poderá ter as mesmas configurações que a instância do Visual Studio que estiver usando para escrever código. Na primeira vez que executar a instância experimenta, será solicitado para entrar no VS Online e especificar o tema e o perfil.  
   
-     Sobre o **ferramentas** menu (na instância experimental), você verá um botão chamado **nome do meu comando**. Quando você escolhe esse botão, uma mensagem deverá aparecer: **Inside TestVSPackagePackage.MenuItemCallback()**.  
+     Sobre o **ferramentas** menu (na instância experimental), você verá um botão chamado **nome do meu comando**. Quando você escolhe esse botão, uma mensagem deverá aparecer: **Inside TestVSPackagePackage.MenuItemCallback()** .  
   
 ## <a name="BKMK_RunAddin"></a> Como posso executar meu código de suplemento em um VSPackage?  
  Código de suplemento geralmente é executado de uma entre duas maneiras:  

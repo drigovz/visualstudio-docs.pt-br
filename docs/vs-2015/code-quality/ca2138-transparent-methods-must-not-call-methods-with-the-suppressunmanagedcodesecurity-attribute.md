@@ -1,5 +1,5 @@
 ---
-title: 'CA2138: Métodos transparentes não devem chamar métodos com o atributo SuppressUnmanagedCodeSecurity | Microsoft Docs'
+title: 'CA2138: métodos Transparent não devem chamar métodos com o atributo SuppressUnmanagedCodeSecurity | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -8,17 +8,17 @@ f1_keywords:
 - CA2138
 ms.assetid: a14c4d32-f079-4f3a-956c-a1657cde0f66
 caps.latest.revision: 14
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 4e9a9e10f928efe6bcff6fb3d49c1b1cd7b1bd1c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 65e00d319bff3bbfd3c441c6b60ed8a703e69251
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58927795"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72654809"
 ---
-# <a name="ca2138-transparent-methods-must-not-call-methods-with-the-suppressunmanagedcodesecurity-attribute"></a>CA2138: Métodos transparentes não devem chamar métodos com o atributo SuppressUnmanagedCodeSecurity
+# <a name="ca2138-transparent-methods-must-not-call-methods-with-the-suppressunmanagedcodesecurity-attribute"></a>CA2138: os métodos transparentes não devem chamar métodos com o atributo SuppressUnmanagedCodeSecurity
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -29,15 +29,15 @@ ms.locfileid: "58927795"
 |Alteração Significativa|Quebra|
 
 ## <a name="cause"></a>Causa
- Um método de segurança transparente chama um método que é marcado com o <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute> atributo.
+ Um método transparente de segurança chama um método que é marcado com o atributo <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute>.
 
 ## <a name="rule-description"></a>Descrição da Regra
- Essa regra é acionada em qualquer método transparente chamado diretamente no código nativo, por exemplo, usando um por meio de um P/Invoke (invocação de plataforma) chamar. Métodos de interoperabilidade P/Invoke e COM que são marcados com o <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute> resultam em um LinkDemand que está sendo feito em relação ao método de chamada do atributo. Porque o código transparente de segurança não é possível atender a LinkDemands, o código também não é possível chamar métodos que são marcados com o atributo SuppressUnmanagedCodeSecurity ou métodos da classe que é marcado com o atributo SuppressUnmanagedCodeSecurity. O método irá falhar ou a demanda será convertida em uma demanda completa.
+ Essa regra é acionada em qualquer método transparente que chama diretamente em código nativo, por exemplo, usando uma chamada P/Invoke (Platform Invoke). Os métodos de interoperabilidade P/Invoke e COM que são marcados com o atributo <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute> resultam em um LinkDemand sendo feito em relação ao método de chamada. Como o código Transparent Security não pode satisfazer LinkDemands, o código também não pode chamar métodos que são marcados com o atributo SuppressUnmanagedCodeSecurity ou métodos de classe que são marcados com o atributo SuppressUnmanagedCodeSecurity. O método falhará ou a demanda será convertida em uma demanda completa.
 
- As violações dessa regra resultam em uma <xref:System.MethodAccessException> no modelo de transparência de segurança de nível 2 e uma demanda completa para <xref:System.Security.Permissions.SecurityPermissionAttribute.UnmanagedCode%2A> no modelo de transparência de nível 1.
+ As violações dessa regra levam a uma <xref:System.MethodAccessException> no modelo de transparência de segurança de nível 2 e uma demanda completa de <xref:System.Security.Permissions.SecurityPermissionAttribute.UnmanagedCode%2A> no modelo de transparência nível 1.
 
 ## <a name="how-to-fix-violations"></a>Como Corrigir Violações
- Para corrigir uma violação dessa regra, remova os <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute> de atributos e marcar o método com o <xref:System.Security.SecurityCriticalAttribute> ou o <xref:System.Security.SecuritySafeCriticalAttribute> atributo.
+ Para corrigir uma violação dessa regra, remova o atributo <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute> e marque o método com o atributo <xref:System.Security.SecurityCriticalAttribute> ou <xref:System.Security.SecuritySafeCriticalAttribute>.
 
 ## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos
  Não suprima um aviso nessa regra.

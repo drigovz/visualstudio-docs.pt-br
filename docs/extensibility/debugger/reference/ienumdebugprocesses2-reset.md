@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugProcesses2::Reset
 ms.assetid: 31cbde4f-0bba-497a-9969-d2c342ef4a7b
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d40f40ac792eab1c84c3b195d49cd570ec6f83b8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 323aa562f64596d14f0b696258eb08df493cdcc7
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62914173"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66332300"
 ---
 # <a name="ienumdebugprocesses2reset"></a>IEnumDebugProcesses2::Reset
 Redefine a enumeração para o primeiro elemento.

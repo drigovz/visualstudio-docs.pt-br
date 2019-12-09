@@ -1,5 +1,5 @@
 ---
-title: IDebugStackFrame::GetCodeContext | Microsoft Docs
+title: 'IDebugStackFrame:: GetCodeContext | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dadb440017969f3ea4c824c681c726645a5757b0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9b640238b9c1212f477c6a26a9cc251678758f22
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62934711"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574282"
 ---
 # <a name="idebugstackframegetcodecontext"></a>IDebugStackFrame::GetCodeContext
-Retorna o contexto de código atual associado com o quadro de pilhas.  
+Retorna o contexto do código atual associado ao quadro da pilha.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -37,9 +37,9 @@ HRESULT GetCodeContext(
   
 #### <a name="parameters"></a>Parâmetros  
  `ppcc`  
- [out] O contexto de código associado ao quadro de pilha.  
+ fora O contexto de código associado ao registro de ativação.  
   
-## <a name="return-value"></a>Valor de retorno  
+## <a name="return-value"></a>Valor retornado  
  O método retorna um `HRESULT`. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.  
   
 |Valor|Descrição|  
@@ -47,7 +47,7 @@ HRESULT GetCodeContext(
 |`S_OK`|O método foi bem-sucedido.|  
   
 ## <a name="remarks"></a>Comentários  
- Esse método retorna o contexto de código atual associado com o quadro de pilhas.  
+ Esse método retorna o contexto de código atual associado ao registro de ativação.  
   
 ## <a name="see-also"></a>Consulte também  
  [Interface IDebugStackFrame](../../winscript/reference/idebugstackframe-interface.md)

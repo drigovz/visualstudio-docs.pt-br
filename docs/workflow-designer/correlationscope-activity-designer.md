@@ -1,43 +1,43 @@
 ---
-title: Designer de fluxo de trabalho - Designer de atividade de CorrelationScope
+title: Designer de atividade Designer de Fluxo de Trabalho-CorrelationScope
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - System.ServiceModel.Activities.CorrelationScope.UI
 ms.assetid: 75f20664-9042-464d-8e2b-148d365a2286
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b7ca5955cae8d9b2cb1012e97f034d497bbc79e9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d65e481342f7b7e86b3ce073b7d6a15254ae72d8
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62949806"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650589"
 ---
 # <a name="correlationscope-activity-designer"></a>Designer de atividade de CorrelationScope
 
-O **CorrelationScope** designer de atividade é usado para criar e configurar um <xref:System.ServiceModel.Activities.CorrelationScope> atividade que fornece gerenciamento implícito de atividades filhos de mensagem usando um <xref:System.ServiceModel.Activities.CorrelationHandle> objeto.
+O designer de atividade **CorrelationScope** é usado para criar e configurar uma atividade de <xref:System.ServiceModel.Activities.CorrelationScope> que fornece gerenciamento implícito de atividades de mensagens filho usando um objeto <xref:System.ServiceModel.Activities.CorrelationHandle>.
 
-## <a name="the-correlationscope-activity"></a>A atividade de CorrelationScope
+## <a name="the-correlationscope-activity"></a>A atividade CorrelationScope
 
 A propriedade de <xref:System.ServiceModel.Activities.CorrelationScope.CorrelatesWith%2A> especifica <xref:System.ServiceModel.Activities.CorrelationHandle> usado para gerenciar atividades filhos de mensagem. As atividades de <xref:System.ServiceModel.Activities.Send> e de <xref:System.ServiceModel.Activities.Receive> contidas em <xref:System.ServiceModel.Activities.CorrelationScope.Body%2A> são configurados para usar a propriedade de <xref:System.ServiceModel.Activities.CorrelationScope.CorrelatesWith%2A> de atividade de conteúdo da <xref:System.ServiceModel.Activities.CorrelationScope> para executar correlação.
 
-### <a name="use-the-correlationscope-activity-designer"></a>Use o Designer de atividade de CorrelationScope
+### <a name="use-the-correlationscope-activity-designer"></a>Usar o designer de atividade do CorrelationScope
 
-O **CorrelationScope** designer de atividade pode ser encontrado na **Messaging** categoria da **caixa de ferramentas**, que é acessado clicando o **dacaixadeferramentas** guia no lado esquerdo do Designer de fluxo de trabalho. Como alternativa, selecione **caixa de ferramentas** da **exibição** menus ou pressione **Ctrl**+**Alt** + **X**.
+O designer de atividade **CorrelationScope** pode ser encontrado na categoria **mensagens** da **caixa de ferramentas**, que é acessada clicando na guia caixa de **ferramentas** no lado esquerdo da designer de fluxo de trabalho. Como alternativa, selecione **caixa de ferramentas** no menu **Exibir** ou pressione **Ctrl** +**ALT** +**X**.
 
-O **CorrelationScope** designer de atividade pode ser arrastado da **caixa de ferramentas** e ignorados sobre a superfície do Designer de fluxo de trabalho. Isso cria uma <xref:System.ServiceModel.Activities.CorrelationScope> atividade com um padrão **DisplayName** de CorrelationScope. O <xref:System.Activities.Activity.DisplayName%2A> pode ser editado no cabeçalho do **CorrelationScope** designer de atividade ou nos **DisplayName** caixa do **propriedades** janela.
+O designer de atividade do **CorrelationScope** pode ser arrastado da **caixa de ferramentas** e colocado na superfície de designer de fluxo de trabalho. Isso cria uma atividade de <xref:System.ServiceModel.Activities.CorrelationScope> com um **DisplayName** padrão de CorrelationScope. O <xref:System.Activities.Activity.DisplayName%2A> pode ser editado no cabeçalho do designer de atividade **CorrelationScope** ou na caixa **DisplayName** da janela **Propriedades** .
 
-Para especificar o <xref:System.ServiceModel.Activities.CorrelationHandle> usado por atividades filhos de mensagem, selecione o botão de reticências ao lado de **CorrelatesWith** campo **propriedades** janela para exibir o **expressão Editor de** caixa de diálogo. Esta propriedade pode também ser definida na superfície do designer de atividade.
+Para especificar o <xref:System.ServiceModel.Activities.CorrelationHandle> usado pelas atividades de mensagens filho, selecione o botão de reticências ao lado do campo **CorrelatesWith** na janela **Propriedades** para exibir a caixa de diálogo **Editor de expressão** . Esta propriedade pode também ser definida na superfície do designer de atividade.
 
-As atividades no escopo dentro de correlação são especificadas soltando seus designers dentro de **corpo** caixa dentro a **CorrelationScope** designer.
+As atividades com escopo na correlação são especificadas descartando seus designers dentro da caixa do **corpo** no designer de **CorrelationScope** .
 
-### <a name="the-correlationscope-properties"></a>As propriedades de CorrelationScope
+### <a name="the-correlationscope-properties"></a>As propriedades CorrelationScope
 
-A tabela a seguir mostra as propriedades de <xref:System.ServiceModel.Activities.CorrelationScope> e descreve como elas são usadas no designer. Essas propriedades podem ser editadas na **propriedades** janela ou na superfície de Designer de fluxo de trabalho e frequentemente em ambos.
+A tabela a seguir mostra as propriedades de <xref:System.ServiceModel.Activities.CorrelationScope> e descreve como elas são usadas no designer. Essas propriedades podem ser editadas na janela **Propriedades** ou na superfície designer de fluxo de trabalho e, muitas vezes, em ambos.
 
 |Nome da Propriedade|Necessária|Uso|
 |-|--------------|-|

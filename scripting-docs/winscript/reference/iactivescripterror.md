@@ -13,21 +13,21 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1ca783e2100fe74ed05499f9611a9b8f3399817f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ca4d3fe5ff90fc0d116814771308fa599052dba9
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62954987"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576898"
 ---
 # <a name="iactivescripterror"></a>IActiveScriptError
-Um objeto que implementa essa interface é passado para o [IActiveScriptSite::OnScriptError](../../winscript/reference/iactivescriptsite-onscripterror.md) método sempre que o mecanismo de script encontra um erro sem tratamento. O host, em seguida, chama métodos neste objeto para obter informações sobre o erro que ocorreu.  
+Um objeto que implementa essa interface é passado para o método [IActiveScriptSite:: OnScriptError](../../winscript/reference/iactivescriptsite-onscripterror.md) sempre que o mecanismo de script encontra um erro sem tratamento. Em seguida, o host chama métodos nesse objeto para obter informações sobre o erro ocorrido.  
   
-## <a name="methods-in-vtable-order"></a>Métodos na ordem de Vtable  
+## <a name="methods-in-vtable-order"></a>Métodos em ordem vtable  
   
 |Método|Descrição|  
 |------------|-----------------|  
-|[IActiveScriptError::GetExceptionInfo](../../winscript/reference/iactivescripterror-getexceptioninfo.md)|Recupera informações sobre o erro.|  
+|[IActiveScriptError::GetExceptionInfo](../../winscript/reference/iactivescripterror-getexceptioninfo.md)|Recupera informações sobre um erro.|  
 |[IActiveScriptError::GetSourcePosition](../../winscript/reference/iactivescripterror-getsourceposition.md)|Recupera o local no código-fonte em que ocorreu um erro.|  
 |[IActiveScriptError::GetSourceLineText](../../winscript/reference/iactivescripterror-getsourcelinetext.md)|Recupera a linha no arquivo de origem em que ocorreu um erro.|  
   

@@ -1,5 +1,5 @@
 ---
-title: Fóruns de acesso de dados
+title: Fóruns de acesso a dados
 ms.date: 06/27/2018
 ms.topic: troubleshooting
 f1_keywords:
@@ -219,37 +219,37 @@ helpviewer_keywords:
 - troubleshooting data access
 - datasets [Visual Basic], troubleshooting
 ms.assetid: 357c9f0a-9d59-4db4-9b7c-b96cad839961
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 9867f9b595937e0ae8586aabdba180f4b1d8d359
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5c92699d9d7c77c771ea1cc4aa28b918f318eca8
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62818072"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72648871"
 ---
-# <a name="troubleshoot-data-access-errors-on-the-forums"></a>Solucionar problemas de erros de acesso de dados nos fóruns
+# <a name="troubleshoot-data-access-errors-on-the-forums"></a>Solucionar erros de acesso a dados nos fóruns
 
 Você pode obter ajuda com a solução de erros e avisos nos fóruns públicos do Microsoft Developer Network (MSDN). Aqui estão alguns fóruns relacionados a dados disponíveis no MSDN:
 
 - [Controles de dados e vinculação de dados do Windows Forms](https://social.msdn.microsoft.com/Forums/windows/en-US/home?forum=winformsdatacontrols)
 
-- [Fórum de conjunto de dados ADO.NET](https://social.msdn.microsoft.com/Forums/en-US/home?forum=adodotnetdataset)
+- [Fórum do conjunto de ADO.NET](https://social.msdn.microsoft.com/Forums/en-US/home?forum=adodotnetdataset)
 
 - [ADO.NET Entity Framework e LINQ to Entities](https://social.msdn.microsoft.com/Forums/en-US/home?forum=adodotnetentityframework)
 
-- [Fórum do WCF data services](https://social.msdn.microsoft.com/Forums/en-US/home?forum=adodotnetdataservices)
+- [Fórum do WCF Data Services](https://social.msdn.microsoft.com/Forums/en-US/home?forum=adodotnetdataservices)
 
 - [Fórum do Acesso a dados no SQL Server](https://social.msdn.microsoft.com/Forums/sqlserver/en-US/home?forum=sqldataaccess)
 
-- [LINQ para o fórum do SQL](https://social.msdn.microsoft.com/Forums/en-US/home?forum=linqtosql)
+- [Fórum de LINQ to SQL](https://social.msdn.microsoft.com/Forums/en-US/home?forum=linqtosql)
 
 - [Fórum de provedores de dados do ADO.NET](https://social.msdn.microsoft.com/Forums/en-US/home?forum=adodotnetdataproviders)
 
-Para obter informações sobre como solucionar problemas de conectividade para SQL Server, consulte [solucione o problema se conectar ao mecanismo de banco de dados do SQL Server](https://social.technet.microsoft.com/wiki/contents/articles/2102.how-to-troubleshoot-connecting-to-the-sql-server-database-engine.aspx).
+Para obter informações sobre como solucionar problemas de conectividade para SQL Server, consulte [solucionar problemas de conexão com o mecanismo de banco de dados SQL Server](https://social.technet.microsoft.com/wiki/contents/articles/2102.how-to-troubleshoot-connecting-to-the-sql-server-database-engine.aspx).
 
 ## <a name="see-also"></a>Consulte também
 

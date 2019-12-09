@@ -1,5 +1,5 @@
 ---
-title: Relatar um problema
+title: 'Relatar um problema: Estados e perguntas frequentes'
 description: Fornece uma visão geral da ferramenta Relatar um problema e inclui estados e definições de problemas
 ms.date: 11/15/2018
 ms.custom: seodec18
@@ -9,14 +9,14 @@ ms.author: seiyer
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 23ed63846eb11fd8eba95219aecaae3210e161fd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: d024e28d696a60a9fc77c290283382dcd0e0ede8
+ms.sourcegitcommit: 2148f3fd69569d8ec54fd21a66370932ce610ce4
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62980025"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74853497"
 ---
-# <a name="overview-report-a-problem"></a>Visão geral: Relatar um problema
+# <a name="report-a-problem-states-and-faq"></a>Relatar um problema: Estados e perguntas frequentes
 
 A ferramenta Relatar um problema permite que a comunidade de desenvolvedores do Visual Studio envie problemas. Cada um dos seus relatórios do problema se torna um item de trabalho em nosso sistema de engenharia principal, capacitando você para interagir diretamente com nossas equipes de produtos para nos ajudar a identificar e a resolver problemas com impacto. Os comentários enviados com informações avançadas de diagnóstico são fundamentais para melhorar a família de produtos do Visual Studio. Nós realmente agradecemos seu tempo para relatar problemas.
 
@@ -80,7 +80,7 @@ Depois de relatar um problema, os estados indicam onde seus envios estão no seu
 
 - - -
 
-![Estado Fechado – Não é um Bug para comunicação de problemas na Comunidade de Desenvolvedores](../ide/media/ProblemStates/ClosedNotaBug.jpg)
+![Estado Fechado – Não é um Bug para comunicação de problemas na Comunidade de Desenvolvedores](../ide/media/ProblemStates/ClosedNotABug.jpg)
 
 **Fechado – Não é um Bug** indica que determinamos que a funcionalidade relatada é atualmente esperada.
 
@@ -110,7 +110,7 @@ Depois de relatar um problema, os estados indicam onde seus envios estão no seu
 
 É recomendável usar a pesquisa para garantir que o problema que você está prestes a relatar ainda não tenha sido comunicado. Se você encontrar um item existente que corresponda a seu problema, siga e vote nesse tíquete de problema.
 
- Forneça todas as informações que você tem para ajudar nossas equipes a reproduzir o que você está enfrentando.  Essas informações incluem etapas de reprodução necessárias, fragmentos de código, capturas de tela, gravações de reprodução, arquivos de log e outros artefatos.  Veja [como relatar um problema no Visual Studio](./how-to-report-a-problem-with-visual-studio.md).
+Forneça todas as informações que você tem para ajudar nossas equipes a reproduzir o que você está enfrentando.  Essas informações incluem etapas de reprodução necessárias, fragmentos de código, capturas de tela, gravações de reprodução, arquivos de log e outros artefatos.  Veja [como relatar um problema no Visual Studio](./how-to-report-a-problem-with-visual-studio.md).
 
 ### <a name="how-is-my-feedback-prioritized"></a>Como meus comentários são priorizados?
 

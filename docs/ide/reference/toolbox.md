@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - Toolbox [Visual Studio]
 - custom controls [Visual Studio]
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1331f416d95b56d466b6e2fe268ed7db071d66da
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 5311c9a910c3140d5a5053a42befe7ed7f5b1278
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62945448"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72651121"
 ---
 # <a name="toolbox"></a>Caixa de Ferramentas
 
@@ -33,7 +33,7 @@ A Caixa de Ferramentas aparece com as exibições de designer, como a exibição
 > [!NOTE]
 > Para alguns tipos de projeto, a **Caixa de Ferramentas** pode não mostrar nenhum item.
 
-A versão do .NET Framework direcionada pelo seu projeto também afeta o conjunto de controles visíveis na Caixa de Ferramentas. Você pode definir seu projeto para direcionar para uma versão diferente do .NET Framework nas páginas de propriedades do projeto. Selecione o nó do projeto no **Gerenciador de Soluções** e, na barra de menus, escolha **Projeto** > **Propriedades do nomedoprojeto**. Na guia **Aplicativo**, use o menu suspenso **Estrutura de destino**.
+A versão do .NET direcionada pelo projeto também afeta o conjunto de controles visíveis na Caixa de ferramentas. Altere a versão da estrutura de destino nas páginas de propriedades do projeto, se necessário. Selecione o nó do projeto no **Gerenciador de Soluções** e, na barra de menus, escolha **Projeto** > **Propriedades do nomedoprojeto**. Na guia **Aplicativo**, use o menu suspenso **Estrutura de destino**.
 
 ## <a name="manage-the-toolbox-window-and-its-controls"></a>Gerenciar a janela Caixa de Ferramentas e seus controles
 

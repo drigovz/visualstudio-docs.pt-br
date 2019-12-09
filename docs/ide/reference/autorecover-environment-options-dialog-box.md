@@ -12,17 +12,17 @@ helpviewer_keywords:
 - saving files, automatically
 - files, saving automatically
 ms.assetid: 397e5e44-4bbe-4289-94d1-642b466c9111
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 59a28d73677011ef2de3ce4dd844757108b317ef
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 865cf2ec43071a01a333961e118beab14abab82b
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62790883"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72651894"
 ---
 # <a name="autorecover-environment-options-dialog-box"></a>Caixa de diálogo AutoRecuperação, Ambiente, Opções
 
@@ -32,7 +32,7 @@ Acesse essa caixa de diálogo selecionando o menu **Ferramentas**, escolhendo **
 
 **Salvar informações de AutoRecuperação a cada [n] minutos**
 
-Use esta opção para personalizar a frequência com que um arquivo é salvo automaticamente no editor. Para arquivos já salvos, uma cópia do arquivo é salva em *%USERPROFILE%\Documents\Visual Studio\\[versão]\Backup Files\\[nomedoprojeto]*. Se o arquivo for novo e você ainda não o tiver salvado, ele será salvo automaticamente com um nome de arquivo gerado aleatoriamente.
+Use esta opção para personalizar a frequência com que um arquivo é salvo automaticamente no editor. Para arquivos já salvos, uma cópia do arquivo é salva em *%USERPROFILE%\Documents\Visual Studio\\[versão]\Backup Files\\[nomedoprojeto]* . Se o arquivo for novo e você ainda não o tiver salvado, ele será salvo automaticamente com um nome de arquivo gerado aleatoriamente.
 
 **Manter informações de AutoRecuperação por [n] dias**
 

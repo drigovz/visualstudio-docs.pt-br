@@ -1,7 +1,6 @@
 ---
 title: Publicar no Serviço de Aplicativo do Azure
 ms.date: 01/17/2019
-ms.topic: quickstart
 helpviewer_keywords:
 - deployment, website
 ms.assetid: 8524a4c5-97a9-41ac-a2a0-034efb9bfc57
@@ -12,22 +11,22 @@ ms.prod: visual-studio-mac
 ms.custom: video
 ms.workload:
 - azure
-ms.openlocfilehash: 48cf25a7164fabc96924897c0a4a28bbbe4bea74
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 97964589b832b05f4d528a801a1899eeb8385883
+ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62988552"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73714467"
 ---
 # <a name="publish-a-web-app-to-azure-app-service-using-visual-studio-for-mac"></a>Publicar um aplicativo Web no Serviço de Aplicativo do Azure usando o Visual Studio para Mac
 
 Você pode usar a ferramenta Publicar para publicar aplicativos do ASP.NET Core no Serviço de Aplicativo do Azure.
 
-## <a name="prerequisites"></a>Pré-requisitos
+## <a name="prerequisites"></a>Prerequisites
 
 - [Visual Studio 2017 para Mac](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs4mac2017) instalado com o ASP.NET Core habilitado.
 - Uma assinatura do Azure. Se você ainda não tiver uma assinatura, [Inscreva-se gratuitamente](https://azure.microsoft.com/free/dotnet/), ganhando US$ 200 em créditos para 30 dias e 12 meses de serviços populares gratuitos.
-- Um projeto ASP.NET Core. Se você ainda não tiver um projeto, [crie um](https://docs.microsoft.com/visualstudio/mac/create-new-projects?view=vsmac-2017).
+- Um projeto ASP.NET Core. Se você ainda não tiver um projeto, [crie um](/visualstudio/mac/create-new-projects?view=vsmac-2017).
 
 ## <a name="publish-to-azure-app-service"></a>Publicar no Serviço de Aplicativo do Azure
 
@@ -57,7 +56,7 @@ Você pode usar a ferramenta Publicar para publicar aplicativos do ASP.NET Core 
 
     Você pode alterar a assinatura à qual o Serviço de Aplicativo será associado usando a lista suspensa **Assinatura**.
 
-    Você pode selecionar um **Grupo de Recursos** existente usando o menu suspenso ou criar outro com o botão **+**.
+    Você pode selecionar um **Grupo de Recursos** existente usando o menu suspenso ou criar outro com o botão **+** .
 
     Para o Plano do Serviço de Aplicativo, selecione um existente ou crie outro selecionando o botão de opção **Personalizado**.
 

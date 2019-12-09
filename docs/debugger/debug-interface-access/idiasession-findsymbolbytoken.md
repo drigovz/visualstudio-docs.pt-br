@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f342efce1c05e305a3e55d6372d1862b04b1197
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 098d84d6c7c79fee5fea5e5b2b36136bf7b55b26
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62827301"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742020"
 ---
 # <a name="idiasessionfindsymbolbytoken"></a>IDiaSession::findSymbolByToken
 Recupera o símbolo que contém um token de metadados especificado.
@@ -35,17 +35,17 @@ HRESULT findSymbolByToken ( 
 #### <a name="parameters"></a>Parâmetros
  `token`
 
-[in] Especifica o token.
+no Especifica o token.
 
  `symtag`
 
-[in] Tipo de símbolo a ser localizada. Valores são tirados de [enumeração SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) enumeração.
+no Tipo de símbolo a ser encontrado. Os valores são obtidos da enumeração de [Enumeração SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) .
 
  `ppSymbol`
 
-[out] Retorna um [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) recuperado do objeto que representa o símbolo.
+fora Retorna um objeto [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) que representa o símbolo recuperado.
 
-## <a name="return-value"></a>Valor de retorno
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
 
 ## <a name="example"></a>Exemplo

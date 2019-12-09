@@ -22,12 +22,12 @@ caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8315a797aec5fcedbf33df6ca96f41879b57d971
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 8cb43c9a32f3dfd0a6383d466f7cd283acf0ab3a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054294"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65691275"
 ---
 # <a name="debug-multithreaded-applications-in-visual-studio"></a>Depurar aplicativos multithread no Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ Um thread é uma sequência de instruções para que o sistema operacional aloqu
 
  Além disso, o multithreading apresenta alguns novos tipos de bugs potenciais. Geralmente, dois ou mais threads precisam acessar o mesmo recurso, mas apenas um thread pode acessar com segurança o recurso de cada vez. Alguma forma de exclusão mútua é necessário para certificar-se de que apenas um thread está acessando o recurso de cada vez. Se a exclusão mútua for executada incorretamente, pode criar uma *deadlock* condição em que nenhum thread possa executar. Deadlocks podem ser um problema particularmente difícil de depurar.
 
- O Visual Studio fornece um **Threads** janela, uma janela de Threads da GPU, uma janela de inspeção paralela e outros recursos que tornam a depuração de vários segmentos. A melhor maneira de aprender sobre os recursos de threads é seguindo as orientações. Confira [Passo a passo: Depurando um aplicativo multi-threaded](../debugger/walkthrough-debugging-a-multithreaded-application.md) e [passo a passo: Depurando um aplicativo C++ AMP](http://msdn.microsoft.com/library/40e92ecc-f6ba-411c-960c-b3047b854fb5).
+ O Visual Studio fornece um **Threads** janela, uma janela de Threads da GPU, uma janela de inspeção paralela e outros recursos que tornam a depuração de vários segmentos. A melhor maneira de aprender sobre os recursos de threads é seguindo as orientações. Confira [Passo a passo: Depurando um aplicativo multi-threaded](../debugger/walkthrough-debugging-a-multithreaded-application.md) e [passo a passo: Depurando um aplicativo C++ AMP](https://msdn.microsoft.com/library/40e92ecc-f6ba-411c-960c-b3047b854fb5).
 
  O Visual Studio também fornece os pontos de interrupção avançados e pontos de controle, que podem ser muito úteis quando você depura aplicativos multissegmentados. Você pode usar filtros de ponto de interrupção para incluir pontos de interrupção em threads individuais. Consulte [usando pontos de interrupção](../debugger/using-breakpoints.md)
 
@@ -83,11 +83,11 @@ Um tour guiado dos recursos de depuração com ênfase nos recursos para [!INCLU
 
 - Os pontos de controle permitem que você rastreie a execução do programa sem interrupções. Isso pode ser útil para estudar problemas, como deadlocks.
 
-  [Threading](http://msdn.microsoft.com/library/7b46a7d9-c6f1-46d1-a947-ae97471bba87) conceitos de segmentação na [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] programação, incluindo o código de exemplo.
+  [Threading](https://msdn.microsoft.com/library/7b46a7d9-c6f1-46d1-a947-ae97471bba87) conceitos de segmentação na [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] programação, incluindo o código de exemplo.
 
-  [Multithreading em componentes](http://msdn.microsoft.com/library/2fc31e68-fb71-4544-b654-0ce720478779) como usar multithreading em [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] componentes.
+  [Multithreading em componentes](https://msdn.microsoft.com/library/2fc31e68-fb71-4544-b654-0ce720478779) como usar multithreading em [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] componentes.
 
-  [Suporte de multithreading para código anterior (Visual C++)](http://msdn.microsoft.com/library/24425b1f-5031-4c6b-aac7-017115a40e7c) conceitos de segmentação e código de exemplo para programadores de C++ usando o MFC.
+  [Suporte de multithreading para código anterior (Visual C++)](https://msdn.microsoft.com/library/24425b1f-5031-4c6b-aac7-017115a40e7c) conceitos de segmentação e código de exemplo para programadores de C++ usando o MFC.
 
 ## <a name="see-also"></a>Consulte também
  [Depurar Threads e processos](../debugger/debug-threads-and-processes.md) [depuração remota](../debugger/remote-debugging.md)

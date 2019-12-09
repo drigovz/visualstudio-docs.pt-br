@@ -1,21 +1,22 @@
 ---
 title: 'Passo a passo: Criar um ambiente de build de vários computadores'
 ms.date: 11/04/2016
+ms.technology: vs-ide-compile
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, building on multiple computers
 - build environment, MSBuild
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d2ca4e45c83aa3291b922694ebd16df5ab7fc35e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 11b158854a0026de28cb2fb0a582bbaf764eeaa4
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62581632"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461531"
 ---
 # <a name="walkthrough-create-a-multiple-computer-build-environment"></a>Passo a passo: Criar um ambiente de build de vários computadores
 
@@ -62,7 +63,7 @@ Esta seção aborda a cópia de arquivos específicos, compiladores, ferramentas
 - Em um computador x86, a localização padrão é *C:\Arquivos de Programas\Microsoft Visual Studio*
 - Em um computador x64, a localização padrão é *C:\Arquivos de Programas (x86)\Microsoft Visual Studio*
 
-Observe que o nome da pasta *Arquivos de Programa* depende do sistema operacional instalado. Em um computador x86, o nome é *Arquivos de Programa*; em um computador x64, o nome é *Arquivos de Programa (x86)*. Independentemente da arquitetura do sistema, este passo a passo refere-se à pasta *Arquivos de Programa* como *%ProgramFiles%*.
+Observe que o nome da pasta *Arquivos de Programa* depende do sistema operacional instalado. Em um computador x86, o nome é *Arquivos de Programa*; em um computador x64, o nome é *Arquivos de Programa (x86)* . Independentemente da arquitetura do sistema, este passo a passo refere-se à pasta *Arquivos de Programa* como *%ProgramFiles%* .
 
 > [!NOTE]
 > No computador de build, todos os arquivos relevantes precisam estar na mesma unidade. No entanto, a letra da unidade para essa unidade pode ser diferente da letra da unidade para a unidade na qual o Visual Studio está instalado no computador host. Em qualquer caso, você deve considerar o local dos arquivos ao criar entradas de Registro conforme descrito mais adiante neste documento.
@@ -169,7 +170,7 @@ Observe que o nome da pasta *Arquivos de Programa* depende do sistema operaciona
 
     - \Microsoft.VC110.OPENMP\vcomp110.dll
 
-5. Copie somente os seguintes arquivos da pasta *Debug_NonRedist\x86* ou *Debug_NonRedist\x64* para o computador de build, conforme descrito em [Preparar um computador de teste para executar um executável de depuração](/cpp/ide/preparing-a-test-machine-to-run-a-debug-executable). Nenhum outro arquivo pode ser copiado.
+5. Copie somente os seguintes arquivos da pasta *Debug_NonRedist\x86* ou *Debug_NonRedist\x64* para o computador de build, conforme descrito em [Preparar um computador de teste para executar um executável de depuração](/cpp/windows/preparing-a-test-machine-to-run-a-debug-executable). Nenhum outro arquivo pode ser copiado.
 
     - \Microsoft.VC110.DebugCRT\msvcp110d.dll
 
@@ -332,7 +333,7 @@ Você pode criar um ambiente de build que possa ser implantado em vários comput
 
 2. Copie os diretórios e arquivos, conforme descrito na seção [Copiar arquivos do computador host para o computador de build](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#copy-files-from-the-host-computer-to-the-build-computer) deste passo a passo, mas cole-os no diretório *%Depot%* recém-criado. Por exemplo, copie de *%ProgramFiles%\Windows Kits\8.0\bin* para *%Depot%\Windows Kits\8.0\bin*.
 
-3. Quando os arquivos forem colados em *%Depot%*, faça estas alterações:
+3. Quando os arquivos forem colados em *%Depot%* , faça estas alterações:
 
     - Em %Depot%\MSBuild\Microsoft.Cpp\v4.0\v110\Microsoft.CPP.Targets, \Microsoft.Cpp.InvalidPlatforms.targets\\, \Microsoft.cppbuild.targets\\ e \Microsoft.CppCommon.targets\\, altere todas as instâncias de
 
@@ -407,5 +408,5 @@ Você pode criar um ambiente de build que possa ser implantado em vários comput
 
 ## <a name="see-also"></a>Consulte também
 
-- [Preparar um computador de teste para executar um executável de depuração](/cpp/ide/preparing-a-test-machine-to-run-a-debug-executable)
+- [Preparar um computador de teste para executar um executável de depuração](/cpp/windows/preparing-a-test-machine-to-run-a-debug-executable)
 - [Referência de linha de comando](../msbuild/msbuild-command-line-reference.md)

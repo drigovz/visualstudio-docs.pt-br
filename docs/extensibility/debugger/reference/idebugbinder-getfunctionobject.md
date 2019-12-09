@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBinder::GetFunctionObject method
 ms.assetid: 8fb789df-8f30-420d-8ca5-bb496a6738f1
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b69af018a1b5b1ddf743784f4736d7c2ac24d45f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 03078a09de94b886a659059192a5b67430cb5137
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62923676"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66337659"
 ---
 # <a name="idebugbindergetfunctionobject"></a>IDebugBinder::GetFunctionObject
 Esse método obtém uma [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) objeto usado para criar parâmetros de função.
@@ -36,10 +39,9 @@ int GetFunctionObject(
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `ppFunction`
-
- [out] Retorna o [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) interface que é usado para criar parâmetros de função.
+## <a name="parameters"></a>Parâmetros
+`ppFunction`\
+[out] Retorna o [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) interface que é usado para criar parâmetros de função.
 
 ## <a name="return-value"></a>Valor de retorno
  Se for bem-sucedido, retornará S_OK; Caso contrário, retornará um código de erro.

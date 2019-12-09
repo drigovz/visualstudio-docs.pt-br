@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.assetid: 5233d3ff-6e89-4401-b449-51b4686becca
 caps.latest.revision: 33
 manager: jillfra
-ms.openlocfilehash: 10b57508c498607533a9a9b1fbbcf3b15b6f7a4f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 0b29728cffc962b5d09a5adc45f8cac2093b020a
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63422737"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825678"
 ---
 # <a name="making-custom-projects-version-aware"></a>Tornando projetos personalizados com reconhecimento de versão
 No seu sistema de projeto personalizado, você pode permitir que os projetos desse tipo de carga em várias versões do Visual Studio. Você também pode impedir projetos deste tipo de carregamento em uma versão anterior do Visual Studio. Você também pode habilitar esse projeto para se identificar para uma versão posterior, no caso do projeto exige o reparo, a conversão ou a substituição.  
@@ -142,12 +142,12 @@ IVsProjectUpgradeViaFactory::UpgradeProject_CheckOnly(
   
 - A função LogMessage tem os ErrorLevels a seguir:  
   
-    - é 0 para todas as informações que você deseja rastrear.  
-  
-    - 1 é para um aviso.  
-  
-    - 2 é um erro  
-  
-    - 3 é para o formatador de relatório. Quando o projeto é atualizado, faça a palavra "Convertidos" uma vez e não localizar a palavra.  
+  - é 0 para todas as informações que você deseja rastrear.  
+
+  - 1 é para um aviso.  
+
+  - 2 é um erro  
+
+  - 3 é para o formatador de relatório. Quando o projeto é atualizado, faça a palavra "Convertidos" uma vez e não localizar a palavra.  
   
 - Se um projeto não requer nenhum reparo ou atualização, o Visual Studio irá gerar o arquivo de log somente se o sistema de projeto tivesse conectado um aviso ou um erro durante a métodos UpgradeProject_CheckOnly ou UpgradeProjectFlavor_CheckOnly.

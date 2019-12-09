@@ -1,5 +1,5 @@
 ---
-title: 'Como: Gerenciar o layout do controle em painéis de ações'
+title: 'Como: Gerenciar o layout de controle em painéis de ações'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,47 +14,47 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 264b7cd4d60ebc963d794e0ca06fc16fd5edc7d7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 043f93c12181d34e9d2a92435c854cdf76f18904
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445355"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71255818"
 ---
-# <a name="how-to-manage-control-layout-on-actions-panes"></a>Como: Gerenciar o layout do controle em painéis de ações
-  Um painel de ações é encaixado à direita de um documento ou planilha, por padrão. No entanto, pode ser encaixado à esquerda, superior ou inferior. Se você estiver usando vários controles de usuário, você pode escrever código para os controles de usuário no painel de ações de pilha corretamente. Para obter mais informações, consulte [visão geral do painel de ações](../vsto/actions-pane-overview.md).
+# <a name="how-to-manage-control-layout-on-actions-panes"></a>Como: Gerenciar o layout de controle em painéis de ações
+  Um painel Ações é encaixado à direita de um documento ou planilha por padrão; no entanto, ele pode ser encaixado à esquerda, à parte superior ou inferior. Se você estiver usando vários controles de usuário, poderá escrever código para empilhar corretamente os controles de usuário no painel Ações. Para obter mais informações, consulte [visão geral do painel Ações](../vsto/actions-pane-overview.md).
 
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
 
- A ordem de pilha dos controles depende se o painel de ações é encaixado vertical ou horizontalmente.
+ A ordem de pilha dos controles depende se o painel Ações está encaixado verticalmente ou horizontalmente.
 
 > [!NOTE]
-> Se o usuário redimensiona o painel de ações em tempo de execução, você pode definir os controles seja redimensionada com o painel de ações. Você pode usar o <xref:System.Windows.Forms.Control.Anchor%2A> propriedade de um controle Windows Forms a controles de âncora para o painel de ações. Para obter mais informações, confira [Como: Ancorar controles nos Windows Forms](/dotnet/framework/winforms/controls/how-to-anchor-controls-on-windows-forms).
+> Se o usuário redimensionar o painel Ações em tempo de execução, você poderá definir os controles a serem redimensionados com o painel Ações. Você pode usar a <xref:System.Windows.Forms.Control.Anchor%2A> propriedade de um controle de Windows Forms para ancorar controles no painel Ações. Para obter mais informações, confira [Como: Controles de ancoragem](/dotnet/framework/winforms/controls/how-to-anchor-controls-on-windows-forms)em Windows Forms.
 
 > [!NOTE]
 > Seu computador pode mostrar diferentes nomes ou locais para alguns dos elementos de interface do usuário do Visual Studio nas instruções a seguir. A edição do Visual Studio que você possui e as configurações que você usa determinam esses elementos. Para obter mais informações, confira [Personalizar o IDE do Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
-## <a name="to-set-the-stack-order-of-the-actions-pane-controls"></a>Para definir a ordem de pilha dos controles do painel de ações
+## <a name="to-set-the-stack-order-of-the-actions-pane-controls"></a>Para definir a ordem de pilha dos controles do painel Ações
 
-1. Abra um projeto de nível de documento para o Microsoft Office Word que inclui um painel de ações com vários controles de usuário ou controles de painel de ações aninhadas. Para obter mais informações, confira [Como: Adicionar um painel de ações a documentos do Word ou pastas de trabalho do Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md).
+1. Abra um projeto de nível de documento para Microsoft Office Word que inclui um painel Ações com vários controles de usuário ou controles do painel Ações aninhadas. Para obter mais informações, confira [Como: Adicione um painel ações a documentos do Word ou a pastas](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)de trabalho do Excel.
 
-2. Clique com botão direito **ThisDocument.cs** ou **ThisDocument. vb** na **Gerenciador de soluções** e, em seguida, clique em **Exibir código**.
+2. Clique com o botão direito do mouse em **ThisDocument.cs** ou **ThisDocument. vb** em **Gerenciador de soluções** e clique em **Exibir código**.
 
-3. No <xref:Microsoft.Office.Tools.ActionsPane.OrientationChanged> manipulador de eventos do painel Ações, verifique se a orientação do painel Ações é horizontal.
+3. No manipulador de eventos do painel Ações, verifique se a orientação do painel Ações é horizontal. <xref:Microsoft.Office.Tools.ActionsPane.OrientationChanged>
 
      [!code-csharp[Trin_VstcoreActionsPaneWord#30](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#30)]
      [!code-vb[Trin_VstcoreActionsPaneWord#30](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#30)]
 
-4. Se a orientação é horizontal, os controles do painel de ação da esquerda; de pilha Caso contrário, empilhá-los na parte superior.
+4. Se a orientação for horizontal, empilhe os controles do painel de ação da esquerda; caso contrário, empilhe-os da parte superior.
 
      [!code-csharp[Trin_VstcoreActionsPaneWord#31](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#31)]
      [!code-vb[Trin_VstcoreActionsPaneWord#31](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#31)]
 
-5. No c#, você deve adicionar um manipulador de eventos para o `ActionsPane` para o <xref:Microsoft.Office.Tools.Word.Document.Startup> manipulador de eventos. Para obter informações sobre como criar manipuladores de eventos, consulte [como: Criar manipuladores de eventos em projetos do Office](../vsto/how-to-create-event-handlers-in-office-projects.md).
+5. No C#, você deve adicionar um manipulador de eventos para `ActionsPane` o para <xref:Microsoft.Office.Tools.Word.Document.Startup> o manipulador de eventos. Para obter informações sobre como criar manipuladores de [eventos, consulte Como: Crie manipuladores de eventos em projetos](../vsto/how-to-create-event-handlers-in-office-projects.md)do Office.
 
      [!code-csharp[Trin_VstcoreActionsPaneWord#32](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#32)]
 
-6. Execute o projeto e verifique se que os controles do painel de ações são empilhados esquerda para a direita quando o painel de ações é encaixado na parte superior do documento, e os controles são empilhados de cima para baixo quando o painel de ações é encaixado à direita do documento.
+6. Execute o projeto e verifique se os controles do painel ações estão empilhados da esquerda para a direita quando o painel Ações está encaixado na parte superior do documento, e os controles são empilhados de cima para baixo quando o painel Ações é encaixado no lado direito do documento.
 
 ## <a name="example"></a>Exemplo
  [!code-csharp[Trin_VstcoreActionsPaneWord#29](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#29)]
@@ -63,11 +63,11 @@ ms.locfileid: "63445355"
 ## <a name="compile-the-code"></a>Compilar o código
  Este exemplo requer:
 
-- Controla a um projeto de nível de documento do Word com um painel de ações que contém vários controles de usuário ou o painel de ações aninhadas.
+- Um projeto de nível de documento do Word com um painel ações que contém vários controles de usuário ou controles de painel de ações aninhadas.
 
 ## <a name="see-also"></a>Consulte também
-- [Visão geral do painel de ações](../vsto/actions-pane-overview.md)
-- [Como: Adicionar um painel de ações a documentos do Word ou pastas de trabalho do Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)
-- [Como: Adicionar um painel de ações a documentos do Word ou Excel para pastas de trabalho](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)
-- [Passo a passo: Inserir texto em um documento de um painel de ações](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)
-- [Passo a passo: Inserir texto em um documento de um painel de ações](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)
+- [Visão geral do painel Ações](../vsto/actions-pane-overview.md)
+- [Como: Adicionar um painel de ações a documentos do Word ou a pastas de trabalho do Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)
+- [Como: Adicionar um painel de ações a documentos do Word ou a pastas de trabalho do Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)
+- [Passo a passo: Inserir texto em um documento a partir de um painel Ações](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)
+- [Passo a passo: Inserir texto em um documento a partir de um painel Ações](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)

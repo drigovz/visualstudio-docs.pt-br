@@ -1,5 +1,5 @@
 ---
-title: 'Como: Recuperar caracteres iniciais e finais em intervalos de forma programática'
+title: Obter iniciar e encerrar caracteres em intervalos programaticamente
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 041693d5d81fb13e812b260171ec95a2bd183a6a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8e0f04d5f70c99ea3404a95b04a7ea668a37e0f2
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62955661"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67328943"
 ---
 # <a name="how-to-programmatically-retrieve-start-and-end-characters-in-ranges"></a>Como: Recuperar caracteres iniciais e finais em intervalos de forma programática
   Este exemplo demonstra como você pode recuperar as posições de caractere das posições de início e término de um intervalo.

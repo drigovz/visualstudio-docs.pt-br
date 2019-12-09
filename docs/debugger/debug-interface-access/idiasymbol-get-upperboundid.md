@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7711073319a5381a205672ae8023699a725b8936
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 640bce657df53bec66ab75575f35fcd68131a82a
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63401135"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738947"
 ---
-# <a name="idiasymbolgetupperboundid"></a>IDiaSymbol::get_upperBoundId
+# <a name="idiasymbolget_upperboundid"></a>IDiaSymbol::get_upperBoundId
 Recupera o identificador de símbolo do limite superior de uma dimensão de matriz FORTRAN.
 
 ## <a name="syntax"></a>Sintaxe
@@ -32,16 +32,16 @@ HRESULT get_upperBoundId ( 
 
 #### <a name="parameters"></a>Parâmetros
  `pRetVal`
-- [out] Retorna a ID do símbolo que representa o limite superior de uma dimensão de matriz FORTRAN.
+- [fora,] Retorna a ID do símbolo que representa o limite superior de uma dimensão de matriz FORTRAN.
 
-## <a name="return-value"></a>Valor de retorno
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE` ou um código de erro.
 
 > [!NOTE]
-> Um valor de retorno `S_FALSE` significa que a propriedade não está disponível para o símbolo.
+> Um valor de retorno de `S_FALSE` significa que a propriedade não está disponível para o símbolo.
 
 ## <a name="remarks"></a>Comentários
- O identificador é um valor exclusivo criado pelo SDK do DIA para marcar todos os símbolos como exclusivo.
+ O identificador é um valor exclusivo criado pelo DIA SDK para marcar todos os símbolos como exclusivos.
 
 ## <a name="see-also"></a>Consulte também
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

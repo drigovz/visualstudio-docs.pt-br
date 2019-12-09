@@ -15,11 +15,11 @@ caps.latest.revision: 27
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c40c695a912e97269263ba14747b72382847324d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60042457"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68162033"
 ---
 # <a name="how-to-register-a-library-with-the-object-manager"></a>Como: Registrar uma biblioteca com o Gerenciador de Objetos
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -169,4 +169,4 @@ Navegação de símbolos de ferramentas, tais como **Class View**, **Pesquisador
 ## <a name="see-also"></a>Consulte também  
  [Extensibilidade do serviço de linguagem herdado](../../extensibility/internals/legacy-language-service-extensibility.md)   
  [Suporte a ferramentas de navegação de símbolo](../../extensibility/internals/supporting-symbol-browsing-tools.md)   
- [Como: Expor listas de símbolos fornecidos pela biblioteca para o Gerenciador de objetos](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)
+ [Como: expor listas de símbolos fornecidos pela biblioteca ao Gerenciador de Objetos](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)

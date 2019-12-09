@@ -13,12 +13,12 @@ caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b8769cbb23b2c192fd3db07eca9519661b3e214c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: af214f6a29e12dcdf2fe8bd2de75e05283894922
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54762840"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74290118"
 ---
 # <a name="performance-session-properties"></a>Propriedades da sessão de desempenho
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ Um **Sessão de Desempenho** permite definir as configurações que determinam c
   
  [Como definir opções do nome do arquivo de dados de desempenho](../profiling/how-to-set-performance-data-file-name-options.md)  
   
-## <a name="launch"></a>Inicializar  
+## <a name="launch"></a>Inicie o  
  Essas configurações permitem selecionar em uma lista de binários e especificar a ordem de inicialização dos binários.  
   
  Para obter mais informações, [Como especificar o início do binário](../profiling/how-to-specify-the-binary-to-start.md)  
@@ -89,7 +89,7 @@ Um **Sessão de Desempenho** permite definir as configurações que determinam c
  Para obter mais informações, consulte [Como coletar dados do contador de CPU](../profiling/how-to-collect-cpu-counter-data.md)  
   
 ## <a name="windows-events"></a>Eventos do Windows  
- Durante a criação de perfil, você pode coletar dados de provedores de rastreamento de eventos. Você pode exibir os dados usando a opção `/calltrace` da ferramenta de linha de comando VSPerfReport.exe. Para obter mais informações sobre o ETW (Rastreamento de Eventos para Windows), consulte [Sobre o rastreamento de eventos](http://go.microsoft.com/fwlink/?linkid=90752).  
+ Durante a criação de perfil, você pode coletar dados de provedores de rastreamento de eventos. Você pode exibir os dados usando a opção `/calltrace` da ferramenta de linha de comando VSPerfReport.exe. Para obter mais informações sobre o ETW (Rastreamento de Eventos para Windows), consulte [Sobre o rastreamento de eventos](https://go.microsoft.com/fwlink/?linkid=90752).  
   
  Para obter mais informações, consulte:  
   
@@ -107,7 +107,7 @@ Um **Sessão de Desempenho** permite definir as configurações que determinam c
   
  Para obter mais informações, consulte:  
   
- [Como especificar o tempo de execução do .NET Framework](../profiling/how-to-specify-the-dotnet-framework-runtime.md)  
+ [Como especificar o runtime do .NET Framework](../profiling/how-to-specify-the-dotnet-framework-runtime.md)  
   
  [Como especificar opções de instrumentação adicionais](../profiling/how-to-specify-additional-instrumentation-options.md)  
   

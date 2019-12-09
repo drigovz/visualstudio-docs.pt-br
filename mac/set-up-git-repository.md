@@ -1,16 +1,16 @@
 ---
 title: Configurando um Repositório Git
 description: Usando o Git e o Subversion no Visual Studio para Mac.
-author: conceptdev
-ms.author: crdun
-ms.date: 02/15/2018
+author: jmatthiesen
+ms.author: jomatthi
+ms.date: 02/15/2019
 ms.assetid: E992FA1D-B2AD-4A28-ADC6-47E4FC471060
-ms.openlocfilehash: ca216f3f2a65e1c17e2ab8cc1ca17f6f707afb79
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9b21ed322d2b22be619a71e474a3b5078607bbe5
+ms.sourcegitcommit: cf8c0fef2b9690595e99ce3802586cdd55fd37c2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62938271"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70107899"
 ---
 # <a name="set-up-a-git-repository"></a>Configurar um repositório GIT
 
@@ -81,9 +81,9 @@ Se você tiver um projeto existente que ainda _não está_ no controle de versã
 
     ![Menu de Controle de versão](media/version-control-git10.png)
 
-10. Depois de começar a fazer mais alterações, selecione **Enviar alterações por push** para enviar as alterações por push ao repositório **remoto** . Isso permitirá que todos os usuários apropriados possam exibi-las em github.com:
+10. Depois de começar a fazer mais alterações, selecione **Efetuar push nas alterações** para enviar por push as alterações no repositório **remoto**. Isso permitirá que todos os usuários apropriados possam exibi-las em github.com:
 
-    ![Enviar alterações por push para um repositório remoto](media/version-control-git11.png)
+    ![Efetuar push das alterações para um repositório remoto](media/version-control-git11.png)
 
 ## <a name="publishing-a-new-project"></a>Publicar um novo projeto
 

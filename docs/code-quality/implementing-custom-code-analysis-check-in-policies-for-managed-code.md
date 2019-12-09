@@ -1,5 +1,5 @@
 ---
-title: Implementando políticas de check-in de análise do código personalizadas para código gerenciado
+title: Políticas de check-in de análise de código personalizado para código gerenciado
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -7,79 +7,79 @@ f1_keywords:
 - vs.code.analysis.browsefortfsruleset
 - vs.code.analysis.policyeditor
 ms.assetid: fd029003-5671-4b24-8b6f-032e0a98b2e8
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: c32164ef319199171b75379823dc021cfd886d74
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c45453af0e7736a10cba8b5bb98ef75429427e2a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62815784"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72649323"
 ---
 # <a name="implement-custom-code-analysis-check-in-policies-for-managed-code"></a>Implementar políticas de check-in de análise de código personalizadas para código gerenciado
 
-Uma política de check-in do análise código especifica um conjunto de regras que os membros de um projeto de DevOps do Azure devem ser executado no código-fonte antes que ele seja verificado no controle de versão. A Microsoft fornece um conjunto de standard *conjuntos de regra* essa análise de código do grupo de regras em áreas funcionais. *Conjuntos de regras de política de check-in personalizado* especificar um conjunto de regras de análise de código que são específicas a um projeto. Um conjunto de regras é armazenado em um arquivo. RuleSet.
+Uma política de check-in de análise de código especifica um conjunto de regras que os membros de um projeto DevOps do Azure devem executar no código-fonte antes de fazer check-in no controle de versão. A Microsoft fornece um conjunto de *conjuntos de regras* padrão que agrupam regras de análise de código em áreas funcionais. Os *conjuntos de regras de política de check-in personalizados* especificam um conjunto de regras de análise de código que são específicas a um projeto. Um conjunto de regras é armazenado em um arquivo. RuleSet.
 
-Políticas de check-in são definidas no nível do projeto de DevOps do Azure e são especificadas pelo local de um arquivo. RuleSet na árvore de controle de versão. Não há nenhuma restrição sobre o local do controle de versão do conjunto de regra personalizada de política de equipe.
+As políticas de check-in são definidas no nível do projeto DevOps do Azure e especificadas pelo local de um arquivo. RuleSet na árvore de controle de versão. Não há restrições no local de controle de versão do conjunto de regras personalizadas da política de equipe.
 
-Análise de código é configurada para os projetos de código individuais na janela Propriedades para cada projeto. Uma regra personalizada definida para um projeto de código é especificada pelo local físico do arquivo RuleSet no computador local. Quando um arquivo. RuleSet for especificado, que está localizado na mesma unidade como o projeto de código, o Visual Studio usa um caminho relativo para o arquivo de configuração do projeto.
+A análise de código é configurada para os projetos de código individuais na janela Propriedades de cada projeto. Um conjunto de regras personalizadas para um projeto de código é especificado pelo local físico do arquivo. RuleSet no computador local. Quando um arquivo. RuleSet é especificado que está localizado na mesma unidade que o projeto de código, o Visual Studio usa um caminho relativo para o arquivo na configuração do projeto.
 
-Uma prática sugerida para a criação de um DevOps do Azure é de conjunto de regras personalizado de projeto para armazenar o arquivo. RuleSet política de check-in em uma pasta especial que não é uma parte de qualquer projeto de código. Se você armazenar o arquivo em uma pasta dedicada, você pode aplicar permissões que restringem quem podem editar o arquivo de regra e você pode mover facilmente a estrutura de diretório que contém o projeto para outro diretório ou computador.
+Uma prática sugerida para criar um conjunto de regras personalizadas do projeto DevOps do Azure é armazenar o arquivo. RuleSet da diretiva de check-in em uma pasta especial que não faz parte de nenhum projeto de código. Se você armazenar o arquivo em uma pasta dedicada, poderá aplicar permissões que restringem quem pode editar o arquivo de regra, e você pode mover facilmente a estrutura do diretório que contém o projeto para outro diretório ou computador.
 
-## <a name="create-the-project-custom-check-in-rule-set"></a>Criar o conjunto de regras de Check-in personalizado de projeto
+## <a name="create-the-project-custom-check-in-rule-set"></a>Criar o conjunto de regras de check-in personalizado do projeto
 
-Para criar uma regra personalizada definida para um projeto de DevOps do Azure, primeiro crie uma pasta especial para a conjunto de regras de política de check-in **Gerenciador de controle do código-fonte**. Em seguida, crie o arquivo de conjunto de regras e adicionar o arquivo ao controle de versão. Por fim, você pode especificar a conjunto de regras como a código check-in política de análise para o projeto.
+Para criar um conjunto de regras personalizado para um projeto DevOps do Azure, primeiro crie uma pasta especial para o conjunto de regras de política de check-in no **Source Control Explorer**. Em seguida, você cria o arquivo de conjunto de regras e adiciona o arquivo ao controle de versão. Por fim, você especifica o conjunto de regras como a política de check-in de análise de código para o projeto.
 
 > [!NOTE]
-> Para criar uma pasta em um projeto de DevOps do Azure, primeiro você deve mapear a raiz do projeto para um local no computador local.
+> Para criar uma pasta em um projeto DevOps do Azure, primeiro você deve mapear a raiz do projeto para um local no computador local.
 
 ### <a name="to-create-the-version-control-folder-for-the-check-in-policy-rule-set"></a>Para criar a pasta de controle de versão para o conjunto de regras de política de check-in
 
-1. No Team Explorer, expanda o nó do projeto e, em seguida, clique em **controle de origem**.
+1. Em Team Explorer, expanda o nó do projeto e clique em **controle do código-fonte**.
 
-2. No **pastas** painel, clique com botão direito no projeto e, em seguida, clique em **nova pasta**.
+2. No painel **pastas** , clique com o botão direito do mouse no projeto e clique em **nova pasta**.
 
-3. No painel de controle do código-fonte principal, clique com botão direito **nova pasta**, clique em **Renomear**e digite um nome para a regra definir pasta.
+3. No painel principal de controle do código-fonte, clique com o botão direito do mouse em **nova pasta**, clique em **renomear**e digite um nome para a pasta do conjunto de regras.
 
 ### <a name="to-create-the-check-in-policy-rule-set"></a>Para criar o conjunto de regras de política de check-in
 
-1. Sobre o **arquivo** , aponte para **New**e, em seguida, clique em **arquivo**.
+1. No menu **arquivo** , aponte para **novo**e clique em **arquivo**.
 
-2. No **categorias** , clique em **geral**.
+2. Na lista **categorias** , clique em **geral**.
 
-3. No **modelos** lista, clique duas vezes em **conjunto de regras de análise de código**.
+3. Na lista **modelos** , clique duas vezes em **conjunto de regras de análise de código**.
 
-4. [Especifique as regras](../code-quality/how-to-create-a-custom-rule-set.md) para incluir no conjunto de regras e, em seguida, salvar a regra definir o arquivo para a pasta de conjunto de regras que você criou.
+4. [Especifique as regras](../code-quality/how-to-create-a-custom-rule-set.md) a serem incluídas no conjunto de regras e salve o arquivo de conjunto de regras na pasta do conjunto de regras que você criou.
 
-### <a name="to-add-the-rule-set-file-to-version-control"></a>Para adicionar a regra definir o arquivo de controle de versão
+### <a name="to-add-the-rule-set-file-to-version-control"></a>Para adicionar o arquivo do conjunto de regras ao controle de versão
 
-1. Na **Gerenciador de controle do código-fonte**, clique com botão direito na nova pasta e, em seguida, clique em **adicionar itens à pasta**.
+1. Em **Source Control Explorer**, clique com o botão direito do mouse na nova pasta e clique em **Adicionar itens à pasta**.
 
-     Para obter mais informações, consulte [Git e repositórios Azure](/azure/devops/repos/git/overview?view=vsts).
+     Para obter mais informações, consulte [git e Azure Repos](/azure/devops/repos/git/overview?view=vsts).
 
-2. Clique em que a regra definir o arquivo que você criou e clique **concluir**.
+2. Clique no arquivo de conjunto de regras que você criou e clique em **concluir**.
 
-     O arquivo é adicionado ao controle do código-fonte e check-out para você.
+     O arquivo é adicionado ao controle do código-fonte e com check-out para você.
 
-3. No **Gerenciador de controle do código-fonte** janela de detalhes, clique com botão direito no nome do arquivo e, em seguida, clique em **Check-in de alterações pendentes**.
+3. Na janela detalhes do **Source Control Explorer** , clique com o botão direito do mouse no nome do arquivo e clique em **fazer check-in de alterações pendentes**.
 
-4. No **Check-in** caixa de diálogo, você tem a opção de adicionar um comentário e, em seguida, clique em **Fazer Check-In**.
+4. Na caixa de diálogo de **check-in** , você tem a opção de adicionar um comentário e, em seguida, clique em **check-in**.
 
     > [!NOTE]
-    > Se você já tiver configurado uma política de check-in do análise código para seu projeto de DevOps do Azure e você tiver selecionado a **impor check-in contenha somente os arquivos que fazem parte da solução atual**, você irá disparar um aviso de falha de política. Na caixa de diálogo Falha de política, selecione **substituir falha da política e continuar o check-in**. Adicionar um comentário necessário e, em seguida, clique em **Okey**.
+    > Se você já tiver configurado uma política de check-in de análise de código para seu projeto DevOps do Azure e tiver selecionado o **check-in de imposição para conter apenas os arquivos que fazem parte da solução atual**, você disparará um aviso de falha de política. Na caixa de diálogo falha de política, selecione **Substituir falha da política e continuar check-in**. Adicione um comentário necessário e clique em **OK**.
 
-### <a name="to-specify-the-rule-set-file-as-the-check-in-policy"></a>Para especificar a regra definir o arquivo como a política de check-in
+### <a name="to-specify-the-rule-set-file-as-the-check-in-policy"></a>Para especificar o arquivo de conjunto de regras como a política de check-in
 
-1. Sobre o **Team** , aponte para **configurações do projeto**e, em seguida, clique em **controle do código-fonte**.
+1. No menu **equipe** , aponte para **configurações do projeto**e clique em **controle do código-fonte**.
 
-2. Clique em **política de Check-in**e, em seguida, clique em **Add**.
+2. Clique em **política de check-in**e, em seguida, clique em **Adicionar**.
 
-3. No **política de Check-in** lista, clique duas vezes em **análise de código**e certifique-se de que o **impor a análise de código para código gerenciado** caixa de seleção está selecionada.
+3. Na lista **política de check-in** , clique duas vezes em **análise de código**e verifique se a caixa de seleção **impor análise de código para código gerenciado** está marcada.
 
-4. No **executar este conjunto de regras** , clique em  **\<Selecionar conjunto de regras de controle de origem >**.
+4. Na lista **executar este conjunto de regras** , clique em **conjunto de regras \<Select do controle do código-fonte >** .
 
 5. Digite o caminho do arquivo de conjunto de regras de política de check-in no controle de versão.
 
@@ -88,32 +88,40 @@ Para criar uma regra personalizada definida para um projeto de DevOps do Azure, 
      **$/** `TeamProjectName` **/** `VersionControlPath`
 
     > [!NOTE]
-    > Você pode copiar o caminho usando um dos procedimentos a seguir em **Gerenciador de controle do código-fonte**:
+    > Você pode copiar o caminho usando um dos seguintes procedimentos no **Source Control Explorer**:
 
-    - No **pastas** painel, clique na pasta que contém o arquivo de conjunto de regras. Copie o caminho da pasta que aparece no controle de versão do **origem** caixa e, em seguida, digite o nome do arquivo de conjunto de regras manualmente.
+    - No painel **pastas** , clique na pasta que contém o arquivo de conjunto de regras. Copie o caminho de controle de versão da pasta que aparece na caixa **origem** e digite o nome do arquivo de conjunto de regras manualmente.
 
-    - Na janela de detalhes, clique com botão direito do arquivo de conjunto de regras e, em seguida, clique em **propriedades**. Sobre o **gerais** guia, copie o valor na **nome do servidor**.
+    - Na janela de detalhes, clique com o botão direito do mouse no arquivo do conjunto de regras e clique em **Propriedades**. Na guia **geral** , copie o valor em **nome do servidor**.
 
-## <a name="synchronize-code-projects-to-the-check-in-policy-rule-set"></a>Sincronizar os projetos de código para o conjunto de regras de política de Check-in
+## <a name="synchronize-code-projects-to-the-check-in-policy-rule-set"></a>Sincronizar projetos de código com o conjunto de regras de política de check-in
 
-Você especificar uma regra de política de check-in do projeto definir como o conjunto de regras de análise de código de uma configuração de projeto de código na caixa de diálogo Propriedades do projeto de código. Se o conjunto de regras estiver localizado na mesma unidade como o projeto de código, um caminho relativo é usado para especificar o conjunto de regras quando o caminho é selecionado na caixa de diálogo de arquivo. Estruturas de controle de caminho relativo que proporciona as configurações de propriedades do projeto para ser portátil para outros computadores que usam a versão local semelhante.
+Você especifica uma regra de política de check-in de projeto definida como o conjunto de regras de análise de código de uma configuração de projeto de código na caixa de diálogo Propriedades do projeto de código. Se o conjunto de regras estiver localizado na mesma unidade que o projeto de código, um caminho relativo será usado para especificar o conjunto de regras quando o caminho for selecionado na caixa de diálogo arquivo. O caminho relativo permite que as configurações de propriedades do projeto sejam portáveis para outros computadores que usam estruturas de controle de versão locais semelhantes.
 
-### <a name="to-specify-a-project-rule-set-as-the-rule-set-of-a-code-project"></a>Para especificar uma regra de projeto definir como o conjunto de regras de um projeto de código
+### <a name="to-specify-a-project-rule-set-as-the-rule-set-of-a-code-project"></a>Para especificar um conjunto de regras de projeto como o conjunto de regras de um projeto de código
 
-1. Se necessário, recupere a pasta de conjunto de regra de política de check-in e o arquivo de controle de versão.
+1. Se necessário, recupere a pasta e o arquivo do conjunto de regras de diretiva de check-in do controle de versão.
 
-   Você pode executar essa etapa na **Gerenciador de controle do código-fonte** clicando com o conjunto de regras de pasta e, em seguida, clicando em **obter última versão**.
+   Você pode executar essa etapa no **Source Control Explorer** clicando com o botão direito do mouse na pasta conjunto de regras e clicando em **obter versão mais recente**.
 
-2. Na **Gerenciador de soluções**, clique com botão direito no projeto de código e, em seguida, clique em **propriedades**.
+2. Em **Gerenciador de soluções**, clique com o botão direito do mouse no projeto de código e clique em **Propriedades**.
 
 3. **Clique em análise de código**.
 
-4. Se necessário, clique nas opções apropriadas na **Configuration** e **plataforma** lista.
+4. Se necessário, clique nas opções apropriadas nas listas de **configuração** e **plataforma** .
 
-5. Para executar a análise de código sempre que o projeto de código é compilado usando a configuração especificada, selecione a **habilitar análise de código na compilação (define a constante CODE_ANALYSIS)** caixa de seleção.
+::: moniker range="vs-2017"
 
-6. Para ignorar o código em componentes de outras empresas, selecione a **Suprimir resultados do código gerado** caixa de seleção.
+5. Para executar a análise de código toda vez que o projeto de código for criado usando a configuração especificada, selecione **Habilitar análise de código na compilação**.
 
-7. No **executar este conjunto de regras** , clique em  **\<procurar... >**.
+::: moniker-end
 
-8. Especifique a versão local do arquivo de conjunto de regras de política de check-in.
+::: moniker range=">=vs-2019"
+
+5. Para executar a análise de código toda vez que o projeto de código for criado usando a configuração especificada, selecione **executar na compilação** na seção **analisadores binários** .
+
+::: moniker-end
+
+6. Na lista **executar este conjunto de regras** , clique em **\<Browse >** .
+
+8. Selecione a versão local do arquivo de conjunto de regras de política de check-in.

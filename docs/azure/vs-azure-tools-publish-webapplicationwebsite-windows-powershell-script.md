@@ -1,37 +1,34 @@
 ---
 title: Publish-WebApplicationWebSite (script do Windows PowerShell) | Microsoft Docs
 description: Saiba como publicar um projeto Web em um site do Azure. Se os recursos necessários não existirem, este script criará tais recursos em sua assinatura do Azure.
-services: visual-studio-online
 author: ghogen
-manager: douge
+manager: jillfra
 assetId: 63cfaa2d-f04d-40dc-8677-345385c278d5
-ms.prod: visual-studio-dev15
-ms.technology: vs-azure
 ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
-origin.date: 11/11/2016
-ms.date: 09/10/2018
-ms.author: v-junlch
-ms.openlocfilehash: 2e5bd615e83c56a257e093c42fca2a98c5a3efd8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.date: 11/11/2016
+ms.author: ghogen
+ms.openlocfilehash: c5eff35247c85783659f66b13d03c3a5f781df07
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62427436"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911764"
 ---
 # <a name="publish-webapplicationwebsite-windows-powershell-script"></a>Publish-WebApplicationWebSite (script do Windows PowerShell)
 ## <a name="syntax"></a>Sintaxe
 Publica um projeto Web em um site do Azure. Se os recursos necessários não existirem, o script criará tais recursos em sua assinatura do Azure.
 
-    Publish-WebApplicationWebSite
-    -Configuration <configuration>
-    -SubscriptionName <subscriptionName>
-    -WebDeployPackage <packageName>
-    -DatabaseServerPassword @{Name = "name"; Password = "password"}
-    -SendHostMessagesToOutput
-    -Verbose
-
+```
+Publish-WebApplicationWebSite
+–Configuration <configuration>
+-SubscriptionName <subscriptionName>
+-WebDeployPackage <packageName>
+-DatabaseServerPassword @{Name = "name"; Password = "password"}
+-SendHostMessagesToOutput
+-Verbose
+```
 
 ## <a name="configuration"></a>Configuração
 O caminho para o arquivo de configuração de JSON que descreve os detalhes da implantação.
@@ -40,7 +37,7 @@ O caminho para o arquivo de configuração de JSON que descreve os detalhes da i
 | --- | --- |
 | Aliases |nenhum |
 | Necessário? |true |
-| Posição |nomeado |
+| Posição |nomeados |
 | Valor padrão |nenhum |
 | Aceitar entrada do Pipeline? |false |
 | Aceitar caracteres curinga? |false |
@@ -52,19 +49,19 @@ O nome da assinatura do Azure na qual você deseja criar o site.
 | --- | --- |
 | Aliases |nenhum |
 | Necessário? |false |
-| Position |nomeado |
+| Posição |nomeados |
 | Valor padrão |nenhum |
 | Aceitar entrada do Pipeline? |false |
 | Aceitar caracteres curinga? |false |
 
 ## <a name="webdeploypackage"></a>WebDeployPackage
-O caminho para o pacote de implantação Web a publicar no site. Você pode criar este pacote usando o assistente Publicar Web no Visual Studio. Para obter mais informações, consulte [Introdução aos serviços de nuvem do Azure e ASP.NET](http://go.microsoft.com/fwlink/p/?LinkID=623089).
+O caminho para o pacote de implantação Web a publicar no site. Você pode criar este pacote usando o assistente Publicar Web no Visual Studio. Para obter mais informações, consulte [Introdução aos serviços de nuvem do Azure e ASP.NET](vs-azure-tools-publish-webapplicationwebsite-windows-powershell-script.md).
 
 | Parâmetro | Valor padrão |
 | --- | --- |
 | Aliases |nenhum |
 | Necessário? |false |
-| Position |nomeado |
+| Posição |nomeados |
 | Valor padrão |nenhum |
 | Aceitar entrada do Pipeline? |false |
 | Aceitar caracteres curinga? |false |
@@ -76,7 +73,7 @@ O nome do administrador e a senha do Banco de Dados SQL no Azure.
 | --- | --- |
 | Aliases |nenhum |
 | Necessário? |false |
-| Position |nomeado |
+| Posição |nomeados |
 | Valor padrão |nenhum |
 | Aceitar entrada do Pipeline? |false |
 | Aceitar caracteres curinga? |false |
@@ -88,7 +85,7 @@ Se seu valor for true, imprimir mensagens do script para o fluxo de saída.
 | --- | --- |
 | Aliases |nenhum |
 | Necessário? |false |
-| Position |nomeado |
+| Posição |nomeados |
 | Valor padrão |false |
 | Aceitar entrada do Pipeline? |false |
 | Aceitar caracteres curinga? |false |
@@ -98,32 +95,31 @@ Para obter uma explicação completa de como usar o script para criar ambientes 
 
 O arquivo de configuração JSON especifica os detalhes daquilo que está para ser implantado. Ele inclui as informações que você especificou quando criou o projeto, como o nome e também o nome de usuário para o site. Ele também inclui o banco de dados a provisionar, se houver. O código a seguir mostra um exemplo de arquivo de configuração JSON:
 
-    {
-        "environmentSettings": {
-            "webSite": {
-                "name": "WebApplication10554",
-                "location": "China North"
-            },
-            "databases": [
-                {
-                    "connectionStringName": "DefaultConnection",
-                    "databaseName": "WebApplication10554_db",
-                    "serverName": "iss00brc88",
-                    "user": "sqluser2",
-                    "password": "",
-                    "edition": "",
-                    "size": "",
-                    "collation": "",
-                    "location": "China North"
-                }
-            ]
-        }
+```json
+{
+    "environmentSettings": {
+        "webSite": {
+            "name": "WebApplication10554",
+            "location": "West US"
+        },
+        "databases": [
+            {
+                "connectionStringName": "DefaultConnection",
+                "databaseName": "WebApplication10554_db",
+                "serverName": "iss00brc88",
+                "user": "sqluser2",
+                "password": "",
+                "edition": "",
+                "size": "",
+                "collation": "",
+                "location": "West US"
+            }
+        ]
     }
+}
+```
 
 Você pode editar o arquivo de configuração JSON para alterar o que é implantado. Uma seção de site é obrigatória, mas a seção de banco de dados é opcional.
 
 ## <a name="next-steps"></a>Próximas etapas
-Para obter mais informações, consulte [WebApplicationVM de publicação (script do Windows PowerShell)](vs-azure-tools-publish-webapplicationvm.md)
-
-
-<!-- Update_Description: update metedata properties -->
+Para saber mais, confira [Publish-WebApplicationVM (script do Windows PowerShell)](vs-azure-tools-publish-webapplicationvm.md).

@@ -1,20 +1,21 @@
 ---
 title: Refatoração
+description: As refatorações mais populares no Visual Studio, com descrições e exemplos.
 ms.date: 01/10/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - refactoring [Visual Studio]
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 15a36378efe7b6e3151882d5e6927cd7fbfa4542
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: c79a85314313cffce26667be8dbaf99eaa67cebd
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62793174"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72645352"
 ---
 # <a name="refactor-code"></a>Refatorar o código
 

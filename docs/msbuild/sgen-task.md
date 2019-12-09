@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7da05a71d5de4a8f1ec6ef5fbb27a2e74220a1ef
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: c326dc31f6ce80026f1c83c5b71f8e27faabf93e
+ms.sourcegitcommit: 4dfe098ac0df294aad63e6b384d6575980798ca3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62993222"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70887637"
 ---
 # <a name="sgen-task"></a>tarefa SGen
 Cria um assembly de serialização de XML para tipos no assembly especificado. A tarefa encapsula a Ferramenta geradora de serializador de XML (*Sgen.exe*). Para saber mais, confira [Ferramenta geradora de serializador de XML (Sgen.exe)](/dotnet/framework/serialization/xml-serializer-generator-tool-sgen-exe).
@@ -35,7 +35,7 @@ Cria um assembly de serialização de XML para tipos no assembly especificado. A
 |-----------------------------| - |
 | `BuildAssemblyName` | Parâmetro `String` obrigatório.<br /><br /> Defina o assembly para o qual gerar código de serialização. |
 | `BuildAssemblyPath` | Parâmetro `String` obrigatório.<br /><br /> O caminho para o assembly para o qual gerar código de serialização. |
-| `DelaySign` | Parâmetro `Boolean` opcional.<br /><br /> Se for `true`, especificará que você deseja um assembly totalmente com sinal. Se for `false`, especificará que você apenas deseja colocar a chave pública no assembly.<br /><br /> Esse parâmetro não terá nenhum efeito a menos que seja usado com o parâmetro `KeyFile` ou `KeyContainer`. |
+| `DelaySign` | Parâmetro `Boolean` opcional.<br /><br /> Se for `true`, especificará que você apenas deseja colocar a chave pública no assembly. Se for `false`, especificará que você deseja um assembly totalmente com sinal.<br /><br /> Esse parâmetro não terá nenhum efeito a menos que seja usado com o parâmetro `KeyFile` ou `KeyContainer`. |
 | `KeyContainer` | Parâmetro `String` opcional.<br /><br /> Especifica um contêiner que mantém um par de chaves. Isso assinará o assembly inserindo uma chave pública no manifesto do assembly. A tarefa assinará então o assembly final com a chave privada. |
 | `KeyFile` | Parâmetro `String` opcional.<br /><br /> Especifica um par de chaves ou uma chave pública a usar para assinar um assembly. O compilador insere a chave pública no manifesto do assembly e, em seguida, assina o assembly final com a chave privada. |
 | `Platform` | Parâmetro `String` opcional.<br /><br /> Obtém ou define a plataforma do compilador usado para gerar o assembly de saída. Esse parâmetro pode ter um valor igual a `x86`, `x64` ou `anycpu`. O padrão é `anycpu`. |

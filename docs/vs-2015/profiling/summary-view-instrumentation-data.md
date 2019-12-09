@@ -12,11 +12,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5dc0b4195d33a7bf72d17681b6d71e78f1bacfe5
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54784571"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68157772"
 ---
 # <a name="summary-view---instrumentation-data"></a>Exibição Resumo – Dados de instrumentação
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ A exibição Resumo exibe informações sobre as funções mais caras de desempe
   
  O **Afunilamento** inclui os seguintes dados para cada função:  
   
-|Column|Descrição|  
+|Column|DESCRIÇÃO|  
 |------------|-----------------|  
 |**Nome**|O nome da função.|  
 |**% de Tempo Inclusivo Decorrido**|O percentual de todo o tempo nos dados de criação de perfil gasto pela função na execução do código em seu corpo e nas funções chamadas por ela.|  
@@ -42,11 +42,11 @@ A exibição Resumo exibe informações sobre as funções mais caras de desempe
   
  **Funções com a maior parte do trabalho individual** inclui os seguintes dados para cada função:  
   
-|Column|Descrição|  
+|Column|DESCRIÇÃO|  
 |------------|-----------------|  
 |**Nome**|O nome da função.|  
 |**% de tempo exclusivo**|O percentual de todo o tempo nos dados de criação de perfil que a função gastou na execução do código no corpo da função. O tempo gasto em funções que foram chamadas pela função não é incluído.|  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Veja também  
  [Exibição Resumo](../profiling/summary-view-sampling-data.md)   
  [Exibição de Resumo](../profiling/summary-view-dotnet-memory-data.md)

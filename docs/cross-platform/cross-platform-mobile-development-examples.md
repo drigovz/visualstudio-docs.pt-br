@@ -1,7 +1,7 @@
 ---
-title: Exemplos de desenvolvimento móvel multiplataforma | Microsoft Docs
+title: Exemplos de desenvolvimento móvel de plataforma cruzada | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/17/2019
 ms.technology: vs-ide-mobile
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,16 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: b3980273e746b5f6dacd2d8d612a5e5e7dfe2a8e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 8eb8b53da30f0c0896ac9576407d34f9a2f9bdbc
+ms.sourcegitcommit: 57bc1c3887838d707c13feff72a677b3bad3be4b
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62819413"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72777705"
 ---
 # <a name="cross-platform-mobile-development-examples"></a>Exemplos de desenvolvimento móvel multiplataforma
-Vários dos modelos instalados pelo Visual C++ para Desenvolvimento Móvel Multiplataforma geram exemplos completos que podem ser usados para aprendizado. Além disso, o Centro de Desenvolvimento do Windows contém vários aplicativos de exemplo que você pode baixar e experimentar no Visual Studio.
+
+Vários dos modelos instalados pelo **desenvolvimento móvel com C++**  carga de trabalho geram exemplos completos que você pode usar para aprender com o. Além disso, o Centro de Desenvolvimento do Windows contém vários aplicativos de exemplo que você pode baixar e experimentar no Visual Studio.
 
 - [Amostra de aplicativo hello-jni do Android](https://code.msdn.microsoft.com/hello-jni-Android-790ab73d)
 
@@ -36,7 +37,7 @@ Vários dos modelos instalados pelo Visual C++ para Desenvolvimento Móvel Multi
 
 - [Amostra da biblioteca TwoLibs do Android](https://code.msdn.microsoft.com/TwoLibs-Android-Library-6396e5c4)
 
-   Esta amostra é uma porta da amostra TwoLibs do NDK do Android. Ela usa uma biblioteca compartilhada carregada dinamicamente e uma biblioteca Android C++ nativa estática, que implementa um método chamado de um aplicativo de Interface Nativa do Java. Essa amostra é um bom ponto de partida para os desenvolvedores entenderem como usar bibliotecas compartilhadas estáticas/dinâmicas para criar um aplicativo JNI do Android de ponta a ponta com o Visual Studio 2015.
+   Esta amostra é uma porta da amostra TwoLibs do NDK do Android. Ela usa uma biblioteca compartilhada carregada dinamicamente e uma biblioteca Android C++ nativa estática, que implementa um método chamado de um aplicativo de Interface Nativa do Java. Este exemplo é um bom ponto de partida para os desenvolvedores entenderem como usar bibliotecas compartilhadas estáticas/dinâmicas para criar um aplicativo Android JNI de ponta a ponta com o Visual Studio.
 
 - [Amostra de aplicativo TeaPot do Android](https://code.msdn.microsoft.com/Tea-Pot-Android-Application-e7c05d73)
 
@@ -48,7 +49,7 @@ Vários dos modelos instalados pelo Visual C++ para Desenvolvimento Móvel Multi
 
 - [Amostra de biblioteca test-libstdcpp do Android](https://code.msdn.microsoft.com/test-libstdcpp-Android-00b548f5)
 
-   Esta amostra é uma porta da amostra test-libstdc++ do NDK do Android, especificamente para uso com o Visual Studio 2015. Essa amostra é um bom ponto de partida para os desenvolvedores entenderem como usar a Biblioteca Padrão.
+   Este exemplo é uma porta da amostra do Android NDK Test-libstdc + +, especificamente para uso com o Visual Studio. Essa amostra é um bom ponto de partida para os desenvolvedores entenderem como usar a Biblioteca Padrão.
 
   Para abrir um dos exemplos no Visual Studio, baixe o arquivo zip e abra a página **Propriedades** do arquivo baixado no Explorer. Escolha o botão **Desbloquear** e, em seguida, **OK**. Extraia o conteúdo do arquivo zip em um local conveniente e, em seguida, abra a pasta C++ na amostra extraída e abra o arquivo da solução.
 

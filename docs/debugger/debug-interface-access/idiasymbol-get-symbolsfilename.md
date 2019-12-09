@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eced26fe8316966807dab68c5361535cb551f5d1
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: f282f7eeae0dd4def8468322bf73e192503ceef1
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63401262"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739253"
 ---
-# <a name="idiasymbolgetsymbolsfilename"></a>IDiaSymbol::get_symbolsFileName
+# <a name="idiasymbolget_symbolsfilename"></a>IDiaSymbol::get_symbolsFileName
 Recupera o nome do arquivo do qual os símbolos foram carregados.
 
 ## <a name="syntax"></a>Sintaxe
@@ -33,16 +33,16 @@ HRESULT get_symbolsFileName ( 
 #### <a name="parameters"></a>Parâmetros
  `pRetVal`
 
-[out] Retorna o nome do arquivo do qual os símbolos foram carregados.
+fora Retorna o nome do arquivo do qual os símbolos foram carregados.
 
-## <a name="return-value"></a>Valor de retorno
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE` ou um código de erro.
 
 > [!NOTE]
-> Um valor de retorno `S_FALSE` significa que a propriedade não está disponível para o símbolo.
+> Um valor de retorno de `S_FALSE` significa que a propriedade não está disponível para o símbolo.
 
 ## <a name="remarks"></a>Comentários
- Essa propriedade é válida somente para símbolos com um [enumeração SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) valor `SymTagExe` que também têm escopo global.
+ Essa propriedade é válida somente para símbolos com um valor de [Enumeração SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) de `SymTagExe` que também têm escopo global.
 
 ## <a name="see-also"></a>Consulte também
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

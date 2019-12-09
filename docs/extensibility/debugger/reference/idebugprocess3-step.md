@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProcess3::Step
 ms.assetid: 6ad9094c-27cc-4927-8a7c-1b4d97b2e436
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 296c76a386b72c3435a90e207dd76f9eeca56422
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: dc3ffecf5a2760077c0a5da4f4508163a48ca1a4
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63412949"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66313889"
 ---
 # <a name="idebugprocess3step"></a>IDebugProcess3::Step
 Faz com que o processo para a etapa de uma instrução ou instrução.
@@ -43,18 +46,15 @@ int Step(
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `pThread`
+## <a name="parameters"></a>Parâmetros
+`pThread`\
+[in] Uma [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) objeto que representa o thread que está sendo passado.
 
- [in] Uma [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) objeto que representa o thread que está sendo passado.
+`sk`\
+[in] Um dos [STEPKIND](../../../extensibility/debugger/reference/stepkind.md) valores.
 
- `sk`
-
- [in] Um dos [STEPKIND](../../../extensibility/debugger/reference/stepkind.md) valores.
-
- `step`
-
- [in] Um dos [STEPUNIT](../../../extensibility/debugger/reference/stepunit.md) valores.
+`step`\
+[in] Um dos [STEPUNIT](../../../extensibility/debugger/reference/stepunit.md) valores.
 
 ## <a name="return-value"></a>Valor de retorno
  Se for bem-sucedido, retornará S_OK; Caso contrário, retorna o código de erro.

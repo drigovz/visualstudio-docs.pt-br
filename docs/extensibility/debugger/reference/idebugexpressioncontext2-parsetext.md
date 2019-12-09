@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugExpressionContext2::ParseText
 ms.assetid: f58575db-f926-4ac8-83ff-7b3b86ab61e2
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 14debc141236558090116ff40f3f515c189b70ef
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 170183924c31933f77903a89851c15c463c326e6
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62919993"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66325910"
 ---
 # <a name="idebugexpressioncontext2parsetext"></a>IDebugExpressionContext2::ParseText
 Analisa uma expressão na forma de texto para avaliação posterior.
@@ -46,30 +49,24 @@ int ParseText(
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
-`pszCode`
+## <a name="parameters"></a>Parâmetros
+`pszCode`\
+[in] A expressão a ser analisado.
 
- [in] A expressão a ser analisado.
+`dwFlags`\
+[in] Uma combinação de sinalizadores do [PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md) enumeração que controla a análise.
 
-`dwFlags`
+`nRadix`\
+[in] A base a ser usado na análise de todas as informações numéricas em `pszCode`.
 
- [in] Uma combinação de sinalizadores do [PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md) enumeração que controla a análise.
+`ppExpr`\
+[out] Retorna o [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md) objeto que representa a expressão analisada, que está pronta para vinculação e avaliação.
 
-`nRadix`
+`pbstrError`\
+[out] Retorna a mensagem de erro se a expressão contiver um erro.
 
- [in] A base a ser usado na análise de todas as informações numéricas em `pszCode`.
-
-`ppExpr`
-
- [out] Retorna o [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md) objeto que representa a expressão analisada, que está pronta para vinculação e avaliação.
-
-`pbstrError`
-
- [out] Retorna a mensagem de erro se a expressão contiver um erro.
-
-`pichError`
-
- [out] Retorna o índice de caracteres do erro no `pszCode` se a expressão contiver um erro.
+`pichError`\
+[out] Retorna o índice de caracteres do erro no `pszCode` se a expressão contiver um erro.
 
 ## <a name="return-value"></a>Valor de retorno
 Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.

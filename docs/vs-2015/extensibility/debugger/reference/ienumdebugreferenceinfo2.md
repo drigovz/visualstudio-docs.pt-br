@@ -13,11 +13,11 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 21c39c553a153707bad707d50cf5a13ae87973fd
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58928886"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68147744"
 ---
 # <a name="ienumdebugreferenceinfo2"></a>IEnumDebugReferenceInfo2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -51,7 +51,7 @@ IEnumDebugReferenceInfo2 : IUnknown
  Uma referência é, essencialmente, um tipo e um endereço, enquanto que uma propriedade é um nome, o tipo e o endereço. Uma referência persiste desde que o objeto referenciado existe na memória. Ver [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) para obter mais detalhes.  
   
 ## <a name="requirements"></a>Requisitos  
- Header: msdbg.h  
+ Cabeçalho: msdbg.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   

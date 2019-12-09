@@ -18,55 +18,55 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ebef342338430404f9506779c2b1e5312462178
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0920da406e911f388c2b9ae77db16ee325aaae65
+ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62900542"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72806969"
 ---
 # <a name="clickonce-and-authenticode"></a>ClickOnce e Authenticode
-*Authenticode* é uma tecnologia da Microsoft que usa criptografia padrão do setor para assinar código do aplicativo com certificados digitais que verificam a autenticidade do Editor do aplicativo. Por meio de Authenticode para implantação de aplicativo, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] reduz o risco de um cavalo de Troia. Um cavalo de Troia é um vírus ou outro programa prejudicial que um terceiro mal-intencionado deturpe como um programa legítimo proveniente de uma fonte confiável e estabelecida. Assinatura [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implantações com um certificado digital é uma etapa opcional para verificar que os assemblies e arquivos não são alterados.
+O *Authenticode* é uma tecnologia da Microsoft que usa a criptografia padrão da indústria para assinar o código do aplicativo com certificados digitais que verificam a autenticidade do editor do aplicativo. Usando Authenticode para implantação de aplicativo, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] reduz o risco de um cavalo de Troia. Um cavalo de Troia é um vírus ou outro programa prejudicial que uma terceira parte mal-intencionada representa indefinidamente como um programa legítimo proveniente de uma fonte confiável e estabelecida. A assinatura de [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implantações com um certificado digital é uma etapa opcional para verificar se os assemblies e arquivos não foram violados.
 
- As seções a seguir descrevem os diferentes tipos de certificados digitais usados em Authenticode, como os certificados são validados usando certificado autoridades (CAs), a função de carimbo de hora em certificados e os métodos de armazenamento disponível para certificados.
+ As seções a seguir descrevem os diferentes tipos de certificados digitais usados em Authenticode, como os certificados são validados usando CAs (autoridades de certificação), a função de carimbo de data/hora em certificados e os métodos de armazenamento disponíveis para o certificado.
 
 ## <a name="authenticode-and-code-signing"></a>Authenticode e assinatura de código
- Um *certificado digital* é um arquivo que contém um pública/privada par de chaves criptográficas, juntamente com metadados que descrevem o publicador para quem o certificado foi emitido e a agência que emitiu o certificado.
+ Um *certificado digital* é um arquivo que contém um par de chaves públicas/privadas de criptografia, junto com os metadados que descrevem o editor para o qual o certificado foi emitido e a agência que emitiu o certificado.
 
- Há vários tipos de certificados Authenticode. Cada um deles está configurado para diferentes tipos de assinatura. Para [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativos, você deve ter um certificado Authenticode que é válido para assinatura de código. Se você tentar entrar um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo com outro tipo de certificado, tais como um certificado digital de email, ele não funcionará. Para obter mais informações, consulte [Introdução à assinatura de código](http://go.microsoft.com/fwlink/?LinkId=179452).
+ Há vários tipos de certificados Authenticode. Cada uma está configurada para diferentes tipos de assinatura. Para aplicativos [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], você deve ter um certificado Authenticode válido para assinatura de código. Se você tentar assinar um aplicativo [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] com outro tipo de certificado, como um certificado de email digital, ele não funcionará. Para obter mais informações, consulte [introdução à assinatura de código](/windows/desktop/seccrypto/cryptography-tools).
 
- Você pode obter um certificado de assinatura de código em uma destas três maneiras:
+ Você pode obter um certificado para a assinatura de código de uma das três maneiras:
 
 - Compre um de um fornecedor de certificado.
 
-- Receba um de um grupo em sua organização responsável pela criação de certificados digitais.
+- Receba uma de um grupo em sua organização responsável pela criação de certificados digitais.
 
-- Gerar seu próprio certificado usando o cmdlet New-SelfSignedCertificate do PowerShell ou usando *MakeCert.exe*, que é incluído com o [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)].
+- Gere seu próprio certificado usando o cmdlet New-SelfSignedCertificate do PowerShell ou usando *MakeCert. exe*, que está incluído no [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)].
 
 ### <a name="how-using-certificate-authorities-helps-users"></a>Como usar autoridades de certificação ajuda os usuários
- Um certificado gerado usando New-SelfSignedCertificate ou o *MakeCert.exe* utilitário é comumente chamado de um *self-cert* ou uma *teste cert*. Esse tipo de certificado funciona quase da mesma forma que um *. snk* arquivo funciona no .NET Framework. Ele consiste exclusivamente em um par de chaves criptográficas pública/privada e não contém nenhuma informação verificável sobre o publicador. Você pode usar certificados de autoatendimento para implantar [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativos com alta confiança em uma intranet. No entanto, quando esses aplicativos são executados em um computador cliente, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] identificará como proveniente de um editor desconhecido. Por padrão, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativos assinados com certificados de autoatendimento e implantados pela Internet não é possível utilizar a implantação de aplicativos confiáveis.
+ Um certificado gerado usando New-SelfSignedCertificate ou o utilitário *MakeCert. exe* é normalmente chamado de certificado de *autoatendimento* ou de *teste*. Esse tipo de certificado funciona muito da mesma maneira que um arquivo *. SNK* funciona no .NET Framework. Ele consiste apenas em um par de chaves criptográficas pública/privada e não contém informações verificáveis sobre o Publicador. Você pode usar certificados automáticos para implantar [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativos com alta confiança em uma intranet. No entanto, quando esses aplicativos são executados em um computador cliente, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] os identificarão como provenientes de um editor desconhecido. Por padrão, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativos assinados com autocert e implantados pela Internet não podem utilizar a implantação de aplicativos confiáveis.
 
- Por outro lado, se você receber um certificado de autoridade de certificação, como um fornecedor de certificado ou um departamento dentro de sua empresa, o certificado oferece mais segurança para seus usuários. Ele não só identifica o Editor de software assinado, mas ele verifica essa identidade examinando-se com a autoridade de certificação que assinou. Se a autoridade de certificação não é a autoridade raiz, Authenticode serão também "encadear" volta para a autoridade de raiz para verificar se a autoridade de certificação está autorizada para emitir certificados. Para maior segurança, você deve usar um certificado emitido por uma autoridade de certificação sempre que possível.
+ Por outro lado, se você receber um certificado de uma autoridade de certificação, como um fornecedor de certificado ou um departamento dentro de sua empresa, o certificado oferecerá mais segurança para seus usuários. Ele não apenas identifica o editor do software assinado, mas verifica essa identidade verificando a autoridade de certificação que a assinou. Se a autoridade de certificação não for a autoridade raiz, o Authenticode também "encadeará" à autoridade raiz para verificar se a autoridade de certificação está autorizada a emitir certificados. Para maior segurança, você deve usar um certificado emitido por uma autoridade de certificação sempre que possível.
 
- Para obter mais informações sobre como gerar certificados de autoatendimento, consulte [New-SelfSignedCertificate](https://technet.microsoft.com/itpro/powershell/windows/pkiclient/new-selfsignedcertificate) ou [MakeCert](/windows/desktop/SecCrypto/makecert).
+ Para obter mais informações sobre como gerar certificados automáticos, consulte [New-SelfSignedCertificate](https://technet.microsoft.com/itpro/powershell/windows/pkiclient/new-selfsignedcertificate) ou [MakeCert](/windows/desktop/SecCrypto/makecert).
 
 ### <a name="timestamps"></a>Carimbos de data/hora
- Os certificados usados para assinar [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativos expiram após um determinado período de tempo, normalmente doze meses. Para remover a necessidade de constantemente assinar novamente aplicativos com novos certificados, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dá suporte ao carimbo de hora. Quando um aplicativo é assinado com um carimbo de hora, o seu certificado continuará a ser aceito, mesmo após a expiração, contanto que o carimbo de hora é válido. Isso permite que [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativos com certificados expirados, mas os carimbos de hora válidos, para baixar e executar. Ele também permite que aplicativos instalados com certificados expirados para continuar a baixar e instalar atualizações.
+ Os certificados usados para assinar [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativos expiram após um determinado período de tempo, normalmente de doze meses. Para remover a necessidade de assinar constantemente aplicativos com novos certificados, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dá suporte a carimbo de data/hora. Quando um aplicativo é assinado com um carimbo de data/hora, seu certificado continuará a ser aceito mesmo após a expiração, desde que o carimbo de data/hora seja válido. Isso permite que [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativos com certificados expirados, mas carimbos de data/hora válidos, sejam baixados e executados. Ele também permite que aplicativos instalados com certificados expirados continuem a baixar e instalar atualizações.
 
- Para incluir um carimbo de hora em um servidor de aplicativos, um servidor de carimbo de hora deve estar disponível. Para obter informações sobre como selecionar um servidor de carimbo de hora, consulte [como: Assinar manifestos de aplicativo e de implantação](../ide/how-to-sign-application-and-deployment-manifests.md).
+ Para incluir um carimbo de data/hora em um servidor de aplicativos, um servidor de carimbo de data/hora deve estar disponível. Para obter informações sobre como selecionar um servidor de carimbo de data/hora, consulte [como assinar manifestos de aplicativo e implantação](../ide/how-to-sign-application-and-deployment-manifests.md).
 
 ### <a name="update-expired-certificates"></a>Atualizar certificados expirados
- Em versões anteriores do .NET Framework, a atualização de um aplicativo cujo certificado tivesse expirado pode causar que o aplicativo pare de funcionar. Para resolver esse problema, use um dos seguintes métodos:
+ Em versões anteriores do .NET Framework, a atualização de um aplicativo cujo certificado expirou poderia fazer com que esse aplicativo pare de funcionar. Para resolver esse problema, use um dos seguintes métodos:
 
-- Atualize o .NET Framework para a versão 2.0 SP1 ou posterior no Windows XP, ou a versão 3.5 ou posterior no Windows Vista.
+- Atualize o .NET Framework para a versão 2,0 SP1 ou posterior no Windows XP ou na versão 3,5 ou posterior no Windows Vista.
 
-- Desinstalar o aplicativo e reinstale uma nova versão com um certificado válido.
+- Desinstale o aplicativo e reinstale uma nova versão com um certificado válido.
 
-- Crie um assembly de linha de comando que atualiza o certificado. Informações passo a passo sobre esse processo podem ser encontradas em [925521 de artigo de suporte do Microsoft](http://go.microsoft.com/fwlink/?LinkId=179454).
+- Crie um assembly de linha de comando que atualize o certificado. Informações passo a passo sobre esse processo podem ser encontradas em [suporte da Microsoft artigo 925521](https://support.microsoft.com/help/925521).
 
-### <a name="store-certificates"></a>Certificados de Store
+### <a name="store-certificates"></a>Armazenar certificados
 
-- Você pode armazenar certificados como uma *. pfx* arquivo em seu sistema de arquivos, ou você pode armazená-los dentro de um contêiner de chave. Um usuário em um domínio do Windows pode ter um número de contêineres de chave. Por padrão, *MakeCert.exe* irá armazenar certificados em seu contêiner de chave particular, a menos que você especifique que ela deve salvá-la em um *. pfx* em vez disso. *Mage.exe* e *MageUI.exe*, o [!INCLUDE[winsdkshort](../debugger/debug-interface-access/includes/winsdkshort_md.md)] ferramentas para criar [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implantações, permitem que você use certificados armazenados de qualquer maneira.
+- Você pode armazenar certificados como um arquivo *. pfx* no sistema de arquivos ou pode armazená-los dentro de um contêiner de chave. Um usuário em um domínio do Windows pode ter um número de contêineres de chave. Por padrão, *MakeCert. exe* armazenará certificados em seu contêiner de chave pessoal, a menos que você especifique que ele deve salvá-lo em um *. pfx* em vez disso. O *Mage. exe* e o *MageUI. exe*, as ferramentas de [!INCLUDE[winsdkshort](../debugger/debug-interface-access/includes/winsdkshort_md.md)] para criar [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implantações, permitem que você use certificados armazenados de qualquer maneira.
 
 ## <a name="see-also"></a>Consulte também
 - [Segurança e implantação do ClickOnce](../deployment/clickonce-security-and-deployment.md)

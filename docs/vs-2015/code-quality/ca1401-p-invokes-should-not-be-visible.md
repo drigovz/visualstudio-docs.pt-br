@@ -12,31 +12,31 @@ helpviewer_keywords:
 - PInvokesShouldNotBeVisible
 ms.assetid: 0f4d96c1-f9de-414e-b223-4dc7f691bee3
 caps.latest.revision: 19
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: ee4afd777f46087a7497dbdf4734e4ced52f47d4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f3f867f14f7a2eca4482f1f8d5fb48149f02f43f
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58923333"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661366"
 ---
-# <a name="ca1401-pinvokes-should-not-be-visible"></a>CA1401: P/Invokes não devem ser visíveis
+# <a name="ca1401-pinvokes-should-not-be-visible"></a>CA1401: P/Invokes não deve estar visível
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |NomeDoTipo|PInvokesShouldNotBeVisible|
 |CheckId|CA1401|
-|Categoria|Microsoft.Interoperability|
+|Categoria|Microsoft. Interoperability|
 |Alteração Significativa|Quebra|
 
 ## <a name="cause"></a>Causa
- Um método público ou protegido em um tipo público tem o <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName> atributo (também implementado pelos `Declare` palavra-chave em [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]).
+ Um método público ou protegido em um tipo público tem o atributo <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName> (também implementado pela palavra-chave `Declare` no [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]).
 
 ## <a name="rule-description"></a>Descrição da Regra
- Métodos que são marcados com o <xref:System.Runtime.InteropServices.DllImportAttribute> atributo (ou métodos que são definidos usando o `Declare` palavra-chave em [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]) usar serviços de invocação de plataforma para acessar código não gerenciado. Esses métodos não devem ser expostos. Mantendo esses métodos privado ou interno, você certifique-se de que sua biblioteca não pode ser usada de violação de segurança, permitindo que os chamadores acessem APIs não gerenciadas que não pôde chamar caso contrário.
+ Os métodos que são marcados com o atributo <xref:System.Runtime.InteropServices.DllImportAttribute> (ou métodos que são definidos usando a palavra-chave `Declare` no [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]) usam os serviços de invocação de plataforma para acessar código não gerenciado. Esses métodos não devem ser expostos. Ao manter esses métodos privados ou internos, certifique-se de que sua biblioteca não pode ser usada para violar a segurança, permitindo que os chamadores acessem APIs não gerenciadas que não podiam chamar de outra forma.
 
 ## <a name="how-to-fix-violations"></a>Como Corrigir Violações
  Para corrigir uma violação dessa regra, altere o nível de acesso do método.

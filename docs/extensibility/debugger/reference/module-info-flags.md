@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - MODULE_INFO_FLAGS enumeration
 ms.assetid: e22d3723-b4d4-4524-8a2f-3adb55bbd273
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6db802fba0d6cd6b6f9b91dd40f6046491fb1f2b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: d8cc60510e29cdf502b0a91b434966d1ea47860d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62913868"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66346680"
 ---
 # <a name="moduleinfoflags"></a>MODULE_INFO_FLAGS
 Especifica o estado de símbolos para um módulo.
@@ -37,8 +40,9 @@ public enum enum_MODULE_INFO_FLAGS {
 };
 ```
 
-## <a name="members"></a>Membros
- MIF_SYMBOLS_LOADED em pelo menos um conjunto de símbolos foi carregado pelo módulo (caso contrário, nenhum símbolo foi carregado).
+## <a name="fields"></a>Campos
+ `MIF_SYMBOLS_LOADED`\
+ Pelo menos um conjunto de símbolos foi carregado pelo módulo (caso contrário, nenhum símbolo foi carregado).
 
 ## <a name="remarks"></a>Comentários
  Esse valor é retornado o [GetSymbolSearchInfo](../../../extensibility/debugger/reference/idebugsymbolsearchevent2-getsymbolsearchinfo.md) método.

@@ -1,5 +1,5 @@
 ---
-title: Depurar aplicativos multi-threaded | Microsoft Docs
+title: Depurar aplicativos multithread | Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/06/2018
 ms.topic: conceptual
@@ -22,41 +22,41 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b3f2fc8b6acd38393cf9fefb1c5581ab4d1a0712
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 668e95c340348eeb1fa509622aa44d99b65b6efc
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62852934"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72431813"
 ---
 # <a name="debug-multithreaded-applications-in-visual-studio"></a>Depurar aplicativos multi-threaded no Visual Studio
-Um thread é uma sequência de instruções para o qual o sistema operacional concede tempo do processador. Cada processo que está em execução no sistema operacional consiste em pelo menos um thread. Os processos que têm mais de um thread são chamados multithread.
+Um thread é uma sequência de instruções para as quais o sistema operacional concede o tempo do processador. Cada processo que está em execução no sistema operacional consiste em pelo menos um thread. Os processos que têm mais de um thread são chamados multithread.
 
-Computadores com vários processadores, processadores de vários núcleos ou processos de hyperthreading podem executar vários threads simultâneos. Processamento paralelo usando vários threads pode melhorar significativamente o desempenho do programa, mas ele pode também tornar a depuração mais difícil porque você está acompanhando o número de threads.
+Computadores com vários processadores, processadores de vários núcleos ou processos de hyperthreading podem executar vários threads simultaneamente. O processamento paralelo usando muitos threads pode melhorar muito o desempenho do programa, mas também pode tornar a depuração mais difícil, pois você está acompanhando vários threads.
 
-O multithreading pode introduzir novos tipos de bugs potenciais. Por exemplo, dois ou mais threads precisam acessar o mesmo recurso, mas apenas um thread por vez pode acessar com segurança o recurso. Alguma forma de exclusão mútua é necessária para certificar-se de que apenas um thread está acessando o recurso a qualquer momento. Se a exclusão mútua for implementada incorretamente, pode criar uma *deadlock* condição em que nenhum thread executará. Os deadlocks geralmente são um problema difícil de depurar.
+O multithreading pode introduzir novos tipos de bugs potenciais. Por exemplo, dois ou mais threads podem precisar acessar o mesmo recurso, mas apenas um thread por vez pode acessar com segurança o recurso. Alguma forma de exclusão mútua é necessária para garantir que apenas um thread acesse o recurso a qualquer momento. Se a exclusão mútua for implementada incorretamente, ela poderá criar uma condição de *deadlock* em que nenhum thread será executado. Os deadlocks geralmente são um problema difícil de depurar.
 
 ## <a name="tools-for-debugging-multithreaded-apps"></a>Ferramentas para depurar aplicativos multithread
 
-Visual Studio fornece ferramentas diferentes para uso na depuração de aplicativos multithreaded.
+O Visual Studio fornece ferramentas diferentes para uso na depuração de aplicativos multissegmentados.
 
-- Para threads, as ferramentas principais para depurar threads são a **Threads** janela, marcadores de thread em janelas de origem, o **pilhas paralelas** janela, o **inspeção paralela** janela e o **local de depuração** barra de ferramentas. Para saber mais sobre o **Threads** janela e **local de depuração** barra de ferramentas, consulte [passo a passo: Depuração com a janela Threads](../debugger/how-to-use-the-threads-window.md). Para saber como usar o **pilhas paralelas** e **inspeção paralela** windows, consulte [começar a depurar um aplicativo multi-threaded](../debugger/get-started-debugging-multithreaded-apps.md). Os dois tópicos mostram como usar marcadores de thread.
+- Para threads, as principais ferramentas para depuração de threads são a janela **threads** , marcadores de thread nas janelas de origem, a janela **pilhas paralelas** , a janela de **inspeção paralela** e a barra de ferramentas **local de depuração** . Para saber mais sobre o **Threads** janela e **local de depuração** barra de ferramentas, consulte [passo a passo: Depuração com a janela Threads](../debugger/how-to-use-the-threads-window.md). Para saber como usar as **pilhas paralelas** e as janelas de **inspeção paralelas** , consulte [introdução à depuração de um aplicativo multi-threaded](../debugger/get-started-debugging-multithreaded-apps.md). Os dois tópicos mostram como usar marcadores de thread.
 
-- Para o código que usa o [tarefa TPL (biblioteca paralela)](/dotnet/standard/parallel-programming/task-parallel-library-tpl) ou o [tempo de execução de simultaneidade](/cpp/parallel/concrt/concurrency-runtime/), são as ferramentas principais para depurar o **pilhas paralelas** janela, o **Inspeção paralela** janela e o **tarefas** janela, que também dá suporte a JavaScript. Para começar, consulte [passo a passo: Depurando um aplicativo paralelo](../debugger/walkthrough-debugging-a-parallel-application.md) e [passo a passo: Depuração de um C++ aplicativo AMP](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application).
+- Para o código que usa a [TPL (biblioteca paralela de tarefas)](/dotnet/standard/parallel-programming/task-parallel-library-tpl) ou a [tempo de execução de simultaneidade](/cpp/parallel/concrt/concurrency-runtime/), as principais ferramentas para depuração são a janela **pilhas paralelas** , a janela de **inspeção paralela** e a janela **tarefas** , que também dá suporte a Linguagem. Para começar, consulte [passo a passos: Depurando um aplicativo paralelo](../debugger/walkthrough-debugging-a-parallel-application.md) e [explicando: Depurando um C++ aplicativo amp](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application).
 
-- Para depurar threads na GPU, a principal ferramenta é o **Threads da GPU** janela. Veja [Como: Usar a janela Threads da GPU](../debugger/how-to-use-the-gpu-threads-window.md).
+- Para depurar threads na GPU, a principal ferramenta é a janela **threads de GPU** . Consulte [como: usar a janela threads GPU](../debugger/how-to-use-the-gpu-threads-window.md).
 
-- Para processos, as ferramentas principais são as **anexar ao processo** caixa de diálogo, o **processos** janela e o **local de depuração** barra de ferramentas.
+- Para processos, as principais ferramentas são a caixa de diálogo **anexar ao processo** , a janela **processos** e a barra de ferramentas **local de depuração** .
 
-Visual Studio também fornece pontos de interrupção avançados e pontos de controle, que pode ser útil quando você depura aplicativos multissegmentados. Usar condições de ponto de interrupção e filtros para colocar pontos de interrupção em threads individuais. Pontos de controle permitem que você para rastrear a execução do seu programa sem quebrar, para estudar problemas, como deadlocks. Para obter mais informações, consulte [ações de ponto de interrupção e tracepoints](../debugger/using-breakpoints.md#BKMK_Print_to_the_Output_window_with_tracepoints).
+O Visual Studio também fornece pontos de interrupção e tracepoints poderosos, que podem ser úteis quando você depura aplicativos multithread. Use condições e filtros de ponto de interrupção para posicionar pontos de interrupção em threads individuais. Os Tracepoints permitem rastrear a execução do seu programa sem interrupção, para estudar problemas como deadlocks. Para obter mais informações, consulte [ações de ponto de interrupção e tracepoints](../debugger/using-breakpoints.md#BKMK_Print_to_the_Output_window_with_tracepoints).
 
-Depurar um aplicativo com vários thread que tenha uma interface de usuário pode ser especialmente difícil. Você pode considerar a execução do aplicativo em um segundo computador e usar a depuração remota. Para obter mais informações, consulte [depuração remota](../debugger/remote-debugging.md).
+Depurar um aplicativo com vários thread que tenha uma interface de usuário pode ser especialmente difícil. Você pode considerar executar o aplicativo em um segundo computador e usar a depuração remota. Para obter mais informações, consulte [depuração remota](../debugger/remote-debugging.md).
 
-## <a name="articles-about-debugging-multithreaded-apps"></a>Artigos sobre como depurar aplicativos multithread
+## <a name="articles-about-debugging-multithreaded-apps"></a>Artigos sobre a depuração de aplicativos multithread
 
- [Introdução ao depurar um aplicativo multithreaded](../debugger/get-started-debugging-multithreaded-apps.md)
+ [Introdução à depuração de um aplicativo multithread](../debugger/get-started-debugging-multithreaded-apps.md)
 
-Um tour pelos recursos, enfatizando os recursos de depuração a **pilhas paralelas** janela e o **inspeção paralela** janela.
+Um tour pelos recursos de depuração de threads, enfatizando recursos na janela **pilhas paralelas** e na janela de **inspeção paralela** .
 
  [Ferramentas para depurar threads e processos](../debugger/debug-threads-and-processes.md)
 
@@ -66,23 +66,23 @@ Lista os recursos das ferramentas para depurar threads e processos.
 
 Explica como depurar vários processos.
 
- [Passo a passo: Depuração com a janela Threads](../debugger/how-to-use-the-threads-window.md).
+ [Passo a passo: depurar usando a janela Threads](../debugger/how-to-use-the-threads-window.md).
 
-Passo a passo que mostra como usar o **Threads** janela e o **local de depuração** barra de ferramentas.
+Walkthrough que mostra como usar a janela **threads** e a barra de ferramentas **Location de depuração** .
 
- [Passo a passo: Depurar um aplicativo paralelo](../debugger/walkthrough-debugging-a-parallel-application.md)
+ [Passo a passo: depurar um aplicativo paralelo](../debugger/walkthrough-debugging-a-parallel-application.md)
 
-Passo a passo que mostra como usar o **pilhas paralelas** e **tarefas** windows.
+Walkthrough que mostra como usar as janelas de **pilhas paralelas** e **tarefas** .
 
- [Como: Mudar para outro thread durante a depuração](../debugger/how-to-switch-to-another-thread-while-debugging.md)
+ [Como mudar para outro thread durante a depuração](../debugger/how-to-switch-to-another-thread-while-debugging.md)
 
-Várias maneiras para alternar o contexto de depuração para outro thread.
+Várias maneiras de alternar o contexto de depuração para outro thread.
 
- [Como: Sinalizar e remover sinalização de threads](../debugger/how-to-flag-and-unflag-threads.md)
+ [Como sinalizar e remover sinalizador de threads](../debugger/how-to-flag-and-unflag-threads.md)
 
 Marque ou sinalize threads aos quais você deseja dar atenção especial durante a depuração.
 
- [Como: Depurar em um cluster de alto desempenho](../debugger/how-to-debug-on-a-high-performance-cluster.md)
+ [Como depurar em um cluster de alto desempenho](../debugger/how-to-debug-on-a-high-performance-cluster.md)
 
 Técnicas para depurar um aplicativo executado em um conjunto de alto desempenho.
 
@@ -90,11 +90,11 @@ Técnicas para depurar um aplicativo executado em um conjunto de alto desempenho
 
 Técnicas simples que podem ser úteis para depurar threads nativos.
 
- [Como: Definir um nome de thread em código nativo](../debugger/how-to-set-a-thread-name-in-native-code.md)
+ [Como definir um nome de thread em código nativo](../debugger/how-to-set-a-thread-name-in-native-code.md)
 
 Atribua ao thread um nome que aparecerá na janela **Threads**.
 
- [Como: Definir o nome de um thread no código gerenciado](../debugger/how-to-set-a-thread-name-in-managed-code.md)
+ [Como definir um nome de thread em código gerenciado](../debugger/how-to-set-a-thread-name-in-managed-code.md)
 
 Atribua ao thread um nome que aparecerá na janela **Threads**.
 
@@ -103,6 +103,6 @@ Atribua ao thread um nome que aparecerá na janela **Threads**.
 - [Usar pontos de interrupção](../debugger/using-breakpoints.md)
 - [Threading](/dotnet/standard/threading/index)
 - [Multithreading em componentes](https://msdn.microsoft.com/Library/2fc31e68-fb71-4544-b654-0ce720478779)
-- [Suporte de multithreading para código mais antigo (Visual C++)](/cpp/parallel/multithreading-support-for-older-code-visual-cpp)
+- [Suporte multithread para código mais antigo](/cpp/parallel/multithreading-support-for-older-code-visual-cpp)
 - [Depurar threads e processos](../debugger/debug-threads-and-processes.md)
 - [Depuração remota](../debugger/remote-debugging.md)

@@ -8,14 +8,15 @@ ms.assetid: a18a1b1b-9b39-43c7-b1f3-708fd20376f6
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d14296ab4218cbcab0d508f47b0f38f3c50a94f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 083386a808f7b91a18b3ea685ae657118c723978
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62777327"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779734"
 ---
 # <a name="callercallee-view----contention-data"></a>Exibição do Chamador/Receptor– dados de contenção
 Modo de exibição Chamador/Receptor exibe informações de contenção para uma função selecionada e suas funções pai e filho. A exibição de Chamador/Computador Chamado contém três grades.
@@ -48,7 +49,7 @@ Modo de exibição Chamador/Receptor exibe informações de contenção para uma
 |**Arquivo de Origem**|O arquivo de origem que contém a definição dessa função.|
 
 ## <a name="see-also"></a>Consulte também
-- [Como: Personalizar as colunas da exibição de relatório](../profiling/how-to-customize-report-view-columns.md)
+- [Como: Personalizar colunas de exibição de relatório](../profiling/how-to-customize-report-view-columns.md)
 - [Exibição Chamador/Receptor](../profiling/caller-callee-view.md)
 - [Exibição do chamador/chamado – dados de amostragem](../profiling/caller-callee-view-sampling-data.md)
 - [Exibição do Chamador/Receptor – dados de instrumentação da memória do .NET](../profiling/caller-callee-view-net-memory-instrumentation-data.md)

@@ -1,5 +1,5 @@
 ---
-title: Coletando Dados de Tempo Detalhados para um Aplicativo Web ASP .NET Usando o Método de Instrumentação do Criador de Perfil da Linha de Comando | Microsoft Docs
+title: 'VSPerfCmd: obter dados de tempo para o aplicativo Web ASP.NET usando a instrumentação'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,14 +9,15 @@ ms.assetid: 29f2fc55-aaf7-4e18-a672-8815455fba73
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - aspnet
-ms.openlocfilehash: 79e8ad7842070d13941ad921ccb25ba502209eb0
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d764ef32cdcb061992817d433dabb6ae61b64fd9
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63405949"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779643"
 ---
 # <a name="collect-detailed-timing-data-for-an-aspnet-web-application-using-the-profiler-instrumentation-method-from-the-command-line"></a>Coletar dados de tempo detalhados para um aplicativo Web ASP.NET usando o método de instrumentação do criador de perfil por meio da linha de comando
 Esta seção descreve os procedimentos e opções para coletar dados de desempenho detalhados para um aplicativo Web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] usando a ferramenta **VSPerfCmd** da linha de comando e o método de instrumentação.
@@ -28,8 +29,8 @@ Esta seção descreve os procedimentos e opções para coletar dados de desempen
 
 |Tarefa|Conteúdo relacionado|
 |----------|---------------------|
-|**Criar perfil para binários compilados estatisticamente**|-   [Como: Instrumentar um aplicativo ASP.NET compilado estaticamente e coletar dados de tempo detalhados](../profiling/how-to-instrument-statically-compiled-aspnet-and-collect-detailed-timing-data.md)|
-|**Criar perfil para binários compilados dinamicamente**|-   [Como: Instrumentar um aplicativo ASP.NET compilado dinamicamente e coletar dados de tempo detalhados](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-app-and-collect-timing-data.md)|
+|**Criar perfil para binários compilados estatisticamente**|-   [Como instrumentar um aplicativo do ASP.NET compilado estaticamente e coletar dados de tempo detalhados](../profiling/how-to-instrument-statically-compiled-aspnet-and-collect-detailed-timing-data.md)|
+|**Criar perfil para binários compilados dinamicamente**|-   [Como instrumentar um aplicativo do ASP.NET compilado dinamicamente e coletar dados de tempo detalhados](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-app-and-collect-timing-data.md)|
 
 ## <a name="related-tasks"></a>Tarefas relacionadas
 

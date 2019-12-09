@@ -17,12 +17,12 @@ caps.latest.revision: 41
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7cf00897e68fc4b6858e747bd9b3a7f159bf73c1
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: aa8951be6da4d77ffb51b6bc8f09a796b373a944
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439928"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67826255"
 ---
 # <a name="aspnet-debugging-system-requirements"></a>Depuração do ASP.NET: Requisitos de sistema
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,9 +31,9 @@ Este tópico descreve os requisitos de software e de segurança para cenários d
   
 - Depuração local, na qual o [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] e o aplicativo Web são executados no mesmo computador. Há duas versões do controle desse cenário:  
   
-    - O código do [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] reside no sistema de arquivos.  
-  
-    - O código do [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] reside em um site do IIS.  
+  - O código do [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] reside no sistema de arquivos.  
+
+  - O código do [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] reside em um site do IIS.  
   
 - Depuração remota, na qual o [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] é executado em um computador cliente e depura um aplicativo Web que esteja em execução em um computador de servidor remoto.  
   

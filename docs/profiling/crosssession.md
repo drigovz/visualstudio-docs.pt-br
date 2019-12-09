@@ -6,14 +6,15 @@ ms.assetid: b9fcb9c3-7903-478c-9b7c-dbd94092fcba
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 8087f620f457f1e88ee6dc9ffff90f5c8747e50d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 06de982643a08e1af88073dde0fb0a9abc029900
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62552808"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779448"
 ---
 # <a name="crosssession"></a>CrossSession
 A opção *VSPerfCmd.exe* **CrossSession** permite que o criador de perfil colete dados de qualquer sessão de console. A opção **CrossSession** deve ser usada com a opção **Iniciar**.
@@ -27,16 +28,16 @@ VSPerfCmd.exe /Start:Method /CrossSession [Options]
 ```
 
 #### <a name="parameters"></a>Parâmetros
- Nenhum
+ {1&gt;Nenhum&lt;1}
 
 ## <a name="valid-options"></a>Opções válidas
  Para habilitar a criação de perfil em outra sessão, a opção **CrossSession** deve ser especificada com a opção **Iniciar**. **CrossSession** também deve ser especificado em qualquer comando **Anexar do VSPerfCmd** e **Desanexar** subsequente.
 
- **Iniciar:** `Method` A opção **Iniciar** inicializa o criador de perfil com o método de criação de perfil especificado.
+ **Iniciar:** `Method` a opção **Iniciar** Inicializa o criador de perfil para o método de criação de perfil especificado.
 
- **Anexar:** _PID_[**,**_PID_] Inicia a criação de perfil dos processos especificados.
+ **Attach:** _pid_[ **,** _pid_] começa a criação de perfil dos processos especificados.
 
- **Desanexar**[**:**_PID_[,_PID_]] Interrompe a criação de perfil dos processos especificados.
+ **Desanexar**[ **:** _PID_[,_PID_]] Interrompe a criação de perfil dos processos especificados.
 
 ## <a name="example"></a>Exemplo
  Neste exemplo, a opção **CrossSession** é usada para anexar a um aplicativo que foi iniciado em outra sessão de console.

@@ -8,16 +8,16 @@ helpviewer_keywords:
 author: angelosp
 ms.author: angelpe
 manager: jillfra
-ms.openlocfilehash: 58e727c6335dd391abab4f50a110d361a658e00a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a36ca2535785f72756ad66a69c2ebe4d7d5a373b
+ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62548767"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67587020"
 ---
-# <a name="customize-file-nesting-in-solution-explorer"></a>Personalizar o aninhamento de arquivos no Gerenciador de Soluções
+# <a name="file-nesting-in-solution-explorer"></a>Aninhamento de arquivos no Gerenciador de Soluções
 
-O aninhamento de arquivos relacionados no **Gerenciador de Soluções** não é novo, mas até agora, você não tinha controle sobre as regras de aninhamento. Você pode escolher entre as predefinições **Desativado**, **Padrão** e **Web**, mas também pode personalizar o aninhamento exatamente como desejado. Você pode até mesmo criar configurações específicas a uma solução e um projeto, mas falaremos mais sobre tudo isso posteriormente. Primeiro, vamos falar sobre as configurações que você obtém prontas para uso.
+O **Gerenciador de Soluções** aninha arquivos relacionados para ajudar a organizá-los e torná-los mais fáceis de localizar. Por exemplo, se você adicionar um formulário do Windows Forms a um projeto, o arquivo de código do formulário será aninhado abaixo do formulário no **Gerenciador de Soluções**. Nos projetos ASP.NET Core, o aninhamento de arquivos pode ser levado um pouco além. Você pode escolher entre as predefinições de aninhamento de arquivo **Desativado**, **Padrão** e **Web**. Você também pode [personalizar como os arquivos são aninhados](#customize-file-nesting) ou [criar configurações específicas de projeto e da solução](#create-project-specific-settings).
 
 > [!NOTE]
 > Atualmente, há suporte para a funcionalidade somente em projetos ASP.NET Core.
@@ -56,7 +56,7 @@ Vamos nos concentrar no nó **dependentFileProviders** e em seus nós filho. Cad
 
 * **pathSegment**: Use esse tipo de regra para aninhar *jquery.min.js* em *jquery.js*
 
-* **allExtensions**: Use esse tipo de regra para aninhar *file.** em *file.js*
+* **allExtensions**: Use esse tipo de regra para aninhar *file.* * em *file.js*
 
 * **fileToFile**: Use esse tipo de regra para aninhar *bower.json* em *.bowerrc*
 
@@ -86,19 +86,43 @@ Esse provedor funciona da mesma maneira que o provedor **extensionToExtension**,
 
 ### <a name="the-addedextension-provider"></a>O provedor addedExtension
 
-Esse provedor aninha arquivos com uma extensão adicional no arquivo sem uma extensão adicional. A extensão adicional só pode ser exibida ao final do nome de arquivo completo. Considere o exemplo a seguir:
+Esse provedor aninha arquivos com uma extensão adicional no arquivo sem uma extensão adicional. A extensão adicional só pode ser exibida ao final do nome de arquivo completo.
+
+Considere o exemplo a seguir:
 
 ![Regras de exemplo de addedExtension](media/filenesting_addedextension.png) ![Efeito de exemplo de addedExtension](media/filenesting_addedextension_effect.png)
 
 * *file.html.css* é aninhado em *file.html* devido à regra de **addedExtension**
 
+> [!NOTE]
+> Você não especifica nenhuma extensão de arquivo para a regra `addedExtension`; ela automaticamente se aplica a todas as extensões de arquivo. Ou seja, qualquer arquivo com o mesmo nome e extensão que outro arquivo mais uma extensão adicional no final é aninhado no outro arquivo. Você não pode limitar o efeito desse provedor apenas as extensões de arquivo específicas.
+
 ### <a name="the-pathsegment-provider"></a>O provedor pathSegment
 
-Esse provedor aninha arquivos com uma extensão adicional em um arquivo sem uma extensão adicional. A extensão adicional só pode ser exibida no meio do nome de arquivo completo. Considere o exemplo a seguir:
+Esse provedor aninha arquivos com uma extensão adicional em um arquivo sem uma extensão adicional. A extensão adicional só pode ser exibida no meio do nome de arquivo completo.
+
+Considere o exemplo a seguir:
 
 ![Regras de exemplo de pathSegment](media/filenesting_pathsegment.png) ![Efeito de exemplo de pathSegment](media/filenesting_pathsegment_effect.png)
 
 * *jquery.min.js* é aninhado em *jquery.js* devido à regra de **pathSegment**
+
+> [!NOTE]
+> - Se você não especificar nenhuma extensão de arquivo para a regra `pathSegment`; ela se aplica a todas as extensões de arquivo. Ou seja, qualquer arquivo com o mesmo nome e extensão que outro arquivo mais uma extensão adicional no meio é aninhado no outro arquivo.
+> - Você pode limitar o efeito da regra `pathSegment` às extensões de arquivo específicas, especificando-as da seguinte maneira:
+>
+>    ```json
+>    "pathSegment": {
+>       "add": {
+>         ".*": [
+>           ".js",
+>           ".css",
+>           ".html",
+>           ".htm"
+>         ]
+>       }
+>    }
+>    ```
 
 ### <a name="the-allextensions-provider"></a>O provedor allExtensions
 
@@ -128,7 +152,7 @@ Gerencie todas as configurações, incluindo suas próprias configurações pers
 
 ![Ativar regras personalizadas de aninhamento de arquivos](media/filenesting_activatecustom.png)
 
-## <a name="create-solution-specific-and-project-specific-settings"></a>Criar configurações específicas a um projeto e uma solução
+## <a name="create-project-specific-settings"></a>Criar configurações específicas do projeto
 
 É possível criar configurações específicas para um projeto e para uma solução por meio do menu do clique com o botão direito (menu de contexto) de cada solução e projeto:
 
@@ -142,7 +166,7 @@ Faça o oposto e instrua o Visual Studio a usar *somente* as configurações esp
 
 É possível fazer check-in das configurações específicas a um projeto e uma solução no controle do código-fonte, e toda a equipe que trabalha na base de código pode compartilhá-las.
 
-## <a name="disable-global-file-nesting-rules-for-a-particular-solution-or-project"></a>Desabilitar as regras globais de aninhamento de arquivos de uma solução ou um projeto específico
+## <a name="disable-file-nesting-rules-for-a-project"></a>Desabilitar regras de aninhamento de arquivo para um projeto
 
 Desabilite as regras globais existentes de aninhamento de arquivos para soluções ou projetos específicos usando a ação **remover** para um provedor, em vez de **adicionar**. Por exemplo, se você adicionar o seguinte código de configurações a um projeto, todas as regras de **pathSegment** que possam existir globalmente para esse projeto específico serão desabilitadas:
 
@@ -157,3 +181,4 @@ Desabilite as regras globais existentes de aninhamento de arquivos para soluçõ
 ## <a name="see-also"></a>Consulte também
 
 - [Personalizar o IDE](../ide/personalizing-the-visual-studio-ide.md)
+- [Soluções e projetos no Visual Studio](solutions-and-projects-in-visual-studio.md)

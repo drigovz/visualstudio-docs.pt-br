@@ -23,17 +23,17 @@ helpviewer_keywords:
 - WPF Designer, XAML formatting
 - XAML view settings, attribute spacing
 ms.assetid: 2a420e58-a408-4e8d-9220-44eeb4f67801
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 9b124b86b98f86c775165d8fe33164a352d8e20a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 693e0d206455c2c430f8d723f131868fdf21eefc
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62969235"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189561"
 ---
 # <a name="options-text-editor-xaml-miscellaneous"></a>Opções, Editor de texto, XAML, Diversos
 
@@ -47,12 +47,12 @@ Use essa configuração para controlar quando marcas e aspas são geradas automa
 |-|-|
 |**Marcas de fechamento**|Especifica se a marcação de fechamento de um elemento é gerada automaticamente ao você fechar a marcação de abertura com o caractere de maior que (>).|
 |**Aspas de atributo**|Especifica se as aspas de fechamento são geradas quando um valor de atributo é selecionado na lista suspensa de preenchimento de declaração.|
-|**Chaves de fechamento para MarkupExtensions**|Especifica se uma chave de fechamento (**}**) de uma extensão de marcação é gerada automaticamente ao digitar o caractere de chave de abertura (**{**).|
+|**Chaves de fechamento para MarkupExtensions**|Especifica se uma chave de fechamento ( **}** ) de uma extensão de marcação é gerada automaticamente ao digitar o caractere de chave de abertura ( **{** ).|
 |**Vírgulas para separar parâmetros MarkupExtension**|Especifica se vírgulas são geradas quando você digita mais de um parâmetro em uma extensão de marcação.|
 
 ## <a name="errors-and-warnings"></a>Erros e Avisos
 
-Use essa configuração para controlar quando os erros e avisos são gerados automaticamente. Para obter mais informações, confira [Avisos e erros de XAML](../../designers/xaml-errors-warnings.md).
+Use essa configuração para controlar quando os erros e avisos são gerados automaticamente. Para obter mais informações, confira [Avisos e erros de XAML](../../xaml-tools/xaml-errors-warnings.md).
 
 ## <a name="see-also"></a>Consulte também
 

@@ -5,17 +5,20 @@ ms.topic: reference
 helpviewer_keywords:
 - IDebugSettingsCallback2::EnumEEs
 ms.assetid: 9f884c49-426f-461b-b547-9d909486e73f
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 05d64a568f4df1e4e1705e90ba186287c0b96a85
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: dc9073ae5244b05234b3f37874bd6bcd6347954f
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62916344"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66322150"
 ---
 # <a name="idebugsettingscallback2enumees"></a>IDebugSettingsCallback2::EnumEEs
 Enumera os avaliadores de expressão disponível considerando os identificadores de idioma e o fornecedor.
@@ -40,22 +43,18 @@ public int EnumEEs(
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `celtBuffer`
+## <a name="parameters"></a>Parâmetros
+`celtBuffer`\
+[in] Número de elementos no `pceltEEs` buffer.
 
- [in] Número de elementos no `pceltEEs` buffer.
+`rgguidLang`\
+[no, out] Identificador exclusivo para a linguagem de programação.
 
- `rgguidLang`
+`rgguidVendor`\
+[no, out] Identificador exclusivo para o fornecedor.
 
- [no, out] Identificador exclusivo para a linguagem de programação.
-
- `rgguidVendor`
-
- [no, out] Identificador exclusivo para o fornecedor.
-
- `pceltEEs`
-
- [no, out] Matriz de avaliadores de expressão.
+`pceltEEs`\
+[no, out] Matriz de avaliadores de expressão.
 
 ## <a name="return-value"></a>Valor de retorno
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.

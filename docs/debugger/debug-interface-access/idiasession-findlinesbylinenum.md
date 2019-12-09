@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d5999febf6e926ef8e9beb365728a3b150e1a38
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f5d64e9484b9450f5211e271df3b154ebab0fa75
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839261"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742099"
 ---
 # <a name="idiasessionfindlinesbylinenum"></a>IDiaSession::findLinesByLinenum
-Determina os números de linha de compiland que o número de linha especificada em um arquivo de origem está em ou próximo.
+Determina os números de linha do compiland que o número de linha especificado em um arquivo de origem está dentro ou próximo.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -37,32 +37,32 @@ HRESULT findLinesByLinenum ( 
 #### <a name="parameters"></a>Parâmetros
 `compiland`
 
-[in] Uma [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) objeto que representa o compiland no qual pesquisar os números de linha. O parâmetro não pode ser `NULL`.
+no Um objeto [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) que representa o compiland no qual Pesquisar os números de linha. O parâmetro não pode ser `NULL`.
 
 `file`
 
-[in] Uma [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md) objeto que representa o arquivo de origem para pesquisar no. O parâmetro não pode ser `NULL`.
+no Um objeto [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md) que representa o arquivo de origem para pesquisar. O parâmetro não pode ser `NULL`.
 
 `linenum`
 
-[in] Especifica um número de linha de base um.
+no Especifica um número de linha baseado em um.
 
 > [!NOTE]
-> Você não pode usar zero para especificar todas as linhas (usar o [idiasession:: Findlines](../../debugger/debug-interface-access/idiasession-findlines.md) método para localizar todas as linhas).
+> Não é possível usar zero para especificar todas as linhas (use o método [IDiaSession:: findLines](../../debugger/debug-interface-access/idiasession-findlines.md) para localizar todas as linhas).
 
 `column`
 
-[in] Especifica o número da coluna. Use zero para especificar todas as colunas. Uma coluna é um deslocamento de bytes em uma linha.
+no Especifica o número da coluna. Use zero para especificar todas as colunas. Uma coluna é um deslocamento de byte em uma linha.
 
 `ppResult`
 
-[out] Retorna um [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) objta que contém uma lista dos números de linha recuperados.
+fora Retorna um [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) objta que contém uma lista dos números de linha recuperados.
 
-## <a name="return-value"></a>Valor de retorno
+## <a name="return-value"></a>Valor retornado
 Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
 
 ## <a name="example"></a>Exemplo
-O exemplo a seguir mostra como abrir um arquivo de origem, enumerar os compilandos contribuídos por este arquivo e localizar os números de linha no arquivo de origem em que cada compiland começa.
+O exemplo a seguir mostra como abrir um arquivo de origem, enumerar o compilandos contribuído por esse arquivo e localizar os números de linha no arquivo de origem onde cada compiland é iniciado.
 
 ```C++
 void ShowLinesInCompilands(IDiaSession *pSession, LPCOLESTR filename)

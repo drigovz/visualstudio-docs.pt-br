@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDisassemblyStream2::GetDocument
 ms.assetid: 3d039a44-ebaa-4413-ac18-7cfd92c408bd
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cfc50f104c5fc942794c2e421f5aee508662ea3b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: a043d5462ad206395cb7d70d28152c19a7df6460
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62921699"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66310428"
 ---
 # <a name="idebugdisassemblystream2getdocument"></a>IDebugDisassemblyStream2::GetDocument
 Obtém o documento de origem associado a este fluxo de entrada.
@@ -38,14 +41,12 @@ int GetDocument( 
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `bstrDocumentUrl`
+## <a name="parameters"></a>Parâmetros
+`bstrDocumentUrl`\
+[in] A URL do documento.
 
- [in] A URL do documento.
-
- `ppDocument`
-
- [out] Retorna um [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) objeto que representa o documento.
+`ppDocument`\
+[out] Retorna um [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) objeto que representa o documento.
 
 ## <a name="return-value"></a>Valor de retorno
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.

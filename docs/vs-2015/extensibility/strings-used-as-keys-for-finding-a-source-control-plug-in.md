@@ -11,11 +11,11 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 83ba843e318aac6a74d318978e42e2f81802d8ac
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58929059"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68160581"
 ---
 # <a name="strings-used-as-keys-for-finding-a-source-control-plug-in"></a>Cadeias de caracteres usadas como chaves para localizar um plug-in de controle do código-fonte
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ As cadeias de caracteres a seguir são as chaves para acessar o registro para lo
 |`STR_SCC_INI_KEY`|SourceCodeControlProvider|  
 |`SCC_PROJECTNAME_KEY`|SCC_Project_Name|  
 |`SCC_PROJECTAUX_KEY`|SCC_Aux_Path|  
-|`SCC_STATUS_FILE`|MSSCCPRJ.SCC|  
+|`SCC_STATUS_FILE`|MSSCCPRJ. SCC|  
 |`SCC_KEY`|SCC|  
 |`SCC_FILE_SIGNATURE`|Um arquivo de controle do código-fonte|  
 |`SCC_NSE`|Extensão do Namespace|  

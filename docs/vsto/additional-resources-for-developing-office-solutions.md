@@ -12,37 +12,25 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f572405b6246619dac8b567283696319d65211bc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8bea9faa315fbd6ec41c667836dac7216f1f8f81
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62953173"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72986270"
 ---
 # <a name="additional-resources-to-develop-office-solutions"></a>Recursos adicionais para desenvolver soluções do Office
-  As ferramentas de desenvolvedor do Microsoft Office no Visual Studio representam apenas uma das muitas maneiras de estender os aplicativos do Office. Aplicativos do Office também tem alguns recursos internos, como os formatos XML abertos, que não são cobertas pelo Office developer tools no Visual Studio ou nesta documentação.
+  As ferramentas de desenvolvedor Microsoft Office no Visual Studio representam apenas uma das várias maneiras de estender os aplicativos do Office. Os aplicativos do Office também têm alguns recursos internos, como os formatos XML abertos, que não são cobertos pelas ferramentas de desenvolvimento do Office no Visual Studio ou por esta documentação.
 
- Se você quiser saber mais sobre as possibilidades oferecidas pelo Microsoft Office e o Office developer tools no Visual Studio, esses recursos serão suficientes.
+ Se você quiser saber mais sobre as possibilidades oferecidas pelo Microsoft Office e pelas ferramentas de desenvolvedor do Office no Visual Studio, esses recursos o ajudarão a começar.
 
-[Desenvolvimento do Office com o Centro de desenvolvedores do Visual Studio](http://go.microsoft.com/fwlink/?LinkId=149752)
+[Central de desenvolvedores do Office](https://developer.microsoft.com/office/docs)
 
-O portal central para os artigos mais recentes, vídeos, fóruns, blogs e outros recursos para o Office developer tools no Visual Studio.
+O portal central para os recursos mais recentes para os desenvolvedores do Office (não é específico do desenvolvimento do Office usando o Visual Studio).
 
-[Central de desenvolvedores do Office](http://go.microsoft.com/fwlink/?LinkId=83467)
-
-O portal central para os recursos mais recentes para desenvolvedores do Office (não específicos para desenvolvimento do Office usando o Visual Studio).
-
-[Seção de desenvolvimento do Microsoft Office da biblioteca MSDN](http://go.microsoft.com/fwlink/?LinkId=149870)
+[Microsoft Office seção de desenvolvimento da biblioteca MSDN](/previous-versions/office/office-12/bb726434(v=office.12))
 
 A área da biblioteca MSDN onde você pode encontrar artigos e consultar a documentação sobre desenvolvimento de soluções para várias versões do Office (não específica para desenvolvimento do Office usando o Visual Studio).
-
-[Portal do desenvolvedor de aplicativos do Office business](http://go.microsoft.com/fwlink/?LinkId=99125)
-
-O portal central para obter informações sobre aplicativos de negócios do Office (OBAs). OBAs conectar sistemas de linha de negócios (LOB) com as pessoas que usá-los por meio de aplicativos do Microsoft Office, portanto, você pode expandir em investimentos de TI existentes combinando seus recursos de maneiras inovadoras.
-
-[Desenvolvimento do Office com o blog do Visual Studio](http://go.microsoft.com/fwlink/?LinkId=149748)
-
-O blog mantido pela equipe da Microsoft que cria o Office developer tools para Visual Studio.
 
 ## <a name="see-also"></a>Consulte também
 - [Suporte adicional para erros em soluções do Office](../vsto/additional-support-for-errors-in-office-solutions.md)

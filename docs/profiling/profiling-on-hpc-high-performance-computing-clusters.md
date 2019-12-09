@@ -17,28 +17,29 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: d93071aa62c4d2305b0104ec17e8242bacefa6d1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: f2d3949194dedab6d7e7ea2faa1aea304d889bc4
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62994999"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74772114"
 ---
 # <a name="profile-on-hpc-high-performance-computing-clusters"></a>Criar perfil em clusters HPC (computação de alto desempenho)
 
 Você pode criar um perfil em nós de computação de clusters do Microsoft Windows HPC usando o método de amostragem das Ferramentas de Criação de Perfil do Visual Studio. Para obter mais informações sobre HPC, consulte [Windows HPC](https://azure.microsoft.com/solutions/big-compute/) no site da Microsoft.
 
-## <a name="prerequisites"></a>Pré-requisitos
+## <a name="prerequisites"></a>{1&gt;{2&gt;Pré-requisitos&lt;2}&lt;1}
 
 Para criar o perfil em um nó de computação do HPC, faça o seguinte:
 
-- Instale o Microsoft HPC Pack 2008 no mesmo computador onde está o Visual Studio. O computador não precisa fazer parte do cluster de HPC. Você pode instalar o HPC Pack por meio do [Centro de Download da Microsoft](http://go.microsoft.com/fwlink/?LinkID=177414).
+- Instale o Microsoft HPC Pack 2008 no mesmo computador onde está o Visual Studio. O computador não precisa fazer parte do cluster de HPC. Você pode instalar o HPC Pack por meio do [Centro de Download da Microsoft](https://www.microsoft.com/download/details.aspx?id=4812).
 
-- Instale o [!INCLUDE[net_v40_long](../code-quality/includes/net_v40_long_md.md)] e a versão autônoma das Ferramentas de Criação de Perfil do nó de computação do HPC. Programas de instalação estão disponíveis para ambos o [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] e o criador de perfil autônomo na mídia de instalação do Visual Studio. **Observação** Você deve reiniciar a computação depois de ter instalado [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] e antes de instalar as ferramentas de criação de perfil.
+- Instale o .NET Framework 4 e a versão autônoma das Ferramentas de Criação de Perfil do nó de computação HPC. Os programas de instalação estão disponíveis para o .NET Framework e o criador de perfil autônomo na mídia de instalação do Visual Studio. **Observação** É necessário reiniciar o computador depois de instalar o .NET Framework e antes de instalar as Ferramentas de Criação de Perfil.
 
-  Para instalar o [!INCLUDE[net_v40_long](../code-quality/includes/net_v40_long_md.md)] e as Ferramentas de Criação de perfil autônomas em um nó de computação do HPC ativo e habilitar a criação de perfil no computador do cluster, execute estas etapas:
+  Para instalar o .NET Framework 4 e as Ferramentas de Criação de Perfil autônomas em um nó de computação HPC ativo e habilitar a criação de perfil no computador do cluster, siga estas etapas:
 
 1. Abra a janela de prompt de comando que é instalada com o HPC pack.
 
@@ -53,7 +54,7 @@ Para criar o perfil em um nó de computação do HPC, faça o seguinte:
 | | |
 |------------------| - |
 | *%HeadNode%* | Nome do nó principal do cluster. |
-| *%FxPath%* | Caminho para o instalador de [!INCLUDE[net_v40_long](../code-quality/includes/net_v40_long_md.md)]. Na mídia de instalação do Visual Studio, o caminho é: WCU\dotNetFramework\dotNetFx40_Full_x86_x64.exe |
+| *%FxPath%* | Caminho para o instalador do .NET Framework 4. Na mídia de instalação do Visual Studio, o caminho é: WCU\dotNetFramework\dotNetFx40_Full_x86_x64.exe |
 | *%ProfilerPath%* | Caminho para a versão autônoma do instalador das Ferramentas de Criação de Perfil. Na mídia de instalação do Visual Studio, o caminho é: Standalone Profiler\x64\vs_profiler.exe |
 
 ## <a name="profile-on-an-hpc-compute-node"></a>Criar perfil um nó de computação HPC
@@ -68,7 +69,7 @@ Você pode configurar uma sessão de criação de perfil usando o Assistente de 
 
    - Para analisar um projeto que está aberto no momento no [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)], selecione a opção **Um ou mais projetos disponíveis** e, em seguida, selecione o nome do projeto na lista.
 
-   - Para analisar um binário que não está em um projeto aberto, selecione a opção **Um executável (arquivo .EXE)**.
+   - Para analisar um binário que não está em um projeto aberto, selecione a opção **Um executável (arquivo .EXE)** .
 
 4. Clique em **Avançar**.
 
@@ -124,7 +125,7 @@ Você pode alterar as propriedades de sessão de desempenho definidas no Assiste
 
 ### <a name="hpc-launch-properties"></a>Propriedades de inicialização do HPC
 
-|Propriedade|Descrição|
+|propriedade|Descrição|
 |--------------|-----------------|
 |**Nó principal**|Especifica o computador que atua como o nó principal do HPC na criação de perfil.|
 |**Número de processos**|Especifica o número de instâncias do aplicativo a serem executadas no aplicativo analisado.|
@@ -135,11 +136,11 @@ Você pode alterar as propriedades de sessão de desempenho definidas no Assiste
 
 ### <a name="advanced-properties"></a>Propriedades avançadas
 
-| Propriedade | Descrição |
+| propriedade | Descrição |
 |---------------------------------------| - |
 | **Nome do projeto** | O nome do projeto ou solução [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] atual. |
 | **Limpar quando o criador de perfil é interrompido** | Quando verdadeiro, remove os binários que foram implantados para o diretório de execução. Arquivos e diretórios criados pelo programa de usuário não são removidos nesta etapa. Se o diretório de execução e o diretório de implantação foram criadas pelo IDE, o IDE tenta removê-los, mas não o fará se eles tiverem arquivos não implantados pelo IDE. |
-| **Arquivos adicionais a serem implantados** | Especifica uma lista separada por ponto e vírgula de arquivos adicionais para implantar em um nó de computação. Você pode clicar no botão de reticências (**...**) para selecionar vários arquivos usando uma caixa de diálogo. |
+| **Arquivos adicionais a serem implantados** | Especifica uma lista separada por ponto e vírgula de arquivos adicionais para implantar em um nó de computação. Você pode clicar no botão de reticências ( **...** ) para selecionar vários arquivos usando uma caixa de diálogo. |
 | **Comando Mpiexec** | Especifica o aplicativo que inicia o aplicativo MPI. O valor padrão é **mpiexec.exe** |
 | **Argumentos Mpiexec** | Especifica os argumentos para passar para o comando mpiexec.exe. |
 | **Nós solicitados no cluster** | Especifica o número de nós no cluster no qual executar o aplicativo. |

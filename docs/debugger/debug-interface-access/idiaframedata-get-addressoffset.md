@@ -1,44 +1,42 @@
 ---
 title: IDiaFrameData::get_addressOffset | Microsoft Docs
-ms.date: 11/15/2016
-ms.prod: visual-studio-dev14
-ms.technology: vs-ide-debug
-ms.topic: reference
+ms.date: 11/04/2016
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaFrameData::get_addressOffset method
 ms.assetid: b68e2e68-6483-4936-bf97-1b0a13cb75e2
-caps.latest.revision: 11
-author: MikeJo5000
+author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4460f5102fbb5fd62f332f41a2901d1759731e7f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.workload:
+- multiple
+ms.openlocfilehash: 651ff39eed19a22c1ace24453a44b38ef512b9b8
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62829106"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743670"
 ---
-# <a name="idiaframedatagetaddressoffset"></a>IDiaFrameData::get_addressOffset
-[!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
+# <a name="idiaframedataget_addressoffset"></a>IDiaFrameData::get_addressOffset
+Recupera a parte de deslocamento do endereço do código para o quadro.
 
-Recupera a parte do deslocamento do endereço de código para o quadro.  
-  
-## <a name="syntax"></a>Sintaxe  
-  
-```cpp#  
-HRESULT get_addressOffset (   
-   DWORD* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parâmetros  
- `pRetVal`  
- [out] Retorna a parte do deslocamento do endereço de código para o quadro.  
-  
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não há suporte para essa propriedade. Caso contrário, retornará um código de erro.  
-  
-## <a name="see-also"></a>Consulte também  
- [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)
+## <a name="syntax"></a>Sintaxe
+
+```C++
+HRESULT get_addressOffset ( 
+   DWORD* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parâmetros
+ `pRetVal`
+
+fora Retorna a parte de deslocamento do endereço do código do quadro.
+
+## <a name="return-value"></a>Valor retornado
+ Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não houver suporte para essa propriedade. Caso contrário, retornará um código de erro.
+
+## <a name="see-also"></a>Consulte também
+- [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

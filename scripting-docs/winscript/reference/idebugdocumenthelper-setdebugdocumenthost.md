@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentHelper::SetDebugDocumentHost | Microsoft Docs
+title: 'IDebugDocumentHelper:: SetDebugDocumentHost | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 47c003657518edae0e8ffed13ffef9f6f072d296
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b32d14f3a7d65bee7bdb587a35dfe05bb06f5e1e
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62948987"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574653"
 ---
 # <a name="idebugdocumenthelpersetdebugdocumenthost"></a>IDebugDocumentHelper::SetDebugDocumentHost
-Conjuntos de `IDebugDocumentHost` para este documento.  
+Define o `IDebugDocumentHost` para este documento.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -37,9 +37,9 @@ HRESULT SetDebugDocumentHost(
   
 #### <a name="parameters"></a>Parâmetros  
  `pddh`  
- [in] O host do documento de depuração.  
+ no O host do documento de depuração.  
   
-## <a name="return-value"></a>Valor de retorno  
+## <a name="return-value"></a>Valor retornado  
  O método retorna um `HRESULT`. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.  
   
 |Valor|Descrição|  
@@ -47,8 +47,8 @@ HRESULT SetDebugDocumentHost(
 |`S_OK`|O método foi bem-sucedido.|  
   
 ## <a name="remarks"></a>Comentários  
- O `IDebugDocumentHost` interface é usada para coloração de sintaxe de host inteligente, buscar texto adiado e retornando objetos de controle para recentemente criado contextos de documento.  
+ A interface `IDebugDocumentHost` é usada para a coloração de sintaxe de host inteligente, busca de texto adiado e retorno de controle de objetos para contextos de documentos recém-criados.  
   
 ## <a name="see-also"></a>Consulte também  
- [Interface IDebugDocumentHelper](../../winscript/reference/idebugdocumenthelper-interface.md)   
+ @No__t_1 de [interface IDebugDocumentHelper](../../winscript/reference/idebugdocumenthelper-interface.md)  
  [IDebugDocumentHost Interface](../../winscript/reference/idebugdocumenthost-interface.md)

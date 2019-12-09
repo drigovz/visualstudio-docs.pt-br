@@ -52,16 +52,16 @@ VSPerfCmd.exe {/Launch:AppName|/Attach:PID} /PF[:Events] [Options]
 ## <a name="invalid-options"></a>Opções inválidas  
  As opções a seguir não podem ser especificadas na mesma linha de comando de **PF**.  
   
- **Temporizador**[**:**`Cycles`]  
+ **Temporizador**[ **:** `Cycles`]  
  Define o evento de amostragem dos ciclos do relógio do processador e, opcionalmente, define o intervalo de amostragem para `Cycles`. O intervalo do temporizador padrão é 10.000.000.  
   
- **Sys**[**:**`Events`]  
+ **Sys**[ **:** `Events`]  
  Define o evento de amostragem para chamadas do aplicativo com perfil ao kernel do sistema operacional (syscalls) e, opcionalmente, define o intervalo de amostragem para `Events`. O intervalo de Sys padrão é 10.  
   
  **Contador:** `Name`[`,Reload`[`,FriendlyName`]]  
  Define o evento de amostragem como contador de desempenho da CPU especificado por `Name` e define o intervalo de amostragem como `Reload`.  
   
- **GC**[**:**{**Alocação**&#124;**Tempo de Vida**}]  
+ **GC**[ **:** {**Alocação**&#124;**Tempo de Vida**}]  
  Coleta dados da memória do .NET. Por padrão (**Alocação**), os dados são coletados em todos os eventos de alocação da memória. Quando o parâmetro **Tempo de Vida** é especificado, os dados também são coletados em todos os eventos de coleta de lixo.  
   
 ## <a name="example"></a>Exemplo  

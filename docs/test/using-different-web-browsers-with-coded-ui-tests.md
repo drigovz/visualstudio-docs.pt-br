@@ -2,17 +2,17 @@
 title: Usando navegadores diferentes com testes de interface do usuário codificada
 ms.date: 11/04/2016
 ms.topic: conceptual
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: 2e397d587032bb6a8c125d38c10000e6a496c2d2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+author: jillre
+ms.openlocfilehash: 24e4ee35f21b7477e9b3d601305bd6534a16d9e0
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62973013"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72659792"
 ---
 # <a name="use-different-web-browsers-with-coded-ui-tests"></a>Usar navegadores da Web diferentes com testes de IU codificados
 
@@ -38,16 +38,16 @@ Testando seu aplicativo Web com uma variedade de tipos de navegadores da Web, vo
 
 ## <a name="how-do-i-record-and-play-back-coded-ui-tests-on-web-applications-using-the-supported-web-browsers"></a>Como faço para gravar e reproduzir testes de IU codificados em aplicativos Web usando os navegadores da Web com suporte?
 
-**Gravando:** Você deve usar o Construtor de teste de IU codificado para registrar o teste do aplicativo Web usando o Internet Explorer. Opcionalmente, você pode adicionar validação e código personalizado para os controles testados usando um conjunto predefinido de propriedades como você faria normalmente para testes de IU codificados. Para obter mais informações, confira [Usar a automação da interface do usuário para testar o código](../test/use-ui-automation-to-test-your-code.md).
+**Gravação**: você deve usar o Construtor de teste de IU codificado para registrar o teste do aplicativo Web usando o Internet Explorer. Opcionalmente, você pode adicionar validação e código personalizado para os controles testados usando um conjunto predefinido de propriedades como você faria normalmente para testes de IU codificados. Para obter mais informações, confira [Usar a automação da interface do usuário para testar o código](../test/use-ui-automation-to-test-your-code.md).
 
 > [!NOTE]
 > Você não pode gravar testes de IU codificados usando os navegadores Google Chrome ou Mozilla Firefox.
 
- **Reprodução com o Internet Explorer:** Quando nenhum navegador é especificado, os testes são executados no Internet Explorer por padrão. Você pode declarar explicitamente o navegador a ser usado ao definir a propriedade **BrowserWindow.CurrentBrowser** no seu código de teste. Para o Internet Explorer, essa propriedade deve ser definida como **IE** ou **Internet Explorer**.
+**Reprodução com o Internet Explorer**: quando nenhum navegador é especificado, os testes são executados no Internet Explorer por padrão. Você pode declarar explicitamente o navegador a ser usado ao definir a propriedade **BrowserWindow.CurrentBrowser** no seu código de teste. Para o Internet Explorer, essa propriedade deve ser definida como **IE** ou **Internet Explorer**.
 
- **Reprodução com navegadores da Web diferentes do Internet Explorer:** Para reproduzir em navegadores da Web diferentes do Internet Explorer, altere a propriedade BrowserWindow.CurrentBrowser no código de teste para **Firefox** ou **Chrome**.
+**Reprodução com navegadores da Web diferentes do Internet Explorer**: para reproduzir em navegadores da Web diferentes do Internet Explorer, altere a propriedade BrowserWindow.CurrentBrowser no código de teste para **Firefox** ou **Chrome**.
 
- Para executar testes em navegadores da web que não sejam o IE, você deve instalar os **componentes Selenium para testes de IU codificados entre navegadores**.
+Para executar testes em navegadores da web que não sejam o IE, você deve instalar os **componentes Selenium para testes de IU codificados entre navegadores**.
 
 ### <a name="install-selenium-components"></a>Instalar componentes do Selenium
 
@@ -120,15 +120,15 @@ Para obter mais informações, confira [Analisar testes de IU codificados usando
 
 ## <a name="video-resources"></a>Recursos em vídeo
 
- [Gravar no IE e reproduzir em qualquer lugar](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!183&authkey=!ANqaLtCZbtJrImU)
+[Gravar no IE e reproduzir em qualquer lugar](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!183&authkey=!ANqaLtCZbtJrImU)
 
- [Criar testes entre navegadores com construtor de teste de IU codificado](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!184&authkey=!AKG8CSow_qmeTq8)
+[Criar testes entre navegadores com construtor de teste de IU codificado](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!184&authkey=!AKG8CSow_qmeTq8)
 
- [Criar testes entre navegadores de autor usando codificação manual básica sem mapa da IU](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!186&authkey=!AJaEvxJnsefyAT4)
+[Criar testes entre navegadores de autor usando codificação manual básica sem mapa da IU](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!186&authkey=!AJaEvxJnsefyAT4)
 
- [Executar testes entre navegadores sequencialmente em vários navegadores](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!187&authkey=!ADI8eCQkxHnpOR8)
+[Executar testes entre navegadores sequencialmente em vários navegadores](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!187&authkey=!ADI8eCQkxHnpOR8)
 
- [Solucionar problemas de falhas de teste entre navegadores](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!182&authkey=!AEpS48i295B49FI)
+[Solucionar problemas de falhas de teste entre navegadores](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!182&authkey=!AEpS48i295B49FI)
 
 ## <a name="see-also"></a>Consulte também
 

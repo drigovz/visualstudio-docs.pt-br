@@ -4,19 +4,19 @@ ms.date: 01/02/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - item templates [Visual Studio], creating
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: a861843da139701c23e38df11c7ad380c047a846
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: d213ef7cd1c45043efbaad9fca4317f7a693bf4f
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62823910"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72655854"
 ---
-# <a name="how-to-create-item-templates"></a>Como: Criar modelos de item
+# <a name="how-to-create-item-templates"></a>Como criar modelos de item
 
-Este artigo mostra como criar um modelo de item usando o **Assistente de Exportação de Modelo**. Se o modelo consistir em vários arquivos, confira [Como: Criar modelos de item de vários arquivos](../ide/how-to-create-multi-file-item-templates.md).
+Este artigo mostra como criar um modelo de item usando o **Assistente de Exportação de Modelo**. Se seu modelo for composto por em vários arquivos, consulte [Como criar modelos de item de vários arquivos](../ide/how-to-create-multi-file-item-templates.md).
 
 ## <a name="add-an-item-template-to-the-add-new-item-dialog-box"></a>Adicione um modelo de item à caixa de diálogo Adicionar Novo Item
 
@@ -24,7 +24,7 @@ Este artigo mostra como criar um modelo de item usando o **Assistente de Exporta
 
 1. Adicione um item ao projeto e modifique-o caso desejar.
 
-1. Modifique o arquivo de código para indicar em que ponto a substituição de parâmetro deve ocorrer. Para obter mais informações, confira [Como: Substituir parâmetros em um modelo](../ide/how-to-substitute-parameters-in-a-template.md).
+1. Modifique o arquivo de código para indicar em que ponto a substituição de parâmetro deve ocorrer. Para obter mais informações, consulte [Como substituir parâmetros em um modelo](../ide/how-to-substitute-parameters-in-a-template.md).
 
 1. No menu **Projeto**, escolha **Exportar Modelo**.
 
@@ -111,7 +111,7 @@ Em alguns casos, convém criar um modelo de item manualmente, desde o início.
 
 2. Modifique o item de projeto até que ele esteja pronto para ser salvo como um modelo.
 
-3. Modifique o arquivo de código para indicar o ponto em que a substituição de parâmetro deve ocorrer, caso ela ocorra em algum ponto. Para obter mais informações sobre a substituição de parâmetro, confira [Como: Substituir parâmetros em um modelo.](../ide/how-to-substitute-parameters-in-a-template.md)
+3. Modifique o arquivo de código para indicar o ponto em que a substituição de parâmetro deve ocorrer, caso ela ocorra em algum ponto. Para saber mais sobre substituição de parâmetro, confira [Como substituir parâmetros em um modelo.](../ide/how-to-substitute-parameters-in-a-template.md)
 
 4. Crie um arquivo XML e salve-o com uma extensão de arquivo *.vstemplate* no mesmo diretório que o arquivo de item de projeto.
 
@@ -119,22 +119,22 @@ Em alguns casos, convém criar um modelo de item manualmente, desde o início.
 
 6. Salve o arquivo *.vstemplate* e feche-o.
 
-7. No **Windows Explorer**, selecione os arquivos que você deseja incluir no modelo. Clique com o botão direito do mouse na seleção e escolha **Enviar para** > **Pasta compactada (zipada)**. Os arquivos selecionados são compactados em um arquivo *.zip*.
+7. No **Windows Explorer**, selecione os arquivos que você deseja incluir no modelo. Clique com o botão direito do mouse na seleção e escolha **Enviar para** > **Pasta compactada (zipada)** . Os arquivos selecionados são compactados em um arquivo *.zip*.
 
 ::: moniker range="vs-2017"
 
-8. Copie o arquivo *.zip* e cole-o no local do modelo de item do usuário. O diretório padrão é *%USERPROFILE%\Documents\Visual Studio 2017\Templates\ItemTemplates*. Para obter mais informações, confira [Como: Localizar e organizar modelos de projeto e de item](../ide/how-to-locate-and-organize-project-and-item-templates.md).
+8. Copie o arquivo *.zip* e cole-o no local do modelo de item do usuário. O diretório padrão é *%USERPROFILE%\Documents\Visual Studio 2017\Templates\ItemTemplates*. Para obter mais informações, consulte [Como localizar e organizar modelos de projeto e de item](../ide/how-to-locate-and-organize-project-and-item-templates.md).
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-8. Copie o arquivo *.zip* e cole-o no local do modelo de item do usuário. O diretório padrão é *%USERPROFILE%\Documents\Visual Studio 2019\Templates\ItemTemplates*. Para obter mais informações, confira [Como: Localizar e organizar modelos de projeto e de item](../ide/how-to-locate-and-organize-project-and-item-templates.md).
+8. Copie o arquivo *.zip* e cole-o no local do modelo de item do usuário. O diretório padrão é *%USERPROFILE%\Documents\Visual Studio 2019\Templates\ItemTemplates*. Para obter mais informações, consulte [Como localizar e organizar modelos de projeto e de item](../ide/how-to-locate-and-organize-project-and-item-templates.md).
 
 ::: moniker-end
 
 ## <a name="see-also"></a>Consulte também
 
 - [Criar modelos de projeto e de item](../ide/creating-project-and-item-templates.md)
-- [Como: Criar modelos de item de vários arquivos](../ide/how-to-create-multi-file-item-templates.md)
+- [Como criar modelos de item multiarquivos](../ide/how-to-create-multi-file-item-templates.md)
 - [Referência de esquema de modelo do Visual Studio (extensibilidade)](../extensibility/visual-studio-template-schema-reference.md)

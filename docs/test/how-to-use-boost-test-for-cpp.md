@@ -1,30 +1,31 @@
 ---
 title: Como usar o Boost.Test para C++
-ms.date: 01/29/2018
+description: Use o Boost.Test para criar testes de unidade no Visual Studio.
+ms.date: 05/06/2019
 ms.topic: conceptual
 author: mikeblome
 ms.author: mblome
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ed4d024b7d10f4432c6a2326f07bb068075971f7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 966983fa15b60db33f11645b25561a74ad5fadbe
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62970498"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72983442"
 ---
 # <a name="how-to-use-boosttest-for-c-in-visual-studio"></a>Como usar o Boost.Test para C++ no Visual Studio
 
-No **Visual Studio 2017 versão 15.5** e posterior, o adaptador de teste Boost.Test está integrado ao IDE do Visual Studio como um componente da carga de trabalho **Desenvolvimento para desktop com C++**.
+No Visual Studio 2017 e versões posteriores, o adaptador de teste do Boost.Test está integrado ao IDE do Visual Studio como um componente da carga de trabalho **Desenvolvimento para desktop com C++** .
 
 ![Adaptador de Teste para Boost.Test](media/cpp-boost-component.png)
 
-Se a carga de trabalho **Desenvolvimento para desktop com C++** não estiver instalada, abra o **Instalador do Visual Studio** e selecione **Modificar**. Selecione a carga de trabalho **Desenvolvimento para desktop com C++** e escolha o botão **Modificar**.
+Se você não tiver a carga de trabalho **Desenvolvimento para desktop com C++** instalada, abra o **Instalador do Visual Studio**. Selecione a carga de trabalho **Desenvolvimento para desktop com C++** e escolha o botão **Modificar**.
 
 ## <a name="install-boost"></a>Instalar o Boost
 
-O Boost.Test exige o [Boost](http://www.boost.org/)! Se o Boost não estiver instalado, recomendamos o uso do gerenciador de pacotes Vcpkg.
+O Boost.Test exige o [Boost](https://www.boost.org/)! Se o Boost não estiver instalado, recomendamos o uso do gerenciador de pacotes Vcpkg.
 
 1. Siga as instruções de [Vcpkg: um gerenciador de pacotes C++ para o Windows](/cpp/vcpkg) para instalar o vcpkg (caso ainda não o tenha).
 
@@ -48,13 +49,13 @@ O Boost.Test exige o [Boost](http://www.boost.org/)! Se o Boost não estiver ins
 
 O modelo de item usa a variante de cabeçalho único do Boost.Test, mas você pode modificar o caminho #include a fim de usar a variante de biblioteca autônoma. Para saber mais, confira [Adicionar diretivas de inclusão](#add-include-directives).
 
-## <a name="create-a-test-project-visual-studio-2017-version-155"></a>Criar um projeto de teste (Visual Studio 2017 versão 15.5)
+## <a name="create-a-test-project"></a>Criar um projeto de teste
 
 No Visual Studio 2017 versão 15.5, não há nenhum modelo de projeto de teste ou de item pré-configurado disponível para o Boost.Test. Portanto, é necessário criar e configurar um projeto de aplicativo de console para armazenar seus testes.
 
 1. No **Gerenciador de Soluções**, clique com o botão direito do mouse no nó da solução e escolha **Adicionar** > **Novo Projeto**.
 
-1. No painel esquerdo, escolha **Visual C++** > **Windows Desktop** e, em seguida, selecione o modelo **Aplicativo de Console do Windows**.
+1. No painel esquerdo, escolha **Visual C++**  > **Windows Desktop** e, em seguida, selecione o modelo **Aplicativo de Console do Windows**.
 
 1. Nomeie o projeto e escolha **OK**.
 
@@ -78,7 +79,7 @@ No Visual Studio 2017 versão 15.5, não há nenhum modelo de projeto de teste o
 
    d. Para abrir a **Páginas de Propriedades**, clique com o botão direito do mouse no nó do projeto e escolha **Propriedades**.
 
-   d. Expanda **C/C++** > **Geração de Código** e, em seguida, selecione **Biblioteca em Tempo de Execução**. Selecione **/MTd** para depurar a biblioteca de tempo de execução estática ou **/MT** para liberar a biblioteca de tempo de execução estática.
+   d. Expanda **C/C++**  > **Geração de Código** e, em seguida, selecione **Biblioteca em Tempo de Execução**. Selecione **/MTd** para depurar a biblioteca de tempo de execução estática ou **/MT** para liberar a biblioteca de tempo de execução estática.
 
    f. Expanda **Vinculador** > **Sistema**. Verifique se **Subsistema** está definido como **Console**.
 
@@ -125,7 +126,7 @@ BOOST_AUTO_TEST_CASE(my_boost_test)
 
 ## <a name="write-and-run-tests"></a>Gravar e executar testes
 
-Agora, você está pronto para escrever e executar testes do Boost. Confira a [documentação da Biblioteca do Boost Test](http://www.boost.org/doc/libs/release/libs/test/doc/html/index.html) para obter informações sobre as macros de teste. Consulte [Executar testes de unidade com o Gerenciador de Testes](run-unit-tests-with-test-explorer.md) para saber mais sobre como descobrir, executar e agrupar testes usando o **Gerenciador de Testes**.
+Agora, você está pronto para escrever e executar testes do Boost. Confira a [documentação da Biblioteca do Boost Test](https://www.boost.org/doc/libs/1_71_0/libs/test/doc/html/index.html) para obter informações sobre as macros de teste. Consulte [Executar testes de unidade com o Gerenciador de Testes](run-unit-tests-with-test-explorer.md) para saber mais sobre como descobrir, executar e agrupar testes usando o **Gerenciador de Testes**.
 
 ## <a name="see-also"></a>Consulte também
 

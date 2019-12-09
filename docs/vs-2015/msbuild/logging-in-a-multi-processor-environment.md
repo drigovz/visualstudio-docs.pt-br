@@ -13,11 +13,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 35184f6ef724a9f0e803a10c9bda2c6981313ed6
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59664748"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68205980"
 ---
 # <a name="logging-in-a-multi-processor-environment"></a>Registrando em logs em um ambiente multiprocessador
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -73,6 +73,6 @@ Culture=neutral
   
  Um asterisco (*) separa os dois nomes de agentes na opção `/dl`.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Veja também  
  [Agentes de Log de Build](../msbuild/build-loggers.md)   
  [Criando agentes de log de encaminhamento](../msbuild/creating-forwarding-loggers.md)

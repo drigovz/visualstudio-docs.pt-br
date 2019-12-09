@@ -11,13 +11,13 @@ caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 3f045175eae165b75a887ada2716b19f34fc228b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60088945"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68204075"
 ---
-# <a name="how-to-suppress-file-change-notifications"></a>Como: Suprimir notificações de alteração de arquivo
+# <a name="how-to-suppress-file-change-notifications"></a>Como: Suprimir as notificações de alteração de arquivo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Quando o arquivo físico que representa o buffer de texto tiver sido alterado, uma caixa de diálogo exibe a mensagem **você deseja salvar as alterações aos seguintes itens?** Isso é conhecido como a notificação de alteração de arquivo. Se muitas alterações serão para o arquivo, no entanto, essa caixa de diálogo exibindo repetidamente pode rapidamente se tornar irritante.  

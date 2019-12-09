@@ -1,31 +1,31 @@
 ---
-title: Diagramas de impressão do modo de gráfico e exibição de modelo de conteúdo do Designer de esquema XML
+title: 'Esquema XML: diagramas de impressão na exibição de gráfico & exibição de modelo de conteúdo'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 7e1785e4-4aaf-4c66-8735-51e7ca035565
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1318ed7c69ffd2aeaa178d081e5241c02ea1021c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c4d25ef33e22055ff6e6aa17797fcd0c4dbcb0e4
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62945702"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72668796"
 ---
-# <a name="how-to-print-diagrams-from-the-graph-view-and-the-content-model-view"></a>Como: Imprimir diagramas da exibição de gráfico e a exibição do modelo de conteúdo
+# <a name="how-to-print-diagrams-from-the-graph-view-and-the-content-model-view"></a>Como: imprimir diagramas da exibição de gráfico e do modo de exibição de modelo de conteúdo
 
-Este tópico descreve como imprimir um diagrama da exibição de gráfico ou o conteúdo modelo de exibição do Designer de esquema XML.
+Este tópico descreve como imprimir um diagrama da exibição de gráfico ou da exibição de modelo de conteúdo do designer de esquema XML.
 
 ## <a name="to-print-diagrams-from-the-xml-schema-designer"></a>Para imprimir diagramas de designer de esquema XML
 
-1. Abra um arquivo XSD no Visual Studio e adicione alguns nós para o [espaço de trabalho do Designer de esquema XML](../xml-tools/xml-schema-designer-workspace.md).
+1. Abra um arquivo XSD no Visual Studio e adicione alguns nós ao [espaço de trabalho do designer de esquema XML](../xml-tools/xml-schema-designer-workspace.md).
 
-2. Exportar o diagrama para um arquivo XPS usando o **exportar diagrama como imagem** item de menu de contexto (atalho) na superfície de design de exibição de gráfico ou a exibição do modelo de conteúdo.
+2. Exporte o diagrama para um arquivo XPS usando o item de menu **Exportar diagrama como** contexto de imagem (clique com o botão direito do mouse) na superfície de design da exibição de gráfico ou no modo de exibição de modelo de conteúdo.
 
-     Quando você exportar um diagrama da exibição do gráfico, a superfície de design inteira é exportada para o arquivo XPS. Quando você exportar um diagrama da exibição do modelo de conteúdo e mais de um nó é exibido na superfície de design da exibição do modelo conteúdo, somente o primeiro nó é exportado para o arquivo XPS.
+     Quando você exporta um diagrama do modo de exibição de gráfico, toda a superfície de design é exportada para o arquivo XPS. Quando você exporta um diagrama do modo de exibição de modelo de conteúdo e mais de um nó aparece na superfície de design da exibição do modelo de conteúdo, somente o primeiro nó é exportado para o arquivo XPS.
 
 3. Imprimir a imagem salvo no arquivo XPS usando um visualizador XPS.
 
@@ -33,4 +33,4 @@ Este tópico descreve como imprimir um diagrama da exibição de gráfico ou o c
 
 - [Exibição de Gráfico](../xml-tools/graph-view.md)
 - [Exibição do modelo de conteúdo](../xml-tools/content-model-view.md)
-- [Espaço de trabalho do Designer de esquema XML](../xml-tools/xml-schema-designer-workspace.md)
+- [Espaço de trabalho do designer de esquema XML](../xml-tools/xml-schema-designer-workspace.md)

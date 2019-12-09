@@ -1,41 +1,39 @@
 ---
 title: IDiaSymbol::get_isMultipleInheritance | Microsoft Docs
-ms.date: 11/15/2016
-ms.prod: visual-studio-dev14
-ms.technology: vs-ide-debug
-ms.topic: reference
+ms.date: 11/04/2016
+ms.topic: conceptual
 dev_langs:
 - C++
 ms.assetid: 0aa356a1-5c5c-4ee4-8b48-bae0a2610013
-caps.latest.revision: 6
-author: MikeJo5000
+author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a353f9fc3605d1f2d26248b3ce907fb76b947c68
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.workload:
+- multiple
+ms.openlocfilehash: 4eb6e1509a46c4e584e98403439188581df97c10
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62836610"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740173"
 ---
-# <a name="idiasymbolgetismultipleinheritance"></a>IDiaSymbol::get_isMultipleInheritance
-[!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
+# <a name="idiasymbolget_ismultipleinheritance"></a>IDiaSymbol::get_isMultipleInheritance
+Especifica se o ponteiro de `this` aponta para um membro de dados com várias heranças.
 
-Especifica se o `this` ponteiro aponta para um membro de dados com herança múltipla.  
-  
-## <a name="syntax"></a>Sintaxe  
-  
-```cpp  
-HRESULT get_isMultipleInheritance(   
-   BOOL* pRetVal);  
-```  
-  
-#### <a name="parameters"></a>Parâmetros  
- `pRetVal`  
- [out] Um ponteiro para um `BOOL` que especifica se o `this` ponteiro aponta para um membro de dados com herança múltipla.  
-  
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE` ou um código de erro.  
-  
-## <a name="see-also"></a>Consulte também  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+## <a name="syntax"></a>Sintaxe
+
+```C++
+HRESULT get_isMultipleInheritance(
+   BOOL* pRetVal);
+```
+
+#### <a name="parameters"></a>Parâmetros
+ `pRetVal`
+
+fora Um ponteiro para um `BOOL` que especifica se o ponteiro de `this` aponta para um membro de dados com várias heranças.
+
+## <a name="return-value"></a>Valor retornado
+ Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE` ou um código de erro.
+
+## <a name="see-also"></a>Consulte também
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

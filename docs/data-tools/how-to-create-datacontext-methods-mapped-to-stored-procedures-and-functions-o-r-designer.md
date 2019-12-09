@@ -1,49 +1,49 @@
 ---
-title: 'Como: Criar métodos DataContext mapeados para procedimentos armazenados e funções (Designer Relacional de Objetos)'
+title: Mapear métodos DataContext para sprocs e Functions (O-R Designer)
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: e7ca32f1-50b3-48af-ad92-ceafd749296a
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: dc2b1c25f9b4cf9bc777eefd0c95985a534799b5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4fa392467024a38dc447e6a5077f855d3464103b
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62566502"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72648365"
 ---
-# <a name="how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-or-designer"></a>Como: Criar métodos DataContext mapeados para procedimentos armazenados e funções (Designer Relacional de Objetos)
+# <a name="how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-or-designer"></a>Como criar métodos DataContext mapeados para procedimentos armazenados e funções (Designer Relacional de Objetos)
 
-Você pode adicionar procedimentos armazenados e funções para o **Relational Designer** como <xref:System.Data.Linq.DataContext> métodos. Chamar o método e passar os parâmetros necessários leva à execução do procedimento ou da função armazenada no banco de dados e ao retorno dos dados no tipo de retorno do método <xref:System.Data.Linq.DataContext>. Para obter informações detalhadas sobre <xref:System.Data.Linq.DataContext> métodos, consulte [métodos de DataContext (Designer relacional de objetos)](../data-tools/datacontext-methods-o-r-designer.md).
+Você pode adicionar procedimentos armazenados e funções ao o **/R Designer** como <xref:System.Data.Linq.DataContext> métodos. Chamar o método e passar os parâmetros necessários leva à execução do procedimento ou da função armazenada no banco de dados e ao retorno dos dados no tipo de retorno do método <xref:System.Data.Linq.DataContext>. Para obter informações detalhadas sobre os métodos de <xref:System.Data.Linq.DataContext>, consulte [métodos DataContext (O/R Designer)](../data-tools/datacontext-methods-o-r-designer.md).
 
 > [!NOTE]
-> Você também pode usar procedimentos armazenados para substituir o padrão [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] comportamento de tempo de execução que executa inserções, atualizações e exclusões quando alterações são salvas de classes de entidade para um banco de dados. Para obter mais informações, confira [Como: Atribuir procedimentos armazenados para executar atualizações, inserções e exclusões (Designer Relacional de Objetos)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md).
+> Você também pode usar procedimentos armazenados para substituir o comportamento padrão de [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] tempo de execução que executa inserções, atualizações e exclusões quando as alterações são salvas de classes de entidade em um banco de dados. Para obter mais informações, consulte [como: atribuir procedimentos armazenados para executar atualizações, inserções e exclusões (O/R Designer)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md).
 
 ## <a name="create-datacontext-methods"></a>Criar métodos DataContext
 
-Você pode criar <xref:System.Data.Linq.DataContext> métodos arrastando procedimentos armazenados ou funções a partir <strong>Gerenciador de servidores ou * * Gerenciador de banco de dados</strong> para o **Relational Designer**.
+Você pode criar <xref:System.Data.Linq.DataContext> métodos arrastando procedimentos armazenados ou funções de <strong>Gerenciador de servidores ou * * Gerenciador de banco de dados</strong> para o o **/R Designer**.
 
 > [!NOTE]
-> O tipo de retorno de gerado <xref:System.Data.Linq.DataContext> método difere dependendo de onde você descarte o procedimento armazenado ou a função na **Relational Designer**. Soltar itens diretamente em uma classe de entidade existente cria um método <xref:System.Data.Linq.DataContext> com o tipo de retorno da classe de entidade. Soltar itens em uma área vazia do **Relational Designer** cria um <xref:System.Data.Linq.DataContext> método que retorna um tipo gerado automaticamente. Você pode alterar o tipo de retorno de um método <xref:System.Data.Linq.DataContext> após adicioná-lo ao painel **Métodos**. Para inspecionar ou alterar o tipo de retorno de um método <xref:System.Data.Linq.DataContext>, selecione-o e inspecione a propriedade **Tipo de Retorno** na janela **Propriedades**. Para obter mais informações, confira [Como: Alterar o tipo de retorno de um método DataContext (Designer Relacional de Objetos)](../data-tools/how-to-change-the-return-type-of-a-datacontext-method-o-r-designer.md).
+> O tipo de retorno do método <xref:System.Data.Linq.DataContext> gerado difere dependendo de onde você remove o procedimento armazenado ou a função no **designer do/R**. Soltar itens diretamente em uma classe de entidade existente cria um método <xref:System.Data.Linq.DataContext> com o tipo de retorno da classe de entidade. Soltar itens em uma área vazia do o **/R Designer** cria um método <xref:System.Data.Linq.DataContext> que retorna um tipo gerado automaticamente. Você pode alterar o tipo de retorno de um método <xref:System.Data.Linq.DataContext> após adicioná-lo ao painel **Métodos**. Para inspecionar ou alterar o tipo de retorno de um método <xref:System.Data.Linq.DataContext>, selecione-o e inspecione a propriedade **Tipo de Retorno** na janela **Propriedades**. Para obter mais informações, consulte [como alterar o tipo de retorno de um método DataContext (O/R Designer)](../data-tools/how-to-change-the-return-type-of-a-datacontext-method-o-r-designer.md).
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
 ### <a name="to-create-datacontext-methods-that-return-automatically-generated-types"></a>Para criar métodos DataContext que retornam tipos gerados automaticamente
 
-1. Na **Gerenciador de servidores** ou **Database Explorer**, expanda o **Stored Procedures** nó do banco de dados com o qual você está trabalhando.
+1. Em **Gerenciador de servidores** ou **Gerenciador de banco de dados**, expanda o nó **procedimentos armazenados** do banco de dados com o qual você está trabalhando.
 
-2. Localize o procedimento armazenado desejado e arraste-o para uma área vazia do **Relational Designer**.
+2. Localize o procedimento armazenado desejado e arraste-o para uma área vazia do o **/R Designer**.
 
      O método <xref:System.Data.Linq.DataContext> é criado com um tipo de retorno gerado automaticamente e aparece no painel **Métodos**.
 
 ### <a name="to-create-datacontext-methods-that-have-the-return-type-of-an-entity-class"></a>Para criar métodos DataContext com o tipo de retorno de uma classe de entidade
 
-1. Na **Gerenciador de servidores** ou **Database Explorer**, expanda o **Stored Procedures** nó do banco de dados com o qual você está trabalhando.
+1. Em **Gerenciador de servidores** ou **Gerenciador de banco de dados**, expanda o nó **procedimentos armazenados** do banco de dados com o qual você está trabalhando.
 
-2. Localize o procedimento armazenado desejado e arraste-o para uma classe de entidade existente na **Relational Designer**.
+2. Localize o procedimento armazenado desejado e arraste-o para uma classe de entidade existente no o **/R Designer**.
 
      O método <xref:System.Data.Linq.DataContext> é criado com o tipo de retorno da classe de entidade selecionada e aparece no painel **Métodos**.
 
@@ -54,7 +54,7 @@ Você pode criar <xref:System.Data.Linq.DataContext> métodos arrastando procedi
 
 - [Ferramentas do LINQ to SQL no Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [Métodos DataContext (Designer Relacional de Objetos)](../data-tools/datacontext-methods-o-r-designer.md)
-- [Passo a passo: Criando o LINQ para classes SQL](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)
+- [Walkthrough: Criando classes de LINQ to SQL](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)
 - [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)
 - [Introdução ao LINQ no Visual Basic](/dotnet/visual-basic/programming-guide/language-features/linq/introduction-to-linq)
 - [LINQ em C#](/dotnet/csharp/linq/linq-in-csharp)

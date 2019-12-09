@@ -7,17 +7,17 @@ helpviewer_keywords:
 - counter sets
 - load tests, counter sets
 ms.assetid: 499aca80-1069-408d-ac68-326da6a50645
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 40ce0d5d4c1988e40a7b7530b61fcfbaa1f7131d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: e35794dd238ad816badeff34094a340e8e21d16d
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62950275"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72664845"
 ---
-# <a name="how-to-add-custom-counter-sets-using-the-load-test-editor"></a>Como: Adicionar conjuntos de contadores personalizados usando o Editor de Teste de Carga
+# <a name="how-to-add-custom-counter-sets-using-the-load-test-editor"></a>Como adicionar conjuntos de contadores personalizados usando o Editor de Teste de Carga
 
 Quando cria um teste de carga com o **Novo Assistente de Teste de Carga**, você adiciona um conjunto de contadores inicial. Isso oferece um conjunto de contadores predefinidos para seu teste de carga.
 
@@ -41,7 +41,7 @@ Você gerencia os contadores no **Editor de Teste de Carga**. Os conjuntos de co
     > [!NOTE]
     > O conjunto de contadores recebe um nome padrão, como **Custom1**. É possível alterar o nome usando a janela **Propriedades**. Pressione **F4** para exibir a janela **Propriedades**.
 
-4. Para adicionar contadores ao conjunto de contadores personalizado, clique com o botão direito do mouse no novo conjunto de contadores e escolha **Adicionar contadores**. Para obter mais informações sobre como adicionar contadores, confira [Como: Adicionar contadores a conjuntos de contadores](../test/how-to-add-counters-to-counter-sets-using-the-load-test-editor.md).
+4. Para adicionar contadores ao conjunto de contadores personalizado, clique com o botão direito do mouse no novo conjunto de contadores e escolha **Adicionar contadores**. Para saber mais sobre como adicionar contadores, confira [Como adicionar contadores a conjuntos de contadores](../test/how-to-add-counters-to-counter-sets-using-the-load-test-editor.md).
 
     > [!NOTE]
     > Também é possível adicionar um conjunto de contadores personalizados clicando com o botão direito do mouse em um conjunto de contadores existente, escolhendo copiar e colando-o no nó de conjuntos de contadores. Os contadores adicionais que são copiados, mas não são necessários, podem ser excluídos. Você pode alterar o nome do novo conjunto de contadores usando a janela **Propriedades**.

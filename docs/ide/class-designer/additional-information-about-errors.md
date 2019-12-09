@@ -23,17 +23,17 @@ helpviewer_keywords:
 - Class Designer [Visual Studio], errors
 - class diagrams, errors
 ms.assetid: 79d70e70-704c-4255-ab68-c10d6949470e
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aadc0cfb66226f463ff8a2049d4dbf81e7bcf62b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: de1c6c5ec6c5639cc8a9e036bcc674c407c1ac8f
+ms.sourcegitcommit: 4f82de3fb0cfae226aef1abb40c47e63d2036a5c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975557"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72919056"
 ---
 # <a name="class-designer-errors"></a>Erros do Designer de Classe
 
@@ -44,7 +44,7 @@ O **Designer de Classe** não controla o local dos arquivos de origem, portanto,
 Você pode obter ajuda com outros erros e avisos nos seguintes recursos:
 
 - [Trabalhar com o código do Visual C++](working-with-visual-cpp-code.md) inclui informações de solução de problemas de como exibir C++ em um diagrama de classe.
-- O [Fórum do Designer de Classe do Visual Studio](http://go.microsoft.com/fwlink/?LinkId=160754) fornece um fórum para perguntas sobre o **Designer de Classe**.
+- O [Fórum do Designer de Classe do Visual Studio](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsclassdesigner) fornece um fórum para perguntas sobre o **Designer de Classe**.
 
 ## <a name="see-also"></a>Consulte também
 

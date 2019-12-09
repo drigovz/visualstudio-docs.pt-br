@@ -6,16 +6,17 @@ ms.assetid: 1d72cef3-bb09-4bbb-8864-6ea0ab623ff9
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 440401f8c46a3920fce6c8e0d29f630a24103f65
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 4bf89469c4137052247b5a1fdfee7f8dc694fbcc
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62999990"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74773988"
 ---
-# <a name="mark"></a>Marca
+# <a name="mark"></a>Mark
 A opção **Marca** do *VSPerfCmd.exe* insere as informações especificadas no arquivo de dados de criação de perfil. Marca pode ser listada em um relatório VSPerfReport separado ou na exibição de Relatório de marca da interface do usuário do criador de perfil. **Marca** pode ser usada para especificar os pontos inicial e final em relatórios e exibir filtros.
 
  A opção **Marca** deve ser a única opção especificada na linha de comando.

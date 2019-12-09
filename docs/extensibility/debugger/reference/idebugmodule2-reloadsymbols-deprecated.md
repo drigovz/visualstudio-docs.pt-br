@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugModule2::ReloadSymbols method
 ms.assetid: 0f9f0133-7d58-4cd9-a6ca-1141e095749d
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cc5651a85ccc89a8a084c608e3fc698aa326e07c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 635e305c0dd88d72017048da6353f813fcc46406
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62918823"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66323956"
 ---
 # <a name="idebugmodule2reloadsymbolsdeprecated"></a>IDebugModule2::ReloadSymbols_Deprecated
 OBSOLETO. NÃO USE. Recarrega os símbolos para esse módulo.
@@ -38,14 +41,12 @@ int ReloadSymbols( 
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `pszUrlToSymbols`
+## <a name="parameters"></a>Parâmetros
+`pszUrlToSymbols`\
+[in] O caminho para o repositório de símbolos.
 
- [in] O caminho para o repositório de símbolos.
-
- `pbstrDebugMessage`
-
- [out] Retorna uma mensagem informativa, como uma mensagem de status ou erro, que é exibida à direita do nome do módulo na janela de módulos.
+`pbstrDebugMessage`\
+[out] Retorna uma mensagem informativa, como uma mensagem de status ou erro, que é exibida à direita do nome do módulo na janela de módulos.
 
 ## <a name="return-value"></a>Valor de retorno
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro. Um mecanismo de depuração deve retornar sempre `E_FAIL`.

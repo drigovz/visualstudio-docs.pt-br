@@ -1,5 +1,5 @@
 ---
-title: Implantando, publicando e atualizando pacotes de soluções do SharePoint | Microsoft Docs
+title: Implantar, publicar e atualizar pacotes de solução do SharePoint
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a49ad82cc6cbb2eef8a8746b2c94575925ab1ddd
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 7c41b36766e112dc86bd15c7a2bec48633c35b57
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436732"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66402037"
 ---
 # <a name="deploy-publish-and-upgrade-sharepoint-solution-packages"></a>Implantar, publicar e atualizar pacotes de solução do SharePoint
   Depois de desenvolver uma solução do SharePoint no Visual Studio, você pode implantar o seu arquivo de pacote (. wsp) em um servidor SharePoint local ou publicá-lo em um servidor do SharePoint local ou remoto. Se você implantar os arquivos, você pode personalizar como os arquivos de pacote (. wsp) são implantados.
@@ -54,7 +54,7 @@ ms.locfileid: "63436732"
  Você também pode adicionar comandos a serem executados antes e após a implantação. Para obter mais informações, confira [Como: Definir comandos de implantação do SharePoint](../sharepoint/how-to-set-sharepoint-deployment-commands.md).
 
 ## <a name="publish-packages-to-a-remote-or-local-server"></a>Publicar pacotes em um servidor local ou remoto
- Para publicar uma solução em área restrita do SharePoint em um servidor remoto, na barra de menus, escolha **construir**, **Publish**e, em seguida, no **publicar** caixa de diálogo, escolha o **Publicar no Site do SharePoint** botão de opção, fornecendo a URL do servidor remoto, como **https://someremoteserver.sharepoint.microsoftonline.com**.
+ Para publicar uma solução em área restrita do SharePoint em um servidor remoto, na barra de menus, escolha **construir**, **Publish**e, em seguida, no **publicar** caixa de diálogo, escolha o **Publicar no Site do SharePoint** botão de opção, fornecendo a URL do servidor remoto, como **https://someremoteserver.sharepoint.microsoftonline.com** .
 
  Para publicar uma solução do SharePoint em um servidor local, no **Publish** caixa de diálogo, escolha o **publicar no sistema de arquivos** botão de opção, fornecendo um caminho de sistema local.
 

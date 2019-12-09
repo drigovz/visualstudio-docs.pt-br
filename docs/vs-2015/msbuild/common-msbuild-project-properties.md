@@ -19,12 +19,12 @@ caps.latest.revision: 39
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7d5c716d702716ffb0083279523668eab3e01685
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 1eb56d1334eb18dd5872457d032e5780a3f75eb3
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59650229"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698713"
 ---
 # <a name="common-msbuild-project-properties"></a>Propriedades de projeto comuns do MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -114,7 +114,7 @@ A tabela a seguir lista propriedades frequentemente usadas que são definidas no
 |Satellite_Version|Especifica as informações de versão do assembly satélite.|  
 |Satellite_Win32Icon|Insere um arquivo de ícone .ico no assembly satélite.|  
 |Satellite_Win32Resource|Insere um recurso do Win32 (arquivo .res) no assembly satélite.|  
-|SubsystemVersion|Especifica a versão mínima do subsistema que o arquivo executável gerado pode usar. Essa propriedade é equivalente à opção do compilador `/subsystemversion`. Para obter informações sobre o valor padrão desta propriedade, consulte [/subsystemversion (Visual Basic)](http://msdn.microsoft.com/library/08be22b2-f447-4cd3-8203-120b1b920b54) ou [/subsystemversion (opções do compilador C#)](http://msdn.microsoft.com/library/a99fce81-9d92-4813-9874-bee777041445).|  
+|SubsystemVersion|Especifica a versão mínima do subsistema que o arquivo executável gerado pode usar. Essa propriedade é equivalente à opção do compilador `/subsystemversion`. Para obter informações sobre o valor padrão desta propriedade, consulte [/subsystemversion (Visual Basic)](https://msdn.microsoft.com/library/08be22b2-f447-4cd3-8203-120b1b920b54) ou [/subsystemversion (opções do compilador C#)](https://msdn.microsoft.com/library/a99fce81-9d92-4813-9874-bee777041445).|  
 |TargetCompactFramework|A versão do .NET Compact Framework que é necessária para executar o aplicativo que você está compilando. Especificar isso permite fazer referência a determinados assemblies de estrutura que pode não ser possível fazer referência de outra forma.|  
 |TargetFrameworkVersion|A versão do [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] que é necessária para executar o aplicativo que você está compilando. Especificar isso permite fazer referência a determinados assemblies de estrutura que pode não ser possível fazer referência de outra forma.|  
 |TreatWarningsAsErrors|Um parâmetro booliano que, se `true`, faz com que todos os avisos sejam tratados como erros. Esse parâmetro é equivalente à opção do compilador `/nowarn`.|  

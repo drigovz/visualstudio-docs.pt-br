@@ -1,19 +1,20 @@
 ---
-title: Coletando estatísticas do aplicativo para serviços usando o método de amostragem do criador de perfil | Microsoft Docs
+title: Coletar estatísticas de aplicativo usando o método de amostragem do criador de perfil
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 07840ab2-3a92-4744-ac87-48b19e0ceecd
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: b9e71f1d8219f61946bc8242514429130530fb12
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 17217a51c58e1d30b6e6854ee9dbb0c1fb662a3a
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440239"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779682"
 ---
 # <a name="collect-application-statistics-for-services-by-using-the-profiler-sampling-method"></a>Coletar estatísticas do aplicativo para serviços usando o método de amostragem do criador de perfil
 Esta seção descreve os procedimentos e as opções para coletar estatísticas de desempenho de serviços Windows usando o método de amostragem da linha de comando.
@@ -25,9 +26,9 @@ Esta seção descreve os procedimentos e as opções para coletar estatísticas 
 
 |Tarefa|Conteúdo relacionado|
 |----------|---------------------|
-|**Anexar o criador de perfil a um serviço .NET**|-   [Como: Anexar o criador de perfil a um serviço do .NET para coletar estatísticas do aplicativo](../profiling/how-to-attach-the-profiler-to-a-dotnet-service-to-collect-application-statistics-by-using-the-command-line.md)|
+|**Anexar o criador de perfil a um serviço .NET**|-   [How to: Attach the Profiler to a .NET Service to Collect Application Statistics (Como anexar o criador de perfil a um serviço do .NET para coletar estatísticas do aplicativo)](../profiling/how-to-attach-the-profiler-to-a-dotnet-service-to-collect-application-statistics-by-using-the-command-line.md)|
 |**Add tier-interaction data (Adicionar dados de interação de camada)**|-   [Coletar dados de interação entre camadas](../profiling/adding-tier-interaction-data-from-the-command-line.md)|
-|**Attach the profiler to a C/C++ service (Anexar o criador de perfil a um serviço C/C++)**|-   [Como: Anexar o criador de perfil a um serviço nativo para coletar estatísticas do aplicativo](../profiling/how-to-attach-the-profiler-to-a-native-service-to-collect-application-statistics-by-using-the-command-line.md)|
+|**Attach the profiler to a C/C++ service (Anexar o criador de perfil a um serviço C/C++)**|-   [How to: Attach the Profiler to a Native Service to Collect Application Statistics (Como anexar o criador de perfil a um serviço nativo para coletar estatísticas do aplicativo)](../profiling/how-to-attach-the-profiler-to-a-native-service-to-collect-application-statistics-by-using-the-command-line.md)|
 
 ## <a name="related-tasks"></a>Tarefas relacionadas
 

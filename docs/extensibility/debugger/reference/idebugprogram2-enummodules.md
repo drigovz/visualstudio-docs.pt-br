@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgram2::EnumModules
 ms.assetid: 876ac9da-3b7c-4156-b79a-8f340e9fcea6
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e8de1f98cb6953ba713796e1dbd74de849a0aaf7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 1bcc4beb077683cddfe3df14f147c3cc90b4111b
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62917299"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66353122"
 ---
 # <a name="idebugprogram2enummodules"></a>IDebugProgram2::EnumModules
 Recupera uma lista dos módulos que este programa foi carregado e está em execução.
@@ -36,10 +39,9 @@ int EnumModules( 
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `ppEnum`
-
- [out] Retorna um [IEnumDebugModules2](../../../extensibility/debugger/reference/ienumdebugmodules2.md) objeto que contém uma lista dos módulos.
+## <a name="parameters"></a>Parâmetros
+`ppEnum`\
+[out] Retorna um [IEnumDebugModules2](../../../extensibility/debugger/reference/ienumdebugmodules2.md) objeto que contém uma lista dos módulos.
 
 ## <a name="return-value"></a>Valor de retorno
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.

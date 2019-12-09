@@ -21,11 +21,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ebb8ec1fe10f6fbc5c367cb0ed127e048351b0e4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105910"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68157866"
 ---
 # <a name="how-to-run-the-worker-process-under-a-user-account"></a>Como: Executar o processo de trabalho em uma conta de usuário
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Para configurar o computador de modo que você possa executar o processo de trab
   
 ## <a name="procedure"></a>Procedimento  
   
-#### <a name="to-run-aspnetwpexe-under-a-user-account"></a>Para executar aspnet_wp.exe em uma conta de usuário  
+#### <a name="to-run-aspnet_wpexe-under-a-user-account"></a>Para executar aspnet_wp.exe em uma conta de usuário  
   
 1. Abra o arquivo machine.config, localizado no computador na pasta CONFIGURATION no caminho onde você instalou o tempo de execução.  
   

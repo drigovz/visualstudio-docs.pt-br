@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPropertyDestroyEvent2::GetDebugProperty
 ms.assetid: c96ae785-0ac8-4df4-8df3-15a8d7e13687
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b9a9d0b6ec922e010fb9800c212d4a233e8eeeb0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: b58a7a3463c579ece09a6bb185066a4e556f2f06
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62916465"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66348708"
 ---
 # <a name="idebugpropertydestroyevent2getdebugproperty"></a>IDebugPropertyDestroyEvent2::GetDebugProperty
 Obtém a propriedade a ser destruído.
@@ -36,10 +39,9 @@ int GetDebugProperty ( 
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `ppProperty`
-
- [out] Retorna um [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) objeto que representa a propriedade a ser destruído.
+## <a name="parameters"></a>Parâmetros
+`ppProperty`\
+[out] Retorna um [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) objeto que representa a propriedade a ser destruído.
 
 ## <a name="return-value"></a>Valor de retorno
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.

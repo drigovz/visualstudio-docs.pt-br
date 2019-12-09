@@ -1,5 +1,5 @@
 ---
-title: 'Método ijsdebugdatatarget:: Readmemory | Microsoft Docs'
+title: 'Método IJsDebugDataTarget:: ReadMemory | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,12 +15,12 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 705fff3bf2d4be78897c18c5a4c61bd74a8c2230
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 84da36433cf3546b34d3e044bb113916c9798117
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62582349"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572426"
 ---
 # <a name="ijsdebugdatatargetreadmemory-method"></a>Método IJsDebugDataTarget::ReadMemory
 Lê a memória do processo de destino.  
@@ -39,27 +39,27 @@ HRESULT ReadMemory(
   
 #### <a name="parameters"></a>Parâmetros  
  `address`  
- [in] O endereço base do qual ler a memória do processo de destino.  
+ no O endereço base do qual ler a memória do processo de destino.  
   
  `flags`  
- [in] Sinalizadores de controlar o comportamento de ReadMemory.  
+ no Sinalizadores que controlam o comportamento de ReadMemory.  
   
  `pBuffer`  
- [out] Um buffer que recebe o conteúdo do espaço de endereço do processo de destino. Em caso de falha, o conteúdo desse buffer é especificado.  
+ fora Um buffer que recebe o conteúdo do espaço de endereço do processo de destino. Em caso de falha, o conteúdo desse buffer não é especificado.  
   
  `size`  
- [in] O número de bytes a serem lidos do processo.  
+ no O número de bytes a serem lidos do processo.  
   
  `pBytesRead`  
- [out] Indica o número de bytes lidos do processo de destino. Se JsDebugAllowPartialRead estiver desmarcado, em caso de sucesso esse valor sempre será exatamente igual ao tamanho de entrada. Se JsDebugAllowPartialRead estiver especificado, em caso de sucesso, esse valor será maior que zero.  
+ fora Indica o número de bytes lidos do processo de destino. Se JsDebugAllowPartialRead for clara, em caso de sucesso, esse valor será sempre exatamente igual ao tamanho de entrada. Se JsDebugAllowPartialRead for especificado, em caso de êxito, esse valor será maior que zero.  
   
-## <a name="return-value"></a>Valor de retorno  
+## <a name="return-value"></a>Valor retornado  
   
 ## <a name="remarks"></a>Comentários  
- Retorna S_OK no êxito e códigos de falha é usada para qualquer erro. Retornará E_JsDEBUG_INVALID_MEMORY_ADDRESS se o endereço não é válido. Para obter mais informações, consulte JsDebugAllowPartialRead.  
+ Retorna S_OK em caso de êxito e os códigos de falha são usados para qualquer erro. Retorna E_JsDEBUG_INVALID_MEMORY_ADDRESS se o endereço não for válido. Para obter mais informações, consulte JsDebugAllowPartialRead.  
   
 ## <a name="requirements"></a>Requisitos  
- **Cabeçalho:** jscript9diag.h  
+ **Cabeçalho:** jscript9diag. h  
   
 ## <a name="see-also"></a>Consulte também  
  [Interface IJsDebugDataTarget](../../winscript/reference/ijsdebugdatatarget-interface.md)

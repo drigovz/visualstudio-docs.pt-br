@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e2ade3e1b5a2317d16d668079275506509aeef7a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: cb48733f84dcf484d2c2d7ffb18e838faae07ab0
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63001115"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911194"
 ---
 # <a name="concurrency-visualizer-sdk"></a>SDK do Visualizador de Simultaneidade
-Descreve como instrumentalizar o código-fonte usando o SDK de Visualização Simultânea para exibir informações adicionais na Visualização Simultânea. É possível associar os dados adicionais a fases e eventos em seu código. Estas visualizações adicionais são conhecidas como *marcadores*.  Para ver um passo a passo introdutório, consulte [Apresentando o SDK da Visualização Simultânea](http://go.microsoft.com/fwlink/?LinkId=235405).
+Descreve como instrumentalizar o código-fonte usando o SDK de Visualização Simultânea para exibir informações adicionais na Visualização Simultânea. É possível associar os dados adicionais a fases e eventos em seu código. Estas visualizações adicionais são conhecidas como *marcadores*.  Para ver um passo a passo introdutório, consulte [Apresentando o SDK da Visualização Simultânea](https://blogs.msdn.microsoft.com/visualizeparallel/2011/10/17/introducing-the-concurrency-visualizer-sdk/).
 
 ## <a name="properties"></a>Propriedades
  Sinalizadores, intervalos e mensagens têm, cada um, duas propriedades: categoria e importância. Na caixa de diálogo [Configurações Avançadas](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md), é possível usar essas propriedades para filtrar o conjunto de marcadores exibidos. Além disso, essas propriedades afetam a representação visual de marcadores. Por exemplo, o tamanho dos sinalizadores é usado para representar a importância. Além disso, a cor é usada para indicar a categoria.
@@ -27,7 +27,7 @@ Descreve como instrumentalizar o código-fonte usando o SDK de Visualização Si
  A Visualização Simultânea expõe um provedor padrão que pode ser usado para gerar marcadores. O provedor já está registrado junto com a Visualização Simultânea e não é necessário fazer mais nada para fazer os marcadores serem exibidos na interface do usuário.
 
 ### <a name="c-and-visual-basic"></a>C# e Visual Basic
- No C#, no Visual Basic e em outro código gerenciado, use o provedor padrão chamando <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Markers>. Ele expõe quatro funções para gerar marcadores: <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Markers.WriteFlag%2A>, <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Markers.EnterSpan%2A>, <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Markers.WriteMessage%2A> e <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Markers.WriteAlert%2A>. Há várias sobrecargas para essas funções, dependendo se você deseja usar os padrões para as propriedades.  A sobrecarga mais simples aceita apenas um parâmetro de cadeia de caracteres que especifica a descrição do evento. A descrição é exibida nos relatórios da Visualização Simultânea.
+ No C#, no Visual Basic e em outros códigos gerenciados, use o provedor padrão chamando métodos na classe [Markers](/previous-versions/hh694099(v=vs.140)). Ele expõe quatro métodos para gerar marcadores: [WriteFlag](/previous-versions/hh694185%28v%3dvs.140%29), [EnterSpan](/previous-versions/hh694205(v=vs.140)), [WriteMessage](/previous-versions/hh694161(v=vs.140))e [WriteAlert](/previous-versions/hh694180(v=vs.140)). Há várias sobrecargas para essas funções, dependendo se você deseja usar os padrões para as propriedades.  A sobrecarga mais simples aceita apenas um parâmetro de cadeia de caracteres que especifica a descrição do evento. A descrição é exibida nos relatórios da Visualização Simultânea.
 
 ##### <a name="to-add-sdk-support-to-a-c-or-visual-basic-project"></a>Para adicionar suporte do SDK a um projeto em C# ou do Visual Basic
 
@@ -76,7 +76,7 @@ Descreve como instrumentalizar o código-fonte usando o SDK de Visualização Si
 
 #### <a name="to-use-a-new-marker-provider-in-a-c-or-visual-basic-project"></a>Para usar um novo provedor de marcador em um projeto em C# ou do Visual Basic
 
-1. Crie um objeto <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.MarkerWriter>.  O construtor aceita um GUID.
+1. Crie um objeto [MarkerWriter](/previous-versions/hh694138(v=vs.140)).  O construtor aceita um GUID.
 
 2. Para registrar o provedor, abra a caixa de diálogo [Configurações Avançadas](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) da Visualização Simultânea.  Selecione a guia **Marcadores** e, em seguida, escolha o botão **Adicionar novo provedor**. Na caixa de diálogo [Configurações Avançadas](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md), digite o GUID usado para criar o provedor e uma descrição do provedor.
 
@@ -88,7 +88,7 @@ Descreve como instrumentalizar o código-fonte usando o SDK de Visualização Si
 
 #### <a name="to-use-a-marker-series-in-a-c-or-visual-basic-project"></a>Para usar uma série de marcadores em um projeto em C# ou do Visual Basic
 
-1. Para usar um novo <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.MarkerSeries>, primeiro o crie usando um objeto <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.MarkerWriter> e, em seguida, gere eventos de marcador diretamente da nova série.
+1. Para usar uma nova [MarkerSeries](/previous-versions/hh694127(v=vs.140)), primeiro crie-a usando um objeto [MarkerWriter](/previous-versions/hh694138(v=vs.140)) e, em seguida, gere eventos de marcador diretamente da nova série.
 
     ```csharp
     MarkerSeries series1 = myMarkerWriter.CreateMarkerSeries("Series 1");
@@ -125,5 +125,5 @@ Descreve como instrumentalizar o código-fonte usando o SDK de Visualização Si
 |-----------|-----------------|
 |[Referência de biblioteca C++](../profiling/cpp-library-reference.md)|Descreve a API da Visualização Simultânea para C++.|
 |[Referência de biblioteca C](../profiling/c-library-reference.md)|Descreve a API da Visualização Simultânea para C.|
-|<xref:Microsoft.ConcurrencyVisualizer.Instrumentation>|Descreve a API da Visualização Simultânea para o código gerenciado.|
+|[Instrumentação](/previous-versions/hh694104(v=vs.140))|Descreve a API da Visualização Simultânea para o código gerenciado.|
 |[Visualização Simultânea](../profiling/concurrency-visualizer.md)|Informações de referência para as exibições e relatórios de arquivos de dados de criação de perfil gerados usando o método de simultaneidade e que incluem dados de execução de threads.|

@@ -11,13 +11,13 @@ caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a5c378aec6822a436de0d8fc2656fcac7be4149f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58923461"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68203903"
 ---
-# <a name="intellisense-hosting"></a>IntelliSense Hosting
+# <a name="intellisense-hosting"></a>Hospedagem IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 O Visual Studio permite a hospedagem de IntelliSense. IntellSense hospedagem permite que você fornece o IntelliSense para código não é hospedado pelo editor de texto do Visual Studio.  

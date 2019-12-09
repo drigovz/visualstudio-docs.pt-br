@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramPublisher2::SetDebuggerPresent
 ms.assetid: c88c3ff4-3632-4199-b5de-83c6d21bcf75
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: faa7263c3f5fa86a77c94271dec1b429d2f00543
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 402a9a65344af02dd4c321f4a1e449b012af36ee
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62869770"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66343298"
 ---
 # <a name="idebugprogrampublisher2setdebuggerpresent"></a>IDebugProgramPublisher2::SetDebuggerPresent
 Informa o Editor de programa que um depurador está presente e em execução.
@@ -36,10 +39,9 @@ int SetDebuggerPresent(
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `fDebuggerPresent`
-
- [in] Diferente de zero (`TRUE`) se um depurador estiver presente, zero (`FALSE`) se não for.
+## <a name="parameters"></a>Parâmetros
+`fDebuggerPresent`\
+[in] Diferente de zero (`TRUE`) se um depurador estiver presente, zero (`FALSE`) se não for.
 
 ## <a name="return-value"></a>Valor de retorno
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.

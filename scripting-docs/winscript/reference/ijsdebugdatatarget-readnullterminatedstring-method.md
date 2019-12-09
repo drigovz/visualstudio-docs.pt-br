@@ -1,5 +1,5 @@
 ---
-title: 'Método ijsdebugdatatarget:: Readnullterminatedstring | Microsoft Docs'
+title: 'Método IJsDebugDataTarget:: ReadNullTerminatedString | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,15 +15,15 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 178a2d3705e4904de9253c02319f6ba94e567d76
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 67d6ee6c8dad81865767b0b944ef311fc0de0063
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62582351"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572409"
 ---
 # <a name="ijsdebugdatatargetreadnullterminatedstring-method"></a>Método IJsDebugDataTarget::ReadNullTerminatedString
-Lê o número especificado de caracteres de destino.  
+Lê o número especificado de caracteres do destino.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -38,24 +38,24 @@ HRESULT ReadNullTerminatedString(
   
 #### <a name="parameters"></a>Parâmetros  
  `address`  
- [in] O endereço de onde ler.  
+ no O endereço do qual ler.  
   
  `characterSize`  
- [in] tamanho de cada caractere na cadeia de caracteres  
+ [no] tamanho de cada caractere na cadeia de caracteres  
   
  `maxCharacters`  
- [in] O número máximo de caracteres a serem lidos. maxCharacters deve ser razoável. Qualquer solicitação para mais de 128MB de memória falhará.  Se a cadeia de caracteres for maior do que maxCharacters, a cadeia de caracteres de resultado será truncada após maxCharacters.  
+ no O número máximo de caracteres a serem lidos. maxCharacters deve ser razoável. Qualquer solicitação para mais de 128 MB de memória falhará.  Se a cadeia de caracteres for maior que maxCharacters, a cadeia de caracteres de resultado será truncada após maxCharacters.  
   
  `pString`  
- [out] Leia o BSTR do destino.  
+ fora O BSTR lido do destino.  
   
-## <a name="return-value"></a>Valor de retorno  
+## <a name="return-value"></a>Valor retornado  
   
 ## <a name="remarks"></a>Comentários  
- Retornará S_FALSE se truncado.  
+ Retorna S_FALSE se truncado.  
   
 ## <a name="requirements"></a>Requisitos  
- **Cabeçalho:** jscript9diag.h  
+ **Cabeçalho:** jscript9diag. h  
   
 ## <a name="see-also"></a>Consulte também  
  [Interface IJsDebugDataTarget](../../winscript/reference/ijsdebugdatatarget-interface.md)

@@ -8,17 +8,20 @@ helpviewer_keywords:
 - GetHitCount method
 - IDebugBoundBreakpoint2::GetHitCount method
 ms.assetid: 23481f37-047c-41d2-8286-4da1f4084961
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 88fde36e2d7b0ef776849d7d3af7e36418dfff7d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 3a46baa5b48173df5a89dde8e683c875ef536a38
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62877389"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66320422"
 ---
 # <a name="idebugboundbreakpoint2gethitcount"></a>IDebugBoundBreakpoint2::GetHitCount
 Obtém a contagem de ocorrências atual para este ponto de interrupção associado.
@@ -37,10 +40,9 @@ int GetHitCount( 
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `pdwHitCount`
-
- [out] Retorna a contagem de ocorrências.
+## <a name="parameters"></a>Parâmetros
+`pdwHitCount`\
+[out] Retorna a contagem de ocorrências.
 
 ## <a name="return-value"></a>Valor de retorno
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro. Retorna `E_BP_DELETED` se o estado do objeto associado de ponto de interrupção é definido como `BPS_DELETED` (parte do [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) enumeração).

@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProcess2::GetPhysicalProcessId
 ms.assetid: 77da6e10-75af-4308-97dd-c44416ca52d7
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2f8a822932479cab7b62be52951c83c6d016fcc2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 5c4dd794d3de4d61750813bd0e6542946120e4b6
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62870885"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66311698"
 ---
 # <a name="idebugprocess2getphysicalprocessid"></a>IDebugProcess2::GetPhysicalProcessId
 Obtém o identificador de processo do sistema.
@@ -36,10 +39,9 @@ int GetPhysicalProcessId(
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `pdwProcessId`
-
- [out] Uma [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) estrutura será preenchida com as informações de identificador de processo do sistema.
+## <a name="parameters"></a>Parâmetros
+`pdwProcessId`\
+[out] Uma [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) estrutura será preenchida com as informações de identificador de processo do sistema.
 
 ## <a name="return-value"></a>Valor de retorno
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.

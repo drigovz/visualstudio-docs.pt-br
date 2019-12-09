@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramEngines2::EnumPossibleEngines
 ms.assetid: 993d70a4-f6a5-4e47-a603-0b162b9fde00
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9dc3185b644a1045428ead9f2c9851916df3249c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 532486c66b6feb5c397b9167e2b1cd6197513fa8
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62917026"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66343391"
 ---
 # <a name="idebugprogramengines2enumpossibleengines"></a>IDebugProgramEngines2::EnumPossibleEngines
 Retorna os GUIDs para todos os possíveis depuração mecanismos (DES) que podem depurá-lo.
@@ -40,18 +43,15 @@ int EnumPossibleEngines( 
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `celtBuffer`
+## <a name="parameters"></a>Parâmetros
+`celtBuffer`\
+[in] O número de GUIDs DE retornar. Isso também especifica o tamanho máximo da `rgguidEngines` matriz.
 
- [in] O número de GUIDs DE retornar. Isso também especifica o tamanho máximo da `rgguidEngines` matriz.
+`rgguidEngines`\
+[no, out] Uma matriz DE GUIDs a serem preenchidos.
 
- `rgguidEngines`
-
- [no, out] Uma matriz DE GUIDs a serem preenchidos.
-
- `pceltEngines`
-
- [out] Retorna o número real de GUIDs DE que são retornados.
+`pceltEngines`\
+[out] Retorna o número real de GUIDs DE que são retornados.
 
 ## <a name="return-value"></a>Valor de retorno
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro. Retorna [C++] `HRESULT_FROM_WIN32(ERROR_INSUFFICIENT_BUFFER)` ou [C#] 0x8007007A se o buffer não for grande o suficiente.

@@ -1,5 +1,5 @@
 ---
-title: 'Como: Especifique uma URL de suporte para pré-requisitos individuais em uma implantação de ClickOnce | Microsoft Docs'
+title: URL de suporte para pré-requisitos de implantação do ClickOnce
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -15,15 +15,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f79aec7a8882f87bc98f822d4fb4f0c1961bd69
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 78ba7398694e097f324695b6357abc0b35f8d3ee
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62928597"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745574"
 ---
 # <a name="how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment"></a>Como: Especificar uma URL de suporte para pré-requisitos individuais em uma implantação do ClickOnce
-Um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implantação pode testar para um número de pré-requisitos que devem estar disponíveis no computador cliente para o [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo seja executado. Essas dependências incluem a versão mínima necessária do [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], a versão do sistema operacional e todos os assemblies que devem ser pré-instalados no cache de assembly global (GAC). [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], no entanto, não é possível instalar qualquer um desses pré-requisitos em si; Se um pré-requisito não for encontrado, ele simplesmente interrompe a instalação e exibe uma caixa de diálogo explicando por que a instalação falhou.
+Um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implantação pode testar para um número de pré-requisitos que devem estar disponíveis no computador cliente para o [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo seja executado. Essas dependências incluem a versão mínima necessária do .NET Framework, a versão do sistema operacional e todos os assemblies que devem ser pré-instalados no cache de assembly global (GAC). [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], no entanto, não é possível instalar qualquer um desses pré-requisitos em si; Se um pré-requisito não for encontrado, ele simplesmente interrompe a instalação e exibe uma caixa de diálogo explicando por que a instalação falhou.
 
  Há dois métodos para instalar os pré-requisitos. Você pode instalá-los usando um aplicativo bootstrapper. Como alternativa, você pode especificar uma URL de suporte para pré-requisitos individuais, que é exibida aos usuários na caixa de diálogo se o pré-requisito não for encontrado. A página referenciada por essa URL pode conter links para instruções de instalação dos pré-requisitos necessários. Se um aplicativo não especificar uma URL de suporte para um pré-requisito individual, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] exibirá a URL de suporte especificada no manifesto de implantação para o aplicativo como um todo, se ele está definido.
 
@@ -31,7 +31,7 @@ Um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implantaç�
 
 ### <a name="specify-a-support-url-for-an-individual-prerequisite"></a>Especifique uma URL de suporte para um pré-requisito individual
 
-1. Abra o manifesto do aplicativo (o *. manifest* arquivo) para sua [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo em um editor de texto.
+1. Abra o manifesto do aplicativo (o *. manifest* arquivo) para o [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo em um editor de texto.
 
 2. Para obter um pré-requisito de sistema operacional, adicione a `supportUrl` de atributo para o `dependentOS` elemento:
 
@@ -65,7 +65,7 @@ Um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implantaç�
      </dependency>
    ```
 
-5. Opcional. Para aplicativos destinados ao .NET Framework 4, abra o manifesto de implantação (a *. Application* arquivo) para sua [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo em um editor de texto.
+5. Opcional. Para aplicativos destinados ao .NET Framework 4, abra o manifesto de implantação (a *. Application* arquivo) para o [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo em um editor de texto.
 
 6. Para obter um pré-requisito do .NET Framework 4, adicione a `supportUrl` de atributo para o `compatibleFrameworks` elemento:
 

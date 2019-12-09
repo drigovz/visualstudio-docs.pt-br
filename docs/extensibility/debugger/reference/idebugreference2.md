@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugReference2 interface
 ms.assetid: 3cfed312-f532-4bce-84a5-1677c14567d7
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b1096755c1647f976b76ab61be1c24b358d4363d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 66d35b636516df1052ffa2a70c25da79851dd833
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63412634"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66329649"
 ---
 # <a name="idebugreference2"></a>IDebugReference2
 Essa interface representa uma referência a uma propriedade de quadro de pilha ou outra propriedade.

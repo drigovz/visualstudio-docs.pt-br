@@ -13,18 +13,18 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8a4b51d87f89d77bebf065ce5f52a297ada333d3
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a8e4ae024429702f3268a01c1e2e1fb4b40294d8
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63383511"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985281"
 ---
 # <a name="iremotedebugapplication110getmainthread"></a>IRemoteDebugApplication110::GetMainThread
-Retorna o thread principal para hosts que chamam [SetSite](http://go.microsoft.com/fwlink/?LinkId=232439), caso contrário, retornará E_FAIL.  
+Retorna o thread principal para hosts que chamam [SetSite](/windows/win32/api/ocidl/nf-ocidl-iobjectwithsite-setsite), caso contrário retorna E_FAIL.  
   
 > [!IMPORTANT]
-> [IRemoteDebugApplication Interface](../../winscript/reference/iremotedebugapplication-interface.md) é implementada pelo PDM v11.0 e maior. Localizado em. activdbg100.h.  
+> A [interface IRemoteDebugApplication](../../winscript/reference/iremotedebugapplication-interface.md) é implementada pelo PDM v 11.0 e superior. Localizado em. activdbg100.h.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -34,8 +34,8 @@ HRESULT GetMainThread([out] IRemoteDebugApplicationThread **ppThread);
   
 #### <a name="parameters"></a>Parâmetros  
  `ppThread`  
- [out] A principal [IRemoteDebugApplicationThread Interface](../../winscript/reference/iremotedebugapplicationthread-interface.md).  
+ fora A [interface IRemoteDebugApplicationThread](../../winscript/reference/iremotedebugapplicationthread-interface.md)principal.  
   
 ## <a name="see-also"></a>Consulte também  
- [Interface IRemoteDebugApplication](../../winscript/reference/iremotedebugapplication-interface.md)   
+   de [interface IRemoteDebugApplication](../../winscript/reference/iremotedebugapplication-interface.md)  
  [Interface IRemoteDebugApplication110](../../winscript/reference/iremotedebugapplication110-interface.md)

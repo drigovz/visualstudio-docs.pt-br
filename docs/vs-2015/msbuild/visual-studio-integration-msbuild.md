@@ -19,12 +19,12 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e8a2bd058faa2c3ef9d17a82ad08dd3ad28842a8
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: c90019aa24047524005ba70aa4f1aec75f89c71d
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445641"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825416"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Integração com o Visual Studio (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] examina as condições em elementos `PropertyGroup`, `ItemGroup`, `Import`, de propriedade e de item para essa finalidade.  
   
 ## <a name="additional-build-actions"></a>Ações de Compilação Adicionais  
- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] permite que o nome do tipo de item de um arquivo seja alterado em um projeto com a propriedade **Ação de build** da janela [Propriedades do Arquivo](http://msdn.microsoft.com/013c4aed-08d6-4dce-a124-ca807ca08959). Os nomes de tipo de item de `Compile`, `EmbeddedResource`, `Content` e `None` sempre estarão listados no menu, juntamente com quaisquer outros nomes de tipo de item que já estejam no projeto. Para garantir a disponibilidade dos nomes de tipo de item personalizados nesse menu, é possível adicionar os nomes a um tipo de item de nome `AvailableItemName`. Por exemplo, adicionar o seguinte ao arquivo de projeto adicionará o tipo personalizado `JScript` a esse menu para todos os projetos que o importarem:  
+ [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] permite que o nome do tipo de item de um arquivo seja alterado em um projeto com a propriedade **Ação de build** da janela [Propriedades do Arquivo](https://msdn.microsoft.com/013c4aed-08d6-4dce-a124-ca807ca08959). Os nomes de tipo de item de `Compile`, `EmbeddedResource`, `Content` e `None` sempre estarão listados no menu, juntamente com quaisquer outros nomes de tipo de item que já estejam no projeto. Para garantir a disponibilidade dos nomes de tipo de item personalizados nesse menu, é possível adicionar os nomes a um tipo de item de nome `AvailableItemName`. Por exemplo, adicionar o seguinte ao arquivo de projeto adicionará o tipo personalizado `JScript` a esse menu para todos os projetos que o importarem:  
   
 ```  
 <ItemGroup>  
@@ -134,9 +134,9 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
   
 1. No **Gerenciador de Soluções**, abra o menu de atalho do projeto e, em seguida, escolha **Descarregar Projeto**.  
   
-     O projeto está marcado como **(indisponível)**.  
+     O projeto está marcado como **(indisponível)** .  
   
-2. No **Gerenciador de Soluções**, abra o menu de atalho do projeto indisponível e, em seguida, escolha **Editar \<Arquivo de Projeto>**.  
+2. No **Gerenciador de Soluções**, abra o menu de atalho do projeto indisponível e, em seguida, escolha **Editar \<Arquivo de Projeto>** .  
   
      O arquivo de projeto será aberto no Editor de XML do Visual Studio.  
   
@@ -160,13 +160,13 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
   
 - Referências do assembly:  
   
-     O sistema de projeto chama um destino com o nome conhecido `ResolveAssemblyReferences`. Esse destino deve produzir itens com o nome de tipo de item `ReferencePath`. Cada um desses itens deve ter uma especificação de item (o valor do atributo `Include` de um item) que contém o caminho completo para a referência. Os itens devem ter todos os metadados dos itens de entrada aprovados, além dos novos metadados a seguir:  
-  
-    - `CopyLocal`, que indica se o assembly deve ser copiado para a pasta de saída, definido como true ou false.  
-  
-    - `OriginalItemSpec`, que contém a especificação de item original da referência.  
-  
-    - `ResolvedFrom`, definido como “{TargetFrameworkDirectory}” se tiver sido resolvido do diretório [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].  
+  O sistema de projeto chama um destino com o nome conhecido `ResolveAssemblyReferences`. Esse destino deve produzir itens com o nome de tipo de item `ReferencePath`. Cada um desses itens deve ter uma especificação de item (o valor do atributo `Include` de um item) que contém o caminho completo para a referência. Os itens devem ter todos os metadados dos itens de entrada aprovados, além dos novos metadados a seguir:  
+
+  - `CopyLocal`, que indica se o assembly deve ser copiado para a pasta de saída, definido como true ou false.  
+
+  - `OriginalItemSpec`, que contém a especificação de item original da referência.  
+
+  - `ResolvedFrom`, definido como “{TargetFrameworkDirectory}” se tiver sido resolvido do diretório [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].  
   
 - Referências COM:  
   

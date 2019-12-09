@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: fc52b883388640ef0e24478a08202bd2991375fc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 78a81b2392959b968e8905ae33a6f0751e73f2ff
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58928707"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686764"
 ---
 # <a name="debugger-windows"></a>Depurador do Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,10 +33,10 @@ Você pode abrir a maioria das janelas do depurador enquanto você estiver depur
 |Inspeção paralela|CTR: + SHIFT + D, (1, 2, 3, 4)|[Usando a janela Pilhas Paralelas](../debugger/using-the-parallel-stacks-window.md)|  
 |Inspeção|CTRL + ALT + W, (1, 2, 3, 4)|[Janelas Inspeção e Inspeção Rápida](../debugger/watch-and-quickwatch-windows.md)|  
 |QuickWatch|SHIFT + F9|[Janelas Inspeção e Inspeção Rápida](../debugger/watch-and-quickwatch-windows.md)|  
-|Automático|CTRL + ALT + V, A|[Janelas de Variáveis](http://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)|  
-|Locais|CTRL + ALT + V, L|[Janelas de Variáveis](http://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)|  
+|Automático|CTRL + ALT + V, A|[Janelas de Variáveis](https://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)|  
+|Locais|CTRL + ALT + V, L|[Janelas de Variáveis](https://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)|  
 |Imediato|CTRL + ALT + I|[Janela Imediata](../ide/reference/immediate-window.md)|  
-|Depuração de Python interativa|SHIFT + ALT + I|[Introdução ao PTVS: Python interativo](../python/getting-started-with-ptvs-interactive-python.md)|  
+|Depuração de Python interativa|SHIFT + ALT + I|[Introdução às PTVS: Python interativo](../python/getting-started-with-ptvs-interactive-python.md)|  
 |Console do JavaScript|CTRL + ALT + V, C|[Início Rápido: Depurar em JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)|  
 |Explorador do DOM|CTRL + ALT + V, D|[Depurar o layout usando o Explorador do DOM](../debugger/debug-layout-using-dom-explorer.md)|  
 |Árvore visual dinâmica|-|[Inspecione as propriedades XAML durante a depuração](../debugger/inspect-xaml-properties-while-debugging.md)|  

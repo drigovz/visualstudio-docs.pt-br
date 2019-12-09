@@ -1,47 +1,45 @@
 ---
 title: IDiaSymbol::get_virtual | Microsoft Docs
-ms.date: 11/15/2016
-ms.prod: visual-studio-dev14
-ms.technology: vs-ide-debug
-ms.topic: reference
+ms.date: 11/04/2016
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaSymbol::get_virtual method
 ms.assetid: 97e3ad51-8ef3-4446-ab33-3cb34a21b7a0
-caps.latest.revision: 11
-author: MikeJo5000
+author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d7c4a4322b13f49abc31f772316ffb751d5d0d77
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.workload:
+- multiple
+ms.openlocfilehash: 8747fb97249e5bba62d0b79a1a6ac0a24728826e
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63399808"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738921"
 ---
-# <a name="idiasymbolgetvirtual"></a>IDiaSymbol::get_virtual
-[!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
+# <a name="idiasymbolget_virtual"></a>IDiaSymbol::get_virtual
+Recupera um sinalizador que especifica se a função é virtual.
 
-Recupera um sinalizador que especifica se a função é virtual.  
-  
-## <a name="syntax"></a>Sintaxe  
-  
-```cpp#  
-HRESULT get_virtual (   
-   BOOL* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parâmetros  
- `pRetVal`  
- [out] Retorna `TRUE` se a função é virtual; caso contrário, retornará `FALSE`.  
-  
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE` ou um código de erro.  
-  
+## <a name="syntax"></a>Sintaxe
+
+```C++
+HRESULT get_virtual ( 
+   BOOL* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parâmetros
+ `pRetVal`
+
+fora Retornará `TRUE` se a função for virtual; caso contrário, retorna `FALSE`.
+
+## <a name="return-value"></a>Valor retornado
+ Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE` ou um código de erro.
+
 > [!NOTE]
-> Um valor de retorno `S_FALSE` significa que a propriedade não está disponível para o símbolo.  
-  
-## <a name="see-also"></a>Consulte também  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+> Um valor de retorno de `S_FALSE` significa que a propriedade não está disponível para o símbolo.
+
+## <a name="see-also"></a>Consulte também
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -1,31 +1,31 @@
 ---
-title: 'Como: Criar um documento XML baseado em um esquema XSD'
+title: Como criar um documento XML baseado em um esquema XSD
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 193b195f-e918-4c79-a1a1-8096a1433bde
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d4ba0106a1494c7e7e8d56c3e902a3436f657712
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1f423af7dc4fae7a116acbaf8497c5ee4268653e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62783319"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72645969"
 ---
-# <a name="how-to-create-an-xml-document-based-on-an-xsd-schema"></a>Como: Criar um documento XML baseado em um esquema XSD
+# <a name="how-to-create-an-xml-document-based-on-an-xsd-schema"></a>Como: criar um documento XML com base em um esquema XSD
 
-O **gerar XML de exemplo** recurso gera um arquivo XML de exemplo com base em seu arquivo de esquema XML (XSD).
+O recurso **gerar XML de exemplo** gera um arquivo XML de exemplo baseado em seu arquivo de esquema XML (XSD).
 
- Você pode usar esta opção para os seguintes situações:
+Você pode usar esta opção para os seguintes situações:
 
 - Para entender o uso de várias construções no seu esquema.
 
 - Para confirmar que o esquema faz o que é esperado dele.
 
-O **gerar XML de exemplo** recurso só está disponível nos elementos globais e requer um conjunto de esquema XML válido.
+O recurso **gerar XML de exemplo** só está disponível em elementos globais e requer um conjunto de esquema XML válido.
 
 Esse recurso normalmente gera documentos XML válidos. No entanto, se o esquema contiver um ou mais dos seguintes, o exemplo poderá não ser válido:
 
@@ -41,11 +41,11 @@ Além disso, observe que o conteúdo de `xs:base64Binary` será gerado apenas se
 
 ## <a name="to-generate-an-xml-instance-document-based-on-the-xsd-file"></a>Para gerar um documento de instância XML baseado no arquivo XSD
 
-1. Siga as etapas em [como: Criar e editar um arquivo de esquema XSD](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md).
+1. Siga as etapas em [como criar e editar um arquivo de esquema XSD](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md).
 
-2. No [XML Schema Explorer](../xml-tools/xml-schema-explorer.md), clique com botão direito do `PurchaseOrder` elemento global. Selecione **gerar XML de exemplo**.
+2. No [XML Schema Explorer](../xml-tools/xml-schema-explorer.md), clique com o botão direito do mouse no elemento global `PurchaseOrder`. Selecione **gerar XML de exemplo**.
 
-     Quando você seleciona essa opção, PurchaseOrder. *xml* arquivo com o conteúdo XML de exemplo a seguir será gerado e aberto no editor de XML:
+     Quando você seleciona essa opção, o PurchaseOrder. o arquivo *XML* com o seguinte conteúdo XML de exemplo será gerado e aberto no editor de XML:
 
     ```xml
     <?xml version="1.0" encoding="utf-8"?>

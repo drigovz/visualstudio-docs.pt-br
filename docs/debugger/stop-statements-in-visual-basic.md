@@ -1,12 +1,10 @@
 ---
-title: Instruções Stop no Visual Basic | Microsoft Docs
+title: Instruções Stop em Visual Basic | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
 - CSharp
 - VB
-- FSharp
-- C++
 helpviewer_keywords:
 - End statements
 - breakpoints, Stop statements
@@ -19,25 +17,26 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 329a3aa2805e8a95e14a5d78dc2231ade81ad6e4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8f9ab4ef453a921371ab7ef4f272cd0e38f4108a
+ms.sourcegitcommit: 4d2620bee4688fb881e09a07ea4a264b99f0743e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62929746"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71322528"
 ---
 # <a name="stop-statements-in-visual-basic"></a>Instruções Stop no Visual Basic
-A instrução Stop do Visual Basic fornece uma alternativa programática ao definir um ponto de interrupção. Quando o depurador encontrar uma instrução Stop, ele interromperá a execução do programa (entra em modo de interrupção). Os programadores de C# podem obter o mesmo efeito usando uma chamada ao System.Diagnostics.Debugger.Break.
 
- Você define ou remove uma instrução Stop editando o código-fonte. Você não pode definir ou limpar instruções Stop usando os comandos do depurador, como se fosse um ponto de interrupção.
+A instrução Stop do Visual Basic fornece uma alternativa programática ao definir um ponto de interrupção. Quando o depurador encontrar uma instrução Stop, ele interromperá a execução do programa (entra em modo de interrupção). C#os programadores podem obter o mesmo efeito usando uma chamada <xref:System.Diagnostics.Debugger.Break%2A?displayProperty=nameWithType>para.
 
- Ao contrário de uma instrução End, a instrução Stop não redefine variáveis ou retorna você ao modo de design. Você pode escolher Continuar no menu Depurar para continuar a execução do aplicativo.
+Você define ou remove uma instrução Stop editando o código-fonte. Você não pode definir ou limpar instruções Stop usando os comandos do depurador, como se fosse um ponto de interrupção.
 
- Quando executar um aplicativo do Visual Basic fora do depurador, uma instrução Stop iniciará o depurador se a depuração Just-In-Time estiver habilitada. Se a depuração Just-In-Time não estiver habilitada, a instrução Stop se comportará como se fosse uma instrução End, finalizando a execução. Nenhum evento do QueryUnload ou Unload ocorrerá, por isso, você deverá remover todas as instruções Stop da versão de lançamento do aplicativo do Visual Basic. Para obter mais informações, confira [Depuração Just-In-Time](../debugger/just-in-time-debugging-in-visual-studio.md).
+Ao contrário de uma instrução End, a instrução Stop não redefine variáveis ou retorna você ao modo de design. Você pode escolher Continuar no menu Depurar para continuar a execução do aplicativo.
+
+Quando você executar um aplicativo Visual Basic fora do depurador, uma instrução Stop iniciará o depurador se a depuração Just-in-time estiver habilitada. Se a depuração Just-in-time não estiver habilitada, a instrução Stop se comparecerá como se fosse uma instrução End e encerrará a execução. Nenhum evento do QueryUnload ou Unload ocorrerá, por isso, você deverá remover todas as instruções Stop da versão de lançamento do aplicativo do Visual Basic. Para obter mais informações, confira [Depuração Just-In-Time](just-in-time-debugging-in-visual-studio.md).
 
  Para evitar ter que remover as instruções Stop, você pode usar a compilação condicional:
 
-```cpp
+```vb
 #If DEBUG Then
    Stop
 #Else
@@ -45,19 +44,28 @@ A instrução Stop do Visual Basic fornece uma alternativa programática ao defi
 #End If
 ```
 
- Outra alternativa é usar uma instrução Assert em vez da instrução Stop. Uma instrução Debug.Assert interromperá a execução somente quando uma condição especificada não for atendida e for removida automaticamente ao criar uma versão de lançamento. Para obter mais informações, confira [Asserções em código gerenciado](../debugger/assertions-in-managed-code.md). Se você quiser uma instrução Assert que sempre interrompa a execução na versão de Depuração, você poderá fazer isso:
+Outra alternativa é usar uma <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=nameWithType> instrução em vez da instrução Stop. Uma <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=nameWithType> instrução quebra a execução somente quando uma condição especificada não é atendida. <xref:System.Diagnostics.Debug.Assert%2A>as instruções são removidas automaticamente quando você cria uma versão de lançamento. Para obter mais informações, confira [Asserções em código gerenciado](assertions-in-managed-code.md). Se você quiser uma <xref:System.Diagnostics.Debug.Assert%2A> instrução que sempre interrompa a execução na versão de depuração, você pode fazer isso:
 
 ```csharp
-Debug.Assert(false)
+Debug.Assert(false);
 ```
 
- No entanto, outra alternativa é usar o método Debug.Fail:
+```vb
+Debug.Assert(False)
+```
+
+Outra alternativa é usar o <xref:System.Diagnostics.Debug.Fail%2A?displayProperty=nameWithType> método:
 
 ```csharp
+Debug.Fail("a clever output string goes here");
+```
+
+```vb
 Debug.Fail("a clever output string goes here")
 ```
 
 ## <a name="see-also"></a>Consulte também
-- [Segurança do depurador](../debugger/debugger-security.md)
-- [Tipos de projeto C#, F# e Visual Basic](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)
-- [Depurando código gerenciado](../debugger/debugging-managed-code.md)
+
+- [Segurança do depurador](debugger-security.md)
+- [Tipos de projeto C#, F# e Visual Basic](debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)
+- [Depurando código gerenciado](debugging-managed-code.md)

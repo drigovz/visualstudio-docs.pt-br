@@ -12,12 +12,12 @@ ms.assetid: aee48fc6-a15f-4fd5-8420-7f18824de220
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: b4709cc5f011dd55445583c46dd96894b979647c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: b6d44e99b584ec347abd407753f965170658969b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435546"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685418"
 ---
 # <a name="creating-a-basic-project-system-part-2"></a>Criando um sistema de projeto básico, Parte 2
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -281,7 +281,7 @@ ZipProjects:
   
 - $ $safeprojectname é o nome fornecido por um usuário a **novo projeto** caixa de diálogo, modificada para remover todos os caracteres desprotegidos e espaços.  
   
-  Para ver uma lista completa dos parâmetros de modelo, consulte [Parâmetros de Modelo](../ide/template-parameters.md).  Se você quiser criar seus próprios parâmetros de modelo personalizado, consulte [NIB: Como: Passar parâmetros personalizados para modelos](http://msdn.microsoft.com/5bc2ad11-84c7-4683-a276-e5e00d85d8fb).  
+  Para ver uma lista completa dos parâmetros de modelo, consulte [Parâmetros de Modelo](../ide/template-parameters.md).  Se você quiser criar seus próprios parâmetros de modelo personalizado, consulte [NIB: Como: Passar parâmetros personalizados para modelos](https://msdn.microsoft.com/5bc2ad11-84c7-4683-a276-e5e00d85d8fb).  
   
 #### <a name="to-substitute-project-template-parameters"></a>Substituir parâmetros de modelo de projeto  
   

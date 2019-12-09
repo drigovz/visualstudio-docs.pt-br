@@ -8,17 +8,17 @@ helpviewer_keywords:
 - ShowWebBrowser command
 - View.ShowWebBrowser command
 ms.assetid: c6a4fbd6-8e9d-45cc-8b2f-93990d065e78
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f6d8249503ed775d584c913d685ae35473134be
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: b8c97659cc6036433c5bcf2547a9f88aee56f451
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62950638"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747723"
 ---
 # <a name="showwebbrowser-command"></a>Comando ShowWebBrowser
 
@@ -31,24 +31,24 @@ View.ShowWebBrowser URL [/new][/ext]
 ```
 
 ## <a name="arguments"></a>Arguments
- `URL`
+`URL`
 
- Necessário. URL (Uniform Resource Locator) do site da Web.
+Necessário. URL (Uniform Resource Locator) do site da Web.
 
 ## <a name="switches"></a>Opções
- /new
+/new
 
- Opcional. Especifica que a página é exibida em uma nova instância do navegador da Web.
+Opcional. Especifica que a página é exibida em uma nova instância do navegador da Web.
 
- /ext
+/ext
 
- Opcional. Especifica que a página é exibida no navegador da Web padrão fora do IDE.
+Opcional. Especifica que a página é exibida no navegador da Web padrão fora do IDE.
 
 ## <a name="remarks"></a>Comentários
- O alias do comando **ShowWebBrowser** é **navegue** ou **nav**.
+O alias do comando **ShowWebBrowser** é **navegue** ou **nav**.
 
 ## <a name="example"></a>Exemplo
- O exemplo a seguir exibe a home page do Microsoft Docs em um navegador da Web fora do IDE. Se uma instância do navegador da Web já estiver aberta, ela será usada; caso contrário, uma nova instância será iniciada.
+O exemplo a seguir exibe a home page do Microsoft Docs em um navegador da Web fora do IDE. Se uma instância do navegador da Web já estiver aberta, ela será usada; caso contrário, uma nova instância será iniciada.
 
 ```cmd
 >View.ShowWebBrowser https://docs.microsoft.com /ext

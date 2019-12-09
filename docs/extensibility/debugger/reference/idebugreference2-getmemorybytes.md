@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugReference2::GetMemoryBytes
 ms.assetid: 2006cb2b-1dfa-4a2d-8e3e-db2ce0302e0d
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 20e08fdd59bd519358342c9cb8abbc1516d8637e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 100b04f8cd81ecbc470c85e76f08b45ed46d8de9
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62916380"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66329873"
 ---
 # <a name="idebugreference2getmemorybytes"></a>IDebugReference2::GetMemoryBytes
 Obtém os bytes de memória que fisicamente contém o valor de uma referência. Reservado para uso futuro.
@@ -36,10 +39,9 @@ int GetMemoryBytes ( 
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `ppMemoryBytes`
-
- [out] Retorna um [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md) objeto que pode ser usado para recuperar a memória que contém o valor da referência.
+## <a name="parameters"></a>Parâmetros
+`ppMemoryBytes`\
+[out] Retorna um [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md) objeto que pode ser usado para recuperar a memória que contém o valor da referência.
 
 ## <a name="return-value"></a>Valor de retorno
  Sempre retorna `E_NOTIMPL`.

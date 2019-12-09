@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f5fe47d8575c47756cce8fd1580ced5f3036766
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 1d3fa97d5612b61151d9c435b91f500c87af0b23
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63399953"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740212"
 ---
-# <a name="idiasymbolgetisltcg"></a>IDiaSymbol::get_isLTCG
-Recupera um sinalizador que especifica se o [Compiland](../../debugger/debug-interface-access/compiland.md) foi vinculada com a opção de vinculador [/LTCG (geração de código Link-time)](/cpp/build/reference/ltcg-link-time-code-generation), que auxilia na otimização de todo o programa. Essa opção se aplica apenas ao código gerenciado.
+# <a name="idiasymbolget_isltcg"></a>IDiaSymbol::get_isLTCG
+Recupera um sinalizador que especifica se o [compiland](../../debugger/debug-interface-access/compiland.md) foi vinculado com o comutador do vinculador [/LTCG (geração de código de tempo de vinculação)](/cpp/build/reference/ltcg-link-time-code-generation), que ajuda na otimização completa do programa. Essa opção se aplica somente ao código gerenciado.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -33,20 +33,20 @@ HRESULT get_iSLTCG(
 #### <a name="parameters"></a>Parâmetros
  pFlag
 
-[out] Retorna `TRUE` se o `compiland` foi vinculado com a opção de vinculador /LTCG; caso contrário, retornará `FALSE`.
+fora Retorna `TRUE` se o `compiland` foi vinculado com a opção de vinculador/LTCG; caso contrário, retorna `FALSE`.
 
-## <a name="return-value"></a>Valor de retorno
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE` ou um código de erro.
 
 > [!NOTE]
-> Um valor de retorno `S_FALSE` significa que a propriedade não está disponível para o símbolo.
+> Um valor de retorno de `S_FALSE` significa que a propriedade não está disponível para o símbolo.
 
 ## <a name="requirements"></a>Requisitos
 
 |Requisito|Descrição|
 |-----------------|-----------------|
 |Cabeçalho:|dia2.h|
-|Versão:|V DIA SDK 8.0|
+|Versão:|DIA SDK v 8.0|
 
 ## <a name="see-also"></a>Consulte também
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

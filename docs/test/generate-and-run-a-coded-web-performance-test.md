@@ -11,15 +11,15 @@ ms.assetid: 169e48f9-52fd-4d0b-83d9-54913bde506b
 dev_langs:
 - CSharp
 - VB
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: a6f1c524b879d5d5476491a8979d86449f3d43c0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 082412d6773bbe69306f3cf95d10716f5675f3bb
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63002499"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72664931"
 ---
 # <a name="generate-and-run-a-coded-web-performance-test"></a>Gerar e executar um teste de desempenho para Web codificado
 
@@ -85,16 +85,16 @@ Testes de desempenho Web são gravados navegando-se no aplicativo Web. Os testes
 ## <a name="qa"></a>PERGUNTAS E RESPOSTAS
 
 ### <a name="q-can-i-run-more-than-one-test-at-a-time"></a>P: Posso executar mais de um teste por vez?
- **R:** Sim, use o menu do clique com o botão direito (contexto) no **Gerenciador de Soluções**.
+**R:** Sim, use o menu com o botão direito do mouse (contexto) no **Gerenciador de soluções**.
 
 ### <a name="q-should-i-add-a-data-source-before-or-after-i-generate-a-coded-test"></a>P: Devo adicionar uma fonte de dados antes ou depois de gerar um teste codificado?
- **R:** É mais fácil adicionar uma [fonte de dados](../test/add-a-data-source-to-a-web-performance-test.md) antes de gerar o teste codificado, pois o código será gerado automaticamente para você.
+**R** É mais fácil adicionar uma [fonte de dados](../test/add-a-data-source-to-a-web-performance-test.md) antes de gerar o teste codificado, pois o código será gerado automaticamente para você.
 
- Ao executar um teste codificado com uma fonte de dados, você talvez veja a seguinte mensagem de erro:
+Ao executar um teste codificado com uma fonte de dados, você talvez veja a seguinte mensagem de erro:
 
- **Não foi possível executar o teste \<Nome do Teste> no agente \<Nome do Computador>: Referência de objeto não definida para uma instância de um objeto.**
+**Não foi possível executar o teste \<Nome do teste> no agente \<Nome do computador>: Referência de objeto não definida para uma instância de um objeto.**
 
- Isso pode ocorrer porque você tem um DataSourceAttribute definido para a classe de teste, sem um DataBindingAttribute correspondente. Para resolver esse erro, adicione um DataBindingAttribute apropriado, exclua-o ou insira um comentário fora do código.
+Isso pode ocorrer porque você tem um DataSourceAttribute definido para a classe de teste, sem um DataBindingAttribute correspondente. Para resolver esse erro, adicione um DataBindingAttribute apropriado, exclua-o ou insira um comentário fora do código.
 
 ### <a name="q-should-i-add-validation-and-extraction-rules-before-or-after-i-generate-a-coded-test"></a>P: Devo adicionar regras de validação e extração antes ou depois de gerar um teste codificado?
- **R:** É mais fácil adicionar regras de validação e extração antes de gerar o teste codificado. No entanto, recomendamos que você use [testes de IU codificados](../test/use-ui-automation-to-test-your-code.md) para fins de validação.
+**R:** É mais fácil adicionar as regras de validação e de extração antes de gerar o teste codificado. No entanto, recomendamos que você use [testes de IU codificados](../test/use-ui-automation-to-test-your-code.md) para fins de validação.

@@ -1,21 +1,21 @@
 ---
-title: Designer de fluxo de trabalho - se o Designer de atividade
+title: Designer de Fluxo de Trabalho-se designer de atividade
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.If.UI
 ms.assetid: 930a8fa2-db98-43e9-ad6d-a85cc7a6519a
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 762199906bbb84701c044b5fa9f3f3b8c6fdfdae
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4e0c08d655393a953e1abae9d33086d43e281500
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62949195"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650235"
 ---
 # <a name="if-activity-designer"></a>Se designer de atividades
 
@@ -27,9 +27,9 @@ A tabela a seguir mostra as propriedades mais úteis de atividade de <xref:Syste
 
 |Nome da Propriedade|Necessária|Uso|
 |-|--------------|-|
-|<xref:System.Activities.Statements.If.Condition%2A>|verdadeiro|A condição que determina que atividade filho para executar. Para definir a <xref:System.Activities.Statements.If.Condition%2A>, digite uma expressão do Visual Basic na **condição** caixa no **se** atividade designer ou na grade de propriedade.|
-|<xref:System.Activities.Statements.If.Else%2A>|False|A atividade a executar se a <xref:System.Activities.Statements.If.Condition%2A> está **falso**. Para adicionar uma atividade que é executada pelo <xref:System.Activities.Statements.If.Else%2A> ramificar, soltar uma atividade do **caixa de ferramentas** para o **Else** caixa no **se** designer de atividade com o texto de dica " Soltar atividade aqui".|
-|<xref:System.Activities.Statements.If.Then%2A>|False|A atividade a executar se a <xref:System.Activities.Statements.If.Condition%2A> está **verdadeiro**. Para adicionar uma atividade que é executada pelo <xref:System.Activities.Statements.If.Then%2A> ramificar, soltar uma atividade do **caixa de ferramentas** para o **, em seguida,** caixa no **se** designer de atividade com o texto de dica " Soltar atividade aqui".|
+|<xref:System.Activities.Statements.If.Condition%2A>|verdadeiro|A condição que determina que atividade filho para executar. Para definir o <xref:System.Activities.Statements.If.Condition%2A>, digite uma expressão de Visual Basic na caixa **condição** no designer de atividade **If** ou na grade de propriedades.|
+|<xref:System.Activities.Statements.If.Else%2A>|False|A atividade a ser executada se a <xref:System.Activities.Statements.If.Condition%2A> for **falsa**. Para adicionar uma atividade que é executada pela ramificação de <xref:System.Activities.Statements.If.Else%2A>, descarte uma atividade da caixa de **ferramentas** no **else** , no **If** Activity Designer, com texto de dica "soltar atividade aqui".|
+|<xref:System.Activities.Statements.If.Then%2A>|False|A atividade a ser executada se a <xref:System.Activities.Statements.If.Condition%2A> for **verdadeira**. Para adicionar uma atividade que é executada pela ramificação <xref:System.Activities.Statements.If.Then%2A>, descarte uma atividade da caixa de **ferramentas** em **seguida** no designer de atividade **If** com texto de dica "soltar atividade aqui".|
 
 ## <a name="see-also"></a>Consulte também
 

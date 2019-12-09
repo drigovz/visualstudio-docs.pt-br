@@ -20,11 +20,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 46f6907bea5954cffae92b41398717a8247350e0
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59667242"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68195666"
 ---
 # <a name="onerror-element-msbuild"></a>Elemento OnError (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ Faz com que um ou mais destinos sejam executados se o atributo `ContinueOnError`
   
 ### <a name="attributes"></a>Atributos  
   
-|Atributo|Descrição|  
+|Atributo|DESCRIÇÃO|  
 |---------------|-----------------|  
 |`Condition`|Atributo opcional.<br /><br /> Condição a ser avaliada. Para obter mais informações, consulte [Condições](../msbuild/msbuild-conditions.md).|  
 |`ExecuteTargets`|Atributo obrigatório.<br /><br /> Os destinos que serão executados se uma tarefa falhar. Separe vários destinos com ponto e vírgula. Vários destinos são executados na ordem especificada.|  
@@ -57,7 +57,7 @@ Faz com que um ou mais destinos sejam executados se o atributo `ContinueOnError`
   
 ### <a name="parent-elements"></a>Elementos pai  
   
-|Elemento|Descrição|  
+|Elemento|DESCRIÇÃO|  
 |-------------|-----------------|  
 |[Target](../msbuild/target-element-msbuild.md)|Elemento contêiner para tarefas [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)].|  
   
@@ -79,6 +79,6 @@ Faz com que um ou mais destinos sejam executados se o atributo `ContinueOnError`
 </Target>  
 ```  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Veja também  
  [Referência do esquema de arquivos de projeto](../msbuild/msbuild-project-file-schema-reference.md)   
  [Destinos](../msbuild/msbuild-targets.md)

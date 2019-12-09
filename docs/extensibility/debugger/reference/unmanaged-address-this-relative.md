@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - UNMANAGED_ADDRESS_THIS_RELATIVE structure
 ms.assetid: e6a91ace-2d47-4ff9-aefb-8d8b68eab0b2
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e9d2bf87a804295a5ea8f6750ee9cd93643c53bc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 30a70f33edbe3cf817ebe4ad383c54bc02275a72
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62913004"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66316095"
 ---
 # <a name="unmanagedaddressthisrelative"></a>UNMANAGED_ADDRESS_THIS_RELATIVE
 Essa estrutura representa um endereço que é relativo a um `this` ponteiro (`Me` no Visual Basic).
@@ -40,12 +43,15 @@ public struct UNMANAGED_THIS_RELATIVE {
 }
 ```
 
-## <a name="terms"></a>Termos
- deslocamento de Byte dwOffset de uma posição de base (por exemplo, o início de uma vtable da classe).
+## <a name="members"></a>Membros
+ `dwOffset`\
+ Deslocamento de uma posição de base (por exemplo, o início de uma vtable da classe) de bytes.
 
- dwBitOffset deslocamento, em bits de uma posição de base (sempre 0, a menos que se referir a um campo de bits).
+ `dwBitOffset`\
+ Deslocamento de bits de uma posição de base (sempre 0, a menos que se referir a um campo de bits).
 
- Número de bits que representa o endereço de dwBitLength (sempre 0, a menos que se referir a um campo de bits).
+ `dwBitLength`\
+ Número de bits que representa o endereço (sempre 0, a menos que se referir a um campo de bits).
 
 ## <a name="remarks"></a>Comentários
  Essa estrutura é parte da união na [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) estrutura quando o `dwKind` campo dos `DEBUG_ADDRESS_UNION` estrutura é definida como `ADDRESS_KIND_UNMANAGED_THIS_RELATIVE` (um valor da [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) enumeração).

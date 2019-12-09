@@ -9,17 +9,17 @@ f1_keywords:
 helpviewer_keywords:
 - task list
 - Visual Studio, task list
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f6ccc0284f89891ff686e456abdcccb1b5296e8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 69c0e4c3a19358d9b29e4d7d3616c6718117e059
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62821552"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647315"
 ---
 # <a name="use-the-task-list"></a>Usar a Lista de Tarefas
 
@@ -32,7 +32,7 @@ Use a **Lista de Tarefas** para rastrear comentários de código que usam tokens
 
 Quando a **Lista de Tarefas** é aberta, ela aparece na parte inferior da janela do aplicativo.
 
-Para abrir a **Lista de Tarefas**, selecione **Exibir** > **Lista de Tarefas**, ou pressione no teclado **Ctrl**+**\\**,**T**.
+Para abrir a **Lista de Tarefas**, selecione **Exibir** > **Lista de Tarefas**, ou pressione no teclado **Ctrl**+ **\\** ,**T**.
 
 ![Janela Lista de Tarefas](../ide/media/vs2015_task_list.png)
 
@@ -64,6 +64,9 @@ Um comentário no código precedido por um marcador de comentário e um token pr
 
 Uma vez que `TODO` é um token pré-definido, esse comentário aparece como uma tarefa `TODO` na lista.
 
+> [!NOTE]
+> Os tokens padrão estão disponíveis somente para as linguagens C/C++, C# e VB. Para outras linguagens, confira a seção **Tokens personalizados**.
+
 ### <a name="custom-tokens"></a>Tokens personalizados
 
 Por padrão, o Visual Studio inclui os seguintes tokens: `HACK`, `TODO`, `UNDONE` e `UnresolvedMergeConflict`. Não diferenciam maiúsculas de minúsculas. Também é possível criar seus próprios tokens personalizados.
@@ -91,7 +94,7 @@ Para criar um token personalizado:
 
 Por padrão, os comentários TODO em C++ são exibidos na **Lista de Tarefas**.
 
-Para desativar comentários TODO em C++ no menu **Ferramentas**, selecione **Opções** > **Editor de Texto** > **C/C++** > **Exibir** > **Enumerar Tarefas de Comentário** e defina o valor como **false**.
+Para desativar comentários TODO em C++ no menu **Ferramentas**, selecione **Opções** > **Editor de Texto** > **C/C++**  > **Exibir** > **Enumerar Tarefas de Comentário** e defina o valor como **false**.
 
 ## <a name="shortcuts"></a>Atalhos
 

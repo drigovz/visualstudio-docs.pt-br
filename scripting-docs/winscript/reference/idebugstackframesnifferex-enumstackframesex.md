@@ -1,5 +1,5 @@
 ---
-title: IDebugStackFrameSnifferEx::EnumStackFramesEx | Microsoft Docs
+title: 'IDebugStackFrameSnifferEx:: EnumStackFramesEx | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8969c279e4eb2c2966e297317a25a60f12be68a9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6a4062e7c0a9b3a82578daffa2ab7ef7e9ba614d
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63005713"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576706"
 ---
 # <a name="idebugstackframesnifferexenumstackframesex"></a>IDebugStackFrameSnifferEx::EnumStackFramesEx
-Retorna um enumerador dos quadros de pilha do thread atual.  
+Retorna um enumerador de quadros de pilhas para o thread atual.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -38,12 +38,12 @@ HRESULT EnumStackFramesEx(
   
 #### <a name="parameters"></a>Parâmetros  
  `dwSpMin`  
- [in] O limite inferior de endereço para a enumeração dos quadros de pilha.  
+ no O limite de endereço inferior para enumerar os quadros de pilha.  
   
  `ppedsf`  
- [out] Enumerador de quadros de pilha do thread atual.  
+ fora Enumerador de quadros de pilha para o thread atual.  
   
-## <a name="return-value"></a>Valor de retorno  
+## <a name="return-value"></a>Valor retornado  
  O método retorna um `HRESULT`. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.  
   
 |Valor|Descrição|  
@@ -51,7 +51,7 @@ HRESULT EnumStackFramesEx(
 |`S_OK`|O método foi bem-sucedido.|  
   
 ## <a name="remarks"></a>Comentários  
- O enumerador de quadro de pilha retorna os quadros começando do topo da pilha, com o quadro mais recentemente enviados por push. O enumerador contém somente os quadros de pilha com endereços maior que ou iguais a `dwSpMin`.  
+ O enumerador de quadros de pilhas retorna os quadros que começam na parte superior da pilha, com o quadro enviado por push mais recentemente. O enumerador contém apenas quadros de pilha com endereços maiores ou iguais a `dwSpMin`.  
   
 ## <a name="see-also"></a>Consulte também  
  [Interface IDebugStackFrameSnifferEx](../../winscript/reference/idebugstackframesnifferex-interface.md)

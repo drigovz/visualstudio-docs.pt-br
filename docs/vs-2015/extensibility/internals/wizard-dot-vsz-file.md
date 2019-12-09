@@ -12,12 +12,12 @@ ms.assetid: 72e1d0f3-eef1-455e-b803-96827f030f50
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: db58e5d4b747c71e4b1394e5fc38a48391bee71e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ab1adde4c7018f136f47769e16a8ce2fedf72c93
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58928758"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687658"
 ---
 # <a name="wizard-vsz-file"></a>Arquivo do assistente (.Vsz)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ Param="WIZARDUI = FALSE"
 |Wizard|Este campo contém a OLE ProgID do assistente, ou como alternativa, uma representação de cadeia de caracteres do GUID do CLSID do assistente que é cocreated pelo IDE.|  
 |Param|Essas partes são opcionais. Você pode adicionar tantas quantas forem necessárias.|  
   
- Os parâmetros permitem que o arquivo. vsz transmita parâmetros personalizados adicionais ao assistente. Cada valor é passado como um elemento de cadeia de caracteres em uma matriz de variantes para o assistente. Para obter mais informações, consulte [parâmetros personalizados](../../extensibility/internals/custom-parameters.md). Para obter informações sobre como usar um arquivo. vsz no desenvolvimento de assistentes personalizados, consulte [. Arquivo vsz (controle de projeto)](http://msdn.microsoft.com/library/b8678fee-6795-46d1-9338-48b22d5e9207)  
+ Os parâmetros permitem que o arquivo. vsz transmita parâmetros personalizados adicionais ao assistente. Cada valor é passado como um elemento de cadeia de caracteres em uma matriz de variantes para o assistente. Para obter mais informações, consulte [parâmetros personalizados](../../extensibility/internals/custom-parameters.md). Para obter informações sobre como usar um arquivo. vsz no desenvolvimento de assistentes personalizados, consulte [. Arquivo vsz (controle de projeto)](https://msdn.microsoft.com/library/b8678fee-6795-46d1-9338-48b22d5e9207)  
   
  Para adicionar uma ID de localidade padrão para o arquivo. vsz, especifique `FALLBACK_LCID`= xxxx, onde xxxx é a ID de localidade, por exemplo, 1033 para inglês. Quando `FALLBACK_LCID` parâmetro for definido, o assistente usa a ID de localidade de fallback fornecido se a ID atual não for encontrada.  
   

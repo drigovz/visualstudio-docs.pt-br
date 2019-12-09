@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - test settings, ASP.NET
 ms.assetid: 6832fe39-04d5-4d94-8a18-3e2730bad423
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: fc0e9c9a8983d58b7b672be6c1cafb7360e25d28
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 1de7e890c60374730e297296116cb56828fa256b
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62979296"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72643751"
 ---
-# <a name="how-to-configure-aspnet-profiler-for-load-tests-using-test-settings-in-visual-studio"></a>Como: Configurar o criador de perfil do ASP.NET para testes de carga usando configurações de teste no Visual Studio
+# <a name="how-to-configure-aspnet-profiler-for-load-tests-using-test-settings-in-visual-studio"></a>Como configurar o criador de perfil do ASP.NET para carregar testes usando configurações de teste no Visual Studio
 
 Você pode usar o adaptador de dados de diagnóstico do criador de perfil do ASP.NET para coletar informações do criador de perfil do ASP.NET. Esse adaptador de dados de diagnóstico coleta dados de desempenho de aplicativos ASP.NET.
 
@@ -29,7 +29,7 @@ O adaptador de dados de diagnóstico do criador de perfil do ASP.NET permite col
 > [!NOTE]
 > O adaptador de dados de diagnóstico do criador de perfil do ASP.NET analisa o processo de IIS (Serviços de Informações da Internet). Desse modo, ele não funcionará em um servidor Web de desenvolvimento. Para analisar o site em seu teste de carga, você precisa instalar um agente de teste no computador em que o IIS está sendo executado. O agente de teste não vai gerar carga, mas será um agente apenas de coleta. Para obter mais informações, consulte [Instalar e configurar agentes de teste](../test/lab-management/install-configure-test-agents.md).
 
-Para obter mais informações, confira [Como: Criar uma configuração de teste para um teste de carga distribuída](../test/how-to-create-a-test-setting-for-a-distributed-load-test.md).
+Para obter mais informações, confira [Como criar uma configuração de teste para um teste de carga distribuída](../test/how-to-create-a-test-setting-for-a-distributed-load-test.md).
 
 ## <a name="configure-the-aspnet-profiler-for-your-test-settings"></a>Configurar o criador de perfil do ASP.NET para suas configurações do teste
 
@@ -61,5 +61,5 @@ Com o adaptador de dados de diagnóstico do criador de perfil do ASP.NET definid
 ## <a name="see-also"></a>Consulte também
 
 - [Coletar informações de diagnóstico usando configurações de teste](../test/collect-diagnostic-information-using-test-settings.md)
-- [Como: Criar uma configuração de teste para um teste de carga distribuída](../test/how-to-create-a-test-setting-for-a-distributed-load-test.md)
+- [Como criar uma configuração de teste para um teste de carga distribuída](../test/how-to-create-a-test-setting-for-a-distributed-load-test.md)
 - [Controladores e agentes de teste](configure-test-agents-and-controllers-for-load-tests.md)

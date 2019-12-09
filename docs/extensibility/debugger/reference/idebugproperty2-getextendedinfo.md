@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProperty2::GetExtendedInfo
 ms.assetid: 0c9c0b2b-7540-4424-adb5-fce7aa37a026
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cfe4b81f455f9efb5ee03b9c3db5f189cf19e176
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: acf070d6f00dcb4e775662a6fdc8c4c3d589ae85
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62869528"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66343174"
 ---
 # <a name="idebugproperty2getextendedinfo"></a>IDebugProperty2::GetExtendedInfo
 Obtém informações estendidas de propriedade.
@@ -38,14 +41,12 @@ int GetExtendedInfo ( 
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `guidExtendedInfo`
+## <a name="parameters"></a>Parâmetros
+`guidExtendedInfo`\
+[in] GUID que determina o tipo de informações estendidas a serem recuperados. Consulte os comentários para obter detalhes.
 
- [in] GUID que determina o tipo de informações estendidas a serem recuperados. Consulte os comentários para obter detalhes.
-
- `pExtendedInfo`
-
- [out] Retorna um `VARIANT` (C++) ou o objeto (C#) que pode ser usado para recuperar as informações de propriedade estendida. Por exemplo, esse parâmetro pode retornar um `IUnknown` interface que pode ser consultado para uma [IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md) interface. Consulte os comentários para obter detalhes.
+`pExtendedInfo`\
+[out] Retorna um `VARIANT` (C++) ou o objeto (C#) que pode ser usado para recuperar as informações de propriedade estendida. Por exemplo, esse parâmetro pode retornar um `IUnknown` interface que pode ser consultado para uma [IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md) interface. Consulte os comentários para obter detalhes.
 
 ## <a name="return-value"></a>Valor de retorno
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retornará o código de erro. Retorna `S_GETEXTENDEDINFO_NO_EXTENDEDINFO` se não houver nenhuma informação estendida para recuperar.

@@ -29,12 +29,12 @@ caps.latest.revision: 25
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 759376a6682287cbe41d4d1dc13666c5a540f8e9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 9c26cc17d00881a72928806089a4c2880fdbce2f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60050551"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65702336"
 ---
 # <a name="cc-assertions"></a>Asserções C/C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,11 +45,11 @@ Uma instrução de declaração especifica uma condição que você espera ser v
 
 - Asserções MFC para programas MFC.  
 
-- [ATLASSERT](http://msdn.microsoft.com/library/98e3e0fc-77e2-499b-a6f6-b17a21c6fbd3) para programas que usam ATL.  
+- [ATLASSERT](https://msdn.microsoft.com/library/98e3e0fc-77e2-499b-a6f6-b17a21c6fbd3) para programas que usam ATL.  
 
 - Asserções de CRT para programas que usam a biblioteca em tempo de execução C.  
 
-- A [função assert](http://msdn.microsoft.com/library/a9ca031a-648b-47a6-bdf1-65fc7399dd40) ANSI para outros programas C/C++.  
+- A [função assert](https://msdn.microsoft.com/library/a9ca031a-648b-47a6-bdf1-65fc7399dd40) ANSI para outros programas C/C++.  
 
   Você pode usar asserções para capturar erros lógicos, para verificar os resultados de uma operação e para testar condições de erro que deveriam ter sido tratadas.  
 
@@ -94,7 +94,7 @@ ASSERT(nM++ > 0); // Don't do this!
 
 ```  
 
- Como a expressão `ASSERT` não é avaliada na versão de liberação do programa, `nM` terá valores diferentes nas versões de depuração e de liberação. Para evitar esse problema no MFC, você pode usar o [VERIFY](http://msdn.microsoft.com/library/3e1ab4ee-cbc7-4290-a777-c92f42ce7b96) macro em vez de `ASSERT`.  `VERIFY` avalia a expressão em todas as versões, mas não verifica o resultado na versão de lançamento.  
+ Como a expressão `ASSERT` não é avaliada na versão de liberação do programa, `nM` terá valores diferentes nas versões de depuração e de liberação. Para evitar esse problema no MFC, você pode usar o [VERIFY](https://msdn.microsoft.com/library/3e1ab4ee-cbc7-4290-a777-c92f42ce7b96) macro em vez de `ASSERT`.  `VERIFY` avalia a expressão em todas as versões, mas não verifica o resultado na versão de lançamento.  
 
  Tenha cuidado especial quando usar chamadas de função em instruções de declaração, porque a avaliação de uma função pode ter efeitos colaterais inesperados.  
 
@@ -108,7 +108,7 @@ VERIFY ( myFnctn(0)==1 ) // safe
  [Neste tópico](#BKMK_In_this_topic)  
 
 ## <a name="BKMK_CRT_assertions"></a> Asserções CRT  
- O arquivo de cabeçalho CRTDBG.H define as [macros _ASSERT e _ASSERTE](http://msdn.microsoft.com/library/e98fd2a6-7f5e-4aa8-8fe8-e93490deba36) para verificação de asserção.  
+ O arquivo de cabeçalho CRTDBG.H define as [macros _ASSERT e _ASSERTE](https://msdn.microsoft.com/library/e98fd2a6-7f5e-4aa8-8fe8-e93490deba36) para verificação de asserção.  
 
 |   Macro    |                                             Resultado                                              |
 |------------|-------------------------------------------------------------------------------------------------|
@@ -128,30 +128,30 @@ VERIFY ( myFnctn(0)==1 ) // safe
    } while (0)  
 ```  
 
- Se a expressão declarada é avaliada como FALSE, [_CrtDbgReport](http://msdn.microsoft.com/library/6e581fb6-f7fb-4716-9432-f0145d639ecc) é chamado para informar a falha de asserção (usando uma caixa de diálogo de mensagem por padrão). Se você escolher **Repetir** na caixa de diálogo de mensagem, `_CrtDbgReport` retornará 1 e `_CrtDbgBreak` chamará o depurador com `DebugBreak`.  
+ Se a expressão declarada é avaliada como FALSE, [_CrtDbgReport](https://msdn.microsoft.com/library/6e581fb6-f7fb-4716-9432-f0145d639ecc) é chamado para informar a falha de asserção (usando uma caixa de diálogo de mensagem por padrão). Se você escolher **Repetir** na caixa de diálogo de mensagem, `_CrtDbgReport` retornará 1 e `_CrtDbgBreak` chamará o depurador com `DebugBreak`.  
 
 ### <a name="checking-for-heap-corruption"></a>Verificando a corrupção do heap  
- O exemplo a seguir usa [_CrtCheckMemory](http://msdn.microsoft.com/library/457cc72e-60fd-4177-ab5c-6ae26a420765) para verificar se há corrupção de heap:  
+ O exemplo a seguir usa [_CrtCheckMemory](https://msdn.microsoft.com/library/457cc72e-60fd-4177-ab5c-6ae26a420765) para verificar se há corrupção de heap:  
 
 ```  
 _ASSERTE(_CrtCheckMemory());  
 ```  
 
 ### <a name="checking-pointer-validity"></a>Verificando a validade do ponteiro  
- O exemplo a seguir usa [_CrtIsValidPointer](http://msdn.microsoft.com/library/91c35590-ea5e-450f-a15d-ad8d62ade1fa) para verificar se um determinado intervalo de memória é válido para leitura ou gravação.  
+ O exemplo a seguir usa [_CrtIsValidPointer](https://msdn.microsoft.com/library/91c35590-ea5e-450f-a15d-ad8d62ade1fa) para verificar se um determinado intervalo de memória é válido para leitura ou gravação.  
 
 ```  
 _ASSERTE(_CrtIsValidPointer( address, size, TRUE );  
 ```  
 
- O exemplo a seguir usa [_CrtIsValidHeapPointer](http://msdn.microsoft.com/library/caf597ce-1b05-4764-9f37-0197a982bec5) para verificar se um ponteiro aponta para a memória no heap local (o heap criado e gerenciado por essa instância da biblioteca em tempo de execução C — uma DLL pode ter sua própria instância de biblioteca e, consequentemente, seu próprio heap, fora do heap do aplicativo). Essa asserção captura endereços zero ou de fora dos limites, mas também ponteiros para variáveis estáticas, variáveis de pilha e qualquer outra memória não local.  
+ O exemplo a seguir usa [_CrtIsValidHeapPointer](https://msdn.microsoft.com/library/caf597ce-1b05-4764-9f37-0197a982bec5) para verificar se um ponteiro aponta para a memória no heap local (o heap criado e gerenciado por essa instância da biblioteca em tempo de execução C — uma DLL pode ter sua própria instância de biblioteca e, consequentemente, seu próprio heap, fora do heap do aplicativo). Essa asserção captura endereços zero ou de fora dos limites, mas também ponteiros para variáveis estáticas, variáveis de pilha e qualquer outra memória não local.  
 
 ```  
 _ASSERTE(_CrtIsValidPointer( myData );  
 ```  
 
 ### <a name="checking-a-memory-block"></a>Verificando um bloco de memória  
- O exemplo a seguir usa [_CrtIsMemoryBlock](http://msdn.microsoft.com/library/f7cbbc60-3690-4da0-a07b-68fd7f250273) para verificar se um bloco de memória está no heap local e tem um tipo de bloco válido.  
+ O exemplo a seguir usa [_CrtIsMemoryBlock](https://msdn.microsoft.com/library/f7cbbc60-3690-4da0-a07b-68fd7f250273) para verificar se um bloco de memória está no heap local e tem um tipo de bloco válido.  
 
 ```  
 _ASSERTE(_CrtIsMemoryBlock (myData, size, &requestNumber, &filename, &linenumber));  
@@ -160,11 +160,11 @@ _ASSERTE(_CrtIsMemoryBlock (myData, size, &requestNumber, &filename, &linenumber
  [Neste tópico](#BKMK_In_this_topic)  
 
 ## <a name="BKMK_MFC_assertions"></a> Asserções MFC  
- O MFC define a macro [ASSERT](http://msdn.microsoft.com/library/1e70902d-d58c-4e7b-9f69-2aeb6cbe476c) para verificação de asserção. Também define os métodos `MFC ASSERT_VALID` e `CObject::AssertValid` para verificar o estado interno de um objeto derivado de `CObject`.  
+ O MFC define a macro [ASSERT](https://msdn.microsoft.com/library/1e70902d-d58c-4e7b-9f69-2aeb6cbe476c) para verificação de asserção. Também define os métodos `MFC ASSERT_VALID` e `CObject::AssertValid` para verificar o estado interno de um objeto derivado de `CObject`.  
 
  Se o argumento da macro `ASSERT` do MFC for avaliado como zero ou false, a macro interromperá a execução do programa e alerta o usuário; caso contrário, a execução continuará.  
 
- Quando uma asserção falha, uma caixa de diálogo de mensagem mostra o nome do arquivo de origem e o número da linha da asserção. Se você escolher Repetir na caixa de diálogo, uma chamada a [AfxDebugBreak](http://msdn.microsoft.com/library/c4cd79b9-9327-4db5-a9d6-c4004a92aa30) fará com que a execução seja interrompida no depurador. Nesse ponto, você pode examinar a pilha de chamadas e usar outros recursos do depurador para determinar o motivo da falha de asserção. Se você habilitou a [depuração Just-In-Time](../debugger/just-in-time-debugging-in-visual-studio.md) e o depurador não estava sendo executado, a caixa de diálogo pode iniciar o depurador.  
+ Quando uma asserção falha, uma caixa de diálogo de mensagem mostra o nome do arquivo de origem e o número da linha da asserção. Se você escolher Repetir na caixa de diálogo, uma chamada a [AfxDebugBreak](https://msdn.microsoft.com/library/c4cd79b9-9327-4db5-a9d6-c4004a92aa30) fará com que a execução seja interrompida no depurador. Nesse ponto, você pode examinar a pilha de chamadas e usar outros recursos do depurador para determinar o motivo da falha de asserção. Se você habilitou a [depuração Just-In-Time](../debugger/just-in-time-debugging-in-visual-studio.md) e o depurador não estava sendo executado, a caixa de diálogo pode iniciar o depurador.  
 
  O exemplo a seguir mostra como usar `ASSERT` para verificar o valor de retorno de uma função:  
 
@@ -173,16 +173,16 @@ int x = SomeFunc(y);
 ASSERT(x >= 0);   //  Assertion fails if x is negative  
 ```  
 
- Você pode usar ASSERT com a função [IsKindOf](http://msdn.microsoft.com/library/7c87c748-b7e0-4c6d-9694-6035e62fdfd6) para fornecer a verificação de tipo dos argumentos da função:  
+ Você pode usar ASSERT com a função [IsKindOf](https://msdn.microsoft.com/library/7c87c748-b7e0-4c6d-9694-6035e62fdfd6) para fornecer a verificação de tipo dos argumentos da função:  
 
 ```  
 ASSERT( pObject1->IsKindOf( RUNTIME_CLASS( CPerson ) ) );  
 ```  
 
- A macro `ASSERT` não produz nenhum código na versão de liberação. Se for necessário avaliar a expressão na versão de liberação, use a macro [VERIFY](http://msdn.microsoft.com/library/3e1ab4ee-cbc7-4290-a777-c92f42ce7b96) em vez de ASSERT.  
+ A macro `ASSERT` não produz nenhum código na versão de liberação. Se for necessário avaliar a expressão na versão de liberação, use a macro [VERIFY](https://msdn.microsoft.com/library/3e1ab4ee-cbc7-4290-a777-c92f42ce7b96) em vez de ASSERT.  
 
 ### <a name="BKMK_MFC_ASSERT_VALID_and_CObject__AssertValid"></a> MFC ASSERT_VALID e CObject::AssertValid  
- O método [CObject::AssertValid](http://msdn.microsoft.com/library/534a0744-4ab6-423d-b492-b4058b3d5157) fornece verificações de tempo de execução do estado interno de um objeto. Embora não seja necessário substituir `AssertValid` quando você deriva a sua classe de `CObject`, é possível tornar sua classe mais confiável fazendo isso. `AssertValid` deve executar asserções em todas as variáveis de membro do objeto para verificar se contêm valores válidos. Por exemplo, ela deve verificar se as variáveis de membro do ponteiro não são NULL.  
+ O método [CObject::AssertValid](https://msdn.microsoft.com/library/534a0744-4ab6-423d-b492-b4058b3d5157) fornece verificações de tempo de execução do estado interno de um objeto. Embora não seja necessário substituir `AssertValid` quando você deriva a sua classe de `CObject`, é possível tornar sua classe mais confiável fazendo isso. `AssertValid` deve executar asserções em todas as variáveis de membro do objeto para verificar se contêm valores válidos. Por exemplo, ela deve verificar se as variáveis de membro do ponteiro não são NULL.  
 
  O exemplo a seguir mostra como declarar uma função `AssertValid`:  
 
@@ -223,7 +223,7 @@ void CPerson::AssertValid() const
 
  Se alguma das variáveis de membro armazena objetos, você pode usar a macro `ASSERT_VALID` para testar a validade interna (caso as classes substituam `AssertValid`).  
 
- Por exemplo, considere uma classe `CMyData`, que armazena uma [CObList](http://msdn.microsoft.com/library/80699c93-33d8-4f8b-b8cf-7b58aeab64ca) em uma das suas variáveis de membro. A variável `CObList`, `m_DataList`, armazena uma coleção de objetos `CPerson`. Uma declaração abreviada de `CMyData` é semelhante a esta:  
+ Por exemplo, considere uma classe `CMyData`, que armazena uma [CObList](https://msdn.microsoft.com/library/80699c93-33d8-4f8b-b8cf-7b58aeab64ca) em uma das suas variáveis de membro. A variável `CObList`, `m_DataList`, armazena uma coleção de objetos `CPerson`. Uma declaração abreviada de `CMyData` é semelhante a esta:  
 
 ```  
 class CMyData : public CObject  

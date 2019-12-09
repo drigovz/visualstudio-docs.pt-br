@@ -1,5 +1,5 @@
 ---
-title: 'Como: Personalizar as colunas de exibição do relatório | Microsoft Docs'
+title: Como personalizar as colunas de exibição do relatório | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -11,16 +11,17 @@ ms.assetid: cb6f6d30-52a5-4d92-ab07-1d5ddb67884c
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: e5fd58603e287de31fab35375e9441f9113fb025
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 6a297e6bfbed5023db97cabd370679b0de6caaab
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62973923"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778967"
 ---
-# <a name="how-to-customize-report-view-columns"></a>Como: Personalizar as colunas da exibição de relatório
+# <a name="how-to-customize-report-view-columns"></a>Como personalizar as colunas de exibição de relatório
 As ferramentas de desempenho no Visual Studio Team System Development Edition são totalmente integradas ao IDE (ambiente de desenvolvimento integrado) para proporcionar uma experiência perfeita para o usuário. A lista a seguir representa as exibições que podem ser personalizadas adicionando, removendo e reorganizando as colunas:
 
 - [Exibição Módulos](../profiling/modules-view.md)

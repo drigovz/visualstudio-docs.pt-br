@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f0bff81499fe8ea66ce5d4f50616adfec44d3002
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ef0b5bac11a1bf3da7e8081f7ae24b6a7a6f1a71
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839622"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742925"
 ---
 # <a name="idiapropertystoragereadbstr"></a>IDiaPropertyStorage::ReadBSTR
 Lê `BSTR` valores em um conjunto de propriedades.
@@ -34,17 +34,17 @@ HRESULT ReadBSTR ( 
 #### <a name="parameters"></a>Parâmetros
  `id`
 
-[in] Identificador da propriedade a ser lido (`PROPID` é definido em wtypes. H como um `ULONG`).
+no Identificador da propriedade a ser lida (`PROPID` é definido em WTypes. h como um `ULONG`).
 
  `pValue`
 
-[out] Retorna o valor da propriedade.
+fora Retorna o valor da propriedade.
 
-## <a name="return-value"></a>Valor de retorno
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retornará um código de erro. Retorna `E_INVALIDARG` se a propriedade não é do tipo `BSTR`.
+## <a name="return-value"></a>Valor retornado
+ Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro. Retornará `E_INVALIDARG` se a propriedade não for do tipo `BSTR`.
 
 ## <a name="remarks"></a>Comentários
- Um `BSTR` é definido pelo Windows como uma cadeia de caracteres larga terminada em zero.
+ Uma `BSTR` é definida pelo Windows como uma cadeia de caracteres largo terminada em zero.
 
 ## <a name="see-also"></a>Consulte também
 - [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)

@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBinder3::GetMemoryObject method
 ms.assetid: 71d959c7-45df-485f-b0ee-f1c0439d54fb
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 01cb000519647c415f68b369f5d2147a30e705e0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: b5386d6b4d32b34b708b7d213cf1a6e96ec0651a
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62923539"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66327041"
 ---
 # <a name="idebugbinder3getmemoryobject"></a>IDebugBinder3::GetMemoryObject
 Esse método recupera um objeto de memória que representa a memória que esse objeto está associado.
@@ -40,18 +43,15 @@ int GetMemoryObject(
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `pField`
+## <a name="parameters"></a>Parâmetros
+`pField`\
+[in] Especifica qual campo para obter o objeto de memória para.
 
- [in] Especifica qual campo para obter o objeto de memória para.
+`uConstant`\
+[in] Representa um valor para um valor constante ou um endereço de memória.
 
- `uConstant`
-
- [in] Representa um valor para um valor constante ou um endereço de memória.
-
- `ppObject`
-
- [out] Uma [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) que representa a memória que esse objeto está associado.
+`ppObject`\
+[out] Uma [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) que representa a memória que esse objeto está associado.
 
 ## <a name="return-value"></a>Valor de retorno
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.

@@ -1,44 +1,42 @@
 ---
 title: IDiaImageData::get_relativeVirtualAddress | Microsoft Docs
-ms.date: 11/15/2016
-ms.prod: visual-studio-dev14
-ms.technology: vs-ide-debug
-ms.topic: reference
+ms.date: 11/04/2016
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaImageData::get_relativeVirtualAddress method
 ms.assetid: e6d6deee-dc12-4b38-af15-f917b2d4368e
-caps.latest.revision: 13
-author: MikeJo5000
+author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c6a0ff03784df581fc2f6c57b51b896096d97bba
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.workload:
+- multiple
+ms.openlocfilehash: bfc7a808da6bb11907fc239f4b320e4dd93a2d19
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62830208"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743421"
 ---
-# <a name="idiaimagedatagetrelativevirtualaddress"></a>IDiaImageData::get_relativeVirtualAddress
-[!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
+# <a name="idiaimagedataget_relativevirtualaddress"></a>IDiaImageData::get_relativeVirtualAddress
+Recupera o local na memória virtual do módulo em relação ao aplicativo.
 
-Recupera o local na memória virtual do módulo relativo para o aplicativo.  
-  
-## <a name="syntax"></a>Sintaxe  
-  
-```cpp#  
-HRESULT get_relativeVirtualAddress (   
-   DWORD* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parâmetros  
- `pRetVal`  
- [out] Retorna o deslocamento relativo da memória virtual do módulo.  
-  
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.  
-  
-## <a name="see-also"></a>Consulte também  
- [IDiaImageData](../../debugger/debug-interface-access/idiaimagedata.md)
+## <a name="syntax"></a>Sintaxe
+
+```C++
+HRESULT get_relativeVirtualAddress ( 
+   DWORD* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parâmetros
+ `pRetVal`
+
+fora Retorna o deslocamento de memória virtual relativo do módulo.
+
+## <a name="return-value"></a>Valor retornado
+ Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
+
+## <a name="see-also"></a>Consulte também
+- [IDiaImageData](../../debugger/debug-interface-access/idiaimagedata.md)

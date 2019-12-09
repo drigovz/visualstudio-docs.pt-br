@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Set Current Thread command
 - Debug.SetCurrentThread command
 ms.assetid: 9917ed1d-6c30-4d94-b2f0-69acce74f1b2
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 88ede32645c9fc761c476e9f4d45ddf11a7577a3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 0d782a507d57e459aa5735cf34717f13e41d4cde
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62934622"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748608"
 ---
 # <a name="set-current-thread-command"></a>Comando Definir Thread Atual
 Define o thread especificado como o thread atual.
@@ -30,9 +30,9 @@ Debug.SetCurrentThread index
 ```
 
 ## <a name="arguments"></a>Arguments
- `index`
+`index`
 
- Necessário. Seleciona um thread por seu índice.
+Necessário. Seleciona um thread por seu índice.
 
 ## <a name="example"></a>Exemplo
 

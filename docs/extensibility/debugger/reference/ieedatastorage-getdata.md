@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEEDataStorage::GetData
 ms.assetid: 4d384039-73d4-40b4-ace6-a2474c546397
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0b6dbf712fc21338f8f5c4699ca2e11d5344dbad
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: f8859b019559f21797e23fa9a568b0ad7d649454
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62915302"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66319645"
 ---
 # <a name="ieedatastoragegetdata"></a>IEEDataStorage::GetData
 Recupera o número especificado de bytes do objeto.
@@ -40,18 +43,15 @@ int GetData(
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `dataSize`
+## <a name="parameters"></a>Parâmetros
+`dataSize`\
+[in] O número de bytes a serem recuperados (o `data` matriz deve conter pelo menos esse número de bytes).
 
- [in] O número de bytes a serem recuperados (o `data` matriz deve conter pelo menos esse número de bytes).
+`sizeGotten`\
+[out] Retorna o número de bytes realmente recuperados.
 
- `sizeGotten`
-
- [out] Retorna o número de bytes realmente recuperados.
-
- `data`
-
- [no, out] Matriz a ser preenchida com os dados solicitados.
+`data`\
+[no, out] Matriz a ser preenchida com os dados solicitados.
 
 ## <a name="return-value"></a>Valor de retorno
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.

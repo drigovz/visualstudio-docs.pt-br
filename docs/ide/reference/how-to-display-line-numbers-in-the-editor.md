@@ -8,17 +8,17 @@ helpviewer_keywords:
 - editors, line numbers
 - code, line number displaying
 ms.assetid: 40b38559-b8de-4041-91f2-68986767c976
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cd3c5d9c1d17bd8a0dae4969c7203902747a8c8b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 56fe49031e29bcf83071be93ebd1f1877254a9b5
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62789759"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72668425"
 ---
 # <a name="how-to-display-line-numbers-in-the-editor"></a>Como: exibir números de linha no editor
 
@@ -37,6 +37,4 @@ Você pode exibir ou ocultar a numeração de linhas em seu código.
 
 ## <a name="see-also"></a>Consulte também
 
-- [Personalizando o editor](../../ide/customizing-the-editor.md)
-- [Caixa de diálogo Opções do Editor de Texto](../../ide/reference/text-editor-options-dialog-box.md)
 - [Recursos do Editor de Códigos](../../ide/writing-code-in-the-code-and-text-editor.md)

@@ -1,23 +1,23 @@
 ---
-title: Enumerações do Visual C++ no Designer de Classe
+title: C++Enumerações no Designer de Classe
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Class Designer [Visual Studio], enumerations
 ms.assetid: 11e90ba1-18cd-44f8-9e26-e3746a7a19d1
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f31f153183d0cdd809bd9dde9187ade32b20ddd2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: a514d5eb4b7f79e2fd193c79de670b6dd9c14cb5
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975015"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747986"
 ---
-# <a name="visual-c-enumerations-in-class-designer"></a>Enumerações do Visual C++ no Designer de Classe
+# <a name="c-enumerations-in-class-designer"></a>C++Enumerações no Designer de Classe
 
 O **Designer de Classe** é compatível com os tipos `enum` e `enum class` no escopo do C++. Veja um exemplo a seguir:
 
@@ -44,5 +44,5 @@ Para obter mais informações sobre o uso do tipo `enum`, consulte [Enumeraçõe
 
 ## <a name="see-also"></a>Consulte também
 
-- [Trabalhando com código do Visual C++](working-with-visual-cpp-code.md)
+- [Trabalhando com C++ código](working-with-visual-cpp-code.md)
 - [Enumerações](/cpp/cpp/enumerations-cpp)

@@ -7,17 +7,17 @@ helpviewer_keywords:
 - builds [Visual Studio], about building in Visual Studio
 - custom build steps, types of builds
 ms.assetid: c7958821-285f-4e28-9e7a-b5d8b40336a1
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e943e43e93d7906c799b5ac5056f062d2522907f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 2c99408530344c72d2e9669178c5e79f7c34d551
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62976463"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71211250"
 ---
 # <a name="compile-and-build-in-visual-studio"></a>Compilar e criar no Visual Studio
 
@@ -25,7 +25,7 @@ Quando você compila o código-fonte, o mecanismo de build cria assemblies e apl
 
 Compilando seu código com frequência, é possível identificar erros rapidamente em tempo de compilação, como sintaxe incorreta, palavras-chave com erros de ortografia e erros de digitação. Também é possível detectar e corrigir erros em tempo de execução, como erros lógicos e semânticos, ao compilar e executar versões de depuração do código.
 
-Um build bem-sucedido valida que o código-fonte do aplicativo contém a sintaxe correta e que todas as referências estáticas a bibliotecas, assemblies e outros componentes podem ser resolvidas. É produzido um aplicativo executável que pode ser testado quanto ao funcionamento adequado em um [ambiente de depuração](../debugger/index.md) e por meio de uma variedade de testes manuais e automatizados para [validar a qualidade do código](../test/improve-code-quality.md). Depois que o aplicativo for completamente testado, você poderá compilar uma versão de lançamento a ser implantada em seus clientes. Para obter uma introdução a esse processo, confira [Passo a passo: Criando um aplicativo](../ide/walkthrough-building-an-application.md).
+Um build bem-sucedido valida que o código-fonte do aplicativo contém a sintaxe correta e que todas as referências estáticas a bibliotecas, assemblies e outros componentes podem ser resolvidas. É produzido um aplicativo executável que pode ser testado quanto ao funcionamento adequado em um [ambiente de depuração](../debugger/index.yml) e por meio de uma variedade de testes manuais e automatizados para [validar a qualidade do código](../test/improve-code-quality.md). Depois que o aplicativo for completamente testado, você poderá compilar uma versão de lançamento a ser implantada em seus clientes. Para obter uma introdução a esse processo, confira [Passo a passo: Criando um aplicativo](../ide/walkthrough-building-an-application.md).
 
 Você pode usar qualquer um dos métodos a seguir para compilar um aplicativo: o IDE do Visual Studio, as ferramentas de linha de comando do MSBuild, e o Azure Pipelines:
 

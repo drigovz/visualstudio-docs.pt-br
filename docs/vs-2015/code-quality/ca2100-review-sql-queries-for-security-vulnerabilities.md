@@ -1,5 +1,5 @@
 ---
-title: 'CA2100: Revisar as consultas SQL para vulnerabilidades de segurança | Microsoft Docs'
+title: 'CA2100: examinar as consultas SQL em busca de vulnerabilidades de segurança | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -13,17 +13,17 @@ helpviewer_keywords:
 - ReviewSqlQueriesForSecurityVulnerabilities
 ms.assetid: 79670604-c02a-448d-9c0e-7ea0120bc5fe
 caps.latest.revision: 26
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 167d9be908cef7e597e568a1fa60b4285960ad80
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e7258ec98937e7ea84773e788234e5a34772e9d4
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58925691"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72652192"
 ---
-# <a name="ca2100-review-sql-queries-for-security-vulnerabilities"></a>CA2100: Examinar consultas SQL em busca de vulnerabilidades de segurança
+# <a name="ca2100-review-sql-queries-for-security-vulnerabilities"></a>CA2100: revisar consultas SQL para vulnerabilidades de segurança
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -31,21 +31,21 @@ ms.locfileid: "58925691"
 |NomeDoTipo|ReviewSqlQueriesForSecurityVulnerabilities|
 |CheckId|CA2100|
 |Categoria|Microsoft.Security|
-|Alteração Significativa|Não são significativas|
+|Alteração Significativa|Sem interrupção|
 
 ## <a name="cause"></a>Causa
- Define um método de <xref:System.Data.IDbCommand.CommandText%2A?displayProperty=fullName> propriedade usando uma cadeia de caracteres que é criada a partir de um argumento de cadeia de caracteres para o método.
+ Um método define a propriedade <xref:System.Data.IDbCommand.CommandText%2A?displayProperty=fullName> usando uma cadeia de caracteres que é criada a partir de um argumento de cadeia de caracteres para o método.
 
 ## <a name="rule-description"></a>Descrição da Regra
- Esta regra pressupõe que o argumento da cadeia de caracteres contenha a entrada do usuário. Uma cadeia de caracteres de comando SQL criada com base na entrada do usuário é vulnerável a ataques de injeção SQL. Em um ataque de injeção de SQL, um usuário mal-intencionado fontes de entrada que altera o design de uma consulta em uma tentativa de danificar ou acesso não autorizado a banco de dados subjacente. Técnicas típicas incluem a injeção de uma aspa simples ou apóstrofe, que é o delimitador de literal de cadeia de caracteres SQL; dois traços, o que significa um comentário SQL; e um ponto e vírgula, que indica que um novo comando segue. Se a entrada do usuário deve fazer parte da consulta, use um dos seguintes, listados por ordem de eficiência, reduzir o risco de ataque.
+ Esta regra pressupõe que o argumento da cadeia de caracteres contenha a entrada do usuário. Uma cadeia de caracteres de comando SQL criada com base na entrada do usuário é vulnerável a ataques de injeção SQL. Em um ataque de injeção de SQL, um usuário mal-intencionado fornece entrada que altera o design de uma consulta em uma tentativa de danificar ou obter acesso não autorizado ao banco de dados subjacente. As técnicas típicas incluem injeção de uma aspa simples ou apóstrofo, que é o delimitador de cadeia de caracteres literal SQL; dois traços, que representa um comentário SQL; e um ponto e vírgula, que indica que um novo comando segue. Se a entrada do usuário precisar fazer parte da consulta, use um dos itens a seguir, listado em ordem de eficácia, para reduzir o risco de ataque.
 
 - Use um procedimento armazenado.
 
 - Use uma cadeia de caracteres de comando com parâmetros.
 
-- Valide a entrada do usuário para o tipo e o conteúdo antes de compilar a cadeia de caracteres de comando.
+- Valide a entrada do usuário para o tipo e o conteúdo antes de criar a cadeia de caracteres de comando.
 
-  O seguinte [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] tipos implementam a <xref:System.Data.IDbCommand.CommandText%2A> propriedade ou fornecer construtores que defina a propriedade usando um argumento de cadeia de caracteres.
+  Os tipos de [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] a seguir implementam a propriedade <xref:System.Data.IDbCommand.CommandText%2A> ou fornecem construtores que definem a propriedade usando um argumento de cadeia de caracteres.
 
 - <xref:System.Data.Odbc.OdbcCommand?displayProperty=fullName> e <xref:System.Data.Odbc.OdbcDataAdapter?displayProperty=fullName>
 
@@ -53,7 +53,7 @@ ms.locfileid: "58925691"
 
 - <xref:System.Data.OracleClient.OracleCommand?displayProperty=fullName> e <xref:System.Data.OracleClient.OracleDataAdapter?displayProperty=fullName>
 
-- [System.Data.SqlServerCe.SqlCeCommand](<!-- TODO: review code entity reference <xref:assetId:///System.Data.SqlServerCe.SqlCeCommand?qualifyHint=False&amp;autoUpgrade=True>  -->) and  [System.Data.SqlServerCe.SqlCeDataAdapter](<!-- TODO: review code entity reference <xref:assetId:///System.Data.SqlServerCe.SqlCeDataAdapter?qualifyHint=False&amp;autoUpgrade=True>  -->)
+- [System. Data. SqlServerCe. SqlCeCommand] (<!-- TODO: review code entity reference <xref:assetId:///System.Data.SqlServerCe.SqlCeCommand?qualifyHint=False&amp;autoUpgrade=True>  -->) e [System. Data. SqlServerCe. SqlCeDataAdapter] (<!-- TODO: review code entity reference <xref:assetId:///System.Data.SqlServerCe.SqlCeDataAdapter?qualifyHint=False&amp;autoUpgrade=True>  -->)
 
 - <xref:System.Data.SqlClient.SqlCommand?displayProperty=fullName> e <xref:System.Data.SqlClient.SqlDataAdapter?displayProperty=fullName>
 
@@ -64,7 +64,7 @@ int x = 10;
 string query = "SELECT TOP " + x.ToString() + " FROM Table";
 ```
 
- A regra é violada porque um usuário mal-intencionado pode substituir o método ToString ().
+ A regra foi violada porque um usuário mal-intencionado pode substituir o método ToString ().
 
  A regra também é violada quando ToString é usado implicitamente.
 
@@ -77,14 +77,14 @@ string query = String.Format("SELECT TOP {0} FROM Table", x);
  Para corrigir uma violação dessa regra, use uma consulta parametrizada.
 
 ## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos
- É seguro suprimir um aviso nessa regra, se o texto do comando não contiver qualquer entrada do usuário.
+ É seguro suprimir um aviso dessa regra se o texto do comando não contiver nenhuma entrada do usuário.
 
 ## <a name="example"></a>Exemplo
- O exemplo a seguir mostra um método `UnsafeQuery`, que viola a regra e um método, `SaferQuery`, que satisfaz a regra usando uma cadeia de caracteres de comando com parâmetros.
+ O exemplo a seguir mostra um método, `UnsafeQuery`, que viola a regra e um método, `SaferQuery`, que satisfaz a regra usando uma cadeia de caracteres de comando com parâmetros.
 
  [!code-cpp[FxCop.Security.ReviewSqlQueries#1](../snippets/cpp/VS_Snippets_CodeAnalysis/FxCop.Security.ReviewSqlQueries/cpp/FxCop.Security.ReviewSqlQueries.cpp#1)]
  [!code-csharp[FxCop.Security.ReviewSqlQueries#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Security.ReviewSqlQueries/cs/FxCop.Security.ReviewSqlQueries.cs#1)]
  [!code-vb[FxCop.Security.ReviewSqlQueries#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Security.ReviewSqlQueries/vb/FxCop.Security.ReviewSqlQueries.vb#1)]
 
 ## <a name="see-also"></a>Consulte também
- [Visão geral de segurança](http://msdn.microsoft.com/library/33e09965-61d5-48cc-9e8c-3b047cc4f194)
+ [Visão geral de segurança](https://msdn.microsoft.com/library/33e09965-61d5-48cc-9e8c-3b047cc4f194)

@@ -8,17 +8,17 @@ helpviewer_keywords:
 - agents, network adapter
 - controllers, configuring
 ms.assetid: 7eb9290a-f9f6-4e41-9caa-796fcfaf0610
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: dfcbac0bb9188826804ba13884f0f57962dddeab
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: b0dc70169deb8d09fed45bcb921c783765e87c0e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62979322"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72643776"
 ---
-# <a name="how-to-bind-a-test-controller-or-test-agent-to-a-network-adapter"></a>Como: Associar um controlador de teste ou um agente de teste a um adaptador de rede
+# <a name="how-to-bind-a-test-controller-or-test-agent-to-a-network-adapter"></a>Como associar um controlador de teste ou agente de teste a um adaptador de rede
 
 Se um computador com o software de controlador de teste ou agente de teste instalado tiver vários adaptadores de rede, você precisará especificar o endereço IP em vez do nome do computador para identificar o controlador ou agente de teste.
 
@@ -49,7 +49,7 @@ Se um computador com o software de controlador de teste ou agente de teste insta
 
 2. No painel de resultados, na coluna **Nome**, clique com o botão direito do mouse no serviço **Controlador de Teste do Visual Studio** e escolha **Parar**.
 
-     - ou -
+     \- ou -
 
      Abra um prompt de comando elevado e execute o seguinte comando em um comando:
 
@@ -95,7 +95,7 @@ Se um computador com o software de controlador de teste ou agente de teste insta
 
 2. No painel de resultados, na coluna **Nome**, clique com o botão direito do mouse no serviço **Agente de Teste do Visual Studio** e escolha **Parar**.
 
-     - ou -
+     \- ou -
 
      Abra um prompt de comando elevado e execute o seguinte comando em um comando:
 
@@ -133,4 +133,4 @@ Se um computador com o software de controlador de teste ou agente de teste insta
 - [Instalar e configurar agentes de teste](../test/lab-management/install-configure-test-agents.md)
 - [Modificar configurações de registro em log de testes de carga](../test/modify-load-test-logging-settings.md)
 - [Configurar portas para controladores e agentes de teste](../test/configure-ports-for-test-controllers-and-test-agents.md)
-- [Como: Especificar períodos de tempo limite para controladores e agentes de teste](../test/how-to-specify-timeout-periods-for-test-controllers-and-test-agents.md)
+- [Como especificar períodos de tempo limite para test controllers e test agents](../test/how-to-specify-timeout-periods-for-test-controllers-and-test-agents.md)

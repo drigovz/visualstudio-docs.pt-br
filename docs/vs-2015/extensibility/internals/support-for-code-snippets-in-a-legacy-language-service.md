@@ -12,12 +12,12 @@ ms.assetid: 7490325b-acee-4c2d-ac56-1cd5db1a1083
 caps.latest.revision: 29
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e3fa0eaa6a0b301914f0ea908ef1222d1b342f5c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 33218dd8fe7cee4a6700dcb289719ffae932bbe0
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63408460"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65691781"
 ---
 # <a name="support-for-code-snippets-in-a-legacy-language-service"></a>Suporte para snippets de código em um serviço de linguagem herdado
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -117,7 +117,7 @@ Um trecho de código é um trecho de código que é inserido no arquivo de orige
 ### <a name="inserting-a-code-snippet-by-using-a-menu-command"></a>Inserindo um trecho de código usando um comando de Menu  
  Para usar um comando de menu para exibir o navegador de trecho de código, você pode adicionar um comando de menu e, em seguida, chame o <xref:Microsoft.VisualStudio.Package.ExpansionProvider.DisplayExpansionBrowser%2A> método no <xref:Microsoft.VisualStudio.Package.ExpansionProvider> interface em resposta a esse comando de menu.  
   
-1. Adicione um comando e um botão ao arquivo. VSCT. Você pode encontrar instruções sobre como fazer isso no [passo a passo: Criação de um comando de Menu usando o modelo de pacote do Visual Studio](http://msdn.microsoft.com/library/1985fa7d-aad4-4866-b356-a125b6a246de).  
+1. Adicione um comando e um botão ao arquivo. VSCT. Você pode encontrar instruções sobre como fazer isso no [passo a passo: Criação de um comando de Menu usando o modelo de pacote do Visual Studio](https://msdn.microsoft.com/library/1985fa7d-aad4-4866-b356-a125b6a246de).  
   
 2. Derive uma classe do <xref:Microsoft.VisualStudio.Package.ViewFilter> de classe e substituir o <xref:Microsoft.VisualStudio.Package.ViewFilter.QueryCommandStatus%2A> método para indicar o suporte para o novo comando de menu. Este exemplo sempre permite que o comando de menu.  
   

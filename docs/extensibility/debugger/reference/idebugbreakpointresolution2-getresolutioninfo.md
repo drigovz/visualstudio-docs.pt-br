@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugBreakpointResolution2::GetResolutionInfo
 ms.assetid: 828cbdf6-b87d-4c45-be87-d87087b04a60
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d1b82921c2d08ed74ba05bb2ccf8ecfb642fa9cc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 6e5b847590a066f10580eeaaa3d600089b70a2e0
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62923109"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352857"
 ---
 # <a name="idebugbreakpointresolution2getresolutioninfo"></a>IDebugBreakpointResolution2::GetResolutionInfo
 Obtém as informações de resolução de ponto de interrupção que descreve este ponto de interrupção.
@@ -38,14 +41,12 @@ int GetResolutionInfo( 
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `dwFields`
+## <a name="parameters"></a>Parâmetros
+`dwFields`\
+[in] Uma combinação de sinalizadores do [BPRESI_FIELDS](../../../extensibility/debugger/reference/bpresi-fields.md) que determinam quais campos de enumeração de `pBPResolutionInfo` parâmetro devem ser preenchidos.
 
- [in] Uma combinação de sinalizadores do [BPRESI_FIELDS](../../../extensibility/debugger/reference/bpresi-fields.md) que determinam quais campos de enumeração de `pBPResolutionInfo` parâmetro devem ser preenchidos.
-
- `pBPResolutionInfo`
-
- [out] O [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) estrutura a ser preenchida com informações sobre este ponto de interrupção.
+`pBPResolutionInfo`\
+[out] O [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) estrutura a ser preenchida com informações sobre este ponto de interrupção.
 
 ## <a name="return-value"></a>Valor de retorno
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retornará um código de erro.

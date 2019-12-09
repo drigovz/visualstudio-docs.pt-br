@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Watch command
 - Debug.Watch command
 ms.assetid: aa02e647-d9f5-4905-a651-52a8df595795
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a6965378151bb44db1024ac4e9a49de618f410dc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 411452ba0cf8f8625ee67bca51c2f3735f6dc924
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62788994"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747688"
 ---
 # <a name="watch-command"></a>Comando Inspecionar
 Cria e abre uma instância especificada de uma janela **Inspeção**. Você pode usar uma janela **Inspeção** para calcular os valores de variáveis, expressões e registros, para editar esses valores e para salvar os resultados.
@@ -30,12 +30,13 @@ Debug.Watch[index]
 ```
 
 ## <a name="arguments"></a>Arguments
- `index`
 
- Necessário. O número de instância da janela Inspeção.
+`index`\
+Necessário. O número de instância da janela Inspeção.
 
 ## <a name="remarks"></a>Comentários
- O `index` deve ser um inteiro. Os valores válidos são 1, 2, 3 ou 4.
+
+O `index` deve ser um inteiro. Os valores válidos são 1, 2, 3 ou 4.
 
 ## <a name="example"></a>Exemplo
 

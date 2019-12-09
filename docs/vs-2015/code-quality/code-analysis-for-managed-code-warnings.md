@@ -1,5 +1,5 @@
 ---
-title: Análise de código para código gerenciado avisos | Microsoft Docs
+title: Análise de código para avisos de código gerenciado | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -13,51 +13,51 @@ helpviewer_keywords:
 - code analysis,managed code
 ms.assetid: 3c2741ff-0d3a-42e6-acd5-d42310bd03c4
 caps.latest.revision: 22
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 237091c4304b6d6fef90197d503f84fe86c12b9e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: fddcff8bb51216097689a86bd25718a0727c2b45
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58925712"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72672931"
 ---
 # <a name="code-analysis-for-managed-code-warnings"></a>Avisos da análise de código para código gerenciado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A ferramenta de análise de código gerenciado fornece avisos que indicam a violações de regra em bibliotecas de código gerenciado. Os avisos são organizados em áreas de regra, como design, localização, desempenho e segurança. Cada aviso significa que uma violação de uma regra de análise de código gerenciado. Esta seção fornece discussões detalhadas e exemplos de cada aviso de análise de código gerenciado.  
-  
- A tabela a seguir mostra o tipo de informação que é fornecido para cada aviso.  
-  
-|Item|Descrição|  
-|----------|-----------------|  
-|Tipo|O TypeName para a regra.|  
-|CheckId|O identificador exclusivo para a regra. CheckId e categoria são usadas para supressão na origem de um aviso.|  
-|Categoria|A categoria do aviso.|  
-|Alteração Significativa|Se a correção para uma violação da regra é uma alteração significativa. Interrupção de alteração significa que um assembly que tem uma dependência no destino que causou a violação não irá recompilar com o novo fixa versão ou pode falhar em tempo de execução devido à alteração. Quando várias correções estão disponíveis e pelo menos uma correção é uma alteração significativa e uma correção não for, tanto 'Divisão' e 'Divisão não' são especificados.|  
-|Causa|O código gerenciado específico que faz com que a regra gerar um aviso.|  
-|Descrição|Discute os problemas que estão atrás de aviso.|  
-|Como Corrigir Violações|Explica como alterar o código-fonte para satisfazer a regra e impedir que ele gera um aviso.|  
-|Quando Suprimir Avisos|Descreve quando é seguro suprimir um aviso de regra.|  
-|Exemplo de código|Exemplos que violam a regra e corrigido exemplos que atendem à regra.|  
-|Avisos relacionados|Avisos relacionados.|  
-  
-## <a name="in-this-section"></a>Nesta seção  
-  
-|||  
-|-|-|  
-|[Avisos por CheckId](../code-quality/code-analysis-warnings-for-managed-code-by-checkid.md)|Lista todos os avisos por CheckId|  
-|[Avisos de criptografia](../code-quality/cryptography-warnings.md)|Avisos que dão suporte a mais segura de bibliotecas e aplicativos por meio do uso correto da criptografia.|  
-|[Avisos de design](../code-quality/design-warnings.md)|Os avisos que dão suporte ao design da biblioteca correta conforme especificado pelo [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] diretrizes de Design.|  
-|[Avisos de globalização](../code-quality/globalization-warnings.md)|Avisos que dão suporte a aplicativos e bibliotecas do mundo.|  
-|[Avisos de interoperabilidade](../code-quality/interoperability-warnings.md)|Avisos que dão suporte à interação com clientes COM.|  
-|[Avisos de facilidade de manutenção](../code-quality/maintainability-warnings.md)|Avisos que dão suporte à manutenção de biblioteca e o aplicativo.|  
-|[Avisos de mobilidade](../code-quality/mobility-warnings.md)|Avisos que dão suporte ao consumo de energia eficiente.|  
-|[Avisos de Nomenclatura](../code-quality/naming-warnings.md)|Os avisos que dão suporte a conformidade com as convenções de nomenclatura do [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] diretrizes de Design.|  
-|[Avisos de desempenho](../code-quality/performance-warnings.md)|Avisos que dão suporte a aplicativos e bibliotecas de alto desempenho.|  
-|[Avisos de portabilidade](../code-quality/portability-warnings.md)|Avisos que dão suporte à portabilidade entre diferentes plataformas.|  
-|[Avisos de confiabilidade](../code-quality/reliability-warnings.md)|Avisos que dão suporte a confiabilidade de biblioteca e o aplicativo, como o uso de memória e thread corretos.|  
-|[Avisos de segurança](../code-quality/security-warnings.md)|Avisos que dão suporte a mais segura de bibliotecas e aplicativos.|  
-|[Avisos de Uso](../code-quality/usage-warnings.md)|Os avisos que oferecem suporte ao uso apropriado do [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].|  
-|[Erros da política de análise de código](../code-quality/code-analysis-policy-errors.md)|Erros que ocorrem se a política de análise de código não for atendida no check-in.|
+A ferramenta de análise de código gerenciado fornece avisos que indicam violações de regra em bibliotecas de código gerenciado. Os avisos são organizados em áreas de regras, como design, localização, desempenho e segurança. Cada aviso significa uma violação de uma regra de análise de código gerenciado. Esta seção fornece discussões detalhadas e exemplos para cada aviso de análise de código gerenciado.
+
+ A tabela a seguir mostra o tipo de informações que são fornecidas para cada aviso.
+
+|Item|Descrição|
+|----------|-----------------|
+|Digite|O TypeName da regra.|
+|CheckId|O identificador exclusivo da regra. O CheckId e a categoria são usados para a supressão na origem de um aviso.|
+|Categoria|A categoria do aviso.|
+|Alteração Significativa|Se a correção de uma violação da regra é uma alteração significativa. Alteração significativa significa que um assembly que tem uma dependência no destino que causou a violação não será recompilado com a nova versão fixa ou pode falhar em tempo de execução devido à alteração. Quando há várias correções disponíveis e pelo menos uma correção é uma alteração significativa e uma correção não é especificada, ' quebra ' e ' não separável ' são especificados.|
+|Causa|O código gerenciado específico que faz com que a regra gere um aviso.|
+|Descrição|Discute os problemas que estão por trás do aviso.|
+|Como Corrigir Violações|Explica como alterar o código-fonte para satisfazer a regra e impedir que ela gere um aviso.|
+|Quando Suprimir Avisos|Descreve quando é seguro suprimir um aviso da regra.|
+|Código de exemplo|Exemplos que violam a regra e exemplos corrigidos que satisfazem a regra.|
+|Avisos relacionados|Avisos relacionados.|
+
+## <a name="in-this-section"></a>Nesta seção
+
+|||
+|-|-|
+|[Avisos por CheckId](../code-quality/code-analysis-warnings-for-managed-code-by-checkid.md)|Lista todos os avisos por CheckId|
+|[Avisos de criptografia](../code-quality/cryptography-warnings.md)|Avisos que dão suporte a bibliotecas e aplicativos mais seguros por meio do uso correto de criptografia.|
+|[Avisos de design](../code-quality/design-warnings.md)|Avisos que dão suporte ao design de biblioteca correto conforme especificado pelas diretrizes de design de [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].|
+|[Avisos de globalização](../code-quality/globalization-warnings.md)|Avisos que dão suporte a bibliotecas e aplicativos preparados para o mundo.|
+|[Avisos de interoperabilidade](../code-quality/interoperability-warnings.md)|Avisos que dão suporte à interação com clientes COM.|
+|[Avisos de facilidade de manutenção](../code-quality/maintainability-warnings.md)|Avisos que dão suporte à manutenção da biblioteca e do aplicativo.|
+|[Avisos de mobilidade](../code-quality/mobility-warnings.md)|Avisos que dão suporte ao uso de energia eficiente.|
+|[Avisos de Nomenclatura](../code-quality/naming-warnings.md)|Avisos que dão suporte à adesão às convenções de nomenclatura das diretrizes de design de [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].|
+|[Avisos de desempenho](../code-quality/performance-warnings.md)|Avisos que dão suporte a bibliotecas e aplicativos de alto desempenho.|
+|[Avisos de portabilidade](../code-quality/portability-warnings.md)|Avisos que dão suporte à portabilidade em diferentes plataformas.|
+|[Avisos de confiabilidade](../code-quality/reliability-warnings.md)|Avisos que dão suporte à confiabilidade de biblioteca e aplicativo, como a memória correta e o uso de thread.|
+|[Avisos de segurança](../code-quality/security-warnings.md)|Avisos que dão suporte a bibliotecas e aplicativos mais seguros.|
+|[Avisos de Uso](../code-quality/usage-warnings.md)|Avisos que dão suporte ao uso apropriado do [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].|
+|[Erros da política de análise de código](../code-quality/code-analysis-policy-errors.md)|Erros que ocorrem se a política de análise de código não for satisfeita no check-in.|

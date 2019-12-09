@@ -4,17 +4,17 @@ ms.date: 05/02/2017
 ms.topic: conceptual
 helpviewer_keywords:
 - lab environment, test lab
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: 0d8b4806a8db576f2aa6c9af198e9b7f2c974556
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+author: jillre
+ms.openlocfilehash: d33562c686365029bc75781c76ad26d772dfcf66
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62783403"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653094"
 ---
 # <a name="use-a-lab-environment-for-your-devops"></a>Usar um ambiente de laboratório para suas operações de desenvolvimento
 
@@ -75,15 +75,15 @@ Há dois tipos de ambientes de laboratório que você pode criar com o Lab Manag
 
 **Ambientes SCVMM:** podem conter apenas computadores virtuais gerenciados pelo SCVMM (System Center Virtual Machine Manager), ou seja, as máquinas virtuais em ambientes SCVMM somente podem executar a estrutura de virtualização Hyper-V. Entretanto, ambientes SCVMM fornecem os seguintes recursos de automação e gerenciamento, que não estão disponíveis nos ambientes padrão:
 
-- **Instantâneos de ambiente:** Os instantâneos de ambiente contêm o estado de um ambiente de laboratório, para que você possa restaurar rapidamente um ambiente limpo ou salvar o estado de um ambiente modificado. Você também pode usar um fluxo de trabalho compilar/implantar/testar para automatizar o processo de salvar e restaurar instantâneos de ambiente.
+- **Instantâneos do ambiente:** instantâneos de ambiente contêm o estado de um ambiente de laboratório, para que você possa restaurar rapidamente um ambiente limpo ou salvar o estado de um ambiente que foi modificado. Você também pode usar um fluxo de trabalho compilar/implantar/testar para automatizar o processo de salvar e restaurar instantâneos de ambiente.
 
-- **Ambientes armazenados:** Você pode armazenar uma cópia de um ambiente SCVMM e, em seguida, implantar várias cópias desse ambiente.
+- **Ambientes armazenados:** você pode armazenar uma cópia de um ambiente SCVMM e, em seguida, implantar várias cópias desse ambiente.
 
-- **Isolamento de rede:** O isolamento de rede permite executar simultaneamente várias cópias idênticas de um ambiente SCVMM sem conflitos com o nome do computador.
+- **Isolamento de rede:** o isolamento de rede permite executar simultaneamente várias cópias idênticas de um ambiente SCVMM sem conflitos com o nome do computador.
 
-- **Modelos de máquina virtual:** Um modelo de máquina virtual é uma máquina virtual que teve seu nome e outros identificadores removidos. Quando um modelo de VM é implantado em um ambiente SCVMM, o Microsoft Test Manager gera novos identificadores. Isso permite implantar várias cópias de uma máquina virtual em um mesmo ambiente ou vários ambientes. Em seguida, executar as máquinas virtuais simultaneamente.
+- **Modelos de máquina virtual:** um modelo de máquina virtual é uma máquina virtual que teve seu nome e outros identificadores removidos. Quando um modelo de VM é implantado em um ambiente SCVMM, o Microsoft Test Manager gera novos identificadores. Isso permite implantar várias cópias de uma máquina virtual em um mesmo ambiente ou vários ambientes. Em seguida, executar as máquinas virtuais simultaneamente.
 
-- **Máquinas Virtuais Armazenadas:** Uma máquina virtual armazenada em sua biblioteca de projeto que inclui identificadores exclusivos.
+- **Máquinas Virtuais Armazenadas:** uma máquina virtual armazenada em sua biblioteca de projeto que inclui identificadores exclusivos.
 
 > [!NOTE]
 > O Lab Management não dá suporte ao SCVMM 2016.

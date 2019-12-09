@@ -1,51 +1,52 @@
 ---
-title: Adicionar código a conjuntos de dados em aplicativos de n camadas
+title: Adicionar código aos conjuntos de dados em aplicativos de n camadas
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
 helpviewer_keywords:
-- n-tier applications, extending datasets
+- n-tier applications, extending DataSets
 ms.assetid: d43c2ccd-4902-43d8-b1a8-d10ca5d3210c
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: a66250c9d376962bfef2db6b563070696fd33346
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 0002339b0a1aa2200894d701f04f343193376c4b
+ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63402870"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72807038"
 ---
-# <a name="add-code-to-datasets-in-n-tier-applications"></a>Adicionar código a conjuntos de dados em aplicativos de n camadas
-Você pode estender a funcionalidade de um conjunto de dados, criando um arquivo de classe parcial para o conjunto de dados e adicionando código a ele (em vez de adicionar código para o *DatasetName*. Arquivo do DataSet). Classes parciais permitem codificar uma classe específica a ser dividido entre vários arquivos físicos. Para obter mais informações, consulte [parcial](/dotnet/visual-basic/language-reference/modifiers/partial) ou [classes e métodos parciais](/dotnet/csharp/programming-guide/classes-and-structs/partial-classes-and-methods).
+# <a name="add-code-to-datasets-in-n-tier-applications"></a>Adicionar código aos conjuntos de dados em aplicativos de n camadas
 
-O código que define um conjunto de dados é gerado sempre que forem feitas alterações a definição do conjunto de dados (no conjunto de dados tipado). Esse código também é gerado quando você fizer alterações durante a execução de qualquer assistente que modifica a configuração de um conjunto de dados. Para impedir que seu código seja excluído durante a regeneração de um conjunto de dados, adicione código ao arquivo de classe parcial do conjunto de dados.
+Você pode estender a funcionalidade de um conjunto de um DataSet criando um arquivo de classe parcial para o conjunto de recursos e adicionando código a ele (em vez de adicionar código ao *DataSetName*. Arquivo DataSet. Designer). As classes parciais permitem que o código de uma classe específica seja dividido entre vários arquivos físicos. Para obter mais informações, consulte [classes e métodos](/dotnet/csharp/programming-guide/classes-and-structs/partial-classes-and-methods) [parciais](/dotnet/visual-basic/language-reference/modifiers/partial) ou parciais.
 
-Por padrão, após você separar o conjunto de dados e o código TableAdapter, o resultado é um arquivo de classe distintas em cada projeto. O projeto original tem um arquivo chamado *DatasetName.Designer.vb* (ou *DatasetName.Designer.cs*) que contém o código do TableAdapter. O projeto que é designado na **projeto Dataset** propriedade tem um arquivo chamado *DatasetName.DataSet.Designer.vb* (ou *DatasetName.DataSet.Designer.cs*) . Esse arquivo contém o código do conjunto de dados.
+O código que define um conjunto de um DataSet é gerado toda vez que são feitas alterações na definição do conjunto de código (no dataset tipado). Esse código também é gerado quando você faz alterações durante a execução de qualquer assistente que modifica a configuração de um conjunto de uma. Para impedir que seu código seja excluído durante a regeneração de um conjunto de um DataSet, adicione o código ao arquivo de classe parcial do conjunto de um.
 
-> [!NOTE]
-> Quando você separa os conjuntos de dados e TableAdapters (Configurando o **projeto DataSet** propriedade), classes parciais do conjunto de dados existentes no projeto não serão movidas automaticamente. Classes parciais do conjunto de dados existente devem ser movidas manualmente para o projeto de conjunto de dados.
+Por padrão, depois de separar o DataSet e o código do TableAdapter, o resultado é um arquivo de classe discreto em cada projeto. O projeto original tem um arquivo chamado *DataSetName. designer. vb* (ou *DataSetName.designer.cs*) que contém o código do TableAdapter. O projeto designado na Propriedade Project de **DataSet** tem um arquivo chamado *DataSetName. DataSet. designer. vb* (ou *DataSetName.DataSet.designer.cs*). Esse arquivo contém o código do conjunto de conteúdo.
 
 > [!NOTE]
-> Quando o código de validação precisa ser adicionado, o conjunto de dados tipado fornece a funcionalidade para gerar <xref:System.Data.DataTable.ColumnChanging> e <xref:System.Data.DataTable.RowChanging> manipuladores de eventos. Para obter mais informações, consulte [adicionar validação a um conjunto de dados de n camadas](../data-tools/add-validation-to-an-n-tier-dataset.md).
+> Quando você separa DataSets e TableAdapters (definindo a propriedade de **projeto DataSet** ), as classes parciais DataSet existentes no projeto não serão movidas automaticamente. As classes parciais de DataSet existentes devem ser movidas manualmente para o projeto do conjunto de um.
 
-## <a name="to-add-code-to-datasets-in-n-tier-applications"></a>Para adicionar código a conjuntos de dados em aplicativos de n camadas
+> [!NOTE]
+> Quando o código de validação precisa ser adicionado, o dataset tipado fornece funcionalidade para gerar <xref:System.Data.DataTable.ColumnChanging> e <xref:System.Data.DataTable.RowChanging> manipuladores de eventos. Para obter mais informações, consulte [Adicionar validação a um conjunto](../data-tools/add-validation-to-an-n-tier-dataset.md)de dados de n camadas.
 
-1. Localize o projeto que contém o *. xsd* arquivo.
+## <a name="to-add-code-to-datasets-in-n-tier-applications"></a>Para adicionar código a conjuntos de valores em aplicativos de n camadas
 
-2. Selecione o **. xsd** arquivo para abrir o conjunto de dados.
+1. Localize o projeto que contém o arquivo *. xsd* .
 
-3. Clique na tabela de dados ao qual você deseja adicionar o código (o nome da tabela na barra de título) e, em seguida, selecione **Exibir código**.
+2. Selecione o arquivo **. xsd** para abrir o conjunto de um.
 
-     Uma classe parcial é criada e é aberto no Editor de códigos.
+3. Clique com o botão direito do mouse na tabela de dados à qual você deseja adicionar o código (o nome da tabela na barra de título) e, em seguida, selecione **Exibir código**.
+
+     Uma classe parcial é criada e aberta no editor de código.
 
 4. Adicione o código dentro da declaração de classe parcial.
 
-     O exemplo a seguir mostra onde adicionar código para o CustomersDataTable no NorthwindDataSet:
+     O exemplo a seguir mostra onde adicionar código ao CustomersDataTable no NorthwindDataSet:
 
     ```vb
     Partial Public Class CustomersDataTable
@@ -68,4 +69,4 @@ Por padrão, após você separar o conjunto de dados e o código TableAdapter, o
 - [Adicionar código a TableAdapters em aplicativos de N camadas](../data-tools/add-code-to-tableadapters-in-n-tier-applications.md)
 - [Criar e configurar TableAdapters](create-and-configure-tableadapters.md)
 - [Visão geral de atualização hierárquica](hierarchical-update.md)
-- [Ferramentas de conjunto de dados no Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)
+- [Ferramentas de DataSet no Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)

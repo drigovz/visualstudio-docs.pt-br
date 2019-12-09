@@ -11,11 +11,11 @@ caps.latest.revision: 28
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: caaafd0143d3b09a51518ee5f54a02b06dbf10aa
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60084928"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68165783"
 ---
 # <a name="walkthrough-displaying-matching-braces"></a>Passo a passo: Exibindo chaves correspondentes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -125,4 +125,4 @@ Você pode implementar recursos de baseada na linguagem, como correspondência d
 4. Quando você posiciona o cursor antes de uma chave de abertura, essa chave e o colchete de fechamento correspondente deve ser realçado. Quando você posiciona o cursor logo após o colchete de fechamento, essa chave e a chave de abertura correspondente deve ser realçada.  
   
 ## <a name="see-also"></a>Consulte também  
- [Passo a passo: Vinculando a um tipo de conteúdo para uma extensão de nome de arquivo](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
+ [Passo a passo: vincular um tipo de conteúdo a uma extensão de nome de arquivo](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

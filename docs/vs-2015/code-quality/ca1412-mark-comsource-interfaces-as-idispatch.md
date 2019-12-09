@@ -1,5 +1,5 @@
 ---
-title: 'CA1412: Marcar Interfaces ComSource como IDispatch | Microsoft Docs'
+title: 'CA1412: marcar interfaces de origem como IDispatch | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,34 +12,34 @@ helpviewer_keywords:
 - MarkComSourceInterfacesAsIDispatch
 ms.assetid: 131a7563-0410-443c-a8f5-52104250cfb4
 caps.latest.revision: 18
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 59fec1fddb16296f1238deb5c2f9bbf0c350cdd2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 86dc7042a48faa200ef9c360829b1756bc261ab0
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58928681"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72652725"
 ---
-# <a name="ca1412-mark-comsource-interfaces-as-idispatch"></a>CA1412: Marcar interfaces ComSource como IDispatch
+# <a name="ca1412-mark-comsource-interfaces-as-idispatch"></a>CA1412: marcar interfaces ComSource como IDispatch
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |NomeDoTipo|MarkComSourceInterfacesAsIDispatch|
 |CheckId|CA1412|
-|Categoria|Microsoft.Interoperability|
+|Categoria|Microsoft. Interoperability|
 |Alteração Significativa|Quebra|
 
 ## <a name="cause"></a>Causa
- Um tipo é marcado com o <xref:System.Runtime.InteropServices.ComSourceInterfacesAttribute> atributo e pelo menos uma interface especificada não está marcado com o <xref:System.Runtime.InteropServices.InterfaceTypeAttribute> atributo definido como o `InterfaceIsDispatch` valor.
+ Um tipo é marcado com o atributo <xref:System.Runtime.InteropServices.ComSourceInterfacesAttribute> e pelo menos uma interface especificada não é marcada com o atributo <xref:System.Runtime.InteropServices.InterfaceTypeAttribute> definido como o valor `InterfaceIsDispatch`.
 
 ## <a name="rule-description"></a>Descrição da Regra
- <xref:System.Runtime.InteropServices.ComSourceInterfacesAttribute> é usado para identificar as interfaces de evento que uma classe expõe para clientes do modelo de objeto de componente (COM). Essas interfaces devem ser expostas como `InterfaceIsIDispatch` para permitir que clientes COM do Visual Basic 6 receber notificações de eventos. Por padrão, se uma interface não está marcada com o <xref:System.Runtime.InteropServices.InterfaceTypeAttribute> atributo, ele é exposto como uma interface dupla.
+ <xref:System.Runtime.InteropServices.ComSourceInterfacesAttribute> é usado para identificar as interfaces de evento que uma classe expõe para clientes Component Object Model (COM). Essas interfaces devem ser expostas como `InterfaceIsIDispatch` para permitir que Visual Basic COM clientes COM 6 recebam notificações de eventos. Por padrão, se uma interface não estiver marcada com o atributo <xref:System.Runtime.InteropServices.InterfaceTypeAttribute>, ela será exposta como uma interface dupla.
 
 ## <a name="how-to-fix-violations"></a>Como Corrigir Violações
- Para corrigir uma violação dessa regra, adicionar ou modificar as <xref:System.Runtime.InteropServices.InterfaceTypeAttribute> de atributo para que seu valor é definido como InterfaceIsIDispatch para todas as interfaces que são especificadas com o <xref:System.Runtime.InteropServices.ComSourceInterfacesAttribute> atributo.
+ Para corrigir uma violação dessa regra, adicione ou modifique o atributo <xref:System.Runtime.InteropServices.InterfaceTypeAttribute> para que seu valor seja definido como InterfaceIsIDispatch para todas as interfaces especificadas com o atributo <xref:System.Runtime.InteropServices.ComSourceInterfacesAttribute>.
 
 ## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos
  Não suprima um aviso nessa regra.
@@ -51,7 +51,7 @@ ms.locfileid: "58928681"
  [!code-vb[FxCop.Interoperability.MarkIDispatch#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Interoperability.MarkIDispatch/vb/FxCop.Interoperability.MarkIDispatch.vb#1)]
 
 ## <a name="related-rules"></a>Regras relacionadas
- [CA1408: Não usar AutoDual ClassInterfaceType](../code-quality/ca1408-do-not-use-autodual-classinterfacetype.md)
+ [CA1408: não usar AutoDual ClassInterfaceType](../code-quality/ca1408-do-not-use-autodual-classinterfacetype.md)
 
 ## <a name="see-also"></a>Consulte também
- [Como: Acionar eventos manipulados por um coletor COM](http://msdn.microsoft.com/7c9944b2-e951-4c3e-a0a1-59b2ae37d7fd) [interoperação com código não gerenciado](http://msdn.microsoft.com/library/ccb68ce7-b0e9-4ffb-839d-03b1cd2c1258)
+ [Como gerar eventos manipulados por um coletor de com](https://msdn.microsoft.com/7c9944b2-e951-4c3e-a0a1-59b2ae37d7fd) [interoperação com código não gerenciado](https://msdn.microsoft.com/library/ccb68ce7-b0e9-4ffb-839d-03b1cd2c1258)

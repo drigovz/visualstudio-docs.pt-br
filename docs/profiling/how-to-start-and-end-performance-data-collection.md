@@ -1,5 +1,5 @@
 ---
-title: 'Como: Iniciar e terminar a coleta de dados de desempenho | Microsoft Docs'
+title: Como iniciar e terminar a coleta de dados de desempenho | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,17 +13,18 @@ ms.assetid: 9f6eb0d5-d9e9-4bec-b627-445065610bce
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: c570145c2a8eae887de691c2507683dddb93b2cf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: da75306018cf19855c7cb7f74ac3ffc4e84bcd9a
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62996115"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74774505"
 ---
-# <a name="how-to-start-and-end-performance-data-collection"></a>Como: Iniciar e terminar a coleta de dados de desempenho
-Você deve adicionar o binário de destino do qual você deseja criar o perfil para a sessão de desempenho antes de iniciar a criação de perfil. Para adicionar um destino, clique com botão direito do mouse em **Destinos** no **Gerenciador de Desempenho** e clique em **Adicionar Binário de Destino**. Na caixa de diálogo **Adicionar Binário de Destino**, selecione o nome do arquivo e clique em **Abrir**. Um novo binário é adicionado.
+# <a name="how-to-start-and-end-performance-data-collection"></a>Como iniciar e terminar a coleta de dados de desempenho
+Você deve adicionar o binário de destino do qual você deseja criar o perfil para a sessão de desempenho antes de iniciar a criação de perfil. Para adicionar um destino, clique com botão direito do mouse em **Destinos** no **Gerenciador de Desempenho** e clique em **Adicionar Binário de Destino**. Na caixa de diálogo **Adicionar Binário de Destino**, selecione o nome do arquivo e, em seguida, clique em **Abrir**. Um novo binário é adicionado.
 
 ### <a name="to-start-profiling"></a>Para iniciar a criação de perfil
 
@@ -31,7 +32,7 @@ Você deve adicionar o binário de destino do qual você deseja criar o perfil p
 
     - **Iniciar com Criação de Perfil** – inicia o aplicativo e imediatamente começa a criação de perfil.
 
-    - **Iniciar com Criação de Perfil em Pausa** – inicia o aplicativo, mas não começa a criação de perfil. Você pode iniciar a criação de perfil selecionando **Retome a Coleta** na janela **Controle de Coleta de Dados**. Para obter mais informações, confira [Como: Pausar e retomar a coleta de dados de desempenho](../profiling/how-to-pause-and-resume-performance-data-collection.md).
+    - **Iniciar com Criação de Perfil em Pausa** – inicia o aplicativo, mas não começa a criação de perfil. Você pode iniciar a criação de perfil selecionando **Retome a Coleta** na janela **Controle de Coleta de Dados**. Para obter mais informações, confira [Como pausar e retomar a coleta de dados de desempenho](../profiling/how-to-pause-and-resume-performance-data-collection.md).
 
 ### <a name="to-end-profiling"></a>Para encerrar a criação de perfil
 
@@ -39,4 +40,4 @@ Você deve adicionar o binário de destino do qual você deseja criar o perfil p
 
 ## <a name="see-also"></a>Consulte também
 - [Controlar a coleta de dados](../profiling/controlling-data-collection.md)
-- [Como: Pausar e retomar a coleta de dados de desempenho](../profiling/how-to-pause-and-resume-performance-data-collection.md)
+- [Como pausar e retomar a coleta de dados de desempenho](../profiling/how-to-pause-and-resume-performance-data-collection.md)

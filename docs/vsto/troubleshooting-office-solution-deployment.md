@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 418a1a22979b701ec1d1d32521f7f89e2c5274eb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: dfebb3ce5293e7594827a17b30261403b0f3ae9a
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62978322"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821305"
 ---
 # <a name="troubleshoot-office-solution-deployment"></a>Solucionar problemas de implantação de solução do Office
   Este tópico contém informações sobre como resolver problemas comuns que você pode encontrar ao implantar soluções do Office.
@@ -73,9 +73,12 @@ ms.locfileid: "62978322"
 
 2. Sobre o **Application** , escolha **informações de Assembly**.
 
-3. No primeiro **versão do Assembly** , digite um asterisco (\*) e, em seguida, escolha o **Okey** botão.
+3. Defina o número de revisão, o terceiro campo, do **versão do Assembly**, para um caractere curinga (\*). Por exemplo, "1.0. *".  Em seguida, escolha o **Okey** botão.
 
    Depois de alterar a versão do assembly, você pode continuar a assinar o assembly com um nome forte e Fusion carregará a versão mais recente da personalização.
+
+ [!NOTE]
+> Começando com o Visual Studio 2017, se você tentar usar caracteres curinga em um erro de build de versão do Assembly ocorrerá.  Isso ocorre porque os caracteres curinga na versão do assembly interromperá o recurso de MSBuild determinística. Você será instruído a remover os caracteres curinga de versão do assembly, ou desabilite o determinismo.  Para saber mais sobre o recurso determinístico, consulte: [Propriedades de projeto comuns do MSBuild](../msbuild/common-msbuild-project-properties.md) e [personalizar seu build](../msbuild/customize-your-build.md)
 
 ## <a name="installation-fails-when-the-uri-has-characters-that-arent-us-ascii"></a>A instalação falha quando o URI tem caracteres que não são de US-ASCII
  Quando você publica uma solução do Office em um local HTTP/HTTPS/FTP, o caminho não pode ter quaisquer caracteres Unicode que não estão em US-ASCII. Esses caracteres podem causar um comportamento inconsistente no programa de instalação. Use caracteres US-ASCII para o caminho de instalação.
@@ -118,7 +121,7 @@ ms.locfileid: "62978322"
 ## <a name="cant-install-a-clickonce-solution-by-opening-the-deployment-manifest-from-the-web"></a>Não é possível instalar uma solução do ClickOnce, abrindo o manifesto de implantação da web
  Os usuários podem instalar soluções do Office abrindo o manifesto de implantação da web. No entanto, bloqueiam algumas instalações do Internet Information Services (IIS) a *VSTO* extensão de nome de arquivo. Você deve definir o tipo MIME no IIS antes de usá-lo para implantar uma solução do Office.
 
- Para obter informações sobre como definir o tipo MIME no IIS 7, consulte [adicionar um tipo de MIME (IIS7)](http://technet.microsoft.com/library/cc725608(WS.10).aspx).
+ Para obter informações sobre como definir o tipo MIME no IIS 7, consulte [adicionar um tipo de MIME (IIS7)](https://technet.microsoft.com/library/cc725608(WS.10).aspx).
 
  A extensão do conjunto **VSTO** e o tipo MIME para **application/x-ms-vsto**.
 

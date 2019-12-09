@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugThreadNameChangedEvent2
 ms.assetid: 34c1652e-f019-48ba-8b26-ace20f8a158c
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 85d965969dd6d510ce3d17936d3fd628945fb531
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 169b26a10ffdaf7e6cdf490d83373950f92e769b
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62868340"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66319863"
 ---
 # <a name="idebugthreadnamechangedevent2"></a>IDebugThreadNameChangedEvent2
 Essa interface é enviada pelo mecanismo de depuração (DE) para o Gerenciador de sessão de depuração (SDM) quando um nome de thread é alterado no programa que está sendo depurado.

@@ -1,5 +1,5 @@
 ---
-title: IScriptEntry::GetRange | Microsoft Docs
+title: 'IScriptEntry:: GetRange | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7baa284be4fa7f45f247df7f4b3d140869f254b1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0a6e1b1600c93aa05bbe9669fb57a23a8c9344a1
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62787731"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575433"
 ---
 # <a name="iscriptentrygetrange"></a>IScriptEntry::GetRange
 Retorna a posição inicial e o comprimento de uma entrada.  
@@ -38,20 +38,20 @@ HRESULT GetRange(
   
 #### <a name="parameters"></a>Parâmetros  
  `pichMin`  
- [out] Para `IScriptEntry` objetos que especificam um bloco de script, retornará 0.  
+ fora Para `IScriptEntry` objetos que especificam um bloco de script, retorna 0.  
   
- Para `IScriptEntry` objetos que especificam um objeto de função retorna a posição inicial da função no bloco de script atual.  
+ Para `IScriptEntry` objetos que especificam um objeto de função, retorna a posição inicial da função no bloco de script atual.  
   
- Para `IScriptScriptlet` objetos, retornará 0.  
+ Para objetos `IScriptScriptlet`, retorna 0.  
   
  `pcch`  
- [out] Para `IScriptEntry` objetos que especificam um bloco de script, retorna o comprimento do texto.  
+ fora Para `IScriptEntry` objetos que especificam um bloco de script, retorna o comprimento do texto.  
   
- Para `IScriptEntry` objetos que especificam um objeto de função retorna o comprimento da definição da função.  
+ Para `IScriptEntry` objetos que especificam um objeto de função, retorna o comprimento da definição da função.  
   
- Para `IScriptScriptlet` objetos, retorna o comprimento da entrada.  
+ Para objetos `IScriptScriptlet`, retorna o comprimento da entrada.  
   
-## <a name="return-value"></a>Valor de retorno  
+## <a name="return-value"></a>Valor retornado  
  Um `HRESULT`. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.  
   
 |Valor|Descrição|  

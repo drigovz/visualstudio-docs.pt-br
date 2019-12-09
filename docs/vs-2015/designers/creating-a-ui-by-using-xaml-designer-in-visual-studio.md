@@ -11,15 +11,15 @@ f1_keywords:
 - VS.DocumentOutline
 ms.assetid: c54969a7-d75a-4a35-9b37-af7a596a7c24
 caps.latest.revision: 31
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: c928d9f939db96ae302620952bbb6bbdedc396a3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 879d8457a0f5fd4bf63a2d69a4f3f026ce4c6fe1
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62580609"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74294670"
 ---
 # <a name="creating-a-ui-by-using-xaml-designer-in-visual-studio"></a>Criando uma interface de usuário usando o XAML Designer no Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,13 +36,13 @@ O Designer XAML no Visual Studio fornece uma interface visual para ajudá-lo a c
 
  No modo de exibição de Design, a janela que contém a *prancheta* é a janela ativa e você pode usá-la como superfície de trabalho primária. Você pode usá-la para criar visualmente uma página em seu aplicativo adicionando ou desenhando elementos e depois modificando-os. Para obter mais informações, consulte [Trabalhando com elementos no Designer XAML](../designers/working-with-elements-in-xaml-designer.md). Esta ilustração mostra o artboard no modo Design.
 
- ![Modo de Exibição de Design do Designer XAML](../designers/media/xaml-editor-design-view.png "xaml_editor_design_view")
+ ![modo de exibição de Design de Designer XAML](../designers/media/xaml-editor-design-view.png "xaml_editor_design_view")
 
  Estas funcionalidades estão disponíveis no artboard:
 
  **Guias de alinhamento** As guias de alinhamento são *limites de alinhamento* que são exibidos como linhas vermelhas tracejadas para mostrar quando as bordas dos controles estão alinhadas ou quando as linhas de base de texto estão alinhadas. Os limites de alinhamento só são exibidos quando a opção de **ajuste a guias de alinhamento** está habilitada.
 
- **Trilhos de grade** Trilhos `Grid` são usados para gerenciar linhas e colunas em um painel de [Grade](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.grid.aspx). Você pode criar e excluir linhas e colunas, bem como ajustar suas larguras e alturas relativas. O rail de Grade vertical, exibido à esquerda da planilha, é usado para linhas e a linha horizontal, exibida na parte superior, é usada para colunas.
+ **Trilhos de grade** Trilhos `Grid` são usados para gerenciar linhas e colunas em um painel de [Grade](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.grid.aspx). Você pode criar e excluir linhas e colunas, bem como ajustar suas larguras e alturas relativas. O rail de Grade vertical, exibido à esquerda da planilha, é usado para linhas e a linha horizontal, exibida na parte superior, é usada para colunas.
 
  **Adornos de grade** Um adorno `Grid` é exibido como um triângulo que tem uma linha vertical ou horizontal anexada a ele no trilho `Grid`. Quando você arrasta um adorno `Grid`, as larguras ou alturas das linhas ou colunas adjacentes são atualizadas enquanto o mouse é movimentado.
 
@@ -50,7 +50,7 @@ O Designer XAML no Visual Studio fornece uma interface visual para ajudá-lo a c
 
  **Alças de redimensionamento** As alças de redimensionamento são exibidas em controles selecionados e permitem redimensionar o controle. Quando você redimensiona um controle, os valores de largura e altura geralmente são exibidos para ajudar a dimensionar o controle. Para obter mais informações sobre a manipulação de controles no modo de exibição de Design, consulte [Trabalhando com elementos no Designer XAML](../designers/working-with-elements-in-xaml-designer.md).
 
- **Margens** As margens representam o espaço fixo entre a borda de um controle e a borda do respectivo contêiner. Você pode definir as margens de um controle usando as propriedades [Margem](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.frameworkelement.margin.aspx) em **Layout** na janela Propriedades.
+ **Margens** As margens representam o espaço fixo entre a borda de um controle e a borda do respectivo contêiner. Você pode definir as margens de um controle usando as propriedades [Margem](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.frameworkelement.margin.aspx) em **Layout** na janela Propriedades.
 
  **Adornos de margem** Você pode usar adornos de margem para alterar as margens de um elemento relativo ao respectivo contêiner de layout. Quando um adorno de margem está aberto, uma margem não está definida, e o adorno de margem exibe uma cadeia quebrada. Quando a margem não está definida, os elementos permanecem no lugar quando o contêiner de layout é redimensionado em tempo de execução. Quando um adorno de margem está fechado, um adorno de margem exibe uma cadeia ininterrupta, e os elementos são movidos com a margem enquanto o contêiner de layout é redimensionado em tempo de execução (a margem permanece fixa).
 
@@ -58,7 +58,7 @@ O Designer XAML no Visual Studio fornece uma interface visual para ajudá-lo a c
 
  No modo Design, os comandos adicionais do artboard estão disponíveis na área esquerda inferior da tela, como mostrado aqui:
 
- ![Comandos do modo de exibição de Design](../designers/media/xaml-editor-design-controls.png "xaml_editor_design_controls")
+ ![Comandos de modo de exibição de Design](../designers/media/xaml-editor-design-controls.png "xaml_editor_design_controls")
 
  Estes comandos estão disponíveis na barra de ferramentas:
 
@@ -81,7 +81,7 @@ O Designer XAML no Visual Studio fornece uma interface visual para ajudá-lo a c
 ## <a name="device-window"></a>Janela Dispositivo
  A janela Dispositivo no Designer XAML permite simular em tempo de design vários modos de exibição, vídeos e opções de exibição para seu projeto da Windows Store ou do Windows Phone. A janela Dispositivo está disponível no menu **Design** quando você estiver trabalhando no Designer XAML. Veja como ela se parece:
 
- ![Janela Dispositivo](../designers/media/xaml-editor-device-panel.png "xaml_editor_device_panel")
+ ![Janela do dispositivo](../designers/media/xaml-editor-device-panel.png "xaml_editor_device_panel")
 
  Estas são as opções disponíveis na janela Dispositivo:
 
@@ -89,7 +89,7 @@ O Designer XAML no Visual Studio fornece uma interface visual para ajudá-lo a c
 
  **Orientação** Especifica diferentes orientações para o aplicativo: **Paisagem** ou **Retrato**.
 
- **Borda** Especifica diferentes alinhamentos de borda para seu aplicativo: **Ambos**, **Esquerda**, **Direita** ou **Nenhum**.
+ **Borda** Especifica diferentes alinhamentos de borda para o aplicativo: **Ambos**, **Esquerda**, **Direita** ou **Nenhum**.
 
  **Alto Contraste** Visualize o aplicativo com base na configuração de contraste selecionada. Essa configuração, quando definida como um valor diferente do valor **Padrão**, substituirá a propriedade `RequestedTheme` definida no arquivo App.xaml.
 
@@ -116,7 +116,7 @@ O Designer XAML no Visual Studio fornece uma interface visual para ajudá-lo a c
 
   Para exibir a janela de Estrutura de tópicos do documento na barra de menus, escolha **Exibição**, **Outras Janelas**, **Estrutura de Tópicos do Documento**.
 
-  ![Janela de Estrutura de tópicos do documento](../designers/media/xaml-editor-doc-outline.png "xaml_editor_doc_outline")
+  ![Janela estrutura de tópicos do documento](../designers/media/xaml-editor-doc-outline.png "xaml_editor_doc_outline")
 
   Estas são as opções disponíveis na janela Estrutura de Tópicos de Documento:
 
@@ -133,9 +133,9 @@ O Designer XAML no Visual Studio fornece uma interface visual para ajudá-lo a c
 
  ![Janela Propriedades](../designers/media/xaml-editor-prop-window.png "xaml_editor_prop_window")
 
- Há várias opções na parte superior da janela Propriedades. Você pode alterar o nome do elemento atualmente selecionado usando a caixa **Nome**. No canto esquerdo superior, há um ícone que representa o elemento atualmente selecionado. Para organizar as propriedades por categoria ou em ordem alfabética, clique em **Categoria**, **Nome** ou **Fonte** na lista **Organizar por**. Para ver a lista de eventos de um controle, clique no botão **Eventos**, que exibe um símbolo de relâmpago. Para pesquisar uma propriedade, comece a digitar o nome da propriedade na caixa **Propriedades de Pesquisa**. A janela Propriedades exibe as propriedades que correspondem à pesquisa à medida que você digita. Algumas propriedades permitem que você defina propriedades avançadas selecionando um botão de seta para baixo. Para obter mais informações sobre como usar propriedades e manipular eventos, veja o artigo sobre [Guia de início rápido: adicionando controles e manipulando eventos](http://go.microsoft.com/fwlink/?LinkID=247983)
+ Há várias opções na parte superior da janela Propriedades. Você pode alterar o nome do elemento atualmente selecionado usando a caixa **Nome**. No canto esquerdo superior, há um ícone que representa o elemento atualmente selecionado. Para organizar as propriedades por categoria ou em ordem alfabética, clique em **Categoria**, **Nome** ou **Fonte** na lista **Organizar por**. Para ver a lista de eventos de um controle, clique no botão **Eventos**, que exibe um símbolo de relâmpago. Para pesquisar uma propriedade, comece a digitar o nome da propriedade na caixa **Propriedades de Pesquisa**. A janela Propriedades exibe as propriedades que correspondem à pesquisa à medida que você digita. Algumas propriedades permitem que você defina propriedades avançadas selecionando um botão de seta para baixo. Para obter mais informações sobre como usar propriedades e manipular eventos, veja o artigo sobre [Guia de início rápido: adicionando controles e manipulando eventos](https://go.microsoft.com/fwlink/?LinkID=247983)
 
  À direita de cada valor da propriedade, está um *marcador de propriedade* que é exibido como símbolo de caixa. A aparência do marcador da propriedade indica se existe uma associação de dados ou um recurso aplicado à propriedade. Por exemplo, um símbolo de caixa branca indica um valor padrão, um símbolo de caixa preta normalmente indica que um recurso local foi aplicado, e uma caixa laranja geralmente indica que uma associação de dados foi aplicada. Quando você clica no marcador da propriedade, pode navegar para a definição de um estilo, abrir o construtor da associação de dados ou abrir o selecionador de recurso.
 
 ## <a name="see-also"></a>Consulte também
- [Trabalhando com elementos no Designer XAML](../designers/working-with-elements-in-xaml-designer.md) [como criar e aplicar um recurso](../designers/how-to-create-and-apply-a-resource.md) [passo a passo: Associando a dados no Designer XAML](../designers/walkthrough-binding-to-data-in-xaml-designer.md)
+ Como [trabalhar com elementos no designer XAML](../designers/working-with-elements-in-xaml-designer.md) [como criar e aplicar um recurso](../designers/how-to-create-and-apply-a-resource.md) [: associação a dados em designer XAML](../designers/walkthrough-binding-to-data-in-xaml-designer.md)

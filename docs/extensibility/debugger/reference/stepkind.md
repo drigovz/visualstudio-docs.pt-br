@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - STEPKIND enumeration
 ms.assetid: d3d8cf76-24bf-455e-803e-0e3e28f0b262
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bb0ece36eba11b61f760552fe0559de46c1ce732
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 7adf835cd3809eeb3d4db664cf5febcfa2a0597b
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62864775"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66329166"
 ---
 # <a name="stepkind"></a>STEPKIND
 Especifica o tipo de etapa de passo a passo.
@@ -43,14 +46,18 @@ public enum enum_STEPKIND { 
 };
 ```
 
-## <a name="members"></a>Membros
- Etapas de STEP_INTO em uma função.
+## <a name="fields"></a>Campos
+ `STEP_INTO`\
+ Etapas em uma função.
 
- STEP_OVER etapas ao longo de uma função.
+ `STEP_OVER`\
+ Etapas em uma função.
 
- Etapas de STEP_OUT fora de uma função.
+ `STEP_OUT`\
+ Etapas de uma função.
 
- Etapas de STEP_BACKWARDS com versões anteriores em uma função.
+ `STEP_BACKWARDS`\
+ Etapas para trás em uma função.
 
 ## <a name="remarks"></a>Comentários
  Passado como um argumento para o [etapa](../../../extensibility/debugger/reference/idebugprocess3-step.md) método.

@@ -3,17 +3,17 @@ title: Sincronizar as configurações
 ms.date: 12/10/2018
 ms.topic: conceptual
 ms.assetid: a3d2ea29-be5d-4012-9820-44b06adbb7dd
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ff663a7d2a22f152b3a0b9081623766535f9a53
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: cebfc33b3bc0fc664874dd8c531e6630b3e64c5c
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62950419"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647428"
 ---
 # <a name="synchronize-visual-studio-settings-across-multiple-computers"></a>Sincronizar as configurações do Visual Studio em vários computadores
 
@@ -31,19 +31,19 @@ Por padrão, as seguintes configurações são sincronizadas:
 
 - As seguintes opções nas páginas **Ferramentas** > **Opções**:
 
-   - Configurações de tema e de uso de maiúsculas na barra de menus, na página de opções **Ambiente** > **Geral**.
+  - Configurações de tema e de uso de maiúsculas na barra de menus, na página de opções **Ambiente** > **Geral**.
 
-   - Todas as configurações da página de opções **Ambiente** > **Fontes e Cores**.
+  - Todas as configurações da página de opções **Ambiente** > **Fontes e Cores**.
 
-   - Todos os atalhos de teclado da página de opções **Ambiente** > **Teclado**.
+  - Todos os atalhos de teclado da página de opções **Ambiente** > **Teclado**.
 
-   - Todas as configurações da página de opções **Ambiente** > **Guias e Janelas**.
+  - Todas as configurações da página de opções **Ambiente** > **Guias e Janelas**.
 
-   - Todas as configurações da página de opções **Ambiente** > **Inicialização**.
+  - Todas as configurações da página de opções **Ambiente** > **Inicialização**.
 
-   - Todas as configurações nas páginas de opção do **Editor de Texto**, por exemplo, [preferências de estilo de código](code-styles-and-quick-actions.md).
+  - Todas as configurações nas páginas de opção do **Editor de Texto**, por exemplo, [preferências de estilo de código](code-styles-and-code-cleanup.md).
 
-   - Todas as configurações das páginas de opções **Designer XAML**.
+  - Todas as configurações das páginas de opções **Designer XAML**.
 
 ## <a name="turn-off-synchronized-settings-on-a-particular-computer"></a>Desligar configurações sincronizadas em um computador específico
 
@@ -71,7 +71,7 @@ Se você tiver instalações lado a lado do Visual Studio e desejar usar a local
 
 1. Atualizar para o Visual Studio 2017 versão 15.3 ou posterior.
 
-2. Use o assistente de **configurações de Importação\Exportação** para exportar todas as configurações existentes para um local fora da pasta *%localappdata%\Microsoft\VisualStudio\15.0_xxxxxxxx*.
+2. Use o **Assistente para Importar e Exportar Configurações** para exportar todas as configurações existentes para uma localização fora da pasta *%localappdata%\Microsoft\VisualStudio\15.0_xxxxxxxx*.
 
 3. Abra o **Prompt de Comando do Desenvolvedor para VS 2017** e execute `devenv /resetuserdata`.
 
@@ -84,6 +84,10 @@ Se você tiver instalações lado a lado do Visual Studio e desejar usar a local
 Algumas configurações, como o layout da janela de ferramentas, não são compartilhadas entre diferentes instalações lado a lado do Visual Studio. O arquivo *CurrentSettings.vssettings* em *%userprofile%\Documents\Visual Studio 2019\Settings* é uma pasta específica da instalação semelhante a *%localappdata%\Microsoft\VisualStudio\16.0_xxxxxxxx\Settings*.
 
 ::: moniker-end
+
+## <a name="reset-synchronized-settings"></a>Restaurar as configurações sincronizadas
+
+Para restaurar todas as configurações para os padrões, entre no Visual Studio e, em seguida, selecione **Ferramentas** > **Importar e Exportar Configurações** para abrir o **Assistente para Importar e Exportar Configurações**. Selecione **Restaurar todas as configurações** e siga as etapas restantes do assistente.
 
 ## <a name="see-also"></a>Consulte também
 

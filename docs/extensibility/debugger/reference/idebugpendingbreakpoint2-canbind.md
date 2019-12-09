@@ -8,17 +8,20 @@ helpviewer_keywords:
 - IDebugPendingBreakpoint2::CanBind method
 - CanBind method
 ms.assetid: 84a2b189-ccf1-467e-8fab-0c0da68f0b91
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 23c0db65c257547bd57e6382e6da806a852ea367
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: c9325d8a0c8ee39aec6f8ceccb5bbb894eef2163
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62872222"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66311726"
 ---
 # <a name="idebugpendingbreakpoint2canbind"></a>IDebugPendingBreakpoint2::CanBind
 Determina se este ponto de interrupção pendente pode associar a um local de código.
@@ -37,10 +40,9 @@ int CanBind ( 
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `ppErrorEnum`
-
- [out] Retorna um [IEnumDebugErrorBreakpoints2](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2.md) objeto que contém uma lista de [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md) objetos se pode haver erros.
+## <a name="parameters"></a>Parâmetros
+`ppErrorEnum`\
+[out] Retorna um [IEnumDebugErrorBreakpoints2](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2.md) objeto que contém uma lista de [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md) objetos se pode haver erros.
 
 ## <a name="return-value"></a>Valor de retorno
  Se for bem-sucedido, retornará `S_OK.` retorna `S_FALSE` se o ponto de interrupção não é possível associar, caso em que os erros são retornados pelo `ppErrorEnum` parâmetro. Caso contrário, retornará um código de erro. Retorna `E_BP_DELETED` se o ponto de interrupção tiver sido excluído.

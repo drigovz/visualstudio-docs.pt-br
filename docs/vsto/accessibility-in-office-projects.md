@@ -15,78 +15,78 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a54c9d5322b35092d635edd00e3b200ee67997a9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8bd74f4d61c74a4dc348f7a615e103b283a15fc0
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62945213"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189626"
 ---
 # <a name="accessibility-in-office-projects"></a>Acessibilidade em projetos do Office
 
-Microsoft Visual Studio e do Microsoft Office incluem muitos recursos de acessibilidade que permitem que você crie soluções personalizadas que atendem aos requisitos de acessibilidade padrão. A Microsoft publica as diretrizes de acessibilidade na Web. Para obter detalhes, consulte o [site de acessibilidade](http://go.microsoft.com/fwlink/?LinkID=37113).
+Microsoft Visual Studio e Microsoft Office incluem muitos recursos de acessibilidade que permitem que você crie soluções personalizadas que atendam aos requisitos de acessibilidade padrão. A Microsoft publica diretrizes para acessibilidade na Web. Para obter detalhes, consulte o [site de acessibilidade](https://www.microsoft.com/accessibility/).
 
-Na maioria dos casos, os projetos do Office no Visual Studio atende aos padrões ou expõe as propriedades de acessibilidade que podem ser definidas para disponibilizar suas soluções. No entanto, há alguns recursos que têm a acessibilidade limitada.
+Na maioria dos casos, os projetos do Office no Visual Studio atendem aos padrões de acessibilidade ou expõem propriedades que podem ser definidas para tornar suas soluções acessíveis. No entanto, há alguns recursos que têm acessibilidade limitada.
 
 [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
-## <a name="accessibility-at-design-time"></a>Acessibilidade no tempo de design
+## <a name="accessibility-at-design-time"></a>Acessibilidade em tempo de design
 
-### <a name="use-shortcut-keys-in-document-level-projects"></a>Use as teclas de atalho em projetos de nível de documento
- Quando um documento do Microsoft Office Word ou uma pasta de trabalho do Microsoft Office Excel é aberta no Visual Studio, o aplicativo apenas uma por vez recebe os comandos de tecla de atalho. Por padrão, o Visual Studio recebe todos os comandos de tecla de atalho, mas você pode fazer o Word ou Excel recebê-las quando o documento tem o foco, selecionando **esquema de teclado dinâmico** sobre o **configurações de teclado** página dos **opções** caixa de diálogo. Para obter mais informações, consulte [teclado do Word do Microsoft Office, configurações de teclado do Microsoft Office, caixa de diálogo Opções](../vsto/microsoft-office-word-keyboard-microsoft-office-keyboard-settings-options-dialog-box.md) e [teclado do Excel do Microsoft Office, configurações de teclado do Microsoft Office, a caixa de diálogo de opções](../vsto/microsoft-office-excel-keyboard-microsoft-office-keyboard-settings-options-dialog-box.md).
+### <a name="use-shortcut-keys-in-document-level-projects"></a>Usar teclas de atalho em projetos de nível de documento
+ Quando um Microsoft Office documento do Word ou uma pasta de trabalho do Microsoft Office Excel é aberta no Visual Studio, somente um aplicativo por vez recebe os comandos de tecla de atalho. Por padrão, o Visual Studio recebe todos os comandos de tecla de atalho, mas você pode fazer com que o Word ou o Excel os receba quando o documento tiver foco, selecionando **esquema de teclado dinâmico** na página **configurações do teclado** da caixa de diálogo **Opções** . Para obter mais informações, consulte [Microsoft Office o teclado do Word, Microsoft Office configurações de teclado, caixa de diálogo opções](../vsto/microsoft-office-word-keyboard-microsoft-office-keyboard-settings-options-dialog-box.md) e [Microsoft Office teclado do Excel, Microsoft Office configurações de teclado, caixa de diálogo opções](../vsto/microsoft-office-excel-keyboard-microsoft-office-keyboard-settings-options-dialog-box.md).
 
-### <a name="display-shortcut-keys-for-the-ribbon-in-document-level-projects"></a>Exibir as teclas de atalho para a faixa de opções no nível de documento
- Quando um documento do Word ou uma pasta de trabalho do Excel é aberta no Visual Studio, você não pode pressionar o **Alt** tecla para exibir as teclas de atalho para as guias e controles da faixa de opções. Para exibir as teclas de atalho quando o documento ou pasta de trabalho é aberta no designer, execute as seguintes etapas.
+### <a name="display-shortcut-keys-for-the-ribbon-in-document-level-projects"></a>Exibir teclas de atalho para a faixa de faixas em projetos de nível de documento
+ Quando um documento do Word ou uma pasta de trabalho do Excel é aberto no Visual Studio, não é possível pressionar a tecla **ALT** para exibir as teclas de atalho das guias e dos controles na faixa de palavras. Para exibir as teclas de atalho enquanto o documento ou pasta de trabalho está aberto no designer, execute as etapas a seguir.
 
-#### <a name="to-view-shortcut-keys-for-ribbon-tabs-and-controls-in-the-designer"></a>Para exibir as teclas de atalho para controles e guias da faixa de opções no designer
+#### <a name="to-view-shortcut-keys-for-ribbon-tabs-and-controls-in-the-designer"></a>Para exibir as teclas de atalho para guias de faixa de e controles no designer
 
-1. No Visual Studio, sobre o **ferramentas** menu, clique em **opções**.
+1. No Visual Studio, no menu **ferramentas** , clique em **Opções**.
 
-2. Expanda o **ferramentas do Office** nó e selecione **teclado do Microsoft Office Excel** ou **teclado do Microsoft Office Word**, conforme apropriado.
+2. Expanda o nó **Ferramentas do Office** e selecione **Microsoft Office teclado do Excel** ou **Microsoft Office teclado do Word**, conforme apropriado.
 
 3. Selecione **esquema de teclado dinâmico**.
 
-     Será exibida uma mensagem informando que você deve reiniciar o Visual Studio para que a alteração tenha efeito.
+     Uma mensagem é exibida afirmando que você deve reiniciar o Visual Studio para que a alteração entre em vigor.
 
 4. Clique em **OK**.
 
-5. Reinicie o Visual Studio e, em seguida, reabra o projeto.
+5. Reinicie o Visual Studio e reabra o projeto.
 
-6. Abra o designer do documento ou pasta de trabalho para o seu projeto.
+6. Abra o documento ou o designer de pasta de trabalho do seu projeto.
 
-7. Pressione **F6** para exibir as teclas de atalho para a faixa de opções.
+7. Pressione **F6** para exibir as teclas de atalho para a faixa de faixas.
 
-## <a name="accessibility-at-runtime"></a>Acessibilidade no tempo de execução
+## <a name="accessibility-at-run-time"></a>Acessibilidade em tempo de execução
 
 ### <a name="windows-forms-controls-on-office-documents"></a>Controles de Windows Forms em documentos do Office
- Controles dos Windows Forms expõem as propriedades de acessibilidade para fornecer informações sobre o controle para auxílios de acessibilidade, como leitores de tela. Quando os controles estão em um documento do Office em uma personalização no nível de documento, você pode tirar proveito dessas propriedades de acessibilidade. Para obter mais informações, consulte [fornecer informações de acessibilidade para controles em um formulário do Windows](/dotnet/framework/winforms/controls/providing-accessibility-information-for-controls-on-a-windows-form).
+ Os controles de Windows Forms expõem propriedades de acessibilidade para fornecer informações sobre o controle para auxílios de acessibilidade, como leitores de tela. Você pode aproveitar essas propriedades de acessibilidade quando os controles estiverem em um documento do Office em uma personalização no nível do documento. Para obter mais informações, consulte [fornecer informações de acessibilidade para controles em um Windows Form](/dotnet/framework/winforms/controls/providing-accessibility-information-for-controls-on-a-windows-form).
 
- No entanto, existem algumas limitações de acessibilidade em tempo de execução quando controles dos Windows Forms são hospedados em uma pasta de trabalho do Excel ou um documento do Word:
+ No entanto, há algumas limitações de acessibilidade em tempo de execução quando Windows Forms controles são hospedados em uma pasta de trabalho do Excel ou em um documento do Word:
 
-- Você não pode tabular de um controle para outro.
+- Não é possível tabular de um controle para outro.
 
-- Controles em um documento são desabilitados quando você alterar a configuração de zoom do documento para algo diferente de 100%.
+- Os controles em um documento são desabilitados quando você altera a configuração de zoom do documento para algo diferente de 100%.
 
-  Para obter informações sobre as limitações de controles do Windows Forms em documentos, consulte [limitações dos Windows Forms a controles em documentos do Office](../vsto/limitations-of-windows-forms-controls-on-office-documents.md).
+  Para obter informações sobre limitações de controles de Windows Forms em documentos, consulte [limitações de controles de Windows Forms em documentos do Office](../vsto/limitations-of-windows-forms-controls-on-office-documents.md).
 
 ### <a name="actions-panes-and-custom-task-panes"></a>Painéis de ações e painéis de tarefas personalizados
- Quando um painel de ações ou o painel de tarefas personalizado tem o foco, acessar controles da mesma forma que você acessaria os controles em um aplicativo do Windows Forms. Para mover o cursor entre o painel de ações e o documento, você pode pressionar **F6**.
+ Quando um painel ações ou um painel de tarefas personalizado tem foco, você acessa controles da mesma maneira que você acessa controles em um aplicativo Windows Forms. Para mover o cursor entre o painel Ações e o documento, você pode pressionar **F6**.
 
- Para obter mais informações sobre painéis de ações e painéis de tarefas personalizados, consulte [visão geral do painel de ações](../vsto/actions-pane-overview.md) e [painéis de tarefas personalizados](../vsto/custom-task-panes.md).
+ Para obter mais informações sobre painéis de ações e painéis de tarefas personalizados, consulte [visão geral do painel Ações](../vsto/actions-pane-overview.md) e [painéis de tarefas personalizados](../vsto/custom-task-panes.md).
 
 ### <a name="display-modes"></a>Modos de exibição
 
-Visual Studio tem as seguintes limitações relacionadas a modos de exibição:
+O Visual Studio tem as seguintes limitações relacionadas aos modos de exibição:
 
-- Controles em um documento do Word ou planilha do Excel são desabilitados quando você alterar a configuração de zoom do documento para algo diferente de 100%.
+- Os controles em um documento do Word ou planilha do Excel são desabilitados quando você altera a configuração de zoom do documento para algo diferente de 100%.
 
-- O **novo projeto** caixa de diálogo Exibir controles corretamente se um usuário altera as opções de acessibilidade do computador para **usar alto contraste**.
+- A caixa de diálogo **novo projeto** não exibirá os controles corretamente se um usuário alterar as opções de acessibilidade do computador para **usar alto contraste**.
 
-Você pode usar a Lente de aumento para superar essas limitações. A Lupa é um utilitário de exibição no Windows que cria uma janela separada que exibe uma parte ampliada da tela.
+Você pode usar a lupa para superar essas limitações. A lupa é um utilitário de exibição no Windows que cria uma janela separada que exibe uma parte ampliada da tela.
 
 ## <a name="see-also"></a>Consulte também
 
 - [Desenvolver soluções do Office](../vsto/developing-office-solutions.md)
 - [Controles em documentos do Office](../vsto/controls-on-office-documents.md)
-- [Acessibilidade para pessoas portadoras de deficiências](../ide/reference/accessibility-for-people-with-disabilities.md)
+- [Acessibilidade para pessoas com deficiências](../ide/reference/accessibility-features-of-visual-studio.md)
 - [Recursos de acessibilidade do Visual Studio](../ide/reference/accessibility-features-of-visual-studio.md)

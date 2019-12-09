@@ -1,22 +1,22 @@
 ---
-title: 'Como: Adicionar um manipulador do tipo "arrastar e soltar"'
+title: Como adicionar um manipulador de evento de arrastar e soltar
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fe8a05e193ffe621d28147389752ab56031cf499
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d2019f1333f6f9a5d6e1bffde16cfee2da32061d
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62993478"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985089"
 ---
-# <a name="how-to-add-a-drag-and-drop-handler"></a>Como: Adicionar um manipulador do tipo "arrastar e soltar"
+# <a name="how-to-add-a-drag-and-drop-handler"></a>Como adicionar um manipulador de evento de arrastar e soltar
 
-Você pode adicionar manipuladores para eventos de arrastar e soltar à DSL, para que os usuários poderão arrastar itens para o diagrama de outros diagramas ou de outras partes do Visual Studio. Também é possível adicionar manipuladores de eventos como cliques duplos. Juntos, os manipuladores de arrastar-e-soltar e clique duas vezes são conhecidos como *manipuladores de gesto*.
+Você pode adicionar manipuladores para eventos de arrastar e soltar à sua DSL, para que os usuários possam arrastar itens para o diagrama de outros diagramas ou de outras partes do Visual Studio. Também é possível adicionar manipuladores de eventos como cliques duplos. Juntos, os manipuladores do tipo "arrastar e soltar" e "clicar duas vezes" são conhecidos como *manipuladores de gestos*.
 
 Este tópico discute gestos de arrastar e soltar originados em outros diagramas. Para mover e copiar eventos dentro de um único diagrama, considere a alternativa de definir uma subclasse de `ElementOperations`. Para obter mais informações, consulte [Personalizando o comportamento de cópia](../modeling/customizing-copy-behavior.md). Também poderá ser possível personalizar a definição da DSL.
 
@@ -24,7 +24,7 @@ Este tópico discute gestos de arrastar e soltar originados em outros diagramas.
 
 Os métodos `OnDragDrop`, `OnDoubleClick`, `OnDragOver` e outros podem ser substituídos.
 
-Adicione um novo arquivo de código ao projeto DSL. Para um manipulador de gestos, geralmente é necessário ter ao menos as seguintes instruções `using`:
+Adicione um novo arquivo de código ao projeto DSL. Para um manipulador de gestos, geralmente você deve ter pelo menos as seguintes diretivas de `using`:
 
 ```csharp
 using Microsoft.VisualStudio.Modeling;
@@ -50,7 +50,7 @@ No novo arquivo, defina uma classe parcial da classe da forma ou do diagrama que
         }
     ```
 
-- <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDragDrop%2A> -Este método é chamado se o usuário libera o botão do mouse enquanto o ponteiro do mouse repousa sobre essa forma ou diagrama, se `OnDragOver(DiagramDragEventArgs e)` definido anteriormente `e.Effect` com um valor diferente de `None`.
+- <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDragDrop%2A>-esse método é chamado se o usuário liberar o botão do mouse enquanto o ponteiro do mouse se posiciona sobre esta forma ou diagrama, se `OnDragOver(DiagramDragEventArgs e)` definido anteriormente `e.Effect` com um valor diferente de `None`.
 
     ```csharp
     public override void OnDragDrop(DiagramDragEventArgs e)
@@ -66,13 +66,13 @@ No novo arquivo, defina uma classe parcial da classe da forma ou do diagrama que
     }
     ```
 
-- <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDoubleClick%2A> -Este método é chamado quando o usuário clica duas vezes na forma ou diagrama.
+- <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDoubleClick%2A>-esse método é chamado quando o usuário clica duas vezes na forma ou no diagrama.
 
-     Para obter mais informações, confira [Como: Interceptar um clique em uma forma ou um decorador](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md).
+     Para obter mais informações, consulte [como interceptar um clique em uma forma ou decorador](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md).
 
 Defina `IsAcceptableDropItem(e)` para determinar se o item arrastado é aceitável e ProcessDragDropItem(e) para atualizar o modelo quando o item for solto. Esses métodos devem primeiro extrair o item dos argumentos do evento. Para obter informações sobre como fazer isso, consulte [como obter uma referência para o item arrastado](#to-send-an-object-from-a-source-dsl).
 
-## <a name="define-gesture-handlers-by-using-mef"></a>Definir manipuladores de gestos usando MEF
+## <a name="define-gesture-handlers-by-using-mef"></a>Definir manipuladores de gestos usando o MEF
 
 Use esse método se desejar permitir a desenvolvedores terceiros definir seus próprios manipuladores à DSL. Usuários podem escolher instalar as extensões de terceiros após instalar a DSL.
 
@@ -80,7 +80,7 @@ MEF (Managed Extensibility Framework) permite definir componentes que podem ser 
 
 ### <a name="to-define-a-mef-gesture-handler"></a>Para definir um manipulador de gestos de MEF
 
-1. Adicionar ao seu **Dsl** e **DslPackage** projetos a **MefExtension** arquivos que são descritos na [estender a DSL usando MEF](../modeling/extend-your-dsl-by-using-mef.md).
+1. Adicione aos projetos **DSL** e **DslPackage** os arquivos **MEFEXTENSION** descritos em [estender sua DSL usando o MEF](../modeling/extend-your-dsl-by-using-mef.md).
 
 2. Agora é possível definir um manipulador de gestos como um componente MEF:
 
@@ -124,17 +124,17 @@ Quando o usuário arrasta um item para o diagrama ou de uma parte do diagrama pa
 
 Para saber os formatos nos quais as informações de origem do arrasto estão disponíveis, execute o código em modo de depuração, definindo um ponto de interrupção na entrada para `OnDragOver()` ou `CanDragDrop()`. Inspecione os valores do parâmetro `DiagramDragEventArgs`. As informações são fornecidas em dois formulários:
 
-- <xref:System.Windows.Forms.IDataObject>  `Data` -Esta propriedade contém versões serializadas dos objetos de origem, geralmente em mais de um formato. Suas funções mais úteis são:
+- <xref:System.Windows.Forms.IDataObject> `Data`-essa propriedade transporta versões serializadas dos objetos de origem, geralmente em mais de um formato. Suas funções mais úteis são:
 
-    - Diagrameventargs - lista os formatos nos quais é possível decodificar o objeto arrastado. Por exemplo, se o usuário arrastar um arquivo da área de trabalho, os formatos disponíveis incluem o nome de arquivo ("`FileNameW`").
+  - diagrameventargs. Data. GetDataFormats () – lista os formatos nos quais você pode decodificar o objeto arrastado. Por exemplo, se o usuário arrastar um arquivo da área de trabalho, os formatos disponíveis incluem o nome de arquivo ("`FileNameW`").
 
-    - `diagramEventArgs.Data.GetData(format)` -Decodifica o objeto arrastado no formato especificado. Converte o objeto para o tipo adequado. Por exemplo:
+  - `diagramEventArgs.Data.GetData(format)`-decodifica o objeto arrastado no formato especificado. Converte o objeto para o tipo adequado. Por exemplo:
 
-         `string fileName = diagramEventArgs.Data.GetData("FileNameW") as string;`
+    `string fileName = diagramEventArgs.Data.GetData("FileNameW") as string;`
 
-         Também é possível transmitir objetos como referências do Model Bus da origem em seu próprio formato personalizado. Para obter mais informações, consulte [como enviar referências do Model Bus em arrastar e soltar](#to-send-an-object-from-a-source-dsl).
+    Também é possível transmitir objetos como referências do Model Bus da origem em seu próprio formato personalizado. Para obter mais informações, consulte [como enviar referências de barramento de modelo em um arrastar e soltar](#to-send-an-object-from-a-source-dsl).
 
-- <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> `Prototype` -Use essa propriedade se desejar que os usuários arrastar itens de uma DSL ou um modelo UML. Um protótipo de grupo de elementos contém um ou mais objetos, links e os valores de suas propriedades. Também é usado em operações colar e ao adicionar um elemento da caixa de ferramentas. Em um protótipo, objetos e seus tipos são identificados por Guid. Por exemplo, esse código permite ao usuário arrastar elementos de classe de um diagrama UML ou do Gerenciador de Modelos UML:
+- <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> `Prototype`-Use essa propriedade se desejar que os usuários arrastem itens de um modelo de DSL ou UML. Um protótipo de grupo de elementos contém um ou mais objetos, links e os valores de suas propriedades. Também é usado em operações colar e ao adicionar um elemento da caixa de ferramentas. Em um protótipo, objetos e seus tipos são identificados por Guid. Por exemplo, esse código permite ao usuário arrastar elementos de classe de um diagrama UML ou do Gerenciador de Modelos UML:
 
     ```csharp
     private bool IsAcceptableDropItem(DiagramDragEventArgs e)
@@ -146,7 +146,7 @@ Para saber os formatos nos quais as informações de origem do arrasto estão di
     }
     ```
 
-     Para aceitar formas UML, determine as Guids das classes de forma UML por experimento. Lembre-se de que geralmente há mais de um tipo de elemento em qualquer diagrama. Lembre-se também de que um objeto arrastado de uma DSL ou diagrama UML é a forma, não o elemento do modelo.
+     Para aceitar formas UML, determine os GUIDs das classes Shape UML por experimento. Lembre-se de que geralmente há mais de um tipo de elemento em qualquer diagrama. Lembre-se também de que um objeto arrastado de uma DSL ou diagrama UML é a forma, não o elemento do modelo.
 
 `DiagramDragEventArgs` também têm propriedades que indicam a posição atual do ponteiro do mouse e se o usuário está pressionando as teclas CTRL, ALT ou SHIFT.
 
@@ -158,13 +158,11 @@ As propriedades `Data` e `Prototype` dos argumentos do evento contêm apenas uma
 
 ### <a name="to-prepare-a-dsl-project-for-model-bus"></a>Preparar um projeto DSL para Model Bus
 
-Verifique a DSL de origem acessível pelo Visual Studio Model Bus:
+Torne a DSL de origem acessível pelo barramento de modelo do Visual Studio:
 
-1. Faça o download e instale a extensão Visual Studio Model Bus, se ainda não estiver instalada. Para obter mais informações, consulte [SDK de visualização e modelagem](http://go.microsoft.com/fwlink/?LinkID=185579).
+1. Abra o arquivo de definição da DSL da DSL de origem no Designer de DSL. Clique com o botão direito do mouse na superfície de design e clique em **habilitar ModelBus**. Na caixa de diálogo, escolha uma ou as duas opções.  Clique em **OK**. Um novo projeto "ModelBus" é adicionado à solução de DSL.
 
-2. Abra o arquivo de definição da DSL da DSL de origem no Designer de DSL. Clique duas vezes na superfície de design e, em seguida, clique em **habilitar Modelbus**. Na caixa de diálogo, escolha uma ou as duas opções.  Clique em **OK**. Um novo projeto "ModelBus" é adicionado à solução de DSL.
-
-3. Clique em **transformar todos os modelos** e recompile a solução.
+2. Clique em **transformar todos os modelos** e recompilar a solução.
 
 ### <a name="to-send-an-object-from-a-source-dsl"></a>Enviar um objeto de uma DSL de origem
 
@@ -320,11 +318,11 @@ Verifique a DSL de origem acessível pelo Visual Studio Model Bus:
     }  }  }
     ```
 
-## <a name="using-mouse-actions-dragging-compartment-items"></a>Usando ações do Mouse: Arrastando itens de compartimento
+## <a name="using-mouse-actions-dragging-compartment-items"></a>Usando ações do mouse: Arrastando itens de compartimento
 
-Você pode escrever um manipulador que intercepta ações do mouse nos campos de uma forma. O exemplo a seguir permite ao usuário reordenar os itens em um compartimento arrastando com o mouse.
+Você pode escrever um manipulador que intercepta ações do mouse nos campos de uma forma. O exemplo a seguir permite que o usuário reordene os itens em um compartimento arrastando com o mouse.
 
-Para compilar este exemplo, crie uma solução usando o **diagramas de classe** modelo de solução. Adicione um arquivo de código e adicione o código a seguir. Ajuste o namespace para o mesmo que o seu próprio.
+Para criar este exemplo, crie uma solução usando o modelo de solução **diagramas de classe** . Adicione um arquivo de código e adicione o código a seguir. Ajuste o namespace para o mesmo que o seu próprio.
 
 ```csharp
 using Microsoft.VisualStudio.Modeling;
@@ -574,6 +572,6 @@ namespace Company.CompartmentDrag  // EDIT.
 ## <a name="see-also"></a>Consulte também
 
 - [Personalizando o comportamento de cópia](../modeling/customizing-copy-behavior.md)
-- [Implantando soluções de linguagem específica de domínio](../modeling/deploying-domain-specific-language-solutions.md)
+- [Implantando soluções de linguagem específica de domínio](msi-and-vsix-deployment-of-a-dsl.md)
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]

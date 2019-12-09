@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDocumentContext2::Compare
 ms.assetid: 2327b1ba-52d0-42fb-a01e-63cb4b332d2f
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1416092661ee26bff773ea1a439c241a0f5c5fc6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 0f21b338511890879d805ce49377554719070604
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62921502"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66344388"
 ---
 # <a name="idebugdocumentcontext2compare"></a>IDebugDocumentContext2::Compare
 Compara este contexto de documento para uma determinada matriz de contextos de documento.
@@ -42,22 +45,18 @@ int Compare( 
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `compare`
+## <a name="parameters"></a>Parâmetros
+`compare`\
+[in] Um valor a partir de [DOCCONTEXT_COMPARE](../../../extensibility/debugger/reference/doccontext-compare.md) enumeração que especifica o tipo de comparação.
 
- [in] Um valor a partir de [DOCCONTEXT_COMPARE](../../../extensibility/debugger/reference/doccontext-compare.md) enumeração que especifica o tipo de comparação.
+`rgpDocContextSet`\
+[in] Uma matriz de [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) objetos que representam os contextos de documento de comparação.
 
- `rgpDocContextSet`
+`dwDocContextSetLen`\
+[in] O comprimento da matriz de contextos de documento a ser comparado.
 
- [in] Uma matriz de [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) objetos que representam os contextos de documento de comparação.
-
- `dwDocContextSetLen`
-
- [in] O comprimento da matriz de contextos de documento a ser comparado.
-
- `pdwDocContext`
-
- [out] Retorna o índice para o `rgpDocContextSet` matriz do primeiro contexto de documento que satisfaz a comparação.
+`pdwDocContext`\
+[out] Retorna o índice para o `rgpDocContextSet` matriz do primeiro contexto de documento que satisfaz a comparação.
 
 ## <a name="return-value"></a>Valor de retorno
  Retorna `S_OK` se uma correspondência foi encontrada. Retorna `S_FALSE` se nenhuma correspondência foi encontrada. Caso contrário, retornará um código de erro.

@@ -1,5 +1,5 @@
 ---
-title: 'Como: Adicionar comandos aos menus de atalho'
+title: 'Como: adicionar comandos a menus de atalho'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,42 +13,42 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3b20b10a37908e2c9744aeac63bb3eda091da478
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 82c26022f0c88f1ce125c64f5ec3b2df8d20346e
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62826399"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72986023"
 ---
-# <a name="how-to-add-commands-to-shortcut-menus"></a>Como: Adicionar comandos aos menus de atalho
-  Este tópico demonstra como adicionar comandos ao menu de atalho em um aplicativo do Office usando um suplemento do VSTO.
+# <a name="how-to-add-commands-to-shortcut-menus"></a>Como: adicionar comandos a menus de atalho
+  Este tópico demonstra como adicionar comandos a um menu de atalho em um aplicativo do Office usando um suplemento do VSTO.
 
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
 ### <a name="to-add-commands-to-shortcut-menus-in-office"></a>Para adicionar comandos a menus de atalho no Office
 
-1. Adicionar um **XML da faixa de opções** item a um nível de documento ou projeto do suplemento do VSTO. Para obter mais informações, confira [Como: Introdução à personalização da faixa de opções](../vsto/how-to-get-started-customizing-the-ribbon.md). No
+1. Adicione um item **XML da faixa** de bits a um projeto de suplemento do VSTO ou no nível do documento. Para obter mais informações, consulte [como: começar a personalizar a faixa de](../vsto/how-to-get-started-customizing-the-ribbon.md)visualização. No
 
-2. **Gerenciador de soluções**, selecione **ThisAddin.cs** ou **ThisAddIn. vb**.
+2. **Gerenciador de soluções**, selecione **ThisAddIn.cs** ou **ThisAddIn. vb**.
 
 3. Na barra de menus, escolha **Exibir** > **Código**.
 
-     O **ThisAddin** arquivo de classe é aberto no Editor de códigos.
+     O arquivo de classe **ThisAddIn** é aberto no editor de código.
 
-4. Adicione o seguinte código para o **ThisAddin** classe. Esse código substitui o `CreateRibbonExtensibilityObject` método e retorna o XML da faixa de opções de classe para o aplicativo do Office.
+4. Adicione o código a seguir à classe **ThisAddIn** . Esse código substitui o método `CreateRibbonExtensibilityObject` e retorna a classe XML da faixa de forma para o aplicativo do Office.
 
      [!code-csharp[Trin_WordAddIn_Menus#1](../vsto/codesnippet/CSharp/trin_wordaddin_menus.cs/thisaddin.cs#1)]
      [!code-vb[Trin_WordAddIn_Menus#1](../vsto/codesnippet/VisualBasic/trin_wordaddin_menus.vb/thisaddin.vb#1)]
 
-5. Na **Gerenciador de soluções**, selecione o arquivo XML de faixa de opções. Por padrão, o arquivo XML de faixa de opções é denominado *Ribbon1.xml*.
+5. Em **Gerenciador de soluções**, selecione o arquivo XML da faixa de opções. Por padrão, o arquivo XML da faixa de faixas é denominado *Ribbon1. xml*.
 
 6. Na barra de menus, escolha **Exibir** > **Código**.
 
-     O arquivo xml de faixa de opções é aberto no Editor de códigos.
+     O arquivo XML da faixa de faixas é aberto no editor de códigos.
 
-7. No Editor de códigos, adicione o XML que descreve o menu de atalho e o controle que você deseja adicionar ao menu de atalho.
+7. No editor de código, adicione XML que descreve o menu de atalho e o controle que você deseja adicionar ao menu de atalho.
 
-     O exemplo a seguir adiciona um botão, um menu e um controle da Galeria para o menu de atalho para um documento do word. A ID do controle desse menu de atalho é ContextMenuText. Para obter uma lista completa de controle de atalho do Office 2010 IDs, consulte [arquivos de Ajuda do Office 2010: Identificadores de controle de interface de usuário fluent do Office](http://go.microsoft.com/fwlink/?LinkID=181052).
+     O exemplo a seguir adiciona um botão, um menu e um controle galeria ao menu de atalho para um documento do Word. A ID de controle desse menu de atalho é ContextMenuText. Para obter uma lista completa de IDs de controle de atalho do Office 2010, consulte [arquivos de ajuda do office 2010: identificadores de controle de interface do usuário Fluent do Office](https://www.microsoft.com/download/details.aspx?id=6627).
 
     ```xml
     <?xml version="1.0" encoding="UTF-8"?>
@@ -70,17 +70,17 @@ ms.locfileid: "62826399"
     </customUI>
     ```
 
-8. Na **Gerenciador de soluções**, escolha **MyRibbon.cs** ou **Myribbon**.
+8. Em **Gerenciador de soluções**, escolha **MyRibbon.cs** ou **MyRibbon. vb**.
 
-9. Adicione um método de retorno de chamada para o `Ribbon1` classe para cada controle que você deseja manipular.
+9. Adicione um método de retorno de chamada à classe `Ribbon1` para cada controle que você deseja manipular.
 
-     Os seguintes identificadores de método de retorno de chamada a **My Button** botão. Este código adiciona uma cadeia de caracteres para o documento ativo no local atual do cursor.
+     O método de retorno de chamada a seguir manipula o botão de **botão My** . Esse código adiciona uma cadeia de caracteres ao documento ativo no local atual do cursor.
 
      [!code-vb[Trin_WordAddIn_Menus#2](../vsto/codesnippet/VisualBasic/trin_wordaddin_menus.vb/ribbon1.vb#2)]
      [!code-csharp[Trin_WordAddIn_Menus#2](../vsto/codesnippet/CSharp/trin_wordaddin_menus.cs/ribbon1.cs#2)]
 
 ## <a name="see-also"></a>Consulte também
 - [Personalização da interface do usuário do Office](../vsto/office-ui-customization.md)
-- [Passo a passo: Criar menus de atalho para indicadores](../vsto/walkthrough-creating-shortcut-menus-for-bookmarks.md)
+- [Walkthrough: criar menus de atalho para indicadores](../vsto/walkthrough-creating-shortcut-menus-for-bookmarks.md)
 - [Parâmetros opcionais em soluções do Office](../vsto/optional-parameters-in-office-solutions.md)
-- [Personalizar menus de contexto no Office 2010](http://go.microsoft.com/fwlink/?LinkId=182186)
+- [Personalizar menus de contexto no Office 2010](/previous-versions/office/developer/office-2010/ee691832(v=office.14))

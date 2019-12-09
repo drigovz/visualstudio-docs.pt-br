@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c29f2f8b84c68e9f4f0f7425ed5566b9180b1ac3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b99addc04a7b9dc2f2b77d1943605f8c24af6aa7
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62828690"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743281"
 ---
-# <a name="idialinenumbergetaddressoffset"></a>IDiaLineNumber::get_addressOffset
-Recupera a parte do deslocamento do endereço de memória em que um bloco é iniciada.
+# <a name="idialinenumberget_addressoffset"></a>IDiaLineNumber::get_addressOffset
+Recupera a parte de deslocamento do endereço de memória onde um bloco começa.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -33,10 +33,10 @@ HRESULT get_addressOffset ( 
 #### <a name="parameters"></a>Parâmetros
  `pRetVal`
 
-[out] Retorna a parte do deslocamento do endereço de memória em que um bloco é iniciada.
+fora Retorna a parte de deslocamento do endereço de memória em que um bloco começa.
 
-## <a name="return-value"></a>Valor de retorno
- Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não há suporte para essa propriedade. Caso contrário, retornará um código de erro.
+## <a name="return-value"></a>Valor retornado
+ Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não houver suporte para essa propriedade. Caso contrário, retornará um código de erro.
 
 ## <a name="example"></a>Exemplo
 

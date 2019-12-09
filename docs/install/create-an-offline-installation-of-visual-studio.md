@@ -1,7 +1,7 @@
 ---
 title: Criar uma instalação offline
 description: Saiba como instalar o Visual Studio offline quando você tiver uma conexão com a Internet não confiável ou largura de banda baixa.
-ms.date: 04/16/2019
+ms.date: 10/22/2019
 ms.custom: seodec18
 ms.topic: conceptual
 f1_keywords:
@@ -16,28 +16,28 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: f6e7c09eee52bd2ac48ccf5c51da59066ca72288
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: c8b59ce38657bab157b966a25e0cd27109510215
+ms.sourcegitcommit: 58000baf528da220fdf7a999d8c407a4e86c1278
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974068"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72789995"
 ---
 # <a name="create-an-offline-installation-of-visual-studio"></a>Criar uma instalação offline do Visual Studio
 
 ::: moniker range="vs-2017"
 
-Projetamos o Visual Studio 2017 para funcionar bem em uma variedade de configurações de rede e do computador. Embora seja recomendável que você experimente o [instalador Web do Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download), que é um arquivo pequeno e permite que você permaneça atualizado com todas as correções e recursos mais recentes, entendemos que talvez você não possa fazer isso.
+Projetamos o Visual Studio 2017 para funcionar bem em uma variedade de configurações de rede e do computador. Embora seja recomendável que você experimente o [instalador Web do Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads), que é um arquivo pequeno e permite que você permaneça atualizado com todas as correções e recursos mais recentes, entendemos que talvez você não possa fazer isso.
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-Projetamos o Visual Studio 2019 para funcionar bem em uma variedade de configurações de rede e do computador. Embora seja recomendável que você experimente o [instalador Web do Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019), que é um arquivo pequeno e permite que você permaneça atualizado com todas as correções e recursos mais recentes, entendemos que talvez você não possa fazer isso.
+Projetamos o Visual Studio 2019 para funcionar bem em uma variedade de configurações de rede e do computador. Embora seja recomendável que você experimente o [instalador Web do Visual Studio](https://visualstudio.microsoft.com/downloads), que é um arquivo pequeno e permite que você permaneça atualizado com todas as correções e recursos mais recentes, entendemos que talvez você não possa fazer isso.
 
 ::: moniker-end
 
-Por exemplo, você pode ter uma conexão com a Internet não confiável ou que tem largura de banda baixa. Nesse caso, você tem algumas opções: Você pode usar a nova funcionalidade "Baixar tudo, depois instalar" para baixar os arquivos antes de instalar ou usar a linha de comando para criar um cache local dos arquivos.
+Por exemplo, você pode ter uma conexão com a Internet não confiável ou que tem largura de banda baixa. Se esse for o caso, você terá algumas opções: você poderá usar o recurso "Baixar tudo, depois instalar" para baixar os arquivos antes de instalar, ou você poderá usar a linha de comando para criar um cache local dos arquivos.
 
 > [!NOTE]
 > Se você for um administrador de empresas que deseja executar uma implantação do Visual Studio em uma rede de estações de trabalho cliente protegidas da Internet por firewall, confira nossas páginas [Criar uma instalação de rede do Visual Studio](../install/create-a-network-installation-of-visual-studio.md) e [Instalar os certificados necessários para a instalação offline do Visual Studio](../install/install-certificates-for-visual-studio-offline.md).
@@ -46,7 +46,7 @@ Por exemplo, você pode ter uma conexão com a Internet não confiável ou que t
 
 ::: moniker range="vs-2017"
 
-[**Novidades na versão 15.8**](/visualstudio/releasenotes/vs2017-relnotes-v15.8#install): Depois de baixar o instalador da Web, selecione a nova opção **Baixar tudo, depois instalar** do Instalador do Visual Studio. Em seguida, continue com a instalação.
+[**Novidade na versão 15,8**](/visualstudio/releasenotes/vs2017-relnotes-v15.8#install): depois de baixar o instalador da Web, selecione a opção **baixar tudo e instalar** no instalador do Visual Studio. Em seguida, continue com a instalação.
 
    ![A opção "Baixar tudo, depois instalar"](media/download-all-then-install.png)
 
@@ -54,7 +54,7 @@ Por exemplo, você pode ter uma conexão com a Internet não confiável ou que t
 
 ::: moniker range="vs-2019"
 
-Depois de baixar o instalador da Web, selecione a nova opção **Baixar tudo, depois instalar** do Instalador do Visual Studio. Em seguida, continue com a instalação.
+Depois de baixar o instalador da Web, selecione a opção **baixar tudo e instalar** no instalador do Visual Studio. Em seguida, continue com a instalação.
 
    ![A opção "Baixar tudo, depois instalar"](media/vs-2019/download-all-then-install-from-installer.png)
 
@@ -75,27 +75,36 @@ Veja como.
 
 É preciso ter uma conexão com a Internet para concluir esta etapa.
 
-Comece baixando o bootstrapper do Visual Studio para sua edição do Visual Studio escolhida. O arquivo de instalação, ou bootstrapper, corresponderá ou será semelhante a um dos listados a seguir.
-
 ::: moniker range="vs-2017"
 
-| Edição                    | Arquivo                                                                    |
-|----------------------------|-------------------------------------------------------------------------|
-| Comunidade Visual Studio    | [vs_community.exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=community&rel=15&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2017)       |
-| Visual Studio Professional | [vs_professional.exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=professional&rel=15&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2017) |
-| Visual Studio Enterprise   | [vs_enterprise.exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=enterprise&rel=15&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2017)     |
+Para obter um bootstrapper para o Visual Studio 2017, consulte a página de download de [versões anteriores do Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/) para obter detalhes sobre como fazer isso.
+
+O executável da instalação &mdash;or ser mais específico, o arquivo bootstrapper &mdash;should corresponder ou ser semelhante a um dos seguintes.
+
+| Edição | Filename |
+|-------------|-----------------------|
+|Comunidade Visual Studio | vs_community.exe |
+|Visual Studio Professional | vs_professional.exe |
+|Visual Studio Enterprise | vs_enterprise.exe |
+|Ferramentas de Build do Visual Studio   | vs_buildtools. exe |
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
+
+Comece baixando o bootstrapper do Visual Studio para sua edição do Visual Studio escolhida. O arquivo de instalação, ou bootstrapper, corresponderá ou será semelhante a um dos listados a seguir.
 
 | Edição                    | Arquivo                                                                    |
 |----------------------------|-------------------------------------------------------------------------|
 | Comunidade Visual Studio    | [vs_community.exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=community&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2019)       |
 | Visual Studio Professional | [vs_professional.exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=professional&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2019) |
 | Visual Studio Enterprise   | [vs_enterprise.exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=enterprise&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2019)     |
+| Ferramentas de Build do Visual Studio   | [vs_buildtools. exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=buildtools&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2019)     |
 
 ::: moniker-end
+
+>[!TIP]
+>Se você tiver baixado anteriormente um arquivo bootstrapper e quiser verificar sua versão, veja como fazer isso. No Windows, abra o explorador de arquivos, clique com o botão direito do mouse no arquivo bootstrapper, escolha **Propriedades**, escolha a guia **detalhes** e, em seguida, exiba o número de **versão do produto** . Para corresponder esse número a uma versão do Visual Studio, consulte a página [números de compilação e datas de lançamento do Visual Studio](visual-studio-build-numbers-and-release-dates.md) .
 
 ### <a name="step-2---create-a-local-install-cache"></a>Etapa 2 – Criar um cache local de instalação
 
@@ -133,8 +142,19 @@ Abra um prompt de comando e use um dos comandos dos exemplos a seguir. Os exempl
     vs_community.exe --layout c:\vslayout --lang en-US
     ```
 
-  > [!NOTE]
-  > Um layout completo do Visual Studio exige no mínimo 35 GB de espaço em disco. Confira [Usar parâmetros de linha de comando para instalar o Visual Studio](use-command-line-parameters-to-install-visual-studio.md) para saber mais sobre como criar um layout apenas com os componentes que você deseja instalar.
+::: moniker range="vs-2017"
+
+   > [!NOTE]
+   > Um layout completo do Visual Studio exige no mínimo 35 GB de espaço em disco. Para obter mais informações, confira [Requisitos do sistema](/visualstudio/productinfo/vs2017-system-requirements-vs/). Para saber mais sobre como criar um layout apenas com os componentes que você deseja instalar, confira [Usar parâmetros de linha de comando para instalar o Visual Studio](use-command-line-parameters-to-install-visual-studio.md).
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+   > [!NOTE]
+   > Um layout completo do Visual Studio exige no mínimo 35 GB de espaço em disco. Para obter mais informações, confira [Requisitos do sistema](/visualstudio/releases/2019/system-requirements/). Para saber mais sobre como criar um layout apenas com os componentes que você deseja instalar, confira [Usar parâmetros de linha de comando para instalar o Visual Studio](use-command-line-parameters-to-install-visual-studio.md).
+
+::: moniker-end
 
 Se você quiser instalar um idioma diferente do inglês, altere `en-US` para uma localidade da [lista de localidades de idioma](#list-of-language-locales). Em seguida, use a [lista de componentes e cargas de trabalho disponíveis](workload-and-component-ids.md) para personalizar ainda mais o cache de instalação.
 
@@ -142,6 +162,12 @@ Se você quiser instalar um idioma diferente do inglês, altere `en-US` para uma
 
 > [!TIP]
 > Ao executar de um cache local de instalação, usaremos as versões locais de cada um desses arquivos. Porém, se durante a instalação você selecionar componentes que não estão no cache, tentaremos baixá-los da Internet.
+
+::: moniker range="vs-2019"
+> [!IMPORTANT]
+> Para instalações offline, se você receber uma mensagem de erro informando "um produto correspondente aos seguintes parâmetros não pode ser encontrado", verifique se você está usando o comutador `--noweb` com a versão 16.3.5 ou posterior.
+>
+::: moniker-end
 
 Para garantir que você instale somente os arquivos que baixou, use as mesmas opções de linha de comando que usou para criar o cache de layout. Por exemplo, se você tiver criado um cache de layout com o seguinte comando:
 
@@ -154,6 +180,8 @@ Depois use este comando para executar a instalação:
 ```cmd
 c:\vslayout\vs_community.exe --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Microsoft.VisualStudio.Workload.NetWeb --add Component.GitHub.VisualStudio --includeOptional
 ```
+
+Para obter mais exemplos de como usar [parâmetros de linha de comando](use-command-line-parameters-to-install-visual-studio.md), consulte a página de [instalação exemplos de parâmetro de linha de comando para o Visual Studio](command-line-parameter-examples.md) . 
 
 > [!NOTE]
 > Caso ocorra um erro indicando que a assinatura é inválida, será necessário instalar certificados atualizados. Abra a pasta Certificados no cache offline. Clique duas vezes em cada um dos arquivos de certificado e, em seguida, clique no assistente do Gerenciador de Certificados. Se for solicitado que você forneça uma senha, deixe-a em branco.
@@ -182,6 +210,7 @@ c:\vslayout\vs_community.exe --add Microsoft.VisualStudio.Workload.ManagedDeskto
 ## <a name="see-also"></a>Consulte também
 
 - [Criar uma instalação de rede do Visual Studio](../install/create-a-network-installation-of-visual-studio.md)
+- [Atualizar uma instalação em rede do Visual Studio](update-a-network-installation-of-visual-studio.md)
 - [Instalar os certificados necessários para instalação offline do Visual Studio](../install/install-certificates-for-visual-studio-offline.md)
 - [Usar parâmetros de linha de comando para instalar o Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
 - [Carga de trabalho do Visual Studio e IDs do componente](workload-and-component-ids.md)

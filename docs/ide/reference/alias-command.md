@@ -11,17 +11,17 @@ helpviewer_keywords:
 - command aliases
 - alias command
 ms.assetid: bdf857df-b5d5-450f-8c10-a6fd4dccc130
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0072bbd770a6d4fa675010048f2d067eb0961d62
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 8fdcc816510642c7800b6fbeacfa3fcdeff5e0b3
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62791838"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748790"
 ---
 # <a name="alias-command"></a>Comando Alias
 Cria um novo alias para um comando completo, comando e argumentos completos ou outro alias.
@@ -36,36 +36,40 @@ Tools.Alias [/delete] [/reset] [aliasname] [aliasstring]
 ```
 
 ## <a name="arguments"></a>Arguments
- `aliasname` Opcional. O nome do novo alias. Se nenhum valor for fornecido para `aliasname`, aparecerá uma lista de aliases atuais e suas definições.
+`aliasname`\
+Opcional. O nome do novo alias. Se nenhum valor for fornecido para `aliasname`, aparecerá uma lista de aliases atuais e suas definições.
 
- `aliasstring` Opcional. O nome do comando completo ou alias existente e qualquer parâmetro que você quiser criar como alias. Se nenhum valor for fornecido para `aliasstring`, o nome do alias e a cadeia de caracteres de alias do alias especificado serão exibidos.
+`aliasstring`\
+Opcional. O nome do comando completo ou alias existente e qualquer parâmetro que você quiser criar como alias. Se nenhum valor for fornecido para `aliasstring`, o nome do alias e a cadeia de caracteres de alias do alias especificado serão exibidos.
 
 ## <a name="switches"></a>Opções
- /delete, /del ou /d Opcional. Exclui o alias especificado, removendo-o do preenchimento automático.
+/delete, /del ou /d\
+Opcional. Exclui o alias especificado, removendo-o do preenchimento automático.
 
- /reset Opcional. Redefine a lista de aliases predefinidos para suas configurações originais. Ou seja, restaura todos os aliases predefinidos e remove todos os aliases definidos pelo usuário.
+/reset\
+Opcional. Redefine a lista de aliases predefinidos para suas configurações originais. Ou seja, restaura todos os aliases predefinidos e remove todos os aliases definidos pelo usuário.
 
 ## <a name="remarks"></a>Comentários
- Como aliases representam comandos, eles devem estar localizados no início da linha de comando.
+Como aliases representam comandos, eles devem estar localizados no início da linha de comando.
 
- Ao emitir esse comando, você deve incluir as opções imediatamente após o comando, e não após os aliases. Caso contrário, a própria opção será incluída como parte da cadeia de caracteres de alias.
+Ao emitir esse comando, você deve incluir as opções imediatamente após o comando, e não após os aliases. Caso contrário, a própria opção será incluída como parte da cadeia de caracteres de alias.
 
- A opção `/reset` solicita uma confirmação antes que os aliases sejam restaurados. Não há nenhuma forma abreviada de `/reset`.
+A opção `/reset` solicita uma confirmação antes que os aliases sejam restaurados. Não há nenhuma forma abreviada de `/reset`.
 
 ## <a name="examples"></a>Exemplos
- Este exemplo cria um novo alias, `upper`, para o comando completo Edit.MakeUpperCase.
+Este exemplo cria um novo alias, `upper`, para o comando completo Edit.MakeUpperCase.
 
 ```cmd
 >Tools.Alias upper Edit.MakeUpperCase
 ```
 
- Este exemplo exclui o alias `upper`.
+Este exemplo exclui o alias `upper`.
 
 ```cmd
 >Tools.alias /delete upper
 ```
 
- Este exemplo exibe uma lista de todos os aliases e definições atuais.
+Este exemplo exibe uma lista de todos os aliases e definições atuais.
 
 ```cmd
 >Tools.Alias

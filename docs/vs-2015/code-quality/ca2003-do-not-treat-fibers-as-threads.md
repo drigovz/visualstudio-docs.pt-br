@@ -1,5 +1,5 @@
 ---
-title: 'CA2003: Não trate fibras como threads | Microsoft Docs'
+title: 'CA2003: não tratar fibras como threads | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,34 +12,34 @@ helpviewer_keywords:
 - DoNotTreatFibersAsThreads
 ms.assetid: 15398fb1-f384-4bcc-ad93-00e1c0fa9ddf
 caps.latest.revision: 18
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 0a1683c8cb9b9c6dc856f40ddbc7864d773f2101
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 943b52f9703e60f14756bde97ce6f27c0c6f5296
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58927312"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72672511"
 ---
-# <a name="ca2003-do-not-treat-fibers-as-threads"></a>CA2003: Não tratar fibras como threads
+# <a name="ca2003-do-not-treat-fibers-as-threads"></a>CA2003: não tratar fibras como threads
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |NomeDoTipo|DoNotTreatFibersAsThreads|
 |CheckId|CA2003|
-|Categoria|Microsoft.Reliability|
-|Alteração Significativa|Não são significativas|
+|Categoria|Microsoft. confiabilidade|
+|Alteração Significativa|Sem interrupção|
 
 ## <a name="cause"></a>Causa
- Um thread gerenciado está sendo tratado como um thread do Win32.
+ Um thread gerenciado está sendo tratado como um Thread Win32.
 
 ## <a name="rule-description"></a>Descrição da Regra
- Não pressuponha que um thread gerenciado é um thread do Win32. É uma fibra. O common language runtime (CLR) será executado threads gerenciados como fibras no contexto de threads reais que são de propriedade de SQL. Esses threads podem ser compartilhados entre AppDomains e até mesmo bancos de dados no processo do SQL Server. Usando gerenciado funcionará armazenamento local de thread, mas não pode usar o armazenamento local de thread não gerenciado ou supor que seu código será executado novamente no thread atual do sistema operacional. Não altere as configurações como a localidade do thread. Não chame CreateCriticalSection ou CreateMutex via P/Invoke porque eles requerem que o thread que entra em um bloqueio também deve sair do bloqueio. Como esse não será o caso ao usar fibras, mutexes e seções críticas do Win32 será inútil em SQL. Com segurança, você pode usar a maioria do estado em um objeto System.Thread gerenciado. Isso inclui o armazenamento local de thread gerenciado e a cultura de interface do usuário do usuário atual do thread. No entanto, para a programação de motivos de modelo, você não poderá alterar a cultura atual de um thread quando você usa SQL; Isso será imposto por meio de uma nova permissão.
+ Não presuma que um thread gerenciado seja um Thread Win32. É uma fibra. O Common Language Runtime (CLR) executará threads gerenciados como fibras no contexto de threads reais de Propriedade do SQL. Esses threads podem ser compartilhados entre AppDomains e até mesmo bancos de dados no processo de SQL Server. O uso do armazenamento local de threads gerenciados funcionará, mas você não poderá usar o armazenamento local de thread não gerenciado ou supor que seu código será executado no thread do sistema operacional atual novamente. Não altere as configurações, como a localidade do thread. Não chame CreateCriticalSection ou CreateMutex via P/Invoke porque eles exigem que o thread que entra em um bloqueio também deva sair do bloqueio. Como esse não será o caso quando você usa fibras, as seções críticas e exclusões do Win32 serão inúteis no SQL. Você pode usar com segurança a maior parte do estado em um objeto System. thread gerenciado. Isso inclui o armazenamento local de thread gerenciado e a cultura da interface do usuário (IU) atual do thread. No entanto, para fins de modelo de programação, você não poderá alterar a cultura atual de um thread ao usar o SQL; Isso será imposto por meio de uma nova permissão.
 
 ## <a name="how-to-fix-violations"></a>Como Corrigir Violações
- Examine o uso de threads e altere seu código adequadamente.
+ Examine seu uso de threads e altere seu código de acordo.
 
 ## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos
  Você não deve suprimir essa regra.

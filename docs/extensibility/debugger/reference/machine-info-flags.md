@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - MACHINE_INFO_FLAGS enumeration
 ms.assetid: 1482095d-9a2e-4ef1-9e14-362c0b85194e
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 92ffda1188ced40e5a174a0e033263dd2fa2e5a8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 77d2c9af733f192526970d08d0ae3d24d2a5bf3f
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62913956"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66339230"
 ---
 # <a name="machineinfoflags"></a>MACHINE_INFO_FLAGS
 Usado para descrever uma máquina.
@@ -37,8 +40,9 @@ public enum enum_MACHINE_INFO_FLAGS { 
 };
 ```
 
-## <a name="members"></a>Membros
- MCIFLAG_TERMINAL_SERVICES_AVAILABLE indica que os serviços de terminal estão disponíveis.
+## <a name="fields"></a>Campos
+ `MCIFLAG_TERMINAL_SERVICES_AVAILABLE`\
+ Indica que os serviços de terminal estão disponíveis.
 
 ## <a name="remarks"></a>Comentários
  Usado como o `Flags` membro a [MACHINE_INFO](../../../extensibility/debugger/reference/machine-info.md) estrutura.

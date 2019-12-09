@@ -1,5 +1,5 @@
 ---
-title: 'CA1501: Evitar herança excessiva | Microsoft Docs'
+title: 'CA1501: evitar herança excessiva | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,37 +12,37 @@ helpviewer_keywords:
 - CA1501
 ms.assetid: 9e934746-1a4d-492a-91e4-085201abafa4
 caps.latest.revision: 19
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 420e9492fc5ab431710d62e1d8ea3c1bd8a31ce9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a2106042b552efbe824d7517abcc86e322b57aa9
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58925486"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72607865"
 ---
-# <a name="ca1501-avoid-excessive-inheritance"></a>CA1501: Evitar herança excessiva
+# <a name="ca1501-avoid-excessive-inheritance"></a>CA1501: evitar herança excessiva
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |NomeDoTipo|AvoidExcessiveInheritance|
 |CheckId|CA1501|
-|Categoria|Microsoft.Maintainability|
+|Categoria|Microsoft. Maintainabilidade|
 |Alteração Significativa|Quebra|
 
 ## <a name="cause"></a>Causa
  Um tipo está mais de quatro níveis abaixo na hierarquia de herança.
 
 ## <a name="rule-description"></a>Descrição da Regra
- As hierarquias de tipo profundamente aninhado podem ser difíceis de seguir, compreender e manter. Essa regra limita a análise de hierarquias no mesmo módulo.
+ As hierarquias de tipo profundamente aninhado podem ser difíceis de seguir, compreender e manter. Essa regra limita a análise a hierarquias no mesmo módulo.
 
 ## <a name="how-to-fix-violations"></a>Como Corrigir Violações
- Para corrigir uma violação dessa regra, derivar o tipo de um tipo base que é menos detalhado na hierarquia de herança ou eliminar alguns dos tipos de base intermediários.
+ Para corrigir uma violação dessa regra, derive o tipo de um tipo base que seja menos profundo na hierarquia de herança ou elimine alguns dos tipos base intermediários.
 
 ## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos
- É seguro suprimir um aviso nessa regra. No entanto, o código pode ser mais difícil de manter. Observe que, dependendo da visibilidade de tipos base, resolver as violações dessa regra pode criar alterações significativas. Por exemplo, a remoção de tipos de base públicos é uma alteração significativa.
+ É seguro suprimir um aviso dessa regra. No entanto, o código pode ser mais difícil de manter. Observe que, dependendo da visibilidade dos tipos base, a resolução de violações dessa regra pode criar alterações significativas. Por exemplo, a remoção de tipos base públicos é uma alteração significativa.
 
 ## <a name="example"></a>Exemplo
  O exemplo a seguir mostra um tipo que viola a regra.

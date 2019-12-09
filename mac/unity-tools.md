@@ -3,14 +3,14 @@ title: Ferramentas do Visual Studio para Mac para Unity
 description: Apresentando a extensão das Ferramentas do Visual Studio para Unity
 author: therealjohn
 ms.author: johmil
-ms.date: 05/25/2018
+ms.date: 10/25/2019
 ms.assetid: 83FDD7A3-5D16-4B4B-9080-078E3FB5C623
-ms.openlocfilehash: f275288ea54b4b24996825aeb14c7a55ee3a3018
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: c411ae1730c2bd9b4f92729a8480d7fa399d0894
+ms.sourcegitcommit: af9bbf9116a63c0631ff2f4f3a878564aa63cd8c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62971376"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "74797256"
 ---
 # <a name="visual-studio-for-mac-tools-for-unity"></a>Ferramentas do Visual Studio para Mac para Unity
 
@@ -20,7 +20,10 @@ As Ferramentas do Visual Studio para Mac para Unity é uma extensão gratuita do
 
 A integração do Unity está incluída pronta para uso no Visual Studio para Mac e, do Unity 2018.1 em diante, o Visual Studio para Mac é o IDE padrão do C# para projetos do Unity.
 
-## <a name="overview"></a>Visão geral
+> [!NOTE]
+> Essas informações são para o IDE do Visual Studio para Mac. Saiba mais sobre o Visual Studio Code [neste guia](https://code.visualstudio.com/docs/other/unity).
+
+## <a name="overview"></a>{1&gt;Visão Geral&lt;1}
 
 Veja alguns dos principais recursos das Ferramentas do Visual Studio para Mac para Unity:
 
@@ -44,6 +47,12 @@ As Ferramentas do Visual Studio para Mac para Unity dá suporte a todos os recur
 ### <a name="powerful-refactoring-and-context-actions"></a>Ações de refatoração e de contexto avançadas
 
 Escreva mais código utilizável com os menus rápido e atalhos de teclado para [renomear, refatoração e ações de contexto](refactoring.md).
+
+### <a name="roslyn-diagnostics-and-quick-fixes-for-unity"></a>Diagnóstico de Roslyn e correções rápidas para o Unity
+
+Escreva um código melhor que capture as práticas recomendadas com a compreensão profunda do Visual Studio para Mac de projetos do Unity. 
+
+![Comparação da cadeia de caracteres de refatoração do VS for Mac com CompareTag](media/using-vsmac-tools-unity-image9.png)
 
 ### <a name="browse-and-add-new-files"></a>Procure e adicione novos arquivos
 

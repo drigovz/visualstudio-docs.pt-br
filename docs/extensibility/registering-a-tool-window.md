@@ -6,20 +6,20 @@ helpviewer_keywords:
 - tool windows, registering managed
 - tool windows, registering
 ms.assetid: 8c8c4a24-3da4-497b-9db2-0ddd7cfbfdd2
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8ef5cc84ea1fdce8e297d8b5bff6636065b3d044
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 34fddd6513aad612398c700b935c6d1d3ee72b59
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62805778"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73186267"
 ---
 # <a name="register-a-tool-window"></a>Registrar uma janela de ferramentas
-Você pode registrar suas janelas de ferramenta usando <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> e <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowVisibilityAttribute>.
+Você pode registrar suas janelas de ferramentas usando <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> e <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowVisibilityAttribute>.
 
 ## <a name="example"></a>Exemplo
 
@@ -35,4 +35,4 @@ public class PackageToolWindow : Package
 {
 ```
 
- No código acima, o <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> registra o `PersistedWindowPane` e `DynamicWindowPane` janelas com o Visual Studio. A janela da ferramenta persistente é encaixada e com guias com **Gerenciador de soluções**, e a janela dinâmica é dada uma posição inicial e o tamanho de padrão. A janela dinâmica é feita transitória, que indica que ela não será criada na inicialização. Grava uma `DontForceCreate` o valor de `ToolWindows` chave no registro do sistema. Para obter mais informações, consulte [configuração de exibição da janela de ferramenta](../extensibility/tool-window-display-configuration.md).
+ No código acima, o <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> registra as janelas de ferramentas `PersistedWindowPane` e `DynamicWindowPane` com o Visual Studio. A janela de ferramentas persistentes é encaixada e tabulada com **Gerenciador de soluções**, e a janela dinâmica recebe uma posição inicial e um tamanho padrão. A janela dinâmica torna-se transitória, o que indica que ela não é criada na inicialização. Isso grava um valor de `DontForceCreate` na chave de `ToolWindows` no registro do sistema. Para obter mais informações, consulte [configuração de exibição da janela de ferramentas](/visualstudio/extensibility/tool-window-display-configuration?view=vs-2015).

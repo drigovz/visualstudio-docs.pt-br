@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProcess3::GetDebugReason
 ms.assetid: f23fbabc-8b18-4278-bebf-4cdc7091513c
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 55f49d94ec95af8c7c74205335fe69b1ec3ecd41
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: b398fb09d63a76732a7299932458da8bf0d4d744
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62917683"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66313938"
 ---
 # <a name="idebugprocess3getdebugreason"></a>IDebugProcess3::GetDebugReason
 Esse método retorna o motivo pelo qual que o processo foi iniciado para depuração.
@@ -36,10 +39,9 @@ int GetDebugReason(
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `pReason`
-
- [out] Retorna um valor da [DEBUG_REASON](../../../extensibility/debugger/reference/debug-reason.md) enumeração.
+## <a name="parameters"></a>Parâmetros
+`pReason`\
+[out] Retorna um valor da [DEBUG_REASON](../../../extensibility/debugger/reference/debug-reason.md) enumeração.
 
 ## <a name="return-value"></a>Valor de retorno
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retornará o código de erro.

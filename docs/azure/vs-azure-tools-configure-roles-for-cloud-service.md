@@ -4,26 +4,24 @@ description: Saiba como instalar e configurar funções para serviços de nuvem 
 author: ghogen
 manager: jillfra
 assetId: d397ef87-64e5-401a-aad5-7f83f1022e16
-ms.prod: visual-studio-dev14
-ms.technology: vs-azure
-ms.custom: vs-azure
+ms.custom: seodec18
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: 86a86a097bc5e9d3cd567502ec94aae3cbafd324
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: ded315917fb0e40159aed327ed98f747bb31c4b1
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62552252"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71253595"
 ---
 # <a name="configure-azure-cloud-service-roles-with-visual-studio"></a>Configurar funções de serviço de nuvem do Azure com o Visual Studio
 Um serviço de nuvem do Azure pode ter uma ou mais funções web ou de trabalho. Para cada função, você precisa definir como essa função é instalada e também configurar como ela é executada. Para saber mais sobre as funções em serviços de nuvem, assista ao vídeo [Introdução aos Serviços de Nuvem do Azure](https://channel9.msdn.com/Series/Windows-Azure-Cloud-Services-Tutorials/Introduction-to-Windows-Azure-Cloud-Services).
 
 As informações sobre seu serviço de nuvem são armazenadas nos seguintes arquivos:
 
-- **ServiceDefinition.csdef** — o arquivo de definição de serviço define as configurações de tempo de execução de seu serviço de nuvem, incluindo as funções que são necessárias, os pontos de extremidade e o tamanho da máquina virtual. Nenhum dos dados armazenados em `ServiceDefinition.csdef` pode ser alterado quando a função está sendo executada.
+- Service **Definition. csdef** – o arquivo de definição de serviço define as configurações de tempo de execução para seu serviço de nuvem, incluindo quais funções são necessárias, pontos de extremidade e tamanho da máquina virtual. Nenhum dos dados armazenados em `ServiceDefinition.csdef` pode ser alterado quando a função está sendo executada.
 - **ServiceConfiguration.cscfg** — o arquivo de configuração de serviço define quantas instâncias de uma função são executadas e os valores das configurações definidas para uma função. Os dados armazenados em `ServiceConfiguration.cscfg` podem ser alterados enquanto a função está sendo executada.
 
 Para armazenar valores diferentes para essas configurações que controlam como uma função é executada, você pode definir várias configurações de serviço. Você pode usar uma configuração de serviço diferente para cada ambiente de implantação. Por exemplo, você pode definir sua cadeia de conexão de conta de armazenamento para usar o emulador de armazenamento local do Azure em uma configuração de serviço local e criar outra configuração de serviço para usar o armazenamento do Azure na nuvem.
@@ -50,8 +48,6 @@ Você pode configurar um serviço de nuvem do Azure por meio do Gerenciador de S
 
     > [!IMPORTANT]
     > Se você escolher uma configuração de serviço específica, algumas propriedades ficarão desabilitadas porque elas só podem ser definidas para todas as configurações. Para editar essas propriedades, você deve escolher **Todas as Configurações**.
-    >
-    >
 
     ![Lista Configuração de Serviço para um serviço de nuvem do Azure](./media/vs-azure-tools-configure-roles-for-cloud-service/cloud-service-service-configuration-property.png)
 
@@ -239,21 +235,20 @@ Esta seção ilustra como acessar de modo programático o armazenamento local us
 
 O código a seguir mostra um exemplo de como gravar um arquivo de texto no armazenamento local. Substitua o espaço reservado &lt;LocalStorageName> pelo valor apropriado.
 
-    ```csharp
-    // Retrieve an object that points to the local storage resource
-    LocalResource localResource = RoleEnvironment.GetLocalResource("<LocalStorageName>");
+```csharp
+// Retrieve an object that points to the local storage resource
+LocalResource localResource = RoleEnvironment.GetLocalResource("<LocalStorageName>");
 
-    //Define the file name and path
-    string[] paths = { localResource.RootPath, "MyLocalStorageTest.txt" };
-    String filePath = Path.Combine(paths);
+//Define the file name and path
+string[] paths = { localResource.RootPath, "MyLocalStorageTest.txt" };
+String filePath = Path.Combine(paths);
 
-    using (FileStream writeStream = File.Create(filePath))
-    {
-        Byte[] textToWrite = new UTF8Encoding(true).GetBytes("Testing Web role storage");
-        writeStream.Write(textToWrite, 0, textToWrite.Length);
-    }
-
-    ```
+using (FileStream writeStream = File.Create(filePath))
+{
+    Byte[] textToWrite = new UTF8Encoding(true).GetBytes("Testing Web role storage");
+    writeStream.Write(textToWrite, 0, textToWrite.Length);
+}
+```
 
 ### <a name="find-a-file-written-to-local-storage"></a>Localizar um arquivo gravado no armazenamento local
 

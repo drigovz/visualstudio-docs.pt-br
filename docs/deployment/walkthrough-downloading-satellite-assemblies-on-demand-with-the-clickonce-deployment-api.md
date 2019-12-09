@@ -1,5 +1,5 @@
 ---
-title: 'Passo a passo: Baixando Assemblies satélite por demanda com a API de implantação do ClickOnce | Microsoft Docs'
+title: Baixar o assembly satélite por demanda com a API de implantação do ClickOnce
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a1aa828f0f4a84f1a8dce3055f3719a3c11520e
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 34cde3a2444525e48455e445894fd5ab1c66fab8
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63405932"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66262965"
 ---
 # <a name="walkthrough-download-satellite-assemblies-on-demand-with-the-clickonce-deployment-api"></a>Passo a passo: Baixar os assemblies satélite por demanda com a API de implantação do ClickOnce
 Aplicativos do Windows Forms podem ser configurados para várias culturas com o uso de assemblies satélite. Um *assembly satélite* é um assembly que contém os recursos de aplicativo para uma cultura que não seja a cultura padrão do aplicativo.
@@ -54,7 +54,7 @@ Aplicativos do Windows Forms podem ser configurados para várias culturas com o 
 
 4. Clique o **arquivos** guia.
 
-5. Clique o **reticências** botão (**...** ) e selecione o diretório que contém todos os assemblies e arquivos, incluindo os assemblies de satélite gerado usando o seu aplicativo *Resgen.exe*. (Um assembly satélite terá um nome na forma  *\<isoCode > \ApplicationName.resources.dll*, onde \<isoCode > é um identificador de idioma no formato RFC 1766.)
+5. Clique o **reticências** botão ( **...** ) e selecione o diretório que contém todos os assemblies e arquivos, incluindo os assemblies de satélite gerado usando o seu aplicativo *Resgen.exe*. (Um assembly satélite terá um nome na forma  *\<isoCode > \ApplicationName.resources.dll*, onde \<isoCode > é um identificador de idioma no formato RFC 1766.)
 
 6. Clique em **popular** para adicionar os arquivos para sua implantação.
 

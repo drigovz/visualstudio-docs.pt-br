@@ -1,19 +1,20 @@
 ---
-title: Como coletar dados de tempo detalhados para serviços usando o método de instrumentação por meio da linha de comando do criador de perfil | Microsoft Docs
+title: 'Linha de comando do Profiler: instrumento para obter detalhes de tempo do serviço'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 6116e1df-ed3e-4b0d-ac7f-22f7d7ac00ea
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 6144ee367e7cf53ceb901bfe65cce9999f1e4680
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 915999dbad4cb24fe25fd182c093b8e83e11314e
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62949043"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779591"
 ---
 # <a name="collect-detailed-timing-data-for-services-by-using-the-instrumentation-method-from-the-profiler-command-line"></a>Coletar dados de tempo detalhados para serviços usando o método de instrumentação por meio da linha de comando do criador de perfil
 Esta seção descreve os procedimentos e opções para coletar dados de desempenho detalhados para serviços do Windows usando o método de instrumentação da linha de comando.
@@ -22,9 +23,9 @@ Esta seção descreve os procedimentos e opções para coletar dados de desempen
 
 |Tarefa|Conteúdo relacionado|
 |----------|---------------------|
-|**Perfil de um serviço do .NET**|-   [Como: Instrumentar um serviço do .NET e coletar dados de tempo detalhados](../profiling/how-to-instrument-a-dotnet-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line.md)|
+|**Perfil de um serviço do .NET**|-   [Como instrumentar um serviço do .NET e coletar dados de tempo detalhados](../profiling/how-to-instrument-a-dotnet-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line.md)|
 |**Add tier-interaction data (Adicionar dados de interação de camada)**|-   [Coletar dados de interação entre camadas](../profiling/adding-tier-interaction-data-from-the-command-line.md)|
-|**Perfil de um serviço de C/C++**|-   [Como: Instrumentar um serviço nativo e coletar dados de tempo detalhados](../profiling/how-to-instrument-a-native-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line.md)|
+|**Perfil de um serviço de C/C++**|-   [Como instrumentar um serviço nativo e coletar dados de tempo detalhados](../profiling/how-to-instrument-a-native-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line.md)|
 
 ## <a name="related-tasks"></a>Tarefas relacionadas
 

@@ -1,57 +1,57 @@
 ---
-title: 'Como: Alterar o namespace de uma linguagem específica de domínio'
+title: 'Como: alterar o namespace de uma linguagem específica de domínio'
 ms.date: 10/31/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, namespace
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 16fec4cf6150fe0711812d9fabe57fc667e36eef
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b64a61c02f44db0ce70b758331d0d70f7bb8014d
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62993453"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653752"
 ---
-# <a name="how-to-change-the-namespace-of-a-domain-specific-language"></a>Como: Alterar o namespace de uma linguagem específica de domínio
+# <a name="how-to-change-the-namespace-of-a-domain-specific-language"></a>Como: alterar o namespace de uma linguagem específica de domínio
 
-Você pode alterar o namespace de uma linguagem específica de domínio. Fazer a alteração no valor de **Gerenciador de DSL**, nas propriedades do projeto Dsl de pacote e as informações de assembly.
+Você pode alterar o namespace de uma linguagem específica de domínio. Faça a alteração no **Gerenciador de DSL**, nas propriedades do projeto de pacote DSL e nas informações do assembly.
 
 ## <a name="to-change-the-namespace-of-a-domain-specific-language"></a>Para alterar o namespace de uma linguagem específica de domínio
 
-1. Na **Gerenciador de DSL**, selecione o **Dsl** nó.
+1. No **Gerenciador de DSL**, selecione o nó **DSL** .
 
-2. No **propriedades** janela, altere o **Namespace** propriedade.
+2. Na janela **Propriedades** , altere a propriedade **namespace** .
 
-3. Salve a solução e transformar os modelos.
+3. Salve a solução e transforme os modelos.
 
-4. Sobre o **Project** menu, escolha **Dsl propriedades**.
+4. No menu **projeto** , escolha **Propriedades de DSL**.
 
-   As propriedades do projeto são exibidos.
+   As propriedades do seu projeto são exibidas.
 
-5. Selecione o **aplicativo** guia.
+5. Selecione a guia **aplicativo** .
 
-6. Alterar o **namespace padrão** propriedade para o novo nome de namespace.
+6. Altere a propriedade de **namespace padrão** para o novo nome de namespace.
 
-7. Se você também quiser alterar o nome do assembly, altere o **propriedade nome do Assembly.**
+7. Se você também quiser alterar o nome do assembly, altere a propriedade do **nome do assembly.**
 
-8. Se você tiver alterado o nome do Assembly, abra DslPackage\Package.tt e atualize essa linha:
+8. Se você alterou o nome do assembly, abra DslPackage\Package.tt e atualize esta linha:
 
    `string dslAssembly = "YourDSLassembly.Dsl.dll";`
 
-9. Se você tiver gravado um código personalizado, certifique-se de alterar as referências de namespace e classe nos arquivos de código.
+9. Se você tiver escrito qualquer código personalizado, certifique-se de alterar o namespace e as referências de classe nos arquivos de código.
 
-10. Redefina a instância Experimental do Visual Studio.
+10. Redefina a instância experimental do Visual Studio.
 
-    1. Exclua **\Users\\**_{o nome}_**\AppData\Local\Microsoft\VisualStudio\\\*Exp**.
+    1. Exclua **\users \\** _{your name}_ **\AppData\Local\Microsoft\VisualStudio \\ \*Exp**.
 
-    2. Sobre o Windows **inicie** menu, escolha **todos os programas** > **SDK do Microsoft Visual Studio 2010** > **ferramentas**  >  **Redefinir a instância Experimental**.
+    2. No menu **Iniciar** do Windows, escolha **todos os programas**  > **Microsoft Visual Studio 2010 SDK**  > **ferramentas**  > **redefinir a instância experimental**.
 
-11. Sobre o **construir** menu, escolha **recompilar solução**.
+11. No menu **Compilar** , escolha **Recompilar solução**.
 
 ## <a name="see-also"></a>Consulte também
 
-[Glossário de ferramentas de linguagem específica do domínio](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+[Glossário de ferramentas de linguagem específica de domínio](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

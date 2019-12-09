@@ -2,20 +2,20 @@
 title: Testar um aplicativo UWP com um teste de IU codificado
 ms.date: 05/31/2018
 ms.topic: conceptual
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - uwp
-ms.openlocfilehash: d50972ccb68ba43e8ebefa0d69fdfff8f7fc5be4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 7000cb64a14510e972222d2d4dae30ceee593c43
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62430104"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72659976"
 ---
 # <a name="create-a-coded-ui-test-to-test-a-uwp-app"></a>Criar um teste de IU codificado para testar um aplicativo UWP
 
@@ -158,7 +158,7 @@ A primeira etapa é criar um aplicativo UWP simples no qual executar o teste.
    Substitua a ID de automação no código de exemplo pelo valor copiado para a área de transferência na etapa anterior.
 
    > [!IMPORTANT]
-   > Corte o início da ID de automação para remover caracteres como **P~**. Se você não cortar esses caracteres, o teste gerará uma `Microsoft.VisualStudio.TestTools.UITest.Extension.PlaybackFailureException` quando tentar iniciar o aplicativo.
+   > Corte o início da ID de automação para remover caracteres como **P~** . Se você não cortar esses caracteres, o teste gerará uma `Microsoft.VisualStudio.TestTools.UITest.Extension.PlaybackFailureException` quando tentar iniciar o aplicativo.
 
 1. Em seguida, adicione o código ao método de teste para clicar no botão. Na linha após `XamlWindow.Launch`, adicione um gesto para tocar no controle de botão:
 
@@ -220,11 +220,11 @@ A primeira etapa é criar um aplicativo UWP simples no qual executar o teste.
 
 ### <a name="q-can-i-create-a-coded-ui-test-for-my-uwp-apps-based-on-winjs"></a>P: Posso criar um teste de IU codificado para meus aplicativos da UWP baseados no WinJS?
 
-**R**: Não, apenas aplicativos baseados em XAML são compatíveis.
+**R**: Não. Há suporte apenas para aplicativos baseados em XAML.
 
 ### <a name="q-why-cant-i-modify-the-code-in-the-uimapdesigner-file"></a>P: Por que não posso modificar o código no arquivo UIMap.Designer?
 
-**R**: Todas as alterações de código feitas no arquivo *UIMapDesigner.cs* são substituídas sempre que você gera o código usando o **Construtor de Teste de IU Codificado**. Se precisar modificar um método registrado, copie-o para o arquivo *UIMap.cs* e renomeie-o. O arquivo *UIMap.cs* pode ser usado para substituir métodos e propriedades no arquivo *UIMapDesigner.cs*. Remova a referência ao método original no arquivo *CodedUITest.cs* e substitua-a pelo nome do método renomeado.
+**R**: Todas as alterações de código feitas no arquivo *UIMapDesigner.cs* são substituídas sempre que você gera o código usando o **Construtor de Teste de IU Codificado**. Se você precisar modificar um método registrado, copie-o para o arquivo *UIMap.cs* e renomeie-o. O arquivo *UIMap.cs* pode ser usado para substituir métodos e propriedades no arquivo *UIMapDesigner.cs*. Remova a referência ao método original no arquivo *CodedUITest.cs* e substitua-a pelo nome do método renomeado.
 
 ## <a name="see-also"></a>Consulte também
 

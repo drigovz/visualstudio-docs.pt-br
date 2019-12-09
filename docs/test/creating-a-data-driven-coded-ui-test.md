@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - coded UI tests, data-driven
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d6202a8287232c0226104be59bdab6a15fd00d95
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 101b678606febd7cc2a7e2f9cee0c8c281289c9a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62785309"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72665094"
 ---
 # <a name="create-a-data-driven-coded-ui-test"></a>Criar um teste de interface do usuário codificado controlado por dados
 
@@ -22,14 +22,14 @@ Para testar diferentes condições, você pode executar os testes várias vezes 
 
 [!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
-**Requisitos**
+**Requirements**
 
 - Visual Studio Enterprise
 - Componente de teste de IU codificado
 
 ## <a name="create-a-test-project"></a>Criar um projeto de teste
 
-Este exemplo cria um teste de interface do usuário codificado que é executado no aplicativo Calculadora Windows. Ele adiciona dois números juntos e usa uma declaração para validar se a soma está correta. Em seguida, os valores de parâmetro e de declaração para os dois números são codificados para se tornarem controlados por dados e armazenados em um arquivo de valores separados por vírgula (*.csv*).
+Este exemplo cria um teste de interface do usuário codificado que é executado no aplicativo Calculadora Windows. Ele adiciona dois números juntos e usa uma declaração para validar se a soma está correta. Em seguida, os valores de parâmetro e de declaração para os dois números são codificados para se tornarem controlados por dados e armazenados em um arquivo de valores separados por vírgula ( *.csv*).
 
 ### <a name="step-1---create-a-coded-ui-test"></a>Etapa 1 - Criar um teste de interface do usuário codificado
 
@@ -203,7 +203,7 @@ Você deve ver a execução de teste por meio das três iterações usando os va
 
 ### <a name="CreateDataDrivenCUIT_QA_DataSourceAttributes"></a> Quais são os atributos de fonte de dados para outros tipos de fonte de dados, como SQL Express ou XML?
 
-**R:** Você pode usar as cadeias de caracteres de fonte de dados de amostra na tabela abaixo ao copiá-los em seu código e fazendo as personalizações necessárias.
+**R:** Você pode usar as cadeias de caracteres de fonte de dados de exemplo na tabela a seguir, copiando-as para o código e fazendo as personalizações necessárias.
 
 **Tipos e atributos de fonte de dados**
 
@@ -235,7 +235,7 @@ Se você precisar modificar um método gravado, copie-o para o arquivo *UIMap.cs
 
 ## <a name="see-also"></a>Consulte também
 
-- <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>
+- [UIMap](/previous-versions/dd580454(v=vs.140))
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert>
 - [Usar a automação de interface do usuário para testar seu código](../test/use-ui-automation-to-test-your-code.md)
 - [Criar testes de IU codificados](../test/use-ui-automation-to-test-your-code.md)

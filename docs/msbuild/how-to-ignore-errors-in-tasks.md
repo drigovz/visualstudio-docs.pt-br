@@ -1,5 +1,5 @@
 ---
-title: 'Como: Ignorar erros em tarefas | Microsoft Docs'
+title: Como ignorar erros em tarefas | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,14 +9,14 @@ ms.assetid: e2f1ca4f-787b-44bd-bc64-81a036025e96
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 062edb5e7b76b3d3d308046ea1d541c543a6324f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: d84292592183d11e5d9ee4fc2febac6679e2a73b
+ms.sourcegitcommit: af9bbf9116a63c0631ff2f4f3a878564aa63cd8c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63000299"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "74797217"
 ---
-# <a name="how-to-ignore-errors-in-tasks"></a>Como: Ignorar erros em tarefas
+# <a name="how-to-ignore-errors-in-tasks"></a>Como ignorar erros em tarefas
 Às vezes você deseja que um build seja tolerante a falhas em determinadas tarefas. Se essas tarefas não críticas falharem, você deseja que o build continue, pois ela ainda pode produzir a saída necessária. Por exemplo, se um projeto usa uma tarefa `SendMail` para enviar uma mensagem de email depois que cada componente é compilado, você pode considerar aceitável que o build prossiga até a conclusão, mesmo que os servidores de email não estejam disponíveis e as mensagens de status não possam ser enviadas. Ou, por exemplo, se arquivos intermediários são geralmente excluídos durante o build, você pode considerar aceitável que o build prossiga até a conclusão, mesmo que esses arquivos não possam ser excluídos.
 
 ## <a name="use-the-continueonerror-attribute"></a>Usar o atributo ContinueOnError
@@ -30,15 +30,17 @@ O atributo `ContinueOnError` pode conter um dos seguintes valores:
 
 - **ErrorAndStop** ou **falso** (padrão). Quando uma tarefa falha, as tarefas restantes do elemento de `Target` e o build não são executadas e todo o elemento de `Target` e o build são considerados como em falha.
 
-  As versões do .NET Framework antes da 4.5 ofereciam suporte somente aos valores `true` e `false`.
+As versões do .NET Framework antes da 4.5 ofereciam suporte somente aos valores `true` e `false`.
 
-  O valor padrão de `ContinueOnError` é `ErrorAndStop`. Se você definir o atributo como `ErrorAndStop`, tornará o comportamento explícito para qualquer pessoa que lê o arquivo de projeto.
+O valor padrão de `ContinueOnError` é `ErrorAndStop`. Se você definir o atributo como `ErrorAndStop`, tornará o comportamento explícito para qualquer pessoa que lê o arquivo de projeto.
 
 #### <a name="to-ignore-an-error-in-a-task"></a>Para ignorar um erro em uma tarefa
 
-- Use o atributo `ContinueOnError` da tarefa. Por exemplo:
+Use o atributo `ContinueOnError` da tarefa. Por exemplo:
 
-    `<Delete Files="@(Files)" ContinueOnError="WarnAndContinue"/>`
+```xml
+<Delete Files="@(Files)" ContinueOnError="WarnAndContinue"/>
+```
 
 ## <a name="example"></a>Exemplo
 O exemplo de código a seguir ilustra que o destino de `Build` ainda é executado e o build é considerada um sucesso, mesmo se a tarefa `Delete` falhar.

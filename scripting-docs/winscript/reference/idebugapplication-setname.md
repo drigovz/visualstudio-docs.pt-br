@@ -1,5 +1,5 @@
 ---
-title: IDebugApplication::SetName | Microsoft Docs
+title: 'IDebugApplication:: SetName | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4ac0b253d5193fc507e2d74a2d9dbcdd893e9fdb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6a3e5115d4adc3fc3dfa93f10c90cb0d2b36f0e4
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62990760"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571107"
 ---
 # <a name="idebugapplicationsetname"></a>IDebugApplication::SetName
 Define o nome do aplicativo.  
@@ -37,9 +37,9 @@ HRESULT SetName(
   
 #### <a name="parameters"></a>Parâmetros  
  `pstrName`  
- [in] O nome do aplicativo.  
+ no O nome do aplicativo.  
   
-## <a name="return-value"></a>Valor de retorno  
+## <a name="return-value"></a>Valor retornado  
  O método retorna um `HRESULT`. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.  
   
 |Valor|Descrição|  
@@ -47,10 +47,10 @@ HRESULT SetName(
 |`S_OK`|O método foi bem-sucedido.|  
   
 ## <a name="remarks"></a>Comentários  
- O nome fornecido para esse método é retornado em chamadas subsequentes para o `IRemoteDebugApplication::GetName` método.  
+ O nome fornecido para esse método é retornado em chamadas subsequentes para o método `IRemoteDebugApplication::GetName`.  
   
- Esse método deve ser chamado antes de chamar o `IProcessDebugManager::AddApplication` método.  
+ Esse método deve ser chamado antes de chamar o método `IProcessDebugManager::AddApplication`.  
   
 ## <a name="see-also"></a>Consulte também  
- [Interface IDebugApplication](../../winscript/reference/idebugapplication-interface.md)   
+ @No__t_1 de [interface IDebugApplication](../../winscript/reference/idebugapplication-interface.md)  
  [IProcessDebugManager::AddApplication](../../winscript/reference/iprocessdebugmanager-addapplication.md)

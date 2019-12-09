@@ -13,11 +13,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8620e5a372d764fef3a75126af52a6212ecc6cd8
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54774627"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68161967"
 ---
 # <a name="performance-report-view-filter"></a>Filtro de exibição de relatório de desempenho
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ A janela de Filtro de Exibição de Relatório do Criador de Perfil está locali
   
  Você pode modificar cada cláusula de filtro para refinar os resultados. As seguintes colunas estão disponíveis no construtor de filtro.  
   
-|Filtrar item|Descrição|  
+|Filtrar item|DESCRIÇÃO|  
 |-----------------|-----------------|  
 |And/Or|Escolha **And** se essa cláusula e a próxima devem ambas ser verdadeiras para corresponder a um resultado. Escolha **Or** se essa cláusula ou a próxima podem ser verdadeiras para corresponder a um resultado.|  
 |Campo|Selecione o campo a ser usado na cláusula de filtro da lista de campos de dados que estão disponíveis no arquivo de relatório atual.|  
@@ -39,6 +39,6 @@ A janela de Filtro de Exibição de Relatório do Criador de Perfil está locali
   
  Para salvar o filtro, clique em **Exportar Filtro** na barra de ferramentas de Relatório de Desempenho e especifique um local e um nome do arquivo .vspf. Para carregar um filtro salvo anteriormente, clique em **Importar Filtro** e localize o arquivo de filtro salvo. Arquivos de filtro também podem ser usados para filtrar arquivos de dados em computadores que têm as ferramentas de criação de perfil autônomas instaladas. Para obter mais informações, confira [VSPerfReport](../profiling/vsperfreport.md).  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Veja também  
  [Analisando dados de ferramentas de desempenho](../profiling/analyzing-performance-tools-data.md)   
  [VSPerfReport](../profiling/vsperfreport.md)

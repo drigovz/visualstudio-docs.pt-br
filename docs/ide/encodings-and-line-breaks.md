@@ -12,31 +12,31 @@ helpviewer_keywords:
 - line break characters
 - Visual Studio, line break characters
 ms.assetid: 8f9b3ffc-7b8d-44f4-87cb-dc29105be12d
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 59ed38c28c6818fb618156450d47c05b4f35d63d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 8fd37547d8107cf35991aab684313dbff37adda0
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62978154"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650889"
 ---
 # <a name="encodings-and-line-endings"></a>Codificações e términos de linha
 
 Os seguintes caracteres são interpretados como quebras de linha no Visual Studio:
 
-- CR LF: Retorno de carro + alimentação de linha, caracteres Unicode 000D + 000A
+- CR LF: retorno de carro + alimentação de linha, caracteres Unicode 000D + 000A
 
-- LF: Alimentação de linha, caractere Unicode 000A
+- LF: alimentação de linha, caractere Unicode 000A
 
-- NEL: Próxima linha, caractere Unicode 0085
+- NEL: próxima linha, caractere Unicode 0085
 
-- LS: Separador de linha, caractere Unicode 2028
+- LS: separador de linha, caractere Unicode 2028
 
-- PS: Separador de parágrafo, caractere Unicode 2029
+- PS: separador de parágrafo, caractere Unicode 2029
 
 O texto copiado de outros aplicativos mantém a codificação original e os caracteres de quebra de linha. Por exemplo, quando você copia texto do Bloco de notas e o cola em um arquivo de texto no Visual Studio, o texto tem as mesmas configurações que ele tinha no Bloco de notas.
 
@@ -49,7 +49,7 @@ Você pode usar a caixa de diálogo **Arquivo** > **Opções de Salvamento Avan�
 ![Caixa de diálogo Opções Avançadas de Salvamento](media/line_endings.png)
 
 > [!NOTE]
-> Se você não vir **Opções Avançadas de Salvamento** no menu **Arquivo**, você poderá adicioná-la. Clique em **Ferramentas**, **Personalizar** e, em seguida, escolha a guia **Comandos**. Na lista suspensa **Barra de menus**, escolha **Arquivo** e, em seguida, clique no botão **Adicionar Comando**. Na caixa de diálogo **Adicionar Comando**, em **Categorias**, escolha **Arquivo** e, em seguida, na lista **Comandos**, escolha **Opções Avançadas de Salvamento**. Escolha **OK** e, em seguida, escolha o botão **Mover para Baixo** para mover o comando para qualquer local no menu. Escolha **Fechar** para fechar a caixa de diálogo **Personalizar**. Para obter mais informações, consulte [Personalizar menus e barras de ferramentas](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md#customizing_menu).
+> Se você não vir **Opções Avançadas de Salvamento** no menu **Arquivo**, você poderá adicioná-la. Escolha **ferramentas**, **Personalizar**e, em seguida, escolha a guia **comandos** . Na lista suspensa **barra de menus** , escolha **arquivo**e, em seguida, escolha o botão de **comando adicionar** . Na caixa de diálogo **Adicionar Comando**, em **Categorias**, escolha **Arquivo** e, em seguida, na lista **Comandos**, escolha **Opções Avançadas de Salvamento**. Escolha **OK** e, em seguida, escolha o botão **mover para baixo** para mover o comando para qualquer lugar no menu. Escolha **Fechar** para fechar a caixa de diálogo **Personalizar**. Para obter mais informações, consulte [Personalizar menus e barras de ferramentas](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md#customizing_menu).
 >
 > Como alternativa, você pode acessar a caixa de diálogo **Opções de Salvamento Avançadas**, escolhendo **Arquivo** > **Salvar \<arquivo\> Como**. Na caixa de diálogo **Salvar Arquivo Como**, escolha o triângulo suspenso ao lado do botão **Salvar** e clique em **Salvar com codificação**.
 

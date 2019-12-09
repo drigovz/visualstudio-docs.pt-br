@@ -6,21 +6,21 @@ f1_keywords:
 - msvse_settingsdesigner.err.nameblank
 helpviewer_keywords:
 - application settings [Visual Studio]
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dad84145200b09cfbddab63bd9994096d0ba3e17
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: ae4215987ee0a61935efe27ab927d826cc1c6ff9
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62537275"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72654627"
 ---
 # <a name="manage-application-settings-net"></a>Gerenciar configurações de aplicativo (.NET)
 
-As configurações de aplicativo permitem armazenar informações do aplicativo dinamicamente. As configurações permitem que você armazene informações no computador cliente que não devem ser incluídas no código do aplicativo (por exemplo, uma cadeia de conexão), as preferências do usuário e outras informações necessárias em tempo de execução.
+As configurações de aplicativo permitem armazenar informações do aplicativo dinamicamente. As configurações permitem que você armazene informações no computador cliente que não devem ser incluídas no código do aplicativo (por exemplo, uma cadeia de conexão), preferências do usuário e outras informações necessárias em tempo de execução.
 
 As configurações de aplicativo substituem as propriedades dinâmicas usadas em versões anteriores do Visual Studio.
 
@@ -72,7 +72,7 @@ Você pode adicionar arquivos de configurações personalizadas ao seu projeto p
 
 Por exemplo, você pode adicionar um arquivo, como *SpecialSettings.settings* ao seu projeto. Embora a classe `SpecialSettings` não seja exposta no namespace `My`, **Exibir Código** pode ler o arquivo de configurações personalizadas que contém `Partial Class SpecialSettings`.
 
-O **Designer de Configurações** primeiro pesquisa o arquivo *Settings.settings* que o sistema do projeto cria. Esse é o arquivo padrão que o **Designer de Projeto** exibe na guia **Configurações**. *Settings.settings* está localizado na pasta *Meu Projeto* para projetos do [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] e na pasta *Propriedades* para projetos do [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]. Em seguida, o **Designer de Projeto** pesquisa outros arquivos de configurações na pasta raiz do projeto. Portanto, você deve colocar o arquivo de configurações personalizado lá. Se você adicionar um arquivo *.settings* em outro lugar no projeto, o **Designer de Projeto** não o conseguirá localizar.
+O **Designer de configurações** primeiro procura o arquivo *Settings. Settings* que o sistema de projeto cria; Esse é o arquivo padrão que o **Designer de projeto** exibe na guia **configurações** . *Settings. Settings* está localizado na pasta *meu projeto* para projetos de [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] e na pasta *Propriedades* de projetos [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]. Em seguida, o **Designer de Projeto** pesquisa outros arquivos de configurações na pasta raiz do projeto. Portanto, você deve colocar o arquivo de configurações personalizado lá. Se você adicionar um arquivo *.settings* em outro lugar no projeto, o **Designer de Projeto** não o conseguirá localizar.
 
 ## <a name="access-or-change-application-settings-at-run-time-in-visual-basic"></a>Acessar ou alterar as configurações de aplicativo no tempo de execução em Visual Basic
 

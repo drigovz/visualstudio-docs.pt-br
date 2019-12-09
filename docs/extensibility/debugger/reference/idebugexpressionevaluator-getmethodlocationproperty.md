@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugExpressionEvaluator::GetMethodLocationProperty method
 ms.assetid: 52c42a2e-f144-476b-8bef-442464c8fe8e
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c15baa5475e912559b8cc0a23264b0c19ef8a464
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: faa2767e54e9821c7b3270fa60f5be232a2c232f
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62874197"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66325764"
 ---
 # <a name="idebugexpressionevaluatorgetmethodlocationproperty"></a>IDebugExpressionEvaluator::GetMethodLocationProperty
 Este método converte um local de método e o deslocamento em um endereço de memória.
@@ -44,26 +47,21 @@ int GetMethodLocationProperty(
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `upstrFullyQualifiedMethodPlusOffset`
+## <a name="parameters"></a>Parâmetros
+`upstrFullyQualifiedMethodPlusOffset`\
+[in] O método local e o deslocamento, expresso como uma cadeia de caracteres.
 
- [in] O método local e o deslocamento, expresso como uma cadeia de caracteres.
+`pSymbolProvider`\
+[in] O provedor de símbolo é expresso como uma [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md) objeto.
 
- `pSymbolProvider`
+`pAddress`\
+[in] Um endereço dentro do método, expressado como uma [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) objeto.
 
- [in] O provedor de símbolo é expresso como uma [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md) objeto.
+`pBinder`\
+[in] O associador expresso como uma [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md) objeto.
 
- `pAddress`
-
- [in] Um endereço dentro do método, expressado como uma [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) objeto.
-
- `pBinder`
-
- [in] O associador expresso como uma [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md) objeto.
-
- `ppProperty`
-
- [out] Retorna um [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) interface que representa o endereço de memória.
+`ppProperty`\
+[out] Retorna um [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) interface que representa o endereço de memória.
 
 ## <a name="return-value"></a>Valor de retorno
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.

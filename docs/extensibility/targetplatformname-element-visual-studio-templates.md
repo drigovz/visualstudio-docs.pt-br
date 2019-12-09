@@ -4,20 +4,20 @@ ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
 ms.assetid: 3a6b1f45-b5d6-418e-add1-87ee8f15033d
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b6b657defd229d191fcb4dcd6343f3c8c64505cc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f22fb5d94b0f8c5147f014abdb973a23b1b9e24e
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62432351"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72718916"
 ---
 # <a name="targetplatformname-element-visual-studio-templates"></a>Elemento TargetPlatformName (Modelos do Visual Studio)
-Especifica a plataforma de que os destinos de modelo de projeto. Esse elemento é usado para especificar que um modelo de projeto é usado para criar [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] aplicativos.
+Especifica a plataforma de destino do modelo de projeto. Esse elemento é usado para especificar que um modelo de projeto seja usado para criar [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] aplicativos.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -37,13 +37,13 @@ Especifica a plataforma de que os destinos de modelo de projeto. Esse elemento �
 
 |Elemento|Descrição|
 |-------------|-----------------|
-|[RequiredPlatformVersion](../extensibility/requiredplatformversion-element-visual-studio-templates.md)|Especifica a versão do sistema operacional que os destinos de modelo de projeto.|
+|[RequiredPlatformVersion](../extensibility/requiredplatformversion-element-visual-studio-templates.md)|Especifica a versão do sistema operacional que o modelo de projeto tem como destino.|
 
 ### <a name="parent-elements"></a>Elementos pai
 
 |Elemento|Descrição|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Categoriza o modelo e define como ele é exibido em qualquer um de **novo projeto** ou o **Adicionar Novo Item** caixa de diálogo.|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Categoriza o modelo e define como ele é exibido no **novo projeto** ou na caixa de diálogo **Adicionar novo item** .|
 
 ## <a name="text-value"></a>Valor de texto
  Um valor de texto é obrigatório.
@@ -52,7 +52,7 @@ Especifica a plataforma de que os destinos de modelo de projeto. Esse elemento �
  O texto deve ser **Windows**.
 
 ## <a name="example"></a>Exemplo
- Este exemplo especifica que os destinos de modelo de projeto [!INCLUDE[win8](../debugger/includes/win8_md.md)] ou posterior.
+ Este exemplo especifica que o modelo de projeto tem como destino [!INCLUDE[win8](../debugger/includes/win8_md.md)] ou posterior.
 
 ```xml
 <VSTemplate Type="Project" Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">

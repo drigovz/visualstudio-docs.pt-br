@@ -1,5 +1,5 @@
 ---
-title: IDebugApplicationNodeEvents::onAttach | Microsoft Docs
+title: 'IDebugApplicationNodeEvents:: onattach | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d606292eda60fbb367802dbd5df973b933f3fe14
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e45af6b931dad28a41f8f4453db9fab96405df3b
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62821948"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574689"
 ---
 # <a name="idebugapplicationnodeeventsonattach"></a>IDebugApplicationNodeEvents::onAttach
-Manipula um evento indicando que o objeto de nó do aplicativo de depuração foi anexado a um nó pai.  
+Manipula um evento que significa que o objeto depurar nó do aplicativo foi anexado a um nó pai.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -37,9 +37,9 @@ HRESULT onAttach(
   
 #### <a name="parameters"></a>Parâmetros  
  `prddpParent`  
- [in] O nó de aplicativo de depuração que é o pai deste nó.  
+ no O nó do aplicativo de depuração que é o pai deste nó.  
   
-## <a name="return-value"></a>Valor de retorno  
+## <a name="return-value"></a>Valor retornado  
  O método retorna um `HRESULT`. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.  
   
 |Valor|Descrição|  
@@ -47,11 +47,11 @@ HRESULT onAttach(
 |`S_OK`|O método foi bem-sucedido.|  
   
 ## <a name="remarks"></a>Comentários  
- Esse método manipula um evento indicando que o objeto de nó do aplicativo de depuração foi anexado a um nó pai.  
+ Esse método trata um evento que significa que o objeto depurar nó do aplicativo foi anexado a um nó pai.  
   
- Os implementadores a `IDebugApplicationNode` interface gere este evento.  
+ Os implementadores da interface `IDebugApplicationNode` geram esse evento.  
   
 ## <a name="see-also"></a>Consulte também  
- [Interface IDebugApplicationNodeEvents](../../winscript/reference/idebugapplicationnodeevents-interface.md)   
+   de [interface IDebugApplicationNodeEvents](../../winscript/reference/idebugapplicationnodeevents-interface.md)  
  [IDebugApplicationNodeEvents::onDetach](../../winscript/reference/idebugapplicationnodeevents-ondetach.md)   
  [IDebugApplicationNode Interface](../../winscript/reference/idebugapplicationnode-interface.md)

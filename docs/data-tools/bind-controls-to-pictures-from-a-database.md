@@ -12,42 +12,42 @@ helpviewer_keywords:
 - PictureBox control [Windows Forms], data binding
 - images [Visual Basic], dragging from Data Sources window
 ms.assetid: 9748815e-3556-49e8-86b1-c6aa593c6163
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4e41cb7bf747a1c083dc1728d7ea26f47ad8fa48
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 64168339e5f6bd9be6b3108268a009f6a87bc22c
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62818157"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72648828"
 ---
 # <a name="bind-controls-to-pictures-from-a-database"></a>Associar controles a imagens de um banco de dados
 
-Você pode usar o **fontes de dados** window para vincular uma imagem em um banco de dados a um controle em seu aplicativo. Por exemplo, você pode vincular uma imagem para uma <xref:System.Windows.Controls.Image> de controle em um aplicativo WPF, ou como um <xref:System.Windows.Forms.PictureBox> controle em um aplicativo Windows Forms.
+Você pode usar a janela **Data Sources** para associar uma imagem em um banco de dados a um controle em seu aplicativo. Por exemplo, você pode associar uma imagem a um controle de <xref:System.Windows.Controls.Image> em um aplicativo WPF ou a um controle de <xref:System.Windows.Forms.PictureBox> em um aplicativo Windows Forms.
 
-Imagens em um banco de dados normalmente são armazenadas como matrizes de bytes. Os itens na **fontes de dados** janela que são armazenados como matrizes de bytes têm seu controle tipo definido como **None** por padrão, como matrizes de bytes podem conter qualquer coisa, desde uma simples matriz de bytes para o arquivo executável de um aplicativo grande. Para criar um controle associado a dados para um item de matriz de bytes na **fontes de dados** janela que representa uma imagem, você deve selecionar o controle para criar.
+As imagens em um banco de dados normalmente são armazenadas como matrizes de bytes. Os itens na janela **fontes de dados** que são armazenados como matrizes de bytes têm seu tipo de controle definido como **nenhum** por padrão, pois as matrizes de bytes podem conter qualquer coisa de uma matriz simples de bytes para o arquivo executável de um aplicativo grande. Para criar um controle de associação de dados para um item de matriz de bytes na janela **fontes de dados** que representa uma imagem, você deve selecionar o controle a ser criado.
 
-O procedimento a seguir pressupõe que o **fontes de dados** janela já está preenchida com um item que está associado à sua imagem.
+O procedimento a seguir pressupõe que a janela de **fontes de dados** já esteja preenchida com um item associado à sua imagem.
 
-## <a name="to-bind-a-picture-in-a-database-to-a-control"></a>Para vincular uma imagem em um banco de dados a um controle
+## <a name="to-bind-a-picture-in-a-database-to-a-control"></a>Para associar uma imagem em um banco de dados a um controle
 
-1. Certifique-se de que a superfície de design que você deseja adicionar o controle é aberta no Designer do WPF ou o Designer de formulários do Windows.
+1. Verifique se a superfície de design à qual você deseja adicionar o controle está aberta no designer do WPF ou na Designer de Formulários do Windows.
 
-2. No **fontes de dados** janela, expanda a tabela desejada ou para exibir suas colunas ou propriedades do objeto.
+2. Na janela **fontes de dados** , expanda a tabela ou o objeto desejado para exibir suas colunas ou propriedades.
 
    > [!TIP]
-   > Se o **fontes de dados** janela não estiver aberta, abra-o selecionando **exibição** > **Other Windows** > **fontes de dados**.
+   > Se a janela **fontes de dados** não estiver aberta, abra-a selecionando **Exibir**  >  outras**fontes de dados**do**Windows**  > .
 
-3. Selecione a coluna ou propriedade que contém os dados de imagem e selecione um dos seguintes controles na sua lista de controle de lista suspensa:
+3. Selecione a coluna ou propriedade que contém os dados da imagem e selecione um dos seguintes controles na lista suspensa controle:
 
-    - Se o WPF designer estiver aberto, selecione **imagem**.
+    - Se o designer do WPF estiver aberto, selecione **imagem**.
 
-    - Se o designer de formulários do Windows é aberto, selecione **PictureBox**.
+    - Se o designer de Windows Forms estiver aberto, selecione **PictureBox**.
 
-    - Como alternativa, você pode selecionar um controle diferente, que dá suporte à vinculação de dados e que pode exibir imagens. Se o controle que você deseja usar não estiver na lista de controles disponíveis, você pode adicioná-lo à lista e, em seguida, selecioná-lo. Para obter mais informações, consulte [adicionar controles personalizados à janela fontes de dados](../data-tools/add-custom-controls-to-the-data-sources-window.md).
+    - Como alternativa, você pode selecionar um controle diferente que dá suporte à vinculação de dados e que pode exibir imagens. Se o controle que você deseja usar não estiver na lista de controles disponíveis, você poderá adicioná-lo à lista e, em seguida, selecioná-lo. Para obter mais informações, consulte [Adicionar controles personalizados à janela fontes de dados](../data-tools/add-custom-controls-to-the-data-sources-window.md).
 
 ## <a name="see-also"></a>Consulte também
 

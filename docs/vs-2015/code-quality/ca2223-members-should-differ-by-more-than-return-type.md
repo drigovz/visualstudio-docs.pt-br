@@ -1,5 +1,5 @@
 ---
-title: 'CA2223: Os membros devem ser diferentes por tipo de retorno | Microsoft Docs'
+title: 'CA2223: os membros devem ser diferentes por mais do que o tipo de retorno | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,40 +12,40 @@ helpviewer_keywords:
 - MembersShouldDifferByMoreThanReturnType
 ms.assetid: eb326d9f-50d9-48cb-84be-d41c84a8fe09
 caps.latest.revision: 16
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 6a460cd01d671d347e1cd126d009fe19e140cc69
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 1fab269e8f583f8b55f52eb70a5a813450f8a184
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58927499"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72658887"
 ---
-# <a name="ca2223-members-should-differ-by-more-than-return-type"></a>CA2223: Os membros devem ser diferentes em algo além de um tipo de retorno
+# <a name="ca2223-members-should-differ-by-more-than-return-type"></a>CA2223: os membros devem ser diferentes além do tipo de retorno
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |NomeDoTipo|MembersShouldDifferByMoreThanReturnType|
 |CheckId|CA2223|
-|Categoria|Microsoft.Usage|
+|Categoria|Microsoft. Usage|
 |Alteração Significativa|Quebra|
 
 ## <a name="cause"></a>Causa
- Dois membros públicos ou protegidos têm assinaturas que são idênticas, exceto por tipo de retorno.
+ Dois membros públicos ou protegidos têm assinaturas que são idênticas, exceto pelo tipo de retorno.
 
 ## <a name="rule-description"></a>Descrição da Regra
- Embora o common language runtime permite o uso de tipos de retorno para diferenciar entre membros outrora idênticos, esse recurso não está na especificação da linguagem comum, nem é um recurso comum das linguagens de programação do .NET. Quando os membros diferem somente por tipo de retorno, os desenvolvedores e ferramentas de desenvolvimento podem não distinguir corretamente entre eles.
+ Embora o Common Language Runtime permita o uso de tipos de retorno para diferenciar entre outros membros idênticos, esse recurso não está no Common Language Specification, nem é um recurso comum das linguagens de programação do .NET. Quando os membros diferem apenas pelo tipo de retorno, os desenvolvedores e as ferramentas de desenvolvimento podem não distinguir corretamente entre eles.
 
 ## <a name="how-to-fix-violations"></a>Como Corrigir Violações
- Para corrigir uma violação dessa regra, altere o design dos membros para que eles são exclusivos com base apenas em seus nomes e tipos de parâmetro ou não exponham os membros.
+ Para corrigir uma violação dessa regra, altere o design dos membros para que eles sejam exclusivos com base apenas em seus nomes e tipos de parâmetros, ou não exponha os membros.
 
 ## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos
  Não suprima um aviso nessa regra.
 
 ## <a name="example"></a>Exemplo
- O exemplo a seguir, na Microsoft intermediate language (MSIL), mostra um tipo que viola essa regra. Observe que essa regra não pode ser violada usando C# ou Visual Basic .NET.
+ O exemplo a seguir, em MSIL (Microsoft Intermediate Language), mostra um tipo que viola essa regra. Observe que essa regra não pode ser violada usando C# o ou Visual Basic .net.
 
 ```
 

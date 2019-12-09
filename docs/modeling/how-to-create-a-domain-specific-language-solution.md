@@ -1,5 +1,5 @@
 ---
-title: 'Como: Criar uma solução de Linguagem Específica de Domínio'
+title: Como criar uma solução de linguagem específica do domínio
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -8,37 +8,37 @@ helpviewer_keywords:
 - Domain-Specific Language Tools, walkthroughs
 - walkthroughs [Domain-Specific Language Tools], creating domain-specific language
 - Domain-Specific Language Tools, creating solutions
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ac8a47aeca8875dabe3fdf388e9a73d68ec514e
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: f6d4a19143ccde160a455a8247d10e5cc391e78c
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445210"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985120"
 ---
-# <a name="how-to-create-a-domain-specific-language-solution"></a>Como: Criar uma solução de Linguagem Específica de Domínio
-Uma linguagem específica de domínio (DSL) é criada usando uma solução do Visual Studio especializada.
+# <a name="how-to-create-a-domain-specific-language-solution"></a>Como criar uma solução de linguagem específica do domínio
+Uma DSL (linguagem específica do domínio) é criada usando uma solução especializada do Visual Studio.
 
-## <a name="prerequisites"></a>Pré-requisitos
+## <a name="prerequisites"></a>Prerequisites
 
-Antes de iniciar este procedimento, instale esses componentes:
+Para poder iniciar este procedimento, instale estes componentes:
 
 - Visual Studio
-- SDK do Visual Studio (instalado como parte dos **desenvolvimento de extensões do Visual Studio** carga de trabalho)
-- Modelando o SDK (instalado como um componente do Visual Studio)
+- SDK do Visual Studio (instalado como parte da carga de trabalho de **desenvolvimento de extensão do Visual Studio** )
+- SDK de modelagem (instalado como um componente do Visual Studio)
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
-## <a name="creating-a-domain-specific-language-solution"></a>Criando uma solução de linguagem específica do domínio
+## <a name="creating-a-domain-specific-language-solution"></a>Criando uma solução de linguagem específica de domínio
 
-1. Iniciar o Assistente de DSL, criando um novo **Designer de linguagem específica do domínio** projeto.
+1. Inicie o assistente de DSL criando um novo projeto de **Designer de linguagem específica de domínio** .
 
    > [!NOTE]
-   > De preferência, o nome que você escolhe para o projeto deve ser um Visual válido C# identificador porque ele pode ser usado para gerar código.
+   > Preferivelmente, o nome que você escolher para o projeto deve ser um identificador C# Visual válido, pois ele pode ser usado para gerar código.
 
    ::: moniker range="vs-2017"
 
@@ -48,73 +48,73 @@ Antes de iniciar este procedimento, instale esses componentes:
 
 2. Escolha um modelo DSL.
 
-    Sobre o **selecionar opções de linguagem específica do domínio** , selecione um dos modelos de solução, como **linguagem mínima**. Escolha um modelo que é semelhante a DSL que você deseja criar.
+    Na página **selecionar opções de linguagem específicas de domínio** , selecione um dos modelos de solução, como **linguagem mínima**. Escolha um modelo que seja semelhante à DSL que você deseja criar.
 
-    Para obter mais informações sobre modelos de solução, consulte [escolhendo um modelo de solução de linguagem específica do domínio](../modeling/choosing-a-domain-specific-language-solution-template.md).
+    Para obter mais informações sobre modelos de solução, consulte [escolhendo um modelo de solução de linguagem específica de domínio](../modeling/choosing-a-domain-specific-language-solution-template.md).
 
-3. Digite uma extensão de nome de arquivo **extensão de arquivo** página. Ele deve ser exclusivo no seu computador e, em todos os computadores nos quais você deseja instalar a DSL. Você deve ver a mensagem **nenhum aplicativo ou os editores do Visual Studio usam esta extensão**.
+3. Insira uma extensão de nome de **arquivo** na página extensão de arquivos. Ele deve ser exclusivo em seu computador e em todos os computadores nos quais você deseja instalar a DSL. Você deve ver a mensagem **nenhum aplicativo ou editor do Visual Studio usam essa extensão**.
 
-   - Se você usou a extensão de nome de arquivo no anteriores DSLs experimentais que não foram totalmente instaladas, você pode desmarcá-las fora usando o **redefinir a instância Experimental** ferramenta, que pode ser encontrada no menu do SDK do Visual Studio.
+   - Se você usou a extensão de nome de arquivo em DSLs experimentais anteriores que não foram totalmente instaladas, você pode limpá-las usando a ferramenta **redefinir a instância experimental** , que pode ser encontrada no menu do SDK do Visual Studio.
 
-   - Se outra extensão do Visual Studio que usa esta extensão de arquivo tiver sido totalmente instalado em seu computador, considere a possibilidade de desinstalá-lo. Sobre o **ferramentas** menu, clique em **Gerenciador de extensões**.
+   - Se outra extensão do Visual Studio que usa essa extensão de arquivo tiver sido totalmente instalada em seu computador, considere desinstalá-la. No menu **ferramentas** , clique em **Gerenciador de extensões**.
 
-4. Inspecione e ajustar se necessário, os campos nas páginas restantes do assistente. Quando estiver satisfeito com as configurações, clique em **concluir**. Para obter mais informações sobre as configurações, consulte [páginas do Assistente de Designer de DSL](#settings).
+4. Inspecione e, se necessário, ajuste, os campos nas páginas restantes do assistente. Quando estiver satisfeito com as configurações, clique em **concluir**. Para obter mais informações sobre as configurações, consulte [Designer de DSL páginas do assistente](#settings).
 
-    O assistente cria uma solução que tem dois projetos, que são nomeados **Dsl** e **DslPackage**.
+    O assistente cria uma solução que tem dois projetos, chamados **DSL** e **DslPackage**.
 
    > [!NOTE]
-   > Se você vir uma mensagem que o alerta não executar modelos de texto de fontes não confiáveis, clique em **Okey**. Você pode definir essa mensagem não seja exibido novamente.
+   > Se você vir uma mensagem que alerta você não executar modelos de texto de fontes não confiáveis, clique em **OK**. Você pode definir que essa mensagem não apareça novamente.
 
-## <a name="settings"></a> As páginas do Assistente de Designer de DSL
- Você pode deixar vários campos inalterados de seus valores padrão. No entanto, certifique-se de que você defina o campo de extensão de arquivo.
+## <a name="settings"></a>As páginas do assistente de Designer de DSL
+ Você pode deixar vários campos inalterados de seus valores padrão. No entanto, certifique-se de definir o campo extensão de arquivo.
 
-### <a name="solution-settings-page"></a>Página de configurações de solução
- **Qual modelo você deseja basear sua linguagem específica de domínio?**
-Escolha um modelo que é semelhante a DSL que você deseja criar. Os modelos diferentes oferecem pontos de partida. Quando você seleciona um modelo de solução, o assistente exibe uma descrição. Para obter mais informações sobre modelos de solução, consulte [escolhendo um modelo de solução de linguagem específica do domínio](../modeling/choosing-a-domain-specific-language-solution-template.md).
+### <a name="solution-settings-page"></a>Página de configurações da solução
+ **Em qual modelo você gostaria de basear sua linguagem específica de domínio?**
+Escolha um modelo que seja semelhante à DSL que você deseja criar. Os diferentes modelos fornecem pontos de partida convenientes. Quando você seleciona um modelo de solução, o assistente exibe uma descrição. Para obter mais informações sobre modelos de solução, consulte [escolhendo um modelo de solução de linguagem específica de domínio](../modeling/choosing-a-domain-specific-language-solution-template.md).
 
- **O que você deseja nomear sua linguagem específica de domínio?**
-O padrão é o nome da solução. Código é gerado a partir esse valor. Ele deve ser válido como um nome de classe c#.
+ **Como você deseja nomear sua linguagem específica de domínio?**
+O padrão é o nome da solução. O código é gerado a partir desse valor. Ele deve ser válido como um C# nome de classe.
 
-### <a name="file-extension-page"></a>Página de extensão de arquivo
- **Use arquivos de modelo do qual extensão deve?**
+### <a name="file-extension-page"></a>Página extensão de arquivo
+ **Qual extensão os arquivos de modelo devem usar?**
 Digite uma nova extensão de arquivo.
 
- Verifique se que essa extensão de arquivo não já foi registrado para uso neste computador, da seguinte maneira:
+ Verifique se essa extensão de arquivo ainda não foi registrada para uso neste computador, da seguinte maneira:
 
- Procure **outras ferramentas e aplicativos registrados para manipular esta extensão**. Se você vir a mensagem **nenhum aplicativo ou os editores do Visual Studio usam esta extensão**, em seguida, você pode usar essa extensão de arquivo.
+ Procure em **outras ferramentas e aplicativos registrados para lidar com essa extensão**. Se você vir a mensagem **nenhum aplicativo ou editor do Visual Studio usa essa extensão**, você pode usar essa extensão de arquivo.
 
- Se você vir uma lista de ferramentas ou pacotes, você deve fazer o seguinte:
+ Se você vir uma lista de ferramentas ou pacotes, siga um destes procedimentos:
 
 - Digite uma extensão de arquivo diferente.
 
      \- ou -
 
-- Redefina a instância Experimental do Visual Studio. Isso cancelará todas as DSLs que você tiver criado anteriormente. Sobre o **iniciar** menu, clique em **todos os programas**, **SDK do Microsoft Visual Studio 2010**, **ferramentas**e, em seguida, **redefinir o Instância do Microsoft Visual Studio 2010 Experimental**. Você pode recriar a outras DSLs que você deseja usar novamente.
+- Redefina a instância experimental do Visual Studio. Isso cancelará o registro de todas as DSLs que você criou anteriormente. No menu **Iniciar** , clique em **todos os programas**, **Microsoft Visual Studio SDK 2010**, **ferramentas**e, em seguida, **redefina a instância experimental Microsoft Visual Studio 2010**. Você pode recompilar todas as outras DSLs que deseja usar novamente.
 
      \- ou -
 
-- Se uma extensão do Visual Studio que usa esta extensão de arquivo tiver sido totalmente instalada em seu computador, desinstale-o. Sobre o **ferramentas** menu, clique em **Gerenciador de extensões**.
+- Se uma extensão do Visual Studio que usa essa extensão de arquivo tiver sido totalmente instalada em seu computador, desinstale-a. No menu **ferramentas** , clique em **Gerenciador de extensões**.
 
 ### <a name="product-settings-page"></a>Página de configurações do produto
- **O que é o nome do produto que a nova linguagem específica de domínio pertence?**
+ **Qual é o nome do produto ao qual a nova linguagem específica de domínio pertence?**
 O padrão é o nome DSL.
 
- Esse valor é usado no Windows Explorer (ou Explorador de arquivos) para descrever os arquivos que têm essa extensão de arquivo.
+ Esse valor é usado no Windows Explorer (ou explorador de arquivos) para descrever os arquivos que têm essa extensão de arquivo.
 
- **O que é o nome da empresa que o produto pertence?**
-Nome da sua empresa.
+ **Qual é o nome da empresa à qual o produto pertence?**
+O nome da sua empresa.
 
- Esse valor é incorporado nas propriedades de AssemblyInfo do seu pacote DSL.
+ Esse valor é incorporado às propriedades de AssemblyInfo do seu pacote de DSL.
 
- **O que é o namespace raiz para projetos nesta solução?**
-Esse padrão é um nome composto de sua empresa e nomes de produto.
+ **Qual é o namespace raiz para projetos nesta solução?**
+O padrão é um nome composto por seus nomes de produtos e da empresa.
 
 ### <a name="signing-page"></a>Página Assinatura
- **Criar um arquivo de chave de nome forte** a opção padrão é criar uma nova chave para assinar seu assembly DSL.
+ **Criar um arquivo de chave de nome forte** A opção padrão é criar uma nova chave para assinar seu assembly DSL.
 
- **Usar chave existente de nome forte** Use esta opção se você deseja integrar sua DSL com outro assembly.
+ **Usar chave de nome forte existente** Use esta opção se você quiser integrar sua DSL com outro assembly.
 
- Para obter mais informações sobre nomes fortes, consulte [criando e usando Assemblies nomes fortes](http://go.microsoft.com/fwlink/?LinkId=186073).
+ Para obter mais informações sobre nomes fortes, consulte [criando e usando assemblies de nome forte](/dotnet/standard/assembly/create-use-strong-named).
 
 ## <a name="see-also"></a>Consulte também
 

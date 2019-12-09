@@ -17,33 +17,33 @@ helpviewer_keywords:
 - Devenv, /UseEnv
 ms.assetid: 2dd14603-a61b-42d2-ba31-427a0ee8a799
 caps.latest.revision: 9
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 48f1543bcecf64a37f98de3edddf2c57dbf46f5c
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 63a83bccf205cbe30b69837b5acdd42a01ffce99
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59651767"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72657895"
 ---
 # <a name="useenv-devenvexe"></a>/UseEnv (devenv.exe)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Inicia [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] e carrega variáveis de ambiente para o a caixa de diálogo **Diretórios VC++**.  
-  
-## <a name="syntax"></a>Sintaxe  
-  
-```  
-Devenv /useenv  
-```  
-  
-## <a name="example"></a>Exemplo  
- O seguinte exemplo inicia [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] e carrega variáveis de ambiente para a caixa de diálogo **Diretórios do VC++**.  
-  
-```  
-Devenv.exe /useenv  
-```  
-  
-## <a name="see-also"></a>Consulte também  
+Inicia [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] e carrega variáveis de ambiente para o a caixa de diálogo **Diretórios VC++** .
+
+## <a name="syntax"></a>Sintaxe
+
+```
+Devenv /useenv
+```
+
+## <a name="example"></a>Exemplo
+ O seguinte exemplo inicia [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] e carrega variáveis de ambiente para a caixa de diálogo **Diretórios do VC++** .
+
+```
+Devenv.exe /useenv
+```
+
+## <a name="see-also"></a>Veja também
  [Opções de linha de comando devenv](../../ide/reference/devenv-command-line-switches.md)

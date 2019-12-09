@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugReturnValueEvent2::GetReturnValue
 ms.assetid: 86c50d5a-6df6-4798-818a-c587a8741f90
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 76d129d433f43b9264dc7262841d9b84c4d729c2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 3ddba529115bfb868fc913c37f9b15f1b4f658ad
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62916282"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66329661"
 ---
 # <a name="idebugreturnvalueevent2getreturnvalue"></a>IDebugReturnValueEvent2::GetReturnValue
 Obtém o valor retornado no passo a passo de ou em uma função.
@@ -36,10 +39,9 @@ int GetReturnValue ( 
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `ppReturnValue`
-
- [out] Retorna um [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) objeto que representa o valor a ser recuperado.
+## <a name="parameters"></a>Parâmetros
+`ppReturnValue`\
+[out] Retorna um [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) objeto que representa o valor a ser recuperado.
 
 ## <a name="return-value"></a>Valor de retorno
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.

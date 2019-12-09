@@ -1,5 +1,5 @@
 ---
-title: Depuração de aplicativos | Microsoft Docs
+title: Depurando aplicativos | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -13,25 +13,27 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b918559742e9570ba3ad0ad1233ab643d087fdd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: baa028029081ee1c9c88b75aac416b634632b21a
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62852245"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188375"
 ---
 # <a name="debugging-applications"></a>Depurando aplicativos
-As seções a seguir tratam de depuração para tipos específicos de aplicativos. Diferentes tipos de aplicativos e linguagens diferentes exigem técnicas e configurações diferentes e presente diferente problemas que precisam ser depurado.
+As seções a seguir lidam com a depuração de tipos específicos de aplicativos. Diferentes tipos de aplicativos e linguagens diferentes exigem configurações e técnicas diferentes e apresentam diferentes problemas que precisam ser depurados.
 
-## <a name="debugging-for-different-types-of-applications"></a>Depuração de diferentes tipos de aplicativos
+## <a name="debugging-for-different-types-of-applications"></a>Depurando para diferentes tipos de aplicativos
 
 |||
 |-|-|
 |[Depurar aplicativos UWP](../debugger/debugging-windows-store-and-windows-universal-apps.md)|Descreve como depurar aplicativos UWP.|
-|[Depurar código gerenciado](../debugger/debugging-managed-code.md)|Descreve como depurar código gerenciado (Visual c#, Visual Basic e F3).|
-|[Depurar código nativo](../debugger/debugging-native-code.md)|Descreve como depurar um tipo diferente de aplicativos nativos do C++.|
-|[Depurar o código GPU](../debugger/debugging-gpu-code.md)|Descreve como depurar código C++ que é executado na unidade de processamento gráfico (GPU).|
-|[Diagnóstico de gráficos (depuração de gráficos DirectX)](/visualstudio/debugger/graphics/visual-studio-graphics-diagnostics)|Descreve como depurar de gráficos do DirectX.|
+|[Depurar código gerenciado](../debugger/debugging-managed-code.md)|Descreve como depurar código gerenciado (Visual C#, Visual Basic, F#e C++/CLI).|
+|[Depurar código nativo](../debugger/debugging-native-code.md)|Descreve como depurar diferentes tipos de aplicativos nativos C++ .|
+|[Depurar o código GPU](../debugger/debugging-gpu-code.md)|Descreve como depurar C++ o código que é executado na GPU (unidade de processamento gráfico).|
+|[Diagnóstico de gráficos (depuração de gráficos DirectX)](graphics/visual-studio-graphics-diagnostics.md)|Descreve como depurar elementos gráficos do DirectX.|
 |[Depurar aplicativos ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md)|Descreve como depurar aplicativos ASP.NET.|
-|[Depurar aplicativos Web](../debugger/debugging-web-applications.md)|Descreve como depurar scripts e aplicativos Web.|
-|[Depurar serviços WCF](../debugger/debugging-wcf-services.md)|Descreve como depurar serviços Windows Communication Foundation.|
+|[Depurar código Python](../python/tutorial-working-with-python-in-visual-studio-step-04-debugging.md)|Descreve como depurar o código Python|
+|[Depurar aplicativos JavaScript e TypeScript](../javascript/debug-nodejs.md)|Descreve como depurar aplicativos JavaScript, TypeScript e node. js|
+|[Depurar aplicativos Web](../debugger/debugging-web-applications.md)|Descreve como depurar aplicativos e scripts da Web.|
+|[Depurar serviços WCF](../debugger/debugging-wcf-services.md)|Descreve como depurar serviços de Windows Communication Foundation.|

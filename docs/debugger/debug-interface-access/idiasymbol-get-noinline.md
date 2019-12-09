@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d0523618298cb6575a5bdb8b92bdc6a4b8c103c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: e5cc592f6be2e3fdd4f791c637e588e10a187ae2
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63400522"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739744"
 ---
-# <a name="idiasymbolgetnoinline"></a>IDiaSymbol::get_noInline
-Recupera um sinalizador que especifica se a função foi marcada como não sendo embutido (usando o [noinline](/cpp/cpp/noinline) atributo).
+# <a name="idiasymbolget_noinline"></a>IDiaSymbol::get_noInline
+Recupera um sinalizador que especifica se a função foi marcada como não embutida (usando o atributo [noinline](/cpp/cpp/noinline) ).
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -33,20 +33,20 @@ HRESULT get_noInline(
 #### <a name="parameters"></a>Parâmetros
  `pFlag`
 
-[out] Retorna `TRUE` se a função tem o `noinline` atributo; caso contrário, retornará `FALSE`.
+fora Retorna `TRUE` se a função tiver o atributo `noinline`; caso contrário, retorna `FALSE`.
 
-## <a name="return-value"></a>Valor de retorno
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE` ou um código de erro.
 
 > [!NOTE]
-> Um valor de retorno `S_FALSE` significa que a propriedade não está disponível para o símbolo.
+> Um valor de retorno de `S_FALSE` significa que a propriedade não está disponível para o símbolo.
 
 ## <a name="requirements"></a>Requisitos
 
 |Requisito|Descrição|
 |-----------------|-----------------|
 |Cabeçalho:|dia2.h|
-|Versão:|V DIA SDK 8.0|
+|Versão:|DIA SDK v 8.0|
 
 ## <a name="see-also"></a>Consulte também
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

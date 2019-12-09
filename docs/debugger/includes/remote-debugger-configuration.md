@@ -13,18 +13,18 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.openlocfilehash: d89dbc0b752c2b8c538ec53769c166b6edbd802f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2e5782c49f26925d9eda81f04653b1a20666c6b1
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62902844"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "68149166"
 ---
 1. No computador remoto, localizar e iniciar o **depurador remoto** da **iniciar** menu. 
    
    Se você não tiver permissões administrativas no computador remoto, clique com botão direito do **depurador remoto** aplicativo e selecione **executar como administrador**. Caso contrário, apenas iniciá-lo normalmente.
 
-   Pode haver diferentes versões do *msvsmon.exe* na *x64*, *x32*, ou outras pastas. Certifique-se de iniciar a versão que você precise depurar seu aplicativo. 
+   Se você estiver planejando anexar a um processo que está sendo executado como um administrador ou está em execução em um usuário diferente da conta (como o IIS), clique com botão direito do **depurador remoto** aplicativo e selecione **executar como administrador**. Para obter mais informações, consulte [executar o depurador remoto como um administrador](../remote-debugging-errors-and-troubleshooting.md#run-the-remote-debugger-as-an-administrator).
    
 1. Na primeira vez que você inicia o depurador remoto (ou antes você tiver configurado), o **configuração de depuração remota** caixa de diálogo é exibida.  
   

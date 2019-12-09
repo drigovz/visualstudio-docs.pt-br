@@ -1,6 +1,6 @@
 ---
 title: Caracteres especiais do MSBuild | Microsoft Docs
-ms.date: 11/04/2016
+ms.date: 06/12/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - escape characters
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a87013ff3a1911caa667f7ba431e408fc87a98f4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cf312c1b73dbed58cc261c77a74555d00b0b04ba
+ms.sourcegitcommit: fd5a5b057df3d733f5224c305096907989811f85
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63004633"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "67195069"
 ---
 # <a name="msbuild-special-characters"></a>Caracteres especiais do MSBuild
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] reserva alguns caracteres para uso especial em contextos específicos. Você precisa apenas tais caracteres de escape se desejar usá-los literalmente no contexto no qual eles estão reservados. Por exemplo, um asterisco tem um significado especial somente nos atributos `Include` e `Exclude` de uma definição de item e, em chamadas para `CreateItem`. Se você quiser que um asterisco seja exibido como um asterisco em um desses contextos, você deve usar um caractere de escape. Nos outros contextos, basta digitar o asterisco onde você deseja que ele apareça.
@@ -32,7 +32,7 @@ ms.locfileid: "63004633"
 |%|%25|Metadados de referência|
 |$|%24|Propriedades de referência|
 |@|%40|Listas de Itens de Referência|
-|\'|%27|Condições e outras expressões|
+|'|%27|Condições e outras expressões|
 |;|%3B|Separador de lista|
 |?|%3F|Caractere curinga para nomes de arquivos em atributos `Include` e `Exclude`|
 |*|%2A|Caractere curinga para uso em nomes de arquivos em atributos `Include` e `Exclude`|

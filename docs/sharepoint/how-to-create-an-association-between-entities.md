@@ -1,5 +1,5 @@
 ---
-title: 'Como: Criar uma associação entre entidades | Microsoft Docs'
+title: 'Como: criar uma associação entre entidades | Microsoft Docs'
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -21,56 +21,56 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ce6d0bad9da4f11b5fae1daf93657c6908cf5e95
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cba9d712e2bcfa90ae37d47e3c518697f10b6add
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62966790"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72981840"
 ---
-# <a name="how-to-create-an-association-between-entities"></a>Como: Criar uma associação entre entidades
-  Você pode definir relações entre entidades em seu modelo de conectividade de dados comerciais (BDC) com a criação de associações. Visual Studio gera os métodos que fornecem os consumidores do modelo com informações sobre cada associação. Esses métodos podem ser consumidos por web parts, listas ou aplicativos personalizados para exibir relações de dados em uma interface de usuário (IU) do SharePoint.
+# <a name="how-to-create-an-association-between-entities"></a>Como: criar uma associação entre entidades
+  Você pode definir relações entre entidades em seu modelo de BDC (conectividade de dados corporativos) Criando associações. O Visual Studio gera métodos que fornecem aos consumidores do modelo informações sobre cada associação. Esses métodos podem ser consumidos por Web Parts do SharePoint, listas ou aplicativos personalizados para exibir relações de dados em uma interface do usuário.
 
- Você pode criar dois tipos de associações no designer de BDC: associações de baseada em chave estrangeiras e associações sem chave estrangeiras. Para obter mais informações, consulte [criar uma associação entre entidades](../sharepoint/creating-an-association-between-entities.md).
+ Você pode criar dois tipos de associações no designer do BDC: associações baseadas em chave estrangeira e associações de chaves estrangeiras externas. Para obter mais informações, consulte [criar uma associação entre entidades](../sharepoint/creating-an-association-between-entities.md).
 
 ### <a name="to-create-an-association-between-entities"></a>Para criar uma associação entre entidades
 
-1. Sobre o **BusinessDataConnectivity** guia do **caixa de ferramentas**, escolha o **associação** item.
+1. Na guia **BusinessDataConnectivity** da caixa de **ferramentas**, escolha o item de **Associação** .
 
-2. No Designer de BDC, escolha a entidade de origem e, em seguida, escolha a entidade de destino.
+2. No BDC designer, escolha a entidade de origem e, em seguida, escolha a entidade de destino.
 
-     O **Editor de associação** é exibida.
+     O **Editor de associação** é exibido.
 
-3. Se você quiser criar uma associação de baseada em chave estrangeira, selecione a **é a associação de chave estrangeira** caixa de seleção.
+3. Se você quiser criar uma associação baseada em chave estrangeira, marque a caixa de seleção **é Associação de chave estrangeira** .
 
-    1. No **ID da fonte** coluna do **mapeamento de identificador** da tabela, escolha o identificador ao lado de cada descritor de tipo correspondente que aparece no **campo** coluna.
+    1. Na coluna **ID da origem** da tabela de **mapeamento de identificadores** , escolha o identificador ao lado de cada descritor de tipo correspondente que aparece na coluna **campo** .
 
-         Por exemplo, no **ID da fonte** coluna, selecione `ContactID` lado a `ReadList.salesOrderList.SalesOrderList.SalesOrder.ContactID` descritor de tipo e o `ReadItem.salesOrder.SalesOrder.ContactID` descritor de tipo.
+         Por exemplo, na coluna **ID de origem** , selecione `ContactID` ao lado do descritor de tipo `ReadList.salesOrderList.SalesOrderList.SalesOrder.ContactID` e o descritor de tipo `ReadItem.salesOrder.SalesOrder.ContactID`.
 
-4. Se você quiser criar uma associação sem chave estrangeira, desmarque a **é a associação de chave estrangeira** caixa de seleção.
+4. Se você quiser criar uma associação de um reless estrangeiro, desmarque a caixa de seleção **é Associação de chave estrangeira** .
 
-5. Escolha o botão **OK**.
+5. Selecione o botão **OK**.
 
-6. No Designer de BDC, aparece uma linha que representa a associação entre a entidade de origem e a entidade de destino.
+6. No BDC designer, uma linha que representa a associação aparece entre a entidade de origem e a entidade de destino.
 
-     O Visual Studio adiciona um método de navegador de associação para a classe de serviço da entidade de destino e a classe de serviço da entidade de origem. Para obter mais informações sobre métodos de navegação de associação, consulte [operações com suporte](http://go.microsoft.com/fwlink/?LinkId=169286).
+     O Visual Studio adiciona um método de navegador de associação à classe de serviço da entidade de destino e a classe de serviço da entidade de origem. Para obter mais informações sobre métodos de navegação de associação, consulte [operações com suporte](/previous-versions/office/developer/sharepoint-2010/ee557363(v=office.14)).
 
-7. O método Navigator de associação da entidade de origem, adicione o código que retorna uma coleção de entidades de destino.
+7. No método de navegador de associação da entidade de origem, adicione o código que retorna uma coleção de entidades de destino.
 
-8. No método Navigator de associação da entidade de destino, adicione o código que retorna a entidade de origem relacionados.
+8. No método de navegador de associação da entidade de destino, adicione o código que retorna a entidade de origem relacionada.
 
-     Para obter exemplos de métodos de navegador de associação, consulte [criar uma associação entre entidades](../sharepoint/creating-an-association-between-entities.md).
+     Para obter exemplos de métodos do navegador de associação, consulte [criar uma associação entre entidades](../sharepoint/creating-an-association-between-entities.md).
 
 ## <a name="see-also"></a>Consulte também
 - [Criar uma associação entre entidades](../sharepoint/creating-an-association-between-entities.md)
 - [Criar um modelo de conectividade de dados corporativos](../sharepoint/designing-a-business-data-connectivity-model.md)
-- [Como: Adicionar um método Finder](../sharepoint/how-to-add-a-finder-method.md)
-- [Como: Adicionar um método Finder específico](../sharepoint/how-to-add-a-specific-finder-method.md)
-- [Como: Adicionar um método Creator](../sharepoint/how-to-add-a-creator-method.md)
-- [Como: Adicionar um método Deleter](../sharepoint/how-to-add-a-deleter-method.md)
-- [Como: Adicionar um método Updater](../sharepoint/how-to-add-an-updater-method.md)
-- [Visão geral de ferramentas de design de modelo BDC](../sharepoint/bdc-model-design-tools-overview.md)
-- [Como: Adicionar um parâmetro a um método](../sharepoint/how-to-add-a-parameter-to-a-method.md)
-- [Como: Definir uma instância de método](../sharepoint/how-to-define-a-method-instance.md)
-- [Como: Definir o descritor de tipo de um parâmetro](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)
-- [Passo a passo: Criar uma lista externa no SharePoint usando dados corporativos](../sharepoint/walkthrough-creating-an-external-list-in-sharepoint-by-using-business-data.md)
+- [Como adicionar um método localizador](../sharepoint/how-to-add-a-finder-method.md)
+- [Como adicionar um método localizador específico](../sharepoint/how-to-add-a-specific-finder-method.md)
+- [Como: adicionar um método de criador](../sharepoint/how-to-add-a-creator-method.md)
+- [Como adicionar um método excluidor](../sharepoint/how-to-add-a-deleter-method.md)
+- [Como adicionar um método de atualizador](../sharepoint/how-to-add-an-updater-method.md)
+- [Visão geral das ferramentas de design de modelo do BDC](../sharepoint/bdc-model-design-tools-overview.md)
+- [Como: adicionar um parâmetro a um método](../sharepoint/how-to-add-a-parameter-to-a-method.md)
+- [Como definir uma instância de método](../sharepoint/how-to-define-a-method-instance.md)
+- [Como definir o descritor de tipo de um parâmetro](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)
+- [Walkthrough: criar uma lista externa no SharePoint usando dados corporativos](../sharepoint/walkthrough-creating-an-external-list-in-sharepoint-by-using-business-data.md)

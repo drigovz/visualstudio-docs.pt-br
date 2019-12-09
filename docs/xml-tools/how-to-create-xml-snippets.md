@@ -1,53 +1,53 @@
 ---
-title: 'Como: Criar snippet XML'
+title: 'Como: Crie snippets XML'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: d8556dd7-1382-4af7-ba80-3e873c9416be
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 99ad13fd3c8c1c2efeeec28794e10a91d9dd0db1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: eb511ba6f2eea9c56be4e826c3b689856c22214a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62948833"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72645933"
 ---
-# <a name="how-to-create-xml-snippets"></a>Como: Criar snippets XML
+# <a name="how-to-create-xml-snippets"></a>Como: criar trechos XML
 
-O editor XML pode ser usado para criar novos trechos XML. O editor inclui um snippet XML, chamado “Snippets”, que é um snippet de texto constante para criar novos snippets XML.
+O editor de XML pode ser usado para criar novos trechos de código XML. O editor inclui um snippet XML, chamado “Snippets”, que é um snippet de texto constante para criar novos snippets XML.
 
 ## <a name="to-create-a-new-xml-snippet"></a>Para criar um novo snippet XML
 
- Para criar um novo código XML, o trecho de código crie um novo arquivo XML e usar o **Inserir trecho** recurso.
+Para criar um novo trecho de código XML, crie um novo arquivo XML e use o recurso **Inserir trecho** .
 
-1. Sobre o **arquivo** menu, clique em **New** e, em seguida, clique em **arquivo**.
+1. No menu **arquivo** , clique em **novo** e em **arquivo**.
 
-2. Clique em **arquivo XML** e, em seguida, clique em **abrir**.
+2. Clique em **arquivo XML** e em **abrir**.
 
-3. Clique com botão direito no painel do editor e selecione **Inserir trecho de código**.
+3. Clique com o botão direito do mouse no painel do editor e selecione **Inserir trecho de código**.
 
 4. Selecione **trecho** na lista e pressione **Enter**.
 
 5. Faça as alterações para o novo snippet.
 
-6. Dos **arquivo** menu, selecione **salvar XMLFile**.
+6. No menu **arquivo** , selecione **salvar xmlfile. xml**.
 
-     O **salvar arquivo como** caixa de diálogo é exibida.
+     A caixa de diálogo **salvar arquivo como** é exibida.
 
-7. Insira o nome para o novo trecho e selecione **arquivos de trecho** da **Salvar como tipo** janela suspensa.
+7. Insira o nome para o novo trecho e selecione **arquivos de trecho** na janela suspensa **salvar como tipo** .
 
-8. Use o **salvar no** lista suspensa para alterar o local do arquivo para o *trechos de XML do Meus Documentos\Visual Studio 2005\Code Snippets\XML\My* pasta e pressione **salvar**.
+8. Use a lista suspensa **salvar na** para alterar o local do arquivo para a pasta *Meus Documentos\Visual Studio 2005 \ código Snippets\XML\My XML Snippets* e, em seguida, pressione **salvar**.
 
-## <a name="snippet-description"></a>Descrição do trecho de código
+## <a name="snippet-description"></a>Descrição do trecho
 
- Esta seção descreve alguns dos elementos-chave no snippet de texto constante. Para obter mais informações sobre os elementos de esquema usados por trechos XML, consulte [referência de esquema de trechos de código](../ide/code-snippets-schema-reference.md).
+Esta seção descreve alguns dos elementos-chave no snippet de texto constante. Para obter mais informações sobre elementos de esquema usados pelos trechos XML, consulte [referência de esquema de trechos de código](../ide/code-snippets-schema-reference.md).
 
 ### <a name="snippettype-element"></a>Elemento SnippetType
 
- Suporte do editor dois tipos de snippet:
+Suporte do editor dois tipos de snippet:
 
 ```xml
 <SnippetTypes>
@@ -56,16 +56,16 @@ O editor XML pode ser usado para criar novos trechos XML. O editor inclui um sni
 </SnippetTypes>
 ```
 
- O `Expansion` tipo determina se o trecho aparece quando você chama o **Inserir trecho** comando. O `SurroundsWith` tipo determina se o trecho aparece quando você chama o **Bordadura com** comando.
+O tipo de `Expansion` determina se o trecho de código aparece quando você invoca o comando **Inserir trecho de código** . O tipo de `SurroundsWith` determina se o trecho de código aparece quando você invoca o comando **Circundar com** .
 
 ### <a name="code-element"></a>Elemento de código
 
- O elemento de `Code` define o texto XML que será inserido quando o snippet é chamado.
+O elemento de `Code` define o texto XML que será inserido quando o snippet é chamado.
 
 > [!NOTE]
 > O texto de snippet XML deve ser incluído em uma seção de `<![CDATA[...]]>` .
 
- O seguinte é o elemento de `Code` que é criado pelo snippet de texto constante.
+O seguinte é o elemento de `Code` que é criado pelo snippet de texto constante.
 
 ```xml
 <Code Language="XML">
@@ -75,13 +75,13 @@ O editor XML pode ser usado para criar novos trechos XML. O editor inclui um sni
 </Code>
 ```
 
- O elemento de `Code` inclui três variáveis.
+O elemento de `Code` inclui três variáveis.
 
 - $name$ variável é definido pelo usuário. Cria um elemento de `name` , que tem um valor editável que usa padrão “para nomear”. As variáveis definidas pelo usuário são definidos usando o elemento de `Literal` .
 
-- $selected$ é uma variável predefinido. Representa o texto que foi selecionado no editor de XML antes de invocar o trecho de código. O posicionamento dessa variável determina onde o texto selecionado aparece no snippet de código que circunda a seleção.
+- $selected$ é uma variável predefinido. Ele representa o texto que foi selecionado no editor de XML antes de invocar o trecho de código. O posicionamento dessa variável determina onde o texto selecionado aparece no snippet de código que circunda a seleção.
 
-- $end$ é uma variável predefinido. Quando o usuário pressiona **Enter** para terminar de editar os campos de trecho de código, essa variável determina onde o acento circunflexo (^) é movido.
+- $end$ é uma variável predefinido. Quando o usuário pressiona **Enter** para concluir a edição dos campos de trecho de código, essa variável determina para onde o cursor (^) é movido.
 
   O elemento acima de `Code` insira o seguinte texto XML:
 
@@ -91,11 +91,11 @@ O editor XML pode ser usado para criar novos trechos XML. O editor inclui um sni
 </test>
 ```
 
- O valor do elemento de nome é marcado como uma região editável.
+O valor do elemento de nome é marcado como uma região editável.
 
 ### <a name="literal-element"></a>Elemento Literal
 
- O elemento de `Literal` é usado para identificar o texto de substituição que pode ser personalizada depois que é inserido no arquivo. Por exemplo, cadeias de caracteres literais, os valores numéricos, e alguns nomes de variável podem ser declarados como literais. Você pode definir qualquer número do snippet em literais XML e você pode referir-lhes várias vezes dentro de snippet. O código a seguir é um exemplo de um elemento de `Literal` que define um variável de $name$ cujo valor padrão é “nome”.
+O elemento de `Literal` é usado para identificar o texto de substituição que pode ser personalizada depois que é inserido no arquivo. Por exemplo, cadeias de caracteres literais, os valores numéricos, e alguns nomes de variável podem ser declarados como literais. Você pode definir qualquer número do snippet em literais XML e você pode referir-lhes várias vezes dentro de snippet. O código a seguir é um exemplo de um elemento de `Literal` que define um variável de $name$ cujo valor padrão é “nome”.
 
 ```xml
 <Literal>
@@ -104,7 +104,7 @@ O editor XML pode ser usado para criar novos trechos XML. O editor inclui um sni
 </Literal
 ```
 
- Literais também podem se referir funções. O editor XML inclui uma função chamada **LookupPrefix**. O **LookupPrefix** função procura o determinado URI de namespace do local no documento XML que este trecho de código é invocado do e retorna o prefixo de namespace é definido para esse namespace, se houver, e ele inclui os dois-pontos (:) Esse nome. A seguir está um exemplo de uma `Literal` elemento que usa o **LookupPrefix** função.
+Literais também podem se referir funções. O editor de XML inclui uma função chamada **LookupPrefix**. A função **LookupPrefix** pesquisa o URI de namespace fornecido do local no documento XML para o qual esse trecho é invocado e retorna o prefixo de namespace definido para esse namespace, se houver, e inclui os dois-pontos (:) nesse nome. Veja a seguir um exemplo de um elemento `Literal` que usa a função **LookupPrefix** .
 
 ```xml
 <Literal Editable="false">
@@ -113,10 +113,10 @@ O editor XML pode ser usado para criar novos trechos XML. O editor inclui um sni
 </Literal>
 ```
 
- A variável de $prefix$ pode então ser usado em qualquer lugar no seu snippet XML.
+A variável de $prefix$ pode então ser usado em qualquer lugar no seu snippet XML.
 
 ## <a name="see-also"></a>Consulte também
 
 - [Trechos de código XML](../xml-tools/xml-snippets.md)
-- [Como: Usar trechos de código XML](../xml-tools/how-to-use-xml-snippets.md)
-- [Como: Gerar um trecho XML a partir de um esquema XML](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md)
+- [Como: usar trechos XML](../xml-tools/how-to-use-xml-snippets.md)
+- [Como gerar um trecho XML a partir de um esquema XML](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md)

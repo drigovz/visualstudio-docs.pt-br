@@ -4,83 +4,83 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - tests and requirements
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cc81e0f0912e2a32a6fc582420f4fef9823b9891
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 70e58883e671dea242e0c69aee0ce6cf8b911371
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62982658"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747592"
 ---
 # <a name="develop-tests-from-a-model"></a>Desenvolver testes por meio de um modelo
-Você pode usar os requisitos e modelos de arquitetura para ajudar você a organizar os testes do seu sistema e seus componentes. Essa prática ajuda a garantir que você teste os requisitos que são importantes para os usuários e outros participantes e ajudá-lo a atualizar os testes rapidamente quando os requisitos são alterados. Se você usar [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)], você também pode manter os vínculos entre os modelos e os testes.
+Você pode usar requisitos e modelos arquitetônicos para ajudá-lo a organizar os testes do seu sistema e seus componentes. Essa prática ajuda a garantir que você teste os requisitos que são importantes para os usuários e outros participantes e ajuda a atualizar os testes rapidamente quando os requisitos mudam. Se você usar [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)], também poderá manter links entre os modelos e os testes.
 
- Para ver quais versões do Visual Studio dão suporte a esses recursos, consulte [suporte de versão para a arquitetura e ferramentas de modelagem](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+ Para ver quais versões do Visual Studio oferecem suporte a esses recursos, consulte [suporte de versão para ferramentas de arquitetura e modelagem](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
-## <a name="system-and-subsystem-testing"></a>Teste de subsistema e sistema
- *Testes de sistema* também conhecido como *testes de aceitação*, significa testando se as necessidades de usuários que estão sendo atendidas. Esses testes estão preocupados com o comportamento visível externamente do sistema em vez do design interno.
+## <a name="system-and-subsystem-testing"></a>Teste do sistema e do subsistema
+ O *teste do sistema,* também conhecido como *teste de aceitação*, significa testar se as necessidades dos usuários estão sendo atendidas. Esses testes se preocupam com o comportamento visível externamente do sistema em vez do design interno.
 
- Testes de sistema são muito valiosos ao estender ou reformular um sistema. Eles ajudam a evitar introduzir bugs quando você alterar o código.
+ Os testes do sistema são muito valiosos ao estender ou recriar um sistema. Eles ajudam a evitar a introdução de bugs quando você altera o código.
 
- Quando você planejar qualquer alteração ou a extensão a um sistema, é útil começar com um conjunto de testes de sistema que são executados em um sistema existente. Em seguida, você pode estender ou ajustar os testes para testar os novos requisitos, faça as alterações no código e execute novamente o conjunto completo de testes.
+ Ao planejar qualquer alteração ou extensão em um sistema, é útil começar com um conjunto de testes do sistema que são executados no sistema existente. Em seguida, você pode estender ou ajustar os testes para testar os novos requisitos, fazer as alterações no código e executar novamente o conjunto completo de testes.
 
- Quando você desenvolve um novo sistema, você pode começar a criar testes, assim que o desenvolvimento começa. Definindo testes antes de desenvolver cada recurso, você pode capturar as discussões de requisitos de uma maneira muito específica.
+ Ao desenvolver um novo sistema, você pode começar a criar testes assim que o desenvolvimento começar. Ao definir testes antes de desenvolver cada recurso, você pode capturar as discussões de requisitos de uma maneira muito específica.
 
- Teste de subsistema aplica-se os mesmos princípios para os principais componentes de um sistema. Cada componente é testado separadamente de outros componentes. Subsistema de testes de foco no comportamento visível em interfaces de usuário ou a API do componente.
+ Os testes de subsistema aplicam os mesmos princípios aos principais componentes de um sistema. Cada componente é testado separadamente de outros componentes. Os testes de subsistema se concentram no comportamento visível nas interfaces de usuário ou API do componente.
 
-## <a name="deriving-system-tests-from-a-requirements-model"></a>Derivando de testes do sistema de um modelo de requisitos
- Você pode criar e manter uma relação entre os testes de sistema e um modelo de requisitos. Para estabelecer essa relação, você escreve testes que correspondem aos elementos principais do modelo de requisitos. Visual Studio ajuda você a manter essa relação, permitindo que você criar links entre os testes e as partes do modelo. Para obter mais informações sobre modelos de requisitos, consulte [requisitos de usuário do modelo](../modeling/model-user-requirements.md).
+## <a name="deriving-system-tests-from-a-requirements-model"></a>Derivando testes do sistema de um modelo de requisitos
+ Você pode criar e manter uma relação entre os testes do sistema e um modelo de requisitos. Para estabelecer essa relação, você escreve testes que correspondem aos elementos principais do modelo de requisitos. O Visual Studio ajuda a manter essa relação, permitindo que você crie links entre os testes e partes do modelo. Para obter mais informações sobre modelos de requisitos, consulte [requisitos de usuário de modelo](../modeling/model-user-requirements.md).
 
-### <a name="write-tests-for-each-use-case"></a>Escrever testes para cada caso de uso
- Se você usar [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)], você pode criar um grupo de testes para cada caso de uso que você definiu no seu modelo de requisitos. Por exemplo, se você tiver um caso de uso ordem uma refeição, que inclui criar pedido e Adicionar Item à ordem, você pode criar testes para ambos os geral e mais detalhada desses casos de uso.
+### <a name="write-tests-for-each-use-case"></a>Gravar testes para cada caso de uso
+ Se você usar [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)], poderá criar um grupo de testes para cada caso de uso definido em seu modelo de requisitos. Por exemplo, se você tiver uma ordem de uso, faça uma refeição, que inclui criar pedido e Adicionar item ao pedido, você pode criar testes para o geral e mais detalhados desses casos de uso.
 
  Essas diretrizes podem ser úteis:
 
-- Cada caso de uso deve ter vários testes, para caminhos principais e os resultados excepcionais.
+- Cada caso de uso deve ter vários testes, para caminhos principais e resultados excepcionais.
 
-- Quando você descreve um caso de uso no modelo de requisitos, é mais importante definir seu pós-condição, ou seja, a meta é obtida do que para descrever em detalhes os procedimentos que o usuário segue para alcançar a meta. Por exemplo, a pós-condição de ordem de uma refeição pode ser que um restaurante está preparando uma refeição para um cliente e que o cliente paga. A pós-condição é o critério que seus testes devem verificar.
+- Quando você descreve um caso de uso no modelo de requisitos, é mais importante definir sua condição, ou seja, a meta que é obtida, do que descrever em detalhes os procedimentos que o usuário segue para atingir o objetivo. Por exemplo, a condição de pedido de uma refeição pode ser que um restaurante esteja preparando uma refeição para um cliente e que o cliente tenha pago. A pré-condição é o critério que os testes devem verificar.
 
-- Base testes separados em cláusulas de separados de pós-condição. Por exemplo, crie testes separados para notificar o restaurante da ordem e para fazer o pagamento do cliente. Essa separação tem estas vantagens:
+- Basear testes separados nas cláusulas separadas da pré-condição. Por exemplo, crie testes separados para notificar o restaurante do pedido e para receber o pagamento do cliente. Essa separação tem estas vantagens:
 
-    - Com frequência as alterações em diferentes aspectos dos requisitos ocorrem de forma independente. Separando os testes em diferentes aspectos dessa maneira, você tornar mais fácil atualizar os testes quando requisitos mudam.
+  - As alterações em diferentes aspectos dos requisitos geralmente ocorrem de forma independente. Ao separar os testes em diferentes aspectos dessa maneira, você torna mais fácil atualizar os testes quando os requisitos mudam.
 
-    - Se o plano de desenvolvimento implementa um aspecto do caso de uso antes da outra, você pode habilitar os testes separadamente à medida que progride de desenvolvimento.
+  - Se o plano de desenvolvimento implementar um aspecto do caso de uso antes de outro, você poderá habilitar os testes separadamente conforme o desenvolvimento progride.
 
-- Quando você cria os testes, separe a escolha de dados de teste do código ou script que determina se a pós-condição foi atingida. Por exemplo, um teste de uma função aritmético simples pode ser: Entrada 4; Verifique se a saída é 2. Em vez disso, crie o script como: Escolha uma entrada; Multiplique o resultado por si só e verifique se o resultado é a entrada original. Esse estilo permite variar as entradas de teste sem alterar o corpo principal do teste.
+- Ao projetar os testes, separe a escolha dos dados de teste do código ou script que determina se a pré-condição foi alcançada. Por exemplo, um teste de uma função aritmética simples pode ser: entrada 4; Verifique se a saída é 2. Em vez disso, projete o script como: escolha uma entrada; Multiplique a saída por si mesma e verifique se o resultado é a entrada original. Esse estilo permite que você varie as entradas de teste sem alterar o corpo principal do teste.
 
-#### <a name="linking-tests-to-use-cases"></a>Testes de vinculação para casos de uso
- Se você estiver usando [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)] para criar e executar seus testes, você pode organizar seus testes em itens de trabalho de história de usuário, requisito ou em caso de uso. Você pode vincular esses itens de trabalho para casos de uso em seu modelo. Isso permite que você rapidamente rastrear alterações de requisitos para os testes e ajuda a acompanhar o progresso de cada caso de uso.
+#### <a name="linking-tests-to-use-cases"></a>Vinculando testes a casos de uso
+ Se você estiver usando [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)] para criar e executar seus testes, poderá organizar seus testes em itens de trabalho de requisito, caso de uso ou de história de usuário. Você pode vincular esses itens de trabalho a casos de uso em seu modelo. Isso permite que você rastreie rapidamente as alterações de requisitos para os testes e ajuda a acompanhar o progresso de cada caso de uso.
 
-###### <a name="to-link-tests-to-a-use-case"></a>Para vincular os testes para um caso de uso
+###### <a name="to-link-tests-to-a-use-case"></a>Para vincular testes a um caso de uso
 
-1. No [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)], criar um requisito e um conjunto de testes de base nele.
+1. No [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)], crie um requisito e baseie um conjunto de testes nele.
 
-    O requisito de que você cria é um item de trabalho em [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)]. Pode ser um item de trabalho de história de usuário, requisito ou caso de uso, dependendo do modelo de processo que usa o seu projeto com o Team Foundation. Para obter mais informações, consulte [gerenciamento de projeto de ferramentas sobre Agile e Agile](/azure/devops/boards/backlogs/backlogs-overview?view=vsts).
+    O requisito que você cria é um item de trabalho no [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)]. Pode ser uma história de usuário, um requisito ou um item de trabalho de caso de uso, dependendo do modelo de processo usado pelo seu projeto com o Team Foundation. Para obter mais informações, consulte [sobre ferramentas Agile e gerenciamento ágil de projetos](/azure/devops/boards/backlogs/backlogs-overview?view=vsts).
 
-2. Vincule o item de trabalho de requisito para um ou mais casos de uso em seu modelo.
+2. Vincule o item de trabalho de requisito a um ou mais casos de uso em seu modelo.
 
-    Em um diagrama de caso de uso, um caso de uso com o botão direito e, em seguida, clique em **Link para o Item de trabalho**.
+    Em um diagrama de caso de uso, clique com o botão direito do mouse em um caso de uso e clique em **vincular ao item de trabalho**.
 
-3. Adicione ao conjunto de testes, casos de teste que verificam se os casos de uso.
+3. Adicione ao conjunto de testes, casos de teste que verificam os casos de uso.
 
-   Normalmente, cada item de trabalho de história ou requisito de usuário será vinculado a vários casos de uso em seu modelo, e cada caso de uso será vinculado a vários requisitos ou histórias de usuários. Isso ocorre porque cada história de usuário ou requisito aborda um conjunto de tarefas que desenvolver vários casos de uso. Por exemplo, em uma iteração inicial do seu projeto, você pode desenvolver a história de usuário básico no qual um cliente pode escolher itens de um catálogo e que eles sejam entregues. Em uma iteração posterior, o texto pode ser que o usuário paga quando concluir a ordem e o fornecedor recebe o dinheiro depois que ele envia as mercadorias.  Cada história adiciona uma cláusula a pós-condição de caso de uso de bens de ordem.
+   Normalmente, cada história de usuário ou item de trabalho de requisito será vinculado a vários casos de uso em seu modelo, e cada caso de uso será vinculado a várias histórias ou requisitos do usuário. Isso ocorre porque cada história ou requisito de usuário abrange um conjunto de tarefas que desenvolvem vários casos de uso. Por exemplo, em uma iteração inicial do seu projeto, você pode desenvolver a história de usuário básica na qual um cliente pode escolher itens de um catálogo e tê-los entregues. Em uma iteração posterior, a história pode ser que o usuário paga ao concluir o pedido, e o fornecedor recebe o dinheiro depois de enviar os bens.  Cada história adiciona uma cláusula à condição do caso de uso de mercadorias do pedido.
 
-   Você pode criar links separados de requisitos para as cláusulas de pós-condição escrevendo essas cláusulas em comentários separados no diagrama de caso de uso. Você pode vincular cada comentário a um item de trabalho de requisito e vincular o comentário para o caso de uso no diagrama.
+   Você pode criar links separados de requisitos para as cláusulas da iscondition escrevendo essas cláusulas em comentários separados no diagrama de caso de uso. Você pode vincular cada comentário a um item de trabalho de requisito e vincular o comentário ao caso de uso no diagrama.
 
-### <a name="base-tests-on-the-requirements-types"></a>Testes de base nos tipos de requisitos
- Os tipos, o que é, as classes, interfaces e enumerações, de um modelo de requisitos descrevem os conceitos e as relações em termos de como os usuários pensam e se comunicar sobre seus negócios. Ele exclui tipos preocupado apenas com o design interno do sistema.
+### <a name="base-tests-on-the-requirements-types"></a>Testes básicos nos tipos de requisitos
+ Os tipos, ou seja, as classes, as interfaces e as enumerações, de um modelo de requisitos descrevem os conceitos e as relações em termos de como os usuários acham e se comunicam sobre seus negócios. Ele exclui tipos preocupados apenas com o design interno do sistema.
 
- Os testes em termos desses tipos de requisitos de design. Essa prática ajuda a garantir que, quando as alterações nos requisitos são discutidas, é fácil relacionar as alterações para as alterações necessárias nos testes. Ele possibilita discutir os testes e seus resultados pretendidos diretamente com os usuários finais e outros participantes. Isso significa que os usuários precisam pode ser mantidos fora do processo de desenvolvimento e evita o design acidental dos testes em torno de possíveis falhas no design.
+ Projete seus testes em termos desses tipos de requisitos. Essa prática ajuda a garantir que quando as alterações nos requisitos forem discutidas, será fácil relacionar as alterações às alterações necessárias nos testes. Ele possibilita discutir os testes e seus resultados pretendidos diretamente com os usuários finais e outros participantes. Isso significa que as necessidades dos usuários podem ser mantidas fora do processo de desenvolvimento e evita o design inadvertido dos testes em relação a possíveis falhas no design.
 
- Para testes manuais, essa prática envolve a aderir ao vocabulário do modelo requisitos nos scripts de teste. Para testes automatizados, essa prática envolve usando os diagramas de classe de requisitos como base para seu código de teste e criar acessador e updater funções para vincular o modelo de requisito no código.
+ Para testes manuais, essa prática envolve a adesão ao vocabulário do modelo de requisitos nos scripts de teste. Para testes automatizados, essa prática envolve o uso de diagramas de classe de requisitos como base para seu código de teste e a criação de funções de acessador e de atualizador para vincular o modelo de requisito ao código.
 
- Por exemplo, requisitos de modelo pode incluir tipos de Item de Menu, Menu, Order e associações entre elas. Esse modelo representa as informações que são armazenadas e tratadas pela refeição sistema de pedidos, mas não representam as complexidades de sua implementação. O sistema de trabalho, pode haver vários realizações diferentes de cada tipo, em bancos de dados, nas interfaces do usuário e as APIs. Em um sistema distribuído, pode haver diversas variantes de cada instância sejam armazenados em diferentes partes do sistema ao mesmo tempo.
+ Por exemplo, um modelo de requisitos pode incluir o menu de tipos, o item de menu, a ordem e as associações entre eles. Esse modelo representa as informações armazenadas e lidas pelo sistema de pedidos de refeição, mas não representa as complexidades de sua implementação. No sistema de trabalho, pode haver várias realizações diferentes de cada tipo, em bancos de dados, em interfaces do usuário e em APIs. Em um sistema distribuído, pode haver várias variantes de cada instância armazenada em diferentes partes do sistema ao mesmo tempo.
 
- Para testar um caso de uso, como adicionar Item à ordem, um método de teste pode incluir código semelhante a este:
+ Para testar um caso de uso, como adicionar item ao pedido, um método de teste pode incluir um código semelhante a este:
 
 ```
 Order order = ... ; // set up an order
@@ -94,66 +94,66 @@ int countAfter = order.MenuItems.Count;
 Assert (countAfter == countBefore = 1);
 ```
 
- Observe que esse método de teste usa as classes do modelo de requisitos. Associações e os atributos são realizados como propriedades .NET.
+ Observe que esse método de teste usa as classes do modelo de requisitos. As associações e os atributos são percebidos como propriedades do .NET.
 
- Para fazer isso funcionar, as propriedades das classes devem ser definidas como funções de somente leitura ou acessadores, que acessam o sistema para recuperar informações sobre seu estado atual. Métodos que simulam casos de uso, como AddItemToOrder devem direcionar o sistema por meio de sua API ou por meio de uma camada sob sua interface do usuário. Os construtores de objetos de teste como ordem e MenuItem também devem direcionar o sistema para criar os itens correspondentes dentro do sistema.
+ Para fazer isso funcionar, as propriedades das classes devem ser definidas como acessadores ou funções somente leitura, que acessam o sistema para recuperar informações sobre seu estado atual. Métodos que simulam casos de uso como AddItemToOrder devem orientar o sistema por meio de sua API ou por meio de uma camada abaixo de sua interface do usuário. Os construtores de objetos de teste como Order e MenuItem também devem orientar o sistema para criar itens correspondentes dentro do sistema.
 
- Muitos dos acessadores e atualizadores já estarão disponíveis por meio de API normal do aplicativo. Mas algumas funções adicionais podem ter a ser gravado para habilitar os testes. Esses acessadores adicionais e atualizadores de aplicativos também são conhecidas como 'instrumentação de teste'. Porque eles dependem do design interno do sistema, é responsabilidade dos desenvolvedores do sistema para fornecer a eles, enquanto os testadores escrever o código dos testes em termos do modelo de requisitos.
+ Muitos acessadores e atualizadores já estarão disponíveis por meio da API normal do aplicativo. Mas algumas funções adicionais podem precisar ser gravadas para habilitar os testes. Esses acessadores adicionais e atualizadores são, às vezes, conhecidos como "Instrumentação de teste". Como eles dependem do design interno do sistema, é responsabilidade dos desenvolvedores do sistema fornecê-los, enquanto os testadores gravam o código dos testes em termos do modelo de requisitos.
 
- Ao escrever testes automatizados, você pode usar testes genéricos para encapsular os acessadores e atualizadores de aplicativos.
+ Ao escrever testes automatizados, você pode usar testes genéricos para encapsular os acessadores e os atualizadores.
 
 ### <a name="tests-for-business-rules"></a>Testes para regras de negócio
- Alguns requisitos não estão diretamente relacionados a qualquer um caso de uso. Por exemplo, a empresa DinnerNow permite que os clientes escolham entre muitos Menus, mas requer que em cada ordem, todos os itens deverão ser de um único Menu escolhida. Essa regra de negócio pode ser expresso como uma invariável sobre as associações entre os pedidos, Menus e itens no modelo de classe de requisitos.
+ Alguns requisitos não estão diretamente relacionados a um caso de uso. Por exemplo, o DinnerNow Business permite que os clientes escolham vários menus, mas requer que, em todos os pedidos, todos os itens escolhidos sejam de um único menu. Essa regra de negócio pode ser expressa como uma constante sobre as associações entre os pedidos, os menus e os itens no modelo de classe de requisitos.
 
- Uma regra invariável desse tipo controla não apenas todos os casos de uso são definidos no momento, mas também qualquer outros casos de uso que serão definidos posteriormente. Portanto, é útil para gravá-lo separadamente de qualquer caso de uso e testá-lo separadamente dos casos de uso.
+ Uma regra invariável desse tipo controla não apenas todos os casos de uso atualmente definidos, mas também quaisquer outros casos de uso que serão definidos posteriormente. Portanto, é útil escrevê-lo separadamente de qualquer caso de uso e testá-lo separadamente dos casos de uso.
 
-## <a name="deriving-subsystem-tests-from-models"></a>Derivando de testes do subsistema de modelos
- O design de um sistema grande de alto nível, você pode identificar componentes ou subsistemas. Elas representam as partes que podem ser criadas separadamente, estão localizados em diferentes computadores ou são módulos reutilizáveis que podem ser recombinados de várias maneiras.
+## <a name="deriving-subsystem-tests-from-models"></a>Derivando testes de subsistema de modelos
+ No design de alto nível de um sistema grande, você pode identificar componentes ou subsistemas. Elas representam partes que podem ser criadas separadamente ou que estão localizadas em computadores diferentes, ou são módulos reutilizáveis que podem ser recombinadas de várias maneiras.
 
- Você pode aplicar a cada componente principal os mesmos princípios que você usa em todo o sistema. Em um projeto grande, cada componente pode ter seu próprio modelo de requisitos. Em projetos menores, um modelo de arquitetura ou design de alto nível pode ser criado para mostrar os principais componentes e suas interações. Para obter mais informações, consulte [modelar a arquitetura do seu aplicativo](../modeling/model-your-app-s-architecture.md).
+ Você pode aplicar a cada componente principal os mesmos princípios usados para o sistema completo. Em um projeto grande, cada componente pode ter seu próprio modelo de requisitos. Em projetos menores, um modelo de arquitetura ou design de alto nível pode ser criado para mostrar os principais componentes e suas interações. Para obter mais informações, consulte [modelar a arquitetura do aplicativo](../modeling/model-your-app-s-architecture.md).
 
- Em ambos os casos, você pode estabelecer uma relação entre os elementos de modelo e os testes do subsistema da mesma maneira como você faria entre o modelo de requisitos e os testes do sistema.
+ Em ambos os casos, você pode estabelecer uma relação entre os elementos do modelo e os testes do subsistema da mesma maneira que faria entre o modelo de requisitos e os testes do sistema.
 
-### <a name="isolate-components-with-provided-and-required-interfaces"></a>Isolar os componentes com Interfaces fornecidas e obrigatórias
- É útil para identificar todas as dependências de um componente tem em outras partes do seu sistema ou serviços externos e para representar esses como Interfaces necessárias. Este exercício geralmente resulta em alguma reformulação que deixa o componente facilmente separáveis e muito mais separado do restante do seu design.
+### <a name="isolate-components-with-provided-and-required-interfaces"></a>Isole componentes com as interfaces fornecidas e necessárias
+ É útil identificar todas as dependências que um componente tem em outras partes do seu sistema ou serviços externos e representá-las como interfaces necessárias. Esse exercício geralmente leva a algum redesign que deixa o componente muito mais dissociado e facilmente separáveis do restante do seu design.
 
- Uma vantagem essa desassociação é que o componente pode ser executado para testes, substituindo com objetos fictícios, os serviços que normalmente usa. Esses são componentes que são configurados para fins de teste. Um componente fictício fornece a interface que seu componente requer, respondendo a consultas com dados simulados. Os componentes da simulação fazem parte de um equipamento de teste completo que você pode se conectar a todas as interfaces do componente.
+ Uma vantagem dessa desassociação é que o componente pode ser executado para teste, substituindo por objetos fictícios os serviços que ele geralmente usa. Esses são os componentes que são configurados para fins de teste. Um componente fictício fornece a interface que seu componente requer, respondendo a consultas com dados simulados. Os componentes fictícios formam parte de um conjunto completo de testes que você pode conectar a todas as interfaces do componente.
 
- Um benefício dos testes de simulação é que você pode desenvolver seu componente, enquanto os outros componentes cujos, ele usará os serviços ainda estão em desenvolvimento.
+ Um benefício do teste de simulação é que você pode desenvolver seu componente, enquanto os outros componentes cujos serviços serão usados ainda estão em desenvolvimento.
 
-## <a name="maintain-the-relationships-between-tests-and-model"></a>Manter as relações entre os testes e modelo
- Em um projeto típico que realiza uma iteração em algumas semanas, uma análise dos requisitos é mantida no início de cada iteração. A reunião aborda os recursos que devem ser entregues na próxima iteração. Um modelo de requisitos pode ser usado para ajudar a discutir os conceitos, cenários e as sequências de ações que serão desenvolvidas. As partes interessadas no negócio definir prioridades, os desenvolvedores a fazer estimativas e os testadores garantir que o comportamento esperado de cada recurso é capturado corretamente.
+## <a name="maintain-the-relationships-between-tests-and-model"></a>Manter as relações entre os testes e o modelo
+ Em um projeto típico que executa uma iteração a cada poucas semanas, uma revisão de requisitos é mantida perto do início de cada iteração. A reunião discute os recursos que devem ser entregues na próxima iteração. Um modelo de requisitos pode ser usado para ajudar a discutir os conceitos, cenários e sequências de ações que serão desenvolvidos. Os participantes de negócios definem as prioridades, os desenvolvedores fazem estimativas e os testadores garantem que o comportamento esperado de cada recurso seja capturado corretamente.
 
- Escrevendo testes é a maneira mais eficiente para definir um requisito, e também é uma maneira eficiente para garantir que uma pessoa tenha uma compreensão clara do que é necessário. No entanto, enquanto a escrever testes leva muito tempo para fazer durante um workshop de especificação, criação de modelos pode ser feito muito mais rapidamente.
+ Escrever testes é a maneira mais eficiente de definir um requisito e também é uma maneira eficaz de garantir que uma pessoa tenha uma compreensão clara do que é necessário. No entanto, enquanto escrever testes leva muito tempo para ser feito durante um workshop de especificação, a criação de modelos pode ser feita muito mais rapidamente.
 
- Do ponto de vista teste, um modelo de requisitos pode ser visto como uma abreviação para os testes. Portanto, é importante manter a relação entre os testes e o modelo em todo o projeto.
+ Do ponto de vista dos testes, um modelo de requisitos pode ser visto como um atalho para os testes. Portanto, é importante manter a relação entre os testes e o modelo em todo o projeto.
 
-## <a name="Attaching"></a> Anexando a casos de teste para elementos de modelo
- Se seu projeto usa [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)], você pode vincular os testes aos elementos no seu modelo. Isso permite que você localize rapidamente os testes afetados por uma alteração nos requisitos e ajuda você a controlar a extensão para o qual um requisito foi concretizado.
+## <a name="Attaching"></a>Anexando casos de teste a elementos de modelo
+ Se o seu projeto usa [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)], você pode vincular testes aos elementos em seu modelo. Isso permite que você encontre rapidamente os testes afetados por uma alteração nos requisitos e ajuda a acompanhar a extensão para a qual um requisito foi percebido.
 
- Você pode vincular os testes para todos os tipos de elemento. Estes são alguns exemplos:
+ Você pode vincular testes a todos os tipos de elemento. Estes são alguns exemplos:
 
-- Vincule um caso de uso para os testes que exercitam a ele.
+- Vincule um caso de uso aos testes que o exercitam.
 
-- Gravar as cláusulas de pós-condição de casos de uso ou meta em comentários que estão vinculados ao caso de uso, e, em seguida, vincular testes para cada comentário.
+- Escreva as cláusulas de uma subcondição de caso de uso ou meta, para comentários que estão vinculados ao caso de uso e, em seguida, vincule os testes a cada comentário.
 
-- Escrever regras de invariáveis nos comentários em diagramas de classe ou diagramas de atividade e vinculá-los aos testes.
+- Escreva regras invariáveis em comentários em diagramas de classe ou diagramas de atividade e vincule-as a testes.
 
-- Vincular testes para um diagrama de atividade, ou para atividades individuais.
+- Vincular testes a um diagrama de atividade ou a atividades individuais.
 
-- Vincule a um conjunto de testes para o componente ou o subsistema que ele testa.
+- Vincule um conjunto de testes ao componente ou ao subsistema que ele testa.
 
-#### <a name="to-link-tests-to-a-model-element-or-relationship"></a>Para vincular os testes a um elemento de modelo ou a relação
+#### <a name="to-link-tests-to-a-model-element-or-relationship"></a>Para vincular testes a um elemento de modelo ou relação
 
-1. No [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)], criar um requisito e um conjunto de testes de base nele.
+1. No [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)], crie um requisito e baseie um conjunto de testes nele.
 
-    O requisito de que você cria é um item de trabalho em [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)]. Pode ser um item de trabalho de história de usuário, requisito ou caso de uso, dependendo do modelo de processo que usa o seu projeto com o Team Foundation. Para obter mais informações, consulte [gerenciamento de projeto de ferramentas sobre Agile e Agile](/azure/devops/boards/backlogs/backlogs-overview?view=vsts).
+    O requisito que você cria é um item de trabalho no [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)]. Pode ser uma história de usuário, um requisito ou um item de trabalho de caso de uso, dependendo do modelo de processo usado pelo seu projeto com o Team Foundation. Para obter mais informações, consulte [sobre ferramentas Agile e gerenciamento ágil de projetos](/azure/devops/boards/backlogs/backlogs-overview?view=vsts).
 
-2. Vincule o item de trabalho de requisito para um ou mais elementos em seu modelo.
+2. Vincule o item de trabalho de requisito a um ou mais elementos em seu modelo.
 
-    Em um diagrama de modelagem, clique com botão direito um elemento, comentário ou relação e, em seguida, clique em **Link para o Item de trabalho**.
+    Em um diagrama de modelagem, clique com o botão direito do mouse em um elemento, comentário ou relação e clique em **vincular ao item de trabalho**.
 
-3. Adicione ao conjunto de testes, casos de teste que verificam se o requisito expressado no elemento de modelo.
+3. Adicione ao conjunto de testes, casos de teste que verificam o requisito expresso no elemento de modelo.
 
 ## <a name="see-also"></a>Consulte também
 

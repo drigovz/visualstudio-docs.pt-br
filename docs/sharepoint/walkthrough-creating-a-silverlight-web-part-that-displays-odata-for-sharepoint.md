@@ -1,5 +1,5 @@
 ---
-title: 'Passo a passo: Criando uma Web Part do Silverlight que exiba OData para o SharePoint | Microsoft Docs'
+title: Criar Web Part do Silverlight exibindo OData para SharePoint
 ms.date: 02/22/2017
 ms.topic: conceptual
 f1_keywords:
@@ -12,88 +12,88 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c58762c1060475a85de643ed52fffcc9f311bd96
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: bd2e42f48a6881b533a2f098e47ac92511b85aa3
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430399"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72984832"
 ---
-# <a name="walkthrough-create-a-silverlight-web-part-that-displays-odata-for-sharepoint"></a>Passo a passo: Criar uma web part do Silverlight que exiba OData para o SharePoint
-  SharePoint 2010 expõe seus dados de lista por meio do OData. No SharePoint, o serviço OData é implementado pelo serviço RESTful ListData.svc. Este passo a passo mostra como criar uma web part do SharePoint que hospeda um aplicativo do Silverlight. O aplicativo do Silverlight exibe informações da lista de lançamento do SharePoint usando ListData.svc. Para obter mais informações, consulte [Interface REST do SharePoint Foundation](http://go.microsoft.com/fwlink/?LinkId=225999) e [Open Data Protocol](http://go.microsoft.com/fwlink/?LinkId=226000).
+# <a name="walkthrough-create-a-silverlight-web-part-that-displays-odata-for-sharepoint"></a>Walkthrough: criar uma Web Part do Silverlight que exibe o OData para SharePoint
+  O SharePoint 2010 expõe seus dados de lista por meio do OData. No SharePoint, o serviço OData é implementado pelo serviço RESTful ListData. svc. Este tutorial mostra como criar uma Web Part do SharePoint que hospeda um aplicativo do Silverlight. O aplicativo do Silverlight exibe informações da lista de anúncios do SharePoint usando ListData. svc. Para obter mais informações, consulte [interface REST do SharePoint Foundation](/previous-versions/office/developer/sharepoint-2010/ff521587(v=office.14)) e [protocolo Open Data](https://www.odata.org/).
 
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>Pré-requisitos
+## <a name="prerequisites"></a>Prerequisites
  Você precisa dos seguintes componentes para concluir esta instrução passo a passo:
 
 - Edições com suporte do Microsoft Windows e do SharePoint.
 
-- [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)].
+- [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)]
 
-## <a name="create-a-silverlight-application-and-silverlight-web-part"></a>Criar um aplicativo do Silverlight e a web part do Silverlight
- Primeiro, crie um aplicativo do Silverlight no Visual Studio. O aplicativo do Silverlight recupera dados da lista de anúncios do SharePoint usando o serviço ListData.svc.
+## <a name="create-a-silverlight-application-and-silverlight-web-part"></a>Criar um aplicativo Silverlight e uma Web Part do Silverlight
+ Primeiro, crie um aplicativo do Silverlight no Visual Studio. O aplicativo do Silverlight recupera dados da lista de anúncios do SharePoint usando o serviço ListData. svc.
 
 > [!NOTE]
-> Nenhuma versão do Silverlight 4.0 antes de dar suporte as interfaces necessárias para fazer referência a dados de lista do SharePoint.
+> Nenhuma versão do Silverlight antes de 4,0 dá suporte às interfaces necessárias para referenciar dados da lista do SharePoint.
 
-#### <a name="to-create-a-silverlight-application-and-silverlight-web-part"></a>Para criar um aplicativo do Silverlight e a web part do Silverlight
+#### <a name="to-create-a-silverlight-application-and-silverlight-web-part"></a>Para criar um aplicativo do Silverlight e uma Web Part do Silverlight
 
-1. Na barra de menus, escolha **arquivo** > **New** > **projeto** para exibir o **novo projeto** caixa de diálogo.
+1. Na barra de menus, escolha **arquivo**  > **novo** **projeto** de  >  para exibir a caixa de diálogo **novo projeto** .
 
-2. Expanda o **SharePoint** nó em um **Visual c#** ou **Visual Basic**e, em seguida, escolha o **2010** nó.
+2. Expanda o nó do **SharePoint** sob o  **C# Visual** ou **Visual Basic**e escolha o nó **2010** .
 
-3. No painel modelos, escolha o **Web Part do SharePoint 2010 Silverlight** modelo.
+3. No painel modelos, escolha o modelo de **Web Part do Silverlight do SharePoint 2010** .
 
-4. No **nome** , digite **SLWebPartTest** e, em seguida, escolha o **Okey** botão.
+4. Na caixa **nome** , digite **SLWebPartTest** e, em seguida, escolha o botão **OK** .
 
-    O **Assistente para personalização do SharePoint** caixa de diálogo é exibida.
+    A caixa de diálogo **Assistente para personalização do SharePoint** é exibida.
 
-5. Sobre o **especificar o nível de site e segurança para depuração** página, insira a URL do servidor do site do SharePoint onde você deseja depurar a definição de site ou usar o local padrão (http://<em>nome do sistema</em>/) .
+5. Na página **especificar o site e o nível de segurança para depuração** , insira a URL para o site do SharePoint Server em que você deseja depurar a definição do site ou use o local padrão (<em>nome do sistema</em>http:///).
 
-6. No **qual é o nível de confiança para essa solução do SharePoint?** , escolha o **implantar como uma solução de farm** botão de opção.
+6. Na seção **o que é o nível de confiança para esta solução do SharePoint?** , escolha o botão de opção **implantar como uma solução de farm** .
 
-    Embora este exemplo usa uma solução de farm, os projetos do Silverlight na web part podem ser implantados como farm ou soluções em área restrita. Para obter mais informações sobre as soluções em área restrita e soluções de farm, consulte [considerações sobre a solução em área restrita](../sharepoint/sandboxed-solution-considerations.md).
+    Embora este exemplo use uma solução de farm, os projetos de Web Part do Silverlight podem ser implantados como soluções de farm ou de área restrita. Para obter mais informações sobre soluções de área restrita e soluções de farm, consulte [Considerações sobre a solução em área restrita](../sharepoint/sandboxed-solution-considerations.md).
 
-7. No **como você deseja associar a Web Part Silverlight** seção o **especificar informações de configuração do Silverlight** , escolha o **criar um novo projeto do Silverlight e associá-la com a web part** botão de opção.
+7. Na seção **como você deseja associar a Web Part do Silverlight** da página **especificar informações de configuração do Silverlight** , escolha o botão de opção **criar um novo projeto do Silverlight e associá-lo ao Web Part** .
 
-8. Alterar o **nome** para **SLApplication**, defina **idioma** como **Visual Basic** ou **Visual c#**, e, em seguida, defina **versão do Silverlight** à **Silverlight 4.0**.
+8. Altere o **nome** para **SLApplication**, defina **Language** para **Visual Basic** ou **Visual C#** e, em seguida, defina a versão do **Silverlight** como **Silverlight 4,0**.
 
-9. Escolha o **concluir** botão. Os projetos são exibidos na **Gerenciador de soluções**.
+9. Escolha o botão **concluir** . Os projetos aparecem em **Gerenciador de soluções**.
 
-     A solução contém dois projetos: um aplicativo do Silverlight e uma web part do Silverlight. O aplicativo do Silverlight recupera e exibe os dados da lista do SharePoint, e a web part Silverlight hospeda o aplicativo do Silverlight, permitindo que você exibi-lo no SharePoint.
+     A solução contém dois projetos: um aplicativo do Silverlight e uma Web Part do Silverlight. O aplicativo do Silverlight recupera e exibe os dados da lista do SharePoint, e a Web Part do Silverlight hospeda o aplicativo do Silverlight, permitindo que você o exiba no SharePoint.
 
 ## <a name="customize-the-silverlight-application"></a>Personalizar o aplicativo do Silverlight
- Adicione elementos de código e design para o aplicativo do Silverlight.
+ Adicione código e elementos de design ao aplicativo do Silverlight.
 
 #### <a name="to-customize-the-silverlight-application"></a>Para personalizar o aplicativo do Silverlight
 
-1. Adicione uma referência de assembly a System no aplicativo do Silverlight. Para obter mais informações, confira [Como: Adicionar ou remover referências usando a caixa de diálogo Adicionar referência](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).
+1. Adicione uma referência de assembly a System. Windows. Data no aplicativo do Silverlight. Para obter mais informações, consulte [como: Adicionar ou remover referências usando a caixa de diálogo Adicionar referência](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).
 
-2. Na **Gerenciador de soluções**, abra o menu de atalho **referências**e, em seguida, escolha **Add Service Reference**.
+2. Em **Gerenciador de soluções**, abra o menu de atalho para **referências**e, em seguida, escolha **Adicionar referência de serviço**.
 
     > [!NOTE]
-    > Se você estiver usando Visual Basic, você deve escolher o **Show All Files** ícone na parte superior da **Gerenciador de soluções** para exibir o **referências** nó.
+    > Se você estiver usando Visual Basic, deverá escolher o ícone **Mostrar todos os arquivos** na parte superior da **Gerenciador de soluções** para exibir o nó **referências** .
 
-3. Na caixa de endereço a **adicionar referência de serviço** caixa de diálogo, digite a URL do site do SharePoint, como **http://MySPSite**e, em seguida, escolha o **vá** botão.
+3. Na caixa endereço da caixa de diálogo **Adicionar referência de serviço** , insira a URL do seu site do SharePoint, como **http://MySPSite** e, em seguida, escolha o botão **ir** .
 
-     Quando o Silverlight localiza o serviço de OData de SharePoint ListData.svc, ele substitui o endereço com a URL do serviço completo. Neste exemplo, http://myserver torna-se http://myserver/_vti_bin/ListData.svc.
+     Quando o Silverlight localiza o serviço OData do SharePoint ListData. svc, ele substitui o endereço pela URL de serviço completa. Para este exemplo, http://myserver se torna http://myserver/_vti_bin/ListData.svc.
 
-4. Escolha o **Okey** botão para adicionar a referência de serviço ao projeto e, em seguida, use o nome de serviço padrão, ServiceReference1.
+4. Escolha o botão **OK** para adicionar a referência de serviço ao projeto e use o nome do serviço padrão, ServiceReference1.
 
 5. Na barra de menus, escolha **Compilar** > **Compilar Solução**.
 
-6. Adicione uma nova fonte de dados para o projeto baseado no serviço do SharePoint. Para fazer isso, na barra de menus, escolha **modo de exibição** > **Other Windows** > **fontes de dados**.
+6. Adicione uma nova fonte de dados ao projeto com base no serviço do SharePoint. Para fazer isso, na barra de menus, escolha **exibir**  > **outras** fontes de**dados**do Windows  > .
 
-     O **fontes de dados** janela mostra todos os dados de lista do SharePoint disponíveis, como tarefas, anúncios e calendário.
+     A janela **fontes de dados** mostra todos os dados de lista do SharePoint disponíveis, como tarefas, anúncios e calendário.
 
-7. Adicione os dados de lista de anúncios ao aplicativo do Silverlight. Você pode arrastar "Anúncios" das **fontes de dados** janela para o Silverlight designer.
+7. Adicione os dados da lista de anúncios ao aplicativo do Silverlight. Você pode arrastar "anúncios" da janela **fontes de dados** para o designer do Silverlight.
 
      Isso cria um controle de grade associado à lista de anúncios do site do SharePoint.
 
-8. Redimensione o controle de grade para caber na página do Silverlight.
+8. Redimensione o controle de grade para ajustá-lo à página do Silverlight.
 
-9. No arquivo de código de MainPage. XAML (*MainPage.xaml.cs* do Visual c# ou *MainPage* para o Visual Basic), adicione as seguintes referências de namespace.
+9. No arquivo de código MainPage. XAML (*MainPage.XAML.cs* para Visual C# ou *MainPage. XAML. vb* para Visual Basic), adicione as seguintes referências de namespace.
 
     ```vb
     ' Add the following three Imports statements.
@@ -103,7 +103,7 @@ ms.locfileid: "63430399"
     ```
 
     ```csharp
-    // Add the following three using statements.
+    // Add the following three using directives.
     using SLApplication.ServiceReference1;
     using System.Windows.Data;
     using System.Data.Services.Client;
@@ -123,7 +123,7 @@ ms.locfileid: "63430399"
     DataServiceCollection<AnnouncementsItem> announcements = new DataServiceCollection<AnnouncementsItem>();
     ```
 
-11. Substitua o `UserControl_Loaded` procedimento com o seguinte.
+11. Substitua o procedimento `UserControl_Loaded` pelo seguinte.
 
     ```vb
     Private Sub UserControl_Loaded_1(sender As Object, e As RoutedEventArgs)
@@ -160,7 +160,7 @@ ms.locfileid: "63430399"
     }
     ```
 
-     Certifique-se de substituir os *ServerName* espaço reservado com o nome do servidor que está executando o SharePoint.
+     Certifique-se de substituir o espaço reservado *ServerName* pelo nome do servidor que está executando o SharePoint.
 
 12. Adicione o seguinte procedimento de tratamento de erros.
 
@@ -191,45 +191,45 @@ ms.locfileid: "63430399"
     }
     ```
 
-## <a name="modify-the-silverlight-web-part"></a>Modificar a web part do Silverlight
- Altere uma propriedade em que o projeto de web part do Silverlight para habilitar a depuração do Silverlight.
+## <a name="modify-the-silverlight-web-part"></a>Modificar a Web Part do Silverlight
+ Altere uma propriedade no projeto de Web Part do Silverlight para habilitar a depuração do Silverlight.
 
-#### <a name="to-modify-the-silverlight-web-part"></a>Para modificar a web part do Silverlight
+#### <a name="to-modify-the-silverlight-web-part"></a>Para modificar a Web Part do Silverlight
 
-1. Abra o menu de atalho para o projeto de web part do Silverlight (**SLWebPartTest**) e, em seguida, escolha **propriedades**.
+1. Abra o menu de atalho do projeto de Web Part do Silverlight (**SLWebPartTest**) e escolha **Propriedades**.
 
-2. No **propriedades** janela, escolha o **SharePoint** guia.
+2. Na janela **Propriedades** , escolha a guia **SharePoint** .
 
-3. Se ele ainda não estiver selecionado, selecione a **Silverlight Habilitar depuração (em vez de depuração de Script)** caixa de seleção.
+3. Se ainda não estiver selecionado, marque a caixa de seleção **Habilitar depuração do Silverlight (em vez de depuração de script)** .
 
 4. Salvar o projeto.
 
-## <a name="test-the-silverlight-web-part"></a>Testar a web part do Silverlight
- Teste a nova web part do Silverlight no SharePoint para garantir que ele exibe corretamente os dados de lista do SharePoint.
+## <a name="test-the-silverlight-web-part"></a>Testar a Web Part do Silverlight
+ Teste a nova Web Part do Silverlight no SharePoint para garantir que ela exiba os dados da lista do SharePoint corretamente.
 
-#### <a name="to-test-the-silverlight-web-part"></a>Para testar a web part do Silverlight
+#### <a name="to-test-the-silverlight-web-part"></a>Para testar a Web Part do Silverlight
 
-1. Escolha o **F5** chave para compilar e executar a solução do SharePoint.
+1. Escolha a tecla **F5** para compilar e executar a solução do SharePoint.
 
-2. No SharePoint, sobre o **ações do Site** menu, escolha **nova página**.
+2. No SharePoint, no menu **ações do site** , escolha **nova página**.
 
-3. No **nova página** caixa de diálogo, insira um título, como **SL de teste na Web Part**e, em seguida, escolha o **criar** botão.
+3. Na caixa de diálogo **nova página** , insira um título, como o **teste de Web Part SL**, e escolha o botão **criar** .
 
-4. No designer de página, sobre o **ferramentas de edição** guia, escolha **inserir**.
+4. No designer de página, na guia **ferramentas de edição** , escolha **Inserir**.
 
 5. Na faixa de guias, escolha **Web Part**.
 
-6. No **categorias** , escolha o **personalizado** pasta.
+6. Na caixa **categorias** , escolha a pasta **personalizada** .
 
-7. No **Web Parts** lista, escolha a web part do Silverlight e, em seguida, escolha o **Add** botão para adicionar a web part para o designer.
+7. Na lista **Web Parts** , escolha a Web Part do Silverlight e, em seguida, escolha o botão **Adicionar** para adicionar a Web Part ao designer.
 
-8. Depois de ter feito todas as adições à página da web que você deseja, escolha o **página** guia e, em seguida, escolha o **salvar e fechar** botão na barra de ferramentas.
+8. Depois de ter feito todas as adições à página da Web desejada, escolha a guia **página** e, em seguida, escolha o botão **Salvar & fechar** na barra de ferramentas.
 
-     A web part Silverlight agora deve exibir dados de anúncio do site do SharePoint. Por padrão, a página é armazenada na lista de páginas do Site no SharePoint.
+     A Web Part do Silverlight agora deve exibir dados de comunicado do site do SharePoint. Por padrão, a página é armazenada na lista páginas do site no SharePoint.
 
     > [!NOTE]
-    > Ao acessar dados no Silverlight entre domínios, o Silverlight protege contra vulnerabilidades de segurança que podem ser usadas para explorar os aplicativos da web. Se você encontrar problemas ao acessar dados remotos no Silverlight, consulte [tornando um serviço disponível entre limites de domínio](http://go.microsoft.com/fwlink/?LinkId=223276).
+    > Ao acessar dados no Silverlight entre domínios, o Silverlight protege contra vulnerabilidades de segurança que podem ser usadas para explorar aplicativos Web. Se você encontrar problemas ao acessar dados remotos no Silverlight, consulte [disponibilizando um serviço entre limites de domínio](/previous-versions/windows/silverlight/dotnet-windows-silverlight/cc197955(v=vs.95)).
 
 ## <a name="see-also"></a>Consulte também
-- [Criar web parts para SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)
+- [Criar Web Parts para SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)
 - [Implantar, publicar e atualizar pacotes de solução do SharePoint](../sharepoint/deploying-publishing-and-upgrading-sharepoint-solution-packages.md)

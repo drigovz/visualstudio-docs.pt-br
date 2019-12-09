@@ -29,76 +29,77 @@ caps.latest.revision: 62
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c7e352dcaccd328b4794389726277701014da7be
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 03cd890802e5563ce2daeb78438c56f4452d74f0
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436806"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299511"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Anexar aos processos em execução com o Depurador do Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Você pode anexar o depurador do Visual Studio para um processo em execução em um computador local ou remoto. Depois que o processo está em execução, clique em **depurar / anexar ao processo** (ou pressione **CTRL + ALT + P**) para abrir o **anexar ao processo** caixa de diálogo.
+Você pode anexar o depurador do Visual Studio a um processo em execução em um computador local ou remoto. Depois que o processo estiver em execução, clique em **Depurar/anexar ao processo** (ou pressione **Ctrl + Alt + P**) para abrir a caixa **de diálogo anexar ao processo** .
 
-Você pode usar esse recurso para depurar aplicativos em execução em um computador local ou remoto, depurar vários processos simultaneamente ou depurar um aplicativo que não foi criado no Visual Studio. Geralmente é útil quando você deseja depurar um aplicativo, mas (por qualquer motivo) você não iniciou o aplicativo do Visual Studio com o depurador anexado. Por exemplo, se você estiver executando o aplicativo sem o depurador e atingir uma exceção, você pode, em seguida, anexar ao processo de execução do aplicativo para iniciar a depuração.
+Você pode usar essa capacidade para depurar aplicativos que estão sendo executados em um computador local ou remoto, depurar vários processos simultaneamente ou depurar um aplicativo que não foi criado no Visual Studio. Geralmente, é útil quando você deseja depurar um aplicativo, mas (por qualquer motivo) você não iniciou o aplicativo do Visual Studio com o depurador anexado. Por exemplo, se você estiver executando o aplicativo sem o depurador e clicar em uma exceção, você poderá anexar ao processo que executa o aplicativo para iniciar a depuração.
 
 > [!TIP]
-> Não sabe se é necessário usar **anexar ao processo** para seu cenário de depuração? Ver [comum de cenários de depuração](#BKMK_Scenarios). Se você quiser depurar aplicativos ASP.NET que foi implantado no IIS, consulte [ASP.NET de depuração remota em um computador remoto do IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md).
+> Não tem certeza se você precisa usar **anexar ao processo** para seu cenário de depuração? Consulte [cenários comuns de depuração](#BKMK_Scenarios). Se você quiser depurar aplicativos ASP.NET que foram implantados no IIS, consulte [depuração remota ASP.net em um computador IIS remoto](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md).
 
-## <a name="BKMK_Attach_to_a_running_process"></a> Anexar a um processo em execução no computador local
- Para anexar a um processo, você deve saber o nome do processo (consulte [comum de cenários de depuração](#BKMK_Scenarios) para alguns nomes comuns do processo).
+## <a name="BKMK_Attach_to_a_running_process"></a>Anexar a um processo em execução no computador local
+ Para anexar a um processo, você deve saber o nome do processo (consulte [cenários comuns de depuração](#BKMK_Scenarios) para alguns nomes de processo comuns).
 
-1. No Visual Studio, selecione **depurar / anexar ao processo** (ou pressione **CTRL + ALT + P**).
+1. No Visual Studio, selecione **Depurar/anexar para processar** (ou pressione **Ctrl + Alt + P**).
 
-2. No **anexar ao processo** diálogo caixa, localize o programa que você deseja anexar a partir de **processos disponíveis** lista.
+2. Na caixa de diálogo **anexar ao processo** , localize o programa que você deseja anexar na lista **processos disponíveis** .
 
-     Para selecionar rapidamente o processo que você deseja, digite a primeira letra do nome do processo. Se você não souber o nome do processo, consulte [comum de cenários de depuração](#BKMK_Scenarios).
+     Para selecionar rapidamente o processo desejado, digite a primeira letra do nome do processo. Se você não souber o nome do processo, consulte [cenários comuns de depuração](#BKMK_Scenarios).
 
      ![DBG_Basics_Attach_To_Process](../debugger/media/dbg-basics-attach-to-process.png "DBG_Basics_Attach_To_Process")
 
      Se o processo estiver sendo executado em uma conta de usuário diferente, marque a caixa de seleção **Mostrar processos de todos os usuários**.
 
-3. No **anexar a** caixa, certifique-se de que o tipo de código que será depurado está listado. O padrão **automática** configuração tenta determinar que tipo de código que você deseja depurar. Para definir o tipo de código manualmente, faça o seguinte
+3. Na caixa **anexar a** , verifique se o tipo de código que você irá depurar está listado. A configuração **automática** padrão tenta determinar o tipo de código que você deseja depurar. Para definir o tipo de código manualmente, faça o seguinte
 
-    1. No **anexar** , clique em **selecione**.
+    1. Na caixa **anexar a** , clique em **selecionar**.
 
-    2. No **Selecionar tipo de código** caixa de diálogo, clique em **depurar esses tipos de código** e selecione os tipos para depurar.
+    2. Na caixa de diálogo **Selecionar tipo de código** , clique em **depurar esses tipos de código** e selecione os tipos a serem depurados.
 
     3. Clique em **OK**.
 
 4. Clique em **Anexar**.
 
 ## <a name="BKMK_Attach_to_a_process_on_a_remote_computer"></a> Anexar a um processo em um computador remoto
- Para anexar a um processo, você deve saber o nome do processo (consulte [comum de cenários de depuração](#BKMK_Scenarios) para alguns nomes comuns do processo). Para obter orientação mais completa para aplicativos ASP.NET que foi implantado no IIS, consulte [ASP.NET de depuração remota em um computador remoto do IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md). Para outros aplicativos, você poderá localizar o nome do processo no Gerenciador de tarefas.
+ Para anexar a um processo, você deve saber o nome do processo (consulte [cenários comuns de depuração](#BKMK_Scenarios) para alguns nomes de processo comuns). Para obter uma orientação mais completa para aplicativos ASP.NET que foram implantados no IIS, consulte [depuração remota ASP.net em um computador IIS remoto](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md). Para outros aplicativos, é possível encontrar o nome do processo no Gerenciador de tarefas.
 
- Quando você usa o **anexar ao processo** caixa de diálogo, você pode selecionar outro computador que foi configurado para depuração remota. Para obter mais informações, consulte [depuração remota](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c). Quando você tiver selecionado um computador remoto, poderá exibir uma lista de processos disponíveis que estão em execução no computador e anexá-la a um ou mais processos para depuração.
+ Ao usar a caixa de diálogo **anexar ao processo** , você pode selecionar outro computador que tenha sido configurado para depuração remota. Para obter mais informações, consulte [depuração remota](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c). Quando você tiver selecionado um computador remoto, poderá exibir uma lista de processos disponíveis que estão em execução no computador e anexá-la a um ou mais processos para depuração.
 
  **Para selecionar um computador remoto:**
 
-1. No Visual Studio, selecione **depurar / anexar ao processo** (ou pressione **CTRL + ALT + P**).
+1. No Visual Studio, selecione **Depurar/anexar para processar** (ou pressione **Ctrl + Alt + P**).
 
-2. No **anexar ao processo** caixa de diálogo, selecione a conexão apropriada de tipo dos **transporte** lista. **Padrão** é a configuração correta para a maioria dos casos.
+2. Na caixa de diálogo **anexar ao processo** , selecione o tipo de conexão apropriado na lista de **transporte** . O **padrão** é a configuração correta para a maioria dos casos.
 
-   O **transporte** configuração persiste entre as sessões de depuração.
+   A configuração de **transporte** persiste entre sessões de depuração.
 
-3. Use o **qualificador** caixa de listagem para escolher o nome do computador remoto por um dos seguintes métodos:
+3. Use a caixa de listagem **qualificador** para escolher o nome do computador remoto por um dos seguintes métodos:
 
-   1. Digite o nome na **qualificador** caixa de listagem.
+   1. Digite o nome na caixa de listagem **qualificador** .
 
-      >**Observação** se, em etapas posteriores, você não pode se conectar usando o nome do computador remoto, use o endereço IP. (O número da porta pode aparecer automaticamente depois de selecionar o processo. Você também pode inseri-lo manualmente. Na ilustração abaixo, 4020 é a porta padrão para o depurador remoto.)
+      > [!NOTE]
+      > Se, em etapas posteriores, você não puder se conectar usando o nome do computador remoto, use o endereço IP. (O número da porta pode aparecer automaticamente após a seleção do processo. Você também pode inseri-lo manualmente. Na ilustração a seguir, 4020 é a porta padrão para o depurador remoto.)
 
-   2. Clique na seta suspensa anexada para o **qualificador** caixa de listagem e selecione o nome do computador na lista suspensa.
+   2. Clique na seta suspensa anexada à caixa de listagem **qualificador** e selecione o nome do computador na lista suspensa.
 
-   3. Clique o **encontrar** lado a **qualificador** lista para abrir o **Selecionar Conexão de depurador remoto** caixa de diálogo. O **Selecionar Conexão de depurador remoto** caixa de diálogo lista todos os dispositivos que estão em sua sub-rede local e qualquer dispositivo que está diretamente conectado ao computador por um cabo Ethernet. Clique no computador ou dispositivo que você deseja e, em seguida, clique em **selecionar**.
+   3. Clique no botão **Localizar** ao lado da lista **qualificador** para abrir a caixa de diálogo **selecionar conexão do depurador remoto** . A caixa de diálogo **selecionar conexão do depurador remoto** lista todos os dispositivos que estão na sua subrede local e qualquer dispositivo conectado diretamente ao computador por meio de um cabo Ethernet. Clique no computador ou dispositivo desejado e, em seguida, clique em **selecionar**.
 
-      O **qualificador** configuração persiste entre as sessões de depuração somente se uma conexão de depuração bem-sucedida ocorre com o qualificador.
+      A configuração do **qualificador** persiste entre sessões de depuração somente se uma conexão de depuração bem-sucedida ocorrer com esse qualificador.
 
 4. Cliquem em **Atualizar**.
 
-     A lista **Processos Disponíveis** é exibida automaticamente quando você abre a caixa de diálogo **Processos**. Os processos podem iniciar e parar em segundo plano quando a caixa de diálogo está aberta. No entanto, o conteúdo nem sempre será atual. Você pode atualizar a lista a qualquer momento para ver a lista atual de processos clicando **Refresh**.
+     A lista **Processos Disponíveis** é exibida automaticamente quando você abre a caixa de diálogo **Processos**. Os processos podem iniciar e parar em segundo plano quando a caixa de diálogo está aberta. No entanto, o conteúdo nem sempre será atual. Você pode atualizar a lista a qualquer momento para ver a lista atual de processos clicando em **Atualizar**.
 
-5. No **anexar ao processo** diálogo caixa, localize o programa que você deseja anexar a partir de **processos disponíveis** lista.
+5. Na caixa de diálogo **anexar ao processo** , localize o programa que você deseja anexar na lista **processos disponíveis** .
 
     Se o processo estiver sendo executado em uma conta de usuário diferente, marque a caixa de seleção **Mostrar processos de todos os usuários**.
 
@@ -106,45 +107,45 @@ Você pode usar esse recurso para depurar aplicativos em execução em um comput
 
 ## <a name="additional-info"></a>Informações adicionais
 
-Você pode estar associado a vários programas enquanto depura, mas somente um programa está ativo no depurador em um determinado momento. Você pode definir o programa ativo na **local de depuração** barra de ferramentas ou o **processos** janela. Para obter mais informações, confira [Como: Definir o programa atual](http://msdn.microsoft.com/7e1d7fa5-0e40-44cf-8c41-d3dba31c969e).
+Você pode estar associado a vários programas enquanto depura, mas somente um programa está ativo no depurador em um determinado momento. Você pode definir o programa ativo na barra de ferramentas **local de depuração** ou na janela **processos** . Para obter mais informações, consulte [como: definir o programa atual](https://msdn.microsoft.com/7e1d7fa5-0e40-44cf-8c41-d3dba31c969e).
 
-Se você tentar anexar a um processo de propriedade de uma conta de usuário não confiável, aparecerá uma confirmação da caixa de diálogo de aviso de segurança. Para obter mais informações, consulte [aviso de segurança: A anexação a um processo pertencente a um usuário não confiável pode ser perigosa. Se as informações a seguir parecerem suspeitas ou você não tiver certeza, não anexe a esse processo](/visualstudio/debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user?view=vs-2015).
+Se você tentar anexar a um processo de propriedade de uma conta de usuário não confiável, aparecerá uma confirmação da caixa de diálogo de aviso de segurança. Para obter mais informações, consulte [aviso de segurança: Anexar a um processo pertencente a um usuário não confiável pode ser perigoso. Se as informações a seguir parecerem suspeitas ou, se você não tiver certeza, não anexe a esse processo](/visualstudio/debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user?view=vs-2015).
 
-Em alguns casos, quando você depura em uma sessão de área de trabalho remota (serviços de Terminal), o **processos disponíveis** lista não exibirá todos os processos disponíveis. Se você estiver executando o Visual Studio como um usuário que tenha uma conta de usuário limitado, o **processos disponíveis** lista não mostrará processos em execução na sessão 0, que é usado para serviços e outros processos do servidor, incluindo w3wp.exe. Você pode resolver o problema executando o [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] em uma conta de administrador ou executando o [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] no console do servidor em vez de uma sessão de Serviços de Terminal. Se nenhuma dessas soluções alternativas for possível, uma terceira opção é anexar ao processo executando `vsjitdebugger.exe -p` *ProcessId* da linha de comando do Windows. Você pode determinar a ID do processo usando tlist.exe. Para obter tlist.exe, baixar e instalar a depuração de ferramentas para Windows, disponível em [downloads do WDK e WinDbg](http://go.microsoft.com/fwlink/?LinkId=168279).
+Em alguns casos, quando você depura em uma sessão Área de Trabalho Remota (serviços de terminal), a lista de **processos disponíveis** não exibirá todos os processos disponíveis. Se você estiver executando o Visual Studio como um usuário que tem uma conta de usuário limitada, a lista de **processos disponíveis** não mostrará os processos em execução na sessão 0, que é usado para serviços e outros processos de servidor, incluindo w3wp. exe. Você pode resolver o problema executando o [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] em uma conta de administrador ou executando o [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] no console do servidor em vez de uma sessão de Serviços de Terminal. Se nenhuma dessas soluções alternativas for possível, uma terceira opção é anexar ao processo Executando `vsjitdebugger.exe -p` *ProcessId* na linha de comando do Windows. Você pode determinar a ID do processo usando tlist.exe. Para obter tlist. exe, baixe e instale as ferramentas de depuração para Windows, disponíveis em [downloads do WDK e do WinDbg](https://go.microsoft.com/fwlink/?LinkId=168279).
 
-## <a name="BKMK_Scenarios"></a> Cenários comuns de depuração
+## <a name="BKMK_Scenarios"></a>Cenários comuns de depuração
 
-Para ajudá-lo a identificar se você precisa usar **anexar ao processo** e qual processo anexar, alguns cenários comuns de depuração são mostrados aqui (a lista não é exaustiva). Onde obter mais instruções estiverem disponíveis, fornecemos links.
+Para ajudá-lo a identificar se você precisa usar **anexar ao processo** e a qual processo anexar, alguns cenários de depuração comuns são mostrados aqui (a lista não é exaustiva). Onde mais instruções estão disponíveis, fornecemos links.
 
-Para alguns tipos de aplicativo (como aplicativos da Windows Store), não anexe diretamente a um nome de processo, mas usar o **depurar pacote do aplicativo instalado** em vez disso, a opção de menu (consulte a tabela).
+Para alguns tipos de aplicativos (como aplicativos da Windows Store), você não anexa diretamente a um nome de processo, mas usa a opção de menu **depurar pacote de aplicativo instalado** em vez disso (consulte a tabela).
 
 > [!NOTE]
-> Para obter informações sobre depuração básica no Visual Studio, consulte [Introdução ao depurador](../debugger/getting-started-with-the-debugger.md).
+> Para obter informações sobre a depuração básica no Visual Studio, consulte [introdução ao depurador](../debugger/getting-started-with-the-debugger.md).
 
-|Cenário|Depurar o método|Nome do Processo|Observações e Links|
+|Cenário|Método de depuração|Nome do Processo|Anotações e links|
 |-|-|-|-|
-|Depurar um aplicativo gerenciado ou nativo na máquina local|Use anexar ao processo ou [depuração padrão](../debugger/getting-started-with-the-debugger.md)|*appname*.exe|Para acessar rapidamente a caixa de diálogo, use **CTRL + ALT + P** e, em seguida, digite a primeira letra do nome do processo.|
-|Depurar aplicativos ASP.NET no computador local depois de iniciar o aplicativo sem o depurador|Use anexar ao processo|iiexpress.exe|Isso pode ser útil para fazer com que seu aplicativo carregar mais rápido, como (por exemplo) ao criar o perfil. |
-|Depuração remota ASP.NET 4 ou 4.5 em um servidor IIS|Usar as ferramentas remotas e anexar ao processo|w3wp.exe|Consulte [ASP.NET de depuração remota em um computador remoto do IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)|
-|Depuração remota do ASP.NET Core em um servidor IIS|Usar as ferramentas remotas e anexar ao processo|dnx.exe|Para implantação de aplicativo, consulte [publicar no IIS](https://docs.asp.net/en/latest/publishing/iis.html). Para depuração, consulte [ASP.NET de depuração remota em um computador remoto do IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)|
-|Depurar outros tipos de aplicativos com suporte em um processo do servidor|Usar as ferramentas remotas (se o servidor for remoto) e anexar ao processo|Iexplore.exe ou outros processos|Se necessário, use o Gerenciador de tarefas para ajudar a identificar o processo. Ver [depuração remota](../debugger/remote-debugging.md) e seções posteriores neste tópico|
-|Depuração remota de um aplicativo de desktop do Windows|F5 e as ferramentas remotas|N/D| Consulte [depuração remota](../debugger/remote-debugging.md)|
-|Remoto depurar um aplicativo Universal do Windows (UWP), OneCore, HoloLens ou IoT|Depurar pacote do aplicativo instalado|N/D|Use **Debug / outros destinos de depuração / depurar pacote do aplicativo instalado** em vez de **anexar ao processo**|
-|Depurar um aplicativo Universal do Windows (UWP), OneCore, HoloLens ou IoT que você não iniciou no Visual Studio|Depurar pacote do aplicativo instalado|N/D|Use **Debug / outros destinos de depuração / depurar pacote do aplicativo instalado** em vez de **anexar ao processo**|
+|Depurar um aplicativo gerenciado ou nativo no computador local|Usar anexar ao processo ou à [depuração padrão](../debugger/getting-started-with-the-debugger.md)|*AppName*. exe|Para acessar rapidamente a caixa de diálogo, use **Ctrl + Alt + P** e digite a primeira letra do nome do processo.|
+|Depurar aplicativos ASP.NET no computador local depois de iniciar o aplicativo sem o depurador|Usar anexar ao processo|iiexpress.exe|Isso pode ser útil para fazer com que seu aplicativo seja carregado mais rapidamente, como (por exemplo) durante a criação de perfil. |
+|Depuração remota ASP.NET 4 ou 4,5 em um servidor IIS|Usar as ferramentas remotas e anexar ao processo|w3wp.exe|Consulte [depuração remota ASP.net em um computador IIS remoto](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)|
+|ASP.NET Core de depuração remota em um servidor IIS|Usar as ferramentas remotas e anexar ao processo|dnx.exe|Para a implantação de aplicativo, consulte [publicar no IIS](https://docs.asp.net/en/latest/publishing/iis.html). Para depuração, consulte [depuração remota ASP.net em um computador IIS remoto](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)|
+|Depurar outros tipos de aplicativos com suporte em um processo de servidor|Usar ferramentas remotas (se o servidor for remoto) e anexar ao processo|iexplore. exe ou outros processos|Se necessário, use o Gerenciador de tarefas para ajudar a identificar o processo. Consulte [depuração remota](../debugger/remote-debugging.md) e seções posteriores neste tópico|
+|Depuração remota de um aplicativo de área de trabalho do Windows|Ferramentas Remotas e F5|N/D| Consulte [depuração remota](../debugger/remote-debugging.md)|
+|Depuração remota de um aplicativo Windows universal (UWP), OneCore, HoloLens ou IoT|Depurar pacote do aplicativo instalado|N/D|Usar **depuração/outros destinos de depuração/depurar pacote do aplicativo instalado** em vez de **anexar ao processo**|
+|Depurar um aplicativo Windows universal (UWP), OneCore, HoloLens ou IoT que você não iniciou no Visual Studio|Depurar pacote do aplicativo instalado|N/D|Usar **depuração/outros destinos de depuração/depurar pacote do aplicativo instalado** em vez de **anexar ao processo**|
 
 > [!WARNING]
-> Para anexar a um aplicativo Universal do Windows que é escrito em JavaScript, você deve primeiro habilitar a depuração para o aplicativo. Ver [anexar o depurador](../debugger/start-a-debugging-session-for-store-apps-in-visual-studio-javascript.md#BKMK_Attach_the_debugger) no Centro de desenvolvimento do Windows.
+> Para anexar a um aplicativo universal do Windows que é escrito em JavaScript, primeiro você deve habilitar a depuração para o aplicativo. Consulte [anexar o depurador](../debugger/start-a-debugging-session-for-store-apps-in-visual-studio-javascript.md#BKMK_Attach_the_debugger) no centro de desenvolvimento do Windows.
 
 > [!NOTE]
-> Para que o depurador se anexe ao código escrito em C++, o código precisa emitir `DebuggableAttribute`. Você pode adicionar isso ao seu código automaticamente vinculando à opção do vinculador [/ASSEMBLYDEBUG](http://msdn.microsoft.com/library/94443af3-470c-41d7-83a0-7434563d7982).
+> Para que o depurador se anexe ao código escrito em C++, o código precisa emitir `DebuggableAttribute`. Você pode adicionar isso ao seu código automaticamente vinculando à opção do vinculador [/ASSEMBLYDEBUG](https://msdn.microsoft.com/library/94443af3-470c-41d7-83a0-7434563d7982).
 
-## <a name="what-debugger-features-can-i-use"></a>Quais recursos do depurador pode usar?
+## <a name="what-debugger-features-can-i-use"></a>Quais recursos do depurador posso usar?
 
-Para usar os recursos completos do depurador do Visual Studio (como usar pontos de interrupção) ao anexar a um processo, o executável deve corresponder exatamente ao seu local de origem e símbolos (ou seja, o depurador deve ser capaz de carregar o correto [(.pbd) arquivos de símbolo ](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)). Por padrão, isso requer uma compilação de depuração.
+Para usar os recursos completos do depurador do Visual Studio (como atingir pontos de interrupção) ao anexar a um processo, o executável deve corresponder exatamente à fonte local e aos símbolos (ou seja, o depurador deve ser capaz de carregar os [arquivos de símbolo (. pbd)](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)corretos). Por padrão, isso requer uma compilação de depuração.
 
-Para cenários de depuração remota, você deve ter o código-fonte (ou uma cópia do código-fonte) estiver aberto no Visual Studio. Os binários do aplicativo compilado no computador remoto devem vir da mesma compilação, como no computador local.
+Para cenários de depuração remota, você deve ter o código-fonte (ou uma cópia do código-fonte) já aberto no Visual Studio. Os binários de aplicativo compilados no computador remoto devem vir da mesma compilação que no computador local.
 
-Em alguns cenários de depuração locais, você pode depurar no Visual Studio sem acesso à fonte de se os arquivos de símbolos corretos estão presentes com o aplicativo (por padrão, isso requer uma compilação de depuração). Para obter mais informações, consulte [arquivos de origem e especificar o símbolo](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
+Em alguns cenários de depuração local, você pode depurar no Visual Studio sem acesso à origem se os arquivos de símbolo corretos estiverem presentes com o aplicativo (por padrão, isso requer uma compilação de depuração). Para obter mais informações, consulte [especificar o símbolo e os arquivos de origem](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
 
 ## <a name="BKMK_Troubleshoot_attach_errors"></a> Solucionar problemas de anexo
  Quando o depurador se anexa a um processo em execução, o processo pode conter um ou mais tipos de código. Os tipos de código aos quais o depurador pode se anexar são exibidos e selecionados na caixa de diálogo **Selecionar Tipo de Código**.
@@ -157,23 +158,23 @@ Em alguns cenários de depuração locais, você pode depurar no Visual Studio s
 
  Se você desejar informações mais específicas sobre por que o depurador não foi anexado a um tipo de código, tente reanexar somente àquele tipo de código.
 
- **Para obter informações específicas sobre por que um tipo de código falha ao anexar**
+ **Para obter informações específicas sobre por que um tipo de código falhou ao anexar**
 
-1. Desanexe do processo. Sobre o **Debug** menu, clique em **desanexar tudo**.
+1. Desanexe do processo. No menu **depurar** , clique em **desanexar tudo**.
 
 2. Anexe o processo novamente, selecionando apenas um único tipo de código.
 
-   1. No **anexar ao processo** caixa de diálogo, selecione o processo na **processos disponíveis** lista.
+   1. Na caixa de diálogo **anexar ao processo** , selecione o processo na lista **processos disponíveis** .
 
    2. Clique em **Selecionar**.
 
    3. Na caixa de diálogo **Tipo de Código Selecionado**, selecione **Depurar esses tipos de código** e o tipo de código que falhou em ser anexado. Limpe qualquer outro código.
 
-   4. Clique em **OK**. O **Select Code Type** caixa de diálogo é fechada.
+   4. Clique em **OK**. A caixa de diálogo **Selecionar tipo de código** é fechada.
 
-   5. No **anexar ao processo** caixa de diálogo, clique em **Attach**.
+   5. Na caixa de diálogo **anexar ao processo** , clique em **anexar**.
 
       Desta vez, o anexo falhará completamente e você receberá uma mensagem de erro específica.
 
 ## <a name="see-also"></a>Consulte também
- [Depurar vários processos](../debugger/debug-multiple-processes.md) [depuração Just-In-Time](../debugger/just-in-time-debugging-in-visual-studio.md) [depuração remota](../debugger/remote-debugging.md)
+ [Depurar vários processos](../debugger/debug-multiple-processes.md) a depuração [remota](../debugger/remote-debugging.md) [just-in-time](../debugger/just-in-time-debugging-in-visual-studio.md)

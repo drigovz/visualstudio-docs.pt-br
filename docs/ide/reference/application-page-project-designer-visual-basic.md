@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - Project Designer, Application page
 - Application page in Project Designer
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 84874328c2f7a20a79370ff210eb51d966ec4648
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: a40b35960b1dda30e1151e242380147ac58a77ce
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62791650"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72651923"
 ---
 # <a name="application-page-project-designer-visual-basic"></a>Página de Aplicativo, Designer de Projeto (Visual Basic)
 
@@ -57,14 +57,14 @@ Para obter informações sobre como acessar esta propriedade de forma programát
 
 ### <a name="target-framework-all-configurations"></a>Estrutura de destino (todas as configurações)
 
-Especifica a versão no .NET Framework que o aplicativo direciona. Essa opção pode ter valores diferentes dependendo de quais versões do .NET Framework estão instaladas em seu computador.
+Especifica a versão do .NET direcionada pelo aplicativo. Essa opção pode ter valores diferentes dependendo de quais versões do .NET estão instaladas no computador.
 
-O valor padrão corresponde à estrutura de destino que você especificou quando criou o projeto.
+Para projetos .NET Framework, o valor padrão corresponde à estrutura de destino que você especificou quando criou o projeto.
 
 > [!NOTE]
 > Os pacotes de pré-requisitos listados na [Caixa de diálogo Pré-requisitos](../../ide/reference/prerequisites-dialog-box.md) são definidos automaticamente quando você abre a caixa de diálogo pela primeira vez. Se você alterar posteriormente a estrutura de destino do projeto, será necessário especificar os pré-requisitos manualmente para corresponder à nova estrutura de destino.
 
-Para obter mais informações, confira [Como: Destinar uma versão do .NET Framework](../../ide/how-to-target-a-version-of-the-dotnet-framework.md) e [Visão geral de multiplataforma Visual Studio](../../ide/visual-studio-multi-targeting-overview.md).
+Para obter mais informações, confira [Visão geral do direcionamento de estrutura](../../ide/visual-studio-multi-targeting-overview.md).
 
 ### <a name="application-type"></a>Tipo de aplicativo
 
@@ -90,11 +90,11 @@ Se o projeto for um Aplicativo de Navegador do WPF, essa lista será denominada 
 
 Se **Habilitar estrutura de aplicativo** estiver desmarcado, essa lista se tornará **Objeto de inicialização** e mostrará os formulários e classes ou módulos com um `Sub Main`.
 
-**Objeto de inicialização** define o ponto de entrada a ser chamado quando o aplicativo é carregado. Geralmente, isso é definido como o principal formulário em seu aplicativo ou como o procedimento `Sub Main` que deve ser executado quando o aplicativo é iniciado. Como as bibliotecas de classe não têm um ponto de entrada, sua única opção para essa propriedade é **(Nenhum)**. Para obter mais informações, consulte [/main](/dotnet/visual-basic/reference/command-line-compiler/main). Para acessar essa propriedade de forma programática, consulte <xref:VSLangProj.ProjectProperties.StartupObject%2A>.
+**Objeto de inicialização** define o ponto de entrada a ser chamado quando o aplicativo é carregado. Geralmente, isso é definido como o principal formulário em seu aplicativo ou como o procedimento `Sub Main` que deve ser executado quando o aplicativo é iniciado. Como as bibliotecas de classe não têm um ponto de entrada, sua única opção para essa propriedade é **(Nenhum)** . Para obter mais informações, consulte [/main](/dotnet/visual-basic/reference/command-line-compiler/main). Para acessar essa propriedade de forma programática, consulte <xref:VSLangProj.ProjectProperties.StartupObject%2A>.
 
 ### <a name="icon"></a>Ícone
 
-Define o arquivo .ico que você deseja usar como o ícone do programa. Selecione **\<Procurar.. >** para procurar um gráfico existente. Consulte [-win32icon](/dotnet/visual-basic/reference/command-line-compiler/win32icon) (ou [-win32icon (opções do compilador C#)](/dotnet/csharp/language-reference/compiler-options/win32icon-compiler-option)) para obter mais informações. Para acessar essa propriedade de forma programática, consulte <xref:VSLangProj.ProjectProperties.ApplicationIcon%2A>.
+Define o arquivo .ico que você deseja usar como o ícone do programa. Selecione **\<Procurar.. &amp;gt;** para procurar um gráfico existente. Consulte [-win32icon](/dotnet/visual-basic/reference/command-line-compiler/win32icon) (ou [-win32icon (opções do compilador C#)](/dotnet/csharp/language-reference/compiler-options/win32icon-compiler-option)) para obter mais informações. Para acessar essa propriedade de forma programática, consulte <xref:VSLangProj.ProjectProperties.ApplicationIcon%2A>.
 
 ### <a name="assembly-information"></a>Informações do assembly
 
@@ -153,7 +153,7 @@ Selecione **No fechamento da janela principal** para especificar que o aplicativ
 
 ### <a name="splash-screen"></a>Tela inicial
 
-Selecione o formulário que você deseja usar como uma tela inicial. É necessário ter criado anteriormente uma tela inicial usando um formulário ou modelo. O padrão é **(Nenhum)**.
+Selecione o formulário que você deseja usar como uma tela inicial. É necessário ter criado anteriormente uma tela inicial usando um formulário ou modelo. O padrão é **(Nenhum)** .
 
 ### <a name="view-application-events"></a>Exibir eventos de aplicativo
 

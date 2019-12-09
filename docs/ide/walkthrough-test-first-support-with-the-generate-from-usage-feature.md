@@ -1,5 +1,5 @@
 ---
-title: 'Passo a passo: Desenvolvimento de teste antes da codificação com o recurso gerar com base no uso'
+title: Desenvolvimento de teste antes da codificação com recurso gerar com base no uso
 ms.date: 10/09/2017
 dev_langs:
 - VB
@@ -8,27 +8,27 @@ ms.topic: conceptual
 helpviewer_keywords:
 - Generate From Usage
 - Test-First Development
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3085e2f9b27d587f26fd93db06bc837527a78ff1
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 81ab4b1597ea9f91a1b5081e89fd4cb77e0d8c63
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432045"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647156"
 ---
-# <a name="walkthrough-test-first-development-with-the-generate-from-usage-feature"></a>Passo a passo: Desenvolvimento de teste antes da codificação com o recurso gerar com base no uso
+# <a name="walkthrough-test-first-development-with-the-generate-from-usage-feature"></a>Instruções passo a passo: desenvolvimento de teste antes da codificação com o recurso gerar com base no uso
 
 Este tópico demonstra como usar o recurso [Gerar do Uso](../ide/visual-csharp-intellisense.md#generate-from-usage), que oferece suporte ao desenvolvimento de test-first.
 
  O *desenvolvimento test-first* é uma abordagem para design de software em que você primeiro escreve testes de unidade baseados nas especificações do produto e, em seguida, escreve o código-fonte que é necessário para tornar os testes bem-sucedidos. O Visual Studio é compatível com o desenvolvimento teste antes da codificação (test-first) através da geração de novos tipos e membros no código-fonte ao referenciá-los pela primeira vez em seus casos de teste antes de serem definidos.
 
- O Visual Studio gera os novos tipos e membros com uma interrupção mínima no seu fluxo de trabalho. Você pode criar stubs para tipos, métodos, propriedades, campos ou construtores sem sair do seu local atual no código. Quando você abre uma caixa de diálogo para especificar as opções para a geração de tipo, o foco retorna imediatamente para o arquivo aberto no momento quando a caixa de diálogo é fechada.
+O Visual Studio gera os novos tipos e membros com uma interrupção mínima no seu fluxo de trabalho. Você pode criar stubs para tipos, métodos, propriedades, campos ou construtores sem sair do seu local atual no código. Quando você abre uma caixa de diálogo para especificar as opções para a geração de tipo, o foco retorna imediatamente para o arquivo aberto no momento quando a caixa de diálogo é fechada.
 
- O recurso **Gerar com Base no Uso** pode ser usado com estruturas de teste integradas ao Visual Studio. A Estrutura de Teste de unidade da Microsoft é demonstrada neste tópico.
+O recurso **Gerar com Base no Uso** pode ser usado com estruturas de teste integradas ao Visual Studio. A Estrutura de Teste de unidade da Microsoft é demonstrada neste tópico.
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
@@ -38,7 +38,7 @@ Este tópico demonstra como usar o recurso [Gerar do Uso](../ide/visual-csharp-i
 
 2. No **Gerenciador de Soluções**, clique com o botão direito do mouse no ícone da solução na parte superior, escolha **Adicionar**  >  **Novo Projeto**.
 
-3. Crie um **projeto de Teste de Unidade (.NET Framework)**.
+3. Crie um **projeto de Teste de Unidade (.NET Framework)** .
 
    ::: moniker range="vs-2017"
 
@@ -93,7 +93,7 @@ Suponha que a especificação de produto afirma que a classe `Automobile` tem du
      [!code-csharp[VbTDDWalkthrough#1](../ide/codesnippet/CSharp/walkthrough-test-first-support-with-the-generate-from-usage-feature_1.cs)]
      [!code-vb[VbTDDWalkthrough#1](../ide/codesnippet/VisualBasic/walkthrough-test-first-support-with-the-generate-from-usage-feature_1.vb)]
 
-2. Com o código faz referência a duas propriedades indefinidas em `Automobile`, um sublinhado ondulado aparecerá sob `Model` e `TopSpeed`. Passe o mouse sobre `Model`, escolha a lâmpada de erro **Ações Rápidas** e, em seguida, escolha **Gerar propriedade 'Automobile.Model'**.
+2. Com o código faz referência a duas propriedades indefinidas em `Automobile`, um sublinhado ondulado aparecerá sob `Model` e `TopSpeed`. Passe o mouse sobre `Model`, escolha a lâmpada de erro **Ações Rápidas** e, em seguida, escolha **Gerar propriedade 'Automobile.Model'** .
 
 3. Gere um stub de propriedade para a propriedade `TopSpeed` da mesma maneira.
 
@@ -107,11 +107,11 @@ Agora vamos criar um método de teste que gerará um stub de construtor para ini
      [!code-csharp[VbTDDWalkthrough#2](../ide/codesnippet/CSharp/walkthrough-test-first-support-with-the-generate-from-usage-feature_2.cs)]
      [!code-vb[VbTDDWalkthrough#2](../ide/codesnippet/VisualBasic/walkthrough-test-first-support-with-the-generate-from-usage-feature_2.vb)]
 
-2. Clique na lâmpada de erro **Ações Rápidas** sob a linha ondulada vermelha e, em seguida, clique em **Gerar construtor em 'Automobile'**.
+2. Clique na lâmpada de erro **Ações Rápidas** sob a linha ondulada vermelha e, em seguida, clique em **Gerar construtor em 'Automobile'** .
 
      No arquivo de classe `Automobile`, observe que o novo construtor examinou os nomes das variáveis locais que são usadas na chamada do construtor, encontrou propriedades que têm os mesmos nomes na classe `Automobile` e forneceu código no corpo do construtor para armazenar os valores de argumento nas propriedades `Model` e `TopSpeed`.
 
-3. Depois de gerar o novo construtor, um sublinhado ondulado aparece sob a chamada para o construtor padrão em `DefaultAutomobileIsInitializedCorrectly`. A mensagem de erro informa que a classe `Automobile` não tem nenhum construtor que assuma zero argumentos. Para gerar um construtor padrão explícito que não tem parâmetros, clique na lâmpada de erro **Ações Rápidas** e, em seguida, clique em **Gerar construtor em 'Automobile'**.
+3. Depois de gerar o novo construtor, um sublinhado ondulado aparece sob a chamada para o construtor padrão em `DefaultAutomobileIsInitializedCorrectly`. A mensagem de erro informa que a classe `Automobile` não tem nenhum construtor que assuma zero argumentos. Para gerar um construtor padrão explícito que não tem parâmetros, clique na lâmpada de erro **Ações Rápidas** e, em seguida, clique em **Gerar construtor em 'Automobile'** .
 
 ### <a name="generate-a-stub-for-a-method"></a>Gerar um stub para um método
 Suponha que a especificação afirme que um novo `Automobile` poderá ser colocado em um estado `IsRunning` se suas propriedades `Model` e `TopSpeed` forem definidas como algo diferente dos valores padrão.
@@ -121,9 +121,9 @@ Suponha que a especificação afirme que um novo `Automobile` poderá ser coloca
      [!code-csharp[VbTDDWalkthrough#3](../ide/codesnippet/CSharp/walkthrough-test-first-support-with-the-generate-from-usage-feature_3.cs)]
      [!code-vb[VbTDDWalkthrough#3](../ide/codesnippet/VisualBasic/walkthrough-test-first-support-with-the-generate-from-usage-feature_3.vb)]
 
-2. Clique na lâmpada de erro **Ações Rápidas** para a chamada de método `myAuto.Start` e, em seguida, clique em **Gerar método 'Automobile.Start'**.
+2. Clique na lâmpada de erro **Ações Rápidas** para a chamada de método `myAuto.Start` e, em seguida, clique em **Gerar método 'Automobile.Start'** .
 
-3. Clique na lâmpada **Ações Rápidas** para a propriedade `IsRunning` e, em seguida, clique em **Gerar propriedade 'Automobile.IsRunning'**.
+3. Clique na lâmpada **Ações Rápidas** para a propriedade `IsRunning` e, em seguida, clique em **Gerar propriedade 'Automobile.IsRunning'** .
 
      Agora a classe `Automobile` contém um método chamado `Start()` e uma propriedade chamada `IsRunning`.
 

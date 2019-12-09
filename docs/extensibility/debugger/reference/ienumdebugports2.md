@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugPorts2
 ms.assetid: 1754eef3-cf62-42e0-b218-1911acba77d4
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b39eff84e1933c6181b3e6ae03bd6055b33570e2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c24edcd5ef47408cd4c11b3d0548ad34516702a1
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62914317"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66326513"
 ---
 # <a name="ienumdebugports2"></a>IEnumDebugPorts2
 Essa interface enumera as portas de um fornecedor de porta ou da máquina.

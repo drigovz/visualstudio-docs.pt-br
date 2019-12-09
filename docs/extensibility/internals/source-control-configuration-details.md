@@ -1,54 +1,54 @@
 ---
-title: Detalhes de configuração de controle de origem | Microsoft Docs
+title: Detalhes de configuração do controle do código-fonte | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], configuration details
 ms.assetid: adbee9fc-7a2e-4abe-a3b8-e6615bcd797f
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 59aa3ac36e989b2e2e1af2e36e8360ef53cb8438
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 0a6c51dfe4ad9378af04da61dbd7e9011c4678f1
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63428992"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72723792"
 ---
 # <a name="source-control-configuration-details"></a>Detalhes de configuração de controle do código-fonte
-Para implementar o controle do código-fonte, você precisa configurar corretamente o sistema de projeto ou o editor para fazer o seguinte:
+Para implementar o controle do código-fonte, você precisa configurar corretamente seu sistema ou editor de projeto para fazer o seguinte:
 
-- Solicitar permissão para fazer a transição para estado alterado
+- Solicitar permissão para passar para o estado alterado
 
 - Solicitar permissão para salvar um arquivo
 
 - Solicitar permissão para adicionar, remover ou renomear arquivos no projeto
 
-## <a name="request-permission-to-transition-to-changed-state"></a>Solicitar permissão para fazer a transição para estado alterado
- Um editor ou projeto deve solicitar permissão para fazer a transição para o estado de alteração (sujo) chamando <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>. Cada editor que implementa <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData.IsDocDataDirty%2A> deve chamar <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> e receber aprovação para alterar o documento do ambiente antes de retornar `True` para <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData.IsDocDataDirty%2A>. Um projeto é essencialmente um editor para um arquivo de projeto e tem como resultado, a responsabilidade de mesma para implementar o acompanhamento de estado alterado para o arquivo de projeto como um editor de texto faz para seus arquivos. O ambiente manipula o estado alterado da solução, mas você deve lidar com o estado de alteração de qualquer objeto na solução faz referência, mas não armazena, como um arquivo de projeto ou seus itens. Em geral, se seu projeto ou o editor é responsável por gerenciar a persistência para um item, é responsável por implementar o acompanhamento de estado alterado.
+## <a name="request-permission-to-transition-to-changed-state"></a>Solicitar permissão para passar para o estado alterado
+ Um projeto ou editor deve solicitar permissão para fazer a transição para o estado alterado (sujo) chamando <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>. Cada editor que implementa <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData.IsDocDataDirty%2A> deve chamar <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> e receber aprovação para alterar o documento do ambiente antes de retornar `True` para <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData.IsDocDataDirty%2A>. Um projeto é essencialmente um editor para um arquivo de projeto e, consequentemente, tem a mesma responsabilidade de implementar o acompanhamento de estado alterado para o arquivo de projeto como um editor de texto para seus arquivos. O ambiente manipula o estado alterado da solução, mas você deve manipular o estado alterado de qualquer objeto que a solução faz referência, mas não armazena, como um arquivo de projeto ou seus itens. Em geral, se seu projeto ou editor for responsável por gerenciar a persistência de um item, ele será responsável por implementar o acompanhamento de estado alterado.
 
- Em resposta ao `IVsQueryEditQuerySave2::QueryEditFiles` chamar, o ambiente pode fazer o seguinte:
+ Em resposta à chamada de `IVsQueryEditQuerySave2::QueryEditFiles`, o ambiente pode fazer o seguinte:
 
-- Rejeitar a chamada para alterar, caso em que o editor ou projeto deve permanecer no estado inalterado (limpo).
+- Rejeite a chamada para alterar, caso em que o editor ou projeto deve permanecer no estado inalterado (limpo).
 
-- Indicam que os dados do documento devem ser recarregados. Para um projeto, o ambiente será recarregar os dados para o projeto. Um editor deve recarregar os dados do disco por meio de seu <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2.ReloadDocData%2A> implementação. Em ambos os casos, o contexto no projeto ou no editor pode ser alterado quando os dados são recarregados.
+- Indique que os dados do documento devem ser recarregados. Para um projeto, o ambiente recarregará os dados para o projeto. Um editor deve recarregar os dados do disco por meio de sua implementação de <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2.ReloadDocData%2A>. Em ambos os casos, o contexto no projeto ou editor pode ser alterado quando os dados são recarregados.
 
-  É uma tarefa complexa e difícil fazer ajustes apropriados `IVsQueryEditQuerySave2::QueryEditFiles` chamadas em uma base de código existente. Como resultado, essas chamadas devem ser integradas durante a criação do projeto ou no editor.
+  É uma tarefa complexa e difícil de adaptar chamadas de `IVsQueryEditQuerySave2::QueryEditFiles` apropriadas para uma base de código existente. Como resultado, essas chamadas devem ser integradas durante a criação do projeto ou editor.
 
 ## <a name="request-permission-to-save-a-file"></a>Solicitar permissão para salvar um arquivo
- Antes de um editor ou projeto salva um arquivo, ele deve chamar <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFile%2A> ou <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFiles%2A>. Para arquivos de projeto, essas chamadas são concluídas automaticamente pela solução, que saiba quando salvar um arquivo de projeto. Editores são responsáveis por fazer essas chamadas, a menos que a implementação do editor de `IVsPersistDocData2` usa a função auxiliar <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SaveDocDataToFile%2A>. Se o editor implementa `IVsPersistDocData2` dessa maneira e, em seguida, a chamada para `IVsQueryEditQuerySave2::QuerySaveFile` ou `IVsQueryEditQuerySave2::QuerySaveFiles` é feita para você.
+ Antes que um projeto ou editor salve um arquivo, ele deve chamar <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFile%2A> ou <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFiles%2A>. Para arquivos de projeto, essas chamadas são automaticamente concluídas pela solução, que sabe quando salvar um arquivo de projeto. Os editores são responsáveis por fazer essas chamadas, a menos que a implementação do editor de `IVsPersistDocData2` use a função auxiliar <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SaveDocDataToFile%2A>. Se o seu editor implementa `IVsPersistDocData2` dessa forma, a chamada para `IVsQueryEditQuerySave2::QuerySaveFile` ou `IVsQueryEditQuerySave2::QuerySaveFiles` é feita para você.
 
 > [!NOTE]
-> Sempre fazer essas chamadas preventivamente — ou seja, quando o editor for capaz de receber um cancelamento.
+> Sempre faça essas chamadas preemptivas, ou seja, por vez, quando o editor for capaz de receber um cancelamento.
 
 ## <a name="request-permission-to-add-remove-or-rename-files-in-the-project"></a>Solicitar permissão para adicionar, remover ou renomear arquivos no projeto
- Antes de um projeto pode adicionar, renomear ou remover um arquivo ou diretório, deve chamar apropriado `IVsTrackProjectDocuments2::OnQuery*` método solicitar permissão do ambiente. Se a permissão é concedida, o projeto deve concluir a operação e, em seguida, chamar o `IVsTrackProjectDocuments2::OnAfter*` método para notificar o ambiente de que a operação foi concluída. O projeto deve chamar os métodos do <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2> interface para todos os arquivos (por exemplo, arquivos especiais) e não apenas os arquivos do pai. Chamadas de arquivo são obrigatórias, mas as chamadas de diretório são opcionais. Se seu projeto tiver informações de diretório, ele deverá chamar apropriado <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2> métodos, mas se ele não tiver essas informações, o ambiente irá inferir informações de diretório.
+ Antes que um projeto possa adicionar, renomear ou remover um arquivo ou diretório, ele deve chamar o método de `IVsTrackProjectDocuments2::OnQuery*` apropriado para solicitar permissão do ambiente. Se a permissão for concedida, o projeto deverá concluir a operação e, em seguida, chamar o método de `IVsTrackProjectDocuments2::OnAfter*` apropriado para notificar o ambiente de que a operação foi concluída. O projeto deve chamar os métodos da interface <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2> para todos os arquivos (por exemplo, arquivos especiais) e não apenas os arquivos pai. As chamadas de arquivo são obrigatórias, mas as chamadas de diretório são opcionais. Se o seu projeto tiver informações de diretório, ele deverá chamar os métodos de <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2> apropriados, mas se não tiver essas informações, o ambiente inferirá as informações de diretório.
 
- O projeto não deve chamar os métodos de `IVsTrackProjectDocuments2` no projeto abrir ou fechar. Os ouvintes que quiser que essas informações durante a inicialização podem aguardar o <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterOpenSolution%2A> eventos e iterar por meio da solução para localizar as informações necessárias. Durante o desligamento, essa informação não é necessária. `IVsTrackProjectDocuments2` é fornecido pela <xref:Microsoft.VisualStudio.Shell.Interop.SVsTrackProjectDocuments>.
+ O projeto não deve chamar os métodos de `IVsTrackProjectDocuments2` no projeto aberto ou fechado. Os ouvintes que desejam essas informações na inicialização podem aguardar o evento <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterOpenSolution%2A> e iterar pela solução para encontrar as informações de que precisam. Ao desligar, essas informações não são necessárias. `IVsTrackProjectDocuments2` é fornecido pelo <xref:Microsoft.VisualStudio.Shell.Interop.SVsTrackProjectDocuments>.
 
- Para cada adicionar, renomear e remover ação, há um `OnQuery*` método e um `OnAfter*` método. Chamar o `OnQuery*` método pedir permissão para adicionar, renomear ou remover o arquivo ou diretório. Chamar o `OnAfter*` método depois que o arquivo ou diretório foi adicionado, renomeado ou removido e o estado do projeto reflete o novo estado.
+ Para cada ação adicionar, renomear e remover, há um método `OnQuery*` e um método `OnAfter*`. Chame o método `OnQuery*` para pedir permissão para adicionar, renomear ou remover o arquivo ou diretório. Chame o método `OnAfter*` depois que o arquivo ou diretório tiver sido adicionado, renomeado ou removido e o estado do projeto refletir o novo estado.
 
 ## <a name="see-also"></a>Consulte também
 

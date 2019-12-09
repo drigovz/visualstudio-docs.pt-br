@@ -13,23 +13,23 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a987b4be3430f2ed8b0562f41b51a94797f96dc4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 81f64352c15dce233058d49b70e35da7e2238688
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63009332"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72561644"
 ---
 # <a name="iactivescriptparse"></a>IActiveScriptParse
-Se o Script do Windows mecanismo permite miniscripts de código de texto bruto a ser adicionado ao script ou permite que o texto da expressão a ser avaliada em tempo de execução, ele implementa o `IActiveScriptParse` interface. Para linguagens de script interpretadas que não têm nenhum ambiente de criação independente, como o VBScript, isso fornece um mecanismo alternativo (diferente de `IPersist*`) para obter o código de script no mecanismo de script e para anexar os fragmentos de script ao objeto de vários eventos.  
+Se o mecanismo de script do Windows permitir que o código de texto bruto de scriptlets seja adicionado ao script ou permitir que o texto da expressão seja avaliado em tempo de execução, ele implementará a interface `IActiveScriptParse`. Para linguagens de script interpretadas que não têm um ambiente de criação independente, como o VBScript, isso fornece um mecanismo alternativo (diferente de `IPersist*`) para obter o código de script no mecanismo de script e anexar fragmentos de script a vários eventos de objeto .  
   
-## <a name="methods-in-vtable-order"></a>Métodos na ordem de Vtable  
+## <a name="methods-in-vtable-order"></a>Métodos em ordem vtable  
   
 |Método|Descrição|  
 |------------|-----------------|  
 |[IActiveScriptParse::InitNew](../../winscript/reference/iactivescriptparse-initnew.md)|Inicializa o mecanismo de script.|  
-|[IActiveScriptParse::AddScriptlet](../../winscript/reference/iactivescriptparse-addscriptlet.md)|Adiciona um scriptlet de código ao script.|  
-|[IActiveScriptParse::ParseScriptText](../../winscript/reference/iactivescriptparse-parsescripttext.md)|Analisa o scriptlet de código fornecido, adicionando declarações para o espaço de nome e avaliar o código conforme apropriado.|  
+|[IActiveScriptParse::AddScriptlet](../../winscript/reference/iactivescriptparse-addscriptlet.md)|Adiciona um Scriptlet de código ao script.|  
+|[IActiveScriptParse::ParseScriptText](../../winscript/reference/iactivescriptparse-parsescripttext.md)|Analisa o scriptlet de código fornecido, adicionando declarações ao espaço de nome e avaliando o código conforme apropriado.|  
   
 ## <a name="see-also"></a>Consulte também  
  [Interfaces de script ativo](../../winscript/reference/active-script-interfaces.md)

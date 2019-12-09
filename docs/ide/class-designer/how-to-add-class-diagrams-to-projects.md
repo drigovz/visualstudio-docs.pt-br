@@ -1,28 +1,28 @@
 ---
-title: 'Como: Adicionar diagramas de classe a projetos (Designer de Classe)'
+title: Como adicionar diagramas de classe a projetos (Designer de Classe)
 ms.date: 05/08/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - class diagrams, creating
 - Class Designer [Visual Studio], opening
 ms.assetid: 0eac1b54-2711-4e4b-9654-a0c429c08c8f
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 88e4f63646883c8d48dbd62fbd03deaddff8b8e2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 37f7a909196a3b345b39c006e9bf7cd6a52c9bde
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975597"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188989"
 ---
-# <a name="how-to-add-class-diagrams-to-projects"></a>Como: Adicionar diagramas de classe a projetos
+# <a name="how-to-add-class-diagrams-to-projects"></a>Como adicionar diagramas de classe a projetos
 
 Para criar, editar e refatorar classes e outros tipos, adicione um diagrama de classe ao projeto em C#, Visual Basic ou C++. Para visualizar diferentes partes do código em um projeto, adicione vários diagramas de classes ao projeto.
 
-Não é possível criar diagramas de classes a partir de projetos que compartilham o código por meio de diversos aplicativos. Para criar diagramas de classe UML, consulte [Criar diagramas e projetos de modelagem UML](../../modeling/create-uml-modeling-projects-and-diagrams.md).
+Não é possível criar diagramas de classes a partir de projetos que compartilham o código por meio de diversos aplicativos. Para criar diagramas de classe UML, consulte [Criar diagramas e projetos de modelagem UML](../../modeling/what-s-new-for-design-in-visual-studio.md).
 
 ## <a name="install-the-class-designer-component"></a>Instalar o componente do Designer de Classe
 
@@ -59,7 +59,7 @@ Para adicionar vários diagramas de classes, repita as etapas deste procedimento
 
 No **Gerenciador de Soluções**, abra o menu de contexto de um arquivo de classe (clique com o botão direito do mouse) e escolha **Exibir em Diagrama de Classe**.
 
-- ou -
+\- ou -
 
 No **Modo de Exibição de Classe**, abra o namespace ou o menu de contexto de tipo e escolha **Exibir Diagrama de Classe**.
 
@@ -72,8 +72,11 @@ No **Gerenciador de Soluções** ou no Modo de Exibição de Classe, clique com 
 
 Um diagrama de classe populado automaticamente é criado.
 
+> [!NOTE]
+> O Designer de Classe não está disponível nos projetos .NET Core.
+
 ## <a name="see-also"></a>Consulte também
 
-- [Como: Criar tipos usando o Designer de Classe](how-to-create-types.md)
-- [Como: Exibir tipos existentes](how-to-view-existing-types.md)
+- [Como criar tipos usando o Designer de Classe](how-to-create-types.md)
+- [Como exibir tipos existentes](how-to-view-existing-types.md)
 - [Projetar e exibir classes e tipos](designing-and-viewing-classes-and-types.md)

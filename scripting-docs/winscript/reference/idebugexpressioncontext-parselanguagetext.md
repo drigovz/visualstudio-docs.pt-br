@@ -1,5 +1,5 @@
 ---
-title: IDebugExpressionContext::ParseLanguageText | Microsoft Docs
+title: IDebugExpressionContext::P arseLanguageText | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 50f9f398b9193c776f8e2a823b78ce7b8da438b1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0493adde76e029088b637be3c6aaf02c55caaace
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946271"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573159"
 ---
 # <a name="idebugexpressioncontextparselanguagetext"></a>IDebugExpressionContext::ParseLanguageText
 Cria uma expressão de depuração para o texto especificado.  
@@ -41,30 +41,30 @@ HRESULT ParseLanguageText(
   
 #### <a name="parameters"></a>Parâmetros  
  `pstrCode`  
- [in] Fornece o texto da expressão ou comando (s).  
+ no Fornece o texto da expressão ou da (s) instrução (ões).  
   
  `nRadix`  
- [in] Raiz a ser usada.  
+ no Radix a ser usado.  
   
  `pstrDelimiter`  
- [in] O delimitador de fim do bloco de script. Quando `pstrCode` é analisado de um fluxo de texto, o host normalmente usa um delimitador, como duas aspas ("), para detectar o fim do bloco de script. Esse parâmetro especifica o delimitador que o host usou, permitindo que o mecanismo de script forneça algum pré-processamento primitivo condicional (por exemplo, substituindo uma aspa simples ['] por duas aspas simples para uso como um delimitador). Exatamente como (e se) o mecanismo de script usa essas informações dependem o mecanismo de script. Definir esse parâmetro como `NULL` se o host não usou um delimitador para marcar o fim do bloco de script.  
+ no O delimitador de bloco de fim de script. Quando `pstrCode` é analisada a partir de um fluxo de texto, o host geralmente usa um delimitador, como duas aspas simples (' '), para detectar o final do bloco de script. Esse parâmetro especifica o delimitador usado pelo host, permitindo que o mecanismo de script forneça algum pré-processamento primitivo condicional (por exemplo, substituindo uma aspa simples ['] por duas aspas simples para uso como um delimitador). Exatamente como (e se) o mecanismo de script usa essas informações depende do mecanismo de script. Defina esse parâmetro como `NULL` se o host não usou um delimitador para marcar o final do bloco de script.  
   
  `dwFlags`  
- [in] Combinação dos seguintes sinalizadores de texto de depuração:  
+ no Combinação dos seguintes sinalizadores de texto de depuração:  
   
 |Constante|Valor|Descrição|  
 |--------------|-----------|-----------------|  
-|DEBUG_TEXT_ISEXPRESSION|0x00000001|Indica que o texto é uma expressão em vez de uma instrução. Este sinalizador pode afetar a maneira na qual o texto é analisado por alguns idiomas.|  
+|DEBUG_TEXT_ISEXPRESSION|0x00000001|Indica que o texto é uma expressão, em oposição a uma instrução. Esse sinalizador pode afetar a maneira como o texto é analisado por alguns idiomas.|  
 |DEBUG_TEXT_RETURNVALUE|0x00000002|Se um valor de retorno estiver disponível, ele será usado pelo chamador.|  
-|DEBUG_TEXT_NOSIDEEFFECTS|0x00000004|Não permitir que os efeitos colaterais. Se esse sinalizador estiver definido, a avaliação da expressão não deve alterar nenhum estado de tempo de execução.|  
-|DEBUG_TEXT_ALLOWBREAKPOINTS|0x00000008|Permite que os pontos de interrupção durante a avaliação do texto. Se este sinalizador não for definido, em seguida, os pontos de interrupção são ignorados durante a avaliação do texto.|  
-|DEBUG_TEXT_ALLOWERRORREPORT|0x00000010|Permite que os relatórios de erro durante a avaliação do texto. Se este sinalizador não for definido, em seguida, erros não são relatados para o host durante a avaliação.|  
-|DEBUG_TEXT_EVALUATETOCODECONTEXT|0x00000020|Indica a expressão será avaliada para um contexto de código em vez de executar a própria expressão|  
+|DEBUG_TEXT_NOSIDEEFFECTS|0x00000004|Não permitir efeitos colaterais. Se esse sinalizador for definido, a avaliação da expressão deverá alterar nenhum estado de tempo de execução.|  
+|DEBUG_TEXT_ALLOWBREAKPOINTS|0x00000008|Permite pontos de interrupção durante a avaliação do texto. Se esse sinalizador não for definido, os pontos de interrupção serão ignorados durante a avaliação do texto.|  
+|DEBUG_TEXT_ALLOWERRORREPORT|0x00000010|Permite relatórios de erros durante a avaliação do texto. Se esse sinalizador não for definido, os erros não serão relatados ao host durante a avaliação.|  
+|DEBUG_TEXT_EVALUATETOCODECONTEXT|0x00000020|Indica que a expressão deve ser avaliada para um contexto de código em vez de executar a própria expressão|  
   
  `ppe`  
- [out] Retorna a expressão de depuração para o texto especificado.  
+ fora Retorna a expressão de depuração para o texto especificado.  
   
-## <a name="return-value"></a>Valor de retorno  
+## <a name="return-value"></a>Valor retornado  
  O método retorna um `HRESULT`. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.  
   
 |Valor|Descrição|  

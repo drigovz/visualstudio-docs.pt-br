@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProperty3::GetStringChars
 ms.assetid: 832c37f3-85cb-4227-8ab2-f27a80eafe90
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 01558ccf2d4f0e06231a9cbe152c47b1601bfdb2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 16d352ae5397d786c5d77f56a513e9ae2db2d7b3
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62916521"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66348826"
 ---
 # <a name="idebugproperty3getstringchars"></a>IDebugProperty3::GetStringChars
 Recupera a cadeia de caracteres associada a essa propriedade e o armazena em um buffer fornecido pelo usuário.
@@ -40,20 +43,17 @@ int GetStringChars(
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
-`buflen`
+## <a name="parameters"></a>Parâmetros
+`buflen`\
+[in] Número máximo de caracteres em que o buffer fornecido pelo usuário pode conter.
 
- [in] Número máximo de caracteres em que o buffer fornecido pelo usuário pode conter.
-
-`rgString`
-
- [out] Retorna a cadeia de caracteres.
+`rgString`\
+[out] Retorna a cadeia de caracteres.
 
  [C++ somente], `rgString` é um ponteiro para um buffer que recebe os caracteres Unicode da cadeia de caracteres. Esse buffer deve ter pelo menos `buflen` caracteres (não em bytes) de tamanho.
 
-`pceltFetched`
-
- [out] Em que o número de caracteres, na verdade, são armazenados no buffer é retornado. (Pode ser `NULL` em C++.)
+`pceltFetched`\
+[out] Em que o número de caracteres, na verdade, são armazenados no buffer é retornado. (Pode ser `NULL` em C++.)
 
 ## <a name="return-value"></a>Valor de retorno
 Se for bem-sucedido, retornará `S_OK`; caso contrário, retornará um código de erro.

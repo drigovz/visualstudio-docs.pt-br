@@ -6,15 +6,15 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.assetid: ccc5e543-7dcf-465c-97dd-e133e869800c
 caps.latest.revision: 32
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 671b9f9f851ee1c326f9d8cc2ea50d1f542ec00f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a5b2f2e2dc00eda388b2a2d075924fa72f9eff1a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62540265"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72670309"
 ---
 # <a name="productivity-tips-for-visual-studio"></a>Dicas de produtividade para o Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,13 +81,13 @@ Seguindo estas dicas, você pode gravar, navegar e depurar seu código no Visual
 
      Figure 1: Marcas Inteligentes de erro
 
-     ![Sugestões de marcação inteligente de erro](../ide/media/productivity-bluesmarttags.png "Productivity_BlueSmartTags")
+     ![Sugestões de marca inteligente de erro](../ide/media/productivity-bluesmarttags.png "|::ref1::|")
 
      As caixas vermelhas sugerem maneiras de refatorar seu código.
 
      Figure 2: Refatorando Marcas Inteligentes
 
-     ![Sugestões de marcação inteligente de refatoração](../ide/media/productivity-redsmarttags.png "Productivity_RedSmartTags")
+     ![Sugestões de marcas inteligentes de refatoração](../ide/media/productivity-redsmarttags.png "|::ref2::|")
 
 - **Exibir e editar a definição de um elemento de código**. Você pode exibir e editar rapidamente o módulo no qual um elemento de código, como um membro, uma variável ou um local, é definido.
 
@@ -117,16 +117,16 @@ Seguindo estas dicas, você pode gravar, navegar e depurar seu código no Visual
 
      Figura 3: lista de resultados do Início Rápido para `new project`
 
-     ![Resultados de Início Rápido para 'novo projeto'](../ide/media/productivity-quicklaunch.png "Productivity_QuickLaunch")
+     ![Resultados do Início Rápido para "novo projeto"](../ide/media/productivity-quicklaunch.png "|::ref3::|")
 
      O **Início Rápido** exibe links para a caixa de diálogo de **Novo Projeto**, a caixa de diálogo **Adicionar Novo Item** e a página Projetos e Soluções na caixa de diálogo **Opções**, entre outros. Os resultados do Início Rápido também podem incluir arquivos de projeto e janelas de ferramenta.
 
 ## <a name="BKMK_Debugging"></a> Depurando código
  A depuração pode consumir muito tempo, mas as dicas a seguir podem ajudar a acelerar o processo.
 
-- **Teste a mesma página, aplicativo ou site em navegadores diferentes**. À medida que você depura seu código, poderá facilmente mudar entre os navegadores da Web instalados, incluindo o [Inspetor de Página (Visual Studio)](http://msdn.microsoft.com/library/65880969-1ad2-47be-85b9-bb12c81bf209), sem ter que abrir a caixa de diálogo **Procurar Com**. Você pode usar a lista **Destino de Depuração**, que está na barra de ferramentas **Padrão** ao lado do botão **Iniciar Depuração**, para verificar rapidamente qual navegador você está usando enquanto depura ou exibe páginas.
+- **Teste a mesma página, aplicativo ou site em navegadores diferentes**. À medida que você depura seu código, poderá facilmente mudar entre os navegadores da Web instalados, incluindo o [Inspetor de Página (Visual Studio)](https://msdn.microsoft.com/library/65880969-1ad2-47be-85b9-bb12c81bf209), sem ter que abrir a caixa de diálogo **Procurar Com**. Você pode usar a lista **Destino de Depuração**, que está na barra de ferramentas **Padrão** ao lado do botão **Iniciar Depuração**, para verificar rapidamente qual navegador você está usando enquanto depura ou exibe páginas.
 
-     ![Selecionar as opções de depuração do navegador da Web](../ide/media/webbrowserdropdowntoolbar.png "WebBrowserDropDownToolbar")
+     ![Selecionar opções de depuração de navegador da Web](../ide/media/webbrowserdropdowntoolbar.png "|::ref4::|")
 
 - **Definir pontos de interrupção temporários**. Você pode criar um ponto de interrupção temporário na linha de código atual e iniciar o depurador simultaneamente. Quando você atinge esta linha de código, o depurador entra em modo de interrupção. Para obter mais informações, veja [Navegação pelo código com o depurador](../debugger/navigating-through-code-with-the-debugger.md).
 
@@ -157,5 +157,5 @@ Seguindo estas dicas, você pode gravar, navegar e depurar seu código no Visual
 
 - **Personalizar as fontes que aparecem no Visual Studio**. Você pode alterar a fonte, o tamanho e a cor usados par ao texto no IDE. Por exemplo, você pode personalizar a cor de elementos de código específicos no editor e a fonte em janelas de ferramenta ou por meio do IDE. Para obter mais informações, consulte [Como alterar fontes e cores](../ide/how-to-change-fonts-and-colors-in-visual-studio.md) e [Como alterar fontes e cores no Editor](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
  [Atalhos de teclado padrão para comandos usados frequentemente](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md) [Como personalizar menus e barras de ferramentas](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md) [Passo a passo: criar um aplicativo simples](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md) [Dicas e truques de acessibilidade](../ide/reference/accessibility-tips-and-tricks.md)

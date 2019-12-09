@@ -1,16 +1,16 @@
 ---
-title: Habilitar a assinatura para o Visual Studio para Mac
+title: Habilitar Assinatura
 description: Este artigo descreve como usar sua conta da Microsoft para ativar sua assinatura e desbloquear recursos no Visual Studio para Mac
-author: conceptdev
-ms.author: crdun
-ms.date: 05/06/2018
+author: asb3993
+ms.author: amburns
+ms.date: 09/18/2019
 ms.assetid: 898DFEB8-5757-4CCE-8AD2-8BC7706F5855
-ms.openlocfilehash: ce205b13537ee74bedee599e46c6e6006d9ceb77
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 563b512b9ecf0114a6795d2541a5e8e7f53414de
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62983060"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71213683"
 ---
 # <a name="enable-subscription"></a>Habilitar Assinatura
 

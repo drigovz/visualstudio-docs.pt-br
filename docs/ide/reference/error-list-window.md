@@ -10,17 +10,17 @@ helpviewer_keywords:
 - Error List window
 - errors [Visual Studio], Error List window
 ms.assetid: b7f6d45a-733b-4ad8-bc2f-737a37509e56
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 603faab80e185e7d22cba1ee544502d790afcdc0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: d0921d89caa6428c45dc2522e78f58bde50f84be
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62790853"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72654439"
 ---
 # <a name="error-list-window"></a>Janela Lista de Erros
 
@@ -41,7 +41,7 @@ A janela **Lista de Erros** permite que você execute as seguintes tarefas:
 
 - Pesquisar termos específicos e definir o escopo da pesquisa para apenas o projeto ou o documento atual.
 
-Para exibir a **Lista de Erros**, escolha **Exibir** > **Lista de Erros** ou pressione **Ctrl**+**\\**+**E**.
+Para exibir a **Lista de Erros**, escolha **Exibir** > **Lista de Erros** ou pressione **Ctrl**+ **\\** +**E**.
 
 É possível escolher as guias **Erros**, **Avisos** e **Mensagens** para ver níveis diferentes de informações.
 
@@ -53,14 +53,14 @@ Há dois tipos de filtro em duas caixas suspensas, uma do lado direito da barra 
 
 É possível restringir o escopo da pesquisa para analisar e tomar decisões sobre grupos de erros. Por exemplo, talvez você deseje se concentrar em erros básicos que estão impedindo a compilação de um projeto. As opções de escopo incluem:
 
-1. **Documentos Abertos**: Mostre erros, avisos e mensagens para os documentos abertos.
+1. **Documentos Abertos**: mostre erros, avisos e mensagens para os documentos abertos.
 
-2. **Projeto Atual**: Mostre erros, avisos e mensagens do projeto do documento atualmente selecionado no **Editor** ou o projeto selecionado no **Gerenciador de Soluções**.
+2. **Projeto Atual**: mostre erros, avisos e mensagens do projeto do documento atualmente selecionado no **Editor** ou o projeto selecionado no **Gerenciador de Soluções**.
 
     > [!NOTE]
     > A lista filtrada de erros, avisos e mensagens será alterada se o projeto do documento selecionado atualmente for diferente do projeto selecionado no **Gerenciador de Soluções**.
 
-3. **Documento Atual**: Mostre erros, avisos e mensagens para o documento atualmente selecionado no **Editor** ou no **Gerenciador de Soluções**.
+3. **Documento Atual**: mostre erros, avisos e mensagens para o documento atualmente selecionado no **Editor** ou no **Gerenciador de Soluções**.
 
 Se um filtro estiver aplicado no momento para o resultado da pesquisa, o nome do filtro será exibido na barra de título **Lista de Erros**. Em seguida, os botões **Erros**, **Avisos** e **Mensagens** exibem o número de itens filtrados mostrados junto com o número total de itens. Por exemplo, os botões mostram "x de y Erros". Se nenhum filtro for aplicado, a barra de título indicará apenas a “Lista de Erros”.
 
@@ -78,7 +78,7 @@ Use a caixa de texto **Pesquisar Lista de Erros** no lado direito da barra de fe
 
 Severidade
 
-Exibe os diferentes tipos da entrada **Lista de Erros** (**Erro**, **Mensagem**, **Aviso**, **Aviso [ativo]**, **Aviso [inativo]**).
+Exibe os diferentes tipos da entrada **Lista de Erros** (**Erro**, **Mensagem**, **Aviso**, **Aviso [ativo]** , **Aviso [inativo]** ).
 
 Código
 

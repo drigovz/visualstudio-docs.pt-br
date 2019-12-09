@@ -6,12 +6,12 @@ ms.assetid: 359184aa-f5b6-4b6c-99fe-104655b3a494
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 70b20a463563c54ce0b8ac81b9acab042b0389eb
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 9b8bc5963ba9263d72800cc473cfa56324884ace
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443955"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65699262"
 ---
 # <a name="addressing-dpi-issues"></a>Resolvendo problemas e DPI
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -228,7 +228,7 @@ xmlns:vsui="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.V
 ## <a name="enabling-hdpi-support-to-the-weboc"></a>Habilitando o suporte HDPI para o WebOC  
  Por padrão, os controles de WebOC (como o controle WebBrowser no WPF, ou a interface IWebBrowser2) não habilitam a detecção de HDPI e suporte. O resultado será um controle inserido com o conteúdo de exibição é muito pequeno em uma exibição de alta resolução. A seguir descreve como habilitar o suporte a DPI alto em uma instância de WebOC web específico.  
   
- Implementar a interface IDocHostUIHandler (consulte o artigo do MSDN sobre o [IDocHostUIHandler](http://msdn.microsoft.com/library/aa753260.aspx) interface):  
+ Implementar a interface IDocHostUIHandler (consulte o artigo do MSDN sobre o [IDocHostUIHandler](https://msdn.microsoft.com/library/aa753260.aspx) interface):  
   
 ```idl  
 [ComImport, InterfaceType(ComInterfaceType.InterfaceIsIUnknown),  
@@ -307,7 +307,7 @@ public interface IDocHostUIHandler
     }   
 ```  
   
- Opcionalmente, implemente a interface ICustomDoc (consulte o artigo do MSDN sobre o [ICustomDoc](http://msdn.microsoft.com/library/aa753272.aspx) interface):  
+ Opcionalmente, implemente a interface ICustomDoc (consulte o artigo do MSDN sobre o [ICustomDoc](https://msdn.microsoft.com/library/aa753272.aspx) interface):  
   
 ```idl  
 [InterfaceType(ComInterfaceType.InterfaceIsIUnknown),  

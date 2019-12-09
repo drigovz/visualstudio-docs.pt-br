@@ -3,17 +3,17 @@ title: Compilador de cores do VSIX | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 99395da7-ec34-491d-9baa-0590d23283ce
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: daf5b32ce8088dbb020fdaf484013dd1a1889826
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f706cc0c84f4329e0e4e8ad9545a31d8f3c31ed4
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62908012"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66332806"
 ---
 # <a name="vsix-color-compiler"></a>Compilador de cores do VSIX
 A ferramenta do compilador de cor de extensão do Visual Studio é um aplicativo de console que usa um arquivo. XML que representa as cores de temas do Visual Studio existentes e converte-o para um. pkgdef arquivo para que essas cores podem ser usados no Visual Studio. Como é fácil comparar as diferenças entre arquivos. XML, essa ferramenta é útil para o gerenciamento de cores personalizadas no controle de origem. Ele também pode ser conectado em ambientes de compilação para que a saída da compilação é um arquivo. pkgdef válido.
@@ -111,7 +111,7 @@ A ferramenta do compilador de cor de extensão do Visual Studio é um aplicativo
 |-|-|
 |**Atributo**|**Definição**|
 |Tipo|[Obrigatório] O tipo da cor. Ele pode ser um dos seguintes:<br /><br /> *CT_INVALID:* A cor é inválido ou não foi definida.<br /><br /> *CT_RAW:* Um valor ARGB bruto.<br /><br /> *CT_COLORINDEX:* NÃO USE.<br /><br /> *CT_SYSCOLOR:* Uma cor de sistema do Windows em SysColor.<br /><br /> *CT_VSCOLOR:* Uma cor do Visual Studio em __VSSYSCOLOREX.<br /><br /> *CT_AUTOMATIC:* A cor automática.<br /><br /> *CT_TRACK_FOREGROUND:* NÃO USE.<br /><br /> *CT_TRACK_BACKGROUND:* NÃO USE.|
-|Source|[Obrigatório] O valor da cor em hexadecimal|
+|Origem|[Obrigatório] O valor da cor em hexadecimal|
 
  Todos os valores com suporte pela enumeração __VSCOLORTYPE são compatíveis com o esquema no atributo de tipo. No entanto, é recomendável que você use apenas CT_RAW e CT_SYSCOLOR.
 

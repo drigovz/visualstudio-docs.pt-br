@@ -10,12 +10,12 @@ ms.assetid: 964980ca-21c5-4706-8535-6ea23e1c9cc9
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: ff124246c3dc80074432e40eebf6e00e8b90b3f7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a5a99ebdf2366ce6a60a6a724afc7d742db7150f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58926549"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705798"
 ---
 # <a name="source-control-plug-ins"></a>Plug-ins de controle do código-fonte
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,11 +56,11 @@ A seção de referência do SDK de plug-in de controle do código-fonte contém 
  [Glossário](../extensibility/source-control-plug-in-glossary.md)  
  Fornece termos úteis e suas definições para ler a documentação do SDK de plug-in de controle do código-fonte.  
   
- [Como: Desativar avisos de compatibilidade para Plug-ins de controle de origem](../extensibility/how-to-turn-off-compatibility-warnings-for-source-control-plug-ins.md)  
+ [Como: desativar avisos de compatibilidade para plug-ins de controle do código-fonte](../extensibility/how-to-turn-off-compatibility-warnings-for-source-control-plug-ins.md)  
  Descreve como desabilitar avisos.  
   
 ## <a name="related-sections"></a>Seções relacionadas  
- [Exemplo de plug-in de controle do código-fonte](http://msdn.microsoft.com/61de7d2b-71db-451e-8e3e-d41b11c7a4ca)  
+ [Exemplo de plug-in de controle do código-fonte](https://msdn.microsoft.com/61de7d2b-71db-451e-8e3e-d41b11c7a4ca)  
  Fornece um exemplo da funcionalidade de plug-in de controle do código-fonte.  
   
  [Guia de teste para plug-ins de controle do código-fonte](../extensibility/internals/test-guide-for-source-control-plug-ins.md)  

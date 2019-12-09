@@ -9,15 +9,15 @@ helpviewer_keywords:
 - accessibility [Visual Studio]
 ms.assetid: aa1ada29-4d93-4bf0-af8b-03633fcb0fba
 caps.latest.revision: 19
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 1d6c0a8fd4110b2e75d634a8ecfd5e397bb459f8
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: ff7d0e7a26c9e8fa6abe984353d3368ca1f6a36a
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441136"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74296095"
 ---
 # <a name="accessibility-features-of-visual-studio"></a>Funcionalidades de Acessibilidade do Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ Além dos recursos de acessibilidade e utilitários no Windows, os seguintes rec
 - Preenchimento automático para métodos e parâmetros
 
 > [!IMPORTANT]
-> As informações nesta seção somente são aplicadas aos usuários que licenciam produtos Microsoft nos Estados Unidos. Se tiver obtido este produto fora dos Estados Unidos, você pode usar o cartão de informações da subsidiária que acompanha o pacote de software ou pode visitar a página [Fale Conosco do Suporte da Microsoft](http://support.microsoft.com/ContactUs) e clicar no link **Localizar escritórios da Microsoft em todo o mundo** (na parte inferior da página). Esta página fornece uma lista de números de telefone e endereços da Microsoft para suporte aos serviços. Você pode contatar qualquer subsidiária para descobrir se os tipos de produtos ou serviços descritos nesta seção estão disponíveis na sua área. As informações sobre acessibilidade estão disponíveis em outros idiomas, incluindo japonês e francês.
+> As informações nesta seção somente são aplicadas aos usuários que licenciam produtos Microsoft nos Estados Unidos. Se tiver obtido este produto fora dos Estados Unidos, você pode usar o cartão de informações da subsidiária que acompanha o pacote de software ou pode visitar a página [Fale Conosco do Suporte da Microsoft](https://support.microsoft.com/contactus/) e clicar no link **Localizar escritórios da Microsoft em todo o mundo** (na parte inferior da página). Esta página fornece uma lista de números de telefone e endereços da Microsoft para suporte aos serviços. Você pode contatar qualquer subsidiária para descobrir se os tipos de produtos ou serviços descritos nesta seção estão disponíveis na sua área. As informações sobre acessibilidade estão disponíveis em outros idiomas, incluindo japonês e francês.
 
  Para mais informações, consulte os seguintes tópicos:
 
@@ -49,5 +49,5 @@ Além dos recursos de acessibilidade e utilitários no Windows, os seguintes rec
 
 - [Como alterar fontes e cores](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
  [Produtos e serviços de acessibilidade da Microsoft](../../ide/reference/accessibility-products-and-services-from-microsoft.md)

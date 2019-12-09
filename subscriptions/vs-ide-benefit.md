@@ -3,18 +3,17 @@ title: Benefício do IDE do Visual Studio na assinatura do Visual Studio | Micro
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 04/03/2019
+ms.date: 11/14/2019
 ms.topic: conceptual
 description: Saiba como baixar e instalar o IDE do Visual Studio incluído em sua assinatura do Visual Studio.
-searchscope: VS Subscription
-ms.openlocfilehash: af721e567e451c50533d0e476ec01acfa4022a53
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: fd140dfe1853e6799a960fd8e251a566954bf143
+ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63420806"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74491596"
 ---
-# <a name="using-the-visual-studio-2019-benefit"></a>Usar o benefício do Visual Studio 2019
+# <a name="the-visual-studio-2019-benefit"></a>O benefício do Visual Studio 2019
 
 Como assinante do Visual Studio, você tem acesso ao IDE do Visual Studio.  A versão específica dependerá do nível de sua assinatura.  O benefício aparecerá como um bloco na categoria Ferramentas na página [Benefícios](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) do portal do assinante.
 
@@ -35,7 +34,7 @@ Para baixar o IDE:
 5. Clique no botão azul de download.
    > [!div class="mx-imgBorder"]
    > ![Detalhes de download do Visual Studio Enterprise](_img/vs-ide-experience/vs-ide-download-details.png)
-6. Para instalar agora, clique em **Executar**.
+6. Clique no pacote do instalador baixado.  Se solicitado para instalar agora, clique em **Executar**.
 7. Na caixa de diálogo Controle de Conta de Usuário, clique em **Sim**.
 8. Clique em **Continuar** para aceitar os termos de licença.
 9. Quando a instalação for iniciada, escolha as cargas de trabalho, os componentes individuais e os pacotes de idiomas desejados, selecionando-os nas guias correspondentes.
@@ -44,9 +43,9 @@ Para baixar o IDE:
 
 10. Clique em **Instalar**.
 
-11. Quando a instalação for concluída, haverá a opção de modificar a instalação ou inicie o Visual Studio.  Clique em **Iniciar** para começar.
+11. Quando a instalação for concluída, haverá a opção de modificar a instalação ou inicie o Visual Studio.  Clique em **Iniciar** para começar.  Se você tiver várias versões instaladas, elas serão listadas.
     > [!div class="mx-imgBorder"]
-    > ![Iniciar o Visual Studio Enterprise](_img/vs-ide-experience/vs-ide-launch-cropped.png)
+    > ![Iniciar o Visual Studio Enterprise](_img/vs-ide-experience/vs-ide-versions.png)
 
 12. Entre com a conta associada à sua assinatura do Visual Studio.
 
@@ -54,24 +53,22 @@ Para baixar o IDE:
 
 14. O Visual Studio é aberto. Você está pronto para começar a usar o Visual Studio!
 
-    ::: moniker range="vs-2017"
-
     > [!div class="mx-imgBorder"]
     > ![Começar a usar o Visual Studio Enterprise](_img/vs-ide-experience/vs-ide-start-cropped.png)
 
-    ::: moniker-end
 
 ## <a name="eligibility"></a>Qualificação
 
 | Nível de Assinatura                                                 |     Canais                                            | Benefício                                                          | Renovável?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard, nuvem mensal)   | VL, Azure, Retail, NFR<sup>1</sup> selecionado | Disponível       |  Sim          |
+| Visual Studio Enterprise com GitHub Enterprise   | VL | Disponível       |  Sim          |
 | Visual Studio Professional (Standard, nuvem mensal) | VL, Azure, Retail                                       | Disponível                                                            |  Sim          |
+| Visual Studio Professional com GitHub Enterprise | VL   | Disponível              |  Sim          |
 | Visual Studio Test Professional (Padrão)                         | VL, Retail                                              | Disponível                                             |  Sim         |
-| Plataformas MSDN (Padrão)                                          | VL, Retail                                              | Não disponível                                              |  N/D          |
-| Visual Studio Dev Essentials | N/D  | Comunidade Visual Studio |Sim |
+| Plataformas MSDN (Padrão)                                          | VL, Retail                                              | Não disponível                                              |  N/A          |
 
-<sup>1</sup> *Inclui:  NFR (Proibida a revenda), VSIP (Visual Studio Industry Partner), MPN (Microsoft Partner Network), FTE, MCT Software & Services Developer, BizSpark, Imagine, MVP (Most Valuable Professional) e RD (Diretor Regional).  Exclui: MCT Software & Services.*
+<sup>1</sup>  *inclui: não para revenda (NFR), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (MPN), FTE, MCT software & Developer Services, BizSpark, imagine, profissional mais valioso (MVP), diretor regional (RD).  Exclusões: serviços de & de software do MCT.*
 
 > [!NOTE]
 > A Microsoft não oferece mais assinaturas anuais do Visual Studio Professional e do Visual Studio Enterprise nas Assinaturas na Nuvem. Não haverá nenhuma alteração na experiência dos clientes existentes nem na capacidade de renovar, aumentar, diminuir ou cancelar suas assinaturas. Os novos clientes são incentivados a acessar [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) para explorar diferentes opções de compra do Visual Studio.
@@ -80,6 +77,12 @@ Não tem certeza de qual assinatura você está usando?  Conecte-se ao [https://
 
 ## <a name="support-resources"></a>Recursos de suporte
 - Se precisar de ajuda com o IDE do Visual Studio, confira estes recursos:
-    - Suporte técnico: [https://visualstudio.microsoft.com/support/](https://visualstudio.microsoft.com/support/)
-    - [Documentação](/visualstudio/)
+  - Suporte técnico: [https://visualstudio.microsoft.com/support/](https://visualstudio.microsoft.com/support/)
+  - [Documentação](/visualstudio/)
 - Para obter assistência com vendas, assinaturas, contas e cobrança para Assinaturas do Visual Studio, entre em contato com o [Suporte a Assinaturas](https://visualstudio.microsoft.com/subscriptions/support/) do Visual Studio.
+
+## <a name="next-steps"></a>Próximas etapas
+Depois de instalar o Visual Studio, lembre-se de ativar estes outros benefícios importantes:
+- [Azure DevOps](vs-azure-devops.md)
+- [Crédito individual do Azure DevTest](vs-azure.md)
+- [Conta de Desenvolvedor do Windows](vs-windows-dev.md)

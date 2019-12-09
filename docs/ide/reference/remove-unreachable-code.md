@@ -2,19 +2,19 @@
 title: Refatoração Remover código inacessível
 ms.date: 01/26/2018
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: b1c88fbeb9daf293df868a835247098e2ce999e3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 1e5bdab773cf70963e1d0f485a7779e57084c8a0
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62576011"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72655601"
 ---
 # <a name="remove-unreachable-code-refactoring"></a>Refatoração Remover código inacessível
 
@@ -22,11 +22,11 @@ Esta refatoração aplica-se a:
 
 - C#
 
-**O quê:** Remove o código que nunca será executado.
+**O quê:** remove o código que nunca será executado.
 
-**Quando:** Seu programa não tem um caminho para um snippet de código, tornando esse snippet de código desnecessário.
+**Quando:** seu programa não tem um caminho para um snippet de código, tornando esse snippet de código desnecessário.
 
-**Por que:** Melhorar a legibilidade e a facilidade de manutenção removendo o código que é supérfluo e nunca será executado.
+**Por quê:** melhorar a legibilidade e a facilidade de manutenção removendo o código que é supérfluo e nunca será executado.
 
 ## <a name="how-to"></a>Como fazer
 
@@ -37,7 +37,7 @@ Esta refatoração aplica-se a:
 1. Depois, siga um destes procedimentos:
 
    - **Teclado**
-      - Pressione **Ctrl**+**.** para disparar o menu **Ações Rápidas e Refatorações** e selecionar **Remover código inacessível** no pop-up da janela Visualização.
+      - Pressione **Ctrl**+ **.** para disparar o menu **Ações Rápidas e Refatorações** e selecionar **Remover código inacessível** no pop-up da janela Visualização.
    - **Mouse**
       - Clique com o botão direito do mouse no código, selecione o menu **Ações Rápidas e Refatorações** e selecione **Remover código inacessível** no pop-up da janela Visualização.
 

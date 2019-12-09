@@ -7,33 +7,30 @@ f1_keywords:
 - vs.texteditor
 - vs.ambient
 manager: jillfra
-author: gewarren
-ms.author: gewarren
-ms.openlocfilehash: 7b4f78bb2249ef60121cfc1557bf06e696e585b8
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: HT
+author: jillre
+ms.author: jillfra
+ms.openlocfilehash: a1d398d18e9be9bdb5f9bf3b30dc3ff1316b5ddb
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55912044"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72662034"
 ---
 # <a name="f1-help"></a>Ajuda com F1
 
-Parece que não foi possível encontrar o que você está procurando e pedimos desculpas. [Ajude-nos a melhorar](#help-us-improve-f1).
+Parece que não foi possível encontrar o que você está procurando e pedimos desculpas. Você pode nos ajudar a melhorar deixando comentários usando os botões na parte inferior desta página.
 
 ## <a name="cursor-position"></a>Posição do cursor
 
-Se você estiver procurando pela ajuda com F1 em uma palavra-chave ou nome de API, verifique se o cursor está posicionado dentro ou à direita da palavra antes de pressionar **F1**. Se isso ainda não funcionar, selecione na lista de [links úteis](#useful-links) ou faça uma pesquisa em https://docs.microsoft.com.
+Se estiver procurando por ajuda F1 em uma palavra-chave ou nome da API, verifique se o cursor está posicionado dentro ou à direita da palavra antes de pressionar **F1**. Se isso ainda não funcionar, selecione na lista de [links úteis](#useful-links) ou faça uma pesquisa em https://docs.microsoft.com.
 
 ## <a name="useful-links"></a>Links úteis
 
-- Para obter informações gerais sobre o Visual Studio, consulte [Visão geral do Visual Studio](../../get-started/visual-studio-ide.md).
-- Para obter ajuda sobre o editor de texto do Visual Studio, consulte [Usar o editor de código](../../ide/writing-code-in-the-code-and-text-editor.md).
+- Pesquisar na documentação de referência no [navegador de API .NET](/dotnet/api/).
 - Para obter ajuda no C#, consulte o [guia do C#](/dotnet/csharp/index).
 - Para obter ajuda no Visual Basic, consulte o [guia do Visual Basic](/dotnet/visual-basic/).
 - Para obter ajuda no F#, consulte o [guia do F#](/dotnet/fsharp/).
 - Para obter ajuda no Python, consulte [Python no Visual Studio](../../python/overview-of-python-tools-for-visual-studio.md).
 - Para obter ajuda no C++, consulte [C++ no Visual Studio](/cpp/visual-cpp-in-visual-studio).
-
-## <a name="help-us-improve-f1"></a>Ajude-nos a melhorar a F1
-
-Ajude-nos a melhorar a experiência da ajuda com F1. Registre um problema com a ajuda do produto clicando no botão **Fornecer comentários sobre o produto** abaixo. Inclua com o que você buscava ajuda quando pressionou **F1**, por exemplo, o símbolo ou janela em que o cursor se encontrava. Obrigado!
+- Para obter informações sobre o Visual Studio, consulte [Visão geral do Visual Studio](../../get-started/visual-studio-ide.md).
+- Para obter ajuda sobre o editor de texto do Visual Studio, consulte [Usar o editor de código](../../ide/writing-code-in-the-code-and-text-editor.md).

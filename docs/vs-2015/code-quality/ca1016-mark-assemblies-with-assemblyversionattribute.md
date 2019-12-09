@@ -12,31 +12,31 @@ helpviewer_keywords:
 - MarkAssembliesWithAssemblyVersion
 ms.assetid: 4340aed8-d92b-4cde-a398-cb6963c6da5a
 caps.latest.revision: 21
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 4fbe2ef81dbb1dd5be15b6a0ac4b8cc1df96206a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f1498624d4f79a60854a624ee5c4053a3343f515
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62424005"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72663168"
 ---
-# <a name="ca1016-mark-assemblies-with-assemblyversionattribute"></a>CA1016: Marcar assemblies com AssemblyVersionAttribute
+# <a name="ca1016-mark-assemblies-with-assemblyversionattribute"></a>CA1016: marcar assemblies com AssemblyVersionAttribute
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |NomeDoTipo|MarkAssembliesWithAssemblyVersion|
 |CheckId|CA1016|
-|Categoria|Microsoft.Design|
-|Alteração Significativa|Não são significativas|
+|Categoria|Microsoft. Design|
+|Alteração Significativa|Sem interrupção|
 
 ## <a name="cause"></a>Causa
  O assembly não tem um número de versão.
 
 ## <a name="rule-description"></a>Descrição da Regra
- A identidade de um assembly é composta das seguintes informações:
+ A identidade de um assembly é composta pelas seguintes informações:
 
 - Nome do assembly
 
@@ -44,22 +44,22 @@ ms.locfileid: "62424005"
 
 - Cultura
 
-- Chave pública (para assemblies fortemente nomeados).
+- Chave pública (para assemblies com nome forte).
 
   O [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] usa o número de versão para identificar com exclusividade um assembly e associar a tipos em assemblies altamente nomeados. O número de versão é usado com a versão e a política do publicador. Por padrão, os aplicativos só são executados com a versão do assembly com que foram criados.
 
 ## <a name="how-to-fix-violations"></a>Como Corrigir Violações
- Para corrigir uma violação dessa regra, adicionar um número de versão ao assembly usando o <xref:System.Reflection.AssemblyVersionAttribute?displayProperty=fullName> atributo. Consulte o exemplo a seguir.
+ Para corrigir uma violação dessa regra, adicione um número de versão ao assembly usando o atributo <xref:System.Reflection.AssemblyVersionAttribute?displayProperty=fullName>. Consulte o exemplo a seguir.
 
 ## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos
- Não suprima um aviso nessa regra para assemblies que são usados por terceiros ou em um ambiente de produção.
+ Não suprimir um aviso desta regra para assemblies que são usados por terceiros ou em um ambiente de produção.
 
 ## <a name="example"></a>Exemplo
- O exemplo a seguir mostra um assembly que tem o <xref:System.Reflection.AssemblyVersionAttribute> atributo aplicado.
+ O exemplo a seguir mostra um assembly que tem o atributo <xref:System.Reflection.AssemblyVersionAttribute> aplicado.
 
  [!code-cpp[FxCop.Design.AssembliesVersion#1](../snippets/cpp/VS_Snippets_CodeAnalysis/FxCop.Design.AssembliesVersion/cpp/FxCop.Design.AssembliesVersion.cpp#1)]
  [!code-csharp[FxCop.Design.AssembliesVersion#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.AssembliesVersion/cs/FxCop.Design.AssembliesVersion.cs#1)]
  [!code-vb[FxCop.Design.AssembliesVersion#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Design.AssembliesVersion/vb/FxCop.Design.AssembliesVersion.vb#1)]
 
 ## <a name="see-also"></a>Consulte também
- [Controle de versão do assembly](http://msdn.microsoft.com/library/775ad4fb-914f-453c-98ef-ce1089b6f903) [como: Criar uma política de editor](http://msdn.microsoft.com/library/8046bc5d-2fa9-4277-8a5e-6dcc96c281d9)
+ [Controle de versão do assembly](https://msdn.microsoft.com/library/775ad4fb-914f-453c-98ef-ce1089b6f903) [como criar uma política de Publicador](https://msdn.microsoft.com/library/8046bc5d-2fa9-4277-8a5e-6dcc96c281d9)

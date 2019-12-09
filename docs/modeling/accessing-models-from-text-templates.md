@@ -4,31 +4,32 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - text templates, accessing models
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c639ecc19f99f25fb5cb38539d2322131ddc2e0c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 61f69163e4458c62b9f114eca72c954a2317076b
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446329"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72652374"
 ---
-# <a name="accessing-models-from-text-templates"></a>Acessando modelos a partir de modelos (templates) de texto
-Usando modelos de texto, você pode criar arquivos de relatório, os arquivos de código-fonte e outros arquivos de texto baseados em modelos de linguagem específica do domínio. Para obter informações básicas sobre modelos de texto, consulte [geração de código e modelos de texto T4](../modeling/code-generation-and-t4-text-templates.md). Os modelos de texto funcionarão no modo experimental quando você estiver depurando sua DSL e também funcionará em um computador no qual você implantou a DSL.
+# <a name="access-models-from-text-templates"></a>Acessar modelos de modelos de texto
+
+Usando modelos de texto, você pode criar arquivos de relatório, arquivos de código-fonte e outros arquivos de texto baseados em modelos de linguagem específicos de domínio. Para obter informações básicas sobre modelos de texto, consulte [geração de código e modelos de texto T4](../modeling/code-generation-and-t4-text-templates.md). Os modelos de texto funcionarão no modo experimental quando você estiver Depurando sua DSL e também funcionará em um computador no qual você implantou a DSL.
 
 > [!NOTE]
-> Quando você cria uma solução DSL, o modelo de texto de exemplo  **\*. TT** arquivos são gerados no projeto de depuração. Quando você altera os nomes das classes de domínio, esses modelos não funcionará mais. No entanto, eles incluem as diretivas básicas que você precisa e fornecem exemplos que você pode atualizar para corresponder à sua DSL.
+> Quando você cria uma solução DSL, o modelo de texto de exemplo **\* arquivos. tt** são gerados no projeto de depuração. Quando você alterar os nomes das classes de domínio, esses modelos deixarão de funcionar. No entanto, eles incluem as diretivas básicas de que você precisa e fornecem exemplos que você pode atualizar para corresponder à sua DSL.
 
  Para acessar um modelo de um modelo de texto:
 
-- Defina a propriedade de herdar da diretiva do modelo para <xref:Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation>. Isso fornece acesso para a Store.
+- Defina a propriedade Inherit da diretiva de modelo para [Microsoft. VisualStudio. TextTemplating. VSHost. ModelingTextTransformation](/previous-versions/bb893209(v=vs.140)). Isso fornece acesso ao repositório.
 
-- Especifique a processadores de diretiva para a DSL que você deseja acessar. Isso carrega os assemblies da DSL para que você possa usar suas classes de domínio, propriedades e relacionamentos no código do modelo de texto. Ele também carrega o arquivo de modelo que você especificar.
+- Especifique os processadores de diretiva para a DSL que você deseja acessar. Isso carrega os assemblies para a sua DSL para que você possa usar suas classes de domínio, propriedades e relações no código do seu modelo de texto. Ele também carrega o arquivo de modelo que você especificar.
 
-  Um `.tt` arquivo semelhante ao exemplo a seguir é criado no projeto de depuração quando você cria uma nova solução do Visual Studio a partir do modelo de linguagem mínima de DSL.
+  Um arquivo de `.tt` semelhante ao exemplo a seguir é criado no projeto de depuração quando você cria uma nova solução do Visual Studio a partir do modelo de linguagem mínima de DSL.
 
 ```
 <#@ template inherits="Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation" #>
@@ -52,35 +53,35 @@ Here is a list of elements in the model:
 
  Observe os seguintes pontos sobre este modelo:
 
-- O modelo pode usar as classes de domínio, propriedades e relações que você definiu na definição de DSL.
+- O modelo pode usar as classes de domínio, as propriedades e as relações que você definiu na definição de DSL.
 
-- O modelo carrega o arquivo de modelo que você especificar na `requires` propriedade.
+- O modelo carrega o arquivo de modelo que você especificar na propriedade `requires`.
 
-- Uma propriedade em `this` contém o elemento raiz. A partir daí, seu código pode navegar para outros elementos do modelo. O nome da propriedade normalmente é o mesmo que a classe de domínio raiz de sua DSL. Neste exemplo, é `this.ExampleModel`.
+- Uma propriedade em `this` contém o elemento raiz. A partir daí, seu código pode navegar para outros elementos do modelo. O nome da propriedade geralmente é o mesmo que a classe de domínio raiz de sua DSL. Neste exemplo, é `this.ExampleModel`.
 
-- Embora o idioma no qual os fragmentos de código são escritos em C#, você pode gerar o texto de qualquer tipo. Como alternativa, você pode escrever o código em [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] adicionando a propriedade `language="VB"` para o `template` diretiva.
+- Embora o idioma no qual os fragmentos de código são gravados seja C#, você pode gerar texto de qualquer tipo. Como alternativa, você pode escrever o código em [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] adicionando a propriedade `language="VB"` à diretiva `template`.
 
-- Para depurar o modelo, adicione `debug="true"` para o `template` diretiva. O modelo será aberto em outra instância do Visual Studio se ocorrer uma exceção. Se você quiser interromper o depurador em um ponto específico no código, insira a instrução `System.Diagnostics.Debugger.Break();`
+- Para depurar o modelo, adicione `debug="true"` à diretiva `template`. O modelo será aberto em outra instância do Visual Studio se ocorrer uma exceção. Se você quiser dividir o depurador em um ponto específico no código, insira a instrução `System.Diagnostics.Debugger.Break();`
 
-   Para obter mais informações, consulte [depurando um modelo de texto T4](../modeling/debugging-a-t4-text-template.md).
+   Para obter mais informações, consulte [Depurando um modelo de texto T4](../modeling/debugging-a-t4-text-template.md).
 
-## <a name="about-the-dsl-directive-processor"></a>Sobre o processador de diretriz de DSL
- O modelo pode usar as classes de domínio que você definiu na sua definição de DSL. Isso é causado por uma diretiva que normalmente é exibida no início do modelo. No exemplo anterior, é o seguinte.
+## <a name="about-the-dsl-directive-processor"></a>Sobre o processador de diretivas DSL
+ O modelo pode usar as classes de domínio que você definiu em sua definição de DSL. Isso é trazido por uma diretiva que geralmente aparece próximo ao início do modelo. No exemplo anterior, é o seguinte.
 
 ```
 <#@ MyLanguage processor="MyLanguageDirectiveProcessor" requires="fileName='Sample.myDsl1'" #>
 ```
 
- O nome da diretiva ( `MyLanguage`, neste exemplo) é derivado do nome da sua DSL. Ele chama um *processador de diretriz* que é gerado como parte de sua DSL. Você pode encontrar seu código-fonte no **Dsl\GeneratedCode\DirectiveProcessor.cs**.
+ O nome da diretiva (`MyLanguage`, neste exemplo) é derivado do nome de sua DSL. Ele invoca um *processador de diretiva* que é gerado como parte de sua DSL. Você pode encontrar seu código-fonte em **Dsl\GeneratedCode\DirectiveProcessor.cs**.
 
- O processador de diretriz DSL executa duas tarefas principais:
+ O processador de diretivas DSL executa duas tarefas principais:
 
-- Ele efetivamente insere diretivas de assembly e importar o modelo que faz referência a sua DSL. Isso permite que você use suas classes de domínio no código do modelo.
+- Ele insere efetivamente o assembly e importa diretivas para o modelo que faz referência à sua DSL. Isso permite que você use suas classes de domínio no código do modelo.
 
-- Ele carrega o arquivo que você especificar na `requires` parâmetro e define uma propriedade na `this` que se refere ao elemento raiz do modelo carregado.
+- Ele carrega o arquivo que você especifica no parâmetro `requires` e define uma propriedade em `this` que se refere ao elemento raiz do modelo carregado.
 
 ## <a name="validating-the-model-before-running-the-template"></a>Validando o modelo antes de executar o modelo
- Você pode fazer com que o modelo a ser validado antes do modelo é executado.
+ Você pode fazer com que o modelo seja validado antes que o modelo seja executado.
 
 ```
 <#@ MyLanguage processor="MyLanguageDirectiveProcessor" requires="fileName='Sample.myDsl1';validation='open|load|save|menu'" #>
@@ -88,18 +89,18 @@ Here is a list of elements in the model:
 
  Observe que:
 
-1. O `filename` e `validation` parâmetros são separados por ";" e não deve haver nenhuma outra separadores ou espaços.
+1. Os parâmetros `filename` e `validation` são separados por ";" e não deve haver outros separadores ou espaços.
 
-2. A lista de categorias de validação determina quais métodos de validação serão executados. Várias categorias devem ser separadas por "&#124;" e não deve haver nenhuma outra separadores ou espaços.
+2. A lista de categorias de validação determina quais métodos de validação serão executados. Várias categorias devem ser separadas por "&#124;" e não deve haver nenhum outro separador ou espaços.
 
-   Se um erro for encontrado, ele será relatado na janela de erros e o arquivo de resultados conterá uma mensagem de erro.
+   Se um erro for encontrado, ele será relatado na janela erros e o arquivo de resultado conterá uma mensagem de erro.
 
-## <a name="Multiple"></a> Acessando vários modelos de um modelo de texto
+## <a name="Multiple"></a>Acessando vários modelos de um modelo de texto
 
 > [!NOTE]
-> Esse método permite que você leia vários modelos no mesmo modelo, mas não oferece suporte a referências do ModelBus. Para ler os modelos que estão interconectados por referências do ModelBus, consulte [usando o Visual Studio ModelBus em um modelo de texto](../modeling/using-visual-studio-modelbus-in-a-text-template.md).
+> Esse método permite que você leia vários modelos no mesmo modelo, mas não oferece suporte a referências de ModelBus. Para ler os modelos que são interligados por referências de ModelBus, consulte [usando Visual Studio ModelBus em um modelo de texto](../modeling/using-visual-studio-modelbus-in-a-text-template.md).
 
- Se você deseja acessar mais de um modelo a partir do mesmo modelo de texto, você deve chamar o processador de diretriz gerado uma vez para cada modelo. Você deve especificar o nome do arquivo de cada modelo no `requires` parâmetro. Você deve especificar os nomes que você deseja usar para a classe de domínio raiz no `provides` parâmetro. Você deve especificar valores diferentes para o `provides` parâmetros de cada uma das chamadas de diretiva. Por exemplo, suponha que você tenha três arquivos de modelo chamados Library.xyz, School.xyz e Work.xyz. Para acessá-los a partir do mesmo modelo de texto, você deve escrever três chamadas diretivas semelhantes às seguintes.
+ Se você quiser acessar mais de um modelo do mesmo modelo de texto, deverá chamar o processador de diretiva gerado uma vez para cada modelo. Você deve especificar o nome do arquivo de cada modelo no parâmetro `requires`. Você deve especificar os nomes que deseja usar para a classe de domínio raiz no parâmetro `provides`. Você deve especificar valores diferentes para os parâmetros de `provides` em cada uma das chamadas de diretiva. Por exemplo, suponha que você tenha três arquivos de modelo chamados library. xyz, School. xyz e Work. xyz. Para acessá-los do mesmo modelo de texto, você deve escrever três chamadas de diretiva que se assemelham aos seguintes.
 
 ```
 <#@ ExampleModel processor="<YourLanguageName>DirectiveProcessor" requires="fileName='Library.xyz'" provides="ExampleModel=LibraryModel" #>
@@ -108,9 +109,9 @@ Here is a list of elements in the model:
 ```
 
 > [!NOTE]
-> Esse código de exemplo é para um idioma que é baseado no modelo de solução de linguagem mínima.
+> Este código de exemplo é para uma linguagem baseada no modelo de solução de linguagem mínima.
 
- Para acessar os modelos em seu modelo de texto, agora você pode escrever código semelhante ao código no exemplo a seguir.
+ Para acessar os modelos em seu modelo de texto, agora você pode escrever um código semelhante ao código no exemplo a seguir.
 
 ```csharp
 <#
@@ -135,21 +136,21 @@ For Each element As ExampleElement In Me.WorkModel.Elements
 ```
 
 ## <a name="loading-models-dynamically"></a>Carregando modelos dinamicamente
- Se você quiser determinar no tempo de execução que modelos para carregar, você pode carregar um arquivo de modelo dinamicamente no código do programa, em vez de usar a diretiva da DSL específicos.
+ Se você quiser determinar em tempo de execução quais modelos carregar, você pode carregar um arquivo de modelo dinamicamente no código do programa, em vez de usar a diretiva específica de DSL.
 
- No entanto, uma das funções da diretiva específica DSL é importar o namespace DSL, para que o código do modelo possa usar as classes de domínio definidas dessa DSL. Porque você não estiver usando a diretiva, você deve adicionar  **\<assembly >** e  **\<Importar >** diretivas para todos os modelos que você pode carregar. Isso é fácil se os modelos diferentes que você pode carregar são todas as instâncias da mesma DSL.
+ No entanto, uma das funções da diretiva específica a DSL é importar o namespace de DSL, para que o código de modelo possa usar as classes de domínio definidas nesse DSL. Como você não está usando a diretiva, é necessário adicionar **\<assembly >** e **\<import diretivas >** para todos os modelos que você pode carregar. Isso é fácil se os modelos diferentes que você pode carregar são todas as instâncias do mesmo DSL.
 
- Para carregar o arquivo, o método mais eficaz é usando o Visual Studio ModelBus. Em um cenário típico, o modelo de texto será usar uma diretiva de DSL específicas para carregar o modelo primeiro como de costume. Esse modelo conteria referências do ModelBus para outro modelo. Você pode usar o ModelBus abrir o modelo de referência e acessar um elemento específico. Para obter mais informações, consulte [usando o Visual Studio ModelBus em um modelo de texto](../modeling/using-visual-studio-modelbus-in-a-text-template.md).
+ Para carregar o arquivo, o método mais eficaz é usar Visual Studio ModelBus. Em um cenário típico, seu modelo de texto usará uma diretiva específica de DSL para carregar o primeiro modelo da maneira usual. Esse modelo deve conter referências ModelBus a outro modelo. Você pode usar ModelBus para abrir o modelo referenciado e acessar um elemento específico. Para obter mais informações, consulte [usando Visual Studio ModelBus em um modelo de texto](../modeling/using-visual-studio-modelbus-in-a-text-template.md).
 
- Em um cenário menos comum, você talvez queira abrir um arquivo de modelo para os quais você tem apenas um nome de arquivo, e que talvez não seja no projeto atual do Visual Studio. Nesse caso, você pode abrir o arquivo usando a técnica descrita em [como: Abrir um modelo de arquivo no código do programa](../modeling/how-to-open-a-model-from-file-in-program-code.md).
+ Em um cenário menos comum, talvez você queira abrir um arquivo de modelo para o qual você tem apenas um nome de arquivo e que pode não estar no projeto atual do Visual Studio. Nesse caso, você pode abrir o arquivo usando a técnica descrita em [como: abrir um modelo do arquivo no código do programa](../modeling/how-to-open-a-model-from-file-in-program-code.md).
 
-## <a name="generating-multiple-files-from-a-template"></a>Gerar vários arquivos de um modelo
- Se você quiser gerar um vários arquivos - por exemplo, para gerar um arquivo separado para cada elemento em um modelo, há várias abordagens possíveis. Por padrão, somente um arquivo é produzido a partir de cada arquivo de modelo.
+## <a name="generating-multiple-files-from-a-template"></a>Gerando vários arquivos de um modelo
+ Se você quiser gerar vários arquivos, por exemplo, para gerar um arquivo separado para cada elemento em um modelo, há várias abordagens possíveis. Por padrão, apenas um arquivo é produzido de cada arquivo de modelo.
 
-### <a name="splitting-a-long-file"></a>Dividir um arquivo longo
- Nesse método, você pode usar um modelo para gerar um único arquivo, separado por um delimitador. Em seguida, você deve dividir o arquivo em suas partes. Há dois modelos, uma para gerar o arquivo único e o outro para dividi-la.
+### <a name="splitting-a-long-file"></a>Dividindo um arquivo longo
+ Nesse método, você usa um modelo para gerar um único arquivo, separado por um delimitador. Em seguida, você divide o arquivo em suas partes. Há dois modelos, um para gerar o único arquivo e o outro para dividi-lo.
 
- **LoopTemplate.t4** gera o único arquivo longo. Observe que a sua extensão de arquivo é ".t4", porque ele não deve ser processado diretamente quando você clica em **transformar todos os modelos**. Esse modelo tem um parâmetro que especifica a cadeia de caracteres de delimitador que separa os segmentos:
+ **Looptemplate. T4** gera o único arquivo longo. Observe que sua extensão de arquivo é ". T4", porque ela não deve ser processada diretamente quando você clica em **transformar todos os modelos**. Esse modelo usa um parâmetro, que especifica a cadeia de caracteres delimitador que separa os segmentos:
 
 ```
 <#@ template ninherits="Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation" #>
@@ -171,7 +172,7 @@ For Each element As ExampleElement In Me.WorkModel.Elements
 #>
 ```
 
- `LoopSplitter.tt` invoca `LoopTemplate.t4`e, em seguida, divide o arquivo resultante em seus segmentos. Observe que esse modelo não precisa ser um modelo de modelagem, porque ela não ler o modelo.
+ `LoopSplitter.tt` invoca `LoopTemplate.t4` e, em seguida, divide o arquivo resultante em seus segmentos. Observe que esse modelo não precisa ser um modelo de modelagem, pois ele não lê o modelo.
 
 ```
 <#@ template hostspecific="true" language="C#" #>

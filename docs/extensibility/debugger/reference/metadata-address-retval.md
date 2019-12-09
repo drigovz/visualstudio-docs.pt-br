@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - METADATA_ADDRESS_RETVAL structure
 ms.assetid: 5b0ec0fb-84b3-4ce7-8e24-becf3d881d7d
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 63f3b7363a6852dd54033d89828f8af9b0eb76fa
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 2ff96d5ca9d292d9e2952b9a2e5e1f628b54d43b
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62913881"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746343"
 ---
 # <a name="metadataaddressretval"></a>METADATA_ADDRESS_RETVAL
 Essa estrutura representa um valor de retorno de um método ou função.
@@ -42,14 +45,18 @@ public struct METADATA_ADDRESS_RETVAL {
 }
 ```
 
-## <a name="terms"></a>Termos
- a ID do método de tokMethod esse valor de retorno é para.
+## <a name="members"></a>Membros
+ `tokMethod`\
+ A ID do método que destina-esse valor de retorno.
 
- dwCorType o tipo base do valor de retorno. Este é um valor da `CorElementType` enumeração definida no [!INCLUDE[dnprdnshort](../../../code-quality/includes/dnprdnshort_md.md)] arquivo corhdr. h do SDK.
+ `dwCorType`\
+ O tipo base do valor de retorno. Este é um valor da `CorElementType` enumeração definida no arquivo corhdr. h SDK do .NET Framework.
 
- o tamanho da assinatura do valor de retorno de dwSigSize (conforme armazenado no `rgSig`).
+ `dwSigSize`\
+ O tamanho da assinatura do valor de retorno (conforme armazenado no `rgSig`).
 
- rgSig uma matriz de bytes que formam a assinatura do valor de retorno.
+ `rgSig`\
+ Uma matriz de bytes que formam a assinatura do valor de retorno.
 
 ## <a name="remarks"></a>Comentários
  Essa estrutura é parte da união na [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) estrutura quando o `dwKind` campo dos `DEBUG_ADDRESS_UNION` estrutura é definida como `ADDRESS_KIND_RETVAL` (um valor da [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) enumeração).

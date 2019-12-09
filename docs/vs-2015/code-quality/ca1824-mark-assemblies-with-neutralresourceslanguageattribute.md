@@ -12,46 +12,46 @@ helpviewer_keywords:
 - CA1824
 ms.assetid: 10e97f8a-aa6e-47aa-b253-1e5d3a295d82
 caps.latest.revision: 14
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 795d48b96392057a3f96cf3a67f3c49de8aee9b9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: efa328fdff9c357e0183fc2ca80e4d77d4f6782e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60052162"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661110"
 ---
-# <a name="ca1824-mark-assemblies-with-neutralresourceslanguageattribute"></a>CA1824: Marque assemblies com NeutralResourcesLanguageAttribute
+# <a name="ca1824-mark-assemblies-with-neutralresourceslanguageattribute"></a>CA1824: marcar assemblies com NeutralResourcesLanguageAttribute
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |NomeDoTipo|MarkAssembliesWithNeutralResourcesLanguage|
 |CheckId|CA1824|
-|Categoria|Microsoft.Performance|
-|Alteração Significativa|Não são significativas|
+|Categoria|Microsoft. performance|
+|Alteração Significativa|Sem interrupção|
 
 ## <a name="cause"></a>Causa
- Um assembly contém um **ResX**-com base em recursos, mas não tem o <xref:System.Resources.NeutralResourcesLanguageAttribute?displayProperty=fullName> aplicado a ele.
+ Um assembly contém um recurso baseado em **resx**, mas não tem o <xref:System.Resources.NeutralResourcesLanguageAttribute?displayProperty=fullName> aplicado a ele.
 
 ## <a name="rule-description"></a>Descrição da Regra
- O **NeutralResourcesLanguage** atributo informa o **ResourceManager** da linguagem que foi usada para exibir os recursos de cultura neutra para um assembly. Quando ele procura recursos na mesma cultura que o idioma de recursos neutros, o **ResourceManager** usa automaticamente os recursos que estão localizados no assembly principal. Ele faz isso em vez de procurar por um assembly satélite que tem a cultura de interface do usuário atual do thread atual. Isso melhora o desempenho da pesquisa para o primeiro recurso carregado e pode reduzir o conjunto de trabalho.
+ O atributo **NeutralResourcesLanguage** informa o **ResourceManager** do idioma que foi usado para exibir os recursos da cultura neutra para um assembly. Quando ele pesquisa recursos na mesma cultura que o idioma de recursos neutros, o **ResourceManager** usa automaticamente os recursos que estão localizados no assembly principal. Ele faz isso em vez de procurar um assembly satélite que tenha a cultura da interface do usuário atual para o thread atual. Isso melhora o desempenho da pesquisa para o primeiro recurso carregado e pode reduzir o conjunto de trabalho.
 
-## <a name="fixing-violations"></a>Corrigir violações
- Para corrigir uma violação dessa regra, adicione o atributo ao assembly e especificar o idioma dos recursos de cultura neutra.
+## <a name="fixing-violations"></a>Corrigindo violações
+ Para corrigir uma violação dessa regra, adicione o atributo ao assembly e especifique o idioma dos recursos da cultura neutra.
 
 ## <a name="specifying-the-language"></a>Especificando o idioma
 
-#### <a name="to-specify-the-language-of-the-resource-of-the-neutral-culture"></a>Para especificar o idioma do recurso de cultura neutra
+#### <a name="to-specify-the-language-of-the-resource-of-the-neutral-culture"></a>Para especificar o idioma do recurso da cultura neutra
 
-1. Na **Gerenciador de soluções**, clique em seu projeto e, em seguida, clique em **propriedades**.
+1. Em **Gerenciador de soluções**, clique com o botão direito do mouse em seu projeto e clique em **Propriedades**.
 
-2. Na barra de navegação à esquerda, selecione **Application**e, em seguida, clique em **informações de Assembly**.
+2. Na barra de navegação à esquerda, selecione **aplicativo**e clique em **informações do assembly**.
 
-3. No **informações do Assembly** diálogo caixa, selecione o idioma do **linguagem neutra** lista suspensa.
+3. Na caixa de diálogo **informações do assembly** , selecione o idioma na lista suspensa **idioma neutro** .
 
 4. Clique em **OK**.
 
 ## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos
- É permitido para suprimir um aviso nessa regra. No entanto, pode diminuir o desempenho da inicialização.
+ É permitido suprimir um aviso dessa regra. No entanto, o desempenho da inicialização pode diminuir.

@@ -10,11 +10,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3f64364caf914c030fef806c5ae17e90a8368fa3
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54770953"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68157796"
 ---
 # <a name="status"></a>Status
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ VSPerfCmd.exe /Status
 ```  
   
 #### <a name="parameters"></a>Parâmetros  
- Nenhuma  
+ Nenhum  
   
 ## <a name="remarks"></a>Comentários  
  A opção **Status** exibe as seguintes informações de estado para o criador de perfil.  
@@ -73,7 +73,7 @@ VSPerfCmd.exe /Status
  **Usuários com direitos de acesso para monitorar**  
  Lista os nomes de usuários que têm acesso para o criador de perfil. Usuários adicionais podem ser concedidos acesso por meio da opção VSPerfCmd.exe **Admin**  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Veja também  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
  [Criando perfil de aplicativos autônomos](../profiling/command-line-profiling-of-stand-alone-applications.md)   
  [Criando perfil de aplicativos Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   

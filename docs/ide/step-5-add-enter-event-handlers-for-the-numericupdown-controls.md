@@ -1,29 +1,33 @@
 ---
-title: 'Etapa 5: Adicionar manipuladores de eventos de inserção aos controles NumericUpDown'
+title: 'Etapa 5: adicionar manipuladores de eventos de entrada para controles NumericUpDown'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: tutorial
+ms.prod: visual-studio-windows
+ms.technology: vs-ide-general
+dev_langs:
+- CSharp
+- VB
 ms.assetid: 45a99a5d-c881-4298-b74d-adb481dec5ee
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-dev_langs:
-- CSharp
-- VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 194988a3d21078ebb712afee52d9106659b65b14
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 7de9fafa32922792e21eb672df0aa9128c25dbe2
+ms.sourcegitcommit: 98b02f87c7aa1f5eb7f0d1c86bfa36efa8580c57
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62997301"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72314125"
 ---
-# <a name="step-5-add-enter-event-handlers-for-the-numericupdown-controls"></a>Etapa 5: Adicionar manipuladores de eventos de inserção aos controles NumericUpDown
+# <a name="step-5-add-enter-event-handlers-for-the-numericupdown-controls"></a>Etapa 5: Adicionar manipuladores de eventos Enter para os controles NumericUpDown
 
 Na quinta parte deste tutorial, você adicionará manipuladores de eventos <xref:System.Windows.Forms.Control.Enter> para facilitar a inserção de respostas aos problemas do teste. Esse código selecionará e desmarcará o valor atual em cada controle <xref:System.Windows.Forms.NumericUpDown> para que o comprador de teste o escolha e comece a inserir um valor diferente.
 
 > [!NOTE]
-> Esse tópico faz parte de uma série de tutoriais sobre conceitos de codificação básica. Para obter uma visão geral do tutorial, confira [Tutorial 2: Criar um teste de matemática temporizado](../ide/tutorial-2-create-a-timed-math-quiz.md).
+> Esse tópico faz parte de uma série de tutoriais sobre conceitos de codificação básica.
+> - Para obter uma visão geral do tutorial, confira [Tutorial 2: criar um teste de matemática temporizado](../ide/tutorial-2-create-a-timed-math-quiz.md).
+> - Para baixar uma versão completa do código, consulte [exemplo de tutorial de teste de matemática completo](https://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c).
 
 ## <a name="to-verify-the-default-behavior"></a>Para verificar o comportamento padrão
 
@@ -58,7 +62,9 @@ Na quinta parte deste tutorial, você adicionará manipuladores de eventos <xref
      [!code-vb[VbExpressTutorial3Step5_6#11](../ide/codesnippet/VisualBasic/step-5-add-enter-event-handlers-for-the-numericupdown-controls_1.vb)]
      [!code-csharp[VbExpressTutorial3Step5_6#11](../ide/codesnippet/CSharp/step-5-add-enter-event-handlers-for-the-numericupdown-controls_1.cs)]
 
-     Este código pode parecer complexo, mas você pode entender se observar o passo a passo. Primeiro, olhe na parte superior de método: `object sender` no C# ou `sender As System.Object` no Visual Basic. Este parâmetro refere-se ao objeto cujo evento é acionando, que é conhecido como o remetente. Nesse caso, o objeto remetente é o controle NumericUpDown. Assim, na primeira linha do método, você especifica que o remetente não é apenas nenhum objeto genérico mas especificamente um controle NumericUpDown. (Cada controle NumericUpDown é um objeto, mas nem todo objeto é um controle NumericUpDown.) O controle NumericUpDown é chamado **answerBox** nesse método, porque será usado para todos os controles NumericUpDown no formulário, não apenas para o controle NumericUpDown de soma. Como você declara a variável answerBox nesse método, seu escopo se aplica somente a este método. Ou seja, a variável pode ser usada somente dentro desse método.
+     [!INCLUDE [devlang-control-csharp-vb](./includes/devlang-control-csharp-vb.md)]
+
+     Este código pode parecer complexo, mas você pode entender se observar o passo a passo. Primeiro, olhe na parte superior de método: `object sender` no C# ou `sender As System.Object` no Visual Basic. Este parâmetro refere-se ao objeto cujo evento é acionando, que é conhecido como o remetente. Nesse caso, o objeto remetente é o controle NumericUpDown. Assim, na primeira linha do método, você especifica que o remetente não é apenas nenhum objeto genérico mas especificamente um controle NumericUpDown. (Cada controle NumericUpDown é um objeto, mas nem todo objeto é um controle NumericUpDown.) O controle NumericUpDown é nomeado **answerBox** neste método, porque ele será usado para todos os controles NumericUpDown no formulário, não apenas o controle Sum NumericUpDown. Como você declara a variável answerBox nesse método, seu escopo se aplica somente a este método. Ou seja, a variável pode ser usada somente dentro desse método.
 
      A próxima linha verifica se o answerBox foi convertido com êxito (conversão) de um objeto em um controle NumericUpDown. Se a conversão for malsucedida, a variável terá um valor de `null` (C#) ou de `Nothing` (Visual Basic). A terceira linha obtém o comprimento da resposta que aparece no controle NumericUpDown, e a quarta linha seleciona o valor atual no controle com base nesse comprimento. Agora, quando o comprador de teste escolher o controle, o Visual Studio aciona este evento, fazendo com que a resposta atual seja selecionada. Assim que o tomador de teste começa a inserir uma resposta diferente, a resposta anterior é apagada e substituída pela nova resposta.
 
@@ -74,6 +80,6 @@ Na quinta parte deste tutorial, você adicionará manipuladores de eventos <xref
 
 ## <a name="to-continue-or-review"></a>Para continuar ou revisar
 
-- Para ir para a próxima etapa do tutorial, confira [Etapa 6: Adicionar um problema de subtração](../ide/step-6-add-a-subtraction-problem.md).
+- Para ir para a próxima etapa do tutorial, consulte **[etapa 6: adicionar um problema de subtração](../ide/step-6-add-a-subtraction-problem.md)** .
 
-- Para retornar à etapa anterior do tutorial, confira [Etapa 4: Adicionar o método CheckTheAnswer()](../ide/step-4-add-the-checktheanswer-parens-method.md).
+- Para retornar à etapa anterior do tutorial, veja [Etapa 4: Adicionar o método CheckTheAnswer()](../ide/step-4-add-the-checktheanswer-parens-method.md).

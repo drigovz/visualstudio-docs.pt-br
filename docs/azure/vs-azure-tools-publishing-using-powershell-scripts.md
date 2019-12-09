@@ -1,5 +1,5 @@
 ---
-title: Usando scripts do Windows PowerShell para publicar em ambientes de desenvolvimento e teste |Microsoft Docs
+title: Scripts do PowerShell para publicar em ambientes de desenvolvimento e teste
 description: Saiba como usar scripts do Windows PowerShell do Visual Studio para publicar em ambientes de teste e desenvolvimento.
 author: ghogen
 manager: jillfra
@@ -9,28 +9,28 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: 2198aac794362237e3b2b6321d9c9bda86108b79
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 6ed003df875f7fdc75278210dc3010e93d280186
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62427073"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911746"
 ---
-# <a name="using-windows-powershell-scripts-to-publish-to-dev-and-test-environments"></a>Usando scripts do Windows PowerShell para publicar para ambientes de desenvolvimento e teste
+# <a name="using-windows-powershell-scripts-to-publish-to-dev-and-test-environments"></a>Usando scripts do Windows PowerShell para publicar em ambientes de desenvolvimento e teste
 
 Quando você cria um aplicativo Web no Visual Studio, pode gerar um script do Windows PowerShell que pode usar posteriormente para automatizar a publicação de seu site no Azure como um aplicativo Web no Serviço de Aplicativo do Azure ou em uma máquina virtual. Você pode editar e estender o script do Windows PowerShell no editor do Visual Studio para atender às suas necessidades ou integrar o script a scripts de compilação, teste e publicação existentes.
 
 Usando esses scripts, você pode provisionar versões personalizadas (também conhecidas como ambientes de desenvolvimento e teste) do seu site para uso temporário. Por exemplo, você pode configurar uma versão específica do seu site em uma máquina virtual do Azure ou no slot de preparo em um site para executar um conjunto de testes, reproduzir um bug, testar uma correção de bug, avaliar uma alteração de proposta ou configurar um ambiente personalizado para uma demonstração ou apresentação. Depois de criar um script que publica seu projeto, você pode recriar ambientes idênticos ao executar novamente o script conforme necessário ou executar o script com seu próprio build do aplicativo Web para criar um ambiente personalizado de teste.
 
-## <a name="prerequisites"></a>Pré-requisitos
+## <a name="prerequisites"></a>Prerequisites
 
-* O Visual Studio 2015 ou posterior com a **Carga de trabalho do Azure** instalada, ou o Visual Studio 2013 e Azure SDK 2.3 ou posterior. Veja [Downloads do Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019). (Você não precisa do SDK do Azure para gerar scripts para projetos Web. Esse recurso é para projetos Web, e não para as funções Web nos serviços de nuvem).
+* O Visual Studio 2015 ou posterior com a **Carga de trabalho do Azure** instalada, ou o Visual Studio 2013 e Azure SDK 2.3 ou posterior. Veja [Downloads do Visual Studio](https://visualstudio.microsoft.com/downloads). (Você não precisa do SDK do Azure para gerar scripts para projetos Web. Esse recurso é para projetos Web, e não para as funções Web nos serviços de nuvem).
 * Azure PowerShell 0.7.4 ou posterior. Consulte [Como instalar e configurar o PowerShell do Azure](/powershell/azure/overview).
-* [Windows PowerShell 3.0](http://go.microsoft.com/?linkid=9811175) ou posterior.
+* [Windows PowerShell 3.0](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc770458(v=ws.10)) ou posterior.
 
 ## <a name="additional-tools"></a>Ferramentas adicionais
 
-Estão disponíveis ferramentas e recursos adicionais para trabalhar com o PowerShell no Visual Studio para desenvolvimento do Azure. Consulte [Ferramentas do PowerShell para Visual Studio](http://go.microsoft.com/fwlink/?LinkId=404012).
+Estão disponíveis ferramentas e recursos adicionais para trabalhar com o PowerShell no Visual Studio para desenvolvimento do Azure. Consulte [Ferramentas do PowerShell para Visual Studio](https://marketplace.visualstudio.com/items?itemName=AdamRDriscoll.PowerShellToolsforVisualStudio2015).
 
 ## <a name="generating-the-publish-scripts"></a>Gerando scripts de publicação
 
@@ -154,7 +154,7 @@ Se você nunca executou um script do Windows PowerShell antes, deve primeiro def
 
    ![Criar pacote de implantação na Web](./media/vs-azure-tools-publishing-using-powershell-scripts/IC767885.png)
 
-   Para obter mais informações, confira [Como: criar um pacote de implantação da Web no Visual Studio](https://msdn.microsoft.com/library/dd465323.aspx). Você também pode automatizar a criação do pacote de Implantação da Web, conforme descrito em [Personalizando e estendendo os scripts de publicação](#customizing-and-extending-the-publish-scripts).
+   Para obter mais informações, consulte [como: criar um pacote de implantação da Web no Visual Studio](https://msdn.microsoft.com/library/dd465323.aspx). Você também pode automatizar a criação do pacote de Implantação da Web, conforme descrito em [Personalizando e estendendo os scripts de publicação](#customizing-and-extending-the-publish-scripts).
 
 1. No **Gerenciador de Soluções**, abra o menu de contexto do script e, em seguida, escolha **Abrir com o ISE do Windows PowerShell**.
 1. Se você estiver executando os scripts do Windows PowerShell neste computador pela primeira vez, abra uma janela de prompt de comando com privilégios de administrador e digite o seguinte comando:
@@ -250,7 +250,7 @@ Para automatizar a criação de seu projeto, adicione o código que chama o MSBu
         #Write a function to build and package your web application
     ```
 
-    Para criar seu aplicativo Web, use o MsBuild.exe. Para obter ajuda, consulte Referência de linha de comando do MSBuild em: [http://go.microsoft.com/fwlink/?LinkId=391339](http://go.microsoft.com/fwlink/?LinkId=391339)
+    Para criar seu aplicativo Web, use o MsBuild.exe. Para obter ajuda, consulte Referência de linha de comando do MSBuild em: [http://go.microsoft.com/fwlink/?LinkId=391339](../msbuild/msbuild-command-line-reference.md)
 
     ```powershell
     Write-VerboseWithTime 'Build-WebDeployPackage: Start'
@@ -310,7 +310,7 @@ Para obter ajuda para as funções que você pode usar no prompt de comando do W
 
 **AzureWebAppPublishModule**
 
-| Nome da função | DESCRIÇÃO |
+| Nome da função | Descrição |
 | --- | --- |
 | Add-AzureSQLDatabase |Cria um novo banco de dados SQL do Azure. |
 | Add-AzureSQLDatabases |Cria os bancos de dados de SQL do Azure com base nos valores no arquivo de configuração JSON que o Visual Studio gera. |
@@ -322,7 +322,7 @@ Para obter ajuda para as funções que você pode usar no prompt de comando do W
 | Find-AzureVM |Obtém a máquina virtual especificada do Azure. |
 | Format-DevTestMessageWithTime |Anexa data e hora a uma mensagem. Essa função destina-se a mensagens gravadas em fluxos de erro e detalhes. |
 | Get-AzureSQLDatabaseConnectionString |Monta uma cadeia de conexão para se conectar a um banco de dados SQL do Azure. |
-| Get-AzureVMStorage |Retorna o nome da primeira conta de armazenamento com o nome padrão "devtest *" (não diferencia maiúsculas de minúsculas) no local especificado ou grupo de afinidades. Se a conta de armazenamento "devtest*" não corresponder ao local ou grupo de afinidades, a função a ignorará. Especifique um local ou um grupo de afinidades. |
+| Get-AzureVMStorage |Retorna o nome da primeira conta de armazenamento com o nome padrão "DevTest *" (não diferencia maiúsculas de minúsculas) no local ou grupo de afinidade especificado. Se a conta de armazenamento "DevTest*" não corresponder ao local ou ao grupo de afinidade, a função a ignorará. Especifique um local ou um grupo de afinidades. |
 | Get-MSDeployCmd |Retorna um comando para executar a ferramenta MsDeploy.exe. |
 | New-AzureVMEnvironment |Encontra ou cria uma máquina virtual na assinatura que corresponde aos valores no arquivo de configuração JSON. |
 | Publish-WebPackage |Usa MsDeploy.exe e um arquivo .zip para implantar recursos em um site. Essa função não gera nenhuma saída. Se a chamada para MSDeploy.exe falhar, a função gerará uma exceção. Para obter uma saída mais detalhada, use a opção **-Verbose** . |
@@ -332,14 +332,14 @@ Para obter ajuda para as funções que você pode usar no prompt de comando do W
 | Test-AzureModule |Retorna `$true` se a versão do módulo do Azure instalado for 0.7.4 ou posterior. Retorna `$false` se o módulo não estiver instalado ou for uma versão anterior. Essa função não tem parâmetros. |
 | Test-AzureModuleVersion |Retorna `$true` se a versão do módulo do Azure for 0.7.4 ou posterior. Retorna `$false` se o módulo não estiver instalado ou for uma versão anterior. Essa função não tem parâmetros. |
 | Test-HttpsUrl |Converte a URL de entrada em um objeto System.Uri. Retorna `$True` se a URL for absoluta e seu esquema for https. Retorna `$false` se a URL for relativa, seu esquema não for HTTPS ou a cadeia de caracteres de entrada não puder ser convertida em URL. |
-| Test-Member |Retorna `$true` se uma propriedade ou método for um membro do objeto. Caso contrário, retorna `$false`. |
+| Test-Member |Retorna `$true` se uma propriedade ou método for um membro do objeto. Caso contrário, retornará `$false`. |
 | Write-ErrorWithTime |Grava uma mensagem de erro prefixada com a hora atual. Essa função chama a função **Format-DevTestMessageWithTime** para prefixar a hora antes de gravar a mensagem no fluxo de erro. |
 | Write-HostWithTime |Grava uma mensagem no programa host (**Write-Host**) prefixada com a hora atual. O efeito da gravação no programa host varia. A maioria dos programas que hospeda o Windows PowerShell grava essas mensagens na saída padrão. |
 | Write-VerboseWithTime |Grava uma mensagem detalhada prefixada com a hora atual. Como a mensagem chama **Write-Verbose**, ela será exibida somente quando o script for executado com o parâmetro **Detalhado** ou quando a preferência **VerbosePreference** é definida como **Continuar**. |
 
 **Publish-WebApplication**
 
-| Nome da função | DESCRIÇÃO |
+| Nome da função | Descrição |
 | --- | --- |
 | New-AzureWebApplicationEnvironment |Cria recursos do Azure, como um site ou uma máquina virtual. |
 | New-WebDeployPackage |Essa função não está implementada. Você pode adicionar comandos nessa função para compilar o projeto. |

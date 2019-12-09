@@ -16,12 +16,12 @@ caps.latest.revision: 51
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3e78e23d7e176dffef1531da1af28d318253d9d1
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: ad2814dffa75809a318dc7cebe7831b5ecec7d29
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431436"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65690602"
 ---
 # <a name="just-in-time-debugging-in-visual-studio"></a>Depuração Just-In-Time no Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -102,7 +102,7 @@ As ações que você deve executar quando você vir o Visual Studio Just-in-Time
 
      Para habilitar Just-In-Time a depuração de um aplicativo do Windows Forms, você deve executar as seguintes etapas adicionais:
 
-2. Defina a `jitDebugging` de valor para `true` na `system.windows.form` seção Machine. config ou  *\<nome do aplicativo >*. arquivo exe. config:
+2. Defina a `jitDebugging` de valor para `true` na `system.windows.form` seção Machine. config ou  *\<nome do aplicativo >* . arquivo exe. config:
 
     ```
     <configuration>
@@ -110,7 +110,7 @@ As ações que você deve executar quando você vir o Visual Studio Just-in-Time
     </configuration>
     ```
 
-3. No aplicativo C++ do Windows Form, você também deve definir `DebuggableAttribute` em um arquivo .config ou no seu código. Se você compilar com [/Zi](http://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8) e sem [/Og](http://msdn.microsoft.com/library/d10630cc-b9cf-4e97-bde3-8d7ee79e9435), o compilador definirá esse atributo para você. Se você desejar depurar uma compilação de liberação não otimizada, no entanto, deverá definir isso por conta própria. Você pode fazer isso adicionando a seguinte linha ao arquivo de AssemblyInfo.cpp do seu aplicativo:
+3. No aplicativo C++ do Windows Form, você também deve definir `DebuggableAttribute` em um arquivo .config ou no seu código. Se você compilar com [/Zi](https://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8) e sem [/Og](https://msdn.microsoft.com/library/d10630cc-b9cf-4e97-bde3-8d7ee79e9435), o compilador definirá esse atributo para você. Se você desejar depurar uma compilação de liberação não otimizada, no entanto, deverá definir isso por conta própria. Você pode fazer isso adicionando a seguinte linha ao arquivo de AssemblyInfo.cpp do seu aplicativo:
 
     ```
     [assembly:System::Diagnostics::DebuggableAttribute(true, true)];
@@ -165,7 +165,7 @@ static void Main(string[] args)
 
  Sob **possíveis depuradores**, você deverá ver que o **nova instância do Microsoft Visual Studio 2015** linha está selecionada. Se ainda não estiver selecionado, selecione-o agora.
 
- Na parte inferior da janela, sob **você deseja depurar usando o depurador selecionado?**, clique em **Sim**.
+ Na parte inferior da janela, sob **você deseja depurar usando o depurador selecionado?** , clique em **Sim**.
 
  O projeto de ThrowsNullException é aberto em uma nova instância do Visual Studio, com execução interrompida na linha que gerou a exceção:
 

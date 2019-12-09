@@ -10,12 +10,12 @@ ms.assetid: ca2f4e43-322c-4431-8680-52da846940bc
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 6b3208230b438eb52c68ef5709cbb0d6628b60ee
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 95c9f7c530d50a7eb89ebe33fad3862f036972d1
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430170"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825623"
 ---
 # <a name="web-project-essentials"></a>Conceitos básicos do projeto Web
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,11 +30,11 @@ Projetos da Web criam aplicativos Web. Você pode usar um projeto da Web para cr
   
 - Arquivos de código de origem adicionais, como classes auxiliares que não estão associados uma página da Web específica, estão localizados na pasta /App_Code site da Web.  
   
-    - Um projeto de site da Web (WSP) gera um arquivo executável para cada página da Web inteligente. Arquivos executáveis adicionais são gerados de arquivos na pasta /App_Code qualquer código-fonte.  
+  - Um projeto de site da Web (WSP) gera um arquivo executável para cada página da Web inteligente. Arquivos executáveis adicionais são gerados de arquivos na pasta /App_Code qualquer código-fonte.  
+
+  - Um projeto de aplicativo Web (WAP) produz um único arquivo executável que combina o código para todas as páginas da Web inteligentes, bem como todos os arquivos de origem na pasta /App_Code.  
   
-    - Um projeto de aplicativo Web (WAP) produz um único arquivo executável que combina o código para todas as páginas da Web inteligentes, bem como todos os arquivos de origem na pasta /App_Code.  
-  
-- O arquivo de solução para um projeto da Web está localizado separadamente do site em si. Por padrão, arquivos de solução estão localizados em \Documents and Settings\\*Suaconta*\My Documents\\*\<Visual Studio # # # >* \Projects\\ *YourWebSite*.  
+- O arquivo de solução para um projeto da Web está localizado separadamente do site em si. Por padrão, arquivos de solução estão localizados em \Documents and Settings\\*Suaconta*\My Documents\\ *\<Visual Studio # # # >* \Projects\\ *YourWebSite*.  
   
     > [!NOTE]
     > Se você quiser manter o arquivo de solução com o site da Web, movê-lo lá e reabri-lo.  
@@ -55,9 +55,9 @@ Projetos da Web criam aplicativos Web. Você pode usar um projeto da Web para cr
   
 - Uma página da Web inteligente combina o HTML com uma linguagem de programação do lado do servidor. O idioma do lado do servidor é chamado de linguagem independente. Para dar suporte a uma linguagem independente, o sistema de projeto da Web deve implementar o <xref:Microsoft.VisualStudio.TextManager.Interop.IVsContainedLanguage> família de interfaces.  
   
-    - Para dar suporte a linguagem independente em um editor, o serviço de linguagem HTML deve adiar exibindo código independente de linguagem para um serviço de linguagem independente.  
-  
-    - Marcadores de erro (vermelho squigglies) sempre devem ser criados no buffer de principal do editor de código.  
+  - Para dar suporte a linguagem independente em um editor, o serviço de linguagem HTML deve adiar exibindo código independente de linguagem para um serviço de linguagem independente.  
+
+  - Marcadores de erro (vermelho squigglies) sempre devem ser criados no buffer de principal do editor de código.  
   
 ## <a name="see-also"></a>Consulte também  
  [Projetos Web](../../extensibility/internals/web-projects.md)

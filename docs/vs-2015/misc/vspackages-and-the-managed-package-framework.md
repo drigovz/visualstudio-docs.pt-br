@@ -1,5 +1,5 @@
 ---
-title: Os VSPackages e a estrutura de pacote gerenciado | Microsoft Docs
+title: VSPackages e a estrutura de pacote gerenciada | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -11,33 +11,33 @@ helpviewer_keywords:
 ms.assetid: e8d80e0f-6b5b-4baf-a7df-59fd808c60cd
 caps.latest.revision: 16
 manager: jillfra
-ms.openlocfilehash: 0b04692ed30e69e8904919748a6db0d0eff49f54
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 84fb41bfc80415535ca41d6b1a8c9dcf47124c7a
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63002124"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74298231"
 ---
-# <a name="vspackages-and-the-managed-package-framework"></a>Os VSPackages e a estrutura de pacote gerenciado
-Você pode reduzir o tempo de desenvolvimento com a criação de um VSPackage com o pacote gerenciado classes do framework (MPF) em vez de por meio de classes de interoperabilidade COM.  
+# <a name="vspackages-and-the-managed-package-framework"></a>VSPackages e a estrutura de pacote gerenciada
+Você pode reduzir o tempo de desenvolvimento criando um VSPackage com as classes do MPF (Managed Package Framework) em vez de usar classes de interoperabilidade COM.  
   
  Há duas maneiras de criar um VSPackage gerenciado:  
   
-- Use o [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] modelo de projeto de pacote  
+- Usar o modelo de projeto de pacote [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]  
   
-     Para obter mais informações, confira [Passo a passo: Criação de um comando de Menu usando o modelo de pacote do Visual Studio](http://msdn.microsoft.com/library/1985fa7d-aad4-4866-b356-a125b6a246de).  
+     Para obter mais informações, consulte [Walkthrough: Criando um comando de menu usando o modelo de pacote do Visual Studio](https://msdn.microsoft.com/library/1985fa7d-aad4-4866-b356-a125b6a246de).  
   
-- Compilar o VSPackage sem o [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] modelo de projeto de pacote  
+- Criar seu VSPackage sem o modelo de projeto de pacote [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]  
   
-     Por exemplo, você pode copiar um exemplo de VSPackage e alterar os GUIDs e os nomes. Você pode encontrar exemplos na seção VSX [Galeria de códigos](http://code.msdn.microsoft.com/vsx/).  
+     Por exemplo, você pode copiar um exemplo de VSPackage e alterar os GUIDs e os nomes. 
   
 ## <a name="in-this-section"></a>Nesta seção  
  [Classes da estrutura de pacote gerenciado](../misc/managed-package-framework-classes.md)  
- Descreve e lista os namespaces de classe MPF e arquivos DLL.  
+ Descreve e lista os namespaces e arquivos DLL da classe MPF.  
   
-## <a name="related-sections"></a>Seções relacionadas  
- [Passo a passo: Criação de um comando de Menu usando o modelo de pacote do Visual Studio](http://msdn.microsoft.com/library/1985fa7d-aad4-4866-b356-a125b6a246de)  
+## <a name="related-sections"></a>Seções Relacionadas  
+ [Walkthrough: Criando um comando de menu usando o modelo de pacote do Visual Studio](https://msdn.microsoft.com/library/1985fa7d-aad4-4866-b356-a125b6a246de)  
  Explica como criar um VSPackage gerenciado.  
   
  [VSPackages gerenciados](../misc/managed-vspackages.md)  
- Apresenta os aspectos de VSPackages que se aplicam ao código gerenciado.
+ Apresenta aspectos de VSPackages que se aplicam ao código gerenciado.

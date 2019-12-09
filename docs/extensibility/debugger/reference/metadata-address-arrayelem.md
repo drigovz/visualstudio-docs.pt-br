@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - METADATA_ADDRESS_ARRAYELEM structure
 ms.assetid: 24321be5-7c17-4038-82a1-c20a2b68ff3c
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2b08d3d25912123d62de9a096b810f42d1418aa6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: a0b5e24447c1f55242af6a6b549c5317f37818b2
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62865698"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66339169"
 ---
 # <a name="metadataaddressarrayelem"></a>METADATA_ADDRESS_ARRAYELEM
 
@@ -39,16 +42,14 @@ public struct METADATA_ADDRESS_ARRAYELEM {
 }
 ```
 
-## <a name="terms"></a>Termos
+## <a name="members"></a>Membros
 
-tokMethod
-
+`tokMethod`\
 A ID da matriz, esse elemento é uma parte do.
 
 [C++] `_mdToken` é um `typedef` de 32 bits `int`.
 
-dwIndex
-
+`dwIndex`\
 O índice deste elemento dentro da matriz.
 
 ## <a name="remarks"></a>Comentários

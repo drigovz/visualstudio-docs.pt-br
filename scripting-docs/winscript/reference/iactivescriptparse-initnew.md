@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptParse::InitNew | Microsoft Docs
+title: 'IActiveScriptParse:: InitNew | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 55d38031708694aa777f7598f261afdfc2b4f3b9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b4817e103d7408124f35eb7dbaa16e955dd18f17
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63009306"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573505"
 ---
 # <a name="iactivescriptparseinitnew"></a>IActiveScriptParse::InitNew
 Inicializa o mecanismo de script.  
@@ -33,11 +33,11 @@ Inicializa o mecanismo de script.
 HRESULT InitNew(void);  
 ```  
   
-## <a name="return-value"></a>Valor de retorno  
- Retorna `S_OK` se for bem-sucedido, ou `E_FAIL` se ocorreu um erro durante a inicialização.  
+## <a name="return-value"></a>Valor retornado  
+ Retorna `S_OK` se tiver êxito ou `E_FAIL` se ocorrer um erro durante a inicialização.  
   
 ## <a name="remarks"></a>Comentários  
- Antes do mecanismo de script pode ser usado, um dos métodos a seguir deve ser chamado: `IPersist*::Load`, `IPersist*::InitNew`, ou `IActiveScriptParse::InitNew`. A semântica desse método é idêntica aos `IPersistStreamInit::InitNew`, em que esse método informa ao mecanismo de script para se inicializar. Observe que não é válido chamar ambos `IPersist*::InitNew` ou `IActiveScriptParse::InitNew` e `IPersist*::Load`, não é válido chamar `IPersist*::InitNew`, `IActiveScriptParse::InitNew`, ou `IPersist*::Load` mais de uma vez.  
+ Antes que o mecanismo de script possa ser usado, um dos seguintes métodos deve ser chamado: `IPersist*::Load`, `IPersist*::InitNew` ou `IActiveScriptParse::InitNew`. A semântica desse método é idêntica à `IPersistStreamInit::InitNew`, pois esse método diz ao mecanismo de script para se inicializar. Observe que não é válido chamar `IPersist*::InitNew` ou `IActiveScriptParse::InitNew` e `IPersist*::Load`, nem é válido chamar `IPersist*::InitNew`, `IActiveScriptParse::InitNew` ou `IPersist*::Load` mais de uma vez.  
   
 ## <a name="see-also"></a>Consulte também  
  [IActiveScriptParse](../../winscript/reference/iactivescriptparse.md)

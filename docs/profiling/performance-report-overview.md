@@ -10,14 +10,15 @@ ms.assetid: 7324c24c-fd09-479b-b2ad-e0c3b613e040
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 04abc2de21469b696df1365b001b60b9b3ba5e8c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 517156677a6d3711fa5dc2e4a15629a55229cfe2
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432018"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74772226"
 ---
 # <a name="performance-report-overview"></a>Visão geral do relatório de desempenho
 Você pode exibir os dados de criação de perfil de uma sessão de desempenho na janela **Relatório de Desempenho** do IDE (Ambiente de Desenvolvimento Integrado) do Visual Studio Team System Development Edition. Os dados de criação de perfil são salvos em arquivos .vsp e .vsps. As janelas de exibição de relatório permitem exibir e analisar problemas de desempenho do aplicativo.

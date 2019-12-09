@@ -1,5 +1,5 @@
 ---
-title: 'Como: Introdução à personalização da faixa de opções'
+title: 'Como: Introdução à personalização da faixa de faixas'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,31 +15,31 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f164a8f1d1c84725530e7a3afab5e63472ae257e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a9b0f1ef704f5dd1426374e23806e5950ed5f6bb
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62967892"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71255856"
 ---
-# <a name="how-to-get-started-customizing-the-ribbon"></a>Como: Introdução à personalização da faixa de opções
-  Para personalizar a faixa de opções de um aplicativo do Microsoft Office, adicione uma **faixa de opções (Visual Designer)** ou **da faixa de opções (XML)** item a um projeto do Office.
+# <a name="how-to-get-started-customizing-the-ribbon"></a>Como: Introdução à personalização da faixa de faixas
+  Para personalizar a faixa de visualização de um aplicativo Microsoft Office, adicione um item **da faixa de Ribbon (designer visual)** ou de **faixa (XML)** a um projeto do Office.
 
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]
 
-### <a name="to-add-a-ribbon-to-a-project"></a>Para adicionar uma faixa de opções para um projeto
+### <a name="to-add-a-ribbon-to-a-project"></a>Para adicionar uma faixa de faixas a um projeto
 
-1. Sobre o **Project** Menu, clique em **Adicionar Novo Item**.
+1. No menu **projeto** , clique em **Adicionar novo item**.
 
-2. No **Adicionar Novo Item** caixa de diálogo, selecione **faixa de opções (Visual Designer)** ou **da faixa de opções (XML)**. Para obter mais informações sobre esses modelos, consulte [visão geral da faixa de opções](../vsto/ribbon-overview.md).
+2. Na caixa de diálogo **Adicionar novo item** , selecione **faixa de opções (designer visual)** ou **faixa de opções (XML)** . Para obter mais informações sobre esses modelos, consulte [visão geral da faixa](../vsto/ribbon-overview.md)de visualização.
 
-3. No **nome** , digite um nome para o item da faixa de opções.
+3. Na caixa **nome** , digite um nome para o item da faixa de tipos.
 
-    Nomes não podem conter os seguintes caracteres:
+    Os nomes não podem conter os seguintes caracteres:
 
    - Libra (#)
 
-   - Porcentagem (%))
+   - Percentual (%)
 
    - E comercial (&)
 
@@ -49,7 +49,7 @@ ms.locfileid: "62967892"
 
    - Barra invertida (\\)
 
-   - Dois-pontos (:)
+   - Dois pontos (:)
 
    - Aspas duplas (")
 
@@ -59,19 +59,19 @@ ms.locfileid: "62967892"
 
    - Ponto de interrogação (?)
 
-   - Uma barra (/)
+   - Barra (/)
 
-   - Espaços iniciais ou finais (' ')
+   - Espaços à esquerda ou à direita (' ')
 
-   - Nomes reservados do Windows ou DOS como ("nul", "aux", "con", "com1", "lpt1" e assim por diante)
+   - Nomes reservados para Windows ou DOS, como ("nul", "AUX", "con", "COM1", "LPT1" e assim por diante)
 
 4. Clique em **OK**.
 
-   O item da faixa de opções aparece na **Gerenciador de soluções**. Para obter informações sobre as próximas etapas, consulte [visão geral da faixa de opções](../vsto/ribbon-overview.md).
+   O item da faixa de faixas aparece em **Gerenciador de soluções**. Para obter informações sobre as próximas etapas, consulte [visão geral da faixa](../vsto/ribbon-overview.md)de visualização.
 
 ## <a name="see-also"></a>Consulte também
-- [Acesso a faixa de opções em tempo de execução](../vsto/accessing-the-ribbon-at-run-time.md)
+- [Acessar a faixa de faixas em tempo de execução](../vsto/accessing-the-ribbon-at-run-time.md)
 - [Designer da faixa de opções](../vsto/ribbon-designer.md)
 - [XML da faixa de opções](../vsto/ribbon-xml.md)
-- [Passo a passo: Criar uma guia personalizada usando o Designer de faixa de opções](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)
-- [Passo a passo: Criar uma guia personalizada usando o XML da faixa de opções](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)
+- [Passo a passo: Criar uma guia personalizada usando o designer de faixa de faixas](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)
+- [Passo a passo: Criar uma guia personalizada usando o XML da faixa de uma](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)

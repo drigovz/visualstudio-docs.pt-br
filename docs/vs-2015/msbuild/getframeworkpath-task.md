@@ -20,11 +20,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2b528d0a4971d1d070c69d12cdb9a693d9a30f20
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59663122"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68149492"
 ---
 # <a name="getframeworkpath-task"></a>Tarefa GetFrameworkPath
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Recupera o caminho para os assemblies [!INCLUDE[dnprdnshort](../includes/dnprdns
 ## <a name="task-parameters"></a>Parâmetros da tarefa  
  A tabela a seguir descreve os parâmetros da tarefa `GetFrameworkPath`.  
   
-|Parâmetro|Descrição|  
+|Parâmetro|DESCRIÇÃO|  
 |---------------|-----------------|  
 |`FrameworkVersion11Path`|Parâmetro de saída `String` opcional.<br /><br /> Contém o caminho para os assemblies do framework versão 1.1, se estiverem presentes. Caso contrário, retornará `null`.|  
 |`FrameworkVersion20Path`|Parâmetro de saída `String` opcional.<br /><br /> Contém o caminho para os assemblies do framework versão 2.0, se estiverem presentes. Caso contrário, retornará `null`.|  
@@ -63,6 +63,6 @@ Recupera o caminho para os assemblies [!INCLUDE[dnprdnshort](../includes/dnprdns
 </Project>  
 ```  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Veja também  
  [Tarefas](../msbuild/msbuild-tasks.md)   
  [Referência de tarefas](../msbuild/msbuild-task-reference.md)

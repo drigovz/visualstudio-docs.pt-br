@@ -1,5 +1,5 @@
 ---
-title: Analisar o Visual Basic e C# código de qualidade em aplicativos da Store usando a análise de código estático
+title: Analisar Visual Basic e C# qualidade de código na Store apps usando análise de código estático
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-test
@@ -8,26 +8,26 @@ f1_keywords:
 - vs.codeanalysis.propertypages.csvb.express
 ms.assetid: cab553fc-19a9-4cbf-858e-8200258ffe50
 caps.latest.revision: 16
-author: erickson-doug
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 3f3a00a4ec5a013dc860a05ed48364178e3f23cf
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: cfe5ed57bfc361b711ed2aceceff2aabfc44cf4e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442858"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72660733"
 ---
 # <a name="analyze-visual-basic-and-c-code-quality-in-store-apps-using-visual-studio-static-code-analysis"></a>Analisar a qualidade do código do Visual Basic e C# em aplicativos da Store usando a análise de código estático do Visual Studio
 
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Aplica-se ao Windows e Windows Phone] (... /Image/windows_and_phone_content.png "windows_and_phone_content")
+Aplica-se ao Windows e Windows Phone] (.. /Image/windows_and_phone_content.png "windows_and_phone_content")
 
  A ferramenta de análise de código Visual Studio Express examina seu código em busca de um conjunto de defeitos e violações comuns das práticas recomendadas de programação. Os avisos da análise de código diferem dos erros e avisos do compilador porque a ferramenta de análise de código procura por padrões de código específicos que são válidos, mas ainda podem criar problemas para você ou outras pessoas que usem o seu código. A análise de código também pode localizar os defeitos no seu código que são difíceis de descobrir com testes. A execução da ferramenta de análise de código a intervalos regulares durante o processo de desenvolvimento pode melhorar a qualidade do seu aplicativo concluído.
 
 > [!NOTE]
-> No Visual Studio Ultimate, Visual Studio Premium e Visual Studio Professional, você pode usar a funcionalidade completa da análise de código. Consulte [Analisando a qualidade do aplicativo usando as ferramentas de análise de código](http://msdn.microsoft.com/library/dd264897.aspx) na Biblioteca MSDN.
+> No Visual Studio Ultimate, Visual Studio Premium e Visual Studio Professional, você pode usar a funcionalidade completa da análise de código. Consulte [Analisando a qualidade do aplicativo usando as ferramentas de análise de código](https://msdn.microsoft.com/library/dd264897.aspx) na Biblioteca MSDN.
 
 ## <a name="in-this-topic"></a>Neste tópico
  Estes são os assuntos tratados:
@@ -51,11 +51,11 @@ Aplica-se ao Windows e Windows Phone] (... /Image/windows_and_phone_content.png 
 
 1. Clique com o botão direito do mouse no nome do projeto no Gerenciador de Soluções e escolha **Propriedades**.
 
-2. Na página de propriedades do projeto, escolha **Análise de Código** e depois **Habilitar Análise de Código no Build (define a constante CODEANALYSIS)**.
+2. Na página de propriedades do projeto, escolha **Análise de Código** e depois **Habilitar Análise de Código no Build (define a constante CODEANALYSIS)** .
 
    A solução é compilada e a análise de código é executada. Os resultados aparecem na janela Análise de Código.
 
-   ![Janela Análise de Código](../test/media/ca-managed-collapsed.png "CA_Managed_Collapsed")
+   ![Janela de análise de código](../test/media/ca-managed-collapsed.png "CA_Managed_Collapsed")
 
 ## <a name="BKMK_Analyze"></a> Analisando e resolvendo avisos da análise de código
  Para analisar um aviso específico, clique no respectivo título na janela Análise de Código. O aviso se expande para exibir informações detalhadas sobre o problema.
@@ -64,7 +64,7 @@ Aplica-se ao Windows e Windows Phone] (... /Image/windows_and_phone_content.png 
 
  Quando você expande um aviso, a linha de código que o causou é realçada no editor de códigos do Visual Studio.
 
- ![Realce de texto da análise de código](../test/media/ca-managed-sourceline.png "CA_Managed_SourceLine")
+ ![Realce de texto de análise de código](../test/media/ca-managed-sourceline.png "CA_Managed_SourceLine")
 
  Depois de entender o problema, você pode resolvê-lo no seu código. Em seguida, torne a executar a análise de código para verificar se o aviso não aparece mais na janela Análise de Código e se a sua correção não gerou novos avisos.
 
@@ -98,12 +98,12 @@ Aplica-se ao Windows e Windows Phone] (... /Image/windows_and_phone_content.png 
 ## <a name="BKMK_Warnings"></a> Avisos de análise de código em Visual Basic e C#
  A análise de código gera os seguintes avisos:
 
- [CA1001: os tipos com campos descartáveis devem ser descartáveis](http://msdn.microsoft.com/library/ms182172.aspx)
+ [CA1001: tipos que têm campos descartáveis devem ser descartáveis](https://msdn.microsoft.com/library/ms182172.aspx)
 
- [CA1821: remova os finalizadores vazios](http://msdn.microsoft.com/library/bb264476.aspx)
+ [CA1821: remover finalizadores vazios](https://msdn.microsoft.com/library/bb264476.aspx)
 
- [CA2213: os campos descartáveis devem ser descartados](http://msdn.microsoft.com/library/ms182328.aspx)
+ [CA2213: os campos descartáveis devem ser descartados](https://msdn.microsoft.com/library/ms182328.aspx)
 
- [CA2229: implementar construtores de serialização](http://msdn.microsoft.com/library/ms182343.aspx)
+ [CA2229: implementar construtores de serialização](https://msdn.microsoft.com/library/ms182343.aspx)
 
- [CA2231: o operador de sobrecarga é igual ao substituir ValueType.Equals](http://msdn.microsoft.com/library/ms182359.aspx)
+ [CA2231: sobrecarregar operador Equals ao substituir ValueType.Equals](https://msdn.microsoft.com/library/ms182359.aspx)

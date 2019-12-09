@@ -1,22 +1,20 @@
 ---
-title: Como atualizar projetos para a versão atual das ferramentas do Azure | Microsoft Docs
+title: Atualizar projetos para versão atual das ferramentas do Azure
 description: Aprenda como atualizar um projeto do Azure no Visual Studio para a versão atual das ferramentas do Azure
 author: ghogen
 manager: jillfra
 assetId: 1d64070a-078d-468a-87f4-e6715de6475f
-ms.prod: visual-studio-dev14
-ms.technology: vs-azure
 ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/18/2016
 ms.author: ghogen
-ms.openlocfilehash: e007e7a3f3e8ddeb62167a04debfe879dad1778c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ece853aacc2af48ec89af510a055486b9dded7ae
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62427956"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66260587"
 ---
 # <a name="how-to-upgrade-projects-to-the-current-version-of-the-azure-tools-for-visual-studio"></a>Como atualizar projetos para a versão atual das ferramentas do Azure para Visual Studio
 ## <a name="overview"></a>Visão geral
@@ -34,13 +32,13 @@ Se um projeto é atualizado automaticamente ou se você especificar que deseja a
 
 > [!IMPORTANT]
 > Para projetos F #, você deve atualizar manualmente as referências aos assemblies do Azure para que eles façam referência às versões mais recentes desses assemblies.
-> 
-> 
+>
+>
 
 ### <a name="how-to-upgrade-an-azure-project-to-the-current-release"></a>Como atualizar um projeto do Azure para a versão atual
 1. Instale a versão atual das ferramentas do Azure na instalação do Visual Studio que você deseja usar para o projeto atualizado e, em seguida, abra o projeto que você deseja atualizar. Se o projeto foi criado com ferramentas do Azure versão anterior à 1.6 (novembro de 2011), o projeto é atualizado automaticamente para a versão atual. Se o projeto foi criado com a versão de novembro de 2011 e essa versão ainda estiver instalada, o projeto será aberto nessa versão.
 2. No Gerenciador de Soluções, abra o menu de atalho para o nó do projeto, escolha **Propriedades** e, em seguida, escolha a guia **Aplicativo** na caixa de diálogo que aparece.
-   
+
     A guia **Aplicativo** exibe a versão das ferramentas que está associada com o projeto. Se for exibida a versão atual das ferramentas do Azure, o projeto já foi atualizado. Se você instalou uma versão mais recente das ferramentas do que aquela mostrada pela guia, um botão **Atualizar** é exibido.
 3. Escolha o botão **Atualizar** para atualizar um projeto para a versão atual das ferramentas.
 4. Compile o projeto e resolva os erros resultantes das alterações de API. Para obter informações sobre como modificar seu código para a nova versão, consulte a documentação da API específica.

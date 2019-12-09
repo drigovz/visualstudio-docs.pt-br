@@ -1,21 +1,21 @@
 ---
-title: 'Passo a passo: Usando XSLT IntelliSense'
+title: 'Passo a passo: usando XSLT IntelliSense'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 079d95ac-2eaf-4ae1-9cd3-2c81a961a942
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 880f098d96c23236a065894629a36a746ecedce7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 606c4ad307de46d19989d14e2c660cc0286cb803
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62808003"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72604372"
 ---
-# <a name="walkthrough-using-xslt-intellisense"></a>Passo a passo: Usando XSLT IntelliSense
+# <a name="walkthrough-using-xslt-intellisense"></a>Passo a passo: usando XSLT IntelliSense
 
 Essa explicação passo a passo demonstra como usar IntelliSense do XSLT para completar automaticamente o valor de alguns atributos.
 
@@ -162,4 +162,4 @@ Essa explicação passo a passo demonstra como usar IntelliSense do XSLT para co
 
 ## <a name="see-also"></a>Consulte também
 
-- [Recursos de IntelliSense do editor de XML](../xml-tools/xml-editor-intellisense-features.md)
+- [Recursos do IntelliSense do editor de XML](../xml-tools/xml-editor-intellisense-features.md)

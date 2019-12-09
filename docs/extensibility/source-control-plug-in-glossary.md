@@ -1,54 +1,54 @@
 ---
-title: Glossário do plug-in de controle de origem | Microsoft Docs
+title: Glossário de plug-in de controle do código-fonte | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - glossary [Visual Studio SDK]
 - source control plug-ins, glossary
 ms.assetid: f224bbc9-38fc-4c80-ab09-51dcc8969f8e
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0df624a27513fa0eb18b2643bb7c680d71d94c0c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 672a96c31137a52f3bd4a8c826cef1b19406790b
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62432415"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72719580"
 ---
 # <a name="source-control-plug-in-glossary"></a>Glossário de plug-in de controle do código-fonte
-Os seguintes termos úteis e definições referem-se a documentação do SDK de plug-in de controle do código-fonte.
+Os termos e definições úteis a seguir pertencem à documentação do SDK de plug-in de controle do código-fonte.
 
 ## <a name="definitions"></a>Definições
- Check-in quando um usuário faz alterações em uma cópia de trabalho, um usuário deve enviar as alterações da cópia funcional para o repositório de controle de origem central. Isso cria uma nova revisão do arquivo que está disponível para outros usuários. Esse processo é chamado um check-in.
+ Check-in quando um usuário faz alterações em uma cópia de trabalho, um usuário deve enviar alterações da cópia de trabalho para o repositório do controle do código-fonte central. Isso cria uma nova revisão do arquivo que está disponível para outros usuários. Esse processo é chamado de check-in.
 
- Check-out o ato de solicitar uma cópia de trabalho do repositório, informando o repositório de sua intenção de modificá-lo. Uma cópia funcional reflete o estado do projeto a partir do momento em que ele foi extraído.
+ Faça o check-in do ato de solicitar uma cópia de trabalho do repositório, informando o repositório de sua intenção de modificá-la. Uma cópia de trabalho reflete o estado do projeto a partir do momento em que é feito o check-out.
 
- Programa de cliente A que usa o sistema de controle do código-fonte. Para fins desta documentação é o IDE do Visual Studio.
+ Cliente um programa que usa o sistema de controle do código-fonte. Para a finalidade desta documentação, é o IDE do Visual Studio.
 
- Mensagem de comentário um que descreve as alterações que um usuário pode se conectar a uma revisão quando uma operação de controle do código-fonte é executada.
+ Comente uma mensagem que descreve as alterações que um usuário pode anexar a uma revisão quando uma operação de controle do código-fonte é executada.
 
- Conflito A situação em que dois usuários tentam fazer check-in é alterado para a mesma região do mesmo arquivo. Normalmente, uma mesclagem deve ser executada.
+ Conflito uma situação quando dois usuários tentam fazer check-in de alterações na mesma região do mesmo arquivo. Normalmente, uma mesclagem deve ser executada.
 
- Pasta local do diretório um lado do cliente é chamada de um diretório. Esta é a cópia no qual um usuário, na verdade, faz alterações. Pode haver muitas cópias de trabalho de um determinado projeto; em geral, cada desenvolvedor tem sua própria cópia.
+ Diretório uma pasta local do lado do cliente é referida como um diretório. Essa é a cópia na qual um usuário realmente faz alterações. Pode haver muitas cópias de trabalho de um determinado projeto; em geral, cada desenvolvedor tem sua própria cópia.
 
- Operação de obtenção de um GET traz cópia de trabalho do usuário atualizada com a cópia do repositório. Ao contrário de um check-out, um get é executado quando o usuário simplesmente precisa a cópia mais recente, mas pretende sem fazer alterações.
+ Obter uma operação get leva a cópia de trabalho do usuário atualizada com a cópia do repositório. Ao contrário de um check-out, um get é executado quando o usuário simplesmente precisa da cópia mais recente, mas pretende não fazer nenhuma alteração.
 
- Histórico de normalmente é um resumo de todos os check-outs, check-ins, atualizações, marcas e versões feitas no repositório de controle de origem.
+ Histórico, normalmente é um resumo de todos os check-outs, check-ins, atualizações, marcas e versões feitas no repositório do controle do código-fonte.
 
- IDE geralmente se refere ao Visual Studio Integrated Development Environment. No entanto, ela pode também se referir a outros ambientes de cliente que reconhecem a API de plug-in de controle do código-fonte.
+ O IDE geralmente se refere ao ambiente de desenvolvimento integrado do Visual Studio. No entanto, também pode se referir a outros ambientes de cliente que reconheçam a API de plug-in de controle do código-fonte.
 
- Mescle o processo durante a qual fonte de dois ou mais arquivos de código são combinados para formar um novo arquivo que incorpora a todos os recursos de arquivos anteriores. Esse conceito é vital em controle de versão em que dois ou mais desenvolvedores trabalham em arquivos simultaneamente.
+ Mescle o processo durante o qual dois ou mais arquivos de código-fonte são combinados para formar um novo arquivo que incorpora todos os recursos dos arquivos anteriores. Esse conceito é vital no controle de versão, onde dois ou mais desenvolvedores trabalham em arquivos simultaneamente.
 
- Pasta de controle de origem do projeto A é conhecida como um projeto. Isso não tem nenhuma relação com projetos ou soluções no Visual Studio.
+ Projeto uma pasta de controle do código-fonte geralmente é chamada de projeto. Isso não tem nenhuma relação com projetos ou soluções no Visual Studio.
 
- Plug-in de uma DLL que fornece funcionalidade de controle do código-fonte, Implementando a API de plug-in de controle do código-fonte.
+ Plug-in uma DLL que fornece funcionalidade de controle do código-fonte implementando a API de plug-in de controle do código-fonte.
 
- Repositório a cópia mestra em que um sistema de controle do código-fonte armazena o histórico de revisão completa de um projeto. Cada projeto tem exatamente um repositório.
+ Repositório a cópia mestre em que um sistema de controle do código-fonte armazena o histórico de revisão completo de um projeto. Cada projeto tem exatamente um repositório.
 
- Revisão de um compromisso de alteração no histórico de um arquivo ou conjunto de arquivos. Uma revisão é um instantâneo em um projeto continuamente em alteração.
+ Revisar uma alteração confirmada no histórico de um arquivo ou conjunto de arquivos. Uma revisão é um instantâneo em um projeto de alteração contínua.
 
 ## <a name="see-also"></a>Consulte também
 - [Plug-ins de controle do código-fonte](../extensibility/source-control-plug-ins.md)

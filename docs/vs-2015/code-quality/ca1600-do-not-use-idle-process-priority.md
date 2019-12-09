@@ -1,5 +1,5 @@
 ---
-title: 'CA1600: Não use prioridade de processo ociosa | Microsoft Docs'
+title: 'CA1600: não usar prioridade de processo ocioso | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,34 +12,34 @@ helpviewer_keywords:
 - DoNotUseIdleProcessPriority
 ms.assetid: 9b0d073b-78b6-41be-8ef3-14692a735283
 caps.latest.revision: 17
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 4002e17e3988ca3b449e141394ce762f95ffc78b
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: d4260db808d9c50f78388cf6ba976f7ace52e6a3
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58923273"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72669292"
 ---
-# <a name="ca1600-do-not-use-idle-process-priority"></a>CA1600: Não usar prioridade de processo ociosa
+# <a name="ca1600-do-not-use-idle-process-priority"></a>CA1600: não usar a prioridade de processo ociosa
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |NomeDoTipo|DoNotUseIdleProcessPriority|
 |CheckId|CA1600|
-|Categoria|Microsoft.Mobility|
+|Categoria|Microsoft. Mobility|
 |Alteração Significativa|Quebra|
 
 ## <a name="cause"></a>Causa
  Essa regra ocorre quando os processos são definidos como `ProcessPriorityClass.Idle`.
 
 ## <a name="rule-description"></a>Descrição da Regra
- Não defina a prioridade do processo como Ocioso. Os processos que têm `System.Diagnostics.ProcessPriorityClass.Idle` ocuparão a CPU quando estariam ocioso e, assim, bloquearão em espera.
+ Não defina a prioridade do processo como Ocioso. Os processos que têm `System.Diagnostics.ProcessPriorityClass.Idle` ocuparão a CPU quando ele estaria ocioso e, portanto, bloquearão o modo de espera.
 
 ## <a name="how-to-fix-violations"></a>Como Corrigir Violações
- Definir processos `ProcessPriorityClass.BelowNormal`.
+ Defina processos como `ProcessPriorityClass.BelowNormal`.
 
 ## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos
- Essa regra deve ser suprimida somente quando a prioridade de processo ociosa é necessária e considerações de mobilidade podem ser ignoradas com segurança.
+ Essa regra deve ser suprimida somente quando a prioridade de processo ociosa é necessária e as considerações de mobilidade podem ser ignoradas com segurança.

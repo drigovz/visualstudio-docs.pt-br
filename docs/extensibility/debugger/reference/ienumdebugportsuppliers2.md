@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugPortSuppliers2
 ms.assetid: cd0a73dc-dd25-46fd-8c4f-5b011501afeb
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9200c5366fb428371b633cfb0b97f72d8da8b566
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 39d9d9462fe1951f01927b9180fa8a99aee535be
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62866297"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66326388"
 ---
 # <a name="ienumdebugportsuppliers2"></a>IEnumDebugPortSuppliers2
 Essa interface enumera os fornecedores de porta.

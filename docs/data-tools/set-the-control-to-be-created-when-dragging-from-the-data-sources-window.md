@@ -1,5 +1,5 @@
 ---
-title: Definir o controle a ser criado quando arrastado da janela Fontes de Dados
+title: Definir o controle para criar ao arrastar da janela fontes de dados
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,66 +8,66 @@ helpviewer_keywords:
 - data [Visual Studio], displaying on Windows Forms
 - data [Visual Studio], Data Sources window
 ms.assetid: 20597ff8-0c98-43ec-8fb1-05376804ba48
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: f43219cc5329b46cdaba052a9f46709ee0af406f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b5c57b73656f75ae9d99211ba28e38935d3164cb
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62565978"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72641037"
 ---
 # <a name="set-the-control-to-be-created-when-dragging-from-the-data-sources-window"></a>Definir o controle a ser criado quando arrastado da janela Fontes de Dados
 
-Você pode criar controles associados a dados arrastando itens dos **fontes de dados** janela para o WPF designer ou o designer de formulários do Windows. Cada item na **fontes de dados** janela tem um controle padrão que é criado quando você arrastá-lo para o designer. No entanto, você pode optar por criar um controle diferente.
+Você pode criar controles vinculados a dados arrastando itens da janela **fontes de dados** para o designer WPF ou Windows Forms Designer. Cada item na janela **Data Sources** tem um controle padrão que é criado quando você o arrasta para o designer. No entanto, você pode optar por criar um controle diferente.
 
-## <a name="set-the-controls-to-be-created-for-data-tables-or-objects"></a>Defina os controles a serem criados para tabelas de dados ou objetos
+## <a name="set-the-controls-to-be-created-for-data-tables-or-objects"></a>Definir os controles a serem criados para tabelas de dados ou objetos
 
-Antes de arrastar itens que representam as tabelas de dados ou objetos a partir de **fontes de dados** janela, você pode escolher para exibir todos os dados em um controle, ou para exibir cada coluna ou propriedade em um controle separado.
+Antes de arrastar itens que representam tabelas de dados ou objetos da janela **fontes de dados** , você pode optar por exibir todos os dados em um controle ou exibir cada coluna ou propriedade em um controle separado.
 
 Nesse contexto, o termo *objeto* refere-se a um objeto comercial personalizado, uma entidade (em um modelo de dados de entidade) ou um objeto retornado por um serviço.
 
 ### <a name="to-set-the-controls-to-be-created-for-data-tables-or-objects"></a>Para definir os controles a serem criados para tabelas de dados ou objetos
 
-1. Certifique-se a **WPF** designer ou o **Windows Forms** designer é aberto.
+1. Verifique se o designer do **WPF** ou o designer de **Windows Forms** está aberto.
 
-2. No **fontes de dados** janela, selecione o item que representa a tabela de dados ou objeto que você deseja definir.
+2. Na janela **fontes de dados** , selecione o item que representa a tabela de dados ou o objeto que você deseja definir.
 
    > [!TIP]
-   > Se o **fontes de dados** janela não estiver aberta, você pode abri-lo selecionando **exibição** > **Other Windows** > **defontesdedados**.
+   > Se a janela **fontes de dados** não estiver aberta, você poderá abri-la selecionando **Exibir**  >  outras**fontes de dados**do**Windows**  > .
 
-3. Clique no menu suspenso para o item e, em seguida, clique em um dos seguintes itens no menu:
+3. Clique no menu suspenso do item e, em seguida, clique em um dos seguintes itens no menu:
 
-    - Para exibir cada campo de dados em um controle separado, clique em **detalhes**. Quando você arrasta o item de dados para o designer, essa ação criará um controle de associação de dados diferente para cada coluna ou propriedade do objeto, juntamente com os rótulos para cada controle ou tabela de dados pai.
+    - Para exibir cada campo de dados em um controle separado, clique em **detalhes**. Quando você arrasta o item de dados para o designer, essa ação criará um controle associado a dados diferente para cada coluna ou propriedade da tabela ou objeto de dados pai, juntamente com os rótulos para cada controle.
 
-    - Para exibir todos os dados em um único controle, selecione um controle diferente na lista, como **DataGrid** ou **lista** em um aplicativo WPF, ou **DataGridView** em um Windows Forms aplicativo.
+    - Para exibir todos os dados em um único controle, selecione um controle diferente na lista, como **DataGrid** ou **list** em um aplicativo WPF, ou **DataGridView** em um aplicativo Windows Forms.
 
-    A lista de controles disponíveis depende, em que o designer você abriu, qual versão do .NET Framework o projeto está destinado e se você tiver adicionado personalizado controla esses suporte à vinculação de dados para o **caixa de ferramentas**. Se o controle que você deseja criar não estiver na lista de controles disponíveis, você pode adicionar o controle à lista. Para obter mais informações, consulte [adicionar controles personalizados à janela fontes de dados](../data-tools/add-custom-controls-to-the-data-sources-window.md).
+    A lista de controles disponíveis depende de qual designer você abriu, qual versão do .NET seu projeto tem como destino e se você adicionou controles personalizados que dão suporte à ligação de dados com a **caixa de ferramentas**. Se o controle que você deseja criar não estiver na lista de controles disponíveis, você poderá adicionar o controle à lista. Para obter mais informações, consulte [Adicionar controles personalizados à janela fontes de dados](../data-tools/add-custom-controls-to-the-data-sources-window.md).
 
-    Para saber como criar um controle personalizado do Windows Forms que pode ser adicionado à lista de controles para tabelas de dados ou objetos na **fontes de dados** janela, consulte [criar um controle de usuário do Windows Forms que dá suporte a dados complexos associação](../data-tools/create-a-windows-forms-user-control-that-supports-complex-data-binding.md).
+    Para saber como criar um controle de Windows Forms personalizado que pode ser adicionado à lista de controles para tabelas de dados ou objetos na janela **fontes de dados** , consulte [criar um controle de usuário Windows Forms que dá suporte à ligação de dados complexa](../data-tools/create-a-windows-forms-user-control-that-supports-complex-data-binding.md).
 
-## <a name="set-the-controls-to-be-created-for-data-columns-or-properties"></a>Defina os controles a serem criados para colunas de dados ou propriedades
+## <a name="set-the-controls-to-be-created-for-data-columns-or-properties"></a>Definir os controles a serem criados para colunas de dados ou propriedades
 
-Antes de arrastar um item que representa uma coluna ou uma propriedade de um objeto a partir de **fontes de dados** janela no Designer, você pode definir o controle a ser criado.
+Antes de arrastar um item que representa uma coluna ou uma propriedade de um objeto da janela **fontes de dados** para o designer, você pode definir o controle a ser criado.
 
 ### <a name="to-set-the-controls-to-be-created-for-columns-or-properties"></a>Para definir os controles a serem criados para colunas ou propriedades
 
-1. Certifique-se a **WPF** designer ou o **Windows Forms** designer é aberto.
+1. Verifique se o designer do **WPF** ou o designer de **Windows Forms** está aberto.
 
-2. No **fontes de dados** janela, expanda a tabela desejada ou para exibir suas colunas ou propriedades do objeto.
+2. Na janela **fontes de dados** , expanda a tabela ou o objeto desejado para exibir suas colunas ou propriedades.
 
-3. Selecione cada coluna ou propriedade para o qual você deseja definir o controle a ser criado.
+3. Selecione cada coluna ou propriedade para a qual você deseja definir o controle a ser criado.
 
-4. Clique no menu suspenso para a coluna ou propriedade e, em seguida, selecione o controle que você deseja criar quando o item é arrastado para o designer.
+4. Clique no menu suspenso da coluna ou da propriedade e, em seguida, selecione o controle que você deseja criar quando o item for arrastado para o designer.
 
-     A lista de controles disponíveis depende, em que o designer você abriu, qual versão do .NET Framework o projeto está destinado e quais personalizado controles que suportam dados de associação que você adicionou à **caixa de ferramentas**. Se o controle que você deseja criar estiver na lista de controles disponíveis, você pode adicionar o controle à lista. Para obter mais informações, consulte [adicionar controles personalizados à janela fontes de dados](../data-tools/add-custom-controls-to-the-data-sources-window.md).
+     A lista de controles disponíveis depende de qual designer você abriu, qual versão do .NET seu projeto tem como destino e quais controles personalizados oferecem suporte à ligação de dados que você adicionou à **caixa de ferramentas**. Se o controle que você deseja criar estiver na lista de controles disponíveis, você poderá adicionar o controle à lista. Para obter mais informações, consulte [Adicionar controles personalizados à janela fontes de dados](../data-tools/add-custom-controls-to-the-data-sources-window.md).
 
-     Para saber como criar um controle personalizado que pode ser adicionado à lista de controles para colunas de dados ou as propriedades na **fontes de dados** janela, consulte [criar um controle de usuário do Windows Forms que dá suporte à vinculação de dados simples](../data-tools/create-a-windows-forms-user-control-that-supports-simple-data-binding.md).
+     Para saber como criar um controle personalizado que pode ser adicionado à lista de controles para colunas de dados ou propriedades na janela **fontes de dados** , consulte [criar um Windows Forms controle de usuário que dá suporte à vinculação de dados simples](../data-tools/create-a-windows-forms-user-control-that-supports-simple-data-binding.md).
 
-     Se você não quiser criar um controle para a propriedade ou coluna, selecione **None** no menu suspenso. Isso é útil se você deseja arrastar a tabela pai ou o objeto para o designer, mas você não deseja incluir a propriedade ou coluna específica.
+     Se você não quiser criar um controle para a coluna ou propriedade, selecione **nenhum** no menu suspenso. Isso será útil se você quiser arrastar a tabela ou o objeto pai para o designer, mas não desejar incluir a coluna ou propriedade específica.
 
 ## <a name="see-also"></a>Consulte também
 

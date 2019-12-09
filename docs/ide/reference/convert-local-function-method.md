@@ -5,24 +5,20 @@ ms.topic: reference
 author: kendrahavens
 ms.author: kehavens
 manager: jillfra
-dev_langs:
-- CSharp
-- VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: a580077528c87e62f81e840ed6dee76ff1eac57f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 3572682fe68d9b0b1bc4adee537de5cd056a8906
+ms.sourcegitcommit: 9a3972eb85de5443ac2bc03964c5a251c39b2921
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62968259"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "71301688"
 ---
 # <a name="convert-a-local-function-to-a-method"></a>Converter uma função local em um método
 
 Esta refatoração aplica-se a:
 
 - C#
-- Visual Basic
 
 **O quê:** converter uma função local em um método.
 
@@ -36,7 +32,7 @@ Esta refatoração aplica-se a:
 
     ![Converter uma função local em um exemplo de código de método](media/convert-local-function-to-method.png)
 
-2. Pressione **Ctrl**+**.** para acionar o menu **Ações e Refatorações Rápidas**.
+2. Pressione **Ctrl**+ **.** para acionar o menu **Ações e Refatorações Rápidas**.
 
     ![Converter uma função local em um exemplo de correção de código de método](media/convert-local-function-to-method-codefix.png)
 
@@ -47,4 +43,4 @@ Esta refatoração aplica-se a:
 ## <a name="see-also"></a>Consulte também
 
 - [Refatoração](../refactoring-in-visual-studio.md)
-- [Dicas para desenvolvedores de .NET](../../ide/visual-studio-2017-for-dotnet-developers.md)
+- [Dicas para desenvolvedores de .NET](../csharp-developer-productivity.md)

@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugField::GetInfo method
 ms.assetid: 7d508200-89ce-400f-a8ea-f28e7610cb2b
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 96ce3c428785bd6b817cb8ce0f97f14a87180d0c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 53c0de1b956202f95b4995855ec5bdda0ebe59d3
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62873896"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352622"
 ---
 # <a name="idebugfieldgetinfo"></a>IDebugField::GetInfo
 Esse método obtém informações que pode ser exibidas sobre o campo.
@@ -38,14 +41,12 @@ int GetInfo(
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `dwFields`
+## <a name="parameters"></a>Parâmetros
+`dwFields`\
+[in] Uma combinação de [FIELD_INFO_FIELDS](../../../extensibility/debugger/reference/field-info-fields.md) constantes que seleciona as informações a serem exibidos. Se o campo representa um símbolo, normalmente é o nome do símbolo e o tipo.
 
- [in] Uma combinação de [FIELD_INFO_FIELDS](../../../extensibility/debugger/reference/field-info-fields.md) constantes que seleciona as informações a serem exibidos. Se o campo representa um símbolo, normalmente é o nome do símbolo e o tipo.
-
- `pFieldInfo`
-
- [out] Retorna as informações no fornecido [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md) estrutura.
+`pFieldInfo`\
+[out] Retorna as informações no fornecido [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md) estrutura.
 
 ## <a name="return-value"></a>Valor de retorno
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.

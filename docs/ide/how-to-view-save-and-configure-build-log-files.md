@@ -1,20 +1,20 @@
 ---
 title: 'Como: exibir, salvar e configurar arquivos de log de build | Microsoft Docs'
-ms.date: 11/04/2016
+ms.date: 08/28/2019
 ms.technology: vs-ide-compile
 ms.topic: conceptual
 ms.assetid: 75d38b76-26d6-4f43-bbe7-cbacd7cc81e7
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e40f414b3b3ea6bc151ef036deb0b5d80464ba46
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 1fe1932930c869e3d4d3d74eb641da068e1cffec
+ms.sourcegitcommit: 3cda0d58c5cf1985122b8977b33a171c7359f324
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62429139"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70154808"
 ---
 # <a name="how-to-view-save-and-configure-build-log-files"></a>Como: Exibir, salvar e configurar arquivos de log de build
 
@@ -42,6 +42,8 @@ Se você compilar qualquer tipo de projeto usando o MSBuild, é possível criar 
 
    O Visual Studio solicitará um local para salvar a saída de build.
 
+Você também pode gerar logs executando o MSBuild diretamente na linha de comando, usando a opção de linha de comando `-fileLogger` (`-fl`). Confira [Obter logs de build com o MSBuild](../msbuild/obtaining-build-logs-with-msbuild.md).
+
 ## <a name="to-change-the-amount-of-information-included-in-the-build-log"></a>Para alterar a quantidade de informações incluídas no log de build
 
 1. Na barra de menus, escolha **Ferramentas** > **Opções**.
@@ -50,7 +52,7 @@ Se você compilar qualquer tipo de projeto usando o MSBuild, é possível criar 
 
 3. Na lista **Detalhamento da saída de build do projeto no MSBuild**, escolha um dos seguintes valores e, em seguida, escolha o botão **OK**.
 
-    |Nível de detalhes|Descrição|
+    |Nível de detalhes|DESCRIÇÃO|
     | - |-----------------|
     |**Silencioso**|Exibe apenas um resumo do build.|
     |**Mínima**|Exibe um resumo do build e dos erros, avisos e mensagens categorizadas como altamente importantes.|
@@ -63,8 +65,11 @@ Se você compilar qualquer tipo de projeto usando o MSBuild, é possível criar 
     > [!IMPORTANT]
     > É necessário recompilar o projeto para que suas alterações entrem em vigor na Janela de **Saída** (todos os projetos) e no arquivo *\<NomeDoProjeto>.txt* (apenas projetos C++).
 
+## <a name="use-binary-logs-to-make-it-easier-to-browse-large-log-files"></a>Usar logs binários para facilitar a navegação em arquivos de log grandes
+
+Logs binários são um recurso opcional para projetos do .NET que proporcionam uma experiência de navegação de log mais rica que pode facilitar a localização de informações em logs grandes. Para usar logs binários, instale as [Ferramentas do Sistema para Projetos](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.ProjectSystemTools). Saiba mais em [https://msbuildlog.com](https://msbuildlog.com) e [Log binário](https://github.com/microsoft/msbuild/blob/master/documentation/wiki/Binary-Log.md)
+
 ## <a name="see-also"></a>Consulte também
 
-- [Obter logs de build](../msbuild/obtaining-build-logs-with-msbuild.md)
 - [Criar e limpar projetos e soluções no Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)
 - [Compilação e build](../ide/compiling-and-building-in-visual-studio.md)

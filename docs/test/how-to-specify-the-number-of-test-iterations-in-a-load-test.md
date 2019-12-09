@@ -6,19 +6,19 @@ helpviewer_keywords:
 - load tests, properties
 - load tests, run settings
 ms.assetid: 45a625db-b3e7-4d64-beda-b9a76248096d
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 0d66b7f15bd1fb988c82cea934973e15cb4c6fe2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: aa5de5f7f9c1bfef78ad3698886e8d7af43a4812
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62970699"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653392"
 ---
-# <a name="how-to-specify-the-number-of-test-iterations-in-a-load-test-run-setting"></a>Como: Especificar o número de iterações de teste em uma configuração de execução de teste de carga
+# <a name="how-to-specify-the-number-of-test-iterations-in-a-load-test-run-setting"></a>Como especificar o número de iterações de teste em uma configuração de execução de teste de carga
 
-Depois de criar seu teste de carga com o **Novo Assistente de Teste de Carga**, você poderá usar o **Editor de Teste de Carga** para alterar as propriedades de cenários para que eles atendam às suas metas e necessidades de teste. Para obter mais informações, confira [Passo a passo: Criar e executar um teste de carga](../test/walkthrough-create-and-run-a-load-test.md).
+Depois de criar seu teste de carga com o **Novo Assistente de Teste de Carga**, você poderá usar o **Editor de Teste de Carga** para alterar as propriedades de cenários para que eles atendam às suas metas e necessidades de teste. Para obter mais informações, consulte [Passo a passo: criar e executar um teste de carga](../test/walkthrough-create-and-run-a-load-test.md).
 
 Usando o **Editor de Teste de Carga**, você pode editar a propriedade **Iterações do Teste** de um valor das configurações de execução na janela **Propriedades**. A propriedade **Iterações de teste** especifica o número de iterações a serem executadas em todos os testes de unidade e desempenho Web em todos os cenários em um teste de carga usando o **Editor de Teste de Carga**.
 

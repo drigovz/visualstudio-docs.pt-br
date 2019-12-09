@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d2c20f25b005e738769d1c8663387f0a427e5dd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 713e7319618b42e2cdc4b8c0951bd79c225ac1b6
+ms.sourcegitcommit: f9f389e72787de30eb869a55ef7725a10a4011f0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62840880"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73636582"
 ---
 # <a name="first-look-at-the-visual-studio-ide"></a>Introdução ao IDE do Visual Studio
 
@@ -27,7 +27,7 @@ Se você ainda não tiver instalado o Visual Studio, acesse a página [Downloads
 
 ::: moniker range="vs-2019"
 
-Se você ainda não tiver instalado o Visual Studio, acesse a página [Downloads do Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) para instalá-lo gratuitamente.
+Se você ainda não tiver instalado o Visual Studio, acesse a página [Downloads do Visual Studio](https://visualstudio.microsoft.com/downloads) para instalá-lo gratuitamente.
 
 ::: moniker-end
 
@@ -37,7 +37,7 @@ Se você ainda não tiver instalado o Visual Studio, acesse a página [Downloads
 
 A primeira coisa que você verá depois de iniciar o Visual Studio é a janela de início. A janela de início foi projetada para ajudar você a "acessar o código" mais rapidamente. Ela tem opções para fechar o código ou fazer check-out dele, abrir um projeto ou uma solução existente, criar um projeto ou simplesmente abrir uma pasta que contenha alguns arquivos de código.
 
-[![](media/vs-2019/start-window.png "A janela de início no Visual Studio 2019")](media/vs-2019/start-window.png)
+[![A janela de início no Visual Studio 2019](media/vs-2019/start-window.png)](media/vs-2019/start-window.png)
 
 Se essa for a primeira vez que você estiver usando o Visual Studio, sua lista de projetos recentes estará vazia.
 
@@ -90,7 +90,7 @@ Para continuar explorando os recursos do Visual Studio, vamos criar um projeto.
 1. Na caixa de diálogo **Novo Projeto** exibida, aceite o nome de projeto padrão e escolha **OK**.
 ::: moniker-end
 
-   O projeto é criado e um arquivo chamado *server.cs* é aberto na janela **Editor**. O **Editor** mostra o conteúdo dos arquivos e é onde você fará a maior parte do trabalho de codificação no Visual Studio.
+   O projeto é criado e um arquivo chamado *Server. js* é aberto na janela do **Editor** . O **Editor** mostra o conteúdo dos arquivos e é onde você fará a maior parte do trabalho de codificação no Visual Studio.
 
    ![Editor no Visual Studio](media/editor.png)
 

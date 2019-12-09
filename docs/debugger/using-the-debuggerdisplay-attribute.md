@@ -12,34 +12,35 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: af666497deb20f3c2d9125b4beb452f24cabbbd2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: dc2abb054a0e09d0715e708cc4d1d6fcbed476e0
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62929614"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72728673"
 ---
-# <a name="tell-the-debugger-what-to-show-using-the-debuggerdisplay-attribute-c-visual-basic-f-ccli"></a>Instruir o depurador o que mostram como usar o atributo DebuggerDisplay (C#, Visual Basic, F#, C++/CLI)
-O <xref:System.Diagnostics.DebuggerDisplayAttribute> controla como um objeto, propriedade ou campo é exibido nas janelas de variáveis do depurador. Esse atributo pode ser aplicado a assemblies, delegados, propriedades, campos e tipos.
+# <a name="tell-the-debugger-what-to-show-using-the-debuggerdisplay-attribute-c-visual-basic-f-ccli"></a>Diga ao depurador o que mostrar usando o atributo DebuggerDisplay (C#, Visual Basic, F#, C++/CLI)
 
-O atributo `DebuggerDisplay` tem um único argumento, que é uma cadeia de caracteres a ser exibida na coluna de valor para instâncias do tipo. Essa cadeia de caracteres pode conter chaves (`{` e `}`). Texto dentro de um par de chaves é avaliado como um campo, propriedade ou método.
+O <xref:System.Diagnostics.DebuggerDisplayAttribute> controla como um objeto, propriedade ou campo é exibido nas janelas da variável do depurador. Esse atributo pode ser aplicado a tipos, delegados, propriedades, campos e assemblies. Se aplicado a um tipo base, o atributo também se aplicará a uma subclasse.
 
-Se uma classe tiver um substituída `ToString()` método, o depurador usa o método substituído em vez do padrão `{<typeName>}`. Portanto, se você tiver substituído o `ToString()` método, o depurador usa o método substituído em vez do padrão`{<typeName>}`, e você não precisará usar `DebuggerDisplay`. Se você usar ambos, o `DebuggerDisplay` atributo tem precedência sobre as substituído `ToString()` método.
+O atributo `DebuggerDisplay` tem um único argumento, que é uma cadeia de caracteres a ser exibida na coluna de valor para instâncias do tipo. Essa cadeia de caracteres pode conter chaves (`{` e `}`). O texto dentro de um par de chaves é avaliado como um campo, propriedade ou método.
 
-Se o depurador avalia nesse implícita `ToString()` chamada depende de uma configuração de usuário na **Ferramentas / opções / depuração** caixa de diálogo. O Visual Basic não implementa esta avaliação de `ToString()` implícita.
+Se uma classe tiver um método `ToString()` substituído, o depurador usará o método substituído em vez do `{<typeName>}` padrão. Portanto, se você tiver substituído o método `ToString()`, o depurador usará o método substituído em vez do `{<typeName>}` padrão, e você não precisará usar `DebuggerDisplay`. Se você usar ambos, o atributo `DebuggerDisplay` terá precedência sobre o método substituído `ToString()`. O atributo `DebuggerDisplay` também tem precedência sobre o método substituído `ToString()` em uma subclasse.
+
+Se o depurador avalia essa chamada implícita `ToString()` depende de uma configuração de usuário na caixa de diálogo **ferramentas/opções/depuração** . O Visual Basic não implementa esta avaliação de `ToString()` implícita.
 
 > [!IMPORTANT]
-> Se o **Mostrar estrutura bruta de objetos nas janelas de variáveis** caixa de seleção é marcada na **Ferramentas/opções / depuração** caixa de diálogo, em seguida, a `DebuggerDisplay` atributo é ignorado.
+> Se a caixa de seleção **Mostrar estrutura bruta de objetos em variáveis do Windows** estiver marcada na caixa de diálogo **ferramentas/opts/Debugging** , o atributo `DebuggerDisplay` será ignorado.
 
 > [!NOTE]
-> Para código nativo, esse atributo é suportado apenas no C++código /CLI.
+> Para código nativo, esse atributo tem suporte apenas no C++código/CLI.
 
 A tabela a seguir mostra alguns usos possíveis do atributo `DebuggerDisplay` e saídas de exemplo.
 
 |Atributo|Saída aparecendo na coluna Valor|
 |---------------| - |
 |`[DebuggerDisplay("x = {x} y = {y}")]`<br /><br /> Usado em um tipo com campos `x` e `y`.|`x = 5 y = 18`|
-|`[DebuggerDisplay("String value is {getString()}")]`A sintaxe de parâmetro pode variar entre linguagens. Em virtude disso, use com cuidado.|`String value is [5, 6, 6]`|
+|A sintaxe do parâmetro `[DebuggerDisplay("String value is {getString()}")]`pode variar entre linguagens. Em virtude disso, use com cuidado.|`String value is [5, 6, 6]`|
 
 `DebuggerDisplay` também pode aceitar parâmetros nomeados.
 
@@ -48,16 +49,16 @@ A tabela a seguir mostra alguns usos possíveis do atributo `DebuggerDisplay` e 
 |`Name`, `Type`|Esses parâmetros afetam as colunas **Nome** e **Tipo** das janelas variáveis. (Podem ser definidos como cadeias de caracteres usando a mesma sintaxe que o construtor.) Usar esses parâmetros demais ou usá-los incorretamente pode causar uma saída confusa.|
 |`Target`, `TargetTypeName`|Especifica o tipo de destino quando o atributo é usado no nível de assembly.|
 
-O arquivo autoexp.cs usa o atributo DebuggerDisplay no nível do assembly. O arquivo autoexp.cs determina as expansões padrão que o Visual Studio usa para objetos do .NET. Você pode examinar o arquivo autoexp.cs para obter exemplos de como usar o atributo DebuggerDisplay, ou você pode modificar e compilar o arquivo autoexp.cs para alterar as expansões padrão. Faça backup do arquivo autoexp.cs antes de modificá-lo.
+O arquivo autoexp.cs usa o atributo DebuggerDisplay no nível do assembly. O arquivo autoexp.cs determina as expansões padrão que o Visual Studio usa para objetos .NET. Você pode examinar o arquivo autoexp.cs para obter exemplos de como usar o atributo DebuggerDisplay ou pode modificar e compilar o arquivo autoexp.cs para alterar as expansões padrão. Faça backup do arquivo autoexp.cs antes de modificá-lo.
 
-Para compilar autoexp.cs, abra o backup de um Prompt de comando do desenvolvedor para VS2015 e execute os seguintes comandos
+Para criar o autoexp.cs, abra um Prompt de Comando do Desenvolvedor para VS2015 e execute os comandos a seguir
 
 ```cmd
 cd <directory containing autoexp.cs>
 csc /t:library autoexp.cs
 ```
 
-As alterações para autoexp.dll serão captadas na próxima sessão de depuração.
+As alterações em autoexp. dll serão selecionadas na próxima sessão de depuração.
 
 ## <a name="using-expressions-in-debuggerdisplay"></a>Usando expressões em DebuggerDisplay
 Embora você possa usar uma expressão geral entre as chaves em um atributo DebuggerDisplay, esta prática não é recomendada.
@@ -90,12 +91,12 @@ public sealed class MyClass
 }
 ```
 
-O ", nq" sufixo informa o avaliador de expressão para remover as aspas ao exibir o valor final (nq = sem aspas).
+O sufixo ", NQ" informa o avaliador de expressão para remover as aspas ao exibir o valor final (NQ = sem aspas).
 
 ## <a name="example"></a>Exemplo
 O exemplo de código a seguir mostra como usar `DebuggerDisplay` junto com `DebuggerBrowseable` e `DebuggerTypeProxy`. Quando exibido em uma janela variáveis de depurador, como, por exemplo, a janela **Inspeção**, ele produz uma expansão semelhante ao seguinte:
 
-|**Nome**|**Valor**|**Tipo**|
+|**Nome**|**Value**|**Tipo**|
 |--------------|---------------|--------------|
 |Chave|"three"|object {string}|
 |Valor|3|object {int}|
@@ -181,6 +182,6 @@ class MyHashtable
 ## <a name="see-also"></a>Consulte também
 
 - [Usando o atributo DebuggerTypeProxy](../debugger/using-debuggertypeproxy-attribute.md)
-- [Criar exibições personalizadas de objetos gerenciados](../debugger/create-custom-views-of-dot-managed-objects.md)
+- [Criar exibições personalizadas de objetos gerenciados](../debugger/create-custom-views-of-managed-objects.md)
 - [Especificadores de formato em C#](../debugger/format-specifiers-in-csharp.md)
 - [Aprimorando a depuração com os atributos de exibição do depurador](/dotnet/framework/debug-trace-profile/enhancing-debugging-with-the-debugger-display-attributes)

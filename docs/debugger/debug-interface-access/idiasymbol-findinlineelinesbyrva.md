@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bdcb85db51a3fcfca434af9d39bc88587a0e5cdc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 737bc647cf3f5b64bdd8c48f7c827e8ef86a1386
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62831751"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741202"
 ---
 # <a name="idiasymbolfindinlineelinesbyrva"></a>IDiaSymbol::findInlineeLinesByRVA
-Recupera uma enumeração que permite que um cliente iterar por meio das informações de número de linha de todas as funções que são embutidas, diretamente ou indiretamente, nesse símbolo no endereço relativo virtual (RVA) especificado.
+Recupera uma enumeração que permite que um cliente itere pelas informações de número de linha de todas as funções que são embutidas, direta ou indiretamente, neste símbolo dentro do RVA (endereço virtual relativo) especificado.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -31,17 +31,17 @@ HRESULT findInlineeLinesByRVA (    DWORD                 rva,   DWORD          
 #### <a name="parameters"></a>Parâmetros
  `rva`
 
-[in] Especifica o endereço como um RVA.
+no Especifica o endereço como um RVA.
 
  `length`
 
-[in] Especifica o intervalo de endereços, no número de bytes, para cobrir com essa consulta.
+no Especifica o intervalo de endereços, em número de bytes, a ser abordado com essa consulta.
 
  `ppResult`
 
-[out] Mantém um `IDiaEnumLineNumbers` objeto que contém a lista de números de linha são recuperadas.
+fora Mantém um objeto `IDiaEnumLineNumbers` que contém a lista de números de linha recuperados.
 
-## <a name="return-value"></a>Valor de retorno
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
 
 ## <a name="see-also"></a>Consulte também

@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 98826ec691efdca70a9d0ca98b089904b2ed0c48
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 103d83e3b305e13720b7673dae89f942eb2f692d
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839779"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743112"
 ---
-# <a name="idialinenumbergetvirtualaddress"></a>IDiaLineNumber::get_virtualAddress
+# <a name="idialinenumberget_virtualaddress"></a>IDiaLineNumber::get_virtualAddress
 Recupera o endereço virtual (VA) do bloco.
 
 ## <a name="syntax"></a>Sintaxe
@@ -33,10 +33,10 @@ HRESULT get_virtualAddress ( 
 #### <a name="parameters"></a>Parâmetros
  `pRetVal`
 
-[out] Retorna o endereço virtual do bloco.
+fora Retorna o endereço virtual do bloco.
 
-## <a name="return-value"></a>Valor de retorno
- Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não há suporte para essa propriedade. Caso contrário, retornará um código de erro.
+## <a name="return-value"></a>Valor retornado
+ Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não houver suporte para essa propriedade. Caso contrário, retornará um código de erro.
 
 ## <a name="see-also"></a>Consulte também
 - [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

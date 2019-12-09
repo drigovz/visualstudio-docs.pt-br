@@ -12,12 +12,12 @@ ms.assetid: e458cd02-2370-4435-8953-17d7a60ce152
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 46375c0b30ca563afc600d810dd27dc22882a71f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e4ece720cf6880bba528dee99cdbdeb25c10087a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58927394"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674126"
 ---
 # <a name="idebugportsupplier3"></a>IDebugPortSupplier3
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ IDebugPortSupplier3 : IDebugPortSupplier2
  Um fornecedor de porta personalizada implementa essa interface para dar suporte a persistir ou salvar informações de porta para o disco. Esta interface deve ser implementada no mesmo objeto como o [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md) interface.  
   
 ## <a name="notes-for-callers"></a>Observações para chamadores  
- Chame [QueryInterface](http://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) sobre o `IDebugPortSupplier2` interface para obter essa interface.  
+ Chame [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) sobre o `IDebugPortSupplier2` interface para obter essa interface.  
   
 ## <a name="methods-in-vtable-order"></a>Métodos na ordem de Vtable  
  Além dos métodos herdados do [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md) interface, essa interface dá suporte para o seguinte:  

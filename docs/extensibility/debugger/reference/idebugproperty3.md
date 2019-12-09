@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProperty3 interface
 ms.assetid: 8f9be68d-4490-4eca-8f6b-8a10ed77e226
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e73310d8a1cff3b640896d9bb5883cf2508bda6e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8581e8163ab95eac7d49c5deca70c339804aac64
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62869315"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66348697"
 ---
 # <a name="idebugproperty3"></a>IDebugProperty3
 Essa interface oferece suporte para:

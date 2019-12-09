@@ -20,19 +20,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d396d56aea8be3724078223261a3b6eb8835692
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 00d64b060b340302107ddffaf1d69cad802a283b
+ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445371"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70913281"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Integração com o Visual Studio (MSBuild)
 O Visual Studio hospeda o [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] para carregar e compilar projetos gerenciados. Como [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] é responsável pelo projeto, quase todo projeto que estiver no formato [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] poderá ser utilizado com êxito no [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], mesmo se o projeto tiver sido criado por meio de uma ferramenta diferente e tenha um processo de build personalizado.
 
  Este artigo descreve aspectos específicos da hospedagem do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pelo [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] que devem ser considerados ao personalizar projetos e arquivos *.targets* que serão carregados e compilados em [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Isso ajudará a certificar recursos [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], como o IntelliSense e a depuração de trabalho no projeto personalizado.
 
- Para saber mais sobre projetos C++, confira [Arquivos de projeto](/cpp/ide/project-files).
+ Para saber mais sobre projetos C++, confira [Arquivos de projeto](/cpp/build/reference/project-files).
 
 ## <a name="project-file-name-extensions"></a>Extensões de nome do arquivo de projeto
  O *MSBuild.exe* reconhece extensões de nome de arquivo de projeto que correspondem ao padrão *.\*proj*. No entanto, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] reconhece somente um subconjunto dessas extensões de nome de arquivo de projeto, o que determina o sistema de projeto específico a um idioma que carregará o projeto. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] não tem um [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] com neutralidade de idioma baseado no sistema de projeto.
@@ -133,9 +133,9 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 
 1. No **Gerenciador de Soluções**, abra o menu de atalho do projeto e, em seguida, escolha **Descarregar Projeto**.
 
-     O projeto está marcado como **(indisponível)**.
+     O projeto está marcado como **(indisponível)** .
 
-2. No **Gerenciador de Soluções**, abra o menu de atalho do projeto indisponível e, em seguida, escolha **Editar \<Arquivo de Projeto>**.
+2. No **Gerenciador de Soluções**, abra o menu de atalho do projeto indisponível e, em seguida, escolha **Editar \<Arquivo de Projeto>** .
 
      O arquivo de projeto será aberto no Editor de XML do Visual Studio.
 
@@ -165,7 +165,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 
   - `OriginalItemSpec`, que contém a especificação de item original da referência.
 
-  - `ResolvedFrom`, definido como “{TargetFrameworkDirectory}” se tiver sido resolvido do diretório [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].
+  - `ResolvedFrom`, definido como "{TargetFrameworkDirectory}" se ele tiver sido resolvido por meio do diretório do .NET Framework.
 
 - Referências COM:
 
@@ -176,7 +176,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
    O sistema de projeto chama um destino com o nome conhecido `ResolveNativeReferences`. Esse destino deve produzir itens com o nome de tipo de item `NativeReferenceFile`. Os itens devem ter todos os metadados dos itens de entrada aprovados, além de uma nova parte de metadados com o nome `OriginalItemSpec`, que contém a especificação de item original da referência.
 
 ## <a name="performance-shortcuts"></a>Atalhos de desempenho
- Se a depuração for iniciada na interface do usuário do Visual Studio (pela tecla F5 ou pela escolha de **Depurar** > **Iniciar Depuração** na barra de menus), o processo de build usará uma rápida verificação de atualização para melhorar o desempenho. Em alguns casos nos quais builds personalizados criam arquivos que, por sua vez, são compilados, a verificação de atualização rápida não identificará os arquivos alterados corretamente. Projetos que precisam de verificações de atualização mais completas podem desligue a verificação rápida configurando a variável de ambiente `DISABLEFASTUPTODATECHECK=1`. Como alternativa, os projetos podem definir isso como uma propriedade de MSBuild no projeto ou em um arquivo importado pelo projeto.
+ Se você usar o IDE do Visual Studio para iniciar a depuração (escolhendo a tecla F5 ou escolhendo **depurar** > **Iniciar Depuração** na barra de menus) ou para compilar seu projeto (por exemplo, **criar** > **solução de compilação** ), o processo de compilação usa uma verificação de atualização rápida para melhorar o desempenho. Em alguns casos nos quais builds personalizados criam arquivos que, por sua vez, são compilados, a verificação de atualização rápida não identificará os arquivos alterados corretamente. Projetos que precisam de verificações de atualização mais completas podem desligue a verificação rápida configurando a variável de ambiente `DISABLEFASTUPTODATECHECK=1`. Como alternativa, os projetos podem definir isso como uma propriedade de MSBuild no projeto ou em um arquivo importado pelo projeto.
 
  A atualização rápida não se aplica a builds regulares no Visual Studio e o projeto será compilado como se o build tivesse sido invocado por meio do prompt de comando.
 

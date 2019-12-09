@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugCoreServer3::EnableAutoAttach
 ms.assetid: 06aa633b-263b-4e08-8844-9a52d5120b94
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e6c1bf5f210d9b37b35d43a393a25b1c9df44a7e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 9eb8beed7f32e9c6fb64212f73a41a35544259bb
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62875868"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66326981"
 ---
 # <a name="idebugcoreserver3enableautoattach"></a>IDebugCoreServer3::EnableAutoAttach
 Permite que a anexação automática para os mecanismos de depuração especificada.
@@ -42,22 +45,18 @@ int EnableAutoAttach(
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `rgguidSpecificEngines`
+## <a name="parameters"></a>Parâmetros
+`rgguidSpecificEngines`\
+[in] Matriz de GUIDs para cada mecanismo de depuração para marcar como anexação automática.
 
- [in] Matriz de GUIDs para cada mecanismo de depuração para marcar como anexação automática.
+`celtSpecificEngines`\
+[in] O número de mecanismos especificado em `rgguidSpecificEngines`.
 
- `celtSpecificEngines`
+`pszStartPageUrl`\
+[in] A URL inicial para usar ao anexar a automática.
 
- [in] O número de mecanismos especificado em `rgguidSpecificEngines`.
-
- `pszStartPageUrl`
-
- [in] A URL inicial para usar ao anexar a automática.
-
- `pbstrSessionID`
-
- [out] ID da sessão que foi anexado automaticamente.
+`pbstrSessionID`\
+[out] ID da sessão que foi anexado automaticamente.
 
 ## <a name="return-value"></a>Valor de retorno
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retornará o código de erro. Um código de erro é `E_AUTO_ATTACH_NOT_REGISTERED`, que indica se a fábrica de classes auto-attach não foi registrada.

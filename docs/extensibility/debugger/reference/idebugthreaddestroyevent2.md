@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugThreadDestroyEvent2
 ms.assetid: fca3f603-9432-457b-9ddd-8b0ec17da046
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7fc94a1289f8b65798f5ad0dab1b4e82bf76b533
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b7d0d2990c5286a277164d58e74ec2d96fa176e7
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62915378"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66319989"
 ---
 # <a name="idebugthreaddestroyevent2"></a>IDebugThreadDestroyEvent2
 Essa interface é enviada pelo mecanismo de depuração (DE) para o Gerenciador de sessão de depuração (SDM) quando um thread tenha executado até a conclusão.

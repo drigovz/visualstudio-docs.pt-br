@@ -1,5 +1,5 @@
 ---
-title: IScriptNode::GetCookie | Microsoft Docs
+title: 'IScriptNode:: GetCookie | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b05d184af3ecd6302fc05893600fd7026eeca3ad
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 91428ca617c5c9e7b2bf88fc9c405f1d1610de1a
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62787046"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572223"
 ---
 # <a name="iscriptnodegetcookie"></a>IScriptNode::GetCookie
-Retorna um valor definido pelo aplicativo que é usado para associar um scriptlet com o objeto de host.  
+Retorna um valor definido pelo aplicativo que é usado para associar um Scriptlet ao objeto de host.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -37,11 +37,11 @@ HRESULT GetCookie(
   
 #### <a name="parameters"></a>Parâmetros  
  `pdwCookie`  
- [out] Para um `IScriptEntry` de objeto, retorna o valor do cookie definido pelo aplicativo.  
+ fora Para um objeto `IScriptEntry`, retorna o valor do cookie definido pelo aplicativo.  
   
- Para um `IScriptNode` objeto que representa uma página da Web, retornará 0.  
+ Para um objeto `IScriptNode` que representa uma página da Web, retorna 0.  
   
-## <a name="return-value"></a>Valor de retorno  
+## <a name="return-value"></a>Valor retornado  
  Um `HRESULT`. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.  
   
 |Valor|Descrição|  

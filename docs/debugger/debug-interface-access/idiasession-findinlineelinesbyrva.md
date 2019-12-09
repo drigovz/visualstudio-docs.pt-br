@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 900680fe58ab5061d3f8cca07fa1906cf34f7e5b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6cf587d9e369ac32c72df5e1fd7a9005ef417177
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839323"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742201"
 ---
 # <a name="idiasessionfindinlineelinesbyrva"></a>IDiaSession::findInlineeLinesByRVA
-Recupera uma enumeração que permite que um cliente iterar por meio das informações de número de linha de todas as funções que são embutidas, diretamente ou indiretamente, pelo símbolo pai especificado e está contida dentro do endereço relativo virtual (RVA) especificado.
+Recupera uma enumeração que permite que um cliente itere pelas informações de número de linha de todas as funções que são embutidas, direta ou indiretamente, pelo símbolo pai especificado e estão contidas no endereço virtual relativo (RVA) especificado.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -34,21 +34,21 @@ HRESULT findInlineeLinesByRVA ( 
 #### <a name="parameters"></a>Parâmetros
  `parent`
 
-[in] Um `IDiaSymbol` que representa o pai do objeto.
+no Um objeto `IDiaSymbol` que representa o pai.
 
  `rva`
 
-[in] Especifica o endereço como um RVA.
+no Especifica o endereço como um RVA.
 
  `length`
 
-[in] Especifica o intervalo de endereços, no número de bytes, para cobrir com essa consulta.
+no Especifica o intervalo de endereços, em número de bytes, a ser abordado com essa consulta.
 
  `ppResult`
 
-[out] Mantém um `IDiaEnumLineNumbers` objeto que contém a lista de números de linha são recuperadas.
+fora Mantém um objeto `IDiaEnumLineNumbers` que contém a lista de números de linha recuperados.
 
-## <a name="return-value"></a>Valor de retorno
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
 
 ## <a name="see-also"></a>Consulte também

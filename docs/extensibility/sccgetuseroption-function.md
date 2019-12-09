@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccGetUserOption function
 ms.assetid: 17863747-1901-4c53-a2b3-ed996085e120
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8b237ded8ac0d22500986a9d390834147f24a2c6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cd024aa12b263eab7fea4bd80a0e77a3bbad5f1c
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62433182"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72721445"
 ---
 # <a name="sccgetuseroption-function"></a>Função SccGetUserOption
 Essa função recupera uma variedade de opções específicas do usuário.
@@ -35,31 +35,31 @@ SCCRTN SccGetUserOption(
 #### <a name="parameters"></a>Parâmetros
  pContext
 
-[in] O ponteiro de contexto de plug-in de controle do código-fonte.
+no O ponteiro de contexto do plug-in de controle do código-fonte.
 
  nOption
 
-[in] Opção de recuperação (consulte comentários para obter possíveis opções).
+no Opção para recuperar (consulte comentários para as opções possíveis).
 
  lpVal
 
-[out] Valor associado com a opção.
+fora Valor associado à opção.
 
-## <a name="return-value"></a>Valor de retorno
- A implementação de plug-in de controle do código-fonte desta função deve retornar um dos seguintes valores:
+## <a name="return-value"></a>Valor retornado
+ Espera-se que a implementação de plug-in de controle do código-fonte dessa função retorne um dos seguintes valores:
 
 |Valor|Descrição|
 |-----------|-----------------|
-|SCC_OK|Opção foi recuperada com êxito.|
+|SCC_OK|A opção foi recuperada com êxito.|
 |SCC_E_OPNOTSUPPORTED|Não há suporte para a opção.|
 |SCC_E_NONSPECIFICERROR|Ocorreu um erro não especificado.|
 
 ## <a name="remarks"></a>Comentários
- As opções a seguir têm suporte por este comando:
+ As opções a seguir são suportadas por este comando:
 
 |Opção de usuário|Descrição|
 |-----------------|-----------------|
-|`SCC_USEROPT_CHECKOUT_LOCALVER`|Determina se o usuário deseja fazer check-out da versão local dos arquivos. `lpVal` é atribuída `SCC_USEROPT_COLV_YES` (o usuário deseja fazer check-out de arquivos locais) ou `SCC_USEROPT_COLV_NO`.|
+|`SCC_USEROPT_CHECKOUT_LOCALVER`|Determina se o usuário deseja fazer check-out da versão local dos arquivos. `lpVal` é atribuído `SCC_USEROPT_COLV_YES` (o usuário deseja fazer check-out de arquivos locais) ou `SCC_USEROPT_COLV_NO`.|
 
 ## <a name="see-also"></a>Consulte também
 - [Funções de API do plug-in de controle do código-fonte](../extensibility/source-control-plug-in-api-functions.md)

@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramPublisher2::PublishProgram
 ms.assetid: 92ff63f0-e869-4040-b3ae-b2c899e708ff
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bb1553070f9afecf6ce60ac51b94ecb3f05d0eb9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 5d4f0b279bafe5291679237efdaada7907ddc515
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62869714"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66343367"
 ---
 # <a name="idebugprogrampublisher2publishprogram"></a>IDebugProgramPublisher2::PublishProgram
 Esse método faz um programa disponível para mecanismos de depuração (DEs) e o Gerenciador de sessão de depuração.
@@ -40,18 +43,15 @@ int PublishProgram(
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `Engines`
+## <a name="parameters"></a>Parâmetros
+`Engines`\
+[in] Uma matriz de GUIDs para DEs que pode iniciar ou anexar a este programa.
 
- [in] Uma matriz de GUIDs para DEs que pode iniciar ou anexar a este programa.
+`szFriendlyName`\
+[in] Nome amigável para o programa (isso aparece nos menus ou caixas de diálogo apresentadas ao usuário).
 
- `szFriendlyName`
-
- [in] Nome amigável para o programa (isso aparece nos menus ou caixas de diálogo apresentadas ao usuário).
-
- `pDebuggeeInterface`
-
- [in] `IUnknown` interface para o programa (esse valor é usado como um cookie para identificar exclusivamente o programa; esse mesmo valor é usado para "Cancelar a publicação" o programa)
+`pDebuggeeInterface`\
+[in] `IUnknown` interface para o programa (esse valor é usado como um cookie para identificar exclusivamente o programa; esse mesmo valor é usado para "Cancelar a publicação" o programa)
 
 ## <a name="return-value"></a>Valor de retorno
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.

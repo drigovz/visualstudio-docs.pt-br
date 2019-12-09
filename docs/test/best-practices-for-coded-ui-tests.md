@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - coded UI tests, best practices
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ebd05843e5a80f95a6eb30809440e6e5a188d0e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 174059a3b5053602c7f5d21f7b663d0a48bbe709
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62822964"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72665284"
 ---
 # <a name="best-practices-for-coded-ui-tests"></a>Práticas recomendadas para testes de IU codificados
 
@@ -42,11 +42,11 @@ Use as orientações a seguir para criar um teste de IU codificado flexível.
 
 - Se a interface do usuário (IU) for alterada, registre novamente os métodos de teste, os métodos de asserção ou as seções afetadas de um método de teste existente.
 
-- Crie um arquivo <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap> separado para cada módulo em seu aplicativo em teste. Para obter mais informações, confira [Testando um aplicativo grande com vários mapas de interface do usuário](../test/testing-a-large-application-with-multiple-ui-maps.md).
+- Crie um arquivo [UIMap](/previous-versions/dd580454(v=vs.140)) separado para cada módulo em seu aplicativo em teste. Para obter mais informações, confira [Testando um aplicativo grande com vários mapas de interface do usuário](../test/testing-a-large-application-with-multiple-ui-maps.md).
 
 - No aplicativo em teste, use nomes significativos ao criar os controles de interface do usuário. Usar nomes significativos confere mais clareza e usabilidade aos nomes de controle gerados automaticamente.
 
-- Se você estiver criando asserções por meio de codificação com a API, crie um método para cada asserção na parte da classe <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap> que está no arquivo *UIMap.cs*. Para executar a asserção, chame esse método de seu método de teste.
+- Se estiver criando declarações por meio de codificação com a API, crie um método para cada declaração na parte da classe [UIMap](/previous-versions/dd580454(v=vs.140)) que está no arquivo *UIMap.cs*. Para executar a asserção, chame esse método de seu método de teste.
 
 - Se estiver codificando diretamente com a API, use as propriedades e os métodos nas classes geradas no arquivo *UIMap.Designer.cs* do código o tanto quanto for possível. Essas classes tornarão o trabalho mais fácil e confiável e aumentarão a produtividade.
 
@@ -62,11 +62,11 @@ Interfaces do usuário mudam frequentemente durante o desenvolvimento. Aqui est�
 
 - Se um controle tiver uma asserção inválida:
 
-    - Exclua o método que contém a asserção.
+  - Exclua o método que contém a asserção.
 
-    - Remova a chamada para esse método do método de teste.
+  - Remova a chamada para esse método do método de teste.
 
-    - Adicione uma nova asserção arrastando o botão de fios para o controle de interface do usuário, abra o mapa da interface do usuário e adicione a nova asserção.
+  - Adicione uma nova asserção arrastando o botão de fios para o controle de interface do usuário, abra o mapa da interface do usuário e adicione a nova asserção.
 
 Para obter mais informações de como gravar testes de IU codificados, confira [Usar a automação da interface do usuário para testar seu código](../test/use-ui-automation-to-test-your-code.md).
 
@@ -87,7 +87,7 @@ Playback.PlaybackSettings.WaitForReadyLevel = WaitForReadyLevel.UIThreadOnly;
 
 ## <a name="see-also"></a>Consulte também
 
-- <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>
+- [UIMap](/previous-versions/dd580454(v=vs.140))
 - <xref:Microsoft.VisualStudio.TestTools.UITesting>
 - [Usar a automação de interface do usuário para testar seu código](../test/use-ui-automation-to-test-your-code.md)
 - [Criando testes de IU codificados](../test/use-ui-automation-to-test-your-code.md)

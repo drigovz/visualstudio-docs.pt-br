@@ -1,57 +1,60 @@
 ---
-title: Designer de fluxo de trabalho – Designers de atividade do sistema de mensagens
+title: Designers de atividade de Designer de Fluxo de Trabalho mensagens
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 897e63cf-a42f-4edd-876f-c4ccfffaf6d6
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b4156c8125ad6cf3af9f5600ceb2b6c5bc21419
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b58a4c6f369f9a5338365e215805c2379db8d2ba
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63004218"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189743"
 ---
-# <a name="messaging-activity-designers"></a>Designer de atividade de mensagem
+# <a name="messaging-activity-designers"></a>Designers de atividade de mensagens
 
-Designers de atividade de mensagens são usados para criar e configurar as atividades de mensagem que enviam e recebem mensagens do Windows Communication Foundation (WCF) de dentro de um aplicativo do Windows Workflow Foundation (WF). O .NET Framework 4 apresenta cinco atividades de mensagem e o Designer de fluxo de trabalho fornece dois novos designers de modelo que permitem que você gerencie o sistema de mensagens dentro de um fluxo de trabalho. Os tópicos contidos nesta seção e listados na tabela a seguir fornecem orientação sobre como usar a atividade de Designer de fluxo de trabalho e os designers de modelo.
+Os designers de atividade de mensagens são usados para criar e configurar atividades de mensagens que enviam e recebem Windows Communication Foundation (WCF) mensagens de dentro de um aplicativo Windows Workflow Foundation (WF). Cinco atividades de mensagens foram introduzidas no .NET Framework 4. O Designer de Fluxo de Trabalho fornece dois designers de modelo que permitem gerenciar mensagens em um fluxo de trabalho.
 
-## <a name="reference"></a>Referência
- <xref:System.Activities.Activity>
+Os tópicos contidos nesta seção e listados na tabela a seguir fornecem orientação sobre como usar a atividade de Designer de Fluxo de Trabalho e os designers de modelo.
 
- <xref:System.ServiceModel.Activities.CorrelationScope>
+- <xref:System.Activities.Activity>
 
- <xref:System.ServiceModel.Activities.Receive>
+- <xref:System.ServiceModel.Activities.CorrelationScope>
 
- <xref:System.ServiceModel.Activities.Send>
+- <xref:System.ServiceModel.Activities.Receive>
 
- <xref:System.ServiceModel.Activities.ReceiveReply>
+- <xref:System.ServiceModel.Activities.Send>
 
- <xref:System.ServiceModel.Activities.SendReply>
+- <xref:System.ServiceModel.Activities.ReceiveReply>
 
- <xref:System.ServiceModel.Activities.TransactedReceiveScope>
+- <xref:System.ServiceModel.Activities.SendReply>
+
+- <xref:System.ServiceModel.Activities.TransactedReceiveScope>
 
 ## <a name="related-sections"></a>Seções relacionadas
- Para outros tipos de designer de atividade, consulte os seguintes tópicos.
 
- [Fluxo de Controle](../workflow-designer/control-flow-activity-designers.md)
+Para outros tipos de designers de atividade, consulte os seguintes tópicos:
 
- [Usando os designers de atividade](../workflow-designer/using-the-activity-designers.md)
+- [Fluxo de Controle](../workflow-designer/control-flow-activity-designers.md)
 
- [Fluxograma](../workflow-designer/flowchart-activity-designers.md)
+- [Usando os designers de atividade](control-flow-activity-designers.md)
 
- [Tempo de execução](../workflow-designer/runtime-activity-designers.md)
+- [Fluxograma](../workflow-designer/flowchart-activity-designers.md)
 
- [Primitives](../workflow-designer/primitives-activity-designers.md)
+- [Tempo de execução](../workflow-designer/runtime-activity-designers.md)
 
- [Transação](../workflow-designer/transaction-activity-designers.md)
+- [Primitives](../workflow-designer/primitives-activity-designers.md)
 
- [Coleção](../workflow-designer/collection-activity-designers.md)
+- [Transação](../workflow-designer/transaction-activity-designers.md)
 
- [Tratamento de erro](../workflow-designer/error-handling-activity-designers.md)
+- [Coleta](../workflow-designer/collection-activity-designers.md)
+
+- [Tratamento de erro](../workflow-designer/error-handling-activity-designers.md)
 
 ## <a name="external-resources"></a>Recursos externos
- [Usando os designers de atividade](../workflow-designer/using-the-activity-designers.md)
+
+[Usando os designers de atividade](control-flow-activity-designers.md)

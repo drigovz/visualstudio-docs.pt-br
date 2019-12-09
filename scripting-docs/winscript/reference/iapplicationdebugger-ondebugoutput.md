@@ -1,5 +1,5 @@
 ---
-title: IApplicationDebugger::onDebugOutput | Microsoft Docs
+title: 'IApplicationDebugger:: onDebugOutput | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ffe4d56357a96dac8d5155ac2f8bd5182adef47e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5ebbb7fb9f69af2f0977434a29015d79e8cf9178
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62991069"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577856"
 ---
 # <a name="iapplicationdebuggerondebugoutput"></a>IApplicationDebugger::onDebugOutput
 Manipula um evento de saída de depuração.  
@@ -37,9 +37,9 @@ HRESULT onDebugOutput(
   
 #### <a name="parameters"></a>Parâmetros  
  `pstr`  
- [in] Cadeia de caracteres para exibir no depurador.  
+ no Cadeia de caracteres a ser exibida no depurador.  
   
-## <a name="return-value"></a>Valor de retorno  
+## <a name="return-value"></a>Valor retornado  
  O método retorna um `HRESULT`. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.  
   
 |Valor|Descrição|  
@@ -47,10 +47,10 @@ HRESULT onDebugOutput(
 |`S_OK`|O método foi bem-sucedido.|  
   
 ## <a name="remarks"></a>Comentários  
- O depurador exibe normalmente `pstr` em uma janela de saída.  
+ O depurador normalmente exibe `pstr` em uma janela de saída.  
   
  Esse método é chamado quando `IDebugApplication::DebugOutput` é chamado.  
   
 ## <a name="see-also"></a>Consulte também  
- [Interface IApplicationDebugger](../../winscript/reference/iapplicationdebugger-interface.md)   
+ @No__t_1 de [interface IApplicationDebugger](../../winscript/reference/iapplicationdebugger-interface.md)  
  [IDebugApplication::DebugOutput](../../winscript/reference/idebugapplication-debugoutput.md)

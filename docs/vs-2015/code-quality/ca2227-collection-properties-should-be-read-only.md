@@ -1,5 +1,5 @@
 ---
-title: 'CA2227: Propriedades de coleção devem ser somente leitura | Microsoft Docs'
+title: 'CA2227: as propriedades da coleção devem ser somente leitura | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,46 +12,46 @@ helpviewer_keywords:
 - CollectionPropertiesShouldBeReadOnly
 ms.assetid: 26967aaf-6fbe-438a-b4d3-ac579b5dc0f9
 caps.latest.revision: 19
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 3182a254ed5e22c560523911f87dc852708a9eb1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8aee6f7172414de809d964652411c1f077fe0cdd
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58927097"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72658866"
 ---
-# <a name="ca2227-collection-properties-should-be-read-only"></a>CA2227: Propriedades de coleção devem ser somente leitura
+# <a name="ca2227-collection-properties-should-be-read-only"></a>CA2227: as propriedades de coleção devem ser somente leitura
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |NomeDoTipo|CollectionPropertiesShouldBeReadOnly|
 |CheckId|CA2227|
-|Categoria|Microsoft.Usage|
+|Categoria|Microsoft. Usage|
 |Alteração Significativa|Quebra|
 
 ## <a name="cause"></a>Causa
- Uma propriedade gravável visível externamente é um tipo que implementa <xref:System.Collections.ICollection?displayProperty=fullName>. Matrizes, indexadores (propriedades com o nome 'Item') e conjuntos de permissões são ignorados pela regra.
+ Uma propriedade gravável externamente visível é um tipo que implementa <xref:System.Collections.ICollection?displayProperty=fullName>. Matrizes, indexadores (Propriedades com o nome ' item ') e conjuntos de permissões são ignorados pela regra.
 
 ## <a name="rule-description"></a>Descrição da Regra
- Uma propriedade collection gravável permite que um usuário substituir a coleção com uma coleção completamente diferente. Uma propriedade somente leitura evita que a coleção seja substituída, mas ainda permite que membros individuais sejam definidos. Se substituir a coleção é uma meta, o padrão de design preferencial é incluir um método para remover todos os elementos da coleção e um método para preencher novamente a coleção. Consulte a <xref:System.Collections.ArrayList.Clear%2A> e <xref:System.Collections.ArrayList.AddRange%2A> métodos do <xref:System.Collections.ArrayList?displayProperty=fullName> classe para obter um exemplo desse padrão.
+ Uma propriedade de coleção gravável permite que um usuário substitua a coleção por uma coleção completamente diferente. Uma propriedade somente leitura evita que a coleção seja substituída, mas ainda permite que membros individuais sejam definidos. Se a substituição da coleção for uma meta, o padrão de design preferencial será incluir um método para remover todos os elementos da coleção e um método para preencher novamente a coleção. Consulte os métodos <xref:System.Collections.ArrayList.Clear%2A> e <xref:System.Collections.ArrayList.AddRange%2A> da classe <xref:System.Collections.ArrayList?displayProperty=fullName> para obter um exemplo desse padrão.
 
- Serialização XML e binária dão suporte a propriedades somente leitura que são coleções. O <xref:System.Xml.Serialization.XmlSerializer?displayProperty=fullName> classe tem requisitos específicos para os tipos que implementam <xref:System.Collections.ICollection> e <xref:System.Collections.IEnumerable?displayProperty=fullName> para ser serializável.
+ A serialização binária e XML dão suporte a propriedades somente leitura que são coleções. A classe <xref:System.Xml.Serialization.XmlSerializer?displayProperty=fullName> tem requisitos específicos para tipos que implementam <xref:System.Collections.ICollection> e <xref:System.Collections.IEnumerable?displayProperty=fullName> para serem serializáveis.
 
 ## <a name="how-to-fix-violations"></a>Como Corrigir Violações
- Para corrigir uma violação dessa regra, verifique a propriedade somente leitura e, se o design exigir, adicione métodos para limpar e popule novamente a coleção.
+ Para corrigir uma violação dessa regra, torne a propriedade somente leitura e, se o design exigir, adicione métodos para limpar e preencher novamente a coleção.
 
 ## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos
  Não suprima um aviso nessa regra.
 
 ## <a name="example"></a>Exemplo
- O exemplo a seguir mostra um tipo com uma propriedade collection gravável e mostra como a coleção pode ser substituída diretamente. Além disso, a maneira preferida de substituição de uma propriedade de coleção somente leitura usando `Clear` e `AddRange` métodos é mostrado.
+ O exemplo a seguir mostra um tipo com uma propriedade de coleção gravável e mostra como a coleção pode ser substituída diretamente. Além disso, a maneira preferida de substituir uma propriedade de coleção somente leitura usando os métodos `Clear` e `AddRange` é mostrada.
 
  [!code-cpp[FxCop.Usage.PropertiesReturningCollections#1](../snippets/cpp/VS_Snippets_CodeAnalysis/FxCop.Usage.PropertiesReturningCollections/cpp/FxCop.Usage.PropertiesReturningCollections.cpp#1)]
  [!code-csharp[FxCop.Usage.PropertiesReturningCollections#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.PropertiesReturningCollections/cs/FxCop.Usage.PropertiesReturningCollections.cs#1)]
  [!code-vb[FxCop.Usage.PropertiesReturningCollections#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Usage.PropertiesReturningCollections/vb/FxCop.Usage.PropertiesReturningCollections.vb#1)]
 
 ## <a name="related-rules"></a>Regras relacionadas
- [CA1819: Propriedades não devem retornar matrizes](../code-quality/ca1819-properties-should-not-return-arrays.md)
+ [CA1819: as propriedades não devem retornar matrizes](../code-quality/ca1819-properties-should-not-return-arrays.md)

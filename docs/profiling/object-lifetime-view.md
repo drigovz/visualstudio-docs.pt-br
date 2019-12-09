@@ -14,19 +14,20 @@ ms.assetid: d0501fdd-4b3a-4e74-b6ac-51d950a2e15b
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: b0819a4d9e1438b300daa68db4208bfe5908d800
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: d4ea486930d0ea9f266b4ee57b69a50f7c570651
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62794343"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74772618"
 ---
 # <a name="object-lifetime-view"></a>Exibição do tempo de vida do objeto
 A exibição Tempo de Vida do Objeto está disponível quando **Também coletar dados de tempo de vida do objeto .NET** está marcada nas páginas de propriedades da **Sessão de Desempenho**.
 
- O coletor de lixo do [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] gerencia a alocação e liberação de memória para seu aplicativo. Para otimizar o desempenho do coletor de lixo, o heap gerenciado é dividido em três gerações: 0, 1 e 2. O coletor de lixo do tempo de execução armazena novos objetos na geração 0. Os objetos que sobrevivem as coletas são promovidos e armazenados para as gerações 1 e 2.
+ O coletor de lixo do .NET Framework gerencia a alocação e a liberação de memória para seu aplicativo. Para otimizar o desempenho do coletor de lixo, o heap gerenciado é dividido em três gerações: 0, 1 e 2. O coletor de lixo do runtime armazena novos objetos na geração 0. Os objetos que sobrevivem as coletas são promovidos e armazenados para as gerações 1 e 2.
 
  O coletor de lixo recupera memória, desalocando uma geração inteira de objetos. Para objetos que foram criados pelo aplicativo com perfil criado, a exibição do Tempo de vida do objeto exibe o número e o tamanho dos objetos e a geração na qual eles são recuperados.
 

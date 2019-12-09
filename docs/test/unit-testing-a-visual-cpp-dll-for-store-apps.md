@@ -1,38 +1,50 @@
 ---
-title: Como testar uma DLL do Visual C++ para aplicativos UWP
-ms.date: 02/15/2018
+title: Como testar uma C++ dll para aplicativos UWP
+ms.date: 05/01/2019
 ms.topic: conceptual
 ms.author: mblome
 manager: jillfra
 ms.workload:
 - uwp
 author: mikeblome
-ms.openlocfilehash: 20749240e95d167d1b0268b2605ffeede8cf797a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 18d8382bcb4f3e348443050e818f0b59c2a18688
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62562523"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748083"
 ---
-# <a name="how-to-test-a-visual-c-dll"></a>Como testar uma DLL do Visual C++
+# <a name="how-to-test-a-c-dll"></a>Como testar uma C++ dll
 
 Este tópico descreve uma maneira de criar testes de unidade para uma DLL do C++ para aplicativos UWP (Plataforma Universal do Windows) com o Microsoft Test Framework para C++. A DLL RooterLib demonstra memórias vagas da teoria de limite do cálculo implementando uma função que calcula uma estimativa da raiz quadrada de um determinado número. A DLL, em seguida, pode ser incluída em um aplicativo UWP que mostra a um usuário as coisas divertidas que podem ser feitas com matemática.
 
- Este tópico demonstra como usar teste de unidade como a primeira etapa do desenvolvimento. Nessa abordagem, primeiramente, você escreve um método de teste que verifique um comportamento específico no sistema que está sendo testado e, em seguida, escreve um código que passe no teste. Ao fazer alterações na ordem dos procedimentos a seguir, é possível reverter essa estratégia para primeiro escrever o código que deseja testar e depois escrever as unidades de teste.
+Este tópico demonstra como usar teste de unidade como a primeira etapa do desenvolvimento. Nessa abordagem, primeiramente, você escreve um método de teste que verifique um comportamento específico no sistema que está sendo testado e, em seguida, escreve um código que passe no teste. Ao fazer alterações na ordem dos procedimentos a seguir, é possível reverter essa estratégia para primeiro escrever o código que deseja testar e depois escrever as unidades de teste.
 
- Este tópico também cria uma única solução do Visual Studio e projetos separados para os testes de unidade e a DLL que você deseja testar. Também é possível incluir os testes de unidade diretamente no projeto de DLL ou criar soluções separadas para os testes de unidade e a .DLL. Consulte [Adicionar teste de unidade de aplicativos C++ existentes](../test/how-to-use-microsoft-test-framework-for-cpp.md) para obter dicas sobre a estrutura a ser usada.
+Este tópico também cria uma única solução do Visual Studio e projetos separados para os testes de unidade e a DLL que você deseja testar. Também é possível incluir os testes de unidade diretamente no projeto de DLL ou criar soluções separadas para os testes de unidade e a .DLL. Consulte [Adicionar teste de unidade de aplicativos C++ existentes](../test/how-to-use-microsoft-test-framework-for-cpp.md) para obter dicas sobre a estrutura a ser usada.
 
 ## <a name="Create_the_solution_and_the_unit_test_project"></a> Criar a solução e o projeto de teste de unidade
 
-1. No menu **Arquivo**, escolha **Novo** > **Novo Projeto**.
+::: moniker range="vs-2019"
 
-2. Na caixa Novo Projeto, expanda **Instalado** > **Visual C++** e escolha **Windows Universal**. Em seguida, escolha **Aplicativo de Teste de Unidade (Windows Universal)** na lista de modelos de projeto.
+Comece criando um novo projeto de teste. No menu **Arquivo**, escolha **Novo** > **Projeto**. Na caixa de diálogo **Criar um novo projeto**, digite "teste" na caixa de pesquisa e, em seguida, defina **Linguagem de programação** como C++. Em seguida, escolha **Aplicativo de Teste de Unidade (Windows Universal)** na lista de modelos de projeto.
 
-3. Dê ao projeto o nome `RooterLibTests`; especifique o local, dê à solução o nome `RooterLib`; e certifique-se de que a opção **Criar diretório para solução** esteja selecionada.
+   ![Criar um novo projeto de teste do UWP](media/vs-2019/cpp-new-uwp-test-project-vs2019.png)
+
+::: moniker-end
+
+::: moniker range="vs-2017"
+
+Comece criando um novo projeto de teste. No menu **Arquivo**, escolha **Novo** > **Projeto**. Na caixa de diálogo **Novo projeto**, expanda **Instalado** > **Visual C++** e escolha **Windows Universal**. Em seguida, escolha **Aplicativo de Teste de Unidade (Windows Universal)** na lista de modelos de projeto.
+
+::: moniker-end
+
+1. Na caixa Novo Projeto, expanda **Instalado** > **Visual C++** e escolha **Windows Universal**. Em seguida, escolha **Aplicativo de Teste de Unidade (Windows Universal)** na lista de modelos de projeto.
+
+2. Dê ao projeto o nome `RooterLibTests`; especifique o local, dê à solução o nome `RooterLib`; e certifique-se de que a opção **Criar diretório para solução** esteja selecionada.
 
      ![Especifique o nome da solução e do projeto e o local](../test/media/ute_cpp_windows_unittestlib_createspecs.png)
 
-4. No novo projeto, abra **unittest1.cpp**.
+3. No novo projeto, abra **unittest1.cpp**.
 
      ![unittest1.cpp](../test/media/ute_cpp_windows_unittest1_cpp.png)
 
@@ -67,13 +79,24 @@ Este tópico descreve uma maneira de criar testes de unidade para uma DLL do C++
 
 ## <a name="Add_the_DLL_project_to_the_solution"></a> Adicione o projeto DLL à solução
 
-1. No **Gerenciador de Soluções**, escolha o nome da solução. No menu de atalho, escolha **Adicionar** e então **Adicionar Novo Projeto**.
+::: moniker range="vs-2019"
 
-     ![Criar o projeto RooterLib](../test/media/ute_cpp_windows_rooterlib_create.png)
+No **Gerenciador de Soluções**, escolha o nome da solução. No menu de atalho, escolha **Adicionar** e, em seguida, **Novo projeto**. Na caixa de diálogo **Adicionar um novo projeto**, defina **Linguagem de programação** como C++ e digite "DLL" na caixa de pesquisa. Na lista de resultados, escolha **Aplicativo de teste de unidade (Universal Windows – C++/CX)** .
 
-2. Na caixa de diálogo **Adicionar Novo Projeto**, escolha **DLL (aplicativos UWP)**.
+![Criar o projeto RooterLib](../test/media/vs-2019/cpp-new-uwp-test-project-vs2019.png)
 
-3. Adicione o código a seguir ao arquivo *RooterLib.h*:
+::: moniker-end
+
+::: moniker range="vs-2017"
+No **Gerenciador de Soluções**, escolha o nome da solução. No menu de atalho, escolha **Adicionar** e, em seguida, **Novo projeto**.
+
+![Criar o projeto RooterLib](../test/media/ute_cpp_windows_rooterlib_create.png)
+
+::: moniker-end
+
+1. Na caixa de diálogo **Adicionar Novo Projeto**, escolha **DLL (aplicativos UWP)** .
+
+2. Adicione o código a seguir ao arquivo *RooterLib.h*:
 
     ```cpp
     // The following ifdef block is the standard way of creating macros which make exporting
@@ -99,7 +122,7 @@ Este tópico descreve uma maneira de criar testes de unidade para uma DLL do C++
 
      A classe `CRooterLib` declara um construtor e o método avaliador `SqareRoot`.
 
-4. Adicione o símbolo ROOTERLIB_EXPORTS à linha de comando.
+3. Adicione o símbolo ROOTERLIB_EXPORTS à linha de comando.
 
     1. No **Gerenciador de Soluções**, escolha o projeto **RooterLib** e, em seguida, escolha **Propriedades** no menu de atalho.
 
@@ -109,7 +132,7 @@ Este tópico descreve uma maneira de criar testes de unidade para uma DLL do C++
 
     3. Escolha **\<Editar...>** na lista **Definições do Pré-processador** e, em seguida, adicione `ROOTERLIB_EXPORTS` na caixa de diálogo **Definições do Pré-processador**.
 
-5. Adicione implementações mínimas das funções declaradas. Abra *RooterLib.cpp* e adicione o seguinte código:
+4. Adicione implementações mínimas das funções declaradas. Abra *RooterLib.cpp* e adicione o seguinte código:
 
     ```cpp
     // constructor
@@ -129,13 +152,9 @@ Este tópico descreve uma maneira de criar testes de unidade para uma DLL do C++
 
 1. Adicione RooterLib ao projeto RooterLibTests.
 
-   1. No **Gerenciador de Soluções**, escolha o projeto **RooterLibTests** e, em seguida, escolha **Referências** no menu de atalho.
+   1. No **Gerenciador de Soluções**, escolha o projeto **RooterLibTests** e, em seguida, escolha **Adicionar** > **Referência** no menu de atalho.
 
-   2. Na caixa de diálogo **Propriedades do Projeto RooterLib**, expanda **Propriedades Comuns** e escolha **Estrutura e Referências**.
-
-   3. Escolha **Adicionar Nova Referência**
-
-   4. Na caixa de diálogo **Adicionar Referência**, expanda **Solução** e, em seguida, escolha **Projetos**. Então selecione o item **RouterLib**.
+   1. Na caixa de diálogo **Adicionar Referência**, escolha **Projetos**. Então selecione o item **RouterLib**.
 
 2. Inclua o arquivo de cabeçalho RooterLib em *unittest1.cpp*.
 

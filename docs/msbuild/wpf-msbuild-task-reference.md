@@ -20,7 +20,7 @@ ms.workload:
 - multiple
 ms.openlocfilehash: 121c3da6d3e2609c1a271177e089e0f38a0d89fe
 ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "62778272"
@@ -55,7 +55,7 @@ O processo de build do Windows Presentation Foundation (WPF) estende o Microsoft
 
 - [ResourcesGenerator](../msbuild/resourcesgenerator-task.md)
 
- Insere um ou mais recursos (*.jpg*, *.ico*, *.bmp*, [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] em formato binário e outros tipos de extensão) em um arquivo *.resources*.
+ Insere um ou mais recursos ( *.jpg*, *.ico*, *.bmp*, [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] em formato binário e outros tipos de extensão) em um arquivo *.resources*.
 
 - [UidManager](../msbuild/uidmanager-task.md)
 
@@ -63,7 +63,7 @@ O processo de build do Windows Presentation Foundation (WPF) estende o Microsoft
 
 - [UpdateManifestForBrowserApplication](../msbuild/updatemanifestforbrowserapplication-task.md)
 
- Adiciona o elemento **\<hostInBrowser / >** para o manifesto do aplicativo (*\<projectname.exe.manifest*) quando um projeto de [!INCLUDE[TLA#tla_xbap](../msbuild/includes/tlasharptla_xbap_md.md)] é compilado.
+ Adiciona o elemento **\<hostInBrowser / >** para o manifesto do aplicativo ( *\<projectname.exe.manifest*) quando um projeto de [!INCLUDE[TLA#tla_xbap](../msbuild/includes/tlasharptla_xbap_md.md)] é compilado.
 
 ## <a name="see-also"></a>Consulte também
 - [MSBuild](../msbuild/msbuild.md)

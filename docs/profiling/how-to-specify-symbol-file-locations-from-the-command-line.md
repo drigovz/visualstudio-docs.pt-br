@@ -1,21 +1,22 @@
 ---
-title: 'Como: Especificar locais de arquivo de símbolo na linha de comando | Microsoft Docs'
+title: Como especificar locais de arquivo de símbolo na linha de comando | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 8aa067bb-e8bf-4081-aff0-cfbcf65934a0
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: fa265a3b7ebde80f7398f0c5972d5265533890f0
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 3b4c4230ca2539b55f57990b90ae33d1f53726dc
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433464"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778720"
 ---
-# <a name="how-to-specify-symbol-file-locations-from-the-command-line"></a>Como: Especificar locais de arquivo de símbolo da linha de comando
+# <a name="how-to-specify-symbol-file-locations-from-the-command-line"></a>Como especificar locais de arquivo de símbolo por meio da linha de comando
 Para exibir informações de símbolo como nomes de função e números de linha, a ferramenta de linha de comando VSPerfReport precisa ter acesso aos arquivos de símbolo (.*pdb*) dos componentes analisados e aos arquivos do sistema do Windows. Os arquivos de símbolo são criados quando um componente é compilado. Para obter mais informações, confira [VSPerfReport](../profiling/vsperfreport.md). A VSPerfReport procura arquivos de símbolo automaticamente nos seguintes locais:
 
 - Caminhos especificados na opção **/SymbolPath** ou na variável de ambiente **_NT_SYMBOL_PATH**.
@@ -35,7 +36,7 @@ Para exibir informações de símbolo como nomes de função e números de linha
   Você também pode usar ambos os métodos.
 
 > [!NOTE]
-> Se o [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] estiver instalado no computador local, um local para os arquivos de símbolo do Windows já foi provavelmente especificado. Para obter mais informações, confira [Como: Referenciar informações de símbolo do Windows](../profiling/how-to-reference-windows-symbol-information.md). Você ainda precisa configurar o VSPerfReport para que ele use o local e o servidor, conforme descrito mais adiante neste tópico.
+> Se o [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] estiver instalado no computador local, um local para os arquivos de símbolo do Windows já foi provavelmente especificado. Para obter mais informações, confira [Como referenciar informações de símbolo do Windows](../profiling/how-to-reference-windows-symbol-information.md). Você ainda precisa configurar o VSPerfReport para que ele use o local e o servidor, conforme descrito mais adiante neste tópico.
 
 ## <a name="specify-windows-symbol-files"></a>Especificar arquivos de símbolo do Windows
 
@@ -45,7 +46,7 @@ Para exibir informações de símbolo como nomes de função e números de linha
 
 2. Use a sintaxe a seguir para definir a variável de ambiente **_NT_SYMBOL_PATH** ou a opção /SymbolPath da VSPerfReport:
 
-    **srv\\*** *LocalStore* **\*http://msdl.microsoft.com/downloads/symbols**
+    **srv\\** * *LocalStore* **\*http://msdl.microsoft.com/download/symbols**
 
     em que *LocalStore* é o caminho do diretório local que você criou.
 
@@ -55,7 +56,7 @@ Para exibir informações de símbolo como nomes de função e números de linha
 ## <a name="example"></a>Exemplo
  A linha de comando a seguir define a variável de ambiente **_NT_SYMBOL_PATH** para o servidor de símbolos do Windows e o diretório local para **C:\Symbols**.
 
- **set  _NT_SYMBOL_PATH=srv\*C:\symbols\*http://msdl.microsoft.com/downloads/symbols**
+ **set  _NT_SYMBOL_PATH=srv\*C:\symbols\*http://msdl.microsoft.com/download/symbols**
 
  A seguinte linha de comando VSPerfReport adiciona o diretório *C:\Projects\Symbols* ao caminho de pesquisa usando a opção **/SymbolPath**.
 

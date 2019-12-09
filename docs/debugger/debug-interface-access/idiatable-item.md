@@ -1,5 +1,5 @@
 ---
-title: 'Idiatable:: item | Microsoft Docs'
+title: 'IDiaTable:: item | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d8070acfa254ae26e017a0070a21884309bc4d7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d402f5ad54d5c0f487cebb3a8c53f68d17828ed4
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62840633"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738723"
 ---
 # <a name="idiatableitem"></a>IDiaTable::Item
-Recupera uma referência para a entrada especificada na tabela.
+Recupera uma referência à entrada especificada na tabela.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -34,19 +34,19 @@ HRESULT Item ( 
 #### <a name="parameters"></a>Parâmetros
  `index`
 
-[in] O índice da entrada da tabela no intervalo de 0 a `count`-1, onde `count` é retornado pelo [idiatable:: Get_count](../../debugger/debug-interface-access/idiatable-get-count.md)método.
+no O índice da entrada da tabela no intervalo de 0 a `count`-1, em que `count` é retornado pelo método [IDiaTable:: get_Count](../../debugger/debug-interface-access/idiatable-get-count.md).
 
  `element`
 
-[out] Retorna um `IUnknown` objeto que representa a entrada da tabela especificada.
+fora Retorna um objeto `IUnknown` que representa a entrada da tabela especificada.
 
-## <a name="return-value"></a>Valor de retorno
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
 
 ## <a name="remarks"></a>Comentários
- Uma tabela representa uma coleção de objetos. Dependendo desses objetos, o parâmetro de elemento pode ser convertido para a interface apropriada. Por exemplo, se uma tabela contiver [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md) objetos, em seguida, o parâmetro de elemento pode ser convertido para o `IDiaSegment` interface.
+ Uma tabela representa uma coleção de objetos. Dependendo desses objetos, o parâmetro do elemento pode ser convertido na interface apropriada. Por exemplo, se uma tabela contiver objetos [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md) , o parâmetro do elemento poderá ser convertido na interface `IDiaSegment`.
 
- É uma abordagem mais comum para chamar o `QueryInterface` método na [IDiaTable](../../debugger/debug-interface-access/idiatable.md) interface para a interface de enumerador apropriado e usar métodos de específicos do enumerador para acessar o conteúdo da tabela. Consulte a [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md) interface para obter um exemplo.
+ É uma abordagem mais comum para chamar o método `QueryInterface` na interface [IDiaTable](../../debugger/debug-interface-access/idiatable.md) para a interface do enumerador apropriada e usar os métodos específicos do enumerador para acessar o conteúdo da tabela. Consulte a interface [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md) para obter um exemplo.
 
 ## <a name="see-also"></a>Consulte também
 - [IDiaTable](../../debugger/debug-interface-access/idiatable.md)

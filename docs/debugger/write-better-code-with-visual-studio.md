@@ -1,6 +1,6 @@
 ---
 title: Técnicas e ferramentas de depuração
-description: Escrever códigos melhores com menos bugs usando o Visual Studio para corrigir as exceções, corrigir erros e melhorar seu código
+description: Escreva código melhor com menos bugs usando o Visual Studio para corrigir exceções, corrigir erros e melhorar seu código
 ms.custom:
 - debug-experiment
 - seodec18
@@ -13,43 +13,43 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6bfbcf9a63a01d391cbbc65067793d75d42899c1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b1fe0a9bb1e966bd1451bb5d816eaab814071fb5
+ms.sourcegitcommit: 7825d4163e52d724e59f6c0da209af5fbef673f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62901262"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72000167"
 ---
-# <a name="debugging-techniques-and-tools-to-help-you-write-better-code"></a>Técnicas de depuração e ferramentas para ajudá-lo a escrever códigos melhores
+# <a name="debugging-techniques-and-tools-to-help-you-write-better-code"></a>Ferramentas e técnicas de depuração para ajudá-lo a escrever código melhor
 
-Corrigindo os bugs e erros em seu código pode ser demorado – e, às vezes, frustrante – tarefa. Leva tempo para saber como depurar com eficiência, mas um IDE avançado como o Visual Studio pode tornar seu trabalho muito mais fácil. Um IDE pode ajudar você a corrigir erros e depurar seu código mais rapidamente e não apenas isso, mas ele também pode ajudar você escreve códigos melhores com menos erros. Nosso objetivo neste artigo é fornecer uma visão holística do processo de "correção de bugs", para que você saiba quando usar o analisador de código, quando usar o depurador, como corrigir as exceções e como o código de intenção. Se você já sabe que precisa usar o depurador, consulte [primeiro, examine o depurador](../debugger/debugger-feature-tour.md).
+Corrigir bugs e erros em seu código pode ser uma tarefa demorada e, às vezes, frustrante. Leva tempo para aprender a depurar com eficiência, mas um eficiente IDE, como o Visual Studio, pode tornar seu trabalho muito mais fácil. Um IDE pode ajudá-lo a corrigir erros e depurar seu código mais rapidamente, e não apenas isso, mas também pode ajudá-lo a escrever código melhor com menos bugs. Nosso objetivo neste artigo é fornecer uma visão holística do processo de "correção de bugs", de modo que você saberá quando usar o analisador de código, quando usar o depurador, como corrigir exceções e como codificar para a intenção. Se você já sabe que precisa usar o depurador, consulte [a primeira olhada no depurador](../debugger/debugger-feature-tour.md).
 
-Neste artigo, falamos sobre aproveitando o IDE para tornar suas sessões de codificação mais produtivo. Abordemos a várias tarefas, como:
+Neste artigo, falamos sobre como aproveitar o IDE para tornar suas sessões de codificação mais produtivas. Podemos abordar várias tarefas, como:
 
-* Preparar o seu código para depuração, aproveitando o analisador de código do IDE
+* Prepare seu código para depuração aproveitando o analisador de código do IDE
 
 * Como corrigir exceções (erros de tempo de execução)
 
-* Como minimizar os bugs por meio de codificação para intenção (usando assert)
+* Como minimizar bugs codificando a intenção (usando Assert)
 
 * Quando usar o depurador
 
-Para demonstrar essas tarefas, vamos mostrar alguns dos tipos mais comuns de erros e bugs que você encontrará ao tentar depurar seus aplicativos. Embora o código de exemplo é C#, as informações conceituais for geralmente aplicáveis a C++, Visual Basic, JavaScript e outras linguagens com suporte pelo Visual Studio (exceto onde observado). As capturas de tela estão em C#.
+Para demonstrar essas tarefas, mostramos alguns dos tipos mais comuns de erros e bugs que você encontrará ao tentar depurar seus aplicativos. Embora o código de exemplo C#seja, as informações conceituais geralmente são C++aplicáveis a, Visual Basic, JavaScript e a outras linguagens compatíveis com o Visual Studio (exceto quando indicado). As capturas de tela estão em C#.
 
 ## <a name="create-a-sample-app-with-some-bugs-and-errors-in-it"></a>Criar um aplicativo de exemplo com alguns bugs e erros nele
 
-O código a seguir tem alguns bugs que você pode corrigir o problema usando o IDE do Visual Studio. Aqui, o aplicativo é um aplicativo simple que simula a obtenção de dados JSON de alguma operação desserializar os dados a um objeto e a atualização de uma lista simples com os novos dados.
+O código a seguir tem alguns bugs que você pode corrigir usando o IDE do Visual Studio. O aplicativo aqui é um aplicativo simples que simula a obtenção de dados JSON de alguma operação, desserializando os dados para um objeto e atualizando uma lista simples com os novos dados.
 
 Para criar o aplicativo:
 
-1. Abra o Visual Studio e escolha **arquivo** > **New** > **projeto**. Sob **Visual C#** , escolha **área de trabalho do Windows** ou **.NET Core**e, em seguida, no painel central, escolha uma **aplicativo de Console**.
+1. Abra o Visual Studio e escolha **arquivo** > **novo** **projeto**de > . Em **Visual C#** , escolha **Windows Desktop** ou **.NET Core**e, no painel central, escolha um **aplicativo de console**.
 
     > [!NOTE]
     > Se o modelo de projeto do **Aplicativo de Console** não for exibido, clique no link **Abrir Instalador do Visual Studio** no painel esquerdo da caixa de diálogo **Novo Projeto**. O Instalador do Visual Studio é iniciado. Escolha a carga de trabalho **Desenvolvimento de área de trabalho do .NET** (ou a carga de trabalho **Desenvolvimento multiplataforma do .NET Core**) e escolha **Modificar**.
 
-2. No **nome** , digite **Console_Parse_JSON** e clique em **Okey**. O Visual Studio cria o projeto.
+2. No campo **nome** , digite **Console_Parse_JSON** e clique em **OK**. O Visual Studio cria o projeto.
 
-3. Substitua o código padrão do projeto *Program.cs* arquivo com o código de exemplo abaixo.
+3. Substitua o código padrão no arquivo *Program.cs* do projeto pelo código de exemplo abaixo.
 
 ```csharp
 using System;
@@ -172,37 +172,37 @@ namespace Console_Parse_JSON
 }
 ```
 
-## <a name="find-the-red-and-green-squiggles"></a>Localize as linhas onduladas vermelhas e verdes!
+## <a name="find-the-red-and-green-squiggles"></a>Encontre os rabiscos vermelho e verde!
 
-Antes de tentar iniciar o aplicativo de exemplo e executar o depurador, verifique o código no editor de códigos para linhas onduladas vermelhas e verdes. Elas representam erros e avisos que são identificados pelo analisador de código do IDE. Os rabiscos vermelhos são erros de tempo de compilação, que você deve corrigir antes de você pode executar o código. As linhas onduladas verdes são avisos. Embora muitas vezes, você pode executar seu aplicativo sem corrigir os avisos, eles podem ser uma fonte de bugs e você muitas vezes economizar tempo e problemas investigando-los. Esses avisos e erros também aparecem na **Error List** janela, se você preferir uma exibição de lista.
+Antes de tentar iniciar o aplicativo de exemplo e executar o depurador, verifique o código no editor de código para os rabiscos vermelho e verde. Elas representam erros e avisos identificados pelo analisador de código do IDE. Os ondulados vermelhos são erros de tempo de compilação, que você deve corrigir antes de poder executar o código. Os rabiscos verdes são avisos. Embora você possa executar o aplicativo com frequência sem corrigir os avisos, eles podem ser uma fonte de bugs e, muitas vezes, você economiza tempo e problemas investigando-os. Esses avisos e erros também aparecem na janela de **lista de erros** , se você preferir uma exibição de lista.
 
-No aplicativo de exemplo, você pode ver várias rabiscos vermelhos que você precisa corrigir e um verde que você examinar. Aqui está o primeiro erro.
+No aplicativo de exemplo, você verá vários rabiscos vermelhos que precisam ser corrigidos e um verde que você examinará. Aqui está o primeiro erro.
 
-![Erro ao mostrar como um rabisco vermelho](../debugger/media/write-better-code-red-squiggle.png)
+![Erro ao mostrar como um ondulado vermelho](../debugger/media/write-better-code-red-squiggle.png)
 
-Para corrigir esse erro, você verá outro recurso do IDE, representado por um ícone de lâmpada.
+Para corrigir esse erro, você examinará outro recurso do IDE, representado pelo ícone de lâmpada.
 
 ## <a name="check-the-light-bulb"></a>Verifique a lâmpada!
 
-O primeiro Rabisco vermelho representa um erro de tempo de compilação. Passe o mouse sobre ele e você verá a mensagem ```The name `Encoding` does not exist in the current context```.
+O primeiro ondulado vermelho representa um erro de tempo de compilação. Passe o mouse sobre ele e você verá a mensagem ```The name `Encoding` does not exist in the current context```.
 
-Observe que esse erro mostra um ícone de lâmpada à esquerda inferior. Junto com o ícone de chave de fenda ![ícone de chave de fenda](../ide/media/screwdriver-icon.png), o ícone de lâmpada ![ícone de lâmpada](../ide/media/light-bulb-icon.png) representa ações rápidas que podem ajudar você a corrigir ou refatorar o código embutido. A lâmpada representa problemas que você *deve* corrigir. A chave de fenda é para os problemas que você pode optar por corrigir. Use a primeira correção sugerida para resolver esse erro, clicando em **usando System. Text** à esquerda.
+Observe que esse erro mostra um ícone de lâmpada à esquerda inferior. Junto com o ícone de chave de fenda ![ícone de chave de fenda](../ide/media/screwdriver-icon.png), o ícone de lâmpada ![ícone de lâmpada](../ide/media/light-bulb-icon.png) representa ações rápidas que podem ajudá-lo a corrigir ou refatorar o código embutido. A lâmpada representa problemas que você *deve* corrigir. A chave de fenda é para problemas que você pode optar por corrigir. Use a primeira correção sugerida para resolver esse erro clicando em **usar System. Text** à esquerda.
 
-![Use a lâmpada para corrigir o código](../debugger/media/write-better-code-missing-include.png)
+![Usar a lâmpada para corrigir o código](../debugger/media/write-better-code-missing-include.png)
 
-Quando você clica neste item, o Visual Studio adiciona o `using System.Text` instrução na parte superior dos *Program.cs* arquivo e o Rabisco vermelho desaparece. (Quando você não sabe o que fará uma correção sugerida, escolha o **visualizar alterações** link à direita antes de aplicar a correção.)
+Quando você clica neste item, o Visual Studio adiciona a instrução `using System.Text` na parte superior do arquivo *Program.cs* e o ondulado vermelho desaparece. (Quando você não tiver certeza do que uma correção sugerida fará, escolha o link **Visualizar alterações** à direita antes de aplicar a correção.)
 
-O erro anterior é comum que você geralmente corrigem adicionando um novo `using` instrução ao seu código. Há vários erros comuns, semelhantes a esta, como ```The type or namespace `Name` cannot be found.``` esses tipos de erros podem indicar uma referência de assembly ausente (com o botão direito no projeto, escolha **Add** > **referência**), um nome digitado incorretamente ou uma biblioteca ausente que você precisa adicionar (para C#, clique com botão direito no projeto e escolha **gerenciar pacotes NuGet**).
+O erro anterior é um comum que você geralmente corrige adicionando uma nova instrução `using` ao seu código. Há vários erros comuns semelhantes a este, como ```The type or namespace `Name` cannot be found.``` esses tipos de erros podem indicar uma referência de assembly ausente (clique com o botão direito do mouse no projeto, escolha **Adicionar** **referência**de > ), um nome com erros de ortografia ou uma biblioteca ausente que você precisa adicionar C#(para, clique com o botão direito do mouse no projeto e escolha **gerenciar pacotes NuGet**).
 
-## <a name="fix-the-remaining-errors-and-warnings"></a>Corrija os erros e avisos restantes
+## <a name="fix-the-remaining-errors-and-warnings"></a>Corrigir os erros e avisos restantes
 
-Há alguns rabiscos mais examinar nesse código. Aqui, você pode ver um erro de conversão de tipo comum. Ao passar o mouse sobre o rabisco, verá que o código está tentando converter uma cadeia de caracteres em um int, o qual não há suporte para a menos que você adicione código explícito para fazer a conversão.
+Há mais alguns rabiscos a serem examinados neste código. Aqui, você verá um erro de conversão de tipo comum. Ao passar o mouse sobre o rabisco, você verá que o código está tentando converter uma cadeia de caracteres em um int, o que não tem suporte, a menos que você adicione um código explícito para fazer a conversão.
 
 ![Erro de conversão de tipo](../debugger/media/write-better-code-conversion-error.png)
 
-Porque o analisador de código não é possível adivinhar sua intenção, não há nenhum lâmpadas para ajudá-lo neste momento. Para corrigir esse erro, você precisa saber a intenção do código. Neste exemplo, não é muito difícil ver que `points` deve ser um valor numérico (inteiro), uma vez que você está tentando adicionar `points` para `totalpoints`.
+Como o analisador de código não pode adivinhar sua intenção, não há lâmpadas leves para ajudá-lo nesse tempo. Para corrigir esse erro, você precisa saber a intenção do código. Neste exemplo, não é muito difícil ver que `points` deve ser um valor numérico (inteiro), já que você está tentando adicionar `points` ao `totalpoints`.
 
-Para corrigir esse erro, altere o `points` membro o `User` classe desta:
+Para corrigir esse erro, altere o membro `points` da classe `User` a partir dela:
 
 ```csharp
 [DataMember]
@@ -216,13 +216,13 @@ para isto:
 internal int points;
 ```
 
-As linhas curvadas vermelhas no editor de códigos desaparecem.
+As linhas vermelhas onduladas no editor de códigos desaparecem.
 
-Em seguida, passe o mouse sobre o verde ondulado na declaração do `points` membro de dados. O analisador de código informa que a variável nunca seja atribuída um valor.
+Em seguida, passe o mouse sobre o rabisco verde na declaração do membro de dados `points`. O analisador de código informa à variável que nunca é atribuído um valor.
 
-![Mensagem de aviso de variável não atribuída](../debugger/media/write-better-code-warning-message.png)
+![Mensagem de aviso para variável não atribuída](../debugger/media/write-better-code-warning-message.png)
 
-Normalmente, isso representa um problema que precisa ser corrigido. No entanto, no aplicativo de exemplo você está de fato armazenando dados na `points` variável durante o processo de desserialização e, em seguida, adicionando esse valor para o `totalpoints` membro de dados. Neste exemplo, você conhece a intenção do código e ignore o aviso. No entanto, se você deseja eliminar o aviso, você pode substituir o código a seguir:
+Normalmente, isso representa um problema que precisa ser corrigido. No entanto, no aplicativo de exemplo, você está realmente armazenando dados na variável `points` durante o processo de desserialização e, em seguida, adicionando esse valor ao membro de dados `totalpoints`. Neste exemplo, você sabe a intenção do código e pode ignorar com segurança o aviso. No entanto, se você quiser eliminar o aviso, poderá substituir o seguinte código:
 
 ```csharp
 item.totalpoints = users[i].points;
@@ -235,27 +235,27 @@ item.points = users[i].points;
 item.totalpoints += users[i].points;
 ```
 
-O Rabisco verde desaparece.
+O rabisco verde desaparece.
 
 ## <a name="fix-an-exception"></a>Corrigir uma exceção
 
-Quando tiver corrigido os rabiscos vermelhos e resolvido – ou pelo menos investigado – o todas as linhas onduladas verdes, você está pronto para iniciar o depurador e executar o aplicativo.
+Quando você tiver corrigido todos os rabiscos vermelhos e resolvidos, ou pelo menos investigado, todos os rabiscos verdes, você estará pronto para iniciar o depurador e executar o aplicativo.
 
 Pressione **F5** (**Depurar > Iniciar Depuração**) ou o botão **Iniciar Depuração** ![Iniciar Depuração](../debugger/media/dbg-tour-start-debugging.png "Iniciar Depuração") na barra de ferramentas Depurar.
 
-Neste ponto, o aplicativo de exemplo gera um `SerializationException` exceção (um erro de tempo de execução). Ou seja, o aplicativo restringe nos dados que ele está tentando serializar. Como você iniciou o aplicativo no modo de depuração (o depurador é anexado), o auxiliar de exceção do depurador leva você diretamente para o código que lançou a exceção e fornece a você uma mensagem de erro úteis.
+Neste ponto, o aplicativo de exemplo gera uma exceção de `SerializationException` (um erro de tempo de execução). Ou seja, o aplicativo obstru os dados que ele está tentando serializar. Como você iniciou o aplicativo no modo de depuração (depurador anexado), o auxiliar de exceção do depurador leva você diretamente ao código que gerou a exceção e fornece uma mensagem de erro útil.
 
-![Ocorre uma SerializationException](../debugger/media/write-better-code-serialization-exception.png)
+![Uma Serializaexception ocorre](../debugger/media/write-better-code-serialization-exception.png)
 
-A mensagem de erro instrui você que o valor `4o` não pode ser analisado como um número inteiro. Neste exemplo, você sabe os dados são inválidos: `4o` deve ser `40`. No entanto, se você não estiver no controle dos dados em um cenário real (digamos que você estiver obtendo-lo de um serviço da web), o que fazer sobre isso? Como consertar isso?
+A mensagem de erro instrui você que o valor `4o` não pode ser analisado como um inteiro. Portanto, neste exemplo, você sabe que os dados são inválidos: `4o` deve ser `40`. No entanto, se você não estiver no controle dos dados em um cenário real (digamos que você esteja obtendo de um serviço Web), o que fazer a respeito? Como consertar isso?
 
-Quando você atinge uma exceção, você precisa fazer algumas perguntas (e responder uma):
+Ao chegar a uma exceção, você precisa fazer (e responder) algumas perguntas:
 
-* É apenas um bug que você pode corrigir a essa exceção? Ou
+* Essa exceção é apenas um bug que você pode corrigir? Ou
 
 * Essa exceção é algo que os usuários podem encontrar?
 
-Se for a primeira opção, corrija o bug. (No aplicativo de exemplo, isso significa que corrigir os dados ruins.) Se for o último, você talvez precise lidar com a exceção no seu código usando um `try/catch` bloco (vamos examinar outras estratégias possíveis na próxima seção). No aplicativo de exemplo, substitua o código a seguir:
+Se for o primeiro, corrija o bug. (No aplicativo de exemplo, isso significa corrigir os dados inválidos.) Se for o último, talvez seja necessário manipular a exceção em seu código usando um bloco de `try/catch` (examinaremos outras estratégias possíveis na próxima seção). No aplicativo de exemplo, substitua o seguinte código:
 
 ```csharp
 users = ser.ReadObject(ms) as User[];
@@ -275,13 +275,13 @@ catch (SerializationException)
 }
 ```
 
-Um `try/catch` bloco tem alguns custos, portanto, você só deseja usá-los quando você realmente precisa deles, ou seja, onde (a) que podem ocorrer na versão de lançamento do aplicativo e onde de desempenho (b) a documentação para o método indica que você deve verificar o exceção (supondo que a documentação está completa!). Em muitos casos, você pode manipular uma exceção adequadamente e o usuário nunca precisará saber sobre ele.
+Um bloco de `try/catch` tem algum custo de desempenho, portanto, você só desejará usá-los quando realmente precisar deles, ou seja, onde (a) eles podem ocorrer na versão de lançamento do aplicativo e onde (b) a documentação do método indica que você deve verificar a exceção (supondo que a documentação esteja completa!). Em muitos casos, você pode manipular uma exceção de forma adequada e o usuário nunca precisará saber sobre ela.
 
-Aqui estão algumas dicas importantes para tratamento de exceções:
+Aqui estão algumas dicas importantes para a manipulação de exceções:
 
-* Evite usar um bloco catch vazio, como `catch (Exception) {}`, que não utilize a ação apropriada para expor ou manipular um erro. Um bloco catch vazio ou não informativas pode ocultar exceções e pode tornar seu código mais difícil de depurar em vez de mais fácil.
+* Evite usar um bloco catch vazio, como `catch (Exception) {}`, que não executa a ação apropriada para expor ou tratar um erro. Um bloco catch vazio ou não informativo pode ocultar exceções e pode tornar seu código mais difícil de Depurar em vez de mais fácil.
 
-* Use o `try/catch` bloco de função específica que gerou a exceção (`ReadObject`, no aplicativo de exemplo). Se você usá-lo em torno de uma parte maior de código, você acaba ocultando o local do erro. Por exemplo, não use o `try/catch` bloco em torno da chamada à função pai `ReadToObject`, mostrada aqui, ou você não saberá exatamente onde ocorreu a exceção.
+* Use o bloco de `try/catch` em volta da função específica que gera a exceção (`ReadObject`, no aplicativo de exemplo). Se você usá-lo em uma parte maior do código, acabará ocultando o local do erro. Por exemplo, não use o bloco `try/catch` ao contrário da chamada para a função pai `ReadToObject`, mostrada aqui ou você não saberá exatamente onde ocorreu a exceção.
 
     ```csharp
     // Don't do this
@@ -294,19 +294,19 @@ Aqui estão algumas dicas importantes para tratamento de exceções:
     }
     ```
 
-* Para funções não familiares que você incluir em seu aplicativo, expecially aqueles interagindo com dados externos (por exemplo, uma solicitação da web), verifique a documentação para ver quais exceções a função é provavelmente lançará. Isso pode ser informações críticas para tratamento de erro apropriado e para depurar seu aplicativo.
+* Para funções desconhecidas que você inclui em seu aplicativo, especialmente aquelas que interagem com dados externos (como uma solicitação da Web), consulte a documentação para ver quais exceções a função provavelmente gerará. Isso pode ser uma informação crítica para tratamento de erros adequado e para depurar seu aplicativo.
 
-Para o aplicativo de exemplo, corrigir a `SerializationException` no `GetJsonData` método alterando `4o` para `40`.
+Para o aplicativo de exemplo, corrija o `SerializationException` no método `GetJsonData` alterando `4o` para `40`.
 
-## <a name="clarify-your-code-intent-by-using-assert"></a>Esclarecer a intenção do código, usando assert
+## <a name="clarify-your-code-intent-by-using-assert"></a>Esclarecer sua intenção de código usando Assert
 
-Clique no botão **Reiniciar** ![Reiniciar Aplicativo](../debugger/media/dbg-tour-restart.png "RestartApp") na barra de ferramentas Depurar (**Ctrl** + **Shift** + **F5**). Isso reinicia o aplicativo em menos etapas. Você ver a saída a seguir na janela do console.
+Clique no botão **Reiniciar** ![Reiniciar Aplicativo](../debugger/media/dbg-tour-restart.png "RestartApp") na barra de ferramentas Depurar (**Ctrl** + **Shift** + **F5**). Isso reinicia o aplicativo em menos etapas. Você verá a seguinte saída na janela do console.
 
 ![Valor nulo na saída](../debugger/media/write-better-code-using-assert-null-output.png)
 
-Você pode ver algo nesta saída que não é exatamente isso. **nome da** e **lastname** para o terceiro registro estão em branco!
+Você pode ver algo nessa saída que não está bem certo. o **nome** e o **sobrenome** do terceiro registro estão em branco!
 
-Isso é um bom momento para falar sobre uma prática de codificação úteis, normalmente subutilizada, que é usar `assert` as instruções em suas funções. Adicionando o código a seguir, você incluir uma verificação de tempo de execução para ter certeza de que `firstname` e `lastname` não são `null`. Substitua o código a seguir no `UpdateRecords` método:
+Esse é um bom momento para falar sobre uma prática de codificação útil, geralmente subutilizada, que é usar `assert` instruções em suas funções. Ao adicionar o código a seguir, você inclui uma verificação de tempo de execução para garantir que `firstname` e `lastname` não sejam `null`. Substitua o seguinte código no método `UpdateRecords`:
 
 ```csharp
 if (existingUser == false)
@@ -329,28 +329,28 @@ if (existingUser == false)
     user.lastname = users[i].lastname;
 ```
 
-Adicionando `assert` declarações como essa para suas funções durante o processo de desenvolvimento, você pode ajudar a especificar a intenção do seu código. No exemplo anterior, podemos especificar o seguinte:
+Ao adicionar `assert` instruções como essa às suas funções durante o processo de desenvolvimento, você pode ajudar a especificar a intenção do seu código. No exemplo anterior, especificamos o seguinte:
 
 * Uma cadeia de caracteres válida é necessária para o primeiro nome
 * Uma cadeia de caracteres válida é necessária para o último nome
 
-Especificando a intenção dessa forma, você deve impor seus requisitos. Isso é um método simples e útil que você pode usar a superfície bugs durante o desenvolvimento. (`assert` instruções também são usadas como o elemento principal em testes de unidade.)
+Ao especificar a intenção dessa forma, você impõe suas necessidades. Esse é um método simples e útil que você pode usar para surgir bugs durante o desenvolvimento. (`assert` instruções também são usadas como o elemento principal em testes de unidade.)
 
 Clique no botão **Reiniciar** ![Reiniciar Aplicativo](../debugger/media/dbg-tour-restart.png "RestartApp") na barra de ferramentas Depurar (**Ctrl** + **Shift** + **F5**).
 
 > [!NOTE]
-> O `assert` código está ativo somente em uma compilação de depuração.
+> O código de `assert` está ativo somente em uma compilação de depuração.
 
-Quando você reiniciar, o depurador faz uma pausa sobre o `assert` instrução, porque a expressão `users[i].firstname != null` é avaliada como `false` em vez de `true`.
+Quando você reinicia, o depurador pausa na instrução `assert`, porque a expressão `users[i].firstname != null` é avaliada como `false` em vez de `true`.
 
-![Assert é resolvida como false](../debugger/media/write-better-code-using-assert.png)
+![Assert é resolvido para false](../debugger/media/write-better-code-using-assert.png)
 
-O `assert` erro indica que há um problema que você precisa investigar. `assert` pode abranger muitos cenários em que você não vir necessariamente uma exceção. Neste exemplo, o usuário não verá uma exceção e um `null` valor é adicionado como `firstname` em sua lista de registros. Isso pode causar problemas posteriormente (como você verá na saída do console) e pode ser mais difícil de depurar.
+O erro de `assert` informa que há um problema que você precisa investigar. `assert` pode abranger muitos cenários em que você não vê necessariamente uma exceção. Neste exemplo, o usuário não verá uma exceção e um valor `null` será adicionado como `firstname` na lista de registros. Isso pode causar problemas posteriormente (como você vê na saída do console) e pode ser mais difícil de depurar.
 
 > [!NOTE]
-> Em cenários em que você chama um método na `null` valor, um `NullReferenceException` resultados. Normalmente, você deseja evitar o uso de um `try/catch` bloquear para uma exceção geral, ou seja, uma exceção que não esteja ligada à função da biblioteca específica. Qualquer objeto pode lançar um `NullReferenceException`. Se você não tiver certeza, verifique a documentação para a função de biblioteca.
+> Em cenários em que você chama um método no valor `null`, um `NullReferenceException` resultados. Normalmente, você deseja evitar o uso de um bloco de `try/catch` para uma exceção geral, ou seja, uma exceção que não esteja vinculada à função de biblioteca específica. Qualquer objeto pode gerar um `NullReferenceException`. Verifique a documentação da função de biblioteca se você não tiver certeza.
 
-Durante o processo de depuração, é bom para manter um determinado `assert` instrução até que você saiba que você precisa substituí-lo com uma correção de código real. Digamos que você decidir que o usuário pode encontrar a exceção em um build de versão do aplicativo. Nesse caso, você deve refatorar o código para certificar-se de que seu aplicativo não lançar uma exceção fatal ou resultar em algum outro erro. Portanto, para corrigir esse código, substitua o código a seguir:
+Durante o processo de depuração, é bom manter uma instrução `assert` específica até que você saiba que precisa substituí-la por uma correção de código real. Digamos que você decida que o usuário pode encontrar a exceção em uma compilação de versão do aplicativo. Nesse caso, você deve refatorar o código para garantir que seu aplicativo não lance uma exceção fatal ou resulte em algum outro erro. Portanto, para corrigir esse código, substitua o código a seguir:
 
 ```csharp
 if (existingUser == false)
@@ -366,9 +366,9 @@ if (existingUser == false && users[i].firstname != null && users[i].lastname != 
     User user = new User();
 ```
 
-Ao usar esse código, você atender aos seus requisitos de código e certifique-se de que um registro com um `firstname` ou `lastname` valor `null` não é adicionado aos dados.
+Usando esse código, você preenche os requisitos de código e verifica se um registro com um valor de `firstname` ou `lastname` de `null` não é adicionado aos dados.
 
-Neste exemplo, adicionamos dois `assert` instruções dentro de um loop. Normalmente, ao usar `assert`, é melhor adicionar `assert` instruções no ponto de entrada (início) de uma função ou método. Você está vendo o `UpdateRecords` método no aplicativo de exemplo. Nesse método, você sabe que problemas se qualquer um dos argumentos de método estiver `null`, portanto, verifique-os com um `assert` instrução no ponto de entrada da função.
+Neste exemplo, adicionamos as duas instruções `assert` dentro de um loop. Normalmente, ao usar `assert`, é melhor adicionar instruções `assert` no ponto de entrada (início) de uma função ou método. No momento, você está vendo o método `UpdateRecords` no aplicativo de exemplo. Nesse método, você saberá que está com problemas se um dos argumentos do método for `null`, portanto, verifique-os com uma instrução `assert` no ponto de entrada da função.
 
 ```csharp
 public static void UpdateRecords(List<User> db, User[] users)
@@ -377,33 +377,33 @@ public static void UpdateRecords(List<User> db, User[] users)
     Debug.Assert(users != null);
 ```
 
-Para as instruções anteriores, a sua intenção é que você carregue os dados existentes (`db`) e recuperar novos dados (`users`) antes de atualizar qualquer coisa.
+Para as instruções anteriores, sua intenção é que você carregue os dados existentes (`db`) e recupere novos dados (`users`) antes de atualizar qualquer coisa.
 
-Você pode usar `assert` com qualquer tipo de expressão que resolve `true` ou `false`. Portanto, por exemplo, você pode adicionar um `assert` instrução como esta.
+Você pode usar `assert` com qualquer tipo de expressão que seja resolvida para `true` ou `false`. Portanto, por exemplo, você pode adicionar uma instrução `assert` como esta.
 
 ```csharp
 Debug.Assert(users[0].points > 0);
 ```
 
-O código anterior é útil se você quiser especificar a intenção do seguinte: um novo valor de ponto de maior que zero (0) é necessário para atualizar o registro do usuário.
+O código anterior será útil se você quiser especificar a seguinte intenção: um novo valor de ponto maior que zero (0) é necessário para atualizar o registro do usuário.
 
-## <a name="inspect-your-code-in-the-debugger"></a>Inspecionar o código no depurador
+## <a name="inspect-your-code-in-the-debugger"></a>Inspecione seu código no depurador
 
-Okey, agora que você corrigiu críticos tudo que há de errado com o aplicativo de exemplo, você pode mover para outras coisas importantes!
+OK, agora que você corrigiu tudo o que está errado com o aplicativo de exemplo, você pode passar para outras coisas importantes!
 
-Mostramos a você o auxiliar de exceção do depurador, mas o depurador é uma ferramenta muito mais poderosa que também permite fazer outras coisas, como percorrer seu código e inspecionar suas variáveis. Esses recursos mais poderosos são úteis em muitos cenários, especialmente o seguinte:
+Mostramos o auxiliar de exceção do depurador, mas o depurador é uma ferramenta muito mais poderosa que também permite que você faça outras coisas como percorrer seu código e inspecionar suas variáveis. Esses recursos mais poderosos são úteis em muitos cenários, especialmente os seguintes:
 
-* Você está tentando isolar um bug de tempo de execução em seu código, mas não é possível fazer isso usando os métodos e ferramentas abordadas anteriormente.
+* Você está tentando isolar um bug de tempo de execução em seu código, mas não é possível fazer isso usando métodos e ferramentas anteriormente discutidos.
 
-* Você deseja validar seu código, ou seja, assisti-lo enquanto ele é executado para garantir que ele está se comportando da maneira que você espera e fazendo o que você deseja.
+* Você deseja validar seu código, ou seja, observá-lo enquanto ele é executado para verificar se ele está se comportando da maneira esperada e fazendo o que você deseja.
 
-    É instrutivo observar seu código enquanto ele é executado. Você pode aprender mais sobre seu código dessa maneira e normalmente pode identificar os bugs antes que eles quaisquer sintomas óbvias de manifesto.
+    É instrutivo observar seu código enquanto ele é executado. Você pode aprender mais sobre seu código dessa maneira e, muitas vezes, pode identificar bugs antes de manifestar quaisquer sintomas óbvios.
 
-Para saber como usar os recursos essenciais do depurador, consulte [depuração para iniciantes absolutos](../debugger/debugging-absolute-beginners.md).
+Para saber como usar os recursos essenciais do depurador, consulte [Depurando para iniciantes absolutos](../debugger/debugging-absolute-beginners.md).
 
 ## <a name="fix-performance-issues"></a>Corrigir problemas de desempenho
 
-Bugs de outro tipo incluem código ineficiente que faz com que seu aplicativo seja executado lentamente ou usar muita memória. Em geral, otimizando o desempenho é algo que você pode fazer mais tarde no desenvolvimento de seu aplicativo. No entanto, você poderá encontrar problemas de desempenho no início (por exemplo, você ver que alguma parte do seu aplicativo está sendo executado lentamente), e talvez você precise testar seu aplicativo com as ferramentas de criação de perfil desde o início. Para obter mais informações sobre ferramentas como a ferramenta de uso da CPU e o analisador de memória de criação de perfil, consulte [primeiro, examine as ferramentas de criação de perfil](../profiling/profiling-feature-tour.md).
+Os bugs de outro tipo incluem código ineficiente que faz com que seu aplicativo seja executado lentamente ou use muita memória. Em geral, otimizar o desempenho é algo que você faz mais tarde no desenvolvimento de seu aplicativo. No entanto, você pode encontrar problemas de desempenho antecipadamente (por exemplo, você vê que alguma parte do seu aplicativo está em execução lenta), e talvez seja necessário testar seu aplicativo com as ferramentas de criação de perfil no início. Para obter mais informações sobre ferramentas de criação de perfil, como a ferramenta de uso da CPU e o analisador de memória, consulte [primeira análise das ferramentas de criação de perfil](../profiling/profiling-feature-tour.md).
 
 ## <a name="next-steps"></a>Próximas etapas
 

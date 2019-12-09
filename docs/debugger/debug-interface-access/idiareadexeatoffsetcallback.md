@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: df32012a100d36c8d288b6b988b9498ff4afd3b3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f8498b0189a1d5bfb876417d4719adb3487065d5
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62832549"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742820"
 ---
 # <a name="idiareadexeatoffsetcallback"></a>IDiaReadExeAtOffsetCallback
-Permite que um aplicativo cliente para fornecer os bytes de um arquivo executável, conforme especificado pela posição do arquivo.
+Permite que um aplicativo cliente forneça bytes de um arquivo executável, conforme especificado pela posição do arquivo.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -28,23 +28,23 @@ Permite que um aplicativo cliente para fornecer os bytes de um arquivo executáv
 IDiaReadExeAtOffsetCallback : IUnknown
 ```
 
-## <a name="methods-in-vtable-order"></a>Métodos na ordem de Vtable
+## <a name="methods-in-vtable-order"></a>Métodos em ordem vtable
  A tabela a seguir mostra os métodos de `IDiaReadExeAtOffsetCallback`.
 
 |Método|Descrição|
 |------------|-----------------|
-|[IDiaReadExeAtOffsetCallback::ReadExecutableAt](../../debugger/debug-interface-access/idiareadexeatoffsetcallback-readexecutableat.md)|Lê o número especificado de bytes, começando no deslocamento especificado de um arquivo executável.|
+|[IDiaReadExeAtOffsetCallback::ReadExecutableAt](../../debugger/debug-interface-access/idiareadexeatoffsetcallback-readexecutableat.md)|Lê o número especificado de bytes começando no deslocamento especificado a partir de um arquivo executável.|
 
 ## <a name="remarks"></a>Comentários
- O aplicativo cliente implementa essa interface para fornecer os bytes do executável usando um deslocamento absoluto em arquivo do executável. Para usar um endereço virtual relativo, implementar o [IDiaReadExeAtRVACallback](../../debugger/debug-interface-access/idiareadexeatrvacallback.md) interface.
+ O aplicativo cliente implementa essa interface para fornecer os bytes do executável usando um deslocamento absoluto no arquivo do executável. Para usar um endereço virtual relativo, implemente a interface [IDiaReadExeAtRVACallback](../../debugger/debug-interface-access/idiareadexeatrvacallback.md) .
 
 ## <a name="notes-for-callers"></a>Observações para chamadores
- Esse método é implementado pelo aplicativo cliente e passado para o [idiadatasource:: Loaddataforexe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) método como um método alternativo para ler o arquivo.
+ Esse método é implementado pelo aplicativo cliente e passado para o método [IDiaDataSource:: loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) como um método alternativo para ler o arquivo.
 
 ## <a name="requirements"></a>Requisitos
- Cabeçalho: Dia2.h
+ Cabeçalho: dia2. h
 
- Biblioteca: diaguids.lib
+ Biblioteca: diaguids. lib
 
  DLL: msdia80.dll
 

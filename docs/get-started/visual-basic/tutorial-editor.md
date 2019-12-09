@@ -5,19 +5,19 @@ ms.custom: seodec18, get-started
 ms.date: 11/20/2018
 ms.technology: vs-ide-general
 ms.topic: tutorial
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: e2f5043b5c9690c668c12da7b902fdff5228f1e5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: fd9643e92d4774ca1356534faca9e031395ff4d9
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62972151"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72632646"
 ---
 # <a name="learn-to-use-the-code-editor"></a>Saiba como usar o editor de códigos
 
@@ -33,7 +33,7 @@ Nesta introdução de 10 minutos ao editor de código do Visual Studio, adiciona
 ::: moniker range="vs-2019"
 
 > [!TIP]
-> Se você ainda não tiver instalado o Visual Studio, acesse a página [Downloads do Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) para instalá-lo gratuitamente.
+> Se você ainda não tiver instalado o Visual Studio, acesse a página [Downloads do Visual Studio](https://visualstudio.microsoft.com/downloads) para instalá-lo gratuitamente.
 
 ::: moniker-end
 
@@ -88,7 +88,7 @@ Há snippets para determinar se existe um arquivo no computador, fazer uma grava
 
 ## <a name="comment-out-code"></a>Comentar o código
 
-A barra de ferramentas, que é a linha de botões sob a barra de menus no Visual Studio, pode ajudar a aumentar sua produtividade durante a codificação. Por exemplo, você pode ativar/desativar o modo de preenchimento do IntelliSense, aumentar ou diminuir um recuo de linha ou comentar um código que não deseja compilar. (O [IntelliSense](../../ide/using-intellisense.md) é um recurso de codificação que exibe uma lista de métodos correspondentes, entre outras coisas.) Nesta seção, comentaremos alguns códigos.
+A barra de ferramentas, que é a linha de botões sob a barra de menus no Visual Studio, pode ajudar a aumentar sua produtividade durante a codificação. Por exemplo, você pode ativar/desativar o modo de preenchimento do IntelliSense, aumentar ou diminuir um recuo de linha ou comentar um código que não deseja compilar. (O[IntelliSense](../../ide/using-intellisense.md) é um auxílio de codificação que exibe uma lista de métodos correspondentes, entre outras coisas.) Nesta seção, vamos comentar um pouco de código.
 
 ![Botões de barra de ferramentas do editor](media/tutorial-editor-toolbar.png)
 
@@ -132,7 +132,7 @@ O bloco de código é recolhido apenas na primeira linha, seguido por um sinal d
 
 ## <a name="view-symbol-definitions"></a>Exibir definições de símbolo
 
-O editor do Visual Studio facilita a inspeção da definição de um tipo, de um método, etc. Uma maneira é navegar até o arquivo que contém a definição, por exemplo, ao selecionar **Ir para Definição** em qualquer lugar em que o símbolo esteja referenciado. Uma maneira ainda mais rápida que não move o foco para fora do arquivo em que você está trabalhando é usar a opção [Inspecionar Definição](../../ide/go-to-and-peek-definition.md#peek-definition). Vamos espiar a definição do tipo `String`.
+O editor do Visual Studio torna mais fácil inspecionar a definição de um tipo, método, etc. Uma maneira é navegar até o arquivo que contém a definição, por exemplo, escolhendo **ir para definição** em qualquer lugar em que o símbolo é referenciado. Uma maneira ainda mais rápida que não move o foco para fora do arquivo em que você está trabalhando é usar a opção [Inspecionar Definição](../../ide/go-to-and-peek-definition.md#peek-definition). Vamos espiar a definição do tipo `String`.
 
 1. Clique com o botão direito do mouse na palavra `String` e escolha **Inspecionar Definição** no menu de conteúdo. Se preferir, pressione **Alt**+**F12**.
 

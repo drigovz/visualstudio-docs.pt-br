@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugStackFrame3::InterceptCurrentException
 ms.assetid: 116c7324-7645-4c15-b484-7a5cdd065ef5
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b3fb11457319d4cea762808ec2619f32c37780a1
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: ffc50f9884d40083d9696869c0e1b34284e4a794
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63412673"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352054"
 ---
 # <a name="idebugstackframe3interceptcurrentexception"></a>IDebugStackFrame3::InterceptCurrentException
 Chamado pelo depurador no quadro de pilhas atual quando quer interceptar a exceção atual.
@@ -38,14 +41,12 @@ int InterceptCurrentException(
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `dwFlags`
+## <a name="parameters"></a>Parâmetros
+`dwFlags`\
+[in] Especifica as ações diferentes. Atualmente, apenas o [INTERCEPT_EXCEPTION_ACTION](../../../extensibility/debugger/reference/intercept-exception-action.md) valor `IEA_INTERCEPT` tem suporte e deve ser especificado.
 
- [in] Especifica as ações diferentes. Atualmente, apenas o [INTERCEPT_EXCEPTION_ACTION](../../../extensibility/debugger/reference/intercept-exception-action.md) valor `IEA_INTERCEPT` tem suporte e deve ser especificado.
-
- `pqwCookie`
-
- [out] Valor exclusivo que identifica uma exceção específica.
+`pqwCookie`\
+[out] Valor exclusivo que identifica uma exceção específica.
 
 ## <a name="return-value"></a>Valor de retorno
  Se for bem-sucedido, retornará S_OK; Caso contrário, retornará um código de erro.

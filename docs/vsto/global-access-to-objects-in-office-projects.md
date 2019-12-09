@@ -30,32 +30,32 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7266e7fa26574332bcb343b552eea2b707a8672b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: f05f18201a055ac88e4af90d7b8e4d9db8f4e4b6
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63427939"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71253440"
 ---
 # <a name="global-access-to-objects-in-office-projects"></a>Acesso global a objetos em projetos do Office
-  Quando você cria um projeto do Office, o Visual Studio gera automaticamente uma classe chamada `Globals` no projeto. Você pode usar o `Globals` classe para acessar vários itens de projeto diferente no tempo de execução de qualquer código no projeto.
+  Quando você cria um projeto do Office, o Visual Studio gera automaticamente uma `Globals` classe chamada no projeto. Você pode usar a `Globals` classe para acessar vários itens de projeto diferentes em tempo de execução de qualquer código no projeto.
 
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
 ## <a name="how-to-use-the-globals-class"></a>Como usar a classe Globals
- `Globals` é uma classe estática que mantém referências a determinados itens em seu projeto. Usando o `Globals` classe, você pode acessar os seguintes itens de qualquer código no projeto em tempo de execução:
+ `Globals`é uma classe estática que mantém referências a determinados itens em seu projeto. Usando a `Globals` classe, você pode acessar os seguintes itens de qualquer código no projeto em tempo de execução:
 
-- O `ThisWorkbook` e `Sheet` *n* classes em um projeto de modelo ou a pasta de trabalho do Excel. Você pode acessar esses objetos usando o `Globals.ThisWorkbook` e `Sheet` *n* propriedades.
+- As `ThisWorkbook` classes `Sheet`e *n* em uma pasta de trabalho ou projeto de modelo do Excel. Você pode acessar esses objetos usando as `Globals.ThisWorkbook` Propriedades e `Sheet` *n* .
 
-- O `ThisDocument` classe em um projeto de modelo ou documento do Word. Você pode acessar esse objeto usando o `Globals.ThisDocument` propriedade.
+- A `ThisDocument` classe em um documento do Word ou projeto de modelo. Você pode acessar esse objeto usando a `Globals.ThisDocument` propriedade.
 
-- O `ThisAddIn` classe em um projeto de suplemento do VSTO. Você pode acessar esse objeto usando o `Globals.ThisAddIn` propriedade.
+- A `ThisAddIn` classe em um projeto de suplemento do VSTO. Você pode acessar esse objeto usando a `Globals.ThisAddIn` propriedade.
 
-- Todas as faixas de opções em seu projeto personalizados usando o Designer de faixa de opções. Você pode acessar as faixas de opções usando o `Globals.Ribbons` propriedade. Para obter mais informações, consulte [acessar a faixa de opções em tempo de execução](../vsto/accessing-the-ribbon-at-run-time.md).
+- Todas as faixas de projeto que você personalizou usando o designer de faixa de faixas. Você pode acessar as faixas de faixa usando a `Globals.Ribbons` propriedade. Para obter mais informações, consulte [acessar a faixa de visualização em tempo de execução](../vsto/accessing-the-ribbon-at-run-time.md).
 
-- Todas as regiões de formulário de Outlook em um projeto de suplemento do VSTO do Outlook. Você pode acessar as regiões de formulário usando o `Globals.FormRegions` propriedade. Para obter mais informações, consulte [acessar uma região de formulário em tempo de execução](../vsto/accessing-a-form-region-at-run-time.md).
+- Todas as regiões de formulário do Outlook em um projeto de suplemento do VSTO do Outlook. Você pode acessar as regiões de formulário usando a `Globals.FormRegions` propriedade. Para obter mais informações, consulte [acessar uma região de formulário em tempo de execução](../vsto/accessing-a-form-region-at-run-time.md).
 
-- Um objeto de fábrica que permite que você crie controles de faixa de opções e hospedar itens em tempo de execução em projetos que se destinam a [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou o [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]. Você pode acessar esse objeto usando o `Globals.Factory` propriedade. Esse objeto é uma instância de uma classe que implemente um as interfaces a seguir:
+- Um objeto de fábrica que permite que você crie controles de faixa de faixas e itens de host em tempo de execução [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] em projetos [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]direcionados ao ou ao. Você pode acessar esse objeto usando a `Globals.Factory` propriedade. Esse objeto é uma instância de uma classe que implementa uma das seguintes interfaces:
 
   - <xref:Microsoft.Office.Tools.Factory>
 
@@ -65,22 +65,22 @@ ms.locfileid: "63427939"
 
   - <xref:Microsoft.Office.Tools.Word.Factory>
 
-  Por exemplo, você pode usar o `Globals.Sheet1` propriedade para inserir texto em um <xref:Microsoft.Office.Tools.Excel.NamedRange> control em `Sheet1` quando um usuário clica em um botão no painel de ações em um projeto de nível de documento para Excel.
+  Por exemplo, você pode usar a `Globals.Sheet1` propriedade para inserir texto em um <xref:Microsoft.Office.Tools.Excel.NamedRange> controle em `Sheet1` quando um usuário clica em um botão no painel Ações em um projeto de nível de documento para o Excel.
 
   [!code-vb[Trin_VstcoreProgramming#1](../vsto/codesnippet/VisualBasic/Trin_VstcoreProgrammingExcelVB/Sheet1.vb#1)]
   [!code-csharp[Trin_VstcoreProgramming#1](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingExcelCS/Sheet1.cs#1)]
 
 ## <a name="initialize-the-globals-class"></a>Inicializar a classe Globals
- Código que tenta usar o `Globals` classe antes do documento ou um suplemento do VSTO é inicializado pode lançar uma exceção de tempo de execução. Por exemplo, usando `Globals` quando declarar uma variável de nível de classe pode falhar porque o `Globals` classe não pode ser inicializada com referências a todos os itens de host antes do objeto declarado é instanciado.
+ O código que tenta usar a `Globals` classe antes que o documento ou suplemento do VSTO seja inicializado pode gerar uma exceção de tempo de execução. Por exemplo, usar `Globals` quando declarar uma variável em nível de classe pode falhar porque `Globals` a classe pode não ser inicializada com referências a todos os itens de host antes que o objeto declarado seja instanciado.
 
 > [!NOTE]
-> O `Globals` classe nunca é inicializado em tempo de design, mas as instâncias de controle são criadas pelo designer. Isso significa que, se você criar um controle de usuário que usa uma propriedade do `Globals` classe de dentro de uma classe de controle de usuário, você deve verificar se a propriedade retorna **nulo** antes de tentar usar o objeto retornado.
+> A `Globals` classe nunca é inicializada em tempo de design, mas as instâncias de controle são criadas pelo designer. Isso significa que, se você criar um controle de usuário que usa uma propriedade `Globals` da classe de dentro de uma classe de controle de usuário, deverá verificar se a propriedade retorna **NULL** antes de tentar usar o objeto retornado.
 
 ## <a name="see-also"></a>Consulte também
-- [Acesso a faixa de opções em tempo de execução](../vsto/accessing-the-ribbon-at-run-time.md)
+- [Acessar a faixa de faixas em tempo de execução](../vsto/accessing-the-ribbon-at-run-time.md)
 - [Acessar uma região de formulário em tempo de execução](../vsto/accessing-a-form-region-at-run-time.md)
-- [Visão geral dos controles de host e de itens de host](../vsto/host-items-and-host-controls-overview.md)
+- [Visão geral de itens de host e controles de host](../vsto/host-items-and-host-controls-overview.md)
 - [Item de host do documento](../vsto/document-host-item.md)
 - [Item de host da pasta de trabalho](../vsto/workbook-host-item.md)
-- [Item de host da planilha](../vsto/worksheet-host-item.md)
+- [Item de host de planilha](../vsto/worksheet-host-item.md)
 - [Escrever código em soluções do Office](../vsto/writing-code-in-office-solutions.md)

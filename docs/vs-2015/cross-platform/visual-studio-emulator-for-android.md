@@ -8,12 +8,12 @@ ms.assetid: 80f0104f-a4db-44dd-bd55-37bb67776c62
 caps.latest.revision: 7
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: a33d7928e6e2555f0cfd484059b062ae801d8633
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: af3dd595b786c57983e44982fa2eb8b9afa2959a
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442083"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300765"
 ---
 # <a name="visual-studio-emulator-for-android"></a>Emulador do Visual Studio para Android
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -83,21 +83,21 @@ O Emulador do Visual Studio para Android é um aplicativo de área de trabalho q
   
  No Visual Studio 2015, você pode instalar, desinstalar e iniciar os perfis de dispositivo usando o Gerenciador de Emulador. Acesse o Gerenciador de Emulador escolhendo **Ferramentas**, **Emulador do Visual Studio para Android**.  
   
- ![O Gerenciador do Emulador do Visual Studio para Android](../cross-platform/media/android-emu-manager.png "Android_Emu_Manager")  
+ ![O emulador do Visual Studio para o Gerenciador do Android](../cross-platform/media/android-emu-manager.png "Android_Emu_Manager")  
   
  Por padrão, há quatro perfis de dispositivo previamente instalados (configurações KitKat e Lollipop para telefone 5" e tablets de 7"), conforme indicado pelo texto em branco e ícones. Outros perfis na lista aparecerão esmaecidos até que você escolha o botão **Instalar Perfil** e a instalação seja concluída. Você pode filtrar a lista por Nível de API e clicar na seta de detalhes no lado inferior direito de um perfil para exibir todos os detalhes da configuração.  
   
  Depois de instalar o conjunto de perfis que você gostaria de usar, inicie esses novos perfis diretamente do gerenciador pressionando o botão verde **Reproduzir**. Eles também aparecerão no menu suspenso do destino de depuração em qualquer tipo de projeto móvel de plataforma cruzada do Visual Studio.  
   
 ## <a name="FeaturesTest"></a> Recursos que você pode testar no emulador  
- Para obter informações detalhadas sobre os recursos que você pode testar no emulador, confira esta [documentação](http://blogs.msdn.com/b/visualstudioalm/archive/2014/11/12/introducing-visual-studio-s-emulator-for-android.aspx).  
+ Para obter informações detalhadas sobre os recursos que você pode testar no emulador, confira esta [documentação](https://devblogs.microsoft.com/devops/introducing-visual-studios-emulator-for-android/).  
   
 ## <a name="FeaturesNonTest"></a> Recursos que você não pode testar no emulador  
  A lista a seguir descreve os recursos da plataforma Android que você **não pode** testar no emulador. Teste esses recursos em um dispositivo físico.  
   
 - Bússola  
   
-- Giroscópio  
+- {1&gt;Giroscópio&lt;1}  
   
 - Controlador de vibração  
   
@@ -106,7 +106,7 @@ O Emulador do Visual Studio para Android é um aplicativo de área de trabalho q
 ## <a name="Support"></a> Recursos de suporte  
  Se o computador host atender aos requisitos do sistema e você encontrar um problema não abordado neste guia de solução de problemas:  
   
-- Faça uma pergunta no StackOverflow usando o [emulador do android](http://stackoverflow.com/questions/tagged/android-emulator) e a marca visual-studio.  
+- Faça uma pergunta no StackOverflow usando o [emulador do android](https://stackoverflow.com/questions/tagged/android-emulator) e a marca visual-studio.  
   
 - Relate um problema usando a ferramenta Enviar um Smiley no Visual Studio ou no Gerenciador de emulador.  
   

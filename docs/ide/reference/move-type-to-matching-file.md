@@ -1,21 +1,22 @@
 ---
 title: Mover um tipo para uma refatoração de arquivo correspondente
+description: Mova o tipo para um arquivo separado com o mesmo nome. Clique com o botão direito do mouse no tipo, selecione Ações Rápidas e Refatorações e selecione Mover Tipo para <TypeName>.cs.
 ms.date: 01/26/2018
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 31e3b12f6a19ea64e43f7a5e00e3c795cc7358e0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: ba822981ade5ebdc191732e0a32b02a9a4005fb4
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62540725"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666483"
 ---
 # <a name="move-a-type-to-a-matching-file-refactoring"></a>Refatoração Mover um tipo para um arquivo correspondente
 
@@ -25,11 +26,11 @@ Esta refatoração aplica-se a:
 
 - Visual Basic
 
-**O quê:** Permite mover o tipo selecionado para um arquivo separado com o mesmo nome.
+**O quê:** permite mover o tipo selecionado para um arquivo separado com o mesmo nome.
 
-**Quando:** Você tem várias classes, structs, interfaces, etc., no mesmo arquivo que deseja separar.
+**Quando:** você tem várias classes, structs, interfaces, etc. no mesmo arquivo que deseja separar.
 
-**Por que:** A colocação de vários tipos no mesmo arquivo pode dificultar a localização desses tipos. Ao mover os tipos de arquivos com o mesmo nome, o código torna-se mais legível e mais fácil de navegar.
+**Por quê:** colocar vários tipos no mesmo arquivo pode dificultar a localização desses tipos. Ao mover os tipos de arquivos com o mesmo nome, o código torna-se mais legível e mais fácil de navegar.
 
 ## <a name="how-to"></a>Como fazer
 
@@ -45,7 +46,7 @@ Esta refatoração aplica-se a:
 
 2. Depois, siga um destes procedimentos:
 
-   - Pressione **Ctrl**+**.**
+   - Pressione **Ctrl**+ **.**
    - Clique com o botão direito do mouse sobre o nome do tipo e selecione **Ação Rápidas e Refatorações**
 
 1. Selecione **Mover tipo para *NomeDoTipo*.cs** no menu, em que *NomeDoTipo* é o nome do tipo selecionado.

@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEEVisualizerDataProvider::GetNewObjectForVisualizer method
 ms.assetid: a898d549-4898-4fde-aad1-e8bb89129652
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: edfc3a2e5a89216a1bd50500ac29e21ed5842503
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 322e18132050bca6803dac04a5cfbe3fd92f3106
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62868109"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66335576"
 ---
 # <a name="ieevisualizerdataprovidergetnewobjectforvisualizer"></a>IEEVisualizerDataProvider::GetNewObjectForVisualizer
 Esse método obtém um novo objeto para o visualizador. Esse método sempre criará um novo objeto do objeto existente.
@@ -36,10 +39,9 @@ int GetNewObjectForVisualizer(
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `ppObject`
-
- [out] O novo objeto.
+## <a name="parameters"></a>Parâmetros
+`ppObject`\
+[out] O novo objeto.
 
 ## <a name="return-value"></a>Valor de retorno
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.

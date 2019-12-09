@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugThread2::CanSetNextStatement
 ms.assetid: 7014af80-ff4f-4790-a34b-0528918d1fa3
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 43ec2c5d157832834f76834f7b93e193629b66d8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 111ace07edf163fa978a3c54628878af51cb7d02
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62868376"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66320291"
 ---
 # <a name="idebugthread2cansetnextstatement"></a>IDebugThread2::CanSetNextStatement
 Determina se o ponteiro de instrução atual pode ser definido para o registro de ativação.
@@ -38,12 +41,12 @@ int CanSetNextStatement ( 
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `pStackFrame` Reservado para uso futuro; definido como um valor nulo. Se esse for um valor nulo, use o quadro de pilhas atual.
+## <a name="parameters"></a>Parâmetros
+`pStackFrame`\
+Reservado para uso futuro; definido como um valor nulo. Se esse for um valor nulo, use o quadro de pilhas atual.
 
- `pCodeContext`
-
- [in] Uma [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) objeto que descreve o local do código prestes a ser executada e seu contexto.
+`pCodeContext`\
+[in] Uma [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) objeto que descreve o local do código prestes a ser executada e seu contexto.
 
 ## <a name="return-value"></a>Valor de retorno
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.

@@ -1,20 +1,21 @@
 ---
-title: Atualizando projeto personalizados e modelos de Item para Visual Studio 2017 | Microsoft Docs
+title: Atualizar modelos de item e projeto personalizados para o Visual Studio 2017
+titleSuffix: ''
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: ad02477b-e101-4f32-aeb7-292bf95d5c2f
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: cb4defa206d176e57804e6d2473262568cd5edbf
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d375dfc4a53015f57546f7cbfcc8b940fa81bd0b
+ms.sourcegitcommit: 74c5360186731de07828764eb32ea1033a8c2275
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434209"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67559752"
 ---
 # <a name="upgrade-custom-project-and-item-templates-for-visual-studio-2017"></a>Atualizar modelos de Item para Visual Studio 2017 e projeto personalizados
 
@@ -26,7 +27,7 @@ Se você quiser criar um modelo de projeto ou item como parte de uma extensão d
 
 ## <a name="template-scanning"></a>Verificação de modelo
 
-Nas versões anteriores do Visual Studio, **devenv /setup** ou **devenv /installvstemplates** verificados no disco local para localizar modelos de projeto e item. A partir do Visual Studio 2017, a verificação é executada somente para o local de nível de usuário. O local de nível de usuário padrão é **%USERPROFILE%\Documents\\< versão do Visual Studio\>\Templates\\**. Esse local é usado para modelos gerados pelo **Project** > **exportar modelos...**  comando, se o **importar automaticamente o modelo no Visual Studio** opção for selecionada no assistente.
+Nas versões anteriores do Visual Studio, **devenv /setup** ou **devenv /installvstemplates** verificados no disco local para localizar modelos de projeto e item. A partir do Visual Studio 2017, a verificação é executada somente para o local de nível de usuário. O local de nível de usuário padrão é **%USERPROFILE%\Documents\\< versão do Visual Studio\>\Templates\\** . Esse local é usado para modelos gerados pelo **Project** > **exportar modelos...**  comando, se o **importar automaticamente o modelo no Visual Studio** opção for selecionada no assistente.
 
 Para outros locais (não-usuário), você deve incluir um arquivo de manifest(.vstman) que especifica o local e outras características do modelo. O arquivo vstman é gerado, juntamente com o arquivo. vstemplate usado para modelos. Se você instalar a extensão usando um. VSIX, você pode fazer isso por meio da recompilação a extensão no Visual Studio 2017. Mas se você usar um. msi, você precisa fazer as alterações manualmente. Para obter uma lista do que você precisa fazer para que essas alterações, consulte **atualizações para extensões instaladas com um. MSI** posteriormente nesta página.
 
@@ -34,7 +35,7 @@ Para outros locais (não-usuário), você deve incluir um arquivo de manifest(.v
 
 1. Abra a solução no Visual Studio 2017. Você será solicitado a atualizar o código. Clique em **OK**.
 
-2. Após a conclusão da atualização, você precisa alterar a versão de destino de instalação. No projeto VSIX, abra o arquivo vsixmanifest e selecione o **instalar destinos** guia. Se o **intervalo de versão** campo é **[14.0]**, clique em **editar** e alterá-lo para incluir o Visual Studio 2017. Por exemplo, ele pode ser definido como **[14.0,15.0]** para instalar a extensão do Visual Studio 2015 ou Visual Studio 2017, ou em **[15.0]** para instalá-lo para apenas o Visual Studio 2017.
+2. Após a conclusão da atualização, você precisa alterar a versão de destino de instalação. No projeto VSIX, abra o arquivo vsixmanifest e selecione o **instalar destinos** guia. Se o **intervalo de versão** campo é **[14.0]** , clique em **editar** e alterá-lo para incluir o Visual Studio 2017. Por exemplo, ele pode ser definido como **[14.0,15.0]** para instalar a extensão do Visual Studio 2015 ou Visual Studio 2017, ou em **[15.0]** para instalá-lo para apenas o Visual Studio 2017.
 
 3. Recompile o código.
 
@@ -179,9 +180,9 @@ Mostramos os pontos da diferença entre o Visual Studio 2015 e Visual Studio 201
 
 Algumas extensões baseadas em MSI implantar modelos em locais de modelo comuns, como os diretórios a seguir:
 
-- **\<Diretório de instalação do Visual Studio > \Common7\IDE\\< ProjectTemplates/ItemTemplates >**
+- **\<Diretório de instalação do Visual Studio > \Common7\IDE\\< ProjectTemplates/ItemTemplates\>**
 
-- **\<Diretório de instalação do Visual Studio > \Common7\IDE\Extensions\\< ExtensionName\>\\< Project/ItemTemplates >**
+- **\<Diretório de instalação do Visual Studio > \Common7\IDE\Extensions\\< ExtensionName\>\\< Project/ItemTemplates\>**
 
 Se sua extensão executa uma implantação baseada em MSI, você precisa gerar o manifesto do modelo manualmente e certifique-se de que ele seja incluído na configuração da extensão. Compare os exemplos de vstman listados acima e o [modelo de manifesto do esquema de referência do Visual Studio](../extensibility/visual-studio-template-manifest-schema-reference.md).
 

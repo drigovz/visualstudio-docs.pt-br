@@ -8,17 +8,20 @@ helpviewer_keywords:
 - SetPassCount method
 - IDebugBoundBreakpoint2::SetPassCount method
 ms.assetid: b32c12f9-b34d-43bd-a1b9-61af6cf8e51b
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 273735feeca633a1104a072c0e4d37c520d9de23
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: ee0032a079ff9c67e0a2de350e0405cfa20303db
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62923407"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66314516"
 ---
 # <a name="idebugboundbreakpoint2setpasscount"></a>IDebugBoundBreakpoint2::SetPassCount
 Define ou altera a contagem de passagem associada a este ponto de interrupção associado.
@@ -37,10 +40,9 @@ int SetPassCount( 
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `bpPassCount`
-
- [in] O [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md) estrutura que especifica a contagem de passagem.
+## <a name="parameters"></a>Parâmetros
+`bpPassCount`\
+[in] O [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md) estrutura que especifica a contagem de passagem.
 
 ## <a name="return-value"></a>Valor de retorno
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro. Retorna `E_BP_DELETED` se o estado do objeto associado de ponto de interrupção é definido como `BPS_DELETED` (parte do [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) enumeração).

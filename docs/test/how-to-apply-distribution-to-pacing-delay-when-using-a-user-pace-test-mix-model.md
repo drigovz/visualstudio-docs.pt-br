@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - load tests, test mix model
 ms.assetid: ae8b35f9-d465-4d72-8d7d-7b56ae6ffd22
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d3ef8ecfefd1d614570b4d73808d3e5736d77230
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 3241017a381370f215ed4f9211ae646dc6c80b65
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62979331"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72664837"
 ---
-# <a name="how-to-apply-distribution-to-pacing-delay-for-a-user-pace-test-mix-model"></a>Como: Aplicar distribuição à definição dos atrasos durante o uso de um modelo de combinação de testes
+# <a name="how-to-apply-distribution-to-pacing-delay-for-a-user-pace-test-mix-model"></a>Como aplicar distribuição à definição dos atrasos durante o uso de um modelo de combinação de testes
 
 Depois de criar seu teste de carga usando o **Novo Assistente de Teste de Carga**, você poderá usar o Editor de Teste de Carga para alterar as propriedades de cenários para que eles atendam às suas metas e necessidades de teste.
 
@@ -28,11 +28,11 @@ A propriedade **Aplicar Distribuição à Definição dos Atrasos** é definida 
 
 O valor de **Aplicar distribuição à definição dos atrasos** pode ser definido como verdadeiro ou falso:
 
-- **Verdadeiro**: O cenário aplica atrasos de distribuição estatística normal que são especificados pelo valor na coluna **Testes por usuário por hora** na caixa de diálogo **Editar combinação de testes**. Para saber mais, veja [Editar modelos de combinação de texto para especificar a probabilidade de um usuário virtual executar um teste](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md).
+- **Verdadeiro**: o cenário aplica atrasos de distribuição estatística normal que são especificados pelo valor na coluna **Testes por usuário por hora** na caixa de diálogo **Editar combinação de testes**. Para saber mais, veja [Editar modelos de combinação de texto para especificar a probabilidade de um usuário virtual executar um teste](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md).
 
      Por exemplo, vamos supor que você tenha o valor de **Testes por Usuário por Hora** na caixa de diálogo **Editar Combinação de Testes** definido como dois usuários por hora. Se a propriedade de **Aplicar distribuição à definição dos atrasos** for definida como **Verdadeiro**, uma distribuição estatística normal será aplicada ao tempo de espera entre os testes. Os testes ainda serão executados duas vezes por hora, mas não haverá necessariamente um atraso de 30 minutos entre eles. O primeiro teste pode ser executado depois de quatro minutos e o segundo teste, depois de 45 minutos.
 
-- **Falso**: Os testes são executados no ritmo que você especificou para o valor na coluna **Testes por usuário por hora** na caixa de diálogo **Editar Combinação de Testes**. Para saber mais, veja [Editar modelos de combinação de texto para especificar a probabilidade de um usuário virtual executar um teste](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md).
+- **Falso**: os testes são executados no ritmo que você especificou para o valor na coluna **Testes por usuário por hora** na caixa de diálogo **Editar Combinação de Testes**. Para saber mais, veja [Editar modelos de combinação de texto para especificar a probabilidade de um usuário virtual executar um teste](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md).
 
      Por exemplo, vamos supor que você tenha o valor de **Testes por Usuário por Hora** na caixa de diálogo **Editar Combinação de Testes** definido como dois usuários por hora. Se a propriedade de **Aplicar distribuição à definição dos atrasos** for definida como **Falso**, não haverá intervalo na execução dos testes. O teste será executado a cada 30 minutos. Isso garante que você execute dois testes por hora.
 
@@ -55,6 +55,6 @@ O valor de **Aplicar distribuição à definição dos atrasos** pode ser defini
 ## <a name="see-also"></a>Consulte também
 
 - [Editar cenários de teste de carga](../test/edit-load-test-scenarios.md)
-- [Passo a passo: Criar e executar um teste de carga](../test/walkthrough-create-and-run-a-load-test.md)
+- [Passo a passo: criar e executar um teste de carga](../test/walkthrough-create-and-run-a-load-test.md)
 - [Controladores e agentes de teste](configure-test-agents-and-controllers-for-load-tests.md)
 - [Propriedades do cenário de teste de carga](../test/load-test-scenario-properties.md)

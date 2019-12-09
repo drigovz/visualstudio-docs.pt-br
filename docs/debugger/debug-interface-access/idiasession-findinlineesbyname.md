@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1cb665e3c0965a2e85c8d28202114c95928988d5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a7fd74707284e32471bad1da27e288139ea617a1
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839297"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742179"
 ---
 # <a name="idiasessionfindinlineesbyname"></a>IDiaSession::findInlineesByName
-Recupera uma enumeração que permite que um cliente iterar por meio das informações de número de linha de todas as funções embutidas que correspondem a um nome especificado.
+Recupera uma enumeração que permite que um cliente itere pelas informações de número de linha de todas as funções embutidas que correspondem a um nome especificado.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -33,17 +33,17 @@ HRESULT findInlineesByName ( 
 #### <a name="parameters"></a>Parâmetros
  `name`
 
-[in] Especifica o nome a ser usado para comparação.
+no Especifica o nome a ser usado para comparação.
 
  `option`
 
-[in] Especifica as opções de comparação aplicadas à pesquisa de nome. Os valores do [enumeração NameSearchOptions](../../debugger/debug-interface-access/namesearchoptions.md) enumeração pode ser usada sozinho ou em combinação.
+no Especifica as opções de comparação aplicadas à pesquisa de nomes. Os valores da enumeração de [Enumeração NameSearchOptions](../../debugger/debug-interface-access/namesearchoptions.md) podem ser usados sozinhos ou em combinação.
 
  `ppResult`
 
-[out] Retorna um [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) objeto que contém uma lista dos números de linha que foram recuperados.
+fora Retorna um objeto [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) que contém uma lista dos números de linha que foram recuperados.
 
-## <a name="return-value"></a>Valor de retorno
+## <a name="return-value"></a>Valor retornado
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
 
 ## <a name="see-also"></a>Consulte também

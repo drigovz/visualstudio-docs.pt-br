@@ -3,23 +3,21 @@ title: Cenários sem suporte de depuração no Designer de Fluxo de Trabalho
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 6adbe379-41d0-4681-9cd0-b91f187c3c2c
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: 83c9b1158319b580bc860982b6c51c9c28edf5af
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+author: jillre
+ms.openlocfilehash: bfc4e0995a9abb88f73ff27186ed4e0d1dc81648
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62433871"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72649780"
 ---
 # <a name="unsupported-debugging-scenarios-in-the-workflow-designer"></a>Cenários sem suporte de depuração no Designer de Fluxo de Trabalho
 
-O Designer de fluxo de trabalho do .NET Framework 4 introduziu muitos recursos novos, mas ainda existem alguns cenários de depuração que ele não oferece suporte.
-
-O Designer de fluxo de trabalho não há suporte para cenários de depuração veja a seguir:
+O Designer de Fluxo de Trabalho não oferece suporte aos seguintes cenários de depuração:
 
 - A execução não pode ser continuada após o código foi editado.
 
@@ -29,7 +27,7 @@ O Designer de fluxo de trabalho não há suporte para cenários de depuração v
 
 - O designer de fluxo de trabalho não pode ser usado para criar fluxos de trabalho criados em código sem o uso de designer.
 
-- Fluxos de trabalho criados em versões anteriores do Windows Workflow Foundation (WF) não podem ser depurados no designer do .NET Framework 4.
+- Os fluxos de trabalho criados em versões anteriores do Windows Workflow Foundation (WF) não podem ser depurados no .NET Framework 4 ou posterior.
 
 - Os pontos de interrupção não podem ser definidos nos links entre atividades ou nós de <xref:System.Activities.Statements.Flowchart> .
 
@@ -39,20 +37,20 @@ O Designer de fluxo de trabalho não há suporte para cenários de depuração v
 
 - Os pontos de interrupção de fluxo de trabalho não podem ser definidos na janela de pilha de chamadas.
 
-- Durante a criação de pontos de interrupção no designer, o **linha** e **caractere** configurações no **novo ponto de interrupção** caixa de diálogo não são usados.
+- Ao criar pontos de interrupção no designer, as configurações de **linha** e **caractere** na caixa de diálogo **novo ponto de interrupção** não são usadas.
 
 - A janela ou o menu de atalho do ponto de interrupção não suportam as seguintes colunas ou opções para depuração de fluxo de trabalho:
 
-    - Condição
+  - Condição
 
-    - Contagem de acertos
+  - Contagem de acertos
 
-    - Quando atingido
+  - Quando atingido
 
-    - Função
+  - Função
 
-    - Dados
+  - Dados
 
-    - Processo
+  - Processo
 
-    - Vá para a desmontagem
+  - Vá para a desmontagem

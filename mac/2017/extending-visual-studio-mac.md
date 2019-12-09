@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 04/14/2017
 ms.technology: vs-ide-sdk
 ms.assetid: D5245AB0-8404-426B-B538-F49125E672B2
-ms.openlocfilehash: 3465ef29ca732cd26c03919082052d8b26a83ba1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 87a4fae1bd5430037b34297f803a6d955a052f68
+ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62998207"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73716943"
 ---
 # <a name="extending-visual-studio-for-mac"></a>Estendendo o Visual Studio para Mac
 
@@ -28,7 +28,7 @@ Para que um pacote de extensão se baseie no Visual Studio para Mac, ele deve te
 A vantagem desse design modular é que o Visual Studio para Mac é extensível – há muitos pontos de extensão que podem servir de base com pacotes de extensão personalizados. Exemplos de pacotes de extensão atuais incluem suporte para C# e F#, ferramentas de depuração e modelos de projeto.
 
 > [!NOTE]
-> **Observação**: Se você tiver um projeto do Criador de Suplementos que foi criado antes do Criador de Suplementos 1.2, será necessário migrar seu projeto, conforme descrito nas etapas indicadas [aqui](https://mhut.ch/addinmaker/1.2).
+> Se você tiver um projeto do Criador de Suplementos que foi criado antes do Criador de Suplementos 1.2, será necessário migrar seu projeto, conforme descrito nas etapas indicadas [aqui](https://mhut.ch/addinmaker/1.2).
 
 <!---The [Walkthrough](~/extending-visual-studio-mac-walkthrough.md) topic explains how to build an extension package that uses a *Command* to insert the date and time into an open text document.--->
 
@@ -135,7 +135,7 @@ Isso vincula o Comando e o CommandItem – o CommandItem chama o Comando quando 
 
 <!--The extension package detailed in the [Walkthrough](~/extending-visual-studio-mac-walkthrough.md) deals with the Text Editor in Visual Studio for Mac, but this is only one of many possible areas for customization. -->
 
-Para ver informações sobre o escopo das áreas que estão disponíveis para o desenvolvimento, consulte a [Referência de árvore de extensões](http://monodevelop.com/Developers/Articles/Extension_Tree_Reference) e [Visão geral da API](http://monodevelop.com/Developers/Articles/API_Overview). Ao criar pacotes de extensão avançados, consulte também [Artigos do desenvolvedor](http://monodevelop.com/Developers/Articles). Veja abaixo uma lista parcial das áreas de personalização:
+Para ver informações sobre o escopo das áreas que estão disponíveis para o desenvolvimento, consulte a [Referência de árvore de extensões](https://www.monodevelop.com/developers/articles/extension-tree-reference/) e [Visão geral da API](https://www.monodevelop.com/developers/articles/api-overview/). Ao criar pacotes de extensão avançados, consulte também [Artigos do desenvolvedor](https://www.monodevelop.com/developers/articles/). Veja abaixo uma lista parcial das áreas de personalização:
 
 * Painéis
 * Esquemas de associação de teclas
@@ -153,7 +153,7 @@ Para ver informações sobre o escopo das áreas que estão disponíveis para o 
 * Geradores de código
 * Snippets de código
 * Frameworks de destino
-* Tempo de execução de destino
+* runtime de destino
 * Back-ends de VCS
 * Refatoração
 * Manipuladores de execução

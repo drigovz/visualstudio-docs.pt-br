@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - DEBUGREF_INFO_FLAGS enumeration
 ms.assetid: 1b043327-302a-4f6d-b51d-f94f9d7c7f9d
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 50efecb332be0a1cd9d9ff2c92dc97d5096eb44e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 1adab87ed09ca2ff16d837da084d8cc0b76956fe
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56686280"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66318363"
 ---
 # <a name="debugrefinfoflags"></a>DEBUGREF_INFO_FLAGS
 Especifica quais informações devem ser recuperadas sobre um objeto de referência de depuração.
@@ -53,24 +56,33 @@ public enum enum_DEBUGREF_INFO_FLAGS {
 };
 ```
 
-## <a name="members"></a>Membros
-DEBUGREF_INFO_NAME Initialize/usar o `bstrName` campo na estrutura.
+## <a name="fields"></a>Campos
+`DEBUGREF_INFO_NAME`\
+Inicialização/usar o `bstrName` campo na estrutura.
 
-DEBUGREF_INFO_TYPE Initialize/usar o `bstrType` campo na estrutura.
+`DEBUGREF_INFO_TYPE`\
+Inicialização/usar o `bstrType` campo na estrutura.
 
-DEBUGREF_INFO_VALUE Initialize/usar o `bstrValue` campo na estrutura.
+`DEBUGREF_INFO_VALUE`\
+Inicialização/usar o `bstrValue` campo na estrutura.
 
-DEBUGREF_INFO_ATTRIB Initialize/usar o `dwAttrib` campo na estrutura.
+`DEBUGREF_INFO_ATTRIB`\
+Inicialização/usar o `dwAttrib` campo na estrutura.
 
-DEBUGREF_INFO_REFTYPE Initialize/usar o `dwRefType` campo na estrutura.
+`DEBUGREF_INFO_REFTYPE`\
+Inicialização/usar o `dwRefType` campo na estrutura.
 
-DEBUGREF_INFO_REF Initialize/usar o `pReference` campo na estrutura.
+`DEBUGREF_INFO_REF`\
+Inicialização/usar o `pReference` campo na estrutura.
 
-DEBUGREF_INFO_VALUE_AUTOEXPAND o campo de valor deve conter o valor expandida automaticamente, se disponível, para esse tipo de objeto.
+`DEBUGREF_INFO_VALUE_AUTOEXPAND`\
+O campo de valor deve conter o valor expandida automaticamente, se disponível, para esse tipo de objeto.
 
-DEBUGREF_INFO_NONE indica que nenhum sinalizador está definido.
+`DEBUGREF_INFO_NONE`\
+Indica que nenhum sinalizador está definido.
 
-DEBUGREF_INFO_ALL indica uma máscara dos sinalizadores.
+`DEBUGREF_INFO_ALL`\
+Indica uma máscara dos sinalizadores.
 
 ## <a name="remarks"></a>Comentários
 Esses sinalizadores são passados para o [EnumChildren](../../../extensibility/debugger/reference/idebugreference2-enumchildren.md) e [GetReferenceInfo](../../../extensibility/debugger/reference/idebugreference2-getreferenceinfo.md) métodos para indicar quais campos dos [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) são de estrutura a ser inicializado.

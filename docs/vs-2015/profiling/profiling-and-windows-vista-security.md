@@ -12,12 +12,12 @@ caps.latest.revision: 24
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: fb95164642595195dc62166aec5c81f39abd33e3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d7e485bc6289634e1bb6d4b4106d54c8dc82096b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62423064"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65683696"
 ---
 # <a name="profiling-and-windows-vista-security"></a>Criação de perfil e segurança do Windows Vista
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,4 +48,4 @@ Dependendo das configurações de Permissões de Acesso do Usuário do [!INCLUDE
 ## <a name="see-also"></a>Consulte também  
  [Visões gerais](../profiling/overviews-performance-tools.md)   
  [VSPerfCmd](../profiling/vsperfcmd.md)   
- [Como: Anexar a um processo em execução](http://msdn.microsoft.com/636d0a52-4bfd-48d2-89ad-d7b9ca4dc4f4)
+ [Como: Anexar a um processo em execução](https://msdn.microsoft.com/636d0a52-4bfd-48d2-89ad-d7b9ca4dc4f4)
