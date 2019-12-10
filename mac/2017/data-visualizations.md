@@ -1,17 +1,17 @@
 ---
 title: Depuração – Visualizações de dados
 description: A depuração é uma parte comum e necessária da programação. O Visual Studio para Mac contém um pacote inteiro de recursos para facilitar a depuração. Este artigo examina as diferentes visualizações de dados que podem ser exibidas ao inspecionar objetos no depurador.
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 05/06/2018
 ms.technology: vs-ide-debug
 ms.assetid: 527E6BEC-EF15-4002-ACB5-62AE1C16F6B7
-ms.openlocfilehash: 0b9ec63855eff0b69f5523b1905b79d360509e67
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 3355b81406d2b510dc13604a026bcd014bf9dbcb
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62931874"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74984762"
 ---
 # <a name="data-visualizations"></a>Visualizações de dados
 
@@ -67,7 +67,7 @@ Uma cadeia de caracteres de menos de 100 caracteres é exibida inteira, sem uma 
 ![Visualização de cadeia de caracteres](media/data-visualizations-image17.png)
 
 ### <a name="small-strings"></a>Cadeias de caracteres pequenas:
-![Visualização de cadeia de caracteres pequenas](media/data-visualizations-image18.png)]
+![Visualização de cadeia de caracteres pequenas](media/data-visualizations-image18.png)[]
 
 ### <a name="medium-length-strings"></a>Cadeias de caracteres de tamanho médio:
 ![Visualização de cadeia de caracteres média](media/data-visualizations-image19.png)

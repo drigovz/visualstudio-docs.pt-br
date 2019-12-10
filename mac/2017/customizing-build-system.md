@@ -1,16 +1,16 @@
 ---
 title: Personalizando o Sistema de Build
 description: Este artigo é uma breve introdução ao sistema de build MSBuild usado pelo Visual Studio para Mac
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 04/14/2017
 ms.assetid: 6958B102-8527-4B40-BC65-3505DB63F9D3
-ms.openlocfilehash: 0c2a4590b15faa2573ccab3ff51ff5cd54e177ca
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 97416ef126ee77f9955d8fa486d7bb7e2ceb725e
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62932829"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74983440"
 ---
 # <a name="customizing-the-build-system"></a>Personalizando o sistema de build
 
@@ -56,7 +56,7 @@ O arquivo de destino é outro arquivo MSBuild. Este arquivo contém o código MS
 
 Há dois tipos de dados fundamentais no MSBuild: *itens* e *propriedades*, que são explicados em mais detalhes nas seções a seguir.
 
-#### <a name="properties"></a>Propriedades
+#### <a name="properties"></a>{1&gt;Propriedades&lt;1}
 
 As propriedades são pares chave/valor, que são usados para armazenar configurações que afetam a compilação, como opções do compilador.
 
@@ -78,7 +78,7 @@ Por exemplo, o PropertyGroup para um aplicativo de console simples pode ser seme
 
 Propriedades podem ser referidas de expressões que usam a sintaxe `$()`. Por exemplo, `$(Foo)` será avaliado como o valor da propriedade `Foo`. Se a propriedade não foi definida, ela será avaliada como uma cadeia de caracteres vazia, sem erros.
 
-#### <a name="items"></a>Itens
+#### <a name="items"></a>{1&gt;Itens&lt;1}
 
 Os itens fornecem uma maneira de lidar com entradas para o sistema de build, como listas ou conjuntos e geralmente representam arquivos. Cada item tem um *tipo* e uma *especificação* de item, bem como *metadados* arbitrários opcionais. Observe que o MSBuild não funciona em itens individuais, ele obtém todos os itens de um determinado tipo, chamado *conjunto* de itens
 

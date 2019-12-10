@@ -1,16 +1,16 @@
 ---
 title: Ações de Build
 description: Este artigo descreve as diferentes ações de build que podem ser usadas para projetos em C#
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: 5399BCB1-E317-4C7B-87B1-C531E985DE6E
-ms.openlocfilehash: 97cabcacf276c6972a717e968656430ad32e37e3
-ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
+ms.openlocfilehash: d55ab6aea15dbad7f1cbd718136fba261dfa1c69
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73715843"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74983252"
 ---
 # <a name="build-actions"></a>Ações de Build
 

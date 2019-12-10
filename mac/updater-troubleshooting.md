@@ -2,19 +2,19 @@
 title: Atualizador tem erros de recuperação de informações
 description: Instruções de correção ao ver o erro "Erro ao recuperar informações de atualização". no Visual Studio 2019 para Mac
 ms.topic: troubleshooting
-author: asb3993
-ms.author: amburns
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 04/13/2019
 ms.technology: vs-ide-install
 ms.assetid: 31AF914A-C66B-4CD3-9429-39695E0E94AE
-ms.openlocfilehash: 5ba295defe19c6f3c6c56d5bccc7cc3fa367bb50
-ms.sourcegitcommit: cf8c0fef2b9690595e99ce3802586cdd55fd37c2
-ms.translationtype: HT
+ms.openlocfilehash: b25285ff3060734ee18085d7a9e89cd0d0c43439
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "70107778"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74984408"
 ---
-# <a name="troubleshooting-updater-has-errors-retrieving-information"></a>Solução de problemas: Atualizador tem erros de recuperação de informações
+# <a name="troubleshooting-updater-has-errors-retrieving-information"></a>Solução de problemas: o atualizador tem erros ao recuperar informações
 
 Em raras ocasiões, você poderá ver a mensagem de erro "Erro ao recuperar informações de atualização" ao tentar [atualizar o Visual Studio para Mac](update.md). Se isso acontecer, tente as seguintes etapas para corrigi-lo:
 

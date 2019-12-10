@@ -1,17 +1,17 @@
 ---
 title: Incluindo um pacote NuGet no projeto
 description: Este documento aborda como incluir um pacote NuGet em um projeto Xamarin. Ele explica a descoberta e download de um pacote, apresentando também os recursos de integração do IDE.
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 04/14/2017
 ms.assetid: 5C800815-0B13-4B27-B017-95FCEF1A0EA2
 ms.custom: video
-ms.openlocfilehash: 154f779ee8b622c9ee66a753a23e9627f9d443c0
-ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
+ms.openlocfilehash: 728a225f4a1d14af986039cae7cb2fc8a493ecc9
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73715170"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74983311"
 ---
 # <a name="include-a-nuget-package-in-your-project"></a>Incluir um pacote NuGet em seu projeto
 
@@ -23,7 +23,7 @@ Este artigo descreve como incluir um pacote NuGet em um projeto e demonstra a ca
 
 Para demonstrar a funcionalidade do pacote NuGet, primeiro veremos como criar um aplicativo e como adicionar um pacote nele. Em seguida, abordaremos os recursos do IDE que ajudam a gerenciar pacotes.
 
-## <a name="create-a-new-project"></a>Criar um novo projeto
+## <a name="create-a-new-project"></a>Crie um novo projeto
 
 Primeiro, crie um projeto chamado `HelloNuget` conforme ilustrado abaixo. Este exemplo mostra o modelo de Aplicativo de exibição única do iOS, mas funcionaria com qualquer tipo de projeto compatível:
 
