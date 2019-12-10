@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 243766d78f25491f465a712b37dc5fab16c8a985
-ms.sourcegitcommit: 916bbe1d77c9253424daa86c71c40f5e1ec74400
+ms.openlocfilehash: 464820258e5c20474d74f92eb108344deccc49f1
+ms.sourcegitcommit: 0a8855572c6c88f4b2ece232c04aa124fbd9cec3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/09/2019
-ms.locfileid: "74945079"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74955043"
 ---
 # <a name="registry-entries-for-vsto-add-ins"></a>Entradas de registro para suplementos do VSTO
   Você deve criar um conjunto específico de entradas de registro ao implantar suplementos do VSTO que são criados usando o Visual Studio. Essas entradas de registro fornecem informações que permitem que o aplicativo Microsoft Office descubra e carregue o suplemento do VSTO.
@@ -50,7 +50,7 @@ ms.locfileid: "74945079"
  Se você usar o ClickOnce para implantar um suplemento do VSTO, o suplemento do VSTO só poderá ser registrado para o usuário atual. Isso ocorre porque o ClickOnce só dá suporte à criação de chaves em **HKEY_CURRENT_USER**. Se você quiser registrar um suplemento do VSTO para todos os usuários em um computador, deverá usar Windows Installer para implantar o suplemento do VSTO. Para obter mais informações sobre esses tipos de implantação, consulte [implantar uma solução do Office usando o ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md) e [implantar uma solução do Office usando Windows Installer](../vsto/deploying-an-office-solution-by-using-windows-installer.md).
 
 ## <a name="registry-entries"></a>Entradas do Registro
- As entradas do registro do suplemento do VSTO necessárias estão localizadas nas seguintes chaves do registro, em que a *raiz* é **HKEY_CURRENT_USER** ou **HKEY_LOCAL_MACHINE** dependendo se a instalação for por usuário ou por computador.
+ As entradas do registro do suplemento do VSTO necessárias estão localizadas nas seguintes chaves do registro, em que a *raiz* é **HKEY_CURRENT_USER** ou **HKEY_LOCAL_MACHINE** dependendo se a instalação for para o usuário atual ou para todos os usuários.
 
 |Aplicativo do Office|Caminho de configuração|
 |------------------|------------------|
@@ -58,7 +58,9 @@ ms.locfileid: "74945079"
 |Todos os outros|\Software\Microsoft\Office *raiz*\\*nome do aplicativo do Office*\Addins\\*ID do suplemento*|
 
 > [!NOTE]
-> Se o instalador estiver direcionando o Windows de 64 bits, ele deverá incluir duas entradas do registro, uma sob a *raiz*\Software\Microsoft e outra na *raiz*\Software\\**WOW6432Node**\Microsoft Hive.  Isso ocorre porque é possível que os usuários usem versões de 32 bits ou 64 bits do Office no computador.
+> Se o instalador estiver direcionado a todos os usuários no Windows de 64 bits, é recomendável que ele inclua duas entradas do registro, uma na HKEY_LOCAL_MACHINE \Software\Microsoft e outra no HKEY_LOCAL_MACHINE \Software\\**WOW6432Node**\Microsoft Hive. Isso ocorre porque é possível que os usuários usem versões de 32 bits ou 64 bits do Office no computador.
+>
+>Se o instalador estiver direcionando para o usuário atual, ele não precisará ser instalado no WOW6432Node porque o caminho de HKEY_CURRENT_USER \Software é compartilhado.
 >
 >Para obter mais informações, consulte [dados de aplicativos de 32 bits e de 64 bits no registro](https://docs.microsoft.com/windows/win32/sysinfo/32-bit-and-64-bit-application-data-in-the-registry)
 

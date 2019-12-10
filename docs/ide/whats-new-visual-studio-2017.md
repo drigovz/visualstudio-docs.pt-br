@@ -18,12 +18,12 @@ ms.topic: conceptual
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: 79570fe403c12c89860a67683456a3d6ca3d3f01
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: de26054894783df283d38223a59741c0500d0bc5
+ms.sourcegitcommit: 0a8855572c6c88f4b2ece232c04aa124fbd9cec3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189604"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74955030"
 ---
 # <a name="whats-new-in-visual-studio-2017"></a>Novidades no Visual Studio 2017
 
@@ -200,7 +200,7 @@ Também corrigimos mais de 250 bugs e relataram problemas no compilador e nas fe
 
 Para obter detalhes completos, consulte a página [Novidades do Visual C++ no Visual 2017](/cpp/top/what-s-new-for-visual-cpp-in-visual-studio).
 
-### <a name="debugging-and-diagnostics"></a>Depuração e diagnóstico
+### <a name="debugging-and-diagnostics"></a>{1&gt;Depuração e diagnóstico&lt;1}
 
 #### <a name="run-to-click"></a>Executar com um Clique
 
@@ -226,7 +226,7 @@ Para obter mais informações, consulte a postagem de blog [Use the new Exceptio
 
 Para obter mais informações, consulte a página [View snapshots using IntelliTrace step-back](../debugger/view-historical-application-state.md) (Exibir instantâneos usando o retrocesso do IntelliTrace).
 
-### <a name="containerization"></a>Transporte em contêineres
+### <a name="containerization"></a>Conteinerização
 
 Os contêineres fornecem uma densidade de aplicativo aumentada e um custo de implantação menor, juntamente com melhorias na produtividade e na agilidade de DevOps.
 
@@ -336,7 +336,7 @@ Para saber mais, consulte a postagem no blog [Redgate Data Tools no Visual Studi
 
 .NET Core é uma implementação de software livre, modular, multiplataforma e para fins gerais do .NET Standard que contém muitas das mesmas APIs que o .NET Framework.
 
-A plataforma do .NET Core é composta por vários componentes, incluindo os compiladores gerenciados, o tempo de execução, as bibliotecas de classes base e vários modelos de aplicativo, como o ASP.NET Core. O .NET Core dá suporte aos três principais sistemas operacionais: Windows, Linux e macOS. Você pode usar o .NET Core nos cenários inseridos/de IoT, de dispositivo e de nuvem.
+A plataforma do .NET Core é composta por vários componentes, incluindo os compiladores gerenciados, o runtime, as bibliotecas de classes base e vários modelos de aplicativo, como o ASP.NET Core. O .NET Core dá suporte aos três principais sistemas operacionais: Windows, Linux e macOS. Você pode usar o .NET Core nos cenários inseridos/de IoT, de dispositivo e de nuvem.
 
 Além disso, agora ele é compatível com o Docker.
 
@@ -389,6 +389,6 @@ Se quiser sugerir melhorias para o Visual Studio ou saber mais sobre as opções
 * [Novidades no SDK do Visual Studio 2017](../extensibility/what-s-new-in-the-visual-studio-2017-sdk.md)
 * [Novidades no Visual C++](/cpp/top/what-s-new-for-visual-cpp-in-visual-studio)
 * [Novidades no C#](/dotnet/csharp/whats-new)
-* [Novidades para o Team Foundation Server](/tfs/server/whats-new?view=vsts)
+* [Novidades para o Team Foundation Server](/azure/devops/server/whats-new)
 * [Novidades no Visual Studio para Mac](https://visualstudio.microsoft.com/vs/visual-studio-mac/)
 * [Novidades no Visual Studio 2019](whats-new-visual-studio-2019.md)

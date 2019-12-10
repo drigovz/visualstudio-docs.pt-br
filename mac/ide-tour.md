@@ -1,17 +1,17 @@
 ---
 title: Tour do Visual Studio para Mac
 description: O Visual Studio para Mac fornece um ambiente de desenvolvimento integrado para compilar aplicativos .NET no macOS, incluindo sites ASP.NET Core e projetos Xamarin para iOS, Android, Mac e Xamarin.Forms.
-author: asb3993
-ms.author: amburns
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 09/18/2019
 ms.assetid: 7DC64A52-AA41-4F3A-A8A1-8A20BCD81CC7
 ms.custom: video
-ms.openlocfilehash: 60691ef47b3a3dfdb2fa1148507697a27a99ef7b
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: 6d2f0f891f704d3762bc0967da466960ee5170ee
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71213705"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74984708"
 ---
 # <a name="visual-studio-2019-for-mac-tour"></a>Tour do Visual Studio 2019 para Mac
 
@@ -119,11 +119,11 @@ Para manter as guias visíveis o tempo todo, você pode aproveitar a fixação d
 
 ## <a name="refactoring"></a>Refatoração
 
-O Visual Studio para Mac oferece duas maneiras úteis de refatorar o código: Ações de contexto e Análise de código-fonte. Leia mais sobre elas no artigo [Refatoração](/visualstudio/mac/refactoring).
+O Visual Studio para Mac fornece duas maneiras úteis de refatorar o código: ações de contexto e análise de código-fonte. Leia mais sobre elas no artigo [Refatoração](/visualstudio/mac/refactoring).
 
-## <a name="debugging"></a>Depuração
+## <a name="debugging"></a>{1&gt;Depuração&lt;1}
 
-O Visual Studio para Mac tem um depurador nativo para dar suporte à depuração de aplicativos Xamarin.iOS, Xamarin.Mac e Xamarin.Android. O Visual Studio para Mac usa o Mono Soft Debugger, que foi implementado no tempo de execução Mono, permitindo que o IDE depure código gerenciado em todas as plataformas. Para saber mais adicionais sobre a depuração, visite o artigo [Depuração](/visualstudio/mac/debugging).
+O Visual Studio para Mac tem um depurador nativo para dar suporte à depuração de aplicativos Xamarin.iOS, Xamarin.Mac e Xamarin.Android. O Visual Studio para Mac usa o Mono Soft Debugger, que foi implementado no runtime Mono, permitindo que o IDE depure código gerenciado em todas as plataformas. Para saber mais adicionais sobre a depuração, visite o artigo [Depuração](/visualstudio/mac/debugging).
 
 O depurador contém visualizadores avançados para tipos especiais, como cadeias de caracteres, cores, URLs, bem como tamanhos, coordenadas e curvas Bézier.
 
@@ -141,7 +141,7 @@ Os arquivos com alterações não confirmadas têm uma anotação em seus ícone
 
 Para saber mais sobre como usar o controle de versão no Visual Studio, veja o artigo [Controle de Versão](/visualstudio/mac/version-control).
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
 
 - [Instalar o Visual Studio para Mac](installation.md)
 - [Examine as cargas de trabalho disponíveis](workloads.md)
