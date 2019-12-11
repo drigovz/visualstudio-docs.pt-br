@@ -5,19 +5,19 @@ description: Uma lista com as versões lançadas e números de build do Visual S
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 12/03/2019
+ms.date: 12/10/2019
 ms.topic: reference
 ms.custom: seodec18
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 1520f5f74ea28850d615b93f37278c4cda090988
-ms.sourcegitcommit: af9bbf9116a63c0631ff2f4f3a878564aa63cd8c
+ms.openlocfilehash: 752e1a73686a5932682642555089988f49c0eb1a
+ms.sourcegitcommit: 2485f597d909e8176622af25678bc3764fcd860c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "74797224"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "75000258"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Números de build e datas de lançamento do Visual Studio
 
@@ -29,6 +29,8 @@ A tabela a seguir lista os números de build e as datas de lançamento do Visual
 
 | **Versão**| **Canal** | **Data de lançamento** | **Versão do build** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.4.1 | Versão | 10 de dezembro de 2019 | 16.4.29609.76 |
+| 16.0.10 | Versão | 10 de dezembro de 2019 | 16.0.28803.631 |
 | 16.5.0 | Preview 1 | 3 de dezembro de 2019 | 16.5.29521.150 |
 | 16.4.0 | Versão | 3 de dezembro de 2019 | 16.4.29519.181 |
 | 16.4.0 | Versão prévia 6 | 21 de novembro de 2019 | 16.4.29519.161 |
@@ -116,6 +118,7 @@ A tabela a seguir relaciona os números de build e as datas de lançamento do Vi
 
 | **Versão**| **Canal** | **Data de lançamento** | **Versão do build** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 15.9.18 | Versão | 10 de dezembro de 2019 | 15.9.28307.960 |
 | 15.9.17 | Versão | 15 de outubro de 2019 | 15.9.28307.905 |
 | 15.9.16 | Versão | 10 de setembro de 2019 | 15.9.28307.858 |
 | 15.0.27 | Versão | 10 de setembro de 2019 | 15.0.26228.98 |
@@ -142,28 +145,28 @@ A tabela a seguir relaciona os números de build e as datas de lançamento do Vi
 | 15.9.2 | Versão | 19 de novembro de 2018 | 15.9.28307.108 |
 | 15.9.1 | Versão | 15 de novembro de 2018 | 15.9.28307.105 |
 | 15.9.0 | Versão | 13 de novembro de 2018 | 15.9.28307.53 |
-| 15.9.0 Versão prévia 6 | Visualizar | 13 de novembro de 2018 | 15.9.28307.53 |
-| 15.9.0 Versão prévia 5 | Visualizar | 6 de novembro de 2018 | 15.9.28302.56 |
+| 15.9.0 Versão prévia 6 | Versão Prévia | 13 de novembro de 2018 | 15.9.28307.53 |
+| 15.9.0 Versão prévia 5 | Versão Prévia | 6 de novembro de 2018 | 15.9.28302.56 |
 | 15.8.9 | Versão | 2 de novembro de 2018 | 15.8.28010.2050 |
 | 15.8.8 | Versão | 24 de outubro de 2018 | 15.8.28010.2048 |
-| 15.9.0 Preview 4 | Visualizar | 23 de outubro de 2018 | 15.9.28219.56 |
+| 15.9.0 Preview 4 | Versão Prévia | 23 de outubro de 2018 | 15.9.28219.56 |
 | 15.8.7 | Versão | 10 de outubro de 2018 | 15.8.28010.2046 |
 | 15.0.19 | Versão | 10 de outubro de 2018 | 15.0.26228.57 |
-| 15.9.0 Preview 3 | Visualizar | 2 de outubro de 2018 | 15.9.28128.56 |
+| 15.9.0 Preview 3 | Versão Prévia | 2 de outubro de 2018 | 15.9.28128.56 |
 | 15.8.6 | Versão | 2 de outubro de 2018 | 15.8.28010.2041 |
 | 15.8.5 | Versão | 20 de setembro de 2018 | 15.8.28010.2036 |
-| 15.9.0 Preview 2 | Visualizar | 11 de setembro de 2018 | 15.9.28107.0 |
+| 15.9.0 Preview 2 | Versão Prévia | 11 de setembro de 2018 | 15.9.28107.0 |
 | 15.8.4 | Versão | 11 de setembro de 2018 | 15.8.28010.2026 |
 | 15.8.3 | Versão | 6 de setembro de 2018 | 15.8.28010.2019 |
 | 15.8.2 | Versão | 28 de agosto de 2018 | 15.8.28010.2016 |
 | 15.0.18 | Versão | 28 de agosto de 2018 | 15.0.26228.52 |
-| 15.9.0 versão prévia 1 | Visualizar | 20 de agosto de 2018 | 15.9.28016.0 |
+| 15.9.0 versão prévia 1 | Versão Prévia | 20 de agosto de 2018 | 15.9.28016.0 |
 | 15.8.1 | Versão | 17 de agosto de 2018 | 15.8.28010.2003 |
 | 15.8.0 | Versão | 14 de agosto de 2018 | 15.8.28010.0 |
 | 15.0.17 | Versão | 14 de agosto de 2018 | 15.0.26228.49 |
 | 15.7.6 | Versão | 2 de agosto de 2018 | 15.7.27703.2047 |
 | 15.0.16 | Versão | 2 de agosto de 2018 | 15.0.26228.48 |
-| 15.8.0 Versão Prévia 5 | Visualizar | 26 de julho de 2018 | 15.8.27924.0 |
+| 15.8.0 Versão Prévia 5 | Versão Prévia | 26 de julho de 2018 | 15.8.27924.0 |
 | 15.8.0 Versão Prévia 4 | Versão Prévia | 10 de julho de 2018 | 15.8.27906.1 |
 | 15.7.5 | Versão | 10 de julho de 2018 | 15.7.27703.2042 |
 | 15.0.15 | Versão | 10 de julho de 2018 | 15.0.26228.43 |
