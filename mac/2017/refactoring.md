@@ -1,17 +1,17 @@
 ---
 title: Código de refatoração
 description: Facilita a tarefa de reorganizar o código no Visual Studio para Mac usando a Análise de Código-Fonte.
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: C7782BF3-016F-4B41-8A81-85FC540A1A8F
 ms.custom: video
-ms.openlocfilehash: d7df01e2d2c6e4acb347b40cb82a04bee9394fe1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 7b11f09d8fb70612d4496987f69583b2ac691275
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62988689"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74985242"
 ---
 # <a name="refactoring"></a>Refatoração
 
@@ -21,7 +21,7 @@ Refatorar produz uma base de código mais íntegra, tornando-a mais utilizável,
 
 A integração do Visual Studio para Mac com o Roslyn, a plataforma de compilador .NET do software livre da Microsoft, permite realizar mais operações de refatoração.
 
-## <a name="renaming"></a>Renomear
+## <a name="renaming"></a>Renomeando
 
 O comando de refatoração *Renomear* pode ser usado em qualquer identificador de código (por exemplo, um nome de classe, nome de propriedade, etc.) para localizar todas as ocorrências do identificador em questão e alterá-las. Para renomear um símbolo, clique com botão direito do mouse nele e escolha **Refatorar > Renomear** ou a associação de teclas **Cmd + R**:
 

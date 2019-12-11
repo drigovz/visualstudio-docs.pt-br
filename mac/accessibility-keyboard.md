@@ -2,15 +2,15 @@
 title: Navegação de teclado no Visual Studio para Mac
 description: Usando Visual Studio para Mac com comandos de teclado
 author: alanjclark
-ms.author: alcl
+ms.author: dominicn
 ms.date: 09/23/2019
 ms.assetid: EF574E49-0465-4973-BE67-286DA20B8836
-ms.openlocfilehash: aad28b9cf9c697b05d43f2869ec8327ea6294b4f
-ms.sourcegitcommit: 689ba54ea14257d13031de881f5d4fe937a36f56
+ms.openlocfilehash: 74c3fddad7c7db8f5f190dcc94f08a36ddf3cd54
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "71342349"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74985098"
 ---
 # <a name="keyboard-navigation-in-visual-studio-for-mac"></a>Navegação de teclado no Visual Studio para Mac
 
@@ -28,7 +28,7 @@ Visual Studio para Mac tem uma variedade de atalhos de teclado para várias tare
 
 1. Selecione **Visual Studio (menu)**  > **Preferências (&#8984;,)** .
 
-1. Vá para o **ambiente** > **associações de chave**.
+1. Vá para **ambiente** > **associações de chave**.
 
 1. Percorra a lista ou procure o atalho ou o comando.
 
@@ -49,7 +49,7 @@ Visual Studio para Mac tem uma variedade de atalhos de teclado para várias tare
 |Consegue        |Selecione o controle atualmente em foco.         |**␣**            |
 |Consegue        |Selecione o controle padrão na tela ou caixa de diálogo. |**⏎**            |
 |Alternar guias     |Percorrer arquivos abertos.                      |**⌘ ⇧ [** , **⌘ ⇧]** |
-|Depurar           |Inicie a depuração.                               |**⌘⏎**           |
+|Depuração           |Inicie a depuração.                               |**⌘⏎**           |
 
 > [!TIP]
 > Consulte uma lista abrangente de comandos de teclado em [atalhos de teclado](keyboard-shortcuts.md).

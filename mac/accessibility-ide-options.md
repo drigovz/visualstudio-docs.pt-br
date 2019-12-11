@@ -2,15 +2,15 @@
 title: Definir opções de acessibilidade do IDE
 description: Introdução à definição de opções de acessibilidade no Visual Studio para Mac
 author: alanjclark
-ms.author: alcl
+ms.author: dominicn
 ms.date: 09/23/2019
 ms.assetid: 87D22340-2BE6-40EE-ACFD-3CF1BA886175
-ms.openlocfilehash: b0bafdefe65d4bbfe616d51913096faaaf033eb2
-ms.sourcegitcommit: 689ba54ea14257d13031de881f5d4fe937a36f56
+ms.openlocfilehash: aece4bec978b609dd1fd5f67d2562bd87f847a3a
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "71342317"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74985122"
 ---
 # <a name="set-ide-accessibility-options"></a>Definir opções de acessibilidade do IDE
 
@@ -29,7 +29,7 @@ Além dos recursos criados diretamente no macOS, o Visual Studio para Mac tem v�
 
 É possível personalizar a fonte e o tamanho do conteúdo na maioria dos pads em Visual Studio para Mac. Veja como:
 
-1. Vá para o **Visual Studio (menu)**  > **preferências... (&#8984;,)** .
+1. Vá para **Visual Studio (menu)**  > **preferências... (&#8984;,)** .
 
 1. Em **preferências**, vá para **ambiente** > **fontes**.
 
@@ -44,7 +44,7 @@ Além dos recursos criados diretamente no macOS, o Visual Studio para Mac tem v�
 
 Alguns usuários podem descobrir que o esquema de cores padrão não atende aos seus requisitos de contraste ou cor. Visual Studio para Mac tem vários temas alternativos que o usuário pode selecionar, incluindo dois temas de alto contraste.
 
-1. Vá para o **Visual Studio (menu)**  > **preferências... (&#8984;,)** .
+1. Vá para **Visual Studio (menu)**  > **preferências... (&#8984;,)** .
 
 1. Em **preferências**, vá para **Editor de texto** > **tema de cores**.
 
