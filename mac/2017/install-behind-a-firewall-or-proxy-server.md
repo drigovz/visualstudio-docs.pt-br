@@ -3,23 +3,23 @@ title: Instalar e usar o Visual Studio para Mac por trás de um firewall ou serv
 description: Este documento fornece uma lista de hosts que precisam ser permitidos no firewall para que o Visual Studio para Mac (e suas cargas de trabalho, incluindo Xamarin) funcione em um ambiente corporativo.
 ms.topic: troubleshooting
 ms.assetid: 79C0F1A3-0C13-4E55-A820-1138A4082B77
-author: asb3993
-ms.author: amburns
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 10/23/2018
-ms.openlocfilehash: 446baf89dacfe7b742e3da3307711435495c8da4
-ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
-ms.translationtype: HT
+ms.openlocfilehash: 738c5277ca6a669a834635f5c626e0cbabd7a7ef
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67033190"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74984943"
 ---
 # <a name="install-and-use-visual-studio-for-mac-behind-a-firewall-or-proxy-server"></a>Instalar e usar o Visual Studio para Mac por trás de um firewall ou servidor proxy
 
 Se você ou sua organização usa medidas de segurança como um firewall ou um servidor proxy, há domínios que é recomendável adicionar a uma "lista de permissões", além de portas e protocolos que podem ser abertos para que você tenha a melhor experiência ao instalar e usar o Visual Studio para Mac e os Serviços do Azure.
 
-- [**Instalar o Visual Studio para Mac**](#install-visual-studio-for-mac): Essas tabelas incluem os domínios que precisam permitir conectividade para que você tenha acesso a todos os recursos e cargas de trabalho do Visual Studio para Mac.
+- [**Instalar Visual Studio para Mac**](#install-visual-studio-for-mac): essas tabelas incluem os domínios que devem permitir conectividade para que você tenha acesso a todos os recursos e cargas de trabalho do Visual Studio para Mac.
 
-- [**Usar o Visual Studio para Mac**](#use-visual-studio-for-mac): Essas tabelas incluem domínios que precisam permitir a conectividade para que você tenha acesso aos recursos relacionados.
+- [**Usar Visual Studio para Mac**](#use-visual-studio-for-mac): essas tabelas incluem domínios que devem permitir conectividade para que você tenha acesso aos recursos relacionados.
 
 ## <a name="install-visual-studio-for-mac"></a>Instalar o Visual Studio para Mac
 
@@ -63,7 +63,7 @@ Para garantir que você tenha acesso a todos os recursos de que precisa no Visua
 | visualstudio-devdiv-c2s.msedge.net | 80/443| Recurso Experimental e Notificações |
 | targetednotifications.azurewebsites.net|  80/443| Usada para filtrar uma lista global de notificações para uma lista aplicável somente a tipos específicos de cenários de uso/computadores|
 
-### <a name="identity"></a>Identidade
+### <a name="identity"></a>Identity
 
 | Domain | Porta(s)|Finalidade|
 | ----------------------|------------------|------------------|
