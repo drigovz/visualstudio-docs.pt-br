@@ -2,15 +2,15 @@
 title: Usando as opções de acessibilidade do macOS
 description: Usando recursos e opções de acessibilidade do macOS, como alto contraste, navegação de teclado e VoiceOver
 author: alanjclark
-ms.author: alcl
+ms.author: dominicn
 ms.date: 09/23/2019
 ms.assetid: 598FC25A-6DA3-44BB-B128-AD979E9F86EA
-ms.openlocfilehash: 82d6d34c78efb425dfdb832cae3efd6c2bbcc425
-ms.sourcegitcommit: 689ba54ea14257d13031de881f5d4fe937a36f56
+ms.openlocfilehash: 095a65ab27bdcac6521eb771dcca1936b87409cd
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "71342460"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74985078"
 ---
 # <a name="accessibility-features-of-macos"></a>Recursos de acessibilidade do macOS
 
@@ -20,7 +20,7 @@ o macOS é um sistema operacional acessível, com vários recursos para ajudar o
 
 No Visual Studio para Mac, o suporte para tecnologias assistenciais é desativado por padrão. Para habilitar o suporte de acessibilidade:
 
-1. Vá para **Visual Studio (menu)**  > **preferências** > **outro**e selecione **acessibilidade**.
+1. Vá para **Visual Studio (menu)**  > **preferências** > **outras**e selecione **acessibilidade**.
 
 1. Marque a caixa de seleção **habilitar acessibilidade** .
 

@@ -1,18 +1,18 @@
 ---
 title: Instalar o Visual Studio 2017 para Mac
 description: Instruções sobre como instalar o Visual Studio para Mac e os componentes adicionais necessários para o desenvolvimento de plataforma cruzada.
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 11/03/2018
 ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
 ms.custom: video
-ms.openlocfilehash: 93159487d4d00b70a801e235f9a22eb35d6183c0
-ms.sourcegitcommit: aeb1a1135dd789551e15aa5124099a5fe3f0f32b
-ms.translationtype: HT
+ms.openlocfilehash: dfc9f7469f5954aaac56b5d45bb5ae722110dfcc
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66500980"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74984916"
 ---
 # <a name="install-visual-studio-2017-for-mac"></a>Instalar o Visual Studio 2017 para Mac
 
@@ -23,7 +23,7 @@ ms.locfileid: "66500980"
 
 Para obter a melhor experiência, antes de fazer o downgrade, certifique-se de [desinstalar](uninstall.md) o Visual Studio 2019 para Mac. Se você tiver problemas que o façam baixar o programa, nos informe em [relatar um problema](report-a-problem.md).
  
-## <a name="requirements"></a>Requisitos
+## <a name="requirements"></a>Requisitos do
 
 Para começar a desenvolver aplicativos de plataforma cruzada nativos após baixar o Visual Studio para Mac, é necessário preparar-se instalando e configurando alguns itens.
 
@@ -102,7 +102,7 @@ Configure a rede para permitir o acesso aos seguintes locais:
 
 - [Pontos de extremidade do Visual Studio](/visualstudio/install/install-visual-studio-behind-a-firewall-or-proxy-server)
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
 
 A instalação do Visual Studio para Mac permite que você comece a escrever código para seus aplicativos. Os guias a seguir são fornecidos para orientar você durante as próximas etapas da criação e implantação de seus projetos.
 

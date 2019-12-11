@@ -1,17 +1,17 @@
 ---
 title: Controle de Versão do Team Foundation (TFVC)
 description: Conexão do Visual Studio para Mac ao Team Foundation Server/Azure DevOps com o Controle de Versão do Team Foundation (TFVC).
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 06/25/2019
 ms.technology: vs-ide-general
 ms.assetid: 52D3D26A-4D01-4FD1-AAA1-AE7D7BD39746
-ms.openlocfilehash: e45f80ab1a5aab4969b01a2fddcfd88d9dc4eff7
-ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
+ms.openlocfilehash: b7b160d58cead031a0eece2a522501d8c2060bd2
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73716127"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74985205"
 ---
 # <a name="connecting-to-team-foundation-version-control"></a>Conexão com o Controle de Versão do Team Foundation
 
@@ -30,7 +30,7 @@ O Visual Studio para Mac fornece suporte completo para repositórios Git, mas re
 
 O restante deste artigo explica as opções listadas acima.
 
-## <a name="requirements"></a>Requisitos
+## <a name="requirements"></a>Requisitos do
 
 * Visual Studio Community, Professional ou Enterprise para Mac versão 7.8 e posterior.
 * Azure DevOps Services, Team Foundation Server 2013 e posterior, ou Azure DevOps Server 2018 e posterior.
@@ -238,7 +238,7 @@ As opções a seguir podem ser usadas para a autenticação no servidor:
 
 - OAuth
 - Basic
-- NTLM
+- Ntlm
 
 Para usar a autenticação Básica é necessário habilitar **Credenciais de autenticação alternativas** no Azure DevOps Services, seguindo as etapas abaixo:
 

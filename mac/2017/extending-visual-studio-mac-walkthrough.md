@@ -1,16 +1,16 @@
 ---
 title: 'Passo a passo: estendendo o Visual Studio para Mac'
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 04/14/2017
 ms.technology: vs-ide-sdk
 ms.assetid: 7D00512B-9688-4D8D-87A7-F04F207E3D02
-ms.openlocfilehash: cbf0d99bd87b31484b6c74e9a6d67ac88dc5ba99
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: c5b3b759b32acfc86b4b584b3f3d52298c138a2c
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62998620"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74985032"
 ---
 # <a name="extending-visual-studio-for-mac-walkthrough"></a>Passo a passo: estendendo o Visual Studio para Mac
 
@@ -22,7 +22,7 @@ Este exemplo usa o Criador de Suplementos. O Criador de Suplementos cria um novo
 
    ![Captura de tela do Visual Studio para Mac](media/extending-visual-studio-mac-addin3.png)
 
-2. Instale o _Pacote de extensão do Criador de Suplementos_ usando o Gerenciador de Extensões. No menu do Visual Studio, escolha **Extensões...**:
+2. Instale o _Pacote de extensão do Criador de Suplementos_ usando o Gerenciador de Extensões. No menu do Visual Studio, escolha **Extensões...** :
 
    ![Guia de Gerenciador de Suplementos](media/extending-visual-studio-mac-addin4.png)
 
