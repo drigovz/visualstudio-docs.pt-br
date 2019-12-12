@@ -1,5 +1,5 @@
 ---
-title: 'Como: criar um conjunto de regras PolicyActivity (Herdado) | Microsoft Docs'
+title: 'Como: Criar um conjunto de regras PolicyActivity (Herdado) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-workflow-designer
@@ -22,7 +22,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 11/21/2019
 ms.locfileid: "74297474"
 ---
-# <a name="how-to-create-a-policyactivity-rule-set-legacy"></a>Como: Criar uma regra de PolicyActivity definida (o legados)
+# <a name="how-to-create-a-policyactivity-rule-set-legacy"></a>Como: Criar uma regra de PolicyActivity definida (herdado)
 Este tópico descreve como criar um conjunto de regras de atividade de política usando o novas [!INCLUDE[wfd1](../includes/wfd1-md.md)] que direciona [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] ou [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].
 
  Depois de arrastar um item de atividade de **política** da **caixa de ferramentas** para a superfície de design do fluxo de trabalho, você desejará selecionar uma regra existente ou criar um novo conjunto de regras para a atividade [PolicyActivity](https://go.microsoft.com/fwlink?LinkID=65019) . Selecione um conjunto de regras existente usando a [caixa de diálogo Selecionar conjunto de regras (Herdado)](../workflow-designer/select-rule-set-dialog-box-legacy.md) e crie conjuntos de regras usando a [caixa de diálogo Editor de conjunto de regras (Herdado)](../workflow-designer/rule-set-editor-dialog-box-legacy.md).
@@ -34,7 +34,7 @@ Este tópico descreve como criar um conjunto de regras de atividade de política
 
 1. Clique com o botão direito do mouse no [PolicyActivity](https://go.microsoft.com/fwlink?LinkID=65019)e clique em **Propriedades** para abrir a janela **Propriedades** .
 
-2. Clique na propriedade de **RuleSetReference** .
+2. Clique na propriedade **RuleSetReference** .
 
 3. Realize um dos seguintes procedimentos:
 
@@ -46,19 +46,19 @@ Este tópico descreve como criar um conjunto de regras de atividade de política
 
          - ou -
 
-    - Digite um nome para um conjunto de regras. Expanda a propriedade **RuleSetReference** e selecione as reticências **[…]** na propriedade **Definição de RuleSet**.
+    - Digite um nome para um conjunto de regras. Expanda a propriedade **RuleSetReference** e selecione as reticências **[...]** na propriedade de definição do conjunto de **regras** .
 
          A [caixa de diálogo Editor de conjunto de regras (Herdado)](../workflow-designer/rule-set-editor-dialog-box-legacy.md) é aberta.
 
 4. Na [caixa de diálogo Editor de conjunto de regras (Herdado)](../workflow-designer/rule-set-editor-dialog-box-legacy.md), clique em **Adicionar regra** para adicionar uma nova regra ao conjunto de regras.
 
-5. Entre em **Nome**, em **Prioridade**, e em propriedades de **Reavaliação** , ou manter os valores padrão.
+5. Insira o **nome**, a **prioridade**e as propriedades de **reavaliação** ou mantenha os valores padrão.
 
-6. Digite o texto para **Condição**.
+6. Insira o texto para a **condição**.
 
-7. Digite o texto para **Ações Then** e **Ações Else**.
+7. Insira o texto para as **ações then** e **outras ações**.
 
-8. Clique **Adicionar Regra** novamente para adicionar outra regra.
+8. Clique em **Adicionar regra** novamente para adicionar outra regra.
 
 9. Ao terminar, clique em **OK**.
 
