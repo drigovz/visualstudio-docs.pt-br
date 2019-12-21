@@ -38,7 +38,7 @@ Encontre e corrija vulnerabilidades de software livre e gere relatórios de lice
 9. Para obter mais informações, visite a página de [Perguntas frequentes](https://bolt.whitesourcesoftware.com/azure/faq/) do WhiteSource Bolt. 
 
 ## <a name="eligibility"></a>Elegibilidade
-O [WhiteSourse Bolt](https://marketplace.visualstudio.com/search?term=whitesource&target=AzureDevOps&category=All%20categories&sortBy=Relevance) agora está disponível gratuitamente no [Visual Studio Marketplace. 
+O [WhiteSource Bolt](https://marketplace.visualstudio.com/search?term=whitesource&target=AzureDevOps&category=All%20categories&sortBy=Relevance) agora está disponível gratuitamente no [Visual Studio Marketplace. 
 
 ## <a name="support-resources"></a>Recursos de suporte
 - Precisa de ajuda com o WhiteSource Bolt?  Converse com um representante do Bolt WhiteSource em https://www.whitesourcesoftware.com/vse_whitesource_bolt/
