@@ -7,17 +7,17 @@ helpviewer_keywords:
 - commands, Visual Studio
 - command syntax
 ms.assetid: 76ffa394-ee89-4629-aba9-1a62b72e6cc1
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3af3685288c00e27bb63cd45c682ab8b6354f4e5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ac0284ce274791f21c9c0f85d265d92a7097cb09
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72622109"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596366"
 ---
 # <a name="visual-studio-commands"></a>Comandos do Visual Studio
 
@@ -78,7 +78,7 @@ Os seguintes comandos usam argumentos ou opções:
 | [Toggle Breakpoint](../../ide/reference/toggle-breakpoint-command.md) | Ativa ou desativa o ponto de interrupção dependendo de seu estado atual, no local atual do arquivo. |
 | [Comando Watch](../../ide/reference/watch-command.md) | Cria e abre uma instância especificada de uma janela **Inspeção**. |
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Janela Comando](../../ide/reference/command-window.md)
 - [Caixa Localizar/Comando](../../ide/find-command-box.md)

@@ -2,17 +2,17 @@
 title: Conjunto de regras recomendadas misto
 ms.date: 11/04/2016
 ms.topic: reference
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f0daaf22f3e944dd76802060c53c64d40a4da04
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c3fc3f3480e33d2689053053343339690315d574
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649216"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587310"
 ---
 # <a name="mixed-recommended-rules-rule-set"></a>Conjunto de regras recomendadas misto
 
@@ -151,7 +151,7 @@ Inclua esse conjunto de regras em qualquer conjunto personalizado de regras que 
 |[C28020](../code-quality/c28020.md)|A expressão não é verdadeira nesta chamada|
 |[C28021](../code-quality/c28021.md)|O parâmetro que está sendo anotado deve ser um ponteiro|
 |[C28022](../code-quality/c28022.md)|As classes de função nessa função não correspondem às classes de função no typedef usado para defini-la.|
-|[C28023](../code-quality/c28023.md)|A função que está sendo atribuída ou passada deve ter um \_Function \_class anotação \_ para pelo menos uma das classes|
+|[C28023](../code-quality/c28023.md)|A função que está sendo atribuída ou passada deve ter uma função de \_\_a anotação de\_ de classe para pelo menos uma das classes|
 |[C28024](../code-quality/c28024.md)|O ponteiro de função que está sendo atribuído é anotado com a classe de função, que não está contida na lista de classe (s) de função.|
 |[C28039](../code-quality/c28039.md)|O tipo de parâmetro real deve corresponder exatamente ao tipo|
 |[C28112](../code-quality/c28112.md)|Uma variável que é acessada por meio de uma função Interlocked sempre deve ser acessada por meio de uma função Interlocked.|
@@ -169,14 +169,14 @@ Inclua esse conjunto de regras em qualquer conjunto personalizado de regras que 
 |[C28196](../code-quality/c28196.md)|O requisito não é atendido. (A expressão não é avaliada como true.)|
 |[C28202](../code-quality/c28202.md)|Referência inválida para membro não estático|
 |[C28203](../code-quality/c28203.md)|Referência ambígua ao membro de classe.|
-|[C28205](../code-quality/c28205.md)|\_Success \_ ou \_On \_failure \_ usados em um contexto ilegal|
+|[C28205](../code-quality/c28205.md)|\_êxito\_ ou \_em\_falha\_ usada em um contexto ilegal|
 |[C28206](../code-quality/c28206.md)|O operando da esquerda aponta para um struct, use '->'|
 |[C28207](../code-quality/c28207.md)|O operando da esquerda é um struct, use '.'|
 |[C28209](../code-quality/c28209.md)|A declaração de Symbol tem uma declaração conflitante|
 |[C28210](../code-quality/c28210.md)|Anotações para o contexto __on_failure não devem estar no pré-contexto explícito|
 |[C28211](../code-quality/c28211.md)|Nome esperado do contexto estático para SAL_context|
 |[C28212](../code-quality/c28212.md)|Expressão de ponteiro esperada para anotação|
-|[C28213](../code-quality/c28213.md)|O \_Use \_decl \_annotations anotação \_ deve ser usado para fazer referência, sem modificação, uma declaração anterior.|
+|[C28213](../code-quality/c28213.md)|O \_usar\_\_anotações\_ anotação deve ser usada para fazer referência, sem modificação, uma declaração anterior.|
 |[C28214](../code-quality/c28214.md)|Os nomes do parâmetro de atributo devem ser p1...p9|
 |[C28215](../code-quality/c28215.md)|O typefix não pode ser aplicado a um parâmetro que já tem um typefix|
 |[C28216](../code-quality/c28216.md)|A anotação checkReturn se aplica apenas a pós-condições para o parâmetro da função específica.|
@@ -219,7 +219,7 @@ Inclua esse conjunto de regras em qualquer conjunto personalizado de regras que 
 |[C28267](../code-quality/c28267.md)|Foi encontrado um erro de sintaxe nas anotações da função.|
 |[C28272](../code-quality/c28272.md)|A anotação para função, parâmetro quando examinar for inconsistente com a declaração da função|
 |[C28273](../code-quality/c28273.md)|Para função, os indícios são inconsistentes com a declaração da função|
-|[C28275](../code-quality/c28275.md)|O parâmetro para \_Macro \_value \_ é nulo|
+|[C28275](../code-quality/c28275.md)|O parâmetro para \_macro\_valor\_ é nulo|
 |[C28279](../code-quality/c28279.md)|Para símbolo, um 'início' foi encontrado sem um 'fim' correspondente|
 |[C28280](../code-quality/c28280.md)|Para símbolo, um 'fim' foi encontrado sem um 'início' correspondente|
 |[C28282](../code-quality/c28282.md)|Cadeias de caracteres de formato devem estar em pré-condições|

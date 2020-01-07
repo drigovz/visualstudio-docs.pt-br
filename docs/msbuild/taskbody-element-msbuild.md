@@ -11,20 +11,20 @@ helpviewer_keywords:
 - TaskBody element [MSBuild]
 - <TaskBody> element [MSBuild]
 ms.assetid: 49d8741b-f1ea-4470-94fd-a1ac27341a6a
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f788df1dd3cad2baddd6d2966b04195af01fe7d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: ac4e04c1a75fe7afdebc984381e17d7e55913fd4
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62938955"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594975"
 ---
 # <a name="taskbody-element-msbuild"></a>Elemento TaskBody (MSBuild)
-Contém os dados que são passados para um `UsingTask` `TaskFactory`. Para saber mais, confira [Elemento UsingTask (MSBuild)](../msbuild/usingtask-element-msbuild.md).
+Contém os dados que são passados para um `TaskFactory`de `UsingTask`. Para saber mais, confira [Elemento UsingTask (MSBuild)](../msbuild/usingtask-element-msbuild.md).
 
  \<Project> \<UsingTask> \<TaskBody>
 
@@ -35,15 +35,15 @@ Contém os dados que são passados para um `UsingTask` `TaskFactory`. Para saber
 ```
 
 ## <a name="attributes-and-elements"></a>Atributos e elementos
- As seções a seguir descrevem atributos, elementos filho e elementos pai.
+ As seções a seguir descrevem os atributos, bem como os elementos filhos e pais.
 
-### <a name="attributes"></a>Atributos
+### <a name="attributes"></a>{1&gt;{2&gt;Atributos&lt;2}&lt;1}
 
 |Atributo|Descrição|
 |---------------|-----------------|
 |`Evaluate`|Atributo booliano opcional.<br /><br /> Se `true`, MSBuild avalia todos os elementos internos e expande os itens e propriedades antes de transmitir as informações para o `TaskFactory`, quando a tarefa é instanciada.|
 
-### <a name="child-elements"></a>Elementos filho
+### <a name="child-elements"></a>Child elements
 
 |Elemento|Descrição|
 |-------------|-----------------|
@@ -71,7 +71,7 @@ Contém os dados que são passados para um `UsingTask` `TaskFactory`. Para saber
 </UsingTask>
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 - [Tarefas](../msbuild/msbuild-tasks.md)
 - [Referência de tarefas](../msbuild/msbuild-task-reference.md)
 - [Referência de esquema de arquivos de projeto](../msbuild/msbuild-project-file-schema-reference.md)

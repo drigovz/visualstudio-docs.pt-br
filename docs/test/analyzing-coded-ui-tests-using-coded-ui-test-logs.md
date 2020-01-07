@@ -2,17 +2,17 @@
 title: Analisando testes de interface de usuário codificada usando logs de teste de interface de usuário codificada
 ms.date: 11/04/2016
 ms.topic: conceptual
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-author: jillre
-ms.openlocfilehash: 73916d309fa0e070bf4b05ba0d5a8fc02bef29f8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+author: mikejo5000
+ms.openlocfilehash: ec1025eaa53861fae2cf92395d8842854649fa8c
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72665331"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591210"
 ---
 # <a name="analyzing-coded-ui-tests-using-coded-ui-test-logs"></a>Analisando testes de IU codificados usando logs de teste de IU codificado
 
@@ -87,7 +87,7 @@ Ao executar um teste de IU codificado com as modificações no arquivo *QTAgent\
 
      ![Arquivo de log do teste de IU codificado](../test/media/cuit_htmlactionlog3.png)
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Usar a automação de interface do usuário para testar seu código](../test/use-ui-automation-to-test-your-code.md)
 - [Como executar testes no Microsoft Visual Studio](https://msdn.microsoft.com/Library/1a1207a9-2a33-4a1e-a1e3-ddf0181b1046)

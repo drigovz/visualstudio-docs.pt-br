@@ -1,5 +1,5 @@
 ---
-title: 'Como: Escapar caracteres especiais no MSBuild | Microsoft Docs'
+title: Como escapar caracteres especiais no MSBuild | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,19 +8,19 @@ helpviewer_keywords:
 - escape characters
 - MSBuild, escaping special characters
 ms.assetid: 1aa3669c-1647-4960-b770-752e2532102f
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 983e10f26e6fd1d8b4b7ff18c73edd65cb4810f4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 955739372605b9e4f9fe58f73669322e2724de31
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62968100"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595001"
 ---
-# <a name="how-to-escape-special-characters-in-msbuild"></a>Como: Usar escape para caracteres especiais no MSBuild
+# <a name="how-to-escape-special-characters-in-msbuild"></a>Como fazer o escape de caracteres especiais no MSBuild
 
 Determinados caracteres têm significado especial em arquivos de projeto do [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. O ponto-e-vírgula (`;`) e os asteriscos (`*`) são exemplos de caracteres. Para obter uma lista completa desses caracteres especiais, confira [Caracteres especiais do MSBuild](../msbuild/msbuild-special-characters.md).
 
@@ -28,7 +28,7 @@ Para usar esses caracteres especiais como literais em um arquivo de projeto, ele
 
 ## <a name="msbuild-special-characters"></a>Caracteres especiais do MSBuild
 
-Um exemplo de quando os caracteres especiais são usados é no atributo `Include` de listas de itens. Por exemplo, a lista de itens a seguir declara dois itens: *MyFile.cs* e *MyClass.cs*.
+Um exemplo de quando os caracteres especiais são usados é no atributo `Include` de listas de itens. Por exemplo, a seguinte lista de itens declara dois itens: *MyFile.cs* e *MyClass.cs*.
 
 ```xml
 <Compile Include="MyFile.cs;MyClass.cs"/>
@@ -50,7 +50,7 @@ Também é possível usar uma [função de propriedade](../msbuild/property-func
 
 Use a notação `%<xx>` no lugar do caractere especial, em que `<xx>` representa o valor hexadecimal do caractere ASCII. Por exemplo, para usar um asterisco (`*`) como um caractere literal, use o valor `%2A`.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 - [Conceitos do MSBuild](../msbuild/msbuild-concepts.md)
 - [MSBuild](../msbuild/msbuild.md)
 - [Itens](../msbuild/msbuild-items.md)

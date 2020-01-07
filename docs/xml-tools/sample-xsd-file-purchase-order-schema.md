@@ -3,17 +3,17 @@ title: 'Arquivo XSD de exemplo: esquema de ordem de compra'
 ms.date: 11/04/2016
 ms.topic: sample
 ms.assetid: f92b63b5-ec61-43b5-ae1e-63432a7a7e30
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a81cae6bc91e480fb619afd647e8285b6efc410
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d841b75b58dc977b5141dce0b8c7275e4a3ced8a
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72601807"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592562"
 ---
 # <a name="sample-xsd-file-purchase-order-schema"></a>Arquivo XSD de exemplo: esquema de ordem de compra
 
@@ -88,4 +88,4 @@ O arquivo XSD a seguir é usado em vários exemplos na documentação do Designe
 ```
 
 > [!NOTE]
-> As empresas, as organizações, os produtos, os nomes de domínio, os endereços de email, os logotipos, as pessoas, os locais e os eventos de exemplo descritos aqui são fictícios. Nenhuma associação com nenhuma empresa, organização, produto, nome de domínio, endereço de email, logotipo, pessoa, locais ou eventos reais é intencional nem deve ser inferida.
+> As empresas, organizações, produtos, nomes de domínio, endereços de email, logotipos, pessoas, lugares e eventos descritos como exemplo neste documento são fictícios. Nenhuma associação com qualquer empresa, organização, produto, nome de domínio, endereço de email, logotipo, pessoa, lugares ou eventos reais é intencional ou deve ser inferida.

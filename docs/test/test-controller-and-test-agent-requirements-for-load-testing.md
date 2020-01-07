@@ -6,15 +6,15 @@ helpviewer_keywords:
 - agents, requirements
 - controllers, requirements
 ms.assetid: 372d97ce-12e4-46a9-9863-da508adba68f
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d33fb01bf931a2f7f3585197151f167c79575da6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 39b174b0b134fdfdf26570565aa6aa756ba43c92
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659930"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75588636"
 ---
 # <a name="test-controller-and-test-agent-requirements-for-load-testing"></a>Requisitos do controlador de teste e do agente de teste para teste de carga
 
@@ -59,6 +59,6 @@ Para evitar confusões e simplificar a operação, um controlador de teste e age
 
 É possível monitorar computadores de agente para determinar suas necessidades de recursos observando os processos *QTAgent\*.exe* executados e escalados durantes os testes. O gargalo mais comum nos processos *QTAgent\*.exe* é a utilização da CPU. Se a utilização de CPU for consistente na altura nos noventa, então, é uma indicação que o agente está sendo carregado com peso. O próximo gargalo comum é o uso da memória. Para testes de manda, monitorar esses recursos podem ajudar a determinar se você deve melhorar os recursos dos computadores ou distribuir seus testes diferentemente.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Instalar e configurar agentes de teste](../test/lab-management/install-configure-test-agents.md)

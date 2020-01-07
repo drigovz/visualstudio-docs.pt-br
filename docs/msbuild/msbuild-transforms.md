@@ -6,17 +6,17 @@ helpviewer_keywords:
 - MSBuild, transforms
 - transforms [MSBuild]
 ms.assetid: d0bcfc3c-14fa-455e-805c-63ccffa4a3bf
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a3875e508105bbe23b1d5cbdcd863a058592537
-ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
-ms.translationtype: HT
+ms.openlocfilehash: 5c4262ed1a7b92170565f7006c9ed06ed884f928
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "67852182"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593766"
 ---
 # <a name="msbuild-transforms"></a>Transformações do MSBuild
 Uma transformação é uma conversão individual de uma lista de itens para outra. Além de habilitar um projeto para converter as lista de itens, uma transformação permite que um destino identifique um mapeamento direto entre suas entradas e saídas. Este tópico explica as transformações e como o [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] as utiliza na criação de projetos com mais eficiência.
@@ -47,7 +47,7 @@ Por exemplo, se os itens na lista @(RESXFile) *Form1.resx*, *Form2.resx* e *Form
 ## <a name="dependency-analysis"></a>Análise de dependência
  Transformações garantem um mapeamento individual entre a lista de itens transformados e a lista do item original. Portanto, se um destino cria saídas que são transformações das entradas, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] pode analisar os carimbos de hora das entradas e saídas e decida se deseja ignorar, compilar ou recompilar parcialmente um destino.
 
- Na [tarefa Copy](../msbuild/copy-task.md) no exemplo a seguir, todos os arquivos na lista de itens `BuiltAssemblies` são mapeados para um arquivo na pasta de destino da tarefa especificada usando uma transformação no atributo `Outputs`. Se um arquivo na lista de itens `BuiltAssemblies` for alterado, a tarefa `Copy` será executada somente para o arquivo alterado e todos os outros arquivos serão ignorados. Para saber mais sobre a análise de dependência e como usar transformações, confira [Como: Compilar incrementalmente](../msbuild/how-to-build-incrementally.md).
+ Na [tarefa Copy](../msbuild/copy-task.md) no exemplo a seguir, todos os arquivos na lista de itens `BuiltAssemblies` são mapeados para um arquivo na pasta de destino da tarefa especificada usando uma transformação no atributo `Outputs`. Se um arquivo na lista de itens `BuiltAssemblies` for alterado, a tarefa `Copy` será executada somente para o arquivo alterado e todos os outros arquivos serão ignorados. Para saber mais sobre a análise de dependência e como usar transformações, confira [Como compilar incrementalmente](../msbuild/how-to-build-incrementally.md).
 
 ```xml
 <Target Name="CopyOutputs"
@@ -63,7 +63,7 @@ Por exemplo, se os itens na lista @(RESXFile) *Form1.resx*, *Form2.resx* e *Form
 
 ## <a name="example"></a>Exemplo
 
-### <a name="description"></a>DESCRIÇÃO
+### <a name="description"></a>Descrição
  O exemplo a seguir mostra um arquivo de projeto [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] que usa transformações. Este exemplo supõe que haja apenas um arquivo *.xsd* no diretório *c:\sub0\sub1\sub2\sub3* e o diretório de trabalho é *c:\sub0*.
 
 ### <a name="code"></a>Código
@@ -87,7 +87,7 @@ Por exemplo, se os itens na lista @(RESXFile) *Form1.resx*, *Form2.resx* e *Form
 </Project>
 ```
 
-### <a name="comments"></a>Comentários
+### <a name="comments"></a>Comments
  Este exemplo gera a seguinte saída:
 
 ```
@@ -101,7 +101,7 @@ relativedir: sub1\sub2\sub3\
 extension: .xsd
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 - [Conceitos do MSBuild](../msbuild/msbuild-concepts.md)
 - [Referência do MSBuild](../msbuild/msbuild-reference.md)
-- [Como: Compilar incrementalmente](../msbuild/how-to-build-incrementally.md)
+- [Como criar de forma incremental](../msbuild/how-to-build-incrementally.md)

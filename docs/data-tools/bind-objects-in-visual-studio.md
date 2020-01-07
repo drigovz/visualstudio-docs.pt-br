@@ -11,17 +11,17 @@ helpviewer_keywords:
 - object binding
 - binding, to objects
 ms.assetid: ed743ce6-73af-45e5-a8ff-045eddaccc86
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 2b046eaa4244d08c9fff9e2412471d018203de42
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 09e3ad2cfc2690c27e4e26e51f6b40d7afd79f54
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648804"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586985"
 ---
 # <a name="bind-objects-as-data-sources-in-visual-studio"></a>Associar objetos como fontes de dados no Visual Studio
 
@@ -126,7 +126,7 @@ Para exibir os dados em objetos para os usuários, crie uma fonte de dados de ob
 
 Para editar dados em objetos personalizados que são associados a dados a controles Windows Forms, basta editar os dados no controle ligado (ou diretamente nas propriedades do objeto). A arquitetura de vinculação de dados atualiza os dados no objeto.
 
-Se seu aplicativo exigir o acompanhamento de alterações e a reversão de alterações propostas para seus valores originais, você deverá implementar essa funcionalidade em seu modelo de objeto. Para obter exemplos de como as tabelas de dados acompanham as alterações propostas, consulte <xref:System.Data.DataRowState>, <xref:System.Data.DataSet.HasChanges%2A> e <xref:System.Data.DataTable.GetChanges%2A>.
+Se seu aplicativo exigir o acompanhamento de alterações e a reversão de alterações propostas para seus valores originais, você deverá implementar essa funcionalidade em seu modelo de objeto. Para obter exemplos de como as tabelas de dados acompanham as alterações propostas, consulte <xref:System.Data.DataRowState>, <xref:System.Data.DataSet.HasChanges%2A>e <xref:System.Data.DataTable.GetChanges%2A>.
 
 ### <a name="save-data-in-objects-back-to-the-database"></a>Salvar dados em objetos de volta no banco de dado
 
@@ -137,7 +137,7 @@ O Visual Studio cria métodos DBDirect que podem ser executados diretamente no b
 |Métodos DBDirect TableAdapter|Descrição|
 | - |-----------------|
 |`TableAdapter.Insert`|Adiciona novos registros a um banco de dados, permitindo que você transmita valores de coluna individuais como parâmetros de método.|
-|`TableAdapter.Update`|Atualiza os registros existentes em um banco de dados. O método Update usa valores originais e novos de coluna como parâmetros de método. Os valores originais são usados para localizar o registro original e os novos valores são usados para atualizar esse registro.<br /><br /> O método `TableAdapter.Update` também é usado para reconciliar as alterações em um conjunto de dados de volta para o Database, fazendo uma <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, <xref:System.Data.DataRow> ou matriz de <xref:System.Data.DataRow>s como parâmetros de método.|
+|`TableAdapter.Update`|Atualiza os registros existentes em um banco de dados. O método Update usa valores originais e novos de coluna como parâmetros de método. Os valores originais são usados para localizar o registro original e os novos valores são usados para atualizar esse registro.<br /><br /> O método `TableAdapter.Update` também é usado para reconciliar as alterações em um conjunto de dados de volta para o Database, fazendo uma <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, <xref:System.Data.DataRow>ou matriz de <xref:System.Data.DataRow>s como parâmetros de método.|
 |`TableAdapter.Delete`|Exclui os registros existentes do banco de dados com base nos valores de coluna originais passados como parâmetros de método.|
 
 Para salvar dados de uma coleção de objetos, faça um loop através da coleção de objetos (por exemplo, usando um loop for-Next). Envie os valores para cada objeto para o banco de dados usando os métodos DBDirect do TableAdapter.
@@ -147,6 +147,6 @@ O exemplo a seguir mostra como usar o `TableAdapter.Insert` Método DBDirect par
 [!code-csharp[VbRaddataSaving#23](../data-tools/codesnippet/CSharp/bind-objects-in-visual-studio_6.cs)]
 [!code-vb[VbRaddataSaving#23](../data-tools/codesnippet/VisualBasic/bind-objects-in-visual-studio_6.vb)]
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Associar controles a dados no Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)

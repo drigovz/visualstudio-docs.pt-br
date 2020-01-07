@@ -11,17 +11,17 @@ helpviewer_keywords:
 - MSBuild, WriteCodeFragment task
 - WriteCodeFragment task [MSBuild]
 ms.assetid: 1d2514b4-5bef-43bb-bebe-496da8ef063c
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 59938817c06a29b8842cbbe080ef8b477af5d39e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 3745e1c2f300c860d281752a0bf81359806c5d5e
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778154"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75567392"
 ---
 # <a name="writecodefragment-task"></a>Tarefa WriteCodeFragment
 Gera um arquivo de código temporário do fragmento de código gerado especificado. Não exclui o arquivo.
@@ -39,6 +39,6 @@ Gera um arquivo de código temporário do fragmento de código gerado especifica
 ## <a name="remarks"></a>Comentários
  Além de ter os parâmetros listados acima, essa tarefa herda parâmetros da classe <xref:Microsoft.Build.Tasks.TaskExtension>, que herda da classe <xref:Microsoft.Build.Utilities.Task>. Para obter uma lista desses parâmetros adicionais e suas descrições, confira [Classe base TaskExtension](../msbuild/taskextension-base-class.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 - [Tarefas](../msbuild/msbuild-tasks.md)
 - [Referência de tarefas](../msbuild/msbuild-task-reference.md)

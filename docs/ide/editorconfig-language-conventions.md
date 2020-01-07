@@ -7,18 +7,18 @@ dev_langs:
 - VB
 helpviewer_keywords:
 - language code style rules [EditorConfig]
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 38d625b774bc828741e2e4f227a45a293c029235
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d03af1625086a56a6f36e48d59fd00c2461c0751
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652802"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75588623"
 ---
 # <a name="language-conventions"></a>Convenções de linguagem
 
@@ -66,7 +66,7 @@ A partir do Visual Studio 2019 versão 16,3, você pode configurar regras de est
 
 Para alterar a Convenção do estilo de código:
 
-1. Passe o mouse sobre o rabisco no editor e, em seguida, abra o menu de lâmpada que aparece. Escolha **Configurar ou suprimir problemas**  > **configurar \<rule ID > estilo de código**.
+1. Passe o mouse sobre o rabisco no editor e, em seguida, abra o menu de lâmpada que aparece. Escolha **Configurar ou suprimir problemas** > **Configurar \<ID da regra > estilo de código**.
 
    ![Configurar o estilo de código no menu de lâmpada no Visual Studio](media/vs-2019/configure-code-style.png)
 
@@ -76,7 +76,7 @@ Para alterar a Convenção do estilo de código:
 
    O Visual Studio adiciona ou modifica a definição de configuração no arquivo EditorConfig, conforme mostrado na caixa de visualização.
 
-Para alterar a severidade da violação de estilo de código, siga as mesmas etapas, mas escolha **configurar \<rule id > severidade** em vez de **configurar \<rule ID > estilo de código**. Para obter mais informações, consulte [Configurar automaticamente a severidade da regra](../code-quality/use-roslyn-analyzers.md#automatically-configure-rule-severity).
+Para alterar a severidade da violação do estilo de código, siga as mesmas etapas, mas escolha **configurar \<ID da regra > severidade** em vez de **Configurar \<id da regra > estilo de código**. Para obter mais informações, consulte [Configurar automaticamente a severidade da regra](../code-quality/use-roslyn-analyzers.md#automatically-configure-rule-severity).
 
 ::: moniker-end
 
@@ -1838,7 +1838,7 @@ void M()
 | **Nome da regra** | csharp_prefer_simple_using_statement |
 | **ID da regra** | IDE0063 |
 | **Linguagens aplicáveis** | C# 8.0+ |
-| **Valores** | `true` – preferir usar uma instrução `using` *simples*<br /><br />`false` – não preferir usar uma instrução `using` *simples* |
+| **Valores** | `true`-preferir usar uma instrução `using` *simples*<br /><br />`false`-não prefere usar uma instrução `using` *simples* |
 | **Padrão do Visual Studio** | `true:suggestion` |
 
 Exemplos de código:
@@ -1885,7 +1885,7 @@ switch (x)
 }
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Convenções de formatação](editorconfig-formatting-conventions.md)
 - [Convenções de nomenclatura](editorconfig-naming-conventions.md)

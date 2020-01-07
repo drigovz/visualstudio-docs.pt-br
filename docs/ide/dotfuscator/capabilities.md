@@ -14,15 +14,15 @@ helpviewer_keywords:
 - protection
 description: Conheça as funcionalidades da cópia gratuita do Dotfuscator Community, incluída no Visual Studio 2017.
 ms.assetid: 0ee89c58-c900-48fc-a6a2-65ace00e8bab
-author: Joe-Sewell-PreEmptive
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 249c039070246f27669f3a808cf607a649db1e59
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: a36aa17207affa257cdbb2caec0f2d6d9392285b
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747936"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590001"
 ---
 # <a name="capabilities-of-dotfuscator"></a>Funcionalidades do Dotfuscator
 
@@ -58,7 +58,7 @@ Ou, se você preferir não escrever código para lidar com usos inválidos do ap
 
 Muitos desses mesmos métodos também podem ser usados para impor [prazos de fim de vida][shelflife] para avaliação ou software de avaliação.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 [Este tópico no Guia completo do usuário do Dotfuscator Community][full]
 

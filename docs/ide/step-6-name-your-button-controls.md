@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ff8c43e42d63208c1119f1f545697a57173fdd7a
-ms.sourcegitcommit: 98b02f87c7aa1f5eb7f0d1c86bfa36efa8580c57
+ms.openlocfilehash: 615b112c8ad3e35449a1e3a6c2817db9c7699a73
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72313973"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589975"
 ---
 # <a name="step-6-name-your-button-controls"></a>Etapa 6: Nomear os controles de botão
 
@@ -67,14 +67,14 @@ Guia ***Form1.cs*** *com C# código*
 
    [!INCLUDE [devlang-control-csharp-vb](./includes/devlang-control-csharp-vb.md)]
 
-   Você está vendo o código chamado `showButton_Click()` (como alternativa, `ShowButton_Click()`). O IDE adicionou isto ao código do formulário quando você abriu o arquivo de código para o botão **showButton**. No tempo de design, quando você abre o arquivo de código para um controle em um formulário, o código é gerado para o controle se ainda não existir. Esse código, conhecido como *método*, é executado quando você executa o aplicativo e escolhe o controle, nesse caso, o botão **mostrar uma imagem** .
+   Você está olhando para o código chamado `showButton_Click()` (como alternativa, `ShowButton_Click()`). O IDE adicionou isto ao código do formulário quando você abriu o arquivo de código para o botão **showButton**. No tempo de design, quando você abre o arquivo de código para um controle em um formulário, o código é gerado para o controle se ainda não existir. Esse código, conhecido como *método*, é executado quando você executa o aplicativo e escolhe o controle, nesse caso, o botão **mostrar uma imagem** .
 
 1. Escolha a guia **Designer de formulários do Windows** novamente (**Form1.cs [Design]** ) e, em seguida, abra o arquivo de código para o botão **limpar imagem** para criar um método para ele no código do formulário. Repita isso para os dois botões restantes. A cada vez, o IDE adiciona um novo método ao arquivo de código do formulário.
 
 1. Para adicionar mais um método, abra o arquivo de código para o controle **CheckBox** no **Designer de Formulários do Windows** para fazer o IDE adicionar um método `checkBox1_CheckedChanged()`. Esse método é chamado sempre que o usuário seleciona ou desmarca a caixa de seleção.
 
    > [!TIP]
-   > Ao trabalhar em um aplicativo, você geralmente se move entre o editor de código e **Designer de formulários do Windows**. O IDE torna fácil a navegação no projeto. Use **Gerenciador de soluções** para abrir **o designer de formulários do Windows** clicando duas vezes em *Form1.cs* no C# ou *Form1. vb* no Visual Basic, ou na barra de menus, escolha **Exibir** > **Designer**.
+   > Ao trabalhar em um aplicativo, você geralmente se move entre o editor de código e **Designer de formulários do Windows**. O IDE torna fácil a navegação no projeto. Use **Gerenciador de soluções** para abrir **Designer de formulários do Windows** clicando duas vezes em *Form1.cs* no C# ou *Form1. vb* no Visual Basic, ou na barra de menus, escolha **Exibir** > **Designer**.
 
     A seguir temos o novo código que você vê no editor de códigos.
 
@@ -93,17 +93,17 @@ Guia ***Form1.cs*** *com C# código*
 
     Os nomes são importantes quando você cria programas e métodos (incluindo manipuladores de eventos) podem ter qualquer nome que você desejar. Quando você adiciona um manipulador de eventos com o IDE, cria um nome com base no nome do controle e do evento que está sendo tratado.
 
-    Por exemplo, o evento de clique para um botão chamado " **DefaultButton** " é chamado de método de manipulador de eventos `showButton_Click()` (Alternativamente, `ShowButton_Click()`). Além disso, os parênteses de abertura e fechamento `()` são adicionados geralmente após o nome do método para indicar que os métodos estão sendo discutidos.
+    Por exemplo, o evento de clique para um botão chamado de o **Button** é chamado de método de manipulador de eventos `showButton_Click()` (alternativamente `ShowButton_Click()`). Além disso, os parênteses de abertura e fechamento `()` são adicionados geralmente após o nome do método para indicar que os métodos estão sendo discutidos.
 
     Se você decidir que deseja alterar um nome de variável de código, clique com o botão direito do mouse na variável no código e então escolha **Refatorar** > **Renomear**. Todas as instâncias desta variável no código são renomeadas. Para obter mais informações, consulte [renomear refatoração](../ide/reference/rename.md).
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
 
 * Para ir para a próxima etapa do tutorial, consulte **[etapa 7: adicionar componentes da caixa de diálogo ao formulário](../ide/step-7-add-dialog-components-to-your-form.md)** .
 
 * Para retornar à etapa anterior do tutorial, veja [Etapa 5: Adicionar controles ao formulário](../ide/step-5-add-controls-to-your-form.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 * [Tutorial 2: criar um teste de matemática cronometrado](tutorial-2-create-a-timed-math-quiz.md)
 * [Tutorial 3: criar um jogo de correspondência](tutorial-3-create-a-matching-game.md)

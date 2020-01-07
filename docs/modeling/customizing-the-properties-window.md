@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, Properties window
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 72e0a8393a65d4c0e1549a6617971b0adb8c1df7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b2cd7d4598040721d3c5b6acb7844f668c72ea09
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653961"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589689"
 ---
 # <a name="customize-the-properties-window"></a>Personalizar o janela Propriedades
 
@@ -40,7 +40,7 @@ Alguns dos recursos dinâmicos de elementos gráficos podem ser representados ou
 
 Clique com o botão direito do mouse em uma classe Shape na definição de DSL, aponte para **Adicionar exposto**e escolha um recurso.
 
-Em formas, você pode expor as propriedades **FillColor**, **OutlineColor**, **TextColor**, **OutlineDashStyle**, **OutlineThickness** e **FillGradientMode** . Em conectores, você pode expor a **cor** `,` as propriedades**TextColor**, **DashStyle**e **espessura** . Em diagramas, você pode expor as propriedades **FillColor** e **TextColor** .
+Em formas, você pode expor as propriedades **FillColor**, **OutlineColor**, **TextColor**, **OutlineDashStyle**, **OutlineThickness** e **FillGradientMode** . Em conectores, você pode expor a **cor**`,`as propriedades **TextColor**, **DashStyle**e **espessura** . Em diagramas, você pode expor as propriedades **FillColor** e **TextColor** .
 
 ## <a name="forwarding-display-properties-of-related-elements"></a>Encaminhamento: Exibir Propriedades de elementos relacionados
 
@@ -62,7 +62,7 @@ Quando o usuário seleciona uma forma ou um conector, ou um elemento no Explorer
 
 ### <a name="add-property-forwarding"></a>Adicionar encaminhamento de propriedade
 
-Para encaminhar uma propriedade, você define um descritor de tipo de domínio. Se você tiver uma relação de domínio entre duas classes de domínio, poderá usar um descritor de tipo de domínio para definir uma propriedade de domínio na primeira classe como o valor de uma propriedade de domínio na segunda classe de domínio. Por exemplo, se você tiver uma relação entre uma classe de domínio de **livro** e uma classe de domínio de **autor** , poderá usar um descritor de tipo de domínio para fazer com que a propriedade **Name** do **autor** de um livro seja exibida na janela Propriedades quando o usuário seleciona o livro.
+Para encaminhar uma propriedade, você define um descritor de tipo de domínio. Se você tiver uma relação de domínio entre duas classes de domínio, poderá usar um descritor de tipo de domínio para definir uma propriedade de domínio na primeira classe como o valor de uma propriedade de domínio na segunda classe de domínio. Por exemplo, se você tiver uma relação entre uma classe de domínio de **livro** e uma classe de domínio de **autor** , poderá usar um descritor de tipo de domínio para fazer com que a propriedade **Name** do **autor** de um livro seja exibida na janela Propriedades quando o usuário selecionar o livro.
 
 > [!NOTE]
 > O encaminhamento de propriedade afeta somente a janela Propriedades quando o usuário está editando um modelo. Ele não define uma propriedade de domínio na classe de recebimento. Se você quiser acessar a propriedade de domínio encaminhada em outras partes da definição de DSL ou no código do programa, deverá acessar o elemento de encaminhamento.
@@ -183,7 +183,7 @@ Você define um editor escrevendo uma classe que é derivada de <xref:System.Dra
 
 - <xref:System.Drawing.Design.UITypeEditor.GetEditStyle%2A>, para especificar se o editor abrirá uma caixa de diálogo ou fornecerá um menu suspenso.
 
-Você também pode fornecer uma representação gráfica do valor da propriedade que será exibido na grade de propriedades. Para fazer isso, substitua `GetPaintValueSupported` e `PaintValue`.  Para obter mais informações, consulte <xref:System.Drawing.Design.UITypeEditor>.
+Você também pode fornecer uma representação gráfica do valor da propriedade que será exibido na grade de propriedades. Para fazer isso, substitua `GetPaintValueSupported`e `PaintValue`.  Para obter mais informações, consulte <xref:System.Drawing.Design.UITypeEditor>.
 
 > [!NOTE]
 > Adicione o código em um arquivo de código separado no projeto **DSL** .
@@ -319,6 +319,6 @@ public class MyTypeConverter : System.ComponentModel.TypeConverter
 }
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Navegando por um modelo no código do programa e atualizando-o](../modeling/navigating-and-updating-a-model-in-program-code.md)
