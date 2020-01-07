@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - dependency diagrams, adding custom validation
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cfd85d7b7e60c64244fb1753ffb2a903dff03455
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 9f7c3c37feb2f2d68817807f056ee470f0d0d05f
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748547"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75597224"
 ---
 # <a name="add-custom-architecture-validation-to-dependency-diagrams"></a>Adicionar validação de arquitetura personalizada a diagramas de dependência
 
@@ -30,7 +30,7 @@ Você pode empacotar sua extensão de validação de camada em um VSIX (extensã
 > [!WARNING]
 > Depois de criar um projeto de validação, copie o [código de exemplo](#example) no final deste tópico e, em seguida, edite-o para suas próprias necessidades.
 
-## <a name="requirements"></a>Requisitos
+## <a name="requirements"></a>Requisitos do
 
 Consulte [requisitos](../modeling/extend-layer-diagrams.md#requirements).
 
@@ -83,38 +83,38 @@ Se você quiser criar um VSIX que contenha validadores de camada, comandos e out
 
 4. Em **Source. Extension. vsixmanifest**, em **ativos**, adicione o projeto de validação de camada como um componente do MEF:
 
-    1. Escolha **novo**.
+    1. Escolha **Novo**.
 
     2. Na caixa de diálogo **Adicionar novo ativo** , defina:
 
-         **Digite**  = **Microsoft. VisualStudio. MefComponent**
+         **Type** = **Microsoft.VisualStudio.MefComponent**
 
-         **Fonte**  = **um projeto na solução atual**
+         **Fonte** = **um projeto na solução atual**
 
-         **Projeto**  = *seu projeto de validador*
+         **Projeto** = *seu projeto de validador*
 
 5. Você também deve adicioná-lo como uma validação de camada:
 
-    1. Escolha **novo**.
+    1. Escolha **Novo**.
 
     2. Na caixa de diálogo **Adicionar novo ativo** , defina:
 
-         **Digite**  = **Microsoft. VisualStudio. ArchitectureTools. Layer. Validator**. Essa não é uma das opções na lista suspensa. Você deve inseri-lo no teclado.
+         **Type** = **Microsoft.VisualStudio.ArchitectureTools.Layer.Validator**. Essa não é uma das opções na lista suspensa. Você deve inseri-lo no teclado.
 
-         **Fonte**  = **um projeto na solução atual**
+         **Fonte** = **um projeto na solução atual**
 
-         **Projeto**  = *seu projeto de validador*
+         **Projeto** = *seu projeto de validador*
 
 6. Retorne ao projeto de validação de camada e adicione as seguintes referências de projeto:
 
     |**Referência**|**O que isso permite que você faça**|
     |-|-|
-    |Microsoft. VisualStudio. GraphModel. dll|Ler o grafo de arquitetura|
-    |Microsoft. VisualStudio. ArchitectureTools. Extensibility. CodeSchema. dll|Ler o código DOM associado às camadas|
-    |Microsoft. VisualStudio. ArchitectureTools. Extensibility. Layer. dll|Ler o modelo de camada|
-    |Microsoft. VisualStudio. ArchitectureTools. Extensibility|Ler e atualizar formas e diagramas.|
-    |System. ComponentModel. composição|Definir o componente de validação usando o Managed Extensibility Framework (MEF)|
-    |Microsoft. VisualStudio. Modeling. Sdk. versão|Definir extensões de modelagem|
+    |Microsoft.VisualStudio.GraphModel.dll|Ler o grafo de arquitetura|
+    |Microsoft.VisualStudio.ArchitectureTools.Extensibility.CodeSchema.dll|Ler o código DOM associado às camadas|
+    |Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.dll|Ler o modelo de camada|
+    |Microsoft.VisualStudio.ArchitectureTools.Extensibility|Ler e atualizar formas e diagramas.|
+    |System.ComponentModel.Composition|Definir o componente de validação usando o Managed Extensibility Framework (MEF)|
+    |Microsoft.VisualStudio.Modeling.Sdk.[version]|Definir extensões de modelagem|
 
 7. Copie o código de exemplo no final deste tópico para o arquivo de classe no projeto de biblioteca do validador para conter o código para sua validação. Para obter mais informações, consulte [validação de programação](#programming).
 
@@ -174,11 +174,11 @@ O modelo de gráfico é definido em <xref:Microsoft.VisualStudio.GraphModel>. Su
 
 Cada nó e cada link tem uma ou mais categorias que especificam o tipo de elemento ou relação que ele representa. Os nós de um grafo típico têm as seguintes categorias:
 
-- DSL. LayerModel
+- Dsl.LayerModel
 
-- DSL. Layer
+- Dsl.Layer
 
-- DSL. referência
+- Dsl.Reference
 
 - CodeSchema_Type
 
@@ -287,6 +287,6 @@ namespace Validator3
 }
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Estender diagramas de dependência](../modeling/extend-layer-diagrams.md)

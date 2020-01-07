@@ -2,17 +2,17 @@
 title: Como ... com modelos de texto
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2fc29b7daa65a9aa0b0c45ae5bc90a4f845dedff
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a7ecabc00f37cb199f203bcd71a1b72bdbfbe1a4
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72605620"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594650"
 ---
 # <a name="how-to--with-text-templates"></a>Como ... com modelos de texto
 Os modelos de texto no Visual Studio fornecem uma maneira útil de gerar texto de qualquer tipo. Você pode usar modelos de texto para gerar texto em tempo de execução como parte de seu aplicativo e em tempo de design para gerar parte do código do projeto. Este tópico resume as perguntas mais frequentes sobre "Como fazer...?" dúvidas.
@@ -35,7 +35,7 @@ Os modelos de texto no Visual Studio fornecem uma maneira útil de gerar texto d
 
 - Se você quiser gerar a partir de modelos que estão disponíveis somente em tempo de execução, você pode usar modelos de texto padrão. Se você estiver escrevendo uma extensão do Visual Studio, poderá invocar o serviço de modelagem de texto. Para obter mais informações, consulte [invocando a transformação de texto em uma extensão do vs](../modeling/invoking-text-transformation-in-a-vs-extension.md). Em outros contextos, você pode usar o mecanismo de modelagem de texto. Para obter mais informações, consulte <xref:Microsoft.VisualStudio.TextTemplating.Engine?displayProperty=fullName>.
 
-     Use a diretiva \< # @parameter # > para passar parâmetros para esses modelos. Para obter mais informações, consulte [diretiva de parâmetro T4](../modeling/t4-parameter-directive.md).
+     Use a diretiva \<#@parameter# > para passar parâmetros para esses modelos. Para obter mais informações, consulte [diretiva de parâmetro T4](../modeling/t4-parameter-directive.md).
 
 ### <a name="read-another-project-file-from-a-template"></a>Ler outro arquivo de projeto de um modelo
  Para ler um arquivo do mesmo projeto do Visual Studio que o modelo:
@@ -48,7 +48,7 @@ Os modelos de texto no Visual Studio fornecem uma maneira útil de gerar texto d
 
 Se os métodos já existirem, por exemplo, em classes .NET:
 
-- Use a diretiva \< # @assembly # > para carregar o assembly e use \< # @import # > para definir o contexto do namespace. Para obter mais informações, consulte [diretiva de importação T4](../modeling/t4-import-directive.md).
+- Use a diretiva \<#@assembly# > para carregar o assembly e use \<#@import# > para definir o contexto do namespace. Para obter mais informações, consulte [diretiva de importação T4](../modeling/t4-import-directive.md).
 
    Se você usar frequentemente o mesmo conjunto de diretivas de assembly e importação, considere escrever um processador de diretivas. Em cada modelo, você pode invocar o processador de diretiva, que pode carregar os assemblies e os arquivos de modelo e definir o contexto do namespace. Para obter mais informações, consulte [criando processadores de diretiva de modelo de texto T4 personalizados](../modeling/creating-custom-t4-text-template-directive-processors.md).
 

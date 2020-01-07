@@ -2,17 +2,17 @@
 title: Como abrir um modelo a partir de um arquivo no código do programa
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d39543a388c112cf13a5841e4fe825717597d5c1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: fae71f748f1f64480c046ae157e1fbca0dd0bec9
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661174"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594611"
 ---
 # <a name="how-to-open-a-model-from-file-in-program-code"></a>Como abrir um modelo a partir de um arquivo no código do programa
 
@@ -41,7 +41,7 @@ Adicione estas referências ao seu projeto de aplicativo do Visual Studio:
 
   - Se você não vir isso na guia **.net** da caixa de diálogo **Adicionar referências** , clique na guia **procurar** e navegue até `%Program Files%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Common\Assemblies\`.
 
-- Seu assembly DSL, que será encontrado na pasta bin do seu projeto DSL. Seu nome normalmente é do formato: *suaempresa*. @No__t_2 *seuprojeto* .
+- Seu assembly DSL, que será encontrado na pasta bin do seu projeto DSL. Seu nome normalmente é do formato: *suaempresa*.`.Dsl.dll`*seuprojeto* .
 
 ## <a name="important-classes-in-the-dsl"></a>Classes importantes na DSL
 

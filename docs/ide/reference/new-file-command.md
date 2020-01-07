@@ -8,17 +8,17 @@ helpviewer_keywords:
 - File.NewFile command
 - New File command
 ms.assetid: 767868d6-a525-425b-a43b-2198f636ab6b
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 02f6872ef2acaef65bf6ef1b7631bb06c89518ab
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 5fe8a99ee59a347fdcb7cff601b75139760630f7
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747872"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595950"
 ---
 # <a name="new-file-command"></a>Comando Novo Arquivo
 Cria um novo arquivo e abre-o. O arquivo aparece na pasta Arquivos Diversos.
@@ -34,7 +34,7 @@ File.NewFile [filename] [/t:templatename] [/editor:editorname]
 
 Opcional. Nome para o arquivo. Se nenhum nome for fornecido, será fornecido um nome padrão. Se nenhum nome de modelo for listado, será criado um arquivo de texto.
 
-## <a name="switches"></a>Opções
+## <a name="switches"></a>Comutadores
 /t:`templatename`\
 Opcional. Especifica o tipo de arquivo a ser criado.
 
@@ -66,7 +66,7 @@ Este exemplo cria uma nova página da Web "test1.htm" e abre-a no editor de cód
 >File.NewFile test1 /t:"General\HTML Page" /e:"Source Code (text) Editor"
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Comandos do Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Janela Comando](../../ide/reference/command-window.md)

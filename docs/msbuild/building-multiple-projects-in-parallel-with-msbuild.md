@@ -7,17 +7,17 @@ helpviewer_keywords:
 - building multiple projects in parallel
 - msbuild, building projects in parallel
 ms.assetid: c8c9aadc-33ad-4aa1-b07d-b879e9eabda0
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 48f02e9e2f051bbdb77b0d567d79d8793787cf1c
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: 7ee3cace6940b4fe402595cfba7b316a273c1d50
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911276"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593389"
 ---
 # <a name="build-multiple-projects-in-parallel-with-msbuild"></a>Criar vários projetos em paralelo com o MSBuild
 Você pode usar o MSBuild para criar vários projetos mais rápido, executando-os em paralelo. Para executar compilações em paralelo, você pode usar as seguintes configurações em um computador com processador de vários núcleos ou vários processadores:
@@ -69,7 +69,7 @@ Veja a seguir um exemplo, retirado de *microsoft.common.targets*, sobre como def
 </MSBuild>
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 - [Usar vários processadores para criar projetos](../msbuild/using-multiple-processors-to-build-projects.md)
 - [Escrever agentes com reconhecimento de multiprocessador](../msbuild/writing-multi-processor-aware-loggers.md)
 - [Blog Ajustando o paralelismo de build do C++](https://devblogs.microsoft.com/visualstudio/tuning-c-build-parallelism-in-vs2010/)

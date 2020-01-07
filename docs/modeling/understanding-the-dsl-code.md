@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, generated code
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 44f66ed25ab43db2d08db3cb93263bd61ac3a907
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 1196faa5831ae44a93f21ab1808915357690a0ac
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189454"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75565936"
 ---
 # <a name="understanding-the-dsl-code"></a>Noções básicas do código de DSL
 
@@ -58,7 +58,7 @@ Pressione **F5** e experimente se você não estiver familiarizado com este mode
 ## <a name="generated-files-in-dsl"></a>Arquivos gerados na Dsl
  Os seguintes arquivos gerados aparecem no projeto **DSL** .
 
- `Schema.xsd` *YourDsl*
+ *YourDsl* `Schema.xsd`
 
  O esquema dos arquivos que contêm instâncias da DSL. Esse arquivo é copiado para o diretório de compilação (**bin**). Ao instalar sua DSL, você pode copiar esse arquivo para **\Program Files\Microsoft Visual Studio 11.0 \ Xml\Schemas** para que os arquivos de modelo possam ser validados. Para obter mais informações, confira [Implantando soluções de linguagem específica de domínio](msi-and-vsix-deployment-of-a-dsl.md).
 
@@ -70,7 +70,7 @@ Pressione **F5** e experimente se você não estiver familiarizado com este mode
 
  (No exemplo de solução de componente, um dos compiladores de conexão é chamado ConnectionBuilder, isso é uma coincidência porque o nome da relação do domínio é Connection.)
 
- A relação é criada no método de `Builder.Connect()` de *relacionamento* . A versão padrão verifica se os elementos do modelo de origem e de destino são aceitáveis e instancia a relação. Por exemplo:
+ A relação é criada no método de`Builder.Connect()` de *relacionamento* . A versão padrão verifica se os elementos do modelo de origem e de destino são aceitáveis e instancia a relação. Por exemplo:
 
  `CommentReferencesSubject(sourceAccepted, targetAccepted);`
 
@@ -118,7 +118,7 @@ Pressione **F5** e experimente se você não estiver familiarizado com este mode
 
    Na DSL de exemplo, a classe `Comment` possui acessadores que acessa seu modelo pai através da relação de inserção `ComponentModelHasComments`.
 
-- Construtores. Se você quiser substituí-los, defina **tem Construtor personalizado** na classe de domínio.
+- {1&gt;Construtores&lt;1}. Se você quiser substituí-los, defina **tem Construtor personalizado** na classe de domínio.
 
 - Métodos do manipulador Protótipo de Grupo de Elementos (EGP). Eles serão necessários se o usuário puder *mesclar* (Adicionar) outro elemento nas instâncias dessa classe. Geralmente, o usuário faz isso arrastando de uma ferramenta de conexão ou outro formato ou colando.
 
@@ -344,7 +344,7 @@ explorerWindow.TreeContainer.ObjectModelBrowser.SelectedNode = treeNode;
 
  Esse arquivo controla como a DSL é empacotada em uma Extensão de Integração do Visual Studio (VSIX). Para obter mais informações, confira [Implantando soluções de linguagem específica de domínio](msi-and-vsix-deployment-of-a-dsl.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Como definir uma linguagem específica de domínio](../modeling/how-to-define-a-domain-specific-language.md)
 - [Noções básicas sobre modelos, classes e relações](../modeling/understanding-models-classes-and-relationships.md)
