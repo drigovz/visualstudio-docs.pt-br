@@ -88,17 +88,17 @@ f1_keywords:
 - VB_E_TERRCLASSNOTREG
 - vs.webclient.help.general
 ms.assetid: 8f866eb5-a206-4c16-807e-96a0f2c0e645
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c71b281a89d0465ac80f04de868b16cc5468429a
-ms.sourcegitcommit: 4f82de3fb0cfae226aef1abb40c47e63d2036a5c
+ms.openlocfilehash: dc3b1524b97b68e54574badcb003e608924e476d
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72919070"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593610"
 ---
 # <a name="resources-for-troubleshooting-integrated-development-environment-errors"></a>Recursos para solucionar erros do ambiente de desenvolvimento integrado
 
@@ -121,7 +121,7 @@ Você pode acessar fóruns, blogs, chats e outros recursos sobre no site das [Co
 
 Se ainda tiver dúvidas após tentar os outros recursos, você pode contatar os serviços de suporte da Microsoft visitando o site de [Suporte da Microsoft](https://support.microsoft.com/en-us). Para obter informações sobre o suporte do produto disponível em sua área, consulte a página [Opções de comentários do Visual Studio](../../ide/feedback-options.md) .
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 * [Solução de problemas relacionados à rede ou erros de proxy](../../install/install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md#troubleshoot-network-related-errors)
 * [Solução de problemas (Visual Studio para Mac)](/visualstudio/mac/troubleshooting)

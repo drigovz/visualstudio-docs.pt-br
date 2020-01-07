@@ -8,19 +8,19 @@ f1_keywords:
 helpviewer_keywords:
 - Toolbox [Visual Studio]
 - custom controls [Visual Studio]
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5311c9a910c3140d5a5053a42befe7ed7f5b1278
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c7decdb80cd06b1af3230b2926c4ebd37b48e422
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72651121"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596444"
 ---
-# <a name="toolbox"></a>Caixa de Ferramentas
+# <a name="toolbox"></a>Caixa de ferramentas
 
 A janela **Caixa de Ferramentas** exibe os controles que você pode adicionar a projetos do Visual Studio. Para abrir a Caixa de Ferramentas, escolha **Caixa de Ferramentas** no menu **Exibir**.
 
@@ -61,7 +61,7 @@ Você pode reorganizar os itens em uma guia da **Caixa de Ferramentas** ou adici
 
 ## <a name="create-and-distribute-custom-toolbox-controls"></a>Criar e distribuir controles personalizados da Caixa de Ferramentas
 
-Você pode criar controles personalizados da **Caixa de Ferramentas**, começando com um modelo de projeto baseado no [Windows Presentation Foundation](../../extensibility/creating-a-wpf-toolbox-control.md) ou no [Windows Forms](../../extensibility/creating-a-windows-forms-toolbox-control.md). Depois, você pode distribuir o controle personalizado para seus colegas de equipe ou publicá-lo na Web usando o [Instalador de Controles da Caixa de Ferramentas](http://download.microsoft.com/download/8/3/6/836657BD-9CCB-4ED4-B9D2-FB769473B284/TCI_whitepaper.docx).
+Você pode criar controles personalizados da **Caixa de Ferramentas**, começando com um modelo de projeto baseado no [Windows Presentation Foundation](../../extensibility/creating-a-wpf-toolbox-control.md) ou no [Windows Forms](../../extensibility/creating-a-windows-forms-toolbox-control.md). Depois, você pode distribuir o controle personalizado para seus colegas de equipe ou publicá-lo na Web usando o [Instalador de Controles da Caixa de Ferramentas](https://download.microsoft.com/download/8/3/6/836657BD-9CCB-4ED4-B9D2-FB769473B284/TCI_whitepaper.docx).
 
 ## <a name="help-on-toolbox-tabs"></a>Ajuda sobre as guias da Caixa de Ferramentas
 
@@ -71,6 +71,6 @@ Os tópicos a seguir fornecem mais informações sobre algumas das guias dispon�
 - [Caixa de Ferramentas, Guia Componentes](../../ide/reference/toolbox-components-tab.md)
 - [Caixa de Ferramentas, Guia HTML](../../ide/reference/toolbox-html-tab.md)
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Escolher itens da Caixa de Ferramentas, componentes do WPF](choose-toolbox-items-wpf-components.md)

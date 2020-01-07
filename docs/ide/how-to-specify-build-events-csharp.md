@@ -10,17 +10,17 @@ helpviewer_keywords:
 - build events [Visual Studio]
 - builds [Visual Studio], events
 ms.assetid: b4ce1ad9-5215-4b6f-b6a2-798b249aa335
-author: ghogen
-ms.author: ghogen
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a28f491ea5af53546f66e066bf8f78575708bc57
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 24f64cdaa52b923e288d704a10cb7a7438b028b4
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72656594"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591431"
 ---
 # <a name="how-to-specify-build-events-c"></a>Como especificar eventos de build (C#)
 
@@ -132,7 +132,7 @@ O procedimento a seguir mostra como definir a versão mínima do sistema operaci
 
    O comando utiliza dois argumentos: o caminho do manifesto do aplicativo (ou seja, a pasta na qual o processo de build cria o manifesto, normalmente *Projectname.publish*) e a nova versão do sistema operacional.
 
-4. Compile o projeto.
+4. Crie o projeto.
 
 5. Copie o arquivo *.exe* para um diretório como *C:\TEMP\ChangeOSVersionVB.exe*.
 
@@ -174,7 +174,7 @@ Em seguida, invoque este comando em um evento de pós-build para modificar o man
    <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
    ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Página Eventos de Build, Designer de Projeto (C#)](../ide/reference/build-events-page-project-designer-csharp.md)
 - [Caixa de diálogo da linha de comando do evento de pré-build/evento de pós-build](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)

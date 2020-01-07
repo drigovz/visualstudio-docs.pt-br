@@ -5,17 +5,17 @@ ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.HTML.Format
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d1e5f07a2b68d86051452a16ac0f42fc9b9acf0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9e28caf7f71af7c7a07634d1732a1001a32a4aee
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666202"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75568315"
 ---
 # <a name="options-text-editor-html-web-forms-formatting"></a>Opções, Editor de Texto, HTML (Web Forms), Formatação
 
@@ -99,6 +99,6 @@ Essas opções determinam se o editor quebrará marcas em linhas se elas exceder
 
    Exibe a caixa de diálogo **Opções Específicas à Marca**, que permite a definição de opções de formatação para marcas individuais ou grupos de marcas.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Caixa de diálogo Geral, Ambiente, Opções](../../ide/reference/general-environment-options-dialog-box.md)

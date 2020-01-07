@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - C#, IntelliSense
 - IntelliSense [C#]
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 13a3c16adca29128be275495fe8921895aa84250
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 2ed5d86599fa99b9c1360b414b37ef95ab59082d
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647222"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594169"
 ---
 # <a name="c-intellisense"></a>C# IntelliSense
 
@@ -80,7 +80,7 @@ O IntelliSense remove membros desnecessários da lista de preenchimento usando f
 
 O IntelliSense lembra os membros selecionados recentemente na caixa pop-up [Listar Membros](../ide/using-intellisense.md) quanto à conclusão automática de nome de objeto. Na próxima vez que você usar a **Lista de Membros**, os membros usados mais recentemente serão mostrados na parte superior. O histórico dos membros mais usados recentemente é limpo entre cada sessão do Visual Studio.
 
-### <a name="override"></a>override
+### <a name="override"></a>substituir
 
 Ao digitar [override](/dotnet/csharp/language-reference/keywords/override) e, em seguida, pressionar **Espaço**, o IntelliSense exibe todos os membros da classe base válidos que podem ser substituídos em uma caixa de listagem pop-up. Digitar o tipo de retorno do método após `override` solicitará que o IntelliSense mostre apenas os métodos que retornam o mesmo tipo. Quando o IntelliSense não conseguir encontrar nenhuma correspondência, ele exibirá todos os membros da classe base.
 
@@ -160,7 +160,7 @@ Se você pressionar a **Guia**, o IntelliSense criará um stub de um método com
 > [!NOTE]
 > Use o comando **Navegação Regressiva** no menu **Exibir** (**Ctrl**+ **-** ) para retornar à declaração de vínculo de evento.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Usar o IntelliSense](../ide/using-intellisense.md)
 - [Visual Studio IDE](../get-started/visual-studio-ide.md)

@@ -6,17 +6,17 @@ f1_keywords:
 - VS.XamlDesigner.CreateResource
 - VS.XamlDesigner.EditResource
 ms.assetid: 3ff4006d-659d-4073-9a41-06ff85e6cfdf
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7648772c8ac1657f4c650b38d9f0fc22e8653022
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 2ac633f94c237bdff418375903e99f6f2da9e776
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650926"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592962"
 ---
 # <a name="how-to-create-and-apply-a-resource"></a>Como criar e aplicar um recurso
 
@@ -52,7 +52,7 @@ Sempre que você cria um novo recurso a partir de uma propriedade, [Estilo](xref
 
 1. Na janela Estrutura de Tópicos do Documento, escolha o elemento em que você deseja aplicar um recurso.
 
-2. Realize um dos seguintes procedimentos:
+2. Siga um destes procedimentos:
 
    - Aplique um recurso a uma propriedade. Na janela **Propriedades**, escolha o marcador de propriedade ao lado do valor da propriedade, escolha **Recurso Local** ou **Recurso do Sistema** e escolha um recurso disponível na lista que é exibida.
 
@@ -73,6 +73,6 @@ Sempre que você cria um novo recurso a partir de uma propriedade, [Estilo](xref
 
 3. Modifique as opções do recurso.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Criando uma interface do usuário usando o Designer XAML](../xaml-tools/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)

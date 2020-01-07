@@ -5,17 +5,17 @@ ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Environment.RoamingSettings
 ms.assetid: 3cfe09d2-1120-46e8-b882-f7056acb778b
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 63b5443599e5e84cab1693aca4281c882c082162
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9ff457523024db49502ae982a390d9a7be6ba9dd
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72645345"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595898"
 ---
 # <a name="accounts-environment-options-dialog-box"></a>Caixa de diálogo Contas, Ambiente, Opções
 
@@ -41,7 +41,7 @@ Registre uma nuvem adicional do Azure escolhendo o botão **Adicionar**. A caixa
 
 Depois de registrar uma nuvem adicional do Azure, você pode escolher à qual nuvem do Azure deseja se conectar quando entrar no Visual Studio.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Sincronizar configurações em vários computadores](../synchronized-settings-in-visual-studio.md)
 - [Entrar no Visual Studio](../signing-in-to-visual-studio.md)

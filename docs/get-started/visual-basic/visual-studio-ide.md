@@ -4,19 +4,19 @@ ms.date: 11/15/2018
 ms.technology: vs-ide-general
 ms.custom: get-started
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 554311f7b7af5c104b48f5a4901677595d60ab41
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 5cf5f8d3660abcf941eb5cc429b8f190459d9c56
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647833"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596041"
 ---
 # <a name="welcome-to-the-visual-studio-ide--visual-basic"></a>Bem-vindo ao IDE do Visual Studio | Visual Basic
 
@@ -221,13 +221,13 @@ Para alterar para o tema **Escuro**:
 
 ::: moniker range="vs-2017"
 
-1. Abra o Visual Studio.
+1. {1&gt;Abra o Visual Studio.&lt;1}
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-1. Abra o Visual Studio. Na janela de início, escolha **Continuar sem código**.
+1. {1&gt;Abra o Visual Studio.&lt;1} Na janela de início, escolha **Continuar sem código**.
 
    ![A janela de início no Visual Studio 2019](media/vs-2019/continue-without-code.png)
 
@@ -277,7 +277,7 @@ Vamos nos aprofundar e criar um programa simples.
 
 ::: moniker range="vs-2017"
 
-1. Na barra de menus do Visual Studio, escolha **Arquivo** > **Novo Projeto**.
+1. Na barra de menus do Visual Studio, escolha **arquivo** > **novo projeto**.
 
    ![Arquivo > Novo projeto na barra de menus](media/file-new-project-menu.png)
 
@@ -341,7 +341,7 @@ Vamos nos aprofundar e criar um programa simples.
 
 ::: moniker range=">=vs-2019"
 
-1. Na barra de menus do Visual Studio, escolha **Arquivo** > **Novo Projeto**.
+1. Na barra de menus do Visual Studio, escolha **arquivo** > **novo projeto**.
 
    ![Arquivo > Novo projeto na barra de menus](media/vs-2019/file-new-project.png)
 
@@ -499,7 +499,7 @@ Vamos definir um ponto de interrupção para ver o valor da variável `username`
 
 Para obter mais detalhes sobre a depuração no Visual Studio, consulte [Tour dos recursos do depurador](../../debugger/debugger-feature-tour.md).
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
 
 Explore ainda mais o Visual Studio seguindo um dos seguintes artigos introdutórios:
 
@@ -509,7 +509,7 @@ Explore ainda mais o Visual Studio seguindo um dos seguintes artigos introdutór
 > [!div class="nextstepaction"]
 > [Saiba mais sobre projetos e soluções](tutorial-projects-solutions.md)
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - Descubra [mais recursos do Visual Studio](../../ide/advanced-feature-overview.md)
 - Visite [visualstudio.microsoft.com](https://visualstudio.microsoft.com/vs/)

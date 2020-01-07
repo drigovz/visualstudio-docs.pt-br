@@ -7,15 +7,15 @@ helpviewer_keywords:
 - templates [Visual Studio], item
 - item templates [Visual Studio]
 - project templates [Visual Studio]
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 1590317bf2749cc1aeef8a4c3bfbf2937c8404c7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 2cc932a2407aeb4951bab970a0edc6e2b2a5fcc9
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652602"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589754"
 ---
 # <a name="project-and-item-templates"></a>Modelos de projeto e de item
 
@@ -67,7 +67,7 @@ Quando esses arquivos são compactados em um arquivo *.zip* e colocados na pasta
 
 Para obter mais informações sobre pastas de modelo, consulte [Como localizar e organizar modelos](../ide/how-to-locate-and-organize-project-and-item-templates.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Como criar modelos de projeto](../ide/how-to-create-project-templates.md)
 - [Como criar modelos de item](../ide/how-to-create-item-templates.md)

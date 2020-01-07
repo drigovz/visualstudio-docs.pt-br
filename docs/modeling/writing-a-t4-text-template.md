@@ -6,17 +6,17 @@ helpviewer_keywords:
 - text templates, syntax
 - text templates, guide
 - text templates, functions that generate text
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: df653dbd449429b6995c987328a401866751fd5e
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 1990377bffe0c663a70520c07bd3ab60b91f8bbd
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72981245"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593480"
 ---
 # <a name="writing-a-t4-text-template"></a>Gravando um modelo de texto T4
 Um modelo de texto contém o texto que será gerado a partir dele. Por exemplo, um modelo que cria uma página da Web conterá "\<html >..." e todas as outras partes padrão de uma página HTML. Inseridos no modelo são *blocos de controle*, que são fragmentos de código do programa. Os blocos de controle fornecem valores variáveis​e permitem que partes do texto sejam condicionadas e repetidas.
@@ -195,7 +195,7 @@ private void WriteSquareLine(int i)
 
  Para obter mais informações, consulte [diretiva de assembly T4](../modeling/t4-assembly-directive.md).
 
-### <a name="namespaces"></a>Namespaces
+### <a name="namespaces"></a>{1&gt;Namespaces&lt;1}
  A diretiva de importação é a mesma que a cláusula `using` em C# ou a cláusula `imports` em Visual Basic. Ela permite que você consulte tipos em seu código sem usar um nome totalmente qualificado:
 
 ```
@@ -238,7 +238,7 @@ private void WriteSquareLine(int i)
 
  **Carregar um arquivo como um modelo navegável**. Um método mais eficiente é ler os dados como um modelo, pelo qual o código do modelo de texto pode navegar. Por exemplo, você pode carregar um arquivo XML e navegá-lo com expressões XPath. Você também pode usar [XSD. exe](/dotnet/standard/serialization/xml-schema-definition-tool-xsd-exe) para criar um conjunto de classes com os quais você pode ler os dados XML.
 
- **Edite o arquivo de modelo em um diagrama ou formulário.** [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] fornece ferramentas que permitem editar um modelo como um diagrama ou um formulário do Windows. Isso facilita discutir o modelo com os usuários do aplicativo gerado. [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] também cria um conjunto de classes fortemente tipado que reflete a estrutura do modelo. Para obter mais informações, consulte [gerando código de uma linguagem específica de domínio](../modeling/generating-code-from-a-domain-specific-language.md).
+ **Edite o arquivo de modelo em um diagrama ou formulário.** [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] fornece ferramentas que permitem editar um modelo como um diagrama ou um formulário do Windows. Isso facilita discutir o modelo com os usuários do aplicativo gerado. [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] também cria um conjunto de classes fortemente tipadas que refletem a estrutura do modelo. Para obter mais informações, consulte [gerando código de uma linguagem específica de domínio](../modeling/generating-code-from-a-domain-specific-language.md).
 
 ### <a name="relative-file-paths-in-design-time-templates"></a>Caminhos de arquivo relativos em modelos de tempo de design
  Em um [modelo de texto de tempo de design](../modeling/design-time-code-generation-by-using-t4-text-templates.md), se você quiser fazer referência a um arquivo em um local relativo ao modelo de texto, use `this.Host.ResolvePath()`. Você também pode definir `hostspecific="true"` na diretiva `template`:

@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 82bccbd9558a5dad87e9fe13f9ed7136a5d77d8a
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 7af9aa8ce8719fe08e16e244a2f7009ddf67f533
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747517"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591691"
 ---
 # <a name="overview-of-domain-specific-language-tools"></a>Visão geral das Ferramentas de Linguagem Específica do Domínio
 Ferramentas de Linguagem Específica de Domínio (ferramentas DSL), que são hospedadas no Visual Studio, permitem que você projete uma linguagem específica de domínio e, em seguida, gere tudo o que os usuários devem ter para criar modelos baseados no idioma.
@@ -74,7 +74,7 @@ Ferramentas de Linguagem Específica de Domínio (ferramentas DSL), que são hos
 
  Quando você cria e executa a solução de ferramentas DSL no Visual Studio, uma segunda instância do Visual Studio mostra como a linguagem específica do domínio procura o usuário do idioma. Depois de verificar se tudo está funcionando corretamente, você poderá distribuir o arquivo `.vsix` que encontrará na pasta de build do projeto DslPackage. Esse arquivo pode ser usado para instalar a DSL como uma extensão do Visual Studio em outros computadores.  Para obter mais informações, confira [Implantando soluções de linguagem específica de domínio](msi-and-vsix-deployment-of-a-dsl.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [A instância experimental](../extensibility/the-experimental-instance.md)
 - [Glossário das Ferramentas de Linguagem Específica de Domínio](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

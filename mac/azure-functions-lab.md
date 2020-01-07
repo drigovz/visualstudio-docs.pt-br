@@ -1,17 +1,17 @@
 ---
-title: 'Tutorial: Verificação de'
+title: 'Tutorial: Azure Functions'
 description: Usando o Azure Functions no Visual Studio para Mac.
 author: sayedihashimi
 ms.author: sayedha
 ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 38FD2070-5151-482E-B0A9-993715128736
-ms.openlocfilehash: 6bea12b37bc7fe1f608c27cd72e48c7cdc7e13d8
-ms.sourcegitcommit: cf8c0fef2b9690595e99ce3802586cdd55fd37c2
+ms.openlocfilehash: 1a3c4f3283ab10cfc4f8ee8364113dcb7f075af8
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "70108140"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75398167"
 ---
 # <a name="tutorial-getting-started-with-azure-functions"></a>Tutorial: Introdução ao Azure Functions
 
@@ -24,12 +24,12 @@ Neste laboratório, você aprenderá a começar a criar no Azure Functions usand
 > * Integrar com recursos de armazenamento do Azure e da Web
 > * Organizar um fluxo de trabalho envolvendo várias funções do Azure
 
-## <a name="requirements"></a>Requisitos
+## <a name="requirements"></a>Requisitos do
 
 - Visual Studio para Mac 7.5 ou posterior.
-- Uma assinatura do Azure (disponível gratuitamente em [https://azure.com/free](https://azure.com/free)).
+- Uma assinatura do Azure (disponível gratuitamente em [https://azure.com/free](https://azure.com/free?ref=visualstudio)).
 
-## <a name="exercise-1-creating-an-azure-functions-project"></a>Exercício 1: Como criar um projeto do Azure Functions
+## <a name="exercise-1-creating-an-azure-functions-project"></a>Exercício 1: Criar um projeto do Azure Functions
 
 1. Inicialize o **Visual Studio para Mac**.
 
@@ -52,7 +52,7 @@ Neste laboratório, você aprenderá a começar a criar no Azure Functions usand
 
     ![Painel de Soluções exibindo o arquivo local.settings.json](media/azure-functions-lab-image3.png)
 
-## <a name="exercise-2-creating-an-azure-storage-account"></a>Exercício 2: Como criar uma Conta de Armazenamento do Azure
+## <a name="exercise-2-creating-an-azure-storage-account"></a>Exercício 2: Criar uma Conta de Armazenamento do Azure
 
 1. Faça logon na sua conta do Azure em [https://portal.azure.com](https://portal.azure.com).
 
@@ -86,7 +86,7 @@ Neste laboratório, você aprenderá a começar a criar no Azure Functions usand
 
     ![Arquivo de configurações local com a chave de conexão inserida](media/azure-functions-lab-image10.png)
 
-## <a name="example-3-creating-and-debugging-an-azure-function"></a>Exemplo 3: Como criar e depurar uma função do Azure
+## <a name="example-3-creating-and-debugging-an-azure-function"></a>Exemplo 3: Criar e depurar uma função do Azure
 
 1. Agora, você está pronto para começar a adicionar algum código. Ao trabalhar com uma biblioteca de classes .NET, funções do Azure são adicionadas como métodos estáticos. No **Painel de Soluções**, clique com o botão direito do mouse no nó do projeto do **AzureFunctions** e selecione **Adicionar > Adicionar Função**:
 
@@ -126,7 +126,7 @@ Neste laboratório, você aprenderá a começar a criar no Azure Functions usand
 
     ![Novo método de execução com o atributo FunctionName realçado](media/azure-functions-lab-image13.png)
 
-1. Em seguida, o método é marcado como um método **estático público**, o que é obrigatório. Você também observará que o valor retornado é um **int**. A menos que seja especificado de outra forma usando atributos de método, qualquer valor retornado não nulo de uma função do Azure é retornado ao cliente como texto. Por padrão, ele é retornado como **XML**, mas pode ser alterado para **JSON**, o que você fará mais tarde no laboratório.
+1. Em seguida, o método é marcado como um método **estático público**, o que é obrigatório. Você também observará que o valor de retorno é um **int**. A menos que especificado em contrário usando atributos de método, qualquer valor de retorno não void de uma função do Azure é retornado ao cliente como texto. Por padrão, ele é retornado como **XML**, mas pode ser alterado para **JSON**, o que você fará mais tarde no laboratório.
 
     ![Novo método de execução com a inicialização do método realçada](media/azure-functions-lab-image14.png)
 
@@ -190,13 +190,13 @@ Neste laboratório, você aprenderá a começar a criar no Azure Functions usand
 
 1. Interrompa a sessão de depuração.
 
-## <a name="exercise-4-working-with-functionjson"></a>Exercício 4: Como trabalhar com o function.json
+## <a name="exercise-4-working-with-functionjson"></a>Exercício 4: Trabalhar com function.json
 
-1. Em um exercício anterior, mencionamos que o Visual Studio para Mac “gera” uma função de trabalho para a função do Azure definida na biblioteca. Isso acontece porque o Azure Functions não usa de fato os atributos de método em tempo de execução, mas usa uma convenção de sistema de arquivos em tempo de compilação para configurar onde e como as funções do Azure são disponibilizadas. No **Painel de Soluções**, clique com o botão direito do mouse no nó do projeto e selecione **Revelar no Localizador**.
+1. Em um exercício anterior, mencionamos que o Visual Studio para Mac “gera” uma função de trabalho para a função do Azure definida na biblioteca. Isso acontece porque o Azure Functions não usa de fato os atributos de método em runtime, mas usa uma convenção de sistema de arquivos em tempo de compilação para configurar onde e como as funções do Azure são disponibilizadas. No **Painel de Soluções**, clique com o botão direito do mouse no nó do projeto e selecione **Revelar no Localizador**.
 
      ![Opção de menu Revelar no Localizador](media/azure-functions-lab-image23.png)
 
-1. Navegue pelo sistema de arquivos até alcançar **bin/Debug/netstandard2.0**. Deve haver uma pasta chamada **Add**. Essa pasta foi criada para corresponder ao atributo de nome de função no código C#. Expanda a pasta Adicionar para revelar um único arquivo **function.json**. Esse arquivo é usado pelo tempo de execução para hospedar e gerenciar a função do Azure. Para outros modelos de linguagem sem suporte para tempo de compilação (como script em C# ou JavaScript), essas pastas precisam ser criadas e mantidas manualmente. Para desenvolvedores de C#, elas são geradas automaticamente dos metadados de atributo no momento do build. Clique com o botão direito do mouse em **function.json** e selecione para abrir no Visual Studio.
+1. Navegue pelo sistema de arquivos até alcançar **bin/Debug/netstandard2.0**. Deve haver uma pasta chamada **Add**. Essa pasta foi criada para corresponder ao atributo de nome de função no código C#. Expanda a pasta Adicionar para revelar um único arquivo **function.json**. Esse arquivo é usado pelo runtime para hospedar e gerenciar a função do Azure. Para outros modelos de linguagem sem suporte para tempo de compilação (como script em C# ou JavaScript), essas pastas precisam ser criadas e mantidas manualmente. Para desenvolvedores de C#, elas são geradas automaticamente dos metadados de atributo no momento do build. Clique com o botão direito do mouse em **function.json** e selecione para abrir no Visual Studio.
 
     ![function.json no diretório de arquivos](media/azure-functions-lab-image24.png)
 
@@ -304,7 +304,7 @@ Neste laboratório, você aprenderá a começar a criar no Azure Functions usand
 
 1. Retorne ao **Visual Studio para Mac** e encerre a sessão de depuração.
 
-## <a name="exercise-5-working-with-azure-storage-tables"></a>Exercício 5: Como trabalhar com tabelas de armazenamento do Azure
+## <a name="exercise-5-working-with-azure-storage-tables"></a>Exercício 5: Trabalhar com tabelas de armazenamento do Azure
 
 Frequentemente, o serviço criado pode ser muito mais complexo do que o que criamos até o momento, e pode demandar tempo e/ou estrutura significativa para ser executado. Nesse caso, você pode achar eficiente aceitar solicitações enfileiradas para processamento quando os recursos ficarem disponíveis, e o Azure Functions dá suporte a isso. Em outros casos, você vai preferir armazenar dados centralmente. As tabelas de Armazenamento do Azure permitem fazer isso facilmente.
 

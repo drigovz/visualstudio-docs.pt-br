@@ -8,15 +8,15 @@ helpviewer_keywords:
 - side-by-side installations [Visual Studio]
 - Help [Visual Studio], installing
 - install multiple versions of Visual Studio
-author: TerryGLee
-ms.author: tglee
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: b7fb1e057ffd9f3824fa1fe49e353fd54694da91
-ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
+ms.openlocfilehash: 62acf1c5e8cab960d4b670f7a05481644e9ffc1e
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72888682"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594078"
 ---
 # <a name="install-visual-studio-versions-side-by-side"></a>Instalar versões do Visual Studio lado a lado
 
@@ -56,16 +56,16 @@ Para informações específicas do idioma, consulte o tópico apropriado na tabe
 
 ::: moniker range="vs-2017"
 
-| Idioma | Tópico |
+| {1&gt;Idioma&lt;1} | Tópico |
 |--------------|-----------|
 | Visual Basic | [Página de Aplicativo, Designer de Projeto (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md?view=vs-2017) |
-| Visual C# | [Página Aplicativo, Designer de Projeto (C#)](../ide/reference/application-page-project-designer-csharp.md?view=vs-2017) |
+| Visual c# | [Página Aplicativo, Designer de Projeto (C#)](../ide/reference/application-page-project-designer-csharp.md?view=vs-2017) |
 | Visual F# | [Desenvolver com o Visual F# no Visual Studio](../ide/fsharp-visual-studio.md?view=vs-2017) |
 |C++ | [Como modificar a estrutura de destino e o conjunto de ferramentas de plataforma](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset/) |
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 * [Instalar o Visual Studio](install-visual-studio.md?view=vs-2017)
 * [Portar, migrar e atualizar projetos do Visual Studio](../porting/port-migrate-and-upgrade-visual-studio-projects.md?view=vs-2017)
@@ -75,16 +75,16 @@ Para informações específicas do idioma, consulte o tópico apropriado na tabe
 
 ::: moniker range=">= vs-2019"
 
-| Idioma | Tópico |
+| {1&gt;Idioma&lt;1} | Tópico |
 |--------------|-----------|
 | Visual Basic | [Página de Aplicativo, Designer de Projeto (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md) |
-| Visual C# | [Página Aplicativo, Designer de Projeto (C#)](../ide/reference/application-page-project-designer-csharp.md) |
+| Visual c# | [Página Aplicativo, Designer de Projeto (C#)](../ide/reference/application-page-project-designer-csharp.md) |
 | Visual F# | [Desenvolver com o Visual F# no Visual Studio](../ide/fsharp-visual-studio.md) |
 | C++ | [Como modificar a estrutura de destino e o conjunto de ferramentas de plataforma](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset/) |
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 * [Instalar o Visual Studio](install-visual-studio.md)
 * [Portar, migrar e atualizar projetos do Visual Studio](../porting/port-migrate-and-upgrade-visual-studio-projects.md)

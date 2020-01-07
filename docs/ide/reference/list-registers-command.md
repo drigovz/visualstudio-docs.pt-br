@@ -9,17 +9,17 @@ helpviewer_keywords:
 - Debug.ListRegisters command
 - ListRegisters command
 ms.assetid: 19a9d789-f6c9-46b3-b1f6-4934fc33e055
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a0e52f42e495c2bac5e80195d360096947210980
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: e87b10a7827b5365b507abb2c72a21506e59c19e
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748688"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75568679"
 ---
 # <a name="list-registers-command"></a>Comando Listar Registros
 Exibe o valor dos registros selecionados e permite modificar a lista de registros a mostrar.
@@ -32,7 +32,7 @@ Debug.ListRegisters [/Display [{register|registerGroup}...]] [/List]
 [/Unwatch [{register|registerGroup}...]]
 ```
 
-## <a name="switches"></a>Opções
+## <a name="switches"></a>Comutadores
 /Display [{`register`&#124;`registerGroup`}...]
 
 Exibe os valores do `register` ou `registerGroup` especificado. Se nenhum `register` ou `registerGroup` for especificado, a lista padrão de registros será exibida. Se nenhuma opção for especificada, o comportamento será o mesmo. Por exemplo:
@@ -59,13 +59,13 @@ Remove um ou mais valores `register` ou `registerGroup` da lista.
 O alias `r` pode ser usado no lugar de `Debug.ListRegisters`.
 
 ## <a name="example"></a>Exemplo
-Este exemplo usa o alias `Debug.ListRegisters` `r` para exibir os valores do registro de grupo `Flags`.
+Este exemplo usa o alias `Debug.ListRegisters``r` para exibir os valores do registro de grupo `Flags`.
 
 ```cmd
 r /Display Flags
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Comandos do Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Noções básicas sobre depuração: janela Registros](../../debugger/debugging-basics-registers-window.md)

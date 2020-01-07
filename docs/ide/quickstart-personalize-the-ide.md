@@ -2,17 +2,17 @@
 title: Definir as fontes e o tema de cores
 ms.date: 11/20/2017
 ms.topic: quickstart
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 039e48dec17ce902932e2d0df26ebb336c396985
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 11cd73574f42fffb7bcfcda5ab47496fe92565c7
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72667793"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596938"
 ---
 # <a name="personalize-the-visual-studio-ide-and-editor"></a>Personalizar o Editor e o IDE do Visual Studio
 
@@ -115,7 +115,7 @@ Agora, personalizaremos algumas cores de texto do editor. Primeiro, vamos criar 
 
 Exploramos apenas duas maneiras de personalizar as cores no Visual Studio. Esperamos que você explore as outras opções de personalização na caixa de diálogo **Opções**, para realmente ter um Visual Studio personalizado.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Personalizar o editor](../ide/how-to-change-text-case-in-the-editor.md)
 - [Visão geral do Visual Studio IDE](../get-started/visual-studio-ide.md)

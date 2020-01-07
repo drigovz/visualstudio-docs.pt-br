@@ -7,15 +7,15 @@ helpviewer_keywords:
 - load test, iterations
 - load tests, scenarios
 ms.assetid: ac480fb7-f4f7-47dc-9ae5-98be3aca4fba
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ae0f75ac19f858cba9de1e2d75d4ef5529da1d75
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e95ca27ace50c7b28d1ffb1d3fc02589daddee2d
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72665154"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590976"
 ---
 # <a name="configure-test-iterations-in-a-load-test-scenario"></a>Configurar iterações de teste em um cenário de teste de carga
 
@@ -32,7 +32,7 @@ A propriedade de **Número máximo de iterações de teste** controla o número 
 > [!NOTE]
 > Para obter uma lista completa das propriedades de cenário de teste de carga e suas descrições, confira [Propriedades do cenário de teste de carga](../test/load-test-scenario-properties.md).
 
-Para a combinação de testes sequenciais, uma iteração é uma passagem por todos os testes na combinação. Para todas as outras combinações de testes, cada execução de teste conta como uma iteração. Para saber mais, confira [Sobre o controle misto](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md).
+Para a combinação de testes sequenciais, uma iteração é uma passagem por todos os testes na combinação. Para todas as outras combinações de testes, cada execução de teste conta como uma iteração. Para obter mais informações, confira [Sobre o controle misto](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md).
 
 Se o teste de carga for um teste de carga baseado em duração, e a duração expirar antes que a contagem de iterações seja concluída, o teste ainda será parado. Se o teste for baseado em iteração, e as iterações de teste forem atendidas antes das iterações do cenário, o teste será parado. A duração é configurada usando a propriedade de **Duração da Execução** na janela **Propriedades** associada a uma configuração de execução em um teste de carga.
 
@@ -49,7 +49,7 @@ A propriedade de **Número máximo de iterações de teste** é útil para diver
 
 1. Abra um teste de carga.
 
-2. O Editor de Testes de Carga é exibido. A árvore do teste de carga é exibida.
+2. O Editor de testes de carga é exibido. A árvore do teste de carga é exibida.
 
 3. Na pasta **Cenários** das árvores de teste de carga, escolha o nó do cenário para o qual você deseja especificar o número máximo de iterações de teste.
 
@@ -89,7 +89,7 @@ A propriedade de **Tempo de processamento entre iterações de teste** é usada 
 
 5. Depois de alterar a propriedade, escolha **Salvar** no menu **Arquivo**. Assim, você pode executar o teste de carga usando o novo valor de **Tempo de processamento entre iterações de teste**.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Editando cenários de teste de carga](../test/edit-load-test-scenarios.md)
 - [Configurar controladores e agentes de teste para testes de carga](../test/configure-test-agents-and-controllers-for-load-tests.md)

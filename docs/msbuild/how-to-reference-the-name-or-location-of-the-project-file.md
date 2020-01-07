@@ -1,5 +1,5 @@
 ---
-title: 'Como: Referenciar o nome ou local do arquivo de projeto | Microsoft Docs'
+title: Como referenciar o nome ou local do arquivo de projeto | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,19 +11,19 @@ helpviewer_keywords:
 - reserved properties
 - project files, referencing
 ms.assetid: c8fcc594-5d37-4e2e-b070-4d9c012043b5
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 88d0eb1e4daa3e68468165589830ecf60a218da5
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 739d444fe8ad3951e8b8f2f0026d5d986ea65c52
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63386814"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75574776"
 ---
-# <a name="how-to-reference-the-name-or-location-of-the-project-file"></a>Como: Referenciar o nome ou o local do arquivo de projeto
+# <a name="how-to-reference-the-name-or-location-of-the-project-file"></a>Como referenciar o nome ou o local do arquivo de projeto
 Você pode usar o nome ou local do projeto no próprio arquivo de projeto sem ter de criar sua própria propriedade. O [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] fornece propriedades reservadas que referenciam o nome do arquivo de projeto e outras propriedades relacionadas ao projeto. Para obter mais informações sobre propriedades reservadas, confira [Propriedades reservadas e conhecidas do MSBuild](../msbuild/msbuild-reserved-and-well-known-properties.md).
 
 ## <a name="use-the-project-properties"></a>Usar as propriedades do projeto
@@ -40,6 +40,8 @@ Você pode usar o nome ou local do projeto no próprio arquivo de projeto sem te
   ```
 
   Uma vantagem de usar uma propriedade reservada é que qualquer alteração no nome do arquivo de projeto é incorporada automaticamente. Na próxima vez que você compilar o projeto, o arquivo de saída terá o novo nome sem necessidade de ação adicional de sua parte.
+
+  Para obter mais informações sobre o uso de caracteres especiais em referências de arquivo ou projeto, consulte [caracteres especiais do MSBuild](../msbuild/msbuild-special-characters.md).
 
 > [!NOTE]
 > As propriedades reservadas não podem ser redefinidas no arquivo de projeto.
@@ -85,6 +87,6 @@ Você pode usar o nome ou local do projeto no próprio arquivo de projeto sem te
 </Project>
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 - [MSBuild](../msbuild/msbuild.md)
 - [Propriedades reservadas e conhecidas do MSBuild](../msbuild/msbuild-reserved-and-well-known-properties.md)

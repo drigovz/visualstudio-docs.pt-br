@@ -13,17 +13,17 @@ helpviewer_keywords:
 - MSBuild, FindUnderPath task
 - FindUnderPath task [MSBuild]
 ms.assetid: 3c6d58b0-36e8-47aa-bfca-b73dd2045d91
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c22e2465b79faa68f8789cefeeb181c2e15b73b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 33912df490b148c91c2a0d152f979bd6149d8ae3
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62539701"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75566066"
 ---
 # <a name="findunderpath-task"></a>Tarefa FindUnderPath
 Determina quais itens na coleção de itens especificados têm caminhos que estão dentro ou abaixo da pasta especificada.
@@ -72,7 +72,7 @@ O exemplo a seguir usa a tarefa `FindUnderPath` para determinar se os arquivos c
 </Project>
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 - [Referência de tarefas](../msbuild/msbuild-task-reference.md)
 - [Tarefas](../msbuild/msbuild-tasks.md)
 - [Conceitos do MSBuild](../msbuild/msbuild-concepts.md)

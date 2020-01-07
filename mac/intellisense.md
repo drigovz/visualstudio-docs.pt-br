@@ -4,12 +4,12 @@ description: Informações sobre como usar o IntelliSense no Visual Studio para 
 author: cobey
 ms.author: cobey
 ms.date: 08/16/2019
-ms.openlocfilehash: 3e99c31b1ab4d12532d701e4626ac9c1aae7df56
-ms.sourcegitcommit: 0bd63f3bc429ae059b9df6e45c6b8dcae6152940
-ms.translationtype: HT
+ms.openlocfilehash: 07ef1d6292e4ac88ca616d0f35e3fd831cacc649
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/26/2019
-ms.locfileid: "70026565"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75405816"
 ---
 # <a name="intellisense"></a>IntelliSense
 
@@ -23,35 +23,25 @@ Ao digitar em um arquivo compatível, como um arquivo de código C#, os preenchi
 
 A janela de conclusão também oferece suporte para filtrar os preenchimentos incluídos por tipo. Por exemplo, é possível limitar os membros da lista para representar apenas tipos como classes ou representantes. Esse processo de filtragem pode ser habilitado por meio de um clique em um ícone específico que representa o tipo que será filtrado ou por meio de atalhos de teclado correspondentes a determinado tipo. Os ícones, que estão localizados na parte inferior da janela de conclusão, são os seguintes:
 
-| Ícone                         | Nome          | Palavra-chave    | Tecla de acesso |
+| Ícone                         | Name          | Palavra-chave    | Tecla de acesso |
 | -----------------------------|---------------| -----------|--------|
-| ![Ícone de classes](media/classes-icon.png)  | classe         | `class`    |  ⌥C
-| ![Ícone constante](media/constant-icon.png) | constante      | `const`    |  ⌥O
-| ![Ícone de representante](media/delegate-icon.png) | delegado      | `delegate` |  ⌥D
-| ![Ícone de enumeração](media/enums-icon.png)    | enum          | `enum`     |  ⌥E
-| ![Ícone de evento](media/event-icon.png)    | evento         |            |  ⌥V
+| ![Ícone de classes](media/classes-icon.png)  | {1&gt;classe&lt;1}         | `class`    |  ⌥C
+| ![Ícone constante](media/constant-icon.png) | constant      | `const`    |  ⌥O
+| ![Ícone de representante](media/delegate-icon.png) | {1&gt;delegado&lt;1}      | `delegate` |  ⌥D
+| ![Ícone de enumeração](media/enums-icon.png)    | {1&gt;enum&lt;1}          | `enum`     |  ⌥E
+| ![Ícone de evento](media/event-icon.png)    | {1&gt;evento&lt;1}         |            |  ⌥V
 | ![Ícone de campo](media/fields-icon.png)   | campo         |            |  ⌥F
-| ![Ícone de interface](media/interface-icon.png)| interface     | `interface`|  ⌥I
+| ![Ícone de interface](media/interface-icon.png)| Interface     | `interface`|  ⌥I
 | ![Ícone de palavra-chave](media/keyword-icon.png)  | keyword       |            |  ⌥K
-| ![Ícone de método](media/method-icon.png)   | method        |            |  ⌥M
-| ![Ícone de namespace](media/namespace-icon.png)| namespace     | `namespace`|  ⌥N
-| ![Ícone de propriedades](media/props-icon.png)    | propriedade      |            |  ⌥P
+| ![Ícone de método](media/method-icon.png)   | {1&gt;Método &lt;1}        |            |  ⌥M
+| ![Ícone de namespace](media/namespace-icon.png)| Namespace     | `namespace`|  ⌥N
+| ![Ícone de propriedades](media/props-icon.png)    | {1&gt;propriedade&lt;1}      |            |  ⌥P
 | ![Ícone de snippet](media/snippet-icon.png)  | snippet       | `class`    |  ⌥S
 | ![Ícone de struct](media/struct-icon.png)   | Estrutura     | `struct`   |  ⌥S
 
 Ao clicar em um dos ícones ou ao pressionar as teclas de acesso correspondentes, a lista de conclusão será limitada somente aos tipos definidos pelo conjunto de filtros.  
 
 ![Filtragem de tipo do IntelliSense](media/intellisense-typefiltering.gif)
-
-## <a name="show-import-items"></a>Mostrar itens de importação
-
-Por padrão, o preenchimento do IntelliSense exibirá apenas os preenchimentos de bibliotecas que foram importados para o projeto. Por exemplo, se você não tiver `System.Collections.Generic` importado por meio de `using`, não terá um preenchimento para `List<>`. Para exibir os preenchimentos de bibliotecas que não foram importados, é necessário habilitar **Mostrar Itens de Importação** nas Preferências do Visual Studio para Mac. Essa configuração pode ser encontrada em **Preferências > Editor de Texto > IntelliSense**:
-
-![Mostrar Itens de Importação do IntelliSense](media/intellisense-showimport.png)
-
-Depois que a opção **Mostrar Itens de Importação** for habilitada, a lista de conclusão incluirá os preenchimentos que ainda não foram importados. Ao selecionar um item que corresponde a uma biblioteca não declarada, a instrução `using` para essa biblioteca será automaticamente adicionada ao cabeçalho do arquivo de código. O nome da biblioteca à qual pertence o preenchimento também é listado junto com o próprio preenchimento.
-
-![Mostrar Lista de Itens de Importação](media/intellisense-importaction.png)
 
 ## <a name="parameter-window"></a>Janela de Parâmetros
 
@@ -68,7 +58,7 @@ A janela de conclusão é disparada automaticamente conforme você digita no arq
 
 Dispare também manualmente a aparência da janela de parâmetros digitando `control-shift-space`. Quando o cursor estiver na posição que é válida para uma lista de parâmetros, a lista de parâmetros será exibida próximo à posição do cursor.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Ações rápidas (Visual Studio no Windows)](/visualstudio/ide/quick-actions)
 - [Refatorar o código (Visual Studio no Windows)](/visualstudio/ide/refactoring-in-visual-studio)

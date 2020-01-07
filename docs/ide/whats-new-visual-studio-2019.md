@@ -2,7 +2,7 @@
 title: Novidades no Visual Studio 2019
 titleSuffix: ''
 description: Saiba mais sobre os novos recursos do Visual Studio 2019.
-ms.date: 12/03/2019
+ms.date: 12/10/2019
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 975b9ca88a775e08b97cccf1d1580a96ac4d9d65
-ms.sourcegitcommit: c222052906362bf1a3762ec4d4623170e4e06702
+ms.openlocfilehash: 4a9d8babb55a615e12c575f30426c8e73aa1c6e1
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "74810116"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75406713"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Novidades no Visual Studio 2019
 
@@ -59,7 +59,7 @@ Há muitas refatorações novas e altamente úteis no C# que facilitam a organiz
 
    ![Animação da nova experiência de refatorações do Visual Studio 2019](media/vs-2019/refactorings.gif)
 
-Basta invocar as refatorações pressionando **Ctrl+.** e selecionar a ação desejada.
+Basta invocar as refatorações pressionando **Ctrl+** e selecionar a ação desejada.
 
 ### <a name="intellicode"></a>IntelliCode
 
@@ -202,6 +202,8 @@ Para saber mais, confira a página [Depurar aplicativos ASP.NET dinâmicos usand
 
    ![Uma animação que mostra como fixar Propriedades no depurador do Visual Studio usando a ferramenta de propriedades fixas](media/vs-2019/debugger-pinnable-properties.gif)
 
+Para obter mais informações, consulte as [Propriedades fixas: Debug & exibir objetos gerenciados da sua](https://devblogs.microsoft.com/visualstudio/pinnable-properties-debug-display-managed-objects-your-way/) postagem no blog.
+
 ## <a name="whats-next"></a>O que vem a seguir
 
 O Visual Studio 2019 é atualizado frequentemente com novos recursos que melhoram ainda mais a experiência de desenvolvimento. Saiba mais sobre as inovações mais recentes no [Blog do Visual Studio](https://devblogs.microsoft.com/visualstudio/). E para descobrir o que já lançamos até agora na versão prévia, leia as [Notas da versão prévia](/visualstudio/releases/2019/release-notes-preview/).
@@ -216,7 +218,7 @@ Por que enviar comentários à equipe do Visual Studio? Porque nós levamos a s�
 
 * Se você tiver um travamento, uma falha ou outro problema de desempenho, você poderá compartilhar facilmente conosco as etapas de reprodução e os arquivos de suporte usando a ferramenta [Relatar um Problema](how-to-report-a-problem-with-visual-studio.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 * [Notas sobre a versão do Visual Studio 2019](/visualstudio/releases/2019/release-notes/)
 * [Novidades do SDK do Visual Studio 2019](../extensibility/whats-new-visual-studio-2019-sdk.md)
