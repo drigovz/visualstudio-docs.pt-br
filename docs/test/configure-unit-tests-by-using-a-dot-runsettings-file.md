@@ -2,17 +2,17 @@
 title: Configurar testes de unidade com um arquivo .runsettings
 ms.date: 10/03/2019
 ms.topic: conceptual
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-author: jillre
-ms.openlocfilehash: aba7ea1c26d38db2f845b2e743aae7a3d90d4d53
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+author: mikejo5000
+ms.openlocfilehash: 3f6690c2443b6c084c3e876cbb1a4340247613e0
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74771472"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593246"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Configurar testes de unidade usando um *.runsettings*
 
@@ -28,7 +28,7 @@ Os arquivos de configurações de execução podem ser usados para configurar os
 
 ::: moniker range="vs-2017"
 
-Para especificar um arquivo de configurações de execução no IDE, selecione **Teste** > **Configurações do Teste** > **Selecionar Arquivo de Configurações do Teste** e, em seguida, selecione o arquivo *.runsettings*.
+Para especificar um arquivo de configurações de execução no IDE, selecione **testar** > **configurações de teste** > **Selecionar arquivo de configurações de teste**e, em seguida, selecione o arquivo *. RunSettings* .
 
 ![Selecionar o menu do arquivo de configurações do teste no Visual Studio 2017](media/select-test-settings-file.png)
 
@@ -95,13 +95,13 @@ Para executar testes na linha de comando, use o *vstest.console.exe* e especifiq
 
    ::: moniker range="vs-2017"
 
-   No menu **Iniciar** do Windows, escolha **Visual Studio 2017** > **Prompt de Comando do Desenvolvedor para VS 2017**.
+   No menu **Iniciar** do Windows, escolha **Visual Studio 2017** > **prompt de comando do desenvolvedor para vs 2017**.
 
    ::: moniker-end
 
    ::: moniker range=">=vs-2019"
 
-   No menu **Iniciar** do Windows, escolha **Visual Studio 2019** > **Prompt de Comando do Desenvolvedor para VS 2019**.
+   No menu **Iniciar** do Windows, escolha **Visual Studio 2019** > **prompt de comando do desenvolvedor para vs 2019**.
 
    ::: moniker-end
 
@@ -338,7 +338,7 @@ Essas configurações são específicas para o adaptador de teste que executa os
 |**InProcMode**|false|Caso deseje que os testes sejam executados no mesmo processo do adaptador MSTest, defina esse valor como **true**. Essa configuração fornece um ganho menor de desempenho. No entanto, se um teste for encerrado com uma exceção, os testes restantes não serão executados.|
 |**AssemblyResolution**|false|É possível especificar caminhos para outros assemblies ao localizar e executar testes de unidade. Por exemplo, use esses caminhos para assemblies de dependência que não estão no mesmo diretório do assembly de teste. Para especificar um caminho, use um elemento **Caminho do Diretório**. Os caminhos podem incluir variáveis de ambiente.<br /><br />`<AssemblyResolution>  <Directory Path="D:\myfolder\bin\" includeSubDirectories="false"/> </AssemblyResolution>`|
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Configurar uma execução de teste](https://github.com/microsoft/vstest-docs/blob/master/docs/configure.md)
 - [Personalizar a análise de cobertura de código](../test/customizing-code-coverage-analysis.md)

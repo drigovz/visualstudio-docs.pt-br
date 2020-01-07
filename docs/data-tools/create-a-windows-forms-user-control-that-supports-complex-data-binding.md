@@ -9,17 +9,17 @@ helpviewer_keywords:
 - data binding, user controls
 - data binding, complex
 - user controls [Visual Studio], complex data binding
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: f8da3485ac28d1d4f3ad77f3aa0ba381e0350dae
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 97d9e64a0fcabb207d4606d4819f6afcb61b1043
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648651"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586842"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-complex-data-binding"></a>Criar um controle de usuário do Windows Forms que dá suporte à vinculação de dados complexos
 
@@ -51,7 +51,7 @@ Durante este passo a passos, você aprenderá a:
 
 - Adicionar o novo controle, arrastando-o da **janela Fontes de Dados** para **Form1**.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>{1&gt;{2&gt;Pré-requisitos&lt;2}&lt;1}
 
 Este passo a passos usa SQL Server Express LocalDB e o banco de dados de exemplo Northwind.
 
@@ -148,7 +148,7 @@ Você pode criar controles de associação de dados arrastando itens da janela *
 
 Pressione **F5** para executar o aplicativo.
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
 
 Dependendo dos requisitos do aplicativo, existem várias etapas que você pode realizar após criar um controle com suporte a associação de dados. Algumas etapas seguintes típicas incluem:
 
@@ -156,8 +156,8 @@ Dependendo dos requisitos do aplicativo, existem várias etapas que você pode r
 
 - Criando controles que suportam cenários de pesquisa. Para obter mais informações, consulte [criar um Windows Forms controle de usuário que dá suporte à vinculação de dados de pesquisa](../data-tools/create-a-windows-forms-user-control-that-supports-lookup-data-binding.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Associando controles do Windows Forms a dados no Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
 - [Definir o controle a ser criado quando arrastado da janela Fontes de Dados](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)
-- [Controles dos Windows Forms](/dotnet/framework/winforms/controls/index)
+- [Controles do Windows Forms](/dotnet/framework/winforms/controls/index)

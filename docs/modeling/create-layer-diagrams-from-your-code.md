@@ -7,17 +7,17 @@ helpviewer_keywords:
 - dependency diagrams
 - diagrams - modeling, layer
 - constraints, architectural
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d956115da6b129263ee236109e278ac19db63a62
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 51e33d5f9b20230b056c017c9067bb4b2acafce6
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747632"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75597185"
 ---
 # <a name="create-dependency-diagrams-from-your-code"></a>Criar diagramas de dependência do código
 
@@ -51,7 +51,7 @@ Antes de criar um diagrama de dependência, verifique se sua solução tem um pr
 
 4. Em **Adicionar ao projeto de modelagem**, navegue até e selecione um projeto de modelagem existente em sua solução.
 
-     \- ou -
+     - ou -
 
      Escolha **criar um novo projeto de modelagem** para adicionar um novo projeto de modelagem à solução.
 
@@ -70,7 +70,7 @@ Antes de criar um diagrama de dependência, verifique se sua solução tem um pr
 
 4. Criar um novo diagrama de dependência para a solução usando o menu **arquitetura**
 
-5. Selecione todos os nós no mapa de códigos (use _Ctrl_  + _A_ou use a seleção de banda de borracha pressionando a tecla _Shift_ antes de clicar, arrastar e liberar.
+5. Selecione todos os nós no mapa de códigos (use _Ctrl_ + _A_ou use a seleção de banda de borracha pressionando a tecla _Shift_ antes de clicar, arrastar e liberar.
 
 6. Arrastar e soltar, ou copiar e colar, os elementos selecionados para o novo diagrama de validação de dependência.
 
@@ -156,7 +156,7 @@ Antes de criar um diagrama de dependência, verifique se sua solução tem um pr
 
 - [Encontrar possíveis problemas usando analisadores de mapa de códigos](../modeling/find-potential-problems-using-code-map-analyzers.md)
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Suporte de edição para ferramentas de arquitetura e modelagem](../modeling/what-s-new-for-design-in-visual-studio.md#edition-support-for-architecture-and-modeling-tools)
 - [Vídeo: valide suas dependências de arquitetura em tempo real](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)

@@ -3,17 +3,17 @@ title: Como criar uma textura básica
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 0222e8bf-d29f-421b-9b1f-123d500fa179
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c3313dd60775bc1136ebd79af6266be0ed4107ae
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 916be87824a86e96d6fcb791cf8181d70e1e8104
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72635858"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589443"
 ---
 # <a name="how-to-create-a-basic-texture"></a>Como criar uma textura básica
 
@@ -87,6 +87,6 @@ A textura de destino de "alvo" foi concluída. Aqui está a imagem final, mostra
 
 Como uma próxima etapa, você pode gerar níveis de MIP para essa textura. Para obter informações, confira [Como criar e modificar níveis de MIP](../designers/how-to-create-and-modify-mip-levels.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Editor de Imagens](../designers/image-editor.md)

@@ -3,7 +3,7 @@ title: Modificar o Visual Studio
 titleSuffix: ''
 description: Saiba como modificar o Visual Studio, passo a passo.
 ms.custom: H1Hack27Feb2017,seodec18
-ms.date: 12/03/2019
+ms.date: 12/19/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - modify Visual Studio
@@ -11,19 +11,19 @@ helpviewer_keywords:
 - changing Visual Studio
 - customize Visual Studio
 ms.assetid: 3399ea7b-a291-4a9e-80a1-b861a21afa1d
-author: TerryGLee
-ms.author: tglee
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 23e44479bedfdb44b2375baae9f342f47b38700b
-ms.sourcegitcommit: c222052906362bf1a3762ec4d4623170e4e06702
+ms.openlocfilehash: 554b7a01ee4a7a8834c86c8a2c7e15b9cf331cf5
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "74810067"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75565832"
 ---
 # <a name="modify-visual-studio-by-adding-or-removing-workloads-and-components"></a>Modificar o Visual Studio adicionando ou removendo cargas de trabalho e componentes
 
@@ -35,7 +35,7 @@ ms.locfileid: "74810067"
 
 ::: moniker range="vs-2017"
 
-Não apenas tornamos mais fácil para você personalizar o Visual Studio para corresponder às etapas que deseja realizar, mas também facilitamos a customização do Visual Studio. Para fazer isso, inicie o novo instalador do Visual Studio e faça as alterações desejadas.
+Não apenas tornamos mais fácil para você personalizar o Visual Studio para corresponder às etapas que deseja realizar, mas também facilitamos a customização do Visual Studio. Para fazer isso, abra o novo Instalador do Visual Studio e faça as alterações desejadas.
 
 ::: moniker-end
 
@@ -44,24 +44,12 @@ Veja como.
 >[!IMPORTANT]
 >Para instalar, atualizar ou modificar o Visual Studio, faça logon com uma conta que tenha permissões administrativas. Para saber mais, confira [Permissões de usuário e Visual Studio](../ide/user-permissions-and-visual-studio.md).
 
-## <a name="modify-workloads"></a>Modificar cargas de trabalho
-
-::: moniker range="vs-2017"
-
- As [cargas de trabalho](https://visualstudio.microsoft.com/vs/support/selecting-workloads-visual-studio-2017/) contêm os recursos necessários para a linguagem de programação ou a plataforma que está sendo usada. Use cargas de trabalho para modificar o Visual Studio para que ele dê suporte ao trabalho que você deseja fazer, quando desejar fazê-lo.
-
-::: moniker-end
-
-::: moniker range="vs-2019"
-
- As cargas de trabalho contêm os recursos necessários para a linguagem de programação ou plataforma que você está usando. Use cargas de trabalho para modificar o Visual Studio para que ele dê suporte ao trabalho que você deseja fazer, quando desejar fazê-lo.
-
-::: moniker-end
-
 >[!NOTE]
-> O procedimento a seguir pressupõe que você tenha uma conexão de internet.
+> Os procedimentos a seguir pressupõem que você tenha uma conexão com a Internet.
 >
 > Para obter mais informações sobre como modificar uma [instalação offline](create-an-offline-installation-of-visual-studio.md) do Visual Studio criada anteriormente, confira as páginas [Atualizar uma instalação baseada em rede do Visual Studio](update-a-network-installation-of-visual-studio.md) e [Controlar as atualizações em implantações baseadas em rede do Visual Studio](controlling-updates-to-visual-studio-deployments.md).
+
+## <a name="open-the-visual-studio-installer"></a>Abra o Instalador do Visual Studio
 
 ::: moniker range="vs-2017"
 
@@ -74,21 +62,14 @@ Veja como.
      >[!TIP]
      >Em alguns computadores, o Instalador do Visual Studio poderá estar listado sob a letra **“M”** como **Instalador do Microsoft Visual Studio**.<br/><br/> Como alternativa, encontre o Instalador do Visual Studio no seguinte local: `C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe`
 
-1. Clique ou toque para iniciar o instalador e, em seguida, escolha **Modificar**.
+1. Abra o instalador e, em seguida, escolha **Modificar**.
 
      ![Iniciar ou modificar o Visual Studio](media/modify-visual-studio.png "Modificar o Visual Studio 2017")
 
-     Se houver uma atualização pendente, o botão Modificar estará em um local diferente. Dessa forma, você pode modificar o Visual Studio sem atualizá-lo, caso queria. Clique em **Mais** e, em seguida, escolha **Modificar**.
-
-     ![Atualizar ou modificar o Visual Studio](media/modify-or-update-visual-studio.png "Atualizar ou modificar o Visual Studio 2017")
-
-1. Na tela **Cargas de Trabalho**, marque ou desmarque as cargas de trabalho que você deseja instalar ou desinstalar.
-
-    ![Caixa de diálogo de instalação do Visual Studio 2017](media/modify-workloads.png "Escolha uma carga de trabalho no Visual Studio 2017")
-
-1. Escolha **Modificar** novamente.
-
-1. Depois da instalação d novas cargas de trabalho e componentes, escolha **Iniciar**.
+     > [!IMPORTANT]
+     > Se houver uma atualização pendente, o botão Modificar estará em um local diferente. Dessa forma, você pode modificar o Visual Studio sem atualizá-lo, caso queria. Clique em **Mais** e, em seguida, escolha **Modificar**.
+     >
+     > ![Atualizar ou modificar o Visual Studio](media/modify-or-update-visual-studio.png "Atualizar ou modificar o Visual Studio 2017")
 
 ::: moniker-end
 
@@ -111,7 +92,40 @@ Veja como.
 
      ![Atualizar ou modificar o Visual Studio](media/vs-2019/vs-installer-modify.png "Atualizar ou modificar o Visual Studio 2019")
 
-1. Na guia **Cargas de Trabalho**, selecione ou anule a seleção das cargas de trabalho que você deseja instalar ou desinstalar.
+     > [!IMPORTANT]
+     > Se houver uma atualização pendente, o botão Modificar estará em um local diferente. Dessa forma, você pode modificar o Visual Studio sem atualizá-lo, caso queira. Escolha **mais**e, em seguida, escolha **Modificar**.
+     >
+     > ![Atualizar ou modificar o Visual Studio](media/vs-2019/modify-update-visual-studio.png "Atualizar ou modificar o Visual Studio 2019")
+
+::: moniker-end
+
+## <a name="modify-workloads"></a>Modificar cargas de trabalho
+
+::: moniker range="vs-2017"
+
+ As [cargas de trabalho](https://visualstudio.microsoft.com/vs/support/selecting-workloads-visual-studio-2017/) contêm os recursos necessários para a linguagem de programação ou a plataforma que está sendo usada. Use cargas de trabalho para modificar o Visual Studio para que ele dê suporte ao trabalho que você deseja fazer, quando desejar fazê-lo.
+
+1. Na Instalador do Visual Studio, escolha a guia **cargas de trabalho** e, em seguida, marque ou desmarque as cargas de trabalho desejadas.
+
+    ![Caixa de diálogo de instalação do Visual Studio 2017](media/modify-workloads.png "Escolha uma carga de trabalho no Visual Studio 2019")
+
+1. Escolha se deseja aceitar a opção padrão **Instalar durante o download** ou a opção **Baixar tudo, depois instalar**.
+
+    ![Opções de instalação do Visual Studio 2017](media/vs-2019/vs-installer-choose-install-or-download.png "Escolha instalar durante o download ou para baixar primeiro e instalar mais tarde")
+
+    A opção "Baixar tudo, depois instalar" é útil se você deseja baixar primeiro e instalar mais tarde.
+
+1. Escolha **Modificar**.
+
+1. Depois que as novas cargas de trabalho forem instaladas, escolha **Iniciar** no instalador do Visual Studio para abrir o Visual Studio.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+ As cargas de trabalho contêm os recursos necessários para a linguagem de programação ou plataforma que você está usando. Use cargas de trabalho para modificar o Visual Studio para que ele dê suporte ao trabalho que você deseja fazer, quando desejar fazê-lo.
+
+1. No na Instalador do Visual Studio, escolha a guia **cargas de trabalho** e, em seguida, marque ou desmarque as cargas de trabalho desejadas.
 
     ![Caixa de diálogo de instalação do Visual Studio 2019](media/vs-2019/vs-installer-modify-workloads.png "Escolha uma carga de trabalho no Visual Studio 2019")
 
@@ -123,17 +137,21 @@ Veja como.
 
 1. Escolha **Modificar**.
 
-1. Depois da instalação de novas cargas de trabalho e componentes, escolha **Iniciar** do Instalador do Visual Studio.
+1. Depois que as novas cargas de trabalho forem instaladas, escolha **Iniciar** no instalador do Visual Studio para abrir o Visual Studio.
 
 ::: moniker-end
 
 ## <a name="modify-individual-components"></a>Modificar componentes individuais
 
-Se você não quiser instalar cargas de trabalho nem personalizar sua instalação do Visual Studio, escolha a guia **Componentes Individuais** do Instalador do Visual Studio, selecione o que deseja e siga os prompts.
+Se você não quiser usar cargas de trabalho para personalizar a instalação do Visual Studio, escolha a guia **componentes individuais** na instalador do Visual Studio, selecione os componentes desejados e siga os prompts.
+
+## <a name="modify-language-packs"></a>Modificar pacotes de idiomas
+
+Por padrão, o instalador corresponde ao idioma do sistema operacional quando ele é executado pela primeira vez. No entanto, você pode alterar o idioma sempre que desejar. Para fazer isso, escolha a guia **pacotes de idiomas** na instalador do Visual Studio, selecione o idioma que você preferir e siga os prompts.
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 * [Lista de IDs de componente e carga de trabalho do Visual Studio](workload-and-component-ids.md)
 * [Atualizar o Visual Studio](update-visual-studio.md)

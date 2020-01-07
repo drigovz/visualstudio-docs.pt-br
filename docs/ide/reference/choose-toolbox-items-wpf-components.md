@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - WPF Components tab, Choose Toolbox Items dialog box
 - Choose Toolbox Items dialog box, WPF Components tab
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c3de8e1d83a5d74f518eda2d5ab59bd9845b45a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 731fe05e90e01c60f0a7ff3a14917d6d7625bc1e
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72630872"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75570551"
 ---
 # <a name="choose-toolbox-items-wpf-components"></a>Escolher itens da Caixa de Ferramentas, Componentes do WPF
 
@@ -51,7 +51,7 @@ Exibe o nome do assembly .NET que inclui o namespace de cada componente. Classif
 
 Exibe a localização do assembly .NET. O local padrão para todos os assemblies é o cachê global de assemblies. Para saber mais sobre o Cache de Assembly Global, confira [Trabalhar com assemblies e o Cache de Assembly Global](/dotnet/framework/app-domains/working-with-assemblies-and-the-gac).
 
-## <a name="uielement-list"></a>Lista UIElement
+## <a name="uielement-list"></a>Lista de UIElement
 
 ### <a name="filter"></a>Filtro
 
@@ -81,7 +81,7 @@ Além disso, se os metadados em tempo de design são aplicados ao controle perso
 
 É possível referenciar os controles diretamente no modo de exibição XAML, mapeando o namespace e o assembly do controle.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Caixa de Ferramentas](../../ide/reference/toolbox.md)
 - [Introdução ao WPF](../../designers/getting-started-with-wpf.md)
