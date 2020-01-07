@@ -14,17 +14,17 @@ helpviewer_keywords:
 - VCMessage task (MSBuild (C++))
 - MSBuild (C++), VCMessage task
 ms.assetid: 956675fd-05dc-40b4-856f-616145103498
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: be4f963a5944882f14118be54e498fd4712c2e46
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 66b1bf1eb222d70c18bfb94c65dddd2903864c68
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747179"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591106"
 ---
 # <a name="vcmessage-task"></a>tarefa VCMessage
 Registra mensagens de aviso e erro durante o build.
@@ -38,8 +38,8 @@ Registra mensagens de aviso e erro durante o build.
 |Parâmetro|Descrição|
 |---------------|-----------------|
 |**Argumentos**|Parâmetro **String** opcional.<br /><br /> Uma lista delimitada por ponto e vírgula de mensagens a serem exibidas.|
-|**Código**|Parâmetro da **cadeia de caracteres** obrigatório.<br /><br /> Um número de erro que qualifica a mensagem.|
+|**Código**|Parâmetro obrigatório **String**.<br /><br /> Um número de erro que qualifica a mensagem.|
 |**Tipo**|Parâmetro **String** opcional.<br /><br /> Especifica o tipo de mensagem a ser emitida. Especifique "Warning" para emitir uma mensagem de aviso ou "Error" para emitir uma mensagem de erro.|
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 - [Referência de tarefas](../msbuild/msbuild-task-reference.md)

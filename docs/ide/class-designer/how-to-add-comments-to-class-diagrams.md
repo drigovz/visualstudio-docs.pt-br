@@ -9,17 +9,17 @@ helpviewer_keywords:
 - class diagrams, adding comment shapes
 - comment shapes
 ms.assetid: d54005d5-a29d-4c4e-b153-feb6e84dd44f
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cc778700873b79eb9fc2ec4fa1dd90d631993622
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a46ad971fa9b68de25b55c6c4c882f29c71d6b68
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72631878"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592250"
 ---
 # <a name="how-to-add-comments-to-class-diagrams"></a>Como adicionar comentários a diagramas de classe
 
@@ -35,7 +35,7 @@ Você pode redimensionar uma forma de comentário, mas não pode alterar outros 
 
 2. Clique na nova forma de comentário no diagrama e digite o texto desejado.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Trabalhar com diagramas de classe](designing-and-viewing-classes-and-types.md)
 - [Como personalizar diagramas de classe](how-to-customize-class-diagrams.md)

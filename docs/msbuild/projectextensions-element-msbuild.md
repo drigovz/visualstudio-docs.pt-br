@@ -13,17 +13,17 @@ helpviewer_keywords:
 - <ProjectExtensions> element [MSBuild]
 - ProjectExtensions element [MSBuild]
 ms.assetid: f95f312f-ff92-41eb-9469-ad99e236a307
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 318ca02899632fb4499010cc348f73379a2a562d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 1057743732c8dfc7ebb05bc9cbc108d61b2e234c
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63002419"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75597406"
 ---
 # <a name="projectextensions-element-msbuild"></a>Elemento ProjectExtensions (MSBuild)
 Permite que arquivos de projeto [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] contenham informações não [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Tudo dentro de um elemento `ProjectExtensions` será ignorado por [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].
@@ -39,13 +39,13 @@ Permite que arquivos de projeto [!INCLUDE[vstecmsbuild](../extensibility/interna
 ```
 
 ## <a name="attributes-and-elements"></a>Atributos e elementos
- As seções a seguir descrevem atributos, elementos filho e elementos pai.
+ As seções a seguir descrevem os atributos, bem como os elementos filhos e pais.
 
-### <a name="attributes"></a>Atributos
- Nenhum
+### <a name="attributes"></a>{1&gt;{2&gt;Atributos&lt;2}&lt;1}
+ {1&gt;Nenhum&lt;1}
 
-### <a name="child-elements"></a>Elementos filho
- Nenhum
+### <a name="child-elements"></a>Child elements
+ {1&gt;Nenhum&lt;1}
 
 ### <a name="parent-elements"></a>Elementos pai
 
@@ -71,6 +71,6 @@ Permite que arquivos de projeto [!INCLUDE[vstecmsbuild](../extensibility/interna
 </ProjectExtensions>
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 - [Referência de esquema de arquivos de projeto](../msbuild/msbuild-project-file-schema-reference.md)
 - [MSBuild](../msbuild/msbuild.md)

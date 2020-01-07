@@ -10,17 +10,17 @@ f1_keywords:
 - VC.Project.ShaderGraphContentTask.ContentOutput
 - VC.Project.ImageContentTask.GenerateMips
 ms.assetid: ea587909-e434-46a8-abf8-9b3e95a58b4f
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4df842f83f92afe8a8f747135632eb30a715d43f
-ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
+ms.openlocfilehash: d38f87970d5f9ff6d90befc61073cc4ed3d4ca92
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72888501"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589806"
 ---
 # <a name="how-to-use-3d-assets-in-your-game-or-app"></a>Como: usar ativos 3D em seu jogo ou aplicativo
 
@@ -46,7 +46,7 @@ Antes que seja possível implantar os ativos 3D como parte da criação, o Visua
     |Modelos 3D|**MeshContentTask(.targets, .props)**|
     |Sombreadores|**ShaderGraphContentTask(.targets, .props)**|
 
-3. Selecione o botão **OK**.
+3. Escolha o botão **OK**.
 
 ## <a name="include-assets-in-your-build"></a>Incluir ativos na criação
 
@@ -65,7 +65,7 @@ Agora que seu projeto conhece os diferentes tipos de ativos 3D que você deseja 
     > [!IMPORTANT]
     > Por padrão, o Visual Studio presume que muitos tipos de arquivos de imagem devem ser classificados usando o tipo de item **Imagem**, integrado ao Visual Studio. Portanto, você precisa alterar a propriedade **Tipo de Item** de cada imagem que deseja que seja processada pelo pipeline de conteúdo da imagem. Outros tipos de arquivos de origem de pipeline de conteúdo para modelos 3D e gráficos de sombreador visual assumem como padrão o **Tipo de Item** correto.
 
-4. Selecione o botão **OK**.
+4. Escolha o botão **OK**.
 
 Veja a seguir os três tipos de item de pipeline de conteúdo e seus tipos de arquivo de origem e de saída associados.
 
@@ -89,7 +89,7 @@ Veja a seguir os três tipos de item de pipeline de conteúdo e seus tipos de ar
 
 3. Em **Propriedades de configuração**, escolha o nó do pipeline de conteúdo (por exemplo, **Pipeline de conteúdo de imagem** para ativos de textura e imagens) e, em seguida, na grade de propriedades, defina as propriedades para os valores apropriados. Por exemplo, para gerar mipmaps para um ativo de textura no tempo de build, defina a propriedade **Gerar Mips** como **Sim**.
 
-4. Selecione o botão **OK**.
+4. Escolha o botão **OK**.
 
 ### <a name="image-content-pipeline-configuration"></a>Configuração do pipeline de conteúdo da imagem
 
@@ -211,7 +211,7 @@ cbuffer MiscVars : register(b3)
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
-|Título|Descrição|
+|Cargo|Descrição|
 |-----------|-----------------|
 |[Como exportar uma textura que contenha mipmaps](../designers/how-to-export-a-texture-that-contains-mipmaps.md)|Descreve como usar o Pipeline de Conteúdo da Imagem para exportar uma textura contendo mipmaps pré-calculados.|
 |[Como exportar uma textura que tenha Alfa pré-multiplicado](../designers/how-to-export-a-texture-that-has-premultiplied-alpha.md)|Descreve como usar o Pipeline de Conteúdo da Imagem para exportar uma textura contendo valores alfa pré-multiplicados.|

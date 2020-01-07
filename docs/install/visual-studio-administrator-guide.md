@@ -10,19 +10,19 @@ helpviewer_keywords:
 - administrator guide, Visual Studio
 - installing Visual Studio, administrator guide
 ms.assetid: 4af353f5-6cfd-4ebe-bcfb-f42306e451a0
-author: TerryGLee
-ms.author: tglee
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 89f34d027ec238b1e34724924ffb163267d56dc0
-ms.sourcegitcommit: 0bd63f3bc429ae059b9df6e45c6b8dcae6152940
-ms.translationtype: HT
+ms.openlocfilehash: 0508715637a3ac03c1377d3a337a6ded41a906de
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/26/2019
-ms.locfileid: "70026478"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590924"
 ---
 # <a name="visual-studio-administrator-guide"></a>Guia do administrador do Visual Studio
 
@@ -40,7 +40,7 @@ Antes de implantar o Visual Studio em sua organização, há algumas decisões a
 
 * Decida sobre suas necessidades de manutenção.
 
-  Se sua empresa precisa ficar em um conjunto de recursos por mais tempo, mas ainda deseja atualizações de manutenção regulares, você deve planejar usar uma linha de base de manutenção. Para saber mais, confira a seção ***Opções de suporte para clientes Enterprise e Professional*** da página [Ciclo de vida e manutenção de produtos Visual Studio](/visualstudio/releases/2019/servicing#support-options-for-enterprise-and-professional-customers), bem como a página [Como atualizar o Visual Studio enquanto estiver em uma linha de base de manutenção](update-servicing-baseline.md).
+  Se sua empresa precisa ficar em um conjunto de recursos por mais tempo, mas ainda deseja atualizações de manutenção regulares, você deve planejar usar uma linha de base de manutenção. Para obter mais informações, consulte a seção ***Opções de suporte para clientes corporativos e profissionais*** da página de [ciclo de vida do produto e manutenção do Visual Studio](/visualstudio/releases/2019/servicing#support-options-for-enterprise-and-professional-customers) , além de como [: atualizar o Visual Studio enquanto estiver em uma](update-servicing-baseline.md) página de linha de base de manutenção.
 
   Se planeja aplicar atualizações de manutenção juntamente com atualizações de recursos cumulativas, você pode escolher as partes mais recentes.
 
@@ -62,7 +62,7 @@ Antes de implantar o Visual Studio em sua organização, há algumas decisões a
 
 * Decida sobre suas necessidades de manutenção.
 
-  Se sua empresa precisa ficar em um conjunto de recursos por mais tempo, mas ainda deseja atualizações de manutenção regulares, você deve planejar usar uma linha de base de manutenção. Para saber mais, confira a seção ***Suporte para versões mais antigas do Visual Studio*** da página [Ciclo de vida e manutenção de produtos Visual Studio](/visualstudio/releases/2019/servicing#support-for-older-versions-of-visual-studio) bem como a página [Como atualizar o Visual Studio enquanto estiver em uma linha de base de manutenção](update-servicing-baseline.md).
+  Se sua empresa precisa ficar em um conjunto de recursos por mais tempo, mas ainda deseja atualizações de manutenção regulares, você deve planejar usar uma linha de base de manutenção. Para obter mais informações, consulte a seção ***suporte para versões mais antigas do Visual Studio*** da página de [ciclo de vida do produto e manutenção do Visual Studio](/visualstudio/releases/2019/servicing#support-for-older-versions-of-visual-studio) , além de como [: atualizar o Visual Studio enquanto estiver em uma](update-servicing-baseline.md) página de linha de base de manutenção.
 
   Se planeja aplicar atualizações de manutenção juntamente com atualizações de recursos cumulativas, você pode escolher as partes mais recentes.
 
@@ -158,7 +158,7 @@ Temos várias ferramentas disponíveis para ajudar você a [detectar e gerenciar
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 * [Exemplos de parâmetro de linha de comando](command-line-parameter-examples.md)
 * [Instalar os certificados necessários para instalação offline do Visual Studio](install-certificates-for-visual-studio-offline.md)

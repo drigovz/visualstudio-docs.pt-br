@@ -6,17 +6,17 @@ f1_keywords:
 - System.Activities.Presentation.View.ArgumentDesigner.UI
 - System.Activities.Presentation.View.DesignTimeArgument.UI
 ms.assetid: 64813fd5-1ea1-499a-98b4-ab2a44b7ee5e
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c3f8216bb0dfe3813e4852151c351b865128d0c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 2903c69e3cf50f3ed0392239ee8848a79eb50e20
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650287"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75584550"
 ---
 # <a name="how-to-use-the-argument-designer"></a>Como: Use o designer do argumento
 
@@ -28,12 +28,12 @@ O designer de argumentos facilita a permissão de fluxo de dados para dentro e f
 
 2. Abra o designer de argumentos clicando no botão **argumentos** no canto inferior esquerdo da tela de design. O designer dos argumentos aparece.
 
-3. Clique na linha vazia rotulada **criar argumento**. Isso adicionará uma nova linha com um novo argumento usando os seguintes valores padrão: argumentx para o **nome** em que x é um inteiro com um valor inicial de 1 que é incrementado automaticamente para criar nomes de argumentos exclusivos, **em** para a **direção**, e a **cadeia de caracteres** para o tipo de **argumento**. Nenhum valor é adicionado para o **valor padrão**. Você pode alterar esses valores a qualquer momento durante o processo de design de fluxo de trabalho.
+3. Clique na linha vazia rotulada **criar argumento**. Isso adicionará uma nova linha com um novo argumento usando os seguintes valores padrão: argumentx para o **nome** em que x é um inteiro com um valor inicial de 1 que é incrementado automaticamente para criar nomes de argumentos exclusivos, **em** para a **direção**e **cadeia de caracteres** para o tipo de **argumento**. Nenhum valor é adicionado para o **valor padrão**. Você pode alterar esses valores a qualquer momento durante o processo de design de fluxo de trabalho.
 
     > [!NOTE]
     > Para excluir um argumento, selecione o argumento clicando nele e pressione a tecla **delete** .
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Usando o Designer de Fluxo de Trabalho](developing-applications-with-the-workflow-designer.md)
 - [Variables and Arguments](/dotnet/framework/windows-workflow-foundation/variables-and-arguments) (Variáveis e argumentos)

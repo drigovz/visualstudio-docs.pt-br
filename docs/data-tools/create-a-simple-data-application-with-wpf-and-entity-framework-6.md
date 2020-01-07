@@ -4,17 +4,17 @@ ms.date: 08/22/2017
 ms.topic: conceptual
 dev_langs:
 - CSharp
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 6a8fd65c9f7c498f06b0776f0cd61ebc5ce48182
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 0c83494fe6a23d4c072581c68f7b759aa9a6e6be
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72642919"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586894"
 ---
 # <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>Criar um aplicativo de dados simples com o WPF e o Entity Framework 6
 
@@ -26,7 +26,7 @@ Este artigo se concentra no uso de ferramentas de dados no Visual Studio e não 
 
 Este exemplo usa SQL Server Express LocalDB e o banco de dados de exemplo Northwind. Se o provedor de dados ADO.NET para esse produto der suporte a Entity Framework, ele também deverá funcionar com outros produtos de banco de dado SQL.
 
-1. Se você não tiver SQL Server Express LocalDB, instale-o na [SQL Server Express página de download](https://www.microsoft.com/sql-server/sql-server-editions-express)ou por meio do **instalador do Visual Studio**. No **instalador do Visual Studio**, você pode instalar o SQL Server Express o LocalDB como parte da carga de **trabalho de desenvolvimento da desktop .net** ou como um componente individual.
+1. Se você não tiver SQL Server Express LocalDB, instale-o na [SQL Server Express página de download](https://www.microsoft.com/sql-server/sql-server-editions-express)ou por meio do **instalador do Visual Studio**. No **Instalador do Visual Studio**, você pode instalar o SQL Server Express LocalDB como parte da carga de trabalho do **Desenvolvimento para desktop com .NET** ou como um componente individual.
 
 2. Instale o banco de dados de exemplo Northwind seguindo estas etapas:
 
@@ -46,7 +46,7 @@ Este exemplo usa SQL Server Express LocalDB e o banco de dados de exemplo Northw
 
 1. No Visual Studio, crie um novo C# projeto de **aplicativo do WPF** .
 
-2. Adicione o pacote NuGet para o Entity Framework 6. Em **Gerenciador de soluções**, selecione o nó do projeto. No menu principal, escolha **projeto**  > **gerenciar pacotes NuGet**.
+2. Adicione o pacote NuGet para o Entity Framework 6. Em **Gerenciador de soluções**, selecione o nó do projeto. No menu principal, escolha **projeto** > **gerenciar pacotes NuGet**.
 
      ![Item de menu gerenciar pacotes NuGet](../data-tools/media/raddata_vs2015_manage_nuget_packages.png)
 
@@ -58,7 +58,7 @@ Este exemplo usa SQL Server Express LocalDB e o banco de dados de exemplo Northw
 
 ## <a name="create-the-model"></a>Criar o modelo
 
-1. Clique com o botão direito do mouse no nó do projeto em **Gerenciador de soluções** e escolha **Adicionar**  > **novo item**. No painel esquerdo, no C# nó, escolha **dados** e, no painel central, escolha **ADO.NET modelo de dados de entidade**.
+1. Clique com o botão direito do mouse no nó do projeto em **Gerenciador de soluções** e escolha **Adicionar** > **novo item**. No painel esquerdo, no C# nó, escolha **dados** e, no painel central, escolha **ADO.NET modelo de dados de entidade**.
 
    ![Novo item do modelo de Entity Framework](../data-tools/media/raddata-ef-new-project-item.png)
 
@@ -78,7 +78,7 @@ Este exemplo usa SQL Server Express LocalDB e o banco de dados de exemplo Northw
 
     A superfície do designer para o arquivo *. edmx* permite que você modifique algumas propriedades e relações no modelo. Não usaremos o designer neste passo a passos.
 
-6. Os arquivos *. tt* são de uso geral e você precisa ajustar um deles para trabalhar com a ligação de dados do WPF, o que exige ObservableCollections. Em **Gerenciador de soluções**, expanda o nó Northwind_model até encontrar *Northwind_model. tt*. (Verifique se você não está no *. Arquivo Context.tt* , que está diretamente abaixo do arquivo *. edmx* .)
+6. Os arquivos *. tt* são de uso geral e você precisa ajustar um deles para trabalhar com a ligação de dados do WPF, o que exige ObservableCollections. Em **Gerenciador de soluções**, expanda o Northwind_model nó até encontrar *Northwind_model. tt*. (Verifique se você não está no *. Arquivo Context.tt* , que está diretamente abaixo do arquivo *. edmx* .)
 
    - Substitua as duas ocorrências de <xref:System.Collections.ICollection> por <xref:System.Collections.ObjectModel.ObservableCollection%601>.
 
@@ -94,7 +94,7 @@ Agora você está pronto para conectar esse modelo à página XAML para que poss
 
 É possível escrever seu próprio código de ligação de dados, mas é muito mais fácil permitir que o Visual Studio faça isso para você.
 
-1. No menu principal, escolha **projeto**  > **Adicionar nova fonte de dados** para abrir o assistente de configuração da fonte de **dados**. Escolha o **objeto** porque você está associando às classes de modelo, não ao banco de dados:
+1. No menu principal, escolha **projeto** > **Adicionar nova fonte de dados** para abrir o assistente de configuração da fonte de **dados**. Escolha o **objeto** porque você está associando às classes de modelo, não ao banco de dados:
 
      ![Assistente de configuração de fonte de dados com fonte de objeto](../data-tools/media/raddata-data-source-configuration-wizard-with-object-source.png)
 
@@ -114,7 +114,7 @@ Agora você está pronto para conectar esse modelo à página XAML para que poss
         </Grid.RowDefinitions>
     ```
 
-5. Agora, abra *MainWindow. XAML* para exibi-lo no designer. Isso faz com que a janela **fontes de dados** apareça como uma opção na margem da janela do Visual Studio ao lado da **caixa de ferramentas**. Clique na guia para abrir a janela ou pressione **Shift** +**ALT** +**D** ou escolha **Exibir**  >  outras**fontes de dados**do**Windows**  > . Vamos exibir cada propriedade na classe Customers em sua própria caixa de texto individual. Primeiro, clique na seta na caixa de combinação **clientes** e escolha **detalhes**. Em seguida, arraste o nó para a parte intermediária da superfície de design para que o designer saiba que você deseja que ele vá para a linha intermediária. Se você o perdeu, poderá especificar a linha manualmente mais tarde no XAML. Por padrão, os controles são colocados verticalmente em um elemento de grade, mas, neste ponto, você pode organizá-los no desejado no formulário. Por exemplo, pode fazer sentido colocar a caixa de texto **nome** na parte superior, acima do endereço. O aplicativo de exemplo para este artigo reordena os campos e os reorganiza em duas colunas.
+5. Agora, abra *MainWindow. XAML* para exibi-lo no designer. Isso faz com que a janela **fontes de dados** apareça como uma opção na margem da janela do Visual Studio ao lado da **caixa de ferramentas**. Clique na guia para abrir a janela ou pressione **Shift**+**ALT**+**D** ou escolha **Exibir** > outras **fontes de dados**do **Windows** > . Vamos exibir cada propriedade na classe Customers em sua própria caixa de texto individual. Primeiro, clique na seta na caixa de combinação **clientes** e escolha **detalhes**. Em seguida, arraste o nó para a parte intermediária da superfície de design para que o designer saiba que você deseja que ele vá para a linha intermediária. Se você o perdeu, poderá especificar a linha manualmente mais tarde no XAML. Por padrão, os controles são colocados verticalmente em um elemento de grade, mas, neste ponto, você pode organizá-los no desejado no formulário. Por exemplo, pode fazer sentido colocar a caixa de texto **nome** na parte superior, acima do endereço. O aplicativo de exemplo para este artigo reordena os campos e os reorganiza em duas colunas.
 
      ![Associação de fonte de dados de clientes a controles individuais](../data-tools/media/raddata-customers-data-source-binding-to-individual-controls.png)
 
@@ -417,7 +417,7 @@ Há quatro partes para a lógica de comando: (1) os comandos, (2) as associaçõ
 
 ### <a name="add-command-handlers-to-the-mainwindow-class"></a>Adicionar manipuladores de comandos à classe MainWindow
 
-O code-behind é mínimo, exceto para os métodos Add e Delete. A navegação é executada por meio da chamada de métodos na Propriedade View do CollectionViewSource. O `DeleteOrderCommandHandler` mostra como executar uma exclusão em cascata em um pedido. Precisamos primeiro excluir o Detalhes_pedido associado a ele. O `UpdateCommandHandler` adiciona um novo cliente ou uma ordem à coleção, ou apenas atualiza um cliente existente ou uma ordem com as alterações que o usuário fez nas caixas de texto.
+O code-behind é mínimo, exceto para os métodos Add e Delete. A navegação é executada por meio da chamada de métodos na Propriedade View do CollectionViewSource. O `DeleteOrderCommandHandler` mostra como executar uma exclusão em cascata em um pedido. Precisamos primeiro excluir os Order_Details associados a ele. O `UpdateCommandHandler` adiciona um novo cliente ou uma ordem à coleção, ou apenas atualiza um cliente existente ou uma ordem com as alterações que o usuário fez nas caixas de texto.
 
 Adicione esses métodos de manipulador à classe MainWindow em *MainWindow.XAML.cs*. Se o seu CollectionViewSource para a tabela Customers tiver um nome diferente, você precisará ajustar o nome em cada um destes métodos:
 
@@ -427,7 +427,7 @@ Adicione esses métodos de manipulador à classe MainWindow em *MainWindow.XAML.
 
 Para iniciar a depuração, pressione **F5**. Você deve ver os dados do cliente e do pedido populados na grade e os botões de navegação devem funcionar conforme o esperado. Clique em **confirmar** para adicionar um novo cliente ou pedido ao modelo depois de inserir os dados. Clique em **Cancelar** para voltar a um novo formulário de cliente ou de novo pedido sem salvar os dados. Você pode fazer edições em clientes e pedidos existentes diretamente nas caixas de texto, e essas alterações são gravadas automaticamente no modelo.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Ferramentas de dados do Visual Studio para .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)
 - [Documentação do Entity Framework](/ef/)

@@ -12,17 +12,17 @@ helpviewer_keywords:
 - multitargeting
 - .NET Framework Client Profile
 ms.assetid: 830e3e45-9a93-4279-a249-75b84599aefb
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 36401e2ac002a74cdab6e9c19373354f4eb6fb1e
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 1c384f7e2bdd22f7a68140c90aa172d1efc9aca6
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189430"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594910"
 ---
 # <a name="troubleshoot-net-framework-targeting-errors"></a>Solução de problemas de erros de definição de destino do .NET Framework
 Este tópico descreve os erros do MSBuild que podem ocorrer devido a referência problemas e como você pode resolver esses erros.
@@ -53,7 +53,7 @@ Este tópico descreve os erros do MSBuild que podem ocorrer devido a referência
 > [!NOTE]
 > Depois de fechar e reabrir o projeto, você também deve recompilá-lo para garantir que todas as referências resolver corretamente.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Como: direcionar uma versão do .NET Framework](../ide/visual-studio-multi-targeting-overview.md)
 - [Perfil de cliente do .NET Framework](/dotnet/framework/deployment/client-profile)
