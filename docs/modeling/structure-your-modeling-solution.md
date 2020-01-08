@@ -2,17 +2,17 @@
 title: Estruturar a solução de modelagem
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fecf0d146c1116e6ec6376ffd9ad929cc9179d1c
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 57edf4253840294968238793bf9f3b24326a1e3f
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985220"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591938"
 ---
 # <a name="structure-your-modeling-solution"></a>Estruturar a solução de modelagem
 
@@ -72,7 +72,7 @@ Em um projeto médio ou grande, a estrutura da equipe é baseada na estrutura do
 
 #### <a name="use-a-separate-package-for-each-layer"></a>Usar um pacote separado para cada camada
 
-1. Na solução para cada camada, adicione o projeto de modelagem de arquitetura. Em **Gerenciador de soluções**, clique com o botão direito do mouse no nó da solução, aponte para **Adicionar**e clique em **projeto existente**. O único projeto de modelagem agora pode ser acessado a partir de cada solução: o projeto de arquitetura e o projeto de desenvolvimento para cada camada.
+1. Na solução para cada camada, adicione o projeto de modelagem de arquitetura. Na **Gerenciador de soluções**, clique com botão direito no nó da solução, aponte para **Add**e, em seguida, clique em **projeto existente**. O único projeto de modelagem agora pode ser acessado a partir de cada solução: o projeto de arquitetura e o projeto de desenvolvimento para cada camada.
 
 2. No modelo compartilhado, crie um pacote para cada camada: em **Gerenciador de soluções**, selecione o projeto de modelagem. No **Gerenciador de modelos UML**, clique com o botão direito do mouse no nó raiz do modelo, aponte para **Adicionar**e clique em **pacote**.
 
@@ -106,7 +106,7 @@ Por exemplo, se você usa com frequência as soluções que têm camadas de apre
 
 [Organizar e gerenciar seus modelos](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-9-organizing-and-managing-your-models)
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Usar modelos no processo de desenvolvimento](../modeling/use-models-in-your-development-process.md)
 - [Diretrizes de ferramentas de arquitetura do Visual Studio](../modeling/visual-studio-architecture-tooling-guidance.md)

@@ -5,17 +5,17 @@ ms.date: 01/10/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - refactoring [Visual Studio]
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c79a85314313cffce26667be8dbaf99eaa67cebd
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 6b6a050a07d8f7ef440aa66c3dfd7385b182e4df
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72645352"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585711"
 ---
 # <a name="refactor-code"></a>Refatorar o código
 
@@ -29,7 +29,7 @@ Diferentes operações de refatoração estão disponíveis para diferentes ling
 - Para saber mais sobre a refatoração de código C++, confira [Escrevendo e refatorando um código (C++)](/cpp/ide/writing-and-refactoring-code-cpp).
 - O suporte à refatoração no F# é fornecido pelo [Visual F# Power Tools](https://marketplace.visualstudio.com/items?itemName=FSharpSoftwareFoundation.VisualFPowerTools), uma extensão do Visual Studio de terceiros.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Ações rápidas](../ide/quick-actions.md)
 - [Visual Studio IDE](../get-started/visual-studio-ide.md)

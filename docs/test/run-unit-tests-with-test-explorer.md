@@ -5,17 +5,17 @@ ms.date: 07/29/2019
 ms.topic: conceptual
 f1_keywords:
 - vs.unittesting.testexplorer.overview
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 65c5d872462b4397078231eed2a9bec56131dec0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c2a0b9a69d035db5b1d2d638d97995613b50def0
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72646637"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585438"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Executar testes de unidade com o Gerenciador de Testes
 
@@ -57,7 +57,7 @@ Você pode executar a maior parte do trabalho de encontrar, organizar e executar
 ### <a name="run-tests"></a>Executar testes
 
 ::: moniker range="vs-2017"
-Você pode executar todos os testes na solução, todos os testes em um grupo ou um conjunto de testes que você selecionar. Realize um dos seguintes procedimentos:
+Você pode executar todos os testes na solução, todos os testes em um grupo ou um conjunto de testes que você selecionar. Siga um destes procedimentos:
 
 - Para executar todos os testes em uma solução, escolha **Executar Todos**.
 
@@ -70,7 +70,7 @@ Você pode executar todos os testes na solução, todos os testes em um grupo ou
 A **barra de aprovação/reprovação** na parte superior da janela do **Gerenciador de Testes** é animada conforme os testes são executados. Na conclusão da execução de teste, a **barra de aprovação/reprovação** ficará verde se todos os testes forem aprovados ou vermelha se algum deles for reprovado.
 ::: moniker-end
 ::: moniker range=">=vs-2019"
-Você pode executar todos os testes na solução, todos os testes em um grupo ou um conjunto de testes que você selecionar. Realize um dos seguintes procedimentos:
+Você pode executar todos os testes na solução, todos os testes em um grupo ou um conjunto de testes que você selecionar. Siga um destes procedimentos:
 
 - Para executar todos os testes de uma solução, escolha o ícone **Executar Todos**.
 
@@ -111,17 +111,17 @@ Para exibir os detalhes de um teste individual, selecione o teste.
 
 O painel de detalhes de teste exibe as seguintes informações:
 
-- O nome do arquivo de origem e o número de linha do método de teste.
+- {1&gt;O nome do arquivo de origem e o número de linha do método de teste.&lt;1}
 
-- O status do teste.
+- {1&gt;O status do teste.&lt;1}
 
-- O tempo decorrido que o método de teste levou para ser executado.
+- {1&gt;O tempo decorrido que o método de teste levou para ser executado.&lt;1}
 
-Se o teste falhar, o painel de detalhes também exibe:
+{1&gt;Se o teste falhar, o painel de detalhes também exibe:&lt;1}
 
-- A mensagem retornada pela estrutura de teste de unidade para o teste.
+- {1&gt;A mensagem retornada pela estrutura de teste de unidade para o teste.&lt;1}
 
-- O rastreamento de pilha no momento em que o teste falhou.
+- {1&gt;O rastreamento de pilha no momento em que o teste falhou.&lt;1}
 
 ### <a name="view-the-source-code-of-a-test-method"></a>Exibir o código-fonte de um método de teste
 
@@ -134,12 +134,12 @@ O Gerenciador de Testes permite agrupar os testes em categorias predefinidas. A 
 ### <a name="group-tests-in-the-test-list"></a>Agrupar testes na lista de testes
 
 ::: moniker range="vs-2017"
-Para alterar a maneira como os testes são organizados, escolha a seta para baixo ao lado do botão **Agrupar por** ![botão de grupo do Gerenciador de Testes](../test/media/ute_groupby_btn.png) e selecione novos critérios de agrupamento.
+Para alterar a maneira como os testes são organizados, escolha a seta para baixo ao lado do botão **Agrupar por**![botão de grupo do Gerenciador de Testes](../test/media/ute_groupby_btn.png) e selecione novos critérios de agrupamento.
 
 ![Agrupar testes por categoria no Gerenciador de Testes](../test/media/ute_groupbycategory.png)
 ::: moniker-end
 ::: moniker range=">=vs-2019"
-O Gerenciador de Testes permite agrupar os testes em uma hierarquia. O agrupamento de hierarquia padrão é **Projeto**, **Namespace** e, em seguida, **Classe**. Para alterar a maneira como os testes são organizados, escolha o botão **Agrupar por** ![botão de grupo do Gerenciador de Testes](../test/media/ute_groupby_btn.png) e selecione novos critérios de agrupamento.
+O Gerenciador de Testes permite agrupar os testes em uma hierarquia. O agrupamento de hierarquia padrão é **Projeto**, **Namespace** e, em seguida, **Classe**. Para alterar a maneira como os testes são organizados, escolha o botão **Agrupar por**![botão de grupo do Gerenciador de Testes](../test/media/ute_groupby_btn.png) e selecione novos critérios de agrupamento.
 
 ![Agrupar testes por categoria no Gerenciador de Testes](../test/media/vs-2019/test-explorer-groupby-162.png)
 
@@ -200,7 +200,7 @@ Consulte [Como usar o Microsoft Unit Testing Framework para C++](how-to-use-micr
 
 **Para adicionar testes a uma lista de reprodução**, escolha um ou mais testes no Gerenciador de Testes. No menu do clique com o botão direito, escolha **Adicionar à Lista de Reprodução** e, em seguida, escolha a lista de reprodução à qual deseja adicionar os testes.
 
-**Para abrir uma playlist**, escolha **Teste** > **Playlist** no menu do Visual Studio e escolha na lista de Playlists usadas recentemente ou escolha **Abrir playlist** para especificar o nome e o local da playlist.
+**Para abrir uma lista de reprodução**, escolha **testar** > **lista de reprodução** no menu do Visual Studio e escolha na lista de listas de reprodução usadas recentemente ou escolha **abrir playlist** para especificar o nome e o local da playlist.
 
 Se os testes individuais não tiverem dependências que os impeçam de serem executados em qualquer ordem, ative a execução de teste em paralelo com o ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) botão de alternância na barra de ferramentas. Isso pode reduzir consideravelmente o tempo necessário para executar todos os testes.
 ::: moniker-end
@@ -300,10 +300,10 @@ Por exemplo, `FullName:"MyClass" - FullName:"PerfTest"` retorna todos os testes 
 
 Você pode usar o Gerenciador de Testes para iniciar uma sessão de depuração para os testes. Passar pelo código com o depurador do Visual Studio permite-lhe navegar facilmente entre os testes de unidade e o projeto sendo testado. Para iniciar a depuração:
 
-1. No editor do Visual Studio, defina um ponto de interrupção em um ou mais métodos de teste que deseje depurar.
+1. {1&gt;No editor do Visual Studio, defina um ponto de interrupção em um ou mais métodos de teste que deseje depurar. &lt;1}
 
     > [!NOTE]
-    > Como os métodos de teste podem ser executados em qualquer ordem, defina pontos de interrupção em todos os métodos de teste que deseje depurar.
+    > {1&gt;Como os métodos de teste podem ser executados em qualquer ordem, defina pontos de interrupção em todos os métodos de teste que deseje depurar.&lt;1}
 
 2. No Gerenciador de Testes, selecione os métodos de teste e, em seguida, escolha **Depurar Testes Selecionados** no menu do clique com o botão direito.
 
@@ -355,7 +355,7 @@ Os testes podem ser executados no Gerenciador de testes clicando com o botão di
 > [!NOTE]
 > Não é possível executar um teste em uma classe abstrata, porque os testes são apenas definidos nas classes abstratas e não instanciados. Para executar testes em classes abstratas, crie uma classe que deriva da classe abstrata.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Efetuar teste de unidade em seu código](../test/unit-test-your-code.md)
 - [Executar um teste de unidade como um processo de 64 bits](../test/run-a-unit-test-as-a-64-bit-process.md)

@@ -3,17 +3,17 @@ title: Glossário do MSBuild
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: f767d8e4-24d8-4803-80eb-e857202dbe2c
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c0b5feaa70a79a534af45c67e61b300feb1188bf
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: c3d5f9e402750978b1201c6b2a5b1ef0659e8789
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926353"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593662"
 ---
 # <a name="msbuild-glossary"></a>Glossário do MSBuild
 
@@ -169,6 +169,6 @@ Uma transformação é uma conversão individual de uma coleção de item para o
 metadados conhecidos\
 Consulte *metadados, conhecidos*.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [MSBuild](../msbuild/msbuild.md)

@@ -3,17 +3,17 @@ title: 'Designer de Fluxo de Trabalho: adicionar um novo item ao projeto de flux
 ms.date: 06/25/2018
 ms.topic: conceptual
 ms.assetid: 5c6180ca-af10-4513-b0cb-7d478fd84eab
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5cdea5b3cbf99ab8213c320acc82665816062dca
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: d7bedc36af2e8fbe19fbb3cc85d82be09d8673de
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189634"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593948"
 ---
 # <a name="how-to-add-a-new-item-to-a-workflow-project"></a>Como: adicionar um novo item a um projeto de fluxo de trabalho
 
@@ -24,9 +24,9 @@ A tabela a seguir lista os itens de Windows Workflow Foundation (WF) que você p
 | Name | Descrição |
 |-| - |
 | Atividade | Uma atividade a ser composta de outras atividades. A seleção deste item adiciona o mesmo arquivo XAML ao projeto, como você obteria ao selecionar o modelo de **biblioteca de atividades** para um novo projeto. Para obter mais informações sobre esse procedimento, consulte [criar um projeto de fluxo de trabalho](creating-a-workflow-project.md). |
-| Designer de Activity | Um designer para personalizar a experiência em tempo de design de uma atividade. A seleção deste item adiciona os mesmos arquivos ao projeto, como você obteria ao selecionar o modelo de **biblioteca do designer de atividade** para um novo projeto. |
+| Designer de Atividades | Um designer para personalizar a experiência em tempo de design de uma atividade. A seleção deste item adiciona os mesmos arquivos ao projeto, como você obteria ao selecionar o modelo de **biblioteca do designer de atividade** para um novo projeto. |
 | Atividade do código | Uma atividade com a lógica de execução gravar no código. Um arquivo de código-fonte com uma substituição do método de <xref:System.Activities.CodeActivity.Execute%2A> é gerado para você. |
-| WCF Serviço de Fluxo de Trabalho | Um serviço de [!INCLUDE[indigo2](../workflow-designer/includes/indigo2_md.md)] compilado usando atividades de fluxo de trabalho. A seleção deste item adiciona os mesmos arquivos ao projeto, como você obteria ao selecionar o modelo de **aplicativo do serviço de fluxo de trabalho WCF** para um novo projeto. Para obter mais informações sobre esse procedimento, consulte [como: criar um aplicativo de serviço de fluxo de trabalho WCF](creating-a-workflow-project.md). |
+| Serviço de fluxo de trabalho WCF | Um serviço de [!INCLUDE[indigo2](../workflow-designer/includes/indigo2_md.md)] compilado usando atividades de fluxo de trabalho. A seleção deste item adiciona os mesmos arquivos ao projeto, como você obteria ao selecionar o modelo de **aplicativo do serviço de fluxo de trabalho WCF** para um novo projeto. Para obter mais informações sobre esse procedimento, consulte [como: criar um aplicativo de serviço de fluxo de trabalho WCF](creating-a-workflow-project.md). |
 
 ## <a name="to-add-a-new-item-to-a-workflow-project"></a>Para adicionar um novo item em um fluxo de trabalho projeto
 
@@ -43,6 +43,6 @@ A tabela a seguir lista os itens de Windows Workflow Foundation (WF) que você p
 
 1. Selecione **Adicionar** para adicionar o item ao projeto.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Criar um projeto de fluxo de trabalho](../workflow-designer/creating-a-workflow-project.md)

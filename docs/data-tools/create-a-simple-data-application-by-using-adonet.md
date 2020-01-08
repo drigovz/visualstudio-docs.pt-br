@@ -6,17 +6,17 @@ dev_langs:
 - VB
 - CSharp
 ms.assetid: 2222841f-e443-4a3d-8c70-4506aa905193
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: f895bd909ec9fda496d284c163bff4a5168bd057
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8f35173ded1ba4d52e0c5a9800fa228a7f93b981
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648726"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586868"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>Criar um aplicativo de dados simples usando o ADO.NET
 
@@ -27,7 +27,7 @@ Este artigo demonstra uma maneira simples de obter dados de um banco de dado de 
 > [!IMPORTANT]
 > Para manter o código simples, ele não inclui manipulação de exceção pronta para produção.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>{1&gt;{2&gt;Pré-requisitos&lt;2}&lt;1}
 
 Para criar o aplicativo, você precisará de:
 
@@ -84,7 +84,7 @@ Crie o banco de dados de exemplo seguindo estas etapas:
 
    ![Caixa de diálogo de navegação](../data-tools/media/simpleappnav.png)
 
-|Controles para o formulário de navegação|Propriedades|
+|Controles para o formulário de navegação|{1&gt;Propriedades&lt;1}|
 | - |----------------|
 |Botão|Nome = btnGoToAdd|
 |Botão|Nome = btnGoToFillOrCancel|
@@ -94,7 +94,7 @@ Crie o banco de dados de exemplo seguindo estas etapas:
 
 ![Adicionar um novo cliente e fazer um pedido](../data-tools/media/simpleappnewcust.png)
 
-|Controles para o formulário NewCustomer|Propriedades|
+|Controles para o formulário NewCustomer|{1&gt;Propriedades&lt;1}|
 | - |----------------|
 |TextBox|Nome = txtCustomerName|
 |TextBox|Nome = txtCustomerID<br /><br /> ReadOnly = true|
@@ -109,7 +109,7 @@ Crie o banco de dados de exemplo seguindo estas etapas:
 
 ![preencher ou cancelar pedidos](../data-tools/media/simpleappcancelfill.png)
 
-|Controles para o formulário FillOrCancel|Propriedades|
+|Controles para o formulário FillOrCancel|{1&gt;Propriedades&lt;1}|
 | - |----------------|
 |TextBox|Nome = txtOrderID|
 |Botão|Nome = btnFindByOrderID|
@@ -122,7 +122,7 @@ Crie o banco de dados de exemplo seguindo estas etapas:
 ## <a name="store-the-connection-string"></a>Armazenar a cadeia de conexão
 Quando seu aplicativo tenta abrir uma conexão com o banco de dados, seu aplicativo deve ter acesso à cadeia de conexão. Para evitar inserir a cadeia de caracteres manualmente em cada formulário, armazene a cadeia de caracteres no arquivo *app. config* em seu projeto e crie um método que retorne a cadeia de caracteres quando o método for chamado de qualquer formulário em seu aplicativo.
 
-Você pode encontrar a cadeia de conexão clicando com o botão direito do mouse na conexão dados de **vendas** em **Gerenciador de servidores** e escolhendo **Propriedades**. Localize a propriedade **ConnectionString** e, em seguida, use **Ctrl** +**A**, **Ctrl** +**C** para selecionar e copiar a cadeia de caracteres para a área de transferência.
+Você pode encontrar a cadeia de conexão clicando com o botão direito do mouse na conexão dados de **vendas** em **Gerenciador de servidores** e escolhendo **Propriedades**. Localize a propriedade **ConnectionString** e, em seguida, use **Ctrl**+**A**, **Ctrl**+**C** para selecionar e copiar a cadeia de caracteres para a área de transferência.
 
 1. Se você estiver usando C#o, em **Gerenciador de soluções**, expanda o nó **Propriedades** no projeto e, em seguida, abra o arquivo **Settings. Settings** .
     Se você estiver usando Visual Basic, em **Gerenciador de soluções**, clique em **Mostrar todos os arquivos**, expanda o nó **meu projeto** e, em seguida, abra o arquivo **Settings. Settings** .
@@ -233,6 +233,6 @@ Para concluir a lógica do formulário FillOrCancel, siga estas etapas.
 
 Selecione a tecla **F5** para compilar e testar seu aplicativo depois de codificar cada manipulador de eventos de clique e depois de concluir a codificação.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Ferramentas de dados do Visual Studio para .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)

@@ -11,17 +11,17 @@ helpviewer_keywords:
 - Visual Studio Workflow Designer [WFD]
 - Workflow Designer [WFD], overview
 ms.assetid: 4cd062b1-b496-4668-bbc1-ee85545e066d
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b689628983c50fc891c5a3ebe6a0df5c952468d8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 51c38a16ddbdca376dbc9788ca49783c7956d101
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650539"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75597081"
 ---
 # <a name="develop-apps-with-the-workflow-designer"></a>Desenvolver aplicativos com o Designer de Fluxo de Trabalho
 
@@ -31,7 +31,7 @@ O Designer de Fluxo de Trabalho é um designer visual e depurador para a constru
 
 Para usar modelos de projeto de fluxo de trabalho no Visual Studio, primeiro instale o componente **Windows Workflow Foundation** .
 
-1. Abra Instalador do Visual Studio. Uma maneira rápida de abri-lo é selecionando **ferramentas**  > **obter ferramentas e recursos** no Visual Studio.
+1. Abra Instalador do Visual Studio. Uma maneira rápida de abri-lo é selecionando **ferramentas** > **obter ferramentas e recursos** no Visual Studio.
 
 1. Em Instalador do Visual Studio, selecione a guia **componentes individuais** .
 
@@ -43,6 +43,6 @@ Para usar modelos de projeto de fluxo de trabalho no Visual Studio, primeiro ins
 
    O Visual Studio instala o componente **Windows Workflow Foundation** .
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Windows Workflow Foundation (.NET Framework)](/dotnet/framework/windows-workflow-foundation/index)

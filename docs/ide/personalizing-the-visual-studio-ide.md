@@ -2,17 +2,17 @@
 title: Personalizar o IDE
 ms.date: 11/20/2017
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e6bf00573febda06aba4d12184a416341879bac7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 39c9edbf5e96a59912c0cf16d7b4178f6fba2a62
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666812"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585737"
 ---
 # <a name="personalize-the-visual-studio-ide"></a>Personalizar o IDE do Visual Studio
 
@@ -66,9 +66,9 @@ Você pode definir e salvar vários layouts de janela e mudar entre eles. Por ex
 
 É possível personalizar o menu **Ferramentas** para iniciar ferramentas externas. Para obter mais informações, confira [Gerenciar ferramentas externas](../ide/managing-external-tools.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Configurações do ambiente](environment-settings.md)
 - [Visão geral do IDE do Visual Studio](../get-started/visual-studio-ide.md)
-- [Início rápido: Introdução ao IDE do Visual Studio](../ide/quickstart-ide-orientation.md)
+- [Guia de início rápido: Introdução ao IDE do Visual Studio](../ide/quickstart-ide-orientation.md)
 - [Personalizar o IDE do Visual Studio para Mac](/visualstudio/mac/customizing-the-ide)

@@ -4,19 +4,19 @@ ms.date: 11/30/2017
 ms.technology: vs-ide-general
 ms.custom: get-started
 ms.topic: tutorial
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: f78c3dcb8cadadd103eb6a09f956bff97a4a8f03
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a0c8122bd08e4eb9af68a0aa70f06cfb18e51469
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647844"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595261"
 ---
 # <a name="learn-to-use-the-code-editor"></a>Saiba como usar o editor de códigos
 
@@ -44,13 +44,13 @@ Comece criando um novo arquivo e adicionando códigos nele.
 
 ::: moniker range="vs-2017"
 
-1. Abra o Visual Studio.
+1. {1&gt;Abra o Visual Studio.&lt;1}
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-1. Abra o Visual Studio. Pressione **Esc** ou clique em **Continuar sem código** na janela de início para abrir o ambiente de desenvolvimento.
+1. {1&gt;Abra o Visual Studio.&lt;1} Pressione **Esc** ou clique em **Continuar sem código** na janela de início para abrir o ambiente de desenvolvimento.
 
 ::: moniker-end
 
@@ -179,12 +179,12 @@ Ninguém obtém o código correto na primeira vez e uma das coisas que talvez vo
 
    As duas ocorrências de `words` foram renomeadas, bem como a referência ao `words` do comentário de código.
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
 
 > [!div class="nextstepaction"]
 > [Saiba mais sobre projetos e soluções](../get-started/tutorial-projects-solutions.md)
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Snippets de código](../ide/code-snippets.md)
 - [Navegar pelo código](../ide/navigating-code.md)

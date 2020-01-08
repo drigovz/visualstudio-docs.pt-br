@@ -6,17 +6,17 @@ helpviewer_keywords:
 - typed datasets, creating
 - datasets, creating
 - datasets, configuring
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 44023543f1f7b57352448755de942af1c0c712ac
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8222b1985ab7f765be9b06fdd6abf7cb1e1cb2dc
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72642399"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586907"
 ---
 # <a name="how-to-create-and-configure-datasets-in-visual-studio"></a>Como: criar e configurar conjuntos de valores no Visual Studio
 
@@ -26,7 +26,7 @@ Você pode criar uma classe <xref:System.Data.DataSet> tipada no Visual Studio e
 
 ## <a name="create-a-new-dataset-by-using-the-data-source-configuration-wizard"></a>Criar um novo conjunto de dados usando o assistente de configuração de fonte de dados
 
-1. Abra o projeto no Visual Studio e escolha **projeto**  > **Adicionar nova fonte de dados** para iniciar o assistente de configuração de **fonte de dados**.
+1. Abra o projeto no Visual Studio e escolha **projeto** > **Adicionar nova fonte de dados** para iniciar o assistente de configuração de **fonte de dados**.
 
 2. Escolha o tipo de fonte de dados ao qual você estará se conectando.
 
@@ -84,11 +84,11 @@ Este procedimento mostra como adicionar uma tabela do mesmo banco de dados que v
 
 2. Arraste uma classe <xref:System.Data.DataTable> da guia **DataSet** da caixa de **ferramentas** para a **Designer de conjunto de dados**.
 
-3. Adicione colunas para definir a tabela de dados. Clique com o botão direito do mouse na tabela e escolha **adicionar**  > **coluna**. Use a janela **Propriedades** para definir o tipo de dados da coluna e uma chave, se necessário.
+3. Adicione colunas para definir a tabela de dados. Clique com o botão direito do mouse na tabela e escolha **adicionar** > **coluna**. Use a janela **Propriedades** para definir o tipo de dados da coluna e uma chave, se necessário.
 
 Tabelas autônomas precisam implementar `Fill` lógica em tabelas autônomas para que você possa preenchê-las com dados. Para obter informações sobre como preencher tabelas de dados autônomas, consulte [Populando um DataSet de um DataAdapter](/dotnet/framework/data/adonet/populating-a-dataset-from-a-dataadapter).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Ferramentas de conjunto de dados no Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)
 - [Relacionamentos em conjuntos de dados](../data-tools/relationships-in-datasets.md)

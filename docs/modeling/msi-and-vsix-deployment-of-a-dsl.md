@@ -2,17 +2,17 @@
 title: Implantação de uma DSL por MSI e VSIX
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 73c81d88f055ea7a585e3d14ab4a0086d9236938
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 96922848adf053e3b728196a445407f3d5f86428
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72984448"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590183"
 ---
 # <a name="msi-and-vsix-deployment-of-a-dsl"></a>Implantação de uma DSL por MSI e VSIX
 Você pode instalar uma linguagem específica de domínio em seu próprio computador ou em outros computadores. O Visual Studio já deve estar instalado no computador de destino.
@@ -35,7 +35,7 @@ Quando o DSL é instalado por esse método, o usuário pode abrir um arquivo DSL
 
    1. Em **Gerenciador de soluções**, clique com o botão direito do mouse no projeto **DslPackage** e clique em **abrir pasta no explorador de arquivos**.
 
-   2. Localize o arquivo **bin \\ \* \\** _seuprojeto_ **. DslPackage. vsix**
+   2. Localize o arquivo **bin\\\*\\** _seuprojeto_ **. DslPackage. vsix**
 
 2. Copie o arquivo **. vsix** para o computador de destino no qual você deseja instalar a DSL. Este pode ser seu próprio computador ou outro.
 
@@ -90,7 +90,7 @@ Quando o DSL é instalado por esse método, o usuário pode abrir um arquivo DSL
 
        - Descrição
 
-       - Version
+       - Versão do
 
    - Clique no nó do **Editor** e, na janela Propriedades, clique em **ícone**. Defina o valor para fazer referência a um arquivo de ícone em **DslPackage\Resources**, como **File. ico**
 
@@ -102,11 +102,11 @@ Quando o DSL é instalado por esse método, o usuário pode abrir um arquivo DSL
 
     O Visual Studio criará um arquivo chamado **CreateMsiSetupProject. vdproj**.
 
-6. No Windows Explorer, copie DSL \\ *. vdproj para uma nova pasta chamada setup.
+6. No Windows Explorer, copie Dsl\\\*.vdproj para uma nova pasta denominada programa de instalação.
 
     (Se desejar, agora você pode excluir CreateMsiSetupProject.tt de seu projeto DSL.)
 
-7. Em **Gerenciador de soluções**, adicione **a instalação \\ \*. vdproj** como um projeto existente.
+7. Em **Gerenciador de soluções**, adicione **a instalação\\\*. vdproj** como um projeto existente.
 
 8. No menu **projeto** , clique em **dependências do projeto**.
 

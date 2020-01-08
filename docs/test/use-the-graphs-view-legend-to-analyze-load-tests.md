@@ -6,15 +6,15 @@ helpviewer_keywords:
 - Load Test Analyzer, graphs view legend
 - load tests, graphs view legend
 ms.assetid: 0f6ba8e4-1343-419c-8a9f-240cf50efed7
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 17f91ba90a6a9de1c4084d4186adae6ab8388f23
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 1455c67c3cb6d8dc99aeab91a7bfa63cce009c51
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659824"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590794"
 ---
 # <a name="use-the-graphs-view-legend-to-analyze-load-tests"></a>Usar a legenda da exibição Grafos para analisar testes de carga
 
@@ -42,7 +42,7 @@ As seguintes informações estão contidas na legenda:
     > [!NOTE]
     > A coluna Último só é exibida na legenda do Analisador de Testes de Carga quando o teste de carga está em execução.
 
-     Para saber mais, confira [Como ampliar uma região do grafo](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md).
+     Para obter mais informações, confira [Como ampliar uma região do grafo](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md).
 
 A seleção de um item na legenda faz o seguinte:
 
@@ -57,7 +57,7 @@ A seleção de um item na legenda faz o seguinte:
 > [!TIP]
 > Use o botão suspenso **Opções de Grafo** na barra de ferramentas do **Analisador de Teste de Carga** e selecione **Mostrar Legenda** para mostrar ou ocultar o painel **Legenda** associado à exibição de grafo.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Como ampliar uma região do grafo](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md)
 - [Analisar resultados do teste de carga na exibição Grafos](../test/analyze-load-test-results-in-the-graphs-view.md)

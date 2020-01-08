@@ -5,19 +5,19 @@ ms.custom: seodec18, get-started
 ms.date: 11/20/2018
 ms.technology: vs-ide-general
 ms.topic: tutorial
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1b5fb79430b081986764f0ee1789f68471667498
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 0cacd56ff6b3b3510505ca2752404b55a2771429
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189072"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590430"
 ---
 # <a name="learn-to-use-the-code-editor"></a>Saiba como usar o editor de códigos
 
@@ -48,17 +48,17 @@ Comece criando um novo arquivo e adicionando códigos nele.
 
 ::: moniker range="vs-2017"
 
-1. Abra o Visual Studio.
+1. {1&gt;Abra o Visual Studio.&lt;1}
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-1. Abra o Visual Studio. Pressione **Esc** ou clique em **Continuar sem código** na janela de início para abrir o ambiente de desenvolvimento.
+1. {1&gt;Abra o Visual Studio.&lt;1} Pressione **Esc** ou clique em **Continuar sem código** na janela de início para abrir o ambiente de desenvolvimento.
 
 ::: moniker-end
 
-2. No menu **arquivo** na barra de menus, escolha **novo**  > **arquivo** ou pressione **Ctrl** +**N**.
+2. No menu **arquivo** na barra de menus, escolha **novo** > **arquivo**ou pressione **Ctrl**+**N**.
 
 3. Na caixa de diálogo **Novo Arquivo**, na categoria **Geral**, escolha **Classe do Visual C#** e, então, selecione **Abrir**.
 
@@ -80,7 +80,7 @@ O Visual Studio fornece *snippets de código* úteis que você pode usar para ge
 
    Você verá que a assinatura do método `static void Main()` será adicionada ao arquivo. O método [Main()](/dotnet/csharp/programming-guide/main-and-command-args/) é o ponto de entrada para aplicativos C#.
 
-Os snippets de código disponíveis variam em linguagens de programação diferentes. Você pode examinar os trechos de código disponíveis para sua linguagem escolhendo **editar**  > **IntelliSense**  > **inserir trecho** ou pressionar **Ctrl** +**K**, **Ctrl** +**X**e, em seguida, escolher a pasta de seu idioma. Para o C#, a lista tem este aspecto:
+Os snippets de código disponíveis variam em linguagens de programação diferentes. Você pode examinar os trechos de código disponíveis para seu idioma escolhendo **editar** > **IntelliSense** > **inserir trecho** ou pressionar **Ctrl**+**K**, **Ctrl**+**X**e, em seguida, escolher a pasta do seu idioma. Para o C#, a lista tem este aspecto:
 
 ![Lista de snippet de código de C#](../media/tutorial-code-snippet-list.png)
 
@@ -183,12 +183,12 @@ Ninguém obtém o código correto na primeira vez e uma das coisas que talvez vo
 
    As duas ocorrências de `words` foram renomeadas, bem como a referência ao `words` do comentário de código.
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
 
 > [!div class="nextstepaction"]
 > [Saiba mais sobre projetos e soluções](../tutorial-projects-solutions.md)
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Snippets de código](../../ide/code-snippets.md)
 - [Navegar pelo código](../../ide/navigating-code.md)

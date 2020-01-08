@@ -9,17 +9,17 @@ f1_keywords:
 helpviewer_keywords:
 - solutions [Visual Studio], creating
 - projects [Visual Studio], creating
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: abe2cbd18e87c7045d44e597e3a5bb93a64a1c35
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 503b343299f7b30e9f5e834099274215b262a635
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747960"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589741"
 ---
 # <a name="create-solutions-and-projects"></a>Criar soluções e projetos
 
@@ -38,7 +38,7 @@ Embora você possa construir um projeto por conta própria, adicionando nele os 
 
 Dito isso, soluções e projetos não são necessários para desenvolver aplicativos no Visual Studio. Você também pode simplesmente abrir código clonado do Git ou baixado em outro lugar. Para obter mais informações, consulte [Desenvolver código no Visual Studio sem projetos nem soluções](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md).
 
-## <a name="create-a-project-from-a-project-template"></a>Criar um projeto com base em um modelo de projeto
+## <a name="create-a-project-from-a-project-template"></a>{1&gt;Criar um projeto com base em um modelo de projeto&lt;1}
 
 Para obter informações sobre como criar um projeto com base em um modelo, veja [Criar um novo projeto no Visual Studio](create-new-project.md).
 
@@ -92,7 +92,7 @@ Você também pode criar soluções vazias que não tenham projetos. Isso é pre
 
 ::: moniker range="vs-2017"
 
-2. No painel esquerdo (**Modelos**), escolha **Outros Tipos de Projetos** > **Soluções do Visual Studio** na lista expandida.
+2. No painel esquerdo (**modelos**), escolha **outros tipos de projeto** > **soluções do Visual Studio** na lista expandida.
 
 3. No painel central, selecione **Solução em Branco**.
 
@@ -141,7 +141,7 @@ Você pode excluir as soluções e seu conteúdo permanentemente, mas não usand
 
 1. Escolha a pasta que contém a solução e pressione a tecla **Delete**.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Soluções e Projetos](../ide/solutions-and-projects-in-visual-studio.md)
 - [Repositórios de software livre da Microsoft no GitHub](https://github.com/Microsoft)

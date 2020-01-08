@@ -7,22 +7,22 @@ helpviewer_keywords:
 - escape
 - MSBuild Escape Characters
 ms.assetid: 545e6a59-1093-4514-935e-78679a46fb3c
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf312c1b73dbed58cc261c77a74555d00b0b04ba
-ms.sourcegitcommit: fd5a5b057df3d733f5224c305096907989811f85
-ms.translationtype: HT
+ms.openlocfilehash: 5f18339dbbddb09e44e8c5fa53ba517f3d60c025
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2019
-ms.locfileid: "67195069"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75566053"
 ---
 # <a name="msbuild-special-characters"></a>Caracteres especiais do MSBuild
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] reserva alguns caracteres para uso especial em contextos específicos. Você precisa apenas tais caracteres de escape se desejar usá-los literalmente no contexto no qual eles estão reservados. Por exemplo, um asterisco tem um significado especial somente nos atributos `Include` e `Exclude` de uma definição de item e, em chamadas para `CreateItem`. Se você quiser que um asterisco seja exibido como um asterisco em um desses contextos, você deve usar um caractere de escape. Nos outros contextos, basta digitar o asterisco onde você deseja que ele apareça.
 
- Para fazer o escape de um caractere especial, use a sintaxe %\<xx>, em que \<xx> representa o valor hexadecimal de ASCII do caractere. Para obter mais informações, confira [Como: Usar escape para caracteres especiais no MSBuild](../msbuild/how-to-escape-special-characters-in-msbuild.md).
+ Para fazer o escape de um caractere especial, use a sintaxe %\<xx>, em que \<xx> representa o valor hexadecimal de ASCII do caractere. Para obter mais informações, confira [Como fazer o escape de caracteres especiais no MSBuild](../msbuild/how-to-escape-special-characters-in-msbuild.md).
 
 ## <a name="special-characters"></a>Caracteres especiais
  A tabela a seguir lista os caracteres especiais do [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]:
@@ -37,6 +37,6 @@ ms.locfileid: "67195069"
 |?|%3F|Caractere curinga para nomes de arquivos em atributos `Include` e `Exclude`|
 |*|%2A|Caractere curinga para uso em nomes de arquivos em atributos `Include` e `Exclude`|
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 - [Conceitos avançados](../msbuild/msbuild-advanced-concepts.md)
 - [Itens](../msbuild/msbuild-items.md)

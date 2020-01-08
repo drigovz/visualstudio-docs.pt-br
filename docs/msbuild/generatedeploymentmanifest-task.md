@@ -12,17 +12,17 @@ dev_langs:
 helpviewer_keywords:
 - MSBuild, GenerateDeploymentManifest task
 - GenerateDeploymentManifest task [MSBuild]
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f8a2f4810c8a485d6b9013f658e221db39d8071f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: fc953298241ec7c48bbf5ea87c902aa28b349ce0
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63003353"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75588298"
 ---
 # <a name="generatedeploymentmanifest-task"></a>Tarefa GenerateDeploymentManifest
 
@@ -40,7 +40,7 @@ A tabela a seguir descreve os parâmetros da tarefa `GenerateDeploymentManifest`
 | `DeploymentUrl` | Parâmetro `String` opcional.<br /><br /> Especifica o local de atualização para o aplicativo. Se esse parâmetro não for especificado, nenhum local de atualização será definido para o aplicativo. No entanto, se o parâmetro `UpdateEnabled` for `true`, o local da atualização deverá ser especificado. O valor especificado deve ser um caminho de URL ou UNC totalmente qualificado. |
 | `Description` | Parâmetro `String` opcional.<br /><br /> Especifica uma descrição opcional para o aplicativo. |
 | `DisallowUrlActivation` | Parâmetro `Boolean` opcional.<br /><br /> Especifica se o aplicativo deve ser executado automaticamente quando ele é aberto por meio de uma URL. Se esse parâmetro for `true`, o aplicativo só poderá ser iniciado pelo menu **Iniciar**. O valor padrão desse parâmetro é `false`. Esta entrada só se aplica quando o valor do parâmetro `Install` é `true`. |
-| `EntryPoint` | Parâmetro opcional <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Indica o ponto de entrada para o assembly do manifesto gerado. Para um manifesto de implantação [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], esta entrada especifica o manifesto do aplicativo [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)].<br /><br />Se o parâmetro da tarefa `EntryPoint` não estiver especificado, a marca `<customHostSpecified>` será inserida como um filho da marca `<entryPoint>`, por exemplo:<br /><br /> `<entryPoint xmlns="urn:schemas-microsoft-com:asm.v2">`<br /><br /> `<co.v1:customHostSpecified />`<br /><br /> `</entryPoint>`<br /><br /> Você pode adicionar dependências de DLL ao manifesto do aplicativo usando as seguintes etapas:<br /><br /> 1.  Resolver as referências de assembly com uma chamada para <xref:Microsoft.Build.Tasks.ResolveAssemblyReference>.<br />2.  Passar a saída da tarefa anterior e o próprio assembly para <xref:Microsoft.Build.Tasks.ResolveManifestFiles>.<br />3.  Passar as dependências usando o parâmetro `Dependencies` para <xref:Microsoft.Build.Tasks.GenerateApplicationManifest>. |
+| `EntryPoint` | Parâmetro opcional <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Indica o ponto de entrada para o assembly do manifesto gerado. Para um manifesto de implantação [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], esta entrada especifica o manifesto do aplicativo [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)].<br /><br />Se o parâmetro da tarefa `EntryPoint` não estiver especificado, a marca `<customHostSpecified>` será inserida como um filho da marca `<entryPoint>`, por exemplo:<br /><br /> `<entryPoint xmlns="urn:schemas-microsoft-com:asm.v2">`<br /><br /> `<co.v1:customHostSpecified />`<br /><br /> `</entryPoint>`<br /><br /> Você pode adicionar dependências de DLL ao manifesto do aplicativo usando as seguintes etapas:<br /><br /> 1. resolva as referências de assembly com uma chamada para <xref:Microsoft.Build.Tasks.ResolveAssemblyReference>.<br />2. passe a saída da tarefa anterior e o próprio assembly para <xref:Microsoft.Build.Tasks.ResolveManifestFiles>.<br />3. passe as dependências usando o parâmetro `Dependencies` para <xref:Microsoft.Build.Tasks.GenerateApplicationManifest>. |
 | `ErrorReportUrl` | Parâmetro <xref:System.String?displayProperty=fullName> opcional.<br /><br /> Especifica a URL da página da Web exibida nas caixas de diálogo durante instalações ClickOnce. |
 | `InputManifest` | Parâmetro <xref:Microsoft.Build.Framework.ITaskItem> opcional.<br /><br /> Indica um documento XML de entrada para servir como base para o gerador de manifesto. Isso permite que dados estruturados, tais como definições personalizadas de manifesto, sejam refletidos no manifesto de saída. O elemento raiz do documento XML deve ser um nó de assembly no namespace asmv1. |
 | `Install` | Parâmetro `Boolean` opcional.<br /><br /> Especifica se o aplicativo é um aplicativo instalado ou um aplicativo somente online. Se esse parâmetro for `true`, o aplicativo será instalado no menu **Iniciar** do usuário e poderá ser removido usando a caixa de diálogo **Adicionar ou Remover Programas**. Se esse parâmetro for `false`, o aplicativo será destinado ao uso online em uma página da Web. O valor padrão desse parâmetro é `true`. |
@@ -64,7 +64,7 @@ A tabela a seguir descreve os parâmetros da tarefa `GenerateDeploymentManifest`
 
 Além dos parâmetros listados acima, essa tarefa herda parâmetros da classe <xref:Microsoft.Build.Tasks.GenerateManifestBase>, que herda da classe <xref:Microsoft.Build.Utilities.Task>. Para obter uma lista dos parâmetros da classe Task, confira [Classe base Task](../msbuild/task-base-class.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Tarefas](../msbuild/msbuild-tasks.md)
 - [Tarefa GenerateApplicationManifest](../msbuild/generateapplicationmanifest-task.md)

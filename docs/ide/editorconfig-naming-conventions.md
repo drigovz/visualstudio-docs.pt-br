@@ -5,21 +5,21 @@ ms.topic: reference
 helpviewer_keywords:
 - naming conventions [EditorConfig]
 - EditorConfig naming conventions
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ff6c9885bd01a94cc36046faf71067e1fe9c17b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b5c4115f4d63456e105fb4a6770fd1650938770d
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650909"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75588597"
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>Convenções de nomenclatura do .NET para EditorConfig
 
-As convenções de nomenclatura referem-se à nomenclatura dos elementos de código, como classes, propriedades e métodos. Por exemplo, é possível especificar que membros públicos devem ser escritos em maiúsculas ou que métodos assíncronos devem terminar com "Async". É possível aplicar essas regras especificando-as em um [arquivo .editorconfig](../ide/create-portable-custom-editor-options.md). Violações de regras de nomenclatura são exibidas na **Lista de Erros** ou como uma sugestão embaixo do nome, dependendo da gravidade escolhida para a regra. Não é necessário criar o projeto para ver as violações.
+As convenções de nomenclatura referem-se à nomenclatura dos elementos de código, como classes, propriedades e métodos. Por exemplo, você pode especificar que os membros públicos devem estar em letras maiúsculas ou que os campos particulares devem começar com `_`. É possível aplicar essas regras especificando-as em um [arquivo .editorconfig](../ide/create-portable-custom-editor-options.md). Violações de regras de nomenclatura são exibidas na **Lista de Erros** ou como uma sugestão embaixo do nome, dependendo da gravidade escolhida para a regra. Não é necessário criar o projeto para ver as violações.
 
 Para cada convenção de nomenclatura, é necessário especificar os símbolos aos quais ela se aplica, um estilo de nomenclatura e uma gravidade para impor a convenção, usando as propriedades descritas abaixo. A ordem das propriedades não é importante.
 
@@ -42,17 +42,17 @@ Para descrever o tipo de símbolos aos quais aplicar a regra de nomenclatura, es
 A lista a seguir mostra os valores permitidos e é possível especificar vários valores separando-os por vírgula.
 
 - \* (use este valor para especificar todos os símbolos)
-- namespace
-- classe
-- struct
-- interface
-- enum
-- propriedade
-- method
+- Namespace
+- {1&gt;classe&lt;1}
+- {1&gt;struct&lt;1}
+- Interface
+- {1&gt;enum&lt;1}
+- {1&gt;propriedade&lt;1}
+- {1&gt;Método &lt;1}
 - campo
-- evento
-- delegado
-- parâmetro
+- {1&gt;evento&lt;1}
+- {1&gt;delegado&lt;1}
+- Parâmetro
 - type_parameter
 - local
 - local_function
@@ -66,7 +66,7 @@ Para descrever os níveis de acessibilidade dos símbolos aos quais você deseja
 A lista a seguir mostra os valores permitidos e é possível especificar vários valores separando-os por vírgula.
 
 - \* (use este valor para especificar todos os níveis de acessibilidade)
-- públicos
+- {1&gt;públicos&lt;1}
 - interno ou amigo
 - particulares
 - protegidos
@@ -169,7 +169,7 @@ nenhum | A regra foi completamente suprimida.
 refatoração ou silencioso | Quando este estilo não estiver sendo seguido, não mostre nada para o usuário; no entanto, o código gerado automaticamente seguirá esse estilo.
 sugestão | Quando esse estilo não estiver sendo seguido, mostre-o para o usuário como uma sugestão, como pontos subjacentes nos dois primeiros caracteres. Isso não terá nenhum efeito em tempo de compilação.
 warning | Quando esse estilo não estiver sendo seguido, mostre um aviso do compilador na **Lista de Erros**.
-erro | Quando esse estilo não estiver sendo seguido, mostre um erro do compilador na **Lista de Erros**.
+error | Quando esse estilo não estiver sendo seguido, mostre um erro do compilador na **Lista de Erros**.
 
 > [!NOTE]
 > Não é necessário criar seu projeto para ver as violações de regras de nomenclatura. Elas são exibidas à medida que o código é editado, na **Lista de Erros** ou como uma sugestão.
@@ -230,7 +230,7 @@ Se você fechar e reabrir o arquivo de código, em vez de ver a sugestão sob a 
 
 ![Aviso de regra de nomenclatura](media/editorconfig-naming-rule-warning.png)
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Convenções de linguagem](editorconfig-language-conventions.md)
 - [Convenções de formatação](editorconfig-formatting-conventions.md)

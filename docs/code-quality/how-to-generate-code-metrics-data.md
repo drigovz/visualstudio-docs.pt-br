@@ -6,17 +6,17 @@ helpviewer_keywords:
 - code metrics data
 - code metrics results
 - code metrics [Visual Studio]
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 55f9904c95be45c7f293355340c814faafb5de2b
-ms.sourcegitcommit: 97623fd6190c43fed0d2ee7af92b01c375282622
+ms.openlocfilehash: a71f507aa5ce524e01b2120594ace634056d0850
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73568849"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587466"
 ---
 # <a name="how-to-generate-code-metrics-data"></a>Como gerar dados de métricas de código
 
@@ -48,7 +48,7 @@ Essas regras são desabilitadas por padrão, mas você pode habilitá-las de [**
 </RuleSet>
 ```
 
-### <a name="configuration"></a>Configuração
+### <a name="configuration"></a>Configuração do
 
 Você pode configurar os limites em que as regras de métricas de código no pacote de analisadores do FxCop são acionadas.
 
@@ -213,7 +213,7 @@ A saída XML gerada tem o seguinte formato:
 </CodeMetricsReport>
 ```
 
-### <a name="metricsexe"></a>Métricas. exe
+### <a name="metricsexe"></a>Metrics.exe
 
 Se você não quiser instalar o pacote NuGet, poderá gerar e usar o executável de *Metrics. exe* diretamente. Para gerar o executável de *métricas. exe* :
 
@@ -263,7 +263,7 @@ A métrica de `LinesOfCode` é mais precisa e confiável na nova ferramenta de m
 
 Outras métricas como `CyclomaticComplexity` e `MaintainabilityIndex` usam as mesmas fórmulas que as versões anteriores de *métricas. exe*, mas a nova ferramenta conta o número de `IOperations` (instruções de origem lógica) em vez de instruções de Il (linguagem intermediária). Os números serão ligeiramente diferentes daqueles gerados pelo IDE do Visual Studio e por versões anteriores do *Metrics. exe*.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
-- [Usar a janela de resultados de métricas de código](../code-quality/working-with-code-metrics-data.md)
+- [Use a janela de resultados de métricas de código](../code-quality/working-with-code-metrics-data.md)
 - [Valores de métricas de código](../code-quality/code-metrics-values.md)

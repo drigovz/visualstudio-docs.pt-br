@@ -6,17 +6,17 @@ dev_langs:
 - VB
 - CSharp
 ms.assetid: c83ba0bb-5425-4d47-8891-6b4dbf937701
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: eff5e0d2f13bfe462ff19d6cfb4e8a32a15a6064
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 430e57713f1bfb01219ea1ac8123f321ba0f5680
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72639631"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586101"
 ---
 # <a name="typed-vs-untyped-datasets"></a>Conjuntos de dados tipados versus. não tipados
 Um conjunto de dados tipado é um conjunto de dados que é derivado primeiro da classe base <xref:System.Data.DataSet> e, em seguida, usa informações da **Designer de conjunto de dados**, que é armazenada em um arquivo. xsd, para gerar uma nova classe DataSet com rigidez de tipos. As informações do esquema (tabelas, colunas e assim por diante) são geradas e compiladas nessa nova classe de conjunto de dados como um conjunto de objetos e propriedades de primeira classe. Como um conjunto de dados tipado herda da classe base <xref:System.Data.DataSet>, a classe tipada pressupõe toda a funcionalidade da classe <xref:System.Data.DataSet> e pode ser usada com métodos que usam uma instância de uma classe <xref:System.Data.DataSet> como um parâmetro.
@@ -40,6 +40,6 @@ Mesmo que os conjuntos de linhas de texto tenham muitas vantagens, um conjunto d
 
 Em geral, há muitas vezes em que você pode criar um conjunto de um DataSet dinamicamente sem ter um esquema disponível. Nesse caso, o conjunto de dados é simplesmente uma estrutura conveniente na qual você pode manter informações, contanto que eles possam ser representados de forma relacional. Ao mesmo tempo, você pode aproveitar os recursos do conjunto de dados, como a capacidade de serializar as informações a serem passadas para outro processo ou para gravar um arquivo XML.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Ferramentas do conjunto de dados](../data-tools/dataset-tools-in-visual-studio.md)

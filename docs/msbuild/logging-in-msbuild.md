@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - msbuild, logging
 ms.assetid: 9aea2e76-8f60-4234-913d-598e7bbad808
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 99bbb6ba880ace8b21ae6b6009ee84cffee79485
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 24a769f6d0b9aa847899c02c951921dc77bac21a
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62856036"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592185"
 ---
 # <a name="logging-in-msbuild"></a>Registrando em logs no MSBuild
 O registro em logs oferece uma maneira de monitorar o andamento de um build. O registro em logs captura eventos de build, mensagens, avisos e erros em um arquivo de log.
@@ -41,5 +41,5 @@ O registro em logs oferece uma maneira de monitorar o andamento de um build. O r
 
  Descreve como criar agentes personalizados de encaminhamento.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 - [Criar vários projetos em paralelo](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md) Descreve como criar vários projetos mais rapidamente executando-os em paralelo.

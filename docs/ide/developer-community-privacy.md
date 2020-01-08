@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - developer community privacy
 - privacy, developer community
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d1856d6421dc61ada2f3040e4fdeed880a6ab201
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 09f3e5fed93cac3a251e4b7cdcaa988e63ff8741
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652482"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596262"
 ---
 # <a name="developer-community-data-privacy"></a>Privacidade de dados da Comunidade de Desenvolvedores
 
@@ -25,7 +25,7 @@ Por padrão, todas as informações nos relatórios de problema na [Comunidade d
 
 Se você está preocupado com a revelação da sua identidade, [crie uma conta Microsoft](https://signup.live.com/) que não divulgue todos os detalhes sobre você. Use essa conta para criar seu relatório.
 
-## <a name="data-privacy"></a>Privacidade dos dados
+## <a name="data-privacy"></a>Privacidade de dados
 
 Se você está preocupado com a privacidade dos dados, não coloque nada que deseja manter particular no título ou no conteúdo do relatório inicial, que sempre é público. Nesse caso, crie o relatório e, em seguida, observe que você enviará detalhes de forma particular em um comentário separado. Depois de criar o relatório do problema, especifique quem pode ver as respostas e os anexos:
 
@@ -82,10 +82,10 @@ Quando a ação **Relatar um problema** é iniciada com o Visual Studio, nós co
 
 > [!NOTE]
 > Arquivos de log, capturas de tela e dados de gravação são enviados à Microsoft somente quando você fornece permissão enviando o relatório de problema com o qual eles são incluídos. Você pode ver quais arquivos estão incluídos na etapa ' Resumo ' da janela ' relatar um problema ' (consulte a captura de tela incluída nesta nota). Os logs coletados e os arquivos são armazenados na pasta% Temp% e são limpos regularmente e após cada carregamento. Se você não quiser incluir um log em seu relatório de problema, exclua o arquivo da pasta% Temp% antes de enviar o relatório.
-  > ![Report um problema-Resumo dos logs coletados ](media/report-a-problem-logs-collected.png)
+  > ![relatar um problema-Resumo dos logs coletados](media/report-a-problem-logs-collected.png)
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Como relatar um problema com o Visual Studio](how-to-report-a-problem-with-visual-studio.md)
 - [Privacidade de dados do relatório de problema do C++](/cpp/how-to-report-a-problem-with-the-visual-cpp-toolset#reports-and-privacy)

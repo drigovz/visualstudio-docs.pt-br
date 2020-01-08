@@ -2,17 +2,17 @@
 title: C++ IntelliSense
 ms.date: 10/08/2018
 ms.topic: conceptual
-author: mikeblome
-ms.author: mblome
+author: TerryGLee
+ms.author: tglee
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7a0acaea4cf01d9c0158dfbf6d9feab37238f88f
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
-ms.translationtype: HT
+ms.openlocfilehash: c0d1be12f733a858bf223fb1dce6a091c0dc6c50
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461699"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594208"
 ---
 # <a name="visual-c-intellisense-features"></a>Funcionalidades do Visual C++ IntelliSense
 
@@ -48,7 +48,7 @@ Quando você digita uma chave de abertura de uma chamada de função ou colchete
 
 ![Ajuda de parâmetro do Visual C&#43;&#43;](../ide/media/vs_2015_cpp_param_help.png)
 
-## <a name="quick-info"></a>Informação Rápida
+## <a name="quick-info"></a>Informações Rápidas
 
 Quando você passa o cursor do mouse sobre uma variável, aparece uma pequena janela embutida que mostra as informações de tipo e o cabeçalho no qual o tipo é definido. Passe o cursor do mouse sobre uma chamada de função para ver a assinatura da função. Você pode desativar as Informações Rápidas na caixa de diálogo **Opções**, em **Editor de Texto** > **C/C++**  > **Avançado** > **Informações Rápidas Automáticas**.
 
@@ -104,7 +104,7 @@ Uma vez que pessoas diferentes têm ideias diferentes sobre o que é conveniente
 
 ![Caixa de diálogo Opções de Ferramentas](../ide/media/sintellisensecpptoolsoptions.PNG)
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Usando o IntelliSense](../ide/using-intellisense.md)
 - [Configurar um projeto do C++ para o IntelliSense](visual-cpp-intellisense-configuration.md)

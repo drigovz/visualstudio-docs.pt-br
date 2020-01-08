@@ -6,17 +6,17 @@ helpviewer_keywords:
 - interfaces [Visual Studio], implementing
 - interfaces [Visual Studio]
 ms.assetid: 81d2cf46-7f60-448c-83e3-1d16bb88ca36
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bf03046abcf79933044cfb01bf079aee64d09077
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: fbe8db6c6bd7df5285880f7f860df5bb26db736a
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647710"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590105"
 ---
 # <a name="how-to-implement-an-interface-in-class-designer"></a>Como implementar uma interface no Designer de Classe
 
@@ -48,7 +48,7 @@ Para obter mais informações, confira [Como criar herança entre tipos](how-to-
 
      Um pirulito aparece anexado à classe, e um rótulo com o nome da interface identifica a relação de herança. O Visual Studio gera stubs para todos os membros da interface. Neste ponto, a interface é implementada.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Como criar tipos usando o Designer de Classe](how-to-create-types.md)
 - [Como exibir tipos existentes](how-to-view-existing-types.md)

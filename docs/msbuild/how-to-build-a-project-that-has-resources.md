@@ -1,5 +1,5 @@
 ---
-title: 'Como: Compilar um projeto que tem recursos | Microsoft Docs'
+title: Como compilar um projeto que tem recursos | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,19 +8,19 @@ helpviewer_keywords:
 - projects [.NET Framework], building
 - MSBuild, building a project with resources
 ms.assetid: d07ac73f-2c2d-4e9a-812a-6dcb632bafe2
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c7b5357975ff893ca889de07bada83f4524a16c5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 626db2638912c9eaa49ea74e702c9ba24f6fd33f
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62422999"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75576336"
 ---
-# <a name="how-to-build-a-project-that-has-resources"></a>Como: Compilar um projeto que tem recursos
+# <a name="how-to-build-a-project-that-has-resources"></a>Como criar um projeto que tem recursos
 Se você estiver compilando versões localizadas de um projeto, todos os elementos da interface do usuário devem ser separados em arquivos de recursos para os diferentes idiomas. Se o projeto usar somente cadeias de caracteres, os arquivos de recursos poderão usar arquivos de texto. Como alternativa, você pode usar arquivos *.resx* como os arquivos de recurso.
 
 ## <a name="compile-resources-with-msbuild"></a>Compilar recursos com o MSBuild
@@ -76,7 +76,7 @@ O exemplo de projeto a seguir contém duas tarefas: a tarefa `GenerateResource` 
 </Project>
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 - [MSBuild](../msbuild/msbuild.md)
 - [Tarefa GenerateResource](../msbuild/generateresource-task.md)
 - [Tarefa Csc](../msbuild/csc-task.md)

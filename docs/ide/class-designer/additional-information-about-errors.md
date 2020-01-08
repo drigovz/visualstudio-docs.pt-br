@@ -23,17 +23,17 @@ helpviewer_keywords:
 - Class Designer [Visual Studio], errors
 - class diagrams, errors
 ms.assetid: 79d70e70-704c-4255-ab68-c10d6949470e
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: de1c6c5ec6c5639cc8a9e036bcc674c407c1ac8f
-ms.sourcegitcommit: 4f82de3fb0cfae226aef1abb40c47e63d2036a5c
+ms.openlocfilehash: dc8b2c013a3e685a6071f4a12d63e3ca475051a0
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72919056"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596509"
 ---
 # <a name="class-designer-errors"></a>Erros do Designer de Classe
 
@@ -46,6 +46,6 @@ Você pode obter ajuda com outros erros e avisos nos seguintes recursos:
 - [Trabalhar com o código do Visual C++](working-with-visual-cpp-code.md) inclui informações de solução de problemas de como exibir C++ em um diagrama de classe.
 - O [Fórum do Designer de Classe do Visual Studio](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsclassdesigner) fornece um fórum para perguntas sobre o **Designer de Classe**.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Projetar e exibir classes e tipos](designing-and-viewing-classes-and-types.md)

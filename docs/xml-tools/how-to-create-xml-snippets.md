@@ -3,17 +3,17 @@ title: 'Como: Crie snippets XML'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: d8556dd7-1382-4af7-ba80-3e873c9416be
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eb511ba6f2eea9c56be4e826c3b689856c22214a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: df3c2592036f085fcf89d80bcefb1a469b3c1e15
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72645933"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592744"
 ---
 # <a name="how-to-create-xml-snippets"></a>Como: criar trechos XML
 
@@ -115,7 +115,7 @@ Literais também podem se referir funções. O editor de XML inclui uma função
 
 A variável de $prefix$ pode então ser usado em qualquer lugar no seu snippet XML.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Trechos de código XML](../xml-tools/xml-snippets.md)
 - [Como: usar trechos XML](../xml-tools/how-to-use-xml-snippets.md)

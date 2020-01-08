@@ -8,15 +8,15 @@ dev_langs:
 - CSharp
 - VB
 - CPP
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: dc3c11610d95756b265d5ba01a6f8365f115548a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 6dd6dde83720c6e6f37bd6827bb5d97526202aa7
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659799"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585594"
 ---
 # <a name="use-code-coverage-to-determine-how-much-code-is-being-tested"></a>Usar a cobertura de código para determinar quanto do código está sendo testado
 
@@ -32,7 +32,7 @@ A cobertura de código é uma opção quando você executa métodos de teste usa
 
 ::: moniker-end
 
-## <a name="requirements"></a>Requisitos
+## <a name="requirements"></a>Requisitos do
 
 O recurso de cobertura de código está disponível apenas no Visual Studio Enterprise.
 
@@ -54,10 +54,10 @@ O recurso de cobertura de código está disponível apenas no Visual Studio Ente
 
 ::: moniker-end
 
-2. Após a execução dos testes, para ver quais linhas foram executadas, escolha ![Show ícone de colorização de cobertura de código ](../test/media/codecoverage-showcoloringicon.png) **Mostrar cores de cobertura de código** na janela **resultados da cobertura de código** . Por padrão, o código coberto por testes é realçado em azul claro.
+2. Depois que os testes tiverem sido executados, para ver quais linhas foram executadas, escolha ![ícone mostrar cores de cobertura de código](../test/media/codecoverage-showcoloringicon.png) **Mostrar cores de cobertura de código** na janela **resultados da cobertura de código** . Por padrão, o código coberto por testes é realçado em azul claro.
 
    > [!TIP]
-   > Para alterar as cores ou usar a face em negrito, escolha **ferramentas**  > **opções**  > **ambiente**  > **fontes e cores**  > **Mostrar configurações para: editor de texto**. Em **Exibir itens**, ajuste as configurações para os itens de "cobertura", por exemplo, **área de cobertura não**coberta.
+   > Para alterar as cores ou usar a face em negrito, escolha **ferramentas** > **opções** > **ambiente** > **fontes e cores** > **Mostrar configurações para: editor de texto**. Em **Exibir itens**, ajuste as configurações para os itens de "cobertura", por exemplo, **área de cobertura não**coberta.
    >
    > ![Fontes e cores de cobertura de código](media/vs-2019/coverage-fonts-and-colors.png)
 
@@ -105,7 +105,7 @@ Em algumas situações, os blocos diferentes em seu código serão usados depend
 
 Por exemplo, suponhamos que, ao executar um teste com a entrada “2 ", você descobre que 50% de uma função específica está coberta. Quando você executa o teste uma segunda vez com a entrada "-2 ", vê na exibição de cores de cobertura que os outros 50% da função estão cobertos. Agora você mescla os resultados das duas execuções de testes, e a exibição do relatório e da coloração de cobertura mostra que 100% da função foi coberta.
 
-Use o ![ícone do botão Mesclar na janela Cobertura de Código](../test/media/codecoverage-mergeicon.png) **Mesclar Resultados da Cobertura de Código** para fazer isso. Você pode escolher qualquer combinação de execuções recentes ou resultados importados. Se você quiser combinar resultados exportados, importe-os primeiro.
+Use o ícone de ![para o botão mesclar na janela de cobertura de código](../test/media/codecoverage-mergeicon.png) **mesclar resultados de cobertura de código** para fazer isso. Você pode escolher qualquer combinação de execuções recentes ou resultados importados. Se você quiser combinar resultados exportados, importe-os primeiro.
 
 Use **Exportar Resultados da Cobertura de Código** para salvar os resultados de uma operação de mesclagem.
 
@@ -243,9 +243,9 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
 
 Use as seguintes macros:
 
-`ExcludeFromCodeCoverage(` *ExclusionName* `, L"` *FunctionName* `");`
+`ExcludeFromCodeCoverage(` *Exclusionname* `, L"` *nomedafunção* `");`
 
-`ExcludeSourceFromCodeCoverage(` *ExclusionName* `, L"` *SourceFilePath* `");`
+`ExcludeSourceFromCodeCoverage(` *Exclusionname* `, L"` *SourceFilePath* `");`
 
 - *ExclusionName* é qualquer nome exclusivo.
 
@@ -282,13 +282,13 @@ Para executar testes na linha de comando, use *vstest.console.exe*. A cobertura 
 
    ::: moniker range="vs-2017"
 
-   No menu **Iniciar** do Windows, escolha **Visual Studio 2017** > **Prompt de Comando do Desenvolvedor para VS 2017**.
+   No menu **Iniciar** do Windows, escolha **Visual Studio 2017** > **prompt de comando do desenvolvedor para vs 2017**.
 
    ::: moniker-end
 
    ::: moniker range=">=vs-2019"
 
-   No menu **Iniciar** do Windows, escolha **Visual Studio 2019** > **Prompt de Comando do Desenvolvedor para VS 2019**.
+   No menu **Iniciar** do Windows, escolha **Visual Studio 2019** > **prompt de comando do desenvolvedor para vs 2019**.
 
    ::: moniker-end
 
@@ -304,7 +304,7 @@ Para obter mais informações, consulte [Opções de linha de comando de VSTest.
 
 Se os resultados da cobertura de código não forem exibidos, o artigo [Solução de problemas de cobertura de código](../test/troubleshooting-code-coverage.md) poderá ajudá-lo.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Personalizar a análise de cobertura de código](../test/customizing-code-coverage-analysis.md)
 - [Solução de problemas de cobertura de código](../test/troubleshooting-code-coverage.md)

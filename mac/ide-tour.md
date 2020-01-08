@@ -3,15 +3,15 @@ title: Tour do Visual Studio para Mac
 description: O Visual Studio para Mac fornece um ambiente de desenvolvimento integrado para compilar aplicativos .NET no macOS, incluindo sites ASP.NET Core e projetos Xamarin para iOS, Android, Mac e Xamarin.Forms.
 author: heiligerdankgesang
 ms.author: dominicn
-ms.date: 09/18/2019
+ms.date: 12/13/2019
 ms.assetid: 7DC64A52-AA41-4F3A-A8A1-8A20BCD81CC7
 ms.custom: video
-ms.openlocfilehash: 6d2f0f891f704d3762bc0967da466960ee5170ee
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.openlocfilehash: f7686efae903912b64d8692a823d6e82592cbec9
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74984708"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75405826"
 ---
 # <a name="visual-studio-2019-for-mac-tour"></a>Tour do Visual Studio 2019 para Mac
 
@@ -123,7 +123,7 @@ O Visual Studio para Mac fornece duas maneiras úteis de refatorar o código: a�
 
 ## <a name="debugging"></a>{1&gt;Depuração&lt;1}
 
-O Visual Studio para Mac tem um depurador nativo para dar suporte à depuração de aplicativos Xamarin.iOS, Xamarin.Mac e Xamarin.Android. O Visual Studio para Mac usa o Mono Soft Debugger, que foi implementado no runtime Mono, permitindo que o IDE depure código gerenciado em todas as plataformas. Para saber mais adicionais sobre a depuração, visite o artigo [Depuração](/visualstudio/mac/debugging).
+Visual Studio para Mac tem depuradores que dão suporte a projetos .NET Core, .NET Framework, Unity e Xamarin. Visual Studio para Mac usa o depurador do .NET Core e o depurador soft mono, permitindo que o IDE depure o código gerenciado em todas as plataformas. Para saber mais adicionais sobre a depuração, visite o artigo [Depuração](/visualstudio/mac/debugging).
 
 O depurador contém visualizadores avançados para tipos especiais, como cadeias de caracteres, cores, URLs, bem como tamanhos, coordenadas e curvas Bézier.
 
@@ -150,6 +150,6 @@ Para saber mais sobre como usar o controle de versão no Visual Studio, veja o a
 
 > [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Overview/player]
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [IDE do Visual Studio (no Windows)](/visualstudio/ide/visual-studio-ide)

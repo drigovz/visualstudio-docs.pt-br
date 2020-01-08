@@ -6,18 +6,18 @@ manager: lank
 ms.date: 07/19/2019
 ms.topic: conceptual
 description: Saiba mais sobre a gama completa de benefícios disponíveis para você no portal de assinaturas do Visual Studio
-ms.openlocfilehash: 7f1d3654aa49b53a1bb8543c28f6edb517c265bf
-ms.sourcegitcommit: 49ebf69986713e440fd138fb949f1c0f47223f23
+ms.openlocfilehash: 13266e018f122ae2b890e8c92bff71ce3016de75
+ms.sourcegitcommit: 36e874928f2933762d2fc6888a46236e376455d0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74705823"
+ms.lasthandoff: 12/30/2019
+ms.locfileid: "75546220"
 ---
 # <a name="using-the-subscriber-portal---myvisualstudiocom"></a>Usando o Portal do Assinante – my.visualstudio.com
 
 O portal de assinaturas do Visual Studio, [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs), é seu recurso “tudo em um” para aproveitar a gama completa de benefícios fornecidos pela sua assinatura do Visual Studio.
 
-O uso do portal requer que você entre com a identidade associada à a assinatura.  Pode ser a MSA (Conta da Microsoft) ou um endereço de email fornecido por uma organização, como sua empresa ou escola.  Saiba mais sobre como [entrar](signing-in.md).
+O uso do portal requer que você entre com a identidade associada à a assinatura.  Essa pode ser sua conta da Microsoft (MSA) ou um endereço de email fornecido a você por uma organização, como seu empregador ou escola.  Saiba mais sobre como [entrar](signing-in.md).
 
 O portal está organizado em seis páginas.  Cada página fornece acesso a diferentes produtos ou serviços incluídos na assinatura.  As seis páginas são Benefícios, Downloads, Chaves do Produto, Assinaturas, Suporte e Marketplace.
 

@@ -8,17 +8,17 @@ helpviewer_keywords:
 - data [Visual Studio], data sources
 - data sources
 ms.assetid: ed28c625-bb89-4037-bfde-cfa435d182a2
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 99e9d9d466ae32d86b64b17738c96c245bda8f96
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 555d32eb295e944060d2efe0b843e9d157b7c675
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648893"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587050"
 ---
 # <a name="add-new-data-sources"></a>Adicionar novas fontes de dados
 
@@ -37,7 +37,7 @@ No contexto do .NET Data Tools no Visual Studio, o termo *fonte de dados* refere
 > [!NOTE]
 > Se você não estiver usando recursos de vinculação de dados, DataSets, Entity Framework, LINQ to SQL, WCF ou SharePoint, o conceito de uma "fonte de dados" não se aplicará. Basta conectar-se diretamente ao banco de dados usando os objetos SQLCommand e se comunicar diretamente com o banco de dados.
 
-Você cria e edita fontes de dados usando o **Assistente de configuração de fonte de dados** em um aplicativo Windows Forms ou Windows Presentation Foundation. Para Entity Framework, primeiro crie suas classes de entidade e inicie o assistente selecionando **projeto**  > **Adicionar nova fonte de dados** (descrita em mais detalhes posteriormente neste artigo).
+Você cria e edita fontes de dados usando o **Assistente de configuração de fonte de dados** em um aplicativo Windows Forms ou Windows Presentation Foundation. Para Entity Framework, primeiro crie suas classes de entidade e inicie o assistente selecionando **projeto** > **Adicionar nova fonte de dados** (descrita em mais detalhes posteriormente neste artigo).
 
 ![Assistente para Configuração da Fonte de Dados](../data-tools/media/data-source-configuration-wizard.png)
 
@@ -46,7 +46,7 @@ Você cria e edita fontes de dados usando o **Assistente de configuração de fo
 Depois de criar uma fonte de dados, ela aparece na janela de ferramentas de **fontes de dados** .
 
 > [!TIP]
-> Para abrir a **janela fontes de dados** , verifique se o projeto está aberto e pressione **Shift** +**ALT** +**D** ou escolha **Exibir**  >  outras**fontes de dados**do**Windows**  > .
+> Para abrir a **janela fontes de dados** , verifique se o projeto está aberto e pressione **Shift**+**ALT**+**D** ou escolha **Exibir** > outras **fontes de dados**do **Windows** > .
 
 Você pode arrastar uma fonte de dados da janela **fontes de dados** para um controle ou superfície de design de formulário. Isso faz com que o código clichê seja gerado, exibindo os dados do armazenamento de dados.
 
@@ -58,15 +58,15 @@ A ilustração a seguir mostra um conjunto de um DataSet que foi descartado em u
 
 Você pode criar um conjunto de dados ou um modelo de Entity Framework para usar como uma fonte de dado para um banco de dados ou arquivo de banco de dados.
 
-### <a name="dataset"></a>Conjunto de dados
+### <a name="dataset"></a>Conjunto de Dados
 
-Para criar um DataSet como uma fonte de dados, execute o **Assistente de configuração da fonte de dados** selecionando **projeto**  > **Adicionar nova fonte de dados**. Escolha o tipo de fonte de dados **Database** e siga os prompts para especificar uma conexão de banco de dado nova ou existente, ou um arquivo de banco de dados.
+Para criar um DataSet como uma fonte de dados, execute o **Assistente de configuração da fonte de dados** selecionando **projeto** > **Adicionar nova fonte de dados**. Escolha o tipo de fonte de dados **Database** e siga os prompts para especificar uma conexão de banco de dado nova ou existente, ou um arquivo de banco de dados.
 
 ### <a name="entity-classes"></a>Classes de entidade
 
 Para criar um modelo de Entity Framework como uma fonte de dados:
 
-1. Execute o **Assistente de modelo de dados de entidade** para criar as classes de entidade. Selecione **projeto**  > **adicionar novo Item**  > **ADO.NET modelo de dados de entidade**.
+1. Execute o **Assistente de modelo de dados de entidade** para criar as classes de entidade. Selecione **projeto** > **adicionar novo Item** > **ADO.NET modelo de dados de entidade**.
 
    ![Novo item de projeto de modelo de Entity Framework](../data-tools/media/raddata-new-entity-framework-model-project-item.png)
 
@@ -113,6 +113,6 @@ Se você quiser associar a um objeto em um assembly ou projeto que não é exibi
 
 Você pode criar uma fonte de dados de uma lista do SharePoint executando o **Assistente de configuração da fonte de dados** e selecionando o tipo de fonte de dados do **SharePoint** . O SharePoint expõe dados por meio de WCF Data Services, portanto, criar uma fonte de dados do SharePoint é o mesmo que criar uma fonte de dados de um serviço. A seleção do item do **SharePoint** no **Assistente de configuração da fonte de dados** abre a caixa de diálogo **Adicionar referência de serviço** , em que você se conecta ao serviço de dados do SharePoint apontando para o servidor do SharePoint. Isso requer o SDK do SharePoint.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Ferramentas de dados do Visual Studio para .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)

@@ -10,17 +10,17 @@ helpviewer_keywords:
 - WPF data binding [Visual Studio], walkthroughs
 - WPF Designer, data binding
 ms.assetid: 177420b9-568b-4dad-9d16-1b0e98a24d71
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 68ffb040e7d642fc2bf285f0510850edc343a5ce
-ms.sourcegitcommit: bde55773485c9bca50a760ac9e4c919e0a208a51
+ms.openlocfilehash: 8de276bfb6d7ec8bc36380ee41d86de07fc8dd74
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72924540"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586972"
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>Associar controles do WPF a um conjunto de dados
 
@@ -38,11 +38,11 @@ Esta explicação passo a passo ilustra as seguintes tarefas:
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>{1&gt;{2&gt;Pré-requisitos&lt;2}&lt;1}
 
 Você precisa dos seguintes componentes para concluir esta instrução passo a passo:
 
-- Visual Studio
+- {1&gt;Visual Studio&lt;1}
 
 - Acesso a uma instância em execução do SQL Server ou SQL Server Express que tem o banco de dados de exemplo AdventureWorks Light (AdventureWorksLT) anexado a ele. Você pode baixar o banco de dados AdventureWorksLT do [arquivo CodePlex](https://archive.codeplex.com/?p=awlt2008dbscript).
 
@@ -58,9 +58,9 @@ Crie um novo projeto do WPF para exibir registros de produto.
 
 ::: moniker range="vs-2017"
 
-1. Abra o Visual Studio.
+1. {1&gt;Abra o Visual Studio.&lt;1}
 
-2. No menu **Arquivo**, selecione **Novo** > **Projeto**.
+2. No menu **arquivo** , selecione **novo** **projeto**de >.
 
 3. Expanda **Visual Basic** ou **Visual C#** e selecione **Windows**.
 
@@ -72,7 +72,7 @@ Crie um novo projeto do WPF para exibir registros de produto.
 
 ::: moniker range=">=vs-2019"
 
-1. Abra o Visual Studio.
+1. {1&gt;Abra o Visual Studio.&lt;1}
 
 2. Na tela Iniciar, selecione **Criar um novo projeto**.
 
@@ -112,7 +112,7 @@ Antes de criar controles de associação de dados, você deve definir um modelo 
 
    O Visual Studio adiciona um novo arquivo `AdventureWorksLTDataSet.xsd` ao projeto e adiciona um item **AdventureWorksLTDataSet** correspondente à janela fontes de **dados** . O arquivo `AdventureWorksLTDataSet.xsd` define um dataset tipado chamado `AdventureWorksLTDataSet` e um TableAdapter chamado `ProductTableAdapter`. A seguir neste passo a passo, você usará o `ProductTableAdapter` para preencher o conjunto de dados com dados e salvar as alterações no banco de dados.
 
-9. Compile o projeto.
+9. Crie o projeto.
 
 ## <a name="edit-the-default-fill-method-of-the-tableadapter"></a>Editar o método Fill padrão do TableAdapter
 
@@ -154,7 +154,7 @@ Adicione vários botões à janela, modificando o XAML no WPF Designer. A seguir
    <Button HorizontalAlignment="Right" Margin="0,21,46,24" Name="saveButton" Width="110">Save changes</Button>
    ```
 
-3. Compile o projeto.
+3. Crie o projeto.
 
 ## <a name="create-data-bound-controls"></a>Criar controles vinculados a dados
 
@@ -250,7 +250,7 @@ Crie e execute o aplicativo. Verifique se você pode exibir e atualizar registro
 
 5. Feche o aplicativo.
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
 
 Depois de concluir este passo a passos, você pode tentar as seguintes tarefas relacionadas:
 
@@ -258,7 +258,7 @@ Depois de concluir este passo a passos, você pode tentar as seguintes tarefas r
 
 - Saiba como usar a janela **Fontes de Dados** no Visual Studio para exibir dados relacionados (isto é, dados em uma relação pai-filho) em controles do WPF. Para obter mais informações, consulte [Walkthrough: exibir dados relacionados em um aplicativo do WPF](../data-tools/display-related-data-in-wpf-applications.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Associar controles WPF a dados no Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)
 - [Ferramentas de conjunto de dados no Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)

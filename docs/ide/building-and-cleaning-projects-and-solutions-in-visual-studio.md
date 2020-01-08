@@ -18,27 +18,27 @@ helpviewer_keywords:
 - solution build configurations, build order
 - builds [Visual Studio], preparing
 ms.assetid: 710891fd-379e-42c2-a84b-44a7af694ca0
-author: ghogen
-ms.author: ghogen
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b8676ad9dc1a3b245242687e2ea56148b83b8d56
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
-ms.translationtype: HT
+ms.openlocfilehash: f3e71fe9b6179ac8f7ac69b0cb987fdbc30459fb
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416428"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596522"
 ---
 # <a name="build-and-clean-projects-and-solutions-in-visual-studio"></a>Criar e limpar projetos e soluções no Visual Studio
 
-Usando os procedimentos neste tópico, é possível criar, recriar ou limpar todos ou alguns projetos ou itens de projeto em uma solução. Para obter um tutorial passo a passo, confira [Passo a passo: Criando um aplicativo](../ide/walkthrough-building-an-application.md).
+Usando os procedimentos neste tópico, é possível criar, recriar ou limpar todos ou alguns projetos ou itens de projeto em uma solução. Para ver um tutorial passo a passo, veja [Instruções passo a passo: criação de um aplicativo](../ide/walkthrough-building-an-application.md).
 
 > [!NOTE]
 > Este tópico aplica-se ao Visual Studio no Windows. Para o Visual Studio para Mac, confira [Criar e limpar projetos e soluções no Visual Studio para Mac](/visualstudio/mac/building-and-cleaning-projects-and-solutions).
 
 > [!NOTE]
-> A interface do usuário na sua edição do Visual Studio pode ser diferente do que este tópico descreve, dependendo das suas configurações ativas. Para alterar as configurações, por exemplo, para configurações **Gerais** ou do **Visual C++** , escolha **Ferramentas** > **Importar e Exportar Configurações** e, em seguida, escolha **Redefinir todas as configurações**.
+> A interface do usuário na sua edição do Visual Studio pode ser diferente do que este tópico descreve, dependendo das suas configurações ativas. Para alterar as configurações, por exemplo, para configurações **Gerais** ou do **Visual C++**, escolha **Ferramentas** > **Importar e Exportar Configurações** e, em seguida, escolha **Redefinir todas as configurações**.
 
 ## <a name="to-build-rebuild-or-clean-an-entire-solution"></a>Para criar, recriar ou limpar uma solução inteira
 
@@ -59,11 +59,11 @@ Usando os procedimentos neste tópico, é possível criar, recriar ou limpar tod
 
 1. No **Gerenciador de Soluções**, escolha ou abra o projeto.
 
-2. Na barra de menus, escolha **Compilar** e, em seguida, escolha **Compilar** *ProjectName* ou **Recompilar** *ProjectName*.
+2. Na barra de menus, escolha **Compilar**e, em seguida, escolha **criar** *ProjectName* ou **recriar** *ProjectName*.
 
-    - Escolha **Compilar** *ProjectName* para compilar somente os componentes de projeto alterados desde o build mais recente.
+    - Escolha **criar** *ProjectName* para compilar somente os componentes do projeto que foram alterados desde a compilação mais recente.
 
-    - Escolha **Recompilar** *ProjectName* para "limpar" o projeto e, em seguida, compile os arquivos de projeto e todos os componentes do projeto.
+    - Escolha **recriar** *ProjectName* para "limpar" o projeto e, em seguida, compilar os arquivos de projeto e todos os componentes do projeto.
 
 ## <a name="to-build-only-the-startup-project-and-its-dependencies"></a>Para compilar apenas o projeto de inicialização e suas dependências
 
@@ -87,13 +87,13 @@ Usando os procedimentos neste tópico, é possível criar, recriar ou limpar tod
 
 Escolha um projeto [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] e, em seguida, na barra de menus, escolha **Compilar** > **Somente Projeto** e um dos seguintes comandos:
 
-- **Somente build** *ProjectName*
+- **Compilar somente** *ProjectName*
 
-- **Somente Recompilação** *ProjectName*
+- **Recompilar somente** *ProjectName*
 
-- **Somente Limpeza** *ProjectName*
+- **Limpar apenas** *ProjectName*
 
-- **Somente Vinculação** *ProjectName*
+- **Vincular somente** o *ProjectName*
 
 Esses comandos são aplicáveis somente ao projeto [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] escolhido, sem compilar, recompilar, limpar ou vincular as dependências do projeto ou os arquivos de solução. Dependendo da sua versão do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], o submenu **Somente Projeto** pode conter mais comandos.
 
@@ -111,13 +111,13 @@ Execute uma das seguintes etapas:
 
 - Pressione **Ctrl**+**Interromper**.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
-- [Como: Exibir, salvar e configurar arquivos de log de build](../ide/how-to-view-save-and-configure-build-log-files.md)
+- [Como exibir, salvar e configurar arquivos de log de build](../ide/how-to-view-save-and-configure-build-log-files.md)
 - [Obter logs de build](../msbuild/obtaining-build-logs-with-msbuild.md)
 - [Compilar e criar](../ide/compiling-and-building-in-visual-studio.md)
 - [Noções sobre configurações de compilação](../ide/understanding-build-configurations.md)
-- [Como: definir as configurações de depuração e de versão](../debugger/how-to-set-debug-and-release-configurations.md)
+- [Como definir configurações de depuração e versão](../debugger/how-to-set-debug-and-release-configurations.md)
 - [Referência de compilação C/C++](/cpp/build/reference/c-cpp-building-reference)
 - [Opções de linha de comando do Devenv](../ide/reference/devenv-command-line-switches.md)
 - [Soluções e Projetos](../ide/solutions-and-projects-in-visual-studio.md)

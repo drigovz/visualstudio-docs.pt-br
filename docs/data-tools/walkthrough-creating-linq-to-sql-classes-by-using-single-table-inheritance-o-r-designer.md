@@ -6,17 +6,17 @@ dev_langs:
 - VB
 - CSharp
 ms.assetid: 63bc6328-e0df-4655-9ce3-5ff74dbf69a4
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 7ab33c2e77de183b5c916fbcfe60843c47c4f83f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c9e6974f1b676b623c58eea451270bde98ddcff7
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648049"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585971"
 ---
 # <a name="walkthrough-create-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>Walkthrough: criar classes de LINQ to SQL usando herança de tabela única (O/R Designer)
 As [ferramentas de LINQ to SQL no Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) oferecem suporte à herança de tabela única, pois normalmente são implementadas em sistemas relacionais. Este tutorial se expande sobre as etapas genéricas fornecidas em [como configurar a herança usando o tópico o/R Designer](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md) e fornece alguns dados reais para demonstrar o uso de herança no [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)].
@@ -49,7 +49,7 @@ Para ver como a herança funciona, crie uma pequena tabela de `Person`, use-a co
 
 2. No **Designer de Tabela**, adicione as seguintes colunas à tabela:
 
-    |Nome da coluna|Tipo de dados|Permitir nulos|
+    |Nome da Coluna|Tipo de dados do|Permitir nulos|
     |-----------------|---------------|-----------------|
     |**ID**|**int**|**False**|
     |**Tipo**|**int**|**True**|
@@ -86,12 +86,12 @@ Para que você possa verificar se a herança está configurada corretamente, a t
     |**11**|**2**|**Mindy**|**Martin**|**3**|
     |**12**|**2**|**Ken**|**Kwok**|**3**|
 
-## <a name="create-a-new-project"></a>Criar um novo projeto
+## <a name="create-a-new-project"></a>Crie um novo projeto
 Agora que você criou a tabela, crie um novo projeto demonstrar a configuração de herança.
 
 ### <a name="to-create-the-new-windows-forms-application"></a>Para criar o novo aplicativo Windows Forms
 
-1. No Visual Studio, no menu **arquivo** , selecione **novo** **projeto**de  > .
+1. No Visual Studio, no menu **Arquivo**, selecione **Novo** > **Projeto**.
 
 2. Expanda **o C# Visual** ou **Visual Basic** no painel esquerdo e, em seguida, selecione **área de trabalho do Windows**.
 
@@ -138,7 +138,7 @@ Configure a herança arrastando um objeto **Herança** da **Caixa de Ferramentas
 
 11. Defina a propriedade **Padrão de Herança** como **Pessoa**.
 
-12. Compile o projeto.
+12. Crie o projeto.
 
 ## <a name="query-the-inherited-class-and-display-the-data-on-the-form"></a>Consultar a classe herdada e exibir os dados no formulário
 Agora você adiciona um código ao formulário que consulta uma classe específica no modelo de objeto.
@@ -185,7 +185,7 @@ Execute o aplicativo e verifique se os registros exibidos na caixa de listagem s
 
 3. Feche o formulário. (No menu **Depurar**, clique em **Parar Depuração**.)
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Ferramentas do LINQ to SQL no Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [Passo a passo: criando classes LINQ to SQL (Designer Relacional de Objetos)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)

@@ -10,17 +10,17 @@ helpviewer_keywords:
 - world-ready applications
 - international applications [Visual Studio]
 ms.assetid: 4d9815ae-3e80-4b4d-933d-f8309aee18d5
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 886c31eb76a2cd440f1f8189aaacf592e43d34fa
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f9c6934c816574796d59f978c3d2f37f590cf578
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72603451"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75565117"
 ---
 # <a name="develop-globalized-and-localized-apps"></a>Desenvolver aplicativos localizados e globalizados
 
@@ -48,7 +48,7 @@ Por exemplo, o sistema do projeto dos aplicativos Windows Forms pode gerar arqui
 > [!NOTE]
 > Os aplicativos de console não incluem o suporte de texto para idiomas bidirecionais. Esta é uma consequência de como o Windows funciona com aplicativos de console.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Suporte para idiomas bidirecionais no Visual Studio](use-bidirectional-languages.md)
 - [Globalizar e localizar aplicativos .NET](/dotnet/standard/globalization-localization/)

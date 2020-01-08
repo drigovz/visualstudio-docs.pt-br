@@ -16,21 +16,21 @@ helpviewer_keywords:
 - referencing components, removing references
 - references [Visual Studio], removing
 - referencing components, assemblies not listed
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e302b5c4df73f8fcdadf766a1fe1d8dc0731c261
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: dfad622a7587246836161cd79bb5b759151df1ef
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654822"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595304"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Como adicionar ou remover referências usando o Gerenciador de Referências
 
-É possível usar a caixa de diálogo Gerenciador de Referências para adicionar e gerenciar referências aos componentes que você, a Microsoft ou outra empresa desenvolveram. Se você estiver desenvolvendo um aplicativo Universal do Windows, o projeto referenciará automaticamente todas as DLLs corretas do SDK do Windows. Se você estiver desenvolvendo um aplicativo .NET, o projeto referenciará *mscorlib.dll* automaticamente. Algumas APIs do .NET são expostas em componentes que precisam ser adicionados manualmente. As referências a componentes COM ou a componentes personalizados devem ser adicionadas manualmente.
+Você pode usar a caixa de diálogo do Gerenciador de Referências para adicionar e gerenciar referências aos componentes que você, a Microsoft ou outra empresa desenvolveram. Se você estiver desenvolvendo um aplicativo Universal do Windows, o projeto referenciará automaticamente todas as DLLs corretas do SDK do Windows. Se você estiver desenvolvendo um aplicativo .NET, o projeto referenciará *mscorlib.dll* automaticamente. Algumas APIs do .NET são expostas em componentes que precisam ser adicionados manualmente. As referências a componentes COM ou a componentes personalizados devem ser adicionadas manualmente.
 
 ## <a name="reference-manager-dialog-box"></a>Caixa de diálogo Gerenciador de Referências
 
@@ -176,7 +176,7 @@ A guia **COM** lista todos os componentes COM disponíveis para referência. Se 
 
 Se um tipo de projeto não der suporte ao COM, a guia não será exibida na caixa de diálogo Gerenciador de Referências.
 
-## <a name="browse"></a>Procure
+## <a name="browse"></a>Pesquisar
 
 É possível usar o botão **Procurar** para procurar um componente no sistema de arquivos.
 
@@ -188,7 +188,7 @@ Não é possível navegar até o SDK e adicioná-lo ao projeto. Você pode apena
 
 Ao fazer uma referência de arquivo a um WinMD, o layout previsto é que os arquivos *\<NomeDoArquivo>.winmd*, *\<NomeDoArquivo>.dll* e *\<NomeDoArquivo>.pri* sejam colocados um ao lado do outro. Se você referenciar um WinMD nos seguintes cenários, um conjunto incompleto de arquivos será copiado no diretório de saída do projeto e, consequentemente, falhas de compilação e de runtime ocorrerão.
 
-- **Componente nativo**: um projeto nativo criará um WinMD para cada conjunto não contínuo de namespaces e uma DLL que consiste na implementação. O WinMDs terá nomes distintos. Ao fazer referência a esse arquivo de componente nativo, o MSBuild não reconhecerá que os WinMDs nomeados de forma diferente formam um componente. Consequentemente, somente o *\<NomeDoArquivo>.dll* e *\<NomeDoArquivo>.winmd* de nome idêntico serão copiados, e ocorrerão erros de tempo de execução. Para resolver esse problema, crie uma SDK de extensão. Para obter mais informações, consulte [Criar um Software Development Kit](../extensibility/creating-a-software-development-kit.md).
+- **Componente nativo**: um projeto nativo criará um WinMD para cada conjunto não contínuo de namespaces e uma DLL que consiste na implementação. O WinMDs terá nomes distintos. Ao fazer referência a esse arquivo de componente nativo, o MSBuild não reconhecerá que os WinMDs nomeados de forma diferente formam um componente. Consequentemente, somente o *\<NomeDoArquivo&gt;.dll* e *\<NomeDoArquivo&gt;.winmd* de nome idêntico serão copiados, e ocorrerão erros de runtime. Para resolver esse problema, crie uma SDK de extensão. Para obter mais informações, consulte [Criar um Software Development Kit](../extensibility/creating-a-software-development-kit.md).
 
 - **Consumindo controles**: no mínimo, um controle XAML consiste em um *\<NomeDoArquivo>.winmd*, um *\<NomeDoArquivo>.dll*, um *\<NomeDoArquivo>.pri*, um *\<NomeDoXaml>.xaml* e um *\<NomeDaImagem>.jpg*. Quando o projeto for compilado, os arquivos de recursos associados à referência de arquivo não serão copiados no diretório de saída do projeto e apenas *\<NomeDoArquivo>.winmd*, *\<NomeDoArquivo>.dll* e *\<NomeDoArquivo>.pri* serão copiados. Um erro de build é registrado para informar ao usuário que os recursos *\<NomeDoXaml>.xaml* and *\<NomeDaImagem>.jpg* estão ausentes. Para ter êxito, o usuário precisará copiar manualmente esses arquivos de recurso no diretório de saída do projeto para a compilação e a depuração/runtime. Para resolver esse problema, crie um SDK de Extensão seguindo as etapas em [Criar um Software Development Kit](../extensibility/creating-a-software-development-kit.md) ou edite o arquivo de projeto para adicionar a seguinte propriedade:
 
@@ -209,6 +209,6 @@ Ao fazer uma referência de arquivo a um WinMD, o layout previsto é que os arqu
 
 A barra de pesquisa na caixa de diálogo Gerenciador de Referências opera na guia que está no foco. Por exemplo, se um usuário digitar “Sistema” na barra de pesquisa enquanto a guia **Solução** estiver no foco, a pesquisa não retornará nenhum resultado a menos que a solução consista em um nome de projeto que contenha “Sistema”.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Gerenciar referências em um projeto](../ide/managing-references-in-a-project.md)

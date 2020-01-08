@@ -6,17 +6,17 @@ helpviewer_keywords:
 - lookup tables
 - lookup tables, creating
 ms.assetid: 0edd5385-c381-4b17-9096-74e2778db9d5
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: f7660eba181c0a08ea3736c36e84bc7c9a574e10
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9fe49ee90dba3edd0e2777817c4903c6101a1b47
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72642252"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586764"
 ---
 # <a name="create-lookup-tables-in-windows-forms-applications"></a>Criar tabelas de pesquisa em aplicativos do Windows Forms
 
@@ -28,7 +28,7 @@ Por exemplo, considere uma tabela de `Orders` em um banco de dados de vendas. Ca
 
 ## <a name="to-databind-a-lookup-control"></a>Para associar um controle de pesquisa
 
-1. Com o projeto aberto, abra a janela **fontes de dados** escolhendo **Exibir**  > **outras** fontes de**dados**do Windows  > .
+1. Com o projeto aberto, abra a janela **fontes de dados** escolhendo **Exibir** > **outras** fontes de **dados**do Windows > .
 
     > [!NOTE]
     > As tabelas de pesquisa exigem que duas tabelas ou objetos relacionados estejam disponíveis na janela **fontes de dados** . Para obter mais informações, consulte [relações em conjuntos de](relationships-in-datasets.md)dados.
@@ -44,7 +44,7 @@ Por exemplo, considere uma tabela de `Orders` em um banco de dados de vendas. Ca
 
 5. Arraste o nó da tabela filho principal da janela **fontes de dados** para o formulário.
 
-     Os controles de ligação de ligações (com rótulos descritivos) e uma faixa de ferramentas (<xref:System.Windows.Forms.BindingNavigator>) aparecem no formulário. Um [DataSet](../data-tools/dataset-tools-in-visual-studio.md), [TableAdapter](../data-tools/create-and-configure-tableadapters.md), <xref:System.Windows.Forms.BindingSource> e <xref:System.Windows.Forms.BindingNavigator> aparecem na bandeja de componentes.
+     Os controles de ligação de ligações (com rótulos descritivos) e uma faixa de ferramentas (<xref:System.Windows.Forms.BindingNavigator>) aparecem no formulário. Um [DataSet](../data-tools/dataset-tools-in-visual-studio.md), [TableAdapter](../data-tools/create-and-configure-tableadapters.md), <xref:System.Windows.Forms.BindingSource>e <xref:System.Windows.Forms.BindingNavigator> aparecem na bandeja de componentes.
 
 6. Agora, arraste o nó da tabela pai principal da janela **fontes de dados** diretamente para o controle de pesquisa (o <xref:System.Windows.Forms.ComboBox>).
 
@@ -57,6 +57,6 @@ Por exemplo, considere uma tabela de `Orders` em um banco de dados de vendas. Ca
     |**ValueMember**|O Visual Studio define essa propriedade para a primeira coluna participante da chave primária, ou a primeira coluna na tabela, se nenhuma chave for definida.<br /><br /> Se você precisar fazer um ajuste, defina-o como a chave primária na tabela com a coluna que você deseja exibir.|
     |**SelectedValue**|O Visual Studio define essa propriedade como a coluna original descartada da janela **fontes de dados** .<br /><br /> Se você precisar fazer um ajuste, defina isso para a coluna de chave estrangeira na tabela relacionada.|
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Associando controles do Windows Forms a dados no Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)

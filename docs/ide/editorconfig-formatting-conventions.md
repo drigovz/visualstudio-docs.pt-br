@@ -7,18 +7,18 @@ dev_langs:
 - VB
 helpviewer_keywords:
 - formatting conventions [EditorConfig]
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 42f1ab99a82f402ef6eced09ad5e47cf54122b86
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 64f6a45b3a5cc49cd541ceb905356093ea4ec221
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652798"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589221"
 ---
 # <a name="formatting-conventions"></a>Convenções de formatação
 
@@ -1210,7 +1210,7 @@ public int MyProperty
 }
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Convenções de linguagem](editorconfig-language-conventions.md)
 - [Convenções de nomenclatura](editorconfig-naming-conventions.md)

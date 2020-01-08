@@ -19,15 +19,15 @@ helpviewer_keywords:
 - set up Dotfuscator
 description: Saiba como instalar a cópia gratuita do Dotfuscator Community incluída no Visual Studio.
 ms.assetid: f2146651-e24a-4e24-ade8-8ddee8ff4e43
-author: Joe-Sewell-PreEmptive
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: f4ff951ee202f706ab3b8553cff83519e36c86ed
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: bb659976126713a11594ad1b4aeb536510744c38
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652412"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596808"
 ---
 # <a name="install-dotfuscator-community"></a>Instalar o Dotfuscator Community
 
@@ -103,7 +103,7 @@ Você poderá, então, instalar o Dotfuscator Community como um componente indiv
 
 Quando a instalação estiver concluída, você poderá começar a usar Dotfuscator Community. Para obter detalhes, confira [a página de Introdução do Guia completo do usuário do Dotfuscator Community][get-started].
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 [Este tópico no Guia completo do usuário do Dotfuscator Community](https://www.preemptive.com/dotfuscator/ce/docs/help/)
 

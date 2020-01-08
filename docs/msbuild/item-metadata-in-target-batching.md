@@ -7,17 +7,17 @@ helpviewer_keywords:
 - MSBuild, target batching
 - target batching [MSBuild]
 ms.assetid: f3cc4186-6a4c-4161-bbe5-1ec638b4925b
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ff9aa4cdc2e3a406b21aeccf5538bcbfdd6b4249
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 013cf211fe9fdfb8fef07c5ac757fa5f4b35a521
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63006775"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75577272"
 ---
 # <a name="item-metadata-in-target-batching"></a>Metadados de item no envio de destinos em lote
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] tem a capacidade de executar a análise de dependência em entradas e saídas de um destino de build. Se for determinado que as entradas ou as saídas do destino estão atualizadas, o destino será ignorado e o build continuará. Elementos `Target` usam os atributos `Inputs` e `Outputs` para especificar os itens a fim de inspecionar durante a análise de dependência.
@@ -65,8 +65,8 @@ O exemplo a seguir contém uma lista de item nomeada `Res` que é dividida em do
 </Project>
 ```
 
-## <a name="see-also"></a>Consulte também
-- [Como: Compilar incrementalmente](../msbuild/how-to-build-incrementally.md)
+## <a name="see-also"></a>Veja também
+- [Como criar de forma incremental](../msbuild/how-to-build-incrementally.md)
 - [Envio em lote](../msbuild/msbuild-batching.md)
 - [Elemento Target (MSBuild)](../msbuild/target-element-msbuild.md)
 - [Metadados de item no envio de tarefas em lote](../msbuild/item-metadata-in-task-batching.md)

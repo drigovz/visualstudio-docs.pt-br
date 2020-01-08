@@ -42,24 +42,24 @@ helpviewer_keywords:
 - datasets [Visual Basic], namespace
 - data adapters, populating datasets
 ms.assetid: ee57f4f6-9fe1-4e0a-be9a-955c486ff427
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3796a9b7a1d37911601574e02c89e8ccebb684ca
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: cb41a4e3e4ed1c0032c579779a18c7df0bc22477
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72642114"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586712"
 ---
 # <a name="dataset-tools-in-visual-studio"></a>Ferramentas de conjunto de dados no Visual Studio
 
 > [!NOTE]
 > Conjuntos de dados e classes relacionadas são tecnologias .NET herdadas do 2000s inicial que permitem que os aplicativos trabalhem com dados na memória, enquanto os aplicativos são desconectados do banco de dado. Eles são especialmente úteis para aplicativos que permitem aos usuários modificar dados e persistir as alterações de volta para o banco de dado. Embora os conjuntos de aplicativos sejam comprovadamente uma tecnologia bem bem-sucedida, recomendamos que os novos aplicativos .NET usem Entity Framework. O Entity Framework fornece uma maneira mais natural de trabalhar com dados tabulares como modelos de objeto e tem uma interface de programação mais simples.
 
-Um objeto de `DataSet` é um objeto na memória que é essencialmente um mini-banco de dados. Ele contém os objetos `DataTable`, `DataColumn` e `DataRow` nos quais você pode armazenar e modificar dados de um ou mais bancos sem precisar manter uma conexão aberta. O conjunto de dados mantém informações sobre as alterações de seu dado, para que as atualizações possam ser rastreadas e enviadas de volta ao banco de dados quando seu aplicativo for reconectado.
+Um objeto de `DataSet` é um objeto na memória que é essencialmente um mini-banco de dados. Ele contém os objetos `DataTable`, `DataColumn`e `DataRow` nos quais você pode armazenar e modificar dados de um ou mais bancos sem precisar manter uma conexão aberta. O conjunto de dados mantém informações sobre as alterações de seu dado, para que as atualizações possam ser rastreadas e enviadas de volta ao banco de dados quando seu aplicativo for reconectado.
 
 Os conjuntos de valores e as classes relacionadas são definidos no namespace <xref:System.Data?displayProperty=fullName> na API do .NET. Você pode criar e modificar conjuntos de valores dinamicamente no código usando ADO.NET. A documentação nesta seção mostra como trabalhar com conjuntos de valores usando designers do Visual Studio. Os conjuntos de dados que são criados por meio de designers usam objetos **TableAdapter** para interagir com ele. Os conjuntos de valores criados programaticamente usam objetos **DataAdapter** . Para obter informações sobre como criar conjuntos de dados programaticamente, consulte [Dataadaptadores e Datalêrs](/dotnet/framework/data/adonet/dataadapters-and-datareaders).
 
@@ -95,6 +95,6 @@ Para obter informações sobre conjuntos de dados em aplicativos de N camadas, c
 
 Para obter informações sobre a conversão de conjuntos de dados de e para XML, consulte [Read XML data to a DataSet](../data-tools/read-xml-data-into-a-dataset.md) e [Save a DataSet as XML](../data-tools/save-a-dataset-as-xml.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Ferramentas de dados do Visual Studio para .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)

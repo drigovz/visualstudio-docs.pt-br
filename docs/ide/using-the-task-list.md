@@ -9,17 +9,17 @@ f1_keywords:
 helpviewer_keywords:
 - task list
 - Visual Studio, task list
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 69c0e4c3a19358d9b29e4d7d3616c6718117e059
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: db39850350f99e6c046996f6408973cbc6543868
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647315"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594221"
 ---
 # <a name="use-the-task-list"></a>Usar a Lista de Tarefas
 
@@ -67,7 +67,7 @@ Uma vez que `TODO` é um token pré-definido, esse comentário aparece como uma 
 > [!NOTE]
 > Os tokens padrão estão disponíveis somente para as linguagens C/C++, C# e VB. Para outras linguagens, confira a seção **Tokens personalizados**.
 
-### <a name="custom-tokens"></a>Tokens personalizados
+### <a name="custom-tokens"></a>{1&gt;Tokens personalizados&lt;1}
 
 Por padrão, o Visual Studio inclui os seguintes tokens: `HACK`, `TODO`, `UNDONE` e `UnresolvedMergeConflict`. Não diferenciam maiúsculas de minúsculas. Também é possível criar seus próprios tokens personalizados.
 
@@ -108,7 +108,7 @@ Para criar um atalho, insira o ponteiro no código no local em que deseja coloca
 
 Para navegar pelos atalhos no código, escolha um atalho na lista e escolha **Próxima Tarefa** ou **Tarefa Anterior** no menu de atalho.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Caixa de diálogo Lista de Tarefas, Ambiente, Opções](../ide/reference/task-list-environment-options-dialog-box.md)
 - [Comentários da tarefa (Visual Studio para Mac)](/visualstudio/mac/task-comments)

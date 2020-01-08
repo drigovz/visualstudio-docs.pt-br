@@ -4,17 +4,17 @@ ms.date: 05/02/2017
 ms.topic: conceptual
 helpviewer_keywords:
 - IntelliTest, Visual Studio IntelliTest developer testing tool
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-author: jillre
-ms.openlocfilehash: 94bd67ecb4646e3b8079d2d1aadda097c655af4c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+author: mikejo5000
+ms.openlocfilehash: dfa81e7afe313a112e2355ddf5efadb70c555477
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653166"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591587"
 ---
 # <a name="overview-of-microsoft-intellitest"></a>Visão geral do Microsoft IntelliTest
 
@@ -46,7 +46,7 @@ Se desejar testar:
 
 ## <a name="the-hello-world-of-intellitest"></a>O Olá, Mundo do IntelliTest
 
-O IntelliTest localiza entradas relevantes para o programa testado, o que significa que você pode usá-lo para gerar a famosa cadeia de caracteres **Olá, Mundo!** . Isso pressupõe que você criou um projeto de teste com base em MSTest do C# e adicionou uma referência ao **Microsoft.Pex.Framework**. Se você estiver usando uma estrutura de teste diferente, crie uma biblioteca de classes do C# e consulte a documentação da estrutura de teste sobre como configurar o projeto.
+O IntelliTest localiza entradas relevantes para o programa testado, o que significa que você pode usá-lo para gerar a famosa cadeia de caracteres **Olá, Mundo!** especificada. Isso pressupõe que você criou um C# projeto de teste baseado em MSTest e adicionou uma referência a **Microsoft. Pex. Framework**. Se você estiver usando uma estrutura de teste diferente, crie uma biblioteca de classes do C# e consulte a documentação da estrutura de teste sobre como configurar o projeto.
 
 O exemplo a seguir cria duas restrições no parâmetro chamado **valor** de forma que o IntelliTest gerará a cadeia de caracteres necessária:
 
@@ -77,6 +77,9 @@ Depois de compilado e executado, o IntelliTest gera um conjunto de testes, como 
 6. "Olá\0\0"
 7. "Olá\0Mundo!"
 8. "Olá, Mundo!"
+
+> [!NOTE]
+> Para problemas de compilação, tente substituir Microsoft. VisualStudio. TestPlatform. TestFramework e Microsoft. VisualStudio. TestPlatform. TestFramework. Extensions References por uma referência a Microsoft. VisualStudio. QualityTools. UnitTestFramework.
 
 Leia [Gerar testes de unidade com IntelliTest](../../test/generate-unit-tests-for-your-code-with-intellitest.md) para entender onde os testes gerados são salvos. O código de teste gerado deve incluir um teste como o código a seguir:
 
@@ -132,11 +135,11 @@ Mesmo para o código .NET, ele pode analisar somente o código que instrumenta. 
 
 A solução alternativa sugerida é ter um modo de teste em que esses métodos estão localizados em tipos em um assembly dinâmico. No entanto, mesmo se alguns métodos não forem instrumentados, o IntelliTest tentará abranger o máximo de código instrumentado possível.
 
-### <a name="platform"></a>Plataforma
+### <a name="platform"></a>Platform
 
 O IntelliTest tem suporte apenas no .NET Framework X86 de 32 bits.
 
-### <a name="language"></a>Linguagem
+### <a name="language"></a>{1&gt;Idioma&lt;1}
 
 Em princípio, o IntelliTest pode analisar programas .NET arbitrários, gravados em qualquer linguagem .NET. No entanto, no Visual Studio ele dá suporte apenas a C#.
 

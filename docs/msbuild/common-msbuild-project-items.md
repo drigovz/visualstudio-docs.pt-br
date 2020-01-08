@@ -10,17 +10,17 @@ dev_langs:
 helpviewer_keywords:
 - MSBuild, common project items
 ms.assetid: 1eba3721-cc12-4b80-9987-84923ede5e2e
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cb759ba9571e16d0030f1fd6baf6d4feb03efb2e
-ms.sourcegitcommit: 510529f2f86a9897ed5767973e60c99c0d3a77a6
+ms.openlocfilehash: b10768d5ab291981dc77af650de61eb9496dfda5
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "73956139"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596145"
 ---
 # <a name="common-msbuild-project-items"></a>Itens de projeto comuns do MSBuild
 Em [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], um item é uma referência nomeada a um ou mais arquivos. Itens contêm metadados, como nomes de arquivos, caminhos e números de versão. Todos os tipos de projeto em [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] têm vários itens em comum. Esses itens são definidos no arquivo *Microsoft.Build.CommonTypes.xsd*.
@@ -46,7 +46,7 @@ Em [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.m
 |Nome de metadados de item|Descrição|
 |---------------|-----------------|
 |Name|Cadeia de caracteres opcional. O nome de exibição do componente.|
-|GUID|Cadeia de caracteres obrigatória. Um GUID para o componente, no formato {12345678-1234-1234-1234-1234567891234}.|
+|{1&gt;Guid&lt;1}|Cadeia de caracteres obrigatória. Um GUID para o componente, no formato {12345678-1234-1234-1234-1234567891234}.|
 |VersionMajor|Cadeia de caracteres obrigatória. A parte principal do número de versão do componente. Por exemplo, “5” se o número de versão completo for “5,46”.|
 |VersionMinor|Cadeia de caracteres obrigatória. A parte secundária do número de versão do componente. Por exemplo, “46” se o número de versão completo for “5,46”.|
 |LCID|Cadeia de caracteres opcional. O LocaleID do componente.|
@@ -74,7 +74,7 @@ Em [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.m
 |Nome de metadados de item|Descrição|
 |---------------|-----------------|
 |Name|Cadeia de caracteres opcional. O nome de exibição da referência.|
-|Projeto|Cadeia de caracteres opcional. Um GUID para a referência, no formato {12345678-1234-1234-1234-1234567891234}.|
+|Projeto do|Cadeia de caracteres opcional. Um GUID para a referência, no formato {12345678-1234-1234-1234-1234567891234}.|
 |Pacote|Cadeia de caracteres opcional. O caminho do arquivo de projeto que está sendo referenciado.|
 |ReferenceOutputAssembly|Booliano opcional. Se estiver definido como `false`, não inclui a saída do projeto referenciado como uma [referência](#reference) deste projeto, mas ainda garante que o outro projeto seja compilado antes desse. Assume o padrão de `true`.|
 
@@ -118,7 +118,7 @@ Em [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.m
 | Visível | Booliano opcional. Indica se o arquivo no **Gerenciador de Soluções** deve ser exibido no [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. |
 | CopyToOutputDirectory | Cadeia de caracteres opcional. Determina se o arquivo deve ser copiado para o diretório de saída. Os valores são:<br /><br /> 1. nunca<br />2. sempre<br />3. PreserveNewest |
 
-### <a name="none"></a>Nenhum
+### <a name="none"></a>{1&gt;Nenhum&lt;1}
  Representa arquivos que não devem ter função no processo de build.
 
 | Nome de metadados de item | Descrição |
@@ -137,7 +137,7 @@ Em [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.m
 | Nome de metadados de item | Descrição |
 |-----------------------| - |
 | Incluir | Torna-se o primeiro parâmetro (a chave) no construtor de atributo `AssemblyMetadataAttribute`. |
-| Valor | Cadeia de caracteres obrigatória. Torna-se o segundo parâmetro (o valor) no construtor de atributo `AssemblyMetadataAttribute`. |
+| Value | Cadeia de caracteres obrigatória. Torna-se o segundo parâmetro (o valor) no construtor de atributo `AssemblyMetadataAttribute`. |
 
 > [!NOTE]
 > Isso se aplica a projetos usando apenas o SDK do .NET Core.
@@ -151,5 +151,5 @@ Em [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.m
 ### <a name="import"></a>Importar
  Representa assemblies cujos namespaces devem ser importados pelo compilador [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)].
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 - [Propriedades de projeto comuns do MSBuild](../msbuild/common-msbuild-project-properties.md)

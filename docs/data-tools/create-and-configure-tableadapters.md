@@ -9,17 +9,17 @@ helpviewer_keywords:
 - data [Visual Studio], TableAdapters
 - data [Visual Studio], creating table adapters
 ms.assetid: 08630d69-0d6c-4e8f-b42d-2922f45f8415
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: f1403d61dd7a0d36401e449806fdafa6adc533b5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 4e5a557aeeee3fca2bef0367a630dfaca04b3a74
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648602"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586777"
 ---
 # <a name="create-and-configure-tableadapters"></a>Criar e configurar TableAdapters
 
@@ -82,7 +82,7 @@ O exemplo a seguir mostra como chamar uma consulta adicional chamada `FillByCity
 
 1. Abra o conjunto de dados no **Designer de Conjunto de Dados**.
 
-2. Se você estiver criando uma nova consulta, arraste um objeto de **consulta** da guia **DataSet** da **caixa de ferramentas** para uma <xref:System.Data.DataTable> ou selecione **Adicionar consulta** no menu de atalho do TableAdapter. Você também pode arrastar um objeto de **consulta** para uma área vazia da **Designer de conjunto de dados**, que cria um TableAdapter sem um <xref:System.Data.DataTable> associado. Essas consultas só podem retornar valores únicos (escalares) ou executar comandos UPDATE, INSERT ou DELETE no banco de dados.
+2. Se você estiver criando uma nova consulta, arraste um objeto de **consulta** da guia **DataSet** da **caixa de ferramentas** para uma <xref:System.Data.DataTable>ou selecione **Adicionar consulta** no menu de atalho do TableAdapter. Você também pode arrastar um objeto de **consulta** para uma área vazia da **Designer de conjunto de dados**, que cria um TableAdapter sem um <xref:System.Data.DataTable>associado. Essas consultas só podem retornar valores únicos (escalares) ou executar comandos UPDATE, INSERT ou DELETE no banco de dados.
 
 3. Na tela **escolher sua conexão de dados** , selecione ou crie a conexão que será usada pela consulta.
 
@@ -115,6 +115,6 @@ O exemplo a seguir mostra como chamar uma consulta adicional chamada `FillByCity
     > [!NOTE]
     > Arrastar um objeto de **consulta** diretamente para o **Designer de conjunto de dados** cria um método que retorna apenas um valor escalar (único). Embora a consulta ou o procedimento armazenado selecionado possa retornar mais de um único valor, o método criado pelo assistente retornará apenas um único valor. Por exemplo, a consulta pode retornar a primeira coluna da primeira linha dos dados retornados.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Preencher conjuntos de dados usando TableAdapters](../data-tools/fill-datasets-by-using-tableadapters.md)

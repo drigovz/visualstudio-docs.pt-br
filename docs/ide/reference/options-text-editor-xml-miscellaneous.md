@@ -5,15 +5,15 @@ ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.XML.Miscellaneous
 ms.assetid: b6538cbe-badd-4313-a1fb-39e906736bbe
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 58de904e1697a820a2f4bc6f88fbff5237cabc30
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: dd468945b1ab9ac83b219b9c8c396f017065e2be
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666587"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75568120"
 ---
 # <a name="options-text-editor-xml-miscellaneous"></a>Opções, Editor de texto, XML, Diversos
 
@@ -49,13 +49,13 @@ Os esquemas e as definições de tipo (DTDs) de documentos são baixados automat
 
 Ativa o recurso de estruturação quando um arquivo é aberto. Por padrão, a caixa de seleção fica marcada.
 
-## <a name="caching"></a>Cache
+## <a name="caching"></a>Armazenamento em cache
 
 **Esquemas**
 
 Especifica o local do cache de esquema. O botão **Procurar** abre a localização do cache do esquema atual em uma nova janela. O local padrão é *%VsInstallDir%\xml\Schemas*.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Opções de XML – Formatação](options-text-editor-xml-formatting.md)
 - [Ferramentas XML no Visual Studio](../../xml-tools/xml-tools-in-visual-studio.md)

@@ -15,17 +15,17 @@ helpviewer_keywords:
 - MSBuild, in-process compilers
 - MSBuild, design-time target execution
 ms.assetid: 06cd6d7f-8dc1-4e49-8a72-cc9e331d7bca
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 00d64b060b340302107ddffaf1d69cad802a283b
-ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
+ms.openlocfilehash: b1ddb8bdbc913a72791144d5e9d29d206712a3d6
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70913281"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594416"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Integração com o Visual Studio (MSBuild)
 O Visual Studio hospeda o [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] para carregar e compilar projetos gerenciados. Como [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] é responsável pelo projeto, quase todo projeto que estiver no formato [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] poderá ser utilizado com êxito no [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], mesmo se o projeto tiver sido criado por meio de uma ferramenta diferente e tenha um processo de build personalizado.
@@ -66,7 +66,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 > Alguns nomes de tipo de item são específicos do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], mas não aparecem nessa lista suspensa.
 
 ## <a name="in-process-compilers"></a>Compiladores em processo
- Quando possível, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] tentará usar a versão em processo do compilador [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] para melhorar o desempenho. (não se aplica a [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]). Para que isso funcione corretamente, as condições a seguir devem ser cumpridas:
+ Quando possível, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] tentará usar a versão em processo do compilador [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] para melhorar o desempenho. (Não aplicável a [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)].) Para que isso funcione corretamente, as seguintes condições devem ser atendidas:
 
 - Em um destino do projeto, deve haver uma tarefa nomeada como `Vbc` para projetos [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)].
 
@@ -120,7 +120,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 
  As expressões condicionais de itens sempre serão ignoradas com a finalidade de decidir se o item deve ser exibido no **Gerenciador de Soluções**.
 
-## <a name="debugging"></a>Depuração
+## <a name="debugging"></a>{1&gt;Depuração&lt;1}
  Para localizar e iniciar o assembly de saída e anexar o depurador, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] precisa que as propriedades `OutputPath`, `AssemblyName` e `OutputType` estejam definidas corretamente. Não será possível anexar o depurador se o processo de build não fizer com que o compilador gere um arquivo *.pdb*.
 
 ## <a name="design-time-target-execution"></a>Execução de destino do tempo de design
@@ -176,12 +176,12 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
    O sistema de projeto chama um destino com o nome conhecido `ResolveNativeReferences`. Esse destino deve produzir itens com o nome de tipo de item `NativeReferenceFile`. Os itens devem ter todos os metadados dos itens de entrada aprovados, além de uma nova parte de metadados com o nome `OriginalItemSpec`, que contém a especificação de item original da referência.
 
 ## <a name="performance-shortcuts"></a>Atalhos de desempenho
- Se você usar o IDE do Visual Studio para iniciar a depuração (escolhendo a tecla F5 ou escolhendo **depurar** > **Iniciar Depuração** na barra de menus) ou para compilar seu projeto (por exemplo, **criar** > **solução de compilação** ), o processo de compilação usa uma verificação de atualização rápida para melhorar o desempenho. Em alguns casos nos quais builds personalizados criam arquivos que, por sua vez, são compilados, a verificação de atualização rápida não identificará os arquivos alterados corretamente. Projetos que precisam de verificações de atualização mais completas podem desligue a verificação rápida configurando a variável de ambiente `DISABLEFASTUPTODATECHECK=1`. Como alternativa, os projetos podem definir isso como uma propriedade de MSBuild no projeto ou em um arquivo importado pelo projeto.
+ Se você usar o IDE do Visual Studio para iniciar a depuração (escolhendo a tecla F5 ou escolhendo **Debug** > **iniciar a depuração** na barra de menus) ou para compilar seu projeto (por exemplo, **Compilar** > **solução de compilação**), o processo de compilação usará uma verificação de atualização rápida para melhorar o desempenho. Em alguns casos nos quais builds personalizados criam arquivos que, por sua vez, são compilados, a verificação de atualização rápida não identificará os arquivos alterados corretamente. Projetos que precisam de verificações de atualização mais completas podem desligue a verificação rápida configurando a variável de ambiente `DISABLEFASTUPTODATECHECK=1`. Como alternativa, os projetos podem definir isso como uma propriedade de MSBuild no projeto ou em um arquivo importado pelo projeto.
 
  A atualização rápida não se aplica a builds regulares no Visual Studio e o projeto será compilado como se o build tivesse sido invocado por meio do prompt de comando.
 
-## <a name="see-also"></a>Consulte também
-- [Como: Estender o processo de build do Visual Studio](../msbuild/how-to-extend-the-visual-studio-build-process.md)
+## <a name="see-also"></a>Veja também
+- [Como estender o processo de compilação do Visual Studio](../msbuild/how-to-extend-the-visual-studio-build-process.md)
 - [Iniciar um build pelo IDE](../msbuild/starting-a-build-from-within-the-ide.md)
 - [Registrar extensões do .NET Framework](../msbuild/registering-extensions-of-the-dotnet-framework.md)
 - [Conceitos do MSBuild](../msbuild/msbuild-concepts.md)

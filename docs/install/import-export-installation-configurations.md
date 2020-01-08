@@ -11,19 +11,19 @@ helpviewer_keywords:
 - export installation configuration
 - install Visual Studio
 - Visual Studio installer
-author: TerryGLee
-ms.author: tglee
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 8150aa3369eb385ebad865d261f9e8c2d71d7dbe
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
-ms.translationtype: HT
+ms.openlocfilehash: dddd34c9d57497a011f58bdb643c670ed84f6ded
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65849028"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596847"
 ---
 # <a name="import-or-export-installation-configurations"></a>Importar ou exportar configurações de instalação
 
@@ -70,7 +70,7 @@ Quando estiver pronto para importar um arquivo de configuração de instalação
 
 ## <a name="automatically-install-missing-components"></a>Instalar automaticamente os componentes ausentes
 
-**Novidades do Visual Studio 2019**: Ao salvar um arquivo .vsconfig no seu diretório raiz da solução e, em seguida, abrir uma solução, o Visual Studio detectará automaticamente quais componentes estão ausentes e solicitará que você os instale.
+**Novo no Visual Studio 2019**: quando você salva um arquivo. vsconfig no diretório raiz da solução e, em seguida, abre uma solução, o Visual Studio detecta automaticamente quais componentes estão ausentes e solicita que você os instale.
 
 ![O Gerenciador de Soluções sugere os componentes adicionais](../install/media/vs-2019/solution-explorer-config-file.png)
 
@@ -78,7 +78,7 @@ Você também pode gerar um arquivo .vsconfig diretamente no Gerenciador de Solu
 
 1. Clique com botão direito do mouse no seu arquivo de solução.
 
-1. Escolha **Adicionar** > **Arquivo de configuração de instalação**.
+1. Escolha **adicionar** > **arquivo de configuração de instalação**.
 
 1. Confirme o local no qual deseja salvar o arquivo .vsconfig e escolha **Revisar detalhes**.
 
@@ -91,7 +91,7 @@ Você também pode gerar um arquivo .vsconfig diretamente no Gerenciador de Solu
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 * [Criar uma instalação de rede do Visual Studio](create-a-network-installation-of-visual-studio.md)
 * [Atualizar uma instalação em rede do Visual Studio](update-a-network-installation-of-visual-studio.md)

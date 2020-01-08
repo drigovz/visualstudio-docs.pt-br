@@ -26,17 +26,17 @@ helpviewer_keywords:
 - warnings, files changed
 - Solution Explorer, displaying files in
 ms.assetid: 4e3ccf1b-cd68-4db6-9470-710c911b47fc
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ff1b5e83d9aaca0181699e3cc7effcc973ef2349
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 7813a2e7686bef5a146e7472bce7f2c24baf9cd2
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661640"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75570057"
 ---
 # <a name="options-dialog-box-environment--documents"></a>Caixa de diálogo opções: documentos de \> de ambiente
 
@@ -83,7 +83,7 @@ Por exemplo, se você definir essa opção como 5 e tiver 10 arquivos diversos a
 
 Selecione esta opção para fazer com que arquivos que contêm informações incompatíveis com a página de código selecionada sejam salvos como Unicode por padrão.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Arquivos diversos](../../ide/reference/miscellaneous-files.md)
 - [Localizando e substituindo texto](../../ide/finding-and-replacing-text.md)

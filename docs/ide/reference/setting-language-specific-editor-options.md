@@ -6,17 +6,17 @@ helpviewer_keywords:
 - editor options
 - configure editor
 - editor settings
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3aa197a855b2a4f0c33520c6b8c1a01311ab6b72
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 988e89b9019b149e89ed569cf3ff585fdd4641bc
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72645284"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590833"
 ---
 # <a name="set-language-specific-editor-options"></a>Definir opções do editor específicas a um idioma
 
@@ -45,7 +45,7 @@ Descreve configurações que especificam como a lista de conclusão do IntelliSe
 [Opções, Editor de Texto, XAML, Formatação](../../ide/reference/options-text-editor-xaml-formatting.md)\
 Descreve configurações para organização de atributo e elemento em documentos XAML.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Personalizar o editor](../how-to-change-text-case-in-the-editor.md)
 - [Criar configurações do editor portátil e personalizado com o EditorConfig](../../ide/create-portable-custom-editor-options.md)

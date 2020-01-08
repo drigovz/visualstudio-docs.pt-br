@@ -3,17 +3,17 @@ title: Teclas modificadoras de prancheta no Blend
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 50732733-ff49-41ba-8c44-4f6a3875ec1c
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fca85bd48a8fd755e7bec70216572fcfe2f84b36
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 18c9035a092854ae5b9d0cfe0fa0ad8f9aab349f
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649720"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593011"
 ---
 # <a name="artboard-modifier-keys-in-blend"></a>Teclas modificadoras de prancheta no Blend
 Alguns atalhos de teclado não têm itens de menu associados, o que significa que você não pode usar a interface do usuário do [!INCLUDE[blend_subs](../debugger/includes/blend_subs_md.md)] para descobri-los. A tabela a seguir lista atalhos que modificam uma ação, como redimensionar um objeto.
@@ -39,7 +39,7 @@ Alguns atalhos de teclado não têm itens de menu associados, o que significa qu
 |Alternar entre documentos abertos|Pressione **Ctrl**+**Tab**|
 |Abra o painel **Ativos**|Pressione **Ctrl**+**Ponto final**|
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Atalhos de teclado](../xaml-tools/keyboard-shortcuts-in-blend.md)
 - [Teclas modificadoras da ferramenta Caneta](../xaml-tools/pen-tool-modifier-keys-in-blend.md)

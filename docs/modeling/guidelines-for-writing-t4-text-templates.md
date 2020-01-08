@@ -2,17 +2,17 @@
 title: Diretrizes para escrever modelos de texto T4
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a0b1a8c70a0e7ec95e0545ecf3caf932f582b3c5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 24c8afd5e34d4957dac3d9f4d5b0e4409ad20895
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72667284"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596535"
 ---
 # <a name="guidelines-for-writing-t4-text-templates"></a>Diretrizes para escrever modelos de texto T4
 
@@ -115,7 +115,7 @@ Em **MyReportText-Methods.cs**:
 
 Permitir código personalizado: forneça pontos de extensão.
 
-Considere a geração de métodos virtuais em \< # + blocos de recursos de classe # >. Isso permite que um único modelo seja usado em muitos contextos sem modificação. Em vez de modificar o modelo, você pode construir uma classe derivada que forneça a lógica adicional mínima. A classe derivada pode ser um código regular ou pode ser um modelo de tempo de execução.
+Considere a geração de métodos virtuais em \<# + blocos de recursos de classe # >. Isso permite que um único modelo seja usado em muitos contextos sem modificação. Em vez de modificar o modelo, você pode construir uma classe derivada que forneça a lógica adicional mínima. A classe derivada pode ser um código regular ou pode ser um modelo de tempo de execução.
 
 Por exemplo, em MyStandardRunTimeTemplate.tt:
 
@@ -139,7 +139,7 @@ class FabrikamTemplate : MyStandardRunTimeTemplate
 
 Separar a coleta de dados da geração de texto.
 
-Tente evitar misturar blocos de computação e texto. Em cada modelo de texto, use o primeiro \< # Code Block # > para definir variáveis e executar cálculos complexos. Do primeiro bloco de texto até o final do modelo ou o primeiro \< # + classe do bloco de recursos # >, evite expressões longas e evite loops e condicionais, a menos que eles contenham blocos de texto. Essa prática torna o modelo mais fácil de ler e manter.
+Tente evitar misturar blocos de computação e texto. Em cada modelo de texto, use o primeiro \<# Code Block # > para definir variáveis e executar cálculos complexos. Do primeiro bloco de texto até o final do modelo ou o primeiro \<# + classe do bloco de recursos # >, evite expressões longas e evite loops e condicionais, a menos que eles contenham blocos de texto. Essa prática torna o modelo mais fácil de ler e manter.
 
 Não use `.tt` para arquivos de inclusão.
 
@@ -169,7 +169,7 @@ No entanto, para alguns tipos de requisitos de negócios, é importante esclarec
 
 Você também pode criar seu próprio tipo de diagrama como uma DSL (linguagem específica de domínio). O código pode ser gerado de UML e DSLs. Para obter mais informações, consulte [análise e modelagem de arquitetura](../modeling/analyze-and-model-your-architecture.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Geração de código no tempo de design usando modelos de texto T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md)
 - [Geração de texto de tempo de execução com modelos de texto T4](../modeling/run-time-text-generation-with-t4-text-templates.md)

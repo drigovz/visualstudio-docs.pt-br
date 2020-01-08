@@ -11,21 +11,21 @@ helpviewer_keywords:
 - Load Test Viewer, summary
 - load tests, summary in Load Test Viewer
 ms.assetid: 326b6c3c-5378-452b-8ca3-ba5a06ab3d41
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ba72bc9d4e63e1ccb1e6d8c05d20332880e19ea9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 7df3324c2182c376cb9547a4192fca3e601b3dd5
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652989"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75584485"
 ---
 # <a name="load-test-results-summary-overview"></a>Visão geral do resumo dos resultados do teste de carga
 
-Depois de executar um teste de carga, você poderá exibir o resumo do teste de carga para entender os resultados rapidamente. O resumo do teste de carga fornece os resultados-chave em um formato compacto e fácil de ler. Você também pode imprimir o resumo do teste de carga. Isso deixa prático usá-lo quando você comunica resultados aos participantes. O resumo do teste de carga também é a exibição padrão quando você abre um resultado do teste de carga de um teste de carga executado anteriormente. Para saber mais, confira [Como acessar resultados do teste de carga para análise](../test/how-to-access-load-test-results-for-analysis.md).
+Depois de executar um teste de carga, você poderá exibir o resumo do teste de carga para entender os resultados rapidamente. O resumo do teste de carga fornece os resultados-chave em um formato compacto e fácil de ler. Você também pode imprimir o resumo do teste de carga. Isso deixa prático usá-lo quando você comunica resultados aos participantes. O resumo do teste de carga também é a exibição padrão quando você abre um resultado do teste de carga de um teste de carga executado anteriormente. Para obter mais informações, confira [Como acessar resultados do teste de carga para análise](../test/how-to-access-load-test-results-for-analysis.md).
 
-![Exibição resumida](../test/media/ltest_summaryview.png)
+![{1&gt;Exibição resumida&lt;1}](../test/media/ltest_summaryview.png)
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
@@ -58,7 +58,7 @@ As seções de fechamento aparecem ao final do resumo e podem ser recolhidas par
 
 - Recursos de controlador e agente
 
-- Erros
+- Erros do
 
 ## <a name="test-run-information"></a>Informações sobre a execução de teste
 
@@ -125,7 +125,7 @@ A seção Controlador e recursos do agente contém uma lista dos computadores us
 > [!NOTE]
 > Você pode recolher e expandir essa seção escolhendo a seta à esquerda do título da seção.
 
-## <a name="errors"></a>Erros
+## <a name="errors"></a>Erros do
 
 A seção erros contém uma lista de todos os erros ocorridos durante o teste de carga. O tipo e o subtipo do erro, a contagem e a última mensagem são exibidos. Você pode escolher um erro para abrir a tabela **Erros** e inspecionar mais detalhes desse erro. Para obter mais informações, consulte [Analisar resultados de teste de carga e erros na exibição Tabelas](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
 
@@ -136,7 +136,7 @@ A seção erros contém uma lista de todos os erros ocorridos durante o teste de
 
 É possível imprimir o resumo do teste de carga escolhendo **Imprimir** no menu de atalho no resumo. É possível visualizar a impressão escolhendo primeiro **Visualizar impressão** no menu de atalho no resumo. Você também pode imprimir diretamente na tela de visualização.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Analisar violações de regra de limite](../test/analyze-threshold-rule-violations-in-load-tests.md)
-- [Analisar resultados de teste de carga](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
+- [Analisar resultados do teste de carga](../test/analyze-load-test-results-using-the-load-test-analyzer.md)

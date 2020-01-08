@@ -3,17 +3,17 @@ title: Modificar o estilo de objetos
 titleSuffix: Blend for Visual Studio
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 225a9e85493711a1e2903c1f6a632ae68f31136f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f38bfc7a6899ff1d61b8103204bb58df5c5106a6
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72668831"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592948"
 ---
 # <a name="modify-the-style-of-objects-in-blend-for-visual-studio"></a>Modificar o estilo de objetos no Blend para Visual Studio
 
@@ -75,7 +75,7 @@ Na caixa de diálogo **Criar Recurso de Estilo**, você pode nomear o estilo ou 
 
 > [!NOTE]
 > Você não pode criar estilos ou modelos para todos os tipos de controles. Se o controle não der suporte a eles, o botão de navegação estrutural não aparecerá acima da prancheta.
-> Para retornar ao escopo de edição de seu documento principal, clique em **Retornar escopo para** ![Ícone de Retornar escopo para](../designers/media/55844eb3-ed98-4f20-aa66-a6f5b23eeb2b.png).
+> Para retornar ao escopo de edição do documento principal, clique em **escopo de retorno para** ![o escopo de retorno para o ícone](../designers/media/55844eb3-ed98-4f20-aa66-a6f5b23eeb2b.png).
 
 ### <a name="apply-a-style-or-template-to-a-control"></a>Aplicar um estilo ou modelo a um controle
 
@@ -93,7 +93,7 @@ Os estados visuais possibilitam alterar a aparência de um controle com base em 
 
 ![Mouse sobre o estado](../designers/media/a95c671a-5639-40b9-83db-1e6b214330d5.png)
 
-**Assista a um vídeo curto:** ![botão Reproduzir](../designers/media/bldadminconsoleinitialconfigicon.PNG) [Gerenciar o estado dos controles WPF](https://www.youtube.com/watch?v=m0PlkF5i6uw).
+**Assista a um breve vídeo:** botão ![Play](../designers/media/bldadminconsoleinitialconfigicon.PNG) [gerenciar o estado de seus controles WPF](https://www.youtube.com/watch?v=m0PlkF5i6uw).
 
 ## <a name="resources-create-colors-styles-and-templates-and-reuse-them-later"></a>Recursos: Criar cores, estilos e modelos e reutilizá-los posteriormente
 
@@ -101,6 +101,6 @@ Converta qualquer coisa em seu projeto em um recurso. Um recurso é apenas um ob
 
 ![Botão Converter cores em recurso](../designers/media/89203705-cf66-46e0-b153-52a23cd744f7.png) ![Caixa de diálogo Criar Recurso de Cor](../designers/media/6bff8b19-3cd5-41a0-bbf9-ff65532d5aae.png)
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Criando uma interface do usuário usando o Blend for Visual Studio](../xaml-tools/creating-a-ui-by-using-blend-for-visual-studio.md)

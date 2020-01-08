@@ -7,17 +7,17 @@ helpviewer_keywords:
 - unit tests
 - unit tests, UWP apps
 - unit tests, running
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-author: jillre
-ms.openlocfilehash: aa3b4b06fa1a1a1dfe21ec690e158bb955f416c0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+author: mikejo5000
+ms.openlocfilehash: 4109f743caf7c62450591f78e90b92113fc4107e
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659668"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75568874"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-uwp-apps"></a>Passo a passo: criar e executar testes de unidade para aplicativos UWP
 
@@ -32,7 +32,7 @@ Os procedimentos a seguir descrevem as etapas para criar, executar e depurar tes
 
 ::: moniker range=">=vs-2019"
 
-1. Abra o Visual Studio. Na tela Iniciar, selecione **Criar um novo projeto**.
+1. {1&gt;Abra o Visual Studio.&lt;1} Na tela Iniciar, selecione **Criar um novo projeto**.
 
 2. Na caixa de pesquisa da página **criar um novo projeto** , insira o **teste de unidade**.
 
@@ -123,7 +123,7 @@ Para compilar a solução e executar o teste de unidade usando o Gerenciador de 
 
    ![Gerenciador de Testes de Unidade &#45; teste concluído](../test/media/unit_test_win8_unittestexplorer_done.png)
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Testar aplicativos UWP com o Visual Studio](../test/unit-test-your-code.md)
 - [Compilar e testar um aplicativo da UWP](/azure/devops/pipelines/apps/windows/universal?tabs=vsts)

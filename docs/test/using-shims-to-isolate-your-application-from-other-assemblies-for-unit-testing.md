@@ -2,22 +2,22 @@
 title: Usando shims para isolar seu aplicativo para teste de unidade
 ms.date: 11/04/2016
 ms.topic: conceptual
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
-author: jillre
+author: mikejo5000
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: e4a59cb4e3372e16634cddde2a163ac94ca73d24
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 480283b4f86f28fdedfb38687682fcee4e67646e
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72982808"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585529"
 ---
 # <a name="use-shims-to-isolate-your-app-for-unit-testing"></a>Usar shims para isolar seu aplicativo para teste de unidade
 
-Os **tipos de Shim** são uma das duas tecnologias que a estrutura de falsificações da Microsoft usa para permitir que você Isole componentes sob teste do ambiente. Shims desviam chamadas a métodos específicos para o código que você está escrevendo como parte de seu teste. Muitos métodos retornam resultados diferentes dependendo das condições externas, mas um shim está sob controle do seu teste e pode retornar resultados consistentes em cada chamada. Isso facilita a gravação dos testes.
+Os **tipos de Shim** são uma das duas tecnologias que a estrutura de falsificações da Microsoft usa para permitir que você Isole componentes sob teste do ambiente. Shims desviam chamadas para métodos específicos para o código que você escreve como parte de seu teste. Muitos métodos retornam resultados diferentes dependendo das condições externas, mas um shim está sob controle do seu teste e pode retornar resultados consistentes em cada chamada. Isso facilita a gravação dos testes.
 
 Use *shims* para isolar seu código de assemblies que não fazem parte de sua solução. Para isolar componentes de sua solução, use *stubs*.
 
@@ -280,7 +280,7 @@ var shim = new ShimMyClass();
 MyClass instance = shim; // implicit cast retrieves the runtime instance
 ```
 
-### <a name="constructors"></a>Construtores
+### <a name="constructors"></a>{1&gt;Construtores&lt;1}
 
 Os construtores também podem sofrer shim para anexar tipos de shim a objetos futuros. Cada construtor é exposto como um método estático Constructor no tipo de shim. Por exemplo, dada a classe `MyClass` com um construtor usando um número inteiro:
 
@@ -501,7 +501,7 @@ shim = (fileName, content) => {
 ShimFile.WriteAllTextStringString = shim;
 ```
 
-## <a name="systemenvironment"></a>Sistema. ambiente
+## <a name="systemenvironment"></a>System.Environment
 
 Para corrigir <xref:System.Environment?displayProperty=fullName>, adicione o seguinte conteúdo ao arquivo Mscorlib. falsificates após o elemento **assembly** :
 
@@ -521,7 +521,7 @@ System.Fakes.ShimEnvironment.GetCommandLineArgsGet = ...
 
 Os shims não podem ser usados em todos os tipos da biblioteca de classes base do .NET **mscorlib** e **System**.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Isolar o código em teste com o Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md)
 - [Blog de Peter Provost: Visual Studio 2012 shims](http://www.peterprovost.org/blog/2012/04/25/visual-studio-11-fakes-part-2) (Shims do Visual Studio 2012)

@@ -4,15 +4,15 @@ ms.date: 08/09/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - Windows Forms Designer
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: b26ad18da19d5a2e53199b49e7acc024c728be9c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 171cdffa569b342bdbc7dd0da1c8da218e1d622c
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72634023"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589884"
 ---
 # <a name="windows-forms-designer-overview"></a>Visão geral do Designer de Formulários do Windows
 
@@ -35,7 +35,7 @@ Usando o designer, é possível:
 > [!NOTE]
 > Use o Designer de Formulários do Windows, e não o Editor de Recursos, para fazer alterações no arquivo de recurso de um formulário ( *.resx*). Se você editar um arquivo .resx baseado em formulário, verá um aviso de que poderá perder as alterações feitas no Editor de Recursos. Isso ocorre porque o Designer de Formulários do Windows gera o arquivo .resx.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Visão geral do Windows Forms](/dotnet/framework/winforms/windows-forms-overview)
 - [Controles do Windows Forms](/dotnet/framework/winforms/controls/)

@@ -5,15 +5,15 @@ ms.topic: conceptual
 helpviewer_keywords:
 - test settings, for distributed load tests
 ms.assetid: b63d4b71-3b74-4872-b2d1-f0bd1a9a8544
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4704ae4d6a43eb3ac23b928b26515b545164e495
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3129aa5139533db0783c168c3489e071fe9339b5
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653652"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589130"
 ---
 # <a name="how-to-create-a-test-settings-file-for-a-distributed-load-test"></a>Como: criar um arquivo de configurações de teste para um teste de carga distribuído
 
@@ -33,7 +33,7 @@ As configurações de teste do Visual Studio são armazenadas em um arquivo. As 
 
 Ao executar seus testes, você seleciona as configurações de teste para usar como as configurações ativas de teste, dependendo do que você precisa para essa execução específica de teste. O arquivo de configurações de teste é armazenado como parte de sua solução. O nome do arquivo tem a extensão *.testsettings*.
 
-Ao adicionar um projeto de teste de carga e desempenho na Web a uma solução, um arquivo *Default.testsettings* é criado. O arquivo é automaticamente adicionado à solução na pasta **Itens de Solução**. Este arquivo executa seus testes localmente sem adaptadores de dados de diagnóstico. É possível adicionar ou editar um arquivo *.testsettings* para especificar adaptadores de dados de diagnóstico e controladores de teste *.*
+Ao adicionar um projeto de teste de carga e desempenho na Web a uma solução, um arquivo *Default.testsettings* é criado. O arquivo é automaticamente adicionado à solução na pasta **Itens de Solução**. Este arquivo executa seus testes localmente sem adaptadores de dados de diagnóstico. É possível adicionar ou editar um arquivo *.testsettings* para especificar adaptadores de dados de diagnóstico e controladores de teste.
 
 O controlador de teste terá agentes que podem ser usados para cada função nas configurações de teste. Para obter mais informações sobre controladores e agentes de teste, confira [Gerenciar controladores e agentes de teste com o Visual Studio](../test/manage-test-controllers-and-test-agents.md).
 
@@ -57,7 +57,7 @@ Siga estas etapas para criar e remover configurações de teste em sua solução
 
      Agora você pode editar e salvar valores das configurações de teste.
 
-6. Em **Nome**, digite o nome das configurações de teste.
+6. Em **Nome**, digite o nome para as configurações de teste.
 
 7. (Opcional) Em **Descrição**, digite uma descrição para a configuração do teste para que outros membros da equipe saibam de sua finalidade.
 
@@ -122,9 +122,9 @@ Siga estas etapas para criar e remover configurações de teste em sua solução
     |**Criador de Perfil do ASP.NET:** você pode criar uma configuração de teste que inclui a criação de perfis do ASP.NET, que coleta dados de desempenho em aplicações Web ASP.NET.|O adaptador de dados de diagnóstico do criador de perfis do ASP.NET cria perfis do processo do IIS (Serviços de Informações da Internet), portanto ele não funcionará em um servidor Web de desenvolvimento. Para analisar o site no teste de carga, você precisa instalar um agente de teste no computador em que o IIS está sendo executado. O agente de teste não estará gerando carga, mas será um agente de coleção somente. Para obter mais informações, consulte [Instalar e configurar agentes de teste](../test/lab-management/install-configure-test-agents.md).|[Como configurar o criador de perfil do ASP.NET para carregar testes usando as configurações de teste](../test/how-to-configure-aspnet-profiler-for-load-tests-using-test-settings.md)|
     |**Log de eventos:** você pode configurar uma configuração de teste para incluir a coleta de logs de eventos, que será incluída nos resultados de teste.||[Como configurar a coleta de logs de evento usando as configurações de teste](https://msdn.microsoft.com/48d67891-6018-4549-83e3-213d5d824a02)|
     |**Emulação de rede:** você pode especificar que você deseja colocar uma carga artificial de rede em seu teste usando uma configuração de teste. A emulação de rede afeta a comunicação para e do computador emulando uma velocidade de conexão de rede específica, como a conexão discada. **Observação:** a emulação de rede não pode ser usada para aumentar a velocidade de conexão de rede.|O adaptador Emulação de Rede é ignorado por teste de carga. Em vez disso, os testes de carga usam as configurações especificadas na mistura de rede do cenário de teste de carga.<br /><br /> Para obter mais informações, confira [Especificar tipos de rede virtual](../test/specify-virtual-network-types-in-a-load-test-scenario.md).||
-    |**Informações do sistema:** uma configuração de teste pode ser configurada para incluir as informações do sistema sobre os computadores em que o coletor de dados e diagnóstico de informações do sistema é executado. As informações do sistema são especificadas nos resultados do teste usando uma configuração de teste.|![Ícone de informações](../test/media/vc364f4.gif)<br /><br /> Você pode reunir informações do sistema de agentes de carregamento e do sistema em teste.|Nenhuma configuração é necessária para coletar essa informação.|
+    |**Informações do sistema:** uma configuração de teste pode ser configurada para incluir as informações do sistema sobre os computadores em que o coletor de dados e diagnóstico de informações do sistema é executado. As informações do sistema são especificadas nos resultados do teste usando uma configuração de teste.|![Ícone Informações](../test/media/vc364f4.gif)<br /><br /> Você pode reunir informações do sistema de agentes de carregamento e do sistema em teste.|Nenhuma configuração é necessária para coletar essa informação.|
     |**Impacto de teste:** você pode reunir informações sobre quais métodos do seu código de aplicativos foram usados quando um caso de teste estava sendo executado. Podem ser usadas em conjunto com as alterações feitas no código do aplicativo por desenvolvedores para determinar quais testes foram afetados pelas alterações de desenvolvimento.|Os dados do impacto de teste não são coletados com testes de carga.||
-    |**Gravador de vídeo:** você pode criar uma gravação de vídeo da sessão de área de trabalho ao executar um teste automatizado. Isso pode ser útil para a exibição das ações do usuário para um teste codificado de interface do usuário. O vídeo pode ajudar outros membros de equipe a isolar problemas de aplicativo que sejam difíceis de reproduzir. **Observação:** ao executar testes remotamente, o gravador de exibição não funcionará a menos que o agente esteja executando no modo interativo do processo.|![Ícone de importante](../test/media/vc364f3.gif) **Aviso:** não recomendamos o uso do adaptador de gravação de vídeo para testes de carga.|[Como incluir gravações da tela e de voz durante testes usando as configurações de teste](../test/how-to-include-recordings-of-the-screen-and-voice-during-tests.md)|
+    |**Gravador de vídeo:** você pode criar uma gravação de vídeo da sessão de área de trabalho ao executar um teste automatizado. Isso pode ser útil para a exibição das ações do usuário para um teste codificado de interface do usuário. O vídeo pode ajudar outros membros de equipe a isolar problemas de aplicativo que sejam difíceis de reproduzir. **Observação:** ao executar testes remotamente, o gravador de exibição não funcionará a menos que o agente esteja executando no modo interativo do processo.|![ícone importante](../test/media/vc364f3.gif) **AVISO:** não recomendamos o uso do adaptador de gravador de vídeo para testes de carga.|[Como incluir gravações da tela e de voz durante testes usando as configurações de teste](../test/how-to-include-recordings-of-the-screen-and-voice-during-tests.md)|
 
 19. Escolha **Implantação**.
 
@@ -180,7 +180,7 @@ Na pasta **Itens da Solução** no **Gerenciador de Soluções**, clique com o b
 
 O arquivo de configurações de teste é removido de sua solução.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Controladores e agentes de teste](configure-test-agents-and-controllers-for-load-tests.md)
 - [Coletar informações de diagnóstico usando configurações de teste](../test/collect-diagnostic-information-using-test-settings.md)

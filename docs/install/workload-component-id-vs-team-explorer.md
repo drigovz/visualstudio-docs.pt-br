@@ -3,8 +3,8 @@ title: IDs de carga de trabalho e de componente do Team Explorer para Visual Stu
 titleSuffix: ''
 description: Usar IDs de carga de trabalho e de componente do Visual Studio para fornecer ferramentas de teste integradas para testadores em geral
 keywords: ''
-author: TerryGLee
-ms.author: tglee
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.date: 12/03/2019
 ms.topic: reference
@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: c6ef9a3b-d13d-49b4-9faa-51fa06b21e1f
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: a7667c5ad4a1b6de7427d00ef6a9591dc84c04f3
-ms.sourcegitcommit: af9bbf9116a63c0631ff2f4f3a878564aa63cd8c
+ms.openlocfilehash: d76c419db16d511bdc99adf7e3a56980c1d33255
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "74797317"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75588402"
 ---
 # <a name="visual-studio-team-explorer-component-directory"></a>Diretório de componentes do Team Explorer para Visual Studio
 
@@ -44,7 +44,7 @@ ms.locfileid: "74797317"
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 * [Carga de trabalho do Visual Studio e IDs do componente](workload-and-component-ids.md)
 * [Guia do administrador do Visual Studio](visual-studio-administrator-guide.md)

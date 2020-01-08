@@ -7,17 +7,17 @@ helpviewer_keywords:
 - MSBuild, logging
 - logging [MSBuild]
 ms.assetid: fa34810d-185a-4d22-92bd-9852915e5f1d
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c5bb6bbd3d05c22b7615a027ac3fcf6aa686156
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 2c82b7456e0fc497b753c87f7a4d6808c81d5ab2
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62823022"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593402"
 ---
 # <a name="build-loggers"></a>Agentes de build
 Agentes fornecem uma maneira de personalizar a saída do build e exibir mensagens, erros ou avisos em resposta a eventos de build específicos. Cada agente é implementado como uma classe .NET que implementa a interface <xref:Microsoft.Build.Framework.ILogger>, definida no assembly *Microsoft.Build.Framework.dll*.
@@ -75,6 +75,6 @@ O exemplo a seguir mostra como implementar um agente que grava o log de um arqui
 ### <a name="code"></a>Código
 [!code-csharp[msbuild_BasicLogger#1](../msbuild/codesnippet/CSharp/build-loggers_5.cs)]
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 - [Obter logs de build](../msbuild/obtaining-build-logs-with-msbuild.md)
 - [Conceitos do MSBuild](../msbuild/msbuild-concepts.md)

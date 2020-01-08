@@ -6,24 +6,24 @@ helpviewer_keywords:
 - MSBuild, logging
 - logging [MSBuild]
 ms.assetid: 6ba9a754-9cc0-4fed-9fc8-4dcd3926a031
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 385871a47b2a4d73a1f7afacf9d39a02d7c782ca
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: f756d432d9ff4d3824c1f1165c63710e4d10c2e9
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62963761"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594884"
 ---
 # <a name="obtain-build-logs-with-msbuild"></a>Obter logs de build com o MSBuild
 
 Usando opções com o MSBuild, você pode especificar quantos dados de build você deseja examinar e se deseja salvar os dados de build em um ou mais arquivos. Você também pode especificar um agente personalizado para coletar dados de build. Para saber mais sobre opções de linha de comando do MSBuild que este tópico não aborda, confira [Referência de linha de comando](../msbuild/msbuild-command-line-reference.md).
 
 > [!NOTE]
-> Se você compilar projetos usando o IDE do Visual Studio, poderá solucionar os builds examinando os logs de build. Para obter mais informações, confira [Como: Exibir, salvar e configurar arquivos de log de build](../ide/how-to-view-save-and-configure-build-log-files.md).
+> Se você compilar projetos usando o IDE do Visual Studio, poderá solucionar os builds examinando os logs de build. Para obter mais informações, consulte [Como exibir, salvar e configurar arquivos de log de build](../ide/how-to-view-save-and-configure-build-log-files.md).
 
 ## <a name="set-the-level-of-detail"></a>Definir o nível de detalhes
 
@@ -35,7 +35,7 @@ Usando opções com o MSBuild, você pode especificar quantos dados de build voc
 
 - Um resumo do build.
 
-Usando a opção **-verbosity** (**-v**), você pode controlar a quantidade de dados exibida no log de saída. Para solucionar o problema, use um nível de detalhes de `detailed` (`d`) ou `diagnostic` (`diag`), que fornece o máximo de informações.
+Usando a opção **-verbosity** ( **-v**), você pode controlar a quantidade de dados exibida no log de saída. Para solucionar o problema, use um nível de detalhes de `detailed` (`d`) ou `diagnostic` (`diag`), que fornece o máximo de informações.
 
 O processo de build pode ficar mais lento ao definir o **-verbosity** para `detailed` e ainda mais lento se definir o **-verbosity** para `diagnostic`.
 
@@ -49,7 +49,7 @@ A tabela a seguir mostra como os detalhes do log (valores de coluna) afetam quai
 
 |                                       | Silenciosa | Mínimo | Normal | Detalhado | Diagnóstico |
 |---------------------------------------|:-----:|:-------:|:------:|:--------:|:----------:|
-| Erros                                |   ✅   |    ✅    |    ✅   |     ✅    |      ✅     |
+| Erros do                                |   ✅   |    ✅    |    ✅   |     ✅    |      ✅     |
 | Avisos                              |   ✅   |    ✅    |    ✅   |     ✅    |      ✅     |
 | Mensagens de alta prioridade              |       |    ✅    |    ✅   |     ✅    |      ✅     |
 | Mensagens de prioridade normal           |       |         |    ✅   |     ✅    |      ✅     |
@@ -102,7 +102,7 @@ Para saber mais, confira [Referência de linha de comando](../msbuild/msbuild-co
 
  Na linha de comando do MSBuild, você deve especificar o agente personalizado usando a opção **-logger**. Você também pode usar a opção **-noconsolelogger** para desabilitar o agente do console padrão.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - <xref:Microsoft.Build.Framework.LoggerVerbosity>
 - [Agentes de build](../msbuild/build-loggers.md)

@@ -2,20 +2,20 @@
 title: Substituir uma variável temporária por seu valor
 ms.date: 01/26/2018
 ms.topic: reference
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8b758407dc5500630157050c10f881a6515e1216
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8f0199436f5f9b1013a4c49cfb5909e760c73dcc
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661006"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75568861"
 ---
 # <a name="inline-a-temporary-variable-refactoring"></a>Refatoração Embutir uma variável temporária
 
@@ -62,6 +62,6 @@ Esta refatoração aplica-se a:
 
       ![Resultado embutido – Visual Basic](media/inline-result-vb.png)
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Refatoração](../refactoring-in-visual-studio.md)

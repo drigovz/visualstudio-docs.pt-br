@@ -7,17 +7,17 @@ helpviewer_keywords:
 - custom dictionary, code analysis
 - dictionary, code analysis
 ms.assetid: 667e3b4e-beff-48be-b3d1-376e1716a895
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 26629ed099eea9a1d0c73a2eaa1105525d05dcf3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c3fbcbbfd52e4715dc6ee063ae0bae905eb3e65a
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649466"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587518"
 ---
 # <a name="how-to-customize-the-code-analysis-dictionary"></a>Como personalizar o dicionário de análise do código
 
@@ -66,11 +66,11 @@ Você pode modificar o comportamento do dicionário de análise de código adici
 
 - [Dicionário/palavras/não reconhecido/palavra](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsUnrecognizedWord)
 
-- [Dicionário/palavras/preterido/termo [@PreferredAlternate]](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsDeprecatedTermPreferredAlternate)
+- [Dictionary/Words/Deprecated/Term[@PreferredAlternate]](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsDeprecatedTermPreferredAlternate)
 
 - [Dicionário/palavras/composto/termo [@CompoundAlternate]](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsCompoundTermCompoundAlternate)
 
-- [Dicionário/palavras/DiscreteExceptions/termo](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsDiscreteExceptionsTerm)
+- [Dictionary/Words/DiscreteExceptions/Term](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsDiscreteExceptionsTerm)
 
 - [Dicionário/acrônimos/CasingExceptions/acrônimo](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryAcronymsCasingExceptionsAcronym)
 
@@ -241,7 +241,7 @@ Os termos no nó Dictionary/Words/DiscreteExceptions são aplicados às seguinte
 
 ### <a name="BKMK_DictionaryAcronymsCasingExceptionsAcronym"></a>Dicionário/acrônimos/CasingExceptions/acrônimo
 
-Para incluir um acrônimo na lista de termos que a análise de código identifica como grafada corretamente e para indicar como o acrônimo quando o termo é verificado por regras de maiúsculas e minúsculas para palavras compostas, adicione o termo como o texto interno de um dicionário/acrônimos/CasingExceptions/ Elemento acrônimo. O acrônimo no elemento Dictionary/acrônimos/CasingExceptions/acrônimo diferencia maiúsculas de minúsculas.
+Para incluir um acrônimo na lista de termos que a análise de código identifica como grafada corretamente e para indicar como o acrônimo quando o termo é verificado por regras de maiúsculas e minúsculas para as palavras compostas, adicione o termo como o texto interno de um elemento Dictionary/acrônimos/CasingExceptions/acrônimo. O acrônimo no elemento Dictionary/acrônimos/CasingExceptions/acrônimo diferencia maiúsculas de minúsculas.
 
 **Exemplo**
 

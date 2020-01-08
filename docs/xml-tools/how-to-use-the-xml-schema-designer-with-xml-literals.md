@@ -3,19 +3,19 @@ title: 'Como: Use o designer de esquema XML com literais XML'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: d11803e7-f81a-41a2-a145-ba494a45cc93
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: ed987a54004004fe8c4fbfba686ae1a35d12bb06
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b4001e705cc69e07242abeeef5919573b264c5e8
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72601848"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592653"
 ---
 # <a name="how-to-use-the-xml-schema-designer-with-xml-literals"></a>Como: usar o designer de esquema XML com literais XML
 
@@ -23,7 +23,7 @@ Este tópico descreve como exibir um esquema associado com um literal XML em um 
 
 ## <a name="create-a-new-visual-basic-project"></a>Criar um novo projeto de Visual Basic
 
-1. Abra o Visual Studio.
+1. {1&gt;Abra o Visual Studio.&lt;1}
 
 2. Crie um novo projeto de **aplicativo de Console** Visual Basic chamado **xmlliterais**.
 
@@ -39,7 +39,7 @@ Este tópico descreve como exibir um esquema associado com um literal XML em um 
 
      O projeto xmlliterais agora contém dois arquivos: *Module1. vb* e *PurchaseOrderSchema. xsd*.
 
-## <a name="add-code"></a>Adicionar código
+## <a name="add-code"></a>Incluir código
 
 Para adicionar Visual Basic código com um literal XML, com base no arquivo XSD incluído no projeto:
 

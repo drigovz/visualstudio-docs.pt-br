@@ -3,17 +3,17 @@ title: Como editar arquivos XML
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 07fa3ecf-6345-4d30-9d85-d5ef5b083319
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fd8671bf45230ec24a37d5006a2d32e5aabe8f28
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 216718627936ac7f519c1a6a28a30886e8ae9c27
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72645917"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592731"
 ---
 # <a name="how-to-edit-xml-files"></a>Como: editar arquivos XML
 
@@ -36,7 +36,7 @@ Para editar um arquivo XML, clique duas vezes no arquivo que você deseja editar
 
 ## <a name="add-an-existing-xml-file-to-a-project"></a>Adicionar um arquivo XML existente a um projeto
 
-1. No menu **projeto** , selecione **Adicionar item existente**.
+1. No menu **Projeto**, selecione **Adicionar Item Existente**.
 
    A caixa de diálogo **Adicionar item existente** é exibida.
 
@@ -46,7 +46,7 @@ Para editar um arquivo XML, clique duas vezes no arquivo que você deseja editar
 
 1. No menu **arquivo** , selecione **novo**.
 
-   A caixa de diálogo **novo arquivo** é exibida.
+   A caixa de diálogo **Novo Arquivo** será exibida.
 
 2. Selecione o **arquivo XML** para criar um novo arquivo XML; ou então, selecione **arquivo XSLT** para criar uma nova folha de estilo XSLT.
 
@@ -56,7 +56,7 @@ Para editar um arquivo XML, clique duas vezes no arquivo que você deseja editar
 
 ::: moniker range="vs-2017"
 
-1. No menu **Arquivo**, selecione **Novo** > **Projeto**.
+1. No menu **arquivo** , selecione **novo** **projeto**de >.
 
    A caixa de diálogo **Novo Projeto** é exibida.
 
@@ -68,7 +68,7 @@ Para editar um arquivo XML, clique duas vezes no arquivo que você deseja editar
 
 ::: moniker range=">=vs-2019"
 
-1. No menu **Arquivo**, selecione **Novo** > **Projeto**.
+1. No menu **arquivo** , selecione **novo** **projeto**de >.
 
 2. Insira **projeto vazio** na caixa de pesquisa de modelo, selecione o modelo de **projeto vazio (.NET Framework)** e clique em **Avançar**.
 
@@ -80,7 +80,7 @@ Para editar um arquivo XML, clique duas vezes no arquivo que você deseja editar
 
    O editor de XML localiza os esquemas que você adiciona a este projeto e os usa para validação e IntelliSense em qualquer XML, esquema ou arquivos XSLT que você editar enquanto este projeto está aberto.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Editor de XML](../xml-tools/xml-editor.md)
 - [Propriedades do documento XML, janela Propriedades](../xml-tools/xml-document-properties-properties-window.md)

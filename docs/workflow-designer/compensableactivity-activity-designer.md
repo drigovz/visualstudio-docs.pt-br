@@ -5,17 +5,17 @@ ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.CompensableActivity.UI
 ms.assetid: e0340d89-d39e-4a52-8557-13e27040d7b5
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f498c6d025e7527b9767284a77c953e538cef377
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 7ec70c22ae195dc6dd58aa2cfa893cee35fe6ca8
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650672"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75597094"
 ---
 # <a name="compensableactivity-activity-designer"></a>Designer de atividade de CompensableActivity
 
@@ -25,14 +25,14 @@ O designer de atividade **CompensableActivity** é usado para criar e configurar
  <xref:System.Activities.Statements.CompensableActivity> define uma unidade de trabalho que pode ser compensado confirmada ou após a conclusão com êxito.
 
 ### <a name="using-the-compensableactivity-activity-designer"></a>Usando o designer de atividade de CompensableActivity
- O designer de atividade **CompensableActivity** pode ser encontrado na categoria **transação** da **caixa de ferramentas**. Para abrir a **caixa de ferramentas**, selecione a guia caixa de **ferramentas** no lado esquerdo da designer de fluxo de trabalho. Como alternativa, selecione **caixa de ferramentas** no menu **Exibir** ou pressione **Ctrl** +**ALT** +**X**.
+ O designer de atividade **CompensableActivity** pode ser encontrado na categoria **transação** da **caixa de ferramentas**. Para abrir a **caixa de ferramentas**, selecione a guia caixa de **ferramentas** no lado esquerdo da designer de fluxo de trabalho. Como alternativa, selecione **caixa de ferramentas** no menu **Exibir** ou pressione **Ctrl**+**ALT**+**X**.
 
  O designer de atividade do **CompensableActivity** pode ser arrastado da **caixa de ferramentas** e descartado para a superfície de designer de fluxo de trabalho. Você pode remover o designer de atividade dentro de um <xref:System.Activities.Statements.Sequence>. Descartar o designer de atividade cria uma atividade de <xref:System.Activities.Statements.CompensableActivity> com uma <xref:System.Activities.Activity.DisplayName%2A> padrão de CompensableActivity. Edite o valor <xref:System.Activities.Activity.DisplayName%2A> no cabeçalho do designer de atividade **CompensableActivity** . Ele também pode ser editado na caixa **DisplayName** da grade de propriedades.
 
 ### <a name="the-compensableactivity-properties"></a>As propriedades de CompensableActivity
  A tabela a seguir mostra as propriedades de <xref:System.Activities.Statements.CompensableActivity> e descreve como elas são usadas no designer. A propriedade <xref:System.Activities.Activity.DisplayName%2A> e <xref:System.Activities.Activity%601.Result%2A> pode ser editada na grade de propriedades, mas as outras propriedades devem ser editadas na superfície de Designer de Fluxo de Trabalho.
 
-|Nome da Propriedade|Necessária|Uso|
+|Nome da Propriedade|Necessário|Medição de|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|O nome amigável opcional de atividade de <xref:System.Activities.Statements.CompensableActivity> . O padrão é CompensableActivity.|
 |<xref:System.Activities.Activity%601.Result%2A>|False|Especifica o valor de retorno de <xref:System.Activities.Statements.CompensableActivity>. Esta propriedade deve ser editada na grade de propriedade.|
@@ -41,7 +41,7 @@ O designer de atividade **CompensableActivity** é usado para criar e configurar
 |<xref:System.Activities.Statements.CompensableActivity.CompensationHandler%2A>|False|Especifica a atividade a ser executada para compensar a atividade de <xref:System.Activities.Statements.CompensableActivity.Body%2A> . Esse manipulador pode ser chamado explicitamente usando a atividade de <xref:System.Activities.Statements.Compensate> .<br /><br /> Para adicionar a atividade, remova seu designer de atividade da caixa de **ferramentas** para o **CompensationHandler** box no designer de atividade do **CompensableActivity** . Adicione o texto de dica "soltar atividade aqui".|
 |<xref:System.Activities.Statements.CompensableActivity.ConfirmationHandler%2A>|False|Especifica a atividade a ser executada para confirmar a atividade de <xref:System.Activities.Statements.CompensableActivity.Body%2A> . Esse manipulador pode ser chamado explicitamente usando a atividade de <xref:System.Activities.Statements.Confirm> .<br /><br /> Para adicionar a atividade, remova seu designer de atividade da caixa de **ferramentas** para o **ConfirmationHandler** box no designer de atividade do **CompensableActivity** . Adicione o texto de dica "soltar atividade aqui".|
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Transação](../workflow-designer/transaction-activity-designers.md)
 - [CancellationScope](../workflow-designer/cancellationscope-activity-designer.md)

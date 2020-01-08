@@ -3,15 +3,15 @@ title: Trabalhando com elementos no Designer XAML
 ms.date: 05/14/2018
 ms.topic: conceptual
 ms.assetid: a29690bf-f212-4ac6-a77a-adc53d14102e
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: bae8f676a009ef9e5b3560feff15b74410cc52ac
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3f544501a7d8a792af9ddd89c682324a21002c4f
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72668619"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592920"
 ---
 # <a name="work-with-elements-in-xaml-designer"></a>Trabalhar com elementos no Designer XAML
 
@@ -107,8 +107,8 @@ Para desagrupar elementos e excluir o layout, clique com o botão direito do mou
 
 Você pode restaurar valores padrão de propriedades de layout específicas de um elemento usando o comando Redefinir Layout. Ao usar esse comando, você pode redefinir a margem, o alinhamento, a largura, a altura e o tamanho de um elemento, individual ou coletivamente.
 
-Para redefinir o layout do elemento, clique com o botão direito do mouse na janela Estrutura de Tópicos do Documento, escolha **Layout** > **Redefinir** *PropertyName*, em que *PropertyName* é a propriedade que você deseja redefinir (ou escolha **Layout** > **Redefinir Tudo** para redefinir todas as propriedades de layout do elemento).
+Para redefinir o layout do elemento, clique com o botão direito do mouse no elemento na janela de estrutura de tópicos do documento ou na prancheta e escolha **layout** > **Redefinir** *PropertyName*, em que *PropertyName* é a propriedade que você deseja redefinir (ou escolha **layout** > **Redefinir tudo** para redefinir todas as propriedades de layout do elemento).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Criar uma interface do usuário usando o Designer XAML](../xaml-tools/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)

@@ -11,17 +11,17 @@ helpviewer_keywords:
 - Command mode in Command window
 - IDE Command window
 ms.assetid: 48711628-1909-4713-a73e-d7b714c77f8a
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 75792518eadc5449f070b90f3f1e8c2da38bf2b3
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: cb855cbed67bffc5ff2fb63b1785c577dd9fea25
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748779"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75570343"
 ---
 # <a name="command-window"></a>Janela Comando
 A janela **Comando** é usada para executar comandos ou aliases diretamente no IDE (ambiente de desenvolvimento integrado) do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Você pode executar tanto comandos de menu quanto comandos que não aparecem em nenhum menu. Para exibir a janela **Comando**, escolha **Outras Janelas** no menu **Exibir** e selecione **Janela Comando**.
@@ -44,7 +44,7 @@ As duas versões desse comando retornarão o valor da variável `varA`.
 ## <a name="entering-commands"></a>Inserindo comandos
 O símbolo de maior que (`>`) é exibido na borda esquerda da janela Comando como um prompt para novas linhas. Use as teclas de SETA PARA CIMA e SETA PARA BAIXO para rolar os comandos emitidos anteriormente.
 
-|Tarefa|Solução|Exemplo|
+|Tarefa|{1&gt;&lt;1} Solução|Exemplo|
 |----------|--------------|-------------|
 |Avaliar uma expressão.|Preceda a expressão com um ponto de interrogação (`?`).|`? myvar`|
 |Mude para uma janela Imediata.|Digite `immed` na janela, sem o sinal de maior que (>)|`immed`|
@@ -52,7 +52,7 @@ O símbolo de maior que (`>`) é exibido na borda esquerda da janela Comando com
 
 Os seguintes atalhos ajudarão a navegar no modo Comando.
 
-|Ação|Local do cursor|Keybinding|
+|Action|Local do cursor|Keybinding|
 |------------| - |----------------|
 |Percorra a lista de comandos inseridos anteriormente.|Linha de entrada|SETA PARA CIMA E SETA PARA BAIXO|
 |Role para cima na janela.|Conteúdo da janela Comando|CTRL+SETA PARA CIMA|
@@ -109,7 +109,7 @@ Um acento circunflexo funciona da mesma forma tanto dentro quanto fora das aspas
 ## <a name="use-quotes-for-path-names-with-spaces"></a>Usar aspas para nomes de caminho com espaços
 Se, por exemplo, você quiser abrir um arquivo com um caminho que contenha espaços, deverá colocar aspas duplas ao redor do caminho ou segmento do caminho que contém espaços: **C:\\"Arquivos de Programas"** ou **"C:\Arquivos de Programas"** .
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Aliases de comando do Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
 - [Comandos do Visual Studio](../../ide/reference/visual-studio-commands.md)

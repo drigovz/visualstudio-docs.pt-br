@@ -13,17 +13,17 @@ helpviewer_keywords:
 - Miscellaneous Files folder
 - files [Visual Studio], miscellaneous
 ms.assetid: 5b96640b-8efe-48a4-8d0a-1ae3f9587e44
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6fb01d0ce09778866074cc8f303c3e4da60f0de1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 793500faf217c74772506b4b7394d926447ffd40
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72668969"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585291"
 ---
 # <a name="miscellaneous-files"></a>Arquivos diversos
 
@@ -48,7 +48,7 @@ Os menus, barras de ferramentas e os comandos que eles contêm mudam com base no
 
 Você pode definir opções de exibição para a pasta **Arquivos Diversos** para que ela seja exibida mesmo que você não tenha aberto nenhum arquivo diverso. O arquivo de solução não gerencia permanentemente uma lista de arquivos diversos. Ele usa um recurso opcional que permite que ele se lembre uma lista de arquivos MRU (recentemente usados) por usuário.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Desenvolver código no Visual Studio sem projetos ou soluções](../develop-code-in-visual-studio-without-projects-or-solutions.md)
 - [Soluções e projetos](../../ide/solutions-and-projects-in-visual-studio.md)

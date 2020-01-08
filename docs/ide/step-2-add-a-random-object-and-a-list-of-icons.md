@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 97352f60bfc40df28876731ec1e8aee1bff1773c
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: 6548b86f075e5da51bea7835c93e5604f2177397
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72576277"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75588766"
 ---
 # <a name="step-2-add-a-random-object-and-a-list-of-icons"></a>Etapa 2: Adicionar um objeto aleatório e uma lista de ícones
 
@@ -26,7 +26,7 @@ Nesta etapa, você cria um conjunto de símbolos correspondentes para o jogo. Ca
 
 ## <a name="to-add-a-random-object-and-a-list-of-icons"></a>Para adicionar um objeto aleatório e uma lista de ícones
 
-1. Em **Gerenciador de soluções**, escolha *Form1.cs* se você estiver usando C#o ou o *Form1. vb* se estiver usando Visual Basic e, em seguida, na barra de menus, escolha **Exibir** **código**de  > . Como uma alternativa, é possível pressionar a tecla **F7** ou clicar duas vezes em **Form1** no **Gerenciador de Soluções**.
+1. Em **Gerenciador de soluções**, escolha *Form1.cs* se você estiver usando C#o ou o *Form1. vb* se estiver usando Visual Basic e, em seguida, na barra de menus, escolha **Exibir** **código**de > . Como uma alternativa, é possível pressionar a tecla **F7** ou clicar duas vezes em **Form1** no **Gerenciador de Soluções**.
 
      Isso exibe o módulo de código por trás de Form1.
 
@@ -36,7 +36,7 @@ Nesta etapa, você cria um conjunto de símbolos correspondentes para o jogo. Ca
      [!code-vb[VbExpressTutorial4Step2_3_4#1](../ide/codesnippet/VisualBasic/step-2-add-a-random-object-and-a-list-of-icons_1.vb)]
 
       > [!IMPORTANT]
-      > Use o controle linguagem de programação no canto superior direito desta página para exibir o trecho C# de código ou o trecho de código de Visual Basic.<br><br>controle de linguagem ![Programming para Docs.Microsoft.com ](../ide/media/docs-programming-language-control.png)
+      > Use o controle linguagem de programação no canto superior direito desta página para exibir o trecho C# de código ou o trecho de código de Visual Basic.<br><br>![o controle de linguagem de programação para Docs.Microsoft.com](../ide/media/docs-programming-language-control.png)
 
       Se você estiver usando C#o, certifique-se de colocar o código após a chave de abertura e logo após a declaração de classe (`public partial class Form1 : Form`). Se estiver usando o Visual Basic, coloque o código logo depois da declaração de classe (`Public Class Form1`).
 
@@ -53,7 +53,7 @@ Nesta etapa, você cria um conjunto de símbolos correspondentes para o jogo. Ca
 
 4. Considere por que em Visual Basic uma matriz temporária deve ser criada primeiro, mas C#no, a lista pode ser criada com uma instrução. Isso ocorre porque o C# idioma tem *inicializadores de coleção*, que preparam a lista para aceitar valores. No Visual Basic, você pode usar um inicializador de coleção. No entanto, para compatibilidade com a versão anterior do Visual Basic, é recomendável usar o código anterior.
 
-     Quando você usa um inicializador de coleção com uma instrução `new`, depois que o novo objeto de lista é criado, o programa o preenche com os dados fornecidos entre chaves. Nesse caso, você obtém uma lista de cadeias de caracteres denominadas ícones e essa lista será inicializada para que contenha dezesseis cadeias de caracteres. Cada uma dessas cadeias de caracteres é uma única letra e elas correspondem aos ícones que estarão nos rótulos. Desse modo, o jogo terá um par de pontos de exclamação, um par de letras N maiúsculas, um par de vírgulas, e assim por diante. (Quando esses caracteres são definidos como a fonte Webdings, eles aparecerão como símbolos, como um barramento, uma bicicleta, um aranha e assim por diante.) O objeto de lista terá dezesseis cadeias de caracteres, uma para cada célula no painel TableLayoutPanel.
+     Quando você usa um inicializador de coleção com uma instrução `new`, depois que o novo objeto de lista é criado, o programa o preenche com os dados fornecidos entre chaves. Nesse caso, você obtém uma lista de cadeias de caracteres denominadas ícones, e essa lista será inicializada para que contenha dezesseis cadeias de caracteres. Cada uma dessas cadeias de caracteres é uma única letra e elas correspondem aos ícones que estarão nos rótulos. Desse modo, o jogo terá um par de pontos de exclamação, um par de letras N maiúsculas, um par de vírgulas, e assim por diante. (Quando esses caracteres são definidos como a fonte Webdings, eles aparecerão como símbolos, como um barramento, uma bicicleta, um aranha e assim por diante.) O objeto de lista terá dezesseis cadeias de caracteres, uma para cada célula no painel TableLayoutPanel.
 
     > [!NOTE]
     > No Visual Basic, você obtém o mesmo resultado, mas primeiro as cadeias de caracteres são colocadas em uma matriz temporária, que é então convertida em um objeto de lista. Uma matriz é semelhante a uma lista, exceto, por exemplo, as matrizes que são criadas com um tamanho fixo. As listas podem ser reduzidas e aumentadas, conforme a necessidade, que é importante nesse programa.

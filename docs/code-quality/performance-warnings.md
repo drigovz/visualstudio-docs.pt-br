@@ -10,17 +10,17 @@ helpviewer_keywords:
 - performance, warnings
 - managed code analysis warnings, performance warnings
 ms.assetid: e014ac3a-02e6-46d9-942c-3491dd63782f
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ebbe15bdcef27b7b19474b2c42f0b62741fd53a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 42f188901db72378acfd1dee8e22c9a2261b8eb9
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649148"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587245"
 ---
 # <a name="performance-warnings"></a>Avisos de desempenho
 Os avisos de desempenho dão suporte a bibliotecas e aplicativos de alto desempenho.
@@ -31,10 +31,10 @@ Os avisos de desempenho dão suporte a bibliotecas e aplicativos de alto desempe
 | - | - |
 | [CA1800: não converter desnecessariamente](../code-quality/ca1800.md) | As conversões duplicadas diminui o desempenho, especialmente quando as conversões são realizadas em instruções de iteração compactas. |
 | [CA1801: examinar parâmetros não usados](../code-quality/ca1801.md) | Uma assinatura de método inclui um parâmetro que não é usado no corpo do método. |
-| [CA1802: usar literais quando apropriado](../code-quality/ca1802.md) | Um campo é declarado estático e somente leitura (compartilhado e ReadOnly em [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) e é inicializado com um valor que é computáveis no momento da compilação. Como o valor atribuído ao campo de destino é computáveis em tempo de compilação, altere a declaração para um campo const (const no [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) para que o valor seja calculado em tempo de compilação em vez de em tempo de execução. |
+| [CA1802: usar literais quando apropriado](../code-quality/ca1802.md) | Um campo é declarado estático e somente leitura (compartilhado e ReadOnly em [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) e é inicializado com um valor que é computáveis no momento da compilação. Como o valor que é atribuído ao campo de destino é computável no tempo de compilação, altere a declaração para const (Const em [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) para que o valor é calculado em tempo de compilação em vez de em tempo de execução de campo. |
 | [CA1804: remover locais não usados](../code-quality/ca1804.md) | As variáveis locais não utilizadas e as atribuições desnecessárias aumentam o tamanho de um assembly e diminuem o desempenho. |
 | [CA1806: não ignorar resultados do método](../code-quality/ca1806.md) | Um novo objeto é criado, mas nunca usado, ou um método que cria e retorna uma nova cadeia de caracteres é chamado e a nova cadeia de caracteres nunca é usada ou um método Component Object Model (COM) ou P/Invoke Retorna um HRESULT ou um código de erro que nunca é usado. |
-| [CA1809: evitar locais excessivos](../code-quality/ca1809.md) | Uma otimização de desempenho comum é armazenar um valor em um registro de processador, em vez da memória, algo conhecido como "registro do valor".  Para aumentar a chance de que todas as variáveis locais sejam registradas, limite o número de variáveis locais a 64. |
+| [CA1809: evitar locais excessivos](../code-quality/ca1809.md) | Uma otimização de desempenho comum é armazenar um valor em um registro de processador, em vez da memória, algo conhecido como "registro do valor".  Para aumentar a chance de que todas as variáveis locais sejam cancelado, limite o número de variáveis locais a 64. |
 | [CA1810: inicializar campos estáticos de tipo de referência embutido](../code-quality/ca1810.md) | Quando um tipo declara um construtor estático explícito, o compilador JIT (just-in-time) adiciona uma verificação a cada método estático e construtor de instância do tipo para garantir que o construtor estático tenha sido chamado anteriormente. As verificações de construtor estático podem diminuir o desempenho. |
 | [CA1811: evitar código privado não chamado](../code-quality/ca1811.md) | Um membro privado ou interno (no nível do assembly) não tem chamadores no assembly, ele não é invocado pelo Common Language Runtime e não é invocado por um delegado. |
 | [CA1812: evitar classes internas sem instâncias](../code-quality/ca1812.md) | Uma instância de um tipo no nível de assembly não é criada pelo código no assembly. |

@@ -11,17 +11,17 @@ helpviewer_keywords:
 - pre-defined command aliases
 - command aliases
 ms.assetid: de8bb378-8c1c-4087-a9a5-537fa8314c19
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f56161e1fd89ce29924368b6029ee12c17e75a65
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: b420644672309371ab61f1499e22d4745c69c569
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747710"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596405"
 ---
 # <a name="visual-studio-command-aliases"></a>Aliases de comando do Visual Studio
 
@@ -46,7 +46,7 @@ A tabela a seguir contém uma lista de aliases de comando predefinidos do Visual
 |Limpar Indicadores|ClearBook|Edit.ClearBookmarks|
 |Fechar|Fechar|File.Close|
 |Fechar Todos os Documentos|CloseAll|Window.CloseAllDocuments|
-|Limpar Tudo|cls|Edit.ClearAll|
+|Limpar todos|cls|Edit.ClearAll|
 |Modo de comando|cmd|View.CommandWindow|
 |Código de exibição|código|View.ViewCode|
 |[Comando List Memory](../../ide/reference/list-memory-command.md)|d|Debug.ListMemory|
@@ -64,9 +64,9 @@ A tabela a seguir contém uma lista de aliases de comando predefinidos do Visual
 |[Comando Listar Memória](../../ide/reference/list-memory-command.md) como Unicode|du|Debug.ListMemory /Unicode|
 |[Comando Evaluate Statement](../../ide/reference/evaluate-statement-command.md)|eval|Debug.EvaluateStatement|
 |Sair|Sair|File.Exit|
-|Formatar Seleção|formato|Edit.FormatSelection|
-|Tela inteira|Tela Inteira|View.FullScreen|
-|[Comando Start](../../ide/reference/start-command.md)|g|Debug.Start|
+|Formatar Seleção|{1&gt;format&lt;1}|Edit.FormatSelection|
+|Tela Inteira|Tela Inteira|View.FullScreen|
+|[Comando Start](../../ide/reference/start-command.md)|{1&gt;g&lt;1}|Debug.Start|
 |[Comando Go To](../../ide/reference/go-to-command.md)|GotoLn|Edit.GoTo|
 |Ir para Chave|GotoBrace|Edit.GotoBrace|
 |F1Help|Ajuda|Help.F1Help|
@@ -84,7 +84,7 @@ A tabela a seguir contém uma lista de aliases de comando predefinidos do Visual
 |Janela Memória 2|Memory2|Debug.Memory2|
 |Janela Memória 3|Memory3|Debug.Memory3|
 |Janela Memória 4|Memory4|Debug.Memory4|
-|[Comando Set Radix](../../ide/reference/set-radix-command.md)|n|Debug.SetRadix|
+|[Comando Set Radix](../../ide/reference/set-radix-command.md)|{1&gt;n&lt;1}|Debug.SetRadix|
 |[Comando ShowWebBrowser](../../ide/reference/showwebbrowser-command.md)|nav navigate|View.ShowWebBrowser|
 |Próximo Indicador|NextBook|Edit.NextBookmark|
 |[Comando New File](../../ide/reference/new-file-command.md)|nf|File.NewFile|
@@ -92,18 +92,18 @@ A tabela a seguir contém uma lista de aliases de comando predefinidos do Visual
 |[Comando Open File](../../ide/reference/open-file-command.md)|of Open|File.OpenFile|
 |[Comando Open Project](../../ide/reference/open-project-command.md)|op|File.OpenProject|
 |Recolher para definições/Interromper estrutura de tópicos|OutlineDefs StopOutlining|Edit.CollapseToDefinitions|
-|Depuração Parcial|p|Debug.StepOver|
+|Contornar|p|Debug.StepOver|
 |Informações de Parâmetro|ParamInfo|Edit.ParameterInfo|
-|Depuração Circular|pr|Debug.StepOut|
+|Sair|pr|Debug.StepOut|
 |Indicador Anterior|PrevBook|Edit.PreviousBookmark|
 |Imprimir arquivo|imprimir|File.Print|
-|Janela Propriedades|props|View.PropertiesWindow|
-|Stop|q|Debug.StopDebugging|
+|Janela de Propriedades|props|View.PropertiesWindow|
+|Parar|q|Debug.StopDebugging|
 |Refazer|refazer|Edit.Redo|
 |Janela Registros|registros|Debug.Registers|
 |Executar até o cursor|rtc|Debug.RunToCursor|
-|Salvar Itens Selecionados|salvar|File.SaveSelectedItems|
-|Salvar Tudo|SaveAll|File.SaveAll|
+|Salvar os itens selecionados|salvar|File.SaveSelectedItems|
+|Salvar tudo|SaveAll|File.SaveAll|
 |Salvar Como|SaveAs|File.SaveSelectedItemsAs|
 |[Comando Shell](../../ide/reference/shell-command.md)|shell|Tools.Shell|
 |Parar Busca nos Arquivos|StopFind|Edit.FindInFiles /stop|
@@ -111,21 +111,21 @@ A tabela a seguir contém uma lista de aliases de comando predefinidos do Visual
 |Entrar em|t|Debug.StepInto|
 |Tabular Seleção|tabular|Edit.TabifySelection|
 |Janela Lista de Tarefas|TaskList|View.TaskList|
-|Janela Threads|Threads|Debug.Threads|
+|{1&gt;Janela&lt;1} de Threads|Threads|Debug.Threads|
 |Organizar Lado a Lado Horizontalmente|TileH|Window.TileHorizontally|
 |Organizar Lado a Lado Verticalmente|TileV|Window.TileVertically|
 |Ativar/desativar Indicador|ToggleBook|Edit.ToggleBookmark|
 |Janela caixa de ferramentas|caixa de ferramentas|View.Toolbox|
-|[Comando List Disassembly](../../ide/reference/list-disassembly-command.md)|u|Debug.ListDisassembly|
-|Colocar em Maiúsculas|Ucase|Edit.MakeUppercase|
+|[Comando List Disassembly](../../ide/reference/list-disassembly-command.md)|{1&gt;u&lt;1}|Debug.ListDisassembly|
+|Colocar em Maiúsculas|Maiúsculas|Edit.MakeUppercase|
 |Desfazer|desfazer|Edit.Undo|
 |Cancelar Tabulação da Seleção|Cancelar Tabulação|Edit.UntabifySelection|
-|Janela Inspecionar|Inspeção|Debug.WatchN|
+|Janela de inspeção|Observação|Debug.WatchN|
 |Ativar/Desativar Quebra Automática de Linha|WordWrap|Edit.ToggleWordWrap|
 |Listar Processos|&#124;|Debug.ListProcesses|
 |[Comando List Threads](../../ide/reference/list-threads-command.md)|~ ~*k ~\*kb|Debug.ListThreads Debug.ListTheads /AllThreads|
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Comandos do Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Janela Comando](../../ide/reference/command-window.md)
