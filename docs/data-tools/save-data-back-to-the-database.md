@@ -15,17 +15,17 @@ helpviewer_keywords:
 - datasets [Visual Basic], constraints
 - TableAdapters
 ms.assetid: afe6cb8a-dc6a-428b-b07b-903ac02c890b
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: ab2bd92b5636c89027c9c5954567be8048c1b152
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 64d46d4d662b7226dd2be15e6281a17e5b87e577
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648220"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586283"
 ---
 # <a name="save-data-back-to-the-database"></a>Salvar dados novamente no banco de dados
 
@@ -70,21 +70,21 @@ Você pode atualizar o conteúdo de um conjunto de um DataSet *mesclando* -o com
 
 Ao mesclar conjuntos de valores, você pode passar um argumento booliano (`preserveChanges`) que informa ao método <xref:System.Data.DataSet.Merge%2A> se as modificações existentes devem ser retidas no conjunto de valores de destino. Como os conjuntos de informações mantêm várias versões de registros, é importante ter em mente que mais de uma versão dos registros está sendo mesclada. A tabela a seguir mostra como um registro em dois conjuntos de valores é mesclado:
 
-|DataRowVersion|Conjunto de dados de destino|Conjunto de fonte de origem|
+|DataRowVersion|Conjunto de dados de destino|Conjunto de dados de origem|
 | - | - | - |
 |Original|James Wilson|James C. Wilson|
 |Atual|Jim Wilson|James C. Wilson|
 
 Chamar o método <xref:System.Data.DataSet.Merge%2A> na tabela anterior com `preserveChanges=false targetDataset.Merge(sourceDataset)` resulta nos seguintes dados:
 
-|DataRowVersion|Conjunto de dados de destino|Conjunto de fonte de origem|
+|DataRowVersion|Conjunto de dados de destino|Conjunto de dados de origem|
 | - | - | - |
 |Original|James C. Wilson|James C. Wilson|
 |Atual|James C. Wilson|James C. Wilson|
 
 Chamar o método <xref:System.Data.DataSet.Merge%2A> com `preserveChanges = true targetDataset.Merge(sourceDataset, true)` resulta nos seguintes dados:
 
-|DataRowVersion|Conjunto de dados de destino|Conjunto de fonte de origem|
+|DataRowVersion|Conjunto de dados de destino|Conjunto de dados de origem|
 | - | - | - |
 |Original|James C. Wilson|James C. Wilson|
 |Atual|Jim Wilson|James C. Wilson|
@@ -103,7 +103,7 @@ Para evitar violações de restrição prematuro, você pode suspender temporari
 - Ele impede que determinados eventos de atualização sejam gerados (eventos que geralmente são usados para validação).
 
 > [!NOTE]
-> No Windows Forms, a arquitetura de ligação de dados interna do DataGrid suspende a verificação de restrição até que o foco saia de uma linha e você não precise chamar explicitamente os métodos <xref:System.Data.DataRow.BeginEdit%2A>, <xref:System.Data.DataRow.EndEdit%2A> ou <xref:System.Data.DataRow.CancelEdit%2A>.
+> No Windows Forms, a arquitetura de ligação de dados interna do DataGrid suspende a verificação de restrição até que o foco saia de uma linha e você não precise chamar explicitamente os métodos <xref:System.Data.DataRow.BeginEdit%2A>, <xref:System.Data.DataRow.EndEdit%2A>ou <xref:System.Data.DataRow.CancelEdit%2A>.
 
 As restrições são automaticamente desabilitadas quando o método <xref:System.Data.DataSet.Merge%2A> é invocado em um conjunto de um DataSet. Quando a mesclagem for concluída, se houver alguma restrição no conjunto de um que não possa ser habilitada, uma <xref:System.Data.ConstraintException> será lançada. Nessa situação, a propriedade <xref:System.Data.DataSet.EnforceConstraints%2A> é definida como `false,` e todas as violações de restrição devem ser resolvidas antes de redefinir a propriedade <xref:System.Data.DataSet.EnforceConstraints%2A> como `true`.
 
@@ -272,7 +272,7 @@ Em uma instrução UPDATE, você precisa especificar os novos valores (aqueles q
 > [!NOTE]
 > Você também pode definir valores na coleção `Parameters` você mesmo no código, que normalmente faria em um manipulador de eventos para o evento <xref:System.Data.DataTable.RowChanging> do adaptador de dados.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Ferramentas de conjunto de dados no Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)
 - [Criar e configurar TableAdapters](create-and-configure-tableadapters.md)

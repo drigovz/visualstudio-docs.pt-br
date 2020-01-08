@@ -10,17 +10,17 @@ helpviewer_keywords:
 - datasets [Visual Basic], relationships
 - relationships, datasets
 ms.assetid: cfe274f0-71fe-40f6-994e-7c7f6273c9ba
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: c9fab55c020894fe87ec4dc1c31137fb7e38c204
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a9d733892b3bc62c272f31b0d7cc1aa10fbf229d
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648249"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586309"
 ---
 # <a name="create-relationships-between-datasets"></a>Criar relações entre conjuntos de dados
 DataSets que contêm tabelas de dados relacionadas usam <xref:System.Data.DataRelation> objetos para representar uma relação pai/filho entre as tabelas e retornar registros relacionados uns dos outros. Adicionar tabelas relacionadas a conjuntos de dados usando o **Assistente de configuração de fonte de dados**ou o **Designer de conjunto de dados**, cria e configura o objeto de <xref:System.Data.DataRelation> para você.
@@ -55,7 +55,7 @@ Como parte da restrição FOREIGN-KEY, você pode especificar regras de integrid
 
 As regras que você pode fazer são especificadas na enumeração <xref:System.Data.Rule> e estão listadas na tabela a seguir.
 
-|Regra de restrição FOREIGN-KEY|Ação|
+|Regra de restrição FOREIGN-KEY|Action|
 | - |------------|
 |<xref:System.Data.Rule.Cascade>|A alteração (Update ou Delete) feita no registro pai também é feita em registros relacionados na tabela filho.|
 |<xref:System.Data.Rule.SetNull>|Os registros filho não são excluídos, mas a chave estrangeira nos registros filho é definida como <xref:System.DBNull>. Com essa configuração, os registros filho podem ser deixados como "órfãos", ou seja, não têm relação com os registros pai. **Observação:** O uso dessa regra pode resultar em dados inválidos na tabela filho.|
@@ -92,7 +92,7 @@ As relações entre tabelas de dados aparecem como linhas na **Designer de conju
 
 7. Selecione se deseja criar uma relação, uma restrição ou ambas.
 
-8. Marque ou desmarque a caixa de **relação aninhada** . A seleção dessa opção define a propriedade <xref:System.Data.DataRelation.Nested%2A> como `true` e faz com que as linhas filhas da relação sejam aninhadas dentro da coluna pai quando essas linhas são gravadas como dados XML ou sincronizadas com <xref:System.Xml.XmlDataDocument>. Para obter mais informações, consulte [aninhando DataRelations](/dotnet/framework/data/adonet/dataset-datatable-dataview/nesting-datarelations).
+8. Marque ou desmarque a caixa de **relação aninhada** . A seleção dessa opção define a propriedade <xref:System.Data.DataRelation.Nested%2A> como `true`e faz com que as linhas filhas da relação sejam aninhadas dentro da coluna pai quando essas linhas são gravadas como dados XML ou sincronizadas com <xref:System.Xml.XmlDataDocument>. Para obter mais informações, consulte [aninhando DataRelations](/dotnet/framework/data/adonet/dataset-datatable-dataview/nesting-datarelations).
 
 9. Defina as regras a serem impostas quando você estiver fazendo alterações em registros nessas tabelas. Para obter mais informações, consulte <xref:System.Data.Rule>.
 
@@ -104,6 +104,6 @@ As relações entre tabelas de dados aparecem como linhas na **Designer de conju
 
 2. No menu **dados** , selecione o comando **Mostrar rótulos de relação** para exibir o nome da relação. Limpe esse comando para ocultar o nome da relação.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Criar e configurar conjuntos de dados no Visual Studio](../data-tools/create-and-configure-datasets-in-visual-studio.md)

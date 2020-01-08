@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 1786c8c57c841744ed27b03e4969fe2bd21ce2c7
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 03a0eb6808b2298e0727492978d9beb7cfaf2216
+ms.sourcegitcommit: 0d8488329263cc0743a89d43f6de863028e982ff
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985190"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "75678955"
 ---
 # <a name="step-2-create-a-flask-app-with-views-and-page-templates"></a>Etapa 2: Criar um aplicativo Flask com exibições e modelos de página
 
@@ -205,15 +205,11 @@ Resposta: A extensão *.html* dos arquivos de modelo de página é totalmente op
 
 De fato, quando você está trabalhando com um projeto do Flask, o Visual Studio detecta automaticamente quando o arquivo HTML que você está editando é, na verdade, um modelo do Flask e fornece algumas funcionalidades de preenchimento automático. Por exemplo, quando você começa a digitar um comentário no modelo de página do Flask, `{#`, o Visual Studio fornece automaticamente os caracteres de fechamento `#}`. Os comandos **Comentar Seleção** e **Remover Marca de Comentário da Seleção** (no menu **Editar** > **Avançado** e na barra de ferramentas) também usam comentários de modelo em vez de comentários em HTML.
 
-### <a name="question-when-i-run-the-project-i-see-an-error-that-the-template-cannot-be-found-whats-wrong"></a>Pergunta: Quando executo o projeto, é exibido um erro indicando que não é possível encontrar o modelo. Qual é o problema?
-
-Resposta: Se forem exibidos erros indicando que o modelo não pode ser encontrado, verifique se você adicionou o aplicativo a *settings.py* do projeto do Flask na lista `INSTALLED_APPS`. Sem essa entrada, o Flask não saberá o que procurar na pasta *templates* do aplicativo.
-
 ### <a name="question-can-templates-be-organized-into-further-subfolders"></a>Pergunta: Os modelos podem ser organizados em subpastas adicionais?
 
 Resposta: Sim. É possível usar subpastas e, em seguida, referir-se ao caminho relativo em *templates* nas chamadas a `render_template`. Isso é uma ótima maneira de criar efetivamente namespaces para os modelos.
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
 
 > [!div class="nextstepaction"]
 > [Fornecer arquivos estáticos, adicionar páginas e usar a herança do modelo](learn-flask-visual-studio-step-03-serve-static-files-add-pages.md)

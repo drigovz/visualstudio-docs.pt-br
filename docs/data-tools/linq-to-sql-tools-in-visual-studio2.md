@@ -3,17 +3,17 @@ title: Visão geral do Designer Relacional de Objetos
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 45e477c0-5c6b-41f9-b2d0-2808fb4f6537
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: c02dbc42d629385671403de7131b27a449313591
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c1d60f2fd2fdaa239ea9528caa6d39424ad2b85c
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648295"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586387"
 ---
 # <a name="linq-to-sql-tools-in-visual-studio"></a>Ferramentas do LINQ to SQL no Visual Studio
 
@@ -27,7 +27,7 @@ O o **/R Designer** fornece uma superfície de Design Visual para criar [LINQ to
 
 ## <a name="open-the-or-designer"></a>Abrir o o/R Designer
 
-Para adicionar um modelo de entidade LINQ to SQL ao seu projeto, escolha **projeto**  > **Adicionar novo item**e, em seguida, selecione **LINQ to SQL classes** na lista de itens de projeto:
+Para adicionar um modelo de entidade LINQ to SQL ao seu projeto, escolha **projeto** > **Adicionar novo item**e, em seguida, selecione **LINQ to SQL classes** na lista de itens de projeto:
 
 ![Classes do LINQ to SQL](../data-tools/media/raddata-linq-to-sql-classes.png)
 
@@ -78,7 +78,7 @@ O o **/R Designer** fornece as propriedades de namespace de **contexto** e de **
 - <xref:System.Linq>
 - <xref:System.Data.Linq>
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [LINQ to SQL (.NET Framework)](/dotnet/framework/data/adonet/sql/linq/index)
 - [Perguntas frequentes (.NET Framework)](/dotnet/framework/data/adonet/sql/linq/frequently-asked-questions)

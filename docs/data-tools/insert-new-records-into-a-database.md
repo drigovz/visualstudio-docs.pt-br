@@ -12,17 +12,17 @@ helpviewer_keywords:
 - records, inserting
 - saving data
 ms.assetid: ea118fff-69b1-4675-b79a-e33374377f04
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: aaca23e6aa81fab958fc813fa5e2331f8906a562
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3a3830c9dd1921939ced3577b7bafa22772b49f6
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648312"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586413"
 ---
 # <a name="insert-new-records-into-a-database"></a>Inserir novos registros em um banco de dados
 
@@ -46,7 +46,7 @@ Se o seu aplicativo usa conjuntos de dados para armazenar, você pode simplesmen
 
 1. Adicione novos registros ao <xref:System.Data.DataTable> desejado criando um novo <xref:System.Data.DataRow> e adicionando-o à coleção de <xref:System.Data.DataTable.Rows%2A>.
 
-2. Depois que as novas linhas forem adicionadas à <xref:System.Data.DataTable>, chame o método `TableAdapter.Update`. Você pode controlar a quantidade de dados a serem atualizados passando uma <xref:System.Data.DataSet> inteira, uma <xref:System.Data.DataTable>, uma matriz de <xref:System.Data.DataRow>s ou uma única <xref:System.Data.DataRow>.
+2. Depois que as novas linhas forem adicionadas à <xref:System.Data.DataTable>, chame o método `TableAdapter.Update`. Você pode controlar a quantidade de dados a serem atualizados passando uma <xref:System.Data.DataSet>inteira, uma <xref:System.Data.DataTable>, uma matriz de <xref:System.Data.DataRow>s ou uma única <xref:System.Data.DataRow>.
 
    O código a seguir mostra como adicionar um novo registro a um <xref:System.Data.DataTable> e, em seguida, chamar o método `TableAdapter.Update` para salvar a nova linha no banco de dados. (Este exemplo usa a tabela `Region` no banco de dados Northwind.)
 
@@ -73,7 +73,7 @@ Você pode inserir novos registros diretamente em um banco de dados usando objet
 
 ### <a name="to-insert-new-records-into-a-database-by-using-command-objects"></a>Para inserir novos registros em um banco de dados usando objetos de comando
 
-- Crie um novo objeto de comando e, em seguida, defina suas propriedades `Connection`, `CommandType` e `CommandText`.
+- Crie um novo objeto de comando e, em seguida, defina suas propriedades `Connection`, `CommandType`e `CommandText`.
 
 O exemplo a seguir demonstra a inserção de registros em um banco de dados usando o objeto Command. Ele insere dados na tabela `Region` no banco de dados Northwind.
 
@@ -84,6 +84,6 @@ O exemplo a seguir demonstra a inserção de registros em um banco de dados usan
 
 Você deve ter acesso ao banco de dados ao qual está tentando se conectar, bem como permissão para executar inserções na tabela desejada.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Salvar dados de volta no banco de dados](../data-tools/save-data-back-to-the-database.md)
