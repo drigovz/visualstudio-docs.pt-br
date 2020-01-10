@@ -1,6 +1,6 @@
 ---
 title: Executar como administrador
-ms.date: 06/05/2018
+ms.date: 01/06/2020
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio, user permissions
@@ -12,25 +12,25 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d00bc1912991992a2aeb966680c7777c47df0549
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
-ms.translationtype: HT
+ms.openlocfilehash: 927031b4755644aeac553367a4f8a08faa0c0992
+ms.sourcegitcommit: 5421999c9ff05b3242d33e4b0465f8bc29c7c643
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75565221"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "75718630"
 ---
 # <a name="user-permissions-and-visual-studio"></a>Permissões de usuário e o Visual Studio
 
-Por motivos de segurança, você deve executar o Visual Studio como um usuário normal sempre que possível.
+Por motivos de segurança, você deve executar o Visual Studio como um usuário típico sempre que possível.
 
 > [!WARNING]
 > Você deve se certificar de não compilar, iniciar ou depurar qualquer solução do Visual Studio que não venha de uma pessoa de confiança ou de uma localidade confiável.
 
-Você pode fazer quase tudo no IDE do Visual Studio como um usuário normal. Você precisa de permissões de administrador para concluir as seguintes tarefas:
+Você pode fazer quase tudo no IDE do Visual Studio como um usuário típico. Você precisa de permissões de administrador para concluir as seguintes tarefas:
 
 |Área|Tarefa|Para obter mais informações|
 |----------|----------| - |
-|Instalação|Instale o Visual Studio.|[Instalar o Visual Studio](../install/install-visual-studio.md)|
+|Instalação|Instalar ou modificar o Visual Studio.|[Instalar o Visual Studio](../install/install-visual-studio.md), [Modificar o Visual Studio](../install/modify-visual-studio.md)|
 ||Instalar, atualizar ou remover conteúdo da Ajuda local.|[Instalar e gerenciar o conteúdo da Ajuda local](../help-viewer/install-manage-local-content.md)|
 |Caixa de ferramentas|Adicionar controles COM clássicos à **Caixa de ferramentas**.|[Caixa de Ferramentas](../ide/reference/toolbox.md)|
 |Compilação|Usar eventos de pós-build que registram um componente.|[Noções básicas sobre etapas e eventos de build personalizados](/cpp/build/understanding-custom-build-steps-and-build-events)|
