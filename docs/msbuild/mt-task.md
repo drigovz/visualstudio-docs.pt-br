@@ -19,17 +19,17 @@ helpviewer_keywords:
 - MSBUILD (C++), MT task
 - MT task (MSBuild (C++))
 ms.assetid: bb94913c-1042-4968-9f08-b394518e899f
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3fad0b3ddf57167c6721371ae5f8e11f5b7a4c13
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: 2f90a1349771ab67f342a3490874cd422051cac2
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911235"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595024"
 ---
 # <a name="mt-task"></a>tarefa MT
 Encapsula a Ferramenta de Manifesto da Microsoft, *mt.exe*. Para saber mais, confira [Mt.exe](/windows/desktop/SbsCs/mt-exe).
@@ -68,5 +68,5 @@ Encapsula a Ferramenta de Manifesto da Microsoft, *mt.exe*. Para saber mais, con
 |**UpdateFileHashesSearchPath**|Parâmetro `String` opcional.<br /><br /> Especifica o caminho de pesquisa a ser usado quando os hashes de arquivo são atualizados. Use esse parâmetro com o parâmetro de tarefa **UpdateFileHashesMT**.<br /><br /> Para obter mais informações, consulte o parâmetro **UpdateFileHashes** nesta tabela.|
 |**VerboseOutput**|Parâmetro `Boolean` opcional.<br /><br /> Se `true`, exibe informações de depuração detalhadas.<br /><br /> Para saber mais, confira a opção **/verbose** em [Mt.exe](/windows/desktop/SbsCs/mt-exe).|
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 - [Referência de tarefas](../msbuild/msbuild-task-reference.md)

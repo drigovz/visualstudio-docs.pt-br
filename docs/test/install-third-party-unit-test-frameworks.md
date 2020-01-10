@@ -2,17 +2,17 @@
 title: Instalar estruturas de teste de unidade de terceiros
 ms.date: 04/01/2019
 ms.topic: conceptual
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-author: jillre
-ms.openlocfilehash: fef59c757476b46936389ca48ca2bdaf32aec729
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+author: mikejo5000
+ms.openlocfilehash: b70e26adc7c0c9a8dc409d9b4b971b233418b8e1
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653248"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594273"
 ---
 # <a name="install-unit-test-frameworks"></a>Instalar estruturas de teste de unidade
 
@@ -48,6 +48,6 @@ Atualização para o adaptador de teste estável mais recente para aproveitar me
 
    ![Atualizar adaptador de teste](media/install-adapter-upgrade.png)
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Efetuar teste de unidade em seu código](../test/unit-test-your-code.md)

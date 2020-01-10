@@ -9,17 +9,17 @@ helpviewer_keywords:
 - ListMemory command
 - list memory command
 ms.assetid: a84de361-a6a6-4f6d-96aa-a0d4a424371e
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7bb92f3ac3420f146fdcd39b5925f7b3a517959a
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: c500b1b516c2b1ab1bc66b7970fccc4ec7a85baa
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748710"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75568705"
 ---
 # <a name="list-memory-command"></a>Comando Listar Memória
 Exibe o conteúdo do intervalo de memória especificado.
@@ -36,7 +36,7 @@ Debug.ListMemory [/ANSI|Unicode] [/Count:number] [/Format:formattype]
 
 Opcional. O endereço de memória do qual começar a exibir a memória.
 
-## <a name="switches"></a>Opções
+## <a name="switches"></a>Comutadores
 /ANSI&#124;Unicode
 
 Opcional. Exibe a memória como caracteres correspondentes aos bytes de memória, ANSI ou Unicode.
@@ -85,7 +85,7 @@ Veja uma lista dos aliases disponíveis para o comando **Debug.ListMemory**:
 >Debug.ListMemory /Format:float /Count:30 /Unicode
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Comando List Call Stack](../../ide/reference/list-call-stack-command.md)
 - [Comando List Threads](../../ide/reference/list-threads-command.md)

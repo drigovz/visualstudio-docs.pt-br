@@ -3,17 +3,17 @@ title: 'Passo a passo: Criar um aplicativo'
 ms.date: 09/25/2017
 ms.technology: vs-ide-compile
 ms.topic: conceptual
-author: ghogen
-ms.author: ghogen
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f94cc62cdadb2df3806f5b188278f49e4041235
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 570dd2044346ace8a51096a04842ea88de0a8803
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647168"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594143"
 ---
 # <a name="walkthrough-build-an-application"></a>Passo a passo: Criar um aplicativo
 
@@ -47,7 +47,7 @@ Ao criar uma solução, as configurações de build de depuração e versão e s
 
    ![Caixa de diálogo Nova Plataforma da Solução](../ide/media/buildwalk_newsolutionplatform.png)
 
-1. Selecione o botão **OK**.
+1. Escolha o botão **OK**.
 
    A configuração da solução ativa foi alterada para **Teste** com a plataforma da solução ativa definida como x64.
 
@@ -65,7 +65,7 @@ Em seguida, você compilará a solução com a configuração de build personali
 
 ### <a name="build-the-solution"></a>Criar a solução
 
-- Na barra de menus, escolha **criar**  > **criar solução**ou pressione **Ctrl** +**Shift** +**B**.
+- Na barra de menus, escolha **criar** > **criar solução**ou pressione **Ctrl**+**Shift**+**B**.
 
     A Janela de **Saída** exibe os resultados do build. O build foi bem-sucedido.
 
@@ -79,7 +79,7 @@ Em seguida, apresentaremos alguns códigos que fazem com que um aviso seja gerad
 
     No projeto do Visual Basic, abra o arquivo *ExpenseReportPage.xaml.vb*. No construtor personalizado **Public Sub New...** , adicione o seguinte código: `Dim i`.
 
-1. Compile a solução.
+1. {1&gt;Compile a solução.&lt;1}
 
 A Janela de **Saída** exibe os resultados do build. O build foi bem-sucedido, mas foram gerados avisos:
 
@@ -103,7 +103,7 @@ Temporariamente, é possível ocultar determinadas mensagens de aviso durante um
 
      Para obter mais informações, consulte [Página Build, Designer de Projeto (C#)](../ide/reference/build-page-project-designer-csharp.md).
 
-1. Compile a solução.
+1. {1&gt;Compile a solução.&lt;1}
 
      A Janela de **Saída** exibe apenas informações de resumo do build.
 
@@ -123,7 +123,7 @@ Temporariamente, é possível ocultar determinadas mensagens de aviso durante um
 
      Para obter mais informações, consulte [Configurar avisos no Visual Basic](../ide/configuring-warnings-in-visual-basic.md).
 
-4. Compile a solução.
+4. {1&gt;Compile a solução.&lt;1}
 
    A Janela de **Saída** exibe apenas informações de resumo do build.
 
@@ -154,7 +154,7 @@ Temporariamente, é possível ocultar determinadas mensagens de aviso durante um
 
      As informações do build incluem a hora de início do build (localizada no início) e ordem em que os arquivos foram processados. Essas informações também incluem a sintaxe real do compilador que o Visual Studio executa durante o build.
 
-     Por exemplo, no build do C#, a opção [/nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn) lista o código de aviso **1762**, que foi especificado anteriormente neste tópico, juntamente com três outros avisos.
+     Por exemplo, na C# compilação, a opção [/nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn) lista o código de aviso, **0168**, que você especificou anteriormente neste tópico, juntamente com três outros avisos.
 
      No build do Visual Basic, [/nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn) não inclui avisos específicos a serem excluídos e, portanto, nenhum aviso é exibido.
 
@@ -221,7 +221,7 @@ Para obter mais informações, consulte [Como alterar o diretório de saída do 
 
 Parabéns! Você concluiu este passo a passo com êxito.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Passo a passo: Criar um projeto (C++)](/cpp/ide/walkthrough-building-a-project-cpp)
 - [Visão geral da pré-compilação de projeto de aplicativo Web ASP.NET](/previous-versions/aspnet/aa983464\(v\=vs.110\))

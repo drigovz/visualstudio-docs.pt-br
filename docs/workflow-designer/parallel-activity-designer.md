@@ -5,17 +5,17 @@ ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.Parallel.UI
 ms.assetid: 0306dc3b-075a-4091-ac3a-96486fbabed5
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d0c1ea74c1cf64252bdae201e8cc3dd529adb7cb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3f07dd02f682cd5c61d4d17099c1aeb76bb39bf8
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650099"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593155"
 ---
 # <a name="parallel-activity-designer"></a>Designer paralelo de atividades
 
@@ -39,13 +39,13 @@ Para adicionar uma atividade à coleção de <xref:System.Activities.Statements.
 
 A tabela a seguir mostra as propriedades paralelas de atividade e descreve como elas são usadas no designer.
 
-|Nome da Propriedade|Necessária|Uso|
+|Nome da Propriedade|Necessário|Medição de|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Especifica o nome amigável para exibição do designer de atividade no cabeçalho. O valor padrão é **Parallel**. O valor pode ser editado opcionalmente na grade de **Propriedades** ou diretamente no cabeçalho do designer de atividade.|
 |<xref:System.Activities.Statements.Parallel.Branches%2A>|verdadeiro|Contém a coleção de atividades filhos sejam executadas.|
 |<xref:System.Activities.Statements.Parallel.CompletionCondition%2A>|False|Avaliado após uma ramificação completa. Se for avaliado como **true**, os branches pendentes agendados serão cancelados. Se essa propriedade não for definida ou for avaliada como **false**, a atividade será concluída quando todas as suas atividades filhas forem concluídas. O valor padrão é **nulo**.|
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Sequência](../workflow-designer/sequence-activity-designer.md)
 - [ParallelForEach\<T>](../workflow-designer/parallelforeach-t-activity-designer.md)

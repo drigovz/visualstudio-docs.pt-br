@@ -10,17 +10,17 @@ dev_langs:
 helpviewer_keywords:
 - MSBuild, tasks
 ms.assetid: b3144b27-a426-4259-b8ae-5f7991b202b6
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 00af44212dd142dd94629f886a50b9646488af3b
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: d050aa095868e229887e4928285d746e1b5906a5
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747277"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593870"
 ---
 # <a name="msbuild-task-reference"></a>Referência de tarefas do MSBuild
 
@@ -189,7 +189,7 @@ Além dos parâmetros listados nos tópicos nesta seção, cada tarefa também t
 
 - [Tarefa Message](../msbuild/message-task.md)
 
- Registra uma mensagem em log durante um build.
+ Registra uma mensagem durante a compilação.
 
 - [Tarefa Move](../msbuild/move-task.md)
 
@@ -221,7 +221,7 @@ Além dos parâmetros listados nos tópicos nesta seção, cada tarefa também t
 
 - Tarefa ResGen
 
- Obsoleto. Use a [Tarefa GenerateResource](../msbuild/generateresource-task.md) para converter arquivos *.txt* e *.resx* em arquivos *.resources* binários do Common Language Runtime.
+ {1&gt;{2&gt;Obsoleta. &lt;2}&lt;1} Use a [Tarefa GenerateResource](../msbuild/generateresource-task.md) para converter arquivos *.txt* e *.resx* em arquivos *.resources* binários do Common Language Runtime.
 
 - [Tarefa ResolveAssemblyReference](../msbuild/resolveassemblyreference-task.md)
 
@@ -307,7 +307,7 @@ Além dos parâmetros listados nos tópicos nesta seção, cada tarefa também t
 
  Cria um arquivo *.zip* do conteúdo de um diretório.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Referência do MSBuild](../msbuild/msbuild-reference.md)
 - [Produção de tarefas](../msbuild/task-writing.md)

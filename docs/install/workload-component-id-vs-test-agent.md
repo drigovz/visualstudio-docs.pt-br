@@ -3,8 +3,8 @@ title: IDs de carga de trabalho e de componente do Test Agent do Visual Studio
 titleSuffix: ''
 description: Usar IDs de carga de trabalho e de componente do Visual Studio para executar testes automatizados e testes de carga remotamente
 keywords: ''
-author: TerryGLee
-ms.author: tglee
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.date: 12/03/2019
 ms.topic: reference
@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 55aea29b-1066-4e5a-aa99-fc87d4efb6d5
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 2f82487ee45b171f9150057416678fb64b4207f9
-ms.sourcegitcommit: af9bbf9116a63c0631ff2f4f3a878564aa63cd8c
+ms.openlocfilehash: 23e835c3165af848179147a7e145d995ea0e07b8
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "74797275"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594442"
 ---
 # <a name="visual-studio-test-agent-component-directory"></a>Diretório de componentes do Test Agent do Visual Studio
 
@@ -44,7 +44,7 @@ ms.locfileid: "74797275"
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 * [Carga de trabalho do Visual Studio e IDs do componente](workload-and-component-ids.md)
 * [Guia do administrador do Visual Studio](visual-studio-administrator-guide.md)

@@ -11,17 +11,17 @@ helpviewer_keywords:
 - classes [Visual Studio], viewing
 - class designer
 ms.assetid: 40ed2c9d-0ce0-4b95-ad78-5dec2065ccea
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 31b28da2206d23c6112d7e7e154d7e907f63b163
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c65be2b5afe91f9ee20a5eecde57d790a0cbcb2c
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72631894"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590391"
 ---
 # <a name="design-and-view-classes-and-types-with-class-designer"></a>Criar e exibir classes e tipos com o Designer de Classe
 
@@ -55,7 +55,7 @@ Depois de ajustar um ou mais diagramas de classe, copie-os em documentos do Micr
 > [!NOTE]
 > O Designer de Classe não controla o local dos arquivos de origem, por isso quando você altera a estrutura do projeto ou move os arquivos de origem no projeto, o Designer de Classe pode perder o controle do tipo, especialmente o tipo de origem de um typedef, classes base ou tipos de associação. Você pode receber um erro, como **O Designer de Classe não pode exibir esse tipo**. Se você fizer isso, arraste o código-fonte realocado ou modificado para o diagrama de classe, para exibi-lo novamente.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Recursos do Editor de Códigos](../writing-code-in-the-code-and-text-editor.md)
 - [Mapear as dependências nas soluções](../../modeling/map-dependencies-across-your-solutions.md)

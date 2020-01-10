@@ -3,17 +3,17 @@ title: Como criar um modelo 3D básico
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: a0d97966-2df8-449b-a8cf-5a19684dc773
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 604847e5f9bf6111d548b9d3bbdc0a0e10301784
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ce16e436172a7d369f2df8342f6b027b574056ab
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72636730"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589520"
 ---
 # <a name="how-to-create-a-basic-3d-model"></a>Como criar um modelo 3D básico
 
@@ -72,7 +72,7 @@ Antes de começar, verifique se a janela **Propriedades** e a **Caixa de Ferrame
 
    Como uma próxima etapa, você pode aplicar um sombreador a esse modelo 3D. Para obter informações, confira [Como aplicar um sombreador a um modelo 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Como modelar um terreno 3D](../designers/how-to-model-3-d-terrain.md)
 - [Editor de modelos](../designers/model-editor.md)

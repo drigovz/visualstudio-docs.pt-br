@@ -3,9 +3,6 @@ title: Encontrar vazamentos de memória com a biblioteca CRT | Microsoft Docs
 ms.date: 10/04/2018
 ms.topic: conceptual
 dev_langs:
-- CSharp
-- VB
-- FSharp
 - C++
 helpviewer_keywords:
 - breakpoints, on memory allocation
@@ -29,18 +26,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eb2729dcaf0da41c0adac24b0e1909a6d2697eb6
-ms.sourcegitcommit: 697f2ab875fd789685811687387e9e8e471a38c4
+ms.openlocfilehash: 13a346aa0212f4830c2c88ed866b674fc19d30bd
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74829941"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75404988"
 ---
 # <a name="find-memory-leaks-with-the-crt-library"></a>Localizar vazamentos de memória com a biblioteca CRT
 
 Vazamentos de memória estão entre os bugs mais sutis e difíceis de detectar em C/C++ apps. Vazamentos de memória resultam da falha para desalocar corretamente a memória que foi alocada anteriormente. Um pequeno vazamento de memória não pode ser notado a princípio, mas com o tempo pode causar sintomas variando de baixo desempenho para falhar quando o aplicativo ficar sem memória. Um aplicativo de vazamento que usa toda a memória disponível pode fazer com que outros aplicativos falhem, criando confusão sobre qual aplicativo é responsável. Até mesmo vazamentos de memória inofensivas podem indicar outros problemas que devem ser corrigidos.
 
- O depurador de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] e a biblioteca de tempo de execução do C (CRT) podem ajudá-lo a detectar e identificar vazamentos de memória.
+O depurador de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] e a biblioteca de tempo de execução do C (CRT) podem ajudá-lo a detectar e identificar vazamentos de memória.
 
 ## <a name="enable-memory-leak-detection"></a>Habilitar detecção de vazamento de memória
 
@@ -216,7 +213,8 @@ _CrtSetBreakAlloc(18);
 ```
 
 ## <a name="compare-memory-states"></a>Comparar Estados de memória
- Outra técnica para localizar vazamentos de memória envolve pegar instantâneos do estado da memória do aplicativo em pontos-chave. Para tirar um instantâneo do estado da memória em um determinado ponto em seu aplicativo, crie uma estrutura de `_CrtMemState` e passe-a para a função `_CrtMemCheckpoint`.
+
+Outra técnica para localizar vazamentos de memória envolve pegar instantâneos do estado da memória do aplicativo em pontos-chave. Para tirar um instantâneo do estado da memória em um determinado ponto em seu aplicativo, crie uma estrutura de `_CrtMemState` e passe-a para a função `_CrtMemCheckpoint`.
 
 ```cpp
 _CrtMemState s1;
@@ -259,9 +257,11 @@ if ( _CrtMemDifference( &s3, &s1, &s2) )
 Uma técnica para localizar vazamentos de memória começa colocando chamadas de `_CrtMemCheckpoint` no início e no final do seu aplicativo e, em seguida, usando `_CrtMemDifference` para comparar os resultados. Se `_CrtMemDifference` mostrar um vazamento de memória, você poderá adicionar mais chamadas de `_CrtMemCheckpoint` para dividir seu programa usando uma pesquisa binária, até que você tenha isolado a origem do vazamento.
 
 ## <a name="false-positives"></a>Falsos positivos
+
  `_CrtDumpMemoryLeaks` pode fornecer indicações falsas de vazamentos de memória se uma biblioteca marcar alocações internas como blocos normais em vez de blocos CRT ou blocos de cliente. Nesse caso, `_CrtDumpMemoryLeaks` não é capaz de reconhecer a diferença entre alocações de usuário e alocações internas de biblioteca. Se os destruidores globais das alocações de biblioteca forem executados após o ponto onde você chama `_CrtDumpMemoryLeaks`, cada alocação interna da biblioteca será relatada como um vazamento de memória. As versões da biblioteca de modelos padrão anteriores ao Visual Studio .NET podem fazer `_CrtDumpMemoryLeaks` relatar esses falsos positivos.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
+
 - [Detalhes do heap de depuração CRT](../debugger/crt-debug-heap-details.md)
 - [Segurança do depurador](../debugger/debugger-security.md)
 - [Depurando código nativo](../debugger/debugging-native-code.md)

@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 870179243f99501cac7aaa68ce9929ae589ba79e
-ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
+ms.openlocfilehash: 1be9af1badba19932c5d713bb4134448ccf84caf
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71118959"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591743"
 ---
 # <a name="step-3-set-your-form-properties"></a>Etapa 3: Definir as propriedades do formulário
 
@@ -28,12 +28,12 @@ Em seguida, use a janela **Propriedades** para alterar a aparência do seu formu
 1. Escolha qualquer outro lugar dentro do formulário **Form1** para selecioná-lo. Examine a janela **Propriedades**, que agora deve mostrar as propriedades do formulário. Os formulários têm várias propriedades. Por exemplo, você pode definir a cor de primeiro plano e do plano de fundo, o texto do título que aparece na parte superior do formulário, o tamanho do formulário e outras propriedades.
 
    > [!NOTE]
-   > Se a janela **Propriedades** não aparecer, pare seu aplicativo escolhendo o botão de **parada** quadrada de depuração na barra de ferramentas ou apenas feche a janela. Se o aplicativo for interrompido e você ainda não vir a janela **Propriedades** , na barra de menus, escolha **Exibir** > **janela de propriedades**.
+   > Se a janela **Propriedades** não aparecer, pare seu aplicativo escolhendo o botão de **parada** quadrada de depuração na barra de ferramentas ou apenas feche a janela. Se o aplicativo for interrompido e você ainda não vir a janela **Propriedades** , na barra de menus, escolha **Exibir** > **janela Propriedades**.
 
 1. Depois que o formulário for selecionado, localize a propriedade de **Texto** na janela **Propriedades**. Dependendo de como a lista estiver classificada, talvez seja necessário rolar para baixo. Escolha **Texto**, digite **Visualizador de Imagens** e escolha **Enter**.  Seu formulário agora deve ter o **Visualizador de imagens** de texto em sua barra de título e a janela **Propriedades** deve ser semelhante à captura de tela a seguir.
 
     ![Janela Propriedades](../ide/media/express_edittextproperty.png)<br>
-   ***Propriedades*** do *janela* do
+   *Janela* Propriedades
 
    > [!NOTE]
    > As propriedades podem ser classificadas por um modo **Categorizado** ou **Alfabético**. É possível mude entre essas duas modos de exibição usando os botões na janela **Propriedades**. Neste tutorial, é mais fácil localizar propriedades por meio da exibição **Alfabética**.
@@ -56,7 +56,7 @@ Em seguida, use a janela **Propriedades** para alterar a aparência do seu formu
    - Na barra de ferramentas, clique no botão **Iniciar Depuração**, que aparece da seguinte maneira.
 
       ![Botão de barra de ferramentas Iniciar Depuração](../ide/media/express_icondebug.png)<br>
-     ***Iniciar Depuração*** *botão da barra de ferramentas*
+     *Botão de barra de ferramentas* ***Iniciar Depuração***
 
      Assim como antes, o IDE cria e executa seu aplicativo e uma janela é exibida.
 
@@ -70,13 +70,13 @@ Em seguida, use a janela **Propriedades** para alterar a aparência do seu formu
 
    - Escolha o botão **X** no canto superior da janela do **Visualizador de imagens** .
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
 
-* Para ir para a próxima etapa do tutorial, **consulte [Step 4: Deite seu formulário com um controle](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md)** TableLayoutPanel.
+* Para ir para a próxima etapa do tutorial, consulte **[etapa 4: dispor o formulário com um controle TableLayoutPanel](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md)** .
 
-* Para retornar à etapa anterior do tutorial, confira [Etapa 2: Execute o aplicativo](../ide/step-2-run-your-program.md)Visualizador de imagens.
+* Para retornar à etapa anterior do tutorial, consulte [etapa 2: executar o aplicativo visualizador de imagem](../ide/step-2-run-your-program.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
-* [Tutorial 2: Criar um teste de matemática cronometrado](tutorial-2-create-a-timed-math-quiz.md)
-* [Tutorial 3: Criar um jogo de correspondência](tutorial-3-create-a-matching-game.md)
+* [Tutorial 2: criar um teste de matemática cronometrado](tutorial-2-create-a-timed-math-quiz.md)
+* [Tutorial 3: criar um jogo de correspondência](tutorial-3-create-a-matching-game.md)

@@ -3,17 +3,17 @@ title: Como usar trechos XML
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 3a27375b-81cc-48f6-a884-e1cb8c4f78f5
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 163fcddb8553da39b035e649155e04c3da4b430e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: decc565eca9b7299761405e06c0cecf82f63319d
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72601792"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592601"
 ---
 # <a name="how-to-use-xml-snippets"></a>Como: usar trechos XML
 
@@ -26,7 +26,7 @@ Depois que o snippet XML foi adicionado ao editor, todos os campos editáveis no
 Os procedimentos a seguir descrevem como acessar o comando **Insert Snippet** .
 
 > [!NOTE]
-> O comando **Inserir trecho de código** também está disponível por meio do atalho de teclado (**Ctrl** +**K**e, em seguida, **Ctrl** +**X**).
+> O comando **Inserir trecho de código** também está disponível por meio do atalho de teclado (**Ctrl**+**K**e, em seguida, **Ctrl**+**X**).
 
 ### <a name="to-insert-snippets-from-the-shortcut-menu"></a>Para inserir snippets do menu de atalho
 
@@ -52,7 +52,7 @@ Os procedimentos a seguir descrevem como acessar o comando **Insert Snippet** .
 
 1. Posicionar o cursor onde você deseja inserir o snippet XML.
 
-2. Comece a digitar o snippet XML que você deseja adicionar ao seu arquivo. Se o preenchimento automático é ativada, a lista de palavras completo do IntelliSense é exibida. Se não aparecer, pressione **Ctrl** +**espaço** para ativá-lo.
+2. Comece a digitar o snippet XML que você deseja adicionar ao seu arquivo. Se o preenchimento automático é ativada, a lista de palavras completo do IntelliSense é exibida. Se não aparecer, pressione **Ctrl**+**espaço** para ativá-lo.
 
 3. Selecione o snippet XML da lista de palavras completo.
 
@@ -76,7 +76,7 @@ Os procedimentos a seguir descrevem como acessar o comando **Insert Snippet** .
 Os procedimentos a seguir descrevem como acessar o comando **surround with** .
 
 > [!NOTE]
-> O comando **surround with** também está disponível por meio do atalho de teclado (**Ctrl** +**K**e, em seguida, **Ctrl** +**S**).
+> O comando **surround with** também está disponível por meio do atalho de teclado (**Ctrl**+**K**e, em seguida, **Ctrl**+**S**).
 
 ### <a name="to-use-surround-with-from-the-context-menu"></a>Para usar surround with no menu de contexto
 
@@ -102,7 +102,7 @@ Os procedimentos a seguir descrevem como acessar o comando **surround with** .
 
 Uma vez que você escolher um snippet XML, o texto de snippet de código é inserido automaticamente a posição do cursor. Todos os campos editáveis no snippet são realçadas, e o primeiro campo editável é automaticamente selecionado. O campo selecionado é convertido.
 
-Quando um campo é selecionado, você pode digitar um novo valor para o campo. Pressionar **Tab** percorre os campos editáveis do trecho de código; pressionar **Shift** +**guia** percorre-os na ordem inversa. Clicando em um campo colocar o cursor no campo, e clique duas vezes em um campo selecioná-lo. Quando um campo é realçado, uma dica de ferramenta pode ser exibido, oferecendo uma descrição do campo.
+Quando um campo é selecionado, você pode digitar um novo valor para o campo. Pressionar **Tab** percorre os campos editáveis do trecho de código; pressionar **Shift**+**guia** percorre-os na ordem inversa. Clicando em um campo colocar o cursor no campo, e clique duas vezes em um campo selecioná-lo. Quando um campo é realçado, uma dica de ferramenta pode ser exibido, oferecendo uma descrição do campo.
 
 Somente a primeira instância de um campo dado é editável. Quando esse campo é realçado, as outras instâncias do campo são descritas. Quando você altera o valor de um campo editável, o campo ele alterado everywhere é usado no snippet.
 
@@ -110,7 +110,7 @@ Pressionar **Enter** ou **ESC** cancela a edição de campo e retorna o editor p
 
 As cores padrão para campos de trecho de código editável podem ser alteradas modificando a configuração do **campo de trecho de código** no painel **fontes e cores** da caixa de diálogo **Opções** . Para obter mais informações, consulte [como alterar fontes e cores no editor](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Trechos de código XML](../xml-tools/xml-snippets.md)
 - [Como gerar um trecho XML a partir de um esquema XML](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md)

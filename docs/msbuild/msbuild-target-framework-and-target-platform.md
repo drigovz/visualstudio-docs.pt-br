@@ -3,17 +3,17 @@ title: Estrutura de destino e plataforma de destino do MSBuild | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: df6517c5-edd6-4cc4-97ad-b3cdfc78e799
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 837e07518ff9d4be875a52b4f1eb2929d10ff9df
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: b32960d46b4c7ae9b37cfec6cff97eb0540b868a
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189445"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596769"
 ---
 # <a name="msbuild-target-framework-and-target-platform"></a>Estrutura de destino e plataforma de destino do MSBuild
 Um projeto pode ser compilado para executar tanto em uma *estrutura de destino*, que é uma versão específica do .NET Framework, quanto em uma *plataforma de destino*, que é uma arquitetura de software específico.  Por exemplo, você pode direcionar um aplicativo para execução no .NET Framework 2.0 em uma plataforma de 32 bits compatível com a família de processadores 802x86 ("x86"). A combinação de estrutura de destino e plataforma de destino é conhecida como o *contexto de destino*.
@@ -69,7 +69,7 @@ A estrutura de destino é especificada na propriedade `TargetFrameworkVersion` n
 ```
 
 ## <a name="target-platform"></a>Plataforma de destino
- A *plataforma* é a combinação de hardware e software que define um ambiente de tempo de execução específico. Por exemplo,
+ A *plataforma* é a combinação de hardware e software que define um ambiente de runtime específico. Por exemplo,
 
 - `x86` designa um sistema operacional Windows de 32 bits em execução em um processador Intel 80x86 ou equivalente.
 
@@ -96,5 +96,5 @@ Uma *configuração de destino* é um subconjunto de uma plataforma de destino. 
 
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 - [Multiplataforma](../msbuild/msbuild-multitargeting-overview.md)

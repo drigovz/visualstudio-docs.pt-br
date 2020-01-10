@@ -2,17 +2,17 @@
 title: Adicionar novas conexões
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 0abce148194b2d88a39f6c651e6f32d0ae7b6642
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 65c4e28eb9dfa3e3677f70d0557bb53ad8f9c3b2
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648907"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587063"
 ---
 # <a name="add-new-connections"></a>Adicionar novas conexões
 
@@ -54,6 +54,6 @@ Depois de escolher a fonte de dados, clique em **testar conexão**. Se não tive
 
 Se o teste for bem sucedido, você estará pronto para criar uma *fonte de dados*, que é um termo do Visual Studio que significa realmente um *modelo de dados* com base no serviço ou banco subjacente.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Ferramentas de dados do Visual Studio para .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)

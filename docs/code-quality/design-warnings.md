@@ -9,17 +9,17 @@ helpviewer_keywords:
 - managed code analysis warnings, design warnings
 - warnings, design
 ms.assetid: 34e65a18-560c-423f-814f-519089e318cf
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bc714a4663505fe2a40cc145e8c8ca3c7bf86a1e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 301b829341eeb859030afabbf2225ea833e99a22
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649666"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587674"
 ---
 # <a name="design-warnings"></a>Avisos de design
 
@@ -31,10 +31,10 @@ Os avisos de design dão suporte à adesão às [diretrizes de design do .net](/
 | - | - |
 | [CA1000: não declarar membros estáticos em tipos genéricos](../code-quality/ca1000.md) | Quando um membro estático de um tipo genérico é chamado, o argumento de tipo deve ser especificado para o tipo. Quando um membro de instância genérico que não dá suporte à inferência é chamado, o argumento de tipo deve ser especificado para o membro. Nesses dois casos, a sintaxe para especificar o argumento de tipo é diferente e facilmente confundida. |
 | [CA1001: tipos que têm campos descartáveis devem ser descartáveis](../code-quality/ca1001.md) | Uma classe declara e implementa um campo de instância que é um tipo System. IDisposable e a classe não implementa IDisposable. Uma classe que declara um campo IDisposable indiretamente possui um recurso não gerenciado e deve implementar a interface IDisposable. |
-| [CA1002: não expor listas genéricas](../code-quality/ca1002.md) | System. Collections. Generic. List < (Of \< (T >) >) é uma coleção genérica projetada para desempenho, não herança. Por isso, List não contém membros virtuais. As coleções genéricas projetadas para herança devem ser expostas em seu lugar. |
+| [CA1002: não expor listas genéricas](../code-quality/ca1002.md) | Generic < (de \<(T >) >) é uma coleção genérica que foi projetada para desempenho, não a herança. Por isso, List não contém membros virtuais. As coleções genéricas projetadas para herança devem ser expostas em seu lugar. |
 | [CA1003: usar instâncias do manipulador de eventos genéricos](../code-quality/ca1003.md) | Um tipo contém um delegado que retorna void, cuja assinatura contém dois parâmetros (o primeiro objeto e o segundo um tipo que pode ser atribuído a EventArgs) e o assembly de destinos que o contém .NET Framework 2,0. |
 | [CA1004: os métodos genéricos devem fornecer o parâmetro de tipo](../code-quality/ca1004.md) | Inferência é como o argumento de tipo de um método genérico é determinado pelo tipo de argumento passado para o método, em vez da especificação explícita do argumento de tipo. Para habilitar a inferência, a assinatura do parâmetro de um método genérico deve incluir um parâmetro que seja do mesmo tipo do parâmetro de tipo para o método. Nesse caso, o argumento de tipo não precisa ser especificado. Quando você usa a inferência para todos os parâmetros de tipo, a sintaxe para chamar métodos de instância genéricos e não genéricos é idêntica; Isso simplifica a usabilidade de métodos genéricos. |
-| [CA1005: evitar parâmetros excessivos em tipos genéricos](../code-quality/ca1005.md) | Quanto mais parâmetros de tipo um tipo genérico contiver, mais difícil será saber e lembrar-se do que cada parâmetro de tipo representa. Geralmente, isso é óbvio com um parâmetro de tipo, como na lista \<T > e, em determinados casos, com dois parâmetros de tipo, como no Dictionary \<TKey, TValue >. No entanto, se houver mais de dois parâmetros de tipo, a dificuldade ficará muito grande para a maioria dos usuários. |
+| [CA1005: evitar parâmetros excessivos em tipos genéricos](../code-quality/ca1005.md) | Quanto mais parâmetros de tipo um tipo genérico contiver, mais difícil será saber e lembrar-se do que cada parâmetro de tipo representa. Geralmente, isso é óbvio com um parâmetro de tipo, como na lista\<T > e, em determinados casos, com dois parâmetros de tipo, como no Dictionary\<TKey, TValue >. No entanto, se houver mais de dois parâmetros de tipo, a dificuldade ficará muito grande para a maioria dos usuários. |
 | [CA1006: não aninhar tipos genéricos em assinaturas de membro](../code-quality/ca1006.md) | Um argumento de tipo aninhado é um argumento de tipo que também é um tipo genérico. Para chamar um membro cuja assinatura contenha um argumento de tipo aninhado, o usuário deve criar uma instância de um tipo genérico e passar esse tipo para o construtor de um segundo tipo genérico. O procedimento e a sintaxe obrigatórios são complexos e devem ser evitados. |
 | [CA1007: usar genéricos quando apropriado](../code-quality/ca1007.md) | Um método visível externamente contém um parâmetro de referência do tipo System.Object. O uso de um método genérico permite que todos os tipos, sujeitos a restrições, sejam passados para o método sem primeiramente converter o tipo no tipo de parâmetro de referência. |
 | [CA1008: as enums devem ter valor zero](../code-quality/ca1008.md) | O valor padrão de uma enumeração não inicializada, assim como o de outros tipos de valor, é zero. Uma enumeração atribuída não sinalizações deve definir um membro usando o valor de zero para que o valor padrão seja um valor válido da enumeração. Se uma enumeração que tem o atributo FlagsAttribute aplicado definir um membro com valor, seu nome deverá ser “None” para indicar que nenhum valor foi definido na enumeração. |
@@ -88,7 +88,7 @@ Os avisos de design dão suporte à adesão às [diretrizes de design do .net](/
 | [CA1061: não ocultar métodos de classe base](../code-quality/ca1061.md) | Um método em um tipo de base permanece oculto por um método nomeado identicamente em um tipo derivado, quando a assinatura do parâmetro do método derivado difere apenas pelos tipos derivados de maneira mais fraca do que os tipos correspondentes na assinatura do parâmetro do método de base. |
 | [CA1062: validar argumentos de métodos públicos](../code-quality/ca1062.md) | Todos os argumentos de referência passados para os métodos visíveis externamente devem ser verificados em relação que serão nulos. |
 | [CA1063: implementar IDisposable corretamente](../code-quality/ca1063.md) | Todos os tipos IDisposable devem implementar o padrão Dispose corretamente. |
-| [CA1064: as exceções devem ser públicas](../code-quality/ca1064.md) | Uma exceção interna só permanece visível dentro do próprio escopo interno. Depois que a exceção falha fora do escopo interno, somente a exceção de base pode ser usada para capturar a exceção. Se a exceção interna for herdada de <xref:System.Exception?displayProperty=fullName>, <xref:System.SystemException?displayProperty=fullName> ou <xref:System.ApplicationException?displayProperty=fullName>, o código externo não terá informações suficientes para saber o que fazer com a exceção. |
+| [CA1064: as exceções devem ser públicas](../code-quality/ca1064.md) | Uma exceção interna só permanece visível dentro do próprio escopo interno. Depois que a exceção falha fora do escopo interno, somente a exceção de base pode ser usada para capturar a exceção. Se a exceção interna for herdada de <xref:System.Exception?displayProperty=fullName>, <xref:System.SystemException?displayProperty=fullName>, ou <xref:System.ApplicationException?displayProperty=fullName>, o código externo não terá informações suficientes para saber o que fazer com a exceção. |
 | [CA1065: não acionar exceções em locais inesperados](../code-quality/ca1065.md) | Um método que não deve acionar exceções aciona uma exceção. |
 | [CA1068: os parâmetros de CancellationToken devem vir por último](../code-quality/ca1068.md) | Um método tem um parâmetro CancellationToken que não é o último parâmetro. |
 | [CA2210: os assemblies devem ter nomes fortes válidos](../code-quality/ca2210.md) | O nome forte protege clientes do carregamento desconhecido de um assembly adulterado. Os assemblies sem nomes fortes não devem ser implantados fora de cenários muito limitados. Se você compartilhar ou distribuir assemblies não assinados corretamente, o assembly poderá ser adulterado, o Common Language Runtime poderá não carregar o assembly ou o usuário talvez precise desabilitar a verificação em seu computador. |

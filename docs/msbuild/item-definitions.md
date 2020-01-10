@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - msbuild, item definitions
 ms.assetid: 8e3dc223-f9e5-4974-aa0e-5dc7967419cb
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8673cb816cfd03aa5bb0f2c6ffb7aa5205a8372e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 95275f90af0fbf6f002a7e3a127e7d7ca7d08a39
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63006770"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75573775"
 ---
 # <a name="item-definitions"></a>Definições de item
 O [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 2.0 permite a declaração estática de itens em arquivos de projeto usando o elemento [ItemGroup](../msbuild/itemgroup-element-msbuild.md). No entanto, metadados podem ser adicionados somente no nível de item, mesmo que os metadados sejam idênticos para todos os itens. Do [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 3.5 em diante, um elemento de projeto chamado [ItemDefinitionGroup](../msbuild/itemdefinitiongroup-element-msbuild.md) supera essa limitação. *ItemDefinitionGroup* permite que você defina um conjunto de definições de item, que adicionam valores de metadados padrão a todos os itens no tipo de item nomeado.
@@ -251,5 +251,5 @@ A partir do [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsb
 </ItemGroup>
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 - [Envio em lote](../msbuild/msbuild-batching.md)

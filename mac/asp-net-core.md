@@ -6,16 +6,16 @@ ms.author: sayedha
 ms.date: 04/02/2019
 ms.assetid: 6E8B0C90-33D6-4546-8207-CE0787584565
 ms.custom: video
-ms.openlocfilehash: d07849a362779f3fad8f7544899dc23b9d4538d6
-ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
+ms.openlocfilehash: d0e00929de11ff3fd820670be2bb6361cfb5fa6c
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70913323"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75404993"
 ---
 # <a name="getting-started-with-aspnet-core"></a>Introdução ao ASP.NET Core
 
- O Visual Studio para Mac facilita o desenvolvimento do serviço de seu aplicativo por meio de seu suporte para a plataforma de desenvolvimento na Web ASP.NET Core mais recente. O ASP.NET Core é executado no .NET Core, a evolução mais recente do .NET Framework e o tempo de execução. Ele foi ajustado a fim de proporcionar um desempenho rápido, perfeito para instalações de pequeno porte e recriado para ser executado no Linux, macOS e também no Windows.
+ O Visual Studio para Mac facilita o desenvolvimento do serviço de seu aplicativo por meio de seu suporte para a plataforma de desenvolvimento na Web ASP.NET Core mais recente. O ASP.NET Core é executado no .NET Core, a evolução mais recente do .NET Framework e o runtime. Ele foi ajustado a fim de proporcionar um desempenho rápido, perfeito para instalações de pequeno porte e recriado para ser executado no Linux, macOS e também no Windows.
 
 ## <a name="installing-net-core"></a>Instalando o .NET Core
 
@@ -42,7 +42,7 @@ Selecione o **Aplicativo Web vazio ASP.NET Core** e pressione **Avançar**. Esco
 
 ![Nova exibição Projeto ASP.NET Core vazio](media/asp-net-core-2019-empty-project.png)
 
-O modelo ASP.NET Core Vazio cria um aplicativo Web com dois arquivos padrão: **Program.cs** e **Startup.cs**, que são explicados abaixo. Ele também cria uma pasta de Dependências, que contém as dependências do pacote NuGet do seu projeto, como ASP.NET Core, a estrutura .NET Core e os destinos do MSBuild que compilam o projeto:
+O modelo ASP.NET Core vazio cria um aplicativo Web com dois arquivos padrão: **Program.cs** e **Startup.cs**, que são explicados abaixo. Ele também cria uma pasta de Dependências, que contém as dependências do pacote NuGet do seu projeto, como ASP.NET Core, a estrutura .NET Core e os destinos do MSBuild que compilam o projeto:
 
 ![Painel de Soluções exibindo as dependências](media/asp-net-core-2019-solution-dependencies.png)
 
@@ -70,8 +70,8 @@ Um aplicativo ASP.NET Core cria um servidor Web em seu método principal configu
 
 No entanto, você também pode adicionar configurações adicionais, tais como:
 
-* `UseKestrel`: especifica que o servidor Kestrel será usado pelo aplicativo.
-* `UseContentRoot(Directory.GetCurrentDirectory())`: usa a pasta raiz do projeto Web como a raiz de conteúdo do aplicativo, quando ele é iniciado nesta pasta.
+* `UseKestrel`: especifica que o servidor Kestrel será usado pelo aplicativo
+* `UseContentRoot(Directory.GetCurrentDirectory())`: usa pasta raiz do projeto Web como a raiz de conteúdo do aplicativo ele for iniciado desta pasta
 * `.UseIISIntegration()`: especifica que o aplicativo funcionará com o IIS. Para usar o IIS com o ASP.NET Core, tanto `UseKestrel` quanto `UseIISIntegration` precisam ser especificados.
 
 ### <a name="startupcs"></a>Startup.cs
@@ -118,9 +118,9 @@ Você pode configurar delegados usando os métodos `Run`,`Map` e `Use` métodos 
 
 O método `Configure` do modelo criado previamente é composto para realizar algumas tarefas. Primeiro, ele configura uma página de tratamento de exceções para ser usada durante o desenvolvimento. Em seguida, ele envia uma resposta para a página da Web solicitante com um simples “Olá, Mundo”.
 
-Esse simples projeto Olá, Mundo agora pode ser executado sem adição de qualquer código adicional. Para executar o aplicativo e exibi-lo no seu navegador, pressione o botão Executar (Triangular) na barra de ferramentas:
+Esse simples projeto Olá, Mundo agora pode ser executado sem adição de qualquer código adicional. Para executar o aplicativo, você pode selecionar em qual navegador você deseja executar o aplicativo usando o menu suspenso à direita do botão reproduzir ou simplesmente pressionar o botão reproduzir (triangular) para usar o navegador padrão:
 
-![Executar o Aplicativo](media/asp-net-core-2019-run-debug.png)
+![Execução do navegador](media/asp-net-web-picker.png)
 
 O Visual Studio para Mac usa uma porta aleatória para iniciar o projeto Web. Para descobrir qual porta é essa, abra a Saída do Aplicativo, que é listada em **Exibir > Painéis**. Você deve encontrar uma saída semelhante ao que é mostrado abaixo:
 
@@ -135,7 +135,7 @@ Quando o projeto estiver em execução, seu navegador da Web padrão deve inicia
 Aplicativos ASP.NET Core usam o padrão de design MVC (Modelo-Exibição-Controlador) para fornecer uma separação lógica de responsabilidades para cada parte do aplicativo. O MVC consiste no seguinte:
 
 - **Modelo**: uma classe que representa os dados do aplicativo.
-- **Exibir**: exibe a interface do usuário do aplicativo, que muitas vezes são os dados de modelo.
+- **Exibição**: exibe a interface do usuário do aplicativo (que muitas vezes são os dados de modelo).
 - **Controlador**: uma classe que trata as solicitações do navegador, responde à entrada e interação do usuário.
 
 Para obter mais informações sobre como usar o MVC, consulte [Visão geral do guia de MVC do ASP.NET Core](/aspnet/core/mvc/overview).

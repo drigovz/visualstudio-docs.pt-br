@@ -6,17 +6,17 @@ helpviewer_keywords:
 - icons [Visual Studio], application
 - application properties [Visual Studio], icons
 - application icons [Visual Studio]
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1e137eda77f1807b80409872d9fe0c2966df2a41
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 7e78bd32bf9c21829adeb04a22cd30abb47a3379
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72656599"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596132"
 ---
 # <a name="how-to-specify-an-application-icon-visual-basic-c"></a>Como especificar um ícone do aplicativo (Visual Basic, C#)
 
@@ -39,7 +39,7 @@ A propriedade `Icon` pode ser acessada no painel **Aplicativo** do **Designer de
 
     **C#** &mdash; Próximo à lista **Ícone**, escolha o botão **\<Procurar...>** e navegue até o local do ícone de arquivo desejado.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Página Aplicativo, Designer de Projeto (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)
 - [Página Aplicativo, Designer de Projeto (C#)](../ide/reference/application-page-project-designer-csharp.md)

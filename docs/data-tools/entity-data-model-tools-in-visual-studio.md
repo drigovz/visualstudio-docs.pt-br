@@ -3,17 +3,17 @@ title: Entity Framework Tools
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 1b06b573-84aa-4458-b3f5-e238df47bf45
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 6efcd0ca4e8274df7667b5a5b2b75020def8c358
-ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
+ms.openlocfilehash: 4af96ad0f76414468fd194b7079b3c4dbdaf2a4c
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72807021"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586660"
 ---
 # <a name="entity-framework-tools-in-visual-studio"></a>Entity Framework Tools no Visual Studio
 
@@ -47,13 +47,13 @@ As ferramentas geram ou modificam um arquivo *. edmx* . Esse arquivo *. edmx* co
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
-| Título | Descrição |
+| Cargo | Descrição |
 | - | - |
 | [Entity Framework do ADO.NET](/dotnet/framework/data/adonet/ef/index) | Descreve como usar as ferramentas de [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)], que o [!INCLUDE[adonet_ef](../data-tools/includes/adonet_ef_md.md)] fornece, para criar aplicativos. |
 | [Modelo de Dados de Entidade](/dotnet/framework/data/adonet/entity-data-model) | Fornece links e informações para trabalhar com dados que são usados por aplicativos criados em [!INCLUDE[adonet_ef](../data-tools/includes/adonet_ef_md.md)]. |
 | [Documentação do Entity Framework (EF))](/ef/ef6/get-started) | Fornece um índice de vídeos, tutoriais e documentação avançada para ajudá-lo a aproveitar ao máximo Entity Framework. |
 | [ASP.NET 5 aplicativo para novo banco de dados](https://docs.efproject.net/en/latest/platforms/aspnetcore/new-db.html) | Descreve como criar um novo aplicativo ASP.NET 5 usando o Entity Framework 7. |
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Ferramentas de dados do Visual Studio para .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)

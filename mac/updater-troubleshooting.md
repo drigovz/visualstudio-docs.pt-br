@@ -7,12 +7,12 @@ ms.author: dominicn
 ms.date: 04/13/2019
 ms.technology: vs-ide-install
 ms.assetid: 31AF914A-C66B-4CD3-9429-39695E0E94AE
-ms.openlocfilehash: b25285ff3060734ee18085d7a9e89cd0d0c43439
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.openlocfilehash: 2ccef07a2889f66df3e7f217ea292b61ffc0008f
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74984408"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75405475"
 ---
 # <a name="troubleshooting-updater-has-errors-retrieving-information"></a>Solução de problemas: o atualizador tem erros ao recuperar informações
 
@@ -24,4 +24,5 @@ Em raras ocasiões, você poderá ver a mensagem de erro "Erro ao recuperar info
 - Se você continuar a ver essa mensagem de erro, também é possível tentar atualizar usando o instalador se o **.dmg** ainda estiver no seu computador ou baixe-o em [visualstudio.com](https://visualstudio.microsoft.com/vs/mac/)
   - O instalador atualizará todos os componentes instalados em seu computador.
   - Ao executar novamente o instalador, você também poderá instalar os componentes ausentes que não instalou anteriormente.
-- Você também pode tentar limpar arquivos baixados em cache, excluindo o arquivo localizado em `~/Library/Caches/VisualStudio/7.0/TempDownload/index.xml`.
+- Você também pode tentar limpar arquivos baixados em cache, excluindo o arquivo localizado em `~/Library/Caches/VisualStudio/8.0/TempDownload/index.xml`.
+- Se estiver trabalhando com uma versão mais antiga do Visual Studio para Mac, você poderá ter outros números de versão no diretório `VisualStudio`. Exclua o arquivo de `index.xml` nesses caminhos também.

@@ -6,17 +6,17 @@ helpviewer_keywords:
 - class diagrams, creating
 - Class Designer [Visual Studio], opening
 ms.assetid: 0eac1b54-2711-4e4b-9654-a0c429c08c8f
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 37f7a909196a3b345b39c006e9bf7cd6a52c9bde
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 87a6c1e996d820724138b6bf38c6440193a4c26b
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73188989"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75588831"
 ---
 # <a name="how-to-add-class-diagrams-to-projects"></a>Como adicionar diagramas de classe a projetos
 
@@ -59,7 +59,7 @@ Para adicionar vários diagramas de classes, repita as etapas deste procedimento
 
 No **Gerenciador de Soluções**, abra o menu de contexto de um arquivo de classe (clique com o botão direito do mouse) e escolha **Exibir em Diagrama de Classe**.
 
-\- ou -
+- ou -
 
 No **Modo de Exibição de Classe**, abra o namespace ou o menu de contexto de tipo e escolha **Exibir Diagrama de Classe**.
 
@@ -75,7 +75,7 @@ Um diagrama de classe populado automaticamente é criado.
 > [!NOTE]
 > O Designer de Classe não está disponível nos projetos .NET Core.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Como criar tipos usando o Designer de Classe](how-to-create-types.md)
 - [Como exibir tipos existentes](how-to-view-existing-types.md)

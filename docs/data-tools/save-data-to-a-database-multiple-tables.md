@@ -11,17 +11,17 @@ helpviewer_keywords:
 - saving data, walkthroughs
 - data [Visual Studio], updating
 ms.assetid: 7ebe03da-ce8c-4cbc-bac0-a2fde4ae4d07
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: bcb551cdcd5b2505c6ac536a440fcc3e70464bfb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8d4dd98a622a3aa09b2ec11f4f3521ce1839ce8c
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648202"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586244"
 ---
 # <a name="save-data-to-a-database-multiple-tables"></a>Salvar dados em um banco de dados (várias tabelas)
 
@@ -41,7 +41,7 @@ As tarefas ilustradas neste passo a passo incluem:
 
 - Modificando o código para enviar os dados atualizados no conjunto de dados de volta ao banco de dados.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>{1&gt;{2&gt;Pré-requisitos&lt;2}&lt;1}
 
 Este passo a passos usa SQL Server Express LocalDB e o banco de dados de exemplo Northwind.
 
@@ -79,7 +79,7 @@ Esta etapa cria uma fonte de dados com base em um banco de dados Northwind usand
 
     - Se uma conexão de dados com o banco de dados de exemplo Northwind estiver disponível na lista suspensa, selecione-o.
 
-         \- ou -
+         - ou -
 
     - Selecione **Nova Conexão** para abrir a caixa de diálogo **Adicionar/Modificar Conexão**.
 
@@ -109,7 +109,7 @@ Você pode criar controles de associação de dados arrastando itens da janela *
 
 1. Arraste o nó principal **Clientes** da janela **Fontes de Dados** para **Form1**.
 
-     Os controles de associação de dados com rótulos descritivos são exibidos no formulário, juntamente com uma faixa de ferramentas (<xref:System.Windows.Forms.BindingNavigator>) para registros de navegação. Um [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), `CustomersTableAdapter`, <xref:System.Windows.Forms.BindingSource> e <xref:System.Windows.Forms.BindingNavigator> aparecem na bandeja de componentes.
+     Os controles de associação de dados com rótulos descritivos são exibidos no formulário, juntamente com uma faixa de ferramentas (<xref:System.Windows.Forms.BindingNavigator>) para registros de navegação. Um [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), `CustomersTableAdapter`, <xref:System.Windows.Forms.BindingSource>e <xref:System.Windows.Forms.BindingNavigator> aparecem na bandeja de componentes.
 
 2. Arraste o nó **Ordens** relacionado da janela **Fontes de Dados** para **Form1**.
 
@@ -120,7 +120,7 @@ Você pode criar controles de associação de dados arrastando itens da janela *
 
 ## <a name="add-code-to-update-the-database"></a>Adicionar código para atualizar o banco de dados
 
-É possível atualizar os bancos de dados chamando os métodos `Update` dos TableAdapters **Clientes** e **Ordens**. Por padrão, um manipulador de eventos para o botão **salvar** do <xref:System.Windows.Forms.BindingNavigator> é adicionado ao código do formulário para enviar atualizações para o banco de dados. Esse procedimento modifica o código para enviar atualizações na ordem correta. Isso elimina a possibilidade de gerar erros de integridade referencial. O código também implementa manipulação de erros com a quebra automática da chamada de atualização em um bloco try-catch. Você pode mudar o código para atender às necessidades do seu aplicativo.
+É possível atualizar os bancos de dados chamando os métodos `Update` dos TableAdapters **Clientes** e **Ordens**. Por padrão, um manipulador de eventos para o botão **salvar** do<xref:System.Windows.Forms.BindingNavigator> é adicionado ao código do formulário para enviar atualizações para o banco de dados. Esse procedimento modifica o código para enviar atualizações na ordem correta. Isso elimina a possibilidade de gerar erros de integridade referencial. O código também implementa manipulação de erros com a quebra automática da chamada de atualização em um bloco try-catch. Você pode mudar o código para atender às necessidades do seu aplicativo.
 
 > [!NOTE]
 > Para maior clareza, este passo a passos não usa uma transação. No entanto, se você estiver atualizando duas ou mais tabelas relacionadas, inclua toda a lógica de atualização em uma transação. Uma transação é um processo que garante que todas as alterações relacionadas a um banco de dados sejam bem-sucedidas antes que as alterações sejam confirmadas. Para obter mais informações, consulte [Transações e simultaneidade](/dotnet/framework/data/adonet/transactions-and-concurrency).
@@ -144,6 +144,6 @@ Você pode criar controles de associação de dados arrastando itens da janela *
 
 4. Confira os valores no banco de dados para verificar se as alterações foram salvas.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Salvar dados de volta no banco de dados](../data-tools/save-data-back-to-the-database.md)

@@ -8,31 +8,31 @@ helpviewer_keywords:
 - database files, creating
 - table designer
 ms.assetid: 99c2b06f-47aa-414e-8057-a3453712fd23
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 14d30a366c7400b05a713f146e602ae9ccd7e766
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c8fa89b2cf6eb5afdf1d09a9b4de60cdc9ca11f2
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648671"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586881"
 ---
 # <a name="create-a-database-and-add-tables-in-visual-studio"></a>Criar um banco de dados e adicionar tabelas no Visual Studio
 
 Você pode usar o Visual Studio para criar e atualizar um arquivo de banco de dados local no SQL Server Express LocalDB. Você também pode criar um banco de dados executando instruções Transact-SQL na janela de ferramentas do **pesquisador de objetos do SQL Server** no Visual Studio. Neste tópico, vamos criar um arquivo *. MDF* e adicionar tabelas e chaves usando o designer de tabela.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>{1&gt;{2&gt;Pré-requisitos&lt;2}&lt;1}
 
-Para concluir este passo a passos, você precisará do **desenvolvimento de área de trabalho do .net** e de armazenamento de **dados e** cargas de trabalho de processamento instalados no Visual Studio. Para instalá-los, abra **instalador do Visual Studio** e escolha **Modificar** (ou **mais**  > **Modificar**) ao lado da versão do Visual Studio que você deseja modificar.
+Para concluir este passo a passos, você precisará do **desenvolvimento de área de trabalho do .net** e de armazenamento de **dados e** cargas de trabalho de processamento instalados no Visual Studio. Para instalá-los, abra **instalador do Visual Studio** e escolha **Modificar** (ou **mais** > **Modificar**) ao lado da versão do Visual Studio que você deseja modificar.
 
 ## <a name="create-a-project-and-a-local-database-file"></a>Criar um projeto e um arquivo de banco de dados local
 
 1. Crie um novo projeto de **aplicativo Windows Forms** e nomeie-o **SampleDatabaseWalkthrough**.
 
-2. Na barra de menus, selecione **projeto**  > **Adicionar novo item**.
+2. Na barra de menus, selecione **projeto** > **Adicionar novo item**.
 
 3. Na lista de modelos de item, role para baixo e selecione **banco de dados baseado em serviço**.
 
@@ -42,7 +42,7 @@ Para concluir este passo a passos, você precisará do **desenvolvimento de áre
 
 ### <a name="add-a-data-source"></a>Adicionar uma fonte de dados
 
-1. Se a **janela fontes de dados** não estiver aberta, abra-a pressionando **Shift** +**ALT** +**D** ou selecionando **Exibir**  >  outras**fontes de dados** do**Windows**  >  na barra de menus.
+1. Se a **janela fontes de dados** não estiver aberta, abra-a pressionando **Shift**+**ALT**+**D** ou selecionando **Exibir** > outras **fontes de dados** do **Windows** > na barra de menus.
 
 1. Na janela **fontes de dados** , selecione **Adicionar nova fonte de dados**.
 
@@ -64,9 +64,9 @@ Para concluir este passo a passos, você precisará do **desenvolvimento de áre
 
 Você pode exibir a cadeia de conexão para o arquivo *SampleDatabase. MDF* abrindo o janela Propriedades da conexão de dados:
 
-- Selecione **exibir**  > **pesquisador de objetos do SQL Server** para abrir a janela **pesquisador de objetos do SQL Server** . Expanda **(LocalDB) \MSSQLLocalDB**  > **bancos de dados**e clique com o botão direito do mouse em *SampleDatabase. MDF* e selecione **Propriedades**.
+- Selecione **exibir** > **pesquisador de objetos do SQL Server** para abrir a janela **pesquisador de objetos do SQL Server** . Expanda **(LocalDB) \MSSQLLocalDB** > **bancos de dados**e clique com o botão direito do mouse em *SampleDatabase. MDF* e selecione **Propriedades**.
 
-- Como alternativa, você pode selecionar **exibir**  > **Gerenciador de servidores**, se essa janela ainda não estiver aberta. Abra o janela Propriedades expandindo o nó **conexões de dados** , clicando com o botão direito do mouse em *SampleDatabase. MDF*e, em seguida, selecionando **Propriedades**.
+- Como alternativa, você pode selecionar **exibir** > **Gerenciador de servidores**, se essa janela ainda não estiver aberta. Abra o janela Propriedades expandindo o nó **conexões de dados** , clicando com o botão direito do mouse em *SampleDatabase. MDF*e, em seguida, selecionando **Propriedades**.
 
   > [!TIP]
   > Se você não puder expandir o nó conexões de dados, ou se a conexão SampleDatabase. MDF não estiver listada, selecione o botão **conectar ao Database** na barra de ferramentas Gerenciador de servidores. Na caixa de diálogo **Adicionar conexão** , certifique-se de que **Microsoft SQL Server arquivo de banco** de dados esteja selecionado em **fonte de dados**e, em seguida, navegue até e selecione o arquivo SampleDatabase. MDF. Conclua a adição da conexão selecionando **OK**.
@@ -180,8 +180,8 @@ Nesta seção, você criará duas tabelas, uma chave primária em cada tabela e 
     > [!IMPORTANT]
     > Verifique se todas as IDs e as quantidades de pedido são inteiros e se cada ID do cliente corresponde a um valor especificado na coluna **CustomerID** da tabela Clientes.
 
-7. Na barra de menus, selecione **arquivo**  > **salvar tudo**.
+7. Na barra de menus, selecione **arquivo** > **salvar tudo**.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Acessando dados no Visual Studio](accessing-data-in-visual-studio.md)

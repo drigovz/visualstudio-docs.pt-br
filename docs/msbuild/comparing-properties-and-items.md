@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - msbuild, msbuild properties
 ms.assetid: b9da45ae-d6a6-4399-8628-397deed31486
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8217a6aa349a31921ed454e76ddea306785dea9d
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
-ms.translationtype: HT
+ms.openlocfilehash: 51f7f65dd4e4d1922663ea020e55f551245a7444
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67825900"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596119"
 ---
 # <a name="compare-properties-and-items"></a>Comparar propriedades e itens
 Itens e propriedades do MSBuild são usados para passar informações para tarefas, avaliar condições e armazenar os valores que podem ser referenciadas em todo o arquivo de projeto.
@@ -53,7 +53,7 @@ A propriedade `BuildDependsOn` normalmente é usada como o argumento de um atrib
 
 adiciona o destino CustomBuild à lista de destinos, dando a `BuildDependsOn` o valor `BeforeBuild;CoreBuild;AfterBuild;CustomBuild`.
 
-A partir do MSBuild 4.0, a injeção de dependência de destino é preterida. Em vez disso, use os atributos `AfterTargets` e `BeforeTargets`. Para saber mais, confira [Ordem de build de destino](../msbuild/target-build-order.md).
+A partir do MSBuild 4.0, a injeção de dependência de destino é preterida. Em vez disso, use os atributos `AfterTargets` e `BeforeTargets`. Para obter mais informações, confira [Ordem de build de destino](../msbuild/target-build-order.md).
 
 ### <a name="conversions-between-strings-and-item-lists"></a>Conversões entre cadeias de caracteres e listas de itens
 O MSBuild executa conversões em e de tipos de item e valores de cadeias de caracteres conforme necessário. Para ver como uma lista de itens pode se tornar um valor de cadeia de caracteres, considere o que acontece quando um tipo de item é usado como o valor de uma propriedade do MSBuild:
@@ -67,7 +67,7 @@ O MSBuild executa conversões em e de tipos de item e valores de cadeias de cara
 </PropertyGroup>
 ```
 
-O tipo de item OutputDir tem um atributo `Include` com o valor "KeyFiles\\;Certificates\\". O MSBuild analisa essa cadeia de caracteres em dois itens: Keyfiles e Certificates\\. Quando o tipo de item OutputDir é usado como o valor da propriedade OutputDirList, o MSBuild converte ou mescla o tipo de item na cadeia de caracteres separados por ponto-e-vírgula "KeyFiles\\;Certificates\\".
+O tipo de item OutputDir tem um atributo `Include` com o valor "KeyFiles\\;Certificates\\". O MSBuild analisa essa cadeia de caracteres em dois itens: KeyFiles e Certificates\\. Quando o tipo de item OutputDir é usado como o valor da propriedade OutputDirList, o MSBuild converte ou mescla o tipo de item na cadeia de caracteres separados por ponto-e-vírgula "KeyFiles\\;Certificates\\".
 
 ## <a name="properties-and-items-in-tasks"></a>Propriedades e itens em tarefas
 As propriedades e os itens são usados como entradas e saídas para tarefas do MSBuild. Para obter mais informações, consulte [Tarefas](../msbuild/msbuild-tasks.md).
@@ -178,5 +178,5 @@ O valor de `KeyFileVersion` é definido como "1.0.0.3" e não como "\@(KeyFile->
 KeyFileVersion: 1.0.0.3
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 - [Conceitos avançados](../msbuild/msbuild-advanced-concepts.md)

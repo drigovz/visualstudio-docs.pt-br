@@ -2,17 +2,17 @@
 title: Diretiva de assembly T4
 ms.date: 11/04/2016
 ms.topic: reference
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f605748d4bda13567713b646f0232d684ec46fe1
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 8d441d74d1ddea5a7b5dd063d302ec93e75fc1c9
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748180"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591886"
 ---
 # <a name="t4-assembly-directive"></a>Diretiva de assembly T4
 
@@ -88,6 +88,6 @@ Em um modelo de texto de tempo de design do Visual Studio, a diretiva `assembly`
 <#@ assembly name="$(myLibFolder)\MyLib.dll" #>
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Diretiva de inclusão T4](../modeling/t4-include-directive.md)

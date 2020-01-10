@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - Project Designer, Application page
 - Application page in Project Designer
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: cc28c4b6585c52bca084234b8d21f211b4209b87
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ef9a38fc13d0d9c9f6b912f4cb2b83971d105c29
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72651979"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595820"
 ---
 # <a name="application-page-project-designer-c"></a>Página Aplicativo, Designer de Projeto (C#)
 
@@ -28,7 +28,7 @@ Para acessar a página **Aplicativo**, escolha um nó de projeto (não o nó **S
 
 [!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]
 
-## <a name="general-application-settings"></a>Configurações Gerais de Aplicativos
+## <a name="general-application-settings"></a>Configurações gerais de aplicativos
 
 As opções a seguir permitem definir as configurações gerais para o aplicativo.
 

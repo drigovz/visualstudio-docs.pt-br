@@ -25,6 +25,7 @@
 ## [Criando Novos Projetos](create-new-projects.md)
 ## [Adicionando e removendo itens de projeto](add-and-remove-project-items.md)
 ## [Gerenciamento de soluções e propriedades do projeto](managing-solutions-and-project-properties.md)
+## [Multiplataforma](project-multitargeting.md)
 ## Gerenciando referências em um projeto
 ### [Visão geral](managing-references-in-a-project.md)
 ### [Passo a passo – incluindo um pacote do NuGet em seu projeto](nuget-walkthrough.md)
@@ -35,6 +36,8 @@
 ## [Recursos do Editor](source-editor.md)
 ## [Refatoração](refactoring.md)
 ## [IntelliSense](intellisense.md)
+## [Mostrar Itens de Importação](show-imports.md)
+## [Edição com vários cursores](multi-caret-editing.md)
 ## [Comentários](comments.md)
 ## [Comportamento do Editor](editor-behavior.md)
 ## [Comentários da Tarefa](task-comments.md)
@@ -47,6 +50,7 @@
 # Depuração
 ## [Visão geral](debugging.md)
 ## [Visualizações de dados](data-visualizations.md)
+## [Depuração de pacotes NuGet com o link de origem](source-link.md)
 
 # Compilando e criando
 ## [Visão geral](compiling-and-building.md)
@@ -77,6 +81,7 @@
 ### [Introdução ao ASP.NET Core](asp-net-core.md)
 ### [Como criar aplicativos ASP.NET Core no Visual Studio para Mac](building-asp-net-core.md)
 ### [Razor](razor.md)
+### [Blazor](blazor.md)
 ### [JavaScript e TypeScript](javascript.md)
 ### [launchSettings.json](launch-settings.md)
 ## Azure

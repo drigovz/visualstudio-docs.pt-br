@@ -9,17 +9,17 @@ helpviewer_keywords:
 - datasets [Visual Basic], editing data
 - data [Visual Studio], editing in datasets
 ms.assetid: 50d5c580-fbf7-408f-be70-e63ac4f4d0eb
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 98b19d889ab9afc651939b27120ad132d8332c14
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b51b5b4be12f76e2237ff93659617e1c1843722a
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648506"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586647"
 ---
 # <a name="edit-data-in-datasets"></a>Editar dados em conjuntos de dados
 Você edita dados em tabelas de dados da mesma forma que edita os dados em uma tabela em qualquer banco de dado. O processo pode incluir inserção, atualização e exclusão de registros na tabela. Em um formulário vinculado a dados, você pode especificar quais campos são editáveis pelo usuário. Nesses casos, a infraestrutura de ligação de dados lida com todo o controle de alterações para que as alterações possam ser enviadas de volta para o banco mais tarde. Se você fizer edições programaticamente nos dados e pretende enviar essas alterações de volta ao banco de dado, deverá usar os objetos e métodos que fazem o controle de alterações para você.
@@ -70,7 +70,7 @@ Quando são feitas alterações nos registros em um conjunto de dados, as inform
 
 As alterações são controladas de duas maneiras em cada linha de dados:
 
-- Cada linha de dados contém informações relacionadas à sua <xref:System.Data.DataRow.RowState%2A> (por exemplo, <xref:System.Data.DataRowState.Added>, <xref:System.Data.DataRowState.Modified>, <xref:System.Data.DataRowState.Deleted> ou <xref:System.Data.DataRowState.Unchanged>).
+- Cada linha de dados contém informações relacionadas à sua <xref:System.Data.DataRow.RowState%2A> (por exemplo, <xref:System.Data.DataRowState.Added>, <xref:System.Data.DataRowState.Modified>, <xref:System.Data.DataRowState.Deleted>ou <xref:System.Data.DataRowState.Unchanged>).
 
 - Cada linha de dados alterada contém várias versões dessa linha (<xref:System.Data.DataRowVersion>), a versão original (antes das alterações) e a versão atual (após as alterações). Durante o período em que uma alteração está pendente (a hora em que você pode responder ao evento <xref:System.Data.DataTable.RowChanging>), uma terceira versão — a versão proposta — também está disponível.
 
@@ -98,7 +98,7 @@ O exemplo a seguir mostra como verificar um conjunto de registros chamado `North
 [!code-vb[VbRaddataEditing#13](../data-tools/codesnippet/VisualBasic/edit-data-in-datasets_6.vb)]
 
 ## <a name="to-locate-rows-that-have-errors"></a>Para localizar linhas com erros
-Ao trabalhar com colunas individuais e linhas de dados, você pode encontrar erros. Você pode verificar a propriedade `HasErrors` para determinar se há erros em um <xref:System.Data.DataSet>, <xref:System.Data.DataTable> ou <xref:System.Data.DataRow>.
+Ao trabalhar com colunas individuais e linhas de dados, você pode encontrar erros. Você pode verificar a propriedade `HasErrors` para determinar se há erros em um <xref:System.Data.DataSet>, <xref:System.Data.DataTable>ou <xref:System.Data.DataRow>.
 
 1. Verifique a propriedade `HasErrors` para ver se há erros no conjunto de um.
 
@@ -107,6 +107,6 @@ Ao trabalhar com colunas individuais e linhas de dados, você pode encontrar err
 [!code-csharp[VbRaddataEditing#23](../data-tools/codesnippet/CSharp/edit-data-in-datasets_7.cs)]
 [!code-vb[VbRaddataEditing#23](../data-tools/codesnippet/VisualBasic/edit-data-in-datasets_7.vb)]
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Ferramentas de conjunto de dados no Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)

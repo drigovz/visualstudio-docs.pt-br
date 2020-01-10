@@ -15,17 +15,17 @@ helpviewer_keywords:
 - dependency graphs, customizing
 - graph documents, grouping nodes
 - dependency graphs, assigning categories and properties
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ace7da233f135aa795d73d43a5e10e411c0d646f
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 2b79fd73713de535c11062fd6396abde6b1a0131
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748475"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590508"
 ---
 # <a name="customize-code-maps-by-editing-the-dgml-files"></a>Personalizar mapa de códigos editando os arquivos DGML
 
@@ -286,33 +286,33 @@ Edite o arquivo. dgml do mapa de código em um editor de texto ou XML. Se o mapa
 
     Essa expressão usa a seguinte sintaxe BNF (Backus-Naur Form):
 
-    \<Expression >:: = \<BinaryExpression > &#124; \<UnaryExpression > &#124; "(" \<Expression > ")" &#124; \<MemberBindings > &#124; &#124; \<Literal > 1Number >
+    Expressão de \<>:: = \<Binaryy &#124; > \<unário &#124; > "("\<Expression > ") &#124; " \<MemberBindings &#124; > \<literal &#124; > o número \<
 
-    \<BinaryExpression >:: = \<Expression > \<Operator > \<Expression >
+    \<Binaryion >:: = expressão de \<> operador \<> \<expressão >
 
-    \<UnaryExpression >:: = "!"  \<Expression > &#124; "+" \<Expression > &#124; "-" \<Expression >
+    \<unário >:: = "!" \<expressão > &#124; "+" \<expressão > &#124; "-" \<expressão >
 
-    \<Operator >:: = "<" &#124; "\< =" &#124; "" = &#124; "" > = &#124; "" > &#124; ""! = &#124; "" ou &#124; "" e &#124; "" + &#124; "" * &#124; ""/ &#124; ""-"
+    operador de \<>:: = "< &#124; " "\<= &#124; " "" &#124; = "" > &#124; = "" &#124; > ""! &#124; = "" &#124; ou "" &#124; e "" &#124; + "" &#124; * "" &#124; /""-"
 
-    \<MemberBindings >:: = \<MemberBindings > &#124; \<MemberBinding > "."  \<MemberBinding >
+    \<MemberBindings >:: = \<MemberBindings > &#124; \<MemberBinding > "." \<MemberBinding >
 
     \<MemberBinding >:: = \<MethodCall > &#124; \<PropertyGet >
 
-    \<MethodCall >:: = \<Identifier > "(" \<MethodArgs > ")"
+    \<MethodCall >:: = \<identificador > "(" \<MethodArgs > ")"
 
     \<PropertyGet >:: = identificador
 
-    \<MethodArgs >:: = \<Expression > &#124; \<Expression > "," \<MethodArgs &#124; > \<empty
+    \<MethodArgs >:: = \<expressão > &#124; \<expressão > "," \<MethodArgs &#124; > \<vazio >
 
-    \<Identifier >:: = [^. ]*
+    Identificador de \<>:: = [^. ]*
 
-    \<Literal >:: = literal de cadeia de caracteres com aspas simples ou duplas
+    literal de \<>:: = literal de cadeia de caracteres com aspas simples ou duplas
 
-    \<Number >:: = cadeia de dígitos com um ponto decimal opcional
+    Número de \<>:: = cadeia de dígitos com o ponto decimal opcional
 
     Você pode especificar vários elementos `<Condition/>`, que devem ser todos verdadeiros para aplicar o estilo.
 
-3. Na próxima linha após o elemento `<Condition/>`, adicione um ou vários elementos `<Setter/>` para especificar um atributo `Property` e um atributo de `Value` fixo ou um atributo de `Expression` computado para aplicar ao mapa, elementos de código ou links que atendem à condição.
+3. Na próxima linha após o elemento `<Condition/>`, adicione um ou vários elementos `<Setter/>` para especificar um atributo `Property` e um atributo de `Value` fixo ou um atributo de `Expression` computado para aplicar ao mapa, aos elementos de código ou aos links que atendem à condição.
 
     Por exemplo:
 
@@ -638,7 +638,7 @@ Edite o arquivo. dgml do mapa de código em um editor de texto ou XML. Se o mapa
 
 5. Para exibir o elemento de código ou elementos de código referenciados do mapa, abra o menu de atalho para o elemento de código ou o link. Escolha **ir para referência** e, em seguida, o elemento de código.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Mapear as dependências nas soluções](../modeling/map-dependencies-across-your-solutions.md)
 - [Usar mapas de códigos para depurar aplicativos](../modeling/use-code-maps-to-debug-your-applications.md)

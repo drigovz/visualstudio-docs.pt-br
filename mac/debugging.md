@@ -1,29 +1,31 @@
 ---
-title: Depuração com Xamarin
+title: Depurando com Visual Studio para Mac
 description: A depuração é uma parte comum e necessária da programação. Como um IDE consolidado, o Visual Studio para Mac contém um pacote completo de recursos para facilitar a depuração. Desde depuração com segurança até a visualização de dados, este artigo explicará como usar todo o potencial de depuração no Visual Studio para Mac.
-author: jmatthiesen
-ms.author: jomatthi
-ms.date: 05/06/2018
+author: therealjohn
+ms.author: johmil
+ms.date: 12/13/2019
 ms.technology: vs-ide-debug
 ms.assetid: BB7A084D-9AC2-48B5-8076-6C8518796BBA
-ms.openlocfilehash: 58844d54000dbeb86548863510ecac63bfb2ade9
-ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
+ms.openlocfilehash: 8a12880c25e980d668351ef4c24ced1e479577d4
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73716970"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75397982"
 ---
-# <a name="debugging-with-xamarin"></a>Depuração com Xamarin
+# <a name="debugging-with-visual-studio-for-mac"></a>Depurando com Visual Studio para Mac
 
-O Visual Studio para Mac tem um depurador nativo para dar suporte à depuração de aplicativos Xamarin.iOS, Xamarin.Mac e Xamarin.Android.
+Visual Studio para Mac tem depuradores com suporte para aplicativos .Net Core, .NET Framework, Unity e Xamarin.
 
 O Visual Studio para Mac usa o [*Mono Soft Debugger*](https://www.mono-project.com/docs/advanced/runtime/docs/soft-debugger/), que foi implementado no runtime Mono, permitindo que o Visual Studio para Mac depure código gerenciado em todas as plataformas.
 
 ## <a name="the-debugger"></a>O depurador
 
-O Visual Studio para Mac usa o Mono Soft Debugger para depurar código gerenciado (C# ou F#) em todos os aplicativos Xamarin. O depurador Mono Soft é diferente de depuradores comuns, pois ele é um depurador cooperativo interno do runtime Mono; o código gerado e o runtime Mono operam junto com o IDE para fornecer uma experiência de depuração. O runtime Mono expõe a funcionalidade de depuração por meio de um protocolo de transmissão, sobre o qual você pode conhecer mais [na documentação do Mono](https://www.mono-project.com/docs/advanced/runtime/docs/soft-debugger-wire-format/).
+O Visual Studio para Mac usa o Mono Soft Debugger para depurar código gerenciado (C# ou F#) em todos os aplicativos Xamarin. O soft Debugger do Mono é diferente dos depuradores regulares, pois é um depurador cooperativo criado no tempo de execução do mono; o código gerado e o tempo de execução mono cooperam com o IDE para fornecer uma experiência de depuração. O runtime Mono expõe a funcionalidade de depuração por meio de um protocolo de transmissão, sobre o qual você pode conhecer mais [na documentação do Mono](https://www.mono-project.com/docs/advanced/runtime/docs/soft-debugger-wire-format/).
 
 Depuradores inflexíveis, como o [LLDB]( http://lldb.llvm.org/index.html) ou o [GDB]( https://www.gnu.org/software/gdb/), controlam um programa sem o conhecimento ou a cooperação do programa depurado, mas ainda podem ser úteis ao depurar aplicativos Xamarin caso você precise depurar código Android ou iOS nativo.
+
+Para aplicativos .NET Core e ASP.NET Core, Visual Studio para Mac usa o depurador do .NET Core. Esse depurador também é um depurador cooperativo e funciona com o tempo de execução do .NET.
 
 ## <a name="using-the-debugger"></a>Usando o depurador
 
@@ -31,7 +33,7 @@ Para iniciar a depuração de qualquer aplicativo, sempre verifique se a configu
 
 ![Configuração de depuração](media/debugging-image_0.png)
 
-## <a name="setting-a-breakpoint"></a>Configurando um ponto de interrupção
+## <a name="setting-a-breakpoint"></a>Definindo um ponto de interrupção
 
 Para definir um ponto de interrupção no IDE, clique na área de margem do editor ao lado do número de linha do código que você deseja interromper:
 
@@ -43,9 +45,10 @@ Você pode exibir todos os pontos de interrupção definidos em seu código indo
 
 ## <a name="start-debugging"></a>Iniciar a depuração
 
-Para iniciar a depuração, selecione o dispositivo de destino ou um dispositivo semelhante/emulador no IDE:
+Para iniciar a depuração, selecione o navegador de destino, o dispositivo ou o simulador/emulador:
 
-![Selecione o dispositivo de destino](media/debugging-image1.png)
+![](media/debugging-image_0.png)
+de configuração de depuração ![selecionar dispositivo de destino](media/debugging-image1.png)
 
 Em seguida, implante seu aplicativo pressionando o botão **Executar** ou **Cmd + Enter**. Quando você atingir um ponto de interrupção, o código será realçado em amarelo:
 
@@ -90,10 +93,10 @@ Os produtos Xamarin são fornecidos com o código-fonte para bibliotecas de clas
 
 Como esse recurso consome mais memória durante a depuração, ele fica desligado por padrão.
 
-Para habilitar esse recurso, navegue para **Visual Studio para Mac > Preferências > Depurador** e verifique se a opção “**Depurar somente o código do projeto, não intervir no código da estrutura.** ” está **desmarcada**, como ilustrado abaixo:
+Para habilitar esse recurso, navegue até **Visual Studio para Mac preferências de > > depurador** e verifique se a opção "**etapa em código externo**" está **selecionada**, conforme ilustrado abaixo:
 
-![Opção Não intervir no código da estrutura](media/debugging-image8.png)
+![Opção entrar em código externo](media/debugging-image8.png)
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Depurando no Visual Studio (no Windows)](/visualstudio/debugger/)

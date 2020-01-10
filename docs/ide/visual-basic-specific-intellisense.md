@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IntelliSense [Visual Basic]
 - IntelliSense [Visual Studio], Visual Basic
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fa21939375956024a0ca16cadd99160d142a1d5d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 118de9ec05bcd5c56376376619bea0c5148d36ab
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647265"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594182"
 ---
 # <a name="intellisense-for-visual-basic-code-files"></a>IntelliSense para arquivos de código do Visual Basic
 
@@ -55,6 +55,6 @@ Para obter mais informações, consulte [Segurança de acesso do código para ap
 
 No Visual Basic, as listas de conclusão do IntelliSense têm dois controles de guia localizados na parte inferior das listas. A guia **Comum**, que é selecionada por padrão, exibe itens que são usados com maior frequência para completar a instrução que você está escrevendo. A guia **Todos** exibe todos os itens disponíveis para preenchimento automático, incluindo aqueles que também estão na guia **Comum**.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Usar o IntelliSense](../ide/using-intellisense.md)

@@ -14,17 +14,17 @@ helpviewer_keywords:
 - HostInBrowser property (MSBuild)
 - GenerateApplicationManifest task [MSBuild]
 ms.assetid: a494102b-0cb2-4755-8e2a-d2c0f39fac1d
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 86593ca3ac437b9a36fb671694898a7d80434eba
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 446f4728f92d5a486afea1a7c03c8d5006690bfc
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63003627"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589299"
 ---
 # <a name="generateapplicationmanifest-task"></a>Tarefa GenerateApplicationManifest
 Gera um manifesto do aplicativo ou um manifesto nativo [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]. Um manifesto nativo descreve um componente definindo uma identidade exclusiva para ele e identificando todos os assemblies e arquivos que compõem o componente. Um manifesto do aplicativo [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] estende um manifesto nativo indicando o ponto de entrada do aplicativo e especificando o nível de segurança do aplicativo.
@@ -349,7 +349,7 @@ Este exemplo produz *Test.exe.manifest*, tornando o aplicativo XCOPY implantáve
 </Project>
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 - [Tarefas](../msbuild/msbuild-tasks.md)
 - [Tarefa GenerateDeploymentManifest](../msbuild/generatedeploymentmanifest-task.md)
 - [Tarefa SignFile](../msbuild/signfile-task.md)

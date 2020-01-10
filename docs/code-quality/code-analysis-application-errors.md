@@ -8,17 +8,17 @@ helpviewer_keywords:
 - managed code, code analysis errors
 - code analysis, policy errors
 ms.assetid: d8fd9475-ac9b-4085-b5a3-b0c807922cac
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 13a5322fa4b55d29d791f4aef99037c79d67fa45
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c35ba03c2f93af0705910b8f89dd835c985e3e60
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72610838"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587778"
 ---
 # <a name="code-analysis-application-errors"></a>Erros do aplicativo de análise de código
 
@@ -33,7 +33,7 @@ Esta seção é uma referência das mensagens de erro geradas pela ferramenta de
 |[CA0052](ca0052.md)|Nenhum destino foi selecionado para análise.|
 |[CA0053](ca0053.md)|Não foi possível carregar o assembly da regra.|
 |[CA0054](ca0054.md)|Um assembly de regra personalizado tem recursos XML inválidos.|
-|[CA0055](ca0055.md)|Não foi possível carregar o arquivo: \<path >|
+|[CA0055](ca0055.md)|Não foi possível carregar o arquivo: caminho de\<|
 |[CA0056](ca0056.md)|Um arquivo de projeto tem uma versão incorreta da ferramenta de análise.|
 |[CA0057](ca0057.md)|As violações não podem ser mapeadas para o conjunto atual de destinos e regras.|
 |[CA0058](ca0058.md)|Não é possível carregar assemblies referenciados.|

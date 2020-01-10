@@ -7,17 +7,17 @@ helpviewer_keywords:
 - tasks, creating for MSBuild
 - MSBuild, creating tasks
 ms.assetid: 3ebc5f87-8f00-46fc-82a1-228f35a6823b
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9cf7f82d628c0c093e0d807920b379263c20ff0b
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 369584a815f671c8b7b4f8a99a5280626b493104
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71238191"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594988"
 ---
 # <a name="task-writing"></a>Produção de tarefas
 Tarefas fornecem o código que é executado durante o processo de compilação. Tarefas estão contidas nos destinos. Uma biblioteca de tarefas típicas está incluída no [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] e você também pode criar suas próprias tarefas. Para saber mais sobre a biblioteca de tarefas incluída no [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], confira [Referência de tarefas](../msbuild/msbuild-task-reference.md).
@@ -141,9 +141,9 @@ public string RequiredProperty { get; set; }
 
  O atributo `[Required]` é definido por <xref:Microsoft.Build.Framework.RequiredAttribute> no namespace <xref:Microsoft.Build.Framework>.
 
-## <a name="how-includevstecmsbuildextensibilityinternalsincludesvstecmsbuild_mdmd-invokes-a-task"></a>Como [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] o invoca uma tarefa
+## <a name="how-includevstecmsbuildextensibilityinternalsincludesvstecmsbuild_mdmd-invokes-a-task"></a>Como [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] invoca uma tarefa
 
-Ao invocar uma tarefa, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] primeiro instancia a classe Task e, em seguida, chama os setters de Propriedade do objeto para os parâmetros de tarefa que são definidos no elemento Task no arquivo do projeto. Se o elemento Task não especificar um parâmetro ou se a expressão especificada no elemento for avaliada como uma cadeia de caracteres vazia, o setter da propriedade não será chamado.
+Ao invocar uma tarefa, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] primeiro instancia a classe Task e, em seguida, chama os setters de Propriedade do objeto para os parâmetros de tarefa que são definidos no elemento Task no arquivo de projeto. Se o elemento Task não especificar um parâmetro ou se a expressão especificada no elemento for avaliada como uma cadeia de caracteres vazia, o setter da propriedade não será chamado.
 
 Por exemplo, no projeto
 
@@ -163,7 +163,7 @@ Uma tarefa não deve depender de nenhuma ordem relativa da invocação de setter
 
 ### <a name="task-parameter-types"></a>Tipos de parâmetro de tarefa
 
-O [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] manipula nativamente as propriedades do tipo `string`, `bool` `ITaskItem` e `ITaskItem[]`. Se uma tarefa aceitar um parâmetro de um tipo diferente, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] <xref:System.Convert.ChangeType%2A> invocará a conversão de `string` (com todas as referências de item e Propriedade expandidas) para o tipo de destino. Se a conversão falhar para qualquer parâmetro de entrada [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] , emitirá um erro e não chamará o método `Execute()` da tarefa.
+O [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] controla nativamente as propriedades do tipo `string`, `bool`, `ITaskItem` e `ITaskItem[]`. Se uma tarefa aceitar um parâmetro de um tipo diferente, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] invocará <xref:System.Convert.ChangeType%2A> para converter de `string` (com todas as referências de item e Propriedade expandidas) para o tipo de destino. Se a conversão falhar para qualquer parâmetro de entrada, o [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] emitirá um erro e não chamará o método de `Execute()` da tarefa.
 
 ## <a name="example"></a>Exemplo
 
@@ -255,6 +255,6 @@ O exemplo a seguir mostra um arquivo de projeto invocando a tarefa de exemplo an
 </Project>
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Referência de tarefas](../msbuild/msbuild-task-reference.md)

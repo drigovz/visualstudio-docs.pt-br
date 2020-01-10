@@ -6,21 +6,21 @@ f1_keywords:
 - TypeBrowser.UI
 - ActivityTypeResolver.UI
 ms.assetid: 864b60b6-a070-4e5c-aa5b-a25341b57ea6
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5eac3c2a45f1e220415f7512e601f4bf034c4dd7
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: a526bc9504f4f63a7a135978ade02654bbe63ffd
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189804"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75597107"
 ---
 # <a name="browse-and-select-a-net-type-dialog-box"></a>Procurar e selecione uma caixa de diálogo de tipo do .NET
 
-Na janela **Propriedades** , caixas de diálogo ou designers como o designer de variável, quando você seleciona **procurar tipos** em uma lista de tipos de dados, é a caixa de diálogo **procurar e selecionar um tipo .net** (referenciado em um formulário abreviado como o "tipo" navegador "). Na caixa de diálogo, você pode escolher um tipo de um modo de exibição de árvore de assemblies e de projetos.
+Na janela **Propriedades** , caixas de diálogo ou designers como o designer de variável, quando você seleciona **procurar tipos** em uma lista de tipos de dados, é a caixa de diálogo **procurar e selecionar um tipo .net** (referenciado em uma forma abreviada como "navegador de tipo"). Na caixa de diálogo, você pode escolher um tipo de um modo de exibição de árvore de assemblies e de projetos.
 
 Esta caixa de diálogo é empregada em um número de cenários do usuário, incluindo o seguinte:
 
@@ -39,7 +39,7 @@ Esta caixa de diálogo é empregada em um número de cenários do usuário, incl
 
 1. Na caixa **nome do tipo** , digite o nome do tipo que você deseja usar.
 
-2. Realize um dos seguintes procedimentos:
+2. Siga um destes procedimentos:
 
     - Depois que o nome do tipo que você deseja usar aparecer na árvore na caixa nome do **tipo** , clique duas vezes no tipo para selecioná-lo.
 
@@ -73,6 +73,6 @@ Por exemplo:
 
 Ao selecionar um tipo de contrato de serviço, o navegador do tipo mostra somente os tipos que têm o atributo de <xref:System.ServiceModel.ServiceContractAttribute> .
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Usando os designers de atividade](control-flow-activity-designers.md)

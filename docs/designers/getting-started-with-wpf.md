@@ -3,17 +3,17 @@ title: O que é o WPF?
 ms.date: 04/16/2018
 ms.topic: conceptual
 ms.assetid: f3be98cb-870f-472c-9da5-cb815e4f6598
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b8cc1ea22c5cdbe85bf1d24d1641709c5fe5da7a
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: eb58a1a7bee7b07cc9b5434f7fa3e6bd295060d2
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73187137"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589533"
 ---
 # <a name="get-started-with-wpf"></a>Introdução ao WPF
 
@@ -23,7 +23,7 @@ Esta seção apresenta tópicos que servem como introdução e lhe ajudarão a c
 
 ## <a name="where-should-i-start"></a>Onde devo começar?
 
-|Assunto|Artigos|
+|Subject|Artigos|
 |-|-|
 |Desejo ir diretamente para...|[Passo a passo: Meu primeiro aplicativo da área de trabalho do WPF](/dotnet/framework/wpf/getting-started/walkthrough-my-first-wpf-desktop-application)|
 |Desejo comparar ferramentas de design XAML...|[Projetar XAML no Visual Studio e no Blend para Visual Studio](../xaml-tools/designing-xaml-in-visual-studio.md)|
@@ -31,7 +31,7 @@ Esta seção apresenta tópicos que servem como introdução e lhe ajudarão a c
 |Quero saber mais sobre o WPF...|[Visão geral do WPF](/dotnet/framework/wpf/introduction-to-wpf)<br /><br />[Visão geral do XAML (WPF)](/dotnet/framework/wpf/advanced/xaml-overview-wpf)<br /><br />[Controles](/dotnet/framework/wpf/controls/)<br /><br />[Visão geral da associação de dados](/dotnet/desktop-wpf/data/data-binding-overview)<br /><br />[Vinculação de dados do WPF com o LINQ to XML](/dotnet/framework/wpf/data/wpf-data-binding-with-linq-to-xml-overview)|
 |Você é um desenvolvedor de Windows Forms?|[Controles dos Windows Forms e controles do WPF equivalentes](/dotnet/framework/wpf/advanced/windows-forms-controls-and-equivalent-wpf-controls)<br /><br />[Cenários compatíveis em interoperação entre o WPF e o Windows Forms](/dotnet/framework/wpf/advanced/wpf-and-windows-forms-interoperation)|
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Guia da área de trabalho para WPF](/dotnet/desktop-wpf/overview/index)
 - [Biblioteca de classes (WPF)](/dotnet/framework/wpf/class-library-wpf)

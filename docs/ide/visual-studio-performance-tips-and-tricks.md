@@ -2,17 +2,17 @@
 title: Dicas para melhorar o desempenho
 ms.date: 08/14/2018
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ccf785cec859290cac0ebcf5c9685861bd2887e4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 950803d46d7b870804c2c8914f3c85b0b89e5732
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647144"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590664"
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Dicas e truques de desempenho do Visual Studio
 
@@ -107,13 +107,13 @@ Para obter mais informações sobre as considerações de desempenho do .NET Com
 
    ::: moniker range="vs-2017"
 
-    Para desabilitar as extensões, acesse **Ferramentas** > **Extensões e Atualizações** e desabilite uma extensão específica.
+    Para desabilitar extensões, vá para **ferramentas** > **extensões e atualizações**e desabilite uma extensão específica.
 
    ::: moniker-end
 
    ::: moniker range=">=vs-2019"
 
-    Para desabilitar as extensões, acesse **Extensões** >  **Gerenciar Extensões** e desabilite uma extensão específica.
+    Para desabilitar extensões, vá para **extensões** > **gerenciar extensões**e desabilite uma extensão específica.
 
    ::: moniker-end
 
@@ -137,7 +137,7 @@ Se forçar a coleta de lixo de forma confiável faz seu cenário funcionar, rela
 
 Para ver uma descrição detalhada do coletor de lixo CLR, consulte [Noções básicas da coleta de lixo](/dotnet/standard/garbage-collection/fundamentals).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Otimizar o desempenho do Visual Studio](../ide/optimize-visual-studio-performance.md)
 - [Load solutions faster (Carregar soluções mais rapidamente) (blog do Visual Studio)](https://devblogs.microsoft.com/visualstudio/load-solutions-faster-with-visual-studio-2017-version-15-6/)

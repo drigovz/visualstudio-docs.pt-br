@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language Tools, solution templates
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 110d357bd113913ab73990b8e3cfa12e4dd1cdae
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: b76b61bb0ff84d3e1f0948057b60f6f3fbb505ad
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748517"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590560"
 ---
 # <a name="choosing-a-domain-specific-language-solution-template"></a>Escolhendo um modelo de solução de linguagem específica do domínio
 Para criar uma solução de linguagem específica de domínio, escolha um dos modelos de solução que estão disponíveis no assistente de Designer de Linguagem Específica de Domínio. Ao escolher o modelo que mais se assemelha ao idioma que você deseja criar, você pode minimizar as modificações que precisa fazer na solução inicial.
@@ -31,6 +31,6 @@ Para criar uma solução de linguagem específica de domínio, escolha um dos mo
 |Designer de WPF mínimo|-Um modelo pequeno<br />-Um Windows Presentation Foundation interface do usuário que exibe o modelo|Use este modelo se desejar criar um aplicativo no qual uma DSL está associada a uma interface do usuário do WPF, em vez de um designer gráfico.<br /><br /> O designer da interface do usuário está na pasta Dsl\UI.<br /><br /> Você deve compilar o projeto antes de abrir o designer de interface do usuário.<br /><br /> Para obter mais informações, consulte [criando uma linguagem específica de domínio baseada em WPF](../modeling/creating-a-wpf-based-domain-specific-language.md).|
 |Biblioteca de DSL|-Uma biblioteca mínima|Use este modelo se desejar criar uma definição de DSL parcial que possa ser importada para outras definições de DSL.|
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Visão geral das Ferramentas de Linguagem Específica de Domínio](../modeling/overview-of-domain-specific-language-tools.md)

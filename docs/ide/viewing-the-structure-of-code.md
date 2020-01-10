@@ -20,17 +20,17 @@ helpviewer_keywords:
 - Visual Studio, call hierarchy window
 - class view
 - object browser
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0fc7ade360ac586f09eb838057251172be5d0e81
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b73a4660c9e0dad66ceb73c04852601765174264
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647302"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594195"
 ---
 # <a name="view-the-structure-of-code-using-different-tool-windows"></a>Exibir a estrutura do código usando janelas de ferramentas diferentes
 
@@ -224,6 +224,6 @@ O menu de atalho (ou clique com o botão direito do mouse) na janela de **defini
 
 É possível usar a janela **Estrutura de Tópicos do Documento** em conjunto com exibições de designer, como o designer de uma página XAML ou um designer do Windows Forms, ou com páginas HTML. Esta janela exibe os elementos em um modo de exibição de árvore para que você pode exibir a estrutura lógica do formulário ou página e localizar controles que estão incorporados profundamente ou ocultos.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Ícones do Pesquisador de Objetos e do Modo de Exibição de Classe](../ide/class-view-and-object-browser-icons.md)

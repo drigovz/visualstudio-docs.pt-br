@@ -1,5 +1,5 @@
 ---
-title: 'Como: Usar variáveis de ambiente em um build | Microsoft Docs'
+title: Como usar variáveis de ambiente em um build | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,19 +7,19 @@ helpviewer_keywords:
 - projects [.NET Framework], environment variables
 - MSBuild, environment variables
 ms.assetid: 7f9e4469-8865-4b59-aab3-3ff26bd36e77
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c3e79fdbadffadc188610523eeb505df0ffa15f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 4d66fb73972a81e421b6e7343e549b0ef3069001
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63412405"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75574412"
 ---
-# <a name="how-to-use-environment-variables-in-a-build"></a>Como: Usar variáveis de ambiente em um build
+# <a name="how-to-use-environment-variables-in-a-build"></a>Como usar variáveis de ambiente em um build
 Quando você compila projetos, geralmente é necessário definir opções de build usando informações que não estão no arquivo de projeto ou nos arquivos que compõem seu projeto. Normalmente, essas informações são armazenadas em variáveis de ambiente.
 
 ## <a name="reference-environment-variables"></a>Referenciar variáveis de ambiente
@@ -62,7 +62,7 @@ Quando você compila projetos, geralmente é necessário definir opções de bui
 </Project>
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 - [MSBuild](../msbuild/msbuild.md)
 - [Propriedades do MSBuild](../msbuild/msbuild-properties.md)
-- [Como: Compilar os mesmos arquivos de origem com opções diferentes](../msbuild/how-to-build-the-same-source-files-with-different-options.md)
+- [Como criar os mesmos arquivos de origem com opções diferentes](../msbuild/how-to-build-the-same-source-files-with-different-options.md)

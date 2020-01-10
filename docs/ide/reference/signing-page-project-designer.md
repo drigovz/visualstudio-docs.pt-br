@@ -15,17 +15,17 @@ helpviewer_keywords:
 - Project Designer, Signing page
 - Signing page in Project Designer
 ms.assetid: dab3ba13-2f92-4827-92bd-1be3c35bc48b
-author: mikejo5000
-ms.author: mikejo
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d4fa326d65606fd06d41fc5c697b80a526c1059
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
-ms.translationtype: HT
+ms.openlocfilehash: 516e2aaf4a55ad6422200f9fef1cbbf2d435af7b
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461289"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75597328"
 ---
 # <a name="signing-page-project-designer"></a>Página de Assinatura, Designer de Projeto
 
@@ -41,7 +41,7 @@ Para acessar a página **Assinatura**, selecione um nó do projeto no **Gerencia
 
 Caixa de seleção **Assinar os manifestos do ClickOnce**
 
-Marque essa caixa de seleção para assinar os manifestos do aplicativo e de implantação com um par de chaves pública/privada. Para obter mais informações sobre como fazer isso, confira [Como: Assinar manifestos de aplicativo e de implantação](../../ide/how-to-sign-application-and-deployment-manifests.md).
+Marque essa caixa de seleção para assinar os manifestos do aplicativo e de implantação com um par de chaves pública/privada. Para obter mais informações sobre como fazer isso, consulte [Como assinar manifestos do aplicativo e de implantação](../../ide/how-to-sign-application-and-deployment-manifests.md).
 
 Botão **Selecionar do Repositório**
 
@@ -73,9 +73,9 @@ Especifica o endereço de um servidor que gera carimbos de data/hora da assinatu
 
 Caixa de seleção **Assinar o assembly**
 
-Marque essa caixa de seleção para assinar o assembly e criar um arquivo de chave de nome forte. Para obter mais informações sobre como assinar um assembly usando o **Designer de Projeto**, confira [Como: Assinar um assembly (Visual Studio)](../managing-assembly-and-manifest-signing.md#how-to-sign-an-assembly-in-visual-studio).
+Marque essa caixa de seleção para assinar o assembly e criar um arquivo de chave de nome forte. Para obter mais informações sobre como assinar um assembly usando o **Designer de Projeto**, consulte [Como assinar um assembly (Visual Studio)](../managing-assembly-and-manifest-signing.md#how-to-sign-an-assembly-in-visual-studio).
 
-Essa opção usa a ferramenta Al.exe fornecida pelo Software Development Kit do Windows (SDK do Windows) para assinar o assembly. Para obter mais informações sobre os detalhes, confira [Como: Assinar um assembly com um nome forte](/dotnet/framework/app-domains/how-to-sign-an-assembly-with-a-strong-name).
+Essa opção usa a ferramenta Al.exe fornecida pelo Software Development Kit do Windows (SDK do Windows) para assinar o assembly. Para obter mais informações sobre o Al.exe, consulte [Como assinar um assembly com um nome forte](/dotnet/framework/app-domains/how-to-sign-an-assembly-with-a-strong-name).
 
 Lista **Escolher um arquivo de chave de nome forte**
 
@@ -98,11 +98,11 @@ Observe que um projeto com assinatura com atraso não será executado e não pod
 > [!NOTE]
 > Ao assinar um assembly, talvez você nem sempre tenha acesso a uma chave privada. Por exemplo, uma organização pode ter um par de chaves bem protegido ao qual os desenvolvedores não têm acesso todos os dias. A chave pública pode estar disponível, mas o acesso à chave privada é restrito a algumas pessoas. Nesse caso, é possível usar a *assinatura com atraso* ou *parcial* para fornecer a chave pública, adiando a adição da chave privada até a entrega do assembly.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Referência de Propriedades do Projeto](../../ide/reference/project-properties-reference.md)
 - [Gerenciando Assinatura de Assembly e Manifesto](../../ide/managing-assembly-and-manifest-signing.md)
-- [Como: Assinar manifestos de aplicativo e implantação](../../ide/how-to-sign-application-and-deployment-manifests.md)
-- [Como: Assinar um assembly (Visual Studio)](../managing-assembly-and-manifest-signing.md#how-to-sign-an-assembly-in-visual-studio)
-- [Como: Assinar um assembly com um nome forte](/dotnet/framework/app-domains/how-to-sign-an-assembly-with-a-strong-name)
+- [Como assinar manifestos de aplicativo e implantação](../../ide/how-to-sign-application-and-deployment-manifests.md)
+- [Como Assinar um Assembly (Visual Studio)](../managing-assembly-and-manifest-signing.md#how-to-sign-an-assembly-in-visual-studio)
+- [Como assinar um assembly com um nome forte](/dotnet/framework/app-domains/how-to-sign-an-assembly-with-a-strong-name)
 - [Assemblies de nomes fortes](/dotnet/framework/app-domains/strong-named-assemblies)

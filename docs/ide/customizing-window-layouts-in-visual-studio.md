@@ -18,17 +18,17 @@ helpviewer_keywords:
 - debug mode
 - custom layouts
 ms.assetid: 7517ff13-76de-4ecf-9c1b-eb9b7ff4d718
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f6ca1f34604c314fea6e90130b298be04f3a6189
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c1963c76b67eaedea4cdf013739c112275ecffb2
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652530"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596704"
 ---
 # <a name="customize-window-layouts-in-visual-studio"></a>Personalizar layouts de janela no Visual Studio
 
@@ -56,7 +56,7 @@ Os grupos de guias ampliam sua capacidade de gerenciar o workspace limitado ao t
 
 Quando é necessário exibir ou editar dois locais ao mesmo tempo em um documento, é possível dividir as janelas. Para dividir seu documento em duas seções de rolagem independente, clique em **Dividir** no menu **Janela**. Clique em **Remover Divisão** no menu **Janela** para restaurar o modo de exibição único.
 
-### <a name="toolbars"></a>Barras de ferramentas
+### <a name="toolbars"></a>{1&gt;Barras de ferramentas&lt;1}
 
 As barras de ferramentas podem ser organizadas arrastando ou usando a caixa de diálogo **Personalizar**. Para obter mais informações sobre como posicionar e personalizar barras de ferramentas, consulte [Como personalizar menus e barras de ferramentas](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md).
 
@@ -182,6 +182,6 @@ Para se lembrar de qual atalho de teclado foi atribuído a qual layout, escolha 
 
 Esses layouts usam perfis móveis automaticamente entre edições do Visual Studio e também entre instâncias do Blend em computadores separados e de qualquer edição Express para qualquer outra organização Express. No entanto, os layouts não usam perfis móveis entre o Visual Studio, o Blend e o Express.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Como mover-se no IDE](../ide/how-to-move-around-in-the-visual-studio-ide.md)

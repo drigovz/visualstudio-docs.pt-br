@@ -3,17 +3,17 @@ title: 'Passo a passo: usando XSLT IntelliSense'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 079d95ac-2eaf-4ae1-9cd3-2c81a961a942
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 606c4ad307de46d19989d14e2c660cc0286cb803
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: adeab012e78d5f49ca94d1d8135aaf491839c767
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72604372"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592432"
 ---
 # <a name="walkthrough-using-xslt-intellisense"></a>Passo a passo: usando XSLT IntelliSense
 
@@ -152,7 +152,7 @@ Essa explicação passo a passo demonstra como usar IntelliSense do XSLT para co
     </xsl:stylesheet>
     ```
 
-2. Insira o cursor após `<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:alt="http://www.w3.org/1999/XSL/Transform-alternate" version="1.0">` e pressione **Enter**. Inicie digitando o elemento `xsl:namespace-alias` a seguir:
+2. Insira o cursor após `<xsl:stylesheet version="1.0">` e pressione **Enter**. Inicie digitando o elemento `xsl:namespace-alias` a seguir:
 
     ```xml
     <xsl:namespace-alias stylesheet-prefix="alt" result-prefix="xsl"/>
@@ -160,6 +160,6 @@ Essa explicação passo a passo demonstra como usar IntelliSense do XSLT para co
 
      Observe como a lista de prefixos apareceu nos atributos `stylesheet-prefix` e `result-prefix` do elemento de `xsl:namespace-alias`.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Recursos do IntelliSense do editor de XML](../xml-tools/xml-editor-intellisense-features.md)

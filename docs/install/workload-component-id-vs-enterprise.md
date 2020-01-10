@@ -3,8 +3,8 @@ title: IDs de carga de trabalho e de componente do Visual Studio Enterprise
 titleSuffix: ''
 description: Use as IDs de carga de trabalho e de componente para instalar o Visual Studio usando a linha de comando ou para especificar como uma dependência em um manifesto do VSIX
 keywords: ''
-author: TerryGLee
-ms.author: tglee
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.date: 12/03/2019
 ms.topic: reference
@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: be73e3af-d87b-4d14-bd08-2e4bda074fb3
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 345a0c808c00281e1dcf10306520416eaa1eeafe
-ms.sourcegitcommit: af9bbf9116a63c0631ff2f4f3a878564aa63cd8c
+ms.openlocfilehash: 5fb488bf573e37b8961639b952debe1b999d039a
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "74797337"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75588467"
 ---
 # <a name="visual-studio-enterprise-component-directory"></a>Diretório de componentes do Visual Studio Enterprise
 
@@ -44,7 +44,7 @@ ms.locfileid: "74797337"
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 * [Carga de trabalho do Visual Studio e IDs do componente](workload-and-component-ids.md)
 * [Guia do administrador do Visual Studio](visual-studio-administrator-guide.md)

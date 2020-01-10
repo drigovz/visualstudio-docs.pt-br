@@ -9,17 +9,17 @@ helpviewer_keywords:
 - custom controls [Visual Studio], Data Sources Window
 - Data Sources Window, controls
 ms.assetid: b1488366-6dfb-454e-9751-f42fd3f3ddfb
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 296f1a9ca076e9728c65d240bab5a81f80669783
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ace5f9dd2781697525e7041be6cbd8df050bca97
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648614"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586816"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-simple-data-binding"></a>Criar um controle de usuário do Windows Forms que dá suporte à vinculação de dados simples
 
@@ -53,7 +53,7 @@ Durante este passo a passo, você aprenderá a:
 
 - Criar um formulário para exibir dados no novo controle.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>{1&gt;{2&gt;Pré-requisitos&lt;2}&lt;1}
 
 Este passo a passos usa SQL Server Express LocalDB e o banco de dados de exemplo Northwind.
 
@@ -75,7 +75,7 @@ Este passo a passos usa SQL Server Express LocalDB e o banco de dados de exemplo
 
 A primeira etapa é criar um **aplicativo Windows Forms**:
 
-1. No Visual Studio, no menu **arquivo** , selecione **novo** **projeto**de  > .
+1. No Visual Studio, no menu **Arquivo**, selecione **Novo** > **Projeto**.
 
 2. Expanda **o C# Visual** ou **Visual Basic** no painel esquerdo e, em seguida, selecione **área de trabalho do Windows**.
 
@@ -172,7 +172,7 @@ Os controles de associação de dados com rótulos descritivos são exibidos no 
 
 Pressione **F5** para executar o aplicativo.
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
 
 Dependendo dos requisitos do aplicativo, existem várias etapas que você pode realizar após criar um controle com suporte a associação de dados. Algumas etapas seguintes típicas incluem:
 
@@ -180,7 +180,7 @@ Dependendo dos requisitos do aplicativo, existem várias etapas que você pode r
 
 - Criando controles que suportam cenários de associação de dados mais complexos. Para obter mais informações, consulte [criar um Windows Forms controle de usuário que dá suporte à vinculação de dados complexa](../data-tools/create-a-windows-forms-user-control-that-supports-complex-data-binding.md) e [criar um controle de usuário de Windows Forms que dá suporte à vinculação de dados de pesquisa](../data-tools/create-a-windows-forms-user-control-that-supports-lookup-data-binding.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Associando controles do Windows Forms a dados no Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
 - [Definir o controle a ser criado quando arrastado da janela Fontes de Dados](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)

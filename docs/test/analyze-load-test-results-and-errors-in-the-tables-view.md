@@ -18,15 +18,15 @@ helpviewer_keywords:
 - Load Test Viewer, tables
 - load tests, results tables
 ms.assetid: 0a84bda3-6051-45eb-9c7f-d57419e1f97d
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f6410129d32e521adeda4b31e4b3a0f6aca903fd
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c5e337c30a4b6a08f123ef7ee33dee704e9412de
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72665394"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75565169"
 ---
 # <a name="analyze-load-test-results-and-errors-in-the-tables-view-of-the-load-test-analyzer"></a>Analisar resultados do teste de carga e erros na exibição Tabelas do Analisador de Teste de Carga
 
@@ -50,10 +50,10 @@ A maioria dos valores numéricos exibidos em uma tabela para contadores de desem
 
 A tabela a seguir lista as tabelas que estão disponíveis para analisar execuções de teste de carga.
 
-|Nome da tabela|Descrição|
+|Nome da Tabela|Descrição|
 |-|-|
-|Erros|Exibe uma lista de erros ocorridos durante a execução do teste de carga. Para obter mais informações, confira [A tabela de erros](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-errors-table) neste tópico e [Analisar resultados do teste de carga](../test/analyze-load-test-results-using-the-load-test-analyzer.md).|
-|Pages (Páginas)|Exibe uma lista de páginas acessadas durante a execução do teste de carga. Alguns dados nessa tabela só estarão disponíveis depois que um teste de carga for concluído. Para obter mais informações, confira [Como exibir a resposta da página da Web](../test/how-to-view-web-page-response-time-in-a-load-test.md).|
+|Erros do|Exibe uma lista de erros ocorridos durante a execução do teste de carga. Para obter mais informações, confira [A tabela de erros](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-errors-table) neste tópico e [Analisar resultados do teste de carga](../test/analyze-load-test-results-using-the-load-test-analyzer.md).|
+|Páginas|Exibe uma lista de páginas acessadas durante a execução do teste de carga. Alguns dados nessa tabela só estarão disponíveis depois que um teste de carga for concluído. Para obter mais informações, confira [Como exibir a resposta da página da Web](../test/how-to-view-web-page-response-time-in-a-load-test.md).|
 |Solicitações|Exibe detalhes de solicitações individuais emitidas durante um teste de carga. Isso inclui todas as solicitações HTTP e as solicitações dependentes como imagens. Para obter mais informações, confira [A tabela Solicitações](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-requests-table) neste tópico.|
 |Rastreamento SQL|Exibe os resultados do rastreamento do SQL. Essa tabela só estará disponível depois que um teste de carga for concluído, e apenas se o rastreamento do SQL tiver sido usado durante o teste. Para obter mais informações, confira [A tabela de dados Rastreamento do SQL](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-sql-trace-data-table) neste tópico.|
 |Testes|Exibe detalhes de testes individuais durante um teste de carga. Para obter mais informações, confira [A tabela Testes](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-tests-table) neste tópico.|
@@ -146,9 +146,9 @@ A tabela de erros contém as seguintes colunas:
 
 |Column|Descrição|Visível por padrão|
 |-|-|-|
-|Digite|O tipo do erro. Por exemplo, HttpError.|Sim|
+|{1&gt;Tipo&lt;1}|O tipo do erro. Por exemplo, HttpError.|Sim|
 |SubType|O subtipo do erro. Por exemplo, LoadTestException.|Sim|
-|Contagem|O número de erros desse tipo ocorridos durante o teste de carga. As entradas nessa coluna são exibidas como hiperlinks. É possível escolher qualquer hiperlink para exibir uma lista dos erros individuais.|Sim|
+|{1&gt;{2&gt;Contagem&lt;2}&lt;1}|O número de erros desse tipo ocorridos durante o teste de carga. As entradas nessa coluna são exibidas como hiperlinks. É possível escolher qualquer hiperlink para exibir uma lista dos erros individuais.|Sim|
 |Última mensagem|Uma mensagem que descreve o erro. Por exemplo, 404 - NotFound.|Sim|
 
 Para saber mais, confira [Trabalhando com tabelas de teste de carga](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
@@ -239,9 +239,9 @@ Na exibição de tabela, é possível exibir até quatro tabelas por vez sem sob
     > [!NOTE]
     > Não é possível exibir a mesma tabela em mais de um painel. Se você alterar a tabela exibida em um painel para uma tabela já exibida em outro, as tabelas alternarão os painéis.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
-- [Analisar resultados de teste de carga](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
+- [Analisar resultados do teste de carga](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
 - [Como acessar os resultados do teste de carga para análise](../test/how-to-access-load-test-results-for-analysis.md)
 - [Analisar resultados do teste de carga na exibição Grafos](../test/analyze-load-test-results-in-the-graphs-view.md)
 - [Analisar violações de regra de limite](../test/analyze-threshold-rule-violations-in-load-tests.md)

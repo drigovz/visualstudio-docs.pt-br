@@ -13,17 +13,17 @@ helpviewer_keywords:
 - Import element [MSBuild]
 - <Import> element [MSBuild]
 ms.assetid: 3bfecaf1-69fd-4008-b651-c9dafd4389d9
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0dce682aad7ab0d049488a6da9b8ab4f3b444d88
-ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
-ms.translationtype: HT
+ms.openlocfilehash: 13ffaff052e672eb900d5ed3a1ce5ae7c2a370df
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "65531703"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75573987"
 ---
 # <a name="import-element-msbuild"></a>Elemento Import (MSBuild)
 Importa o conteúdo de um arquivo de projeto para outro arquivo de projeto.
@@ -38,9 +38,9 @@ Importa o conteúdo de um arquivo de projeto para outro arquivo de projeto.
 ```
 
 ## <a name="attributes-and-elements"></a>Atributos e elementos
- As seções a seguir descrevem atributos, elementos filho e elementos pai.
+ As seções a seguir descrevem os atributos, bem como os elementos filhos e pais.
 
-### <a name="attributes"></a>Atributos
+### <a name="attributes"></a>{1&gt;{2&gt;Atributos&lt;2}&lt;1}
 
 |Atributo|Descrição|
 |---------------|-----------------|
@@ -48,8 +48,8 @@ Importa o conteúdo de um arquivo de projeto para outro arquivo de projeto.
 |`Condition`|Atributo opcional.<br /><br /> Uma condição a ser avaliada. Para obter mais informações, consulte [Condições](../msbuild/msbuild-conditions.md).|
 |`Sdk`| Atributo opcional.<br /><br /> Faz referência a um projeto do SDK.|
 
-### <a name="child-elements"></a>Elementos filho
- Nenhum
+### <a name="child-elements"></a>Child elements
+ {1&gt;Nenhum&lt;1}
 
 ### <a name="parent-elements"></a>Elementos pai
 
@@ -106,6 +106,6 @@ Importa o conteúdo de um arquivo de projeto para outro arquivo de projeto.
 </Project>
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 - [Referência de esquema de arquivos de projeto](../msbuild/msbuild-project-file-schema-reference.md)
-- [Como: Usar o mesmo destino em vários arquivos de projeto](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)
+- [Como usar o mesmo destino em vários arquivos de projeto](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)

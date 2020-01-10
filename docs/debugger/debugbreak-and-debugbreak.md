@@ -19,19 +19,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ce99cd360d75472df6326cfaf6a3f4ddb198b6d2
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 097405f98d1a80b8605b6773bdc675ff2c4ab773
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72738361"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75404650"
 ---
 # <a name="debugbreak-and-__debugbreak"></a>DebugBreak e __debugbreak
-Você pode chamar a função DebugBreak do Win32 ou a [__debugbreak](/cpp/intrinsics/debugbreak) intrínseca em qualquer ponto em seu código. `DebugBreak` e `__debugbreak` têm o mesmo efeito de definir um ponto de interrupção nesse local.
+Você pode chamar a função Win32 [DebugBreak](/windows/win32/api/debugapi/nf-debugapi-debugbreak) ou o [__debugbreak](/cpp/intrinsics/debugbreak) intrínseco em qualquer ponto em seu código. `DebugBreak` e `__debugbreak` têm o mesmo efeito de definir um ponto de interrupção nesse local.
 
  Como `DebugBreak` é uma chamada para uma função do sistema, os símbolos de depuração do sistema devem ser instalados para garantir que as informações corretas da pilha de chamadas sejam exibidas depois de interromper. Caso contrário, as informações da pilha de chamadas exibidas pelo depurador podem estar desativadas por um quadro. Se você usar `__debugbreak`, os símbolos não serão necessários.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 - [Intrínsecos do compilador](/cpp/intrinsics/compiler-intrinsics)
 - [Segurança do depurador](../debugger/debugger-security.md)
 - [Depurando código nativo](../debugger/debugging-native-code.md)

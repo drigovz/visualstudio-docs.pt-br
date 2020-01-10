@@ -5,20 +5,20 @@ ms.topic: conceptual
 helpviewer_keywords:
 - text templates, build tasks
 - text templates, transforming by using msbuild
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c9cc0d8a40970e2ec36030ab3121d6fc02748e2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e01136b845124d74c22ceb1c7cab877a8e2d1d04
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654194"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590547"
 ---
 # <a name="invoke-text-transformation-in-the-build-process"></a>Invocar a transformação de texto no processo de compilação
 
@@ -51,7 +51,7 @@ Se [o servidor de compilação](/azure/devops/pipelines/agents/agents) for execu
   - Microsoft. VisualStudio. TextTemplating. Modeling. 15.0. dll
 
 > [!TIP]
-> Se você receber um `MissingMethodException` para um método Microsoft. CodeAnalysis ao executar destinos de compilação TextTemplating em um servidor de compilação, verifique se os assemblies Roslyn estão em um diretório chamado *Roslyn* que está no mesmo diretório que o executável de compilação (por exemplo,  *MSBuild. exe*).
+> Se você receber um `MissingMethodException` para um método Microsoft. CodeAnalysis ao executar destinos de compilação TextTemplating em um servidor de compilação, verifique se os assemblies Roslyn estão em um diretório chamado *Roslyn* que está no mesmo diretório que o executável de compilação (por exemplo, *MSBuild. exe*).
 
 ## <a name="edit-the-project-file"></a>Editar o arquivo de projeto
 
@@ -299,7 +299,7 @@ Se você atualizar um arquivo incluído ou outro arquivo lido pelo modelo, o Vis
 
 - Os [modelos de texto de tempo de execução](../modeling/run-time-text-generation-with-t4-text-templates.md) são transformados em tempo de execução em seu aplicativo.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 ::: moniker range="vs-2017"
 

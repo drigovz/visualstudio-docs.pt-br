@@ -7,15 +7,15 @@ helpviewer_keywords:
 - counter sets
 - load tests, counter sets
 ms.assetid: e17d0e71-f982-4fc1-a2df-a1065d37473d
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e7e547e3dfc863e3459cc0e5c575d394f83582f6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b83d9c3624a4a268bfeba8a02b224fb9813ad7d1
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72644352"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594321"
 ---
 # <a name="how-to-add-counters-to-counter-sets-using-the-load-test-editor"></a>Como adicionar contadores a conjuntos de contadores usando o Editor de Teste de Carga
 
@@ -62,7 +62,7 @@ Você gerencia os contadores no **Editor de Teste de Carga**. Os conjuntos de co
     > [!NOTE]
     > Também é possível adicionar contadores como um conjunto de contadores escolhendo um contador ou uma categoria de contador existente, selecionando Copiar e depois colando-o(a) em um nó diferente do conjunto de contadores. Os contadores extras que são copiados, mas não são necessários, podem ser excluídos.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Especificar os conjuntos de contadores e as regras de limite para computadores em um teste de carga](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)
 - [Definir configurações de execução de teste de carga](../test/configure-load-test-run-settings.md)

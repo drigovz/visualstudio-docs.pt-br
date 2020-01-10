@@ -2,19 +2,19 @@
 title: Visualizar alterações de código
 ms.date: 12/16/2016
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 f1_keywords:
 - vs.codefix.previewchanges
 ms.workload:
 - multiple
-ms.openlocfilehash: 485a127faa8228ce5ef17a6208e9cc4e7e50e1b9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f45b186153b4cc046d35fd941f6a80e108476fc0
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666793"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585763"
 ---
 # <a name="preview-changes-window"></a>Janela Visualização de Alterações
 
@@ -28,7 +28,7 @@ A parte inferior da janela mostra o código formatado do projeto que será alter
 
 Depois de revisar as alterações, clique no botão **Aplicar** para confirmar as alterações ou clique no botão **Cancelar** para deixar as coisas como estavam.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Refatoração no Visual Studio](../ide/refactoring-in-visual-studio.md)
 - [Ações rápidas](../ide/quick-actions.md)

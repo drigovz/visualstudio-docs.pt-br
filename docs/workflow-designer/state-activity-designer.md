@@ -5,17 +5,17 @@ ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.State.UI
 ms.assetid: 9455ab37-93a0-4c46-9eb8-b6611ca23167
-ms.author: jillfra
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-author: jillre
-ms.openlocfilehash: c0e4657f8d3fde29c49c4505c8512726c60f1593
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+author: TerryGLee
+ms.openlocfilehash: f1a95808ec19edba01b266ccd280603bcc4321dc
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649935"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593142"
 ---
 # <a name="state-activity-designer"></a>Designer de atividade de estado
 
@@ -29,14 +29,14 @@ Para adicionar um <xref:System.Activities.Statements.State> a um fluxo de trabal
 
 A tabela a seguir mostra as propriedades de <xref:System.Activities.Statements.State> que podem ser definidas usando o designer de fluxo de trabalho e descreve como elas são usadas no designer. Algumas dessas propriedades podem ser editadas na grade de propriedade e alguns podem ser editados na superfície de designer.
 
-|Nome da Propriedade|Necessária|Uso|
+|Nome da Propriedade|Necessário|Medição de|
 |-|--------------|-|
 |<xref:System.Activities.Statements.State.DisplayName%2A>|False|Especifica o nome amigável do designer de atividade de <xref:System.Activities.Statements.State> no cabeçalho. O valor padrão é **State**. O valor pode ser editado na grade de propriedade ou diretamente no cabeçalho do designer de atividade. <xref:System.Activities.Statements.State.DisplayName%2A> é usado em navegação de rastreamento que é exibida na parte superior do designer de fluxo de trabalho.<br /><br /> Embora não seja necessário <xref:System.Activities.Statements.State.DisplayName%2A> restrita, é uma prática recomendada usar um.|
 |<xref:System.Activities.Statements.State.Entry%2A>|False|Especifica a ação que ocorre quando esse estado é feito a transição para. Quando a atividade de <xref:System.Activities.Statements.State> é expandida, esse valor pode ser definido arrastando uma atividade da **caixa de ferramentas** e soltando-a na seção de **entrada** do estado.|
 |<xref:System.Activities.Statements.State.Exit%2A>|False|Especifica a ação que ocorre quando esse estado é feito a transição fora. Quando a atividade de <xref:System.Activities.Statements.State> é expandida, esse valor pode ser definido arrastando uma atividade da **caixa de ferramentas** e soltando-a na seção de **saída** do estado.|
 |<xref:System.Activities.Statements.State.Transitions%2A>|False|Lista as transições possíveis que originam de <xref:System.Activities.Statements.State>. Cada item na lista possui um link a <xref:System.Activities.Statements.Transition> associado e de destino <xref:System.Activities.Statements.State>. Clicar no link alternará o designer para uma exibição expandida de <xref:System.Activities.Statements.Transition> ou de <xref:System.Activities.Statements.State>.|
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [StateMachine](../workflow-designer/statemachine-activity-designer.md)
 - [FinalState](../workflow-designer/finalstate-activity-designer.md)

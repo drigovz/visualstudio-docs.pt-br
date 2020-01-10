@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - text templates, transformation process
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 518c06f8630ad9fa7742f7b3e85ac27263cd0a86
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 6d6cca9a4a98c4afcffa8322acb75a4cef8a7527
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72605803"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75565858"
 ---
 # <a name="the-text-template-transformation-process"></a>O processo de transformação de modelo de texto
 O processo de transformação de modelo de texto usa um arquivo de modelo de texto como entrada e gera um novo arquivo de texto como a saída. Por exemplo, você pode usar modelos de texto para gerar Visual Basic C# ou código, ou pode gerar um relatório HTML.
@@ -27,7 +27,7 @@ O processo de transformação de modelo de texto usa um arquivo de modelo de tex
 
 |Componente|Descrição|Personalizável (Sim/não)|
 |-|-|-|
-|Motores|O componente do mecanismo controla o processo de transformação do modelo de texto|Nº|
+|Mecanismo|O componente do mecanismo controla o processo de transformação do modelo de texto|No.|
 |Host|O host é a interface entre o mecanismo do e o ambiente do usuário. O Visual Studio é um host do processo de transformação de texto.|Sim. Você pode escrever um host personalizado.|
 |Processadores de diretiva|Os processadores de diretiva são classes que manipulam diretivas em modelos de texto. Você pode usar diretivas para fornecer dados a um modelo de texto de uma fonte de entrada.|Sim. Você pode escrever processadores de diretiva personalizada|
 

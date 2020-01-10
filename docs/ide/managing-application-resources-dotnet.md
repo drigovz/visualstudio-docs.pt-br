@@ -12,17 +12,17 @@ helpviewer_keywords:
 - resources [Visual Studio]
 - Resources page in Project Designer
 - application resources [Visual Studio]
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 29e4fbbd8d50001807f3d90a82d18e40a3674d01
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e53c3701e31733c54869c71820956d674ed4fb8b
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654244"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593688"
 ---
 # <a name="manage-application-resources-net"></a>Gerenciar recursos do aplicativo (.NET)
 
@@ -50,7 +50,7 @@ Recursos são gerenciados de forma diferente em projetos do .NET que em outros t
 - Aplicativos UWP (Plataforma Universal do Windows), consulte [Recursos do aplicativo e o Sistema de Gerenciamento de Recursos](/windows/uwp/app-resources/)
 - Projetos C++, confira [trabalhar com arquivos de recurso](/cpp/windows/working-with-resource-files) e [Como criar um recurso](/cpp/windows/how-to-create-a-resource)
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Recursos em aplicativos de área de trabalho (.NET Framework)](/dotnet/framework/resources/index)
 - [Gerenciando recursos de aplicativo (Visual Studio para Mac)](/visualstudio/mac/managing-app-resources)

@@ -1,5 +1,5 @@
 ---
-title: 'Como: Selecionar os arquivos para compilar | Microsoft Docs'
+title: Como selecionar os arquivos para compilar | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,19 +7,19 @@ helpviewer_keywords:
 - MSBuild, including files
 - Include attribute [MSBuild]
 ms.assetid: f5ff182f-7b3a-46fb-9335-37df54cfb8eb
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f8f582a0148f5fddd88393e008593d9ad9a05ce
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a9ad869fc091035de711ec59e20d10fd0af5e21b
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63386180"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75574607"
 ---
-# <a name="how-to-select-the-files-to-build"></a>Como: Selecionar os arquivos a serem compilados
+# <a name="how-to-select-the-files-to-build"></a>Como selecionar os arquivos a serem compilados
 Quando você compila um projeto que contém vários arquivos, é possível listar cada arquivo separadamente no arquivo de projeto ou usar caracteres curinga para incluir todos os arquivos em um diretório ou um conjunto aninhado de diretórios.
 
 ## <a name="specify-inputs"></a>Especificar entradas
@@ -169,6 +169,6 @@ O exemplo de código a seguir usa um curinga para incluir todos os arquivos *.cs
 </Project>
 ```
 
-## <a name="see-also"></a>Consulte também
-- [Como: Excluir arquivos do build](../msbuild/how-to-exclude-files-from-the-build.md)
+## <a name="see-also"></a>Veja também
+- [Como excluir arquivos da compilação](../msbuild/how-to-exclude-files-from-the-build.md)
 - [Itens](../msbuild/msbuild-items.md)

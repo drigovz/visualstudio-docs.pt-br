@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f31153dab172451681b5e1eb8292f505141c2ff9
-ms.sourcegitcommit: 6ae0a289f1654dec63b412bfa22035511a2ef5ad
+ms.openlocfilehash: 9ee63c88bdca5f096fb5fbb8f36be0e2af8fbade
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71950723"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75588740"
 ---
 # <a name="step-2-run-your-picture-viewer-app"></a>Etapa 2: executar o aplicativo visualizador de imagens
 
@@ -57,13 +57,13 @@ Veja como executar seu aplicativo.
     > [!NOTE]
     > Quando você executa seu aplicativo de dentro do IDE, ele é chamado de depuração porque você normalmente faz isso para localizar e corrigir bugs (erros) no aplicativo. Embora esse aplicativo seja pequeno e ainda não faça muito, ele ainda é um programa real. Você segue o mesmo procedimento para executar e depurar outros programas. Para saber mais sobre depuração, confira [Introdução ao depurador](../debugger/debugger-feature-tour.md).
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
 
 * Para ir para a próxima etapa do tutorial, consulte **[etapa 3: definir suas propriedades de formulário](../ide/step-3-set-your-form-properties.md)** .
 
 * Para retornar à etapa anterior do tutorial, consulte [etapa 1: criar um projeto de aplicativo Windows Forms](../ide/step-1-create-a-windows-forms-application-project.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 * [Tutorial 2: criar um teste de matemática cronometrado](tutorial-2-create-a-timed-math-quiz.md)
 * [Tutorial 3: criar um jogo de correspondência](tutorial-3-create-a-matching-game.md)

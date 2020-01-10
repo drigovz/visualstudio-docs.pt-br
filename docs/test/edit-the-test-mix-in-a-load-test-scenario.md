@@ -8,15 +8,15 @@ helpviewer_keywords:
 - load tests, test mix
 - load tests, removing tests
 ms.assetid: 303e1d70-5d98-424a-b51e-e0898e16d3f8
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9a2c882d912cb46e4f61bd03b9949aaf9fd135d6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 4a52d660140416ce829493a733171cfcf64ebbe4
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72665016"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595924"
 ---
 # <a name="edit-the-test-mix-to-specify-which-web-performance-unit-and-coded-ui-tests-to-include-in-a-load-test-scenario"></a>Editar a combinação de testes para especificar quais testes de IU codificados, de desempenho Web e de unidade incluir em um cenário de teste de carga
 
@@ -53,7 +53,7 @@ Você pode adicionar mais testes de unidade e desempenho na Web à combinação 
 
      Os testes são adicionados à combinação de testes. Uma nova distribuição é atribuída automaticamente aos testes na combinação de testes.
 
-5. (Opcional) Ajuste o controle misto para especificar a distribuição de teste. Para saber mais, confira [Sobre o controle misto](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md).
+5. (Opcional) Ajuste o controle misto para especificar a distribuição de teste. Para obter mais informações, confira [Sobre o controle misto](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md).
 
 ## <a name="remove-tests-from-a-scenario"></a>Remover testes de um cenário
 ![Removendo um teste de um teste de carga existente](../test/media/ltest_removetest.png)
@@ -88,6 +88,6 @@ Também é possível digitar os valores de percentual diretamente na coluna **%*
 
 Ao inserir valores de porcentagem manualmente, você deve ter certeza de que a soma de todos os itens seja 100%. Ao salvar uma combinação, se a soma não for 100%, você deverá aceitar os valores de porcentagem como estão ou voltar e ajustá-los. Se você optar por aceitá-los como estão, eles serão rateados em 100%.  Por exemplo, se você tiver dois itens e defini-los manualmente como 80% e 40%, o primeiro item será definido como 66,67% (80 dividido por 120) e o segundo item será definido como 33,33% (40 dividido por 120).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Editando cenários de teste de carga](../test/edit-load-test-scenarios.md)

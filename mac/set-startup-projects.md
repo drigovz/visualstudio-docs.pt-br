@@ -3,16 +3,16 @@ title: Definir vários projetos de inicialização
 description: Este artigo descreve como definir vários projetos para inicialização na execução ou na depuração.
 author: sayedihashimi
 ms.author: sayedha
-ms.date: 02/21/2019
+ms.date: 12/13/2019
 ms.topic: conceptual
 ms.prod: visual-studio-mac
 ms.assetid: fd354fff-ce6b-4505-a815-84a2311e39ba
-ms.openlocfilehash: 3c7c3e00615463ba657ad93022f60ca856e026d6
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
-ms.translationtype: HT
+ms.openlocfilehash: 46e6447e07d2ee8439fcd86f5d1519beaa1e4609
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68872379"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75406689"
 ---
 # <a name="set-multiple-startup-projects"></a>Definir vários projetos de inicialização
 
@@ -44,7 +44,7 @@ O Visual Studio para Mac permite especificar que mais de um projeto deve ser ini
 
    Você pode ver que os dois projetos estão configurados para iniciar, pois ambos os projetos estão em **negrito** no Painel de Soluções. Na barra de ferramentas, a nova configuração de execução é definida como a Configuração de Execução da Solução atual.
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
 
 - [Compilação e criação no Visual Studio para Mac](compiling-and-building.md)
 - [Noções sobre configurações de compilação](configurations.md)

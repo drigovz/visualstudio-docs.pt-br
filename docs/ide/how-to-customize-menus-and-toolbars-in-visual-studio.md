@@ -22,17 +22,17 @@ helpviewer_keywords:
 - toolbars [Visual Studio], customizing
 - toolbars [Visual Studio], customizing in the IDE
 ms.assetid: b570ae2f-5302-45dc-9cc9-8d4d1ad50603
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f5dc68374193c90fe248f92005a266a658f3f668
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ed425b120d5d47fb684294ce17bd7d48374c638e
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72656077"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591093"
 ---
 # <a name="how-to-customize-menus-and-toolbars-in-visual-studio"></a>Como personalizar menus e barras de ferramentas no Visual Studio
 
@@ -117,7 +117,7 @@ Para personalizar o Visual Studio, além de adicionar e remover barras de ferram
 
     Também é possível redefinir todos os menus e barras de ferramentas escolhendo o botão **Redefinir Tudo**.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Personalizar o IDE](../ide/personalizing-the-visual-studio-ide.md)
 - [Personalizar o editor](../ide/how-to-change-text-case-in-the-editor.md)

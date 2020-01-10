@@ -8,15 +8,15 @@ helpviewer_keywords:
 - virtual user activity chart
 - load test, virtual user activity chart
 ms.assetid: 63f4bd42-3cfb-4eee-af68-e8334976539e
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: bba807eae2a7767b9b4271d0df48e962a2113285
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 0289ff0d4a20eacc4f6801d9300d39df594bc79e
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72665366"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591227"
 ---
 # <a name="analyzing-load-test-virtual-user-activity-in-the-details-view-of-the-load-test-analyzer"></a>Analisando a atividade do usuário virtual do teste de carga na exibição Detalhes do Analisador de Teste de Carga
 
@@ -59,7 +59,7 @@ O painel Resultados do filtro está visível no **Gráfico de Atividade do Usuá
 |**Exibir os resultados dos testes de carga que contêm os dados de atividade do usuário virtual:** depois que o teste de carga tiver sido criado e configurado e sua execução estiver concluída, você poderá exibir os dados de atividade do usuário virtual usando o **Gráfico de Atividade do Usuário Virtual**.|-   [Analisar resultados do teste de carga](../test/analyze-load-test-results-using-the-load-test-analyzer.md)<br />-   [Como analisar o que os usuários virtuais fazem durante um teste de carga](../test/how-to-analyze-virtual-user-activity-during-a-load-test.md)|
 |**Isolar problemas de desempenho em testes de carga:** você pode usar o **Gráfico de Atividade do Usuário Virtual** para ajudar a isolar problemas de desempenho em seu teste de carga.|-   [Passo a passo: usando o gráfico de atividade do usuário virtual para isolar problemas](../test/walkthrough-use-the-virtual-user-activity-chart-to-isolate-issues.md)|
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
-- [Analisar resultados de teste de carga](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
+- [Analisar resultados do teste de carga](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
 - [Analisar resultados do teste de carga e erros na exibição Tabelas](../test/analyze-load-test-results-and-errors-in-the-tables-view.md)

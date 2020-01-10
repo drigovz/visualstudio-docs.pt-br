@@ -7,16 +7,16 @@ dev_langs:
 - CSharp
 - C++
 - jsharp
-author: mikeblome
-ms.author: mblome
+author: ghogen
+ms.author: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 7bdad856a6ea0ec6cca8292bc3095f51c500bcb1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: df75bb998d2b8c6486e20c4c3ca0d80347c8f88a
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62970712"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591665"
 ---
 # <a name="vctooltask-base-class"></a>Classe base VCToolTask
 
@@ -28,16 +28,16 @@ A tabela a seguir descreve os parâmetros das classes base **VCToolTask**.
 
 |Parâmetro|Descrição|
 |---------------|-----------------|
-|**ActiveToolSwitchesValues**|Cadeia de caracteres opcional **Dictionary\<, parâmetro ToolSwitch>**.|
+|**ActiveToolSwitchesValues**|Cadeia de caracteres opcional **Dictionary\<, parâmetro ToolSwitch>** .|
 |**AdditionalOptions**|Parâmetro opcional **string**.|
 |**EffectiveWorkingDirectory**|Parâmetro opcional **string**.|
 |**EnableErrorListRegex**|Parâmetro opcional **bool**.<br/><br/>O padrão é `true`.|
-|**ErrorListRegex**|Parâmetro opcional **ITaskItem[]**.|
-|**ErrorListListExclusion**|Parâmetro opcional **ITaskItem[]**.|
-|**GenerateCommandLine**|Parâmetro opcional **string**.<br/><br/>Usa valores **CommandLineFormat** *format* [default = CommandLineFormat.ForBuildLog] e **EscapeFormat** *escapeFormat* [default = EscapeFormat.Default].|
-|**GenerateCommandLineExceptSwitches**|Parâmetro opcional **string**.<br/><br/>Usa valores **string[]** *switchesToRemove*, **CommandLineFormat** *format* [default = CommandLineFormat.ForBuildLog] e **EscapeFormat** *escapeFormat* [default = EscapeFormat.Default].|
+|**ErrorListRegex**|Parâmetro opcional **ITaskItem[]** .|
+|**ErrorListListExclusion**|Parâmetro opcional **ITaskItem[]** .|
+|**GenerateCommandLine**|Parâmetro opcional **string**.<br/><br/>Usa valores **CommandLineFormat** *formato* [padrão = CommandLineFormat. ForBuildLog] e **EscapeFormat** *EscapeFormat* [padrão = EscapeFormat. Default].|
+|**GenerateCommandLineExceptSwitches**|Parâmetro opcional **string**.<br/><br/>Usa os valores **String []** *switchesToRemove*, **CommandLineFormat** *Format* [default = CommandLineFormat. ForBuildLog] e **EscapeFormat** *EscapeFormat* [padrão = EscapeFormat. Default].|
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 [Referência de tarefas](../msbuild/msbuild-task-reference.md)<br/>
 [Tarefas](../msbuild/msbuild-tasks.md)

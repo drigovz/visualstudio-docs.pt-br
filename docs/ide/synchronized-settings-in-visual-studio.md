@@ -3,17 +3,17 @@ title: Sincronizar as configurações
 ms.date: 12/10/2018
 ms.topic: conceptual
 ms.assetid: a3d2ea29-be5d-4012-9820-44b06adbb7dd
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cebfc33b3bc0fc664874dd8c531e6630b3e64c5c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8f7183f20139df82d14f80ee4b57e28b4aed3a66
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647428"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75566781"
 ---
 # <a name="synchronize-visual-studio-settings-across-multiple-computers"></a>Sincronizar as configurações do Visual Studio em vários computadores
 
@@ -89,7 +89,7 @@ Algumas configurações, como o layout da janela de ferramentas, não são compa
 
 Para restaurar todas as configurações para os padrões, entre no Visual Studio e, em seguida, selecione **Ferramentas** > **Importar e Exportar Configurações** para abrir o **Assistente para Importar e Exportar Configurações**. Selecione **Restaurar todas as configurações** e siga as etapas restantes do assistente.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Personalizar o IDE](../ide/personalizing-the-visual-studio-ide.md)
 - [Configurações do ambiente](../ide/environment-settings.md)

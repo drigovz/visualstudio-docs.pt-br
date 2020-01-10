@@ -3,15 +3,15 @@ title: Organizar objetos em contêineres de layout no XAML Designer
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 29c80c38-0fa3-48d6-b3a8-3b864f482e44
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: bdda64792195ecac41affeb6ec8a7f4f383ac8a4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3f05874459553b0b83c5e43f326a5deb6b0d4798
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72668821"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592934"
 ---
 # <a name="organize-objects-into-layout-containers-in-xaml-designer"></a>Organizar objetos em contêineres de layout no XAML Designer
 
@@ -71,7 +71,7 @@ Organize objetos para que eles fiquem ou se *encaixem*, em uma borda do painel.
 
 ![Painel de layout DockPanel](../designers/media/72d46b58-9a49-4dd5-8af7-6843c0440226.png)
 
-**Assista a um vídeo curto:** ![botão Reproduzir](../designers/media/bldadminconsoleinitialconfigicon.PNG) [WPF – DockPanel](https://www.youtube.com/watch?v=EBH_OIM-zPo)
+**Assista a um breve vídeo:** botão ![Play](../designers/media/bldadminconsoleinitialconfigicon.PNG) [WPF-DockPanel](https://www.youtube.com/watch?v=EBH_OIM-zPo)
 
 ## <a name="layout-controls"></a>Controles de layout
 
@@ -103,7 +103,7 @@ Dimensionar objetos, assim como um controle de zoom. É possível adicionar apen
 
 ![Controle de layout ViewBox](../designers/media/f5b13c66-d918-4141-8a16-bd8f8628687a.png)
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Trabalhar com elementos no Designer XAML](../xaml-tools/working-with-elements-in-xaml-designer.md)
 - [Criar uma interface do usuário usando o Designer XAML](../xaml-tools/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)

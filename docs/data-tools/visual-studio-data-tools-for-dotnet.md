@@ -3,18 +3,18 @@ title: Ferramentas de dados para .NET
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: c3175080-1dfb-4ab8-a460-92dadbb844b4
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
 - dotnet
-ms.openlocfilehash: 224fef3a02a2441553728a9a75fc5f9c456081a1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 1dcd8c256259baeef36939e19ce785e5efe7c80b
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648098"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586036"
 ---
 # <a name="visual-studio-data-tools-for-net"></a>Ferramentas de dados do Visual Studio para .NET
 
@@ -42,6 +42,6 @@ O fluxo de trabalho típico é o seguinte:
 
 Você pode ignorar a etapa 3 e programar um aplicativo .NET para emitir comandos diretamente para um banco de dados, em vez de usar um modelo. Nesse caso, você encontrará a documentação relevante aqui: [ADO.NET](/dotnet/framework/data/adonet/index). Observe que você ainda pode usar o **Assistente de configuração da fonte de dados** e designers para gerar código de vinculação de dados quando você preenche seus próprios objetos na memória e os controles de interface do usuário de ligação de dados com esses objetos.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Acessar dados no Visual Studio](../data-tools/accessing-data-in-visual-studio.md)

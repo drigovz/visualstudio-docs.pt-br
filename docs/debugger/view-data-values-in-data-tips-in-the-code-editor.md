@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f121c7aadb605e6eb87089556ddaf1b1f4999dbb
-ms.sourcegitcommit: 0b90e1197173749c4efee15c2a75a3b206c85538
+ms.openlocfilehash: bf5eda8205dbe0629d0b2801473de83c2f91257e
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2019
-ms.locfileid: "74903872"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75404276"
 ---
 # <a name="view-data-values-in-datatips-in-the-code-editor"></a>Exibir valores de dados em DataTips no editor de código
 
@@ -96,7 +96,7 @@ Para editar o valor de uma variável ou elemento em um DataTip, selecione o valo
 
 ::: moniker range=">= vs-2019"
 
-## <a name="pin-properties-in-datatips-supported-in-visual-studio-2019-version-164-preview-3-or-higher"></a>Propriedades de PIN em DataTips (com suporte no Visual Studio 2019 versão 16,4 Preview 3 ou superior)
+## <a name="pin-properties-in-datatips"></a>Propriedades do PIN em DataTips
 
 > [!NOTE]
 > Esse recurso tem suporte para o .NET Core 3,0 ou superior.
@@ -137,7 +137,7 @@ Você pode exportar DataTips para um arquivo XML, que pode ser compartilhado ou 
 
 1. Na caixa de diálogo **importar DataTips** , selecione o arquivo XML DataTips que você deseja abrir e, em seguida, selecione **abrir**.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 - [O que é depuração?](../debugger/what-is-debugging.md)
 - [Ferramentas e técnicas de depuração](../debugger/write-better-code-with-visual-studio.md)
 - [Primeira olhada na depuração](../debugger/debugger-feature-tour.md)

@@ -13,22 +13,22 @@ helpviewer_keywords:
 - CreateProperty task [MSBuild]
 - MSBuild, CreateProperty task
 ms.assetid: fbc31a88-62d4-43d2-b739-68ef3fac38f5
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 39b732a962f648f0c812f3f9d37df7dcf17296ce
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: cac0af3371a5c4ae385cc19367b360b8e8f608fd
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778255"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590053"
 ---
 # <a name="createproperty-task"></a>Tarefa CreateProperty
 Popula as propriedades com os valores passados. Isso permite que os valores sejam copiados de uma propriedade ou cadeia de caracteres para outra.
 
-## <a name="attributes"></a>Atributos
+## <a name="attributes"></a>{1&gt;{2&gt;Atributos&lt;2}&lt;1}
 A tabela a seguir descreve os parâmetros da tarefa `CreateProperty`.
 
 | Parâmetro | Descrição |
@@ -66,6 +66,6 @@ O exemplo a seguir usa a tarefa `CreateProperty` para criar a propriedade `NewFi
 
 Depois de executar o projeto, o valor da propriedade `NewFile` será *Module1.vb*.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 - [Referência de tarefas](../msbuild/msbuild-task-reference.md)
 - [Tarefas](../msbuild/msbuild-tasks.md)

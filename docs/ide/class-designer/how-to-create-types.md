@@ -12,17 +12,17 @@ helpviewer_keywords:
 - types [Visual Studio], class diagrams
 - attributes [Visual Studio], applying custom
 ms.assetid: 94458c31-28bc-40e2-9737-85868788a0e5
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1db43fc16202234f24d8179bba656d71ac96d39a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 881a8ed7f1aceb5f97eaed1f0b9285951d1d39f6
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72631750"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590170"
 ---
 # <a name="how-to-create-types-by-using-class-designer"></a>Como criar tipos usando o Designer de Classe
 
@@ -62,7 +62,7 @@ Para criar novos tipos para projetos em C# e Visual Basic, você precisa criá-l
     |Classes, classes abstratas, estruturas ou structs|Métodos, propriedades, campos, eventos, construtores (método), destruidores (método) e constantes que definem o tipo|
     |Enums|Valores de campo que compõem a enumeração|
     |Interfaces|Métodos, propriedades e eventos que compõem a interface|
-    |delegado|Parâmetros que definem o representante|
+    |Delegado|Parâmetros que definem o representante|
     |Módulo|Métodos, propriedades, campos, eventos, construtores (método) e constantes que definem o módulo|
 
      Consulte [Criando membros](creating-and-configuring-type-members.md#create-members).
@@ -87,7 +87,7 @@ Para criar novos tipos para projetos em C# e Visual Basic, você precisa criá-l
 
    Os atributos personalizados são aplicados ao tipo.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Como criar herança entre tipos](how-to-create-inheritance-between-types.md)
 - [Como criar associações entre tipos](how-to-create-associations-between-types.md)

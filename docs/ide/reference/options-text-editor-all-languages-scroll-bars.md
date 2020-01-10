@@ -27,23 +27,23 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.U-SQL.ScrollBars
 - VS.ToolsOptionsPages.Text_Editor.XAML.ScrollBars
 - VS.ToolsOptionsPages.Text_Editor.XML.ScrollBars
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: da66270d29778e48d89d713e36c6c717e5f86d89
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 54ce07537adc436f719de8596657d1367afcb87d
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666379"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75588792"
 ---
 # <a name="options-text-editor-all-languages-scroll-bars"></a>Opções, Editor de Texto, Todas as Linguagens, Barras de Rolagem
 Essa caixa de diálogo permite alterar o comportamento padrão da barra de rolagem do editor de código. Para exibir essas opções, selecione **Opções** do menu **Ferramentas**. Na pasta **Editor de Texto**, expanda a subpasta **Todas as Linguagens** e, em seguida, escolha **Barras de Rolagem**.
 
 > [!CAUTION]
-> Esta página define opções padrão para todas as linguagens de desenvolvimento. A redefinição de uma opção nessa caixa de diálogo redefinirá as opções das Barras de Rolagem em todas as linguagens em relação às opções selecionadas aqui. Para alterar as opções do Editor de Texto para apenas uma linguagem, expanda a subpasta para aquela linguagem e selecione suas páginas de opções.
+> Essa página define opções padrão para todas as linguagens de desenvolvimento. A redefinição de uma opção nessa caixa de diálogo redefinirá as opções das Barras de Rolagem em todas as linguagens em relação às opções selecionadas aqui. Para alterar as opções do Editor de Texto para apenas uma linguagem, expanda a subpasta para aquela linguagem e selecione suas páginas de opções.
 
 ## <a name="show-horizontal-scroll-bar"></a>Mostrar barra de rolagem horizontal
 
@@ -53,7 +53,7 @@ Quando selecionada, exibe uma barra de rolagem horizontal, que permite rolar de 
 
 Quando selecionada, exibe uma barra de rolagem vertical que permite rolar para cima e para baixo para exibir os elementos que estão fora da área de exibição do Editor. Se barras de rolagem verticais não estiverem disponíveis, você poderá usar Page Up, Page Down e teclas do cursor para rolar.
 
-## <a name="display"></a>Monitor
+## <a name="display"></a>{1&gt;Vídeo&lt;1}
 
 ### <a name="show-annotations-over-vertical-scroll-bar"></a>Mostrar anotações sobre a barra de rolagem vertical
 
@@ -86,6 +86,6 @@ No *modo de mapa*, quando você clica em um local na barra de rolagem, o cursor 
 > [!TIP]
 > Você pode desabilitar a exibição de código em miniatura no modo de mapa definindo a opção **Visão geral do código-fonte** como **Desabilitada**. Se a opção **Mostrar Dica de Ferramenta de Visualização** estiver selecionada, você ainda verá uma visualização do código nesse local ao passar o ponteiro do mouse sobre a barra de rolagem e, o cursor ainda o levará para esse local no arquivo quando você clicar.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Como personalizar a barra de rolagem](../how-to-track-your-code-by-customizing-the-scrollbar.md)

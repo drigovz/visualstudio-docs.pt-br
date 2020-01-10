@@ -8,17 +8,17 @@ helpviewer_keywords:
 - data [Visual Studio], displaying on Windows Forms
 - data [Visual Studio], Data Sources window
 ms.assetid: 20597ff8-0c98-43ec-8fb1-05376804ba48
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: b5c57b73656f75ae9d99211ba28e38935d3164cb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 5193f3e3a0a1f4a06cc4830036ecf63806a1dbee
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72641037"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586179"
 ---
 # <a name="set-the-control-to-be-created-when-dragging-from-the-data-sources-window"></a>Definir o controle a ser criado quando arrastado da janela Fontes de Dados
 
@@ -37,7 +37,7 @@ Nesse contexto, o termo *objeto* refere-se a um objeto comercial personalizado, 
 2. Na janela **fontes de dados** , selecione o item que representa a tabela de dados ou o objeto que você deseja definir.
 
    > [!TIP]
-   > Se a janela **fontes de dados** não estiver aberta, você poderá abri-la selecionando **Exibir**  >  outras**fontes de dados**do**Windows**  > .
+   > Se a janela **fontes de dados** não estiver aberta, você poderá abri-la selecionando **Exibir** > outras **fontes de dados**do **Windows** > .
 
 3. Clique no menu suspenso do item e, em seguida, clique em um dos seguintes itens no menu:
 
@@ -69,6 +69,6 @@ Antes de arrastar um item que representa uma coluna ou uma propriedade de um obj
 
      Se você não quiser criar um controle para a coluna ou propriedade, selecione **nenhum** no menu suspenso. Isso será útil se você quiser arrastar a tabela ou o objeto pai para o designer, mas não desejar incluir a coluna ou propriedade específica.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Associar controles a dados no Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)

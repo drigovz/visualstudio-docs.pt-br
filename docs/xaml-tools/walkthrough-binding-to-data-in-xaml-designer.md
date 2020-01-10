@@ -7,15 +7,15 @@ f1_keywords:
 dev_langs:
 - CSharp
 - VB
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 7aace70ce773c9051367bf88bea1d798eb069bcf
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 1abe14c443432d0da0ab0c53b33f9321034228be
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72668623"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592927"
 ---
 # <a name="walkthrough-bind-to-data-in-xaml-designer"></a>Passo a passo: associar dados no Designer XAML
 
@@ -95,7 +95,7 @@ No Designer XAML, você pode definir as propriedades de associação de dados us
 
      O controle `TextBlock` deve mostrar o valor padrão de 0 como texto.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Criar uma interface do usuário usando o Designer XAML](../xaml-tools/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)
 - [Caixa de diálogo Adicionar Conversor de Valor](https://msdn.microsoft.com/library/c5f3d110-a541-4b55-8bca-928f77778af8)

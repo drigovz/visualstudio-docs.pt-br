@@ -8,17 +8,17 @@ helpviewer_keywords:
 - bidirectional language support, encoded files
 - file encoding, bidirectional languages
 ms.assetid: cb52b732-b395-4ba1-a3ef-104b3942a12a
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b02734af3efb24e1e3791246b0cea405b12d7b15
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 5e1e562771567a6ff4f9dc35c9e98ceb5441a074
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72645795"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596171"
 ---
 # <a name="how-to-save-and-open-files-with-encoding"></a>Como salvar e abrir arquivos com codificação
 
@@ -56,7 +56,7 @@ Salve arquivos com uma codificação de caracteres específica para dar suporte 
 
 3. Siga as Etapas 2 e 3 do procedimento anterior.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Codificação e quebras de linha](encodings-and-line-breaks.md)
 - [Codificação e globalização do Windows Forms](/dotnet/framework/winforms/advanced/encoding-and-windows-forms-globalization)

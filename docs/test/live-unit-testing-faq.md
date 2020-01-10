@@ -4,16 +4,16 @@ ms.date: 10/03/2017
 ms.topic: conceptual
 helpviewer_keywords:
 - Live Unit Testing FAQ
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8db8264268eb04edc3140d0e2a6ece5896692e38
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ba231e6c203197518b75a7a8c0592f01bba4ffe9
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653045"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591535"
 ---
 # <a name="live-unit-testing-frequently-asked-questions"></a>Perguntas frequentes sobre o Live Unit Testing
 
@@ -25,7 +25,7 @@ O Live Unit Testing funciona com as três estruturas de teste de unidade popular
 
 |Estrutura de teste  |Versão mínima do Adaptador do Visual Studio  |Versão mínima da Estrutura  |
 |---------|---------|---------|
-|xUnit.net |xunit.runner.visualstudio versão 2.2.0-beta3-build1187 |xunit 1.9.2 |
+|{1&gt;{2&gt;xUnit.net&lt;2}&lt;1} |xunit.runner.visualstudio versão 2.2.0-beta3-build1187 |xunit 1.9.2 |
 |NUnit |NUnit3TestAdapter versão 3.7.0 |NUnit versão 3.5.0 |
 |MSTest |MSTest.TestAdapter 1.1.4-preview |MSTest.TestFramework 1.0.5-preview |
 
@@ -39,7 +39,7 @@ Em alguns casos, talvez seja necessário restaurar explicitamente os pacotes NuG
 
 Sim. O Live Unit Testing funciona com o .NET Core e .NET Framework.
 
-## <a name="configuration"></a>Configuração
+## <a name="configuration"></a>Configuração do
 
 **Por que o Live Unit Testing não funciona ao ser ligado?**
 
@@ -85,15 +85,26 @@ Por exemplo, pode haver um destino que produz pacotes NuGet durante um build nor
 </Target>
 ```
 
-## <a name="error-messages-with-outputpath-or-outdir"></a>Mensagens de erro com \<OutputPath > ou \<OutDir >
+## <a name="error-messages-with-outputpath-outdir-or-intermediateoutputpath"></a>Mensagens de erro com \<OutputPath >, \<OutDir > ou \<IntermediateOutputPath >
 
 **Por que obtenho o seguinte erro quando o Live Unit Testing tenta criar minha solução: "... aparece para definir incondicionalmente `<OutputPath>` ou `<OutDir>`. Live Unit Testing não executará testes do assembly de saída "?**
 
-Você pode receber esse erro se o processo de build da solução substitui `<OutputPath>` ou `<OutDir>` incondicionalmente e, portanto, ele não é um subdiretório de `<BaseOutputPath>`. Nesses casos, o Live Unit Testing não funcionará, pois ele também substitui esses valores, a fim de garantir que os artefatos de build sejam soltos em uma pasta em `<BaseOutputPath>`. Se precisar substituir a localização em que você deseja que os artefatos de build sejam soltos em um build normal, substitua o `<OutputPath>` condicionalmente com base em `<BaseOutputPath>`.
+Você pode obter esse erro se o processo de compilação para sua solução tiver uma lógica personalizada que especifica onde os binários devem ser gerados. Por padrão, o local dos seus binários depende de `<OutputPath>`, `<OutDir>` ou `<IntermediateOutputPath>`, bem como `<BaseOutputPath>` ou `<BaseIntermediateOutputPath>`.
 
-Por exemplo, se o build substituir o `<OutputPath>`, conforme mostrado abaixo:
+Live Unit Testing substitui essas variáveis para garantir que os artefatos de compilação sejam descartados para uma pasta Live Unit Testing artefatos e falharão se o processo de compilação também substituir essas variáveis.
 
-```xml 
+Há duas abordagens principais para tornar Live Unit Testing compilação bem-sucedida. Para configurações de Build mais fáceis, você pode basear seus caminhos de saída em `<BaseIntermediateOutputPath>`. Para configurações mais complexas, você pode basear seus caminhos de saída em `<LiveUnitTestingBuildRootPath>`.
+
+### <a name="overriding-outputpathintermediateoutputpath-conditionally-based-on-baseoutputpath-baseintermediateoutputpath"></a>A substituição de `<OutputPath>`/`<IntermediateOutputPath>` condicionalmente com base em `<BaseOutputPath>`/ `<BaseIntermediateOutputPath>`.
+
+> [!NOTE]
+> Para usar essa abordagem, cada projeto precisa ser capaz de criar de forma independente uma da outra. Não têm um artefato de referência de projeto de outro projeto durante a compilação. Não há um projeto carregar dinamicamente assemblies de outro projeto durante o tempo de execução (por exemplo, chame `Assembly.Loadfile("..\..\Project2\Release\Project2.dll")`).
+
+Durante a compilação, Live Unit Testing substitui automaticamente a `<BaseOutputPath>`/`<BaseIntermediateOutputPath>` variáveis para direcionar a pasta de artefatos Live Unit Testing.
+
+Por exemplo, se o build substituir o <OutputPath>, conforme mostrado abaixo:
+
+```xml
 <Project>
   <PropertyGroup>
     <OutputPath>$(SolutionDir)Artifacts\$(Configuration)\bin\$(MSBuildProjectName)</OutputPath>
@@ -103,7 +114,7 @@ Por exemplo, se o build substituir o `<OutputPath>`, conforme mostrado abaixo:
 
 em seguida, substitua-o pelo seguinte XML:
 
-```xml 
+```xml
 <Project>
   <PropertyGroup>
     <BaseOutputPath Condition="'$(BaseOutputPath)' == ''">$(SolutionDir)Artifacts\$(Configuration)\bin\$(MSBuildProjectName)\</BaseOutputPath>
@@ -115,6 +126,46 @@ em seguida, substitua-o pelo seguinte XML:
 Isso garante que `<OutputPath>` reside na pasta `<BaseOutputPath>`.
 
 Não substitua `<OutDir>` diretamente no processo de build; em vez disso, substitua `<OutputPath>` para soltar os artefatos de build em uma localização específica.
+
+### <a name="overriding-your-properties-based-on-the-liveunittestingbuildrootpath-property"></a>Substituindo suas propriedades com base na propriedade `<LiveUnitTestingBuildRootPath>`.
+
+> [!NOTE]
+> Nessa abordagem, você precisa ter cuidado com os arquivos adicionados na pasta de artefatos que não são gerados durante a compilação. O exemplo a seguir mostra o que fazer ao colocar a pasta pacotes em artefatos. Como o conteúdo dessa pasta não é gerado durante a compilação, a Propriedade MSBuild **não deve ser alterada**.
+
+Durante uma Live Unit Testing compilação, a propriedade `<LiveUnitTestingBuildRootPath>` é definida como o local da pasta Live Unit Testing artefatos.
+
+Por exemplo, suponha que seu projeto tenha a estrutura mostrada aqui.
+
+```
+.vs\...\lut\0\b
+artifacts\{binlog,obj,bin,nupkg,testresults,packages}
+src\{proj1,proj2,proj3}
+tests\{testproj1,testproj2}
+Solution.sln
+```
+Durante a compilação do Live Unit Testing, a propriedade `<LiveUnitTestingBuildRootPath>` é definida como o caminho completo de `.vs\...\lut\0\b`. Se o projeto definir `<ArtifactsRoot>` propriedade que é mapeada para o dir da solução, você poderá atualizar o projeto do MSBuild da seguinte maneira:
+
+```xml
+<Project>
+    <PropertyGroup Condition="'$(LiveUnitTestingBuildRootPath)' == ''">
+        <SolutionDir>$([MSBuild]::GetDirectoryNameOfFileAbove(`$(MSBuildProjectDirectory)`, `YOUR_SOLUTION_NAME.sln`))\</SolutionDir>
+
+        <ArtifactsRoot>Artifacts\</ArtifactsRoot>
+        <ArtifactsRoot Condition="'$(LiveUnitTestingBuildRootPath)' != ''">$(LiveUnitTestingBuildRootPath)</ArtifactsRoot>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <BinLogPath>$(ArtifactsRoot)\BinLog</BinLogPath>
+        <ObjPath>$(ArtifactsRoot)\Obj</ObjPath>
+        <BinPath>$(ArtifactsRoot)\Bin</BinPath>
+        <NupkgPath>$(ArtifactsRoot)\Nupkg</NupkgPath>
+        <TestResultsPath>$(ArtifactsRoot)\TestResults</TestResultsPath>
+
+        <!-- Note: Given that a build doesn't generate packages, the path should be relative to the solution dir, rather than artifacts root, which will change during a Live Unit Testing build. -->
+        <PackagesPath>$(SolutionDir)\artifacts\packages</PackagesPath>
+    </PropertyGroup>
+</Project>
+```
 
 ## <a name="build-artifact-location"></a>Localização do artefato de compilação
 
@@ -133,8 +184,6 @@ Há várias diferenças:
 - O Live Unit Testing não cria um domínio do aplicativo para executar testes, mas os testes executados por meio da janela **Gerenciador de Testes** criam um domínio do aplicativo.
 
 - O Live Unit Testing executa testes em cada assembly de teste sequencialmente. No **Gerenciador de testes**, você pode optar por executar vários testes em paralelo.
-
-- A descoberta e a execução de testes no Live Unit Testing usam a versão 2 do `TestPlatform`, enquanto a janela **Gerenciador de Testes** usa a versão 1. No entanto, você não observará nenhuma diferença na maioria dos casos.
 
 - O **Gerenciador de testes** executa testes em um STA (single-threaded apartment) por padrão, enquanto Live Unit Testing executa testes em um MTA (multi-threaded apartment). Para executar testes do MSTest no STA no Live Unit Testing, decore o método de teste ou a classe recipiente com o atributo `<STATestMethod>` ou `<STATestClass>` que pode ser encontrado no pacote NuGet `MSTest.STAExtensions 1.0.3-beta`. Para o NUnit, decore o método de teste com o atributo `<RequiresThread(ApartmentState.STA)>` e para o xUnit, com o atributo `<STAFact>`.
 
@@ -215,6 +264,6 @@ Talvez você não veja ícones no editor se os assemblies que o Live Unit Testin
 
 - Crie uma variável de ambiente em nível de usuário chamada `VS_UTE_DIAGNOSTICS` e defina-a como 1 (ou qualquer valor) e reinicie o Visual Studio. Agora você verá muitos logs na guia **Saída – Testes** do Visual Studio.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Teste de Unidade Dinâmica](live-unit-testing.md)

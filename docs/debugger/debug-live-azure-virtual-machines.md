@@ -13,12 +13,12 @@ monikerRange: '>= vs-2019'
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: 52ce973f1521f3ca9ba83513f6711287c49db7bb
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: ef314cf78c685251496274309af91e3bb2108a1b
+ms.sourcegitcommit: 10d16e18c5f5e482c4c2856e6cacaad283463b65
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68415764"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75776117"
 ---
 # <a name="debug-live-aspnet-apps-on-azure-virtual-machines-and-azure-virtual-machine-scale-sets-using-the-snapshot-debugger"></a>Depurar aplicativos ASP.NET dinâmicos em máquinas virtuais do Azure e conjuntos de dimensionamento de máquinas virtuais do Azure usando o Depurador de Instantâneos
 
@@ -33,7 +33,7 @@ Neste tutorial, você irá:
 > * Definir um snappoint e exibir um instantâneo
 > * Definir um logpoint
 
-## <a name="prerequisites"></a>Pré-requisitos
+## <a name="prerequisites"></a>{1&gt;{2&gt;Pré-requisitos&lt;2}&lt;1}
 
 * Os Depurador de Instantâneos para VMs (máquinas virtuais) do Azure e conjuntos de dimensionamento de máquinas virtuais do Azure só estão disponíveis para o Visual Studio 2019 Enterprise ou superior com a **carga de trabalho de desenvolvimento do Azure**. (Na guia **Componentes individuais**,é possível encontrá-lo em **Depuração e testes** > **Depurador de instantâneos**).
 
@@ -43,6 +43,9 @@ Neste tutorial, você irá:
   * Aplicativos ASP.NET em execução no .NET Framework 4.6.1 ou posterior.
   * Aplicativos ASP.NET Core em execução no .NET Core 2.0 ou posterior no Windows.
 
+  > [!NOTE]
+  >  Visual Studio Enterprise em execução no Windows de 32 bits não poderá exibir instantâneos.
+
 ## <a name="open-your-project-and-start-the-snapshot-debugger"></a>Abra seu projeto e iniciar o Depurador de Instantâneos
 
 1. Abra o projeto em que você gostaria de fazer a depuração de instantâneos.
@@ -50,7 +53,7 @@ Neste tutorial, você irá:
     > [!IMPORTANT]
     > Para depurar o instantâneo, você precisa abrir a *mesma versão do código-fonte* que é publicado no serviço de conjunto de dimensionamento de máquinas virtuais Machine\Virtual do Azure.
 
-1. Escolha **Depurar > Anexar Depurador de Instantâneos...** . Selecione o conjunto de dimensionamento da máquina Machine\Virtual virtual do Azure em que seu aplicativo Web está implantado e uma conta de armazenamento do Azure e clique em **anexar**. Depurador de Instantâneos também dá suporte ao [serviço kubernetes do Azure](debug-live-azure-kubernetes.md) e ao [serviço de Azure app](debug-live-azure-applications.md).
+1. Escolha **depurar > anexar depurador de instantâneos...** . Selecione o conjunto de dimensionamento da máquina Machine\Virtual virtual do Azure em que seu aplicativo Web está implantado e uma conta de armazenamento do Azure e clique em **anexar**. Depurador de Instantâneos também dá suporte ao [serviço kubernetes do Azure](debug-live-azure-kubernetes.md) e ao [serviço de Azure app](debug-live-azure-applications.md).
 
     ![Iniciar o depurador de instantâneos no menu Depurar](../debugger/media/snapshot-debug-menu-attach.png)
 
@@ -145,7 +148,7 @@ Além de tirar um instantâneo quando um snappoint é atingido, também é poss�
 
     Se você escolher **Enviar para log do aplicativo**, quando o logpoint for atingido, a mensagem será exibida em qualquer lugar em que você possa ver mensagens de `System.Diagnostics.Trace` (ou `ILogger` no .NET Core), como [App Insights](/azure/application-insights/app-insights-asp-net-trace-logs).
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
 
 Neste tutorial, você aprendeu como usar o Depurador de Instantâneos para Máquinas Virtuais e Conjuntos de Dimensionamento de Máquinas Virtuais do Azure. Talvez você queira ler mais detalhes sobre esse recurso.
 

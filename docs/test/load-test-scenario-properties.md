@@ -6,15 +6,15 @@ helpviewer_keywords:
 - load tests, properties
 - load tests, scenarios
 ms.assetid: 4414a638-1fa2-40ad-b1f4-b99f90b62e62
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 54159ca7b0d99e0bba7e7b048138ffacf6ab5b0b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c2011438f1fcb0230cde0de527216456553e7c64
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652964"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75584433"
 ---
 # <a name="load-test-scenario-properties"></a>Propriedades do cenário de teste de carga
 
@@ -48,7 +48,7 @@ Altere as configurações das propriedades do cenário de teste de carga no Visu
 |**Percentual de novos usuários**|Valor numérico que especifica a porcentagem de novos usuários ou a primeira vez dos visitantes no cenário.<br /><br />Para obter mais informações, confira [Como especificar o percentual de usuários virtuais que usam dados de cache da Web](../test/how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data.md).|
 |**Perfil de processamento**|Especifica se o cenário usará a **Distribuição Normal** ou se o perfil de processamento está **Ativado** ou **Desativado**.<br /><br />Para obter mais informações, confira [Editar tempos de processamento para simular atrasos de interação humana do site](../test/edit-think-times-in-load-test-scenarios.md).|
 
-## <a name="timing"></a>Timing
+## <a name="timing"></a>Intervalo
 
 |propriedade|Definição|
 |-|----------------|
@@ -56,6 +56,6 @@ Altere as configurações das propriedades do cenário de teste de carga no Visu
 |**Desabilitar durante aquecimento**|Valor booliano que é usado para especificar se o cenário deve ser executado ou não durante o valor temporal da propriedade **Duração de aquecimento** especificado na configuração da execução do teste de carga.<br /><br />Para obter mais informações sobre as propriedades da configuração da execução de teste de carga, confira [Propriedades das configurações de execução de teste de carga](../test/load-test-run-settings-properties.md).<br /><br />Para saber mais, confira [Configurar atrasos de início do cenário](../test/configure-scenario-start-delays.md).|
 |**Tempos de processamento entre iterações de teste**|Valor numérico que é usado para especificar o tempo de espera em segundos entre iterações de teste.<br /><br />Para obter mais informações, confira [Editar tempos de processamento para simular atrasos de interação humana do site](../test/edit-think-times-in-load-test-scenarios.md).|
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Editar cenários de teste de carga](../test/edit-load-test-scenarios.md)

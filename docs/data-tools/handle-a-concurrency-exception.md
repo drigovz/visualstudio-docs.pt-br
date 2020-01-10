@@ -13,17 +13,17 @@ helpviewer_keywords:
 - updating datasets, errors
 - concurrency control, walkthroughs
 ms.assetid: 73ee9759-0a90-48a9-bf7b-9d6fc17bff93
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 6096e8919d21a93af0dbf6beea2f263bd500d26c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 462d0a9beb88a8fb6d73bf0672bb012c75b8ea93
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648440"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586595"
 ---
 # <a name="handle-a-concurrency-exception"></a>Tratar uma exceção de simultaneidade
 
@@ -45,7 +45,7 @@ Este passo a passos percorre o seguinte processo:
 
 7. Capture o erro e exiba as diferentes versões do registro, permitindo que o usuário determine se deseja continuar e atualizar o banco de dados ou cancelar a atualização.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>{1&gt;{2&gt;Pré-requisitos&lt;2}&lt;1}
 
 Este passo a passos usa SQL Server Express LocalDB e o banco de dados de exemplo Northwind.
 
@@ -63,11 +63,11 @@ Este passo a passos usa SQL Server Express LocalDB e o banco de dados de exemplo
 
        Após um curto período, a consulta terminará de ser executada e o banco de dados Northwind será criado.
 
-## <a name="create-a-new-project"></a>Criar um novo projeto
+## <a name="create-a-new-project"></a>Crie um novo projeto
 
 Comece criando um novo aplicativo Windows Forms:
 
-1. No Visual Studio, no menu **arquivo** , selecione **novo** **projeto**de  > .
+1. No Visual Studio, no menu **Arquivo**, selecione **Novo** > **Projeto**.
 
 2. Expanda **o C# Visual** ou **Visual Basic** no painel esquerdo e, em seguida, selecione **área de trabalho do Windows**.
 
@@ -122,7 +122,7 @@ Agora você pode testar o formulário para certificar-se de que ele se comporta 
 
      O formulário é exibido com um controle <xref:System.Windows.Forms.DataGridView> que é preenchido com dados da tabela Customers.
 
-2. No menu **depurar** , selecione **parar depuração**.
+2. No menu **Depurar**, selecione **Interromper Depuração**.
 
 ## <a name="handle-concurrency-errors"></a>Tratar erros de simultaneidade
 
@@ -191,7 +191,7 @@ Agora, é possível testar o formulário para garantir que ele se comporta da fo
 
 2. Depois que o formulário for exibido, deixe-o em execução e alterne para o IDE do Visual Studio.
 
-3. No menu **Exibir** , escolha **Gerenciador de servidores**.
+3. No menu **Exibir**, escolha **Gerenciador de Servidores**.
 
 4. Em **Gerenciador de servidores**, expanda a conexão que seu aplicativo está usando e, em seguida, expanda o nó **tabelas** .
 
@@ -212,6 +212,6 @@ Agora, é possível testar o formulário para garantir que ele se comporta da fo
 
    A seleção de **não** cancela a atualização e atualiza o conjunto de dados com os valores que estão no momento. Selecionar **Sim** grava o valor proposto no banco de dados.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Salvar dados de volta no banco de dados](../data-tools/save-data-back-to-the-database.md)

@@ -5,17 +5,17 @@ ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.XAMLDesigner
 - VS.ToolsOptionsPages.XAML_Designer.General
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 6a08358e8e82abf00a133edab876dc45626bf500
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9a925e7f3c31b8347148c15b050692fcee26fcb1
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72621904"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585607"
 ---
 # <a name="xaml-designer-options-page"></a>Página de opções do Designer XAML
 
@@ -93,7 +93,7 @@ Use essas configurações para determinar o comportamento do XAML Designer ao ed
 |**Margem padrão**|Quando **Ajustar-se às guias de alinhamento** está habilitado, especifica o espaçamento entre as guias de alinhamento e o controle em pixels ou pontos (conforme determinado pela configuração **Digitar unidades**).|
 |**Preenchimento padrão**|Quando **Ajustar-se às guias de alinhamento** está habilitado, especifica o espaçamento adicional entre as guias de alinhamento e o controle em pixels ou pontos (conforme determinado pela configuração **Digitar unidades**).|
 
-### <a name="animation"></a>Animação
+### <a name="animation"></a>{1&gt;Animação&lt;1}
 
 Use essa configuração para determinar se um aviso é exibido quando animações dependentes (não aceleradas) estão habilitadas no Blend.
 
@@ -106,7 +106,7 @@ Use essas configurações para determinar se efeitos são renderizados ao editar
 |**Renderizar efeitos**|Especifica se efeitos renderizam ao editar arquivos XAML no XAML Designer usando o Blend.|
 |**Limite de zoom**|Especifica o percentual de ampliação com a qual os efeitos são renderizados quando a caixa de seleção **Renderizar efeitos** está selecionada. Se você aplicar zoom além dessa configuração os efeitos não serão mais renderizados no XAML Designer.|
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [XAML no WPF](/dotnet/framework/wpf/advanced/xaml-in-wpf)
 - [Passo a passo: Meu primeiro aplicativo da área de trabalho do WPF](/dotnet/framework/wpf/getting-started/walkthrough-my-first-wpf-desktop-application)

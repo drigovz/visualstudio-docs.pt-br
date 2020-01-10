@@ -5,17 +5,17 @@ ms.date: 07/31/2019
 ms.topic: conceptual
 f1_keywords:
 - Blend.Start.Dev12
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f3955d494d4c04e85eba0541c0cf09749e8ab4de
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f2b9f38d83befcf49ecd3de8da3a2cd26ff3ab46
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649715"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593004"
 ---
 # <a name="blend-for-visual-studio-overview"></a>Visão geral do Blend para Visual Studio
 
@@ -79,7 +79,7 @@ Usar os botões relacionados ao storyboard ![Botões do storyboard no Blend para
 
 Passe o mouse sobre cada botão na janela para saber mais sobre a funcionalidade disponível.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Animar objetos](../xaml-tools/animate-objects-in-xaml-designer.md)
 - [Desenhar formas e demarcadores](../xaml-tools/draw-shapes-and-paths.md)

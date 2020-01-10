@@ -2,17 +2,17 @@
 title: 'Instruções passo a passo: depurando um modelo (template) de texto que acessa um modelo'
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 344a9331ed63d2da27379770305905ecf5edee77
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f592cfbd46e0f4fc3a64ecaabadf17a6754480c0
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666953"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593519"
 ---
 # <a name="walkthrough-debugging-a-text-template-that-accesses-a-model"></a>Instruções passo a passo: depurando um modelo (template) de texto que acessa um modelo
 Quando você modifica ou adiciona modelos de texto em uma solução de linguagem específica de domínio, você pode receber erros quando o mecanismo transforma o modelo no código-fonte ou quando compila o código gerado. A instrução a seguir demonstra algumas das coisas que você pode fazer para depurar um modelo de texto.
@@ -45,7 +45,7 @@ Quando você modifica ou adiciona modelos de texto em uma solução de linguagem
 3. Verifique se a propriedade de **ferramenta personalizada** de DebugTest.tt está definida como `TextTemplatingFileGenerator`.
 
 ## <a name="debugging-directives-that-access-a-model-from-a-text-template"></a>Diretivas de depuração que acessam um modelo de um modelo de texto
- Antes de poder acessar um modelo a partir das instruções e expressões em um modelo de texto, você deve primeiro chamar um processador de diretivas gerado. Chamar o processador de diretiva gerado torna as classes em seu modelo disponíveis para o código de modelo de texto como propriedades. Para obter mais informações, consulte [acessando modelos de modelos de texto](../modeling/accessing-models-from-text-templates.md).
+ Antes de poder acessar um modelo a partir das instruções e expressões em um modelo de texto, você deve primeiro chamar um processador de diretivas gerado. Chamar o processador de diretiva gerado torna as classes em seu modelo disponíveis para o código de modelo de texto como propriedades. Para obter mais informações, consulte [acessando modelos a partir de modelos de texto](../modeling/accessing-models-from-text-templates.md).
 
  Nos procedimentos a seguir, você irá depurar um nome de diretiva incorreto e um nome de propriedade incorreto.
 
@@ -157,11 +157,11 @@ Quando você modifica ou adiciona modelos de texto em uma solução de linguagem
 
      (C#)
 
-     **Compilando transformação: Microsoft. VisualStudio. TextTemplating \<GUID >. GeneratedTextTransformation ' não contém uma definição para ' ExampleModel '**
+     **Compilando transformação: Microsoft. VisualStudio. TextTemplating\<GUID >. GeneratedTextTransformation ' não contém uma definição para ' ExampleModel '**
 
      (Visual Basic)
 
-     **Compilando transformação: ' ExampleModel ' não é um membro de ' Microsoft. VisualStudio. TextTemplating \<GUID >. GeneratedTextTransformation'.**
+     **Compilando transformação: ' ExampleModel ' não é um membro de ' Microsoft. VisualStudio. TextTemplating\<GUID >. GeneratedTextTransformation'.**
 
      Nesse caso, o código do modelo de texto contém um nome de propriedade incorreto. Você especificou `ExampleModel` como o nome da propriedade, mas o nome correto da propriedade é `LibraryModel`. Você pode encontrar o nome de propriedade correto no parâmetro de forneceções, conforme mostrado no código a seguir:
 

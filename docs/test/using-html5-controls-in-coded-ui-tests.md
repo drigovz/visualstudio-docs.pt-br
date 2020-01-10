@@ -2,17 +2,17 @@
 title: Usando controles HTML5 em testes de IU codificados
 ms.date: 11/04/2016
 ms.topic: conceptual
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-author: jillre
-ms.openlocfilehash: e9118dc94019f40289730be78c28777fb86d89db
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+author: mikejo5000
+ms.openlocfilehash: 13f5da784a43df5146a66ca868bb6add9a702906
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659776"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585581"
 ---
 # <a name="using-html5-controls-in-coded-ui-tests"></a>Usando controles HTML5 em testes de IU codificados
 
@@ -36,7 +36,7 @@ Os teste de IU codificados incluem suporte a alguns dos controles HTML5 incluíd
 
 ![Controle do HTML5 áudio](../test/media/codedui_html5_audio.png)
 
-|Ação|Gravando|Código gerado|
+|Action|Gravando|Código gerado|
 |-|---------------|-|
 |**Reproduzir áudio**<br /><br /> Diretamente do controle ou do menu do clique com o botão direito do controle.|Play \<name> Audio from 00:00:00|HtmlAudio.Play(TimeSpan)|
 |**Busca em uma hora específica no áudio**|Seek \<name> Audio to 00:01:48|HtmlAudio.Seek(TimeSpan)|
@@ -59,7 +59,7 @@ Confira [HTMLAudioElement](https://developer.mozilla.org/docs/Web/API/HTMLAudioE
 
 ![Controle do HTML5 vídeo](../test/media/codedui_html5_video.png)
 
-|Ação|Gravando|Código gerado|
+|Action|Gravando|Código gerado|
 |-|---------------|-|
 |**Reproduzir vídeo**<br /><br /> Diretamente do controle ou do menu do clique com o botão direito do controle.|Play \<name> Video  from 00:00:00|HtmlVideo.Play(TimeSpan)|
 |**Busca em uma hora específica no vídeo**|Seek \<name> Video to 00:01:48|HtmlVideo.Seek(TimeSpan)|
@@ -82,7 +82,7 @@ Confira [HTMLVideoElement](https://developer.mozilla.org/docs/Web/HTML/Element/v
 
 ![Controle ProgressBar do HTML5](../test/media/codedui_html5_progressbar.png)
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Elementos HTML](https://developer.mozilla.org/docs/Web/HTML/Element)
 - [Usar a automação de interface do usuário para testar seu código](../test/use-ui-automation-to-test-your-code.md)

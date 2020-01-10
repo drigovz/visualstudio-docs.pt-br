@@ -8,17 +8,17 @@ helpviewer_keywords:
 - /Clean Devenv switch
 - Devenv, /Clean switch
 ms.assetid: 79929dfd-22c9-4cec-a0d0-a16f15b8f7e4
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f46a17371f0c83d3bdb3873c0138eca87c6b3d5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ac184f25d79a47814fee52b99bce1cddce247fc5
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72663818"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75570460"
 ---
 # <a name="clean-devenvexe"></a>/Clean (devenv.exe)
 
@@ -34,7 +34,7 @@ devenv SolutionName /Clean [Config [/Project ProjName [/ProjectConfig ProjConfig
 
 - *SolutionName*
 
-  Necessário. O caminho completo e o nome do arquivo de solução.
+  Necessária. O caminho completo e o nome do arquivo de solução.
 
 - *Config*
 
@@ -48,7 +48,7 @@ devenv SolutionName /Clean [Config [/Project ProjName [/ProjectConfig ProjConfig
 
   Opcional. O nome da configuração de build do projeto (por exemplo, `Debug` ou `Release`) a ser usado ao limpar o `/Project` nomeado. Se mais de uma plataforma de solução estiver disponível, também será preciso especificar a plataforma (por exemplo, `Debug|Win32`). Se essa opção for especificada, ela substituirá o argumento *Config*.
 
-- `/Out` *OutputFilename*
+- `/Out` *NomeDoArquivoDeSaída*
 
   Opcional. O nome de um arquivo para o qual você deseja enviar a saída da ferramenta. Se o arquivo já existir, a ferramenta anexará a saída ao final do arquivo.
 
@@ -74,7 +74,7 @@ devenv "%USERPROFILE%\source\repos\MySolution\MySolution.sln" /Clean
 devenv "%USERPROFILE%\source\repos\MySolution\MySolution.sln" /Clean "Debug" /project "CSharpWinApp\CSharpWinApp.csproj" /projectconfig "Debug"
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Opções de linha de comando do Devenv](../../ide/reference/devenv-command-line-switches.md)
 - [/Build (devenv.exe)](../../ide/reference/build-devenv-exe.md)

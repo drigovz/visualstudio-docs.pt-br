@@ -11,21 +11,21 @@ helpviewer_keywords:
 - saving data, walkthroughs
 - data [Visual Studio], TableAdapter
 ms.assetid: 74a6773b-37e1-4d96-a39c-63ee0abf49b1
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: b73e193f1bb3082a353e004200d437a74f508941
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 16ba6fcab6ef0f7a60f8cb8373a10a7c4383676b
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72641153"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586205"
 ---
 # <a name="save-data-with-the-tableadapter-dbdirect-methods"></a>Salvar os dados com os métodos TableAdapter DBDirect
 
-Este tutorial fornece instruções detalhadas para executar instruções SQL diretamente em um banco de dados usando os métodos DBDirect de um TableAdapter. Os métodos DBDirect de um TableAdapter fornecem um bom nível de controle sobre as atualizações do seu banco de dados. Você pode usá-los para executar instruções SQL específicas e procedimentos armazenados chamando os métodos individuais `Insert`, `Update` e `Delete` conforme necessário pelo seu aplicativo (em oposição ao método de `Update` sobrecarregado que executa a atualização, inserir e excluir instruções em uma única chamada).
+Este tutorial fornece instruções detalhadas para executar instruções SQL diretamente em um banco de dados usando os métodos DBDirect de um TableAdapter. Os métodos DBDirect de um TableAdapter fornecem um bom nível de controle sobre as atualizações do seu banco de dados. Você pode usá-los para executar instruções SQL específicas e procedimentos armazenados chamando os métodos individuais `Insert`, `Update`e `Delete` conforme necessário pelo seu aplicativo (ao contrário do método `Update` sobrecarregado que executa as instruções UPDATE, INSERT e DELETE em uma única chamada).
 
 Durante este passo a passo, você aprenderá a:
 
@@ -39,7 +39,7 @@ Durante este passo a passo, você aprenderá a:
 
 - Adicione métodos para acessar diretamente o banco de dados e executar inserções, atualizações e exclusões.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>{1&gt;{2&gt;Pré-requisitos&lt;2}&lt;1}
 
 Este passo a passos usa SQL Server Express LocalDB e o banco de dados de exemplo Northwind.
 
@@ -61,7 +61,7 @@ Este passo a passos usa SQL Server Express LocalDB e o banco de dados de exemplo
 
 A primeira etapa é criar um **aplicativo Windows Forms**.
 
-1. No Visual Studio, no menu **arquivo** , selecione **novo** **projeto**de  > .
+1. No Visual Studio, no menu **Arquivo**, selecione **Novo** > **Projeto**.
 
 2. Expanda **o C# Visual** ou **Visual Basic** no painel esquerdo e, em seguida, selecione **área de trabalho do Windows**.
 
@@ -89,7 +89,7 @@ Esta etapa usa o **Assistente de Configuração de Fonte de Dados** para criar u
 
     - Se uma conexão de dados com o banco de dados de exemplo Northwind estiver disponível na lista suspensa, selecione-o.
 
-         \- ou -
+         - ou -
 
     - Selecione **Nova Conexão** para inicializar a caixa de diálogo **Adicionar/Modificar Conexão**.
 
@@ -109,7 +109,7 @@ Crie controles de associação de dados arrastando itens da janela **Fontes de D
 
 Para criar controles associados a dados no Windows Form, arraste o nó da **região** principal da janela **fontes de dados** para o formulário.
 
-Um controle <xref:System.Windows.Forms.DataGridView> e uma faixa de ferramentas (<xref:System.Windows.Forms.BindingNavigator>) para navegação em registros são exibidos no formulário. Um [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), `RegionTableAdapter`, <xref:System.Windows.Forms.BindingSource> e <xref:System.Windows.Forms.BindingNavigator> aparecem na bandeja de componentes.
+Um controle <xref:System.Windows.Forms.DataGridView> e uma faixa de ferramentas (<xref:System.Windows.Forms.BindingNavigator>) para navegação em registros são exibidos no formulário. Um [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), `RegionTableAdapter`, <xref:System.Windows.Forms.BindingSource>e <xref:System.Windows.Forms.BindingNavigator> aparecem na bandeja de componentes.
 
 ### <a name="to-add-buttons-that-will-call-the-individual-tableadapter-dbdirect-methods"></a>Para adicionar botões que chamam os métodos individuais DbDirect de um TableAdapter
 
@@ -160,7 +160,7 @@ Um controle <xref:System.Windows.Forms.DataGridView> e uma faixa de ferramentas 
 
 - Selecione o botão **excluir** e verifique se o registro foi removido da grade.
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
 
 Dependendo dos requisitos do aplicativo, há várias etapas que você pode querer executar depois de criar um formulário associado a dados. Entre algumas das melhorias que você poderia fazer nessa explicação passo a passo estão:
 
@@ -168,6 +168,6 @@ Dependendo dos requisitos do aplicativo, há várias etapas que você pode quere
 
 - Adicionar tabelas ao conjunto de dados, selecionando **Configurar DataSet com Assistente** na janela **Fontes de Dados**. Você pode adicionar controles que exibem dados relacionados, arrastando os nós relacionados para o formulário. Para obter mais informações, consulte [relações em conjuntos de](relationships-in-datasets.md)dados.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Salvar dados de volta no banco de dados](../data-tools/save-data-back-to-the-database.md)

@@ -23,17 +23,17 @@ helpviewer_keywords:
 - WPF Designer, XAML formatting
 - XAML view settings, attribute spacing
 ms.assetid: 2a420e58-a408-4e8d-9220-44eeb4f67801
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 693e0d206455c2c430f8d723f131868fdf21eefc
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: cec66cdb2de3f89358cd0ee90867154cc374a7fd
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189561"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75568198"
 ---
 # <a name="options-text-editor-xaml-miscellaneous"></a>Opções, Editor de texto, XAML, Diversos
 
@@ -54,6 +54,6 @@ Use essa configuração para controlar quando marcas e aspas são geradas automa
 
 Use essa configuração para controlar quando os erros e avisos são gerados automaticamente. Para obter mais informações, confira [Avisos e erros de XAML](../../xaml-tools/xaml-errors-warnings.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [XAML no WPF](/dotnet/framework/wpf/advanced/xaml-in-wpf)

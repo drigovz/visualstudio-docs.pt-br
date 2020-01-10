@@ -7,19 +7,19 @@ helpviewer_keywords:
 - msbuild.exe, building specific targets in a solution
 - MSBuild, msbuild.exe
 ms.assetid: f46feb9b-4c16-4fec-b6e1-36a959692ba3
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 34c04d12ccc17424a2f938c04751d4e3d4c9f05f
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
-ms.translationtype: HT
+ms.openlocfilehash: 921b5d2d4aad7cfe48b7f6cc9cb802fde9520e19
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263784"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585252"
 ---
-# <a name="how-to-build-specific-targets-in-solutions-by-using-msbuildexe"></a>Como: Compilar destinos específicos em soluções usando o MSBuild.exe
+# <a name="how-to-build-specific-targets-in-solutions-by-using-msbuildexe"></a>Como criar destinos específicos em soluções usando o MSBuild.exe
 Use o *MSBuild.exe* para criar destinos específicos de projetos específicos em uma solução.
 
 #### <a name="to-build-a-specific-target-of-a-specific-project-in-a-solution"></a>Para criar um destino específico de um projeto específico em uma solução
@@ -41,7 +41,7 @@ Se quiser examinar as opções disponíveis para você, será possível usar uma
 
 Não compile com essa variável de ambiente definida a menos que precise dessa exibição interna. Essa configuração pode causar problemas ao criar projetos na sua solução.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 - [Referência de linha de comando](../msbuild/msbuild-command-line-reference.md)
 - [Referência do MSBuild](../msbuild/msbuild-reference.md)
 - [MSBuild](../msbuild/msbuild.md)

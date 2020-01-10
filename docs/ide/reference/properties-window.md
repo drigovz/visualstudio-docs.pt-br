@@ -1,5 +1,5 @@
 ---
-title: Janela Propriedades
+title: Janela de Propriedades
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,17 +15,17 @@ helpviewer_keywords:
 - virtual functions, Properties window
 - Properties window
 ms.assetid: e6e0fa4f-75c4-4a52-af15-281cd61876ca
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4701f5ea882ab2fbb75f11bc3cc6d85fc92b4b8e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d1be1d4fa9f1b088547bb21dfb64254209783d7e
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72655689"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75565702"
 ---
 # <a name="properties-window"></a>Janela de Propriedades
 
@@ -33,7 +33,7 @@ Use esta janela para exibir e alterar as propriedades de tempo de design e os ev
 
 A janela **Propriedades** exibe os diferentes tipos de campos de edição, dependendo das necessidades de uma determinada propriedade. Esses campos de edição incluem caixas de edição, listas suspensas e links a caixas de diálogo do editor personalizado. As propriedades mostradas em cinza são somente leitura.
 
-## <a name="uielement-list"></a>Lista UIElement
+## <a name="uielement-list"></a>Lista de UIElement
 
 Nome do objeto\
 Lista o objeto ou os objetos atualmente selecionados. Somente objetos do editor ou do designer ativo estão visíveis. Quando você seleciona vários objetos, somente as propriedades comuns a todos os objetos selecionados são exibidas.
@@ -83,7 +83,7 @@ Mostra uma representação visual do elemento selecionado no momento ao editar a
 Pesquisar\
 Fornece uma função de Pesquisa de propriedades e eventos ao editar arquivos XAML no designer. A caixa de pesquisa responde a pesquisas de palavras parciais e atualiza os resultados da pesquisa à medida que você digita.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Referência de Propriedades do Projeto](../../ide/reference/project-properties-reference.md)
 - [Personalizando layouts de janela](../../ide/customizing-window-layouts-in-visual-studio.md)

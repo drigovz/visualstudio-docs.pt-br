@@ -7,17 +7,17 @@ helpviewer_keywords:
 - builds [Visual Studio], about building in Visual Studio
 - custom build steps, types of builds
 ms.assetid: c7958821-285f-4e28-9e7a-b5d8b40336a1
-author: ghogen
-ms.author: ghogen
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c99408530344c72d2e9669178c5e79f7c34d551
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: 38d583553c0382598681ab3aa52ca3a41a27ed2c
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71211250"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585490"
 ---
 # <a name="compile-and-build-in-visual-studio"></a>Compilar e criar no Visual Studio
 
@@ -25,13 +25,13 @@ Quando você compila o código-fonte, o mecanismo de build cria assemblies e apl
 
 Compilando seu código com frequência, é possível identificar erros rapidamente em tempo de compilação, como sintaxe incorreta, palavras-chave com erros de ortografia e erros de digitação. Também é possível detectar e corrigir erros em tempo de execução, como erros lógicos e semânticos, ao compilar e executar versões de depuração do código.
 
-Um build bem-sucedido valida que o código-fonte do aplicativo contém a sintaxe correta e que todas as referências estáticas a bibliotecas, assemblies e outros componentes podem ser resolvidas. É produzido um aplicativo executável que pode ser testado quanto ao funcionamento adequado em um [ambiente de depuração](../debugger/index.yml) e por meio de uma variedade de testes manuais e automatizados para [validar a qualidade do código](../test/improve-code-quality.md). Depois que o aplicativo for completamente testado, você poderá compilar uma versão de lançamento a ser implantada em seus clientes. Para obter uma introdução a esse processo, confira [Passo a passo: Criando um aplicativo](../ide/walkthrough-building-an-application.md).
+Um build bem-sucedido valida que o código-fonte do aplicativo contém a sintaxe correta e que todas as referências estáticas a bibliotecas, assemblies e outros componentes podem ser resolvidas. É produzido um aplicativo executável que pode ser testado quanto ao funcionamento adequado em um [ambiente de depuração](../debugger/index.yml) e por meio de uma variedade de testes manuais e automatizados para [validar a qualidade do código](../test/improve-code-quality.md). Depois que o aplicativo for completamente testado, você poderá compilar uma versão de lançamento a ser implantada em seus clientes. Para obter uma introdução a esse processo, veja [Passo a passo: Criação de um aplicativo](../ide/walkthrough-building-an-application.md).
 
 Você pode usar qualquer um dos métodos a seguir para compilar um aplicativo: o IDE do Visual Studio, as ferramentas de linha de comando do MSBuild, e o Azure Pipelines:
 
 | Método de build | Benefícios |
 | --- |--- | --- |
-| IDE |– Criar compilações imediatamente e testá-las em um depurador.<br />– Executar builds em multiprocessador para projetos C++ e C#.<br />– Personalizar diferentes aspectos do sistema de build. |
+| {1&gt;IDE&lt;1} |– Criar compilações imediatamente e testá-las em um depurador.<br />– Executar builds em multiprocessador para projetos C++ e C#.<br />– Personalizar diferentes aspectos do sistema de build. |
 | Linha de comando do MSBuild| – Criar projetos sem instalar o Visual Studio.<br />– Executar builds em multiprocessador para todos os tipos de projeto.<br />– Personalizar a maioria das áreas do sistema de build.|
 | Azure Pipelines | – Automatizar o processo de build como parte de um pipeline de integração contínua/entrega contínua.<br />– Aplicar testes automatizados com cada compilação.<br />– Empregar recursos baseados em nuvem praticamente ilimitados para processos de build.<br />– Modificar o fluxo de trabalho de compilação e, conforme necessário, criar atividades de compilação para realizar tarefas profundamente personalizadas.|
 
@@ -44,7 +44,7 @@ A documentação nesta seção detalha mais o processo de compilação baseado n
 
 Quando você cria um projeto, o Visual Studio cria configurações de compilação padrão para o projeto e para a solução que contém o projeto.  Essas configurações definem a maneira como as soluções e os projetos são criados e implantados. Configurações de projeto, em particular, são exclusivas a uma plataforma de destino (por exemplo, o Windows ou Linux) e tipo de build (por exemplo, depuração ou lançamento). Você pode editar essas configurações como quiser e também pode criar suas próprias configurações, conforme necessário.
 
-Para obter uma introdução à compilação com o IDE, confira [Passo a passo: Criando um aplicativo](walkthrough-building-an-application.md).
+Para obter uma introdução à compilação com o IDE, veja [Passo a passo: Criação de um aplicativo](walkthrough-building-an-application.md).
 
 Em seguida, consulte [Compilando e limpando projetos e soluções no Visual Studio](building-and-cleaning-projects-and-solutions-in-visual-studio.md) para saber mais sobre as personalizações de diferentes aspectos que você pode fazer no processo. As personalizações incluem [alterar diretórios de saída](how-to-change-the-build-output-directory.md), [especificar eventos de build personalizados](specifying-custom-build-events-in-visual-studio.md), [gerenciar dependências do projeto](how-to-create-and-remove-project-dependencies.md), [gerenciar arquivos de log de build](how-to-view-save-and-configure-build-log-files.md) e [suprimir avisos do compilador](how-to-suppress-compiler-warnings.md).
 
@@ -56,7 +56,7 @@ A partir daí, você pode explorar uma variedade de outras tarefas:
 - [Definir opções de build](reference/options-dialog-box-projects-and-solutions-build-and-run.md)
 - [Compilar vários projetos paralelamente](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Criar (compilar) projetos de site](https://msdn.microsoft.com/Library/a9cbb88c-8fff-4c67-848b-98fbfd823193)
 - [Compilar e criar (Visual Studio para Mac)](/visualstudio/mac/compiling-and-building)

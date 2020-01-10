@@ -12,15 +12,15 @@ helpviewer_keywords:
 - ComplexBindingPropertiesAttribute class, using
 - Data Sources Window, selecting controls
 ms.assetid: 8c43e7d2-ba94-4d9b-96de-3aa971955afd
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
-ms.openlocfilehash: b6334d233ccb2c4453d117b6bdfe942b6ea092e2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: cd4791e118d22aab1126987461547f9fa2fec317
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648926"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587102"
 ---
 # <a name="add-custom-controls-to-the-data-sources-window"></a>Adicionar controles personalizados à janela Fontes de Dados
 
@@ -39,7 +39,7 @@ Para adicionar ou remover controles da lista de controles disponíveis para iten
 2. Na janela **fontes de dados** , clique em um item que faz parte de uma fonte de dados que você adicionou à janela e, em seguida, clique no menu suspenso do item.
 
    > [!TIP]
-   > Se a janela fontes de dados não estiver aberta, abra-a selecionando **exibir**  >  outras**fontes de dados**do**Windows**  > .
+   > Se a janela fontes de dados não estiver aberta, abra-a selecionando **exibir** > outras **fontes de dados**do **Windows** > .
 
 3. No menu suspenso, clique em **Personalizar**. Uma das seguintes caixas de diálogo é aberta:
 
@@ -89,7 +89,7 @@ Para adicionar controles à lista de controles associados:
     > [!NOTE]
     > Somente os controles localizados na solução atual ou em um assembly referenciado podem ser adicionados à lista de controles associados. (Os controles também devem implementar um dos atributos de vinculação de dados na tabela anterior.) Para associar dados a um controle personalizado que não está disponível na janela fontes de dados, arraste o controle da **caixa de ferramentas** para a superfície de design e, em seguida, arraste o item para associar da janela **fontes de dados** para o controle.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Associar controles a dados no Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)
 - [Caixa de diálogo opções de personalização da interface do usuário de dados](../ide/reference/options-windows-forms-designer-data-ui-customization.md)

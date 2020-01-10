@@ -1,24 +1,24 @@
 ---
-title: 'Como: Alterar o diretório de saída do build'
+title: Como alterar o diretório de saída do build
 ms.date: 05/15/2019
 ms.technology: vs-ide-compile
 ms.topic: conceptual
 helpviewer_keywords:
 - output directory, changing
 ms.assetid: a8333c89-afb2-4b1d-b2e2-9146da852402
-author: ghogen
-ms.author: ghogen
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 493de227174b60b4834c2732ddbf16a5586fa49e
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 732e48bf5cbea8534cc5c90ac5af80df0cc93e7b
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71238180"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594377"
 ---
-# <a name="how-to-change-the-build-output-directory"></a>Como: Alterar o diretório de saída do build
+# <a name="how-to-change-the-build-output-directory"></a>Como alterar o diretório de saída do build
 
 Você pode especificar o local de saída gerado pelo seu projeto por configuração (para depuração, versão ou ambas).
 
@@ -58,7 +58,7 @@ Você pode especificar o local de saída gerado pelo seu projeto por configuraç
 >
 > ![Seletor de configuração de build do Visual Studio de 2019](media/build-configuration-chooser.png)
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Página de build, Designer de Projeto (C#)](../ide/reference/build-page-project-designer-csharp.md)
 - [Página de propriedades gerais (projeto)](/cpp/build/reference/general-property-page-project)

@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 321e8271806f8f9e2983e82db010cd2ffb49a3ee
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.openlocfilehash: faf418155708ebc577efea57ed3352953a8d577d
+ms.sourcegitcommit: 5920a8b0c68350f11eabc1652a19b04d0196881a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74777940"
+ms.lasthandoff: 01/03/2020
+ms.locfileid: "75622566"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>Tutorial: Criar um aplicativo Node.js e React no Visual Studio
 
@@ -85,7 +85,9 @@ Primeiro, crie um projeto de aplicativo Web Node.js.
 1. Crie um novo projeto.
 
     ::: moniker range=">=vs-2019"
-    Pressione **Esc** para fechar a janela de início. Digite **Ctrl + Q** para abrir a caixa de pesquisa, digite **Node.js** e, em seguida, escolha **Aplicativo Web Node.js em Branco** (JavaScript). Na caixa de diálogo que aparece, escolha **Criar**.
+    Pressione **Esc** para fechar a janela de início. Digite **Ctrl + Q** para abrir a caixa de pesquisa, digite **node. js**e, em seguida, escolha **aplicativo Web node. js em branco-JavaScript**. (Embora este tutorial use o compilador TypeScript, as etapas exigem que você comece com o modelo **JavaScript** .)
+    
+    Na caixa de diálogo que aparece, escolha **Criar**.
     ::: moniker-end
     ::: moniker range="vs-2017"
     Na barra de menus superior, escolha **Arquivo** > **Novo** > **Projeto**. No painel esquerdo da caixa de diálogo **Novo Projeto**, expanda **JavaScript** e escolha **Node.js**. No painel central, escolha **Aplicativo Web Node.js em Branco**, digite o nome **NodejsWebAppBlank** e escolha **OK**.
@@ -418,7 +420,7 @@ Para este cenário, use o Chrome.
 
     `msedge --remote-debugging-port=9222`
 
-    or
+    ou
 
     `chrome.exe --remote-debugging-port=9222`
     ::: moniker-end
@@ -482,7 +484,7 @@ Para este cenário, use o Chrome.
 5. Na caixa de diálogo **anexar ao processo** , obtenha uma lista filtrada de instâncias do navegador às quais você pode anexar.
 
     ::: moniker range=">=vs-2019"
-    No Visual Studio 2019, escolha o depurador correto para seu navegador de destino, **JavaScript (Chrome)** ou **JavaScript (Microsoft Edge-Chromium)** no campo **anexar a** , digite **Chrome** ou **Edge** na caixa de filtro para filtrar o resultados da pesquisa.
+    No Visual Studio 2019, escolha o depurador correto para seu navegador de destino, **JavaScript (Chrome)** ou **JavaScript (Microsoft Edge-Chromium)** no campo **anexar a** , digite **Chrome** ou **Edge** na caixa de filtro para filtrar os resultados da pesquisa.
     ::: moniker-end
     ::: moniker range="vs-2017"
     No Visual Studio 2017, escolha **código WebKit** no campo **anexar a** , digite **Chrome** na caixa de filtro para filtrar os resultados da pesquisa.

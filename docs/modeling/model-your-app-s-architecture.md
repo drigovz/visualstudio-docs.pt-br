@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - UML, modeling architecture
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e87759206f6d05267e2be5be25fdb8c3e9b70df
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: ba455730ddac9b2a02b8f0580711499d6a779f49
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747532"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590222"
 ---
 # <a name="model-your-app39s-architecture"></a>Modele a&#39;arquitetura do seu aplicativo
 Para ajudar a garantir que o seu sistema de software ou aplicativo atenda às necessidades de seus usuários, você pode criar modelos no Visual Studio como parte da sua descrição da estrutura geral e do comportamento do seu aplicativo ou sistema de software. Usando modelos, você também pode descrever padrões que são usados em todo o design. Esses modelos ajudam você a entender a arquitetura existente, a discutir alterações e a comunicar suas intenções claramente.
@@ -88,7 +88,7 @@ Para ajudar a garantir que o seu sistema de software ou aplicativo atenda às ne
 
  Um padrão de design é descrito em um documento e normalmente inclui estas partes:
 
-- nomes.
+- Nome.
 
 - Descrição do contexto no qual ele é aplicável. Quais critérios devem fazer um desenvolvedor considerar a aplicação desse padrão?
 
@@ -102,7 +102,7 @@ Para ajudar a garantir que o seu sistema de software ou aplicativo atenda às ne
 
 - Descrição das variações que os desenvolvedores podem adotar.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Visualizar código](../modeling/visualize-code.md)
 - [Requisitos de usuário do modelo](../modeling/model-user-requirements.md)

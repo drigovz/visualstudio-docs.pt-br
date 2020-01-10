@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 660c93c5e1ee6b41369ebbfc9f43c4c047042589
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: bfd073b07902e3c0a9e33dfe9ae50d4947a50ef2
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652410"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75597263"
 ---
 # <a name="about-domain-specific-languages"></a>Sobre linguagens específicas do domínio
 
@@ -68,9 +68,9 @@ Uma linguagem gráfica específica do domínio deve incluir os seguintes recurso
 
 - Geração de artefatos
 
-- Serialização
+- {1&gt;Serialização&lt;1}
 
-- Integração com o Visual Studio
+- Integração com Visual Studio
 
 ### <a name="notation"></a>Notation
 
@@ -84,11 +84,11 @@ Uma linguagem específica de domínio deve combinar o conjunto de elementos e as
 
 Uma das principais finalidades de uma linguagem específica de domínio é gerar um artefato, por exemplo, código-fonte, um arquivo XML ou alguns outros dados utilizáveis. Normalmente, uma alteração no modelo significa uma alteração no artefato. Você pode usar [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] para gerar artefatos e gerá-los novamente quando alterar o modelo.
 
-### <a name="serialization"></a>Serialização
+### <a name="serialization"></a>{1&gt;Serialização&lt;1}
 
 Uma linguagem específica de domínio deve ser persistida em alguma forma que possa ser editada, salva, fechada e recarregada. o [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] usa um formato XML que permite que você defina e personalize como sua linguagem específica de domínio é serializada ou persistente.
 
-### <a name="integration-with-visual-studio"></a>Integração com o Visual Studio
+### <a name="integration-with-visual-studio"></a>Integração com Visual Studio
 
 Como o [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] é hospedado no Visual Studio, ele estende muitas janelas e controles do Visual Studio. Ele também permite que você personalize o comportamento de comandos de menu, de itens da caixa de ferramentas e de outros elementos da interface do usuário.
 

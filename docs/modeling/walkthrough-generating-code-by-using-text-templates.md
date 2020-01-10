@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - walkthroughs [text templates], generating application code
 - walkthroughs [text templates]
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d24a2ea1b614cb0ca82bdcf1c4954aba9a9174c
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: ff583874778a2f1affd589ef260c6b9eac6b5d06
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72984413"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593503"
 ---
 # <a name="walkthrough-generate-code-by-using-text-templates"></a>Passo a passo: gerar código usando modelos de texto
 
@@ -426,9 +426,9 @@ Neste tutorial, o código do programa é realmente gerado a partir de uma instâ
 
 ## <a name="troubleshoot-the-text-template"></a>Solucionar problemas do modelo de texto
 
-Se você tiver visto o modelo de transformação ou erros de compilação no **lista de erros**, ou se o arquivo de saída não tiver sido gerado corretamente, você poderá solucionar o problema do modelo de texto com as técnicas descritas em [gerando arquivos com o TextTransform Utilitário](../modeling/generating-files-with-the-texttransform-utility.md).
+Se você tiver visto o modelo de transformação ou erros de compilação no **lista de erros**, ou se o arquivo de saída não tiver sido gerado corretamente, você poderá solucionar o problema do modelo de texto com as técnicas descritas em [gerando arquivos com o utilitário TextTransform](../modeling/generating-files-with-the-texttransform-utility.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Geração de código no tempo de design usando modelos de texto T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md)
 - [Gravando um modelo de texto T4](../modeling/writing-a-t4-text-template.md)

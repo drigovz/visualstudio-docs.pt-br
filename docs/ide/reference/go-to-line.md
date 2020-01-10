@@ -8,17 +8,17 @@ helpviewer_keywords:
 - code, locating lines
 - Go To Line dialog box
 ms.assetid: 529fa251-b7b3-49cf-863c-10e0b82ac7cc
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 88d70df94b8b15037b9c4ce6f7830faa50f2d6c7
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 0ac8b07e5e788a258e39cce5209b33c0190b08bf
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748727"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75569186"
 ---
 # <a name="go-to-line-dialog-box"></a>Caixa de diálogo Ir para Linha
 
@@ -30,7 +30,7 @@ A caixa de diálogo **Ir Para Linha** permite que você vá para uma linha espec
 
 Na caixa **Número de linha (1 - \<n>)** , insira o número de linha no documento ativo para a qual você deseja ir. O número inserido deve estar entre 1 e o número da última linha no documento atual.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Localizar código usando comandos Ir Para](../../ide/go-to.md)
 - [Definir indicadores no código](../../ide/setting-bookmarks-in-code.md)

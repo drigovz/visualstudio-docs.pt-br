@@ -17,17 +17,17 @@ helpviewer_keywords:
 - MSBuild, DownloadFile task
 ms.assetid: 916bb2e3-3017-4828-ae27-c0b5c99bbb48
 caps.latest.revision: 16
-author: Mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2cde5e140bb9dd2019de684124f69096d2022fe0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 06171f3a1543f6fa827c1b6fd477b992d099fff6
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62821424"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590469"
 ---
 # <a name="downloadfile-task"></a>Tarefa DownloadFile
 Baixa os arquivos especificados usando o protocolo HTTP.
@@ -45,7 +45,7 @@ A tabela a seguir descreve os parâmetros da tarefa `DownloadFile`.
 |`DownloadedFile`|Parâmetro de saída <xref:Microsoft.Build.Framework.ITaskItem> opcional.<br /><br /> Especifica o arquivo baixado.|
 |`Retries`|Parâmetro `Int32` opcional.<br /><br /> Especifica o número de tentativas de download, se todas as tentativas anteriores falharam. Usa zero como padrão.|
 |`RetryDelayMilliseconds`|Parâmetro `Int32` opcional.<br /><br /> Especifica o atraso em milissegundos entre as repetições necessárias. Usa 5.000 como padrão.|
-|`SkipUnchangedFiles`|Parâmetro `Boolean` opcional.<br /><br /> Se ele for `true`, ignorará o download de arquivos inalterados. Assume o padrão de `true`. A tarefa `DownloadFile` considera os arquivos como inalterados se eles têm o mesmo tamanho e a mesma hora da última modificação, de acordo com o servidor remoto. <br /><br />**Observação:**  Nem todos os servidores HTTP indicam que a data da última modificação dos arquivos fará com que o arquivo seja baixado novamente.|
+|`SkipUnchangedFiles`|Parâmetro `Boolean` opcional.<br /><br /> Se ele for `true`, ignorará o download de arquivos inalterados. Assume o padrão de `true`. A tarefa `DownloadFile` considera os arquivos como inalterados se eles têm o mesmo tamanho e a mesma hora da última modificação, de acordo com o servidor remoto. <br /><br />**Observação:** nem todos os servidores HTTP indicam que a data da última modificação dos arquivos fará com que o arquivo seja baixado novamente.|
 |`SourceUrl`|Parâmetro `String` obrigatório.<br /><br /> Especifica a URL a ser baixada.|
 
 ## <a name="remarks"></a>Comentários
@@ -72,6 +72,6 @@ O exemplo a seguir baixa um arquivo e inclui-o nos itens `Content` antes de comp
 </Project>
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 - [Tarefas](../msbuild/msbuild-tasks.md)
 - [Referência de tarefas](../msbuild/msbuild-task-reference.md)

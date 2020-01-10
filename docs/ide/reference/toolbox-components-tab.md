@@ -8,17 +8,17 @@ f1_keywords:
 - VS.CHOOSEITEMS.UniversalWindowsComponents
 helpviewer_keywords:
 - Toolbox, Components tab
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bd9c6bf4d24a681c426a20f490dba2cc1d5080fc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e5eb8c320a3190121d95395f7b359aa9ed978408
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72644602"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75597302"
 ---
 # <a name="toolbox-components-tab"></a>Caixa de Ferramentas, guia Componentes
 
@@ -87,7 +87,7 @@ Cria uma instância do componente <xref:System.Windows.Forms.Timer>, que pode se
 > [!NOTE]
 > Também há um <xref:System.Timers.Timer> baseado em sistema que pode ser adicionado à **Caixa de ferramentas**. Esse <xref:System.Timers.Timer> é otimizado para aplicativos de servidor e o <xref:System.Windows.Forms.Timer> do Windows Forms é mais adequado para uso no Windows Forms.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Controles a serem usados no Windows Forms](/dotnet/framework/winforms/controls/controls-to-use-on-windows-forms)
 - [Escolher itens da Caixa de Ferramentas, componentes do WPF](choose-toolbox-items-wpf-components.md)

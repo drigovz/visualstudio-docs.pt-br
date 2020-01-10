@@ -28,17 +28,17 @@ helpviewer_keywords:
 - Text Editor [Visual Studio]
 - editors, global settings
 ms.assetid: 4ac21e48-3243-4141-9058-7eaf12b3cde7
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ee7d7ebab51a3edfeb84a95609c6bdad581b6753
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ebe526bbac859777edb4c2c78c65a1cdbd27fc85
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666205"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75568406"
 ---
 # <a name="options-dialog-box-text-editor--general"></a>Caixa de diálogo opções: editor de texto \> geral
 
@@ -72,7 +72,7 @@ Com essa opção estiver selecionada, você poderá pressionar **Ctrl** e passar
 
 Marque a caixa de seleção **Abrir definição na exibição de inspeção** para exibir a definição do elemento selecionado em uma janela sem sair do local atual no editor de código.
 
-## <a name="display"></a>Monitor
+## <a name="display"></a>{1&gt;Vídeo&lt;1}
 
 ### <a name="selection-margin"></a>Margem de seleção
 
@@ -94,7 +94,7 @@ Quando selecionado, exibe uma caixa cinza ao redor da linha de código na qual o
 
 Quando essa opção estiver selecionada, as linhas verticais serão exibidas no editor, alinhadas aos blocos de código estruturado, o que permite que você identifique facilmente os blocos individuais de código.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Opções, Editor de Texto, Todas as Linguagens](../../ide/reference/options-text-editor-all-languages.md)
 - [Opções, Editor de Texto, Todas as Linguagens, Guias](../../ide/reference/options-text-editor-all-languages-tabs.md)

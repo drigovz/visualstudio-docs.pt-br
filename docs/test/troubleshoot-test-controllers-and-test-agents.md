@@ -8,15 +8,15 @@ helpviewer_keywords:
 - load tests, test agents
 - troubleshooting, test controllers and agents in load tests
 ms.assetid: 77329348-3a5d-43de-b6cb-90f93296a081
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 716bc28626e6b408fd618a8ed6c623c5118d7782
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 51d7e15ec71eec7134dfc49b3515385970e593a0
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659916"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75565949"
 ---
 # <a name="strategies-for-troubleshooting-test-controllers-and-test-agents-in-load-tests"></a>Estratégias para solução de problemas em controladores e agentes de teste em testes de carga
 
@@ -139,6 +139,6 @@ Para corrigir este erro, você deve associar o controlador de teste a um dos ada
 
 Isso se aplica ao controlador de teste, ao serviço do agente de teste e ao processo do agente de teste. A propriedade `BindTo` deve ser definida para cada processo em execução em um computador que tem mais de um adaptador de rede. O procedimento para definir a propriedade `BindTo` é o mesmo para os três processos, conforme especificado anteriormente para o controlador de teste. Para definir os níveis de log para o serviço e o processo do agente de teste, use os arquivos de configuração listados em [Definir o nível de log em um computador do controlador de teste](#set-the-logging-level-on-a-test-controller-computer).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Controladores e agentes de teste](../test/configure-test-agents-and-controllers-for-load-tests.md)

@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.All_Languages.CodeLens
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 10a325c75179ed6917e1772bb9e17f2237e4ee17
-ms.sourcegitcommit: 08105865a9643fb20dce9b8b7580452cfbbe7ee7
+ms.openlocfilehash: 9859366f6e4b9a0d1c219adc2080e6415b1e44a7
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74538950"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75588649"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>Localizar alterações de código e outro histórico com o CodeLens
 
@@ -354,6 +354,6 @@ Para usar o teclado:
 
 **R:** Recompile seu projeto para obter os indicadores de teste do CodeLens para carregar no seu arquivo. Para melhorar o desempenho, o Visual Studio não busca mais informações de origem para os indicadores de teste quando os arquivos de código são carregados. Os indicadores de teste são carregados após um build ou quando você navega até um teste clicando duas vezes nele no **Gerenciador de Testes**.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Recursos do Editor de Códigos](../ide/writing-code-in-the-code-and-text-editor.md)

@@ -3,17 +3,17 @@ title: Como alternar entre exibições e o editor de XML
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: cb69fbbd-d99c-439e-9498-5df9050f8df0
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f8049806d14abc8e22154a763e982ce5c86304b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 54e43b00c877f5453d1dc28bbc9d5546fcef056f
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72601884"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592614"
 ---
 # <a name="how-to-switch-between-views-and-the-xml-editor"></a>Como alternar entre exibições e o editor de XML
 
@@ -33,6 +33,6 @@ Este tópico mostra como alternar entre as exibições do designer de esquema XM
 
 5. Para alternar para o modo de exibição iniciar do modo de exibição de modelo de conteúdo usando a barra de ferramentas, clique no botão **Iniciar exibição** na barra de ferramentas XSD.
 
-6. Para alternar entre as exibições usando as teclas de alternância, pressione **ctrl** +**1** para a exibição de início, **Ctrl** +**2** para a exibição de gráfico e **Ctrl** +**3** para a exibição de modelo de conteúdo.
+6. Para alternar entre as exibições usando as teclas de alternância, pressione **ctrl**+**1** para a exibição de início, **Ctrl**+**2** para a exibição de gráfico e **Ctrl**+**3** para a exibição de modelo de conteúdo.
 
 7. Para ir para o editor de XML na exibição do modelo de conteúdo, clique com o botão direito do mouse no nó e selecione **Exibir código** no menu de contexto.

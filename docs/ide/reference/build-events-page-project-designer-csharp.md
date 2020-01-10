@@ -11,23 +11,23 @@ helpviewer_keywords:
 - pre-build events
 - post-build events
 ms.assetid: 3fff9ae5-213c-46ea-a660-1d70acb6c922
-author: ghogen
-ms.author: ghogen
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4842a5a08de96cd40a45d0765d427cc74cbf5432
-ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
+ms.openlocfilehash: 6629f41657a546ffb5fb48e0b6efb5f4f0dd50cb
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73714384"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596873"
 ---
 # <a name="build-events-page-project-designer-c"></a>Página Eventos de Build, Designer de Projeto (C#)
 
 Use a página **Eventos de Build** do **Designer de Projeto** para especificar as instruções de configuração de build. Você também pode especificar as condições sob as quais eventos pós-build são executados. Para obter mais informações, consulte [como: especificar eventos de compilaçãoC#()](../../ide/how-to-specify-build-events-csharp.md) e [como especificar eventos de compilação (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md).
 
-## <a name="uielement-list"></a>Lista UIElement
+## <a name="uielement-list"></a>Lista de UIElement
 
 **Configuração**
 
@@ -96,7 +96,7 @@ Para um evento de pós-compilação, use o nome `PostBuild` e defina o atributo 
 > [!NOTE]
 > Essas alterações de arquivo de projeto foram feitas para dar suporte a projetos no estilo SDK. Se você estiver migrando um arquivo de projeto do formato antigo para o formato de estilo SDK manualmente, deverá excluir as propriedades `PreBuildEvent` e `PostBuildEvent` e substituí-las por `PreBuild` e `PostBuild` destinos, conforme mostrado no código anterior. Para saber como saber se seu projeto é um projeto no estilo SDK, consulte verificar o [formato do projeto](/nuget/resources/check-project-format).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Como especificar eventos de build (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)
 - [Como especificar eventos de build (C#)](../../ide/how-to-specify-build-events-csharp.md)

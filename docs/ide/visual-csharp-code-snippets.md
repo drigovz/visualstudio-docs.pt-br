@@ -7,17 +7,17 @@ helpviewer_keywords:
 - code snippets [C#]
 - Code Snippet Inserter [C#]
 - C#, code snippets
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: e06e825779476489414ff200aba9cd43fce96e2f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d41907a15b7e0b1692dda3f4d678c2b843dfcd03
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647259"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594156"
 ---
 # <a name="c-code-snippets"></a>Snippets de código C#
 
@@ -36,43 +36,43 @@ Por padrão, os snippets de código a seguir são incluídos no Visual Studio pa
 |#if|Cria uma diretiva [#if](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-if) e uma diretiva [#endif](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-endif).|Em qualquer lugar.|
 |#region|Cria uma diretiva [#region](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-region) e uma diretiva [#endregion](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-endregion).|Em qualquer lugar.|
 |~|Cria um [finalizador](/dotnet/csharp/programming-guide/classes-and-structs/destructors) (destruidor) para a classe que o contém.|Dentro de uma classe.|
-|Atributo|Cria uma declaração para uma classe que deriva de <xref:System.Attribute>.|Dentro de um namespace (incluindo o namespace global), uma classe ou uma estrutura.|
+|{1&gt;atributo&lt;1}|Cria uma declaração para uma classe que deriva de <xref:System.Attribute>.|Dentro de um namespace (incluindo o namespace global), uma classe ou uma estrutura.|
 |checked|Cria um bloco [checked](/dotnet/csharp/language-reference/keywords/checked).|Dentro de um método, um indexador, um acessador de propriedade ou um acessador de evento.|
-|classe|Cria uma declaração de classe.|Dentro de um namespace (incluindo o namespace global), uma classe ou uma estrutura.|
+|{1&gt;classe&lt;1}|Cria uma declaração de classe.|Dentro de um namespace (incluindo o namespace global), uma classe ou uma estrutura.|
 |ctor|Cria um construtor para a classe que o contém.|Dentro de uma classe.|
 |cw|Cria uma chamada para <xref:System.Console.WriteLine%2A>.|Dentro de um método, um indexador, um acessador de propriedade ou um acessador de evento.|
 |do|Cria um loop [do](/dotnet/csharp/language-reference/keywords/do) `while`.|Dentro de um método, um indexador, um acessador de propriedade ou um acessador de evento.|
 |else|Cria um bloco [else](/dotnet/csharp/language-reference/keywords/if-else).|Dentro de um método, um indexador, um acessador de propriedade ou um acessador de evento.|
-|enum|Cria uma declaração [enum](/dotnet/csharp/language-reference/keywords/enum).|Dentro de um namespace (incluindo o namespace global), uma classe ou uma estrutura.|
+|{1&gt;enum&lt;1}|Cria uma declaração [enum](/dotnet/csharp/language-reference/keywords/enum).|Dentro de um namespace (incluindo o namespace global), uma classe ou uma estrutura.|
 |é igual a|Cria uma declaração de método que substitui o método <xref:System.Object.Equals%2A> definido na classe <xref:System.Object>.|Dentro de uma classe ou um struct.|
 |exception|Cria uma declaração para uma classe que deriva de uma exceção (<xref:System.Exception> por padrão).|Dentro de um namespace (incluindo o namespace global), uma classe ou uma estrutura.|
-|for|Cria um loop [for](/dotnet/csharp/language-reference/keywords/for).|Dentro de um método, um indexador, um acessador de propriedade ou um acessador de evento.|
+|para|Cria um loop [for](/dotnet/csharp/language-reference/keywords/for).|Dentro de um método, um indexador, um acessador de propriedade ou um acessador de evento.|
 |foreach|Cria um loop [foreach](/dotnet/csharp/language-reference/keywords/foreach-in).|Dentro de um método, um indexador, um acessador de propriedade ou um acessador de evento.|
 |forr|Cria um loop [for](/dotnet/csharp/language-reference/keywords/for) que decrementa a variável de loop depois de cada iteração.|Dentro de um método, um indexador, um acessador de propriedade ou um acessador de evento.|
 |if|Cria um bloco [if](/dotnet/csharp/language-reference/keywords/if-else).|Dentro de um método, um indexador, um acessador de propriedade ou um acessador de evento.|
 |indexador|Cria uma declaração do indexador.|Dentro de uma classe ou um struct.|
-|interface|Cria uma declaração [interface](/dotnet/csharp/language-reference/keywords/interface).|Dentro de um namespace (incluindo o namespace global), uma classe ou uma estrutura.|
+|Interface|Cria uma declaração [interface](/dotnet/csharp/language-reference/keywords/interface).|Dentro de um namespace (incluindo o namespace global), uma classe ou uma estrutura.|
 |invoke|Cria um bloco que invoca um evento com segurança.|Dentro de um método, um indexador, um acessador de propriedade ou um acessador de evento.|
 |iterator|Cria um iterador.|Dentro de uma classe ou um struct.|
 |iterindex|Cria um par de iterador e indexador "nomeado" usando uma classe aninhada.|Dentro de uma classe ou um struct.|
 |bloqueio|Cria um bloco [lock](/dotnet/csharp/language-reference/keywords/lock-statement).|Dentro de um método, um indexador, um acessador de propriedade ou um acessador de evento.|
 |mbox|Cria uma chamada para <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName>. Talvez seja necessário adicionar uma referência a *System.Windows.Forms.dll*.|Dentro de um método, um indexador, um acessador de propriedade ou um acessador de evento.|
-|namespace|Cria uma declaração de [namespace](/dotnet/csharp/language-reference/keywords/namespace).|Dentro de um namespace (incluindo o namespace global).|
+|Namespace|Cria uma declaração de [namespace](/dotnet/csharp/language-reference/keywords/namespace).|Dentro de um namespace (incluindo o namespace global).|
 |prop|Cria uma declaração de [propriedade autoimplementada](/dotnet/csharp/programming-guide/classes-and-structs/auto-implemented-properties).|Dentro de uma classe ou um struct.|
 |propfull|Cria uma declaração de propriedade com os acessadores `get` e `set`.|Dentro de uma classe ou um struct.|
 |propg|Cria uma [propriedade implementada automaticamente](/dotnet/csharp/programming-guide/classes-and-structs/auto-implemented-properties) do tipo somente leitura, com um acessador `set` particular.|Dentro de uma classe ou um struct.|
-|sim|Cria uma declaração de método principal [static](/dotnet/csharp/language-reference/keywords/static) [int](/dotnet/csharp/language-reference/keywords/int).|Dentro de uma classe ou um struct.|
-|struct|Cria uma declaração [struct](/dotnet/csharp/language-reference/keywords/struct).|Dentro de um namespace (incluindo o namespace global), uma classe ou uma estrutura.|
-|svm|Cria uma declaração de método principal [static](/dotnet/csharp/language-reference/keywords/static) [void](/dotnet/csharp/language-reference/keywords/void).|Dentro de uma classe ou um struct.|
+|sim|Cria uma declaração de método Main [int](/dotnet/csharp/language-reference/keywords/int) [estática](/dotnet/csharp/language-reference/keywords/static) .|Dentro de uma classe ou um struct.|
+|{1&gt;struct&lt;1}|Cria uma declaração [struct](/dotnet/csharp/language-reference/keywords/struct).|Dentro de um namespace (incluindo o namespace global), uma classe ou uma estrutura.|
+|svm|Cria uma declaração de método principal [void](/dotnet/csharp/language-reference/keywords/void) [estático](/dotnet/csharp/language-reference/keywords/static) .|Dentro de uma classe ou um struct.|
 |switch|Cria um bloco [switch](/dotnet/csharp/language-reference/keywords/switch).|Dentro de um método, um indexador, um acessador de propriedade ou um acessador de evento.|
 |try|Cria um bloco [try-catch](/dotnet/csharp/language-reference/keywords/try-catch).|Dentro de um método, um indexador, um acessador de propriedade ou um acessador de evento.|
 |tryf|Cria um bloco [try-finally](/dotnet/csharp/language-reference/keywords/try-finally).|Dentro de um método, um indexador, um acessador de propriedade ou um acessador de evento.|
 |unchecked|Cria um bloco [unchecked](/dotnet/csharp/language-reference/keywords/unchecked).|Dentro de um método, um indexador, um acessador de propriedade ou um acessador de evento.|
 |unsafe|Cria um bloco [unsafe](/dotnet/csharp/language-reference/keywords/unsafe).|Dentro de um método, um indexador, um acessador de propriedade ou um acessador de evento.|
-|using|Cria uma diretiva [using](/dotnet/csharp/language-reference/keywords/using-directive).|Dentro de um namespace (incluindo o namespace global).|
+|usando|Cria uma diretiva [using](/dotnet/csharp/language-reference/keywords/using-directive).|Dentro de um namespace (incluindo o namespace global).|
 |while|Cria um loop [while](/dotnet/csharp/language-reference/keywords/while).|Dentro de um método, um indexador, um acessador de propriedade ou um acessador de evento.|
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Funções de snippet de código](../ide/code-snippet-functions.md)
 - [Snippets de código](../ide/code-snippets.md)

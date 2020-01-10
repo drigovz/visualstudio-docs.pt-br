@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - analyzer packages, rule sets
 - rule sets for analyzers
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a2cf385aaf24db2172a61ddbe7ecf77dcbe40f3c
-ms.sourcegitcommit: 08105865a9643fb20dce9b8b7580452cfbbe7ee7
+ms.openlocfilehash: 0b3ed77a309448a854d733453c932fc007f7f591
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74537779"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75573281"
 ---
 # <a name="enable-a-category-of-rules"></a>Habilitar uma categoria de regras
 
@@ -32,13 +32,13 @@ O pacote NuGet Analyzer do FxCop inclui conjuntos de regras predefinidos e arqui
 - Documentação
 - Globalização
 - Interoperabilidade
-- Manutenção
+- Facilidade de manutenção
 - Nomenclatura
 - Desempenho
 - Portado do FxCop
 - Confiabilidade
 - Segurança
-- Uso
+- Medição de
 
 Cada uma dessas categorias de regras tem um EditorConfig ou um arquivo de conjunto de regras para:
 
@@ -102,7 +102,7 @@ Para fazer com que uma regra defina o conjunto de regras ativas para análise em
 
    Agora você só vê violações de regra para as regras que estão habilitadas no conjunto de regras selecionado.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Perguntas frequentes sobre analisadores](analyzers-faq.md)
 - [Visão geral dos analisadores do .NET Compiler Platform](roslyn-analyzers-overview.md)

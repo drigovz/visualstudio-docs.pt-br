@@ -3,17 +3,17 @@ title: Classificação, filtragem e agrupamento no XML Schema Explorer
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 4a914de0-9ffc-4526-9603-92e460e52513
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6bf9226f3b491a39c7ef5936667cabd789c6a457
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: cd288171cd8713e6b403f71a4eee6ba09d3f6ea9
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72604588"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592510"
 ---
 # <a name="sorting-filtering-and-grouping-xml-schema-explorer"></a>Classificação, filtragem e agrupamento (XML Schema Explorer)
 
@@ -43,33 +43,33 @@ As seguintes opções de classificação estão disponíveis. O padrão é **cla
 
 Quando a opção **classificar por tipo** é selecionada, os nós globais são classificados na seguinte ordem. Nós são classificados em ordem alfabética dentro de cada grupo.
 
-1. nós de`import` .
+1. nós de `import`.
 
-2. nós de`include` .
+2. nós de `include`.
 
-3. nós de`redefine` .
+3. nós de `redefine`.
 
-4. nós de`attribute` .
+4. nós de `attribute`.
 
-5. nós de`attributeGroup` .
+5. nós de `attributeGroup`.
 
-6. nós de`complexType` .
+6. nós de `complexType`.
 
-7. nós de`simpleType` .
+7. nós de `simpleType`.
 
-8. nós de`element` .
+8. nós de `element`.
 
-9. nós de`group` .
+9. nós de `group`.
 
 ### <a name="sort-by-name"></a>Classificar por Nome
 
 Quando a opção **classificar por nome** for selecionada, os nós globais serão classificados na seguinte ordem:
 
-1. nós de`import` (em ordem alfabética namespaces).
+1. `import` nós (em ordem alfabética de namespaces).
 
-2. nós de`include` (em ordem alfabética de atributos de `schemaLocation` ).
+2. `include` nós (em ordem alfabética de atributos `schemaLocation`).
 
-3. nós de`redefine` (em ordem alfabética de atributos de `schemaLocation` ).
+3. `redefine` nós (em ordem alfabética de atributos `schemaLocation`).
 
 4. Outros nós globais em ordem alfabética.
 

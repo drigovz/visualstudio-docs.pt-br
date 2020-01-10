@@ -8,17 +8,17 @@ helpviewer_keywords:
 - code metrics results
 - code metrics results window
 - results window, code metrics
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0824fe608ad1bac86ef904702bd1be907bc9ce7d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 6d62baf32685832072266438de003b523399137f
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649002"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587076"
 ---
 # <a name="use-the-code-metrics-results-window"></a>Usar a janela de resultados de métricas de código
 
@@ -30,9 +30,9 @@ A janela **resultados de métricas de código** é exibida automaticamente quand
 
 Você pode exibir a janela de resultados de métricas de código usando uma das seguintes sequências de menu:
 
-- No menu **analisar** , escolha**resultados de métricas de código**do **Windows** > .
+- No menu **analisar** , escolha **Windows** > **resultados de métricas de código**.
 
-- No menu **Exibir** , escolha outros**resultados de métricas de código**do **Windows** > .
+- No menu **Exibir** , escolha outros **resultados de métricas de código**do **Windows** > .
 
 A janela **resultados de métricas de código** é aberta, mesmo que não contenha nenhum resultado.
 
@@ -106,7 +106,7 @@ Para obter mais informações sobre Azure Boards itens de trabalho, consulte [it
 
 4. No menu **arquivo** , clique em **salvar tudo** para salvar o item de trabalho.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Valores de métricas de código](../code-quality/code-metrics-values.md)
-- [Como gerar dados de métricas de código](../code-quality/how-to-generate-code-metrics-data.md)
+- [Como: gerar dados de métricas de código](../code-quality/how-to-generate-code-metrics-data.md)

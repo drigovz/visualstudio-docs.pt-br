@@ -13,20 +13,20 @@ helpviewer_keywords:
 - Vbc task [MSBuild]
 - MSBuild, Vbc task
 ms.assetid: 595278b1-2782-4577-b1ba-b4b5ab5625a3
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 247d7c5a204418fdddf41e906a12ef2ef1fb232f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 054874f6e8a3687291270fedbd45492f5167f765
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62577766"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591132"
 ---
 # <a name="vbc-task"></a>tarefa Vbc
-Encapsula o *vbc.exe*, que produz executáveis (*.exe*), bibliotecas de vínculo dinâmico (*.dll*) ou módulos de código (*.netmodule*). Para obter mais informações sobre *vbc.exe*, confira [Compilador de linha de comando do Visual Basic](/dotnet/visual-basic/reference/command-line-compiler/index).
+Encapsula o *vbc.exe*, que produz executáveis ( *.exe*), bibliotecas de vínculo dinâmico ( *.dll*) ou módulos de código ( *.netmodule*). Para obter mais informações sobre *vbc.exe*, confira [Compilador de linha de comando do Visual Basic](/dotnet/visual-basic/reference/command-line-compiler/index).
 
 ## <a name="parameters"></a>Parâmetros
  A tabela a seguir descreve os parâmetros da tarefa `Vbc`.
@@ -66,7 +66,7 @@ Encapsula o *vbc.exe*, que produz executáveis (*.exe*), bibliotecas de vínculo
 | `OptionStrict` | Parâmetro `Boolean` opcional.<br /><br /> Se `true`, a tarefa impõe semântica de tipo estrito para restringir conversões de tipo implícito. Esse parâmetro corresponde à opção [-optionstrict](/dotnet/visual-basic/reference/command-line-compiler/optionstrict) do compilador *vbc.exe*. |
 | `OptionStrictType` | Parâmetro `String` opcional.<br /><br /> Especifica qual semântica de tipo estrito gera um aviso. Atualmente, há suporte para apenas "custom". Esse parâmetro corresponde à opção [-optionstrict](/dotnet/visual-basic/reference/command-line-compiler/optionstrict) do compilador *vbc.exe*. |
 | `OutputAssembly` | Parâmetro de saída `String` opcional.<br /><br /> Especifica o nome do arquivo de saída. Esse parâmetro corresponde à opção [-out](/dotnet/visual-basic/reference/command-line-compiler/out) do compilador *vbc.exe*. |
-| `Platform` | Parâmetro `String` opcional.<br /><br /> Especifica a plataforma do processador a ser direcionada pelo arquivo de saída. Esse parâmetro pode ter um valor igual a `x86`, `x64` `Itanium` ou `anycpu`. O padrão é `anycpu`. Esse parâmetro corresponde à opção [-platform](/dotnet/visual-basic/reference/command-line-compiler/platform) do compilador *vbc.exe*. |
+| `Platform` | Parâmetro `String` opcional.<br /><br /> Especifica a plataforma do processador a ser direcionada pelo arquivo de saída. Esse parâmetro pode ter um valor igual a `x86`, `x64``Itanium` ou `anycpu`. O padrão é `anycpu`. Esse parâmetro corresponde à opção [-platform](/dotnet/visual-basic/reference/command-line-compiler/platform) do compilador *vbc.exe*. |
 | `References` | Parâmetro opcional <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Faz com que a tarefa importe informações de tipo público dos itens especificados para o projeto atual. Esse parâmetro corresponde à opção [-reference](/dotnet/visual-basic/reference/command-line-compiler/reference) do compilador *vbc.exe*. |
 | `RemoveIntegerChecks` | Parâmetro `Boolean` opcional.<br /><br /> Se `true`, desabilita a verificação de erro de estouro de inteiro. O valor padrão é `false`. Esse parâmetro corresponde à opção [-removeintchecks](/dotnet/visual-basic/reference/command-line-compiler/removeintchecks) do compilador *vbc.exe*. |
 | `Resources` | Parâmetro opcional <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Insere um recurso do .NET Framework no arquivo de saída. Esse parâmetro corresponde à opção [-resource](/dotnet/visual-basic/reference/command-line-compiler/resource) do compilador *vbc.exe*. |
@@ -85,7 +85,7 @@ Encapsula o *vbc.exe*, que produz executáveis (*.exe*), bibliotecas de vínculo
 | `WarningsAsErrors` | Parâmetro `String` opcional.<br /><br /> Especifica uma lista de avisos a serem tratados como erros. Para obter mais informações, confira [-warnaserror (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/warnaserror).<br /><br /> Esse parâmetro substitui o parâmetro `TreatWarningsAsErrors`. |
 | `WarningsNotAsErrors` | Parâmetro `String` opcional.<br /><br /> Especifica uma lista de avisos que não são tratados como erros. Para obter mais informações, confira [-warnaserror (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/warnaserror).<br /><br /> Esse parâmetro será útil apenas se o parâmetro `TreatWarningsAsErrors` for definido como `true`. |
 | `Win32Icon` | Parâmetro `String` opcional.<br /><br /> Insere um arquivo *.ico* no assembly, que fornece ao arquivo de saída a aparência desejada no **Explorador de Arquivos**. Esse parâmetro corresponde à opção [-win32icon](/dotnet/visual-basic/reference/command-line-compiler/win32icon) do compilador *vbc.exe*. |
-| `Win32Resources` | Parâmetro `String` opcional.<br /><br /> Insere um arquivo (*.res*) do recurso do Win32 no arquivo de saída. Esse parâmetro corresponde à opção [-win32resource](/dotnet/visual-basic/reference/command-line-compiler/win32resource) do compilador *vbc.exe*. |
+| `Win32Resources` | Parâmetro `String` opcional.<br /><br /> Insere um arquivo ( *.res*) do recurso do Win32 no arquivo de saída. Esse parâmetro corresponde à opção [-win32resource](/dotnet/visual-basic/reference/command-line-compiler/win32resource) do compilador *vbc.exe*. |
 
 ## <a name="remarks"></a>Comentários
  Além dos parâmetros listados acima, essa tarefa herda parâmetros da classe <xref:Microsoft.Build.Tasks.ToolTaskExtension>, que herda da classe <xref:Microsoft.Build.Utilities.ToolTask>. Para obter uma lista desses parâmetros adicionais e suas descrições, confira [Classe base ToolTaskExtension](../msbuild/tooltaskextension-base-class.md).
@@ -101,7 +101,7 @@ Encapsula o *vbc.exe*, que produz executáveis (*.exe*), bibliotecas de vínculo
    OutputAssembly="out.exe"/>
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 - [Compilador de linha de comando do Visual Basic](/dotnet/visual-basic/reference/command-line-compiler/index)
 - [Tarefas](../msbuild/msbuild-tasks.md)
 - [Referência de tarefas](../msbuild/msbuild-task-reference.md)

@@ -14,17 +14,17 @@ helpviewer_keywords:
 - Project Designer, Compile page
 - Compile page in Project Designer
 ms.assetid: b2a80230-906e-4e85-b3e0-fcd9c40426e1
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dfe552db89da4cb4d2a9782a1b5d2c8468833baa
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d9ffdfe4abbef5701cc060171ecbc379ae3a9215
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654580"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75570265"
 ---
 # <a name="compile-page-project-designer-visual-basic"></a>Página de Compilação, Designer de Projeto (Visual Basic)
 
@@ -187,7 +187,7 @@ Clique nesse botão para acessar a caixa de diálogo **Eventos de Build**. Use e
 
 Clique neste botão para acessar a caixa de diálogo **Configurações Avançadas do Compilador**. Use a caixa de diálogo **Configurações Avançadas do Compilador** para especificar as propriedades avançadas de configuração de build de um projeto. Essa caixa de diálogo aplica-se a somente projetos Visual Basic. Para obter mais informações, consulte [Caixa de diálogo Configurações Avançadas do Compilador (Visual Basic)](../../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Como especificar eventos de build (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)
 - [Compilador de linha de comando do Visual Basic](/dotnet/visual-basic/reference/command-line-compiler/index)

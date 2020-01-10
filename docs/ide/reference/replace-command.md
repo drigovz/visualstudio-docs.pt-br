@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Edit.Replace command
 - Replace command
 ms.assetid: a15767f1-5a3d-44f5-8c77-7b0f1157f340
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b13dee4ec87a0a4c2735d9523bff093046c5b38c
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 620e55938a9c96393d8cd7de6f238d3f98715d29
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747778"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596678"
 ---
 # <a name="replace-command"></a>Comando Substituir
 Substitui texto em arquivos usando um subconjunto das opções disponíveis na guia **Substituir nos Arquivos** da janela **Localizar e Substituir**.
@@ -34,13 +34,13 @@ Edit.Replace findwhat replacewith [/all] [/case]
 ## <a name="arguments"></a>Arguments
 `findwhat`
 
-Necessário. O texto a ser correspondido.
+Necessária. O texto a ser correspondido.
 
 `replacewith`
 
-Necessário. O texto a ser substituído pelo texto correspondido.
+Necessária. O texto a ser substituído pelo texto correspondido.
 
-## <a name="switches"></a>Opções
+## <a name="switches"></a>Comutadores
 /all ou /a
 
 Opcional. Substitui todas as ocorrências do texto da pesquisa pelo texto de substituição.
@@ -100,7 +100,7 @@ Este exemplo substitui `btnSend` por `btnSubmit` em todos os documentos abertos.
 >Edit.Replace btnSend btnSubmit /open
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Localizando e substituindo texto](../../ide/finding-and-replacing-text.md)
 - [Janela Comando](../../ide/reference/command-window.md)

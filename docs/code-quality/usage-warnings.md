@@ -9,17 +9,17 @@ helpviewer_keywords:
 - managed code analysis warnings, usage warnings
 - usage warnings
 ms.assetid: fe7dc2a3-289d-4bf7-a1e4-0947a81287c4
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 423367381c9b4624b9b3f4f739b017231276c76d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ca3a5efb7d75cebfd36ea6ac190f50ab90dcb06c
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649066"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587180"
 ---
 # <a name="usage-warnings"></a>Avisos de uso
 
@@ -31,7 +31,7 @@ Os avisos de uso dão suporte ao uso adequado do .NET.
 |----------|-----------------|
 |[CA1801: examinar parâmetros não usados](../code-quality/ca1801.md)|Uma assinatura de método inclui um parâmetro que não é usado no corpo do método.|
 |[CA1806: não ignorar resultados do método](../code-quality/ca1806.md)|Um novo objeto é criado, mas nunca é usado; ou um método que cria e retorna uma nova cadeia de caracteres é chamado e a nova cadeia de caracteres jamais é usada; um método ou COM ou P/Invoke retorna um HRESULT ou um código de erro que nunca é usado.|
-|[CA1816: chamar GC.SuppressFinalize corretamente](../code-quality/ca1816.md)|Um método que é uma implementação de Dispose não chama GC. SuppressFinalize ou um método que não é uma implementação de Dispose chama GC. SuppressFinalize ou um método chama GC. SuppressFinalize e passa algo diferente deste (eu em Visual Basic).|
+|[CA1816: chamar GC.SuppressFinalize corretamente](../code-quality/ca1816.md)|Um método que é uma implementação de Dispose não chama GC. SuppressFinalize; ou um método que não é uma implementação de Dispose chama GC. SuppressFinalize; ou um método chama GC. SuppressFinalize e passa algo que não seja isso (Me no Visual Basic).|
 |[CA2200: relançar para preservar detalhes da pilha](../code-quality/ca2200.md)|Uma exceção é lançada novamente e a exceção é especificada explicitamente na instrução throw. Se uma exceção for lançada novamente pela especificação da exceção na instrução throw, a lista de chamadas de método entre o método original que lançou a exceção e o método atual será perdida.|
 |[CA2201: não acionar tipos de exceção reservados](../code-quality/ca2201.md)|Isso torna o erro original difícil de detectar e depurar.|
 |[CA2202: não descartar objetos várias vezes](../code-quality/ca2202.md)|Uma implementação do método contém caminhos de código que poderiam causar várias chamadas para System.IDisposable.Dispose ou para um equivalente a Dispose (como um método Close() em alguns tipos) no mesmo objeto.|
@@ -59,7 +59,7 @@ Os avisos de uso dão suporte ao uso adequado do .NET.
 |[CA2228: não remeter formatos de recurso não lançados](../code-quality/ca2228.md)|Os arquivos de recursos criados usando versões de pré-lançamento do .NET podem não ser utilizáveis por versões do .NET com suporte.|
 |[CA2229: implementar construtores de serialização](../code-quality/ca2229.md)|Para corrigir uma violação dessa regra, implemente o construtor de serialização. Para uma classe lacrada, torne o construtor particular; do contrário, deixe-o protegido.|
 |[CA2230: usar parâmetros para argumentos variáveis](../code-quality/ca2230.md)|Um tipo público ou protegido contém um método público ou protegido que usa a convenção de chamada VarArgs, em vez da palavra-chave params.|
-|[CA2231: sobrecarregar operador Equals ao substituir ValueType.Equals](../code-quality/ca2231.md)|Um tipo de valor substitui `Object.Equals`, mas não implementa o operador de igualdade.|
+|[CA2231: sobrecarregar operador Equals ao substituir ValueType.Equals](../code-quality/ca2231.md)|Um tipo de valor substitui `Object.Equals` mas não implementa o operador de igualdade.|
 |[CA2232: marcar pontos de entrada do Windows Forms com STAThread](../code-quality/ca2232.md)|STAThreadAttribute indica que o modelo de threading COM para o aplicativo é um single-threaded apartment. Esse atributo deve estar presente no ponto de entrada de qualquer aplicativo que use o Windows Forms; se ele for omitido, os componentes do Windows poderão não funcionar corretamente.|
 |[CA2233: as operações não devem estourar](../code-quality/ca2233.md)|As operações aritméticas não devem ser executadas sem validar primeiro os operandos, para garantir que o resultado da operação não esteja fora do intervalo de valores possíveis para os tipos de dados envolvidos.|
 |[CA2234: passar objetos System.Uri em vez de cadeias de caracteres](../code-quality/ca2234.md)|Foi feita uma chamada para um método com um parâmetro de cadeia de caracteres cujo nome contém "uri", "URI", "urn", "URN", "url" ou "URL".  O tipo declarante do método contém uma sobrecarga do método correspondente que possui um parâmetro System.Uri.|

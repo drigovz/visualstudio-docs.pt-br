@@ -2,17 +2,17 @@
 title: Testes de unidade direcionados a uma versão anterior do .NET Framework
 ms.date: 11/04/2016
 ms.topic: conceptual
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-author: jillre
-ms.openlocfilehash: 32f34eb9af74f8db06cfc6910db83806383ae3be
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+author: mikejo5000
+ms.openlocfilehash: 32380ddc802d1421f39d4920073fc277876cfef4
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72643617"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596015"
 ---
 # <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>Como configurar testes de unidade para usar uma versão anterior do .NET Framework como destino
 
@@ -104,7 +104,7 @@ As seguintes limitações se aplicam quando você redireciona projetos de teste 
 
 6. No **Gerenciador de Soluções**, escolha **Recarregar Projeto** no menu aberto ao clicar com o botão direito do mouse do novo projeto de teste do C++.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Criar soluções do SharePoint](../sharepoint/create-sharepoint-solutions.md)
 - [Compilar e depurar soluções do SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)

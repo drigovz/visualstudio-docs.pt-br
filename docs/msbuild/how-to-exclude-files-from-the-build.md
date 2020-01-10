@@ -1,5 +1,5 @@
 ---
-title: 'Como: Excluir arquivos do build | Microsoft Docs'
+title: Como excluir arquivos do build | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,19 +7,19 @@ helpviewer_keywords:
 - MSBuild, excluding files
 - wildcards, MSBuild
 ms.assetid: 1be36e45-01da-451c-972d-f9fc0e7d663c
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e16b11d2c54c500bc2b4e7d52e0bc5a46492ab5e
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 3c55033d253b5c7dfeb2bed968f2418637ca3f0d
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446562"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75576050"
 ---
-# <a name="how-to-exclude-files-from-the-build"></a>Como: Excluir arquivos do build
+# <a name="how-to-exclude-files-from-the-build"></a>Como excluir arquivos do build
 Em um arquivo de projeto, você pode usar curingas para incluir todos os arquivos em um diretório ou um conjunto aninhado de diretórios como entradas para um build. No entanto, pode haver um arquivo no diretório ou um diretório em um conjunto aninhado de diretórios que você não deseja incluir como entrada para um build. Você pode excluir explicitamente esse arquivo ou diretório da lista de entradas. Também pode haver um arquivo em um projeto que você deseja incluir somente em determinadas condições. Você pode declarar explicitamente as condições sob as quais um arquivo é incluído em um build.
 
 ## <a name="exclude-a-file-or-directory-from-the-inputs-for-a-build"></a>Excluir um arquivo ou um diretório das entradas para um build
@@ -122,7 +122,7 @@ Em um arquivo de projeto, você pode usar curingas para incluir todos os arquivo
 </Project>
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 - [Itens](../msbuild/msbuild-items.md)
 - [MSBuild](../msbuild/msbuild.md)
-- [Como: Selecionar os arquivos a serem compilados](../msbuild/how-to-select-the-files-to-build.md)
+- [Como selecionar os arquivos a serem compilados](../msbuild/how-to-select-the-files-to-build.md)

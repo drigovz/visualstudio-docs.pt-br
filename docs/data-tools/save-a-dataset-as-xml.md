@@ -11,17 +11,17 @@ helpviewer_keywords:
 - datasets [Visual Basic], saving as XML
 - saving data
 ms.assetid: 68b8327c-ae05-49ff-b9ba-99183e70b52c
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5b3aa23cb0fde98b4da4225b8e255b7cd6e7aef5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3198b94b1248f20b178e85e9e75a2765e6191c28
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72641348"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586296"
 ---
 # <a name="save-a-dataset-as-xml"></a>Salvar um conjunto de dados como XML
 
@@ -45,6 +45,6 @@ Chamar o método <xref:System.Data.DataSet.WriteXml%2A> envia os dados formatado
      [!code-vb[VbRaddataSaving#13](../data-tools/codesnippet/VisualBasic/save-a-dataset-as-xml_2.vb)]
      [!code-csharp[VbRaddataSaving#13](../data-tools/codesnippet/CSharp/save-a-dataset-as-xml_2.cs)]
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Salvar dados de volta no banco de dados](../data-tools/save-data-back-to-the-database.md)

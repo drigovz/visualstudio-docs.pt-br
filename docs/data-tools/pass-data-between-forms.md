@@ -12,17 +12,17 @@ helpviewer_keywords:
 - forms, passing data between
 - Windows Forms, walkthroughs
 ms.assetid: 78bf038b-9296-4fbf-b0e8-d881d1aff0df
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: eb4b1c0af617bfd8e1771e500b4f12699e3f0ec4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 358cdc4822aa0da1d980f22196618aeaada4b1be
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72641445"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586361"
 ---
 # <a name="pass-data-between-forms"></a>Passar dados entre formulários
 
@@ -47,7 +47,7 @@ As tarefas ilustradas neste passo a passo incluem:
 
 - Passar dados entre formulários.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>{1&gt;{2&gt;Pré-requisitos&lt;2}&lt;1}
 
 Este passo a passos usa SQL Server Express LocalDB e o banco de dados de exemplo Northwind.
 
@@ -67,7 +67,7 @@ Este passo a passos usa SQL Server Express LocalDB e o banco de dados de exemplo
 
 ## <a name="create-the-windows-forms-app-project"></a>Criar o projeto de aplicativo Windows Forms
 
-1. No Visual Studio, no menu **arquivo** , selecione **novo** **projeto**de  > .
+1. No Visual Studio, no menu **Arquivo**, selecione **Novo** > **Projeto**.
 
 2. Expanda **o C# Visual** ou **Visual Basic** no painel esquerdo e, em seguida, selecione **área de trabalho do Windows**.
 
@@ -190,7 +190,7 @@ Adicione uma consulta do TableAdapter ao Form2 para carregar pedidos para o clie
 
 - Clique duas vezes em um registro de cliente no **Form1** para abrir o **Form2** com pedidos do cliente.
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
 
 Dependendo dos requisitos de aplicativo, existem várias etapas que você talvez queira realizar após passar dados entre formulários. Entre algumas das melhorias que você poderia fazer nessa explicação passo a passo estão:
 
@@ -198,6 +198,6 @@ Dependendo dos requisitos de aplicativo, existem várias etapas que você talvez
 
 - Adicionar funcionalidade para salvar dados de volta no banco de dados. Para obter mais informações, consulte [salvar dados de volta no banco de dado](../data-tools/save-data-back-to-the-database.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Associando controles do Windows Forms a dados no Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)

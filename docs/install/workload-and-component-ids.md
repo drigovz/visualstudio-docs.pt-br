@@ -3,8 +3,8 @@ title: IDs de carga de trabalho e de componente do Visual Studio
 titleSuffix: ''
 description: Usar as IDs de carga de trabalho e de componente para instalar o Visual Studio usando uma linha de comando ou para especificar como uma dependência em um manifesto do VSIX
 keywords: ''
-author: TerryGLee
-ms.author: tglee
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.date: 09/23/2019
 ms.topic: reference
@@ -16,12 +16,12 @@ ms.custom: seodec18
 ms.assetid: 34e19ef1-abfb-44fd-aad2-33c5d7874482
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 51d5c25b9e8a3125a0f1b09a4fbfd5f6d6139084
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: a5da7186bcc67fb61e80fdd691142423b879f312
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71211386"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75588428"
 ---
 # <a name="visual-studio-workload-and-component-ids"></a>IDs de carga de trabalho e de componente do Visual Studio
 
@@ -44,7 +44,7 @@ Clique nos nomes de edição na tabela a seguir para ver as IDs de carga de trab
 | [Visual&nbsp;Studio Test&nbsp;Professional&nbsp;2017](workload-component-id-vs-test-professional.md?vs-2017) | Microsoft.VisualStudio.Product.TestProfessional | Visual Studio Test Professional 2017 |
 | [Visual&nbsp;Studio Feedback&nbsp;Client&nbsp;2017](workload-component-id-vs-feedback-client.md?vs-2017) | Microsoft.VisualStudio.Product.FeedbackClient | Visual Studio Feedback Client 2017 |
 
-Para obter mais informações sobre como usar essas listas, confira a página [Usar parâmetros de linha de comando para instalar o Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md?view=vs-2017) e a página [Como: Migrar projetos de extensibilidade para o Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md?view=vs-2017).
+Para obter mais informações sobre como usar essas listas, consulte as páginas [Usar parâmetros de linha de comando para instalar o Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md?view=vs-2017) e [Como migrar projetos de extensibilidade para o Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md?view=vs-2017).
 
 ::: moniker-end
 
@@ -62,7 +62,7 @@ Para obter mais informações sobre como usar essas listas, confira a página [U
 | Test[Agent do&nbsp;Visual&nbsp;Studio&nbsp;2019](workload-component-id-vs-test-agent.md?vs-2019)  | Microsoft.VisualStudio.Product.TestAgent | Dá suporte à execução de testes automatizados e carrega testes remotamente |
 | [Visual&nbsp;Studio Load&nbsp;Test&nbsp;Controller 2019](workload-component-id-vs-test-controller.md?vs-2019) | Microsoft.VisualStudio.Product.TestController | Distribuir testes automatizados para vários computadores |
 
-Para obter mais informações sobre como usar essas listas, confira a página [Usar parâmetros de linha de comando para instalar o Visual Studio](use-command-line-parameters-to-install-visual-studio.md?view=vs-2019) e a página [Como: Migrar projetos de extensibilidade para o Visual Studio](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md?view=vs-2019).
+Para obter mais informações sobre como usar essas listas, consulte a página [usar parâmetros de linha de comando para instalar o Visual Studio](use-command-line-parameters-to-install-visual-studio.md?view=vs-2019) e a página [como migrar projetos de extensibilidade para o Visual Studio](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md?view=vs-2019) .
 
 > [!NOTE]
 > Para obter uma lista de IDs de carga de trabalho e de componente para a versão anterior, confira [IDs de carga de trabalho e de componente do Visual Studio 2017](workload-and-component-ids.md?view=vs-2017)
@@ -71,7 +71,7 @@ Para obter mais informações sobre como usar essas listas, confira a página [U
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 * [Guia do administrador do Visual Studio para o Visual Studio](visual-studio-administrator-guide.md)
 * [Usar parâmetros de linha de comando para instalar o Visual Studio](use-command-line-parameters-to-install-visual-studio.md)

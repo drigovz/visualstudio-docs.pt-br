@@ -8,17 +8,17 @@ helpviewer_keywords:
 - type shapes, removing from class diagrams
 - class diagrams, removing type shapes
 ms.assetid: e9030aea-c77d-4cc1-b8f6-b6ca469b692d
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eb2901d756e332a719fc56732a951257760ca03f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f4c55204983f9e7a546867621ec21070c8d69645
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647808"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590157"
 ---
 # <a name="how-to-customize-class-diagrams"></a>Como personalizar diagramas de classe
 
@@ -88,7 +88,7 @@ As seções que contêm membros de tipo, como a seção **Propriedades** em uma 
 
      Todos os membros e compartimentos ocultos aparecem no contêiner de tipo.
 
-## <a name="hide-relationships"></a>Ocultar relações
+## <a name="hide-relationships"></a>{1&gt;Ocultar relações&lt;1}
 
 1. Abra e selecione um arquivo de diagrama de classe no **Designer de Classe**.
 
@@ -125,7 +125,7 @@ Você pode remover uma forma de tipo do diagrama de classes sem afetar o código
 
      A forma é removida do diagrama e seu código subjacente é excluído do projeto.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Como alternar entre notação de membro e de associação](how-to-change-between-member-notation-and-association-notation.md)
 - [Como exibir tipos existentes](how-to-view-existing-types.md)

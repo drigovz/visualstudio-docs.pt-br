@@ -21,17 +21,17 @@ helpviewer_keywords:
 - MSBuild (C++), MIDL task
 - MIDL task (MSBuild (C++))
 ms.assetid: 727efa8c-3336-40b8-8bef-ae6cbd77a422
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a2ad8163b86742da99be2a2a626eab58d27cb22b
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: 44b51617aa28f02763cc513a4619b3bd3b041cc5
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911243"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592146"
 ---
 # <a name="midl-task"></a>tarefa MIDL
 Encapsula a ferramenta do compilador da MIDL (linguagem IDL) da Microsoft, *midl.exe*. Para obter mais informações, confira [Referência da linha de comando MIDL](/windows/desktop/Midl/midl-command-line-reference).
@@ -87,7 +87,7 @@ Encapsula a ferramenta do compilador da MIDL (linguagem IDL) da Microsoft, *midl
 
      Especifique um dos valores a seguir, cada um correspondendo a uma opção de linha de comando.
 
-    |Valor|Opção de linha de comando|
+    |Value|Opção de linha de comando|
     |-----------|--------------------------|
     |**Signed**|**/char signed**|
     |**Unsigned**|**/char unsigned**|
@@ -111,7 +111,7 @@ Encapsula a ferramenta do compilador da MIDL (linguagem IDL) da Microsoft, *midl
 
      Especifique um dos valores a seguir, cada um correspondendo a uma opção de linha de comando.
 
-    |Valor|Opção de linha de comando|
+    |Value|Opção de linha de comando|
     |-----------|--------------------------|
     |**Nenhum**|**/error none**|
     |**EnableCustom**|**/error**|
@@ -167,7 +167,7 @@ Encapsula a ferramenta do compilador da MIDL (linguagem IDL) da Microsoft, *midl
 
      Especifique um dos valores a seguir, cada um correspondendo a uma opção de linha de comando.
 
-    |Valor|Opção de linha de comando|
+    |Value|Opção de linha de comando|
     |-----------|--------------------------|
     |**Nenhum**|**/client none**|
     |**Stub**|**/client stub**|
@@ -182,7 +182,7 @@ Encapsula a ferramenta do compilador da MIDL (linguagem IDL) da Microsoft, *midl
 
      Especifique um dos valores a seguir, cada um correspondendo a uma opção de linha de comando.
 
-    |Valor|Opção de linha de comando|
+    |Value|Opção de linha de comando|
     |-----------|--------------------------|
     |**Nenhum**|**/server none**|
     |**Stub**|**/server stub**|
@@ -299,7 +299,7 @@ Encapsula a ferramenta do compilador da MIDL (linguagem IDL) da Microsoft, *midl
 
      Especifique um dos valores a seguir, cada um correspondendo a uma opção de linha de comando.
 
-    |Valor|Opção de linha de comando|
+    |Value|Opção de linha de comando|
     |-----------|--------------------------|
     |**NotSet**|*\<none>*|
     |**1**|**/Zp1**|
@@ -333,7 +333,7 @@ Encapsula a ferramenta do compilador da MIDL (linguagem IDL) da Microsoft, *midl
 
      Especifique um dos valores a seguir, cada um correspondendo a uma opção de linha de comando.
 
-    |Valor|Opção de linha de comando|
+    |Value|Opção de linha de comando|
     |-----------|--------------------------|
     |**NotSet**|*\<none>*|
     |**Win32**|**/env win32**|
@@ -356,7 +356,7 @@ Encapsula a ferramenta do compilador da MIDL (linguagem IDL) da Microsoft, *midl
 
      Especifique um dos valores a seguir, cada um correspondendo a uma opção de linha de comando.
 
-    |Valor|Opção de linha de comando|
+    |Value|Opção de linha de comando|
     |-----------|--------------------------|
     |**NewFormat**|**/newtlb**|
     |**OldFormat**|**/oldtlb**|
@@ -405,7 +405,7 @@ Encapsula a ferramenta do compilador da MIDL (linguagem IDL) da Microsoft, *midl
 
      Especifique um dos valores a seguir, cada um correspondendo a uma opção de linha de comando.
 
-    |Valor|Opção de linha de comando|
+    |Value|Opção de linha de comando|
     |-----------|--------------------------|
     |**0**|**/W0**|
     |**1**|**/W1**|
@@ -415,5 +415,5 @@ Encapsula a ferramenta do compilador da MIDL (linguagem IDL) da Microsoft, *midl
 
      Para obter mais informações, confira a opção **/W** em [Referência da linha de comando MIDL](/windows/desktop/Midl/midl-command-line-reference). Consulte também o parâmetro **WarnAsError** nessa tabela.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 - [Referência de tarefas](../msbuild/msbuild-task-reference.md)

@@ -5,17 +5,17 @@ ms.topic: conceptual
 f1_keywords:
 - VS.BookmarkWindow
 ms.assetid: a752ed5f-5cf9-4bf2-865a-2131ca600ed5
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e1ac1e911b00c79c64b77dca30b89a1bec74723f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 2c62ded0b94db9d39a197dde55fbc77434c5325d
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72621631"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595430"
 ---
 # <a name="set-bookmarks-in-code"></a>Definir indicadores no código
 
@@ -40,6 +40,6 @@ Você pode organizar indicadores em pastas virtuais escolhendo **Nova Pasta** na
 
 Você pode desligar indicadores (sem removê-los) escolhendo o botão **Desabilitar Todos os Indicadores** na janela de indicadores. Você pode reabilitá-los escolhendo o mesmo botão (que agora é chamado de **Habilitar Todos os Indicadores**).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Recursos do Editor de Códigos](../ide/writing-code-in-the-code-and-text-editor.md)

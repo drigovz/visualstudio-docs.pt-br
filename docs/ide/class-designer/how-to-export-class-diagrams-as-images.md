@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - class diagrams, exporting as images
 ms.assetid: c57055c5-1340-449f-b9d3-ca6f87e2f69a
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0bceb724784f70e3b1c527507eb7d837558c7d0f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ac469b913b03dec9389b3f44121c2e80d87d30b3
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72631734"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590131"
 ---
 # <a name="how-to-export-class-diagrams-as-images"></a>Como exportar diagramas de classe como imagens
 
@@ -37,7 +37,7 @@ Para exportar um diagrama de classe que você criou do código em um projeto, sa
 
 Para atualizar automaticamente as imagens exportadas vinculadas de outros documentos, exporte o diagrama novamente no Visual Studio.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Como imprimir diagramas de classe](how-to-print-class-diagrams.md)
 - [Trabalhando com diagramas de classe](designing-and-viewing-classes-and-types.md)

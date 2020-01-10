@@ -13,17 +13,17 @@ helpviewer_keywords:
 - GenerateTemporaryTargetAssembly task [WPF MSBuild], parameters
 - creating an assembly [WPF MSBuild], XAML page refers to a locally declared type
 ms.assetid: 92b6539c-6897-45e0-8989-0c234bbfe782
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 864c15203b0b9601f2c9f5bd1421acf48120bb41
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 634cf365c0cd42e3eb146b74a137a66f742a8730
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62977827"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594793"
 ---
 # <a name="generatetemporarytargetassembly-task"></a>Tarefa GenerateTemporaryTargetAssembly
 A tarefa [!INCLUDE[TLA#tla_xaml](../msbuild/includes/tlasharptla_xaml_md.md)] gera um assembly se pelo menos uma página <xref:Microsoft.Build.Tasks.Windows.GenerateTemporaryTargetAssembly> em um projeto referencia um tipo declarado localmente no projeto. O assembly gerado será removido após concluir o processo de build ou se o processo de build falhar.
@@ -32,15 +32,15 @@ A tarefa [!INCLUDE[TLA#tla_xaml](../msbuild/includes/tlasharptla_xaml_md.md)] ge
 
 | Parâmetro | Descrição |
 |--------------------------| - |
-| `AssemblyName` | Parâmetro da **cadeia de caracteres** obrigatório.<br /><br /> Especifica o nome curto do assembly que é gerado para um projeto e também é o nome do assembly de destino que é gerado temporariamente. Por exemplo, se um projeto gera um executável [!INCLUDE[TLA#tla_mswin](../code-quality/includes/tlasharptla_mswin_md.md)] cujo nome é *WinExeAssembly.exe*, o parâmetro **AssemblyName** tem um valor de **WinExeAssembly**. |
-| `CompileTargetName` | Parâmetro da **cadeia de caracteres** obrigatório.<br /><br /> Especifica o nome do destino [!INCLUDE[TLA#tla_msbuild](../msbuild/includes/tlasharptla_msbuild_md.md)] que é usado para gerar assemblies de arquivos de código-fonte. O valor típico para **CompileTargetName** é **CoreCompile**. |
-| `CompileTypeName` | Parâmetro da **cadeia de caracteres** obrigatório.<br /><br /> Especifica o tipo de compilação é executada pelo destino que é especificado pelo parâmetro **CompileTargetName**. Para o destino **CoreCompile**, esse valor é **Compile**. |
-| `CurrentProject` | Parâmetro da **cadeia de caracteres** obrigatório.<br /><br /> Especifica o caminho completo do arquivo de projeto [!INCLUDE[TLA2#tla_msbuild](../msbuild/includes/tla2sharptla_msbuild_md.md)] para o projeto que exige um assembly de destino temporário. |
-| `GeneratedCodeFiles` | Parâmetro opcional **ITaskItem[]**.<br /><br /> Especifica a lista de arquivos de código gerenciado específicos a um idioma que foram gerados pela tarefa [MarkupCompilePass1](../msbuild/markupcompilepass1-task.md). |
-| `IntermediateOutputPath` | Parâmetro da **cadeia de caracteres** obrigatório.<br /><br /> Especifica o diretório em que o assembly de destino temporário é gerado. |
-| `MSBuildBinPath` | Parâmetro da **cadeia de caracteres** obrigatório.<br /><br /> Especifica o local do *MSBuild.exe*, que é necessário para compilar o assembly de destino temporário. |
-| `ReferencePath` | Parâmetro opcional **ITaskItem[]**.<br /><br /> Especifica uma lista de assemblies, pelo caminho e nome de arquivo, que são referenciados pelos tipos que são compilados no assembly de destino temporário. |
-| `ReferencePathTypeName` | Parâmetro da **cadeia de caracteres** obrigatório.<br /><br /> Especifica o parâmetro usado pelo parâmetro do destino de compilação (**CompileTargetName**) que especifica a lista de referências de assembly (**ReferencePath**). O valor apropriado é **ReferencePath**. |
+| `AssemblyName` | Parâmetro obrigatório **String**.<br /><br /> Especifica o nome curto do assembly que é gerado para um projeto e também é o nome do assembly de destino que é gerado temporariamente. Por exemplo, se um projeto gera um executável [!INCLUDE[TLA#tla_mswin](../code-quality/includes/tlasharptla_mswin_md.md)] cujo nome é *WinExeAssembly.exe*, o parâmetro **AssemblyName** tem um valor de **WinExeAssembly**. |
+| `CompileTargetName` | Parâmetro obrigatório **String**.<br /><br /> Especifica o nome do destino [!INCLUDE[TLA#tla_msbuild](../msbuild/includes/tlasharptla_msbuild_md.md)] que é usado para gerar assemblies de arquivos de código-fonte. O valor típico para **CompileTargetName** é **CoreCompile**. |
+| `CompileTypeName` | Parâmetro obrigatório **String**.<br /><br /> Especifica o tipo de compilação é executada pelo destino que é especificado pelo parâmetro **CompileTargetName**. Para o destino **CoreCompile**, esse valor é **Compile**. |
+| `CurrentProject` | Parâmetro obrigatório **String**.<br /><br /> Especifica o caminho completo do arquivo de projeto [!INCLUDE[TLA2#tla_msbuild](../msbuild/includes/tla2sharptla_msbuild_md.md)] para o projeto que exige um assembly de destino temporário. |
+| `GeneratedCodeFiles` | Parâmetro opcional **ITaskItem[]** .<br /><br /> Especifica a lista de arquivos de código gerenciado específicos a um idioma que foram gerados pela tarefa [MarkupCompilePass1](../msbuild/markupcompilepass1-task.md). |
+| `IntermediateOutputPath` | Parâmetro obrigatório **String**.<br /><br /> Especifica o diretório em que o assembly de destino temporário é gerado. |
+| `MSBuildBinPath` | Parâmetro obrigatório **String**.<br /><br /> Especifica o local do *MSBuild.exe*, que é necessário para compilar o assembly de destino temporário. |
+| `ReferencePath` | Parâmetro opcional **ITaskItem[]** .<br /><br /> Especifica uma lista de assemblies, pelo caminho e nome de arquivo, que são referenciados pelos tipos que são compilados no assembly de destino temporário. |
+| `ReferencePathTypeName` | Parâmetro obrigatório **String**.<br /><br /> Especifica o parâmetro usado pelo parâmetro do destino de compilação (**CompileTargetName**) que especifica a lista de referências de assembly (**ReferencePath**). O valor apropriado é **ReferencePath**. |
 
 ## <a name="remarks"></a>Comentários
 A primeira passagem de compilação de marcação, que é executada pelo [MarkupCompilePass1](../msbuild/markupcompilepass1-task.md), compila arquivos [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] em formato binário. Consequentemente, o compilador precisa de uma lista de assemblies referenciados que contêm os tipos que são usados pelos arquivos [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)]. No entanto, se um arquivo [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] usa um tipo que é definido no mesmo projeto, um assembly correspondente para esse projeto não é criado até o projeto ser compilado. Portanto, uma referência de assembly não pode ser fornecida durante a primeira passagem de compilação de marcação.
@@ -70,7 +70,7 @@ O exemplo a seguir gera um assembly temporário porque *Page1.xaml* contém uma 
 </Project>
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 - [Referência do WPF MSBuild](../msbuild/wpf-msbuild-reference.md)
 - [Referência de tarefas](../msbuild/wpf-msbuild-task-reference.md)
 - [Referência do MSBuild](../msbuild/msbuild-reference.md)

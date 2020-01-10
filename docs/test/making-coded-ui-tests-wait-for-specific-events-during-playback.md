@@ -2,17 +2,17 @@
 title: Fazer os testes de IU codificados aguardarem eventos específicos
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: df1e664b8574b5c362b57733dba63f45cc04cd1d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 6e594a6aec3f9e3a9664c5eac829b27f96f12ea0
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652949"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75584446"
 ---
 # <a name="make-coded-ui-tests-wait-for-specific-events-during-playback"></a>Fazer os testes de IU codificados aguardarem eventos específicos durante a reprodução
 
@@ -105,7 +105,7 @@ O Playback.Wait() chama Thread.Sleep() internamente (após o cálculo acima) em 
 > [!TIP]
 > o Editor de testes de interface de usuário codificada permite modificar facilmente os testes de IU codificados. Com o Editor de testes de interface de usuário codificada, você pode localizar, exibir e editar os métodos de teste. Também é possível editar ações de interface do usuário e seus controles associados no mapa de controles de IU. Para obter mais informações, confira [Editar testes de IU codificados usando o Editor de Teste de IU Codificado](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Usar a automação de interface do usuário para testar seu código](../test/use-ui-automation-to-test-your-code.md)
 - [Criar testes de IU codificados](../test/use-ui-automation-to-test-your-code.md)

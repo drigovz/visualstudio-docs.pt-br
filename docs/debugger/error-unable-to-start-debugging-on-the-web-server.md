@@ -26,12 +26,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c976f14a4250741d166c189c53a1b8cae8ea891a
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 2f0e3666c313c55df605cd7b79199827765f40f3
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72736699"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75404353"
 ---
 # <a name="error-unable-to-start-debugging-on-the-web-server"></a>Erro: não foi possível iniciar a depuração no servidor Web
 
@@ -52,6 +52,7 @@ A `Unable to start debugging on the Web server` mensagem é genérica. Normalmen
 - [Não foi possível iniciar a depuração de ASP.NET](#aspnet)
 - [O depurador não pode se conectar ao computador remoto](#cannot_connect)
 - [Consulte a ajuda para obter os erros de configuração comuns. Executando a página da Web fora do depurador pode fornecer mais informações.](#see_help)
+- [Operação sem suporte. Erro desconhecido: *ErrorNumber*](#operation_not_supported)
 
 ## <a name="IISlist"></a>O IIS não lista um site que corresponda à URL de inicialização
 
@@ -76,7 +77,7 @@ A `Unable to start debugging on the Web server` mensagem é genérica. Normalmen
 ## <a name="msvsmon"></a> O Monitor de Depuração Remota do Microsoft Visual Studio (MSVSMON.EXE) parece não estar sendo executado no computador remoto
 
 - Se você estiver Depurando em um computador remoto, verifique se você [instalou e está executando o depurador remoto](../debugger/remote-debugging.md). Se a mensagem mencionar um firewall, verifique se as [portas corretas no firewall](../debugger/remote-debugger-port-assignments.md) estão abertas, especialmente se você estiver usando um firewall de terceiros.
-- Se você estiver usando um arquivo de HOSTs, verifique se ele está configurado corretamente. Por exemplo, se estiver Depurando usando **F5** (em vez de **anexar ao processo**), o arquivo hosts precisará incluir a mesma URL do projeto que nas propriedades do projeto, **Propriedades > servidores ou propriedades de > da Web** **> Depurar**, dependendo de seu tipo de projeto.
+- Se você estiver usando um arquivo de HOSTs, verifique se ele está configurado corretamente. Por exemplo, se estiver Depurando usando **F5** (em vez de **anexar ao processo**), o arquivo hosts precisará incluir a mesma URL do projeto que nas propriedades do projeto, **Propriedades > servidores ou propriedades de > da Web** **> Depurar**, dependendo do tipo de projeto.
 
 ## <a name="server_error"></a>O servidor remoto retornou um erro
 
@@ -105,6 +106,10 @@ Além disso, se você estiver usando um arquivo de HOSTs, verifique se ele está
 - Você está executando o Visual Studio e o servidor Web no mesmo computador? Abra as propriedades do projeto e verifique se o projeto está configurado para se conectar ao servidor Web correto e à URL de inicialização. (Abra **propriedades > servidores ou propriedades de > da Web** **> Depurar** , dependendo do tipo de projeto.)
 
 - Se isso não funcionar ou se você estiver depurando remotamente, siga as etapas em [verificar a configuração do IIS](#vxtbshttpservererrorsthingstocheck).
+
+## <a name="operation_not_supported"></a>Operação sem suporte. Erro desconhecido: *ErrorNumber*
+
+Se você estiver fazendo regravações de URL, teste um Web. config básico sem regravações de URL. Consulte a **Observação** sobre o módulo de reescrita de URL em [verificar a configuração do IIS](#vxtbshttpservererrorsthingstocheck).
 
 ## <a name="vxtbshttpservererrorsthingstocheck"></a>Verifique a configuração do IIS
 
@@ -161,5 +166,5 @@ Se a configuração do IIS não estiver causando o problema, tente estas etapas:
 
     Se você não puder fazer com que seu aplicativo funcione com o depurador, tente criar um aplicativo ASP.NET básico localmente no servidor e tente depurar o aplicativo básico. (Talvez você queira usar o modelo ASP.NET MVC padrão.) Se você puder depurar um aplicativo básico, isso poderá ajudá-lo a identificar o que há de diferente entre as duas configurações. Procure diferenças nas configurações no arquivo Web. config, como regras de reescrita de URL.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 - [Depurando aplicativos Web: erros e solução de problemas](../debugger/debugging-web-applications-errors-and-troubleshooting.md)

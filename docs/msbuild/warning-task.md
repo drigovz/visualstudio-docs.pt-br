@@ -13,17 +13,17 @@ helpviewer_keywords:
 - Warning task [MSBuild]
 - MSBuild, Warning task
 ms.assetid: 96ba5507-8b43-4f54-a1d7-9b15644dd56c
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: afbf7dd2f8ae42cd21ee7c9d006d9f503d2d3bf9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 84b9f9d9d92815d1719f8ba43f4014ef9598e0c4
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62779085"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75567132"
 ---
 # <a name="warning-task"></a>tarefa Warning
 Registra um aviso durante um build com base em uma instrução condicional avaliada.
@@ -62,6 +62,6 @@ Registra um aviso durante um build com base em uma instrução condicional avali
 </Project>
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 - [Obter logs de build](../msbuild/obtaining-build-logs-with-msbuild.md)
 - [Referência de esquema de arquivos de projeto](../msbuild/msbuild-project-file-schema-reference.md)

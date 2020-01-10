@@ -2,19 +2,19 @@
 title: Refatorar código para converter um loop for em uma instrução foreach
 ms.date: 05/10/2018
 ms.topic: reference
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3d35897bd928166410ffd950534277cfac2c06b7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3539bae5bb2174fa4728fb8b277cce4ce9c48eb9
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654547"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75570239"
 ---
 # <a name="refactoring-to-convert-between-a-for-loop-and-a-foreach-statement"></a>Refatoração para converter entre um loop for e uma instrução foreach
 
@@ -82,7 +82,7 @@ Os motivos pelos quais talvez você deseje converter uma instrução [foreach](/
 > [!NOTE]
 > Para C#, o código gerado por essas refatorações usa um tipo de explícito ou [var](/dotnet/csharp/language-reference/keywords/var) para o tipo dos itens na coleção. O tipo no código gerado, explícito ou implícito, depende das configurações de estilo de código em escopo. Essas configurações de estilo de código específicas são configuradas no nível do computador em **Ferramentas** > **Opções** > **Editor de Texto** > **C#**  > **Estilo de Código** > **Geral** >  **\'preferências de var**, ou no nível da solução em um arquivo [EditorConfig](../../ide/editorconfig-language-conventions.md#implicit-and-explicit-types). Se você alterar uma configuração de estilo do código em **Opções**, abra o arquivo de código para que as alterações entrem em vigor.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Refatoração](../refactoring-in-visual-studio.md)
 - [Visualizar alterações](../../ide/preview-changes.md)

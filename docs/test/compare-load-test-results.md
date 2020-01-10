@@ -6,15 +6,15 @@ helpviewer_keywords:
 - load tests, reporting
 - load tests, results
 ms.assetid: 31874114-459a-45d5-9f8b-2ea503627db8
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0fe200f73d8053d3970236c831d3f82ab21dac8e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f85800ea59545ad64a821d1bb8c003ba6eef8c26
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72665207"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589338"
 ---
 # <a name="report-load-tests-results-for-test-comparisons-or-trend-analysis"></a>Relatar resultados de teste de carga para comparações de testes ou análise de tendências
 
@@ -44,6 +44,6 @@ Além disso, o arquivo da planilha do Excel pode ser compartilhada com participa
 |**Criar um relatório de desempenho e estresse:** é possível criar relatórios com base nos testes de carga e de desempenho Web usando o Microsoft Excel.|- [Como criar relatórios de desempenho de teste de carga usando o Microsoft Excel](../test/how-to-create-load-test-performance-reports-using-microsoft-excel.md)|
 |**Criar manualmente um relatório de desempenho e de estresse usando o Microsoft Word:** é possível criar relatórios com base em testes de carga e de desempenho Web copiando e colando manualmente o resumo, a tabela e os dados do gráfico em um documento do Microsoft Word.|- [Como criar manualmente um relatório de desempenho de teste de carga usando o Microsoft Word](../test/how-to-manually-create-a-load-test-performance-report-using-microsoft-word.md)|
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
-- [Analisar resultados de teste de carga](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
+- [Analisar resultados do teste de carga](../test/analyze-load-test-results-using-the-load-test-analyzer.md)

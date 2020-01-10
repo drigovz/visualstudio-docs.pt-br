@@ -11,17 +11,17 @@ helpviewer_keywords:
 - WPF Designer, data binding
 - data binding, WPF
 ms.assetid: e05a1e0c-5082-479d-bbc9-d395b0bc6580
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: ee858c7c17798f327d323f632d4cb9e8a77b6712
-ms.sourcegitcommit: bde55773485c9bca50a760ac9e4c919e0a208a51
+ms.openlocfilehash: 5c9136b5047f835ecbf56df71bb226b5f56a6e19
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72924534"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586946"
 ---
 # <a name="bind-wpf-controls-to-data-in-visual-studio"></a>Associar controles WPF a dados no Visual Studio
 
@@ -52,10 +52,10 @@ A tabela a seguir lista os [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/t
 
 | Fonte de dados | Gerar XAML que associa um controle à fonte de dados | Gerar código que preenche a fonte de dados com dados |
 | - | - | - |
-| Conjunto de dados | Sim | Sim |
+| Conjunto de Dados | Sim | Sim |
 | [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] | Sim | Sim |
-| Serviço | Sim | Não |
-| Objeto | Sim | Não |
+| Service | Sim | Não |
+| Objeto do | Sim | Não |
 
 ### <a name="datasets"></a>Conjuntos de dados
 
@@ -93,7 +93,7 @@ O Visual Studio gera XAML, que faz o seguinte:
 
 - Cria uma associação de dados para um controle. Se você arrastar o item para um controle existente no designer, o [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] associará o controle ao item. Se você arrastar o item para um contêiner, o [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] criará o controle que foi selecionado para o item arrastado e associará o controle ao item. O controle é criado dentro de um novo <xref:System.Windows.Controls.Grid>.
 
-### <a name="objects"></a>Objetos
+### <a name="objects"></a>Objetos do
 
 Quando você arrasta um objeto ou uma propriedade da janela **fontes de dados** para o designer, o Visual Studio gera [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] que cria um controle associado a dados (ou associa um controle existente ao objeto ou à propriedade). No entanto, o Visual Studio não gera código para preencher o objeto com dados. Você deve gravar esse código sozinho.
 
@@ -106,6 +106,6 @@ O Visual Studio gera [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlashar
 
 - Cria uma associação de dados para um controle. Se você arrastar o item para um controle existente no designer, o XAML associará o controle ao item. Se você arrastar o item para um contêiner, o XAML criará o controle que foi selecionado para o item arrastado e associará o controle ao item. O controle é criado dentro de um novo <xref:System.Windows.Controls.Grid>.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Associar controles a dados no Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)

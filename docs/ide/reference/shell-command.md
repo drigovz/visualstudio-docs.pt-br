@@ -13,17 +13,17 @@ helpviewer_keywords:
 - Shell, launching exe files
 - Visual Studio, executables from
 ms.assetid: 737fda23-b852-45c4-a9fe-41cbce6ba70f
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 502bb7b1ab6236fd88c7c6dbc789737e50686d89
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 5bf13c7624d6c9d8e64b79f653eb83a0c5f3b3f0
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747737"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75565871"
 ---
 # <a name="shell-command"></a>Comando Shell
 Inicia programas executáveis de dentro do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
@@ -37,13 +37,13 @@ Tools.Shell [/command] [/output] [/dir:folder] path [args]
 ## <a name="arguments"></a>Arguments
 `path`
 
-Necessário. O caminho e o nome do arquivo a ser executado ou o documento a ser aberto. Será necessário um caminho completo se o arquivo especificado não estiver em um dos diretórios na variável de ambiente PATH.
+Necessária. O caminho e o nome do arquivo a ser executado ou o documento a ser aberto. Será necessário um caminho completo se o arquivo especificado não estiver em um dos diretórios na variável de ambiente PATH.
 
 `args`
 
 Opcional. Quaisquer argumentos a serem passados para o programa invocado.
 
-## <a name="switches"></a>Opções
+## <a name="switches"></a>Comutadores
 /commandwindow [ou] /command [ou] /c [ou] /cmd
 
 Opcional. Especifica que a saída para o executável é exibida na janela **Comando**.
@@ -84,7 +84,7 @@ O comando a seguir usa xcopy.exe para copiar o arquivo `MyText.txt` para a pasta
 >Tools.Shell /o /c xcopy.exe c:\MyText.txt c:\Text\MyText.txt
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Comandos do Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Janela Comando](../../ide/reference/command-window.md)

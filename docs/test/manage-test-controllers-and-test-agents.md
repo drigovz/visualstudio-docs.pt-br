@@ -2,17 +2,17 @@
 title: Gerenciar controladores e agentes de teste
 ms.date: 09/18/2018
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 530a3d7ac205988639ed1346f823d889f56adffb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: efcc284291281b6e370cf51ddbe175faf8f1204c
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652920"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75584407"
 ---
 # <a name="manage-test-controllers-and-test-agents"></a>Gerenciar controladores e agentes de teste
 
@@ -116,7 +116,7 @@ O status do agente de teste pode ser qualquer um dos seguintes valores:
 
 |Status|Descrição|
 |-|-----------------|
-|Executando teste|Executando testes|
+|Executando teste|{1&gt;{2&gt;Executando testes&lt;2}&lt;1}|
 |Pronto|Disponível para executar testes ou coletar dados e diagnóstico|
 |Offline|Indisponível para executar testes ou coletar dados e diagnósticos|
 |Desconectado|O agente de teste não foi iniciado|
@@ -218,6 +218,6 @@ Após a execução de teste, habilite novamente a verificação de assinatura at
 
 Uma maneira recomendada de desabilitar e habilitar novamente a verificação de assinatura é usar os comandos do *SN.exe* nos scripts. Você pode desabilitar a verificação em um script de configuração e reativar a verificação em um script de limpeza.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Instalar e configurar agentes de teste](../test/lab-management/install-configure-test-agents.md)

@@ -3,17 +3,17 @@ title: Janelas do depurador XSLT
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 846fdabd-e5c3-4688-9b0d-a93fbeea1b96
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ae37db21072e81a5940f09f085bf261839686a69
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: bb72acf2db63e54da8a1ee001d2abfaa30850fc3
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72646085"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592874"
 ---
 # <a name="debugger-user-interface-xslt"></a>XSLT (interface do usuário do depurador)
 
@@ -49,7 +49,7 @@ A janela locais também exibe as variáveis predefinidos de contexto que acompan
 
 A janela de saída mostra todas as mensagens de erro ou exceções de segurança que ocorrem durante a depuração. Ele também mostra a saída do depurador.
 
-## <a name="task-list"></a>Lista de Tarefas
+## <a name="task-list"></a>Lista de tarefas
 
 O **lista de tarefas** lista todos os erros de compilação na folha de estilos. Clique duas vezes no erro leva o cursor para a linha com o erro.
 
@@ -64,7 +64,7 @@ A janela de pontos de interrupção mostra os pontos de interrupção definidos 
 
 A janela de pontos de interrupção deve se comportar da mesma maneira que outros depuradores do Visual Studio.
 
-## <a name="watch-window"></a>Janela Inspecionar
+## <a name="watch-window"></a>Janela de inspeção
 
 A janela de observação é usada para avaliar as variáveis. Você também pode alterar os valores das variáveis.
 
@@ -100,7 +100,7 @@ A janela de desmontagem mostra o código do assembly que é gerado pelo compilad
 
 Para obter mais informações, [como: usar a janela de desmontagem](../debugger/how-to-use-the-disassembly-window.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Depuração de XSLT](../xml-tools/debugging-xslt.md)
 - [Introdução ao depurador](../debugger/debugger-feature-tour.md)

@@ -13,17 +13,17 @@ helpviewer_keywords:
 - Target element [MSBuild]
 - <Target> element [MSBuild]
 ms.assetid: 350f6fc2-86b3-45f2-a31e-ece0e6bd4dca
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e1748064482e13eba95e9aa83e9cb04c93b8066f
-ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
+ms.openlocfilehash: c69ee5758d5c6e513af853a8d7589057c6537956
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74491622"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75566417"
 ---
 # <a name="target-element-msbuild"></a>Elemento Target (MSBuild)
 Contém um conjunto de tarefas para o [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] executar em sequência.
@@ -51,9 +51,9 @@ Contém um conjunto de tarefas para o [!INCLUDE[vstecmsbuild](../extensibility/i
 ```
 
 ## <a name="attributes-and-elements"></a>Atributos e elementos
- As seções a seguir descrevem atributos, elementos filho e elementos pai.
+ As seções a seguir descrevem os atributos, bem como os elementos filhos e pais.
 
-### <a name="attributes"></a>Atributos
+### <a name="attributes"></a>{1&gt;{2&gt;Atributos&lt;2}&lt;1}
 
 |Atributo|Descrição|
 |---------------|-----------------|
@@ -63,12 +63,12 @@ Contém um conjunto de tarefas para o [!INCLUDE[vstecmsbuild](../extensibility/i
 |`Outputs`|Atributo opcional.<br /><br /> Os arquivos que formam saídas nesse destino. Vários arquivos são separados por ponto e vírgula. Os carimbos de data/hora dos arquivos serão comparados com os dos arquivos em `Inputs` para determinar se o `Target` está atualizado. Para saber mais, confira [Compilações incrementais](../msbuild/incremental-builds.md), [Como compilar de forma incremental](../msbuild/how-to-build-incrementally.md) e [Transformações](../msbuild/msbuild-transforms.md).|
 |`Returns`|Atributo opcional.<br /><br /> O conjunto de itens que será disponibilizado para tarefas que invocam esse destino, por exemplo, tarefas do MSBuild. Vários destinos são separados por ponto e vírgula. Se os destinos no arquivo não tiverem nenhum atributo `Returns`, os atributos de Saídas serão usados para essa finalidade.|
 |`KeepDuplicateOutputs`|Atributo booliano opcional.<br /><br /> Se for `true`, várias referências ao mesmo item nos Retornos do destino serão registradas.  Por padrão, esse atributo é `false`.|
-|`BeforeTargets`|Atributo opcional.<br /><br /> Uma lista separada por ponto e vírgula de nomes de destino.  Quando especificado, indica que esse destino deve ser executado antes dos destinos especificados. Isso permite que o autor do projeto estenda um conjunto existente de destinos sem modificá-los diretamente. Para saber mais, confira [Ordem de build de destino](../msbuild/target-build-order.md).|
-|`AfterTargets`|Atributo opcional.<br /><br /> Uma lista separada por ponto e vírgula de nomes de destino. Quando especificado, indica que esse destino deve ser executado após os destinos especificados. Isso permite que o autor do projeto estenda um conjunto existente de destinos sem modificá-los diretamente. Para saber mais, confira [Ordem de build de destino](../msbuild/target-build-order.md).|
+|`BeforeTargets`|Atributo opcional.<br /><br /> Uma lista separada por ponto e vírgula de nomes de destino.  Quando especificado, indica que esse destino deve ser executado antes dos destinos especificados. Isso permite que o autor do projeto estenda um conjunto existente de destinos sem modificá-los diretamente. Para obter mais informações, confira [Ordem de build de destino](../msbuild/target-build-order.md).|
+|`AfterTargets`|Atributo opcional.<br /><br /> Uma lista separada por ponto e vírgula de nomes de destino. Quando especificado, indica que esse destino deve ser executado após os destinos especificados. Isso permite que o autor do projeto estenda um conjunto existente de destinos sem modificá-los diretamente. Para obter mais informações, confira [Ordem de build de destino](../msbuild/target-build-order.md).|
 |`DependsOnTargets`|Atributo opcional.<br /><br /> Os destinos que devem ser executados antes que esse destino possa ser executado ou antes que a análise de dependência de nível superior possa ocorrer. Vários destinos são separados por ponto e vírgula.|
 |`Label`|Atributo opcional.<br /><br /> Um identificador que pode identificar ou ordenar os elementos do sistema e do usuário.|
 
-### <a name="child-elements"></a>Elementos filho
+### <a name="child-elements"></a>Child elements
 
 | Elemento | Descrição |
 | - | - |
@@ -117,6 +117,6 @@ Contém um conjunto de tarefas para o [!INCLUDE[vstecmsbuild](../extensibility/i
 </Target>
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 - [Destinos](../msbuild/msbuild-targets.md)
 - [Referência de esquema de arquivos de projeto](../msbuild/msbuild-project-file-schema-reference.md)

@@ -8,17 +8,17 @@ helpviewer_keywords:
 - class diagrams, keyboard shortcuts
 - class diagrams, mouse shortcuts
 ms.assetid: c12d8dac-9902-4fde-b721-2a8116da53b7
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a755de4df0cd7402debbc964d2f3f9c54802eb85
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 6df4932a1043c984509632951ba67864fefe31ce
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73188974"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590755"
 ---
 # <a name="keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window"></a>Atalhos de teclado e do mouse no Diagrama de Classe e na janela Detalhes da Classe
 
@@ -100,7 +100,7 @@ Usar as chaves a seguir para navegar na janela **Detalhes da Classe**:
 |**Seta para a esquerda**|Se o cursor estiver na coluna Nome, pressionar a seta para a esquerda recolhe o nó atual da hierarquia (se ele estiver aberto).|
 |**Seta para a direita**|Se o cursor estiver na coluna Nome, pressionar a seta para a direita expande o nó atual da hierarquia (se ele estiver recolhido).|
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Criar e configurar membros de tipo](creating-and-configuring-type-members.md)
 - [Como usar exclusivamente o teclado](../reference/how-to-use-the-keyboard-exclusively.md)

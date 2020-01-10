@@ -4,19 +4,19 @@ ms.date: 03/19/2019
 ms.technology: vs-ide-general
 ms.custom: get-started
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4a8ea7977f73be2a38a8ac7a417c6794b567e600
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: da164414cfcca9631eaf59b5e2f6044e70ac9cc5
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189118"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594858"
 ---
 # <a name="welcome-to-the-visual-studio-ide--c"></a>Bem-vindo ao IDE do Visual Studio | C\#
 
@@ -38,7 +38,7 @@ Vamos configurar o Visual Studio para usar configurações de ambiente adequadas
 
 Para conhecer outras maneiras pelas quais você pode personalizar o IDE, confira [Personalizar o Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
 
 Explore ainda mais o Visual Studio seguindo um dos seguintes artigos introdutórios:
 
@@ -48,7 +48,7 @@ Explore ainda mais o Visual Studio seguindo um dos seguintes artigos introdutór
 > [!div class="nextstepaction"]
 > [Saiba mais sobre projetos e soluções](../tutorial-projects-solutions.md)
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - Descubra [mais recursos do Visual Studio](../../ide/advanced-feature-overview.md)
 - Visite [visualstudio.microsoft.com](https://visualstudio.microsoft.com/vs/)

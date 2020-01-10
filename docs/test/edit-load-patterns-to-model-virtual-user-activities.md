@@ -7,15 +7,15 @@ helpviewer_keywords:
 - load tests, scenarios
 - load tests, virtual users
 ms.assetid: 0ba0363b-7f50-4bde-a919-0e3bce7bc115
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8651b3a11b9db82d4c52ff600706b51855881f02
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 0836fdb085ab33b2a646d9774c94bd859b5ca5ad
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72665049"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590300"
 ---
 # <a name="edit-load-patterns-to-model-virtual-user-activities"></a>Editar padrões de carga para modelar atividades de usuário virtual
 
@@ -79,11 +79,11 @@ Um padrão de carga baseado em metas se assemelha ao padrão em etapa, mas ajust
 
   Na tabela a seguir, um exemplo mostra um padrão baseado em meta com as seguintes configurações de propriedades:
 
-|Grupo de propriedades|propriedade|Valor|
+|Grupo de propriedades|propriedade|Value|
 |-|--------------|-|
 |Contador de desempenho|Categoria|Processador|
 |Contador de desempenho|Computador|ContosoServer1|
-|Contador de desempenho|Contador|% de tempo do processador|
+|Contador de desempenho|Contador|% de Tempo do Processador|
 |Contador de desempenho|Instância|_Total|
 |Intervalo-alvo para o contador de desempenho|Alto nível|90|
 |Intervalo-alvo para o contador de desempenho|Baixo nível|70|
@@ -150,7 +150,7 @@ Um padrão de carga especifica o número de usuários virtuais ativos durante um
 
 6. Depois de alterar as propriedades, escolha **Salvar** no menu **Arquivo**. Você pode executar o teste de carga com o novo padrão de carga.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Editar cenários de teste de carga](../test/edit-load-test-scenarios.md)
 - [Como especificar o percentual de usuários virtuais que usam dados de cache da Web](../test/how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data.md)

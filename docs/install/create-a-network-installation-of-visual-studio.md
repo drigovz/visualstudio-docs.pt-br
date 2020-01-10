@@ -8,19 +8,19 @@ helpviewer_keywords:
 - '{{PLACEHOLDER}}'
 - '{{PLACEHOLDER}}'
 ms.assetid: 4CABFD20-962E-482C-8A76-E4012052F701
-author: TerryGLee
-ms.author: tglee
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: ca393af528abc7f685ceca83ac4c59ebb75dedfe
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: e7bc45db427a517a9208833cc5be6977bfc62d03
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189496"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591470"
 ---
 # <a name="create-a-network-installation-of-visual-studio"></a>Criar uma instalação de rede do Visual Studio
 
@@ -39,9 +39,9 @@ Baixe um arquivo bootstrapper para a edição do Visual Studio que você deseja.
 
 Para obter um bootstrapper para o Visual Studio 2017, consulte a página de download de [versões anteriores do Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/) para obter detalhes sobre como fazer isso.
 
-O executável da instalação &mdash;or ser mais específico, o arquivo bootstrapper &mdash;should corresponder ou ser semelhante a um dos seguintes.
+O executável da instalação&mdash;ou para ser mais específico, o arquivo bootstrapper&mdash;deve corresponder ou ser semelhante a um dos seguintes.
 
-| Edição | Filename |
+| Edição | Nome do Arquivo |
 |-------------|-----------------------|
 |Visual Studio Enterprise | **vs_enterprise.exe** |
 |Visual Studio Professional | **vs_professional.exe** |
@@ -53,9 +53,9 @@ Outros bootstrapper com suporte incluem **vs_feedbackclient. exe**, **vs_teamexp
 
 ::: moniker range="vs-2019"
 
-O executável da instalação &mdash;or ser mais específico, um arquivo bootstrapper &mdash;should corresponder ou ser semelhante a um dos seguintes.
+O executável da instalação&mdash;ou para ser mais específico, um arquivo bootstrapper&mdash;deve corresponder ou ser semelhante a um dos seguintes.
 
-|Edição | Baixar|
+|Edição | {1&gt;{2&gt;Baixar&lt;2}&lt;1}|
 |-------------|-----------------------|
 |Visual Studio Enterprise | [**vs_enterprise.exe**](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=enterprise&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=network+install&utm_content=download+vs2019) |
 |Visual Studio Professional | [**vs_professional.exe**](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=professional&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=network+install&utm_content=download+vs2019) |
@@ -90,7 +90,7 @@ Outros bootstrapper com suporte incluem [vs_teamexplorer. exe](https://aka.ms/vs
 
 Você pode modificar response.json para definir valores padrão que serão usados quando a instalação for executada.  Por exemplo, você pode configurar o arquivo `response.json` para selecionar um conjunto específico de cargas de trabalho selecionadas automaticamente. Confira [Automatizar a instalação do Visual Studio com um arquivo de resposta](automated-installation-with-response-file.md) para obter detalhes.
 
-E, se você encontrar um problema com o bootstrapper do Visual Studio gerando um erro ao emparelhar com um arquivo Response. JSON, consulte a seção "falha ao analisar a ID do processo pai" de [solucionar erros relacionados à rede ao instalar ou usar o Visual ](troubleshooting-network-related-errors-in-visual-studio.md#error-failed-to-parse-id-from-parent-process)Página do estúdio para obter mais informações sobre o que fazer.
+E, se você tiver um problema com o inicializador do Visual Studio lançando um erro ao emparelhar com um arquivo Response. JSON, consulte a seção "falha ao analisar a ID do processo pai" de [solucionar erros relacionados à rede ao instalar ou usar o Visual Studio](troubleshooting-network-related-errors-in-visual-studio.md#error-failed-to-parse-id-from-parent-process) página para obter mais informações sobre o que fazer.
 
 ## <a name="copy-the-layout-to-a-network-share"></a>Copiar o layout para um compartilhamento de rede
 
@@ -284,7 +284,7 @@ Oferecemos também uma opção de suporte por meio de [**chat ao vivo**](https:/
 
 Também temos outras opções de suporte disponíveis. Para obter uma lista, confira nossa página de [comentários](../ide/feedback-options.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Guia do administrador do Visual Studio](visual-studio-administrator-guide.md)
 - [Atualizar uma instalação em rede do Visual Studio](update-a-network-installation-of-visual-studio.md)

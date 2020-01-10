@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - code snippets, best practices
 - code snippets, security
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8afb10d2fb5dcf99c63fb12ac624b904353d95b9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 08add20b59e3e14897d1870aa45fd6cce8698d96
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647760"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591704"
 ---
 # <a name="best-practices-for-using-code-snippets"></a>Práticas recomendadas para usar snippets de código
 
@@ -67,7 +67,7 @@ Os snippets de código do IntelliSense instalados pelo Visual Studio não são e
 
   - O snippet pode conter referências que são adicionadas silenciosamente ao projeto e podem ser carregadas em qualquer lugar do sistema. Essas referências podem ter sido baixadas no computador em que você baixou o snippet. Depois, o snippet de código pode fazer uma chamada a um método na referência que executa um código mal-intencionado. Para se proteger contra um ataque desse tipo, examine os blocos Importações e Referências do arquivo de snippet.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Snippets de código do Visual Basic IntelliSense](/dotnet/visual-basic/developing-apps/using-ide/intellisense-code-snippets)
 - [Como proteger aplicativos](../ide/securing-applications.md)

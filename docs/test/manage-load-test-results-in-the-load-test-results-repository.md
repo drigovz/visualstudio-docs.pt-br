@@ -8,15 +8,15 @@ helpviewer_keywords:
 - load test results, repository
 - Load Test Results Repository
 ms.assetid: 1cd63c4b-4f74-4133-b675-5e8fbeab25f3
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a6b24fcc485462b8d67ae88104c1ee3ed156e747
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: bd0562a6cceeb50d43222a7850de11d52b0587cf
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652942"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75584420"
 ---
 # <a name="manage-load-test-results-in-the-load-test-results-repository"></a>Gerenciar resultados do teste de carga no repositório de Resultados do Teste de Carga
 
@@ -52,11 +52,11 @@ Quando o Visual Studio Enterprise é instalado, o repositório de resultados de 
 
 ## <a name="related-tasks"></a>Tarefas relacionadas
 
-[Analisar resultados de teste de carga](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
+[Analisar resultados do teste de carga](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
 
 Você pode exibir os resultados de um teste de carga em execução e um teste de carga concluído usando o **Analisador de Teste de Carga**.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
-- [Analisar resultados de teste de carga](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
+- [Analisar resultados do teste de carga](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
 - [Como acessar os resultados do teste de carga para análise](../test/how-to-access-load-test-results-for-analysis.md)

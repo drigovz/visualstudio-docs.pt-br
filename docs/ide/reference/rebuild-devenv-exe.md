@@ -9,17 +9,17 @@ helpviewer_keywords:
 - /Rebuild Devenv switch
 - applications [Visual Studio], rebuilding
 ms.assetid: c5a8a4bf-0e2b-46eb-a44a-8aeb29b92c32
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5da73d37542bbdd7babd956a64ed78c714be7101
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 76fe4bcf3441163604d93e9264ed6f78fcf0224b
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72655633"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75565611"
 ---
 # <a name="rebuild-devenvexe"></a>/Rebuild (devenv.exe)
 
@@ -35,7 +35,7 @@ devenv SolutionName /Rebuild [SolnConfigName [/Project ProjName [/ProjectConfig 
 
 - *SolutionName*
 
-  Necessário. O caminho completo e o nome do arquivo de solução.
+  Necessária. O caminho completo e o nome do arquivo de solução.
 
 - *SolnConfigName*
 
@@ -49,7 +49,7 @@ devenv SolutionName /Rebuild [SolnConfigName [/Project ProjName [/ProjectConfig 
 
   Opcional. O nome da configuração de build do projeto (por exemplo, `Debug` ou `Release`) que será usado ao recompilar o `/Project` nomeado. Se mais de uma plataforma de solução estiver disponível, também será preciso especificar a plataforma (por exemplo, `Debug|Win32`). Se esta opção for especificada, ela substituirá o argumento *SolnConfigName*.
 
-- `/Out` *OutputFilename*
+- `/Out` *NomeDoArquivoDeSaída*
 
   Opcional. O nome de um arquivo para o qual você deseja enviar a saída da ferramenta. Se o arquivo já existir, a ferramenta anexará a saída ao final do arquivo.
 
@@ -69,7 +69,7 @@ Este exemplo limpa e recompila o projeto `CSharpWinApp`, usando a configuração
 devenv "%USERPROFILE%\source\repos\MySolution\MySolution.sln" /rebuild Debug /project "CSharpWinApp\CSharpWinApp.csproj" /projectconfig Debug
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Opções de linha de comando do Devenv](../../ide/reference/devenv-command-line-switches.md)
 - [/Build (devenv.exe)](../../ide/reference/build-devenv-exe.md)

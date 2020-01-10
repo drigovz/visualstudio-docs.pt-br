@@ -3,23 +3,23 @@ title: 'Passo a passo: Criando uma bola de bilhar realista em 3D'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: af8eb0f3-bf6a-4d1c-ab47-dcd88ab04efa
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 95125e2f808dde634435e4eeb2254e397fceb140
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 866f91303c224f8330a4d2be76f3d29331fcb346
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72634553"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589910"
 ---
 # <a name="walkthrough-create-a-realistic-3d-billiard-ball"></a>Explicação passo a passo: criar uma bola de bilhar realista em 3D
 
 Este passo a passo demonstra como criar uma bola de bilhar realista em 3D usando o Designer de Sombreador e o Editor de Imagens no Visual Studio. A aparência 3D da bola de bilhar é obtida pela combinação de várias técnicas de sombreador com recursos de textura adequados.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>{1&gt;{2&gt;Pré-requisitos&lt;2}&lt;1}
 
 Você precisa dos seguintes componentes e habilidades para concluir este passo a passo:
 
@@ -207,7 +207,7 @@ A primeira etapa é criar uma textura de mapa de cubo. Em muitos tipos de aplica
 
    Nesta imagem final, observe como os efeitos que você adicionou se unem para criar uma bola de bilhar muito convincente. A forma, a textura e a iluminação criam a aparência básica de um objeto 3D e os realces especulares e os reflexos tornam a bola de bilhar mais interessante e fazem com que ela pareça fazer parte do ambiente.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Como exportar um sombreador](../designers/how-to-export-a-shader.md)
 - [Como aplicar um sombreador a um modelo 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)

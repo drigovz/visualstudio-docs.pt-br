@@ -7,15 +7,15 @@ helpviewer_keywords:
 - load tests, adding delays
 - load tests, changing think times
 ms.assetid: 8e03bee5-ab7b-4b40-9497-9dbe91ccb90e
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 661a31411a561f15809a10fb15fd71a29e6a64fa
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 887d2af9e60be914bd74141041ecc375cfea4f00
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72672948"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590027"
 ---
 # <a name="edit-think-times-to-simulate-website-human-interaction-delays-in-load-tests-scenarios"></a>Editar tempos de processamento para simular atrasos de interação humana no site em cenários de testes de carga
 
@@ -56,6 +56,6 @@ Os tempos de processamento são usados, mas variados em uma curva normal. Fornec
 
 4. Depois de alterar as propriedades, escolha **Salvar** no menu **Arquivo**. Você pode executar o teste de carga com o novo perfil de processamento.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Editar cenários de teste de carga](../test/edit-load-test-scenarios.md)

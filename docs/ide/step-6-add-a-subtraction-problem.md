@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4789248a129bcd41452af1184418f9f59ede7595
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: 611df946b97f97832b7debfac3d11c5b7972cdae
+ms.sourcegitcommit: 10d16e18c5f5e482c4c2856e6cacaad283463b65
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72562572"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75776099"
 ---
 # <a name="step-6-add-a-subtraction-problem"></a>Etapa 6: Adicionar um problema de subtração
 Na sexta parte deste tutorial, você adicionará um problema de subtração e aprenderá a executar as seguintes tarefas:
@@ -32,9 +32,7 @@ Na sexta parte deste tutorial, você adicionará um problema de subtração e ap
 - Atualize o manipulador de eventos de escala do temporizador <xref:System.Windows.Forms.Timer.Tick> de modo que ele preencha a resposta correta quando o tempo de execução se esgotar.
 
 > [!NOTE]
-> Esse tópico faz parte de uma série de tutoriais sobre conceitos de codificação básica.
-> - Para obter uma visão geral do tutorial, confira [Tutorial 2: criar um teste de matemática temporizado](../ide/tutorial-2-create-a-timed-math-quiz.md).
-> - Para baixar uma versão completa do código, consulte [exemplo de tutorial de teste de matemática completo](https://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c).
+> Esse tópico faz parte de uma série de tutoriais sobre conceitos de codificação básica. Para obter uma visão geral do tutorial, confira [Tutorial 2: criar um teste de matemática temporizado](../ide/tutorial-2-create-a-timed-math-quiz.md).
 
 ## <a name="to-add-a-subtraction-problem"></a>Para adicionar um problema de subtração
 
@@ -61,7 +59,7 @@ Na sexta parte deste tutorial, você adicionará um problema de subtração e ap
 
      Você pode chamar o método de `Next()` da classe Random, que você nomeou como "randomizer" anteriormente neste tutorial, de várias maneiras. Os métodos que você pode chamar em mais de uma maneira são conhecidos como sobrecarregados, e você pode usar o IntelliSense para explorá-los. Procure novamente na dica de ferramenta da janela do IntelliSense pelo método de `Next()`.
 
-     ![IntelliSense dica de ferramenta de janela ](../ide/media/express_overloads.png)<br/>
+     ![dica de ferramenta de janela do IntelliSense](../ide/media/express_overloads.png)<br/>
 *Dica de ferramenta* do IntelliSense da janela
 
      A dica de ferramenta exibe **(+ 2 sobrecarga(s))** , o que significa que você pode chamar o método `Next()` de outras duas maneiras. As sobrecargas contêm números ou tipos diferentes de argumentos, para que funcionem ligeiramente diferentes um do outro. Por exemplo, um método pode levar um único argumento inteiro e uma de suas sobrecargas pode levar um inteiro e uma cadeia de caracteres. Você escolhe a sobrecarga correta com base no que você deseja fazer. Quando você adiciona código ao método de `StartTheQuiz()`, mais informações aparecem na janela do IntelliSense para você inserir `randomizer.Next(`. Para percorrer as sobrecargas, escolha as teclas de **seta para cima** e **seta para baixo** como mostrado na ilustração a seguir:

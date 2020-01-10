@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, programming domain models
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7273019d837a9cc13f6ffb306946372f11ec1f7f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 521ad703b92133f56d38e061123bf13db13d6375
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658353"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75566170"
 ---
 # <a name="navigate-and-update-a-model-in-program-code"></a>Navegar e atualizar um modelo no código do programa
 
@@ -42,7 +42,7 @@ Você pode escrever código para criar e excluir elementos de modelo, definir su
 
 ## <a name="navigation"></a>Navegando no modelo
 
-### <a name="properties"></a>Propriedades
+### <a name="properties"></a>{1&gt;Propriedades&lt;1}
  As propriedades de domínio definidas na definição de DSL se tornam propriedades que você pode acessar no código do programa:
 
  `Person henry = ...;`
@@ -55,7 +55,7 @@ Você pode escrever código para criar e excluir elementos de modelo, definir su
 
  `henry.Name = "Henry VIII";`
 
- Se estiver na definição de DSL, o **tipo** de uma propriedade será **calculado**, você não poderá defini-la. Para obter mais informações, consulte [Propriedades de armazenamento calculadas e personalizadas](../modeling/calculated-and-custom-storage-properties.md).
+ Se estiver na definição de DSL, o **tipo** de uma propriedade será **calculado**, você não poderá defini-la. Para obter mais informações, consulte [Calculated e propriedades de armazenamento personalizado](../modeling/calculated-and-custom-storage-properties.md).
 
 ### <a name="relationships"></a>Relações
  As relações de domínio que você define na definição de DSL se tornam pares de propriedades, uma na classe em cada extremidade da relação. Os nomes das propriedades aparecem no diagrama DslDefinition como rótulos nas funções em cada lado da relação. Dependendo da multiplicidade da função, o tipo da propriedade é a classe na outra extremidade da relação, ou uma coleção dessa classe...
@@ -262,7 +262,7 @@ Em alguns casos, a exclusão é impedida pela existência de um bloqueio, seja n
 
  Todos esses três métodos têm o mesmo efeito. Você só precisa usar um deles.
 
- Se a função tiver uma multiplicidade de 0.. 1 ou 1.. 1, você poderá defini-la para `null` ou para outro valor:
+ Se a função tiver uma multiplicidade de 0.. 1 ou 1.. 1, você poderá defini-la para `null`ou para outro valor:
 
  `edward.FamilyTreeModel = null;`//ou:
 
@@ -285,7 +285,7 @@ Em alguns casos, a exclusão é impedida pela existência de um bloqueio, seja n
 
  `link.MoveBefore(role, nextLink);`
 
-## <a name="locks"></a>Bloquea
+## <a name="locks"></a> Locks
  Suas alterações podem ser impedidas por um bloqueio. Os bloqueios podem ser definidos em elementos individuais, em partições e na loja. Se qualquer um desses níveis tiver um bloqueio que impeça o tipo de alteração que você deseja fazer, uma exceção poderá ser gerada quando você tentar. Você pode descobrir se os bloqueios são definidos usando o elemento. Getlocks (), que é um método de extensão definido no namespace <xref:Microsoft.VisualStudio.Modeling.Immutability>.
 
  Para obter mais informações, consulte [definindo uma política de bloqueio para criar segmentos somente leitura](../modeling/defining-a-locking-policy-to-create-read-only-segments.md).
@@ -328,7 +328,7 @@ using (Transaction t = targetDiagram.Store.
 |Classe de domínio|<xref:Microsoft.VisualStudio.Modeling.ModelElement>|
 |Relação de domínio|<xref:Microsoft.VisualStudio.Modeling.ElementLink>|
 |Forma|<xref:Microsoft.VisualStudio.Modeling.Diagrams.NodeShape>|
-|Conector|<xref:Microsoft.VisualStudio.Modeling.Diagrams.BinaryLinkShape>|
+|Connector|<xref:Microsoft.VisualStudio.Modeling.Diagrams.BinaryLinkShape>|
 |Diagrama|<xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram>|
 
  Um elemento em um diagrama geralmente representa um elemento de modelo. Normalmente (mas nem sempre), um <xref:Microsoft.VisualStudio.Modeling.Diagrams.NodeShape> representa uma instância de classe de domínio e um <xref:Microsoft.VisualStudio.Modeling.Diagrams.BinaryLinkShape> representa uma instância de relação de domínio. A relação de <xref:Microsoft.VisualStudio.Modeling.Diagrams.PresentationViewsSubject> vincula um nó ou forma de link ao elemento de modelo que ele representa.
@@ -428,7 +428,7 @@ FamilyTreeDiagram diagram =
 
 Quando você cria um elemento e o vincula à árvore de relações de inserção, uma forma é automaticamente criada e associada a ela. Isso é feito pelas regras de "correção" que são executadas no final da transação. No entanto, a forma aparecerá em um local atribuído automaticamente e sua forma, cor e outros recursos terão valores padrão. Para controlar como a forma é criada, você pode usar a função Merge. Você deve primeiro adicionar os elementos que deseja adicionar a um grupo de elementos e, em seguida, mesclá-los no diagrama.
 
-Este método:
+Esse método:
 
 - Define o nome, se você tiver atribuído uma propriedade como o nome do elemento.
 
@@ -482,7 +482,7 @@ partial class MyDiagram
 ## <a name="store-partitions"></a>Armazenar partições
  Quando um modelo é carregado, o diagrama que o acompanha é carregado ao mesmo tempo. Normalmente, o modelo é carregado em Store. DefaultPartition e o conteúdo do diagrama é carregado em outra partição. Normalmente, o conteúdo de cada partição é carregado e salvo em um arquivo separado.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - <xref:Microsoft.VisualStudio.Modeling.ModelElement>
 - [Validação em uma linguagem específica de domínio](../modeling/validation-in-a-domain-specific-language.md)

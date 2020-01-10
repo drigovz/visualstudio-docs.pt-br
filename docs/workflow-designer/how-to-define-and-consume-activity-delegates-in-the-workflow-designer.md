@@ -3,17 +3,17 @@ title: 'Designer de Fluxo de Trabalho: definir e consumir delegados de atividade
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: c68e42ad-3ec0-4c2d-b104-fe36c6d83b5e
-ms.author: jillfra
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-author: jillre
-ms.openlocfilehash: 67e862e3772b157c4a0999ccd44c3698119ae8a8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+author: TerryGLee
+ms.openlocfilehash: 4309294a2be703b7511355b87c97341fee06d405
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650343"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593896"
 ---
 # <a name="how-to-define-and-consume-activity-delegates-in-the-workflow-designer"></a>Como: Defina e consumir representantes de atividade em Designer de Fluxo de Trabalho
 
@@ -32,7 +32,7 @@ O .NET Framework 4,5 inclui um designer pronto para a atividade de <xref:System.
 
 4. Na Designer de Fluxo de Trabalho, clique na guia **argumentos** .
 
-5. Clique em **Criar Argumento**. Nomeie os novos **itens**de argumento.
+5. Clique em **criar argumento**. Nomeie os novos **itens**de argumento.
 
 6. Na coluna **tipo de argumento** , selecione **matriz de [T]** .
 

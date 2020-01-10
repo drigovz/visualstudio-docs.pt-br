@@ -13,17 +13,17 @@ helpviewer_keywords:
 - MSBuild, RemoveDuplicates task
 - RemoveDuplicates task [MSBuild]
 ms.assetid: 481cbab6-73ff-488c-aba5-2c09f9eb1e04
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 027e1f4894660b0198ed8a6df862e66e41cde409
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 235f96b3d67b0ad2e3c3bd1c486c5c9f2eeb86c2
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62811609"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596002"
 ---
 # <a name="removeduplicates-task"></a>Tarefa RemoveDuplicates
 Remove itens duplicados da coleção do item especificado.
@@ -89,7 +89,7 @@ Remove itens duplicados da coleção do item especificado.
 </Project>
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 - [Referência de tarefas](../msbuild/msbuild-task-reference.md)
 - [Conceitos do MSBuild](../msbuild/msbuild-concepts.md)
 - [Tarefas](../msbuild/msbuild-tasks.md)

@@ -9,18 +9,18 @@ helpviewer_keywords:
 - searching IDE
 - IDE, searching
 ms.assetid: 4200f297-d065-4723-9a30-d91ff2e26c9d
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: f0cc6bcb59bf98a7416221115dbeeef8f24a5e74
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 706b54e3ee925b1833f860da2f84c8d28af9617e
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72655664"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75565663"
 ---
 # <a name="quick-launch-environment-options-dialog-box"></a>Caixa de diálogo de início rápido, ambiente, opções
 
@@ -37,9 +37,9 @@ Os resultados da pesquisa do Início Rápido aparecem em quatro categorias: **Us
 |Categoria|Atalho|Descrição do atalho|
 |--------------|--------------| - |
 |Usados Recentemente|@mru<br /><br /> Por exemplo, `@mru font`|Exibe até cinco dos itens que foram **Usados Recentemente**.|
-|Menus|@menu<br /><br /> Por exemplo, `@menu project`|Limita a pesquisa a itens de menu.|
+|{1&gt;Menus&lt;1}|@menu<br /><br /> Por exemplo, `@menu project`|Limita a pesquisa a itens de menu.|
 |Opções|@opt<br /><br /> Por exemplo, `@opt font`|Limita a pesquisa a configurações na caixa de diálogo **Opções**.|
-|Documentos|@doc<br /><br /> Por exemplo, `@doc program.cs`|Limita a pesquisa a nomes de arquivo e caminhos de documentos abertos para os critérios de pesquisa, mas não pesquisa o texto dentro dos próprios arquivos.|
+|{1&gt;Documentos&lt;1}|@doc<br /><br /> Por exemplo, `@doc program.cs`|Limita a pesquisa a nomes de arquivo e caminhos de documentos abertos para os critérios de pesquisa, mas não pesquisa o texto dentro dos próprios arquivos.|
 
 > [!NOTE]
 > Você pode alterar as teclas de atalho na página **Geral**  > **Teclado** na caixa de diálogo **Opções**.

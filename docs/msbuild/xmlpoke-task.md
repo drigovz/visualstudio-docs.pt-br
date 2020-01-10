@@ -11,17 +11,17 @@ helpviewer_keywords:
 - XmlPoke task [MSBuild]
 - MSBuild, XmlPoke task
 ms.assetid: 6ba1953c-be3b-4df8-8561-e133408f8270
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6eb87a279da834004e599a49b33d0c1b32355269
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: f44ce4736900fde35716ca3ec9dabb2d55c6df51
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62777610"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75588376"
 ---
 # <a name="xmlpoke-task"></a>Tarefa XmlPoke
 
@@ -79,7 +79,7 @@ Neste exemplo, se você quiser modificar `/Package/mp:PhoneIdentity/PhonePublish
 
 `dn` aqui é usado como um prefixo de namespace artificial para o namespace padrão.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Tarefas](../msbuild/msbuild-tasks.md)
 - [Referência de tarefas](../msbuild/msbuild-task-reference.md)

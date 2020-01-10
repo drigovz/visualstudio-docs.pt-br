@@ -10,15 +10,15 @@ helpviewer_keywords:
 - load tests, removing results
 - load test results, deleting
 ms.assetid: c2afe36b-d061-4f0e-9580-c18569ec08f9
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3604c8bee778334d4f1355f6b3ce312c9c8d0efc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 26dc9750a2bf2eaf5d0ee5dd3d08485c458bb74a
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653546"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589052"
 ---
 # <a name="how-to-delete-load-test-results-from-a-repository"></a>Como excluir resultados do teste de carga de um repositório
 
@@ -51,9 +51,9 @@ Quando você executar um teste de carga, as informações que foram coletadas du
     > [!NOTE]
     > A caixa de diálogo **Abrir e gerenciar resultados de testes de carga** permanece aberta após os resultados serem removidos.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Como exportar resultados do teste de carga de um repositório](../test/how-to-export-load-test-results-from-a-repository.md)
 - [Gerenciar resultados do teste de carga no repositório de Resultados do Teste de Carga](../test/manage-load-test-results-in-the-load-test-results-repository.md)
-- [Analisar resultados de teste de carga](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
+- [Analisar resultados do teste de carga](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
 - [Como importar resultados do teste de carga para um repositório](../test/how-to-import-load-test-results-into-a-repository.md)

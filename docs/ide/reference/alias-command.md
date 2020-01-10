@@ -11,17 +11,17 @@ helpviewer_keywords:
 - command aliases
 - alias command
 ms.assetid: bdf857df-b5d5-450f-8c10-a6fd4dccc130
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8fdcc816510642c7800b6fbeacfa3fcdeff5e0b3
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 031f1a4bab1acee3f3d0999b17c0b607f7808df9
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748790"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596899"
 ---
 # <a name="alias-command"></a>Comando Alias
 Cria um novo alias para um comando completo, comando e argumentos completos ou outro alias.
@@ -42,7 +42,7 @@ Opcional. O nome do novo alias. Se nenhum valor for fornecido para `aliasname`, 
 `aliasstring`\
 Opcional. O nome do comando completo ou alias existente e qualquer parâmetro que você quiser criar como alias. Se nenhum valor for fornecido para `aliasstring`, o nome do alias e a cadeia de caracteres de alias do alias especificado serão exibidos.
 
-## <a name="switches"></a>Opções
+## <a name="switches"></a>Comutadores
 /delete, /del ou /d\
 Opcional. Exclui o alias especificado, removendo-o do preenchimento automático.
 
@@ -75,7 +75,7 @@ Este exemplo exibe uma lista de todos os aliases e definições atuais.
 >Tools.Alias
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Comandos do Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Janela Comando](../../ide/reference/command-window.md)

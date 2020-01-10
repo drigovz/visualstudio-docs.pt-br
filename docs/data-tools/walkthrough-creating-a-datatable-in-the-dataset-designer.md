@@ -7,17 +7,17 @@ helpviewer_keywords:
 - Dataset Designer, creating data tables
 - tables [Visual Studio], creating
 - data [Visual Studio], Dataset Designer
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 9dbf7116c614a8eec599f197f975ab4c389bc950
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 1526a5f4137ece5b76c282255af3da4ab20ac119
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648065"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585997"
 ---
 # <a name="walkthrough-create-a-datatable-in-the-dataset-designer"></a>Walkthrough: criar uma DataTable no Designer de Conjunto de Dados
 
@@ -25,7 +25,7 @@ Este tutorial explica como criar um <xref:System.Data.DataTable> (sem um TableAd
 
 ## <a name="create-a-new-windows-forms-application"></a>Criar um novo Aplicativo do Windows Forms
 
-1. No Visual Studio, no menu **arquivo** , selecione **novo** **projeto**de  > .
+1. No Visual Studio, no menu **Arquivo**, selecione **Novo** > **Projeto**.
 
 2. Expanda **o C# Visual** ou **Visual Basic** no painel esquerdo e, em seguida, selecione **área de trabalho do Windows**.
 
@@ -81,7 +81,7 @@ Para definir a chave primária, clique com o botão direito do mouse na coluna *
 
 Para salvar o projeto **DataTableWalkthrough** , no menu **arquivo** , selecione **salvar tudo**.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Criar e configurar conjuntos de dados no Visual Studio](../data-tools/create-and-configure-datasets-in-visual-studio.md)
 - [Associar controles a dados no Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)

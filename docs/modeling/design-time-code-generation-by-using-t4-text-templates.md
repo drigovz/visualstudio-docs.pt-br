@@ -10,17 +10,17 @@ helpviewer_keywords:
 - text templates, getting started
 - Text Template project item
 - text templates, generating code for your application
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 08451c679f372cb376c6baf97a9a4d06282ba45f
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 06c6244f59482825ed435226f79437da9e2c0df0
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748416"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589624"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>Geração de código na hora de design usando modelos de texto T4
 
@@ -41,7 +41,7 @@ Um modelo de texto contém uma mistura do texto que você deseja gerar e o códi
 
 2. Adicione um arquivo de modelo de texto ao seu projeto e dê a ele um nome que tenha a extensão **. tt**.
 
-    Para fazer isso, em **Gerenciador de soluções**, no menu de atalho do seu projeto, escolha **Adicionar**  > **novo item**. Na caixa de diálogo **Adicionar novo item** , selecione **modelo de texto** no painel central.
+    Para fazer isso, em **Gerenciador de soluções**, no menu de atalho do seu projeto, escolha **Adicionar** > **novo item**. Na caixa de diálogo **Adicionar novo item** , selecione **modelo de texto** no painel central.
 
     Observe que a propriedade de **ferramenta personalizada** do arquivo é **TextTemplatingFileGenerator**.
 
@@ -134,7 +134,7 @@ Para depurar um modelo de texto:
    O modelo é executado e é interrompido nos pontos de interrupção. Você pode examinar variáveis ​​e percorrer o código como de costume.
 
 > [!TIP]
-> O `debug="true"` torna o mapa de código gerado mais preciso para o modelo de texto, com a inserção de mais diretivas de numeração de linhas no código gerado. Se você deixa-o de fora, os pontos de interrupção podem parar a execução no estado errado.
+> `debug="true"` torna o mapa de código gerado mais precisamente para o modelo de texto, inserindo mais diretivas de numeração de linha no código gerado. Se você deixa-o de fora, os pontos de interrupção podem parar a execução no estado errado.
 >
 > Mas, você pode deixar a cláusula na diretiva do modelo mesmo quando você não estiver depurando. Isso causa apensa uma pequena queda de desempenho.
 
@@ -299,7 +299,7 @@ Se o modelo de fonte mudar, você deve executar novamente todos os modelos na so
 Se você instalou o SDK de modelagem do Visual Studio, você pode ter todos os modelos transformados automaticamente sempre que você executar uma compilação. Para fazer isso, edite o arquivo do projeto (.csproj ou .vbproj) em um editor de texto e adicione as seguintes linhas perto do final do arquivo, depois de qualquer outra instrução `<import>`:
 
 > [!NOTE]
-> O SDK de transformação de modelo de texto e o SDK de modelagem do Visual Studio são instalados automaticamente quando você instala recursos específicos do Visual Studio. Para obter mais detalhes, consulte [esta postagem no blog](https://devblogs.microsoft.com/devops/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/).
+> O SDK de transformação de modelo de texto e o SDK de modelagem do Visual Studio são instalados automaticamente quando você instala recursos específicos do Visual Studio. Para obter mais detalhes, consulte [esta postagem de blog](https://devblogs.microsoft.com/devops/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/).
 
 ::: moniker range="vs-2017"
 
@@ -342,7 +342,7 @@ Um recurso útil dos modelos é que eles parecem muito com os arquivos que eles 
 
 ### <a name="to-convert-an-existing-file-to-a-design-time-template"></a>Para converter um arquivo existente para um modelo de tempo de design
 
-1. Para seu projeto do Visual Studio, adicione um arquivo do tipo que você deseja gerar, como um `.cs`, `.vb` ou `.resx` arquivo.
+1. Para seu projeto do Visual Studio, adicione um arquivo do tipo que você deseja gerar, como um `.cs`, `.vb`ou `.resx` arquivo.
 
 2. Teste o novo arquivo para conferir se ele funciona.
 
@@ -378,7 +378,7 @@ Um recurso útil dos modelos é que eles parecem muito com os arquivos que eles 
 
 Consulte as [diretrizes para escrever modelos de texto T4](../modeling/guidelines-for-writing-t4-text-templates.md).
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
 
 |Próximas etapas|Tópico|
 |-|-|
@@ -388,6 +388,6 @@ Consulte as [diretrizes para escrever modelos de texto T4](../modeling/guideline
 |Transforme dados na forma de uma linguagem específica do domínio.|[Gerando código com base em uma linguagem específica de domínio](../modeling/generating-code-from-a-domain-specific-language.md)|
 |Grave processadores de diretivas para transformar suas próprias fontes de dados.|[Personalizando a transformação de texto T4](../modeling/customizing-t4-text-transformation.md)|
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Diretrizes para escrever modelos de texto T4](../modeling/guidelines-for-writing-t4-text-templates.md)

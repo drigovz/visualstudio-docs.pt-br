@@ -3,17 +3,17 @@ title: Introduzir variável local
 description: Gere imediatamente uma variável local para substituir uma expressão existente. Selecione a expressão, clique com o botão direito do mouse e selecione o menu Ações Rápidas e Refatorações, selecione Introduzir local para (todas as ocorrências da) 'expressão'.
 ms.date: 01/26/2018
 ms.topic: reference
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6407810b4143d5edacecf42990ae5b6d63497be2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 0fbd5ed752b28cc3f8c0dd734ed2b3ce09e80b78
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72668751"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75568809"
 ---
 # <a name="introduce-a-local-variable-in-visual-studio"></a>Introduzir uma variável local no Visual Studio
 
@@ -69,7 +69,7 @@ Esta geração de código aplica-se a:
    > [!NOTE]
    > É possível usar a opção de menu **...todas as ocorrências de...** para substituir todas as instâncias da expressão selecionada, não somente a que foi especificamente realçada.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Geração de código](../code-generation-in-visual-studio.md)
 - [Visualizar alterações](../../ide/preview-changes.md)

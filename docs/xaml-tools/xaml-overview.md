@@ -2,15 +2,15 @@
 title: Visão geral do XAML
 ms.date: 07/31/2019
 ms.topic: reference
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: af6ef98c5bffc4563cfa8fc8e0b29a910aeb85e8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a5f366e81a0ef3c13c3ca1c39ccc3bf44257b6e7
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72601867"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592900"
 ---
 # <a name="overview-of-xaml"></a>Visão geral do XAML
 
@@ -34,7 +34,7 @@ O Visual Studio e o Blend para Visual Studio fornecem um Designer XAML que ajuda
 
 Os artigos neste conjunto de documentação discutem o Designer XAML no Visual Studio e no Blend para Visual Studio.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [XAML em aplicativos WPF](/dotnet/framework/wpf/advanced/xaml-in-wpf)
 - [XAML em aplicativos UWP](/windows/uwp/xaml-platform/xaml-overview)

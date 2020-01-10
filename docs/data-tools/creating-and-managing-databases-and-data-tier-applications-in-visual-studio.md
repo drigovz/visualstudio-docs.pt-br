@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - databases, managing change
 ms.assetid: 40b51f5a-d52c-44ac-8f84-037a0917af33
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 11e60c43e2b9935f4aaf2ffcc5d5c7e3683665d1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: cc8d32ddcc332264278cf76392ac69a6188ca51c
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648583"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586725"
 ---
 # <a name="database-projects-and-data-tier-applications"></a>Projetos e aplicativos da camada de dados
 
@@ -31,6 +31,6 @@ Para obter uma lista dos recursos de banco de dados com suporte dos aplicativos 
 | **Executando o desenvolvimento de banco de dados iterativo:** Os desenvolvedores podem fazer check-out de partes do projeto e atualizá-las em um ambiente de desenvolvimento isolado. Usando esse tipo de ambiente, você pode testar suas alterações sem afetar outros membros da equipe. Depois que as alterações forem concluídas, você verificará os arquivos de volta para o controle de versão, onde outros membros da equipe podem obter suas alterações e compilá-las e implantá-las em um servidor de teste. | - [desenvolvimento de banco de dados offline orientado a projetos (SQL Server Data Tools)](/sql/ssdt/project-oriented-offline-database-development)<br />- [depurador Transact-SQL (SQL Server Management Studio)](/sql/ssms/scripting/transact-sql-debugger) |
 | **Criando protótipos, verificando resultados de teste e modificando scripts e objetos de banco de dados:** Você pode usar o Editor Transact-SQL para executar qualquer uma dessas tarefas comuns. | - [editores de consulta e texto (SQL Server Management Studio)](/sql/ssms/scripting/query-and-text-editors-sql-server-management-studio) |
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Ferramentas de dados do Visual Studio para .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)

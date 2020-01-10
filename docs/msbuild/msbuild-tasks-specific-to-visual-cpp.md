@@ -10,17 +10,17 @@ dev_langs:
 helpviewer_keywords:
 - MSBuild, tasks specific to C++
 ms.assetid: 05410f0c-7356-4692-bc00-20664421c9ff
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d6ea400d7473fae27ac4b17d9e3692748db549f3
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 89f7d8465b2078d4c0c1ce86894edb834581596d
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748068"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593818"
 ---
 # <a name="msbuild-tasks-specific-to-c"></a>Tarefas do MSBuild específicas paraC++
 Tarefas fornecem o código que é executado durante o processo de compilação. Quando C++ o é instalado, as seguintes tarefas estão disponíveis, além das que são instaladas com o [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Para obter mais informações, consulte [visãoC++geral do MSBuild ()](/cpp/build/msbuild-visual-cpp-overview).
@@ -34,7 +34,7 @@ Tarefas fornecem o código que é executado durante o processo de compilação. 
 
 ### <a name="related-topics"></a>Tópicos relacionados
 
-|Título|Descrição|
+|Cargo|Descrição|
 |-----------|-----------------|
 |[Tarefa BscMake](../msbuild/bscmake-task.md)|Encapsula a ferramenta Utilitário de Manutenção de Informações de Procura da Microsoft (*bscmake.exe*).|
 |[Tarefa CL](../msbuild/cl-task.md)|Encapsula a ferramenta C++ do compilador (*CL. exe*).|

@@ -13,17 +13,17 @@ helpviewer_keywords:
 - ExcludeDeploymentUrl property
 - project file properties (MSBuild)
 ms.assetid: 9857505d-ae15-42f1-936d-6cd7fb9dd276
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5fa726aa9f2055f7803f066607ee931550bdcafb
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 2797e8b51bba0e71db07ec748d7a6813183250fb
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747360"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596184"
 ---
 # <a name="common-msbuild-project-properties"></a>Propriedades de projeto comuns do MSBuild
 A tabela a seguir lista as propriedades usadas com frequência que são definidas nos arquivos de projeto do Visual Studio ou incluídas nos arquivos *.targets* fornecidos pelo MSBuild.
@@ -50,7 +50,7 @@ A tabela a seguir lista as propriedades usadas com frequência que são definida
 | CleanFile | O nome do arquivo que será usado como o "cache limpo". O cache limpo é uma lista dos arquivos gerados que serão excluídos durante a operação de limpeza. O arquivo é colocado no caminho de saída intermediária pelo processo de build.<br /><br /> Esta propriedade especifica apenas os nomes de arquivo que não têm informações de caminho. |
 | CodePage | Especifica a página de código a ser usada para todos os arquivos de código-fonte na compilação. Essa propriedade é equivalente à opção do compilador `/codepage`. |
 | CompilerResponseFile | Um arquivo de resposta opcional que pode ser passado para as tarefas do compilador. |
-| Configuração | A configuração que você está criando, "Depurar" ou "Versão". |
+| Configuração do | A configuração que você está criando, "Depurar" ou "Versão". |
 | CscToolPath | O caminho do *csc.exe*, o compilador [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]. |
 | CustomBeforeMicrosoftCommonTargets | O nome de um arquivo de projeto ou arquivo de destino a ser importado automaticamente antes da importação de destinos comuns. |
 | DebugSymbols | Um valor booliano que indica se os símbolos são gerados pelo build.<br /><br /> A configuração de **-p:DebugSymbols=false** na linha de comando desabilita a geração de arquivos de símbolo do banco de dados de programa ( *.pdb*). |
@@ -76,7 +76,7 @@ A tabela a seguir lista as propriedades usadas com frequência que são definida
 | ModuleAssemblyName | O nome do assembly ao qual o módulo compilado será incorporado. A propriedade é equivalente à opção do compilador `/moduleassemblyname`. |
 | NoLogo | Um valor booliano que indica se você deseja que o logotipo do compilador seja desligado. Essa propriedade é equivalente à opção do compilador `/nologo`. |
 | NoStdLib | Um valor booliano que indica se é necessário evitar a referência à biblioteca padrão (*mscorlib.dll*). O valor padrão é `false`. |
-| NoVBRuntimeReference | Um valor booliano que indica se o tempo de execução [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] (*Microsoft.VisualBasic.dll*) deve ser incluído como uma referência no projeto. |
+| NoVBRuntimeReference | Um valor booliano que indica se o runtime [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] (*Microsoft.VisualBasic.dll*) deve ser incluído como uma referência no projeto. |
 | NoWin32Manifest | Um valor booliano que indica se as informações do manifesto do UAC (Controle de Conta de Usuário) serão inseridas no executável do aplicativo. Aplica-se somente a projetos do Visual Studio que direcionam [!INCLUDE[windowsver](../deployment/includes/windowsver_md.md)]. Em projetos implantados usando [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] e COM sem registro, esse elemento será ignorado. `False` (o valor padrão) especifica se as informações do manifesto do UAC (Controle de Conta de Usuário) serão inseridas no executável do aplicativo. `True` especifica se as informações de manifesto de UAC não serão inseridas.<br /><br /> Essa propriedade é aplicável somente a projetos [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] que direcionam [!INCLUDE[windowsver](../deployment/includes/windowsver_md.md)]. Em projetos implantados usando [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] e COM sem registro, essa propriedade será ignorada.<br /><br /> Você deverá adicionar NoWin32Manifest somente se não quiser que [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] insira qualquer manifesto no executável do aplicativo. Esse processo é chamado *virtualização*. Para usar a virtualização, defina `<ApplicationManifest>` em conjunto com `<NoWin32Manifest>` da seguinte maneira:<br /><br /> -   Para projetos [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], remova o nó `<ApplicationManifest>`. (Em projetos [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], `<NoWin32Manifest>` é ignorado quando um nó `<ApplicationManifest>` existe.)<br />-   Para projetos [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)], defina `<ApplicationManifest>` como `False` e `<NoWin32Manifest>` como `True`. (Em projetos [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)], `<ApplicationManifest>` substitui `<NoWin32Manifest>`.)<br /> Essa propriedade é equivalente à opção `/nowin32manifest` do compilador *vbc.exe*. |
 | Otimizar | Um valor booliano que, quando definido como `true`, permite otimizações do compilador. Essa propriedade é equivalente à opção do compilador `/optimize`. |
 | OptionCompare | Especifica como são feitas comparações de cadeia de caracteres. Os valores válidos são "binary" ou "text". Essa propriedade é equivalente à opção `/optioncompare` do compilador *vbc.exe*. |
@@ -88,7 +88,7 @@ A tabela a seguir lista as propriedades usadas com frequência que são definida
 | OverwriteReadOnlyFiles | Um valor booliano que indica se você deseja habilitar o build para substituir arquivos somente leitura ou disparar um erro. |
 | PathMap | Especifica como mapear caminhos físicos para nomes de caminho de origem emitidos pelo compilador. Essa propriedade é equivalente à opção `/pathmap` do compilador *csc.exe*. |
 | PdbFile | O nome do arquivo *.pdb* que está sendo emitido. Essa propriedade é equivalente à opção `/pdb` do compilador *csc.exe*. |
-| Plataforma | O sistema operacional que você está compilando. Os valores válidos são "Any CPU", "x86" e "x64". |
+| Platform | O sistema operacional que você está compilando. Os valores válidos são "Any CPU", "x86" e "x64". |
 | ProduceReferenceAssembly | Um valor booliano que, quando definido como `true`, permite a produção de [assemblies de referência](/dotnet/standard/assembly/reference-assemblies) para o assembly atual. `Deterministic` deve ser `true` ao usar esse recurso. Essa propriedade corresponde à opção `/refout` dos compiladores *vbc.exe* e *csc.exe*. |
 | ProduceOnlyReferenceAssembly | Um valor booliano que instrui o compilador a emitir apenas um assembly de referência ao invés do código compilado. Não pode ser usado em conjunto com `ProduceReferenceAssembly`.  Essa propriedade corresponde à opção `/refonly` dos compiladores *vbc.exe* e *csc.exe*. |
 | RemoveIntegerChecks | Um valor booliano que indica se é necessário desabilitar a verificação de erro de estouro de inteiro. O valor padrão é `false`. Essa propriedade é equivalente à opção `/removeintchecks` do compilador *vbc.exe*. |
@@ -130,5 +130,5 @@ A tabela a seguir lista as propriedades usadas com frequência que são definida
 | Win32Manifest | O nome do arquivo de manifesto deve ser inserido no assembly final. Esse parâmetro é equivalente à opção do compilador `/win32Manifest`. |
 | Win32Resource | O nome do arquivo do recurso do Win32 a ser inserido no assembly final. Esse parâmetro é equivalente à opção do compilador `/win32resource`. |
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 - [Itens de projeto comuns do MSBuild](../msbuild/common-msbuild-project-items.md)

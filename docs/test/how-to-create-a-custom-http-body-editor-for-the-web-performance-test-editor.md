@@ -5,15 +5,15 @@ ms.topic: conceptual
 helpviewer_keywords:
 - Web performance tests, custom HTTP body editor
 ms.assetid: a0b2d8ff-3e2a-487e-9172-90047174f336
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 357114ad623494a26d98d3b190ed50847a0b27cd
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: efc9a959fa02b62583e7bf366e8c580b2876a4a1
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72664789"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589195"
 ---
 # <a name="how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor"></a>Como criar um editor de corpo HTTP personalizado para o Editor de Testes de Desempenho Web
 
@@ -273,7 +273,7 @@ Quando a edição do corpo da cadeia de caracteres terminar e o usuário clicar 
 
 3. Copie o arquivo *.dll* resultante da pasta *bin\debug* do seu projeto (por exemplo, *MessageEditors.dll*) para *%ProgramFiles%\Microsoft Visual Studio\2017\\\<edition>\Common7\IDE\PrivateAssemblies\WebTestPlugins*.
 
-4. Abra o Visual Studio.
+4. {1&gt;Abra o Visual Studio.&lt;1}
 
    O *. dll* agora está registrado no Visual Studio.
 
@@ -297,7 +297,7 @@ Verifique se o framework de destino para o projeto da Biblioteca de Controles do
 
 Para obter mais informações, confira [Página Aplicativo, Designer de Projeto (C#)](../ide/reference/application-page-project-designer-csharp.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - <xref:Microsoft.VisualStudio.TestTools.WebTesting.IStringHttpBodyEditorPlugin>
 - <xref:Microsoft.VisualStudio.TestTools.WebTesting.IBinaryHttpBodyEditorPlugin>

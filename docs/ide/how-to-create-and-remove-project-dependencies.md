@@ -1,5 +1,5 @@
 ---
-title: 'Como: Criar e remover dependências de projeto'
+title: Como criar e remover dependências de projeto
 ms.date: 06/21/2017
 ms.topic: conceptual
 f1_keywords:
@@ -13,19 +13,19 @@ helpviewer_keywords:
 - projects [Visual Studio], dependencies
 ms.assetid: e2a0a8ff-dae7-40a8-b774-b88aa5235183
 ms.technology: vs-ide-compile
-author: ghogen
-ms.author: ghogen
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ce26c74aced2dd979f9f9847d5c56ead30f897ce
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
-ms.translationtype: HT
+ms.openlocfilehash: 2c10ea49dfd1398b8271f959cb498c311d98a4ef
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68415594"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595274"
 ---
-# <a name="how-to-create-and-remove-project-dependencies"></a>Como: Criar e remover dependências de projeto
+# <a name="how-to-create-and-remove-project-dependencies"></a>Como criar e remover dependências de projeto
 
 Ao compilar uma solução que contém vários projetos, pode ser necessário compilar determinados projetos primeiro, para gerar o código usado por outros projetos. Quando um projeto consome o código executável gerado por outro projeto, o projeto que gera o código é chamado de uma dependência de projeto do projeto que consome o código. Esses relacionamentos de dependência podem ser definidos na caixa de diálogo **Dependências do Projeto**.
 
@@ -61,7 +61,7 @@ Ao compilar uma solução que contém vários projetos, pode ser necessário com
 
 4. No campo **Depende de**, desmarque as caixas de seleção ao lado de outros projetos que não são mais dependências desse projeto.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Criar e limpar projetos e soluções no Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)
 - [Compilação e build](../ide/compiling-and-building-in-visual-studio.md)

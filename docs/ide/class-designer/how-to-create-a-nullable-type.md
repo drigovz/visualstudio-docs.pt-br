@@ -6,20 +6,20 @@ helpviewer_keywords:
 - nullable types, Class Designer
 - Class Designer [Visual Studio], nullable types
 ms.assetid: 84673a89-3f6d-4668-919e-1c0f56182fe5
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 671b2230daafbbdf92edda2ba1a671b688723796
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 5be8b553dfead4b8c05f29bbd18c16fcef847130
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647851"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592224"
 ---
 # <a name="how-to-create-a-nullable-type-in-class-designer"></a>Como criar um tipo que permite valor nulo no Designer de Classe
 
@@ -85,7 +85,7 @@ Para obter mais informações sobre tipos que permitem valor nulo no C#, confira
 
 5. Clique com o botão direito do mouse na forma da classe e clique em **Detalhes da Classe**. É possível exibir ou modificar as propriedades do novo tipo na Janela **Detalhes da Classe**.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - <xref:System.Nullable%601>
 - [Tipos que permitem valor nulo](/dotnet/csharp/programming-guide/nullable-types/index)

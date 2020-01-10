@@ -6,17 +6,17 @@ helpviewer_keywords:
 - MSBuild, custom toolset configurations
 - MSBuild, msbuild.exe.config
 ms.assetid: 15a048c8-5ad3-448e-b6e9-e3c5d7147ed2
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a8d3e78e4bd49c36174280c62ca8f24cdbd7f648
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 76596d752ae2e552088fff607142abb215e9147b
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440031"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595066"
 ---
 # <a name="standard-and-custom-toolset-configurations"></a>Configurações padrão e personalizadas do Conjunto de Ferramentas
 Um Conjunto de Ferramentas MSBuild contém referências a tarefas, destinos e ferramentas que você pode usar para criar um projeto de aplicativo. MSBuild inclui um Conjunto de Ferramentas padrão, mas você também pode criar ferramentas personalizadas. Para obter informações sobre como especificar um Conjunto de Ferramentas, consulte [Conjunto de Ferramentas (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)
@@ -65,7 +65,7 @@ O Visual Studio 2017 e versões posteriores não usam uma chave do Registro no c
 
  Se houver propriedades definidas no Conjunto de Ferramentas base e no subconjunto de ferramentas selecionado, as definições de propriedade do subconjunto de ferramentas serão usadas. Por exemplo, o Conjunto de Ferramentas do MSBuild 4.0 define `SDK40ToolsPath` para apontar para o 7.0A SDK, mas o Conjunto de Ferramentas MSBuild 4.0\11.0 define a mesma propriedade para apontar para o 8.0A SDK. Se `VisualStudioVersion` não está definido, `SDK40ToolsPath` apontaria para 7.0A, mas se `VisualStudioVersion` for definido como 11.0, em vez disso, a propriedade apontaria para 8.0A.
 
- A propriedade do build `VisualStudioVersion` indica se um subconjunto de ferramentas se torna ativo. Por exemplo, um valor `VisualStudioVersion` de "12.0" especifica o subconjunto de ferramentas MSBuild 12.0. Para obter mais informações, consulte a seção de subconjuntos de ferramentas de [Conjunto de ferramentas (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md).
+ A propriedade do build `VisualStudioVersion` indica se um subconjunto de ferramentas se torna ativo. Por exemplo, um valor `VisualStudioVersion` de "12.0" especifica o subconjunto de ferramentas MSBuild 12.0. Para saber mais,confira a seção de subconjuntos de ferramentas de [Conjunto de ferramentas (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md).
 
 > [!NOTE]
 > É recomendável que você evite a alteração dessas configurações. No entanto, você pode adicionar suas próprias configurações e definir as definições personalizadas do Conjunto de Ferramentas em todo o computador, conforme descrito na próxima seção.
@@ -108,9 +108,9 @@ O Visual Studio 2017 e versões posteriores não usam uma chave do Registro no c
 
 - **$(MSBuildBinPath)** é definido como o valor `ToolsPath`, que é especificado no Registro ou no arquivo de configuração em que o `ToolsVersion` é definido. A configuração `$(MSBuildToolsPath)` no Registro ou no arquivo de configuração especifica o local das principais tarefas e destinos. No arquivo de projeto, isso mapeia para a propriedade $(MSBuildBinPath) e também para a propriedade $(MSBuildToolsPath).
 
-- `$(MSBuildToolsPath)` é uma propriedade reservada que é fornecida pela propriedade MSBuildToolsPath especificada no arquivo de configuração. (Essa propriedade substitui `$(MSBuildBinPath)`. No entanto, `$(MSBuildBinPath)` é repassada para compatibilidade.) Um Conjunto de Ferramentas personalizado deve definir o `$(MSBuildToolsPath)` ou `$(MSBuildBinPath)`, mas não ambos, a menos que tenham o mesmo valor.
+- `$(MSBuildToolsPath)` é uma propriedade reservada que é fornecida pela propriedade MSBuildToolsPath especificada no arquivo de configuração. (Essa propriedade substitui `$(MSBuildBinPath)`. No entanto, `$(MSBuildBinPath)` é postergado para fins de compatibilidade.) Um conjunto de ferramentas personalizado deve definir `$(MSBuildToolsPath)` ou `$(MSBuildBinPath)` mas não ambos, a menos que ambos tenham o mesmo valor.
 
   Você também pode adicionar propriedades personalizadas, propriedades específicas do ToolsVersion para o arquivo de configuração usando a mesma sintaxe que você pode usar para adicionar a propriedade MSBuildToolsPath. Para disponibilizar essas propriedades personalizadas para o arquivo de projeto, use o mesmo nome como o nome do valor que é especificado no arquivo de configuração. Você pode definir Conjuntos de Ferramentas, mas não os subconjuntos de ferramentas no arquivo de configuração.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 - [Conjunto de Ferramentas (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)

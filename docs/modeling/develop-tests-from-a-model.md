@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - tests and requirements
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 70e58883e671dea242e0c69aee0ce6cf8b911371
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 2981d510b5f56b89a2cb68d1a6bee93222d71b3b
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747592"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596652"
 ---
 # <a name="develop-tests-from-a-model"></a>Desenvolver testes por meio de um modelo
 Você pode usar requisitos e modelos arquitetônicos para ajudá-lo a organizar os testes do seu sistema e seus componentes. Essa prática ajuda a garantir que você teste os requisitos que são importantes para os usuários e outros participantes e ajuda a atualizar os testes rapidamente quando os requisitos mudam. Se você usar [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)], também poderá manter links entre os modelos e os testes.
@@ -155,7 +155,7 @@ Assert (countAfter == countBefore = 1);
 
 3. Adicione ao conjunto de testes, casos de teste que verificam o requisito expresso no elemento de modelo.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Criar modelos para o aplicativo](../modeling/create-models-for-your-app.md)
 - [Requisitos de usuário do modelo](../modeling/model-user-requirements.md)

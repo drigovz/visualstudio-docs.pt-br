@@ -7,17 +7,17 @@ helpviewer_keywords:
 - run-time errors, warnings
 - warnings, configuring
 ms.assetid: 99cf4781-bd4d-47b4-91b9-217933509f82
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c71c352040898874cd90a397db6b8c7321ff39d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 67f65ea691a02bac87f75f43e0a9938125bcd959
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652082"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585503"
 ---
 # <a name="configuring-warnings-in-visual-basic"></a>Como configurar avisos no Visual Basic
 
@@ -39,7 +39,7 @@ A opção de linha de comando **/warnaserror** do compilador também pode ser us
 |Opção de linha de comando|Especifica|
 | - |---------------|
 |`/warnaserror+`|Tratar todos os avisos como erros|
-|`/warnsaserror`-|Não trate avisos como erros. Esse é o padrão.|
+|`/warnsaserror`-|Não trate avisos como erros. Este é o padrão.|
 |`/warnaserror+:<warning list` `>`|Trate avisos específicos como erros, listados por seus números de ID de erro em uma lista delimitada por vírgula.|
 |`/warnaserror-:<warning list>`|Não trate avisos específicos como erros, listados por seus números de ID de erro em uma lista delimitada por vírgula.|
 |`/nowarn`|Não relate os avisos.|
@@ -50,7 +50,7 @@ A lista de avisos contém os números de ID de erro dos avisos que devem ser tra
 ## <a name="examples"></a>Exemplos
 Esta tabela de exemplos de argumentos de linha de comando descreve a ação de cada argumento.
 
-|Argumento|Descrição|
+|Argument|Descrição|
 |--------------|-----------------|
 |`vbc /warnaserror`|Especifica que todos os avisos devem ser tratado como erros.|
 |`vbc /warnaserror:42024`|Especifica que o aviso 42024 deve ser tratado como um erro.|
@@ -117,7 +117,7 @@ Gerado quando um bloco `Catch` nunca é acessado devido à definição de sua re
 
 ID: 42029, 42031
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Tipos de erro](/dotnet/visual-basic/programming-guide/language-features/error-types)
 - [Instrução Try...Catch...Finally](/dotnet/visual-basic/language-reference/statements/try-catch-finally-statement)

@@ -20,17 +20,17 @@ helpviewer_keywords:
 - IntelliSense [JavaScript], about
 - IntelliSense extensibility [JavaScript]
 - XML documentation comments [JavaScript]
-author: mikejo5000
-ms.author: mikejo
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ee40d877af75469dcc1abc176d67f43c8bdcfb3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 9d2459c9ab7b6dc6e49bbbe86729d25a2adb5bdb
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62538168"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593714"
 ---
 # <a name="javascript-intellisense"></a>JavaScript IntelliSense
 
@@ -141,7 +141,7 @@ Atualmente, a detecção automática funciona para dependências baixadas do npm
 
 Se você não desejar usar a aquisição automática, desabilite-a adicionando um arquivo de configuração, conforme descrito abaixo. Ainda é possível colocar arquivos de definição para uso diretamente no projeto manualmente.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Usando o IntelliSense](../ide/using-intellisense.md)
 - [Suporte a JavaScript (Visual Studio para Mac)](/visualstudio/mac/javascript)

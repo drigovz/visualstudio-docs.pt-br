@@ -10,19 +10,19 @@ f1_keywords:
 - switches
 - command prompt
 ms.assetid: 480f3cb4-d873-434e-a8bf-82cff7401cf2
-author: TerryGLee
-ms.author: tglee
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: fd40a1adbf6f1f35a651f38ce5173400d208b2bc
-ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
+ms.openlocfilehash: 6d985266679d70f24ca2b40077549b5c3354b7f4
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72888518"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590937"
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio"></a>Usar parâmetros de linha de comando para instalar o Visual Studio
 
@@ -253,7 +253,7 @@ Cada operação gera vários arquivos de log no diretório `%TEMP%` que indicam 
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Exemplos de parâmetros de linha de comando para a instalação do Visual Studio](command-line-parameter-examples.md)
 - [Criar uma instalação offline do Visual Studio](create-an-offline-installation-of-visual-studio.md)

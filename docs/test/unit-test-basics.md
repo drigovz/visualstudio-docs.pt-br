@@ -4,17 +4,17 @@ ms.date: 08/07/2019
 ms.topic: conceptual
 f1_keywords:
 - vs.UnitTest.CreateUnitTest
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 25e594136fe79d38268999099231791364d1082a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e78b021e41caf584a74172cbdf00135e525df265
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659887"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590495"
 ---
 # <a name="unit-test-basics"></a>Noções básicas de teste de unidade
 
@@ -120,7 +120,7 @@ Um projeto de teste de unidade geralmente espelha a estrutura de um projeto de c
 
 **Para adicionar um projeto de teste de unidade a uma solução:**
 
-1. No **Gerenciador de Soluções**, clique com o botão direito do mouse na solução e escolha **Adicionar** > **Novo** **Projeto**.
+1. Em **Gerenciador de soluções**, clique com o botão direito do mouse na solução e escolha **Adicionar** > **novo** **projeto**.
 
 ::: moniker range="vs-2017"
 
@@ -311,10 +311,10 @@ Para obter mais informações, consulte [Executar testes de unidade com o Gerenc
 
 **R:** Use o **Gerenciador de Testes** para iniciar uma sessão de depuração para os testes. Passar pelo código com o depurador do Visual Studio permite-lhe navegar facilmente entre os testes de unidade e o projeto sendo testado. Para iniciar a depuração:
 
-1. No editor do Visual Studio, defina um ponto de interrupção em um ou mais métodos de teste que deseje depurar.
+1. {1&gt;No editor do Visual Studio, defina um ponto de interrupção em um ou mais métodos de teste que deseje depurar. &lt;1}
 
     > [!NOTE]
-    > Como os métodos de teste podem ser executados em qualquer ordem, defina pontos de interrupção em todos os métodos de teste que deseje depurar.
+    > {1&gt;Como os métodos de teste podem ser executados em qualquer ordem, defina pontos de interrupção em todos os métodos de teste que deseje depurar.&lt;1}
 
 2. No **Gerenciador de Testes**, selecione os métodos de teste e, em seguida, escolha **Depurar Testes Selecionados** no menu de atalho.
 
@@ -369,7 +369,7 @@ Saiba mais sobre [testes de unidade voltados para dados](../test/how-to-create-a
 
 Você pode executar a cobertura de código em testes selecionados ou em todos os testes em uma solução. A janela **Resultados da Cobertura de Código** exibe o percentual dos blocos de código de produto que foram exercidos por linha, função, classe, namespace e módulo.
 
-Para executar a cobertura de código para métodos de teste em uma solução, escolha **testar**  > **analisar cobertura de código para todos os testes**.
+Para executar a cobertura de código para métodos de teste em uma solução, escolha **testar** > **analisar cobertura de código para todos os testes**.
 
 Os resultados da cobertura são exibidos na janela **Resultados da Cobertura de Código**.
 
@@ -385,7 +385,7 @@ O Microsoft Fakes usa duas abordagens a fim de criar classes substitutas para de
 
 1. *Stubs* geram classes substitutas derivadas da interface pai da classe de dependência de destino. Os métodos stub podem ser substituídos por métodos virtuais públicos da classe de destino.
 
-2. *Shims* usam a instrumentação de tempo de execução para desviar as chamadas a um método de destino para um método shim substituto no caso de métodos não virtuais.
+2. *Shims* usam a instrumentação de runtime para desviar as chamadas a um método de destino para um método shim substituto no caso de métodos não virtuais.
 
 Em ambas as abordagens, você pode usar os representantes de chamadas gerados para o método de dependência a fim de especificar o comportamento desejado no método de teste.
 

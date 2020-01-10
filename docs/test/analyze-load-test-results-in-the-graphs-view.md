@@ -12,15 +12,15 @@ helpviewer_keywords:
 - load tests, using graphs
 - load test results, graphs
 ms.assetid: 4a919cd8-541c-40ee-be3b-352fabc56140
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4efedd7fc7672331f04440f09d49b9339d90bdb2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: dac639b8513e8ef675c6246476791b9351241130
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72665372"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591262"
 ---
 # <a name="analyze-load-test-results-in-the-graphs-view-of-the-load-test-analyzer"></a>Analisar resultados do teste de carga na exibição Grafos do Analisador de Teste de Carga
 
@@ -45,14 +45,14 @@ A tabela a seguir lista os gráficos internos que estão disponíveis para anali
 |Tempo de Resposta de Página|O tempo médio de resposta para páginas da Web que são acessadas durante o teste de carga.|
 |Sistema em Teste|Informações sobre os computadores nos quais o aplicativo que está sendo testado é executado. Isso inclui dados sobre uso da memória, do processador, do disco físico, dos processos.<br /><br /> Por padrão, os contadores Apenas os Mbytes Disponíveis e Tempo de Processador são coletados.|
 |Controlador e Agentes|Informações sobre os computadores nos quais os testes de carga são executados. Isso inclui dados sobre uso da memória, do processador, do disco físico, dos processos.<br /><br /> Por padrão, os contadores Apenas os Mbytes Disponíveis e Tempo de Processador são coletados.|
-|Tempo de Resposta de Transação|O tempo médio de resposta para transações que ocorrem durante o teste de carga.|
+|Tempo de Resposta da Transação|O tempo médio de resposta para transações que ocorrem durante o teste de carga.|
 
 Você pode exibir diferentes contadores no gráfico, no tempo de execução e depois que um teste for executado.
 
 > [!NOTE]
 > Apenas os contadores de desempenho de tempo de resposta podem ser adicionados a um gráfico de tempo de resposta gerado automaticamente.
 
-As informações do contador são exibidas no gráfico e na legenda abaixo dos gráficos. Também é possível ampliar uma seção do gráfico. Para saber mais, confira [Como ampliar uma região do grafo](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md).
+As informações do contador são exibidas no gráfico e na legenda abaixo dos gráficos. Também é possível ampliar uma seção do gráfico. Para obter mais informações, confira [Como ampliar uma região do grafo](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md).
 
 ## <a name="counters-displayed-in-graphs"></a>Contadores exibidos em grafos
 
@@ -79,7 +79,7 @@ A legenda contém as seguintes colunas:
 |Tarefas|Tópicos associados|
 |-|-|
 |**Personalizar os gráficos usando a legenda:** a legenda da exibição de Gráficos exibe informações sobre cada contador de desempenho que é associado a um gráfico. Você pode usar a legenda para remover os contadores de desempenho, realçar contadores de desempenho no gráfico e personalizar as opções de plotagem.|-   [Usando a legenda da exibição Grafos para analisar testes de carga](../test/use-the-graphs-view-legend-to-analyze-load-tests.md)|
-|**Exibir contadores em gráficos:** você pode adicionar diferentes tipos de dados a um grafo de resultados de testes de carga colocando contadores no gráfico.|-   [Como adicionar e excluir contadores em gráficos](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md)|
+|**Exibir contadores em gráficos:** você pode adicionar diferentes tipos de dados a um grafo de resultados de testes de carga colocando contadores no gráfico.|-   [Como adicionar e excluir contadores em grafos](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md)|
 |**Ampliar gráficos:** após a conclusão de um teste de carga, você poderá usar as barras de zoom para ampliar e rolar para uma região do gráfico. Ao ampliar, você pode examinar detalhadamente os dados que foram gerados durante uma execução de teste de carga.|-   [Como ampliar uma região do grafo](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md)|
 |**Organizar gráficos lado a lado:** você pode organizar grafos de resultados de testes de carga em qualquer um dos diversos padrões. Você pode organizar até quatro grafos lado a lado.||
 |**Criar gráficos personalizados:** você pode projetar gráficos que exibam informações específicas sobre resultados de testes de carga. Você cria um gráfico personalizado especificando os contadores de teste de carga que o gráfico exibirá.|-   [Como criar gráficos personalizados](../test/how-to-create-custom-graphs-in-load-test-results.md)|
@@ -91,9 +91,9 @@ A legenda contém as seguintes colunas:
 
 [Como acessar os resultados do teste de carga para análise](../test/how-to-access-load-test-results-for-analysis.md)
 
-[Analisar resultados de teste de carga](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
+[Analisar resultados do teste de carga](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Como adicionar e excluir contadores em grafos](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md)
 - [Como criar gráficos personalizados](../test/how-to-create-custom-graphs-in-load-test-results.md)

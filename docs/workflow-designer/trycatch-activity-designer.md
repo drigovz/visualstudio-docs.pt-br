@@ -6,24 +6,24 @@ f1_keywords:
 - System.Activities.Statements.TryCatch.UI
 - System.Activities.Statements.Catch`1.UI
 ms.assetid: 02a326c2-4009-442f-b7cb-e42121fd2992
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 76a7600cdab94499e13592924efabba2fb4c2faf
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b70f1d3174990ec12c621dff4a45ce4d899ceb4e
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649801"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593064"
 ---
 # <a name="trycatch-activity-designer"></a>Designer de atividade de TryCatch
 
 O designer de atividade **TryCatch** é usado para criar e configurar uma atividade de <xref:System.Activities.Statements.TryCatch>.
 
 ## <a name="the-trycatch-activity"></a>A atividade de TryCatch
- A atividade de <xref:System.Activities.Statements.TryCatch> contém uma atividade de <xref:System.Activities.Statements.TryCatch.Try%2A>, uma coleção de **\<TException Catch >** e uma atividade de <xref:System.Activities.Statements.TryCatch.Finally%2A>. Um <xref:System.Activities.Statements.Catch%601> do tipo **TException** contém um <xref:System.Activities.Statements.Catch%601.ExceptionType%2A> e um <xref:System.Activities.Statements.Catch%601.Action%2A>. São usados juntos para implementar um mecanismo exceção baseado típico de manipulação de erro. Uma atividade de <xref:System.Activities.Statements.TryCatch> tentar executar a atividade de <xref:System.Activities.Statements.TryCatch.Try%2A> . Se a atividade de <xref:System.Activities.Statements.TryCatch.Try%2A> lançar qualquer exceção, a atividade de <xref:System.Activities.Statements.TryCatch> usará sua **captura < TException \>** coleção para corresponder à exceção. Se houver uma correspondência, a <xref:System.Activities.Statements.Catch%601.Action%2A> do **Catch correspondente \<TException >** será executada, servindo como a lógica de tratamento de erros para a exceção. Se as atividades na seção de <xref:System.Activities.Statements.TryCatch.Try%2A> completa com êxito ou as atividades em <xref:System.Activities.Statements.TryCatch.Catches%2A> completa com êxito, a atividade de <xref:System.Activities.Statements.TryCatch> executa sua atividade de <xref:System.Activities.Statements.TryCatch.Finally%2A> . Para obter mais informações, consulte [exceções de fluxo de trabalho do Windows](/dotnet/framework/windows-workflow-foundation/exceptions).
+ A atividade de <xref:System.Activities.Statements.TryCatch> contém uma atividade de <xref:System.Activities.Statements.TryCatch.Try%2A>, uma coleção de **Catch\<TException >** e uma atividade de <xref:System.Activities.Statements.TryCatch.Finally%2A>. Um <xref:System.Activities.Statements.Catch%601> do tipo **TException** contém um <xref:System.Activities.Statements.Catch%601.ExceptionType%2A> e um <xref:System.Activities.Statements.Catch%601.Action%2A>. São usados juntos para implementar um mecanismo exceção baseado típico de manipulação de erro. Uma atividade de <xref:System.Activities.Statements.TryCatch> tentar executar a atividade de <xref:System.Activities.Statements.TryCatch.Try%2A> . Se a atividade de <xref:System.Activities.Statements.TryCatch.Try%2A> lançar qualquer exceção, a atividade de <xref:System.Activities.Statements.TryCatch> usará sua **captura < TException\>** coleção para corresponder à exceção. Se houver uma correspondência, a <xref:System.Activities.Statements.Catch%601.Action%2A> do **Catch correspondente\<TException >** será executada, servindo como a lógica de tratamento de erros para a exceção. Se as atividades na seção de <xref:System.Activities.Statements.TryCatch.Try%2A> completa com êxito ou as atividades em <xref:System.Activities.Statements.TryCatch.Catches%2A> completa com êxito, a atividade de <xref:System.Activities.Statements.TryCatch> executa sua atividade de <xref:System.Activities.Statements.TryCatch.Finally%2A> . Para obter mais informações, consulte [exceções de fluxo de trabalho do Windows](/dotnet/framework/windows-workflow-foundation/exceptions).
 
 ### <a name="using-the-trycatch-activity-designer"></a>Usando o designer de atividade de TryCatch
 
@@ -37,17 +37,17 @@ O designer **TryCatch** não oferece suporte à edição **Catch**. Se você qui
 
 ### <a name="the-trycatch-properties"></a>As propriedades de TryCatch
 
-A tabela a seguir mostra o <xref:System.Activities.Statements.TryCatch>properties e descreve como eles são usados no designer.
+A tabela a seguir mostra as propriedades <xref:System.Activities.Statements.TryCatch>e descreve como elas são usadas no designer.
 
-|Nome da Propriedade|Necessária|Uso|
+|Nome da Propriedade|Necessário|Medição de|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Especifica o nome amigável opcional de atividade de <xref:System.Activities.Statements.TryCatch> . O padrão é TryCatch.|
 |<xref:System.Activities.Statements.TryCatch.Try%2A>|False|A atividade executada primeiro quando <xref:System.Activities.Statements.TryCatch> executar.|
 |<xref:System.Activities.Statements.TryCatch.Catches%2A>|False|A coleção de elementos **Catch** a ser verificada quando a atividade de <xref:System.Activities.Statements.TryCatch.Try%2A> gera uma exceção.<br /><br /> Você precisa pelo menos de adicionar uma atividade em <xref:System.Activities.Statements.TryCatch.Catches%2A> ou uma atividade no bloco de <xref:System.Activities.Statements.TryCatch.Finally%2A> .|
 |<xref:System.Activities.Statements.TryCatch.Finally%2A>|False|A atividade a ser executada quando <xref:System.Activities.Statements.TryCatch.Try%2A> e todas as atividades necessárias na coleção de <xref:System.Activities.Statements.TryCatch.Catches%2A> tiver terminado a execução.<br /><br /> Você precisa pelo menos de adicionar uma atividade em <xref:System.Activities.Statements.TryCatch.Catches%2A> ou uma atividade no bloco de <xref:System.Activities.Statements.TryCatch.Finally%2A> .|
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
-- [Coleção](../workflow-designer/collection-activity-designers.md)
+- [Coleta](../workflow-designer/collection-activity-designers.md)
 - [Relançar](../workflow-designer/rethrow-activity-designer.md)
 - [Throw](../workflow-designer/throw-activity-designer.md)

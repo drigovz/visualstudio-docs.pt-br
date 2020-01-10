@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 897c4ba0bfa46e73115f8288770d088346498dee
-ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
+ms.openlocfilehash: 0a1c0184c11b745ef6c83c35b524884a139bc3d8
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72516702"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75588779"
 ---
 # <a name="step-1-create-a-windows-forms-app-project"></a>Etapa 1: criar um projeto de aplicativo Windows Forms
 
@@ -27,7 +27,7 @@ Quando você cria um visualizador de imagens, a primeira etapa é criar um proje
 
 1. Na barra de menus, selecione **Arquivo** > **Novo** > **Projeto**. A caixa de diálogo deve ser semelhante à captura de tela a seguir.
 
-     ![Caixa de diálogo Novo Projeto](../ide/media/newprojectdialogcallouts.png)<br/>***Caixa de diálogo*** *Novo Projeto*
+     ![Caixa de diálogo Novo Projeto](../ide/media/newprojectdialogcallouts.png)<br/>*Caixa de diálogo* ***novo projeto***
 
 2. No lado esquerdo da caixa de diálogo **novo projeto** , escolha **Visual C#**  ou **Visual Basic**e, em seguida, escolha **área de trabalho do Windows**.
 
@@ -73,7 +73,7 @@ O Visual Studio cria uma solução para seu aplicativo. Uma solução atua como 
 
 1. O ambiente de desenvolvimento contém três janelas: uma janela principal, o **Gerenciador de Soluções** e a janela **Propriedades**.
 
-     Se qualquer uma dessas janelas estiver ausente, você poderá restaurar o layout de janela padrão. Na barra de menus, escolha **janela**  > **Redefinir layout da janela**.
+     Se qualquer uma dessas janelas estiver ausente, você poderá restaurar o layout de janela padrão. Na barra de menus, escolha **janela** > **Redefinir layout da janela**.
 
      Você também pode exibir janelas usando os comandos de menu. Na barra de menus, escolha **Modo de Exibição** > **Janela Propriedades** ou **Gerenciador de Soluções**.
 
@@ -109,13 +109,13 @@ O Visual Studio cria uma solução para seu aplicativo. Uma solução atua como 
 
      O Visual Studio preenche automaticamente o nome da pasta e o nome do projeto e, em seguida, salva o projeto na sua pasta de projeto.
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
 
 * Para ir para a próxima etapa do tutorial, consulte **[etapa 2: executar seu aplicativo](../ide/step-2-run-your-program.md)** .
 
 * Para retornar ao tópico de visão geral, veja [Tutorial 1: Criar um visualizador de imagens](../ide/tutorial-1-create-a-picture-viewer.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 * [Tutorial 2: criar um teste de matemática cronometrado](tutorial-2-create-a-timed-math-quiz.md)
 * [Tutorial 3: criar um jogo de correspondência](tutorial-3-create-a-matching-game.md)

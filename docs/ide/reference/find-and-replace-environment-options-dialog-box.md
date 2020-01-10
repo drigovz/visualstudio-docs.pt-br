@@ -9,23 +9,23 @@ helpviewer_keywords:
 - Find and Replace, Options dialog box
 - Find and Replace, customizing
 ms.assetid: f804d6d5-6309-46e4-8294-b83e880b5ec9
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 24c9d1f75eef2b785c8fa96bd721144480e134fc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3ef53be4d3894dd1d22a3afbde9dbf631b472aa2
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654381"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75569563"
 ---
 # <a name="find-and-replace-environment-options-dialog-box"></a>Caixa de diálogo Localizar e Substituir, Ambiente, Opções
 
 Use esta página da caixa de diálogo **Opções** para controlar caixas de mensagem e outros aspectos de uma operação de localizar e substituir. Você pode acessar essa caixa de diálogo no menu **Ferramentas**, clicando em **Opções**, expandindo **Ambiente** e, em seguida, clicando em **Localizar e Substituir**. Se essa página não aparecer na lista, selecione **Mostrar todas as configurações** na caixa de diálogo **Opções**.
 
-## <a name="uielement-list"></a>Lista UIElement
+## <a name="uielement-list"></a>Lista de UIElement
 
 **Exibir mensagens informativas**
 
@@ -53,6 +53,6 @@ Quando você desmarcar a opção **Sempre mostrar esta mensagem** em algumas, ma
 
 Selecione esta opção para colar o texto de um dos lados do ponto de inserção atual do editor no campo **Localizar** quando você selecionar qualquer modo de exibição da janela **Localizar e Substituir** no menu **Editar**. Desmarque esta opção para usar o último padrão de pesquisa da pesquisa anterior como a cadeia de caracteres para **Localizar**.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Localizando e substituindo texto](../../ide/finding-and-replacing-text.md)

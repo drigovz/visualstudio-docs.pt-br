@@ -12,17 +12,17 @@ helpviewer_keywords:
 - Window.NextDocumentWindowNav
 - IDE navigator
 ms.assetid: 6c36b6eb-c93f-496b-af08-4199f7afd8bd
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b3aa39c1c9748eb3a9270a66a3a6bbcb43fdcea2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 2febdedf5cf472132de936c37cad787df3d77518
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72645840"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590989"
 ---
 # <a name="how-to-move-around-in-the-visual-studio-ide"></a>Como mover-se no IDE do Visual Studio
 
@@ -92,7 +92,7 @@ O **Navegador de IDE** também permite percorrer as janelas de ferramenta aberta
     > [!TIP]
     > Para inverter a ordem em que você percorre a lista **Janelas de Ferramentas Ativas**, mantenha pressionada as teclas **Shift**+**Alt** e pressione **F7**.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Personalizar layouts de janela](../ide/customizing-window-layouts-in-visual-studio.md)
 - [Atalhos de teclado padrão](../ide/default-keyboard-shortcuts-in-visual-studio.md)

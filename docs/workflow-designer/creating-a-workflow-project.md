@@ -6,17 +6,17 @@ helpviewer_keywords:
 - Workflow Designer, creating a workflow project
 - creating a workflow project
 ms.assetid: 235a125e-ebe7-4a98-bf77-86c8558728fb
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f793e6ff468bdec6df499c5e5eb6b8524e9e4d5a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f8c3e4930376d2d2f9a6ee3334d8b164279d5ac2
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650572"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75597068"
 ---
 # <a name="workflow-project-templates"></a>Modelos de projeto de fluxo de trabalho
 
@@ -36,14 +36,14 @@ O Visual Studio fornece quatro modelos diferentes de projeto de fluxo de trabalh
 
 Para acessar esses modelos, primeiro instale o componente de **Windows Workflow Foundation** do Visual Studio. Para obter instruções detalhadas, consulte [instalar Windows Workflow Foundation](developing-applications-with-the-workflow-designer.md#install-windows-workflow-foundation).
 
-1. Depois de instalar o componente **Windows Workflow Foundation** , selecione **arquivo**  > **novo** **projeto**de  > .
+1. Depois de instalar o componente **Windows Workflow Foundation** , selecione **arquivo** > **novo** **projeto**de > .
 
 1. Pesquise e selecione um modelo de projeto de fluxo de trabalho, por exemplo, o modelo de **aplicativo do console de fluxo de trabalho** .
 
 1. Continue para criar o projeto.
 
    > [!NOTE]
-   > Se você quiser adicionar um novo projeto a uma solução existente, abra essa solução no Visual Studio, clique com o botão direito do mouse na solução em **Gerenciador de soluções**e selecione **Adicionar**  > **novo projeto**.
+   > Se você quiser adicionar um novo projeto a uma solução existente, abra essa solução no Visual Studio, clique com o botão direito do mouse na solução em **Gerenciador de soluções**e selecione **Adicionar** > **novo projeto**.
 
 ## <a name="workflow-console-app"></a>Aplicativo de console de fluxo de trabalho
 
@@ -69,7 +69,7 @@ Para obter um exemplo de como implementar um designer de atividade personalizado
 > [!NOTE]
 > Designers de atividades personalizadas podem ser usados para atividades personalizadas e para atividades padrão do .NET.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Usar o Designer de Fluxo de Trabalho](developing-applications-with-the-workflow-designer.md)
 - [Fluxos de trabalho de design (.NET Framework)](/dotnet/framework/windows-workflow-foundation/designing-workflows)

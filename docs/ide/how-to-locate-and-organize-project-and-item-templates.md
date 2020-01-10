@@ -6,15 +6,15 @@ helpviewer_keywords:
 - project templates [Visual Studio], locations
 - item templates [Visual Studio], locations
 - template locations [Visual Studio]
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: f9035e63fd172727f3bfae44e18a0727599d4edc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 480f583bb997a19bc84fcfbe6824c12a3c638784
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72645888"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591041"
 ---
 # <a name="how-to-locate-and-organize-project-and-item-templates"></a>Como localizar e organizar modelos de projeto e de item
 
@@ -106,9 +106,9 @@ As categorias nas caixas de diálogo **Novo Projeto** e **Adicionar Novo Item** 
 
 1. Coloque todos os modelos dessa categoria na nova pasta.
 
-1. No menu **Arquivo**, escolha **Novo** > **Projeto**.
+1. No menu **arquivo** , escolha **novo** **projeto**de >.
 
-   A categoria **HelloWorld** aparece na caixa de diálogo **Novo Projeto** em **Instalado** > **Visual C#** .
+   A categoria **HelloWorld** aparece na caixa de diálogo **novo projeto** , em **installed** > **Visual C#** .
 
 ### <a name="create-new-user-item-template-categories"></a>Criar categorias de modelo de item do usuário
 
@@ -120,7 +120,7 @@ As categorias nas caixas de diálogo **Novo Projeto** e **Adicionar Novo Item** 
 
 1. Crie um projeto ou abra um projeto existente. Em seguida, no menu **Projeto**, escolha **Adicionar Novo Item**.
 
-   A categoria **HelloWorld** aparece na caixa de diálogo **Adicionar Novo Item** em **Instalado** > **Itens do Visual C#** .
+   A categoria **HelloWorld** aparece na caixa de diálogo **Adicionar novo item** , em **installed** > **Items visuais C#** .
 
 ### <a name="display-templates-in-parent-categories"></a>Exibir modelos em categorias pai
 
@@ -146,7 +146,7 @@ Você pode habilitar modelos em subcategorias a serem exibidos em suas categoria
 
 1. Salve e feche o arquivo *.vstemplate*.
 
-1. Selecione os arquivos em seu modelo, clique com o botão direito do mouse na seleção e escolha **Enviar para** > **Pasta compactada (zipada)** .
+1. Selecione os arquivos em seu modelo, clique com o botão direito do mouse na seleção e escolha **Enviar para** > **pasta compactada (zipada)** .
 
    Os arquivos são compactados em um arquivo *.zip*.
 
@@ -156,7 +156,7 @@ Você pode habilitar modelos em subcategorias a serem exibidos em suas categoria
 
 ::: moniker-end
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Personalizar modelos](../ide/customizing-project-and-item-templates.md)
 - [Referência de esquema de modelo do Visual Studio (extensibilidade)](../extensibility/visual-studio-template-schema-reference.md)

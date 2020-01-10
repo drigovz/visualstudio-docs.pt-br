@@ -9,15 +9,15 @@ f1_keywords:
 - VS.DocumentOutline
 - Blend.Start.Dev12
 ms.assetid: c54969a7-d75a-4a35-9b37-af7a596a7c24
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 0facc87df720af8376561ae7599fe20afeab1a12
-ms.sourcegitcommit: c6af923c1f485959d751b23ab3f03541013fc4a7
+ms.openlocfilehash: 912468cf95b7b5a4b611fb568048c2ba62cc635d
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "73925970"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592997"
 ---
 # <a name="create-a-ui-by-using-xaml-designer"></a>Criar uma interface do usuário usando o Designer XAML
 
@@ -29,11 +29,11 @@ Para usuários avançados, é possível até mesmo [personalizar o Designer XAML
 
 O workspace no Designer XAML consiste em vários elementos da interface visual. Isso inclui a *prancheta* (que é a superfície de design visual), o editor XAML, a janela Estrutura de Tópicos do Documento (janela Objetos e Linha do Tempo no Blend para Visual Studio) e a janela Propriedades. Para abrir o Designer XAML, clique com o botão direito do mouse em um arquivo XAML no **Gerenciador de Soluções** e selecione **Exibir Designer**.
 
-O Designer XAML fornece um modo de exibição XAML e um modo Design sincronizado de marcação XAML renderizada de seu aplicativo. Com um arquivo XAML aberto no Visual Studio ou no Blend para Visual Studio, você pode mudar o modo de exibição de Design e a exibição XAML usando as guias **Design** e **XAML**. Você pode usar o botão **Alternar Painéis** ![botão Alternar Painéis no Designer XAML](media/swap-panes.PNG) para mudar qual janela é exibida na parte superior: a prancheta ou o Editor XAML.
+O Designer XAML fornece um modo de exibição XAML e um modo Design sincronizado de marcação XAML renderizada de seu aplicativo. Com um arquivo XAML aberto no Visual Studio ou no Blend para Visual Studio, você pode mudar o modo de exibição de Design e a exibição XAML usando as guias **Design** e **XAML**. Você pode usar o botão **Alternar Painéis**![botão Alternar Painéis no Designer XAML](media/swap-panes.PNG) para mudar qual janela é exibida na parte superior: a prancheta ou o Editor XAML.
 
 ### <a name="design-view"></a>O modo design
 
-No modo de exibição de Design, a janela ativa é a que contém a prancheta, e você pode usá-la como a principal superfície de trabalho. É possível usá-la para criar visualmente uma página em seu aplicativo ao adicionar, desenhar ou modificar elementos. Para obter mais informações, confira [Trabalhar com elementos no Designer XAML](../xaml-tools/working-with-elements-in-xaml-designer.md). Esta ilustração mostra o artboard no modo Design.
+No modo Design, a janela que contém o artboard é a janela ativa. Você pode usá-la como superfície de trabalho primária. É possível usá-la para criar visualmente uma página em seu aplicativo ao adicionar, desenhar ou modificar elementos. Para obter mais informações, confira [Trabalhar com elementos no Designer XAML](../xaml-tools/working-with-elements-in-xaml-designer.md). Esta ilustração mostra o artboard no modo Design.
 
 ![Modo de exibição de Design do Designer XAML](media/xaml-artboard.png)
 
@@ -140,7 +140,7 @@ A opção na parte superior das janelas Estrutura de Tópicos do Documento/Objet
 
 ## <a name="properties-window"></a>Janela de Propriedades
 
-A janela **Propriedades** permite definir valores de propriedade em controles. Veja como ela se parece:
+A janela **Propriedades** permite definir valores de propriedade em controles. Veja como é sua aparência:
 
 ![Janela de Propriedades](media/xaml-designer-properties-window.png)
 
@@ -158,7 +158,7 @@ Algumas propriedades permitem que você defina propriedades avançadas seleciona
 
 Para obter mais informações sobre como usar propriedades e manipular eventos, confira [Introdução a controles e padrões](/windows/uwp/design/controls-and-patterns/controls-and-events-intro).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Trabalhar com elementos no Designer XAML](../xaml-tools/working-with-elements-in-xaml-designer.md)
 - [Como criar e aplicar um recurso](../xaml-tools/how-to-create-and-apply-a-resource.md)

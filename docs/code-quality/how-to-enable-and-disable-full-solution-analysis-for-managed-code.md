@@ -4,17 +4,17 @@ ms.date: 03/23/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - full solution analysis
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3f7837b1e5ea5b84e1ee1197bf6f8c40d0863c3e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d699dd74315cfc36820c1cdb4120543e0290b1a1
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649454"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587505"
 ---
 # <a name="how-to-enable-and-disable-full-solution-analysis-for-managed-code"></a>Como habilitar e desabilitar a análise completa da solução para código gerenciado
 
@@ -34,7 +34,7 @@ A imagem a seguir mostra os resultados da mesma solução depois de desabilitar 
 
 1. Para abrir a caixa de diálogo **Opções** , na barra de menus do Visual Studio, escolha **ferramentas** > **Opções**.
 
-1. Na caixa de diálogo **Opções** , escolha **o Editor** de**C#** texto  >  ou **Basic**  > **avançado**.
+1. Na caixa de diálogo **Opções** , escolha **o Editor** de **C#** texto > ou **Basic** > **avançado**.
 
 1. Marque a caixa de seleção **Habilitar análise de solução completa** para habilitar a análise completa da solução ou desmarque a caixa para desabilitá-la. Escolha **OK** quando terminar.
 
@@ -44,4 +44,4 @@ A imagem a seguir mostra os resultados da mesma solução depois de desabilitar 
 
 Se o Visual Studio detectar que 200 MB ou menos de memória do sistema está disponível para ele, ele desabilitará automaticamente a análise completa da solução (e alguns outros recursos) se ela estiver habilitada. Se isso ocorrer, um alerta será exibido informando que o Visual Studio desabilitou alguns recursos. Um botão permite reabilitar A análise da solução completa, se desejar.
 
-![Texto de alerta suspendendo análise de solução completa](../code-quality/media/fsa_alert.png)
+![Suspendendo a análise de solução completa de texto de alerta](../code-quality/media/fsa_alert.png)

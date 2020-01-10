@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 95693261cebf26bb740861795f7faf5c56503daf
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.openlocfilehash: 3f8fa8fcd859a7464d471972689728dc556a79bd
+ms.sourcegitcommit: 0d8488329263cc0743a89d43f6de863028e982ff
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74777927"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "75678968"
 ---
 # <a name="debug-a-javascript-or-typescript-app-in-visual-studio"></a>Depurar um aplicativo JavaScript ou TypeScript no Visual Studio
 
@@ -44,7 +44,7 @@ Depure o código JavaScript e TypeScript usando o Visual Studio. Defina e atinja
 ## <a name="debug-client-side-script"></a>Depurar um script do lado do cliente
 
 ::: moniker range=">=vs-2019"
-O Visual Studio fornece suporte de depuração do lado do cliente somente para Chrome e Microsoft Edge (Chromium). Em alguns cenários, o depurador atinge automaticamente os pontos de interrupção no código JavaScript e TypeScript e em scripts inseridos em arquivos HTML. Para depurar o script do lado do cliente em aplicativos ASP.NET, consulte a postagem do blog [Depurar JavaScript no Microsoft Edge](https://devblogs.microsoft.com/visualstudio/debug-javascript-in-microsoft-edge-from-visual-studio/) e esta [postagem para o Google Chrome](https://devblogs.microsoft.com/aspnet/client-side-debugging-of-asp-net-projects-in-google-chrome).
+O Visual Studio fornece suporte de depuração do lado do cliente somente para Chrome e Microsoft Edge (Chromium). Em alguns cenários, o depurador atinge automaticamente os pontos de interrupção no código JavaScript e TypeScript e em scripts inseridos em arquivos HTML. Para depurar o script do lado do cliente em aplicativos ASP.NET, consulte a postagem do blog [Depurar JavaScript no Microsoft Edge](https://devblogs.microsoft.com/visualstudio/debug-javascript-in-microsoft-edge-from-visual-studio/) e esta [postagem para o Google Chrome](https://devblogs.microsoft.com/aspnet/client-side-debugging-of-asp-net-projects-in-google-chrome). Para depurar o TypeScript no ASP.NET Core, consulte também [criar um aplicativo ASP.NET Core com TypeScript](tutorial-aspnet-with-typescript.md).
 ::: moniker-end
 ::: moniker range="vs-2017"
 O Visual Studio fornece suporte de depuração do lado do cliente somente para Chrome e Internet Explorer. Em alguns cenários, o depurador atinge automaticamente os pontos de interrupção no código JavaScript e TypeScript e em scripts inseridos em arquivos HTML. Para depurar o script do lado do cliente em aplicativos ASP.NET, consulte a postagem do blog [depuração do lado do cliente de projetos do ASP.net no Google Chrome](https://devblogs.microsoft.com/aspnet/client-side-debugging-of-asp-net-projects-in-google-chrome/).
@@ -86,7 +86,7 @@ Para este cenário, use o Chrome.
 
     `msedge --remote-debugging-port=9222`
 
-    or
+    ou
 
     `chrome.exe --remote-debugging-port=9222`
     ::: moniker-end
@@ -128,7 +128,7 @@ Para anexar o depurador do Visual Studio e clicar em pontos de interrupção no 
 
 4. Na caixa de diálogo **anexar ao processo** , obtenha uma lista filtrada de instâncias do navegador às quais você pode anexar.
     ::: moniker range=">=vs-2019"
-    No Visual Studio 2019, escolha o depurador correto para seu navegador de destino, **JavaScript (Chrome)** ou **JavaScript (Microsoft Edge-Chromium)** no campo **anexar a** , digite **Chrome** ou **Edge** na caixa de filtro para filtrar o resultados da pesquisa.
+    No Visual Studio 2019, escolha o depurador correto para seu navegador de destino, **JavaScript (Chrome)** ou **JavaScript (Microsoft Edge-Chromium)** no campo **anexar a** , digite **Chrome** ou **Edge** na caixa de filtro para filtrar os resultados da pesquisa.
     ::: moniker-end
     ::: moniker range="vs-2017"
     No Visual Studio 2017, escolha **código WebKit** no campo **anexar a** , digite **Chrome** na caixa de filtro para filtrar os resultados da pesquisa.
@@ -187,7 +187,7 @@ O Visual Studio tem a capacidade de usar e gerar mapas de origem em arquivos de 
 
 Para definir configurações avançadas para mapas de origem, use um *tsconfig.json* ou as configurações do projeto em um projeto TypeScript, mas não ambos.
 
-Para habilitar a depuração usando o Visual Studio, você precisa verificar se as referências ao arquivo de origem no mapa de origem gerado estão corretas (isso pode exigir testes). Por exemplo, se você estiver usando o webpack, as referências no arquivo do mapa de origem incluem o prefixo *webpack:///* , que impede que o Visual Studio Localize um arquivo de origem TYPESCRIPT ou JSX. Especificamente, quando você corrige isso para fins de depuração, a referência ao arquivo de origem (como *app. TSX*) deve ser alterada de algo como *webpack:///./app.TSX* para algo como *./app.TSX*, que habilita a depuração (o o caminho é relativo ao arquivo de origem). O exemplo a seguir mostra como você pode configurar mapas de origem no webpack, que é um dos pacotes mais comuns, para que eles funcionem com o Visual Studio.
+Para habilitar a depuração usando o Visual Studio, você precisa verificar se as referências ao arquivo de origem no mapa de origem gerado estão corretas (isso pode exigir testes). Por exemplo, se você estiver usando o webpack, as referências no arquivo do mapa de origem incluem o prefixo *webpack:///* , que impede que o Visual Studio Localize um arquivo de origem TYPESCRIPT ou JSX. Especificamente, quando você corrige isso para fins de depuração, a referência ao arquivo de origem (como *app. TSX*) deve ser alterada de algo como *webpack:///./app.TSX* para algo como *./app.TSX*, que habilita a depuração (o caminho é relativo ao arquivo de origem). O exemplo a seguir mostra como você pode configurar mapas de origem no webpack, que é um dos pacotes mais comuns, para que eles funcionem com o Visual Studio.
 
 (Somente webpack) Se você estiver definindo o ponto de interrupção em um TypeScript de arquivo JSX (em vez de um arquivo JavaScript transcompilado), precisará atualizar sua configuração do webpack. Por exemplo, em *webpack-config. js*, talvez seja necessário substituir o seguinte código:
 

@@ -2,17 +2,17 @@
 title: Personalizando análise de cobertura de código
 ms.date: 08/21/2019
 ms.topic: conceptual
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-author: jillre
-ms.openlocfilehash: 7392397748d26224a0fba0d5510fccb6655d7642
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+author: mikejo5000
+ms.openlocfilehash: d90292d339c87c74892d715f2a376b5159226dd7
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72665072"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590326"
 ---
 # <a name="customize-code-coverage-analysis"></a>Personalizar a análise de cobertura de código
 
@@ -51,7 +51,7 @@ Para personalizar a cobertura de código, siga estas etapas:
 
 ::: moniker range="vs-2017"
 
-Para ativar ou desativar as configurações personalizadas, marque ou desmarque o arquivo no menu **Teste** > **Configurações do Teste**.
+Para desativar e desativar as configurações personalizadas, desmarque ou selecione o arquivo no menu **testar** > **configurações de teste** .
 
 ![Menu de configurações do teste com o arquivo de configurações personalizadas no Visual Studio 2017](../test/media/codecoverage-settingsfile.png)
 
@@ -110,7 +110,7 @@ A tabela a seguir mostra as várias maneiras pelas quais os assemblies e membros
 | ModulePath | Corresponde aos assemblies especificados pelo nome do assembly ou pelo caminho do arquivo. |
 | CompanyName | Faz a correspondência de assemblies pelo atributo **Company** . |
 | PublicKeyToken | Faz a correspondência de assemblies assinados pelo token de chave pública. |
-| Origem | Faz a correspondência de elementos pelo nome do caminho do arquivo de origem no qual eles são definidos. |
+| Source | Faz a correspondência de elementos pelo nome do caminho do arquivo de origem no qual eles são definidos. |
 | Atributo | Corresponde aos elementos que têm o atributo especificado. Especifique o nome completo do atributo, por exemplo, `<Attribute>^System\.Diagnostics\.DebuggerHiddenAttribute$</Attribute>`.<br/><br/>Se você excluir o atributo <xref:System.Runtime.CompilerServices.CompilerGeneratedAttribute>, o código que usa recursos de linguagem, como `async`, `await`, `yield return` e as propriedades implementadas automaticamente serão excluídas da análise de cobertura de código. Para excluir o código verdadeiramente gerado, exclua apenas o atributo <xref:System.CodeDom.Compiler.GeneratedCodeAttribute>. |
 | Função | Faz a correspondência de procedimentos, funções ou métodos por nome totalmente qualificado, incluindo a lista de parâmetros. Você também pode corresponder a parte do nome usando uma [expressão regular](#regular-expressions).<br/><br/>Exemplos:<br/><br/>`Fabrikam.Math.LocalMath.SquareRoot(double);` (C#)<br/><br/>`Fabrikam::Math::LocalMath::SquareRoot(double)` (C++) |
 
@@ -288,7 +288,7 @@ Included items must then not match any entries in the exclude list to remain inc
 </RunSettings>
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Configurar testes de unidade usando um arquivo de configurações de execução](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md)
 - [Usar a cobertura de código para determinar quanto do código está sendo testado](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)

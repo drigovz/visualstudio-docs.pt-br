@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - code, editing [Visual Studio]
 - code editor [Visual Studio]
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 86cab4db7c732aeb33d9adf61bfdcb2c4563da57
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: de209e0a940fe7f7c64644cea37de3762df0d643
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647042"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75588545"
 ---
 # <a name="features-of-the-code-editor"></a>Recursos do editor de código
 
@@ -39,11 +39,11 @@ As diferentes linguagens do Visual Studio oferecem conjuntos de recursos diferen
 |Correspondência de chave|Quando o ponto de inserção é colocado em uma chave de abertura em um arquivo de código, essa chave de abertura e a chave de fechamento são realçadas. Esse recurso fornece comentários imediatos sobre chaves no local incorreto ou ausentes. Você pode ativar ou desativar a correspondência de chaves com a configuração **Realce Automático de Delimitadores** (**Ferramentas** > **Opções** > **Editor de Texto**). Você pode alterar a cor do realce na configuração **Fontes e Cores** (**Ferramentas** > **Opções** > **Ambiente**). Procure **Correspondência de Chaves (Realce)** ou **Correspondência de Chaves (Retângulo)** .|
 |Visualizador de Estrutura|Linhas pontilhadas conectam chaves correspondentes nos arquivos de código, o que facilita ver a abertura e o fechamento de pares de chave. Isso pode ajudar a localizar o código em sua base de código mais rapidamente. Você pode ativar ou desativar essas linhas em **Mostrar diretrizes de estrutura** na seção **Exibição** da página **Ferramentas** > **Opções** > **Editor de Texto** > **Geral**.|
 |Números de Linha|Os números de linha podem ser exibidos na margem esquerda da janela de código. Eles não são exibidos por padrão. Você poderá ativar essa opção nas configurações **Todas as Linguagens do Editor de Texto** (**Ferramentas** > **Opções** > **Editor de Texto** > **Todas as Linguagens**). Você pode exibir números de linha para linguagens de programação individuais, alterando as configurações para essas linguagens (**Ferramentas** > **Opções** > **Editor de Texto** >  **\<linguagem>** ). Para imprimir os números de linha é necessário selecionar **Incluir números de linha** na caixa de diálogo **Imprimir**.|
-|Controle de Alterações|A cor da margem esquerda permite que você mantenha o controle das alterações feitas em um arquivo. As alterações que foram feitas desde que o arquivo foi aberto mas não foram salvas são indicadas por uma barra amarela na margem esquerda (conhecida como a margem de seleção). Depois de salvar as alterações (mas antes de fechar o arquivo), a barra ficará verde. Se você desfizer uma alteração depois de salvar o arquivo, a barra ficará laranja. Para desativar e ativar esse recurso, altere a opção **Controlar Alterações** nas configurações **Editor de Texto** (**Ferramentas** > **Opções** > **Editor de Texto**).|
+|Controle de alterações|A cor da margem esquerda permite que você mantenha o controle das alterações feitas em um arquivo. As alterações que foram feitas desde que o arquivo foi aberto mas não foram salvas são indicadas por uma barra amarela na margem esquerda (conhecida como a margem de seleção). Depois de salvar as alterações (mas antes de fechar o arquivo), a barra ficará verde. Se você desfizer uma alteração depois de salvar o arquivo, a barra ficará laranja. Para desativar e ativar esse recurso, altere a opção **Controlar Alterações** nas configurações **Editor de Texto** (**Ferramentas** > **Opções** > **Editor de Texto**).|
 |Seleção de código e texto|É possível selecionar texto no modo padrão de fluxo contínuo ou no modo de caixa, no qual você seleciona uma parte retangular do texto em vez de um conjunto de linhas. Para fazer uma seleção no modo de caixa, pressione a tecla **Alt** enquanto arrasta o mouse sobre a seleção (ou pressione **Alt**+**Shift**+ **\<tecla de direção>** ). A seleção inclui todos os caracteres dentro do retângulo definido pelo primeiro caractere e o último caractere na seleção. Tudo que é digitado ou colado na área selecionada é inserido no mesmo ponto em cada linha.|
-|Aplicar Zoom|Você pode ampliar ou reduzir em qualquer janela de código pressionando a tecla **Ctrl** e, mantendo-a pressionada, mover a roda de rolagem do mouse (ou **Ctrl**+**Shift**+ **).** para aumentar e **Ctrl**+**Shift**+ **,** para diminuir). Você também pode usar a caixa **Zoom** no canto inferior esquerdo da janela de código para definir um percentual específico de zoom. O recurso de aplicar zoom não funciona em janelas de ferramentas.|
+|{1&gt;Zoom&lt;1}|Você pode ampliar ou reduzir em qualquer janela de código pressionando a tecla **Ctrl** e, mantendo-a pressionada, mover a roda de rolagem do mouse (ou **Ctrl**+**Shift**+ **).** para aumentar e **Ctrl**+**Shift**+ **,** para diminuir). Você também pode usar a caixa **Zoom** no canto inferior esquerdo da janela de código para definir um percentual específico de zoom. O recurso de aplicar zoom não funciona em janelas de ferramentas.|
 |Espaço virtual|Por padrão, as linhas nos editores do Visual Studio terminam após o último caractere, de forma que a tecla **Seta para a Direita**, ao final de uma linha, move o cursor para o início da próxima linha. Em alguns editores uma linha não termina depois do último caractere e é possível colocar o cursor em qualquer lugar na linha. Você pode habilitar o espaço virtual no editor nas configurações **Ferramentas** > **Opções** > **Editor de Texto** > **Todas as Linguagens**. Observe que você pode habilitar **Espaço virtual** ou **Quebra automática de linha**, mas não ambos.|
-|Imprimindo|Você pode usar as opções da caixa de diálogo **Imprimir** para incluir números de linha ou ocultar regiões de código recolhidas ao imprimir um arquivo. Na caixa de diálogo **Configuração de Página** também é possível imprimir o caminho completo e o nome do arquivo, escolhendo **Cabeçalho de Página**.<br /><br /> Você pode definir opções de impressão a cores na caixa de diálogo **Ferramentas** > **Opções** > **Ambiente** > **Fontes e Cores**. Escolha **Impressora** na lista **Mostrar configurações de** para personalizar a impressão a cores. Você pode especificar cores para imprimir um arquivo diferentes das cores para edição de um arquivo.|
+|Impressão|Você pode usar as opções da caixa de diálogo **Imprimir** para incluir números de linha ou ocultar regiões de código recolhidas ao imprimir um arquivo. Na caixa de diálogo **Configuração de Página** também é possível imprimir o caminho completo e o nome do arquivo, escolhendo **Cabeçalho de Página**.<br /><br /> Você pode definir opções de impressão a cores na caixa de diálogo **Ferramentas** > **Opções** > **Ambiente** > **Fontes e Cores**. Escolha **Impressora** na lista **Mostrar configurações de** para personalizar a impressão a cores. Você pode especificar cores para imprimir um arquivo diferentes das cores para edição de um arquivo.|
 |Desfazer global e Refazer|O comandos **Desfazer Última Ação Global** e **Refazer Última Ação Global** no menu **Editar** desfazem ou refazem ações globais que afetam vários arquivos. As ações globais incluem renomeação de uma classe ou namespace, executar uma operação de localização e substituição em uma solução, refatoração de um banco de dados ou qualquer outra ação que altera vários arquivos. Você pode aplicar os comandos desfazer e refazer global para ações na sessão atual do Visual Studio, mesmo depois de fechar a solução na qual a ação foi aplicada.|
 
 ## <a name="advanced-editing-features"></a>Recursos de edição avançada
@@ -86,7 +86,7 @@ Para definir novas teclas de atalho ou redefinir as teclas de atalho existentes,
 
 Para conferir opções do editor específicas ao JavaScript, confira [Opções do editor de JavaScript](../ide/reference/options-text-editor-javascript-formatting.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Editor de código-fonte (Visual Studio para Mac)](/visualstudio/mac/source-editor)
 - [Visual Studio IDE](../get-started/visual-studio-ide.md)

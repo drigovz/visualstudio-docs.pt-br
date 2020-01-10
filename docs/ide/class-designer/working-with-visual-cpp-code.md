@@ -13,17 +13,17 @@ helpviewer_keywords:
 - C++, class diagrams
 - C++, Class Designer
 ms.assetid: f5b40921-2ef7-4de0-b595-45b44c79ffa6
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 228785c218b1c55a1af817761821acbe11a51c8d
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 54087a719b0079ba32ff08ff1e08ad01f5e64ed0
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73188955"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596743"
 ---
 # <a name="work-with-c-code-in-class-designer"></a>Trabalhar com C++ código no designer de classe
 
@@ -108,7 +108,7 @@ Você pode obter ajuda com a solução de erros e avisos nos fóruns públicos d
 
 - O **Designer de Classe** não pode exibir tipos que são nulos ou derivados de um tipo nulo.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Projetando e exibindo classes e tipos](designing-and-viewing-classes-and-types.md)
 - [Informações adicionais sobre erros do Designer de Classe](additional-information-about-errors.md)

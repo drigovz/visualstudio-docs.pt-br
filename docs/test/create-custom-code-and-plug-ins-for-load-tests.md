@@ -8,15 +8,15 @@ helpviewer_keywords:
 - Web performance tests, plug-ins
 - load tests, plug-ins
 ms.assetid: 0c0fcc99-673b-4ea0-a268-0475f66e5cb6
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7cd3dbd5e7aeb00c2de1a656c26db3a377b8ffe8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3519a593182c199cc9f7a92cfb77e9c79bd1a9ee
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72665105"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590092"
 ---
 # <a name="create-custom-code-and-plug-ins-for-load-tests"></a>Criar código personalizado e plug-ins para testes de carga
 
@@ -45,7 +45,7 @@ Um plug-in personalizado usa um código que você grava e anexa a um teste de ca
 
 <xref:Microsoft.VisualStudio.TestTools.LoadTesting>
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
-- [Analisar resultados de teste de carga](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
+- [Analisar resultados do teste de carga](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
 - [Gerar e executar um teste de desempenho Web codificado](../test/generate-and-run-a-coded-web-performance-test.md)

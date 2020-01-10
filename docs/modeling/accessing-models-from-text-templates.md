@@ -4,24 +4,24 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - text templates, accessing models
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 61f69163e4458c62b9f114eca72c954a2317076b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b9ac9fb023797db98f3b83aa4da7b92e71f0e71e
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652374"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590612"
 ---
 # <a name="access-models-from-text-templates"></a>Acessar modelos de modelos de texto
 
 Usando modelos de texto, você pode criar arquivos de relatório, arquivos de código-fonte e outros arquivos de texto baseados em modelos de linguagem específicos de domínio. Para obter informações básicas sobre modelos de texto, consulte [geração de código e modelos de texto T4](../modeling/code-generation-and-t4-text-templates.md). Os modelos de texto funcionarão no modo experimental quando você estiver Depurando sua DSL e também funcionará em um computador no qual você implantou a DSL.
 
 > [!NOTE]
-> Quando você cria uma solução DSL, o modelo de texto de exemplo **\* arquivos. tt** são gerados no projeto de depuração. Quando você alterar os nomes das classes de domínio, esses modelos deixarão de funcionar. No entanto, eles incluem as diretivas básicas de que você precisa e fornecem exemplos que você pode atualizar para corresponder à sua DSL.
+> Quando você cria uma solução DSL, o modelo de texto de exemplo **\*arquivos. tt** são gerados no projeto de depuração. Quando você alterar os nomes das classes de domínio, esses modelos deixarão de funcionar. No entanto, eles incluem as diretivas básicas de que você precisa e fornecem exemplos que você pode atualizar para corresponder à sua DSL.
 
  Para acessar um modelo de um modelo de texto:
 
@@ -138,9 +138,9 @@ For Each element As ExampleElement In Me.WorkModel.Elements
 ## <a name="loading-models-dynamically"></a>Carregando modelos dinamicamente
  Se você quiser determinar em tempo de execução quais modelos carregar, você pode carregar um arquivo de modelo dinamicamente no código do programa, em vez de usar a diretiva específica de DSL.
 
- No entanto, uma das funções da diretiva específica a DSL é importar o namespace de DSL, para que o código de modelo possa usar as classes de domínio definidas nesse DSL. Como você não está usando a diretiva, é necessário adicionar **\<assembly >** e **\<import diretivas >** para todos os modelos que você pode carregar. Isso é fácil se os modelos diferentes que você pode carregar são todas as instâncias do mesmo DSL.
+ No entanto, uma das funções da diretiva específica a DSL é importar o namespace de DSL, para que o código de modelo possa usar as classes de domínio definidas nesse DSL. Como você não está usando a diretiva, você deve adicionar **\<assembly >** e **\<importar diretivas >** para todos os modelos que você pode carregar. Isso é fácil se os modelos diferentes que você pode carregar são todas as instâncias do mesmo DSL.
 
- Para carregar o arquivo, o método mais eficaz é usar Visual Studio ModelBus. Em um cenário típico, seu modelo de texto usará uma diretiva específica de DSL para carregar o primeiro modelo da maneira usual. Esse modelo deve conter referências ModelBus a outro modelo. Você pode usar ModelBus para abrir o modelo referenciado e acessar um elemento específico. Para obter mais informações, consulte [usando Visual Studio ModelBus em um modelo de texto](../modeling/using-visual-studio-modelbus-in-a-text-template.md).
+ Para carregar o arquivo, o método mais eficaz é usar Visual Studio ModelBus. Em um cenário típico, seu modelo de texto usará uma diretiva específica de DSL para carregar o primeiro modelo da maneira usual. Esse modelo deve conter referências ModelBus a outro modelo. Você pode usar ModelBus para abrir o modelo referenciado e acessar um elemento específico. Para obter mais informações, consulte [usando o Visual Studio ModelBus em um modelo de texto](../modeling/using-visual-studio-modelbus-in-a-text-template.md).
 
  Em um cenário menos comum, talvez você queira abrir um arquivo de modelo para o qual você tem apenas um nome de arquivo e que pode não estar no projeto atual do Visual Studio. Nesse caso, você pode abrir o arquivo usando a técnica descrita em [como: abrir um modelo do arquivo no código do programa](../modeling/how-to-open-a-model-from-file-in-program-code.md).
 
@@ -172,7 +172,7 @@ For Each element As ExampleElement In Me.WorkModel.Elements
 #>
 ```
 
- `LoopSplitter.tt` invoca `LoopTemplate.t4` e, em seguida, divide o arquivo resultante em seus segmentos. Observe que esse modelo não precisa ser um modelo de modelagem, pois ele não lê o modelo.
+ `LoopSplitter.tt` invoca `LoopTemplate.t4`e, em seguida, divide o arquivo resultante em seus segmentos. Observe que esse modelo não precisa ser um modelo de modelagem, pois ele não lê o modelo.
 
 ```
 <#@ template hostspecific="true" language="C#" #>

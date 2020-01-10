@@ -12,12 +12,12 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bdb99cf487995859b9623f11b3559f1b5e7e3ca7
-ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
+ms.openlocfilehash: e2154a07d498012c9c45f992ebed51b0218e823a
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72018347"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75401015"
 ---
 # <a name="walkthrough-analyzing-cc-code-for-defects"></a>Instruções passo a passo: analisando código do C/C++ em busca de defeitos
 
@@ -28,7 +28,7 @@ Este tutorial demonstra como analisar C/C++ Code para possíveis defeitos de có
 - Trate o aviso como um erro.
 - Anote o código-fonte para melhorar a análise de defeitos de código.
 
-## <a name="prerequisites"></a>{1&gt;Pré-requisitos&lt;1}
+## <a name="prerequisites"></a>{1&gt;{2&gt;Pré-requisitos&lt;2}&lt;1}
 
 - Uma cópia do [exemplo de demonstração](../code-quality/demo-sample.md).
 - Noções básicas sobre C/C++.
@@ -49,7 +49,7 @@ Este tutorial demonstra como analisar C/C++ Code para possíveis defeitos de có
 
      A caixa de diálogo **páginas de propriedades do CodeDefects** é exibida.
 
-5. Clique em **análise de código**.
+5. Clique em **Análise de código**.
 
 6. Clique na caixa de seleção **Habilitar análise deC++ código para C/no Build** .
 
@@ -59,7 +59,7 @@ Este tutorial demonstra como analisar C/C++ Code para possíveis defeitos de có
 
 ### <a name="to-analyze-code-defect-warnings"></a>Para analisar avisos de defeito de código
 
-1. No menu **Exibir** , clique em **lista de erros**.
+1. No menu **Exibir** , clique em **Lista de Erros**.
 
      Dependendo do perfil de desenvolvedor que você escolheu no [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], talvez seja necessário apontar para **outras janelas** no menu **Exibir** e, em seguida, clicar em **lista de erros**.
 
@@ -67,9 +67,9 @@ Este tutorial demonstra como analisar C/C++ Code para possíveis defeitos de có
 
      aviso C6230: conversão implícita entre tipos semanticamente diferentes: usando HRESULT em um contexto booliano.
 
-     O editor de código exibe a linha que causou o aviso na função `bool ProcessDomain()`. Esse aviso indica que um HRESULT está sendo usado em uma instrução ' If ' onde um resultado booliano é esperado.
+     O editor de código exibe a linha que causou o aviso na função `bool ProcessDomain()`. Esse aviso indica que um `HRESULT` está sendo usado em uma instrução ' If ' onde um resultado booliano é esperado.  Normalmente, isso é um erro porque quando o `S_OK` HRESULT é retornado da função de ti indica êxito, mas quando convertido em um valor booliano, ele é avaliado como `false`.
 
-3. Corrija esse aviso usando a macro SUCCEEDed. Seu código deve ser semelhante ao seguinte código:
+3. Corrija esse aviso usando a macro `SUCCEEDED`, que converte em `true` quando um valor de retorno `HRESULT` indica êxito. Seu código deve ser semelhante ao seguinte código:
 
    ```cpp
    if (SUCCEEDED (ReadUserAccount()) )
@@ -111,7 +111,7 @@ Este tutorial demonstra como analisar C/C++ Code para possíveis defeitos de có
 
      A caixa de diálogo **páginas de propriedades de anotações** é exibida.
 
-3. Clique em **análise de código**.
+3. Clique em **Análise de código**.
 
 4. Marque a caixa de seleção **Habilitar análise deC++ código para C/no Build** .
 
@@ -128,11 +128,11 @@ Este tutorial demonstra como analisar C/C++ Code para possíveis defeitos de có
 8. Para corrigir esse aviso, use uma instrução ' If ' para testar o valor de retorno. Seu código deve ser semelhante ao seguinte código:
 
    ```cpp
-   if (NULL != newNode)
+   if (nullptr != newNode)
    {
-   newNode->data = value;
-   newNode->next = 0;
-   node->next = newNode;
+       newNode->data = value;
+       newNode->next = 0;
+       node->next = newNode;
    }
    ```
 
@@ -142,14 +142,10 @@ Este tutorial demonstra como analisar C/C++ Code para possíveis defeitos de có
 
 ### <a name="to-use-source-code-annotation"></a>Para usar a anotação de código-fonte
 
-1. Anote os parâmetros formais e o valor de retorno da função `AddTail` usando as condições anterior e posterior, conforme mostrado neste exemplo:
+1. Anote os parâmetros formais e o valor de retorno da função `AddTail` para indicar que os valores de ponteiro podem ser nulos:
 
    ```cpp
-   [returnvalue:SA_Post (Null=SA_Maybe)] LinkedList* AddTail
-   (
-   [SA_Pre(Null=SA_Maybe)] LinkedList* node,
-   int value
-   )
+   _Ret_maybenull_ LinkedList* AddTail(_Maybenull_ LinkedList* node, int value)
    ```
 
 2. Recriar projeto de anotações.
@@ -160,23 +156,20 @@ Este tutorial demonstra como analisar C/C++ Code para possíveis defeitos de có
 
      Esse aviso indica que o nó passado para a função pode ser nulo e indica o número da linha em que o aviso foi gerado.
 
-4. Para corrigir esse aviso, use uma instrução ' If ' para testar o valor de retorno. Seu código deve ser semelhante ao seguinte código:
+4. Para corrigir esse aviso, use uma instrução ' If ' no início da função para testar o valor passado. Seu código deve ser semelhante ao seguinte código:
 
    ```cpp
-   . . .
-   LinkedList *newNode = NULL;
-   if (NULL == node)
+   if (nullptr == node)
    {
-        return NULL;
-        . . .
+        return nullptr;
    }
    ```
 
 5. Recriar projeto de anotações.
 
-     O projeto é compilado sem avisos ou erros.
+     Agora, o projeto é compilado sem avisos ou erros.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 [Walkthrough: analisando código gerenciado para defeitos de código](../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)
 [análise de códigoC++ para C/](../code-quality/code-analysis-for-c-cpp-overview.md)

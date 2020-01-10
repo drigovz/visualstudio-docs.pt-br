@@ -10,17 +10,17 @@ helpviewer_keywords:
 - collections, collection associations
 - Class Designer [Visual Studio], collection associations
 ms.assetid: 54e39838-2fc9-4dc2-85b6-7e88a743108e
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e074eee5972bcf952108a36f52c0915057c470a3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 7ba237b9c763421287e3878a6a98f59032bfd092
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72631319"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590768"
 ---
 # <a name="how-to-visualize-a-collection-association-in-class-designer"></a>Como visualizar uma associação de coleção no Designer de Classe
 
@@ -36,7 +36,7 @@ Propriedades e campos que são coleções de outros tipos podem ser exibidos no 
 
 A propriedade ou o campo é mostrado como uma linha de associação vinculando ao tipo coletado.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Como criar associações entre tipos](how-to-create-associations-between-types.md)
 - [Projetando classes e tipos](designing-and-viewing-classes-and-types.md)

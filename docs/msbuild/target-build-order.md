@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - msbuild, build order
 ms.assetid: f4a26339-9f9a-497a-9aa6-0797183d450d
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ee7a3c2530456a4c2b358fcea7507203feeb904b
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.openlocfilehash: 607584b4b41bdfde224bdb35d30eec1c6c8a4197
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74777875"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585451"
 ---
 # <a name="target-build-order"></a>Ordem de build de destino
 
@@ -130,6 +130,6 @@ O MSBuild determina a ordem de build de destinos da seguinte maneira:
 
 7. Após o destino ser executado ou ignorado, qualquer outro destino que o listar em um atributo `AfterTargets` será executado.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Destinos](../msbuild/msbuild-targets.md)

@@ -3,17 +3,17 @@ title: 'Como: Selecione os esquemas XML para usar'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: d6fda3ef-d465-4788-8514-2f2d528d658c
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 275def786a93d42e6b8e110d3b3d785a24e948b1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 2acafe0c782b39bb7aa345b5456df7238703cb20
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72601907"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592640"
 ---
 # <a name="how-to-select-the-xml-schemas-to-use"></a>Como: selecionar os esquemas XML a serem usados
 
@@ -34,13 +34,13 @@ Os esquemas que você especificar são salvos em um arquivo de opções de usuá
 
    ![Propriedade schemas para um arquivo XML](media/properties-schemas.png)
 
-   A [caixa de diálogo esquemas XML](xml-schemas-dialog-box.md) é aberta. A caixa de diálogo lista todos os esquemas com um. extensão *XSD* no cache de esquema (incluindo esquemas referenciados no arquivo *Catalog. xml* ) e também qualquer esquema que esteja na solução atual, aberto no Visual Studio, referenciado em um atributo `xsd:schemaLocation` ou referenciado nos **esquemas** Propriedade.
+   A [caixa de diálogo esquemas XML](xml-schemas-dialog-box.md) é aberta. A caixa de diálogo lista todos os esquemas com um. extensão *XSD* no cache de esquema (incluindo esquemas referenciados no arquivo *Catalog. xml* ) e também qualquer esquema que esteja na solução atual, aberto no Visual Studio, referenciado em um atributo `xsd:schemaLocation` ou referenciado na propriedade **esquemas** .
 
 3. Selecione os esquemas para usar a validação seguindo um destes procedimentos:
 
    - Selecione um esquema listado na caixa de diálogo **esquemas XML** , clique na coluna **usar** e, em seguida, selecione **usar este esquema**.
 
-     \- ou -
+     - ou -
 
    - Selecione vários esquemas listados na caixa de diálogo **esquemas XML** e clique com o botão direito do mouse e selecione **usar este esquema**.
 
@@ -73,7 +73,7 @@ Os esquemas que você especificar são salvos em um arquivo de opções de usuá
    > [!NOTE]
    > Se você ainda tiver uma referência ao esquema por meio de um atributo `schemaLocation` ou se uma `targetNamespace` correspondente, a **remoção** não funcionará nessa situação devido à associação automática. Nesse caso, é recomendável que você marque o esquema como **não usar esquemas selecionados** na coluna **usar** .
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Cache de esquema](../xml-tools/schema-cache.md)
 - [Caixa de diálogo esquemas XML](../xml-tools/xml-schemas-dialog-box.md)

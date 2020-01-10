@@ -9,17 +9,17 @@ helpviewer_keywords:
 - install packages
 - managing extensions visual studio
 ms.assetid: 4ca92d93-31b9-47ef-8109-4a429d9e2ca3
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 92fe7d47a74112fb804770cca356084fa79fe1e4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f016af58b5799ca37b1a8f0cc54366d639c57c03
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654209"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594403"
 ---
 # <a name="manage-extensions-for-visual-studio"></a>Gerenciar extensões para o Visual Studio
 
@@ -57,7 +57,7 @@ Para instalar extensões de dentro do Visual Studio:
 
 1. Em **Ferramentas** > **Extensões e Atualizações**, localize a extensão que você deseja instalar. Se você souber o nome ou parte do nome da extensão, poderá pesquisar na janela de **pesquisa** .
 
-2. Selecione **baixar**.
+2. Selecione **Baixar**.
 
    Esta extensão está agendada para instalação. Sua extensão será instalada depois que todas as instâncias do Visual Studio tiverem sido fechadas.
 
@@ -65,7 +65,7 @@ Se você tentar instalar uma extensão que tenha dependências, o instalador ver
 
 ### <a name="install-without-using-the-extensions-and-updates-dialog-box"></a>Instalar sem usar a caixa de diálogo Extensões e Atualizações
 
-As extensões que foram empacotadas em arquivos *.vsix* podem estar disponíveis em outros locais e não no Visual Studio Marketplace. A caixa de diálogo **ferramentas**  > **extensões e atualizações** não pode detectar esses arquivos, mas você pode instalar um arquivo *. vsix* clicando duas vezes no arquivo ou selecionando o arquivo e pressionando **Enter**. Depois disso, basta seguir as instruções. Depois que a extensão for instalada, será possível usar a caixa de diálogo **Extensões e Atualizações** para habilitá-la, desabilitá-la ou desinstalá-la.
+As extensões que foram empacotadas em arquivos *.vsix* podem estar disponíveis em outros locais e não no Visual Studio Marketplace. A caixa de diálogo **ferramentas** > **extensões e atualizações** não pode detectar esses arquivos, mas você pode instalar um arquivo *. vsix* clicando duas vezes no arquivo ou selecionando o arquivo e pressionando **Enter**. Depois disso, basta seguir as instruções. Depois que a extensão for instalada, será possível usar a caixa de diálogo **Extensões e Atualizações** para habilitá-la, desabilitá-la ou desinstalá-la.
 
 > [!NOTE]
 > - O Visual Studio Marketplace contém extensões VSIX e MSI. A caixa de diálogo extensões e atualizações não pode habilitar ou desabilitar extensões baseadas em MSI.
@@ -81,7 +81,7 @@ Para instalar extensões de dentro do Visual Studio:
 
 1. Em **Extensões** > **Gerenciar Extensões**, localize a extensão que você deseja instalar. Se você souber o nome ou parte do nome da extensão, será possível pesquisar na janela **Pesquisar**.
 
-2. Selecione **baixar**.
+2. Selecione **Baixar**.
 
    Esta extensão está agendada para instalação. Sua extensão será instalada depois que todas as instâncias do Visual Studio tiverem sido fechadas.
 
@@ -89,7 +89,7 @@ Se você tentar instalar uma extensão que tenha dependências, o instalador ver
 
 ### <a name="install-without-using-the-manage-extensions-dialog-box"></a>Instalar sem usar a caixa de diálogo Gerenciar Extensões
 
-As extensões que foram empacotadas em arquivos *.vsix* podem estar disponíveis em outros locais e não no Visual Studio Marketplace. A caixa de diálogo **extensões**  > **gerenciar extensões** não pode detectar esses arquivos, mas você pode instalar um arquivo *. vsix* clicando duas vezes no arquivo ou selecionando o arquivo e pressionando **Enter**. Depois disso, basta seguir as instruções. Depois que a extensão for instalada, será possível usar a caixa de diálogo **Gerenciar Extensões** para habilitá-la, desabilitá-la ou desinstalá-la.
+As extensões que foram empacotadas em arquivos *.vsix* podem estar disponíveis em outros locais e não no Visual Studio Marketplace. A caixa de diálogo **extensões** > **gerenciar extensões** não pode detectar esses arquivos, mas você pode instalar um arquivo *. vsix* clicando duas vezes no arquivo ou selecionando o arquivo e pressionando **Enter**. Depois disso, basta seguir as instruções. Depois que a extensão for instalada, será possível usar a caixa de diálogo **Gerenciar Extensões** para habilitá-la, desabilitá-la ou desinstalá-la.
 
 > [!NOTE]
 > - O Visual Studio Marketplace contém extensões VSIX e MSI. A caixa de diálogo Gerenciar extensões não pode habilitar ou desabilitar extensões baseadas em MSI.
@@ -106,13 +106,13 @@ Se desejar parar de usar uma extensão, você poderá desabilitá-la ou desinsta
 
 ## <a name="per-user-and-administrative-extensions"></a>Extensões administrativas e por usuário
 
-A maioria das extensões é por usuário e é instalada no *%LocalAppData%\Microsoft\VisualStudio \\ < o Visual Studio versão \> pasta de \\ \Extensions* . Algumas extensões são extensões administrativas e são instaladas na *\<pasta de instalação do Visual Studio>\Common7\IDE\Extensions\\* .
+A maioria das extensões é por usuário e é instalada no *%LocalAppData%\Microsoft\VisualStudio\\< o Visual Studio versão\>pasta de\\\Extensions* . Algumas extensões são extensões administrativas e são instaladas na *\<pasta de instalação do Visual Studio>\Common7\IDE\Extensions\\* .
 
 Para proteger seu sistema contra extensões que possam conter erros ou código mal-intencionado, é possível restringir que as extensões por usuário sejam carregadas somente quando o Visual Studio estiver em execução com permissões de usuário normal. Isso significa que as extensões por usuário são desabilitadas quando o Visual Studio é executado com permissões elevadas.
 
 Para restringir quando as extensões por usuário são carregadas:
 
-1. Abra a página opções de extensões (**ferramentas**  > **opções**  > **ambiente**  > **extensões**).
+1. Abra a página opções de extensões (**ferramentas** > **opções** > **ambiente** > **extensões**).
 
 2. Desmarque a caixa de seleção **carregar extensões por usuário ao executar como administrador** .
 
@@ -172,7 +172,7 @@ Quando essas notificações forem exibidas, você poderá ignorar a notificaçã
 > [!NOTE]
 > Uma notificação de falha ou de falta de resposta da interface do usuário significa apenas que um dos módulos de extensão estava na pilha quando a interface do usuário ficou sem resposta ou quando a falha ocorreu. Isso não significa necessariamente que a própria extensão foi a culpada. É possível que a extensão chamada código que faz parte do Visual Studio, que, por sua vez, resultou em uma interface do usuário sem resposta ou uma falha. No entanto, a notificação ainda pode ser útil se a extensão que levou à falha ou falta de resposta da interface do usuário não for importante para você. Nesse caso, desabilitar a extensão evita que a falta de resposta da IU ou a falha ocorra no futuro, sem afetar sua produtividade.
 
-## <a name="samples"></a>Exemplos
+## <a name="samples"></a>Exemplos do
 
 Quando você instala um exemplo online, a solução é armazenada em dois locais:
 
@@ -182,13 +182,13 @@ Quando você instala um exemplo online, a solução é armazenada em dois locais
 
 ::: moniker range="vs-2017"
 
-É possível usar a caixa de diálogo **Ferramentas** > **Extensões e Atualizações** para executar estas tarefas relacionadas a amostras:
+Você pode usar a caixa de diálogo **ferramentas** > **extensões e atualizações** para executar estas tarefas relacionadas a exemplos:
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-É possível usar a caixa de diálogo **Extensões** > **Gerenciar Extensões** para executar estas tarefas relacionadas a amostras:
+Você pode usar a caixa de diálogo **extensões** > **gerenciar extensões** para executar estas tarefas relacionadas a exemplos:
 
 ::: moniker-end
 
@@ -204,7 +204,7 @@ Quando você instala um exemplo online, a solução é armazenada em dois locais
 
 - Atualize a cópia mestra de uma amostra instalada quando houver uma notificação de atualização.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Visual Studio Marketplace](https://marketplace.visualstudio.com)
 - [SDK do Visual Studio](../extensibility/visual-studio-sdk.md)

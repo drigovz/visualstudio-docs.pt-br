@@ -8,17 +8,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - Generate From Usage
 - Test-First Development
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 81ab4b1597ea9f91a1b5081e89fd4cb77e0d8c63
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9bf9a7e613a482167a01739320282f9ba8fdea26
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647156"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596886"
 ---
 # <a name="walkthrough-test-first-development-with-the-generate-from-usage-feature"></a>Instruções passo a passo: desenvolvimento de teste antes da codificação com o recurso gerar com base no uso
 
@@ -36,7 +36,7 @@ O recurso **Gerar com Base no Uso** pode ser usado com estruturas de teste integ
 
 1. Em C# ou no Visual Basic, crie um projeto da **Biblioteca de classes do Windows**. Nomeie-o `GFUDemo_VB` ou `GFUDemo_CS`, dependendo de qual linguagem você está usando.
 
-2. No **Gerenciador de Soluções**, clique com o botão direito do mouse no ícone da solução na parte superior, escolha **Adicionar**  >  **Novo Projeto**.
+2. No **Gerenciador de Soluções**, clique com o botão direito do mouse no ícone da solução na parte superior, escolha **Adicionar** > **Novo Projeto**.
 
 3. Crie um **projeto de Teste de Unidade (.NET Framework)** .
 
@@ -159,7 +159,7 @@ Suponha que a especificação afirme que um novo `Automobile` poderá ser coloca
 
      ![Resultados de teste que foram aprovados](../ide/media/testspassed.png)
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Gerar com base no uso](../ide/visual-csharp-intellisense.md#generate-from-usage)
 - [Recursos do Editor de Códigos](../ide/writing-code-in-the-code-and-text-editor.md)

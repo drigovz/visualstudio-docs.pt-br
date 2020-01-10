@@ -2,17 +2,17 @@
 title: Diretiva de parâmetro T4
 ms.date: 11/04/2016
 ms.topic: reference
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a4a9ea9d3c1f80c669ec52936969ae38342e6343
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9f833eb651efda0edb837515e1bf2b3567e1a759
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72606178"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591795"
 ---
 # <a name="t4-parameter-directive"></a>Diretiva de parâmetro T4
 
@@ -26,7 +26,7 @@ Em um modelo de texto do Visual Studio, a diretiva `parameter` declara Proprieda
 
  A diretiva `parameter` declara Propriedades em seu código de modelo que são inicializadas a partir de valores passados do contexto externo. Você pode definir esses valores se escrever um código que invoque a transformação de texto. Os valores podem ser passados no dicionário de `Session` ou em <xref:System.Runtime.Remoting.Messaging.CallContext>.
 
- Você pode declarar parâmetros de qualquer tipo remoto. Ou seja, o tipo deve ser declarado com <xref:System.SerializableAttribute> ou deve derivar de <xref:System.MarshalByRefObject>. Isso permite que os valores de parâmetro sejam passados para o AppDomain no qual o modelo é processado.
+ Você pode declarar parâmetros de qualquer tipo remoto. Ou seja, o tipo deve ser declarado com <xref:System.SerializableAttribute>ou deve derivar de <xref:System.MarshalByRefObject>. Isso permite que os valores de parâmetro sejam passados para o AppDomain no qual o modelo é processado.
 
  Por exemplo, você pode escrever um modelo de texto com o seguinte conteúdo:
 

@@ -3,17 +3,17 @@ title: Menus de contexto no XML Schema Explorer
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 42ab17ca-b8c1-40d7-beda-d033f66fe874
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a9310102177e19d2129dd620285d6c45df63ec78
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f7224ca09588858398a0f45c35008ddd5ba0af71
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72651200"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592887"
 ---
 # <a name="context-menus-xml-schema-explorer"></a>Menus de contexto (XML Schema Explorer)
 
@@ -112,7 +112,7 @@ Além das opções do nó globais descritos acima, o menu de contexto para nós 
 |**Mostrar todos os membros**|Localiza e realces todos os membros do grupo chamado.|
 |**Mostrar todas as referências**|Localiza e realça todas as referências (grupos que têm `ref="selectedGroup"`) para o grupo selecionado.|
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [XML Schema Explorer](../xml-tools/xml-schema-explorer.md)
 - [Pesquisando o conjunto de esquema](../xml-tools/searching-the-schema-set.md)

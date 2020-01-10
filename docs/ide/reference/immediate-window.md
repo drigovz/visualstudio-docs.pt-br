@@ -11,17 +11,17 @@ helpviewer_keywords:
 - Immediate window
 - first-chance exception notifications
 ms.assetid: d33e7937-73f3-4c69-9df0-777a8713c6f2
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fa5f804c22090fa79586549db00b13d824a54690
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b21cdb9136abe1e960e5b74bbf09e7d1694519d7
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72662535"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75568952"
 ---
 # <a name="immediate-window"></a>Janela Imediata
 
@@ -90,7 +90,7 @@ Ao estabelecer o contexto para a avaliação de expressão em tempo de design, o
 
 Você precisa inserir o sinal de maior que (>) ao emitir comandos do Visual Studio na janela **Imediato**. Use as teclas **Seta para cima** e **Seta para baixo** para rolar pelos comandos usados anteriormente.
 
-|Tarefa|Solução|Exemplo|
+|Tarefa|{1&gt;&lt;1} Solução|Exemplo|
 |----------|--------------|-------------|
 |Avaliar uma expressão.|Preceda a expressão com um ponto de interrogação (?).|`? a+b`|
 |Entrar temporariamente no modo Comando enquanto está no modo Imediato (para executar um único comando).|Digite o comando precedendo-o com um sinal de maior que (>).|`>alias`|
@@ -129,7 +129,7 @@ Em algumas configurações, notificações de exceção de primeira tentativa s�
 
 2. Clique com o botão direito do mouse na área de texto da Janela de **Saída** e marque ou desmarque **Mensagens de Exceção**.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Navegar pelo Código com o Depurador](../../debugger/navigating-through-code-with-the-debugger.md)
 - [Janela Comando](../../ide/reference/command-window.md)

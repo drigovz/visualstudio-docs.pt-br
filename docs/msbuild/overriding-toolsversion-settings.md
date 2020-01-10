@@ -6,17 +6,17 @@ helpviewer_keywords:
 - MSBuild, overriding ToolsVersion setting
 - MSBuild, building solutions with
 ms.assetid: ccd42c07-0fb6-4e8b-9ebb-a6a6db18aa2e
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 151e714a00a3030c2ed502a739c54c28e5ae75d3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 1706d0e82139da5962fbb43610cdecd6b1477ad1
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63006743"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590482"
 ---
 # <a name="override-toolsversion-settings"></a>Substituir as configurações de ToolsVersion
 Você pode alterar o conjunto de ferramentas para projetos e soluções de uma entre três maneiras:
@@ -123,7 +123,7 @@ msbuild.exe someproj.proj -tv:12.0 -p:Configuration=Debug
 
     4. Caso contrário, use a `ToolsVersion` atual.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 - [Multiplataforma](../msbuild/msbuild-multitargeting-overview.md)
 - [Conceitos do MSBuild](../msbuild/msbuild-concepts.md)
 - [Conjunto de Ferramentas (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)

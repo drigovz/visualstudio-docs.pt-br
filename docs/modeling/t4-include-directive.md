@@ -2,17 +2,17 @@
 title: Diretiva de inclusão T4
 ms.date: 11/04/2016
 ms.topic: reference
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 636260609aa535e3bc45efe0224a517fd782c040
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a1ee58c29be3c4dfb5e2148c54464a7a511d1839
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72606387"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591847"
 ---
 # <a name="t4-include-directive"></a>Diretiva de inclusão T4
 
@@ -30,7 +30,7 @@ Em um modelo de texto no Visual Studio, você pode incluir texto de outro arquiv
 
    Essas pastas de inclusão adicionais podem depender da extensão do arquivo de inclusão. Por exemplo, a pasta de inclusão das Ferramentas DSL só é acessível a arquivos de inclusão com a extensão de arquivo `.tt`
 
-- `filePath` pode incluir variáveis de ambiente delimitadas com "%". Por exemplo:
+- `filePath` pode incluir variáveis de ambiente delimitadas por "%". Por exemplo:
 
   ```
   <#@ include file="%HOMEPATH%\MyIncludeFile.t4" #>
@@ -61,7 +61,7 @@ Output message 5 (from top template).
 #>
 ```
 
- **Textarquivo1. T4:**
+ **TextFile1.t4:**
 
 ```
    Output Message 2 (from included file).
@@ -77,7 +77,7 @@ void GenerateMessage(int n)
 #>
 ```
 
- **Textarquivo2. T4:**
+ **TextFile2.t4:**
 
 ```
         Output Message 3 (from included file 2).

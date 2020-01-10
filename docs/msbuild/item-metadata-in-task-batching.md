@@ -8,17 +8,17 @@ helpviewer_keywords:
 - task batching [MSBuild]
 - MSBuild, task batching
 ms.assetid: 31e480f8-fe4d-4633-8c54-8ec498e2306d
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c80749080e4abc41412ed6c5df8421976054e68e
-ms.sourcegitcommit: 49ebf69986713e440fd138fb949f1c0f47223f23
+ms.openlocfilehash: 641253bc6a7962102a0d9437ddb3981672ae67c3
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74706860"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75573632"
 ---
 # <a name="item-metadata-in-task-batching"></a>Metadados de item no envio de tarefas em lote
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] tem a capacidade de dividir as listas de itens em categorias diferentes ou lotes com base nos metadados do item, além de executar uma tarefa uma vez com cada lote. Pode ser difícil entender exatamente quais itens estão sendo passados com qual lote. Este tópico aborda os cenários comuns a seguir, que envolvem o envio em lote.
@@ -217,7 +217,7 @@ A [tarefa Message](../msbuild/message-task.md) exibe as seguintes informações:
 Items in ExampColl: Item2;Item5
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 - [Metadados de item conhecidos](../msbuild/msbuild-well-known-item-metadata.md)
 - [Elemento Item (MSBuild)](../msbuild/item-element-msbuild.md)
 - [Elemento ItemMetadata (MSBuild)](../msbuild/itemmetadata-element-msbuild.md)

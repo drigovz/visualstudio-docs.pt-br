@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Find command
 - Edit.Find command
 ms.assetid: f0c705dc-2b97-423d-abbf-5584d4827208
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ab914d62053b5cbefe92ee0ce8356c10dad82e6
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 288fb294ab712713d6be116f46ca159ea40a6e67
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748755"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595638"
 ---
 # <a name="find-command"></a>Comando Localizar
 Pesquisa arquivos usando um subconjunto das opções disponíveis na guia **Localizar nos Arquivos** da janela **Localizar e Substituir**.
@@ -33,7 +33,7 @@ Edit.Find findwhat [/case] [/doc | /proc | /open | /sel]
 ## <a name="arguments"></a>Arguments
 `findwhat` Necessário. O texto a ser correspondido.
 
-## <a name="switches"></a>Opções
+## <a name="switches"></a>Comutadores
 /case ou /c\
 Opcional. As correspondências ocorrerão somente se os caracteres maiúsculos e minúsculos corresponderem exatamente aos especificados no argumento `findwhat`.
 
@@ -77,7 +77,7 @@ Este exemplo realiza uma pesquisa que diferencia maiúsculas de minúsculas para
 >Edit.Find somestring /sel /case
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Janela Comando](../../ide/reference/command-window.md)
 - [Caixa Localizar/Comando](../../ide/find-command-box.md)

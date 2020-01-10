@@ -8,17 +8,17 @@ helpviewer_keywords:
 - peek definition
 - type definition [Visual Studio]
 - member definition [Visual Studio]
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2d78614966a33421aac707f370f2b18e62e4b3d9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3ef13b959d4e106b451ea0cfb336835059667ce4
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72603541"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592068"
 ---
 # <a name="view-type-and-member-definitions"></a>Exibir Definições de Membro e de Tipo
 
@@ -76,7 +76,7 @@ Defina uma opção para ver o código-fonte descompilado quando exibir a defini�
 > [!NOTE]
 > O Visual Studio reconstrói corpos de método usando a descompilação ILSpy. Na primeira vez que você acessar esse recurso, deverá concordar com uma isenção de responsabilidade sobre leis de direitos autorais de marcas e licenciamento de software.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Navegar pelo código](../ide/navigating-code.md)
 - [Como exibir e editar códigos usando a janela Inspecionar Definição (Alt+F12)](how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)

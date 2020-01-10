@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - text templates, escape sequences
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e03f5eafc00b8431725ed06da10371a93692fb5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 83e6e5cf163037077d0517e5f7ea460f9124f27c
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72662927"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594039"
 ---
 # <a name="use-escape-sequences-in-text-templates"></a>Usar sequências de escape em modelos de texto
 
@@ -32,10 +32,10 @@ Se um bloco de texto incluir cadeias de caracteres usadas para escapar marcas de
 
 - Se uma marca de modelo de texto for precedida por um número par de caracteres de escape (\\), o analisador de modelo incluirá metade dos caracteres de escape e incluirá a sequência como uma marca de modelo de texto. Por exemplo, se houver quatro caracteres de escape no modelo de texto, haverá dois caracteres "\\" no arquivo gerado.
 
-- Se a marca de modelo de texto for precedida por um número ímpar de caracteres de escape (\\), o analisador de modelo incluirá metade dos caracteres de "\\" mais a marca (\< # ou # >). A marca não é considerada uma marca de modelo de texto.
+- Se a marca de modelo de texto for precedida por um número ímpar de caracteres de escape (\\), o analisador de modelo incluirá metade dos caracteres de "\\" mais a marca (\<# ou # >). A marca não é considerada uma marca de modelo de texto.
 
 - Se um caractere de escape (\\) aparecer em qualquer lugar em qualquer sequência diferente de onde ele sai de um caractere de controle ou de C# uma aspa (em apenas), o caractere será impresso diretamente.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Como gerar modelos com base em modelos usando sequências de escape](../modeling/how-to-generate-templates-from-templates-by-using-escape-sequences.md)

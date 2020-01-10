@@ -7,17 +7,17 @@ helpviewer_keywords:
 - Devenv, /RunExit switch
 - /RunExit Devenv switch
 ms.assetid: bfc94875-5fc0-4110-b961-d59c0b403790
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 295d4999437248cc9221631378c2beffd80094d8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 18ca581c5a8a7f631138e8b3eacff02a031e0931
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72655530"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593597"
 ---
 # <a name="runexit-devenvexe"></a>/RunExit (devenv.exe)
 
@@ -39,7 +39,7 @@ devenv /RunExit {SolutionName|ProjectName} [/Out OutputFilename]
 
   O caminho completo e o nome de um arquivo de projeto.
 
-- `/Out` *OutputFilename*
+- `/Out` *NomeDoArquivoDeSaída*
 
   Opcional. O nome de um arquivo para o qual você deseja enviar a saída da ferramenta. Se o arquivo já existir, a ferramenta anexará a saída ao final do arquivo.
 
@@ -59,7 +59,7 @@ Este exemplo executa a solução `MySolution` em um IDE minimizado usando a conf
 devenv /runexit "%USERPROFILE%\source\repos\MySolution\MySolution.sln"
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Opções de linha de comando do Devenv](../../ide/reference/devenv-command-line-switches.md)
 - [/Run (devenv.exe)](../../ide/reference/run-devenv-exe.md)

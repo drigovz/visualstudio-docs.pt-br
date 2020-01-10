@@ -14,17 +14,17 @@ helpviewer_keywords:
 - data [Visual Studio], retrieving
 - data [Visual Studio], datasets
 ms.assetid: 55f3bfbe-db78-4486-add3-c62f49e6b9a0
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: fcecafaa36aabf3249bacf0788c2d19f945ad1b1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a79f7b781944bb93a60794e748eefb9375723384
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648470"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586621"
 ---
 # <a name="fill-datasets-by-using-tableadapters"></a>Preencher conjuntos de dados usando TableAdapters
 
@@ -59,11 +59,11 @@ Embora os TableAdapters sejam projetados com o **Designer de conjunto de dados**
 
 ## <a name="associated-datatable-schema"></a>Esquema DataTable associado
 
-Quando você cria um TableAdapter, usa a consulta inicial ou o procedimento armazenado para definir o esquema do <xref:System.Data.DataTable> associado do TableAdapter. Você executa essa consulta inicial ou procedimento armazenado chamando o método de `Fill` do TableAdapter (que preenche o <xref:System.Data.DataTable> associado do TableAdapter). As alterações feitas na consulta principal do TableAdapter são refletidas no esquema da tabela de dados associada. Por exemplo, remover uma coluna da consulta principal também remove a coluna da tabela de dados associada. Se qualquer consulta adicional no TableAdapter usar instruções SQL que retornam colunas que não estão na consulta principal, o designer tentará sincronizar as alterações de coluna entre a consulta principal e as consultas adicionais.
+Quando você cria um TableAdapter, usa a consulta inicial ou o procedimento armazenado para definir o esquema do <xref:System.Data.DataTable>associado do TableAdapter. Você executa essa consulta inicial ou procedimento armazenado chamando o método de `Fill` do TableAdapter (que preenche o <xref:System.Data.DataTable>associado do TableAdapter). As alterações feitas na consulta principal do TableAdapter são refletidas no esquema da tabela de dados associada. Por exemplo, remover uma coluna da consulta principal também remove a coluna da tabela de dados associada. Se qualquer consulta adicional no TableAdapter usar instruções SQL que retornam colunas que não estão na consulta principal, o designer tentará sincronizar as alterações de coluna entre a consulta principal e as consultas adicionais.
 
 ## <a name="tableadapter-update-commands"></a>Comandos de atualização do TableAdapter
 
-A funcionalidade de atualização de um TableAdapter depende da quantidade de informações disponíveis na consulta principal no **Assistente TableAdapter**. Por exemplo, os TableAdapters que são configurados para buscar valores de várias tabelas (usando um `JOIN`), valores escalares, exibições ou os resultados de funções de agregação não são criados inicialmente com a capacidade de enviar atualizações de volta para o banco de dados subjacente. No entanto, você pode configurar os comandos `INSERT`, `UPDATE` e `DELETE` manualmente na janela **Propriedades** .
+A funcionalidade de atualização de um TableAdapter depende da quantidade de informações disponíveis na consulta principal no **Assistente TableAdapter**. Por exemplo, os TableAdapters que são configurados para buscar valores de várias tabelas (usando um `JOIN`), valores escalares, exibições ou os resultados de funções de agregação não são criados inicialmente com a capacidade de enviar atualizações de volta para o banco de dados subjacente. No entanto, você pode configurar os comandos `INSERT`, `UPDATE`e `DELETE` manualmente na janela **Propriedades** .
 
 ## <a name="tableadapter-queries"></a>consultas TableAdapter
 
@@ -89,7 +89,7 @@ A classe TableAdapter não é um tipo .NET. Isso significa que você não pode p
 
 A seguir estão os métodos comumente usados e as propriedades de TableAdapters:
 
-|Membro|Descrição|
+|{1&gt;Membro&lt;1}|Descrição|
 |------------|-----------------|
 |`TableAdapter.Fill`|Popula a tabela de dados associada do TableAdapter com os resultados do comando `SELECT` do TableAdapter.|
 |`TableAdapter.Update`|Envia as alterações de volta ao banco de dados e retorna um inteiro que representa o número de linhas afetadas pela atualização. Para obter mais informações, consulte [atualizar dados usando um TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md).|
@@ -99,16 +99,16 @@ A seguir estão os métodos comumente usados e as propriedades de TableAdapters:
 
 ## <a name="tableadapter-update-method"></a>Método de atualização do TableAdapter
 
-Os TableAdapters usam comandos de dados para ler e gravar no banco de dado. Use a consulta `Fill` inicial (principal) do TableAdapter como a base para criar o esquema da tabela de dados associada, bem como os comandos `InsertCommand`, `UpdateCommand` e `DeleteCommand` associados ao método `TableAdapter.Update`. Chamar o método `Update` de um TableAdapter executa as instruções que foram criadas quando o TableAdapter foi originalmente configurado, não uma das consultas adicionais que você adicionou com o **Assistente de configuração de consulta do TableAdapter**.
+Os TableAdapters usam comandos de dados para ler e gravar no banco de dado. Use a consulta `Fill` inicial (principal) do TableAdapter como a base para criar o esquema da tabela de dados associada, bem como os comandos `InsertCommand`, `UpdateCommand`e `DeleteCommand` associados ao método `TableAdapter.Update`. Chamar o método `Update` de um TableAdapter executa as instruções que foram criadas quando o TableAdapter foi originalmente configurado, não uma das consultas adicionais que você adicionou com o **Assistente de configuração de consulta do TableAdapter**.
 
-Quando você usa um TableAdapter, ele executa efetivamente as mesmas operações com os comandos que você normalmente executaria. Por exemplo, quando você chama o método de `Fill` do adaptador, o adaptador executa o comando de dados em sua propriedade `SelectCommand` e usa um leitor de dados (por exemplo, <xref:System.Data.SqlClient.SqlDataReader>) para carregar o conjunto de resultados na tabela de dados. Da mesma forma, quando você chama o método de `Update` do adaptador, ele executa o comando apropriado (nas propriedades `UpdateCommand`, `InsertCommand` e `DeleteCommand`) para cada registro alterado na tabela de dados.
+Quando você usa um TableAdapter, ele executa efetivamente as mesmas operações com os comandos que você normalmente executaria. Por exemplo, quando você chama o método de `Fill` do adaptador, o adaptador executa o comando de dados em sua propriedade `SelectCommand` e usa um leitor de dados (por exemplo, <xref:System.Data.SqlClient.SqlDataReader>) para carregar o conjunto de resultados na tabela de dados. Da mesma forma, quando você chama o método de `Update` do adaptador, ele executa o comando apropriado (nas propriedades `UpdateCommand`, `InsertCommand`e `DeleteCommand`) para cada registro alterado na tabela de dados.
 
 > [!NOTE]
-> Se houver informações suficientes na consulta principal, os comandos `InsertCommand`, `UpdateCommand` e `DeleteCommand` serão criados por padrão quando o TableAdapter for gerado. Se a consulta principal do TableAdapter for mais do que uma única instrução `SELECT` de tabela, é possível que o designer não consiga gerar `InsertCommand`, `UpdateCommand` e `DeleteCommand`. Se esses comandos não forem gerados, você poderá receber um erro ao executar o método `TableAdapter.Update`.
+> Se houver informações suficientes na consulta principal, os comandos `InsertCommand`, `UpdateCommand`e `DeleteCommand` serão criados por padrão quando o TableAdapter for gerado. Se a consulta principal do TableAdapter for mais do que uma única instrução `SELECT` de tabela, é possível que o designer não consiga gerar `InsertCommand`, `UpdateCommand`e `DeleteCommand`. Se esses comandos não forem gerados, você poderá receber um erro ao executar o método `TableAdapter.Update`.
 
 ## <a name="tableadapter-generatedbdirectmethods"></a>GenerateDbDirectMethods do TableAdapter
 
-Além de `InsertCommand`, `UpdateCommand` e `DeleteCommand`, os TableAdapters são criados com métodos que você pode executar diretamente no banco de dados. Você pode chamar esses métodos (`TableAdapter.Insert`, `TableAdapter.Update` e `TableAdapter.Delete`) diretamente para manipular dados no banco de dado. Isso significa que você pode chamar esses métodos individuais do seu código em vez de chamar `TableAdapter.Update` para lidar com as inserções, atualizações e exclusões que estão pendentes para a tabela de dados associada.
+Além de `InsertCommand`, `UpdateCommand`e `DeleteCommand`, os TableAdapters são criados com métodos que você pode executar diretamente no banco de dados. Você pode chamar esses métodos (`TableAdapter.Insert`, `TableAdapter.Update`e `TableAdapter.Delete`) diretamente para manipular dados no banco de dado. Isso significa que você pode chamar esses métodos individuais do seu código em vez de chamar `TableAdapter.Update` para lidar com as inserções, atualizações e exclusões que estão pendentes para a tabela de dados associada.
 
 Se você não quiser criar esses métodos diretos, defina a propriedade **GenerateDBDirectMethods** do TableAdapter como `false` (na janela **Propriedades** ). Consultas adicionais que são adicionadas ao TableAdapter são consultas autônomas — elas não geram esses métodos.
 
@@ -126,7 +126,7 @@ A classe TableAdaptermanager não é um tipo .NET. Portanto, você não pode pro
 
 A seguir estão os métodos usados com frequência e as propriedades da classe `TableAdapterManager`:
 
-|Membro|Descrição|
+|{1&gt;Membro&lt;1}|Descrição|
 |------------|-----------------|
 |Método `UpdateAll`|Salva todos os dados de todas as tabelas de dados.|
 |Propriedade `BackUpDataSetBeforeUpdate`|Determina se deve ser criada uma cópia de backup do conjunto de um antes da execução do método `TableAdapterManager.UpdateAll`. Boolean.|
@@ -137,6 +137,6 @@ A seguir estão os métodos usados com frequência e as propriedades da classe `
 
 Quando você usa comandos de dados com uma propriedade CommandType definida como <xref:System.Data.CommandType.Text>, verifique cuidadosamente as informações enviadas de um cliente antes de passá-las para o banco de dados. Usuários maliciosos podem tentar enviar (injetar) instruções SQL modificadas ou adicionais para obter acesso não autorizado ou para danificar o banco de dados. Antes de transferir a entrada do usuário para um banco de dados, sempre verifique se as informações são válidas. Uma prática recomendada é sempre usar consultas parametrizadas ou procedimentos armazenados quando possível.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Ferramentas do conjunto de dados](../data-tools/dataset-tools-in-visual-studio.md)
