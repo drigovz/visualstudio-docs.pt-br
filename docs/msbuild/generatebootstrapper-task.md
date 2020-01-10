@@ -13,17 +13,17 @@ helpviewer_keywords:
 - MSBuild, GenerateBootstrapper task
 - GenerateBootstrapper task [MSBuild]
 ms.assetid: ca3ba2c6-d2ea-41f2-b7e3-0fc2b0730460
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f18b01a6db0068b44ad9c25037e544efa8df35a
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
-ms.translationtype: HT
+ms.openlocfilehash: 660f63f68435f4c4eba8d1c3dfb2438541da4841
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66746595"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589286"
 ---
 # <a name="generatebootstrapper-task"></a>Tarefa GenerateBootstrapper
 Fornece uma forma automatizada de detectar, baixar e instalar um aplicativo e seus pré-requisitos. Atua como um único instalador que integra os diferentes instaladores de todos os componentes que compõem um aplicativo.
@@ -92,11 +92,11 @@ Veja a seguir uma descrição dos parâmetros da tarefa `GenerateBootstrapper`.
 
    Especifica um local no qual o bootstrapper deverá procurar os pré-requisitos de instalação a serem instalados. Esse parâmetro pode ter os seguintes valores:
 
-  - `HomeSite`: Indica que o pré-requisito está sendo hospedado pelo fornecedor do componente.
+  - `HomeSite`: indica que o pré-requisito está sendo hospedado pelo fornecedor do componente.
 
-  - `Relative`: Indica que o pré-requisito está na mesma localização do aplicativo.
+  - `Relative`: indica que o pré-requisito está no mesmo local do aplicativo.
 
-  - `Absolute`: Indica que todos os componentes serão encontrados em uma URL centralizada. Esse valor deve ser usado em conjunto com o parâmetro de entrada `ComponentsUrl`.
+  - `Absolute`: indica que todos os componentes serão encontrados em uma URL centralizada. Esse valor deve ser usado em conjunto com o parâmetro de entrada `ComponentsUrl`.
 
     Se `ComponentsLocation` não for especificado, `HomeSite` será usado por padrão.
 
@@ -151,7 +151,7 @@ Veja a seguir uma descrição dos parâmetros da tarefa `GenerateBootstrapper`.
 ## <a name="remarks"></a>Comentários
 Além dos parâmetros listados acima, essa tarefa herda parâmetros da classe <xref:Microsoft.Build.Tasks.TaskExtension>, que herda da classe <xref:Microsoft.Build.Utilities.Task>. Para obter uma lista desses parâmetros adicionais e suas descrições, confira [Classe base TaskExtension](../msbuild/taskextension-base-class.md).
 
-## <a name="example"></a>Exemplo
+## <a name="example"></a>{1&gt;Exemplo&lt;1}
 O exemplo a seguir usa a tarefa `GenerateBootstrapper` para instalar um aplicativo que precisa ter o .NET Framework 2.0 instalado como pré-requisito.
 
 ```xml

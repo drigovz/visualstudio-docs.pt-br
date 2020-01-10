@@ -9,19 +9,19 @@ f1_keywords:
 - offline install [Visual Studio]
 - layout [Visual Studio]
 ms.assetid: f8625d5e-f6ea-4db0-83c0-619b77fab3cf
-author: TerryGLee
-ms.author: tglee
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: c8b59ce38657bab157b966a25e0cd27109510215
-ms.sourcegitcommit: 58000baf528da220fdf7a999d8c407a4e86c1278
+ms.openlocfilehash: fd47e464eec0fc9bdbd20c854432f5954f8fbcb2
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72789995"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591483"
 ---
 # <a name="create-an-offline-installation-of-visual-studio"></a>Criar uma instalação offline do Visual Studio
 
@@ -54,7 +54,7 @@ Por exemplo, você pode ter uma conexão com a Internet não confiável ou que t
 
 ::: moniker range="vs-2019"
 
-Depois de baixar o instalador da Web, selecione a opção **baixar tudo e instalar** no instalador do Visual Studio. Em seguida, continue com a instalação.
+Depois de baixar o instalador da Web, selecione a nova opção **Baixar tudo, depois instalar** do Instalador do Visual Studio. Em seguida, continue com a instalação.
 
    ![A opção "Baixar tudo, depois instalar"](media/vs-2019/download-all-then-install-from-installer.png)
 
@@ -79,9 +79,9 @@ Veja como.
 
 Para obter um bootstrapper para o Visual Studio 2017, consulte a página de download de [versões anteriores do Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/) para obter detalhes sobre como fazer isso.
 
-O executável da instalação &mdash;or ser mais específico, o arquivo bootstrapper &mdash;should corresponder ou ser semelhante a um dos seguintes.
+O executável da instalação&mdash;ou para ser mais específico, o arquivo bootstrapper&mdash;deve corresponder ou ser semelhante a um dos seguintes.
 
-| Edição | Filename |
+| Edição | Nome de arquivo |
 |-------------|-----------------------|
 |Comunidade Visual Studio | vs_community.exe |
 |Visual Studio Professional | vs_professional.exe |
@@ -202,8 +202,8 @@ Para obter mais exemplos de como usar [parâmetros de linha de comando](use-comm
 | pt-BR | Português - Brasil |
 | ru-RU | Russo |
 | tr-TR | Turco |
-| zh-CN | Chinês – Simplificado |
-| zh-TW | Chinês – Tradicional |
+| zh-CN | Chinês - Simplificado |
+| zh-TW | Chinês - Tradicional |
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

@@ -10,17 +10,17 @@ helpviewer_keywords:
 - TextTemplatingFilePreprocessor custom tool
 - text templates, TransformText() method
 - text templates, generating files at run time
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e1ee422ec549ced0995db22258edf9ef21540804
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 26897bee69f7c0e969cd42feb7604321294641fb
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72660305"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595365"
 ---
 # <a name="run-time-text-generation-with-t4-text-templates"></a>Geração de texto de tempo de execução com modelos de texto T4
 
@@ -53,9 +53,9 @@ Usar um modelo em seu aplicativo torna mais fácil ver a forma final da saída d
 
 ### <a name="to-create-a-run-time-text-template"></a>Para criar um modelo de texto de tempo de execução
 
-1. No Gerenciador de Soluções, no menu de atalho do seu projeto, escolha **adicionar**  > **novo item**.
+1. No Gerenciador de Soluções, no menu de atalho do seu projeto, escolha **adicionar** > **novo item**.
 
-2. Na caixa de diálogo **Adicionar novo item** , selecione **modelo de texto de tempo de execução**. (Em Visual Basic procure em **itens comuns**  > **geral**.)
+2. Na caixa de diálogo **Adicionar novo item** , selecione **modelo de texto de tempo de execução**. (Em Visual Basic procure em **itens comuns** > **geral**.)
 
 3. Digite um nome para o arquivo de modelo.
 
@@ -80,7 +80,7 @@ Uma boa maneira de criar um modelo é converter um exemplo existente da saída. 
 
 ### <a name="to-convert-an-existing-text-file-to-a-run-time-template"></a>Para converter um arquivo de texto existente em um modelo de tempo de execução
 
-1. Inclua o arquivo em seu projeto do Visual Studio. No Gerenciador de Soluções, no menu de atalho do projeto, escolha **adicionar**  > **Item existente**.
+1. Inclua o arquivo em seu projeto do Visual Studio. No Gerenciador de Soluções, no menu de atalho do projeto, escolha **adicionar** > **Item existente**.
 
 2. Defina a propriedade **ferramentas personalizadas** do arquivo como **TextTemplatingFilePreprocessor**. No Gerenciador de Soluções, no menu de atalho do arquivo, escolha **Propriedades**.
 

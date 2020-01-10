@@ -5,17 +5,17 @@ ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.Throw.UI
 ms.assetid: 5e97c947-be39-4a1f-af04-000e2e09528a
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fe6a530888c7c28c5c1556114db03a6cd7369fe6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 650082ab0e4f8576b7028b8011c88bf5d93b2afd
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649856"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593090"
 ---
 # <a name="throw-activity-designer"></a>Lance o designer de atividades
 
@@ -35,14 +35,14 @@ O designer de atividade de **throw** pode ser arrastado da **caixa de ferramenta
 
 A tabela a seguir mostra as propriedades de <xref:System.Activities.Statements.Throw> e descreve como elas são usadas no designer.
 
-|Nome da Propriedade|Necessária|Uso|
+|Nome da Propriedade|Obrigatório|Uso|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Especifica o nome amigável opcional de atividade de <xref:System.Activities.Statements.Throw> . O padrão é throw.|
 |<xref:System.Activities.Statements.Throw.Exception%2A>|verdadeiro|A exceção para lançar. Esta exceção deve derivar de <xref:System.Exception>. Para especificar a exceção, digite uma expressão do Visual Basic na grade de propriedade.|
 
 ## <a name="see-also"></a>Consulte também
 
-- [Coleção](../workflow-designer/collection-activity-designers.md)
+- [Coleta](../workflow-designer/collection-activity-designers.md)
 - [Relançar](../workflow-designer/rethrow-activity-designer.md)
 - [Designer de atividade Throw](../workflow-designer/throw-activity-designer.md)
 - [TryCatch](../workflow-designer/trycatch-activity-designer.md)
