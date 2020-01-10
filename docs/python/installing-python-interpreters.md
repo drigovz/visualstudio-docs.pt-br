@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b91d18fe5924abe12240f31295b4853c1e932333
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 13290aef7acfe599c7693af4be771c625e713596
+ms.sourcegitcommit: d04441e3c5f2eff3a63f7aca35ccf7ecac90fb44
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72984614"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "75735812"
 ---
 # <a name="install-python-interpreters"></a>Instalar interpretadores do Python
 
@@ -42,7 +42,7 @@ O Visual Studio mostra todos os ambientes conhecidos na janela [**Ambientes do P
 
 | Interpretador | Descrição |
 | --- | --- |
-| [CPython](https://www.python.org/) | O interpretador “nativo” e mais usado, disponível em versões de 32 e 64 bits (o recomendado é 32 bits). Inclui os últimos recursos de linguagem, a compatibilidade máxima com pacotes do Python, suporte de depuração completo e interoperabilidade com o [IPython](https://ipython.org/). Consulte também: [Devo usar o Python 2 ou 3?](https://wiki,python.org/moin/Python2orPython3). Observe que o Visual Studio 2015 e os anteriores não dão suporte ao Python 3.6 ou posteriores e podem gerar erros, como **Python versão 3.6 sem suporte**. Use o Python 3.5 ou anteriores. |
+| [CPython](https://www.python.org/) | O interpretador “nativo” e mais usado, disponível em versões de 32 e 64 bits (o recomendado é 32 bits). Inclui os últimos recursos de linguagem, a compatibilidade máxima com pacotes do Python, suporte de depuração completo e interoperabilidade com o [IPython](https://ipython.org/). Consulte também: [Devo usar o Python 2 ou 3?](https://wiki.python.org/moin/Python2orPython3). Observe que o Visual Studio 2015 e os anteriores não dão suporte ao Python 3.6 ou posteriores e podem gerar erros, como **Python versão 3.6 sem suporte**. Use o Python 3.5 ou anteriores. |
 | [IronPython](https://github.com/IronLanguages/ironpython2) | Uma implementação do .NET do Python, disponível em versões de 32 e 64 bits, que fornece interoperabilidade do C#/F#/Visual Basic, acesso às APIs do .NET, depuração padrão do Python (mas não a depuração de modo misto do C++) e a depuração mista do IronPython/C#. No entanto, o IronPython não dá suporte a ambientes virtuais. |
 | [Anaconda](https://www.continuum.io) | Uma plataforma aberta de ciência de dados do Python, além de incluir a última versão do CPython e a maioria dos pacotes difíceis de serem instalados. Recomendamos usá-la, caso você esteja indeciso sobre qual plataforma deverá usar. |
 | [PyPy](https://www.pypy.org/) | Uma implementação JIT de rastreamento de alto desempenho do Python que é boa para programas de execução longa e situações em que é possível identificar problemas de desempenho, mas em que não é possível encontrar outras resoluções. Funciona com o Visual Studio, mas com suporte limitado para recursos de depuração avançados. |
@@ -65,7 +65,7 @@ Se você mover um interpretador existente para um novo local usando o sistema de
 
 Esse processo garante que as entradas do Registro que identificam o local do interpretador, usado pelo Visual Studio, sejam atualizadas corretamente. O uso de um instalador também lida com outros efeitos colaterais que possam existir.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Gerenciar ambientes do Python](managing-python-environments-in-visual-studio.md)
 - [Selecionar um intérprete para um projeto](selecting-a-python-environment-for-a-project.md)
