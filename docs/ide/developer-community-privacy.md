@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 09f3e5fed93cac3a251e4b7cdcaa988e63ff8741
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 1e87f35778b8aec615410312c0eb7373d4e9969f
+ms.sourcegitcommit: 10d16e18c5f5e482c4c2856e6cacaad283463b65
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75596262"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75775883"
 ---
 # <a name="developer-community-data-privacy"></a>Privacidade de dados da Comunidade de Desenvolvedores
 
@@ -81,7 +81,7 @@ Quando a ação **Relatar um problema** é iniciada com o Visual Studio, nós co
   - Arquivo de despejo
 
 > [!NOTE]
-> Arquivos de log, capturas de tela e dados de gravação são enviados à Microsoft somente quando você fornece permissão enviando o relatório de problema com o qual eles são incluídos. Você pode ver quais arquivos estão incluídos na etapa ' Resumo ' da janela ' relatar um problema ' (consulte a captura de tela incluída nesta nota). Os logs coletados e os arquivos são armazenados na pasta% Temp% e são limpos regularmente e após cada carregamento. Se você não quiser incluir um log em seu relatório de problema, exclua o arquivo da pasta% Temp% antes de enviar o relatório.
+> Arquivos de log, capturas de tela e dados de gravação que você envia podem aumentar significativamente a capacidade da Microsoft de entender e responder ao seu problema.  Portanto, é recomendável incluí-los. Para proteger sua privacidade, todos os arquivos de log anexados, capturas de tela e dados de gravação são enviados somente à Microsoft quando você fornece permissão enviando o relatório de problema com o qual eles são incluídos. Você pode ver quais arquivos estão incluídos na etapa ' Resumo ' da janela ' relatar um problema ' antes de enviar o relatório. Você pode excluir arquivos de log do sistema do relatório desmarcando ' anexar logs do sistema ' na etapa ' Resumo '. Para referência, consulte a captura de tela a seguir. 
   > ![relatar um problema-Resumo dos logs coletados](media/report-a-problem-logs-collected.png)
 
 
