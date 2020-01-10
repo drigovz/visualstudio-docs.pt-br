@@ -3,17 +3,17 @@ title: Como criar um documento XML baseado em um esquema XSD
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 193b195f-e918-4c79-a1a1-8096a1433bde
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f423af7dc4fae7a116acbaf8497c5ee4268653e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3139df600654513912abeae64c1ef2980493574d
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72645969"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592796"
 ---
 # <a name="how-to-create-an-xml-document-based-on-an-xsd-schema"></a>Como: criar um documento XML com base em um esquema XSD
 
@@ -35,7 +35,7 @@ Esse recurso normalmente gera documentos XML válidos. No entanto, se o esquema 
 
 - Enumerações do tipo `xs:QName`.
 
-- Tipos `xs:ENTITY`, `xs:ENTITIES` e `xs:NOTATION`.
+- tipos `xs:ENTITY`, `xs:ENTITIES`e `xs:NOTATION`.
 
 Além disso, observe que o conteúdo de `xs:base64Binary` será gerado apenas se as enumerações ocorrerem no esquema para esse tipo.
 

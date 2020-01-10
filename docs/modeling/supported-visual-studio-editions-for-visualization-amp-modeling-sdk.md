@@ -1,21 +1,21 @@
 ---
-title: Edições do Visual Studio com suporte para o SDK de visualização e modelagem
+title: Suporte para edições do Visual Studio para visualização e o SDK de modelagem
 titleSuffix: ''
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language Tools, supported Visual Studio editions
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: efe452f059d7184e1f7c87fddd6bdc6c213ece8a
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 127b45ae6a0ab28d7f83ee41449d7846858ee4a9
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72983726"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591899"
 ---
 # <a name="supported-visual-studio-editions-for-visualization--modeling-sdk"></a>Edições do Visual Studio compatíveis com o SDK de Visualização e Modelagem
 
@@ -27,7 +27,7 @@ Para definir uma DSL, é necessário ter instalados os seguintes componentes:
 
 |||
 |-|-|
-|Visual Studio|[http://go.microsoft.com/fwlink/?LinkId=185579](https://visualstudio.microsoft.com/)|
+|{1&gt;Visual Studio&lt;1}|[http://go.microsoft.com/fwlink/?LinkId=185579](https://visualstudio.microsoft.com/)|
 |SDK do Visual Studio|[http://go.microsoft.com/fwlink/?LinkId=185580](/azure/devops/integrate/index?view=azure-devops&viewFallbackFrom=vsts)|
 |SDK de Visualização e Modelagem do Visual Studio|[http://go.microsoft.com/fwlink/?LinkID=186128](https://code.msdn.microsoft.com/Visualization-and-Modeling-313535db)|
 
@@ -35,13 +35,13 @@ Para definir uma DSL, é necessário ter instalados os seguintes componentes:
 
 ## <a name="deployment-editions"></a>Edições de Implantação
 
-[!INCLUDE[dsl](../modeling/includes/dsl_md.md)] oferece suporte às seguintes configurações para implantação das linguagens específicas do domínio que foram compiladas:
+o [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] dá suporte às seguintes configurações para implantar as linguagens específicas de domínio que você cria:
 
 - Visual Studio Enterprise
 
 - Visual Studio Professional
 
-- Pacote redistribuível do pacote redistribuível do shell do Visual Studio (modo integrado)
+- Pacote redistribuível do Visual Studio Shell (modo integrado) pacote redistribuível
 
 - Pacote redistribuível Visual Studio Shell (modo isolado) pacote redistribuível
 

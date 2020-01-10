@@ -10,17 +10,17 @@ helpviewer_keywords:
 - Error List window
 - errors [Visual Studio], Error List window
 ms.assetid: b7f6d45a-733b-4ad8-bc2f-737a37509e56
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d0921d89caa6428c45dc2522e78f58bde50f84be
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8c6d925f61714c524f97a57690870229b2340d21
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654439"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75569657"
 ---
 # <a name="error-list-window"></a>Janela Lista de Erros
 
@@ -66,7 +66,7 @@ Se um filtro estiver aplicado no momento para o resultado da pesquisa, o nome do
 
 A lista no lado direito da barra de ferramentas especifica se serão mostrados os erros do build (os erros resultantes de uma operação de build), do IntelliSense (erros detectados antes da execução de um build) ou ambos.
 
-## <a name="search"></a>Pesquisar
+## <a name="search"></a>Pesquisa
 
 Use a caixa de texto **Pesquisar Lista de Erros** no lado direito da barra de ferramentas **Lista de Erros** para encontrar erros específicos na lista de erros. É possível pesquisar em qualquer coluna visível na lista de erros e os resultados da pesquisa são sempre classificados de acordo com a coluna que tem a prioridade de classificação, em vez da consulta ou do filtro aplicado. Se você escolher a tecla **Esc** enquanto o foco estiver na **Lista de Erros**, será possível limpar o termo de pesquisa e os resultados da pesquisa filtrados. Você também pode clicar no **X** no lado direito da caixa de texto para desmarcá-la.
 
@@ -74,9 +74,9 @@ Use a caixa de texto **Pesquisar Lista de Erros** no lado direito da barra de fe
 
 É possível copiar a lista de erros e salvá-la em um arquivo. Selecione os erros que você deseja copiar, clique com o botão direito do mouse na seleção e, em seguida, no menu de contexto, selecione **Copiar**. Depois é possível colar os erros em um arquivo. Se você colar os erros em uma planilha do Excel, os campos serão exibidos como colunas diferentes.
 
-## <a name="ui-element-list"></a>Lista de elementos da interface de usuário
+## <a name="ui-element-list"></a>Lista de elementos da UI
 
-Severidade
+Severity
 
 Exibe os diferentes tipos da entrada **Lista de Erros** (**Erro**, **Mensagem**, **Aviso**, **Aviso [ativo]** , **Aviso [inativo]** ).
 
@@ -88,7 +88,7 @@ Descrição
 
 Exibe o texto da entrada.
 
-Projeto
+{1&gt;Projeto&lt;1}
 
 Exibe o nome do projeto atual.
 

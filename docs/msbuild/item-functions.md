@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - msbuild, Item functions
 ms.assetid: 5e6df3cc-2db8-4cbd-8fdd-3ffd03ac0876
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d01de837deb5141b4b0bdbb7bebcb50412826b1f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 65ca003375e54248852f5942bd2b5f62fe21a06c
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63006985"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75573788"
 ---
 # <a name="item-functions"></a>funções de item
 Começando com o MSBuild 4.0, o código em tarefas e destinos pode chamar funções de item para obter informações sobre os itens no projeto. Essas funções simplificam a obtenção de itens Distinct() e são mais rápidas do que executar loop nos itens.
@@ -51,7 +51,7 @@ O exemplo a seguir mostra como usar essas funções de item de cadeia de caracte
 ## <a name="intrinsic-item-functions"></a>Funções de item intrínsecas
 A tabela a seguir lista as funções intrínsecas disponíveis para itens.
 
-|Função|Exemplo|Descrição|
+|Função|{1&gt;Exemplo&lt;1}|Descrição|
 |--------------|-------------|-----------------|
 |`Count`|`@(MyItem->Count())`|Retorna a contagem dos itens.|
 |`DirectoryName`|`@(MyItem->DirectoryName())`|Retorna o equivalente de `Path.DirectoryName` para cada item.|
