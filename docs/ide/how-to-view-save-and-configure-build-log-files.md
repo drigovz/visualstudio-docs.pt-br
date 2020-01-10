@@ -1,22 +1,22 @@
 ---
-title: 'Como: exibir, salvar e configurar arquivos de log de build | Microsoft Docs'
+title: Como exibir, salvar e configurar arquivos de log de build |Microsoft Docs
 ms.date: 08/28/2019
 ms.technology: vs-ide-compile
 ms.topic: conceptual
 ms.assetid: 75d38b76-26d6-4f43-bbe7-cbacd7cc81e7
-author: ghogen
-ms.author: ghogen
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1fe1932930c869e3d4d3d74eb641da068e1cffec
-ms.sourcegitcommit: 3cda0d58c5cf1985122b8977b33a171c7359f324
+ms.openlocfilehash: 923e8bb50b1caa323c602334c1d9a28b072043bd
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/29/2019
-ms.locfileid: "70154808"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591314"
 ---
-# <a name="how-to-view-save-and-configure-build-log-files"></a>Como: Exibir, salvar e configurar arquivos de log de build
+# <a name="how-to-view-save-and-configure-build-log-files"></a>Como exibir, salvar e configurar arquivos de log de build
 
 Depois de compilar um projeto no Visual Studio IDE, é possível exibir informações sobre sse build na Janela de **Saída**. Usando essas informações, é possível, por exemplo, solucionar problemas de uma falha de build. 
 
@@ -52,7 +52,7 @@ Você também pode gerar logs executando o MSBuild diretamente na linha de coman
 
 3. Na lista **Detalhamento da saída de build do projeto no MSBuild**, escolha um dos seguintes valores e, em seguida, escolha o botão **OK**.
 
-    |Nível de detalhes|DESCRIÇÃO|
+    |Nível de detalhes|Descrição|
     | - |-----------------|
     |**Silencioso**|Exibe apenas um resumo do build.|
     |**Mínima**|Exibe um resumo do build e dos erros, avisos e mensagens categorizadas como altamente importantes.|
@@ -69,7 +69,7 @@ Você também pode gerar logs executando o MSBuild diretamente na linha de coman
 
 Logs binários são um recurso opcional para projetos do .NET que proporcionam uma experiência de navegação de log mais rica que pode facilitar a localização de informações em logs grandes. Para usar logs binários, instale as [Ferramentas do Sistema para Projetos](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.ProjectSystemTools). Saiba mais em [https://msbuildlog.com](https://msbuildlog.com) e [Log binário](https://github.com/microsoft/msbuild/blob/master/documentation/wiki/Binary-Log.md)
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Criar e limpar projetos e soluções no Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)
 - [Compilação e build](../ide/compiling-and-building-in-visual-studio.md)

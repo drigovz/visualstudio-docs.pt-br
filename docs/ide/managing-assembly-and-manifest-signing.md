@@ -9,17 +9,17 @@ helpviewer_keywords:
 - application manifests [Visual Studio]
 - assemblies [Visual Studio], signing
 ms.assetid: 6c1ef36b-25f7-4ad0-b29a-51801b7a5420
-author: mikejo5000
-ms.author: mikejo
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8cf721e9880ce7f0b7c3191f73f16366637f0704
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 4f13df00059523ca87e720a999c596e203b20e49
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748872"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593675"
 ---
 # <a name="manage-assembly-and-manifest-signing"></a>Gerenciar assinatura de assembly e de manifesto
 
@@ -58,7 +58,7 @@ Em geral, você não deve assinar executáveis. Um componente de nome forte não
 
 ## <a name="how-to-sign-an-assembly-in-visual-studio"></a>Como assinar um assembly no Visual Studio
 
-Para assinar um aplicativo ou um componente, use a guia **Assinatura** da janela de propriedades do projeto (clique com o botão direito do mouse no nó do projeto no **Gerenciador de Soluções** e selecione **Propriedades**). Selecione a guia **Assinatura** e, em seguida, marque a caixa de seleção **Assinar o assembly**.
+Assine um aplicativo ou um componente usando a guia **Assinatura** da janela de propriedades do projeto (clique com o botão direito do mouse no nó do projeto no **Gerenciador de Soluções** e selecione **Propriedades**). Selecione a guia **Assinatura** e, em seguida, marque a caixa de seleção **Assinar o assembly**.
 
 Especifique um arquivo de chave. Se você optar por criar um arquivo de chave, os novos arquivos de chave sempre serão criados no formato *.pfx*. É necessário um nome e uma senha para o novo arquivo.
 
@@ -71,7 +71,7 @@ Se você só tiver acesso a uma chave pública, use a assinatura com atraso para
 
 Para obter informações sobre como assinar manifestos, confira [Como assinar manifestos de aplicativo e de implantação](../ide/how-to-sign-application-and-deployment-manifests.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Assemblies de nome forte](/dotnet/framework/app-domains/strong-named-assemblies)
 - [Assemblies de nome forte (C++/CLI)](/cpp/dotnet/strong-name-assemblies-assembly-signing-cpp-cli)

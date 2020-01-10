@@ -11,17 +11,17 @@ helpviewer_keywords:
 - FindAppConfigFile task [MSBuild]
 - MSBuild, FindAppConfigFile task
 ms.assetid: e292de3e-7482-4426-83ce-d921061808bf
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0033bcb21922d6f7e0204b1555fa2c46f8d91d50
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: de2b36f1003515a47774eaa40fda390728940324
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62977559"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591145"
 ---
 # <a name="findappconfigfile-task"></a>Tarefa FindAppConfigFile
 Localiza o arquivo *app.config*, caso haja algum, nas listas fornecidas.
@@ -39,6 +39,6 @@ Localiza o arquivo *app.config*, caso haja algum, nas listas fornecidas.
 ## <a name="remarks"></a>Comentários
  Além de ter os parâmetros listados acima, essa tarefa herda parâmetros da classe <xref:Microsoft.Build.Tasks.TaskExtension>, que herda da classe <xref:Microsoft.Build.Utilities.Task>. Para obter uma lista desses parâmetros adicionais e suas descrições, confira [Classe base TaskExtension](../msbuild/taskextension-base-class.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 - [Tarefas](../msbuild/msbuild-tasks.md)
 - [Referência de tarefas](../msbuild/msbuild-task-reference.md)

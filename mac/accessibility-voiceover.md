@@ -2,21 +2,21 @@
 title: Usando o VoiceOver com Visual Studio para Mac
 description: Usando a navegação do macOS com o Visual Studio para Mac
 author: alanjclark
-ms.author: alcl
+ms.author: dominicn
 ms.date: 09/23/2019
 ms.assetid: 590C325D-AAD0-4889-B1DB-A1090BBFBE89
-ms.openlocfilehash: 0645d0f00445c70d8d6b768063b3e9be219a0a83
-ms.sourcegitcommit: 528178a304e66c0cb7ab98b493fe3c409f87493a
+ms.openlocfilehash: 8f5cfc4c05ed3911370782185475b23112207c62
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71274404"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74985071"
 ---
 # <a name="using-voiceover-with-visual-studio-for-mac"></a>Usando o VoiceOver com Visual Studio para Mac
 
 Os usuários que precisarem de um leitor de tela se beneficiarão do macOS VoiceOver. Visual Studio para Mac é acessível usando comandos comuns do VoiceOver.
 
-## <a name="how-to-enable-and-use-voiceover"></a>Como: Habilitar e usar o VoiceOver
+## <a name="how-to-enable-and-use-voiceover"></a>Como habilitar e usar o VoiceOver
 
 Para habilitar ou desabilitar o VoiceOver pressione  **&#8984;F5**
 
@@ -28,8 +28,8 @@ Aqui está uma lista de alguns comandos comuns do VoiceOver para Visual Studio p
 
 |Recurso|Descrição|Atalho|
 |-------|-----------|--------|
-|Navegue até|Navegar por todos os elementos da interface do usuário|**VO →**, **VO ←**|
-|Navegue até|Entrar ou sair dos elementos da interface do usuário|**VO ⇧ ↓**, **VO ⇧ ↑**|
+|Navegar|Navegar por todos os elementos da interface do usuário|**vo →**, **vo ←**|
+|Navegar|Entrar ou sair dos elementos da interface do usuário|**vo ⇧ ↓**, **vo ⇧ ↑**|
 |Consegue|Selecione ou interaja com o controle em foco|**VO ␣**|
 |Consegue|Interagir com a barra de menus Visual Studio para Mac|**VO M**|
 

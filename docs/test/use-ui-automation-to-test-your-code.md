@@ -1,5 +1,5 @@
 ---
-title: Testes de interface de usuário codificada
+title: Testes de IU codificados
 ms.date: 12/04/2018
 ms.topic: conceptual
 f1_keywords:
@@ -11,17 +11,17 @@ f1_keywords:
 helpviewer_keywords:
 - automated tests, testing UI interface
 - coded UI test
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5a6491a6b9ac9312befbf0c8c6c3fb0f293885ee
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f3bd667579d9ff0645e7dd2753278257a9796709
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659870"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585633"
 ---
 # <a name="use-coded-ui-test-to-test-your-code"></a>Use o teste de IU codificado para testar seu código
 
@@ -33,7 +33,7 @@ O **Construtor de Teste de IU Codificado** especializado e o editor facilitam a 
 
 [!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
-## <a name="requirements"></a>Requisitos
+## <a name="requirements"></a>Requisitos do
 
 - Visual Studio Enterprise
 - Componente de teste de IU codificado
@@ -429,7 +429,7 @@ myWinCheckBox.Checked = true;
 
      `SetProperty(myWinCheckBox.PropertyNames.Checked, true);`
 
-## <a name="debug"></a>Depurar
+## <a name="debug"></a>Depuração
 
 Você pode analisar testes de IU codificados usando logs de teste de IU codificado. Os logs de teste de IU codificado filtram e registram informações importantes sobre as execuções de teste de IU codificado. O formato dos logs permite depurar rapidamente os problemas. Para obter mais informações, confira [Analisar testes de IU codificados usando logs de teste de IU codificado](../test/analyzing-coded-ui-tests-using-coded-ui-test-logs.md).
 
@@ -451,7 +451,7 @@ Você pode analisar testes de IU codificados usando logs de teste de IU codifica
 
 Os testes de IU codificados costumam ser usados para automatizar testes manuais. Para obter mais informações sobre testes manuais, consulte [Run manual tests with Microsoft Test Manager](/azure/devops/test/mtm/run-manual-tests-with-microsoft-test-manager?view=vsts) (Executar testes manuais com o Microsoft Test Manager). Para obter mais informações sobre testes automatizados, confira [Ferramentas de teste no Visual Studio](../test/improve-code-quality.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Gravar e reproduzir testes manuais](/azure/devops/test/mtm/record-play-back-manual-tests?view=vsts)
 - [Xamarin.UITest](/appcenter/test-cloud/uitest/)

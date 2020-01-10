@@ -9,19 +9,19 @@ helpviewer_keywords:
 - select an installation location for Visual Studio files
 - move installation files to different drives
 - use the D drive
-author: TerryGLee
-ms.author: tglee
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 651295d94a8125e26caa96b71ab438c62841ac10
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 3ea0651ee1cfde14d5ef7b422095707d8f81cb2f
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974318"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590144"
 ---
 # <a name="select-the-installation-locations-in-visual-studio"></a>Selecionar os locais de instalação no Visual Studio
 
@@ -33,7 +33,7 @@ Reduza o volume de instalação do Visual Studio na unidade do sistema alterando
 
 ::: moniker range="vs-2017"
 
-**Novidades na versão 15.7**: Reduza o volume de instalação do Visual Studio na unidade do sistema alterando a localização de alguns dos arquivos. Especificamente, você pode usar uma localização diferente para o cache de download, para os componentes compartilhados, os SDKs e os arquivos de ferramentas.
+**Novidade na versão 15,7**: você pode reduzir a superfície de instalação do Visual Studio na unidade do sistema alterando o local de alguns de seus arquivos. Especificamente, você pode usar uma localização diferente para o cache de download, para os componentes compartilhados, os SDKs e os arquivos de ferramentas.
 
 ::: moniker-end
 
@@ -46,18 +46,18 @@ Pronto para começar? Veja como.
 
 1. Ao instalar o Visual Studio, escolha a guia **Locais de instalação**.
 
-   ![Visual Studio 2017 – Selecionar a localização de instalação](media/vs-installation-locations.png "Selecionar a localização de instalação.")
+   ![Visual Studio 2017 – selecione o local de instalação](media/vs-installation-locations.png "Selecione o local de instalação.")
 
 1. Na seção **IDE do Visual Studio**, aceite o padrão. O Visual Studio instala o produto principal e inclui arquivos específicos desta versão do Visual Studio.
 
-   ![Seção de IDE do Visual Studio da guia Localizações de Instalação](media/vs-installation-locations-ide.png "Aceitar o padrão para a seção de IDE do Visual Studio da guia Localização de Instalações.")
+   ![Seção IDE do Visual Studio da guia locais de instalação](media/vs-installation-locations-ide.png "Aceite o padrão para a seção IDE do Visual Studio da guia local de instalações.")
 
    > [!TIP]
    > Se a unidade do sistema é uma SSD (unidade de estado sólido), recomendamos que você aceite a localização padrão na unidade do sistema. Por quê? Ao desenvolver com o Visual Studio, você lê e grava em vários arquivos, aumentando a atividade de E/S do disco. É melhor escolher sua unidade mais rápida para lidar com a carga.
 
 1. Na seção **Cache de download**, decida se deseja manter o cache de download e, em seguida, decida em que local você deseja armazenar os arquivos.
 
-     ![Seção Cache de Download da guia Locais de Instalação](media/vs-installation-locations-cache.png "Escolher se deseja manter o cache de download após a instalação e, em seguida, especificar a unidade em que você deseja armazenar os arquivos.")
+     ![Seção de cache de download da guia locais de instalação](media/vs-installation-locations-cache.png "Escolha se deseja manter o cache de download após a instalação e especifique a unidade em que deseja armazenar os arquivos.")
 
     1. Marque ou desmarque **Manter o cache de download após a instalação**.
 
@@ -72,7 +72,7 @@ Pronto para começar? Veja como.
 
 1. Na seção **Componentes, SDKs e ferramentas compartilhados**, especifique a unidade na qual você deseja armazenar os arquivos compartilhados pelas instalações lado a lado do Visual Studio. Os SDKs e as ferramentas também são armazenados nesse diretório.
 
-   ![Seção de Componentes, Ferramentas e SDKs Compartilhados da guia Locais de Instalação](media/vs-installation-locations-shared.png "Especificar a localização em que você deseja armazenar SDKs, ferramentas e componentes compartilhados.")
+   ![Seção componentes, ferramentas e SDKs compartilhados da guia locais de instalação](media/vs-installation-locations-shared.png "Especifique o local onde você deseja armazenar componentes compartilhados, ferramentas e SDKs.")
 
 ::: moniker-end
 
@@ -80,7 +80,7 @@ Pronto para começar? Veja como.
 
 1. Ao instalar o Visual Studio, escolha a guia **Locais de instalação**.
 
-   ![Visual Studio 2019 – Selecionar a localização de instalação](media/vs-2019/vs-installer-installation-locations.png "Selecionar a localização de instalação.")
+   ![Visual Studio 2019 – selecione o local de instalação](media/vs-2019/vs-installer-installation-locations.png "Selecione o local de instalação.")
 
 1. Na seção **IDE do Visual Studio**, aceite o padrão. O Visual Studio instala o produto principal e inclui arquivos específicos desta versão do Visual Studio.
 
@@ -106,7 +106,7 @@ Pronto para começar? Veja como.
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 * [Instalar o Visual Studio](install-visual-studio.md)
 * [Atualizar o Visual Studio](update-visual-studio.md)

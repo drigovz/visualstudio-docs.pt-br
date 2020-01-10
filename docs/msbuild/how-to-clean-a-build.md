@@ -1,5 +1,5 @@
 ---
-title: 'Como: Limpar um build | Microsoft Docs'
+title: Como limpar um build | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,19 +8,19 @@ helpviewer_keywords:
 - directories [.NET Framework], for output items
 - output, removing items
 ms.assetid: 999ba473-b0c4-45c7-930a-63ea7a510509
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d737ecf51b6726bf46a525104c99f8ac61569964
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 8d183026ffdfce3ada7fc96c29c83570ee18c694
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62977291"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585213"
 ---
-# <a name="how-to-clean-a-build"></a>Como: Limpar um build
+# <a name="how-to-clean-a-build"></a>Como limpar um build
 Quando você limpa um build, todos os arquivos de saída e intermediários são excluídos, deixando apenas os arquivos de projeto e componente. Nos arquivos de projeto e de componente, novas instâncias dos arquivos de saída e intermediários podem ser criadas. A biblioteca de tarefas comuns fornecida com o [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] inclui uma tarefa [Exec](../msbuild/exec-task.md) que você pode usar para executar comandos do sistema. Para obter mais informações sobre a biblioteca de tarefas, confira [Referência de tarefas](../msbuild/msbuild-task-reference.md).
 
 ## <a name="create-a-directory-for-output-items"></a>Criar um diretório para itens de saída
@@ -99,7 +99,7 @@ Quando você limpa um build, todos os arquivos de saída e intermediários são 
 </Project>
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 - [Tarefa Exec](../msbuild/exec-task.md)
 - [Tarefa MakeDir](../msbuild/makedir-task.md)
 - [Tarefa RemoveDir](../msbuild/removedir-task.md)

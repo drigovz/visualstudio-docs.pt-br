@@ -8,19 +8,19 @@ helpviewer_keywords:
 - unit tests, generating
 - unit tests, running
 - unit tests, authoring
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-author: jillre
-ms.openlocfilehash: 317b014ae0ef684dfc5f7ff73247d6186846a860
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+author: mikejo5000
+ms.openlocfilehash: b1ec115dd960799a1242a0d60bd793d671facb18
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659653"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590703"
 ---
-# <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>Passo a passo: criar e executar testes de unidade para código gerenciado
+# <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>Passo a passo: Criar e executar testes de unidade para código gerenciado
 
 Este artigo orienta você pela criação, execução e personalização de uma série de testes de unidade usando a estrutura de teste de unidade da Microsoft para código gerenciado e o **Gerenciador de Testes** do Visual Studio. Inicie com um projeto C# que está em desenvolvimento, crie testes que exercitem seu código, execute os testes e examine os resultados. Em seguida, você altera o código do projeto e executa os testes novamente.
 
@@ -28,13 +28,13 @@ Este artigo orienta você pela criação, execução e personalização de uma s
 
 ::: moniker range="vs-2017"
 
-1. Abra o Visual Studio.
+1. {1&gt;Abra o Visual Studio.&lt;1}
 
-2. No menu **Arquivo**, selecione **Novo** > **Projeto**.
+2. No menu **arquivo** , selecione **novo** **projeto**de >.
 
    A caixa de diálogo **Novo Projeto** é exibida.
 
-3. Na categoria **Visual C#** > **.NET Core**, escolha o modelo de projeto **Aplicativo de Console (.NET Core)** .
+3. Na categoria **Visual C#**  > **.NET Core** , escolha o modelo de projeto **aplicativo de console (.NET Core)** .
 
 4. Dê ao projeto o nome **Bank** e clique em **OK**.
 
@@ -47,7 +47,7 @@ Este artigo orienta você pela criação, execução e personalização de uma s
 
 ::: moniker range=">=vs-2019"
 
-1. Abra o Visual Studio.
+1. {1&gt;Abra o Visual Studio.&lt;1}
 
 2. Na tela Iniciar, selecione **Criar um novo projeto**.
 
@@ -467,6 +467,6 @@ As melhorias no código de teste levaram a métodos de teste mais robustos e inf
 > [!TIP]
 > Este passo a passo usa a estrutura de teste de unidade do Microsoft para código gerenciado. O **Gerenciador de Testes** também pode executar testes em estruturas de teste de unidade de terceiros que têm adaptadores para o **Gerenciador de Testes**. Para saber mais, consulte [Instalar estruturas de teste de unidade de terceiros](../test/install-third-party-unit-test-frameworks.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 Para obter informações sobre como executar testes em uma linha de comando, confira [Opções de linha de comando de VSTest.Console.exe](vstest-console-options.md).

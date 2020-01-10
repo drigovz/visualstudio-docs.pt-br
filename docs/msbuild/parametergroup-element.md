@@ -11,17 +11,17 @@ helpviewer_keywords:
 - <ParameterGroup> element [MSBuild]
 - ParameterGroup element [MSBuild]
 ms.assetid: c3275e69-a427-4889-bc1d-51bff2c285fa
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d10b2e08b6e3f3c94c0a1f0cc1c24d239675c53
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 8d7e77e56196d23a5563c60d5b8251c8f26a00ff
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62999780"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596730"
 ---
 # <a name="parametergroup-element"></a>Elemento ParameterGroup
 Contém uma lista opcional de parâmetros que estarão presentes na tarefa que é gerada por um `UsingTask` `TaskFactory`. Para saber mais, confira [Elemento UsingTask (MSBuild)](../msbuild/usingtask-element-msbuild.md).
@@ -35,16 +35,16 @@ Contém uma lista opcional de parâmetros que estarão presentes na tarefa que �
 ```
 
 ## <a name="attributes-and-elements"></a>Atributos e elementos
- As seções a seguir descrevem atributos, elementos filho e elementos pai.
+ As seções a seguir descrevem os atributos, bem como os elementos filhos e pais.
 
-### <a name="attributes"></a>Atributos
- nenhuma.
+### <a name="attributes"></a>{1&gt;{2&gt;Atributos&lt;2}&lt;1}
+ Nenhuma.
 
-### <a name="child-elements"></a>Elementos filho
+### <a name="child-elements"></a>Child elements
 
 |Elemento|Descrição|
 |-------------|-----------------|
-|[Parâmetro](../msbuild/parameter-element.md)|Contém informações sobre um parâmetro específico de uma tarefa que é gerada por um `UsingTask` `TaskFactory`. O nome do elemento é o nome do parâmetro.|
+|[Parâmetro](../msbuild/parameter-element.md)|Contém informações sobre um parâmetro específico para uma tarefa que é gerada por um `UsingTask` `TaskFactory`. O nome do elemento é o nome do parâmetro.|
 
 ### <a name="parent-elements"></a>Elementos pai
 
@@ -68,7 +68,7 @@ Contém uma lista opcional de parâmetros que estarão presentes na tarefa que �
 </UsingTask>
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 - [Tarefas](../msbuild/msbuild-tasks.md)
 - [Referência de tarefas](../msbuild/msbuild-task-reference.md)
 - [Referência de esquema de arquivos de projeto](../msbuild/msbuild-project-file-schema-reference.md)

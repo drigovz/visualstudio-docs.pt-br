@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: 6ed003df875f7fdc75278210dc3010e93d280186
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: 77b26b672dc40b65823cdabb6e1a42549112de65
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911746"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75573307"
 ---
 # <a name="using-windows-powershell-scripts-to-publish-to-dev-and-test-environments"></a>Usando scripts do Windows PowerShell para publicar em ambientes de desenvolvimento e teste
 
@@ -22,7 +22,7 @@ Quando você cria um aplicativo Web no Visual Studio, pode gerar um script do Wi
 
 Usando esses scripts, você pode provisionar versões personalizadas (também conhecidas como ambientes de desenvolvimento e teste) do seu site para uso temporário. Por exemplo, você pode configurar uma versão específica do seu site em uma máquina virtual do Azure ou no slot de preparo em um site para executar um conjunto de testes, reproduzir um bug, testar uma correção de bug, avaliar uma alteração de proposta ou configurar um ambiente personalizado para uma demonstração ou apresentação. Depois de criar um script que publica seu projeto, você pode recriar ambientes idênticos ao executar novamente o script conforme necessário ou executar o script com seu próprio build do aplicativo Web para criar um ambiente personalizado de teste.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>{1&gt;{2&gt;Pré-requisitos&lt;2}&lt;1}
 
 * O Visual Studio 2015 ou posterior com a **Carga de trabalho do Azure** instalada, ou o Visual Studio 2013 e Azure SDK 2.3 ou posterior. Veja [Downloads do Visual Studio](https://visualstudio.microsoft.com/downloads). (Você não precisa do SDK do Azure para gerar scripts para projetos Web. Esse recurso é para projetos Web, e não para as funções Web nos serviços de nuvem).
 * Azure PowerShell 0.7.4 ou posterior. Consulte [Como instalar e configurar o PowerShell do Azure](/powershell/azure/overview).
@@ -152,9 +152,9 @@ Se você nunca executou um script do Windows PowerShell antes, deve primeiro def
 
 1. Crie o pacote de implantação na Web para seu projeto. Um pacote de implantação na Web é um arquivo compactado (arquivo .zip) que contêm arquivos que você deseja copiar em seu site ou máquina virtual. Você pode criar pacotes de implantação na Web no Visual Studio para qualquer aplicativo Web.
 
-   ![Criar pacote de implantação na Web](./media/vs-azure-tools-publishing-using-powershell-scripts/IC767885.png)
+   ![Criar pacote de implantação da Web](./media/vs-azure-tools-publishing-using-powershell-scripts/IC767885.png)
 
-   Para obter mais informações, consulte [como: criar um pacote de implantação da Web no Visual Studio](https://msdn.microsoft.com/library/dd465323.aspx). Você também pode automatizar a criação do pacote de Implantação da Web, conforme descrito em [Personalizando e estendendo os scripts de publicação](#customizing-and-extending-the-publish-scripts).
+   Consulte [Como criar um pacote de implantação na Web no Visual Studio](https://msdn.microsoft.com/library/dd465323.aspx). Você também pode automatizar a criação do pacote de Implantação da Web, conforme descrito em [Personalizando e estendendo os scripts de publicação](#customizing-and-extending-the-publish-scripts).
 
 1. No **Gerenciador de Soluções**, abra o menu de contexto do script e, em seguida, escolha **Abrir com o ISE do Windows PowerShell**.
 1. Se você estiver executando os scripts do Windows PowerShell neste computador pela primeira vez, abra uma janela de prompt de comando com privilégios de administrador e digite o seguinte comando:
@@ -250,7 +250,7 @@ Para automatizar a criação de seu projeto, adicione o código que chama o MSBu
         #Write a function to build and package your web application
     ```
 
-    Para criar seu aplicativo Web, use o MsBuild.exe. Para obter ajuda, consulte Referência de linha de comando do MSBuild em: [http://go.microsoft.com/fwlink/?LinkId=391339](../msbuild/msbuild-command-line-reference.md)
+    Para criar seu aplicativo Web, use o MsBuild.exe. Para obter ajuda, consulte [referência de linha de comando do MSBuild](../msbuild/msbuild-command-line-reference.md)
 
     ```powershell
     Write-VerboseWithTime 'Build-WebDeployPackage: Start'
@@ -347,5 +347,5 @@ Para obter ajuda para as funções que você pode usar no prompt de comando do W
 | Publish-WebApplication |Cria e implanta aplicativos Web, máquinas virtuais, bancos de dados SQL e contas de armazenamento para um projeto Web do Visual Studio. |
 | Test-WebApplication |Essa função não está implementada. Você pode adicionar comandos a essa função para testar o aplicativo. |
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
 Saiba mais sobre os scripts do PowerShell ao ler [Criando scripts com o Windows PowerShell](https://technet.microsoft.com/library/bb978526.aspx) e confira outros scripts do Azure PowerShell no [Script Center](https://azure.microsoft.com/documentation/scripts/).

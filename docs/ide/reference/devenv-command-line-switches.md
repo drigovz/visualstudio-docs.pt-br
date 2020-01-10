@@ -8,17 +8,17 @@ helpviewer_keywords:
 - command line [Visual Studio], switches
 - Devenv
 ms.assetid: e12bc6ed-74fd-4bea-8d7c-89b99c20bad8
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf7ebda1e661801995c17a81e658b4f638c2f8a1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b3ed82bd8ba3845541d7dce628f99fb78b62ab9f
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661643"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595703"
 ---
 # <a name="devenv-command-line-switches"></a>Opções de linha de comando do Devenv
 
@@ -92,7 +92,7 @@ As opções de linha de comando a seguir não exibem o IDE.
 |[/ResetSettings](resetsettings-devenv-exe.md)|Restaura as configurações padrão do Visual Studio. Opcionalmente, redefine as configurações para o arquivo `.vssettings` especificado.<br /><br /> `devenv /resetsettings mysettings.vssettings`|
 |[/Upgrade](upgrade-devenv-exe.md)|Atualiza o arquivo de solução especificado e todos os seus arquivos de projeto ou o arquivo de projeto especificado, para os formatos do Visual Studio atuais para esses arquivos.<br /><br /> `devenv mysln.sln /upgrade`|
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Caixa de diálogo Geral, Ambiente, Opções](general-environment-options-dialog-box.md)
 - [Opções de linha de comando do Devenv para desenvolvimento de VSPackage](../../extensibility/devenv-command-line-switches-for-vspackage-development.md)

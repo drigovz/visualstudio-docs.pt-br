@@ -7,17 +7,17 @@ helpviewer_keywords:
 - bidirectional language support
 - Arabic, creating applications
 ms.assetid: b56f9795-ed8d-4452-9d49-8ca0b0145d86
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4fa91a1f3342039821dc1e0a2ea89c8b0e25f224
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 57bccfccb77c5a80fd2630680564f88f08d7ca5b
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647364"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591990"
 ---
 # <a name="support-for-bidirectional-languages-in-visual-studio"></a>Suporte para idiomas bidirecionais no Visual Studio
 
@@ -86,6 +86,6 @@ Não há suporte para o sentido de leitura da direita para a esquerda nos seguin
 
 - O editor de código (e o editor de texto) não dão suporte ao sentido de leitura da direita para a esquerda. Insira o texto em um idioma bidirecional, mas com o sentido de leitura sempre sendo da esquerda para a direita.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Desenvolver aplicativos globalizados e localizados](globalizing-and-localizing-applications.md)

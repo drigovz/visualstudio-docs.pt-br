@@ -15,17 +15,17 @@ helpviewer_keywords:
 - XSD task (MSBuild (C++))
 - MSBuild (C++), XSD task
 ms.assetid: 15c99f5c-7124-4bbc-bc03-70c7bcce8893
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ec51406aec9aec8981e5517480e4cd07bc80ffb1
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 31c256e02901d4f7dd7de6f14e9f650626feac25
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748022"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75565780"
 ---
 # <a name="xsd-task"></a>tarefa XSD
 Encapsula a ferramenta de definição de esquema XML (*xsd.exe*), a qual gera arquivos de classe ou de esquema com base em uma origem.
@@ -86,5 +86,5 @@ Encapsula a ferramenta de definição de esquema XML (*xsd.exe*), a qual gera ar
 
      Especifica o diretório do log de rastreamento.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 - [Referência de tarefas](../msbuild/msbuild-task-reference.md)

@@ -13,17 +13,17 @@ helpviewer_keywords:
 - MSBuild, AspNetCompiler task
 - AspNetCompiler task [MSBuild]
 ms.assetid: f811c019-a67b-4d54-82e6-e29549496f6e
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 90b9111d8d8ae78e5b937942df32fb84c97355fa
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: a6535dbec7c09f0888d0fb29a2e6b801632da22f
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62945421"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593454"
 ---
 # <a name="aspnetcompiler-task"></a>Tarefa AspNetCompiler
 A tarefa `AspNetCompiler` encapsula *aspnet_compiler.exe*, um utilitário para pré-compilar aplicativos [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)].
@@ -68,6 +68,6 @@ O exemplo de código a seguir usa a tarefa `AspNetCompiler` para pré-compilar u
 </Project>
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 * [Tarefas](../msbuild/msbuild-tasks.md)
 * [Referência de tarefas](../msbuild/msbuild-task-reference.md)

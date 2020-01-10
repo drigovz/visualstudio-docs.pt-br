@@ -9,17 +9,17 @@ f1_keywords:
 helpviewer_keywords:
 - Project Designer, Security page
 - Security page in Project Designer
-author: mikejo5000
-ms.author: mikejo
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 29723f5e253a2ff6d4f6c35e8ad8d3e09e2393f1
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 1834713ad114ab8a86e314bbe052f4873b308956
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748654"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593571"
 ---
 # <a name="security-page-project-designer"></a>Página Segurança, Designer de Projeto
 
@@ -27,7 +27,7 @@ A página **Segurança** do **Designer de Projeto** é usada para definir config
 
 Para acessar a página **Segurança**, clique em um nó do projeto no **Gerenciador de Soluções** e, em seguida, no menu **Projeto**, clique em **Propriedades**. Quando o **Designer de Projeto** for exibido, clique na guia **Segurança**.
 
-## <a name="security-settings"></a>Configurações de segurança
+## <a name="security-settings"></a>Configurações de Segurança
 
  **Habilitar configurações de segurança do ClickOnce**
 
@@ -72,7 +72,7 @@ Abre o modelo de manifesto do aplicativo (app.manifest) para configurar as permi
 
 Abre o [Caixa de diálogo Configurações de Segurança Avançadas](../../ide/reference/advanced-security-settings-dialog-box.md), que é usada para definir configurações para depurar o aplicativo com permissões restritas. Essas configurações são verificadas durante a depuração, e exceções de permissão indicam que seu aplicativo pode precisar de mais permissões do que as que foram definidas em uma zona.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - <xref:System.Security.Permissions.WebBrowserPermission>
 - <xref:System.Security.Permissions.MediaPermission>

@@ -2,17 +2,17 @@
 title: Usar o Microsoft.VisualStudio.TestTools.UnitTesting em testes de unidade
 ms.date: 03/02/2018
 ms.topic: reference
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-author: jillre
-ms.openlocfilehash: c69950e478fc8a35d46257876a84a28129bf1baa
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+author: mikejo5000
+ms.openlocfilehash: e45df63f36947b5f6f0aad77bb8eebcab4aca731
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659761"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585555"
 ---
 # <a name="use-the-mstest-framework-in-unit-tests"></a>Usar a estrutura de MSTest em testes de unidades
 
@@ -133,6 +133,6 @@ Você pode gerar um teste de unidade para um método privado. Essa geração cri
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.PrivateType>
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - Documentação de referência do <xref:Microsoft.VisualStudio.TestTools.UnitTesting>

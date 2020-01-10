@@ -7,17 +7,17 @@ helpviewer_keywords:
 - template parameters [Visual Studio]
 - project templates, parameters
 - item templates, parameters
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 445a4fa7847ea5c9a5cb64da09cf54c763e86d16
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 582c87eee2586eab12f70e2d27341987e7cb7e2a
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647396"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585880"
 ---
-# <a name="template-parameters"></a>Parâmetros de modelo
+# <a name="template-parameters"></a>Parâmetros do Modelo
 
 Você poderá substituir os valores do modelo quando for criada uma instância dele. Para configurar essa funcionalidade, use *parâmetros de modelo*. Os parâmetros de modelo podem ser usados para substituir valores, como nomes de classes e namespaces, no modelo. O assistente de modelo que é executado em segundo plano quando um usuário adiciona um novo item ou projeto substitui esses parâmetros.
 
@@ -60,7 +60,7 @@ A tabela a seguir lista os parâmetros de modelo reservados que podem ser usados
 |safeitemname|O mesmo que `itemname`, mas com todos os caracteres desprotegidos e os espaços substituídos por caracteres de sublinhado.|
 |safeitemrootname|Mesmo que `safeitemname`.|
 |safeprojectname|O nome fornecido pelo usuário quando o projeto foi criado, mas com todos os caracteres desprotegidos e espaços removidos.|
-|time|A hora atual no formato DD/MM/AAAA 00:00:00.|
+|hora|A hora atual no formato DD/MM/AAAA 00:00:00.|
 |specifiedSolutionName|O nome da solução. Quando "criar diretório da solução" estiver marcado, `specifiedSolutionName` terá o nome da solução. Quando "criar diretório da solução" não estiver marcado, `specifiedSolutionName` estará em branco.|
 |userdomain|O domínio do usuário atual.|
 |username|O nome de usuário atual.|
@@ -117,7 +117,7 @@ No arquivo *.vstemplate* do modelo de projeto, inclua o atributo `ReplaceParamet
 </TemplateContent>
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Como substituir parâmetros em um modelo](how-to-substitute-parameters-in-a-template.md)
 - [Personalizar modelos](../ide/customizing-project-and-item-templates.md)

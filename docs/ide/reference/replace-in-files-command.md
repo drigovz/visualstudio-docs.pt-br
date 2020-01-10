@@ -9,17 +9,17 @@ helpviewer_keywords:
 - Replace In Files command
 - ReplaceInFiles command
 ms.assetid: f116066a-4f65-4f2c-94ef-12cbd8cfb598
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fccfe696da2d38ff03ffb2f9b91de481e924a514
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 96f7d7ae0ea5eaf0de1a6fa4357e2750cdd8c22e
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748661"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75565468"
 ---
 # <a name="replace-in-files-command"></a>Comando Substituir nos Arquivos
 Substitui texto em arquivos usando um subconjunto das opções disponíveis na guia **Substituir nos Arquivos** da janela **Localizar e Substituir**.
@@ -35,13 +35,13 @@ Edit.ReplaceinFiles findwhat replacewith [/all] [/case]
 ## <a name="arguments"></a>Arguments
 `findwhat`
 
-Necessário. O texto a ser correspondido.
+Necessária. O texto a ser correspondido.
 
 `replacewith`
 
-Necessário. O texto a ser substituído pelo texto correspondido.
+Necessária. O texto a ser substituído pelo texto correspondido.
 
-## <a name="switches"></a>Opções
+## <a name="switches"></a>Comutadores
 /all ou /a
 
 Opcional. Substitui todas as ocorrências do texto da pesquisa pelo texto de substituição.
@@ -105,7 +105,7 @@ Este exemplo pesquisa `btnCancel` e o substitui por `btnReset` em todos os arqui
 >Edit.ReplaceinFiles btnCancel btnReset /lookin:"c:/my visual studio projects" /ext:.cls /text2
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Localizando e substituindo texto](../../ide/finding-and-replacing-text.md)
 - [Substituir nos Arquivos](../../ide/replace-in-files.md)

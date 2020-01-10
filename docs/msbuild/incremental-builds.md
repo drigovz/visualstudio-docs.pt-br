@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - msbuild, incremental builds
 ms.assetid: 325e28c7-4838-4e3f-b672-4586adc7500c
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 820d8b4837e2b7ae3f93a742ca8abe5962cd1893
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: fb4cfc272b24bf014691b5d130f71f97e4849a31
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63007023"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75573814"
 ---
 # <a name="incremental-builds"></a>Builds incrementais
 
@@ -75,5 +75,5 @@ Por causa da inferência de saída, é necessário adicionar uma tarefa `CreateP
 
 Esse código cria a propriedade CompileRan e atribui a ela o valor `true`, mas apenas se o destino é executado. Se o destino for ignorado, CompileRan não será criado.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 - [Destinos](../msbuild/msbuild-targets.md)

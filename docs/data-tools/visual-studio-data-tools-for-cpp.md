@@ -4,18 +4,18 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
 - CPP
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
 - cplusplus
-ms.openlocfilehash: 33c91a7c21a04624d71692d12b7a7f15a16e1d67
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 2be19729b61831e6f15ff40b6b4e1d7b4b0bb541
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72639511"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586049"
 ---
 # <a name="visual-studio-data-tools-for-c"></a>Ferramentas de dados do Visual Studio para C++
 
@@ -41,7 +41,7 @@ Para aproveitar a funcionalidade personalizada no SQL Server 2005 e posterior, u
 
 4. Baixe o exemplo de SDK do Windows ODBC e descompacte-o em um novo local. Este exemplo mostra os comandos ODBC básicos que são usados para se conectar a um banco de dados e emitir consultas e comandos. Você pode saber mais sobre essas funções no [ODBC (Microsoft Open Database Connectivity)](/sql/odbc/microsoft-open-database-connectivity-odbc). Quando você carrega a solução pela primeira vez (ela está C++ na pasta), o Visual Studio oferecerá a atualização da solução para a versão atual do Visual Studio. Clique em **Sim**.
 
-5. Para usar o cliente nativo, você precisa do arquivo de *cabeçalho* e do arquivo *lib* . Esses arquivos contêm funções e definições específicas para SQL Server, além das funções ODBC definidas em SQL. h. No **Project**  > **Propriedades**  > **diretórios vc + +** , adicione o seguinte diretório de inclusão:
+5. Para usar o cliente nativo, você precisa do arquivo de *cabeçalho* e do arquivo *lib* . Esses arquivos contêm funções e definições específicas para SQL Server, além das funções ODBC definidas em SQL. h. No **Project** > **Propriedades** > **diretórios vc + +** , adicione o seguinte diretório de inclusão:
 
    **%ProgramFiles%\Microsoft SQL Server\110\SDK\Include**
 
@@ -58,16 +58,16 @@ Para aproveitar a funcionalidade personalizada no SQL Server 2005 e posterior, u
 
     Observe que o exemplo não usa realmente nenhuma funcionalidade de cliente nativo, portanto, as etapas anteriores não são necessárias para compilar e executar. Mas o projeto agora está configurado para você usar essa funcionalidade. Para obter mais informações, confira [Programação do SQL Server Native Client](/sql/relational-databases/native-client/sql-server-native-client).
 
-7. Especifique qual driver usar no subsistema ODBC. O exemplo passa o atributo de cadeia de conexão do DRIVER no como um argumento de linha de comando. No **projeto**  > **Propriedades**  > **depuração**, adicione este argumento de comando:
+7. Especifique qual driver usar no subsistema ODBC. O exemplo passa o atributo de cadeia de conexão do DRIVER no como um argumento de linha de comando. No **projeto** > **Propriedades** > **depuração**, adicione este argumento de comando:
 
    ```cpp
    DRIVER="SQL Server Native Client 11.0"
    ```
 
-8. Pressione **F5** para compilar e executar o aplicativo. Você deve ver uma caixa de diálogo do driver que solicita que você insira um banco de dados. Insira `(localdb)\MSSQLLocalDB` e marque **usar conexão confiável**. Pressione **OK**. Você deve ver um console com mensagens que indicam uma conexão bem-sucedida. Você também deve ver um prompt de comando onde é possível digitar uma instrução SQL. A tela a seguir mostra um exemplo de consulta e os resultados:
+8. Pressione **F5** para compilar e executar o aplicativo. Você deve ver uma caixa de diálogo do driver que solicita que você insira um banco de dados. Insira `(localdb)\MSSQLLocalDB`e marque **usar conexão confiável**. Pressione **OK**. Você deve ver um console com mensagens que indicam uma conexão bem-sucedida. Você também deve ver um prompt de comando onde é possível digitar uma instrução SQL. A tela a seguir mostra um exemplo de consulta e os resultados:
 
    ![Saída de consulta de exemplo ODBC](../data-tools/media/raddata-odbc-sample-query-output.png)
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Acessando dados no Visual Studio](../data-tools/accessing-data-in-visual-studio.md)

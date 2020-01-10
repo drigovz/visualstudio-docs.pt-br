@@ -4,15 +4,15 @@ ms.date: 03/14/2018
 ms.topic: quickstart
 helpviewer_keywords:
 - load testing, quickstart
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8d74072c506c4ce48ee93b759ba24aff23aa9419
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 4f186e8c10d894b98e789480046d43fc957edd8a
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72646679"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75566404"
 ---
 # <a name="quickstart-create-a-load-test-project"></a>Início rápido: criar um projeto de teste de carga
 
@@ -44,9 +44,9 @@ Nesta seção, criaremos um projeto de teste de carga em C#. Você também pode 
 
 ::: moniker range="vs-2017"
 
-1. Abra o Visual Studio.
+1. {1&gt;Abra o Visual Studio.&lt;1}
 
-2. Na barra de menus, escolha **Arquivo** > **Novo** > **Projeto**.
+2. Escolha **arquivo** > **novo** **projeto** de > na barra de menus.
 
    A caixa de diálogo **Novo Projeto** é aberta.
 
@@ -60,7 +60,7 @@ Nesta seção, criaremos um projeto de teste de carga em C#. Você também pode 
 
 ::: moniker range=">=vs-2019"
 
-1. Abra o Visual Studio.
+1. {1&gt;Abra o Visual Studio.&lt;1}
 
 2. Na tela Iniciar, selecione **Criar um novo projeto**.
 
@@ -86,7 +86,7 @@ Nesta seção, criaremos um projeto de teste de carga em C#. Você também pode 
 
    A caixa de diálogo **Adicionar testes** é aberta.
 
-1. Em **Testes disponíveis**, selecione **WebTest1** e clique na seta à direita para movê-lo para a caixa **Testes selecionados**. Selecione o botão **OK**.
+1. Em **Testes disponíveis**, selecione **WebTest1** e clique na seta à direita para movê-lo para a caixa **Testes selecionados**. Escolha o botão **OK**.
 
    ![Caixa de diálogo Adicionar testes](media/add-tests-dialog-box.png)
 
@@ -106,7 +106,7 @@ O teste de carga começará a ser executado. A janela **Resultados do Teste** mo
 
 ![Janela do analisador de teste de carga](media/load-test-analyzer.png)
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
 
 Agora que você criou um projeto de teste de carga simples, a próxima etapa é configurar cenários, conjuntos de contadores e configurações de execução.
 

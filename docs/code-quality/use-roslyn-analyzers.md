@@ -6,17 +6,17 @@ helpviewer_keywords:
 - code analysis, managed code
 - analyzers
 - Roslyn analyzers
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6cd4d5517dae889387ec632df57c90485bd366b0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c24164f31ca444d17035f145a1783c69dfb2585b
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649049"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587193"
 ---
 # <a name="use-code-analyzers"></a>Usar analisadores de código
 
@@ -28,7 +28,7 @@ Você pode fazer grande parte da personalização do diagnóstico do Analyzer do
 
 ![Nó de analisadores no Gerenciador de Soluções](media/analyzers-expanded-in-solution-explorer.png)
 
-Você pode exibir as propriedades de um diagnóstico, incluindo sua descrição e severidade padrão, na janela **Propriedades** . Para exibir as propriedades, clique com o botão direito do mouse na regra e selecione **Propriedades**, ou selecione a regra e pressione **ALT** +**Enter**.
+Você pode exibir as propriedades de um diagnóstico, incluindo sua descrição e severidade padrão, na janela **Propriedades** . Para exibir as propriedades, clique com o botão direito do mouse na regra e selecione **Propriedades**, ou selecione a regra e pressione **ALT**+**Enter**.
 
 ![Propriedades de diagnóstico no janela Propriedades](media/analyzer-diagnostic-properties.png)
 
@@ -62,11 +62,11 @@ A tabela a seguir mostra as diferentes opções de gravidade:
 
 | Gravidade (Gerenciador de Soluções) | Severidade (arquivo EditorConfig) | Comportamento de tempo de compilação | Comportamento do editor |
 |-|-|-|
-| Erro | `error` | As violações aparecem como *erros* na lista de erros e na saída da compilação da linha de comando e causam a falha das compilações.| O código incorreto é sublinhado com um ondulado vermelho e marcado por uma pequena caixa vermelha na barra de rolagem. |
+| Erro do | `error` | As violações aparecem como *erros* na lista de erros e na saída da compilação da linha de comando e causam a falha das compilações.| O código incorreto é sublinhado com um ondulado vermelho e marcado por uma pequena caixa vermelha na barra de rolagem. |
 | Aviso | `warning` | As violações aparecem como *avisos* no lista de erros e na saída da compilação da linha de comando, mas não causam a falha das compilações. | O código incorreto é sublinhado com um ondulado verde e marcado por uma pequena caixa verde na barra de rolagem. |
 | Info | `suggestion` | As violações aparecem como *mensagens* no lista de erros, e não em uma saída de compilação de linha de comando. | O código incorreto é sublinhado com um rabisco cinza e marcado por uma pequena caixa cinza na barra de rolagem. |
 | Hidden | `silent` | Não visível para o usuário. | Não visível para o usuário. No entanto, o diagnóstico é reportado para o mecanismo de diagnóstico do IDE. |
-| Nenhum | `none` | Suprimido completamente. | Suprimido completamente. |
+| {1&gt;Nenhum&lt;1} | `none` | Suprimido completamente. | Suprimido completamente. |
 | Padrão | `default` | Corresponde à severidade padrão da regra. Para determinar qual é o valor padrão de uma regra, procure na janela Propriedades. | Corresponde à severidade padrão da regra. |
 
 A captura de tela a seguir do editor de código mostra três violações diferentes com severidades diferentes. Observe a cor do Rabisco e o pequeno quadrado colorido na barra de rolagem à direita.
@@ -107,9 +107,9 @@ Definir a severidade de uma regra em um arquivo EditorConfig tem precedência so
 
 O Visual Studio fornece uma maneira conveniente de configurar a severidade de uma regra no menu de lâmpada de [ações rápidas](../ide/quick-actions.md) .
 
-1. Após a ocorrência de uma violação, focalize o rabisco da violação no editor e abra o menu de lâmpada. Ou coloque o cursor na linha e pressione **Ctrl** + **.** (ponto).
+1. Após a ocorrência de uma violação, focalize o rabisco da violação no editor e abra o menu de lâmpada. Ou coloque o cursor na linha e pressione **Ctrl**+ **.** (ponto).
 
-2. No menu de lâmpada, selecione **Configurar ou suprimir problemas** > **configurar \<rule ID > severidade**.
+2. No menu de lâmpada, selecione **Configurar ou suprimir problemas** > **Configurar \<ID da regra > severidade**.
 
    ![Configurar a severidade da regra no menu de lâmpada no Visual Studio](media/configure-rule-severity.png)
 
@@ -126,7 +126,7 @@ O Visual Studio fornece uma maneira conveniente de configurar a severidade de um
 
 ### <a name="set-rule-severity-from-solution-explorer"></a>Definir a severidade da regra de Gerenciador de Soluções
 
-1. Em **Gerenciador de soluções**, expanda **referências**  > **analisadores** (ou **dependências**  > **analisadores** para projetos do .NET Core).
+1. Em **Gerenciador de soluções**, expanda **referências** > **analisadores** (ou **dependências** > **analisadores** para projetos do .NET Core).
 
 1. Expanda o assembly que contém a regra para a qual você deseja definir a severidade.
 
@@ -138,9 +138,9 @@ O Visual Studio fornece uma maneira conveniente de configurar a severidade de um
 
 ![Arquivo de conjunto de regras no Gerenciador de Soluções](media/ruleset-in-solution-explorer.png)
 
-1. Abra o arquivo do conjunto de regras ativo clicando duas vezes nele em **Gerenciador de soluções**, selecionando **abrir conjunto de regras ativas** no menu do botão direito do mouse no nó **referências**  > **analisadores** ou selecionando **abrir** no **código** Página de propriedades de análise do projeto.
+1. Abra o arquivo do conjunto de regras ativo clicando duas vezes nele em **Gerenciador de soluções**, selecionando **abrir conjunto de regras ativas** no menu do botão direito do mouse no nó **referências** > **analisadores** ou selecionando **abrir** na página de propriedades de **análise de código** do projeto.
 
-   Se esta for a primeira vez que você está editando o conjunto de regras, o Visual Studio fará uma cópia do arquivo de conjunto de regras padrão, nomeá-lo *\<projectname >. RuleSet*e o adicionará ao seu projeto. Esse conjunto de regras personalizadas também se torna o conjunto de regras ativo para seu projeto.
+   Se esta for a primeira vez que você estiver editando o conjunto de regras, o Visual Studio fará uma cópia do arquivo de conjunto de regras padrão, nomeá-lo *\<projectname >. RuleSet*e o adicionará ao seu projeto. Esse conjunto de regras personalizadas também se torna o conjunto de regras ativo para seu projeto.
 
    > [!NOTE]
    > Os projetos .NET Core e .NET Standard não dão suporte aos comandos de menu para conjuntos de regras em **Gerenciador de soluções**, por exemplo, **abrir conjunto de regras ativas**. Para especificar um conjunto de regras não padrão para um projeto do .NET Core ou .NET Standard, [adicione manualmente a propriedade **CodeAnalysisRuleSet** ](using-rule-sets-to-group-code-analysis-rules.md#specify-a-rule-set-for-a-project) ao arquivo do projeto. Você ainda pode configurar as regras dentro do conjunto de regras na interface do usuário do editor de conjunto de regras do Visual Studio.
@@ -163,7 +163,7 @@ Há várias maneiras de suprimir violações de regra:
 
 - No menu **analisar**
 
-  Selecione **analisar**  > **Compilar e suprimir problemas ativos** na barra de menus para suprimir todas as violações atuais. Isso às vezes é chamado de "linha de base".
+  Selecione **analisar** > **Compilar e suprimir problemas ativos** na barra de menus para suprimir todas as violações atuais. Isso às vezes é chamado de "linha de base".
 
 ::: moniker-end
 
@@ -171,7 +171,7 @@ Há várias maneiras de suprimir violações de regra:
 
 - No menu **analisar**
 
-  Selecione **analisar**  > **executar análise de código e suprimir problemas ativos** na barra de menus para suprimir todas as violações atuais. Isso às vezes é chamado de "linha de base".
+  Selecione **analisar** > **executar análise de código e suprimir problemas ativos** na barra de menus para suprimir todas as violações atuais. Isso às vezes é chamado de "linha de base".
 
 ::: moniker-end
 
@@ -185,13 +185,13 @@ Há várias maneiras de suprimir violações de regra:
 
 - No **Editor de código**
 
-  Coloque o cursor na linha de código com a violação e pressione **Ctrl** +**period (.)** para abrir o menu **ações rápidas** . Selecione **suprimir CAXXXX**  > **na origem/no arquivo de supressão**.
+  Coloque o cursor na linha de código com a violação e pressione **Ctrl**+**period (.)** para abrir o menu **ações rápidas** . Selecione **suprimir CAXXXX** > **na origem/no arquivo de supressão**.
 
   ![Suprimir diagnóstico do menu de ações rápidas](media/suppress-diagnostic-from-editor.png)
 
 - Da **lista de erros**
 
-  Selecione as regras que você deseja suprimir e clique com o botão direito do mouse e selecione **suprimir**  > **na origem/no arquivo de supressão**.
+  Selecione as regras que você deseja suprimir e clique com o botão direito do mouse e selecione **suprimir** > **na origem/no arquivo de supressão**.
 
   - Se você suprimir **na origem**, a caixa de diálogo **Visualizar alterações** será aberta e mostrará uma visualização do C# [aviso de #pragma](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-pragma-warning) ou Visual Basic diretiva de [aviso de #Disable](/dotnet/visual-basic/language-reference/directives/directives) que é adicionada ao código-fonte.
 
@@ -241,7 +241,7 @@ Em um projeto do .NET Core, se você adicionar uma referência a um projeto que 
 <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="2.9.0" PrivateAssets="all" />
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Visão geral dos analisadores de código no Visual Studio](../code-quality/roslyn-analyzers-overview.md)
 - [Enviar um bug do analisador de código](https://github.com/dotnet/roslyn-analyzers/issues)

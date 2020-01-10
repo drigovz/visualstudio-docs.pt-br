@@ -6,15 +6,15 @@ helpviewer_keywords:
 - Load Test Editor
 - load tests, Load Test Editor
 ms.assetid: ba16ed02-137e-40bf-a4cb-45d87d922d37
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 65cfdde84e0a0e2bb1aa28e9d4b96e2505a93a57
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c61c13f6a9eca416a52221ba9da37be820dd4b89
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72665031"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593220"
 ---
 # <a name="edit-load-tests"></a>Editar testes de carga
 
@@ -24,7 +24,7 @@ Testes de carga executam testes de desempenho Web ou testes de unidade para simu
 
 Um teste de carga é definido por *cenários*, *conjuntos de contadores* e *configurações de execução*. A ilustração a seguir explica as diferenças entre [cenários](../test/edit-load-test-scenarios.md), [conjuntos de contadores](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md) e [configurações de execução](../test/load-test-run-settings-properties.md):
 
-![Arquitetura de teste de carga](../test/media/load_test_editor.png)
+![Carregar arquitetura de teste](../test/media/load_test_editor.png)
 
 ## <a name="software-requirements"></a>Requisitos de software
 
@@ -48,7 +48,7 @@ Configurações de execução são propriedades que influenciam a maneira como u
 
 Para saber mais, confira [Definir configurações de execução de teste de carga](../test/configure-load-test-run-settings.md) e [Propriedades de configurações de execução de teste de carga](../test/load-test-run-settings-properties.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
-- [Analisar resultados de teste de carga](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
+- [Analisar resultados do teste de carga](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
 - [Analisar violações de regra de limite](../test/analyze-threshold-rule-violations-in-load-tests.md)

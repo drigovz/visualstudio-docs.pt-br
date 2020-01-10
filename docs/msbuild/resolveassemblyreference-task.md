@@ -16,20 +16,20 @@ helpviewer_keywords:
 - ResolveAssemblyReference task [MSBuild]
 - MSBuild, ResolveAssemblyReference task
 ms.assetid: 4d56d848-b29b-4dff-86a2-0a96c9e4a170
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cc1ee144b10360b899fa04c3cd0782e4b4fdfcfe
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5dc130c4802aa65317edb7b9dc013c7943f3cc30
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62970816"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595209"
 ---
 # <a name="resolveassemblyreference-task"></a>Tarefa ResolveAssemblyReference
-Determina todos os assemblies que dependem dos assemblies especificados, incluindo o segundo e `n`enésimas dependências.
+Determina todos os assemblies que dependem dos assemblies especificados, incluindo enésimas dependências.
 
 ## <a name="parameters"></a>Parâmetros
  A tabela a seguir descreve os parâmetros da tarefa `ResolveAssemblyReference`.
@@ -65,12 +65,12 @@ Determina todos os assemblies que dependem dos assemblies especificados, incluin
 |`ResolvedFiles`|Parâmetro <xref:Microsoft.Build.Framework.ITaskItem>`[]` de saída opcional somente leitura.<br /><br /> Contém uma lista de todas as referências primárias resolvidas para caminhos completos.<br /><br /> Os itens nesse parâmetro podem, opcionalmente, ter os metadados de item a seguir:<br /><br /> Valor -   `CopyLocal`: `Boolean`. Indica se a referência será copiada no diretório de saída.<br />Valor -   `FusionName`: `String`. Especifica o nome para essa dependência.<br />Valor -   `ResolvedFrom`: `String`. Especifica o caminho de pesquisa literal do qual este arquivo foi resolvido.|
 |`SatelliteFiles`|Parâmetro <xref:Microsoft.Build.Framework.ITaskItem>`[]` de saída opcional somente leitura.<br /><br /> Especifica todos os arquivos satélites encontrados. Eles serão CopyLocal=true se a referência ou a dependência que causou a existência deste item for CopyLocal=true.<br /><br /> Os itens nesse parâmetro podem, opcionalmente, ter os metadados de item a seguir:<br /><br /> Valor -   `CopyLocal`: `Boolean`. Indica se a referência será copiada no diretório de saída. Esse valor é `true` se a referência ou a dependência que causou a existência deste item tiver um valor `CopyLocal` de `true`.<br />Valor -   `DestinationSubDirectory`: `String`. Especifica o diretório de destino relativo ao qual copiar este item.|
 |`ScatterFiles`|Parâmetro <xref:Microsoft.Build.Framework.ITaskItem>`[]` de saída opcional somente leitura.<br /><br /> Contém os arquivos de dispersão associados a um dos assemblies.<br /><br /> Os itens nesse parâmetro podem, opcionalmente, ter os metadados de item a seguir:<br /><br /> Valor -   `CopyLocal`: `Boolean`. Indica se a referência será copiada no diretório de saída.|
-|`SearchPaths`|Parâmetro `String[]` obrigatório.<br /><br /> Especifica os diretórios ou locais especiais que são pesquisados para localizar os arquivos no disco que representam os assemblies. A ordem na qual os caminhos de pesquisa são listados é importante. Para cada assembly, a lista de caminhos é pesquisada da esquerda para a direita. Quando um arquivo que representa o assembly for encontrado, a pesquisa será interrompida e a pesquisa do próximo assembly começará.<br /><br /> Esse parâmetro aceita uma lista delimitada por ponto-e-vírgula dos valores que podem ser caminhos de diretório ou valores literais especiais da lista abaixo:<br /><br /> -   `{HintPathFromItem}`: Especifica que a tarefa examinará os metadados `HintPath` do item de base.<br />-   `{CandidateAssemblyFiles}`: Especifica que a tarefa examinará os arquivos transmitidos por meio do parâmetro `CandidateAssemblyFiles`.<br />-   `{Registry:` \<AssemblyFoldersBase>, \<RuntimeVersion>, \<AssemblyFoldersSuffix>`}`: Especifica que a tarefa pesquisará em pastas adicionais especificadas no Registro. \<AssemblyFoldersBase>, \<RuntimeVersion> e \<AssemblyFoldersSuffix> devem ser substituídos por valores específicos para o local do Registro a ser pesquisado. A especificação padrão nos destinos comuns é {Registry:$(FrameworkRegistryBase), $(TargetFrameworkVersion), $(AssemblyFoldersSuffix), $(AssemblyFoldersExConditions)}.<br />-   `{AssemblyFolders}`: Especifica que a tarefa usará o esquema de localizar assemblies de Registro do Visual Studio.NET 2003.<br />-   `{GAC}`: Especifica a tarefa que pesquisará no GAC (Cache de Assembly Global).<br />-   `{RawFileName}`: Especifica que a tarefa considerará o valor `Include` do item como um nome de arquivo e caminho exato.|
+|`SearchPaths`|Parâmetro `String[]` obrigatório.<br /><br /> Especifica os diretórios ou locais especiais que são pesquisados para localizar os arquivos no disco que representam os assemblies. A ordem na qual os caminhos de pesquisa são listados é importante. Para cada assembly, a lista de caminhos é pesquisada da esquerda para a direita. Quando um arquivo que representa o assembly for encontrado, a pesquisa será interrompida e a pesquisa do próximo assembly começará.<br /><br /> Esse parâmetro aceita uma lista delimitada por ponto-e-vírgula dos valores que podem ser caminhos de diretório ou valores literais especiais da lista abaixo:<br /><br /> -   `{HintPathFromItem}`: especifica que a tarefa examinará os metadados `HintPath` do item de base.<br />-   `{CandidateAssemblyFiles}`: especifica que a tarefa examinará os arquivos transmitidos por meio do parâmetro `CandidateAssemblyFiles`.<br />-   `{Registry:` \<AssemblyFoldersBase >, \<RuntimeVersion >, \<AssemblyFoldersSuffix >`}`: Especifica que a tarefa será pesquisada em pastas adicionais especificadas no registro. \<AssemblyFoldersBase>, \<RuntimeVersion> e \<AssemblyFoldersSuffix> devem ser substituídos por valores específicos para o local do Registro a ser pesquisado. A especificação padrão nos destinos comuns é {Registry:$(FrameworkRegistryBase), $(TargetFrameworkVersion), $(AssemblyFoldersSuffix), $(AssemblyFoldersExConditions)}.<br />-   `{AssemblyFolders}`: especifica que a tarefa usará o esquema de localizar assemblies de Registro do Visual Studio.NET 2003.<br />-   `{GAC}`: especifica a tarefa que pesquisará no GAC (Cache de Assembly Global).<br />-   `{RawFileName}`: especifica que a tarefa considerará o valor `Include` do item como um nome de arquivo e caminho exato.|
 |`SerializationAssemblyFiles`|Parâmetro <xref:Microsoft.Build.Framework.ITaskItem>`[]` de saída opcional somente leitura.<br /><br /> Contém os assemblies de serialização XML encontrados. Esses itens serão marcados como CopyLocal=true se a referência ou a dependência que causou a existência deste item for CopyLocal=true.<br /><br /> O CopyLocal dos metadados `Boolean` indica se a referência fornecida deve ser copiada para o diretório de saída.|
 |`Silent`|Parâmetro `Boolean` opcional.<br /><br /> Se `true`, nenhuma mensagem será registrada. O valor padrão é `false`.|
 |`StateFile`|Parâmetro `String` opcional.<br /><br /> Especifica um nome de arquivo que indica onde salvar o estado de build intermediária para essa tarefa.|
-|`SuggestedRedirects`|Parâmetro <xref:Microsoft.Build.Framework.ITaskItem>`[]` de saída opcional somente leitura.<br /><br /> Contém um item para cada identidade de assembly distinto em conflito, independentemente do valor do parâmetro `AutoUnify`. Isso inclui cada cultura e PKT encontrados que não tinham uma entrada bindingRedirect adequada no arquivo de configuração de aplicativo.<br /><br /> Cada item contém, opcionalmente, as informações a seguir:<br /><br /> Atributo -   `Include`: Contém o nome completo da família do assembly com um valor de campo de versão de 0.0.0.0<br />Metadados do item -   `MaxVersion`: Contém o número máximo de versão.|
-|`TargetedRuntimeVersion`|Parâmetro `String` opcional.<br /><br /> Especifica a versão de tempo de execução para o destino, por exemplo, 2.0.57027 ou v2.0.57027.|
+|`SuggestedRedirects`|Parâmetro <xref:Microsoft.Build.Framework.ITaskItem>`[]` de saída opcional somente leitura.<br /><br /> Contém um item para cada identidade de assembly distinto em conflito, independentemente do valor do parâmetro `AutoUnify`. Isso inclui cada cultura e PKT encontrados que não tinham uma entrada bindingRedirect adequada no arquivo de configuração de aplicativo.<br /><br /> Cada item contém, opcionalmente, as informações a seguir:<br /><br /> Atributo -   `Include`: contém o nome completo da família do assembly com um valor de campo de versão de 0.0.0.0<br />Metadados de item -   `MaxVersion`: contém o número máximo de versão.|
+|`TargetedRuntimeVersion`|Parâmetro `String` opcional.<br /><br /> Especifica a versão de runtime para o destino, por exemplo, 2.0.57027 ou v2.0.57027.|
 |`TargetFrameworkDirectories`|Parâmetro `String[]` opcional.<br /><br /> Especifica o caminho do diretório da estrutura de destino. Este parâmetro é necessário para determinar o status de CopyLocal para os itens resultantes.<br /><br /> Se esse parâmetro não for especificado, nenhum item resultante terá um valor CopyLocal de `true`, a menos que tenham explicitamente um valor de metadados `Private` de `true` em seu item de origem.|
 |`TargetFrameworkMoniker`|Parâmetro `String` opcional.<br /><br /> O TargetFrameworkMoniker para monitorar, se houver. Isso é usado para registro em log.|
 |`TargetFrameworkMonikerDisplayName`|Parâmetro `String` opcional.<br /><br /> O nome de exibição do TargetFrameworkMoniker para monitorar, se houver. Isso é usado para registro em log.|
@@ -104,6 +104,6 @@ Determina todos os assemblies que dependem dos assemblies especificados, incluin
 ## <a name="remarks"></a>Comentários
  Além dos parâmetros listados acima, essa tarefa herda parâmetros da classe <xref:Microsoft.Build.Tasks.TaskExtension>, que herda da classe <xref:Microsoft.Build.Utilities.Task>. Para obter uma lista desses parâmetros adicionais e suas descrições, confira [Classe base TaskExtension](../msbuild/taskextension-base-class.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 - [Tarefas](../msbuild/msbuild-tasks.md)
 - [Referência de tarefas](../msbuild/msbuild-task-reference.md)

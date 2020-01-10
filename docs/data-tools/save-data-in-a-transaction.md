@@ -12,23 +12,23 @@ helpviewer_keywords:
 - Transactions namespace
 - saving data
 ms.assetid: 80260118-08bc-4b37-bfe5-9422ee7a1e4e
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 0b3262b6123a496cda7025e369c99193ea8b6fd2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c0efdda51a52b18697828e1772eb4a71435753e8
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72641106"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586231"
 ---
 # <a name="walkthrough-save-data-in-a-transaction"></a>Passo a passo: salvar dados em uma transação
 
 Este tutorial demonstra como salvar dados em uma transação usando o namespace <xref:System.Transactions>. Neste tutorial, você criará um aplicativo Windows Forms. Você usará o assistente de configuração de fonte de dados para criar um conjunto de dado para duas tabelas no banco de dados de exemplo Northwind. Você adicionará controles associados a dados a um Windows Form e modificará o código para o botão salvar do BindingNavigator para atualizar o banco de dados dentro de um TransactionScope.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>{1&gt;{2&gt;Pré-requisitos&lt;2}&lt;1}
 
 Este passo a passos usa SQL Server Express LocalDB e o banco de dados de exemplo Northwind.
 
@@ -50,7 +50,7 @@ Este passo a passos usa SQL Server Express LocalDB e o banco de dados de exemplo
 
 A primeira etapa é criar um **aplicativo Windows Forms**.
 
-1. No Visual Studio, no menu **arquivo** , selecione **novo** **projeto**de  > .
+1. No Visual Studio, no menu **Arquivo**, selecione **Novo** > **Projeto**.
 
 2. Expanda **o C# Visual** ou **Visual Basic** no painel esquerdo e, em seguida, selecione **área de trabalho do Windows**.
 
@@ -74,7 +74,7 @@ Esta etapa usa o **Assistente de configuração de fonte de dados** para criar u
 
     - Se uma conexão de dados com o banco de dados de exemplo Northwind estiver disponível na lista suspensa, selecione-o.
 
-         \- ou -
+         - ou -
 
     - Selecione **Nova Conexão** para inicializar a caixa de diálogo **Adicionar/Modificar Conexão** e criar uma conexão com o banco de dados Northwind.
 
@@ -96,7 +96,7 @@ Você pode criar controles de associação de dados arrastando itens da janela *
 
 2. Arraste o nó principal **Clientes** da janela **Fontes de Dados** para **Form1**.
 
-   Um controle <xref:System.Windows.Forms.DataGridView> e uma faixa de ferramentas (<xref:System.Windows.Forms.BindingNavigator>) para navegação em registros são exibidos no formulário. Um [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), `CustomersTableAdapter`, <xref:System.Windows.Forms.BindingSource> e <xref:System.Windows.Forms.BindingNavigator> aparecem na bandeja de componentes.
+   Um controle <xref:System.Windows.Forms.DataGridView> e uma faixa de ferramentas (<xref:System.Windows.Forms.BindingNavigator>) para navegação em registros são exibidos no formulário. Um [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), `CustomersTableAdapter`, <xref:System.Windows.Forms.BindingSource>e <xref:System.Windows.Forms.BindingNavigator> aparecem na bandeja de componentes.
 
 3. Arraste o nó **pedidos** relacionados (não o nó **pedidos** principais, mas o nó de tabela filho relacionado abaixo da coluna **fax** ) no formulário abaixo do **customersDataGridView**.
 
@@ -108,7 +108,7 @@ As transações usam o namespace <xref:System.Transactions>. Uma referência do 
 
 ### <a name="to-add-a-reference-to-the-systemtransactions-dll-file"></a>Para adicionar uma referência ao arquivo DLL System.Transactions
 
-1. No menu **projeto** , selecione **Adicionar referência**.
+1. No menu **Projeto**, selecione **Adicionar Referência**.
 
 2. Selecione **System. Transactions** (na guia **.net** ) e, em seguida, selecione **OK**.
 
@@ -169,7 +169,7 @@ A ordem para reconciliar as alterações aos dados relacionados é a seguinte:
 
 Pressione **F5** para executar o aplicativo.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Como salvar dados usando uma transação](../data-tools/save-data-by-using-a-transaction.md)
 - [Salvar dados de volta no banco de dados](../data-tools/save-data-back-to-the-database.md)

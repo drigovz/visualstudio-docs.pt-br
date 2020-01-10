@@ -7,12 +7,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5993d550d85cdc0bd1c9ce6b72553eda6fc280e5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f757489f26ae41319316fcfc9cdc957dbb7d94a2
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647073"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590651"
 ---
 # <a name="work-with-multiple-user-accounts"></a>Trabalhar com várias contas de usuário
 
@@ -125,7 +125,7 @@ Para entrar usando o fluxo de código do dispositivo:
 
 1. Volte para a página de gerenciamento de contas no Visual Studio e você verá a conta recém-adicionada listada em **Todas as Contas**. Escolha **Fechar**.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Entrar no Visual Studio](signing-in-to-visual-studio.md)
 - [Entrar no Visual Studio para Mac](/visualstudio/mac/signing-in)

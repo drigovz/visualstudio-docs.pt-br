@@ -11,17 +11,17 @@ helpviewer_keywords:
 - MSBuild, CreateVisualBasicManifestResourceName task
 - CreateVisualBasicManifestResourceName task [MSBuild]
 ms.assetid: 251c47b9-de32-414b-a138-bf45290af12e
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f0afa597a11207d4e4cb843356cf36d199b460f4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 636cd4a7d287f60235f3827837050efa1e15eb90
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62779318"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596912"
 ---
 # <a name="createvisualbasicmanifestresourcename-task"></a>Tarefa CreateVisualBasicManifestResourceName
 Cria um nome de manifesto de estilo [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] com base em um nome de arquivo *.resx* fornecido ou em outro recurso.
@@ -31,7 +31,7 @@ Cria um nome de manifesto de estilo [!INCLUDE[vbprvb](../code-quality/includes/v
 
 | Parâmetro | Descrição |
 | - | - |
-| `ManifestResourceNames` | Parâmetro de saída somente leitura <xref:Microsoft.Build.Framework.ITaskItem> `[]`.<br /><br /> Os nomes de manifesto resultantes. |
+| `ManifestResourceNames` | <xref:Microsoft.Build.Framework.ITaskItem> `[]` parâmetro somente leitura de saída.<br /><br /> Os nomes de manifesto resultantes. |
 | `ResourceFiles` | Parâmetro `String` obrigatório.<br /><br /> O nome do arquivo de recurso do qual criar o nome do manifesto [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]. |
 | `RootNamespace` | Parâmetro `String` opcional.<br /><br /> O namespace raiz do arquivo de recurso, geralmente obtido do arquivo de projeto. Pode ser `null`. |
 | `PrependCultureAsDirectory` | Parâmetro `Boolean` opcional.<br /><br /> Se `true`, o nome da cultura é adicionado como um nome de diretório antes do nome do recurso de manifesto. O valor padrão é `true`. |
@@ -42,6 +42,6 @@ Cria um nome de manifesto de estilo [!INCLUDE[vbprvb](../code-quality/includes/v
 
  Além dos parâmetros listados acima, essa tarefa herda parâmetros da classe <xref:Microsoft.Build.Tasks.TaskExtension>, que herda da classe <xref:Microsoft.Build.Utilities.Task>. Para obter uma lista desses parâmetros adicionais e suas descrições, confira [Classe base TaskExtension](../msbuild/taskextension-base-class.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 - [Tarefas](../msbuild/msbuild-tasks.md)
 - [Referência de tarefas](../msbuild/msbuild-task-reference.md)

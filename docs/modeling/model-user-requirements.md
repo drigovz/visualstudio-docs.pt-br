@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - requirements
 - stories
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 68aa46b3dc07813b73921b8acb5970289c30aecc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 0c09e45250ad95d50d5d2cd0ca2753a70bb95748
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658407"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590235"
 ---
 # <a name="model-user-requirements"></a>Requisitos de usuário do modelo
 
@@ -72,13 +72,13 @@ Observe que a escolha aqui é sobre como você define os requisitos e que isso �
 
 Os tópicos a seguir fornecem mais informações:
 
-|Para saber mais sobre|Ler|
+|Para saber mais|Ler|
 |-|-|
 |Como desenvolver código que siga as regras de negócio|[Modelar a arquitetura do aplicativo](../modeling/model-your-app-s-architecture.md)|
 
 ## <a name="QoSRequirements"></a>Descrevendo os requisitos de qualidade de serviço
 
-Há várias categorias de requisitos de qualidade de serviço. Elas incluem o seguinte:
+Há várias categorias de requisitos de qualidade de serviço. Eles incluem o seguinte:
 
 - Desempenho
 
@@ -96,7 +96,7 @@ Se um restaurante excluir um item de menu enquanto um cliente estiver solicitand
 
 Consulte [modelar a arquitetura do aplicativo](../modeling/model-your-app-s-architecture.md) para saber como desenvolver código que atenda aos requisitos de qualidade de serviço.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Usar modelos no processo de desenvolvimento](../modeling/use-models-in-your-development-process.md)
 - [Modelar a arquitetura do aplicativo](../modeling/model-your-app-s-architecture.md)

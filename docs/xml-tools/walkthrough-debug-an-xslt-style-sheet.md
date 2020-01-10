@@ -3,17 +3,17 @@ title: Depurar folhas de estilo XSLT
 ms.date: 03/05/2019
 ms.topic: conceptual
 ms.assetid: 3db9fa5a-f619-4cb6-86e7-64b364e58e5d
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c1f774757acc293091f19a783ed93f34647d494
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: cd5882cc606bf241a281940464ba028e77986807
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72604607"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592471"
 ---
 # <a name="walkthrough-debug-an-xslt-style-sheet"></a>Walkthrough: Depurar uma folha de estilos XSLT
 
@@ -26,7 +26,7 @@ Para se preparar para este passo a passos, primeiro copie os dois [arquivos de e
 
 ## <a name="start-debugging"></a>Iniciar a depuração
 
-1. No menu **arquivo** , escolha **abrir** **arquivo**de  > .
+1. No menu **arquivo** , escolha **abrir** **arquivo**de > .
 
 2. Localize o arquivo *below-Average. xsl* e escolha **abrir**.
 
@@ -44,11 +44,11 @@ Para se preparar para este passo a passos, primeiro copie os dois [arquivos de e
 
    - Clique em qualquer lugar na linha 12 e pressione **F9**.
 
-   - Clique com o botão direito do mouse na marca de início `xsl:if` e escolha **ponto de interrupção**  > **Inserir ponto de interrupção**.
+   - Clique com o botão direito do mouse na marca de início `xsl:if` e escolha **ponto de interrupção** > **Inserir ponto de interrupção**.
 
       ![Inserir ponto de interrupção no arquivo XSL no Visual Studio](media/insert-breakpoint.PNG)
 
-6. Na barra de menus, escolha **XML**  > **Iniciar Depuração XSLT** (ou pressione **ALT** +**F5**).
+6. Na barra de menus, escolha **XML** > **Iniciar Depuração XSLT** (ou pressione **ALT**+**F5**).
 
    O processo de depuração é iniciado.
 
@@ -56,11 +56,11 @@ Para se preparar para este passo a passos, primeiro copie os dois [arquivos de e
 
    As janelas **automáticos**, **locais**e **inspecionar 1** aparecem na parte inferior da janela do Visual Studio. A janela **locais** exibe todas as variáveis locais e seus valores atuais. Isso inclui variáveis definidos na folha de estilos e também variáveis que o depurador usa para controlar os nós que estão atualmente no contexto.
 
-## <a name="watch-window"></a>Janela Inspecionar
+## <a name="watch-window"></a>Janela de inspeção
 
 Adicionaremos duas variáveis à janela **Watch 1** para que possamos examinar seus valores à medida que o arquivo de entrada for processado. (Você também pode usar a janela **locais** para examinar valores se as variáveis que você deseja observar já estiverem lá.)
 
-1. No menu **depurar** , escolha **Windows**  > **assistir**  > **Watch 1**.
+1. No menu **depurar** , escolha **Windows** > **assistir** > **Watch 1**.
 
    A janela **Watch 1** torna-se visível.
 
@@ -70,7 +70,7 @@ Adicionaremos duas variáveis à janela **Watch 1** para que possamos examinar s
 
 3. Na próxima linha, digite `self::node()` no campo **nome** e pressione **Enter**.
 
-   `self::node()` é uma expressão XPath que avalia ao nó atual de contexto. O valor da expressão XPath de `self::node()` é o primeiro nó de livro. Isso é alterado como nós progredimos com a transformação.
+   `self::node()` é uma expressão XPath que é avaliada como o nó de contexto atual. O valor da expressão XPath de `self::node()` é o primeiro nó de livro. Isso é alterado como nós progredimos com a transformação.
 
 4. Expanda o nó `self::node()` e, em seguida, expanda o valor do nó que é `price`.
 
@@ -100,7 +100,7 @@ Adicionaremos duas variáveis à janela **Watch 1** para que possamos examinar s
 
 Os seguintes dois arquivos são usados por passo a passo.
 
-### <a name="below-averagexsl"></a>below-Average. xsl
+### <a name="below-averagexsl"></a>below-average.xsl
 
 ```xml
 <?xml version='1.0'?>
@@ -155,6 +155,6 @@ Os seguintes dois arquivos são usados por passo a passo.
 </bookstore>
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Depuração de XSLT](../xml-tools/debugging-xslt.md)

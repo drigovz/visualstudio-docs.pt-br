@@ -11,17 +11,17 @@ helpviewer_keywords:
 - associations, types
 - association lines
 ms.assetid: adccb9c8-2f8a-4086-9fa9-f70f99fb6e00
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 74fdc2ce798380aace3a2bce714fd5627799b564
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 61b598505ad465ec9086102b9e16e96cb7aa8275
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72631786"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590378"
 ---
 # <a name="how-to-create-associations-between-types-in-class-designer"></a>Como criar associações entre tipos no Designer de Classe
 
@@ -54,6 +54,6 @@ Ou siga estas etapas:
 
    O nome é atualizado na janela **Detalhes da Classe**, na linha de associação, na janela **Propriedades** e no código.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Como alternar entre notação de membro e notação de associação](how-to-change-between-member-notation-and-association-notation.md)

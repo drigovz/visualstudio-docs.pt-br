@@ -2,19 +2,19 @@
 title: Atalhos de teclado padrão
 description: Este artigo lista os atalhos de teclado padrão no Visual Studio para Mac
 ms.date: 03/14/2019
-author: asb3993
-ms.author: amburns
+author: heiligerdankgesang
+ms.author: dominicn
 ms.assetid: 48E06A61-7294-4EC8-A09D-1763C32AD910
-ms.openlocfilehash: b569887005d22a4eab7289c4ab940c9d9539d040
-ms.sourcegitcommit: 528178a304e66c0cb7ab98b493fe3c409f87493a
+ms.openlocfilehash: af7fa16100f31a6c4042e40bf8f270be9a78d2ec
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71273325"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74984569"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio-for-mac"></a>Atalhos de teclado padrão no Visual Studio para Mac
 
-Confira mais informações sobre acessibilidade de teclado em [Como usar a navegação por teclado](~/accessibility-keyboard.md).
+Para obter informações sobre acessibilidade de teclado, consulte [como usar a navegação por teclado](~/accessibility-keyboard.md).
 
 Você pode acessar uma variedade de comandos no Visual Studio para Mac usando o atalho de teclado apropriado. Este documento lista os atalhos padrão para o esquema de associação de chave **Visual Studio para Mac** . Confira mais informações sobre como alterar o esquema de associação de teclas em [Personalizar o IDE](~/customizing-the-ide.md#key-bindings). Também é possível personalizar os atalhos para um comando usando o item de menu **Visual Studio para Mac** > **Preferências** e selecionando **Ambiente** > **Associações de teclas** na janela **Preferências**.
 
@@ -32,20 +32,20 @@ Você pode acessar uma variedade de comandos no Visual Studio para Mac usando o 
 |Erro anterior|**⌥⇧⇞**|
 |Problema anterior no arquivo|**⌥⇞**|
 
-## <a name="debug"></a>Depurar
+## <a name="debug"></a>Depuração
 
 |Comandos|Atalhos de teclado|
 |-|-|
 |Habilitar ou desabilitar ponto de interrupção|**⌥⌘/** , **⌘F9**|
 |Pausar|**⌥⌘P**, **⌥⌘L5**|
-|Remover todos os pontos de interrupção|**⇧⌘F9**|
-|Executar até o cursor|**⌘F10**|
+|Remover Todos os Pontos de Interrupção|**⇧⌘F9**|
+|Executar Até o Cursor|**⌘F10**|
 |Definir próxima instrução|**⇧⌘F10**|
 |Mostrar Próxima Instrução|**⌥\***|
 |Entrar em|**⇧⌘I**, **⌘F11**|
-|Depuração Circular|**⇧⌘U**, **⇧⌘F11**|
-|Depuração Parcial|**⇧⌘O**, **F10**|
-|Ativar/desativar pontos de interrupção|**⌘\\** , **F9**|
+|Sair|**⇧⌘U**, **⇧⌘F11**|
+|Contornar|**⇧⌘O**, **F10**|
+|Alternar Ponto de Interrupção|**⌘\\** , **F9**|
 |Exibir pontos de interrupção|**⌥⌘B**|
 
 ## <a name="designer"></a>Designer
@@ -54,12 +54,12 @@ Você pode acessar uma variedade de comandos no Visual Studio para Mac usando o 
 |-|-|
 |Alternar entre arquivos relacionados|**⌃⌘↑**|
 
-## <a name="edit"></a>Editar
+## <a name="edit"></a>Edit
 
 |Comandos|Atalhos de teclado|
 |-|-|
 |Modo de edição de restrição|**⌘E**|
-|Copiar|**⌘C**|
+|Cópia|**⌘C**|
 |Recortar|**⌘X**|
 |Excluir|**⌘⌫**|
 |Formatar Documento|**⌃I**|
@@ -83,27 +83,27 @@ Você pode acessar uma variedade de comandos no Visual Studio para Mac usando o 
 |Comandos|Atalhos de teclado|
 |-|-|
 |Limpar F# Interativo|**⌃⌥C**|
-|F# Interativo|**⌃⌥F**|
+|{1&gt;F# Interativo&lt;1}|**⌃⌥F**|
 |Reiniciar F# Interativo|**⌃⌥R**|
 |Enviar linha para F# Interativo|**⌃⌥L**|
 |Enviar referências para F# Interativo|**⌃⌥P**|
 |Enviar seleção para F# Interativo|**⌃⏎**|
 
-## <a name="file"></a>Arquivo
+## <a name="file"></a>File
 
 |Comandos|Atalhos de teclado|
 |-|-|
-|Fechar tudo|**⇧⌘W**|
+|Fechar Tudo|**⇧⌘W**|
 |Fechar arquivo|**⌘W**|
 |Fechar workspace|**⌥⌘W**|
 |Novo arquivo|**⌘N**|
 |Nova solução|**⇧⌘N**|
-|Abrir|**⌘O**|
+|Open|**⌘O**|
 |Imprimir|**⌘P**|
 |Encerrar|**⌘Q**|
 |Reverter|**⌘U**|
 |Salvar|**⌘S**|
-|Salvar Tudo|**⇧⌘S**|
+|Salvar tudo|**⇧⌘S**|
 
 ## <a name="help"></a>Ajuda
 
@@ -119,19 +119,19 @@ Você pode acessar uma variedade de comandos no Visual Studio para Mac usando o 
 |Implementar mensagens do Unity|**⇧⌘M**|
 |Inspecionar|**⌥⌘I**|
 
-## <a name="project"></a>Projeto
+## <a name="project"></a>Projeto do
 
 |Comandos|Atalhos de teclado|
 |-|-|
 |Adicionar arquivos|**⌥⌘A**|
-|Build|**⌘K**, **⇧F6**|
+|{1&gt;Compilação&lt;1}|**⌘K**, **⇧F6**|
 |Compilar tudo|**⌘B**, **F6**|
 |Limpar|**⇧⌘K**|
-|Recompilar|**⌃⌘K**|
+|Rebuild|**⌃⌘K**|
 |Recompilar tudo|**⌃⌘B**|
 |Iniciar a depuração|**⌘⏎**, **F5**|
 |Iniciar sem depuração|**⌥⌘⏎**, **⌃F5**|
-|Stop|**⇧⌘⏎**, **⇧F5**|
+|Parar|**⇧⌘⏎**, **⇧F5**|
 
 ## <a name="refactoring"></a>Refatoração
 
@@ -144,21 +144,21 @@ Você pode acessar uma variedade de comandos no Visual Studio para Mac usando o 
 
 |Comandos|Atalhos de teclado|
 |-|-|
-|Comando|**⇧⌘P**|
+|{1&gt;Comando&lt;1}|**⇧⌘P**|
 |Localizar em Arquivos|**⇧⌘F**|
-|Localizar próximo|**⌘G**, **F3**|
+|Localizar Próximo|**⌘G**, **F3**|
 |Localizar próxima seleção igual|**⌘E**, **⌘F3**|
-|Localizar anterior|**⇧⌘G**, **⇧F3**|
+|Localizar Anterior|**⇧⌘G**, **⇧F3**|
 |Localizar seleção igual anterior|**⇧⌘F3**|
 |Localizar|**⌘F**|
 |Ir para arquivo|**⇧⌘D**|
 |Ir para linha|**⌘L**|
 |Ir para tipo|**⇧⌘T**|
 |Navegar para|**⌘.**|
-|Substituir nos Arquivos|**⌥⇧⌘F**|
-|Substitua|**⌥⌘F**|
+|Substituir em Arquivos|**⌥⇧⌘F**|
+|{1&gt;Substituir&lt;1}|**⌥⌘F**|
 
-## <a name="text-editor"></a>Editor de Texto
+## <a name="text-editor"></a>{1&gt;Editor de Texto&lt;1}
 
 |Comandos|Atalhos de teclado|
 |-|-|
@@ -215,10 +215,10 @@ Você pode acessar uma variedade de comandos no Visual Studio para Mac usando o 
 |-|-|
 |Centralizar e focalizar documento|**⌃L**|
 |Focalizar documento|**F7**|
-|Tela inteira|**⌃⌘F**|
+|Tela Inteira|**⌃⌘F**|
 |Mover para o próximo notebook|**⌥⌘→**|
 |Mover para o notebook anterior|**⌥⌘←**|
-|Voltar|**⌃⌘←**|
+|Navegação Regressiva|**⌃⌘←**|
 |Avançar navegação|**⌃⌘→**|
 |Tamanho normal|**⌘0**|
 |Uma coluna de editor|**⌥⌘1**|

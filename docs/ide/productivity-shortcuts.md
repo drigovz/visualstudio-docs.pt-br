@@ -3,17 +3,17 @@ title: Atalhos do teclado e do mouse
 description: Este artigo contém dicas para atalhos de teclado e mouse no Visual Studio que podem ajudar você a ser mais produtivo.
 ms.date: 11/02/2018
 ms.topic: reference
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7cbe2ddd87f867768c6fd7c041f6b88fbe88c44f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 71116fbc05eade8ffb89c38a922106f375b86021
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666742"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585724"
 ---
 # <a name="shortcut-tips-for-visual-studio"></a>Dicas de atalho para o Visual Studio
 
@@ -64,7 +64,7 @@ Para obter uma lista completa de atalhos de comando, confira [Atalhos de teclado
 |Localizar em Arquivos|**Ctrl**+**Shift**+**F**|
 |Substituir nos Arquivos|**Ctrl**+**Shift**+**H**|
 
-## <a name="code-editor"></a>Editor de código
+## <a name="code-editor"></a>{1&gt;Editor de código&lt;1}
 
 |Tarefa|Atalho|
 |-|-|
@@ -99,7 +99,7 @@ Para obter uma lista completa de atalhos de comando, confira [Atalhos de teclado
 |Ir para problema seguinte/anterior|**Alt**+**PgUp** / **Alt**+**PgDn**|
 |Menu de navegação contextual|**Alt**+ **`**|
 
-## <a name="toolbars"></a>Barras de ferramentas
+## <a name="toolbars"></a>{1&gt;Barras de ferramentas&lt;1}
 
 |Tarefa|Atalho|
 |-|-|
@@ -108,7 +108,7 @@ Para obter uma lista completa de atalhos de comando, confira [Atalhos de teclado
 |Localizar o modo de comando da caixa de texto|Tipo **>**|
 |Crie novos alias|Digite **alias \<novo alias> \<comando>** na janela **Comando**|
 
-## <a name="debugging"></a>Depuração
+## <a name="debugging"></a>{1&gt;Depuração&lt;1}
 
 |Tarefa|Atalho|
 |-|-|
@@ -127,7 +127,7 @@ Para obter uma lista completa de atalhos de comando, confira [Atalhos de teclado
 |Janela imediata – limpar cache|Tipo **cls**|
 |Janela imediata – valor da impressão|Digite **?varname**|
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Dicas e truques de acessibilidade](../ide/reference/accessibility-tips-and-tricks.md)
 - [Recursos de produtividade no Visual Studio](productivity-features.md)

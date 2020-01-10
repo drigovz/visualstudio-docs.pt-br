@@ -15,17 +15,17 @@ helpviewer_keywords:
 - dependency diagrams
 - diagrams - modeling, layer
 - constraints, architectural
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 07cba8f8ae813ae223ef3da110a046f65c81b091
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 774716dff6562b7792c6fa885c40db2a0a133136
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72984079"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594559"
 ---
 # <a name="dependency-diagrams-reference"></a>Diagramas de dependência: referência
 
@@ -58,8 +58,8 @@ A tabela a seguir descreve os elementos que você pode usar em um diagrama de de
 
 |**La**|**Elemento**|**Descrição**|
 |-|-|-|
-|1|**Camada**|Um grupo lógico de artefatos físicos em seu sistema. Esses artefatos podem ser namespaces, projetos, classes, métodos e assim por diante.<br /><br /> Para ver os artefatos que estão vinculados a uma camada, abra o menu de atalho da camada e escolha **exibir links** para abrir o **Gerenciador de camadas**.<br /><br /> Para obter mais informações, consulte [Gerenciador de camadas](#Explorer).<br /><br /> **dependências de namespace proibidas** -   -especifica que os artefatos associados a essa camada não podem depender dos namespaces especificados.<br />-    de**namespaces proibidos** – especifica que os artefatos associados a essa camada não devem pertencer aos namespaces especificados.<br />-   **namespaces necessários** -especifica que os artefatos associados a essa camada devem pertencer a um dos namespaces especificados.|
-|2|**Estados**|Indica que uma camada pode usar a funcionalidade em outra camada, mas não vice-versa.<br /><br /> **direção** de -   -especifica a direção da dependência.|
+|1|**Camada**|Um grupo lógico de artefatos físicos em seu sistema. Esses artefatos podem ser namespaces, projetos, classes, métodos e assim por diante.<br /><br /> Para ver os artefatos que estão vinculados a uma camada, abra o menu de atalho da camada e escolha **exibir links** para abrir o **Gerenciador de camadas**.<br /><br /> Para obter mais informações, consulte [Gerenciador de camadas](#Explorer).<br /><br /> **dependências de namespace proibidas** -   -especifica que os artefatos associados a essa camada não podem depender dos namespaces especificados.<br />-   de **namespaces proibidos** – especifica que os artefatos associados a essa camada não devem pertencer aos namespaces especificados.<br />-   **namespaces necessários** -especifica que os artefatos associados a essa camada devem pertencer a um dos namespaces especificados.|
+|2|**Dependência**|Indica que uma camada pode usar a funcionalidade em outra camada, mas não vice-versa.<br /><br /> **direção** de -   -especifica a direção da dependência.|
 |3|**Dependência bidirecional**|Indica que uma camada pode usar a funcionalidade em outra camada e vice-versa.<br /><br /> **direção** de -   -especifica a direção da dependência.|
 |4|**Comentário**|Use para adicionar notas gerais ao diagrama ou aos elementos no diagrama.|
 |5|**Link de comentário**|Use para vincular comentários a elementos no diagrama.|
@@ -91,11 +91,11 @@ O **Gerenciador de camadas** é aberto e mostra os artefatos que estão vinculad
 
 |**Coluna no Gerenciador de camadas**|**Descrição**|
 |-|-|
-|**Às**|O tipo de artefato, como uma classe, um namespace, um arquivo de origem e assim por diante|
+|**Categorias**|O tipo de artefato, como uma classe, um namespace, um arquivo de origem e assim por diante|
 |**Camada**|A camada que vincula ao artefato|
 |**Dá suporte à validação**|Se **for true**, o processo de validação de camada poderá verificar se o projeto está de acordo com as dependências de ou para esse elemento.<br /><br /> Se **for false**, o link não participará do processo de validação de camada.<br /><br /> Para obter mais informações, consulte [diagramas de dependência: diretrizes](../modeling/layer-diagrams-guidelines.md).|
 |**Identificador**|A referência ao artefato vinculado|
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Criar modelos para o aplicativo](../modeling/create-models-for-your-app.md)

@@ -10,17 +10,17 @@ helpviewer_keywords:
 - data access [Visual Studio], objects
 - saving data
 ms.assetid: efd6135a-40cf-4b0d-8f8b-41a5aaea7057
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5208b7764949f6ba6d3e862c7a2102608afb7e24
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 509910730d4da095b6db622212716a8f958495d7
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648208"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586257"
 ---
 # <a name="save-data-from-an-object-to-a-database"></a>Salvar dados de um objeto em um banco de dados
 
@@ -36,7 +36,7 @@ Por padrão, os métodos de `DBDirect` são criados em um TableAdapter que pode 
 |Métodos DBDirect TableAdapter|Descrição|
 | - |-----------------|
 |`TableAdapter.Insert`|Adiciona novos registros a um banco de dados e permite que você passe valores de coluna individuais como parâmetros de método.|
-|`TableAdapter.Update`|Atualiza os registros existentes em um banco de dados. O método `Update` usa valores originais e novos de coluna como parâmetros de método. Os valores originais são usados para localizar o registro original e os novos valores são usados para atualizar esse registro.<br /><br /> O método de `TableAdapter.Update` também é usado para reconciliar as alterações em um conjunto de dados de volta para o Database por meio de um <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, <xref:System.Data.DataRow> ou uma matriz de <xref:System.Data.DataRow>s como parâmetros de método.|
+|`TableAdapter.Update`|Atualiza os registros existentes em um banco de dados. O método `Update` usa valores originais e novos de coluna como parâmetros de método. Os valores originais são usados para localizar o registro original e os novos valores são usados para atualizar esse registro.<br /><br /> O método de `TableAdapter.Update` também é usado para reconciliar as alterações em um conjunto de dados de volta para o Database por meio de um <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, <xref:System.Data.DataRow>ou uma matriz de <xref:System.Data.DataRow>s como parâmetros de método.|
 |`TableAdapter.Delete`|Exclui os registros existentes do banco de dados com base nos valores de coluna originais passados como parâmetros de método.|
 
 ## <a name="to-save-new-records-from-an-object-to-a-database"></a>Para salvar novos registros de um objeto em um banco de dados
@@ -74,8 +74,8 @@ Por padrão, os métodos de `DBDirect` são criados em um TableAdapter que pode 
 
 ## <a name="net-security"></a>Segurança do .NET
 
-Você deve ter permissão para executar a `INSERT` selecionada, `UPDATE` ou `DELETE` na tabela no banco de dados.
+Você deve ter permissão para executar a `INSERT`selecionada, `UPDATE`ou `DELETE` na tabela no banco de dados.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Salvar dados de volta no banco de dados](../data-tools/save-data-back-to-the-database.md)

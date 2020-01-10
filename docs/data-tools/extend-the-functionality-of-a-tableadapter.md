@@ -10,17 +10,17 @@ helpviewer_keywords:
 - data [Visual Studio], extending TableAdapters
 - TableAdapters, adding functionality
 ms.assetid: 418249c8-c7f3-47ef-a94c-744cb6fe6aaf
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: e92b820b04913733095645d21ad682bff40acd84
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 34a5c1601071a36ca11005503e2f443a72ca3dfe
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648488"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586634"
 ---
 # <a name="extend-the-functionality-of-a-tableadapter"></a>Estender a funcionalidade de um TableAdapter
 
@@ -34,7 +34,7 @@ As classes parciais permitem que o código de uma classe específica seja dividi
 
 Embora os TableAdapters sejam projetados com o **Designer de conjunto de dados**, as classes do TableAdapter geradas não são classes aninhadas de <xref:System.Data.DataSet>. Os TableAdapters estão localizados em um namespace com base no nome do DataSet associado do TableAdapter. Por exemplo, se seu aplicativo contiver um conjunto de um DataSet chamado `HRDataSet`, os TableAdapters estarão localizados no namespace `HRDataSetTableAdapters`. (A convenção de nomenclatura segue este padrão: *DatasetName* + `TableAdapters`).
 
-O exemplo a seguir pressupõe um TableAdapter chamado `CustomersTableAdapter`is em um projeto com `NorthwindDataSet`.
+O exemplo a seguir pressupõe que um TableAdapter chamado `CustomersTableAdapter`está em um projeto com `NorthwindDataSet`.
 
 ### <a name="to-create-a-partial-class-for-a-tableadapter"></a>Para criar uma classe parcial para um TableAdapter
 
@@ -49,6 +49,6 @@ O exemplo a seguir pressupõe um TableAdapter chamado `CustomersTableAdapter`is 
      [!code-csharp[VbRaddataTableAdapters#2](../data-tools/codesnippet/CSharp/extend-the-functionality-of-a-tableadapter_1.cs)]
      [!code-vb[VbRaddataTableAdapters#2](../data-tools/codesnippet/VisualBasic/extend-the-functionality-of-a-tableadapter_1.vb)]
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Preencher conjuntos de dados usando TableAdapters](../data-tools/fill-datasets-by-using-tableadapters.md)

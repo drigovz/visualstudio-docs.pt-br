@@ -13,17 +13,17 @@ helpviewer_keywords:
 - SGen task [MSBuild]
 - MSBuild, SGen task
 ms.assetid: 22c5ade4-4159-4667-b891-0c1aa06f4df5
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c326dc31f6ce80026f1c83c5b71f8e27faabf93e
-ms.sourcegitcommit: 4dfe098ac0df294aad63e6b384d6575980798ca3
+ms.openlocfilehash: a97133892926e60adc1d9f0165415868732066ca
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70887637"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595118"
 ---
 # <a name="sgen-task"></a>tarefa SGen
 Cria um assembly de serialização de XML para tipos no assembly especificado. A tarefa encapsula a Ferramenta geradora de serializador de XML (*Sgen.exe*). Para saber mais, confira [Ferramenta geradora de serializador de XML (Sgen.exe)](/dotnet/framework/serialization/xml-serializer-generator-tool-sgen-exe).
@@ -52,7 +52,7 @@ Cria um assembly de serialização de XML para tipos no assembly especificado. A
 ## <a name="remarks"></a>Comentários
  Além dos parâmetros listados acima, essa tarefa herda parâmetros da classe <xref:Microsoft.Build.Tasks.ToolTaskExtension>, que herda da classe <xref:Microsoft.Build.Utilities.ToolTask>. Para obter uma lista desses parâmetros adicionais e suas descrições, confira [Classe base ToolTaskExtension](../msbuild/tooltaskextension-base-class.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 - [Referência de tarefas](../msbuild/msbuild-task-reference.md)
 - [Tarefas](../msbuild/msbuild-tasks.md)
 - [Conceitos do MSBuild](../msbuild/msbuild-concepts.md)

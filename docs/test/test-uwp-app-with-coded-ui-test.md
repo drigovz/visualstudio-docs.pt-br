@@ -2,20 +2,20 @@
 title: Testar um aplicativo UWP com um teste de IU codificado
 ms.date: 05/31/2018
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - uwp
-ms.openlocfilehash: 7000cb64a14510e972222d2d4dae30ceee593c43
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: fdd3d98bd848bb6fe679809a58f2e316a316f012
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659976"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590352"
 ---
 # <a name="create-a-coded-ui-test-to-test-a-uwp-app"></a>Criar um teste de IU codificado para testar um aplicativo UWP
 
@@ -224,9 +224,9 @@ A primeira etapa é criar um aplicativo UWP simples no qual executar o teste.
 
 ### <a name="q-why-cant-i-modify-the-code-in-the-uimapdesigner-file"></a>P: Por que não posso modificar o código no arquivo UIMap.Designer?
 
-**R**: Todas as alterações de código feitas no arquivo *UIMapDesigner.cs* são substituídas sempre que você gera o código usando o **Construtor de Teste de IU Codificado**. Se você precisar modificar um método registrado, copie-o para o arquivo *UIMap.cs* e renomeie-o. O arquivo *UIMap.cs* pode ser usado para substituir métodos e propriedades no arquivo *UIMapDesigner.cs*. Remova a referência ao método original no arquivo *CodedUITest.cs* e substitua-a pelo nome do método renomeado.
+**R**: Todas as alterações de código feitas no arquivo *UIMapDesigner.cs* são substituídas sempre que você gera o código usando o **Construtor de Teste de IU Codificado**. Se precisar modificar um método registrado, copie-o para o arquivo *UIMap.cs* e renomeie-o. O arquivo *UIMap.cs* pode ser usado para substituir métodos e propriedades no arquivo *UIMapDesigner.cs*. Remova a referência ao método original no arquivo *CodedUITest.cs* e substitua-a pelo nome do método renomeado.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Usar a automação de interface do usuário para testar seu código](../test/use-ui-automation-to-test-your-code.md)
 - [Definir propriedades de automação exclusivas para controles UWP](../test/set-a-unique-automation-property-for-windows-store-controls-for-testing.md)

@@ -6,17 +6,17 @@ dev_langs:
 - VB
 - CSharp
 ms.assetid: 7b1a91cf-8b5a-4fc0-ac36-0dc2d336fa1b
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 056d88790cda6e763ebd0531d61f7007d16d82eb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 4080866de58e17c5e11ed01d61740c2f83aed9a7
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648243"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586335"
 ---
 # <a name="query-datasets"></a>Consultar conjuntos de dados
 Para pesquisar registros específicos em um conjunto de informações, use o método `FindBy` na DataTable, escreva sua própria instrução foreach para executar um loop sobre a coleção de linhas da tabela ou use [LINQ to DataSet](/dotnet/framework/data/adonet/linq-to-dataset).
@@ -76,7 +76,7 @@ Os exemplos de código a seguir demonstram como navegar pelas relações para ci
 
 - Uma tabela `Orders`.
 
-- Uma relação denominada `FK_Orders_Customers`relating duas tabelas.
+- Uma relação chamada `FK_Orders_Customers`relacionando as duas tabelas.
 
 Além disso, ambas as tabelas precisam ser preenchidas com dados para que todos os registros sejam retornados.
 
@@ -94,6 +94,6 @@ Além disso, ambas as tabelas precisam ser preenchidas com dados para que todos 
      [!code-csharp[VbRaddataDatasets#7](../data-tools/codesnippet/CSharp/query-datasets_5.cs)]
      [!code-vb[VbRaddataDatasets#7](../data-tools/codesnippet/VisualBasic/query-datasets_5.vb)]
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Ferramentas de conjunto de dados no Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)

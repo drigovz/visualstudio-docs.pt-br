@@ -11,17 +11,17 @@ helpviewer_keywords:
 - .targets files
 - MSBuild, .targets files
 ms.assetid: f6d98eb4-d2fa-49b7-8e3c-bae1ca3cf596
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5dc3964524536b1d0452462512e5847311e8bfeb
-ms.sourcegitcommit: 3a19319e2599bd193fb2ca32020ca53942974bfd
+ms.openlocfilehash: 4dc5df9c4eba4195400b6a41fa50a5c88257d70e
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "73983819"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75566547"
 ---
 # <a name="msbuild-targets-files"></a>Arquivos .targets do MSBuild
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] inclui vários arquivos *.targets* que contêm itens, propriedades, destinos e tarefas para cenários comuns. Esses arquivos são automaticamente importados para a maioria dos arquivos de projeto [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para simplificar a manutenção e a legibilidade.
@@ -44,7 +44,7 @@ ms.locfileid: "73983819"
 ## <a name="directorybuildtargets"></a>Directory.Build.targets
 *Directory.Build.targets* é um arquivo definido pelo usuário que fornece personalizações a projetos em um diretório. Esse arquivo é importado automaticamente de *Microsoft.Common.targets*, a menos que a propriedade **ImportDirectoryBuildTargets** seja definida como **false**. Para obter mais informações, confira [Personalizar seu build](customize-your-build.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 - [Elemento Import (MSBuild)](../msbuild/import-element-msbuild.md)
 - [Referência do MSBuild](../msbuild/msbuild-reference.md)
 - [MSBuild](../msbuild/msbuild.md)

@@ -1,16 +1,16 @@
 ---
 title: Configurando um Repositório Git
 description: Usando o Git e o Subversion no Visual Studio para Mac.
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 02/15/2018
 ms.assetid: E992FA1D-B2AD-4A28-ADC6-47E4FC471060
-ms.openlocfilehash: a5a6dd04cd080f57d6a6ba97b3696b0351a0a8aa
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
-ms.translationtype: HT
+ms.openlocfilehash: e6dbe3b04a39a1ffd9a6e1b8f241b497ba8a6563
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67692991"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74984854"
 ---
 # <a name="set-up-a-git-repository"></a>Configurar um repositório GIT
 
@@ -141,7 +141,7 @@ Provavelmente você precisará trabalhar com um repositório do GitHub que exist
 
     ![url do github exibida](media/version-control-git14.png)
 
-4. Substitua todo o texto no campo de entrada de **URL** na guia **Conectar ao Repositório**. Isso preencherá a maioria dos outros campos desta guia, conforme ilustrado na imagem da etapa nº 2.
+4. Substitua todo o texto no campo entrada de **URL** na guia **conectar ao repositório** . Isso preencherá a maioria dos outros campos nesta guia para você, conforme ilustrado na imagem na etapa #2.
 
 5. Insira o diretório no qual você deseja clonar o repositório e pressione **Check-out**.
 

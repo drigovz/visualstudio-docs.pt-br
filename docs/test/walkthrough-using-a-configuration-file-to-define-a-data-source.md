@@ -6,17 +6,17 @@ helpviewer_keywords:
 - configuration files [Visual Studio ALM], defining data sources
 - unit tests, walkthrough
 - data sources, defining with configuration files
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ba7ee908a96675a77997902fc96cea72309b747
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 4a4f5731a828eb04e57f56a46fe399125b5ded2f
+ms.sourcegitcommit: 10d16e18c5f5e482c4c2856e6cacaad283463b65
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659593"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75776149"
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>Passo a passo: Usando um arquivo de configuração para definir uma fonte de dados
 
@@ -32,7 +32,7 @@ Este passo a passo ilustra como usar uma fonte de dados definida em um arquivo *
 
 - Acessando as fontes de dados usando a classe <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute>.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>{1&gt;{2&gt;Pré-requisitos&lt;2}&lt;1}
 
 Para concluir esta explicação passo a passo, será necessário:
 
@@ -165,7 +165,7 @@ O arquivo *app.config* final deve ser parecido com este:
 <?xml version="1.0" encoding="utf-8" ?>
 <configuration>
     <configSections>
-        <section name="microsoft.visualstudio.testtools" type="Microsoft.VisualStudio.TestTools.UnitTesting.TestConfigurationSection, Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"/>
+        <section name="microsoft.visualstudio.testtools" type="Microsoft.VisualStudio.TestTools.UnitTesting.TestConfigurationSection, Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions" />
     </configSections>
     <connectionStrings>
         <add name="MyJetConn" connectionString="Provider=Microsoft.Jet.OLEDB.4.0; Data Source=C:\testdatasource.accdb; Persist Security Info=False;" providerName="System.Data.OleDb" />
@@ -267,7 +267,7 @@ Agora que um arquivo *app.config* foi definido, você criará um teste de unidad
 > [!IMPORTANT]
 > Implante itens como fontes de dados para que fiquem acessíveis para o teste no diretório de implantação.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Efetuar teste de unidade em seu código](../test/unit-test-your-code.md)
 - [Como criar um teste de unidade controlado por dados](../test/how-to-create-a-data-driven-unit-test.md)

@@ -11,17 +11,17 @@ helpviewer_keywords:
 - WCF services
 - WCF services, walkthrough
 ms.assetid: 5fef1a64-27a4-4f10-aa57-29023e28a2d6
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 7e2954d333ae3fe0dc6ff1c221d1e450eb9bf51a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3d3f2e80ff3e2b94c46d1e2658c40bccf2e6c365
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72639468"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586010"
 ---
 # <a name="walkthrough-create-a-simple-wcf-service-in-windows-forms"></a>Walkthrough: criar um serviço WCF simples no Windows Forms
 
@@ -31,11 +31,11 @@ Este tutorial demonstra como criar um serviço de Windows Communication Foundati
 
 ## <a name="create-a-service"></a>Criar um serviço
 
-1. Abra o Visual Studio.
+1. {1&gt;Abra o Visual Studio.&lt;1}
 
 ::: moniker range="vs-2017"
 
-2. No menu **Arquivo**, escolha **Novo** > **Projeto**.
+2. No menu **arquivo** , escolha **novo** **projeto**de >.
 
 3. Na caixa de diálogo **novo projeto** , expanda o **Visual Basic** ou o nó **Visual C#**  e escolha **WCF**, seguido pela **biblioteca de serviços WCF**.
 
@@ -139,7 +139,7 @@ Este tutorial demonstra como criar um serviço de Windows Communication Foundati
 
      ![Adicionando controles ao formulário](../data-tools/media/wcf9.png)
 
-3. Clique duas vezes no `Button` e adicione o seguinte código no manipulador de eventos `Click`:
+3. Clique duas vezes no `Button`e adicione o seguinte código no manipulador de eventos `Click`:
 
      [!code-csharp[WCFWalkthrough#3](../data-tools/codesnippet/CSharp/walkthrough-creating-a-simple-wcf-service-in-windows-forms_5.cs)]
      [!code-vb[WCFWalkthrough#3](../data-tools/codesnippet/VisualBasic/walkthrough-creating-a-simple-wcf-service-in-windows-forms_5.vb)]
@@ -150,6 +150,6 @@ Este tutorial demonstra como criar um serviço de Windows Communication Foundati
 
      ![O formulário que mostra o resultado](../data-tools/media/wcf10.png)
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Serviços do Windows Communication Foundation e WCF Data Services no Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)

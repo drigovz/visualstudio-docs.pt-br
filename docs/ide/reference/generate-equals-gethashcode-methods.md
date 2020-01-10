@@ -2,17 +2,17 @@
 title: Gerar substituições de método Equals e GetHashCode em C#
 ms.date: 01/26/2018
 ms.topic: reference
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: e70593bc04b576237a7f9f0f51ae6c3d37e40a88
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f9b1a639dd655f4f75b21555396866858b144010
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72660035"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75569277"
 ---
 # <a name="generate-equals-and-gethashcode-method-overrides-in-visual-studio"></a>Gerar substituições dos métodos Equals e GetHashCode no Visual Studio
 
@@ -64,7 +64,7 @@ Esta geração de código aplica-se a:
 
    ![Resultado da geração do método](media/overrides-result-cs.png)
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Geração de código](../code-generation-in-visual-studio.md)
 - [Visualizar alterações](../../ide/preview-changes.md)

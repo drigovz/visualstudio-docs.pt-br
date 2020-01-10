@@ -7,15 +7,15 @@ f1_keywords:
 helpviewer_keywords:
 - Windows Forms Designer options
 - Options dialog box, Windows Forms Designer
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 16dfd7aed9e3a3586d32f3a4456451b96d8b9f09
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 2a72b27dc2277501d0e0957c8b89b551f4d6852d
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72655805"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75568055"
 ---
 # <a name="options-dialog-box-windows-forms-designer"></a>Caixa de diálogo opções: Designer de Formulários do Windows
 
@@ -55,7 +55,7 @@ Determina se os controles e componentes exibem marcas inteligentes. Nem todos os
 **Habilitar Refatoração ao Renomear**\
 Quando definida como `true`, uma operação de refatoração de renomeação é executada ao renomear um componente da janela Propriedades ou da janela Estrutura de Tópicos do Documento.
 
-## <a name="toolbox"></a>Caixa de Ferramentas
+## <a name="toolbox"></a>Caixa de ferramentas
 
 **Preencher Automaticamente a Caixa de Ferramentas**\
 Determina se a janela Caixa de Ferramentas é preenchida automaticamente com componentes e controles criados pelo projeto.

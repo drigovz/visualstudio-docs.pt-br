@@ -5,17 +5,17 @@ ms.topic: conceptual
 f1_keywords:
 - vs.graphics.designer.imageeditor
 - vs.graphics.imageeditor
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f2430dddb4fe7de0d050ce26fc94e54c13a7779
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: fd7d9aed75876b47a6574d46b226f5baec336883
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72635314"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589312"
 ---
 # <a name="image-editor"></a>Editor de imagem
 
@@ -175,11 +175,11 @@ A tabela a seguir descreve as propriedades da imagem:
 |Altura|A altura da imagem.|
 |Bits por Pixel|O número de bits que representa cada pixel. O valor desta propriedade depende do **Formato de Cor** da imagem.|
 |Seleção Transparente|**True** para mesclar a camada de seleção com a imagem principal, com base no valor alfa da camada de seleção; caso contrário, **False**. Este item só está disponível para imagens que dão suporte a alfa.|
-|Formatar|O formato de cor da imagem. É possível especificar uma variedade de formatos de cor, dependendo do formato da imagem. O formato de cor define o número e o tipo de canais de cor que estão incluídos na imagem e o tamanho e a codificação de vários canais.|
+|Formato|O formato de cor da imagem. É possível especificar uma variedade de formatos de cor, dependendo do formato da imagem. O formato de cor define o número e o tipo de canais de cor que estão incluídos na imagem e o tamanho e a codificação de vários canais.|
 |Nível de MIP|O nível de MIP ativo. Este item só está disponível para texturas que têm níveis de MIP.|
 |Contagem de Nível de Mip|O número total de níveis de MIP na imagem. Este item só está disponível para texturas que têm níveis de MIP.|
 |Contagem de Quadros|O número total de quadros na imagem. Este item só está disponível para imagens que dão suporte a matrizes de textura.|
-|Quadro|O quadro atual. Somente o primeiro quadro pode ser exibido; todos os outros quadros são perdidos quando a imagem é salva.|
+|{1&gt;Quadro&lt;1}|O quadro atual. Somente o primeiro quadro pode ser exibido; todos os outros quadros são perdidos quando a imagem é salva.|
 |Contagem de Fatia de Profundidade|O número total de fatias de profundidade na imagem. Este item só está disponível para imagens que dão suporte a texturas de volume.|
 |Fatia de Profundidade|A fatia de profundidade atual. Somente a primeira fatia pode ser exibida; todas as outras fatias são perdidas quando a imagem é salva.|
 
@@ -231,7 +231,7 @@ Você pode definir uma cor de primeiro plano e uma cor da tela de fundo. Ambos d
 
 A tabela a seguir descreve as propriedades da ferramenta:
 
-|Ferramenta|Propriedades|
+|Ferramenta|{1&gt;Propriedades&lt;1}|
 |----------|----------------|
 |Todas as ferramentas e seleções|**Girar por**<br /> Define a quantidade, em graus, que o efeito da seleção ou ferramenta é girado no sentido horário.|
 |**Lápis**, **Pincel**, **Spray**, **Borracha**|**Espessura**<br /> Define o tamanho da área afetada pela ferramenta.|
@@ -242,7 +242,7 @@ A tabela a seguir descreve as propriedades da ferramenta:
 
 ## <a name="keyboard-shortcuts"></a>Atalhos de teclado
 
-|Comando|Atalhos de teclado|
+|{1&gt;Comando&lt;1}|Atalhos de teclado|
 |-------------| - |
 |Mudar para o modo **Selecionar**|**S**|
 |Mudar para o modo **Zoom**|**Z**|
@@ -286,7 +286,7 @@ A tabela a seguir descreve as propriedades da ferramenta:
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
-|Título|Descrição|
+|Cargo|Descrição|
 |-----------|-----------------|
 |[Trabalhando com ativos 3D para jogos e aplicativos](../designers/working-with-3-d-assets-for-games-and-apps.md)|Fornece uma visão geral das ferramentas que você pode usar no Visual Studio para trabalhar com recursos gráficos, como texturas e imagens, modelos 3D e efeitos de sombreamento.|
 |[Editor de modelos](../designers/model-editor.md)|Descreve como usar o Editor de Modelos do Visual Studio para trabalhar com modelos 3D.|

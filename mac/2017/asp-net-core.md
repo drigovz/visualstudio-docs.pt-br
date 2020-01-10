@@ -1,21 +1,21 @@
 ---
 title: Introdução ao ASP.NET Core
 description: Este artigo descreve como começar a usar o ASP.NET no Visual Studio para Mac, incluindo como instalar e com criar um novo projeto.
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 07/13/2017
 ms.assetid: 6E8B0C90-33D6-4546-8207-CE0787584565
 ms.custom: video
-ms.openlocfilehash: 6260233d564421ce3fc32c9700c4430989a4f53b
-ms.sourcegitcommit: d2b234e0a4a875c3cba09321cdf246842670d872
+ms.openlocfilehash: b1e29e4df6ea31d99a99590f3e56ed6feac791e1
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2019
-ms.locfileid: "67493731"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74984888"
 ---
 # <a name="getting-started-with-aspnet-core"></a>Introdução ao ASP.NET Core
 
- O Visual Studio para Mac facilita o desenvolvimento do serviço de seu aplicativo por meio de seu suporte para a plataforma de desenvolvimento na Web ASP.NET Core mais recente. O ASP.NET Core é executado no .NET Core, a evolução mais recente do .NET Framework e o tempo de execução. Ele foi ajustado a fim de proporcionar um desempenho rápido, perfeito para instalações de pequeno porte e recriado para ser executado no Linux, macOS e também no Windows.
+ O Visual Studio para Mac facilita o desenvolvimento do serviço de seu aplicativo por meio de seu suporte para a plataforma de desenvolvimento na Web ASP.NET Core mais recente. O ASP.NET Core é executado no .NET Core, a evolução mais recente do .NET Framework e o runtime. Ele foi ajustado a fim de proporcionar um desempenho rápido, perfeito para instalações de pequeno porte e recriado para ser executado no Linux, macOS e também no Windows.
 
 ## <a name="installing-net-core"></a>Instalando o .NET Core
 
@@ -66,8 +66,8 @@ public static void Main(string[] args)
 
 Um aplicativo ASP.NET Core cria um servidor Web em seu método principal configurando e iniciando um host por meio de uma instância de [`WebHostBuilder`](/aspnet/core/fundamentals/hosting). Este construtor fornece métodos para permitir que o host seja configurado. As seguintes configurações são usadas no aplicativo modelo:
 
-* `UseKestrel`: especifica que o servidor Kestrel será usado pelo aplicativo.
-* `UseContentRoot(Directory.GetCurrentDirectory())`: usa a pasta raiz do projeto Web como a raiz de conteúdo do aplicativo, quando ele é iniciado nesta pasta.
+* `UseKestrel`: especifica que o servidor Kestrel será usado pelo aplicativo
+* `UseContentRoot(Directory.GetCurrentDirectory())`: usa pasta raiz do projeto Web como a raiz de conteúdo do aplicativo ele for iniciado desta pasta
 * `.UseIISIntegration()`: especifica que o aplicativo funcionará com o IIS. Para usar o IIS com o ASP.NET Core, tanto `UseKestrel` quanto `UseIISIntegration` precisam ser especificados.
 * `.UseStartup<Startup>()`: especifica a classe Startup.
 
@@ -133,7 +133,7 @@ Abra o navegador de sua escolha e digite `http://localhost:5000/`, substituindo 
 Aplicativos ASP.NET Core usam o padrão de design MVC (Modelo-Exibição-Controlador) para fornecer uma separação lógica de responsabilidades para cada parte do aplicativo. O MVC consiste no seguinte:
 
 - **Modelo**: uma classe que representa os dados do aplicativo.
-- **Exibir**: exibe a interface do usuário do aplicativo, que muitas vezes são os dados de modelo.
+- **Exibição**: exibe a interface do usuário do aplicativo (que muitas vezes são os dados de modelo).
 - **Controlador**: uma classe que trata as solicitações do navegador, responde à entrada e interação do usuário.
 
 Para obter mais informações sobre como usar o MVC, consulte [Visão geral do guia de MVC do ASP.NET Core](/aspnet/core/mvc/overview).

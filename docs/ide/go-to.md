@@ -7,17 +7,17 @@ helpviewer_keywords:
 - code editor, go to line
 - go to line
 - go to
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c3a810e96b410c0f1f6f5d6ffdaa07b1e007abd6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: bb39f1d395e48351aeacb587556224b0f86aac3e
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654636"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593779"
 ---
 # <a name="find-code-using-go-to-commands"></a>Localizar código usando comandos Ir Para
 
@@ -55,10 +55,10 @@ Para restringir sua pesquisa para um tipo de elemento de código específico, es
 Prefixo | Ícone | Atalho | Descrição
 :-: | - | - | -
 :| ![Ícone de linha](media/gotoall-line-icon.png) | **Ctrl**+**G** | Ir para o número de linha especificado
-f| ![Ícone de arquivos](media/gotoall-files-icon.png) | **Ctrl**+**1**, **Ctrl**+**F** | Ir para o arquivo especificado
+{1&gt;f&lt;1}| ![Ícone de arquivos](media/gotoall-files-icon.png) | **Ctrl**+**1**, **Ctrl**+**F** | Ir para o arquivo especificado
 r| ![Ícone de arquivos recentes](media/gotoall-recent-files-icon.png) | **Ctrl**+**1**, **Ctrl**+**R** | Ir para o arquivo visitado recentemente especificado
 t| ![Ícone de tipos](media/gotoall-types-icon.png) | **Ctrl**+**1**, **Ctrl**+**T** | Ir para o tipo especificado
-m| ![Ícone de membros](media/gotoall-members-icon.png) | **Ctrl**+**1**, **Ctrl**+**M** | Ir para o membro especificado
+{1&gt;m&lt;1}| ![Ícone de membros](media/gotoall-members-icon.png) | **Ctrl**+**1**, **Ctrl**+**M** | Ir para o membro especificado
 \#| ![Ícone de símbolos](media/gotoall-symbols-icon.png) | **Ctrl**+**1**, **Ctrl**+**S** | Ir para o símbolo especificado
 
 ### <a name="filter-to-a-specific-location"></a>Filtrar por um local específico
@@ -86,7 +86,7 @@ Usar guia de visualização | Exibir o item selecionado imediatamente na guia de
 Mostrar detalhes | Exibir informações do projeto, do arquivo, da linha e de resumo dos comentários da documentação na janela
 Centralizar janela | Mover esta janela para a parte superior central do editor de códigos e não para a parte superior direita
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Navegar pelo código](../ide/navigating-code.md)
 - [Caixa de diálogo Ir Para Linha](../ide/reference/go-to-line.md)

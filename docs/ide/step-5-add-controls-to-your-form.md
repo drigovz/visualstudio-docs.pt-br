@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b88af1a0ac1ec51f57d3aa339c2c2ec4adb45134
-ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
+ms.openlocfilehash: 77b8fc1f1f9f34a5b19756b7cf1370522f74075e
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71118999"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589962"
 ---
 # <a name="step-5-add-controls-to-your-form"></a>Etapa 5: Adicionar controles ao formulário
 
@@ -23,7 +23,7 @@ Nessa etapa, você adiciona controles como um controle <xref:System.Windows.Form
 
 ## <a name="how-to-add-controls-to-your-form"></a>Como adicionar controles ao formulário
 
-1. Escolha a **guia caixa de ferramentas** no lado esquerdo do IDE do Visual Studio (ou pressione **Ctrl**+**ALT**+**X**) e, em seguida, expanda o grupo **controles comuns** . Isso mostra os controles mais comuns que você vê em formulários.
+1. Escolha a **guia caixa de ferramentas** no lado esquerdo do IDE do Visual Studio (ou pressione **Ctrl**+**ALT**+**X**) e, em seguida, expanda o grupo de **controles comuns** . Isso mostra os controles mais comuns que você vê em formulários.
 
 1. Clique duas vezes no item **PictureBox** para adicionar um controle PictureBox ao seu formulário. Como o TableLayoutPanel é encaixado para preencher o formulário, a IDE adiciona o controle da PictureBox à primeira célula vazia (canto superior esquerdo).
 
@@ -43,18 +43,18 @@ Nessa etapa, você adiciona controles como um controle <xref:System.Windows.Form
 
 1. Escolha o **TableLayoutPanel** no formulário e adicione um controle CheckBox ao formulário. Clique duas vezes no item **CheckBox** na **Caixa de Ferramentas** para adicionar um novo controle CheckBox à próxima célula livre em sua tabela. Como um PictureBox ocupa as duas primeiras células em TableLayoutPanel, o controle de caixa de seleção é adicionado à célula do canto inferior esquerdo. Escolha a propriedade **texto** e digite a **ampliação**da palavra, conforme mostrado na imagem a seguir.
 
-    ![Controle TextBox com a propriedade Stretch](../ide/media/express_pictureviewercheckbox.png)<br/>***Controle de*** *TextBox* com ***propriedade*** *Stretch*
+    ![Controle TextBox com a propriedade Stretch](../ide/media/express_pictureviewercheckbox.png)<br/>Controle ***TextBox*** *com a* *Propriedade* Stretch
 
-1. Escolha o **TableLayoutPanel** no formulário e, em seguida, vá para o grupo **contêineres** na **caixa de ferramentas** (onde você obteve o controle TableLayoutPanel) e clique duas vezes no item **FlowLayoutPanel** para adicionar um novo controle à última célula (inferior à direita). Em seguida, encaixe o FlowLayoutPanel no TableLayoutPanel. Você pode fazer isso escolhendo **encaixar no contêiner pai** na lista de tarefas do triângulo preto do FlowLayoutPanel ou definindo a propriedade **Dock** do FlowLayoutPanel como **Fill**.
+1. Escolha o **TableLayoutPanel** no formulário e, em seguida, vá para o grupo **contêineres** na **caixa de ferramentas** (onde você obteve o controle TableLayoutPanel) e clique duas vezes no item **FlowLayoutPanel** para adicionar um novo controle à última célula (canto inferior direito). Em seguida, encaixe o FlowLayoutPanel no TableLayoutPanel. Você pode fazer isso escolhendo **encaixar no contêiner pai** na lista de tarefas do triângulo preto do FlowLayoutPanel ou definindo a propriedade **Dock** do FlowLayoutPanel como **Fill**.
 
     > [!NOTE]
-    > Um <xref:System.Windows.Forms.FlowLayoutPanel> é um contêiner que organiza outros controles em uma linha, um após o outro. Quando você redimensiona um FlowLayoutPanel, ele dispõe de todos os seus controles em uma única linha, se tiver espaço para fazer isso. Caso contrário, organize-os em linhas, um sobre o outro. <br/><br/>Aqui, você usará um FlowLayoutPanel para manter quatro botões. Se os botões organizam um no topo do outro ao adicioná-los, certifique-se de selecionar o FlowLayoutPanel antes de adicionar os botões. <br/><br/>(Normalmente, cada célula contém apenas um controle. Neste exemplo, a célula inferior direita do TableLayoutPanel contém quatro controles Button. Por quê?  Como o FlowLayoutPanel é um controle de contêiner, que é um controle em uma célula que contém outros controles.)
+    > Uma <xref:System.Windows.Forms.FlowLayoutPanel> é um contêiner que organiza outros controles em uma linha, um após o outro. Quando você redimensiona um FlowLayoutPanel, ele dispõe de todos os seus controles em uma única linha, se tiver espaço para fazer isso. Caso contrário, organize-os em linhas, um sobre o outro. <br/><br/>Aqui, você usará um FlowLayoutPanel para manter quatro botões. Se os botões organizam um no topo do outro ao adicioná-los, certifique-se de selecionar o FlowLayoutPanel antes de adicionar os botões. <br/><br/>(Normalmente, cada célula contém apenas um controle. Neste exemplo, a célula inferior direita do TableLayoutPanel contém quatro controles Button. Por quê?  Como o FlowLayoutPanel é um controle de contêiner, que é um controle em uma célula que contém outros controles.)
 
 ## <a name="to-add-buttons"></a>Para adicionar botões
 
 1. Escolha o novo FlowLayoutPanel que você adicionou. Vá para **Common Controls** na **Caixa de Ferramentas** e clique duas vezes no item **Button** para adicionar um controle de botão chamado **button1** ao seu FlowLayoutPanel. Repita para adicionar outro botão. O IDE determina que já há um botão chamado **button1** e chama o próximo de **button2**.
 
-1. Normalmente, você adiciona os outros botões usando a **caixa de ferramentas**. Desta vez, escolha **Button2**e, em seguida, na barra de menus, escolha **Editar** > **cópia** (ou pressione **Ctrl**+**C**). Em seguida, escolha **Editar** > **colar** na barra de menus (ou pressione **Ctrl**+**V**) para colar uma cópia do botão. Agora cole-o novamente. Observe que o IDE adiciona **button3** e **Button4** ao FlowLayoutPanel.
+1. Normalmente, você adiciona os outros botões usando a **caixa de ferramentas**. Desta vez, escolha **Button2**e, na barra de menus, escolha **Editar** > **cópia** (ou pressione **Ctrl**+**C**). Em seguida, escolha **editar** > **colar** na barra de menus (ou pressione **Ctrl**+**V**) para colar uma cópia do botão. Agora cole-o novamente. Observe que o IDE adiciona **button3** e **Button4** ao FlowLayoutPanel.
 
     > [!NOTE]
     > Você pode copiar e colar qualquer controle. O IDE nomeia e coloca os novos controles de uma maneira lógica. Se você colar um controle em um contêiner, o IDE escolherá o próximo espaço lógico para posicionamento.
@@ -72,21 +72,21 @@ Nessa etapa, você adiciona controles como um controle <xref:System.Windows.Form
 
    Depois de selecionar todos os botões, vá para a janela **Propriedades** e role para cima até a propriedade **AutoSize** . Essa propriedade informa o botão para redimensionar automaticamente para ajustar todo o texto correspondente. Defina-o como **true**.
 
-   Os botões agora devem ser dimensionados corretamente e estar na ordem correta. (Enquanto todos os quatro botões estiverem selecionados, você pode alterar todas as quatro propriedades **AutoSize** ao mesmo tempo.) A imagem a seguir mostra os quatro botões.
+   Os botões agora devem ser dimensionados corretamente e estar na ordem correta. (Desde que todos os quatro botões sejam selecionados, você pode alterar todas as quatro propriedades de **dimensionamento** ao mesmo tempo.) A imagem a seguir mostra os quatro botões.
 
     ![Visualizador de imagens com quatro botões](../ide/media/express_autosize.png)<br/>***Visualizador de imagens*** *com quatro botões*
 
 1. Agora, execute o programa novamente para ver suas alterações.
 
-   Observe que os botões e a caixa de seleção não fazem nada&mdash;ainda, mas serão, em breve.
+   Observe que os botões e a caixa de seleção não fazem nada ainda&mdash;, mas eles serão, em breve.
 
 ## <a name="to-continue-or-review"></a>Para continuar ou revisar
 
-* Para ir para a próxima etapa do tutorial, **consulte [Step 6: Nomeie os controles](../ide/step-6-name-your-button-controls.md)** de botão.
+* Para ir para a próxima etapa do tutorial, consulte **[etapa 6: nomear os controles de botão](../ide/step-6-name-your-button-controls.md)** .
 
-* Para retornar à etapa anterior do tutorial, confira [Etapa 4: Definir o layout do formulário com um controle TableLayoutPanel](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md).
+* Para retornar à etapa anterior do tutorial, veja [Etapa 4: Definir o layout do formulário com um controle TableLayoutPanel](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
-* [Tutorial 2: Criar um teste de matemática cronometrado](tutorial-2-create-a-timed-math-quiz.md)
-* [Tutorial 3: Criar um jogo de correspondência](tutorial-3-create-a-matching-game.md)
+* [Tutorial 2: criar um teste de matemática cronometrado](tutorial-2-create-a-timed-math-quiz.md)
+* [Tutorial 3: criar um jogo de correspondência](tutorial-3-create-a-matching-game.md)

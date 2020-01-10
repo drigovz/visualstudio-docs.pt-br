@@ -2,17 +2,17 @@
 title: Estender a DSL usando MEF
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f42186915ade2a518506f5f6ccc55b3599a3ba99
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b8e4898ba6c87f25b38a6c3e42032412d69d8ece
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72657511"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596600"
 ---
 # <a name="extend-your-dsl-by-using-mef"></a>Estender a DSL usando MEF
 
@@ -129,17 +129,17 @@ Se você tiver acesso a um DSL habilitado para MEF criado por você mesmo ou por
 
    - Esse assembly geralmente tem um nome que termina com ". DSL. dll ".
 
-   - Se você tiver acesso ao projeto DSL, poderá encontrar o arquivo do assembly no \\bin de DSL do diretório **\\ \***
+   - Se você tiver acesso ao projeto DSL, poderá encontrar o arquivo do assembly no diretório **dsl\\bin\\\***
 
    - Se você tiver acesso ao arquivo VSIX de DSL, poderá encontrar o assembly alterando a extensão de nome de arquivo do arquivo VSIX para ". zip". Descompacte o arquivo. zip.
 
 3. Adicione referências aos seguintes assemblies .NET:
 
-   - Microsoft. VisualStudio. Modeling. Sdk. 11.0. dll
+   - Microsoft.VisualStudio.Modeling.Sdk.11.0.dll
 
-   - Microsoft. VisualStudio. Modeling. Sdk. Diagrams. 11.0. dll
+   - Microsoft.VisualStudio.Modeling.Sdk.Diagrams.11.0.dll
 
-   - Microsoft. VisualStudio. Modeling. Sdk. Shell. 11.0. dll
+   - Microsoft.VisualStudio.Modeling.Sdk.Shell.11.0.dll
 
    - System.ComponentModel.Composition.dll
 
@@ -157,7 +157,7 @@ Se você tiver acesso a um DSL habilitado para MEF criado por você mesmo ou por
 
    1. Em **origem. extensão. vsixmanifest**, clique em **Adicionar referência**
 
-   2. Na caixa de diálogo, clique em **Adicionar carga** e localize o arquivo VSIX da DSL. O arquivo VSIX é criado na solução DSL, no **DslPackage \\bin \\ \*** .
+   2. Na caixa de diálogo, clique em **Adicionar carga** e localize o arquivo VSIX da DSL. O arquivo VSIX é criado na solução DSL, no **DslPackage\\bin\\\*** .
 
        Isso permite que os usuários instalem a DSL e sua extensão ao mesmo tempo. Se o usuário já tiver instalado a DSL, somente sua extensão será instalada.
 
@@ -175,7 +175,7 @@ Você pode gravar extensões no projeto de código do assembly de uma solução 
 
 ### <a name="menu-commands"></a>Comandos de menu
 
-Para escrever um comando de menu, defina uma classe que implemente <xref:Microsoft.VisualStudio.Modeling.ExtensionEnablement.ICommandExtension> e Prefixe a classe com o atributo que está definido em sua DSL, chamado *YourDsl* `CommandExtension`. Você pode gravar mais de uma classe de comando de menu.
+Para escrever um comando de menu, defina uma classe que implemente <xref:Microsoft.VisualStudio.Modeling.ExtensionEnablement.ICommandExtension> e Prefixe a classe com o atributo que está definido em sua DSL, chamado *YourDsl*`CommandExtension`. Você pode gravar mais de uma classe de comando de menu.
 
 `QueryStatus()` é chamado sempre que o usuário clica com o botão direito do mouse no diagrama. Ele deve inspecionar a seleção atual e definir `command.Enabled` para indicar quando o comando é aplicável.
 
@@ -372,7 +372,7 @@ namespace MefExtension
 } } } }
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Enviar extensões do Visual Studio](../extensibility/shipping-visual-studio-extensions.md)
 - [MEF (Managed Extensibility Framework)](/dotnet/framework/mef/index)

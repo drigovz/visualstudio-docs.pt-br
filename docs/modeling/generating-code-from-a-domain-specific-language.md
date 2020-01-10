@@ -2,17 +2,17 @@
 title: Gerando código a partir de uma linguagem específica do domínio
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5000b8b6150fe630959f4cc4bbc58617e98d4a3a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 34b834957dfe18e3fc03a86130a95071dda0badf
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72662030"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596574"
 ---
 # <a name="generating-code-from-a-domain-specific-language"></a>Gerando código a partir de uma linguagem específica do domínio
 
@@ -36,27 +36,27 @@ Esta seção discute algumas maneiras de criar, modificar e depurar modelos de t
 
 ## <a name="in-this-section"></a>Nesta seção
 
-[Acessando modelos de modelos de texto](../modeling/accessing-models-from-text-templates.md) \
+[Acessando modelos de modelos de texto](../modeling/accessing-models-from-text-templates.md)\
 Fornece informações básicas sobre como fazer referência à linguagem específica do domínio em modelos de texto.
 
-[Walkthrough: Depurando um modelo de texto que acessa um modelo](../modeling/walkthrough-debugging-a-text-template-that-accesses-a-model.md) \
+[Walkthrough: Depurando um modelo de texto que acessa um modelo](../modeling/walkthrough-debugging-a-text-template-that-accesses-a-model.md)\
 Descreve como fazer a solução de problemas e a depuração em um modelo de texto que se refere a uma linguagem específica do domínio.
 
-[Walkthrough: conectando um host a um processador de diretiva gerado](../modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor.md) \
+[Walkthrough: conectando um host a um processador de diretiva gerado](../modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor.md)\
 Descreve como conectar um host personalizado a um processador de diretiva gerado.
 
-[O comando DslTextTransform](../modeling/the-dsltexttransform-command.md) \
+[O comando DslTextTransform](../modeling/the-dsltexttransform-command.md)\
 Descreve o arquivo de comando que executa o executável TextTransform na linha de comando para modelos de texto que fazem referência a linguagens específicas de domínio.
 
 ## <a name="reference"></a>Referência
 
-[Escrevendo um modelo de texto T4](../modeling/writing-a-t4-text-template.md) \
+[Escrevendo um modelo de texto T4](../modeling/writing-a-t4-text-template.md)\
 Fornece a sintaxe de diretivas de modelo de texto e blocos de controle.
 
-## <a name="related-sections"></a>Seções relacionadas
+## <a name="related-sections"></a>Seções Relacionadas
 
-[Geração de código em tempo de design usando modelos de texto T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md) \
+[Geração de código em tempo de design usando modelos de texto T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md)\
 Explica o processo de transformação do modelo de texto.
 
-[Geração de código em um processo de compilação](../modeling/code-generation-in-a-build-process.md) \
+[Geração de código em um processo de compilação](../modeling/code-generation-in-a-build-process.md)\
 Leia este tópico se você estiver gerando arquivos de uma DSL em um servidor de compilação.

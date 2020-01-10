@@ -14,17 +14,17 @@ helpviewer_keywords:
 - <Project> element [MSBuild]
 - Project element [MSBuild]
 ms.assetid: d1cda56a-dbef-4109-9201-39e962e3f653
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c69d010f9a4e834f9435616747c2776786706445
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 1bb7c49e4f3dc86594c8a3211bacb538d3f10c4f
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62999343"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75597432"
 ---
 # <a name="project-element-msbuild"></a>Elemento Project (MSBuild)
 Elemento raiz necessário de um arquivo de projeto [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].
@@ -50,9 +50,9 @@ Elemento raiz necessário de um arquivo de projeto [!INCLUDE[vstecmsbuild](../ex
 ```
 
 ## <a name="attributes-and-elements"></a>Atributos e elementos
- As seções a seguir descrevem atributos, elementos filho e elementos pai.
+ As seções a seguir descrevem os atributos, bem como os elementos filhos e pais.
 
-### <a name="attributes"></a>Atributos
+### <a name="attributes"></a>{1&gt;{2&gt;Atributos&lt;2}&lt;1}
 
 | Atributo | Descrição |
 |------------------------| - |
@@ -60,15 +60,15 @@ Elemento raiz necessário de um arquivo de projeto [!INCLUDE[vstecmsbuild](../ex
 | `InitialTargets` | Atributo opcional.<br /><br /> Os destinos iniciais serão executados antes dos destinos especificados no atributo `DefaultTargets` ou na linha de comando. Vários destinos são separados por ponto e vírgula (`;`). Se vários arquivos importados definirem `InitialTargets`, todos os destinos mencionados serão executados, na ordem em que as importações forem encontradas. |
 | `Sdk` | Atributo opcional. <br /><br /> O nome e a versão opcional do SDK a ser usado para criar instruções Import implícitas adicionadas ao arquivo .proj. Se nenhuma versão for especificada, o MSBuild tentará resolver uma versão padrão.  Por exemplo `<Project Sdk="Microsoft.NET.Sdk" />` ou `<Project Sdk="My.Custom.Sdk/1.0.0" />`. |
 | `ToolsVersion` | Atributo opcional.<br /><br /> A versão do Conjunto de Ferramentas MSBuild usada para determinar os valores para $(MSBuildBinPath) e $(MSBuildToolsPath). |
-| `TreatAsLocalProperty` | Atributo opcional.<br /><br /> Nomes de propriedade não serão considerados globais. Esse atributo impede que as propriedades específicas de linha de comando substituam valores de propriedade definidos em um arquivo de projeto ou destinos e todas as importações subsequentes. Várias propriedades são separadas por ponto e vírgula (;).<br /><br /> Normalmente, propriedades globais substituem os valores de propriedade que são definidos no arquivo de projeto ou destinos. Se a propriedade está listada no valor `TreatAsLocalProperty`, o valor da propriedade global não substitui os valores de propriedade definidos no arquivo e as importações subsequentes. Para obter mais informações, confira [Como: Compilar os mesmos arquivos de origem com opções diferentes](../msbuild/how-to-build-the-same-source-files-with-different-options.md). **Observação:**  Defina propriedades globais em um prompt de comando usando a opção **-property** (ou **-p**). Você também pode definir ou modificar as propriedades globais para projetos filho em um build de vários projetos usando o atributo `Properties` da tarefa MSBuild. Para saber mais, confira [Tarefa do MSBuild](../msbuild/msbuild-task.md). |
+| `TreatAsLocalProperty` | Atributo opcional.<br /><br /> Nomes de propriedade não serão considerados globais. Esse atributo impede que as propriedades específicas de linha de comando substituam valores de propriedade definidos em um arquivo de projeto ou destinos e todas as importações subsequentes. Várias propriedades são separadas por ponto e vírgula (;).<br /><br /> Normalmente, propriedades globais substituem os valores de propriedade que são definidos no arquivo de projeto ou destinos. Se a propriedade está listada no valor `TreatAsLocalProperty`, o valor da propriedade global não substitui os valores de propriedade definidos no arquivo e as importações subsequentes. Para saber mais, confira [Como compilar os mesmos arquivos de origem com opções diferentes](../msbuild/how-to-build-the-same-source-files-with-different-options.md). **Observação:** defina as propriedades globais na linha de comandos usando a opção **-property** (ou **-p**). Você também pode definir ou modificar as propriedades globais para projetos filho em um build de vários projetos usando o atributo `Properties` da tarefa MSBuild. Para obter mais informações, confira [Tarefa do MSBuild](../msbuild/msbuild-task.md). |
 | `xmlns` | Atributo opcional.<br /><br /> Quando especificado, o atributo `xmlns` deve ter o valor `http://schemas.microsoft.com/developer/msbuild/2003`. |
 
-### <a name="child-elements"></a>Elementos filho
+### <a name="child-elements"></a>Child elements
 
 | Elemento | Descrição |
 | - | - |
 | [Choose](../msbuild/choose-element-msbuild.md) | Elemento opcional.<br /><br /> Avalia a elementos filho para selecionar um conjunto de elementos `ItemGroup` e/ou `PropertyGroup` a ser avaliado. |
-| [Importarar](../msbuild/import-element-msbuild.md) | Elemento opcional.<br /><br /> Permite que um arquivo de projeto importe outro arquivo de projeto. Pode ser que não haja nenhum ou mais de um elemento `Import` em um projeto. |
+| [Import](../msbuild/import-element-msbuild.md) | Elemento opcional.<br /><br /> Permite que um arquivo de projeto importe outro arquivo de projeto. Pode ser que não haja nenhum ou mais de um elemento `Import` em um projeto. |
 | [ImportGroup](../msbuild/importgroup-element.md) | Elemento opcional.<br /><br /> Contém uma coleção de elementos `Import` que são agrupados em uma condição opcional. |
 | [ItemGroup](../msbuild/itemgroup-element-msbuild.md) | Elemento opcional.<br /><br /> Um elemento de agrupamento para itens individuais. Itens são especificados usando o elemento [Item](../msbuild/item-element-msbuild.md). Pode ser que não haja nenhum ou mais de um elemento `ItemGroup` em um projeto. |
 | [ItemDefinitionGroup](../msbuild/itemdefinitiongroup-element-msbuild.md) | Elemento opcional.<br /><br /> Permite definir um conjunto de Definições de Item, que são valores de metadados aplicados por padrão a todos os itens do projeto. ItemDefinitionGroup substitui a necessidade de usar as tarefas `CreateItem` e `CreateProperty`. |
@@ -79,10 +79,10 @@ Elemento raiz necessário de um arquivo de projeto [!INCLUDE[vstecmsbuild](../ex
 | [UsingTask](../msbuild/usingtask-element-msbuild.md) | Elemento opcional.<br /><br /> Fornece uma maneira para registrar tarefas em [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Pode ser que não haja nenhum ou mais de um elemento `UsingTask` em um projeto. |
 
 ### <a name="parent-elements"></a>Elementos pai
- nenhuma.
+ Nenhuma.
 
-## <a name="see-also"></a>Consulte também
-- [Como: Especificar qual destino será compilado primeiro](../msbuild/how-to-specify-which-target-to-build-first.md)
+## <a name="see-also"></a>Veja também
+- [Como especificar qual destino deve ser compilado primeiro](../msbuild/how-to-specify-which-target-to-build-first.md)
 - [Referência de linha de comando](../msbuild/msbuild-command-line-reference.md)
 - [Referência de esquema de arquivos de projeto](../msbuild/msbuild-project-file-schema-reference.md)
 - [MSBuild](../msbuild/msbuild.md)

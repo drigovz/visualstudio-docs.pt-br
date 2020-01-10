@@ -6,17 +6,17 @@ f1_keywords:
 - vs.graphics.designer.effectdesigner
 - vs.graphics.shaderdesigner
 ms.assetid: 5db09a16-b82c-4ba3-8ec9-630cdc109397
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fd82a5c8bee50c778b87927f1074d71a38a21e9f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 85ce7b0f270f0da8728b17610a683dcc17d06189
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72635049"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589923"
 ---
 # <a name="shader-designer"></a>Designer de Sombreador
 
@@ -46,7 +46,7 @@ Esta seção descreve como adicionar um sombreador DGSL ao seu projeto do Visual
 
 1. Verifique se você tem o componente necessário do Visual Studio instalado para trabalhar com gráficos. O componente é chamado de **Editores de imagens e modelos 3D**.
 
-   Para instalá-lo, abra Instalador do Visual Studio selecionando **ferramentas**  > **obter ferramentas e recursos** na barra de menus e, em seguida, selecione a guia **componentes individuais** . Selecione o componente **imagem e editores de modelo 3D** sob a  **Categoria jogos e gráficos** e, em seguida, selecione **Modificar**.
+   Para instalá-lo, abra Instalador do Visual Studio selecionando **ferramentas** > **obter ferramentas e recursos** na barra de menus e, em seguida, selecione a guia **componentes individuais** . Selecione o componente **imagem e editores de modelo 3D** na categoria **jogos e gráficos** e, em seguida, selecione **Modificar**.
 
    ![Componente Editores de imagens e modelos 3D](media/image-3d-model-editors-component.png)
 
@@ -143,7 +143,7 @@ Para associar uma textura diferente a um registro de textura ou modificar outros
 
 A tabela a seguir mostra os parâmetros de sombreador que você pode modificar:
 
-|Parâmetro|Propriedades|
+|Parâmetro|{1&gt;Propriedades&lt;1}|
 |---------------|----------------|
 |**Textura 1** - **Textura 8**|**Access**:                             **Public** para permitir que esta propriedade possa ser configurada pelo Editor de Modelo; caso contrário, **Private**.<br /><br /> **Filename**: o caminho completo do arquivo de textura que está associado com o registro de textura.|
 |**Material Ambiente**|**Access**:                             **Public** para permitir que esta propriedade possa ser configurada pelo Editor de Modelo; caso contrário, **Private**.<br /><br /> **Valor**: a cor difusa do pixel atual devido à luz indireta, ou seja, a luz ambiente.|
@@ -174,7 +174,7 @@ Para obter mais informações sobre como exportar sombreadores, confira [Como ex
 
 ## <a name="keyboard-shortcuts"></a>Atalhos de teclado
 
-|Comando|Atalhos de teclado|
+|{1&gt;Comando&lt;1}|Atalhos de teclado|
 |-------------| - |
 |Mudar para o modo **Selecionar**|**Ctrl**+**G**, **Ctrl**+**Q**<br /><br /> **S**|
 |Mudar para o modo **Zoom**|**Ctrl**+**G**, **Ctrl**+**Z**<br /><br /> **Z**|
@@ -199,7 +199,7 @@ Para obter mais informações sobre como exportar sombreadores, confira [Como ex
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
-|Título|Descrição|
+|Cargo|Descrição|
 |-----------|-----------------|
 |[Trabalhando com ativos 3D para jogos e aplicativos](../designers/working-with-3-d-assets-for-games-and-apps.md)|Fornece uma visão geral das ferramentas do Visual Studio que você pode usar para trabalhar com texturas e imagens, modelos 3D e efeitos de sombreamento.|
 |[Editor de Imagens](../designers/image-editor.md)|Descreve como usar o Editor de Imagens do Visual Studio para trabalhar com texturas e imagens.|

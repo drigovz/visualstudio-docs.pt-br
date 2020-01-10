@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, property functions
 ms.assetid: 2253956e-3ae0-4bdc-9d3a-4881dfae4ddb
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a92d5a593c67f54b50649a48b8f973bbfbff8958
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: b0551162a00437b01c7357dfdac16462aad8f2fc
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65694942"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75597380"
 ---
 # <a name="property-functions"></a>Funções de propriedade
 
@@ -191,7 +191,7 @@ Metadados também podem aparecer em funções de propriedade aninhadas. Para obt
 
 ## <a name="msbuild-doestaskhostexist"></a>MSBuild DoesTaskHostExist
 
-A função de propriedade `DoesTaskHostExist` no MSBuild retorna se um host de tarefas está instalado atualmente para os valores de tempo de execução e arquitetura especificados.
+A função de propriedade `DoesTaskHostExist` no MSBuild retorna se um host de tarefas está instalado atualmente para os valores de runtime e arquitetura especificados.
 
 Essa função de propriedade tem a seguinte sintaxe:
 
@@ -273,7 +273,7 @@ As seguintes exibições de registro estão disponíveis:
 |RegistryView.Registry64|A exibição do registro do aplicativo de 64 bits.|
 |RegistryView.Default|A exibição do registro que corresponde ao processo em que o aplicativo está sendo executado.|
 
-Confira o exemplo abaixo.
+Veja este exemplo:
 
  ```fundamental
 $([MSBuild]::GetRegistryValueFromView('HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft SDKs\Silverlight\v3.0\ReferenceAssemblies', 'SLRuntimeInstallPath', null, RegistryView.Registry64, RegistryView.Registry32))
@@ -338,7 +338,7 @@ Output:
 -->
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Propriedades do MSBuild](../msbuild/msbuild-properties.md)
 

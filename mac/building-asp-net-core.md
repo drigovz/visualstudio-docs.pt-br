@@ -5,12 +5,12 @@ author: sayedihashimi
 ms.author: sayedha
 ms.date: 05/30/2019
 ms.assetid: 771C2F8E-46BC-4280-AFE8-ED9D5C7790CE
-ms.openlocfilehash: 5aa0b02c87335305f29d098b51c89310cc0a9e5d
-ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
+ms.openlocfilehash: 5600fd2f0b6d83a3bd27350a4d4f0137ea44ced2
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73717277"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75398272"
 ---
 # <a name="building-aspnet-core-applications-in-visual-studio-for-mac"></a>Como criar aplicativos ASP.NET Core no Visual Studio para Mac
 
@@ -25,11 +25,11 @@ Neste laboratório, você criará e explorar um aplicativo ASP.NET Core com o Vi
 > * Explorar o modelo de hospedagem, configuração e middleware do ASP.NET Core
 > * Depurar um aplicativo Web ASP.NET Core
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>{1&gt;{2&gt;Pré-requisitos&lt;2}&lt;1}
 
 - [Visual Studio para Mac](https://www.visualstudio.com/vs/visual-studio-mac)
 
-## <a name="intended-audience"></a>Público-alvo
+## <a name="intended-audience"></a>Público-Alvo
 
 Este laboratório destina-se a desenvolvedores que estão familiarizados com o C#, embora uma ampla experiência não seja necessária.
 
@@ -73,9 +73,9 @@ Este laboratório destina-se a desenvolvedores que estão familiarizados com o C
 
     ![](media/netcore-image8.png)
 
-7. Também há uma variedade de arquivos de configuração que servem para gerenciar o projeto, seus pacotes e o aplicativo no runtime. Por exemplo, a [configuração](/aspnet/core/fundamentals/configuration) de aplicativo padrão é armazenada em **appsettings.json**. No entanto, você pode substituir algumas ou todas essas configurações por ambiente, fornecendo um arquivo **appsettings.Development.json** para o ambiente de **Desenvolvimento**.
+7. Também há uma variedade de arquivos de configuração que servem para gerenciar o projeto, seus pacotes e o aplicativo no runtime. Por exemplo, a [configuração](/aspnet/core/fundamentals/configuration) de aplicativo padrão é armazenada em **appsettings.json**. O aninhado abaixo do arquivo appSettings. JSON é o **appSettings. Arquivo Development. JSON** . Aqui, você pode substituir algumas ou todas essas configurações em uma base por ambiente. Visual Studio para Mac aninhará arquivos dessa maneira usando a mesma lógica que o Visual Studio para Windows, para que os arquivos que você precisa acessar com mais frequência estejam no Forefront. 
 
-    ![](media/netcore-image9.png)
+    ![](media/netcore-build-nested.png)
 
 ## <a name="task-3-understanding-how-the-application-is-hosted"></a>Tarefa 3: entendendo como o aplicativo é hospedado
 

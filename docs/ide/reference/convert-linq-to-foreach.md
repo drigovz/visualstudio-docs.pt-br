@@ -3,19 +3,19 @@ title: Refatorar código para converter uma consulta LINQ em uma instrução for
 description: Converta qualquer consulta LINQ escrita em sintaxe de consulta em uma instrução foreach.
 ms.date: 05/15/2018
 ms.topic: reference
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: a618285e1981171eb8f5f2f435fb23d412296b5b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: bb2cdf96d7f7829ff6a6d1394160548da2adae7f
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654542"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595742"
 ---
 # <a name="refactoring-to-convert-linq-to-a-foreach-statement"></a>Refatorar para converter LINQ em uma instrução foreach
 
@@ -41,7 +41,7 @@ Esta refatoração aplica-se a:
 > [!NOTE]
 > Para C#, o código gerado por essas refatorações usa um tipo de explícito ou [var](/dotnet/csharp/language-reference/keywords/var) para a variação de iteração do loop `foreach`. O tipo no código gerado, explícito ou implícito, depende das configurações de estilo de código em escopo. Essas configurações de estilo de código específicas são configuradas no nível do computador em **Ferramentas** > **Opções** > **Editor de Texto** > **C#**  > **Estilo de Código** > **Geral** >  **\'preferências de var**, ou no nível da solução em um arquivo [EditorConfig](../../ide/editorconfig-language-conventions.md#implicit-and-explicit-types). Se você alterar uma configuração de estilo do código em **Opções**, abra o arquivo de código para que as alterações entrem em vigor.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [LINQ](/dotnet/standard/using-linq)
 - [Refatoração](../refactoring-in-visual-studio.md)

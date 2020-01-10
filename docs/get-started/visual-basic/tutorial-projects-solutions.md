@@ -4,19 +4,19 @@ ms.date: 12/12/2018
 ms.technology: vs-ide-general
 ms.custom: get-started
 ms.topic: tutorial
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 22c48086fb98cc4ae25098cb70c642f77f621209
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 48b3f2c9aae099e3ae5f2cf2d8c438fb0f9062a2
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72632567"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590209"
 ---
 # <a name="learn-about-projects-and-solutions-using-visual-basic"></a>Saiba mais sobre projetos e soluções usando Visual Basic
 
@@ -51,9 +51,9 @@ Vamos iniciar nossa exploração criando uma solução vazia. Depois de se famil
 
 ::: moniker range="vs-2017"
 
-1. Abra o Visual Studio.
+1. {1&gt;Abra o Visual Studio.&lt;1}
 
-1. Na barra de menus, escolha **Arquivo** > **Novo** > **Projeto**.
+1. Na barra de menus, escolha **arquivo** > **novo** **projeto**de >.
 
    A caixa de diálogo **Novo Projeto** é aberta.
 
@@ -67,7 +67,7 @@ Vamos iniciar nossa exploração criando uma solução vazia. Depois de se famil
 
 ::: moniker range=">=vs-2019"
 
-1. Abra o Visual Studio.
+1. {1&gt;Abra o Visual Studio.&lt;1}
 
 2. Na tela Iniciar, selecione **Criar um novo projeto**.
 
@@ -87,7 +87,7 @@ Agora vamos adicionar nosso primeiro projeto à solução. Vamos começar com um
 
 ::: moniker range="vs-2017"
 
-1. Ao clicar com o botão direito do mouse ou no menu de contexto da **Solução ‘QuickSolution’** no **Gerenciador de Soluções**, escolha **Adicionar** > **Novo Projeto**.
+1. No menu de contexto ou clique com o botão direito do mouse na **solução ' QuickSolution '** em **Gerenciador de soluções**, escolha **Adicionar** > **novo projeto**.
 
    A caixa de diálogo **Adicionar Novo Projeto** é aberta.
 
@@ -96,7 +96,7 @@ Agora vamos adicionar nosso primeiro projeto à solução. Vamos começar com um
    Um projeto chamado QuickDate é exibido abaixo da solução no **Gerenciador de Soluções**. Atualmente, ele contém um único arquivo chamado *App.config*.
 
    > [!NOTE]
-   > Se a opção **Visual Basic** não for exibida no painel esquerdo da caixa de diálogo, você precisará instalar a *carga de trabalho* **Desenvolvimento para desktop com .NET** do Visual Studio. O Visual Studio usa a instalação baseada em carga de trabalho para instalar somente os componentes necessários para o tipo de desenvolvimento realizado. Uma maneira fácil de instalar uma nova carga de trabalho é escolher o link **Abrir Instalador do Visual Studio** no canto inferior esquerdo da caixa de diálogo **Adicionar Novo Projeto**. Depois que o Instalador do Visual Studio for iniciado, escolha a carga de trabalho **Desenvolvimento para desktop do .NET** e, em seguida, o botão **Modificar**.
+   > Se a opção **Visual Basic** não for exibida no painel esquerdo da caixa de diálogo, você precisará instalar a *carga de trabalho***Desenvolvimento para desktop com .NET** do Visual Studio. O Visual Studio usa a instalação baseada em carga de trabalho para instalar somente os componentes necessários para o tipo de desenvolvimento realizado. Uma maneira fácil de instalar uma nova carga de trabalho é escolher o link **Abrir Instalador do Visual Studio** no canto inferior esquerdo da caixa de diálogo **Adicionar Novo Projeto**. Depois que o Instalador do Visual Studio for iniciado, escolha a carga de trabalho **Desenvolvimento para desktop do .NET** e, em seguida, o botão **Modificar**.
    >
    > ![Abrir o link do Instalador do Visual Studio](media/tutorial-projects-open-installer-vb.png)
 
@@ -104,7 +104,7 @@ Agora vamos adicionar nosso primeiro projeto à solução. Vamos começar com um
 
 ::: moniker range=">=vs-2019"
 
-1. Ao clicar com o botão direito do mouse ou no menu de contexto da **Solução ‘QuickSolution’** no **Gerenciador de Soluções**, escolha **Adicionar** > **Novo Projeto**.
+1. No menu de contexto ou clique com o botão direito do mouse na **solução ' QuickSolution '** em **Gerenciador de soluções**, escolha **Adicionar** > **novo projeto**.
 
    Uma caixa de diálogo é aberta com o título **Adicionar um novo projeto**.
 
@@ -157,7 +157,7 @@ Temos um projeto vazio. Vamos adicionar um arquivo de código.
 
 Vamos adicionar um projeto de teste de unidade em nossa solução. Desta vez, começaremos com um modelo de projeto, de modo que não precisemos adicionar outro arquivo de código ao projeto.
 
-1. Ao clicar com o botão direito do mouse ou no menu de contexto da **Solução ‘QuickSolution’** do **Gerenciador de Soluções**, escolha **Adicionar** > **Novo Projeto**.
+1. Ao clicar com o botão direito do mouse ou no menu de contexto da **Solução ‘QuickSolution’** no **Gerenciador de Soluções**, escolha **Adicionar** > **Novo Projeto**.
 
 ::: moniker range="Vs-2017"
 
@@ -244,14 +244,14 @@ Se você quiser verificar se seu teste de unidade está funcionando, selecione *
 > [!TIP]
 > Se o **Gerenciador de Testes** não abrir automaticamente, abra-o escolhendo **Teste** > **Windows** > **Gerenciador de Testes** na barra de menus.
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
 
 Caso deseje explorar ainda mais o Visual Studio, considere a possibilidade de criar um aplicativo seguindo um dos [tutoriais do Visual Basic](index.yml).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Criar projetos e soluções](../../ide/creating-solutions-and-projects.md)
-- [Gerenciar propriedades de solução e de projeto](../../ide/managing-project-and-solution-properties.md)
+- [Gerenciar propriedades do projeto e da solução](../../ide/managing-project-and-solution-properties.md)
 - [Gerenciar referências em um projeto](../../ide/managing-references-in-a-project.md)
 - [Desenvolver código no Visual Studio sem projetos ou soluções](../../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)
 - [Visão geral do IDE do Visual Studio](../../get-started/visual-studio-ide.md)

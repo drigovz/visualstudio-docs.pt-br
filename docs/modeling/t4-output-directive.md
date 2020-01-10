@@ -2,17 +2,17 @@
 title: T4 Diretiva de saída
 ms.date: 11/04/2016
 ms.topic: reference
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1da8ec010e878ff80a9f46748993705b87193d99
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: eb1634da6374ad49f1386be4403e72e8edeff2ca
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72606222"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591808"
 ---
 # <a name="t4-output-directive"></a>T4 Diretiva de saída
 
@@ -68,6 +68,6 @@ Nos modelos de texto do Visual Studio, a diretiva `output` é usada para definir
 
  `utf-32`
 
- `0` (Padrão do sistema)
+ `0` (padrão do sistema)
 
  Em geral, é possível usar a cadeia de caracteres do WebName ou o número da CodePage de qualquer uma das codificações retornadas por <xref:System.Text.Encoding.GetEncodings%2A?displayProperty=fullName>.

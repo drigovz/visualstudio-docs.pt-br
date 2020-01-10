@@ -5,17 +5,17 @@ ms.topic: conceptual
 f1_keywords:
 - System.Activities.Presentation.View.DesignTimeVariable.UI
 ms.assetid: 0318dfb0-bf8f-4f92-9b86-ae4c1b2161ad
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 59a0da5ad0345ba0733f52d087b262bdc706cd21
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 2ec5e6d16d17024b0b49f977b87ddacc275e5860
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650244"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593168"
 ---
 # <a name="how-to-use-the-variable-designer"></a>Como: Use o designer variável
 
@@ -31,12 +31,12 @@ O designer variável é usado para criar variáveis para uso em cenários e em i
 
 3. Abra o designer de variável clicando no botão **variáveis** no canto inferior esquerdo da tela de design. O designer variável aparece.
 
-4. Clique na linha vazia rotulada **criar variável**. Isso adicionará uma nova linha com uma nova variável usando os seguintes valores padrão: VariableX para o **nome** em que x é um inteiro com um valor inicial de 1 que é incrementado automaticamente para criar nomes de variável exclusivos, **cadeia de caracteres** para a **variável tipo**e **sequência** para o **escopo**. Nenhum valor é adicionado para o **padrão**. Você pode alterar esses valores a qualquer momento durante o processo de design de fluxo de trabalho.
+4. Clique na linha vazia rotulada **criar variável**. Isso adicionará uma nova linha com uma nova variável usando os seguintes valores padrão: VariableX para o **nome** em que x é um inteiro com um valor inicial de 1 que é incrementado automaticamente para criar nomes de variável exclusivos, **cadeia de caracteres** para o **tipo de variável**e **sequência** para o **escopo**. Nenhum valor é adicionado para o **padrão**. Você pode alterar esses valores a qualquer momento durante o processo de design de fluxo de trabalho.
 
     > [!NOTE]
     > Para excluir uma variável, selecione a variável clicando nela e pressione a tecla **delete** .
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Usando o Designer de Fluxo de Trabalho](developing-applications-with-the-workflow-designer.md)
 - [Variables and Arguments](/dotnet/framework/windows-workflow-foundation/variables-and-arguments) (Variáveis e argumentos)

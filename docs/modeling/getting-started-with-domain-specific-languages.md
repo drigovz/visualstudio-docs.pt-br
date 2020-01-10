@@ -2,24 +2,24 @@
 title: Introdução às linguagens específicas do domínio
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c86383ddc833a6b76affa451f21180ed4941ad14
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 226111f7bd2c064fa2aec3cbd4f94a0adeb0e5b8
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985047"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596561"
 ---
 # <a name="get-started-with-domain-specific-languages"></a>Introdução à Linguagem Específica de Domínio
 
 Este tópico explica os conceitos básicos de definição e uso de uma DSL (linguagem específica de domínio) criada com o SDK de modelagem do Visual Studio.
 
 > [!NOTE]
-> O SDK de transformação de modelo de texto e o SDK de modelagem do Visual Studio são instalados automaticamente quando você instala recursos específicos do Visual Studio. Para obter mais detalhes, consulte [esta postagem no blog](https://devblogs.microsoft.com/devops/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/).
+> O SDK de transformação de modelo de texto e o SDK de modelagem do Visual Studio são instalados automaticamente quando você instala recursos específicos do Visual Studio. Para obter mais detalhes, consulte [esta postagem de blog](https://devblogs.microsoft.com/devops/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/).
 
 Se você for novo nas DSLs, recomendamos que você trabalhe no **laboratório de ferramentas DSL**, que pode ser encontrado neste site: [SDK de modelagem e visualização](https://code.msdn.microsoft.com/Visualization-and-Modeling-313535db)
 
@@ -37,13 +37,13 @@ Um dos principais aplicativos de DSLs é gerar código de programa, arquivos de 
 
 O restante desta visão geral é uma explicação que apresenta as operações básicas de criação e uso de uma linguagem específica de domínio no Visual Studio.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>{1&gt;{2&gt;Pré-requisitos&lt;2}&lt;1}
 
 Para definir uma DSL, é necessário ter instalados os seguintes componentes:
 
 | | |
 |-|-|
-| Visual Studio | [http://go.microsoft.com/fwlink/?LinkId=185579](https://visualstudio.microsoft.com/) |
+| {1&gt;Visual Studio&lt;1} | [http://go.microsoft.com/fwlink/?LinkId=185579](https://visualstudio.microsoft.com/) |
 | [!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)] | [http://go.microsoft.com/fwlink/?LinkId=185580](/azure/devops/integrate/index) |
 | SDK de modelagem para Visual Studio | |
 
@@ -147,7 +147,7 @@ A definição de DSL pode especificar como o modelo aparece em um diagrama. Voc�
 
 Você pode exibir um modelo como uma árvore no modo de exibição do **Explorer** enquanto estiver editando um modelo. À medida que você adiciona formas ao diagrama, os elementos de modelo também aparecem no Gerenciador. O Gerenciador pode ser usado mesmo se não houver nenhum diagrama.
 
-Se você não conseguir ver o Explorer na instância de depuração do Visual Studio, no menu **Exibir** aponte para **outras janelas**e, em seguida, clique em *\<Your Language >* **Explorer**.
+Se você não conseguir ver o Explorer na instância de depuração do Visual Studio, no menu **Exibir** aponte para **outras janelas**e clique em *\<seu idioma >* **Explorer**.
 
 ### <a name="the-api-of-your-dsl"></a>A API de sua DSL
 
@@ -209,7 +209,7 @@ Renomeie as classes e relações de domínio existentes. Por exemplo, a partir d
 
     2. Abra o janela Propriedades e posicione-o para que você possa ver o Gerenciador de DSL e as propriedades ao mesmo tempo.
 
-    3. No Gerenciador de DSL, expanda **Editor**, **guias da caixa de ferramentas**, *\<your > DSL*e, em seguida, **ferramentas**.
+    3. No Gerenciador de DSL, expanda **Editor**, **guias da caixa de ferramentas**, *\<> DSL*e, em seguida, **ferramentas**.
 
     4. Clique no **exemploelement**. Esse é o item da caixa de ferramentas usado para criar elementos.
 
@@ -225,7 +225,7 @@ Renomeie as classes e relações de domínio existentes. Por exemplo, a partir d
 
     2. Clique em **transformar todos os modelos** na barra de ferramentas de Gerenciador de soluções
 
-    3. Pressione F5. Aguarde até que a instância experimental do Visual Studio seja exibida.
+    3. {1&gt;Pressione {2&gt;F5&lt;2}.&lt;1} Aguarde até que a instância experimental do Visual Studio seja exibida.
 
 4. Na solução de depuração na instância experimental do Visual Studio, abra um arquivo de modelo de teste. Arraste elementos para ele na caixa de ferramentas. Observe que as legendas da ferramenta e os nomes de tipo no Gerenciador de DSL foram alterados.
 
@@ -264,7 +264,7 @@ Renomeie as classes e relações de domínio existentes. Por exemplo, a partir d
 
 3. Mapeie os decoradores para as propriedades.
 
-   1. Abra a janela detalhes de DSL. Em geral, ele está em uma guia ao lado da janela saída. Se você não puder vê-lo, no menu **Exibir** , aponte para **outras janelas**e clique em **detalhes de DSL**.
+   1. Abra a janela Detalhes de DSL. Em geral, ele está em uma guia ao lado da janela saída. Se você não puder vê-lo, no menu **Exibir** , aponte para **outras janelas**e clique em **detalhes de DSL**.
 
    2. No diagrama de definição de DSL, clique na linha que conecta a classe de domínio **Person** à classe Shape.
 
@@ -333,7 +333,7 @@ Renomeie as classes e relações de domínio existentes. Por exemplo, a partir d
 
     1. No **Gerenciador de DSL**, expanda o **Editor** e as guias da **caixa de ferramentas**.
 
-    2. Clique com o botão direito do mouse *\<your > DSL* e clique em **Adicionar nova ferramenta de elemento**.
+    2. Clique com o botão direito do mouse *\<> DSL* e clique em **Adicionar nova ferramenta de elemento**.
 
     3. Defina a propriedade **Name** da nova ferramenta e defina sua propriedade de **classe** como cidade.
 
@@ -341,7 +341,7 @@ Renomeie as classes e relações de domínio existentes. Por exemplo, a partir d
 
 7. Crie uma ferramenta de conector para fazer um vínculo entre cidades e pessoas.
 
-    1. Clique com o botão direito do mouse *\<your > DSL* e clique em **Adicionar nova ferramenta de conector**.
+    1. Clique com o botão direito do mouse *\<> DSL* e clique em **Adicionar nova ferramenta de conector**.
 
     2. Defina a propriedade Name da nova ferramenta.
 
@@ -407,7 +407,7 @@ Renomeie as classes e relações de domínio existentes. Por exemplo, a partir d
 
 2. Reconstrua quaisquer DSLs experimentais ou outras extensões experimentais do Visual Studio que você ainda deseja usar.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Noções básicas sobre modelos, classes e relações](../modeling/understanding-models-classes-and-relationships.md)
 - [Como definir uma linguagem específica de domínio](../modeling/how-to-define-a-domain-specific-language.md)

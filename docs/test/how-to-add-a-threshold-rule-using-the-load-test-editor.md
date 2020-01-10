@@ -8,15 +8,15 @@ helpviewer_keywords:
 - load tests, analyzing
 - thresholds in load tests
 ms.assetid: 3d8fac8f-426f-4155-9ced-f7cd4c79792c
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4ecec4826966205d849c07169da954198d687696
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d1389df0c307ad6ec65575fc7934e622928a0ca1
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72644436"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591626"
 ---
 # <a name="how-to-add-a-threshold-rule-using-the-load-test-editor"></a>Como adicionar uma regra de limite usando o Editor de Teste de Carga
 
@@ -41,8 +41,8 @@ As regras de limite nos testes de carga comparam um valor de contador de desempe
     > [!NOTE]
     > Defina a propriedade **Alertar caso seja superado** como **Verdadeiro** para indicar que ultrapassar um limite é um problema ou como **Falso** para indicar que ficar abaixo do limite é um problema.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Analisar violações de regra de limite](../test/analyze-threshold-rule-violations-in-load-tests.md)
 - [Especificar os conjuntos de contadores e as regras de limite para computadores em um teste de carga](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)
-- [Analisar resultados de teste de carga](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
+- [Analisar resultados do teste de carga](../test/analyze-load-test-results-using-the-load-test-analyzer.md)

@@ -5,23 +5,23 @@ ms.topic: conceptual
 f1_keywords:
 - System.Activities.Presentation.View.ExpressionTextBox.UI
 ms.assetid: b5f961dd-6dda-41a9-9cae-0383d479ef3d
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9fc76139d6989421b49c8c80ef325b51a6934cb4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: aff5654214809cf2f57767005153ba557df487c1
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650280"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75584537"
 ---
 # <a name="how-to-use-the-expression-editor"></a>Como: Use o editor de expressão
 
 O editor de expressão é um controle Designer de Fluxo de Trabalho usado em muitas atividades de fluxo de trabalho para inserir e avaliar expressões. O editor de expressão fornece uma experiência completa de edição de IDE, incluindo IntelliSense, colorização, ParamInfo, rabiscos de erro, entre outros recursos. O compilador valida a expressão depois que ela é inserida. Se a expressão é inválido, um ícone de erro é exibido. O editor também pode ser aberto como uma caixa de diálogo **Editor de expressão** .
 
-As expressões são valores literais ou Visual Basic código associado a argumentos ou propriedades. Eles contêm elementos de valor (por exemplo, variáveis, constantes, literais, Propriedades) que são combinados com operações para gerar um novo valor. As expressões são escritas usando a sintaxe de VB.NET mesmo se o aplicativo estiver em um programa usando C#. Isso significa que a capitalização não importa, a comparação é executada usando um único sinal de igual ("=" em vez de "= ="), os operadores boolianos são as palavras "and" e "or", em vez dos símbolos "& &" e "| |", e **nada** é usado em vez de **NULL** . Para obter mais informações sobre expressões e operadores no Visual Basic e para alguns exemplos, consulte [operadores e expressões em Visual Basic](/previous-versions/visualstudio/visual-studio-2010/a1w3te48(v=vs.100)).
+As expressões são valores literais ou Visual Basic código associado a argumentos ou propriedades. Eles contêm elementos de valor (por exemplo, variáveis, constantes, literais, Propriedades) que são combinados com operações para gerar um novo valor. As expressões são escritas usando a sintaxe de VB.NET mesmo se o aplicativo estiver em um programa usando C#. Isso significa que a capitalização não importa, a comparação é executada usando um único sinal de igual ("=" em vez de "= ="), os operadores boolianos são as palavras "and" e "or", em vez dos símbolos "& &" e "| |", e **nada** é usado em vez de **NULL**. Para obter mais informações sobre expressões e operadores no Visual Basic e para alguns exemplos, consulte [operadores e expressões em Visual Basic](/previous-versions/visualstudio/visual-studio-2010/a1w3te48(v=vs.100)).
 
 O **Editor de expressões** se comporta da seguinte maneira:
 
@@ -45,7 +45,7 @@ O **Editor de expressões** se comporta da seguinte maneira:
 
 3. Clique no editor de expressão esquerdo do designer de atividade para atividades de <xref:System.Activities.Statements.Assign> .
 
-     As cadeias de caracteres de marca d' água cinza **\<To >** e **\<Enter uma expressão VB >** são as cadeias de caracteres de texto padrão para editores de expressão na atividade <xref:System.Activities.Statements.Assign>.
+     As cadeias de caracteres de marca d' água cinza **\<para >** e **\<inserir uma expressão VB >** são as cadeias de caracteres de texto padrão para editores de expressão na atividade <xref:System.Activities.Statements.Assign>.
 
 4. Digite sua expressão. Se você inserir uma cadeia de caracteres, certifique-se coloque aspas ao redor de cadeia de caracteres. Se você escolher para associar o argumento da expressão a uma variável, deixe a aspas - tica.
 
@@ -53,6 +53,6 @@ O **Editor de expressões** se comporta da seguinte maneira:
 
      Uma maneira alternativa de inserir ou editar uma expressão é clicar nas reticências ao lado do nome da propriedade na grade de propriedades. A seleção das reticências abre o **Editor de expressão** como uma caixa de diálogo.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - <xref:System.Activities.Presentation.View.ExpressionTextBox>

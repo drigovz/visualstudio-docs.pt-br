@@ -14,17 +14,17 @@ helpviewer_keywords:
 - MSBuild, tasks
 - MSBuild, dependency diagrams
 - MSBuild, validating code
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9fc852b4d5003cf809248c72ca3ac42ad3a6bf23
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 36320daf91380d0b04333b228a1d4b9d58c6693c
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72981128"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594013"
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>Validar o código com diagramas de dependência
 
@@ -44,7 +44,7 @@ Para garantir que o código não entre em conflito com seu design, valide seu c�
 
 **Requirements**
 
-- Visual Studio
+- {1&gt;Visual Studio&lt;1}
 
   Para criar um diagrama de dependência para um projeto do .NET Core, você deve ter o Visual Studio 2019 versão 16,2 ou posterior.
 
@@ -57,7 +57,7 @@ Você pode validar o código manualmente de um diagrama de dependência aberto n
 > [!IMPORTANT]
 > Se você quiser executar a validação de camada usando o Team Foundation Server (TFS), também deverá instalar a mesma versão do Visual Studio em seu servidor de compilação.
 
-## <a name="live-dependency-validation"></a>Validação de dependência ao vivo
+## <a name="live-dependency-validation"></a>Validação de dependência dinâmica
 
 A validação de dependência ocorre em tempo real e os erros são mostrados imediatamente no **lista de erros**.
 
@@ -200,7 +200,7 @@ Para gerenciar erros na janela de Lista de Erros, consulte [resolver erros de va
 
 A tabela a seguir descreve problemas na validação da camada e sua resolução. Esses problemas são diferentes dos erros resultantes de conflitos entre o código e o design. Para obter mais informações sobre esses erros, consulte [solucionar problemas de validação de camada](#troubleshoot-layer-validation-issues).
 
-|**Lo**|**Causa possível**|**Resolução**|
+|**Problema**|**Causa possível**|**Resolução**|
 |-|-|-|
 |Os erros de validação não ocorrem como esperado.|A validação não funciona em diagramas de dependência que são copiados de outros diagramas de dependência no Gerenciador de Soluções e que estão no mesmo projeto de modelagem. os diagramas de dependência que são copiados dessa forma contêm as mesmas referências que o diagrama de dependência original.|Adicione um novo diagrama de dependência ao projeto de modelagem.<br /><br /> Copie os elementos do diagrama de dependência de origem para o novo diagrama.|
 
@@ -218,7 +218,7 @@ A seção a seguir descreve a sintaxe usada nesses erros, explica o significado 
 
 |**Sintaxe**|**Descrição**|
 |-|-|
-|*Artefaton*(*ArtifactTypeN*)|O *artefaton* é um artefato associado a uma camada no diagrama de dependência.<br /><br /> *ArtifactTypeN* é o tipo de *artefaton*, como uma **classe** ou um **método**, por exemplo:<br /><br /> MySolution.MyProject.MyClass.MyMethod(Method)|
+|*ArtifactN*(*ArtifactTypeN*)|O *artefaton* é um artefato associado a uma camada no diagrama de dependência.<br /><br /> *ArtifactTypeN* é o tipo de *artefaton*, como uma **classe** ou um **método**, por exemplo:<br /><br /> MySolution.MyProject.MyClass.MyMethod(Method)|
 |*NamespaceNameN*|O nome de um namespace.|
 |*LayerNameN*|O nome de uma camada no diagrama de dependência.|
 |*DependencyType*|O tipo de relação de dependência entre *Artifact1* e *Artifact2*. Por exemplo, *Artifact1* tem uma relação de **chamadas** com *Artifact2*.|
@@ -229,10 +229,12 @@ A seção a seguir descreve a sintaxe usada nesses erros, explica o significado 
 | DV1001: **nome de namespace inválido** | Esse problema é relatado em um elemento de código associado a uma camada que a propriedade "nomes de namespace permitidos" não contém o namespace no qual esse elemento de código está definido. Esta é uma violação de restrição de nomenclatura. Observe que a sintaxe de "nomes de namespace permitidos" é uma lista ponto-e-vírgula dos namespaces nos quais os elementos de código associados à camada têm permissão para serem definidos. |
 | DV1002: **dependência de namespace não referenciable** | Esse problema é relatado em um elemento de código associado a uma camada e referenciando outro elemento de código definido em um namespace que é definido na propriedade "namespace não referenciable" da camada. Esta é uma violação de restrição de nomenclatura. Observe que a propriedade "namespaces não referenciable" é definida como uma lista separada por ponto-e-vírgula de namespaces que não devem ser referenciados em elementos de código associados a essa camada. |
 | DV1003: **nome de namespace não permitido** | Esse problema é relatado em um elemento de código associado a uma camada que a propriedade "nomes de namespaces não permitidos" contém o namespace no qual esse elemento de código está definido. Esta é uma violação de restrição de nomenclatura. Observe que a propriedade "nome do namespace não permitido" é definida como uma lista separada por ponto e vírgula de namespaces nos quais elementos de código associados a essa camada não devem ser definidos. |
+| DV2001: **presença de diagrama de camada** | Esse problema é relatado em um projeto que não inclui um arquivo de diagrama de dependência, mas refere-se aos analisadores de validação de dependência. Se a validação de dependência não tiver sido usada, você poderá remover "Microsoft. DependencyValidation. Analyzers" diretamente de Gerenciador de Soluções ou suprimir este aviso. Para adicionar um diagrama de dependência, consulte [criar diagramas de dependência do seu código](../modeling/create-layer-diagrams-from-your-code.md). |
+| DV2002: **base de tipos não mapeados** | Esse problema é relatado quando um elemento de código não está mapeado para nenhuma camada. |
 | DV3001: **link ausente** | A camada '*LayerName*' vincula-se ao '*artefato*', que não foi encontrado. Você não tem uma referência de assembly? |
 | DV9001: **análise de arquitetura encontrou erros internos** | Os resultados talvez não estejam completos. Para obter mais informações, consulte o log de eventos da compilação detalhado ou a janela de saída. |
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Validação de dependência ao vivo no Visual Studio](https://devblogs.microsoft.com/devops/live-dependency-validation-in-visual-studio-2017/)
 - [Validar o sistema durante o desenvolvimento](../modeling/validate-your-system-during-development.md)

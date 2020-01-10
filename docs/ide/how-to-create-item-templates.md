@@ -4,15 +4,15 @@ ms.date: 01/02/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - item templates [Visual Studio], creating
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: d213ef7cd1c45043efbaad9fca4317f7a693bf4f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 62004c5c96fa708f98ab49f4810ec2fc1c38eadc
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72655854"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594715"
 ---
 # <a name="how-to-create-item-templates"></a>Como criar modelos de item
 
@@ -78,7 +78,7 @@ Você pode especificar que o modelo deve aparecer apenas para determinados subti
 
 1. Defina o valor de texto do elemento para um dos seguintes valores:
 
-    - Windows
+    - Portal
     - Office
     - Banco de Dados
     - Web
@@ -133,7 +133,7 @@ Em alguns casos, convém criar um modelo de item manualmente, desde o início.
 
 ::: moniker-end
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Criar modelos de projeto e de item](../ide/creating-project-and-item-templates.md)
 - [Como criar modelos de item multiarquivos](../ide/how-to-create-multi-file-item-templates.md)

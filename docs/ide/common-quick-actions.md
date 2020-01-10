@@ -3,20 +3,20 @@ title: Ações Rápidas comuns
 description: As ações rápidas mais populares C# para e Visual Basic incluindo a correção de palavras-chave ou símbolos incorretos, a resolução de conflitos de mesclagem, a remoção de importações necessárias, a geração de tipos, a introdução de variáveis locais, etc.
 ms.date: 03/28/2018
 ms.topic: reference
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: bad97ac5574afd65103263b2ce51a4dfba02741c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: db7a3a550f6bfc1250679eeefa0ba3ec6291eef0
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652243"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585516"
 ---
 # <a name="common-quick-actions"></a>Ações Rápidas comuns
 
@@ -30,7 +30,7 @@ Nesta seção, as Ações Rápidas corrigem erros no código que podem fazer com
 
 ### <a name="correct-misspelled-symbol-or-keyword"></a>Corrigir o símbolo ou a palavra-chave incorreta
 
-Se você digitar incorretamente um tipo ou uma palavra-chave no Visual Studio acidentalmente, essa Ação Rápida corrigirá esse erro de forma automática. Você verá esses itens no menu de lâmpada como **"alterar" \<misspelled palavra > ' em ' \<correct palavra > ' "** . Por exemplo:
+Se você digitar incorretamente um tipo ou uma palavra-chave no Visual Studio acidentalmente, essa Ação Rápida corrigirá esse erro de forma automática. Você verá esses itens no menu de lâmpada como **"alterar"\<palavra incorreta > ' para '\<corrigir > de palavras ' "** . Por exemplo:
 
 ```csharp
 // Before
@@ -950,6 +950,6 @@ End Function
 | ------- | -------------------- | ---------------- |
 | CS4032, BC37057 | C# e Visual Basic | Visual Studio 2017 e posterior |
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Ações rápidas](../ide/quick-actions.md)

@@ -3,18 +3,18 @@ title: Novidades no MSBuild 15 | Microsoft Docs
 ms.date: 03/01/2017
 ms.topic: conceptual
 ms.assetid: 9976b6fd-d052-4017-b848-35b5bf4b2f66
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
 monikerRange: '>=vs-2017'
-ms.openlocfilehash: cd3e86e3cbaaf9c368f848cbd0136c0473932490
-ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
+ms.openlocfilehash: 49e248ee0e5537ae54957695ca698b041fc1ce8b
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70913103"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75567274"
 ---
 # <a name="whats-new-in-msbuild-15"></a>Novidades no MSBuild 15
 
@@ -39,7 +39,7 @@ Agora o MSBuild está disponível como parte do [SDK do .NET Core](https://www.m
 - As propriedades `SDK35ToolsPath` e `SDK40ToolsPath` apontam para o SDK do .NET Framework que é empacotado com esta versão do Visual Studio (por exemplo, 10.0A para as ferramentas 4.X).
 
 ## <a name="updates"></a>Atualizações
-- O [elemento Project](../msbuild/project-element-msbuild.md) tem um novo atributo `SDK`. Além disso, agora o atributo `Xmlns` é opcional. Para obter mais informações sobre o atributo `SDK`, veja [Como: Usar SDKs de projeto do MSBuild](../msbuild/how-to-use-project-sdk.md), [Pacotes, metapacotes e estruturas](/dotnet/core/packages) e [Adições ao formato csproj para .NET Core](/dotnet/core/tools/csproj).
+- O [elemento Project](../msbuild/project-element-msbuild.md) tem um novo atributo `SDK`. Além disso, agora o atributo `Xmlns` é opcional. Para saber mais sobre o atributo `SDK`, confira [Como usar SDKs de projeto do MSBuild](../msbuild/how-to-use-project-sdk.md), [Pacotes, metapacotes e estruturas](/dotnet/core/packages) e [Adições ao formato csproj para .NET Core](/dotnet/core/tools/csproj).
 - O [elemento Item](../msbuild/item-element-msbuild.md) fora dos destinos tem um novo atributo `Update`. Além disso, a restrição no atributo `Remove` foi eliminada.
 - *Directory.Build.props* é um arquivo definido pelo usuário que fornece personalizações de projetos em um diretório. Esse arquivo é importado automaticamente de *Microsoft.Common.props*, a menos que a propriedade `ImportDirectoryBuildTargets` seja definida como **false**. *Directory.Build.targets* é importado por *Microsoft.Common.targets*.
 - Os metadados com um nome que não entra em conflito com a lista atual de atributos, opcionalmente, podem ser expressos como um atributo. Para saber mais, confira [elemento item](../msbuild/item-element-msbuild.md).
@@ -51,5 +51,5 @@ Agora o MSBuild está disponível como parte do [SDK do .NET Core](https://www.m
 - `NormalizeDirectory` combina elementos de caminho, garante uma barra à direita e garante que a cadeia de caracteres de saída tem os caracteres separadores de diretório corretos do sistema operacional atual.
 - `GetPathOfFileAbove` retorna o caminho do arquivo imediatamente anterior a esse. É funcionalmente equivalente a chamar `<Import Project="$([MSBuild]::GetDirectoryNameOfFileAbove($(MSBuildThisFileDirectory), dir.props))\dir.props" />`
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 - [MSBuild](../msbuild/msbuild.md)

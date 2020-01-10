@@ -9,17 +9,17 @@ helpviewer_keywords:
 - SQLEXPRESS
 - upgrading SQLExpress to SQLExpress
 - upgrading to LocalDB
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: e0196c582fbe673d73c7aeb89280d05e11a071a5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 195cab863554bc60478df4e80319eab80124140a
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72639570"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586088"
 ---
 # <a name="upgrade-mdf-files"></a>Atualizar arquivos .mdf
 
@@ -101,7 +101,7 @@ Você também pode modificar uma conexão SQL Server Express para usar o LocalDB
 
 ### <a name="to-make-sql-server-express-the-default-database-engine"></a>Para fazer SQL Server Express o mecanismo de banco de dados padrão
 
-1. Na barra de menus, selecione **ferramentas**  > **Opções**.
+1. Na barra de menus, selecione **Ferramentas** > **Opções**.
 
 2. Na caixa de diálogo **Opções** , expanda as opções **ferramentas de banco** de dados e, em seguida, selecione **conexões de dado**.
 
@@ -111,6 +111,6 @@ Você também pode modificar uma conexão SQL Server Express para usar o LocalDB
 
     SQL Server Express será o mecanismo de banco de dados padrão para seus aplicativos.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Acessando dados no Visual Studio](accessing-data-in-visual-studio.md)

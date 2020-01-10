@@ -3,20 +3,20 @@ title: Mover um tipo para uma refatoração de arquivo correspondente
 description: Mova o tipo para um arquivo separado com o mesmo nome. Clique com o botão direito do mouse no tipo, selecione Ações Rápidas e Refatorações e selecione Mover Tipo para <TypeName>.cs.
 ms.date: 01/26/2018
 ms.topic: reference
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: ba822981ade5ebdc191732e0a32b02a9a4005fb4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ba082e90c2447d1da7510ce16f888f67a52b5ac0
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666483"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585265"
 ---
 # <a name="move-a-type-to-a-matching-file-refactoring"></a>Refatoração Mover um tipo para um arquivo correspondente
 
@@ -61,6 +61,6 @@ Esta refatoração aplica-se a:
 
       ![Resultado embutido – Visual Basic](media/movetype-result-vb.png)
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Refatoração](../refactoring-in-visual-studio.md)

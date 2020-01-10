@@ -6,21 +6,21 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - app.config files, adding to C# projects
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 48e6516b48b524c3da4d80bc5171608ac1aea03d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3eb813dc5d4389b002851a904d61219b0d5c316e
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654258"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593636"
 ---
 # <a name="how-to-add-an-application-configuration-file-to-a-c-project"></a>Como adicionar um arquivo de configuração de aplicativo a um projeto C#
 
-Ao adicionar um arquivo de configuração de aplicativo (arquivo *app.config*) a um projeto C#, você pode personalizar o modo como o Common Language Runtime localiza e carrega arquivos do assembly. Para saber mais sobre arquivos de configuração de aplicativo, veja [Como o tempo de execução localiza assemblies (.NET Framework)](/dotnet/framework/deployment/how-the-runtime-locates-assemblies).
+Ao adicionar um arquivo de configuração de aplicativo (arquivo *app.config*) a um projeto C#, você pode personalizar o modo como o Common Language Runtime localiza e carrega arquivos do assembly. Para saber mais sobre arquivos de configuração de aplicativo, veja [Como o runtime localiza assemblies (.NET Framework)](/dotnet/framework/deployment/how-the-runtime-locates-assemblies).
 
 > [!NOTE]
 > Os aplicativos da UWP não contêm um arquivo *app.config*.
@@ -39,7 +39,7 @@ Quando você cria seu projeto, o ambiente de desenvolvimento copia automaticamen
 
      Um arquivo chamado *app.config* é adicionado ao seu projeto.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Gerenciar configurações do aplicativo (.NET)](../ide/managing-application-settings-dotnet.md)
 - [Esquema do arquivo de configuração (.NET Framework)](/dotnet/framework/configure-apps/file-schema/index)

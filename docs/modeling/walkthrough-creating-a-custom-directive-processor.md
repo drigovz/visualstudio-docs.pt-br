@@ -5,20 +5,20 @@ ms.topic: conceptual
 helpviewer_keywords:
 - text templates, custom directive processors
 - walkthroughs [text templates], directive processor
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 73473a549c774cd0f4302404e2ca3a450cc2e6d2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8e280f64cc23dc2e949e5aa896a8e20673a3f293
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666989"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596483"
 ---
 # <a name="walkthrough-create-a-custom-directive-processor"></a>Passo a passo: criar um processador de diretiva personalizado
 
@@ -84,9 +84,9 @@ End Property
 
 2. Adicione referências a esses assemblies:
 
-    - **Microsoft. VisualStudio. TextTemplating. \*.0**
+    - **Microsoft.VisualStudio.TextTemplating.\*.0**
 
-    - **Microsoft. VisualStudio. TextTemplating. interfaces. \*.0**
+    - **Microsoft.VisualStudio.TextTemplating.Interfaces.\*.0**
 
 3. Substitua o código em **Class1** pelo código a seguir. Este código define uma classe CustomDirectiveProcessor que herda da classe <xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor> e implementa os métodos necessários.
 
@@ -607,7 +607,7 @@ End Property
 
 ### <a name="build-the-project"></a>Compilar o projeto
 
-Compile o projeto. No menu **Compilar**, clique em **Compilar Solução**.
+Crie o projeto. No menu **Compilar**, clique em **Compilar Solução**.
 
 ## <a name="register-the-directive-processor"></a>Registrar o processador de diretivas
 
@@ -637,9 +637,9 @@ Nesta seção, você adiciona uma chave para o processador de diretriz personali
 
 1. Execute o comando `regedit` usando o menu iniciar ou a linha de comando.
 
-2. Navegue até o local **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio \\ \* 0 \ TextTemplating\DirectiveProcessors**e clique no nó.
+2. Navegue até o local **HKEY_LOCAL_MACHINE \software\microsoft\visualstudio\\\*0 \ TextTemplating\DirectiveProcessors**e clique no nó.
 
-   Em sistemas de 64 bits, use **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio \\ \*.0 \ TextTemplating\DirectiveProcessors**
+   Em sistemas de 64 bits, use **HKEY_LOCAL_MACHINE \software\wow6432node\microsoft\visualstudio\\\*. 0 \ TextTemplating\DirectiveProcessors**
 
 3. Adicione uma nova chave chamada CustomDirectiveProcessor.
 
@@ -654,18 +654,18 @@ Nesta seção, você adiciona uma chave para o processador de diretriz personali
 
      A chave do Registro deverá ter os seguintes valores:
 
-   | Name | Digite | Dados |
+   | Name | {1&gt;Tipo&lt;1} | Dados |
    |-|-|-|
    | (Padrão) | REG_SZ | (valor não definido) |
-   | Class | REG_SZ | CustomDP.CustomDirectiveProcessor |
-   | CodeBase | REG_SZ | <strong>\<Path à sua solução ></strong> CustomDP\bin\Debug\CustomDP.dll |
+   | Classe | REG_SZ | CustomDP.CustomDirectiveProcessor |
+   | CodeBase | REG_SZ | <strong>\<caminho para sua solução ></strong> CustomDP\bin\Debug\CustomDP.dll |
 
      Se você colocou o assembly no GAC, os valores deverão se parecer com o seguinte:
 
-   | Name | Digite | Dados |
+   | Name | {1&gt;Tipo&lt;1} | Dados |
    |-|-|-|
    | (Padrão) | REG_SZ | (valor não definido) |
-   | Class | REG_SZ | CustomDP.CustomDirectiveProcessor |
+   | Classe | REG_SZ | CustomDP.CustomDirectiveProcessor |
    | Assembly | REG_SZ | CustomDP.dll |
 
 6. Reinicie o Visual Studio.
@@ -877,7 +877,7 @@ Depois de testar seu processador de diretriz personalizado, você pode adicionar
 1. Substitua o código em *TestDP.tt* pelo seguinte. O HTML é realçado. Certifique-se de substituir a cadeia de caracteres `YOUR PATH` pelo caminho para o arquivo *DocFile. xml* .
 
     > [!NOTE]
-    > As marcas adicionais Open \< # e close # > separam o código da instrução das marcas HTML.
+    > As marcas adicionais Open \<# e close # > separam o código da instrução das marcas HTML.
 
     ```csharp
     <#@ assembly name="System.Xml" #>

@@ -1,41 +1,41 @@
 ---
 title: Executar como administrador
-ms.date: 06/05/2018
+ms.date: 01/06/2020
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio, user permissions
 - user permissions
 - administrative privileges
 - permissions
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6086485ef20330de7971297f52a112d5183ee4a2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 927031b4755644aeac553367a4f8a08faa0c0992
+ms.sourcegitcommit: 5421999c9ff05b3242d33e4b0465f8bc29c7c643
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647344"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "75718630"
 ---
 # <a name="user-permissions-and-visual-studio"></a>Permissões de usuário e o Visual Studio
 
-Por motivos de segurança, você deve executar o Visual Studio como um usuário normal sempre que possível.
+Por motivos de segurança, você deve executar o Visual Studio como um usuário típico sempre que possível.
 
 > [!WARNING]
 > Você deve se certificar de não compilar, iniciar ou depurar qualquer solução do Visual Studio que não venha de uma pessoa de confiança ou de uma localidade confiável.
 
-Você pode fazer quase tudo no IDE do Visual Studio como um usuário normal. Você precisa de permissões de administrador para concluir as seguintes tarefas:
+Você pode fazer quase tudo no IDE do Visual Studio como um usuário típico. Você precisa de permissões de administrador para concluir as seguintes tarefas:
 
 |Área|Tarefa|Para obter mais informações|
 |----------|----------| - |
-|Instalação|Instale o Visual Studio.|[Instalar o Visual Studio](../install/install-visual-studio.md)|
+|Instalação|Instalar ou modificar o Visual Studio.|[Instalar o Visual Studio](../install/install-visual-studio.md), [Modificar o Visual Studio](../install/modify-visual-studio.md)|
 ||Instalar, atualizar ou remover conteúdo da Ajuda local.|[Instalar e gerenciar o conteúdo da Ajuda local](../help-viewer/install-manage-local-content.md)|
-|Caixa de Ferramentas|Adicionar controles COM clássicos à **Caixa de ferramentas**.|[Caixa de Ferramentas](../ide/reference/toolbox.md)|
+|Caixa de ferramentas|Adicionar controles COM clássicos à **Caixa de ferramentas**.|[Caixa de Ferramentas](../ide/reference/toolbox.md)|
 |Compilação|Usar eventos de pós-build que registram um componente.|[Noções básicas sobre etapas e eventos de build personalizados](/cpp/build/understanding-custom-build-steps-and-build-events)|
 ||Incluir uma etapa de registro ao criar projetos C++.||
-|Depuração|Depurar aplicativos executados com permissões elevadas.|[Preparação e configurações do depurador](../debugger/debugger-settings-and-preparation.md)|
+|{1&gt;Depuração&lt;1}|Depurar aplicativos executados com permissões elevadas.|[Preparação e configurações do depurador](../debugger/debugger-settings-and-preparation.md)|
 ||Depurar aplicativos que são executados em uma conta de usuário diferente, como sites do ASP.NET.|[Depurar aplicativos ASP.NET e AJAX](../debugger/how-to-enable-debugging-for-aspnet-applications.md)|
 ||Depurar na zona para XBAP (aplicativos de navegador XAML).|[Host do WPF (PresentationHost.exe)](/dotnet/framework/wpf/app-development/wpf-host-presentationhost-exe)|
 ||Usar o emulador para depurar projetos de serviço de nuvem do Microsoft Azure.|[Depurar um serviço de nuvem no Visual Studio](/azure/vs-azure-tools-debug-cloud-services-virtual-machines)|
@@ -55,7 +55,7 @@ Se você precisar executar o Visual Studio como administrador, siga estas etapas
 
 1. Abra o menu **Iniciar** e role até o Visual Studio 2017.
 
-1. No menu de contexto ou de atalho do **Visual Studio 2017**, selecione **Mais** > **Executar como administrador**.
+1. No menu de contexto ou clique com o botão direito do mouse no **Visual Studio 2017**, selecione **mais** > **Executar como administrador**.
 
    Quando o Visual Studio for iniciado, **(Administrador)** será exibido após o nome do produto na barra de título.
 
@@ -65,7 +65,7 @@ Se você precisar executar o Visual Studio como administrador, siga estas etapas
 
 1. Abra o menu **Iniciar** e role a página até o Visual Studio 2019.
 
-1. No menu de contexto ou de atalho do **Visual Studio 2019**, selecione **Mais** > **Executar como administrador**.
+1. No menu de contexto ou clique com o botão direito do mouse no **Visual Studio 2019**, selecione **mais** > **Executar como administrador**.
 
    Quando o Visual Studio for iniciado, **(Administrador)** será exibido após o nome do produto na barra de título.
 
@@ -73,7 +73,7 @@ Se você precisar executar o Visual Studio como administrador, siga estas etapas
 
 Você também pode modificar o atalho do aplicativo para sempre ser executado com permissões administrativas.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Portar, migrar e atualizar projetos do Visual Studio](../porting/port-migrate-and-upgrade-visual-studio-projects.md)
 - [Instalar o Visual Studio](../install/install-visual-studio.md)

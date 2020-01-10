@@ -9,17 +9,17 @@ helpviewer_keywords:
 - ADO.NET service references
 - ADO.NET Data Service reference
 ms.assetid: 892ebf37-3af4-472e-8744-92837677d611
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 8f19fbfb82a74de0f0eedf784483ecaeccc9a5fc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c60dffc7bb47336ae36e64a366def3c4dce06213
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648417"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586578"
 ---
 # <a name="how-to-add-update-or-remove-a-wcf-data-service-reference"></a>Como adicionar, atualizar ou remover uma referência de serviço de dados do WCF
 Uma *referência de serviço* permite que um projeto acesse um ou mais [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]. Use a caixa de diálogo **Adicionar referência de serviço** para procurar [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] na solução atual, localmente, em uma rede local ou na Internet.
@@ -90,6 +90,6 @@ Se uma referência de serviço não estiver mais sendo usada, você poderá remo
     > [!NOTE]
     > Qualquer código que referencie a referência de serviço deve ser removido manualmente.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Serviços do Windows Communication Foundation e WCF Data Services no Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)

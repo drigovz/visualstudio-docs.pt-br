@@ -13,17 +13,17 @@ helpviewer_keywords:
 - GetFrameworkSdkPath task [MSBuild]
 - MSBuild, GetFrameworkSdkPath task
 ms.assetid: 2ef82b98-02b6-40cf-a9b5-f0e882fb5064
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 15346bdd7c049a152a5a2d1668891f9d97da31fe
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 8fbe0dbda58a0c57cacd64c40b66cc640b779bca
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62977510"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593311"
 ---
 # <a name="getframeworksdkpath-task"></a>Tarefa GetFrameworkSdkPath
 Recupera o caminho para o [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)].
@@ -57,6 +57,6 @@ O exemplo a seguir usa a tarefa `GetFrameworkSdkPath` para armazenar o caminho p
 </Project>
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 - [Tarefas](../msbuild/msbuild-tasks.md)
 - [Referência de tarefas](../msbuild/msbuild-task-reference.md)

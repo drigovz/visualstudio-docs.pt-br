@@ -8,17 +8,17 @@ dev_langs:
 - C++
 - jsharp
 ms.assetid: 0e830e31-3bcf-4259-b2a8-a5df49b92d51
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3afe10d8bb912b911734437eb79684cdbfe9f78d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 41a32b914cab8626df513994a3d68c2aac3d7cb7
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62823247"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593428"
 ---
 # <a name="assigntargetpath-task"></a>Tarefa AssignTargetPath
 Essa tarefa aceita uma lista de arquivos e adiciona atributos `<TargetPath>`, caso eles ainda não estiverem especificados.
@@ -30,7 +30,7 @@ A tabela a seguir descreve os parâmetros da tarefa `AssignTargetPath`.
 |---------------|-----------------|
 |`RootFolder`|Parâmetro de entrada de `string` opcional.<br /><br /> Contém o caminho para a pasta que contém os links de destino.|
 |`Files`|Parâmetro de entrada <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Contém a lista de entrada de arquivos.|
-|`AssignedFiles`|Opcional<br /><br /> Parâmetro de saída <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Contém a lista resultante de arquivos.|
+|`AssignedFiles`|Opcional<br /><br /> <xref:Microsoft.Build.Framework.ITaskItem> `[]` parâmetro de saída.<br /><br /> Contém a lista resultante de arquivos.|
 
 ## <a name="remarks"></a>Comentários
 Além dos parâmetros listados acima, essa tarefa herda parâmetros da classe <xref:Microsoft.Build.Tasks.TaskExtension>, que herda da classe <xref:Microsoft.Build.Utilities.Task>. Para obter uma lista desses parâmetros adicionais e suas descrições, confira [Classe base TaskExtension](../msbuild/taskextension-base-class.md).
@@ -51,6 +51,6 @@ RootFolder="Resources"
 </Project>
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 - [Tarefas](../msbuild/msbuild-tasks.md)
 - [Referência de tarefas](../msbuild/msbuild-task-reference.md)

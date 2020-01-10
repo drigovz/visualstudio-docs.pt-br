@@ -4,15 +4,15 @@ ms.date: 08/09/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - Windows Forms Designer, get started
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 419e5ddb5d915307130a6fdadd795ce5b3236033
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 07526637f2d8083f37f55aa3da36bb01479db087
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72634127"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589832"
 ---
 # <a name="walkthrough-get-started-with-windows-forms-designer"></a>Walkthrough: introdução ao Designer de Formulários do Windows
 
@@ -307,11 +307,11 @@ Para usar o controle DemoCalculator em um aplicativo, é preciso colocá-lo em u
 
 8. Redimensione o formulário arrastando as várias alças de dimensionamento para diferentes posições. Observe como o controle DemoCalculator muda para se ajustar.
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
 
 Este artigo demonstrou como construir a interface do usuário para uma calculadora simples. Para continuar, você pode ampliar sua funcionalidade implementando a lógica da calculadora e, em seguida, [publicar o aplicativo usando o ClickOnce](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md). Ou continue com um tutorial diferente no qual você [cria um visualizador de imagens usando o Windows Forms](../ide/tutorial-1-create-a-picture-viewer.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Controles do Windows Forms](/dotnet/framework/winforms/controls/)
 - [Acessibilidade para controles do Windows Forms](/dotnet/framework/winforms/controls/providing-accessibility-information-for-controls-on-a-windows-form)

@@ -2,15 +2,15 @@
 title: Serviços Conectados
 description: Adicione o armazenamento de dados, a autenticação e as notificações por push do Azure a aplicativos móveis usando o Visual Studio para Mac
 ms.assetid: 41CB62FF-0F39-4CE8-8917-6A77F058719F
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 11/06/2018
-ms.openlocfilehash: 7f3cf8ce9e82310a8fe2f6ab9542d3d575a30f5b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 241820de009a5118869583bbe228ecb0604f9001
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62932087"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74985293"
 ---
 # <a name="connected-services-walkthrough"></a>Passo a passo do Connected Services
 
@@ -21,7 +21,7 @@ Este passo a passo mostra como adicionar um serviço de back-end do Azure, que o
 1. Para começar, clique duas vezes no nó **Serviços Conectados** na solução, o que abre a **Galeria de Serviços**.
   Esta é uma lista de todos os serviços disponíveis para o tipo de aplicativo. Selecione um serviço (como **Back-end móvel com o Serviço de Aplicativo do Azure**) clicando nele.
 
-    [![Nó do Connected Services no Visual Studio para Mac](media/connected-services-image001-sml.png "Nó do Connected Services no Visual Studio para Mac")](media/connected-services-image001.png#lightbox)
+    [![Nó serviços conectados no Visual Studio para Mac](media/connected-services-image001-sml.png "Nó serviços conectados no Visual Studio para Mac")](media/connected-services-image001.png#lightbox)
 
 2. A página de Detalhes do Serviço oferece uma descrição do serviço e das dependências que serão instaladas.
   Clique no botão **Adicionar** para adicionar as dependências ao aplicativo:
@@ -31,12 +31,12 @@ Este passo a passo mostra como adicionar um serviço de back-end do Azure, que o
 3. As dependências precisam ser adicionadas aos projetos PCL e específicos da plataforma para que funcionem.
   Marque as caixas de seleção para adicionar o serviço em cada projeto que o referenciará (direta ou indiretamente):
 
-    [![Marque todos os projetos que devem referenciar o serviço](media/connected-services-image003-sml.png "Marque todos os projetos que devem referenciar o serviço")](media/connected-services-image003.png#lightbox)
+    [![Verificar todos os projetos que devem referenciar o serviço](media/connected-services-image003-sml.png "Verificar todos os projetos que devem referenciar o serviço")](media/connected-services-image003.png#lightbox)
 
 4. Escolha **Aceitar** nas caixas de diálogo **Aceitação da licença** dos pacotes NuGet.
   Pode haver duas caixas de diálogo a serem aceitas, uma do MobileClient e das dependências e outra do SQLiteStore, que é necessário para a sincronização de dados offline:
 
-    [![Aceite os contratos de licença](media/connected-services-image004-sml.png "Aceite os contratos de licença")](media/connected-services-image004.png#lightbox)
+    [![Aceitar contratos de licença](media/connected-services-image004-sml.png "Aceitar contratos de licença")](media/connected-services-image004.png#lightbox)
 
     ![Janela de aceitação da licença](media/connected-services-image005.png "Janela de aceitação da licença")
 
@@ -52,16 +52,16 @@ Este passo a passo mostra como adicionar um serviço de back-end do Azure, que o
 7. Copie o código de modelo do `MobileServiceClient` no PCL. O local do arquivo não é importante, desde que haja apenas uma instância dele.
   A abordagem recomendada é criar uma classe `AzureService` que manipule todas as interações do Azure e use o `MobileServiceClient`:
 
-    ![Copie o código de configuração no aplicativo](media/connected-services-image007.png "Copie o código de configuração no aplicativo")
+    ![Copiar o código de configuração para o AP](media/connected-services-image007.png "Copiar o código de configuração para o aplicativo")
 
 8. Siga a documentação em **Próximas Etapas** para adicionar dados, sincronizar offline, autenticar e enviar notificações por push para o aplicativo:
 
-    [![Examine as instruções das próximas etapas](media/connected-services-image008-sml.png "Examine as instruções das próximas etapas")](media/connected-services-image008.png#lightbox)
+    [![Examine as instruções de próximas etapas](media/connected-services-image008-sml.png "Examine as instruções de próximas etapas")](media/connected-services-image008.png#lightbox)
 
 9. Se você não tiver nenhum serviço de aplicativo existente, crie serviços usando o Visual Studio para Mac.
   Clique no botão **Novo** no canto inferior esquerdo da lista de serviços para abrir a caixa de diálogo **Novo Serviço de Aplicativo**:
 
-    [![Crie um serviço de aplicativo no Visual Studio para Mac](media/connected-services-image009-sml.png "Crie um serviço de aplicativo no Visual Studio para Mac")](media/connected-services-image009.png#lightbox)
+    [![Criar um novo serviço de aplicativo no Visual Studio para Mac](media/connected-services-image009-sml.png "Criar um novo serviço de aplicativo no Visual Studio para Mac")](media/connected-services-image009.png#lightbox)
 
 Um novo serviço requer os seguintes parâmetros:
 

@@ -29,17 +29,17 @@ helpviewer_keywords:
 - $(ProjectName)
 - build events, macros
 ms.assetid: d49b2c57-24bf-4fb2-8351-5c4b6cca938f
-author: ghogen
-ms.author: ghogen
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d5671a75a847d81caedeffc17ea436eade060f3e
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
-ms.translationtype: HT
+ms.openlocfilehash: 38712c25718670ea15324e3daf6fadc138cb08a6
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461313"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75567912"
 ---
 # <a name="pre-build-eventpost-build-event-command-line-dialog-box"></a>Caixa de diálogo da linha de comando do evento de pré-build/evento de pós-build
 
@@ -48,14 +48,14 @@ Você pode digitar eventos de pré ou de pós-build para a [Página de Eventos d
 > [!NOTE]
 > Eventos de pré-build não serão executados se o projeto estiver atualizado e nenhum build será disparado.
 
-## <a name="ui-element-list"></a>Lista de elementos da interface de usuário
+## <a name="ui-element-list"></a>Lista de elementos da UI
 
 **Caixa de edição de linha de comando**
 
 Contém os eventos a serem executados para pré ou pós-build.
 
 > [!NOTE]
-> Adicione uma instrução `call` antes de todos os comandos pós-build que executam arquivos .bat. Por exemplo, `call C:\MyFile.bat` ou `call C:\MyFile.bat call C:\MyFile2.bat`.
+> Adicione uma instrução `call` antes de todos os comandos pós-build que executam arquivos .bat. Por exemplo `call C:\MyFile.bat` ou `call C:\MyFile.bat call C:\MyFile2.bat`.
 
 **Macros**
 
@@ -73,7 +73,7 @@ Insere na caixa de edição de inserções na linha de comando a macro seleciona
 
 Você pode usar qualquer uma dessas macros para especificar locais de arquivos ou obter o nome real do arquivo de entrada no caso de várias seleções. Essas macros não diferenciam maiúsculas de minúsculas.
 
-|Macro|DESCRIÇÃO|
+|Macro|Descrição|
 |-----------|-----------------|
 |`$(ConfigurationName)`|O nome da configuração do projeto atual, por exemplo, “Depurar”.|
 |`$(OutDir)`|Caminho para o diretório do arquivo de saída com relação ao diretório do projeto. Isso é resolvido para o valor da propriedade Diretório de Saída. Inclui a barra invertida “\\”.|
@@ -95,9 +95,9 @@ Você pode usar qualquer uma dessas macros para especificar locais de arquivos o
 |`$(TargetFileName)`|O nome do arquivo de saída primária do build (definido como nome de base e extensão de arquivo).|
 |`$(TargetExt)`|A extensão de arquivo do arquivo de saída primária para o build. Inclui o “.” antes da extensão de arquivo.|
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Especificando eventos de build personalizados no Visual Studio](../../ide/specifying-custom-build-events-in-visual-studio.md)
 - [Página Eventos de Build, Designer de Projeto (C#)](../../ide/reference/build-events-page-project-designer-csharp.md)
-- [Como: Especificar eventos de build (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)
-- [Como: Especificar eventos de build (C#)](../../ide/how-to-specify-build-events-csharp.md)
+- [Como especificar eventos de build (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)
+- [Como especificar eventos de build (C#)](../../ide/how-to-specify-build-events-csharp.md)

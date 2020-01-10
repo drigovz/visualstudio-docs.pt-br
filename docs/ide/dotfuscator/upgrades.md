@@ -21,15 +21,15 @@ helpviewer_keywords:
 - Dotfuscator Professional
 description: Saiba como atualizar a cópia gratuita do Dotfuscator Community, incluída no Visual Studio.
 ms.assetid: c7c60904-27f9-4f1f-b79b-ddf65041b810
-author: Joe-Sewell-PreEmptive
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 555b23f33ee1e3541afc6181a9ec6c4ece833b81
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 08492340022f772beadca8061a216de69fafc8af
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748883"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596795"
 ---
 # <a name="upgrade-dotfuscator-community"></a>Atualizar o Dotfuscator Community
 
@@ -65,7 +65,7 @@ Além disso, o Dotfuscator Professional oferece maior integração com o Visual 
 Para obter mais informações sobre os recursos avançados de proteção de aplicativo do Dotfuscator Professional, visite a [página de visão geral do Dotfuscator][product-about] da PreEmptive Solutions e [Compare-o à comunidade do Dotfuscator][product-compare].
 As [avaliações com suporte total estão disponíveis em Preemptive.com][eval].
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 [Este artigo no guia do usuário completo da Comunidade Dotfuscator][full]
 

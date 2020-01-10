@@ -4,17 +4,17 @@ ms.date: 05/02/2017
 ms.topic: conceptual
 helpviewer_keywords:
 - IntelliTest, Dynamic symbolic execution
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-author: jillre
-ms.openlocfilehash: 26befe6612c874c2565e44459cc90fe980296137
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+author: mikejo5000
+ms.openlocfilehash: e5a3248d3f081bcab08c08110d305f0aa6235817
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653182"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591588"
 ---
 # <a name="input-generation-using-dynamic-symbolic-execution"></a>Geração de entrada usando a execução simbólica dinâmica
 
@@ -36,7 +36,7 @@ O [solver de restrição](#constraint-solver) do IntelliTest pode lidar com valo
 
 * [Inteiros](#integers-and-floats) e [Floats](#integers-and-floats)
 * [Objetos](#objects)
-* [Structs](#structs)
+* [Estruturas](#structs)
 * [Matrizes](#arrays-and-strings) e [Cadeias de Caracteres](#arrays-and-strings)
 
 O IntelliTest filtra entradas que violam as suposições indicadas.
@@ -61,7 +61,7 @@ Posteriormente na análise, conforme mais métodos acessíveis forem descobertos
 
 O [solver de restrição](#constraint-solver) do IntelliTest determina os valores de entrada de teste de tipos primitivos como **byte**, **int**, **float** e outros para disparar diferentes caminhos de execução diferentes para o teste e o programa em teste.
 
-## <a name="objects"></a>Objetos
+## <a name="objects"></a>Objetos do
 
 O IntelliTest pode [criar instâncias de classes do .NET existentes](#existing-classes) ou você pode usar o IntelliTest para automaticamente [criar objetos fictícios](#parameterized-mocks) que implementam uma interface específica e se comportam de maneiras diferentes dependendo do uso.
 

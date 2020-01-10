@@ -11,18 +11,18 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: 071c16267486e1dda1e183cad3c488345974a3cc
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 84f6ddc2012617a5216c58fa0761dc100fb8942f
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72745919"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75402752"
 ---
 # <a name="sample-c-project-for-code-analysis"></a>Projeto de C++ de exemplo para análise de código
 
 Os procedimentos a seguir mostram como criar o exemplo para o [passo a passo: analisarC++ C/Code quanto a defeitos](../code-quality/walkthrough-analyzing-c-cpp-code-for-defects.md). Os procedimentos criam:
 
-- Uma solução do Visual Studio chamada CppDemo.
+- Um [! INCLUDEvsprvs] solução denominada CppDemo.
 
 - Um projeto de biblioteca estática denominado CodeDefects.
 
@@ -32,19 +32,17 @@ Os procedimentos também fornecem o código para o cabeçalho e arquivos *.cpp* 
 
 ## <a name="create-the-cppdemo-solution-and-the-codedefects-project"></a>Criar a solução CppDemo e o projeto CodeDefects
 
-1. Clique no menu **Arquivo**, aponte para **Novo** e clique em **Novo Projeto**.
+1. Abra o [! INCLUDEvsprvs] e selecione **criar um novo projeto**
 
-2. Na lista árvore de **tipos de projeto** , C++ se não for o idioma padrão no vs, expanda **outros idiomas**.
+2. Alterar filtro de idioma para**C++**
 
-3. Expanda **Visual C++** e, em seguida, clique em **Geral**.
+3. Selecione **projeto vazio** e clique em **Avançar**
 
-4. Em **Modelos**, clique em **Projeto Vazio**.
+4. Na caixa de texto **nome do projeto** , digite **CodeDefects**
 
-5. Na caixa de texto **Nome**, digite **CodeDefects**.
+5. Na caixa de texto **nome da solução** , digite **CppDemo**
 
-6. Marque a caixa de seleção **Criar diretório para a solução**.
-
-7. Na caixa de texto **Nome da Solução**, digite **CppDemo**.
+6. Clique em **Criar**
 
 ## <a name="configure-the-codedefects-project-as-a-static-library"></a>Configurar o projeto CodeDefects como uma biblioteca estática
 
@@ -52,9 +50,9 @@ Os procedimentos também fornecem o código para o cabeçalho e arquivos *.cpp* 
 
 2. Expanda **Propriedades de Configuração** e, em seguida, clique em **Geral**.
 
-3. Na lista **Geral**, selecione o texto na coluna ao lado de **Extensão de Destino** e, em seguida, digite **.lib**.
+3. Na lista **geral** , altere **tipo de configuração**para **biblioteca estática (. lib)** .
 
-4. Em **Padrões do Projeto**, clique na coluna ao lado de **Tipo de Configuração** e, em seguida, clique em **Biblioteca Estática (. lib)** .
+4. Na lista **avançado** , altere a **extensão do arquivo de destino** para **. lib**
 
 ## <a name="add-the-header-and-source-file-to-the-codedefects-project"></a>Adicionar o arquivo de cabeçalho e o código-fonte ao projeto CodeDefects
 
@@ -64,27 +62,23 @@ Os procedimentos também fornecem o código para o cabeçalho e arquivos *.cpp* 
 
 3. Na caixa **Nome**, digite **Bug.h** e clique em **Adicionar**.
 
-4. Copie o código a seguir e cole-o no arquivo *Bug.h* no editor do Visual Studio.
+4. Copie o código a seguir e cole-o no arquivo *bug. h* no editor.
 
-    ```cpp
-    #include <windows.h>
+```cpp
+#pragma once
 
-    //
-    //These 3 functions are consumed by the sample
-    //  but are not defined. This project cannot be linked!
-    //
+#include <windows.h>
 
-    bool CheckDomain( LPCSTR );
-    HRESULT ReadUserAccount();
+// These functions are consumed by the sample
+// but are not defined. This project cannot be linked!
+bool CheckDomain(LPCTSTR);
+HRESULT ReadUserAccount();
 
-    //
-    //These constants define the common sizes of the
-    //  user account information throughout the program
-    //
-
-    const int USER_ACCOUNT_LEN = 256;
-    const int ACCOUNT_DOMAIN_LEN = 128;
-    ```
+// These constants define the common sizes of the
+// user account information throughout the program
+const int USER_ACCOUNT_LEN = 256;
+const int ACCOUNT_DOMAIN_LEN = 128;
+```
 
 5. No Gerenciador de Soluções, clique com o botão direito do mouse em **Arquivos de Origem**, aponte para **Novo** e clique em **Novo Item**.
 
@@ -92,65 +86,63 @@ Os procedimentos também fornecem o código para o cabeçalho e arquivos *.cpp* 
 
 7. Na caixa **Nome**, digite **Bug.cpp** e clique em **Adicionar**.
 
-8. Copie o código a seguir e cole-o no arquivo *Bug.cpp* no editor do Visual Studio.
+8. Copie o código a seguir e cole-o no arquivo *bug. cpp* no editor.
 
-    ```cpp
-    #include <stdlib.h>
-    #include "Bug.h"
+```cpp
+#include "Bug.h"
 
-    // the user account
-    TCHAR g_userAccount[USER_ACCOUNT_LEN] = "";
-    int len = 0;
+// the user account
+TCHAR g_userAccount[USER_ACCOUNT_LEN] = {};
+int len = 0;
 
-    bool ProcessDomain()
+bool ProcessDomain()
+{
+    TCHAR* domain = new TCHAR[ACCOUNT_DOMAIN_LEN];
+    // ReadUserAccount gets a 'domain\user' input from
+    //the user into the global 'g_userAccount'
+    if (ReadUserAccount())
     {
-        TCHAR* domain = new TCHAR[ACCOUNT_DOMAIN_LEN];
-        // ReadUserAccount gets a 'domain\user' input from
-        //the user into the global 'g_userAccount'
-        if (ReadUserAccount() )
+        // Copies part of the string prior to the '\'
+        // character onto the 'domain' buffer
+        for (len = 0; (len < ACCOUNT_DOMAIN_LEN) && (g_userAccount[len] != L'\0'); len++)
         {
-
-            // Copies part of the string prior to the '\'
-            // character onto the 'domain' buffer
-            for( len = 0 ; (len < ACCOUNT_DOMAIN_LEN) && (g_userAccount[len] != '\0') ; len++  )
+            if (g_userAccount[len] == '\\')
             {
-                if ( g_userAccount[len] == '\\' )
-                {
-                    // Stops copying on the domain and user separator ('\')
-                    break;
-                }
-                domain[len] = g_userAccount[len];
+                // Stops copying on the domain and user separator ('\')
+                break;
             }
-            if((len= ACCOUNT_DOMAIN_LEN) || (g_userAccount[len] != '\\'))
-            {
-                // '\' was not found. Invalid domain\user string.
-                delete [] domain;
-                return false;
-            }
-            else
-            {
-                domain[len]='\0';
-            }
-            // Process domain string
-            bool result = CheckDomain( domain );
-
-            delete[] domain;
-            return result;
+            domain[len] = g_userAccount[len];
         }
-        return false;
-    }
-
-    int path_dependent(int n)
-    {
-        int i;
-        int j;
-        if (n == 0)
-            i = 1;
+        if ((len = ACCOUNT_DOMAIN_LEN) || (g_userAccount[len] != '\\'))
+        {
+            // '\' was not found. Invalid domain\user string.
+            delete[] domain;
+            return false;
+        }
         else
-            j = 1;
-        return i+j;
+        {
+            domain[len] = '\0';
+        }
+        // Process domain string
+        bool result = CheckDomain(domain);
+
+        delete[] domain;
+        return result;
     }
-    ```
+    return false;
+}
+
+int path_dependent(int n)
+{
+    int i;
+    int j;
+    if (n == 0)
+        i = 1;
+    else
+        j = 1;
+    return i + j;
+}
+```
 
 9. Clique no menu **Arquivo** e em **Salvar Tudo**.
 
@@ -158,17 +150,18 @@ Os procedimentos também fornecem o código para o cabeçalho e arquivos *.cpp* 
 
 1. No Gerenciador de Soluções, clique em **CppDemo**, aponte para **Adicionar** e, em seguida, clique em **Novo Projeto**.
 
-2. Na caixa de diálogo **Adicionar Novo Projeto**, expanda Visual C++, clique em **Geral** e, em seguida, clique em **Projeto Vazio**.
+2. Na caixa de diálogo **Adicionar um novo projeto** , altere filtro de idioma **C++** para e selecione **projeto vazio** e clique em **Avançar**.
 
-3. Na caixa de texto **Nome**, digite **Anotações** e clique em **Adicionar**.
+3. Na caixa de texto **nome do projeto** , digite **anotações**e clique em **criar**.
 
 4. No Gerenciador de Soluções, clique com o botão direito do mouse em **Anotações** e clique em **Propriedades**.
 
 5. Expanda **Propriedades de Configuração** e, em seguida, clique em **Geral**.
 
-6. Na lista **Geral**, selecione o texto na coluna ao lado de **Extensão de Destino** e, em seguida, digite **.lib**.
+6. Na lista **geral** , altere **tipo de configuração**para e clique em **biblioteca estática (. lib)** .
 
-7. Em **Padrões do Projeto**, clique na coluna ao lado de **Tipo de Configuração** e, em seguida, clique em **Biblioteca Estática (. lib)** .
+7. Na lista **avançado** , selecione o texto na coluna ao lado de **extensão de arquivo de destino**e digite **. lib**.
+
 
 ## <a name="add-the-header-file-and-source-file-to-the-annotations-project"></a>Adicionar o arquivo de cabeçalho e o arquivo de origem ao projeto Anotações
 
@@ -178,22 +171,22 @@ Os procedimentos também fornecem o código para o cabeçalho e arquivos *.cpp* 
 
 3. Na caixa de texto **Nome**, digite **annotations.h** e clique em **Adicionar**.
 
-4. Copie o código a seguir e cole-o no arquivo *annotations.h* no editor do Visual Studio.
+4. Copie o código a seguir e cole-o no arquivo *Annotations. h* no editor.
 
-    ```cpp
-    #include <CodeAnalysis/SourceAnnotations.h>
+```cpp
+#pragma once
+#include <sal.h>
 
-    struct LinkedList
-    {
-        struct LinkedList* next;
-        int data;
-    };
+struct LinkedList
+{
+    struct LinkedList* next;
+    int data;
+};
 
-    typedef struct LinkedList LinkedList;
+typedef struct LinkedList LinkedList;
 
-    [returnvalue:SA_Post( Null=SA_Maybe )] LinkedList* AllocateNode();
-
-    ```
+_Ret_maybenull_ LinkedList* AllocateNode();
+```
 
 5. No Gerenciador de Soluções, clique com o botão direito do mouse em **Arquivos de Origem**, aponte para **Novo** e clique em **Novo Item**.
 
@@ -201,33 +194,30 @@ Os procedimentos também fornecem o código para o cabeçalho e arquivos *.cpp* 
 
 7. Na caixa de texto **Nome**, digite **annotations.cpp** e clique em **Adicionar**.
 
-8. Copie o código a seguir e cole-o no arquivo *annotations.cpp* no editor do Visual Studio.
+8. Copie o código a seguir e cole-o no arquivo *Annotations. cpp* no editor.
 
-    ```cpp
-    #include <CodeAnalysis/SourceAnnotations.h>
-    #include <windows.h>
-    #include <stdlib.h>
-    #include "annotations.h"
+```cpp
+#include "annotations.h"
 
-    LinkedList* AddTail( LinkedList *node, int value )
+LinkedList* AddTail(LinkedList* node, int value)
+{
+    // finds the last node
+    while (node->next != nullptr)
     {
-        LinkedList *newNode = NULL;
-
-        // finds the last node
-        while ( node->next != NULL )
-        {
-            node = node->next;
-        }
-
-        // appends the new node
-        newNode = AllocateNode();
-        newNode->data = value;
-        newNode->next = 0;
-        node->next = newNode;
-
-        return newNode;
+        node = node->next;
     }
 
-    ```
+    // appends the new node
+    LinkedList* newNode = AllocateNode();
+    newNode->data = value;
+    newNode->next = 0;
+    node->next = newNode;
+
+    return newNode;
+}
+```
 
 9. Clique no menu **Arquivo** e em **Salvar Tudo**.
+
+
+A solução agora está completa e deve ser compilada sem erros.

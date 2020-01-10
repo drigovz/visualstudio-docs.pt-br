@@ -5,17 +5,17 @@ ms.date: 07/11/2018
 ms.topic: reference
 helpviewer_keywords:
 - F# features [Visual Studio]
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 176504ceb7c80a36028e7d5f1806aa598cdf708e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 75ebee68bf76a4dd5419942f79a3207c29673134
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72645362"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75565234"
 ---
 # <a name="develop-with-visual-f-in-visual-studio"></a>Desenvolver com o Visual F# no Visual Studio
 
@@ -41,7 +41,7 @@ Para obter mais informações sobre os modelos de item para acesso a dados, conf
 
 A seguinte tabela resume os recursos nas propriedades do projeto para o F#:
 
-|Configuração do projeto|Compatível com o F#?|Anotações|
+|Configuração do projeto|Compatível com o F#?|{1&gt;Observações&lt;1}|
 |---------------|----------------|-----|
 |Arquivos de recurso|Sim||
 |Configurações de build, depuração e referência|Sim||
@@ -60,13 +60,13 @@ O **Designer de Projeto** consiste no agrupamento de várias páginas de proprie
 
 |Página do Designer de Projeto|Links relacionados|Descrição|
 | - |-------------|-----------|
-|Aplicativo|[Página Aplicativo, Designer de Projeto](reference/application-page-project-designer-csharp.md)|Permite que você especifique configurações e propriedades no nível do aplicativo, como se estivesse criando uma biblioteca ou um arquivo executável, qual é a versão de destino do .NET para o aplicativo e informações sobre o local de armazenamento dos arquivos de recurso usados pelo aplicativo.|
-|Build|[Página de build, Designer de Projeto](reference/build-page-project-designer-csharp.md)|Permite que você controle como o código é compilado.|
+|{1&gt;{2&gt;Aplicativo&lt;2}&lt;1}|[Página Aplicativo, Designer de Projeto](reference/application-page-project-designer-csharp.md)|Permite que você especifique configurações e propriedades no nível do aplicativo, como se estivesse criando uma biblioteca ou um arquivo executável, qual é a versão de destino do .NET para o aplicativo e informações sobre o local de armazenamento dos arquivos de recurso usados pelo aplicativo.|
+|{1&gt;Compilação&lt;1}|[Página de build, Designer de Projeto](reference/build-page-project-designer-csharp.md)|Permite que você controle como o código é compilado.|
 |Compilar Eventos|[Página Eventos de Build, Designer de Projeto](reference/build-events-page-project-designer-csharp.md)|Permite que você especifique os comandos a serem executados antes ou depois de uma compilação.|
-|Depurar|[Página de Depuração, Designer de Projeto](reference/debug-page-project-designer.md)|Permite que você controle como o aplicativo é executado durante a depuração. Isso inclui os comandos a serem usados e o diretório inicial do aplicativo, bem como os modos de depuração especiais que você deseja habilitar, como o código nativo e o SQL.|
-|Pacote (somente SDK do .NET)|N/A|Permite que você defina metadados do Pacote NuGet durante a publicação como um pacote NuGet.|
-|Caminhos de referência|[Gerenciar referências em um projeto](managing-references-in-a-project.md)|Permite que você especifique o local em que pesquisar assemblies dos quais o código depende.|
-|Recursos (somente SDK do .NET)|N/A|Permite que você gere e gerencie um arquivo de recurso padrão.|
+|Depuração|[Página de Depuração, Designer de Projeto](reference/debug-page-project-designer.md)|Permite que você controle como o aplicativo é executado durante a depuração. Isso inclui os comandos a serem usados e o diretório inicial do aplicativo, bem como os modos de depuração especiais que você deseja habilitar, como o código nativo e o SQL.|
+|Pacote (somente SDK do .NET)|{1&gt;N/A&lt;1}|Permite que você defina metadados do Pacote NuGet durante a publicação como um pacote NuGet.|
+|Caminhos de referências|[Gerenciar referências em um projeto](managing-references-in-a-project.md)|Permite que você especifique o local em que pesquisar assemblies dos quais o código depende.|
+|Recursos (somente SDK do .NET)|{1&gt;N/A&lt;1}|Permite que você gere e gerencie um arquivo de recurso padrão.|
 
 ### <a name="f-specific-settings"></a>Configurações específicas do F#
 
@@ -74,8 +74,8 @@ A seguinte tabela resume as configurações específicas do F#:
 
 |Página do Designer de Projeto|Configuração|Descrição|
 | - |-------|-----------|
-|Build|Gerar chamadas da parte final|Se ela estiver selecionada, habilitará o uso da instrução MSIL (Microsoft Intermediate Language) da parte final. Isso faz com que o registro de ativação seja reutilizado para funções recursivas da parte final. Equivalente à opção do compilador `--tailcalls`.|
-|Build|Outros sinalizadores|Permite que você especifique opções adicionais de linha de comando do compilador.|
+|{1&gt;Compilação&lt;1}|Gerar chamadas da parte final|Se ela estiver selecionada, habilitará o uso da instrução MSIL (Microsoft Intermediate Language) da parte final. Isso faz com que o registro de ativação seja reutilizado para funções recursivas da parte final. Equivalente à opção do compilador `--tailcalls`.|
+|{1&gt;Compilação&lt;1}|Outros sinalizadores|Permite que você especifique opções adicionais de linha de comando do compilador.|
 
 ## <a name="code-and-text-editor-features"></a>Recursos do editor de código e texto
 
@@ -124,7 +124,7 @@ A seguinte tabela resume os recursos do IntelliSense compatíveis e não compat�
 |Listar Membros|Quando você digita o operador de acesso de membro (.), essa opção mostra os membros de um tipo.|Sim|
 |Organizar usings/open|Organiza os namespaces referenciados por instruções **using** no C# ou diretivas **open** no F#.|Não|
 |Informações de Parâmetro|Mostra informações úteis sobre os parâmetros conforme você digita uma chamada de função.|Sim|
-|Informação Rápida|Exibe a declaração completa de um identificador no código.|Sim|
+|Informações Rápidas|Exibe a declaração completa de um identificador no código.|Sim|
 |Preenchimento automático de chaves|Preenche automaticamente constructos de sintaxe semelhantes à chave do F# de maneira transacional.|Sim|
 
 Para obter informações gerais sobre o IntelliSense, confira [Usar o IntelliSense](using-intellisense.md).
@@ -136,15 +136,15 @@ A seguinte tabela resume os recursos disponíveis ao depurar o código F#:
 |Recurso|Descrição|Compatível com o F#?|
 |-------|-----------|----------------|
 |Janela Autos|Mostra variáveis automáticas ou temporárias.|Não|
-|Pontos de interrupção|Permite que você pause a execução de código em pontos específicos durante a depuração.|Sim|
+|{1&gt;Pontos de interrupção&lt;1}|Permite que você pause a execução de código em pontos específicos durante a depuração.|Sim|
 |Pontos de interrupção condicionais|Permite pontos de interrupção que testam uma condição que determina se a execução deve ser colocada em pausa.|Sim|
-|Editar e continuar|Permite que o código seja modificado e compilado durante a depuração de um programa em execução sem interromper e reiniciar o depurador.|Não|
+|{1&gt;Editar e Continuar&lt;1}|Permite que o código seja modificado e compilado durante a depuração de um programa em execução sem interromper e reiniciar o depurador.|Não|
 |Avaliador de expressão|Avalia e executa o código em tempo de execução.|Não, mas o avaliador de expressão C# pode ser usado, embora seja necessário usar a sintaxe C#.|
 |Depuração de histórico|Permite que você intervenha no código executado anteriormente.|Sim|
 |Janela Locais|Mostra as variáveis e os valores definidos localmente.|Sim|
-|Executar até o cursor|Permite que você execute o código até que a linha que contém o cursor seja atingida.|Sim|
+|Executar Até o Cursor|Permite que você execute o código até que a linha que contém o cursor seja atingida.|Sim|
 |Entrar em|Permite que você avance a execução e passe para qualquer chamada de função.|Sim|
-|Depuração Parcial|Permite que você avance a execução no registro de ativação atual e passe por qualquer chamada de função.|Sim|
+|Contornar|Permite que você avance a execução no registro de ativação atual e passe por qualquer chamada de função.|Sim|
 
 Para obter informações gerais sobre o depurador do Visual Studio, confira [Depuração no Visual Studio](../debugger/index.yml).
 
@@ -156,20 +156,20 @@ A tabela a seguir resume o suporte para o F# nas ferramentas do Visual Studio.
 |----|-----------|----------------|
 |Hierarquia de chamadas|Exibe a estrutura aninhada das chamadas de função no código.|Não|
 |Métricas de código|Coleta informações sobre o código, como contagens de linha.|Não|
-|Exibição de Classe|Fornece uma exibição baseada em tipo do código em um projeto.|Não|
+|Modo de exibição de classe|Fornece uma exibição baseada em tipo do código em um projeto.|Não|
 |[Janela Lista de Erros](reference/error-list-window.md)|Mostra uma lista de erros no código.|Sim|
 |[F# Interativo](/dotnet/fsharp/tutorials/fsharp-interactive/)|Permite que você digite (ou copie e cole) o código F# e execute-o imediatamente, seja qual for o build do projeto. A janela do F# Interativo é um REPL (Loop Ler, Avaliar, Imprimir).|Sim|
-|Pesquisador de Objetos|Permite que você veja os tipos em um assembly.|Os tipos F# exibidos em assemblies compilados não são exibidos exatamente como são criados. Você pode percorrer a representação compilada de tipos F#, mas não pode exibir os tipos como são exibidos no F#.|
+|Navegador de objeto|Permite que você veja os tipos em um assembly.|Os tipos F# exibidos em assemblies compilados não são exibidos exatamente como são criados. Você pode percorrer a representação compilada de tipos F#, mas não pode exibir os tipos como são exibidos no F#.|
 |[Janela de Saída](reference/output-window.md)|Exibe a saída de build.|Sim|
 |Análise de desempenho|Fornece ferramentas para avaliar o desempenho do código.|Sim|
 |Janela de Propriedades|Exibe e permite a edição das propriedades do objeto no ambiente de desenvolvimento que tem o foco.|Sim|
 |conexões de servidor|Fornece maneiras de interagir com uma variedade de recursos do servidor.|Sim|
-|Gerenciador de Soluções|Permite que você veja e gerencie projetos e arquivos.|Sim|
-|Lista de Tarefas|Permite que você gerencie itens de trabalho pertencentes ao código.|Não|
+|Gerenciador de soluções|Permite que você veja e gerencie projetos e arquivos.|Sim|
+|Lista de tarefas|Permite que você gerencie itens de trabalho pertencentes ao código.|Não|
 |Projetos de teste|Fornece recursos que ajudam você a testar o código.|Não|
-|Caixa de Ferramentas|Exibe as guias que contêm objetos arrastáveis como controles e seções de texto ou de código.|Sim|
+|Caixa de ferramentas|Exibe as guias que contêm objetos arrastáveis como controles e seções de texto ou de código.|Sim|
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Guia do F# (.NET Framework)](/dotnet/fsharp/)
 - [Introdução ao F# no Visual Studio](/dotnet/fsharp/get-started/get-started-visual-studio)

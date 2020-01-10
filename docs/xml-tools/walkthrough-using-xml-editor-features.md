@@ -3,17 +3,17 @@ title: 'Walkthrough: usando recursos do editor de XML'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: ea8dc357-2e66-455a-aec2-7ccaccfc9adf
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ce7997e1002ced50dc4d8203d522feb0a6bbb49
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d2cf35730b70fc8c8bbec392c73b444b6e8e0aaa
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72604455"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592458"
 ---
 # <a name="walkthrough-use-xml-editor-features"></a>Walkthrough: usar recursos do editor de XML
 
@@ -64,7 +64,7 @@ As etapas nessa explicação passo a passo mostram como criar um novo documento 
 
 3. Digite o **arquivo XML de teste**.
 
-4. Em uma nova linha, digite `<` e selecione **funcionário** na lista de membros.
+4. Em uma nova linha, digite `<`e selecione **funcionário** na lista de membros.
 
      O editor adiciona o início de um elemento XML, `<employee`. Neste momento você pode adicionar atributos para o elemento ou você pode fechar a tag de início digitando `>`.
 
@@ -96,7 +96,7 @@ As etapas nessa explicação passo a passo mostram como criar um novo documento 
 
 ## <a name="to-format-the-xml-document"></a>Para formatar o documento XML
 
-- Selecione o botão **Formatar documento** na barra de ferramentas do editor de XML ou pressione **Ctrl** +**E**,**D**.
+- Selecione o botão **Formatar documento** na barra de ferramentas do editor de XML ou pressione **Ctrl**+**E**,**D**.
 
    ![Botão Formatar documento XML no Visual Studio](media/format-xml-document.png)
 
@@ -104,7 +104,7 @@ As etapas nessa explicação passo a passo mostram como criar um novo documento 
 
 ## <a name="to-save-the-xml-document"></a>Para salvar o documento XML
 
-1. No menu **arquivo** , selecione **salvar como**.
+1. No menu **arquivo** , selecione **Salvar como**.
 
      A caixa de diálogo **salvar arquivo como** é exibida. O nome de arquivo padrão é *' xmlarquivo1 '* .
 
@@ -130,6 +130,6 @@ O seguinte arquivo de esquema é usado neste passo a passos:
 </xs:schema>
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Editor de XML](../xml-tools/xml-editor.md)

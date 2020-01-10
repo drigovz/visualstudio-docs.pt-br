@@ -11,17 +11,17 @@ helpviewer_keywords:
 - MSBuild, CreateCSharpManifestResourceName task
 - CreateCSharpManifestResourceName task [MSBuild]
 ms.assetid: 2ace88c1-d757-40a7-8158-c1d3f5ff0511
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ef3baf383a01523cb173d6aeb1f7231680e892ce
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: e1b3c4b49e6e3df2ef0fcac978566e8656ab78ab
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778373"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596054"
 ---
 # <a name="createcsharpmanifestresourcename-task"></a>Tarefa CreateCSharpManifestResourceName
 Cria um nome de manifesto de estilo [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] com base em um nome de arquivo *.resx* fornecido ou em outro recurso.
@@ -31,7 +31,7 @@ Cria um nome de manifesto de estilo [!INCLUDE[csprcs](../data-tools/includes/csp
 
 | Parâmetro | Descrição |
 | - | - |
-| `ManifestResourceNames` | Parâmetro de saída somente leitura <xref:Microsoft.Build.Framework.ITaskItem> `[]`.<br /><br /> Os nomes de manifesto resultantes. |
+| `ManifestResourceNames` | <xref:Microsoft.Build.Framework.ITaskItem> `[]` parâmetro somente leitura de saída.<br /><br /> Os nomes de manifesto resultantes. |
 | `ResourceFiles` | Parâmetro `String` obrigatório.<br /><br /> O nome do arquivo de recurso do qual criar o nome do manifesto [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]. |
 | `RootNamespace` | Parâmetro `String` opcional.<br /><br /> O namespace raiz do arquivo de recurso, geralmente obtido do arquivo de projeto. Pode ser `null`. |
 | `PrependCultureAsDirectory` | Parâmetro `Boolean` opcional.<br /><br /> Se `true`, o nome da cultura é adicionado como um nome de diretório antes do nome do recurso de manifesto. O valor padrão é `true`. |
@@ -42,6 +42,6 @@ Cria um nome de manifesto de estilo [!INCLUDE[csprcs](../data-tools/includes/csp
 
  Além dos parâmetros listados acima, essa tarefa herda parâmetros da classe <xref:Microsoft.Build.Tasks.TaskExtension>, que herda da classe <xref:Microsoft.Build.Utilities.Task>. Para obter uma lista desses parâmetros adicionais e suas descrições, confira [Classe base TaskExtension](../msbuild/taskextension-base-class.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 - [Tarefas](../msbuild/msbuild-tasks.md)
 - [Referência de tarefas](../msbuild/msbuild-task-reference.md)

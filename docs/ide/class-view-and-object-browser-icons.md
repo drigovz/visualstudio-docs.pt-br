@@ -11,17 +11,17 @@ helpviewer_keywords:
 - icons, IntelliSense
 - symbols, Object Browser icons
 - Object Browser, icons in Class View
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 589ec840b49d250591e2c477989d4422273cac31
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 6589d40d8f897eb8df7f108f53973af268d1edc9
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647632"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75588389"
 ---
 # <a name="class-view-and-object-browser-icons"></a>Ícones do Pesquisador de Objetos e do Modo de Exibição de Classe
 
@@ -29,16 +29,16 @@ ms.locfileid: "72647632"
 
 |Ícone|Descrição|Ícone|Descrição|
 |----------|-----------------|----------|-----------------|
-|![Símbolo de namespace](../ide/media/vxnamespace_icon.gif)|espaço de nome|![Símbolo de declaração](../ide/media/vxmethod_icon.gif)|Método ou função|
-|![Ícone de classe](../ide/media/vxclass_icon.gif)|Class|![Símbolo de operador](../ide/media/vxoperator_icon.gif)|Operador|
+|![Símbolo de namespace](../ide/media/vxnamespace_icon.gif)|Namespace|![Símbolo de declaração](../ide/media/vxmethod_icon.gif)|Método ou função|
+|![Ícone de classe](../ide/media/vxclass_icon.gif)|Classe|![Símbolo de operador](../ide/media/vxoperator_icon.gif)|Operador|
 |![Símbolo de interface pirulito](../ide/media/vxinterface_icon.gif)|Interface|![Símbolo de propriedade](../ide/media/vxproperty_icon.gif)|propriedade|
 |![Símbolo de estrutura](../ide/media/vxstruct_icon.gif)|Estrutura|![Ícone de campo](../ide/media/vxfield_icon.gif)|Campo ou variável|
-|![Símbolo de união](../ide/media/vxunion_icon.gif)|União|![Símbolo de evento](../ide/media/vxevent_icon.gif)|evento|
+|![Símbolo de união](../ide/media/vxunion_icon.gif)|União|![Símbolo de evento](../ide/media/vxevent_icon.gif)|Event|
 |![Símbolo de enumeração](../ide/media/vxenum_icon.gif)|Enum|![Ícone constante](../ide/media/vxconstant_icon.gif)|Constante|
 |![Símbolo de definição de tipo](../ide/media/vxtypedef_icon.gif)|TypeDef|![Símbolo do item de enumeração](../ide/media/vxenumitem_icon.gif)|Item Enum|
 |![Símbolo do módulo do Visual Studio](../ide/media/vxmodule_icon.gif)|Módulo|![Símbolo do item de mapa](../ide/media/vxmapitem_icon.gif)|Item de Mapa|
 |![Símbolo do método de extensão](../ide/media/extensionmethod.gif)|Método de extensão|![Símbolo de declaração](../ide/media/vxmethod_icon.gif)|Declaração externa|
-|![Símbolo de delegado](../ide/media/vxdelegate_icon.gif)|delegado|![Ícone de erro para Modo de Exibição de Classe e Pesquisador de Objetos](../ide/media/erroricon.gif)|Erro|
+|![Símbolo de delegado](../ide/media/vxdelegate_icon.gif)|Delegado|![Ícone de erro para Modo de Exibição de Classe e Pesquisador de Objetos](../ide/media/erroricon.gif)|Erro do|
 |![Símbolo de exceção](../ide/media/vxexception_icon.gif)|Exceção|![Símbolo de modelo](../ide/media/vxtemplate_icon.gif)|Modelo|
 |![Símbolo de mapa](../ide/media/vxmap_icon.gif)|Mapa|![Símbolo de ponto de exclamação de erro](../ide/media/vxerror_icon.gif)|Unknown|
 |![Símbolo de encaminhamento de tipo](../ide/media/ob_type_forward.gif)|Encaminhamento de tipo|||
@@ -59,6 +59,6 @@ Os ícones de sinal a seguir aplicam-se a todos os ícones anteriores e indicam 
 > [!NOTE]
 > Se seu projeto estiver incluído em um banco de dados de controle do código-fonte, ícones de sinal adicionais poderão ser exibidos para indicar o status de controle de origem, como check-in ou check-out.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Exibir a estrutura do código](../ide/viewing-the-structure-of-code.md)

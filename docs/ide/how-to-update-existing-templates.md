@@ -7,15 +7,15 @@ helpviewer_keywords:
 - Visual Studio templates, updating
 - project templates, updating
 - updating templates [Visual Studio]
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: ee0118ce4181a12ca4c199b8174a28fb4b431063
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 44f99646330d3c8a75bd94310bc0adf9073f9d49
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72656537"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591353"
 ---
 # <a name="how-to-update-existing-templates"></a>Como atualizar modelos existentes
 
@@ -37,7 +37,7 @@ O Visual Studio fornece um **Assistente para Exportar Modelo** que pode ser usad
 
 1. Siga os prompts no assistente para exportar o modelo como um arquivo *.zip*.
 
-1. (Opcional) Coloque o arquivo *.zip* no seguinte diretório: *%USERPROFILE%\Documents\Visual Studio\< \>versão\Templates\ProjectTemplates* para disponibilizá-lo para seleção. Você precisará executar essa etapa se você não tiver selecionado a opção **Importar automaticamente o modelo no Visual Studio** no **Assistente para Exportar Modelo**.
+1. (Opcional) Coloque o arquivo *.zip* no seguinte diretório: *%USERPROFILE%\Documents\Visual Studio\<\>versão\Templates\ProjectTemplates* para disponibilizá-lo para seleção. Você precisará executar essa etapa se você não tiver selecionado a opção **Importar automaticamente o modelo no Visual Studio** no **Assistente para Exportar Modelo**.
 
 1. Exclua o arquivo *.zip* de modelo antigo.
 
@@ -65,7 +65,7 @@ Você pode atualizar um modelo existente sem usar o **Assistente de Exportação
 
 1. Exclua os arquivos de modelo extraídos e o arquivo *.zip* de modelo antigo.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Personalizar modelos](../ide/customizing-project-and-item-templates.md)
 - [Criar modelos de projeto e de item](../ide/creating-project-and-item-templates.md)

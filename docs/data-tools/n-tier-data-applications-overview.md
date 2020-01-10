@@ -8,17 +8,17 @@ helpviewer_keywords:
 - data tier
 - n-tier applications, about n-tier applications
 ms.assetid: 1020581d-eaaa-41a2-aca4-bf4c212895f6
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 80b6f89d9c074d7d17c258263c03e97334e6fd90
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 21233b94350823b1f765aa33f9304c10c43e0535
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648273"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586374"
 ---
 # <a name="n-tier-data-applications-overview"></a>Visão geral de aplicativos de dados de N camadas
 Os aplicativos *de dados de N camadas* são aplicativos de dados separados em várias *camadas*. Também chamados de "aplicativos distribuídos" e "aplicativos multicamadas", os aplicativos de n camadas separam o processamento em camadas discretas que são distribuídas entre o cliente e o servidor. Ao desenvolver aplicativos que acessam dados, você deve ter uma separação clara entre as várias camadas que compõem o aplicativo.
@@ -57,7 +57,7 @@ A camada *intermediária* é a camada que a camada de apresentação e a camada 
 
 A ilustração a seguir mostra os recursos e as tecnologias disponíveis no Visual Studio e onde eles podem se ajustar à camada intermediária de um aplicativo de n camadas.
 
-componentes da camada de ![Middle ](../data-tools/media/ntiermid.png) camada intermediária
+![componentes da camada intermediária](../data-tools/media/ntiermid.png) camada intermediária
 
 A camada intermediária normalmente se conecta à camada de dados usando uma conexão de dados. Essa conexão de dados normalmente é armazenada no componente de acesso a dados.
 
@@ -66,7 +66,7 @@ A *camada de dados* é basicamente o servidor que armazena os dados de um aplica
 
 A ilustração a seguir mostra os recursos e as tecnologias disponíveis no Visual Studio e onde eles podem se ajustar à camada de dados de um aplicativo de n camadas.
 
-componentes da camada de ![Data ](../data-tools/media/ntierdatatier.png) camada de dados
+![componentes da camada de dados](../data-tools/media/ntierdatatier.png) camada de dados
 
 A camada de dados não pode ser acessada diretamente do cliente na camada de apresentação. Em vez disso, o componente de acesso a dados na camada intermediária é usado para comunicação entre as camadas de apresentação e de dados.
 
@@ -79,7 +79,7 @@ Os tópicos a seguir fornecem informações sobre como trabalhar com aplicativos
 
 [Aplicativos de N camadas e remotos com o LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/n-tier-and-remote-applications-with-linq-to-sql)
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Passo a passo: criando um aplicativo de dados de N camadas](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
 - [Atualização hierárquica](../data-tools/hierarchical-update.md)

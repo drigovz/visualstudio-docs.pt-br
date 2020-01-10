@@ -7,17 +7,17 @@ helpviewer_keywords:
 - dependency diagrams
 - diagrams - modeling, layer
 - constraints, architectural
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8613633289189bec5e403ec76b78731d5e3ecc4f
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 9f8ec90d045259cd5d10533db6096154376d48fe
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72983737"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594624"
 ---
 # <a name="dependency-diagrams-guidelines"></a>Diagramas de dependência: diretrizes
 
@@ -172,7 +172,7 @@ Durante o processo de desenvolvimento, você talvez queira suprimir alguns dos c
 
 Para garantir que as alterações futuras no código estejam em conformidade com os diagramas de dependência, inclua a validação de camada no processo de compilação padrão da solução. Sempre que outros membros da equipe criarem a solução, quaisquer diferenças entre as dependências no código e no diagrama de dependência serão relatadas como erros de compilação. Para obter mais informações sobre como incluir a validação de camada no processo de compilação, consulte [validar código com diagramas de dependência](../modeling/validate-code-with-layer-diagrams.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Diagramas de dependência: referência](../modeling/layer-diagrams-reference.md)
 - [Criar diagramas de dependência usando seu código](../modeling/create-layer-diagrams-from-your-code.md)

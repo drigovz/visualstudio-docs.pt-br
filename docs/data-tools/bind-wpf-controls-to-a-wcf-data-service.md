@@ -10,17 +10,17 @@ helpviewer_keywords:
 - WPF data binding [Visual Studio], walkthroughs
 - WPF Designer, data binding
 ms.assetid: 8823537c-82f0-41f7-bf30-705f0e5e59fd
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: ecc08be8c865cefa9b440d9af61cf9d019865ea0
-ms.sourcegitcommit: bde55773485c9bca50a760ac9e4c919e0a208a51
+ms.openlocfilehash: ef13f400ff762818eb97396c51330d755c0203c4
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72924561"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586959"
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>Associar controles do WPF a um WCF Data Service
 
@@ -40,11 +40,11 @@ Esta explicação passo a passo ilustra as seguintes tarefas:
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>{1&gt;{2&gt;Pré-requisitos&lt;2}&lt;1}
 
 Você precisa dos seguintes componentes para concluir esta instrução passo a passo:
 
-- Visual Studio
+- {1&gt;Visual Studio&lt;1}
 
 - Acesso a uma instância em execução do SQL Server ou SQL Server Express que tenha o banco de dados de exemplo AdventureWorksLT anexado a ele. Você pode baixar o banco de dados AdventureWorksLT do [site do CodePlex](https://archive.codeplex.com/?p=SqlServerSamples).
 
@@ -72,7 +72,7 @@ Para expor dados a um aplicativo usando um serviço de dados WCF, você deve def
 
 2. Na lista Modelos Instalados, clique em **Dados** e selecione o item do projeto **Modelo de Dados de Entidade ADO.NET**.
 
-3. Altere o nome para `AdventureWorksModel.edmx` e clique em **Adicionar**.
+3. Altere o nome para `AdventureWorksModel.edmx`e clique em **Adicionar**.
 
      O **Assistente do Modelo de Dados de Entidade** será aberto.
 
@@ -98,7 +98,7 @@ Crie um serviço de dados WCF para expor os dados no Modelo de Dados de Entidade
 
 2. Na lista **Modelos Instalados**, clique em **Web** e selecione o item de projeto **Serviço de Dados WCF**.
 
-3. Na caixa **nome** , digite `AdventureWorksService.svc` e clique em **Adicionar**.
+3. Na caixa **nome** , digite `AdventureWorksService.svc`e clique em **Adicionar**.
 
      O Visual Studio adiciona o `AdventureWorksService.svc` ao projeto.
 
@@ -173,7 +173,7 @@ Adicione vários botões à janela, modificando o XAML no WPF Designer. A seguir
    <Button HorizontalAlignment="Right" Margin="0,21,46,24" Name="saveButton" Width="110">Save changes</Button>
    ```
 
-3. Compile o projeto.
+3. Crie o projeto.
 
 ## <a name="create-the-data-bound-controls"></a>Criar os controles associados a dados
 
@@ -265,7 +265,7 @@ Compile e execute o aplicativo para verificar se é possível exibir e atualizar
 
 1. No menu **Compilar** , clique em **Compilar solução**. Verifique se a solução é compilada sem erros.
 
-2. Pressione **Ctrl** +**F5**.
+2. Pressione **Ctrl**+**F5**.
 
      O Visual Studio inicia o projeto **AdventureWorksService** sem depurá-lo.
 
@@ -287,7 +287,7 @@ Compile e execute o aplicativo para verificar se é possível exibir e atualizar
 
 8. Feche o aplicativo.
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
 
 Depois de completar este passo a passo, você poderá realizar as seguintes tarefas relacionadas:
 
@@ -295,7 +295,7 @@ Depois de completar este passo a passo, você poderá realizar as seguintes tare
 
 - Saiba como usar a janela **Fontes de Dados** no Visual Studio para exibir dados relacionados (isto é, dados em uma relação pai-filho) em controles do WPF. Para obter mais informações, consulte [Walkthrough: Exibindo dados relacionados em um aplicativo do WPF](../data-tools/display-related-data-in-wpf-applications.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Associar controles WPF a dados no Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)
 - [Associar controles do WPF a um conjunto de dados](../data-tools/bind-wpf-controls-to-a-dataset.md)

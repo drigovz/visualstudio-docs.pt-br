@@ -4,17 +4,17 @@ ms.date: 05/02/2017
 ms.topic: conceptual
 helpviewer_keywords:
 - lab environment, test lab
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-author: jillre
-ms.openlocfilehash: d33562c686365029bc75781c76ad26d772dfcf66
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+author: mikejo5000
+ms.openlocfilehash: c9d7e90e0c4eb48a19c36ad86d8f438080b38d62
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653094"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75588896"
 ---
 # <a name="use-a-lab-environment-for-your-devops"></a>Usar um ambiente de laboratório para suas operações de desenvolvimento
 
@@ -92,7 +92,7 @@ Para saber mais sobre SCVMM, veja [Virtual Machine Manager](/azure/devops/pipeli
 
 Ambientes padrão e SCVMM oferecem suporte a vários dos mesmos recursos. No entanto, há duas diferenças importantes a se considerar. A tabela a seguir compara os recursos disponíveis para ambientes padrão e SCVMM.
 
-|Recurso|Ambiente SCVMM|Ambientes padrão|
+|Capability|Ambiente SCVMM|Ambientes padrão|
 |-|------------------------|-|
 |**Teste**|||
 |Executar testes manuais|Com suporte|Com suporte|
@@ -137,7 +137,7 @@ Para saber mais sobre como configurar ambientes, veja:
 * [Ambientes SCVMM (virtuais)](https://msdn.microsoft.com/library/ee943322.aspx)
 * [Criando e usando um ambiente de rede isolado](https://msdn.microsoft.com/library/ee518924.aspx)
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 * [Instalar e configurar agentes de teste](../../test/lab-management/install-configure-test-agents.md)
 * [Guia do Lab Management do Visual Studio](https://aka.ms/vsarsolutions)

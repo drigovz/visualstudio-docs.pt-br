@@ -5,26 +5,26 @@ ms.date: 03/19/2019
 ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.custom: vs-get-started
-author: jillre
+author: TerryGLee
 f1_keywords:
 - vs.startpage
 - VS.StartPage.HowDoI
-ms.author: jillfra
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 21449c338024aa19d07c8bf7435c5e88c92c3988
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3707e06aa41c4f232a5525ca4422f3941fbe2d1a
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72632460"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589351"
 ---
 # <a name="welcome-to-the-visual-studio-ide"></a>Bem-vindo ao IDE do Visual Studio
 
 [!INCLUDE [overview-part-1](includes/ide-overview.md)]
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
 
 Explore ainda mais o Visual Studio seguindo um dos seguintes artigos introdutórios:
 
@@ -44,7 +44,7 @@ Se você estiver pronto para mergulhar em mais codificação, um dos seguintes i
 
 - [Use o Visual Studio para criar seu C++ primeiro aplicativo de console](/cpp/get-started/tutorial-console-cpp)
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - Descubra [mais recursos do Visual Studio](../ide/advanced-feature-overview.md)
 - Visite [visualstudio.microsoft.com](https://visualstudio.microsoft.com/vs/)

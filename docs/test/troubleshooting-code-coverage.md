@@ -2,17 +2,17 @@
 title: Solução de problemas de cobertura de código
 ms.date: 11/04/2016
 ms.topic: troubleshooting
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-author: jillre
-ms.openlocfilehash: 9a7e90310df3e9e2e73b653fdc651ba266e679ae
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+author: mikejo5000
+ms.openlocfilehash: bd70394262a2dd19ebf32f57549b9d2b3e8ee92a
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659874"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75565969"
 ---
 # <a name="troubleshoot-code-coverage"></a>Solução de problemas de cobertura de código
 
@@ -58,7 +58,7 @@ O arquivo *.pdb* precisa ser gerado do mesmo build dos arquivos *.dll* ou *.exe*
 
 Resolução – Garanta que as configurações de build gerem o arquivo *.pdb*. Se os arquivos *.pdb* não forem atualizados quando o projeto for compilado, abra as propriedades do projeto, selecione a página **Build**, escolha **Avançado** e inspecione **Informações de Depuração**.
 
-Para C++ projetos, verifique se os arquivos. pdb gerados têm informações de depuração completas. Abra as propriedades do projeto e verifique se o **vinculador**  > **depuração**  > **gerar informações de depuração** está definido para **gerar informações de depuração otimizadas para compartilhamento e publicação (/debug: Full)** .
+Para C++ projetos, verifique se os arquivos. pdb gerados têm informações de depuração completas. Abra as propriedades do projeto e verifique se o **vinculador** > **depuração** > **gerar informações de depuração** está definido para **gerar informações de depuração otimizadas para compartilhamento e publicação (/debug: Full)** .
 
 Se os arquivos *.pdb* e *.dll* ou *.exe* estiverem em locais diferentes, copie o arquivo *.pdb* para o mesmo diretório. Também é possível configurar o mecanismo de cobertura de código para pesquisar arquivos *.pdb* em outro local. Para obter mais informações, confira [Personalizar a análise de cobertura de código](../test/customizing-code-coverage-analysis.md).
 
@@ -126,6 +126,6 @@ Explicação&mdash;A ferramenta de cobertura de código funciona inserindo-se a 
 
 Resolução&mdash;Nenhuma.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Usar a cobertura de código para determinar quanto do código está sendo testado](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)

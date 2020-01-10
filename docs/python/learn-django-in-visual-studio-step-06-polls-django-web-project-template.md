@@ -11,16 +11,16 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 5e9220df4f9abdb806495e6108fb6039b28e0b7b
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: c1fe3db702508267e96dc79f2f789a17a7edf98b
+ms.sourcegitcommit: 789430e18dfe8e5f7db19273e7298af2f078c0dc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71254375"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "75755579"
 ---
-# <a name="step-6-use-the-polls-django-web-project-template"></a>Etapa 6: Usar o modelo de projeto Web Votações do Django
+# <a name="step-6-use-the-polls-django-web-project-template"></a>Etapa 6: Usar o modelo Projeto Web do Django de pesquisas
 
-**Etapa anterior: [Autenticar usuários no Django](learn-django-in-visual-studio-step-05-django-authentication.md)**
+**Etapa anterior: [Autenticar usuários em Django](learn-django-in-visual-studio-step-05-django-authentication.md)**
 
 Depois de entender o modelo de "Projeto Web do Django" do Visual Studio, você agora pode examinar o terceiro modelo do Django, "Pesquisas do projeto Web do Django", que tem como base a mesma base de código e demonstra o trabalho com um banco de dados.
 
@@ -33,7 +33,7 @@ Nesta etapa, você aprenderá a:
 > - Entender os modos de exibição e os modelos de página criados pelo modelo de projeto (etapa 6-4)
 > - Criar uma interface de administração personalizada (etapa 6-5)
 
-Um projeto criado usando este modelo é semelhante ao obtido seguindo o tutorial [Como escrever seu primeiro aplicativo do Django](https://docs.djangoproject.com/en/2.0/intro/tutorial01/) nos documentos do Django. O aplicativo Web consiste em um site público que permite às pessoas exibirem pesquisas e votarem nelas, juntamente com uma interface administrativa personalizada por meio da qual você pode gerenciar pesquisas. Ele usa o mesmo sistema de autenticação que o modelo "Projeto Web do Django" e usa mais o banco de dados implementando modelos do Django conforme explorado nas seções a seguir.
+Um projeto criado usando esse modelo é semelhante ao que você obtém seguindo o tutorial [escrevendo seu primeiro aplicativo Django](https://docs.djangoproject.com/en/2.0/intro/tutorial01/) no docs Django. O aplicativo Web consiste em um site público que permite às pessoas exibir pesquisas e votar nelas, juntamente com uma interface administrativa personalizada por meio da qual você pode gerenciar pesquisas. Ele usa o mesmo sistema de autenticação que o modelo "Projeto Web do Django" e usa mais o banco de dados implementando modelos do Django conforme explorado nas seções a seguir.
 
 ## <a name="step-6-1-create-the-project-and-initialize-the-database"></a>Etapa 6-1: Criar o projeto e inicializar o banco de dados
 
@@ -112,9 +112,9 @@ class Choice(models.Model):
         return self.text
 ```
 
-Como você pode ver, uma Pesquisa mantém uma descrição em seu campo `text` e uma data de publicação no `pub_date`. Esses campos são os únicos que existem para a pesquisa no banco de dados; o `total_votes` campo é calculado em tempo de execução.
+Como você pode ver, uma Pesquisa mantém uma descrição em seu campo `text` e uma data de publicação no `pub_date`. Esses campos são os únicos que existem para a pesquisa no banco de dados; o campo `total_votes` é calculado em tempo de execução.
 
-Uma Opção está relacionada a uma Pesquisa por meio do campo `poll`, contém uma descrição no `text`e mantém uma contagem para aquela opção no `votes`. O `votes_percentage` campo é calculado em tempo de execução e não é encontrado no banco de dados.
+Uma Opção está relacionada a uma Pesquisa por meio do campo `poll`, contém uma descrição no `text`e mantém uma contagem para aquela opção no `votes`. O campo `votes_percentage` é calculado em tempo de execução e não é encontrado no banco de dados.
 
 A lista completa de tipos de campo é `CharField` (texto limitado) `TextField` (texto ilimitado), `EmailField`, `URLField`, `DateTimeField`, `IntegerField`, `DecimalField`, `BooleanField`, `ForeignKey` e `ManyToMany`. Cada campo utiliza alguns atributos, como `max_length`. O atributo `blank=True` significa que o campo é opcional; `null=true` significa que um valor é opcional. Também há um atributo `choices` que limita valores a valores em uma matriz de tuplas de valor de dados/valor de exibição. (Veja a [Referência de campo de modelo](https://docs.djangoproject.com/en/2.0/ref/models/fields/) na documentação do Django).
 
@@ -160,7 +160,7 @@ Para ver o efeito, execute o aplicativo primeiro para verificar se não há algu
 
 ### <a name="question-is-it-possible-to-initialize-the-database-using-the-django-administrative-utility"></a>Pergunta: É possível inicializar o banco de dados usando o utilitário administrativo do Django?
 
-Resposta: Sim, você pode usar o [comando django-admin loaddata](https://docs.djangoproject.com/en/1.9/ref/django-admin/#loaddata) para realizar a mesma tarefa que a página de propagação no aplicativo. Ao trabalhar em um aplicativo Web completo, você pode usar uma combinação dos dois métodos: inicializar um banco de dados da linha de comando e, em seguida, converter a página de propagação aqui para uma API para a qual você pode enviar qualquer outro JSON arbitrário em vez de depender de um arquivo codificado.
+Resposta: Sim, você pode usar o [comando django-admin loaddata](https://docs.djangoproject.com/en/2.0/ref/django-admin/#loaddata) para realizar a mesma tarefa que a página de propagação no aplicativo. Ao trabalhar em um aplicativo Web completo, você pode usar uma combinação dos dois métodos: inicializar um banco de dados da linha de comando e, em seguida, converter a página de propagação aqui para uma API para a qual você pode enviar qualquer outro JSON arbitrário em vez de depender de um arquivo codificado.
 
 ## <a name="step-6-3-use-migrations"></a>Etapa 6-3: Usar migrações
 
@@ -190,13 +190,13 @@ Para ver o efeito de alterar um modelo, tente as seguintes etapas:
 
 Em geral, o recurso de migração do Django significa que você nunca precisa gerenciar seu esquema de banco de dados manualmente. Basta fazer alterações em seus modelos, gerar scripts de migração e aplicá-las com o comando de migração.
 
-### <a name="question-what-happens-if-i-forget-to-run-the-migrate-command-after-making-changes-to-models"></a>Pergunta: O que acontecerá se eu esquecer de executar o comando de migração depois de fazer alterações nos modelos?
+### <a name="question-what-happens-if-i-forget-to-run-the-migrate-command-after-making-changes-to-models"></a>Pergunta: O que acontece se eu esquecer de executar o comando de migração depois de fazer alterações nos modelos?
 
-Resposta: Se os modelos não corresponderem ao que há no banco de dados, o Django falhará em tempo de execução com as exceções apropriadas. Por exemplo, se você esquecer de migrar a alteração do modelo mostrada na seção anterior, verá o erro **no such column: app_poll.author**:
+Resposta: se os modelos não corresponderem ao que há no banco de dados, o Django falhará em tempo de execução com as exceções apropriadas. Por exemplo, se você esquecer de migrar a alteração do modelo mostrada na seção anterior, verá o erro **no such column: app_poll.author**:
 
 ![Erro mostrado quando uma alteração de modelo não tiver sido migrada](media/django/step06-exception-when-forgetting-to-migrate.png).
 
-### <a name="question-why-doesnt-solution-explorer-show-newly-generated-scripts-after-running-django-make-migrations"></a>Pergunta: Por que o Gerenciador de Soluções não mostra os scripts recém-gerados após a execução de Django Make Migrations?
+### <a name="question-why-doesnt-solution-explorer-show-newly-generated-scripts-after-running-django-make-migrations"></a>Pergunta: Por que o Gerenciador de Soluções não mostra os scripts gerados recentemente após executar Django Make Migrations?
 
 Resposta: Embora os scripts recém-gerados estejam na pasta *app/migrations* e sejam aplicados quando o comando **Django Migrate** é executado, eles não são exibidos automaticamente no **Gerenciador de Soluções** porque não foram adicionados ao projeto do Visual Studio. Para torná-las visíveis, primeiro selecione o comando de menu **Project** > **Show All Files** ou botão da barra de ferramentas descrito na imagem abaixo. Esse comando faz o **Gerenciador de Soluções** mostrar todos os arquivos na pasta do projeto, com um ícone de contorno pontilhado para itens que não foram adicionados ao projeto em si. Clique com o botão direito nos arquivos que você deseja adicionar e selecione **Include In Project**, que também os inclui no controle de origem com a próxima confirmação.
 
@@ -359,10 +359,10 @@ A chamada para `admin.site.register` em seguida conecta-se a essa classe para o 
 
 ![Exibição administrativa do aplicativo de pesquisas de Projeto Web do Django](media/django/step06-polls-administrative-interface.png)
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
 
 > [!Note]
-> Se você tiver confirmando sua solução do Visual Studio para controle de origem ao longo deste tutorial, agora será um bom momento para fazer outra confirmação. Sua solução deve corresponder ao código-fonte do tutorial no GitHub: [Microsoft/python-sample-vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django).
+> Se você tiver confirmando sua solução do Visual Studio para controle de origem ao longo deste tutorial, agora será um bom momento para fazer outra confirmação. A solução deve corresponder ao código-fonte do tutorial no GitHub: [Microsoft/python-sample-vs-learning-django](https://github.com/Microsoft/python-sample-vs-learning-django).
 
 Agora você explorou a totalidade dos modelos de "Projeto em branco da Web do Django", "Projeto da Web do Django" e "Pesquisas de Projeto Web do Django" no Visual Studio. Você aprendeu as noções básicas do Django como o uso de modelos e modos de exibição e explorou roteamento, autenticação e uso de modelos de banco de dados. Agora você deverá ser capaz de criar um aplicativo Web por sua conta com os modos de exibição e os modelos de que precisar.
 

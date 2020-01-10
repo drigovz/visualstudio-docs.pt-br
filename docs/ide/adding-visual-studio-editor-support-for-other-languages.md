@@ -11,17 +11,17 @@ helpviewer_keywords:
 - TextMate language grammar
 - language support
 ms.assetid: d78c43ee-4ef2-42e5-984e-d137de4e7e92
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e43325a6d749653c063c06f2c1c10c69f708da9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d4fafaf9356d8862808e1ac6ad125207d71769b5
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647792"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590872"
 ---
 # <a name="add-visual-studio-editor-support-for-other-languages"></a>Adicionar suporte para outras linguagens ao editor do Visual Studio
 
@@ -41,7 +41,7 @@ No momento, o Visual Studio oferece suporte à colorização de sintaxe e preenc
 |Clojure|Ir|JavaDoc|Objective-C|ShaderLab|C#|
 |CMake|Groovy|JSON|Perl|ShellScript|Visual C++|
 |CoffeeScript|HTML|LESS|Python|SQL|VBNet|
-|CSS|INI|LUA|R|Swift|XML|
+|{1&gt;CSS&lt;1}|INI|LUA|R|Swift|{1&gt;XML&lt;1}|
 |Docker|Jade|Marca|Ruby|TypeScript|YAML|
 
 Além da colorização de sintaxe e do preenchimento de declaração, o Visual Studio também tem um recurso chamado [Navegar até](https://blogs.msdn.microsoft.com/benwilli/2015/04/09/visual-studio-tip-3-use-navigate-to/). Esse recurso permite pesquisar rapidamente arquivos de código, caminhos de arquivo e símbolos de código. O Visual Studio oferece suporte Navegar até para as seguintes linguagens.
@@ -87,7 +87,7 @@ No Windows, *%userprofile%* determina o caminho: *c:\Usuários\\\<nome do usuár
 
 Para obter detalhes sobre como criar Gramáticas TextMate, confira [TextMate: introdução a gramáticas de linguagem](https://developmentality.wordpress.com/2011/02/08/textmate-introduction-to-language-grammars/) e [Observações sobre como criar uma gramática de linguagem e um tema personalizado para um pacote Textmate](https://benparizek.com/notebook/notes-on-how-to-create-a-language-grammar-and-custom-theme-for-a-textmate-bundle).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Adicionar uma extensão do Language Server Protocol](../extensibility/adding-an-lsp-extension.md)
 - [Passo a passo: Criar um snippet de código](../ide/walkthrough-creating-a-code-snippet.md)

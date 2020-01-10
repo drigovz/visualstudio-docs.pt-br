@@ -3,17 +3,17 @@ title: Configurar destinos e tarefas | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 9aabe67a-1720-4bbf-80d3-822b3ccf75c0
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d3dedf051bf9b9d60f659d8b8ad22535a4eccb4c
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: bb305e1c8a50c8f452ce4ee2d78620314c5d6a1f
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72912089"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596106"
 ---
 # <a name="configure-targets-and-tasks"></a>Configurar destinos e tarefas
 Você pode configurar destinos do MSBuild e tarefas para execução fora de processo com o MSBuild para que você possa direcionar contextos diferentes daqueles que você está executando. Por exemplo, você pode direcionar um aplicativo do .NET Framework 2.0 de 32 bits, enquanto o computador de desenvolvimento está em execução em um sistema de operacional de 64 bits do .NET Framework 4.5. Você também pode direcionar os computadores que executam o .NET Framework 4 ou anterior. A combinação de 32 ou 64 bits e a versão específica do .NET Framework é conhecida como o *contexto de destino*.
@@ -28,5 +28,5 @@ Você pode configurar destinos do MSBuild e tarefas para execução fora de proc
 
  Se quiser criar seu próprio contexto de destino, você deverá definir esses parâmetros e argumentos adequadamente. Examine o arquivo *Microsoft.Common.targets* do .NET Framework 4.5 e o arquivo *Microsoft.Common.Tasks* para obter exemplos.  Para obter informações sobre como criar uma tarefa personalizada que pode trabalhar com vários contextos de destino ou como modificar as tarefas existentes, confira [Como configurar destinos e tarefas](../msbuild/how-to-configure-targets-and-tasks.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 - [Multiplataforma](../msbuild/msbuild-multitargeting-overview.md)

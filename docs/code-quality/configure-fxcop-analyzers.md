@@ -4,24 +4,24 @@ ms.date: 09/23/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - FxCop analyzers, configuring
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1d2c4f6b44daf83b3fd013167ec24e82c45ce2e8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b1d178adbbb847b2629ee785a7a0fa4e990a46dd
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649696"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587713"
 ---
 # <a name="configure-fxcop-analyzers"></a>Configurar analisadores do FxCop
 
 O [pacote de analisadores do FxCop](install-fxcop-analyzers.md) consiste nas regras mais importantes do "FxCop" da análise herdada convertida em analisadores de código baseados em .net Compiler Platform. Para determinadas regras do FxCop, você pode refinar a quais partes de sua base de código elas devem ser aplicadas por meio de [opções configuráveis](fxcop-analyzer-options.md). Cada opção é especificada adicionando um par chave-valor a um arquivo [EditorConfig](https://editorconfig.org) . Um arquivo de configuração pode ser [específico para um projeto](#per-project-configuration) ou pode ser [compartilhado](#shared-configuration) entre dois ou mais projetos.
 
 > [!TIP]
-> Adicione um arquivo. editorconfig ao seu projeto clicando com o botão direito do mouse no projeto em **Gerenciador de soluções** e selecionando **Adicionar**  > **novo item**. Na janela **Adicionar novo item** , insira **editorconfig** na caixa de pesquisa. Selecione o modelo de **arquivo editorconfig (padrão)** e escolha **Adicionar**.
+> Adicione um arquivo. editorconfig ao seu projeto clicando com o botão direito do mouse no projeto em **Gerenciador de soluções** e selecionando **Adicionar** > **novo item**. Na janela **Adicionar novo item** , insira **editorconfig** na caixa de pesquisa. Selecione o modelo de **arquivo editorconfig (padrão)** e escolha **Adicionar**.
 >
 > ![Adicionar arquivo editorconfig ao projeto no Visual Studio](media/add-editorconfig-file.png)
 
@@ -46,7 +46,7 @@ A sintaxe para configurar uma opção para *todas* as regras é a seguinte:
 
 |Sintaxe|Exemplo|
 |-|-|
-| dotnet_code_quality. OptionName = optionvalue | `dotnet_code_quality.api_surface = public` |
+| dotnet_code_quality.OptionName = OptionValue | `dotnet_code_quality.api_surface = public` |
 
 ### <a name="category-of-rules"></a>Categoria de regras
 
@@ -62,7 +62,7 @@ A sintaxe para configurar uma opção para uma regra *específica* é a seguinte
 
 |Sintaxe|Exemplo|
 |-|-|
-| dotnet_code_quality. RuleId. ValorDeOpção = optionvalue | `dotnet_code_quality.CA1040.api_surface = public` |
+| dotnet_code_quality.RuleId.OptionName = OptionValue | `dotnet_code_quality.CA1040.api_surface = public` |
 
 ## <a name="per-project-configuration"></a>Configuração por projeto
 
@@ -103,7 +103,7 @@ Você pode compartilhar um arquivo. editorconfig para a configuração do FxCop 
 > [!NOTE]
 > O local de compartilhamento arbitrário do arquivo EditorConfig descrito aqui se aplica somente à configuração do escopo de determinadas regras do analisador do FxCop. Para outras configurações, como severidade da regra, configurações gerais do editor e estilo de código, o arquivo EditorConfig sempre deve ser colocado na pasta do projeto ou em uma pasta pai.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Opções de escopo da regra para analisadores do FxCop](fxcop-analyzer-options.md)
 - [Configuração do analisador](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md)

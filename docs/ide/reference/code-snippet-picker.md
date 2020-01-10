@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Code Snippet Picker
 - IntelliSense code snippets, Code Snippet Picker
 - code snippets, Code Snippet Picker
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b8be7783d7c68867b181bafa7ec0874fbb231519
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: bb03da430f43bbfd5c7398c147560a9c823f8811
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654612"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75570486"
 ---
 # <a name="code-snippet-picker"></a>Seletor de snippet de código
 
@@ -44,7 +44,7 @@ O procedimento para exibir o **Seletor de Snippet de Código** varia de acordo c
 
 Na maioria das linguagens de desenvolvimento do Visual Studio, é possível usar o **Gerenciador de Snippets de Código** para adicionar pastas à lista de pastas que o **Seletor de Snippet de Código** examina em busca de arquivos com snippet XML. Você também pode criar seus próprios snippets para adicionar à lista. Para obter mais informações, consulte [Instruções passo a passo: criando um snippet de código](../../ide/walkthrough-creating-a-code-snippet.md).
 
-## <a name="uielement-list"></a>Lista UIElement
+## <a name="uielement-list"></a>Lista de UIElement
 
 Nome do Item
 
@@ -54,7 +54,7 @@ Lista de Itens
 
 Uma lista de snippets de código disponíveis para inserção ou uma lista de pastas que contêm snippets de código. Para inserir um snippet ou expandir uma pasta, selecione o item desejado e pressione Enter.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Melhores práticas para usar snippets de código](../../ide/best-practices-for-using-code-snippets.md)
 - [Snippets de Código do Visual Basic IntelliSense](/dotnet/visual-basic/developing-apps/using-ide/intellisense-code-snippets)

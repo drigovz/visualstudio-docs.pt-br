@@ -3,17 +3,17 @@ title: Desempenho do XSLT
 ms.date: 03/05/2019
 ms.topic: conceptual
 ms.assetid: 87387c9a-2e89-4801-ad51-83740cd6ea25
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2866e9b19ea2b79bf8435d81c93443bb20ff4fec
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 79d865a426af2c089bfcc6bd1e733b4ecc185077
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72645915"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592276"
 ---
 # <a name="the-xslt-profiler"></a>O criador de perfil XSLT
 
@@ -21,7 +21,7 @@ O profiler XSLT criar relatórios de desempenho detalhados XSLT que a medida da 
 
 O XSLT Profiler faz parte do Visual Studio e está disponível no menu **XML** .
 
-![Perfil XSLT](../xml-tools/media/profile-xslt-menu.png)
+![XSLT Profiler](../xml-tools/media/profile-xslt-menu.png)
 
 > [!NOTE]
 > O XSLT Profiler só está disponível na edição Enterprise do Visual Studio.
@@ -30,7 +30,7 @@ O XSLT Profiler faz parte do Visual Studio e está disponível no menu **XML** .
 
 1. Abrir um documento XSLT no Visual Studio.
 
-2. Na barra de menus, escolha **XML**  > **perfil XSLT**.
+2. Na barra de menus, escolha **XML** > **perfil XSLT**.
 
 3. Fornecer um documento XML de entrada. Se um documento XML ele já não estiver aberto, você será solicitado para o arquivo.
 
@@ -106,6 +106,6 @@ Se uma função chamada `SyncToNavigator` aparece na parte média de exibição,
 
    A exibição processo exibe uma tabela que inclui a **ID do processo**, o **nome do processo**, a hora de **início**e a **hora de término**. Os dados podem ser classificados clicando em nomes de coluna.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Walkthrough: usando a hierarquia XSLT](../xml-tools/walkthrough-using-xslt-hierarchy.md)

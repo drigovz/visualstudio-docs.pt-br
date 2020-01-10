@@ -6,17 +6,17 @@ f1_keywords:
 - vs.graphics.designer.3dscene
 - vs.graphics.modelviewer
 ms.assetid: 5edf1a30-9307-43c3-9b8b-831217be0104
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 13ca91c431f574190a5cddbe17f1b042685056bb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 7adee409ff6bb5721724b9acc2e76a11d32a4f54
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72635028"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589845"
 ---
 # <a name="model-editor"></a>Editor de modelos
 
@@ -45,7 +45,7 @@ Esta seção descreve como adicionar um modelo 3D ao seu projeto do Visual Studi
 
 1. Verifique se você tem o componente necessário do Visual Studio instalado para trabalhar com gráficos. O componente é chamado de **Editores de imagens e modelos 3D**.
 
-   Para instalá-lo, abra Instalador do Visual Studio selecionando **ferramentas**  > **obter ferramentas e recursos** na barra de menus e, em seguida, selecione a guia **componentes individuais** . Selecione o componente **imagem e editores de modelo 3D** sob a  **Categoria jogos e gráficos** e, em seguida, selecione **Modificar**.
+   Para instalá-lo, abra Instalador do Visual Studio selecionando **ferramentas** > **obter ferramentas e recursos** na barra de menus e, em seguida, selecione a guia **componentes individuais** . Selecione o componente **imagem e editores de modelo 3D** na categoria **jogos e gráficos** e, em seguida, selecione **Modificar**.
 
    ![Componente Editores de imagens e modelos 3D](media/image-3d-model-editors-component.png)
 
@@ -291,7 +291,7 @@ Para remover a associação pai/filho entre dois objetos, selecione o objeto fil
 
 ## <a name="keyboard-shortcuts"></a>Atalhos de teclado
 
-|Comando|Atalhos de teclado|
+|{1&gt;Comando&lt;1}|Atalhos de teclado|
 |-------------| - |
 |Mudar para o modo **Selecionar**|**Ctrl**+**G**, **Ctrl**+**Q**<br /><br /> **S**|
 |Mudar para o modo **Zoom**|**Ctrl**+**G**, **Ctrl**+**Z**<br /><br /> **Z**|
@@ -334,7 +334,7 @@ Para remover a associação pai/filho entre dois objetos, selecione o objeto fil
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
-|Título|Descrição|
+|Cargo|Descrição|
 |-----------|-----------------|
 |[Trabalhando com ativos 3D para jogos e aplicativos](../designers/working-with-3-d-assets-for-games-and-apps.md)|Fornece uma visão geral das ferramentas do Visual Studio que você pode usar para trabalhar com recursos gráficos, como texturas e imagens, modelos 3D e efeitos de sombreamento.|
 |[Editor de Imagens](../designers/image-editor.md)|Descreve como usar o Editor de Imagens do Visual Studio para trabalhar com texturas e imagens.|

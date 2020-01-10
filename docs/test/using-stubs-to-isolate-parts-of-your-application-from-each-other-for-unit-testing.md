@@ -2,24 +2,24 @@
 title: Usar stubs para isolar partes do aplicativo para testes
 ms.date: 11/04/2016
 ms.topic: conceptual
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-author: jillre
+author: mikejo5000
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 6c980ab2d920a80e49450f6ffe4a9433f490b412
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 328551a78464c7b682eea6a988c20e742f2797c9
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72982844"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75568542"
 ---
 # <a name="use-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing"></a>Use stubs para isolar partes de seu aplicativo umas das outras para teste de unidade
 
-Os *tipos de stub* são uma das duas tecnologias que o Microsoft Fakes framework fornece para permitir que você isole facilmente um componente em teste de outros componentes que ele chama. Um stub é um pequeno trecho de código que ocupa o lugar de outro componente durante o teste. A vantagem de usar um stub é que ele retorna resultados consistentes, tornando mais fácil escrever o teste. E você pode executar testes mesmo se os outros componentes não estiverem funcionando ainda.
+Os *tipos de stub* são uma das duas tecnologias que o Microsoft Fakes framework fornece para permitir que você isole facilmente um componente em teste de outros componentes que ele chama. Um stub é uma pequeno pedaço de código que assume o lugar de outro componente durante os testes. O benefício de usar um stub é que ele retorna resultados consistentes, tornando o teste mais fácil de escrever. E você pode executar testes mesmo se os outros componentes não estiverem funcionando ainda.
 
 Para obter uma visão geral e um guia de início rápido ao Fakes, confira [Isolar o código em teste com o Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md).
 
@@ -292,7 +292,7 @@ End Class
 
 ## <a name="stubs-for-different-kinds-of-type-members"></a>Stubs para tipos diferentes de membros de tipo
 
-### <a name="methods"></a>Métodos
+### <a name="methods"></a>{1&gt;Métodos&lt;1}
 
 Conforme descrito no exemplo, é possível fazer o stub dos métodos anexando um delegado a uma instância da classe stub. O nome do tipo de stub é derivado dos nomes do método e dos parâmetros. Por exemplo, dada a interface `IMyInterface` e o método `MyMethod` a seguir:
 
@@ -314,7 +314,7 @@ stub.MyMethodString = (value) => 1;
 
 Se você não fornecer um stub para uma função, o Fakes gera uma função que retorna o valor padrão do tipo de retorno. Para números, o valor padrão é 0, e para tipos de classe é `null` (C#) ou `Nothing` (Visual Basic).
 
-### <a name="properties"></a>Propriedades
+### <a name="properties"></a>{1&gt;Propriedades&lt;1}
 
 Os getters e setters de propriedade são expostos como delegados separados e podem passar por stub separadamente. Por exemplo, considere a propriedade `Value` de `IMyInterface`:
 
@@ -338,7 +338,7 @@ stub.ValueSet = (value) => i = value;
 
 Se você não fornecer métodos stub para o setter ou o getter de uma propriedade, o Fakes gera um stub que armazena valores, para que a propriedade stub funcione como uma variável simples.
 
-### <a name="events"></a>Eventos
+### <a name="events"></a>Events
 
 Os eventos são expostos como campos delegados. Portanto, qualquer evento de stub pode ser gerado simplesmente invocando o campo de suporte do evento. Vamos considerar a seguinte interface para stub:
 
@@ -458,6 +458,6 @@ O comportamento também pode ser modificado globalmente para todos os objetos st
 StubBehaviors.Current = BehavedBehaviors.DefaultValue;
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Isolar o código em teste com o Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md)

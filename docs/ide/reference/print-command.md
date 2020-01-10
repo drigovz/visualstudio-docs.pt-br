@@ -9,17 +9,17 @@ helpviewer_keywords:
 - Print method
 - Print command
 ms.assetid: 0412d381-590a-483f-bab4-6e1cca095645
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ae87afb11be71af8f0582a0b2899d67ba970186e
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 3056570e52893f1c21eaf10c7856b21fbbc02c61
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747819"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75567834"
 ---
 # <a name="print-command"></a>Comando Imprimir
 
@@ -35,7 +35,7 @@ Avalia uma expressão ou exibe o texto especificado.
 
 `text`
 
-Necessário. A expressão a ser avaliada ou o texto a ser exibido.
+Necessária. A expressão a ser avaliada ou o texto a ser exibido.
 
 ## <a name="remarks"></a>Comentários
 
@@ -59,7 +59,7 @@ As duas versões desse comando retornam o valor atual da expressão `expA`.
 >Debug.Print DateTime.Now.Day
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Comando Evaluate Statement](../../ide/reference/evaluate-statement-command.md)
 - [Comandos do Visual Studio](../../ide/reference/visual-studio-commands.md)

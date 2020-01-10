@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a2848f04e2765c23f60de041e865e7684901b924
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bc90d659a32c14f92e1eff058dd22d4a17d0b1cb
+ms.sourcegitcommit: 0d8488329263cc0743a89d43f6de863028e982ff
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62962597"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "75678994"
 ---
 # <a name="debug-python-and-c-together"></a>Depurar o Python e o C++ juntos
 
@@ -38,7 +38,7 @@ Os recursos de depuração de modo misto incluem o seguinte, conforme explicado 
 
 |   |   |
 |---|---|
-| ![ícone de câmera para vídeo](../install/media/video-icon.png "Assistir a um vídeo") | Para obter uma introdução à criação, ao teste e à depuração de módulos nativos do C com o Visual Studio, assista ao vídeo [Aprofundamento: Criar módulos nativos](https://youtu.be/D9RlT06a1EI) (youtube.com, 9min09s). O vídeo aplica-se para o Visual Studio 2015 e 2017. |
+| ![ícone de câmera para vídeo](../install/media/video-icon.png "Assista a um vídeo") | Para obter uma introdução ao build, ao teste e à depuração de módulos nativos do C com o Visual Studio, assista ao vídeo [Deep Dive: Creating Native Modules](https://youtu.be/D9RlT06a1EI) (Aprofundamento: Criar módulos nativos) (youtube.com, 9min09s). O vídeo aplica-se para o Visual Studio 2015 e 2017. |
 
 ## <a name="enable-mixed-mode-debugging-in-a-python-project"></a>Habilitar a depuração de modo misto em um projeto do Python
 
@@ -55,7 +55,7 @@ Os recursos de depuração de modo misto incluem o seguinte, conforme explicado 
 
     As configurações de tipo de código são persistentes. Portanto, se desejar desabilitar a depuração de modo misto ao anexar a um processo diferente posteriormente, desmarque o tipo de código **Python**.
 
-    É possível selecionar outros tipos de código além do **Nativo** ou em vez dele. Por exemplo, se um aplicativo gerenciado hospedar o CPython, que, por sua vez, usa módulos de extensão nativos e você desejar depurar todos os três, é possível marcar **Python**, **Nativo** e **Gerenciado** juntos para uma experiência de depuração unificada, incluindo pilhas de chamadas combinadas e a execução em etapas entre os três tempos de execução.
+    É possível selecionar outros tipos de código além do **Nativo** ou em vez dele. Por exemplo, se um aplicativo gerenciado hospedar o CPython, que, por sua vez, usa módulos de extensão nativos e você desejar depurar todos os três, é possível marcar **Python**, **Nativo** e **Gerenciado** juntos para uma experiência de depuração unificada, incluindo pilhas de chamadas combinadas e a execução em etapas entre os três runtimes.
 
 1. Ao iniciar a depuração no modo misto pela primeira vez, você poderá ver uma caixa de diálogo **Símbolos Obrigatórios do Python** (confira [Símbolos para depuração de modo misto](debugging-symbols-for-mixed-mode-c-cpp-python.md)). Você precisa instalar símbolos apenas uma vez para qualquer ambiente do Python. Os símbolos serão incluídos automaticamente se você instalar o suporte do Python por meio do instalador do Visual Studio (Visual Studio 2017 e posterior).
 
@@ -69,6 +69,9 @@ O Visual Studio (2017 versão 15.5 e posterior) é compatível com a depuração
 1. Selecione a guia **Depuração**, **Depuração Nativa/do Python** em **Depurador a ser iniciado** e **OK**.
 
     ![Selecionando o depurador do Python/Nativo em um projeto do C/C++](media/mixed-mode-debugging-select-cpp-debugger.png)
+
+> [!Note]
+> Se você não tiver a opção de selecionar a **depuração do Python/Native** , precisará primeiro instalar as **ferramentas de desenvolvimento nativo do Python** usando o instalador do vs. Você pode encontrá-lo como uma opção na carga de trabalho de desenvolvimento do Python. Para obter informações adicionais, consulte [como instalar o suporte do Python no Visual Studio no Windows](installing-python-support-in-visual-studio.md).
 
 Usando esse método, fique ciente de que você não pode depurar o próprio inicializador do *py.exe*, pois ele gera um processo filho *python.exe* ao qual o depurador não será anexado. Caso deseje iniciar o *python.exe* diretamente com argumentos, altere a opção **Comando** nas propriedades **Depuração do Python/Nativa** (mostradas na imagem anterior) para especificar o caminho completo para *python.exe* e, em seguida, especifique os argumentos em **Argumentos do Comando**.
 
@@ -168,9 +171,9 @@ O depurador de modo misto é diferente do [depurador padrão do Python](debuggin
 
 - Funcionalidades sem suporte: pontos de interrupção condicionais, janela **Interativa de Depuração** e depuração remota multiplataforma.
 - Janela **Imediata**: disponível, mas com um subconjunto limitado de sua funcionalidade, incluindo todas as limitações listadas aqui.
-- Versões do Python com suporte: Somente CPython 2.7 e 3.3+.
-- Shell do Visual Studio: Ao usar o Python com o Shell do Visual Studio (por exemplo, se você o instalar por meio do instalador integrado), o Visual Studio não poderá abrir projetos do C++ e a experiência de edição para arquivos do C++ será apenas a de um editor de texto básico. No entanto, há suporte completo para a depuração do C/C++ e a depuração de modo misto no Shell com código-fonte, execução em etapas em código nativo e avaliação de expressão do C++ nas janelas do depurador.
-- Exibindo e expandindo objetos: Ao exibir objetos do Python nas janelas **Locais** e **Inspeção** da ferramenta do depurador, o depurador de modo misto mostra apenas a estrutura dos objetos. Ele não avalia propriedades automaticamente nem mostra atributos computados. Para coleções, ele mostra apenas os elementos de tipos de coleção interna (`tuple`, `list`, `dict`, `set`). Os tipos de coleção personalizada não são visualizados como coleções, a menos que sejam herdados de algum tipo de coleção interna.
+- Versões do Python com suporte: somente CPython 2.7 e 3.3+.
+- Shell do Visual Studio: ao usar o Python com o Shell do Visual Studio (por exemplo, se ele tiver sido instalado por meio do instalador integrado), o Visual Studio não poderá abrir projetos do C++ e a experiência de edição para arquivos do C++ será apenas a de um editor de texto básico. No entanto, há suporte completo para a depuração do C/C++ e a depuração de modo misto no Shell com código-fonte, execução em etapas em código nativo e avaliação de expressão do C++ nas janelas do depurador.
+- Exibindo e expandindo objetos: ao exibir objetos do Python nas janelas **Locais** e **Inspeção** da ferramenta do depurador, o depurador de modo misto mostra apenas a estrutura dos objetos. Ele não avalia propriedades automaticamente nem mostra atributos computados. Para coleções, ele mostra apenas os elementos de tipos de coleção interna (`tuple`, `list`, `dict`, `set`). Os tipos de coleção personalizada não são visualizados como coleções, a menos que sejam herdados de algum tipo de coleção interna.
 - Avaliação de expressão: consulte abaixo.
 
 ### <a name="expression-evaluation"></a>Avaliação de expressão

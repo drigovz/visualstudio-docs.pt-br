@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language Tools, walkthroughs
 - walkthroughs [Domain-Specific Language Tools]
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e476f1db1e30a04e67e6b53f593f55ee3867fae2
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 75805dc08eb340b3f70884d3bf5078a5b2712ed3
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985126"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594728"
 ---
 # <a name="how-to-add-a-command-to-the-shortcut-menu"></a>Como: adicionar um comando ao menu de atalho
 
@@ -220,17 +220,17 @@ private void OnStatusMyContextMenuCommand(object sender, EventArgs e)
 
 Os seguintes fragmentos são geralmente úteis nos métodos OnStatus:
 
-- `this.CurrentSelection` O formato que o usuário clicou com o botão direito do mouse estará sempre incluído nesta lista. Se o usuário clicar em uma parte em branco do diagrama, o Diagrama será o único membro da lista.
+- `this.CurrentSelection`. O formato que o usuário clicou com o botão direito do mouse estará sempre incluído nesta lista. Se o usuário clicar em uma parte em branco do diagrama, o Diagrama será o único membro da lista.
 
-- `this.IsDiagramSelected()`  -  `true` se o usuário clicou em uma parte em branco do diagrama.
+- `this.IsDiagramSelected()` - `true` se o usuário clicou em uma parte em branco do diagrama.
 
 - `this.IsCurrentDiagramEmpty()`
 
-- `this.IsSingleSelection()` - o usuário não escolheu vários objetos
+- `this.IsSingleSelection()`-o usuário não selecionou vários objetos
 
-- `this.SingleSelection` - a forma ou o diagrama que o usuário clicou com o botão direito
+- `this.SingleSelection`-a forma ou o diagrama em que o usuário clicou com o botão direito
 
-- `shape.ModelElement as MyLanguageElement` - o elemento de modelo representado por uma forma.
+- `shape.ModelElement as MyLanguageElement`-o elemento de modelo representado por uma forma.
 
 Como diretriz geral, faça com que a propriedade `Visible` dependa do que foi selecionado e faça com que a propriedade `Enabled` dependa do estado dos elementos selecionados.
 
@@ -297,7 +297,7 @@ private const int cmdidMyContextMenuCommand = 1;
 > [!NOTE]
 > Se você alterar a seção Símbolos do arquivo VSCT, deverá também alterar essas declarações para que correspondam. Você deve também incrementar o número de versão em Package.tt
 
- Registre os comandos de menu como parte deste conjunto de comandos. `GetMenuCommands()` é chamado uma vez quando o diagrama é iniciado:
+ Registre os comandos de menu como parte deste conjunto de comandos. `GetMenuCommands()` é chamado uma vez quando o diagrama é inicializado:
 
 ```csharp
 protected override IList<MenuCommand> GetMenuCommands()
@@ -357,7 +357,7 @@ O **método OnStatus não é chamado**:
 
 - Certifique-se de que você tenha desinstalado as versões anteriores do pacote.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Escrevendo código para personalizar uma linguagem específica de domínio](../modeling/writing-code-to-customise-a-domain-specific-language.md)
 - [Como modificar um comando de menu padrão](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)

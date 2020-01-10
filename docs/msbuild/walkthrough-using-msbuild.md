@@ -1,23 +1,23 @@
 ---
-title: 'Passo a passo: Usando o MSBuild | Microsoft Docs'
+title: 'Instruções passo a passo: usando o MSBuild | Microsoft Docs'
 ms.date: 03/20/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, tutorial
 ms.assetid: b8a8b866-bb07-4abf-b9ec-0b40d281c310
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ee57e0fb78eadce226a7fa8371d395181c6060a1
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d874d8b9c96cc8cc58466bb42d8ac189e1aabc11
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445301"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75567288"
 ---
-# <a name="walkthrough-use-msbuild"></a>Passo a passo: Usar o MSBuild
+# <a name="walkthrough-use-msbuild"></a>Passo a passo: usar o MSBuild
 
 O MSBuild é a plataforma de build da Microsoft e do Visual Studio. Estas instruções passo a passo apresentam os componentes essenciais do MSBuild e mostram como gravar, manipular e depurar projetos do MSBuild. Você aprenderá a:
 
@@ -38,14 +38,14 @@ Você pode executar o MSBuild no Visual Studio ou na **janela Comando**. Nestas 
 1. Abra o Visual Studio e crie um projeto.
 
     ::: moniker range=">=vs-2019"
-    Pressione **Esc** para fechar a janela de início. Digite **Ctrl + Q** para abrir a caixa de pesquisa, digite **winforms**, depois escolha **Criar um novo aplicativo do Windows Forms (.NET Framework)**. Na caixa de diálogo que aparece, escolha **Criar**.
+    Pressione **Esc** para fechar a janela de início. Digite **Ctrl + Q** para abrir a caixa de pesquisa, digite **winforms**, depois escolha **Criar um novo aplicativo do Windows Forms (.NET Framework)** . Na caixa de diálogo que aparece, escolha **Criar**.
 
-    Na caixa **Nome**, digite `BuildApp`. Insira um **Local** para a solução, por exemplo, *D:\\*. Aceite os padrões para **Solução**, **Nome da solução** (**BuildApp**) e **Estrutura**.
+    Na caixa **Nome**, digite `BuildApp`. Insira um **Local** para a solução, por exemplo, *D:\\* . Aceite os padrões para **Solução**, **Nome da solução** (**BuildApp**) e **Estrutura**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Na barra de menus superior, escolha **Arquivo** > **Novo** > **Projeto**. No painel esquerdo da caixa de diálogo **Novo Projeto**, expanda **Visual C#** > **Windows Desktop** e, em seguida, escolha **Aplicativo do Windows Forms (.NET Framework)**. Em seguida, escolha **OK**.
+    Na barra de menus superior, escolha **Arquivo** > **Novo** > **Projeto**. No painel esquerdo da caixa de diálogo **Novo Projeto**, expanda **Visual C#**  > **Windows Desktop** e, em seguida, escolha **Aplicativo do Windows Forms (.NET Framework)** . Em seguida, escolha **OK**.
 
-    Na caixa **Nome**, digite `BuildApp`. Insira um **Local** para a solução, por exemplo, *D:\\*. Aceite os padrões para **Criar diretório para a solução** (marcado), **Adicionar ao Controle do Código-Fonte** (não marcado) e **Nome da Solução** (**BuildApp**).
+    Na caixa **Nome**, digite `BuildApp`. Insira um **Local** para a solução, por exemplo, *D:\\* . Aceite os padrões para **Criar diretório para a solução** (marcado), **Adicionar ao Controle do Código-Fonte** (não marcado) e **Nome da Solução** (**BuildApp**).
     ::: moniker-end
 
 1. Clique em **OK** ou **Criar** para criar o arquivo de projeto.
@@ -255,11 +255,11 @@ $(PropertyName)
 
 ### <a name="reserved-properties"></a>Propriedades reservadas
 
- O MSBuild reserva alguns nomes de propriedade para armazenar informações sobre o arquivo de projeto e os binários do MSBuild. MSBuildToolsPath é um exemplo de uma propriedade reservada. As propriedades reservadas são referenciadas com a notação $ como qualquer outra propriedade. Para obter mais informações, confira [Como: Referenciar o nome ou a localização do arquivo de projeto](../msbuild/how-to-reference-the-name-or-location-of-the-project-file.md) e [Propriedades reservadas e conhecidas do MSBuild](../msbuild/msbuild-reserved-and-well-known-properties.md).
+ O MSBuild reserva alguns nomes de propriedade para armazenar informações sobre o arquivo de projeto e os binários do MSBuild. MSBuildToolsPath é um exemplo de uma propriedade reservada. As propriedades reservadas são referenciadas com a notação $ como qualquer outra propriedade. Para saber mais, confira [Como referenciar o nome ou o local do arquivo de projeto](../msbuild/how-to-reference-the-name-or-location-of-the-project-file.md) e [Propriedades reservadas e conhecidas do MSBuild](../msbuild/msbuild-reserved-and-well-known-properties.md).
 
 ### <a name="environment-variables"></a>Variáveis de ambiente
 
- Você pode referenciar variáveis de ambiente em arquivos de projeto da mesma maneira que as propriedades de build. Por exemplo, para usar a variável de ambiente PATH em seu arquivo de projeto, use $(Path). Se o projeto contiver uma definição de propriedade que tem o mesmo nome que uma variável de ambiente, a propriedade no projeto substituirá o valor da variável de ambiente. Para obter mais informações, confira [Como: Usar variáveis de ambiente em um build](../msbuild/how-to-use-environment-variables-in-a-build.md).
+ Você pode referenciar variáveis de ambiente em arquivos de projeto da mesma maneira que as propriedades de build. Por exemplo, para usar a variável de ambiente PATH em seu arquivo de projeto, use $(Path). Se o projeto contiver uma definição de propriedade que tem o mesmo nome que uma variável de ambiente, a propriedade no projeto substituirá o valor da variável de ambiente. Para saber mais, confira [Como usar variáveis de ambiente em um build](../msbuild/how-to-use-environment-variables-in-a-build.md).
 
 ## <a name="set-properties-from-the-command-line"></a>Definir propriedades na linha de comando
 
@@ -423,7 +423,7 @@ Altere a tarefa Message para usar retornos de carro e alimentações de linha (%
 <Photos Include="images\**\*.jpeg" />
 ```
 
- adiciona todos os arquivos com a extensão de arquivo *.jpeg* na pasta de *imagens*, juntamente com todas as subpastas, ao tipo de item Photos. Para ver mais exemplos, confira [Como: Selecionar os arquivos a serem compilados](../msbuild/how-to-select-the-files-to-build.md).
+ adiciona todos os arquivos com a extensão de arquivo *.jpeg* na pasta de *imagens*, juntamente com todas as subpastas, ao tipo de item Photos. Para obter mais exemplos, confira [Como selecionar os arquivos para compilação](../msbuild/how-to-select-the-files-to-build.md).
 
  Observe que, conforme os itens são declarados, eles são adicionados ao tipo de item. Por exemplo,
 
@@ -444,7 +444,7 @@ Altere a tarefa Message para usar retornos de carro e alimentações de linha (%
 <Compile Include="*.cs" Exclude="*Designer*">
 ```
 
- adiciona todos os arquivos com a extensão de arquivo *.cs* ao tipo de item Compile, exceto os arquivos cujos nomes contêm a cadeia de caracteres *Designer*. Para ver mais exemplos, confira [Como: Excluir arquivos do build](../msbuild/how-to-exclude-files-from-the-build.md).
+ adiciona todos os arquivos com a extensão de arquivo *.cs* ao tipo de item Compile, exceto os arquivos cujos nomes contêm a cadeia de caracteres *Designer*. Para obter mais exemplos, confira [Como excluir arquivos do build](../msbuild/how-to-exclude-files-from-the-build.md).
 
 O atributo Exclude afeta somente os itens adicionados pelo atributo Include no elemento do item que contém ambos. Por exemplo,
 
@@ -600,9 +600,9 @@ Observe que os metadados expressados nesta sintaxe não causam o envio em lote.
 
 ## <a name="whats-next"></a>O que vem a seguir?
 
- Para saber como criar um arquivo de projeto simples etapa por etapa, experimente o [Passo a passo: Criando um arquivo de projeto do MSBuild do zero](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md).
+ Para saber como criar um arquivo de projeto simples etapa por etapa, experimente o [Instruções passo a passo: criando um arquivo de projeto do MSBuild do zero](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Visão geral do MSBuild](../msbuild/msbuild.md)
 - [Referência do MSBuild](../msbuild/msbuild-reference.md)

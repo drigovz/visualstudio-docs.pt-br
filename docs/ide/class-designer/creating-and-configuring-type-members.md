@@ -24,17 +24,17 @@ helpviewer_keywords:
 - Class Details window
 - Class Details window, member creation
 ms.assetid: 42af8738-3738-4ca7-82ff-edf573a68f96
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a842ccb936c755a27ab28287f9da8d6355e92fc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: bfed51812b034d63f250a56548b88f09a98214fe
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647750"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590404"
 ---
 # <a name="create-and-configure-type-members-in-class-designer"></a>Criar e configurar membros de tipo no Designer de Classe
 
@@ -42,12 +42,12 @@ ms.locfileid: "72647750"
 
 |**Tipo**|**Membros que pode conter**|
 |--------------| - |
-|Class|método, propriedade (para C# e Visual Basic), campo, evento (para C# e Visual Basic), construtor (método), destruidor (método), constante|
+|Classe|método, propriedade (para C# e Visual Basic), campo, evento (para C# e Visual Basic), construtor (método), destruidor (método), constante|
 |Enum|membro|
 |Interface|método, propriedade, evento (para C# e Visual Basic)|
-|Classe Abstrata|método, propriedade (para C# e Visual Basic), campo, evento (para C# e Visual Basic), construtor (método), destruidor (método), constante|
+|Classe abstrata|método, propriedade (para C# e Visual Basic), campo, evento (para C# e Visual Basic), construtor (método), destruidor (método), constante|
 |Estrutura (Struct no C#)|método, propriedade (para C# e Visual Basic), campo, evento (para C# e Visual Basic), construtor (método), constante|
-|delegado|parâmetro|
+|Delegado|Parâmetro|
 |Módulo (apenas VB)|método, propriedade, campo, evento, construtor, constante|
 
 > [!NOTE]
@@ -317,7 +317,7 @@ Não é possível editar métodos parciais usando o Designer de Classe ou a jane
 
 Não é possível editar código C++ nativo usando o Designer de Classe ou a janela **Detalhes da Classe**. Use o Editor de Códigos para editar código C++ nativo.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Exibindo tipos e relações](designing-and-viewing-classes-and-types.md)
 - [Refatorando classes e tipos](refactoring-classes-and-types.md)

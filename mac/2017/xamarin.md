@@ -1,16 +1,16 @@
 ---
 title: Xamarin
 description: 'Usar o Xamarin no Visual Studio para Mac permite que você crie aplicativos multiplataforma voltados para iOS, Mac, Android, tvOS e watchOS '
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 02/12/2019
 ms.assetid: 339F6051-5F90-48DC-8237-EBBC8A03A32B
-ms.openlocfilehash: 7d9cfbcafc90340d15172dd0d862ef9904fd6715
-ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
+ms.openlocfilehash: bba9d3490c12e661277b82dd08d6d7862ec3a8aa
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73716119"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74983462"
 ---
 # <a name="xamarin-mobile-app-development"></a>Desenvolvimento de aplicativos móveis do Xamarin
 
@@ -45,7 +45,7 @@ Para obter mais informações sobre como escrever aplicativos do Mac com o Visua
 > [!Note]
 > Esses produtos só podem ser usados com uma assinatura do Visual Studio Enterprise.
 
-### <a name="profiler"></a>Criador de Perfil
+### <a name="profiler"></a>Profiler
 
 O Xamarin Profiler tem três instrumentos disponíveis para criação de perfil. O guia [Introdução ao Xamarin Profiler](/xamarin/tools/profiler/index?tabs=macos) explora o que esses instrumentos medem e como eles analisam seu aplicativo e explica o significado dos dados apresentados em cada tela.
 

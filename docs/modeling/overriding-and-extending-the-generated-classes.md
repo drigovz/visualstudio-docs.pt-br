@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, providing overridable classes
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4c2386b7a7472f6b80457a5a803f6dfe886cc1d0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c3374f67f4fba11543e3dbbca47fef621dd2e714
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658330"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595885"
 ---
 # <a name="override-and-extend-the-generated-classes"></a>Substituir e estender as classes geradas
 
@@ -80,7 +80,7 @@ Em cada caso, quando você define o sinalizador e gera novamente o código, ocor
 
 O Gerenciador de transações permite que você defina regras que são executadas antes do final de uma transação na qual um evento designado ocorreu, como uma alteração em uma propriedade. Normalmente, as regras são usadas para manter sincronização entre elementos diferentes na loja. Por exemplo, as regras são usadas para garantir que o diagrama exiba o estado atual do modelo.
 
-As regras são definidas em uma base por classe, para que você não precise ter um código que registre a regra para cada objeto. Para obter mais informações, consulte [regras propagar alterações no modelo](../modeling/rules-propagate-changes-within-the-model.md).
+As regras são definidas em uma base por classe, para que você não precise ter um código que registre a regra para cada objeto. Para obter mais informações, consulte [propagam alterações dentro do modelo de regras](../modeling/rules-propagate-changes-within-the-model.md).
 
 ### <a name="store-events"></a>Armazenar eventos
 

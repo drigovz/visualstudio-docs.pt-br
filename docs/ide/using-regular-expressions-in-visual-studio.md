@@ -11,17 +11,17 @@ f1_keywords:
 helpviewer_keywords:
 - regular expressions [Visual Studio]
 - regular expressions
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 53fd8af330d0cdab84d944dc453dbfe66208608f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f1739d6b2376a4f86edd3c0102f7fad79da5d7cd
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647328"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75568614"
 ---
 # <a name="use-regular-expressions-in-visual-studio"></a>Usar expressões regulares no Visual Studio
 
@@ -31,7 +31,7 @@ O Visual Studio usa [expressões regulares .NET](/dotnet/standard/base-types/reg
 
 A tabela a seguir contém alguns caracteres de expressão regular, operadores, constructos e exemplos de padrão. Para obter uma referência mais completa, confira [Linguagem de expressão regular](/dotnet/standard/base-types/regular-expression-language-quick-reference).
 
-|Finalidade|Expressão|{1&gt;Exemplo&lt;1}|
+|Finalidade|Expressão|Exemplo|
 |-------------|----------------|-------------|
 |Encontrar a correspondência de um único caractere (exceto uma quebra de linha). Para saber mais, veja [Qualquer caractere](/dotnet/standard/base-types/character-classes-in-regular-expressions#any-character-).|.|`a.o` corresponde a "toa" em "redor" e "Abo" em "sobre", mas não "quivos" em "em"|
 |Encontrar a correspondência de zero ou mais ocorrências da expressão anterior (encontrar a correspondência do máximo de caracteres possíveis). Para saber mais, confira [Corresponder a zero ou mais vezes](/dotnet/standard/base-types/quantifiers-in-regular-expressions#match-zero-or-more-times-).|*|`a*r` corresponde a “r” em “rack”, “ar” em “ark” e “aar” em “aardvark”|
@@ -71,7 +71,7 @@ Para criar um grupo de captura numerado, coloque a subexpressão entre parêntes
 
 - **dentro da expressão regular**: Use `\number`. Por exemplo, `\1` na expressão regular `(\w+)\s\1` faz referência ao primeiro grupo de captura `(\w+)`.
 
-- **em um padrão de substituição**: Use `$number`. Por exemplo, a expressão regular agrupada `(\d)([a-z])` define dois grupos: o primeiro grupo contém um único dígito decimal e o segundo grupo contém um único caractere entre **a** e **z**. A expressão encontra quatro correspondências na seguinte cadeia de caracteres: **1a 2b 3c 4d**. A cadeia de caracteres de substituição `z$1` faz referência somente ao primeiro grupo (`$1`) e converte a cadeia de caracteres em **z1 z2 z3 z4**.
+- **em um padrão de substituição**: Use `$number`. Por exemplo, a expressão regular agrupada `(\d)([a-z])` define dois grupos: o primeiro grupo contém um único dígito decimal e o segundo grupo contém um único caractere entre **a** e **z**. A expressão localiza quatro correspondências na cadeia de caracteres a seguir: **1a 2b 3c 4d**. A cadeia de caracteres de substituição `z$1` faz referência somente ao primeiro grupo (`$1`) e converte a cadeia de caracteres em **z1 z2 z3 z4**.
 
 A imagem a seguir mostra uma expressão regular `(\w+)\s\1` e uma cadeia de caracteres de substituição `$1`. A expressão regular e o padrão de substituição fazem referência ao primeiro grupo de captura que é automaticamente numerado como 1. Quando você escolhe **Substituir tudo** na caixa de diálogo **Substituição Rápida** no Visual Studio, palavras repetidas são removidas do texto.
 
@@ -88,7 +88,7 @@ Os grupos de captura nomeados, como grupos de captura numerados, podem ser usado
 
 - **dentro da expressão regular**: Use `\k<name>`. Por exemplo, `\k<repeated>` na expressão regular `(?<repeated>\w+)\s\k<repeated>` faz referência ao grupo de captura chamado `repeated` e cuja subexpressão é `\w+`.
 
-- **em um padrão de substituição**: Use `${name}`. Por exemplo: `${repeated}`.
+- **em um padrão de substituição**: Use `${name}`. Por exemplo, `${repeated}`.
 
 Como exemplo, a imagem a seguir mostra uma expressão regular `(?<repeated>\w+)\s\k<repeated>` e uma cadeia de caracteres de substituição `${repeated}`. A expressão regular e o padrão de substituição fazem referência ao primeiro grupo de captura nomeado `repeated`. Quando você escolhe **Substituir tudo** na caixa de diálogo **Substituição Rápida** no Visual Studio, palavras repetidas são removidas do texto.
 
@@ -99,7 +99,7 @@ Como exemplo, a imagem a seguir mostra uma expressão regular `(?<repeated>\w+)\
 
 Para saber mais sobre grupos de captura nomeados, confira [Subexpressões coincidentes nomeadas](/dotnet/standard/base-types/grouping-constructs-in-regular-expressions#named-matched-subexpressions). Para saber mais sobre expressões regulares usadas em padrões de substituição, confira [Substituições em expressões regulares](/dotnet/standard/base-types/substitutions-in-regular-expressions).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Linguagem de expressão regular](/dotnet/standard/base-types/regular-expression-language-quick-reference)
 - [Localizar e substituir texto](../ide/finding-and-replacing-text.md)

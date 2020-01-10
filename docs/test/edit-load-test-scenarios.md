@@ -7,15 +7,15 @@ helpviewer_keywords:
 - load tests, user activities
 - load tests, modeling scenarios
 ms.assetid: fec04f2e-bf38-4d44-b2ec-fa50f58fd0d9
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 944b0bf52cd6a7c3459f0be2a06b437796f57b37
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8fa323d275628fe580763709884552754acfba81
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72665038"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593233"
 ---
 # <a name="edit-load-test-scenarios"></a>Editar cenários de teste de carga
 
@@ -57,7 +57,7 @@ Um cenário tem várias outras propriedades que você pode editar usando o **Edi
 |**Configurar as configurações de atraso para seu cenário:** usando o **Editor de Teste de Carga** e a janela **Propriedades**, é possível especificar um atraso antes de iniciar um cenário em um teste de carga. Um exemplo de quando você talvez queira usar a propriedade **Atrasar tempo de início** é se precisar de um cenário para começar a produzir itens consumidos por outro cenário. Você pode atrasar o cenário de consumo para habilitar o cenário de produção a fim de popular alguns dados.|-   [Configurar atrasos de início do cenário](../test/configure-scenario-start-delays.md)|
 |**Especificar computadores remotos para usar em um cenário de teste de carga:** depois de criar um teste de carga, você pode editar as propriedades do seu cenário de teste de carga para indicar que agentes de teste você deseja incluir. Para obter mais informações, consulte [Controladores e agentes de teste](configure-test-agents-and-controllers-for-load-tests.md).|-   [Como especificar agentes de teste para usar](../test/how-to-specify-test-agents-to-use-in-load-test-scenarios.md)|
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Editar testes de carga](../test/edit-load-tests.md)
 - [Propriedades do cenário de teste de carga](../test/load-test-scenario-properties.md)

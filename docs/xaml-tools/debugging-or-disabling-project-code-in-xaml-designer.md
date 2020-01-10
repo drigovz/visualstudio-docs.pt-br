@@ -3,15 +3,15 @@ title: Depurar ou desabilitar o código do projeto no Designer XAML
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: ac600581-8fc8-49e3-abdf-1569a3483d74
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: e6426479012ba950f261286323b166da695e9cc5
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: ce29bcef43877ec8a41235545652278645cad123
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189593"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592990"
 ---
 # <a name="debug-or-disable-project-code-in-xaml-designer"></a>Depurar ou desabilitar o código do projeto no Designer XAML
 
@@ -96,6 +96,6 @@ Para alterar as opções de exibição de controle, clique no ícone na parte in
 
 Quando você selecionar **Exibir Somente os Controles de Plataforma**, todos os controles personalizados provenientes de SDKs, controles de usuário do cliente e outros não serão renderizados completamente. Em vez disso, eles serão substituídos por controles de fallback para demonstrar o tamanho e a posição do controle.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Projetar XAML no Visual Studio e no Blend para Visual Studio](designing-xaml-in-visual-studio.md)

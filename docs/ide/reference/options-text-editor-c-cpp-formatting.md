@@ -11,17 +11,17 @@ helpviewer_keywords:
 - Text Editor Options dialog box, formatting
 - ClangFormat
 ms.assetid: cb6f1cbb-5305-48da-a8e8-33fd70775d46
-author: mikeblome
-ms.author: mblome
+author: TerryGLee
+ms.author: tglee
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b866d09dbd448950a641ebb59501c13c3bf35188
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
-ms.translationtype: HT
+ms.openlocfilehash: d7a6029058ab0bc02a623df0e1733eb8548102d5
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461813"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596249"
 ---
 # <a name="options-text-editor-cc-formatting"></a>Opções, Editor de Texto, C/C++, Formatação
 
@@ -44,7 +44,7 @@ Esta página contém as opções de formatação de instruções e de blocos con
 
 ::: moniker-end
 
-A página também tem opções para configurar o suporte para o [ClangFormat](https://clang.llvm.org/docs/ClangFormat.html) versão 5.0. O ClangFormat é um utilitário que facilita a definição do estilo e a formatação do código com base em um conjunto de regras que pode ser configurado em um arquivo .clang-format ou _clang-format.
+A página também tem opções para configurar o suporte para a versão 5,0 do [ClangFormat](https://clang.llvm.org/docs/ClangFormat.html) . O ClangFormat é um utilitário que facilita a definição do estilo e a formatação do código com base em um conjunto de regras que pode ser configurado em um arquivo .clang-format ou _clang-format.
 
 ### <a name="configuring-clangformat-options"></a>Configurando as opções de ClangFormat
 
@@ -62,7 +62,7 @@ Por padrão, o Visual Studio executa o clangformat.exe em segundo plano e aplica
 
 Essas páginas habilitam várias personalizações de formatação, mas que são ignoradas quando ClangFormat está habilitado.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Caixa de diálogo Geral, Ambiente, Opções](../../ide/reference/general-environment-options-dialog-box.md)
 - [Usando o IntelliSense](../../ide/using-intellisense.md)

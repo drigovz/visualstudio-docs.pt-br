@@ -1,7 +1,7 @@
 ---
 title: Aumentar a produtividade de desenvolvimento do .NET
 description: Uma visão geral da navegação, da análise de código, do teste de unidade e de outros recursos para ajudá-lo a escrever um código .NET melhor mais rápido.
-author: mikadumont
+author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.date: 11/21/2019
@@ -10,12 +10,12 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5777ef318d557b85abddf35d2fbdf37a044b0ead
-ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
+ms.openlocfilehash: 0aa8e19f2be78671587dd1d9bc6254306c82a78c
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74491649"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75567496"
 ---
 # <a name="visual-studio-productivity-guide-for-c-developers"></a>Guia de produtividade do Visual Studio para desenvolvedores de C#
 
@@ -41,7 +41,7 @@ Algumas extensões também oferecem esquemas de teclado:
 
 Estes são os atalhos populares do Visual Studio:
 
-| Atalho (todos os perfis) | Comando | Descrição |
+| Atalho (todos os perfis) | {1&gt;Comando&lt;1} | Descrição |
 |-|-|-|
 | **Ctrl**+**T** | Ir para Todos | Navegar diretamente para qualquer declaração de símbolo, arquivo, tipo ou membro |
 | **F12** (também **Ctrl**+**Clique**) | Ir para definição | Vá até onde um símbolo estiver definido |
@@ -89,7 +89,7 @@ Use um arquivo EditorConfig para codificar as convenções de codificação e ap
 
 ::: moniker range=">=vs-2019"
 
-- Criar automaticamente um arquivo *.editorconfig* com base nas configurações de estilo de código em **Ferramentas** > **Opções** > **Editor de Texto** > **C#** > **Estilo de Código**.
+- Crie automaticamente um arquivo *. editorconfig* com base em suas configurações de estilo de código em **ferramentas** > **opções** > **C#** Editor de **texto** > **estilo de código**de >.
 
    ![Gerar o arquivo .editorconfig a partir das configurações no VS 2019](media/vs-2019/generate-editorconfig-file.png)
 
@@ -132,7 +132,7 @@ As correções rápidas e refatorações comuns incluem:
 - Gerar Método
 - Mover Tipo para Arquivo
 - Adicionar Null-Check
-- Adicionar Parâmetro
+- Adicione o parâmetro
 - Remover usos desnecessários
 - Loop Foreach para uma consulta LINQ ou um método LINQ
 - Subir os membros
@@ -181,7 +181,7 @@ A partir do Visual Studio 2017, há vários aprimoramentos na experiência de te
 
 - O [Live Unit Testing](../test/live-unit-testing.md) executa continuamente os testes afetados pelas alterações de código e atualiza os ícones do editor embutido para informar o status dos testes. Inclua ou exclua testes específicos ou projetos de teste pelo Live Test Set (conjunto de teste de modo real). (somente na edição Visual Studio Enterprise.)
 
-## <a name="debugging"></a>Depuração
+## <a name="debugging"></a>{1&gt;Depuração&lt;1}
 
 Alguns dos recursos de depuração do Visual Studio incluem:
 

@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, constraints
 - Domain-Specific Language, validation
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fb059a9175c61c238abf0881cd96e4179fcf6f65
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 7a37dbb4d9754641b4bcca826ff0ec77c7298d9b
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748178"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594000"
 ---
 # <a name="validation-in-a-domain-specific-language"></a>Validação em uma linguagem específica do domínio
 Como o autor de uma linguagem específica de domínio (DSL), você pode definir restrições de validação para verificar se o modelo criado pelo usuário é significativo. Por exemplo, se a sua DSL permite que os usuários desenhem uma árvore genealógica das pessoas e os seus ancestrais, você pode escrever uma restrição que garanta que os filhos tenham datas de nascimento posteriores as dos seus pais.
@@ -125,7 +125,7 @@ public partial class ParentsHaveChildren
 
  Observe os seguintes pontos sobre esse código:
 
-- Você pode adicionar métodos de validação às classes de domínio ou relações de domínio. O código para esses tipos está em **Dsl\Generated Code\Domain \*. cs**.
+- Você pode adicionar métodos de validação às classes de domínio ou relações de domínio. O código para esses tipos está em **Dsl\Generated Code\Domain\*. cs**.
 
 - Cada método de validação é aplicado a todas as instâncias de sua classe e suas subclasses. No caso de uma relação de domínio, cada instância é um link entre dois elementos de modelo.
 
@@ -173,11 +173,11 @@ public partial class Person
         { ...
 ```
 
- **Agregando restrições de validação.** Para aplicar a validação em uma ordem previsível, defina um único método de validação em uma classe de proprietário, como o elemento raiz do modelo. Essa técnica também permite agregar vários relatórios de erros em uma única mensagem.
+ **Agregando restrições de validação.** Para aplicar validação em uma ordem previsível, defina um único método de validação em uma classe de proprietário, o elemento raiz do seu modelo. Essa técnica também permite agregar vários relatórios de erros em uma única mensagem.
 
  As desvantagens são que o método combinado é menos fácil de gerenciar e que todas as restrições devem ter as mesmas `ValidationCategories`. Por isso, recomendamos que você mantenha cada restrição em um método separado, se possível.
 
- **Passando valores no cache de contexto.** O parâmetro de contexto tem um dicionário no qual você pode inserir valores arbitrários. O dicionário persiste durante a duração da execução da validação. Um método de validação específico pode, por exemplo, manter uma contagem de erros no contexto e usá-la para evitar sobrecarregar a janela de erro com mensagens repetidas. Por exemplo:
+ **Passando valores no cache de contexto.** O parâmetro de contexto tem um dicionário no qual você pode colocar valores arbitrários. O dicionário persiste durante a duração da execução da validação. Um método de validação específico pode, por exemplo, manter uma contagem de erros no contexto e usá-la para evitar sobrecarregar a janela de erro com mensagens repetidas. Por exemplo:
 
 ```csharp
 List<ParentsHaveChildren> erroneousLinks;
@@ -193,7 +193,7 @@ if (erroneousLinks.Count < 5) { context.LogError( ... ); }
 
  Se você definir que a multiplicidade de uma função de uma relação de domínio como 1..* ou 1..1, mas o usuário não criar um link dessa relação, uma mensagem de erro de validação aparecerá.
 
- Por exemplo, se a sua DSL tiver classes Person e cidade e uma relação PersonLivesInTown com uma relação **1.. \\** * na função cidade, para cada pessoa que não tem nenhuma cidade, uma mensagem de erro será exibida.
+ Por exemplo, se a sua DSL tiver classes Person e cidade e uma relação PersonLivesInTown com uma relação **1..\\** * na função cidade, para cada pessoa que não tem nenhuma cidade, uma mensagem de erro será exibida.
 
 ## <a name="running-validation-from-program-code"></a>Executando a validação a partir do código do programa
  Você pode executar a validação acessando ou criando um ValidationController. Se você quiser que os erros sejam exibidos para o usuário na janela de erro, use o ValidationController que está anexado ao DocData do diagrama. Por exemplo, se você estiver escrevendo um comando de menu, `CurrentDocData.ValidationController` está disponível na classe de conjunto de comandos:
@@ -327,14 +327,14 @@ validationController.ValidateCustom
 
  No entanto, essas técnicas não são recomendadas. Normalmente, é melhor deixar que o usuário decida como corrigir um modelo inválido.
 
- **Ajuste a alteração para restaurar o modelo para validade.** Por exemplo, se o usuário definir uma propriedade acima do máximo permitido, você poderá redefinir a propriedade para o valor máximo. Para fazer isso, defina uma regra. Para obter mais informações, consulte [regras propagar alterações no modelo](../modeling/rules-propagate-changes-within-the-model.md).
+ **Ajuste a alteração para restaurar o modelo para validade.** Por exemplo, se o usuário definir uma propriedade acima do valor máximo permitido, você pode redefinir a propriedade para o valor máximo. Para fazer isso, defina uma regra. Para obter mais informações, consulte [propagam alterações dentro do modelo de regras](../modeling/rules-propagate-changes-within-the-model.md).
 
- **Reverter a transação se uma alteração inválida for tentada.** Você também pode definir uma regra para essa finalidade, mas, em alguns casos, é possível substituir um manipulador de propriedade **OnValueChanging ()** ou substituir um método como `OnDeleted().` para reverter uma transação, usar `this.Store.TransactionManager.CurrentTransaction.Rollback().` para obter mais informações, consulte Propriedade de [domínio Manipuladores de alteração de valor](../modeling/domain-property-value-change-handlers.md).
+ **Reverter a transação se uma alteração inválida for tentada.** Você também pode definir uma regra para essa finalidade, mas, em alguns casos, é possível substituir um manipulador de propriedade **OnValueChanging ()** ou substituir um método como `OnDeleted().` para reverter uma transação, usar `this.Store.TransactionManager.CurrentTransaction.Rollback().` para obter mais informações, consulte [manipuladores de alteração de valor de propriedade de domínio](../modeling/domain-property-value-change-handlers.md).
 
 > [!WARNING]
 > Verifique se o usuário sabe que a alteração foi ajustada ou revertida. Por exemplo, use `System.Windows.Forms.MessageBox.Show("message").`
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Navegando por um modelo no código do programa e atualizando-o](../modeling/navigating-and-updating-a-model-in-program-code.md)
 - [Manipuladores de eventos propagam alterações fora do modelo](../modeling/event-handlers-propagate-changes-outside-the-model.md)

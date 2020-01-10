@@ -3,17 +3,17 @@ title: 'Arquivo XSD de exemplo: esquema simples'
 ms.date: 11/04/2016
 ms.topic: sample
 ms.assetid: f7e1dde1-b4f6-4371-add4-935b68ec77d7
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b6681e47ba33d16cd48f5f34389a5d113fc36ef
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 788de9f31a58561aa743d6ca6286ef650f4297a4
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72651169"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592536"
 ---
 # <a name="sample-xsd-file-simple-schema"></a>Arquivo XSD de exemplo: esquema simples
 
@@ -47,4 +47,4 @@ O arquivo XSD a seguir é usado em vários exemplos na documentação do Designe
 ```
 
 > [!NOTE]
-> As empresas, as organizações, os produtos, os nomes de domínio, os endereços de email, os logotipos, as pessoas, os locais e os eventos de exemplo descritos aqui são fictícios. Nenhuma associação com nenhuma empresa, organização, produto, nome de domínio, endereço de email, logotipo, pessoa, locais ou eventos reais é intencional nem deve ser inferida.
+> As empresas, organizações, produtos, nomes de domínio, endereços de email, logotipos, pessoas, lugares e eventos descritos como exemplo neste documento são fictícios. Nenhuma associação com qualquer empresa, organização, produto, nome de domínio, endereço de email, logotipo, pessoa, lugares ou eventos reais é intencional ou deve ser inferida.

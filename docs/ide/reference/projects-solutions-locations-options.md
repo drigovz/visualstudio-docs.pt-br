@@ -4,17 +4,17 @@ ms.date: 07/26/2019
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Projects.Locations
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e20c584a5acecc06a9d04e79a7c70c088eacc15b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 2be4f2977f34ec57198ed3e87f58bdacb4daae4a
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72655712"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75565715"
 ---
 # <a name="options-dialog-box-projects-and-solutions--locations"></a>Caixa de diálogo opções: projetos e soluções \> locais
 
@@ -34,7 +34,7 @@ Especifica o local padrão que é usado para procurar modelos de projeto criados
 
 Especifica o local padrão que é usado para procurar modelos de item criados pelo usuário. Para obter mais informações, consulte [Como localizar e organizar modelos](../../ide/how-to-locate-and-organize-project-and-item-templates.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Caixa de diálogo opções: projetos e soluções \> geral](projects-and-solutions-options-dialog-box.md)
 - [Caixa de diálogo Opções, Projetos e Soluções, Compilar e Executar](../../ide/reference/options-dialog-box-projects-and-solutions-build-and-run.md)

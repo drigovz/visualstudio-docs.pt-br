@@ -1,6 +1,6 @@
 ---
 title: Extensões carregadas automaticamente de modo sincrônico
-ms.date: 02/16/2019
+ms.date: 12/11/2019
 ms.topic: conceptual
 ms.assetid: 822e3cf8-f723-4ff1-8467-e0fb42358a1f
 author: madskristensen
@@ -8,48 +8,50 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8b18642269326c516c2af0baef57cb306f60ae6a
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: aaa26585ff4cca909a7fb7c955b351b8860436b4
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66316709"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75406628"
 ---
 # <a name="synchronously-autoloaded-extensions"></a>Extensões carregadas automaticamente de modo sincrônico
 
-Forma síncrona carregado automaticamente extensões têm um impacto negativo no desempenho do Visual Studio e devem ser convertidas para usar o autoload assíncrono em vez disso. A partir do Visual Studio 2019 Preview 2, os usuários são notificados quando uma extensão está sendo sincronicamente carregados automaticamente. A extensão carregará e funcionar normalmente.
+As extensões autocarregadas de forma síncrona têm um impacto negativo sobre o desempenho do Visual Studio e devem ser convertidas para usar a autocarregamento assíncrona em vez disso. Por padrão, o Visual Studio 2019 bloqueia pacotes carregados de forma síncrona de qualquer extensão e notifica o usuário.
 
-![Aviso de compatibilidade de extensão](media/extension-compatibility-warning.png)
+![aviso de compatibilidade de extensão](media/extension-compatibility-warning-16-1.png.png)
 
-Os usuários podem:
+Você pode:
 
-- Clique em **Saiba mais** para acessar essa página de informações.
+- Clique em **permitir AutoLoad síncrona** para permitir que as extensões sejam AutoLoad. Para alterar essa configuração nas opções do Visual Studio, clique em ambiente, clique em extensões e marque a caixa de seleção "permitir AutoLoad síncrona de extensões". 
 
-- Clique em **gerenciar o desempenho** para abrir o [caixa de diálogo Gerenciador de desempenho](#performance-manager-dialog) que mostra os problemas de desempenho com extensões e janelas de ferramentas.
+- Clique em **gerenciar desempenho** para abrir a [caixa de diálogo Gerenciador de desempenho](#performance-manager-dialog) que mostra problemas de desempenho com extensões e janelas de ferramentas.
 
-- Clique em **não mostrar esta mensagem novamente** para ignorar a notificação. Escolher essa opção também impede que todas as notificações futuras de forma síncrona carregado automaticamente extensões. Os usuários continuarão a receber notificações sobre outros recursos do Visual Studio.
+- Clique em **não mostrar esta mensagem para as extensões atuais** para ignorar a notificação e evitar notificações futuras de extensões instaladas existentes. Se você adicionar uma nova extensão que é carregada de forma síncrona, essa notificação será exibida novamente. Você continuará a receber notificações sobre outros recursos do Visual Studio.
 
 ## <a name="performance-manager-dialog"></a>Caixa de diálogo Gerenciador de desempenho
 
-![caixa de diálogo de Gerenciador de desempenho](media/performance-manager.png)
+![caixa de diálogo Gerenciador de desempenho](media/performance-manager.png)
 
-Todas as extensões de forma síncrona carregados todos os pacotes em todas as sessões de usuário aparecem na **APIs preteridas** guia.
+Todas as extensões que carregaram de forma síncrona todos os pacotes em todas as sessões de usuário são exibidas na guia **APIs preteridas** .
 
-* Os usuários podem clicar na **para obter mais informações sobre esse problema** para obter mais informações sobre as APIs obsoletas.
-* Os usuários podem contate seus fornecedores de extensão para o andamento da migração.
+* Clique em **mais informações sobre esse problema** para coletar mais informações sobre as APIs preteridas.
+* Entre em contato com seus fornecedores de extensão para o andamento da migração.
 
-Os autores de extensão podem encontrar instruções sobre como migrar pacotes para autoload assíncrono no [migrar para o AsyncPackage](https://github.com/Microsoft/VSSDK-Extensibility-Samples/tree/master/AsyncPackageMigration).
+## <a name="specify-synchronous-autoload-settings-using-group-policy"></a>Especificar configurações de AutoLoad síncronas usando a política de grupo
 
-## <a name="specify-synchronous-autoload-settings-using-group-policy"></a>Especificar configurações de autoload síncrona usando diretiva de grupo
-
-Iniciando o Visual Studio 2019 Update 1, por padrão, o autoload síncrona de blocos de instalação Visual Studio. Quando você habilita a política de grupo, você pode configurar o Visual Studio para permitir o autoload síncrona em computadores individuais. Para fazer isso, defina uma política baseada no Registro na seguinte chave:
+Os administradores podem habilitar um Política de Grupo para permitir a AutoLoad síncrona. Para fazer isso, defina uma política baseada no Registro na seguinte chave:
 
 **HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\VisualStudio\SynchronousAutoload**
 
 Entrada = **permitido**
 
 Valor = (DWORD)
-* **0** autoload síncrona não é permitido
-* **1** é síncrona autoload permitido
+* **0** não é permitido AutoLoad síncrono
+* **1** é permitida a AutoLoad síncrona
 
-Para obter mais informações sobre as configurações de autoload síncrona na atualização 1 do Visual Studio de 2019, consulte o [comportamento síncrono de Autoload](https://aka.ms/AA52xzw) página.
+## <a name="extension-authors"></a>Autores de extensão
+Os autores de extensão podem encontrar instruções para migrar pacotes para AutoLoad assíncrona em [migrar para o AsyncPackage](https://github.com/Microsoft/VSSDK-Extensibility-Samples/tree/master/AsyncPackageMigration).
+
+## <a name="see-also"></a>Veja também
+Para obter mais informações sobre as configurações de AutoLoad síncronas no Visual Studio 2019, consulte a página [comportamento de AutoLoad síncrona](https://aka.ms/AA52xzw) .

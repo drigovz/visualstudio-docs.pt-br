@@ -1,16 +1,16 @@
 ---
 title: Configurando um Repositório do Subversion
 description: Usando o Subversion no Visual Studio para Mac.
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: 0D58FB37-530E-495B-BED6-FD499477A9B6
-ms.openlocfilehash: 7dfb5c645125afc1485c1422909e52741507b327
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 7133ffd01d8f384efa91d95bc8ea05aa75b7dd0d
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62988202"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74985221"
 ---
 # <a name="set-up-a-subversion-repository"></a>Configurar um repositório do Subversion
 
@@ -38,7 +38,7 @@ Após instalar o Subversion no computador, siga as etapas a seguir para publicar
 
 2. Abra ou crie um Projeto do Visual Studio para Mac.
 
-3. Clique com o botão direito do mouse no Projeto e selecione **Controle de versão > Publicar no Controle de versão...**:
+3. Clique com o botão direito do mouse no Projeto e selecione **Controle de versão > Publicar no Controle de versão...** :
 
     ![Iniciar a publicação do projeto](media/version-control-subversion2.png)
 

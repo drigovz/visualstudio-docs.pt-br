@@ -5,19 +5,19 @@ ms.date: 07/17/2019
 ms.custom: seodec18
 ms.topic: conceptual
 ms.assetid: ''
-author: doughall
-ms.author: tglee
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 4e84704d4ca37dd9e36da3838b5b1b23f068568c
-ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
+ms.openlocfilehash: 4c33420e715f2164f767ba57ff149a409d7d3627
+ms.sourcegitcommit: 10d16e18c5f5e482c4c2856e6cacaad283463b65
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72888576"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75776181"
 ---
 # <a name="update-visual-studio-while-on-a-servicing-baseline"></a>Atualizar o Visual Studio enquanto estiver em uma linha de base de manutenção
 
@@ -62,7 +62,7 @@ Outra opção para controlar as atualizações em um cliente é [desativar as no
 
 Quando uma atualização para uma linha de base de manutenção estiver disponível, os arquivos do inicializador de versão fixa serão disponibilizados para a atualização da manutenção do [My.VisualStudio.com](https://my.visualstudio.com/Downloads?q=visual%20studio%202019%20version%2016.0).
 
-Para administradores que implantam usando uma instalação de layout de rede, o administrador deve atualizar a [localização do layout](update-a-network-installation-of-visual-studio.md). Os clientes que instalaram do local receberão as notificações de atualização. Se a atualização precisar ser implantada em clientes, siga [estas instruções](update-a-network-installation-of-visual-studio.md#how-to-deploy-an-update-to-client-machines). Ao modificar o 'response.json' para uma atualização, não adicione cargas de trabalho, componentes ou idiomas adicionais. O gerenciamento dessas configurações deve ser feito como uma implantação 'modificar', depois que o produto foi atualizado.
+Para administradores que implantam usando uma instalação de layout de rede, o administrador deve atualizar a [localização do layout](update-a-network-installation-of-visual-studio.md). Os clientes que instalaram do local receberão as notificações de atualização. Se a atualização precisar ser implantada em clientes, siga [estas instruções](update-a-network-installation-of-visual-studio.md#deploy-an-update-to-client-machines). Ao modificar o 'response.json' para uma atualização, não adicione cargas de trabalho, componentes ou idiomas adicionais. O gerenciamento dessas configurações deve ser feito como uma implantação 'modificar', depois que o produto foi atualizado.
 
 Para uma instalação baseada na internet, execute o novo instalador de versão fixa com o parâmetro `--channelUri` apontando para um manifesto de canal inexistente no cliente. Se a atualização for implantada no modo silencioso ou passivo, use dois comandos separados:
 
@@ -80,7 +80,7 @@ Para uma instalação baseada na internet, execute o novo instalador de versão 
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 * [Instalar o Visual Studio](install-visual-studio.md)
 * [Guia do administrador do Visual Studio](visual-studio-administrator-guide.md)

@@ -7,17 +7,17 @@ helpviewer_keywords:
 - editors, text viewing
 - Code Editor, word wrap
 ms.assetid: 442f33ef-9f52-4515-b55f-fb816d664645
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 30bfe549100a06df6b9a8163cad1e3d519c3a91b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 36720588f56d7c718078dca96445eb48915a3845
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72663114"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75569069"
 ---
 # <a name="how-to-manage-word-wrap-in-the-editor"></a>Como gerenciar a quebra automática de linha no editor
 
@@ -53,6 +53,6 @@ Se você estiver familiarizado com a quebra automática de linha no Notepad++, S
 * [O comando Recortar não exclui a linha inteira](https://developercommunity.visualstudio.com/content/problem/138259/cut-command-should-delete-logical-line.html)
 * [A tecla End pressionada duas vezes não move o cursor para o fim da linha](https://developercommunity.visualstudio.com/content/problem/138274/pressing-end-key-twice-should-move-cursor-to-end-o.html)
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Recursos do Editor de Códigos](../../ide/writing-code-in-the-code-and-text-editor.md)

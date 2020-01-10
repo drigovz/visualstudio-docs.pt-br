@@ -9,17 +9,17 @@ helpviewer_keywords:
 - service references [Visual Studio], configuring behavior
 - Configure Service Reference dialog box
 ms.assetid: 25e4c36b-2db6-4e71-9010-b7068255d09d
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 033663c347a39c63a76bddd10625bdc86cec1f00
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f5bae3acb6f687c8c787e2d4121999d1133b0f1f
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72642853"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586920"
 ---
 # <a name="configure-service-reference-dialog-box"></a>Caixa de diálogo Configurar Referência de Serviço
 
@@ -39,7 +39,7 @@ Para acessar a caixa de diálogo **Configurar referência de serviço** , clique
 
 - Para especificar os tipos de coleção de lista ou dicionário para um cliente WCF, selecione os tipos nas listas **tipo de coleção** e tipo de **coleção de dicionário** .
 
-- Para desabilitar o compartilhamento de tipo, desmarque a caixa de seleção **reutilizar os tipos em assemblies referenciados** . Para habilitar o compartilhamento de tipo para um subconjunto de assemblies referenciados, marque a caixa de seleção **reutilizar os tipos em assemblies referenciados** , selecione **reutilizar os tipos em assemblies referenciados especificados**e selecione as referências desejadas na **referência lista de assemblies**.
+- Para desabilitar o compartilhamento de tipo, desmarque a caixa de seleção **reutilizar os tipos em assemblies referenciados** . Para habilitar o compartilhamento de tipo para um subconjunto de assemblies referenciados, marque a caixa de seleção **reutilizar os tipos em assemblies referenciados** , selecione **reutilizar os tipos em assemblies referenciados especificados**e selecione as referências desejadas na **lista assemblies referenciados**.
 
 ## <a name="uielement-list"></a>Lista UIElement
 
@@ -103,7 +103,7 @@ Exibe a caixa de diálogo **Adicionar referência Web** .
 > [!NOTE]
 > O botão **Adicionar referência Web** só estará disponível quando a caixa de diálogo **Configurar referência de serviço** for exibida na **caixa de diálogo Adicionar referência de serviço**.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Como adicionar uma referência a um serviço Web](how-to-add-update-or-remove-a-wcf-data-service-reference.md)
 - [Serviços do Windows Communication Foundation e WCF Data Services](../data-tools/configure-service-reference-dialog-box.md)

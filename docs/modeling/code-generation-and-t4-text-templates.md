@@ -10,17 +10,17 @@ helpviewer_keywords:
 - code generation
 - text templates
 - generating code
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b8d3684ac79ce0dde8641e11a455238d927f2adb
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: f0eba8b4850ee845414084ef766fce30f9efd7e6
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748516"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75597198"
 ---
 # <a name="code-generation-and-t4-text-templates"></a>Geração de código e modelos de texto T4
 
@@ -94,6 +94,6 @@ Para obter mais informações, consulte [geração de código em tempo de design
 
 O recurso de transformação de modelo de texto se chama *T4*.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Gerar código com base em uma linguagem específica de domínio](../modeling/generating-code-from-a-domain-specific-language.md)

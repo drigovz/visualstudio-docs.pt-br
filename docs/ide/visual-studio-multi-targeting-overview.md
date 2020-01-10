@@ -6,17 +6,17 @@ helpviewer_keywords:
 - targeting .NET Framework [Visual Studio]
 - framework targeting [Visual Studio]
 - .NET framework targeting [Visual Studio]
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: f393061b249fc2eb10a348bb0d2da68f4a30c4f3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ec81b38ab68c327f25c9f94b6329a700e2662383
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647180"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594117"
 ---
 # <a name="framework-targeting-overview"></a>Visão geral do direcionamento de estrutura
 
@@ -120,7 +120,7 @@ Para obter mais informações sobre referências de assembly, consulte [Resolver
 
 Ao direcionar ao .NET Framework 3.5 ou posterior, uma referência ao **System.Core** e uma importação no nível do projeto para <xref:System.Linq> (somente no Visual Basic) são adicionadas automaticamente. Se você desejar usar recursos do LINQ, também precisará ativar `Option Infer` (somente no Visual Basic). A referência e a importação serão removidas automaticamente se você alterar o destino para uma versão anterior do .NET Framework. Para obter mais informações, consulte [Trabalhar com o LINQ](/dotnet/csharp/tutorials/working-with-linq).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Estruturas de destino](/dotnet/standard/frameworks)
 - [Multiplataforma (MSBuild)](../msbuild/msbuild-multitargeting-overview.md)

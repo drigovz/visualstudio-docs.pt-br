@@ -2,20 +2,20 @@
 title: Ações rápidas, lâmpadas e chaves de fenda
 ms.date: 03/28/2018
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 18df1378218d2188ee78d1b1b2a991e35f5ed689
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 2ce8ce85e027a7ed7f78d0da1f68f328c1ca103d
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666754"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596951"
 ---
 # <a name="quick-actions"></a>Ações Rápidas
 
@@ -50,7 +50,7 @@ Para qualquer linguagem, terceiros podem oferecer sugestões e diagnósticos per
 
 ## <a name="icons"></a>Ícones
 
-O ícone exibido quando uma Ação Rápida fica disponível oferece uma indicação do tipo de correção ou que a refatoração está disponível. O ícone de *chave de fenda* ![ícone de chave de fenda](media/screwdriver-icon.png) indica apenas que há ações disponíveis para alterar o código, mas você não deve necessariamente usá-las. O ícone de *lâmpada amarela* ![ícone de lâmpada](media/light-bulb-icon.png) indica que há ações disponíveis que você *deve* executar para melhorar o seu código. O ícone de *lâmpada de erro* ![ícone de lâmpada de erro](media/error-light-bulb-icon.png) indica que há uma ação disponível que corrige um erro no seu código.
+O ícone exibido quando uma Ação Rápida fica disponível oferece uma indicação do tipo de correção ou que a refatoração está disponível. O *ícone de ![de chave de* fenda](media/screwdriver-icon.png) ícone indica apenas que há ações disponíveis para alterar o código, mas você não deve usá-las necessariamente. A *lâmpada amarela* ![ícone de lâmpada](media/light-bulb-icon.png) ícone indica que há ações disponíveis que você *deve* fazer para melhorar seu código. O *sinal luminoso de erro* ![ícone de lâmpada de erro](media/error-light-bulb-icon.png) ícone indica que há uma ação disponível que corrige um erro em seu código.
 
 ## <a name="to-see-a-light-bulb-or-screwdriver"></a>Para ver uma lâmpada ou chave de fenda
 
@@ -68,7 +68,7 @@ Para ver possíveis correções, selecione a seta para baixo ao lado da lâmpada
 
 ![Lâmpada expandida](../ide/media/vs2015_lightbulb_hover_expanded.png)
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Geração de código no Visual Studio](../ide/code-generation-in-visual-studio.md)
 - [Ações Rápidas Comuns](../ide/common-quick-actions.md)

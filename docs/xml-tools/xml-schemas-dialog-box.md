@@ -5,17 +5,17 @@ ms.topic: reference
 f1_keywords:
 - vs.xmleditor.schemasdialog
 ms.assetid: 0271fa26-2205-49bd-96e0-ae1441571808
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 11743756ffd8f59520448d2687dbada6d4eaca40
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9d01c56b04a9b046f695a19d61a9b47fcac73e06
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72608042"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592328"
 ---
 # <a name="xml-schemas-dialog-box"></a>Caixa de diálogo de esquemas XML
 
@@ -23,9 +23,9 @@ A caixa de diálogo **esquemas XML** é usada para selecionar quais esquemas XSD
 
 Você pode acessar a caixa de diálogo **esquemas XML** clicando no botão **esquemas** na janela Propriedades do documento ou selecionando **esquemas** no menu **XML** .
 
-## <a name="uielement-list"></a>Lista UIElement
+## <a name="uielement-list"></a>Lista de UIElement
 
-**Utilizá**
+**Usar**
 
 Selecione como o esquema XML deve ser usada.
 
@@ -39,7 +39,7 @@ Selecione como o esquema XML deve ser usada.
 
 Exibe o namespace de destino associada com o esquema XML.
 
-**Nome do arquivo**
+**Nome do Arquivo**
 
 Exibe o nome do arquivo de esquema XML.
 
@@ -51,7 +51,7 @@ Abre a caixa de diálogo **abrir esquema XSD** , que permite que você selecione
 
 Remove o esquema do dataset selecionado de esquema. Remove o esquema de cache de memória do esquema, mas não no sistema de arquivos.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Como: selecionar os esquemas XML a serem usados](../xml-tools/how-to-select-the-xml-schemas-to-use.md)
 - [Cache de esquema](../xml-tools/schema-cache.md)

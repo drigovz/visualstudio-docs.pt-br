@@ -11,17 +11,17 @@ helpviewer_keywords:
 - transactions, saving data
 - data [Visual Studio], saving
 ms.assetid: 8b835e8f-34a3-413d-9bb5-ebaeb87f1198
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: cfb03944743609d20d14f6104e5fadd529a5cfa6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: beadb43d7eed78f04fc60ce1307045e9badac205
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72641305"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586270"
 ---
 # <a name="how-to-save-data-by-using-a-transaction"></a>Como salvar dados usando uma transação
 
@@ -37,7 +37,7 @@ Para reverter a transação, acione uma exceção antes de chamar o método <xre
 
 ## <a name="to-add-a-reference-to-the-systemtransactionsdll"></a>Para adicionar uma referência ao System. Transactions. dll
 
-1. No menu **projeto** , selecione **Adicionar referência**.
+1. No menu **Projeto**, selecione **Adicionar Referência**.
 
 2. Na guia **.net** (**SQL Server** guia para projetos SQL Server), selecione **System. Transactions**e, em seguida, selecione **OK**.
 
@@ -50,7 +50,7 @@ Para reverter a transação, acione uma exceção antes de chamar o método <xre
      [!code-vb[VbRaddataSaving#11](../data-tools/codesnippet/VisualBasic/save-data-by-using-a-transaction_1.vb)]
      [!code-csharp[VbRaddataSaving#11](../data-tools/codesnippet/CSharp/save-data-by-using-a-transaction_1.cs)]
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Salvar dados de volta no banco de dados](../data-tools/save-data-back-to-the-database.md)
 - [Passo a passo: salvar dados em uma transação](../data-tools/save-data-in-a-transaction.md)

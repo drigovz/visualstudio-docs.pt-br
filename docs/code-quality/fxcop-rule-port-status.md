@@ -5,17 +5,17 @@ ms.topic: reference
 helpviewer_keywords:
 - fxcop rules
 - fxcop analyzers, ported rules
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a33286ffb678bf37cf684bb603d81ec8091e7405
-ms.sourcegitcommit: 97623fd6190c43fed0d2ee7af92b01c375282622
+ms.openlocfilehash: f743df63ce779b90f728fd69622f621c8a2169d5
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73568824"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587583"
 ---
 # <a name="fxcop-rule-port-status"></a>Status da porta de regra do FxCop
 
@@ -27,7 +27,7 @@ A [página de documentação gerada automaticamente](https://github.com/dotnet/r
 
 A partir da data desta página, a lista de regras do FxCop que foram modeladas para [analisadores de FxCop](install-fxcop-analyzers.md) inclui:
 
-ID da regra | Título
+ID da regra | Cargo
 --------|---------
 [CA1000](ca1000-do-not-declare-static-members-on-generic-types.md) | Não declarar membros estáticos em tipos genéricos
 [CA1001](ca1001-types-that-own-disposable-fields-should-be-disposable.md) | Tipos com campos descartáveis devem ser descartáveis
@@ -344,6 +344,6 @@ As seguintes regras de análise herdada do FxCop foram preteridas e não serão 
 - [CA2233](ca2233.md)
 - [CA5122](ca5122.md)
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Regras Microsoft. CodeAnalysis. FxCopAnalyzers](https://github.com/dotnet/roslyn-analyzers/blob/master/src/Microsoft.CodeAnalysis.FxCopAnalyzers/Microsoft.CodeAnalysis.FxCopAnalyzers.md)

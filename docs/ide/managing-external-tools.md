@@ -6,17 +6,17 @@ f1_keywords:
 - vs.externaltools
 helpviewer_keywords:
 - external tools [Visual Studio]
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1caf72ea2dccd9dfe2978726834e8066a9f5b56b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 0f22c687f88c7736d5c088ebc28ff490c4c16b8f
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652386"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591288"
 ---
 # <a name="manage-external-tools"></a>Gerenciar ferramentas externas
 
@@ -61,7 +61,7 @@ O menu **Ferramentas** contém vários comandos internos, incluindo:
 
 Esta é uma lista completa de argumentos que podem ser usados ao definir uma ferramenta externa:
 
-|Name|Argumento|Descrição|
+|Name|Argument|Descrição|
 |----------|--------------|-----------------|
 |Caminho do item|$(ItemPath)|O nome de arquivo completo do arquivo atual (unidade + caminho + nome de arquivo).|
 |Diretório do item|$(ItemDir)|O diretório do arquivo atual (unidade + caminho).|
@@ -72,7 +72,7 @@ Esta é uma lista completa de argumentos que podem ser usados ao definir uma fer
 |Texto atual|$(CurText)|O texto selecionado.|
 |Caminho de destino|$(TargetPath)|O nome de arquivo completo do item a ser criado (unidade + caminho + nome de arquivo).|
 |Diretório de Destino|$(TargetDir)|O diretório do item a ser criado.|
-|Nome de Destino|$(TargetName)|O nome de arquivo do item a ser criado.|
+|Nome do Destino|$(TargetName)|O nome de arquivo do item a ser criado.|
 |Extensão de Destino|$(TargetExt)|A extensão de nome de arquivo do item a ser criada.|
 |Diretório binário|$(BinDir)|O local final do binário que está sendo criado (definido como unidade + caminho).|
 |Diretório do Projeto|$(ProjectDir)|O diretório do projeto atual (unidade + caminho).|
@@ -83,6 +83,6 @@ Esta é uma lista completa de argumentos que podem ser usados ao definir uma fer
 > [!NOTE]
 > A barra de status do IDE exibe as variáveis **Linha Atual** e **Coluna Atual** para indicar a localização do ponto de inserção no **Editor de Códigos** ativo. A variável **Texto Atual** retorna o texto ou o código selecionado nesse local.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Ferramentas de build do C/C++](/cpp/build/reference/c-cpp-build-tools)

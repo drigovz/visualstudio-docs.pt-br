@@ -15,23 +15,23 @@ helpviewer_keywords:
 - XML documents, reading
 - datasets [Visual Basic], reading XML data
 ms.assetid: fae72958-0893-47d6-b3dd-9d42418418e4
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 6dec7cad50d818d4b2418442d8196cb8b5ff046a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 5f89645b9d5ec8ab0f69fad4fea5a399d8e6764d
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72641371"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586322"
 ---
 # <a name="read-xml-data-into-a-dataset"></a>Ler dados XML em um conjunto de dados
 
 O ADO.NET fornece métodos simples para trabalhar com dados XML. Neste tutorial, você cria um aplicativo do Windows que carrega dados XML em um DataSet. Em seguida, o DataSet é exibido em um controle <xref:System.Windows.Forms.DataGridView>. Por fim, um esquema XML baseado no conteúdo do arquivo XML é exibido em uma caixa de texto.
 
-## <a name="create-a-new-project"></a>Criar um novo projeto
+## <a name="create-a-new-project"></a>Crie um novo projeto
 
 Crie um novo projeto de **aplicativo Windows Forms** para C# o ou o Visual Basic. Nomeie o projeto **ReadingXML**.
 
@@ -158,7 +158,7 @@ Nesta etapa, você cria um novo conjunto de conjuntos chamado `authors`. Para ob
 
      **DataSet1** é adicionado à bandeja de componentes.
 
-4. Na janela **Propriedades** , defina o **nome** e as propriedades de <xref:System.Data.DataSet.DataSetName%2A> para `AuthorsDataSet`.
+4. Na janela **Propriedades** , defina o **nome** e as propriedades de <xref:System.Data.DataSet.DataSetName%2A> para`AuthorsDataSet`.
 
 ## <a name="create-the-event-handler-to-read-the-xml-file-into-the-dataset"></a>Criar o manipulador de eventos para ler o arquivo XML no conjunto de
 
@@ -179,7 +179,7 @@ O botão **ler XML** lê o arquivo XML no conjunto de os. Em seguida, ele define
 
 ## <a name="create-the-event-handler-to-display-the-schema-in-the-textbox"></a>Criar o manipulador de eventos para exibir o esquema na caixa de texto
 
-O botão **Mostrar esquema** cria um objeto <xref:System.IO.StringWriter> que é preenchido com o esquema e é exibido no <xref:System.Windows.Forms.TextBox>control.
+O botão **Mostrar esquema** cria um objeto <xref:System.IO.StringWriter> que é preenchido com o esquema e é exibido no controle de <xref:System.Windows.Forms.TextBox>.
 
 1. Em **Gerenciador de soluções**, selecione **Form1**e, em seguida, selecione o botão **Designer de exibição** .
 
@@ -206,7 +206,7 @@ Agora, é possível testar o formulário para garantir que ele se comporta da fo
 
      A caixa de texto exibe o esquema XML para o arquivo XML.
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
 
 Este tutorial ensina os conceitos básicos da leitura de um arquivo XML em um conjunto de um, bem como a criação de um esquema com base no conteúdo do arquivo XML. Aqui estão algumas tarefas que você pode fazer em seguida:
 
@@ -214,7 +214,7 @@ Este tutorial ensina os conceitos básicos da leitura de um arquivo XML em um co
 
 - Edite os dados no DataSet e grave-os em um banco de dados.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Acessar dados no Visual Studio](../data-tools/accessing-data-in-visual-studio.md)
 - [Ferramentas XML no Visual Studio](../xml-tools/xml-tools-in-visual-studio.md)

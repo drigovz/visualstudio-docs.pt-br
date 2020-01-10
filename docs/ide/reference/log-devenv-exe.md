@@ -7,17 +7,17 @@ helpviewer_keywords:
 - Log switch [devenv.exe]
 - /Log Devenv switch
 ms.assetid: ae23c4ae-2376-4fe3-b8d2-81d34e61c8ba
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bc37f4cd7441fc7945ca1762d16300c18d9ecbfe
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 008e7ca15595db249c05485f0d9e8f8b1277993e
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72610365"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595456"
 ---
 # <a name="log-devenvexe"></a>/Log (devenv.exe)
 
@@ -37,7 +37,7 @@ devenv /Log NameOfLogFile
 
 - *NameOfLogFile*
 
-  Necessário. O caminho completo e o nome do arquivo de log em que será salvo.
+  Necessária. O caminho completo e o nome do arquivo de log em que será salvo.
 
 ## <a name="remarks"></a>Comentários
 
@@ -53,6 +53,6 @@ Este exemplo direciona o registro de log para o arquivo `MyVSLog.xml` no diretó
 devenv /log "%USERPROFILE%\MyVSLog.xml"
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Opções de linha de comando do Devenv](../../ide/reference/devenv-command-line-switches.md)

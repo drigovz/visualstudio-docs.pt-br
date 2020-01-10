@@ -11,17 +11,17 @@ helpviewer_keywords:
 - Domain-Specific Language, external types
 - Domain-Specific Language, relationships
 - Domain-Specific Language, domain properties
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1823fb808985d27a02dc2cac34859ea1fbca44b6
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 00ade696290e4b8d3c32fa335fc4bf07509aef1c
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985153"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594676"
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>Como definir uma linguagem específica do domínio
 Para definir uma DSL (linguagem específica de domínio), você cria uma solução do Visual Studio a partir de um modelo. A parte fundamental da solução é o diagrama de Definição de DSL, que é armazenado em DslDefinition.dsl. A Definição de DSL define as classes e formas da DSL. Depois de modificar e adicionar esses elementos, você pode adicionar o código do programa para personalizar a DSL com mais detalhes.
@@ -32,7 +32,7 @@ Se você for novo nas DSLs, recomendamos que você trabalhe no **laboratório de
 
 Para definir uma DSL, é necessário ter instalados os seguintes componentes:
 
-- Visual Studio
+- {1&gt;Visual Studio&lt;1}
 - Carga de trabalho de desenvolvimento de extensão do Visual Studio (inclui o SDK do Visual Studio)
 - SDK de modelagem (instale-o como um componente individual no Visual Studio)
 
@@ -606,7 +606,7 @@ Para criar uma nova linguagem específica de domínio, você cria uma nova solu�
 
  Consulte também [como: alterar o namespace de uma linguagem específica de domínio](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md).
 
-## <a name="trouble"></a>Solução
+## <a name="trouble"></a> Solução de problemas
  A tabela a seguir lista alguns dos problemas mais comuns encontrados ao projetar uma DSL, junto com as sugestões para sua solução. Mais conselhos estão disponíveis no [Fórum de extensibilidade das ferramentas de visualização](https://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=dslvsarchx).
 
 | Problema | Sugestão |
@@ -620,7 +620,7 @@ Para criar uma nova linguagem específica de domínio, você cria uma nova solu�
 | A caixa de ferramentas de minha DSL não aparece após a mudança de nomes do assembly. | Inspecione e atualize o **DslPackage\GeneratedCode\Package.tt** para obter mais informações, consulte [como alterar o namespace de uma linguagem específica de domínio](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md). |
 | A caixa de ferramentas de minha DSL não aparece, mas não alterei o nome do assembly.<br /><br /> Ou, uma caixa de mensagens aparece relatando a falha ao carregar uma extensão. | Redefina a instância experimental e recompile sua solução.<br /><br /> 1. no menu Iniciar do Windows, em **todos os programas**, expanda [!INCLUDE[vssdk_current_long](../misc/includes/vssdk_current_long_md.md)], em seguida, **ferramentas**e clique em **redefinir a Microsoft Visual Studio instância experimental**.<br />2. no menu **Compilar** , clique em **Recompilar solução**. |
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Introdução às linguagens específicas de domínio](../modeling/getting-started-with-domain-specific-languages.md)
 - [Criando uma linguagem específica de domínio baseada no Windows Forms](../modeling/creating-a-windows-forms-based-domain-specific-language.md)

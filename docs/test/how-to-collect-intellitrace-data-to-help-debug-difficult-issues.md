@@ -8,15 +8,15 @@ helpviewer_keywords:
 - debugging [Visual Studio ALM], difficult issues using IntelliTrace
 - Test Runner, InteliTrace
 ms.assetid: 02b6716f-569e-4961-938a-e790a0c74b5c
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3c6670f9ff83a16eb793f7e7bd6fb5913a96093c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 826d16fa316340226df042b0d762d923c43d39c9
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72664815"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594767"
 ---
 # <a name="how-to-collect-intellitrace-data-to-help-debug-difficult-issues"></a>Como coletar dados do IntelliTrace para ajudar a depurar problemas difíceis
 
@@ -73,7 +73,7 @@ Antes de executar as etapas nesse procedimento, você deverá abrir as configura
 
 5. Escolha a guia **geral** . Selecione **eventos do IntelliTrace somente** para registrar eventos de diagnóstico significativos que têm impacto mínimo sobre o desempenho durante o teste.
 
-     \- ou -
+     - ou -
 
      Selecione **Eventos do IntelliTrace e informações de chamada** para registrar eventos de diagnóstico e rastreamento no nível de método que mostram informações de chamada. Esse nível de rastreamento pode afetar o desempenho quando você executa os testes.
 
@@ -81,7 +81,7 @@ Antes de executar as etapas nesse procedimento, você deverá abrir as configura
 
 7. Escolha a guia **módulos** . Selecione **coletar dados de todos os módulos, exceto o seguinte** , e use **Adicionar** para adicionar à lista de módulos e **remover** para remover um módulo. Essa opção permite incluir todos os módulos em execução no sistema, exceto os módulos que você especifica.
 
-     \- ou -
+     - ou -
 
      Selecione **Coletar dados apenas dos módulos a seguir** e use **Adicionar** para adicionar à lista de módulos e **Remover** para remover um módulo. Essa opção permite especificar exatamente quais módulos você deseja.
 
@@ -90,7 +90,7 @@ Antes de executar as etapas nesse procedimento, você deverá abrir as configura
 
 8. Escolha a guia **processos** . Selecione **coletar dados de todos os processos, exceto o seguinte** , e use **Adicionar** para adicionar à lista de processos e **remover** para remover um processo. Essa opção permite incluir todos os processos em execução no sistema, exceto os processos que você especifica.
 
-     \- ou -
+     - ou -
 
      Selecione **Coletar dados apenas nos processos especificados** e use **Adicionar** para adicionar à lista de processos e **Remover** para remover um processo. Essa opção permite especificar exatamente quais processos você deseja.
 
@@ -108,7 +108,7 @@ Antes de executar as etapas nesse procedimento, você deverá abrir as configura
     > [!NOTE]
     > Para redefinir a configuração desse adaptador de dados de diagnóstico, escolha **Restaurar configuração padrão** para o Visual Studio ou **Redefinir como padrão** para o Microsoft Test Manager.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Coletar dados de diagnóstico durante testes (Azure Test Plans)](/azure/devops/test/collect-diagnostic-data?view=vsts)
 - [Coletar dados de diagnóstico em testes manuais (Azure Test Plans)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)

@@ -4,17 +4,17 @@ titleSuffix: Blend for Visual Studio
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 3a1b6830-30c2-4a36-bd14-6961f5edf9cb
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e8245790cb1a5f5211828b2feaa2fd862c83bfe9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 4c72795b80ebb176b3dcfb4fe26b633946e3bb98
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666828"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592941"
 ---
 # <a name="keyboard-shortcuts-in-blend-for-visual-studio"></a>Atalhos de teclado no Blend para Visual Studio
 
@@ -22,7 +22,7 @@ ms.locfileid: "72666828"
 
 |Para fazer isso|Faça isto|
 |----------------|-------------|
-|Criar um novo projeto|**Ctrl**+**Shift**+**N**|
+|Crie um novo projeto|**Ctrl**+**Shift**+**N**|
 |Abrir um projeto ou uma solução (e não um site)|**Ctrl**+**Shift**+**O**|
 |Fechar uma solução|**Ctrl**+**Shift**+**C**|
 |Salvar uma cópia da solução ou do site|**Ctrl**+**Shift**+**P**|
@@ -44,7 +44,7 @@ ms.locfileid: "72666828"
 |Refazer a última ação realizada|**Ctrl**+Y ou **Ctrl**+**Shift**+**Z**|
 |Criar uma anotação de tempo de design|**Ctrl**+**Shift**+**T**|
 |Recortar|**Ctrl**+**X**|
-|Copiar|**Ctrl**+**C**|
+|Cópia|**Ctrl**+**C**|
 |Colar|**Ctrl**+**V**|
 |Excluir|**Excluir**|
 |Localizar texto (somente exibição de XAML ou editor de JavaScript)|**Ctrl**+**F**|

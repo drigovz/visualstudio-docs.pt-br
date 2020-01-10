@@ -10,17 +10,17 @@ helpviewer_keywords:
 - walkthrough [Visual Studio ALM], visualizing code
 - walkthrough [Visual Studio ALM], modeling software
 - walkthroughs [Visual Studio ALM], modeling software
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d332050538ca10d133a69f61a914338484fe799
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 371eadd1438d33601b90ebfae0432c20841c313c
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72986382"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591977"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>Cenário: alterar o design usando visualização e modelagem
 
@@ -79,7 +79,7 @@ Para obter mais informações sobre Team Foundation Server, consulte:
 
 A tabela a seguir descreve as funções que essas ferramentas podem reproduzir durante vários e vários estágios do ciclo de vida do desenvolvimento de software:
 
-||**Modelagem de requisitos de usuário**|**Modelagem de processos de negócios**|**Arquitetura do sistema & Design**|**Visualização de código & exploração**|**Verificado**|
+||**Modelagem de requisitos de usuário**|**Modelagem de processos de negócios**|**Arquitetura do sistema & Design**|**Visualização de código & exploração**|**Verificação**|
 |------|-|-|-|-|-|
 |Diagrama de DSL (linguagem específica do domínio)|Sim|Sim|Sim|||
 |Diagrama de dependência, validação de camada|||Sim|Sim|Sim|
@@ -170,7 +170,7 @@ Agora, o jantar deve estimar o custo da reunião do novo requisito. Isso depende
 ### <a name="ValidatingCode"></a>Manter o código consistente com o design
  Agora, o jantar deve garantir que o código atualizado permaneça consistente com o design. Eles criam diagramas de dependência que descrevem as camadas de funcionalidade no sistema, especificam as dependências permitidas entre elas e associam os artefatos de solução a essas camadas.
 
-|**Organograma**|**Descrita**|
+|**Diagrama**|**Descrita**|
 |-|-|
 |*Diagrama de dependência*<br /><br /> Consulte:<br /><br /> - [criar diagramas de dependência do seu código](../modeling/create-layer-diagrams-from-your-code.md)<br />[diagramas de dependência de - : referência](../modeling/layer-diagrams-reference.md)<br />- [diagramas de dependência: diretrizes](../modeling/layer-diagrams-guidelines.md)<br />- [validar o código com diagramas de dependência](../modeling/validate-code-with-layer-diagrams.md)|A arquitetura lógica do código.<br /><br /> Um diagrama de dependência organiza e mapeia os artefatos em uma solução do Visual Studio para abstrair grupos chamados *camadas*. Essas camadas identificam as funções, as tarefas ou as funções que esses artefatos executam no sistema.<br /><br /> Os diagramas de dependência são úteis para descrever o design pretendido do sistema e validar o código em evolução nesse design.<br /><br /> Para criar camadas, arraste itens de Gerenciador de Soluções, mapas de código, Modo de Exibição de Classe e pesquisador de objetos. Para desenhar novas camadas, use a caixa de ferramentas ou clique com o botão direito do mouse na superfície do diagrama.<br /><br /> Para exibir as dependências existentes, clique com o botão direito do mouse na superfície do diagrama de dependência e clique em **gerar dependências**. Para especificar as dependências pretendidas, desenhe novas dependências.|
 
@@ -327,7 +327,7 @@ Esse mapa mostra que a classe PaymentApprover agora está no namespace DinnerNow
 
 #### <a name="relationship-to-other-diagrams"></a>Relação com Outros Diagramas
 
-|**Organograma**|**Descrita**|
+|**Diagrama**|**Descrita**|
 |-|-|
 |Diagrama de dependência|A arquitetura lógica do sistema. Use a validação de dependência para garantir que o código permaneça consistente com o design.<br /><br /> Para ajudá-lo a identificar dependências ou dependências pretendidas existentes, crie um mapa de código e itens relacionados ao grupo. Para criar um diagrama de dependência, consulte:<br /><br /> - [criar diagramas de dependência do seu código](../modeling/create-layer-diagrams-from-your-code.md)<br />- [diagramas de dependência: diretrizes](../modeling/layer-diagrams-guidelines.md)|
 |Diagrama de classe (baseado em código)|Classes existentes no código para um projeto específico.<br /><br /> Para visualizar e modificar uma classe existente no código, use Designer de Classe.<br /><br /> Consulte [Como adicionar diagramas de classe a projetos (Designer de Classe)](../ide/class-designer/how-to-add-class-diagrams-to-projects.md).|
@@ -396,7 +396,7 @@ Como ponto de partida para explorar e discutir as classes existentes, você pode
 
 #### <a name="relationship-to-other-diagrams"></a>Relação com Outros Diagramas
 
-|**Organograma**|**Descrição**|
+|**Diagrama**|**Descrição**|
 |-|-|
 |Diagrama de dependência|Defina a arquitetura lógica do sistema como está relacionada às classes.<br /><br /> Use a validação de dependência para garantir que o código permaneça consistente com o design.<br /><br /> Consulte:<br /><br /> - [criar diagramas de dependência do seu código](../modeling/create-layer-diagrams-from-your-code.md)<br />[diagramas de dependência de - : referência](../modeling/layer-diagrams-reference.md)<br />- [diagramas de dependência: diretrizes](../modeling/layer-diagrams-guidelines.md)<br />- [validar o código com diagramas de dependência](../modeling/validate-code-with-layer-diagrams.md)|
 |Mapa de códigos|Visualize a organização e as relações no código existente.<br /><br /> Para identificar classes, suas relações e seus métodos, crie um mapa de código que mostre esses elementos.<br /><br /> Consulte:<br /><br /> - [mapear dependências em suas soluções](../modeling/map-dependencies-across-your-solutions.md)|
@@ -470,17 +470,17 @@ Os diagramas de dependência ajudam você a:
 
 #### <a name="relationship-to-other-diagrams"></a>Relação com Outros Diagramas
 
-|**Organograma**|**Descrição**|
+|**Diagrama**|**Descrição**|
 |-|-|
 |Mapa de códigos|Visualize a organização e as relações no código existente.<br /><br /> Para criar camadas, gere um mapa de código e agrupe itens no mapa como camadas potenciais. Arraste os grupos do mapa para o diagrama de dependência.<br /><br /> Consulte:<br /><br /> - [mapear dependências em suas soluções](../modeling/map-dependencies-across-your-solutions.md)<br />- [procurar e reorganizar mapas de código](../modeling/browse-and-rearrange-code-maps.md)|
 
-## <a name="external-resources"></a>Recursos externos
+## <a name="external-resources"></a>Recursos Externos
 
-|**Categoria**|**Vincule**|
+|**Categoria**|**Links**|
 |-|-|
-|**Nos**|[ferramentas de modelagem & de visualização do Visual Studio](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsarch) - <br />[SDK de modelagem do & de visualização do Visual Studio (ferramentas DSL)](https://social.msdn.microsoft.com/Forums/home?forum=dslvsarchx) - |
+|**Fóruns**|[ferramentas de modelagem & de visualização do Visual Studio](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsarch) - <br />[SDK de modelagem do & de visualização do Visual Studio (ferramentas DSL)](https://social.msdn.microsoft.com/Forums/home?forum=dslvsarchx) - |
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Visualizar código](../modeling/visualize-code.md)
 - [Usar modelos no processo de desenvolvimento](../modeling/use-models-in-your-development-process.md)

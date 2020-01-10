@@ -9,19 +9,19 @@ helpviewer_keywords:
 - '{{PLACEHOLDER}}'
 - '{{PLACEHOLDER}}'
 ms.assetid: 85686707-14C0-4860-9B7A-66485D43D241
-author: TerryGLee
-ms.author: tglee
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 006a3fa3d41799a87449b8f9e111ca341a698bf5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: e90eb90f79d717e45e558fe5151d9e27534bee95
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62935406"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594494"
 ---
 # <a name="tools-for-detecting-and-managing-visual-studio-instances"></a>Ferramentas para detectar e gerenciar instâncias do Visual Studio
 
@@ -32,8 +32,8 @@ Há várias ferramentas que você pode usar para detectar instalações do Visua
 Tornamos várias ferramentas disponíveis que ajudarão você a detectar e gerenciar instâncias do Visual Studio instaladas em computadores cliente:
 
 * [vswhere](https://github.com/microsoft/vswhere): um executável integrado ao Visual Studio ou disponível para distribuição separada que ajuda a encontrar o local de todas as instâncias do Visual Studio em um computador específico.
-* [VSSetup.PowerShell](https://github.com/microsoft/vssetup.powershell): Scripts do PowerShell que usam a API de Configuração de Instalação para identificar instâncias instaladas do Visual Studio.
-* [VS-Setup-Samples](https://github.com/microsoft/vs-setup-samples): Amostras do C# e C++ que apresentam como usar a API de Configuração de Instalação para consultar uma instalação existente.
+* [VSSetup.PowerShell](https://github.com/microsoft/vssetup.powershell): scripts do PowerShell que usam a API de Configuração de Instalação para identificar instâncias instaladas do Visual Studio.
+* [VS-Setup-Samples](https://github.com/microsoft/vs-setup-samples): amostras do C# e C++ que demonstram como usar a API de Configuração de Instalação para consultar uma instalação existente.
 
 Além disso, a [API de Configuração de Instalação](<xref:Microsoft.VisualStudio.Setup.Configuration>) fornece interfaces para desenvolvedores que desejam criar seus próprios utilitários para interrogar instâncias do Visual Studio.
 
@@ -60,7 +60,7 @@ Como essas entradas não são armazenadas no Registro global, há instruções e
 
 1. Se você tiver uma instância do Visual Studio aberta, feche-a.
 
-1. Inicie o `regedit.exe`.
+1. Iniciar `regedit.exe`.
 
 1. Selecione o nó `HKEY_LOCAL_MACHINE`.
 
@@ -80,6 +80,6 @@ Você precisará fornecer um nome de hive, que se tornará o nome do hive isolad
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 * [Guia de Administradores do Visual Studio](visual-studio-administrator-guide.md)

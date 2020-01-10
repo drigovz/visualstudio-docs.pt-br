@@ -1,24 +1,24 @@
 ---
-title: 'Como: Exibir uma lista de itens separada por vírgula | Microsoft Docs'
+title: Como exibir uma lista de itens separada por vírgula | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, separating items with semicolons
 - MSBuild, formatting item collections
 ms.assetid: 3cae844c-7c6d-4144-82dc-efad10ba458f
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b01e39569207065fac9c28d093267348a829d73f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 677278d08e3223f759afc64692481311bfba3356
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62945035"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596327"
 ---
-# <a name="how-to-display-an-item-list-separated-with-commas"></a>Como: Exibir uma lista de itens separada por vírgulas
+# <a name="how-to-display-an-item-list-separated-with-commas"></a>Como exibir uma lista de itens separados por vírgulas
 Quando você trabalha com listas de itens no [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]), às vezes, é útil exibir o conteúdo dessas listas de itens de uma maneira que seja fácil de ler. Ou, você pode ter uma tarefa que utiliza uma lista de itens separados por uma cadeia de caracteres do separador especial. Em ambos os casos, você pode especificar uma cadeia de caracteres do separador para uma lista de itens.
 
 ## <a name="separate-items-in-a-list-with-commas"></a>Separar itens em uma lista com vírgulas
@@ -43,7 +43,7 @@ O separador pode ser um único caractere ou uma cadeia de caracteres e deve ser 
     `@(TXTFile, ', ')`
 
 ## <a name="example"></a>Exemplo
-Neste exemplo, a tarefa [Exec](../msbuild/exec-task.md) executa a ferramenta findstr para localizar as cadeias de caracteres de texto especificadas no arquivo *Phrases.txt*. No comando findstr, as cadeias de caracteres de pesquisas literais são indicadas pela opção **-c:**, portanto, o separador de item, `-c:` é inserido entre os itens na lista de itens de `@(Phrase)`.
+Neste exemplo, a tarefa [Exec](../msbuild/exec-task.md) executa a ferramenta findstr para localizar as cadeias de caracteres de texto especificadas no arquivo *Phrases.txt*. No comando findstr, as cadeias de caracteres de pesquisas literais são indicadas pela opção **-c:** , portanto, o separador de item, `-c:` é inserido entre os itens na lista de itens de `@(Phrase)`.
 
 Neste exemplo, a linha de comando equivalente é:
 
@@ -66,6 +66,6 @@ Neste exemplo, a linha de comando equivalente é:
 </Project>
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 - [Referência do MSBuild](../msbuild/msbuild-reference.md)
 - [Itens](../msbuild/msbuild-items.md)

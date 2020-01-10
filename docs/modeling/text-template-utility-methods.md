@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - text templates, utility methods
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e6426ea57fbdbec6ec47a4f6348463b88b250e0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c55da4d58b717bc4d42b6fafdd084067b7e21a31
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72605996"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591756"
 ---
 # <a name="text-template-utility-methods"></a>Métodos de utilitário do modelo de texto
 
@@ -128,7 +128,7 @@ EnvDTE.DTE dte = (EnvDTE.DTE) ((IServiceProvider) this.Host)
 
 ## <a name="using-a-different-set-of-utility-methods"></a>Usando um conjunto diferente de métodos de utilitário
 
-Como parte do processo de geração de texto, o arquivo de modelo é transformado em uma classe, que é sempre nomeada `GeneratedTextTransformation`and herda de <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation>. Se você quiser usar um conjunto diferente de métodos em vez disso, poderá escrever sua própria classe e especificá-la na diretiva de modelo. Sua classe deve herdar de <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation>.
+Como parte do processo de geração de texto, o arquivo de modelo é transformado em uma classe, que sempre é chamada de `GeneratedTextTransformation`e herda de <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation>. Se você quiser usar um conjunto diferente de métodos em vez disso, poderá escrever sua própria classe e especificá-la na diretiva de modelo. Sua classe deve herdar de <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation>.
 
 ```
 <#@ template inherits="MyUtilityClass" #>

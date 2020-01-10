@@ -12,12 +12,12 @@ caps.latest.revision: 22
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 6c7b6370793068ff07f30066ddd51b72dcc924b3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b45716db44dcc316ec60604aa0411e6498797ae0
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72668697"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595014"
 ---
 # <a name="options-page-environment-node-properties"></a>Página de Propriedades, Ambiente, Propriedades do Nó
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ Este documento descreve as páginas (ou coleções de propriedades) associadas a
 ## <a name="general"></a>Geral
  `DTE.Properties("Environment", "General")`
 
-|Nome do item de propriedade|Valor|DESCRIÇÃO|
+|Nome do item de propriedade|Valor|Descrição|
 |------------------------|-----------|-----------------|
 |ShowStatusBar|Get/Set (Booliano)|Determina se a barra de status está visível.|
 |WindowMenuContainsNItems|Get/Set (Curto)|Determina como as janelas de documento são contidas na parte inferior do menu do Windows.|
@@ -42,7 +42,7 @@ Este documento descreve as páginas (ou coleções de propriedades) associadas a
 ## <a name="add-inmacros-security"></a>Segurança de Suplemento/Macros
  `DTE.Properties("Environment", "AddinMacrosSecurity")`
 
-|Nome do item de propriedade|Valor|DESCRIÇÃO|
+|Nome do item de propriedade|Valor|Descrição|
 |------------------------|-----------|-----------------|
 |MacrosEnabled|Get/Set (Booliano)|Permite a execução de macros.|
 |AddinsEnabled|Get/Set (Booliano)|Permite o carregamento de suplementos.|
@@ -51,7 +51,7 @@ Este documento descreve as páginas (ou coleções de propriedades) associadas a
 ## <a name="documents"></a>Documentos
  `DTE.Properties("Environment", "Documents")`
 
-|Nome do item de propriedade|Valor|DESCRIÇÃO|
+|Nome do item de propriedade|Valor|Descrição|
 |------------------------|-----------|-----------------|
 |ReuseSavedActiveDocWindow|Get/Set (Booliano)|Determina se abrir um novo arquivo reutiliza a janela do documento atual se o documento atual for salvo. `false` significa sempre abrir uma nova janela do documento para cada documento aberto.|
 |DetectFileChangesOutsideIDE|Get/Set (Booliano)|Determina se o ambiente recarrega automaticamente arquivos abertos no IDE quando o sistema operacional notifica o IDE de que os arquivos foram modificados no disco.|
@@ -68,7 +68,7 @@ Este documento descreve as páginas (ou coleções de propriedades) associadas a
 ## <a name="extension-manager"></a>Gerenciador de Extensões
  `DTE.Properties("Environment", "ExtensionManager")`
 
-|Nome do item de propriedade|Valor|DESCRIÇÃO|
+|Nome do item de propriedade|Valor|Descrição|
 |------------------------|-----------|-----------------|
 |EnableAdminExtensions|Get/Set (Booliano)|Carrega extensões por usuário quando o Visual Studio é executado com credenciais de Administrador. O Visual Studio deve ser reiniciado depois da alteração desse valor.|
 |EnableOnline|Get/Set (Booliano)|Permite acesso a extensões na Galeria do Visual Studio.|
@@ -77,7 +77,7 @@ Este documento descreve as páginas (ou coleções de propriedades) associadas a
 ## <a name="find-and-replace"></a>Localizar e Substituir
  `DTE.Properties("Environment", "FindAndReplace")`
 
-|Nome do item de propriedade|Valor|DESCRIÇÃO|
+|Nome do item de propriedade|Valor|Descrição|
 |------------------------|-----------|-----------------|
 |ShowWarningMessages|Get/Set (Booliano)|Exibe mensagens de aviso.|
 |InitializeFromEditor|Get/Set (Booliano)|Preenche automaticamente a caixa **O Que Localizar** do editor.|
@@ -87,7 +87,7 @@ Este documento descreve as páginas (ou coleções de propriedades) associadas a
 ## <a name="import-and-export-settings"></a>Importar e exportar configurações
  `DTE.Properties("Environment", "Import and Export Settings")`
 
-|Nome do item de propriedade|Valor|DESCRIÇÃO|
+|Nome do item de propriedade|Valor|Descrição|
 |------------------------|-----------|-----------------|
 |TrackTeamSettings|Get/Set (Booliano)|Usa as configurações no arquivo especificado por TeamSettingsFile.|
 |TeamSettingsFile|Get/Set (Cadeia de Caracteres)|Nome do arquivo que tem configurações de equipe.|
@@ -96,21 +96,21 @@ Este documento descreve as páginas (ou coleções de propriedades) associadas a
 ## <a name="international-settings"></a>Configurações internacionais
  `DTE.Properties("Environment", "International")`
 
-|Nome do item de propriedade|Valor|DESCRIÇÃO|
+|Nome do item de propriedade|Valor|Descrição|
 |------------------------|-----------|-----------------|
 |Idioma|Get/Set (Cadeia de Caracteres)|Valor LCID para o idioma atual do Visual Studio.|
 
 ## <a name="keyboard"></a>Teclado
  `DTE.Properties("Environment", "Keyboard")`
 
-|Nome do item de propriedade|Valor|DESCRIÇÃO|
+|Nome do item de propriedade|Valor|Descrição|
 |------------------------|-----------|-----------------|
 |Esquema|Get/Set (Cadeia de Caracteres)|Retornará uma cadeia de caracteres que contém um esquema interno, uma cadeia de caracteres que contém o caminho completo do arquivo .vsk que é carregado ou "(Padrão)" se nenhum arquivo .vsk for carregado.|
 
 ## <a name="projects-and-solution"></a>Projetos e Solução
  `DTE.Properties("Environment", "ProjectsAndSolution")`
 
-|Nome do item de propriedade|Valor|DESCRIÇÃO|
+|Nome do item de propriedade|Valor|Descrição|
 |------------------------|-----------|-----------------|
 |OnRunOrPreview|Get/Set (Cadeia de Caracteres)|Determina se o IDE salva tudo antes de visualizar ou executar um projeto compilado.|
 |ProjectsLocation|Get/Set (Cadeia de Caracteres)|Determina o diretório padrão no qual a caixa de diálogo **Adicionar Projeto** salva novos projetos.|
@@ -133,9 +133,9 @@ Este documento descreve as páginas (ou coleções de propriedades) associadas a
 ## <a name="startup"></a>Inicialização
  `DTE.Properties("Environment", "Startup")`
 
-|Nome do item de propriedade|Valor|DESCRIÇÃO|
+|Nome do item de propriedade|Valor|Descrição|
 |------------------------|-----------|-----------------|
-|OnStartUp|Get/Set (Enum)|Ação a ser executada na inicialização, de <xref:EnvDTE.vsStartUp>, com valores de 0 a 5:<br /><br /> –   0: Abrir Página Inicial<br />–   1: Carregar última solução carregada<br />–   2: Mostrar caixa de diálogo **Abrir Projeto**<br />–   3: Mostrar caixa de diálogo **Novo Projeto**<br />–   4: Mostrar ambiente vazio<br />–   5: Mostrar Página Inicial|
+|OnStartUp|Get/Set (Enum)|Ação a ser executada na inicialização, de <xref:EnvDTE.vsStartUp>, com valores de 0 a 5:<br /><br /> –   0: Abrir página inicial<br />–   1: Carregar última solução carregada<br />–   2: Mostrar caixa de diálogo **Abrir Projeto**<br />–   3: Mostrar caixa de diálogo **Novo Projeto**<br />–   4: Mostrar ambiente vazio<br />–   5: Mostrar página inicial|
 |StartPageRSSUrl|Get/Set (Cadeia de Caracteres)|URL para o RSS feed usado na inicialização.|
 |StartPageRefreshDownloadedContent|Get/Set (Booliano)|Atualiza a Página Inicial após cada passagem do intervalo especificado em StartPageRefreshInterval.|
 |StartPageRefreshInterval|Get/Set (Curto)|Intervalo em minutos para atualizar a Página Inicial.|
@@ -143,7 +143,7 @@ Este documento descreve as páginas (ou coleções de propriedades) associadas a
 ## <a name="tasklist"></a>TaskList
  `DTE.Properties("Environment", "TaskList")`
 
-|Nome do item de propriedade|Valor|DESCRIÇÃO|
+|Nome do item de propriedade|Valor|Descrição|
 |------------------------|-----------|-----------------|
 |ConfirmTaskDeletion|Get/Set (Booliano)|Especifica se uma caixa de confirmação será exibida ao excluir tarefas da **Lista de Tarefas**.|
 |WarnOnAddingHiddenItem|Get/Set (Booliano)|Especifica se você será avisado ao adicionar uma tarefa do usuário que não será exibida.|
@@ -153,12 +153,17 @@ Este documento descreve as páginas (ou coleções de propriedades) associadas a
 ## <a name="web-browser"></a>Navegador da Web
  `DTE.Properties("Environment", "WebBrowser")`
 
-|Nome do item de propriedade|Valor|DESCRIÇÃO|
+|Nome do item de propriedade|Valor|Descrição|
 |------------------------|-----------|-----------------|
 |HomePage|Get/Set (Cadeia de Caracteres)|Representa a URL da home page.|
 |SearchPage|Get/Set (Cadeia de Caracteres)|Representa a URL da página de pesquisa.|
 |ViewSourceIn|Get/Set (Enum)|<xref:EnvDTE.vsBrowserViewSource> (Origem, Design, Externo).|
 |ViewSourceExternalProgram|Get/Set (Cadeia de Caracteres)|O caminho do visualizador da fonte externa.|
 
-## <a name="see-also"></a>Veja também
- [Controlando as configurações](https://msdn.microsoft.com/library/a09ed242-7494-4cde-bbd1-7a8ec617965d) [de opções que determinam os nomes dos itens de propriedade na](https://msdn.microsoft.com/library/d450422d-47c7-4eeb-9f9f-3286264bc5aa) página opções páginas opções [, propriedades do nó fontes e cores](../../ide/reference/options-page-fonts-and-colors-node-properties.md) [Opções página, propriedades do nó editor de texto caixa de](../../ide/reference/options-page-text-editor-node-properties.md) [diálogo opções de ambiente](../../ide/reference/environment-options-dialog-box.md)
+## <a name="see-also"></a>Consulte também
+
+- [Controlando as configurações de opções](https://msdn.microsoft.com/library/a09ed242-7494-4cde-bbd1-7a8ec617965d)
+- [Determinando os nomes dos itens de propriedade nas páginas de opções](https://msdn.microsoft.com/library/d450422d-47c7-4eeb-9f9f-3286264bc5aa)
+- [Página de Opções, Propriedades do Nó de Fontes e Cores](../../ide/reference/options-page-fonts-and-colors-node-properties.md)
+- [Página de Opções, Propriedades do Nó de Editor de Texto](../../ide/reference/options-page-text-editor-node-properties.md)
+- [Caixa de diálogo Opções do Ambiente](../../ide/reference/environment-options-dialog-box.md)

@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f4f12aafa8296914461e647dddc3400e399770c0
-ms.sourcegitcommit: 4f82de3fb0cfae226aef1abb40c47e63d2036a5c
+ms.openlocfilehash: 5d47e31b70e56ed0b0e0957d2407a043329a5a10
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72919173"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594533"
 ---
 # <a name="sign-in-to-visual-studio"></a>Entrar no Visual Studio
 
@@ -66,7 +66,7 @@ A menos que você se desconecte, você será conectado automaticamente ao Visual
 
 Se você encontrar problemas ao entrar, confira a página [Suporte para contas](https://visualstudio.microsoft.com/subscriptions/support/) para obter ajuda.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 * [Como desbloquear o Visual Studio](../ide/how-to-unlock-visual-studio.md)
 * [Visão geral do IDE do Visual Studio](../get-started/visual-studio-ide.md)

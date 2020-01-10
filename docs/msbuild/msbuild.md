@@ -6,19 +6,19 @@ helpviewer_keywords:
 - MSBuild, about MSBuild
 - MSBuild, overview
 ms.assetid: e39f13f7-1e1d-4435-95ca-0c222bca071c
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bf80e9df7910b0b581ae956978fb2020542ae96f
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: a489f9d42930dca88a6de69b8875a4406250f66e
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747260"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595053"
 ---
-# <a name="msbuild"></a>MSBuild
+# <a name="msbuild"></a>{1&gt;MSBuild&lt;1}
 O [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] é uma plataforma para a criação de aplicativos. Esse mecanismo, que é também conhecido como MSBuild, fornece um esquema XML para um arquivo de projeto que controla como a plataforma de build processa e compila software. O Visual Studio usa o MSBuild, mas ele não depende do Visual Studio. Ao invocar o *msbuild.exe* no seu arquivo de projeto ou solução, você pode organizar e criar produtos em ambientes em que o Visual Studio não está instalado.
 
  O Visual Studio usa o MSBuild para carregar e compilar projetos gerenciados. Os arquivos de projeto no Visual Studio ( *.csproj*, *.vbproj*, *.vcxproj* e outros) contêm o código XML do MSBuild que é executado ao compilar um projeto usando o IDE. Os projetos do Visual Studio importam toas as configurações e processos de build necessários para realizar o trabalho de desenvolvimento típico, mas você pode estendê-las ou modificá-las de dentro do Visual Studio ou usando um editor de XML.
@@ -84,7 +84,7 @@ MSBuild.exe MyProj.proj -property:Configuration=Debug
 
  As propriedades podem ser referenciadas por todo o arquivo de projeto usando a sintaxe $(\<PropertyName>). Por exemplo, você pode fazer referência às propriedades nos exemplos anteriores usando `$(BuildDir)` e `$(Configuration)`.
 
- Para saber mais sobre propriedades, confira [Propriedades do MSBuild](../msbuild/msbuild-properties.md).
+ Para obter mais informações sobre propriedades, confira [Propriedades do MSBuild](../msbuild/msbuild-properties.md).
 
 ### <a name="BKMK_Items"></a> Itens
  Os itens são entradas no sistema de build e normalmente representam arquivos. Os itens são agrupados em tipos de item com base em seus nomes de item definidos pelo usuário. Esses tipos de item podem ser usados como parâmetros para tarefas, que usam os itens individuais para executar as etapas do processo de build.
@@ -166,9 +166,9 @@ MSBuild.exe MyProj.proj -property:Configuration=Debug
 
 Para obter mais informações, consulte [Multiplataforma](../msbuild/msbuild-multitargeting-overview.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
-| Título | Descrição |
+| Cargo | Descrição |
 | - | - |
 | [Passo a passo: Criando um arquivo de projeto do MSBuild do zero](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md) | Mostra como criar um arquivo de projeto básico de forma incremental, usando somente um editor de texto. |
 | [Passo a passo: usando o MSBuild](../msbuild/walkthrough-using-msbuild.md) | Apresenta os blocos de construção do MSBuild e mostra como escrever, manipular e depurar projetos do MSBuild sem fechar o IDE do Visual Studio. |

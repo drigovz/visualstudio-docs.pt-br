@@ -25,17 +25,17 @@ helpviewer_keywords:
 - MSBuild (C++), Link task
 - Link task (MSBuild (C++))
 ms.assetid: 0a61f168-3113-4fa7-83a3-d9142e2a33f8
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 98bf3e143a3fcb6613752362acf83f5c2441b98b
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: 31bad6dfd0c336e4535e446d1167cb9fd6874972
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911255"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592198"
 ---
 # <a name="link-task"></a>tarefa de vinculação
 Encapsula a ferramenta Microsoft C++ linker, *link. exe*. A ferramenta de vinculador vincula arquivos-objeto e bibliotecas de formato COFF para criar um arquivo *.exe* (executável) ou uma DLL (biblioteca de vínculo dinâmico). Para obter mais informações, confira [Opções do vinculador](/cpp/build/reference/linker-options).
@@ -497,7 +497,7 @@ Encapsula a ferramenta Microsoft C++ linker, *link. exe*. A ferramenta de vincul
 
   - **PGUpdate**
 
-    \- **/LTCG:PGUpdate**
+    \- **/LTCG: PGUpdate**
 
   Para obter mais informações, confira [/LTCG (Geração de código durante o tempo de vinculação)](/cpp/build/reference/ltcg-link-time-code-generation).
 
@@ -923,5 +923,5 @@ Encapsula a ferramenta Microsoft C++ linker, *link. exe*. A ferramenta de vincul
 
   Para obter mais informações, confira [/VERSION (Informações de versão)](/cpp/build/reference/version-version-information).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 - [Referência de tarefas](../msbuild/msbuild-task-reference.md)

@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - UML model, sharing
 - UML diagrams, saving
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f8d097f76bcdb419be56d7fd1501fb93e872b1b9
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 2347ad9f01634fe7fee243a7d5e1a24a6d9ba3b3
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748233"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591912"
 ---
 # <a name="share-models-and-exporting-diagrams"></a>Modelos de compartilhamento e diagramas de exportação
 No Visual Studio, você pode compartilhar modelos e diagramas com colegas de várias maneiras.
@@ -43,12 +43,12 @@ No Visual Studio, você pode compartilhar modelos e diagramas com colegas de vá
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
-|Título|Descrição|
+|Cargo|Descrição|
 |-|-|
 |[Estruturar a solução de modelagem](../modeling/structure-your-modeling-solution.md)|Compartilhando modelos em um projeto grande ou médio.|
 |[Exportar diagramas como imagens](../modeling/export-diagrams-as-images.md)|Você pode copiar partes de diagramas em aplicativos como o PowerPoint ou o Word, ou imprimir um diagrama em um arquivo XPS.|
 |[Análise e modelagem de arquitetura](../modeling/analyze-and-model-your-architecture.md)|Visão geral de modelos e diagramas.|
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Usar modelos no processo de desenvolvimento](../modeling/use-models-in-your-development-process.md)

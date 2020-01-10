@@ -5,17 +5,17 @@ ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.ruleseteditor
 ms.assetid: 370c97bf-bb29-4b2f-b9ae-ba125bce7b2d
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e23bf15796a8ff581a8a017687f90084c338e74
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8ea828cd0cba0bdab60a1f7cf4f74dbf20bd01d2
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649007"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587128"
 ---
 # <a name="use-the-code-analysis-rule-set-editor"></a>Usar o editor de conjunto de regras de análise de código
 
@@ -26,10 +26,10 @@ A tabela a seguir mostra as opções de gravidade:
 |Ação (severidade)|Descrição|
 |-|-|
 |Aviso|Gera um aviso no **lista de erros** e também no momento da compilação.|
-|Erro|Gera um erro na **lista de erros** e também no momento da compilação.|
+|Erro do|Gera um erro na **lista de erros** e também no momento da compilação.|
 |Info|Gera uma mensagem no **lista de erros**.|
 |Hidden|A violação não é visível para o usuário. No entanto, o IDE é notificado sobre a violação.|
-|Nenhum|A regra foi suprimida. O comportamento é o mesmo que se a regra foi removida do conjunto de regras.|
+|{1&gt;Nenhum&lt;1}|A regra foi suprimida. O comportamento é o mesmo que se a regra foi removida do conjunto de regras.|
 
 O editor exibe as regras em uma estrutura de árvore que agrupa as regras por um campo de conjunto de regras que você especificar. Para adicionar ou remover regras de um conjunto de regras, execute uma ou mais das seguintes etapas:
 
@@ -42,7 +42,7 @@ O editor exibe as regras em uma estrutura de árvore que agrupa as regras por um
 
 - Marque ou desmarque a caixa de seleção de uma regra individual. Quando você marca a caixa de seleção para uma regra, a regra é definida como a ação de aviso.
 
-## <a name="toolbar"></a>Barra de ferramentas
+## <a name="toolbar"></a>Barra de Ferramentas
 
 Você pode usar a barra de ferramentas do editor de conjunto de regras para agrupar, filtrar e Pesquisar os dados que aparecem na grade conjunto de regras.
 
@@ -52,7 +52,7 @@ A tabela a seguir descreve os controles na barra de ferramentas do editor de con
 |---------------------|-----------------|
 |**Expandir Tudo**|Mostra as regras em todos os grupos.|
 |**Recolher tudo**|Oculta as regras em todos os grupos.|
-|**Group By**|Especifica o campo pelo qual as regras são agrupadas. Clique em **\<None >** para mostrar as regras sem grupos.|
+|**Group By**|Especifica o campo pelo qual as regras são agrupadas. Clique em **\<nenhum >** para mostrar as regras sem grupos.|
 |**Opções de Coluna**|Especifica os campos de regra a serem exibidos.|
 |**Ocultar regras que não se aplicam à solução atual**|Mostra ou oculta regras que não são do mesmo tipo de destino que a solução.|
 |**Mostrar regras que podem gerar erros de análise de código**|Mostra ou oculta as regras que são atribuídas à ação de erro.|
@@ -85,6 +85,6 @@ Nos cabeçalhos de coluna da grade de conjunto de regras, você pode classificar
 
 - Para filtrar os conjuntos de regras pelo valor de um campo, clique no botão de filtro no cabeçalho da coluna do campo pelo qual você deseja filtrar. Marque as caixas de seleção dos valores que você deseja mostrar e desmarque as caixas de seleção dos valores que você deseja ocultar.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Criar um conjunto de regras personalizado](../code-quality/how-to-create-a-custom-rule-set.md)

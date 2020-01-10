@@ -9,17 +9,17 @@ helpviewer_keywords:
 - build Devenv switch
 - command-line builds
 ms.assetid: ced21627-7653-455b-8821-3e31c6a448cf
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9aef4dcdc9069c1bbfe71a90bbaba214ebcd18ed
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 1766fe22573554b41ebfaa38fbd9e8d6c90c5790
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72667878"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595755"
 ---
 # <a name="build-devenvexe"></a>/Build (devenv.exe)
 
@@ -35,7 +35,7 @@ devenv SolutionName /Build [SolnConfigName [/Project ProjName [/ProjectConfig Pr
 
 - *SolutionName*
 
-  Necessário. O caminho completo e o nome do arquivo de solução.
+  Necessária. O caminho completo e o nome do arquivo de solução.
 
 - *SolnConfigName*
 
@@ -49,7 +49,7 @@ devenv SolutionName /Build [SolnConfigName [/Project ProjName [/ProjectConfig Pr
 
   Opcional. Nome de uma configuração de build do projeto (por exemplo, `Debug` ou `Release`) que será usado ao compilar o projeto nomeado. Se mais de uma plataforma de solução estiver disponível, também será preciso especificar a plataforma (por exemplo, `Debug|Win32`). Se esta opção for especificada, ela substituirá o argumento *SolnConfigName*.
 
-- `/Out` *OutputFilename*
+- `/Out` *NomeDoArquivoDeSaída*
 
   Opcional. O nome de um arquivo para o qual você deseja enviar a saída da ferramenta. Se o arquivo já existir, a ferramenta anexará a saída ao final do arquivo.
 
@@ -73,7 +73,7 @@ O comando a seguir compila o projeto `CSharpWinApp`, usando a configuração de 
 devenv "%USERPROFILE%\source\repos\MySolution.sln" /build Debug /project "CSharpWinApp\CSharpWinApp.csproj" /projectconfig Debug
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Criar e limpar projetos e soluções](../../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)
 - [Opções de linha de comando do Devenv](../../ide/reference/devenv-command-line-switches.md)

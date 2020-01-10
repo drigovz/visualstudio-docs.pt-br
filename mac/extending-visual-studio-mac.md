@@ -1,17 +1,17 @@
 ---
 title: Estendendo o Visual Studio para Mac
 description: Os recursos do Visual Studio para Mac podem ser estendido com módulos chamados de pacotes de extensão. A primeira parte deste guia cria um pacote de extensão simples do Visual Studio para Mac para inserir a data e a hora em um documento. A segunda parte deste guia apresenta os conceitos básicos do sistema de pacote de extensão e algumas das principais APIs que formam a base do Visual Studio para Mac.
-author: conceptdev
-ms.author: crdun
-ms.date: 05/07/2019
+author: heiligerdankgesang
+ms.author: dominicn
+ms.date: 12/20/2019
 ms.technology: vs-ide-sdk
 ms.assetid: D5245AB0-8404-426B-B538-F49125E672B2
-ms.openlocfilehash: 02285a38214b4f13c45b4868599c84f47e67013c
-ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
-ms.translationtype: MT
+ms.openlocfilehash: 102b03caf2880d9b1311bb757eaf92aad84f8c81
+ms.sourcegitcommit: d04441e3c5f2eff3a63f7aca35ccf7ecac90fb44
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73716846"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "75735825"
 ---
 # <a name="extending-visual-studio-for-mac"></a>Estendendo o Visual Studio para Mac
 
@@ -28,7 +28,7 @@ Para que um pacote de extensão se baseie no Visual Studio para Mac, ele deve te
 A vantagem desse design modular é que o Visual Studio para Mac é extensível – há muitos pontos de extensão que podem servir de base com pacotes de extensão personalizados. Exemplos de pacotes de extensão atuais incluem suporte para C# e F#, ferramentas de depuração e modelos de projeto.
 
 > [!NOTE]
-> Se você tiver um projeto do Criador de Suplementos que foi criado antes do Criador de Suplementos 1.2, será necessário migrar seu projeto, conforme descrito nas etapas indicadas [aqui](https://mhut.ch/addinmaker/1.2).
+> Se você tiver um projeto do criador de suplementos criado antes do Add-in Maker 1,2, você precisará migrar seu projeto conforme descrito nas etapas [aqui](https://mhut.ch/addinmaker/1.2).
 
 <!---The [Walkthrough](~/extending-visual-studio-mac-walkthrough.md) topic explains how to build an extension package that uses a *Command* to insert the date and time into an open text document.--->
 
@@ -72,10 +72,10 @@ As extensões de comando são definidas ao adicionar entradas ao ponto de extens
 
  ```xml
 <Extension path="/MonoDevelop/Ide/Commands/Edit">
-  <command id="DateInserter.DateInserterCommands.InsertDate"
+  <Command id="DateInserter.DateInserterCommands.InsertDate"
             _label="Insert Date"
             _description="Insert the current date"
-            defaulthandler="DateInserter.InsertDateHandler" />
+            defaultHandler="DateInserter.InsertDateHandler" />
 </Extension>
 ```
 
@@ -92,7 +92,7 @@ Uma Extensão CommandItem que se conecta ao ponto de extensão `/MonoDevelop/Ide
 
 ```xml
 <Extension path="/MonoDevelop/Ide/MainMenu/Edit">
-  <commanditem id="DateInserter.DateInserterCommands.InsertDate" />
+  <CommandItem id="DateInserter.DateInserterCommands.InsertDate" />
 </Extension>
 ```
 
@@ -188,11 +188,11 @@ Com esses recursos em mãos, os principais conceitos com os quais você precisa 
 
 Para determinado [`MonoDevelop.Ide.Gui.Document`](http://source.monodevelop.com/#MonoDevelop.Ide/MonoDevelop.Ide.Gui/Document.cs,4e960d4735f089b5), você pode recuperar os `ITextBuffer` e `ITextView` subjacentes associados por meio de `Document.GetContent<ITextBuffer>()` e `Document.GetContent<ITextView>()`, respectivamente.
 
-## <a name="additional-information"></a>Informações adicionais
+## <a name="additional-information"></a>{1&gt;Informações Adicionais&lt;1}
 
 > [!NOTE]
 > Estamos trabalhando para melhorar os cenários de extensibilidade do Visual Studio para Mac. Se você estiver criando extensões e precisa de ajuda ou informações adicionais, ou deseja fornecer comentários, preencha o formulário [Visual Studio for Mac Extension Authoring](https://aka.ms/vsmac-extensions-survey) (Criação de extensão do Visual Studio para Mac).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Desenvolver extensões do Visual Studio (no Windows)](/visualstudio/extensibility/starting-to-develop-visual-studio-extensions)

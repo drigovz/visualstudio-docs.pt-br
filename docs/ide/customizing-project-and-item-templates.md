@@ -5,15 +5,15 @@ ms.topic: conceptual
 helpviewer_keywords:
 - customizing templates [Visual Studio]
 - Visual Studio templates, customizing
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 401b1b3d2b37f74ae28b0b27bad5b1715497a4e7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 031caa0f1bccb2c3f57dbbc89b4dd7d311928b77
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652564"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75567548"
 ---
 # <a name="customize-project-and-item-templates"></a>Personalizar modelos de projeto e de item
 
@@ -35,7 +35,7 @@ Por exemplo, é possível executar as seguintes tarefas:
 
    Para obter mais informações, consulte [Como usar assistentes com modelos de projeto (extensibilidade)](../extensibility/how-to-use-wizards-with-project-templates.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Criando modelos de projeto e de item](../ide/creating-project-and-item-templates.md)
 - [Como solucionar problemas de modelos](../ide/how-to-troubleshoot-templates.md)

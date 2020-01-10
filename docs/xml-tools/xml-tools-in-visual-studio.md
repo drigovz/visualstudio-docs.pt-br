@@ -27,21 +27,21 @@ helpviewer_keywords:
 - XSL, style sheets
 - XMLDataDocument class
 ms.assetid: 1fd5de47-2d61-4180-9539-c2c4bf9ab768
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c9412d89ee7d9ad1412f0eaf9fe9341e336a65e5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 87a5f069d5255a744e256bc9f7d1b48a135e85d8
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72668720"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592302"
 ---
 # <a name="xml-tools-in-visual-studio"></a>Ferramentas XML no Visual Studio
 
-*Linguagem XML (XML)* é uma linguagem de marcação que fornece um formato para descrever os dados. O XML separa os dados e sua apresentação usando folhas de estilo associadas, como XSL (Extensible Stylesheet Language) e CSS (Cascading Style Sheets). O Visual Studio inclui ferramentas e recursos que facilitam trabalhar com os esquemas XML, XSLT e XML.
+*Extensible Markup Language (XML)* é uma linguagem de marcação que fornece um formato para descrever dados. O XML separa os dados e sua apresentação usando folhas de estilo associadas, como XSL (Extensible Stylesheet Language) e CSS (Cascading Style Sheets). O Visual Studio inclui ferramentas e recursos que facilitam trabalhar com os esquemas XML, XSLT e XML.
 
 ## <a name="xml-editor"></a>Editor de XML
 
@@ -72,7 +72,7 @@ O Visual Studio dá suporte à [depuração de folhas de estilo XSLT](../xml-too
 > [!NOTE]
 > O depurador XSLT só está disponível na edição Enterprise do Visual Studio.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - <xref:System.Xml?displayProperty=fullName>
 - [Transformações XSLT](/dotnet/standard/data/xml/xslt-transformations)

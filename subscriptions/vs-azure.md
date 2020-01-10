@@ -1,41 +1,45 @@
 ---
-title: Benefício Microsoft Azure | Microsoft Docs
+title: Microsoft Azure benefício | Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
 ms.date: 07/29/2019
 ms.topic: conceptual
 description: Saiba como ativar o benefício de crédito individual do Azure DevTest incluído na sua assinatura do Visual Studio.
-ms.openlocfilehash: 789548f50f7d631f3db190ce5e2638858e8c4707
-ms.sourcegitcommit: c222052906362bf1a3762ec4d4623170e4e06702
+ms.openlocfilehash: a6d0eee97ddf2d3a5a35af60ba6c6daf8bcc8425
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "74810047"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75405302"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Usar o Microsoft Azure nas assinaturas do Visual Studio
 Como assinante do Visual Studio, você pode usar o Microsoft Azure sem custo adicional.  Com o [crédito individual do Azure DevTest mensal](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/), o Azure é sua área restrita pessoal para desenvolvimento/teste.  Você pode provisionar máquinas virtuais, serviços de nuvem e outros recursos do Azure.  Os valores de crédito variam de acordo com o nível da assinatura.
 
-## <a name="activation-steps"></a>Etapas de Ativação
+## <a name="activation-steps"></a>Etapas de ativação
 1. Entre no [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
 2. Localize o bloco Azure na seção Ferramentas da página Benefícios e clique no link **Ativar** na parte inferior do bloco de benefícios.
    > [!div class="mx-imgBorder"]
    > ![Bloco do Azure](_img/vs-azure/vs-azure-tile.png)
 
-3. Se você não tiver uma assinatura existente do Azure, precisará preencher as informações necessárias para criar sua assinatura do Azure; clique na caixa de seleção para aceitar os termos e condições e clique em **Inscrever-se**:
+3. Se você não tiver uma assinatura do Azure existente, será solicitado que você preencha as informações necessárias para criar sua assinatura do Azure.  A primeira etapa é fornecer suas informações pessoais e clicar em **Avançar**.
    > [!div class="mx-imgBorder"]
-   > ![Inscrição no Azure](_img/vs-azure/vs-azure-sign-up-cropped.png) Se você já tiver uma assinatura, clique na caixa de seleção para aceitar o contrato e clique em **Inscrever-se**.
+   > ![Inscrição do Azure](_img/vs-azure/vs-azure-about-you.png)
 
-4. Quando sua conta estiver pronta, você terá a opção de escolher um plano de suporte do Azure (vendido separadamente) ou de começar a usar sua assinatura do Azure.
+4. Em seguida, você precisará verificar sua identidade usando um código de verificação simples. Forneça seu número de telefone e escolha se deseja receber o código por texto ou telefone.  Insira o código que você recebe e clique em **verificar código**.   
    > [!div class="mx-imgBorder"]
-   > ![Preparação do Azure](_img/vs-azure/vs-azure-getting-ready-cropped.png)
+   > ![Preparação do Azure](_img/vs-azure/vs-azure-identity.png)
 
-5. O Centro de Início Rápido do Painel do Azure será carregado.  
+5. Para a etapa final, clique na caixa de seleção para aceitar os termos e, em seguida, clique em **inscrever-se**.  E isso é tudo!
    > [!div class="mx-imgBorder"]
-   > ![Painel do Azure](_img/vs-azure/vs-azure-dashboard-quickstart.png) 
+   > ![Preparação do Azure](_img/vs-azure/vs-azure-agreement.png)
 
-6. Marque o [Portal do Azure](https://portal.azure.com) para facilitar os próximos acessos.
+0. O Centro de Início Rápido do Painel do Azure será carregado.  
+   > [!div class="mx-imgBorder"]
+   > ![Painel do Azure](_img/vs-azure/vs-azure-quick-start.png) 
+
+0. Marque a [portal do Azure](https://portal.azure.com) para facilitar o acesso no futuro.
 
 
 ## <a name="eligibility"></a>Elegibilidade

@@ -2,15 +2,15 @@
 title: Conectar-se a projetos no Team Explorer
 ms.date: 12/04/2018
 ms.topic: conceptual
-ms.author: jillfra
-author: jillre
+ms.author: tglee
+author: TerryGLee
 ms.manager: jillfra
-ms.openlocfilehash: c442ec22080a5f3533776e9d581aa1e7ef0e52ee
-ms.sourcegitcommit: 08105865a9643fb20dce9b8b7580452cfbbe7ee7
+ms.openlocfilehash: 936fcb598ccb7919eca0a35a1191732bce1c8e23
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74538669"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585477"
 ---
 # <a name="connect-to-projects-in-team-explorer"></a>Conectar-se a projetos no Team Explorer
 
@@ -40,7 +40,7 @@ Para se conectar a um projeto:
 > [!TIP]
 > Caso precise criar um projeto ou adicionar usuários a um projeto, confira [Criar um projeto (Azure DevOps)](/azure/devops/organizations/projects/create-project) e [Adicionar usuários a um projeto ou uma equipe (Azure DevOps)](/azure/devops/organizations/security/add-users-team-project).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Referência do Team Explorer](reference/team-explorer-reference.md)
 - [Conectar-se a um projeto (Azure DevOps)](/azure/devops/organizations/projects/connect-to-projects)

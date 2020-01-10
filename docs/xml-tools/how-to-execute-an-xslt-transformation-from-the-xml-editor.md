@@ -3,17 +3,17 @@ title: Executar uma transformação XSLT
 ms.date: 03/05/2019
 ms.topic: conceptual
 ms.assetid: 56a0fe82-5231-487d-8b6e-a08a9b04e0fc
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2fb4aee348ae48a2078f7803a44d4746d3dbacc1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3bd26eaadf921d13fc425a91031a39df5a80ea2a
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72668803"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592692"
 ---
 # <a name="how-to-execute-an-xslt-transformation-from-the-xml-editor"></a>Como executar uma transformação XSLT do editor de XML
 
@@ -31,11 +31,11 @@ Se a propriedade de **saída** especificar um nome de arquivo com um. *htm* ou. 
 
     - Adicione uma instrução de processamento de `xml-stylesheet` para o documento XML. Por exemplo, adicione a seguinte linha ao prólogo do documento: `<?xml-stylesheet type='text/xsl' href='filename.xsl'?>`
 
-       \- ou -
+       - ou -
 
     - Adicione a folha de estilos XSLT usando a janela **Propriedades** . Com o arquivo XML aberto no editor, clique com o botão direito do mouse em qualquer lugar no editor e escolha **Propriedades**. Na janela **Propriedades** , clique no campo **folha de estilos** e escolha o botão procurar (...). Selecione a folha de estilos XSLT e, em seguida, escolha **abrir**.
 
-3. Na barra de menus, escolha **XML**  > **Iniciar XSLT sem depuração**. Ou pressione **Ctrl** +**ALT** +**F5**.
+3. Na barra de menus, escolha **XML** > **Iniciar XSLT sem depuração**. Ou pressione **Ctrl**+**ALT**+**F5**.
 
    A saída da transformação XSLT é exibida em uma nova janela de documento.
 
@@ -51,7 +51,7 @@ Se a propriedade de **saída** especificar um nome de arquivo com um. *htm* ou. 
    > [!NOTE]
    > O documento XML é o documento de entrada usado para a transformação. Se um documento não for especificado quando a transformação XSLT for iniciada, a caixa de diálogo **Abrir arquivo** será exibida e você poderá especificar um documento nesse momento.
 
-3. Na barra de menus, escolha **XML**  > **Iniciar XSLT sem depuração**. Ou pressione **Ctrl** +**ALT** +**F5**.
+3. Na barra de menus, escolha **XML** > **Iniciar XSLT sem depuração**. Ou pressione **Ctrl**+**ALT**+**F5**.
 
    A saída da transformação XSLT é exibida em uma nova janela de documento.
 
@@ -59,6 +59,6 @@ Se a propriedade de **saída** especificar um nome de arquivo com um. *htm* ou. 
 
 Você pode especificar um nome de arquivo de saída para arquivos XML e XSL. Abra a janela **Propriedades** e especifique um nome de arquivo no campo **saída** .
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Editor de XML](../xml-tools/xml-editor.md)

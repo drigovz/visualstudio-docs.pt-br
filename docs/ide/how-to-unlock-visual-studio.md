@@ -1,7 +1,7 @@
 ---
-title: 'Como: Desbloquear o Visual Studio'
-titleSuffix: ''
-ms.date: 03/30/2019
+title: Estender uma versão de avaliação ou atualizar uma licença
+description: Saiba como estender uma avaliação gratuita do Visual Studio, usar uma assinatura online ou uma chave do produto (Product Key) para desbloquear o Visual Studio e atualizar uma licença obsoleta ou expirada.
+ms.date: 12/18/2019
 ms.topic: conceptual
 ms.assetid: ffb580a1-8b5d-48f5-b811-87f8036f50ea
 author: TerryGLee
@@ -11,33 +11,31 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-ms.openlocfilehash: fe0aa86be242e9a7e7ed8d877944c66247718167
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: db0f75b3e4c2f066b7a9d79976a50efd3364d7bd
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926296"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591366"
 ---
-# <a name="how-to-unlock-visual-studio"></a>Como: Desbloquear o Visual Studio
+# <a name="extend-a-trial-version-or-update-a-license"></a>Estender uma versão de avaliação ou atualizar uma licença
 
-Você pode avaliar o Visual Studio gratuitamente por até 30 dias. Entrar no IDE estende o período de avaliação para 90 dias. Para continuar usando o Visual Studio, desbloqueie o IDE:
+Você pode avaliar uma avaliação gratuita de [Visual Studio Professional ou Visual Studio Enterprise](https://visualstudio.microsoft.com/vs/compare/) por 30 dias. E, se você entrar, poderá estender o período de avaliação para 90 dias. (A Comunidade do Visual Studio é gratuita sem um período de avaliação. No entanto, você deve [entrar](signing-in-to-visual-studio.md) periodicamente para manter sua [licença atualizada](#update-a-stale-license).)
 
-- usando uma assinatura online
+Para continuar usando o Visual Studio após o término de um período de avaliação, desbloqueie-o com uma [assinatura online](#use-an-online-subscription) ou uma [chave do produto (Product Key](#enter-a-product-key)).
 
-- inserindo uma chave do produto (Product Key)
+## <a name="use-an-online-subscription"></a>Usar uma assinatura online
 
-## <a name="to-unlock-visual-studio-using-an-online-subscription"></a>Para desbloquear o Visual Studio usando uma assinatura online
-
-Para desbloquear o Visual Studio usando uma Assinatura do Visual Studio, uma organização do Azure DevOps associada a uma conta Microsoft ou uma conta corporativa ou de estudante:
-
-1. Escolha o botão **Entrar** no canto superior direito do IDE (ou acesse **Arquivo** > **Configurações de Conta** para abrir a caixa de diálogo **Configurações de Conta** e escolha o botão **Entrar**).
+1. Escolha o botão **entrar** no canto superior direito do IDE (ou vá para **arquivo** > configurações de **conta** para abrir a caixa de diálogo **configurações de conta** e, em seguida, escolha o botão **entrar** ).
 
 1. Insira as credenciais para uma conta da Microsoft ou uma conta corporativa ou de estudante. O Visual Studio encontrará uma Assinatura do Visual Studio ou uma organização do Azure DevOps associada à sua conta.
 
 > [!IMPORTANT]
 > O Visual Studio procura automaticamente assinaturas online associadas quando você se conecta a uma organização do Azure DevOps na janela de ferramentas do **Team Explorer**. Quando se conecta a uma organização do Azure DevOps, você pode entrar usando contas da Microsoft e corporativas ou de estudante. Se houver uma assinatura online para aquela conta de usuário, o Visual Studio automaticamente desbloqueará o IDE para você.
 
-## <a name="to-unlock-visual-studio-with-a-product-key"></a>Para desbloquear o Visual Studio com uma chave do produto (Product Key)
+Para obter mais informações sobre as assinaturas do Visual Studio e como elas funcionam, consulte a página de [perguntas frequentes de suporte a assinaturas](https://visualstudio.microsoft.com/subscriptions/support/) .
+
+## <a name="enter-a-product-key"></a>Inserir uma chave do produto
 
 1. Selecione **Arquivo** > **Configurações de Conta** para abrir a caixa de diálogo **Configurações de Conta** e, em seguida, escolha o link **Licenciar com uma Chave de Produto**.
 
@@ -46,30 +44,39 @@ Para desbloquear o Visual Studio usando uma Assinatura do Visual Studio, uma org
 > [!TIP]
 > As versões de pré-lançamento do Visual Studio não têm chaves de produto. Você deve entrar no IDE para usar as versões de pré-lançamento.
 
-## <a name="address-license-problem-states"></a>Tratar os estados de problema de licença
+Para obter mais informações sobre as chaves de produto do Visual Studio para o Visual Studio e como obtê-las, consulte a página [usando as chaves do produto no Visual Studio subscriptions](/visualstudio/subscriptions/product-keys) .
 
-### <a name="update-stale-licenses"></a>Atualizar licenças obsoletas
+## <a name="update-a-stale-license"></a>Atualizar uma licença obsoleta
 
-Talvez você tenha visto a mensagem a seguir que informa que sua licença ficará obsoleta no Visual Studio. A mensagem diz que "Sua licença ficou obsoleta e deve ser atualizada".
+Você pode ver uma mensagem no Visual Studio que diz "sua licença ficou obsoleta e deve ser atualizada".
 
 ![Mensagem de licença obsoleta do Visual Studio](../ide/media/vs2017_stale-license.png)
 
-Essa mensagem indica que embora sua assinatura ainda possa ser válida, o token de licença que o Visual Studio usa para manter sua assinatura atualizada ainda não foi atualizado e se tornou obsoleto devido a um dos motivos a seguir:
+Essa mensagem indica que, embora sua assinatura ainda possa ser válida, o token de licença que o Visual Studio usa para manter sua assinatura atualizado ainda não foi atualizado. O Visual Studio relata que a licença está obsoleta devido a um dos seguintes motivos:
 
-- Você não usou o Visual Studio ou não teve uma conexão com a Internet por um longo período.
-- Você saiu do Visual Studio.
+* Você não usou o Visual Studio ou não se conectou à Internet por um longo período de tempo.
+* Você saiu do Visual Studio.
 
 Antes de o token de licença ficar obsoleto, o Visual Studio mostrará primeiro uma mensagem de aviso que solicita que você insira suas credenciais novamente.
 
-Se você não digitar novamente suas credenciais, o token começará a ficar obsoleto e a caixa de diálogo **Configurações da Conta** informará quantos dias você ainda tem até seu token expirar totalmente. Depois que o token expirar, será preciso digitar novamente suas credenciais de conta para continuar usando o Visual Studio.
+Se você não inserir novamente suas credenciais, o token começará a ficar obsoleto e a caixa de diálogo **configurações de conta** informará quantos dias você deixou antes que o token expire. Depois que o token expirar, será preciso digitar novamente suas credenciais de conta para continuar usando o Visual Studio.
 
 > [!Important]
 > Se estiver usando o Visual Studio por longos períodos em ambientes com acesso limitado ou sem acesso à Internet, você deverá usar uma chave do produto (Product Key) para desbloquear o Visual Studio a fim de evitar uma interrupção.
 
-### <a name="update-expired-licenses"></a>Atualizar licenças expiradas
+## <a name="update-an-expired-license"></a>Atualizar uma licença expirada
 
-Se a sua assinatura tiver expirado completamente e você não tiver mais direitos de acesso ao Visual Studio, será necessário renovar sua assinatura ou adicionar outra conta que tenha uma assinatura. Para obter mais informações sobre a licença que você está usando, acesse **Arquivo** > **Configurações de Conta** e examine as informações de licença no lado direito da caixa de diálogo. Se você tiver outra assinatura associada a uma conta diferente, adicione essa conta à lista **Todas as Contas** no lado esquerdo da caixa de diálogo selecionando o link **Adicionar uma conta**.
+Se sua assinatura tiver expirado e você não tiver mais direitos de acesso ao Visual Studio, você deverá renovar sua assinatura ou adicionar outra conta que tenha uma assinatura. Para obter mais informações sobre a licença que você está usando, acesse **Arquivo** > **Configurações de Conta** e examine as informações de licença no lado direito da caixa de diálogo. Se você tiver outra assinatura associada a uma conta diferente, adicione essa conta à lista **Todas as Contas** no lado esquerdo da caixa de diálogo selecionando o link **Adicionar uma conta**.
 
-## <a name="see-also"></a>Consulte também
+## <a name="get-support"></a>Obter suporte
+
+Às vezes, as coisas dão errado. Se você tiver um problema, aqui estão algumas opções de suporte:
+
+* Relate problemas do produto usando o [relatório uma ferramenta problemática](how-to-report-a-problem-with-visual-studio.md) .
+* Encontre respostas para perguntas sobre assinaturas, contas e cobrança nas [perguntas frequentes de suporte às assinaturas](https://visualstudio.microsoft.com/subscriptions/support/).
+
+## <a name="see-also"></a>Veja também
 
 * [Entrar no Visual Studio](../ide/signing-in-to-visual-studio.md)
+* [Compare as edições do Visual Studio](https://visualstudio.microsoft.com/vs/compare/)
+* [Saiba mais sobre as assinaturas do Visual Studio](/visualstudio/subscriptions/)

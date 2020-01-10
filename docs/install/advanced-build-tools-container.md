@@ -4,19 +4,19 @@ description: ''
 ms.date: 07/03/2019
 ms.topic: conceptual
 ms.assetid: e03835db-a616-41e6-b339-92b41d0cfc70
-author: heaths
-ms.author: tglee
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: a1a9c1a8db0c4f3481e1edf220412612d70064a8
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
-ms.translationtype: HT
+ms.openlocfilehash: 539b21c474f9c119427e7f74192e80e7686b299c
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67825169"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75588519"
 ---
 # <a name="advanced-example-for-containers"></a>Exemplo avançado para contêineres
 
@@ -211,7 +211,7 @@ Depois do fim da execução da última linha, abra "%TEMP%\vslogs.zip" no comput
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 * [Instalar ferramentas de build em um contêiner](build-tools-container.md)
 * [Problemas Conhecidos de Contêineres](build-tools-container-issues.md)

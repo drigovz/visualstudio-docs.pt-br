@@ -7,15 +7,15 @@ helpviewer_keywords:
 - plug-ins, load test
 - APIs, load tests
 ms.assetid: e15567bc-1f21-4feb-b81d-f17ba35cfde5
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 571abf14b1e17d85e21667c0ef0dbc3894b3ae76
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3d949b8c73bb155b2e6fe4900c54c6d5314d26c4
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653310"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75588805"
 ---
 # <a name="how-to-use-the-load-test-api"></a>Como usar a API de teste de carga
 
@@ -42,7 +42,7 @@ Você também pode criar plug-ins para testes de desempenho na Web. Para obter m
 
 6. Crie uma classe pública que implemente a interface <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin>.
 
-7. Compile o projeto.
+7. Crie o projeto.
 
 8. Adicionar o novo plug-in de teste de carga usando o Editor de testes de carga:
 
@@ -59,7 +59,7 @@ Você também pode criar plug-ins para testes de desempenho na Web. Para obter m
 
      Para obter uma implementação de <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin>, confira [Como criar um plug-in de teste de carga](../test/how-to-create-a-load-test-plug-in.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - <xref:Microsoft.VisualStudio.TestTools.LoadTesting>
 - [Criar código personalizado e plug-ins para testes de carga](../test/create-custom-code-and-plug-ins-for-load-tests.md)

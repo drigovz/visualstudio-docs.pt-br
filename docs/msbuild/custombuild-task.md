@@ -13,16 +13,16 @@ dev_langs:
 helpviewer_keywords:
 - MSBuild (C++), CustomBuild task
 - CustomBuild task (MSBuild (C++))
-author: mikeblome
-ms.author: mblome
+author: ghogen
+ms.author: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 678068d1b6acc055fa65e6d0305b07152ed28695
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: d95b6e7d4197487adc13050572ac31310701c759
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748109"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595339"
 ---
 # <a name="custombuild-task"></a>Tarefa CustomBuild
 
@@ -34,10 +34,10 @@ A tabela a seguir descreve os parâmetros da tarefa **CustomBuild**.
 
 |Parâmetro|Descrição|
 |---------------|-----------------|
-|**BuildSuffix**|Parâmetro **string** opcional.|
+|**BuildSuffix**|Parâmetro opcional **string**.|
 |**Sources**|Parâmetro obrigatório **ITaskItem[]** .|
-|**TrackerLogDirectory**|Parâmetro **string** opcional.|
+|**TrackerLogDirectory**|Parâmetro opcional **string**.|
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 [Referência de tarefas](../msbuild/msbuild-task-reference.md)

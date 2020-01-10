@@ -21,17 +21,17 @@ helpviewer_keywords:
 - projects [Visual Studio], build configuration
 - solutions [Visual Studio], build configuration
 ms.assetid: 934c727d-3a22-429c-bd13-3552cecf2e24
-author: ghogen
-ms.author: ghogen
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eed19993f5339a2f33521ad1233522a29eb0442b
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: 21421776506868942e9dc562db4f456c2012fce7
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68918712"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592016"
 ---
 # <a name="understand-build-configurations"></a>Noções sobre configurações de build
 
@@ -41,9 +41,9 @@ ms.locfileid: "68918712"
 > Este tópico aplica-se ao Visual Studio no Windows. Para o Visual Studio para Mac, confira [Configurações de build no Visual Studio para Mac](/visualstudio/mac/configurations).
 
 > [!NOTE]
-> Se não for possível localizar as definições de configuração da solução na barra de ferramentas nem acessar o **Configuration Manager**, as configurações de desenvolvimento [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] poderão ser aplicadas. Para obter mais informações, confira [Como: gerenciar configurações com as definições do desenvolvedor do Visual Basic aplicadas](../ide/how-to-manage-build-configurations-with-visual-basic-developer-settings-applied.md).
+> Se não for possível localizar as definições de configuração da solução na barra de ferramentas nem acessar o **Configuration Manager**, as configurações de desenvolvimento [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] poderão ser aplicadas. Para obter mais informações, consulte [Como gerenciar configurações com as configurações para desenvolvedores do Visual Basic aplicadas](../ide/how-to-manage-build-configurations-with-visual-basic-developer-settings-applied.md).
 
-Por padrão, as configurações de Depuração e Versão são incluídas nos projetos criados usando modelos [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Uma configuração de depuração dá suporte à depuração de um aplicativo, e uma configuração de Versão cria uma versão do aplicativo que pode ser implantada. Para obter mais informações, confira [Como: Definir as configurações de depuração e de versão](../debugger/how-to-set-debug-and-release-configurations.md). Também é possível criar configurações de solução e de projeto personalizadas. Para obter mais informações, confira [Como: Criar e editar configurações](../ide/how-to-create-and-edit-configurations.md).
+Por padrão, as configurações de Depuração e Versão são incluídas nos projetos criados usando modelos [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Uma configuração de depuração dá suporte à depuração de um aplicativo, e uma configuração de Versão cria uma versão do aplicativo que pode ser implantada. Para saber mais, consulte [Como definir configurações de depuração e versão](../debugger/how-to-set-debug-and-release-configurations.md). Também é possível criar configurações de solução e de projeto personalizadas. Para obter mais informações, consulte [Como criar e editar configurações](../ide/how-to-create-and-edit-configurations.md).
 
 ## <a name="solution-configurations"></a>Configurações da solução
 
@@ -87,9 +87,9 @@ O Visual Studio usa os seguintes critérios para atribuir configurações de sol
 
 - Se um projeto der suporte a várias plataformas, uma configuração de solução será localizada ou adicionada para cada plataforma com suporte. O nome de cada configuração de solução inclui tanto o nome de configuração do projeto quanto o nome da plataforma e tem a forma *\<nome de configuração do projeto> \<nome da plataforma>* .
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
-- [Passo a passo: Criar um aplicativo](../ide/walkthrough-building-an-application.md)
+- [Passo a passo: Compilar um aplicativo](../ide/walkthrough-building-an-application.md)
 - [Compilação e build](../ide/compiling-and-building-in-visual-studio.md)
 - [Soluções e Projetos](../ide/solutions-and-projects-in-visual-studio.md)
 - [Referência de build do C/C++](/cpp/build/reference/c-cpp-building-reference)

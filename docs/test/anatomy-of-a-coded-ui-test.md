@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - coded UI tests
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c1757c687ea48ee1f2770fa320a18da5662f43e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d7100c6bb5c1dfb4c7d336ec110cf532f1f998d4
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72665316"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591197"
 ---
 # <a name="anatomy-of-a-coded-ui-test"></a>Anatomia de um teste de IU codificado
 
@@ -26,7 +26,7 @@ Quando você cria um teste de IU codificado em um projeto de teste de IU codific
 
 Quando você cria um teste de IU codificado, o **Construtor de Teste de IU Codificado** cria um mapa da interface do usuário em teste e também dos métodos de teste, parâmetros e asserções para todos os testes. Ele também cria um arquivo de classe para cada teste.
 
-|Arquivo|Conteúdo|Editável?|
+|File|Conteúdo|Editável?|
 |-|-|-|
 |[UIMap.Designer.cs](#UIMapDesignerFile)|[Seção Declarações](#UIMapDesignerFile)<br /><br /> [Classe UIMap](#UIMapClass) (parcial, gerada automaticamente)<br /><br /> [Métodos](#UIMapMethods)<br /><br /> [Propriedades](#UIMapProperties)|Não|
 |[UIMap.cs](#UIMapCS)|[Classe UIMap](#UIMapCS) (parcial)|Sim|
@@ -266,7 +266,7 @@ Este é um arquivo XML que representa a estrutura do registro do teste de IU cod
 
 O arquivo *Uimap.uitest* não pode ser editado diretamente. No entanto, você pode usar o construtor de interface do usuário codificado para modificar o teste, o que modifica automaticamente o arquivo *UIMap.uitest* e o arquivo [*UIMap.Designer.cs*](#UIMapDesignerFile).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [UIMap](/previous-versions/dd580454(v=vs.140))
 - <xref:Microsoft.VisualStudio.TestTools.UITesting.WinControls>

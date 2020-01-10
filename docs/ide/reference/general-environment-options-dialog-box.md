@@ -15,17 +15,17 @@ helpviewer_keywords:
 - Options dialog box, General Environment
 - General Environment Options dialog box
 - Environment Options dialog box
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 36e7efa9176b2e685463330b3ca8dbd714ec4555
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 973e08ca6555f7da7873d3068e2794b8d34e3640
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72660043"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75569433"
 ---
 # <a name="options-dialog-box-environment--general"></a>Caixa de diálogo opções: ambiente \> geral
 
@@ -96,6 +96,6 @@ Especifica que, quando o botão **Fechar** é acionado, somente a janela da ferr
 
 Especifica que, quando o botão **Ocultar Automaticamente** é acionado, somente a janela da ferramenta que está em foco é ocultada automaticamente, e não todas as janelas de ferramentas do conjunto encaixado. Por padrão, essa opção não é selecionada.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Personalizar layouts de janela](../../ide/customizing-window-layouts-in-visual-studio.md)

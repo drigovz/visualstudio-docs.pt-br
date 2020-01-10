@@ -7,17 +7,17 @@ f1_keywords:
 - System.Activities.Statements.FlowStep.UI
 - System.Activities.Core.Presentation.FlowStart.UI
 ms.assetid: d5af2276-5215-4138-880a-cf2b90bbf3a0
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f56c7eac56572d8a3be1f8b478feb0543390481
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d786e9acfa99d2b106b72822a0106e2161724790
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650453"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75597029"
 ---
 # <a name="flowchart-activity-designer"></a>Designer de atividade do fluxograma
 
@@ -29,7 +29,7 @@ A atividade de <xref:System.Activities.Statements.Flowchart> é usada para criar
 
 ### <a name="using-the-flowchart-activity-designer"></a>Usando o designer de atividade do fluxograma
 
-O designer de atividades de **fluxograma** pode ser encontrado na categoria **fluxograma** da **caixa de ferramentas**, que é acessada clicando na guia **caixa de ferramentas** na Designer de fluxo de trabalho. Como alternativa, selecione **caixa de ferramentas** no menu **Exibir** ou pressione **Ctrl** +**ALT** +**X**.
+O designer de atividades de **fluxograma** pode ser encontrado na categoria **fluxograma** da **caixa de ferramentas**, que é acessada clicando na guia **caixa de ferramentas** na Designer de fluxo de trabalho. Como alternativa, selecione **caixa de ferramentas** no menu **Exibir** ou pressione **Ctrl**+**ALT**+**X**.
 
 O designer de atividades de **fluxograma** pode ser arrastado da **caixa de ferramentas** e descartado para a superfície de designer de fluxo de trabalho onde os designers de atividade normalmente são colocados, seja como uma atividade raiz ou como o filho de outra atividade de fluxo de controle. Se o designer de atividades do **fluxograma** for descartado em uma superfície de designer de fluxo de trabalho em branco, ele criará uma atividade de <xref:System.Activities.Statements.Flowchart>, que, por padrão, apresenta em uma exibição expandida na qual o nó inicial que inicia a execução é representado como uma bola verde. Se o designer de atividades de **fluxograma** for descartado em outra atividade de fluxo de controle, ele se apresentará em uma exibição minimizada que pode ser expandida clicando-se duas vezes no designer de atividades do **fluxograma** . Qualquer atividade na **caixa de ferramentas** pode ser arrastada diretamente para o designer de atividades do **fluxograma** , incluindo outras atividades de fluxo de controle.
 
@@ -39,14 +39,14 @@ Depois de arrastar vários designers de atividade para a tela Designer de Fluxo 
 
 A tabela a seguir mostra as propriedades de <xref:System.Activities.Statements.Flowchart> e descreve como elas são usadas no designer. Essas propriedades podem ser editadas na grade de propriedade ou na superfície de designer.
 
-|Nome da Propriedade|Necessária|Uso|
+|Nome da Propriedade|Necessário|Medição de|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Especifica o nome para exibição do designer de atividade no cabeçalho. O valor padrão é fluxograma. O valor pode ser editado na janela **Propriedades** ou diretamente no cabeçalho do designer de atividade.<br /><br /> Embora não seja necessário <xref:System.Activities.Activity.DisplayName%2A> restrita, é uma prática recomendada usar um.|
 |<xref:System.Activities.Statements.Flowchart.Variables%2A>|False|A coleção de variáveis que são definidos no escopo deste <xref:System.Activities.Statements.Flowchart> para compartilhar o estado através das atividades filhos.|
 |<xref:System.Activities.Statements.Flowchart.StartNode%2A>|False|<xref:System.Activities.Statements.FlowNode> que é executado quando <xref:System.Activities.Statements.Flowchart> iniciar.|
 |<xref:System.Activities.Statements.Flowchart.Nodes%2A>|False|Contém a coleção de objetos <xref:System.Activities.Statements.FlowNode> em <xref:System.Activities.Statements.Flowchart>.|
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Fluxograma](../workflow-designer/flowchart-activity-designers.md)
 - [FlowDecision](../workflow-designer/flowdecision-activity-designer.md)

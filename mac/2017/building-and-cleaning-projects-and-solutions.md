@@ -1,16 +1,16 @@
 ---
 title: Compilando e Limpando Projetos e Soluções
 description: Este artigo descreve como criar um projeto no Visual Studio para Mac
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: E4B6CB42-9FE2-43B9-93B7-BD4BD50518B1
-ms.openlocfilehash: 3c7f135ebbfa2dbf807e5831e8f17b6be48e3ea8
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
-ms.translationtype: HT
+ms.openlocfilehash: 7278b599e6a9c26ec33ea2167402dd641e6005d1
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68872340"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74983323"
 ---
 # <a name="building-and-cleaning-projects-and-solutions"></a>Compilando e limpando Projetos e Soluções
 

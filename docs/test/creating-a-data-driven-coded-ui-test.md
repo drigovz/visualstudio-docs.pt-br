@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - coded UI tests, data-driven
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 101b678606febd7cc2a7e2f9cee0c8c281289c9a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ada1f297bbb30fbe636042c87aae42849c1b6b7d
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72665094"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595352"
 ---
 # <a name="create-a-data-driven-coded-ui-test"></a>Criar um teste de interface do usuário codificado controlado por dados
 
@@ -33,7 +33,7 @@ Este exemplo cria um teste de interface do usuário codificado que é executado 
 
 ### <a name="step-1---create-a-coded-ui-test"></a>Etapa 1 - Criar um teste de interface do usuário codificado
 
-1. Criar um projeto.
+1. Crie um projeto.
 
     ![Criar um projeto de teste de IU codificado](../test/media/cuit_datadriven_.png)
 
@@ -219,7 +219,7 @@ Você deve ver a execução de teste por meio das três iterações usando os va
 
      `[DataSource("Microsoft.VisualStudio.TestTools.DataSource.TestCase", "http://vlm13261329:8080/tfs/DefaultCollection;Agile", "30", DataAccessMethod.Sequential), TestMethod]`
 
-- XML
+- {1&gt;XML&lt;1}
 
      `[DataSource("Microsoft.VisualStudio.TestTools.DataSource.XML", "|DataDirectory|\\data.xml", "Iterations", DataAccessMethod.Sequential), DeploymentItem("data.xml"), TestMethod]`
 
@@ -233,7 +233,7 @@ Você deve ver a execução de teste por meio das três iterações usando os va
 
 Se você precisar modificar um método gravado, copie-o para o arquivo *UIMap.cs* e renomeie-o. O arquivo *UIMap.cs* pode ser usado para substituir métodos e propriedades no arquivo *UIMapDesigner.cs*. Você precisa remover a referência ao método original no arquivo *UITest.cs* codificado e substituí-lo pelo nome do método renomeado.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [UIMap](/previous-versions/dd580454(v=vs.140))
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert>

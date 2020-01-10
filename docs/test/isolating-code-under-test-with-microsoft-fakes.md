@@ -1,25 +1,25 @@
 ---
-title: Isolando código em teste com falsificação da Microsoft
+title: Isolamento de código em teste com o Microsoft Fakes
 ms.date: 11/04/2016
 ms.topic: conceptual
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-author: jillre
+author: mikejo5000
 dev_langs:
 - VB
 - CSharp
-ms.openlocfilehash: bf00c35868ac5b4df34f2453f046232a91387085
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 662a61bf97e1726892b877dc79a0ef98340a34ec
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653109"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75566885"
 ---
 # <a name="isolate-code-under-test-with-microsoft-fakes"></a>Isolar o código em teste com elementos fictícios da Microsoft
 
-O Microsoft Fakes ajuda a isolar o código em teste substituindo outras partes do aplicativo por *stubs* ou *shims*. Esses são pequenos trechos de código sob o controle de seus testes. Ao isolar seu código para teste, você sabe que se o teste falhar, a causa está lá e não em outro lugar. Stubs e shims também permitem que você teste seu código mesmo que outras partes do aplicativo ainda não estejam funcionando.
+O Microsoft Fakes ajuda a isolar o código em teste substituindo outras partes do aplicativo por *stubs* ou *shims*. Stubs ou shims são pequenos pedaços de código que estão sob o controle de seus testes. Ao isolar seu código para teste, você sabe que se o teste falhar, a causa está lá e não em outro lugar. Stubs e shims também deixam que você teste seu código mesmo que outras partes de seu aplicativo ainda não estejam funcionando.
 
 O Fakes vem em duas versões:
 

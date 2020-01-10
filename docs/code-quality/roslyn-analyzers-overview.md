@@ -7,17 +7,17 @@ helpviewer_keywords:
 - analyzers
 - Roslyn analyzers
 - code analyzers
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 388667485f27b59e46a1c39d95b37ddc413240ee
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 77ee96272733eb519e92262cece405de21c06fa3
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649147"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587271"
 ---
 # <a name="overview-of-source-code-analyzers"></a>Visão geral dos analisadores de código-fonte
 
@@ -40,7 +40,7 @@ Muitas regras do analisador ou *diagnósticos* têm uma ou mais *correções de 
 
 A análise de origem por analisadores Roslyn substitui a [análise herdada](../code-quality/code-analysis-for-managed-code-overview.md) para código gerenciado. Muitas das regras de análise herdadas já foram reescritas como analisadores de código Roslyn. Para modelos de projeto mais recentes, como projetos .NET Core e .NET Standard, a análise herdada ainda não está disponível.
 
-Como violações de regras de análise herdadas, as violações de análise de código-fonte aparecem na janela Lista de Erros no Visual Studio. Além disso, as violações de análise de código-fonte também aparecem no editor de códigos como *ondulado* no código incorreto. A cor da linha ondulada depende da [configuração de gravidade](../code-quality/use-roslyn-analyzers.md#rule-severity) da regra. A imagem a seguir mostra três violações &mdash;one vermelho, um verde e um cinza:
+Como violações de regras de análise herdadas, as violações de análise de código-fonte aparecem na janela Lista de Erros no Visual Studio. Além disso, as violações de análise de código-fonte também aparecem no editor de códigos como *ondulado* no código incorreto. A cor da linha ondulada depende da [configuração de gravidade](../code-quality/use-roslyn-analyzers.md#rule-severity) da regra. A imagem a seguir mostra três violações&mdash;um vermelho, um verde e um cinza:
 
 ![Rabiscos no editor de códigos do Visual Studio](media/diagnostics-severity-colors.png)
 
@@ -52,7 +52,7 @@ Os analisadores de código inspecionam o código no momento da compilação, com
 Não apenas os analisadores de código Roslyn relatam os mesmos tipos de problemas que a análise herdada faz, mas eles facilitam a correção de uma ou de todas as ocorrências da violação em seu arquivo ou projeto. Essas ações são denominadas *correções de código*. As correções de código são específicas do IDE; no Visual Studio, eles são implementados como [ações rápidas](../ide/quick-actions.md). Nem todos os diagnósticos do analisador têm uma correção de código associada.
 
 > [!NOTE]
-> A opção de menu **analisar**  > **executar análise de código** aplica-se somente à análise herdada.
+> A opção de menu **analisar** > **executar análise de código** aplica-se somente à análise herdada.
 
 Para diferenciar as violações dos analisadores de código e da análise herdada no Lista de Erros, examine a coluna de **ferramentas** . Se o valor da Ferramenta corresponder a um dos assemblies do analisador no **Gerenciador de Soluções** – por exemplo, **Microsoft.CodeQuality.Analyzers** – a violação será proveniente de um analisador de código. Caso contrário, a violação será proveniente da análise herdada.
 
@@ -85,7 +85,7 @@ A imagem a seguir mostra a saída da compilação de linha de comando da criaç�
 
 Você não pode configurar a severidade de regras de analisadores que foram instalados como uma extensão do Visual Studio. Para configurar a [gravidade da regra](../code-quality/use-roslyn-analyzers.md#rule-severity), instale os analisadores como um pacote NuGet.
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
 
 > [!div class="nextstepaction"]
 > [Instalar analisadores de código no Visual Studio](../code-quality/install-roslyn-analyzers.md)
@@ -93,7 +93,7 @@ Você não pode configurar a severidade de regras de analisadores que foram inst
 > [!div class="nextstepaction"]
 > [Usar analisadores de código no Visual Studio](../code-quality/use-roslyn-analyzers.md)
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Perguntas frequentes sobre analisadores](analyzers-faq.md)
 - [Gravar seu próprio analisador de código](../extensibility/getting-started-with-roslyn-analyzers.md)

@@ -5,12 +5,12 @@ author: seaniyer
 ms.author: seiyer
 ms.date: 11/19/2019
 ms.topic: reference
-ms.openlocfilehash: 3bf61c1ecbed5a3da1fe7ec0bcf9c6d4b7580b8d
-ms.sourcegitcommit: 0b90e1197173749c4efee15c2a75a3b206c85538
+ms.openlocfilehash: 57d956a426e791fcc84d5972f564cd554d6e72f8
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2019
-ms.locfileid: "74903988"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75406101"
 ---
 # <a name="how-to-increase-the-chances-of-a-performance-issue-being-fixed"></a>Como aumentar as chances de um problema de desempenho ser corrigido
 
@@ -39,6 +39,8 @@ Descritos abaixo estão os problemas que são difíceis de diagnosticar sem bons
 -   [Problemas de lentidão:](#slowness-and-high-cpu-issues) Qualquer ação específica no VS é mais lenta do que o desejado
 
 -   [Alta CPU:](#slowness-and-high-cpu-issues) Períodos estendidos de alto uso inesperado da CPU
+
+-   [Problemas fora do processo:](#out-of-process-issues) Um problema causado por um processo de satélite do Visual Studio
 
 ## <a name="crashes"></a>Falhas
 Uma falha ocorre quando o processo (Visual Studio) termina inesperadamente.
@@ -172,7 +174,24 @@ Não anexe diretamente rastreamentos de desempenho a itens de comentários exist
 
 Os recursos de coleta de rastreamento no relatório-uma ferramenta de problema são suficientes para a maioria dos cenários. Mas há ocasiões em que mais controle sobre a coleta de rastreamento é necessário (por exemplo, Trace com um tamanho de buffer maior), caso em que PerfView é uma ótima ferramenta a ser usada. As etapas para registrar manualmente o rastreamento de desempenho usando a ferramenta PerfView podem ser encontradas na página [gravando rastreamentos de desempenho com Perfview](https://github.com/dotnet/roslyn/wiki/Recording-performance-traces-with-PerfView) .
 
-## <a name="see-also"></a>Consulte também
+## <a name="out-of-process-issues"></a>Problemas fora do processo
+
+> [!NOTE]
+> A partir do Visual Studio 2019 versão 16,3, os logs fora do processo são anexados automaticamente aos comentários enviados usando o relatório uma ferramenta problemática. No entanto, se o problema for reproduzido diretamente, seguir as etapas a seguir ainda poderá ajudar a adicionar informações adicionais para ajudar a diagnosticar melhor o problema.
+
+Há vários processos de satélite que são executados paralelamente ao Visual Studio e fornecem diversos recursos de fora do processo principal do Visual Studio. Se ocorrer um erro em um desses processos de satélite, ele geralmente é visto no lado do Visual Studio como um ' StreamJsonRpc. RemoteInvocationException ' ou um ' StreamJsonRpc. ConnectionLostException '.
+
+O que torna esses tipos de problemas mais acionáveis é fornecer logs adicionais que podem ser coletados seguindo estas etapas:
+
+1.  Se esse for um problema diretamente reproduzível, comece excluindo a pasta **% Temp%/servicehub/logs** Se você não puder reproduzir esse problema, mantenha essa pasta intacta e ignore os seguintes marcadores:
+
+    -   Definir a variável de ambiente global **ServiceHubTraceLevel** como **All**
+    -   Reproduza o problema.
+
+2.  Baixe a ferramenta de coleta de log de Microsoft Visual Studio e .NET Framework [aqui](https://aka.ms/vscollect).
+3.  Execute a ferramenta. Isso gera um arquivo zip para **% Temp%/vslogs.zip**. Anexe esse arquivo aos seus comentários.
+
+## <a name="see-also"></a>Veja também
 
 * [Opções de comentários do Visual Studio](../ide/feedback-options.md)
 * [Relatar um problema com o Visual Studio para Mac](/visualstudio/mac/report-a-problem)

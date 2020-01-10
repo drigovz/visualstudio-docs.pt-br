@@ -10,19 +10,19 @@ helpviewer_keywords:
 - list of domains, locations, URLs, Visual Studio
 - proxy errors, Visual Studio
 ms.assetid: ''
-author: TerryGLee
-ms.author: tglee
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: f1b928d04ae581b0df04ab74f3a756d359abc06f
-ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
+ms.openlocfilehash: 44f18e64db08efa848c498f8956d61a79c24846d
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73713953"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594455"
 ---
 # <a name="troubleshoot-network-related-errors-when-you-install-or-use-visual-studio"></a>Solucionar erros relacionados à rede ao instalar ou usar o Visual Studio
 
@@ -139,7 +139,7 @@ Você pode encontrar essa mensagem de erro ao usar um bootstrapper do Visual Stu
 
 Aqui está o motivo pelo qual esse erro pode ocorrer: uma unidade de rede mapeada ou um compartilhamento [UNC](/dotnet/standard/io/file-path-formats#unc-paths) está vinculado ao token de acesso do usuário. Quando o UAC está habilitado, dois [tokens de acesso](/windows/win32/secauthz/access-tokens) de usuário são criados: um *com* acesso de administrador e outro *sem* acesso de administrador. Quando uma unidade de rede ou compartilhamento é criado, o token de acesso atual do usuário é vinculado a ele. Como o bootstrapper deve ser executado como administrador, ele não poderá acessar a unidade de rede ou compartilhar se a unidade ou o compartilhamento não estiver vinculado a um token de acesso de usuário que tenha acesso de administrador.
 
-### <a name="to-fix-this-error"></a>Para corrigir esse erro
+### <a name="to-fix-this-error"></a>Para corrigir o erro
 
 Você pode usar o comando `net use` ou pode alterar a configuração de Política de Grupo do UAC. Para obter mais informações sobre essas soluções alternativas e como implementá-las, consulte os seguintes artigos de suporte da Microsoft:
 
@@ -148,7 +148,7 @@ Você pode usar o comando `net use` ou pode alterar a configuração de Polític
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 * [Instalar e usar o Visual Studio atrás de um firewall ou servidor proxy](install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md)
 * [Guia do administrador do Visual Studio](visual-studio-administrator-guide.md)

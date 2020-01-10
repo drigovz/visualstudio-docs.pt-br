@@ -13,17 +13,17 @@ helpviewer_keywords:
 - peek definition
 - go to line
 - go to
-author: mikadumont
-ms.author: midumont
+author: TerryGLee
+ms.author: tglee
 manager: tglee
 ms.workload:
 - multiple
-ms.openlocfilehash: f5348fc0c36435e5760f3967a7e6c9be2aecb1b7
-ms.sourcegitcommit: b04c603ce73b993d042ebdf7f3722cf4fe2ef7f4
+ms.openlocfilehash: 0216a71b675473d54aec9738ea7bdc85b7643841
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74316462"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585815"
 ---
 # <a name="navigate-code"></a>Navegue pelos códigos
 
@@ -163,7 +163,7 @@ Você pode usar a barra de rolagem avançada em uma janela de código para obter
 
 Você pode localizar informações sobre o código específico, como alterações e quem fez essas alterações, referências, bugs, itens de trabalho, revisões de código e status de teste de unidade ao usar o CodeLens no editor de código. O CodeLens funciona como uma exibição de alerta quando você usa o Visual Studio Enterprise com o Team Foundation Server. Consulte [Localizar alterações de código e outros históricos](../ide/find-code-changes-and-other-history-with-codelens.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Recursos do Editor de Códigos](../ide/writing-code-in-the-code-and-text-editor.md)
 - [Exibir a hierarquia de chamada](../ide/reference/call-hierarchy.md)

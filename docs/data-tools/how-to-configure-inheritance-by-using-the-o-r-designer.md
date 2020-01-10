@@ -3,17 +3,17 @@ title: Como configurar a herança usando o Designer Relacional de Objetos
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: e594af12-e777-434a-bc08-7dd2dac84cdc
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: ddd3d8b25c6e215302af8e0b40b5a971f5f4aa39
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 64a29eb3ebb1a5366eb9aaced1b5c228832fe71e
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72641924"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586504"
 ---
 # <a name="how-to-configure-inheritance-by-using-the-or-designer"></a>Como configurar a herança usando o Designer Relacional de Objetos
 O **Object Relational Designer** (**o/R Designer**) dá suporte ao conceito de herança de tabela única, pois ela geralmente é implementada em sistemas relacionais. Na herança de tabela única, há uma única tabela de banco de dados que contém campos para informações pai e informações filho. Com os dados relacionais, uma coluna de discriminador contém o valor que determina qual classe qualquer registro pertence.
@@ -35,7 +35,7 @@ Criar um modelo de objeto que usar herança (e corresponde a dados relacionais) 
     > [!NOTE]
     > Clique no item de **Herança** em **Caixa de Ferramentas** e solte o botão do mouse, clique na segunda cópia de classe que você criou na etapa 3 e depois clique na primeira classe que você criou na etapa 2. A seta na linha de herança aponta para a primeira classe.
 
-5. Em cada classe, excluir todas as propriedades do objeto que você não deseja que apareça e que não são usadas para associações. Você receberá um erro se tentar excluir as propriedades de objeto usadas para associações: [a propriedade \<property nome > não pode ser excluída porque está participando da associação \<association nome >](../data-tools/the-property-property-name-cannot-be-deleted-because-it-is-participating-in-the-association-association-name.md).
+5. Em cada classe, excluir todas as propriedades do objeto que você não deseja que apareça e que não são usadas para associações. Você receberá um erro se tentar excluir as propriedades de objeto usadas para associações: [a propriedade \<nome da propriedade > não pode ser excluída porque está participando da associação \<nome da associação >](../data-tools/the-property-property-name-cannot-be-deleted-because-it-is-participating-in-the-association-association-name.md).
 
     > [!NOTE]
     > Como uma classe derivada herda as propriedades definidas na sua classe base, as mesmas colunas não podem ser definidas em cada classe. (As colunas são implementadas como propriedades.) Você pode habilitar a criação de colunas na classe derivada definindo o modificador de herança na propriedade na classe base. Para obter mais informações, consulte [noções básicas de herança (Visual Basic)](/dotnet/visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics).
@@ -48,9 +48,9 @@ Criar um modelo de objeto que usar herança (e corresponde a dados relacionais) 
 
 9. Defina a propriedade **valor do discriminador de classe base** como o valor que designa o registro como um tipo base. (Esse é o valor que é armazenado na coluna discriminador e é usado para designar a classe base.)
 
-10. Opcionalmente, você pode também definir a propriedade de **Padrão de Herança** para designar um tipo em uma hierarquia de herança que é usada para carregar as linhas que não correspondem nenhum código de herança definido. Em outras palavras, se um registro tiver um valor em sua coluna discriminadora que não corresponda ao valor no **valor discriminador da classe derivada** ou nas propriedades do **valor discriminador da classe base** , o registro será carregado no tipo designado como o  **Padrão de herança**.
+10. Opcionalmente, você pode também definir a propriedade de **Padrão de Herança** para designar um tipo em uma hierarquia de herança que é usada para carregar as linhas que não correspondem nenhum código de herança definido. Em outras palavras, se um registro tiver um valor em sua coluna discriminadora que não corresponda ao valor no **valor discriminador da classe derivada** ou nas propriedades do **valor discriminador da classe base** , o registro será carregado no tipo designado como **padrão de herança**.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Ferramentas do LINQ to SQL no Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [Passo a passo: criando classes LINQ to SQL (Designer Relacional de Objetos)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)

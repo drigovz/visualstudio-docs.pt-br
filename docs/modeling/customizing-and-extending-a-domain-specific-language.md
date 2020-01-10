@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language Tools, creating solutions
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bd1e3c3769f30806f7430bd32ddcb82db378093d
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 9040e65d3e9acce101ee6b481c2cd27d24285169
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72984279"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75597159"
 ---
 # <a name="customize-and-extend-a-domain-specific-language"></a>Personalizar e estender uma linguagem específica de domínio
 
@@ -41,7 +41,7 @@ O Visual Studio Modeling VMSDK (SDK de modelagem e visualização) fornece vári
 |Definir uma imagem de plano de fundo em qualquer forma|Substitua InitializeInstanceResources () para adicionar um ImageField ancorado.|
 |Aninhe formas em qualquer profundidade|Configure uma árvore de incorporação recursiva. Defina BoundsRules para conter as formas.|
 |Anexe conectores em pontos fixos no limite de um elemento.|Defina elementos de terminal inseridos, representados por portas pequenas no diagrama. Use BoundsRules para corrigir as portas em vigor. Consulte o exemplo de diagrama de circuito na [visualização e no SDK de modelagem](https://code.msdn.microsoft.com/Visualization-and-Modeling-313535db).|
-|O campo de texto exibe um valor derivado de outros valores.|Mapeie o decorador de texto para uma propriedade de domínio de armazenamento calculada ou personalizada. Para obter mais informações, consulte [Propriedades de armazenamento calculadas e personalizadas](../modeling/calculated-and-custom-storage-properties.md).|
+|O campo de texto exibe um valor derivado de outros valores.|Mapeie o decorador de texto para uma propriedade de domínio de armazenamento calculada ou personalizada. Para obter mais informações, consulte [Calculated e propriedades de armazenamento personalizado](../modeling/calculated-and-custom-storage-properties.md).|
 |Propagar alterações entre elementos de modelo ou entre formas|Consulte [validação em uma linguagem específica de domínio](../modeling/validation-in-a-domain-specific-language.md).|
 |Propague alterações para recursos como outras extensões do Visual Studio fora da loja.|Consulte [manipuladores de eventos propagar alterações fora do modelo](../modeling/event-handlers-propagate-changes-outside-the-model.md).|
 |Janela de Propriedades exibe as propriedades de um elemento relacionado.|Configure o encaminhamento de propriedade. Consulte [Personalizando a janela Propriedades](../modeling/customizing-the-properties-window.md).|
@@ -51,9 +51,9 @@ O Visual Studio Modeling VMSDK (SDK de modelagem e visualização) fornece vári
 |Habilitar copiar, recortar e colar|Defina a propriedade **habilitar copiar colar** do nó do **Editor** no Gerenciador de DSL.|
 |Copie links de referência e seus destinos sempre que um elemento for copiado. Por exemplo, copie os comentários anexados a um item.|Defina a propriedade de **cópia propagada** da função de origem (representada pela linha em um lado da relação de domínio no diagrama de definição de DSL).<br /><br /> Escreva o código para substituir ProcessOnCopy para obter efeitos mais complexos.<br /><br /> Consulte [Personalizando o comportamento de cópia](../modeling/customizing-copy-behavior.md).|
 |Excluir, repai ou vincular novamente os elementos relacionados quando um elemento é excluído.|Defina o valor de **exclusão de propagações** de uma função de relação. Para efeitos mais complexos, substitua `ShouldVisitRelationship` e `ShouldVisitRolePlayer` métodos na classe `MyDslDeleteClosure`, definidos em **DomainModel.cs**.|
-|Preserve o layout de forma e a aparência em copiar e arrastar e soltar.|Adicione as formas e os conectores ao `ElementGroupPrototype` copiado. O método mais conveniente para substituir é `ElementOperations.CreateElementGroupPrototype()`<br /><br /> Consulte [Personalizando o comportamento de cópia](../modeling/customizing-copy-behavior.md).|
-|Cole formas em um local escolhido, como a posição atual do cursor.|Substitua `ClipboardCommandSet.ProcessOnCopy()` para usar a versão específica do local do `ElementOperations.Merge().` consulte [Personalizando o comportamento de cópia](../modeling/customizing-copy-behavior.md).|
-|Criar links adicionais ao colar|Substituir ClipboardCommandSet. ProcessOnPasteCommand ()|
+|Preserve o layout de forma e a aparência em copiar e arrastar e soltar.|Adicione as formas e os conectores ao `ElementGroupPrototype`copiado. O método mais conveniente para substituir é `ElementOperations.CreateElementGroupPrototype()`<br /><br /> Consulte [Personalizando o comportamento de cópia](../modeling/customizing-copy-behavior.md).|
+|{1&gt;Cole formas em um local escolhido, como a posição atual do cursor.&lt;1}|Substitua `ClipboardCommandSet.ProcessOnCopy()` para usar a versão específica do local do `ElementOperations.Merge().` consulte [Personalizando o comportamento de cópia](../modeling/customizing-copy-behavior.md).|
+|Criar links adicionais ao colar|Override ClipboardCommandSet.ProcessOnPasteCommand()|
 |Habilitar arrastar e soltar deste diagrama, outras DSLs e elementos do Windows|Consulte [como: adicionar um manipulador de arrastar e soltar](../modeling/how-to-add-a-drag-and-drop-handler.md)|
 |Permite que uma forma ou ferramenta seja arrastada para uma forma filho, como uma porta, como se ela fosse arrastada para o pai.|Defina uma diretiva de mesclagem de elementos na classe de objeto de destino para encaminhar o objeto Descartado para o pai. Consulte [Personalizando a criação e movimentação de elementos](../modeling/customizing-element-creation-and-movement.md).|
 |Permite que uma forma ou ferramenta seja arrastada para uma forma e tenha links ou objetos adicionais criados. Por exemplo, para permitir que um comentário seja descartado em um item ao qual ele será vinculado.|Defina uma diretiva de mesclagem de elementos na classe de domínio de destino e defina os links a serem gerados. Em casos complexos, você pode adicionar código personalizado. Consulte [Personalizando a criação e movimentação de elementos](../modeling/customizing-element-creation-and-movement.md).|
@@ -68,7 +68,7 @@ O Visual Studio Modeling VMSDK (SDK de modelagem e visualização) fornece vári
 |Integre várias DSLs para que elas funcionem como parte de um aplicativo.|Consulte [integrando modelos usando o Visual Studio ModelBus](../modeling/integrating-models-by-using-visual-studio-modelbus.md).|
 |Permita que sua DSL seja estendida por terceiros e controle a extensão.|[Estender a DSL usando MEF](../modeling/extend-your-dsl-by-using-mef.md)<br /><br /> [Compartilhando classes entre DSLs por meio de uma biblioteca de DSLs](../modeling/sharing-classes-between-dsls-by-using-a-dsl-library.md)<br /><br /> [Definindo uma política de bloqueio para criar segmentos somente leitura](../modeling/defining-a-locking-policy-to-create-read-only-segments.md)|
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Como definir uma linguagem específica de domínio](../modeling/how-to-define-a-domain-specific-language.md)
 - [Escrevendo código para personalizar uma linguagem específica de domínio](../modeling/writing-code-to-customise-a-domain-specific-language.md)

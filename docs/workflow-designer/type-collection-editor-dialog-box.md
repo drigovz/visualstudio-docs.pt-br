@@ -5,17 +5,17 @@ ms.topic: reference
 f1_keywords:
 - TypeCollectionEditor.UI
 ms.assetid: 63cdea6b-bca2-4c06-b8b4-c8faabd40726
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a0a9bf604749524d76b8046d60de75d4b5844cc4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 023d049c5256abe6212dd65df78cd67151be94a2
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649789"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593051"
 ---
 # <a name="type-collection-editor-dialog-box"></a>Digite a caixa de diálogo Editor de Coleção
 
@@ -25,7 +25,7 @@ Para obter mais informações, consulte [tipos conhecidos de contrato de dados](
 
 A tabela a seguir descreve os elementos da interface do usuário da caixa de diálogo de **coleção de tipos** .
 
-|Elemento da Interface do Usuário|Descrição|
+|Elemento da interface|Descrição|
 |-|-----------------|
 |**Lista de Tipos**|Uma lista de tipos que foram adicionados ou removidos.|
 

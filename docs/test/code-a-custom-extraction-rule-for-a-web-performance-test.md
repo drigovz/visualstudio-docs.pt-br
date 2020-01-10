@@ -10,15 +10,15 @@ ms.assetid: 6bcc5712-6cc6-4f59-8933-6e8078318c45
 dev_langs:
 - CSharp
 - VB
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9aeb80d348e31de0934d515754c59346fac3c2ea
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 92cce705135daa8bc54a7fab301cf5dcd8cf96d6
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72665259"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591171"
 ---
 # <a name="code-a-custom-extraction-rule-for-a-web-performance-test"></a>Codificar uma regra de extração personalizada para um teste de desempenho Web
 
@@ -206,7 +206,7 @@ End Namespace
 
 O método <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule.Extract*> contém a funcionalidade principal de uma regra de extração. O método <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule.Extract*> no exemplo anterior usa um <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionEventArgs> que fornece a resposta gerada pela solicitação que essa regra de extração cobre. A resposta contém um <xref:Microsoft.VisualStudio.TestTools.WebTesting.HtmlDocument> que contém todos os marcadores na resposta. Os marcadores de entrada são filtrados no <xref:Microsoft.VisualStudio.TestTools.WebTesting.HtmlDocument>. Cada marcação de entrada é examinada quanto a um atributo chamado `name`, cujo valor é igual àquele fornecido pelo usuário para a propriedade `Name`. Se uma marcação com esse atributo correspondente for encontrada, será feita uma tentativa de extrair um valor contido no atributo `value`, se um atributo de valor existir. Se existir, o nome e o valor do marcador serão extraídos e adicionados ao contexto de teste de desempenho na Web. A regra de extração é aprovada.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule>
 - <xref:Microsoft.VisualStudio.TestTools.WebTesting.Rules>

@@ -8,26 +8,26 @@ helpviewer_keywords:
 - Domain-Specific Language Tools, walkthroughs
 - walkthroughs [Domain-Specific Language Tools], creating domain-specific language
 - Domain-Specific Language Tools, creating solutions
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f6d4a19143ccde160a455a8247d10e5cc391e78c
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 175da19782927f8c84b9fae0e6d9820a22bd891a
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985120"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594663"
 ---
 # <a name="how-to-create-a-domain-specific-language-solution"></a>Como criar uma solução de linguagem específica do domínio
 Uma DSL (linguagem específica do domínio) é criada usando uma solução especializada do Visual Studio.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>{1&gt;{2&gt;Pré-requisitos&lt;2}&lt;1}
 
 Para poder iniciar este procedimento, instale estes componentes:
 
-- Visual Studio
+- {1&gt;Visual Studio&lt;1}
 - SDK do Visual Studio (instalado como parte da carga de trabalho de **desenvolvimento de extensão do Visual Studio** )
 - SDK de modelagem (instalado como um componente do Visual Studio)
 
@@ -116,7 +116,7 @@ O padrão é um nome composto por seus nomes de produtos e da empresa.
 
  Para obter mais informações sobre nomes fortes, consulte [criando e usando assemblies de nome forte](/dotnet/standard/assembly/create-use-strong-named).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Como definir uma linguagem específica de domínio](../modeling/how-to-define-a-domain-specific-language.md)
 - [Glossário das Ferramentas de Linguagem Específica de Domínio](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

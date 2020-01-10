@@ -3,17 +3,17 @@ title: Usar procedimentos armazenados em LINQ to SQL para atualizar dados (O/R D
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: e88224ab-ff61-4a3a-b6b8-6f3694546cac
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 019bf6b115fc526e39a3bc65bd9d0607c1a976db
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8028171cf3255de3484bb89a374bfc22a2625b1a
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648399"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586543"
 ---
 # <a name="how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-or-designer"></a>Como atribuir procedimentos armazenados para executar atualizações, inserções e exclusões (Designer Relacional de Objetos)
 
@@ -45,7 +45,7 @@ Por padrão, a lógica para atualizar um banco de dados (inserções, atualizaç
 
 5. Na janela **Propriedades**, selecione o comando a ser substituído (**Insert**, **Update** ou **Delete**).
 
-6. Clique nas reticências (...) ao lado das palavras **Usar Tempo de Execução** para abrir a caixa de diálogo **Configurar Comportamento**.
+6. Clique nas reticências (...) ao lado das palavras **Usar Runtime** para abrir a caixa de diálogo **Configurar Comportamento**.
 
 7. Selecione **Personalizar**.
 
@@ -61,9 +61,9 @@ Por padrão, a lógica para atualizar um banco de dados (inserções, atualizaç
     > [!NOTE]
     > Você pode continuar a configurar o comportamento para cada combinação de classe e comportamento desde que você clique em **aplicar** depois de fazer cada alteração. Se você alterar a classe ou o comportamento antes de clicar em **aplicar**, uma caixa de diálogo de aviso será exibida e lhe fornecerá a oportunidade de aplicar as alterações.
 
-Para voltar a usar a lógica padrão em tempo de execução para atualizações, clique nas reticências ao lado do comando **Insert**, **Update** ou **Delete**, na janela **Propriedades**, e selecione **Usar tempo de execução** na caixa de diálogo **Configurar Comportamento**.
+Para voltar a usar a lógica padrão em runtime para atualizações, clique nas reticências ao lado do comando **Insert**, **Update** ou **Delete**, na janela **Propriedades**, e selecione **Usar runtime** na caixa de diálogo **Configurar Comportamento**.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Ferramentas do LINQ to SQL no Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [Métodos DataContext](../data-tools/datacontext-methods-o-r-designer.md)

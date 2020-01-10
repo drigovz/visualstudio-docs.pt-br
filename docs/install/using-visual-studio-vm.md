@@ -10,21 +10,21 @@ helpviewer_keywords:
 - virtual machine
 - installation
 - visual studio
-author: PhilLee-MSFT
-ms.author: tglee
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: dc5fc9642401b1c90f079cae714fca9e214d6d9c
-ms.sourcegitcommit: 0b90e1197173749c4efee15c2a75a3b206c85538
+ms.openlocfilehash: a659d01edd62defc7f49d05058e0c9e1d1df554b
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2019
-ms.locfileid: "74903846"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590911"
 ---
-# <a id="top"> </a> Imagens do visual Studio no Azure
+# <a id="top"></a> Imagens do Visual Studio no Azure
 
 Usar o Visual Studio em uma VM (máquina virtual) do Azure pré-configurada é a maneira mais fácil e rápida de partir do nada para um ambiente de desenvolvimento em execução. Há imagens do sistema com configurações diferentes do Visual Studio disponíveis no [Azure Marketplace](https://azuremarketplace.microsoft.com/marketplace/apps/category/compute?filters=virtual-machine-images%3Bmicrosoft%3Bwindows&page=1&subcategories=application-infrastructure).
 

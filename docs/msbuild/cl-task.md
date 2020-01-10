@@ -16,17 +16,17 @@ helpviewer_keywords:
 - MSBuild (C++), CL task
 - CL task (MSBuild (C++))
 ms.assetid: 651ba971-b755-4f03-a549-4816beb3cc0d
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f7704ebee49af51c5cbeff118d2eed8e08ace30
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: effc1b51352052f4e11e42298f9e9567db30d8f1
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747352"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593350"
 ---
 # <a name="cl-task"></a>tarefa CL
 Encapsula a ferramenta de C++ compilador da Microsoft, *CL. exe*. O compilador produz arquivos executáveis ( *.exe*), arquivos de biblioteca de vínculo dinâmico ( *.dll*) ou arquivos de módulo de código ( *.netmodule*). Para obter mais informações, confira [Opções do compilador](/cpp/build/reference/compiler-options).
@@ -800,5 +800,5 @@ Encapsula a ferramenta de C++ compilador da Microsoft, *CL. exe*. O compilador p
 
    Para obter mais informações, consulte os parâmetros **TLogReadFiles** e **TLogWriteFiles** nesta tabela.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 - [Referência de tarefas](../msbuild/msbuild-task-reference.md)

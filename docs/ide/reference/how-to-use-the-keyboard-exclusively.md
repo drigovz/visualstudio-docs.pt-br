@@ -11,17 +11,17 @@ helpviewer_keywords:
 - dialog boxes [Visual Studio], shortcut keys
 - accessibility [Visual Studio]
 ms.assetid: d71a4cc1-d352-4164-8538-3f9fa070a331
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 15cb030bc8be30d147a7d2e73dbeee6d3fca046a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3b1beb2ccb6b3e3e2b74ed7deaf2f31443ee2466
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650800"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75569017"
 ---
 # <a name="how-to-use-the-keyboard-exclusively"></a>Como usar exclusivamente o teclado
 
@@ -51,7 +51,7 @@ Para adicionar um controle na Caixa de Ferramentas a um formulário ou designer 
 
 4. Depois de selecionar o controle, use a tecla **Enter** para adicionar o controle ao formulário ou ao designer.
 
-## <a name="dialog-box-options"></a>Opções de caixa de diálogo
+## <a name="dialog-box-options"></a>Opções da caixa de diálogo
 
 Para percorrer as opções em uma caixa de diálogo e alterar as configurações de opção usando apenas o teclado:
 
@@ -97,7 +97,7 @@ Para percorrer as opções em uma caixa de diálogo e alterar as configurações
 
    A janela de ferramentas é encaixada no novo local de encaixe.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 * [Identificando e personalizando atalhos de teclado](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)
 * [Dicas e truques de acessibilidade](../../ide/reference/accessibility-tips-and-tricks.md)

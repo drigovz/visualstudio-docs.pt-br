@@ -2,17 +2,17 @@
 title: Criar um teste de IU codificado
 ms.date: 11/04/2016
 ms.topic: conceptual
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-author: jillre
-ms.openlocfilehash: 268d170926e3a60ba0aa5131795f22bb31cd2ba9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+author: mikejo5000
+ms.openlocfilehash: f1e22a39035e5d3500f4dd45481319e1daecfa04
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659642"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592055"
 ---
 # <a name="walkthrough-create-edit-and-maintain-a-coded-ui-test"></a>Passo a passo: Criar, editar e manter um teste de IU codificado
 
@@ -178,7 +178,7 @@ Neste passo a passo, você saberá como criar, editar e manter um teste de IU co
 3. Para corrigir esse problema, você pode fazer o teste de IU codificado esperar o controle CheckBox ser habilitado antes de continuar nessa linha usando o método `WaitForControlEnabled()`.
 
     > [!WARNING]
-    > Não modifique o arquivo *UIMap.Designer.cs*. Quaisquer alterações que você fizer no código serão substituídas sempre que você gerar código usando o **UIMap – Construtor de Teste de IU Codificado**. Se você precisar modificar um método registrado, copie-o para o arquivo *UIMap.cs* e renomeie-o. O arquivo *UIMap.cs* pode ser usado para substituir métodos e propriedades no arquivo *UIMapDesigner.cs*. É necessário remover a referência ao método original no arquivo *CodedUITest.cs* e substituí-la pelo nome do método renomeado.
+    > Não modifique o arquivo *UIMap.Designer.cs*. Quaisquer alterações que você fizer no código serão substituídas sempre que você gerar código usando o **UIMap – Construtor de Teste de IU Codificado**. Se precisar modificar um método registrado, copie-o para o arquivo *UIMap.cs* e renomeie-o. O arquivo *UIMap.cs* pode ser usado para substituir métodos e propriedades no arquivo *UIMapDesigner.cs*. É necessário remover a referência ao método original no arquivo *CodedUITest.cs* e substituí-la pelo nome do método renomeado.
 
 4. No **Gerenciador de Soluções**, localize *UIMap.uitest* em seu projeto de teste de IU codificado.
 
@@ -331,13 +331,13 @@ Neste passo a passo, você saberá como criar, editar e manter um teste de IU co
 
 ## <a name="videos"></a>Vídeos
 
-![link para vídeo](../data-tools/media/playvideo.gif) [Introdução aos testes de IU codificados](https://onedrive.live.com/?id=2DB0E1EFE1C1D3B8%21110&cid=2DB0E1EFE1C1D3B8)
+link de ![para vídeo](../data-tools/media/playvideo.gif) [introdução aos testes de interface do usuário codificados](https://onedrive.live.com/?id=2DB0E1EFE1C1D3B8%21110&cid=2DB0E1EFE1C1D3B8)
 
-## <a name="faq"></a>Perguntas Frequentes
+## <a name="faq"></a>Perguntas frequentes
 
 [Perguntas frequentes sobre testes de IU codificados](https://social.msdn.microsoft.com/Forums/vsautotest/3a74dd2c-cef8-4923-abbf-7a91f489e6c4/faqs)
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Usar a automação de interface do usuário para testar seu código](../test/use-ui-automation-to-test-your-code.md)
 - [Configurações e plataformas compatíveis para testes de IU codificados e gravações de ação](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
