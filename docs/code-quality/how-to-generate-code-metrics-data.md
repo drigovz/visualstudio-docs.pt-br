@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a71f507aa5ce524e01b2120594ace634056d0850
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: a43f11df65286e25d0ea19990fa56620695e69df
+ms.sourcegitcommit: aa302af53de342e75793bd05b10325939dc69b53
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587466"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75886437"
 ---
 # <a name="how-to-generate-code-metrics-data"></a>Como gerar dados de métricas de código
 
@@ -162,6 +162,63 @@ Build succeeded.
 
 A saída XML gerada tem o seguinte formato:
 
+::: moniker range=">=vs-2019"
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<CodeMetricsReport Version="1.0">
+  <Targets>
+    <Target Name="ConsoleApp20.csproj">
+      <Assembly Name="ConsoleApp20, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <Metrics>
+          <Metric Name="MaintainabilityIndex" Value="100" />
+          <Metric Name="CyclomaticComplexity" Value="1" />
+          <Metric Name="ClassCoupling" Value="1" />
+          <Metric Name="DepthOfInheritance" Value="1" />
+          <Metric Name="SourceLines" Value="11" />
+          <Metric Name="ExecutableLines" Value="1" />
+        </Metrics>
+        <Namespaces>
+          <Namespace Name="ConsoleApp20">
+            <Metrics>
+              <Metric Name="MaintainabilityIndex" Value="100" />
+              <Metric Name="CyclomaticComplexity" Value="1" />
+              <Metric Name="ClassCoupling" Value="1" />
+              <Metric Name="DepthOfInheritance" Value="1" />
+              <Metric Name="SourceLines" Value="11" />
+              <Metric Name="ExecutableLines" Value="1" />
+            </Metrics>
+            <Types>
+              <NamedType Name="Program">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="100" />
+                  <Metric Name="CyclomaticComplexity" Value="1" />
+                  <Metric Name="ClassCoupling" Value="1" />
+                  <Metric Name="DepthOfInheritance" Value="1" />
+                  <Metric Name="SourceLines" Value="7" />
+                  <Metric Name="ExecutableLines" Value="1" />
+                </Metrics>
+                <Members>
+                  <Method Name="void Program.Main(string[] args)" File="C:\source\repos\ConsoleApp20\ConsoleApp20\Program.cs" Line="7">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="100" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="1" />
+                      <Metric Name="SourceLines" Value="4" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                    </Metrics>
+                  </Method>
+                </Members>
+              </NamedType>
+            </Types>
+          </Namespace>
+        </Namespaces>
+      </Assembly>
+    </Target>
+  </Targets>
+</CodeMetricsReport>
+```
+::: moniker-end
+::: moniker range="vs-2017"
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <CodeMetricsReport Version="1.0">
@@ -212,6 +269,7 @@ A saída XML gerada tem o seguinte formato:
   </Targets>
 </CodeMetricsReport>
 ```
+::: moniker-end
 
 ### <a name="metricsexe"></a>Metrics.exe
 
@@ -253,13 +311,24 @@ Para obter mais informações, consulte [habilitar a geração de métricas de c
 
 ### <a name="previous-versions"></a>Versões anteriores
 
+::: moniker range=">=vs-2019"
+O Visual Studio 2015 incluía uma ferramenta de métricas de código de linha de comando que também era chamada *métricas. exe*. Esta versão anterior da ferramenta fazia uma análise binária, ou seja, uma análise baseada em assembly. A versão mais recente da ferramenta *Metrics. exe* analisa o código-fonte em vez disso. Como a ferramenta *métricas. exe* mais recente é baseada em código-fonte, os resultados das métricas de código de linha de comando podem ser diferentes daqueles gerados pelo IDE do Visual Studio e por versões anteriores do *Metrics. exe*. A partir do Visual Studio 2019, o IDE do Visual Studio analisa o código-fonte como a ferramenta de linha de comando e os resultados devem ser os mesmos.
+
+::: moniker-end
+::: moniker range="vs-2017"
 O Visual Studio 2015 incluía uma ferramenta de métricas de código de linha de comando que também era chamada *métricas. exe*. Esta versão anterior da ferramenta fazia uma análise binária, ou seja, uma análise baseada em assembly. Em vez disso, a nova ferramenta *Metrics. exe* analisa o código-fonte. Como a nova ferramenta *Metrics. exe* é baseada em código-fonte, os resultados das métricas de código de linha de comando são diferentes daqueles gerados pelo IDE do Visual Studio e por versões anteriores do *Metrics. exe*.
+::: moniker-end
 
 A nova ferramenta de métricas de código de linha de comando computa métricas mesmo na presença de erros de código-fonte, desde que a solução e o projeto possam ser carregados.
 
 #### <a name="metric-value-differences"></a>Diferenças de valor de métrica
 
+::: moniker range=">=vs-2019"
+A partir do Visual Studio 2019 versão 16,4 e Microsoft. CodeAnalysis. métricas (2.9.5), `SourceLines` e `ExecutableLines` substituir a métrica de `LinesOfCode` anterior. Para obter descrições das novas métricas, consulte [valores de métricas de código](../code-quality/code-metrics-values.md). A métrica de `LinesOfCode` está disponível no modo herdado.
+::: moniker-end
+::: moniker range="vs-2017"
 A métrica de `LinesOfCode` é mais precisa e confiável na nova ferramenta de métricas de código de linha de comando. Ele é independente de qualquer diferença de CodeGen e não é alterado quando o conjunto de ferramentas ou o tempo de execução é alterado. A nova ferramenta conta as linhas reais de código, incluindo comentários e linhas em branco.
+::: moniker-end
 
 Outras métricas como `CyclomaticComplexity` e `MaintainabilityIndex` usam as mesmas fórmulas que as versões anteriores de *métricas. exe*, mas a nova ferramenta conta o número de `IOperations` (instruções de origem lógica) em vez de instruções de Il (linguagem intermediária). Os números serão ligeiramente diferentes daqueles gerados pelo IDE do Visual Studio e por versões anteriores do *Metrics. exe*.
 

@@ -3,15 +3,15 @@ title: Tutorial de multicontêiner usando o Docker Compose & ASP.NET Core
 author: ghogen
 description: Saiba como usar vários contêineres com Docker Compose
 ms.author: ghogen
-ms.date: 02/21/2019
+ms.date: 01/10/2020
 ms.technology: vs-azure
 ms.topic: include
-ms.openlocfilehash: 298ac91a7e7cf89f7723a3fd8bb3e8056da798ba
-ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
+ms.openlocfilehash: ebc0d8efb0d78dda45bba06dba8a497287b3597d
+ms.sourcegitcommit: aa302af53de342e75793bd05b10325939dc69b53
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "75399750"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75886457"
 ---
 # <a name="tutorial-create-a-multi-container-app-with-docker-compose"></a>Tutorial: criar um aplicativo de vários contêineres com Docker Compose
 
@@ -114,7 +114,7 @@ Adicione um projeto à mesma solução e chame-o de *MyWebAPI*. Selecione **API*
         }
       ```
 
-    Com o .NET Core 3,1, você não precisa disso, pois você pode usar a API WeatherForecast que já está lá. No entanto, você precisa comentar a chamada para `UseHttpsRedirections` no método `Configure` em *Startup.cs*, pois esse código usa http não HTTPS para chamar a API da Web.
+    Com o .NET Core 3,1, você não precisa disso, pois você pode usar a API WeatherForecast que já está lá. No entanto, você precisa comentar a chamada para <xref:Microsoft.AspNetCore.Builder.HttpsPolicyBuilderExtensions.UseHttpsRedirection*> no método `Configure` em *Startup.cs*, pois esse código usa http, não HTTPS, para chamar a API da Web.
 
     ```csharp
                 //app.UseHttpsRedirection();
