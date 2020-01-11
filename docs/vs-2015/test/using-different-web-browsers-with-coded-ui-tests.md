@@ -8,19 +8,19 @@ ms.assetid: a859595f-6517-43f2-9d61-c706cb55a388
 caps.latest.revision: 25
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d9c86125d934c5165e3e8111fdd06631844ad1a6
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 8a5034a13771c0ea1f7b6dcd2e073ad02e838e07
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297965"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851214"
 ---
 # <a name="using-different-web-browsers-with-coded-ui-tests"></a>Usando navegadores diferentes com testes de interface do usuário codificada
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Os testes de IU codificados podem automatizar testes para aplicativos Web gravando os testes usando o Internet Explorer. Você pode personalizar o teste e executá-lo usando o Internet Explorer ou outros tipos de navegador para esses aplicativos Web.
 
- **Requisitos**
+ **Requirements**
 
 - Visual Studio Enterprise
 
@@ -95,7 +95,7 @@ Os testes de IU codificados podem automatizar testes para aplicativos Web gravan
 
     2. Para **exceções de Common Language Runtime**, desmarque **Sem tratamento do usuário**.
 
-## <a name="generate"></a> *Não vejo a opção para alterar BrowserWindow.CurrentBrowser no teste de IU codificado.*
+## <a name="generate"></a>*Não vejo a opção de alterar BrowserWindow. CurrentBrowser no teste de interface do usuário codificado.*
  Você pode usar uma versão do [!INCLUDE[vs2011_first](../includes/vs2011-first-md.md)] que não oferece suporte a testes de IU codificados usando vários navegadores da Web. Para usar tais testes de IU codificados, você precisa usar o Visual Studio Enterprise.
 
  *O que mais eu deveria saber?*
@@ -111,7 +111,7 @@ Os testes de IU codificados podem automatizar testes para aplicativos Web gravan
 
   **Dicas**
 
-- ![Dica](../test/media/tip.png "{1&gt;Dica&lt;1}") Você pode configurar a saída para incluir capturas de tela nos logs de interface do usuário codificados. Para fazer isso, você precisa definir algumas configurações no arquivo QTAgent32.exe.config. Por padrão, esse arquivo é instalado no seguinte local:
+- ![Dica](../test/media/tip.png "Dica") Você pode configurar a saída para incluir capturas de tela nos logs de interface do usuário codificados. Para fazer isso, você precisa definir algumas configurações no arquivo QTAgent32.exe.config. Por padrão, esse arquivo é instalado no seguinte local:
 
    **C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE**
 
@@ -139,17 +139,17 @@ Os testes de IU codificados podem automatizar testes para aplicativos Web gravan
  [Solucionar problemas de falhas de teste entre navegadores](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!182&authkey=!AEpS48i295B49FI)
 
 ### <a name="guidance"></a>{1&gt;Orientação&lt;1}
- [Testes de Entrega Contínua com o Visual Studio 2012 – Capítulo 2: Teste de Unidade: Testando o Interior](https://go.microsoft.com/fwlink/?LinkID=255188)
+ [Testes de Entrega Contínua com o Visual Studio 2012 – Capítulo 2: Teste de Unidade: Testando o Interior](https://msdn.microsoft.com/library/jj159340.aspx)
 
- [Teste de Entrega Contínua com o Visual Studio 2012 – Capítulo 5: Automatizar Testes do Sistema](https://go.microsoft.com/fwlink/?LinkID=255196)
+ [Teste de Entrega Contínua com o Visual Studio 2012 – Capítulo 5: Automatizar Testes do Sistema](https://msdn.microsoft.com/library/jj159335.aspx)
 
-### <a name="faq"></a>Perguntas Frequentes
- [Perguntas frequentes sobre testes de IU codificados – 1](https://go.microsoft.com/fwlink/?LinkID=230576)
+### <a name="faq"></a>Perguntas frequentes
+ [Perguntas frequentes sobre testes de IU codificados – 1](https://blogs.msdn.com/b/mathew_aniyan/archive/tags/faq/)
 
- [Perguntas frequentes sobre testes de IU codificados – 2](https://go.microsoft.com/fwlink/?LinkID=230578)
+ [Perguntas frequentes sobre testes de IU codificados – 2](https://social.msdn.microsoft.com/Forums/en-US/vsautotest/thread/3a74dd2c-cef8-4923-abbf-7a91f489e6c4)
 
 ### <a name="forum"></a>Fórum
- [Teste de automação da interface do usuário do Visual Studio (inclui IU codificada)](https://go.microsoft.com/fwlink/?LinkID=224497)
+ [Teste de automação da interface do usuário do Visual Studio (inclui IU codificada)](https://social.msdn.microsoft.com/Forums/en-US/vsautotest)
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
  [Use a automação da interface do usuário para testar suas](../test/use-ui-automation-to-test-your-code.md) [configurações e plataformas com suporte de código para testes de interface do usuário codificados e gravações de ação](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md) [analisando testes de IU codificados usando logs de teste de IU codificados](../test/analyzing-coded-ui-tests-using-coded-ui-test-logs.md)

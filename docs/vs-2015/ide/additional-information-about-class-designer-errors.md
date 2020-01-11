@@ -29,12 +29,12 @@ caps.latest.revision: 14
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 10eb94783abbd63ca152fbf73a544665199ba137
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: a095cd909dcd4d378fddc91c9151cf28e34a8ee5
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300283"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75852205"
 ---
 # <a name="additional-information-about-class-designer-errors"></a>Informações adicionais sobre erros do Designer de Classe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ O Designer de Classe não controla o local dos arquivos de origem, de forma que 
 
  [Trabalhar com código C++ Visual (Designer de classe)](../ide/working-with-visual-cpp-code-class-designer.md) inclui informações de solução de problemas C++ sobre como exibir em um diagrama de classe.
 
- O [Fórum do Designer de Classe do Visual Studio](https://go.microsoft.com/fwlink/?LinkId=160754) fornece um fórum para perguntas sobre o Designer de Classe.
+ O [Fórum do Designer de Classe do Visual Studio](https://social.msdn.microsoft.com/Forums/en-US/vsclassdesigner/threads?page=1) fornece um fórum para perguntas sobre o Designer de Classe.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
  [Projetando e exibindo classes e tipos](../ide/designing-and-viewing-classes-and-types.md)

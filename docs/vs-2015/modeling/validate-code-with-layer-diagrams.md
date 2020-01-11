@@ -21,12 +21,12 @@ caps.latest.revision: 84
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 596711c5c59738d5356437bb761e80caeddfbd6b
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 45b82ece15cfef4d313764027c0220453a6d4849
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74301355"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75845436"
 ---
 # <a name="validate-code-with-layer-diagrams"></a>Validar o código com diagramas de camada
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ Para garantir que o código não entre em conflito com seu design, valide seu c�
 
    Encontre o código ou as dependências que exijam trabalho quando você move o código para uma arquitetura diferente.
 
-  **Requisitos**
+  **Requirements**
 
 - {1&gt;Visual Studio&lt;1}
 
@@ -53,7 +53,7 @@ Para garantir que o código não entre em conflito com seu design, valide seu c�
 
   Para ver quais versões do Visual Studio oferecem suporte a esse recurso, consulte [suporte de versão para ferramentas de arquitetura e modelagem](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
-  É possível validar manualmente o código com base em um diagrama de camada aberto no Visual Studio ou em um prompt de comando. Também é possível validar o código automaticamente durante a execução de compilações locais ou do Team Foundation Build. Veja [vídeo do Channel 9: projete e valide sua arquitetura usando diagramas de camada](https://go.microsoft.com/fwlink/?LinkID=252073).
+  É possível validar manualmente o código com base em um diagrama de camada aberto no Visual Studio ou em um prompt de comando. Também é possível validar o código automaticamente durante a execução de compilações locais ou do Team Foundation Build. Veja [vídeo do Channel 9: projete e valide sua arquitetura usando diagramas de camada](https://s.ch9.ms/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Using-layer-diagrams-to-design-and-validate-your-architecture).
 
 > [!IMPORTANT]
 > Se você quiser executar a validação de camada com o Team Foundation Build, também deverá instalar a mesma versão do Visual Studio em seu servidor de compilação.
@@ -205,12 +205,12 @@ Para garantir que o código não entre em conflito com seu design, valide seu c�
 
 - [Personalizar o modelo de processo de compilação](https://msdn.microsoft.com/library/b94c58f2-ae6f-4245-bedb-82cd114f6039)
 
-- [Monitorar o progresso de uma compilação em execução](https://msdn.microsoft.com/library/e51e3bad-2d1d-4b7b-bfcc-c43439c6c8ef)
+- [Monitorar o andamento de uma compilação em execução](https://msdn.microsoft.com/library/e51e3bad-2d1d-4b7b-bfcc-c43439c6c8ef)
 
 ## <a name="TroubleshootingValidation"></a>Solucionar problemas de validação de camada
  A tabela a seguir descreve problemas na validação da camada e sua resolução. Esses problemas são diferentes dos erros resultantes de conflitos entre o código e o design. Para obter mais informações sobre esses erros, consulte [entender e resolver erros de validação de camada](#UnderstandingValidationErrors).
 
-|**Lo**|**Causa possível**|**Resolução**|
+|**Problema**|**Causa possível**|**Resolução**|
 |---------------|------------------------|--------------------|
 |Os erros de validação não ocorrem como esperado.|A validação não funciona em diagramas de camada copiados de outros diagramas de camada no Gerenciador de Soluções e que estejam no mesmo projeto de modelagem. Os diagramas de camada copiados dessa maneira contêm as mesmas referências do diagrama de camada original.|Adicione um novo diagrama de camada ao projeto de modelagem.<br /><br /> Copie os elementos do diagrama de camada de origem para o novo diagrama.|
 
@@ -227,7 +227,7 @@ Para garantir que o código não entre em conflito com seu design, valide seu c�
 
 |**Sintaxe**|**Descrição**|
 |----------------|---------------------|
-|*Artefaton*(*ArtifactTypeN*)|O *artefaton* é um artefato associado a uma camada no diagrama de camadas.<br /><br /> *ArtifactTypeN* é o tipo de *artefaton*, como uma **classe** ou um **método**, por exemplo:<br /><br /> MySolution.MyProject.MyClass.MyMethod(Method)|
+|*ArtifactN*(*ArtifactTypeN*)|O *artefaton* é um artefato associado a uma camada no diagrama de camadas.<br /><br /> *ArtifactTypeN* é o tipo de *artefaton*, como uma **classe** ou um **método**, por exemplo:<br /><br /> MySolution.MyProject.MyClass.MyMethod(Method)|
 |*NamespaceNameN*|O nome de um namespace.|
 |*LayerNameN*|O nome de uma camada no diagrama de camada.|
 |*DependencyType*|O tipo de relação de dependência entre *Artifact1* e *Artifact2*. Por exemplo, *Artifact1* tem uma relação de **chamadas** com *Artifact2*.|
@@ -243,5 +243,5 @@ Para garantir que o código não entre em conflito com seu design, valide seu c�
 
 ## <a name="security"></a>Segurança
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
  [Validar o sistema durante o desenvolvimento](../modeling/validate-your-system-during-development.md)

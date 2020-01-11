@@ -12,18 +12,18 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: 25bd88886b6bed447ec7d091543fccdb478db9c5
-ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
+ms.openlocfilehash: bda6d8e20064ab2197408db6b9a55a86325515e8
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72588878"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75846728"
 ---
-# <a name="install-cross-platform-mobile-development-with-c"></a>Instalar o desenvolvimento móvel de plataforma cruzada com oC++
+# <a name="install-cross-platform-mobile-development-with-c"></a>Instalar desenvolvimento de tecnologia móvel multiplataforma com C++
 
 Você pode usar C++ no Visual Studio para criar aplicativos de Área de Trabalho do Windows, aplicativos UWP (Plataforma Universal do Windows), aplicativos Linux e, agora, os aplicativos para iOS e Android. A carga de trabalho **Desenvolvimento móvel com C++** é um conjunto de componentes para instalação no Visual Studio que inclui modelos de plataforma cruzada do Visual Studio para iOS, Android e UWP. Ela instala as ferramentas e SDKs de plataforma cruzada que você precisa para começar rapidamente, sem a necessidade de localizar, baixar e configurá-los por conta própria. É possível usar essas ferramentas no Visual Studio para criar, editar, depurar e testar seus projetos de plataforma cruzada com facilidade. Este artigo descreve como instalar as ferramentas e o software de terceiros necessários para desenvolver aplicativos de plataforma cruzada no C++ usando o Visual Studio. Para obter uma visão geral, confira [Visual C++ para desenvolvimento móvel multiplataforma](https://visualstudio.microsoft.com/vs/features/cplusplus-mdd/)
 
-## <a name="requirements"></a>Requisitos
+## <a name="requirements"></a>Requisitos do
 
 ::: moniker range="vs-2017"
 
@@ -86,7 +86,7 @@ O instalador do Visual Studio inclui um **desenvolvimento móvel com C++ carga d
    > [!IMPORTANT]
    > Você deve reiniciar para certificar-se de que tudo esteja instalado corretamente.
 
-1. Abra o Visual Studio.
+1. {1&gt;Abra o Visual Studio.&lt;1}
 
 ## <a name="install-tools-for-ios"></a>Instalar as ferramentas para iOS
 
@@ -114,7 +114,7 @@ Na maioria dos casos, o Visual Studio detecta as configurações do software de 
 
 1. Escolha **OK** para salvar os locais de pasta da ferramenta personalizada.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Instalar e configurar ferramentas de build usando o iOS](install-and-configure-tools-to-build-using-ios.md)
-- [Visual C++ para desenvolvimento móvel multiplataforma](https://go.microsoft.com/fwlink/p/?LinkId=536383)
+- [Visual C++ para desenvolvimento móvel multiplataforma](https://visualstudio.microsoft.com/vs/features/cplusplus-mdd/)

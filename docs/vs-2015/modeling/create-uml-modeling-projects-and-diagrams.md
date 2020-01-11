@@ -25,12 +25,12 @@ caps.latest.revision: 50
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d5884dcd3f9e3cb8f1910d2e23ec80f910ed2fc9
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 52c55b2cfdf000d91a83071b53e8e9450187b720
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74301007"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75852029"
 ---
 # <a name="create-uml-modeling-projects-and-diagrams"></a>Criar projetos e diagramas de modelagem UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ Os modelos UML ajudam você a entender, discutir e criar sistemas de software. O
  Diagramas de modelagem UML e diagramas de camada só podem existir dentro de um projeto de modelagem. Cada projeto de modelagem contém um modelo UML compartilhado e vários diagramas UML. Cada diagrama é uma exibição parcial do modelo. O modelo UML contém todos os elementos nos diagramas UML e pode ser exibido usando o Gerenciador de modelos UML. Para obter informações sobre modelos e sua relação com diagramas, consulte [Editar diagramas e modelos UML](../modeling/edit-uml-models-and-diagrams.md). Para obter informações sobre como modelar projetos sob controle de versão, consulte [gerenciar modelos e diagramas sob controle de versão](../modeling/manage-models-and-diagrams-under-version-control.md) e [estruturar sua solução de modelagem](../modeling/structure-your-modeling-solution.md)
 
 > [!NOTE]
-> Há outro tipo de diagrama, o diagrama de classes do .NET, que é usado para visualizar o código do programa. Para obter mais informações, consulte [projetando e exibindo classes e tipos](https://go.microsoft.com/fwlink/?LinkId=142231).
+> Há outro tipo de diagrama, o diagrama de classes do .NET, que é usado para visualizar o código do programa. Para obter mais informações, consulte [projetando e exibindo classes e tipos](https://msdn.microsoft.com/library/ab7aty24.aspx).
 
 ## <a name="CreatingModelingDiagrams"></a>Criar um diagrama em um projeto de modelagem
  Para ver quais versões do Visual Studio oferecem suporte a esse recurso, consulte [suporte de versão para ferramentas de arquitetura e modelagem](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
@@ -129,7 +129,7 @@ Os modelos UML ajudam você a entender, discutir e criar sistemas de software. O
     > [!NOTE]
     > O projeto de modelagem contém uma pasta de definição de modelo chamada **ModelDefinition**.
 
-2. No menu **projeto** , clique em **Adicionar item existente**.
+2. No menu **Projeto** , clique em **Adicionar Item Existente**.
 
 3. Na caixa de diálogo **Adicionar item existente** , localize o arquivo de diagrama, selecione o arquivo e clique em **Adicionar**.
 
@@ -150,10 +150,10 @@ Os modelos UML ajudam você a entender, discutir e criar sistemas de software. O
 ## <a name="TroubleshootingModelingProjects"></a>Solucionando problemas de projetos e diagramas de modelagem
  A tabela a seguir descreve os problemas que podem ocorrer com a modelagem de projetos ou diagramas e como resolvê-los:
 
-|**Lo**|**Com**|**Resolução**|
+|**Problema**|**Com**|**Resolução**|
 |---------------|----------------|--------------------|
 |O projeto de modelagem não pode ser aberto ou carregado na solução.<br /><br /> A mensagem a seguir é exibida:<br /><br /> "Um ou mais projetos na solução não foram carregados corretamente. Consulte a Janela de Saída para obter detalhes. "<br /><br /> A janela saída exibe a seguinte mensagem:<br /><br /> "*ModelingProjectFilenameAndPath*. modelproj: erro: formato de GUID não reconhecido."|Um projeto de modelagem tem referências a projetos que têm o mesmo nome e estão na mesma solução.<br /><br /> Por exemplo, uma camada é vinculada a projetos que têm o mesmo nome e estão na mesma solução.|Use um editor de texto para abrir o arquivo de projeto de modelagem, remova as referências e tente abrir o projeto de modelagem novamente.<br /><br /> Para evitar esse problema, não adicione referências a projetos que tenham o mesmo nome. Verifique se os projetos têm nomes exclusivos.|
 |Os elementos estão ausentes de diagramas que são adicionados, copiados ou arrastados para outros projetos de modelagem ou para outros locais na solução.<br /><br /> - ou -<br /><br /> As seguintes mensagens são exibidas quando você tenta abrir um diagrama:<br /><br /> -"Algumas formas ou conectores no diagrama estão ausentes porque suas definições não existem neste projeto. As definições foram excluídas do modelo enquanto o diagrama foi fechado ou o diagrama foi copiado para outro projeto que não contém essas definições. "<br /><br /> - ou -<br /><br /> -"Este documento está aberto por outro projeto".|O arquivo de diagrama foi adicionado, arrastado ou copiado de um projeto de modelagem para outro projeto de modelagem ou para outro local na solução.|Para copiar um arquivo de diagrama, crie um novo diagrama e, em seguida, copie os elementos do diagrama de origem para o novo diagrama.|
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
  [Editar modelos e diagramas UML](../modeling/edit-uml-models-and-diagrams.md) [estrutura sua solução de modelagem](../modeling/structure-your-modeling-solution.md)

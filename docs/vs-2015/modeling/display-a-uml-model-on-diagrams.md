@@ -11,12 +11,12 @@ caps.latest.revision: 25
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 67eb1a6ce55292415da4a5c4e363941a4285d8b7
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: b43d4353e325bb81a29fe39106ac13e1ddcf96a9
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74296007"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75849476"
 ---
 # <a name="display-a-uml-model-on-diagrams"></a>Exibir um modelo UML em diagramas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,11 +41,11 @@ Neste tópico:
 
 |Tipo de elemento|Por exemplo|Para exibir isso, seu código deve|
 |---------------------|-----------------|-------------------------------------|
-|Classificação|`Class`<br /><br /> `Component`<br /><br /> `Actor`<br /><br /> `Use Case`|Crie formas associadas em diagramas especificados. Você pode criar qualquer número de formas para cada classificador.<br /><br /> `diagram.Display<modelElementType>`<br /><br /> `(modelElement, parentShape,`<br /><br /> `xPosition , yPosition);`<br /><br /> Defina `parentShape` como `null` para uma forma no nível superior do diagrama.<br /><br /> Para exibir uma forma dentro de outra:<br /><br /> `IShape<IUseCase> usecaseShape =`<br /><br /> `useCaseDiagram.Display`<br /><br /> `(useCase,`<br /><br /> `subsystemShape,`<br /><br /> `subsystemShape.XPosition + 5,`<br /><br /> `subsystemShape.YPosition + 5);` **Observação:** se você executar a exibição dentro de uma transação **ILinkedUndo** , o método às vezes não retornará nenhum `IShape`. Mas a forma foi criada corretamente e pode ser acessada usando `IElement.Shapes().`|
+|Classificador|`Class`<br /><br /> `Component`<br /><br /> `Actor`<br /><br /> `Use Case`|Crie formas associadas em diagramas especificados. Você pode criar qualquer número de formas para cada classificador.<br /><br /> `diagram.Display<modelElementType>`<br /><br /> `(modelElement, parentShape,`<br /><br /> `xPosition , yPosition);`<br /><br /> Defina `parentShape` como `null` para uma forma no nível superior do diagrama.<br /><br /> Para exibir uma forma dentro de outra:<br /><br /> `IShape<IUseCase> usecaseShape =`<br /><br /> `useCaseDiagram.Display`<br /><br /> `(useCase,`<br /><br /> `subsystemShape,`<br /><br /> `subsystemShape.XPosition + 5,`<br /><br /> `subsystemShape.YPosition + 5);` **Observação:** se você executar a exibição dentro de uma transação **ILinkedUndo** , o método às vezes não retornará nenhum `IShape`. Mas a forma foi criada corretamente e pode ser acessada usando `IElement.Shapes().`|
 |Filho do classificador|Atributo, operação,<br /><br /> Parte, porta|Automático-nenhum código é necessário.<br /><br /> Ele é exibido como parte do pai.|
 |Comportamento|Interação (sequência),<br /><br /> Atividade|Associe o comportamento a um diagrama apropriado.<br /><br /> Cada comportamento pode ser associado a no máximo um diagrama por vez.<br /><br /> Por exemplo:<br /><br /> `sequenceDiagram.Bind(interaction);`<br /><br /> `activityDiagram.Bind(activity);`|
 |Filho do comportamento|Linhas de vida, mensagens, ações, nós de objeto|Automático-nenhum código é necessário.<br /><br /> Ele será exibido se o pai estiver associado a um diagrama.|
-|Relação|Associação, generalização, fluxo, dependência|Automático-nenhum código é necessário.<br /><br /> Ele é exibido em todos os diagramas nos quais ambas as extremidades são exibidas.|
+|Relationship|Associação, generalização, fluxo, dependência|Automático-nenhum código é necessário.<br /><br /> Ele é exibido em todos os diagramas nos quais ambas as extremidades são exibidas.|
 
 ## <a name="GetShapes"></a>Acessando as formas que representam um elemento
  A forma que representa um elemento pertence aos tipos:
@@ -378,5 +378,5 @@ namespace AlignCommand
 
 ```
 
-## <a name="see-also"></a>Consulte também
- [Estender modelos e diagramas UML](../modeling/extend-uml-models-and-diagrams.md) [navegue até o exemplo de modelo UML](../modeling/navigate-the-uml-model.md) [: alinhar formas em um menu de diagrama](https://go.microsoft.com/fwlink/?LinkId=213809) [exemplo de comando: criando elementos, formas e estereótipos](https://go.microsoft.com/fwlink/?LinkId=213811)
+## <a name="see-also"></a>Veja também
+ [Estender modelos e diagramas UML](../modeling/extend-uml-models-and-diagrams.md) [navegue até o exemplo de modelo UML](../modeling/navigate-the-uml-model.md) [: alinhar formas em um menu de diagrama](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples) [exemplo de comando: criando elementos, formas e estereótipos](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)

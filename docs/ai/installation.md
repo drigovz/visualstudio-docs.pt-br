@@ -9,12 +9,12 @@ ms.date: 11/13/2017
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: fb296346d54b0774bdd9a738581ee28fe99b1de0
-ms.sourcegitcommit: 57bc1c3887838d707c13feff72a677b3bad3be4b
+ms.openlocfilehash: 54239b49344a5e29e7f837d22840f997c4b9fbe2
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72777477"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75845067"
 ---
 # <a name="installation"></a>Instalação
 
@@ -24,7 +24,7 @@ As Ferramentas do Visual Studio para IA podem ser instaladas nos sistemas operac
 
 Essa extensão funciona com o Visual Studio 2015 e o Visual Studio 2017, Community Edition ou versões posteriores.
 
-Você pode fazer o download das ferramentas do [Visual Studio Marketplace](https://aka.ms/vstoolsforai) ou do Visual Studio:
+Você pode fazer o download das ferramentas do [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.vstoolsai-vs2017) ou do Visual Studio:
 
 1. Escolha **Ferramentas** > **Extensões e Atualizações**.
 
@@ -156,7 +156,7 @@ Clique [aqui](https://caffe2.ai/docs/getting-started.html) para compilar no cód
 
 ### <a name="mxnet"></a>MXNet
 
-O [Apache MXNet (em encubação)](https://mxnet.incubator.apache.org/) é uma estrutura de aprendizagem profunda projetada para ser eficiente e flexível. Ele permite **misturar** [programação imperativa e simbólica](http://mxnet.io/architecture/index.html#deep-learning-system-design-concepts) a fim de maximizar a eficiência e a produtividade.
+O [Apache MXNet (em encubação)](https://mxnet.incubator.apache.org/) é uma estrutura de aprendizagem profunda projetada para ser eficiente e flexível. Ele permite misturar a [programação simbólica e imperativa](http://mxnet.io/architecture/index.html#deep-learning-system-design-concepts) para maximizar a eficiência e a produtividade.
 
 Para instalar o MXNet, execute o seguinte comando em um terminal:
 

@@ -11,17 +11,17 @@ caps.latest.revision: 31
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 5d5284bb163f474d67324c395a4342ccef6f8561
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 5952a65881a84ab131703db630f5f3b257683e45
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74298261"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75852176"
 ---
 # <a name="use-models-in-your-development-process"></a>Usar modelos no processo de desenvolvimento
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-No Visual Studio, você pode usar um modelo para ajudá-lo a entender e alterar um sistema, aplicativo ou componente. Um modelo pode ajudá-lo a visualizar o mundo em que seu sistema funciona, esclarecer as necessidades dos usuários, definir a arquitetura do seu sistema, analisar o código e garantir que seu código atenda aos requisitos. Consulte [vídeo do Channel 9: melhorar a arquitetura por meio de modelagem](https://go.microsoft.com/fwlink/?LinkID=252078).
+No Visual Studio, você pode usar um modelo para ajudá-lo a entender e alterar um sistema, aplicativo ou componente. Um modelo pode ajudá-lo a visualizar o mundo em que seu sistema funciona, esclarecer as necessidades dos usuários, definir a arquitetura do seu sistema, analisar o código e garantir que seu código atenda aos requisitos. Consulte [vídeo do Channel 9: melhorar a arquitetura por meio de modelagem](https://s.ch9.ms/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Improving-architecture-through-modeling).
 
  Para ver quais versões do Visual Studio oferecem suporte a cada tipo de modelo, consulte [suporte de versão para ferramentas de arquitetura e modelagem](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
@@ -122,7 +122,7 @@ No Visual Studio, você pode usar um modelo para ajudá-lo a entender e alterar 
 
 |Nível de design|Tipos de diagrama|
 |------------------|-------------------|
-|Processo comercial<br /><br /> A compreensão do contexto no qual seu sistema será usado ajuda você a entender o que os usuários precisam dele.|-Os diagramas de atividade descrevem o fluxo de trabalho entre pessoas e sistemas para atingir as metas de negócios.<br />-Os diagramas de classe conceitual descrevem os conceitos de negócios usados no processo de negócios.|
+|Processo empresarial<br /><br /> A compreensão do contexto no qual seu sistema será usado ajuda você a entender o que os usuários precisam dele.|-Os diagramas de atividade descrevem o fluxo de trabalho entre pessoas e sistemas para atingir as metas de negócios.<br />-Os diagramas de classe conceitual descrevem os conceitos de negócios usados no processo de negócios.|
 |Requisitos do usuário<br /><br /> Definição do que os usuários precisam do seu sistema.|– Diagramas de caso de uso resumem as interações que os usuários e outros sistemas externos têm com o sistema que você está desenvolvendo. Você pode anexar outros documentos a cada caso de uso para descrevê-lo em detalhes.<br />-Os diagramas de classe UML descrevem os tipos de informações sobre as quais os usuários e o sistema se comunicam.<br />-As regras de negócios e os requisitos de qualidade de serviço podem ser descritos em documentos separados.|
 |Design de alto nível<br /><br /> A estrutura geral do sistema: os principais componentes e como eles se juntam.|-Os diagramas de camada descrevem como o sistema é estruturado em partes interdependentes. Você pode validar o código do programa em relação a diagramas de camada para garantir que ele esteja de acordo com a arquitetura.<br />-Os diagramas de componente mostram as interfaces das partes, especificando as mensagens e os serviços que são fornecidos e exigidos por cada componente.<br />-Os diagramas de sequência mostram como os componentes se comunicam para implementar cada caso de uso.<br />-Os diagramas de classe UML descrevem as interfaces dos componentes e os tipos de dados passados entre os componentes.|
 |Padrões de design<br /><br /> Convenções e métodos de solução de problemas de design que são usados em todas as partes do design|-Os diagramas de classe UML descrevem as estruturas de um padrão<br />-Os diagramas de sequência ou de atividade mostram as interações e os algoritmos|
@@ -130,12 +130,12 @@ No Visual Studio, você pode usar um modelo para ajudá-lo a entender e alterar 
 
 ## <a name="external-resources"></a>Recursos Externos
 
-|**Categoria**|**Vincule**|
+|**Categoria**|**Links**|
 |------------------|---------------|
-|**Vídeos**|![link para vídeo](../data-tools/media/playvideo.gif "PlayVideo") [como faço vídeos do MSDN: como criar e usar diagramas e modelos UML (Visual Studio 2010 Ultimate)](https://go.microsoft.com/fwlink/?LinkId=214460)<br /><br /> ![link para o canal de vídeo](../data-tools/media/playvideo.gif "PlayVideo") [9: UML com o Visual Studio 2010](https://go.microsoft.com/fwlink/?LinkID=201106)<br /><br /> ![link para vídeo](../data-tools/media/playvideo.gif "PlayVideo") [série How do MSDN: ferramentas e extensibilidade UML (Visual Studio 2010 Ultimate)](https://go.microsoft.com/fwlink/?LinkID=214467)|
-|**Nos**|[ferramentas de modelagem & de visualização do Visual Studio](https://go.microsoft.com/fwlink/?LinkId=184720) -   <br />[SDK de modelagem do & de visualização do Visual Studio (ferramentas DSL)](https://go.microsoft.com/fwlink/?LinkId=184721) -   |
-|**Blogs**|[Visual Studio ALM + Team Foundation Server Blog](https://go.microsoft.com/fwlink/?LinkID=201340)|
-|**Artigos técnicos e diários**|[Centro de arquitetura do MSDN](https://go.microsoft.com/fwlink/?LinkId=201343)<br /><br /> [Diretrizes de ferramentas de arquitetura do Visual Studio](../modeling/visual-studio-architecture-tooling-guidance.md)|
+|**Vídeos**|![link para vídeo](../data-tools/media/playvideo.gif "PlayVideo") [como faço vídeos do MSDN: como criar e usar diagramas e modelos UML (Visual Studio 2010 Ultimate)](https://msdn.microsoft.com/vstudio/gg418384)<br /><br /> ![link para o canal de vídeo](../data-tools/media/playvideo.gif "PlayVideo") [9: UML com o Visual Studio 2010](https://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-1-Brainstorming-a-Project/)<br /><br /> ![link para vídeo](../data-tools/media/playvideo.gif "PlayVideo") [série How do MSDN: ferramentas e extensibilidade UML (Visual Studio 2010 Ultimate)](https://msdn.microsoft.com/vstudio/ff859492)|
+|**Fóruns**|[ferramentas de modelagem & de visualização do Visual Studio](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsarch) -   <br />[SDK de modelagem do & de visualização do Visual Studio (ferramentas DSL)](https://social.msdn.microsoft.com/Forums/home?forum=dslvsarchx) -   |
+|**Blogs**|[Visual Studio ALM + Team Foundation Server Blog](https://blogs.msdn.com/b/visualstudioalm)|
+|**Artigos técnicos e diários**|[Centro de arquitetura do MSDN](https://msdn.microsoft.com/architecture/default.aspx)<br /><br /> [Diretrizes de ferramentas de arquitetura do Visual Studio](../modeling/visual-studio-architecture-tooling-guidance.md)|
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
  [Usar modelos no desenvolvimento Agile](https://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f) [criar modelos para o](../modeling/create-models-for-your-app.md) modelo de [requisitos de usuário modelo](../modeling/model-user-requirements.md) de aplicativo [a arquitetura do aplicativo](../modeling/model-your-app-s-architecture.md) [desenvolver testes de uma estrutura de modelo](../modeling/develop-tests-from-a-model.md) [sua solução de modelagem](../modeling/structure-your-modeling-solution.md)

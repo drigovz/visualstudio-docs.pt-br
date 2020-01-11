@@ -1,6 +1,6 @@
 ---
-title: Depurar o ASP.NET
-description: Depurar o ASP.NET usando o depurador do Visual Studio
+title: ASP.NET Core de depuração
+description: Depurar ASP.NET Core usando o depurador do Visual Studio
 ms.custom: mvc
 ms.date: 08/06/2018
 ms.topic: quickstart
@@ -12,33 +12,33 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 932c8331b7b706b783868a52e47afc5ead25ef9c
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
-ms.translationtype: HT
+ms.openlocfilehash: bbe3d23301f0853626a930855acf4b595c6a2923
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65679254"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75847883"
 ---
-# <a name="quickstart-debug-aspnet-with-the-visual-studio-debugger"></a>Início Rápido: Depurar o ASP.NET com o depurador do Visual Studio
+# <a name="quickstart-debug-aspnet-core-with-the-visual-studio-debugger"></a>Início rápido: Depurar ASP.NET Core com o depurador do Visual Studio
 
 O depurador do Visual Studio oferece muitos recursos avançados para ajudar a depurar seus aplicativos. Este tópico fornece uma maneira rápida de conhecer alguns dos recursos básicos.
 
-## <a name="create-a-new-project"></a>Criar um novo projeto
+## <a name="create-a-new-project"></a>Crie um novo projeto
 
-1. Abra o Visual Studio.
+1. {1&gt;Abra o Visual Studio.&lt;1}
 
     ::: moniker range=">=vs-2019"
     Pressione **Esc** para fechar a janela de início. Digite **Ctrl + Q** para abrir a caixa de pesquisa, digite **asp.net**, escolha **Modelos** e, em seguida, escolha **Criar novo projeto de Aplicativo Web ASP.NET Core**. Na caixa de diálogo que aparece, escolha **Criar**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Na barra de menus superior, escolha **Arquivo** > **Novo** > **Projeto**. No painel esquerdo da caixa de diálogo **Novo projeto**, em **Visual C#**, escolha **Web** e, em seguida, no painel central, escolha **Aplicativo Web ASP.NET Core**. Digite um nome como **MyDbgApp** e clique em **OK**.
+    Na barra de menus superior, escolha **Arquivo** > **Novo** > **Projeto**. No painel esquerdo da caixa de diálogo **Novo projeto**, em **Visual C#** , escolha **Web** e, em seguida, no painel central, escolha **Aplicativo Web ASP.NET Core**. Digite um nome como **MyDbgApp** e clique em **OK**.
 
     Na caixa de diálogo exibida, escolha **Aplicativo Web** no painel central e clique em **OK**.
 
     ![Criar um aplicativo Web](../debugger/media/dbg-qs-aspnet-choose-web-app.png)
     ::: moniker-end
 
-    Caso não veja o modelo de projeto **Aplicativo Web do ASP.NET Core**, acesse **Ferramentas** > **Obter Ferramentas e Recursos...**, que abre o Instalador do Visual Studio. Escolha a carga de trabalho **ASP.NET e desenvolvimento para a Web** e, em seguida, selecione **Modificar**.
+    Caso não veja o modelo de projeto **Aplicativo Web do ASP.NET Core**, acesse **Ferramentas** > **Obter Ferramentas e Recursos...** , que abre o Instalador do Visual Studio. Escolha a carga de trabalho **ASP.NET e desenvolvimento para a Web** e, em seguida, selecione **Modificar**.
 
     O Visual Studio cria o projeto.
 
@@ -99,7 +99,7 @@ Um *ponto de interrupção* é um marcador que indica quando o Visual Studio dev
 
 Há diferentes comandos para instruir o depurador a continuar. Mostramos um comando de navegação de código útil que está disponível começando pelo Visual Studio 2017.
 
-Enquanto estiver em pausa no ponto de interrupção, passe o mouse sobre a instrução `return c2` até que o botão verde **Executar com um clique** ![Executar com um clique](../debugger/media/dbg-tour-run-to-click.png) seja exibido e, em seguida, pressione o botão **Executar com um clique**.
+Enquanto estiver em pausa no ponto de interrupção, passe o mouse sobre a instrução `return c2` até que o botão verde **Executar com um clique**![Executar com um clique](../debugger/media/dbg-tour-run-to-click.png) seja exibido e, em seguida, pressione o botão **Executar com um clique**.
 
 ![Executar com um clique](../debugger/media/dbg-qs-run-to-click-aspnet.png)
 
@@ -133,7 +133,7 @@ Se identificar uma alteração que deseja testar em seu código enquanto estiver
 
 Para saber mais sobre como usar editar e continuar e sobre as limitações das funcionalidades, confira [Editar e Continuar](../debugger/edit-and-continue.md).
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
 
 Neste tutorial, você aprendeu como iniciar o depurador, percorrer o código e inspecionar variáveis. Talvez você queira obter uma visão geral dos recursos do depurador, com links para mais informações.
 

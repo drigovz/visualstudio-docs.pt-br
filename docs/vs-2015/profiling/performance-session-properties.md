@@ -13,19 +13,19 @@ caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: af214f6a29e12dcdf2fe8bd2de75e05283894922
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: cd521a853d9ec8c1a3fee8e50e87217621a73a89
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74290118"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75848158"
 ---
 # <a name="performance-session-properties"></a>Propriedades da sessão de desempenho
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Um **Sessão de Desempenho** permite definir as configurações que determinam como o aplicativo é analisado. Ele também armazena relatórios que são gerados para a sessão de criação de perfil.  
   
- **Requisitos**  
+ **Requirements**  
   
 - [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
@@ -38,7 +38,7 @@ Um **Sessão de Desempenho** permite definir as configurações que determinam c
 ## <a name="general"></a>Geral  
  Essas configurações permitem que você selecione o método de criação de perfil para adicionar dados de tempo de vida e de coleção de objetos .NET e para especificar o local do relatório padrão e das convenções de nomenclatura.  
   
- Para obter mais informações, consulte:  
+ Para obter mais informações, consulte .  
   
  [Como escolher métodos de coleta](../profiling/how-to-choose-collection-methods.md)  
   
@@ -77,7 +77,7 @@ Um **Sessão de Desempenho** permite definir as configurações que determinam c
 ## <a name="instrumentation"></a>Instrumentação  
  Essas configurações permitem que coletar dados de desempenho de código JScript em páginas da Web [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] e especificar qualquer evento de **Pré-instrumento** e **Pós-instrumento** que você deseja que ocorra antes ou depois do processo de instrumentação.  
   
- Para obter mais informações, consulte:  
+ Para obter mais informações, consulte .  
   
  [Como criar perfil de código JavaScript em páginas da Web](../profiling/how-to-profile-javascript-code-in-web-pages.md)  
   
@@ -89,9 +89,9 @@ Um **Sessão de Desempenho** permite definir as configurações que determinam c
  Para obter mais informações, consulte [Como coletar dados do contador de CPU](../profiling/how-to-collect-cpu-counter-data.md)  
   
 ## <a name="windows-events"></a>Eventos do Windows  
- Durante a criação de perfil, você pode coletar dados de provedores de rastreamento de eventos. Você pode exibir os dados usando a opção `/calltrace` da ferramenta de linha de comando VSPerfReport.exe. Para obter mais informações sobre o ETW (Rastreamento de Eventos para Windows), consulte [Sobre o rastreamento de eventos](https://go.microsoft.com/fwlink/?linkid=90752).  
+ Durante a criação de perfil, você pode coletar dados de provedores de rastreamento de eventos. Você pode exibir os dados usando a opção `/calltrace` da ferramenta de linha de comando VSPerfReport.exe. Para obter mais informações sobre o ETW (Rastreamento de Eventos para Windows), consulte [Sobre o rastreamento de eventos](https://msdn2.microsoft.com/library/aa363668.aspx).  
   
- Para obter mais informações, consulte:  
+ Para obter mais informações, consulte .  
   
  [Como coletar dados de ETW (Rastreamento de Eventos para Windows)](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)  
   
@@ -105,13 +105,13 @@ Um **Sessão de Desempenho** permite definir as configurações que determinam c
 ## <a name="advanced"></a>Avançado  
  Essas configurações permitem que você adicione opções ao processo de instrumentação especificando uma ou mais opções da ferramenta de criação de perfil da linha de comando [VSInstr](../profiling/vsinstr.md). Você também pode especificar a versão do Common Runtime para análise quando o aplicativo estiver usando mais de uma versão.  
   
- Para obter mais informações, consulte:  
+ Para obter mais informações, consulte .  
   
  [Como especificar o runtime do .NET Framework](../profiling/how-to-specify-the-dotnet-framework-runtime.md)  
   
  [Como especificar opções de instrumentação adicionais](../profiling/how-to-specify-additional-instrumentation-options.md)  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Veja também  
  [Visões gerais](../profiling/overviews-performance-tools.md)   
  [Configurando sessões de desempenho](../profiling/configuring-performance-sessions.md)   
  [Controlando a coleta de dados](../profiling/controlling-data-collection.md)

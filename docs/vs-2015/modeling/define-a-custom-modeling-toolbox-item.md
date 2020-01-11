@@ -11,12 +11,12 @@ caps.latest.revision: 33
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: ac299f18e544ef4f3215707abbdc3d9e8d266de6
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 0a038150519ea7a40a52fb1be16ed93045c09eed
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299299"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851512"
 ---
 # <a name="define-a-custom-modeling-toolbox-item"></a>Definir um item de caixa de ferramentas de modelagem personalizado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -129,9 +129,9 @@ Para facilitar a criação de um elemento ou grupo de elementos de acordo com um
 |---------------|-------------|
 |displayName|O nome do item da caixa de ferramentas.|
 |tabName|A guia caixa de ferramentas na qual o item deve aparecer. Você pode especificar o nome da guia regular para este tipo de diagrama ou um nome separado.|
-|image|O local do arquivo de bitmap ( **. bmp**), que deve ter altura e largura de 16 e uma intensidade de cor de 24 bits.|
+|imagem|O local do arquivo de bitmap ( **. bmp**), que deve ter altura e largura de 16 e uma intensidade de cor de 24 bits.|
 |f1Keyword|A palavra-chave que localiza um tópico da ajuda.|
-|dessa|Uma dica de ferramentas para esta ferramenta.|
+|tooltip|Uma dica de ferramentas para esta ferramenta.|
 
  Você pode editar o arquivo de bitmap no Visual Studio e definir sua altura e largura como 16 no janela Propriedades.
 
@@ -139,7 +139,7 @@ Para facilitar a criação de um elemento ou grupo de elementos de acordo com um
 > Se você começar a usar um arquivo. tbxinfo depois de experimentar usando arquivos de diagrama por conta própria, talvez descubra que a caixa de ferramentas contém as versões antiga e nova de um item da caixa de ferramentas. Isso também pode ocorrer se o nome do arquivo de diagrama tiver sido digitado no arquivo. tbxinfo. Se isso ocorrer, no menu de atalho da caixa de ferramentas, escolha **Redefinir caixa de ferramentas**. Os itens da caixa de ferramentas personalizada desaparecerão. Reinicie o Visual Studio e os itens personalizados corretos serão exibidos.
 
 ## <a name="Extension"></a>Como distribuir itens da caixa de ferramentas em uma extensão do Visual Studio
- Você pode distribuir itens da caixa de ferramentas para outros usuários [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] empacotando-os em uma extensão do Visual Studio (VSIX). Você pode empacotar comandos, perfis e outras extensões no mesmo arquivo VSIX. Para obter mais informações, consulte [implantando extensões do Visual Studio](https://go.microsoft.com/fwlink/?LinkId=160780).
+ Você pode distribuir itens da caixa de ferramentas para outros usuários [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] empacotando-os em uma extensão do Visual Studio (VSIX). Você pode empacotar comandos, perfis e outras extensões no mesmo arquivo VSIX. Para obter mais informações, consulte [implantando extensões do Visual Studio](https://msdn.microsoft.com/library/dd393694(VS.100).aspx).
 
  A maneira usual de criar uma extensão do Visual Studio é usar o modelo de projeto VSIX. Para fazer isso, você deve ter o [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)]instalado.
 
@@ -170,7 +170,7 @@ Para facilitar a criação de um elemento ou grupo de elementos de acordo com um
 
      **Copiar para o diretório de saída** = **copiar sempre**
 
-     **Compilar** **conteúdo** de = de ação
+     **Ação de Compilação** = **Conteúdo**
 
      **Incluir no VSIX** = **verdadeiro**
 
@@ -220,7 +220,7 @@ Para facilitar a criação de um elemento ou grupo de elementos de acordo com um
 
 3. Coloque cada assembly adicional em uma pasta cujo nome é o código de cultura do idioma. Por exemplo, coloque uma versão em francês do assembly dentro de uma pasta chamada **fr**.
 
-4. Você deve usar um código de cultura neutro, normalmente duas letras, não uma cultura específica, como `fr-CA`. Para obter mais informações sobre códigos de cultura, consulte o [método CultureInfo. Getculturals](https://go.microsoft.com/fwlink/?LinkId=160782), que fornece uma lista completa de códigos de cultura.
+4. Você deve usar um código de cultura neutro, normalmente duas letras, não uma cultura específica, como `fr-CA`. Para obter mais informações sobre códigos de cultura, consulte o [método CultureInfo. Getculturals](https://msdn.microsoft.com/library/system.globalization.cultureinfo.getcultures(VS.100).aspx), que fornece uma lista completa de códigos de cultura.
 
 5. Crie a extensão do Visual Studio e distribua-a.
 
@@ -233,5 +233,5 @@ Para facilitar a criação de um elemento ou grupo de elementos de acordo com um
 
  Além disso, suas ferramentas personalizadas desaparecerão se você executar o comando **Redefinir caixa de ferramentas** . No entanto, eles serão reexibidos quando você reiniciar [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)].
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
  [Estender modelos e diagramas UML](../modeling/extend-uml-models-and-diagrams.md) [definir um perfil para estender UML](../modeling/define-a-profile-to-extend-uml.md) [definir um comando de menu em um diagrama de modelagem](../modeling/define-a-menu-command-on-a-modeling-diagram.md) [definir restrições de validação para modelos UML](../modeling/define-validation-constraints-for-uml-models.md)

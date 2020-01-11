@@ -13,12 +13,12 @@ caps.latest.revision: 30
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: f27fede436ea6cabe0aab6480cd4841299c42293
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 3d70a7c8b7dbf6015e992cfabb5204f3b307238a
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74302804"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75844910"
 ---
 # <a name="model-user-requirements"></a>Requisitos de usuário do modelo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +51,7 @@ O Visual Studio ajuda você a entender, discutir e comunicar as necessidades dos
 ## <a name="common-tasks"></a>Tarefas comuns
  Você pode criar várias exibições diferentes dos requisitos dos usuários.  Cada exibição fornece um tipo específico de informação.  Quando você cria essas exibições, é melhor movê-las com frequência de uma para outra. Você pode iniciar em qualquer modo de exibição.
 
-|Diagrama ou documento|O que ele descreve em um modelo de requisitos|`Section`|
+|Diagrama ou documento|O que ele descreve em um modelo de requisitos|Seção|
 |-------------------------|-----------------------------------------------|-------------|
 |Diagrama de caso de uso|Quem usa o sistema e o que eles fazem com ele.|[Descrevendo como o sistema é usado](#UseCases)|
 |Diagrama de classe conceitual|Glossário de tipos que são usados para descrever os requisitos; os tipos visíveis na interface do sistema.|[Definindo termos usados para descrever os requisitos](#RequirementsClasses)|
@@ -138,7 +138,7 @@ O Visual Studio ajuda você a entender, discutir e comunicar as necessidades dos
 |Elementos em um diagrama de classe conceitual|[Diagramas de classe UML: referência](../modeling/uml-class-diagrams-reference.md)|
 |Como desenvolver código de classes conceituais|[Modelar a arquitetura do aplicativo](../modeling/model-your-app-s-architecture.md)|
 
- Em um diagrama de classe conceitual, normalmente não é útil posicionar as setas nas associações para representar a navegabilidade. Isso ocorre porque o diagrama não representa uma implementação. As associações representam relações entre objetos do mundo real. A extensão de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] a seguir torna as setas não-direcionais o padrão: [exemplo: recursos de modelagem de domínio UML](https://go.microsoft.com/fwlink/?LinkId=213849).
+ Em um diagrama de classe conceitual, normalmente não é útil posicionar as setas nas associações para representar a navegabilidade. Isso ocorre porque o diagrama não representa uma implementação. As associações representam relações entre objetos do mundo real. A extensão de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] a seguir torna as setas não-direcionais o padrão: [exemplo: recursos de modelagem de domínio UML](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples).
 
 ## <a name="BusinessRules"></a>Mostrando regras de negócio
  Uma regra de negócio é um requisito que não está associado a um caso de uso específico e deve ser observado em todo o sistema.
@@ -238,5 +238,5 @@ O Visual Studio ajuda você a entender, discutir e comunicar as necessidades dos
 
   Ao examinar as relações entre as exibições que os diferentes diagramas fornecem, você pode entender rapidamente os principais conceitos com os quais os usuários trabalham e ajudá-los a entender o que precisam do sistema. Você também tem um melhor entendimento de quais requisitos os participantes são menos determinados. Você pode planejar desenvolver esses recursos, pelo menos em forma simplificada, em um estágio inicial do projeto, para permitir que os usuários experimentem com eles.
 
-## <a name="see-also"></a>Consulte também
- [Editar modelos e diagramas UML](../modeling/edit-uml-models-and-diagrams.md) [desenvolva testes de](../modeling/develop-tests-from-a-model.md) [modelos de uso de modelo em seu](../modeling/use-models-in-your-development-process.md) modelo de processo de desenvolvimento [seu aplicativo](../modeling/model-your-app-s-architecture.md) de exemplo de arquitetura [vs extensão: modelagem de domínio UML](https://go.microsoft.com/fwlink/?LinkId=213849) [exemplos de extensão vs: cor elementos UML de cores por](https://go.microsoft.com/fwlink/?LinkID=213841) exemplo de extensão vs.: alinhar [elementos UML a diagramas, arquivos e outros elementos](https://go.microsoft.com/fwlink/?LinkID=213813) [exemplo de extensões vs. alinhamento de formas em um diagrama UML](https://go.microsoft.com/fwlink/?LinkID=213809) [.](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-3-modeling-the-business-domain)
+## <a name="see-also"></a>Veja também
+ [Editar modelos e diagramas UML](../modeling/edit-uml-models-and-diagrams.md) [desenvolva testes de](../modeling/develop-tests-from-a-model.md) [modelos de uso de modelo em seu](../modeling/use-models-in-your-development-process.md) modelo de processo de desenvolvimento [seu aplicativo](../modeling/model-your-app-s-architecture.md) de exemplo de arquitetura [vs extensão: modelagem de domínio UML](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples) [exemplos de extensão vs: cor elementos UML de cores por](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples) exemplo de extensão vs.: alinhar [elementos UML a diagramas, arquivos e outros elementos](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples) [exemplo de extensões vs. alinhamento de formas em um diagrama UML](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples) [.](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-3-modeling-the-business-domain)

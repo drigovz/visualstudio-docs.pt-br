@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/28/2019
 ms.topic: conceptual
 description: Informações para Provedores de Soluções na Nuvem como comprar e gerenciar assinaturas de nuvem do Visual Studio para seus clientes.
-ms.openlocfilehash: 7711d9296ca26a09f251f70a6f8dc4848f769507
-ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
-ms.translationtype: HT
+ms.openlocfilehash: 7cc5a04a26a3120d88a931dde47c3b249c082791
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68787740"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851395"
 ---
 # <a name="buy-and-manage-visual-studio-cloud-subscriptions-for-your-customers"></a>Comprar e gerenciar assinaturas de nuvem do Visual Studio para seus clientes
 Os parceiros do programa [CSP (Provedores de Soluções na Nuvem)](https://partner.microsoft.com/cloud-solution-provider) podem comprar assinaturas de nuvem do Visual Studio Enterprise e do Visual Studio Professional para seus clientes.
@@ -21,7 +21,7 @@ Os parceiros do programa [CSP (Provedores de Soluções na Nuvem)](https://partn
 > [!NOTE]
 > A Microsoft não oferece mais assinaturas anuais do Visual Studio Professional e do Visual Studio Enterprise nas Assinaturas na Nuvem. Não haverá nenhuma alteração na experiência dos clientes existentes nem na capacidade de renovar, aumentar, diminuir ou cancelar suas assinaturas. Os novos clientes são incentivados a acessar [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) para explorar diferentes opções de compra do Visual Studio.
 
-## <a name="prerequisites"></a>Pré-requisitos
+## <a name="prerequisites"></a>{1&gt;{2&gt;Pré-requisitos&lt;2}&lt;1}
 Primeiro você precisa configurar o locatário do cliente no Partner Center e criar uma assinatura do Azure para esse locatário.
 
 [Saiba mais](/azure/devops/organizations/billing/csp/set-up-csp-customer)
@@ -68,28 +68,28 @@ Para exibir os preços do Visual Studio para parceiros CSP, faça logon no [Part
 
 Aqui está a maneira de interpretar os dados dessa planilha:
 
-| Categoria do medidor    |   Nome                 |  Unidades                                |           O que é isso                          |
+| Categoria do medidor    |   Name                 |  Unidades                                |           O que é isso                          |
 |-------------------|------------------------|---------------------------------------|-------------------------------------------------|
-| Visual Studio     | Enterprise             |  Assinatura                         | Assinatura mensal do Visual Studio Enterprise   |
-| Visual Studio     | Professional           |  Assinatura                         | Assinatura mensal do Visual Studio Professional |
+| {1&gt;Visual Studio&lt;1}     | Enterprise             |  Assinatura                         | Assinatura mensal do Visual Studio Enterprise   |
+| {1&gt;Visual Studio&lt;1}     | Professional           |  Assinatura                         | Assinatura mensal do Visual Studio Professional |
 
 Oferecemos um desconto de 5% para a compra da sexta unidade (para um determinado cliente) a cada mês da assinatura do Visual Studio. É por isso que aparecem duas linhas para cada opção de assinatura. Uma linha mostra um "Valor Mínimo" igual a 0, que você deve interpretar como o preço base da primeira à quinta unidade. A outra linha mostra um "Valor Mínimo" igual a 5, que é o preço com 5% de desconto aplicado à sexta unidade e às próximas.
 
 ## <a name="frequently-asked-questions"></a>Perguntas frequentes
-### <a name="q-how-are-monthly-cloud-subscription-charges-processed"></a>P: Como são processados os encargos **mensais** da assinatura na nuvem?
-R: Na primeira compra, é cobrada uma quantidade proporcional para cobrir os dias restantes do mês atual. Por exemplo, se uma compra de 10 assinaturas de nuvem mensais do Visual Studio Professional for feita no dia 15 de abril, serão cobradas cinco unidades porque há 15 dias restantes do mês de 30 dias ou 50%, e será cobrada a proporção de 50% das unidades. Em primeiro de maio e a cada mês seguinte até o cancelamento, será cobrado o total de 10 unidades.
+### <a name="q-how-are-monthly-cloud-subscription-charges-processed"></a>P: Como os encargos **mensais** da assinatura de nuvem são processados?
+R: Na primeira compra, vamos cobrar uma quantidade proporcional para cobrir os dias restantes do mês em questão. Por exemplo, se uma compra de 10 assinaturas de nuvem mensais do Visual Studio Professional for feita no dia 15 de abril, serão cobradas cinco unidades porque há 15 dias restantes do mês de 30 dias ou 50%, e será cobrada a proporção de 50% das unidades. Em primeiro de maio e a cada mês seguinte até o cancelamento, será cobrado o total de 10 unidades.
 
 Mais tarde, quando você aumentar a quantidade paga, o aumento de unidades também será cobrado proporcionalmente para cobrir os dias restantes do mês em questão. Ou seja, se você comprar uma assinatura de nuvem do Visual Studio Professional a mais em 10 de maio, serão cobradas aproximadamente 0,677 unidades (21 dias restantes no dia 31 do mês de maio).
 
-### <a name="q-how-do-cancellations-work"></a>P: Como funcionam os cancelamentos?
-R: Ao cancelar uma assinatura na nuvem do Visual Studio, você está cancelando a renovação automática. A assinatura continuará até a data de renovação normal e, em seguida, simplesmente expirará. Após a expiração, o assinante do Visual Studio não poderá mais usar o Visual Studio nem os outros benefícios da assinatura.
+### <a name="q-how-do-cancellations-work"></a>P: Como os cancelamentos funcionam?
+R: Ao cancelar uma assinatura de nuvem do Visual Studio, você está cancelando a renovação automática. A assinatura continuará até a data de renovação normal e, em seguida, simplesmente expirará. Após a expiração, o assinante do Visual Studio não poderá mais usar o Visual Studio nem os outros benefícios da assinatura.
 
 Com as assinaturas de nuvem mensais, os cancelamentos entram em vigor no primeiro dia do mês seguinte. Ao cancelar apenas algumas das assinaturas de nuvem mensais do cliente, você deverá remover os usuários no primeiro dia do próximo mês para garantir que as pessoas certas continuem com as assinaturas atribuídas ativas.
 
 Para assinaturas de nuvem anuais, os cancelamentos entram em vigor no primeiro dia do mês após 12 meses da compra original ou 12 meses do último encargo de renovação anual. Por exemplo, se você comprou uma assinatura de nuvem anual do Visual Studio Enterprise em 3 de janeiro de 2018, ela ficará ativa até primeiro de fevereiro de 2019, quando será renovada automaticamente por mais um ano. Se você cancelar em algum momento entre esse período e primeiro de fevereiro de 2020 a assinatura expirará em primeiro de fevereiro de 2020. Não há nenhum reembolso para cancelamentos durante o ano da assinatura para as assinaturas de nuvem anuais.
 
-### <a name="q-what-kind-of-volume-discounts-are-available-for-visual-studio-subscriptions"></a>P: Que tipos de desconto por volume estão disponíveis para assinaturas do Visual Studio?
-R:  Você recebe um desconto de 5% na sexta assinatura e em todas as assinaturas seguintes *em cada tipo* de assinatura:
+### <a name="q-what-kind-of-volume-discounts-are-available-for-visual-studio-subscriptions"></a>P: Que tipos de desconto por volume estão disponíveis para as assinaturas do Visual Studio?
+R: Você recebe um desconto de 5% na sexta assinatura e em todas as próximas *dentro de cada tipo* de assinatura:
 - Visual Studio Professional mensal
 - Visual Studio Enterprise mensal
 
@@ -100,8 +100,8 @@ Além disso, o desconto aplica-se somente aos encargos em um determinado períod
 Esses descontos são refletidos nos dados de preços dentro do [Partner Center](https://partnercenter.microsoft.com).
 
 ### <a name="q-are-there-renewal-discounts"></a>P: Há descontos para renovação?
-R:  Não, os preços das assinaturas do Visual Studio são fixos. O mesmo preço é oferecido para novas assinaturas e para a continuação de assinaturas.
+R: Não, os preços para assinaturas do Visual Studio são fixos. O mesmo preço é oferecido para novas assinaturas e para a continuação de assinaturas.
 
-### <a name="q-are-there-azure-devtest-pricing-options-for-csps"></a>P: Há opções de preços de Desenvolvimento/Teste do Azure para CSPs?
-R: No momento, não. Seus clientes podem usufruir dos [preços do Azure para Desenvolvimento/Teste](https://aka.ms/azuredevtestpricing), mas não há nada específico para os CSPs.
+### <a name="q-are-there-azure-devtest-pricing-options-for-csps"></a>P: Há opções de preços de Desenvolvimento/Teste do Azure para os CSPs?
+{1&gt;R&lt;1}: Isso não é possível no momento. Seus clientes podem usufruir dos [preços do Azure para Desenvolvimento/Teste](https://azure.microsoft.com/pricing/dev-test/), mas não há nada específico para os CSPs.
 

@@ -9,19 +9,19 @@ caps.latest.revision: 18
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: a2757201f482682b8fdf26275f510984629204f6
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 71aa8b31023cedcc41a08a775f9fdf28a4489d1e
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300911"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75847185"
 ---
 # <a name="getting-started-with-domain-specific-languages"></a>Introdução às linguagens específicas do domínio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Este tópico explica os conceitos básicos de definição e uso de uma DSL (linguagem específica de domínio) criada com o SDK de modelagem do Visual Studio.
 
- Se você for novo nas DSLs, recomendamos que você trabalhe no **laboratório de ferramentas DSL**, que pode ser encontrado neste site: [VISUALIZATON e o SDK de modelagem](https://go.microsoft.com/fwlink/?LinkID=186128)
+ Se você for novo nas DSLs, recomendamos que você trabalhe no **laboratório de ferramentas DSL**, que pode ser encontrado neste site: [VISUALIZATON e o SDK de modelagem](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)
 
 ## <a name="what-can-you-do-with-a-domain-specific-language"></a>O que você pode fazer com uma linguagem específica de domínio?
  Uma linguagem específica de domínio é uma notação, geralmente gráfica, que é projetada para ser usada para uma finalidade específica. Por outro lado, linguagens como UML são de finalidade geral. Em uma DSL, você pode definir os tipos de elemento de modelo e suas relações e como eles são apresentados na tela.
@@ -36,13 +36,13 @@ Este tópico explica os conceitos básicos de definição e uso de uma DSL (ling
 
  O restante desta visão geral é uma explicação que apresenta as operações básicas de criação e uso de uma linguagem específica de domínio no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
 
-## <a name="prerequisites"></a>{1&gt;Pré-requisitos&lt;1}
+## <a name="prerequisites"></a>{1&gt;{2&gt;Pré-requisitos&lt;2}&lt;1}
  Para definir uma DSL, é necessário ter instalados os seguintes componentes:
 
 |||
 |-|-|
-|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185579](https://go.microsoft.com/fwlink/?LinkId=185579)|
-|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185580](https://go.microsoft.com/fwlink/?LinkId=185580)|
+|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185579](https://www.visualstudio.com/)|
+|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185580](https://docs.microsoft.com/azure/devops/integrate/index?view=azure-devops&viewFallbackFrom=vsts)|
 |SDK de modelagem para Visual Studio|[Baixar o MSDK](https://www.microsoft.com/download/details.aspx?id=48148)|
 
 ## <a name="creating-a-dsl-solution"></a>Criando uma solução de DSL
@@ -216,7 +216,7 @@ Este tópico explica os conceitos básicos de definição e uso de uma DSL (ling
 
     2. Clique em **transformar todos os modelos** na barra de ferramentas de Gerenciador de soluções
 
-    3. Pressione F5. Aguarde até que a instância experimental do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] seja exibida.
+    3. {1&gt;Pressione {2&gt;F5&lt;2}.&lt;1} Aguarde até que a instância experimental do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] seja exibida.
 
 4. Na solução de depuração na instância experimental do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], abra um arquivo de modelo de teste. Arraste elementos para ele na caixa de ferramentas. Observe que as legendas da ferramenta e os nomes de tipo no Gerenciador de DSL foram alterados.
 
@@ -398,5 +398,5 @@ Este tópico explica os conceitos básicos de definição e uso de uma DSL (ling
 
 2. Reconstrua quaisquer DSLs experimentais ou outras extensões experimentais de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] que você ainda deseja usar.
 
-## <a name="see-also"></a>Consulte também
- [Entendendo modelos, classes e relações](../modeling/understanding-models-classes-and-relationships.md) [como definir um](../modeling/how-to-define-a-domain-specific-language.md) [VISUALIZATON](https://go.microsoft.com/fwlink/?LinkID=186128) de linguagem e um SDK de modelagem específicos de domínio
+## <a name="see-also"></a>Veja também
+ [Entendendo modelos, classes e relações](../modeling/understanding-models-classes-and-relationships.md) [como definir um](../modeling/how-to-define-a-domain-specific-language.md) [VISUALIZATON](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples) de linguagem e um SDK de modelagem específicos de domínio

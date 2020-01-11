@@ -12,12 +12,12 @@ caps.latest.revision: 15
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 01049d5ecf8710cd680278dbf95dbe70767cd5bf
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 2cedc9f45d2e21684496bd882de4aa74b3bf8b3d
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299893"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851073"
 ---
 # <a name="troubleshooting-the-help-viewer"></a>Solucionando problemas do Visualizador da Ajuda
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,9 +45,9 @@ Este tópico aborda problemas que podem ocorrer com o Visualizador da Ajuda.
 ## <a name="additional-resources"></a>Recursos adicionais
  Você pode obter mais informações e fornecer comentários sobre o Visualizador da Ajuda usando os seguintes recursos:
 
-- Para fornecer comentários, consulte [Microsoft Connect](https://go.microsoft.com/fwlink/?linkid=243983) no site da Microsoft ou enviar um email para [hlpfdbk@microsoft.com](mailto:hlpfdbk@microsoft.com).
+- Para fornecer comentários, consulte [Microsoft Connect](https://connect.microsoft.com/) no site da Microsoft ou enviar um email para [hlpfdbk@microsoft.com](mailto:hlpfdbk@microsoft.com).
 
-- Para obter mais informações, consulte o fórum [Documentação do Desenvolvedor e Sistema de Ajuda](https://go.microsoft.com/fwlink/?LinkId=232741) e o blog [The Help Guy](https://go.microsoft.com/fwlink/?LinkId=232743).
+- Para obter mais informações, consulte o fórum [Documentação do Desenvolvedor e Sistema de Ajuda](https://social.msdn.microsoft.com/Forums/en-US/devdocs/threads) e o blog [The Help Guy](https://blogs.msdn.com/b/thehelpguy/).
 
-## <a name="see-also"></a>Consulte também
- [Guia do administrador do Help Viewer 2.1](https://go.microsoft.com/fwlink/?LinkId=243985)
+## <a name="see-also"></a>Veja também
+ [Guia do administrador do Help Viewer 2.1](https://msdn.microsoft.com/library/hh492077(VS.110).aspx)

@@ -12,12 +12,12 @@ caps.latest.revision: 79
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 505c17635c80a165a7a094d3ce2bec3c32bd7101
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 0673f7511276799804dc327bab67637f3fc450b7
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297689"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850104"
 ---
 # <a name="modeling-sdk-for-visual-studio---domain-specific-languages"></a>SDK de Modelagem para Visual Studio - linguagens específicas ao domínio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,9 +43,9 @@ Usando o SDK de modelagem para [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] (MSD
 ## <a name="samples-and-the-latest-information"></a>Exemplos e as informações mais recentes
  [Baixe o SDK de modelagem para o Visual Studio 2015](https://www.microsoft.com/download/details.aspx?id=48148)
 
- [Exemplos](https://go.microsoft.com/fwlink/?LinkId=186128) do SDK de modelagem do Visual Studio.
+ [Exemplos](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples) do SDK de modelagem do Visual Studio.
 
- Para obter orientação sobre técnicas avançadas e solução de problemas, visite o [Fórum de extensibilidade das ferramentas de modelagem de & de DSL do Visual Studio](https://go.microsoft.com/fwlink/?LinkID=186074).
+ Para obter orientação sobre técnicas avançadas e solução de problemas, visite [Fórum de extensibilidade de ferramentas de modelagem & de DSL do Visual Studio](https://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=dslvsarchx).
 
 ## <a name="in-this-section"></a>Nesta seção
  [Introdução às linguagens específicas de domínio](../modeling/getting-started-with-domain-specific-languages.md)

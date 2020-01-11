@@ -12,12 +12,12 @@ caps.latest.revision: 13
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d8e25ad181202a2c7994c116e2220426ca3d8509
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 922be22619ee0bd16e2e5ac563999be7db81d45e
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297615"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851429"
 ---
 # <a name="browse-and-select-a-net-type-dialog-box"></a>Procurar e selecione uma caixa de diálogo de tipo do .NET
 Na janela **Propriedades** , caixas de diálogo ou designers, como o designer de variável, quando você seleciona **procurar tipos...** de uma lista de tipos de dados, é a caixa de diálogo **procurar e selecionar um tipo .net** (referenciada em um formulário abreviado como "navegador de tipo"). Na caixa de diálogo, você pode escolher um tipo de um modo de exibição de árvore de assemblies e de projetos.
@@ -31,7 +31,7 @@ Na janela **Propriedades** , caixas de diálogo ou designers, como o designer de
 - Para adicionar uma captura na atividade de <xref:System.Activities.Statements.TryCatch> .
 
 > [!NOTE]
-> O navegador do tipo pode exibir tipos de jagged array Visual Basic, mas não tipos de matriz multidimensional. Consulte [matrizes denteadas](https://go.microsoft.com/fwlink/?LinkId=195226) e [matrizes multidimensionais](https://go.microsoft.com/fwlink/?LinkId=195227) para obter detalhes.
+> O navegador do tipo pode exibir tipos de jagged array Visual Basic, mas não tipos de matriz multidimensional. Consulte [matrizes denteadas](https://msdn.microsoft.com/library/hkhhsz9t(VS.90).aspx) e [matrizes multidimensionais](https://msdn.microsoft.com/library/d2de1t93(VS.90).aspx) para obter detalhes.
 
 ## <a name="selecting-a-value-or-reference-type-from-the-type-browser"></a>Selecionando um tipo de valor ou tipo de referência de navegador de tipo
 
@@ -70,5 +70,5 @@ Na janela **Propriedades** , caixas de diálogo ou designers, como o designer de
 ## <a name="selecting-a-service-contract-using-the-type-browser-dialog"></a>Selecionando um contrato de serviço usando a caixa de diálogo de navegador de tipo
  Ao selecionar um tipo de contrato de serviço, o navegador do tipo mostra somente os tipos que têm o atributo de <xref:System.ServiceModel.ServiceContractAttribute> .
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
  [Usando os designers de atividade](../workflow-designer/using-the-activity-designers.md)

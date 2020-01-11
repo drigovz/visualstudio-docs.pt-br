@@ -9,12 +9,12 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 175cb6f6a8a3f240c244e139406841b0546209cc
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 778912c3149f9f146c01dbab15afa4fabeaa49b8
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74295907"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75852254"
 ---
 # <a name="javascript-in-visual-studio"></a>JavaScript no Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ O JavaScript é uma linguagem de primeira classe no Visual Studio. Você pode us
 
  Versões específicas do Visual Studio ou extensões específicas do Visual Studio podem ser necessárias para desenvolver serviços e tipos de aplicativo específicos usando HTML e JavaScript. A lista a seguir contém links para obtenção de mais informações.
 
-- Para criar aplicativos de plataforma cruzada usando o Apache Cordova, [obtenha as Ferramentas do Visual Studio para Apache Cordova](https://go.microsoft.com/fwlink/p/?LinkId=397606).
+- Para criar aplicativos de plataforma cruzada usando o Apache Cordova, [obtenha as Ferramentas do Visual Studio para Apache Cordova](https://taco.visualstudio.com/docs/install-vs-tools-apache-cordova/).
 
 - Para criar aplicativos [da Windows Store](https://developer.microsoft.com/), [do Windows Phone](https://developer.microsoft.com/) e universais (que dão suporte a ambas as plataformas), [obtenha as ferramentas](https://developer.microsoft.com/windows/downloads).
 

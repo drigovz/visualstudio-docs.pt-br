@@ -22,12 +22,12 @@ caps.latest.revision: 35
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: dd2b2d19e55cbaf9af63ddeafdbdf9f6d677c5bc
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 448a74b739bbb339d5f3b3e56c0ba59072994109
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74301615"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850625"
 ---
 # <a name="layer-diagrams-reference"></a>Diagramas de camada: referência
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +48,7 @@ No Visual Studio, você pode usar um *diagrama de camada* para visualizar a arqu
 
 - Reforce a arquitetura pretendida durante o desenvolvimento e a manutenção do seu código, incluindo a validação com o check-in e as operações de compilação.
 
-  Este tópico descreve os elementos que você pode usar em um diagrama de camada. Para obter informações mais detalhadas sobre como criar e desenhar diagramas de camada, consulte [diagramas de camada: diretrizes](../modeling/layer-diagrams-guidelines.md). Para obter mais informações sobre padrões de camadas, visite o [site patterns & Practices](https://go.microsoft.com/fwlink/?LinkId=145794).
+  Este tópico descreve os elementos que você pode usar em um diagrama de camada. Para obter informações mais detalhadas sobre como criar e desenhar diagramas de camada, consulte [diagramas de camada: diretrizes](../modeling/layer-diagrams-guidelines.md). Para obter mais informações sobre padrões de camadas, visite o [site patterns & Practices](https://apparch.codeplex.com/Wiki/View.aspx?title=Application Patterns&referringTitle=Home).
 
 ## <a name="reading-layer-diagrams"></a>Lendo diagramas de camada
  ![Elementos em diagramas de camada](../modeling/media/uml-layerrefreading.png "UML_LayerRefReading")
@@ -58,7 +58,7 @@ No Visual Studio, você pode usar um *diagrama de camada* para visualizar a arqu
 |**La**|**Elemento**|**Descrição**|
 |---------------|-----------------|---------------------|
 |1|**Camada**|Um grupo lógico de artefatos físicos em seu sistema. Esses artefatos podem ser namespaces, projetos, classes, métodos e assim por diante.<br /><br /> Para ver os artefatos que estão vinculados a uma camada, abra o menu de atalho da camada e escolha **exibir links** para abrir o **Gerenciador de camadas**.<br /><br /> Para obter mais informações, consulte [Gerenciador de camadas](#Explorer).<br /><br /> **dependências de namespace proibidas** -   -especifica que os artefatos associados a essa camada não podem depender dos namespaces especificados.<br />-   de **namespaces proibidos** – especifica que os artefatos associados a essa camada não devem pertencer aos namespaces especificados.<br />-   **namespaces necessários** -especifica que os artefatos associados a essa camada devem pertencer a um dos namespaces especificados.|
-|2|**Estados**|Indica que uma camada pode usar a funcionalidade em outra camada, mas não vice-versa.<br /><br /> **direção** de -   -especifica a direção da dependência.|
+|2|**Dependência**|Indica que uma camada pode usar a funcionalidade em outra camada, mas não vice-versa.<br /><br /> **direção** de -   -especifica a direção da dependência.|
 |3|**Dependência bidirecional**|Indica que uma camada pode usar a funcionalidade em outra camada e vice-versa.<br /><br /> **direção** de -   -especifica a direção da dependência.|
 |4|**Comentário**|Use para adicionar notas gerais ao diagrama ou aos elementos no diagrama.|
 |5|**Link de comentário**|Use para vincular comentários a elementos no diagrama.|
@@ -89,10 +89,10 @@ No Visual Studio, você pode usar um *diagrama de camada* para visualizar a arqu
 
     |**Coluna no Gerenciador de camadas**|**Descrição**|
     |----------------------------------|---------------------|
-    |**Às**|O tipo de artefato, como uma classe, um namespace, um arquivo de origem e assim por diante|
+    |**Categorias**|O tipo de artefato, como uma classe, um namespace, um arquivo de origem e assim por diante|
     |**Camada**|A camada que vincula ao artefato|
     |**Dá suporte à validação**|Se **for true**, o processo de validação de camada poderá verificar se o projeto está de acordo com as dependências de ou para esse elemento.<br /><br /> Se **for false**, o link não participará do processo de validação de camada.<br /><br /> Para obter mais informações, consulte [diagramas de camada: diretrizes](../modeling/layer-diagrams-guidelines.md).|
     |**Identificador**|A referência ao artefato vinculado|
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
  [Criar modelos para o aplicativo](../modeling/create-models-for-your-app.md)

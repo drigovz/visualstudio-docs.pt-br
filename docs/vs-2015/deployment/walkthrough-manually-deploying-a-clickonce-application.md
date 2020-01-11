@@ -21,24 +21,24 @@ caps.latest.revision: 51
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1e1099eaf8d766088612abbb399bdf004e6378e4
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: cba55c9f4a8f7436b97099b6b548b916ea6e5ecb
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74294682"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75844937"
 ---
 # <a name="walkthrough-manually-deploying-a-clickonce-application"></a>Instruções passo a passo: implantando um aplicativo ClickOnce manualmente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Se você não puder usar o Visual Studio para implantar seu aplicativo [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] ou se precisar usar recursos avançados de implantação, como a implantação de aplicativo confiável, deverá usar a ferramenta de linha de comando Mage. exe para criar seus manifestos [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]. Este tutorial descreve como criar uma implantação de [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] usando a versão de linha de comando (Mage. exe) ou a versão gráfica (MageUI. exe) do Manifest Generation and Editing Tool.  
   
-## <a name="prerequisites"></a>Pré-requisitos  
+## <a name="prerequisites"></a>{1&gt;{2&gt;Pré-requisitos&lt;2}&lt;1}  
  Este tutorial tem alguns pré-requisitos e opções que você precisa escolher antes de criar uma implantação.  
   
 - Instale o Mage. exe e o MageUI. exe.  
   
-     O Mage. exe e o MageUI. exe fazem parte do [!INCLUDE[winsdklong](../includes/winsdklong-md.md)]. Você deve ter o [!INCLUDE[winsdkshort](../includes/winsdkshort-md.md)] instalado ou a versão do [!INCLUDE[winsdkshort](../includes/winsdkshort-md.md)] incluída com o Visual Studio. Para obter mais informações, consulte [SDK do Windows](https://go.microsoft.com/fwlink/?LinkId=158044) no msdn.  
+     O Mage. exe e o MageUI. exe fazem parte do [!INCLUDE[winsdklong](../includes/winsdklong-md.md)]. Você deve ter o [!INCLUDE[winsdkshort](../includes/winsdkshort-md.md)] instalado ou a versão do [!INCLUDE[winsdkshort](../includes/winsdkshort-md.md)] incluída com o Visual Studio. Para obter mais informações, consulte [SDK do Windows](https://msdn.microsoft.com/windowsserver/bb980924.aspx) no msdn.  
   
 - Forneça um aplicativo para implantar.  
   
@@ -61,7 +61,7 @@ Se você não puder usar o Visual Studio para implantar seu aplicativo [!INCLUDE
   
 - Certifique-se de que o aplicativo não tenha um manifesto com informações de UAC.  
   
-     Você precisa determinar se seu aplicativo contém um manifesto com informações de controle de conta de usuário (UAC), como um elemento `<dependentAssembly>`. Para examinar um manifesto do aplicativo, você pode usar o utilitário [Sigcheck](https://go.microsoft.com/fwlink/?LinkId=158035) do Windows Sysinternals.  
+     Você precisa determinar se seu aplicativo contém um manifesto com informações de controle de conta de usuário (UAC), como um elemento `<dependentAssembly>`. Para examinar um manifesto do aplicativo, você pode usar o utilitário [Sigcheck](https://technet.microsoft.com/sysinternals/bb897441.aspx) do Windows Sysinternals.  
   
      Se seu aplicativo contiver um manifesto com detalhes do UAC, você deverá compilá-lo novamente sem as informações do UAC. Para um C# projeto no Visual Studio, abra as propriedades do projeto e selecione a guia aplicativo. Na lista suspensa **manifesto** , selecione **criar aplicativo sem um manifesto**. Para um projeto Visual Basic no Visual Studio, abra as propriedades do projeto, selecione a guia aplicativo e clique em **exibir configurações de UAC**. No arquivo de manifesto aberto, remova todos os elementos dentro do único elemento `<asmv1:assembly>`.  
   
@@ -166,7 +166,7 @@ Se você não puder usar o Visual Studio para implantar seu aplicativo [!INCLUDE
   
      Se o certificado for mantido em um repositório de certificados acessível do seu computador, selecione a opção **assinar com o certificado armazenado** e selecione o certificado na lista fornecida.  
   
-14. Clique em **OK** para assinar o manifesto do aplicativo. A caixa de diálogo Salvar como é exibida.  
+14. Clique em **OK** para assinar o manifesto do aplicativo. Aparece a caixa de diálogo Salvar como.  
   
 15. Na caixa de diálogo Salvar como, especifique o diretório da versão e clique em **salvar**.  
   
@@ -194,7 +194,7 @@ Se você não puder usar o Visual Studio para implantar seu aplicativo [!INCLUDE
   
      Se o certificado for mantido em um repositório de certificados acessível do seu computador, selecione a opção **assinar com o certificado armazenado** e selecione o certificado na lista fornecida.  
   
-26. Clique em **OK** para assinar seu manifesto de implantação. A caixa de diálogo Salvar como é exibida.  
+26. Clique em **OK** para assinar seu manifesto de implantação. Aparece a caixa de diálogo Salvar como.  
   
 27. Na caixa de diálogo **salvar como** , mova um diretório para cima até a raiz de sua implantação e clique em **salvar**.  
   
@@ -205,7 +205,7 @@ Se você não puder usar o Visual Studio para implantar seu aplicativo [!INCLUDE
 ## <a name="next-steps"></a>Próximas etapas  
  Quando você precisar implantar uma nova versão do aplicativo, crie um novo diretório chamado após a nova versão — por exemplo, 1.0.0.1 — e copie os novos arquivos de aplicativo para o novo diretório. Em seguida, você precisa seguir as etapas anteriores para criar e assinar um novo manifesto de aplicativo e atualizar e assinar o manifesto de implantação. Tenha cuidado para especificar a mesma versão mais alta nas chamadas de `-New` e `–Update` de Mage. exe, pois [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] apenas atualiza as versões superiores, com o inteiro mais significativo mais importante. Se você tiver usado o MageUI. exe, poderá atualizar o manifesto de implantação abrindo-o, selecionando a guia **referência do aplicativo** , clicando no botão **selecionar manifesto** e, em seguida, selecionando o manifesto do aplicativo atualizado.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Veja também  
  [Mage.exe (Manifest Generation and Editing Tool)](https://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)   
  [MageUI.exe (Manifest Generation and Editing Tool, Cliente Gráfico)](https://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14)   
  [Publicando aplicativos ClickOnce](../deployment/publishing-clickonce-applications.md)   

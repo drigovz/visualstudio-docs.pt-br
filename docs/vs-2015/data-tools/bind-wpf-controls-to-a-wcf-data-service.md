@@ -18,12 +18,12 @@ caps.latest.revision: 44
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: a3d1aab68e3dc9f33e0b3e9f9a5665d59f6f2ddc
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 3589f409efe2a104391eb62f939ef76d140e5224
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299414"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850135"
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>Associar controles do WPF a um WCF Data Service
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,16 +44,16 @@ Neste passo a passo, você criará um aplicativo WPF que contém controles de as
 
    [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>Pré-requisitos
+## <a name="prerequisites"></a>{1&gt;{2&gt;Pré-requisitos&lt;2}&lt;1}
  Você precisa dos seguintes componentes para concluir esta instrução passo a passo:
 
 - [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]
 
-- Acesso a uma instância em execução do SQL Server ou SQL Server Express que tenha o banco de dados de exemplo AdventureWorksLT anexado a ele. Você pode baixar o banco de dados AdventureWorksLT do [site da CodePlex](https://go.microsoft.com/fwlink/?linkid=87843).
+- Acesso a uma instância em execução do SQL Server ou SQL Server Express que tenha o banco de dados de exemplo AdventureWorksLT anexado a ele. Você pode baixar o banco de dados AdventureWorksLT do [site da CodePlex](https://codeplex.com/SqlServerSamples).
 
   Conhecimento prévio dos conceitos a seguir também é útil, mas não é necessário para concluir o passo a passo:
 
-- WCF Data Services. Para obter mais informações, consulte [visão geral](https://msdn.microsoft.com/library/7924cf94-c9a6-4015-afc9-f5d22b1743bb).
+- WCF Data Services. Para obter mais informações, consulte [Visão Geral](https://msdn.microsoft.com/library/7924cf94-c9a6-4015-afc9-f5d22b1743bb).
 
 - Modelos de dados no [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)].
 
@@ -76,7 +76,7 @@ Neste passo a passo, você criará um aplicativo WPF que contém controles de as
 
 4. Selecione o modelo de projeto **Aplicativo Web ASP.NET**.
 
-5. Na caixa **nome** , digite `AdventureWorksService` e clique em **OK**.
+5. Na caixa **Nome**, digite `AdventureWorksService` e clique em **OK**.
 
      O Visual Studio cria o projeto `AdventureWorksService`.
 
@@ -107,7 +107,7 @@ Neste passo a passo, você criará um aplicativo WPF que contém controles de as
 
 7. Na página **Escolher Objetos do Banco de Dados**, expanda **Tabelas** e selecione a tabela **SalesOrderHeader**.
 
-8. Clique em **Concluir**.
+8. Clique em **Finalizar**.
 
 ## <a name="create-the-service"></a>Criar o serviço
  Crie um [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)] para expor os dados no Modelo de Dados de Entidade para um aplicativo WPF.
@@ -196,7 +196,7 @@ Neste passo a passo, você criará um aplicativo WPF que contém controles de as
     <Button HorizontalAlignment="Right" Margin="0,21,46,24" Name="saveButton" Width="110">Save changes</Button>
     ```
 
-3. Compile o projeto.
+3. Crie o projeto.
 
 ## <a name="create-the-data-bound-controls"></a>Criar os controles associados a dados
  Crie controles que exibam os registros do cliente arrastando o nó `SalesOrderHeaders` da janela **fontes de dados** para o designer.
@@ -322,5 +322,5 @@ Neste passo a passo, você criará um aplicativo WPF que contém controles de as
 
 - Saiba como usar a janela **Fontes de Dados** no Visual Studio para exibir dados relacionados (isto é, dados em uma relação pai-filho) em controles do WPF. Para obter mais informações, consulte [Walkthrough: Exibindo dados relacionados em um aplicativo do WPF](../data-tools/walkthrough-displaying-related-data-in-a-wpf-application.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
  [Associar controles do WPF a dados no Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md) [associar controles do WPF a dados no Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio2.md) [associar controles do WPF a um DataSet](../data-tools/bind-wpf-controls-to-a-dataset.md) [visão](https://msdn.microsoft.com/library/7924cf94-c9a6-4015-afc9-f5d22b1743bb) geral [Entity Framework](https://msdn.microsoft.com/library/a2166b3d-d8ba-4a0a-8552-6ba1e3eaaee0) visão geral [WPF e](https://msdn.microsoft.com/570b7a5c-0c86-4326-a371-c9b63378fc62) visão geral de [Associação de dados](https://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211) do designer do Silverlight

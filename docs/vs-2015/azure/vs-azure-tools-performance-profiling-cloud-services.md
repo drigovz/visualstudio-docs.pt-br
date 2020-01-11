@@ -11,19 +11,19 @@ ms.date: 11/11/2016
 ms.author: mikejo
 ms.prod: visual-studio-dev14
 ms.technology: vs-azure
-ms.openlocfilehash: 35593f4164ed024db19b5fa3503b2d7589a7ac2b
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 0f4e7635e62c8d21b6bdb3b1fd28a2fed0c60262
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74289758"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851891"
 ---
 # <a name="testing-the-performance-of-a-cloud-service"></a>Testando o desempenho de um serviço de nuvem
-## <a name="overview"></a>Visão geral
+## <a name="overview"></a>{1&gt;Visão Geral&lt;1}
 Você pode testar o desempenho de um serviço de nuvem das seguintes maneiras:
 
-* Use o Diagnóstico do Azure para coletar informações sobre solicitações e conexões e para examinar estatísticas de site que mostram o desempenho do serviço da perspectiva do cliente. Para começar, consulte [Configuração de diagnóstico para os Serviços de Nuvem do Azure e Máquinas Virtuais](https://go.microsoft.com/fwlink/p/?LinkId=623009).
-* Use o criador de perfil do Visual Studio para obter uma análise detalhada dos aspectos computacionais de como o serviço é executado. Como descrito neste tópico, você pode usar o criador de perfil para medir o desempenho à medida que um serviço é executado no Azure. Para saber mais sobre como usar o criador de perfil para medir o desempenho à medida que um serviço é executado localmente em um emulador de computação, consulte [Testando o desempenho de um Serviço de Nuvem de Azure localmente no emulador de computação usando o criador de perfil do Visual Studio](https://go.microsoft.com/fwlink/p/?LinkId=262845).
+* Use o Diagnóstico do Azure para coletar informações sobre solicitações e conexões e para examinar estatísticas de site que mostram o desempenho do serviço da perspectiva do cliente. Para começar, consulte [Configuração de diagnóstico para os Serviços de Nuvem do Azure e Máquinas Virtuais](https://docs.microsoft.com/visualstudio/azure/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines?view=vs-2019).
+* Use o criador de perfil do Visual Studio para obter uma análise detalhada dos aspectos computacionais de como o serviço é executado. Como descrito neste tópico, você pode usar o criador de perfil para medir o desempenho à medida que um serviço é executado no Azure. Para saber mais sobre como usar o criador de perfil para medir o desempenho à medida que um serviço é executado localmente em um emulador de computação, consulte [Testando o desempenho de um Serviço de Nuvem de Azure localmente no emulador de computação usando o criador de perfil do Visual Studio](https://azure.microsoft.com/documentation/articles/cloud-services-performance-testing-visual-studio-profiler/).
 
 ## <a name="choosing-a-performance-testing-method"></a>Escolhendo um método de teste de desempenho
 ### <a name="use-azure-diagnostics-to-collect"></a>Use o Diagnóstico do Azure para coletar:
@@ -79,35 +79,35 @@ A ilustração a seguir mostra como definir as configurações da criação de p
 ![Definir configurações de criação de perfil](./media/vs-azure-tools-performance-profiling-cloud-services/IC526984.png)
 
 > [!NOTE]
-> Para habilitar a caixa de diálogo **Habilitar a criação de perfis**, você deverá ter o criador de perfis instalado no computador local que você está usando para publicar seu serviço de nuvem. Por padrão, o criador de perfil é instalado quando você instala o Visual Studio.
+> Para habilitar a caixa de seleção **Habilitar criação de perfil** , você deve ter o criador de perfil instalado no computador local que está usando para publicar seu serviço de nuvem. Por padrão, o criador de perfil é instalado quando você instala o Visual Studio.
 > 
 > 
 
 ### <a name="to-configure-profiling-settings"></a>Para definir configurações de criação de perfil
-1. No Gerenciador de Soluções, abra o menu de atalho para o seu projeto do Azure e escolha **Publicar**. Para obter etapas detalhadas sobre como publicar um serviço de nuvem, consulte [Publicando um serviço na nuvem usando as ferramentas do Azure](https://go.microsoft.com/fwlink/p?LinkId=623012).
+1. No Gerenciador de Soluções, abra o menu de atalho para o seu projeto do Azure e escolha **Publicar**. Para obter etapas detalhadas sobre como publicar um serviço de nuvem, consulte [Publicando um serviço na nuvem usando as ferramentas do Azure](https://docs.microsoft.com/visualstudio/azure/vs-azure-tools-publishing-a-cloud-service?view=vs-2019).
 2. Na caixa de diálogo **Publicar Aplicativo do Azure**, escolha a guia **Configurações Avançadas**.
-3. Para habilitar a criação de perfis, marque a caixa de seleção **Habilitar a criação de perfis**.
-4. Para definir suas configurações de perfil, escolha o hiperlink **Configurações**. A caixa de diálogo Configurações de Criação de Perfil aparecerá.
+3. Para habilitar a criação de perfil, marque a caixa de seleção **Habilitar criação de perfil** .
+4. Para definir suas configurações de criação de perfil, escolha o hiperlink **Configurações** . A caixa de diálogo Configurações de Criação de Perfil aparecerá.
 5. Dos botões de opção **Qual método de criação de perfil você gostaria de usar** , escolha o tipo de criação de perfil de que você precisa.
-6. Para coletar os dados de criação de perfil de interação de camadas, marque a caixa de seleção **Habilitar a Criação de Perfil de Interação de Camadas**.
-7. Para salvar as configurações, escolha o botão **OK**.
+6. Para coletar os dados de criação de perfil de interação de camada, marque a caixa de seleção **Habilitar Criação de Perfil de Interação de Camada** .
+7. Para salvar as configurações, escolha o **OK** botão.
    
     Quando você publica este aplicativo, essas configurações são usadas para criar a sessão de criação de perfil para cada função.
 
 ## <a name="viewing-profiling-reports"></a>Exibindo relatórios de criação de perfil
 Uma sessão de criação de perfil é gerada para cada instância de uma função no serviço de nuvem. Para exibir seus relatórios de criação de perfil de cada sessão do Visual Studio, você poderá exibir a janela Gerenciador de Servidores e, em seguida, escolher o nó Computação do Azure para selecionar uma instância de uma função. Em seguida, será possível exibir o relatório de criação de perfil como mostrado na ilustração a seguir.
 
-![Exibir relatórios de criação de perfil do Azure](./media/vs-azure-tools-performance-profiling-cloud-services/IC748914.png)
+![Exibir relatório de criação de perfil do Azure](./media/vs-azure-tools-performance-profiling-cloud-services/IC748914.png)
 
 ### <a name="to-view-profiling-reports"></a>Para exibir relatórios de criação de perfil
-1. Para exibir a janela Gerenciador de Servidores no Visual Studio, na barra de menus, escolha Exibir, Gerenciador de Servidores.
+1. Para exibir a janela Gerenciador de Servidores no Visual Studio na barra de menus, escolha Exibir, Gerenciador de Servidores.
 2. Escolha o nó Computação do Azure e escolha o nó de implantação do Azure para o serviço de nuvem que você selecionou para criar o perfil, quando publicou no Visual Studio.
-3. Para exibir relatórios de criação de perfil para uma instância, escolha a função no serviço, abra o menu de atalho para uma instância específica e selecione **Exibir Relatório de Criação de Perfil**.
+3. Para exibir relatórios de criação de perfil para uma instância, escolha a função no serviço, abra o menu de atalho para uma instância específica e, em seguida, escolha **Exibir Relatório de Criação de Perfil**.
    
     O relatório, um arquivo .vsp, agora é baixado do Azure e o status do download é exibido no log de atividades do Azure. Quando o download é concluído, o relatório de criação de perfil é exibido em uma guia no editor do Visual Studio denominada <Nome da função\> *<Número da instância\>* <identificador\>.vsp. Serão exibidos dados de resumo para o relatório.
-4. Para mostrar diferentes modos de exibição do relatório, na lista Modo de Exibição Atual, escolha o tipo de exibição desejado. Para saber mais, consulte [Exibições de relatório de ferramentas de criação de perfil](https://msdn.microsoft.com/library/azure/bb385755.aspx).
+4. Para obter exibições diferentes do relatório, na lista Exibição Atual, escolha o tipo de exibição desejado. Para saber mais, consulte [Exibições de relatório de ferramentas de criação de perfil](https://msdn.microsoft.com/library/azure/bb385755.aspx).
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
 [Depurando serviços de nuvem](vs-azure-tools-debugging-cloud-services-overview.md)
 
 [Publicando em um Serviço de Nuvem do Azure do Visual Studio](vs-azure-tools-publishing-a-cloud-service.md)

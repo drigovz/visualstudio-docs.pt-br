@@ -9,12 +9,12 @@ caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c65561f9a9a2ca287232b7a61bb0e07ca07a769d
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: a2fa9581d94b3b70ca427c292c147562a11d55a4
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299658"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75847994"
 ---
 # <a name="performance-tools-on-windows-8-and-windows-server-2012-applications"></a>Ferramentas de desempenho em aplicativos do Windows 8 e Windows Server 2012
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -100,9 +100,9 @@ Os recursos de segurança avançada do Windows 8 e Windows Server 2012 exigiam a
   
  Para analisar aplicativos em dispositivos que não têm o Visual Studio instalado, faça o seguinte:  
   
-- Baixe as ferramentas como parte das Ferramentas Remotas para Visual Studio do [site do MSDN](https://go.microsoft.com/fwlink/?LinkID=219549).  
+- Baixe as ferramentas como parte das Ferramentas Remotas para Visual Studio do [site do MSDN](https://www.microsoft.com/visualstudio/eng#downloads+d-additional-software).  
   
-- Copie e execute o programa de instalação de ferramentas do criador de perfil autônomo do seu computador do Visual Studio. Os programas de instalação estão na pasta *%VSInstallDir%* **\Team Tools\Performance Tools\Setups**. Escolha o programa de instalação do sistema operacional (x86/x64) do computador remoto.  
+- Copie e execute o programa de instalação de ferramentas do criador de perfil autônomo do seu computador do Visual Studio. Os programas de instalação estão na pasta *% VSINSTALLDIR%* **\Team Tools\Performance Tools\Setups** . Escolha o programa de instalação do sistema operacional (x86/x64) do computador remoto.  
   
 > [!NOTE]
 > Para coletar dados de criação de perfil TIP, você deve instalar o criador de perfil autônomo em seu computador do Visual Studio no computador remoto.  
@@ -144,7 +144,7 @@ Os recursos de segurança avançada do Windows 8 e Windows Server 2012 exigiam a
   
    Dados de interação entre camadas só podem ser exibidos no [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)] ou IDE do [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]. Os relatórios de interação de camadas baseados em arquivo por meio de [VSPerfReport](../profiling/vsperfreport.md) não estão disponíveis.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Veja também  
  [Gerenciador de Desempenho](../profiling/performance-explorer.md)   
  [Configurando sessões de desempenho](../profiling/configuring-performance-sessions.md)   
  [Criando perfil na linha de comando](../profiling/using-the-profiling-tools-from-the-command-line.md)

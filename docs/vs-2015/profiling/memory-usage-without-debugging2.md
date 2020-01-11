@@ -14,12 +14,12 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0ab8aaff0ddf793fe64dd3695adc58c281290f98
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 37db8a095e8f7b420f14df29de30f265aee49bb6
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74295703"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850814"
 ---
 # <a name="memory-usage-without-debugging"></a>Uso de memória sem depuração
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -137,7 +137,7 @@ Você pode usar a ferramenta **Uso de Memória** sem depuração para fazer o se
   
 |||  
 |-|-|  
-|**Tipo de objeto**|O nome do tipo ou instância de objeto.|  
+|**Tipo de objeto**|{1&gt;O nome do tipo ou instância de objeto. &lt;1}|  
 |**Contagem**|O número de instâncias do objeto do tipo. O número é sempre 1 para uma instância.|  
 |**Tamanho (bytes)**|Para um tipo, o tamanho de todas as instâncias do tipo no instantâneo de memória, excluindo o tamanho dos objetos contidos nas instâncias.<br /><br /> No caso de uma instância, o tipo, o tamanho do objeto excluindo o tamanho dos objetos contidos na instância. instâncias.|  
 |**Tamanho Inclusivo (Bytes)**|{1&gt;O tamanho das instâncias do tipo ou o tamanho de uma única instância, incluindo o tamanho dos objetos contidos.&lt;1}|  
@@ -156,8 +156,8 @@ Você pode usar a ferramenta **Uso de Memória** sem depuração para fazer o se
   
 |||  
 |-|-|  
-|**Tipo/Instância de Objeto**|O nome do tipo ou instância de objeto.|  
-|**Tamanho (bytes)**|No caso de um tipo, o tamanho de todas as instâncias do tipo, excluindo o tamanho dos objetos contidos no tipo.<br /><br /> No caso de uma instância, o tamanho do objeto, excluindo o tamanho dos objetos contidos no objeto.|  
+|**Tipo/Instância de Objeto**|{1&gt;O nome do tipo ou instância de objeto. &lt;1}|  
+|**Tamanho (bytes)**|No caso de um tipo, o tamanho de todas as instâncias do tipo, excluindo o tamanho dos objetos contidos no tipo.<br /><br /> {3&gt;No caso de uma instância, o tamanho do objeto, excluindo o tamanho dos objetos contidos no objeto. &lt;3}|  
 |**Tamanho Inclusivo (Bytes)**|{1&gt;O tamanho total das instâncias do tipo ou o tamanho da instância, incluindo o tamanho dos objetos contidos.&lt;1}|  
   
 ## <a name="BKMK_Snapshot_difference__diff__reports"></a> Relatórios de diferenças (dif) do instantâneo  
@@ -178,7 +178,7 @@ Você pode usar a ferramenta **Uso de Memória** sem depuração para fazer o se
   
 |||  
 |-|-|  
-|**Tipo de objeto**|O nome do tipo ou instância de objeto.|  
+|**Tipo de objeto**|{1&gt;O nome do tipo ou instância de objeto. &lt;1}|  
 |**Contagem**|O número de instâncias de um tipo no instantâneo primário. **Contagem** é sempre 1 para uma instância.|  
 |**Dif. de Contagem**|No caso de um tipo, a diferença no número de instâncias do tipo entre o instantâneo primário e o instantâneo anterior. O campo fica em branco no caso de uma instância.|  
 |**Tamanho (bytes)**|O tamanho dos objetos no instantâneo primário, excluindo o tamanho dos objetos contidos nos objetos. No caso de um tipo, **Tamanho (Bytes)** e **Tamanho Inclusivo (Bytes)** são os totais dos tamanhos das instâncias de tipo.|  
@@ -198,13 +198,13 @@ Você pode usar a ferramenta **Uso de Memória** sem depuração para fazer o se
   
 |||  
 |-|-|  
-|**Tipo/Instância de Objeto**|O nome do tipo ou instância de objeto.|  
-|**Tamanho (bytes)**|No caso de uma instância, o tamanho do objeto no instantâneo primário, excluindo o tamanho dos objetos contidos na instância.<br /><br /> No caso de um tipo, o tamanho total das instâncias do tipo no instantâneo primário, excluindo o tamanho dos objetos contidos na instância.|  
+|**Tipo/Instância de Objeto**|{1&gt;O nome do tipo ou instância de objeto. &lt;1}|  
+|**Tamanho (bytes)**|No caso de uma instância, o tamanho do objeto no instantâneo primário, excluindo o tamanho dos objetos contidos na instância.<br /><br /> {3&gt;No caso de um tipo, o tamanho total das instâncias do tipo no instantâneo primário, excluindo o tamanho dos objetos contidos na instância. &lt;3}|  
 |**Tamanho Inclusivo (Bytes)**|{1&gt;O tamanho dos objetos no instantâneo primário, incluindo o tamanho dos objetos contidos nos objetos.&lt;1}|  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Veja também  
  [Memória JavaScript](../profiling/javascript-memory.md)   
  [Analisar o desempenho do aplicativo](https://msdn.microsoft.com/library/58acb30b-8428-41a6-b195-b0fdedb89575)   
  [Executar ferramentas de desempenho e diagnóstico](https://msdn.microsoft.com/library/788279d8-f56b-40a0-9bef-facc3dfba471)   
  [Práticas recomendadas de desempenho para aplicativos da Windows Store usando C++, C# e Visual Basic](https://msdn.microsoft.com/library/windows/apps/hh750313.aspx)   
- [Diagnosing memory issues with the new Memory Usage Tool in Visual Studio](https://go.microsoft.com/fwlink/p/?LinkId=394706) (Diagnosticando problemas de memória com a nova Ferramenta de Uso de Memória no Visual Studio)
+ [Diagnosing memory issues with the new Memory Usage Tool in Visual Studio](https://blogs.msdn.com/b/visualstudioalm/archive/2014/04/02/diagnosing-memory-issues-with-the-new-memory-usage-tool-in-visual-studio.aspx) (Diagnosticando problemas de memória com a nova Ferramenta de Uso de Memória no Visual Studio)

@@ -6,12 +6,12 @@ ms.assetid: 34990c37-ae98-4140-9b1e-a91c192220d9
 caps.latest.revision: 38
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 0f509ca93b6802fc99a21143360227d64f8db319
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 42c42a845ef98fb3a6ebe9b5e017ae2783365f1b
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74301172"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851359"
 ---
 # <a name="image-service-and-catalog"></a>Catálogo e o serviço de imagem
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -89,7 +89,7 @@ Este manual contém diretrizes e práticas recomendadas para adotar o serviço d
 </ImageManifest>  
 ```  
 
- **Symbol**  
+ **Símbolos**  
 
  Como auxílio à legibilidade e à manutenção, o manifesto da imagem pode usar símbolos para valores de atributo. Os símbolos são definidos da seguinte maneira:  
 
@@ -105,10 +105,10 @@ Este manual contém diretrizes e práticas recomendadas para adotar o serviço d
 |||  
 |-|-|  
 |**Subelemento**|**Definição**|  
-|{1&gt;Importar&lt;1}|Importa os símbolos do arquivo de manifesto fornecido para uso no manifesto atual|  
-|Guid|O símbolo representa um GUID e deve corresponder à formatação do GUID|  
+|Importar|Importa os símbolos do arquivo de manifesto fornecido para uso no manifesto atual|  
+|{1&gt;Guid&lt;1}|O símbolo representa um GUID e deve corresponder à formatação do GUID|  
 |ID|O símbolo representa uma ID e deve ser um inteiro não negativo|  
-|String|O símbolo representa um valor de cadeia de caracteres arbitrária|  
+|Cadeia de caracteres|O símbolo representa um valor de cadeia de caracteres arbitrária|  
 
  Os símbolos diferenciam maiúsculas de minúsculas e são referenciados usando a sintaxe $ (Symbol-Name):  
 
@@ -147,7 +147,7 @@ Este manual contém diretrizes e práticas recomendadas para adotar o serviço d
 |||  
 |-|-|  
 |**Attribute**|**Definição**|  
-|Guid|Necessária A parte GUID do moniker da imagem|  
+|{1&gt;Guid&lt;1}|Necessária A parte GUID do moniker da imagem|  
 |ID|Necessária A parte de ID do moniker da imagem|  
 |AllowColorInversion|[Opcional, padrão verdadeiro] Indica se a imagem pode ter suas cores programaticamente invertidas quando usada em um plano de fundo escuro.|  
 
@@ -165,7 +165,7 @@ Este manual contém diretrizes e práticas recomendadas para adotar o serviço d
 |---------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Attribute** |                                                                                                                                                                                                                                                                                                                                                                                                                                                                            **Definição**                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 |      URI      |                                                                                                                                                                                                                                                                                                               Necessária Um URI que define de onde a imagem pode ser carregada. Pode ser um dos seguintes:<br /><br /> -Um [pacote URI](https://msdn.microsoft.com/library/aa970069\(v=vs.100\).aspx) usando a autoridade Application:///<br />-Uma referência de recurso de componente absoluto<br />-Um caminho para um arquivo que contém um recurso nativo                                                                                                                                                                                                                                                                                                               |
-|  Informações preliminares   | Adicional Indica em que tipo de plano de fundo a origem deve ser usada.<br /><br /> Pode ser um dos seguintes:<br /><br /> *Luz:* A origem pode ser usada em um plano de fundo claro.<br /><br /> <em>Escuro:</em> A origem pode ser usada em um plano de fundo escuro.<br /><br /> *HighContrast:* A origem pode ser usada em qualquer plano de fundo no modo de Alto Contraste.<br /><br /> *HighContrastLight:* A origem pode ser usada em um plano de fundo claro no modo de Alto Contraste.<br /><br /> *HighContrastDark:* A origem pode ser usada em um plano de fundo escuro no modo de Alto Contraste.<br /><br /> Se o atributo de plano de fundo for omitido, a origem poderá ser usada em qualquer plano de fundo.<br /><br /> Se o plano de fundo for *claro*, *escuro*, *HighContrastLight*ou *HighContrastDark*, as cores da fonte nunca serão invertidas. Se o plano de fundo for omitido ou definido como *HighContrast*, a inversão das cores da origem será controlada pelo atributo **AllowColorInversion** da imagem. |
+|  Segundo Plano   | Adicional Indica em que tipo de plano de fundo a origem deve ser usada.<br /><br /> Pode ser um dos seguintes:<br /><br /> *Luz:* A origem pode ser usada em um plano de fundo claro.<br /><br /> <em>Escuro:</em> A origem pode ser usada em um plano de fundo escuro.<br /><br /> *HighContrast:* A origem pode ser usada em qualquer plano de fundo no modo de Alto Contraste.<br /><br /> *HighContrastLight:* A origem pode ser usada em um plano de fundo claro no modo de Alto Contraste.<br /><br /> *HighContrastDark:* A origem pode ser usada em um plano de fundo escuro no modo de Alto Contraste.<br /><br /> Se o atributo de plano de fundo for omitido, a origem poderá ser usada em qualquer plano de fundo.<br /><br /> Se o plano de fundo for *claro*, *escuro*, *HighContrastLight*ou *HighContrastDark*, as cores da fonte nunca serão invertidas. Se o plano de fundo for omitido ou definido como *HighContrast*, a inversão das cores da origem será controlada pelo atributo **AllowColorInversion** da imagem. |
 |               |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 
  Um elemento de > de origem \<pode ter exatamente um dos seguintes subelementos opcionais:  
@@ -173,9 +173,9 @@ Este manual contém diretrizes e práticas recomendadas para adotar o serviço d
 ||||  
 |-|-|-|  
 |**Elemento**|**Atributos (todos obrigatórios)**|**Definição**|  
-|Tamanho de \<>|Valor|A fonte será usada para imagens do tamanho determinado (em unidades do dispositivo). A imagem será quadrada.|  
+|Tamanho de \<|Value|A fonte será usada para imagens do tamanho determinado (em unidades do dispositivo). A imagem será quadrada.|  
 |\<SizeRange >|MinSize, MaxSize|A fonte será usada para imagens de MinSize para MaxSize (em unidades de dispositivo) inclusivamente. A imagem será quadrada.|  
-|Dimensões de \<>|Width, Height|A fonte será usada para imagens da largura e da altura especificadas (em unidades do dispositivo).|  
+|Dimensões de \<|Width, Height|A fonte será usada para imagens da largura e da altura especificadas (em unidades do dispositivo).|  
 |\<DimensionRange >|MinWidth, MinHeight,<br /><br /> MaxWidth, MaxHeight|A fonte será usada para imagens da largura/altura mínima até a largura/altura máxima (em unidades do dispositivo), inclusive.|  
 
  Um elemento de > de origem \<também pode ter um subelemento opcional \<NativeResource >, que define um \<de código-fonte > que é carregado de um assembly nativo em vez de um assembly gerenciado.  
@@ -187,7 +187,7 @@ Este manual contém diretrizes e práticas recomendadas para adotar o serviço d
 |||  
 |-|-|  
 |**Attribute**|**Definição**|  
-|Digite|Necessária O tipo do recurso nativo, XAML ou PNG|  
+|{1&gt;Tipo&lt;1}|Necessária O tipo do recurso nativo, XAML ou PNG|  
 |ID|Necessária A parte da ID de número inteiro do recurso nativo|  
 
  **ImageList**  
@@ -204,7 +204,7 @@ Este manual contém diretrizes e práticas recomendadas para adotar o serviço d
 |||  
 |-|-|  
 |**Attribute**|**Definição**|  
-|Guid|Necessária A parte GUID do moniker da imagem|  
+|{1&gt;Guid&lt;1}|Necessária A parte GUID do moniker da imagem|  
 |ID|Necessária A parte de ID do moniker da imagem|  
 |Externo|[Opcional, padrão false] Indica se o moniker da imagem faz referência a uma imagem no manifesto atual.|  
 
@@ -215,35 +215,35 @@ Este manual contém diretrizes e práticas recomendadas para adotar o serviço d
 ### <a name="first-steps-managed"></a>Primeiras etapas (gerenciadas)  
  Para usar o serviço de imagem, você precisa adicionar referências a alguns ou todos os assemblies a seguir ao seu projeto:  
 
-- **Microsoft. VisualStudio. ImageCatalog. dll**  
+- **Microsoft.VisualStudio.ImageCatalog.dll**  
 
   - Necessário se você usar o catálogo de imagens interno KnownMonikers  
 
-- **Microsoft. VisualStudio. Imaging. dll**  
+- **Microsoft.VisualStudio.Imaging.dll**  
 
   - Necessário se você usar **CrispImage** e **ImageThemingUtilities** em sua interface do usuário do WPF  
 
-- **Microsoft. VisualStudio. Imaging. Interop. 14.0. designtime. dll**  
+- **Microsoft.VisualStudio.Imaging.Interop.14.0.DesignTime.dll**  
 
   - Necessário se você usar os tipos **ImageMoniker** e **ImageAttributes**  
 
   - **EmbedInteropTypes** deve ser definido como true  
 
-- **Microsoft. VisualStudio. Shell. Interop. 14.0. designtime**  
+- **Microsoft.VisualStudio.Shell.Interop.14.0.DesignTime**  
 
   - Necessário se você usar o tipo **IVsImageService2**  
 
   - **EmbedInteropTypes** deve ser definido como true  
 
-- **Microsoft. VisualStudio. Utilities. dll**  
+- **Microsoft.VisualStudio.Utilities.dll**  
 
   - Necessário se você usar o **BrushToColorConverter** para o ImageThemingUtilities. **ImageBackgroundColor** em sua interface do usuário do WPF  
 
-- **Microsoft. VisualStudio. Shell.\<VSVersion >. 0**  
+- **Microsoft.VisualStudio.Shell.\<VSVersion>.0**  
 
   - Necessário se você usar o tipo **IVsUIObject**  
 
-- **Microsoft. VisualStudio. Shell. Interop. 10.0. dll**  
+- **Microsoft.VisualStudio.Shell.Interop.10.0.dll**  
 
   - Necessário se você usar os auxiliares de interface do usuário relacionados ao WinForms  
 
@@ -252,29 +252,29 @@ Este manual contém diretrizes e práticas recomendadas para adotar o serviço d
 ### <a name="first-steps-native"></a>Primeiras etapas (nativas)  
  Para usar o serviço de imagem, você precisa incluir alguns ou todos os cabeçalhos a seguir em seu projeto:  
 
-- **KnownImageIds. h**  
+- **KnownImageIds.h**  
 
   - Necessário se você usar o **KnownMonikers**do catálogo de imagens interno, mas não puder usar o tipo **ImageMoniker** , como ao retornar valores de chamadas **getguidproperty** ou **GetProperty** .  
 
-- **KnownMonikers. h**  
+- **KnownMonikers.h**  
 
   - Necessário se você usar o **KnownMonikers**do catálogo de imagens interno.  
 
-- **ImageParameters140. h**  
+- **ImageParameters140.h**  
 
   - Necessário se você usar os tipos **ImageMoniker** e **ImageAttributes** .  
 
-- **VSShell140. h**  
+- **VSShell140.h**  
 
   - Necessário se você usar o tipo **IVsImageService2** .  
 
-- **ImageThemingUtilities. h**  
+- **ImageThemingUtilities.h**  
 
   - Necessário se não for possível permitir que o serviço de imagem manipule-o para você.  
 
   - Não use esse cabeçalho se o serviço de imagem puder manipular sua imagem.  
 
-- **VSUIDPIHelper. h**  
+- **VSUIDPIHelper.h**  
 
   - Necessário se você usar os auxiliares de DPI para obter o DPI atual.  
 
@@ -650,11 +650,11 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 3. Atualize seu código para usar o serviço de imagem para solicitar monikers por meio do mapeamento atualizado. (Isso pode significar a atualização para **CrispImages** para código gerenciado, ou solicitar HBITMAPs ou HICONs do serviço de imagem e passá-los para código nativo.)  
 
 ## <a name="testing-your-images"></a>Testando suas imagens  
- Você pode usar a ferramenta Image Library Viewer para testar seus manifestos de imagem para garantir que tudo esteja criado corretamente. Você pode encontrar a ferramenta no [SDK do Visual Studio 2015](https://msdn.microsoft.com/library/bb166441.aspx). A documentação para essa ferramenta e outras podem ser encontradas [aqui](https://aka.ms/VSImageThemeTools).  
+ Você pode usar a ferramenta Image Library Viewer para testar seus manifestos de imagem para garantir que tudo esteja criado corretamente. Você pode encontrar a ferramenta no [SDK do Visual Studio 2015](https://msdn.microsoft.com/library/bb166441.aspx). A documentação para essa ferramenta e outras podem ser encontradas [aqui](https://docs.microsoft.com/visualstudio/extensibility/internals/vssdk-utilities?view=vs-2015&redirectedfrom=MSDN).  
 
 ## <a name="additional-resources"></a>Recursos adicionais  
 
-### <a name="samples"></a>Exemplos  
+### <a name="samples"></a>Exemplos do  
  Vários dos exemplos do Visual Studio no GitHub foram atualizados para mostrar como usar o serviço de imagem como parte de vários pontos de extensibilidade do Visual Studio.  
 
  Verifique [http://github.com/Microsoft/VSSDK-Extensibility-Samples](https://github.com/Microsoft/VSSDK-Extensibility-Samples) para obter os exemplos mais recentes.  
@@ -674,7 +674,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 
  A ferramenta Visualizador de biblioteca de imagens pode carregar manifestos de imagem e permite que o usuário manipule-os da mesma maneira que o Visual Studio faria para ter certeza de que o manifesto foi criado corretamente. O usuário pode alterar o plano de fundo, tamanhos, configuração de DPI, Alto Contraste e outras configurações. Ele também exibe informações de carregamento para localizar erros nos manifestos e exibe informações de origem para cada imagem no manifesto.  
 
-## <a name="faq"></a>Perguntas Frequentes  
+## <a name="faq"></a>Perguntas frequentes  
 
 - Há alguma dependência que você deve incluir ao carregar \<referência include = "Microsoft. VisualStudio. *. Interop. 14.0. designtime "/>?  
 
@@ -949,11 +949,11 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
     |GlyphGroupError||StatusError|  
     |GlyphBscFile||Classe de|  
     |GlyphAssembly||Referência|  
-    |GlyphLibrary||Biblioteca|  
+    |GlyphLibrary||Biblioteca do|  
     |GlyphVBProject||VBProjectNode|  
     |GlyphCoolProject||CSProjectNode|  
     |GlyphCppProject||CPPProjectNode|  
-    |GlyphDialogId||'|  
+    |GlyphDialogId||caixa de diálogo|  
     |GlyphOpenFolder||FolderOpened|  
     |GlyphClosedFolder||FolderClosed|  
     |GlyphArrow||GoToNext|  

@@ -5,16 +5,16 @@ author: seaniyer
 ms.author: seiyer
 ms.date: 11/19/2019
 ms.topic: reference
-ms.openlocfilehash: 57d956a426e791fcc84d5972f564cd554d6e72f8
-ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
+ms.openlocfilehash: bce4fa8c824b6a4f1332145c1383131eb6488b6c
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "75406101"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75847380"
 ---
 # <a name="how-to-increase-the-chances-of-a-performance-issue-being-fixed"></a>Como aumentar as chances de um problema de desempenho ser corrigido
 
-A ferramenta "[relatar um problema](https://aka.ms/vs-rap)" é amplamente usada pelos usuários do Visual Studio para relatar uma variedade de problemas. A equipe do Visual Studio se enquadra nas tendências de pane e lentidão nos comentários do usuário e resolve problemas que afetam uma ampla lançamento de usuários. Quanto mais acionável for um tíquete de comentários específico, mais provável será diagnosticado e resolvido rapidamente pela equipe do produto. Este documento descreve as práticas recomendadas ao relatar problemas de pane ou lentidão para torná-los mais acionáveis.
+A ferramenta "[relatar um problema](https://docs.microsoft.com/visualstudio/ide/how-to-report-a-problem-with-visual-studio?view=vs-2019)" é amplamente usada pelos usuários do Visual Studio para relatar uma variedade de problemas. A equipe do Visual Studio se enquadra nas tendências de pane e lentidão nos comentários do usuário e resolve problemas que afetam uma ampla lançamento de usuários. Quanto mais acionável for um tíquete de comentários específico, mais provável será diagnosticado e resolvido rapidamente pela equipe do produto. Este documento descreve as práticas recomendadas ao relatar problemas de pane ou lentidão para torná-los mais acionáveis.
 
 ## <a name="general-best-practices"></a>Práticas recomendadas gerais
 
@@ -188,7 +188,7 @@ O que torna esses tipos de problemas mais acionáveis é fornecer logs adicionai
     -   Definir a variável de ambiente global **ServiceHubTraceLevel** como **All**
     -   Reproduza o problema.
 
-2.  Baixe a ferramenta de coleta de log de Microsoft Visual Studio e .NET Framework [aqui](https://aka.ms/vscollect).
+2.  Baixe a ferramenta de coleta de log de Microsoft Visual Studio e .NET Framework [aqui](https://www.microsoft.com/download/details.aspx?id=12493).
 3.  Execute a ferramenta. Isso gera um arquivo zip para **% Temp%/vslogs.zip**. Anexe esse arquivo aos seus comentários.
 
 ## <a name="see-also"></a>Veja também

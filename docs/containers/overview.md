@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.topic: overview
 ms.date: 03/20/2019
 ms.technology: vs-azure
-ms.openlocfilehash: 312c827c3b748e10951b243070f43cce559e3a60
-ms.sourcegitcommit: bbff780cda82bb64862d77fe8f407f1803beb876
+ms.openlocfilehash: d785ed9416959484f9829e12e1cd20cd2924adb8
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2019
-ms.locfileid: "74127195"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75846765"
 ---
 # <a name="container-tools-in-visual-studio"></a>Ferramentas de contêiner no Visual Studio
 
@@ -19,7 +19,7 @@ As ferramentas incluídas no Visual Studio para desenvolvimento com os contêine
 
 ::: moniker range="vs-2017"
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>{1&gt;{2&gt;Pré-requisitos&lt;2}&lt;1}
 
 * [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
 * [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) com as workloads **Desenvolvimento para a Web**, **Ferramentas do Azure** e/ou **Desenvolvimento multiplataforma do .NET Core** instaladas
@@ -31,7 +31,7 @@ O suporte ao Docker está disponível para projetos do ASP.NET, projetos do ASP.
 
 O suporte ao Docker no Visual Studio foi alterado ao longo das versões em resposta às necessidades dos clientes. Há dois níveis de suporte do Docker que você pode adicionar a um projeto, e as opções com suporte variam conforme o tipo de projeto e a versão do Visual Studio. Com alguns tipos de projeto com suporte, adicione o suporte do Docker se você quiser apenas um contêiner para um único projeto, sem o uso de orquestração.  O próximo nível é o suporte à orquestração de contêiner, que adiciona os arquivos de suporte apropriados para o orquestrador específico que você escolher.  
 
-Com o Visual Studio 2017, você pode usar o Docker Compose e o Service Fabric como serviços de orquestração de contêiner.  Também é possível usar Kubernetes, se instalar as [Ferramentas do Visual Studio para Kubernetes](https://aka.ms/get-vsk8stools).
+Com o Visual Studio 2017, você pode usar o Docker Compose e o Service Fabric como serviços de orquestração de contêiner.  Também é possível usar Kubernetes, se instalar as [Ferramentas do Visual Studio para Kubernetes](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vs-tools-for-kubernetes).
 
 > [!NOTE]
 > Se você estiver usando uma versão do Visual Studio 2017 anterior à 15.8 ou um modelo de projeto do .NET Framework (não o .NET Core), ao adicionar o suporte do Docker, o suporte à orquestração usando o Docker Compose é adicionado automaticamente. O suporte à orquestração de contêiner, por meio do Docker Compose, é adicionado automaticamente no Visual Studio 2017 versões 15.0 a 15.7 e em projetos do .NET Framework.
@@ -40,7 +40,7 @@ Com o Visual Studio 2017, você pode usar o Docker Compose e o Service Fabric co
 
 ::: moniker range=">=vs-2019"
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>{1&gt;{2&gt;Pré-requisitos&lt;2}&lt;1}
 
 * [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
 * [Visual Studio 2019](https://visualstudio.microsoft.com/downloads) com **Desenvolvimento para a Web**, a carga de trabalho de **Ferramentas do Azure** e/ou **Desenvolvimento multiplataforma do .NET Core** instalados
@@ -116,7 +116,7 @@ Repita o processo com os outros projetos que você deseja controlar usando o Doc
 ## <a name="kubernetes-support"></a>Suporte a Kubernetes
 
 ::: moniker range="vs-2017"
-Para adicionar o suporte a Kubernetes, instale as [Ferramentas do Visual Studio para Kubernetes](https://aka.ms/get-vsk8stools).
+Para adicionar o suporte a Kubernetes, instale as [Ferramentas do Visual Studio para Kubernetes](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vs-tools-for-kubernetes).
 ::: moniker-end
 
 Com suporte a Kubernetes, você pode habilitar uma conexão entre seu projeto local e um cluster do Kubernetes em execução no [Serviço de Kubernetes do Azure (AKS)](/azure/aks) e, portanto, modificar e depurar seus serviços em execução no AKS usando o Visual Studio.  Esse serviço é fornecido pelo [Azure Dev Spaces](/azure/dev-spaces/quickstart-netcore-visualstudio). O Azure Dev Spaces também possibilita que você configure ramificações separadas dos seus serviços Kubernetes chamados *espaços de desenvolvimento* para fins de desenvolvimento, portanto, você pode isolar com eficiência os serviços de produção das versões de trabalho em desenvolvimento e manter as modificações distintas claramente separadas entre si.
@@ -146,7 +146,7 @@ Para Service Fabric, consulte [tutorial: implantar seu aplicativo ASP.NET Core n
 
 Para Kubernetes, confira [Implantar um aplicativo de contêiner do Docker no Serviço de Kubernetes do Azure](/azure/devops/pipelines/apps/cd/deploy-aks?view=azure-devops).
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
 
 Para obter mais detalhes sobre os serviços de implementação e uso de ferramentas do Visual Studio para trabalhar com contêineres, leia os seguintes artigos:
 

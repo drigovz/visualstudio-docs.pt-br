@@ -14,12 +14,12 @@ caps.latest.revision: 28
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 5abbb647f93c991d2de626a84e82f47e03f6f71e
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 4d825e625313febfa67cfb85f6a9c6bccb7f3608
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299612"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75844281"
 ---
 # <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>Passo a passo: criando um Serviço de Dados WCF com WPF e Entity Framework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,12 +40,12 @@ Este tutorial demonstra como criar um [!INCLUDE[ss_data_service](../includes/ss-
 
 - Se desejar, adicionará recursos de filtragem ao aplicativo.
 
-## <a name="prerequisites"></a>Pré-requisitos
+## <a name="prerequisites"></a>{1&gt;{2&gt;Pré-requisitos&lt;2}&lt;1}
  Você precisa dos seguintes componentes para concluir esta instrução passo a passo:
 
 - O banco de dados de exemplo Northwind.
 
-     Se você não tiver esse banco de dados no computador de desenvolvimento, poderá baixá-lo no [centro de download da Microsoft](https://go.microsoft.com/fwlink/?LinkID=98088). Para obter instruções, consulte [baixar bancos de dados de exemplo](https://msdn.microsoft.com/library/ef9d69a1-9461-43fe-94bb-7c836754bcb5).
+     Se você não tiver esse banco de dados no computador de desenvolvimento, poderá baixá-lo no [centro de download da Microsoft](https://www.microsoft.com/downloads). Para obter instruções, consulte [baixar bancos de dados de exemplo](https://msdn.microsoft.com/library/ef9d69a1-9461-43fe-94bb-7c836754bcb5).
 
 ## <a name="creating-the-service"></a>Criando o serviço
  Para criar um [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)], você adicionará um projeto Web, criará um [!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)] e, em seguida, criará o serviço usando o modelo.
@@ -275,5 +275,5 @@ Este tutorial demonstra como criar um [!INCLUDE[ss_data_service](../includes/ss-
 
 6. Na caixa de texto, insira **Londres** e escolha o botão. Somente os clientes de London são exibidos.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
  [Windows Communication Foundation serviços e WCF Data Services no Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md) [como: Adicionar, atualizar ou remover uma referência do WCF Data Service](../data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference.md)

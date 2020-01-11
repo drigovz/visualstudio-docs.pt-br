@@ -11,12 +11,12 @@ caps.latest.revision: 15
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: f19208e886eb499c825b119ad4ade7e8b52ab88f
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 74a8234dfc38ef5ef41cd77b2ce10eaf54018622
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300243"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850084"
 ---
 # <a name="navigate-relationships-with-the-uml-api"></a>Navegar em relações com a API UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -152,7 +152,7 @@ IEnumerable<IUseCase>GetIncludingCases(this IUseCase usecase);
 ```
 
 ## <a name="enumerating-relationships"></a>Enumerando relações
- Todas as propriedades do modelo UML que retornam vários valores estão em conformidade com a interface de > de < IEnumerable. Isso significa que você pode usar [expressões de consulta LINQ](https://go.microsoft.com/fwlink/?LinkId=168834) e os métodos de extensão definidos no namespace **System. Linq** .
+ Todas as propriedades do modelo UML que retornam vários valores estão em conformidade com a interface de > de < IEnumerable. Isso significa que você pode usar [expressões de consulta LINQ](https://docs.microsoft.com/dotnet/csharp/linq/index) e os métodos de extensão definidos no namespace **System. Linq** .
 
  Por exemplo:
 
@@ -163,5 +163,5 @@ select shape.Element
 
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
  [Estender modelos e diagramas UML](../modeling/extend-uml-models-and-diagrams.md) [navegar pelo modelo UML](../modeling/navigate-the-uml-model.md)

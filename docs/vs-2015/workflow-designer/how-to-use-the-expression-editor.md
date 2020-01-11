@@ -11,17 +11,17 @@ caps.latest.revision: 13
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 7d40cefc3dd47f7f4ad7e8255d8bdc06bc5f1651
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 54099bc5c0f249cdb3697715d153a94a596ac344
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300944"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75849227"
 ---
 # <a name="how-to-use-the-expression-editor"></a>Como: Use o editor de expressão
 O editor de expressão é um controle de [!INCLUDE[wfd1](../includes/wfd1-md.md)] que é usado em muitas atividades de fluxo de trabalho como um meio de inserir e avaliar dessas expressões. O editor de expressão fornece IDE completo que a experiência de edição IntelliSense, que inclui coloração, ParamInfo, squiggles de erro, entre outros recursos. O compilador valida a expressão após está conectado. Se a expressão é inválido, um ícone de erro é exibido. O editor também pode ser aberto como uma caixa de diálogo **Editor de expressão** .
 
- As expressões são valores ou código literal de [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] associado aos argumentos ou propriedades. Elas contêm elementos de valor (por exemplo, variáveis, constantes, literais, Propriedades) que são combinadas com operações para gerar um novo valor. As expressões são escritas usando a sintaxe de VB.NET mesmo se o aplicativo estiver em um programa usando C#. Isso significa que a capitalização não importa, a comparação é executada usando um único sinal de igual ("=") em vez de ("= ="), os operadores boolianos são as palavras "and" e "or", em vez dos&#124;&#124;símbolos "& &" e "", e **nada** é usado em vez de **NULL**. Para obter mais informações sobre expressões e operadores no [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] e para alguns exemplos, consulte [operadores e expressões em Visual Basic](https://go.microsoft.com/fwlink/?LinkId=186818).
+ As expressões são valores ou código literal de [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] associado aos argumentos ou propriedades. Elas contêm elementos de valor (por exemplo, variáveis, constantes, literais, Propriedades) que são combinadas com operações para gerar um novo valor. As expressões são escritas usando a sintaxe de VB.NET mesmo se o aplicativo estiver em um programa usando C#. Isso significa que a capitalização não importa, a comparação é executada usando um único sinal de igual ("=") em vez de ("= ="), os operadores boolianos são as palavras "and" e "or", em vez dos&#124;&#124;símbolos "& &" e "", e **nada** é usado em vez de **NULL**. Para obter mais informações sobre expressões e operadores no [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] e para alguns exemplos, consulte [operadores e expressões em Visual Basic](https://msdn.microsoft.com/library/a1w3te48(VS.100).aspx).
 
  O **Editor de expressões** se comporta da seguinte maneira:
 
@@ -53,5 +53,5 @@ O editor de expressão é um controle de [!INCLUDE[wfd1](../includes/wfd1-md.md)
 
      Entrada de maneira alternativa/edição uma expressão é clique nas reticências ao lado do nome da propriedade na grade de propriedade. Isso abrirá o **Editor de expressão** como caixa de diálogo.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
  <xref:System.Activities.Presentation.View.ExpressionTextBox>

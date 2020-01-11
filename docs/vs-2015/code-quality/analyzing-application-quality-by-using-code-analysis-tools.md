@@ -15,12 +15,12 @@ caps.latest.revision: 26
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 8b85bbad909a05bacab361a49cc7e029482ad606
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: d4e45ade24ce792999d1f9b0f52d9c82703fc5a0
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74291208"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75849875"
 ---
 # <a name="analyzing-application-quality-by-using-code-analysis-tools"></a>Analisando a qualidade do aplicativo usando as ferramentas de análise de código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ Nesta seção [analisando a qualidade de código gerenciado](../code-quality/ana
 
  [Analisando a qualidade do driver usando ferramentas de análise de código](/windows-hardware/drivers/devtest/tools-for-verifying-drivers) A análise de código para drivers é uma ferramenta de verificação estática de tempo de compilação que detecta erros de C++ codificação básicos em C e programas e inclui um módulo especializado que é projetado para detectar erros no código de driver de modo kernel (principalmente). O SDV (verificador de driver estático) é uma ferramenta de verificação estática que analisa sistematicamente o código-fonte de drivers do modo kernel do Windows. SDV determina se o driver interage corretamente com o kernel do sistema operacional Windows.
 
- [Análise de código para avisos de drivers](https://go.microsoft.com/fwlink/?LinkId=225920) Descreve os avisos que a análise de código dos drivers relata quando detecta um possível erro no código do driver.
+ [Análise de código para avisos de drivers](https://msdn.microsoft.com/library/windows/hardware/ff550572(v=VS.85).aspx) Descreve os avisos que a análise de código dos drivers relata quando detecta um possível erro no código do driver.
 
 ## <a name="related-tasks"></a>Tarefas relacionadas
  [Medindo a complexidade e a manutenção do código gerenciado](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md) Insira a descrição aqui.

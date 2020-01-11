@@ -10,12 +10,12 @@ ms.assetid: 800fc739-acd2-4242-84cb-1d83b4d82cf9
 caps.latest.revision: 38
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 8c7ec729c81f11096a55e87cea528764e500b535
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 737311167fc1f444d5c0f8a5d2c27e2fe321da75
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297968"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851248"
 ---
 # <a name="using-code-coverage-to-determine-how-much-code-is-being-tested"></a>Usando cobertura de código para determinar quanto código está sendo testado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ Para determinar que proporção do código do projeto está sendo testada de fat
 
  ![Resultados da cobertura de código com cores](../test/media/codecoverage1.png "CodeCoverage1")
 
- **Requisitos**
+ **Requirements**
 
 - Visual Studio Enterprise
 
@@ -36,7 +36,7 @@ Para determinar que proporção do código do projeto está sendo testada de fat
 
 1. No menu **Teste**, escolha **Analisar Cobertura de Código**.
 
-2. Para ver quais linhas foram executadas, escolha ![Mostrar cor de cobertura do código ícone](../test/media/codecoverage-showcoloringicon.png "CodeCoverage-ShowColoringIcon")**Mostrar cores de cobertura de código**.
+2. Para ver quais linhas foram executadas, escolha o ![Ícone Mostrar Coloração de Cobertura de Código](../test/media/codecoverage-showcoloringicon.png "CodeCoverage-ShowColoringIcon")**Mostrar Coloração de Cobertura de Código**.
 
      Para alterar as cores ou usar a formatação em negrito, escolha **Ferramentas**, **Opções**, **Ambiente**, **Fontes e Cores**, **Mostrar configurações de: Editor de Texto**. Em **Exibir Itens**, ajuste os itens de cobertura.
 
@@ -81,7 +81,7 @@ Para determinar que proporção do código do projeto está sendo testada de fat
 
  Por exemplo, suponhamos que, ao executar um teste com a entrada “2 ", você descobre que 50% de uma função específica está coberta. Quando você executa o teste uma segunda vez com a entrada “- 2 " você consulta a exibição de cores de cobertura que a outra 50% da função está coberto. Agora você mescla os resultados das duas execuções de testes, e a exibição do relatório e da coloração de cobertura mostra que 100% da função foi coberta.
 
- Use o ![botão ícone para mesclar na janela de cobertura de código](../test/media/codecoverage-mergeicon.png "CodeCoverage-MergeIcon")**mesclar resultados da cobertura de código** para fazer isso. Você pode escolher qualquer combinação de execuções recentes ou resultados importados. Se você quiser combinar resultados exportados, importe-os primeiro.
+ Use o ![ícone do botão Mesclar na janela Cobertura de Código](../test/media/codecoverage-mergeicon.png "CodeCoverage-MergeIcon")**Mesclar Resultados da Cobertura de Código** para fazer isso. Você pode escolher qualquer combinação de execuções recentes ou resultados importados. Se você quiser combinar resultados exportados, importe-os primeiro.
 
  Use **Exportar Resultados da Cobertura de Código** para salvar os resultados de uma operação de mesclagem.
 
@@ -221,9 +221,9 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
 
  Use as seguintes macros:
 
- `ExcludeFromCodeCoverage(` *ExclusionName* `, L"` *FunctionName* `");`
+ `ExcludeFromCodeCoverage(` *Exclusionname* `, L"` *nomedafunção* `");`
 
- `ExcludeSourceFromCodeCoverage(` *ExclusionName* `, L"` *SourceFilePath* `");`
+ `ExcludeSourceFromCodeCoverage(` *Exclusionname* `, L"` *SourceFilePath* `");`
 
 - *ExclusionName* é qualquer nome exclusivo.
 
@@ -281,7 +281,7 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
 ## <a name="external-resources"></a>Recursos externos
 
 ### <a name="guidance"></a>{1&gt;Orientação&lt;1}
- [Testes de Entrega Contínua com o Visual Studio 2012 – Capítulo 2: Teste de Unidade: Testando o Interior](https://go.microsoft.com/fwlink/?LinkID=255188)
+ [Testes de Entrega Contínua com o Visual Studio 2012 – Capítulo 2: Teste de Unidade: Testando o Interior](https://msdn.microsoft.com/library/jj159340.aspx)
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
  [Personalizando análise de cobertura de código](../test/customizing-code-coverage-analysis.md) [solução de problemas](../test/troubleshooting-code-coverage.md) [de unidade de cobertura de código teste seu código](../test/unit-test-your-code.md)

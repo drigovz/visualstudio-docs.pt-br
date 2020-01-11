@@ -16,12 +16,12 @@ caps.latest.revision: 112
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5b44ec3fcab0512e50af1debcf6010c1dc584ed0
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 8f6047e6104467b5b0516fba26fc39f402dfaac9
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297132"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75845653"
 ---
 # <a name="using-saved-intellitrace-data"></a>Usando os dados salvos do IntelliTrace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -270,7 +270,7 @@ Vá para os pontos específicos da execução do aplicativo quando você iniciar
  [IntelliTrace](../debugger/intellitrace.md)  
   
 #### <a name="forums"></a>Fóruns  
- [Depurador do Visual Studio](https://go.microsoft.com/fwlink/?LinkId=262263)  
+ [Depurador do Visual Studio](https://social.msdn.microsoft.com/Forums/vsdebug)  
   
 #### <a name="guidance"></a>{1&gt;Orientação&lt;1}  
- [Teste para entrega contínua com o Visual Studio 2012 – capítulo 6: uma caixa de ferramentas de teste](https://go.microsoft.com/fwlink/?LinkID=255203)
+ [Teste para entrega contínua com o Visual Studio 2012 – capítulo 6: uma caixa de ferramentas de teste](https://msdn.microsoft.com/library/jj159337.aspx)

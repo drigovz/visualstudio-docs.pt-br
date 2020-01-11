@@ -14,12 +14,12 @@ ms.workload:
 - multiple
 author: kendrahavens
 manager: jillfra
-ms.openlocfilehash: dca1fbb8f199db56563f4107ec88b832ec445bde
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: cec8ea3ea091ab1ea65bcad2bd4cca139fd74042
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71254542"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75846817"
 ---
 # <a name="visual-studio-test-explorer-faq"></a>Perguntas frequentes sobre o Gerenciador de Testes do Visual Studio
 ::: moniker range=">=vs-2019"
@@ -35,15 +35,15 @@ Por enquanto, você pode clicar com o botão direito do mouse na coluna no Geren
 
 ## <a name="dynamic-test-discovery"></a>Detecção de testes dinâmica
 
-**O Gerenciador de Testes não está detectando meus testes definidos dinamicamente. (Por exemplo, teorias, adaptadores personalizados, características personalizadas, #ifdefs, etc.) Como faço para descobrir estes testes?**
+**O Gerenciador de testes não está descobrindo meus testes que são definidos dinamicamente. (Por exemplo, teorias, adaptadores personalizados, características personalizadas, #ifdefs, etc.) Como posso descobrir esses testes?**
 
 ::: moniker range=">=vs-2019"
 Crie seu projeto para executar a descoberta baseada em assembly.
 ::: moniker-end
 ::: moniker range="vs-2017"
-Compile o projeto e verifique se a descoberta baseada em assembly está ativada em **Ferramentas** > **Opções** > **Testar**.
+Crie seu projeto e verifique se a descoberta baseada em assembly está ativada em **ferramentas** > **Opções** > **teste**.
 ::: moniker-end
-A [Detecção de testes em tempo real](https://go.microsoft.com/fwlink/?linkid=862824) é a detecção de testes baseada na origem. Ele não pode descobrir testes que usam teorias, adaptadores personalizados, características `#ifdef` personalizadas, instruções e muito mais, pois eles são definidos em tempo de execução. Um build é necessário para que esses testes sejam localizados com precisão. No Visual Studio 2017 versão 15.6 e posteriores, a descoberta baseada em assembly (o detector tradicional) é executada somente depois dos builds. Essa configuração significa que a detecção de testes em tempo real localiza o máximo de testes possível enquanto você está editando e a descoberta baseada em assembly permite que os testes definidos dinamicamente apareçam após um build. A detecção de testes em tempo real melhora a capacidade de resposta, mas ainda permite que você obtenha resultados completos e precisos após um build.
+A [Detecção de testes em tempo real](https://devblogs.microsoft.com/dotnet/real-time-test-discovery/) é a detecção de testes baseada na origem. Ele não pode descobrir testes que usam teorias, adaptadores personalizados, características personalizadas, instruções de `#ifdef` e muito mais porque eles são definidos em tempo de execução. Um build é necessário para que esses testes sejam localizados com precisão. No Visual Studio 2017 versão 15.6 e posteriores, a descoberta baseada em assembly (o detector tradicional) é executada somente depois dos builds. Essa configuração significa que a detecção de testes em tempo real localiza o máximo de testes possível enquanto você está editando e a descoberta baseada em assembly permite que os testes definidos dinamicamente apareçam após um build. A detecção de testes em tempo real melhora a capacidade de resposta, mas ainda permite que você obtenha resultados completos e precisos após um build.
 
 ## <a name="test-explorer--plus-symbol"></a>Sinal de "+" (adição) do Gerenciador de Testes
 
@@ -56,24 +56,24 @@ O símbolo '+' (sinal de adição) indica que mais testes poderão ser descobert
 ::: moniker range="vs-2017"
 ## <a name="assembly-based-discovery"></a>Descoberta baseada em assembly
 
-**A descoberta baseada em assembly não está mais funcionando no meu projeto. Como faço para ativá-la novamente?**
+**A descoberta baseada em assembly não está mais funcionando para o meu projeto. Como fazer ativá-lo novamente?**
 
-Acesse **Ferramentas** > **Opções** > **Testar** e marque a caixa **Adicionalmente, detectar testes de assemblies compilados após builds.**
+Acesse **ferramentas** > **Opções** > **teste** e marque a caixa para **descobrir também os testes de assemblies compilados após as compilações.**
 
 ![Opção baseada em assembly](media/testex-toolsoptions.png)
 ::: moniker-end
 
 ## <a name="real-time-test-discovery"></a>Detecção de testes em tempo real
 
-**Agora os testes são exibidos no Gerenciador de Testes enquanto digito, sem a necessidade de compilar o projeto. O que mudou?**
+**Os testes agora aparecem no Gerenciador de testes enquanto eu digitar, sem precisar criar meu projeto. O que mudou?**
 
-Esse recurso é chamado de [Detecção de testes em tempo real](https://go.microsoft.com/fwlink/?linkid=862824). Ele usa um analisador Roslyn para encontrar testes e popular o Gerenciador de Testes em tempo real, sem exigir que você compile o projeto. Para obter mais informações sobre o comportamento da detecção de testes para testes definidos dinamicamente, como teorias ou características personalizadas, confira [Detecção de testes dinâmica](#dynamic-test-discovery).
+Esse recurso é chamado de [Detecção de testes em tempo real](https://devblogs.microsoft.com/dotnet/real-time-test-discovery/). Ele usa um analisador Roslyn para encontrar testes e popular o Gerenciador de Testes em tempo real, sem exigir que você compile o projeto. Para obter mais informações sobre o comportamento da detecção de testes para testes definidos dinamicamente, como teorias ou características personalizadas, confira [Detecção de testes dinâmica](#dynamic-test-discovery).
 
 ## <a name="real-time-test-discovery-compatibility"></a>Compatibilidade da detecção de testes em tempo real
 
 **Quais linguagens e estruturas de teste podem usar a detecção de testes em tempo real?**
 
-A [Detecção de testes em tempo real](https://go.microsoft.com/fwlink/?linkid=862824) só funciona em linguagens gerenciadas (C# e Visual Basic), pois é compilada com o compilador Roslyn. Por enquanto, a detecção de testes em tempo real só funciona para as estruturas xUnit, NUnit e MSTest.
+A [Detecção de testes em tempo real](https://devblogs.microsoft.com/dotnet/real-time-test-discovery/) só funciona em linguagens gerenciadas (C# e Visual Basic), pois é compilada com o compilador Roslyn. Por enquanto, a detecção de testes em tempo real só funciona para as estruturas xUnit, NUnit e MSTest.
 
 ## <a name="test-explorer-logs"></a>Logs do Gerenciador de Testes
 
@@ -85,7 +85,7 @@ Navegue para **Ferramentas** > **Opções** > **Teste** e localize a seção Log
 
 **Por que meus testes em projetos UWP não são detectados enquanto eu não implanto o aplicativo?**
 
-Os testes UWP têm como destino um tempo de execução diferente quando o aplicativo é implantado. Isso significa que para encontrar testes com precisão em projetos UWP, além de compilar seu projeto, você também precisa implantá-lo.
+Os testes UWP têm como destino um runtime diferente quando o aplicativo é implantado. Isso significa que para encontrar testes com precisão em projetos UWP, além de compilar seu projeto, você também precisa implantá-lo.
 
 ## <a name="test-explorer-sorting"></a>Classificação do Gerenciador de Testes
 
@@ -97,7 +97,7 @@ O modo de exibição de hierarquia classifica os testes em ordem alfabética e n
 
 ## <a name="test-explorer-hierarchy-view"></a>Modo de exibição da hierarquia do Gerenciador de Testes
 
-**Na exibição de hierarquia, há ícones para testes aprovados, com falha, ignorados e não executados, ao lado dos agrupamentos do nó pai. O que esses ícones significam?**
+**No modo de exibição de hierarquia, há os ícones aprovado, falha, ignorado e não executado ao lado dos agrupamentos de nós pai. O que esses ícones significam?**
 
 Os ícones ao lado dos agrupamentos Projeto, Namespace e Classe mostram o estado dos testes nesse agrupamento. Consulte a tabela a seguir.
 
@@ -121,7 +121,7 @@ No Visual Studio 2019, serão removidas algumas APIs de janela de teste que fora
 
 Todos os projetos de teste devem incluir a referência ao NuGet do adaptador de teste do .NET no arquivo .csproj. Caso contrário, a saída desse teste será exibida no projeto se a detecção por uma extensão do adaptador de teste for iniciada após um build, ou se o usuário tentar executar os testes selecionados:
 
-O **projeto de teste{} não faz referência a nenhum adaptador do NuGet do .NET. A execução ou a detecção de testes pode não funcionar para esse projeto. Recomendamos fazer referencia aos adaptadores de teste do NuGet em cada projeto de teste do .NET na solução.**
+**O projeto de teste {} não faz referência a nenhum adaptador .NET NuGet. A descoberta de teste ou execução pode não funcionar para este projeto. É recomendável referenciar os adaptadores de teste do NuGet em cada projeto de teste .NET na solução.**
 
 Em vez de usar extensões do adaptador de teste, os projetos são solicitados a usar os pacotes do adaptador de teste do NuGet. Esse requisito melhora bastante o desempenho e causa menos problemas com a integração contínua. Leia mais sobre a substituição da extensão do adaptador de teste do .NET nas [notas de versão](/visualstudio/releasenotes/vs2017-relnotes-v15.8#testadapterextension).
 
@@ -138,7 +138,7 @@ Em vez de usar extensões do adaptador de teste, os projetos são solicitados a 
 
 Projetos de teste do UWP recentes especificam uma propriedade de build da plataforma de teste que permite um melhor desempenho para identificar aplicativos de teste. Se um projeto de teste da UWP for inicializado antes do Visual Studio versão 15.7, o seguinte erro poderá aparecer em **Saída** > **Testes**:
 
-**System.AggregateException: Um ou mais erros ocorreram. ---> System.InvalidOperationException: O seguinte TestContainer não foi encontrado {} em Microsoft.VisualStudio.TestWindow.Controller.TestContainerProvider \<GetTestContainerAsync>d__61.MoveNext()**
+**System. AggregateException: um ou mais erros ocorreram. ---> System. InvalidOperationException: o TestContainer a seguir não foi encontrado {} em Microsoft. VisualStudio. TestWindow. Controller. TestContainerProvider \<GetTestContainerAsync > d__61. MoveNext ()**
 
 Para corrigir esse erro:
 
@@ -171,7 +171,7 @@ vsregedit set “C:\Program Files (x86)\Microsoft Visual Studio\Preview\Enterpri
 > [!NOTE]
 > Você pode desativar o sinalizador com o mesmo comando, usando o valor 0 em vez de 1 após dword.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting?displayProperty=fullName>
 - [Criar e executar testes de unidade para código existente](https://msdn.microsoft.com/e8370b93-085b-41c9-8dec-655bd886f173)

@@ -11,18 +11,18 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/18/2016
 ms.author: ghogen
-ms.openlocfilehash: f1cf5634985683fc86a738d93a6cfa352b52bd24
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: c76113f014d8be3bd706ef02ec1135a84cbcae82
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74290986"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75849954"
 ---
 # <a name="constructing-filter-strings-for-the-table-designer"></a>Construindo cadeias de caracteres de filtro para o Designer de Tabela
-## <a name="overview"></a>Visão geral
-Para filtrar dados em uma tabela do Azure que é exibida no **Table Designer**do Visual Studio, construa uma cadeia de caracteres de filtro e insira no campo de filtro. A sintaxe de cadeia de caracteres de filtro é definida pelo WCF Data Services e é semelhante a uma cláusula SQL WHERE, mas é enviada para o serviço Tabela por meio de uma solicitação HTTP. O **Designer de tabela** lida com a codificação correta para você, portanto para filtrar um valor da propriedade desejada, você só precisa digitar o nome da propriedade, operador de comparação, valor dos critérios e, opcionalmente, o operador booliano no campo de filtro. Não é necessário incluir a opção de consulta $filter como você faria se estivesse criando uma URL para consultar a tabela por meio de [Referência de API de REST de serviços de armazenamento](https://go.microsoft.com/fwlink/p/?LinkId=400447).
+## <a name="overview"></a>{1&gt;Visão Geral&lt;1}
+Para filtrar dados em uma tabela do Azure que é exibida no **Table Designer**do Visual Studio, construa uma cadeia de caracteres de filtro e insira no campo de filtro. A sintaxe de cadeia de caracteres de filtro é definida pelo WCF Data Services e é semelhante a uma cláusula SQL WHERE, mas é enviada para o serviço Tabela por meio de uma solicitação HTTP. O **Designer de tabela** lida com a codificação correta para você, portanto para filtrar um valor da propriedade desejada, você só precisa digitar o nome da propriedade, operador de comparação, valor dos critérios e, opcionalmente, o operador booliano no campo de filtro. Não é necessário incluir a opção de consulta $filter como você faria se estivesse criando uma URL para consultar a tabela por meio de [Referência de API de REST de serviços de armazenamento](https://msdn.microsoft.com/library/dd179355.aspx).
 
-O WCF Data Services é baseado no [Open Data Protocol](https://go.microsoft.com/fwlink/p/?LinkId=214805) (OData). Para obter detalhes sobre a opção de consulta de sistema do filtro ( **$filter**), consulte a [Especificação de convenções de URI do OData](https://go.microsoft.com/fwlink/p/?LinkId=214806).
+O WCF Data Services é baseado no [Open Data Protocol](https://www.odata.org/) (OData). Para obter detalhes sobre a opção de consulta de sistema do filtro ( **$filter**), consulte a [Especificação de convenções de URI do OData](https://www.odata.org/documentation/odata-version-2-0/uri-conventions/).
 
 ## <a name="comparison-operators"></a>Operadores de comparação
 Os seguintes operadores lógicos têm suporte para todos os tipos de propriedade:
@@ -35,7 +35,7 @@ Os seguintes operadores lógicos têm suporte para todos os tipos de propriedade
 | lt |Menor que |Preço lt 20 |
 | le |Menor que ou igual a |Preço le 100 |
 | ne |Não é igual a |City ne 'London' |
-| e |And |Preço le 200 e Preço gt 3,5 |
+| e |e |Preço le 200 e Preço gt 3,5 |
 | ou |Ou |Preço le 3,5 ou Preço gt 200 |
 | not |não |não isAvailable |
 
@@ -43,7 +43,7 @@ Ao construir uma cadeia de caracteres de filtro, as regras a seguir são importa
 
 * Use os operadores lógicos para comparar uma propriedade a um valor. Observe que não é possível comparar uma propriedade a um valor dinâmico; um lado da expressão deve ser uma constante.
 * Todas as partes da cadeia de caracteres de filtro diferenciam maiúsculas de minúsculas.
-* O valor da constante deve ser do mesmo tipo de dados como a propriedade para que o filtro retorne resultados válidos. Para obter informações sobre tipos de propriedades com suporte, consulte [Noções básicas sobre o modelo de dados do serviço Tabela](https://go.microsoft.com/fwlink/p/?LinkId=400448).
+* O valor da constante deve ser do mesmo tipo de dados como a propriedade para que o filtro retorne resultados válidos. Para obter informações sobre tipos de propriedades com suporte, consulte [Noções básicas sobre o modelo de dados do serviço Tabela](https://msdn.microsoft.com/library/dd179338.aspx).
 
 ## <a name="filtering-on-string-properties"></a>Filtrando nas propriedades de cadeia de caracteres
 Ao filtrar nas propriedades de cadeia de caracteres, coloque a constante de cadeia de caracteres entre aspas simples.
@@ -103,7 +103,7 @@ not IsActive
 ```
 
 ## <a name="filtering-on-datetime-properties"></a>Filtrando em Propriedades DateTime
-Para filtrar um valor DateTime, especifique a palavra-chave **datetime** , seguida pela constante de data/hora entre aspas. A constante de data/hora deve estar no formato UTC combinado, conforme descrito em [Formatando valores de propriedade DateTime](https://go.microsoft.com/fwlink/p/?LinkId=400449).
+Para filtrar um valor DateTime, especifique a palavra-chave **datetime** , seguida pela constante de data/hora entre aspas. A constante de data/hora deve estar no formato UTC combinado, conforme descrito em [Formatando valores de propriedade DateTime](https://msdn.microsoft.com/library/azure/dd894027.aspx).
 
 O exemplo a seguir retorna entidades nas quais a propriedade CustomerSince é igual a 10 de julho de 2008:
 

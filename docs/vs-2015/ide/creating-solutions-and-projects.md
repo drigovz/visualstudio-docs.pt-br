@@ -18,12 +18,12 @@ caps.latest.revision: 49
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 03ecd3fcc253f255afc59c2d6412f3864fe253b8
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 10375e00eb850691e88d01c56a87bb967c40e9ea
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300595"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850563"
 ---
 # <a name="creating-solutions-and-projects"></a>Criando soluções e projetos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ Os projetos são os contêineres lógicos para tudo que é necessário para cria
  É necessário ter o .NET Framework 3.5 instalado em seu sistema para acessar as versões de estrutura anteriores à versão 4.0.
 
 ## <a name="downloading-sample-solutions"></a>Baixando soluções de amostra
- É possível usar o Visual Studio para baixar e instalar soluções de amostra na [Galeria de Códigos do MSDN](https://go.microsoft.com/fwlink/?LinkId=254185).
+ É possível usar o Visual Studio para baixar e instalar soluções de amostra na [Galeria de Códigos do MSDN](https://code.msdn.microsoft.com/).
 
  É possível baixar as amostras individualmente ou baixar um Pacote de Amostras que contém amostras relacionadas que compartilham uma tecnologia ou tópico. Você receberá uma notificação quando as alterações no código-fonte forem publicadas para qualquer exemplo baixado.
 
@@ -93,5 +93,5 @@ Os projetos são os contêineres lógicos para tudo que é necessário para cria
 
 3. Selecione o diretório que contém a solução e pressione Excluir.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
  [Soluções e projetos](../ide/solutions-and-projects-in-visual-studio.md) [NIB como criar soluções de vários projetos](https://msdn.microsoft.com/02ecd6dd-0114-46fe-b335-ba9c5e3020d6)

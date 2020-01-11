@@ -11,19 +11,19 @@ caps.latest.revision: 10
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 2fa11cd0b29f3b8ee6008b8c0b3369b16812f0e5
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 72c92b4431c21c27bc1fe2ff86b24c850cc34694
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74302783"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75846088"
 ---
 # <a name="using-the-legacy-workflow-designer"></a>Usando Designer de Fluxo de Trabalho herdado
 [!INCLUDE[wfd2](../includes/wfd2-md.md)] herdado fornecido por [!INCLUDE[vs2010](../includes/vs2010-md.md)] pode ser usado para direcionar [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] ou [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].
 
  Ele é acessado selecionando a opção **.NET Framework 3,0** ou a opção **.NET Framework 3,5** na lista suspensa na parte superior da janela **novo projeto** . A opção padrão em [!INCLUDE[vs2010](../includes/vs2010-md.md)] é **.NET Framework 4** , que é usada para criar [!INCLUDE[wf](../includes/wf-md.md)] aplicativos que se destinam ao [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)].
 
- ph x="1" /&gt; fornece uma maneira de criar aplicativos graficamente de [!INCLUDE[wfd2](../includes/wfd2-md.md)] usando a interface do usuário e de [!INCLUDE[wf](../includes/wf-md.md)] . [!INCLUDE[wf](../includes/wf-md.md)] aplicativos são compostos de etapas de processo de fluxo de trabalho chamadas atividades. Para criar um fluxo de trabalho, redija as atividades na superfície de design arrastando seus respectivos designers de atividade da **caixa de ferramentas** para a superfície de design.
+ ph x="1" /&gt; fornece uma maneira de criar aplicativos graficamente de [!INCLUDE[wf](../includes/wf-md.md)] usando a interface do usuário e de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] . aplicativos de[!INCLUDE[wf](../includes/wf-md.md)] são compostos das etapas do processo de fluxo de trabalho chamadas atividades. Para criar um fluxo de trabalho, redija as atividades na superfície de design arrastando seus respectivos designers de atividade da **caixa de ferramentas** para a superfície de design.
 
  A tabela a seguir lista os principais recursos de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para Windows Workflow Foundation.
 
@@ -53,5 +53,5 @@ ms.locfileid: "74302783"
 
  [Designer herdado para a ajuda da interface do usuário do Windows Workflow Foundation](../workflow-designer/legacy-designer-for-windows-workflow-foundation-ui-help.md)
 
-## <a name="see-also"></a>Consulte também
- [Desenvolvendo fluxos de trabalho](https://go.microsoft.com/fwlink?LinkID=65010)
+## <a name="see-also"></a>Veja também
+ [Desenvolvendo fluxos de trabalho](https://msdn2.microsoft.com/library/bb628448.aspx)

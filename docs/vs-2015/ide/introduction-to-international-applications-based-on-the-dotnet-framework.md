@@ -26,12 +26,12 @@ caps.latest.revision: 12
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: f394cca9a248b5304a165f68a60b966d8e3684b2
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 0d57cee8591196d12e51e58fb0e5e6a4a2cdf94a
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74291370"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75848370"
 ---
 # <a name="introduction-to-international-applications-based-on-the-net-framework"></a>Introdução a aplicativos internacionais com base no .NET Framework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ No [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], há duas partes para criar um a
 
  O modelo de localização do [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] consiste em um assembly principal que contém o código do aplicativo e os recursos de fallback – cadeias de caracteres, imagens e outros objetos para o idioma no qual o aplicativo foi originalmente desenvolvido. Cada aplicativo localizado terá assemblies satélites, ou assemblies que contêm somente os recursos localizados. Como o assembly principal sempre contém os recursos de fallback, se um recurso não for encontrado no assembly satélite localizado, o <xref:System.Resources.ResourceManager> tentará carregá-lo de forma hierárquica, eventualmente recorrendo ao recurso no assembly principal. O sistema de fallback de recurso é explicado mais detalhadamente em [Organização hierárquica de recursos para localização](../ide/hierarchical-organization-of-resources-for-localization.md).
 
- Um recurso de localização que você deve considerar usar é o glossário para todos os produtos localizados da Microsoft. Esse arquivo CSV contém mais de 12.000 termos em inglês, além das traduções de termos em até 59 idiomas diferentes. O glossário está disponível para download na página da Web [Traduções de terminologia da Microsoft](https://go.microsoft.com/fwlink/?LinkId=128146).
+ Um recurso de localização que você deve considerar usar é o glossário para todos os produtos localizados da Microsoft. Esse arquivo CSV contém mais de 12.000 termos em inglês, além das traduções de termos em até 59 idiomas diferentes. O glossário está disponível para download na página da Web [Traduções de terminologia da Microsoft](https://msdn.microsoft.com/goglobal/bb688105.aspx).
 
  O sistema do projeto dos aplicativos Windows Forms pode gerar arquivos de recurso para fallback e para cada cultura de interface do usuário adicional desejada. O arquivo de recurso de fallback é compilado no assembly principal e os arquivos de recurso específicos à cultura são então compilados em assemblies satélites, um para cada cultura de interface do usuário. Ao compilar um projeto, os arquivos de recursos são compilados do formato XML do Visual Studio (.resx) para um formato binário intermediário (.resources), que são então inseridos em assemblies satélites.
 
@@ -48,6 +48,6 @@ No [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], há duas partes para criar um a
 
  Quando um aplicativo localizado é executado, sua aparência é determinada por dois valores de cultura. (Uma *cultura* é um conjunto de informações de preferência do usuário relacionadas ao idioma, ao ambiente e às convenções culturais do usuário.) A configuração de cultura de interface do usuário determina quais recursos serão carregados. A cultura de interface do usuário é definida como `UICulture` nos arquivos Web.config e em diretivas de páginas e como <xref:System.Globalization.CultureInfo.CurrentUICulture%2A> no código do Visual Basic ou do Visual C#. A configuração de cultura determina a formatação de valores, como datas, números, moeda e assim por diante. A cultura é definida como `Culture` nos arquivos Web.config e em diretivas de páginas e como <xref:System.Globalization.CultureInfo.CurrentCulture%2A> no código do Visual Basic ou do Visual C#.
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
  <xref:System.Globalization> <xref:System.Resources>
  [Globalizando e localizando](../ide/globalizing-and-localizing-applications.md) [segurança de aplicativos e assemblies de satélite localizados](../ide/security-and-localized-satellite-assemblies.md)

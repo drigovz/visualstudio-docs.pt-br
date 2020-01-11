@@ -16,12 +16,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9b535737860b846aadecb6b73b4bd26659db37b1
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 296aec3b2b5cd307400b230375a7171f158fee60
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74289714"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75847689"
 ---
 # <a name="how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications"></a>Como adicionar um fornecedor confiável a um computador cliente para aplicativos ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ Com a implantação de aplicativo confiável, você pode configurar computadores
   
 1. Obtenha um certificado digital de uma autoridade de certificação.  
   
-2. Exporte o certificado para o formato base64 X. 509 (. cer). Para obter mais informações sobre formatos de certificado, consulte [exportar um certificado](https://go.microsoft.com/fwlink/?LinkId=164793).  
+2. Exporte o certificado para o formato base64 X. 509 (. cer). Para obter mais informações sobre formatos de certificado, consulte [exportar um certificado](https://technet.microsoft.com/library/cc730988(WS.10).aspx).  
   
 3. No prompt de comando em computadores cliente, execute o seguinte comando:  
   
@@ -51,7 +51,7 @@ Com a implantação de aplicativo confiável, você pode configurar computadores
   
 1. Obtenha um certificado digital de uma autoridade de certificação.  
   
-2. Exporte o certificado para o formato base64 X. 509 (. cer). Para obter mais informações sobre formatos de certificado, consulte [exportar um certificado](https://go.microsoft.com/fwlink/?LinkId=164793).  
+2. Exporte o certificado para o formato base64 X. 509 (. cer). Para obter mais informações sobre formatos de certificado, consulte [exportar um certificado](https://technet.microsoft.com/library/cc730988(WS.10).aspx).  
   
 3. No prompt de comando em computadores cliente, execute o seguinte comando:  
   
@@ -59,7 +59,7 @@ Com a implantação de aplicativo confiável, você pode configurar computadores
   
      **Certmgr. exe-adicione Good. cer-c-s-r localMachine TrustedPublisher**  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Veja também  
  [Walkthrough: Manually Deploying a ClickOnce Application](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)  (Instruções passo a passo: implantando manualmente um aplicativo ClickOnce)  
  [Protegendo aplicativos ClickOnce](../deployment/securing-clickonce-applications.md)   
  [Segurança de acesso do código para aplicativos ClickOnce](../deployment/code-access-security-for-clickonce-applications.md)   

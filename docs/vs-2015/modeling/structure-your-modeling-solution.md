@@ -9,12 +9,12 @@ caps.latest.revision: 16
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 83606b56e6509f1db77b590ec44d991ef97cf82e
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: d0c001ec8310759309c88c49c37050516b110b81
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74298161"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850798"
 ---
 # <a name="structure-your-modeling-solution"></a>Estruturar a solução de modelagem
 
@@ -34,7 +34,7 @@ Em um projeto médio ou grande, a estrutura da equipe é baseada na estrutura do
 
 #### <a name="to-divide-an-application-into-layers"></a>Para dividir um aplicativo em camadas
 
-1. Baseie a estrutura de suas soluções na estrutura do seu aplicativo, como aplicativo Web, aplicativo de serviço ou aplicativo de área de trabalho. Uma variedade de arquiteturas comuns é discutida em [arquétipos de aplicativo no guia de arquitetura de aplicativos da Microsoft](https://go.microsoft.com/fwlink/?LinkId=196681).
+1. Baseie a estrutura de suas soluções na estrutura do seu aplicativo, como aplicativo Web, aplicativo de serviço ou aplicativo de área de trabalho. Uma variedade de arquiteturas comuns é discutida em [arquétipos de aplicativo no guia de arquitetura de aplicativos da Microsoft](https://docs.microsoft.com/previous-versions/msp-n-p/ee658107(v=pandp.10)?redirectedfrom=MSDN).
 
 2. Crie uma solução de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], que chamaremos de solução de arquitetura. Essa solução será usada para criar o design geral do sistema. Ele conterá modelos, mas sem código.
 
@@ -100,7 +100,7 @@ Por exemplo, se você usa com frequência as soluções que têm camadas de apre
 
 #### <a name="to-create-a-solution-template"></a>Para criar um modelo de solução
 
-1. [Baixe e instale o assistente de exportação de modelo](https://go.microsoft.com/fwlink/?LinkId=196686), caso ainda não tenha feito isso.
+1. [Baixe e instale o assistente de exportação de modelo](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.ExportTemplateWizard), caso ainda não tenha feito isso.
 
 2. Crie a estrutura da solução que você deseja usar como ponto de partida para projetos futuros.
 
@@ -109,7 +109,7 @@ Por exemplo, se você usa com frequência as soluções que têm camadas de apre
 4. Seguindo as instruções no assistente, selecione os projetos que você deseja incluir no modelo, forneça um nome e uma descrição para o modelo e especifique um local de saída.
 
 > [!NOTE]
-> O material neste tópico é dissociado e parafraseado das diretrizes de ferramentas de arquitetura do Visual Studio, escrito pelo Visual Studio ALM Rangers, que é uma colaboração entre MVPs (maior valor para profissionais), serviços da Microsoft e o Visual Studio equipe e gravadores de produto. [Clique aqui para baixar o pacote de diretrizes completo.](https://go.microsoft.com/fwlink/?LinkID=191984)
+> O material neste tópico é dissociado e parafraseado das diretrizes de ferramentas de arquitetura do Visual Studio, escrito pelo Visual Studio ALM Rangers, que é uma colaboração entre MVPs (maior valor para profissionais), serviços da Microsoft e o Visual Studio equipe e gravadores de produto. [Clique aqui para baixar o pacote de diretrizes completo.](https://archive.codeplex.com/?p=vsarchitectureguide)
 
 ## <a name="related-materials"></a>Materiais relacionados
 
@@ -117,7 +117,7 @@ Por exemplo, se você usa com frequência as soluções que têm camadas de apre
 
 [Diretrizes de ferramentas de arquitetura do Visual Studio](../modeling/visual-studio-architecture-tooling-guidance.md) – diretrizes adicionais sobre como gerenciar modelos em uma equipe
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 [Gerenciar modelos e diagramas sob controle de versão](../modeling/manage-models-and-diagrams-under-version-control.md)
 [usar modelos em seu processo de desenvolvimento](../modeling/use-models-in-your-development-process.md)

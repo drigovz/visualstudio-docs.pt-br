@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: 6c9c2e281ace3b483d1f37552fba0cc6f490978a
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: cd26e3d37779337ee39a1afa68aa3ba9ab56d376
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74298133"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75846550"
 ---
 # <a name="publish-webapplicationwebsite-windows-powershell-script"></a>Publish-WebApplicationWebSite (script do Windows PowerShell)
 ## <a name="syntax"></a>Sintaxe
@@ -32,15 +32,15 @@ Publish-WebApplicationWebSite
 -Verbose
 ```
 
-## <a name="configuration"></a>Configuração
+## <a name="configuration"></a>Configuração do
 O caminho para o arquivo de configuração de JSON que descreve os detalhes da implantação.
 
 | Parâmetro | Valor padrão |
 | --- | --- |
-| Aliases |none |
+| Aliases |nenhum |
 | Necessário? |true |
-| Posição |chamada |
-| Valor padrão |none |
+| Position |chamada |
+| Valor padrão |nenhum |
 | Aceitar entrada do Pipeline? |false |
 | Aceitar caracteres curinga? |false |
 
@@ -49,22 +49,22 @@ O nome da assinatura do Azure na qual você deseja criar o site.
 
 | Parâmetro | Valor padrão |
 | --- | --- |
-| Aliases |none |
+| Aliases |nenhum |
 | Necessário? |false |
-| Posição |chamada |
-| Valor padrão |none |
+| Position |chamada |
+| Valor padrão |nenhum |
 | Aceitar entrada do Pipeline? |false |
 | Aceitar caracteres curinga? |false |
 
 ## <a name="webdeploypackage"></a>WebDeployPackage
-O caminho para o pacote de implantação Web a publicar no site. Você pode criar este pacote usando o assistente Publicar Web no Visual Studio. Para obter mais informações, consulte [Introdução aos serviços de nuvem do Azure e ASP.NET](https://go.microsoft.com/fwlink/p/?LinkID=623089).
+O caminho para o pacote de implantação Web a publicar no site. Você pode criar este pacote usando o assistente Publicar Web no Visual Studio. Para obter mais informações, consulte [Introdução aos serviços de nuvem do Azure e ASP.NET](https://docs.microsoft.com/visualstudio/azure/vs-azure-tools-publish-webapplicationwebsite-windows-powershell-script?view=vs-2019).
 
 | Parâmetro | Valor padrão |
 | --- | --- |
-| Aliases |none |
+| Aliases |nenhum |
 | Necessário? |false |
-| Posição |chamada |
-| Valor padrão |none |
+| Position |chamada |
+| Valor padrão |nenhum |
 | Aceitar entrada do Pipeline? |false |
 | Aceitar caracteres curinga? |false |
 
@@ -73,10 +73,10 @@ O nome do administrador e a senha do Banco de Dados SQL no Azure.
 
 | Parâmetro | Valor padrão |
 | --- | --- |
-| Aliases |none |
+| Aliases |nenhum |
 | Necessário? |false |
-| Posição |chamada |
-| Valor padrão |none |
+| Position |chamada |
+| Valor padrão |nenhum |
 | Aceitar entrada do Pipeline? |false |
 | Aceitar caracteres curinga? |false |
 
@@ -85,9 +85,9 @@ Se seu valor for true, imprimir mensagens do script para o fluxo de saída.
 
 | Parâmetro | Valor padrão |
 | --- | --- |
-| Aliases |none |
+| Aliases |nenhum |
 | Necessário? |false |
-| Posição |chamada |
+| Position |chamada |
 | Valor padrão |false |
 | Aceitar entrada do Pipeline? |false |
 | Aceitar caracteres curinga? |false |
@@ -123,5 +123,5 @@ O arquivo de configuração JSON especifica os detalhes daquilo que está para s
 
 Você pode editar o arquivo de configuração JSON para alterar o que é implantado. Uma seção de site é obrigatória, mas a seção de banco de dados é opcional.
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
 Para obter mais informações, consulte [WebApplicationVM de publicação (script do Windows PowerShell)](vs-azure-tools-publish-webapplicationvm.md)
