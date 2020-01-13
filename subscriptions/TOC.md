@@ -88,7 +88,7 @@
 ### [Assinantes que entram com emails pessoais](personal-email-sign-ins.md)
 ### [Gerenciando o Visual Studio com o GitHub Enterprise](assign-github.md)
 # Recursos
-## [White paper de licenciamento do Visual Studio](https://aka.ms/vslicensing)
+## [White paper de licenciamento do Visual Studio](https://visualstudio.microsoft.com/wp-content/uploads/2019/06/Visual-Studio-Licensing-Whitepaper-May-2019.pdf)
 ## [Comparar opções e preços de assinatura](https://visualstudio.microsoft.com/vs/pricing)
 ## [Comparar os recursos do IDE do Visual Studio](https://visualstudio.microsoft.com/vs/compare)
 ## [Suporte à administração e às assinaturas do Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs)
