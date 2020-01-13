@@ -11,12 +11,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 24cc456058f4a87426261ce53fbecb2d919d6a2d
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 716345cd2df3e941ea3d50cfc1519dc86dcd7077
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75846355"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918633"
 ---
 # <a name="development-best-practices-for-com-vsto-and-vba-add-ins-in-office"></a>Práticas recomendadas de desenvolvimento para os suplementos COM, VSTO e VBA no Office
   Se você estiver desenvolvendo suplementos COM, VSTO ou VBA para Office, siga as práticas recomendadas de desenvolvimento descritas neste artigo.   Isso ajuda a garantir que:
@@ -61,7 +61,7 @@ Os clientes estão solicitando que os ISVs forneçam instruções de suporte par
 
 Para fornecer instruções de suporte para aplicativos cliente do Office (por exemplo, Word ou Excel), primeiro verifique se os suplementos são executados na versão atual do Office e, em seguida, confirme para fornecer atualizações se o seu suplemento for interrompido em uma versão futura. Você não precisa testar seus suplementos quando a Microsoft lança uma nova compilação ou uma atualização para o Office. A Microsoft raramente altera a plataforma de extensibilidade COM, VSTO e VBA no Office, e essas alterações serão bem documentadas.
 
->Importante: a Microsoft mantém uma lista de suplementos com suporte para relatórios de preparação e informações de contato de ISV. Para obter o suplemento listado, consulte [https://docs.microsoft.com/configmgr/desktop-analytics/ready-for-windows](https://docs.microsoft.com/configmgr/desktop-analytics/ready-for-windows).
+>Importante: a Microsoft mantém uma lista de suplementos com suporte para relatórios de preparação e informações de contato de ISV. Para obter o suplemento listado, consulte [/ConfigMgr/desktop-Analytics/Ready-for-Windows](/configmgr/desktop-analytics/ready-for-windows).
 
 ## <a name="use-process-monitor-to-help-debug-installation-or-loading-issues"></a>Use o Process Monitor para ajudar a depurar problemas de instalação ou de carregamento
 Se o seu suplemento tiver problemas de compatibilidade durante a instalação ou carga, eles poderão estar relacionados a problemas com o acesso ao arquivo ou ao registro. Use o [Monitor de processos](/sysinternals/downloads/procmon) ou uma ferramenta de depuração semelhante para registrar e comparar o comportamento em um ambiente de trabalho para ajudar a identificar o problema.

@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
-ms.openlocfilehash: a151e16537eb143f27e9fd518cdc2495ac954563
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 59996180661806eee60d18ab4b7b5fd26f4a2e7b
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75851378"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75915591"
 ---
 # <a name="configuring-your-azure-project-in-visual-studio-to-use-multiple-service-configurations"></a>Configurando seu projeto do Azure no Visual Studio para usar várias configurações de serviço
 
@@ -57,7 +57,7 @@ Por padrão, o diagnóstico é habilitado para a função web. A conta de armaze
 
 ## <a name="settings-page"></a>Página Configurações
 
-Na página **Configurações**, você pode adicionar as configurações a uma configuração como pares nome-valor. O código em execução na função pode ler os valores das suas configurações em runtime usando classes fornecidas pelo [Biblioteca Gerenciada do Azure](https://msdn.microsoft.com/library/azure/dn602775(v=azure.11).aspx), especificamente o método [GetConfigurationSettingValue](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleenvironment.getconfigurationsettingvalue.aspx).
+Na página **Configurações**, você pode adicionar as configurações a uma configuração como pares nome-valor. O código em execução na função pode ler os valores das suas configurações em runtime usando classes fornecidas pelo [Biblioteca Gerenciada do Azure](/previous-versions/azure/dn602775(v=azure.11)), especificamente o método [GetConfigurationSettingValue](/previous-versions/azure/reference/ee772857(v=azure.100)).
 
 ### <a name="configuring-a-connection-string-for-a-storage-account"></a>Configurando uma cadeia de conexão para uma conta de armazenamento
 

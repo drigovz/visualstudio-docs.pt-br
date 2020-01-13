@@ -1,7 +1,7 @@
 ---
 title: Depurar em tempo de design | Microsoft Docs
-ms.custom: seodec18
-ms.date: 11/21/2018
+ms.custom: ''
+ms.date: 01/10/2019
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -16,26 +16,26 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 82e82a75ce5ecff8e9b7e6d0b6aaf2e29728fc45
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: beb16ae52f880e31bd19a185d47b13c02026752f
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62901053"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916152"
 ---
-# <a name="debug-at-design-time-in-visual-studio-c-c-visual-basic-f"></a>Depurar em tempo de design no Visual Studio (C#, C++, Visual Basic, F#)
+# <a name="debug-at-design-time-in-visual-studio-c-ccli-visual-basic-f"></a>Depurar em tempo de design no Visual StudioC#( C++,/CLI, Visual Basic F#,)
 
-Para depurar o código em tempo de design em vez de enquanto um aplicativo está em execução, você pode usar o **imediato** janela.
+Para depurar o código em tempo de design em vez de enquanto um aplicativo está em execução, você pode usar a janela **imediata** .
 
-Para depurar o código XAML por trás de um aplicativo no designer XAML, como o código de associação de dados, você pode usar **Debug** > **anexar ao processo**.
+Para depurar o código XAML por trás de um aplicativo do designer XAML, como cenários de ligação de dados declarativos, você pode usar **debug** > **anexar ao processo**.
 
 ## <a name="use-the-immediate-window"></a>Usar a janela imediata
 
-Você pode usar o Visual Studio **imediato** janela para executar uma função ou sub-rotina sem executar seu aplicativo. Se a função ou sub-rotina contiver um ponto de interrupção, o Visual Studio interromperá no ponto de interrupção. Então, você poderá usar o depurador do Windows para examinar o estado do programa. Esse recurso é chamado de *depuração em tempo de design*.
+Você pode usar a janela **imediata** do Visual Studio para executar uma função ou sub-rotina sem executar seu aplicativo. Se a função ou a sub-rotina contiver um ponto de interrupção, o Visual Studio será interrompido no ponto de interrupção. Então, você poderá usar o depurador do Windows para examinar o estado do programa. Esse recurso é chamado de *depuração em tempo de design*.
 
-O exemplo a seguir está em Visual Basic. Você também pode usar o **Immediate** em tempo de design na janela de C#, F#, e C++ aplicativos.
+O exemplo a seguir está em Visual Basic. Você também pode usar a janela **imediata** em tempo de design C#nos F#aplicativos, C++e/CLI.
 
-1. Cole o código a seguir em um aplicativo de console em branco do Visual Basic:
+1. Cole o código a seguir em um aplicativo de console Visual Basic em branco:
 
    ```vb
    Module Module1
@@ -57,54 +57,56 @@ O exemplo a seguir está em Visual Basic. Você também pode usar o **Immediate*
    End Module
    ```
 
-1. Defina um ponto de interrupção na linha **End Function**.
+1. Defina um ponto de interrupção na **função de extremidade**de linha.
 
-1. Abra o **imediato** janela selecionando **Debug** > **Windows** > **imediato**. Tipo de `?MyFunction` na janela e, em seguida, pressione **Enter**.
+1. Abra a janela **imediata** selecionando **depurar** > o **Windows** > **imediato**. Digite `?MyFunction` na janela e pressione **Enter**.
 
-   O ponto de interrupção é o impacto e o valor de **MyFunction** na **Locals** janela está **1**. Você pode examinar a pilha de chamadas e outras janelas de depuração enquanto o aplicativo estiver no modo de interrupção.
+   O ponto de interrupção é atingido e o valor de **MyFunction** na janela **locais** é **1**. Você pode examinar a pilha de chamadas e outras janelas de depuração enquanto o aplicativo estiver no modo de interrupção.
 
-1. Selecione **continuar** na barra de ferramentas do Visual Studio. O aplicativo termina, e **1** é retornado na **imediato** janela. Verifique se que você ainda estiver no modo de design.
+1. Selecione **continuar** na barra de ferramentas do Visual Studio. O aplicativo termina e **1** é retornado na janela **imediata** . Verifique se você ainda está no modo de design.
 
-1. Tipo de `?MyFunction` no **imediato** janela novamente e pressione **Enter**. O ponto de interrupção é o impacto e o valor de **MyFunction** na **Locals** janela está **2**.
+1. Digite `?MyFunction` na janela **imediata** novamente e pressione **Enter**. O ponto de interrupção é atingido e o valor de **MyFunction** na janela **locais** é **2**.
 
-1. Sem selecionar **continuar**, digite `?MySub()` no **imediato** janela e, em seguida, pressione **Enter**. O ponto de interrupção é o impacto e o valor de **MyFunction** na **Locals** janela está **3**. Você pode examinar o estado do aplicativo enquanto o aplicativo estiver no modo de interrupção.
+1. Sem selecionar **continuar**, digite `?MySub()` na janela **imediata** e pressione **Enter**. O ponto de interrupção é atingido e o valor de **MyFunction** na janela **locais** é **3**. Você pode examinar o estado do aplicativo enquanto o aplicativo está no modo de interrupção.
 
-1. Selecione **continuar**. O ponto de interrupção é ocorrências novamente e o valor de **MyFunction** na **Locals** janela agora está **2**. O **Immediate** janela retorna **expressão foi avaliada e não tem nenhum valor**.
+1. Selecione **Continuar**. O ponto de interrupção é atingido novamente e o valor de **MyFunction** na janela **locais** agora é **2**. A janela **Immediate** retorna **expressão foi avaliada e não tem valor**.
 
-1. Selecione **continuar** novamente. O aplicativo termina, e **2** é retornado na **imediato** janela. Certifique-se de que você ainda estiver no modo de design.
+1. Selecione **continuar** novamente. O aplicativo termina e **2** é retornado na janela **imediata** . Verifique se você ainda está no modo de design.
 
-1. Para limpar o conteúdo do **Immediate** janela, o botão direito do mouse na janela e selecione **Limpar tudo**.
+1. Para limpar o conteúdo da janela **imediata** , clique com o botão direito do mouse na janela e selecione **limpar tudo**.
 
-## <a name="attach-to-an-app-from-the-xaml-designer"></a>Anexar a um aplicativo do designer XAML
+## <a name="debug-a-custom-xaml-control-at-design-time-by-attaching-to-xaml-designer"></a>Depurar um controle XAML personalizado em tempo de design anexando ao designer XAML
 
-Em alguns cenários de associação de dados declarativa, ele pode ajudar a depurar o code-behind no designer XAML.
+1. Abra sua solução ou projeto no Visual Studio.
 
-1. No projeto do Visual Studio, adicione uma nova página XAML, como *temp.xaml*. Deixe a nova página XAML vazia.
+1. Crie a solução/projeto.
 
-1. Compile a solução.
+1. Abra a página XAML que contém o controle personalizado que você deseja depurar.
 
-1. Abra *temp.xaml*, que carrega o designer de XAML *XDesProc.exe*, ou *UwpSurface.exe* em um aplicativo UWP.
+   Para projetos UWP direcionados para o Windows Build 16299 ou superior, essa etapa iniciará o processo *UwpSurface. exe* . Para versões do WPF ou UWP anteriores ao Windows Build 16299, essa etapa iniciará o processo *XDesProc. exe* .
 
-1. Abra uma nova instância do Visual Studio. Na nova instância, selecione **Debug** > **anexar ao processo**.
+1. Abra uma segunda instância do Visual Studio. Não abra uma solução ou projeto na segunda instância.
 
-1. No **anexar ao processo** caixa de diálogo, selecione o designer processe do **processos disponíveis** lista.
+1. Na segunda instância do Visual Studio, abra o menu **depurar** e escolha **anexar ao processo...** .
 
-   Para a UWP projetos direcionados ao Windows build 16299 ou acima, é o processo do designer *UwpSurface.exe*. Para WPF ou UWP versões anteriores ao 16299, é o processo do designer *XDesProc.exe*.
+1. Dependendo do tipo de projeto (consulte as etapas anteriores), selecione o processo *UwpSurface. exe* ou *XDesProc. exe* na lista de processos disponíveis.
 
-1. Certifique-se a **anexar** campo é definido como o tipo de código correto para sua versão do .NET, como **código gerenciado (CoreCLR)**.
+1. No campo **anexar a** do caixa de diálogo **anexar ao processo** , escolha o tipo de código correto para o controle personalizado que você deseja depurar.
 
-1. Selecione **anexar**.
+   Se seu controle personalizado tiver sido escrito em uma linguagem .NET, escolha o tipo de código .NET apropriado, como **gerenciado (CoreCLR)** . Se o seu controle personalizado tiver sido escrito C++em, escolha **nativo**.
 
-1. Enquanto conectado ao processo, alterne para a instância do Visual Studio e defina pontos de interrupção em que você deseja depurar o código por trás de seu aplicativo.
+1. Anexe a segunda instância do Visual Studio clicando no botão **anexar** .
 
-   Por exemplo, você pode definir um ponto de interrupção no código de conversor de tipo para o XAML a seguir, que associa um TextBlock em tempo de design.
+1. Na segunda instância do Visual Studio, abra os arquivos de código associados ao controle personalizado que você deseja depurar. Certifique-se de apenas abrir os arquivos, não a solução ou o projeto inteiro.
 
-    ```xaml
-    <TextBlock Text="{Binding title, ConverterParameter=lower, Converter={StaticResource StringFormatConverter}, Mode=TwoWay}"  />
-    ```
+1. Coloque os pontos de interrupção necessários nos arquivos abertos anteriormente.
 
-   Quando a página for carregada, o ponto de interrupção é atingido.
+1. Na primeira instância do Visual Studio, feche a página XAML que contém o controle personalizado que você deseja depurar (a mesma página que você abriu nas etapas anteriores).
 
-## <a name="see-also"></a>Consulte também
+1. Na primeira instância do Visual Studio, abra a página XAML que você fechou na etapa anterior. Isso fará com que o depurador pare no primeiro ponto de interrupção definido na segunda instância do Visual Studio.
+
+1. Depure o código na segunda instância do Visual Studio.
+
+## <a name="see-also"></a>Veja também
 - [Introdução ao depurador](../debugger/debugger-feature-tour.md)
 - [Segurança do depurador](../debugger/debugger-security.md)

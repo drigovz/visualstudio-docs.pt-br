@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e5f7f21206953b8d99306a9b1da6935604c88b8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: ee89472ba4773e3b8692b293118bea154504fb55
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62815454"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916816"
 ---
 # <a name="system-requirements-for-the-visual-studio-emulator-for-android"></a>Requisitos do sistema para o Emulador do Visual Studio para Android
 
@@ -107,7 +107,7 @@ Quando definições do computador e do BIOS já estiverem configuradas para dar 
 
 |Requisito|Como verificar e habilitar esse requisito|
 |-----------------|----------------------------------------------|
-|O Hyper-V deve ser instalado|Siga as mesmas instruções usadas para [habilitar o Hyper-V para o emulador do Windows Phone](https://docs.microsoft.com/previous-versions/windows/apps/jj863509(v=vs.105)).<br /><br /> Verifique o status do serviço **Gerenciamento de Máquinas Virtuais do Hyper-V** no snap-in Serviços.|
+|O Hyper-V deve ser instalado|Siga as mesmas instruções usadas para [habilitar o Hyper-V para o emulador do Windows Phone](/previous-versions/windows/apps/jj863509(v=vs.105)).<br /><br /> Verifique o status do serviço **Gerenciamento de Máquinas Virtuais do Hyper-V** no snap-in Serviços.|
 |O Hyper-V deve estar em execução.|Para obter mais informações sobre como gerenciar serviços, consulte os seguintes tópicos:<br /><br /> -   [Iniciar, interromper, pausar, retomar ou reiniciar um serviço](https://technet.microsoft.com/library/cc736564\(v=WS.10\).aspx)<br />-   [Configurar o modo de inicialização de um serviço](https://technet.microsoft.com/%20library/cc739213\(v=ws.10\))|
 
  Você precisa ser um membro do grupo local Administradores do Hyper-V.
@@ -119,12 +119,12 @@ Quando definições do computador e do BIOS já estiverem configuradas para dar 
 > [!IMPORTANT]
 > Depois de ingressar no grupo, faça logoff ou reinicie o computador para que as alterações tenham efeito.
 
- ![Ingressar no grupo de segurança Administradores do Hyper&#45;V](../cross-platform/media/android_emu_hyperv_admin.png "Android_Emu_HyperV_Admin")
+ ![Unindo o grupo&#45;de segurança de administradores do Hyper V](../cross-platform/media/android_emu_hyperv_admin.png "Android_Emu_HyperV_Admin")
 
  Para adicionar você mesmo a um grupo manualmente, abra o snap-in Usuários e Grupos Locais.
 
 ## <a name="running-the-emulator-from-a-bootable-vhd-is-not-supported"></a>Não há suporte para a execução do emulador por meio de um VHD inicializável
- Se você tentar executar um aplicativo no Emulador do Visual Studio para Android enquanto estiver executando o Windows por meio de um VHD inicializável, normalmente, o emulador levará vários minutos para ser iniciado ou não será iniciado. Quando o emulador não puder ser iniciado, você verá a seguinte mensagem: Falha na implantação do aplicativo. Tente novamente.
+ Se você tentar executar um aplicativo no Emulador do Visual Studio para Android enquanto estiver executando o Windows por meio de um VHD inicializável, normalmente, o emulador levará vários minutos para ser iniciado ou não será iniciado. Quando o emulador falha ao iniciar, você recebe a seguinte mensagem: Falha na implantação do aplicativo. Tente novamente.
 
  Essa configuração não tem suporte. Para obter informações sobre problemas relacionados, confira [Solução de problemas do Emulador do Visual Studio para Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md).
 
@@ -145,6 +145,6 @@ No sistema de arquivos ReFS, os arquivos do disco rígido virtual não devem ter
 
 Para que o emulador emule chamadas à GPU, como aquelas usadas pelo OpenGL ES, o computador deve ter uma GPU compatível com DirectX com drivers DirectX apropriados instalados.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Solução de problemas do Emulador do Visual Studio para Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)

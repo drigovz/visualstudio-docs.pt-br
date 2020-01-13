@@ -6,12 +6,12 @@ ms.assetid: d22b5186-9e03-4e85-afc9-7cbe28522a6d
 caps.latest.revision: 14
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: bc7e46af7e29ef554b80bd9244910e0c67d373af
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 09da3bd59163cbef8b33b1d5ece732330e32eac7
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299755"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918926"
 ---
 # <a name="learn-app-building-basics-with-xamarinforms-in-visual-studio"></a>Aprender as noções básicas de criação de aplicativos com o Xamarin.Forms no Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -290,7 +290,7 @@ Após você concluir as etapas em [Configuração e instalação](../cross-platf
 ## <a name="finish"></a> Concluir a interface do usuário com uma aparência nativa entre plataformas
  O Xamarin.Forms renderiza controles nativos da interface do usuário para cada plataforma, para que seu aplicativo tenha uma aparência nativa automaticamente. Para ver isso mais claramente, vamos terminar a interface do usuário com um campo de entrada para um código postal e, em seguida, exibir os dados meteorológicos retornados do serviço.
 
-1. Substitua o conteúdo de **WeatherPage.xaml** pelo código a seguir. Observe que cada elemento é nomeado usando o atributo **x:Name**, conforme descrito anteriormente, para que o elemento possa ser referenciado no código. O Xamarin.Forms também fornece um número de [opções de layout](https://docs.microsoft.com/xamarin/xamarin-forms/user-interface/controls/layouts) (xamarin.com); aqui, WeatherPage está usando [StackLayout](https://docs.microsoft.com/dotnet/api/Xamarin.Forms.StackLayout?view=xamarin-forms) (xamarin.com).
+1. Substitua o conteúdo de **WeatherPage.xaml** pelo código a seguir. Observe que cada elemento é nomeado usando o atributo **x:Name**, conforme descrito anteriormente, para que o elemento possa ser referenciado no código. O Xamarin.Forms também fornece um número de [opções de layout](/xamarin/xamarin-forms/user-interface/controls/layouts) (xamarin.com); aqui, WeatherPage está usando [StackLayout](/dotnet/api/Xamarin.Forms.StackLayout?view=xamarin-forms) (xamarin.com).
 
    ```xaml
    <?xml version="1.0" encoding="utf-8" ?>
@@ -380,7 +380,7 @@ Após você concluir as etapas em [Configuração e instalação](../cross-platf
    </ContentPage>
    ```
 
-    Observe o uso da marca **OnPlatform** no Xamarin.Forms. **OnPlatform** seleciona um valor da propriedade específico à plataforma atual em que o aplicativo está em execução (consulte [Sintaxe XAML Externa](https://docs.microsoft.com/xamarin/xamarin-forms/xaml/xaml-basics/essential-xaml-syntax) (xamarin.com). Estamos usando-o aqui para definir uma cor de texto diferente para os campos de dados: branco no Android e no Windows Phone, e preto no iOS. Você pode usar **OnPlatform** para qualquer propriedade e qualquer tipo de dados para fazer ajustes específicos da plataforma em qualquer lugar em seu XAML. No arquivo code-behind, você pode usar a [API Device.OnPlatform](https://docs.microsoft.com/xamarin/xamarin-forms/platform/device) para a mesma finalidade.
+    Observe o uso da marca **OnPlatform** no Xamarin.Forms. **OnPlatform** seleciona um valor da propriedade específico à plataforma atual em que o aplicativo está em execução (consulte [Sintaxe XAML Externa](/xamarin/xamarin-forms/xaml/xaml-basics/essential-xaml-syntax) (xamarin.com). Estamos usando-o aqui para definir uma cor de texto diferente para os campos de dados: branco no Android e no Windows Phone, e preto no iOS. Você pode usar **OnPlatform** para qualquer propriedade e qualquer tipo de dados para fazer ajustes específicos da plataforma em qualquer lugar em seu XAML. No arquivo code-behind, você pode usar a [API Device.OnPlatform](/xamarin/xamarin-forms/platform/device) para a mesma finalidade.
 
 2. Em **WeatherPage.xaml.cs**, substitua manipulador de eventos **GetWeatherBtn_Clicked** pelo código a seguir. Esse código verifica se há um código postal no campo de entrada, recupera dados do código postal, define o contexto de associação da tela inteira para a instância resultante de Weather e define o texto do botão como "Pesquisar Novamente". Observe que cada rótulo na interface do usuário é associado a uma propriedade da classe Weather, de modo que quando você definir o contexto de associação da tela para uma instância de **Weather**, os rótulos serão atualizados automaticamente.
 

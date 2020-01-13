@@ -11,18 +11,18 @@ ms.date: 11/11/2016
 ms.author: mikejo
 ms.prod: visual-studio-dev14
 ms.technology: vs-azure
-ms.openlocfilehash: 0f4e7635e62c8d21b6bdb3b1fd28a2fed0c60262
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: b1e5a5d4d5312968571965df8c9e28d31379720d
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75851891"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75915598"
 ---
 # <a name="testing-the-performance-of-a-cloud-service"></a>Testando o desempenho de um serviço de nuvem
 ## <a name="overview"></a>{1&gt;Visão Geral&lt;1}
 Você pode testar o desempenho de um serviço de nuvem das seguintes maneiras:
 
-* Use o Diagnóstico do Azure para coletar informações sobre solicitações e conexões e para examinar estatísticas de site que mostram o desempenho do serviço da perspectiva do cliente. Para começar, consulte [Configuração de diagnóstico para os Serviços de Nuvem do Azure e Máquinas Virtuais](https://docs.microsoft.com/visualstudio/azure/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines?view=vs-2019).
+* Use o Diagnóstico do Azure para coletar informações sobre solicitações e conexões e para examinar estatísticas de site que mostram o desempenho do serviço da perspectiva do cliente. Para começar, consulte [Configuração de diagnóstico para os Serviços de Nuvem do Azure e Máquinas Virtuais](vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines.md).
 * Use o criador de perfil do Visual Studio para obter uma análise detalhada dos aspectos computacionais de como o serviço é executado. Como descrito neste tópico, você pode usar o criador de perfil para medir o desempenho à medida que um serviço é executado no Azure. Para saber mais sobre como usar o criador de perfil para medir o desempenho à medida que um serviço é executado localmente em um emulador de computação, consulte [Testando o desempenho de um Serviço de Nuvem de Azure localmente no emulador de computação usando o criador de perfil do Visual Studio](https://azure.microsoft.com/documentation/articles/cloud-services-performance-testing-visual-studio-profiler/).
 
 ## <a name="choosing-a-performance-testing-method"></a>Escolhendo um método de teste de desempenho
@@ -84,7 +84,7 @@ A ilustração a seguir mostra como definir as configurações da criação de p
 > 
 
 ### <a name="to-configure-profiling-settings"></a>Para definir configurações de criação de perfil
-1. No Gerenciador de Soluções, abra o menu de atalho para o seu projeto do Azure e escolha **Publicar**. Para obter etapas detalhadas sobre como publicar um serviço de nuvem, consulte [Publicando um serviço na nuvem usando as ferramentas do Azure](https://docs.microsoft.com/visualstudio/azure/vs-azure-tools-publishing-a-cloud-service?view=vs-2019).
+1. No Gerenciador de Soluções, abra o menu de atalho para o seu projeto do Azure e escolha **Publicar**. Para obter etapas detalhadas sobre como publicar um serviço de nuvem, consulte [Publicando um serviço na nuvem usando as ferramentas do Azure](vs-azure-tools-publishing-a-cloud-service.md).
 2. Na caixa de diálogo **Publicar Aplicativo do Azure**, escolha a guia **Configurações Avançadas**.
 3. Para habilitar a criação de perfil, marque a caixa de seleção **Habilitar criação de perfil** .
 4. Para definir suas configurações de criação de perfil, escolha o hiperlink **Configurações** . A caixa de diálogo Configurações de Criação de Perfil aparecerá.

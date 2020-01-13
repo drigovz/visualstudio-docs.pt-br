@@ -15,23 +15,23 @@ caps.latest.revision: 9
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 7dec130e4a4704bea347f94ff57d354a4465ddd6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: fa0d771d99ac8e7a4f4091db90a607cce970bc38
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72604972"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917822"
 ---
 # <a name="ca1903-use-only-api-from-targeted-framework"></a>CA1903: usar apenas a API da estrutura de destino
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Para obter a documentação mais recente sobre o Visual Studio, consulte [CA1903: usar somente a API da estrutura de destino](https://docs.microsoft.com/visualstudio/code-quality/ca1903-use-only-api-from-targeted-framework).
+Para obter a documentação mais recente sobre o Visual Studio, consulte [CA1903: usar somente a API da estrutura de destino](/visualstudio/code-quality/ca1903-use-only-api-from-targeted-framework).
 
 |||
 |-|-|
 |NomeDoTipo|UseOnlyApiFromTargetedFramework|
 |CheckId|CA1903|
-|Categoria|Microsoft. portabilidade|
+|Categoria|Microsoft.Portability|
 |Alteração Significativa|Quebra-quando acionada na assinatura de um membro ou tipo visível externamente.<br /><br /> Não separável – quando disparado no corpo de um método.|
 
 ## <a name="cause"></a>Causa
@@ -47,8 +47,8 @@ Para obter a documentação mais recente sobre o Visual Studio, consulte [CA1903
 |Quando a estrutura de destino é|Acionado em usos de membros introduzidos em|
 |.NET Framework 2.0|.NET Framework 2,0 SP1, .NET Framework 2,0 SP2|
 |.NET Framework 3.0|.NET Framework 2,0 SP1, .NET Framework 2,0 SP2, .NET Framework 3,0 SP1, .NET Framework 3,0 SP2|
-|.NET Framework 3,5|.NET Framework 3,5 SP1|
-|.NET Framework 4|N/A|
+|.NET Framework 3.5|.NET Framework 3,5 SP1|
+|.NET Framework 4|{1&gt;N/A&lt;1}|
 
  Para alterar a estrutura de destino de um projeto, consulte [direcionando uma versão de .NET Framework específica](../ide/targeting-a-specific-dotnet-framework-version.md).
 
@@ -68,5 +68,5 @@ Para obter a documentação mais recente sobre o Visual Studio, consulte [CA1903
 
  [!code-csharp[FxCop.Portability.UseOnlyApiFromTargetedFramework2#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Portability.UseOnlyApiFromTargetedFramework2/CS/FxCop.Portability.UseOnlyApiFromTargetedFramework2.cs#1)]
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
  [Avisos de portabilidade](../code-quality/portability-warnings.md) [direcionados a uma versão de .NET Framework específica](../ide/targeting-a-specific-dotnet-framework-version.md)

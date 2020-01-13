@@ -11,12 +11,12 @@ ms.date: 11/11/2016
 ms.author: mikejo
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
-ms.openlocfilehash: a22d16606cad7ecbfcf3862d6b7e85b65e7aafe4
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: ac1f47d3daabf800a308d73727f750f971ace4e6
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75850404"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75919161"
 ---
 # <a name="debugging-an-azure-cloud-service-or-virtual-machine-in-visual-studio"></a>Depurando um serviço de nuvem ou máquina virtual do Azure no Visual Studio
 
@@ -50,7 +50,7 @@ Para depurar um serviço de nuvem em um computador remoto, você deve habilitar 
 Se você habilitar a depuração remota para um serviço de nuvem, ela não mostrará degradação de desempenho nem incorrerá em cobranças adicionais. Não use a depuração remota em um serviço de produção, pois os clientes que usam o serviço podem ser prejudicados.
 
 > [!NOTE]
-> Ao publicar um serviço de nuvem no Visual Studio, você pode habilitar o **IntelliTrace** para qualquer função nesse serviço que se destine ao .NET Framework 4 ou .NET Framework 4.5. Usando o **IntelliTrace**, você pode examinar os eventos que ocorreram em uma instância de função no passado e reproduzir o contexto no tempo em que ocorreu. Consulte [Depurando um serviço de nuvem publicado com o IntelliTrace e o Visual Studio](https://docs.microsoft.com/visualstudio/azure/vs-azure-tools-intellitrace-debug-published-cloud-services?view=vs-2019) e [Usando o IntelliTrace](https://msdn.microsoft.com/library/dd264915.aspx).
+> Ao publicar um serviço de nuvem no Visual Studio, você pode habilitar o **IntelliTrace** para qualquer função nesse serviço que se destine ao .NET Framework 4 ou .NET Framework 4.5. Usando o **IntelliTrace**, você pode examinar os eventos que ocorreram em uma instância de função no passado e reproduzir o contexto no tempo em que ocorreu. Consulte [Depurando um serviço de nuvem publicado com o IntelliTrace e o Visual Studio](vs-azure-tools-intellitrace-debug-published-cloud-services.md) e [Usando o IntelliTrace](../debugger/intellitrace.md).
 
 ### <a name="to-enable-remote-debugging-for-a-cloud-service"></a>Para habilitar a depuração remota para um serviço de nuvem
 
@@ -150,7 +150,7 @@ Os projetos ASP.NET do Visual Studio oferecem uma opção para criar uma máquin
     > [!NOTE]
     > será solicitado que você entre em sua conta do Azure, caso ainda não tenha entrado.
 
-3. Selecione as diversas configurações para a máquina virtual e escolha **OK**. Consulte [Máquinas Virtuais](https://docs.microsoft.com/previous-versions/azure/jj156003(v=azure.100)?redirectedfrom=MSDN) para obter mais informações.
+3. Selecione as diversas configurações para a máquina virtual e escolha **OK**. Consulte [Máquinas Virtuais](/previous-versions/azure/jj156003(v=azure.100)) para obter mais informações.
 
     Insira o nome DNS que será o nome da máquina virtual.
 
@@ -188,6 +188,6 @@ Os projetos ASP.NET do Visual Studio oferecem uma opção para criar uma máquin
 
 ## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
 
-* Use o **IntelliTrace** para coletar um log de chamadas e eventos de um servidor de versão. Consulte [Depurando um serviço de nuvem publicado com o IntelliTrace e o Visual Studio](https://docs.microsoft.com/visualstudio/azure/vs-azure-tools-intellitrace-debug-published-cloud-services?view=vs-2019).
+* Use o **IntelliTrace** para coletar um log de chamadas e eventos de um servidor de versão. Consulte [Depurando um serviço de nuvem publicado com o IntelliTrace e o Visual Studio](vs-azure-tools-intellitrace-debug-published-cloud-services.md).
 
 * Use o **Diagnóstico do Azure** para registrar em log informações detalhadas do código em execução nas funções, estejam elas em execução no ambiente de desenvolvimento ou no Azure. Consulte [Coletando dados de log usando o Diagnóstico do Azure](https://msdn.microsoft.com/library/gg433048.aspx).

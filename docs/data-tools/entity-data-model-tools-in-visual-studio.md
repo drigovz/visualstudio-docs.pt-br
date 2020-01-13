@@ -8,12 +8,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4af96ad0f76414468fd194b7079b3c4dbdaf2a4c
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 250f1ad55f8d60396b8423098e58801d0ed81e77
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75586660"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916733"
 ---
 # <a name="entity-framework-tools-in-visual-studio"></a>Entity Framework Tools no Visual Studio
 
@@ -43,7 +43,7 @@ Essas são as ferramentas específicas que compõem Entity Framework ferramentas
 
 As ferramentas geram ou modificam um arquivo *. edmx* . Esse arquivo *. edmx* contém informações que descrevem o modelo conceitual, o modelo de armazenamento e os mapeamentos entre eles. Para obter mais informações, consulte [edmx](/ef/ef6/).
 
-[Entity Framework Power Tools](https://marketplace.visualstudio.com/items?itemName=EntityFrameworkTeam.EntityFrameworkPowerToolsBeta4) ajuda você a criar aplicativos que usam o modelo de dados de entidade. O Power Tools pode gerar um modelo conceitual, validar um modelo existente, produzir arquivos de código-fonte que contêm classes de objeto com base no modelo conceitual e produzir arquivos de código-fonte que contenham exibições geradas pelo modelo. Para obter informações detalhadas, consulte [exibições de mapeamento geradas previamente](https://docs.microsoft.com/ef/ef6/fundamentals/performance/pre-generated-views).
+[Entity Framework Power Tools](https://marketplace.visualstudio.com/items?itemName=EntityFrameworkTeam.EntityFrameworkPowerToolsBeta4) ajuda você a criar aplicativos que usam o modelo de dados de entidade. O Power Tools pode gerar um modelo conceitual, validar um modelo existente, produzir arquivos de código-fonte que contêm classes de objeto com base no modelo conceitual e produzir arquivos de código-fonte que contenham exibições geradas pelo modelo. Para obter informações detalhadas, consulte [exibições de mapeamento geradas previamente](/ef/ef6/fundamentals/performance/pre-generated-views).
 
 ## <a name="related-topics"></a>Tópicos relacionados
 

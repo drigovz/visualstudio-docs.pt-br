@@ -11,19 +11,19 @@ ms.assetid: 0b40d495-f17f-4bb9-ace8-b365a7172784
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4f6e88e5c430129faa80f34a45f9b6620d5b0d13
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 6220afc2bdf75cc22529c65d5514f5f9e0766555
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75850356"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75919220"
 ---
 # <a name="visual-studio-shell-integrated"></a>Shell (integrado) do Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 O shell integrado do Visual Studio inclui o IDE (ambiente de desenvolvimento integrado), um depurador e a integração de controle do código-fonte. Nenhuma linguagem de programação está incluída. No entanto, o Shell integrado fornece uma estrutura que permite que você adicione linguagens de programação.  
   
- O Shell integrado do Visual Studio é, na verdade, uma combinação do Shell isolado do Visual Studio, além de uma instalação adicional que inclui componentes específicos do Shell integrados.  O aplicativo de shell integrado deve incluir o pacote redistribuível do Shell isolado de [shell do Microsoft Visual Studio (isolado) pacote](https://docs.microsoft.com/collaborate/connect-redirect?ProgramID=8963&InvitationID=VS15-2R69-RB8J) redistribuível, bem como o pacote redistribuível do Shell integrado do pacote redistribuível do [shell do Microsoft Visual Studio (integrado)](https://docs.microsoft.com/collaborate/connect-redirect?ProgramID=8963&InvitationID=VS15-2R69-RB8J).  
+ O Shell integrado do Visual Studio é, na verdade, uma combinação do Shell isolado do Visual Studio, além de uma instalação adicional que inclui componentes específicos do Shell integrados.  O aplicativo de shell integrado deve incluir o pacote redistribuível do Shell isolado, bem como o pacote redistribuível do Shell integrado, tanto de [pacotes redistribuíveis do shell do Microsoft Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/isolated-shell/).  
   
 > [!NOTE]
 > Para poder acessar os pacotes redistribuíveis do shell isolado e integrado, você será solicitado a preencher uma breve pesquisa do cliente.  Após o preenchimento da pesquisa, você será direcionado para uma página do Visual Studio Connect com links de download para pacotes redistribuíveis.  Você pode encontrar os links de download em visitas posteriores ao site do Visual Studio Connect na guia  **&#124; programas Visual Studio 2015 integrado e Shell isolado** .  

@@ -15,23 +15,23 @@ caps.latest.revision: 17
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 57e735db68d90130b537f9f5f4b220bd688c7675
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 0f5239ca22a30b171c53c96f3be33062b860f78b
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666681"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918757"
 ---
 # <a name="ca2238-implement-serialization-methods-correctly"></a>CA2238: implementar métodos de serialização corretamente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Para obter a documentação mais recente sobre o Visual Studio, consulte [CA2238: implementar métodos de serialização corretamente](https://docs.microsoft.com/visualstudio/code-quality/ca2238-implement-serialization-methods-correctly).
+Para obter a documentação mais recente sobre o Visual Studio, consulte [CA2238: implementar métodos de serialização corretamente](/visualstudio/code-quality/ca2238-implement-serialization-methods-correctly).
 
 |||
 |-|-|
 |NomeDoTipo|ImplementSerializationMethodsCorrectly|
 |CheckId|CA2238|
-|Categoria|Microsoft. Usage|
+|Categoria|Microsoft.Usage|
 |Alteração Significativa|Quebra-se o método é visível fora do assembly.<br /><br /> Não separável – se o método não estiver visível fora do assembly.|
 
 ## <a name="cause"></a>Causa
@@ -48,7 +48,7 @@ Para obter a documentação mais recente sobre o Visual Studio, consulte [CA2238
 
 - <xref:System.Runtime.Serialization.OnDeserializedAttribute?displayProperty=fullName>
 
-  Os manipuladores de eventos de serialização usam um único parâmetro do tipo <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName>, retornam `void` e têm visibilidade de `private`.
+  Os manipuladores de eventos de serialização usam um único parâmetro do tipo <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName>, retornam `void`e têm visibilidade de `private`.
 
 ## <a name="how-to-fix-violations"></a>Como Corrigir Violações
  Para corrigir uma violação dessa regra, corrija a assinatura, o tipo de retorno ou a visibilidade do manipulador de eventos de serialização.

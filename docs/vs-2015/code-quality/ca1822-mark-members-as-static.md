@@ -15,23 +15,23 @@ caps.latest.revision: 19
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: a571be6b713cd59ca290906e9398b78c8c021ba8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 0ce4aa6aef9c70d0d628603afa7a256c309f280d
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661161"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917939"
 ---
 # <a name="ca1822-mark-members-as-static"></a>CA1822: marcar membros como estáticos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Para obter a documentação mais recente sobre o Visual Studio, consulte [CA1822: marcar Membros como estáticos](https://docs.microsoft.com/visualstudio/code-quality/ca1822-mark-members-as-static).
+Para obter a documentação mais recente sobre o Visual Studio, consulte [CA1822: marcar Membros como estáticos](/visualstudio/code-quality/ca1822-mark-members-as-static).
 
 |||
 |-|-|
 |NomeDoTipo|MarkMembersAsStatic|
 |CheckId|CA1822|
-|Categoria|Microsoft. performance|
+|Categoria|Microsoft.Performance|
 |Alteração Significativa|Não separável – se o membro não estiver visível fora do assembly, independentemente da alteração feita.<br /><br /> Não separável – se você simplesmente alterar o membro para um membro de instância com a palavra-chave `this`.<br /><br /> Quebrando – se você alterar o membro de um membro de instância para um membro estático e ele estiver visível fora do assembly.|
 
 ## <a name="cause"></a>Causa

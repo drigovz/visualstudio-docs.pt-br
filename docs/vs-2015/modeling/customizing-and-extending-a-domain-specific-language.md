@@ -11,12 +11,12 @@ caps.latest.revision: 50
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 37ac181c2e2182dc8ff57931fbbb51a4f7fc9fc4
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 55ec2cf2f2a6ebf4186f81f6f3dd61766acd7958
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75852409"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918886"
 ---
 # <a name="customizing-and-extending-a-domain-specific-language"></a>Personalizando e estendendo uma linguagem específica do domínio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ O Visual Studio Modeling VMSDK (SDK de modelagem e visualização) fornece vári
 |Ícone de alterações de forma para indicar estado.|Defina a visibilidade do mapeamento de decorador na janela detalhes de DSL. Localize vários decoradores de imagem na mesma posição. Consulte [atualizando formas e conectores para refletir o modelo](../modeling/updating-shapes-and-connectors-to-reflect-the-model.md).<br /><br /> Ou, substitua `ImageField.GetDisplayImage()`. Consulte o exemplo em <xref:Microsoft.VisualStudio.Modeling.Diagrams.ImageField>.|
 |Definir uma imagem de plano de fundo em qualquer forma|Substitua InitializeInstanceResources () para adicionar um ImageField ancorado. Consulte [Personalizando a apresentação no diagrama](../modeling/customizing-presentation-on-the-diagram.md).|
 |Aninhe formas em qualquer profundidade|Configure uma árvore de incorporação recursiva. Defina BoundsRules para conter as formas. Consulte [Personalizando a apresentação no diagrama](../modeling/customizing-presentation-on-the-diagram.md).|
-|Anexe conectores em pontos fixos no limite de um elemento.|Defina elementos de terminal inseridos, representados por portas pequenas no diagrama. Use BoundsRules para corrigir as portas em vigor. Consulte o exemplo de diagrama de circuito na [visualização e no SDK de modelagem](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples).|
+|Anexe conectores em pontos fixos no limite de um elemento.|Defina elementos de terminal inseridos, representados por portas pequenas no diagrama. Use BoundsRules para corrigir as portas em vigor.|
 |O campo de texto exibe um valor derivado de outros valores.|Mapeie o decorador de texto para uma propriedade de domínio de armazenamento calculada ou personalizada. Para obter mais informações, consulte [Calculated e propriedades de armazenamento personalizado](../modeling/calculated-and-custom-storage-properties.md).|
 |Propagar alterações entre elementos de modelo ou entre formas|Consulte [validação em uma linguagem específica de domínio](../modeling/validation-in-a-domain-specific-language.md).|
 |Propague alterações para recursos como outras extensões de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] fora da loja.|Consulte [manipuladores de eventos propagar alterações fora do modelo](../modeling/event-handlers-propagate-changes-outside-the-model.md).|

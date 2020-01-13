@@ -8,12 +8,12 @@ ms.assetid: ff978cc2-5a25-46d6-921b-e51adaa65992
 caps.latest.revision: 16
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 1a0ea4f611c5312331fa0e2f2f467b4189778f30
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 37c855f7940cbed847dcb7d5c6414be436cee993
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300030"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918368"
 ---
 # <a name="application-lifecycle-management-alm-with-xamarin-apps"></a>ALM (Gerenciamento do Ciclo de Vida do Aplicativo) com aplicativos Xamarin
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -72,7 +72,7 @@ O Xamarin permite criar aplicativos móveis de plataforma cruzada direcionados p
   
 |Recurso|Tem suporte com o Xamarin|Comentários Adicionais|  
 |-------------|----------------------------|-------------------------|  
-|Servidor TFS local|Sim|Computadores de build devem ter Xamarin instalado e podem ser vinculados a um computador OSX para compilar para iOS. Consulte [Configurando TFS para Xamarin](https://docs.microsoft.com/azure/devops/repos/tfvc/overview?view=azure-devops) (site do Xamarin)|  
+|Servidor TFS local|Sim|Computadores de build devem ter Xamarin instalado e podem ser vinculados a um computador OSX para compilar para iOS. Consulte [Configurando TFS para Xamarin](/azure/devops/repos/tfvc/overview?view=azure-devops) (site do Xamarin)|  
 |Servidor de build local vinculado ao Visual Studio Team Services|Sim|Consulte [Servidor de build](https://msdn.microsoft.com/library/2d258a0a-f178-4e93-9da1-eba61151af3c) para obter instruções.|  
 |Serviço de controlador hospedado do Visual Studio Team Services|Sim|Consulte [Compilar seu aplicativo Xamarin](https://www.visualstudio.com/docs/build/apps/mobile/xamarin).|  
 |Compilar definições com pré e pós-scripts|Sim||  
@@ -86,8 +86,8 @@ O Xamarin permite criar aplicativos móveis de plataforma cruzada direcionados p
 |Planejando testes, criando casos de teste e organizando conjuntos de testes|Sim||  
 |Teste manual|Sim||  
 |Gerenciador de Teste (testes de gravação e reprodução)|Sim|Somente dispositivos Windows e emuladores Android do Visual Studio. Gravação para todos os dispositivos é possível com o [Xamarin Test Recorder](https://www.xamarin.com/test-cloud/recorder).|  
-|Cobertura de código|n/d||  
-|[Efetuar teste de unidade em seu código](../test/unit-test-your-code.md)|Sim|Para os destinos Android e Windows, as ferramentas internas do MSTest podem ser usadas. Para executar testes de unidade em Windows, Android e iOS, o Xamarin recomenda NUnit. Consulte [Configurando TFS para Xamarin](https://docs.microsoft.com/azure/devops/repos/tfvc/overview?view=azure-devops) (site do Xamarin).|  
+|Cobertura de código|N/D||  
+|[Efetuar teste de unidade em seu código](../test/unit-test-your-code.md)|Sim|Para os destinos Android e Windows, as ferramentas internas do MSTest podem ser usadas. Para executar testes de unidade em Windows, Android e iOS, o Xamarin recomenda NUnit. Consulte [Configurando TFS para Xamarin](/azure/devops/repos/tfvc/overview?view=azure-devops) (site do Xamarin).|  
 |[Usar automação de interface do usuário para testar código](../test/use-ui-automation-to-test-your-code.md)|Somente Windows|O gravador de teste da interface do usuário do Visual Studio é somente Windows. Para todas as plataformas, consulte [Xamarin Test Recorder](https://www.xamarin.com/test-cloud/recorder).|  
   
 ## <a name="improve-code-quality"></a>Melhorar a qualidade do código  
@@ -98,7 +98,7 @@ O Xamarin permite criar aplicativos móveis de plataforma cruzada direcionados p
 |[Analisando a qualidade do código gerenciado](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)|Sim||  
 |[Localizando código duplicado usando detecção de clone de código](https://msdn.microsoft.com/library/a97cd5a6-5ffa-4104-9627-8e59e513654d)|Sim||  
 |[Medindo complexidade e facilidade de manutenção do código gerenciado](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)|Sim||  
-|[Gerenciador de Desempenho](../profiling/performance-explorer.md)|Não|Use o [Xamarin Profiler](https://docs.microsoft.com/xamarin/cross-platform/deploy-test/) por meio do Xamarin Studio em vez disso. Observe que o Xamarin Profiler está atualmente em visualização e ainda não funciona para destinos do Windows.|  
+|[Gerenciador de Desempenho](../profiling/performance-explorer.md)|Não|Use o [Xamarin Profiler](/xamarin/cross-platform/deploy-test/) por meio do Xamarin Studio em vez disso. Observe que o Xamarin Profiler está atualmente em visualização e ainda não funciona para destinos do Windows.|  
 |[Analisar problemas de memória do .NET Framework](../misc/analyze-dotnet-framework-memory-issues.md)|Não|Ferramentas do Visual Studio não têm ganchos na estrutura Mono para a criação de perfil.|  
   
 ## <a name="release-management"></a>Gerenciamento de liberações  

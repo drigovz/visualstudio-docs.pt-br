@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/11/2017
 ms.author: ghogen
-ms.openlocfilehash: 2d7081fc7531c8c1c1fcf13564f9f90bc9964f17
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 008dd927f38c7fd79996bde39531e256314f2e24
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75849993"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917352"
 ---
 # <a name="how-to-manage-service-configurations-and-profiles"></a>Como gerenciar perfis e configurações de serviço
 ## <a name="overview"></a>{1&gt;Visão Geral&lt;1}
@@ -80,7 +80,7 @@ Quando você executa o assistente pela primeira vez, um perfil padrão é criado
    
     O novo perfil aparece na lista Perfil de destino.
 6. Na lista **Perfil de destino** , selecione o perfil que você acabou de criar. As configurações do Assistente de Publicação são preenchidas com as opções do perfil selecionado.
-7. Selecione os botões **Anterior** e **Próximo** para exibir cada página do Assistente de Publicação e personalize as configurações desse perfil. Confira [Assistente de Publicação de Aplicativo do Azure](https://docs.microsoft.com/visualstudio/azure/vs-azure-tools-publish-azure-application-wizard?view=vs-2019) .
+7. Selecione os botões **Anterior** e **Próximo** para exibir cada página do Assistente de Publicação e personalize as configurações desse perfil. Confira [Assistente de Publicação de Aplicativo do Azure](vs-azure-tools-publish-azure-application-wizard.md) .
 8. Depois de concluir a personalização das configurações, clique em **Próximo** para voltar para a página Configurações. O perfil é salvo quando você publica o serviço usando essas configurações ou se você seleciona **Salvar** ao lado da lista de perfis.
 
 ### <a name="to-rename-or-delete-a-profile"></a>Para renomear ou excluir um perfil
@@ -93,9 +93,9 @@ Quando você executa o assistente pela primeira vez, um perfil padrão é criado
 ### <a name="to-change-a-profile"></a>Para alterar um perfil
 1. Abra o menu de atalho do projeto do Azure e selecione **Publicar**.
 2. Na lista **Perfil de destino** , selecione o perfil que você deseja alterar.
-3. Selecione os botões **Anterior** e **Próximo** para exibir cada página do Assistente de Publicação e altere as configurações desejadas. Confira [Assistente de Publicação de Aplicativo do Azure](https://docs.microsoft.com/visualstudio/azure/vs-azure-tools-publish-azure-application-wizard?view=vs-2019) .
+3. Selecione os botões **Anterior** e **Próximo** para exibir cada página do Assistente de Publicação e altere as configurações desejadas. Confira [Assistente de Publicação de Aplicativo do Azure](vs-azure-tools-publish-azure-application-wizard.md) .
 4. Depois de concluir a alteração das configurações, selecione **Próximo** para voltar para a página **Configurações**.
 5. (Opcional) Selecione **Publicar** para publicar o serviço de nuvem usando as novas configurações. Se você não deseja publicar seu serviço de nuvem no momento e você fecha o Assistente de Publicação, o Visual Studio pergunta se você deseja salvar as alterações feitas ao perfil.
 
 ## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
-Para obter informações sobre como configurar outras partes do seu projeto do Azure do Visual Studio, consulte [Configurando um projeto do Azure](https://docs.microsoft.com/visualstudio/azure/vs-azure-tools-cloud-service-retain-a-constant-virtual-ip-address?view=vs-2019)
+Para obter informações sobre como configurar outras partes do seu projeto do Azure do Visual Studio, consulte [Configurando um projeto do Azure](vs-azure-tools-cloud-service-retain-a-constant-virtual-ip-address.md)

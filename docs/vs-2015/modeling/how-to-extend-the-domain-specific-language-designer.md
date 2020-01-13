@@ -9,19 +9,17 @@ caps.latest.revision: 10
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 023559143a526732cb92bd72e06e19147261fba7
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: faac29c59b78d8f3f1a0260b0b7a8ace16169f9d
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75850689"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916795"
 ---
 # <a name="how-to-extend-the-domain-specific-language-designer"></a>Como estender o Designer de Linguagem Específica do Domínio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Você pode fazer extensões para o designer que você usa para Editar definições de DSL. Os tipos de extensão que você pode fazer incluem adicionar comandos de menu, adicionar manipuladores para gestos de arrastar e clicar duas vezes e regras que são disparadas quando determinados tipos de valores ou relações são alterados. As extensões podem ser empacotadas como um VSIX (extensão de integração do Visual Studio) e distribuídas a outros usuários.
-
- Para obter um exemplo de código e mais informações sobre esse recurso, consulte o site Visual Studio [Visualization and Modeling SDK (VMSDK)](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples).
 
 ## <a name="setting-up-the-solution"></a>Configurando a solução
  Configure um projeto que contém o código de sua extensão e um projeto VSIX que exporta o projeto. Sua solução pode conter outros projetos que são incorporados ao mesmo VSIX.

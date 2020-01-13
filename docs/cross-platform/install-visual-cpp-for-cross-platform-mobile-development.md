@@ -12,12 +12,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: bda6d8e20064ab2197408db6b9a55a86325515e8
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: c3ea8c91c54586cf54b82566a4803b464e01750c
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75846728"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916489"
 ---
 # <a name="install-cross-platform-mobile-development-with-c"></a>Instalar desenvolvimento de tecnologia móvel multiplataforma com C++
 
@@ -98,7 +98,7 @@ Se você optar por não instalar uma ou mais dependências de terceiros usando o
 
 É possível executar o aplicativo Gerenciador de SDK no diretório de SDK do Android novamente para atualizar o SDK e instalar ferramentas opcionais e níveis de API adicionais. A instalação das atualizações pode falhar, a menos que você use **Executar como administrador** para executar o aplicativo Gerenciador de SDK. Se tiver problemas ao compilar um aplicativo Android, verifique o Gerenciador de SDK quanto a atualizações para seus SDKs instalados.
 
-Para usar alguns dos emuladores do Android que acompanham o SDK do Android, talvez seja necessário configurar a aceleração de hardware. Para obter mais informações, consulte [aceleração de hardware para desempenho de emulador (Hyper-V & HAXM)](https://docs.microsoft.com/xamarin/android/get-started/installation/android-emulator/hardware-acceleration?tabs=vswin).
+Para usar alguns dos emuladores do Android que acompanham o SDK do Android, talvez seja necessário configurar a aceleração de hardware. Para obter mais informações, consulte [aceleração de hardware para desempenho de emulador (Hyper-V & HAXM)](/xamarin/android/get-started/installation/android-emulator/hardware-acceleration?tabs=vswin).
 
 Na maioria dos casos, o Visual Studio detecta as configurações do software de terceiros que você instalou e mantém os caminhos de instalação em variáveis de ambiente internas. É possível substituir os caminhos padrão dessas ferramentas de desenvolvimento de plataforma cruzada no IDE do Visual Studio.
 

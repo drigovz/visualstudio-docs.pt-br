@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.date: 11/20/2019
 ms.technology: vs-azure
 ms.topic: conceptual
-ms.openlocfilehash: e1b2f332563503dcb4d63faf301000db83eed5ea
-ms.sourcegitcommit: 49ebf69986713e440fd138fb949f1c0f47223f23
+ms.openlocfilehash: 6f11082a0e309d4e34dd25a1085c1f8c971f28f7
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74706829"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916934"
 ---
 # <a name="how-visual-studio-builds-containerized-apps"></a>Como o Visual Studio cria aplicativos em contêineres
 
@@ -64,7 +64,7 @@ O estágio final inicia novamente de `base`e inclui o `COPY --from=publish` para
 
 Se você quiser criar fora do Visual Studio, poderá usar `docker build` ou `MSBuild` para criar a partir da linha de comando.
 
-### <a name="docker-build"></a>Build do Docker
+### <a name="docker-build"></a>docker build
 
 Para criar uma solução em contêiner a partir da linha de comando, você geralmente pode usar o comando `docker build <context>` para cada projeto na solução. Você fornece o argumento de *contexto de compilação* . O *contexto de compilação* para um Dockerfile é a pasta no computador local que é usada como a pasta de trabalho para gerar a imagem. Por exemplo, é a pasta da qual você copia arquivos quando você copia para o contêiner.  Em projetos do .NET Core, use a pasta que contém o arquivo de solução (. sln).  Expresso como um caminho relativo, esse argumento normalmente é ".." para um Dockerfile em uma pasta de projeto e o arquivo de solução em sua pasta pai.  Para projetos .NET Framework, o contexto de compilação é a pasta do projeto, não a pasta da solução.
 
@@ -103,7 +103,7 @@ O aquecimento só acontecerá no modo **rápido** , portanto, o contêiner em ex
 
 ## <a name="volume-mapping"></a>Mapeamento de volume
 
-Para que a depuração funcione em contêineres, o Visual Studio usa o mapeamento de volume para mapear as pastas do depurador e do NuGet do computador host. Aqui estão os volumes que são montados em seu contêiner:
+Para que a depuração funcione em contêineres, o Visual Studio usa o mapeamento de volume para mapear as pastas do depurador e do NuGet do computador host. O mapeamento de volume é descrito na documentação do Docker [aqui](https://docs.docker.com/storage/volumes/). Aqui estão os volumes que são montados em seu contêiner:
 
 |||
 |-|-|
@@ -116,11 +116,11 @@ Para aplicativos Web ASP.NET Core, pode haver duas pastas adicionais para o cert
 
 ## <a name="ssl-enabled-aspnet-core-apps"></a>Aplicativos ASP.NET Core habilitados para SSL
 
-As ferramentas de contêiner no Visual Studio dão suporte à depuração de um aplicativo ASP.NET Core habilitado para SSL com um certificado de desenvolvimento, da mesma forma que você esperaria que ele funcionasse sem contêineres. Para fazer isso acontecer, o Visual Studio adiciona mais algumas etapas para exportar o certificado e disponibilizá-lo para o contêiner. Este é o fluxo:
+As ferramentas de contêiner no Visual Studio dão suporte à depuração de um aplicativo ASP.NET Core habilitado para SSL com um certificado de desenvolvimento, da mesma forma que você esperaria que ele funcionasse sem contêineres. Para fazer isso acontecer, o Visual Studio adiciona mais algumas etapas para exportar o certificado e disponibilizá-lo para o contêiner. Este é o fluxo que o Visual Studio manipula para você durante a depuração no contêiner:
 
-1. Verifique se o certificado de desenvolvimento local está presente e é confiável no computador host por meio da ferramenta de `dev-certs`.
-2. Exporte o certificado para%APPDATA%\ASP.NET\Https com uma senha segura que é armazenada no repositório de segredos do usuário para este aplicativo específico.
-3. Montagem de volume nos seguintes diretórios:
+1. Garante que o certificado de desenvolvimento local esteja presente e seja confiável no computador host por meio da ferramenta de `dev-certs`.
+2. Exporta o certificado para%APPDATA%\ASP.NET\Https com uma senha segura que é armazenada no repositório de segredos do usuário para este aplicativo específico.
+3. Volume – monta os seguintes diretórios:
 
    - *%APPDATA%\Microsoft\UserSecrets*
    - *%APPDATA%\ASP.NET\Https*
@@ -140,7 +140,9 @@ ASP.NET Core procura um certificado que corresponda ao nome do assembly na pasta
 }
 ```
 
-Para obter mais informações sobre como usar o SSL com aplicativos ASP.NET Core em contêineres, consulte [hospedando imagens ASP.NET Core com o Docker sobre HTTPS](https://docs.microsoft.com/aspnet/core/security/docker-https).
+Se sua configuração der suporte a compilações em contêiner e não contêineras, você deverá usar as variáveis de ambiente, pois os caminhos são específicos para o ambiente de contêiner.
+
+Para obter mais informações sobre como usar o SSL com aplicativos ASP.NET Core em contêineres, consulte [hospedando imagens ASP.NET Core com o Docker via HTTPS](/aspnet/core/security/docker-https)).
 
 ## <a name="debugging"></a>{1&gt;Depuração&lt;1}
 
@@ -187,8 +189,8 @@ O ponto de entrada de contêiner só pode ser modificado em projetos de composi�
 
 Saiba como personalizar ainda mais suas compilações definindo propriedades adicionais do MSBuild em seus arquivos de projeto. Consulte [Propriedades do MSBuild para projetos de contêiner](container-msbuild-properties.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 [MSBuild](../msbuild/msbuild.md)
-[Dockerfile em](/virtualization/windowscontainers/manage-docker/manage-windows-dockerfile) contêineres do Windows
-[Linux no Windows](/virtualization/windowscontainers/deploy-containers/linux-containers)
+[ Dockerfile em contêineres Linux do Windows](/virtualization/windowscontainers/manage-docker/manage-windows-dockerfile)
+[ no Windows](/virtualization/windowscontainers/deploy-containers/linux-containers)

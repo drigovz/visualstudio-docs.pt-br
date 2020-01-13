@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f261eac1c3cbc73bb12323c089ae88f4ffc6b120
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: d9c52c76bbd8623f9ec9b0ce8f3e5463c638d8f7
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72431683"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916446"
 ---
 # <a name="debugging-errors-and-warning-dialog-boxes"></a>Caixas de diálogo Depurando Erros e Avisos
 Veja abaixo as caixas de diálogo de erros e avisos que você pode encontrar ao depurar o aplicativo.
@@ -58,14 +58,14 @@ Veja abaixo as caixas de diálogo de erros e avisos que você pode encontrar ao 
 
  [Erro: a depuração não é possível porque um depurador de kernel está habilitado no sistema](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)
 
-## <a name="related-sections"></a>Seções relacionadas
+## <a name="related-sections"></a>Seções Relacionadas
  [Depurando script e Web: erros e solução de problemas](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
 
  [Erros de depuração remota](../debugger/remote-debugging-errors-and-troubleshooting.md)
 
- [Erros de anexação](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/8dbb3we5(v=vs.100))
+ [Erros de anexação](/previous-versions/visualstudio/visual-studio-2010/8dbb3we5(v=vs.100))
 
- [Solução de problemas de instalação de depuração de SQL](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/s7ahaxtd(v=vs.100))
+ [Solução de problemas de instalação de depuração de SQL](/previous-versions/visualstudio/visual-studio-2010/s7ahaxtd(v=vs.100))
 
  [Perguntas frequentes de depuração de código nativo](../debugger/debugging-native-code-faqs.md)
 

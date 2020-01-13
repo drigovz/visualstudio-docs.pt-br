@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d792f13e073f11c8e6d3a652c1d041902f1209c9
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 2a1611f8fcc1ba7f754b6d178b70180678cd06d6
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75848912"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917619"
 ---
 # <a name="image-service-and-catalog"></a>Serviço de imagem e catálogo
 Este manual contém diretrizes e práticas recomendadas para adotar o serviço de imagem do Visual Studio e o catálogo de imagens introduzidos no Visual Studio 2015.
@@ -720,7 +720,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 3. Atualize seu código para usar o serviço de imagem para solicitar monikers por meio do mapeamento atualizado. (Isso pode significar a atualização para **CrispImages** para código gerenciado, ou solicitar HBITMAPs ou HICONs do serviço de imagem e passá-los para código nativo.)
 
 ## <a name="testing-your-images"></a>Testando suas imagens
- Você pode usar a ferramenta Image Library Viewer para testar seus manifestos de imagem para garantir que tudo esteja criado corretamente. Você pode encontrar a ferramenta no [SDK do Visual Studio 2015](visual-studio-sdk.md). A documentação para essa ferramenta e outras podem ser encontradas [aqui](https://docs.microsoft.com/visualstudio/extensibility/internals/vssdk-utilities?view=vs-2015&redirectedfrom=MSDN).
+ Você pode usar a ferramenta Image Library Viewer para testar seus manifestos de imagem para garantir que tudo esteja criado corretamente. Você pode encontrar a ferramenta no [SDK do Visual Studio 2015](visual-studio-sdk.md). A documentação para essa ferramenta e outras podem ser encontradas [aqui](/visualstudio/extensibility/internals/vssdk-utilities?view=vs-2015).
 
 ## <a name="additional-resources"></a>Recursos adicionais
 

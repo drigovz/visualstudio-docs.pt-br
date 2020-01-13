@@ -9,12 +9,12 @@ ms.date: 11/13/2017
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 54239b49344a5e29e7f837d22840f997c4b9fbe2
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: c1160c68c79dd595e82ecf761c6e441ecc906f62
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75845067"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75915805"
 ---
 # <a name="installation"></a>Instalação
 
@@ -137,7 +137,7 @@ O [Microsoft Cognitive Toolkit](https://cntk.ai) é um kit de ferramentas unific
 > [!NOTE]
 > Atualmente, não há suporte para macOS no CNTK.
 
-Para instalar o pacote do CNTK em Python, confira [Como instalar o CNTK](https://docs.microsoft.com/cognitive-toolkit/Setup-CNTK-on-your-machine).
+Para instalar o pacote do CNTK em Python, confira [Como instalar o CNTK](/cognitive-toolkit/Setup-CNTK-on-your-machine).
 
 ### <a name="tensorflow"></a>TensorFlow
 

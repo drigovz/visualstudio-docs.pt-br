@@ -10,12 +10,12 @@ author: mikejo5000
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c56e6fdb6d841f32a056fc77f4928b09d386e036
-ms.sourcegitcommit: aa302af53de342e75793bd05b10325939dc69b53
+ms.openlocfilehash: affad69f6821addb50686d4f41d0bdb3bd816e8e
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "75886426"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75919017"
 ---
 # <a name="vstestconsoleexe-command-line-options"></a>Opções da linha de comando de VSTest.Console.exe
 
@@ -25,6 +25,8 @@ O *VSTest.Console.exe* é a ferramenta de linha de comando para execução de te
 > O adaptador MSTest no Visual Studio também funciona no modo herdado (equivalente à execução de testes com *mstest.exe*) para compatibilidade. No modo herdado, ele não pode aproveitar o recurso TestCaseFilter. O adaptador pode alternar para o modo herdado quando um arquivo *testsettings* é especificado, **forcelegacymode** é definido como **true** em um arquivo *runsettings* ou usando atributos como **HostType**.
 >
 > Para executar testes automatizados em um computador baseado na arquitetura ARM, use o *VSTest.Console.exe*.
+
+Abra um [prompt de comando do desenvolvedor](/dotnet/framework/tools/developer-command-prompt-for-vs) para usar a ferramenta de linha de comando ou você pode encontrar a ferramenta em *% arquivos de programas (x86)% \ Microsoft Visual Studio\\< versão\>\\< edition\>\Common7\ide\CommonExtensions\\< plataforma | Microsoft >* .
 
 ## <a name="general-command-line-options"></a>Opções gerais de linha de comando
 

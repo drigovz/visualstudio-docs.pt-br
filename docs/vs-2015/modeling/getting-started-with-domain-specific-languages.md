@@ -9,19 +9,17 @@ caps.latest.revision: 18
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 71aa8b31023cedcc41a08a775f9fdf28a4489d1e
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: c7e8ca0fa1558ce0a2d37d4e11a35ba10a27fd2d
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75847185"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75919091"
 ---
 # <a name="getting-started-with-domain-specific-languages"></a>Introdução às linguagens específicas do domínio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Este tópico explica os conceitos básicos de definição e uso de uma DSL (linguagem específica de domínio) criada com o SDK de modelagem do Visual Studio.
-
- Se você for novo nas DSLs, recomendamos que você trabalhe no **laboratório de ferramentas DSL**, que pode ser encontrado neste site: [VISUALIZATON e o SDK de modelagem](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)
 
 ## <a name="what-can-you-do-with-a-domain-specific-language"></a>O que você pode fazer com uma linguagem específica de domínio?
  Uma linguagem específica de domínio é uma notação, geralmente gráfica, que é projetada para ser usada para uma finalidade específica. Por outro lado, linguagens como UML são de finalidade geral. Em uma DSL, você pode definir os tipos de elemento de modelo e suas relações e como eles são apresentados na tela.
@@ -42,7 +40,7 @@ Este tópico explica os conceitos básicos de definição e uso de uma DSL (ling
 |||
 |-|-|
 |[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185579](https://www.visualstudio.com/)|
-|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185580](https://docs.microsoft.com/azure/devops/integrate/index?view=azure-devops&viewFallbackFrom=vsts)|
+|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185580](/azure/devops/integrate/index?view=azure-devops&viewFallbackFrom=vsts)|
 |SDK de modelagem para Visual Studio|[Baixar o MSDK](https://www.microsoft.com/download/details.aspx?id=48148)|
 
 ## <a name="creating-a-dsl-solution"></a>Criando uma solução de DSL
@@ -399,4 +397,4 @@ Este tópico explica os conceitos básicos de definição e uso de uma DSL (ling
 2. Reconstrua quaisquer DSLs experimentais ou outras extensões experimentais de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] que você ainda deseja usar.
 
 ## <a name="see-also"></a>Veja também
- [Entendendo modelos, classes e relações](../modeling/understanding-models-classes-and-relationships.md) [como definir um](../modeling/how-to-define-a-domain-specific-language.md) [VISUALIZATON](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples) de linguagem e um SDK de modelagem específicos de domínio
+ [Entendendo modelos, classes e relações](../modeling/understanding-models-classes-and-relationships.md) [como definir um](../modeling/how-to-define-a-domain-specific-language.md) [VISUALIZATON](https://www.microsoft.com/download/details.aspx?id=48148) de linguagem e um SDK de modelagem específicos de domínio

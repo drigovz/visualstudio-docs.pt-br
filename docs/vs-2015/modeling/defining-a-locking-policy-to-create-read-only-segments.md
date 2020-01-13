@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 0d9887e3c7cf283bff453e458502400a7ade1a41
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 85573309e594fab49db75115a48b5a4e98e44de3
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75849565"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918853"
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>Definindo uma política de bloqueio para criar segmentos somente leitura
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ A API de imutabilidade do SDK de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] vi
 > [!NOTE]
 > Uma política de bloqueio pode ser contornada usando a reflexão. Ele fornece um limite claro para desenvolvedores de terceiros, mas não fornece segurança forte.
 
- Mais informações e exemplos estão disponíveis no site [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] [visualização e na modelagem do SDK](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples) .
+ Mais informações estão disponíveis no site [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] [visualização e SDK de modelagem](https://www.microsoft.com/download/details.aspx?id=48148) .
 
 ## <a name="setting-and-getting-locks"></a>Configurando e obtendo bloqueios
  Você pode definir bloqueios no repositório, em uma partição ou em um elemento individual. Por exemplo, essa instrução impedirá que um elemento de modelo seja excluído e também impedirá que suas propriedades sejam alteradas:

@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/31/2017
 ms.author: ghogen
-ms.openlocfilehash: 12f94605ee6a1f4e4cc0142e6dd59ec02ed619c9
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: f4c1ff547d9d550cbbc2e77435b159543fc16bf6
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75849949"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917092"
 ---
 # <a name="accessing-azure-virtual-machines-from-server-explorer"></a>Acessando máquinas virtuais do Azure no Gerenciador de Servidores
 
@@ -31,7 +31,7 @@ Se você tiver máquinas virtuais hospedadas pelo Azure, poderá acessá-las no 
    | Nome DNS |A URL com o endereço de Internet da máquina virtual. |
    | Ambiente |Para uma máquina virtual, o valor dessa propriedade é sempre produção. |
    | Name |O nome da máquina virtual. |
-   | Tamanho |O tamanho da máquina virtual, que reflete a quantidade de memória e espaço em disco disponível. Para obter mais informações, consulte os [tamanhos de máquina virtual](https://docs.microsoft.com/azure/cloud-services/cloud-services-sizes-specs). |
+   | Tamanho |O tamanho da máquina virtual, que reflete a quantidade de memória e espaço em disco disponível. Para obter mais informações, consulte os [tamanhos de máquina virtual](/azure/cloud-services/cloud-services-sizes-specs). |
    | Status |Os valores incluem Inicial, Iniciado, Parando, Parado e Recuperando Status. Se Recuperando Status aparecer, o status atual é desconhecido. Os valores para essa propriedade diferem dos valores que são usados no [Portal do Azure](https://portal.azure.com/). |
    | SubscriptionID |A ID de assinatura para sua conta do Azure. Você pode mostrar essas informações no [Portal do Azure](https://portal.azure.com/) exibindo as propriedades de uma assinatura. |
 2. Escolha um nó do ponto de extremidade e exiba a janela **Propriedades** .

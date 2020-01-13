@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
-ms.openlocfilehash: 23abafcae0e777216a8880adc05ecac38d5b3f0f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 27837390306ad29da55c7c5262ecd8fa6bcf75b3
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62961944"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917373"
 ---
 # <a name="set-up-named-authentication-credentials"></a>Configurar credenciais de autenticação nomeadas
 
@@ -37,9 +37,9 @@ No Gerenciador de Servidores, clique com o botão direito do mouse no nó **Azur
 
 Se você deseja criar um certificado por conta própria, pode consultar as instruções em [Criar e carregar um certificado de gerenciamento do Azure](https://msdn.microsoft.com/library/windowsazure/gg551722.aspx) e depois carregar manualmente o certificado para o [Portal do Azure](https://portal.azure.com/).
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
 
-- [Visão geral de aplicativos Web](https://docs.microsoft.com/azure/app-service/)
-- [Implantar seu aplicativo no Serviço de Aplicativo do Azure](https://docs.microsoft.com/azure/app-service/app-service-deploy-local-git) 
-- [Implantar Trabalhos Web usando o Visual Studio](https://docs.microsoft.com/azure/app-service/websites-dotnet-deploy-webjobs)
-- [Criar e implantar um serviço de nuvem](https://docs.microsoft.com/azure/cloud-services/cloud-services-how-to-create-deploy-portal)
+- [Visão geral de aplicativos Web](/azure/app-service/)
+- [Implantar seu aplicativo no Serviço de Aplicativo do Azure](/azure/app-service/app-service-deploy-local-git) 
+- [Implantar Trabalhos Web usando o Visual Studio](/azure/app-service/websites-dotnet-deploy-webjobs)
+- [Criar e implantar um serviço de nuvem](/azure/cloud-services/cloud-services-how-to-create-deploy-portal)

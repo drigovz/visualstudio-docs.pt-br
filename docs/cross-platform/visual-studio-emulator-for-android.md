@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ac1a2812cb86108d32d769595affd53fc402ff4
-ms.sourcegitcommit: 57bc1c3887838d707c13feff72a677b3bad3be4b
+ms.openlocfilehash: d7bda9882a8f46f3b32c658db952a2eaf73d3fb7
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72777718"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916467"
 ---
 # <a name="visual-studio-emulator-for-android"></a>Emulador do Visual Studio para Android
 
@@ -25,10 +25,10 @@ O Emulador do Visual Studio para Android é um aplicativo de área de trabalho q
 > Na maioria dos cenários, o emulador do Google Android é recomendado para uso, em vez do Emulador do Visual Studio para Android:
 > - Não há suporte para o Emulador do Visual Studio para Android após o Visual Studio 2015.
 > - As imagens do emulador posteriores à versão do Android 6.0 não estão disponíveis para o Emulador do Visual Studio para Android.
-> - O Google Android Emulator agora é compatível com [Hyper-V](https://docs.microsoft.com/xamarin/android/get-started/installation/android-emulator/hardware-acceleration#accelerating-with-hyper-v).
+> - O Google Android Emulator agora é compatível com [Hyper-V](/xamarin/android/get-started/installation/android-emulator/hardware-acceleration#accelerating-with-hyper-v).
 > - As Ferramentas do Visual Studio para Apache Cordova funcionam com o Google Android Emulator. Para obter mais informações, confira [Run your Apache Cordova app on Android](/visualstudio/cross-platform/tools-for-cordova/run-your-app/run-app-android#google-android-emulator) (Executar seu aplicativo Apache Cordova no Android) (observe que você não precisa mais desabilitar o Hyper-V, conforme explicado neste artigo).
 >
-> Para saber mais de como configurar e usar o Google Android Emulator, confira [Configuração do Android Emulator](https://docs.microsoft.com/xamarin/android/get-started/installation/android-emulator/).
+> Para saber mais de como configurar e usar o Google Android Emulator, confira [Configuração do Android Emulator](/xamarin/android/get-started/installation/android-emulator/).
 
  O Emulador do Visual Studio para Android foi projetado para fornecer um desempenho comparável a um dispositivo real. Porém, antes de publicar seu aplicativo, recomendamos que você teste-o em um dispositivo físico.
 
@@ -39,7 +39,7 @@ O Emulador do Visual Studio para Android é um aplicativo de área de trabalho q
 
  O Emulador do Visual Studio para Android é um componente das ferramentas de plataforma cruzada disponível no Visual Studio. Ele é instalado durante uma configuração personalizada do Visual Studio, selecionando Desenvolvimento Móvel Multiplataforma, Ferramentas Comuns e Kits de Desenvolvimento de Software e, depois, Emulador do Visual Studio para Android.
 
- Desinstalando
+ Desinstalando o
 
  Desinstale o Emulador do Visual Studio para Android usando Adicionar ou Remover Programas no Painel de Controle.
 
@@ -91,7 +91,7 @@ O Emulador do Visual Studio para Android é um aplicativo de área de trabalho q
 
 - Bússola
 
-- Giroscópio
+- {1&gt;Giroscópio&lt;1}
 
 - Controlador de vibração
 
@@ -104,5 +104,5 @@ O Emulador do Visual Studio para Android é um aplicativo de área de trabalho q
 
 - Relate um problema usando a ferramenta Enviar um Smiley no Visual Studio ou no Gerenciador de emulador.
 
-## <a name="see-also"></a>Consulte também
- [Requisitos do sistema do Emulador do Visual Studio para Android](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md) [Solução de problemas do Emulador do Visual Studio para Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)
+## <a name="see-also"></a>Veja também
+ [Requisitos do sistema para o emulador do Visual Studio para Android](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md) [Solucionando problemas do emulador do Visual Studio para Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)

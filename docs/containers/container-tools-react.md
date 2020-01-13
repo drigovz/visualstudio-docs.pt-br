@@ -6,18 +6,18 @@ ms.author: ghogen
 ms.date: 10/16/2019
 ms.technology: vs-azure
 ms.topic: quickstart
-ms.openlocfilehash: 8083d2d6446c872791501f76cb0167a92a9ef660
-ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
+ms.openlocfilehash: af859c1c06820aa477869f6968e9c652bd525de6
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72516446"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916744"
 ---
 # <a name="quickstart-use-docker-with-a-react-single-page-app-in-visual-studio"></a>Início rápido: usar o Docker com um aplicativo de página única reagir no Visual Studio
 
 Com o Visual Studio, você pode criar, depurar e executar aplicativos do ASP.NET Core facilmente em contêineres, incluindo aqueles com aplicativo de página única do React.js, e publicá-los no ACR (Registro de Contêiner do Azure), no Docker Hub, no Serviço de Aplicativo do Azure ou no seu próprio registro de contêiner. Neste artigo, publicaremos no ACR.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>{1&gt;{2&gt;Pré-requisitos&lt;2}&lt;1}
 
 ::: moniker range="vs-2017"
 * [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
@@ -47,9 +47,9 @@ Para a instalação do Docker, primeiro examine as informações no [Docker desk
 
    ![Captura de tela do novo projeto React.js](media/container-tools-react/vs2017/new-react-project.png)
 
-1. Clique com botão direito do mouse no nó do projeto e escolha **Adicionar**>**Suporte ao Docker** para adicionar um Dockerfile ao seu projeto.
+1. Clique com o botão direito do mouse no nó do projeto e escolha **adicionar** > **suporte do Docker** para adicionar um Dockerfile ao seu projeto.
 
-   ![Adicionar suporte do Docker](media/container-tools-react/vs2017/add-docker-support.png)
+   ![Adicionar suporte ao Docker](media/container-tools-react/vs2017/add-docker-support.png)
 
 1. Selecione o tipo de contêiner e clique em **OK**.
 ::: moniker-end
@@ -59,9 +59,9 @@ Para a instalação do Docker, primeiro examine as informações no [Docker desk
 
    ![Captura de tela do novo projeto React.js](media/container-tools-react/vs2019/new-react-project.png)
 
-1. Clique com botão direito do mouse no nó do projeto e escolha **Adicionar**>**Suporte ao Docker** para adicionar um Dockerfile ao seu projeto.
+1. Clique com o botão direito do mouse no nó do projeto e escolha **adicionar** > **suporte do Docker** para adicionar um Dockerfile ao seu projeto.
 
-   ![Adicionar suporte do Docker](media/container-tools-react/vs2017/add-docker-support.png)
+   ![Adicionar suporte ao Docker](media/container-tools-react/vs2017/add-docker-support.png)
 
 1. Selecione o tipo de contêiner.
 ::: moniker-end
@@ -175,7 +175,7 @@ Atualize o Dockerfile adicionando as linhas a seguir. Isso copiará o nó e o NP
 
 1. Atualize o arquivo. dockerignore removendo o `**/bin`.
 
-## <a name="debug"></a>Depurar
+## <a name="debug"></a>Depuração
 
 Selecione **Docker** no menu suspenso de depuração na barra de ferramentas e inicie a depuração do aplicativo. Poderá aparecer uma mensagem com um aviso sobre a confiança em um certificado, escolha confiar no certificado para continuar.  Na primeira vez que você cria, o Docker baixa as imagens base, portanto, pode demorar um pouco mais.
 
@@ -225,9 +225,9 @@ Depois que o ciclo de desenvolvimento e de depuração do aplicativo forem concl
     | Configuração      | Valor sugerido  | Descrição                                |
     | ------------ |  ------- | -------------------------------------------------- |
     | **Prefixo DNS** | Nome globalmente exclusivo | Nome que identifica exclusivamente o registro de contêiner. |
-    | **Assinatura** | Escolha sua assinatura | A assinatura do Azure a utilizar. |
+    | **Assinatura** | Escolha sua assinatura | A assinatura do Azure a usar. |
     | **[Grupo de Recursos](/azure/azure-resource-manager/resource-group-overview)** | myResourceGroup |  Nome do grupo de recursos no qual criar o registro de contêiner. Escolha **Novo** para criar um novo grupo de recursos.|
-    | **[SKU](https://docs.microsoft.com/azure/container-registry/container-registry-skus)** | Padrão | Camada de serviço do registro de contêiner  |
+    | **[SKU](/azure/container-registry/container-registry-skus)** | Standard | Camada de serviço do registro de contêiner  |
     | **Local do Registro** | Um local próximo | Escolha um Local em uma [região](https://azure.microsoft.com/regions/) próxima a você ou perto de outros serviços que usarão o registro de contêiner. |
 
     ![Caixa de diálogo Criar um Registro de Contêiner do Azure do Visual Studio][0]
@@ -236,7 +236,7 @@ Depois que o ciclo de desenvolvimento e de depuração do aplicativo forem concl
 
    ![Captura de tela mostrando a publicação bem-sucedida](media/container-tools/publish-succeeded.png)
 
-## <a name="next-steps"></a>Próximas etapas
+## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
 
 Agora, é possível extrair o contêiner do registro para qualquer host capaz de executar imagens do Docker, por exemplo [Instâncias de Contêiner do Azure](/azure/container-instances/container-instances-tutorial-deploy-app).
 

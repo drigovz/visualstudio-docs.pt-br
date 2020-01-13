@@ -8,12 +8,12 @@ ms.assetid: c64aac80-a411-463f-b7bd-8b7607a52ece
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 6735f929f52387f4cb40406d6918894e72bb40d3
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: d47e40a5c38eeb7898aa179282fa55bbe17ef1d5
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299681"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917325"
 ---
 # <a name="what39s-new-in-the-visual-studio-2015-sdk"></a>Quais&#39;s novidades no SDK do Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ A partir do Visual Studio 2017, a verificação de modelos de projeto e item per
  A partir do SDK do Visual Studio 2015, você tem opções diferentes para criar extensões, dependendo da linguagem de programação que estiver usando.
 
 ### <a name="visual-c-and-visual-basic"></a>Visual C# e Visual Basic
- Para C# o e Visual Basic, há uma gama completa de modelos de item de projeto que permitem que você crie VSPackages, comandos de menu, janelas de ferramentas, classificadores de editor, adornos de editor e extensões de margem do editor. Você pode adicionar qualquer um deles ao projeto VSIX padrão. Para obter mais informações, consulte:
+ Para C# o e Visual Basic, há uma gama completa de modelos de item de projeto que permitem que você crie VSPackages, comandos de menu, janelas de ferramentas, classificadores de editor, adornos de editor e extensões de margem do editor. Você pode adicionar qualquer um deles ao projeto VSIX padrão. Para obter mais informações, consulte .
 
 - [Criar uma extensão com um comando de menu](../extensibility/creating-an-extension-with-a-menu-command.md)
 
@@ -56,7 +56,7 @@ A partir do Visual Studio 2017, a verificação de modelos de projeto e item per
  Para C++o, o assistente de VSPackage dá suporte a comandos de menu, janelas de ferramentas e editores personalizados. Procure-o na caixa de diálogo **novo projeto** no  **C++ Visual/extensibilidade**.
 
 ## <a name="vs-sdk-reference-assemblies-via-nuget"></a>Assemblies de referência do SDK do VS via NuGet
- Para maior portabilidade e compartilhamento de projetos de extensibilidade, você pode usar as versões do NuGet dos assemblies de referência do SDK do VS.  Eles estão disponíveis no [NuGet.org](https://www.nuget.org/) publicado pelo [VisualStudioExtensibility](https://www.nuget.org/profiles/VisualStudioExtensibility) e podem ser facilmente adicionados ao seu projeto ou solução por meio da caixa de diálogo **referências/gerenciar pacotes NuGet** do Visual Studio. Você pode adicionar referências individuais a assemblies de extensibilidade específicos ou adicionar todos os assemblies de referências do SDK do VS ao mesmo tempo usando o [pacote meta](https://www.nuget.org/packages/VSSDK_Reference_Assemblies)do SDK do vs. Para saber mais sobre o NuGet, consulte [visão geral do NuGet](https://docs.microsoft.com/nuget/) e [gerenciar pacotes NuGet usando a caixa de diálogo](https://docs.microsoft.com/nuget/consume-packages/install-use-packages-visual-studio).
+ Para maior portabilidade e compartilhamento de projetos de extensibilidade, você pode usar as versões do NuGet dos assemblies de referência do SDK do VS.  Eles estão disponíveis no [NuGet.org](https://www.nuget.org/) publicado pelo [VisualStudioExtensibility](https://www.nuget.org/profiles/VisualStudioExtensibility) e podem ser facilmente adicionados ao seu projeto ou solução por meio da caixa de diálogo **referências/gerenciar pacotes NuGet** do Visual Studio. Você pode adicionar referências individuais a assemblies de extensibilidade específicos ou adicionar todos os assemblies de referências do SDK do VS ao mesmo tempo usando o [pacote meta](https://www.nuget.org/packages/VSSDK_Reference_Assemblies)do SDK do vs. Para saber mais sobre o NuGet, consulte [visão geral do NuGet](/nuget/) e [gerenciar pacotes NuGet usando a caixa de diálogo](/nuget/consume-packages/install-use-packages-visual-studio).
 
  Quando você usa as versões do NuGet dos assemblies de referência do SDK do VS, outro usuário não precisa instalar o SDK do VS para abrir e compilar seu projeto.  Os assemblies de referência do NuGet e as ferramentas de Build do SDK do VS serão instalados automaticamente no computador desse projeto.
 

@@ -12,12 +12,12 @@ ms.technology: vs-azure
 ms.custom: vs-azure
 ms.date: 12/16/2015
 ms.author: mlearned
-ms.openlocfilehash: 83f908876b2e0de774443084d830f20d121e33d0
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 0a8f6fab3c8f30834a467e2ad98843b16a9245b4
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75844844"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916706"
 ---
 # <a name="adding-mobile-services-by-using-visual-studio-connected-services"></a>Adicionando Serviços Móveis usando os serviços conectados do Visual Studio
 Com o Visual Studio 2015, você pode se conectar a Serviços Móveis do Azure usando a caixa de diálogo **Adicionar Serviço Conectado** . Você pode conectar de qualquer aplicativo de cliente C#, qualquer aplicativo JavaScript ou aplicativo Cordova de plataforma cruzada. Uma vez conectado, você pode criar e acessar dados, criar APIs personalizados e trabalhos programados ou adicionar suporte ou notificações por push.  A operação de serviços conectados adiciona todas as referências apropriadas e o código de conexão. Você também pode aproveitar o suporte interno para autenticação com uma variedade de esquemas de identidade populares, como o AD do Azure, Facebook, Twitter e contas da Microsoft.
@@ -63,9 +63,6 @@ Você pode usar a caixa de diálogo Serviços Conectados para se conectar a Serv
    5. O novo serviço móvel deve aparecer na lista de serviço, na caixa de diálogo **Serviços Móveis do Azure** . Escolha o novo serviço móvel na lista e escolha o botão **Adicionar** para adicionar o serviço ao seu projeto.
 5. Revise a página de introdução exibida e descubra como seu projeto foi modificado. Uma página de Introdução será exibida no navegador sempre que você adicionar um serviço conectado. Você pode revisar as próximas etapas sugeridas e exemplos de código ou alternar para a página O que aconteceu para ver quais referências foram adicionadas ao seu projeto e como o seu código e arquivos de configuração foram modificados.
 6. Usando os exemplos de código como guia, comece a escrever o código para acessar seu serviço móvel!
-
-## <a name="how-your-project-is-modified"></a>Como o projeto é modificado
-Como o Visual Studio modifica seu projeto depende do tipo de projeto. Para aplicativos cliente C#, consulte [O que aconteceu — projetos C#](https://docs.microsoft.com/azure/). Para aplicativos cliente JavaScript, consulte [O que aconteceu — projetos JavaScript](https://docs.microsoft.com/azure/). Para aplicativos Cordova, consulte [O que aconteceu — projetos Cordova](https://docs.microsoft.com/azure/).
 
 ## <a name="next-steps"></a>{1&gt;{2&gt;Próximas etapas&lt;2}&lt;1}
 Faça perguntas e obtenha ajuda:

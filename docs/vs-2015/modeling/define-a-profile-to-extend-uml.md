@@ -16,12 +16,12 @@ caps.latest.revision: 44
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: b680c2e27b871e654618b4c0ada0904744751282
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: a495a566f78ceb2b89f8e2070837f038da352a4d
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75850478"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918873"
 ---
 # <a name="define-a-profile-to-extend-uml"></a>Definir um perfil para estender UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -220,7 +220,8 @@ Você pode definir um *perfil UML* para personalizar os elementos do modelo padr
 7. Crie a extensão do Visual Studio, seja criando o projeto de extensão ou compactando todos os arquivos, conforme descrito nas seções anteriores.
 
 ## <a name="Schema"></a>A estrutura de um perfil
- O arquivo XSD para perfis UML pode ser encontrado no exemplo a seguir: [Configurando estereótipos e perfis XSD](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples). Para ajudá-lo a editar os arquivos de perfil, instale o arquivo de `.xsd` em:
+
+ Para ajudá-lo a editar os arquivos de perfil, instale o arquivo de `.xsd` em:
 
  **%ProgramFiles%\Microsoft Visual Studio [versão] \Xml\Schemas**
 
@@ -365,4 +366,5 @@ Você precisa selecionar seu perfil em um pacote ou modelo. Os estereótipos ser
 6. Reinicie o [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
 
 ## <a name="see-also"></a>Veja também
- [Adicionar estereótipos a elementos de modelo UML](../modeling/add-stereotypes-to-uml-model-elements.md) [Personalize seu modelo com perfis e estereótipos](../modeling/customize-your-model-with-profiles-and-stereotypes.md) [padrões de estereótipos para modelos UML](../modeling/standard-stereotypes-for-uml-models.md) [exemplo: colorir elementos UML por](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples) [amostra de estereótipo: definindo estereótipos, perfis XSD](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)
+ [Adicionar estereótipos a elementos de modelo UML](../modeling/add-stereotypes-to-uml-model-elements.md) [Personalize seu modelo com perfis e estereótipos](../modeling/customize-your-model-with-profiles-and-stereotypes.md) [padrões de estereótipos para modelos UML](../modeling/standard-stereotypes-for-uml-models.md)
+ 

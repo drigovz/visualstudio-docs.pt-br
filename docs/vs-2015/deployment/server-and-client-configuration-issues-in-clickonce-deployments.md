@@ -18,12 +18,12 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 97c8c50dec18d730d92021d88361701a96b99590
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: a8f068099ec77f35919f880512e6c66f8e648cbe
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75844997"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918809"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>Problemas de configuração de servidor e cliente em implantações do ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -132,8 +132,6 @@ Se você usar o Serviços de Informações da Internet (IIS) no Windows Server e
  Com o [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)], você pode executar downloads que usam a compactação HTTP, uma tecnologia de servidor Web que usa o algoritmo GZIP para compactar um fluxo de dados antes de enviar o fluxo para o cliente. O cliente — nesse caso, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]— descompacta o fluxo antes de ler os arquivos.  
   
  Se você estiver usando o IIS, poderá habilitar facilmente a compactação HTTP. No entanto, quando você habilita a compactação HTTP, ela só é habilitada para determinados tipos de arquivo, ou seja, HTML e arquivos de texto. Para habilitar a compactação para assemblies (. dll), XML (. xml), manifestos de implantação (. Application) e manifestos de aplicativo (. manifest), você deve adicionar esses tipos de arquivo à lista de tipos para que o IIS seja compactado. Até que você adicione os tipos de arquivo à sua implantação, somente arquivos de texto e HTML serão compactados.  
-  
- Para obter instruções detalhadas sobre o IIS, consulte [como especificar tipos de documento adicionais para a compactação http](https://support.microsoft.com/kb/234497).  
   
 ## <a name="see-also"></a>Veja também  
  [Solução de problemas de implantações do ClickOnce](../deployment/troubleshooting-clickonce-deployments.md)   

@@ -9,12 +9,12 @@ caps.latest.revision: 18
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 791e2e077ebd2ed3e97aecd4c7c6e52316b4fe3b
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 5e4cb74b075a0dc9fe538ec8a09a455b30d2964b
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75845294"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918915"
 ---
 # <a name="customizing-copy-behavior"></a>Personalizando o comportamento da operação de copiar
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -91,7 +91,7 @@ Substitua *MyDsl*`ClipboardCommandSet.ProcessOnMenuCopyCommand()` no projeto Dsl
 Substitua *MyDsl*`ClipboardCommandSet.CopyModelElementsIntoElementGroupPrototype()` no projeto DslPackage.
 
  **Preserve o layout de forma por meio de copiar e colar.**
-Quando os usuários copiam várias formas, você pode preservar as posições relativas delas quando são coladas. Essa técnica é demonstrada pelo exemplo em [VMSDK: exemplo de diagramas de circuito](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples).
+Quando os usuários copiam várias formas, você pode preservar as posições relativas delas quando são coladas. 
 
  Para conseguir esse efeito, adicione as formas e conectores ao ElementGroupPrototype copiado. O método mais conveniente para substituir é o ElementOperations.CreateElementGroupPrototype(). Para fazer isso, adicione o seguinte código ao projeto Dsl:
 
@@ -148,7 +148,7 @@ partial class MyDslDiagram // EDIT NAME
 ```
 
  **Colar formas em um local escolhido, como a posição atual do cursor.**
-Quando os usuários copiam várias formas, você pode preservar as posições relativas delas quando são coladas. Essa técnica é demonstrada pelo exemplo em [VMSDK: exemplo de diagramas de circuito](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples).
+Quando os usuários copiam várias formas, você pode preservar as posições relativas delas quando são coladas.
 
  Para conseguir esse efeito, substitua `ClipboardCommandSet.ProcessOnMenuPasteCommand()` para usar a versão específica do local do `ElementOperations.Merge()`. Para fazer isso, adicione o seguinte código ao projeto DslPackage:
 
@@ -564,4 +564,5 @@ namespace Company.MyDsl
 ```
 
 ## <a name="see-also"></a>Veja também
- [Personalizando a criação e movimentação de elementos](../modeling/customizing-element-creation-and-movement.md) [como: adicionar um manipulador de arrastar e soltar](../modeling/how-to-add-a-drag-and-drop-handler.md) , [Personalizando](../modeling/customizing-deletion-behavior.md) o exemplo de comportamento de exclusão [: exemplo de diagramas de circuito VMSDK](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)
+ [Personalizando a criação e movimentação de elementos](../modeling/customizing-element-creation-and-movement.md) [como: adicionar um manipulador de arrastar e soltar](../modeling/how-to-add-a-drag-and-drop-handler.md) , [Personalizando o comportamento de exclusão](../modeling/customizing-deletion-behavior.md)
+ 

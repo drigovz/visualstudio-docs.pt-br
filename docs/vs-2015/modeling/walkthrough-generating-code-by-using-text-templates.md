@@ -12,12 +12,12 @@ caps.latest.revision: 13
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 89f78e129d64b313de7bada3c72a449f1fb2aece
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 43b9d201a146538cd74e9528340845fd9fd92597
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75849928"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918575"
 ---
 # <a name="walkthrough-generating-code-by-using-text-templates"></a>Instruções passo a passo: gerenciando código usando modelos de texto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ A geração de código permite que você produza um código de programa fortemen
  Neste projeto de exemplo, um modelo lê um arquivo XML de exemplo e gera classes que correspondem a cada tipo de nó. No código escrito manualmente, você pode usar essas classes para navegar pelo arquivo XML. Você também pode executar seu aplicativo em qualquer outro arquivo que use os mesmos tipos de nó. A finalidade do arquivo XML de exemplo é fornecer exemplos de todos os tipos de nó com os quais você deseja que seu aplicativo lide.
 
 > [!NOTE]
-> O aplicativo [XSD. exe](https://docs.microsoft.com/dotnet/standard/serialization/xml-schema-definition-tool-xsd-exe), que está incluído com [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], pode gerar classes fortemente tipadas a partir de arquivos XML. O modelo mostrado aqui é fornecido como um exemplo.
+> O aplicativo [XSD. exe](/dotnet/standard/serialization/xml-schema-definition-tool-xsd-exe), que está incluído com [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], pode gerar classes fortemente tipadas a partir de arquivos XML. O modelo mostrado aqui é fornecido como um exemplo.
 
  Este é o arquivo de exemplo:
 

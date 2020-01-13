@@ -14,12 +14,12 @@ ms.assetid: d2620e71-be9e-44c9-b5b7-03a4c8d9cf0b
 caps.latest.revision: 36
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 01917b9e78ee6129f09811ca2dc3e18c149c06f6
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: ef2d1cbffab5e38e603b0e50beb896f1c6efa23d
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75850382"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75919198"
 ---
 # <a name="visual-studio-isolated-shell"></a>Shell isolado do Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ O shell isolado do Visual Studio permite criar aplicativos autônomos que podem 
   
  Para trabalhar com um projeto de shell isolado, você deve instalar o SDK do Visual Studio. A partir do Visual Studio 2015, você não instala o SDK do Visual Studio a partir do centro de download. Ele é incluído como um recurso opcional na instalação do Visual Studio. Você também pode instalar o SDK do VS mais tarde. Para obter mais informações, consulte [instalando o SDK do Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).  
   
- Para criar um aplicativo de shell isolado, comece com um projeto isolado do shell do Visual Studio. Este projeto contém tudo o que você precisa para desenvolver e testar seu próprio aplicativo de shell isolado. Quando estiver pronto para escrever o programa de instalação que implanta seu aplicativo, você deverá obter o pacote redistribuível do Shell isolado de [shell do Microsoft Visual Studio (isolado) pacote redistribuível](https://docs.microsoft.com/collaborate/connect-redirect?ProgramID=8963&InvitationID=VS15-2R69-RB8J).  
+ Para criar um aplicativo de shell isolado, comece com um projeto isolado do shell do Visual Studio. Este projeto contém tudo o que você precisa para desenvolver e testar seu próprio aplicativo de shell isolado. Quando estiver pronto para escrever o programa de instalação que implanta seu aplicativo, você deverá obter o pacote redistribuível do Shell isolado de [shell do Microsoft Visual Studio (isolado) pacote redistribuível](https://visualstudio.microsoft.com/vs/older-downloads/isolated-shell/).  
   
 > [!NOTE]
 > Antes de poder acessar o pacote redistribuível do Shell isolado, você será solicitado a preencher uma breve pesquisa do cliente.  Após o preenchimento da pesquisa, você será direcionado para uma página do Visual Studio Connect com links de download para pacotes redistribuíveis.  Você pode encontrar os links de download em visitas posteriores ao site do Visual Studio Connect na guia  **&#124; programas Visual Studio 2015 integrado e Shell isolado** .  

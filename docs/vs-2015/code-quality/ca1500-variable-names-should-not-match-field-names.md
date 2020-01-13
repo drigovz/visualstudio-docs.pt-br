@@ -15,23 +15,23 @@ caps.latest.revision: 25
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: b46594a53e6562c2c6a069a9a25d58b3e32865eb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 5753cc660d626098d234fbce93c0bf0269e52bb3
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72607935"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75919046"
 ---
 # <a name="ca1500-variable-names-should-not-match-field-names"></a>CA1500: os nomes de variável não devem corresponder aos nomes de campo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Para obter a documentação mais recente sobre o Visual Studio, consulte [CA1500: nomes de variáveis não devem corresponder a nomes de campos](https://docs.microsoft.com/visualstudio/code-quality/ca1500-variable-names-should-not-match-field-names).
+Para obter a documentação mais recente sobre o Visual Studio, consulte [CA1500: nomes de variáveis não devem corresponder a nomes de campos](/visualstudio/code-quality/ca1500-variable-names-should-not-match-field-names).
 
 |||
 |-|-|
 |NomeDoTipo|VariableNamesShouldNotMatchFieldNames|
 |CheckId|CA1500|
-|Categoria|Microsoft. Maintainabilidade|
+|Categoria|Microsoft.Maintainability|
 |Alteração Significativa|Quando acionado em um parâmetro que tem o mesmo nome de um campo:<br /><br /> -Não separável – se o campo e o método que declara o parâmetro não puderem ser vistos fora do assembly, independentemente da alteração feita.<br />-Separável-se você alterar o nome do campo e puder ser visto fora do assembly.<br />-Quebra-se você alterar o nome do parâmetro e o método que o declara pode ser visto fora do assembly.<br /><br /> Quando acionado em uma variável local que tem o mesmo nome de um campo:<br /><br /> -Não separável – se o campo não puder ser visto fora do assembly, independentemente da alteração feita.<br />-Não separável – se você alterar o nome da variável local e não alterar o nome do campo.<br />-Quebra-se você alterar o nome do campo e ele pode ser visto fora do assembly.|
 
 ## <a name="cause"></a>Causa
