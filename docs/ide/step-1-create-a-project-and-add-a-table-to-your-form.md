@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b63a0b1801b0a3b559281959975a1faaa5bb99a5
-ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
+ms.openlocfilehash: abaae887e39b85e4f2d363a63ef6cde5845e3fa2
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72516776"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75597393"
 ---
 # <a name="step-1-create-a-project-and-add-a-table-to-your-form"></a>Etapa 1: Criar um projeto e adicionar uma tabela ao formulário
 
@@ -25,7 +25,7 @@ A primeira etapa da criação de um jogo da memória é criar o projeto e adicio
 
 ::: moniker range="vs-2017"
 
-1. Na barra de menus, escolha **Arquivo** > **Novo** > **Projeto**.
+1. Na barra de menus, escolha **arquivo** > **novo** **projeto**de >.
 
 1. Escolha **Visual C#** ou **Visual Basic** no lado esquerdo da caixa de diálogo **Novo Projeto** e, em seguida, escolha **Windows Desktop**.
 
@@ -117,7 +117,7 @@ A primeira etapa da criação de um jogo da memória é criar o projeto e adicio
        > [!NOTE]
        > A fonte Webdings é uma fonte de ícones que acompanha o sistema operacional Windows. No seu jogo da memória, o jogador precisa encontrar pares de ícones, de modo que você usa essa fonte para exibir os ícones a serem encontrados. Em vez de colocar **c** na propriedade **Texto**, tente inserir diferentes letras para ver quais ícones são exibidos. Um ponto de exclamação é uma aranha, um N maiúsculo é um olho e uma vírgula é uma pimenta.
 
-5. Escolha o controle de rótulo e copie-o ao lado da célula no TableLayoutPanel. (Escolha as teclas **Ctrl** +**C** ou, na barra de menus, escolha **Editar**  > **cópia**.) Em seguida, Cole-o. (Escolha as teclas **Ctrl** +**V** ou, na barra de menus, escolha **Editar**  > **colar**.) Uma cópia do primeiro rótulo aparece na segunda célula do TableLayoutPanel. Cole-o novamente e outro rótulo aparecerá na terceira célula. Continue colando controles Label até que todas as células sejam preenchidas.
+5. Escolha o controle de rótulo e copie-o ao lado da célula no TableLayoutPanel. (Escolha as teclas **Ctrl**+**C** ou, na barra de menus, escolha **Editar** > **cópia**.) Em seguida, Cole-o. (Escolha as teclas **Ctrl**+**V** ou, na barra de menus, escolha **Editar** > **colar**.) Uma cópia do primeiro rótulo aparece na segunda célula do TableLayoutPanel. Cole-o novamente e outro rótulo aparecerá na terceira célula. Continue colando controles Label até que todas as células sejam preenchidas.
 
    > [!NOTE]
    > Se você colar muitas vezes, o IDE adicionará uma nova linha ao TableLayoutPanel para que ele tenha um local para adicionar seu novo controle de rótulo. Isso pode ser desfeito. Para remover a nova célula, escolha as teclas **Ctrl**+**Z** ou, na barra de menus, escolha **Editar** > **Desfazer**.

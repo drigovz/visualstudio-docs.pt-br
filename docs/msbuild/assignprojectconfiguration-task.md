@@ -8,17 +8,17 @@ dev_langs:
 - C++
 - jsharp
 ms.assetid: 09633a0b-8f6f-4aba-8058-7cb4d13ce2c0
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6bc9fb3ab600c106d762d5f4ec55b6bc7117e101
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 95f61858bfcdf0f54c4f786e1b1064707b57c68c
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62822892"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593441"
 ---
 # <a name="assignprojectconfiguration-task"></a>Tarefa AssignProjectConfiguration
 Essa tarefa aceita cadeias de caracteres de configuração de lista e as atribui a projetos especificados.
@@ -43,6 +43,6 @@ Essa tarefa aceita cadeias de caracteres de configuração de lista e as atribui
 ## <a name="remarks"></a>Comentários
  Além dos parâmetros listados acima, essa tarefa herda parâmetros da classe <xref:Microsoft.Build.Tasks.TaskExtension>, que herda da classe <xref:Microsoft.Build.Utilities.Task>. Para obter uma lista desses parâmetros adicionais e suas descrições, confira [Classe base TaskExtension](../msbuild/taskextension-base-class.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 - [Tarefas](../msbuild/msbuild-tasks.md)
 - [Referência de tarefas](../msbuild/msbuild-task-reference.md)

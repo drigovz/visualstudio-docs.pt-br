@@ -12,17 +12,17 @@ helpviewer_keywords:
 - PictureBox control [Windows Forms], data binding
 - images [Visual Basic], dragging from Data Sources window
 ms.assetid: 9748815e-3556-49e8-86b1-c6aa593c6163
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 64168339e5f6bd9be6b3108268a009f6a87bc22c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a4155a246516bef074a56e5644712912b2ce5af6
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648828"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586998"
 ---
 # <a name="bind-controls-to-pictures-from-a-database"></a>Associar controles a imagens de um banco de dados
 
@@ -39,7 +39,7 @@ O procedimento a seguir pressupõe que a janela de **fontes de dados** já estej
 2. Na janela **fontes de dados** , expanda a tabela ou o objeto desejado para exibir suas colunas ou propriedades.
 
    > [!TIP]
-   > Se a janela **fontes de dados** não estiver aberta, abra-a selecionando **Exibir**  >  outras**fontes de dados**do**Windows**  > .
+   > Se a janela **fontes de dados** não estiver aberta, abra-a selecionando **Exibir** > outras **fontes de dados**do **Windows** > .
 
 3. Selecione a coluna ou propriedade que contém os dados da imagem e selecione um dos seguintes controles na lista suspensa controle:
 
@@ -49,6 +49,6 @@ O procedimento a seguir pressupõe que a janela de **fontes de dados** já estej
 
     - Como alternativa, você pode selecionar um controle diferente que dá suporte à vinculação de dados e que pode exibir imagens. Se o controle que você deseja usar não estiver na lista de controles disponíveis, você poderá adicioná-lo à lista e, em seguida, selecioná-lo. Para obter mais informações, consulte [Adicionar controles personalizados à janela fontes de dados](../data-tools/add-custom-controls-to-the-data-sources-window.md).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Associar controles WPF a dados no Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)
